@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Recursos de autoajuda e links de documentação da visão geral do Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 437be8c82a4dee6c9e56af09afa7e9048c8cb3c0
+source-git-commit: 9a10348251fe7559ae5d3c4a203109f1f6623bce
 workflow-type: tm+mt
-source-wordcount: '3419'
+source-wordcount: '3421'
 ht-degree: 98%
 
 ---
@@ -704,6 +704,7 @@ ht-degree: 98%
       + [Pacote de estrutura do repositório de projetos do AEM](/help/implementing/developing/introduction/repository-structure-package.md)
       + [SDK do AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
       + [Diretrizes de desenvolvimento do AEM as a Cloud Service](/help/implementing/developing/introduction/development-guidelines.md)
+      + [DevOps empresarial ](/help/overview/enterprise-devops.md)
       + [Logs](/help/implementing/developing/introduction/logging.md)
       + [Configurações e o navegador de configuração](/help/implementing/developing/introduction/configurations.md)
       + [Fundamentos técnicos do AEM](/help/implementing/developing/introduction/aem-technologies.md)

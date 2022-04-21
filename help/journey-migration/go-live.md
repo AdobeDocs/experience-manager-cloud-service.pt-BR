@@ -2,10 +2,10 @@
 title: Ao vivo
 description: Saiba como executar a migração assim que o código e o conteúdo estiverem prontos para a nuvem
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 9a10348251fe7559ae5d3c4a203109f1f6623bce
 workflow-type: tm+mt
-source-wordcount: '1319'
-ht-degree: 0%
+source-wordcount: '1644'
+ht-degree: 1%
 
 ---
 
@@ -49,7 +49,7 @@ Antes de executar a migração de produção, siga as etapas de instalação e p
 Após a migração inicial da produção, você deve executar atualizações adicionais para garantir que seu conteúdo seja atualizado na instância da nuvem. Por causa disso, é recomendável seguir as práticas recomendadas a seguir:
 
 * Colete dados sobre a quantidade de conteúdo. Por exemplo: por uma semana, duas semanas ou um mês.
-* Certifique-se de planejar as atualizações principais de forma que você evite mais de 48 horas de extração e ingestão de conteúdo. Isso é recomendado para que as atualizações de conteúdo se encaixem em um período de fim de semana.
+* Certifique-se de planejar as atualizações principais de forma que você evite mais de 48 horas de extração e ingestão de conteúdo. Isso é recomendado para que os upups de conteúdo caibam em um período de fim de semana.
 * Planeje o número de top ups necessários e use essas estimativas para planejar a data de ativação.
 
 ## Identificar o código e as linhas do tempo de congelamento de conteúdo para a migração {#code-content-freeze}
@@ -113,13 +113,45 @@ Ambos os itens acima serão identificados e reportados na variável [Analisador 
 
 ## Lista de verificação ao vivo {#Go-Live-Checklist}
 
-Revise a lista de atividades apresentadas abaixo para garantir que você possa realizar uma migração tranquila e bem-sucedida:
+Revise esta lista de atividades para garantir que você realize uma migração tranquila e bem-sucedida.
 
-* Programe um período de congelamento de código e conteúdo. Consulte também [Linhas do tempo de congelamento de código e conteúdo para a migração](#code-content-freeze).
-* Executar a complementação do conteúdo final
-* Concluir iterações de teste
-* Executar testes de desempenho e segurança
-* Corte e executar a migração na instância de produção
+* Execute um pipeline de produção completo com teste funcional e de interface do usuário para garantir uma **sempre atual** AEM experiência com o produto. Consulte os seguintes recursos.
+   * [Atualizações de versão do AEM](/help/implementing/deploying/aem-version-updates.md)
+   * [Teste funcional personalizado](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)
+   * [Teste da interface](/help/implementing/cloud-manager/ui-testing.md)
+* Migre o conteúdo para produção e verifique se um subconjunto relevante está disponível no armazenamento temporário para testes.
+   * Observe que as práticas recomendadas do DevOps para AEM implicam que o código avança do ambiente de desenvolvimento para o de produção enquanto [o conteúdo é movido de ambientes de produção.](/help/overview/enterprise-devops.md#code-movement)
+* Programe um período de congelamento de código e conteúdo.
+   * Consulte também a seção [Linhas do tempo de congelamento de código e conteúdo para a migração](#code-content-freeze)
+* Realize a complementação do conteúdo final.
+* Validar configurações do dispatcher.
+   * Usar um validador de dispatcher local que facilite a configuração, validação e simulação do dispatcher localmente
+      * [Configure as ferramentas locais do dispatcher.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=en#prerequisites)
+   * Revise a configuração do host virtual cuidadosamente.
+      * A solução mais fácil (e padrão) é incluir `ServerAlias *` no arquivo de host virtual no `/dispatcher/src/conf.d/available_vhostsfolder`.
+         * Isso permitirá que os aliases do host usados pelos testes funcionais do produto, a invalidação do cache do dispatcher e os clones funcionem.
+      * No entanto, se `ServerAlias *` não é aceitável, pelo menos `ServerAlias` As entradas devem ser permitidas além dos domínios personalizados:
+         * `localhost`
+         * `*.local`
+         * `publish*.adobeaemcloud.net`
+         * `publish*.adobeaemcloud.com`
+* Configure CDN, SSL e DNS.
+   * Se estiver usando seu próprio CDN, insira um tíquete de suporte para configurar o roteamento apropriado.
+      * Consulte a seção [A CDN do cliente aponta para AEM CDN gerenciada](/help/implementing/dispatcher/cdn.md#point-to-point-cdn) na documentação da CDN para obter detalhes.
+      * Você precisará configurar o SSL e o DNS de acordo com a documentação do seu fornecedor de CDN.
+   * Se você não estiver usando um CDN adicional, gerencie o SSL e o DNS de acordo com a seguinte documentação:
+      * Gerenciar certificados SSL
+         * [Introdução ao Gerenciamento de certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+         * [Gerenciar certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
+      * Gerenciando nomes de domínio personalizados (DNS)
+         * [Introdução a nomes de domínio personalizados](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+         * [Adicionar um nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+         * [Gerenciar nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
+   * Lembre-se de validar o TTL definido para seu registro DNS.
+      * O TTL é o tempo que um registro DNS permanece em um cache antes de solicitar uma atualização ao servidor.
+      * Se você tiver um TTL muito alto, as atualizações no registro DNS levarão mais tempo para serem propagadas.
+* Execute testes de desempenho e segurança que atendam às necessidades e objetivos de sua empresa.
+* Recorte e certifique-se de que o lançamento real seja executado sem qualquer nova implantação ou atualização de conteúdo.
 
 Você sempre pode fazer referência à lista caso precise recalibrar suas tarefas ao executar a migração.
 
