@@ -1,13 +1,13 @@
 ---
-title: Notas de versão do  [!DNL Adobe Experience Manager] as a Cloud Service 2022.1.0.
-description: Notas de versão do  [!DNL Adobe Experience Manager] as a Cloud Service 2022.1.0.
-source-git-commit: 7b4f9e3808e3de933f7c1e1fd4f80be078a9ae1a
-workflow-type: tm+mt
+title: Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2022.1.0.
+description: Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2022.1.0.
+exl-id: 1c40ab67-8fd7-4f29-b8c9-dd98b6d5b490
+source-git-commit: b591b0fd24267ae0036b26f137927d5588a28316
+workflow-type: ht
 source-wordcount: '1085'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
-
 
 # Notas de versão atuais do [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
@@ -63,7 +63,7 @@ Assista ao vídeo [Visão geral da versão de janeiro de 2022](https://video.tv.
 
 * Durante a migração de ativos do AEM local para os serviços em nuvem, os ativos não processados e sem representação original são enviados ao Asset Compute para processamento.
 
-## [!DNL Experience Manager Forms] como [!DNL Cloud Service] {#forms}
+## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Novidades do [!DNL Forms] {#what-is-new-forms}
 
@@ -86,10 +86,10 @@ Assista ao vídeo [Visão geral da versão de janeiro de 2022](https://video.tv.
 ### Novidades {#what-is-new-cif}
 
 * Componentes myAccount aprimorados
-* O componente Recomendação de produto suporta tipos de página adicionais (página inicial, carrinho de compras, confirmação de pedido)
+* O componente Recomendação de produto oferece suporte a tipos de página adicionais (página inicial, carrinho de compras, confirmação de pedido)
 * **Lista de desejos**
    * Os visitantes conectados podem adicionar produtos a uma lista de desejos
-   * O gerenciamento da lista de desejos e seus produtos é possível por meio da myAccount
+   * O gerenciamento da lista de desejos e de seus produtos é possível por meio da opção myAccount
    * O botão “Adicionar à lista de desejos” pode ser ativado/desativado no nível de componente por meio de uma política (por exemplo, teaser de produto, detalhes do produto)
    * Disponível como um Componente principal e na loja AEM Venia
 
