@@ -1,22 +1,22 @@
 ---
 title: 'Consultas persistentes de GraphQL '
-description: Saiba como persistir consultas GraphQL no Adobe Experience Manager as a Cloud Service para otimizar o desempenho. As consultas persistentes podem ser solicitadas por aplicativos clientes usando o método GET do HTTP e a resposta pode ser armazenada em cache nas camadas do Dispatcher e do CDN, melhorando, em última análise, o desempenho dos aplicativos clientes.
+description: Saiba como criar consultas persistentes de GraphQL no Adobe Experience Manager as a Cloud Service para otimizar o desempenho. As consultas persistentes podem ser solicitadas por aplicativos clientes usando o método GET do HTTP e a resposta pode ser armazenada em cache nas camadas do Dispatcher e do CDN, melhorando, em última análise, o desempenho dos aplicativos clientes.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
 source-git-commit: dfcad7aab9dda7341de3dc4975eaba9bdfbd9780
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '768'
-ht-degree: 54%
+ht-degree: 100%
 
 ---
 
 # Consultas persistentes de GraphQL  {#persisted-queries-caching}
 
-As consultas persistentes são consultas GraphQL criadas e armazenadas no servidor as a Cloud Service Adobe Experience Manager (AEM). Eles podem ser solicitados com uma solicitação GET por aplicativos clientes. A resposta para uma solicitação GET pode ser armazenada em cache nas camadas do Dispatcher e do CDN, melhorando, em última análise, o desempenho do aplicativo cliente solicitante. Isso é diferente das consultas GraphQL padrão, que são executadas usando solicitações POST, onde a resposta não pode ser facilmente armazenada em cache.
+As consultas persistentes são consultas de GraphQL criadas e armazenadas no servidor do Adobe Experience Manager (AEM) as a Cloud Service. Elas podem ser solicitadas com uma solicitação GET por aplicativos clientes. A resposta para uma solicitação GET pode ser armazenada em cache nas camadas do Dispatcher e do CDN, melhorando, em última análise, o desempenho do aplicativo cliente solicitante. Isso é diferente das consultas de GraphQL padrão, que são executadas usando solicitações POST, onde a resposta não pode ser facilmente armazenada em cache.
 
-O [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) está disponível em AEM (por padrão, `dev-author`) para que você desenvolva, teste e persista suas consultas GraphQL, antes de [transferência para o ambiente de produção](#transfer-persisted-query-production). Para casos que precisam de personalização (por exemplo, quando [personalização do cache](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)) é possível usar a API; consulte o exemplo de curl fornecido em [Como persistir uma consulta GraphQL](#how-to-persist-query).
+O [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) está disponível no AEM (por padrão, `dev-author`) para que você desenvolva, teste e persista suas consultas de GraphQL antes de [transferir para o ambiente de produção](#transfer-persisted-query-production). Para casos que precisam de personalização (por exemplo, ao [personalizar o cache](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)), é possível usar a API; consulte o exemplo de curl fornecido em [Como criar uma consulta persistente de GraphQL](#how-to-persist-query).
 
-## Consultas e pontos de extremidade persistentes {#persisted-queries-and-endpoints}
+## Endpoints e consultas persistentes {#persisted-queries-and-endpoints}
 
 Consultas persistentes devem sempre usar o endpoint relacionado à [configuração apropriada do Sites](graphql-endpoint.md); para que possam usar um desses, ou ambos:
 
@@ -30,7 +30,7 @@ Por exemplo, para criar uma consulta persistente especificamente para a configur
 >
 >Consulte [Habilitar a funcionalidade de fragmentos de conteúdo no Navegador de configuração](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) para obter mais detalhes.
 >
->O **Consultas Persistentes GraphQL** precisam ser ativados para a configuração apropriada do Sites.
+>As **consultas persistentes de GraphQL** precisam estar habilitadas na configuração apropriada do Sites.
 
 Por exemplo, se houver uma consulta específica chamada `my-query`, que usa um modelo `my-model` da configuração `my-conf` do Sites:
 
@@ -47,13 +47,13 @@ Por exemplo, se houver uma consulta específica chamada `my-query`, que usa um m
 
 ## Como criar uma consulta persistente de GraphQL {#how-to-persist-query}
 
-É recomendável manter consultas em um ambiente de criação de AEM inicialmente e, em seguida, [transferir a consulta](#transfer-persisted-query-production) para o ambiente de produção AEM publicação, para uso pelos aplicativos.
+É recomendável criar consultas persistentes em um ambiente de criação do AEM inicialmente e, em seguida, [transferir a consulta](#transfer-persisted-query-production) para o ambiente de publicação da sua produção do AEM para ser usada pelos aplicativos.
 
-Há vários métodos de consultas persistentes, incluindo:
+Há vários métodos para criar consultas persistentes, incluindo:
 
-* o GraphiQL IDE - consulte [Salvando Consultas Persistentes](/help/headless/graphql-api/graphiql-ide.md##saving-persisted-queries)
+* o GraphiQL IDE - consulte [Salvar consultas persistentes](/help/headless/graphql-api/graphiql-ide.md##saving-persisted-queries)
 * curl - consulte o exemplo a seguir
-* Outras ferramentas, incluindo [Postman](https://www.postman.com/)
+* Outras ferramentas, incluindo o [Postman](https://www.postman.com/)
 
 Estas são as etapas para criar uma determinada consulta persistente usando a ferramenta de linha de comando **curl**:
 
@@ -195,21 +195,21 @@ Estas são as etapas para criar uma determinada consulta persistente usando a fe
        "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters;apath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
    ```
 
-## Transferência de uma consulta persistente para o ambiente de Produção  {#transfer-persisted-query-production}
+## Transferir uma consulta persistente para o ambiente de produção  {#transfer-persisted-query-production}
 
-Em última análise, sua consulta persistente precisa estar em seu ambiente de publicação de produção (AEM as a Cloud Service), onde pode ser solicitada pelos aplicativos clientes. Para usar uma query persistente no ambiente de publicação de produção, a árvore persistente relacionada precisa ser replicada:
+A consulta persistente precisa estar em seu ambiente de publicação de produção (do AEM as a Cloud Service), onde pode ser solicitada pelos aplicativos clientes. Para usar uma consulta persistente no ambiente de publicação de produção, a árvore persistente relacionada precisa ser replicada:
 
-* inicialmente como autor de produção para validar o conteúdo recém-criado com os queries,
-* em seguida, finalmente, publicar em produção para consumo em tempo real
+* inicialmente no autor de produção para validar o conteúdo recém-criado com as consultas
+* e, por fim, na publicação da produção para consumo em tempo real
 
-Há várias abordagens para transferir sua consulta persistente:
+Existem várias abordagens para transferir a consulta persistente:
 
 1. Uso de um pacote:
    1. Crie uma nova definição de pacote.
    1. Inclua a configuração (por exemplo, `/conf/wknd/settings/graphql/persistentQueries`).
    1. Crie o pacote.
    1. Transfira o pacote (baixe/carregue ou replique).
-   1. Instale o pacote .
+   1. Instale o pacote.
 
 1. Uso de POST para replicação:
 
@@ -229,7 +229,7 @@ Há várias abordagens para transferir sua consulta persistente:
   1. Define a workflow launcher rule for executing a workflow model that would replicate the configuration on different events (for example, create, modify, amongst others).
 -->
 
-Quando a configuração de query estiver no ambiente de publicação em produção, os mesmos princípios de autenticação se aplicarão, apenas usando o endpoint de publicação.
+Assim que a configuração da consulta estiver no ambiente de publicação em produção, os mesmos princípios de autenticação se aplicam, apenas usando o endpoint de publicação.
 
 >[!NOTE]
 >
@@ -239,7 +239,7 @@ Quando a configuração de query estiver no ambiente de publicação em produç�
 
 ## Codificação do URL de consulta para uso por um aplicativo {#encoding-query-url}
 
-Para uso por um aplicativo, qualquer ponto e vírgula (&quot;;&quot;) nos URLs precisa ser codificado.
+Para uso por um aplicativo, qualquer ponto e vírgula (“;”) nos URLs precisa ser codificado.
 
 Por exemplo, como na solicitação para executar uma consulta persistente:
 
@@ -247,4 +247,4 @@ Por exemplo, como na solicitação para executar uma consulta persistente:
 curl -X GET \ "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters%3bapath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
 ```
 
-Para usar uma consulta persistente em um aplicativo cliente, o SDK do cliente sem cabeçalho AEM deve ser usado [Cliente autônomo do AEM para JavaScript](https://github.com/adobe/aem-headless-client-js).
+Para usar uma consulta persistente em um aplicativo cliente, o SDK cliente do AEM headless deve ser usado [Cliente do AEM headless para JavaScript](https://github.com/adobe/aem-headless-client-js).
