@@ -10,7 +10,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: 9a10348251fe7559ae5d3c4a203109f1f6623bce
 workflow-type: tm+mt
 source-wordcount: '3421'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -57,7 +57,7 @@ ht-degree: 98%
          + [Notas da versão para 2020.5.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-5-0.md)
          + [Notas da versão para 2020.4.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-4-0.md)
          + [Notas da versão para 2020.3.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-3-0.md)
-         + [Notas da versão 2020.2.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-2-0.md)
+         + [Notas da versão para 2020.2.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-2-0.md)
    + [Novidades?](/help/release-notes/what-is-new.md)
    + [Alterações importantes no AEM Cloud Service](/help/release-notes/aem-cloud-changes.md)
    + [Problemas conhecidos](/help/release-notes/known-issues.md)
@@ -106,8 +106,8 @@ ht-degree: 98%
    + [Guia de migração para o Experience Manager as a Cloud Service para parceiros](/help/journey-migration/getting-started-partners.md)
    + Notas de versão das ferramentas de migração {#release-notes-migration-tools}
       + [Notas de versão atuais (2022.3.0)](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
-      + [Notas da versão 2022.2.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-02-0.md)
-      + [Notas da versão 2022.1.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-01-0.md)
+      + [Notas da versão para 2022.2.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-02-0.md)
+      + [Notas da versão para 2022.1.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-01-0.md)
       + 2021 {#2021}
          + [Notas de versão para 2021.12.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
          + [Notas da versão para 2021.11.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
@@ -265,14 +265,14 @@ ht-degree: 98%
    + Integração ao AEM as a Cloud Service {#integrations}
       + [Integração ao Adobe Analytics](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
       + [Integração com a configuração automática do Adobe Analytics](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
-      + [Configuração IMS para uso ao integrar com o Adobe Analytics](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)
+      + [Configuração do IMS para uso na integração com o Adobe Analytics](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)
       + [Integração com o Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
-      + [Configuração IMS para uso ao integrar com o Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
+      + [Configuração do IMS para uso na integração com o Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
       + [Exportar fragmentos de experiência para o Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
 + Assets {#assets}
    + [[!DNL Assets] as a  [!DNL Cloud Service]](/help/assets/home.md)
    + [Visão geral e novidades](/help/assets/overview.md)
-   + [Alterações importantes no  [!DNL Assets]  as a  [!DNL Cloud Service]](/help/assets/assets-cloud-changes.md)
+   + [Alterações importantes no [!DNL Assets]  as a  [!DNL Cloud Service]](/help/assets/assets-cloud-changes.md)
    + [Arquitetura do [!DNL Assets]](/help/assets/architecture.md)
    + [Formatos de arquivo compatíveis](/help/assets/file-format-support.md)
    + [Visão geral dos microsserviços de ativos](/help/assets/asset-microservices-overview.md)
@@ -323,9 +323,9 @@ ht-degree: 98%
       + [Recursos MediaLibrary](/help/assets/medialibrary.md)
       + [Importar e exportar metadados de ativos](/help/assets/metadata-import-export.md)
    + Compartilhar e distribuir ativos {#brand-portal}
-      + [Configurar o  [!DNL Assets]  com o  [!DNL Brand Portal]](/help/assets/configure-aem-assets-with-brand-portal.md)
+      + [Configurar o [!DNL Assets]  com o [!DNL Brand Portal]](/help/assets/configure-aem-assets-with-brand-portal.md)
       + [Publicar ativos no  [!DNL Brand Portal]](/help/assets/publish-to-brand-portal.md)
-      + [Publicar ativos do  [!DNL Brand Portal]  no  [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=pt-BR)
+      + [Publicar ativos do [!DNL Brand Portal]  no [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=pt-BR)
    + Fragmentos de conteúdo {#content-fragments}
       + [Trabalho com fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md)
       + [Entrega headless com fragmentos de conteúdo e GraphQL](/help/assets/content-fragments/content-fragments-graphql.md)
@@ -388,12 +388,12 @@ ht-degree: 98%
       + [Fim de vida útil de visualizadores Flash](/help/assets/dynamic-media/flash-viewers-eol.md)
       + [Fim de vida útil de visualizadores DHTML](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
    + Integração com o Adobe Workfront {#integrations}
-      + [Notas de versão do Workfront para conector Experience Manager aprimorado](/help/assets/release-notes-enhanced-connector-workfront.md)
+      + [Notas de versão do conector aprimorado do Workfront para Experience Manager](/help/assets/release-notes-enhanced-connector-workfront.md)
       + [Integrações com [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
       + [Instalar o [!DNL enhanced connector] para o [!DNL Workfront]](/help/assets/workfront-connector-install.md)
       + [Remover dependências externas de instalações existentes](/help/assets/remove-external-dependencies.md)
-      + [Configurar o [!DNL enhanced connector] para o [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
-      + [Atualizar [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
+      + [Configurar o [!DNL enhanced connector]  para o [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
+      + [Atualizar o [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
 + Forms {#forms}
    + [Introdução](/help/forms/home.md)
    + [Principais recursos](/help/forms/key-features.md)
@@ -424,7 +424,7 @@ ht-degree: 98%
       + Adicionar componentes a um formulário adaptável {#add-components-to-an-adaptive-form}
          + [Usar CAPTCHA em um formulário adaptável](/help/forms/captcha-adaptive-forms.md)
          + [Usar componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)
-      + Configurar o layout e aplicar estilo a um formulário adaptável{#configure-layout-of-an-adaptive-form}
+      + Configurar o layout e aplicar estilo a um formulário adaptável {#configure-layout-of-an-adaptive-form}
          + [Definir o layout de um formulário adaptável](/help/forms/layout-capabilities-adaptive-forms.md)
          + [Usar o modo Layout para redimensionar componentes](/help/forms/resize-using-layout-mode.md)
          + [Criar experiência de captura de dados em várias etapas](/help/forms/introduction-form-sequence.md)
@@ -449,7 +449,7 @@ ht-degree: 98%
       + [Configurar fontes de dados](/help/forms/configure-data-sources.md)
       + [Configurar OData do  [!DNL Microsoft Dynamics] ](/help/forms/ms-dynamics-odata-configuration.md)
       + [Configurar armazenamento do  [!DNL Azure] ](/help/forms/configure-azure-storage.md)
-      + [Configurar os serviços em nuvem do  [!DNL Microsoft Dynamics 365]  e do  [!DNL Salesforce] ](/help/forms/configure-msdynamics-salesforce.md)
+      + [Configurar os serviços em nuvem do [!DNL Microsoft Dynamics 365]  e do [!DNL Salesforce] ](/help/forms/configure-msdynamics-salesforce.md)
       + [Criar modelo de dados do formulário](/help/forms/create-form-data-models.md)
       + [Trabalhar com o modelo de dados de formulário](/help/forms/work-with-form-data-model.md)
       + [Utilizar modelo de dados do formulário](/help/forms/using-form-data-model.md)
@@ -467,7 +467,7 @@ ht-degree: 98%
       + [APIs de comunicação - Processamento em lote](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
       + [Uso de fontes personalizadas em documentos PDF](/help/forms/use-custom-fonts.md)
       + [Problemas conhecidos, práticas recomendadas e perguntas frequentes](/help/forms/communications-known-issues-limitations.md)
-   + [Migrar para o  [!DNL AEM Forms]  as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
+   + [Migrar para o [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
    + [Perguntas frequentes](/help/forms/faq.md)
    + [Problemas conhecidos](/help/forms/known-issues.md)
    + Solução de problemas {#troubleshooting-aem-forms-cloud-service}
@@ -556,7 +556,7 @@ ht-degree: 98%
       + [Visão geral](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html?lang=pt-BR)
       + [Modelos de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-models.html?lang=pt-BR)
       + [Gerenciar](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-managing.html?lang=pt-BR)
-      + Criação{#authoring}
+      + Criação {#authoring}
          + [Criação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html?lang=pt-BR)
          + [Editor de texto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-markdown.html?lang=pt-BR)
          + [Conteúdo associado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-assoc-content.html?lang=pt-BR)
@@ -616,9 +616,9 @@ ht-degree: 98%
       + Notas de versão do Cloud Manager {#release-notes-cloud-manager}
          + [Notas de versão atuais](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
          + 2022 {#2022}
-            + [Notas da versão 2022.3.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-3-0.md)
-            + [Notas da versão 2022.2.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-2-0.md)
-            + [Notas da versão 2022.1.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-1-0.md)
+            + [Notas da versão para 2022.3.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-3-0.md)
+            + [Notas da versão para 2022.2.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-2-0.md)
+            + [Notas da versão para 2022.1.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-1-0.md)
          + 2021 {#2021}
             + [Notas da versão para 2021.11.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-11-0.md)
             + [Notas da versão para 2021.10.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-10-0.md)
@@ -685,7 +685,7 @@ ht-degree: 98%
          + [Introdução](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
          + [Adicionar um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
          + [Gerenciar certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
-      + Nomes de Domínio Personalizados {#custom-domain-names}
+      + Nomes de domínio personalizados {#custom-domain-names}
          + [Introdução](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          + [Adicionar um nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
          + [Adicionar um registro TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
@@ -693,10 +693,10 @@ ht-degree: 98%
          + [Definição das configurações de DNS](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
          + [Verificação de status do registro DNS](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
          + [Gerenciar nomes de domínio personalizados](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
-      + LISTAS DE PERMISSÕES de IP {#ip-allow-lists}
+      + Listas de permissões de IP {#ip-allow-lists}
          + [Introdução](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [Adicionar uma lista de permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
-         + [Aplicar e desaplicar Listas de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
+         + [Aplicar e cancelar a aplicação de Listas de permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
          + [Gerenciamento de listas de permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
       + [Perguntas frequentes sobre o Cloud Manager](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
    + Desenvolvimento do AEM as a Cloud Service {#developing}
@@ -786,7 +786,7 @@ ht-degree: 98%
       + [API do ContextHub](/help/implementing/developing/personalization/contexthub-api.md)
       + [Configuração de segmentação com o ContextHub](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html?lang=pt-BR)
    + Configuração e extensão do AEM as a Cloud Service {#configuring-and-extending}
-      + Extensão do AEM com o App Builder{#app-builder}
+      + Extensão do AEM com o App Builder {#app-builder}
          + [Extensão do AEM usando o Adobe Developer App Builder](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
          + [Introdução ao App Builder](/help/implementing/developing/extending/app-builder/videos/introduction.md)
          + [Console do desenvolvedor da Adobe](/help/implementing/developing/extending/app-builder/videos/adobe-developer-console.md)
