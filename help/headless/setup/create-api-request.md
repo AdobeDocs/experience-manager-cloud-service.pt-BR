@@ -3,9 +3,9 @@ title: Criar uma solicitação de API - Configuração Headless
 description: Saiba como usar a API GraphQL para a entrega headless do conteúdo do Fragmento de conteúdo e a API REST do AEM Assets para gerenciar Fragmentos de conteúdo.
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
 source-git-commit: d3c926216486c2971e498c2ea8a47f9c96935554
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '670'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -50,11 +50,11 @@ O GraphiQL é um IDE que pode ser instalado em um ambiente AEM. Siga as etapas e
 1. Faça logon no AEM as a Cloud Service e acesse a interface GraphiQL:
    * Por exemplo: `https://<host>:<port>/aem/graphiql.html`.
 
-1. O GraphiQL IDE é um editor de consultas no navegador para GraphQL. Você pode usá-lo para criar consultas para recuperar Fragmentos de conteúdo para entregá-los sem periféricos como JSON.
-   * A lista suspensa no canto superior direito permite selecionar o ponto de extremidade.
+1. O GraphiQL IDE é um editor de consultas no navegador para GraphQL. Você pode usá-lo para criar consultas para recuperar fragmentos de conteúdo e entregá-los como JSON sem periféricos.
+   * A lista suspensa no canto superior direito permite selecionar o endpoint.
    * Um painel à esquerda lista as consultas persistentes (quando disponíveis)
-   * O painel do meio à esquerda permite criar seu query.
-   * O painel do meio direito exibe os resultados.
+   * O painel central esquerdo permite criar a consulta.
+   * O painel central direito exibe os resultados.
    * O Editor de consultas tem recursos de autocompletar código e teclas de atalho para executar a consulta com facilidade.
 
    ![Editor do GraphiQL](../assets/graphiql.png)
