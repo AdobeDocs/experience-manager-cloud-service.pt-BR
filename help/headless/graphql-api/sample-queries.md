@@ -4,7 +4,7 @@ description: Saiba como usar o GraphQL com o AEM para fornecer conteúdo em head
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 source-git-commit: a2e36e296749c79040c9687bbd88288d8977086d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1416'
 ht-degree: 100%
 
@@ -224,7 +224,7 @@ Quando executada, o sistema expandirá automaticamente a consulta para incluir t
 
 ### Exemplo de consulta - Nomes de todas as cidades {#sample-names-all-cities}
 
-Esta é uma consulta simples para retornar o `name` de todas as entradas no esquema `city`.
+Esta é uma consulta simples para retornar o `name`de todas as entradas no esquema`city`.
 
 **Exemplo de consulta**
 
@@ -1609,4 +1609,4 @@ Os fragmentos a seguir são usados para o modelo apropriado.
 | São Francisco |  EUA |  883306 |  city:beach<br>city:na |
 | San Jose |  EUA |  102635 |  city:na |
 | Stuttgart |  Alemanha |  634830 |  city:emea |
-|  Zurique |  Suíça |  415367 |  cidade:capital<br>cidade:emea |
+|  Zurique |  Suíça |  415367 |  city:capital<br>city:emea |
