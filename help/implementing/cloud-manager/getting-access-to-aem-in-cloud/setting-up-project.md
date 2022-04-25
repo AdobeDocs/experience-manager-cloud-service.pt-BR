@@ -2,9 +2,9 @@
 title: Configuração do projeto
 description: Saiba como AEM projetos são criados com o Maven e os padrões que você deve observar ao criar seu próprio projeto.
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
-source-git-commit: a9303c659730022b7417fc9082dedd26d7cbccca
+source-git-commit: e0774c34ed81d23a5d7a897f65d50dcbf8f8af0d
 workflow-type: tm+mt
-source-wordcount: '1264'
+source-wordcount: '1415'
 ht-degree: 1%
 
 ---
@@ -280,7 +280,11 @@ O `content-package-maven-plugin` tem uma configuração semelhante.
 
 Em muitos casos, o mesmo código é implantado em vários ambientes AEM. Sempre que possível, o Cloud Manager evitará reconstruir a base de código quando detectar que a mesma confirmação de git é usada em várias execuções de pipeline de pilha completa.
 
-Quando uma execução é iniciada, a confirmação de HEAD atual para o pipeline da ramificação é extraída. O hash de confirmação é visível na interface do usuário e por meio da API. Quando a etapa de build for concluída com êxito, os artefatos resultantes serão armazenados com base nesse hash de confirmação e poderão ser reutilizados em execuções de pipeline subsequentes. Quando ocorre uma reutilização, as etapas de criação e qualidade do código são efetivamente substituídas pelos resultados da execução original. O arquivo de log da etapa de build listará os artefatos e as informações de execução que foram usadas originalmente para criá-los.
+Quando uma execução é iniciada, a confirmação de HEAD atual para o pipeline da ramificação é extraída. O hash de confirmação é visível na interface do usuário e por meio da API. Quando a etapa de build for concluída com êxito, os artefatos resultantes serão armazenados com base nesse hash de confirmação e poderão ser reutilizados em execuções de pipeline subsequentes.
+
+Os pacotes serão reutilizados em pipelines, se estiverem no mesmo programa. Ao procurar pacotes que possam ser reutilizados, o AEM ignora ramificações e reutiliza artefatos entre ramificações.
+
+Quando ocorre uma reutilização, as etapas de criação e qualidade do código são efetivamente substituídas pelos resultados da execução original. O arquivo de log da etapa de build listará os artefatos e as informações de execução que foram usadas originalmente para criá-los.
 
 Veja a seguir um exemplo dessa saída de log.
 
@@ -291,6 +295,34 @@ build/aem-guides-wknd.dispatcher.cloud-2021.1216.1101633.0000884042.zip (dispatc
 ```
 
 O log da etapa de qualidade do código conterá informações semelhantes.
+
+### Exemplos {#example-reuse}
+
+#### Exemplo 1 {#example-1}
+
+Considere que seu programa tem dois pipelines de desenvolvimento:
+
+* Pipeline 1 na ramificação `foo`
+* Pipeline 2 na ramificação `bar`
+
+Ambas as ramificações estão na mesma ID de confirmação.
+
+1. A execução do pipeline 1 primeiro criará os pacotes normalmente.
+1. Em seguida, executar o Pipeline 2 reutilizará pacotes criados pelo Pipeline 1.
+
+#### Exemplo 2 {#example-2}
+
+Considere que seu programa tem duas ramificações:
+
+* Ramificação `foo`
+* Ramificação `bar`
+
+Ambas as ramificações têm a mesma ID de confirmação.
+
+1. Um pipeline de desenvolvimento cria e executa `foo`.
+1. Posteriormente, um pipeline de produção cria e executa `bar`.
+
+Nesse caso, o artefato de `foo` será reutilizado para o pipeline de produção desde que o mesmo hash de confirmação tenha sido identificado.
 
 ### Recusar {#opting-out}
 
@@ -306,6 +338,8 @@ Se desejar, o comportamento de reutilização pode ser desativado para pipelines
 
 ### Avisos {#caveats}
 
+* Os artefatos da build não são reutilizados em diferentes programas, independentemente de o hash de confirmação ser idêntico.
+* Os artefatos da build são reutilizados no mesmo programa mesmo se a ramificação e/ou o pipeline for diferente.
 * [Manuseio de versão Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md) substitui a versão do projeto somente em pipelines de produção. Portanto, se a mesma confirmação for usada em uma execução de implantação de desenvolvimento e em uma execução de pipeline de produção e o pipeline de implantação de desenvolvimento for executado primeiro, as versões serão implantadas no estágio e na produção sem serem alteradas. No entanto, uma tag ainda será criada nesse caso.
 * Se a recuperação dos artefatos armazenados não for bem-sucedida, a etapa de build será executada como se nenhum artefato tivesse sido armazenado.
 * Variáveis de pipeline diferentes de `CM_DISABLE_BUILD_REUSE` não são considerados quando o Cloud Manager decide reutilizar artefatos de build criados anteriormente.
