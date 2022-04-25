@@ -1,16 +1,16 @@
 ---
-title: Implantação do código
+title: Implantação de código
 description: Saiba como implantar seu código usando os pipelines do Cloud Manager AEM as a Cloud Service.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: a7555507f4fb0fb231e27d7c7a6413b4ec6b94e6
+source-git-commit: feee55b2d1814b14121030b2ec3c0cb286e87044
 workflow-type: tm+mt
-source-wordcount: '669'
-ht-degree: 0%
+source-wordcount: '704'
+ht-degree: 1%
 
 ---
 
 
-# Implantação do código {#deploy-your-code}
+# Implantação de código {#deploy-your-code}
 
 Saiba como implantar seu código usando os pipelines do Cloud Manager AEM as a Cloud Service.
 
@@ -93,6 +93,19 @@ As implantações de produção geralmente seguem as mesmas etapas descritas ant
 Esse processo continua até que a implantação tenha atingido todos os editores e dispatchers na topologia.
 
 ![Fase de implantação da produção](assets/production-deployment.png)
+
+## Tempos limite {#timeouts}
+
+As etapas a seguir atingirão o tempo limite se forem deixadas aguardando o feedback do usuário:
+
+| Etapa | Tempo limite |
+|--- |--- |
+| Teste de qualidade do código | 14 dias |
+| Teste de segurança | 14 dias |
+| Teste de desempenho | 14 dias |
+| Pedido de aprovação | 14 dias |
+| Agendar implantação de produção | 14 dias |
+| Suporte CSE | 14 dias |
 
 ## Processo de implantação {#deployment-process}
 
