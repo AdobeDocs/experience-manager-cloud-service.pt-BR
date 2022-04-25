@@ -2,9 +2,9 @@
 title: Diretrizes de desenvolvimento do AEM as a Cloud Service
 description: Diretrizes de desenvolvimento do AEM as a Cloud Service
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 65b17f1b844ed444db2d44c282307aebb554887e
+source-git-commit: 1f249b413c9e3f76771fe85d7ecda67cec1386fb
 workflow-type: tm+mt
-source-wordcount: '2356'
+source-wordcount: '2444'
 ht-degree: 2%
 
 ---
@@ -225,15 +225,17 @@ Consulte a [Documentação do AEM 6.5](https://experienceleague.adobe.com/docs/e
 * O nome do host do servidor SMTP deve ser definido como $[env:AEM_PROXY_HOST;default=proxy.túnel]
 * A porta do servidor SMTP deve ser definida com o valor da porta proxy original definida no parâmetro portForwards usado na chamada da API ao configurar a rede avançada. Por exemplo, 30465 (em vez de 465)
 
-Também é recomendável que, se a porta 465 tiver sido solicitada:
+A porta do servidor SMTP deve ser definida como `portDest` valor definido no parâmetro portForwards usado na chamada da API ao configurar a rede avançada e o `portOrig` deve ser um valor significativo que esteja dentro do intervalo necessário de 30000 - 30999. Por exemplo, se a porta do servidor SMTP for 465, a porta 30465 deverá ser usada como a `portOrig` valor.
 
-* set `smtp.port` para `465`
-* set `smtp.ssl` para `true`
+Nesse caso, e supondo que o SSL precise ser habilitado, na configuração da variável **Day CQ Mail Service OSGI** serviço:
 
-e se a porta 587 tiver sido solicitada:
+* Definir `smtp.port` para `30465`
+* Definir `smtp.ssl` para `true`
 
-* set `smtp.port` para `587`
-* set `smtp.ssl` para `false`
+Como alternativa, se a porta de destino for 587, um `portOrig` deve ser usado o valor 30587. E supondo que o SSL deveria ser desativado, a configuração do serviço OSGI do Day CQ Mail Service:
+
+* Definir `smtp.port` para `30587`
+* Definir `smtp.ssl` para `false`
 
 O `smtp.starttls` será automaticamente definida por AEM as a Cloud Service em tempo de execução para um valor apropriado. Assim, se `smtp.ssl` está definido como verdadeiro, `smtp.startls` é ignorada. If `smtp.ssl` está definido como falso, `smtp.starttls` está definida como true. Isso não depende da variável `smtp.starttls` valores definidos na configuração OSGI.
 
