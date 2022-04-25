@@ -3,10 +3,10 @@ title: Armazenamento em cache no AEM as a Cloud Service
 description: 'Armazenamento em cache no AEM as a Cloud Service '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: b490d581532576bc526f9bd166003df7f2489495
+source-git-commit: 44fb07c7760a8faa3772430cef30fa264c7310ac
 workflow-type: tm+mt
-source-wordcount: '1549'
-ht-degree: 1%
+source-wordcount: '1878'
+ht-degree: 0%
 
 ---
 
@@ -31,14 +31,18 @@ Define DISABLE_DEFAULT_CACHING
 Isso pode ser útil, por exemplo, quando sua lógica comercial requer o ajuste fino do cabeçalho da idade (com um valor com base no dia do calendário), já que, por padrão, o cabeçalho da idade é definido como 0. Dito isto, **tenha cuidado ao desativar o cache padrão.**
 
 * pode ser substituído para todo o conteúdo de HTML/Texto definindo a variável `EXPIRATION_TIME` em `global.vars` usando as ferramentas AEM as a Cloud Service do SDK Dispatcher.
-* pode ser substituído em um nível de granulado mais fino pelas seguintes diretivas apache mod_headers:
+* pode ser substituído em um nível mais refinado, incluindo o controle independente de CDN e cache de navegador, com as seguintes diretivas apache mod_headers:
 
    ```
    <LocationMatch "^/content/.*\.(html)$">
         Header set Cache-Control "max-age=200"
+        Header set Surrogate-Control "max-age=3600"
         Header set Age 0
    </LocationMatch>
    ```
+
+   >[!NOTE]
+   >O cabeçalho Controle de Substituição se aplica à CDN gerenciada pelo Adobe. Se estiver usando um [CDN gerenciada pelo cliente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=en#point-to-point-CDN), um cabeçalho diferente pode ser necessário, dependendo do provedor CDN.
 
    Tenha cuidado ao definir cabeçalhos de controle de cache global ou aqueles que correspondem a um grande regex, de modo que eles não sejam aplicados ao conteúdo que você pretende manter privado. Considere o uso de várias diretivas para garantir que as regras sejam aplicadas de forma refinada. Dito isso, AEM as a Cloud Service removerá o cabeçalho do cache se detectar que ele foi aplicado ao que detecta como não armazenável em cache pelo dispatcher, conforme descrito na documentação do dispatcher. Para forçar o AEM a sempre aplicar os cabeçalhos de cache, é possível adicionar o **always** da seguinte forma:
 
@@ -110,6 +114,73 @@ Isso pode ser útil, por exemplo, quando sua lógica comercial requer o ajuste f
 * sem armazenamento em cache padrão
 * O padrão não pode ser definido com a variável `EXPIRATION_TIME` variável usada para tipos de arquivo html/text
 * a expiração do cache pode ser definida com a mesma estratégia LocationMatch descrita na seção html/text especificando o regex apropriado
+
+### Otimizações Furtur
+
+* Evite usar `User-Agent` como parte da `Vary` cabeçalho. Versões anteriores da configuração padrão do dispatcher (antes do arquétipo versão 28) incluíam isso e recomendamos que você remova isso usando as etapas abaixo.
+   * Localize os arquivos vhost em `<Project Root>/dispatcher/src/conf.d/available_vhosts/*.vhost`
+   * Remova ou comente a linha: `Header append Vary User-Agent env=!dont-vary` de todos os arquivos vhost, com exceção do default.vhost, que é somente leitura
+* Use o `Surrogate-Control` cabeçalho para controlar o armazenamento em cache CDN independentemente do armazenamento em cache do navegador
+* Considere aplicar [`stale-while-revalidate`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control#stale-while-revalidate) e [`stale-if-error`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control#stale-if-error) diretivas para permitir a atualização em segundo plano e evitar falhas no cache, mantendo o conteúdo rápido e atualizado para os usuários.
+   * Existem muitas formas de aplicar estas diretivas, mas acrescentando 30 minutos `stale-while-revalidate` para todos os cabeçalhos de controle de cache é um bom ponto de partida.
+* Alguns exemplos se seguem para vários tipos de conteúdo, que podem ser usados como guia ao configurar suas próprias regras de cache. Considere e teste cuidadosamente a configuração e os requisitos específicos:
+
+   * Armazene em cache os recursos da biblioteca do cliente mutável para 12h e atualize em segundo plano após 12h.
+
+      ```
+      <LocationMatch "^/etc\.clientlibs/.*\.(?i:json|png|gif|webp|jpe?g|svg)$">
+         Header set Cache-Control "max-age=43200,stale-while-revalidate=43200,stale-if-error=43200,public" "expr=%{REQUEST_STATUS} < 400"
+         Header set Age 0
+      </LocationMatch>
+      ```
+
+   * Armazene em cache recursos imutáveis da biblioteca do cliente a longo prazo (30 dias) com atualização em segundo plano para evitar o MISS.
+
+      ```
+      <LocationMatch "^/etc\.clientlibs/.*\.(?i:js|css|ttf|woff2)$">
+         Header set Cache-Control "max-age=2592000,stale-while-revalidate=43200,stale-if-error=43200,public,immutable" "expr=%{REQUEST_STATUS} < 400"
+         Header set Age 0
+      </LocationMatch>
+      ```
+
+   * Armazene em cache HTML pages por 5 minutos com a atualização em segundo plano 1 h no navegador e 12 h no CDN. Os cabeçalhos de controle de cache sempre serão adicionados, portanto, é importante garantir que as páginas html correspondentes em /content/* sejam destinadas ao público. Caso contrário, considere usar um regex mais específico.
+
+      ```
+      <LocationMatch "^/content/.*\.html$">
+         Header unset Cache-Control
+         Header always set Cache-Control "max-age=300,stale-while-revalidate=3600" "expr=%{REQUEST_STATUS} < 400"
+         Header always set Surrogate-Control "stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
+         Header set Age 0
+      </LocationMatch>
+      ```
+
+   * Armazene em cache as respostas json dos serviços de conteúdo/exportador de modelo Sling por 5 minutos com atualização em segundo plano em 1h no navegador e 12h no CDN.
+
+      ```
+      <LocationMatch "^/content/.*\.model\.json$">
+         Header set Cache-Control "max-age=300,stale-while-revalidate=3600" "expr=%{REQUEST_STATUS} < 400"
+         Header set Surrogate-Control "stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
+         Header set Age 0
+      </LocationMatch>
+      ```
+
+   * Armazene em cache URLs imutáveis do componente de imagem principal a longo prazo (30 dias) com a atualização em segundo plano para evitar o MISS.
+
+      ```
+      <LocationMatch "^/content/.*\.coreimg.*\.(?i:jpe?g|png|gif|svg)$">
+         Header set Cache-Control "max-age=2592000,stale-while-revalidate=43200,stale-if-error=43200,public,immutable" "expr=%{REQUEST_STATUS} < 400"
+         Header set Age 0
+      </LocationMatch>
+      ```
+
+   * Armazene em cache recursos mutáveis do DAM como imagens e vídeos para 24 horas e atualize o plano de fundo após 12 horas para evitar o MISS
+
+      ```
+      <LocationMatch "^/content/dam/.*\.(?i:jpe?g|gif|js|mov|mp4|png|svg|txt|zip|ico|webp|pdf)$">
+         Header set Cache-Control "max-age=43200,stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
+         Header set Age 0
+      </LocationMatch>
+      ```
 
 ## Invalidação de cache do Dispatcher {#disp}
 
