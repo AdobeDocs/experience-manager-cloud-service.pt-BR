@@ -1,12 +1,12 @@
 ---
 title: jornada do desenvolvedor sem periféricos do AEM
-description: Comece aqui para obter uma jornada guiada por meio do Adobe Experience Manager (AEM) as a Cloud Service quando estiver sendo usada como um Sistema de gerenciamento de conteúdo sem cabeçalho (CMS). Esta jornada fornece todas as informações necessárias para desenvolver seu primeiro aplicativo sem periféricos.
+description: Comece aqui para obter uma jornada guiada por meio do Adobe Experience Manager (AEM) as a Cloud Service quando estiver usando recursos como Modelos de conteúdo, Fragmentos de conteúdo e uma API GraphQL para potencializar experiências headless como um Sistema de gerenciamento de conteúdo sem cabeçalho (CMS). Esta jornada fornece todas as informações necessárias para desenvolver seu primeiro aplicativo sem periféricos.
 landing-page-description: Comece aqui para obter uma jornada guiada pelos recursos headless de AEM, seus recursos e como aproveitá-los em seu primeiro projeto de desenvolvimento.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: 0c8cddd65ad3b297b58f8ee618ba176edcf51a45
+source-git-commit: 21bd90fa61cfb1c567a7eea4b439206c38b49a5f
 workflow-type: tm+mt
-source-wordcount: '1277'
-ht-degree: 6%
+source-wordcount: '1307'
+ht-degree: 12%
 
 ---
 
@@ -16,7 +16,7 @@ Comece aqui para obter uma jornada guiada por meio do Adobe Experience Manager (
 
 ## Introdução {#introduction}
 
-A implementação sem cabeçalho perde o gerenciamento de página e componente, como é tradicional em soluções de pilha completa, e se concentra na criação de fragmentos de conteúdo reutilizáveis e neutros em canais e em sua entrega entre canais. É um padrão de desenvolvimento moderno e dinâmico para a implementação de experiências digitais.
+A implementação sem cabeçalho do AEM usa os Modelos de fragmentos de conteúdo e os Fragmentos de conteúdo para se concentrar na criação de fragmentos de conteúdo estruturados, neutros em canais e reutilizáveis, bem como no delivery entre canais. Para isso, ele perde o gerenciamento de páginas e componentes como é tradicional em soluções de pilha completa. É um padrão de desenvolvimento moderno e dinâmico para a implementação de experiências digitais.
 
 Este guia aborda os tópicos de implementação sem cabeçalho no AEM para que, ao concluir, você:
 
@@ -24,11 +24,11 @@ Este guia aborda os tópicos de implementação sem cabeçalho no AEM para que, 
 * Entenda AEM recursos sem periféricos e como eles trabalham juntos para proporcionar uma experiência sem periféricos.
 * Tenha a capacidade de realizar as primeiras etapas de implementação do seu primeiro projeto sem periféricos AEM.
 
-## jornadas de documentação de AEM {#documentation-journeys}
+## Jornadas de documentação do AEM {#documentation-journeys}
 
-[Uma Jornada de documentação](/help/journey-documentation/documentation-journeys.md) une vários tópicos e recursos diferentes e talvez complicados ao fornecer uma narrativa que ajude o leitor, que pode ser novo a AEM, compreender e resolver um problema de negócios do início ao fim, assumindo o mínimo de tópico ou conhecimento AEM.
+[Uma Jornada de documentação](/help/journey-documentation/documentation-journeys.md) une vários tópicos e recursos diferentes e talvez complicados, fornecendo uma narrativa que ajuda o leitor, que pode ser novo no AEM, a entender e resolver um problema da empresa do começo ao fim, assumindo o mínimo de conhecimento prévio do tópico ou do AEM.
 
-As Jornadas de documentação foram projetadas com princípios de práticas recomendadas, informadas pela última pesquisa Adobe, experiência comprovada de implementação de consultores de Adobe e feedback de projetos de clientes.
+As Jornadas de documentação foram projetadas com princípios de práticas recomendadas, informadas pela última pesquisa da Adobe, experiência comprovada de implementação dos consultores da Adobe e feedback de projetos de clientes.
 
 Se você quiser saber como o Adobe recomenda como resolver casos de negócios sem periféricos com o AEM, [AEM Jornadas headless](/help/journey-documentation/documentation-journeys.md) são onde começar.
 
@@ -40,9 +40,9 @@ Se você quiser saber como o Adobe recomenda como resolver casos de negócios se
 
 Essa jornada foi projetada para o persona do desenvolvedor, apresentando os requisitos, as etapas e a abordagem de um projeto sem cabeçalho AEM da perspectiva do desenvolvedor. A jornada define personas adicionais com as quais o desenvolvedor deve interagir para um projeto bem-sucedido, mas o ponto de vista da jornada é o do desenvolvedor.
 
-A seguir estão as personas que interagem nessa jornada.
+A seguir estão os perfis que interagem nessa jornada.
 
-| Persona | Descrição | Função nesta Jornada |
+| Perfil | Descrição | Função nesta Jornada |
 |---|---|---|
 | Desenvolvedor (público-alvo) | Tem experiência no desenvolvimento de aplicativos sem periféricos que consomem conteúdo de diferentes fontes | Público-alvo desta jornada |
 | Autor do conteúdo | Cria e gerencia conteúdo entregue sem interface | Os autores de conteúdo criam conteúdo que o desenvolvedor oferece sem cabeçalho. |
