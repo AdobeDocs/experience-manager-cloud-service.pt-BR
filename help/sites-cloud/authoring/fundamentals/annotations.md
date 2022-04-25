@@ -2,16 +2,16 @@
 title: Adição de anotações de página
 description: Use o modo de anotação para deixar anotações e rascunhos nas páginas, como você usaria as notas adesivas para auxiliar no processo de revisão do conteúdo
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
-source-git-commit: feee00bf5adae0821fe770c8882641994cee2dbf
+source-git-commit: 64d801b108229866394e993811a67f983be5df6c
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '699'
 ht-degree: 35%
 
 ---
 
 # Adição de anotações de página {#adding-page-annotations}
 
-A criação de conteúdo para sua experiência digital geralmente requer discussão e feedback antes da publicação. Para auxiliar nesse processo de feedback, o AEM permite adicionar anotações ao seu conteúdo.
+Criar conteúdo para sua experiência digital geralmente requer discussão e feedback antes da publicação. Para auxiliar nesse processo de feedback, o AEM permite adicionar anotações ao seu conteúdo.
 
 Uma anotação coloca um rascunho ou nota simples (pense em uma nota autoadesiva do mundo real) na página. A anotação permite que você deixe comentários ou perguntas para outros autores e revisores.
 
