@@ -2,7 +2,7 @@
 title: Ao vivo
 description: Saiba como executar a migração assim que o código e o conteúdo estiverem prontos para a nuvem
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 9a10348251fe7559ae5d3c4a203109f1f6623bce
+source-git-commit: cc90803ff1ccf109ca6a02f2b69aa54362fa867e
 workflow-type: tm+mt
 source-wordcount: '1644'
 ht-degree: 1%
@@ -120,7 +120,7 @@ Revise esta lista de atividades para garantir que você realize uma migração t
    * [Teste funcional personalizado](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)
    * [Teste da interface](/help/implementing/cloud-manager/ui-testing.md)
 * Migre o conteúdo para produção e verifique se um subconjunto relevante está disponível no armazenamento temporário para testes.
-   * Observe que as práticas recomendadas do DevOps para AEM implicam que o código avança do ambiente de desenvolvimento para o de produção enquanto [o conteúdo é movido de ambientes de produção.](/help/overview/enterprise-devops.md#code-movement)
+   * Observe que as práticas recomendadas do DevOps para AEM implicam que o código avance do ambiente de desenvolvimento para o de produção, enquanto o conteúdo desaparece dos ambientes de produção.
 * Programe um período de congelamento de código e conteúdo.
    * Consulte também a seção [Linhas do tempo de congelamento de código e conteúdo para a migração](#code-content-freeze)
 * Realize a complementação do conteúdo final.
