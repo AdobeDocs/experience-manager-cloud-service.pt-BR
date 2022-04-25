@@ -2,9 +2,9 @@
 title: Edição de um SPA externo no AEM
 description: Este documento descreve as etapas recomendadas para carregar um SPA independente em uma instância de AEM, adicionar seções editáveis de conteúdo e ativar a criação.
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: af7d8229ee080852f3c5b542db97b5c223357cf0
 workflow-type: tm+mt
-source-wordcount: '2127'
+source-wordcount: '2401'
 ht-degree: 1%
 
 ---
@@ -257,6 +257,42 @@ Há vários requisitos para adicionar componentes de folha virtuais, bem como al
 * O caminho para o nó em que um novo nó é criado deve ser válido quando fornecido via `itemPath`.
    * Neste exemplo, `root/responsivegrid` deve existir para que o novo nó `text_20` pode ser criada lá.
 * Somente a criação do componente de folha é suportada. O contêiner virtual e a página serão suportados em versões futuras.
+
+### Contêineres virtuais {#virtual-containers}
+
+A capacidade de adicionar contêineres, mesmo que o contêiner correspondente ainda não tenha sido criado no AEM, é compatível. O conceito e a abordagem são semelhantes [componentes de folhas virtuais.](#virtual-leaf-components)
+
+O desenvolvedor de front-end pode adicionar os componentes do contêiner em locais apropriados no SPA e esses componentes exibirão espaços reservados quando abertos no editor no AEM. O autor pode então adicionar componentes e seu conteúdo ao contêiner, o que criará os nós necessários na estrutura do JCR.
+
+Por exemplo, se um contêiner já existir em `/root/responsivegrid` e o desenvolvedor deseja adicionar um novo contêiner filho:
+
+![Local do contêiner](assets/container-location.png)
+
+`newContainer` ainda não existe no AEM.
+
+Ao editar a página que contém esse componente no AEM, um espaço reservado vazio para um contêiner é exibido para o autor poder adicionar conteúdo.
+
+![Espaço reservado do contêiner](assets/container-placeholder.png)
+
+![Localização do contêiner no JCR](assets/container-jcr-structure.png)
+
+Quando o autor adiciona um componente filho ao contêiner, o novo nó do contêiner é criado com o nome correspondente na estrutura JCR.
+
+![Contêiner com conteúdo](assets/container-with-content.png)
+
+![Contêiner com conteúdo no JCR](assets/container-with-content-jcr.png)
+
+Mais componentes e conteúdo podem ser adicionados ao contêiner agora conforme o autor requer e as alterações serão mantidas.
+
+#### Requisitos e limitações {#container-limitations}
+
+Há vários requisitos para adicionar contêineres virtuais, bem como algumas limitações.
+
+* A política para determinar quais componentes podem ser adicionados será herdada do contêiner pai.
+* O pai imediato do contêiner a ser criado já deve existir no AEM.
+   * Se o contêiner `root/responsivegrid` já existe no contêiner de AEM, então um novo contêiner pode ser criado fornecendo o caminho `root/responsivegrid/newContainer`.
+   * No entanto `root/responsivegrid/newContainer/secondNewContainer` não é possível.
+* Somente um novo nível de componente pode ser criado virtualmente de cada vez.
 
 ## Personalizações adicionais {#additional-customizations}
 
