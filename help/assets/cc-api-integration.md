@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Upload,Asset Processing,Publishing,Asset Compute Microservices,Workflow
 role: User,Admin
 exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: 30870502f0e6084991bdba79163651f43f15a99b
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '747'
 ht-degree: 0%
 
 ---
@@ -50,11 +50,31 @@ Os usuários podem criar perfis de processamento para automatizar as seguintes o
 
    ![Substituir objetos de maneira inteligente](/help/assets/assets/content-automation-objectreplace.png)
 
+## Habilitar Automação de conteúdo para AEM programa as a Cloud Service {#enable-content-automation}
+
+Para ativar o complemento de Automação de conteúdo para AEM programa as a Cloud Service usando o Cloud Manager:
+
+1. Entre em contato com seu representante de conta para licenciar o complemento Content Automation .
+1. Acesse o Cloud Manager e alterne para sua organização usando o seletor de organização.
+1. Clique em **[!UICONTROL Adicionar programa]** e especifique um nome de programa.
+1. Clique em **[!UICONTROL Continuar]**.
+1. Expandir **[!UICONTROL Ativos]** e selecione **[!UICONTROL Automação de conteúdo]**.
+1. Clique em **[!UICONTROL Criar]**.
+1. Execute o pipeline para [implantar as alterações no Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
+
+Se você precisar adicionar o complemento Content Automation a um programa AEM as a Cloud Service existente no Cloud Manager:
+
+1. Clique em ... no cartão do programa.
+
+1. Selecionar **[!UICONTROL Editar programa]** e depois selecione **[!UICONTROL Soluções e complementos]** guia .
+
+1. Expandir **[!UICONTROL Ativos]** e selecione **[!UICONTROL Automação de conteúdo]**.
+1. Clique em **[!UICONTROL Atualizar]**.
+1. Execute o pipeline para [implantar as alterações no Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
+
 ## Use um perfil de processamento para editar seus ativos de criação em massa {#process-assets}
 
 Para usar perfis de processamento para criar variações automaticamente, siga estas etapas:
-
-1. Contato [Suporte ao cliente Adobe](https://experienceleague.adobe.com/#support) para receber a licença.
 
 1. Navegar para **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Processando perfis]**.
 
