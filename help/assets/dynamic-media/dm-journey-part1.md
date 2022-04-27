@@ -1,5 +1,5 @@
 ---
-title: jornada Dynamic Media
+title: Dynamic Media Jornada, Parte I
 description: 'A Jornada do Dynamic Media aborda as noções básicas do Dynamic Media, como ele funciona, o que ele pode fazer por você e qual valor ele agrega ao seu trabalho e aos seus clientes. '
 contentOwner: Rick Brough
 products: Experience Manager as a Cloud Service
@@ -10,9 +10,9 @@ role: User, Admin
 mini-toc-levels: 4
 hide: false
 hidefromtoc: false
-source-git-commit: b830c6e2f86b92b03cb9c03e94ae2bb2e3bda444
+source-git-commit: dc290be237c938af59960834b32269a1f6c5bd97
 workflow-type: tm+mt
-source-wordcount: '3485'
+source-wordcount: '3487'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,8 @@ Esse método de entrega único garante que experiências de qualidade consistent
 
 <!-- As part of building and publishing assets with Dynamic Media, you visually configure the effects that you want to apply to assets. In so doing, you are literally building the URL that correctly tells the publish server how to deliver your primary asset to the screen.  -->
 
-![O Adobe Dynamic Media fornece a mesma imagem principal para diferentes mídias, em diferentes tamanhos e formatos.](/help/assets/assets-dm/dm-oneasset-multioutput.png)
+![O Adobe Dynamic Media fornece a mesma imagem principal para diferentes mídias, em diferentes tamanhos e formatos.](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
+
 *O Adobe Dynamic Media garante experiências consistentes e de qualidade para qualquer tela, independentemente do tamanho ou da largura de banda.*
 
 Conforme você lê, aprenderá mais sobre por que esse conceito de &quot;um arquivo de ativo principal, possibilidades infinitas&quot; é importante.
@@ -104,7 +105,7 @@ Essa inteligência reduz ainda mais o tamanho do arquivo de imagem com base na v
 
 Em geral, com a geração inteligente de imagens, você pode esperar uma melhoria de desempenho de 22% a 47% dependendo das configurações predefinidas de imagens existentes e das características específicas do usuário final. Ao mesmo tempo, mantinha a qualidade da imagem como se ela nunca tivesse sido tocada.
 
-![Imagem inteligente](/help/assets/assets-dm/dm-smart-imaging.png)
+![Imagem inteligente](/help/assets/dynamic-media/assets/dm-smart-imaging.png)
 *O Smart Imaging otimiza automaticamente o formato e o tamanho do arquivo de uma imagem com base no recurso de navegador do cliente e na velocidade da rede.*
 
 A geração de imagens inteligentes não é ativada por padrão porque requer um esforço coordenado entre você e o suporte técnico Adobe Dynamic Media. Além disso, ativar o Smart Imaging requer uma limpeza completa do cache CDN, que é preenchido com o tempo. Se você estiver interessado em usar a Smart Imaging, poderá trabalhar com o Adobe para ativá-la enviando um tíquete de suporte técnico. Em seguida, o suporte técnico fornece um parâmetro de URL que permite experimentar previamente a geração inteligente de imagens. Você pode experimentá-lo em qualquer página da Web ou imagem para que você possa ver o desempenho que obtém e a economia. É possível ativar a geração inteligente de imagens para o seu site completo.
@@ -117,7 +118,7 @@ Quando há um vídeo em uma página, ou uma página principal, seus clientes ten
 
 Para resolver esse problema, a Dynamic Media oferece a capacidade de criar *Conjuntos de vídeos adaptáveis*.
 
-![Conjunto de vídeos adaptáveis](/help/assets/dynamic-media/assets/dm-adaptive-video.png)
+![Conjunto de vídeos adaptáveis](/help/assets/dynamic-media/assets/dm-smart-imaging.png)
 *Um Conjunto de vídeos adaptáveis agrupa versões do mesmo vídeo codificadas em diferentes formatos e taxas de bits.*
 
 Você começa com seu vídeo original e principal, que você faz upload no sistema. o Dynamic Media tem tamanhos automáticos ou *transcódigos*, esse vídeo em vários vídeos. Em seguida, no momento do delivery, ele determina de forma inteligente qual tela de vídeo, qual qualidade e qual formato usar e o entrega ao telefone, tablet ou computador desktop.
