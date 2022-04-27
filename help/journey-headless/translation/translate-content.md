@@ -1,35 +1,31 @@
 ---
-title: Traduzir conteúdo (sem periféricos AEM)
-description: Use o conector e as regras de tradução para traduzir o conteúdo sem cabeçalho.
+title: Traduzir conteúdo headless
+description: Use o conector de tradução para traduzir o conteúdo sem cabeçalho.
 exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
-source-git-commit: a8293384cbe55921f7cfd2187330f66691206e2b
+source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
 workflow-type: tm+mt
-source-wordcount: '2215'
+source-wordcount: '2177'
 ht-degree: 0%
 
 ---
 
 
-# Traduzir conteúdo {#translate-content}
+# Traduzir conteúdo headless {#translate-content}
 
-Use o conector e as regras de tradução para traduzir o conteúdo sem cabeçalho.
+Use o conector de tradução para traduzir o conteúdo sem cabeçalho.
 
 ## A História Até Agora {#story-so-far}
 
-No documento anterior da jornada de tradução AEM sem cabeçalho, [Configurar regras de tradução](translation-rules.md) você aprendeu a usar AEM regras de tradução para identificar seu conteúdo de tradução. Agora você deve:
+No documento anterior da jornada de tradução AEM sem cabeçalho, [Configurar conector de tradução](configure-connector.md) você aprendeu sobre a estrutura de tradução em AEM. Agora você deve:
 
-* Entenda o que as regras de tradução fazem.
-* Pode definir suas próprias regras de tradução.
+* Entenda os parâmetros importantes da Estrutura de integração de tradução no AEM.
+* Pode configurar sua própria conexão com o serviço de tradução.
 
-Agora que seu conector e as regras de tradução estão configurados, este artigo o orienta pela próxima etapa da tradução do conteúdo sem periféricos.
-
->[!NOTE]
->
->Se você ignorou o [Configurar regras de tradução](translation-rules.md) etapa dessa jornada, pois você está no canal de pré-lançamento AEM as a Cloud Service, não precisa se preocupar com as regras de tradução, conforme mencionado neste documento.
+Agora que seu conector está configurado, este artigo o orienta pela próxima etapa da tradução do conteúdo sem periféricos.
 
 ## Objetivo {#objective}
 
-Este documento ajuda você a entender como usar AEM projetos de tradução junto com o conector e suas regras de tradução para traduzir o conteúdo. Após ler este documento, você deve:
+Este documento ajuda você a entender como usar AEM projetos de tradução junto com o conector para traduzir o conteúdo. Após ler este documento, você deve:
 
 * Entenda o que é um projeto de tradução.
 * Pode criar novos projetos de tradução.
@@ -130,7 +126,7 @@ A forma como você usa um projeto de tradução depende de como ele foi criado: 
 
 ### Usar um projeto de tradução criado automaticamente {#using-automatic-project}
 
-Ao criar automaticamente o projeto de tradução, o AEM avalia o conteúdo sem cabeçalho no caminho selecionado com base nas regras de tradução definidas anteriormente. Com base nessa avaliação, ele extrai o conteúdo que requer tradução para um novo projeto de tradução.
+Ao criar automaticamente o projeto de tradução, AEM avalia o conteúdo sem cabeçalho no caminho selecionado. Com base nessa avaliação, ele extrai o conteúdo que requer tradução para um novo projeto de tradução. Eu sei quais campos traduzir com base nos campos sinalizados como **Traduzível** pelo arquiteto de conteúdo.
 
 Para ver os detalhes do conteúdo sem cabeçalho incluído neste projeto:
 

@@ -1,10 +1,10 @@
 ---
-title: Configurar regras de tradução (sem cabeçalho AEM)
+title: Configurar regras de tradução para conteúdo sem cabeçalho
 description: Saiba como definir regras de tradução para identificar o conteúdo para tradução.
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: a8293384cbe55921f7cfd2187330f66691206e2b
+source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
 workflow-type: tm+mt
-source-wordcount: '968'
+source-wordcount: '942'
 ht-degree: 0%
 
 ---
@@ -24,12 +24,12 @@ Agora que seu conector está configurado, este artigo o conduzirá até a próxi
 
 >[!CAUTION]
 >
->Essa etapa da jornada da documentação só é necessária se você não estiver no canal de pré-lançamento AEM as a Cloud Service.
+>Essa etapa da jornada de documentação só é necessária se você não estiver usando a variável **Traduzível** sinalizador em Fragmentos do conteúdo.
 >
->* Se você estiver no canal de pré-lançamento, pule para a próxima etapa do jornada [Traduza o conteúdo.](translate-content.md)
->* Se você não estiver no canal de pré-lançamento, continue lendo este documento.
->
->Consulte a [Seção Recursos adicionais](#additional-resources) para obter mais informações sobre o canal de pré-lançamento.
+>* O **Traduzível** O sinalizador cria automaticamente regras de tradução para você e não requer intervenção.
+>* O **Traduzível** O sinalizador é usado somente se a configuração da Estrutura de Integração de Tradução estiver definida como **[Ativar campos do modelo de conteúdo para tradução.](/help/sites-cloud/administering/translation/integration-framework.md)**
+>* Habilitar essa opção na configuração TIF substituirá quaisquer regras de tradução criadas manualmente.|
+
 
 ## Objetivo {#objective}
 
@@ -108,4 +108,3 @@ Aproveite esse conhecimento e prossiga com sua jornada de tradução sem perifé
 Embora seja recomendável seguir para a próxima parte da jornada de tradução sem periféricos revisando o documento [Traduzir conteúdo,](translate-content.md) a seguir estão alguns recursos adicionais e opcionais que aprofundam alguns conceitos mencionados neste documento, mas não é necessário que eles continuem na jornada sem periféricos.
 
 * [Identificação de conteúdo a ser traduzido](/help/sites-cloud/administering/translation/rules.md) - Saiba como as regras de tradução identificam o conteúdo que precisa ser traduzido.
-* [Canal de pré-lançamento AEM as a Cloud Service](/help/release-notes/prerelease.md#enable-prerelease) - Saiba como aderir ao canal de pré-lançamento do AEM as a Cloud Service para experimentar recursos novos e futuros.

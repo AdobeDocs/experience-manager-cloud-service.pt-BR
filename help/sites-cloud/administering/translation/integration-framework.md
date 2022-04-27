@@ -4,9 +4,9 @@ description: Saiba como configurar a Estrutura de integração de tradução par
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: 5ef9ac087ec3feab9c68935b81882451c308daed
+source-git-commit: 3c37b66b63ed19635854cf277aaf7d5f2a7c1fe8
 workflow-type: tm+mt
-source-wordcount: '1535'
+source-wordcount: '1522'
 ht-degree: 2%
 
 ---
@@ -39,8 +39,8 @@ Os seguintes fornecedores de tradução fornecem uma implementação da API de A
 * [Palavras-chave](https://exchange.adobe.com/experiencecloud.details.90019.html)
 * [Cloud XTM](https://exchange.adobe.com/experiencecloud.details.105037.xtm-connect-for-adobe-experience-manager.html)
 * [Lingotek](https://exchange.adobe.com/experiencecloud.details.90088.lingotek-collaborative-translation-platform.html)
+* [RWS](https://partners.adobe.com/exchangeprogram/experiencecloud/exchange.details.108277.html)
 * [Smartling](https://exchange.adobe.com/experiencecloud.details.90101.smartling-connector-for-adobe-experience-manager.html)
-* [SDL](https://exchange.adobe.com/experiencecloud.details.100110.sdl-translation-management.html)
 * [Systran](https://exchange.adobe.com/experiencecloud.details.90233.systran-for-adobe-experience-manager.html)
 
 Depois de instalar um pacote de conectores, você pode criar uma configuração de nuvem para o conector. Normalmente, você precisa fornecer suas credenciais para autenticação com o serviço de tradução. Para obter informações sobre como adicionar uma configuração de nuvem para o conector do Microsoft Translator, consulte [Integração com o Microsoft Translator](connect-ms-translator.md).
@@ -109,13 +109,7 @@ As propriedades de ativos controlam como configurar ativos. Para obter mais info
 | Traduzir tags | Ative essa propriedade para traduzir tags associadas ao ativo. |
 | Executar tradução automaticamente | Selecione essa propriedade para executar trabalhos de tradução automaticamente após a criação de projetos de tradução. Você não tem uma oportunidade de revisar ou escoar o trabalho de tradução ao selecionar essa opção. |
 | Desativar Tradução Somente Atualização | Quando essa opção estiver marcada, a atualização do projeto de tradução enviará todos os campos traduzíveis para tradução, não apenas os alterados desde a última tradução. |
-| Ativar campos do modelo de conteúdo para tradução* | Ativar essa opção usará o **Traduzível** no campo [Modelos de fragmentos do conteúdo](/help/assets/content-fragments/content-fragments-models.md#properties) para determinar se o campo é traduzido. Nesse caso, [regras de tradução](rules.md) são substituídas. |
-
->[!NOTE]
->
->*Esse recurso está disponível no canal de pré-lançamento.
-> 
->Consulte a [Documentação do Canal de pré-lançamento](/help/release-notes/prerelease.md#enable-prerelease) para obter informações sobre como habilitar o recurso para seu ambiente.
+| Ativar campos do modelo de conteúdo para tradução | Ativar essa opção usará o **Traduzível** no campo [Modelos de fragmentos do conteúdo](/help/assets/content-fragments/content-fragments-models.md#properties) para determinar se o campo é traduzido e cria automaticamente [regras de tradução](rules.md) em conformidade. Essa opção substitui todas as regras de tradução criadas por você. |
 
 ## Configuração de páginas para tradução {#configuring-pages-for-translation}
 

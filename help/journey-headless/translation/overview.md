@@ -2,10 +2,10 @@
 title: jornada de tradução sem cabeçalho AEM
 description: Comece aqui para obter uma jornada guiada por meio da tradução do conteúdo sem periféricos usando AEM ferramentas de tradução avançadas.
 exl-id: b677f691-5257-43c3-a4b9-c34932577b31
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: ad47148237fe8a8b7c0b4fc4eb293f1155dae560
 workflow-type: tm+mt
-source-wordcount: '1044'
-ht-degree: 4%
+source-wordcount: '1029'
+ht-degree: 11%
 
 ---
 
@@ -30,11 +30,11 @@ O objetivo é fornecer uma ampla compreensão da tecnologia sem interface, como 
 
 Se você já está familiarizado com AEM, sem cabeça e tradução, você pode já ter o conhecimento fundamental dessa jornada. Considere consultar nossa documentação técnica vinculada ao [seção recursos adicionais abaixo.](#additional-resources)
 
-## jornadas de documentação de AEM {#documentation-journeys}
+## Jornadas de documentação do AEM {#documentation-journeys}
 
-[Uma Jornada de documentação](/help/journey-documentation/documentation-journeys.md) une vários tópicos e recursos diferentes e talvez complicados ao fornecer uma narrativa que ajude o leitor, que pode ser novo a AEM, compreender e resolver um problema de negócios do início ao fim, assumindo o mínimo de tópico ou conhecimento AEM.
+[Uma Jornada de documentação](/help/journey-documentation/documentation-journeys.md) une vários tópicos e recursos diferentes e talvez complicados, fornecendo uma narrativa que ajuda o leitor, que pode ser novo no AEM, a entender e resolver um problema da empresa do começo ao fim, assumindo o mínimo de conhecimento prévio do tópico ou do AEM.
 
-As Jornadas de documentação foram projetadas com princípios de práticas recomendadas, informadas pela última pesquisa Adobe, experiência comprovada de implementação de consultores de Adobe e feedback de projetos de clientes.
+As Jornadas de documentação foram projetadas com princípios de práticas recomendadas, informadas pela última pesquisa da Adobe, experiência comprovada de implementação dos consultores da Adobe e feedback de projetos de clientes.
 
 Se você quiser saber como o Adobe recomenda como resolver casos de negócios sem periféricos com o AEM, [AEM Jornadas headless](/help/journey-documentation/documentation-journeys.md) são onde começar.
 
@@ -44,9 +44,9 @@ Essa jornada foi projetada para o perfil especialista em tradução, geralmente 
 
 Essa jornada supõe que o leitor tenha experiência de tradução de conteúdo em um grande sistema CMS, mas não assume conhecimento de tecnologia ou AEM sem periféricos.
 
-A seguir estão as personas que interagem nessa jornada.
+A seguir estão os perfis que interagem nessa jornada.
 
-| Persona | Descrição | Função no Jornada |
+| Perfil | Descrição | Função na jornada |
 |---|---|---|
 | Especialista em tradução | Define qual conteúdo deve ser traduzido e gerencia esses workflows | Público-alvo desta jornada |
 | Autor do conteúdo | Cria e gerencia conteúdo entregue sem cabeçalho | Os Autores de conteúdo criam conteúdo que o especialista de tradução deve traduzir. |
@@ -67,9 +67,8 @@ Embora seja possível ir diretamente para uma parte específica da jornada, muit
 | 1 | [Saiba mais sobre o conteúdo sem periféricos e como traduzi-lo em AEM](learn-about.md) | Aprenda conceitos sem interface, como eles mapeiam para AEM e a teoria AEM tradução. |
 | 2 | [Introdução à tradução do AEM headless](getting-started.md) | Saiba como organizar o conteúdo sem periféricos e como funcionam AEM ferramentas de tradução. |
 | 3 | [Configurar o conector de tradução](configure-connector.md) | Saiba como conectar AEM a um serviço de tradução. |
-| 4 | [Configurar regras de tradução](translation-rules.md) | Saiba como definir regras de tradução para identificar o conteúdo para tradução. |
-| 5 | [Traduzir conteúdo](translate-content.md) | Use o conector e as regras de tradução para traduzir o conteúdo sem cabeçalho. |
-| 6 | [Publicar conteúdo traduzido](publish-content.md) | Saiba como publicar seu conteúdo traduzido e atualizar a tradução quando o conteúdo subjacente for atualizado. |
+| 4 | [Traduzir conteúdo](translate-content.md) | Use o conector e as regras de tradução para traduzir o conteúdo sem cabeçalho. |
+| 5 | [Publicar conteúdo traduzido](publish-content.md) | Saiba como publicar seu conteúdo traduzido e atualizar a tradução quando o conteúdo subjacente for atualizado. |
 
 ## O que vem a seguir {#what-is-next}
 
