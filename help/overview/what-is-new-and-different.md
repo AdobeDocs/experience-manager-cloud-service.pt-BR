@@ -2,10 +2,10 @@
 title: O que é diferente e quais são as novidades - Adobe Experience Manager as a Cloud Service
 description: O que é diferente e quais são as novidades - Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: b74a0dbb1c9fdb74941f7b71bed9215853b63666
+source-git-commit: 7665bc1a27eec6474c1f21c61ac9cf444cf3d443
 workflow-type: tm+mt
-source-wordcount: '1906'
-ht-degree: 100%
+source-wordcount: '1897'
+ht-degree: 96%
 
 ---
 
@@ -171,7 +171,7 @@ Para que os aplicativos do AEM existentes sejam executados no AEM as a Cloud Ser
 
 Esse processo é comumente chamado de desenvolvimento Cloud-first. Como a duração de ponta a ponta deve demorar minutos (de 20 a 50, dependendo da complexidade do aplicativo), é necessário adotar metodologias de desenvolvimento rápidas antes que as alterações pendentes no código e na configuração sejam tentadas na nuvem.
 
-O Console da Web, em que os pacotes OSGI e sua configuração associada são gerenciados e que anteriormente fazia parte do QuickStart do AEM, não está mais diretamente acessível para usuários de um ambiente AEM as a Cloud Service. Essa interface ainda pode ser acessada no modo somente leitura usando um novo console do desenvolvedor. Com esse console, os desenvolvedores podem selecionar e fazer logon diretamente em qualquer nó específico de um serviço de autor ou publicação e, em seguida, acessar as áreas bloqueadas por padrão.
+O Console da Web, onde os pacotes OSGI e sua configuração associada são gerenciados e anteriormente parte do AEM QuickStart, não está mais disponível AEM as a Cloud Service. O novo console do desenvolvedor fornece uma interface somente leitura para a maioria das informações de tempo de execução. Com esse console, os desenvolvedores podem selecionar e fazer logon diretamente em qualquer nó específico de um autor ou serviço de publicação e exibir as informações relevantes.
 
 >[!NOTE]
 >
