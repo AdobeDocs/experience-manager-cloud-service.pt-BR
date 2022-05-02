@@ -2,9 +2,9 @@
 title: Ativar o AEM Screens para o seu site de demonstração
 description: Saiba mais sobre as etapas para habilitar a experiência as a Cloud Service completa da AEM Screens em seu site de demonstração.
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: cdc60627bac17166c12ebdb77e7cf5b0ed92dc80
 workflow-type: tm+mt
-source-wordcount: '2666'
+source-wordcount: '2671'
 ht-degree: 0%
 
 ---
@@ -296,7 +296,7 @@ Primeiro, você precisará publicar seu conteúdo de demonstração do Screens n
 
    ![Criar exibição](assets/create-display.png)
 
-1. Depois que o canal for criado, clique nele para exibir detalhes. Ao monitor deve ser atribuído um canal que foi sincronizado do site de demonstração. Clique em **Atribuir canal** na parte superior direita da tela.
+1. Depois que a exibição for criada, clique no nome da exibição para abrir a tela de detalhes da exibição. Ao monitor deve ser atribuído um canal que foi sincronizado do site de demonstração. Clique em **Atribuir canal** na parte superior direita da tela.
 
    ![Detalhes do canal](assets/channel-detail.png)
 
