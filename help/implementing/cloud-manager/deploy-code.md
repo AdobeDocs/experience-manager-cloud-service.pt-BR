@@ -2,9 +2,9 @@
 title: Implantação de código
 description: Saiba como implantar seu código usando os pipelines do Cloud Manager AEM as a Cloud Service.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: feee55b2d1814b14121030b2ec3c0cb286e87044
+source-git-commit: af1e682505d68a65a5e2b500d42f01f030e36ac1
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '806'
 ht-degree: 1%
 
 ---
@@ -12,7 +12,18 @@ ht-degree: 1%
 
 # Implantação de código {#deploy-your-code}
 
-Saiba como implantar seu código usando os pipelines do Cloud Manager AEM as a Cloud Service.
+Saiba como implantar seu código na produção usando pipelines do Cloud Manager AEM as a Cloud Service.
+
+![Diagrama do pipeline de produção](./assets/configure-pipeline/production-pipeline-diagram.png)
+
+A implantação perfeita do código no Stage e, em seguida, no Production é feita por meio de um pipeline de Produção. A execução do pipeline de Produção é dividida em duas fases lógicas.
+
+1. Implantação no ambiente de preparo
+   * O código é criado e implantado no ambiente Stage para testes funcionais automatizados, testes de interface do usuário, auditoria de experiência e teste de aceitação de usuários (UAT).
+1. Implantação no ambiente de produção
+   * Depois que a build for validada no Stage e aprovada para promoção na Production, o mesmo artefato de build será implantado no ambiente Production (Produção).
+
+_Somente o tipo de pipeline de Código de pilha completo oferece suporte para verificação de código, teste de função, teste de interface do usuário e auditoria de experiência._
 
 ## Implantação do código com o Cloud Manager AEM as a Cloud Service {#deploying-code-with-cloud-manager}
 

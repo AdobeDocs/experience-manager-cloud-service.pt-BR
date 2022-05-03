@@ -3,16 +3,16 @@ title: Configuração de pipeline de produção
 description: Saiba como configurar pipelines de produção para criar e implantar seu código em ambientes de produção.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 9804d9b71f082c3d4788667fdc3993af3b673588
+source-git-commit: 94e37ae6aef64ec61e633e4c034ceefe5e75c7c8
 workflow-type: tm+mt
-source-wordcount: '1442'
+source-wordcount: '1462'
 ht-degree: 0%
 
 ---
 
 # Configuração de um pipeline de produção {#configure-production-pipeline}
 
-Saiba como configurar pipelines de produção para criar e implantar seu código em ambientes de produção.
+Saiba como configurar pipelines de produção para criar e implantar seu código em ambientes de produção. Um pipeline de Produção implanta o código primeiro no ambiente de Preparo e, após a aprovação, implanta o mesmo código no ambiente de Produção.
 
 Um usuário deve ter a variável **[Gerenciador de implantação](/help/onboarding/learn-concepts/cloud-manager-introduction.md#role-based-permissions)** para configurar pipelines de produção.
 
