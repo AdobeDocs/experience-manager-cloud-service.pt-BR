@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 9645cf2ef95c41b8d319bb22eb4d69bd11525eca
+source-git-commit: 2478276c8f8a2c92a63e24e50520e8d81b9a4e26
 workflow-type: tm+mt
-source-wordcount: '2704'
-ht-degree: 1%
+source-wordcount: '2899'
+ht-degree: 2%
 
 ---
 
@@ -44,7 +44,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 <!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 -->
 
-## Formatos de arquivo compatíveis {#supported-file-formats}
+## Formatos de arquivo não compatíveis {#supported-file-formats}
 
 Os microsserviços de ativos oferecem suporte para uma grande variedade de formatos de arquivo para processar, gerar representações ou extrair metadados. Consulte [formatos de arquivo compatíveis](file-format-support.md) para obter a lista completa de tipos MIME e a funcionalidade suportada para cada tipo.
 
@@ -169,11 +169,11 @@ Aplique perfis de processamento a pastas usando um dos seguintes métodos:
 >
 >Somente um perfil de processamento pode ser aplicado a uma pasta. Para gerar mais representações, adicione mais definições de representação ao perfil de processamento existente.
 
-Depois que um perfil de processamento é aplicado a uma pasta, todos os novos ativos carregados (ou atualizados) nessa pasta ou em qualquer uma de suas subpastas são processados usando o perfil de processamento adicional configurado. Esse processamento está além do perfil padrão.
+Depois que um perfil de processamento é aplicado a uma pasta, todos os novos ativos carregados (ou atualizados) nessa pasta ou em qualquer uma de suas subpastas são processados usando o perfil de processamento adicional configurado. Esse processamento é executado em adição ao do perfil padrão.
 
 >[!NOTE]
 >
->Um perfil de processamento aplicado a uma pasta funciona para a árvore inteira, mas pode ser substituído por outro perfil aplicado a uma subpasta. Quando os ativos são carregados em uma pasta, o Experience Manager verifica as propriedades da pasta contêiner em busca de um perfil de processamento. Se nenhuma for aplicada, uma pasta pai na hierarquia será verificada em busca de um perfil de processamento a ser aplicado.
+>Um perfil de processamento aplicado a uma pasta funciona para a árvore inteira, mas pode ser substituído por outro perfil aplicado a uma subpasta. Quando os ativos são carregados em uma pasta, o Experience Manager verifica as propriedades da pasta contêiner em busca de um perfil de processamento. Se nenhum for aplicado, uma pasta principal na hierarquia será verificada em busca de um perfil de processamento para ser aplicado.
 
 Para verificar se os ativos são processados, visualize as renderizações geradas no [!UICONTROL Representações] no painel esquerdo. Abra a visualização de ativos e abra o painel à esquerda para acessar o **[!UICONTROL Representações]** exibir. As representações específicas no perfil de processamento, para as quais o tipo de ativo específico corresponde às regras de inclusão do tipo MIME, devem ser visíveis e acessíveis.
 
@@ -185,7 +185,7 @@ Para verificar se os ativos são processados, visualize as renderizações gerad
 
 Para uma situação em que é necessário um processamento adicional de ativos que não pode ser obtido usando os perfis de processamento, é possível adicionar mais workflows pós-processamento à configuração. O pós-processamento permite que você adicione processamento totalmente personalizado sobre o processamento configurável usando microsserviços de ativos.
 
-Os workflows de pós-processamento, se configurados, são executados automaticamente por [!DNL Experience Manager] após a conclusão do processamento de microsserviços. Não há necessidade de adicionar iniciadores de fluxo de trabalho manualmente para acionar os fluxos de trabalho. Os exemplos incluem:
+Fluxos de trabalho de pós-processamento ou [Fluxo de trabalho de início automático](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/auto-start-workflows.html), se configuradas, são executadas automaticamente por [!DNL Experience Manager] após a conclusão do processamento de microsserviços. Não há necessidade de adicionar iniciadores de fluxo de trabalho manualmente para acionar os fluxos de trabalho. Os exemplos incluem:
 
 * Etapas de fluxo de trabalho personalizadas para processar ativos.
 * Integrações para adicionar metadados ou propriedades a ativos de sistemas externos, por exemplo, informações de produto ou processo.
@@ -233,6 +233,32 @@ Você pode configurar o serviço de execução do fluxo de trabalho personalizad
 * Fluxos de trabalho de pós-processamento por expressão (`postProcWorkflowsByExpression`): Vários modelos de fluxo de trabalho podem ser listados, com base em diferentes expressões regulares. As expressões e os modelos devem ser separados por dois pontos. A expressão regular deve apontar para o nó do ativo diretamente, e não para uma das representações ou arquivos. Por exemplo: `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
 
 Para saber como implantar uma configuração OSGi, consulte [implantar em [!DNL Experience Manager]](/help/implementing/deploying/overview.md).
+
+#### Desative a execução do workflow de pós-processamento
+
+Quando o pós-processamento não for necessário, crie e use um Modelo de fluxo de trabalho &quot;vazio&quot; na __Fluxo de trabalho de início automático__ seleção.
+
+##### Criar o modelo de fluxo de trabalho de início automático desativado
+
+1. Navegar para __Ferramentas > Fluxo de trabalho > Modelos__
+1. Selecionar __Criar > Criar modelo__ formar a barra de ação superior
+1. Forneça um título e nome para o novo Modelo de Fluxo de Trabalho, por exemplo:
+   * Título: Desativar fluxo de trabalho de início automático
+   * Nome: disable-auto-start-workflow
+1. Selecionar __Concluído__ para criar o modelo de fluxo de trabalho
+1. __Selecionar__ e __Editar__ o modelo de fluxo de trabalho recém-criado
+1. No editor de Modelo de fluxo de trabalho, selecione __Etapa 1__ na definição do modelo e exclua-a
+1. Abra o __Painel lateral__ e selecione __Etapas__
+1. Arraste o __Fluxo de Trabalho de Ativos de Atualização do DAM Concluído__ etapa na definição do modelo
+1. Selecione o __Informações da página__ (ao lado do __Painel lateral__ alternar) e selecione __Abrir propriedades__
+1. Em __Básico__ guia , selecione __Fluxo de trabalho transitório__
+1. Selecionar __Salvar e fechar__ na barra de ação superior
+1. Selecionar __Sincronizar__ na barra de ação superior
+1. Feche o editor de Modelo de fluxo de trabalho
+
+##### Aplicar o modelo de fluxo de trabalho de início automático desativado
+
+Siga as etapas descritas em [aplicar um modelo de fluxo de trabalho a uma pasta](#apply-workflow-model-to-folder) e defina a __Desativar fluxo de trabalho de início automático__ como __Fluxo de trabalho de início automático__ para pastas não exigem pós-processamento de ativos.
 
 ## Práticas recomendadas e limitações {#best-practices-limitations-tips}
 
