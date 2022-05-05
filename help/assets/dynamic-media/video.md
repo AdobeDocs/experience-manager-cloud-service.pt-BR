@@ -4,7 +4,7 @@ description: Saiba como trabalhar com vídeo no Dynamic Media, como práticas re
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 77f1b744dabd72fc26d3b0607db9561e6cb7fa66
+source-git-commit: 22718edcfb6d233a1316fcf2546e685b57609e8c
 workflow-type: tm+mt
 source-wordcount: '9349'
 ht-degree: 4%
@@ -473,7 +473,7 @@ O Google altera periodicamente sua interface do usuário. Dessa forma, as etapas
 
    ![6_5_googleaccount-apis-application-type](/help/assets/dynamic-media/assets/6_5_googleaccount-apis-applicationtype.png)
 
-1. Faça uma das seguintes opções:
+1. Siga uma das seguintes opções:
 
    * No **[!UICONTROL Nome]** , insira um nome exclusivo para o cliente OAuth 2.0.
    * Use o nome padrão que o Google já forneceu na **[!UICONTROL Nome]** campo.
@@ -1070,7 +1070,7 @@ Consulte [Fornecer conteúdo estático (não imagem)](https://experienceleague.a
 
    Consulte [Publicar ativos](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
-1. Faça uma das seguintes opções:
+1. Siga uma das seguintes opções:
 
    * Para obter uma experiência do visualizador de vídeo pop-up, selecione **[!UICONTROL URL]**. Na caixa de diálogo URL, selecione e copie o URL para a Área de transferência e, em seguida, passe o URL para um editor de texto simples. Anexe o URL copiado do vídeo com a seguinte sintaxe:
 
@@ -1130,7 +1130,7 @@ Consulte [WebVTT: O formato de Rastreamento de texto da Web](https://w3c.github.
 
    Consulte [Fazer upload de ativos](/help/assets/manage-digital-assets.md#uploading-assets).
 
-1. Faça uma das seguintes opções:
+1. Siga uma das seguintes opções:
 
    <table>
      <tbody>
