@@ -2,9 +2,9 @@
 title: Visualização de conteúdo
 description: Saiba como usar o serviço de visualização de AEM para visualizar o conteúdo antes de entrar em funcionamento.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: e70e6ee055c2542752e66e53aa70a9378b1bc5c0
+source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '372'
 ht-degree: 1%
 
 ---
@@ -17,6 +17,10 @@ O AEM oferece um serviço de visualização do Sites permite que desenvolvedores
 Ela facilita a visualização de experiências de página que de outra forma não estariam visíveis no ambiente do autor, como transições de página e outro conteúdo somente do lado da publicação.
 
 Para obter mais detalhes sobre os ambientes de visualização, consulte o documento [Gerenciar ambientes.](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+
+>[!NOTE]
+>
+>A publicação de um Fragmento de experiência na Visualização segue basicamente o mesmo procedimento de uma página, embora a partir do console ou do editor Fragmentos de experiência.
 
 ## Publicar conteúdo na visualização {#publishing-content-to-preview}
 

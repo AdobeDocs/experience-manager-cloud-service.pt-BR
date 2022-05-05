@@ -3,16 +3,22 @@ title: Saiba como usar o GraphQL com o AEM - Exemplos de conteúdo e consultas
 description: Saiba como usar o GraphQL com o AEM para fornecer conteúdo em headless, explorando exemplos de conteúdo e consultas.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: a2e36e296749c79040c9687bbd88288d8977086d
-workflow-type: ht
-source-wordcount: '1416'
-ht-degree: 100%
+source-git-commit: c44c58398da3d82be04e22a5e4293e79361a8def
+workflow-type: tm+mt
+source-wordcount: '1474'
+ht-degree: 98%
 
 ---
 
 # Saiba como usar o GraphQL com o AEM - Exemplos de conteúdo e consultas {#learn-graphql-with-aem-sample-content-queries}
 
 Saiba como usar o GraphQL com o AEM para fornecer conteúdo em headless, explorando exemplos de conteúdo e consultas.
+
+>[!NOTE]
+>
+>Parte da funcionalidade desse recurso está disponível no canal de pré-lançamento. Especificamente, a funcionalidade relacionada às consultas persistentes.
+> 
+>Consulte a [Documentação do canal de pré-lançamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=pt-BR#enable-prerelease) para obter informações sobre como habilitar o recurso no seu ambiente.
 
 >[!NOTE]
 >
@@ -40,7 +46,11 @@ Veja esses exemplos de consultas para obter ilustrações de como criar consulta
 >
 >Dependendo do seu caso, você pode acessar diretamente a [Interface GraphiQL incluída na API GraphQL do AEM](/help/headless/graphql-api/graphiql-ide.md) para enviar e testar consultas.
 >
->Por exemplo: `http://localhost:4502/aem/graphiql.html`
+>Você pode acessar o editor de consultas por meio de:
+>
+>* **Ferramentas** -> **Geral** -> **Editor de consultas GraphQL**
+>* Diretamente; por exemplo, `http://localhost:4502/aem/graphiql.html`
+
 
 >[!NOTE]
 >
@@ -1609,4 +1619,4 @@ Os fragmentos a seguir são usados para o modelo apropriado.
 | São Francisco |  EUA |  883306 |  city:beach<br>city:na |
 | San Jose |  EUA |  102635 |  city:na |
 | Stuttgart |  Alemanha |  634830 |  city:emea |
-|  Zurique |  Suíça |  415367 |  city:capital<br>city:emea |
+|  Zurique |  Suíça |  415367 |  cidade:capital<br>cidade:emea |

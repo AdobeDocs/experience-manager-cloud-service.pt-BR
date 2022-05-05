@@ -1,22 +1,17 @@
 ---
-title: Configuração IMS para uso ao integrar com o Adobe Analytics
+title: Configuração do IMS para uso na integração com o Adobe Analytics
 description: Saiba mais sobre a Configuração IMS para usar ao integrar com o Adobe Analytics
-source-git-commit: 7686329de2ef621f69899e07efa9af16e50a35f9
+exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
+source-git-commit: 0030b0f6f17dd66229f681e9c513786de4fe10a2
 workflow-type: tm+mt
-source-wordcount: '925'
-ht-degree: 3%
+source-wordcount: '893'
+ht-degree: 5%
 
 ---
 
-# Configuração IMS para uso ao integrar com o Adobe Analytics {#ims-configuration-for-integration-with-adobe-analytics}
+# Configuração do IMS para uso na integração com o Adobe Analytics {#ims-configuration-for-integration-with-adobe-analytics}
 
 A integração do Adobe Experience Manager as a Cloud Service (AEMaaCS) com o Adobe Analytics por meio da API do Analytics Standard requer a configuração do Adobe IMS (Identity Management System). A configuração é realizada com o Console do desenvolvedor do Adobe.
-
->[!NOTE]
-> 
->Esse recurso está disponível no canal de pré-lançamento.
->
->Consulte a [Documentação do Canal de pré-lançamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) para obter informações sobre como habilitar o recurso para seu ambiente.
 
 >[!NOTE]
 >
@@ -66,11 +61,11 @@ O primeiro estágio da configuração é criar uma Configuração IMS no AEM e g
 
 ## Configuração do IMS para integração do Adobe Analytics com o AEM {#configuring-ims-adobe-analytics-integration-with-aem}
 
-Usando o Console do desenvolvedor do Adobe, é necessário criar um Projeto (integração) com o Adobe Analytics (para uso do AEM) e, em seguida, atribuir os privilégios necessários.
+Usando o Console Adobe Developer, é necessário criar um Projeto (integração) com o Adobe Analytics (para AEM usar) e, em seguida, atribuir os privilégios necessários.
 
 ### Criação do projeto {#creating-the-project}
 
-Abra o Console do desenvolvedor do Adobe para criar um Projeto com o Adobe Analytics que AEM usará:
+Abra o Console do Adobe Developer para criar um Projeto com o Adobe Analytics que AEM usará:
 
 1. Abra o Console do desenvolvedor do Adobe para Projetos:
 
@@ -129,7 +124,7 @@ Agora, você deve atribuir os privilégios necessários à integração:
 
 ## Detalhes armazenados para o Projeto de integração do Console do Desenvolvedor do Adobe {#details-stored-for-the-ims-integration-project}
 
-No Console do desenvolvedor do Adobe - Projetos, você pode ver uma lista de todos os seus projetos de integração:
+No console Adobe Developer - Projetos, é possível ver uma lista de todos os seus projetos de integração:
 
 * [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
@@ -153,7 +148,7 @@ Ao retornar para AEM é possível concluir a configuração do IMS adicionando v
 1. Retorne ao [Configuração IMS aberta no AEM](#configuring-ims-generating-a-public-key).
 1. Selecione **Próximo**.
 
-1. Aqui você pode usar o [detalhes da configuração do projeto no Console do desenvolvedor do Adobe](#details-stored-for-the-ims-integration-project):
+1. Aqui você pode usar o [detalhes da configuração do projeto no Adobe Developer Console](#details-stored-for-the-ims-integration-project):
 
    * **Título**: Seu texto.
    * **Servidor de autorização**: Copie/cole no `aud` da **Carga** seção abaixo, por exemplo `https://ims-na1.adobelogin.com` no exemplo abaixo

@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management, Search
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: 5bf764c84d6676b575371bd865538a3f2c13a2ab
+source-git-commit: 333a0b0f6e0937a5ac6dc1a697c773f7bada45cc
 workflow-type: tm+mt
-source-wordcount: '922'
+source-wordcount: '879'
 ht-degree: 1%
 
 ---
@@ -90,12 +90,6 @@ Veja a seguir as etapas para adicionar tags a um ativo:
    ![adicionar tags](assets/add-tags-to-asset.png)
 
 1. Clique em **Salvar** para atualizar as alterações nos metadados do ativo.
-
->[!NOTE]
->
->Você pode classificar a estrutura das tags ao criar tags inteligentes e ao aplicar filtros de pesquisa usando o predicado de tags.
->
->O recurso de tags de classificação está disponível no canal de pré-lançamento. Consulte [Documentação do Canal de pré-lançamento](/help/release-notes/prerelease.md#enable-prerelease) para obter informações sobre como habilitar o recurso para seu ambiente.
 
 Para obter mais informações, consulte os seguintes artigos:
 

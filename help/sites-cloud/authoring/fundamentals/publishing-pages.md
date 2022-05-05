@@ -2,10 +2,10 @@
 title: Publicar páginas
 description: Como publicar e desfazer a publicação de páginas usando o AEM
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: e51490a9422dab3cc4980eb1d2288d7c264343be
+source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
 workflow-type: tm+mt
-source-wordcount: '1769'
-ht-degree: 82%
+source-wordcount: '1791'
+ht-degree: 81%
 
 ---
 
@@ -16,6 +16,10 @@ Depois de criar (e revisar) seu conteúdo no ambiente de criação, o objetivo �
 Isso é referido como a publicação de uma página. Quando você deseja remover uma página do ambiente de publicação, este é o processo de desfazer a publicação. Ao publicar e desfazer a publicação, a página permanece disponível no ambiente de criação para modificações adicionais até que você a exclua.
 
 Você pode publicar/desfazer a publicação de uma página imediatamente ou em uma data/hora predefinida posteriormente.
+
+>[!NOTE]
+>
+>A publicação de um Fragmento de experiência segue basicamente o mesmo procedimento de publicação de uma página, embora a partir do console ou do editor Fragmentos de experiência.
 
 ## Terminologia {#terminology}
 

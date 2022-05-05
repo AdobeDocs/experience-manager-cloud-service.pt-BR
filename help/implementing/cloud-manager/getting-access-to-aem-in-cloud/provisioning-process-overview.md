@@ -1,7 +1,7 @@
 ---
 title: Processo de provisionamento - Visão geral
 description: Processo de provisionamento - Visão geral
-source-git-commit: 2f40b11a20a4ebb3ff7d9d2835bbe56e91ddf96d
+source-git-commit: ffeda76f9c661117ddba50588ebea01d151ee8c3
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 8%
@@ -31,7 +31,7 @@ Quando o provisionamento automático for concluído:
 * O administrador pode adicionar usuários e funções para membros de equipe adicionais por meio do Admin Console
 * Revise permissões com base em funções para que os usuários determinem atribuições de permissão no Cloud Manager
 
-> ![processoverview.jpg](./assets/processOverview.jpg)
+![processoverview.jpg](assets/processOverview.jpg)
 
 
 Para obter mais informações, visite [Integração ao Experience Manager as a Cloud Service no Experience League](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=en)
@@ -49,7 +49,7 @@ Para obter mais informações, visite [Integração ao Experience Manager as a C
 
 ### 2. Organizações integradas da Adobe Admin Console:
 
-![processador overview2.jpg](./assets/processOverview2.jpg)
+![processador overview2.jpg](assets/processOverview2.jpg)
 
 * Administrador do sistema:
    * Provisionar programas e ambientes AEM.
@@ -62,7 +62,7 @@ Para obter mais informações, visite [Integração ao Experience Manager as a C
 
 ### 3. Usuários integrados e Gerenciar acesso no Admin Console:
 
-![processador overview3.jpg](./assets/processOverview3.jpg)
+![processador overview3.jpg](assets/processOverview3.jpg)
 
 Três métodos para integrar usuários, dependendo do tamanho e da preferência:
 * Criar usuários manualmente no Admin Console
