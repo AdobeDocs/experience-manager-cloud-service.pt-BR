@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Recursos de autoajuda e links de documentação da visão geral do Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: c7b4907a2d4dbecf03ac5b51376fb534096f5212
+source-git-commit: 45db4869de68627f0ae76798481b96fb4a3e960a
 workflow-type: tm+mt
-source-wordcount: '3439'
+source-wordcount: '3447'
 ht-degree: 99%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 99%
          + [Notas da versão para 2022.3.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-3-0.md)
          + [Notas da versão para 2022.1.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-1-0.md)
       + 2021 {#2021}
-         + [Notas da versão 2021.11.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-11-0.md)
+         + [Notas da versão para 2021.11.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-11-0.md)
          + [Notas da versão para 2021.10.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-10-0.md)
          + [Notas da versão para 2021.9.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-9-0.md)
          + [Notas da versão para 2021.8.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-8-0.md)
@@ -462,6 +462,7 @@ ht-degree: 99%
    + [Integrar ao DocuSign](/help/forms/integrate-docusign-adaptive-forms.md)
    + [Integração com o Sites](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/aemform/v1/aemform)
    + [Integrar ao Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
+   + [Integrar um formulário adaptável ao Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
    + Criar e usar fluxos de trabalho {#create-form-centric-workflows}
       + [Usar etapas centradas no Forms em um fluxo de trabalho + referência de etapa](/help/forms/aem-forms-workflow-step-reference.md)
       + [Usar variáveis em um fluxo de trabalho centrado no Forms](/help/forms/variable-in-aem-workflows.md)
@@ -477,7 +478,7 @@ ht-degree: 99%
    + [Problemas conhecidos](/help/forms/known-issues.md)
    + Solução de problemas {#troubleshooting-aem-forms-cloud-service}
       + [Instalação e configuração](/help/forms/troubleshooting-installation-and-configuration.md)
-      + [Armazenamento em cache do Dispatcher e CDN ](/help/forms/troubleshooting-caching-performance.md)
+      + [Armazenamento em cache do Dispatcher e CDN](/help/forms/troubleshooting-caching-performance.md)
 + Screens {#screens-as-cloud-service}
    + [AEM Screens as a Cloud Service](/help/screens-cloud/home.md)
    + Visão geral do Screens as a Cloud Service {#overview}
