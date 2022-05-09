@@ -2,9 +2,9 @@
 title: Configuração de redes avançadas para o AEM as a Cloud Service
 description: Saiba como configurar recursos avançados de rede, como VPN ou um endereço IP de saída flexível ou dedicado para o AEM as a Cloud Service
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 906c8aed146724c1bb18e8031e5dd97f4cf68d25
+source-git-commit: 3325a7a0f99c427040e868f9cafc5f9890d97d69
 workflow-type: tm+mt
-source-wordcount: '2976'
+source-wordcount: '2964'
 ht-degree: 99%
 
 ---
@@ -70,11 +70,11 @@ As regras de encaminhamento de porta por ambiente podem ser atualizadas chamando
 
 ### Excluindo ou Desativando a saída flexível de porta {#deleting-disabling-flexible-port-egress-provision}
 
-Para **excluir** a infraestrutura de rede de um programa, invocar *DELETE /program/{program ID}/ networkInfrastructure/{networkInfrastructureID}* consulte a documentação da API do Cloud Manager para obter detalhes.
+Para **excluir** a infraestrutura de rede de um programa, invocar `DELETE /program/{program ID}/ networkinfrastructure/{networkinfrastructureID}`.
 
 Para **desabilitar** a saída de porta flexível de um ambiente específico, chame `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
 
-Para obter mais informações, consulte a [Documentação da API do Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
+Para obter mais informações sobre as APIs, consulte o [Documentação da API do Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
 
 ### Roteamento de tráfego {#flexible-port-egress-traffic-routing}
 
