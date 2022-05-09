@@ -2,9 +2,9 @@
 title: Implantação de código
 description: Saiba como implantar seu código usando os pipelines do Cloud Manager AEM as a Cloud Service.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: af1e682505d68a65a5e2b500d42f01f030e36ac1
+source-git-commit: c6e930f62cc5039e11f2067ea31882c72be18774
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '1199'
 ht-degree: 1%
 
 ---
@@ -121,3 +121,72 @@ As etapas a seguir atingirão o tempo limite se forem deixadas aguardando o feed
 ## Processo de implantação {#deployment-process}
 
 Todas as implantações de Cloud Service seguem um processo contínuo para garantir tempo de inatividade zero. Consulte o documento [Como funcionam as implantações em andamento](/help/implementing/deploying/overview.md#how-rolling-deployments-work) para saber mais.
+
+## Reexecutar uma implantação de produção {#Reexecute-Deployment}
+
+A reexecução da etapa de implantação de produção é compatível com execuções em que a etapa de implantação de produção foi concluída. O tipo de conclusão não é importante - a implantação pode ser cancelada ou malsucedida. Dito isso, espera-se que o principal caso de uso seja os casos em que a etapa de implantação de produção falhou por motivos transitórios. A reexecução cria uma nova execução usando o mesmo pipeline. Essa nova execução consiste em três etapas:
+
+1. A etapa de validação - é essencialmente a mesma validação que ocorre durante uma execução normal do pipeline.
+1. A etapa de build - no contexto de uma reexecução, a etapa de build é a cópia de artefatos, não executando um novo processo de build.
+1. A etapa de implantação de produção - usa a mesma configuração e as mesmas opções da etapa de implantação de produção em uma execução normal de pipeline.
+
+A etapa de build pode ser rotulada de forma um pouco diferente na interface do usuário para refletir que está copiando artefatos, não reconstruindo.
+
+![Reimplantar](assets/Re-deploy.png)
+
+Limitações:
+
+* A reexecução da etapa de implantação de produção só estará disponível na última execução.
+* A reexecução não está disponível para execuções de atualização por push. Se a última execução for uma execução de atualização por push, a reexecução não será possível.
+* Se a última execução for uma execução de atualização por push, a reexecução não será possível.
+* Se a última execução falhar em qualquer ponto antes da etapa de implantação de produção, a reexecução não será possível.
+
+### Reexecutar a API {#Reexecute-API}
+
+### Identificação de uma execução de nova execução
+
+Para identificar se uma execução é uma execução reexecutada, o campo trigger pode ser examinado. Seu valor será *RE_EXECUTE*.
+
+### Acionamento de uma nova execução
+
+Para acionar uma reexecução, uma solicitação de PUT precisa ser feita ao HAL Link &lt;(<http://ns.adobe.com/adobecloud/rel/pipeline/reExecute>)> no estado da etapa de implantação de produção. Se esse link estiver presente, a execução poderá ser reiniciada a partir dessa etapa. Se estiver ausente, a execução não poderá ser reiniciada dessa etapa. Na versão inicial, esse link só estará presente na etapa de implantação de produção, mas versões futuras poderão oferecer suporte para iniciar o pipeline a partir de outras etapas. Exemplo:
+
+```Javascript
+ {
+  "_links": {
+    "http://ns.adobe.com/adobecloud/rel/pipeline/logs": {
+      "href": "/api/program/4/pipeline/1/execution/953671/phase/1575676/step/2983530/logs",
+      "templated": false
+    },
+    "http://ns.adobe.com/adobecloud/rel/pipeline/reExecute": {
+      "href": "/api/program/4/pipeline/1/execution?stepId=2983530",
+      "templated": false
+    },
+    "http://ns.adobe.com/adobecloud/rel/pipeline/metrics": {
+      "href": "/api/program/4/pipeline/1/execution/953671/phase/1575676/step/2983530/metrics",
+      "templated": false
+    },
+    "self": {
+      "href": "/api/program/4/pipeline/1/execution/953671/phase/1575676/step/2983530",
+      "templated": false
+    }
+  },
+  "id": "6187842",
+  "stepId": "2983530",
+  "phaseId": "1575676",
+  "action": "deploy",
+  "environment": "weretail-global-b75-prod",
+  "environmentType": "prod",
+  "environmentId": "59254",
+  "startedAt": "2022-01-20T14:47:41.247+0000",
+  "finishedAt": "2022-01-20T15:06:19.885+0000",
+  "updatedAt": "2022-01-20T15:06:20.803+0000",
+  "details": {
+  },
+  "status": "FINISHED"
+```
+
+
+A sintaxe do link HAL _href_  O valor acima não se destina a ser usado como ponto de referência. O valor real deve sempre ser lido do link HAL e não gerado.
+
+Envio de um *PUT* a solicitação para esse endpoint resultará em uma *201º* se bem-sucedido e o corpo da resposta será a representação da nova execução. É semelhante a iniciar uma execução regular por meio da API.
