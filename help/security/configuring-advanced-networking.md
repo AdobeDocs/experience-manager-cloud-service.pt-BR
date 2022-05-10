@@ -2,10 +2,10 @@
 title: Configuração de redes avançadas para o AEM as a Cloud Service
 description: Saiba como configurar recursos avançados de rede, como VPN ou um endereço IP de saída flexível ou dedicado para o AEM as a Cloud Service
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 3325a7a0f99c427040e868f9cafc5f9890d97d69
+source-git-commit: d5d17c554cc0877ebe89710b3ea512355fec2a84
 workflow-type: tm+mt
-source-wordcount: '2964'
-ht-degree: 99%
+source-wordcount: '2977'
+ht-degree: 98%
 
 ---
 
@@ -71,6 +71,10 @@ As regras de encaminhamento de porta por ambiente podem ser atualizadas chamando
 ### Excluindo ou Desativando a saída flexível de porta {#deleting-disabling-flexible-port-egress-provision}
 
 Para **excluir** a infraestrutura de rede de um programa, invocar `DELETE /program/{program ID}/ networkinfrastructure/{networkinfrastructureID}`.
+
+>[!NOTE]
+>
+> Excluir não excluirá a infraestrutura se houver algum ambiente usando-a.
 
 Para **desabilitar** a saída de porta flexível de um ambiente específico, chame `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
 
