@@ -3,9 +3,9 @@ title: Configurar o Dynamic Media Cloud Service
 description: Saiba como configurar o Dynamic Media no Adobe Experience Manager as a Cloud Service.
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 924331ced6a3966a0705dae857f5e7e5af3c9664
+source-git-commit: 527c25ef61f9553a9e0012b8413a8bc6ccf4afdd
 workflow-type: tm+mt
-source-wordcount: '3438'
+source-wordcount: '3449'
 ht-degree: 3%
 
 ---
@@ -67,7 +67,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 1. No Experience Manager as a Cloud Service, selecione o logotipo Experience Manager as a Cloud Service para acessar o console de navegação global.
 1. À esquerda do console, selecione o ícone Ferramentas e vá para **[!UICONTROL Cloud Services > Configuração do Dynamic Media]**.
 1. Na página Navegador de configuração do Dynamic Media, no painel esquerdo, selecione **[!UICONTROL global]** (não selecione o ícone de pasta à esquerda de **[!UICONTROL global]**). Em seguida, selecione **[!UICONTROL Criar]**.
-1. No **[!UICONTROL Criar configuração do Dynamic Media]** , insira um título, o endereço de email da conta do Dynamic Media, a senha e selecione sua região. Essas informações são fornecidas pelo Adobe no email de provisionamento. Entre em contato com o Suporte ao cliente do Adobe se não tiver recebido este email.
+1. No **[!UICONTROL Criar configuração do Dynamic Media]** , digite o título, o endereço de email da conta do Dynamic Media e a senha do administrador da empresa da conta do Dynamic Media e selecione sua região. Essas informações são fornecidas pelo Adobe no email de provisionamento. Entre em contato com o Suporte ao cliente do Adobe se não tiver recebido este email.
 1. Selecionar **[!UICONTROL Conectar-se ao Dynamic Media]**.
 1. No **[!UICONTROL Alterar senha]** na caixa de diálogo , na **[!UICONTROL Nova senha]** digite uma nova senha com 8 a 25 caracteres. A senha deve conter pelo menos uma das seguintes opções:
 
@@ -282,9 +282,9 @@ Consulte [Fazer upload de ativos](/help/assets/add-assets.md).
 
    * Toque duas vezes no **[!UICONTROL ativado]** campo. Por padrão, todos os tipos de ativos MIME estão ativados (definido como **[!UICONTROL true]**), o que significa que os ativos são sincronizados com a Dynamic Media para processamento. Se desejar excluir esse tipo de ativo MIME do processamento, altere essa configuração para **[!UICONTROL false]**.
 
-   * Toque duplo **[!UICONTROL jobParam]** para abrir o campo de texto associado. Consulte [Tipos MIME suportados](/help/assets/file-format-support.md) para obter uma lista de valores de parâmetros de processamento permitidos, você pode usar para um determinado tipo MIME.
+   * Toque duplo **[!UICONTROL jobParam]** para abrir o campo de texto associado. Consulte [Tipos MIME suportados](/help/assets/file-format-support.md) para obter uma lista de valores de parâmetros de processamento permitidos que você pode usar para um determinado tipo MIME.
 
-1. Faça uma das seguintes opções:
+1. Siga uma das seguintes opções:
    * Repita as etapas 3 a 4 para editar mais tipos MIME.
    * Na barra de menu da página do CRXDE Lite, selecione **[!UICONTROL Salvar tudo]**.
 
