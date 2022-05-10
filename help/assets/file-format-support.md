@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 1ea99c0eb602fa48674a03e25ee615add425f6af
+source-git-commit: 77cba988368c07438835148d08f1e8cc6e469b7b
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '995'
 ht-degree: 8%
 
 ---
@@ -195,7 +195,7 @@ Os formatos de documento compatíveis com os recursos de gerenciamento de ativos
 | --- | --- | --- | --- |
 | AVI | Intercalação A/V | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft Video 1 (MS-CRAM) |
 | FLV, F4V | Flash Adobe | H264/AVC, Flix VP6, H263, Sorenson | SWF (arquivos de animação vetorial) |
-| M4V | Apple iTunes | H264/AVC | - |
+| M4V | Apple iTunes | H264/AVC | − |
 | MKV | Matroska | H264/AVC | - |
 | MOV, QT | Apple QuickTime | H264/AVC, Apple ProRes422 &amp; HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediário, Animação do Apple |
 | MP4 | MPEG-4 | H264/AVC (todos os perfis) | - |
@@ -213,7 +213,11 @@ Os formatos de documento compatíveis com os recursos de gerenciamento de ativos
 | ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
 | AI | ✓ | - | - | - | - |
 | INDD | ✓ | - | - | - | - |
-| PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
+| PDF (Consulte a observação abaixo) | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+>[!NOTE]
+>
+>Para PDF seguros, somente Upload é suportado.
 
 ## Dynamic Media - Formatos de imagem rasterizada compatíveis {#image-support-dynamic-media}
 
