@@ -2,9 +2,9 @@
 title: Introdução à Jornada de migração para AEM as a Cloud Service
 description: Inicie sua jornada de migração ao familiarizar-se com as noções básicas da mudança para o AEM as a Cloud Service
 exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 595eff9c259208754ac62ea27dfc6be7d74b79d3
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '587'
 ht-degree: 11%
 
 ---
@@ -35,9 +35,13 @@ A jornada de migração para o Cloud Service envolve as seguintes fases:
 * Depois que tudo estiver em vigor, você poderá executar a migração com a variável [Fase de ativação](/help/journey-migration/go-live.md)
 * Por fim, monitore se há problemas e melhore o desempenho após a conclusão da migração, no [Fase Pós-ativação](/help/journey-migration/post-go-live.md).
 
-A figura abaixo mostra uma representação visual da jornada de transição recomendada para AEM as a Cloud Service.
+A figura abaixo mostra uma representação de alto nível da jornada de transição recomendada para AEM as a Cloud Service.
 
 ![imagem](/help/journey-migration/assets/move-aemcloud-process.png)
+
+Você também pode consultar o diagrama abaixo para obter uma exibição mais detalhada e granular da jornada de migração.
+
+![imagem](/help/journey-migration/assets/migration-process.png)
 
 ## Cloud Acceleration Manager {#cloud-acceleration-manager}
 
