@@ -1,18 +1,18 @@
 ---
 title: Introdução ao [!DNL AEM Forms] as a Cloud Service
-description: Use essa Plataforma como um serviço (PaaS) para criar, gerenciar e publicar formulários digitais de nível empresarial e processos de negócios, bem como para conectar formulários às fontes de dados atuais.
+description: Descubra o AEM Forms e saiba como ele ajuda a produzir documentos prontos para negócios e conteúdo de formulário. Saiba mais sobre a Plataforma como um Serviço (PaaS) e como gerenciar formulários digitais de nível empresarial e processos de negócios, bem como conectar o Forms às fontes de dados atuais.
 landing-page-description: Saiba como usar formulários no AEM as a Cloud Service.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: fe2f0743d8efaaf9b3fcfc9e20264cca627db6c8
+source-git-commit: e3f28ea68b3da415f46a98224e3f0b342417ee15
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '296'
 ht-degree: 6%
 
 ---
 
 # Introdução {#introduction}
 
-O Adobe Experience Manager Forms as a Cloud Service oferece uma solução do Platform as a Service (PaaS) nativa em nuvem para que as empresas criem, gerenciem, publiquem e atualizem formulários digitais complexos enquanto integra dados enviados a processos back-end, regras de negócios e salvam dados em um armazenamento de dados externo. O serviço é sempre atual, sempre disponível e sempre aprendendo.
+Adobe [!DNL Experience Manager Forms as a Cloud Service] O oferece uma solução do Platform as a Service (PaaS) nativa em nuvem para que as empresas criem, gerenciem, publiquem e atualizem formulários digitais complexos ao integrar dados enviados a processos back-end, regras de negócios e salvar dados em um armazenamento de dados externo. O serviço é sempre atual, sempre disponível e sempre aprendendo.
 
 Você pode usar o serviço para criar e implantar formulários digitais interativos e envolventes. Por exemplo, pegue uma organização que está procurando digitalizar sua jornada de inscrição de clientes. Eles têm várias fontes de dados com os dados existentes do cliente. Eles buscam preencher previamente formulários, adicionar e-sign seus formulários e arquivar formulários preenchidos como arquivos PDF. Além disso, a organização tem vários formulários impressos (PDF forms), que também buscam converter todos os formulários impressos em formulários digitais.
 

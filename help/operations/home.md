@@ -1,18 +1,18 @@
 ---
 title: Operações e manutenção do Adobe Experience Manager as a Cloud Service
-description: Recursos de autoajuda e links de documentação das operações e da manutenção do Adobe Experience Manager as a Cloud Service
-landing-page-description: Saiba mais sobre as operações de back-end do AEM as a Cloud Service, como tarefas de indexação e manutenção.
+description: 'Descubra as operações de back-end do Experience Manager as a Cloud Service, como tarefas de indexação e manutenção, e obtenha respostas para suas consultas. '
+landing-page-description: Descubra as operações de back-end do Experience Manager as a Cloud Service, como tarefas de indexação e manutenção, e obtenha respostas para suas consultas.
 exl-id: ad50434c-1b4c-4e04-be91-2556d773cfbd
-source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
+source-git-commit: 1bdebb3f9ffdc720c7172265571571d47df35610
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 100%
+source-wordcount: '398'
+ht-degree: 81%
 
 ---
 
 # Operações e manutenção do Experience Manager as a Cloud Service {#aem-operations-guide}
 
-Esta página lista os recursos de autoajuda sobre operações e manutenção do Experience Manager as a Cloud Service.
+Descubra as operações de back-end do Experience Manager as a Cloud Service, como tarefas de indexação e manutenção, e obtenha respostas para suas consultas.
 
 ## Artigos-chave sobre operações {#key-articles}
 
@@ -45,5 +45,5 @@ Esta página lista os recursos de autoajuda sobre operações e manutenção do 
 * [Documentação do Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
 * [Disponibilidade do GDPR](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutoriais do Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=pt-BR)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
+* [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=pt-BR#home)
 * [Fórum da comunidade AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)

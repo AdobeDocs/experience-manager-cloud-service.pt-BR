@@ -1,18 +1,18 @@
 ---
 title: AEM Screens as a Cloud Service
-description: Recursos de autoajuda e links de documentação do Adobe Experience Manager Screens as a Cloud Service
+description: Entenda mais sobre o AEM Screens e como essa solução de sinalização digital funciona.
 landing-page-description: Entenda o AEM Screens as a Cloud Service.
 exl-id: 5acb8e90-f268-4b99-9b6f-e05ba0f3a482
-source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
+source-git-commit: e3f28ea68b3da415f46a98224e3f0b342417ee15
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 74%
+source-wordcount: '418'
+ht-degree: 69%
 
 ---
 
 # AEM Screens as a Cloud Service {#aem-screens-as-a-cloud-service-guide}
 
-Esta página lista os recursos de autoajuda relacionados ao AEM Screens as a Cloud Service.
+Esta página ajuda você a entender mais sobre o AEM Screens e como essa solução de sinalização digital funciona. Obtenha recursos de autoajuda e saiba mais sobre as novidades.
 
 >[!NOTE]
 >Para AEM Screens com AEM 6.5, consulte [Guia do usuário do AEM Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=en).
@@ -49,5 +49,5 @@ Esta página lista os recursos de autoajuda relacionados ao AEM Screens as a Clo
 * [Documentação do Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
 * [Disponibilidade do GDPR](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutoriais do Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=pt-BR)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
-* [Fórum da comunidade AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
+* [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=pt-BR#home)
+* [Fórum da comunidade AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=pt)

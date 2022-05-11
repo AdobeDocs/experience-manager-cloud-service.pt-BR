@@ -1,18 +1,18 @@
 ---
 title: jornada do desenvolvedor sem periféricos do AEM
-description: Comece aqui para obter uma jornada guiada por meio do Adobe Experience Manager (AEM) as a Cloud Service quando estiver usando recursos como Modelos de conteúdo, Fragmentos de conteúdo e uma API GraphQL para potencializar experiências headless como um Sistema de gerenciamento de conteúdo sem cabeçalho (CMS). Esta jornada fornece todas as informações necessárias para desenvolver seu primeiro aplicativo sem periféricos.
-landing-page-description: Comece aqui para obter uma jornada guiada pelos recursos headless de AEM, seus recursos e como aproveitá-los em seu primeiro projeto de desenvolvimento.
+description: 'Comece aqui para obter uma jornada guiada por meio do Adobe Experience Manager (AEM) as a Cloud Service quando estiver sendo usada como um Sistema de gerenciamento de conteúdo sem cabeçalho (CMS). Saiba mais sobre os recursos avançados e flexíveis, seus recursos e como aproveitá-los em seu primeiro projeto de desenvolvimento sem periféricos. Esta jornada fornece todas as informações necessárias para desenvolver seu primeiro aplicativo sem periféricos. '
+landing-page-description: 'Saiba mais sobre a entrega e implementação de conteúdo sem periféricos. Saiba mais sobre como desenvolver sua estratégia na sua empresa. '
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: 21bd90fa61cfb1c567a7eea4b439206c38b49a5f
+source-git-commit: 2ec6b29800867462bbc2e88048c583d4e5eefa57
 workflow-type: tm+mt
-source-wordcount: '1307'
+source-wordcount: '1301'
 ht-degree: 12%
 
 ---
 
 # jornada do desenvolvedor sem periféricos do AEM {#aem-headless-developer-journey}
 
-Comece aqui para obter uma jornada guiada por meio do Adobe Experience Manager (AEM) as a Cloud Service quando estiver sendo usada como um Sistema de gerenciamento de conteúdo sem cabeçalho (CMS). Saiba mais sobre os recursos avançados e flexíveis, seus recursos e como aproveitá-los em seu primeiro projeto de desenvolvimento sem periféricos. Esta jornada fornece todas as informações necessárias para desenvolver seu primeiro aplicativo sem periféricos.
+Comece aqui para obter uma jornada guiada [!DNL Adobe Experience Manager as a Cloud Service] (AEM) quando estiver sendo usado como um Sistema de Gestão de Conteúdo Sem Cabeçalho (CMS). Saiba mais sobre os recursos avançados e flexíveis, seus recursos e como aproveitá-los em seu primeiro projeto de desenvolvimento sem periféricos. Esta jornada fornece todas as informações necessárias para desenvolver seu primeiro aplicativo sem periféricos.
 
 ## Introdução {#introduction}
 
@@ -87,7 +87,7 @@ As jornadas de documentação mostram como o AEM soluciona um problema comercial
 
 Como tais jornadas são projetadas para se sustentarem sozinhas. No entanto, alguns deles podem estar relacionados entre si. Confira estas jornadas adicionais para obter mais informações sobre como AEM recursos avançados trabalham juntos.
 
-* [Tutoriais AEM headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR) - Se você preferir aprender fazendo e sendo técnicos inclinados, utilize nossos tutoriais práticos organizados por API e framework, que exploram a criação e o uso de aplicativos criados AEM Headless.
+* [Tutoriais AEM headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR) - Se você preferir aprender fazendo e for tecnicamente inclinado, utilize nossos tutoriais práticos organizados por API e framework, que exploram a criação e o uso de aplicativos criados AEM Headless.
 * [jornada de tradução sem cabeçalho AEM](/help/journey-headless/translation/overview.md) - Essa jornada de documentação oferece uma ampla compreensão da tecnologia sem interface, como a AEM fornece conteúdo sem interface e como você pode traduzi-la.
 * [Jornada de criação sem cabeçalho](/help/journey-headless/author/overview.md) - Comece aqui para obter uma jornada guiada por meio dos recursos avançados e flexíveis sem interface de AEM, seus recursos e como modelar seu conteúdo em seu primeiro projeto sem interface.
 * [Jornada de arquitetura headless](/help/journey-headless/architect/overview.md) - Comece aqui para obter uma introdução aos recursos avançados, flexíveis e sem periféricos do Adobe Experience Manager as a Cloud Service e como modelar o conteúdo para seu projeto.

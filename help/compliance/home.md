@@ -1,18 +1,18 @@
 ---
 title: Conformidade
-description: Esta página lista os recursos de autoajuda que fornecem informações sobre conformidade no Experience Manager as a Cloud Service.
+description: Obtenha uma visão geral sobre conformidade no Experience Manager as a Cloud Service.
 landing-page-description: Para obter uma visão geral sobre conformidade no AEM as a Cloud Service, incluindo privacidade e acessibilidade, comece aqui.
 exl-id: d7ef2875-a6d7-4f97-b14e-7e5a383cdee9
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 15ac9f0f72d01b999b0044d104ea80202cf44423
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 100%
+source-wordcount: '378'
+ht-degree: 93%
 
 ---
 
 # Conformidade no AEM as a Cloud Service {#aem-compliance}
 
-Esta página lista os recursos de autoajuda que fornecem informações sobre conformidade no Experience Manager as a Cloud Service.
+Obtenha uma visão geral sobre conformidade no Experience Manager as a Cloud Service.
 
 ## Artigos-chave sobre visão geral {#key-articles}
 
@@ -46,5 +46,5 @@ Esta página lista os recursos de autoajuda que fornecem informações sobre con
 * [Documentação dos componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)
 * [Documentação do Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
 * [Tutoriais do Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=pt-BR)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
-* [Fórum da comunidade AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
+* [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=pt-BR#home)
+* [Fórum da comunidade AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=pt)

@@ -1,17 +1,17 @@
 ---
-title: Visão geral do Adobe Experience Manager as a Cloud Service
-description: Recursos de autoajuda e links de documentação da visão geral do Adobe Experience Manager as a Cloud Service
+title: Introdução ao Experience Manager as a Cloud Service
+description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 exl-id: d346ad01-af00-48a1-96a4-e742369defff
-source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
+source-git-commit: 15ac9f0f72d01b999b0044d104ea80202cf44423
 workflow-type: tm+mt
-source-wordcount: '354'
-ht-degree: 100%
+source-wordcount: '360'
+ht-degree: 87%
 
 ---
 
 # Visão geral do Experience Manager as a Cloud Service {#aem-overview-guide}
 
-Esta página lista os recursos de autoajuda que apresentam uma introdução e a visão geral do Experience Manager as a Cloud Service.
+Comece aqui para saber como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 
 ## Artigos-chave sobre visão geral {#key-articles}
 
@@ -45,5 +45,5 @@ Esta página lista os recursos de autoajuda que apresentam uma introdução e a 
 * [Documentação do Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
 * [Disponibilidade do GDPR](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutoriais do Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=pt-BR)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
-* [Fórum da comunidade AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
+* [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=pt-BR#home)
+* [Fórum da comunidade AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=pt)

@@ -1,18 +1,18 @@
 ---
 title: AEM Content and Commerce
-description: Recursos de autoajuda e links de documentação do AEM Content and Commerce
+description: Entenda como usar e administrar o Experience Manager Content and Commerce as a Cloud Service.
 landing-page-description: Entenda como usar e administrar o Experience Manager Content and Commerce as a Cloud Service.
 exl-id: 7f7ece35-f78b-4c66-8a0b-38d248430d85
-source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
+source-git-commit: e3f28ea68b3da415f46a98224e3f0b342417ee15
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 84%
+source-wordcount: '367'
+ht-degree: 88%
 
 ---
 
 # Conteúdo e comércio AEM {#commerce-guide}
 
-Esta página lista os recursos de autoajuda sobre Conteúdo e Comércio AEM.
+Entenda como usar e administrar o Experience Manager Content and Commerce as a Cloud Service.
 
 >[!NOTE]
 >
@@ -47,5 +47,5 @@ Esta página lista os recursos de autoajuda sobre Conteúdo e Comércio AEM.
 * [Documentação do Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
 * [Disponibilidade do GDPR](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutoriais do Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=pt-BR)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
-* [Fórum da comunidade AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
+* [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=pt-BR#home)
+* [Fórum da comunidade AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=pt)

@@ -1,18 +1,18 @@
 ---
-title: Sites do Adobe Experience Manager as a Cloud Service
-description: Recursos de autoajuda e links de documentação dos sites do Adobe Experience Manager as a Cloud Service
+title: Recursos de suporte para Sites Experience Manager as a Cloud Service
+description: Obtenha uma lista completa de todos os recursos de suporte dos Serviços na Nuvem AEM. Encontre respostas para suas perguntas do AEM Sites as Cloud Service.
 landing-page-description: Entenda como criar com o AEM Sites as a Cloud Service e como administrá-lo.
 exl-id: 0fedbd4b-9d6b-40d9-88b7-e7469db420fc
-source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
+source-git-commit: 15ac9f0f72d01b999b0044d104ea80202cf44423
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 100%
+source-wordcount: '405'
+ht-degree: 87%
 
 ---
 
 # AEM Sites as a Cloud Service {#aem-sites-guide}
 
-Esta página lista os recursos de autoajuda sobre sites no Experience Manager as a Cloud Service.
+Esta página fornece uma lista completa de todos os recursos de suporte dos Serviços na Nuvem AEM. Obtenha respostas para suas [!DNL AEM Sites as a Cloud Service] perguntas.
 
 ## Artigos-chave sobre sites {#key-articles}
 
@@ -52,5 +52,5 @@ Esta página lista os recursos de autoajuda sobre sites no Experience Manager as
 * [Documentação do Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
 * [Disponibilidade do GDPR](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutoriais do Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=pt-BR)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
-* [Fórum da comunidade AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
+* [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=pt-BR#home)
+* [Fórum da comunidade AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=pt)
