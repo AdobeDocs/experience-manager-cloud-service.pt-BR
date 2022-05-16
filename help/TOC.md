@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Recursos de autoajuda e links de documentação da visão geral do Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: ee92bfcf4ed00d8b508f1b6f7d21f73fb4c9029e
+source-git-commit: 1e7280bd867d2d8673e42750005d82debf7cf44f
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3454'
+ht-degree: 99%
 
 ---
 
@@ -89,7 +89,7 @@ ht-degree: 0%
          + [Notas da versão para 2020.3.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-3-0.md)
          + [Notas da versão para 2020.2.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-2-0.md)
    + Notas de versão das ferramentas de migração {#migration-tools}
-      + [Notas de versão atuais (2022.4.0)](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
+      + [Notas de versão atuais](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
       + 2022 {#2022}
          + [Notas da versão para 2022.3.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-03-0.md)
          + [Notas da versão para 2022.2.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-02-0.md)
