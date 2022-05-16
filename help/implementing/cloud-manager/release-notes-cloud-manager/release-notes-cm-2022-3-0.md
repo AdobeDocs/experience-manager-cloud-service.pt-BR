@@ -2,13 +2,13 @@
 title: Notas de versão do Cloud Manager 2022.3.0 no Adobe Experience Manager as a Cloud Service
 description: Estas são as notas de versão do Cloud Manager 2022.3.0 em AEM as a Cloud Service.
 feature: Release Information
-source-git-commit: 437be8c82a4dee6c9e56af09afa7e9048c8cb3c0
+exl-id: d09d48c5-6e0a-4a6a-85e9-1a60fdd6e5bf
+source-git-commit: 68586304724530f83649cffee76cefef3e1c8627
 workflow-type: tm+mt
-source-wordcount: '195'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
-
 
 # Notas de versão do Cloud Manager 2022.3.0 no Adobe Experience Manager as a Cloud Service {#release-notes}
 
@@ -20,15 +20,15 @@ Esta página documenta as notas de versão do Cloud Manager 2022.3.0 AEM as a Cl
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento do Cloud Manager versão 2022.3.0 em AEM as a Cloud Service 10 de março de 2022. A próxima versão está planejada para 7 de abril de 2022.
+A data de lançamento do Cloud Manager versão 2022.3.0 em AEM as a Cloud Service é 10 de março de 2022. A próxima versão está planejada para 7 de abril de 2022.
 
 ## Novidades {#what-is-new}
 
-* O acesso ao log de Ambiente de AEM pode ser feito usando a função Desenvolvedor .
+* O acesso ao log de ambiente do AEM pode ser feito usando a função de Desenvolvedor.
 
 ## Correções de erros {#bug-fixes}
 
-* Um subconjunto de repositórios git criados manualmente tinha um valor de nome incorreto que impedia a efetivação do recurso de reuso de artefato de compilação. Os nomes desses repositórios foram alterados e os usuários verão o nome corrigido na API/interface do usuário do Cloud Manager.
-* Os artefatos de construção provenientes de gasodutos que não são de produção foram reutilizados de forma imprópria em gasodutos de produção em pilha completa.
+* Um subconjunto de repositórios Git criados manualmente tinha um valor de nome incorreto que impedia que o recurso de reutilização de artefato de build fosse efetivo. Os nomes desses repositórios foram alterados e os usuários verão o nome corrigido na API/interface do Cloud Manager.
+* Os artefatos de build dos pipelines de não produção eram reutilizados inadequadamente em pipelines de pilha completa de produção.
 * Ao adicionar ou editar um pipeline de qualidade de código, as opções para lidar com falhas de métrica não são mais exibidas.
-* Algumas configurações inesperadas de variável de pipeline podem causar na etapa de build.
+* Algumas configurações inesperadas de variáveis de pipeline podem aparecer na etapa de compilação.

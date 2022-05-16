@@ -3,10 +3,10 @@ title: Notas de versão atuais do  [!DNL Adobe Experience Manager] as a Cloud Se
 description: Notas de versão atuais do  [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 7ee2e43ab8a5726b2ecf7f157f67b5f3cc73fcff
+source-git-commit: 092338947ef7c8f34bda4604e1c901344e966be0
 workflow-type: tm+mt
-source-wordcount: '719'
-ht-degree: 27%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -85,24 +85,6 @@ Recentemente, foi adicionado um novo analisador:
 
 Você pode encontrar uma lista completa de versões mensais do Cloud Manager [here](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
 
-## Analisador de práticas recomendadas {#bpa-release}
+## Ferramentas de migração {#migration-tools}
 
-### Data de lançamento {#release-date-bpa}
-
-A data de lançamento do Analisador de práticas recomendadas v2.1.28 é 22 de abril de 2022.
-
-### Novidades {#what-is-new-bpa}
-
-* Capacidade de detectar e relatar o uso de APIs não compatíveis do Asset Manager. Há quatro APIs que não são mais suportadas em AEM as a Cloud Service. Os clientes devem garantir que não estejam mais usando essas APIs e devem usar o novo método de upload de ativos.
-
-* Capacidade de detectar o uso de modelos de Fragmento de conteúdo. Os modelos de Fragmento de conteúdo não são mais compatíveis com a criação de novo fragmento de conteúdo AEM as a Cloud Service. Os clientes precisarão criar modelos de fragmento de conteúdo para substituir os modelos de fragmento de conteúdo.
-
-* Capacidade de detectar ativos com mais de 100 descendentes no nó de metadados do ativo no repositório. É recomendável remover nós de metadados que não são necessários para melhorar o desempenho ao carregar pastas que consistem em tais ativos.
-
-* Capacidade de detectar e relatar o tipo de armazenamento de dados usado.
-
-* Padrão atualizado para AEM Portal de Formulários.
-
-### Correções de erros {#bug-fixes-bpa}
-
-* O BPA gerava relatórios de descobertas de componentes principais em vez de relatórios apenas de componentes do cliente. Isso foi corrigido.
+Você pode encontrar uma lista completa das versões das Ferramentas de migração [here](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).

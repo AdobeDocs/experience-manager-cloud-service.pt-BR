@@ -3,10 +3,10 @@ title: Notas de versão do Cloud Manager AEM versão as a Cloud Service 2022.01.
 description: Estas são as notas de versão do Cloud Manager AEM as a Cloud Service versão 2022.01.0.
 feature: Release Information
 exl-id: 2dfdc943-0518-40ea-8712-1dabb97eeaa9
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 6e394aaabcb123aea53fba49684aaade3e6c87a6
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 70%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,7 @@ Esta página descreve as notas de versão do Cloud Manager AEM as a Cloud Servic
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento do Cloud Manager no AEM as a Cloud Service 2022.01.0 é 20 de janeiro de 2022. A próxima versão está planejada para 10 de fevereiro de 2022.
+A data de lançamento do Cloud Manager AEM as a Cloud Service 2022.01.0 é 20 de janeiro de 2022. A próxima versão está planejada para 10 de fevereiro de 2022.
 
 ## Novidades {#what-is-new}
 
