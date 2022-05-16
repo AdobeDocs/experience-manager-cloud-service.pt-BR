@@ -2,10 +2,10 @@
 title: Configuração de redes avançadas para o AEM as a Cloud Service
 description: Saiba como configurar recursos avançados de rede, como VPN ou um endereço IP de saída flexível ou dedicado para o AEM as a Cloud Service
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 290f75af3da5fb10fadc578163568913be4878df
+source-git-commit: 4d9a56ebea84d6483a2bd052d62ee6eb8c0bd9d5
 workflow-type: tm+mt
-source-wordcount: '2981'
-ht-degree: 97%
+source-wordcount: '3053'
+ht-degree: 94%
 
 ---
 
@@ -68,13 +68,7 @@ A configuração do nível de programa pode ser atualizada chamando o endpoint `
 
 As regras de encaminhamento de porta por ambiente podem ser atualizadas chamando novamente o endpoint `PUT /program/{programId}/environment/{environmentId}/advancedNetworking`, certificando-se de incluir o conjunto completo de parâmetros de configuração, em vez de um subconjunto.
 
-### Excluindo ou Desativando a saída flexível de porta {#deleting-disabling-flexible-port-egress-provision}
-
-Para **excluir** a infraestrutura de rede de um programa, invocar `DELETE /program/{program ID}/ networkinfrastructure/{networkinfrastructureID}`.
-
->[!NOTE]
->
-> Excluir não excluirá a infraestrutura se houver algum ambiente usando-a.
+### Desativando o saída flexível da porta {#disabling-flexible-port-egress-provision}
 
 Para **desabilitar** a saída de porta flexível de um ambiente específico, chame `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
 
@@ -206,6 +200,12 @@ A principal diferença é que o tráfego sempre sairá de um IP dedicado e únic
 Além das regras de roteamento compatíveis com egressos flexíveis da porta no endpoint `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking`, o endereço IP de saída dedicado suporta um parâmetro `nonProxyHosts`. Isso permite declarar um conjunto de hosts que devem rotear por um intervalo de endereços IPs compartilhados em vez do IP dedicado, o que pode ser útil, pois a criação de tráfego por meio de IPs compartilhados pode ser otimizada ainda mais. Os URLs `nonProxyHost` podem seguir os padrões `example.com` ou `*.example.com`, em que o curinga é compatível somente no início do domínio.
 
 Ao decidir entre saída de porta flexível e endereço IP de saída dedicado, os clientes devem escolher saída de porta flexível se um endereço IP específico não for necessário, pois a Adobe pode otimizar o desempenho do tráfego de saída de porta flexível.
+
+### Desativando Endereço IP de Saída Dedicada {#disabling-dedicated-egress-IP-address}
+
+Para **disable** Endereço IP de saída dedicado de um ambiente específico, invocar `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
+
+Para obter mais informações sobre as APIs, consulte o [Documentação da API do Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
 
 ### Roteamento de tráfego {#dedcated-egress-ip-traffic-routing}
 
@@ -397,9 +397,7 @@ Observe que o espaço de endereço não pode ser alterado após o provisionament
 
 As regras de roteamento por ambiente podem ser atualizadas chamando novamente o endpoint `PUT /program/{programId}/environment/{environmentId}/advancedNetworking`, certificando-se de incluir o conjunto completo de parâmetros de configuração, em vez de um subconjunto. As atualizações de ambiente normalmente levam de 5 a 10 minutos para serem aplicadas.
 
-### Excluir ou desabilitar a VPN {#deleting-or-disabling-the-vpn}
-
-Para excluir a infraestrutura de rede, envie um tíquete de suporte ao cliente, descrevendo o que foi criado e por que ele precisa ser excluído.
+### Desabilitando a VPN {#disabling-the-vpn}
 
 Para desativar a VPN para um ambiente específico, chame `DELETE /program/{programId}/environment/{environmentId}/advancedNetworking`. Mais detalhes na [Documentação da API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
 
@@ -540,6 +538,25 @@ Allow from 192.168.0.1
 Header always set Cache-Control private
 ```
 
+## Excluindo a infraestrutura de rede de um programa {#deleting-network-infrastructure}
+
+Para **excluir** a infraestrutura de rede de um programa, invocar `DELETE /program/{program ID}/networkinfrastructure/{networkinfrastructureID}`.
+
+>[!NOTE]
+>
+> Excluir só excluirá a infraestrutura se todos os ambientes tiverem suas redes avançadas desativadas.
+
 ## Transição entre tipos avançados de rede {#transitioning-between-advanced-networking-types}
 
-Como o parâmetro `kind` não pode ser modificado, entre em contato com o suporte ao cliente para obter assistência, descrevendo o que já foi criado e o motivo da alteração.
+É possível migrar entre tipos avançados de rede seguindo o seguinte procedimento:
+
+* desativar rede avançada em todos os ambientes
+* excluir a infraestrutura avançada de rede
+* recrie as infraestruturas de rede avançadas com os valores corretos
+* reativar rede avançada no nível do ambiente
+
+>[!WARNING]
+>
+> Esse procedimento resultará em um tempo de inatividade de serviços avançados de rede entre exclusão e recriação
+
+Se o tempo de inatividade causar um impacto significativo nos negócios, entre em contato com o suporte ao cliente para obter assistência, descrevendo o que já foi criado e o motivo da alteração.
