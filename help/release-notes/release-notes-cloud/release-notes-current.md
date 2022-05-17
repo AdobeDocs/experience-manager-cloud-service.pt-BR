@@ -3,10 +3,10 @@ title: Notas de versão atuais do  [!DNL Adobe Experience Manager] as a Cloud Se
 description: Notas de versão atuais do  [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 092338947ef7c8f34bda4604e1c901344e966be0
+source-git-commit: 9857376cb196b8aaa9fac64636727b5ad20a0360
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '617'
+ht-degree: 30%
 
 ---
 
@@ -44,7 +44,6 @@ Dê uma olhada no [Visão geral da versão de abril de 2022](https://video.tv.ad
 
 * Agora você pode [classificar tags](/help/assets/organize-assets.md#use-tags-to-organize-assets) na janela do seletor de tags em ordem crescente ou decrescente com base no nome da tag, data de criação ou data de modificação.
 
-
 ## [!DNL Experience Manager Forms] como [!DNL Cloud Service] {#forms}
 
 ### Novidades do [!DNL Forms] {#what-is-new-forms}
@@ -80,6 +79,14 @@ Recentemente, foi adicionado um novo analisador:
 * `content-packages-validation` - valida para sintaxe e estrutura de conteúdo bem formadas para pacotes que serão instalados durante a implantação
 
 É altamente recomendável atualizar seu projeto maven com a versão mais recente do analisador ou incluí-lo se ainda não tiver feito isso. Para obter mais informações, consulte a documentação [here](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html).
+
+## [!DNL Experience Manager] como [!DNL Cloud Service] Segurança da fundação {#foundation-security}
+
+### Substituição de TLS 1.0, 1.1
+
+A partir de 30 de junho de 2022, o Experience Manager as a Cloud Service exigirá uma comunicação de rede mais segura e troca de dados com os sistemas dos usuários. AEM usará exclusivamente o protocolo TLS (Transport Layer Security), 1.2. As versões anteriores do TLS 1.0 e 1.1 serão substituídas.
+
+Se você continuar usando versões mais antigas do TLS como 1.0, 1.1, poderá perder o acesso ao Experience Manager as a Cloud Service.
 
 ## Cloud Manager {#cloud-manager}
 
