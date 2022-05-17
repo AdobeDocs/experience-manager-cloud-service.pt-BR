@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: af4c85686be5299433974c455f35c907bd6776fd
+source-git-commit: e16d107dff1817e8b62de86e295590b13d853bf0
 workflow-type: tm+mt
-source-wordcount: '3585'
+source-wordcount: '3708'
 ht-degree: 1%
 
 ---
@@ -59,7 +59,7 @@ O público-alvo que melhor se encaixa nesta jornada é o seguinte, que é novo n
 
 >[!TIP]
 >
->Para obter melhores resultados, o Adobe recomenda que você leia e visualize a Jornada do Dynamic Media em um computador desktop.
+>Para obter melhores resultados, o Adobe recomenda que você leia e visualize esta Jornada Dynamic Media em um computador desktop.
 
 ## O que é o Dynamic Media e como ele pode ajudá-lo? {#dm-journey-a}
 
@@ -249,44 +249,50 @@ Depois de fazer upload de ativos no Dynamic Media, é uma boa prática _publicar
 
 Além de publicar ativos manualmente, você pode configurar o Dynamic Media para publicar ativos instantaneamente - sem nenhuma intervenção do usuário - no momento do upload.
 
-Após o upload, há diferentes maneiras de visualizar as representações de um ativo no Dynamic Media. Visualizar representações pode ajudar a fornecer uma ideia do que o cliente vê. Um método de visualização comum é selecionar um ativo e depois exibir suas Representações selecionando um *predefinição de imagem* como se vê no exemplo seguinte.
+Após o upload, há diferentes maneiras de visualizar as representações de um ativo no Dynamic Media. Visualizar representações pode ajudar a fornecer uma ideia do que o cliente vê. Um método de visualização comum é selecionar um ativo e depois exibir suas Representações selecionando um _predefinição de imagem_ como se vê no exemplo seguinte.
 
 ![Visualização de uma representação de um ativo com base na predefinição de imagem grande](/help/assets/dynamic-media/assets/dm-image-preset-with-url.png)
 _Visualização de uma representação de um ativo com base na predefinição de imagem &quot;Grande&quot; selecionada. O botão URL foi clicado. O caminho do URL resultante contém o nome predefinido de imagem &quot;Grande&quot; e pode ser usado em uma página da Web._
 
 O URL acima está ativo! [Experimente](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?$Large$).
 
-Outro método para visualizar um ativo é selecionar um ativo de imagem e, em seguida, selecionar um *Visualizadores* como mostrado no exemplo a seguir.
+Outro método para visualizar um ativo é selecionar um ativo de imagem e, em seguida, selecionar um _Visualizadores_ como mostrado no exemplo a seguir.
 
 ![Visualização de um ativo com base na predefinição do visualizador de Luz vertical de zoom](/help/assets/dynamic-media/assets/dm-viewer-preset.png)
 _Visualização de um ativo com base na predefinição do visualizador &quot;ZoomVertical_light&quot; selecionada. O ponteiro do mouse (`+`) foi movido sobre o relógio para ampliar. Observe o URL e os botões Incorporar ._
 
 A representação acima está ao vivo! [Experimente](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&amp;config=jpearldemo/ZoomVertical_light).
 
-Vamos examinar esses URLs um pouco mais de perto para que você possa entender melhor o que está acontecendo. Leve-me para [jornada Dynamic Media: Noções básicas, Parte II](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-d).
+## Opcional - Saiba mais
 
-## Saiba mais
+A parte I desta jornada cobriu as noções básicas de uma variedade de tópicos do Dynamic Media. Se você quiser saber mais sobre o que acabou de ler, use os materiais abaixo para explorar conceitos com mais detalhes. Caso contrário, você poderá continuar com a Parte II da sua jornada. Consulte [O que vem a seguir nesta Jornada do Dynamic Media](#whats-next).
 
-_Tópicos do Dynamic Media_
+_Tópicos da Ajuda do Dynamic Media_
 
-* [Trabalhar com o Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
-* [Imagem inteligente](/help/assets/dynamic-media/imaging-faq.md)
-* [Conjuntos de vídeos adaptáveis](/help/assets/dynamic-media/video.md)
+* [Trabalhar com a Dynamic Media no Experience Manager](/help/assets/dynamic-media/dynamic-media.md)
+* [Sobre imagens inteligentes](/help/assets/dynamic-media/imaging-faq.md)
+* [Como criar conjuntos de vídeos adaptáveis](/help/assets/dynamic-media/video.md)
 * [Práticas recomendadas para otimização da qualidade de imagens](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
-* [Fazer upload de ativos](/help/assets/add-assets.md#upload-assets)
-* [Visualizar ativos](/help/assets/dynamic-media/previewing-assets.md)
-* [Pré-visualizar ativos 3D](/help/assets/dynamic-media/previewing-3d-assets.md)
-* [Fornecer ativos da Dynamic Media](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
-* [Publicar ativos](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+* [Como fazer upload de ativos](/help/assets/add-assets.md#upload-assets)
+* [Como visualizar ativos](/help/assets/dynamic-media/previewing-assets.md)
+* [Como visualizar ativos 3D](/help/assets/dynamic-media/previewing-3d-assets.md)
+* [Como fornecer ativos Dynamic Media](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
+* [Como publicar ativos](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
 * [Trabalhar com publicação seletiva no Dynamic Media](/help/assets/dynamic-media/selective-publishing.md)
 
 _Tutoriais do Dynamic Media_
 
 * [Usar o Dynamic Media com Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=pt-BR)
-* [Biblioteca de conteúdo do Adobe Experience Manager](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) (pesquisar em *Dynamic Media*)
+* [Biblioteca de conteúdo do Adobe Experience Manager](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) (pesquisar em _Dynamic Media_)
 
 _Visualizadores do Dynamic Media_
 
-* [Demonstrações ao vivo](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)
+* [Demonstrações ao vivo](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html) de cada visualizador
+
+## O que vem a seguir nesta Jornada do Dynamic Media {#whats-next}
+
+Na parte II desta jornada, você examinará os URLs do Dynamic Media um pouco mais perto para entender melhor o que está acontecendo quando um ativo é entregue. Você também aprenderá mais sobre os fundamentos subjacentes à criação de predefinições de imagens para renderizar ativos, e saiba mais sobre Conjuntos de imagens, Conjuntos de rotação e Conjuntos de mídia mista e como eles são criados.
+
+Leve-me para [jornada Dynamic Media: Noções básicas, Parte II](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-d).
 
 <!-- Live as of April 28 2022. LEAVE IN HERE https://landing.adobe.com/en/na/dynamic-media/ctir-2755/index.html -->

@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: af4c85686be5299433974c455f35c907bd6776fd
+source-git-commit: e16d107dff1817e8b62de86e295590b13d853bf0
 workflow-type: tm+mt
-source-wordcount: '2829'
+source-wordcount: '2877'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Consulte também [jornada Dynamic Media; Noções básicas, Parte I](/help/asset
 
 >[!TIP]
 >
->Para obter melhores resultados, o Adobe recomenda que você leia e visualize a Jornada do Dynamic Media em um computador desktop.
+>Para obter melhores resultados, o Adobe recomenda que você leia e visualize esta Jornada Dynamic Media em um computador desktop.
 
 ## Anatomia de um URL do Dynamic Media e como o Dynamic Media fornece conteúdo {#dm-journey-d}
 
@@ -43,7 +43,7 @@ A primeira parte do URL em vermelho é referenciar o próprio domínio do servid
 
 O nome da conta é a parte em roxo. Nesse caso, a conta é chamada `jpearldemo`.
 
-A ID ou o nome do ativo, `AdobeStock_28563982` está em verde. Observe que o ativo tem *não* extensão de arquivo como `.png` ou `.jpg`. Quando os ativos são assimilados no Dynamic Media, a extensão de arquivo é removida e um tipo diferente de arquivo é criado: um arquivo TIFF pirâmid. O TIFF da pirâmica permite que o Dynamic Media crie rapidamente representações.
+A ID ou o nome do ativo, `AdobeStock_28563982` está em verde. Observe que o ativo tem _não_ extensão de arquivo como `.png` ou `.jpg`. Quando os ativos são assimilados no Dynamic Media, a extensão de arquivo é removida e um tipo diferente de arquivo é criado: um arquivo TIFF pirâmid. O TIFF da pirâmica permite que o Dynamic Media crie rapidamente representações.
 
 E finalmente, há alguns parâmetros de processamento de imagens. `?wid=1000&fmt=jpeg&qlt=85`, exibido em amarelo na extremidade.
 
@@ -68,7 +68,7 @@ Agora tente adicionar um parâmetro de rotação à imagem de observação. E o 
 
 O relógio ainda está um pouco inclinado para a esquerda. Alterar o valor de girar de `90` para `92`e pressione **[!UICONTROL Enter]**. [Experimente](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=9)
 
-Novamente, no momento que você pressiona **[!UICONTROL Enter]**, uma nova representação do relógio é gerada de forma quase instantânea. Você pode ver o tipo de desempenho que você obtém, o que explica por que o Dynamic Media pode fornecer mais de 800.000 solicitações de imagem. *por segundo*, em um fim de semana ocupado ou grande feriado.
+Novamente, no momento que você pressiona **[!UICONTROL Enter]**, uma nova representação do relógio é gerada de forma quase instantânea. Você pode ver o tipo de desempenho que você obtém, o que explica por que o Dynamic Media pode fornecer mais de 800.000 solicitações de imagem. _por segundo_, em um fim de semana ocupado ou grande feriado.
 
 Embora seja possível alterar parâmetros de processamento de imagens em um URL com base em imagem, não é um método eficiente, especialmente se você tiver dezenas de milhares de imagens que compõem seu site. Uma abordagem muito melhor é usar predefinições de imagens.
 
@@ -204,17 +204,19 @@ Você acabou de ler um pouco sobre conjuntos de imagens e visualizadores. Vamos 
 * `ZoomVertical_dark` visualizador aplicado a um ativo de imagem. [Experimente](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_96311480&amp;config=jpearldemo/ZoomVertical_dark).
 * `Zoom_light` visualizador aplicado a uma imagem. [Experimente](https://s7d1.scene7.com/s7viewers/html5/BasicZoomViewer.html?asset=jpearldemo/AdobeStock_38827423&amp;config=jpearldemo/Zoom_light).
 
-## Saiba mais
+## Opcional - Saiba mais
 
-_Tópicos do Dynamic Media_
+Se você quiser saber mais sobre o que acabou de ler, use os materiais abaixo para explorar conceitos com mais detalhes. Caso contrário, a Jornada do Dynamic Media estará concluída!
 
-* [Criar predefinições de imagens](/help/assets/dynamic-media/image-presets.md)
+_Tópicos da Ajuda do Dynamic Media_
+
+* [Como criar predefinições de imagens](/help/assets/dynamic-media/image-presets.md)
 * Uma lista de [parâmetros de processamento de imagens](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html) que você pode usar no campo Modificador de imagem ao criar uma predefinição de imagem
-* [Visualizar ativos](/help/assets/dynamic-media/previewing-assets.md)
-* [Pré-visualizar ativos 3D](/help/assets/dynamic-media/previewing-3d-assets.md)
-* [Conjuntos de imagens](/help/assets/dynamic-media/image-sets.md)
-* [Conjuntos de rotação](/help/assets/dynamic-media/spin-sets.md)
-* [Conjuntos de mídia mista](/help/assets/dynamic-media/mixed-media-sets.md)
+* [Como visualizar ativos](/help/assets/dynamic-media/previewing-assets.md)
+* [Como visualizar ativos 3D](/help/assets/dynamic-media/previewing-3d-assets.md)
+* [Como criar Conjuntos de imagens](/help/assets/dynamic-media/image-sets.md)
+* [Como criar conjuntos de rotação](/help/assets/dynamic-media/spin-sets.md)
+* [Como criar conjuntos de mídia mista](/help/assets/dynamic-media/mixed-media-sets.md)
 
 _Tutoriais do Dynamic Media_
 
@@ -223,6 +225,6 @@ _Tutoriais do Dynamic Media_
 
 _Visualizadores do Dynamic Media_
 
-* [Demonstrações ao vivo](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)
+* [Demonstrações ao vivo](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html) de cada visualizador
 
 <!-- Live as of April 28 2022. LEAVE IN HERE https://landing.adobe.com/en/na/dynamic-media/ctir-2755/index.html -->
