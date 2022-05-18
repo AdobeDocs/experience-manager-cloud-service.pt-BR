@@ -2,9 +2,9 @@
 title: Verificando o status do nome de domínio
 description: Saiba como determinar se o nome de domínio personalizado foi verificado com êxito pelo Cloud Manager.
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: 878381f9c5780864f218a00a272b1600d578dcca
+source-git-commit: ba0226b5ad3852dd5f72dd7e0ace650035f5ac6a
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '637'
 ht-degree: 0%
 
 ---
@@ -49,6 +49,24 @@ O Cloud Manager verificará a propriedade do domínio por meio do valor TXT e ex
    * Consulte o documento [Gerenciar nomes de domínio personalizados](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) para saber mais.
 
 O Cloud Manager acionará automaticamente uma verificação TXT ao selecionar **Salvar** sobre a etapa de verificação do **Adicionar domínio personalizado** assistente. Para verificações subsequentes, você deve selecionar ativamente o ícone de verificação novamente ao lado do status.
+
+## Erros de nome de domínio {#domain-error}
+
+Esta seção explica os erros que você pode ver e como resolvê-los.
+
+**Domínio não instalado** - Você recebe esse erro durante a validação do domínio do registro TXT mesmo depois de verificar que o registro foi atualizado adequadamente.
+
+**Explicação de erro** - Bloqueia com frequência um domínio para a conta inicial que o registrou e nenhuma outra conta pode registrar um subdomínio sem solicitar permissão. Além disso, o Fastly permite atribuir somente um domínio de ápice e subdomínios associados a um serviço e uma conta do Fastly. Se você tiver uma conta Fastly existente que vincula o mesmo apex e subdomínios usados para os domínios da AEM Cloud Service, verá esse erro.
+
+**Resolução de Erro** - O erro é corrigido da seguinte maneira:
+
+* Remova o apex e os subdomínios da conta existente antes de instalar o domínio no Cloud Manager. Use essa opção para vincular o domínio apex e todos os subdomínios à conta as a Cloud Service Fastly AEM. Consulte [Trabalhar com domínios na documentação do Fastly](https://docs.fastly.com/en/guides/working-with-domains) para obter mais detalhes.
+
+* Se o domínio apex tiver vários subdomínios para AEM sites as a Cloud Service e não AEM que você deseja vincular a contas Fastly diferentes, tente instalar o domínio no Cloud Manager e, se a instalação do domínio falhar, crie um tíquete de Suporte ao Cliente com Fastly para podermos dar seguimento com Fastly em seu nome.
+
+>[!NOTE]
+>
+>OBSERVAÇÃO: Não roteie o DNS do site para AEM IPs as a Cloud Service se o domínio não tiver sido instalado com êxito.
 
 ## Configurações de CDN pré-existentes para nomes de domínio personalizados {#pre-existing-cdn}
 
