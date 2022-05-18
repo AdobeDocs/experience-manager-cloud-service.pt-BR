@@ -3,9 +3,9 @@ title: Armazenamento em cache no AEM as a Cloud Service
 description: 'Armazenamento em cache no AEM as a Cloud Service '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 44fb07c7760a8faa3772430cef30fa264c7310ac
+source-git-commit: 75d1681ba4cb607f1958d9d54e49f5cc1e201392
 workflow-type: tm+mt
-source-wordcount: '1878'
+source-wordcount: '1960'
 ht-degree: 0%
 
 ---
@@ -181,6 +181,10 @@ Isso pode ser útil, por exemplo, quando sua lógica comercial requer o ajuste f
          Header set Age 0
       </LocationMatch>
       ```
+
+### Comportamento da solicitação de HEAD {#request-behavior}
+
+Quando uma solicitação de HEAD é recebida na CDN do Adobe para um recurso que é **not** em cache, a solicitação é transformada e recebida pelo dispatcher e/ou AEM instância como uma solicitação GET. Se a resposta for armazenada em cache, as solicitações de HEAD subsequentes serão atendidas a partir da CDN. Se a resposta não puder ser armazenada em cache, as solicitações de HEAD subsequentes serão passadas para o dispatcher e/ou AEM instância por um período que depende do `Cache-Control` TTL.
 
 ## Invalidação de cache do Dispatcher {#disp}
 
