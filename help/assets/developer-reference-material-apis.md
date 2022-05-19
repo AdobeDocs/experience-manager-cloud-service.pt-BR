@@ -5,10 +5,10 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: f5282d149e80328742ff9008441960f62cea6290
+source-git-commit: cbaf9faf6cc8c2079dc0abc0a775ff4a0e2cc762
 workflow-type: tm+mt
-source-wordcount: '1737'
-ht-degree: 3%
+source-wordcount: '1795'
+ht-degree: 4%
 
 ---
 
@@ -167,6 +167,8 @@ Depois que todas as partes de um arquivo binário forem carregadas, envie uma so
 | `versionLabel` | Sequência de caracteres | Opcional | Se uma nova versão for criada, o rótulo associado à nova versão de um ativo . |
 | `versionComment` | Sequência de caracteres | Opcional | Se uma nova versão for criada, os comentários associados à versão. |
 | `replace` | Booleano | Opcional | If `True` e existe um ativo com o nome especificado, [!DNL Experience Manager] exclui o ativo e depois o recria. |
+| `uploadDuration` | Número | Opcional | O tempo total, em milissegundos, para o upload do arquivo em sua totalidade. Se especificado, a duração do upload é incluída nos arquivos de log do sistema para análise da taxa de transferência. |
+| `fileSize` | Número | Opcional | O tamanho, em bytes, do arquivo. Se especificado, o tamanho do arquivo é incluído nos arquivos de log do sistema para análise da taxa de transferência. |
 
 >[!NOTE]
 Se o ativo existir e nem `createVersion` nor `replace` for especificado, [!DNL Experience Manager] atualiza a versão atual do ativo com o novo binário.
