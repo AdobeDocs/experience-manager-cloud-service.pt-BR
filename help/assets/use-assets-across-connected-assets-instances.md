@@ -6,9 +6,9 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: de94e9a1737b7ae51804bb40ed5b009435a27726
+source-git-commit: ec4b5b391cb3ba2d13c67a6da30eea59674cf072
 workflow-type: tm+mt
-source-wordcount: '3770'
+source-wordcount: '3763'
 ht-degree: 16%
 
 ---
@@ -43,11 +43,11 @@ Antes de usar ou configurar esse recurso, verifique o seguinte:
    | **[!DNL Experience Manager]6,5 [!DNL Assets] no AMS** | Compatível | Compatível | Compatível |
    | **[!DNL Experience Manager]6,5 [!DNL Assets] no local** | Incompatível | Incompatível | Incompatível |
 
-### Formatos de arquivo compatíveis {#mimetypes}
+### Formatos de arquivo não compatíveis {#mimetypes}
 
 Os autores pesquisam imagens e os seguintes tipos de documentos no Localizador de conteúdo e arrastam os ativos pesquisados no Editor de páginas. Os documentos são adicionados ao `Download` componente e imagens para o `Image` componente. Os autores também podem adicionar os ativos remotos em qualquer [!DNL Experience Manager] componente que estende o padrão `Download` ou `Image` componentes. Os formatos compatíveis são:
 
-* **Formatos de imagem**: Os formatos que a variável [Componente de imagem](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html) suporta.
+* **Formatos de imagem**: Os formatos que a variável [Componente de imagem](file-format-support.md#image-formats) suporta.
 * **Formatos de documento**: Consulte a [formatos de documento suportados](file-format-support.md#document-formats).
 
 ### Usuários e grupos envolvidos {#users-and-groups-involved}
@@ -149,7 +149,7 @@ Para usar [!DNL Dynamic Media] com Connected Assets:
 >
 >Com ativos conectados e [!DNL Dynamic Media] configuração, não é possível usar [!DNL Dynamic Media] para processar ativos locais disponíveis no [!DNL Sites] implantação.
 
-## Configurar [!DNL Dynamic Media] {#configure-dynamic-media}
+## Configurar o [!DNL Dynamic Media] {#configure-dynamic-media}
 
 Para configurar [!DNL Dynamic Media] on [!DNL Assets] e [!DNL Sites] implantações:
 
