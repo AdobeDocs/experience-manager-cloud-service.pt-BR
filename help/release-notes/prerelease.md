@@ -2,10 +2,10 @@
 title: '"Canal de pré-lançamento do [!DNL Adobe Experience Manager] as a Cloud Service"'
 description: '"Canal de pré-lançamento do [!DNL Adobe Experience Manager] as a Cloud Service"'
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: c2f0b9c904374b5e59ce2b2f268fdd73dfdbfd21
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 100%
+source-wordcount: '805'
+ht-degree: 84%
 
 ---
 
@@ -29,28 +29,41 @@ Os recursos de pré-lançamento podem ser vistos de diferentes maneiras:
 
 ### Ambientes em nuvem {#cloud-environments}
 
-Para ver novos recursos no console do Sites em ambientes de desenvolvimento na nuvem, bem como o resultado de quaisquer personalizações de projeto:
+Para atualizar um ambiente do Cloud para usar o pré-lançamento, adicione um novo [variável de ambiente](../implementing/cloud-manager/environment-variables.md) usando a interface do usuário de configuração de ambiente no Cloud Manager:
 
-* Usando o [endpoint das variáveis de ambiente da API do Cloud Manager](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables), configure a variável de ambiente **AEM_RELEASE_CHANNEL** com o valor **prerelease**.
+1. Navegue até o **Programa** > **Ambiente** > **Configuração do ambiente** você deseja atualizar.
+1. Adicione um novo [variável de ambiente](../implementing/cloud-manager/environment-variables.md):
 
-```
-PATCH /program/{programId}/environment/{environmentId}/variables
-[
-        {
-                "name" : "AEM_RELEASE_CHANNEL",
-                "value" : "prerelease",
-                "type" : "string"
-        }
-]
-```
+   | Nome | Valor | Serviço Aplicado | Tipo |
+   |------|-------|-----------------|------|
+   | `AEM_RELEASE_CHANNEL` | `prerelease` | Todos os pacotes | Variável |
 
-A CLI do Cloud Manager também pode ser usada, de acordo com as instruções em [https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid)
-```aio cloudmanager:environment:set-variables <ENVIRONMENT_ID> --programId=<PROGRAM_ID> --variable AEM_RELEASE_CHANNEL “prerelease”```
+1. Salve as alterações e o ambiente será atualizado com as opções de recurso de pré-lançamento ativadas.
+
+   ![Nova variável de ambiente](assets/env-configuration-prerelease.png)
 
 
-A variável pode ser excluída ou retornada a um valor diferente se você quiser que o ambiente seja restaurado ao comportamento do canal padrão (não pré-lançamento)
+**Alternativamente** você pode usar a API e a CLI do Cloud Manager para atualizar as variáveis de ambiente:
 
-* Como alternativa, você também pode configurar as variáveis de ambiente na [Interface de usuário do Cloud Manager](/help/implementing/cloud-manager/environment-variables.md).
+* Use [Ponto de extremidade das variáveis de ambiente da API do Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchEnvironmentVariables), defina o **AEM_RELEASE_CHANNEL** variável de ambiente para o valor **pré-lançamento**.
+
+   ```
+   PATCH /program/{programId}/environment/{environmentId}/variables
+   [
+           {
+                   "name" : "AEM_RELEASE_CHANNEL",
+                   "value" : "prerelease",
+                   "type" : "string"
+           }
+   ]
+   ```
+
+* A CLI do Cloud Manager também pode ser usada, de acordo com as instruções em [https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid)
+
+   ```aio cloudmanager:environment:set-variables <ENVIRONMENT_ID> --programId=<PROGRAM_ID> --variable AEM_RELEASE_CHANNEL “prerelease”```
+
+
+A variável pode ser excluída ou retornada a um valor diferente se você quiser que o ambiente seja restaurado ao comportamento do canal regular (não pré-lançamento).
 
 ### SDK local {#local-sdk}
 
