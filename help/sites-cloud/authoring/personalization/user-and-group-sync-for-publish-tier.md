@@ -2,9 +2,9 @@
 title: 'Registro, logon e perfil do usuário '
 description: Saiba mais sobre Registro, Logon, Dados do usuário e Sincronização de grupo para AEM as a Cloud Service
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: 4d76d8bac41e19168abb1819841dfc62be07ea0c
+source-git-commit: c49a70b4048acc4e925c69b7ebbedbf8779bbbc0
 workflow-type: tm+mt
-source-wordcount: '1177'
+source-wordcount: '1174'
 ht-degree: 1%
 
 ---
@@ -73,7 +73,7 @@ Os clientes podem usar a autenticação baseada em SAML por meio de seu SAML IdP
 >
 >Somente a autenticação inicial das credenciais do usuário é autenticada pelo IdP e as solicitações subsequentes de AEM são executadas usando um cookie de token de login AEM, desde que o cookie esteja disponível.
 
-Consulte a documentação para obter mais informações sobre o [Manipulador de autenticação SAML 2.0](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/saml-2-0-authenticationhandler.html?lang=en#saml-authentication-handler).
+Consulte a documentação para obter mais informações sobre o [Manipulador de autenticação SAML 2.0](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/authentication/saml-2-0.html).
 
 **OAuth/SSO**
 
