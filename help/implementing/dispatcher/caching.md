@@ -3,10 +3,10 @@ title: Armazenamento em cache no AEM as a Cloud Service
 description: 'Armazenamento em cache no AEM as a Cloud Service '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 75d1681ba4cb607f1958d9d54e49f5cc1e201392
+source-git-commit: 2df0c88d82554362879f6302e8f7c784cb96d2b8
 workflow-type: tm+mt
-source-wordcount: '1960'
-ht-degree: 0%
+source-wordcount: '2183'
+ht-degree: 1%
 
 ---
 
@@ -83,31 +83,42 @@ Isso pode ser útil, por exemplo, quando sua lógica comercial requer o ajuste f
 * ao usar AEM estrutura de biblioteca do lado do cliente, o JavaScript e o código CSS são gerados de forma que os navegadores possam armazená-los em cache indefinidamente, já que qualquer alteração se manifesta como novos arquivos com um caminho exclusivo.  Em outras palavras, o HTML que faz referência às bibliotecas de clientes será produzido conforme necessário para que os clientes possam ter novo conteúdo conforme ele é publicado. O controle de cache é definido como &quot;imutável&quot; ou 30 dias para navegadores mais antigos que não respeitam o valor &quot;imutável&quot;.
 * consulte a seção [Bibliotecas do lado do cliente e consistência da versão](#content-consistency) para obter mais detalhes.
 
-### Imagens e qualquer conteúdo grande o suficiente armazenado no armazenamento de blob {#images}
+### Imagens e qualquer conteúdo grande o suficiente para ser armazenado no armazenamento de blobs {#images}
 
-* por padrão, não armazenado em cache
-* pode ser definido em um nível mais fino pelo seguinte apache `mod_headers` diretivas:
+O comportamento padrão dos programas criados após meados de maio de 2022 (especificamente, para ids de programa maiores que 65000) é armazenar em cache por padrão, respeitando também o contexto de autenticação da solicitação. Os programas mais antigos (ids de programa iguais ou inferiores a 65000) não armazenam em cache o conteúdo do blob por padrão.
 
-   ```
-      <LocationMatch "^/content/.*\.(jpeg|jpg)$">
-        Header set Cache-Control "max-age=222"
-        Header set Age 0
-      </LocationMatch>
-   ```
+Em ambos os casos, os cabeçalhos de armazenamento em cache podem ser substituídos em um nível de granularidade mais fino na camada do apache/dispatcher usando o apache `mod_headers` diretivas, por exemplo:
 
-   Consulte a discussão na seção html/texto acima para ter cuidado para não armazenar em cache muito amplamente e também para forçar o AEM a sempre aplicar o armazenamento em cache com a opção &quot;sempre&quot;.
+```
+   <LocationMatch "^/content/.*\.(jpeg|jpg)$">
+     Header set Cache-Control "max-age=222"
+     Header set Age 0
+   </LocationMatch>
+```
 
-   É necessário assegurar que um processo `src/conf.dispatcher.d/`o cache tem a seguinte regra (que está na configuração padrão):
+Ao modificar os cabeçalhos de cache na camada do dispatcher, tenha cuidado para não armazenar em cache muito, consulte a discussão na seção HTML/texto [above](#html-text)). Além disso, verifique se os ativos destinados a serem mantidos privados (em vez de armazenados em cache) não fazem parte do `LocationMatch` filtros de diretiva.
 
-   ```
-   /0000
-   { /glob "*" /type "allow" }
-   ```
+#### Novo comportamento padrão de armazenamento em cache {#new-caching-behavior}
 
-   Certifique-se de que os ativos destinados a serem mantidos privados em vez de armazenados em cache não façam parte dos filtros de diretiva LocationMatch .
+A camada de AEM definirá cabeçalhos de cache dependendo se o cabeçalho do cache já foi definido e do valor do tipo de solicitação. Observe que, se nenhum cabeçalho de controle de cache tiver sido definido, o conteúdo público será armazenado em cache e o tráfego autenticado será definido como privado. Se um cabeçalho de controle de cache tiver sido definido, os cabeçalhos do cache não serão tocados.
 
-   >[!NOTE]
-   >Os outros métodos, incluindo o [dispatcher-ttl AEM projeto ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), não substituirá os valores com êxito.
+| O cabeçalho de controle de cache existe? | Tipo de solicitação | AEM define cabeçalhos de cache como |
+|------------------------------|---------------|------------------------------------------------|
+| Não | público | Controle de cache: público, max-age=600, imutável |
+| Não | autenticado | Controle de cache: private, max-age=600, imutável |
+| Sim | qualquer | inalterado |
+
+Embora não seja recomendado, é possível alterar o novo comportamento padrão para seguir o comportamento mais antigo (ids de programa iguais ou inferiores a 65000), definindo a variável de ambiente do Cloud Manager `AEM_BLOB_ENABLE_CACHING_HEADERS` como falso.
+
+#### Comportamento de armazenamento em cache padrão mais antigo {#old-caching-behavior}
+
+A camada de AEM não armazenará em cache o conteúdo do blob por padrão.
+
+>[!NOTE]
+>É recomendável alterar o comportamento padrão mais antigo para que seja consistente com o novo comportamento (ids de programa mais altas que 65000), definindo a variável de ambiente do Cloud Manager AEM_BLOB_ENABLE_CACHING_HEADERS como true. Se o programa já estiver ativo, verifique se, depois das alterações, o conteúdo se comporta conforme o esperado.
+
+>[!NOTE]
+>Os outros métodos, incluindo o [dispatcher-ttl AEM projeto ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), não substituirá os valores com êxito.
 
 ### Outros tipos de arquivos de conteúdo no armazenamento de nós {#other-content}
 
@@ -115,7 +126,7 @@ Isso pode ser útil, por exemplo, quando sua lógica comercial requer o ajuste f
 * O padrão não pode ser definido com a variável `EXPIRATION_TIME` variável usada para tipos de arquivo html/text
 * a expiração do cache pode ser definida com a mesma estratégia LocationMatch descrita na seção html/text especificando o regex apropriado
 
-### Otimizações Furtur
+### Outras otimizações {#further-optimizations}
 
 * Evite usar `User-Agent` como parte da `Vary` cabeçalho. Versões anteriores da configuração padrão do dispatcher (antes do arquétipo versão 28) incluíam isso e recomendamos que você remova isso usando as etapas abaixo.
    * Localize os arquivos vhost em `<Project Root>/dispatcher/src/conf.d/available_vhosts/*.vhost`
