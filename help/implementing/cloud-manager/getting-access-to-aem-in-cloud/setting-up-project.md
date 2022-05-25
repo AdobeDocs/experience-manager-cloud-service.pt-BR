@@ -2,7 +2,7 @@
 title: Configuração do projeto
 description: Saiba como AEM projetos são criados com o Maven e os padrões que você deve observar ao criar seu próprio projeto.
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
-source-git-commit: e0774c34ed81d23a5d7a897f65d50dcbf8f8af0d
+source-git-commit: 3bd3221676a3558225baa7a3b0c78174e21091be
 workflow-type: tm+mt
 source-wordcount: '1415'
 ht-degree: 1%
@@ -143,7 +143,7 @@ Como exemplo, digamos que o repositório esteja em `https://repository.myco.com/
            <server>
                <id>myco-repository</id>
                <username>cloudmanager</username>
-              <password>${env.CUSTOM_MYCO_REPOSITORY_PASSWORD}</password>
+              <password>${secret.CUSTOM_MYCO_REPOSITORY_PASSWORD}</password>
            </server>
        </servers>
    </settings>
