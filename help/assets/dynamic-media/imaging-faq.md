@@ -5,9 +5,9 @@ feature: Asset Management,Renditions
 role: User
 mini-toc-levels: 3
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 86a223231aacb4c7159e695d3ce731ff35fc469d
+source-git-commit: 263808980a9542b1a333c59e68e59122cf43025d
 workflow-type: tm+mt
-source-wordcount: '3524'
+source-wordcount: '3525'
 ht-degree: 1%
 
 ---
@@ -125,7 +125,7 @@ Não. A Smart Imaging está incluída em sua licença existente. Essa regra é v
 
 ## Como funciona a Smart Imaging? {#how-does-smart-imaging-work}
 
-Quando uma imagem é solicitada por um consumidor, o Smart Imaging verifica as características do usuário e converte para o formato de imagem apropriado com base no navegador em uso. Essas conversões de formato são feitas de maneira que não degrade a fidelidade visual. A geração de imagens inteligentes converte automaticamente imagens em diferentes formatos com base na capacidade do navegador da seguinte maneira.
+Quando uma imagem é solicitada por um consumidor, o Smart Imaging verifica as características do usuário e a converte para o formato de imagem apropriado, com base no navegador em uso. Essas conversões de formato são feitas de maneira que não degrade a fidelidade visual. A geração de imagens inteligentes converte automaticamente imagens em diferentes formatos com base na capacidade do navegador da seguinte maneira.
 
 * Converter automaticamente para AVIF se o navegador suportar o formato
 * Converter automaticamente para WebP se a conversão de AVIF não tiver sido benéfica ou o navegador não oferecer suporte a AVIF
