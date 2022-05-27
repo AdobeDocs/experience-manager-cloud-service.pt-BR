@@ -2,9 +2,9 @@
 title: Como atualizar seu conteúdo por meio das APIs do AEM Assets
 description: Nesta parte da Jornada do desenvolvedor sem cabeçalho AEM, saiba como usar a REST API para acessar e atualizar o conteúdo dos Fragmentos de conteúdo.
 exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
-source-git-commit: 335d7760886fe8dc489335a050d3cb6d0d2652a1
+source-git-commit: 83248913929f196b2f84913f0fe761f291f68d8f
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1071'
 ht-degree: 3%
 
 ---
@@ -282,7 +282,7 @@ O uso é via:
 
 O corpo deve conter uma representação JSON do fragmento de conteúdo a ser criado, incluindo qualquer conteúdo inicial que deve ser definido nos elementos do fragmento de conteúdo. É obrigatório definir a variável `cq:model` e deve apontar para um modelo de fragmento de conteúdo válido. Se isso não for feito, haverá um erro. Também é necessário adicionar um cabeçalho `Content-Type` que está definida como `application/json`.
 
-### Atualizar {#update}
+### Atualizar o {#update}
 
 O uso é via
 
@@ -318,7 +318,7 @@ Agora que você concluiu esta parte da Jornada de Desenvolvedores sem Cabeça da
 
 <!--You should continue your AEM headless journey by next reviewing the document [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) where you learn how to take your AEM Headless project and prepare it for going live.-->
 
-Você deve continuar sua jornada sem periféricos de AEM revisando o documento em seguida [Como ativar seu aplicativo sem periféricos](go-live.md) onde você leva seu AEM projeto Headless ao vivo!
+Você deve continuar sua jornada sem periféricos de AEM revisando o documento em seguida [Como unir tudo - seu aplicativo e seu conteúdo em AEM](put-it-all-together.md) onde você se familiarizará com as noções básicas e as ferramentas da arquitetura de AEM necessárias para unir seu aplicativo.
 
 ## Recursos adicionais {#additional-resources}
 
