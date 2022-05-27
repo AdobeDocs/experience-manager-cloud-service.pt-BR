@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Recursos de autoajuda e links de documentação da visão geral do Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 8f75eb16718bba38bc6a12d5558f50335fd647aa
+source-git-commit: 20118fd9226a7b3ca92cdf3fc78071457d965a77
 workflow-type: tm+mt
-source-wordcount: '3484'
-ht-degree: 98%
+source-wordcount: '3491'
+ht-degree: 97%
 
 ---
 
@@ -398,6 +398,7 @@ ht-degree: 98%
       + [Invalidar o cache da CDN por meio do Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
       + [Invalidar o cache da CDN por meio do Dynamic Media Classic](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
       + [Imagem inteligente](/help/assets/dynamic-media/imaging-faq.md)
+      + [Imagem inteligente com relação de pixels do dispositivo no lado do cliente](/help/assets/dynamic-media/client-side-dpr.md)
       + [Entregar ativos do Dynamic Media](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
       + [Ativar proteção de hotlink no Dynamic Media](/help/assets/dynamic-media/hotlink-protection.md)
       + [Suporte para 3D](/help/assets/dynamic-media/assets-3d.md)
