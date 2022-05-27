@@ -4,9 +4,9 @@ description: Saiba como o Smart Imaging com a Adobe Sensei AI aplica as caracter
 feature: Asset Management,Renditions
 role: User
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: 743782e2716aa79491adee2f32da6d746bcc40a7
 workflow-type: tm+mt
-source-wordcount: '2624'
+source-wordcount: '2629'
 ht-degree: 1%
 
 ---
@@ -78,9 +78,10 @@ Se desejar, sua empresa pode recusar a otimização da largura de banda da rede 
 |---|---|
 | `network=off` | Desativa a otimização de rede em um nível de URL de imagem individual. |
 
->[!NOTE]
->
->O DPR e os valores de largura de banda da rede são baseados nos valores detectados do lado do cliente do CDN empacotado. Esses valores às vezes são imprecisos. Por exemplo, iPhone5 com DPR=2 e iPhone12 com DPR=3, ambos mostram DPR=2. Ainda assim, para dispositivos de alta resolução, o envio de DPR=2 é melhor do que o envio de DPR=1. Em breve: O Adobe está trabalhando no código do lado do cliente para determinar com precisão o DPR de um usuário final.
+O DPR e os valores de largura de banda da rede são baseados nos valores detectados do lado do cliente do CDN empacotado. Esses valores às vezes são imprecisos. Por exemplo, iPhone5 com DPR=2 e iPhone12 com `dpr=3`, ambos exibem `dpr=2`. Ainda, para dispositivos de alta resolução, envio `dpr=2` é melhor do que enviar `dpr=1`. <!-- The best way to overcome this inaccuracy, however, is to use client-side DPR to give you 100% accurate values. And it works for any device, whether it is Apple or any other device that was launched. See [Use Smart Imaging with client-side Device Pixel Ratio](/help/assets/dynamic-media/client-side-dpr.md) -->
+
+
+O DPR do lado do cliente fornece valores 100% precisos e funciona para qualquer dispositivo, seja Apple ou qualquer outro novo dispositivo que acabou de ser iniciado.
 
 ## Quais são os principais benefícios do último Smart Imaging? {#what-are-the-key-benefits-of-smart-imaging}
 
