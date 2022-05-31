@@ -2,10 +2,10 @@
 title: Suporte ao cookie Same Site para o Adobe Experience Manager as a Cloud Service
 description: Suporte ao cookie Same Site para o Adobe Experience Manager as a Cloud Service
 exl-id: 2cec7202-4450-456f-8e62-b7ed3791505c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: e1234e90e276a6274fc4dc9de0ae577219669ecf
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 100%
+source-wordcount: '287'
+ht-degree: 85%
 
 ---
 
@@ -17,7 +17,15 @@ O valor padrão dessa configuração (`SameSite=Lax`) pode fazer com que a auten
 
 Para contornar isso, é preciso definir o atributo de cookie SameSite como `None` para o token de logon.
 
-Você pode fazer isso seguindo as etapas abaixo:
+>[!CAUTION]
+>
+>O `SameSite=None` só é aplicada se o protocolo for seguro (HTTPS).
+>
+>Se o protocolo não for seguro (HTTP), a configuração será ignorada e o servidor exibirá esta mensagem AVISO:
+>
+>`WARN com.day.crx.security.token.TokenCookie Skip 'SameSite=None'`
+
+Você pode adicionar a configuração seguindo as etapas abaixo:
 
 1. Instale localmente uma versão do Quickstart do SDK do AEM
 1. Vá para o Console da Web em `http://serveraddress:serverport/system/console/configMgr`
