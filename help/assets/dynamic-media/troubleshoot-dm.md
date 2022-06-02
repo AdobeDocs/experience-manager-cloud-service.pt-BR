@@ -3,10 +3,10 @@ title: Solução de problemas do Dynamic Media
 description: Dicas de solução de problemas ao usar o Dynamic Media.
 role: Admin,User
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
+source-git-commit: a7152785e8957dcc529d1e2138ffc8c895fa5c29
 workflow-type: tm+mt
-source-wordcount: '992'
-ht-degree: 2%
+source-wordcount: '1135'
+ht-degree: 1%
 
 ---
 
@@ -169,53 +169,71 @@ Se tiver problemas com o vídeo, consulte as seguintes orientações para soluç
 
 Se tiver problemas com os visualizadores, consulte a seguinte orientação para solução de problemas.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Problema</strong></td>
-   <td><strong>Como depurar</strong></td>
-   <td><strong>Solução</strong></td>
-  </tr>
-  <tr>
-   <td>As predefinições do visualizador não são publicadas</td>
-   <td><p>Vá para a página de diagnóstico do gerenciador de exemplo: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>Observe valores calculados. Ao operar corretamente, você verá:</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
-       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>Observação</strong>: Pode levar cerca de 10 minutos após a configuração das configurações de nuvem do Dynamic Media para que os ativos do visualizador sejam sincronizados.</p> <p>Se os ativos não ativados permanecerem, selecione uma das opções <strong>Listar todos os ativos não ativados</strong> botões para ver detalhes.</p> </td>
-   <td>
-    <ol>
-     <li>Navegue até a lista predefinida do visualizador nas ferramentas administrativas: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></li>
-     <li>Selecione todas as predefinições do visualizador e selecione <strong>Publicar</strong>.</li>
-     <li>Navegue de volta ao gerenciador de amostra e observe que a contagem de ativos não ativados agora é zero.</li>
-    </ol> </td>
-  </tr>
-  <tr>
-   <td>A arte-final Predefinição do visualizador retorna 404 da visualização em detalhes do ativo ou copia URL/código incorporado</td>
-   <td><p>No CRXDE Lite, faça o seguinte:</p>
-    <ol>
-     <li>Navegar para <code>&lt;sync-folder&gt;/_CSS/_OOTB</code> na pasta de sincronização do Dynamic Media (por exemplo, <code>/content/dam/_CSS/_OOTB</code>),</li>
-     <li>Encontre o nó de metadados do ativo problemático (por exemplo, <code>&lt;sync-folder&gt;/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/</code>).</li>
-     <li>Verifique a presença de <code>dam:scene7*</code> propriedades. Se o ativo tiver sido sincronizado e publicado com êxito, você verá a variável <code>dam:scene7FileStatus</code> defina como <strong>PublishComplete</strong>.</li>
-     <li>Tente solicitar a arte-final diretamente do Dynamic Media concatenando os valores das seguintes propriedades e literais de string
-      <ul>
-       <li><code>dam:scene7Domain</code></li>
-       <li><code>"is/content"</code></li>
-       <li><code>dam:scene7Folder</code></li>
-       <li><code>&lt;asset-name&gt;</code></li>
-       <li>Exemplo: <code>https://&lt;server&gt;/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png</code></li>
-      </ul> </li>
-    </ol> </td>
-   <td><p>Se os ativos de amostra ou a arte-final predefinida do visualizador não tiver sido sincronizada ou publicada, reinicie todo o processo de cópia/sincronização:</p>
-    <ol>
-     <li>Vá até <code>/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code>
-     </li>
-     <li>Selecione as seguintes ações em ordem:
-      <ol>
-       <li>Excluir pastas de sincronização.</li>
-       <li>Excluir pasta predefinida (abaixo) <code>/conf</code>).
-       <li>Acionar Tarefa Assíncrona de Configuração do DM.</li>
-      </ol> </li>
-     <li>Aguarde a notificação de sincronização bem-sucedida na Caixa de entrada do Experience Manager.
-     </li>
-    </ol> </td>
-  </tr>
- </tbody>
-</table>
+### Problema: As predefinições do visualizador não são publicadas {#viewers-not-published}
+
+**Como depurar**
+
+1. Vá para a página de diagnóstico do gerenciador de exemplo: `https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html`.
+1. Observe valores calculados. Ao operar corretamente, você verá o seguinte: `_DMSAMPLE status: 0 unsyced assets - activation not necessary _OOTB status: 0 unsyced assets - 0 unactivated assets`.
+
+   >[!NOTE]
+   >
+   >Pode levar cerca de 10 minutos após a configuração das configurações de nuvem do Dynamic Media para que os ativos do visualizador sejam sincronizados.
+
+1. Se os ativos não ativados permanecerem, selecione uma das opções **Listar todos os ativos não ativados** botões para ver detalhes.
+
+**Solução**
+
+1. Navegue até a lista predefinida do visualizador nas ferramentas administrativas: `https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html`
+1. Selecione todas as predefinições do visualizador e selecione **Publicar**.
+1. Navegue de volta ao gerenciador de amostra e observe que a contagem de ativos não ativados agora é zero.
+
+### Problema: A arte-final predefinida do visualizador retorna 404 da Visualização em detalhes do ativo ou Copiar URL/Incorporar código {#viewer-preset-404}
+
+**Como depurar**
+
+No CRXDE Lite, faça o seguinte:
+
+1. Navegar para `<sync-folder>/_CSS/_OOTB` na pasta de sincronização do Dynamic Media (por exemplo, `/content/dam/_CSS/_OOTB`).
+1. Encontre o nó de metadados do ativo problemático (por exemplo, `<sync-folder>/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/`).
+1. Verifique a presença de `dam:scene7*` propriedades. Se o ativo tiver sido sincronizado e publicado com êxito, você verá a variável `dam:scene7FileStatus` defina como **PublishComplete**.
+1. Tente solicitar a arte-final diretamente do Dynamic Media concatenando os valores das seguintes propriedades e literais de string:
+
+   * `dam:scene7Domain`
+   * `"is/content"`
+   * `dam:scene7Folder`
+   * `<asset-name>`
+Exemplo: 
+`https://<server>/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png`
+
+**Solução**
+
+Se os ativos de amostra ou a arte-final predefinida do visualizador não tiver sido sincronizada ou publicada, reinicie todo o processo de cópia/sincronização:
+
+1. Navegue até o CRXDE Lite.
+1. Excluir `<sync-folder>/_CSS/_OOTB`.
+1. Navegue até o Gerenciador de Pacotes do CRX: `https://localhost:4502/crx/packmgr/`.
+1. Procure o pacote do visualizador na lista; começa com `cq-dam-scene7-viewers-content`.
+1. Selecionar **Reinstalar**.
+1. Em Cloud Services, navegue até a página Configuração do Dynamic Media e abra a caixa de diálogo de configuração da sua configuração Dynamic Media - S7.
+1. Não fazer alterações, selecione **Salvar**.
+Essa ação de salvar aciona a lógica novamente para criar e sincronizar os ativos de amostra, o CSS predefinido do visualizador e a arte-final.
+
+### Problema: A Visualização de imagem não está sendo carregada na criação de predefinições do visualizador {#image-preview-not-loading}
+
+**Solução**
+
+1. No Experience Manager, selecione o logotipo do Experience Manager para acessar o console de navegação global e, em seguida, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > **[!UICONTROL CRXDE Lite]**.
+1. No painel à esquerda, navegue até a pasta de conteúdo de amostra no seguinte local:
+
+   `/content/dam/_DMSAMPLE`
+
+1. Exclua o `_DMSAMPLE` pasta.
+1. No painel à esquerda, navegue até a pasta de predefinições no seguinte local:
+
+   `/conf/global/settings/dam/dm/presets/viewer`
+
+1. Exclua o `viewer` pasta.
+1. Próximo ao canto superior esquerdo da página do CRXDE Lite, selecione **[!UICONTROL Salvar tudo]**.
+1. No canto superior esquerdo da página do CRXDE Lite, selecione o **Página inicial** ícone .
+1. Recrie um [Configuração do Dynamic Media no Cloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
