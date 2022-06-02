@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: b6c654f5456e1a7778b453837f04cbed32a82a77
+source-git-commit: 983f1b815fd213863ddbcd83ac7e3f076c57d761
 workflow-type: tm+mt
-source-wordcount: '1536'
+source-wordcount: '1716'
 ht-degree: 0%
 
 ---
@@ -16,13 +16,16 @@ ht-degree: 0%
 
 ![Integração de dados](do-not-localize/data-integeration.png)
 
-[!DNL Experience Manager Forms] A Integração de dados permite configurar e conectar-se a fontes de dados diferentes. Os seguintes tipos são suportados prontos para uso. No entanto, com pouca personalização, também é possível integrar outras fontes de dados.
+[!DNL Experience Manager Forms] A Integração de dados permite configurar e conectar-se a fontes de dados diferentes. Os seguintes tipos são suportados imediatamente:
 
 <!-- * Relational databases - MySQL, [!DNL Microsoft SQL Server], [!DNL IBM DB2], and [!DNL Oracle RDBMS] 
 * [!DNL Experience Manager] user profile  -->
 * Serviços Web RESTful
 * Serviços Web baseados em SOAP
-* Serviços OData
+* Serviços OData (Versão 4.0)
+* Microsoft Dynamics
+* SalesForce
+* Armazenamento de blobs do Microsoft Azure
 
 A integração de dados oferece suporte aos tipos de autenticação OAuth2.0, Basic Authentication e API Key prontos para uso e permite implementar autenticação personalizada para acessar serviços da Web. Enquanto os serviços RESTful, baseados em SOAP e OData são configurados em [!DNL Experience Manager] as a Cloud Service <!--, JDBC for relational databases --> e conector para [!DNL Experience Manager] o perfil de usuário é configurado em [!DNL Experience Manager] console da Web.
 
@@ -110,7 +113,7 @@ Para configurar a pasta das configurações do serviço de nuvem:
 
 ## Configurar serviços Web RESTful {#configure-restful-web-services}
 
-O serviço Web RESTful pode ser descrito usando [Especificações do Swagger](https://swagger.io/specification/) no formato JSON ou YAML em um [!DNL Swagger] arquivo de definição. Para configurar o serviço Web RESTful no [!DNL Experience Manager] as a Cloud Service, certifique-se de ter a variável [!DNL Swagger] no seu sistema de arquivos ou no URL onde o arquivo está hospedado.
+O serviço Web RESTful pode ser descrito usando [Especificações do Swagger](https://swagger.io/specification/v2/) no formato JSON ou YAML em um [!DNL Swagger] arquivo de definição. Para configurar o serviço Web RESTful no [!DNL Experience Manager] as a Cloud Service, certifique-se de ter a variável [!DNL Swagger] file ([Swagger versão 2.0](https://swagger.io/specification/v2/)) no sistema de arquivos ou no URL onde o arquivo está hospedado.
 
 Faça o seguinte para configurar os serviços RESTful:
 
@@ -139,6 +142,35 @@ Faça o seguinte para configurar os serviços RESTful:
 ### Modelo de dados de formulário Configuração do cliente HTTP para otimizar o desempenho {#fdm-http-client-configuration}
 
 [!DNL Experience Manager Forms] O modelo de dados de formulário ao integrar com os serviços Web RESTful como fonte de dados inclui configurações de cliente HTTP para otimização de desempenho.
+
+Defina as seguintes propriedades da variável **[!UICONTROL Modelo de dados de formulário Configuração do cliente HTTP para fonte de dados REST]** configuração para especificar a expressão regular:
+
+* Use o `http.connection.max.per.route` para definir o número máximo de conexões permitidas entre o modelo de dados de formulário e os serviços da Web RESTful. O valor padrão é 20 conexões.
+
+* Use o `http.connection.max` para especificar o número máximo de conexões permitidas para cada rota. O valor padrão é 40 conexões.
+
+* Use o `http.connection.keep.alive.duration` para especificar a duração, para a qual uma conexão HTTP persistente é mantida ativa. O valor padrão é de 15 segundos.
+
+* Use o `http.connection.timeout` para especificar a duração, para a qual a variável [!DNL Experience Manager Forms] O servidor aguarda uma conexão ser estabelecida. O valor padrão é de 10 segundos.
+
+* Use o `http.socket.timeout` para especificar o período máximo de tempo para inatividade entre dois pacotes de dados. O valor padrão é de 30 segundos.
+
+O seguinte arquivo JSON exibe uma amostra:
+
+```json
+{   
+   "http.connection.keep.alive.duration":"15",   
+   "http.connection.max.per.route":"20",   
+   "http.connection.timeout":"10",   
+   "http.socket.timeout":"30",   
+   "http.connection.idle.connection.timeout":"15",   
+   "http.connection.max":"40" 
+} 
+```
+
+Para definir valores de uma configuração, [Gerar configurações de OSGi usando o SDK AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart)e [implantar a configuração](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) para a instância do Cloud Service.
+
+
 Execute as seguintes etapas para configurar o cliente HTTP do modelo de dados de formulário:
 
 1. Faça logon em [!DNL Experience Manager Forms] Instância do autor como administrador e acesse [!DNL Experience Manager] pacotes do console da web. O URL padrão é [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
@@ -156,7 +188,6 @@ Execute as seguintes etapas para configurar o cliente HTTP do modelo de dados de
    * Especifique a duração, para a qual a variável [!DNL Experience Manager Forms] O servidor aguarda que uma conexão seja estabelecida no **[!UICONTROL Tempo limite da conexão]** campo. O valor padrão é de 10 segundos.
 
    * Especifique o período máximo de tempo para a inatividade entre dois pacotes de dados no **[!UICONTROL Tempo limite do soquete]** campo. O valor padrão é de 30 segundos.
-
 
 ## Configurar serviços Web SOAP {#configure-soap-web-services}
 

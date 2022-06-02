@@ -3,9 +3,9 @@ title: 'Perguntas frequentes as a Cloud Service da Forms '
 description: Perguntas frequentes as a Cloud Service da Forms
 contentOwner: khsingh
 exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: a5cd8a49a74eb8372d1d363ff859e1aef921859b
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '993'
 ht-degree: 2%
 
 ---
@@ -89,3 +89,7 @@ O Modelo de dados de formulário não fornece um método para usar certificados 
 
 * **Quais recursos não fazem parte da versão inicial do GA?**
 Portal Forms, [!DNL AEM Forms] aplicativos, integração com o Adobe Analytics e integração com o Adobe Target não fazem parte da versão inicial do GA. Procure notas de versão mensais para obter informações sobre novos recursos.
+
+* **Eu criei um [Esquema JSON para criar um formulário adaptável](adaptive-form-json-schema-form-model.md). O esquema JSON define eventos para alguns componentes de formulários adaptáveis. O AEM Forms as a Cloud Service é compatível com eventos?**
+Crie o Formulário adaptável com base no esquema JSON no ambiente Experience Manager 6.5 Forms e use o [Utilitário de migração](migrate-to-forms-as-a-cloud-service.md) para migrar o Adaptive Forms para o AEM Forms as a Cloud Service. O utilitário converte esses eventos em bibliotecas do cliente e você pode continuar usando o Adaptive Forms com eventos em um ambiente Cloud Service.
+

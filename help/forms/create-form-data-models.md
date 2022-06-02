@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: 1e2b58015453c194af02fdae62c3735727981da1
+source-git-commit: 1f3104d4a986018675f751afa04fe0ed3b7f5c26
 workflow-type: tm+mt
-source-wordcount: '1534'
+source-wordcount: '1531'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Verifique se você configurou as fontes de dados que pretende usar no Modelo de 
 
    * Especifique um nome para o modelo de dados de formulário.
    * (**Opcional**) Especifique o título, a descrição e as tags para o modelo de dados de formulário.
-   * (**Opcional e aplicável somente se as fontes de dados estiverem configuradas**) Toque no ícone de marca de verificação ao lado do **[!UICONTROL Configuração da Fonte de Dados]** e selecione o nó de configuração onde residem os serviços de nuvem das fontes de dados que você deseja usar. Ele restringe a lista de fontes de dados disponíveis para seleção na próxima página às disponíveis no nó de configuração selecionado. No entanto, qualquer banco de dados JDBC e [!DNL Experience Manager] as fontes de dados do perfil de usuário são listadas por padrão. Se você não selecionar um nó de configuração, as fontes de dados de todos os nós de configuração serão listadas.
+   * (**Opcional e aplicável somente se as fontes de dados estiverem configuradas**) Toque no ícone de marca de verificação ao lado do **[!UICONTROL Configuração da Fonte de Dados]** e selecione o nó de configuração onde residem os serviços de nuvem das fontes de dados que você deseja usar. Ele restringe a lista de fontes de dados disponíveis para seleção na próxima página às disponíveis no nó de configuração selecionado. No entanto, qualquer [!DNL Experience Manager] as fontes de dados do perfil de usuário são listadas por padrão. Se você não selecionar um nó de configuração, as fontes de dados de todos os nós de configuração serão listadas.
 
 1. Toque **[!UICONTROL Próximo]**.
 
