@@ -4,7 +4,7 @@ description: Saiba mais sobre predefinições de imagens e como criar, modificar
 feature: Image Presets,Viewers,Renditions
 role: User
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-source-git-commit: 77f1b744dabd72fc26d3b0607db9561e6cb7fa66
+source-git-commit: ca0385ee974c7b06725f687c0ef237880bb230ea
 workflow-type: tm+mt
 source-wordcount: '3629'
 ht-degree: 9%
@@ -236,7 +236,7 @@ Ao criar ou editar predefinições de imagens, você tem as opções descritas n
 
 * **[!UICONTROL Ativar nitidez simples]** - Não selecione **[!UICONTROL Ativar nitidez simples]** (este filtro de nitidez oferece menos controle do que as configurações Tirar nitidez da máscara).
 
-* **[!UICONTROL Nitidez: Modo de nova amostra]** - Selecionar **[!UICONTROL Bi-Cúbico]**.
+* **[!UICONTROL Nitidez: Modo de nova amostra]** - Selecionar **[!UICONTROL Sharp2]**.
 
 #### Opções básicas da guia {#basic-tab-options}
 
