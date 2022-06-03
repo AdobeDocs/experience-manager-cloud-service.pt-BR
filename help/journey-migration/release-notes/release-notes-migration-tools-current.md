@@ -2,7 +2,7 @@
 title: Notas de versão para Ferramentas de migração AEM versão as a Cloud Service 2022.6.0
 description: Notas de versão para Ferramentas de migração AEM versão as a Cloud Service 2022.6.0
 feature: Release Information
-source-git-commit: 717b2c851a18ef5171d64a462509ce08fb87a59c
+source-git-commit: 666635fc951ceb10e1a4a9a90a042d60da9f463a
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 5%
@@ -22,11 +22,8 @@ A data de lançamento do Analisador de práticas recomendadas v2.1.30 é 1º de 
 ### Novidades {#what-is-new-bpa}
 
 * Capacidade de detectar e relatar o uso de widgets de diálogo personalizados usando widgets de diálogo CoralUI e Classic. É recomendável converter widgets de diálogo clássico personalizados de ExtJS para CoralUI. Os widgets da caixa de diálogo Coral personalizado devem ser atualizados para CoralUI3.
-
 * Capacidade de detectar e gerar relatórios sobre o uso e a versão de Ativos Compartilham Commons. O Asset Share Commons 1.x não é compatível com AEM as a Cloud Service e deve ser atualizado para 2.x.
-
 * Capacidade de detectar e relatar o número de nós de versões.
-
 * Capacidade de detectar e relatar agentes de replicação personalizados ou agentes de replicação prontos para uso que foram modificados.
 
 ### Correções de erros {#bug-fixes-bpa}
