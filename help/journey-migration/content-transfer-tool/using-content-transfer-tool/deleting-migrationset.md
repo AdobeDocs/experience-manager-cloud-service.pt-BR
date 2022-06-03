@@ -2,25 +2,40 @@
 title: Exclusão de um conjunto de migração na ferramenta Transferência de conteúdo
 description: Exclusão de um conjunto de migração na ferramenta Transferência de conteúdo
 exl-id: 7ec1c5ca-bac7-4617-8068-78569d7cb503
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: b10fab405ae3afad36c727c91dd52ad3b8cee5f6
 workflow-type: tm+mt
-source-wordcount: '81'
-ht-degree: 39%
+source-wordcount: '230'
+ht-degree: 4%
 
 ---
 
 # Exclusão de um conjunto de migração {#delete-migration-set}
 
-Você pode excluir o conjunto de migração na página *Visão geral.*
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_delete_migrationset"
+>title="Exclusão de um conjunto de migração"
+>abstract="Saiba como excluir um conjunto de migração."
 
-## Etapas para excluir um conjunto de migração da ferramenta Transferência de conteúdo {#deleting-migration-set}
+Os conjuntos de migração podem ser excluídos do Cloud Acceleration Manager.
 
-Siga as etapas abaixo:
+## Etapas para excluir um conjunto de migração {#deleting-migration-set}
 
-1. Navegue até o **Transferência de conteúdo** , selecione o conjunto de migração que deseja excluir e clique em **Excluir** na barra de ações.
+Para excluir um conjunto de migração, siga as etapas abaixo:
+
+1. Navegue até a exibição da lista Conjunto de migração no Cloud Acceleration Manager e clique nos três pontos (**...**) ao lado do conjunto de migração que você deseja excluir. O **Excluir** deve estar visível, como mostrado abaixo.
 
    ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/migration-delete1.png)
 
-1. Clique em **Excluir** na caixa de diálogo **Excluir conjunto de migração** para confirmar a exclusão.
+1. Depois de clicar em **Excluir** você verá uma caixa de diálogo para confirmar a ação de exclusão.
 
    ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/migration-delete2.png)
+
+>[!NOTE]
+>
+>A exclusão de um conjunto de migração do Cloud Acceleration Manager (CAM) não o exclui da ferramenta Transferência de conteúdo. Depois que um conjunto de migração é excluído do CAM, o usuário não poderá executar extrações nesse conjunto de migração a partir do assistente de Transferência de conteúdo. No entanto, se o conjunto de migração foi excluído do assistente de Transferência de conteúdo, o usuário pode recriar enquanto o conjunto de migração ainda estiver disponível no Cloud Acceleration Manager.
+>
+>Para manter a ferramenta Transferência de conteúdo sincronizada com o Cloud Acceleration Manager, o usuário também pode excluir o conjunto de migração da ferramenta Transferência de conteúdo.
+
+Para excluir o conjunto de migração do assistente de Transferência de conteúdo, selecione o conjunto de migração e clique em **Excluir** na barra de ações.
+
+![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam27.png)

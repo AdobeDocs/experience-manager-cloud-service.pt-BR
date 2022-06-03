@@ -1,26 +1,21 @@
 ---
-title: Lidar com grandes repositórios de conteúdo
+title: Lidar com grandes repositórios de conteúdo (herdados)
 description: Esta seção descreve o tratamento de repositórios de conteúdo grande
-exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: be66d3e255d43156dfd181711d5a372f2c85f6d5
+hide: true
+hidefromtoc: true
+source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
 workflow-type: tm+mt
-source-wordcount: '1778'
-ht-degree: 2%
+source-wordcount: '1638'
+ht-degree: 1%
 
 ---
 
-# Lidar com grandes repositórios de conteúdo {#handling-large-content-repositories}
+# Lidar com grandes repositórios de conteúdo (herdados) {#handling-large-content-repositories}
 
 ## Visão geral {#overview}
 
->[!CONTEXTUALHELP]
->id="aemcloud_ctt_precopy"
->title="Lidar com grandes repositórios de conteúdo"
->abstract="Para acelerar significativamente as fases de extração e assimilação da atividade de transferência de conteúdo para mover o conteúdo para AEM as a Cloud Service, a CTT pode aproveitar o AzCopy como uma etapa opcional de pré-cópia. Depois que essa pré-etapa é configurada, na fase de extração, o AzCopy copia blobs do Amazon S3 ou do Armazenamento Azure Blob para o armazenamento de blobs do conjunto de migração. Na fase de assimilação, o AzCopy copia blobs do armazenamento de blobs do conjunto de migração para o destino AEM armazenamento de blobs as a Cloud Service."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#setting-up-pre-copy-step" text="Introdução ao AzCopy como uma etapa de pré-cópia"
-
 A cópia de um grande número de blobs com a ferramenta Transferência de conteúdo (CTT) pode levar vários dias.
-Para acelerar significativamente as fases de extração e assimilação da atividade de transferência de conteúdo para mover o conteúdo para AEM as a Cloud Service, a CTT pode aproveitar [AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) como uma etapa opcional de pré-cópia. Essa etapa de pré-cópia pode ser usada quando a instância de AEM de origem está configurada para usar um armazenamento de dados Amazon S3, Armazenamento de dados Azure Blob ou Armazenamento de dados de arquivo. A etapa de pré-cópia é mais eficaz para a primeira extração e ingestão completas. No entanto, não é recomendado usar a pré-cópia para atualizações adicionais subsequentes (se o tamanho adicional for menor que 200 GB), pois isso pode adicionar tempo a todo o processo. Depois que essa pré-etapa é configurada, na fase de extração, o AzCopy copia blobs do Amazon S3, do Armazenamento Azure Blob ou do Armazenamento de dados do Arquivo para o armazenamento de blobs do conjunto de migração. Na fase de assimilação, o AzCopy copia blobs do armazenamento de blobs do conjunto de migração para o destino AEM armazenamento de blobs as a Cloud Service.
+Para acelerar significativamente as fases de extração e assimilação da atividade de transferência de conteúdo para mover o conteúdo para AEM as a Cloud Service, a CTT pode aproveitar [AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) como uma etapa opcional de pré-cópia. Essa etapa de pré-cópia pode ser usada quando a instância de AEM de origem está configurada para usar um armazenamento de dados Amazon S3, Armazenamento de dados Azure Blob ou Armazenamento de dados de arquivo. Depois que essa pré-etapa é configurada, na fase de extração, o AzCopy copia blobs do Amazon S3, do Armazenamento Azure Blob ou do Armazenamento de dados do Arquivo para o armazenamento de blobs do conjunto de migração. Na fase de assimilação, o AzCopy copia blobs do armazenamento de blobs do conjunto de migração para o destino AEM armazenamento de blobs as a Cloud Service.
 
 >[!NOTE]
 > Essa funcionalidade foi introduzida na versão 1.5.4 do CTT.

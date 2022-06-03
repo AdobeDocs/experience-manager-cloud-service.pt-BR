@@ -1,15 +1,16 @@
 ---
-title: Validar transferências de conteúdo
+title: Validação de transferências de conteúdo (herdado)
 description: Use a ferramenta Transferência de conteúdo para validar transferências de conteúdo
-exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: b88277cda730d9499c7e2750026b6f415c2a8d0e
+hide: true
+hidefromtoc: true
+source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
 workflow-type: tm+mt
-source-wordcount: '883'
-ht-degree: 2%
+source-wordcount: '950'
+ht-degree: 1%
 
 ---
 
-# Validar transferências de conteúdo {#validating-content-transfers}
+# Validação de transferências de conteúdo (herdado) {#validating-content-transfers}
 
 ## Introdução {#getting-started}
 
@@ -44,11 +45,11 @@ Para obter uma ilustração gráfica, consulte os exemplos abaixo:
 
 * **Extração (Substituir)**
 
-   ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/validation-01.png)
+   ![imagem](/help/journey-migration/content-transfer-tool/assets/CTTextractionoverwrite.png)
 
 * **Assimilação (Varrer)**
 
-   ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/validation-02.png)
+   ![imagem](/help/journey-migration/content-transfer-tool/assets/CTTingestionwipe.png)
 
 * **Notas**
 
@@ -58,11 +59,11 @@ Para obter uma ilustração gráfica, consulte os exemplos abaixo:
 
 * **Extração**
 
-   ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/validation-03.png)
+   ![imagem](/help/journey-migration/content-transfer-tool/assets/CTTextraction.png)
 
 * **Assimilação**
 
-   ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/validation-04.png)
+   ![imagem](/help/journey-migration/content-transfer-tool/assets/CTTingestion.png)
 
 * **Notas**
 
@@ -127,10 +128,22 @@ Migration validation took 0 minutes
 
 O exemplo de falha acima foi obtido executando uma assimilação e, em seguida, executando novamente a mesma assimilação com a Varrer desativada, de modo que nenhum nó foi envolvido durante a assimilação — tudo já estava presente no destino.
 
-Além de ser incluído no log de assimilação, o relatório de validação também pode ser acessado do **Trabalhos de assimilação** interface do usuário no Cloud Acceleration Manager. Para fazer isso, clique nos três pontos (**...**) e clique em **Relatório de validação** na lista suspensa para exibir o relatório de validação.
+Além de ser incluído no log de assimilação, o relatório de validação também pode ser acessado na interface do usuário da ferramenta Transferência de conteúdo . Para fazer isso, selecione um conjunto de migração e clique no botão **Validar** na barra de ações:
 
 
-![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
+![imagem](/help/journey-migration/content-transfer-tool/assets/CTTvalidatebutton.png)
+
+A caixa de diálogo Logs de validação será aberta:
+
+![imagem](/help/journey-migration/content-transfer-tool/assets/CTTvalidationlogs.png)
+
+Use o **Relatório de publicação/autor de validação** para exibir o relatório de validação para a assimilação mais recente em um determinado nível do ambiente de destino. Veja abaixo um exemplo de uma pequena assimilação de publicação:
+
+![imagem](/help/journey-migration/content-transfer-tool/assets/CTTvalidationreport.png)
+
+>[!NOTE]
+>
+>O **Relatório de publicação/autor de validação** será exibido assim que a assimilação for concluída. Além disso, os relatórios de validação são persistentes, portanto, não expiram após a conclusão da assimilação, como os logs de assimilação fazem.
 
 ## Resolução de problemas {#troubleshooting}
 

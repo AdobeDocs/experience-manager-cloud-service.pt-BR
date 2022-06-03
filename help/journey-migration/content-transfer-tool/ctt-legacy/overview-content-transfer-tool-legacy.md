@@ -1,46 +1,20 @@
 ---
-title: Visão geral da ferramenta Transferência de conteúdo
+title: Visão geral da ferramenta Transferência de conteúdo (herdada)
 description: Visão geral da ferramenta Transferência de conteúdo
-exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: ab63e9af7b52429fea1e2b2981effc1356f0787f
+hide: true
+hidefromtoc: true
+source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 43%
+source-wordcount: '476'
+ht-degree: 62%
 
 ---
 
-# Visão geral {#overview-content-transfer-tool}
-
-
->[!CONTEXTUALHELP]
->id="aemcloud_ctt_overview"
->title="Visão geral"
->abstract="A ferramenta Transferência de conteúdo é uma ferramenta desenvolvida pelo Adobe que pode ser usada para mover o conteúdo existente de uma instância de origem AEM (no local ou AMS) para a instância de destino do AEM Cloud Service. Essa ferramenta também transfere entidades principais (usuários ou grupos) automaticamente."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en" text="Diretrizes e práticas recomendadas"
-
-<!-- Alexandru: Old version of contextual help, keep for failover/debugging
->[!CONTEXTUALHELP]
->id="aemcloud_ctt_overview"
->title="Overview"
->abstract="Content Transfer Tool is a tool developed by Adobe that can be used to move existing content over from a source AEM instance (on-premise or AMS) to the target AEM Cloud Service instance. This tool also transfers principals (users or groups) automatically."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#extraction-process" text="Extraction Process"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#ingestion-process" text="Ingestion Process" -->
+# Visão geral da ferramenta Transferência de conteúdo (herdada) {#overview-content-transfer-tool}
 
 A ferramenta Transferência de conteúdo é uma ferramenta desenvolvida pela Adobe que pode ser usada para mover o conteúdo existente de uma instância do AEM de origem (no local ou AMS) para a instância de destino do AEM Cloud Service.
 
 Essa ferramenta também transfere entidades principais (usuários ou grupos) automaticamente.
-
-Uma nova versão da ferramenta Transferência de conteúdo está disponível e integra o processo de transferência de conteúdo ao Cloud Acceleration Manager. É altamente recomendável mudar para essa nova versão para aproveitar todos os benefícios que ela oferece:
-
-* Maneira de autoatendimento de extrair um conjunto de migração uma vez e assimilá-lo em vários ambientes em paralelo
-* Melhoria na experiência do usuário por meio de melhores estados de carregamento, medidas de proteção e tratamento de erros
-* Os logs de assimilação são mantidos e sempre estão disponíveis para solução de problemas
-
-Para começar a usar a nova versão (Vxx) <!-- update when version is available --> será necessário desinstalar as versões mais antigas da ferramenta Transferência de conteúdo, pois houve uma mudança importante na arquitetura da ferramenta.
-
->[!NOTE]
->
-> Para situações em que uma migração já está em andamento, você pode continuar usando a versão anterior da CTT até que a migração seja concluída. Para obter a documentação relacionada à versão anterior da CTT, consulte o [documentação herdada](/help/journey-migration/content-transfer-tool/ctt-legacy/overview-content-transfer-tool-legacy.md).
 
 ## Fases na ferramenta Transferência de conteúdo {#phases-content-transfer-tool}
 
@@ -61,8 +35,11 @@ Existem duas fases associadas à transferência de conteúdo:
 
 Um conjunto de migração possui os seguintes atributos:
 
-* Com a nova versão, você pode criar no máximo cinco conjuntos de migração em um projeto criado no Cloud Acceleration Manager.
+* No máximo dez conjuntos de migração podem ser criados e mantidos por vez durante a atividade de transferência de conteúdo.
 * Cada conjunto de migração deve ter um nome exclusivo.
+* Se um conjunto de migração estiver inativo por mais de 30 dias, ele será excluído automaticamente.
+* Sempre que você cria um conjunto de migração, ele é associado a um ambiente específico. Você só pode assimilar em um autor ou uma instância de publicação do mesmo ambiente.
+
 
 A ferramenta Transferência de conteúdo tem um recurso que oferece suporte a atualizações complementares de conteúdo diferencial, com o qual é possível transferir somente as alterações feitas desde a atividade de transferência de conteúdo anterior.
 

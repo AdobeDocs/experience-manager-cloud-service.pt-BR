@@ -2,10 +2,10 @@
 title: Visualização de logs para um conjunto de migração na ferramenta Transferência de conteúdo
 description: Visualização de logs para um conjunto de migração na ferramenta Transferência de conteúdo
 exl-id: aed1ac83-a2fb-425e-aca4-39cd0bb42fd3
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 9a098eefbb730ae2930169cf7402ab4799043291
 workflow-type: tm+mt
-source-wordcount: '236'
-ht-degree: 52%
+source-wordcount: '238'
+ht-degree: 12%
 
 ---
 
@@ -23,20 +23,17 @@ Após a conclusão de cada etapa (extração e assimilação), verifique os logs
 
 ## Etapas para visualizar logs {#viewing-logs}
 
-Você pode visualizar logs de um conjunto de migração existente na página *Visão geral*.
-Siga as etapas abaixo:
+Para exibir os Logs de extração, vá para a instância do Adobe Experience Manager de origem e selecione o conjunto de migração desejado.
 
-1. Navegue até a página *Visão geral*, selecione o conjunto de migração que você deseja excluir e clique em **Exibir log** na barra de ações.
+Em seguida, siga as etapas abaixo:
 
-   ![imagem](/help/journey-migration/content-transfer-tool/assets/view-log1.png)
+1. Selecione um conjunto de migração e clique em **Exibir registro** na barra de ações. Isso exibirá a caixa de diálogo Logs . Clique em **Log de extração** para exibir os logs em uma nova guia.
 
-1. A caixa de diálogo **Logs** é exibida. Clique em **Logs de extração** para visualizar os logs em uma nova guia.
-
-   ![imagem](/help/journey-migration/content-transfer-tool/assets/view-log2.png)
-Ou,
-
-   Você também pode visualizar logs para o seu conjunto de migração na tela *Visão geral*. Selecione o conjunto de migração e clique no status do campo **EXTRAÇÃO**. Nesse caso, clique em **CONCLUÍDO** para visualizar os logs em uma nova guia.
-
-   ![imagem](/help/journey-migration/content-transfer-tool/assets/view-log3.png)
+   ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam25.png) \
+   Ou clique no botão **CONCLUÍDO** status para exibir logs em uma nova guia.
 
 1. Para rastrear os logs sem usar a interface do usuário, você pode aplicar SSH ao ambiente do AEM de origem e rastrear o conteúdo do `crx-quickstart/cloud-migration/extraction-XXXXX/output.log file`.
+
+1. Para exibir os logs de Assimilação, vá para a lista Tarefas de Assimilação no Cloud Acceleration Manager e clique nos três pontos (**...**). Você pode clicar em **Baixar log** para baixar logs.
+
+   ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam28.png)

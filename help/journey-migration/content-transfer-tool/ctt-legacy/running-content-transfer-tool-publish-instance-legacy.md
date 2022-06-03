@@ -1,15 +1,16 @@
 ---
-title: Execução da ferramenta Transferência de conteúdo em uma instância de publicação
+title: Execução da ferramenta Transferência de conteúdo em uma instância de publicação (herdada)
 description: Execução da ferramenta Transferência de conteúdo em uma instância de publicação
-exl-id: 01faab94-a939-4004-b094-e9eb8f67b96e
+hide: true
+hidefromtoc: true
 source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 11%
+source-wordcount: '272'
+ht-degree: 4%
 
 ---
 
-# Execução da ferramenta Transferência de conteúdo em uma instância de publicação {#run-content-transfer-tool-publish-instance}
+# Execução da ferramenta Transferência de conteúdo em uma instância de publicação (herdada) {#run-content-transfer-tool-publish-instance}
 
 ## Introdução {#introduction}
 
@@ -25,6 +26,8 @@ Siga a abordagem recomendada conforme descrito abaixo:
 * Use a mesma versão da ferramenta Transferência de conteúdo que foi usada na instância do autor.
 
 * Somente um único nó de publicação precisa ser migrado. Ele deve ser removido do balanceador de carga antes de iniciar a extração.
+
+* Ao criar o conjunto de migração, use o URL do autor AEM ambiente as a Cloud Service.
 
 * Durante a assimilação para publicar, o nível de publicação não será reduzido (diferente do autor).
 

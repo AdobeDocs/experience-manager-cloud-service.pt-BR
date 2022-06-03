@@ -2,10 +2,10 @@
 title: Introdução à ferramenta Transferência de conteúdo
 description: Introdução à ferramenta Transferência de conteúdo
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f84806c1579f8ef163dd9454fcae4a57bf22a452
 workflow-type: tm+mt
-source-wordcount: '1069'
-ht-degree: 24%
+source-wordcount: '1242'
+ht-degree: 9%
 
 ---
 
@@ -27,6 +27,10 @@ A ferramenta Transferência de conteúdo pode ser baixada como um arquivo zip no
 >Baixe a ferramenta Transferência de conteúdo no [Portal de distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
 
 ## Conectividade do ambiente de origem {#source-environment-connectivity}
+
+>[!NOTE]
+>
+>Um erro de conexão também pode ocorrer se um conjunto de migração tiver sido excluído do Cloud Acceleration Manager.
 
 A instância de AEM de origem pode estar em execução atrás de um firewall em que só pode alcançar determinados hosts que foram adicionados a uma Lista de permissões. Para executar com êxito uma extração, os seguintes endpoints precisarão ser acessíveis da instância que está executando AEM:
 
@@ -51,83 +55,104 @@ Para testar a conectividade com o ambiente de destino AEM as a Cloud Service, em
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=en#migration" text="Tutorial - Uso da ferramenta Transferência de conteúdo"
 
 >[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on)
+<!-- Need to remove the video -->
 
+A seção a seguir se aplica à nova versão da ferramenta Transferência de conteúdo. Siga esta seção para saber como usar a ferramenta Transferência de conteúdo para migrar o conteúdo para AEM as a Cloud Service:
 
-Siga esta seção para saber como usar a ferramenta Transferência de conteúdo para migrar o conteúdo para o AEM as a Cloud Service (Autor/Publicação):
+### Fase de configuração da extração {#extraction-setup-phase}
 
-1. Selecione o Adobe Experience Manager e navegue até as ferramentas -> **Operações** -> **Migração de conteúdo**.
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_extraction_setup"
+>title="Fase de configuração da extração"
+>abstract="Saiba como criar um conjunto de migração e copiar a chave de extração."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=en#migration" text="Tutorial - Uso da ferramenta Transferência de conteúdo"
 
-   ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/ctt01.png)
+<!-- Contextualhelp id "aemcloud_ctt_extraction_setup" needs to be added here -->
 
-1. Selecione o **Transferência de conteúdo** opção de **Migração de conteúdo** assistente.
+1. Efetue logon no Cloud Acceleration Manager (CAM) e clique no projeto CAM criado anteriormente para avaliar sua prontidão para se mover AEM as a Cloud Service. Se você não criou um projeto CAM, consulte Criação e gerenciamento de um projeto no CAM.
 
-   ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/ctt02.png)
+1. Clique no botão **Transferência de conteúdo** cartão. Isso o levará à exibição da Lista do conjunto de migração.
 
+   ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam1.png)
 
-1. O console abaixo é exibido ao criar o primeiro conjunto de migração. Clique em **Criar conjunto de migração** para criar um novo conjunto de migração.
-
-   ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/ctt03.png)
+1. Criar um conjunto de migração clicando em **Criar conjunto de migração**.
 
    >[!NOTE]
-   >Se você tiver conjuntos de migração existentes, o console exibirá a lista de conjuntos de migração existentes com seu status atual.
+   >
+   >É possível criar no máximo cinco conjuntos de migração por projeto no Cloud Acceleration Manager.
 
+   ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam2.png)
 
-1. Preencha os campos em **Criar conjunto de migração** conforme descrito abaixo.
+   ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
 
-   ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/ctt04.png)
+1. Agora você deve ver sua lista de migração na exibição de lista. Clique no símbolo de três pontos (**...**) para abrir a lista suspensa e clicar em **Chave de extração de cópia**. Essa tecla será necessária durante a fase de Extração. Copie essa chave de Extração.
 
-   1. **Nome**: insira o nome do conjunto de migração.
+   >[!NOTE]
+   >
+   >A chave de extração permite que seu ambiente de AEM de origem se conecte com segurança ao conjunto de migração. Por favor, trate essa chave com o mesmo cuidado que você faria com uma senha e nunca a compartilhe por um meio inseguro como email.
+
+   ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam4.png)
+
+### Preencher o conjunto de migração {#populating-the-migration-set}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_populate_migrationset"
+>title="Preencher conjunto de migração&quot; abstract=&quot;Depois de criar um conjunto de migração, ele precisa ser preenchido com o conteúdo da instância de origem que precisa ser movido para o ambiente as a Cloud Service AEM. Para fazer isso, a ferramenta Transferência de conteúdo precisa ser instalada na instância de origem."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html" text="Extrair conteúdo"
+
+Para preencher o conjunto de migração criado no Cloud Acceleration Manager, é necessário instalar a versão mais recente da ferramenta Transferência de conteúdo na instância de origem do Adobe Experience Manager (AEM). Siga esta seção para saber como preencher o conjunto de migração.
+
+1. Depois de instalar a versão mais recente (Vxxx) da ferramenta Transferência de conteúdo na instância de origem do Adobe Experience Manager, acesse **Operações - Migração de conteúdo**
+
+1. Clique em **Criar conjunto de migração**
+
+   ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam5.png)
+
+1. Cole a chave de extração que foi copiada do CAM anteriormente no campo de entrada da chave de Extração de **Criar conjunto de migração** formulário. Depois disso, os campos Nome do conjunto de migração e Nome do projeto do Cloud Acceleration Manager (CAM) serão automaticamente preenchidos. Eles devem corresponder ao nome do Conjunto de migração no CAM e ao nome do projeto CAM que você criou. Agora é possível adicionar caminhos de conteúdo. Depois de adicionar caminhos de conteúdo, você poderá salvar o conjunto de migração. Você pode executar a extração com versões incluídas ou excluídas.
+
+   >[!NOTE]
+   >
+   >Certifique-se de que a chave de extração seja válida e não esteja próxima da expiração. Você pode obter essas informações na **Criar conjunto de migração** depois de colar a chave de extração. Se você receber um erro de conexão, consulte [Conectividade do ambiente de origem](#source-environment-connectivity) para obter mais informações.
+
+   ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam6.png)
+
+1. Em seguida, selecione os seguintes Parâmetros para criar um Conjunto de Migração:
+
+   1. **Incluir versão**: selecione conforme necessário. Quando as versões são incluídas, o caminho `/var/audit` é incluído automaticamente para migrar eventos de auditoria.
+
+      ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam7.png)
+
       >[!NOTE]
-      >Nenhum caractere especial é permitido para o nome do conjunto de migração.
-
-   1. **Configuração do Cloud Service**: insira a URL do autor do AEM as a Cloud Service.
-
-      >[!NOTE]
-      >Você pode criar e manter no máximo dez conjuntos de migração por vez durante a atividade de transferência de conteúdo.
-      >Além disso, é necessário criar uma migração separadamente para cada um dos ambientes específicos - *Preparação*, *Desenvolvimento* ou *Produção*.
-
-   1. **Token de acesso**: insira o token de acesso.
-
-      >[!NOTE]
-      >Você pode recuperar o token de acesso usando o **Abrir token de acesso** botão. Você precisa garantir que pertença ao grupo &quot;Administradores&quot; na instância do Cloud Service de destino.
-
-   1. **Parâmetros**: selecione os seguintes parâmetros para criar o conjunto de migração:
-
-      1. **Incluir versão**: selecione conforme necessário. Quando as versões são incluídas, o caminho `/var/audit` é incluído automaticamente para migrar eventos de auditoria.
-
-         ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/ctt05.png)
-
-         >[!NOTE]
-         >Se você pretende incluir versões como parte de um conjunto de migração e estiver executando atualizações adicionais com `wipe=false`, você deve desativar a limpeza de versão devido a uma limitação atual na ferramenta Transferência de conteúdo. Se você preferir manter a limpeza de versão ativada e estiver executando os upups em um conjunto de migração, você deverá executar a assimilação como `wipe=true`.
+      >Se você pretende incluir versões como parte de um conjunto de migração e estiver executando atualizações adicionais com `wipe=false`, você deve desativar a limpeza de versão devido a uma limitação atual na ferramenta Transferência de conteúdo. Se você preferir manter a limpeza de versão ativada e estiver executando os upups em um conjunto de migração, você deverá executar a assimilação como `wipe=true`.
 
 
-      1. **Caminhos a serem incluídos**: use o navegador de caminhos para selecionar os caminhos que precisam ser migrados. O seletor de caminho aceita entrada digitando ou por seleção.
+   1. **Caminhos a serem incluídos**: use o navegador de caminhos para selecionar os caminhos que precisam ser migrados. O seletor de caminho aceita entrada digitando ou por seleção.
 
-         >[!IMPORTANT]
-         >Os seguintes caminhos estão restritos ao criar um conjunto de migração:
-         >* `/apps`
-         >* `/libs`
-         >* `/home`
-         >* `/etc` (alguns `/etc` caminhos podem ser selecionados em CTT)
+      >[!IMPORTANT]
+      >Os seguintes caminhos estão restritos ao criar um conjunto de migração:
+      >* `/apps`
+      >* `/libs`
+      >* `/home`
+      >* `/etc` (alguns `/etc` caminhos podem ser selecionados em CTT)
 
 
 1. Clique em **Salvar** depois de preencher todos os campos no **Criar conjunto de migração** tela de detalhes.
 
-1. Você visualizará seu conjunto de migração no **Transferência de conteúdo** como mostrado na figura abaixo.
+<!-- 1. You will view your migration set in the **Content Transfer** wizard, as shown in the figure below.
 
-   ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/ctt07.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt07.png)
 
-   Todos os conjuntos de migração existentes são exibidos na **Transferência de conteúdo** com seu status atual e informações de status. Você pode ver alguns desses ícones descritos abaixo.
+   All the existing migration sets are displayed on the **Content Transfer** wizard with their current status and status information. You may see some of these icons described below.
 
-   * Uma *nuvem vermelha* indica que não é possível concluir o processo de extração.
-   * A *nuvem verde* indica que você pode concluir o processo de extração.
-   * Um *ícone amarelo* indica que você não criou o conjunto de migração existente e o específico é criado por algum outro usuário na mesma instância.
+   * A *red cloud* indicates that you cannot complete the extraction process.
+   * A *green cloud* indicates that you can complete the extraction process.
+   * A *yellow icon* indicates that you did not create the existing migration set and the specific one is created by some other user in the same instance.
 
-1. Selecione um conjunto de migração e clique em **Propriedades** para exibir ou editar as propriedades do conjunto de migração. Ao editar propriedades, não é possível alterar a variável **Nome do conjunto de migração** ou **URL de serviço**.
+1. Select a migration set and click on **Properties** to view or edit the migration set properties. While editing properties, it is not possible to change the **Migration Set name** or the **Service URL**. 
 
-   ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/ctt06.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt06.png) -->
 
-### Determinando o tamanho e o espaço em disco do conjunto de migração {#migration-set-size}
+### Determinar o tamanho do conjunto de migração {#migration-set-size}
 
 Depois de criar um conjunto de migração, é altamente recomendável executar uma verificação de tamanho no conjunto de migração antes de iniciar um processo de Extração.
 Ao executar uma verificação de tamanho no conjunto de migração, você poderá:
@@ -138,32 +163,27 @@ Siga as etapas abaixo para executar uma verificação de tamanho:
 
 1. Selecione um conjunto de migração e clique em **Verificar tamanho**.
 
-   ![imagem](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image1.png)
+   ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam8.png)
 
 1. Isso abrirá o **Verificar tamanho** caixa de diálogo.
 
-   ![imagem](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image2.png)
+   ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam9.png)
 
 1. Clique em **Verificar tamanho** para iniciar o processo. Em seguida, você retornará à exibição de lista do conjunto de migração e verá uma mensagem indicando que **Verificar tamanho** está em execução.
 
-   ![imagem](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image3.png)
+   ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam10.png)
 
+1. Uma vez **Verificar tamanho** o processo estiver concluído, o status será alterado para **CONCLUÍDO**. Selecione o mesmo conjunto de migração e clique em **Verificar tamanho** para visualizar os resultados. Veja abaixo um exemplo de **Verificar tamanho** resulta sem avisos.
 
-1. Uma vez **Verificar tamanho** o processo estiver concluído, o status será alterado para **CONCLUÍDO**. Selecione o mesmo conjunto de migração e clique em **Verificar tamanho** para visualizar os resultados.
-
-   ![imagem](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image4.png)
-
-   Veja abaixo um exemplo de **Verificar tamanho** resulta sem avisos.
-
-   ![imagem](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image5.png)
+   ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam11.png)
 
 1. Se a variável **Verificar tamanho** os resultados indicam que há espaço em disco insuficiente e/ou que o conjunto de migração excede os limites do produto, **AVISO** será exibido.
 
-![imagem](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image6.png)
-
-Veja abaixo um exemplo de **Verificar tamanho** resulta com avisos.
-
-![imagem](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image7.png)
+<!--   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image6.png)
+   
+   Below is an example of **Check Size** results with warnings.
+ 
+   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image7.png) -->
 
 
 ## O que vem a seguir {#whats-next}
