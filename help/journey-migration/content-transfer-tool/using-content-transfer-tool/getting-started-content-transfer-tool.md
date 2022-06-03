@@ -2,7 +2,7 @@
 title: Introdução à ferramenta Transferência de conteúdo
 description: Introdução à ferramenta Transferência de conteúdo
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: f84806c1579f8ef163dd9454fcae4a57bf22a452
+source-git-commit: e7e3ec89d5e7b43b8c6dfb10f5dc966768ab0af1
 workflow-type: tm+mt
 source-wordcount: '1242'
 ht-degree: 9%
@@ -102,7 +102,7 @@ A seção a seguir se aplica à nova versão da ferramenta Transferência de con
 
 Para preencher o conjunto de migração criado no Cloud Acceleration Manager, é necessário instalar a versão mais recente da ferramenta Transferência de conteúdo na instância de origem do Adobe Experience Manager (AEM). Siga esta seção para saber como preencher o conjunto de migração.
 
-1. Depois de instalar a versão mais recente (Vxxx) da ferramenta Transferência de conteúdo na instância de origem do Adobe Experience Manager, acesse **Operações - Migração de conteúdo**
+1. Depois de instalar a versão mais recente (v2.0.10) da ferramenta Transferência de conteúdo na instância de origem do Adobe Experience Manager, acesse **Operações - Migração de conteúdo**
 
 1. Clique em **Criar conjunto de migração**
 

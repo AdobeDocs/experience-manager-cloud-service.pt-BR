@@ -2,7 +2,7 @@
 title: Diretrizes e práticas recomendadas para usar a ferramenta Transferência de conteúdo
 description: Diretrizes e práticas recomendadas para usar a ferramenta Transferência de conteúdo
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: 9ee931223c3600643fbaeefd790f5f23827da367
+source-git-commit: 98b81d918d60722ddb3f1c7736bc5b3506e05f6f
 workflow-type: tm+mt
 source-wordcount: '1654'
 ht-degree: 21%
@@ -26,7 +26,7 @@ Uma nova versão da ferramenta Transferência de conteúdo está disponível e i
 * Melhoria na experiência do usuário por meio de melhores estados de carregamento, medidas de proteção e tratamento de erros
 * Os logs de assimilação são mantidos e sempre estão disponíveis para solução de problemas
 
-Para começar a usar a nova versão (Vxx), será necessário desinstalar versões mais antigas da ferramenta Transferência de conteúdo. Isso é necessário porque a nova versão traz uma grande mudança arquitetônica. Com o Vxx, será necessário criar novos conjuntos de migração e executar novamente a extração e a assimilação nos novos conjuntos de migração. Se uma migração já estiver em andamento, você poderá continuar usando a versão anterior da CTT até que a migração seja concluída.
+Para começar a usar a nova versão (v2.0.10), será necessário desinstalar as versões mais antigas da ferramenta Transferência de conteúdo. Isso é necessário porque a nova versão traz uma grande mudança arquitetônica. Com a versão 2.0.10, será necessário criar novos conjuntos de migração e executar novamente a extração e a assimilação nos novos conjuntos de migração. Se uma migração já estiver em andamento, você poderá continuar usando a versão anterior da CTT até que a migração seja concluída.
 
 As diretrizes e práticas recomendadas a seguir se aplicam à nova versão da ferramenta Transferência de conteúdo:
 
