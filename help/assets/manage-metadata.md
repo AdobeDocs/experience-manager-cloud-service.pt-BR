@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Asset Management,Metadata
 role: User,Architect,Admin
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
-source-git-commit: 4eb2beeb97d2aa2aed4af869897db470b732fd1f
+source-git-commit: 20d54ccdd116c3dbede8fb20f7169a17a223f7a1
 workflow-type: tm+mt
-source-wordcount: '1867'
-ht-degree: 3%
+source-wordcount: '1953'
+ht-degree: 7%
 
 ---
 
@@ -33,7 +33,7 @@ Metadados é a coleção de todos os dados disponíveis para um ativo, mas que n
 * Nome da pasta na qual ele está contido.
 * Ativos relacionados ou tags aplicadas.
 
-Estas são as propriedades básicas de metadados que [!DNL Experience Manager] O pode gerenciar para ativos, o que permite que os usuários vejam todos os ativos. Por exemplo, solicitar ativos pela última data de modificação é útil ao tentar descobrir ativos adicionados recentemente.
+Estas são as propriedades básicas de metadados que [!DNL Experience Manager] O pode gerenciar para ativos, o que permite que os usuários vejam todos os ativos. Por exemplo, solicitar ativos por data de última modificação é útil ao tentar descobrir ativos adicionados ou modificados recentemente.
 
 Você pode adicionar mais dados de alto nível aos ativos digitais, por exemplo:
 
@@ -47,9 +47,9 @@ Mais metadados ajudam a categorizar ativos e são úteis à medida que a quantid
 
 Com a adição de metadados, o valor de um ativo digital cresce, porque o ativo se torna,
 
-* Mais acessível - os sistemas e usuários podem encontrá-lo facilmente.
-* Mais fácil de gerenciar: é possível encontrar ativos com o mesmo conjunto de propriedades mais facilmente e aplicar alterações a eles.
-* Concluído - o ativo carrega mais informações e contexto com mais metadados.
+* Mais acessível — os sistemas e usuários podem encontrá-lo facilmente.
+* Mais fácil de gerenciar — é possível encontrar ativos com o mesmo conjunto de propriedades mais facilmente e realizar alterações neles.
+* Completo — o ativo carrega mais informações e contexto com mais metadados.
 
 Por estas razões, [!DNL Assets] O fornece o meio certo para criar, gerenciar e trocar metadados para seus ativos digitais.
 
@@ -67,6 +67,21 @@ Os metadados técnicos são úteis para aplicativos de software que lidam com at
 Os metadados descritivos são metadados relacionados ao domínio do aplicativo, por exemplo, o negócio de onde um ativo vem. Metadados descritivos não podem ser determinados automaticamente. Ele é criado manual ou semiautomaticamente. Por exemplo, uma câmera ativada por GPS pode rastrear automaticamente a latitude e a longitude e adicionar geotag à imagem.
 
 O custo de criar manualmente informações de metadados descritivos é alto. Assim, os padrões são estabelecidos para facilitar a troca de metadados entre sistemas e organizações de software. [!DNL Experience Manager Assets] O suporta todas as normas relevantes para a gestão de metadados.
+
+## Metadados e última modificação {#last-modification}
+
+A última data modificada de um ativo reflete a última vez que o arquivo original de um ativo é modificado. Como resultado, a data de modificação e o usuário só são alterados quando:
+
+* Uma nova versão do ativo é carregada
+* Um ativo é reprocessado
+
+A última data de modificação e o usuário não muda:
+
+* Quando um ativo é movido ou renomeado
+* Quando um ativo é finalizado, há check-in ou versão
+* Quando um ativo é publicado ou não
+* Em atualizações de metadados
+* Atualizações de referência ou coleção
 
 ## Padrões de codificação {#encoding-standards}
 
