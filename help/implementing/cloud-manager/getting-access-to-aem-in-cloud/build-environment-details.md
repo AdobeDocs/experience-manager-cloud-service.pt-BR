@@ -2,9 +2,9 @@
 title: Ambiente de criação
 description: Saiba mais sobre o ambiente de criação do Cloud Manager e como ele cria e testa seu código.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 5f344682aa0427d46dc6ca75fe83b0071348ad83
+source-git-commit: b327af40a003b055b8e44688e1b84ac15a8c8439
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '961'
 ht-degree: 1%
 
 ---
@@ -94,6 +94,12 @@ As combinações de fornecedor/versão disponíveis no momento são:
 >[!NOTE]
 >
 >A partir de abril de 2022, o JDK do Oracle será o JDK padrão para o desenvolvimento e a operação de aplicativos AEM. O processo de criação do Cloud Manager mudará automaticamente para o uso do JDK do Oracle, mesmo se uma opção alternativa for explicitamente selecionada na cadeia de ferramentas Maven. Consulte as notas de versão de abril, uma vez publicadas, para obter mais detalhes.
+
+#### Versão alternativa do JDK de execução do Maven {#alternate-maven-jdk-version}
+
+Também é possível selecionar o Java 8 ou Java 11 como o JDK para toda a execução do Maven. Diferentemente das opções de cadeias de ferramentas, isso altera o JDK usado para todos os plug-ins, a menos que a configuração de cadeias de ferramentas também esteja definida, caso em que a configuração de cadeias de ferramentas ainda será aplicada para plug-ins Maven com reconhecimento de cadeias de ferramentas. Como resultado, verifique e implemente a versão do Java usando o [Plug-in do Apache Maven enforcer](https://maven.apache.org/enforcer/maven-enforcer-plugin/) funcionará.
+
+Para fazer isso, crie um arquivo chamado `.cloudmanager/java-version` na ramificação do repositório git usada pelo pipeline. Esse arquivo pode ter o conteúdo 11 ou 8. Qualquer outro valor é ignorado. Se 11 for especificado, será utilizado o Oracle 11 e a variável `JAVA_HOME` variável de ambiente está definida como `/usr/lib/jvm/jdk-11.0.2`. Se 8 for especificado, o Oracle 8 será usado e a variável `JAVA_HOME` variável de ambiente está definida como `/usr/lib/jvm/jdk1.8.0_202`.
 
 ## Variáveis de ambiente {#environment-variables}
 
