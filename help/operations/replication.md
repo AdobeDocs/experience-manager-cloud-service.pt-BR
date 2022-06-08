@@ -2,10 +2,10 @@
 title: Replicação
 description: Distribuição e solução de problemas da replicação.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 45a678be950e28942a5cbb075688585557911ce8
+source-git-commit: 50754c886c92a121c5bb20449561694f8e42b0ac
 workflow-type: tm+mt
 source-wordcount: '1363'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -58,9 +58,9 @@ Para executar uma ativação de árvore:
 
 Para um melhor desempenho, siga estas diretrizes ao usar este recurso:
 * Recomenda-se replicar menos de 100 caminhos de cada vez, com um limite rígido de 500 caminhos.
-* O tamanho total do conteúdo replicado deve ser inferior a 5 MB. Isso inclui apenas os nós e propriedades, mas não qualquer binário, que incluem pacotes de fluxo de trabalho e pacotes de conteúdo.
+* O tamanho total do conteúdo replicado deve ser inferior a 10 MB. Isso inclui apenas os nós e propriedades, mas não qualquer binário, que incluem pacotes de fluxo de trabalho e pacotes de conteúdo.
 
-### Fluxo de trabalho da Árvore de conteúdo da publicação {#publish-content-tree-workflow}
+### documentação Fluxo de trabalho de publicação da árvore de conteúdo {#publish-content-tree-workflow}
 
 Você pode acionar uma replicação em árvore escolhendo **Ferramentas - Fluxo de trabalho - Modelos** e copiar o **Publicar árvore de conteúdo** modelo de fluxo de trabalho pronto para uso, conforme mostrado abaixo:
 
@@ -194,7 +194,7 @@ O `ReplicationStatus` de um recurso só será modificado se a ação de replica�
 
 **Caminho e limites de tamanho da API de replicação**
 
-Recomenda-se replicar menos de 100 caminhos, sendo 500 o limite rígido. Acima do limite rígido, um ReplicationException será lançado. Se a lógica do aplicativo não exigir replicação atômica, esse limite poderá ser ultrapassado definindo ReplicationOptions.setUseAtomicCalls como false, o que aceitará qualquer número de caminhos, mas criará compartimentos internamente para permanecer abaixo desse limite. A quantidade de conteúdo transmitido por chamada de replicação não deve exceder 5 MB, o que inclui os nós e as propriedades, mas não qualquer binário (pacotes de fluxo de trabalho e pacotes de conteúdo são considerados binários).
+Recomenda-se replicar menos de 100 caminhos, sendo 500 o limite rígido. Acima do limite rígido, um ReplicationException será lançado. Se a lógica do aplicativo não exigir replicação atômica, esse limite poderá ser ultrapassado definindo ReplicationOptions.setUseAtomicCalls como false, o que aceitará qualquer número de caminhos, mas criará compartimentos internamente para permanecer abaixo desse limite. A quantidade de conteúdo transmitido por chamada de replicação não deve exceder 10 MB, o que inclui os nós e as propriedades, mas não qualquer binário (pacotes de fluxo de trabalho e pacotes de conteúdo são considerados binários).
 
 ## Resolução de problemas {#troubleshooting}
 
