@@ -3,10 +3,10 @@ title: Notas de versão atuais do  [!DNL Adobe Experience Manager] as a Cloud Se
 description: Notas de versão atuais do  [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 036d8b590bc9ca9dcbe4dd3e34bc14cc2d8a79e1
+source-git-commit: a2cdc7c4e9d3dfd52ca76afcf951fa67b279918a
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '776'
+ht-degree: 16%
 
 ---
 
@@ -35,8 +35,6 @@ Assista ao vídeo Visão geral da versão de maio de 2022 para obter um resumo d
 >[!VIDEO](https://video.tv.adobe.com/v/343321/?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
-
-### Novos recursos no [!DNL Sites] {#sites-features}
 
 ### Novos recursos disponíveis no canal de pré-lançamento do [!DNL Sites] {#prerelease-features-sites}
 
