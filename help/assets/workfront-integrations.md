@@ -4,9 +4,9 @@ description: Introdução à integração entre [!DNL Assets] e [!DNL Workfront]
 role: Admin,Leader,Architect
 feature: Integrations
 exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
-source-git-commit: 1fce2eb37ebeaef966913e3ffdac59e9e126c788
+source-git-commit: 1a0718d317f13924cd4da273f9184b4f165bbc7e
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '955'
 ht-degree: 2%
 
 ---
@@ -33,7 +33,7 @@ Consulte o suporte da plataforma e [pré-requisitos para o conector aprimorado](
 >
 >* O Adobe pode lançar atualizações para [!DNL Adobe Workfront] e [!DNL Adobe Experience Manager] que tornam redundante este conector; se isso ocorrer, os clientes podem ser solicitados a fazer a transição do uso desse conector.
 >
->* O Adobe oferece suporte ao conector avançado versões 1.7.4 e superior. Para verificar a versão do conector aprimorado, consulte a etapa 5(a) de [instruções de instalação do conector avançado](workfront-connector-install.md).
+>* O Adobe oferece suporte ao conector avançado versões 1.7.4 e superior. Não há suporte para pré-lançamento e versões personalizadas anteriores. Para verificar a versão do conector aprimorado, consulte a etapa 5(a) de [instruções de instalação do conector avançado](workfront-connector-install.md).
 >
 >* Consulte [Exame de certificação de parceiro para Workfront para conector aprimorado Experience Manager Assets](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Para obter informações sobre o exame, [Guia de exame](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
 
