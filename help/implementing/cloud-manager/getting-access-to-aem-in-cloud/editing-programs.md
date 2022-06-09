@@ -1,15 +1,15 @@
 ---
-title: Editar programas
+title: Programas de edição
 description: Saiba como editar a produção e os programas de sandbox para ajustar as opções depois de criá-las.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: d805ed744af0e5c95863a1c67439b384cc5d11b2
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: '450'
 ht-degree: 0%
 
 ---
 
-# Editar programas {#editing-programs}
+# Programas de edição {#editing-programs}
 
 Os usuários com permissões necessárias podem editar [programas de produção criados em sua organização](creating-production-programs.md) bem como [programas sandbox criados em sua organização.](creating-sandbox-programs.md) Ao editar um programa, você pode:
 
@@ -32,13 +32,13 @@ Siga estas etapas para editar um programa.
 
    ![Opção Editar programa](assets/edit-program-overview.png)
 
-1. O **Editar programa** exibe duas guias: **Geral** e **Soluções e complementos**. Selecione o **Geral** para editar o nome e a descrição do programa.
+1. O **Editar programa** será aberta. No **Geral** , edite o nome e a descrição do programa.
 
    * Pelo menos uma solução deve ser selecionada para um programa.
 
    ![Guia General](assets/edit-program-prod1.png)
 
-1. Selecione o **Soluções e complementos** para modificar as soluções do programa.
+1. No **Soluções e complementos** , modifique as soluções do programa.
 
    ![Selecionar soluções](assets/edit-prg.png)
 
@@ -46,9 +46,15 @@ Siga estas etapas para editar um programa.
 
    ![Editar complementos](assets/edit-program-add-on.png)
 
+1. No **Ativar configurações** , modifique a data de ativação planejada para o programa.
+
+   ![Editar configurações dinâmicas](assets/edit-program-go-live.png)
+
+   * Esta data é somente para uso informativo e aciona o widget Ir ao vivo na página de visão geral do programa para fornecer links no produto para AEM documentação de práticas recomendadas as a Cloud Service em tempo hábil para se alinhar com sua jornada, resultando em uma experiência de ativação bem-sucedida e suave.
+
 1. Clique em **Atualizar** para salvar as alterações no programa.
 
-Depois que as atualizações forem feitas, se as soluções selecionadas forem alteradas, essas alterações entrarão em vigor após a próxima implantação.
+Sempre que um programa for editado, incluindo a adição ou remoção de uma solução ou complemento, essas alterações entrarão em vigor após a próxima implantação.
 
 ## Exclusão de programas de sandbox {#delete-sandbox-program}
 

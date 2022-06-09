@@ -2,10 +2,10 @@
 title: 'Criação de programas de produção '
 description: Saiba como usar o Cloud Manager para criar seu próprio programa de produção para hospedar o tráfego ao vivo.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: cf6941759dfc1e50928009490c7c518a89ed093e
+source-git-commit: 3557ddbc76ff21bcfe4ac0338f116b02b5135f2c
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 0%
+source-wordcount: '442'
+ht-degree: 2%
 
 ---
 
@@ -34,11 +34,11 @@ Siga estas etapas para criar um programa de produção.
 
    ![Página de aterrissagem do Cloud Manager](assets/first_timelogin1.png)
 
-1. Selecionar **Configurar para produção** no assistente Criar programa para criar um programa de produção. Você pode aceitar o nome padrão do programa ou editá-lo antes de selecionar **Criar**.
+1. Selecionar **Configurar para produção** no assistente Criar programa para criar um programa de produção. Você pode aceitar o nome do programa padrão ou editá-lo antes de clicar em **Continuar**.
 
    ![Criando assistente de programa](assets/create-prod1.png)
 
-1. Na próxima guia, selecione as soluções a serem incluídas no programa.
+1. No **Soluções e complementos** selecione as soluções a serem incluídas no programa.
 
    ![Selecionar soluções](assets/setup-prod-select.png)
 
@@ -46,7 +46,16 @@ Siga estas etapas para criar um programa de produção.
 
    ![Selecionar complementos](assets/setup-prod-commerce.png)
 
-1. Com as soluções e os complementos selecionados, clique em **Criar**.
+1. Com as soluções e os complementos selecionados, clique em **Continuar**.
+
+1. No **Data de ativação** , insira a data em que planeja colocar o programa de produção em funcionamento.
+
+   ![Definir data de ativação planejada](assets/setup-go-live.png)
+
+   * Essa data pode ser editada a qualquer momento.
+   * Esta data é somente para uso informativo e aciona o widget Ir ao vivo na página de visão geral do programa para fornecer links no produto para AEM documentação de práticas recomendadas as a Cloud Service em tempo hábil para se alinhar com sua jornada, resultando em uma experiência de ativação bem-sucedida e suave.
+
+1. Clique em **Criar**.
 
 Seu programa é criado pelo Cloud Manager e é exibido e selecionável na página de aterrissagem.
 
