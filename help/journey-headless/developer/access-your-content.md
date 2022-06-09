@@ -2,22 +2,16 @@
 title: Como acessar seu conteúdo por meio AEM APIs de entrega
 description: Nesta parte da Jornada do desenvolvedor sem cabeçalho do AEM, saiba como usar consultas GraphQL para acessar o conteúdo dos Fragmentos de conteúdo.
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
-source-git-commit: c44c58398da3d82be04e22a5e4293e79361a8def
+source-git-commit: 2ee21b507b5dcc9471063b890976a504539b7e10
 workflow-type: tm+mt
-source-wordcount: '1410'
-ht-degree: 11%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Como acessar seu conteúdo por meio AEM APIs de entrega {#access-your-content}
 
 Nesta parte do [AEM Jornada de desenvolvedor sem periféricos,](overview.md) você pode aprender a usar consultas GraphQL para acessar o conteúdo dos Fragmentos de conteúdo e alimentá-lo em seu aplicativo (entrega sem cabeçalho).
-
->[!NOTE]
->
->Parte da funcionalidade desse recurso está disponível no canal de pré-lançamento. Especificamente, a funcionalidade relacionada às consultas persistentes.
-> 
->Consulte a [Documentação do canal de pré-lançamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=pt-BR#enable-prerelease) para obter informações sobre como habilitar o recurso no seu ambiente.
 
 ## A História Até Agora {#story-so-far}
 
@@ -250,10 +244,7 @@ Antes de começar com queries no seu conteúdo, você precisa:
 * Ativar o terminal
    * Use Ferramentas -> Geral -> GraphQL
    * [Habilitação do seu endpoint de GraphQL](/help/headless/graphql-api/graphql-endpoint.md)
-
-* Instalar GraphiQL (se necessário)
-   * Instalado como um pacote dedicado
-   * [Instalação da interface GraphiQL AEM](/help/headless/graphql-api/graphiql-ide.md)
+      * Isso também habilitará o GraphiQL IDE.
 
 ### Estrutura de exemplo {#sample-structure}
 

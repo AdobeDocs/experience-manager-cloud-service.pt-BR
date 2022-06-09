@@ -2,10 +2,10 @@
 title: Saiba mais sobre criação de modelos de fragmento de conteúdo no AEM
 description: Saiba mais sobre os conceitos e os mecanismos de modelagem de conteúdo para seu CMS sem interface usando Modelos de fragmentos de conteúdo.
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
+source-git-commit: c25bdab65a742e8ffc3a1579474f4589e04abce9
 workflow-type: tm+mt
-source-wordcount: '688'
-ht-degree: 5%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -39,7 +39,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ## Criação de modelos de fragmentos do conteúdo {#creating-content-fragment-models}
 
-Em seguida, os Modelos de fragmentos de conteúdo podem ser criados e a estrutura definida. Isso pode ser feito em Ferramentas -> Ativos -> Modelos de fragmento de conteúdo.
+Em seguida, os Modelos de fragmentos de conteúdo podem ser criados e a estrutura definida. Isso pode ser feito sob **Ferramentas** -> **Geral** -> **Modelos de fragmentos do conteúdo**.
 
 ![Modelos de fragmentos de conteúdo em ferramentas](assets/cfm-tools.png)
 
@@ -110,7 +110,7 @@ Agora que você aprendeu as noções básicas, o próximo passo é começar a cr
 
 * [Conceitos de criação](/help/sites-cloud/authoring/getting-started/concepts.md)
 
-* [Manuseio básico](/help/sites-cloud/authoring/getting-started/basic-handling.md) - esta página se baseia principalmente no **Sites** , mas muitos/a maioria dos recursos também são relevantes para navegar e executar ações, **Modelos de fragmentos do conteúdo** nos termos do **Ativos** console.
+* [Manuseio básico](/help/sites-cloud/authoring/getting-started/basic-handling.md) - esta página se baseia principalmente no **Sites** , mas muitos/a maioria dos recursos também são relevantes para navegar e executar ações, **Modelos de fragmentos do conteúdo** nos termos do **Geral** console.
 
 * [Trabalho com fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md)
 

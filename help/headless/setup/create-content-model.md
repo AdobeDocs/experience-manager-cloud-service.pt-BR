@@ -2,10 +2,10 @@
 title: Criação de modelos de fragmento de conteúdo - Configuração do headless
 description: Defina a estrutura do conteúdo que será criado e veiculado usando os recursos headless do AEM, através de modelos de fragmento de conteúdo.
 exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
-source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
+source-git-commit: c25bdab65a742e8ffc3a1579474f4589e04abce9
 workflow-type: tm+mt
-source-wordcount: '492'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +23,7 @@ Os modelos de fragmento de conteúdo definem a estrutura dos dados e do conteúd
 
 Um arquiteto de informações executaria essas tarefas apenas esporadicamente, à medida que novos modelos se tornassem necessários. Para os propósitos deste guia de introdução, precisamos criar apenas um modelo.
 
-1. Faça logon no AEM as a Cloud Service e, no menu principal, selecione **Ferramentas -> Ativos -> Modelos de fragmento de conteúdo**.
+1. Efetue login AEM as a Cloud Service e, no menu principal, selecione **Ferramentas**, **Geral**, **Modelos de fragmentos do conteúdo**.
 1. Toque ou clique na pasta que foi criada com sua configuração.
 
    ![A pasta de modelos](../assets/models-folder.png)

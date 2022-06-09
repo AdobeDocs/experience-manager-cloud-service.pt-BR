@@ -3,10 +3,10 @@ title: Uso do GraphiQL IDE no AEM
 description: Saiba como usar o GraphiQL IDE no Adobe Experience Manager.
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: 5f0221fad6086f8d5c5e9bd5164d05ea8d6e7d2c
+source-git-commit: 2ee21b507b5dcc9471063b890976a504539b7e10
 workflow-type: tm+mt
-source-wordcount: '978'
-ht-degree: 98%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -16,13 +16,9 @@ Uma implementação do [GraphiQL](https://graphql.org/learn/serving-over-http/#g
 
 >[!NOTE]
 >
->Parte da funcionalidade desse recurso está disponível no canal de pré-lançamento. Especificamente, a funcionalidade relacionada às consultas persistentes.
-> 
->Consulte a [Documentação do canal de pré-lançamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=pt-BR#enable-prerelease) para obter informações sobre como habilitar o recurso no seu ambiente.
-
->[!NOTE]
+>O GraphiQL é incluído em todos os ambientes de AEM (mas só estará acessível/visível quando você configurar os pontos de extremidade).
 >
->O GraphiQL está incluído no AEM, mas por padrão só está ativado em ambientes de `dev-authors`.
+>Em versões anteriores, era necessário um pacote para instalar o GraphiQL IDE. Se você tiver isso instalado, ele poderá ser removido.
 
 >[!NOTE]
 >Você deve [configurar os endpoints](/help/headless/graphql-api/graphql-endpoint.md) no [navegador de configuração](/help/assets/content-fragments/content-fragments-configuration-browser.md) antes de usar o GraphiQL IDE.
@@ -35,7 +31,7 @@ A ferramenta **GraphiQL** permite testar e depurar as consultas de GraphQL, poss
 * executar as consultas para ver os resultados imediatamente
 * gerenciar **variáveis de consulta**
 * salvar e gerenciar **consultas persistentes**
-* publicar ou desfazer a publicação de **consultas persistentes** (para/de `dev-publish`)
+* publicar ou desfazer a publicação, **Consultas Persistentes** (por exemplo, para/de `dev-publish`)
 * consultar o **histórico** de consultas anteriores
 * usar o **Explorador de documentação** para acessar a documentação; ajudando você a conhecer e entender quais métodos estão disponíveis.
 
@@ -46,7 +42,7 @@ Você pode acessar o editor de consultas por meio de:
 
 ![Interface GraphiQL](assets/cfm-graphiql-interface.png "Interface GraphiQL")
 
-Você pode usar o GraphiQL no sistema de criação de desenvolvimento para que ele possa ser solicitado pelo aplicativo cliente usando solicitações GET e publicando consultas. Para o uso da produção, é necessário [mover as consultas para o ambiente de produção](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production). Inicialmente ao autor de produção para validação do conteúdo recém-criado com as consultas e, finalmente, à produção de publicação para consumo em tempo real.
+Você pode usar GraphiQL no sistema para que as consultas possam ser solicitadas pelo aplicativo cliente usando solicitações GET e para publicação de consultas. Para o uso da produção, é possível [mover suas consultas para o ambiente de produção](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production). Inicialmente ao autor de produção para validação do conteúdo recém-criado com as consultas e, finalmente, à produção de publicação para consumo em tempo real.
 
 ## Seleção do endpoint {#selecting-endpoint}
 
@@ -100,9 +96,9 @@ Por exemplo:
 
 ![Variáveis GraphQL](assets/cfm-graphqlapi-03.png "Variáveis GraphQL")
 
-## Publicação de consultas persistentes (dev-publish) {#publishing-persisted-queries}
+## Publicação de consultas persistentes {#publishing-persisted-queries}
 
-Depois de selecionar a consulta persistente na lista (painel esquerdo), você pode usar as ações **Publicar** e **Desfazer a publicação**. Isso as ativará no ambiente de publicação de desenvolvimento (`dev-publish`) para facilitar o acesso de seus aplicativos durante os testes.
+Depois de selecionar a consulta persistente na lista (painel esquerdo), você pode usar as ações **Publicar** e **Desfazer a publicação**. Isso os ativará no ambiente de publicação (por exemplo, `dev-publish`) para facilitar o acesso de seus aplicativos ao testar.
 
 >[!NOTE]
 >

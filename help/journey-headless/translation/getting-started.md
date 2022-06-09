@@ -2,10 +2,10 @@
 title: Introdução à AEM tradução headless
 description: Saiba como organizar o conteúdo sem periféricos e como funcionam AEM ferramentas de tradução.
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
-source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
+source-git-commit: c25bdab65a742e8ffc3a1579474f4589e04abce9
 workflow-type: tm+mt
-source-wordcount: '1409'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -78,7 +78,7 @@ O arquiteto de conteúdo funciona no início do projeto para definir essa estrut
 
 Como os Modelos de conteúdo definem a estrutura do seu conteúdo, é necessário saber quais campos de seus modelos devem ser traduzidos. Geralmente, você trabalha com o arquiteto de conteúdo para definir isso. Para navegar pelos campos de seus modelos de conteúdo, siga as etapas abaixo.
 
-1. Navegar para **Ferramentas** -> **Ativos** -> **Modelos de fragmentos do conteúdo**.
+1. Navegar para **Ferramentas** -> **Geral** -> **Modelos de fragmentos do conteúdo**.
 1. Os Modelos de fragmentos de conteúdo geralmente são armazenados em uma estrutura de pastas. Toque ou clique na pasta do seu projeto.
 1. Os modelos estão listados. Toque ou clique no modelo para ver os detalhes.
    ![Modelos de fragmentos do conteúdo](assets/content-fragment-models.png)
