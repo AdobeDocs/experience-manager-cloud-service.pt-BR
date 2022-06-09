@@ -3,9 +3,9 @@ title: Implantação do AEM as a Cloud Service
 description: 'Implantação do AEM as a Cloud Service '
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 7d5cae8292822dd8db7ce3f92c10cf5ad7edbdc1
+source-git-commit: 91361eb49eaf4ec3b89dbd816aecca3c5bfe029f
 workflow-type: tm+mt
-source-wordcount: '3364'
+source-wordcount: '3360'
 ht-degree: 2%
 
 ---
@@ -191,7 +191,7 @@ Todos os pacotes de conteúdo instalados pelo Cloud Manager (mutáveis e imutáv
 
 É comum que os clientes incluam pacotes pré-criados de fornecedores de software de terceiros, como parceiros de tradução Adobe. A recomendação é hospedar esses pacotes em um repositório remoto e referenciá-los no `pom.xml`. Isso é possível para repositórios públicos e também para repositórios privados com proteção por senha, conforme descrito em [repositórios maven protegidos por senha](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories).
 
-Se não for possível armazenar o pacote em um repositório remoto, os clientes poderão colocar em um repositório Maven local baseado em sistema de arquivos, que é comprometido com SCM como parte do projeto e referenciado pelo que depender dele. O repositório seria declarado nos exemplos de projeto ilustrados abaixo:
+Se não for possível armazenar o pacote em um repositório remoto, os clientes poderão colocar em um repositório Maven local baseado em sistema de arquivos, que é comprometido com SCM como parte do projeto e referenciado pelo que depender dele. O repositório seria declarado no pom do projeto, conforme ilustrado abaixo:
 
 
 ```
@@ -309,13 +309,17 @@ As configurações de modo de execução compatíveis são:
 * **config.publish.dev** (*Aplica-se a AEM serviço de publicação de desenvolvimento*)
 * **config.publish.stage** (*Aplica-se a AEM serviço de publicação de preparo*)
 * **config.publish.prod** (*Aplica-se AEM serviço de publicação de produção*)
-* **config.dev** (*Aplica-se a serviços de desenvolvimento AEM)
-* **config.stage** (*Aplica-se a serviços de preparação de AEM)
-* **config.prod** (*Aplica-se a serviços de produção AEM)
+* **config.dev** (*Aplica-se a serviços de desenvolvimento AEM*)
+* **config.stage** (*Aplica-se a AEM serviços de preparo*)
+* **config.prod** (*Aplica-se a serviços de produção AEM*)
 
 A configuração OSGI que tem os runmodes mais correspondentes é usada.
 
-Ao desenvolver localmente, um parâmetro de inicialização do modo de execução pode ser transmitido para determinar qual configuração do OSGI do modo de execução será usada.
+Ao desenvolver localmente, um parâmetro de inicialização do modo de execução, `-r`, é usada para especificar a configuração OSGI do modo de execução.
+
+```shell
+$ java -jar aem-sdk-quickstart-xxxx.x.xxx.xxxx-xxxx.jar -r publish,dev
+```
 
 <!-- ### Performance Monitoring {#performance-monitoring}
 
