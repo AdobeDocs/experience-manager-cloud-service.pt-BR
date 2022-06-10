@@ -2,9 +2,9 @@
 title: Perguntas frequentes sobre o Cloud Manager
 description: Encontre respostas para as perguntas mais frequentes sobre o Cloud Manager AEM as a Cloud Service.
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
-source-git-commit: 65632de3fbf81ef44d30994365e6365a6148b836
+source-git-commit: 1a6ca2647cc185ed0cb60fa75d2f5752e72f5715
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '953'
 ht-degree: 0%
 
 ---
@@ -44,9 +44,9 @@ Esse é um problema conhecido porque o Cloud Manager usa uma versão diferente d
 
 ## A verificação de qualidade do código falhou e sua implantação travou. Existe uma maneira de ignorar esta verificação? {#deployment-stuck}
 
-Sim. Todas as falhas de verificação de qualidade de código, exceto a classificação de segurança, são métricas não críticas, portanto, podem ser ignoradas ao expandir os itens na interface do usuário de resultados.
+Sim. Todas as falhas de verificação de qualidade do código, exceto a classificação de segurança, são métricas não críticas, portanto, podem ser ignoradas como parte de um pipeline de implantação, expandindo os itens na interface do usuário de resultados.
 
-Consulte o documento [Teste de qualidade do código](/help/implementing/cloud-manager/code-quality-testing.md) para obter mais detalhes.
+Veja os documentos [Teste de qualidade do código](/help/implementing/cloud-manager/code-quality-testing.md) e [Configuração de pipeline de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) para obter mais detalhes.
 
 ## Posso usar o SNAPSHOT para a versão do projeto Maven? {#use-snapshot}
 
