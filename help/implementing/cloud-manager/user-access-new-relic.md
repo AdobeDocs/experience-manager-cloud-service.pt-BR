@@ -2,9 +2,9 @@
 title: Novo Relic One
 description: Saiba mais sobre o serviço APM (New Relic One application performance monitoring) para AEM as a Cloud Service e como você pode acessá-lo.
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: 09049213eaf92830dc0e0d4c0885017c69a5d56e
+source-git-commit: 8ae52afc366c6607cfc806f68bec2069a2e93f94
 workflow-type: tm+mt
-source-wordcount: '1622'
+source-wordcount: '1612'
 ht-degree: 1%
 
 ---
@@ -46,13 +46,11 @@ Siga estas etapas para definir os usuários da sua subconta New Relic One associ
 
 1. Clique no programa para o qual você deseja gerenciar seus novos usuários do Relic One.
 
-1. Alterne para **Ambientes** do **Visão geral do programa** clicando na página **Ambientes** na parte superior da tela.
-
-1. No **Ambientes** clique no botão de reticências na parte superior da tela, ao lado do **Adicionar ambiente** botão.
-
-1. No menu reticências, clique em **Gerenciar usuários**.
+1. Na parte inferior do **Ambientes** na página visão geral do programa, clique no botão reticências e selecione **Gerenciar usuários**.
 
    ![Gerenciar usuários](assets/newrelic-manage-users.png)
+
+   * Você também pode acessar a variável **Gerenciar usuários** através do botão de reticências na parte superior do **Ambientes** do seu programa.
 
 1. No **Gerenciar novos usuários do Relic** digite o nome e o sobrenome do usuário que deseja adicionar e clique no botão **Adicionar** botão. Repita essa etapa para todos os usuários que deseja adicionar.
 
@@ -98,11 +96,11 @@ Para acessar o Novo Relic One via Cloud Manager:
 
 1. Clique no programa para o qual você deseja acessar o Novo Relic One.
 
-1. Alterne para **Ambientes** do **Visão geral do programa** clicando na página **Ambientes** na parte superior da tela.
+1. Na parte inferior do **Ambientes** na página visão geral do programa, clique no botão reticências e selecione **Abrir Novo Relic**.
 
-1. No **Ambientes** clique no botão de reticências na parte superior da tela, ao lado do **Adicionar ambiente** botão.
+   ![Gerenciar usuários](assets/newrelic-access.png)
 
-1. No menu reticências, clique em **Abrir Novo Relic**.
+   * Também é possível acessar o Novo Relic por meio do botão de reticências na parte superior do **Ambientes** do seu programa.
 
 1. Na nova guia do navegador que é aberta, faça logon no Novo Relic One.
 
