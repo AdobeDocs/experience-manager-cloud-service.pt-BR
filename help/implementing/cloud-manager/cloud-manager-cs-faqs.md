@@ -2,9 +2,9 @@
 title: Perguntas frequentes sobre o Cloud Manager
 description: Encontre respostas para as perguntas mais frequentes sobre o Cloud Manager AEM as a Cloud Service.
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
-source-git-commit: 1a6ca2647cc185ed0cb60fa75d2f5752e72f5715
+source-git-commit: 8e02f470b474ad448a5fb80dd3b410d414d78a3b
 workflow-type: tm+mt
-source-wordcount: '953'
+source-wordcount: '989'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,9 @@ Esse é um problema conhecido porque o Cloud Manager usa uma versão diferente d
 
 Sim. Todas as falhas de verificação de qualidade do código, exceto a classificação de segurança, são métricas não críticas, portanto, podem ser ignoradas como parte de um pipeline de implantação, expandindo os itens na interface do usuário de resultados.
 
-Veja os documentos [Teste de qualidade do código](/help/implementing/cloud-manager/code-quality-testing.md) e [Configuração de pipeline de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) para obter mais detalhes.
+Um usuário com [Gerenciador de implantação, Gerenciador de projeto ou Proprietário comercial](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md#cloud-manager-product-profiles) pode substituir os problemas, caso o pipeline continue ou possa aceitar os problemas, caso o pipeline pare com uma falha.
+
+Veja os documentos [Teste de qualidade do código](/help/implementing/cloud-manager/code-quality-testing.md#three-tiered-gate) e [Configuração de pipeline de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#non-production-pipelines) para obter mais detalhes.
 
 ## Posso usar o SNAPSHOT para a versão do projeto Maven? {#use-snapshot}
 
