@@ -5,7 +5,7 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 00dced631aa293630f923ee1e94f321bbf4cddb9
 workflow-type: tm+mt
 source-wordcount: '983'
 ht-degree: 1%
@@ -30,7 +30,7 @@ Você precisa do seguinte para integrar [!DNL Adobe Sign] com [!DNL AEM Forms]:
 * Use [chave de criptografia idêntica](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html?lang=en#make-sure-you-properly-replicate-encryption-keys-when-needed) para instâncias de criação e publicação.
 * (Somente para autenticação baseada em ID do governo) [Habilitar o método de autenticação](https://helpx.adobe.com/sign/using/adobesign-authentication-government-id.html#AuditReport) para autenticação de ID de governo.
 
-## Configurar o [!DNL Adobe Sign] com o [!DNL AEM Forms] {#configure-adobe-sign-with-aem-forms}
+## Configurar o[!DNL Adobe Sign] com o [!DNL AEM Forms] {#configure-adobe-sign-with-aem-forms}
 
 Depois que os pré-requisitos estiverem em vigor, execute as seguintes etapas para configurar [!DNL Adobe Sign] com [!DNL AEM Forms] nas instâncias de Autor.
 
@@ -43,7 +43,7 @@ Depois que os pré-requisitos estiverem em vigor, execute as seguintes etapas pa
    >
    >Ao criar um Formulário adaptável, especifique o nome do contêiner na **[!UICONTROL Contêiner de configuração]** campo.
 
-1. Na página de configuração, toque em **[!UICONTROL Criar]** para criar [!DNL Adobe Sign]na AEM Forms.
+1. Na página de configuração, toque em **[!UICONTROL Criar]** para criar [!DNL Adobe Sign] na AEM Forms.
 1. No **[!UICONTROL Geral]** da guia **[!UICONTROL Criar configuração do Adobe Sign]** especifique um **[!UICONTROL Nome]** para a configuração, e toque em **[!UICONTROL Próximo]**. Como opção, você pode especificar uma **[!UICONTROL Título]** e navegue para selecionar uma **[!UICONTROL Miniatura]** para a configuração.
 
 1. Copie o URL na janela atual do navegador para um bloco de notas. O URL é necessário para configurar [!DNL Adobe Sign] aplicativo com [!DNL AEM Forms] em uma etapa posterior.
