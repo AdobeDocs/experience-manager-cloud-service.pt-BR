@@ -4,7 +4,7 @@ description: Conheça os recursos avançados do painel Site para ajudá-lo a per
 feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 3e4c6fce54fe336c145d533c05e68e3a1f64c144
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 0%
@@ -30,7 +30,7 @@ O painel Site é usado para gerenciar informações relacionadas ao tema e ao mo
 >
 >Revise o [Jornada Rápida de Criação de Site](/help/journey-sites/quick-site/overview.md) para se familiarizar com a ferramenta de Criação rápida de sites e o pipeline front-end para personalizar facilmente o tema do site.
 
-##  Download de Fontes de Tema {#downloading-theme-sources}
+## Download de Fontes de Tema {#downloading-theme-sources}
 
 Ao criar um site no AEM com base em um [modelo de site,](site-templates.md) você pode baixar a [tema do site](site-themes.md) usando o painel Site .
 
@@ -40,7 +40,7 @@ Com o painel Site exibido no console Sites , selecione a raiz do site para revel
 
 Toque ou clique **Baixar Fontes de Tema** para baixar uma cópia local do tema do site como `.zip` para fins de personalização.
 
-##  Fazendo download de recursos do modelo {#downloading-template-resources}
+## Fazendo download de recursos do modelo {#downloading-template-resources}
 
 [Modelos de site](site-templates.md) pode conter informações além da estrutura de conteúdo do site e [tema do site.](site-themes.md) Os modelos de site podem conter designs de wireframe ou outros arquivos relacionados ao site, por exemplo.
 
