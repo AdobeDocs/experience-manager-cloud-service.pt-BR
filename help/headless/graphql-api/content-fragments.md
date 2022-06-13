@@ -3,10 +3,10 @@ title: API GraphQL do AEM para uso com Fragmentos de conteúdo
 description: Saiba como usar os Fragmentos de conteúdo no Adobe Experience Manager (AEM) as a Cloud Service com a API GraphQL do AEM, para entrega de conteúdo headless.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: e43feb24adad7ef16dd92f59ed1f37638febd631
-workflow-type: ht
-source-wordcount: '2569'
-ht-degree: 100%
+source-git-commit: 71dc0f18dfea348ab291ac1a32f38d6b03ac577c
+workflow-type: tm+mt
+source-wordcount: '2664'
+ht-degree: 96%
 
 ---
 
@@ -104,6 +104,27 @@ Com o GraphQL, é possível executar consultas para retornar:
 Também é possível executar:
 
 * [Consultas persistentes, que são armazenadas em cache](/help/headless/graphql-api/persisted-queries.md)
+
+### Práticas recomendadas de consulta GraphQL (Dispatcher) {#graphql-query-best-practices}
+
+O [Consultas Persistentes](/help/headless/graphql-api/persisted-queries.md) são o método recomendado como:
+
+* são armazenadas em cache
+* são gerenciados centralmente AEM as a Cloud Service
+
+As consultas diretas e/ou POST não são recomendadas, pois não são armazenadas em cache, portanto, em uma instância padrão, o Dispatcher é configurado para bloquear essas consultas.
+
+>[!NOTE]
+>
+>Para permitir consultas diretas e/ou POST no Dispatcher, você pode solicitar ao Administrador do Sistema:
+>
+>* Crie uma variável de ambiente do Cloud Manager chamada `ENABLE_GRAPHQL_ENDPOINT`
+>* com o valor `true`
+
+
+>[!NOTE]
+>
+>A capacidade de realizar consultas diretas pode ser substituída em algum momento no futuro.
 
 ### IDE GraphiQL {#graphiql-ide}
 
