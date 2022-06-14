@@ -1,13 +1,13 @@
 ---
 title: Tags de cores para imagens
 description: O Experience Manager Assets permite distinguir entre cores em uma imagem e aplicá-las automaticamente como tags. Em seguida, você pode usar essas tags para pesquisar e filtrar imagens.
-source-git-commit: 74c13efe99b50ba08d9dc38c246de71482a536a0
+exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
+source-git-commit: d8fb661be15a1505714e3def8a729a9c5c04616c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1225'
+ht-degree: 3%
 
 ---
-
 
 # Tags de cores para imagens {#color-tag-images}
 
@@ -106,6 +106,24 @@ Para adicionar o componente Tags de cores inteligentes ao Editor de formulário 
 
    >[!VIDEO](https://video.tv.adobe.com/v/340124)
 
+## Tags de cores para imagens existentes no DAM {#color-tags-existing-images}
+
+As imagens já existentes no DAM não são marcadas por cores automaticamente. Você precisa [!UICONTROL Reprocessar ativos] para gerar tags de cores manualmente.
+
+Para colorir imagens de tags ou pastas (incluindo subpastas) de ativos que já existem no repositório de ativos, siga estas etapas:
+
+1. Selecione o [!DNL Adobe Experience Manager] e, em seguida, selecione ativos no [!UICONTROL Navegação] página.
+
+1. Selecionar [!UICONTROL Arquivos] para exibir a interface do Assets.
+
+1. Navegue até a pasta na qual deseja aplicar tags de cores.
+
+1. Selecione a pasta inteira ou imagens específicas.
+
+1. Selecionar ![Ícone Reprocessar ativos](assets/do-not-localize/reprocess-assets-icon.png) [!UICONTROL Reprocessar ativos] e selecione o [!UICONTROL Processo completo] opção.
+
+Depois que o processo for concluído, navegue até a [!UICONTROL Propriedades] de qualquer imagem dentro da pasta. As tags adicionadas automaticamente são vistas em [!UICONTROL Tags de cores inteligentes] seção em [!UICONTROL Básico] guia .
+
 
 ## Exibir tags de cores inteligentes para imagens {#view-color-tags}
 
@@ -167,7 +185,3 @@ Para pesquisar imagens com base nas cores:
    Você pode filtrar imagens com base na seleção de uma cor. As imagens que têm a cor selecionada como uma das tags de cores inteligentes e acima da [% Limite de Cobertura/Domínio](#manage-color-tagging-settings) no painel direito.
 
 1. Clique em x na barra de Pesquisa para limpar o filtro.
-
-
-
-
