@@ -5,9 +5,9 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: cbaf9faf6cc8c2079dc0abc0a775ff4a0e2cc762
+source-git-commit: 57abdf0198e646719bbb818e2b70d772579ba548
 workflow-type: tm+mt
-source-wordcount: '1795'
+source-wordcount: '1811'
 ht-degree: 4%
 
 ---
@@ -183,6 +183,9 @@ Para saber mais sobre os algoritmos de upload ou para criar seus próprios scrip
 
 * [Biblioteca de upload de aem de código aberto](https://github.com/adobe/aem-upload).
 * [Ferramenta de linha de comando de código aberto](https://github.com/adobe/aio-cli-plugin-aem).
+
+>[!NOTE]
+A biblioteca do aem-upload e a ferramenta de linha de comando usam o [biblioteca node-httptransfer](https://github.com/adobe/node-httptransfer/)
 
 ### APIs de upload de ativos obsoletos {#deprecated-asset-upload-api}
 
