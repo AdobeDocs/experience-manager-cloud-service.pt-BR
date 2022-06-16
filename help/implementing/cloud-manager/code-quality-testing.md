@@ -2,9 +2,9 @@
 title: Teste de qualidade do código
 description: Saiba como o teste de qualidade de código de pipelines funciona e como ele pode melhorar a qualidade de suas implantações.
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-source-git-commit: 15fb2823d231048885a140edfaa904527a026aae
+source-git-commit: 8eada48aaef62aa942b98981a3510a2c64ea582b
 workflow-type: tm+mt
-source-wordcount: '1147'
+source-wordcount: '1177'
 ht-degree: 2%
 
 ---
@@ -41,6 +41,12 @@ Os problemas identificados por testes de qualidade do código são atribuídos a
 * **Importante** - Esses são problemas que fazem com que o pipeline entre no estado pausado. Um gerente de implantação, gerente de projeto ou proprietário de negócios pode substituir os problemas, caso o pipeline continue, ou pode aceitar os problemas, caso o pipeline pare com uma falha.
 
 * **Informações** - Trata-se de questões que são fornecidas exclusivamente para fins informativos e não têm impacto na execução do pipeline
+
+>[!NOTE]
+>
+>Em um pipeline somente de qualidade de código, falhas importantes na porta de qualidade do código não podem ser substituídas, pois a etapa de teste de qualidade do código é a etapa final no pipeline.
+
+### Classificações {#ratings}
 
 Os resultados desta etapa são fornecidos como **Classificações**.
 
