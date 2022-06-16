@@ -2,7 +2,7 @@
 title: Ambiente de criação
 description: Saiba mais sobre o ambiente de criação do Cloud Manager e como ele cria e testa seu código.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: b327af40a003b055b8e44688e1b84ac15a8c8439
+source-git-commit: c138f0be15550df85a2ec23b6b551ccba07996c8
 workflow-type: tm+mt
 source-wordcount: '961'
 ht-degree: 1%
@@ -35,7 +35,7 @@ O Cloud Manager cria e testa seu código usando um ambiente de criação especia
 
 * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
 * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
-* `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent packageco-maven-plugin:prepare-agent package`
+* `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 * O Maven é configurado em um nível de sistema com um `settings.xml` arquivo , que inclui automaticamente o repositório de artefatos do Adobe público usando um perfil chamado `adobe-public`. (Consulte [Repositório Adobe Public Maven](https://repo1.maven.org/) para obter mais detalhes).
 
 >[!NOTE]

@@ -2,7 +2,7 @@
 title: AEM equipe as a Cloud Service e perfis de produto
 description: Siga esta página para saber mais sobre AEM equipe as a Cloud Service e perfis de produto.
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
-source-git-commit: 56ca8e80081e62ceb3f5fc2bf9c32aa3bcee12c6
+source-git-commit: fd23701414a2ae4142ea2a11cef92bc0cb202421
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Os membros AEM da equipe as a Cloud Service serão adicionados e atribuídos a u
 
 ## Perfis de produto do Cloud Manager {#cloud-manager-product-profiles}
 
-O Cloud Manager tem perfis de produto pré-configurados ou, mais simplesmente, permissões baseadas em funções. O administrador do sistema será responsável pela configuração da equipe do Cloud Manager, atribuindo o a esses perfis de produtos e deverá se familiarizar com esses perfis de produtos e qual membro da equipe será atribuído a eles.
+O Cloud Manager tem perfis de produto pré-configurados ou, mais simplesmente, permissões baseadas em funções. O administrador do sistema será responsável pela configuração da equipe do Cloud Manager, atribuindo-a a esses perfis de produtos, e deverá se familiarizar com esses perfis de produtos e qual membro da equipe será atribuído a eles.
 >[!NOTE]
 >Consulte [Permissões baseadas em funções no Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md##role-based-permissions) para obter mais detalhes.
 
