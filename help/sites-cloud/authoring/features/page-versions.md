@@ -2,7 +2,7 @@
 title: Trabalhar com versões de páginas
 description: Criar, comparar e restaurar versões de uma página
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 2d1b40b8d6f7b6ca5ce112331a7d389816739494
 workflow-type: tm+mt
 source-wordcount: '1521'
 ht-degree: 66%
@@ -193,9 +193,9 @@ Para comparar uma versão anterior com a página atual:
 
 O Timewarp é um recursos criado para simular o estado *publicado* de uma página em ocasiões específicas no passado.
 
->[!NOTE]
+>[!TIP]
 >
->[O Timewarp também pode ser usado com Inicializações para visualizar o futuro](/help/sites-cloud/authoring/launches/preview.md).
+>[O Timewarp também pode ser usado com Inicializações para visualizar o futuro.](/help/sites-cloud/authoring/launches/preview.md)
 
 Como a criação de conteúdo é um processo contínuo e colaborativo, o objetivo do Timewarp é permitir que os autores rastreiem o site publicado ao longo do tempo, para entender como o conteúdo mudou. Esse recurso usa as versões de página para determinar o estado do ambiente de publicação.
 

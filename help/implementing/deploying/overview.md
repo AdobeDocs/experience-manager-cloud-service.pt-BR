@@ -3,10 +3,10 @@ title: Implantação do AEM as a Cloud Service
 description: 'Implantação do AEM as a Cloud Service '
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 91361eb49eaf4ec3b89dbd816aecca3c5bfe029f
+source-git-commit: 4fcb2ff39f0634cfcdab5500b03441f6db0b474d
 workflow-type: tm+mt
-source-wordcount: '3360'
-ht-degree: 2%
+source-wordcount: '3358'
+ht-degree: 1%
 
 ---
 
@@ -206,7 +206,7 @@ Se não for possível armazenar o pacote em um repositório remoto, os clientes 
 
 Quaisquer pacotes de terceiros incluídos devem estar em conformidade com as diretrizes de codificação e embalagem do serviço as a Cloud Service AEM descritas neste artigo; caso contrário, sua inclusão resultará em uma falha de implantação.
 
-O trecho Maven POM XML a seguir mostra como os pacotes de terceiros podem ser incorporados ao pacote &quot;Contêiner&quot; do projeto, normalmente denominado **&#39;all&#39;**, por meio da configuração de plug-in **filevault-package-maven-plugin** do Maven.
+Maven `POM.xml` snippet mostra como pacotes de terceiros podem ser incorporados ao pacote &quot;Contêiner&quot; do projeto, normalmente nomeado **&#39;all&#39;**, por meio da **filevault-package-maven-plugin** Configuração do plug-in Maven.
 
 ```
 ...
@@ -216,26 +216,18 @@ O trecho Maven POM XML a seguir mostra como os pacotes de terceiros podem ser in
   <extensions>true</extensions>
   <configuration>
       ...
-      <subPackages>
-           
-          <!-- Include the application's ui.apps and ui.content packages -->
+      <embeddeds>
+
           ...
- 
-          <!-- Include any other extra packages such as AEM WCM Core Components -->
-          <!-- Set the version for all dependencies, including 3rd party packages, in the project's Reactor POM -->
-          <subPackage>
-              <groupId>com.adobe.cq</groupId>
-              <artifactId>core.wcm.components.all</artifactId>
-              <filter>true</filter>
-          </subPackage>
- 
- 
-          <subPackage>
-              <groupId>com.3rdparty.groupId</groupId>
-              <artifactId>core.3rdparty.artifactId</artifactId>
-              <filter>true</filter>
-          </subPackage>
-      <subPackages>
+
+          <!-- Include any other extra packages  -->
+          <embedded>
+              <groupId>com.vendor.x</groupId>
+              <artifactId>vendor.plug-in.all</artifactId>
+              <type>zip</type>
+              <target>/apps/vendor-packages/container/install</target>
+          </embedded>
+      <embeddeds>
   </configuration>
 </plugin>
 ...
