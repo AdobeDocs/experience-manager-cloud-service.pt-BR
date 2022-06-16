@@ -3,9 +3,9 @@ title: Configurar o Dynamic Media Cloud Service
 description: Saiba como configurar o Dynamic Media no Adobe Experience Manager as a Cloud Service.
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 527c25ef61f9553a9e0012b8413a8bc6ccf4afdd
+source-git-commit: 5512f5f22336916e66300b82aaff578df3e05b1d
 workflow-type: tm+mt
-source-wordcount: '3449'
+source-wordcount: '3537'
 ht-degree: 3%
 
 ---
@@ -270,7 +270,8 @@ Consulte [Fazer upload de ativos](/help/assets/add-assets.md).
 
 **Para editar tipos MIME para formatos compatíveis:**
 
-1. No Experience Manager as a Cloud Service, selecione o logotipo Experience Manager as a Cloud Service para acessar o console de navegação global e, em seguida, acesse **[!UICONTROL Geral > CRXDE Lite]**.
+1. Faça logon no Experience Manager as a Cloud Service como administrador do produto.
+1. No Experience Manager as a Cloud Service , selecione o logotipo Experience Manager as a Cloud Service para acessar o console de navegação global e, em seguida, acesse **[!UICONTROL Geral > CRXDE Lite]**.
 1. No painel à esquerda, navegue até o seguinte:
 
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`
@@ -296,6 +297,7 @@ Você pode adicionar tipos MIME personalizados para formatos não compatíveis n
 
 **Para adicionar tipos MIME para formatos não suportados:**
 
+1. Faça logon no Experience Manager as a Cloud Service como administrador do produto.
 1. Do Experience Manager as a Cloud Service, vá para **[!UICONTROL Ferramentas > Operações > Console da Web]**.
 
    ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
@@ -377,6 +379,10 @@ Consulte também [Adição de tipos MIME para formatos não suportados](#adding-
 
 A fila Fluxo de trabalho do Granite é usada para fluxos de trabalho não transitórios. No Dynamic Media, ele processava vídeo com a variável **[!UICONTROL Codificar vídeo no Dynamic Media]** fluxo de trabalho.
 
+>[!NOTE]
+>
+>Você deve estar conectado ao Experience Manager as a Cloud Service como administrador do produto para concluir esta tarefa.
+
 **Para atualizar os threads de trabalho predefinidos da Fila de fluxo de trabalho do Granite (ativos de vídeo):**
 
 1. Navegar para `https://<server>/system/console/configMgr` e procurar **Fila: Fila de Fluxo de Trabalho do Granite**.
@@ -398,6 +404,10 @@ A fila Fluxo de trabalho do Granite é usada para fluxos de trabalho não transi
 #### Atualize os encadeamentos de trabalho da Fila de Fluxo de Trabalho Transitório do Granite predefinidos {#update-granite-transient-workflow-queue-worker-threads-images}
 
 A fila Fluxo de trabalho de trânsito do Granite é usada para **[!UICONTROL Ativo de atualização DAM]** fluxo de trabalho. No Dynamic Media, é usado para processamento e assimilação de ativos de imagem e não vídeo.
+
+>[!NOTE]
+>
+>Você deve estar conectado ao Experience Manager as a Cloud Service como administrador do produto para concluir esta tarefa.
 
 **Para atualizar os threads de trabalho da fila do Fluxo de trabalho transitório do Granite predefinidos:**
 
@@ -422,7 +432,11 @@ A fila Fluxo de trabalho de trânsito do Granite é usada para **[!UICONTROL Ati
 
 #### Atualizar as conexões máximas de upload para o servidor do Dynamic Media Classic (Scene7) {#update-max-s7-upload-connections}
 
-A configuração Upload Connection da Dynamic Media Classic (Scene7) sincroniza ativos do Experience Manager com os servidores da Dynamic Media Classic.
+A configuração Upload Connection do Dynamic Media Classic (Scene7) sincroniza ativos do Experience Manager com os servidores da Dynamic Media Classic.
+
+>[!NOTE]
+>
+>Você deve estar conectado ao Experience Manager as a Cloud Service como administrador do produto para concluir esta tarefa.
 
 **Para atualizar as conexões máximas de upload para o servidor do Dynamic Media Classic (Scene7):**
 
