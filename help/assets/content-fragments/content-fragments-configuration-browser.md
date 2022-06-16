@@ -4,10 +4,10 @@ description: Saiba como ativar determinadas funcionalidades de Fragmento de cont
 feature: Content Fragments
 role: User
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: e304b49b44cf871f3c47120fad7899407c573234
+source-git-commit: 78448aafa1b397f9131c12ab2afd74b05ae53e66
 workflow-type: tm+mt
-source-wordcount: '292'
-ht-degree: 21%
+source-wordcount: '339'
+ht-degree: 18%
 
 ---
 
@@ -43,9 +43,20 @@ Para [usar determinada funcionalidade de Fragmento de conteúdo](#creating-a-con
 >
 >Para obter mais detalhes, consulte também [Navegador de configuração:](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
->[!CAUTION]
+>[!NOTE]
 >
->Subconfigurações (uma configuração aninhada em uma configuração) são suportadas para uso com Fragmentos de conteúdo, mas não podem ser usadas para consultas GraphQL.
+>[Sub-configurações](/help/implementing/developing/introduction/configurations.md#configuration-resolution) (uma configuração aninhada em outra configuração) é totalmente compatível com o uso de Fragmentos de conteúdo, Modelos de fragmento de conteúdo e consultas GraphQL.
+>
+>Apenas para observar que:
+>
+>
+>* Depois de criar modelos em uma subconfiguração, NÃO é possível mover ou copiar o modelo para outra subconfiguração.
+>
+>* Um ponto de extremidade GraphQL (ainda) será baseado em uma configuração pai (raiz).
+>
+>* As consultas persistentes serão (ainda) salvas relevantes para a configuração principal (raiz).
+
+
 
 1. Navegue até **Ferramentas**, **Gerale** abra o **Navegador de configuração**.
 
