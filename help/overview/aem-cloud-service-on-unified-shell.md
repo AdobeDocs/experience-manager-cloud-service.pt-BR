@@ -1,13 +1,13 @@
 ---
 title: AEM as a Cloud Service no shell unificado
 description: AEM as a Cloud Service no shell unificado
-source-git-commit: 09f4620ed871b012b4550bc05cfe7f4622f02833
+exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
+source-git-commit: 9ef6bda76667b08b5fb62b90acdc75002889d420
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '402'
+ht-degree: 5%
 
 ---
-
 
 # AEM as a Cloud Service no shell unificado {#aem-as-a-cloud-service-on-unified-shell}
 
@@ -17,6 +17,9 @@ ht-degree: 0%
 >Isso é uma introdução a um novo recurso que estará geralmente disponível na versão de junho de 2022.
 >
 >Consulte a [Documentação do canal de pré-lançamento](/help/release-notes/prerelease.md#enable-prerelease) para obter informações sobre como habilitar o recurso no seu ambiente.
+
+>[!INFO]
+>Devido a um problema encontrado recentemente, a integração do Unified Shell com AEM as a Cloud Service foi temporariamente desabilitada. Ele será reativado assim que o problema for corrigido. Obrigado pela sua compreensão.
 
 ## Visão geral {#overview}
 
@@ -72,4 +75,3 @@ A Caixa de entrada de AEM pode ser acessada clicando no ícone de sino no shell 
 Clique no botão Caixa de entrada no pop-up para acessar a Caixa de entrada de AEM:
 
 ![imagem](/help/overview/assets/unifiedshell6.png)
-
