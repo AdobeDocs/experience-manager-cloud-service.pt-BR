@@ -3,7 +3,7 @@ title: 'Consultas persistentes de GraphQL '
 description: Saiba como criar consultas persistentes de GraphQL no Adobe Experience Manager as a Cloud Service para otimizar o desempenho. As consultas persistentes podem ser solicitadas por aplicativos clientes usando o método GET do HTTP e a resposta pode ser armazenada em cache nas camadas do Dispatcher e do CDN, melhorando, em última análise, o desempenho dos aplicativos clientes.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 8a9cdc451a5da09cef331ec0eaadd5d3a68b1985
+source-git-commit: 6529b4b874cd7d284b92546996e2373e59075dfd
 workflow-type: tm+mt
 source-wordcount: '1109'
 ht-degree: 47%
@@ -308,6 +308,7 @@ Para criar um pacote:
 1. Toque no **Criar** na definição de pacote recém-criada.
 
 Depois que o pacote tiver sido criado, você poderá:
+
 * **Baixar** o pacote e faça upload novamente em um ambiente diferente.
 * **Replicar** a embalagem tocando **Mais** > **Replicar**. Isso replicará o pacote no ambiente de publicação do AEM conectado.
 
