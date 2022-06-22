@@ -2,11 +2,11 @@
 title: Gerenciar ativos digitais
 description: Saiba mais sobre vários métodos de edição e gerenciamento de ativos
 contentOwner: AG
-mini-toc-levels: 1
+mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 13537eef0aa222b943e7d6f86a8acb8f98dc669b
+source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
 workflow-type: tm+mt
 source-wordcount: '4326'
 ht-degree: 11%
@@ -514,7 +514,7 @@ Você também pode optar por imprimir somente as anotações ou o status da revi
 Para imprimir as anotações e o status da revisão, toque/clique no botão **[!UICONTROL Imprimir]** e siga as instruções no assistente. O **[!UICONTROL Imprimir]** aparece na barra de ferramentas somente quando o ativo tem pelo menos um status de anotação ou revisão atribuído a ele.
 
 1. Na interface do usuário do Assets, abra a página de visualização de um ativo.
-1. Faça uma das seguintes opções:
+1. Siga uma das seguintes opções:
 
    * Para imprimir todas as anotações e o status da revisão, pule a etapa 3 e vá diretamente para a etapa 4.
    * Para imprimir anotações específicas e revisar o status, abra o [linha do tempo](/help/assets/manage-digital-assets.md#timeline) e então vá para a etapa 3.

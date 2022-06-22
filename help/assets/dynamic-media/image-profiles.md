@@ -4,9 +4,9 @@ description: Saiba como criar Perfis de imagem do Dynamic Media que contêm conf
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: ee44aa9dd6b7977bfa5460ded4b02f1fcbc67096
+source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
 workflow-type: tm+mt
-source-wordcount: '3234'
+source-wordcount: '3271'
 ht-degree: 9%
 
 ---
@@ -53,6 +53,14 @@ Em **[!UICONTROL Tirar nitidez da máscara]**, você tem as seguintes opções d
 A nitidez é descrita em [Nitidez de imagens](/help/assets/dynamic-media/assets/sharpening_images.pdf).
 
 ## Opções de corte {#crop-options}
+
+Quando você implementa o Recorte inteligente em imagens, o Adobe recomenda a seguinte prática recomendada e aplica o seguinte limite:
+
+| Tipo de limite | Prática recomendada | Limite implementado |
+| --- | --- | --- |
+| Número de Recortes Inteligentes por imagem | 5 | 100 |
+
+Consulte também [Limitações do Dynamic Media](/help/assets/dynamic-media/limitations.md).
 
 <!-- CQDOC-16069 for the paragraph directly below -->
 
@@ -173,7 +181,7 @@ Você pode reprocessar ativos em uma pasta que já tenha um perfil de vídeo exi
 
 **Para aplicar um Perfil de imagem do Dynamic Media globalmente:**
 
-1. Faça uma das seguintes opções:
+1. Siga uma das seguintes opções:
 
    * Navegar para `https://&lt;AEM server&gt;/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam` e aplique o perfil apropriado e selecione **[!UICONTROL Salvar]**.
 
