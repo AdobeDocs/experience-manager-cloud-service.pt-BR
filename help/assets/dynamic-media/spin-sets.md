@@ -4,7 +4,7 @@ description: Saiba como trabalhar com conjuntos de rotação no Dynamic Media.
 feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
+source-git-commit: a2bbc64051214efa83d74d414e2e5f1407433127
 workflow-type: tm+mt
 source-wordcount: '1927'
 ht-degree: 9%
@@ -27,7 +27,7 @@ Os conjuntos de rotação são designados por um banner com a palavra **[!UICONT
 
 Quando você cria um Conjunto de rotação, o Adobe recomenda a seguinte prática recomendada e aplica o seguinte limite:
 
-| Tipo de limite | Prática recomendada | Limite implementado |
+| Tipo de limite | Prática recomendada | Limite imposto |
 | --- | --- | --- |
 | Número máximo de linhas/colunas por conjunto 2D | 12 a 18 imagens por conjunto | 1000 |
 
@@ -119,7 +119,7 @@ Esta seção descreve como criar Conjuntos de rotação.
 
 Quando você cria um Conjunto de rotação, o Adobe recomenda a seguinte prática recomendada e aplica o seguinte limite:
 
-| Tipo de limite | Prática recomendada | Limite implementado |
+| Tipo de limite | Prática recomendada | Limite imposto |
 | --- | --- | --- |
 | Número máximo de linhas/colunas por conjunto 2D | 12 a 18 imagens por conjunto | 1000 |
 

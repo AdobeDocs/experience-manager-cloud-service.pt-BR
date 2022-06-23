@@ -4,9 +4,9 @@ description: Saiba como criar Perfis de imagem do Dynamic Media que contêm conf
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
+source-git-commit: a2bbc64051214efa83d74d414e2e5f1407433127
 workflow-type: tm+mt
-source-wordcount: '3271'
+source-wordcount: '3277'
 ht-degree: 9%
 
 ---
@@ -56,9 +56,9 @@ A nitidez é descrita em [Nitidez de imagens](/help/assets/dynamic-media/assets/
 
 Quando você implementa o Recorte inteligente em imagens, o Adobe recomenda a seguinte prática recomendada e aplica o seguinte limite:
 
-| Tipo de limite | Prática recomendada | Limite implementado |
-| --- | --- | --- |
-| Número de Recortes Inteligentes por imagem | 5 | 100 |
+| Tipo de limite | Prática recomendada | Limite imposto | Alteração do limite em 31 de dezembro de 2022 |
+| --- | --- | --- | --- |
+| Número de Recortes Inteligentes por imagem | 5 | 100 | 20 |
 
 Consulte também [Limitações do Dynamic Media](/help/assets/dynamic-media/limitations.md).
 

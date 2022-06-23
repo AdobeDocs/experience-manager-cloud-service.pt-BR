@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/Dynamic-Media-Classic
 geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
 feature: Dynamic Media Classic,Asset Management,Viewers,Image Sets,Spin Sets,eCatalog
 role: User
-source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
+source-git-commit: a2bbc64051214efa83d74d414e2e5f1407433127
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 3%
+source-wordcount: '189'
+ht-degree: 6%
 
 ---
 
@@ -28,13 +28,13 @@ Este tópico inclui as seguintes seções:
 
 Quando você cria um Conjunto de rotação ou um Conjunto de imagens, ou faz upload de PDF para extração de página, o Adobe recomenda as seguintes práticas recomendadas e impõe os seguintes limites:
 
-| Ativo - Tipo de limite | Prática recomendada | Limite implementado | Alterações no limite de 31 de dezembro de 2022 |
+| Ativo - Tipo de limite | Prática recomendada | Limite imposto | Alteração do limite em 31 de dezembro de 2022 |
 | --- | --- | --- | --- |
-| **Imagem** - Número de Smart Crops por imagem | 5 | 100 |  |
-| **Conjunto de imagens** - Número de ativos duplicados por conjunto | Sem duplicatas | 100 | 20 |
-| **Conjunto de imagens** - Número máximo de imagens por conjunto | 5 a 10 imagens por conjunto | 1000 |
-| **Conjunto de rotação** - Número máximo de linhas/colunas por conjunto 2D | 12 a 18 imagens por conjunto | 1000 |
-| **PDF** - Número máximo de páginas para um PDF a ser considerado para extração |  | 5000 (para novos uploads) | 100 |
+| **Imagem** - Número de Smart Crops por imagem | 5 | 100 | 20 |
+| **Todos os conjuntos** - Número de ativos duplicados por conjunto | Sem duplicatas | 20º | Não aplicável |
+| **Todos os conjuntos** - Número máximo de ativos por conjunto | 5 a 10 imagens por conjunto | 1000 | Não aplicável |
+| **Conjunto de rotação** - Número máximo de linhas/colunas por conjunto 2D | 12 a 18 imagens por conjunto | 1000 | Não aplicável |
+| **PDF** - Número máximo de páginas para um PDF a ser considerado para extração |  | 5000 (para novos uploads) | 100 (para todos os PDF) |
 
 <!-- See also [Dynamic Media limitations](/help/assets/limitations.md). -->
 
