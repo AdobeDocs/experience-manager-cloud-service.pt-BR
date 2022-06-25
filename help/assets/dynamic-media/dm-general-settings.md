@@ -9,9 +9,9 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: a4d28786-cffa-42ab-98d3-90a15313e401
-source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
+source-git-commit: ccd52d147b1739330c3cb5a7d1952a7e9eec71ad
 workflow-type: tm+mt
-source-wordcount: '2522'
+source-wordcount: '2525'
 ht-degree: 4%
 
 ---
@@ -136,7 +136,7 @@ Você pode criar modelos a partir de arquivos Adobe® Photoshop®, manter camada
 
 ### Guia PDF {#pdf-tab}
 
-O número máximo de páginas para um PDF a ser considerado para extração é de 5000 para novos uploads. Esse limite será alterado para 100 páginas em 31 de dezembro de 2022. Consulte também [Limitações do Dynamic Media](/help/assets/dynamic-media/limitations.md).
+O número máximo de páginas para um PDF a ser considerado para extração é de 5000 para novos uploads. Esse limite será alterado para 100 páginas (para todos os PDF) em 31 de dezembro de 2022. Consulte também [Limitações do Dynamic Media](/help/assets/dynamic-media/limitations.md).
 
 Você pode optar por rasterizar os arquivos, extrair palavras de pesquisa e links, definir a resolução e escolher um espaço de cores.
 
