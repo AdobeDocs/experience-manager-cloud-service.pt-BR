@@ -2,10 +2,10 @@
 title: Editar as propriedades da página
 description: Defina as propriedades desejadas para uma página
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: e51490a9422dab3cc4980eb1d2288d7c264343be
+source-git-commit: 73adc2a9cad7f3e5dde723d1b3d695f8cec3ca69
 workflow-type: tm+mt
-source-wordcount: '1966'
-ht-degree: 55%
+source-wordcount: '1987'
+ht-degree: 54%
 
 ---
 
@@ -98,7 +98,8 @@ As propriedades são distribuídas por várias guias.
 
    * **Idioma** - O idioma da página
    * **Raiz do idioma** - Deve ser verificado se a página é a raiz de uma cópia de idioma
-   * **Redirecionar** - Indica a página para a qual esta página deve redirecionar automaticamente
+   * **Redirecionar** - Indica a página para a qual esta página deve redirecionar automaticamente com um HTML `302 Found` status.
+      * **Redirecionamento permanente** - Quando marcado, a página redireciona para o caminho de destino fornecido junto com um HTML `301 Moved Permanently` status.
    * **Design** - Indica se a página está visível ou oculta na navegação de página do site resultante
    * **Alias** - Especifica um alias a ser usado com esta página
       * Por exemplo, se você definir um alias de `private` para a página `/content/wknd/us/en/magazine/members-only`, esta página também pode ser acessada via `/content/wknd/us/en/magazine/private`
