@@ -3,9 +3,9 @@ title: Configurar o Dynamic Media Cloud Service
 description: Saiba como configurar o Dynamic Media no Adobe Experience Manager as a Cloud Service.
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 5512f5f22336916e66300b82aaff578df3e05b1d
+source-git-commit: fc07b12f7a35b4f772a0ac4f9e6b09a1287eec8b
 workflow-type: tm+mt
-source-wordcount: '3537'
+source-wordcount: '3574'
 ht-degree: 3%
 
 ---
@@ -272,6 +272,9 @@ Consulte [Fazer upload de ativos](/help/assets/add-assets.md).
 
 1. Faça logon no Experience Manager as a Cloud Service como administrador do produto.
 1. No Experience Manager as a Cloud Service , selecione o logotipo Experience Manager as a Cloud Service para acessar o console de navegação global e, em seguida, acesse **[!UICONTROL Geral > CRXDE Lite]**.
+
+   Se você não tiver acesso ao CRXDE Lite, consulte [Uso do CRXDE Lite](/help/implementing/developing/tools/crxde.md).
+
 1. No painel à esquerda, navegue até o seguinte:
 
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`
@@ -326,6 +329,8 @@ Você pode adicionar tipos MIME personalizados para formatos não compatíveis n
 
 1. Retorne à guia do navegador que tem seu console Experience Manager as a Cloud Service aberto.
 1. Do Experience Manager as a Cloud Service, vá para **[!UICONTROL Ferramentas > Geral > CRXDE Lite]**.
+
+   Se você não tiver acesso ao CRXDE Lite, consulte [Uso do CRXDE Lite](/help/implementing/developing/tools/crxde.md).
 
    ![Ferramentas > Geral > CRXDE Lite](assets/2019-08-02_16-55-41.png)
 
@@ -382,6 +387,8 @@ A fila Fluxo de trabalho do Granite é usada para fluxos de trabalho não transi
 >[!NOTE]
 >
 >Você deve estar conectado ao Experience Manager as a Cloud Service como administrador do produto para concluir esta tarefa.
+
+Se você não tiver acesso ao OSGi, consulte [Configuração do OSGi](/help/implementing/developing/components/overview.md#osgi-configuration).
 
 **Para atualizar os threads de trabalho predefinidos da Fila de fluxo de trabalho do Granite (ativos de vídeo):**
 
