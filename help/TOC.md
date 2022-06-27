@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Recursos de autoajuda e links de documentação da visão geral do Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 181a2d63972cc1d9d6c2a621771d28008114f763
+source-git-commit: 46a6871b1117b38e9138375073c9b71800e4b972
 workflow-type: tm+mt
-source-wordcount: '3602'
-ht-degree: 97%
+source-wordcount: '3606'
+ht-degree: 96%
 
 ---
 
@@ -453,6 +453,7 @@ ht-degree: 97%
       + [Remover dependências externas de instalações existentes](/help/assets/remove-external-dependencies.md)
       + [Configurar o [!DNL enhanced connector]  para o [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
       + [Atualizar o [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
+      + [Configurar o mapeamento de metadados de ativos](/help/assets/configure-asset-metadata-mapping.md)
 + Forms {#forms}
    + [Introdução](/help/forms/home.md)
    + [Principais recursos](/help/forms/key-features.md)
