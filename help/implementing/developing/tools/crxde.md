@@ -2,7 +2,7 @@
 title: Uso do CRXDE Lite
 description: O CRXDE Lite faz parte do AEM quickstart e está disponível para você acessar e modificar o repositório em seus ambientes de desenvolvimento local no navegador.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: ae79dbf490c5e8b819c287b3013bbd93cdb6a59f
+source-git-commit: a9c646d24378e67df84c00a4355c692cac85e50b
 workflow-type: tm+mt
 source-wordcount: '1693'
 ht-degree: 4%
@@ -94,7 +94,7 @@ Para poder ver as informações de controle de acesso, o usuário conectado ao C
 
 O **Guia Replicação** exibe o status de replicação do nó atual. Você pode replicar e excluir o nó atual.
 
-###  Guia Console {#console-tab}
+### Guia Console {#console-tab}
 
 O **Guia Console** exibe mensagens de log. Você pode configurar o nível de log, limpar o console, fixar na posição de rolagem selecionada e ativar/desativar a exibição de mensagens.
 
@@ -137,7 +137,7 @@ O **Botão Colar** cola o nó copiado no nó selecionado.
 
 O **Botão Mover** move o nó selecionado para o nó definido na caixa de diálogo.
 
-### Renomeie {#rename-button}
+### Renomear {#rename-button}
 
 O **Botão Renomear** renomeia o nó selecionado.
 
