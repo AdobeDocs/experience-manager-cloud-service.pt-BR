@@ -4,9 +4,9 @@ description: Adicione seus ativos digitais ao [!DNL Adobe Experience Manager] co
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 1b68322b63fdbf8dab5a7dbd37dd1143f026c051
+source-git-commit: a715594f74187ad61cdea566274723d170fd3783
 workflow-type: tm+mt
-source-wordcount: '2948'
+source-wordcount: '3029'
 ht-degree: 1%
 
 ---
@@ -155,6 +155,11 @@ A imagem a seguir ilustra os vários estágios ao assimilar ativos no Experience
 >
 >Crie o contêiner ou o bucket da conta de armazenamento como privado e aceite as conexões somente de solicitações autorizadas. No entanto, não há suporte para restrições adicionais sobre conexões de rede de entrada.
 
+>[!NOTE]
+>
+>As contas de armazenamento externo podem ter regras de nome de arquivo/pasta diferentes da ferramenta Importação em massa. Consulte [Manuseio de nomes de arquivo durante a importação em massa](#filename-handling-bulkimport) para obter mais detalhes sobre nomes não permitidos/removidos.
+
+
 ### Configurar a ferramenta Importação em massa {#configure-bulk-ingestor-tool}
 
 Para configurar a ferramenta Importação em massa, siga estas etapas:
@@ -216,6 +221,15 @@ Selecione a configuração e clique em **[!UICONTROL Execução de prática]** p
 Ao importar ativos ou pastas em massa, [!DNL Experience Manager Assets] importa toda a estrutura do que existe na fonte de importação. [!DNL Experience Manager] O segue as regras incorporadas para caracteres especiais nos nomes de ativo e pasta, portanto, esses nomes de arquivo precisam de limpeza. Para o nome da pasta e do ativo, o título definido pelo usuário permanece inalterado e é armazenado em `jcr:title`.
 
 Durante a importação em massa, [!DNL Experience Manager] procure as pastas existentes para evitar a reimportação de ativos e pastas, e também verifique as regras de limpeza aplicadas na pasta principal em que a importação ocorre. Se as regras de limpeza forem aplicadas na pasta pai, as mesmas regras serão aplicadas à fonte de importação. Para nova importação, as seguintes regras de privatização são aplicadas para gerenciar os nomes de arquivo de ativos e pastas.
+
+**Nomes não permitidos na importação em massa**
+
+Os seguintes caracteres não são permitidos nos nomes de arquivo e pasta:
+
+* Caracteres de uso privado e de controle (0x00 a 0x1F, \u0081, \uE000)
+* Nomes de arquivos ou pastas terminando com um ponto (.)
+
+Arquivos ou pastas com nomes que correspondem a essas condições são ignorados durante o processo de importação e marcados como falha.
 
 **Manuseio do nome do ativo na importação em massa**
 
@@ -380,7 +394,7 @@ Detalhes técnicos das APIs e protocolo de upload, além de links para SDK de c�
 >[!MORELIKETHIS]
 >
 >* Aplicativo de desktop do [[!DNL Adobe Experience Manager]  ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
->* [Sobre [!DNL Adobe Asset Link]](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
+>* [Sobre [!DNL Adobe Asset Link]](https://www.adobe.com/br/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [[!DNL Adobe Asset Link] documentação](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
 >* [Referência técnica para upload de ativos](developer-reference-material-apis.md#asset-upload)
 
