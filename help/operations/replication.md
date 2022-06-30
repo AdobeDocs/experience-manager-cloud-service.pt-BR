@@ -2,9 +2,9 @@
 title: Replicação
 description: Distribuição e solução de problemas da replicação.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 50754c886c92a121c5bb20449561694f8e42b0ac
+source-git-commit: 5791410fd5956cd8b82d4ed03f3920ade3bfedcb
 workflow-type: tm+mt
-source-wordcount: '1363'
+source-wordcount: '1216'
 ht-degree: 4%
 
 ---
@@ -40,25 +40,6 @@ A opção Gerenciar publicação oferece mais opções do que a Publicação rá
 A inclusão dos filhos de uma pasta na opção &quot;publicar mais tarde&quot; chamará o fluxo de trabalho Publicar árvore de conteúdo, descrito neste artigo.
 
 Você pode encontrar informações mais detalhadas sobre Gerenciar publicação no [Documentação de Princípios básicos de publicação](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication).
-
-### Ativação de árvore {#tree-activation}
-
->[!NOTE]
->
->Essa abordagem deve ser considerada obsoleta e será removida em ou após 30 de setembro de 2021, pois não persiste nos status e é menos escalável do que outras abordagens. Em vez disso, os métodos do workflow são usados para gerenciar a publicação
-
-Para executar uma ativação de árvore:
-
-1. No AEM menu Iniciar, navegue até **Ferramentas > Implantação > Distribuição**
-2. Selecione o cartão **publicar**
-3. Uma vez na interface do usuário do console da Web de publicação, **selecione Distribuir**
-
-   ![Distribuir](assets/publish-distribute.png "Distribuir")
-4. Selecione o caminho no navegador de caminho, escolha adicionar um nó, árvore ou excluir conforme necessário e selecione **Enviar**
-
-Para um melhor desempenho, siga estas diretrizes ao usar este recurso:
-* Recomenda-se replicar menos de 100 caminhos de cada vez, com um limite rígido de 500 caminhos.
-* O tamanho total do conteúdo replicado deve ser inferior a 10 MB. Isso inclui apenas os nós e propriedades, mas não qualquer binário, que incluem pacotes de fluxo de trabalho e pacotes de conteúdo.
 
 ### documentação Fluxo de trabalho de publicação da árvore de conteúdo {#publish-content-tree-workflow}
 
@@ -133,7 +114,7 @@ O workflow processa o conteúdo em partes, cada uma representando um subconjunto
 
 ### API de replicação {#replication-api}
 
-Você pode publicar conteúdo usando a API de substituição em AEM as a Cloud Service.
+Você pode publicar conteúdo usando a API de replicação em AEM as a Cloud Service.
 
 Para obter mais informações, consulte o [Documentação da API](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/day/cq/replication/package-summary.html).
 
@@ -192,9 +173,12 @@ Caso não forneça esse filtro e use apenas o agente &quot;publicar&quot;, o age
 O `ReplicationStatus` de um recurso só será modificado se a ação de replicação incluir pelo menos um agente que esteja ativo por padrão. No exemplo acima, isso não ocorre, pois a replicação está usando apenas o agente &quot;preview&quot;. Portanto, é necessário usar o novo `getStatusForAgent()` , que permite consultar o status de um agente específico. Esse método também funciona para o agente &quot;publicar&quot;. Retorna um valor não nulo se houver alguma ação de replicação feita usando o agente fornecido.
 
 
-**Caminho e limites de tamanho da API de replicação**
+**Limites de capacidade da API de replicação**
 
-Recomenda-se replicar menos de 100 caminhos, sendo 500 o limite rígido. Acima do limite rígido, um ReplicationException será lançado. Se a lógica do aplicativo não exigir replicação atômica, esse limite poderá ser ultrapassado definindo ReplicationOptions.setUseAtomicCalls como false, o que aceitará qualquer número de caminhos, mas criará compartimentos internamente para permanecer abaixo desse limite. A quantidade de conteúdo transmitido por chamada de replicação não deve exceder 10 MB, o que inclui os nós e as propriedades, mas não qualquer binário (pacotes de fluxo de trabalho e pacotes de conteúdo são considerados binários).
+Recomenda-se replicar menos de 100 caminhos de cada vez, sendo 500 o limite rígido. Acima do limite rígido, uma `ReplicationException` será jogada.
+Se a lógica do aplicativo não exigir replicação atômica, esse limite poderá ser ultrapassado definindo a variável `ReplicationOptions.setUseAtomicCalls` como falso, o que aceitará qualquer número de caminhos, mas criará compartimentos internamente para permanecer abaixo desse limite.
+
+O tamanho do conteúdo transmitido por chamada de replicação não deve exceder `10 MB`. Isso inclui os nós e as propriedades, mas não qualquer binário (os pacotes de fluxo de trabalho e os pacotes de conteúdo são considerados binários).
 
 ## Resolução de problemas {#troubleshooting}
 

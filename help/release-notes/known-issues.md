@@ -2,10 +2,10 @@
 title: Problemas conhecidos
 description: Problemas conhecidos com o Adobe Experience Manager as a Cloud Service
 exl-id: 897b944a-d320-4d21-91f4-2cd3da6179b1
-source-git-commit: 8ec0ce3425e7cade0a6774a4452d4f47ab971375
+source-git-commit: 755c0072148ad73486df2ccfed69248b9d73ec2a
 workflow-type: tm+mt
-source-wordcount: '111'
-ht-degree: 100%
+source-wordcount: '177'
+ht-degree: 66%
 
 ---
 
@@ -17,9 +17,16 @@ Este artigo lista os problemas conhecidos da oferta [!DNL Adobe Experience Manag
 
 <!-- 
 ## Platform {#platform}
+-->
 
 ## Sites {#sites}
--->
+
+Alguns problemas conhecidos no [!DNL Sites] são:
+
+* No GraphQL IDE é possível [gerencie o cache de suas consultas persistentes](/help/headless/graphql-api/graphiql-ide.md##managing-cache).
+   * Na primeira vez em que os valores salvos para os cabeçalhos são definidos como `0` (em vez dos valores padrão) - se o usuário não tiver alterado esses valores na caixa de diálogo.
+   * Nos salvamentos subsequentes, os valores são salvos corretamente.
+   * Portanto, o usuário precisa salvar os cabeçalhos duas vezes.
 
 ## [!DNL Assets] {#assets}
 
