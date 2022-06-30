@@ -2,7 +2,7 @@
 title: Headful e Headless no AEM
 description: AEM projetos podem ser implementados em um modelo headful e sem interface, mas a escolha não é binária. AEM oferece a flexibilidade para explorar as vantagens de ambos os modelos em um projeto.
 exl-id: 709850ca-7757-47ab-9625-f411121cde2c
-source-git-commit: e592dd7a3a717259493f23943933fe3d0e71b7ab
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1009'
 ht-degree: 1%
@@ -53,18 +53,18 @@ SPA integração se enquadra em um espectro de quatro níveis em AEM.
    * Os SPA e AEM existem separadamente e não trocam informações.
    * O conteúdo é criado, gerenciado e entregue de maneira independente em dois sistemas separados.
 * **Nível 1: Integração do fragmento de conteúdo**
-   * [Fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md) são usados no AEM para criar e gerenciar conteúdo limitado para o SPA.
+   * [Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments.md) são usados no AEM para criar e gerenciar conteúdo limitado para o SPA.
    * O SPA recupera esse conteúdo via AEM [API GraphQL.](/help/headless/graphql-api/content-fragments.md)
    * Alguns conteúdos são gerenciados no AEM e outros em um sistema externo.
    * O conteúdo só pode ser visualizado no SPA.
 * **Nível 2: Incorpore o SPA no AEM**
-   * [Fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md) são usados no AEM para criar e gerenciar conteúdo para o SPA.
+   * [Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments.md) são usados no AEM para criar e gerenciar conteúdo para o SPA.
    * O SPA recupera esse conteúdo via AEM [API GraphQL.](/help/headless/graphql-api/content-fragments.md)
    * Alguns conteúdos são gerenciados no AEM e outros em um sistema externo.
    * O conteúdo pode ser visualizado em contexto no AEM.
    * Conteúdo limitado pode ser editado no AEM.
 * **Nível 3: Incorporar e ativar totalmente o SPA no AEM**
-   * [Fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md) são usados no AEM para criar e gerenciar conteúdo para o SPA.
+   * [Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments.md) são usados no AEM para criar e gerenciar conteúdo para o SPA.
    * O SPA recupera esse conteúdo via AEM [API GraphQL.](/help/headless/graphql-api/content-fragments.md)
    * O conteúdo pode ser visualizado em contexto no AEM.
    * A maioria do conteúdo pode ser editada no AEM.

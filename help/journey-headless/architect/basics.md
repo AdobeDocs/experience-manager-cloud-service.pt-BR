@@ -2,7 +2,7 @@
 title: Conheça as noções básicas da modelagem de conteúdo
 description: Saiba mais sobre a base de modelagem de conteúdo para seu CMS sem cabeçalho usando Fragmentos de conteúdo.
 exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 5%
@@ -149,12 +149,12 @@ Agora que você aprendeu o básico, o próximo passo é [Saiba mais sobre como c
 
 ## Recursos adicionais {#additional-resources}
 
-* [Modelos de fragmentos do conteúdo](/help/assets/content-fragments/content-fragments-models.md)
+* [Modelos de fragmentos do conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 
-   * [Modelos de fragmentos do conteúdo - Tipos de dados](/help/assets/content-fragments/content-fragments-models.md#data-types)
+   * [Modelos de fragmentos do conteúdo - Tipos de dados](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
 
 * [Conceitos de criação](/help/sites-cloud/authoring/getting-started/concepts.md)
 
 * [Manuseio básico](/help/sites-cloud/authoring/getting-started/basic-handling.md) - esta página se baseia principalmente no **Sites** , mas muitos/a maioria dos recursos também são relevantes para a criação **Fragmentos de conteúdo** nos termos do **Ativos** console.
 
-* [Trabalho com fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md)
+* [Trabalho com fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments.md)

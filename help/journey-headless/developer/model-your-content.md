@@ -2,7 +2,7 @@
 title: Como modelar seu conteúdo
 description: Nesta parte da Jornada do desenvolvedor sem cabeçalho AEM, saiba como modelar o conteúdo para AEM entrega sem cabeçalho usando a Modelagem de conteúdo com modelos de fragmentos de conteúdo e fragmentos de conteúdo.
 exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
-source-git-commit: c25bdab65a742e8ffc3a1579474f4589e04abce9
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1830'
 ht-degree: 2%
@@ -270,10 +270,10 @@ Agora que você aprendeu a modelar sua estrutura e criar conteúdo dependente di
 
 ## Recursos adicionais {#additional-resources}
 
-* [Trabalhar com fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md) - a página de lead para Fragmentos de conteúdo
-   * [Fragmentos de conteúdo no navegador de configuração](/help/assets/content-fragments/content-fragments-configuration-browser.md) - ativar a funcionalidade de Fragmento de conteúdo no Navegador de configuração
-   * [Modelos de fragmentos do conteúdo](/help/assets/content-fragments/content-fragments-models.md) - criação e edição dos modelos de fragmento de conteúdo
-   * [Gerenciamento de fragmentos de conteúdo](/help/assets/content-fragments/content-fragments-managing.md) - criação e criação de Fragmentos de conteúdo; esta página o levará a outras seções detalhadas
+* [Trabalhar com fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments.md) - a página de lead para Fragmentos de conteúdo
+   * [Fragmentos de conteúdo no navegador de configuração](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md) - ativar a funcionalidade de Fragmento de conteúdo no Navegador de configuração
+   * [Modelos de fragmentos do conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) - criação e edição dos modelos de fragmento de conteúdo
+   * [Gerenciamento de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md) - criação e criação de Fragmentos de conteúdo; esta página o levará a outras seções detalhadas
 * [AEM Esquemas GraphQL](access-your-content.md) - como o GraphQL realiza modelos
 * [A estrutura do fragmento de conteúdo de amostra](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql)
 * [Introdução ao AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=pt-BR) - Uma breve série de tutoriais em vídeo que fornece uma visão geral do uso de recursos AEM sem periféricos, incluindo modelagem de conteúdo e GraphQL

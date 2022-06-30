@@ -2,7 +2,7 @@
 title: Introdução ao AEM Headless as a Cloud Service
 description: Nesta parte do AEM Headless Developer Jornada, saiba mais sobre AEM pré-requisitos headless.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: c4490690edb1ec0e2a6b8cca724fe9c290650bc8
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '3058'
 ht-degree: 4%
@@ -285,8 +285,8 @@ Embora seja recomendável seguir para a próxima parte da jornada de desenvolvim
 * [Convenções de nomenclatura](/help/implementing/developing/introduction/naming-conventions.md) - Documentação técnica das restrições de nomenclatura de página no AEM
 * [Gerenciador de vários sites e tradução](/help/sites-cloud/administering/msm-and-translation.md) - Documentação técnica sobre AEM recursos avançados de tradução
 * [Fluxos de trabalho AEM](/help/sites-cloud/authoring/workflows/overview.md) - Documentação técnica sobre como automatizar workflows no AEM
-* [Fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md) - Documentação técnica dos Fragmentos de conteúdo.
-* [Modelos de fragmentos do conteúdo](/help/assets/content-fragments/content-fragments-models.md) - Documentação técnica dos Modelos de fragmento de conteúdo.
+* [Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments.md) - Documentação técnica dos Fragmentos de conteúdo.
+* [Modelos de fragmentos do conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) - Documentação técnica dos Modelos de fragmento de conteúdo.
 * [Documentação técnica da GraphQL](https://graphql.org) - A definição GraphQL (link externo)
 * [API GraphQL](/help/headless/graphql-api/content-fragments.md) - Documentação técnica que explica como criar solicitações para acessar e fornecer Fragmentos de conteúdo
 * [API REST de ativos](/help/assets/content-fragments/assets-api-content-fragments.md) - Documentação técnica que explica como criar e modificar Fragmentos de conteúdo (e outros ativos)

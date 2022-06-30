@@ -4,7 +4,7 @@ description: Saiba como configurar a Estrutura de integração de tradução par
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: 3c37b66b63ed19635854cf277aaf7d5f2a7c1fe8
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1522'
 ht-degree: 2%
@@ -109,7 +109,7 @@ As propriedades de ativos controlam como configurar ativos. Para obter mais info
 | Traduzir tags | Ative essa propriedade para traduzir tags associadas ao ativo. |
 | Executar tradução automaticamente | Selecione essa propriedade para executar trabalhos de tradução automaticamente após a criação de projetos de tradução. Você não tem uma oportunidade de revisar ou escoar o trabalho de tradução ao selecionar essa opção. |
 | Desativar Tradução Somente Atualização | Quando essa opção estiver marcada, a atualização do projeto de tradução enviará todos os campos traduzíveis para tradução, não apenas os alterados desde a última tradução. |
-| Ativar campos do modelo de conteúdo para tradução | Ativar essa opção usará o **Traduzível** no campo [Modelos de fragmentos do conteúdo](/help/assets/content-fragments/content-fragments-models.md#properties) para determinar se o campo é traduzido e cria automaticamente [regras de tradução](rules.md) em conformidade. Essa opção substitui todas as regras de tradução criadas por você. |
+| Ativar campos do modelo de conteúdo para tradução | Ativar essa opção usará o **Traduzível** no campo [Modelos de fragmentos do conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties) para determinar se o campo é traduzido e cria automaticamente [regras de tradução](rules.md) em conformidade. Essa opção substitui todas as regras de tradução criadas por você. |
 
 ## Configuração de páginas para tradução {#configuring-pages-for-translation}
 

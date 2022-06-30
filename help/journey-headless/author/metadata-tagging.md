@@ -2,10 +2,10 @@
 title: Saiba mais sobre como definir metadados e marcação para fragmentos de conteúdo
 description: Saiba mais sobre como definir metadados e marcação para fragmentos de conteúdo
 exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: 0b953e0155fa1b90b5bccbf10b9ceaf1c1f63ae7
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 14%
+source-wordcount: '241'
+ht-degree: 15%
 
 ---
 
@@ -28,7 +28,7 @@ Este artigo se baseia neles para que você entenda como usar metadados e marcaç
 
 Há três métodos que você pode usar para adicionar metadados e tags:
 
-* Ao criar o fragmento pela primeira vez:
+* Ao criar o fragmento pela primeira vez (da variável **Ativos** console):
 
    ![Criar fragmento do conteúdo - fornecer nome](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
@@ -44,8 +44,8 @@ Agora é possível colocar todo esse conhecimento para usar e começar a criar F
 
 ## Recursos adicionais {#additional-resources}
 
-* [Metadados - propriedades dos fragmentos](/help/assets/content-fragments/content-fragments-metadata.md)
+* [Metadados - propriedades dos fragmentos](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md)
 
 * [Uso de tags](/help/sites-cloud/authoring/features/tags.md)
 
-* [Modelos de fragmentos do conteúdo - Permitir modelos de fragmentos do conteúdo na pasta Ativos](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+* [Modelos de fragmentos do conteúdo - Permitir modelos de fragmentos do conteúdo na pasta Ativos](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)

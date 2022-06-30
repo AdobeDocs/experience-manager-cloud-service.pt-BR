@@ -2,7 +2,7 @@
 title: Introdução e passo a passo do SPA
 description: Este artigo apresenta os conceitos de um SPA e aborda o uso de um aplicativo SPA básico para criação, mostrando como ele está relacionado ao Editor de SPA subjacente do AEM.
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1984'
 ht-degree: 2%
@@ -31,7 +31,7 @@ A apresentação é baseada na funcionalidade de AEM padrão e no aplicativo de 
 
 >[!TIP]
 >
->Qualquer projeto AEM deve aproveitar [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), que suporta projetos SPA usando o React ou Angular e aproveita o SDK SPA.
+>Qualquer projeto AEM deve aproveitar [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR), que suporta projetos SPA usando o React ou Angular e aproveita o SDK SPA.
 
 ### O que é um SPA? {#what-is-a-spa}
 
@@ -177,7 +177,7 @@ A próxima seção, [Carregando um aplicativo SPA](#loading-a-spa-application), 
 
    ![JSON da página inicial do Projeto SPA WKND](assets/wknd-json.png)
 
-   O Editor de SPA AEM aproveita [AEM Content Services](/help/assets/content-fragments/content-fragments.md) para fornecer todo o conteúdo da página como um modelo JSON.
+   O Editor de SPA AEM aproveita [AEM Content Services](/help/sites-cloud/administering/content-fragments/content-fragments.md) para fornecer todo o conteúdo da página como um modelo JSON.
 
    Ao implementar interfaces específicas, os Modelos do Sling fornecem as informações necessárias para o SPA. A entrega dos dados JSON é delegada em baixo a cada componente (da página, ao parágrafo, ao componente etc.).
 
@@ -231,7 +231,7 @@ Na seção a seguir, exploraremos o contrato que permite que o Editor de SPA rel
 
 ## Headful e Headless no AEM {#headful-headless}
 
-SPA pode ser ativado com níveis flexíveis de integração dentro do AEM incluindo SPA desenvolvido e mantido fora do AEM. Além disso, SPA pode ser aproveitado no AEM, além de usar AEM para fornecer conteúdo a endpoints adicionais sem interrupções.
+SPA pode ser ativado com níveis flexíveis de integração dentro do AEM incluindo SPA desenvolvidos e mantidos fora do AEM. Além disso, SPA pode ser aproveitado no AEM, além de usar AEM para fornecer conteúdo a endpoints adicionais sem interrupções.
 
 >[!TIP]
 >

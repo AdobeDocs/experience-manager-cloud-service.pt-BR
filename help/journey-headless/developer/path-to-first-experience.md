@@ -2,7 +2,7 @@
 title: Caminho para sua primeira experiência usando AEM headless
 description: Nesta parte da Jornada de desenvolvedores sem cabeçalho do AEM, você entenderá as etapas para implementar sua primeira experiência sem periféricos em AEM incluindo considerações de planejamento e também aprenderá as práticas recomendadas para tornar seu caminho o mais tranquilo possível.
 exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
-source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '2014'
 ht-degree: 1%
@@ -149,6 +149,6 @@ Embora seja recomendável seguir para a próxima parte da jornada de desenvolvim
 * [WKND de guias de AEM - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) - Este projeto do GitHub inclui aplicativos de exemplo que destacam AEM APIs GraphQL.
 * [Introdução à arquitetura do Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) - Uma visão geral completa da arquitetura AEM
 * [Configuração Sem Cabeça](/help/headless/introduction.md#getting-started) - Uma rápida introdução AEM recursos sem periféricos para usuários já com conhecimento de AEM.
-* [Criar modelos de fragmento de conteúdo](/help/assets/content-fragments/content-fragments-models.md) - Documentação técnica sobre modelos de fragmento de conteúdo
-* [Criar fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md) - Documentação técnica sobre fragmentos de conteúdo
+* [Criar modelos de fragmento de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) - Documentação técnica sobre modelos de fragmento de conteúdo
+* [Criar fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments.md) - Documentação técnica sobre fragmentos de conteúdo
 * [Consultar conteúdo com GraphQL](/help/headless/graphql-api/content-fragments.md) - Documentação técnica sobre a API GraphQL

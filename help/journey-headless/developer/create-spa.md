@@ -2,10 +2,10 @@
 title: Opcional - Como criar aplicativos de página única (SPA) com AEM
 description: Nesta continuação opcional da Jornada de desenvolvedor sem cabeçalho AEM, você aprenderá como AEM pode combinar a entrega sem cabeçalho com os recursos tradicionais de CMS de pilha completa e como criar SPA editáveis usando AEM estrutura SPA Editor.
 exl-id: d74848f2-683e-49e1-9374-32596ca5d7d7
-source-git-commit: 4a5967f682d122d20528b1d904590fb82f438fa7
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1273'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -126,5 +126,5 @@ Veja a seguir alguns recursos adicionais que aprofundam alguns conceitos mencion
 * [Visão geral do editor de SPA](/help/implementing/developing/hybrid/editor-overview.md) - Detalhes de como o Editor de SPA funciona
 * [Renderização do lado do servidor](/help/implementing/developing/hybrid/ssr.md) - Como configurar o SSR para AEM SPA
 * [Documentos de referência SPA](/help/implementing/developing/hybrid/reference-materials.md) - Referências da API JavaScript e links para projetos de código aberto AEM SPA GitHub
-* [Fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md) - Como criar Fragmentos de conteúdo
-* [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) - Modelo Maven que cria um projeto mínimo do Adobe Experience Manager (AEM) baseado em práticas recomendadas como ponto de partida para seu site
+* [Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments.md) - Como criar Fragmentos de conteúdo
+* [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR) - Modelo Maven que cria um projeto mínimo do Adobe Experience Manager (AEM) baseado em práticas recomendadas como ponto de partida para seu site

@@ -4,9 +4,9 @@ description: Saiba como usar o console Assets para gerenciar os Fragmentos de co
 feature: Content Fragments
 role: User
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: b1a1ef0021499872a712c1e4450af9765e46a1a9
+source-git-commit: bd589f689174f4da20e0f5e73a8786a3dee0f352
 workflow-type: tm+mt
-source-wordcount: '1758'
+source-wordcount: '1778'
 ht-degree: 9%
 
 ---
@@ -37,7 +37,7 @@ O [Editor de fragmentos de conteúdo](#opening-the-fragment-editor) fornece vár
 
 >[!NOTE]
 >
->Fragmentos de conteúdo são armazenados como **Ativos**, portanto, são gerenciadas principalmente na variável **Ativos** console.
+>Fragmentos de conteúdo são armazenados como **Ativos**. Agora, eles são gerenciados principalmente com a variável **[Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)** , embora ainda possam ser gerenciadas no **Ativos** console. Esta seção cobre a gestão da **Ativos** console.
 
 ## Criação de fragmentos de conteúdo {#creating-content-fragments}
 

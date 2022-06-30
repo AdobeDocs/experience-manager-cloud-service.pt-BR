@@ -4,7 +4,7 @@ description: Saiba como as regras de tradução identificam o conteúdo que prec
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: 0c75a367861c9e4c77ee537322fa49330c70db85
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1297'
 ht-degree: 1%
@@ -23,7 +23,7 @@ As regras de tradução identificam o conteúdo a ser traduzido para páginas, c
 
 As regras de tradução descritas neste documento se aplicam aos Fragmentos de conteúdo somente se a variável **Ativar campos do modelo de conteúdo para tradução** não foi ativada na [nível de configuração da estrutura de integração de tradução.](integration-framework.md#assets-configuration-properties)
 
-Se a variável **Ativar campos do modelo de conteúdo para tradução** estiver ativa, AEM usará a variável **Traduzível** no campo [Modelos de fragmentos do conteúdo](/help/assets/content-fragments/content-fragments-models.md#properties) para determinar se o campo deve ser traduzido e cria automaticamente regras de tradução de acordo. Essa opção substitui qualquer regra de tradução criada e não requer nenhuma intervenção ou etapas adicionais.
+Se a variável **Ativar campos do modelo de conteúdo para tradução** estiver ativa, AEM usará a variável **Traduzível** no campo [Modelos de fragmentos do conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties) para determinar se o campo deve ser traduzido e cria automaticamente regras de tradução de acordo. Essa opção substitui qualquer regra de tradução criada e não requer nenhuma intervenção ou etapas adicionais.
 
 Se você quiser usar regras de tradução para traduzir os Fragmentos de conteúdo, a variável **Ativar campos do modelo de conteúdo para tradução** a opção na configuração da estrutura de integração de tradução deve estar desativada e você precisa seguir as etapas descritas abaixo para criar suas regras.
 
