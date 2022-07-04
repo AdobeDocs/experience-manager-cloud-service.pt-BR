@@ -4,18 +4,14 @@ description: Integre um formulário adaptável ao Microsoft® Power Automate.
 hide: true
 hidefromtoc: true
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
-source-git-commit: 27aa5016d6bdc4a101ba044bf9e49c483ecdae13
+source-git-commit: ccc4d487cb180273284276cf9cdf18680a3efcb8
 workflow-type: tm+mt
-source-wordcount: '1197'
+source-wordcount: '1183'
 ht-degree: 0%
 
 ---
 
 # Conecte um formulário adaptável com o Microsoft® Power Automate {#connect-adaptive-form-with-power-automate}
-
->[!NOTE]
->
->O recurso está sob o programa de pré-lançamento e pode ser alterado significativamente antes do lançamento público.
 
 Você pode configurar um Formulário adaptável para executar um fluxo da Microsoft® Power Automate Cloud no envio. O formulário adaptável configurado envia dados capturados, anexos e documentos de registro para o Power Automate Cloud Flow para processamento. Ele ajuda você a criar uma experiência personalizada de captura de dados, aproveitando o poder do Microsoft® Power Automate para criar lógicas comerciais sobre dados capturados e automatizar os fluxos de trabalho do cliente. Estes são alguns exemplos do que você pode fazer após integrar um formulário adaptável com o Microsoft® Power Automate:
 
