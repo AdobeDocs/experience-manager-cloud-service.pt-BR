@@ -2,10 +2,10 @@
 title: Uma introdução às Comunicações as a Cloud Service do Forms
 description: Mesclar dados automaticamente com modelos XDP e PDF ou gerar saída nos formatos PCL, ZPL e PostScript
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 09452aa799fc59bfc08c59d69820aa22daf07e9f
+source-git-commit: 22018450f6d4383f3df6a9f5382a0ad6b4058480
 workflow-type: tm+mt
-source-wordcount: '1138'
-ht-degree: 1%
+source-wordcount: '1137'
+ht-degree: 2%
 
 ---
 
@@ -28,7 +28,7 @@ Uma declaração de cartão de crédito pode ser criada usando APIs de comunica�
 
 ## Geração de documentos
 
-As APIs de geração de documentos de comunicações ajudam a combinar um modelo (XFA ou PDF) com os dados do cliente ([Dados XML](#form-data)) para gerar documentos em Formatos de PDF e impressão, como PS, PCL, DPL, IPL e ZPL. Essas APIs utilizam [Templates PDF e XFA](#supported-document-types) com [Dados XML](communications-known-issues-limitations.md#form-data) para gerar um único documento sob demanda ou vários documentos usando um trabalho em lote.
+As APIs de geração de documentos de comunicações ajudam a combinar um modelo (XFA ou PDF) com dados do cliente (XML) para gerar documentos em Formatos de PDF e impressão, como formatos PS, PCL, DPL, IPL e ZPL. Essas APIs utilizam modelos PDF e XFA com [Dados XML](communications-known-issues-limitations.md#form-data) para gerar um único documento sob demanda ou vários documentos usando um trabalho em lote.
 
 Normalmente, você cria um modelo usando [Designer](use-forms-designer.md) e use as APIs de comunicações para mesclar dados com o modelo. Seu aplicativo pode enviar o documento de saída para uma impressora de rede, uma impressora local ou para um sistema de armazenamento para arquivamento. Um fluxo de trabalho típico e personalizado é semelhante ao seguinte:
 
@@ -99,9 +99,9 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 As APIs de manipulação de documentos de comunicações ajudam a combinar, reorganizar e validar documentos do PDF. Normalmente, você cria um DDX e o envia para APIs de manipulação de documentos para montar ou reorganizar um documento. O [Documento DDX](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) O fornece instruções sobre como usar os documentos de origem para produzir um conjunto de documentos necessários. A documentação de referência DDX fornece informações detalhadas sobre todas as operações suportadas. Alguns exemplos de manipulação de documentos são:
 
-### Montar documentos do PDF
+### Montar documentos PDF
 
-Você pode usar as APIs de fabricação de documentos para montar dois ou mais documentos PDF ou XDP em um único documento PDF ou Portfolio PDF. Estas são algumas das maneiras de montar documentos do PDF:
+Você pode usar as APIs de manipulação de documentos para montar dois ou mais documentos PDF ou XDP em um único documento PDF ou Portfolio PDF. Estas são algumas das maneiras de montar documentos do PDF:
 
 * Montar um documento PDF simples
 * Criar um Portfolio de PDF
@@ -112,9 +112,9 @@ Você pode usar as APIs de fabricação de documentos para montar dois ou mais d
 ![Montagem de um documento PDF simples a partir de vários documentos de PDF](assets/as_document_assembly.png)
 Figura: Montagem de um documento PDF simples a partir de vários documentos de PDF
 
-### Desmontar documentos do PDF
+### Desmontar documentos PDF
 
-Você pode usar as APIs de fabricação de documentos para desmontar um documento do PDF. As APIs podem extrair páginas do documento de origem ou dividir um documento de origem com base em marcadores. Normalmente, essa tarefa é útil se o documento PDF foi criado originalmente de muitos documentos individuais, como uma coleção de declarações.
+Você pode usar as APIs de manipulação de documentos para desmontar um documento do PDF. As APIs podem extrair páginas do documento de origem ou dividir um documento de origem com base em marcadores. Normalmente, essa tarefa é útil se o documento PDF foi criado originalmente de muitos documentos individuais, como uma coleção de declarações.
 
 * Extrair páginas de um documento de origem
 * Dividir um documento de origem com base em marcadores
@@ -122,9 +122,9 @@ Você pode usar as APIs de fabricação de documentos para desmontar um document
 ![Dividir um documento de origem com base em marcadores em vários documentos](assets/as_intro_pdfsfrombookmarks.png)
 Figura: Dividir um documento de origem com base em marcadores em vários documentos
 
-### Converter e validar documentos compatíveis com PDF/A
+### Converter e validar documentos PDF e de conformidade
 
-Você pode usar as APIs de fabricação de documentos para converter um documento PDF para um documento compatível com PDF/A e determinar se um documento PDF é compatível com PDF/A. PDF/A é um formato de arquivo destinado à preservação de longo prazo do conteúdo do documento. As fontes são incorporadas no documento e o arquivo é descompactado. Como resultado, um documento PDF/A geralmente é maior do que um documento PDF padrão. Além disso, um documento PDF/A não contém conteúdo de áudio e vídeo.
+Você pode usar as APIs de manipulação de documentos para converter um documento PDF em um documento compatível com PDF/A e determinar se um documento PDF é compatível com PDF/A. PDF/A é um formato de arquivo destinado à preservação de longo prazo do conteúdo do documento. As fontes são incorporadas no documento e o arquivo é descompactado. Como resultado, um documento PDF/A geralmente é maior do que um documento PDF padrão. Além disso, um documento PDF/A não contém conteúdo de áudio e vídeo.
 
 ## Tipos de APIs de comunicação
 
