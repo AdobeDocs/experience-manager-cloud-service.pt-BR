@@ -3,9 +3,9 @@ title: Ambiente e ferramentas de criação
 description: O ambiente de criação do AEM fornece vários mecanismos para organização e edição de conteúdo
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
 source-git-commit: f9a122f27ab1e2dc8ba429ce9048e3eab0509db9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2154'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -190,7 +190,7 @@ Clicar no componente realçará o componente no editor de páginas. As ações d
 
    ![Botão Editar árvore de conteúdo](/help/sites-cloud/authoring/assets/content-tree-edit.png)
 
-* Uma página que faz parte de uma [livecopy](/help/sites-cloud/administering/msm/overview.md), em que os componentes são herdados de outra página.
+* Uma página que faz parte de uma [live copy](/help/sites-cloud/administering/msm/overview.md), em que os componentes são herdados de outra página.
 
 >[!NOTE]
 >
@@ -224,7 +224,7 @@ Selecione o tipo de referência apropriado para obter mais informações. Em det
 * **Links de entrada**, fornecem uma lista de páginas que fazem referência à página, junto com acesso direto a **Editar** uma dessas páginas ao selecionar um link específico
 * Instâncias de conteúdo emprestado e concedido usando o componente **Referência**, daqui você pode navegar até a página de referência/referenciada
 * [Lançamentos](/help/sites-cloud/authoring/launches/overview.md), fornecem acesso a lançamentos relacionados
-* [](/help/sites-cloud/administering/msm/overview.md)As Live Copies exibem os caminhos de todas as live copies que são baseadas no recurso selecionado.
+* As [Live Copies](/help/sites-cloud/administering/msm/overview.md) exibem os caminhos de todas as live copies que são baseadas no recurso selecionado.
 * [Blueprint](/help/sites-cloud/administering/msm/best-practices.md), fornece detalhes e várias ações
 * [Cópias de idiomas](/help/sites-cloud/administering/translation/managing-projects.md#creating-translation-projects-using-the-references-panel), fornece detalhes e várias ações
 
