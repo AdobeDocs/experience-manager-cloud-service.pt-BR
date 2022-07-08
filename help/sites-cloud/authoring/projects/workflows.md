@@ -3,9 +3,9 @@ title: Trabalhar com fluxos de trabalho de projeto
 description: Há uma variedade de fluxos de trabalho de projeto disponíveis para uso imediato.
 exl-id: a5c9a6df-7def-43f3-b41b-524a4f4211e9
 source-git-commit: 89972691dadb9573160ba16a220c5b7cb3ae9742
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '452'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -13,9 +13,9 @@ ht-degree: 75%
 
 Os fluxos de trabalho de projeto disponíveis para uso imediato incluem os seguintes:
 
-* **Fluxo de trabalho de aprovação do projeto** - Esse workflow permite atribuir conteúdo a um usuário, revisar e aprovar.
-* **Solicitar lançamento** - Um fluxo de trabalho que solicita um lançamento.
-* **Solicitar página de aterrissagem** - Esse workflow solicita uma landing page.
+* **Fluxo de trabalho para aprovação de projeto** - esse fluxo de trabalho permite atribuir conteúdo a um usuário, analisar esse conteúdo e depois aprová-lo.
+* **Solicitar inicialização** - um fluxo de trabalho que solicita uma inicialização.
+* **Solicitar página de aterrissagem** - esse fluxo de trabalho solicita uma página de aterrissagem.
 * **Solicitar email** - Fluxo de trabalho para solicitar um email.
 * **Criar e traduzir cópia DAM e Criar cópia de idioma DAM** - Cria binários, metadados e tags traduzidos para ativos e pastas.
 
@@ -23,16 +23,16 @@ Dependendo de qual modelo de projeto você selecionar, certos fluxos de trabalho
 
 |  | **Projeto simples** | **Projeto de tradução** |
 |---|:-:|:-:|
-| Fluxo de trabalho de aprovação do projeto | x |  |
-| Solicitar lançamento | x |  |
+| Fluxo de trabalho de aprovação de projeto | x |  |
+| Solicitar inicialização | x |  |
 | Solicitar página de aterrissagem | x |  |
 | Solicitar email | x |  |
-| Criar Cópia de Idioma DAM &amp;; |  | x |
-| Criar e traduzir cópia de idioma DAM; |  | x |
+| Criar cópia de idioma do DAM&amp;ast; |  | x |
+| Criar e traduzir cópia de idioma do DAM;&amp;ast; |  | x |
 
 >[!NOTE]
 >
->&amp;ast; Esses workflows não são iniciados do **Fluxo de trabalho** em Projetos. Consulte [Criação de cópias de idioma para ativos.](/help/sites-cloud/administering/translation/managing-projects.md)
+>&amp;ast; Esses fluxos de trabalho não são iniciados no bloco **Fluxo de trabalho** em Projetos. Consulte [Criação de cópias de idioma para ativos.](/help/sites-cloud/administering/translation/managing-projects.md)
 
 As etapas para iniciar e concluir fluxos de trabalho são as mesmas, independentemente do fluxo de trabalho escolhido. Apenas as etapas mudam.
 
@@ -50,7 +50,7 @@ Esta seção descreve os fluxos de trabalho disponíveis para Projetos.
 
 No fluxo de trabalho Aprovação de projeto, você atribui conteúdo a um usuário e depois revisa e aprova esse conteúdo.
 
-1. No projeto Simples, selecione o **`+`** faça logon no **Fluxos de trabalho** bloco e selecione **Fluxo de trabalho de aprovação do projeto**.
+1. Em seu projeto simples, selecione o sinal de **`+`** no bloco **Fluxos de trabalho** e selecione **Fluxo de trabalho para aprovação de projeto**.
 1. Insira um título e selecione a quem ele deve ser atribuído na lista Equipe. Se aplicável, insira uma descrição, um caminho de conteúdo, uma prioridade de tarefa e uma data de vencimento.
 
    ![Solicitar aprovação](/help/sites-cloud/authoring/assets/projects-approval.png)
@@ -61,13 +61,13 @@ No fluxo de trabalho Aprovação de projeto, você atribui conteúdo a um usuár
 
 Esse fluxo de trabalho permite solicitar um lançamento.
 
-1. No projeto Simples, selecione o sinal **+** no bloco **Fluxos de trabalho** e selecione **Solicitar fluxo de trabalho de inicialização**.
+1. No projeto simples, selecione o sinal **+** no bloco **Fluxos de trabalho** e selecione **Solicitar fluxo de trabalho de inicialização**.
 1. Insira um título para o lançamento e forneça o caminho da origem de lançamento. Você também pode adicionar uma descrição e uma data de colocação ao vivo, se aplicável. Selecione Herdar dados online de página fonte ou Excluir subpáginas, dependendo de como você deseja que o lançamento se comporte.
 
-   ![Solicitar lançamento](/help/sites-cloud/authoring/assets/projects-request-launch.png)
+   ![Solicitar inicialização](/help/sites-cloud/authoring/assets/projects-request-launch.png)
 
-1. Clique em **Criar**. O fluxo de trabalho é iniciado. O fluxo de trabalho é exibido no **Fluxos de trabalho** lista (clique em elipses **...** no **Fluxos de trabalho** para acessar essa lista).
+1. Clique em **Criar**. O fluxo de trabalho é iniciado. O fluxo de trabalho aparece na lista **Fluxos de trabalho** (clique nas reticências **...** no bloco **Fluxos de trabalho** para acessar essa lista).
 
-## Criar (e Traduzir) fluxo de trabalho de cópia de idioma para ativos {#create-and-translate-language-copy-workflow-for-assets}
+## Criar (e traduzir) fluxo de trabalho de cópia de idioma para ativos {#create-and-translate-language-copy-workflow-for-assets}
 
-Os fluxos de trabalho **Criar cópia de idioma** e **Criar e traduzir da cópia de idioma**[ são abordados detalhadamente em Criar cópias de idioma para ativos.](/help/assets/translate-assets.md)
+Os fluxos de trabalho **Criar cópia de idioma** e **Criar e traduzir cópia de idioma** são abordados detalhadamente na seção [Criar cópias de idioma para ativos](/help/assets/translate-assets.md).
