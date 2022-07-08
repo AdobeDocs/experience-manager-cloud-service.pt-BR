@@ -1,11 +1,11 @@
 ---
 title: Gerenciamento de projetos
-description: Projetos permite organizar o projeto agrupando recursos em uma entidade que pode ser acessada e gerenciada no console Projetos
+description: O console de Projetos permite organizar o projeto, agrupando os recursos em uma única entidade que pode ser acessada e gerenciada no próprio console
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
 source-git-commit: 54a098d8986c8bbd740bed50f8625c1025d2f6f4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '894'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ O console Projetos permite que você organize seu projeto, agrupando os recursos
 
 No console **Projetos**, você acessa e toma medidas nos seus projetos:
 
-![O console Projetos](/help/sites-cloud/authoring/assets/projects-console.png)
+![O console de Projetos](/help/sites-cloud/authoring/assets/projects-console.png)
 
 Em Projetos, é possível criar um projeto, associar recursos ao projeto e também excluir um projeto ou vínculos de recursos. Você pode querer abrir um mosaico para exibir seu conteúdo, bem como adicionar itens a um mosaico. Este tópico descreve esses procedimentos.
 
@@ -38,7 +38,7 @@ O procedimento de criação de um projeto é o mesmo em todos os projetos. A dif
 
    ![Criação de um projeto](/help/sites-cloud/authoring/assets/projects-create.png)
 
-1. Defina as **Título** e **Descrição** e adicione uma **Miniatura** imagem, se necessário. Você também adiciona ou exclui os usuários e os grupos aos quais pertencem. Além disso, clique em **Avançado** para adicionar um nome utilizado no URL.
+1. Defina o **Título** e a **Descrição** e adicione uma imagem de **Miniatura** se necessário. Você também adiciona ou exclui os usuários e os grupos aos quais pertencem. Além disso, clique em **Avançado** para adicionar um nome utilizado no URL.
 
    ![Adicionar detalhes do projeto](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
@@ -85,7 +85,7 @@ Em alguns mosaicos, é possível adicionar mais de um item. Por exemplo, é poss
 
 Para adicionar itens a um mosaico:
 
-1. Em **Projetos**, navegue até o projeto e toque ou clique na divisa inferior no bloco ao qual deseja adicionar um item.
+1. Em **Projetos**, navegue até o projeto e toque ou clique na divisa para baixo no bloco ao qual deseja adicionar um item.
 
    ![Adicionar item a um bloco](/help/sites-cloud/authoring/assets/project-workflows.png)
 
@@ -97,7 +97,7 @@ Você pode querer ver quais itens estão incluídos em um mosaico atual ou modif
 
 Para abrir um mosaico para ver ou modificar itens:
 
-1. No console Projetos, toque/clique nas reticências (...) na parte inferior do cartão.
+1. No console Projetos, toque/clique nas reticências (...) Ícone na parte inferior do cartão.
 
    ![Abrir um bloco](/help/sites-cloud/authoring/assets/project-links.png)
 
@@ -107,17 +107,17 @@ Para abrir um mosaico para ver ou modificar itens:
 
 ## Exibir as estatísticas do projeto {#viewing-project-statistics}
 
-Você pode exibir as estatísticas do projeto na **Projetos** console.
+Você pode exibir as estatísticas do projeto no console de **Projetos**.
 
 ### Exibir uma linha do tempo do projeto {#viewing-a-project-timeline}
 
-A linha do tempo do projeto fornece informações sobre quando os ativos do projeto foram usados pela última vez. Para exibir a linha do tempo do projeto, clique/toque em **Linha do tempo**, em seguida, entre no modo de seleção e selecione o projeto. Os ativos são exibidos no painel esquerdo. Clicar/tocar **Linha do tempo** para retornar ao **Projetos** console.
+A linha do tempo do projeto fornece informações sobre quando os ativos do projeto foram usados pela última vez. Para exibir a linha do tempo do projeto, clique/toque em **Linha do tempo**, entre no modo de seleção e selecione o projeto. Os ativos são exibidos no painel esquerdo. Toque/clique em **Linha do tempo** para voltar ao console de **Projetos**.
 
 ![Linha do tempo do projeto](/help/sites-cloud/authoring/assets/projects-timeline.png)
 
 ### Exibir projetos ativos/inativos {#viewing-active-inactive-projects}
 
-Para alternar entre os projetos ativos e inativos, no **Projetos** , clique em **Alternar projetos ativos**. Se o ícone tiver uma marca de seleção ao lado, estará exibindo os projetos ativos.
+Para alternar entre os projetos ativos e inativos, no console de **Projetos**, clique em **Alternar projetos ativos**. Se o ícone tiver uma marca de seleção, ele exibirá os projetos ativos.
 
 ![Botão Alternar projetos ativos](/help/sites-cloud/authoring/assets/projects-active.png)
 
@@ -136,7 +136,7 @@ Para tornar um projeto inativo (ou ativo):
    >[!NOTE]
    Talvez seja necessário adicionar este mosaico se ele ainda não estiver no seu projeto. Consulte [Adicionar mosaico](#adding-items-to-a-tile).
 
-1. Toque/clique **Editar**.
+1. Toque/clique em **Editar**.
 1. Altere o seletor de **Ativo** para **Inativo** (ou vice-versa).
 
    ![Ativar um projeto](/help/sites-cloud/authoring/assets/projects-add-team.png)
