@@ -3,9 +3,9 @@ title: Participar de fluxos de trabalho
 description: Fluxos de trabalho geralmente incluem etapas que exigem que uma pessoa realize uma atividade em uma página ou ativo.
 exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1545'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ Quando um item de trabalho é atribuído a você (por exemplo, **Aprovar conteú
       * usar as setas para a esquerda/direita para navegar pelas informações de status dos vários fluxos de trabalho.
       * clicar/tocar no número real para abrir uma lista suspensa de todos os fluxos de trabalho aplicáveis e, em seguida, selecionar o fluxo de trabalho que deseja exibir na barra de status.
 
-   ![Página com vários fluxos de trabalho](/help/sites-cloud/authoring/assets/workflows-multiple.png)
+   ![Página com vários workflows](/help/sites-cloud/authoring/assets/workflows-multiple.png)
 
    >[!NOTE]
    >
@@ -63,10 +63,10 @@ Nesta ação, você pode indicar:
 
 Você pode concluir uma etapa do participante nos seguintes locais:
 
-* [A Caixa de entrada](#completing-a-participant-step-inbox)
-* [O Editor de páginas](#completing-a-participant-step-page-editor)
-* [A Linha do Tempo](#completing-a-participant-step-timeline)
-* When [abrir um item de fluxo de trabalho para exibir detalhes](#opening-a-workflow-item-to-view-details-and-take-actions).
+* [A caixa de entrada](#completing-a-participant-step-inbox)
+* [O editor de páginas](#completing-a-participant-step-page-editor)
+* [A linha do tempo](#completing-a-participant-step-timeline)
+* Ao [abrir um item do fluxo de trabalho para exibir detalhes](#opening-a-workflow-item-to-view-details-and-take-actions).
 
 #### Conclusão de uma etapa do participante - Caixa de entrada {#completing-a-participant-step-inbox}
 
@@ -74,24 +74,24 @@ Use o procedimento a seguir para concluir o item de trabalho:
 
 1. Abra a **[Caixa de entrada do AEM](/help/sites-cloud/authoring/getting-started/inbox.md)**.
 1. Selecione o item de fluxo de trabalho com o qual você deseja trabalhar (toque/clique na miniatura).
-1. Selecionar **Concluído** na barra de ferramentas.
-1. A caixa de diálogo **Item de trabalho concluído** será aberta. Selecione o **Próxima etapa** no seletor suspenso e adicione um **Comentário** se necessário.
-1. Use **OK** para concluir a etapa (ou o **Cancelar** para suspender a ação).
+1. Selecione **Concluído** na barra de ferramentas.
+1. A caixa de diálogo **Item de trabalho concluído** será aberta. Selecione a **Próxima etapa** no seletor suspenso e adicione um **Comentário**, se necessário.
+1. Use **OK** para concluir a etapa (ou o botão **Cancelar** para cancelar a ação).
 
 #### Conclusão de uma etapa do participante - Editor de páginas {#completing-a-participant-step-page-editor}
 
 Use o procedimento a seguir para concluir o item de trabalho:
 
 1. Abra a [página para edição](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
-1. Selecionar **Concluído** na barra de status na parte superior.
-1. A caixa de diálogo **Item de trabalho concluído** será aberta. Selecione o **Próxima etapa** no seletor suspenso e adicione um **Comentário** se necessário.
-1. Use **OK** para concluir a etapa (ou o **Cancelar** para suspender a ação).
+1. Selecione **Concluído** na barra de status na parte superior.
+1. A caixa de diálogo **Item de trabalho concluído** será aberta. Selecione a **Próxima etapa** no seletor suspenso e adicione um **Comentário**, se necessário.
+1. Use **OK** para concluir a etapa (ou o botão **Cancelar** para cancelar a ação).
 
 #### Conclusão de uma etapa do participante - Linha do tempo {#completing-a-participant-step-timeline}
 
 Você também pode usar a linha do tempo para concluir e avançar uma etapa:
 
-1. Selecione a página desejada e abra **Linha do tempo** (ou abrir **Linha do tempo** e selecione a página):
+1. Selecione a página desejada e abra a **Linha do tempo** (ou abra a **Linha do tempo** e selecione a página):
 
    ![Concluir uma etapa](/help/sites-cloud/authoring/assets/workflows-timeline-completing.png)
 
@@ -122,10 +122,10 @@ Nesta ação, você pode indicar:
 
 Você pode delegar um etapa de participante nos seguintes locais:
 
-* [A Caixa de entrada](#delegating-a-participant-step-inbox)
-* [O Editor de páginas](#delegating-a-participant-step-page-editor)
-* [A Linha do Tempo](#delegating-a-participant-step-timeline)
-* When [abrir um item de fluxo de trabalho para exibir detalhes](#opening-a-workflow-item-to-view-details-and-take-actions).
+* [A caixa de entrada](#delegating-a-participant-step-inbox)
+* [O editor de páginas](#delegating-a-participant-step-page-editor)
+* [A linha do tempo](#delegating-a-participant-step-timeline)
+* Ao [abrir um item do fluxo de trabalho para exibir detalhes](#opening-a-workflow-item-to-view-details-and-take-actions).
 
 #### Delegação de uma etapa do participante - Caixa de entrada {#delegating-a-participant-step-inbox}
 
@@ -133,33 +133,33 @@ Use o procedimento a seguir para delegar um item de trabalho:
 
 1. Abra a **[Caixa de entrada do AEM](/help/sites-cloud/authoring/getting-started/inbox.md)**.
 1. Selecione o item de fluxo de trabalho com o qual você deseja trabalhar (toque/clique na miniatura).
-1. Selecionar **Delegar** na barra de ferramentas.
-1. Uma caixa de diálogo será aberta. Especifique a **Usuário** no seletor suspenso (também pode ser um grupo) e adicione um **Comentário** se necessário.
-1. Use **OK** para concluir a etapa (ou o **Cancelar** para suspender a ação).
+1. Selecione **Delegar** na barra de ferramentas.
+1. Uma caixa de diálogo será aberta. Especifique o **Usuário** no seletor suspenso (também pode ser um grupo) e adicione um **Comentário**, se necessário.
+1. Use **OK** para concluir a etapa (ou o botão **Cancelar** para cancelar a ação).
 
 #### Delegação de uma etapa do participante - Editor de páginas {#delegating-a-participant-step-page-editor}
 
 Use o procedimento a seguir para delegar um item de trabalho:
 
 1. Abra a [página para edição](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
-1. Selecionar **Delegar** na barra de status na parte superior.
-1. Uma caixa de diálogo será aberta. Especifique a **Usuário** no seletor suspenso (também pode ser um grupo) e adicione um **Comentário** se necessário.
-1. Use **OK** para concluir a etapa (ou o **Cancelar** para suspender a ação).
+1. Selecione **Delegar** na barra de status na parte superior.
+1. Uma caixa de diálogo será aberta. Especifique o **Usuário** no seletor suspenso (também pode ser um grupo) e adicione um **Comentário**, se necessário.
+1. Use **OK** para concluir a etapa (ou o botão **Cancelar** para cancelar a ação).
 
 #### Delegação de uma etapa do participante - Linha do tempo {#delegating-a-participant-step-timeline}
 
 Você também pode usar a linha do tempo para delegar e/ou atribuir uma etapa:
 
-1. Selecione a página desejada e abra **Linha do tempo** (ou abrir **Linha do tempo** e selecione a página).
+1. Selecione a página desejada e abra a **Linha do tempo** (ou abra a **Linha do tempo** e selecione a página).
 1. Clique/toque no banner de alerta para mostrar as ações disponíveis. Selecione **Alterar administrador**:
 
    ![Etapa Delegar](/help/sites-cloud/authoring/assets/workflows-delegate.png)
 
 1. Especifique um novo destinatário:
 
-   ![Alterar destinatário](/help/sites-cloud/authoring/assets/workflows-assignee.png)
+   ![Alterar responsável](/help/sites-cloud/authoring/assets/workflows-assignee.png)
 
-1. Selecionar **Atribuir** para confirmar a ação.
+1. Selecione **Atribuir** para confirmar a ação.
 
 ### Retroceder em uma etapa do participante {#performing-step-back-on-a-participant-step}
 
@@ -172,10 +172,10 @@ Nesta ação, você pode indicar:
 
 Você pode retroceder uma etapa de participante nos seguintes locais:
 
-* [A Caixa de entrada](#performing-step-back-on-a-participant-step-inbox)
-* [O Editor de páginas](#performing-step-back-on-a-participant-step-page-editor)
-* [A Linha do Tempo](#performing-step-back-on-a-participant-step-timeline)
-* When [abrir um item de fluxo de trabalho para exibir detalhes](#opening-a-workflow-item-to-view-details-and-take-actions).
+* [A caixa de entrada](#performing-step-back-on-a-participant-step-inbox)
+* [O editor de páginas](#performing-step-back-on-a-participant-step-page-editor)
+* [A linha do tempo](#performing-step-back-on-a-participant-step-timeline)
+* Ao [abrir um item do fluxo de trabalho para exibir detalhes](#opening-a-workflow-item-to-view-details-and-take-actions).
 
 #### Retroceder em uma etapa do participante - Caixa de entrada {#performing-step-back-on-a-participant-step-inbox}
 
@@ -183,24 +183,24 @@ Use o procedimento a seguir para retroceder:
 
 1. Abra a **[Caixa de entrada do AEM](/help/sites-cloud/authoring/getting-started/inbox.md)**.
 1. Selecione o item de fluxo de trabalho com o qual você deseja trabalhar (toque/clique na miniatura).
-1. Selecionar **Retroceder** para abrir a caixa de diálogo.
+1. Selecione **Retroceder** para abrir a caixa de diálogo.
 1. Especifique a **Etapa anterior** e adicione um **Comentário**, se necessário.
-1. Use **OK** para concluir a etapa (ou o **Cancelar** para suspender a ação).
+1. Use **OK** para concluir a etapa (ou o botão **Cancelar** para cancelar a ação).
 
 #### Retroceder em uma etapa do participante - Editor de página {#performing-step-back-on-a-participant-step-page-editor}
 
 Use o procedimento a seguir para retroceder:
 
 1. Abra a [página para edição](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
-1. Selecionar **Retroceder** na barra de status na parte superior.
+1. Selecione **Retroceder** na barra de status na parte superior.
 1. Especifique a **Etapa anterior** e adicione um **Comentário**, se necessário.
-1. Use **OK** para concluir a etapa (ou o **Cancelar** para suspender a ação).
+1. Use **OK** para concluir a etapa (ou o botão **Cancelar** para cancelar a ação).
 
 #### Retroceder em uma etapa do participante - Linha do tempo {#performing-step-back-on-a-participant-step-timeline}
 
 Você também pode usar a linha do tempo para retroceder para uma etapa anterior:
 
-1. Selecione a página desejada e abra **Linha do tempo** (ou abrir **Linha do tempo** e selecione a página).
+1. Selecione a página desejada e abra a **Linha do tempo** (ou abra a **Linha do tempo** e selecione a página).
 1. Clique/toque no banner de alerta para mostrar as ações disponíveis. Selecione **Reverter**:
 
    ![Reverter uma etapa](/help/sites-cloud/authoring/assets/workflows-roll-back.png)
@@ -209,7 +209,7 @@ Você também pode usar a linha do tempo para retroceder para uma etapa anterior
 
    ![Especificar etapa](/help/sites-cloud/authoring/assets/workflows-roll-back-step.png)
 
-1. Selecionar **Reverter** para confirmar a ação.
+1. Selecione **Reverter** para confirmar a ação.
 
 ### Abrir um item de fluxo de trabalho para exibir detalhes (e realizar ações) {#opening-a-workflow-item-to-view-details-and-take-actions}
 
@@ -221,22 +221,22 @@ Os detalhes do fluxo de trabalho são mostrados nas guias, e as ações apropria
 
    Guia ![ITEM DE TRABALHO](/help/sites-cloud/authoring/assets/workflows-work-item.png)
 
-* **INFORMAÇÕES DO FLUXO DE TRABALHO** guia :
+* Guia **INFORMAÇÕES DO FLUXO DE TRABALHO**:
 
-   ![Guia WORKFLOW](/help/sites-cloud/authoring/assets/workflows-workflow-info.png)
+   ![Guia FLUXO DE TRABALHO](/help/sites-cloud/authoring/assets/workflows-workflow-info.png)
 
    Se Estágio do fluxo de trabalho tiverem sido configurados para o modelo, você poderá visualizar o progresso de acordo com estes: <!--If [Workflow Stages](/help/sites-developing/workflows.md#workflow-stages) have been configured for the model, you can view the progress according to these:-->
 
-   ![Estágios do workflow](/help/sites-cloud/authoring/assets/workflows-workflow-stages.png)
+   ![Estágios do fluxo de trabalho](/help/sites-cloud/authoring/assets/workflows-workflow-stages.png)
 
-* **COMENTÁRIOS** guia :
+* Guia **COMENTÁRIOS**:
 
    ![Guia COMENTÁRIOS](/help/sites-cloud/authoring/assets/workflows-comments.png)
 
 Você pode abrir os detalhes do item de trabalho nos seguintes locais:
 
-* [A Caixa de entrada](#performing-step-back-on-a-participant-step-inbox)
-* [O Editor de páginas](#performing-step-back-on-a-participant-step-page-editor)
+* [A caixa de entrada](#performing-step-back-on-a-participant-step-inbox)
+* [O editor de páginas](#performing-step-back-on-a-participant-step-page-editor)
 
 #### Abertura de detalhes do fluxo de trabalho - Caixa de entrada {#opening-workflow-details-inbox}
 
@@ -244,7 +244,7 @@ Para abrir um item de fluxo de trabalho e visualizar os detalhes:
 
 1. Abra a **[Caixa de entrada do AEM](/help/sites-cloud/authoring/getting-started/inbox.md)**.
 1. Selecione o item de fluxo de trabalho com o qual você deseja trabalhar (toque/clique na miniatura).
-1. Selecionar **Abrir** para abrir as guias de informações.
+1. Selecione **Abrir** para abrir as guias de informações.
 1. Se necessário, selecione a ação apropriada, forneça os detalhes e confirme com **OK** (ou **Cancelar**).
 1. Use **Salvar** ou **Cancelar** para sair.
 
@@ -253,7 +253,7 @@ Para abrir um item de fluxo de trabalho e visualizar os detalhes:
 Para abrir um item de fluxo de trabalho e visualizar os detalhes:
 
 1. Abra a [página para edição](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
-1. Selecionar **Exibir detalhes** na barra de status para abrir as guias de informações.
+1. Selecione **Exibir detalhes** na barra de status para abrir as guias de informações.
 1. Se necessário, selecione a ação apropriada, forneça os detalhes e confirme com **OK** (ou **Cancelar**).
 1. Use **Salvar** ou **Cancelar** para sair.
 
@@ -265,6 +265,6 @@ Para visualizar a carga e os recursos da instância do fluxo de trabalho:
 
 1. Abra a **[Caixa de entrada do AEM](/help/sites-cloud/authoring/getting-started/inbox.md)**.
 1. Selecione o item de fluxo de trabalho com o qual você deseja trabalhar (toque/clique na miniatura).
-1. Selecionar **Exibir carga** na barra de ferramentas para abrir a caixa de diálogo.
+1. Selecione **Exibir carga** na barra de ferramentas para abrir a caixa de diálogo.
    * Como um pacote de fluxo de trabalho é simplesmente uma coleção de apontadores de caminhos dentro do repositório, você pode adicionar/remover/modificar as entradas aqui para ajustar o que é referenciado pelo pacote de fluxo de trabalho. Use o componente **Definição do recurso** para adicionar novas entradas.
 1. Os links podem ser usados para abrir as páginas individuais.
