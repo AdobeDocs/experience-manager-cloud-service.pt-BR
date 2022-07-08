@@ -3,9 +3,9 @@ title: Tarefas de manutenção no AEM as a Cloud Service
 description: Tarefas de manutenção no AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 source-git-commit: 1dc6e66fdd4115834bc0eba2be25c196cf5362b7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '999'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 
@@ -14,19 +14,19 @@ ht-degree: 4%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_maintenance"
 >title="Tarefas de manutenção"
->abstract="Tarefas de manutenção são processos que são executados de acordo com uma programação para otimizar o repositório. Com AEM as a Cloud Service, a necessidade de os clientes configurarem as propriedades operacionais das tarefas de manutenção é mínima. Os clientes podem concentrar seus recursos em preocupações no nível do aplicativo, deixando as operações de infraestrutura para o Adobe."
+>abstract="Tarefas de manutenção são processos executados de acordo com um cronograma para otimizar o repositório. Com o AEM as a Cloud Service, a necessidade de os clientes configurarem as propriedades operacionais das tarefas de manutenção é mínima. Os clientes podem concentrar seus recursos em preocupações no nível do aplicativo, deixando as operações de infraestrutura para a Adobe."
 
-Tarefas de manutenção são processos que são executados de acordo com uma programação para otimizar o repositório. Com AEM as a Cloud Service, a necessidade de os clientes configurarem as propriedades operacionais das tarefas de manutenção é mínima. Os clientes podem concentrar seus recursos em preocupações no nível do aplicativo, deixando as operações de infraestrutura para o Adobe.
+Tarefas de manutenção são processos executados de acordo com um cronograma para otimizar o repositório. Com o AEM as a Cloud Service, a necessidade de os clientes configurarem as propriedades operacionais das tarefas de manutenção é mínima. Os clientes podem concentrar seus recursos em preocupações no nível do aplicativo, deixando as operações de infraestrutura para a Adobe.
 
 ## Configurar tarefas de manutenção
 
-Em versões anteriores do AEM, você podia configurar tarefas de manutenção usando o Cartão de manutenção (Ferramentas > Operações > Manutenção). Para AEM as a Cloud Service, o Cartão de Manutenção não está mais disponível, portanto, as configurações devem ser comprometidas com o controle de origem e implantadas usando o Cloud Manager. O Adobe gerencia as tarefas de manutenção que têm configurações que não são configuráveis pelos clientes (por exemplo, coleta de lixo do armazenamento de dados, limpeza de log de auditoria, limpeza de versão). Outras tarefas de manutenção podem ser configuradas pelos clientes, conforme descrito na tabela abaixo.
+Em versões anteriores do AEM, você podia configurar as tarefas de manutenção usando o Cartão de manutenção (Ferramentas > Operações > Manutenção). Para o AEM as a Cloud Service, o Cartão de manutenção não está mais disponível, portanto, as configurações devem ser enviadas ao controle de origem e implantadas usando o Cloud Manager. A Adobe gerencia as tarefas de manutenção que têm configurações não configuráveis pelos clientes (por exemplo, coleta de lixo do armazenamento de dados, limpeza de log de auditoria, limpeza de versão). Outras tarefas de manutenção podem ser configuradas pelos clientes, conforme descrito na tabela abaixo.
 
 >[!CAUTION]
 >
->O Adobe reserva o direito de substituir as configurações da tarefa de manutenção de um cliente para atenuar problemas como degradação de desempenho.
+>A Adobe reserva o direito de substituir as configurações da tarefa de manutenção de um cliente para atenuar problemas como degradação de desempenho.
 
-A tabela a seguir ilustra as tarefas de manutenção disponíveis no momento do lançamento AEM as a Cloud Service.
+A tabela a seguir ilustra as tarefas de manutenção disponíveis no momento do lançamento do AEM as a Cloud Service.
 
 <table style="table-layout:auto">
  <tbody>
@@ -38,13 +38,13 @@ A tabela a seguir ilustra as tarefas de manutenção disponíveis no momento do 
   <tr>
     <td>Coleta de lixo do armazenamento de dados</td>
     <td>Adobe</td>
-    <td>N/A - de propriedade totalmente Adobe</td>
+    <td>N/A — de propriedade total da Adobe</td>
   </td> 
   </tr>
   <tr>
     <td>Remoção da versão</td>
     <td>Adobe</td>
-    <td>Para que o nível de criação permaneça executante, as versões mais antigas de cada parte do conteúdo na variável <code>/content</code> nó do repositório são removidos de acordo com o seguinte comportamento:<br><br> <!--Alexandru: please leave the two line breaks in place, otherwise spacing won't render properly-->
+    <td>Para que o nível de criação permaneça com bom desempenho, as versões mais antigas de cada parte do conteúdo no nó <code>/content</code> do repositório são removidas de acordo com o seguinte comportamento:<br><br> <!--Alexandru: please leave the two line breaks in place, otherwise spacing won't render properly-->
      <ol>
        <li>Versões com mais de 30 dias são removidas</li>
        <li>As 5 versões mais recentes nos últimos 30 dias são mantidas</li>
@@ -53,44 +53,44 @@ A tabela a seguir ilustra as tarefas de manutenção disponíveis no momento do 
   </td>
   </tr>
   <tr>
-    <td>Limpeza de Log de Auditoria</td>
+    <td>Limpeza do log de auditoria</td>
     <td>Adobe</td>
-    <td>Para que o nível de criação permaneça executante, os registros de auditoria mais antigos serão registrados sob a <code>/content</code> nó do repositório são removidos de acordo com o seguinte comportamento:<br><br> <!-- See above for the two line breaks -->
+    <td>Para que o nível de criação permaneça com bom desempenho, os registros de auditoria mais antigos sob o nó <code>/content</code> do repositório são removidos de acordo com o seguinte comportamento:<br><br> <!-- See above for the two line breaks -->
      <ol>
        <li>Para auditoria de replicação, os logs de auditoria com mais de 3 dias são removidos</li>
        <li>Para auditoria do DAM (Assets), os logs de auditoria com mais de 30 dias são removidos</li>
        <li>Para auditoria de página, os logs com mais de 3 dias são removidos.</li>
-     </ol><br>OBSERVAÇÃO: o comportamento descrito acima é aplicado por padrão para novos ambientes criados após 14 de março de 2022. Envie um tíquete de suporte ao cliente se você precisar de configurações diferentes.</td>
+     </ol><br>OBSERVAÇÃO: o comportamento descrito acima é aplicado por padrão a novos ambientes criados após 14 de março de 2022. Envie um tíquete de suporte ao cliente se você precisar de configurações diferentes.</td>
    </td>
   </tr>
   <tr>
     <td>Limpeza de binários do Lucene</td>
     <td>Adobe</td>
-    <td>Não usado e, portanto, desabilitado pelo Adobe.</td>
+    <td>Não usado e, portanto, desabilitado pela Adobe.</td>
   </td>
   </tr>
   <tr>
     <td>Limpeza de tarefa ad-hoc</td>
     <td>Cliente</td>
     <td>
-    <p>Deve ser feito no git. Substitua o nó de configuração da janela de manutenção pronto para uso em <code>/libs</code> criando propriedades na pasta <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> ou <code>granite_daily</code>.</p>
-    <p>Consulte a tabela Janela de manutenção abaixo para obter mais detalhes sobre a configuração. Ative a tarefa de manutenção adicionando outro nó sob o nó acima (nomeie-o <code>granite_TaskPurgeTask</code>) com as propriedades apropriadas. Configure as propriedades OSGI.</p>
+    <p>Deve ser feito no Git. Substitua o nó de configuração da janela de manutenção pronto para uso em <code>/libs</code>, criando propriedades na pasta <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> ou <code>granite_daily</code>.</p>
+    <p>Consulte a tabela Janela de manutenção abaixo para obter mais detalhes sobre a configuração. Ative a tarefa de manutenção adicionando outro nó sob o nó acima (nomeie-o como <code>granite_TaskPurgeTask</code>) com as propriedades adequadas. Configure as propriedades OSGI.</p>
   </td>
   </tr>
     <tr>
     <td>Remoção do fluxo de trabalho</td>
     <td>Cliente</td>
     <td>
-    <p>Deve ser feito no git. Substitua o nó de configuração da janela de manutenção pronto para uso em <code>/libs</code> criando propriedades na pasta <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> ou <code>granite_daily</code>. Consulte a tabela Janela de manutenção abaixo para obter mais detalhes sobre a configuração.</p>
-    <p>Ative a tarefa de manutenção adicionando outro nó sob o nó acima (nomeie-o <code>granite_WorkflowPurgeTask</code>) com as propriedades apropriadas. Configure as propriedades OSGI, consulte <a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html#regular-purging-of-workflow-instances">Documentação da Tarefa de manutenção do AEM 6.5</a>.</p>
+    <p>Deve ser feito no Git. Substitua o nó de configuração da janela de manutenção pronto para uso em <code>/libs</code>, criando propriedades na pasta <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> ou <code>granite_daily</code>. Consulte a tabela Janela de manutenção abaixo para obter mais detalhes sobre a configuração.</p>
+    <p>Ative a tarefa de manutenção adicionando outro nó sob o nó acima (nomeie-o como <code>granite_WorkflowPurgeTask</code>) com as propriedades adequadas. Para configurar as propriedades do OSGI, consulte <a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html?lang=pt-BR#regular-purging-of-workflow-instances">Documentação da tarefa de manutenção do AEM 6.5</a>.</p>
   </td>
   </tr>
   <tr>
     <td>Remoção do projeto</td>
     <td>Cliente</td>
     <td>
-    <p>Deve ser feito no git. Substitua o nó de configuração da janela de manutenção pronto para uso em <code>/libs</code> criando propriedades na pasta <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> ou <code>granite_daily</code>. Consulte a tabela Janela de manutenção abaixo para obter mais detalhes sobre a configuração.</p>
-    <p>Ative a tarefa de manutenção adicionando outro nó sob o nó acima (nomeie-o <code>granite_ProjectPurgeTask</code>) com as propriedades apropriadas. Configure as propriedades OSGI.</p>
+    <p>Deve ser feito no Git. Substitua o nó de configuração da janela de manutenção pronto para uso em <code>/libs</code> criando propriedades na pasta <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> ou <code>granite_daily</code>. Consulte a tabela Janela de manutenção abaixo para obter mais detalhes sobre a configuração.</p>
+    <p>Ative a tarefa de manutenção adicionando outro nó sob o nó acima (nomeie-o como <code>granite_ProjectPurgeTask</code>) com as propriedades apropriadas. Configure as propriedades OSGI.</p>
   </td>
   </tr>
   </tbody>
@@ -99,7 +99,7 @@ A tabela a seguir ilustra as tarefas de manutenção disponíveis no momento do 
 <table style="table-layout:auto">
  <tbody>
   <tr>
-    <th>Configuração da Janela de Manutenção</th>
+    <th>Configuração da janela de manutenção</th>
     <th>Quem é o proprietário da configuração</th>
     <th>Tipo de configuração</th>
     <th>Parâmetros</th>
@@ -110,8 +110,8 @@ A tabela a seguir ilustra as tarefas de manutenção disponíveis no momento do 
     <td>Definição de Nó JCR</td>
   <td>
   <p><strong>windowSchedule=daily</strong> (esse valor não deve ser alterado)</p>
-  <p><strong>windowStartTime=HH:MM</strong> usando como relógio de 24 horas. Define quando as Tarefas de Manutenção associadas à Janela de Manutenção Diária devem começar a ser executadas.</p>
-  <p><strong>windowEndTime=HH:MM</strong> usando como relógio de 24 horas. Define quando as Tarefas de Manutenção associadas à Janela de Manutenção Diária devem parar de ser executadas se ainda não tiverem sido concluídas.</p>
+  <p><strong>windowStartTime=HH:MM</strong> usando como relógio de 24 horas. Define quando as tarefas de manutenção associadas à Janela de manutenção diária devem começar a ser executadas.</p>
+  <p><strong>windowEndTime=HH:MM</strong> usando como relógio de 24 horas. Define quando as tarefas de manutenção associadas à Janela de manutenção diária devem parar de ser executadas se ainda não tiverem sido concluídas.</p>
   </td> 
   </tr>
   <tr>
@@ -120,9 +120,9 @@ A tabela a seguir ilustra as tarefas de manutenção disponíveis no momento do 
     <td>Definição de Nó JCR</td>
     <td>
     <p><strong>windowSchedule=weekly</strong> (esse valor não deve ser alterado)</p>
-    <p><strong>windowStartTime=HH:MM</strong> usando como relógio de 24 horas. Define quando as Tarefas de Manutenção associadas à Janela de Manutenção semanal devem começar a ser executadas.</p>
-    <p><strong>windowEndTime=HH:MM</strong> usando como relógio de 24 horas. Define quando as Tarefas de Manutenção associadas à Janela de Manutenção Semanal devem parar de ser executadas caso ainda não tenham sido concluídas.</p>
-    <p><strong>windowScheduleWeekdays= Matriz de 2 valores de 1 a 7 (por exemplo, [5,5]</strong> O primeiro valor da matriz é o dia de início em que a tarefa é agendada e o segundo valor é o dia de término em que a tarefa seria interrompida. A hora exata do início e do fim é regida por windowStartTime e windowEndTime, respectivamente.</p>
+    <p><strong>windowStartTime=HH:MM</strong> usando como relógio de 24 horas. Define quando as tarefas de manutenção associadas à Janela de manutenção semanal devem começar a ser executadas.</p>
+    <p><strong>windowEndTime=HH:MM</strong> usando como relógio de 24 horas. Define quando as tarefas de manutenção associadas à Janela de manutenção semanal devem parar de ser executadas se ainda não tiverem sido concluídas.</p>
+    <p><strong>windowScheduleWeekdays= Matriz de 2 valores de 1 a 7 (por exemplo, [5,5])</strong> O primeiro valor da matriz é o dia de início em que a tarefa é agendada e o segundo valor é o dia de término em que a tarefa será interrompida. A hora exata de início e término é regida pelos parâmetros windowStartTime e windowEndTime, respectivamente.</p>
     </td>
   </tr>
   <tr>
@@ -131,10 +131,10 @@ A tabela a seguir ilustra as tarefas de manutenção disponíveis no momento do 
     <td>Definição de Nó JCR</td>
     <td>
     <p><strong>windowSchedule=daily</strong> (esse valor não deve ser alterado)</p>
-    <p><strong>windowStartTime=HH:MM</strong> usando como relógio de 24 horas. Define quando as Tarefas de Manutenção associadas à Janela de Manutenção Mensal devem começar a ser executadas.</p>
-    <p><strong>windowEndTime=HH:MM</strong> usando como relógio de 24 horas. Define quando as Tarefas de Manutenção associadas à Janela de Manutenção Mensal devem parar de ser executadas se ainda não tiverem sido concluídas.</p>
-    <p><strong>windowScheduleWeekdays=Array de 2 valores de 1 a 7 (por exemplo, [5,5]</strong> O primeiro valor da matriz é o dia de início em que a tarefa é agendada e o segundo valor é o dia de término em que a tarefa seria interrompida. A hora exata do início e do fim é regida por windowStartTime e windowEndTime, respectivamente.</p>
-    <p><strong>windowFirstLastStartDay= 0/1</strong> 0 para agendar na primeira semana do mês ou 1 para agendar na última semana do mês. A ausência de um valor agendaria efetivamente trabalhos todos os dias, conforme determinado por windowScheduleWeekdays todos os meses.</p>
+    <p><strong>windowStartTime=HH:MM</strong> usando como relógio de 24 horas. Define quando as tarefas de manutenção associadas à Janela de manutenção mensal devem começar a ser executadas.</p>
+    <p><strong>windowEndTime=HH:MM</strong> usando como relógio de 24 horas. Define quando as tarefas de manutenção associadas à Janela de manutenção mensal devem parar de ser executadas se ainda não tiverem sido concluídas.</p>
+    <p><strong>windowScheduleWeekdays=Matriz de 2 valores de 1 a 7 (por exemplo, [5,5])</strong> O primeiro valor da matriz é o dia de início em que a tarefa é agendada e o segundo valor é o dia de término em que a tarefa será interrompida. A hora exata de início e término é regida pelos parâmetros windowStartTime e windowEndTime, respectivamente.</p>
+    <p><strong>windowFirstLastStartDay= 0/1</strong> 0 para agendar na primeira semana do mês ou 1 para agendar na última semana do mês. A ausência de um valor agendaria trabalhos todos os dias, conforme determinado por windowScheduleWeekdays todos os meses.</p>
     </td> 
     </tr>
     </tbody>
@@ -144,11 +144,11 @@ A tabela a seguir ilustra as tarefas de manutenção disponíveis no momento do 
 
 * Diariamente - /apps/settings/granite/operations/maintenance/granite_daily
 * Semanalmente - /apps/settings/granite/operations/maintenance/granite_weekly
-* Mensalmente - /apps/settings/granite/operations/maintenance/granite_mensal
+* Mensalmente - /apps/settings/granite/operations/maintenance/granite_monthly
 
-**Amostras de código**:
+**Exemplos de código**:
 
-Amostra de código 1 (diariamente)
+Exemplo de código 1 (diariamente)
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -163,7 +163,7 @@ Amostra de código 1 (diariamente)
  />
 ```
 
-Amostra de código 2 (semanalmente)
+Exemplo de código 2 (semanalmente)
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -178,7 +178,7 @@ Amostra de código 2 (semanalmente)
    windowStartTime="14:30"/>
 ```
 
-Amostra de código 3 (mensalmente)
+Exemplo de código 3 (mensalmente)
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
