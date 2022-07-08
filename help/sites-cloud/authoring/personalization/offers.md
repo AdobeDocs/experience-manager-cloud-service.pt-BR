@@ -3,9 +3,9 @@ title: Criação e gerenciamento de ofertas
 description: Use o console Ofertas para criar ofertas que você pode usar em experiências de atividades
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '875'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 93%
 
 Use o console Ofertas para criar ofertas que você pode [usar em experiências de atividades](/help/sites-cloud/authoring/personalization/targeted-content.md). A criação de ofertas no console Ofertas poupa tempo quando várias experiências exigem a mesma oferta:
 
-* Crie a oferta uma vez na biblioteca e use-a em várias experiências das atividades da marca.
+* Crie a oferta uma única vez na biblioteca e use-a em várias experiências das suas atividades de marca.
 * Se a oferta for alterada na biblioteca, a alteração afetará todas as experiências que utilizam essa oferta.
 
 O console Ofertas organiza ofertas por marca. Cada marca contém uma biblioteca de ofertas que podem ser usadas nas experiências de uma marca. Use pastas para definir uma estrutura hierárquica para organizar ofertas em cada biblioteca. Uma estrutura de pastas lógica permite que os autores naveguem e encontrem ofertas facilmente. Ferramentas de marcação e pesquisa também permitem que os autores encontrem ofertas.
@@ -28,7 +28,7 @@ Quando você cria uma marca usando o console Ofertas, ela também aparece no [co
 
    ![Navegação até o console Ofertas](/help/sites-cloud/authoring/assets/offers-navigation.png)
 
-1. Clique ou toque em **Criar** e depois **Criar** **Marca**.
+1. Clique ou toque em **Criar** e depois em **Criar** **marca**.
 1. Selecione o modelo da marca e clique ou toque em **Próximo**.
 1. Digite o título que você deseja atribuir para a exibição da marca nos consoles Ofertas e Atividades. Opcionalmente, digite ou selecione uma ou mais tags para associar à marca.
 1. Clique ou toque em **Criar**.
@@ -93,7 +93,7 @@ Você pode excluir uma oferta enquanto visualiza o conteúdo de uma pasta em uma
 
 Procure ofertas de qualquer marca usando palavras-chave para correspondência do título.
 
-![Procurando uma oferta](/help/sites-cloud/authoring/assets/offers-search.png)
+![Procurar por uma oferta](/help/sites-cloud/authoring/assets/offers-search.png)
 
 Os critérios de pesquisa atuais aparecem ao lado dos resultados da pesquisa. Você também pode classificar os resultados por coluna em ordem crescente ou decrescente. É possível realizar uma pesquisa em qualquer pasta de qualquer biblioteca de ofertas. Os resultados da pesquisa serão os mesmos, independentemente da pasta atual.
 
