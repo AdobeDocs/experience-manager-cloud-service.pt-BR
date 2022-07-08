@@ -3,7 +3,7 @@ title: Guia de início rápido para a criação de páginas
 description: Um guia rápido de alto nível para começar a criar conteúdo de página
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1585'
 ht-degree: 100%
 
@@ -64,7 +64,7 @@ Há vários aspectos para localizar uma página; você pode navegar e/ou pesquis
 
    ![Exibir lista suspensa de seleção](/help/sites-cloud/authoring/assets/views.png)
 
-1. Navegue até a árvore usando a [ navegação estrutural do cabeçalho](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header), o que permite retornar ao local selecionado:
+1. Navegue até a árvore usando a [navegação estrutural do cabeçalho](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header), o que permite retornar ao local selecionado:
 
    ![Lista suspensa de navegação estrutural](/help/sites-cloud/authoring/assets/breadcrumb.png)
 
@@ -127,7 +127,7 @@ Para editar sua página:
 
    Essa opção pode ser acessada com:
 
-   * As [Ações rápidas (apenas a exibição de cartão/área de trabalho) ](#quick-actions-card-view-desktop-only) do recurso adequado.
+   * As [Ações rápidas (apenas a exibição de cartão/área de trabalho)](#quick-actions-card-view-desktop-only) do recurso adequado.
    * A barra de ferramenta quando a sua [página é selecionada](#selecting-your-page-for-further-action).
 
 1. Quando o editor for aberto, é possível:
@@ -189,7 +189,7 @@ Existem dois métodos (principais) [para editar as propriedades da página](/hel
    1. [Navegue até a página](#finding-your-page) que deseja publicar.
    1. Selecione o ícone **Propriedade** por meio de:
 
-      * As [Ações rápidas (apenas a exibição de cartão/área de trabalho) ](#quick-actions-card-view-desktop-only) do recurso adequado.
+      * As [Ações rápidas (apenas a exibição de cartão/área de trabalho)](#quick-actions-card-view-desktop-only) do recurso adequado.
       * A barra de ferramenta quando a sua [página é selecionada](#selecting-your-page-for-further-action).
 
       ![Botão Propriedades](/help/sites-cloud/authoring/assets/properties.png)
@@ -213,7 +213,7 @@ Existem dois métodos principais [para publicar a sua página](/help/sites-cloud
    1. [Navegue até a página](#finding-your-page) que deseja publicar.
    1. Selecione o ícone **Publicação rápida** por meio de:
 
-      * As [Ações rápidas (apenas a exibição de cartão/área de trabalho) ](#quick-actions-card-view-desktop-only) do recurso adequado.
+      * As [Ações rápidas (apenas a exibição de cartão/área de trabalho)](#quick-actions-card-view-desktop-only) do recurso adequado.
       * A barra de ferramentas quando a sua [página é selecionada](#selecting-your-page-for-further-action) (também fornece o acesso à opção [Publicar mais tarde](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)).
 
       ![Botão Publicação rápida](/help/sites-cloud/authoring/assets/quick-publish.png)
@@ -239,7 +239,7 @@ Essas ações podem ser acionadas por:
 1. [Navegue até a página](#finding-your-page) que deseja mover, copiar e colar ou excluir.
 1. Selecione o ícone copiar (e colar), mover ou excluir, conforme necessário, usando:
 
-   * As [Ações rápidas (apenas a exibição de cartão/área de trabalho) ](#quick-actions-card-view-desktop-only) do recurso desejado.
+   * As [Ações rápidas (apenas a exibição de cartão/área de trabalho)](#quick-actions-card-view-desktop-only) do recurso desejado.
    * A barra de ferramenta quando a sua [página é selecionada](#selecting-your-page-for-further-action).
 
    Em seguida, depende da sua ação:
@@ -271,7 +271,7 @@ Por exemplo, o ícone de bloqueio tem a seguinte aparência:
 
 ### Acessar as referências da página {#accessing-page-references}
 
-[O acesso rápido às referências ](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) para/de uma página estão disponíveis no Trilho de referências.
+[O acesso rápido às referências](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) para/de uma página estão disponíveis no Trilho de referências.
 
 1. Selecione a **Referências** usando o ícone da barra de ferramentas (antes ou depois de [selecionar a página](#selecting-your-page-for-further-action)): 
 
