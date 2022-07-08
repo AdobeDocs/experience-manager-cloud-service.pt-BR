@@ -3,9 +3,9 @@ title: Sistema de estilos
 description: O sistema de estilos permite ao autor do modelo definir classes de estilo na política de conteúdo de um componente para que autores de conteúdo possam selecioná-las ao editarem o componente em uma página. Esses estilos podem ser variações visuais alternativas de um componente, tornando-o mais flexível.
 exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1327'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -54,9 +54,9 @@ O diagrama a seguir ilustra a arquitetura do Sistema de estilos.
 
 ![aem-style-system](/help/sites-cloud/authoring/assets/style-system-architecture.png)
 
-## Uso do {#use}
+## Utilização {#use}
 
-Para demonstrar o recurso, usaremos como exemplo a implementação da [WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR) do [componente de título](https://www.adobe.com/go/aem_cmp_title_v2) do componente principal.
+Para demonstrar o recurso, usaremos como exemplo a implementação da [WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR) do [componente de título](https://www.adobe.com/go/aem_cmp_title_v2_br) do componente principal.
 
 As seções a seguir, [Como um autor de conteúdo](#as-a-content-author) e [Como um autor de modelo](#as-a-template-author) descrevem como testar a funcionalidade do Sistema de estilos usando o Sistema de estilos da WKND.
 
@@ -104,7 +104,7 @@ Se você desejar usar o Sistema de estilos em seus próprios componentes, faça 
 
 >[!CAUTION]
 >
->As classes CSS (bem como qualquer Javascript necessário) configuradas como propriedades de estilo da política de um componente devem ser implantadas como [Bibliotecas de clientes](/help/implementing/developing/introduction/clientlibs.md) para trabalhar.
+>As classes CSS (bem como qualquer Javascript necessário) configuradas como propriedades de estilo da política de um componente devem ser implantadas como [Bibliotecas do cliente](/help/implementing/developing/introduction/clientlibs.md) para funcionarem.
 
 ## Configurar {#setup}
 
