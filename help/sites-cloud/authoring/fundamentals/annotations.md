@@ -1,11 +1,11 @@
 ---
 title: Adição de anotações de página
-description: Use o modo de anotação para deixar anotações e rascunhos nas páginas, como você usaria as notas adesivas para auxiliar no processo de revisão do conteúdo
+description: Use o modo de anotação para criar anotações e rascunhos nas páginas da mesma maneira que você usaria notas adesivas para auxiliar no processo de revisão do conteúdo
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
 source-git-commit: 64d801b108229866394e993811a67f983be5df6c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '699'
-ht-degree: 35%
+ht-degree: 100%
 
 ---
 
@@ -13,17 +13,17 @@ ht-degree: 35%
 
 Criar conteúdo para sua experiência digital geralmente requer discussão e feedback antes da publicação. Para auxiliar nesse processo de feedback, o AEM permite adicionar anotações ao seu conteúdo.
 
-Uma anotação coloca um rascunho ou nota simples (pense em uma nota autoadesiva do mundo real) na página. A anotação permite que você deixe comentários ou perguntas para outros autores e revisores.
+Uma anotação cria um rascunho ou uma nota simples (semelhante a uma nota autoadesiva) na página. A anotação permite que você deixe comentários ou perguntas para outros autores e revisores.
 
 >[!TIP]
 >
 >Não esqueça que [comentários](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) também estão disponíveis para fornecer feedback em uma página.
 
-Um [modo](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) é usado para criar e visualizar anotações.
+Um [modo](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) especial é usado para criar e visualizar anotações.
 
 >[!TIP]
 >
->Dependendo dos seus requisitos, também é possível desenvolver um [workflow](/help/sites-cloud/authoring/workflows/overview.md) para enviar notificações quando anotações são adicionadas, atualizadas ou excluídas.
+>Dependendo das suas necessidades, também é possível desenvolver um [fluxo de trabalho](/help/sites-cloud/authoring/workflows/overview.md) para enviar notificações quando anotações são adicionadas, atualizadas ou excluídas.
 
 ## Indicador de anotação {#annotation-indicator}
 
@@ -35,7 +35,7 @@ As anotações não aparecem no modo Editar, mas o selo na parte superior direit
 
 As anotações são visíveis apenas no modo Anotar.
 
-1. Você entra no modo Anotar usando o ícone na barra de ferramentas (canto superior direito) ao editar uma página:
+1. Você pode entrar no modo Anotar usando o ícone na barra de ferramentas (canto superior direito) ao editar uma página:
 
    ![Botão Anotar](/help/sites-cloud/authoring/assets/annotations.png)
 
@@ -43,21 +43,21 @@ As anotações são visíveis apenas no modo Anotar.
 
    ![Exemplos de anotação](/help/sites-cloud/authoring/assets/annotation-sketches.png)
 
-1. Clique ou toque na anotação para abrir a caixa de diálogo de anotação e exibir seus detalhes.
+1. Clique ou toque na anotação para abrir a caixa de diálogo de anotação e visualizar os detalhes.
 
    ![Detalhes da anotação](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
-1. Para sair do modo Anotar e retornar ao modo usado anteriormente, toque/clique no botão x à direita da barra de ferramentas superior.
+1. Para sair do modo Anotar e voltar ao modo usado anteriormente, toque/clique no botão X à direita da barra de ferramentas superior.
 
 ## Adicionar e editar anotações {#annotating-a-component}
 
 Além de visualizar as anotações, o modo Anotar permite criar, editar, mover ou excluir anotações do seu conteúdo
 
-1. [Iniciar modo Anotar](#annotate-mode) na página.
+1. [Inicie o modo Anotar](#annotate-mode) na página.
 
 1. Clique ou toque no ícone Adicionar anotação (símbolo de mais à esquerda da barra de ferramentas) para começar a adicionar as anotações.
 
-1. Clique ou toque no componente desejado (os componentes que podem ser anotados serão destacados com uma borda azul) para adicionar a anotação e abrir a caixa de diálogo:
+1. Clique ou toque no componente desejado (os componentes que permitem anotações estarão destacados com uma borda azul) para adicionar a anotação e abrir a caixa de diálogo:
 
    ![Adição de uma anotação](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
@@ -70,7 +70,7 @@ Além de visualizar as anotações, o modo Anotar permite criar, editar, mover o
 
       O cursor se transformará em uma cruz durante a criação de um rascunho. Você pode desenhar várias linhas distintas. A linha de rascunho reflete a cor da anotação e pode ser uma seta, círculo ou forma oval.
 
-   * Escolha ou altere a cor:
+   * Escolher ou alterar a cor:
 
       ![Botão Amostra de cor da anotação](/help/sites-cloud/authoring/assets/annotation-color-swatch.png)
 
@@ -80,9 +80,9 @@ Além de visualizar as anotações, o modo Anotar permite criar, editar, mover o
 
 1. Depois que terminar de editar uma anotação específica, você pode:
 
-   * Clique ou toque no marcador de texto para abrir a anotação. Depois de aberto, você pode exibir o texto completo, fazer alterações ou [excluir a anotação.](#deleting-annotations)
+   * Clicar ou tocar em um marcador de texto para abrir a anotação. Depois de aberta, você pode exibir o texto completo, fazer alterações ou [excluir a anotação.](#deleting-annotations)
    * Reposicionar o marcador de texto.
-   * Clique ou toque em uma linha de rascunho para selecionar esse rascunho e arrastá-lo para a posição desejada.
+   * Clique ou toque em uma linha do rascunho para selecioná-lo e arraste-o para a posição desejada.
    * Mover ou copiar um componente
       * As anotações relacionadas e seus rascunhos também serão movidos ou copiados, mas sua posição em relação ao parágrafo permanecerá a mesma.
 
@@ -95,15 +95,15 @@ Além de visualizar as anotações, o modo Anotar permite criar, editar, mover o
 >
 >A definição de um tipo de componente individual determina se é possível adicionar uma anotação (ou não) nas instâncias desse componente.
 
-## Exclusão de anotações e rascunhos {#deleting-annotations}
+## Excluir anotações e rascunhos {#deleting-annotations}
 
 As anotações e seus rascunhos associados podem ser excluídos.
 
-1. [Iniciar modo Anotar](#annotate-mode) na página.
+1. [Inicie o modo Anotar](#annotate-mode) na página.
 
-1. Clicar/tocar em um marcador de texto para abrir a anotação.
+1. Clique/toque em um marcador de texto para abrir a anotação.
 
-1. Clique ou toque no ícone Excluir .
+1. Clique ou toque no ícone Excluir.
 
    ![Excluir anotação](/help/sites-cloud/authoring/assets/annotation-delete.png)
 
@@ -113,13 +113,13 @@ As anotações e seus rascunhos associados podem ser excluídos.
 >
 >A exclusão de um componente exclui todas as anotações e rascunhos associados a ele, independentemente de suas posições na página como um todo.
 
-## Exclusão de rascunhos somente {#deleting-sketches}
+## Excluir somente os rascunhos {#deleting-sketches}
 
-Você pode excluir somente rascunhos específicos em vez da anotação inteira com todos os rascunhos associados.
+Você pode excluir somente rascunhos específicos em vez da anotação inteira com todos os rascunhos associados a ela.
 
-1. [Iniciar modo Anotar](#annotate-mode) na página.
+1. [Inicie o modo Anotar](#annotate-mode) na página.
 
-1. Clique ou toque no rascunho. AEM o destaca com uma caixa azul mais escura.
+1. Clique ou toque no rascunho. O AEM o destaca com uma caixa azul mais escura.
 
    ![Selecionar rascunho para exclusão](/help/sites-cloud/authoring/assets/annotation-sketch-delete.png)
 
