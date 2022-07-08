@@ -3,9 +3,9 @@ title: Trabalhar com tarefas
 description: As tarefas representam itens de trabalho a serem realizados no conteúdo e são usadas nos projetos para determinar o nível de integridade das tarefas atuais
 exl-id: 66f95a1f-34d0-4e2e-aa8c-addc2029a1d9
 source-git-commit: fef0aef0d440eaedbf1a88cba0640e1f98e85e3e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '578'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ Clique nas reticências (...) no Mosaico de tarefas para exibir a lista de taref
 
 #### Detalhes da tarefa {#task-details}
 
-Para obter mais informações sobre uma tarefa específica, na Lista de Tarefas, toque/clique na tarefa e **Abrir**.
+Para obter mais informações sobre uma tarefa específica, na Lista de tarefas, toque/clique na tarefa e em **Abrir**.
 
 ![Detalhes da tarefa](/help/sites-cloud/authoring/assets/projects-task-details.png)
 
