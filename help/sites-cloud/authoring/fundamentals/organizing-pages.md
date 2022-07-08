@@ -3,19 +3,19 @@ title: Criar e organizar páginas
 description: Como criar e organizar páginas com o AEM
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
 source-git-commit: 93e0eac6e329c7a0c54cf592b097014d39a8eb17
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2560'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # Criar e organizar páginas {#creating-and-organizing-pages}
 
-Este documento descreve como criar e gerenciar páginas com o Adobe Experience Manager Cloud Service para depois [criar o conteúdo](/help/sites-cloud/authoring/fundamentals/editing-content.md) nessas páginas.
+Este documento descreve como criar e gerenciar páginas com o Adobe Experience Manager Cloud Service para depois usá-las para [criar o conteúdo](/help/sites-cloud/authoring/fundamentals/editing-content.md).
 
 >[!NOTE]
 >
->Sua conta precisa de direitos de acesso apropriados  e permissões para realizar ações nas páginas, como criar, copiar, mover, editar, excluir.
+>Sua conta precisa de direitos de acesso apropriados e permissões para realizar ações nas páginas, como criar, copiar, mover, editar e excluir.
 >
 >Caso encontre algum problema, sugerimos que você entre em contato com o administrador do sistema.
 
@@ -92,7 +92,7 @@ O **Título** da página e o **Nome** podem ser criados separadamente, mas estã
 >
 >Lembre-se também de que alguns navegadores (por exemplo, versões mais antigas do IE) só podem aceitar URLs de até um determinado comprimento, por isso também há um motivo técnico para manter os nomes de página curtos.
 
-Ao criar uma nova página, o AEM [validar o nome da página de acordo com as convenções](/help/implementing/developing/introduction/naming-conventions.md) impostas pelo AEM e pelo JCR.
+Ao criar uma nova página, o AEM [validará o nome da página de acordo com as convenções](/help/implementing/developing/introduction/naming-conventions.md) impostas pelo AEM e JCR.
 
 Os caracteres mínimos permitidos são:
 
@@ -110,18 +110,18 @@ Detalhes completos sobre todos os caracteres permitidos podem ser encontrados na
 
 #### Título {#title}
 
-Caso forneça apenas um **Título** de página ao criar uma nova página, o AEM vai derivar o **Nome**[ de página desta cadeia de caracteres e validá-lo de acordo com as convenções impostas pelo AEM e JCR.](/help/implementing/developing/introduction/naming-conventions.md)
+Quando você fornece apenas um **Título** de página ao criar uma nova página, o AEM deriva o **Nome** de página desta cadeia de caracteres e o valida[ de acordo com as convenções](/help/implementing/developing/introduction/naming-conventions.md) impostas pelo AEM e JCR.
 
 Um campo de **Título** que contém caracteres inválidos será aceito, mas o nome derivado terá os caracteres inválidos substituídos. Por exemplo:
 
 | Título | Nome derivado |
 |---|---|
 | Schön | `schoen.html` |
-| SC%&amp;*ç+ | `sc---c-.html` |
+| SC%&amp;&#42;ç+ | `sc---c-.html` |
 
 #### Nome {#name}
 
-Quando você fornecer um **Nome** de página ao criar uma nova página, o AEM vai validar o nome de acordo com as convenções impostas pelo AEM e JCR. [](/help/implementing/developing/introduction/naming-conventions.md) Não é possível enviar caracteres inválidos no campo **Nome**. Quando o AEM detecta caracteres inválidos, o campo é destacado com uma mensagem explicativa.
+Quando você fornece um **Nome** de página ao criar uma nova página, o AEM valida[ o nome de acordo com as convenções](/help/implementing/developing/introduction/naming-conventions.md) impostas pelo AEM e JCR. Não é possível inserir caracteres inválidos no campo **Nome**. Quando o AEM detecta caracteres inválidos, o campo é destacado com uma mensagem explicativa.
 
 ![Exemplo de inserção de um nome de página inválido](/help/sites-cloud/authoring/assets/organizing-invalid-name.png)
 
@@ -199,7 +199,7 @@ A menos que todas as páginas tenham sido criadas antecipadamente para você, é
    * **Nome**:
 
       * Usado para gerar o URI. Se não for especificado, o nome é derivado do título.
-      * Se você fornecer um **Nome**[ de página ao criar uma nova página, o AEM vai validar o nome de acordo com as convenções impostas pelo AEM e JCR.](/help/implementing/developing/introduction/naming-conventions.md)
+      * Quando você fornece um **Nome** de página ao criar uma nova página, o AEM valida[ esse nome de acordo com as convenções](/help/implementing/developing/introduction/naming-conventions.md) impostas pelo AEM e JCR.
       * **Não é possível enviar caracteres inválidos** no campo **Nome**. Quando o AEM detecta caracteres inválidos, o campo será destacado e uma mensagem explicativa será exibida para indicar os caracteres que precisam ser removidos/substituídos.
 
    >[!TIP]
@@ -262,13 +262,13 @@ Após criar uma página ou navegar para uma página existente (no console), voc�
    ![Copiar](/help/sites-cloud/authoring/assets/copy.png)
 
 1. Navegue até o local para a nova cópia da página.
-1. Toque ou clique no botão **Colar** ícone que ficou disponível.
+1. Toque ou clique no ícone **Colar** que ficou disponível.
 
    ![Colar](/help/sites-cloud/authoring/assets/paste.png)
 
-1. A caixa de diálogo de colagem apresenta um resumo da transação de colagem e a capacidade de:
-   * **Nome do novo site:** Alterar o nome da página colada
-   * **Colar sem filhos:** Omitir as páginas secundárias da página selecionada ao colar (por padrão, as páginas secundárias são coladas)
+1. A caixa de diálogo Colar apresenta um resumo da transação de colagem e a capacidade de:
+   * **Nome do novo site:** alterar o nome da página colada
+   * **Colar sem páginas secundárias:** omitir as páginas secundárias da página selecionada ao colar (por padrão, as páginas secundárias são coladas)
 
    ![Caixa de diálogo Colar](/help/sites-cloud/authoring/assets/paste-dialog.png)
 
@@ -280,11 +280,11 @@ Após criar uma página ou navegar para uma página existente (no console), voc�
 
 >[!NOTE]
 >
->Se você iniciar a ação de colar no modo de seleção, ela será encerrada automaticamente assim que a página for copiada.
+>Caso esteja no modo de seleção ao iniciar a ação de colagem, ele será encerrado automaticamente assim que a página for copiada.
 
 ### Mover ou renomear uma página {#moving-or-renaming-a-page}
 
-O procedimento para mover ou renomear uma página é basicamente o mesmo e ambas as ações são tratadas pelo assistente Mover página . Com este assistente você pode:
+O procedimento para mover ou renomear uma página é basicamente o mesmo e é realizado pelo assistente Mover página. Com este assistente você pode:
 
 * Renomear uma página sem movê-la
 * Mover a página sem renomeá-la
@@ -361,7 +361,7 @@ O AEM oferece a funcionalidade de atualizar os links internos que se referem à 
 
 >[!NOTE]
 >
->Uma página só pode ser movida para um local onde o modelo no qual a página se baseia está permitido. Consulte [Disponibilidade do modelo](/help/implementing/developing/components/templates.md#template-availability) para obter mais informações.
+>Uma página só pode ser movida para um local onde o modelo no qual a página se baseia está permitido. Consulte [Disponibilidade de modelo](/help/implementing/developing/components/templates.md#template-availability) para obter mais informações.
 
 #### Ações assíncronas {#asynchronous-actions}
 
@@ -387,7 +387,7 @@ O status de trabalhos assíncronos pode ser verificado no painel [**Status de tr
 ### Excluir uma página {#deleting-a-page}
 
 1. Navegue até que você possa visualizar a página que deseja excluir.
-1. Use o [modo de seleção ](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) para selecionar a página pretendida, em seguida, use **Excluir** na barra de ferramentas:
+1. Use o [modo de seleção](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) para selecionar a página pretendida, em seguida, use **Excluir** na barra de ferramentas:
 
    ![Botão Excluir](/help/sites-cloud/authoring/assets/delete.png)
 
