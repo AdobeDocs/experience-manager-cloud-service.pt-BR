@@ -3,7 +3,7 @@ title: Editar conteúdo da página
 description: Uma vez que a sua página é criada, você poderá editar o conteúdo para fazer atualizações necessárias
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2974'
 ht-degree: 100%
 
@@ -406,7 +406,7 @@ Por exemplo:
 
 ## Adicionar anotações {#adding-annotations}
 
-As [anotações ](/help/sites-cloud/authoring/fundamentals/annotations.md) permitem que revisores e outros autores forneçam feedback sobre o seu conteúdo. Isso é usado frequentemente para fins de análise e validação.
+As [anotações](/help/sites-cloud/authoring/fundamentals/annotations.md) permitem que revisores e outros autores forneçam feedback sobre o seu conteúdo. Isso é usado frequentemente para fins de análise e validação.
 
 ## Visualizar páginas   {#previewing-pages}
 
