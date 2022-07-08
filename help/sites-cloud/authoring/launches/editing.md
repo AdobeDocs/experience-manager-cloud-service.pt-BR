@@ -3,9 +3,9 @@ title: Edição de inicializações
 description: Depois de criar um lançamento para a sua página (ou conjunto de páginas), você pode editar o conteúdo na cópia de lançamento da(s) página(s).
 exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '555'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -18,23 +18,23 @@ Quando um lançamento foi criado para uma página (ou um conjunto de páginas), 
 1. Acesse [Lançamento a partir de Referências (console Sites)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) para mostrar as ações disponíveis.
 1. Selecione **Vá para a página** para abrir a página para edição.
 
-Ao editar a página, você verá uma indicação na barra de ferramentas superior, juntamente com o **Sair** e **Navegar** opções:
+Ao editar a página, você verá uma indicação na barra de ferramentas superior, juntamente com as opções **Sair** e **Navegar**:
 
-![Deixe e navegue para iniciar pelo Editor de páginas](/help/sites-cloud/authoring/assets/launches-edit-01.png)
+![Sair e navegar lançamento no editor de páginas](/help/sites-cloud/authoring/assets/launches-edit-01.png)
 
 >[!NOTE]
 >
 >Você não tem permissão para mover uma página em um lançamento. Tentar esta ação acionará uma mensagem de aviso:
 >
->* Aviso: Esta página é a origem de um lançamento. Não é permitido mover a página.
+>* Aviso: esta página é a origem de um lançamento. Não é permitido mover a página.
 
 
 ### Edição de páginas de lançamento sujeitas a uma live copy {#editing-launch-pages-subject-to-a-live-copy}
 
-Se o lançamento se basear em um [Live Copy](/help/sites-cloud/administering/msm/overview.md) em seguida, você:
+Se o seu lançamento se basear em uma [Live Copy](/help/sites-cloud/administering/msm/overview.md), você:
 
-* Consulte Bloquear símbolos (pequenos cadeados) ao editar um componente (conteúdo e/ou propriedades).
-* Consulte a **Live Copy** em **Propriedades da página**
+* Verá símbolos de bloqueio (pequenos cadeados) ao editar um componente (conteúdo e/ou propriedades).
+* Verá a guia **Live Copy** nas **Propriedades da página**
 
 Uma livecopy é usada para sincronizar o conteúdo da *ramificação de origem* para a *ramificação de inicialização* (para manter a inicialização atualizada com as alterações feitas na origem).
 
@@ -49,7 +49,7 @@ Consulte [Alteração do conteúdo da live copy](/help/sites-cloud/administering
 
 Para rastrear as alterações feitas, é possível exibir a inicialização em **Referências** e comparar a página de inicialização com a página de origem:
 
-1. No **Sites** console, [navegue até as páginas de origem do seu lançamento e selecione uma](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
+1. No console **Sites**, [navegue até a página de origem do seu lançamento e selecione-a](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Abra o painel **[Referências](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** e selecione **Lançamentos**.
 1. Selecione seu lançamento específico e depois **Comparar com a origem**:
 
@@ -64,7 +64,7 @@ Para rastrear as alterações feitas, é possível exibir a inicialização em *
 A qualquer momento, você pode adicionar ou remover páginas ao/do intervalo de páginas de origem para um lançamento:
 
 1. Acesse e selecione o lançamento a partir do seguinte:
-   * O [Console Lançamentos](/help/sites-cloud/authoring/launches/overview.md#the-launches-console):
+   * O [console Lançamentos](/help/sites-cloud/authoring/launches/overview.md#the-launches-console):
       * Selecione **Editar**.
    * [Referências (console Sites)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) para mostrar as ações disponíveis:
       * Selecione **Editar lançamento**.
