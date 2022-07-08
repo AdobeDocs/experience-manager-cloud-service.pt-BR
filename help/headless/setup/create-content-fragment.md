@@ -2,7 +2,7 @@
 title: Criação de fragmentos de conteúdo - Configuração do headless
 description: Saiba como usar fragmentos de conteúdo do AEM para projetar, criar, preparar e usar conteúdo independente de página para entrega headless.
 exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
-source-git-commit: c0b48db0cbef6232f153dc59432ea7289b430538
+source-git-commit: d6038920a5866c19a94980cc14fa46dec48daf51
 workflow-type: tm+mt
 source-wordcount: '348'
 ht-degree: 78%
@@ -37,7 +37,7 @@ Selecione o local e o modelo que deseja usar para criar o fragmento de conteúdo
 
    Adicione o Título, o Nome e, se necessário, a Descrição.
 
-   ![Caixa de diálogo Criar novo fragmento de conteúdo](/help/headless/content-fragments/assets/cfc-console-create.png)
+   ![Caixa de diálogo Criar novo fragmento de conteúdo](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
 
 1. Toque ou clique **Criar** ou  **Criar e abrir**.
 

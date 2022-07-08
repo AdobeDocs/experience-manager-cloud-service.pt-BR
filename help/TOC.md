@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Recursos de autoajuda e links de documentação da visão geral do Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 377747d6bbb945b1de9cf1fdcbabc077babd7aa9
+source-git-commit: 778a3687447c1e07605fdb95b3934b10d22483e8
 workflow-type: tm+mt
-source-wordcount: '3682'
+source-wordcount: '3691'
 ht-degree: 94%
 
 ---
@@ -34,9 +34,9 @@ ht-degree: 94%
    + Notas de versão gerais do AEMaaCS {#release-notes}
       + [Notas de versão atuais](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2022 {#2022}
-         + [Notas da versão para 2022.5.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-5-0.md)
-         + [Notas da versão para 2022.4.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-4-0.md)
-         + [Notas da versão para 2022.3.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-3-0.md)
+         + [Notas da versão 2022.5.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-5-0.md)
+         + [Notas da versão 2022.4.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-4-0.md)
+         + [Notas da versão 2022.3.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-3-0.md)
          + [Notas da versão para 2022.1.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-1-0.md)
       + 2021 {#2021}
          + [Notas da versão para 2021.11.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-11-0.md)
@@ -65,14 +65,14 @@ ht-degree: 94%
    + Notas de versão do Cloud Manager {#cloud-manager}
       + [Notas de versão atuais](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
       + 2022 {#2022}
-         + [Notas da versão para 2022.6.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-6-0.md)
-         + [Notas da versão para 2022.5.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-5-0.md)
-         + [Notas da versão para 2022.4.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-4-0.md)
-         + [Notas da versão para 2022.3.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-3-0.md)
+         + [Notas da versão 2022.6.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-6-0.md)
+         + [Notas da versão 2022.5.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-5-0.md)
+         + [Notas da versão 2022.4.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-4-0.md)
+         + [Notas da versão 2022.3.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-3-0.md)
          + [Notas da versão para 2022.2.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-2-0.md)
          + [Notas da versão para 2022.1.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-1-0.md)
       + 2021 {#2021}
-         + [Notas da versão para 202.12.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-12-0.md)
+         + [Notas da versão 202.12.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-12-0.md)
          + [Notas da versão para 2021.11.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-11-0.md)
          + [Notas da versão para 2021.10.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-10-0.md)
          + [Notas da versão para 2021.9.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-9-0.md)
@@ -99,8 +99,8 @@ ht-degree: 94%
    + Notas de versão das ferramentas de migração {#migration-tools}
       + [Notas de versão atuais](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
       + 2022 {#2022}
-         + [Notas da versão para 2022.4.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-04-0.md)
-         + [Notas da versão para 2022.3.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-03-0.md)
+         + [Notas da versão 2022.4.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-04-0.md)
+         + [Notas da versão 2022.3.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-03-0.md)
          + [Notas da versão para 2022.2.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-02-0.md)
          + [Notas da versão para 2022.1.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-01-0.md)
       + 2021 {#2021}
@@ -342,7 +342,7 @@ ht-degree: 94%
 + Assets {#assets}
    + [[!DNL Assets] as a  [!DNL Cloud Service]](/help/assets/home.md)
    + [Visão geral e novidades](/help/assets/overview.md)
-   + [Alterações importantes no [!DNL Assets]  as a  [!DNL Cloud Service]](/help/assets/assets-cloud-changes.md)
+   + [Alterações importantes no  [!DNL Assets]  as a  [!DNL Cloud Service]](/help/assets/assets-cloud-changes.md)
    + [Arquitetura do [!DNL Assets]](/help/assets/architecture.md)
    + [Formatos de arquivo compatíveis](/help/assets/file-format-support.md)
    + [Visão geral dos microsserviços de ativos](/help/assets/asset-microservices-overview.md)
@@ -394,9 +394,9 @@ ht-degree: 94%
       + [Recursos MediaLibrary](/help/assets/medialibrary.md)
       + [Importar e exportar metadados de ativos](/help/assets/metadata-import-export.md)
    + Compartilhar e distribuir ativos {#brand-portal}
-      + [Configurar o [!DNL Assets]  com o [!DNL Brand Portal]](/help/assets/configure-aem-assets-with-brand-portal.md)
+      + [Configurar o  [!DNL Assets]  com o  [!DNL Brand Portal]](/help/assets/configure-aem-assets-with-brand-portal.md)
       + [Publicar ativos no  [!DNL Brand Portal]](/help/assets/publish-to-brand-portal.md)
-      + [Publicar ativos do [!DNL Brand Portal]  no [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=pt-BR)
+      + [Publicar ativos do  [!DNL Brand Portal]  no  [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=pt-BR)
    + Fragmentos de conteúdo {#content-fragments}
       + [Trabalho com fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md)
       + [Entrega headless com fragmentos de conteúdo e GraphQL](/help/assets/content-fragments/content-fragments-graphql.md)
@@ -465,9 +465,9 @@ ht-degree: 94%
       + [Fim de vida útil de visualizadores DHTML](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
    + Integração com o Adobe Workfront {#integrations}
       + [Integrações com [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
-      + [Instalar o [!DNL enhanced connector] para o [!DNL Workfront]](/help/assets/workfront-connector-install.md)
+      + [Instalar o  [!DNL enhanced connector]  para o  [!DNL Workfront]](/help/assets/workfront-connector-install.md)
       + [Remover dependências externas de instalações existentes](/help/assets/remove-external-dependencies.md)
-      + [Configurar o [!DNL enhanced connector]  para o [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
+      + [Configurar o  [!DNL enhanced connector]  para o  [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
       + [Atualizar o [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
       + [Configurar o mapeamento de metadados de ativos](/help/assets/configure-asset-metadata-mapping.md)
 + Forms {#forms}
@@ -527,7 +527,7 @@ ht-degree: 94%
       + [Configurar fontes de dados](/help/forms/configure-data-sources.md)
       + [Configurar OData do  [!DNL Microsoft Dynamics] ](/help/forms/ms-dynamics-odata-configuration.md)
       + [Configurar armazenamento do  [!DNL Azure] ](/help/forms/configure-azure-storage.md)
-      + [Configurar os serviços em nuvem do [!DNL Microsoft Dynamics 365]  e do [!DNL Salesforce] ](/help/forms/configure-msdynamics-salesforce.md)
+      + [Configurar os serviços em nuvem do  [!DNL Microsoft Dynamics 365]  e do  [!DNL Salesforce] ](/help/forms/configure-msdynamics-salesforce.md)
       + [Criar modelo de dados do formulário](/help/forms/create-form-data-models.md)
       + [Trabalhar com o modelo de dados de formulário](/help/forms/work-with-form-data-model.md)
       + [Utilizar modelo de dados do formulário](/help/forms/using-form-data-model.md)
@@ -546,7 +546,7 @@ ht-degree: 94%
       + [APIs de comunicação - Processamento em lote](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
       + [Uso de fontes personalizadas em documentos PDF](/help/forms/use-custom-fonts.md)
       + [Problemas conhecidos, práticas recomendadas e perguntas frequentes](/help/forms/communications-known-issues-limitations.md)
-   + [Migrar para o [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
+   + [Migrar para o  [!DNL AEM Forms]  as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
    + [Perguntas frequentes](/help/forms/faq.md)
    + [Problemas conhecidos](/help/forms/known-issues.md)
    + Solução de problemas {#troubleshooting-aem-forms-cloud-service}
@@ -634,7 +634,7 @@ ht-degree: 94%
       + [Endpoint GraphQL](/help/headless/setup/create-api-request.md)
    + Fragmentos de conteúdo {#content-fragments}
       + [Visão geral](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments.html)
-      + [Console Fragmentos de conteúdo](/help/headless/content-fragments/content-fragment-console.md)
+      + [Console Fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html)
       + [Modelos de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-models.html)
       + [Gerenciar](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-managing.html)
       + Criação {#authoring}
