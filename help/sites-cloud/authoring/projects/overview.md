@@ -3,19 +3,19 @@ title: Projetos
 description: Projetos permitem agrupar recursos em uma única entidade, cujo ambiente comum e compartilhado facilita o gerenciamento dos seus projetos
 exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
 source-git-commit: 8ea043b4b6424d6922c41c143ca74fd25ac60cf8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1259'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
 # Projetos {#projects}
 
-Projetos permitem agrupar recursos em uma entidade. Um ambiente comum e compartilhado facilita o gerenciamento dos seus projetos. Os tipos de recursos que você pode associar a um projeto são chamados de Mosaicos no AEM. Mosaicos podem incluir informações do projeto e da equipe, ativos, fluxos de trabalho e outros tipos de informações, conforme descrito detalhadamente em [Mosaicos do projeto.](#project-tiles)
+Projetos permitem agrupar recursos em uma entidade. Um ambiente comum e compartilhado facilita o gerenciamento dos seus projetos. Os tipos de recursos que você pode associar a um projeto são chamados de Mosaicos no AEM. Blocos podem incluir informações do projeto e da equipe, ativos, workflows e outros tipos de informações, conforme descrito detalhadamente em [Blocos de projeto.](#project-tiles)
 
 >[!CAUTION]
 >
->Para que os usuários em projetos vejam outros usuários/grupos ao usar a funcionalidade Projetos, como criar projetos, criar tarefas/fluxos de trabalho, ver e gerenciar a equipe, esses usuários precisam ter acesso de leitura no `/home/users` e `/home/groups`. A maneira mais fácil de implementar isso é dar **projects-users** acesso de leitura de grupo para `/home/users` e `/home/groups`.
+>Para que os usuários em projetos possam ver outros usuários/grupos enquanto usam a funcionalidade Projetos (como criar projetos, criar tarefas/workflows, ver e gerenciar a equipe), eles precisam ter acesso de leitura a `/home/users` e `/home/groups`. A maneira mais fácil de implementar é fornecer ao grupo **projetos-usuários** acesso de leitura a `/home/users` e `/home/groups`.
 
 Como usuário, você pode fazer o seguinte:
 
@@ -34,7 +34,7 @@ Consulte os seguintes tópicos adicionais:
 
 O console Projetos é onde você acessa e gerencia seus projetos no AEM.
 
-![O console Projetos](/help/sites-cloud/authoring/assets/projects-console.png)
+![O console de projetos](/help/sites-cloud/authoring/assets/projects-console.png)
 
 * Selecione **Linha do tempo** e, em seguida, um projeto para visualizar sua linha do tempo.
 * Clique/toque em **Selecionar** para entrar no modo de seleção.
@@ -63,7 +63,7 @@ Você pode ter os seguintes blocos associados ao seu projeto. Cada um está desc
 
 No bloco **Assets**, você pode reunir todos os ativos que você usa para um projeto específico.
 
-![Mosaico de ativos](/help/sites-cloud/authoring/assets/projects-assets-tile.png)
+![Bloco de ativos](/help/sites-cloud/authoring/assets/projects-assets-tile.png)
 
 Você faz o upload de recursos diretamente no bloco. Além disso, é possível criar Definições de imagem, Grupos de rotação ou Conjuntos de mix de mídia com o complemento Mídia dinâmica.
 
@@ -73,7 +73,7 @@ Você faz o upload de recursos diretamente no bloco. Além disso, é possível c
 
 Semelhante a ativos, você pode adicionar [coleções de ativos](/help/assets/manage-collections.md) diretamente ao seu projeto. Você define coleções no Assets.
 
-![Coleta de ativos](/help/sites-cloud/authoring/assets/projects-asset-collections.png)
+![Coleção de ativos](/help/sites-cloud/authoring/assets/projects-asset-collections.png)
 
 Adicione uma coleção ao clicar em **Adicionar coleção** e selecionar a coleção apropriada na lista.
 
@@ -83,7 +83,7 @@ O bloco **Experiências** permite adicionar um aplicativo para dispositivos móv
 
 ![Experiências](/help/sites-cloud/authoring/assets/project-experiences.png)
 
-Os ícones indicam que tipo de experiência é representada: site, aplicativo móvel ou publicação. Adicione experiências tocando ou clicando na divisa para baixo e tocando **Adicionar experiência** e selecionando o tipo de experiência.
+Os ícones indicam que tipo de experiência é representada: site, aplicativo móvel ou publicação. Adicione experiências tocando ou clicando na divisa para baixo, tocando em **Adicionar experiência** e selecionando o tipo de experiência.
 
 ![Adicionar uma experiência](/help/sites-cloud/authoring/assets/projects-add-experience.png)
 
@@ -115,7 +115,7 @@ O bloco Tarefa de tradução é onde você inicia uma tradução e visualiza o s
 
 ![Trabalho de tradução](/help/sites-cloud/authoring/assets/projects-translation-job.png)
 
-Clique nas reticências na parte inferior da **Tarefa de tradução** cartão para exibir os ativos no fluxo de trabalho de tradução. A lista de tarefas de tradução também exibe entradas para metadados e tags de ativos. Essas entradas indicam que metadados e tags de ativos também são traduzidos.
+Clique nas reticências na parte inferior do cartão **Trabalho de tradução** para ver os ativos no fluxo de trabalho de tradução. A lista de tarefas de tradução também exibe entradas para metadados e tags de ativos. Essas entradas indicam que metadados e tags de ativos também são traduzidos.
 
 ![Detalhes do trabalho de tradução](/help/sites-cloud/authoring/assets/projects-translation-job-detail.png)
 
@@ -123,7 +123,7 @@ Clique nas reticências na parte inferior da **Tarefa de tradução** cartão pa
 
 Nesse bloco, você pode especificar os membros da equipe do projeto. Ao editar, você pode inserir o nome do membro da equipe e atribuir a função do usuário.
 
-![Mosaico de equipe](/help/sites-cloud/authoring/assets/projects-team-tile.png)
+![Bloco da equipe](/help/sites-cloud/authoring/assets/projects-team-tile.png)
 
 É possível adicionar e excluir membros da equipe. Além disso, você pode editar a [função de usuário](#user-roles-in-a-project) atribuída ao membro da equipe.
 
@@ -147,7 +147,7 @@ O bloco Lançamentos mostra todos os lançamentos que foram solicitados com um [
 
 ### Tarefas {#tasks}
 
-Tarefas permitem monitorar o status de qualquer tarefa relacionada ao projeto, incluindo fluxos de trabalho. As tarefas são abordadas detalhadamente em [Trabalhar com tarefas](/help/sites-cloud/authoring/projects/tasks.md).
+Tarefas permitem monitorar o status de qualquer tarefa relacionada ao projeto, incluindo fluxos de trabalho. As tarefas são abordadas em detalhes em [Trabalhar com tarefas](/help/sites-cloud/authoring/projects/tasks.md).
 
 ![Tarefas](/help/sites-cloud/authoring/assets/projects-tasks.png)
 
@@ -155,9 +155,9 @@ Tarefas permitem monitorar o status de qualquer tarefa relacionada ao projeto, i
 
 O AEM acompanha três modelos diferentes prontos para uso:
 
-* Um projeto simples - Uma amostra de referência para quaisquer projetos que não se encaixem em outras categorias (uma categoria genérica). Ele inclui três funções básicas (Proprietários, Editores e Observadores) e quatro fluxos de trabalho (Aprovação de projeto, Solicitar lançamento, Solicitar página de aterrissagem e Solicitar email).
-* Um projeto de mídia - Um projeto de amostra de referência para atividades relacionadas à mídia. Ele inclui várias funções de projeto relacionadas a mídia (Fotógrafos, Editores, Redatores, Designers, Proprietários e Observadores). Também é necessário solicitar fluxo de trabalho de cópia para solicitar e revisar o texto.
-* A [projeto de tradução](/help/sites-cloud/administering/translation/overview.md) - Uma amostra de referência para a gestão de atividades relacionadas com a tradução. Ele inclui três funções básicas (Proprietários, Editores e Observadores). Também inclui dois fluxos de trabalho que são acessados na interface de usuário de Fluxos de trabalho.
+* Um projeto simples - Uma amostra de referência para qualquer projeto que não se encaixe em outras categorias (uma categoria genérica). Ele inclui três funções básicas (Proprietários, Editores e Observadores) e quatro fluxos de trabalho (Aprovação de projeto, Solicitar lançamento, Solicitar página de aterrissagem e Solicitar email).
+* Um projeto de mídia - Um projeto de amostra de referência para atividades de mídia. Ele inclui várias funções de projeto relacionadas a mídia (Fotógrafos, Editores, Redatores, Designers, Proprietários e Observadores). Ele também solicita o fluxo de trabalho de cópia para solicitar e revisar o texto.
+* Um [projeto de tradução](/help/sites-cloud/administering/translation/overview.md) - Uma amostra de referência para o gerenciamento de atividades relacionadas a tradução. Ele inclui três funções básicas (Proprietários, Editores e Observadores). Também inclui dois fluxos de trabalho que são acessados na interface de usuário de Fluxos de trabalho.
 
 Com base no modelo selecionado, você tem diferentes opções disponíveis, principalmente em relação a funções de usuário e fluxos de trabalho.
 
@@ -174,7 +174,7 @@ Todos os projetos oferecem suporte às seguintes funções padrão, para permiti
 |---|---|---|---|
 | Observador | Um usuário nessa função pode visualizar detalhes do projeto, incluindo seu status. | Permissões somente leitura em um projeto | `workflow-users` grupo |
 | Editor | Um usuário nessa função pode fazer o upload e a edição do conteúdo de um projeto. | Acesso de leitura e gravação em um projeto, metadados associados e ativos relacionados; privilégios para fazer upload de uma lista de capturas e revisar e aprovar ativos; permissão de gravação em /etc/commerce; modificar permissão em um projeto específico | grupo de usuários de fluxo de trabalho |
-| Proprietário | Um usuário nessa função pode iniciar um projeto. Um proprietário pode criar um projeto, iniciar o trabalho em um projeto e também mover ativos aprovados para a pasta Produção. Além disso, todas as outras tarefas no projeto também podem ser visualizadas e executadas pelo proprietário. | Permissão de gravação em `/etc/commerce` | `dam-users` grupo (para poder criar um projeto) grupo de administradores de projeto (para poder criar um projeto e mover ativos) |
+| Proprietário | Um usuário nessa função pode iniciar um projeto. Um proprietário pode criar um projeto, iniciar um trabalho em um projeto e também mover ativos aprovados para a pasta Produção. Além disso, todas as outras tarefas no projeto também podem ser visualizadas e executadas pelo proprietário. | Permissão de gravação em `/etc/commerce` | Grupo `dam-users` (para poder criar um projeto) grupo de administradores de projeto (para poder criar um projeto e mover ativos) |
 
 >[!NOTE]
 >
