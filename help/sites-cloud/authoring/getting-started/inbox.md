@@ -3,7 +3,7 @@ title: Sua caixa de entrada
 description: Gerenciar suas tarefas com a caixa de entrada
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '913'
 ht-degree: 100%
 
@@ -134,7 +134,7 @@ Para ambas as exibições (Lista e Calendário), você pode definir configuraç�
    >
    >Para obter mais informações, consulte:
    >
-   >* Itens de fluxo de trabalho - [ participar de fluxos de trabalho](/help/sites-cloud/authoring/workflows/participating.md)
+   >* Itens de fluxo de trabalho - [participar de fluxos de trabalho](/help/sites-cloud/authoring/workflows/participating.md)
 
 
 2. Dependendo do item selecionado, uma ação será iniciada, por exemplo:
