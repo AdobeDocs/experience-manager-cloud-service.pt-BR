@@ -3,9 +3,9 @@ title: 'Criação de modelos de páginas  '
 description: O modelo define a estrutura da página resultante e, com o editor de modelo, criar e manter modelos não é mais uma tarefa apenas do desenvolvedor
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4596'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ O **Editor de modelo** permite que os autores do modelo:
 
 Este documento explica como um **autor de modelo** pode usar o console e o editor de modelo para criar e gerenciar modelos editáveis.
 
-Para obter informações detalhadas sobre como os modelos editáveis funcionam a um nível técnico, consulte o documento do desenvolvedor [Modelos de página](/help/implementing/developing/components/templates.md) para obter mais informações.
+Para obter informações detalhadas sobre como os modelos editáveis funcionam em nível técnico, consulte o documento do desenvolvedor [Modelos de página](/help/implementing/developing/components/templates.md).
 
 >[!NOTE]
 >
@@ -95,7 +95,7 @@ Ao criar um novo modelo editável:
 
 ### Criação de uma pasta de modelo - Administrador {#creating-a-template-folder-admin}
 
-Uma pasta de modelo deve ser criada para que o projeto mantenha seus modelos específicos de projetos. Esta é uma tarefa de administrador e está descrita no documento [Modelos de página](/help/implementing/developing/components/templates.md#template-folders).—>
+Uma pasta de modelo deve ser criada para que o projeto mantenha seus modelos específicos de projetos. Trata-se de uma tarefa de administrador e está descrita no documento [Modelos de página](/help/implementing/developing/components/templates.md#template-folders).-->
 
 ### Criação de um novo modelo - Autor do modelo {#creating-a-new-template-template-author}
 
@@ -113,7 +113,7 @@ Uma pasta de modelo deve ser criada para que o projeto mantenha seus modelos esp
 
    >[!NOTE]
    >
-   >Os tipos de modelo são layouts predefinidos e podem ser considerados modelos de um modelo. Eles são predefinidos pelos desenvolvedores ou pelo administrador do sistema. Mais informações podem ser encontradas no documento do desenvolvedor [Modelos de página](/help/implementing/developing/components/templates.md#template-type).—>
+   >Os tipos de modelo são layouts predefinidos e podem ser considerados modelos de um modelo. Eles são predefinidos pelos desenvolvedores ou pelo administrador do sistema. Mais informações podem ser encontradas no documento do desenvolvedor [Modelos de página](/help/implementing/developing/components/templates.md#template-type).-->
 
 1. Preencha os **detalhes do modelo**:
 
@@ -128,9 +128,9 @@ Uma pasta de modelo deve ser criada para que o projeto mantenha seus modelos esp
 
 >[!NOTE]
 >
->Os modelos são ferramentas poderosas para simplificar o fluxo de trabalho de criação de página. No entanto, muitos modelos podem sobrecarregar os autores e tornar a criação da página confusa. Uma boa regra é manter o número de modelos abaixo de 100.
+>Os modelos são ferramentas eficientes para simplificar o fluxo de trabalho de criação de página. No entanto, usar modelos em excesso pode sobrecarregar os autores e tornar confusa a criação da página. Uma boa regra geral é manter o número de modelos abaixo de 100.
 >
->O Adobe não recomenda ter mais de 1000 modelos devido a possíveis impactos no desempenho.
+>A Adobe não recomenda ter mais de 1000 modelos devido a possíveis impactos no desempenho.
 
 ### Definir propriedades do modelo - Autor do modelo   {#defining-template-properties-template-author}
 
@@ -209,7 +209,7 @@ Um modelo pode ser disponibilizado ou indisponibilizado para determinadas ramifi
    >Se a lista **Modelos permitidos** de for deixada em branco, a árvore será crescente até que um valor/lista seja encontrado.
    >
    >
-   >Consulte [Disponibilidade do modelo](/help/implementing/developing/components/templates.md#template-availability) - os princípios aplicáveis aos modelos permitidos permanecem os mesmos.
+   >Consulte [Disponibilidade de modelos](/help/implementing/developing/components/templates.md#template-availability) - os princípios para modelos permitidos permanecem inalterados.
 
 1. Clique em **Salvar** para salvar as alterações nas propriedades da página.
 
@@ -333,7 +333,7 @@ Além disso, ela pode ser dependente das ações executadas como quando uma pol�
 
 Com essas duas ações você pode adicionar conteúdo aos seus componentes.
 
-#### Borda para indicar estrutura {#border-to-indicate-structure}
+#### Estrutura de Borda indicadora {#border-to-indicate-structure}
 
 Ao trabalhar no modo **estrutura**, uma borda laranja indica que o componente selecionado no momento. Uma linha pontilhada também indica o componente pai.
 
@@ -419,9 +419,9 @@ Por exemplo, para um componente de imagem, é possível definir as proporções 
 
 >[!NOTE]
 >
->[](/help/implementing/developing/extending/rich-text-editor.md)As políticas de conteúdo para componentes que implementam o editor de rich text só podem ser definidas para opções disponibilizadas pelo RTE pelas configurações da interface do usuário.
+>[As políticas de conteúdo para componentes que implementam o editor de rich text](/help/implementing/developing/extending/rich-text-editor.md) só podem ser definidas para opções disponibilizadas pelo RTE, por meio das configurações da interface.
 
-#### Política e propriedades (contêiner de layout) {#policy-and-properties-layout-container}
+#### Política e propriedades (container de layout) {#policy-and-properties-layout-container}
 
 As configurações de política e propriedades de um contêiner de layout são semelhantes ao uso geral, mas com algumas diferenças.
 
@@ -443,7 +443,7 @@ No cabeçalho **Propriedades** você pode escolher quais componentes estarão di
 
 * Componentes permitidos
 * Componentes padrão
-* Configurações receptivas
+* Configurações responsivas
 
 ###### Componentes permitidos {#allowed-components}
 
@@ -467,9 +467,9 @@ Selecione um componente na lista e clique ou toque em **Adicionar tipo** para ad
 
 ![Guia Componentes padrão](/help/sites-cloud/authoring/assets/templates-default-components-tab.png)
 
-###### Configurações receptivas {#responsive-settings}
+###### Configurações responsivas {#responsive-settings}
 
-Na guia **Configurações responsivas**, é possível configurar o número de colunas na grade resultante do contêiner de layout.
+Na guia **Configurações responsivas**, é possível configurar o número de colunas na grade resultante do container de layout.
 
 #### Desbloquear e bloquear componentes {#unlock-and-lock-components}
 
@@ -491,7 +491,7 @@ Isso inclui desbloquear componentes de contêiner para que outros componentes po
 
 Para economizar espaço, o contêiner de layout não é expandido para acomodar a lista de componentes permitidos. Em vez disso, o contêiner se torna uma lista rolável.
 
-Os componentes configuráveis são mostrados com um ícone de **Política**, que pode ser tocado ou clicado para editar a política e as propriedades desse componente.
+Os componentes configuráveis são mostrados com um ícone de **Política**, no qual você pode tocar ou clicar para editar a política e as propriedades desse componente.
 
 ![Ícone Componente configurável](/help/sites-cloud/authoring/assets/templates-configurable-component.png)
 
@@ -532,7 +532,7 @@ Embora todo o conteúdo criado no modo **Estrutura** seja visível no **Conteúd
 >
 >O conteúdo inicial destina-se a preparar componentes e o layout de página que servem como ponto de partida para a criação do conteúdo. Não se destina a ser o conteúdo real que permaneceria intacto. Por esse motivo, o conteúdo inicial não pode ser traduzido.
 >
->Se você precisar incluir texto traduzível no modelo, como em cabeçalhos ou rodapés, poderá usar os recursos de [localização dos componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html).
+>Se você precisar incluir texto traduzível no modelo, como em cabeçalhos ou rodapés, poderá usar os recursos de [localização dos componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=pt-BR).
 
 ### Editar um modelo - Layout - Autor do modelo {#editing-a-template-layout-template-author}
 
@@ -544,7 +544,7 @@ Embora todo o conteúdo criado no modo **Estrutura** seja visível no **Conteúd
 
 ![Layout Editar modelo](/help/sites-cloud/authoring/assets/templates-edit-layout.png)
 
-### Edição de um modelo - Política da página - Autor/desenvolvedor do modelo {#editing-a-template-page-policy-template-author-developer}
+### Editar um modelo - Política da página - Autor/desenvolvedor do modelo {#editing-a-template-page-policy-template-author-developer}
 
 A política da página, incluindo as bibliotecas obrigatórias do lado do cliente, é mantida na opção **Política da página** do menu **Informações da página**.
 
@@ -609,7 +609,7 @@ Usando as propriedades de página, é possível definir as bibliotecas do lado d
 >
 >Como o autor do modelo pode especificar a política de página no modelo, ele precisará obter detalhes das bibliotecas do lado do cliente apropriadas do desenvolvedor.
 
-### Editar um modelo - Propriedades iniciais da página - Criação {#editing-a-template-initial-page-properties-author}
+### Editar um modelo - Propriedades da página inicial - Criação {#editing-a-template-initial-page-properties-author}
 
 Usando a opção **Propriedades da página inicial**, é possível definir as [propriedades de página](/help/sites-cloud/authoring/fundamentals/page-properties.md) iniciais a ser usadas ao criar páginas resultantes.
 
