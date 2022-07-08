@@ -3,15 +3,15 @@ title: Aplicação de fluxos de trabalho a páginas
 description: Ao criar, você pode invocar fluxos de trabalho para realizar ações em suas páginas. Também é possível aplicar mais de um fluxo de trabalho.
 exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '662'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
 # Aplicação de fluxos de trabalho a páginas {#applying-workflows-to-pages}
 
-Ao criar, você pode invocar fluxos de trabalho para realizar ações em suas páginas; também é possível aplicar mais de um workflow.
+Ao criar, é possível invocar fluxos de trabalho para realizar ações em suas páginas. Também é possível aplicar mais de um fluxo de trabalho.
 
 Ao aplicar o fluxo de trabalho, você especifica as seguintes informações:
 
@@ -59,13 +59,13 @@ Em ambos os casos, é necessário:
 
 ### Início de um fluxo de trabalho na barra de ferramentas de Sites {#starting-a-workflow-from-the-sites-toolbar}
 
-Você pode iniciar um fluxo de trabalho na barra de ferramentas do **Sites** console:
+É possível iniciar um fluxo de trabalho na barra de ferramentas do console do **Sites**:
 
 1. Navegue até página desejada e selecione-a.
 
-1. No **Criar** na barra de ferramentas, agora você pode selecionar **Fluxo de trabalho**.
+1. Na opção **Criar** da barra de ferramentas, você pode agora selecionar **Fluxo de trabalho**.
 
-   ![Criar fluxo de trabalho na barra de ferramentas](/help/sites-cloud/authoring/assets/workflows-create-from-toolbar.png)
+   ![Criar fluxo de trabalho a partir da barra de ferramentas](/help/sites-cloud/authoring/assets/workflows-create-from-toolbar.png)
 
 1. O assistente **Criar fluxo de trabalho** ajudará você a [especificar os detalhes do fluxo de trabalho](#specifying-workflow-details-in-the-create-workflow-wizard).
 
@@ -73,10 +73,10 @@ Você pode iniciar um fluxo de trabalho na barra de ferramentas do **Sites** con
 
 Na **Linha do tempo**, você pode iniciar um fluxo de trabalho a ser aplicado ao seu recurso selecionado.
 
-1. [Selecionar o recurso](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) e abrir [Linha do tempo](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) (ou abra Linha do tempo e selecione o recurso ).
+1. [Selecione o recurso](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) e abra a [Linha do tempo](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) (ou abra a Linha do tempo e depois selecione o recurso).
 1. A ponta da seta no campo de comentário pode ser usada para revelar a opção **Iniciar fluxo de trabalho**:
 
-   ![Criar fluxo de trabalho pela linha do tempo](/help/sites-cloud/authoring/assets/workflows-create-from-timeline.png)
+   ![Criar fluxo de trabalho a partir da linha do tempo](/help/sites-cloud/authoring/assets/workflows-create-from-timeline.png)
 
 1. O assistente **Criar fluxo de trabalho** ajudará você a [especificar os detalhes do fluxo de trabalho](#specifying-workflow-details-in-the-create-workflow-wizard).
 
@@ -118,7 +118,7 @@ Você pode especificar os detalhes:
 
 1. Na etapa **Escopo**, você pode selecionar:
 
-   * **Adicionar conteúdo** para abrir o [navegador de caminho](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) e selecionar recursos adicionais; quando estiver no navegador, clique/toque em **Selecionar** para adicionar o conteúdo à instância do workflow.
+   * **Adicione conteúdo** para abrir o [navegador de caminhos](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) e selecionar recursos adicionais. Quando estiver no navegador, clique/toque em **Selecionar** para adicionar o conteúdo à instância do fluxo de trabalho.
 
    * Um recurso existente para ver ações adicionais:
 
@@ -139,10 +139,10 @@ Uma caixa de diálogo será aberta, permitindo que você refine a seleção de a
    >
    >Se você adicionar recursos extras, poderá usar **Voltar** para ajustar a configuração **Manter fluxo de trabalho do pacote** na etapa **Propriedades**.
 
-1. Use **Criar** para fechar o assistente e criar a instância do workflow. Uma notificação é exibida no console Sites.
+1. Use **Criar** para fechar o assistente e criar a instância do fluxo de trabalho. Uma notificação é exibida no console Sites.
 
 ## Iniciar um fluxo de trabalho no editor de páginas {#starting-a-workflow-from-the-page-editor}
 
 Ao editar uma página, você pode selecionar **Informações da página** na barra de ferramentas. O menu suspenso tem a opção **Iniciar no fluxo de trabalho**. Isso abrirá uma caixa de diálogo na qual você pode especificar o fluxo de trabalho necessário, juntamente com um título, se necessário:
 
-![Iniciar um fluxo de trabalho pelo editor de páginas](/help/sites-cloud/authoring/assets/workflows-create-page-editor.png)
+![Iniciar um fluxo de trabalho a partir do editor de páginas](/help/sites-cloud/authoring/assets/workflows-create-page-editor.png)
