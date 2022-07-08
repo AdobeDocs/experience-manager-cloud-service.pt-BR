@@ -1,11 +1,11 @@
 ---
 title: Usar o editor de rich text no  [!DNL Adobe Experience Manager]  para criar conteúdo.
-description: Usar o [!DNL Experience Manager] editor de rich text para criar conteúdo.
+description: Usar o  [!DNL Experience Manager]  editor de rich text para criar conteúdo.
 exl-id: 15c175f8-11de-4475-87a9-920219a4c004
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '286'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ Normalmente, a barra de ferramentas fornece as seguintes opções:
 
 Para componentes baseados em texto, clique no modo de tela cheia ![botão de tela cheia do RTE](/help/sites-cloud/authoring/assets/editing-full-screen.png) na [barra de ferramentas](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) para abrir o editor de rich text e ocultar o restante do conteúdo da página.
 
-O modo de tela cheia exibe todas as opções configuradas que podem ser usadas para criação. A disponibilidade de opções [depende da configuração](/help/implementing/developing/extending/rich-text-editor.md).
+O modo de tela cheia exibe todas as opções configuradas que podem ser usadas para criação. A disponibilidade das opções [depende da configuração](/help/implementing/developing/extending/rich-text-editor.md).
 
 ![RTE no modo de tela cheia](/help/sites-cloud/authoring/assets/rte-full-screen.png)
 
