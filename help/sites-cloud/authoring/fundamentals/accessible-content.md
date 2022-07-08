@@ -3,9 +3,9 @@ title: Criar conteúdo acessível para o Adobe Experience Manager as a Cloud Ser
 description: Usar o AEM as a Cloud Service para ajuda a tornar o conteúdo da Web acessível e utilizável por pessoas com deficiência
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
 source-git-commit: e9c1ec6807f86ab00f89ef292a89a0c8efdf802b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '14050'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Além disso, consulte:
 
 * Nosso [Guia rápido para a WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md).
 * Os [Relatórios de conformidade para acessibilidade de soluções da Adobe](https://www.adobe.com/accessibility/compliance.html).
-* [Acessibilidade em ativos](/help/assets/accessibility.md)
+* [Acessibilidade no Assets](/help/assets/accessibility.md)
 * [Configurar o Editor de Rich Text para a produção de conteúdo acessível](/help/implementing/developing/extending/rte-accessible-content.md)
 
 As diretrizes são classificadas de acordo com os três níveis de conformidade: Nível A (o mais baixo), Nível AA e Nível AAA (o mais alto). Resumidamente, os níveis são definidos como apresentado a seguir:
@@ -68,17 +68,17 @@ Um benefício adicional útil é que as alternativas em texto permitem que o con
 
 #### Como cumprir - Conteúdo não textual (1.1.1)       {#how-to-meet-non-text-content}
 
-Para gráficos estáticos, o requisito básico é o de proporcionar uma alternativa em texto equivalente para o gráfico. Isso pode ser feito no campo **Texto alternativo**. Por exemplo, veja o Componente principal **[Imagem](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html)**.
+Para gráficos estáticos, o requisito básico é o de proporcionar uma alternativa em texto equivalente para o gráfico. Isso pode ser feito no campo **Texto alternativo**. Por exemplo, veja o Componente principal **[Imagem](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=pt-BR)**.
 
 >[!NOTE]
 >
->Alguns Componentes principais predefinidos, como **[Carrossel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html)**, não fornecem um campo **Texto alternativo** para adicionar descrições de texto alternativo a imagens individuais, embora exista o campo **Rótulo** (guia **[Acessibilidade](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html#accessibility-tab)**) para o componente inteiro.
+>Alguns Componentes principais predefinidos, como **[Carrossel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html?lang=pt_BR)**, não fornecem um campo **Texto alternativo** para adicionar descrições de texto alternativo a imagens individuais, embora exista o campo **Rótulo** (guia **[Acessibilidade](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html?lang=pt_BR#accessibility-tab)**) para o componente inteiro.
 >
 >Ao implementar as versões desses componentes para a instância do AEM, sua equipe de desenvolvimento precisará configurá-los para suportar o atributo `alt`, para que os autores possam adicioná-lo ao conteúdo (consulte Adicionar suporte para elementos HTML e atributos adicionais).
 >
->Alguns Componentes principais predefinidos, como **[Carrossel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html)**, não fornecem um campo **Texto alternativo** para adicionar descrições de texto alternativo a imagens individuais, embora exista o campo **Rótulo** (guia **[Acessibilidade](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html#accessibility-tab)**) para o componente inteiro.
+>Alguns Componentes principais predefinidos, como **[Carrossel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html?lang=pt_BR)**, não fornecem um campo **Texto alternativo** para adicionar descrições de texto alternativo a imagens individuais, embora exista o campo **Rótulo** (guia **[Acessibilidade](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html?lang=pt_BR#accessibility-tab)**) para o componente inteiro.
 >
->Ao implementar as versões desses componentes para a instância do AEM, sua equipe de desenvolvimento precisará configurá-los para suportar o atributo `alt`[, para que os autores possam adicioná-lo ao conteúdo (consulte Adicionar suporte para elementos HTML e atributos adicionais](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+>Ao implementar as versões desses componentes para a instância do AEM, sua equipe de desenvolvimento precisará configurá-los para suportar o atributo `alt`, para que os autores possam adicioná-lo ao conteúdo (consulte [Adicionar suporte para elementos HTML e atributos adicionais](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
 Por padrão, o AEM requer que o campo **Texto alternativo** seja preenchido. Se a imagem for meramente decorativa e um texto alternativo não for necessário, será possível marcar a opção **A imagem é decorativa**.
 
@@ -323,7 +323,7 @@ O AEM facilita a construção de conteúdo da Web semanticamente significativo u
 
 * **Listas**: você pode usar HTML para especificar três tipos diferentes de listas:
    * O elemento `<ul>` é usado para listas *desordenadas* (com marcadores). Os itens da lista individual são identificados usando o elemento `<li>`. No RTE, use o ícone **Lista de marcadores**.
-   * O elemento `<ol>` é usado para as listas *numeradas*. Os itens da lista individual são identificados usando o elemento `<li>`. No RTE, use o ícone **Lista numerada** .
+   * O elemento `<ol>` é usado para as listas *numeradas*. Os itens da lista individual são identificados usando o elemento `<li>`. No RTE, use o ícone **Lista numerada**.
 
    Caso deseje alterar o conteúdo existente em um tipo de lista específica, destaque o texto e selecione o tipo de lista adequado. Como no exemplo anterior, que mostra como o texto do parágrafo é inserido, os elementos desejados da lista são adicionados automaticamente ao seu HTML.
 
@@ -343,7 +343,7 @@ O AEM facilita a construção de conteúdo da Web semanticamente significativo u
 
    >[!NOTE]
    >
-   >Por padrão, esses elementos e atributos não estão diretamente disponíveis, embora o administrador do sistema possa adicionar o suporte para esses valores na caixa de diálogo **Propriedades da tabela**[ (consulte Adicionar suporte para outros elementos e atributos de HTML](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+   >Por padrão, esses elementos e atributos não estão diretamente disponíveis, embora o administrador do sistema possa adicionar o suporte para esses valores na caixa de diálogo **Propriedades da tabela** (consulte [Adicionar suporte para outros elementos e atributos de HTML](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
    Para abrir a caixa de diálogo **Tabela** onde é possível selecionar a guia **Propriedades da tabela**:
 
@@ -846,7 +846,7 @@ Para todos os usuários, independentemente da incapacidade cognitiva, indicar cl
 Acima de tudo, verifique se a finalidade de um link está claramente descrita no texto.
 
 * Exemplo incorreto:
-   * Texto: para obter mais informações sobre nossas aulas noturnas no segundo trimestre de 2010, clique aqui .
+   * Texto: para obter mais informações sobre nossas aulas noturnas no segundo trimestre de 2010, clique aqui.
    * Motivo: não indica clara e inequivocamente o seu destino.
 * Exemplo correto:
    * Texto: aulas à noite para o segundo trimestre de 2010 - mais informações.
@@ -1009,7 +1009,7 @@ No AEM, o idioma padrão da sua página é definido ao criar página, mas també
 
 #### Finalidade - Idioma de Partes (3.1.2)       {#purpose-language-of-parts}
 
-A finalidade deste critério de sucesso é semelhante ao critério de sucesso de [Idioma da Página ](#language-of-page), exceto que se aplica a páginas da Web com conteúdo em múltiplos idiomas em uma única página (por exemplo, devido a citações ou palavras incomuns).
+A finalidade deste critério de sucesso é semelhante ao critério de sucesso de [Idioma da Página](#language-of-page), exceto que se aplica a páginas da Web com conteúdo em múltiplos idiomas em uma única página (por exemplo, devido a citações ou palavras incomuns).
 
 As páginas que aplicam este critério de sucesso:
 
@@ -1041,7 +1041,7 @@ Da mesma forma, o navegador poderá processar uma palavra incomum ou frase corre
 >
 >Não é necessário seguir este critério de sucesso ao incluir nomes ou cidades em diferentes idiomas, ou ao usar palavras de empréstimo ou frases que se tornaram comuns no idioma padrão (como *schadenfreude* em inglês).
 
-Para adicionar o elemento span, com um idioma apropriado, você pode editar manualmente a sua marcação HTML no modo de edição de fonte da RTE para ser exibido como acima. Como alternativa, o atributo `lang`[ pode ser incluído na RTE pelo administrador do sistema (consulte Adicionar suporte para elementos e atributos HTML adicionais](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+Para adicionar o elemento span, com um idioma apropriado, você pode editar manualmente a sua marcação HTML no modo de edição de fonte da RTE para ser exibido como acima. Como alternativa, o atributo `lang` pode ser incluído na RTE pelo administrador do sistema (consulte [Adicionar suporte para elementos e atributos HTML adicionais](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
 #### Mais Informações - Idioma de Partes (3.1.2) {#more-information-language-of-parts}
 
@@ -1158,7 +1158,7 @@ Siga as orientações em [Como cumprir o Critério de sucesso 3.2.4](https://www
 
 #### Propósito - Identificação de erro (3.3.1) {#purpose-error-identification}
 
-O propósito deste Critério de sucesso é garantir que os usuários estejam cientes de que ocorreu um erro e possam determinar o que está errado. A mensagem de erro deve ser o mais específica possível. No caso de um envio de formulário malsucedido, a reexibição do formulário e a indicação dos campos com erro são insuficientes para que alguns usuários percebam que ocorreu um erro. Os usuários do leitor de tela, por exemplo, não saberão que houve um erro até encontrarem um dos indicadores. Eles podem abandonar o formulário completamente antes de encontrar o indicador de erro, achando que a página simplesmente não está funcionando. De acordo com a definição na WCAG , um [erro de entrada](https://www.w3.org/TR/WCAG/#dfn-input-error) são informações fornecidas pelo usuário que não são aceitas. Isso inclui:
+O propósito deste Critério de sucesso é garantir que os usuários estejam cientes de que ocorreu um erro e possam determinar o que está errado. A mensagem de erro deve ser o mais específica possível. No caso de um envio de formulário malsucedido, a reexibição do formulário e a indicação dos campos com erro são insuficientes para que alguns usuários percebam que ocorreu um erro. Os usuários do leitor de tela, por exemplo, não saberão que houve um erro até encontrarem um dos indicadores. Eles podem abandonar o formulário completamente antes de encontrar o indicador de erro, achando que a página simplesmente não está funcionando. De acordo com a definição na WCAG, um [erro de entrada](https://www.w3.org/TR/WCAG/#dfn-input-error) são informações fornecidas pelo usuário que não são aceitas. Isso inclui:
 
 informações exigidas pela página da Web, mas omitidas pelo usuário ou informações fornecidas pelo usuário, mas que não estejam no formato de dados necessário ou valores permitidos.
 Por exemplo:
@@ -1205,7 +1205,7 @@ Quando botões de imagem são usados (por exemplo, o componente **Botão de imag
 
 No projeto WKND, se houver um grupo de controles relacionados, como **Grupo de opções**, talvez seja necessário um título para o grupo, bem como controles individuais. Ao adicionar um conjunto de botões de opção no AEM, o campo **Título** fornece esse título de grupo, enquanto títulos individuais são especificados conforme os botões de opção (**Itens**) são criados.
 
-Contudo, não existe uma associação programática entre o título do grupo e os próprios botões de opção. Editores de modelo precisam envolver o título nas tags `fieldset` e `legend` necessárias para criar esta associação e isso só pode ser feito através da edição do código fonte da página. Alternativamente, um administrador do sistema pode adicionar suporte a esses elementos para que eles apareçam na janela **Propriedades do Campo**[ (Consulte Adicionar suporte para elementos e atributos HTML adicionais](/help/implementing/developing/extending/rte-accessible-content.md)).
+Contudo, não existe uma associação programática entre o título do grupo e os próprios botões de opção. Editores de modelo precisam envolver o título nas tags `fieldset` e `legend` necessárias para criar esta associação e isso só pode ser feito através da edição do código fonte da página. Alternativamente, um administrador do sistema pode adicionar suporte a esses elementos para que eles apareçam na janela **Propriedades do Campo** (consulte [Adicionar suporte para elementos e atributos HTML adicionais](/help/implementing/developing/extending/rte-accessible-content.md)).
 
 ###### Considerações adicionais para formulários {#additional-considerations-for-forms}
 
