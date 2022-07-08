@@ -3,9 +3,9 @@ title: Visualização de páginas usando dados do ContextHub
 description: A barra de ferramentas do ContextHub exibe os dados dos armazenamentos do ContextHub, permite alterar esses dados e é útil para visualizar o conteúdo
 exl-id: 9c0536c5-900e-4814-9e31-f9fee5adc17c
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '368'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
