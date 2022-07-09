@@ -1,22 +1,22 @@
 ---
 title: Visualização de conteúdo
-description: Saiba como usar o serviço de visualização de AEM para visualizar o conteúdo antes de entrar em funcionamento.
+description: Saiba como usar o serviço de visualização do AEM para visualizar o conteúdo antes de ele ser publicado.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
 source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
 workflow-type: tm+mt
 source-wordcount: '372'
-ht-degree: 1%
+ht-degree: 93%
 
 ---
 
 
 # Visualização de conteúdo {#previewing-content}
 
-O AEM oferece um serviço de visualização do Sites permite que desenvolvedores e autores de conteúdo visualizem a experiência final de um site antes que ele chegue ao ambiente de publicação e esteja disponível publicamente.
+O AEM oferece um serviço de visualização do Sites que permite que desenvolvedores e autores de conteúdo visualizem a experiência final de um site antes que ele chegue ao ambiente de publicação e esteja disponível publicamente.
 
-Ela facilita a visualização de experiências de página que de outra forma não estariam visíveis no ambiente do autor, como transições de página e outro conteúdo somente do lado da publicação.
+Ele facilita a visualização de experiências de página que de outra forma não estariam visíveis no ambiente do autor, como transições de página e demais conteúdos disponíveis somente do lado da publicação.
 
-Para obter mais detalhes sobre os ambientes de visualização, consulte o documento [Gerenciar ambientes.](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+Para obter mais detalhes sobre os ambientes de visualização, consulte o documento [Gerenciar ambientes.](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
 
 >[!NOTE]
 >
@@ -24,19 +24,19 @@ Para obter mais detalhes sobre os ambientes de visualização, consulte o docume
 
 ## Publicar conteúdo na visualização {#publishing-content-to-preview}
 
-Você pode publicar conteúdo no serviço de visualização usando o **Publicação gerenciada** IU.
+É possível publicar conteúdo no serviço de visualização usando a interface de **Publicação gerenciada**.
 
-1. No console Sites , selecione as páginas que deseja enviar para visualização e clique no link **Gerenciar publicação** botão
+1. No console do Sites, selecione a(s) página(s) que deseja enviar para visualização e clique no botão **Gerenciar publicação** 
 1. No assistente a seguir, selecione **Visualizar** como destino
 
    ![publicação gerenciada](/help/sites-cloud/authoring/assets/previewmanagedpublication.png)
 
-1. Clique em **Próximo** e depois **Publicar** para confirmar.
+1. Clique em **Próximo** e depois em **Publicar** para confirmar.
 
 1. Uma caixa de diálogo exibirá os URLs para acessar o conteúdo no ambiente de visualização.
 
 
-Como alternativa usar os URLs exibidos no assistente para ver o conteúdo de visualização, você também pode anexar como prefixo `preview-` para o URL de publicação da sua instância de produção.
+Como alternativa ao uso dos URLs exibidos no assistente para ver o conteúdo da visualização, você também pode anexar `preview-` ao URL de publicação da sua instância de produção.
 
 ```
 https://preview-p<programID>-e>environmentID>.adobeaemcloud.com/<pathtopage>.html
@@ -44,11 +44,11 @@ https://preview-p<programID>-e>environmentID>.adobeaemcloud.com/<pathtopage>.htm
 
 Consulte o documento [Gerenciamento de ambientes](/help/implementing/cloud-manager/manage-environments.md) para obter mais informações sobre como recuperar os URLs de seus ambientes.
 
-O conteúdo também pode ser publicado para visualização usando um [fluxo de trabalho da árvore de conteúdo de publicação](/help/operations/replication.md#publish-content-tree-workflow) com o `agentId` parâmetro definido como `preview` ou usando o [API de replicação](/help/operations/replication.md#replication-api) com um `AgentFilter` configurado para visualização.
+O conteúdo também pode ser publicado para visualização usando uma [árvore de fluxo de trabalho de conteúdo de publicação](/help/operations/replication.md#publish-content-tree-workflow) com o parâmetro `agentId` definido como `preview` ou usando a [API de replicação](/help/operations/replication.md#replication-api) com um `AgentFilter` configurado para visualização.
 
-## Configurações do OSGi para a camada de visualização {#configuring-osgi-settings-for-the-preview-tier}
+## Configurações do OSGi para o nível de visualização {#configuring-osgi-settings-for-the-preview-tier}
 
-Os valores da propriedade OSGi da camada de visualização são herdados do nível de publicação. No entanto, os valores da camada de visualização podem ser distintos do nível de publicação, definindo a variável `service` para o valor `preview`. O exemplo a seguir de uma propriedade OSGi determina o URL de um endpoint de integração.
+Os valores da propriedade OSGi do nível de visualização são herdados do nível de publicação. No entanto, os valores do nível de visualização podem ser distintos do nível de publicação, definindo o parâmetro `service` para o valor `preview`. O exemplo a seguir de uma propriedade OSGi determina o URL de um endpoint de integração.
 
 ```
 [
@@ -65,7 +65,8 @@ Para obter mais informações, consulte [esta seção](/help/implementing/deploy
 
 ## Depuração da visualização usando o Console do desenvolvedor {#debugging-preview-using-the-developer-console}
 
-Siga estas etapas para depurar a camada de visualização usando o Console do desenvolvedor:
+Siga estas etapas para depurar o nível de visualização usando o Console do Desenvolvedor:
 
-* No [Console do desenvolvedor](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools), selecione **— Todas as visualizações —** ou um ambiente de produção que inclua **prev** em seu nome
-* Gere as informações relevantes para a instância de pré-visualização Consulte [Gerenciamento de ambientes](/help/implementing/cloud-manager/manage-environments.md) para obter mais informações sobre como obter os URLs para seus ambientes.
+* No [Console do Desenvolvedor](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools), selecione **-- Todas as visualizações --** ou um ambiente de produção que inclua **prev** no nome
+* Gere as informações relevantes para a instância de visualização 
+Consulte [Gerenciamento de ambientes](/help/implementing/cloud-manager/manage-environments.md) para obter mais informações sobre como obter os URLs para seus ambientes.

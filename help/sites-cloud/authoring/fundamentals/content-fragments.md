@@ -149,7 +149,7 @@ Para conteúdo intermediário, você pode:
 
 ### Usar conteúdo associado     {#using-associated-content}
 
-Se você tiver [conteúdo associado ](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md) ao [fragmento de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments.md), esses ativos estarão disponíveis no painel lateral (depois de colocar o fragmento na página de conteúdo). O conteúdo associado é uma fonte especial para [conteúdo intermediário](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
+Se você tiver [conteúdo associado](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md) ao [fragmento de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments.md), esses ativos estarão disponíveis no painel lateral (depois de colocar o fragmento na página de conteúdo). O conteúdo associado é uma fonte especial para [conteúdo intermediário](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
 
 >[!NOTE]
 >

@@ -1,12 +1,12 @@
 ---
 title: Recursos de suporte para Sites Experience Manager as a Cloud Service
-description: Obtenha uma lista completa de todos os recursos de suporte dos Serviços na Nuvem AEM. Encontre respostas para suas perguntas do AEM Sites as Cloud Service.
+description: Obtenha uma lista completa de todos os recursos de suporte dos Serviços em nuvem do AEM. Encontre respostas para suas perguntas sobre o AEM Sites as a Cloud Service.
 landing-page-description: Entenda como criar com o AEM Sites as a Cloud Service e como administrá-lo.
 exl-id: 0fedbd4b-9d6b-40d9-88b7-e7469db420fc
 source-git-commit: 15ac9f0f72d01b999b0044d104ea80202cf44423
 workflow-type: tm+mt
 source-wordcount: '405'
-ht-degree: 87%
+ht-degree: 92%
 
 ---
 

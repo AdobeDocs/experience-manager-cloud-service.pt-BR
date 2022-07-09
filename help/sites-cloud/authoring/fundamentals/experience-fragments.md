@@ -5,7 +5,7 @@ exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
 workflow-type: tm+mt
 source-wordcount: '1560'
-ht-degree: 93%
+ht-degree: 97%
 
 ---
 
@@ -23,7 +23,7 @@ Um fragmento de experiência:
 * É parte de uma experiência (página).
 * Pode ser usado em várias páginas.
 * É baseado em um modelo (somente editável) para definir a estrutura e os componentes.
-* Esse modelo é usado para criar o *página raiz* do Fragmento de experiência.
+* Esse modelo é usado para criar a *página raiz* do Fragmento de experiência.
 * É composto por um ou mais componentes, com layout, em um sistema de parágrafos.
 * Pode conter outros fragmentos de experiência.
 * Pode ser combinado com outros componentes (incluindo outros Fragmentos de experiência) para formar uma página completa (experiência).
@@ -180,7 +180,7 @@ Para criar um fragmento de experiência:
 
    >[!NOTE]
    >
-   >As tags do modelo do Fragmento de experiência não serão unidas com tags nesta página raiz do Fragmento de experiência .
+   >As tags do modelo do fragmento de experiência não serão unidas com tags nesta página raiz do fragmento de experiência.
    >
    >Elas são completamente separadas.
 
@@ -291,7 +291,7 @@ Para criar um novo Bloco de construção:
 
 O bloco de construção está visível na guia **Blocos de construção**. As seguintes ações estão disponíveis para cada bloco:
 
-* **Ir para principal**: abra a variação da página raiz em uma nova guia
+* **Acesse o mestre**: abra a variação da página raiz em uma nova guia
 * **Renomeie**
 * **Excluir**
 
@@ -313,7 +313,7 @@ Ao editar um Fragmento de experiência disponível, os Blocos de construção s�
 Os detalhes do fragmento podem ser vistos:
 
 1. Navegue até o local dos Fragmentos de experiência (não navegue além das variações dentro do fragmento).
-Os detalhes são mostrados em todas as exibições do console **Fragmentos de experiência**, com a **de Exibição em lista**, incluindo detalhes de uma exportação para o Target: <!--Details are shown in all views of the **Experience Fragments** console, with the **List View** including details of an [export to Target](/help/sites-administering/experience-fragments-target.md):-->
+Os detalhes são mostrados em todas as exibições do console **Fragmentos de experiência**, com a de **Exibição em lista**, incluindo detalhes de uma exportação para o Target: <!--Details are shown in all views of the **Experience Fragments** console, with the **List View** including details of an [export to Target](/help/sites-administering/experience-fragments-target.md):-->
 
    ![Detalhes do fragmento de experiência](/help/sites-cloud/authoring/assets/xf-15.png)
 

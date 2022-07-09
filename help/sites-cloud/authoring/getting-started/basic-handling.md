@@ -5,7 +5,7 @@ exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
 source-git-commit: df29eb83efc026bc7fc21dde228cdac47361282d
 workflow-type: tm+mt
 source-wordcount: '2993'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -71,7 +71,7 @@ Em Navegação, os consoles disponíveis são:
 | Projetos | O console Projetos concede acesso direto aos projetos. [Projetos são painéis virtuais](/help/sites-cloud/authoring/projects/overview.md) que podem ser usados para criar uma equipe. Você pode conceder a essa equipe acesso a recursos, fluxos de trabalho e tarefas, permitindo que as pessoas trabalhem por um objetivo comum. |
 | Sites | O console Sites permite [criar, exibir e gerenciar sites](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) em execução na sua instância do AEM. Por meio desse console, você pode criar, copiar, mover e excluir páginas, iniciar fluxos de trabalho e publicar páginas. |
 | Fragmentos de experiência | Um [Fragmento de experiência](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) é uma experiência independente que pode ser reutilizada em vários canais e que apresenta variações, evitando o trabalho de copiar e colar repetidamente as experiências ou partes das experiências. |
-| Ativos | O console Ativos permite importar e gerenciar [ativos digitais como imagens, vídeos, documentos e arquivos de áudio](/help/assets/overview.md). Esses ativos podem ser usados por um site em execução na mesma instância do AEM. Você também pode criar e gerenciar [Fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md) no console Assets. |
+| Ativos | O console de Ativos permite importar e gerenciar [ativos digitais como imagens, vídeos, documentos e arquivos de áudio.](/help/assets/overview.md) Esses ativos podem ser usados por um site em execução na mesma instância do AEM. Também é possível criar e gerenciar [Fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md) no console de Ativos. |
 | Personalização | Esse console fornece uma estrutura de ferramentas para a [criação de conteúdo direcionado e a apresentação de experiências personalizadas.](/help/sites-cloud/authoring/personalization/overview.md) |
 | Fragmentos de conteúdo | [Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments.md) permite criar, criar, preparar e publicar conteúdo independente da página. Eles permitem preparar conteúdo estruturado pronto para uso em vários locais/em vários canais e ideal para criação de página e entrega sem interface. |
 
@@ -95,7 +95,7 @@ O cabeçalho sempre está presente na parte superior da tela. Embora a maioria d
 
 * [Pesquisar](/help/sites-cloud/authoring/getting-started/search.md)
 
-   ![Ícone de Pesquisa](/help/sites-cloud/authoring/assets/search-icon.png)
+   ![Ícone de pesquisa](/help/sites-cloud/authoring/assets/search-icon.png)
 
    Você também pode usar a [tecla de atalho](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `/` (barra) para invocar a pesquisa em qualquer console.
 
@@ -203,7 +203,7 @@ Há vários recursos de ajuda disponíveis:
    >Para obter uma visão geral de todos os atalhos de teclado, consulte a seguinte documentação:
    >
    >* [Atalhos de teclado para editar páginas](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
-   >* [Atalhos de teclado para consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
+   >* [Atalhos de teclado para os consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
 
 ## Barra de ferramentas de Ações {#actions-toolbar}
@@ -242,7 +242,7 @@ Visualizar, navegar e selecionar são conceitualmente iguais em todas as exibiç
 
 * [Exibição de coluna](#column-view)
 * [Exibição de cartão](#card-view)
-* [Exibição de lista  ](#list-view)
+* [Exibição de lista](#list-view)
 
 >[!NOTE]
 >
@@ -340,7 +340,7 @@ A seleção de um recurso na coluna mais à esquerda mostrará os recursos filho
 
 * É possível navegar para baixo na árvore tocando/clicando em cartões (com cautela para evitar as ações rápidas) ou para cima novamente usando a [navegação estrutural no cabeçalho](#the-header).
 
-### Exibição de lista   {#list-view}
+### Exibição de lista {#list-view}
 
 ![Exibição de lista](/help/sites-cloud/authoring/assets/list-view.png)
 
@@ -392,7 +392,7 @@ O **Seletor de painéis** está disponível no canto superior esquerdo da janela
 
 ![Seletor de painéis expandido](/help/sites-cloud/authoring/assets/rail-selector-expanded.png)
 
-Por exemplo, no **Sites** no console, é possível selecionar somente conteúdo (padrão), árvore de conteúdo, linha do tempo, referências, detalhes do site ou painel lateral de filtro.
+Por exemplo, no console de **Sites**, é possível selecionar somente conteúdo (padrão), árvore de conteúdo, linha do tempo, referências, detalhes do site ou o painel lateral de filtro.
 
 Se somente conteúdo for selecionado, apenas o ícone do painel será exibido. Se qualquer outra opção for selecionada, o nome da opção aparecerá ao lado do ícone do painel.
 
@@ -462,15 +462,15 @@ A opção **Referências** mostra conexões com o recurso selecionado. Por exemp
 
 ### Site {#site}
 
-**Site** mostra detalhes de sites [criado usando um modelo de site.](/help/sites-cloud/administering/site-creation/create-site.md)
+**Site** mostra detalhes de sites [criados usando um modelo de site.](/help/sites-cloud/administering/site-creation/create-site.md)
 
 ![Painel do site](../assets/site-rail.png)
 
-Consulte o documento [Usar o painel do site para gerenciar o tema do site](/help/sites-cloud/administering/site-creation/site-rail.md) para obter mais detalhes sobre como você pode usar o painel para gerenciar o [tema do seu site.](/help/sites-cloud/administering/site-creation/site-themes.md)
+Consulte o documento [Usar o painel do site para gerenciar o tema do site](/help/sites-cloud/administering/site-creation/site-rail.md) para obter mais detalhes sobre como usar o painel para gerenciar o [tema do seu site.](/help/sites-cloud/administering/site-creation/site-themes.md)
 
 >[!TIP]
 >
->Uma descrição completa do processo de criação de um novo site a partir de um modelo e personalização de seu tema pode ser encontrada no [Jornada Rápida de Criação de Site.](/help/journey-sites/quick-site/overview.md)
+>Uma descrição completa do processo de criação de um novo site a partir de um modelo e personalização de seu tema pode ser encontrada na [Jornada rápida de criação de site.](/help/journey-sites/quick-site/overview.md)
 
 ### Filtro {#filter}
 
