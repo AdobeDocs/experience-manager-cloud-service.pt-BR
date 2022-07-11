@@ -209,7 +209,6 @@ Agora é possível selecionar a nova configuração para edição.
       >* Segurança aprimorada
       >* Melhores opções de implementação para aplicativos de página única
       >* A AT.js contém os componentes que foram incluídos na target.js, portanto, a target.js não é mais chamada
-
       >
       >É possível selecionar AT.js ou mbox.js no menu suspenso **Biblioteca do cliente**.
 

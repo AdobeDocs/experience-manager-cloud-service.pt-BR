@@ -115,7 +115,6 @@ Este método pode ser usado para restaurar versões de páginas especificadas na
    >Se você:
    >* selecionou uma página única que nunca teve páginas secundárias,
    >* ou nenhuma das páginas na pasta tem versões,
-
    >
    >Então, a exibição estará vazia, pois não há versões aplicáveis.
 
