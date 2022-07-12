@@ -2,10 +2,10 @@
 title: Configuração de redes avançadas para o AEM as a Cloud Service
 description: Saiba como configurar recursos avançados de rede, como VPN ou um endereço IP de saída flexível ou dedicado para o AEM as a Cloud Service
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 4d9a56ebea84d6483a2bd052d62ee6eb8c0bd9d5
+source-git-commit: e34759aeea2e3819cf76a8bba433b96ae201c16f
 workflow-type: tm+mt
-source-wordcount: '3053'
-ht-degree: 94%
+source-wordcount: '3006'
+ht-degree: 93%
 
 ---
 
@@ -209,29 +209,7 @@ Para obter mais informações sobre as APIs, consulte o [Documentação da API d
 
 ### Roteamento de tráfego {#dedcated-egress-ip-traffic-routing}
 
-O tráfego http ou https indo aos destinos por meio das portas 80 ou 443 passará por um proxy pré-configurado, supondo que a biblioteca de rede Java padrão seja usada. Para tráfego http ou https passando por outras portas, um proxy deve ser configurado usando as seguintes propriedades.
-
-```
-AEM_HTTP_PROXY_HOST / AEM_HTTPS_PROXY_HOST
-AEM_HTTP_PROXY_PORT / AEM_HTTPS_PROXY_PORT
-```
-
-Por exemplo, este é um exemplo de código para enviar uma solicitação para `www.example.com:8443`:
-
-```java
-String url = "www.example.com:8443"
-String proxyHost = System.getenv("AEM_HTTPS_PROXY_HOST");
-int proxyPort = Integer.parseInt(System.getenv("AEM_HTTPS_PROXY_PORT"));
-
-HttpClient client = HttpClient.newBuilder()
-      .proxy(ProxySelector.of(new InetSocketAddress(proxyHost, proxyPort)))
-      .build();
- 
-HttpRequest request = HttpRequest.newBuilder().uri(URI.create(url)).build();
-HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
-```
-
-Ao usar bibliotecas de rede Java não padrão, configure proxies usando as propriedades acima para todo o tráfego.
+O tráfego HTTP ou https passará por um proxy pré-configurado, desde que usem propriedades padrão do sistema Java para configurações de proxy.
 
 O tráfego não http/s com destinos por meio de portas declaradas no parâmetro `portForwards` deve fazer referência a uma propriedade chamada `AEM_PROXY_HOST`, juntamente com a porta mapeada. Por exemplo:
 
