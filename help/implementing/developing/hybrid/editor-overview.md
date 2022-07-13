@@ -2,9 +2,9 @@
 title: Visão geral do editor de SPA
 description: Este artigo fornece uma visão geral abrangente do Editor de SPA e como ele funciona, incluindo fluxos de trabalho detalhados de interação do Editor de SPA no AEM.
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: c7759e390d9ea6c2196c9f6c895232c4e75c6d23
 workflow-type: tm+mt
-source-wordcount: '1641'
+source-wordcount: '1635'
 ht-degree: 1%
 
 ---
@@ -177,13 +177,12 @@ Para obter mais informações sobre o `editElementQuery` e a configuração do e
 
 ### Limitações           {#limitations}
 
-O SDK do Editor de SPA AEM é totalmente compatível com o Adobe e, como um novo recurso, ele continua sendo aprimorado e expandido. Os seguintes recursos de AEM ainda não são compatíveis com o Editor de SPA:
+O SDK do Editor de SPA AEM é totalmente compatível com o Adobe e continua sendo aprimorado e expandido. Os seguintes recursos de AEM ainda não são compatíveis com o Editor de SPA:
 
 * Modo de destino
 * ContextHub
 * Edição de imagem embutida
 * Editar configurações (por exemplo, ouvintes
-* Sistema de estilos
 * Desfazer / Refazer
 * Distorção de hora e diff de página
 * Recursos que executam a regravação de HTML no lado do servidor, como o Verificador de links, o serviço de regravação de CDN, a redução de URL etc.
