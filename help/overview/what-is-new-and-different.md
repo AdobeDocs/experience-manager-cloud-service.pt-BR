@@ -2,10 +2,10 @@
 title: O que é diferente e quais são as novidades - Adobe Experience Manager as a Cloud Service
 description: O que é diferente e quais são as novidades - Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: 7665bc1a27eec6474c1f21c61ac9cf444cf3d443
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
-source-wordcount: '1897'
-ht-degree: 96%
+source-wordcount: '1904'
+ht-degree: 95%
 
 ---
 
@@ -125,10 +125,6 @@ O Cloud Manager cria ambientes em data centers em várias regiões geográficas,
 
 ## Integração {#onboarding}
 
->[!NOTE]
->
->Para obter mais detalhes, consulte [Integração](/help/onboarding/home.md).
-
 Iniciar e gerenciar um projeto AEM é simples quando se usa o AEM as a Cloud Service, pois a Adobe é responsável por vários aspectos:
 
 * As imagens AEM da linha de base são otimizadas para casos de uso específicos.
@@ -150,6 +146,10 @@ Também é significativamente diferente, pois agora há:
    * Atualizações de código: todos os aplicativos de clientes desenvolvidos para uma versão anterior do AEM precisarão ser revisados e possivelmente atualizados.
 
    * Migração de conteúdo
+
+>[!TIP]
+>
+>Para obter uma visão geral completa do processo de integração, consulte o [jornada de integração.](/help/journey-onboarding/overview.md)
 
 ## Desenvolvimento {#developing}
 
@@ -273,6 +273,6 @@ Para obter mais informações, consulte:
 
 >[!TIP]
 >
->Depois de receber uma visão geral do AEM as a Cloud Service, você poderá integrar-se rapidamente revisando a [Jornada de integração](/help/journey-onboarding/home.md).
+>Depois de receber uma visão geral do AEM as a Cloud Service, você poderá integrar-se rapidamente revisando a [Jornada de integração](/help/journey-onboarding/overview.md).
 >
 >Já integrado ou pronto para mergulhar nos recursos de AEM de teste? Instale o [Complemento de demonstrações de referência do AEM](/help/journey-sites/demos-add-on/overview.md) para explorar recursos avançados do AEM usando exemplos bem colocados.

@@ -3,7 +3,7 @@ title: AEM Content and Commerce
 description: Entenda como usar e administrar o Experience Manager Content and Commerce as a Cloud Service.
 landing-page-description: Entenda como usar e administrar o Experience Manager Content and Commerce as a Cloud Service.
 exl-id: 7f7ece35-f78b-4c66-8a0b-38d248430d85
-source-git-commit: e3f28ea68b3da415f46a98224e3f0b342417ee15
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 88%
@@ -31,7 +31,7 @@ Entenda como usar e administrar o Experience Manager Content and Commerce as a C
 | [Visão geral](/help/overview/home.md) | Este guia fornece uma visão geral do Experience Manager as a Cloud Service, incluindo uma introdução, terminologia, arquitetura, etc. |
 | [Notas de versão](/help/release-notes/home.md) | Este guia fornece informações importantes sobre a versão mais recente do Experience Manager as a Cloud Service, incluindo as novidades dos recursos descontinuados e removidos e problemas conhecidos. |
 | [Guia do usuário de segurança](/help/security/home.md) | Saiba mais sobre tópicos importantes de segurança relacionados ao Experience Manager as a Cloud Service. |
-| [Integração](/help/onboarding/home.md) | Este guia fornece um resumo de como começar a usar o Experience Manager as a Cloud Service, incluindo como obter acesso e informações importantes sobre proteção de dados. |
+| [Jornada de integração](/help/journey-onboarding/overview.md) | Este guia fornece um resumo de como começar a usar o Experience Manager as a Cloud Service, incluindo como obter acesso e informações importantes sobre proteção de dados. |
 | [Guia do usuário do Sites](/help/sites-cloud/home.md) | Entenda como administrar os sites do Experience Manager as a Cloud Service. |
 | [Guia do usuário do Assets](/help/assets/home.md) | Entenda como administrar os ativos do Experience Manager as a Cloud Service. |
 | [Implementação do guia do usuário](/help/implementing/home.md) | Entenda como criar e personalizar experiências usando recursos avançados do AEM ao explorar esses tópicos de desenvolvimento e implantação. |
@@ -44,7 +44,7 @@ Entenda como usar e administrar o Experience Manager Content and Commerce as a C
 * [Documentação do Dispatcher](/help/implementing/dispatcher/overview.md)
 * [Documentação HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=pt-BR)
 * [Documentação dos componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)
-* [Documentação do Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
+* [Cloud Manager](/help/onboarding/cloud-manager-introduction.md)
 * [Disponibilidade do GDPR](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutoriais do Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=pt-BR)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=pt-BR#home)

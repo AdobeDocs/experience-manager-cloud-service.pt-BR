@@ -2,9 +2,9 @@
 title: Fase de implementação
 description: Certifique-se de que seu código e conteúdo estejam prontos para a migração para a nuvem
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
-source-wordcount: '2422'
+source-wordcount: '2416'
 ht-degree: 9%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 9%
 
 Na fase de implementação da jornada, você explorará as ferramentas através das quais você pode preparar o código e o conteúdo para serem transferidos para AEM as a Cloud Service.
 
-## A História Até Agora {#story-so-far}
+## A história até agora {#story-so-far}
 
 Nas partes anteriores da jornada, você passou [familiarizar-se com as mudanças no AEM as a Cloud Service](/help/journey-migration/getting-started.md), bem como determinar se sua implantação está pronta para ser movida para a nuvem com o [fase de preparação](/help/journey-migration/readiness.md).
 
@@ -35,7 +35,7 @@ O Cloud Manager permite que as organizações gerenciem automaticamente o AEM na
 
 Familiarize-se com o uso do Cloud Manager, consultando os recursos abaixo:
 
-* [Integração com o Experience Manager as a Cloud Service](/help/onboarding/home.md) para compreender recursos de autoajuda sobre integração do Experience Manager as a Cloud Service.
+* [Jornada de integração](/help/journey-onboarding/overview.md) para entender os recursos de autoajuda sobre integração com o Experience Manager as a Cloud Service.
 
 * [Integração do Git com o Adobe Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md) para saber mais sobre o uso de um único repositório Git para implantar código.
 

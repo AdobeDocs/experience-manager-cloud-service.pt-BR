@@ -2,8 +2,8 @@
 title: Implantar um tema personalizado
 description: Saiba como implantar o tema do site usando o pipeline.
 exl-id: fe065972-39db-4074-a802-85895c701efd
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: ht
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+workflow-type: tm+mt
 source-wordcount: '1027'
 ht-degree: 100%
 
@@ -110,11 +110,11 @@ Veja a seguir alguns recursos adicionais que explicam melhor alguns conceitos me
 * [Configurar pipeline de CI/CD - Cloud Services](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) - obtenha mais detalhes sobre a configuração de pipelines, de pilha completa ou de front-end, neste documento.
 * [Modelo de site padrão do AEM](https://github.com/adobe/aem-site-template-standard) - este é o repositório GitHub do modelo de site padrão do AEM.
 * [Tema de site do AEM](https://github.com/adobe/aem-site-template-standard-theme-e2e) - este é o repositório GitHub do tema de site do AEM.
-* [npm](https://www.npmjs.com) - os temas do AEM usados para criar sites rapidamente se baseiam no npm.
+* [npm](https://www.npmjs.com) - temas do AEM usados para criar sites rapidamente se baseiam em npm.
 * [webpack](https://webpack.js.org) - os temas do AEM usados para criar sites rapidamente dependem do webpack.
 * [Criar e organizar páginas](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) - este guia detalha como gerenciar páginas do seu site do AEM, caso deseje personalizá-lo ainda mais após criá-lo a partir do modelo.
-* [Como trabalhar com pacotes](/help/implementing/developing/tools/package-manager.md) - os pacotes permitem importar e exportar conteúdo do repositório. Este documento explica como trabalhar com pacotes no AEM 6.5, o que também se aplica ao AEMaaCS.
-* [Jornada de integração](/help/journey-onboarding/home.md) - este guia serve como ponto de partida para garantir que suas equipes estejam preparadas e tenham acesso ao AEM as a Cloud Service.
+* [Como trabalhar com pacotes](/help/implementing/developing/tools/package-manager.md) - Os pacotes permitem a importação e exportação de conteúdo do repositório. Este documento explica como trabalhar com pacotes no AEM 6.5, o que também se aplica ao AEMaaCS.
+* [Jornada de integração](/help/journey-onboarding/overview.md) - este guia serve como ponto de partida para garantir que suas equipes estejam preparadas e tenham acesso ao AEM as a Cloud Service.
 * [Documentação do Adobe Experience Manager Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=pt-BR) - explore a documentação do Cloud Manager para obter detalhes completos sobre seus recursos.
 * [Documentação de administração do site](/help/sites-cloud/administering/site-creation/create-site.md) - consulte os documentos técnicos sobre criação de sites para obter mais detalhes sobre os recursos da ferramenta Criação rápida de sites.
 * [Desenvolvimento de sites com o pipeline de front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) - este documento descreve algumas considerações que devem ser levadas em conta para obter todo o potencial do processo de desenvolvimento front-end usando o pipeline de front-end.

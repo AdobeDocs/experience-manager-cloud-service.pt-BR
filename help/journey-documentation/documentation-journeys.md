@@ -1,16 +1,16 @@
 ---
-title: jornadas de documentação de AEM
+title: Jornadas de documentação do AEM
 description: As Jornadas de documentação fornecem uma estrutura narrativa dentro AEM documentação, unindo recursos complexos e díspares para resolver uma meta de negócios de uma maneira prática recomendada. Projetadas tendo em mente AEM iniciantes, as jornadas apresentam os conceitos e os recursos para atingir uma meta de A a Z.
 exl-id: aab346b8-26dc-4d5b-88bb-720cf634e0a2
 hidefromtoc: true
-source-git-commit: c3b8a45f27b7863cb5d1ea7af1f35675ac04b456
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
 source-wordcount: '1352'
 ht-degree: 3%
 
 ---
 
-# jornadas de documentação de AEM {#aem-documentation-journeys}
+# Jornadas de documentação do AEM {#aem-documentation-journeys}
 
 As Jornadas de documentação fornecem uma estrutura narrativa dentro AEM documentação, unindo recursos complexos e díspares para resolver uma meta de negócios de uma maneira prática recomendada. Projetadas tendo em mente AEM iniciantes, as jornadas apresentam os conceitos e os recursos para atingir uma meta de A a Z.
 
@@ -90,7 +90,7 @@ Há várias Jornadas de Documentação disponíveis para você. Como cada jornad
 | [Jornada de criação headless](/help/journey-headless/author/overview.md) | Comece aqui para obter uma jornada guiada através dos recursos avançados e flexíveis sem interface de AEM, seus recursos e como modelar seu conteúdo em seu primeiro projeto sem interface. |
 | [Jornada do arquiteto headless](/help/journey-headless/architect/overview.md) | Comece aqui para obter uma introdução aos recursos avançados, flexíveis e sem periféricos do Adobe Experience Manager as a Cloud Service e como modelar o conteúdo para seu projeto. |
 | [Jornada de tradução headless](/help/journey-headless/translation/overview.md) | Comece aqui para ver como configurar e gerenciar seus projetos de tradução sem periféricos no AEM. |
-| [jornada de integração de AEM](/help/journey-onboarding/home.md) | Comece aqui para entrar em operação rapidamente com seu novo ambiente as a Cloud Service AEM! |
+| [jornada de integração de AEM](/help/journey-onboarding/overview.md) | Comece aqui para entrar em operação rapidamente com seu novo ambiente as a Cloud Service AEM! |
 | [Jornada de criação rápida de site do AEM](/help/journey-sites/quick-site/overview.md) | Comece aqui para obter uma jornada guiada através da ferramenta de criação rápida de sites AEM simples de usar para simplificar o desenvolvimento front-end do seu site AEM e personalizar rapidamente seu site sem conhecimento AEM de back-end. |
 | jornada de comércio AEM | Em breve! |
 | [Jornada de migração do AEM as a Cloud Service](/help/journey-migration/getting-started.md) | Comece aqui para obter uma jornada passo a passo sobre como migrar da sua instalação no local ou do Adobe Managed AEM para o AEM totalmente baseado em nuvem as a Cloud Service e ser apresentado aos seus muitos benefícios. |

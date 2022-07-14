@@ -1,18 +1,18 @@
 ---
 title: Operações e manutenção do Adobe Experience Manager as a Cloud Service
-description: 'Descubra as operações de back-end do Experience Manager as a Cloud Service, como tarefas de indexação e manutenção, e obtenha respostas para suas consultas. '
-landing-page-description: Descubra as operações de back-end do Experience Manager as a Cloud Service, como tarefas de indexação e manutenção, e obtenha respostas para suas consultas.
+description: 'Saiba mais sobre as operações de back-end do Experience Manager as a Cloud Service, como tarefas de indexação e manutenção, e obtenha respostas para suas dúvidas. '
+landing-page-description: Saiba mais sobre as operações de back-end do Experience Manager as a Cloud Service, como tarefas de indexação e manutenção, e obtenha respostas para suas dúvidas.
 exl-id: ad50434c-1b4c-4e04-be91-2556d773cfbd
-source-git-commit: 1bdebb3f9ffdc720c7172265571571d47df35610
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
 source-wordcount: '398'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
 # Operações e manutenção do Experience Manager as a Cloud Service {#aem-operations-guide}
 
-Descubra as operações de back-end do Experience Manager as a Cloud Service, como tarefas de indexação e manutenção, e obtenha respostas para suas consultas.
+Saiba mais sobre as operações de back-end do Experience Manager as a Cloud Service, como tarefas de indexação e manutenção, e obtenha respostas para suas dúvidas.
 
 ## Artigos-chave sobre operações {#key-articles}
 
@@ -27,7 +27,7 @@ Descubra as operações de back-end do Experience Manager as a Cloud Service, co
 | [Visão geral](/help/overview/home.md) | Este guia fornece uma visão geral do Experience Manager as a Cloud Service, incluindo uma introdução, terminologia, arquitetura, etc. |
 | [Notas de versão](/help/release-notes/home.md) | Este guia fornece informações importantes sobre a versão mais recente do Experience Manager as a Cloud Service, incluindo novidades, problemas conhecidos e recursos obsoletos e removidos. |
 | [Guia do usuário de segurança](/help/security/home.md) | Saiba mais sobre tópicos importantes de segurança relacionados ao Experience Manager as a Cloud Service. |
-| [Integração](/help/onboarding/home.md) | Este guia fornece um resumo de como começar a usar o Experience Manager as a Cloud Service, incluindo como obter acesso e informações importantes sobre proteção de dados. |
+| [Jornada de integração](/help/journey-onboarding/overview.md) | Este guia fornece um resumo de como começar a usar o Experience Manager as a Cloud Service, incluindo como obter acesso e informações importantes sobre proteção de dados. |
 | [Guia do usuário do Sites](/help/sites-cloud/home.md) | Entenda como administrar e criar com o Experience Manager Sites as a Cloud Service. |
 | [Guia do usuário do Assets](/help/assets/home.md) | Aprenda a usar e administrar o Experience Manager Assets as a Cloud Service. |
 | [Migração para o AEM as a Cloud Service](/help/journey-migration/getting-started.md) | Entenda a jornada de transição para o Cloud Service. |
@@ -42,7 +42,7 @@ Descubra as operações de back-end do Experience Manager as a Cloud Service, co
 * [Documentação do Dispatcher](/help/implementing/dispatcher/overview.md)
 * [Documentação HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=pt-BR)
 * [Documentação dos componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)
-* [Documentação do Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
+* [Cloud Manager](/help/onboarding/cloud-manager-introduction.md)
 * [Disponibilidade do GDPR](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutoriais do Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=pt-BR)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=pt-BR#home)

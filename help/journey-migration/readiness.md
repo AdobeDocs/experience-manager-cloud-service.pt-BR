@@ -2,9 +2,9 @@
 title: Fase de preparação
 description: Saiba mais sobre as etapas necessárias para garantir que sua instalação do AEM esteja pronta para ser movida para a nuvem
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
-source-wordcount: '2078'
+source-wordcount: '2079'
 ht-degree: 7%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 7%
 
 Nesta fase da Jornada de Migração AEM as a Cloud Service, você se familiarizará com AEM as a Cloud Service, analisará as alterações notáveis que introduziu e compreenderá o que é necessário para planejar uma migração bem-sucedida para a nuvem.
 
-## A História Até Agora {#story-so-far}
+## A história até agora {#story-so-far}
 
 O documento anterior, [Introdução à migração para AEM as a Cloud Service](/help/journey-migration/getting-started.md), descreve uma lista de fases que precisam ser seguidas para migrar para AEM as a Cloud Service, bem como os benefícios de fazê-lo.
 
@@ -220,4 +220,4 @@ Assim que você entender o escopo das alterações necessárias para mudar para 
 * [AEM as a Cloud Service: Introdução, arquitetura e pensamento de forma diferente](https://experienceleague.adobe.com/?launch=ExperienceManager-D-1-2021.1.migration&amp;recommended=ExperienceManager-D-1-2021.1.migration&amp;lang=en#dashboard/learning)
 * [AEM um Cloud Service Home](/help/overview/home.md) - Para obter uma visão geral da documentação do Experience Manager as a Cloud Service, comece aqui.
 * [Visão geral as a Cloud Service do AEM](/help/overview/home.md) - Este guia fornece uma visão geral do Experience Manager as a Cloud Service, incluindo uma introdução, terminologia e arquitetura.
-* [Integração](/help/onboarding/home.md)- Este guia fornece um resumo de como começar a usar o Experience Manager as a Cloud Service, incluindo como obter acesso e configurar sua equipe
+* [Jornada de integração](/help/journey-onboarding/overview.md)- Este guia fornece um resumo de como começar a usar o Experience Manager as a Cloud Service, incluindo como obter acesso e configurar sua equipe

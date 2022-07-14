@@ -2,10 +2,10 @@
 title: Gerenciamento de ambientes
 description: Saiba mais sobre os tipos de ambientes que você pode criar e como criá-los para o seu projeto do Cloud Manager.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 71647239fc5e740faa25524a01a8ef21ed2d7a3b
+source-git-commit: 7174b398040acbf9b18b5ac2aa20fdba4f98ca78
 workflow-type: tm+mt
 source-wordcount: '1745'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -25,7 +25,7 @@ Um usuário com as permissões necessárias pode criar os seguintes tipos de amb
 Os recursos de ambientes individuais dependem das soluções ativadas no [programa.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
 
 * [Sites](/help/sites-cloud/home.md)
-* [Ativos](/help/assets/home.md)
+* [Assets](/help/assets/home.md)
 * [Forms](/help/forms/home.md)
 * [Screens](/help/screens-cloud/home.md)
 

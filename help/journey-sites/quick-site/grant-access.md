@@ -2,8 +2,8 @@
 title: Conceder acesso ao desenvolvedor de front-end
 description: Integre os desenvolvedores de front-end no Cloud Manager para que eles tenham acesso ao repositório do Git e pipeline de site do AEM.
 exl-id: 58e95c92-b859-4bb9-aa62-7766510486fd
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: ht
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+workflow-type: tm+mt
 source-wordcount: '785'
 ht-degree: 100%
 
@@ -104,4 +104,4 @@ Aplique esse conhecimento e prossiga com sua jornada de criação rápida de sit
 
 Embora seja recomendável seguir para a próxima parte da jornada de criação rápida de site revisando o documento [Recuperar credenciais do desenvolvedor de front-end,](retrieve-access.md) os recursos opcionais a seguir fornecerão uma melhor explicação dos conceitos mencionados neste documento. Porém, eles não são obrigatórios para continuar na jornada.
 
-* [Jornada de integração](/help/journey-onboarding/home.md) - este guia serve como ponto de partida para garantir que suas equipes estejam configuradas e tenham acesso ao AEM as a Cloud Service.
+* [Jornada de integração](/help/journey-onboarding/overview.md) - este guia serve como ponto de partida para garantir que suas equipes estejam configuradas e tenham acesso ao AEM as a Cloud Service.

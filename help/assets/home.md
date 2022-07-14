@@ -1,14 +1,14 @@
 ---
 title: Guia de as a Cloud Service de ativos
-description: Saiba mais sobre Ativos as a Cloud Service e atualize as novidades.
+description: Saiba mais sobre o Assets as a Cloud Service e atualize-se sobre as novidades.
 landing-page-description: Aprenda a usar e administrar o Experience Manager Assets as a Cloud Service.
 feature: Asset Management
 role: User,Leader
 exl-id: 315a1091-780f-4eca-ac77-a07d8fb634bf
-source-git-commit: e3f28ea68b3da415f46a98224e3f0b342417ee15
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
-source-wordcount: '293'
-ht-degree: 37%
+source-wordcount: '294'
+ht-degree: 42%
 
 ---
 
@@ -30,7 +30,7 @@ Saiba mais sobre [!DNL AEM Assets as a Cloud Service] e sejam atualizados sobre 
 | [Visão geral](/help/overview/home.md) | Resumo introdutório e glossário do [!DNL Experience Manager] como [!DNL Cloud Service]. |
 | [Notas de versão](/help/release-notes/home.md) | Notas de versão, novidades, problemas conhecidos e recursos obsoletos e removidos. |
 | [Guia do usuário de segurança](/help/security/home.md) | Saiba mais sobre tópicos importantes de segurança relacionados a [!DNL Experience Manager] como [!DNL Cloud Service]. |
-| [Integração](/help/onboarding/home.md) | Introdução a [!DNL Experience Manager] como [!DNL Cloud Service] — obtenha acesso e proteja dados importantes. |
+| [Jornada de integração](/help/journey-onboarding/overview.md) | Introdução a [!DNL Experience Manager] como [!DNL Cloud Service] — obtenha acesso e proteja dados importantes. |
 | [Guia do usuário do Sites](/help/sites-cloud/home.md) | Entenda como criar com e administrar, [!DNL Experience Manager Sites] como [!DNL Cloud Service]. |
 | [Implementação do Guia do usuário](/help/implementing/home.md) | Entenda como personalizar experiências usando o Experience Manager para criar recursos avançados explorando esses tópicos de implantação e desenvolvimento. |
 | [Jornada de desenvolvedores headless](/help/journey-headless/developer/overview.md) | Explore essa jornada guiada através dos recursos avançados e flexíveis do Experience Manager para se preparar para o seu primeiro projeto sem periféricos. |
