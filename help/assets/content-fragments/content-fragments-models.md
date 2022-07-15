@@ -4,9 +4,9 @@ description: Saiba como os Modelos de fragmentos de conteúdo servem como base p
 feature: Content Fragments
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 78448aafa1b397f9131c12ab2afd74b05ae53e66
+source-git-commit: a5a5ec2211fe51bb04a1016f34fdac2f25cfe4e1
 workflow-type: tm+mt
-source-wordcount: '2894'
+source-wordcount: '2890'
 ht-degree: 7%
 
 ---
@@ -75,7 +75,7 @@ O modelo de fragmento de conteúdo define efetivamente a estrutura dos fragmento
 
          >[!CAUTION]
          >
-         >Ao atualizar manualmente a propriedade **Nome da propriedade** para um tipo de dados, observe que os nomes devem conter somente caracteres latinos, dígitos numéricos e sublinhado &quot;_&quot; como caractere especial.
+         >Ao atualizar manualmente a propriedade **Nome da propriedade** para um tipo de dados, observe que os nomes devem conter somente A-Z, a-z, 0-9 e sublinhado &quot;_&quot; como caractere especial.
          >
          >Se os modelos criados em versões anteriores do AEM contiverem caracteres ilegais, remova ou atualize esses caracteres.
       Por exemplo:
@@ -141,7 +141,7 @@ Muitas propriedades são autoexplicativas, para certas propriedades os detalhes 
 
 * **Nome da Propriedade**
 
-   Ao atualizar manualmente essa propriedade para um tipo de dados, observe que os nomes **must** contain *only* Caracteres latinos, dígitos numéricos e sublinhado &quot;_&quot; como caractere especial.
+   Ao atualizar manualmente essa propriedade para um tipo de dados, observe que os nomes **must** contain *only* A-Z, a-z, 0-9 e sublinhe &quot;_&quot; como caractere especial.
 
    >[!CAUTION]
    >

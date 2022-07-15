@@ -1,9 +1,9 @@
 ---
 title: Modelos de fragmentos do conteúdo
 description: Saiba como os Modelos de fragmentos de conteúdo servem como base para os Fragmentos de conteúdo no AEM. Isso permite criar conteúdo estruturado para uso em delivery sem cabeçalho ou criação de página.
-source-git-commit: a06024b4d4b6e5e750ed4c1e27f55283513b78a2
+source-git-commit: a5a5ec2211fe51bb04a1016f34fdac2f25cfe4e1
 workflow-type: tm+mt
-source-wordcount: '2908'
+source-wordcount: '2904'
 ht-degree: 7%
 
 ---
@@ -72,7 +72,7 @@ O modelo de fragmento de conteúdo define efetivamente a estrutura dos fragmento
 
          >[!CAUTION]
          >
-         >Ao atualizar manualmente a propriedade **Nome da propriedade** para um tipo de dados, observe que os nomes devem conter somente caracteres latinos, dígitos numéricos e sublinhado &quot;_&quot; como caractere especial.
+         >Ao atualizar manualmente a propriedade **Nome da propriedade** para um tipo de dados, observe que os nomes devem conter somente A-Z, a-z, 0-9 e sublinhado &quot;_&quot; como caractere especial.
          >
          >Se os modelos criados em versões anteriores do AEM contiverem caracteres ilegais, remova ou atualize esses caracteres.
       Por exemplo:
@@ -138,7 +138,7 @@ Muitas propriedades são autoexplicativas, para certas propriedades os detalhes 
 
 * **Nome da Propriedade**
 
-   Ao atualizar manualmente essa propriedade para um tipo de dados, observe que os nomes **must** contain *only* Caracteres latinos, dígitos numéricos e sublinhado &quot;_&quot; como caractere especial.
+   Ao atualizar manualmente essa propriedade para um tipo de dados, observe que os nomes **must** contain *only* A-Z, a-z, 0-9 e sublinhe &quot;_&quot; como caractere especial.
 
    >[!CAUTION]
    >
