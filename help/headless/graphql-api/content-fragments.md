@@ -3,10 +3,10 @@ title: API GraphQL do AEM para uso com Fragmentos de conteúdo
 description: Saiba como usar os Fragmentos de conteúdo no Adobe Experience Manager (AEM) as a Cloud Service com a API GraphQL do AEM, para entrega de conteúdo headless.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: 4f81a315d637b567fc6a6038b192f048bb462b4d
 workflow-type: tm+mt
-source-wordcount: '2664'
-ht-degree: 96%
+source-wordcount: '2708'
+ht-degree: 94%
 
 ---
 
@@ -346,6 +346,10 @@ O campo `_variations` foi implementado para simplificar a consulta das variaçõ
 
 Consulte [Exemplo de consulta - todas as cidades com uma variável nomeada](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation).
 
+>[!NOTE]
+>
+>Se a variação especificada não existir para um Fragmento de conteúdo, a variação principal será retornada como um padrão (fallback).
+
 <!--
 ## Security Considerations {#security-considerations}
 -->
@@ -450,42 +454,47 @@ A operação básica de consultas com o GraphQL para AEM adere à especificaçã
 
 * Se você espera uma lista de resultados:
    * adicione `List` ao nome do modelo; por exemplo, `cityList`
-   * Consulte [Exemplo de consulta - Todas as informações sobre todas as cidades](#sample-all-information-all-cities)
+   * Consulte [Exemplo de consulta - Todas as informações sobre todas as cidades](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
 
 * Se quiser usar um operador OR lógico:
    * use ` _logOp: OR`
-   * Consulte [Exemplo de consulta - Todas as pessoas cujo nome é “Jobs” ou “Smith”](#sample-all-persons-jobs-smith)
+   * Consulte [Exemplo de consulta - Todas as pessoas cujo nome é “Jobs” ou “Smith”](/help/headless/graphql-api/sample-queries.md#sample-all-persons-jobs-smith)
 
 * O operador AND lógico também existe, mas está (muitas vezes) implícito
 
 * Você pode consultar nos nomes de campos que correspondem aos campos no modelo de fragmento de conteúdo
-   * Consulte [Exemplo de consulta - Detalhes completos do CEO e dos funcionários de uma empresa](#sample-full-details-company-ceos-employees)
+   * Consulte [Exemplo de consulta - Detalhes completos do CEO e dos funcionários de uma empresa](/help/headless/graphql-api/sample-queries.md#sample-full-details-company-ceos-employees)
 
 * Além dos campos do modelo, há alguns campos gerados pelo sistema (precedidos por um sublinhado):
 
    * Para conteúdo:
 
       * `_locale` : para revelar a língua; com base no Gerenciador de idiomas
-         * Consulte [Exemplo de consulta para vários fragmentos de conteúdo de uma determinada localidade](#sample-wknd-multiple-fragments-given-locale)
+         * Consulte [Exemplo de consulta para vários fragmentos de conteúdo de uma determinada localidade](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragments-given-locale)
       * `_metadata` : para revelar metadados do fragmento
-         * Consulte [Exemplo de consulta para metadados - Listar os metadados para prêmios denominados como GB](#sample-metadata-awards-gb)
+         * Consulte [Exemplo de consulta para metadados - Listar os metadados para prêmios denominados como GB](/help/headless/graphql-api/sample-queries.md#sample-metadata-awards-gb)
       * `_model` : permite a consulta para um modelo de fragmento de conteúdo (caminho e título)
-         * Consulte [Exemplo de consulta para um modelo de fragmento de conteúdo de um modelo](#sample-wknd-content-fragment-model-from-model)
+         * Consulte [Exemplo de consulta para um modelo de fragmento de conteúdo de um modelo](/help/headless/graphql-api/sample-queries.md#sample-wknd-content-fragment-model-from-model)
       * `_path` : o caminho para o fragmento de conteúdo no repositório
-         * Consulte [Exemplo de consulta - Um único fragmento de cidade específico](#sample-single-specific-city-fragment)
+         * Consulte [Exemplo de consulta - Um único fragmento de cidade específico](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)
       * `_reference` : para revelar referências; incluindo referências em linha no Editor de Rich Text
-         * Consulte [Exemplo de consulta para vários fragmentos de conteúdo com referências previamente buscadas](#sample-wknd-multiple-fragments-prefetched-references)
+         * Consulte [Exemplo de consulta para vários fragmentos de conteúdo com referências previamente buscadas](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragments-prefetched-references)
       * `_variation` : para revelar variações específicas no fragmento de conteúdo
+
+         >[!NOTE]
+         >
+         >Se a variação especificada não existir para um Fragmento de conteúdo, a variação principal será retornada como um padrão (fallback).
+
          * Consulte [Exemplo de consulta - Todas as cidades com uma variação nomeada](#sample-cities-named-variation)
    * Operações AND:
 
       * `_operator` : aplica operadores específicos; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS` e `STARTS_WITH`
-         * Consulte [Exemplo de consulta - Todas as pessoas cujo nome não é “Jobs”](#sample-all-persons-not-jobs)
-         * Consulte [Exemplo de consulta - Todas as aventuras em que o `_path` começa com um prefixo específico](#sample-wknd-all-adventures-cycling-path-filter)
+         * Consulte [Exemplo de consulta - Todas as pessoas cujo nome não é “Jobs”](/help/headless/graphql-api/sample-queries.md#sample-all-persons-not-jobs)
+         * Consulte [Exemplo de consulta - Todas as aventuras em que o `_path` começa com um prefixo específico](/help/headless/graphql-api/sample-queries.md#sample-wknd-all-adventures-cycling-path-filter)
       * `_apply` : para aplicar condições específicas; por exemplo, `AT_LEAST_ONCE`
-         * Consulte [Exemplo de consulta - Filtrar em uma matriz com um item que deve ocorrer pelo menos uma vez](#sample-array-item-occur-at-least-once)
+         * Consulte [Exemplo de consulta - Filtrar em uma matriz com um item que deve ocorrer pelo menos uma vez](/help/headless/graphql-api/sample-queries.md#sample-array-item-occur-at-least-once)
       * `_ignoreCase` : para ignorar se os caracteres são maiúsculos ou minúsculos ao consultar
-         * Consulte [Exemplo de consulta - Todas as cidades com SAN no nome, independentemente de caracteres maiúsculos ou minúsculos](#sample-all-cities-san-ignore-case)
+         * Consulte [Exemplo de consulta - Todas as cidades com SAN no nome, independentemente de caracteres maiúsculos ou minúsculos](/help/headless/graphql-api/sample-queries.md#sample-all-cities-san-ignore-case)
 
 
 
@@ -498,7 +507,7 @@ A operação básica de consultas com o GraphQL para AEM adere à especificaçã
 * Os tipos de união GraphQL são compatíveis:
 
    * use `... on`
-      * Consulte [Exemplo de consulta para um fragmento de conteúdo de um modelo específico com uma referência de conteúdo](#sample-wknd-fragment-specific-model-content-reference)
+      * Consulte [Exemplo de consulta para um fragmento de conteúdo de um modelo específico com uma referência de conteúdo](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-content-reference)
 
 * Fazer o fallback ao consultar fragmentos aninhados:
 
