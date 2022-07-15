@@ -2,9 +2,9 @@
 title: Tags de cores para imagens
 description: O Experience Manager Assets permite distinguir entre cores em uma imagem e aplicá-las automaticamente como tags. Em seguida, você pode usar essas tags para pesquisar e filtrar imagens.
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
-source-git-commit: d8fb661be15a1505714e3def8a729a9c5c04616c
+source-git-commit: 2859fa68713b46083314d207abc4dec2e088a173
 workflow-type: tm+mt
-source-wordcount: '1225'
+source-wordcount: '1195'
 ht-degree: 3%
 
 ---
@@ -16,10 +16,6 @@ ht-degree: 3%
 O Experience Manager Assets usa os recursos do Adobe Sensei AI para distinguir entre cores em uma imagem e aplicá-las automaticamente como tags na assimilação. Essas tags permitem uma experiência de pesquisa aprimorada, com base na composição de cores da imagem.
 
 Você pode configurar o número de cores, dentro de um intervalo de uma a quarenta, que são marcadas em uma imagem, para que possa pesquisar por imagens com base nessas cores posteriormente. O Experience Manager Assets aplica as tags com base na cobertura de cor em uma imagem. Você também pode configurar o formato de exibição para uma tag de cor.
-
->[!NOTE]
->
->Esse recurso está disponível no canal de pré-lançamento. Consulte [Documentação do Canal de pré-lançamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) para obter informações sobre como habilitar o recurso para seu ambiente.
 
 A figura a seguir ilustra a sequência de tarefas que você executa para configurar e gerenciar a marcação de cores para imagens no Experience Manager Assets:
 
