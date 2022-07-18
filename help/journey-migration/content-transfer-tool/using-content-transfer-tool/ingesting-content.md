@@ -2,10 +2,10 @@
 title: Assimilar conteúdo no Target
 description: Assimilar conteúdo no Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 05765bdaa681502b60fc5a7c943e2265c09764ec
+source-git-commit: 0a5b74427bedfa7b1e802a91632b0765adfb8248
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 17%
+source-wordcount: '908'
+ht-degree: 13%
 
 ---
 
@@ -44,8 +44,7 @@ Siga as etapas abaixo para assimilar seu conjunto de migração da ferramenta Tr
 
    >[!IMPORTANT]
    >
-   >Você poderá iniciar uma assimilação no ambiente de destino somente se pertencer ao local **Administradores de AEM** na instância do Cloud Service que você está transferindo conteúdo. Se você não pertencer ao grupo de administradores AEM, verá um erro como mostrado abaixo ao tentar iniciar uma assimilação.
-   >![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam21.png)
+   >Você poderá iniciar uma assimilação no ambiente de destino somente se pertencer ao local **Administradores de AEM** no serviço de criação do Cloud Service de destino. Se não conseguir iniciar uma assimilação, consulte [Não é possível iniciar a assimilação](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) para obter mais detalhes.
 
    >[!IMPORTANT]
    >
@@ -103,7 +102,25 @@ Você pode fazer isso criando um novo trabalho de assimilação e garantir que *
 
 ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam24.png)
 
+## Resolução de problemas {#troubleshooting}
 
+### O CAM não pode recuperar o token de migração {#cam-unable-to-retrieve-the-migration-token}
+
+A recuperação automática do token de migração pode falhar por motivos diferentes, incluindo você [configuração de uma lista de permissões IP via Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) no ambiente Cloud Service do target.  Nesses cenários, você verá a seguinte caixa de diálogo ao tentar iniciar uma assimilação:
+
+![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/troubleshooting-token.png)
+
+Você precisará recuperar o token de migração manualmente clicando no link &quot;Obter token&quot; na caixa de diálogo. Isso abrirá outra guia que exibe o token. Em seguida, você pode copiar o token e colá-lo no **Entrada do token de migração** campo. Agora, você deve ser capaz de iniciar a ingestão.
+
+>[!NOTE]
+>
+>O token estará disponível para usuários que pertencem ao local **Administradores de AEM** no serviço de criação do Cloud Service de destino.
+
+### Não é possível iniciar a assimilação {#unable-to-start-ingestion}
+
+Você poderá iniciar uma assimilação no ambiente de destino somente se pertencer ao local **Administradores de AEM** no serviço de criação do Cloud Service de destino. Se você não pertencer ao grupo de administradores AEM, verá um erro como mostrado abaixo ao tentar iniciar uma assimilação. Você pode solicitar que o administrador o adicione ao local **Administradores de AEM** ou peça o token em si, que pode ser colado no **Entrada do token de migração** campo.
+
+![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
 
 ## O que vem a seguir {#whats-next}
 
