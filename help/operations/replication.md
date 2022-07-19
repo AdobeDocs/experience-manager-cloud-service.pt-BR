@@ -2,9 +2,9 @@
 title: Replicação
 description: Distribuição e solução de problemas da replicação.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 5791410fd5956cd8b82d4ed03f3920ade3bfedcb
+source-git-commit: b79752c43cd9907236b511aa1be60b5b2256a7b8
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1259'
 ht-degree: 4%
 
 ---
@@ -35,7 +35,7 @@ Para realizar a replicação automática para isso, você precisa ativar o **Rep
 
 ### Gerenciar publicação    {#manage-publication}
 
-A opção Gerenciar publicação oferece mais opções do que a Publicação rápida, permitindo a inclusão de páginas filhas, a personalização das referências e o início de qualquer fluxo de trabalho aplicável, além de oferecer a opção de publicação em uma data posterior.
+Gerenciar publicação oferece mais opções do que a Publicação rápida, permitindo a inclusão de páginas secundárias, a personalização das referências e o início de qualquer fluxo de trabalho aplicável, além de oferecer a opção de publicação em uma data posterior.
 
 A inclusão dos filhos de uma pasta na opção &quot;publicar mais tarde&quot; chamará o fluxo de trabalho Publicar árvore de conteúdo, descrito neste artigo.
 
@@ -172,6 +172,9 @@ Caso não forneça esse filtro e use apenas o agente &quot;publicar&quot;, o age
 
 O `ReplicationStatus` de um recurso só será modificado se a ação de replicação incluir pelo menos um agente que esteja ativo por padrão. No exemplo acima, isso não ocorre, pois a replicação está usando apenas o agente &quot;preview&quot;. Portanto, é necessário usar o novo `getStatusForAgent()` , que permite consultar o status de um agente específico. Esse método também funciona para o agente &quot;publicar&quot;. Retorna um valor não nulo se houver alguma ação de replicação feita usando o agente fornecido.
 
+### Métodos de invalidação de conteúdo {#invalidating-content}
+
+Você pode invalidar diretamente o conteúdo usando a Invalidação de conteúdo do Sling (SCD) do autor (o método preferido) ou usando a API de Replicação para chamar o agente de replicação de liberação do dispatcher de publicação. Consulte a [Armazenamento em cache](/help/implementing/dispatcher/caching.md) para obter mais detalhes.
 
 **Limites de capacidade da API de replicação**
 
@@ -179,6 +182,7 @@ Recomenda-se replicar menos de 100 caminhos de cada vez, sendo 500 o limite ríg
 Se a lógica do aplicativo não exigir replicação atômica, esse limite poderá ser ultrapassado definindo a variável `ReplicationOptions.setUseAtomicCalls` como falso, o que aceitará qualquer número de caminhos, mas criará compartimentos internamente para permanecer abaixo desse limite.
 
 O tamanho do conteúdo transmitido por chamada de replicação não deve exceder `10 MB`. Isso inclui os nós e as propriedades, mas não qualquer binário (os pacotes de fluxo de trabalho e os pacotes de conteúdo são considerados binários).
+
 
 ## Resolução de problemas {#troubleshooting}
 
