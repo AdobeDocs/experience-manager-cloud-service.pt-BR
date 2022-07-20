@@ -2,9 +2,9 @@
 title: Introdução à ferramenta Transferência de conteúdo
 description: Introdução à ferramenta Transferência de conteúdo
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: e7e3ec89d5e7b43b8c6dfb10f5dc966768ab0af1
+source-git-commit: 7bebdff5095786005d5c4c91b7b699d71f9813a7
 workflow-type: tm+mt
-source-wordcount: '1242'
+source-wordcount: '1341'
 ht-degree: 9%
 
 ---
@@ -44,6 +44,18 @@ Para testar a conectividade com o ambiente de destino AEM as a Cloud Service, em
 
 >[!NOTE]
 >Se uma `HTTP/2 200` for recebida, uma conexão com AEM as a Cloud Service foi bem-sucedida.
+
+### Ativar o registro em SSL {#enable-ssl-logging}
+
+Entender os problemas de conexão SSL/TLS às vezes pode ser difícil. Para solucionar problemas de conexão durante um processo de extração, é possível habilitar o registro SSL por meio do Console do Sistema do ambiente de origem AEM seguindo estas etapas:
+
+1. Navegue até o Adobe Experience Manager Web Console na instância de origem, acessando **Ferramentas - Operações - Console da Web** ou diretamente para o URL em *https://serveraddress:serverport/system/console/configMgr*
+1. Procurar por **Configuração do serviço de extração da ferramenta de transferência de conteúdo**
+1. Use o botão de ícone de lápis para editar seus valores de configuração
+1. Ative o **Habilitar registro ssl para extração** e pressione **Salvar**:
+
+   ![imagem](/help/journey-migration/content-transfer-tool/assets/enable_ssl_logging.png)
+
 
 ## Execução da ferramenta Transferência de conteúdo {#running-tool}
 
