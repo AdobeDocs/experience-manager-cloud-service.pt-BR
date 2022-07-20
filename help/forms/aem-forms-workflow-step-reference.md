@@ -2,7 +2,8 @@
 title: 'Como atribuir um fluxo de trabalho a outro usuário, enviar email, usar o Adobe Sign em um fluxo de trabalho? '
 description: Os fluxos de trabalho centrados no Forms permitem que você crie rapidamente os fluxos de trabalho baseados no Adaptive Forms. Você pode usar o Adobe Sign para assinar documentos por email, criar processos comerciais baseados em formulários, recuperar e enviar dados para várias fontes de dados e enviar notificações por email
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
-source-git-commit: 211724e8031c6b83ca202739d2bc56007243d3d5
+google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
+source-git-commit: 69d86454c9d3dd869a69c7f720bce077b0149860
 workflow-type: tm+mt
 source-wordcount: '5467'
 ht-degree: 0%
@@ -66,7 +67,7 @@ Você também pode usar o componente para controlar o comportamento da tarefa. P
 
 * **[!UICONTROL Caminho do formulário adaptável]**: Especifique o caminho do formulário adaptável.<!--  or Interactive Communication.--> Você pode usar o formulário adaptável <!-- or interactive communication --> que é enviado para o fluxo de trabalho, disponível em um caminho absoluto, ou recupera o formulário adaptável de um caminho armazenado em uma variável do tipo de dados da string.
 * **[!UICONTROL Selecionar PDF de entrada usando]**: Especifique o caminho de um documento PDF não interativo. O campo fica disponível ao escolher um documento de PDF não interativo no campo Tipo. Você pode selecionar o PDF de entrada usando o caminho relativo à carga útil, salvo em um caminho absoluto ou usando uma variável do tipo de dados Documento. Por exemplo, [Diretório_de_carga]/Workflow/PDF/credit-card.pdf. O caminho não existe no repositório crx. Um administrador cria o caminho antes de usá-lo. Você precisa ter uma opção Documento de registro ativada ou o modelo de formulário baseado em Adaptive Forms para usar a opção PDF path .
-* **[!UICONTROL Para tarefas concluídas, renderize o Formulário adaptável como]**: Quando uma tarefa é marcada como concluída, é possível renderizar o Formulário adaptável como um formulário adaptável somente leitura ou um documento PDF. É necessário ativar uma opção Documento de registro ou Forms adaptável baseado no modelo de formulário para renderizar o Formulário adaptável como Documento de registro.
+* **[!UICONTROL Para tarefas concluídas, renderize o Formulário adaptável como]**: Quando uma tarefa é marcada como concluída, é possível renderizar o Formulário adaptável como um formulário adaptável somente leitura ou um documento PDF. É necessário ativar uma opção Documento de registro ou Forms adaptável baseado em modelo de formulário para renderizar o Formulário adaptável como Documento de registro.
 * **[!UICONTROL Pré-preenchido]**: Os seguintes campos listados abaixo servem como entradas para a tarefa:
 
    * **[!UICONTROL Selecione o arquivo de dados de entrada usando]**: Caminho do arquivo de dados de entrada (.json, .xml, .doc ou modelo de dados de formulário). Você pode recuperar o arquivo de dados de entrada usando um caminho relativo à carga útil ou recuperar o arquivo armazenado em uma variável do tipo de dados Document, XML ou JSON. Por exemplo, o arquivo contém os dados enviados para o formulário por meio de um aplicativo AEM Caixa de entrada. Um caminho de exemplo é [Diretório_de_carga]/workflow/data.
@@ -166,7 +167,7 @@ A etapa de email tem as seguintes propriedades:
 * **[!UICONTROL Metadados de fluxo de trabalho]**: Use a opção quando o valor a ser usado for salvo em uma propriedade de metadados de workflow. Depois de selecionar a opção , insira o nome da propriedade de metadados na caixa de texto vazia abaixo da opção Metadados do fluxo de trabalho . Por exemplo, emailAddress.
 
 <!-- * **[!UICONTROL Asset URL]**: Use the option to embed a web link of an interactive communication to the email. After selecting the option, browse and choose the interactive communication to embed. The asset can reside on the author or the publish server. -->
-* **[!UICONTROL Imagem]**: Use a opção para incorporar uma imagem ao email. Depois de selecionar a opção , navegue e escolha a imagem. A opção de imagem está disponível somente para as tags de imagem (&lt;img src=&quot;*&quot; />) disponíveis no modelo de email.
+* **[!UICONTROL Imagem]**: Use a opção para incorporar uma imagem ao email. Depois de selecionar a opção , navegue e escolha a imagem. A opção de imagem está disponível somente para as tags de imagem (&lt;img src=&quot;&lt;span id=&quot; translate=&quot;no&quot; />&quot;/>) disponíveis no modelo de email.&#42;
 
 **[!UICONTROL Endereço de email do remetente/destinatário]**: Selecione o **[!UICONTROL Literal]** para especificar manualmente um endereço de email ou selecionar a opção **[!UICONTROL Recuperar dos metadados do fluxo de trabalho]** para recuperar o endereço de email de uma propriedade de metadados. Também é possível especificar uma lista de matrizes de propriedades de metadados para a variável **[!UICONTROL Recuperar dos metadados do fluxo de trabalho]** opção. Selecione o **[!UICONTROL Variável]** para recuperar o endereço de email do valor armazenado em uma variável do tipo de dados da string.
 

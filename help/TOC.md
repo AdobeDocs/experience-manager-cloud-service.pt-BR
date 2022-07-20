@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Recursos de autoajuda e links de documentação da visão geral do Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: f84327096951772e1bed8656334841e1292d6bcf
+source-git-commit: 0ee8f080c0e712e4a34086a75cbd8750a7d08b74
 workflow-type: tm+mt
-source-wordcount: '3677'
+source-wordcount: '3680'
 ht-degree: 92%
 
 ---
@@ -500,6 +500,7 @@ ht-degree: 92%
       + Adicionar componentes a um formulário adaptável {#add-components-to-an-adaptive-form}
          + [Usar CAPTCHA em um formulário adaptável](/help/forms/captcha-adaptive-forms.md)
          + [Usar componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)
+         + [Aplicar assinatura do Scribble](/help/forms/signing-forms-using-scribble.md)
       + Configurar o layout e aplicar estilo a um formulário adaptável {#configure-layout-of-an-adaptive-form}
          + [Definir o layout de um formulário adaptável](/help/forms/layout-capabilities-adaptive-forms.md)
          + [Usar o modo Layout para redimensionar componentes](/help/forms/resize-using-layout-mode.md)
