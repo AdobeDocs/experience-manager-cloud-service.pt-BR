@@ -3,9 +3,9 @@ title: Suporte a fragmentos de conteúdo do Adobe Experience Manager as a Cloud 
 description: Saiba mais sobre o suporte para Fragmentos de conteúdo na API HTTP do Assets, uma parte importante AEM recurso de entrega sem cabeçalho.
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: ad51218652d3e7fbe90abb1fc02cce7212394c21
+source-git-commit: cf8c8353d83e4446f52235a2ea1a322a84786b61
 workflow-type: tm+mt
-source-wordcount: '1951'
+source-wordcount: '1761'
 ht-degree: 2%
 
 ---
@@ -204,7 +204,7 @@ A API REST do Assets expõe o acesso às propriedades de uma pasta; por exemplo,
 >
 >Dependendo do tipo de ativo dos ativos e pastas filhos, a lista de entidades filhas já pode conter o conjunto completo de propriedades que define a respectiva entidade filho. Como alternativa, apenas um conjunto reduzido de propriedades pode ser exposto para uma entidade nesta lista de entidades-filho.
 
-### Ativos {#assets}
+### Assets {#assets}
 
 Se um ativo for solicitado, a resposta retornará seus metadados; como título, nome e outras informações conforme definido pelo respectivo schema de ativos.
 
@@ -255,47 +255,6 @@ O uso pode ser diferente dependendo se você está usando um autor ou um ambient
 >[!NOTE]
 >
 >Para obter mais detalhes, consulte o [Referência da API](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). Em especial, [API Adobe Experience Manager Assets - Fragmentos de conteúdo](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
-
-### Leitura/entrega {#read-delivery}
-
-O uso é via:
-
-`GET /{cfParentPath}/{cfName}.json`
-
-Por exemplo:
-
-`http://<host>/api/assets/wknd/en/adventures/cycling-tuscany.json`
-
-A resposta é JSON serializado com o conteúdo estruturado como no fragmento de conteúdo. As referências são fornecidas como URLs de referência.
-
-Dois tipos de operações de leitura são possíveis:
-
-* Ao ler um fragmento de conteúdo específico por caminho, a representação JSON do fragmento de conteúdo é retornada.
-* Leitura de uma pasta de fragmentos de conteúdo por caminho: isso retorna as representações JSON de todos os fragmentos de conteúdo dentro da pasta.
-
-### Criar {#create}
-
-O uso é via:
-
-`POST /{cfParentPath}/{cfName}`
-
-O corpo deve conter uma representação JSON do fragmento de conteúdo a ser criado, incluindo qualquer conteúdo inicial que deve ser definido nos elementos do fragmento de conteúdo. É obrigatório definir a variável `cq:model` e deve apontar para um modelo de fragmento de conteúdo válido. Se isso não for feito, haverá um erro. Também é necessário adicionar um cabeçalho `Content-Type` que está definida como `application/json`.
-
-### Atualizar {#update}
-
-O uso é via
-
-`PUT /{cfParentPath}/{cfName}`
-
-O corpo deve conter uma representação JSON do que deve ser atualizado para o fragmento de conteúdo especificado.
-
-Pode ser simplesmente o título ou a descrição de um fragmento de conteúdo, um único elemento ou todos os valores e/ou metadados do elemento.
-
-### Excluir {#delete}
-
-O uso é via:
-
-`DELETE /{cfParentPath}/{cfName}`
 
 ## Limitações           {#limitations}
 
