@@ -2,10 +2,10 @@
 title: Pesquisa e indexação de conteúdo
 description: Pesquisa e indexação de conteúdo
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 288c80a3819ff148834824cc33d6deefbd3f0605
+source-git-commit: 21c5de77ca5e5ca2b6541212ff50e747bbd00100
 workflow-type: tm+mt
-source-wordcount: '2535'
-ht-degree: 90%
+source-wordcount: '2251'
+ht-degree: 88%
 
 ---
 
@@ -280,17 +280,7 @@ Se um índice precisar ser removido em uma versão posterior do aplicativo, voc�
 
 Se não precisar mais de uma personalização de um índice pronto para uso, você deverá copiar a definição desse índice. Por exemplo, se você já implantou o índice `damAssetLucene-8-custom-3`, mas não precisa mais das personalizações e deseja voltar para o índice padrão (`damAssetLucene-8`), você deve adicionar um índice `damAssetLucene-8-custom-4` que contém a definição de índice de `damAssetLucene-8`.
 
-## Otimizações de índice {#index-optimizations}
+## Otimizações de índice e consulta {#index-query-optimizations}
 
-O Apache Jackrabbit Oak permite configurações de índice flexíveis para lidar com consultas de pesquisa com eficiência. Os índices são especialmente importantes para repositórios maiores. Certifique-se de que todas as consultas sejam apoiadas por um índice adequado. Consultas sem um índice adequado podem ler milhares de nós, o que será então registrado como um aviso. Essas consultas devem ser identificadas por analisar os arquivos de log, para que as definições de índice possam ser otimizadas. Consulte [esta página](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=pt-BR#tips-for-creating-efficient-indexes) para obter mais informações.
-
-### Índice de texto completo Lucene no AEM as a Cloud Service {#index-lucene}
-
-O índice de texto completo `/oak:index/lucene-2` pode se tornar muito grande porque indexa todos os nós no repositório do AEM por padrão.  Após os planos da Adobe de desativar esse índice, ele não será mais usado no lado do produto no AEM as a Cloud Service e não deverá ser necessário executar o código do cliente. Para ambientes do AEM as a Cloud Service com índices Lucene comuns, a Adobe está trabalhando com os clientes individualmente para criar uma abordagem coordenada que compense esse índice e utilize índices melhores e otimizados. Nenhuma ação é necessária por parte dos clientes sem o aviso prévio da Adobe. Clientes do AEM as a Cloud Service serão informados pela Adobe quando houver necessidade de ação em relação a essa otimização. Se esse índice for necessário para consultas personalizadas, como uma solução temporária, uma cópia desse índice deverá ser criada usando um nome diferente; por exemplo, `/oak:index/acme.lucene-1-custom-1`, conforme descrito [aqui](/help/operations/indexing.md).
-Essa otimização não se aplica por padrão a outros ambientes do AEM hospedados no local ou gerenciados pelo Adobe Managed Services.
-
-## Otimizações de consulta {#index-query}
-
-A ferramenta **Desempenho da consulta** permite observar consultas JCR populares e lentas. Além disso, ela é capaz de analisar consultas e exibir várias informações, em especial, se um índice está sendo usado ou não para essa consulta.
-
-Ao contrário do AEM local, o AEM as a Cloud Service não exibe mais a ferramenta **Desempenho da consulta** na interface. Em vez disso, agora ela está disponível por meio do Console do desenvolvedor (no Cloud Manager), na guia [Consultas](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=pt-BR#queries).
+O Apache Jackrabbit Oak permite configurações de índice flexíveis para lidar com consultas de pesquisa com eficiência. Os índices são especialmente importantes para repositórios maiores. Certifique-se de que todas as consultas sejam apoiadas por um índice adequado. Consultas sem um índice adequado podem ler milhares de nós, o que será então registrado como um aviso.
+Consulte [esta página](best-practices-for-querying-and-indexing.md) sobre como as consultas e índices podem ser otimizadas.
