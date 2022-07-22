@@ -2,9 +2,9 @@
 title: Pesquisa e indexação de conteúdo
 description: Pesquisa e indexação de conteúdo
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 21c5de77ca5e5ca2b6541212ff50e747bbd00100
+source-git-commit: 1544358f9a706574d8944fa92422240c46d62d2f
 workflow-type: tm+mt
-source-wordcount: '2251'
+source-wordcount: '2253'
 ht-degree: 88%
 
 ---
@@ -283,4 +283,5 @@ Se não precisar mais de uma personalização de um índice pronto para uso, voc
 ## Otimizações de índice e consulta {#index-query-optimizations}
 
 O Apache Jackrabbit Oak permite configurações de índice flexíveis para lidar com consultas de pesquisa com eficiência. Os índices são especialmente importantes para repositórios maiores. Certifique-se de que todas as consultas sejam apoiadas por um índice adequado. Consultas sem um índice adequado podem ler milhares de nós, o que será então registrado como um aviso.
-Consulte [esta página](best-practices-for-querying-and-indexing.md) sobre como as consultas e índices podem ser otimizadas.
+
+Consulte [este documento](query-and-indexing-best-practices.md) para obter informações sobre como queries e índices podem ser otimizados.
