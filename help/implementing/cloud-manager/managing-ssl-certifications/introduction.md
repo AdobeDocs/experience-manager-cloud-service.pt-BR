@@ -2,10 +2,10 @@
 title: Introdução ao Gerenciamento de certificados SSL
 description: Saiba como o Cloud Manager oferece ferramentas de autoatendimento para instalar certificados SSL.
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
-source-git-commit: 898f7bc46a3f1b0ac93ee43fbf7b60a11682a073
+source-git-commit: f69a26c6156c1f9038d612a00b16cac0e51e17ca
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 1%
+source-wordcount: '638'
+ht-degree: 2%
 
 ---
 
@@ -16,8 +16,8 @@ ht-degree: 1%
 >id="aemcloud_golive_sslcert"
 >title="Gerenciar certificados SSL"
 >abstract="Saiba como o Cloud Manager fornece ferramentas de autoatendimento para instalar e gerenciar certificados SSL para proteger seu site para seus usuários. O Cloud Manager usa um serviço TLS de plataforma para gerenciar certificados SSL e chaves privadas de propriedade de clientes e obtidas de autoridades de certificação de terceiros."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html" text="Exibir, atualizar e substituir um certificado SSL"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html" text="Verificar o status de um certificado SSL"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html" text="Exibir, atualizar e substituir um certificado SSL"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html" text="Verificar o status de um certificado SSL"
 
 O Cloud Manager fornece ferramentas de autoatendimento para instalar e gerenciar certificados SSL para proteger seu site para seus usuários. O Cloud Manager usa um serviço TLS de plataforma para gerenciar certificados SSL e chaves privadas de propriedade de clientes e obtidas de autoridades de certificação de terceiros, como Let&#39;s Encrypt.
 
