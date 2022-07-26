@@ -1,10 +1,11 @@
 ---
 title: Fragmentos de conteúdo - Navegador de configuração
 description: Saiba como ativar a funcionalidade específica do Fragmento de conteúdo no Navegador de configuração.
-source-git-commit: a06024b4d4b6e5e750ed4c1e27f55283513b78a2
+exl-id: 55d442ae-ae06-4dfa-8e4e-b415385ccea5
+source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 19%
+source-wordcount: '358'
+ht-degree: 24%
 
 ---
 
@@ -60,9 +61,12 @@ Para [usar determinada funcionalidade de Fragmento de conteúdo](#creating-a-con
 1. Use **Criar** para abrir a caixa de diálogo, onde você:
 
    1. Especifique um **Título**.
+   1. O **Nome** se tornará o nome do nó no repositório.
+      * Ele será gerado automaticamente com base no título e ajustado de acordo com as [convenções de nomenclatura do AEM.](/help/implementing/developing/introduction/naming-conventions.md)
+      * Pode ajustá-lo se necessário.
    1. Para permitir seu uso, selecione
       * **Modelos de fragmentos do conteúdo**
-      * **Consultas persistentes de GraphQL**
+      * **Consultas GraphQL Persistidas**
 
       ![Definir configuração](assets/cfm-conf-01.png)
 

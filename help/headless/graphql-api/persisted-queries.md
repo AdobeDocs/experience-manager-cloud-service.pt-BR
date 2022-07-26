@@ -3,10 +3,10 @@ title: 'Consultas persistentes de GraphQL '
 description: Saiba como criar consultas persistentes de GraphQL no Adobe Experience Manager as a Cloud Service para otimizar o desempenho. As consultas persistentes podem ser solicitadas por aplicativos clientes usando o método GET do HTTP e a resposta pode ser armazenada em cache nas camadas do Dispatcher e do CDN, melhorando, em última análise, o desempenho dos aplicativos clientes.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 377747d6bbb945b1de9cf1fdcbabc077babd7aa9
+source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
 workflow-type: tm+mt
 source-wordcount: '1311'
-ht-degree: 48%
+ht-degree: 47%
 
 ---
 
@@ -34,7 +34,7 @@ Por exemplo, para criar uma consulta persistente especificamente para a configur
 >
 >Consulte [Habilitar a funcionalidade de fragmentos de conteúdo no Navegador de configuração](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) para obter mais detalhes.
 >
->As **consultas persistentes de GraphQL** precisam estar habilitadas na configuração apropriada do Sites.
+>O **Consultas Persistentes GraphQL** precisam ser ativados para a configuração apropriada do Sites.
 
 Por exemplo, se houver uma consulta específica chamada `my-query`, que usa um modelo `my-model` da configuração `my-conf` do Sites:
 
@@ -194,9 +194,9 @@ Para executar uma consulta Persistente, um aplicativo cliente faz uma solicitaç
 GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
 ```
 
-Onde `PERSISTENT_PATH` é um caminho encurtado para onde a consulta persistente é salva.
+Onde `PERSISTENT_PATH` é um caminho encurtado para onde a consulta Persistida é salva.
 
-1. Por exemplo `wknd` é o nome da configuração e `plain-article-query` é o nome da consulta persistente. Para executar a query:
+1. Por exemplo `wknd` é o nome da configuração e `plain-article-query` é o nome da consulta Persisted. Para executar a query:
 
    ```shell
    $ curl -X GET \
@@ -207,7 +207,7 @@ Onde `PERSISTENT_PATH` é um caminho encurtado para onde a consulta persistente 
 
    >[!NOTE]
    >
-   > As variáveis e os valores de consulta devem ser corretamente [codificado](#encoding-query-url) ao executar uma consulta persistente.
+   > As variáveis e os valores de consulta devem ser corretamente [codificado](#encoding-query-url) ao executar uma consulta Persistente.
 
    Por exemplo:
 
@@ -332,9 +332,9 @@ Para usar uma consulta persistente em um aplicativo cliente, o SDK do cliente se
 
 As consultas persistentes devem sempre ser criadas em um serviço de autor do AEM e publicadas (replicadas) em um serviço de publicação do AEM. Geralmente, as consultas persistentes são criadas e testadas em ambientes inferiores, como ambientes locais ou de desenvolvimento. É necessário promover consultas persistentes a ambientes de nível superior, tornando-as disponíveis em um ambiente de produção do AEM Publish para que os aplicativos clientes consumam.
 
-### Consultas Persistentes do Pacote
+### Pacote de consultas persistentes
 
-É possível integrar consultas persistentes [AEM Pacotes](/help/implementing/developing/tools/package-manager.md). AEM Pacotes podem ser baixados e instalados em ambientes diferentes. AEM pacotes também podem ser replicados de um ambiente de Autor do AEM para ambientes de Publicação do AEM.
+As consultas persistentes podem ser incorporadas [AEM Pacotes](/help/implementing/developing/tools/package-manager.md). AEM Pacotes podem ser baixados e instalados em ambientes diferentes. AEM pacotes também podem ser replicados de um ambiente de Autor do AEM para ambientes de Publicação do AEM.
 
 Para criar um pacote:
 

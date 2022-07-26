@@ -4,10 +4,10 @@ description: Saiba como ativar determinadas funcionalidades de Fragmento de cont
 feature: Content Fragments
 role: User
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: 78448aafa1b397f9131c12ab2afd74b05ae53e66
+source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 18%
+source-wordcount: '371'
+ht-degree: 23%
 
 ---
 
@@ -63,9 +63,12 @@ Para [usar determinada funcionalidade de Fragmento de conteúdo](#creating-a-con
 1. Use **Criar** para abrir a caixa de diálogo, onde você:
 
    1. Especifique um **Título**.
+   1. O **Nome** se tornará o nome do nó no repositório.
+      * Ele será gerado automaticamente com base no título e ajustado de acordo com as [convenções de nomenclatura do AEM.](/help/implementing/developing/introduction/naming-conventions.md)
+      * Pode ajustá-lo se necessário.
    1. Para permitir seu uso, selecione
       * **Modelos de fragmentos do conteúdo**
-      * **Consultas persistentes de GraphQL**
+      * **Consultas GraphQL Persistidas**
 
       ![Definir configuração](assets/cfm-conf-01.png)
 
