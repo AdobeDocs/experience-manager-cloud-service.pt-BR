@@ -3,9 +3,9 @@ title: Validação e depuração usando ferramentas do Dispatcher
 description: Validação e depuração usando ferramentas do Dispatcher
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 4dff6bf09fe9337c70adb654d3eff27f5b45f518
+source-git-commit: d90a279840d85437efc7db40c68ea66da8fe2d90
 workflow-type: tm+mt
-source-wordcount: '2512'
+source-wordcount: '2536'
 ht-degree: 2%
 
 ---
@@ -78,6 +78,10 @@ Os arquivos a seguir são personalizáveis e serão transferidos para sua instâ
 * `conf.d/available_vhosts/<CUSTOMER_CHOICE>.vhost`
 
 Você pode ter um ou mais desses arquivos. Eles contêm `<VirtualHost>` entradas que correspondem aos nomes de host e permitem que o Apache gerencie cada tráfego de domínio com regras diferentes. Os arquivos são criados na `available_vhosts` e habilitado com um link simbólico no `enabled_vhosts` diretório. No `.vhost` arquivos, outros arquivos como regravações e variáveis serão incluídos.
+
+>[!NOTE]
+>
+>No modo flexível, você deve usar caminhos relativos em vez de caminhos absolutos.
 
 * `conf.d/rewrites/rewrite.rules`
 
@@ -481,11 +485,15 @@ $ docker exec d75fbd23b29 httpd-test
 Com a versão 2021.7.0 do Cloud Manager, os novos programas do Cloud Manager geram estruturas de projeto maven com [AEM arquétipo 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) ou superior, que inclui o arquivo **opt-in/USE_SOURCES_DIRECTLY**. Isso remove as limitações anteriores do [modo herdado](/help/implementing/dispatcher/validation-debug-legacy.md) em torno do número e do tamanho dos arquivos, fazendo com que o SDK e o tempo de execução validem e implantem a configuração de maneira aprimorada. Se a configuração do dispatcher não tiver esse arquivo, é altamente recomendável migrar. Use as seguintes etapas para garantir uma transição segura:
 
 1. **Teste local.** Usando as ferramentas mais recentes do dispatcher SDK, adicione a pasta e o arquivo `opt-in/USE_SOURCES_DIRECTLY`. Siga as instruções de &quot;validação local&quot; neste artigo para testar se o dispatcher funciona localmente.
-2. **Teste de desenvolvimento em nuvem:**
+1. **Teste de desenvolvimento em nuvem:**
    * Confirmar o arquivo `opt-in/USE_SOURCES_DIRECTLY` para uma ramificação git implantada pelo pipeline de não produção em um ambiente de desenvolvimento do Cloud.
    * Use o Cloud Manager para implantar em um ambiente de desenvolvimento do Cloud.
    * Teste completamente. É importante validar se a configuração do apache e do dispatcher se comporta conforme o esperado antes de implantar alterações em ambientes superiores. Verifique todo o comportamento relacionado à sua configuração personalizada! Registre um tíquete de suporte ao cliente se você achar que a configuração do dispatcher implantada não reflete a configuração personalizada.
-3. **Implantar na produção:**
+
+   >[!NOTE]
+   >
+   >No modo flexível, você deve usar caminhos relativos em vez de caminhos absolutos.
+1. **Implantar na produção:**
    * Confirmar o arquivo `opt-in/USE_SOURCES_DIRECTLY` para uma ramificação git implantada pelo pipeline de produção nos ambientes de preparo e produção do Cloud.
    * Use o Cloud Manager para implantar no armazenamento temporário.
    * Teste completamente. É importante validar se a configuração do apache e do dispatcher se comporta conforme o esperado antes de implantar alterações em ambientes superiores. Verifique todo o comportamento relacionado à sua configuração personalizada! Registre um tíquete de suporte ao cliente se você achar que a configuração do dispatcher implantada não reflete a configuração personalizada.
