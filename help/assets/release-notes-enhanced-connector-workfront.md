@@ -1,37 +1,33 @@
 ---
-title: Notas da versão para [!DNL Workfront for Experience Manager enhanced connector]
-description: Notas da versão para [!DNL Workfront for Experience Manager enhanced connector]
+title: Notas da versão [!DNL Workfront for Experience Manager enhanced connector]
+description: Notas da versão [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: d763bacb0844a438ebea6ef206dfa184a49993fe
+source-git-commit: f49ac67b7a90d638e266b9f7f5bf5ac9d7f78e3a
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 3%
+source-wordcount: '441'
+ht-degree: 2%
 
 ---
 
-# Notas da versão para [!DNL Workfront for Experience Manager enhanced connector] {#release-notes-enhanced-connector-workfront}
+# Notas da versão [!DNL Workfront for Experience Manager enhanced connector] {#release-notes-enhanced-connector-workfront}
 
 A seção a seguir descreve as Notas de versão gerais de [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento da versão mais recente 1.9.1 de [!DNL Workfront for Experience Manager enhanced connector] for 1 de julho de 2022.
+A data de lançamento da versão mais recente 1.9.2 do [!DNL Workfront for Experience Manager enhanced connector] é 3 de agosto de 2022.
 
 ## Destaques da versão {#release-highlights}
 
 A versão mais recente do [!DNL Workfront for Experience Manager enhanced connector] O inclui os seguintes aprimoramentos e correções de erros:
 
-* Adição de suporte para autenticação entre aplicativos Experience Manager e Workfront usando a chave de API Workfront para instâncias migradas para o Adobe IMS.
+* O **[!UICONTROL Fazer upload do documento]** falha na etapa do fluxo de trabalho ao anexar um documento ao Workfront.
 
-* Quando você vincula arquivos ou pastas externos, o aplicativo Workfront exibe a variável `SERVER_ERROR` mensagem de erro. A mensagem de erro se refere a uma exceção não autorizada devido a uma incompatibilidade nas chaves da API.
-
-* Quando você executa um fluxo de trabalho Criar tarefa para um ativo, a exceção de Ponteiro nulo é exibida nas mensagens de log.
-
-* Ao ativar a variável `Replace Spaces with DASH` opção de configuração em Configurações avançadas no Experience Manager, resulta na criação de pastas duplicadas no Workfront.
+* O **[!UICONTROL Fazer upload do documento]** A etapa do fluxo de trabalho não anexa um documento a Tarefas e Problemas no Workfront. A etapa do fluxo de trabalho anexa um documento aos Projetos com êxito.
 
 >[!IMPORTANT]
 >
->O Adobe recomenda [atualizar para a versão 1.9.1 mais recente](../assets/update-workfront-enhanced-connector.md) do [!DNL Workfront for Experience Manager enhanced connector].
+>O Adobe recomenda [atualizar para a versão 1.9.2 mais recente](../assets/update-workfront-enhanced-connector.md) do [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Problemas conhecidos {#known-issues}
 
@@ -40,6 +36,18 @@ A versão mais recente do [!DNL Workfront for Experience Manager enhanced connec
 * Quando estiver usando a experiência clássica do Workfront, a variável **[!UICONTROL Enviar para]** disponível na **[!UICONTROL Mais]** a lista suspensa não permite selecionar o destino desejado no Experience Manager. O **[!UICONTROL Enviar para]** A opção funciona corretamente usando o **[!UICONTROL Ações do documento]** lista suspensa. O **[!UICONTROL Enviar para]** A opção funciona corretamente para **[!UICONTROL Mais]** lista suspensa, bem como a **[!UICONTROL Ações do documento]** lista suspensa disponível na nova experiência do Workfront.
 
 ## Versões anteriores {#previous-releases}
+
+### Versão de julho de 2022 {#july-2022-release}
+
+[!DNL Workfront for Experience Manager enhanced connector] A versão 1.9.1 inclui as seguintes atualizações:
+
+* Adição de suporte para autenticação entre aplicativos Experience Manager e Workfront usando a chave de API Workfront para instâncias migradas para o Adobe IMS.
+
+* Quando você vincula arquivos ou pastas externos, o aplicativo Workfront exibe a variável `SERVER_ERROR` mensagem de erro. A mensagem de erro se refere a uma exceção não autorizada devido a uma incompatibilidade nas chaves da API.
+
+* Quando você executa um fluxo de trabalho Criar tarefa para um ativo, a exceção de Ponteiro nulo é exibida nas mensagens de log.
+
+* Ao ativar a variável `Replace Spaces with DASH` opção de configuração em Configurações avançadas no Experience Manager, resulta na criação de pastas duplicadas no Workfront.
 
 ### Versão de junho de 2022 {#june-2022-release}
 
