@@ -1,11 +1,11 @@
 ---
 title: Introdução à Jornada de integração AEM as a Cloud Service
-description: Comece aqui para obter uma visão geral da jornada guiada por meio do processo de integração para AEM as a Cloud Service.
+description: Comece aqui para obter uma visão geral da jornada guiada por meio do processo de integração para o AEM as a Cloud Service.
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
 source-git-commit: 75c0e8cbaa409fa48750e794c27ace98eda107d0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1175'
+ht-degree: 17%
 
 ---
 
