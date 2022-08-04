@@ -4,10 +4,10 @@ description: Saiba como criar e gerenciar projetos de tradução automática e h
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 154fb4bf9bea187a2f733c35cc720f3da99755bb
+source-git-commit: 998b71903f3ea0c3c1082ecc800331811c2af8cf
 workflow-type: tm+mt
-source-wordcount: '3920'
-ht-degree: 98%
+source-wordcount: '3992'
+ht-degree: 95%
 
 ---
 
@@ -177,12 +177,20 @@ As edições manuais de conteúdo traduzido podem ser sincronizadas de volta ao 
 
 ![Comparar alterações da memória de tradução](../assets/update-translation-memory-compare.png)
 
-O AEM enviará as strings selecionadas de volta para o Sistema de Gerenciamento de Tradução.
+AEM atualiza a tradução das cadeias de caracteres existentes na memória de tradução do TMS configurado.
 
-* A ação atualiza a tradução das cadeias de caracteres existentes na memória de tradução do TMS (Translation Management Systems, sistema de gerenciamento de tradução configurado).
+* A ação atualiza a tradução das cadeias de caracteres existentes na memória de tradução do TMS configurado.
 * Ele não cria novos trabalhos de tradução.
-* Ele envia os pares de valores de cadeias de caracteres e suas traduções de volta para o TMS, por meio AEM API de tradução.
-* Este recurso requer que um Sistema de Gerenciamento de Tradução seja configurado para uso com o AEM.
+* Ele envia as traduções de volta para o TMS, por meio AEM API de tradução (veja abaixo).
+
+Para usar este recurso:
+
+* Um TMS deve ser configurado para uso com AEM.
+* O conector precisa implementar o método [`storeTranslation`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/translation/api/TranslationService.html).
+   * O código nesse método determina o que acontece com a solicitação de atualização da memória de tradução.
+   * A estrutura de tradução de AEM envia os pares de valores da sequência de caracteres (tradução original e atualizada) para o TMS por meio dessa implementação de método.
+
+As atualizações da memória de tradução podem ser interceptadas e enviadas para um destino personalizado, nos casos em que uma memória de tradução proprietária é usada.
 
 ### Verificação do status de tradução de uma página {#check-translation-status}
 
