@@ -3,9 +3,9 @@ title: Validação e depuração usando ferramentas do Dispatcher
 description: Validação e depuração usando ferramentas do Dispatcher
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: d90a279840d85437efc7db40c68ea66da8fe2d90
+source-git-commit: 6f80c6d32d3eca1b0ef2977c740ef043529fab96
 workflow-type: tm+mt
-source-wordcount: '2536'
+source-wordcount: '2653'
 ht-degree: 2%
 
 ---
@@ -229,6 +229,10 @@ O script tem as três fases a seguir:
 
 Durante uma implantação do Cloud Manager, a variável `httpd -t` a verificação de sintaxe também será executada e todos os erros serão incluídos no Cloud Manager `Build Images step failure` log.
 
+>[!NOTE]
+>
+>Consulte a [Carregamento e validação automáticos](#automatic-loading) para uma alternativa eficiente à execução `validate.sh` após cada modificação de configuração.
+
 ### Fase 1 {#first-phase}
 
 Se uma diretiva não for incluir na lista de permissões, a ferramenta registrará um erro e retornará um código de saída diferente de zero. Além disso, ele verifica ainda mais todos os arquivos com padrão `conf.dispatcher.d/enabled_farms/*.farm` e verifica se:
@@ -418,6 +422,42 @@ Os níveis de log desses módulos são definidos pelas variáveis `DISP_LOG_LEVE
 Ao executar o Dispatcher localmente, os logs são impressos diretamente na saída do terminal. Na maioria das vezes, você deseja que esses logs estejam em DEBUG, o que pode ser feito transmitindo o nível de Depuração como parâmetro ao executar o Docker. Por exemplo: `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh src docker.for.mac.localhost:4503 8080`.
 
 Os logs para ambientes de nuvem são expostos por meio do serviço de registro disponível no Cloud Manager.
+
+### Carregamento e validação automáticos {#automatic-loading}
+
+>[!NOTE]
+>
+>Devido a uma limitação do sistema operacional Windows, esse recurso está disponível somente para usuários Linux.
+
+Em vez de executar a validação local (`validate.sh`) e iniciando o contêiner do docker (`docker_run.sh`) sempre que a configuração for modificada, você poderá executar a função `docker_run_hot_reload.sh` script.  O script busca qualquer alteração na configuração e a recarrega automaticamente e executa novamente a validação. Ao usar essa opção, é possível economizar um tempo significativo ao depurar.
+
+Você pode executar o script usando o seguinte comando: `./bin/docker_run_hot_reload.sh src/dispatcher host.docker.internal:4503 8080`
+
+Observe que as primeiras linhas de saída serão semelhantes ao que seria executado `docker_run.sh`, por exemplo:
+
+```
+~ bin/docker_run_hot_reload.sh src host.docker.internal:8081 8082
+opt-in USE_SOURCES_DIRECTLY marker file detected
+Running script /docker_entrypoint.d/10-check-environment.sh
+Running script /docker_entrypoint.d/15-check-pod-name.sh
+Running script /docker_entrypoint.d/20-create-docroots.sh
+Running script /docker_entrypoint.d/30-wait-for-backend.sh
+Waiting until host.docker.internal is available
+host.docker.internal resolves to 192.168.65.2
+Running script /docker_entrypoint.d/40-generate-allowed-clients.sh
+Running script /docker_entrypoint.d/50-check-expiration.sh
+Running script /docker_entrypoint.d/60-check-loglevel.sh
+Running script /docker_entrypoint.d/70-check-forwarded-host-secret.sh
+Running script /docker_entrypoint.d/80-frontend-domain.sh
+Running script /docker_entrypoint.d/zzz-import-sdk-config.sh
+WARN Mon Jul  4 09:53:54 UTC 2022: Pseudo symlink conf.d seems to point to a non-existing file!
+INFO Mon Jul  4 09:53:55 UTC 2022: Copied customer configuration to /etc/httpd.
+INFO Mon Jul  4 09:53:55 UTC 2022: Start testing
+Cloud manager validator 2.0.43
+2022/07/04 09:53:55 No issues found
+INFO Mon Jul  4 09:53:55 UTC 2022: Testing with fresh base configuration files.
+INFO Mon Jul  4 09:53:55 UTC 2022: Apache httpd informationServer version: Apache/2.4.54 (Unix)
+```
 
 ## Diferentes configurações do Dispatcher por ambiente {#different-dispatcher-configurations-per-environment}
 
