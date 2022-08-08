@@ -9,21 +9,43 @@ topic-tags: author
 discoiquuid: 76d178d1-8e40-41b3-80d4-66b2f8d04211
 docset: aem65
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: 73953a3d71f3328def3bd4c1f03516b4839695ea
+exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
+source-git-commit: 76f13cb4236b8c7eb515d647a1cede6fa2cf4799
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '639'
 ht-degree: 0%
 
 ---
-
 
 # Aplicar assinaturas eletrônicas a um formulário usando assinaturas do scribble{#apply-electronic-signatures-to-a-form-using-deprecated-scribble-signatures}
 
 Você pode usar o **Assinatura do Scribble** componente e **Etapa de assinatura** componente para desenhar (Scribble) assinatura em um formulário adaptável. O componente Etapa de assinatura exibe uma versão PDF do formulário adaptável. Você precisa ter uma opção Documento de registro ativada ou um modelo de formulário baseado em Adaptive Forms para usar o componente Etapa de assinatura.
 
-Ambos os componentes fornecem uma janela, conforme exibido abaixo, para assinar um formulário. Você também pode clicar no ícone de geolocalização ![aem_6_3_geolocation](assets/aem_6_3_geolocation.png) para adicionar geolocalização à assinatura.
-
 ![Caixa de diálogo de sinal de rabisco](assets/scribble-signature.png)
+
+## Várias opções disponíveis na Janela de assinatura
+
+* **A:** Clique no botão **Pincel de tinta** ícone para desenhar sua assinatura na tela.
+* **B:** Clique no botão **Limpar** ícone para limpar a assinatura na tela.
+* **C:** Clique no botão **Geolocalização** ícone para adicionar a geolocalização junto com a assinatura.
+* **D:** Clique no botão **Teclado** ícone para digitar seu nome na tela.
+
+Depois de tocar em Concluído ![aem_forms_save](assets/aem_forms_save.png) na janela Scribble signature , não é possível editar a assinatura. Caso deseje editar a assinatura, desconsidere a assinatura atual e assine novamente usando a opção Pincel/teclado acima.
+
+Toque em **Configurar** ![](assets/configure.png) ícone para definir a proporção da tela de assinatura do Scribble.
+* Quando a proporção da tela de assinatura do Scribble for menor que 1, as informações de geolocalização serão adicionadas na parte inferior da tela de assinatura do Scribble.
+
+
+* Quando a proporção da tela de assinatura do Scribble for superior a 1, as informações de geolocalização serão adicionadas ao lado direito da tela de assinatura do Scribble.
+
+
+![rabisco de assinatura inferior](assets/scribble-signature-aspectratio.PNG)
+
+
+
+>[!NOTE]
+>
+>As assinaturas são sempre salvas em um formato PNG.
 
 ## Configurar um formulário adaptável para usar a assinatura do Scribble {#configure-an-adaptive-form-to-use-scribble-signature}
 
@@ -36,7 +58,7 @@ Ambos os componentes fornecem uma janela, conforme exibido abaixo, para assinar 
    >
    >O componente Etapa de assinatura ocupa a largura total disponível para o formulário. É recomendável não ter nenhum outro componente na seção que contenha o componente Etapa de assinatura.
 
-1. No navegador Conteúdo, toque em **Contêiner de formulário** e toque no **Configurar** ![](assets/configure.png) ícone . Ele abre o navegador de propriedades e exibe as propriedades do contêiner do Formulário adaptável. Navegar para **Contêiner de formulário adaptável** > **Assinatura eletrônica** e desmarque a opção **Ativar o Adobe Sign** opção. Toque em Concluído ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) para salvar as alterações.
+1. No navegador Conteúdo, toque em **Contêiner de formulário** e toque no **Configurar** ![](assets/configure.png) ícone . Ele abre o navegador de propriedades e exibe as propriedades do contêiner do Formulário adaptável. Navegar para **Contêiner de formulário adaptável** > **Assinatura eletrônica** e desmarque a opção **Ativar o Adobe Sign** opção. Toque em Concluído ![aem_forms_save](assets/aem_forms_save.png) para salvar as alterações.
 
    >[!NOTE]
    >
@@ -52,7 +74,7 @@ Ambos os componentes fornecem uma janela, conforme exibido abaixo, para assinar 
 
    * **Classe CSS**: Especifique a classe CSS da biblioteca do cliente, se houver. Recomenda-se a utilização de [temas](themes.md) e [estilos em linha](inline-style-adaptive-forms.md) em vez de Classe CSS.
 
-   Toque em Concluído ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) para salvar as alterações. A Assinatura é configurada com êxito.
+   Toque em Concluído ![aem_forms_save](assets/aem_forms_save.png) para salvar as alterações. A Assinatura é configurada com êxito.
 
    Agora, quando você preenche um formulário, uma versão PDF do formulário adaptável é exibida e opções para assinar o documento PDF são fornecidas. Para obter informações detalhadas, consulte [Assinar um formulário adaptável usando a assinatura do Scribble](signing-forms-using-scribble.md#sign-an-adaptive-form-using-scribble-signature).
 
@@ -62,13 +84,12 @@ Ambos os componentes fornecem uma janela, conforme exibido abaixo, para assinar 
 
    ![Tela de assinatura para a página do EchoSign](assets/esignscribblesign.jpg)
 
-1. Clique em **[!UICONTROL Sign]**. A caixa de diálogo de sinal de rabisco é exibida. Assine o formulário e clique em Concluído ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) para salvar a assinatura.
+1. Clique em **[!UICONTROL Sign]**. A caixa de diálogo de sinal de rabisco é exibida. Assine o formulário e clique em Concluído ![aem_forms_save](assets/aem_forms_save.png) para salvar a assinatura.
 
-   ![Caixa de diálogo de sinal de rabisco](assets/scribblewidget.jpg)
+   ![Caixa de diálogo de sinal de rabisco](assets/scribblewidget.png)
 
 1. Clique em concluir para concluir o processo de assinatura.
 
    ![Concluir o processo de assinatura](assets/scribblecomplete.jpg)
 
 As assinaturas são adicionadas ao formulário e o controle do formulário é movido para o próximo painel.
-

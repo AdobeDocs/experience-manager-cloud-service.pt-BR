@@ -3,22 +3,15 @@ title: Integrar o Adobe Analytics com a automação de configuração do Experie
 description: A Automação de configuração do Experience Cloud oferece uma maneira simples e automatizada de integrar e instrumentar o Experience Manager Sites com o Experience Platform Launch e o Adobe Analytics usando uma interface simples de assistente. Saiba como usar a configuração automatizada em seu próprio site.
 feature: Administering
 role: Admin
-hide: true
-hidefromtoc: true
-index: false
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: ht
-source-wordcount: '639'
-ht-degree: 100%
+source-git-commit: 8b8811decee087291b74fa0e3839991f6a7f3850
+workflow-type: tm+mt
+source-wordcount: '756'
+ht-degree: 83%
 
 ---
 
 # Integrar o Adobe Analytics com a automação de configuração do Experience Cloud {#integrate-adobe-analytics-automation-setup}
-
->[!CAUTION]
->
-> No momento, essa funcionalidade está na versão beta interna. A versão do Target será lançada no primeiro trimestre de 2022.
 
 A Automação de configuração do Experience Cloud oferece uma maneira simples e automatizada de integrar e instrumentar o Experience Manager Sites com o Experience Platform Launch e o Adobe Analytics usando uma interface simples de assistente.
 
@@ -26,11 +19,27 @@ Nunca foi tão simples integrar o Adobe Analytics com o AEM Sites. Com a Automa�
 
 Este vídeo explica como um site do AEM pode ser integrado ao Experience Platform Launch e ao Analytics usando a Automação de configuração do Experience Cloud:
 
->[!VIDEO](https://video.tv.adobe.com/v/339605/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/345372/?quality=12)
 
 ## Requisitos
 
 A configuração da automação foi projetada para funcionar prontamente com um site do AEM criado com o uso dos [Componentes principais do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR), com a [Camada de dados do cliente Adobe](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=pt_BR) habilitada. É possível gerar um novo site que tenha esses recursos habilitados automaticamente usando o [Arquétipo de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt_BR) ou criando um site usando um [Modelo de site](/help/journey-sites/quick-site/create-site.md).
+
+## Pré-requisitos {#prerequisites}
+
+Antes de usar esse recurso, é importante seguir estas instruções para garantir que os serviços pré-requisitos tenham sido configurados corretamente em seu ambiente:
+
+1. Faça logon no Adobe Admin Console (https://adminconsole.adobe.com/).
+1. Verifique se a ID organizacional IMS adequada está selecionada no canto superior direito.
+1. Clique na opção de navegação Produtos .
+1. Verifique se o &quot;Adobe Experience Manager as a Cloud Service&quot; foi provisionado para a IMS Org.
+1. Verifique se o &quot;Adobe Analytics&quot; foi provisionado para a IMS Org.
+1. Vá para o Cloud Manager (https://experience.adobe.com/cloud-manager).
+1. Selecione o Programa apropriado.
+1. Verifique se Environment está na versão mais recente do Cloud Service (caso contrário, selecione Update in the menu options) (Atualizar nas opções do menu).
+1. Execute um pipeline de Pilha completa no Cloud Manager.
+
+O ambiente agora deve estar pronto para a Automação de configuração do Experience Cloud.
 
 ## Como configurar
 

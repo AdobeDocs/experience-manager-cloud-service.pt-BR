@@ -1,0 +1,55 @@
+---
+title: Configurar restrições de upload de ativos
+description: 'Configure os ativos Adobe Experience Manager para restringir o tipo de ativos que os usuários podem fazer upload com base no tipo MIME. Ajuda a evitar uploads acidentais de formato indesejado e arquivos mal-intencionados. '
+source-git-commit: 3be29e4f76b53b4be7815e50ec42c627fec84b68
+workflow-type: tm+mt
+source-wordcount: '291'
+ht-degree: 1%
+
+---
+
+# Configurar restrições de upload de ativos {#configure-asset-upload-restrictions}
+
+Você pode configurar os ativos Adobe Experience Manager para restringir o tipo de ativos que os usuários podem fazer upload com base no tipo MIME.
+
+>[!IMPORTANT]
+>
+>Por padrão, o Experience Manager Assets permite que os usuários façam upload de ativos de todos os tipos MIME. No entanto, você pode definir as configurações para restringir os usuários a carregarem arquivos de tipos MIME específicos apenas.
+
+## Pré-requisitos {#prerequisites-asset-upload-restrictions}
+
+Você deve ter privilégios de administrador para configurar restrições de upload de ativos.
+
+## Aplicar restrições para uploads de ativos {#apply-restrictions-asset-uploadsssssss}
+
+Para configurar [!DNL Experience Manager] para restringir usuários a fazer upload de arquivos de tipos MIME específicos:
+
+1. Navegar para **[!UICONTROL Ferramentas > Ativos > Configurações de ativos]**.
+
+1. Clique em **[!UICONTROL Restrições de upload]**.
+
+1. Clique em **[!UICONTROL Adicionar]** para definir os tipos MIME permitidos.
+
+1. Especifique o tipo MIME na caixa de texto. Você pode clicar em **[!UICONTROL Adicionar]** novamente para especificar tipos MIME mais permitidos. Você também pode clicar em ![ícone excluir](assets/delete-icon.svg) para excluir qualquer tipo MIME da lista.
+
+1. Clique em **[!UICONTROL Salvar]**.
+
+**Exemplo 1: Permitir o upload de todas as imagens e arquivos PDF para o Experience Manager Assets**
+
+Para permitir o upload de imagens em todos os formatos e arquivos PDF para o Experience Manager Assets, faça o seguinte:
+
+![Restrições de upload de ativos](assets/asset-upload-restrictions.png)
+
+`image/*` já que o tipo MIME permite o upload de imagens em todos os formatos. `application/pdf` já que o tipo MIME permite o upload de arquivos PDF para o Experience Manager Assets.
+
+**Exemplo 2: Permitir o upload de formatos de imagem específicos para o Experience Manager Assets**
+
+Para adicionar formatos de imagem específicos aos tipos MIME permitidos e restringir o upload de todos os outros formatos de ativo, faça o seguinte:
+
+![Restrições de ativos](assets/asset-restrictions.png)
+
+Com base nas configurações mostradas na imagem, é possível fazer upload de imagens nos formatos .JPG, .PNG e .GIF para o Experience Manager Assets.
+
+
+
+

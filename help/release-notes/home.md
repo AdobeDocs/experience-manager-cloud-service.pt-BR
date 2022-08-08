@@ -2,10 +2,10 @@
 title: Notas de versão do Adobe Experience Manager (AEM) as a Cloud Service.
 description: Notas de versão do Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: 57e1f39394f501b8fc2ab8ff5f7d12f6365016e9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '616'
+ht-degree: 95%
 
 ---
 
@@ -13,16 +13,16 @@ ht-degree: 0%
 
 | Produto | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| Versão | 2022.6.0 |
+| Versão | 2022.7.0 |
 | Tipo | Atualizações contínuas |
 | Data de disponibilidade | Atualização contínua |
 
 ## Como se preparar para uma versão {#how-to-prepare}
 
-Com o modelo de liberação contínua no [!DNL Adobe Experience Manager] as a Cloud Service, o aplicativo é atualizado automaticamente de forma contínua. Há dois tipos de atualizações: versões de recursos e atualizações críticas.
+Com o modelo de liberação contínua no [!DNL Adobe Experience Manager] as a Cloud Service, o aplicativo é atualizado automaticamente de forma contínua. Há dois tipos de atualizações, versões de recursos e versões de manutenção:
 
 * As versões de recursos são liberadas com uma frequência mensal previsível e são focadas em novos recursos e inovações de produtos.
-* As atualizações críticas são liberadas com frequência e seu foco está em atualizações de segurança, correções de erros e aprimoramentos de desempenho. Isso garante que o [!DNL Adobe Experience Manager] as a Cloud Service esteja sempre atualizado com qualquer correção crítica.
+* As versões de manutenção são feitas com frequência e são focadas em atualizações de segurança, correções de erros e aprimoramentos de desempenho. Isso garante que o [!DNL Adobe Experience Manager] as a Cloud Service esteja sempre atualizado com qualquer correção crítica.
 
 Além da velocidade da inovação, o [!DNL Adobe Experience Manager] as a Cloud Service também oferece a flexibilidade de pré-visualizar os recursos futuros com um mês de antecedência, antes que eles sejam lançados para produção. Isso permite avaliar o impacto de uma versão futura na organização, testando a condução dos recursos em seu próprio ambiente personalizado e treinando/preparando os usuários internos com bastante antecedência.
 

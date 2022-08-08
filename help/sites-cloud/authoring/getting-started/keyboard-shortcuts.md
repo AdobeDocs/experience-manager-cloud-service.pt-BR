@@ -2,16 +2,16 @@
 title: Atalhos de teclado para Consoles
 description: Poupe tempo durante a criação usando estes atalhos de teclado
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
-source-git-commit: 9fe87a61315019c23d90b85154af6c89e1528b0d
-workflow-type: ht
-source-wordcount: '346'
-ht-degree: 100%
+source-git-commit: 7c9a8765c1d193a880ad4352f20660249effa881
+workflow-type: tm+mt
+source-wordcount: '373'
+ht-degree: 92%
 
 ---
 
 # Atalhos de teclado para Consoles   {#keyboard-shortcuts-for-consoles}
 
-Os seguintes atalhos estão disponíveis para os consoles Sites, Ativos, Usuários, Grupos, Projetos e Fragmentos de experiência.
+Os seguintes atalhos estão disponíveis para os consoles Sites, Ativos, Usuários, Grupos, Projetos e Fragmentos de experiência. Também há atalhos específicos para a variável [Console Fragmentos de conteúdo](#keyboard-shortcuts-for-the-content-fragments-console).
 
 | Local | Atalho | Descrição |
 |---|---|---|
@@ -81,3 +81,7 @@ Para os usuários que não usam atalhos de teclado ou que têm certos requisitos
 ## Atalhos de teclado para o Editor de páginas {#keyboard-shortcuts-for-the-page-editor}
 
 Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns aplicam-se ao uso dos consoles, outros à [edição de página](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
+
+## Atalhos de teclado para o console Fragmentos de conteúdo {#keyboard-shortcuts-for-the-content-fragments-console}
+
+Alguns atalhos de teclado se aplicam à variável [Console Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)

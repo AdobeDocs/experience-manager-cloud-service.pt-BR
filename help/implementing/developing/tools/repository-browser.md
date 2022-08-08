@@ -4,10 +4,10 @@ seo-title: Repository Browser
 description: O navegador de repositório fornece uma visualização somente leitura no repositório para todos os ambientes nos níveis de criação, publicação e visualização.
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
-source-git-commit: b4d28a0c827fb07d6f731118078ecdf448e2f58b
+source-git-commit: 46d8d78bd14f6e311d62266aa19825f82f82030d
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '899'
+ht-degree: 2%
 
 ---
 
@@ -66,17 +66,13 @@ Você pode usar o painel de navegação esquerdo para navegar pela hierarquia de
 
 ![repobrowser3](/help/implementing/developing/tools/assets/repobrowser3.png)
 
-<!-- Alexandru: temporarily commenting this out, please don't delete. 
-
-Alternatively, you can navigate directly to a path by entering it in the **Path** field, as shown below. This will also expand its location in the content hierarcy view on the left.
+Como alternativa, você pode navegar diretamente para um caminho inserindo-o no **Caminho** , conforme mostrado abaixo. Isso também expandirá sua localização na exibição da hierarquia de conteúdo à esquerda.
 
 ![repobrowser14](/help/implementing/developing/tools/assets/repobrowser14.png)
 
-Whenever you click a folder on the left, the Path field automatically populates with its location. This is useful for copying and pasting the value for later usage.
+Sempre que você clica em uma pasta à esquerda, o campo Caminho é preenchido automaticamente com sua localização. Isso é útil para copiar e colar o valor para uso posterior.
 
-Additionally, when you click on a folder, the URL is dynamically modified to include the path to that folder. This allows for bookmarkable URLs.
-
--->
+Além disso, ao clicar em uma pasta, o URL é modificado dinamicamente para incluir o caminho para essa pasta. Isso permite URLs marcáveis.
 
 Por padrão, para publicar, o Navegador de Repositório mostrará somente conteúdo público, portanto determinadas pastas como `/conf` ou `/home` não estará visível.
 

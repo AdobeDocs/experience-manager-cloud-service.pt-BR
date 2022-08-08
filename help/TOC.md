@@ -8,9 +8,9 @@ user-guide-description: Recursos de autoajuda e links de documentação da visã
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: d0e2dda682a45483964336aac2c0d3f87b4ca833
+source-git-commit: 3fc0a6626fdf0addfdc572560c01eac3296c5012
 workflow-type: tm+mt
-source-wordcount: '3697'
+source-wordcount: '3709'
 ht-degree: 92%
 
 ---
@@ -35,6 +35,7 @@ ht-degree: 92%
    + Notas de versão gerais do AEMaaCS {#release-notes}
       + [Notas de versão atuais](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2022 {#2022}
+         + [Notas da versão 2022.6.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-6-0.md)
          + [Notas da versão 2022.5.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-5-0.md)
          + [Notas da versão 2022.4.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-4-0.md)
          + [Notas da versão 2022.3.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-3-0.md)
@@ -290,6 +291,7 @@ ht-degree: 92%
          + [Markdown](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md)
          + [Árvore de estrutura](/help/sites-cloud/administering/content-fragments/content-fragments-structure-tree.md)
          + [Visualização - Representação JSON](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
+         + [Console Fragmentos de conteúdo - Atalhos de teclado](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)
       + Criação do site {#site-creation}
          + [Criação de um novo site](/help/sites-cloud/administering/site-creation/create-site.md)
          + [Ativar pipeline front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
@@ -396,6 +398,7 @@ ht-degree: 92%
       + [Metadados XMP](/help/assets/xmp-metadata.md)
       + [Recursos MediaLibrary](/help/assets/medialibrary.md)
       + [Importar e exportar metadados de ativos](/help/assets/metadata-import-export.md)
+      + [Configurar restrições de upload de ativos](/help/assets/configure-asset-upload-restrictions.md)
    + Compartilhar e distribuir ativos {#brand-portal}
       + [Configurar o  [!DNL Assets]  com o  [!DNL Brand Portal]](/help/assets/configure-aem-assets-with-brand-portal.md)
       + [Publicar ativos no  [!DNL Brand Portal]](/help/assets/publish-to-brand-portal.md)
