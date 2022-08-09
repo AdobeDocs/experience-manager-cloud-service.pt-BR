@@ -1,13 +1,13 @@
 ---
 title: O que é um CMS sem periféricos?
 description: Saiba mais sobre o CMS sem periféricos. Como funcionam? Quais são as alternativas e as diferenças? Por que você deseja usar um CMS sem cabeçalho?
-source-git-commit: 35064ef7d9a4a3f2368667be02b11840b29d56f0
+exl-id: 53f24f69-ad49-4b8e-9a91-36cd64c1f2b9
+source-git-commit: 5663b1224dddcb2db9e0ca139bb8cf6b43787fab
 workflow-type: tm+mt
-source-wordcount: '754'
+source-wordcount: '742'
 ht-degree: 0%
 
 ---
-
 
 # O que é um CMS sem periféricos? {#what-is-a-headless-cms}
 
@@ -31,11 +31,7 @@ Muito poderoso, fornecendo controle total do conteúdo e da formatação, mas pe
 
 Com um sistema de gerenciamento de conteúdo sem periféricos, o back-end e o front-end agora são dissociados.
 
-A parte sem periféricos é o back-end do conteúdo.
-
-* &quot;*Um sistema de gerenciamento de conteúdo sem periféricos, ou CMS sem periféricos, é um sistema de gerenciamento de conteúdo (CMS) de back-end criado desde o início como um repositório de conteúdo que torna o conteúdo acessível por meio de uma API para exibição em qualquer dispositivo.*
-
-   Consulte [Wikipedia](https://en.wikipedia.org/wiki/Headless_content_management_system).
+A parte sem periféricos é o back-end de conteúdo, já que um Sistema de Gerenciamento de Conteúdo sem periféricos (CMS) é um sistema de gerenciamento de conteúdo somente de back-end, projetado e criado explicitamente como um repositório de conteúdo que torna o conteúdo acessível por meio de uma API, para exibição em qualquer dispositivo.
 
 O front-end, que é desenvolvido e mantido de maneira independente, busca conteúdo do back-end sem periféricos usando uma API de entrega de conteúdo, normalmente no formato JSON. Por exemplo, pode ser como um aplicativo React ou Angular (Aplicativo de página única (SPA)).
 
