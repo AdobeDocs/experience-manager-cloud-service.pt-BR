@@ -3,9 +3,9 @@ title: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud S
 description: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: a3e18349c3cf2240cc68275a3862abeb75ea372a
+source-git-commit: f947a328897387d37e2092580e6992f14a344eb2
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '956'
 ht-degree: 15%
 
 ---
@@ -64,7 +64,7 @@ Agora você pode configurar os Ativos Adobe Experience Manager para [restringir 
 
 ### Novos recursos no [!DNL Forms] {#forms-features}
 
-* **Suporte de entrada de teclado para assinaturas Scribble**: Os Forms adaptáveis são cada vez mais usados em dispositivos de toque, e um requisito comum é o suporte a assinaturas. Assinar documentos em dispositivos de toque se tornou uma maneira aceita de assinar formulários. O Adaptive Forms tem suporte nativo para Assinaturas do Scribble e Adobe Sign para esses casos de uso. Agora, juntamente com outras opções já suportadas, você também pode usar o teclado para Assinaturas do Scribble em um formulário adaptável. Também ajuda a melhorar a conformidade de acessibilidade.
+* **[Suporte de entrada de teclado para assinaturas Scribble](/help/forms/signing-forms-using-scribble.md)**: Os Forms adaptáveis são cada vez mais usados em dispositivos de toque, e um requisito comum é o suporte a assinaturas. Assinar documentos em dispositivos de toque se tornou uma maneira aceita de assinar formulários. O Adaptive Forms tem suporte nativo para Assinaturas do Scribble e Adobe Sign para esses casos de uso. Agora, juntamente com outras opções já suportadas, você também pode usar o teclado para Assinaturas do Scribble em um formulário adaptável. Também ajuda a melhorar a conformidade de acessibilidade.
 
 ![Suporte de entrada de teclado para assinaturas Scribble no iphone](/help/release-notes/assets/scribble-keyboard-mobile.png)
 
@@ -72,13 +72,17 @@ Agora você pode configurar os Ativos Adobe Experience Manager para [restringir 
 
 ### Novos recursos disponíveis no canal de pré-lançamento do [!DNL Forms] {#prerelease-features-forms}
 
-<!-- * **[Launch Adaptive Form creation wizard from embed form component](/help/forms/using/embed-adaptive-form-aem-sites.md)**: You can now launch Adaptive Form creation wizard from embed form component. It helps improve content and forms authoring workflows for Sites and Forms practitioners trying to add enrollment experiences to a web page. 
+<!-- 
 
-![Keyboard input support for Scribble signatures on iphone](/help/release-notes/assets/froms-container.png) -->
+* **[Launch Adaptive Form creation wizard from embed form component](/help/forms/using/embed-adaptive-form-aem-sites.md)**: You can now launch Adaptive Form creation wizard from embed form component. It helps improve content and forms authoring workflows for Sites and Forms practitioners trying to add enrollment experiences to a web page. 
 
-* **Invocar - Uma etapa AEM do fluxo de trabalho**: Document Description XML (DDX) é uma linguagem de marcação declarativa cujos elementos representam blocos de construção de documentos. Esses blocos fundamentais incluem documentos PDF e XDP e outros elementos, como comentários, marcadores e texto estilizado. Os documentos DDX são modelos para os documentos e descrevem as características desejadas dos documentos de origem que devem aparecer nos documentos resultantes. Um único DDX pode ser usado com um intervalo de documentos de origem. Você pode usar a etapa Chamar e o Fluxo de trabalho AEM para executar várias operações, como montar documentos de desmontagem, criar e modificar o Acrobat e o XFA Forms e outras operações descritas em [Referência DDX](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) documentação.
+![Keyboard input support for Scribble signatures on iphone](/help/release-notes/assets/froms-container.png) 
 
-* **Converter em PDF/A - uma etapa do fluxo de trabalho AEM**: PDF/A é um formato de arquivo para a preservação de longo prazo do conteúdo do documento, todas as fontes são incorporadas e o arquivo é descompactado. Agora, você pode usar a etapa Converter em PDF/A e o Fluxo de trabalho AEM para converter documentos ou arquivos em qualquer formato no formato PDF/A.
+-->
+
+* **[Invocar DDX - Uma etapa AEM do fluxo de trabalho](/help/forms/aem-forms-workflow-step-reference.md#invokeddx)**: Document Description XML (DDX) é uma linguagem de marcação declarativa cujos elementos representam blocos de construção de documentos. Esses blocos fundamentais incluem documentos PDF e XDP e outros elementos, como comentários, marcadores e texto estilizado. Os documentos DDX são modelos para os documentos e descrevem as características desejadas dos documentos de origem que devem aparecer nos documentos resultantes. Um único DDX pode ser usado com um intervalo de documentos de origem. Você pode usar a etapa Chamar e o Fluxo de trabalho AEM para executar várias operações, como montar documentos de desmontagem, criar e modificar o Acrobat e o XFA Forms e outras operações descritas em [Referência DDX](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) documentação.
+
+* **[Converter em PDF/A - uma etapa do fluxo de trabalho AEM](/help/forms/aem-forms-workflow-step-reference.md##convert-pdfa)**: PDF/A é um formato de arquivo para a preservação de longo prazo do conteúdo do documento, todas as fontes são incorporadas e o arquivo é descompactado. Agora, você pode usar a etapa Converter em PDF/A e o Fluxo de trabalho AEM para converter documentos ou arquivos em qualquer formato no formato PDF/A.
 
 
 ## Complemento CIF {#cloud-services-cif}
