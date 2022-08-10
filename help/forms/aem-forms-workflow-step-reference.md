@@ -3,9 +3,9 @@ title: 'Como atribuir um fluxo de trabalho a outro usuário, enviar email, usar 
 description: Os fluxos de trabalho centrados no Forms permitem que você crie rapidamente os fluxos de trabalho baseados no Adaptive Forms. Você pode usar o Adobe Sign para assinar documentos por email, criar processos comerciais baseados em formulários, recuperar e enviar dados para várias fontes de dados e enviar notificações por email
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: c11b0ac04885d4363b844d3b7743396b996d0548
+source-git-commit: a8dae80f79e32117341519b31c389f8fc30b5957
 workflow-type: tm+mt
-source-wordcount: '6131'
+source-wordcount: '6132'
 ht-degree: 0%
 
 ---
@@ -169,7 +169,7 @@ A etapa converter em PDF/A tem as seguintes propriedades:
 **[!UICONTROL Documento de entrada]**: O documento de entrada pode ser relativo à carga, ter um caminho absoluto, pode ser fornecido como carga ou armazenado em uma variável do tipo de dados Documento.
 
 **[!UICONTROL Opções de conversão]**: Usando essa propriedade, as configurações para converter documentos PDF para documentos PDF/A são especificadas. Várias opções disponíveis nesta guia são:
-* **[!UICONTROL Conformidade]**: Especifica o padrão ao qual o documento PDF/A de saída deve estar em conformidade. Ele suporta diferentes padrões de PDF, como PDF/A-1b, PDF/A-2b e PDF/A-3b.
+* **[!UICONTROL Conformidade]**: Especifica o padrão ao qual o documento PDF/A de saída deve estar em conformidade. Ele suporta diferentes padrões de PDF, como PDF/A-1b, PDF/A-2b ou PDF/A-3b.
 * **[!UICONTROL Nível de Resultado]**: Especifica o nível do resultado como PassFail, Summary ou Detailed, para a saída da conversão.
 * **[!UICONTROL Espaço da cor]**: Especifica o espaço de cores predefinido como S_RGB, COATED_FOGRA27, JAPAN_COLOR_COATED ou SWOP, que pode ser usado para arquivos PDF/A de saída.
 * **[!UICONTROL Conteúdo opcional]**: Permitir que objetos gráficos e/ou anotações específicos sejam visíveis no documento PDF de saída/A, somente quando um conjunto de critérios especificado for atendido.
