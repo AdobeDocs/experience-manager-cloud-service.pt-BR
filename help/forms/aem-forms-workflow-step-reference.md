@@ -3,9 +3,9 @@ title: 'Como atribuir um fluxo de trabalho a outro usuário, enviar email, usar 
 description: Os fluxos de trabalho centrados no Forms permitem que você crie rapidamente os fluxos de trabalho baseados no Adaptive Forms. Você pode usar o Adobe Sign para assinar documentos por email, criar processos comerciais baseados em formulários, recuperar e enviar dados para várias fontes de dados e enviar notificações por email
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: ebd7942cfaa7717d68ad039f3e0301cb52cbcec7
+source-git-commit: c11b0ac04885d4363b844d3b7743396b996d0548
 workflow-type: tm+mt
-source-wordcount: '6098'
+source-wordcount: '6131'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ Você também pode usar o componente para controlar o comportamento da tarefa. P
 
 * **[!UICONTROL Caminho do formulário adaptável]**: Especifique o caminho do formulário adaptável. É possível usar o formulário adaptável enviado para o fluxo de trabalho, disponível em um caminho absoluto, ou recuperar o formulário adaptável de um caminho armazenado em uma variável do tipo de dados da string.
 * **[!UICONTROL Selecionar PDF de entrada usando]**: Especifique o caminho de um documento PDF não interativo. O campo fica disponível ao escolher um documento de PDF não interativo no campo Tipo. Você pode selecionar o PDF de entrada usando o caminho relativo à carga útil, salvo em um caminho absoluto ou usando uma variável do tipo de dados Documento. Por exemplo, [Diretório_de_carga]/Workflow/PDF/credit-card.pdf. O caminho não existe no repositório crx. Um administrador cria o caminho antes de usá-lo. Você precisa ter uma opção Documento de registro ativada ou o modelo de formulário baseado em Adaptive Forms para usar a opção PDF path .
-* **[!UICONTROL Para tarefas concluídas, renderize o Formulário adaptável como]**: Quando uma tarefa é marcada como concluída, é possível renderizar o Formulário adaptável como um formulário adaptável somente leitura ou um documento PDF. É necessário ativar uma opção Documento de registro ou Forms adaptável baseado em modelo de formulário para renderizar o Formulário adaptável como Documento de registro.
+* **[!UICONTROL Para tarefas concluídas, renderize o Formulário adaptável como]**: Quando uma tarefa é marcada como concluída, é possível renderizar o Formulário adaptável como um formulário adaptável somente leitura ou um documento PDF. É necessário ativar uma opção Documento de registro ou Forms adaptável baseado no modelo de formulário para renderizar o Formulário adaptável como Documento de registro.
 * **[!UICONTROL Pré-preenchido]**: Os seguintes campos listados abaixo servem como entradas para a tarefa:
 
    * **[!UICONTROL Selecione o arquivo de dados de entrada usando]**: Caminho do arquivo de dados de entrada (.json, .xml, .doc ou modelo de dados de formulário). Você pode recuperar o arquivo de dados de entrada usando um caminho relativo à carga útil ou recuperar o arquivo armazenado em uma variável do tipo de dados Document, XML ou JSON. Por exemplo, o arquivo contém os dados enviados para o formulário por meio de um aplicativo AEM Caixa de entrada. Um caminho de exemplo é [Diretório_de_carga]/workflow/data.
@@ -169,10 +169,10 @@ A etapa converter em PDF/A tem as seguintes propriedades:
 **[!UICONTROL Documento de entrada]**: O documento de entrada pode ser relativo à carga, ter um caminho absoluto, pode ser fornecido como carga ou armazenado em uma variável do tipo de dados Documento.
 
 **[!UICONTROL Opções de conversão]**: Usando essa propriedade, as configurações para converter documentos PDF para documentos PDF/A são especificadas. Várias opções disponíveis nesta guia são:
-* **[!UICONTROL Conformidade]**: Especifica os padrões que o documento PDF/A de saída deve atender.
+* **[!UICONTROL Conformidade]**: Especifica o padrão ao qual o documento PDF/A de saída deve estar em conformidade. Ele suporta diferentes padrões de PDF, como PDF/A-1b, PDF/A-2b e PDF/A-3b.
 * **[!UICONTROL Nível de Resultado]**: Especifica o nível do resultado como PassFail, Summary ou Detailed, para a saída da conversão.
-* **[!UICONTROL Espaço da cor]**: Especifica o espaço de cores predefinido que é usado para arquivos PDF/A de saída.
-* **[!UICONTROL Conteúdo opcional]**: Permite que objetos gráficos e/ou anotações específicos sejam visíveis no documento PDF/A de saída, somente quando um conjunto especificado de critérios é atendido.
+* **[!UICONTROL Espaço da cor]**: Especifica o espaço de cores predefinido como S_RGB, COATED_FOGRA27, JAPAN_COLOR_COATED ou SWOP, que pode ser usado para arquivos PDF/A de saída.
+* **[!UICONTROL Conteúdo opcional]**: Permitir que objetos gráficos e/ou anotações específicos sejam visíveis no documento PDF de saída/A, somente quando um conjunto de critérios especificado for atendido.
 
 **[!UICONTROL Documentos de saída]**: Especifica o local para salvar o arquivo de saída. O arquivo de saída pode ser salvo em um local relativo à carga, substitui a carga, se a carga for um arquivo ou em uma variável do tipo de dados Documento.
 
@@ -247,13 +247,13 @@ Document Description XML (DDX) é uma linguagem de marcação declarativa cujos 
 A etapa Chamar DDX tem as seguintes propriedades:
 
 **[!UICONTROL Documentos de entrada]**: Usado para definir as propriedades de um documento de entrada. Várias opções disponíveis nesta guia são:
-* **[!UICONTROL Especificar DDX usando]**: Especifica os documentos de entrada relativos à carga, têm um caminho absoluto, podem ser fornecidos como carga ou armazenados em uma variável do tipo de dados Documento.
-* **[!UICONTROL Criar mapa a partir da carga]**: Adiciona todos os documentos sob a pasta carga ao Mapa do Documento de Entrada para a API de chamada no Assembler. O nome do nó de cada documento é usado como uma chave no mapa.
+* **[!UICONTROL Especificar DDX usando]**: Especifica o documento de entrada relativo à carga, tem um caminho absoluto, pode ser fornecido como carga ou armazenado em uma variável do tipo de dados Documento.
+* **[!UICONTROL Criar mapa a partir da carga]**: Adicione todos os documentos sob a pasta carga ao Mapa do Documento de Entrada para a API de chamada no Assembler. O nome do nó de cada documento é usado como uma chave no mapa.
 * **[!UICONTROL Mapa do Documento de Entrada]**: A opção é usada para adicionar várias entradas usando **[!UICONTROL ADICIONAR]** botão. Cada entrada representa a chave do documento no mapa e a origem do documento.
 
 **[!UICONTROL Opções de ambiente]**: Essa opção é usada para definir configurações de processamento para invocar a API. Várias opções disponíveis nesta guia são:
 * **[!UICONTROL Validar somente]**: Verifica a validade do documento DDX de entrada.
-* **[!UICONTROL Falha no Erro]**: Verifica se o serviço invocar API falha, em caso de erro. Por padrão, seu valor é definido como False.
+* **[!UICONTROL Falha no Erro]**: Valor booleano para indicar se o serviço invocar API falha, em caso de erro ou não. Por padrão, seu valor é definido como False.
 * **[!UICONTROL Primeiro Número de Bates]**: Especifica o número, que é o autoincremento. Esse número de autoincremento é exibido em cada página consecutiva automaticamente.
 * **[!UICONTROL Estilo padrão]**: Define o estilo padrão do arquivo de saída.
 
