@@ -3,7 +3,7 @@ title: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud S
 description: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: f947a328897387d37e2092580e6992f14a344eb2
+source-git-commit: 2766a40f67edd08f25177fb0651773cd1547cedc
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 15%
@@ -109,7 +109,7 @@ Agora você pode configurar os Ativos Adobe Experience Manager para [restringir 
 
 ### AEM aprimoramentos as a Cloud Service das ferramentas do Dispatcher do SDK {#dispatcher-tools-enhancements}
 
-* O Apache pode ser iniciado com `update_sdk.sh` , que carregará e validará automaticamente quaisquer alterações subsequentes na configuração do apache e do dispatcher, melhorando assim a velocidade do desenvolvedor. Só há suporte para o modo flexível de ferramentas do dispatcher. Além disso, consulte [Depuração da configuração do Apache e Dispatcher](/help/implementing/dispatcher/validation-debug.md#automatic-loading) para obter detalhes adicionais sobre carregamento e validação automáticos.
+* O Apache pode ser iniciado com `docker_run_hot_reload.sh` , que carregará e validará automaticamente quaisquer alterações subsequentes na configuração do apache e do dispatcher, melhorando assim a velocidade do desenvolvedor. Só há suporte para o modo flexível de ferramentas do dispatcher. Além disso, consulte [Depuração da configuração do Apache e Dispatcher](/help/implementing/dispatcher/validation-debug.md#automatic-reloading) para obter detalhes adicionais sobre recarregamento e validação automáticos.
 * A configuração local do apache/dispatcher monitorará mais detalhadamente as alterações em ambientes de nuvem, aumentando a paridade entre os dois ambientes.
 
 ### Novos recursos disponíveis no canal de pré-lançamento do [!DNL Experience Manager] {#prerelease-features-foundation}
