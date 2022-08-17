@@ -3,9 +3,9 @@ title: Validação e depuração usando ferramentas do Dispatcher
 description: Validação e depuração usando ferramentas do Dispatcher
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 2766a40f67edd08f25177fb0651773cd1547cedc
+source-git-commit: 6b0fffb599d46a36270e98e0d818f33d5f97e955
 workflow-type: tm+mt
-source-wordcount: '2653'
+source-wordcount: '2655'
 ht-degree: 2%
 
 ---
@@ -427,7 +427,7 @@ Os logs para ambientes de nuvem são expostos por meio do serviço de registro d
 
 >[!NOTE]
 >
->Devido a uma limitação do sistema operacional Windows, esse recurso está disponível somente para usuários Linux.
+>Devido a uma limitação do sistema operacional Windows, esse recurso está disponível somente para usuários macOS e Linux.
 
 Em vez de executar a validação local (`validate.sh`) e iniciando o contêiner do docker (`docker_run.sh`) sempre que a configuração for modificada, você poderá executar a função `docker_run_hot_reload.sh` script.  O script busca qualquer alteração na configuração e a recarrega automaticamente e executa novamente a validação. Ao usar essa opção, é possível economizar um tempo significativo ao depurar.
 
