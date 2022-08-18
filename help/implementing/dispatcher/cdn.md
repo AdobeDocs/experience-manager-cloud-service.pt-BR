@@ -3,9 +3,9 @@ title: CDN no AEM as a Cloud Service
 description: CDN no AEM as a Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 472a4311372ce9a01730f7ced6d4b26018aae4b9
+source-git-commit: 9ac5426c71c2ed794b9e72c1eacd936b9aa8d70c
 workflow-type: tm+mt
-source-wordcount: '993'
+source-wordcount: '1042'
 ht-degree: 8%
 
 ---
@@ -70,6 +70,8 @@ Instruções de configuração:
    * Isso é necessário para que o Adobe CDN possa validar a origem das solicitações e transmitir a variável `X-Forwarded-*` cabeçalhos para o aplicativo de AEM. Por exemplo,`X-Forwarded-For` é usada para determinar o IP do cliente. Assim, torna-se da responsabilidade do chamador confiável (ou seja, o CDN gerenciado pelo cliente) garantir a correção da variável `X-Forwarded-*` cabeçalhos (consulte a nota abaixo).
    * Como opção, o acesso à entrada do Adobe CDN pode ser bloqueado quando um `X-AEM-Edge-Key` não está presente. Informe o Adobe se precisar de acesso direto à entrada do Adobe CDN (para ser bloqueado).
 
+Consulte a [Exemplos de configurações de fornecedor de CDN](#sample-configurations) para obter exemplos de configuração dos principais fornecedores de CDN.
+
 Antes de aceitar o tráfego ao vivo, você deve validar com suporte ao cliente Adobe que o roteamento de tráfego final está funcionando corretamente.
 
 Depois de obter o `X-AEM-Edge-Key`, é possível testar se a solicitação foi roteada corretamente da seguinte maneira.
@@ -99,6 +101,25 @@ Observe que, ao usar sua própria CDN, não há necessidade de instalar os domí
 Há um pequeno impacto no desempenho devido ao salto extra, embora o salto da CDN do cliente para a CDN gerenciada AEM provavelmente seja eficiente.
 
 Observe que essa configuração de CDN do cliente é compatível com o nível de publicação, mas não na frente do nível do autor.
+
+### Exemplos de configurações de fornecedor de CDN {#sample-configurations}
+
+Apresentamos abaixo vários exemplos de configuração de vários fornecedores líderes de CDN.
+
+**Akamai**
+
+![Akamai1](assets/akamai1.png "Akamai")
+![Akamai2](assets/akamai2.png "Akamai")
+
+**Amazon CloudFront**
+
+![CloudFront1](assets/cloudfront1.png "Amazon CloudFront")
+![CloudFront2](assets/cloudfront2.png "Amazon CloudFront")
+
+**Cloudflare**
+
+![Cloudflare1](assets/cloudflare1.png "Cloudflare")
+![Cloudflare2](assets/cloudflare2.png "Cloudflare")
 
 ## Cabeçalhos de geolocalização {#geo-headers}
 
