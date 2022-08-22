@@ -2,7 +2,7 @@
 title: Extrair conteúdo da origem
 description: Extrair conteúdo da origem
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: 5075482f48bf9aaf2c7386af74c14a50b4469840
+source-git-commit: e9af2bee0867b6787cd25f4af80cf8bf6a4d706a
 workflow-type: tm+mt
 source-wordcount: '765'
 ht-degree: 21%
@@ -32,19 +32,20 @@ Siga as etapas abaixo para extrair seu conjunto de migração da ferramenta Tran
 
    ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam12.png)
 
-   >!![IMPORTANT]
-   Certifique-se de que a chave de Extração seja válida e não esteja próxima da expiração. Se estiver próximo da data de expiração, é possível renovar a chave de Extração selecionando o conjunto de migração e clicando em Propriedades. Clique em **Renovar**. Isso o levará ao Cloud Acceleration Manager, onde você pode clicar em **Copiar chave de extração**. Toda vez que você clicar em **Copiar chave de extração**, uma nova chave de Extração é gerada e é válida por 14 dias a partir do momento da criação.
-   [!imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam13.png)
+   >[!IMPORTANT]
+   >
+   >Certifique-se de que a chave de Extração seja válida e não esteja próxima da expiração. Se estiver próximo da data de expiração, é possível renovar a chave de Extração selecionando o conjunto de migração e clicando em Propriedades. Clique em **Renovar**. Isso o levará ao Cloud Acceleration Manager, onde você pode clicar em **Copiar chave de extração**. Toda vez que você clicar em **Copiar chave de extração**, uma nova chave de Extração é gerada e é válida por 14 dias a partir do momento da criação.
+   >[!imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam13.png)
 
 1. Isso exibirá a caixa de diálogo Extração. Clique em **Extract** para iniciar a fase de extração.
 
    ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14.png)
 
    >[!NOTE]
-Você tem a opção de substituir o contêiner de preparação durante a fase de extração. If **Substituir contêiner de preparação** estiver desativado, pode acelerar as extrações para migrações subsequentes, onde os caminhos de conteúdo ou as configurações de incluir versões não foram alteradas. No entanto, se os caminhos de conteúdo ou as configurações de versões de inclusão tiverem sido alterados, então **Substituir contêiner de preparação** deve estar ativada.
+   >Você tem a opção de substituir o contêiner de preparação durante a fase de extração. If **Substituir contêiner de preparação** estiver desativado, pode acelerar as extrações para migrações subsequentes, onde os caminhos de conteúdo ou as configurações de incluir versões não foram alteradas. No entanto, se os caminhos de conteúdo ou as configurações de versões de inclusão tiverem sido alterados, então **Substituir contêiner de preparação** deve estar ativada.
 
    >[!IMPORTANT]
-Se o Mapeamento de usuários não tiver sido executado nesse conjunto de migração antes da extração de conteúdo da origem, você verá um aviso exibindo se a etapa Mapeamento de usuários está pendente, como mostrado na figura acima. Clique em **Mapear usuários** para executar a ferramenta Mapeamento de usuários.
+   >Se o Mapeamento de usuários não tiver sido executado nesse conjunto de migração antes da extração de conteúdo da origem, você verá um aviso exibindo se a etapa Mapeamento de usuários está pendente, como mostrado na figura acima. Clique em **Mapear usuários** para executar a ferramenta Mapeamento de usuários.
 
 1. O **Extração** agora exibe a variável **EM EXECUÇÃO** status para indicar que a extração está em andamento.
 
@@ -68,8 +69,8 @@ Se o Mapeamento de usuários não tiver sido executado nesse conjunto de migraç
 A ferramenta Transferência de conteúdo tem um recurso que oferece suporte a atualizações complementares de conteúdo diferencial, com o qual é possível transferir somente as alterações feitas desde a atividade de transferência de conteúdo anterior.
 
 >[!NOTE]
-Após a transferência inicial do conteúdo, é recomendável fazer atualizações complementares frequentes de conteúdo diferencial para reduzir o período de congelamento de conteúdo para a transferência final de conteúdo diferencial antes de entrar online no Cloud Service. Se você tiver usado a etapa de pré-cópia para a primeira extração completa, poderá ignorar a pré-cópia para as extrações adicionais subsequentes (se o tamanho do conjunto de migração complementar for menor que 200 GB), pois isso poderá adicionar tempo ao processo inteiro.
-Além disso, é essencial que a estrutura de conteúdo do conteúdo existente não seja alterada do momento em que a extração inicial é levada ao momento em que a extração complementar é executada. Os complementos não podem ser executados em conteúdo cuja estrutura foi alterada desde a extração inicial. Certifique-se de restringir isso durante o processo de migração.
+>Após a transferência inicial do conteúdo, é recomendável fazer atualizações complementares frequentes de conteúdo diferencial para reduzir o período de congelamento de conteúdo para a transferência final de conteúdo diferencial antes de entrar online no Cloud Service. Se você tiver usado a etapa de pré-cópia para a primeira extração completa, poderá ignorar a pré-cópia para as extrações adicionais subsequentes (se o tamanho do conjunto de migração complementar for menor que 200 GB), pois isso poderá adicionar tempo ao processo inteiro.
+>Além disso, é essencial que a estrutura de conteúdo do conteúdo existente não seja alterada do momento em que a extração inicial é levada ao momento em que a extração complementar é executada. Os complementos não podem ser executados em conteúdo cuja estrutura foi alterada desde a extração inicial. Certifique-se de restringir isso durante o processo de migração.
 
 Quando o processo de extração estiver concluído, você poderá transferir o conteúdo delta usando o método de extração complementar.
 
@@ -82,8 +83,8 @@ Siga as etapas abaixo:
 1. O **Extração do conjunto de migração** será exibida. Clique em **Extract**.
 
    >[!IMPORTANT]
-Você deve desativar a opção **Substituir containercontêiner de preparação durante a extração**.
-   ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam20.png)
+   >Você deve desativar a opção **Substituir containercontêiner de preparação durante a extração**.
+   >![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam20.png)
 
 
 ## O que vem a seguir {#whats-next}
