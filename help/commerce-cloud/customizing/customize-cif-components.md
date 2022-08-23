@@ -3,7 +3,7 @@ title: Personalizar os Componentes principais da CIF
 description: Saiba como personalizar AEM Componentes principais da CIF. O tutorial aborda como estender com segurança um Componente principal da CIF para atender às necessidades específicas dos negócios. Saiba como estender uma consulta GraphQL para retornar um atributo personalizado e exibir o novo atributo em um Componente principal da CIF.
 sub-product: Commerce
 topics: Development
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
@@ -11,10 +11,10 @@ feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
-source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+source-git-commit: f5e465d90477f1b49e4ff1c5ca9dd47cc5d539bb
 workflow-type: tm+mt
 source-wordcount: '2598'
-ht-degree: 23%
+ht-degree: 24%
 
 ---
 

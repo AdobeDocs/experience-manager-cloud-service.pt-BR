@@ -3,12 +3,12 @@ title: Introdução ao AEM Commerce as a Cloud Service
 description: Saiba como implantar um projeto de AEM habilitado para o comércio em um AEM em execução no as a Cloud Service. Use os recursos do Adobe Cloud Manager e um pipeline de CI/CD para criar a loja de referência Venia em um ambiente em execução.
 topics: Commerce
 feature: Commerce Integration Framework, Cloud Manager
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: d85352b93b9c793a716841523677eb710bb4577c
+source-git-commit: f5e465d90477f1b49e4ff1c5ca9dd47cc5d539bb
 workflow-type: tm+mt
 source-wordcount: '1095'
 ht-degree: 29%
