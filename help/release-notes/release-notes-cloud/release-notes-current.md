@@ -3,10 +3,10 @@ title: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud S
 description: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 2766a40f67edd08f25177fb0651773cd1547cedc
+source-git-commit: 1c27b66bcd0536ec10a878b39b9ec76073634c06
 workflow-type: tm+mt
 source-wordcount: '956'
-ht-degree: 15%
+ht-degree: 21%
 
 ---
 
@@ -27,7 +27,7 @@ A seção a seguir descreve as Notas de versão gerais da versão atual (mais re
 
 A data de lançamento do [!DNL Adobe Experience Manager] como [!DNL Cloud Service] a versão atual (2022.7.0) é 8 de agosto de 2022.
 
-A próxima versão (2022.8.0) está planejada para 25 de agosto de 2022.
+A próxima versão (2022.8.0) está planejada para 1º de setembro de 2022.
 
 ## Vídeo da versão {#release-video}
 
@@ -93,7 +93,7 @@ Agora você pode configurar os Ativos Adobe Experience Manager para [restringir 
 
 * Várias melhorias nos Componentes principais da CIF
 
-### Correções de bugs {#bug-fixes-cif}
+### Correções de erros {#bug-fixes-cif}
 
 * Adicionar token de logon à busca de preços no lado do cliente
 
@@ -114,7 +114,7 @@ Agora você pode configurar os Ativos Adobe Experience Manager para [restringir 
 
 ### Novos recursos disponíveis no canal de pré-lançamento do [!DNL Experience Manager] {#prerelease-features-foundation}
 
-* AEM as a Cloud Service agora está integrado ao Unified Shell para melhorar a experiência do usuário e unificá-la com todos os outros aplicativos do Experience Cloud. Consulte [AEM as a Cloud Service no shell unificado](/help/overview/aem-cloud-service-on-unified-shell.md) para obter mais detalhes.
+* O AEM as a Cloud Service agora está integrado ao shell unificado para melhorar a experiência do usuário e unificá-la com todos os outros aplicativos da Experience Cloud. Consulte [AEM as a Cloud Service no shell unificado](/help/overview/aem-cloud-service-on-unified-shell.md) para obter mais detalhes.
 
 ## Conectores do gerenciador de aprendizado do Adobe {#learn-manage}
 
@@ -127,4 +127,4 @@ Você pode encontrar uma lista completa de versões mensais do Cloud Manager [aq
 
 ## Ferramentas de migração {#migration-tools}
 
-Você pode encontrar uma lista completa das versões das Ferramentas de migração [here](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).
+Você pode encontrar uma lista completa de versões das ferramentas de migração [aqui](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).
