@@ -1,16 +1,16 @@
 ---
 title: Conteúdo associado
-description: Entenda como AEM recurso de conteúdo associado fornece a conexão para que os ativos possam ser usados opcionalmente com o fragmento quando ele for adicionado a uma página de conteúdo, adicionando flexibilidade adicional à criação de página e à entrega de conteúdo sem periféricos.
+description: Entenda como o recurso de conteúdo associado do AEM fornece a conexão para que os ativos possam ser usados opcionalmente com o fragmento quando ele for adicionado a uma página de conteúdo, adicionando maior flexibilidade à criação de páginas e à entrega de conteúdo headless.
 source-git-commit: a06024b4d4b6e5e750ed4c1e27f55283513b78a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '249'
-ht-degree: 13%
+ht-degree: 100%
 
 ---
 
 # Conteúdo associado{#associated-content}
 
-AEM recurso de conteúdo associado fornece a conexão para que os ativos possam ser usados opcionalmente com o fragmento quando ele for adicionado a uma página de conteúdo, por [fornecer um intervalo de ativos para acessar ao usar o fragmento de conteúdo em uma página,](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) ao mesmo tempo, ajuda a reduzir o tempo necessário para pesquisar o ativo apropriado. Isso também proporciona flexibilidade para a entrega de conteúdo sem periféricos.
+O recurso de conteúdo associado do AEM fornece a conexão para que os ativos possam ser usados opcionalmente com o fragmento quando ele for adicionado a uma página de conteúdo, [fornecendo uma gama de ativos para acessar ao usar o fragmento de conteúdo em uma página](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) e, ao mesmo tempo, ajudando a reduzir o tempo necessário para pesquisar o ativo apropriado. Isso também proporciona flexibilidade para a entrega de conteúdo headless.
 
 ## Adicionar conteúdo associado {#adding-associated-content}
 
@@ -20,14 +20,14 @@ AEM recurso de conteúdo associado fornece a conexão para que os ativos possam 
 
 Para fazer a associação, primeiro é necessário [adicionar ativos de mídia a uma coleção](/help/assets/manage-collections.md). Depois disso, você pode:
 
-1. Abra o fragmento e selecione **Conteúdo associado** no painel lateral.
+1. Abrir o fragmento e selecionar **Conteúdo associado** no painel lateral.
 
    ![Conteúdo associado](assets/cfm-assoc-content-01.png)
 
-1. Dependendo de alguma coleção já ter sido associada, ou não, selecione:
+1. Dependendo de alguma coleção já ter sido associada ou não, selecione:
 
-   * **Associar conteúdo** - esta será a primeira coleção associada
-   * **Associar Coleção** - as coleções associadas já estão configuradas
+   * **Associar conteúdo** — esta será a primeira coleção associada
+   * **Associar Coleção** — as coleções associadas já estão configuradas
 
 1. Selecione a coleção necessária.
 
@@ -45,5 +45,5 @@ Depois de associar uma coleção, você pode:
 
 * **Remover** a associação.
 * **Adicionar ativos** à coleção.
-* Selecione um ativo para ação adicional.
-* Edite o ativo.
+* Selecionar um ativo para realizar mais ações.
+* Editar o ativo.
