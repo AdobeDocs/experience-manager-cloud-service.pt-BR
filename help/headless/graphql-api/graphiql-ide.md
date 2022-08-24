@@ -4,9 +4,9 @@ description: Saiba como usar o GraphiQL IDE no Adobe Experience Manager.
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
 source-git-commit: 377747d6bbb945b1de9cf1fdcbabc077babd7aa9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1008'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
@@ -16,9 +16,9 @@ Uma implementação do [GraphiQL](https://graphql.org/learn/serving-over-http/#g
 
 >[!NOTE]
 >
->O GraphiQL é incluído em todos os ambientes de AEM (mas só estará acessível/visível quando você configurar os pontos de extremidade).
+>O GraphiQL é incluído em todos os ambientes do AEM (mas só se torna acessível/visível quando você configura os pontos de acesso).
 >
->Em versões anteriores, era necessário um pacote para instalar o GraphiQL IDE. Se você tiver isso instalado, ele poderá ser removido.
+>Em versões anteriores, era necessário um pacote para instalar o GraphiQL IDE. Se você o instalou, agora é possível removê-lo.
 
 >[!NOTE]
 >Você deve [configurar os endpoints](/help/headless/graphql-api/graphql-endpoint.md) no [navegador de configuração](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md) antes de usar o GraphiQL IDE.
@@ -31,18 +31,18 @@ A ferramenta **GraphiQL** permite testar e depurar as consultas de GraphQL, poss
 * executar as consultas para ver os resultados imediatamente
 * gerenciar **variáveis de consulta**
 * salvar e gerenciar **consultas persistentes**
-* publicar ou desfazer a publicação, **Consultas Persistentes** (por exemplo, para/de `dev-publish`)
+* publicar ou desfazer a publicação de **consultas persistentes** (por exemplo, para/do `dev-publish`)
 * consultar o **histórico** de consultas anteriores
 * usar o **Explorador de documentação** para acessar a documentação; ajudando você a conhecer e entender quais métodos estão disponíveis.
 
-Você pode acessar o editor de consultas por meio de:
+É possível acessar o editor de consultas por meio de:
 
 * **Ferramentas** -> **Geral** -> **Editor de consultas GraphQL**
-* Diretamente; por exemplo, `http://localhost:4502/aem/graphiql.html`
+* diretamente; por exemplo, `http://localhost:4502/aem/graphiql.html`
 
 ![Interface GraphiQL](assets/cfm-graphiql-interface.png "Interface GraphiQL")
 
-Você pode usar GraphiQL no sistema para que as consultas possam ser solicitadas pelo aplicativo cliente usando solicitações GET e para publicação de consultas. Para o uso da produção, é possível [mover suas consultas para o ambiente de produção](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production). Inicialmente ao autor de produção para validação do conteúdo recém-criado com as consultas e, finalmente, à produção de publicação para consumo em tempo real.
+Você pode usar o GraphiQL no sistema para que as consultas possam ser solicitadas pelo aplicativo cliente usando solicitações GET e para publicar consultas. Para o uso em produção, é possível [mover as consultas para o ambiente de produção](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production). Inicialmente ao autor de produção para validação do conteúdo recém-criado com as consultas e, finalmente, à produção de publicação para consumo em tempo real.
 
 ## Seleção do endpoint {#selecting-endpoint}
 
@@ -98,34 +98,34 @@ Por exemplo:
 
 ## Gerenciamento do cache para suas consultas persistentes {#managing-cache}
 
-[Consultas persistentes](/help/headless/graphql-api/persisted-queries.md) são recomendadas, pois podem ser armazenadas em cache nas camadas do dispatcher e CDN, melhorando o desempenho do aplicativo cliente solicitante. Por padrão, o AEM invalidará o cache da Rede de entrega de conteúdo (CDN) com base em um Time To Live (TTL) padrão.
+[Consultas persistentes](/help/headless/graphql-api/persisted-queries.md) são recomendadas, pois elas podem ser armazenadas em cache nas camadas do Dispatcher e CDN, melhorando o desempenho do aplicativo cliente solicitante. Por padrão, o AEM invalidará o cache da rede de entrega de conteúdo (CDN) com base em um TTL (Time To Live) padrão.
 
-Usando GraphQL, você pode configurar os HTTP Cache Headers para controlar esses parâmetros para sua consulta persistente individual.
+Ao usar o GraphQL, é possível configurar os cabeçalhos de cache HTTP para controlar esses parâmetros para sua consulta persistente individual.
 
-1. O **Cabeçalhos** é acessível por meio dos três pontos verticais à direita do nome da consulta persistente (painel à esquerda):
+1. A opção **Cabeçalhos** também é acessível por meio dos três pontos verticais à direita do nome da consulta persistente (painel à esquerda):
 
-   ![Cabeçalhos de Cache HTTP de Consulta Persistente](assets/cfm-graphqlapi-headers-01.png "Cabeçalhos de Cache HTTP de Consulta Persistente")
+   ![Cabeçalhos de cache HTTP de consulta persistente](assets/cfm-graphqlapi-headers-01.png "Cabeçalhos de cache HTTP de consulta persistente")
 
-1. Selecionar isso abrirá o **Configuração de cache** caixa de diálogo:
+1. Selecionar isso abrirá a caixa de diálogo **Configuração de cache**:
 
-   ![Configurações Persistentes do Cabeçalho HTTP do Cache](assets/cfm-graphqlapi-headers-02.png "Configurações Persistentes do Cabeçalho HTTP do Cache")
+   ![Configurações do cabeçalho de cache HTTP de consulta persistente](assets/cfm-graphqlapi-headers-02.png "Configurações do cabeçalho de cache HTTP de consulta persistente")
 
 1. Selecione o parâmetro apropriado e ajuste o valor conforme necessário:
 
-   * **controle de cache** - **max-age**
+   * **cache-control** - **max-age**
 Os caches podem armazenar esse conteúdo por um número especificado de segundos. Normalmente, esse é o TTL (Time To Live) do navegador.
-   * **controle de substitutos** - **s-maxage**
-Igual à idade máxima, mas aplica-se especificamente a caches proxy.
-   * **controle de substitutos** - **stale-while-revalidate**
-Os caches podem continuar a servir uma resposta em cache depois que ela se tornar obsoleta, por até o número especificado de segundos.
-   * **controle de substitutos** - **stale-if-error**
-Os caches podem continuar a servir uma resposta em cache em caso de erro de origem ou de origem, por até o número especificado de segundos.
+   * **surrogate-control** - **s-maxage** 
+Igual a max-age, mas aplica-se especificamente a caches de proxy.
+   * **surrogate-control** - **stale-while-revalidate**
+Os caches podem continuar a servir uma resposta em cache depois que ela se tornar obsoleta, por um número especificado de segundos.
+   * **surrogate-control** - **stale-if-error**
+Os caches podem continuar a servir uma resposta em cache em caso de erro de origem, por um número especificado de segundos.
 
-1. Selecionar **Salvar** para persistir as alterações.
+1. Selecione **Salvar** para confirmar as alterações.
 
 ## Publicação de consultas persistentes {#publishing-persisted-queries}
 
-Depois de selecionar a consulta persistente na lista (painel esquerdo), você pode usar as ações **Publicar** e **Desfazer a publicação**. Isso os ativará no ambiente de publicação (por exemplo, `dev-publish`) para facilitar o acesso de seus aplicativos ao testar.
+Depois de selecionar a consulta persistente na lista (painel esquerdo), você pode usar as ações **Publicar** e **Desfazer a publicação**. Isso as ativará no ambiente de publicação (por exemplo, `dev-publish`) para facilitar o acesso de seus aplicativos durante os testes.
 
 >[!NOTE]
 >
