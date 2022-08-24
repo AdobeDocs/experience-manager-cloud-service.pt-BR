@@ -3,9 +3,9 @@ title: Visualização de conteúdo
 description: Saiba como usar o serviço de visualização do AEM para visualizar o conteúdo antes de ele ser publicado.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
 source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '372'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Para obter mais detalhes sobre os ambientes de visualização, consulte o docume
 
 >[!NOTE]
 >
->A publicação de um Fragmento de experiência na Visualização segue basicamente o mesmo procedimento de uma página, embora a partir do console ou do editor Fragmentos de experiência.
+>A publicação de um fragmento de experiência para visualização segue basicamente o mesmo procedimento de publicação de uma página, mas a partir do console ou do editor de fragmentos de experiência.
 
 ## Publicar conteúdo na visualização {#publishing-content-to-preview}
 
