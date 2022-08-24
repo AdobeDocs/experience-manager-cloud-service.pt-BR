@@ -3,9 +3,9 @@ title: Criar uma solicitação de API - Configuração Headless
 description: Saiba como usar a API GraphQL para a entrega headless do conteúdo do Fragmento de conteúdo e a API REST do AEM Assets para gerenciar Fragmentos de conteúdo.
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
 source-git-commit: c0b48db0cbef6232f153dc59432ea7289b430538
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '676'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ O restante deste guia terá como foco o acesso ao GraphQL e a entrega de Fragmen
 
 Para que as APIs GraphQL possam ser usadas, é necessário criar um endpoint GraphQL.
 
-1. Navegar para **Ferramentas**, **Geral**, em seguida selecione **GraphQL**.
+1. Navegue até **Ferramentas**, **Geral** e, em seguida, selecione **GraphQL**.
 1. Selecione **Criar**.
 1. A caixa de diálogo **Criar novo endpoint de GraphQL** será aberta. Aqui, é possível especificar:
    * **Nome**: nome do endpoint; é possível inserir qualquer texto.
@@ -45,14 +45,14 @@ Mais detalhes sobre como ativar [endpoints GraphQL podem ser encontrados aqui](/
 
 Os arquitetos da informação precisarão projetar consultas para seus endpoints de canal para fornecer conteúdo. Geralmente, essas consultas só precisarão ser consideradas uma vez por endpoint por modelo. Para os fins deste guia de introdução, só será necessário criar uma.
 
-GraphiQL é um IDE, incluído no seu ambiente de AEM; é acessível/visível após [configurar seus endpoints](#enable-graphql-endpoint).
+GraphiQL é um IDE, incluído no seu ambiente do AEM; ele se torna acessível/visível após [configurar seus pontos de acesso](#enable-graphql-endpoint).
 
 1. Faça logon no AEM as a Cloud Service e acesse a interface GraphiQL:
 
-   Você pode acessar o editor de consultas por meio de:
+   É possível acessar o editor de consultas por meio de:
 
    * **Ferramentas** -> **Geral** -> **Editor de consultas GraphQL**
-   * Diretamente; por exemplo, `http://localhost:4502/aem/graphiql.html`
+   * diretamente; por exemplo, `http://localhost:4502/aem/graphiql.html`
 
 1. O GraphiQL IDE é um editor de consultas no navegador para GraphQL. Você pode usá-lo para criar consultas para recuperar fragmentos de conteúdo e entregá-los como JSON sem periféricos.
    * A lista suspensa no canto superior direito permite selecionar o endpoint.
