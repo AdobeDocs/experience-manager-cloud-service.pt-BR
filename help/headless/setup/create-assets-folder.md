@@ -3,7 +3,7 @@ title: Criação de uma pasta de ativos - Configuração do headless
 description: Use os modelos de fragmento de conteúdo do AEM para definir a estrutura dos fragmentos de conteúdo, a base do seu conteúdo headless.
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
 source-git-commit: c0b48db0cbef6232f153dc59432ea7289b430538
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '385'
 ht-degree: 100%
 
