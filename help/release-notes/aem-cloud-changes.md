@@ -3,9 +3,9 @@ title: Alterações importantes no Adobe Experience Manager (AEM) as a Cloud Ser
 description: Alterações importantes no Adobe Experience Manager (AEM) as a Cloud Service
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
 source-git-commit: d3208a9a0785909e9b62d4033437a8ff44f7ba3e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '846'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -66,10 +66,10 @@ O conteúdo e as subpastas em `/apps` e `/libs` são somente leitura. Não é po
 
 As alterações nos pacotes e configurações OSGi devem ser introduzidas por meio do pipeline de CI/CD.
 
-* Os pacotes OSGi novos ou atualizados devem ser introduzidos por meio do Git por meio do pipeline de CI/CD.
+* Os pacotes OSGi novos ou atualizados devem ser introduzidos por meio do Git, através do pipeline de CI/CD.
 * As alterações nas configurações de OSGi só podem vir do Git por meio do pipeline de CI/CD.
 
-O Console da Web, usado em versões anteriores do AEM para alterar pacotes e configurações de OSGi, não está disponível no AEM Cloud Service.
+O console da Web, usado nas versões anteriores do AEM para alterar pacotes e configurações de OSGi, não está disponível no AEM Cloud Service.
 
 ## Não são permitidas alterações no repositório de publicação {#changes-to-publish-repo}
 
@@ -104,7 +104,7 @@ No AEM Cloud Service, o conteúdo é publicado usando a [Distribuição de conte
 * Personalização dos agentes de replicação para transformar conteúdo
 * Uso de Replicação reversa para devolver o conteúdo da publicação para o autor
 
-Além disso, observe que os botões pausar e desativar foram removidos do console de administração do agente de replicação.
+Além disso, observe que os botões Pausar e Desativar foram removidos do console de administração do agente de replicação.
 
 ## Remoção da interface clássica do usuário {#classic-ui}
 
@@ -118,4 +118,4 @@ Para a transição de projetos do AMS ou de uma instalação local, a Adobe reco
 
 ## Manuseio e entrega de ativos {#asset-handling}
 
-O upload, o processamento e o download de ativos são otimizados em [!DNL Experience Manager Assets] como [!DNL Cloud Service]. Agora, o [!DNL Assets] é mais eficiente, permite maior dimensionamento e possibilita uploads e downloads muito mais rápidos. Além disso, isso afeta o código personalizado existente e algumas operações. Para uma lista de alterações e para paridade com os recursos do [!DNL Experience Manager] 6.5, consulte as [alterações do  [!DNL Assets]](/help/assets/assets-cloud-changes.md).
+O upload, processamento e download de ativos estão otimizados no [!DNL Experience Manager Assets] as a [!DNL Cloud Service]. Agora, o [!DNL Assets] é mais eficiente, permite maior dimensionamento e possibilita uploads e downloads muito mais rápidos. Além disso, isso afeta o código personalizado existente e algumas operações. Para uma lista de alterações e para paridade com os recursos do [!DNL Experience Manager] 6.5, consulte as [alterações do  [!DNL Assets]](/help/assets/assets-cloud-changes.md).
