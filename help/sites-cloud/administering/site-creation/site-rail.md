@@ -7,7 +7,7 @@ exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
 source-git-commit: 3e4c6fce54fe336c145d533c05e68e3a1f64c144
 workflow-type: tm+mt
 source-wordcount: '597'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Com o painel Site sendo exibido no console de sites, selecione a raiz do site pa
 
 Toque ou clique em **Baixar fontes de tema** para fazer o download de uma cópia local do tema do site no formato `.zip` para fins de personalização.
 
-## Fazendo download de recursos do modelo {#downloading-template-resources}
+## Baixar recursos do modelo {#downloading-template-resources}
 
 [Modelos de site](site-templates.md) podem conter informações que vão além da estrutura de conteúdo do site e do [tema do site.](site-themes.md) Por exemplo, os modelos de site podem conter designs de wireframe ou outros arquivos relacionados ao site.
 

@@ -5,7 +5,7 @@ exl-id: d1ce126e-960c-4367-b741-af709dd81010
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
 source-wordcount: '1904'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
@@ -171,7 +171,7 @@ Para que os aplicativos do AEM existentes sejam executados no AEM as a Cloud Ser
 
 Esse processo é comumente chamado de desenvolvimento Cloud-first. Como a duração de ponta a ponta deve demorar minutos (de 20 a 50, dependendo da complexidade do aplicativo), é necessário adotar metodologias de desenvolvimento rápidas antes que as alterações pendentes no código e na configuração sejam tentadas na nuvem.
 
-O Console da Web, onde os pacotes OSGI e sua configuração associada são gerenciados e anteriormente parte do AEM QuickStart, não está mais disponível AEM as a Cloud Service. O novo console do desenvolvedor fornece uma interface somente leitura para a maioria das informações de tempo de execução. Com esse console, os desenvolvedores podem selecionar e fazer logon diretamente em qualquer nó específico de um autor ou serviço de publicação e exibir as informações relevantes.
+O console da Web, onde os pacotes OSGI e suas configurações associadas são gerenciados e que anteriormente fazia parte do QuickStart do AEM, não está mais disponível no AEM as a Cloud Service. O novo console do desenvolvedor fornece uma interface somente leitura para a maioria das informações de tempo de execução. Com esse console, os desenvolvedores podem selecionar e fazer logon diretamente em qualquer nó específico de um serviço de autor ou publicação e visualizar informações relevantes.
 
 >[!NOTE]
 >

@@ -6,7 +6,7 @@ exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 source-git-commit: 7e89ac3f575082d19e509ca133500b71070cc605
 workflow-type: tm+mt
 source-wordcount: '1430'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -40,10 +40,10 @@ Veja esses exemplos de consultas para obter ilustrações de como criar consulta
 >
 >Dependendo do seu caso, você pode acessar diretamente a [Interface GraphiQL incluída na API GraphQL do AEM](/help/headless/graphql-api/graphiql-ide.md) para enviar e testar consultas.
 >
->Você pode acessar o editor de consultas por meio de:
+>É possível acessar o editor de consultas por meio de:
 >
 >* **Ferramentas** -> **Geral** -> **Editor de consultas GraphQL**
->* Diretamente; por exemplo, `http://localhost:4502/aem/graphiql.html`
+>* diretamente; por exemplo, `http://localhost:4502/aem/graphiql.html`
 
 
 >[!NOTE]

@@ -6,7 +6,7 @@ exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 source-git-commit: f773671e3c62e2dff6f843d42a5b36211e2d1fc3
 workflow-type: tm+mt
 source-wordcount: '2708'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -107,16 +107,16 @@ Também é possível executar:
 
 ### Práticas recomendadas de consulta GraphQL (Dispatcher) {#graphql-query-best-practices}
 
-O [Consultas Persistentes](/help/headless/graphql-api/persisted-queries.md) são o método recomendado como:
+As [Consultas persistentes](/help/headless/graphql-api/persisted-queries.md) são o método recomendado, pois:
 
 * são armazenadas em cache
-* são gerenciados centralmente AEM as a Cloud Service
+* são gerenciadas de forma central pelo AEM as a Cloud Service
 
-As consultas diretas e/ou POST não são recomendadas, pois não são armazenadas em cache, portanto, em uma instância padrão, o Dispatcher é configurado para bloquear essas consultas.
+As consultas diretas e/ou POST não são recomendadas, pois não são armazenadas em cache. Portanto, em uma instância padrão, o Dispatcher é configurado para bloquear essas consultas.
 
 >[!NOTE]
 >
->Para permitir consultas diretas e/ou POST no Dispatcher, você pode solicitar ao Administrador do Sistema:
+>Para permitir consultas diretas e/ou POST no Dispatcher, você pode solicitar que o administrador do sistema:
 >
 >* Crie uma variável de ambiente do Cloud Manager chamada `ENABLE_GRAPHQL_ENDPOINT`
 >* com o valor `true`
@@ -124,7 +124,7 @@ As consultas diretas e/ou POST não são recomendadas, pois não são armazenada
 
 >[!NOTE]
 >
->A capacidade de realizar consultas diretas pode ser substituída em algum momento no futuro.
+>A capacidade de realizar consultas diretas pode se tornar obsoleta em algum momento no futuro.
 
 ### IDE GraphiQL {#graphiql-ide}
 
@@ -590,7 +590,7 @@ A operação básica de consultas com o GraphQL para AEM adere à especificaçã
          >Se a variação especificada não existir para um Fragmento de conteúdo, a variação principal será retornada como um padrão (fallback).
 
          * Consulte [Exemplo de consulta - Todas as cidades com uma variação nomeada](#sample-cities-named-variation)
-   * Operações AND:
+   * E operações:
 
       * `_operator` : aplica operadores específicos; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS` e `STARTS_WITH`
          * Consulte [Exemplo de consulta - Todas as pessoas cujo nome não é “Jobs”](/help/headless/graphql-api/sample-queries.md#sample-all-persons-not-jobs)

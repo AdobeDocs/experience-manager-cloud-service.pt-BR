@@ -5,7 +5,7 @@ exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
 workflow-type: tm+mt
 source-wordcount: '1791'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Você pode publicar/desfazer a publicação de uma página imediatamente ou em u
 
 >[!NOTE]
 >
->A publicação de um Fragmento de experiência segue basicamente o mesmo procedimento de publicação de uma página, embora a partir do console ou do editor Fragmentos de experiência.
+>A publicação de um fragmento de experiência segue basicamente o mesmo procedimento de publicação de uma página, mas a partir do console ou do editor de fragmentos de experiência.
 
 ## Terminologia {#terminology}
 

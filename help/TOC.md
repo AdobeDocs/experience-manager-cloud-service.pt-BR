@@ -11,7 +11,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: 5e8f70da6de27bf59e4a89e196a016820245a068
 workflow-type: tm+mt
 source-wordcount: '3709'
-ht-degree: 91%
+ht-degree: 97%
 
 ---
 
@@ -112,7 +112,7 @@ ht-degree: 91%
          + [Notas da versão para 2021.11.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
          + [Notas da versão para 2021.10.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
    + Notas de versão do conector aprimorado do Workfront para Experience Manager{#workfront}
-      + [Notas de versão atuais do Workfront para conector Experience Manager aprimorado](/help/assets/release-notes-enhanced-connector-workfront.md)
+      + [Notas de versão atuais do conector aprimorado do Workfront para Experience Manager](/help/assets/release-notes-enhanced-connector-workfront.md)
    + [Novidades?](/help/release-notes/what-is-new.md)
    + [Alterações importantes no AEM Cloud Service](/help/release-notes/aem-cloud-changes.md)
    + [Problemas conhecidos](/help/release-notes/known-issues.md)
@@ -283,7 +283,7 @@ ht-degree: 91%
          + [Entrega headless com fragmentos de conteúdo e GraphQL](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md)
          + [Ativar a funcionalidade de fragmento de conteúdo para sua instância](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)
          + [Modelos de fragmentos do conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
-         + [Console Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)
+         + [Console de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)
          + [Gerenciamento dos fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
          + [Variações - Criação dos fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
          + [Conteúdo associado aos fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md)
@@ -419,9 +419,9 @@ ht-degree: 91%
       + [Árvore de estrutura](/help/assets/content-fragments/content-fragments-structure-tree.md)
       + [Visualização - Representação JSON](/help/assets/content-fragments/content-fragments-json-preview.md)
    + Dynamic Media {#dynamicmedia}
-      + jornada Dynamic Media: Noções básicas {#dm-journey}
-         + [Parte I: O que é o Dynamic Media - Casos de uso - Como um ativo flui pelo sistema](/help/assets/dynamic-media/dm-journey-part1.md)
-         + [Parte II: Anatomia de um URL do Dynamic Media - Fundamentos das predefinições de imagens - Sobre conjuntos de imagens, conjuntos de rotação e conjuntos de mídia mista](/help/assets/dynamic-media/dm-journey-part2.md)
+      + Jornada do Dynamic Media: Noções básicas {#dm-journey}
+         + [Parte I: O que é o Dynamic Media — Casos de uso — Como um ativo flui pelo sistema](/help/assets/dynamic-media/dm-journey-part1.md)
+         + [Parte II: Anatomia de um URL do Dynamic Media — Fundamentos das predefinições de imagens — Sobre conjuntos de imagens, conjuntos de rotação e conjuntos de mídia mista](/help/assets/dynamic-media/dm-journey-part2.md)
       + [Arquivo de informativos do Dynamic Media, da Experience League](/help/assets/dynamic-media/dynamic-media-newsletter.md)
       + [Configuração do Dynamic Media](/help/assets/dynamic-media/administering-dynamic-media.md)
       + [Trabalhar com o Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
@@ -443,7 +443,7 @@ ht-degree: 91%
       + [Invalidar o cache da CDN por meio do Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
       + [Invalidar o cache da CDN por meio do Dynamic Media Classic](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
       + [Imagem inteligente](/help/assets/dynamic-media/imaging-faq.md)
-      + [Imagem inteligente com relação de pixels do dispositivo no lado do cliente](/help/assets/dynamic-media/client-side-dpr.md)
+      + [Imagem inteligente com proporção de pixels do dispositivo no lado do cliente](/help/assets/dynamic-media/client-side-dpr.md)
       + [Entregar ativos do Dynamic Media](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
       + [Ativar proteção de hotlink no Dynamic Media](/help/assets/dynamic-media/hotlink-protection.md)
       + [Suporte para 3D](/help/assets/dynamic-media/assets-3d.md)
@@ -588,7 +588,7 @@ ht-degree: 91%
       + [Instalar o reprodutor do Screens](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md)
       + [Registro do reprodutor](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md)
       + [Atribuição do reprodutor a uma exibição](/help/screens-cloud/managing-players-registration/assigning-player-display.md)
-   + Uso dos principais recursos do produto {#core-product-features}
+   + Uso dos recursos principais do produto {#core-product-features}
       + [Suporte a miniaturas para vídeos](/help/screens-cloud/using-core-product-features/thumbnail-support-videos.md)
    + Desenvolvimento no Screens as a Cloud Service {#developing-screens-cloud}
       + [APIs REST](/help/screens-cloud/developing/rest-apis-screens-cloud.md)
@@ -631,7 +631,7 @@ ht-degree: 91%
    + [Migração](/help/commerce-cloud/migration.md)
    + [Perguntas frequentes](/help/commerce-cloud/faq.md)
 + Headless {#headless}
-   + [O que é um CMS sem periféricos?](/help/headless/what-is-headless.md)
+   + [O que é um CMS headless?](/help/headless/what-is-headless.md)
    + [Introdução ao AEM Headless](/help/headless/introduction.md)
    + Configurar {#setup}
       + [Introdução](/help/headless/setup/introduction.md)
@@ -641,18 +641,18 @@ ht-degree: 91%
       + [Fragmento de conteúdo](/help/headless/setup/create-content-fragment.md)
       + [Endpoint GraphQL](/help/headless/setup/create-api-request.md)
    + Fragmentos de conteúdo {#content-fragments}
-      + [Visão geral](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments.html)
-      + [Console Fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html)
-      + [Modelos de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-models.html)
-      + [Gerenciar](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-managing.html)
+      + [Visão geral](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments.html?lang=pt-BR)
+      + [Console de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=pt-BR)
+      + [Modelos de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-models.html?lang=pt-BR)
+      + [Gerenciar](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-managing.html?lang=pt-BR)
       + Criação {#authoring}
-         + [Criação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html)
-         + [Editor de texto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-markdown.html)
-         + [Conteúdo associado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-assoc-content.html)
-         + [Variações](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html#managing-variations)
-      + [Metadados](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-metadata.html)
-      + [Árvore de estrutura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-structure-tree.html)
-      + [Visualização JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-json-preview.html)
+         + [Criação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html?lang=pt-BR)
+         + [Editor de texto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-markdown.html?lang=pt-BR)
+         + [Conteúdo associado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-assoc-content.html?lang=pt-BR)
+         + [Variações](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html?lang=pt-BR#managing-variations)
+      + [Metadados](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-metadata.html?lang=pt-BR)
+      + [Árvore de estrutura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-structure-tree.html?lang=pt-BR)
+      + [Visualização JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-json-preview.html?lang=pt-BR)
    + API GraphQL {#graphql-api}
       + [API GraphQL para fragmentos de conteúdo](/help/headless/graphql-api/content-fragments.md)
       + [Gerenciar pontos de extremidade do GraphQL](/help/headless/graphql-api/graphql-endpoint.md)

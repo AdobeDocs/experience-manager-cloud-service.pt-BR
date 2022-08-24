@@ -5,7 +5,7 @@ exl-id: a991e710-a974-419f-8709-ad86c333dbf8
 source-git-commit: c49a70b4048acc4e925c69b7ebbedbf8779bbbc0
 workflow-type: tm+mt
 source-wordcount: '1174'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -73,7 +73,7 @@ Os clientes podem usar a autenticação baseada em SAML por meio de seu IdP de S
 >
 >Somente a autenticação inicial das credenciais do usuário é realizada pelo IdP. As solicitações subsequentes ao AEM são executadas usando um cookie de token de logon do AEM, desde que o cookie esteja disponível.
 
-Consulte a documentação para obter mais informações sobre o [Manipulador de autenticação SAML 2.0](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/authentication/saml-2-0.html).
+Consulte a documentação para obter mais informações sobre o [Manipulador de autenticação SAML 2.0](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/authentication/saml-2-0.html?lang=pt-BR).
 
 **OAuth/SSO**
 

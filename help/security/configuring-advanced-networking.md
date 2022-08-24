@@ -5,7 +5,7 @@ exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 source-git-commit: b8a827e73d8eba9184be352d0aa4705dfb24b642
 workflow-type: tm+mt
 source-wordcount: '3016'
-ht-degree: 92%
+ht-degree: 98%
 
 ---
 
@@ -68,11 +68,11 @@ A configuração do nível de programa pode ser atualizada chamando o endpoint `
 
 As regras de encaminhamento de porta por ambiente podem ser atualizadas chamando novamente o endpoint `PUT /program/{programId}/environment/{environmentId}/advancedNetworking`, certificando-se de incluir o conjunto completo de parâmetros de configuração, em vez de um subconjunto.
 
-### Desativando o saída flexível da porta {#disabling-flexible-port-egress-provision}
+### Desativar a saída de porta flexível {#disabling-flexible-port-egress-provision}
 
 Para **desabilitar** a saída de porta flexível de um ambiente específico, chame `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
 
-Para obter mais informações sobre as APIs, consulte o [Documentação da API do Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
+Para obter mais informações sobre as APIs, consulte a [Documentação da API do Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
 
 ### Roteamento de tráfego {#flexible-port-egress-traffic-routing}
 
@@ -201,11 +201,11 @@ Além das regras de roteamento compatíveis com egressos flexíveis da porta no 
 
 Ao decidir entre saída de porta flexível e endereço IP de saída dedicado, os clientes devem escolher saída de porta flexível se um endereço IP específico não for necessário, pois a Adobe pode otimizar o desempenho do tráfego de saída de porta flexível.
 
-### Desativando Endereço IP de Saída Dedicada {#disabling-dedicated-egress-IP-address}
+### Desativar o endereço IP de saída dedicado {#disabling-dedicated-egress-IP-address}
 
-Para **disable** Endereço IP de saída dedicado de um ambiente específico, invocar `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
+Para **desativar** o endereço IP de saída dedicado de um ambiente específico, chame `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
 
-Para obter mais informações sobre as APIs, consulte o [Documentação da API do Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
+Para obter mais informações sobre as APIs, consulte a [Documentação da API do Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
 
 ### Roteamento de tráfego {#dedcated-egress-ip-traffic-routing}
 
@@ -375,7 +375,7 @@ Observe que o espaço de endereço não pode ser alterado após o provisionament
 
 As regras de roteamento por ambiente podem ser atualizadas chamando novamente o endpoint `PUT /program/{programId}/environment/{environmentId}/advancedNetworking`, certificando-se de incluir o conjunto completo de parâmetros de configuração, em vez de um subconjunto. As atualizações de ambiente normalmente levam de 5 a 10 minutos para serem aplicadas.
 
-### Desabilitando a VPN {#disabling-the-vpn}
+### Desativar a VPN {#disabling-the-vpn}
 
 Para desativar a VPN para um ambiente específico, chame `DELETE /program/{programId}/environment/{environmentId}/advancedNetworking`. Mais detalhes na [Documentação da API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
 
@@ -496,7 +496,7 @@ O diagrama abaixo fornece uma representação visual de um conjunto de domínios
   <tr>
     <td><code>p{PROGRAM_ID}.inner.adobeaemcloud.net</code></td>
     <td>O IP do tráfego vindo do lado AEM da VPN para o lado do cliente. Isso pode ser incluído na lista de permissões na configuração do cliente para garantir que as conexões só possam ser feitas a partir do AEM.</td>
-    <td>Se o cliente quiser permitir o acesso VPN ao AEM, ele deverá configurar as entradas de DNS CNAME para mapear seu domínio personalizado e/ou <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> e/ou <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> a isto.</td>
+    <td>Se o cliente quiser permitir o acesso por VPN ao AEM, ele deverá configurar as entradas de DNS CNAME para mapear seu domínio personalizado e/ou <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> e/ou <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> para isso.</td>
   </tr>
 </tbody>
 </table>
@@ -516,25 +516,25 @@ Allow from 192.168.0.1
 Header always set Cache-Control private
 ```
 
-## Excluindo a infraestrutura de rede de um programa {#deleting-network-infrastructure}
+## Excluir a infraestrutura de rede de um programa {#deleting-network-infrastructure}
 
-Para **excluir** a infraestrutura de rede de um programa, invocar `DELETE /program/{program ID}/networkinfrastructure/{networkinfrastructureID}`.
+Para **excluir** a infraestrutura de rede de um programa, chame `DELETE /program/{program ID}/networkinfrastructure/{networkinfrastructureID}`.
 
 >[!NOTE]
 >
-> Excluir só excluirá a infraestrutura se todos os ambientes tiverem suas redes avançadas desativadas.
+> Isso só excluirá a infraestrutura se todos os ambientes tiverem suas redes avançadas desativadas.
 
 ## Transição entre tipos avançados de rede {#transitioning-between-advanced-networking-types}
 
-É possível migrar entre tipos avançados de rede seguindo o seguinte procedimento:
+É possível migrar entre tipos avançados de rede seguindo o procedimento abaixo:
 
-* desativar rede avançada em todos os ambientes
-* excluir a infraestrutura avançada de rede
-* recrie as infraestruturas de rede avançadas com os valores corretos
-* reativar rede avançada no nível do ambiente
+* desativar a rede avançada em todos os ambientes
+* excluir a infraestrutura de rede avançada
+* recriar as infraestruturas de rede avançadas com os valores corretos
+* reativar a rede avançada no nível do ambiente
 
 >[!WARNING]
 >
-> Esse procedimento resultará em um tempo de inatividade de serviços avançados de rede entre exclusão e recriação
+> Esse procedimento resultará em um tempo de inatividade dos serviços de rede avançada durante o período de exclusão e recriação
 
 Se o tempo de inatividade causar um impacto significativo nos negócios, entre em contato com o suporte ao cliente para obter assistência, descrevendo o que já foi criado e o motivo da alteração.

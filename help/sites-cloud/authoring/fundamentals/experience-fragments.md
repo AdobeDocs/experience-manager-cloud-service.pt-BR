@@ -5,7 +5,7 @@ exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 source-git-commit: 0199291bf4c0bb938072e601a9d1cc6d2940d4f0
 workflow-type: tm+mt
 source-wordcount: '1566'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -357,15 +357,15 @@ Usando o seletor `.plain.` no URL, você poderá acessar a representação HTML 
 
 >[!NOTE]
 >
->Embora isso esteja disponível diretamente no navegador, [o principal objetivo é permitir outros aplicativos (por exemplo, aplicativos Web de terceiros, implementações móveis personalizadas) para acessar o conteúdo do Fragmento de experiência diretamente, usando apenas o URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
+>Embora isso esteja disponível diretamente no navegador, [o principal objetivo é permitir que outros aplicativos (por exemplo, aplicativos Web de terceiros, implementações personalizadas de publicações de conteúdo para dispositivos móveis) acessem o conteúdo do Fragmento de experiência diretamente, usando apenas o URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
 
 ## Publicação de fragmentos de experiência {#publishing-experience-fragments}
 
-Publicar seu fragmento de experiência é basicamente o mesmo que [publicação de uma página](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) (no console ou editor Fragmentos de experiência).
+Publicar seu fragmento de experiência é basicamente o mesmo que [publicar uma página](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) (mas diretamente do console ou do editor de fragmentos de experiência).
 
-Como alternativa, também é possível [publicar na Visualização](/help/sites-cloud/authoring/fundamentals/previewing-content.md) (novamente no console ou editor Fragmentos de experiência).
+Como alternativa, também é possível [publicar para visualização](/help/sites-cloud/authoring/fundamentals/previewing-content.md) (novamente diretamento do console ou do editor de fragmentos de experiência).
 
-## Exportar fragmentos de experiência   {#exporting-experience-fragments}
+## Exportar fragmentos de experiência {#exporting-experience-fragments}
 
 Por padrão, os fragmentos de experiência são entregues no formato HTML. Isso pode ser usado pelo AEM e por canais de terceiros.
 
