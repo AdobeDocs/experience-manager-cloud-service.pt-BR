@@ -3,9 +3,9 @@ title: Manuseio básico
 description: Familiarize-se com navegação pelo AEM e seu uso básico
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
 source-git-commit: df29eb83efc026bc7fc21dde228cdac47361282d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2993'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -73,7 +73,7 @@ Em Navegação, os consoles disponíveis são:
 | Fragmentos de experiência | Um [Fragmento de experiência](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) é uma experiência independente que pode ser reutilizada em vários canais e que apresenta variações, evitando o trabalho de copiar e colar repetidamente as experiências ou partes das experiências. |
 | Ativos | O console de Ativos permite importar e gerenciar [ativos digitais como imagens, vídeos, documentos e arquivos de áudio.](/help/assets/overview.md) Esses ativos podem ser usados por um site em execução na mesma instância do AEM. Também é possível criar e gerenciar [Fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md) no console de Ativos. |
 | Personalização | Esse console fornece uma estrutura de ferramentas para a [criação de conteúdo direcionado e a apresentação de experiências personalizadas.](/help/sites-cloud/authoring/personalization/overview.md) |
-| Fragmentos de conteúdo | [Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments.md) permite criar, criar, preparar e publicar conteúdo independente da página. Eles permitem preparar conteúdo estruturado pronto para uso em vários locais/em vários canais e ideal para criação de página e entrega sem interface. |
+| Fragmentos de conteúdo | [Os fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments.md) permitem projetar, criar, preparar e publicar conteúdo independente de página. Eles permitem preparar conteúdo estruturado pronto para uso em vários locais/canais e são ideais para a criação de páginas e entrega headless. |
 
 ## Painel Ferramentas {#tools-panel}
 
