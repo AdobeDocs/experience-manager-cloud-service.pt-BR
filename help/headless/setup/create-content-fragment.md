@@ -3,9 +3,9 @@ title: Criação de fragmentos de conteúdo - Configuração do headless
 description: Saiba como usar fragmentos de conteúdo do AEM para projetar, criar, preparar e usar conteúdo independente de página para entrega headless.
 exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
 source-git-commit: d6038920a5866c19a94980cc14fa46dec48daf51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '348'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -25,21 +25,21 @@ Fragmentos de conteúdo contêm conteúdo estruturado e podem ser entregues no f
 
 Os autores de conteúdo criarão qualquer quantidade de fragmentos de conteúdo para representar o conteúdo que eles criam. Esta será a principal tarefa deles no AEM. Para os propósitos deste guia de introdução, só será necessário criar um.
 
-1. Efetue login AEM as a Cloud Service e, no menu principal, selecione **Navegação** -> **Fragmentos de conteúdo**.
+1. Faça logon no AEM as a Cloud Service e, no menu principal, selecione **Navegação** -> **Fragmentos de conteúdo**.
 
 1. Toque ou clique na [pasta criada anteriormente.](create-assets-folder.md)
 1. Toque ou clique em **Criar**.
-1. A criação de um Fragmento de conteúdo é apresentada como uma caixa de diálogo.
+1. A criação de um fragmento de conteúdo é apresentada como uma caixa de diálogo.
 Selecione o local e o modelo que deseja usar para criar o fragmento de conteúdo.
 
    * Os modelos disponíveis dependem da [**Configuração na nuvem** que foi definida para a pasta de ativos](create-assets-folder.md) na qual você está criando o fragmento de conteúdo.
    * Se o modelo não estiver disponível, verifique a configuração da pasta de ativos.
 
-   Adicione o Título, o Nome e, se necessário, a Descrição.
+   Adicione título, nome e, se necessário, a descrição.
 
    ![Caixa de diálogo Criar novo fragmento de conteúdo](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
 
-1. Toque ou clique **Criar** ou  **Criar e abrir**.
+1. Toque ou clique em **Criar** ou em **Criar e abrir**.
 
 Os fragmentos de conteúdo podem fazer referência a outros fragmentos de conteúdo, permitindo uma estrutura de conteúdo aninhada, se necessário.
 
