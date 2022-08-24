@@ -1,13 +1,13 @@
 ---
-title: Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2022.3.0.
-description: Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2022.3.0.
-source-git-commit: 5d0f6fb726527434c57dc058bcf3a7b9d512b551
-workflow-type: tm+mt
+title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2022.3.0.
+description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2022.3.0.
+exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
+source-git-commit: b71cd1394260c8ec14b661934199632987a034f6
+workflow-type: ht
 source-wordcount: '1152'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
-
 
 # Notas de versão atuais do [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
@@ -34,9 +34,9 @@ Assista ao vídeo [Visão geral da versão de março de 2022](https://video.tv.a
 
 ### Novos recursos disponíveis no canal de pré-lançamento do [!DNL Sites] {#prerelease-features-sites}
 
-* Os tipos de dados do modelo de conteúdo agora podem ser definidos como traduzíveis usando uma caixa de seleção simples no editor de modelo de conteúdo. Além disso, AEM regras e configurações de tradução são atualizadas automaticamente.
+* Os tipos de dados do modelo de conteúdo agora podem ser definidos como traduzíveis usando uma caixa de seleção simples no editor do modelo de conteúdo. Além disso, as regras e configurações de tradução do AEM são atualizadas automaticamente.
 
-## [!DNL Experience Manager Assets] como [!DNL Cloud Service] {#assets}
+## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Novos recursos no [!DNL Assets] {#assets-features}
 
@@ -56,7 +56,7 @@ Assista ao vídeo [Visão geral da versão de março de 2022](https://video.tv.a
 
 * Agora você pode [classificar tags](/help/assets/organize-assets.md#use-tags-to-organize-assets) na janela do seletor de tags em ordem crescente ou decrescente com base no nome da tag, data de criação ou data de modificação.
 
-## [!DNL Experience Manager Forms] como [!DNL Cloud Service] {#forms}
+## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Novidades do [!DNL Forms] {#what-is-new-forms}
 
@@ -83,7 +83,7 @@ Assista ao vídeo [Visão geral da versão de março de 2022](https://video.tv.a
 * Gerenciamento simplificado de configurações e tratamento de erros do CIF usando o nome de configuração da nuvem do CIF em vez da configuração do URL de proxy
 * Seleção manual da categoria para a lista de produtos e os componentes do carrossel. Isso permite que os profissionais de conteúdo usem esses componentes em páginas de conteúdo, fora da experiência de catálogo
 
-### Novos recursos disponíveis no canal de pré-lançamento da CIF {#prerelease-features-cif}
+### Novos recursos disponíveis no canal de pré-lançamento do CIF  {#prerelease-features-cif}
 
 * Suporte do componente principal de pesquisa CIF do AEM para o Commerce LiveSearch
 
@@ -103,7 +103,7 @@ Assista ao vídeo [Visão geral da versão de março de 2022](https://video.tv.a
 
 ## Cloud Manager {#cloud-manager}
 
-Você pode encontrar uma lista completa de versões mensais do Cloud Manager [here](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
+Você pode encontrar uma lista completa de versões mensais do Cloud Manager [aqui](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
 
 ## Ferramenta Transferência de conteúdo {#ctt-release}
 
@@ -113,7 +113,7 @@ A data de lançamento da Ferramenta de transferência de conteúdo v1.9.0 é 28 
 
 ### Novidades {#what-is-new-ctt}
 
-* Proteções de verificação de tamanho - O recurso de verificação de tamanho da Ferramenta de transferência de conteúdo ajuda a reduzir as falhas nas transferências de conteúdo. Com o recurso de verificação de tamanho, os usuários podem: 1) determinar se têm espaço em disco suficiente no subdiretório `crx-quickstart` antes da extração e 2) estimar o tamanho do conjunto de migração e verificar se ele é compatível. Se uma ou ambas as verificações forem violadas, os usuários verão avisos na interface da ferramenta de transferência de conteúdo (CTT). Com essa proteção, é possível evitar falhas de transferência de conteúdo e discutir proativamente as opções de migração com o Atendimento ao cliente da Adobe. Consulte [Determinar o tamanho do conjunto de migração e o espaço em disco](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=br#migration-set-size) para obter mais detalhes.
+* Proteções de verificação de tamanho - O recurso de verificação de tamanho da Ferramenta de transferência de conteúdo ajuda a reduzir as falhas nas transferências de conteúdo. Com o recurso de verificação de tamanho, os usuários podem: 1) determinar se têm espaço em disco suficiente no subdiretório `crx-quickstart` antes da extração e 2) estimar o tamanho do conjunto de migração e verificar se ele é compatível. Se uma ou ambas as verificações forem violadas, os usuários verão avisos na interface da ferramenta de transferência de conteúdo (CTT). Com essa proteção, é possível evitar falhas de transferência de conteúdo e discutir proativamente as opções de migração com o Atendimento ao cliente da Adobe. Consulte [Determinar o tamanho do conjunto de migração e o espaço em disco](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=pt-BR#migration-set-size) para obter mais detalhes.
 
 ## Analisador de práticas recomendadas {#bpa-release}
 
