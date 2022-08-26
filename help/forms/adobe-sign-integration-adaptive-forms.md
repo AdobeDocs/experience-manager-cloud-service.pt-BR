@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
-source-git-commit: 28bf3e1c33def6c8a17b39a6bd9abca10faa1bd8
+source-git-commit: 72c53bf69c36c265d25d136c0d2887cac2fe98fc
 workflow-type: tm+mt
-source-wordcount: '1024'
+source-wordcount: '1028'
 ht-degree: 1%
 
 ---
@@ -83,7 +83,7 @@ Depois que os pré-requisitos estiverem em vigor, execute as seguintes etapas pa
 
    ![Configuração OAuth](assets/oauthconfig_new.png)
 
-1. Volte para o **[!UICONTROL Criar configuração do Adobe Sign]** página. Especifique o [**[!UICONTROL ID do cliente]** (também referido como ID do pedido) e **[!UICONTROL Segredo do cliente]**]. Use o [ID do cliente e Segredo do cliente do aplicativo Adobe Sign](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret) você criou na etapa anterior.
+1. Volte para o **[!UICONTROL Criar configuração do Adobe Sign]** página. No **[!UICONTROL Configurações]** , especifique o [**[!UICONTROL ID do cliente]** (também referido como ID do pedido) e **[!UICONTROL Segredo do cliente]**]. Use o [ID do cliente e Segredo do cliente do aplicativo Adobe Sign](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret) você criou na etapa anterior.
 
 1. Selecione o **[!UICONTROL Ativar o Adobe Sign para anexos]** opção para anexar arquivos anexados a um formulário adaptável ao formulário correspondente [!DNL Adobe Sign] documento enviado para assinatura.
 
