@@ -2,10 +2,10 @@
 title: Painel de licenças
 description: O Cloud Manager fornece um painel para facilitar a visualização dos direitos de produto do AEMaaCS disponíveis para sua organização ou locatário.
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
-source-git-commit: 5bf65238ce4d1f619507d9a5f8b7574e58352d51
+source-git-commit: 28036cd047404babddbb1365c80327adc5b6fa71
 workflow-type: tm+mt
-source-wordcount: '782'
-ht-degree: 1%
+source-wordcount: '787'
+ht-degree: 4%
 
 ---
 
@@ -28,7 +28,7 @@ Para acessar o painel de licenças, siga estas etapas.
 >
 >Um usuário em **Proprietário da empresa** deve estar conectado para exibir o Painel de licenças.
 
-1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização apropriada.
+1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
 1. Na página de visão geral dos produtos, alterne para a **Licença** guia .
 
@@ -67,35 +67,21 @@ As solicitações de conteúdo são rastreadas nos servidores de borda AEM as a 
 
 AEM também tem regras em vigor para excluir bots conhecidos, incluindo serviços conhecidos visitando o site regularmente para atualizar seu índice de pesquisa ou serviço.
 
-Veja a seguir uma lista não exaustiva de exemplos de serviços bem conhecidos excluídos.
-
-* AddSearchBot
-* AhrefsBot
-* Applebot
-* Ask Jeeves Corporate Spider
-* Bingbot
-* BingPreview
-* BLEXBot
-* BuiltWith
-* Bytespider
-* CrawlerKengo
-* Facebook externalhit
-* Google AdsBot
-* Google AdsBot Mobile
-
 ### Por que meu relatório do Analytics mostra resultados diferentes das Solicitações de conteúdo AEM? {#why-are-reports-different}
 
 As Solicitações de conteúdo terão variações com as ferramentas de relatório do Analytics de uma organização, conforme resumido nesta tabela.
 
 | Motivo Da Variação | Explicação |
 |---|---|
-| Marcação com tags | Todas as páginas que são rastreadas como solicitações de conteúdo AEM podem ou não ser marcadas com o rastreamento do Analytics.<br>Todas as chamadas de API que são rastreadas como solicitações de conteúdo AEM não serão marcadas pela ferramenta Analytics de uma organização.<br>As páginas ou chamadas de API podem ser marcadas para rastrear ações em vez de visualizações. |
+| Marcação com tags | Todas as páginas que são rastreadas como solicitações de conteúdo AEM podem ou não ser marcadas com o rastreamento do Analytics. Todas as chamadas de API que são rastreadas como solicitações de conteúdo AEM não serão marcadas pela ferramenta Analytics de uma organização.<br>As páginas ou chamadas de API podem ser marcadas para rastrear ações ou apenas exibições de página exclusivas, em vez de todas as exibições. |
 | Regras do Tag Management | As configurações de regras do Tag Management podem resultar em várias configurações de coleta de dados em uma página, resultando em alguma combinação de discrepâncias com o rastreamento de solicitação de conteúdo. |
 | Bots | Os bots desconhecidos que não foram pré-identificados e removidos pelo AEM podem causar discrepâncias no rastreamento. |
 | Report Suites | As páginas que fazem parte da mesma instância e domínio de AEM podem enviar dados para conjuntos de relatórios do Analytics diferentes. |
 | Ferramentas de segurança e monitoramento de terceiros | Ferramentas de varredura de monitoramento e segurança podem gerar solicitações de conteúdo para AEM que não são rastreadas nos relatórios do Analytics. |
 | Buscar previamente solicitações | Usar um serviço de pré-busca para pré-carregar páginas para aumentar a velocidade pode causar um aumento significativo no tráfego de solicitação de conteúdo. |
-| DDOS | Embora o Adobe faça todos os esforços para detectar e filtrar automaticamente o tráfego de ataques de DDOS, não há garantia de que todos os possíveis ataques de DDOS serão detectados. |
+| DDOS | Embora o Adobe faça todos os esforços para detectar e filtrar automaticamente o tráfego de ataques de DDOS, não há garantia de que todos os possíveis ataques de DDOS serão detectados |
+| Bloqueadores de tráfego | O uso de um bloqueador de rastreadores em um navegador pode impedir que algumas solicitações sejam rastreadas. |
+| Firewalls | Os firewalls podem bloquear o rastreamento do Analytics. Isso é mais frequente com firewalls corporativos. |
 
 ### E se eu estiver usando meu próprio CDN? {#using-own-cdn}
 
