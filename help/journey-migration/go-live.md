@@ -2,9 +2,9 @@
 title: Ao vivo
 description: Saiba como executar a migração assim que o código e o conteúdo estiverem prontos para a nuvem
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: cc90803ff1ccf109ca6a02f2b69aa54362fa867e
+source-git-commit: 9ffde71af0c24c0592ef9ca008ddeaf9ce70599e
 workflow-type: tm+mt
-source-wordcount: '1644'
+source-wordcount: '1718'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 Nesta parte da jornada, você aprenderá a planejar e executar a migração assim que o código e o conteúdo estiverem prontos para serem transferidos para AEM as a Cloud Service. Além disso, você aprenderá quais são as práticas recomendadas e as limitações conhecidas ao executar a migração.
 
-## A História Até Agora {#story-so-far}
+## A história até agora {#story-so-far}
 
 Nas fases anteriores da jornada:
 
@@ -144,6 +144,7 @@ Revise esta lista de atividades para garantir que você realize uma migração t
          * [Introdução ao Gerenciamento de certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
          * [Gerenciar certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       * Gerenciando nomes de domínio personalizados (DNS)
+         * Para garantir que o contêiner de DNS não apresente problemas inesperados, é melhor criar um subdomínio de teste para conectar sua instância de produção ao antes de entrar em funcionamento e realizar um ciclo de teste de UAT. Portanto, se o domínio for example.com, você poderá criar um subdomínio test.example.com e aplicá-lo à produção. Durante o teste de UAT do domínio, você desejará procurar por coisas como redirecionamento de link adequado, armazenamento em cache e configurações do dispatcher.
          * [Introdução a nomes de domínio personalizados](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          * [Adicionar um nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
          * [Gerenciar nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
