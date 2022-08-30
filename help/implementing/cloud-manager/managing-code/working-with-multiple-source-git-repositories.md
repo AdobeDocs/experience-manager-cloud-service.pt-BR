@@ -1,15 +1,15 @@
 ---
-title: Usando vários repositórios
+title: Uso de vários repositórios
 description: Saiba como gerenciar vários repositórios git ao trabalhar com o Cloud Manager.
 exl-id: 1b9cca36-c2d7-4f9e-9733-3f1f4f8b2c7a
-source-git-commit: a7555507f4fb0fb231e27d7c7a6413b4ec6b94e6
+source-git-commit: ea89dfd560d317e97179e74c297d1b93bb67f125
 workflow-type: tm+mt
 source-wordcount: '757'
 ht-degree: 0%
 
 ---
 
-# Usando vários repositórios {#working-with-multiple-source-git-repos}
+# Uso de vários repositórios {#working-with-multiple-source-git-repos}
 
 Saiba como gerenciar vários repositórios git ao trabalhar com o Cloud Manager.
 
@@ -109,7 +109,7 @@ jobs:
       # Checkout the main project
       - name: Checkout main project
         run:
-          git clone -b ${MAIN_BRANCH} https://${{ secrets.PAT }}@github.com/${MAIN_REPOSITORY}.git main 
+          git clone -b ${MAIN_BRANCH} ${MAIN_REPOSITORY}.git main 
       # Move sub project
       - name: Move project to main project
         run: |

@@ -2,9 +2,9 @@
 title: Adicionar um certificado SSL
 description: Saiba como adicionar seu próprio certificado SSL usando as ferramentas de autoatendimento do Cloud Manager.
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: 2c87d5fb33b83ca77b97391e4b0baaf38f8dd026
+source-git-commit: 14e0255b3ce2ca44579b9fc3de6c7b7f5d8f34b6
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '579'
 ht-degree: 2%
 
 ---
@@ -57,9 +57,7 @@ Siga estas etapas para adicionar um certificado usando o Cloud Manager.
 
    * Insira um nome para o certificado em **Nome do certificado**.
       * Isso é apenas para fins informativos e pode ser qualquer nome que ajude você a fazer referência ao certificado facilmente.
-   * Cole o **Certificado**, **Chave privada** e **Cadeia de certificados** nos respectivos campos.
-      * Você pode usar o ícone de colar à direita da caixa de entrada.
-      * Todos os três campos são obrigatórios.
+   * Cole o **Certificado**, **Chave privada** e **Cadeia de certificados** nos respectivos campos. Todos os três campos são obrigatórios.
 
    ![Caixa de diálogo Adicionar certificado SSL](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
 
