@@ -3,7 +3,7 @@ title: Notas de versão do Cloud Manager AEM versão as a Cloud Service 2021.3.0
 description: Notas de versão do Cloud Manager AEM versão as a Cloud Service 2021.3.0
 feature: Release Information
 exl-id: f826e0c6-3b1d-44f5-99a2-f792f5df3a55
-source-git-commit: 71647239fc5e740faa25524a01a8ef21ed2d7a3b
+source-git-commit: 575be022704e998e63162f19c37ece877efef627
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 1%
@@ -29,7 +29,7 @@ A data de lançamento do Cloud Manager AEM as a Cloud Service 2021.3.0 é 11 de 
    * Remova Sites ou Ativos de um programa existente com Sites e Ativos.
    * Adicione o segundo direito de solução não utilizado a um programa existente ou como um novo Programa.
 
-* **Atualização de push do AEM** agora será exibido para as telas Execução do pipeline e Atividade .
+* **Atualização de manutenção de AEM** agora será exibido para as telas Execução do pipeline e Atividade .
 
 * Se um ambiente estiver hibernado, mas também houver uma atualização de AEM disponível, a variável **Hibernado** o status terá precedência sobre **Atualização disponível**.
 

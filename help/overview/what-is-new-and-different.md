@@ -2,10 +2,10 @@
 title: O que é diferente e quais são as novidades - Adobe Experience Manager as a Cloud Service
 description: O que é diferente e quais são as novidades - Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: 575be022704e998e63162f19c37ece877efef627
 workflow-type: tm+mt
-source-wordcount: '1904'
-ht-degree: 99%
+source-wordcount: '1903'
+ht-degree: 92%
 
 ---
 
@@ -67,26 +67,27 @@ Isso permite o dimensionamento automático para vários padrões de uso:
 
 ## Atualizações do AEM {#aem-updates}
 
->[!NOTE]
->Para mais detalhes, consulte as [Atualizações de versão do AEM](/help/implementing/deploying/aem-version-updates.md).
-
-O AEM as a Cloud Service agora usa a Integração contínua e o Delivery contínuo (CI/CD) para garantir que seus projetos estejam na versão do AEM mais recente. Isso significa que as instâncias de Produção e Preparo são atualizadas para a versão mais recente do AEM sem interrupção do serviço para os usuários.
+AEM as a Cloud Service agora usa integração contínua e entrega contínua (CI/CD) para garantir que seus projetos estejam na versão de AEM mais recente. Isso significa que as instâncias de produção e de preparo são atualizadas para a versão de AEM mais recente, sem interrupção do serviço para os usuários.
 
 >[!NOTE]
-> Se a atualização para o ambiente de produção falhar, o Cloud Manager reverterá automaticamente o ambiente de preparo. Isso é feito automaticamente para garantir que, após a conclusão de uma atualização, os ambientes de preparo e de produção estejam na mesma versão do AEM.
+>
+>Se a atualização para o ambiente de produção falhar, o Cloud Manager reverterá automaticamente o ambiente de preparo. Isso é feito automaticamente para garantir que, após a conclusão de uma atualização, os ambientes de preparo e produção estejam na mesma versão AEM.
 
-As atualizações de versão do AEM são de dois tipos:
+Há dois tipos de atualizações de versão AEM:
 
-* **Atualizações de push do AEM**
+* **Atualizações de manutenção de AEM**
 
    * Pode ser lançado diariamente.
-   * Geralmente manutenção, incluindo as últimas correções de erros e atualizações de segurança.
-
-      Como as alterações são aplicadas regularmente, o impacto é incremental, reduzindo o impacto no serviço.
+   * Elas são utilizadas principalmente para fins de manutenção, incluindo as correções de erros e atualizações de segurança mais recentes.
+   * Ter um impacto mínimo, uma vez que as alterações são aplicadas regularmente.
 
 * **Novas atualizações de recursos**
 
-   * Liberado em um cronograma mensal previsível.
+   * São liberados por meio de uma programação mensal previsível.
+
+>[!TIP]
+>
+>Para mais detalhes, consulte as [Atualizações de versão do AEM](/help/implementing/deploying/aem-version-updates.md).
 
 ## Cloud Manager {#cloud-manager}
 
