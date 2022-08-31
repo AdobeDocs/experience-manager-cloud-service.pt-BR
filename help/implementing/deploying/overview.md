@@ -3,7 +3,7 @@ title: Implantação do AEM as a Cloud Service
 description: 'Implantação do AEM as a Cloud Service '
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 4fcb2ff39f0634cfcdab5500b03441f6db0b474d
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '3358'
 ht-degree: 1%
@@ -67,7 +67,7 @@ Todo o conteúdo e código persistente no repositório imutável devem ser verif
 
 Para clientes com bases de código existentes, é importante passar pelo exercício de reestruturação de repositório descrito em AEM documentação para garantir que o conteúdo anteriormente sob o /etc seja movido para o local correto.
 
-Algumas restrições adicionais se aplicam a esses pacotes de código, por exemplo [instalar ganchos](http://jackrabbit.apache.org/filevault/installhooks.html) não são compatíveis.
+Algumas restrições adicionais se aplicam a esses pacotes de código, por exemplo [instalar ganchos](https://jackrabbit.apache.org/filevault/installhooks.html) não são compatíveis.
 
 ## Configuração OSGI {#osgi-configuration}
 
@@ -104,7 +104,7 @@ Após a mudança para a nova versão do aplicativo:
    * Pastas (adicionar, modificar, remover)
    * Modelos editáveis (adicionar, modificar, remover)
    * Configuração sensível ao contexto (qualquer item abaixo de `/conf`) (adicionar, modificar, remover)
-   * Scripts (pacotes podem acionar hooks de instalação em vários estágios do processo de instalação do pacote). Consulte a [Documentação do Jackrabbit filevault](http://jackrabbit.incubator.apache.org/filevault/installhooks.html) sobre ganchos de instalação. Observe que AEM CS usa atualmente o Filevault versão 3.4.0, que limita os ganchos de instalação para usuários administradores, usuários do sistema e membro do grupo de administradores).
+   * Scripts (pacotes podem acionar hooks de instalação em vários estágios do processo de instalação do pacote). Consulte a [Documentação do Jackrabbit filevault](https://jackrabbit.incubator.apache.org/filevault/installhooks.html) sobre ganchos de instalação. Observe que AEM CS usa atualmente o Filevault versão 3.4.0, que limita os ganchos de instalação para usuários administradores, usuários do sistema e membro do grupo de administradores).
 
 É possível limitar a instalação de conteúdo mutável para criar ou publicar incorporando pacotes em uma pasta install.author or install.publish em `/apps`. A reestruturação para refletir esta separação foi efetuada no AEM 6.5 e podem ser obtidas informações pormenorizadas sobre a reestruturação de projetos recomendada no [AEM documentação 6.5.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=pt-BR)
 

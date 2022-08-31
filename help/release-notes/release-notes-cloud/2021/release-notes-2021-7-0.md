@@ -1,11 +1,11 @@
 ---
-title: Notas de versão do  [!DNL Adobe Experience Manager] as a Cloud Service 2021.7.0.
-description: Notas de versão do  [!DNL Adobe Experience Manager] as a Cloud Service 2021.7.0.
+title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2021.7.0.
+description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2021.7.0.
 exl-id: 848f6a29-2e0f-4976-8ed7-6b7f69408c1b
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
-source-wordcount: '1315'
-ht-degree: 13%
+source-wordcount: '1316'
+ht-degree: 12%
 
 ---
 
@@ -88,7 +88,7 @@ A API `com.day.cq.dam.api.collection.SmartCollection` não está disponível em 
 
 ### Novos recursos disponíveis no canal de pré-lançamento do [!DNL Forms] {#beta-features-forms}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [APIs de comunicação](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html?lang=pt-BR) Ajudar a combinar modelos XDP e dados XML para gerar documentos de impressão em vários formatos. O serviço permite gerar documentos no modo síncrono. As APIs permitem criar aplicativos que possibilitam a você:
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [APIs de comunicação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) Ajudar a combinar modelos XDP e dados XML para gerar documentos de impressão em vários formatos. O serviço permite gerar documentos no modo síncrono. As APIs permitem criar aplicativos que possibilitam a você:
    * Gerar documentos preenchendo arquivos de modelo com dados XML.
    * Gerar formulários de saída em vários formatos, incluindo fluxos de impressão de PDF não interativos.
    * Gere arquivos PDF de impressão a partir de um PDF de formulário XFA e do Formulário Adobe Acrobat.
@@ -134,11 +134,11 @@ A API `com.day.cq.dam.api.collection.SmartCollection` não está disponível em 
 
 * Tags com o mesmo nome, mas namespaces diferentes, não puderam ser criadas anteriormente.
 
-## Documentação XML para Experience Manager as a Cloud Service {#xml-documentation}
+## XML Documentation para Experience Manager as a Cloud Service {#xml-documentation}
 
 ### Novidades {#what-is-new-xml-documentation}
 
-A Documentação XML para Experience Manager as a Cloud Service geralmente está disponível. Ele permite que os clientes do Experience Manager as a Cloud Service adquiram a Documentação XML e importem, criem, gerenciem e entreguem conteúdo técnico em vários canais, incluindo o Experience Manager Sites.
+O XML Documentation for Experience Manager as a Cloud Service está disponível em geral. Ele permite que os clientes as a Cloud Service do Experience Manager comprem o XML Documentation para importar, criar, gerenciar e fornecer conteúdo técnico em vários canais, incluindo o Experience Manager Sites.
 
 ## Cloud Manager {#cloud-manager}
 

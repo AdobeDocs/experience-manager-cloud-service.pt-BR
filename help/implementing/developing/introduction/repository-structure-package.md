@@ -2,7 +2,7 @@
 title: 'Pacote de estrutura do repositório de projetos do AEM  '
 description: Os projetos do Adobe Experience Manager as a Cloud Service Maven exigem uma definição de sub-pacote de estrutura de repositório cujo único objetivo é definir as raízes do repositório JCR nas quais os sub-pacotes de código do projeto são implantados.
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 9%
@@ -37,7 +37,7 @@ Certifique-se de adicionar este novo subprojeto Maven aos projetos principais `<
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <!-- ====================================================================== -->
@@ -182,4 +182,4 @@ Isso indica que o pacote de código de quebra não tem um `<repositoryStructureP
 
 ## Recursos adicionais
 
-+ [Plug-in FileVault Content Package Maven](http://jackrabbit.apache.org/filevault-package-maven-plugin/)
++ [Plug-in FileVault Content Package Maven](https://jackrabbit.apache.org/filevault-package-maven-plugin/)

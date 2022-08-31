@@ -2,10 +2,10 @@
 title: 'Registro, logon e perfil do usuário '
 description: Saiba mais sobre registro, logon, dados do usuário e sincronização de grupos no AEM as a Cloud Service
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: c49a70b4048acc4e925c69b7ebbedbf8779bbbc0
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '1174'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -59,7 +59,7 @@ O logon pode ser implementado com as duas abordagens a seguir:
 Os clientes podem gravar seus próprios componentes personalizados. Para saber mais, familiarize-se com:
 
 * A [estrutura de autenticação do Sling](https://sling.apache.org/documentation/the-sling-engine/authentication/authentication-framework.html)
-* E considere [fazer perguntas na sessão dos especialistas da comunidade do AEM](http://bit.ly/ATACEFeb15) sobre logon.
+* E considere [fazer perguntas na sessão dos especialistas da comunidade do AEM](https://bit.ly/ATACEFeb15) sobre logon.
 
 ### Integração com um provedor de identidade {#integration-with-an-idp}
 

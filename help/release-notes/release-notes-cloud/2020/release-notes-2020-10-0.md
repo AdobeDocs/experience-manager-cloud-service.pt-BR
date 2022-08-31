@@ -1,11 +1,11 @@
 ---
-title: Notas de versão do  [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0.
+title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2020.10.0.
 description: '"[!DNL Adobe Experience Manager] Notas de versão as a Cloud Service para 2020.10.0."'
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
-source-wordcount: '1195'
-ht-degree: 23%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -55,7 +55,7 @@ A seguinte versão (2020.11.0) será lançada em 1º de dezembro de 2020.
 
 ### Recursos beta de [!DNL Forms] {#sep-what-is-new-forms-oct-prerelease}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [APIs de comunicação](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html?lang=pt-BR) ajuda a combinar um modelo e dados XML para gerar documentos em vários formatos. O serviço permite gerar documentos no modo síncrono e em lote.
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [APIs de comunicação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) ajuda a combinar um modelo e dados XML para gerar documentos em vários formatos. O serviço permite gerar documentos no modo síncrono e em lote.
 
 Você pode escrever para [!DNL formscsbeta@adobe.com] para se inscrever no programa beta.
 

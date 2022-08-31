@@ -1,11 +1,11 @@
 ---
-title: Notas de versão do  [!DNL Adobe Experience Manager] as a Cloud Service 2021.9.0.
-description: Notas de versão do  [!DNL Adobe Experience Manager] as a Cloud Service 2021.9.0.
+title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2021.9.0.
+description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2021.9.0.
 exl-id: 8c12ff09-fbc8-42dd-87c0-46e509604f36
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
-source-wordcount: '1572'
-ht-degree: 11%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -78,7 +78,7 @@ CQ-4328183 was not reported on CS so not documented here.
    * Habilite a funcionalidade de salvar e retomar do Forms Portal e armazene rascunhos de formulários adaptáveis em um repositório de dados gerenciado pelo cliente.
    * Armazene dados de fluxos de trabalho AEM em andamento (dados AEM variáveis de fluxo de trabalho) que contêm dados confidenciais pessoais (SPD) em um repositório gerenciado pelo cliente.
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [APIs de comunicação](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html?lang=en) Ajudar a combinar modelos XDP e dados XML para gerar documentos de impressão em vários formatos. O serviço permite gerar documentos no modo síncrono. As APIs permitem criar aplicativos que possibilitam a você:
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [APIs de comunicação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) Ajudar a combinar modelos XDP e dados XML para gerar documentos de impressão em vários formatos. O serviço permite gerar documentos em modo síncrono. As APIs permitem criar aplicativos que possibilitam a você:
    * Gerar documentos preenchendo arquivos de modelo com dados XML.
    * Gerar formulários de saída em vários formatos, incluindo fluxos de impressão de PDF não interativos.
    * Gere arquivos PDF de impressão a partir de um PDF de formulário XFA e do Formulário Adobe Acrobat.

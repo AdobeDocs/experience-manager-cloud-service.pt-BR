@@ -2,10 +2,10 @@
 title: Criar conteúdo acessível para o Adobe Experience Manager as a Cloud Service (Conformidade com WCAG 2.1)
 description: Usar o AEM as a Cloud Service para ajuda a tornar o conteúdo da Web acessível e utilizável por pessoas com deficiência
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: e9c1ec6807f86ab00f89ef292a89a0c8efdf802b
-workflow-type: ht
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+workflow-type: tm+mt
 source-wordcount: '14050'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -76,7 +76,7 @@ Para gráficos estáticos, o requisito básico é o de proporcionar uma alternat
 >
 >Ao implementar as versões desses componentes para a instância do AEM, sua equipe de desenvolvimento precisará configurá-los para suportar o atributo `alt`, para que os autores possam adicioná-lo ao conteúdo (consulte Adicionar suporte para elementos HTML e atributos adicionais).
 >
->Alguns Componentes principais predefinidos, como **[Carrossel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html?lang=pt_BR)**, não fornecem um campo **Texto alternativo** para adicionar descrições de texto alternativo a imagens individuais, embora exista o campo **Rótulo** (guia **[Acessibilidade](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html?lang=pt_BR#accessibility-tab)**) para o componente inteiro.
+>Alguns Componentes principais predefinidos, como **[Carrossel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html)**, não fornecem um campo **Texto alternativo** para adicionar descrições de texto alternativo a imagens individuais, embora exista o campo **Rótulo** (guia **[Acessibilidade](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html#accessibility-tab)**) para o componente inteiro.
 >
 >Ao implementar as versões desses componentes para a instância do AEM, sua equipe de desenvolvimento precisará configurá-los para suportar o atributo `alt`, para que os autores possam adicioná-lo ao conteúdo (consulte [Adicionar suporte para elementos HTML e atributos adicionais](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
@@ -362,6 +362,7 @@ O AEM facilita a construção de conteúdo da Web semanticamente significativo u
       >
       >* `<b>` para `<strong>`
       >* `<i>` para `<em>`
+
       >
       >Eles são efetivamente os mesmos, mas `<strong>` e `<em>` são preferíveis, pois são html semanticamente corretos. Sua equipe de desenvolvimento pode configurar o RTE para usar `<strong>` e `<em>` (em vez de `<b>` e `<i>`), ao desenvolver a instância do projeto.
 
@@ -568,7 +569,7 @@ Verifique se o texto contrasta o suficiente com o plano de fundo. As relações 
 >
 >* [Px to Em Calculater - Omni](https://www.omnicalculator.com/conversion/px-to-em)
 >* [Font size conversion: pixel-point-em-rem-percent](https://websemantics.uk/tools/font-size-conversion-pixel-point-em-rem-percent/)
->* [PMtoEM.com: PX to EM conversion made simple](http://pxtoem.com)
+>* [PMtoEM.com: PX to EM conversion made simple](https://pxtoem.com)
 
 
 Para verificar as relações de contraste, use uma ferramenta de contraste em cores, como o [Paciello Group Color Contrast Analyser](https://www.paciellogroup.com/resources/contrast-analyser.html) ou o [verificador de contraste em cores do WebAIM](https://www.webaim.org/resources/contrastchecker/). Essas ferramentas permitem que você verifique os pares de cores e informe quaisquer problemas de contraste.

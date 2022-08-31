@@ -2,7 +2,7 @@
 title: Notas de versão do  [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0.
 description: '"[!DNL Adobe Experience Manager] Notas de versão as a Cloud Service para 2020.7.0."'
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '1038'
 ht-degree: 82%
@@ -57,13 +57,13 @@ O AEM Commerce agora está disponível no Cloud Service.
 
 Consulte [Introdução ao AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html) para obter mais detalhes.
 
-## Componentes principais {#core-components}
+## Componentes principais  {#core-components}
 
 ### Novidades {#what-is-new-core-components}
 
 A versão 2.11.0 dos [Componentes principais do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) agora está disponível como parte do AEM Sites, incluindo:
 
-* Introdução de um novo [Visualizador de PDF](https://aemcomponents.dev/content/core-components-examples/library/page-authoring/pdf-viewer.html).
+* Introdução de um novo [Visualizador de PDF](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/pdf-viewer.html).
 
 * O suporte para Accelerated Mobile Pages (AMP) dos Componentes principais já está disponível. As páginas AMP ajudam a produzir experiências mais rápidas para o cliente, fazendo a transição da página de maneira instantânea ao entrar no site a partir de um resultado de pesquisa do Google para dispositivos móveis, o que melhora a participação do usuário e o SEO.
 Consulte [Suporte AMP para os Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html) para obter mais detalhes
