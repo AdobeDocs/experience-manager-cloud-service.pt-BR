@@ -2,9 +2,9 @@
 title: AEM equipe as a Cloud Service e perfis de produto
 description: Saiba como AEM equipe as a Cloud Service e perfis de produtos, além de conceder e limitar o acesso às soluções de Adobe licenciadas.
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
-source-git-commit: 2d793f22e554c2a4bde8831b5053d1640ba07c70
+source-git-commit: d54c25791cbb06232ff6e24bb7b8005b366a2144
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '637'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ O Cloud Manager tem perfis de produto pré-configurados que podem ser considerad
 
 Cada um dos perfis de produto tem permissões específicas associadas a eles.
 
-* **Proprietário da empresa** - Nesta função, você tem permissão para adicionar um novo programa ou editar um programa, adicionar ou atualizar um ambiente, adicionar/editar/excluir/executar pipelines, implantar código em AEM ambiente ou executar verificações de qualidade de código.
+* **Proprietário da empresa** - Nesta função, você tem permissão para adicionar um novo programa ou editar um programa, adicionar ou atualizar um ambiente, implantar código em AEM ambiente ou executar verificações de qualidade de código.
 * **Gerenciador de implantação** - Nesta função, você tem a permissão para adicionar ou atualizar um ambiente, executar qualquer pipeline e implantar código em AEM ambiente ou executar verificações de qualidade de código.
 * **Desenvolvedor** - Nesta função, você tem permissão para gerar tokens de acesso pessoal para acessar o git.
 * **Gerenciador de programas** - Nessa função, você tem permissão para programar pipelines, substituir as portas de qualidade de 3 níveis e fornecer aprovação de produção.
