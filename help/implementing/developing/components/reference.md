@@ -2,16 +2,16 @@
 title: Guia de referência de componentes
 description: Um guia de referência do desenvolvedor para obter os detalhes dos componentes e sua estrutura
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
 workflow-type: tm+mt
 source-wordcount: '3659'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 # Guia de referência de componentes {#components-reference-guide}
 
-Os componentes estão no centro da criação de uma experiência no AEM. O [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) e [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR) facilita começar a usar um conjunto de ferramentas de componentes robustos e prontos. O [Tutorial WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) O leva o desenvolvedor a usar essas ferramentas e como criar componentes personalizados para criar um novo site de AEM.
+Os componentes estão no centro da criação de uma experiência no AEM. O [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) e [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt_BR) facilita começar a usar um conjunto de ferramentas de componentes robustos e prontos. O [Tutorial WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) O leva o desenvolvedor a usar essas ferramentas e como criar componentes personalizados para criar um novo site de AEM.
 
 >[!TIP]
 >
@@ -41,7 +41,7 @@ Antes de investir tempo na criação de um componente totalmente novo, considere
 
 #### Extensão dos componentes principais {#extending-core-components}
 
-Os Componentes principais também oferecem [limpar padrões de personalização](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html) que você pode usar para adaptá-las às necessidades do seu próprio projeto.
+Os Componentes principais também oferecem [limpar padrões de personalização](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=pt-BR) que você pode usar para adaptá-las às necessidades do seu próprio projeto.
 
 #### Sobreposição de componentes {#overlying-components}
 
@@ -59,11 +59,11 @@ Seu componente será renderizado com [HTML.](https://www.w3schools.com/htmL/html
 
 É recomendável manter o código responsável pela marcação e renderização separadas do código que controla a lógica usada para selecionar o conteúdo do componente.
 
-Essa filosofia é apoiada por [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=pt-BR), uma linguagem de modelo que é propositalmente limitada para garantir uma linguagem de programação real é usada para definir a lógica comercial subjacente. Esse mecanismo destaca o código chamado para uma determinada visualização e, se necessário, permite uma lógica específica para diferentes visualizações do mesmo componente.
+Essa filosofia é apoiada por [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html), uma linguagem de modelo que é propositalmente limitada para garantir uma linguagem de programação real é usada para definir a lógica comercial subjacente. Esse mecanismo destaca o código chamado para uma determinada visualização e, se necessário, permite uma lógica específica para diferentes visualizações do mesmo componente.
 
 Essa lógica (opcional) pode ser implementada de diferentes maneiras e é invocada do HTL com comandos específicos:
 
-* Uso do Java - [A API de uso do Java do HTL](https://helpx.adobe.com/experience-manager/htl/using/use-api-java.html) permite que um arquivo HTL acesse métodos de ajuda em uma classe Java personalizada. Isso permite usar o código Java para implementar a lógica de seleção e configuração do conteúdo do componente.
+* Uso do Java - [A API de uso do Java do HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html) permite que um arquivo HTL acesse métodos de ajuda em uma classe Java personalizada. Isso permite usar o código Java para implementar a lógica de seleção e configuração do conteúdo do componente.
 * Uso do JavaScript - [A API de uso do JavaScript do HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html) permite que um arquivo HTL acesse o código auxiliar gravado em JavaScript. Isso permite usar o código JavaScript para implementar a lógica de seleção e configuração do conteúdo do componente.
 * Uso de bibliotecas do lado do cliente - Sites modernos dependem muito do processamento no lado do cliente impulsionado por códigos complexos de JavaScript e CSS. Consulte o documento [Usar bibliotecas do lado do cliente no AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md) para obter mais informações.
 

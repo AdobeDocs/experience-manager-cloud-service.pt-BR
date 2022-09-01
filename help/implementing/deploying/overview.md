@@ -3,9 +3,9 @@ title: Implantação do AEM as a Cloud Service
 description: 'Implantação do AEM as a Cloud Service '
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
 workflow-type: tm+mt
-source-wordcount: '3358'
+source-wordcount: '3346'
 ht-degree: 1%
 
 ---
@@ -104,7 +104,7 @@ Após a mudança para a nova versão do aplicativo:
    * Pastas (adicionar, modificar, remover)
    * Modelos editáveis (adicionar, modificar, remover)
    * Configuração sensível ao contexto (qualquer item abaixo de `/conf`) (adicionar, modificar, remover)
-   * Scripts (pacotes podem acionar hooks de instalação em vários estágios do processo de instalação do pacote). Consulte a [Documentação do Jackrabbit filevault](https://jackrabbit.incubator.apache.org/filevault/installhooks.html) sobre ganchos de instalação. Observe que AEM CS usa atualmente o Filevault versão 3.4.0, que limita os ganchos de instalação para usuários administradores, usuários do sistema e membro do grupo de administradores).
+   * Scripts (pacotes podem acionar hooks de instalação em vários estágios do processo de instalação do pacote). <!-- MISDIRECTED REQUEST, 421 ERROR, CAN'T FIND CORRECT PATH See the [Jackrabbit filevault documentation](https://jackrabbit.incubator.apache.org/filevault/installhooks.html) about install hooks. --> Observe que AEM CS usa atualmente o Filevault versão 3.4.0, que limita os ganchos de instalação para usuários administradores, usuários do sistema e membro do grupo de administradores).
 
 É possível limitar a instalação de conteúdo mutável para criar ou publicar incorporando pacotes em uma pasta install.author or install.publish em `/apps`. A reestruturação para refletir esta separação foi efetuada no AEM 6.5 e podem ser obtidas informações pormenorizadas sobre a reestruturação de projetos recomendada no [AEM documentação 6.5.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=pt-BR)
 

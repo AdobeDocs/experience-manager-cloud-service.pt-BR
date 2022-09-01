@@ -2,10 +2,10 @@
 title: AEM - Perguntas frequentes sobre a integração com o Commerce usando a Commerce Integration Framework
 description: AEM - Perguntas frequentes sobre a integração com o Commerce usando a Commerce Integration Framework
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
-source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
 workflow-type: tm+mt
-source-wordcount: '964'
-ht-degree: 35%
+source-wordcount: '969'
+ht-degree: 28%
 
 ---
 
@@ -17,13 +17,13 @@ O Adobe adotou as APIs GraphQL da Adobe Commerce como a API oficial para todos o
 
 ## 2. Os ativos do produto (imagens) podem ser armazenados e referenciados AEM por meio do administrador do Adobe Commerce? Como os ativos do Dynamic Media podem ser consumidos?
 
-Não há integração oficial AEM Assets - Adobe Commerce disponível. Há um conector de parceiro disponível na [marketplace](https://marketplace.magento.com/bounteous-dam.html).
+Não há integração oficial AEM Assets - Adobe Commerce disponível. Há um conector de parceiro disponível na [marketplace](https://marketplace.magento.com) <!-- THIS IS THE OLD URL THAT WAS USED. IT WAS 404 (https://marketplace.magento.com/bounteous-dam.html) -->
 
-Ou, como solução alternativa, você pode armazenar ativos de produtos (imagens) no AEM Assets, mas terá que armazenar manualmente os URLs de ativos no Adobe Commerce. O Dynamic Media agora faz parte do AEM Assets e funcionará da mesma maneira.
+Ou, como solução alternativa, você pode armazenar ativos de produtos (imagens) no AEM Assets, mas deve armazenar manualmente os URLs de ativos no Adobe Commerce. O Dynamic Media agora faz parte do AEM Assets e funciona da mesma maneira.
 
 ## 3. Importa onde a solução comercial é implantada? (No local ou na nuvem)
 
-Não, não importa onde sua solução comercial é implantada. A CIF e a loja de AEM funcionarão independentemente do modelo de implantação. No entanto, se a solução for implantada com a arquitetura de referência E2E recomendada, os testes E2E poderão ser executados em relação aos KPIs de desempenho que representam um perfil de cliente empresarial típico. Isso fornecerá informações adicionais que podem ser usadas como referencial.
+Não, não importa onde sua solução comercial é implantada. A CIF e a loja de AEM funcionam independentemente do modelo de implantação. No entanto, se a solução for implantada com a arquitetura de referência E2E recomendada, os testes E2E poderão ser executados em relação aos KPIs de desempenho que representam um perfil de cliente empresarial típico. Este método fornece informações adicionais que podem ser usadas como referencial.
 
 ## 4. Como as páginas de catálogo ou de produto são criadas no AEM? Como elas continuam a existir no AEM?
 
@@ -43,23 +43,23 @@ Os dados do PIM são expostos ao AEM e aos clientes por meio de solicitações d
 
 ## 8. Também é possível armazenar preços e outros dados em cache por meio do Dispatcher? Esse armazenamento gera um desafio frequente de invalidação de cache?
 
-Dados dinâmicos, como preço ou inventário, não são armazenados em cache no Dispatcher. Os dados dinâmicos são obtidos por via direta no lado do cliente com componentes da Web usando APIs GraphQL. Somente dados estáticos (como dados de produto ou categoria) são armazenados em cache no Dispatcher. Se os dados do produto forem alterados, será preciso invalidar o cache.
+Dados dinâmicos, como preço ou inventário, não são armazenados em cache no Dispatcher. Os dados dinâmicos são obtidos por via direta no lado do cliente com componentes da Web usando APIs GraphQL. Somente dados estáticos (como dados de produto ou categoria) são armazenados em cache no Dispatcher. Se os dados do produto forem alterados, será necessário invalidar o cache.
 
 ## 9. Como a invalidação de cache para AEM Dispatcher funciona com AEM e comércio?
 
-Recomendamos configurar a invalidação do cache com base em TTL para páginas armazenadas em cache no Dispatcher. Para obter informações dinâmicas, como preço ou estoque, recomendamos renderizar os dados no lado do cliente. Para obter mais informações sobre a invalidação do cache com base em TTL, consulte [AEM Dispatcher](https://helpx.adobe.com/experience-manager/kb/optimizing-the-dispatcher-cache.html)
+Recomendamos configurar a invalidação do cache com base em TTL para páginas armazenadas em cache no Dispatcher. Para obter informações dinâmicas, como preço ou estoque, recomendamos renderizar os dados no lado do cliente. Para obter mais informações sobre a invalidação do cache com base em TTL, consulte [Otimização do cache do Dispatcher](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html) e [Otimização do desempenho AEM](https://experienceleague.adobe.com/docs/commerce-operations/deliver-commerce-at-scale/performance.html).
 
 ## 10. Há alguma recomendação sobre a pesquisa unificada de conteúdo no AEM com o Commerce?
 
-É fornecida uma implementação de referência de pesquisa de produto, mas não de pesquisa unificada com conteúdo. Normalmente, esse recurso é muito específico do cliente e é melhor resolvido em um nível específico do projeto.
+É fornecida uma implementação de referência de pesquisa de produto, mas não de pesquisa unificada com conteúdo. Esse recurso é específico do cliente e é melhor resolvido em um nível específico do projeto.
 
 ## 11. Como a pesquisa funciona com AEM e comércio usando a CIF?
 
-A CIF fornece os componentes Barra de pesquisa e Resultado da pesquisa. O componente Barra de pesquisa envia uma solicitação GraphQL com o termo de pesquisa para a solução de comércio, que retorna uma lista de produtos que inclui nome do produto, preço, SLUG, etc. O componente Resultado da pesquisa exibe os resultados da pesquisa em uma visualização de galeria em uma página de resultados da pesquisa criada no AEM. A Pesquisa aceita pesquisa básica de texto completo. Usamos a chave SLUG/URL para criar uma referência ao PDP.
+A CIF fornece os componentes Barra de pesquisa e Resultado da pesquisa. O componente Barra de pesquisa envia uma solicitação GraphQL com o termo de pesquisa para a solução comercial, que retorna uma lista de produtos que inclui nome do produto, preço, SLUG e assim por diante. O componente Resultado da pesquisa exibe os resultados da pesquisa em uma visualização de galeria em uma página de resultados da pesquisa criada no AEM. A Pesquisa aceita pesquisa básica de texto completo. Usamos a chave SLUG/URL para criar uma referência ao PDP.
 
 ## 12. Como os dados do produto podem ser usados em MSM ou traduções?
 
-Os dados do produto geralmente já são traduzidos no PIM ou no Adobe Commerce. A AEM - Adobe Commerce Integration suporta a conexão com várias lojas e visualizações de loja da Adobe Commerce. Em uma configuração MSM, normalmente um site de AEM é vinculado a uma visualização da loja da Adobe Commerce.
+Os dados do produto já são traduzidos no PIM ou no Adobe Commerce. A AEM - Adobe Commerce Integration suporta a conexão com várias lojas e visualizações de loja da Adobe Commerce. Em uma configuração do MSM, normalmente um site de AEM é vinculado a uma visualização da loja da Adobe Commerce.
 
 ## 13. Há alguma maneira de aprimorar os dados do produto com texto comercial? Onde é possível fazer isso? No AEM ou na solução comercial?
 
@@ -67,7 +67,7 @@ Recomendamos o gerenciamento de dados e conteúdo relacionados ao marketing no A
 
 ## 14. Como podemos garantir a conformidade com o PCI ao usar o AEM para a camada de apresentação inteira?
 
-Recomendamos o uso de métodos de pagamento abstratos. Isso coloca o cliente do navegador em comunicação direta com o provedor do gateway de pagamento para que nem o Adobe nem as soluções de comércio retenham ou transmitam os dados do titular do cartão. Esta abordagem requer apenas uma conformidade PCI de nível 3. No entanto, há outros aspectos que devem ser considerados em termos de conformidade com o PCI, como o modo como os funcionários interagem com o sistema e os dados. Para obter mais informações sobre a conformidade com a Adobe Commerce PCI, consulte [Requisitos de conformidade PCI](https://business.adobe.com/products/magento/pci-compliance.html).
+Recomendamos o uso de métodos de pagamento abstratos. Isso coloca o cliente do navegador em comunicação direta com o provedor do gateway de pagamento para que nem o Adobe nem as soluções de comércio retenham ou transmitam os dados do titular do cartão. Esta abordagem requer apenas uma conformidade PCI de nível 3. No entanto, há outros aspectos que devem ser considerados em total conformidade com o PCI, como a forma como os funcionários interagem com o sistema e os dados. Para obter mais informações sobre a conformidade com a Adobe Commerce PCI, consulte [Requisitos de conformidade PCI](https://business.adobe.com/products/magento/pci-compliance.html).
 
 ## 15. Se eu usar as versões de nuvem AEM e Adobe Commerce, esta solução conjunta é compatível com PCI?
 

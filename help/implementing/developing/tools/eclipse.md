@@ -2,7 +2,7 @@
 title: Ferramentas de desenvolvedor do AEM para Eclipse
 description: Ferramentas de desenvolvedor do AEM para Eclipse
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: d60659f443d130a195fd81cfe4773cd87df28264
 workflow-type: tm+mt
 source-wordcount: '1182'
 ht-degree: 3%
@@ -38,9 +38,9 @@ Antes de usar as Ferramentas do desenvolvedor do AEM, é necessário:
 
 ## Como instalar as ferramentas de desenvolvedor do AEM para o Eclipse {#how-to-install-the-aem-developer-tools-for-eclipse}
 
-Uma vez que tenha cumprido o [requisitos](#requirements) acima, você pode instalar o plug-in da seguinte maneira:
+Quando tiver cumprido [requisitos](#requirements) acima, você pode instalar o plug-in da seguinte maneira:
 
-1. Abra o [Site da Web das Ferramentas do Desenvolvedor do AEM.](https://eclipse.adobe.com/aem/dev-tools/)
+1. Abra o [Site das ferramentas do desenvolvedor do AEM](https://eclipse.adobe.com/aem/dev-tools/).
 
 1. Copie o **Link de instalação**.
 

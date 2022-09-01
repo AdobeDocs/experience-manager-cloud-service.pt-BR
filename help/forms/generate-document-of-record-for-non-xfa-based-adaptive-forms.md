@@ -2,9 +2,9 @@
 title: Gerar documento de registro para Forms adaptável
 description: Explica como você pode gerar um modelo para um Documento de registro (DoR) para Adaptive Forms.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: e9f235f4e4a1d314370a423ee8a2ef997346a794
+source-git-commit: 21db238b0808d6131c2a22de3d47ba7f7bd2f48b
 workflow-type: tm+mt
-source-wordcount: '3677'
+source-wordcount: '3659'
 ht-degree: 2%
 
 ---
@@ -408,8 +408,8 @@ Um arquivo XCI ajuda a definir várias propriedades de um documento. O Forms as 
 
 | Opção XCI | Descrição |
 |--- |--- |
-| config/presente/pdf/criador | Identifica o criador do documento usando a entrada Creator no dicionário Informações do documento. Para obter informações sobre esse dicionário, consulte a [Guia de referência do PDF](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/pdf_reference_archives/PDFReference.pdf). |
-| config/presente/pdf/produtor | Identifica o produtor do documento utilizando a menção Produtor no dicionário Informações do Documento. Para obter informações sobre esse dicionário, consulte a [Guia de referência do PDF](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/pdf_reference_archives/PDFReference.pdf). |
+| config/presente/pdf/criador | Identifica o criador do documento usando a entrada Creator no dicionário Informações do documento. Para obter informações sobre esse dicionário, consulte a [Guia de referência do PDF](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/). |
+| config/presente/pdf/produtor | Identifica o produtor do documento utilizando a menção Produtor no dicionário Informações do Documento. Para obter informações sobre esse dicionário, consulte a [Guia de referência do PDF](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/). |
 | configuração/presente/layout | Controla se a saída é um único painel ou paginado. |
 | config/presente/pdf/compression/level | Especifica o grau de compactação a ser usado ao gerar um documento PDF. |
 | config/present/pdf/fontInfo/embed | Controla a incorporação de fontes no documento de saída. |

@@ -4,10 +4,10 @@ description: 'Integração com o Adobe Target '
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: a2fa676de0d6ca6d7cde3beedd5cc63850966b56
-workflow-type: ht
-source-wordcount: '1035'
-ht-degree: 100%
+source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
+workflow-type: tm+mt
+source-wordcount: '1036'
+ht-degree: 99%
 
 ---
 
@@ -36,7 +36,7 @@ O Adobe Launch é necessário para gerenciar propriedades do lado do cliente par
 
 ### Configuração IMS {#ims-configuration}
 
-Uma configuração IMS para o Launch e o Target é necessária para integrar corretamente o Target ao AEM e ao Launch. Embora a configuração do IMS para o Launch seja pré-configurada no AEM as a Cloud Service, a configuração do IMS do Target deve ser criada (após o provisionamento do Target). Consulte [este vídeo](https://helpx.adobe.com/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html) e [esta página](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-target-ims.html?lang=pt-BR) para saber como criar a configuração do IMS do Target.
+Uma configuração IMS para o Launch e o Target é necessária para integrar corretamente o Target ao AEM e ao Launch. Embora a configuração do IMS para o Launch seja pré-configurada no AEM as a Cloud Service, a configuração do IMS do Target deve ser criada (após o provisionamento do Target). Consulte [este vídeo](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html) e [esta página](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-target-ims.html?lang=pt-BR) para saber como criar a configuração do IMS do Target.
 
 ### ID de locatário do Adobe Target e código de cliente do Adobe Target {#tenant-client}
 

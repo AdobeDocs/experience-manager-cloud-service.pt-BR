@@ -2,7 +2,7 @@
 title: Usar fontes personalizadas
 description: Usar fontes personalizadas
 exl-id: 88214d36-fb97-4d46-a9fe-71dbc7826eb1
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: d60659f443d130a195fd81cfe4773cd87df28264
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Juntamente com as operações mencionadas anteriormente, você pode usar fontes 
 
 ## Comportamento dos documentos do PDF
 
-Você pode [incorporar uma fonte](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/PDFOutputOptions) para um documento PDF. Quando uma fonte é incorporada, o documento PDF aparece (parece) idêntico em todas as plataformas. Ele usa fontes incorporadas para garantir uma aparência consistente. Quando uma fonte não é incorporada, a renderização da fonte depende das configurações de renderização dos clientes do visualizador do PDF, como Acrobat ou Acrobat Reader. Se a fonte estiver disponível na máquina cliente, o PDF usa a fonte especificada, caso contrário, o PDF é renderizado com uma fonte de fallback padrão.
+Você pode [incorporar uma fonte](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/output-sync/#tag/PrintedOutputOptions) para um documento PDF. Quando uma fonte é incorporada, o documento PDF aparece (parece) idêntico em todas as plataformas. Ele usa fontes incorporadas para garantir uma aparência consistente. Quando uma fonte não é incorporada, a renderização da fonte depende das configurações de renderização dos clientes do visualizador do PDF, como Acrobat ou Acrobat Reader. Se a fonte estiver disponível na máquina cliente, o PDF usa a fonte especificada, caso contrário, o PDF é renderizado com uma fonte de fallback padrão.
 
 ## Adicionar fontes personalizadas ao seu ambiente as a Cloud Service do Forms {#custom-fonts-cloud-service}
 

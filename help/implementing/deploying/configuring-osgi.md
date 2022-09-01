@@ -3,9 +3,9 @@ title: Configuração do OSGi para Adobe Experience Manager as a Cloud Service
 description: 'Configuração do OSGi com valores secretos e valores específicos do ambiente '
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 69fa35f55617746bfd9e8bdf6e1a0490c341ae90
+source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
 workflow-type: tm+mt
-source-wordcount: '3240'
+source-wordcount: '3216'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 [OSGi](https://www.osgi.org/) é um elemento fundamental na pilha de tecnologia do Adobe Experience Manager (AEM). Ele é usado para controlar os pacotes compostos de AEM e suas configurações.
 
-O OSGi fornece os primitivos padronizados que permitem que os aplicativos sejam construídos a partir de componentes pequenos, reutilizáveis e colaborativos. Esses componentes podem ser compostos em um aplicativo e implantados. Isso permite o gerenciamento fácil de pacotes OSGi, pois eles podem ser interrompidos, instalados e iniciados individualmente. As interdependências são manipuladas automaticamente. Cada componente OSGi está contido em um dos vários pacotes. Para obter mais informações, consulte o [Especificação OSGi](https://www.osgi.org/Specifications/HomePage).
+O OSGi fornece os primitivos padronizados que permitem que os aplicativos sejam construídos a partir de componentes pequenos, reutilizáveis e colaborativos. Esses componentes podem ser compostos em um aplicativo e implantados. Isso permite o gerenciamento fácil de pacotes OSGi, pois eles podem ser interrompidos, instalados e iniciados individualmente. As interdependências são manipuladas automaticamente. Cada componente OSGi está contido em um dos vários pacotes. Para obter mais informações, consulte o [Especificação OSGi](https://help.eclipse.org/latest/index.jsp).
 
 Você pode gerenciar as configurações dos componentes OSGi por meio de arquivos de configuração que fazem parte de um projeto de código AEM.
 
@@ -78,7 +78,7 @@ AEM runmodes as a Cloud Service são bem definidos com base no tipo de ambiente 
 
 Os valores de configuração do OSGi especificados pelo modo de execução podem ser verificados por:
 
-1. Abrir o AEM como um ambiente Cloud Services [Console do desenvolvedor](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html)
+1. Abrir o AEM como um ambiente Cloud Services [Console do desenvolvedor](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=pt-BR)
 1. Selecionar as camadas de serviço a serem inspecionadas, usando o __Pod__ lista suspensa
 1. Selecionar o __Status__ guia
 1. Selecionar __Configurações__ do __Despejo de status__ lista suspensa
@@ -122,7 +122,7 @@ Existem três variedades de valores de configuração de OSGi que podem ser usad
    }
    ```
 
-   Observe que um único arquivo de configuração OSGi pode usar qualquer combinação desses tipos de valor de configuração em conjunto. Por exemplo:
+   Um único arquivo de configuração OSGi pode usar qualquer combinação desses tipos de valor de configuração em conjunto. Por exemplo:
 
    ```json
    {
@@ -174,7 +174,7 @@ Há duas maneiras de criar configurações OSGi, conforme descrito abaixo. A pri
 Os arquivos de configuração OSGi formatados em JSON podem ser gravados manualmente diretamente no projeto AEM. Essa é frequentemente a maneira mais rápida de criar configurações OSGi para componentes OSGi bem conhecidos e, especialmente, componentes OSGi personalizados que foram projetados e desenvolvidos pelo mesmo desenvolvedor definindo as configurações. Essa abordagem também pode ser usada para copiar/colar e atualizar configurações para o mesmo componente OSGi em várias pastas do modo de execução.
 
 1. No IDE, abra o `ui.apps` projeto, localize ou crie a pasta de configuração (`/apps/.../config.<runmode>`) que direciona os modos de execução que a nova configuração OSGi precisa aplicar
-1. Nesta pasta de configuração, crie um novo `<PID>.cfg.json` arquivo. O PID é a Identidade Persistente do componente OSGi. Geralmente é o nome de classe completo da implementação do componente OSGi. Por exemplo:
+1. Nesta pasta de configuração, crie um `<PID>.cfg.json` arquivo. O PID é a Identidade Persistente do componente OSGi. Geralmente é o nome de classe completo da implementação do componente OSGi. Por exemplo:
    `/apps/.../config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
 Observe que os nomes de arquivos de fábrica de configuração OSGi usam o `<factoryPID>-<name>.cfg.json` convenção de nomenclatura
 1. Abra o novo `.cfg.json` e defina as combinações de chave/valor para a propriedade OSGi e os pares de valor, seguindo o [Formato de configuração JSON OSGi](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1).
@@ -202,7 +202,7 @@ O AEM Web Console do AEM SDK Quickstart Jar pode ser usado para configurar compo
 1. A configuração OSGi no formato JSON será exibida na seção Propriedades de configuração serializadas
    ![Impressora de configuração do instalador OSGi](./assets/configuring-osgi/osgi-installer-configurator-printer.png)
 1. No IDE, abra o `ui.apps` projeto, localize ou crie a pasta de configuração (`/apps/.../config.<runmode>`) que direciona os modos de execução em que a nova configuração OSGi precisa ser aplicada.
-1. Nesta pasta de configuração, crie um novo `<PID>.cfg.json` arquivo. O PID é o mesmo valor da Etapa 5.
+1. Nesta pasta de configuração, crie um `<PID>.cfg.json` arquivo. O PID é o mesmo valor da Etapa 5.
 1. Cole as propriedades de configuração serializadas da etapa 10 no `.cfg.json` arquivo.
 1. Salve as alterações no novo `.cfg.json` arquivo.
 1. Adicione e confirme seu novo arquivo de configuração OSGi no Git.
@@ -303,7 +303,7 @@ Se uma propriedade OSGi exigir valores diferentes para autor versus publicação
 * Separar `config.author` e `config.publish` As pastas OSGi devem ser usadas, conforme descrito na [Seção Resolução do Modo de Execução](#runmode-resolution).
 * Há duas opções para criar nomes de variáveis independentes que devem ser usadas:
    * a primeira opção, que é recomendada: em todas as pastas OSGi (como `config.author` e `config.publish`) declarada para definir valores diferentes, use o mesmo nome de variável. Por exemplo
-      `$[env:ENV_VAR_NAME;default=<value>]`, onde o padrão corresponde ao valor padrão dessa camada (autor ou publicação). Ao definir a variável de ambiente por meio de [API do Cloud Manager](#cloud-manager-api-format-for-setting-properties) ou por meio de um cliente, diferencie os níveis usando o parâmetro &quot;serviço&quot;, conforme descrito nesta [Documentação de referência da API](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables). O parâmetro &quot;service&quot; vinculará o valor da variável à camada OSGi apropriada. Pode ser &quot;autor&quot; ou &quot;publicação&quot; ou &quot;visualização&quot;.
+      `$[env:ENV_VAR_NAME;default=<value>]`, onde o padrão corresponde ao valor padrão dessa camada (autor ou publicação). Ao definir a variável de ambiente por meio de [API do Cloud Manager](#cloud-manager-api-format-for-setting-properties) ou por meio de um cliente, diferencie os níveis usando o parâmetro &quot;serviço&quot;, conforme descrito nesta [Documentação de referência da API](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/). O parâmetro &quot;service&quot; vinculará o valor da variável à camada OSGi apropriada. Pode ser &quot;autor&quot; ou &quot;publicação&quot; ou &quot;visualização&quot;.
    * a segunda opção, que é declarar variáveis distintas usando um prefixo como `author_<samevariablename>` e `publish_<samevariablename>`
 
 ### Exemplos de configuração {#configuration-examples}
@@ -460,7 +460,7 @@ config.dev
 
 ## Formato de API do Cloud Manager para propriedades de configuração {#cloud-manager-api-format-for-setting-properties}
 
-Consulte [esta página](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/create-api-integration.md) sobre como a API deve ser configurada.
+Consulte [esta página](https://developer.adobe.com/experience-cloud/cloud-manager/docs/) sobre como a API deve ser configurada.
 >[!NOTE]
 >
 >Verifique se a API do Cloud Manager usada atribuiu a função &quot;Gerenciador de implantação - Cloud Service&quot;. Outras funções não podem executar todos os comandos abaixo.
@@ -491,7 +491,7 @@ PATCH /program/{programId}/environment/{environmentId}/variables
 >[!NOTE]
 >As variáveis padrão não são definidas por meio da API, mas na própria propriedade OSGi.
 >
->Consulte [esta página](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/patchEnvironmentVariables) para obter mais informações.
+>Consulte [esta página](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/) para obter mais informações.
 
 ### Obter valores por meio da API {#getting-values-via-api}
 
@@ -499,7 +499,7 @@ PATCH /program/{programId}/environment/{environmentId}/variables
 GET /program/{programId}/environment/{environmentId}/variables
 ```
 
-Consulte [esta página](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/getEnvironmentVariables) para obter mais informações.
+Consulte [esta página](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/) para obter mais informações.
 
 ### Exclusão de valores por API {#deleting-values-via-api}
 
@@ -509,7 +509,7 @@ PATCH /program/{programId}/environment/{environmentId}/variables
 
 Para excluir uma variável, inclua-a com um valor vazio.
 
-Consulte [esta página](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/patchEnvironmentVariables) para obter mais informações.
+Consulte [esta página](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/) para obter mais informações.
 
 ### Obter valores através da linha de comando {#getting-values-via-cli}
 

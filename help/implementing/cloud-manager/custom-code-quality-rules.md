@@ -2,9 +2,9 @@
 title: Regras de qualidade do código personalizado
 description: Esta página descreve as regras de qualidade do código personalizado executadas pelo Cloud Manager como parte do [teste de qualidade de código]. Eles são baseados nas práticas recomendadas da engenharia de AEM.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: ee45ba3a03f9ab5461a09188888694ca22a11b20
+source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
 workflow-type: tm+mt
-source-wordcount: '3495'
+source-wordcount: '3493'
 ht-degree: 4%
 
 ---
@@ -772,7 +772,7 @@ Os componentes AEM que têm uma caixa de diálogo da interface clássica devem s
 * Um componente com uma caixa de diálogo de design da interface clássica (ou seja, um `design_dialog` nó ) deve ter uma caixa de diálogo de design da interface do usuário de toque correspondente (ou seja, um `cq:design_dialog` nó filho).
 * Um componente com uma caixa de diálogo da interface clássica e uma caixa de diálogo de design da interface clássica deve ter uma caixa de diálogo da interface do usuário de toque correspondente e uma caixa de diálogo de design da interface de toque correspondente.
 
-A documentação das Ferramentas de Modernização do AEM fornece documentação e ferramentas para como converter componentes da interface clássica para a interface do usuário de toque. Consulte [a documentação das Ferramentas de Modernização do AEM](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html) para obter mais detalhes.
+A documentação das Ferramentas de Modernização do AEM fornece documentação e ferramentas para como converter componentes da interface clássica para a interface do usuário de toque. Consulte [a documentação das Ferramentas de Modernização do AEM](https://opensource.adobe.com/aem-modernize-tools/) para obter mais detalhes.
 
 ### Os pacotes não devem misturar conteúdo mutável e imutável {#oakpal-packages-immutable}
 

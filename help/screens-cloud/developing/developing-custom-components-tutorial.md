@@ -2,10 +2,10 @@
 title: Desenvolvimento de um componente personalizado para o Screens as a Cloud Service
 description: O tutorial a seguir apresenta as etapas para criar um componente personalizado para o AEM Screens. A AEM Screens reutiliza muitos padrões e tecnologias de design existentes de outros produtos AEM. O tutorial destaca as diferenças e considerações especiais ao desenvolver o para AEM Screens.
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
 workflow-type: tm+mt
-source-wordcount: '2125'
-ht-degree: 3%
+source-wordcount: '2115'
+ht-degree: 2%
 
 ---
 
@@ -155,7 +155,7 @@ O AEM Screens tem algumas restrições interessantes que não são necessariamen
 
    O componente renderiza um `div` e um `h1` com texto. `${properties.message}` é uma parte do script HTL que resultará no conteúdo de uma propriedade JCR chamada `message`. Uma caixa de diálogo é criada posteriormente, permitindo que um usuário insira um valor para a variável `message` texto da propriedade.
 
-   Observe também que a notação BEM (Bloquear modificador de elemento) é usada com o componente. O BEM é uma convenção de codificação de CSS que facilita a criação de componentes reutilizáveis. BEM é a notação usada por [Componentes principais do AEM](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/wiki/CSS-coding-conventions). Mais informações podem ser encontradas em: [https://getbem.com/](https://getbem.com/)
+   Observe também que a notação BEM (Bloquear modificador de elemento) é usada com o componente. O BEM é uma convenção de codificação de CSS que facilita a criação de componentes reutilizáveis. BEM é a notação usada por [Componentes principais do AEM](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/wiki/CSS-coding-conventions). <!-- WEBSITE WAS NOT ACCESSIBLE AS OF SEPTEMBER 1, 2022 More info can be found at: [https://getbem.com/](https://getbem.com/) -->
 
 1. Crie um arquivo abaixo de `/apps/weretail-run/components/content/helloworld` nomeado `edit.html.`
 
