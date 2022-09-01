@@ -2,10 +2,10 @@
 title: Gerenciamento dos fragmentos de conteúdo
 description: Saiba como usar o console de Fragmentos de conteúdo para gerenciar os fragmentos de conteúdo do AEM; para criação de páginas ou como base para o conteúdo headless.
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: 28a3e8fe6ca16d20f5b4264e386154e95b55dc77
 workflow-type: tm+mt
-source-wordcount: '2047'
-ht-degree: 95%
+source-wordcount: '1915'
+ht-degree: 90%
 
 ---
 
@@ -36,6 +36,20 @@ O [Editor de fragmentos de conteúdo](#opening-the-fragment-editor) fornece vár
 >[!NOTE]
 >
 >Os fragmentos de conteúdo são armazenados como **Ativos**. Eles são gerenciados principalmente pelo console de **Fragmentos de conteúdo**, mas também podem ser gerenciados no console de **Ativos**.
+
+## O console Fragmentos de conteúdo {#content-fragments-console}
+
+O console Fragmentos de conteúdo fornece acesso direto aos fragmentos e às tarefas relacionadas. Para obter mais informações, consulte:
+
+* [Estrutura básica e manipulação do console Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#basic-structure-handling-content-fragments-console)
+
+* [As informações fornecidas sobre os Fragmentos do conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments)
+
+* [Ações para um fragmento de conteúdo no Console de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment)
+
+* [Personalização das colunas disponíveis no console Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#select-available-columns)
+
+* [Pesquisar e filtrar no Console de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#filtering-fragments)
 
 ## Criação de fragmentos de conteúdo {#creating-content-fragments}
 
@@ -79,61 +93,6 @@ O Fragmento do conteúdo foi publicado.
 O Fragmento do conteúdo foi editado após sua publicação (mas antes da publicação da modificação).
 * **Não publicado**
 A publicação do Fragmento do conteúdo foi cancelada.
-
-## Ações para um fragmento de conteúdo no Console de fragmentos de conteúdo {#actions-content-fragment-console}
-
-No console de **Fragmentos de conteúdo**, várias ações estão disponíveis para seus fragmentos de conteúdo na barra de ferramentas:
-
-![Ações do console](assets/cfm-managing-cf-console-01.png)
-
-* **Abrir no Assets**
-* **Criar**
-* A coluna **Referenciado por** também fornece um link direto para mostrar todas as referências principais desse fragmento, incluindo a referência a fragmentos de conteúdo, fragmentos de experiência e páginas.
-* Passar o mouse sobre o nome da pasta mostrará o caminho JCR.
-
-Após a seleção do fragmento, todas as ações apropriadas estarão disponíveis:
-
-![Ações do console — fragmento selecionado](assets/cfm-managing-cf-console-selected-01.png)
-
-* **Abrir**
-* **Publicar** (e **Desfazer publicação**)
-* **Copiar**
-* **Mover**
-* **Renomeie**
-* **Excluir**
-
->[!NOTE]
->
->Ações como Publicar, Desfazer publicação, Excluir, Mover, Renomear e Copiar acionam um processo assíncrono. O progresso desse processo pode ser monitorado por meio da interface de processos assíncronos do AEM.
-
-## Personalizar a visualização no Console de fragmentos de conteúdo {#viewing-content-fragment-console}
-
-O console mostra informações sobre os fragmentos de conteúdo — na pasta atual e em todas as pastas derivadas.
-
-É possível personalizar as informações mostradas usando o ícone **Personalizar tabela**:
-
-![Ícone personalizar tabela](assets/cfm-managing-cf-console-customize-table-icon.png)
-
-Isso abrirá a caixa de diálogo **Personalizar tabela**, onde é possível marcar/desmarcar as colunas disponíveis:
-
-![Personalizar tabela](assets/cfm-managing-cf-console-customize-table.png)
-
-## Pesquisar e filtrar no Console de fragmentos de conteúdo {#search-filter-content-fragment-console}
-
-É possível pesquisar e/ou filtrar os fragmentos de conteúdo a serem exibidos no console.
-
-É possível:
-
-* selecionar a pasta necessária
-* selecionar os filtros com o ícone **Mostrar filtros** e usar a caixa de pesquisa em paralelo:
-
-![Ícone Personalizar tabela](assets/cfm-managing-cf-console-filter-search-01.png)
-
-Uma seleção de filtros está disponível:
-
-![Filtrar e pesquisar](assets/cfm-managing-cf-console-filter-search-02.png)
-
-A combinação de filtros e pesquisa também pode ser salva para referência posterior.
 
 ## Abrir o editor de fragmentos {#opening-the-fragment-editor}
 
@@ -285,7 +244,7 @@ Se você publicar um fragmento de conteúdo cujo modelo ainda não foi publicado
 
 Os fragmentos de conteúdo devem ser publicados para uso no ambiente de publicação. Isso é feito usando a funcionalidade padrão do Assets
 
-* Na opção **Publicar** da barra de ferramentas do [console de Fragmentos de conteúdo](#actions-content-fragment-console)
+* Na opção **Publicar** da barra de ferramentas do [console de Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment)
    * **Agora** — após a confirmação, o fragmento será publicado imediatamente
    * **Agendar** — é possível selecionar a data e a hora em que o fragmento será publicado
 
@@ -326,6 +285,14 @@ Para excluir um fragmento:
 
    >[!CAUTION]
    Se o fragmento já tiver sido referenciado a partir de outro fragmento, ou de uma página, você verá uma mensagem de aviso e terá que confirmar se deseja continuar com uma **Exclusão forçada**. O fragmento, junto com seu componente do fragmento de conteúdo, será excluído de qualquer página de conteúdo.
+
+## Encontrar referências pai do fragmento {#parent-references-fragment}
+
+É possível acessar os detalhes de referências principais no **Referências** da coluna [Console Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments).
+
+## Encontrar cópias de idioma do fragmento {#language-copies-fragment}
+
+É possível acessar os detalhes das Cópias de idioma no **Idioma** da coluna [Console Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments).
 
 ## Linha de tempo dos fragmentos de conteúdo {#timeline-for-content-fragments}
 

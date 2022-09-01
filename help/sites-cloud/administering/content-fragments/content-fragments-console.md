@@ -3,10 +3,10 @@ title: Console de fragmentos de conteúdo
 description: Saiba como gerenciar fragmentos de conteúdo no Console de fragmentos de conteúdo.
 landing-page-description: Saiba como gerenciar fragmentos de conteúdo no Console de fragmentos de conteúdo, que está focado no alto volume de uso de fragmentos de conteúdo para casos de uso headless, mas que também é usado para a criação de páginas.
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: 99e3c07f8376859692db41c633bfaa602ed65358
+source-git-commit: 3e47ebad94e51379d909384f7e3ec407fba47b4d
 workflow-type: tm+mt
-source-wordcount: '563'
-ht-degree: 97%
+source-wordcount: '882'
+ht-degree: 66%
 
 ---
 
@@ -36,6 +36,8 @@ O Console de fragmentos de conteúdo pode ser acessado diretamente do nível sup
 
 ![Navegação global - Console de fragmentos de conteúdo](assets/cfc-global-navigation.png)
 
+## Estrutura básica e manipulação do console {#basic-structure-handling-content-fragments-console}
+
 Selecionar **Fragmentos de conteúdo** abrirá o console em uma nova guia.
 
 ![Console de fragmentos de conteúdo - Visão geral](assets/cfc-console-overview.png)
@@ -49,16 +51,20 @@ Aqui você pode ver três áreas principais:
    * Aqui você pode ocultar ou revelar a árvore de pastas
    * É possível selecionar uma ramificação específica da árvore
 * O painel principal/direito; aqui, você pode:
-   * Consultar a lista de todos os fragmentos de conteúdo na ramificação selecionada da árvore
+   * Consultar a lista de todos os fragmentos de conteúdo na ramificação selecionada da árvore:
       * A localização é indicada pela navegação estrutural; elas também podem ser usadas para alterar a localização
-      * Os fragmentos de conteúdo da pasta selecionada e de todas as pastas derivadas serão mostrados
-         * Vários campos de informação sobre um fragmento de conteúdo fornecem links; eles podem abrir o fragmento apropriado no editor
+      * Os fragmentos de conteúdo da pasta selecionada e de todas as pastas derivadas serão mostrados:
+         * [Vários campos de informação](#selectuse-available-columns) Sobre um Fragmento do conteúdo , forneça links; dependendo do campo , eles podem:
+            * Abra o fragmento apropriado no editor
+            * Mostrar informações sobre referências
+            * Mostrar informações sobre versões de idioma do fragmento
+         * Você pode [selecione um ou mais Fragmentos de conteúdo para mostrar as ações disponíveis](#actions-selected-content-fragment)
       * Você pode selecionar um cabeçalho de coluna para classificar a tabela de acordo com essa coluna; selecione novamente para alternar entre ordem crescente e decrescente
    * **[Criar](#creating-new-content-fragment)** um novo fragmento de conteúdo
    * [Filtrar](#filtering-fragments) os fragmentos de conteúdo de acordo com uma seleção de predicados e salvar o filtro para uso futuro
    * [Pesquisar](#searching-fragments) os fragmentos de conteúdo
-   * Personalizar a visualização da tabela para mostrar as colunas de informações selecionadas
-   * Usar o recurso **Abrir no Assets** para abrir o local atual diretamente no console de **Ativos**.
+   * [Personalizar a visualização da tabela para mostrar as colunas de informações selecionadas](#selectuse-available-columns)
+   * Usar o recurso **Abrir no Assets** para abrir o local atual diretamente no console de **Ativos**
 
       >[!NOTE]
       >
@@ -68,9 +74,69 @@ Aqui você pode ver três áreas principais:
       >* diretamente do painel de navegação global
 
 
+## Ações para um fragmento de conteúdo (selecionado) {#actions-selected-content-fragment}
+
 Selecionar um fragmento específico abrirá uma barra de ferramentas focada nas ações disponíveis para esse fragmento. Também é possível selecionar vários fragmentos; a seleção de ações será ajustada de acordo.
 
 ![Console de fragmentos de conteúdo - Barra de ferramentas de um fragmento selecionado](assets/cfc-fragment-toolbar.png)
+
+* **Abrir**
+* **Publicar** (e **Desfazer publicação**)
+* **Copiar**
+* **Mover**
+* **Renomeie**
+* **Excluir**
+
+>[!NOTE]
+>
+>Ações como Publicar, Desfazer publicação, Excluir, Mover, Renomear e Copiar acionam um processo assíncrono. O progresso desse processo pode ser monitorado por meio da interface de processos assíncronos do AEM.
+
+## As informações fornecidas sobre os Fragmentos do conteúdo {#information-content-fragments}
+
+O painel principal/direito (exibição de tabela) do console fornece uma variedade de informações sobre os Fragmentos de conteúdo. Alguns itens também fornecem links diretos para outras ações e/ou informações:
+
+* **Nome**
+   * Fornece um link para abrir o fragmento no editor.
+* **Modelo**
+   * Fornece um link para abrir o fragmento no editor.
+* **Pasta**
+   * Fornece um link para abrir a pasta no console.
+Passar o mouse sobre o nome da pasta mostrará o caminho JCR.
+* **Status**
+   * Somente informações
+* **Modificado**
+   * Somente informações
+* **Modificado por**
+   * Somente informações
+* **Publicado em**
+   * Somente informações
+* **Publicado por**
+   * Somente informações
+* **Referenciado por**
+
+   * Fornece um link que abre uma caixa de diálogo listando todas as referências principais desse fragmento; incluindo a referência a Fragmentos de conteúdo, Fragmentos de experiência e páginas. Para abrir uma referência específica, clique no botão **Título** na caixa de diálogo.
+
+      ![Console Fragmentos de conteúdo - Caixa de diálogo Referências](assets/cfc-console-references-dialog.png)
+
+* **Idioma**
+
+   * Indica a localidade do fragmento de conteúdo, juntamente com o número total de localidades/cópias de idioma associadas ao fragmento de conteúdo.
+
+      ![Console Fragmentos de conteúdo - Indicador de idioma](assets/cfc-console-language-indicator.png)
+
+      * Clique/toque na contagem para abrir uma caixa de diálogo que exibe todas as cópias de idioma. Para abrir uma cópia de idioma específica, clique no botão **Título** na caixa de diálogo.
+
+         ![Console Fragmentos de conteúdo - Caixa de diálogo Idioma](assets/cfc-console-languages-dialog.png)
+
+## Selecionar as colunas disponíveis {#select-available-columns}
+
+Assim como em outros consoles, você pode configurar as colunas que estão visíveis e disponíveis para ação:
+
+![Console Fragmentos de conteúdo - configuração da coluna](assets/cfc-console-column-icon.png)
+
+Isso apresentará uma lista de colunas que você pode ocultar ou mostrar:
+
+![Console Fragmentos de conteúdo - configuração da coluna](assets/cfc-console-column-selection.png)
 
 ## Criar um novo fragmento de conteúdo {#creating-new-content-fragment}
 
