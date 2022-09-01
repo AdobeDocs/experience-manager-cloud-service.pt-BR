@@ -5,10 +5,10 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 57abdf0198e646719bbb818e2b70d772579ba548
+source-git-commit: 153cc482047c3235b0f62bb94051c884b4cf29d4
 workflow-type: tm+mt
-source-wordcount: '1811'
-ht-degree: 4%
+source-wordcount: '1869'
+ht-degree: 3%
 
 ---
 
@@ -84,6 +84,8 @@ A abordagem oferece uma manipulação escalável e mais eficiente dos uploads de
 
 >[!NOTE]
 Consulte o código de cliente para implementar essa abordagem no código aberto [biblioteca de upload do aem](https://github.com/adobe/aem-upload).
+[!IMPORTANT]
+Em determinadas circunstâncias, as alterações podem não se propagar totalmente entre as solicitações para o Experience Manager devido à natureza eventualmente consistente do armazenamento no Cloud Service. Isso leva a 404 respostas para iniciar ou concluir chamadas de upload devido às criações de pasta necessárias não terem sido propagadas. Os clientes devem esperar respostas 404 e lidar com elas implementando uma nova tentativa com uma estratégia de recuo.
 
 ### Iniciar upload {#initiate-upload}
 
