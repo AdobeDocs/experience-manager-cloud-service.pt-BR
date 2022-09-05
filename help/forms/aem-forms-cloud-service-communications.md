@@ -2,10 +2,10 @@
 title: AEM Forms as a Cloud Service - Comunicações
 description: Mesclar dados automaticamente com modelos XDP e PDF ou gerar saída nos formatos PCL, ZPL e PostScript
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: a3c817dedbf20b21e609ad0e5bfd0d3c4fa9a431
+source-git-commit: 07b9118b8cfc27bc9e2bfa134fbb57c7ae2728ad
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 0%
+source-wordcount: '731'
+ht-degree: 1%
 
 ---
 
@@ -29,8 +29,8 @@ Uma operação síncrona é um processo de geração de documentos de maneira li
 
 * Gera um documento do PDF a partir de um modelo e mescla dados nele.
 * Gere um documento PostScript (PS), Printer Command Language (PCL), Zebra Printing Language (ZPL) de um arquivo XDP ou documento PDF.
-* Montar documentos do PDF
-* Desmontar documentos do PDF
+* Montar documentos PDF
+* Desmontar documentos PDF
 * Converter um documento em um documento compatível com PDF/A
 * Validar um documento compatível com PDF/A
 
@@ -75,7 +75,7 @@ Uma organização geralmente tem vários modelos. Por exemplo, um modelo cada pa
 
 ### Chamar uma API
 
-O [Documentação de referência da API](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/Communications-Services) O fornece informações detalhadas sobre todos os parâmetros, métodos de autenticação e vários serviços fornecidos pelas APIs. A documentação de referência da API também fornece o arquivo de definição da API no formato .yaml . Você pode baixar o arquivo .yaml e carregá-lo no postman para verificar a funcionalidade das APIs.
+O [Documentação de referência da API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/) O fornece informações detalhadas sobre todos os parâmetros, métodos de autenticação e vários serviços fornecidos pelas APIs. A documentação de referência da API também fornece o arquivo de definição da API no formato .yaml . Você pode baixar o arquivo .yaml e carregá-lo no postman para verificar a funcionalidade das APIs.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335771)
 
