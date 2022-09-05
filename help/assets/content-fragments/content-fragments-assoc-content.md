@@ -1,13 +1,13 @@
 ---
-title: Conteúdo associado
+title: Conteúdo associado (Ativos - Fragmentos de conteúdo)
 description: Entenda como AEM recurso de conteúdo associado fornece a conexão para que os ativos possam ser usados opcionalmente com o fragmento quando ele for adicionado a uma página de conteúdo, adicionando flexibilidade adicional à entrega de conteúdo sem periféricos.
 feature: Content Fragments
 role: User
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 21ee6ec3ffef602bfbac7d89bb6c3454869deda9
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 13%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -23,14 +23,14 @@ AEM recurso de conteúdo associado fornece a conexão para que os ativos possam 
 
 Para fazer a associação, primeiro é necessário [adicionar ativos de mídia a uma coleção](/help/assets/manage-collections.md). Depois disso, você pode:
 
-1. Abra o fragmento e selecione **Conteúdo associado** no painel lateral.
+1. Abrir o fragmento e selecionar **Conteúdo associado** no painel lateral.
 
    ![Conteúdo associado](assets/cfm-assoc-content-01.png)
 
-1. Dependendo de alguma coleção já ter sido associada, ou não, selecione:
+1. Dependendo de alguma coleção já ter sido associada ou não, selecione:
 
-   * **Associar conteúdo** - esta será a primeira coleção associada
-   * **Associar Coleção** - as coleções associadas já estão configuradas
+   * **Associar conteúdo** — esta será a primeira coleção associada
+   * **Associar Coleção** — as coleções associadas já estão configuradas
 
 1. Selecione a coleção necessária.
 
@@ -48,5 +48,5 @@ Depois de associar uma coleção, você pode:
 
 * **Remover** a associação.
 * **Adicionar ativos** à coleção.
-* Selecione um ativo para ação adicional.
-* Edite o ativo.
+* Selecionar um ativo para realizar mais ações.
+* Editar o ativo.
