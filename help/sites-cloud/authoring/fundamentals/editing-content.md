@@ -2,10 +2,10 @@
 title: Editar conteúdo da página
 description: Uma vez que a sua página é criada, você poderá editar o conteúdo para fazer atualizações necessárias
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
-source-wordcount: '2974'
-ht-degree: 100%
+source-git-commit: 14671264f1605552b2262a3139d4005e6dd90cb5
+workflow-type: tm+mt
+source-wordcount: '2992'
+ht-degree: 97%
 
 ---
 
@@ -466,7 +466,7 @@ Uma vez bloqueadas, as informações de exibição do console são atualizadas e
 
 >[!CAUTION]
 >
->O bloqueio de uma página pode ser executado quando se representa um usuário. No entanto, uma página bloqueada dessa maneira só pode ser desbloqueada pelo usuário que foi representado ou pelo usuário administrador.
+>O bloqueio de uma página pode ser executado quando se representa um usuário. No entanto, uma página bloqueada dessa maneira só pode ser desbloqueada pelo usuário que foi representado ou por um usuário com direitos de administrador (um membro AEM perfil IMS do Administrador).
 >
 >Páginas não podem ser desbloqueadas representando o usuário que as bloqueou.
 <!--
@@ -483,7 +483,7 @@ O menu de Informações da página lista **Desbloquear** como uma opção, e o �
 
 >[!CAUTION]
 >
->O bloqueio de uma página pode ser executado quando se representa um usuário. No entanto, uma página bloqueada dessa maneira só pode ser desbloqueada pelo usuário que foi representado ou pelo usuário administrador.
+>O bloqueio de uma página pode ser executado quando se representa um usuário. No entanto, uma página bloqueada dessa maneira só pode ser desbloqueada pelo usuário que foi representado ou por um usuário com direitos de administrador (um membro AEM perfil IMS do Administrador).
 >
 >Páginas não podem ser desbloqueadas representando o usuário que as bloqueou.
 <!--
