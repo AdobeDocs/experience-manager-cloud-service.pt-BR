@@ -2,10 +2,10 @@
 title: Publicar páginas
 description: Como publicar e desfazer a publicação de páginas usando o AEM
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
+source-git-commit: 5a804895013e19592f918341bbc7921261b26945
 workflow-type: tm+mt
-source-wordcount: '1791'
-ht-degree: 100%
+source-wordcount: '1811'
+ht-degree: 97%
 
 ---
 
@@ -140,7 +140,6 @@ Para publicar ou desfazer a publicação de uma página usando Gerenciar publica
       >[!NOTE]
       >
       >Caso deseje cancelar a publicação/desfazer a publicação mais tarde, acesse o [Console do Fluxo de trabalhos](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance) para encerrar o fluxo de trabalho correspondente.
-   
    ![Gerenciar opções de publicação](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 
 1. Clique em **Avançar** para continuar.
@@ -216,9 +215,9 @@ Para publicar ou desfazer a publicação de uma página usando Gerenciar publica
 
 ## Desfazer a publicação de páginas {#unpublishing-pages}
 
-Desfazer a publicação de uma página fará com que ela seja removida do seu ambiente de publicação, deixando de estar disponível aos seus leitores.
+Desfazer a publicação de uma página a removerá de sua publicação ou [visualização](/help/sites-cloud/authoring/fundamentals/previewing-content.md), ambiente para que não esteja mais disponível para seus leitores.
 
-De uma [maneira semelhante à publicação](#publishing-pages), uma ou mais páginas podem ter a publicação desfeita:
+Em um [maneira semelhante à publicação](#publishing-pages), uma ou mais páginas podem ter a publicação desfeita do destino desejado:
 
 * [No editor de páginas](#unpublishing-from-the-editor)
 * [Do console do Sites](#unpublishing-from-the-console)
@@ -245,6 +244,9 @@ Da mesma forma que você [usa a opção Gerenciar publicação para publicar](#m
    >[!NOTE]
    >
    >Caso deseje cancelar a publicação/desfazer a publicação mais tarde, acesse o [Console de Fluxos de trabalho](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance) para encerrar o fluxo de trabalho correspondente.
+
+   >[!NOTE]
+   >Se você tiver uma [Visualizar](/help/sites-cloud/authoring/fundamentals/previewing-content.md) você pode selecionar o **Destino** durante Gerenciar publicação.
 
 1. Para concluir o cancelamento da publicação, prossiga com o assistente como faria para [publicar a página](#manage-publication).
 

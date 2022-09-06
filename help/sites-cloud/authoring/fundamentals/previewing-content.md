@@ -2,10 +2,10 @@
 title: Visualização de conteúdo
 description: Saiba como usar o serviço de visualização do AEM para visualizar o conteúdo antes de ele ser publicado.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
-workflow-type: ht
-source-wordcount: '372'
-ht-degree: 100%
+source-git-commit: 5a804895013e19592f918341bbc7921261b26945
+workflow-type: tm+mt
+source-wordcount: '407'
+ht-degree: 91%
 
 ---
 
@@ -45,6 +45,12 @@ https://preview-p<programID>-e>environmentID>.adobeaemcloud.com/<pathtopage>.htm
 Consulte o documento [Gerenciamento de ambientes](/help/implementing/cloud-manager/manage-environments.md) para obter mais informações sobre como recuperar os URLs de seus ambientes.
 
 O conteúdo também pode ser publicado para visualização usando uma [árvore de fluxo de trabalho de conteúdo de publicação](/help/operations/replication.md#publish-content-tree-workflow) com o parâmetro `agentId` definido como `preview` ou usando a [API de replicação](/help/operations/replication.md#replication-api) com um `AgentFilter` configurado para visualização.
+
+## Cancelar publicação de conteúdo da visualização {#unpublishing-content-from-preview}
+
+Cancelar a publicação de conteúdo do **Visualizar** o ambiente é basicamente o mesmo processo que [desfazer a publicação de páginas](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages) do **Publicar** ambiente.
+
+A única diferença é que você pode selecionar a variável **Destino** a **Visualizar**.
 
 ## Configurações do OSGi para o nível de visualização {#configuring-osgi-settings-for-the-preview-tier}
 
