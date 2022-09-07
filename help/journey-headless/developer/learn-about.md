@@ -2,10 +2,10 @@
 title: Saiba mais sobre o desenvolvimento sem periféricos do CMS
 description: Nesta parte da Jornada de desenvolvedores sem periféricos AEM, saiba mais sobre a tecnologia sem periféricos e por que usá-la.
 exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
-source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
+source-git-commit: 2abceb1333877c41c61d1036ab82ec40058011fe
 workflow-type: tm+mt
 source-wordcount: '1623'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -15,7 +15,7 @@ Nesta parte do [AEM Jornada de desenvolvedor sem periféricos,](overview.md) sai
 
 ## Objetivo {#objective}
 
-Este documento ajuda você a entender a entrega de conteúdo sem periféricos e por que ele deve ser usado. Depois de ler, você deve:
+Este documento ajuda você a entender a entrega de conteúdo sem periféricos e por que ele deve ser usado. Depois de ler esse documento, você deverá:
 
 * Entenda os conceitos básicos e a terminologia da entrega de conteúdo sem periféricos
 * Entenda por que e quando o headless é necessário
@@ -60,7 +60,7 @@ Um servidor sem periféricos, por exemplo, provavelmente está sentado em um rac
 
 Quando falamos de um CMS sem interface, o CMS gerencia o conteúdo e continua a entregá-lo aos consumidores. No entanto, apenas entregando a variável **conteúdo** de forma padronizada, um CMS sem periféricos omita a renderização final de output, deixando o **apresentação** do conteúdo para o serviço de consumo.
 
-![CMS sem periféricos](assets/headless-cms.png)
+![CMS headless](assets/headless-cms.png)
 
 Os serviços que consomem, sejam experiências de AR, um webshop, experiências móveis, aplicativos web progressivos (PWA), etc., absorvem conteúdo do CMS sem cabeçalho e fornecem sua própria renderização. Eles cuidam de fornecer suas próprias cabeças para o seu conteúdo.
 
@@ -86,7 +86,7 @@ A entrega de conteúdo headless geralmente usa APIs GraphQL. GraphQL permite uma
 
 Independentemente da API escolhida, ao definir um sistema sem periféricos com base em APIs comuns, você pode aproveitar o navegador mais recente e outras tecnologias da Web, como aplicativos da Web progressivos (PWA). As APIs criam uma interface padrão que é facilmente extensível e adaptável.
 
-Normalmente, o conteúdo é renderizado no lado do cliente. Isso normalmente significa que alguém chama seu conteúdo em um dispositivo móvel, seu CMS entrega o conteúdo e, em seguida, o dispositivo móvel (o cliente) é responsável pela renderização do conteúdo que você disponibilizou. Se o dispositivo estiver antigo ou lento, sua experiência digital também estará lenta.
+Normalmente, o conteúdo é renderizado no lado do cliente. Isso normalmente significa que alguém chama seu conteúdo em um dispositivo móvel, seu CMS fornece o conteúdo e, em seguida, o dispositivo móvel (o cliente) é responsável pela renderização do conteúdo que você disponibilizou. Se o dispositivo estiver antigo ou lento, sua experiência digital também estará lenta.
 
 A dissociação do conteúdo da apresentação significa que pode haver mais controle sobre essas preocupações de desempenho do lado do cliente. A renderização do lado do servidor (SSR) transfere a responsabilidade de renderizar o conteúdo do navegador do cliente para o servidor. Isso permite que você, como provedor do conteúdo, ofereça um nível de desempenho garantido para o seu público-alvo, se isso for necessário.
 
