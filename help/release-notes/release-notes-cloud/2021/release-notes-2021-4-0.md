@@ -1,8 +1,8 @@
 ---
-title: Notas de versão do  [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0.
-description: Notas de versão do  [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0.
+title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2021.4.0.
+description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2021.4.0.
 exl-id: 775332b5-24ce-430e-97a2-6eeb80877c64
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 8f4b504898b1332c21f3cb82ab9bbf663c9dc312
 workflow-type: tm+mt
 source-wordcount: '1535'
 ht-degree: 9%
@@ -11,7 +11,7 @@ ht-degree: 9%
 
 # Notas de versão atuais do [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-A seção a seguir descreve as Notas de versão gerais da versão atual (mais recente) do [!DNL Experience Manager] as a Cloud Service.
+A seção a seguir descreve as Notas de versão gerais da versão atual (mais recente) do [!DNL Adobe Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >Desse ponto, você pode navegar até as notas de versão das versões anteriores; por exemplo, para aqueles em 2020, 2021 e assim por diante.
@@ -192,4 +192,4 @@ A data de lançamento do Analisador de práticas recomendadas v2.1.12 é 12 de a
 ### Correções de erros {#bug-fixes-bpa-april}
 
 * Linhas duplicadas foram vistas no BPA relatado. Isso foi corrigido.
-* A interface do usuário do BPA AEM versão 6.4.2 estava exibindo um erro de JS que estava desativando o botão Gerar relatório . Isso foi corrigido
+* A interface do usuário do BPA AEM versão 6.4.2 estava exibindo um erro de JS que estava desativando o botão Gerar relatório . Isso foi corrigido.
