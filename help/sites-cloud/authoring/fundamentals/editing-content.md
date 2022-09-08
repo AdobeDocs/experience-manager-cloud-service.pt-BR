@@ -2,10 +2,10 @@
 title: Editar conteúdo da página
 description: Uma vez que a sua página é criada, você poderá editar o conteúdo para fazer atualizações necessárias
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 14671264f1605552b2262a3139d4005e6dd90cb5
+source-git-commit: 2bfabfc2c12faf6f813ecd5b11b289117724d9ec
 workflow-type: tm+mt
-source-wordcount: '2992'
-ht-degree: 97%
+source-wordcount: '3019'
+ht-degree: 96%
 
 ---
 
@@ -466,12 +466,11 @@ Uma vez bloqueadas, as informações de exibição do console são atualizadas e
 
 >[!CAUTION]
 >
->O bloqueio de uma página pode ser executado quando se representa um usuário. No entanto, uma página bloqueada dessa maneira só pode ser desbloqueada pelo usuário que foi representado ou por um usuário com direitos de administrador (um membro AEM perfil IMS do Administrador).
+>O bloqueio de uma página pode ser executado quando se representa um usuário. No entanto, uma página bloqueada dessa maneira só pode ser desbloqueada (por clientes) usando o usuário que foi representado.
 >
->Páginas não podem ser desbloqueadas representando o usuário que as bloqueou.
-<!--
->Locking a page can be performed when [impersonating a user](/help/sites-administering/security.md#impersonating-another-user). However a page locked in this way can only then be unlocked by the user who was impersonated or by the admin user.
--->
+>As páginas não podem ser desbloqueadas representando o usuário que as bloqueou.
+>
+>Se o usuário que bloqueou a página não estiver disponível para desbloquear a página, entre em contato com o Suporte ao cliente para avaliar as opções para remover o bloqueio.
 
 ## Desbloquear uma página {#unlocking-a-page}
 
@@ -483,9 +482,20 @@ O menu de Informações da página lista **Desbloquear** como uma opção, e o �
 
 >[!CAUTION]
 >
->O bloqueio de uma página pode ser executado quando se representa um usuário. No entanto, uma página bloqueada dessa maneira só pode ser desbloqueada pelo usuário que foi representado ou por um usuário com direitos de administrador (um membro AEM perfil IMS do Administrador).
+>O bloqueio de uma página pode ser executado quando se representa um usuário. No entanto, uma página bloqueada dessa maneira só pode ser desbloqueada (por clientes) usando o usuário que foi representado.
 >
->Páginas não podem ser desbloqueadas representando o usuário que as bloqueou.
+>As páginas não podem ser desbloqueadas representando o usuário que as bloqueou.
+>
+>Se o usuário que bloqueou a página não estiver disponível para desbloquear a página, entre em contato com o Suporte ao cliente para avaliar as opções para remover o bloqueio.
+
+<!--
+>[!CAUTION]
+>
+>Locking a page can be performed when impersonating a user. However a page locked in this way can only then be unlocked by the user who was impersonated, or by a user with admin rights (a member of AEM Administrator IMS profile).
+>
+>Pages can not be unlocked by impersonating the user who locked the page.
+-->
+
 <!--
 >Locking a page can be performed when [impersonating a user](/help/sites-administering/security.md#impersonating-another-user). However a page locked in this way can only then be unlocked by the user who was impersonated or by the admin user.
 -->
