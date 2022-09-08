@@ -3,7 +3,7 @@ title: Grupos de usuários para notificações
 description: Saiba como criar um grupo de usuários no Admin Console para gerenciar o recebimento de notificações por email importantes.
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: a663e21d100953f87c012a1d7962fb0e88e6a7f2
+source-git-commit: 93a5e1b8851353f368a01ea6b50265ec3f2de836
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 1%
@@ -49,17 +49,17 @@ Para configurar corretamente o recebimento de notificações, será necessário 
 
    ![Criar grupo de usuários](assets/cloud_manager_profiles.png)
 
-1. Clique em Novo perfil e insira os seguintes detalhes:
+1. Clique em **Novo perfil** e introduzir os seguintes elementos:
 
-* Nome do perfil de produto: Notificação de incidente - Cloud Service
-* Nome de exibição: Notificação de incidente - Cloud Service
-* Descrição: Perfil do Cloud Manager para os usuários que receberão notificações durante um incidente ou quando o Adobe identificar um possível problema de disponibilidade com seu ambiente as a Cloud Service AEM.
+   * Nome do perfil de produto: Notificação de incidente - Cloud Service
+   * Nome de exibição: Notificação de incidente - Cloud Service
+   * Descrição: Perfil do Cloud Manager para os usuários que receberão notificações durante um incidente ou quando o Adobe identificar um possível problema de disponibilidade com seu ambiente as a Cloud Service AEM.
 
-1. Clique em Salvar e repita a etapa 4 com os seguintes detalhes:
+1. Clique em **Salvar** e repita a etapa 5 com os seguintes detalhes:
 
-* Nome do perfil de produto: Notificação proativa - Cloud Service
-* Nome de exibição: Notificação proativa - Cloud Service
-* Descrição: Perfil do Cloud Manager para os usuários que receberão notificações quando um membro da equipe de suporte do Adobe quiser fornecer orientação sobre uma possível otimização ou recomendação para fazer com a configuração do ambiente as a Cloud Service AEM.
+   * Nome do perfil de produto: Notificação proativa - Cloud Service
+   * Nome de exibição: Notificação proativa - Cloud Service
+   * Descrição: Perfil do Cloud Manager para os usuários que receberão notificações quando um membro da equipe de suporte do Adobe quiser fornecer orientação sobre uma possível otimização ou recomendação para fazer com a configuração do ambiente as a Cloud Service AEM.
 
 >[!NOTE]
 >
@@ -83,10 +83,10 @@ Agora que os grupos foram criados, é necessário atribuir os usuários apropria
 
 ![Usuários](assets/cloud_manager_add_user.png)
 
-1. Na caixa de diálogo Adicionar usuários à equipe , digite a ID do email do usuário que deseja adicionar.
+1. No **Adicionar usuários à equipe** , insira a ID de email do usuário que deseja adicionar.
 
-* Se a ID federada dos membros da equipe ainda não tiver sido configurada, selecione Adobe ID para o Tipo de ID.
-* Se o usuário já existir, consulte a etapa 7.
+   * Se a ID federada dos membros da equipe ainda não tiver sido configurada, selecione Adobe ID para o Tipo de ID.
+   * Se o usuário já existir, consulte a etapa 9.
 
 1. Clique no botão de mais sob a **Selecionar produtos** para iniciar a seleção do produto e selecione **Adobe Experience Manager as a Cloud Service** e atribuir **Notificação de incidente - Cloud Service** ou **Notificação proativa - Cloud Service**, ou ambos para o usuário.
 
@@ -96,7 +96,7 @@ Agora que os grupos foram criados, é necessário atribuir os usuários apropria
 
 1. Caso o usuário já exista, pesquise o nome do usuário e:
 
-* Clique no nome do usuário.
-* No **Produtos** seção , clique em **Editar**.
-* Clique no botão de lápis no **Selecionar produtos** para iniciar a seleção do produto e selecione **Adobe Experience Manager as a Cloud Service** e atribuir **Notificação de incidente - Cloud Service** ou **Notificação proativa - Cloud Service**, ou ambos para o usuário.
-* Clique em **Salvar** e um email de boas-vindas é enviado ao usuário adicionado. O usuário convidado receberá as notificações.
+   * Clique no nome do usuário.
+   * No **Produtos** seção , clique em **Editar**.
+   * Clique no botão de lápis no **Selecionar produtos** para iniciar a seleção do produto e selecione **Adobe Experience Manager as a Cloud Service** e atribuir **Notificação de incidente - Cloud Service** ou **Notificação proativa - Cloud Service**, ou ambos para o usuário.
+   * Clique em **Salvar** e um email de boas-vindas é enviado ao usuário adicionado. O usuário convidado receberá as notificações.
