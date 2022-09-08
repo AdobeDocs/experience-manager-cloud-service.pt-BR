@@ -8,10 +8,10 @@ user-guide-description: Recursos de autoajuda e links de documentação da visã
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 962b027521e6ca2d1da8e8d2f98c6227ea496743
+source-git-commit: ee9b8339f6f64693fd1b227b0d2b40fb8094af8c
 workflow-type: tm+mt
-source-wordcount: '3716'
-ht-degree: 97%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -141,6 +141,7 @@ ht-degree: 97%
       + [Atribuir perfis de produto AEM](/help/journey-onboarding/assign-profiles-aem.md)
       + [Tarefas do desenvolvedor e do gerenciador de implantação](/help/journey-onboarding/developers.md)
       + [Tarefas do usuário AEM](/help/journey-onboarding/aem-users.md)
+      + [Grupos de usuários](/help/journey-onboarding/user-groups.md)
    + Jornada do complemento de demonstrações de referência do AEM {#demo-add-on}
       + [Visão geral](/help/journey-sites/demos-add-on/overview.md)
       + [Instalação](/help/journey-sites/demos-add-on/installation.md)
