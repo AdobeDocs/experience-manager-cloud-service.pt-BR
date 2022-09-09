@@ -1,7 +1,8 @@
 ---
 title: Configurar restrições de upload de ativos
-description: 'Configure os ativos Adobe Experience Manager para restringir o tipo de ativos que os usuários podem fazer upload com base no tipo MIME. Ajuda a evitar uploads acidentais de formato indesejado e arquivos mal-intencionados. '
-source-git-commit: 3be29e4f76b53b4be7815e50ec42c627fec84b68
+description: Configure os ativos Adobe Experience Manager para restringir o tipo de ativos que os usuários podem fazer upload com base no tipo MIME. Ajuda a evitar uploads acidentais de formato indesejado e arquivos mal-intencionados.
+exl-id: 094c31f3-f2e9-4b44-9995-c76fb78ca458
+source-git-commit: 472b670623e77957ff9a366359ebef8c6c0604ae
 workflow-type: tm+mt
 source-wordcount: '291'
 ht-degree: 1%
@@ -49,7 +50,3 @@ Para adicionar formatos de imagem específicos aos tipos MIME permitidos e restr
 ![Restrições de ativos](assets/asset-restrictions.png)
 
 Com base nas configurações mostradas na imagem, é possível fazer upload de imagens nos formatos .JPG, .PNG e .GIF para o Experience Manager Assets.
-
-
-
-

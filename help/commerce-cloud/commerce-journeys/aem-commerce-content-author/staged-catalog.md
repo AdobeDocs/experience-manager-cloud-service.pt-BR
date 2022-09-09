@@ -5,7 +5,7 @@ exl-id: 1db18818-b8e0-4127-8a65-dc3dea1f2927
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '494'
-ht-degree: 2%
+ht-degree: 8%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 Saiba como gerenciar experiências de catálogo de produtos preparados.
 
-## A História Até Agora {#story-so-far}
+## A história até agora {#story-so-far}
 
 No documento anterior da jornada Conteúdo e Comércio da AEM, [Gerenciar páginas e modelos do catálogo de produtos](catalog-templates.md), você aprendeu a gerenciar e criar experiências de catálogo de produtos com base em modelos.
 
@@ -64,7 +64,7 @@ Agora que você concluiu esta parte da jornada, deve:
 * entender os conceitos do catálogo de produtos e conteúdo preparados com inicializações
 * poder acessar dados do catálogo de produtos preparados por meio do cockpit e do editor de produtos
 
-Agora você está pronto para gerenciar [experiências do produto](product-experience-management.md). No entanto, AEM conteúdo e comércio têm muitas opções adicionais disponíveis. Confira alguns dos recursos adicionais disponíveis no [Seção Recursos adicionais](#additional-resources) para saber mais sobre os recursos que você viu nesta jornada.
+Agora você está pronto para gerenciar [experiências do produto](product-experience-management.md). No entanto, AEM conteúdo e comércio têm muitas opções adicionais disponíveis. Confira alguns dos recursos adicionais disponíveis na [seção Recursos adicionais](#additional-resources) para saber mais sobre os recursos que você viu nesta jornada.
 
 ## Recursos adicionais {#additional-resources}
 

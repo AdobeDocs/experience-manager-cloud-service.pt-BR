@@ -5,7 +5,7 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 source-git-commit: 8ae52afc366c6607cfc806f68bec2069a2e93f94
 workflow-type: tm+mt
 source-wordcount: '1612'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -42,7 +42,7 @@ Siga estas etapas para definir os usuários da sua subconta New Relic One associ
 >
 >Um usuário em **Proprietário da empresa** ou **Gerenciador de implantação** deve estar conectado para gerenciar novos usuários do Relic One.
 
-1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização apropriada.
+1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
 1. Clique no programa para o qual você deseja gerenciar seus novos usuários do Relic One.
 
@@ -92,7 +92,7 @@ Depois de [Ativação da sua conta New Relic,](#activate-account) você pode ace
 
 Para acessar o Novo Relic One via Cloud Manager:
 
-1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização apropriada.
+1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
 1. Clique no programa para o qual você deseja acessar o Novo Relic One.
 

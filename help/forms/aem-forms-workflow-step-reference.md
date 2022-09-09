@@ -1,5 +1,5 @@
 ---
-title: 'Como atribuir um fluxo de trabalho a outro usuário, enviar email, usar o Adobe Sign em um fluxo de trabalho? '
+title: Como atribuir um fluxo de trabalho a outro usuário, enviar email, usar o Adobe Sign em um fluxo de trabalho?
 description: Os fluxos de trabalho centrados no Forms permitem que você crie rapidamente os fluxos de trabalho baseados no Adaptive Forms. Você pode usar o Adobe Sign para assinar documentos por email, criar processos comerciais baseados em formulários, recuperar e enviar dados para várias fontes de dados e enviar notificações por email
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4

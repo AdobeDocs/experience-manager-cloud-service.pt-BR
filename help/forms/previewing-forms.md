@@ -71,5 +71,5 @@ A tabela a seguir lista as opções de visualização disponíveis para diferent
 Ao selecionar **Visualizar com dados**, é possível ver a aparência do formulário com os dados reais inseridos. A opção Visualizar com dados permite carregar um XML que contém dados de exemplo do usuário. A amostra de dados do usuário é usada para preencher o formulário de visualização no formato escolhido.
 
 1. Selecione um ativo, clique em Visualizar ![aem6forms_preview](assets/aem6forms_preview.png)e selecione **Visualizar com dados**.
-1. Na caixa de diálogo Visualizar formulário, forneça FormData como um arquivo XML. Clique em Visualizar para renderizar o formulário com os dados unidos do XML.
+1. Na caixa de diálogo Visualizar formulário, forneça FormData como um arquivo XML. Clique em Preview para renderizar o formulário com os dados unidos do XML.
 

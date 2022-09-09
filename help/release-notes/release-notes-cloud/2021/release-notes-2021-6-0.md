@@ -1,11 +1,11 @@
 ---
-title: Notas de versão do  [!DNL Adobe Experience Manager] as a Cloud Service 2021.6.0.
-description: Notas de versão do  [!DNL Adobe Experience Manager] as a Cloud Service 2021.6.0.
+title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2021.6.0.
+description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2021.6.0.
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
 source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '1440'
-ht-degree: 10%
+ht-degree: 11%
 
 ---
 
@@ -30,12 +30,12 @@ A seguinte versão (2021.7.0) será lançada em 29 de julho de 2021.
 
 Dê uma olhada no [Visão geral da versão de junho de 2021](https://video.tv.adobe.com/v/334296) vídeo para obter um resumo dos recursos adicionados.
 
-## Documentação XML do AEM as a cloud Service {#xml-documentation}
+## XML Documentation para o AEM as a Cloud Service {#xml-documentation}
 
 ### Novidades {#what-is-new-xml-documentation}
 
-* A Documentação XML para AEM as a Cloud Service agora está disponível.
-* Isso permitirá que clientes atuais da AEM Cloud Service adquiram documentação XML e para importar, criar, gerenciar e fornecer conteúdo técnico em vários canais, incluindo sites de AEM
+* XML Documentation para AEM as a Cloud Service agora está disponível.
+* Isso permitirá que os clientes atuais do AEM Cloud Service adquiram o complemento XML Documentation para importar, criar, gerenciar e fornecer conteúdo técnico em vários canais, incluindo sites de AEM
 
 ## Cloud Manager {#cloud-manager}
 
@@ -128,7 +128,7 @@ A próxima versão está planejada para 15 de julho de 2021.
 
 ### Recurso beta de [!DNL Forms] {#what-is-new-forms-prerelease}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: As APIs de comunicação ajudam a combinar modelos XDP e dados XML para gerar documentos de impressão em vários formatos. O serviço permite gerar documentos no modo síncrono. As APIs permitem criar aplicativos que possibilitam a você:
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: As APIs de comunicação ajudam a combinar modelos XDP e dados XML para gerar documentos de impressão em vários formatos. O serviço permite gerar documentos em modo síncrono. As APIs permitem criar aplicativos que possibilitam a você:
    * Gere documentos de formulário finais preenchendo arquivos de modelo com dados XML.
    * Gerar formulários de saída em vários formatos, incluindo fluxos de impressão de PDF não interativos.
    * Gere PDF de impressão a partir de um PDF de formulário XFA e Formulário Adobe Acrobat (AcroForm).

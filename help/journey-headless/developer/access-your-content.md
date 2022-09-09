@@ -5,7 +5,7 @@ exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1359'
-ht-degree: 8%
+ht-degree: 18%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 8%
 
 Nesta parte do [AEM Jornada de desenvolvedor sem periféricos,](overview.md) você pode aprender a usar consultas GraphQL para acessar o conteúdo dos Fragmentos de conteúdo e alimentá-lo em seu aplicativo (entrega sem cabeçalho).
 
-## A História Até Agora {#story-so-far}
+## A história até agora {#story-so-far}
 
 No documento anterior da jornada sem cabeçalho AEM, [Como modelar seu conteúdo](model-your-content.md) você aprendeu as noções básicas da modelagem de conteúdo no AEM, então agora deve entender como modelar sua estrutura de conteúdo e, em seguida, perceber essa estrutura usando AEM Modelos de fragmento de conteúdo e Fragmentos de conteúdo:
 
@@ -77,7 +77,7 @@ GraphQL is used in various locations in AEM; for example:
 >This step of the Headless Journey is only concerned with the AEM GraphQL API and Content Fragments.
 -->
 
-## AEM API GraphQL {#aem-graphql-api}
+## API GraphQL do AEM {#aem-graphql-api}
 
 A API GraphQL da AEM é uma versão personalizada baseada na especificação GraphQL da API padrão, especialmente configurada para permitir a execução de consultas (complexas) nos Fragmentos de conteúdo.
 
@@ -95,7 +95,7 @@ Para ajudá-lo a inserir diretamente e testar consultas, uma implementação da 
 
 >[!NOTE]
 >
->A implementação AEM da API GraphQL é baseada nas bibliotecas GraphQL Java.
+>A implementação da API GraphQL do AEM é baseada nas bibliotecas GraphQL do Java.
 
 <!--
 ### Use Cases for Author and Publish Environments {#use-cases-author-publish-environments}
@@ -111,7 +111,7 @@ The use cases for the AEM GraphQL API can depend on the type of AEM as a Cloud S
     * The REST API can be used for CR(u)D operations.
 -->
 
-## Fragmentos de conteúdo para uso com a API GraphQL da AEM {#content-fragments-use-with-aem-graphql-api}
+## Fragmentos de conteúdo para uso com a API GraphQL do AEM {#content-fragments-use-with-aem-graphql-api}
 
 Os Fragmentos de conteúdo podem ser usados como base para GraphQL para AEM schemas e consultas como:
 
@@ -121,21 +121,21 @@ Os Fragmentos de conteúdo podem ser usados como base para GraphQL para AEM sche
 
 ### Modelos de fragmentos do conteúdo {#content-fragments-models}
 
-Esses modelos de fragmentos de conteúdo:
+Esses Modelos de fragmento de conteúdo:
 
-* São usados para gerar os Esquemas, uma vez **Ativado**.
-* Forneça os tipos de dados e campos necessários para GraphQL. Eles garantem que seu aplicativo solicite apenas o que é possível e receba o que é esperado.
-* O tipo de dados **Referências de fragmento** O pode ser usado no modelo para fazer referência a outro Fragmento de conteúdo e, portanto, introduzir níveis adicionais de estrutura.
+* São usados para gerar os Esquemas, uma vez **Ativados**.
+* Fornecem os tipos de dados e campos necessários para o GraphQL. Garantem que seu aplicativo solicite apenas o que é possível e receba o que é esperado.
+* O tipo de dados **Referências de fragmento** pode ser usado no modelo para fazer referência a outro fragmento de conteúdo e, assim, introduzir níveis adicionais de estrutura.
 
-### Referências de fragmento {#fragment-references}
+### Referências do fragmento {#fragment-references}
 
-O **Referência do fragmento**:
+A **Referência do fragmento**:
 
 * É um tipo de dados específico disponível ao definir um Modelo de fragmento de conteúdo.
-* Faz referência a outro fragmento, dependendo de um modelo de fragmento de conteúdo específico.
+* Faz referência a outro fragmento, dependente de um Modelo de fragmento de conteúdo específico.
 * Permite criar e recuperar dados estruturados.
 
-   * Quando definido como um **multifeed**, vários subfragmentos podem ser referenciados (recuperados) pelo fragmento principal.
+   * Quando definido como **multifeed**, vários fragmentos secundários podem ser referenciados (recuperados) pelo fragmento principal.
 
 ### Visualização JSON {#json-preview}
 
@@ -267,10 +267,10 @@ Os modelos de fragmento serão usados:
 
 ### Onde testar suas consultas {#where-to-test-your-queries}
 
-As consultas podem ser inseridas na interface GraphiQL. Você pode acessar o editor de consultas por meio de:
+As consultas podem ser inseridas na interface GraphiQL. É possível acessar o editor de consultas por meio de:
 
 * **Ferramentas** -> **Geral** -> **Editor de consultas GraphQL**
-* Diretamente; por exemplo, `http://localhost:4502/aem/graphiql.html`
+* diretamente; por exemplo, `http://localhost:4502/aem/graphiql.html`
 
 ![Interface GraphiQL](assets/graphiql-interface.png "Interface GraphiQL")
 

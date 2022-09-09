@@ -5,7 +5,7 @@ exl-id: 9ec5126b-bee4-445a-a4bb-0c27c1a93d3f
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '330'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -23,7 +23,7 @@ Para fazer isso, a ferramenta Quick Site Creation usa vários recursos as a Clou
 1. Um **Tema do Site AEM** está incluída no modelo e contém o CSS, JavaScript e recursos estáticos que definem o estilo do site.
 1. O **Pipeline de front-end** O pode ser usado para implantar personalizações no tema do site independentemente do desenvolvimento de back-end.
 
-## Jornada Rápida de Criação de Site {#quick-site-creation-journey}
+## Jornada de Criação rápida de sites {#quick-site-creation-journey}
 
 Para obter uma visão geral completa de como a ferramenta de Criação rápida de sites funciona e começar a implantar e personalizar seu próprio site imediatamente usando essas ferramentas poderosas, reveja o [Jornada Rápida de Criação de Site.](/help/journey-sites/quick-site/overview.md)
 

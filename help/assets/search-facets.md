@@ -100,7 +100,7 @@ Se quiser usar um nó existente, especifique-o usando a caixa de diálogo de sel
 1. Na página **[!UICONTROL Pesquisar formulários]**, selecione **[!UICONTROL Painel de pesquisa do administrador de ativos]** e toque no ícone Editar.
 1. Na página **[!UICONTROL Editar formulário de pesquisa]**, arraste o **[!UICONTROL Predicado de opções]** da guia **[!UICONTROL Selecionar predicado]** até o painel principal.
 1. Na guia **[!UICONTROL Configurações]**, digite um rótulo e um nome para a propriedade. Por exemplo, para pesquisar ativos com base no formato, especifique um nome amigável para o rótulo, por exemplo, **[!UICONTROL Tipo de arquivo]**. Especifique a propriedade com base na qual a pesquisa deve ser realizada no campo de propriedade, por exemplo `jcr:content/metadata/dc:format.`
-1. Faça uma das seguintes opções:
+1. Siga uma das seguintes opções:
 
    * No **[!UICONTROL Nome da propriedade]** , mencione o caminho do arquivo JSON, onde você define os nós das opções e especifica os pares de valores chave correspondentes.
    * Toque ![Ícone Adicionar ativos](assets/do-not-localize/aem_assets_add_icon.png) ao lado do campo Opções para especificar o texto de exibição e o valor das opções que deseja fornecer no painel Filtros. Para adicionar outra opção, toque/clique em ![Ícone Adicionar ativos](assets/do-not-localize/aem_assets_add_icon.png) e repita a etapa.
@@ -183,12 +183,12 @@ Semelhante à forma como você adiciona um predicado de Propriedade ou um predic
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Caminho</p> </td>
+   <td><p>Caminho </p> </td>
    <td><p>Use-o para filtrar resultados no local. Você pode especificar caminhos diferentes como opções.</p> </td>
    <td>
     <ul>
      <li>Etiqueta</li>
-     <li>Caminho</li>
+     <li>Caminho </li>
      <li>Descrição</li>
     </ul> </td>
   </tr>
@@ -252,7 +252,7 @@ Semelhante à forma como você adiciona um predicado de Propriedade ou um predic
     <ul>
      <li>Etiqueta</li>
      <li>Nome da propriedade</li>
-     <li>Caminho</li>
+     <li>Caminho </li>
      <li>Descrição</li>
     </ul> </td>
   </tr>

@@ -2,13 +2,13 @@
 title: Criar ambientes
 description: Saiba como usar o Cloud Manager para criar seus primeiros ambientes.
 role: Admin, User, Developer
-source-git-commit: 709a80683357b0d56280ff14aa5f4ba6bf2c6b23
+exl-id: 31940e1e-fe27-4c5f-b67f-41affebea63a
+source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
 workflow-type: tm+mt
 source-wordcount: '659'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
-
 
 # Criar ambientes {#create-environments}
 
@@ -39,7 +39,7 @@ Para fins dessa jornada de integração, você criará um ambiente de desenvolvi
 
 ## Criar ambientes {#creating-environments}
 
-1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização apropriada.
+1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
 1. Clique no programa para o qual deseja adicionar um ambiente.
 

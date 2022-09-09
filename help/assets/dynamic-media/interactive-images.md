@@ -186,7 +186,7 @@ Depois de salvar a predefinição do visualizador, ela é ativada automaticament
 1. No menu suspenso Rich Media Type (Tipo de mídia avançada), selecione **[!UICONTROL Imagem interativa]**.
 1. Selecione **[!UICONTROL Criar]**.
 1. Na página Editar predefinição do visualizador , toque no **[!UICONTROL Aparência]** guia .
-1. Faça uma das seguintes opções:
+1. Siga uma das seguintes opções:
 
    * Para fazer upload de sua própria imagem de ponto de acesso que deseja usar nas imagens, toque no ícone Seletor de ativos. Na página Selecionar conteúdo , navegue até a imagem do ponto de acesso que deseja usar e selecione-a. Selecione o ícone Marca de seleção no canto superior direito.
    * Para selecionar uma imagem de ponto de acesso predefinida, toque no ícone Galeria de pontos de acesso . Na paleta galeria de ponto de acesso, toque na imagem do ponto de acesso que deseja usar.
@@ -241,7 +241,7 @@ Se você estiver editando imagens interativas com pontos de acesso e recortar a 
 **Para adicionar pontos de acesso a um banner de imagem:**
 
 1. Na exibição Ativos, navegue até o banner de imagem que deseja tornar interativo.
-1. Faça uma das seguintes opções:
+1. Siga uma das seguintes opções:
 
    * Passe o mouse sobre a imagem, em seguida, toque em **[!UICONTROL Selecionar]** (ícone de marca de seleção). Na barra de ferramentas, toque em **[!UICONTROL Editar]**.
 
@@ -258,7 +258,7 @@ Se você estiver editando imagens interativas com pontos de acesso e recortar a 
    1. (Opcional) Para excluir um ponto de acesso, selecione-o na imagem e toque em **[!UICONTROL Excluir]** (ícone de lixeira) sob a **[!UICONTROL Pontos de conexão]** cabeçalho.
 
 1. No campo de texto Nome , digite o nome do ponto de acesso. Esse nome também aparece na lista suspensa Ponto de acesso selecionado .
-1. Faça uma das seguintes opções:
+1. Siga uma das seguintes opções:
 
    * Selecionar **[!UICONTROL QuickView]**.
 

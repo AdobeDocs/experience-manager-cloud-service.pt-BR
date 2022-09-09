@@ -1,6 +1,6 @@
 ---
-title: Notas de versão do  [!DNL Adobe Experience Manager] as a Cloud Service 2021.3.0.
-description: '"[!DNL Adobe Experience Manager] Notas de versão as a Cloud Service para 2021.3.0."'
+title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2021.3.0.
+description: "[!DNL Adobe Experience Manager] Notas de versão as a Cloud Service para 2021.3.0."
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
 source-git-commit: 71647239fc5e740faa25524a01a8ef21ed2d7a3b
 workflow-type: tm+mt
@@ -151,7 +151,7 @@ A Data de lançamento da ferramenta Transferência de conteúdo v1.3.0 é 4 de m
 
 ### Correções de erros {#bug-fixes-ctt-march}
 
-* Ao migrar conteúdo de um caminho específico, a CTT estava extraindo recursos não relacionados. Isso foi corrigido
+* Ao migrar conteúdo de um caminho específico, a CTT estava extraindo recursos não relacionados. Isso foi corrigido.
 
 ## Analisador de práticas recomendadas {#best-practices-analyzer}
 

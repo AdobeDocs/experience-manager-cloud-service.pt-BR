@@ -3,7 +3,7 @@ title: Alterações importantes no Adobe Experience Manager (AEM) as a Cloud Ser
 description: Alterações importantes no Adobe Experience Manager (AEM) as a Cloud Service
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
 source-git-commit: d3208a9a0785909e9b62d4033437a8ff44f7ba3e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '846'
 ht-degree: 100%
 

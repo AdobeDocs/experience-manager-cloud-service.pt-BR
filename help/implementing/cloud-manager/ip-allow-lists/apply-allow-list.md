@@ -1,16 +1,16 @@
 ---
-title: 'Aplicar e desaplicar Listas de permissões IP '
+title: Aplicar e cancelar a aplicação de Listas de permissões de IP
 description: Saiba como aplicar e desaplicar listas de permissões de IP a ambientes.
 exl-id: 7158496c-b0c4-4228-a306-71dc51003c57
 source-git-commit: 7632a9fef71e95238d149ec5318903757bb2a326
 workflow-type: tm+mt
 source-wordcount: '271'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
 
-# Aplicar e desaplicar Listas de permissões IP {#apply-allow-list}
+# Aplicar e cancelar a aplicação de Listas de permissões de IP {#apply-allow-list}
 
 Ao aplicar uma lista de permissões IP, todos os intervalos IP incluídos na definição da lista são associados a um serviço de criação ou publicação em um ambiente. Desaplicar uma lista é o inverso desse processo.
 

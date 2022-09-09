@@ -1,7 +1,8 @@
 ---
 title: Atalhos de teclado para o console Fragmentos de conteúdo
 description: Vários atalhos de teclado estão disponíveis em todo o AEM, incluindo alguns para gerenciar Fragmentos de conteúdo
-source-git-commit: 7fe9689e31d29e2dd6c2812742c158723d7c2c15
+exl-id: fe6ea615-43aa-41cd-a21c-50d855084154
+source-git-commit: 472b670623e77957ff9a366359ebef8c6c0604ae
 workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 27%

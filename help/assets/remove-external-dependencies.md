@@ -1,16 +1,16 @@
 ---
-title: Remover dependências externas para instalações existentes
-description: Remover dependências externas para instalações existentes
+title: Remover dependências externas de instalações existentes
+description: Remover dependências externas de instalações existentes
 feature: Integrations
 exl-id: 5b28ce97-2719-47b8-a386-77d4aaddbe81
 source-git-commit: b71a78696d4b347c97b077d84b455f53a1747a07
 workflow-type: tm+mt
 source-wordcount: '102'
-ht-degree: 0%
+ht-degree: 17%
 
 ---
 
-# Remover dependências externas para instalações existentes {#remove-external-depedencies}
+# Remover dependências externas de instalações existentes {#remove-external-depedencies}
 
 O Adobe recomenda que você execute as etapas de configuração para instalações de conector aprimorado existentes para o Workfront a fim de remover as dependências dos pontos de distribuição do Hoodoo.
 

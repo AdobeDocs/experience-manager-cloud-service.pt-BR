@@ -1,6 +1,6 @@
 ---
-title: Notas de versão do  [!DNL Adobe Experience Manager] as a Cloud Service 2020.12.0.
-description: Notas de versão do  [!DNL Adobe Experience Manager] as a Cloud Service 2020.12.0.
+title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2020.12.0.
+description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2020.12.0.
 exl-id: 16875180-1f23-477d-9d4d-e220998c4983
 source-git-commit: aeee895e4a4b959125d08091619988d0ffa09ace
 workflow-type: tm+mt

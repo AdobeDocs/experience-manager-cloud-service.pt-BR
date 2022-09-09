@@ -6,7 +6,7 @@ hide: false
 hidefromtoc: false
 exl-id: 081167dd-da4c-48d2-a6d3-f95e873be3e9
 source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1362'
 ht-degree: 100%
 
@@ -159,7 +159,7 @@ Parabéns! Você concluiu a jornada de tradução do AEM Sites! Agora você deve
 * Entender os recursos de tradução do AEM e como eles estão relacionados ao conteúdo dos sites.
 * Ter a capacidade de começar a traduzir seu próprio conteúdo.
 
-Agora você está pronto para traduzir seu próprio conteúdo no AEM. No entanto, o AEM é uma ferramenta poderosa e há muitas opções adicionais disponíveis. Confira alguns dos recursos adicionais disponíveis na seção [Recursos adicionais](#additional-resources) para saber mais sobre os recursos vistos nesta jornada.
+Agora você está pronto para traduzir seu próprio conteúdo no AEM. No entanto, o AEM é uma ferramenta poderosa e há muitas opções adicionais disponíveis. Confira alguns dos recursos adicionais disponíveis na [seção Recursos adicionais](#additional-resources) para saber mais sobre os recursos que você viu nesta jornada.
 
 ## Recursos adicionais {#additional-resources}
 

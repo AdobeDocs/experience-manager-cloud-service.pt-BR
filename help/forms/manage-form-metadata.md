@@ -7,7 +7,7 @@ exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '1660'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -19,7 +19,7 @@ Os metadados permitem a categorização e a organização mais fáceis de ativos
 
 <!-- If you're a developer or a site owner, you can customize Forms Portal, the end-user interface for [!DNL AEM Forms] to reflect the metadata you're using in your organization. For more information abouts Forms Portal, see [Introduction to publishing forms on a portal](introduction-publishing-forms.md). -->
 
-## Metadados em [!DNL AEM Forms] {#metadata-in-aem-forms}
+## Metadados no [!DNL AEM Forms] {#metadata-in-aem-forms}
 
 Em [!DNL AEM Forms], a lista de propriedades de metadados associadas a um ativo depende de seu tipo. Além disso, se você adicionar uma propriedade de metadados personalizada, ela será adicionada em todos os ativos do tipo em que os metadados personalizados foram adicionados.
 
@@ -57,7 +57,7 @@ Veja a seguir uma extensa lista de propriedades de metadados compatíveis com o 
   </tr> 
   <tr> 
    <td>Tipo</td> 
-   <td>Todos os pacotes</td> 
+   <td>Todos</td> 
    <td><p>Um valor somente leitura especificando o tipo de ativo. Ele pode ter um dos seguintes valores:</p> 
     <ul> 
      <li>Modelo de formulário</li> 
@@ -70,12 +70,12 @@ Veja a seguir uma extensa lista de propriedades de metadados compatíveis com o 
   </tr> 
   <tr> 
    <td>Criado</td> 
-   <td>Todos os pacotes</td> 
+   <td>Todos</td> 
    <td>Um valor somente leitura especificando o horário de criação do ativo.</td> 
   </tr> 
   <tr> 
    <td>Data da última modificação</td> 
-   <td>Todos os pacotes</td> 
+   <td>Todos</td> 
    <td>Um valor somente leitura especificando a hora em que o ativo foi modificado pela última vez.</td> 
   </tr> 
   <tr> 

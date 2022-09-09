@@ -5,7 +5,7 @@ exl-id: 155a2534-746d-4237-b7e2-9212c36fac7f
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '458'
-ht-degree: 6%
+ht-degree: 35%
 
 ---
 
@@ -23,23 +23,23 @@ Este guia aborda os tópicos mais importantes de criação de Conteúdo AEM e Co
 * Gerenciar experiências de catálogo de produtos preparados
 * Enriqueça os dados do produto com conteúdo usando as Ferramentas de gerenciamento de experiência do produto
 
-## jornadas de documentação de AEM {#documentation-journeys}
+## Jornadas de documentação do AEM {#documentation-journeys}
 
-[Uma Jornada de documentação](/help/journey-documentation/documentation-journeys.md) une vários tópicos e recursos diferentes e talvez complicados ao fornecer uma narrativa que ajude o leitor, que pode ser novo a AEM, compreender e resolver um problema de negócios do início ao fim, assumindo o mínimo de tópico ou conhecimento AEM.
+[Uma Jornada de documentação](/help/journey-documentation/documentation-journeys.md) une vários tópicos e recursos diferentes e talvez complicados, fornecendo uma narrativa que ajuda o leitor, que pode ser novo no AEM, a entender e resolver um problema da empresa do começo ao fim, assumindo o mínimo de conhecimento prévio do tópico ou do AEM.
 
-As Jornadas de documentação foram projetadas com princípios de práticas recomendadas, informadas pela última pesquisa Adobe, experiência comprovada de implementação de consultores de Adobe e feedback de projetos de clientes.
+As Jornadas de documentação foram projetadas com princípios de práticas recomendadas, informadas pela última pesquisa da Adobe, experiência comprovada de implementação dos consultores da Adobe e feedback de projetos de clientes.
 
-Se você quiser saber como o Adobe recomenda como resolver casos de negócios de sites com AEM, o AEM Sites Jornada é o local de início.
+Se quiser saber como a Adobe recomenda resolver casos de negócios de sites com o AEM, as jornadas do AEM Sites são um ótimo ponto de partida.
 
 ## Público {#audience}
 
 Essa jornada foi projetada para o autor de conteúdo do Commerce do AEM. Esta jornada apresenta os requisitos, as etapas e a abordagem para começar e gerenciar páginas de catálogo, modelos e experiências completas do produto.
 
-As informações nesta jornada podem, é claro, ser úteis para outras pessoas, mas algumas informações serão supérfluas para certas funções. Fique atento às próximas jornadas que abordam outras funções.
+As informações nesta jornada podem, é claro, ser úteis para outras pessoas, mas algumas informações serão supérfluas para certas funções. Fique atento para jornadas futuras que abordarão funções adicionais.
 
 ## A Jornada {#the-journey}
 
-Você explorará muitos tópicos nesta jornada. Os artigos a seguir fornecem conhecimento fundamental e vinculam a documentação técnica detalhada.
+Muitos tópicos serão explorados nesta jornada. Os artigos a seguir fornecem conhecimento fundamental e vinculam a documentação técnica detalhada.
 
 Embora seja possível ir diretamente para uma parte específica da jornada, muitos conceitos baseiam-se em artigos anteriores. Portanto, se você é novo em AEM de Conteúdo e Comércio, recomendamos que você comece no início e avance sequencialmente.
 

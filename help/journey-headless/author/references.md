@@ -5,7 +5,7 @@ exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '729'
-ht-degree: 7%
+ht-degree: 9%
 
 ---
 
@@ -26,7 +26,7 @@ Este artigo se baseia nesses itens para que você entenda como usar referências
 
    * Referências do conteúdo
    * Referências de ativo/mídia
-   * Referências de fragmento
+   * Referências do fragmento
    * Referências ad hoc de dentro de um bloco de texto
 
 ## O que são referências {#what-are-references}
@@ -47,7 +47,7 @@ Os ativos (por exemplo, imagens ou mídia) podem ser referenciados em um bloco d
 
 ![Fragmentos de conteúdo - Inserir ativo](/help/journey-headless/author/assets/headless-journey-author-references-02.png)
 
-## Referências de fragmento {#fragment-references}
+## Referências do fragmento {#fragment-references}
 
 Novamente, as Referências de fragmento fazem exatamente isso - permitem que você faça referência a outro fragmento. Por que isso é significativo precisa de um pouco mais de explicação.
 
@@ -96,7 +96,7 @@ Usar o **Árvore da estrutura** no Editor de fragmento do conteúdo, é possíve
 >
 >Usando a navegação estrutural no painel principal, você pode retornar ao ponto de partida.
 
-![Árvore da estrutura do fragmento do conteúdo](/help/sites-cloud/administering/content-fragments/assets/cfm-structuretree-02.png)
+![Árvore de estrutura do fragmento de conteúdo](/help/sites-cloud/administering/content-fragments/assets/cfm-structuretree-02.png)
 
 ## Referências ad hoc {#adhoc-references}
 

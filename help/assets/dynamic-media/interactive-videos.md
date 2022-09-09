@@ -279,7 +279,7 @@ Depois de salvar o vídeo interativo, ele é aberto imediatamente na Visualizaç
 **Para adicionar interatividade ao vídeo:**
 
 1. Na exibição Ativos, navegue até o vídeo que você carregou e deseja tornar interativo.
-1. Faça uma das seguintes opções:
+1. Siga uma das seguintes opções:
 
    * Passe o mouse sobre a imagem, em seguida selecione **[!UICONTROL Selecionar]** (ícone de marca de seleção). Na barra de ferramentas, selecione **[!UICONTROL Editar]**.
 
@@ -457,7 +457,7 @@ Depois de salvar o vídeo interativo, ele é aberto imediatamente na Visualizaç
 
    Um novo rótulo de texto é adicionado à imagem em miniatura.
 
-1. Faça uma das seguintes opções:
+1. Siga uma das seguintes opções:
 
    * Repita as etapas 6 a 11 para adicionar mais imagens em miniatura a segmentos de linha do tempo no vídeo.
    * Prossiga para a etapa opcional 13.

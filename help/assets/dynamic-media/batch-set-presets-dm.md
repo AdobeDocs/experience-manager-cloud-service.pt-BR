@@ -89,7 +89,7 @@ Para saber mais sobre as opções editáveis disponíveis para você, consulte [
       * Se você adicionou um grupo e deseja removê-lo, selecione **[!UICONTROL X]**.
    * Ao adicionar dois ou mais grupos, na **[!UICONTROL E]** , selecione **[!UICONTROL E]** para associar-se a um grupo recém-adicionado a qualquer grupo de expressão anterior que você tenha adicionado. Ou, selecione **[!UICONTROL Ou]** para adicionar uma alternância entre o grupo de expressões anterior e o novo grupo que você criar. O **[!UICONTROL Ou]** operando é definido pelo uso de um caractere de linha vertical `|` na própria sintaxe da expressão regular.
 
-1. Faça uma das seguintes opções:
+1. Siga uma das seguintes opções:
 
    * Para adicionar outro novo grupo, em **[!UICONTROL Corresponder]**, **[!UICONTROL Nome básico]** ou **[!UICONTROL Ordem de sequência]**, selecione **[!UICONTROL Adicionar grupo]**. Crie outro grupo de expressões regulares como fez na etapa anterior.
    * Revise a sintaxe da expressão regular no **[!UICONTROL Resultados da Regra - RegX]** área. Se for necessário alterar a sintaxe, faça as edições no respectivo grupo à esquerda da página.

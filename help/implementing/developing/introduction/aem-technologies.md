@@ -275,7 +275,7 @@ Isso permite executar as seguintes ações em qualquer um dos pacotes da instala
 * Instalar
 * Início
 * Parar
-* Atualizar
+* Atualizar o
 * Desinstalar
 * Ver o status atual
 * Acesse informações mais detalhadas (por exemplo, nome simbólico, versão, localização, etc.) sobre os pacotes específicos

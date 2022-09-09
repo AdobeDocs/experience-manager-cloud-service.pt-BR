@@ -3,8 +3,8 @@ title: Fragmentos de conteúdo - Considerações sobre a exclusão
 description: Analise essas considerações importantes antes de definir as políticas de exclusão de fragmentos de conteúdo no AEM. Os fragmentos de conteúdo são uma ferramenta eficiente para fornecer conteúdo headless, e as implicações de excluí-los devem ser cuidadosamente consideradas.
 exl-id: f6698dd8-3e2a-44ac-b00f-df578aa85ffe
 source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
-workflow-type: ht
-source-wordcount: '0'
+workflow-type: tm+mt
+source-wordcount: '470'
 ht-degree: 100%
 
 ---

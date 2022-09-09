@@ -13,7 +13,7 @@ ht-degree: 2%
 
 Saiba mais sobre AEM criação na CIF.
 
-## A História Até Agora {#story-so-far}
+## A história até agora {#story-so-far}
 
 No documento anterior desta jornada de Conteúdo e Comércio de AEM, [Saiba mais sobre conteúdo e comércio AEM](/help/commerce-cloud/introduction.md), você aprendeu a teoria básica do que é um CMS sem periféricos e agora deve entender os conceitos básicos de Conteúdo e Comércio AEM.
 

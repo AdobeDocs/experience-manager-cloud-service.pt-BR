@@ -20,7 +20,7 @@ ht-degree: 23%
 
 Esta é a última parte da jornada, portanto, você aprenderá a monitorar os problemas e a melhorar o desempenho após a conclusão da migração. Você deve garantir a limpeza de arquivos temporários, analisar práticas recomendadas para desenvolvimento contínuo e gerenciar logs.
 
-## A História Até Agora {#story-so-far}
+## A história até agora {#story-so-far}
 
 Na etapa anterior da jornada, você aprendeu a executar a migração e [Ao vivo](/help/journey-migration/go-live.md) assim que o código e o conteúdo estavam prontos para serem movidos para AEM as a Cloud Service.
 
@@ -75,7 +75,7 @@ Em seguida, você deve compartilhar esses aprendizados pós-migração com as pa
 
 ## A Jornada Termina - Ou Será? {#journey-ends}
 
-Parabéns! Você concluiu a Jornada de migração AEM as a Cloud Service! Você deve conhecer como:
+Parabéns. Você concluiu a Jornada de migração AEM as a Cloud Service! Você deve conhecer como:
 
 * Comece já a mudar para AEM as a Cloud Service
 * Determine se sua implantação está pronta para ser movida para AEM as a Cloud Service

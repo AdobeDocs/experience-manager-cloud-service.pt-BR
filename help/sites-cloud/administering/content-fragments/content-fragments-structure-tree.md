@@ -3,8 +3,8 @@ title: Árvore de estrutura do fragmento de conteúdo
 description: Use o recurso de árvore de estrutura do editor de fragmento de conteúdo no AEM para entender melhor seu conteúdo headless.
 exl-id: 7e55d7b7-3a82-4665-b4aa-9b47094d91c9
 source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
-workflow-type: ht
-source-wordcount: '0'
+workflow-type: tm+mt
+source-wordcount: '112'
 ht-degree: 100%
 
 ---

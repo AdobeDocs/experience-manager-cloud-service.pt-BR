@@ -2,13 +2,13 @@
 title: Práticas recomendadas de consulta e indexação
 description: Saiba como otimizar seus índices e consultas com base nas diretrizes de práticas recomendadas do Adobe.
 topic-tags: best-practices
-source-git-commit: 565ca9f29c08a741edfd325090588c4bd7ae81f3
+exl-id: 37eae99d-542d-4580-b93f-f454008880b1
+source-git-commit: afeff7cfb8606eb58126a4ca62ce9e6e58c44215
 workflow-type: tm+mt
 source-wordcount: '1563'
 ht-degree: 0%
 
 ---
-
 
 # Práticas recomendadas de consulta e indexação {#query-and-indexing-best-practices}
 

@@ -3,7 +3,7 @@ title: Promoção de inicializações
 description: Você precisa promover as páginas de lançamento para retornar o conteúdo à fonte (produção) antes de publicar.
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '817'
 ht-degree: 100%
 

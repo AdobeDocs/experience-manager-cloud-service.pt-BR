@@ -3,7 +3,7 @@ title: Criação e gerenciamento de ofertas
 description: Use o console Ofertas para criar ofertas que você pode usar em experiências de atividades
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '875'
 ht-degree: 100%
 

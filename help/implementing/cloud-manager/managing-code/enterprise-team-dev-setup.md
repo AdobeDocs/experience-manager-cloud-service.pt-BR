@@ -1,11 +1,11 @@
 ---
-title: Configuração da Equipe de Desenvolvimento Empresarial
+title: Configuração da equipe de desenvolvimento corporativa
 description: Saiba como configurar e dimensionar sua equipe de desenvolvimento empresarial e veja como AEM as a Cloud Service pode suportar seu processo de desenvolvimento.
 exl-id: 85f8779b-12cb-441b-a34d-04641184497a
 source-git-commit: a31c3693c9b2af9bd7f9d7f1f6fb0a61a4411df0
 workflow-type: tm+mt
 source-wordcount: '1444'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -51,7 +51,7 @@ A integração de um novo projeto requer a listagem no arquivo do projeto Maven 
 
 ![Diagrama de fluxo de trabalho](/help/implementing/cloud-manager/assets/team-setup1.png)
 
-O repositório Git de cada é configurado usando o [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) e, por conseguinte, segue as melhores práticas para a criação de projetos AEM. A única exceção é a configuração do dispatcher que é feita no repositório Git compartilhado conforme descrito acima.
+O repositório Git de cada é configurado usando o [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt_BR) e, por conseguinte, segue as melhores práticas para a criação de projetos AEM. A única exceção é a configuração do dispatcher que é feita no repositório Git compartilhado conforme descrito acima.
 
 Cada equipe usa um fluxo de trabalho git simplificado com duas ramificações + N, seguindo o modelo de fluxo git:
 

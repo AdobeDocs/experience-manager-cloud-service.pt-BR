@@ -1,5 +1,5 @@
 ---
-title: 'Como baixar e instalar o Forms Designer para criar modelos de Documento de registro?  '
+title: Como baixar e instalar o Forms Designer para criar modelos de Documento de registro?
 description: Você pode usar o Forms Designer para criar modelos de formulário XDP e PDF que servem como modelo para um Documento de registro. O Designer está disponível com o [!DNL AEM Forms] licença.
 exl-id: d6f1cb21-c48b-406d-8d47-482d7a1b4cc3
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4

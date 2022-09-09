@@ -571,7 +571,7 @@ A funcionalidade de controle de versão permite fazer o seguinte:
 
 1. Toque/clique no ícone de Navegação global e escolha **[!UICONTROL Linha do tempo]** no menu .
 
-   ![linha do tempo](assets/timeline.png)
+   ![linha de tempo](assets/timeline.png)
 
 1. Toque/clique no botão **[!UICONTROL Ações]** (seta) na parte inferior para exibir as ações disponíveis que podem ser executadas no ativo.
 

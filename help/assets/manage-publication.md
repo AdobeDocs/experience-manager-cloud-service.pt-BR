@@ -1,5 +1,5 @@
 ---
-title: 'Gerenciar publicação   '
+title: Gerenciar publicação
 description: Publicar ou desfazer a publicação de ativos no Experience Manager Assets, Dynamic Media e Brand Portal
 contentOwner: Vishabh Gupta
 mini-toc-levels: 1
@@ -105,7 +105,7 @@ A tabela a seguir explica como a publicação ocorre dependendo do **[!UICONTROL
 | Publicação | Publicação seletiva | `AEM` | Ativos e (ou) pastas |
 | Publicação | Imediato | `AEM` e `Dynamic Media` | Ativos e (ou) pastas |
 | Publicação | Por ativação | `AEM` e `Dynamic Media` | Ativos e (ou) pastas |
-| Dynamic Media | Publicação seletiva | `Dynamic Media` | Ativos |
+| Dynamic Media | Publicação seletiva | `Dynamic Media` | Assets |
 | Dynamic Media | Imediato | `None` | Não é possível publicar os ativos |
 | Dynamic Media | Por ativação | `None` | Não é possível publicar os ativos |
 

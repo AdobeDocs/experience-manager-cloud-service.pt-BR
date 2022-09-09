@@ -5,7 +5,7 @@ exl-id: b677f691-5257-43c3-a4b9-c34932577b31
 source-git-commit: ad47148237fe8a8b7c0b4fc4eb293f1155dae560
 workflow-type: tm+mt
 source-wordcount: '1029'
-ht-degree: 11%
+ht-degree: 47%
 
 ---
 
@@ -40,7 +40,7 @@ Se você quiser saber como o Adobe recomenda como resolver casos de negócios se
 
 ## Público {#audience}
 
-Essa jornada foi projetada para o perfil especialista em tradução, geralmente chamado de Gerenciador de projetos de tradução ou TPM. Essa jornada apresenta os requisitos, as etapas e a abordagem para traduzir o conteúdo sem periféricos em AEM. A jornada pode definir personas adicionais com as quais o especialista de tradução deve interagir, mas o ponto de vista da jornada é o do especialista de tradução.
+Essa jornada foi criada para o perfil de um especialista em tradução, geralmente chamado de Gerente de projetos de tradução. Essa jornada apresenta os requisitos, as etapas e a abordagem para traduzir o conteúdo sem periféricos em AEM. A jornada pode definir perfis adicionais com os quais o especialista em tradução deve interagir, mas o ponto de vista da jornada é o do especialista em tradução.
 
 Essa jornada supõe que o leitor tenha experiência de tradução de conteúdo em um grande sistema CMS, mas não assume conhecimento de tecnologia ou AEM sem periféricos.
 
@@ -48,16 +48,16 @@ A seguir estão os perfis que interagem nessa jornada.
 
 | Perfil | Descrição | Função na jornada |
 |---|---|---|
-| Especialista em tradução | Define qual conteúdo deve ser traduzido e gerencia esses workflows | Público-alvo desta jornada |
-| Autor do conteúdo | Cria e gerencia conteúdo entregue sem cabeçalho | Os Autores de conteúdo criam conteúdo que o especialista de tradução deve traduzir. |
-| Administrador | Gerencia a configuração básica e a configuração do AEM | O especialista em tradução trabalha com o administrador para fazer as alterações de configuração necessárias para a tradução, como instalar um conector de tradução. |
-| Arquitetura de conteúdo | Analisa os requisitos dos dados que devem ser entregues sem periféricos e define a estrutura desses dados | Especialistas em tradução trabalham com o arquiteto de conteúdo para definir a organização do conteúdo, para que ele possa ser facilmente traduzido. |
+| Especialista em tradução | Define qual conteúdo deve ser traduzido e gerencia esses fluxos de trabalho | Público-alvo desta jornada |
+| Autor de conteúdo | Cria e gerencia conteúdo entregue sem cabeçalho | Os autores de conteúdo criam o conteúdo que o especialista em tradução deve traduzir. |
+| Administrador | Gerencia as definições básicas e a configuração do AEM | O especialista em tradução trabalha com o administrador para fazer as alterações de configuração necessárias para a tradução, como a instalação de um conector de tradução. |
+| Arquiteto de conteúdo | Analisa os requisitos dos dados que devem ser entregues sem periféricos e define a estrutura desses dados | Os especialistas em tradução trabalham com o arquiteto de conteúdo para definir a organização do conteúdo, para que ele possa ser facilmente traduzido. |
 
-As informações nesta jornada podem, é claro, ser úteis para todas as pessoas, mas algumas informações podem ser supérfluas para determinadas funções. Fique ligado para [jornadas futuras que abordarão funções adicionais.](/help/journey-documentation/documentation-journeys.md#journeys)
+As informações nesta jornada podem ser úteis para todos os perfis, mas algumas informações podem ser supérfluas para determinadas funções. Fique atento para [jornadas futuras que abordarão funções adicionais.](/help/journey-documentation/documentation-journeys.md#journeys)
 
 ## A Jornada de tradução sem cabeçalho {#the-journey}
 
-Você explorará muitos tópicos nesta jornada. Os artigos a seguir fornecem conhecimento fundamental da tradução do conteúdo sem interface no AEM e vinculam a documentação técnica detalhada.
+Muitos tópicos serão explorados nesta jornada. Os artigos a seguir fornecem conhecimento fundamental da tradução do conteúdo sem interface no AEM e vinculam a documentação técnica detalhada.
 
 Embora seja possível ir diretamente para uma parte específica da jornada, muitos conceitos baseiam-se em artigos anteriores. Portanto, se você é novo em uma tradução sem cabeçalho no AEM, recomendamos que você comece no início e avance sequencialmente.
 
@@ -66,7 +66,7 @@ Embora seja possível ir diretamente para uma parte específica da jornada, muit
 | 0 | jornada de tradução sem cabeçalho AEM | Este documento |
 | 1 | [Saiba mais sobre o conteúdo sem periféricos e como traduzi-lo em AEM](learn-about.md) | Aprenda conceitos sem interface, como eles mapeiam para AEM e a teoria AEM tradução. |
 | 2 | [Introdução à tradução do AEM headless](getting-started.md) | Saiba como organizar o conteúdo sem periféricos e como funcionam AEM ferramentas de tradução. |
-| 3 | [Configurar o conector de tradução](configure-connector.md) | Saiba como conectar AEM a um serviço de tradução. |
+| 3 | [Configurar o conector de tradução](configure-connector.md) | Saiba como conectar o AEM a um serviço de tradução. |
 | 4 | [Traduzir conteúdo](translate-content.md) | Use o conector e as regras de tradução para traduzir o conteúdo sem cabeçalho. |
 | 5 | [Publicar conteúdo traduzido](publish-content.md) | Saiba como publicar seu conteúdo traduzido e atualizar a tradução quando o conteúdo subjacente for atualizado. |
 
@@ -80,8 +80,8 @@ As jornadas de documentação mostram como o AEM soluciona um problema comercial
 
 Como tais jornadas são projetadas para se sustentarem sozinhas. No entanto, alguns deles podem estar relacionados entre si. Confira estas jornadas adicionais para obter mais informações sobre como AEM recursos avançados trabalham juntos.
 
-* [Jornada de criação sem cabeçalho](/help/journey-headless/author/overview.md) - Comece aqui para obter uma jornada guiada por meio dos recursos avançados e flexíveis sem interface de AEM, seus recursos e como modelar seu conteúdo em seu primeiro projeto sem interface.
-* [Jornada de arquitetura headless](/help/journey-headless/architect/overview.md) - Comece aqui para obter uma introdução aos recursos avançados, flexíveis e sem periféricos do Adobe Experience Manager as a Cloud Service e como modelar o conteúdo para seu projeto.
-* [jornada do desenvolvedor sem periféricos do AEM](/help/journey-headless/developer/overview.md) - Comece aqui para obter uma jornada guiada com os recursos avançados e flexíveis do AEM, seus recursos e como aproveitá-los em seu primeiro projeto de desenvolvimento.
-* [AEM documentação técnica as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=pt-BR) - Se você já tiver um conhecimento profundo das tecnologias AEM e sem interface, poderá consultar diretamente nossos documentos técnicos aprofundados.
-* [Tutoriais AEM headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR) - Se você preferir aprender fazendo e for tecnicamente inclinado, utilize nossos tutoriais práticos organizados por API e framework, que exploram a criação e o uso de aplicativos criados AEM Headless.
+* [Jornada de criação headless](/help/journey-headless/author/overview.md) - comece aqui para obter uma jornada guiada pelos recursos headless avançados e flexíveis do AEM, suas funcionalidades e aprenda a modelar o conteúdo em seu primeiro projeto headless.
+* [Jornada do arquiteto headless](/help/journey-headless/architect/overview.md) - comece aqui para obter uma introdução aos recursos headless avançados e flexíveis do Adobe Experience Manager as a Cloud Service e aprender como modelar o conteúdo para seu projeto.
+* [Jornada de desenvolvedores headless do AEM](/help/journey-headless/developer/overview.md) - comece aqui para obter uma jornada guiada pelos recursos headless avançados e flexíveis do AEM, suas funcionalidades e como aproveitá-las em seu primeiro projeto.
+* [Documentação técnica do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=pt-BR) - se você já tiver uma sólida compreensão das tecnologias headless e do AEM, poderá consultar diretamente os nossos documentos técnicos detalhados.
+* [Tutoriais do AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR) - se você prefere aprender na prática e tem conhecimento técnico, utilize nossos tutoriais práticos organizados por API e estrutura, que exploram a criação e o uso de aplicativos incorporados no AEM Headless.

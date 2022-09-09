@@ -3,7 +3,7 @@ title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 
 description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2022.4.0.
 exl-id: 6c86838a-cabf-4770-b1ae-618af70193a2
 source-git-commit: f42cf1b82f7cf42be2afd30d69d71354fe0afeb3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 100%
 
@@ -36,14 +36,14 @@ Assista ao vídeo [Visão geral da versão de abril de 2022](https://video.tv.ad
 
 * Os tipos de dados do modelo de conteúdo agora podem ser definidos como [traduzíveis](/help/assets/content-fragments/content-fragments-models.md#properties) usando uma caixa de seleção simples no editor do modelo de conteúdo. Além disso, as regras e configurações de tradução do AEM são atualizadas automaticamente.
 
-## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
+## [!DNL Experience Manager Assets] como [!DNL Cloud Service] {#assets}
 
 ### Novos recursos no [!DNL Assets] {#assets-features}
 
 * Agora você pode [classificar tags](/help/assets/organize-assets.md#use-tags-to-organize-assets) na janela do seletor de tags em ordem crescente ou decrescente com base no nome da tag, data de criação ou data de modificação.
 
 
-## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
+## [!DNL Experience Manager Forms] como [!DNL Cloud Service] {#forms}
 
 ### Novidades do [!DNL Forms] {#what-is-new-forms}
 

@@ -1,6 +1,6 @@
 ---
 title: Manuseio da versão do projeto Maven
-description: 'Para implantações de armazenamento temporário e produção de AEM as a Cloud Service, o Cloud Manager gera uma versão exclusiva que aumenta. '
+description: Para implantações de armazenamento temporário e produção de AEM as a Cloud Service, o Cloud Manager gera uma versão exclusiva que aumenta.
 exl-id: 658bcbed-0733-45da-a3e3-9a5f817099c5
 source-git-commit: 21607fadf33dac038c7f794b933b92f60b8e20a9
 workflow-type: tm+mt
@@ -24,7 +24,7 @@ Se a versão original do projeto atender a determinados critérios, a versão at
 
 Se a versão original atender a esses critérios, a versão gerada será anexada à versão original como um novo segmento de versão. A versão gerada também será ligeiramente modificada para incluir a classificação correta e o manuseio de versão. Por exemplo, assumindo uma versão gerada de `2019.926.121356.0000020490` teria os seguintes resultados.
 
-| Versão | Versão em `pom.xml` | Comentário |
+| Versão | Versão em `pom.xml` | Comentar |
 |---|---|---|
 | `1.0.0` | `1.0.0.2019_0926_121356_0000020490` | Versão original corretamente formada |
 | `1.0.0-SNAPSHOT` | `2019.926.121356.0000020490` | Versão do instantâneo, substituída |

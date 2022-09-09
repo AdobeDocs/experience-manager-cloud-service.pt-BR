@@ -5,7 +5,7 @@ exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
 source-git-commit: 00ec09f327bc2f382d263970e690ed067aaa1355
 workflow-type: tm+mt
 source-wordcount: '721'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Nesta parte do [jornada do AEM Headless Content Architect](overview.md), você pode aprender os conceitos e a terminologia (básica) necessários para entender a modelagem de conteúdo ao usar o Adobe Experience Manager (AEM) as a Cloud Service como um CMS sem interface.
 
-Este documento ajuda você a entender a entrega sem periféricos, como o AEM suporta periféricos e como o conteúdo é modelado para ficar sem periféricos. Depois de ler, você deve:
+Este documento ajuda você a entender a entrega sem periféricos, como o AEM suporta periféricos e como o conteúdo é modelado para ficar sem periféricos. Depois de ler esse documento, você deverá:
 
 * Entenda os conceitos básicos de entrega de conteúdo sem periféricos.
 * Familiarize-se com o modo como o AEM suporta modelagem sem periféricos e de conteúdo.
@@ -48,7 +48,7 @@ O cabeçalho de qualquer sistema é geralmente o renderizador de saída desse si
 
 Quando falamos de um CMS sem interface, o CMS gerencia o conteúdo e continua a entregá-lo aos consumidores. No entanto, apenas entregando a variável **conteúdo** de forma padronizada, um CMS sem periféricos omita a renderização final de output, deixando o **apresentação** do conteúdo para o serviço de consumo.
 
-![CMS sem periféricos](/help/journey-headless/developer/assets/headless-cms.png)
+![CMS headless](/help/journey-headless/developer/assets/headless-cms.png)
 
 Os serviços que consomem, sejam experiências de AR, um webshop, experiências móveis, aplicativos web progressivos (PWA), etc., absorvem conteúdo do CMS sem cabeçalho e fornecem sua própria renderização. Eles cuidam de fornecer suas próprias cabeças para o seu conteúdo.
 

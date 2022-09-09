@@ -1,11 +1,11 @@
 ---
-title: Notas de versão do  [!DNL Adobe Experience Manager] as a Cloud Service 2021.1.0.
-description: '"[!DNL Adobe Experience Manager] Notas de versão as a Cloud Service para 2021.1.0."'
+title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2021.1.0.
+description: "[!DNL Adobe Experience Manager] Notas de versão as a Cloud Service para 2021.1.0."
 exl-id: cd639736-6e3d-4b69-b8ae-11e4e6490535
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
 source-wordcount: '863'
-ht-degree: 7%
+ht-degree: 14%
 
 ---
 
@@ -92,20 +92,20 @@ A data de lançamento do Cloud Manager AEM as a Cloud Service 2021.1.0 é 14 de 
 
 ### Analisadores de build do SDK {#sdk-build-analyzers}
 
-O AEM plug-in Maven do Analisador de build do SDK as a Cloud Service detecta problemas em um projeto maven, incluindo dependências ausentes. Ela oferece aos desenvolvedores uma oportunidade de descobrir problemas durante o desenvolvimento local, bem antes de implantar em ambientes do Cloud com o Cloud Manager.
+O plug-in para Maven do Analisador de build do SDK do AEM as a Cloud Service detecta problemas em um projeto Maven, incluindo dependências ausentes. Ele oferece aos desenvolvedores uma oportunidade de descobrir problemas durante o desenvolvimento local, bem antes da implantação em ambientes da nuvem com o Cloud Manager.
 
 Dois novos analisadores foram adicionados para esta versão:
 
 * analisador de repontas
 * bundle-nativecode
 
-Para obter mais informações, consulte a documentação [here](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=pt-BR#developing).
+Para obter mais informações, consulte a documentação [aqui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=pt-BR#developing).
 
 ## Ferramentas de transição para a nuvem {#code-transition-tools}
 
 ### Data de lançamento {#release-date-ctt}
 
-A Data de lançamento da ferramenta Transferência de conteúdo v1.2.2 é 1 de fevereiro de 2021.
+A data de lançamento da Ferramenta de transferência de conteúdo v1.2.2 é 01 de fevereiro de 2021.
 
 ### Novidades do [!DNL Content Transfer Tool] {#what-is-new-ctt}
 

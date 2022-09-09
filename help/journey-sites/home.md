@@ -1,9 +1,9 @@
 ---
-title: 'Jornadas do AEM Sites '
+title: Jornadas do AEM Sites
 description: Comece aqui para obter uma visão geral das jornadas guiadas disponíveis para compreender os recursos avançados de sites do AEM.
 exl-id: d18bc8b8-8d94-4296-a218-b21b59e6563d
 source-git-commit: fd663a98cc4b2924edb274baa452264a37641e0c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 100%
 

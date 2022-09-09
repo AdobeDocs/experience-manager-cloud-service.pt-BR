@@ -6,7 +6,7 @@ exl-id: 94d3df65-71d7-4442-8412-fe2cca7e79ff
 source-git-commit: cba6648d7ef18f3cccbd9562f3a66d9c683ae852
 workflow-type: tm+mt
 source-wordcount: '410'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -19,7 +19,7 @@ As duas listas abaixo refletem a AEM superfície de configuração OSGi as a Clo
 
 Se uma configuração OSGI não estiver listada, ela pode ser configurada por código de cliente.
 
-Essas regras são validadas durante o processo de criação do Cloud Manager. Poderão ser acrescentadas regras adicionais ao longo do tempo e a data de execução prevista é anotada no quadro. Espera-se que os clientes cumpram essas regras até a data de imposição do target. O não cumprimento das regras após a data de remoção gerará erros no processo de build do Cloud Manager. Os projetos Maven devem incluir o [AEM Plug-in Maven do Analisador de Compilação do SDK as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html) para sinalizar erros de configuração de OSGI durante o desenvolvimento local do SDK.
+Essas regras são validadas durante o processo de criação do Cloud Manager. Poderão ser acrescentadas regras adicionais ao longo do tempo e a data de execução prevista é anotada no quadro. Espera-se que os clientes cumpram essas regras até a data de imposição do target. O não cumprimento das regras após a data de remoção gerará erros no processo de build do Cloud Manager. Os projetos Maven devem incluir o [AEM Plug-in Maven do Analisador de Compilação do SDK as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=pt-BR) para sinalizar erros de configuração de OSGI durante o desenvolvimento local do SDK.
 
 Informações adicionais sobre a configuração do OSGI podem ser encontradas em [esta localização](/help/implementing/deploying/configuring-osgi.md).
 

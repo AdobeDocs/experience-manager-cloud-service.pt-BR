@@ -161,7 +161,7 @@ Selecione o ícone de informações ao lado de cada opção para obter mais desc
 1. No cabeçalho Tamanho do vídeo , verifique se **[!UICONTROL Manter proporção]** está marcada.
 1. Defina a resolução do tamanho do quadro de vídeo em pixels. Use o **[!UICONTROL Automático]** para dimensionar automaticamente para corresponder à proporção de aspecto de origem (relação largura/altura). Por exemplo, Auto x 480 ou 640 x Auto.
 
-1. Faça uma das seguintes opções:
+1. Siga uma das seguintes opções:
 
    * No **[!UICONTROL Largura]** , insira **[!UICONTROL auto]**. No **[!UICONTROL Altura]** , insira um valor em pixels.
 
@@ -169,7 +169,7 @@ Selecione o ícone de informações ao lado de cada opção para obter mais desc
 
 1. (Opcional) Selecione o **[!UICONTROL Avançado]** e garanta que a função **[!UICONTROL Usar valores padrão]** estiver selecionada (recomendada). Como alternativa, modifique configurações avançadas de vídeo e áudio.
 1. No canto superior direito da página, selecione **[!UICONTROL Salvar]** para salvar a predefinição.
-1. Faça uma das seguintes opções:
+1. Siga uma das seguintes opções:
    * Repita as etapas 4 a 10 para criar mais predefinições de codificação. (O streaming de vídeo adaptável requer mais de uma predefinição de vídeo.)
    * Prossiga para a próxima etapa.
 
@@ -178,7 +178,7 @@ Selecione o ícone de informações ao lado de cada opção para obter mais desc
    * No campo Nome , digite um nome para a proporção de corte que o ajude a identificá-lo facilmente.
    * No **[!UICONTROL Proporção de corte]** selecione a proporção que deseja usar.
 
-1. Faça uma das seguintes opções:
+1. Siga uma das seguintes opções:
 
    * Continue adicionando novas proporções de corte, conforme necessário.
    * Prossiga para a próxima etapa.
@@ -220,7 +220,7 @@ Para ajudar você a visualizar o tamanho do vídeo, selecione o ícone Height&#3
 Selecione o ícone de informações ao lado de cada opção para obter mais descrições ou configurações recomendadas com base no codec de formato de vídeo selecionado.
 
 1. No canto superior direito da página, selecione **[!UICONTROL Salvar]** para salvar a predefinição.
-1. Faça uma das seguintes opções:
+1. Siga uma das seguintes opções:
 
    * Repita as etapas de 4 a 9 para criar mais predefinições de codificação.
    * Prossiga para a próxima etapa.
@@ -231,7 +231,7 @@ Selecione o ícone de informações ao lado de cada opção para obter mais desc
    * No campo Nome , digite um nome para a proporção de corte que ajude você a identificá-la facilmente.
    * No **[!UICONTROL Proporção de corte]** selecione a proporção que deseja usar.
 
-1. Faça uma das seguintes opções:
+1. Siga uma das seguintes opções:
 
    * Continue adicionando novas proporções de corte, conforme necessário.
    * Prossiga para a próxima etapa.
@@ -299,7 +299,7 @@ Agora é possível aplicar o perfil às pastas que contêm vídeos. Consulte [Ap
 ![chlimage_1-516](assets/chlimage_1-516.png)
 
 1. Ao lado do canto inferior direito da página, selecione **[!UICONTROL Adicionar]**.
-1. Faça uma das seguintes opções:
+1. Siga uma das seguintes opções:
 
    * Repita as etapas 3 e 4 para adicionar outro parâmetro ao perfil de codificação de vídeo.
    * Ao lado do canto superior esquerdo da página, selecione **[!UICONTROL Salvar tudo]**.

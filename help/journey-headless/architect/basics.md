@@ -5,7 +5,7 @@ exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '905'
-ht-degree: 5%
+ht-degree: 9%
 
 ---
 
@@ -104,8 +104,8 @@ Por exemplo, você pode fazer referência a uma imagem em um local especificado.
 Isso fornece referências a outros Fragmentos de conteúdo.
 Esse tipo de referência é usado para criar conteúdo aninhado, introduzindo as relações necessárias para modelar seu conteúdo.
 O tipo de dados pode ser configurado para permitir que os autores de fragmento:
-   * Edite o fragmento referenciado diretamente.
-   * Crie um novo fragmento de conteúdo, com base no modelo apropriado
+   * Editem o fragmento referenciado diretamente.
+   * Criem um novo fragmento de conteúdo, com base no modelo apropriado
 
 >[!NOTE]
 >

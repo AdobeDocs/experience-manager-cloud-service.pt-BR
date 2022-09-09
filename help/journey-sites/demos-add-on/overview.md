@@ -3,7 +3,7 @@ title: Jornada do complemento de demonstrações de referência do AEM
 description: Comece aqui para obter uma jornada guiada sobre como adicionar facilmente o complemento de demonstrações de referência do AEM a um ambiente de sandbox com configuração mínima do AEM e sobre poder testar os recursos avançados do AEM com exemplos completos com base nas práticas recomendadas.
 exl-id: 8a6d4abf-0832-40e8-9ba6-1ad4ba794ffa
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '855'
 ht-degree: 100%
 

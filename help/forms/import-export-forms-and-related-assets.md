@@ -1,5 +1,5 @@
 ---
-title: 'Importar e exportar ativos '
+title: Importar e exportar ativos
 seo-title: Import and export assets to [!DNL AEM Forms]
 description: É possível importar e exportar o Adaptive Forms e ativos relacionados para instâncias AEM. Isso ajuda a migrar formulários ou movê-los pelos sistemas.
 seo-description: You can import and export Adaptive Forms and templates from and in to AEM instances. This helps in migrating forms or moving them across systems.

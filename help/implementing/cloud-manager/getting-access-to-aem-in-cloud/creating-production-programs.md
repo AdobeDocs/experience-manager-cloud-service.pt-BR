@@ -1,11 +1,11 @@
 ---
-title: 'Criação de programas de produção '
+title: Criação de programas de produção
 description: Saiba como usar o Cloud Manager para criar seu próprio programa de produção para hospedar o tráfego ao vivo.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 source-git-commit: 3557ddbc76ff21bcfe4ac0338f116b02b5135f2c
 workflow-type: tm+mt
 source-wordcount: '442'
-ht-degree: 2%
+ht-degree: 5%
 
 ---
 
@@ -28,7 +28,7 @@ Você pode assistir a estes dois vídeos de tutoriais para saber como criar um p
 
 Siga estas etapas para criar um programa de produção.
 
-1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização apropriada.
+1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
 1. Clique em **Adicionar programa** no canto superior direito da tela.
 

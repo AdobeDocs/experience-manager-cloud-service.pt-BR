@@ -1,7 +1,8 @@
 ---
 title: Configurar o mapeamento de metadados de ativos entre o Workfront e a Experience Manager Assets
 description: Mapeie os campos de metadados de ativos entre o Adobe Workfront e os aplicativos as a Cloud Service do Experience Manager. Como resultado do mapeamento de campos de metadados, ao enviar um ativo do Workfront para o Experience Manager Assets, você pode exibir os metadados do ativo mapeados no Experience Manager Assets.
-source-git-commit: 212ecb5330de739b2e479d36462953ce33697c1c
+exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
+source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
 workflow-type: tm+mt
 source-wordcount: '995'
 ht-degree: 0%
@@ -127,6 +128,3 @@ Para aplicar configurações de metadados à pasta de imagem:
 1. Selecione a pasta de destino para a qual [a imagem é enviada do aplicativo Adobe Workfront](#send-image-workfront-assets) e clique em **[!UICONTROL Aplicar]**.
 
 Você pode navegar até a imagem no Experience Manager Assets e exibir os metadados associados à imagem. Selecione a imagem e clique **[!UICONTROL Propriedades]** para exibir os metadados da imagem.
-
-
-

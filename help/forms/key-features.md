@@ -1,6 +1,6 @@
 ---
-title: 'Principais recursos do Adobe Experience Manager (AEM) Forms as a Cloud Service '
-description: '"[!DNL AEM Forms] as a Cloud Service é uma plataforma para criar, gerenciar e publicar formulários e processos de negócios de classe empresarial."'
+title: Principais recursos do Adobe Experience Manager (AEM) Forms as a Cloud Service
+description: "[!DNL AEM Forms] as a Cloud Service é uma plataforma para criar, gerenciar e publicar formulários e processos de negócios de classe empresarial."
 exl-id: 3a90b0aa-369a-4350-9904-79ef656b0f9a
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt

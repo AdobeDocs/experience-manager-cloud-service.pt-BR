@@ -5,7 +5,7 @@ exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '3296'
-ht-degree: 8%
+ht-degree: 10%
 
 ---
 
@@ -115,9 +115,9 @@ Ao criar um novo modelo editável:
 
 >[!NOTE]
 >
->Os modelos são ferramentas poderosas para simplificar o fluxo de trabalho de criação de página. No entanto, muitos modelos podem sobrecarregar os autores e tornar a criação da página confusa. Uma boa regra é manter o número de modelos abaixo de 100.
+>Os modelos são ferramentas eficientes para simplificar o fluxo de trabalho de criação de página. No entanto, usar modelos em excesso pode sobrecarregar os autores e tornar confusa a criação da página. Uma boa regra geral é manter o número de modelos abaixo de 100.
 >
->O Adobe não recomenda ter mais de 1000 modelos devido a possíveis impactos no desempenho.
+>A Adobe não recomenda ter mais de 1000 modelos devido a possíveis impactos no desempenho.
 
 >[!NOTE]
 >
@@ -233,7 +233,7 @@ A tabela a seguir detalha as permissões necessárias para a edição de modelo.
 <table>
  <tbody>
   <tr>
-   <th>Caminho</th>
+   <th>Caminho </th>
    <th>Função / Grupo</th>
    <th>Permissões<br /> </th>
    <th>Descrição</th>

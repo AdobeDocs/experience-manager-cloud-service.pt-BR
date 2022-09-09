@@ -5,13 +5,13 @@ exl-id: b1cc0a63-ecd3-4d89-ac49-f384cc610cdc
 source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
 workflow-type: tm+mt
 source-wordcount: '382'
-ht-degree: 0%
+ht-degree: 12%
 
 ---
 
 # Introdução ao AEM Screens as a Cloud Service {#introduction-screens-cloud}
 
-Com o AEM Screens as a Cloud Service, você pode criar experiências envolventes e dinâmicas de sinalização digital destinadas ao consumo em espaços públicos. É a próxima evolução do produto AEM Screens e representa um grande salto em frente em usabilidade e escalabilidade.
+Com o AEM Screens as a Cloud Service, você pode criar experiências envolventes e dinâmicas de sinalização digital, destinadas ao consumo em espaços públicos. É a próxima evolução do produto AEM Screens e representa um grande salto em frente em usabilidade e escalabilidade.
 
 O AEM Screens as a Cloud Service é uma solução de sinalização digital que permite aos profissionais de marketing criar e gerenciar experiências digitais dinâmicas em escala. Além disso, envolve diferentes tipos de telas físicas como parte de uma estratégia abrangente de marketing digital. Ele estende a oferta do Adobe omni-channel além dos canais usuais da Web e móveis, também inclui canais de sinalização digital que estão ao nosso redor. O AEM Screens as a Cloud Service permite experiências de usuário mais relevantes, contextuais, produtivas e antecipatórias por meio de uma compreensão profunda da criação de conteúdo, da montagem de conteúdo, do gerenciamento de eventos acionado e da reprodução de mídia para todos os consumidores e visitantes em qualquer espaço público.
 

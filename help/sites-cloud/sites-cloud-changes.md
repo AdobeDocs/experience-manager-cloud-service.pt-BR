@@ -3,7 +3,7 @@ title: Alterações importantes do AEM Sites no AEM Cloud Service
 description: Alterações importantes do AEM Sites no AEM Cloud Service
 exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
 source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '532'
 ht-degree: 100%
 
@@ -47,7 +47,7 @@ O iniciador dessas ações pode verificar seu status em uma nova interface em `/
 
 [WKND](https://wknd.site/), um novo site de referência do AEM, foi atualizado e publicado para refletir as práticas recomendadas para criar um site com o AEM e o conjunto abrangente de recursos, componentes e modelos de implantação que estão disponíveis no AEM. O novo site de referência e [tutorial de acompanhamento](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR) aborda tópicos fundamentais como configuração de projeto, Componentes principais, Modelos editáveis, bibliotecas de clientes e desenvolvimento de componentes com o Adobe Experience Manager Sites.
 
-Anteriormente, o We.Retail vinha instalado por padrão com o AEM (exceto quando iniciado no modo de produção).  De agora em diante, um site de referência não virá instalado por padrão.  Em vez disso, o [git repo](https://github.com/adobe/aem-guides-wknd/) e o [tutorial de acompanhamento](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR) com o código atualizado do site de referência WKND será fornecido.
+Anteriormente, o We.Retail vinha instalado por padrão com o AEM (exceto quando iniciado no modo de produção).  De agora em diante, um site de referência não virá instalado por padrão.  Em vez disso, o [git repo](https://github.com/adobe/aem-guides-wknd/) e o [tutorial de acompanhamento](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) com o código atualizado do site de referência WKND será fornecido.
 
 ## Recursos não disponíveis em Tempo de execução {#capabilities-not-available-at-runtime}
 

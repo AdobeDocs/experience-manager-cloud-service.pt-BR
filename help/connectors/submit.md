@@ -3,7 +3,7 @@ title: Envio de um conector do AEM
 description: Envio de um conector do AEM
 exl-id: 9be1f00e-3666-411c-9001-c047e90b6ee5
 source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 100%
 

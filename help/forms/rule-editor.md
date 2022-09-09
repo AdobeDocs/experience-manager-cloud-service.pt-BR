@@ -7,7 +7,7 @@ level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
 source-git-commit: e64e15c9096f837daa7fff5c64b8394736297579
 workflow-type: tm+mt
-source-wordcount: '6351'
+source-wordcount: '6346'
 ht-degree: 0%
 
 ---
@@ -628,7 +628,7 @@ Para abrir um formulário no modo de edição, selecione um formulário e toque 
 1. Selecione a caixa numérica de entrada e toque em ![editar regras](assets/edit-rules-icon.svg) para abrir o editor de regras.
 1. Toque **[!UICONTROL Criar regra]**. Usando as opções mostradas abaixo, crie uma regra para salvar o valor quadrado da entrada no campo Saída do formulário.
 
-[![Usar funções personalizadas para criar uma regra](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)
+   [![Uso de funções personalizadas para criar uma regra](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)
 
 1. Toque **[!UICONTROL Concluído]**. Sua função personalizada é adicionada.
 

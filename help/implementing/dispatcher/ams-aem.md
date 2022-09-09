@@ -257,6 +257,6 @@ Isso iniciará o contêiner e exporá o Apache na porta local 8080.
 
 ### Usar sua nova configuração do Dispatcher
 
-Parabéns! Se o validador não relatar mais nenhum problema e o contêiner do docker for inicializado sem falhas ou avisos, você estará pronto para mover sua configuração para um `dispatcher/src` subdiretório do seu repositório Git.
+Parabéns. Se o validador não relatar mais nenhum problema e o contêiner do docker for inicializado sem falhas ou avisos, você estará pronto para mover sua configuração para um `dispatcher/src` subdiretório do seu repositório Git.
 
 **Os clientes que estiverem usando a configuração do AMS Dispatcher versão 1 devem entrar em contato com o suporte ao cliente para ajudá-los a migrar da versão 1 para a versão 2, de modo que as instruções acima possam ser seguidas.**

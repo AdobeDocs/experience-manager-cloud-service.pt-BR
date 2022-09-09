@@ -268,7 +268,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
     </ul> </td>
   </tr>
   <tr>
-   <td>Propriedade Opções</td>
+   <td>Opções Propriedade</td>
    <td>Pesquise em uma ou mais propriedades da opção.</td>
    <td>
     <ul>
@@ -292,7 +292,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
     </ul> </td>
   </tr>
   <tr>
-   <td>Caminho</td>
+   <td>Caminho </td>
    <td>Filtre de acordo com o caminho específico. Você pode especificar vários caminhos como opções.</td>
    <td>
     <ul>

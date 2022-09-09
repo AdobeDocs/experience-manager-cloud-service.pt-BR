@@ -1,15 +1,15 @@
 ---
-title: 'Criação de programas de sandbox '
+title: Criação de programas do sandbox
 description: Saiba como usar o Cloud Manager para criar seu próprio programa sandbox para treinamento, demonstração, POC ou outros fins que não sejam de produção.
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
 source-git-commit: cf6941759dfc1e50928009490c7c518a89ed093e
 workflow-type: tm+mt
 source-wordcount: '331'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
-# Criação de programas de sandbox {#create-sandbox-program}
+# Criação de programas do sandbox {#create-sandbox-program}
 
 Um programa de sandbox é normalmente criado para servir os propósitos de treinamento, execução de demonstrações, ativação, POCs ou documentação, e não é destinado ao tráfego ao vivo.
 
@@ -19,7 +19,7 @@ Saiba mais sobre os tipos de programas no documento [Entendendo os tipos de prog
 
 Siga estas etapas para criar um programa sandbox.
 
-1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização apropriada.
+1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
 1. Na página de aterrissagem do Cloud Manager, clique em **Adicionar programa** no canto superior direito da tela.
 

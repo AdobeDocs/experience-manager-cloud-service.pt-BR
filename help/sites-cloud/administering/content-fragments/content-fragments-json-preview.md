@@ -3,8 +3,8 @@ title: Visualização - Representação JSON
 description: Saiba como visualizar facilmente a representação em JSON dos fragmentos de conteúdo ao implementar sua solução AEM Headless.
 exl-id: bffc13e5-586b-4598-98fb-b1688d9716c5
 source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
-workflow-type: ht
-source-wordcount: '0'
+workflow-type: tm+mt
+source-wordcount: '113'
 ht-degree: 100%
 
 ---

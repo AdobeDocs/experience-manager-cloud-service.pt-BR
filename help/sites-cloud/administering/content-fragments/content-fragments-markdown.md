@@ -3,8 +3,8 @@ title: Markdown
 description: Entenda como o editor de fragmento de conteúdo usa a sintaxe de Markdown para permitir que você crie conteúdo facilmente para a criação de páginas e entrega headless.
 exl-id: 4e9b076e-7429-466b-bb53-2164da379650
 source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
-workflow-type: ht
-source-wordcount: '0'
+workflow-type: tm+mt
+source-wordcount: '534'
 ht-degree: 100%
 
 ---

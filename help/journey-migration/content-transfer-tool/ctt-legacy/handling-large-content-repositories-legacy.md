@@ -3,7 +3,8 @@ title: Lidar com grandes repositórios de conteúdo (herdados)
 description: Esta seção descreve o tratamento de repositórios de conteúdo grande
 hide: true
 hidefromtoc: true
-source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
+exl-id: 19021f40-d0a5-4e0c-a213-c421338cedeb
+source-git-commit: 22bbf15e33ab3d5608dc01ed293bb04b07cb6c8c
 workflow-type: tm+mt
 source-wordcount: '1638'
 ht-degree: 1%
@@ -163,7 +164,7 @@ Com o arquivo de configuração acima em vigor, a fase de pré-cópia do AzCopy 
 c.a.g.s.m.commons.ContentExtractor - *************** Beginning AzCopy Pre-Copy phase ***************
 ```
 
-Parabéns! Essa entrada de log significa que sua configuração foi considerada válida e que o AzCopy está copiando atualmente todos os blobs do contêiner de origem para o contêiner de migração.
+Parabéns. Essa entrada de log significa que sua configuração foi considerada válida e que o AzCopy está copiando atualmente todos os blobs do contêiner de origem para o contêiner de migração.
 
 As entradas de log do AzCopy serão exibidas no log de extração e terão o prefixo c.a.g.s.m.c.azcopy.AzCopyBlobPreCopy - [Pré-cópia do AzCopy]
 

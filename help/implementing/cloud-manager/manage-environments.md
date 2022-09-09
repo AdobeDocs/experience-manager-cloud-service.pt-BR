@@ -35,7 +35,7 @@ Os recursos de ambientes individuais dependem das soluções ativadas no [progra
 
 ## Adicionar um ambiente {#adding-environments}
 
-1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização apropriada.
+1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
 1. Clique no programa para o qual deseja adicionar um ambiente.
 

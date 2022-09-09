@@ -13,7 +13,7 @@ ht-degree: 6%
 
 ---
 
-# Pesquisar ativos em [!DNL Adobe Experience Manager] {#search-assets-in-aem}
+# Pesquisar ativos no [!DNL Adobe Experience Manager] {#search-assets-in-aem}
 
 [!DNL Adobe Experience Manager Assets] O oferece métodos robustos de detecção de ativos que ajudam a alcançar uma velocidade de conteúdo maior. Suas equipes podem reduzir o tempo de comercialização com uma experiência de pesquisa inteligente e contínua usando recursos prontos para uso e métodos personalizados. Pesquisar ativos é fundamental para o uso de um sistema de gerenciamento de ativos digitais — seja para uso adicional por parte dos criadores, para o gerenciamento robusto de ativos pelos usuários e profissionais de marketing ou para administração por administradores de DAM. Pesquisas simples, avançadas e personalizadas que você pode realizar por meio de [!DNL Assets] a interface do usuário ou outros aplicativos e superfícies ajudam a atender a esses casos de uso.
 
@@ -166,7 +166,7 @@ Você pode pesquisar ativos com base em valores exatos de campos de metadados, c
 | No horário | ontime:YYYY-MM-DDTHH |
 | Hora de desligar | offtime:AAAA-MM-DDTHH |
 | Intervalo de tempo (expira o dateontime, offtime) | campo de faceta : limite inferior..upperbound |
-| Caminho | /content/dam/&lt;folder name=&quot;&quot;> |
+| Caminho  | /content/dam/&lt;folder name=&quot;&quot;> |
 | Título do PDF | pdftitle:&quot;Documento do Adobe&quot; |
 | Assunto | assunto: &quot;Formação&quot; |
 | Tags | Tags: &quot;Localização E Viagem&quot; |
@@ -204,7 +204,7 @@ Com o Adobe Asset Link, os profissionais criativos agora podem acessar o conteú
 
 Os profissionais de criação usam o aplicativo de desktop para fazer a variável [!DNL Experience Manager Assets] facilmente pesquisável e disponível em seu desktop local (Win ou Mac). Os criadores podem revelar facilmente os ativos desejados no Mac Finder ou no Windows Explorer, abertos em aplicativos de desktop e alterados localmente - as alterações são salvas de volta para [!DNL Experience Manager] com uma nova versão criada no repositório. O aplicativo oferece suporte a pesquisas básicas usando uma ou mais palavras-chave, `*` e `?` curingas e `AND` operador. Consulte [procurar, pesquisar e visualizar ativos](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) no aplicativo de desktop.
 
-### Pesquisar ativos em [!DNL Brand Portal] {#brand-portal}
+### Pesquisar ativos no [!DNL Brand Portal] {#brand-portal}
 
 Usuários de linha de negócios e profissionais de marketing usam o Brand Portal para compartilhar com eficiência e segurança os ativos digitais aprovados com suas equipes internas estendidas, parceiros e revendedores. Consulte [pesquisar ativos no Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html).
 

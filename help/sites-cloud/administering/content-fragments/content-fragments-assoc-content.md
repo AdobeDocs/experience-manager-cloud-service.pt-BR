@@ -3,7 +3,7 @@ title: Conteúdo associado
 description: Entenda como o recurso de conteúdo associado do AEM fornece a conexão para que os ativos possam ser usados opcionalmente com o fragmento quando ele for adicionado a uma página de conteúdo, adicionando maior flexibilidade à criação de páginas e à entrega de conteúdo headless.
 exl-id: eb524872-1403-42d1-b735-eaab382cf313
 source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '249'
 ht-degree: 100%
 

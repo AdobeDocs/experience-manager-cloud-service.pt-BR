@@ -1,11 +1,11 @@
 ---
-title: 'Hibernar e desibernar ambientes de sandbox '
+title: Hibernar e desibernar ambientes de sandbox
 description: Saiba como os ambientes de um programa sandbox entram automaticamente em um modo de hibernação e como você pode removê-los.
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 source-git-commit: 5cb58b082323293409aad08d4e5dd9289283e0a6
 workflow-type: tm+mt
 source-wordcount: '669'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
@@ -29,7 +29,7 @@ Você pode hibernar manualmente seu programa de sandbox no Console do desenvolve
 
 Siga estas etapas para hibernar manualmente os ambientes do programa sandbox.
 
-1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização apropriada.
+1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
 1. Clique no programa que deseja hibernar para exibir seus detalhes.
 
@@ -63,7 +63,7 @@ Você pode hibernar manualmente seu Programa de sandbox no Console do desenvolve
 >
 >Um usuário com um **Desenvolvedor** pode desibernar um ambiente de programa sandbox.
 
-1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização apropriada.
+1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
 1. Clique no programa que deseja hibernar para exibir seus detalhes.
 

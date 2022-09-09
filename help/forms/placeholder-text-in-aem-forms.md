@@ -1,5 +1,5 @@
 ---
-title: 'Texto de espaço reservado em [!DNL AEM Forms] '
+title: Texto de espaço reservado em [!DNL AEM Forms]
 description: O texto de espaço reservado destina-se a ajudar o usuário com a entrada de dados quando o controle não tem valor. Pode ser um valor de amostra ou uma breve descrição do formato esperado.
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt

@@ -5,7 +5,7 @@ exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
 source-git-commit: 00ec09f327bc2f382d263970e690ed067aaa1355
 workflow-type: tm+mt
 source-wordcount: '665'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
@@ -24,7 +24,7 @@ O que é um sistema de gerenciamento de conteúdo?
 
 Um Sistema de Gerenciamento de Conteúdo (CMS) é exatamente o que diz ser - um sistema de computador usado para gerenciar conteúdo. Isso é um pouco geral, portanto, para ser mais preciso, ele é (normalmente) usado para gerenciar conteúdo que você deseja disponibilizar em seu(s) site(s).
 
-## CMS sem periféricos {#headless-cms}
+## CMS headless {#headless-cms}
 
 Headless é um termo usado para descrever sistemas que efetivamente desconectam o conteúdo da maneira de exibir esse conteúdo na Web.
 
@@ -46,7 +46,7 @@ Em primeiro lugar, AEM é um sistema de gerenciamento de conteúdo com uma grand
 
 Isso significa que ele pode ser usado como um:
 
-* CMS sem periféricos
+* CMS headless
    * Para ser headless, seu conteúdo pode ser criado como **Fragmentos de conteúdo**.
 Esses são itens autônomos de conteúdo que podem ser acessados diretamente por uma variedade de aplicativos, pois têm uma estrutura predefinida, com base em **Modelos de fragmentos do conteúdo**.
 Isso significa que o conteúdo pode atingir uma grande variedade de dispositivos, em uma grande variedade de formatos e com uma ampla seleção de funcionalidade.

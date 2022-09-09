@@ -13,7 +13,7 @@ ht-degree: 4%
 
 Nesta parte do [AEM Jornada de desenvolvedor sem periféricos,](overview.md) saiba mais sobre o que é necessário para iniciar seu próprio projeto com AEM Headless.
 
-## A História Até Agora {#story-so-far}
+## A história até agora {#story-so-far}
 
 No documento anterior da jornada sem cabeçalho AEM, [Saiba mais sobre o desenvolvimento sem periféricos do CMS](learn-about.md) você aprendeu a teoria básica do que é um CMS sem periféricos e agora deve:
 
@@ -25,7 +25,7 @@ Este artigo se baseia nesses fundamentos para que você entenda como usar o AEM 
 
 ## Objetivo {#objective}
 
-Este documento ajuda você a entender AEM headless no contexto de seu próprio projeto. Depois de ler, você deve:
+Este documento ajuda você a entender AEM headless no contexto de seu próprio projeto. Depois de ler esse documento, você deverá:
 
 * Entenda as noções básicas AEM recursos sem periféricos.
 * Conheça os pré-requisitos para usar AEM recursos headless.
@@ -148,8 +148,8 @@ A primeira pergunta que você deve fazer é &quot;O que estou tentando alcançar
 As funções de qualquer projeto individual variam, mas as importantes a serem consideradas no conteúdo AEM desenvolvimento sem periféricos são:
 
 * [Administrador](#administrator)
-* [Autor do conteúdo](#content-author)
-* [Arquitetura de conteúdo](#content-architect)
+* [Autor de conteúdo](#content-author)
+* [Arquiteto de conteúdo](#content-architect)
 * [Desenvolvedor](#developer)
 
 #### Administrador {#administrator}
@@ -160,7 +160,7 @@ Depois que os usuários são configurados pelo administrador, eles recebem as pe
 
 O administrador deve ser o usuário que configura o AEM e prepara o ambiente de tempo de execução para ativar o [autores de conteúdo](#content-author) para criar e atualizar conteúdo e [desenvolvedores](#developer) para usar APIs que buscam ou modificam o conteúdo de seus aplicativos de experiência.
 
-#### Autor do conteúdo {#content-author}
+#### Autor de conteúdo {#content-author}
 
 Os autores de conteúdo criam e gerenciam o conteúdo que é entregue sem cabeçalho pelo AEM. Os autores de conteúdo usam AEM recursos como Fragmentos de conteúdo e o Console de ativos para gerenciar seu conteúdo.
 
@@ -212,7 +212,7 @@ Consulte a [recursos adicionais](#additional-resources) para obter documentaçã
 
 Como regra geral, as referências do Fragmento de conteúdo não devem ser aninhadas além de cinco níveis.
 
-#### Arquitetura de conteúdo {#content-architect}
+#### Arquiteto de conteúdo {#content-architect}
 
 Os arquitetos de conteúdo analisam os requisitos para os dados que devem ser entregues sem periféricos e definem a estrutura desses dados. Essas estruturas são chamadas de [Modelos de fragmentos do conteúdo](#content-fragment-models) em AEM. Os Modelos de fragmentos do conteúdo são usados como a base dos Fragmentos do conteúdo criados pelos autores do conteúdo.
 

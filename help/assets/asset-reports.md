@@ -28,7 +28,7 @@ Quando um relatório é gerado, você é notificado por meio de <!-- through an 
 
 [!DNL Experience Manager Assets] gera os seguintes relatórios padrão para você:
 
-* Imagem
+* Upload
 * Expiração
 * Modificação
 * Publicação
@@ -119,7 +119,7 @@ Você pode adicionar colunas personalizadas aos seguintes relatórios para exibi
 * Files
 -->
 
-* Imagem
+* Upload
 * Expiração
 * Modificação
 * Publicação

@@ -1,6 +1,6 @@
 ---
 title: Registrando Players no Screens as a Cloud Service
-description: This page describes how to register players in Screens as a Cloud Service.
+description: Esta página descreve como registrar players no Screens as a Cloud Service.
 exl-id: 1a0d6b22-71b1-4f3c-acaa-82d8d9c0f81a
 source-git-commit: fb82970154fa37e3b3d1591a2e25989853ec6b90
 workflow-type: tm+mt
@@ -22,7 +22,7 @@ Este documento ajuda você a entender o registro de players no Provedor de servi
 
 ## Etapas para registrar um player do Screens {#register-players}
 
-Once you have installed your player to Screens as a Cloud Service, you are ready to register your player from Screens Services Provider.
+Depois de instalar seu reprodutor no Screens as a Cloud Service, você estará pronto para registrar seu reprodutor no Provedor de serviços do Screens.
 
 Siga as etapas abaixo para registrar o player:
 
@@ -39,9 +39,9 @@ Siga as etapas abaixo para registrar o player:
 
    ![imagem](/help/screens-cloud/assets/player/register-player2.png)
 
-   1. **Registration Code Name**: Name for your registration code
-   1. **Registration Code Expiry**: Date of expiry for your registration code
-   1. **Limit Usage**: Toggle the button to switch off the usage limit of your registration code. By default, the Limit Usage option is off by default.
+   1. **Nome do código de registro**: Nome do código de registro
+   1. **Expiração do código de registro**: Prazo de validade do código de registro
+   1. **Limitar uso**: Alterne o botão para desligar o limite de uso do código de registro. Por padrão, a opção Limitar uso está desativada por padrão.
    1. **Limite de uso**: Escolha o número do limite de uso
 
 1. Clique em **Criar** para criar o código de registro. Você verá o player com o código de registro na lista.
@@ -59,13 +59,13 @@ Siga as etapas abaixo para registrar o player:
 
    ![imagem](/help/screens-cloud/assets/player/register-player5.png)
 
-1. Você deve ver esse reprodutor aparecer no **Players** no painel de navegação esquerdo. The code that displays in Screens Services Provider matches the **System Information** panel from the Admin UI under Player Code.
+1. Você deve ver esse reprodutor aparecer no **Players** no painel de navegação esquerdo. O código exibido no Provedor de serviços do Screens corresponde ao **Informações do sistema** na interface do usuário do administrador, em Código do player.
 
    ![imagem](/help/screens-cloud/assets/player/register-player6.png)
 
    >[!IMPORTANT]
-   >**Security Best Practices Recommendation while using Registration Code**
-   >As a best practice, you can limit the registration code usage. Se um código de registro estiver comprometido, mas tiver um limite de 100 registros, o invasor poderá se registrar apenas até esse número, mas não mais. Você sempre pode atualizar o limite de uso depois que o código de registro é criado e alguns dos players do cliente já foram registrados. Se o cliente observar uma atividade de registro incomum para um código de registro específico, ele poderá reduzir o limite em tempo real enquanto investiga e aumentar o número novamente se for um alarme falso, sem afetar os players já registrados.
+   >**Recomendação de práticas recomendadas de segurança ao usar o código de registro**
+   >Como prática recomendada, é possível limitar o uso do código de registro. Se um código de registro estiver comprometido, mas tiver um limite de 100 registros, o invasor poderá se registrar apenas até esse número, mas não mais. Você sempre pode atualizar o limite de uso depois que o código de registro é criado e alguns dos players do cliente já foram registrados. Se o cliente observar uma atividade de registro incomum para um código de registro específico, ele poderá reduzir o limite em tempo real enquanto investiga e aumentar o número novamente se for um alarme falso, sem afetar os players já registrados.
 
 
 ## O que vem a seguir {#whats-next}

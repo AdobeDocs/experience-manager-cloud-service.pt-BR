@@ -1,6 +1,6 @@
 ---
 title: Criar pop-ups personalizados usando o Quickview
-description: '"Saiba mais sobre como o Quickview padrão é usado em experiências de comércio eletrônico, em que uma janela pop-up é exibida com informações do produto para impulsionar uma compra. Você pode acionar a exibição de conteúdo personalizado na janela pop-up."'
+description: "Saiba mais sobre como o Quickview padrão é usado em experiências de comércio eletrônico, em que uma janela pop-up é exibida com informações do produto para impulsionar uma compra. Você pode acionar a exibição de conteúdo personalizado na janela pop-up."
 feature: Interactive Images,Interactive Videos,Carousel Banners
 role: Admin,User
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c

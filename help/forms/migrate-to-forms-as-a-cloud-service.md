@@ -7,9 +7,9 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: ed46b0be25dabcea69be29e54000a4eab55e2836
+source-git-commit: 8e28cff5b964005278858b6c8dd8a0f5f8156eaa
 workflow-type: tm+mt
-source-wordcount: '1219'
+source-wordcount: '1218'
 ht-degree: 3%
 
 ---
@@ -27,7 +27,7 @@ Você pode migrar sua Forms adaptativa, temas, modelos e configurações de nuve
 
 * O serviço ajuda a migrar o conteúdo somente do [!DNL AEM Forms] em ambientes OSGi. Migrar conteúdo de [!DNL AEM Forms] no JEE para um ambiente Cloud Service não é suportado.
 
-* (Somente para AEM 6.3 Forms ou um ambiente de versão anterior atualizado para AEM 6.4 Forms ou AEM 6.5 Forms) A Forms adaptável com base em modelos e temas prontos para uso no AEM 6.3 Forms ou versão anterior não são compatíveis com o [!DNL [!DNL AEM Forms]] as a Cloud Service.
+* (Somente para o AEM 6.3 Forms ou um ambiente de versão anterior atualizado para AEM 6.4 Forms ou AEM 6.5 Forms) O Adaptive Forms baseado em modelos e temas prontos para uso no AEM 6.3 Forms ou versão anterior não são suportados em [!DNL AEM Forms] as a Cloud Service.
 
 ## Pré-requisitos {#prerequisites}
 

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Nesta parte do [jornada do desenvolvedor sem periféricos do AEM](overview.md), saiba como implantar um aplicativo sem periféricos, colocando seu código local no Git e movendo-o para o Git do Cloud Manager para o pipeline de CI/CD.
 
-## A História Até Agora {#story-so-far}
+## A história até agora {#story-so-far}
 
 No documento anterior da jornada sem cabeçalho AEM, [Como unir tudo - seu aplicativo e seu conteúdo em AEM](put-it-all-together.md) você aprendeu a usar as ferramentas de desenvolvimento de AEM para unir todas as facetas do seu projeto.
 
@@ -110,7 +110,7 @@ Para registrar um bug com suporte com eficiência, caso precise de assistência 
 
 ## A Jornada Termina - Ou Será? {#journey-ends}
 
-Parabéns! Você concluiu a Jornada do desenvolvedor sem cabeçalho AEM! Agora você deve conhecer:
+Parabéns. Você concluiu a Jornada do desenvolvedor sem cabeçalho AEM! Agora você deve conhecer:
 
 * A diferença entre a entrega de conteúdo sem periféricos e com periféricos.
 * AEM recursos sem periféricos.

@@ -1,6 +1,6 @@
 ---
 title: Selecione dinamicamente um usuário ou grupo para etapas de fluxo de trabalho centradas no AEM Forms
-description: 'Saiba como selecionar um usuário ou grupo para um [!DNL AEM Forms] no tempo de execução. '
+description: Saiba como selecionar um usuário ou grupo para um [!DNL AEM Forms] no tempo de execução.
 content-type: troubleshooting
 topic-tags: publish
 source-git-commit: 3c2a66ac13ccee9eef87ed3c97288a7475ac64d0

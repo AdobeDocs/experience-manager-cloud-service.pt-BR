@@ -5,7 +5,7 @@ exl-id: 0d795d85-c865-40d5-941e-e02ee96fdd11
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '724'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 Saiba como gerenciar páginas e modelos de catálogo de produtos.
 
-## A História Até Agora {#story-so-far}
+## A história até agora {#story-so-far}
 
 No documento anterior da jornada de criação Conteúdo e Comércio da AEM, [Introdução às AEM noções básicas de criação da CIF](getting-started.md), você aprendeu sobre a criação da CIF.
 
@@ -21,7 +21,7 @@ Este artigo tem por base esses fundamentos.
 
 ## Objetivo {#objective}
 
-Este documento ajuda você a entender como gerenciar páginas e modelos de catálogo de produtos. Depois de ler, você deve:
+Este documento ajuda você a entender como gerenciar páginas e modelos de catálogo de produtos. Depois de ler esse documento, você deverá:
 
 * entender os conceitos dos templates de catálogo
 * como funcionam os modelos genéricos

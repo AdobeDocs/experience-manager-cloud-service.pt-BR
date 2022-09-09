@@ -60,7 +60,7 @@ As pastas são como diretórios nos sistemas de arquivos tradicionais. A pasta p
 * `parent`: Link para a pasta principal.
 * `thumbnail`: (Opcional) link para uma imagem em miniatura de pasta.
 
-### Ativos {#assets}
+### Assets {#assets}
 
 Em [!DNL Experience Manager] um ativo contém os seguintes elementos:
 

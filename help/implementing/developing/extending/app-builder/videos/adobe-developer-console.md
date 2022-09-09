@@ -1,6 +1,6 @@
 ---
-title: Console do desenvolvedor do Adobe para o App Builder
-description: Saiba mais sobre os projetos do Console do desenvolvedor do Adobe e do App Builder.
+title: Adobe Developer Console para o App Builder
+description: Saiba mais sobre projetos do Adobe Developer Console e do App Builder.
 version: Cloud Service
 feature: App Builder
 topic: Integrations, Development
@@ -16,27 +16,27 @@ ht-degree: 0%
 
 ---
 
-# Console do desenvolvedor do Adobe para o App Builder
+# Adobe Developer Console para o App Builder
 
 >[!IMPORTANT]
 >
 > _O Adobe Project Firefly, como mencionado nos vídeos desta série, agora é chamado de App Builder_
 
-## Introdução ao Console do desenvolvedor do Adobe
+## Introdução ao Adobe Developer Console
 
-Saiba o que é o Console do desenvolvedor do Adobe e como acessá-lo e navegá-lo.
+Saiba o que é o Console do Adobe Developer e como acessá-lo e navegá-lo.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339162/?quality=12&learn=on)
 
 ## Trabalhar com projetos e modelos
 
-Saiba como criar um projeto do App Builder usando o modelo do App Builder do Console do desenvolvedor do Adobe.
+Saiba como criar um projeto do App Builder usando o modelo do App Builder do console do Adobe Developer.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339163/?quality=12&learn=on)
 
 ## Credenciais do projeto
 
-Saiba como usar as opções no menu de credenciais do Console do desenvolvedor do Adobe e o processo de aprovação.
+Saiba como usar as opções no menu de credenciais do Console do Adobe Developer e o processo de aprovação.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339164/?quality=12&learn=on)
 

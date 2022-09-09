@@ -3,7 +3,7 @@ title: Conceitos de criação
 description: Conceitos de criação no AEM
 exl-id: ee9e4952-e075-4398-b31f-d7886153efff
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '349'
 ht-degree: 100%
 

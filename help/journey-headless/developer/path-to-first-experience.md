@@ -13,7 +13,7 @@ ht-degree: 1%
 
 Nesta parte do [AEM Jornada de desenvolvedor sem periféricos,](overview.md) você entenderá as etapas para implementar sua primeira experiência headless em AEM incluindo considerações de planejamento e também aprenderá as práticas recomendadas para tornar seu caminho o mais tranquilo possível.
 
-## A História Até Agora {#story-so-far}
+## A história até agora {#story-so-far}
 
 No documento anterior da jornada sem cabeçalho AEM, [Introdução ao AEM Headless as a Cloud Service](getting-started.md) você aprendeu a teoria básica do que é um CMS sem periféricos e agora deve:
 

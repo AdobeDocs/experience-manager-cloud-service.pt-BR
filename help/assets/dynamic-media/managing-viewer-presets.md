@@ -415,7 +415,7 @@ Consulte [Considerações especiais para criar uma predefinição de Visualizado
    Consulte [Tipos de mídia avançada para predefinições do visualizador](#rich-media-types-for-viewer-presets).
 
 1. Na página Editor de predefinições do visualizador , selecione o **[!UICONTROL Aparência]** guia .
-1. Faça uma das seguintes opções:
+1. Siga uma das seguintes opções:
 
    * No **[!UICONTROL Tipo selecionado]** selecione um componente cujo design visual você deseja personalizar. Como alternativa, você pode selecionar qualquer elemento visual no visualizador para selecioná-lo para configuração.
 

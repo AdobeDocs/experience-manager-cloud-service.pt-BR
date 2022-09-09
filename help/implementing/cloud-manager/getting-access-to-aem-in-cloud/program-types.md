@@ -5,7 +5,7 @@ exl-id: 507df619-a5b5-419a-9e38-db77541425a2
 source-git-commit: 74e17ccb93c97dd6881c9b63d9a2d784d3add430
 workflow-type: tm+mt
 source-wordcount: '533'
-ht-degree: 0%
+ht-degree: 17%
 
 ---
 
@@ -18,16 +18,16 @@ O Cloud Manager é construído em torno de uma hierarquia de entidades. Os detal
 
 * **CONTENTOR** - Este é o topo da hierarquia. Todos os clientes são provisionados com um locatário.
 * **PROGRAMAS** - Cada locatário tem um ou mais programas, [que refletem frequentemente as soluções licenciadas do cliente.](introduction-production-programs.md)
-* **AMBIENTES** - Cada programa tem vários ambientes, como produção para conteúdo ao vivo, um para preparo e outro para fins de desenvolvimento.
+* **AMBIENTES** - cada programa tem vários ambientes, um de produção para conteúdo dinâmico, um para preparo e outro para fins de desenvolvimento.
    * Cada programa pode ter apenas um ambiente de produção, mas vários ambientes não relacionados à produção.
 * **REPOSITÓRIO** - Os programas têm repositórios git, onde o aplicativo e o código front-end são mantidos para os ambientes.
 * **FERRAMENTAS E FLUXOS DE TRABALHO** - Pipelines gerencia a implantação do código dos repositórios para os ambientes, enquanto outras ferramentas permitem acesso a logs, monitoramento e gerenciamento de ambiente.
 
-Um exemplo geralmente é útil na contextualização dessa hierarquia.
+Geralmente, um exemplo é útil na contextualização dessa hierarquia.
 
-* A WKND Travel and Adventure Enterprise pode ser uma **inquilino** que se concentra em mídia relacionada a viagens.
-* O locatário da WKND Travel and Adventure Enterprises pode ter dois **programas**: programa one Sites para a WKND Magazine e um programa Assets para a WKND Media.
-* Os programas WKND Magazine e WKND Media teriam desenvolvimento, estágio e produção **ambientes**.
+* A WKND Travel and Adventure Enterprises pode ser um **locatário** que se concentra em mídias relacionadas a viagens.
+* O locatário da WKND Travel and Adventure Enterprises pode ter dois **programas**: um programa Sites para a WKND Magazine e um programa Assets para a WKND Media.
+* Os programas da WKND Magazine e WKND Media teriam **ambientes** de desenvolvimento, preparação e produção.
 
 ## Repositório de código-fonte {#source-code-repository}
 

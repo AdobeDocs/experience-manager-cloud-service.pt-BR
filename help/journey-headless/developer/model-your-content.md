@@ -5,7 +5,7 @@ exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1830'
-ht-degree: 2%
+ht-degree: 5%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 Nesta parte do [jornada do desenvolvedor sem periféricos do AEM](overview.md), você pode aprender a modelar sua estrutura de conteúdo. Em seguida, perceba essa estrutura do Adobe Experience Manager (AEM) usando Modelos de fragmentos de conteúdo e Fragmentos de conteúdo, para reutilização em canais.
 
-## A História Até Agora {#story-so-far}
+## A história até agora {#story-so-far}
 
 No início [Saiba mais sobre o desenvolvimento sem periféricos do CMS](learn-about.md) a entrega de conteúdo sem cabeçalho coberto e por que ele deve ser usado. Então [Introdução ao AEM Headless as a Cloud Service](getting-started.md) descrito AEM Headless no contexto de seu próprio projeto.
 
@@ -201,8 +201,8 @@ Por exemplo, você pode fazer referência a uma imagem em um local especificado.
 Isso fornece referências a outros Fragmentos de conteúdo.
 Esse tipo de referência é usado para criar conteúdo aninhado, introduzindo as relações necessárias para modelar seu conteúdo.
 O tipo de dados pode ser configurado para permitir que os autores de fragmento:
-   * Edite o fragmento referenciado diretamente.
-   * Crie um novo fragmento de conteúdo, com base no modelo apropriado
+   * Editem o fragmento referenciado diretamente.
+   * Criem um novo fragmento de conteúdo, com base no modelo apropriado
 
 ### Criação de modelos de fragmentos do conteúdo {#creating-content-fragment-models}
 
@@ -242,7 +242,7 @@ Após a criação do fragmento, é possível abri-lo no Editor de fragmento do c
 * Conteúdo associado.
 * Editar os metadados.
 * Mostrar a estrutura da árvore.
-* Visualize a representação JSON.
+* Visualizar a representação JSON.
 
 ### Criação de fragmentos de conteúdo {#creating-content-fragments}
 

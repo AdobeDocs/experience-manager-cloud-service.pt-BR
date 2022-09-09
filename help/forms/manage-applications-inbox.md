@@ -49,7 +49,7 @@ As tarefas atribuídas a um grupo são exibidas na Caixa de entrada de todos os 
 
    ![select-task](assets/select-task.png)
 
-1. Faça uma das seguintes opções:
+1. Siga uma das seguintes opções:
 
    * Para delegar a tarefa, toque em **[!UICONTROL Delegar]**. A caixa de diálogo Delegar item é aberta. Selecione um usuário, como opção, adicione um comentário e toque em **[!UICONTROL OK]**.
 

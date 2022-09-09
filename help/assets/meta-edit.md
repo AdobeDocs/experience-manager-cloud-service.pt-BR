@@ -22,7 +22,7 @@ Porque as empresas precisam de vocabulários de metadados controlados e confiáv
 
 Para editar metadados:
 
-1. Faça uma das seguintes opções:
+1. Siga uma das seguintes opções:
 
    * Na interface do usuário do Assets, selecione o ativo e clique/toque no **[!UICONTROL Propriedades da exibição]** ícone na barra de ferramentas.
    * Na miniatura do ativo, selecione o **[!UICONTROL Propriedades da exibição]** ação rápida.

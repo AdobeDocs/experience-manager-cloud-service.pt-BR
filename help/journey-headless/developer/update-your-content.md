@@ -13,7 +13,7 @@ ht-degree: 3%
 
 Nesta parte do [AEM Jornada de desenvolvedor sem periféricos,](overview.md) saiba como usar a REST API para acessar e atualizar o conteúdo dos Fragmentos de conteúdo.
 
-## A História Até Agora {#story-so-far}
+## A história até agora {#story-so-far}
 
 No documento anterior da jornada sem cabeçalho AEM, [Como acessar seu conteúdo por meio AEM APIs de entrega](access-your-content.md) você aprendeu a acessar seu conteúdo headless no AEM por meio da API GraphQL AEM e agora deve:
 

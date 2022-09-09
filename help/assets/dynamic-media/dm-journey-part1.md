@@ -50,8 +50,8 @@ O público-alvo que melhor se encaixa nesta jornada é o seguinte, que é novo n
 
 * Administrador
 * Analista de negócios
-* Arquitetura de conteúdo
-* Autor do conteúdo
+* Arquiteto de conteúdo
+* Autor de conteúdo
 * Designer
 * Desenvolvedor
 * Marketing

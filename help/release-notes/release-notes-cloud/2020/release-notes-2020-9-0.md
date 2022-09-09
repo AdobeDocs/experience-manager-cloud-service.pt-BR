@@ -1,11 +1,11 @@
 ---
-title: Notas de versão do  [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0.
-description: '"[!DNL Adobe Experience Manager] Notas de versão as a Cloud Service para 2020.9.0."'
+title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2020.9.0.
+description: "[!DNL Adobe Experience Manager] Notas de versão as a Cloud Service para 2020.9.0."
 exl-id: 2332512f-8c52-4569-a006-faa36a7670a1
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
 source-wordcount: '724'
-ht-degree: 13%
+ht-degree: 14%
 
 ---
 
@@ -34,7 +34,7 @@ A data de lançamento para [!DNL Adobe Experience Manager] O as a Cloud Service 
    * Publicação seletiva - agora é possível que uma equipe de marketing acesse [!DNL Dynamic Media] imagens de recorte inteligente e representações dinâmicas que são sincronizadas com [!DNL Dynamic Media] para que possam criar materiais promocionais, tudo sem a necessidade de publicar esses ativos para [!DNL Dynamic Media] para entrega global. [!DNL Experience Manager] e [!DNL Dynamic Media] A publicação é dissociada e pode ocorrer separadamente para isso. Consulte [publicação seletiva](/help/assets/dynamic-media/selective-publishing.md).
    * Agora, os administradores podem redefinir [!DNL Dynamic Media] Senha de Cloud Service recebida no provisionamento. A redefinição pode ser feita em [!DNL Experience Manager] interface do usuário, sem a necessidade de usar o [!DNL Dynamic Media Classic] aplicativo de desktop.
 
-* Para saber mais sobre os seguintes aprimoramentos, consulte [novidades no Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html).
+* Para saber mais sobre os seguintes aprimoramentos, consulte [novidades no Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=pt-BR).
 
    * Visualização do PDF aprimorada com a integração do SDK do Adobe Document Cloud View.
    * Funcionalidade de download de clique único.

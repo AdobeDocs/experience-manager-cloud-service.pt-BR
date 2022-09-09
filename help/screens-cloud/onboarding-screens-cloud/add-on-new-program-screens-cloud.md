@@ -5,7 +5,7 @@ exl-id: 36d1e1e9-5272-4138-9e0d-8476edc729f0
 source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '311'
-ht-degree: 1%
+ht-degree: 5%
 
 ---
 
@@ -27,7 +27,7 @@ Siga as etapas abaixo para adicionar o Screens como um complemento a um novo pro
 1. Navegar para [Cloud Manager](https://my.cloudmanager.adobe.com/).
 
    >[!NOTE]
-   >Consulte [Introdução ao Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=en) para saber mais sobre o Cloud Manager.
+   >Consulte [Introdução ao Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=pt_BR?lang=en) para saber mais sobre o Cloud Manager.
 
 1. Clique em **Adicionar programa** na página de aterrissagem do Cloud Manager.
 

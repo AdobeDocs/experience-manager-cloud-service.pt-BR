@@ -5,7 +5,7 @@ exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
 source-git-commit: 60ddcb3f2fd2219b0b1672791703582920825e81
 workflow-type: tm+mt
 source-wordcount: '1668'
-ht-degree: 5%
+ht-degree: 11%
 
 ---
 
@@ -72,13 +72,13 @@ No console, é possível selecionar pastas no painel esquerdo para navegar até 
 
 ### Ações, Seleção, Exibição {#actions-selecting-viewing}
 
-No **Fragmentos de conteúdo** no console, uma variedade de ações está disponível para seus fragmentos de conteúdo na barra de ferramentas:
+No console de **Fragmentos de conteúdo**, várias ações estão disponíveis para seus fragmentos de conteúdo na barra de ferramentas:
 
 <!-- ![Console actions](assets/cfm-managing-cf-console-01.png) -->
 
-* **Abrir em ativos**
+* **Abrir no Assets**
 * **Criar**
-* O **Referenciado por** coluna também fornece um link direto para mostrar todas as referências principais desse fragmento; incluindo a referência a Fragmentos de conteúdo, Fragmentos de experiência e páginas.
+* A coluna **Referenciado por** também fornece um link direto para mostrar todas as referências principais desse fragmento, incluindo a referência a fragmentos de conteúdo, fragmentos de experiência e páginas.
 * Passar o mouse sobre o nome da pasta mostrará o caminho JCR.
 
 Após a seleção do fragmento, todas as ações apropriadas estarão disponíveis:
@@ -86,7 +86,7 @@ Após a seleção do fragmento, todas as ações apropriadas estarão disponíve
 <!-- ![Console actions - fragment selected](assets/cfm-managing-cf-console-selected-01.png) -->
 
 * **Abrir**
-* **Publicar** e **Cancelar publicação**)
+* **Publicar** (e **Desfazer publicação**)
 * **Copiar**
 * **Mover**
 * **Renomeie**
@@ -94,7 +94,7 @@ Após a seleção do fragmento, todas as ações apropriadas estarão disponíve
 
 >[!NOTE]
 >
->Ações como Publicar, Cancelar publicação, Excluir, Mover, Renomear, Copiar, acionam um trabalho assíncrono. O progresso desse trabalho pode ser monitorado por meio da interface do usuário de trabalhos assíncronos AEM.
+>Ações como Publicar, Desfazer publicação, Excluir, Mover, Renomear e Copiar acionam um processo assíncrono. O progresso desse processo pode ser monitorado por meio da interface de processos assíncronos do AEM.
 
 <!--
 The **Assets** console has dedicated **Action Toolbars**, and **Quick Actions** that you can use after selecting a resource (for example, a folder or content fragment).
@@ -168,7 +168,7 @@ Você provavelmente receberá uma pasta inicial onde poderá criar suas pastas. 
 
 No **Fragmentos de conteúdo** console que você pode usar **Criar** para abrir o **Novo fragmento de conteúdo** caixa de diálogo:
 
-![Console Fragmentos de conteúdo - Criação de um novo fragmento](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
+![Console de fragmentos de conteúdo - Criar um novo fragmento](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
 
 Especifique o:
 

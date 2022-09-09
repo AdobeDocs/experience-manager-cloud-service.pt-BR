@@ -5,7 +5,7 @@ exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
 source-git-commit: 9e0ab778e97658bc8d7669b1f582f3bcddd47915
 workflow-type: tm+mt
 source-wordcount: '668'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
@@ -17,7 +17,7 @@ Uma Exibição é um agrupamento virtual de telas que geralmente são posicionad
 
 ## Objetivo {#objective}
 
-Este documento ajuda você a entender como criar e gerenciar exibições no Provedor de serviços do Screens. Depois de ler, você deve:
+Este documento ajuda você a entender como criar e gerenciar exibições no Provedor de serviços do Screens. Depois de ler esse documento, você deverá:
 
 * Entender como criar e excluir exibições
 * Entender como organizar as exibições em pastas

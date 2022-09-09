@@ -1,7 +1,7 @@
 ---
 title: Criar e gerenciar revisões de ativos nos formulários
 seo-title: Creating and managing reviews for assets in forms
-description: 'Uma Revisão é um mecanismo que permite a um ou mais revisores comentar um ativo que está disponível em um formulário. '
+description: Uma Revisão é um mecanismo que permite a um ou mais revisores comentar um ativo que está disponível em um formulário.
 seo-description: A Review is a mechanism that allows one or more reviewers to comment on an asset that is available in a form.
 uuid: 45c7ff56-3fa8-4a0f-8597-05404e547282
 content-type: reference

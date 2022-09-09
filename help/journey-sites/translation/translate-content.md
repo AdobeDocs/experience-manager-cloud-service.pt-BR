@@ -6,7 +6,7 @@ hide: false
 hidefromtoc: false
 exl-id: b8ab2525-3f15-4844-866c-da47bfc7518c
 source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2598'
 ht-degree: 100%
 
@@ -216,7 +216,7 @@ Você pode usar as etapas anteriores para adicionar o conteúdo necessário a to
 
 Normalmente, o conteúdo da tarefa de tradução começa no estado **Rascunho**, conforme indicado pela coluna **Estado** na janela **Tarefa de tradução**.
 
-Para iniciar a tarefa de tradução, volte para a visão geral do projeto de tradução e toque ou clique no botão divisa na parte superior do cartão **Tarefa de tradução** e selecione **Iniciar**.
+Para iniciar o trabalho de tradução, volte para a visão geral do projeto de tradução e toque ou clique no botão de divisa na parte superior do cartão **Tarefa de tradução** e selecione **Iniciar**.
 
 ![Iniciar tarefa de tradução](assets/start-translation-job.png)
 
@@ -228,7 +228,7 @@ As traduções automáticas retornam automaticamente com um estado de **Aprovado
 
 >[!TIP]
 >
->O processamento de uma tarefa de tradução pode levar algum tempo, e você pode ver seus itens de tradução moverem-se do estado de **Rascunho**, para **Tradução em Andamento**, para **Pronto para revisão** antes de chegarem ao estado **Aprovado**. Isso é de se esperar.
+>O processamento de uma tarefa de tradução pode levar algum tempo, e você pode ver seus itens de tradução moverem-se do estado de **Rascunho**, para **Tradução em andamento**, para **Pronto para revisão** antes de chegarem ao estado **Aprovado**. Isso é de se esperar.
 
 >[!NOTE]
 >

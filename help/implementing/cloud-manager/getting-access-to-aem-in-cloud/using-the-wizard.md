@@ -5,13 +5,13 @@ exl-id: 03736ca7-1345-4faf-a61a-f9213ab5c89a
 source-git-commit: 93cb0ffa87f2338518c2a23de4e0a692031e1a71
 workflow-type: tm+mt
 source-wordcount: '316'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
 # Assistente de criação de projeto {#project-creation-wizard}
 
-Após criar o programa de produção, o Cloud Manager oferece um assistente para criar um projeto de AEM mínimo com base na variável [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) para começar rapidamente.
+Após criar o programa de produção, o Cloud Manager oferece um assistente para criar um projeto de AEM mínimo com base na variável [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt_BR) para começar rapidamente.
 
 Siga estas etapas para criar um projeto de aplicativo AEM no Cloud Manager usando o assistente.
 

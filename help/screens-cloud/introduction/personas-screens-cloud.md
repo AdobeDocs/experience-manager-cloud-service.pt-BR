@@ -5,7 +5,7 @@ exl-id: f57a1aaf-8139-4141-90c5-c70ec7a9630c
 source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '214'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -19,5 +19,5 @@ Cada uma das definições de função descritas na tabela abaixo destaca as fun�
 |--- |--- |
 | **Administrador de rede** | Responsável pela configuração do reprodutor e geralmente gerencia toda a implantação de uma implantação do AEM Screens. Define o design da experiência do usuário (estilo, layout, marca) de acordo com os requisitos organizacionais e cria a estrutura e os canais do projeto. |
 | **Desenvolvedor** | Responsável por instalar e configurar ambientes as a Cloud Service do Screens. Realiza tarefas de desenvolvimento e integração para desenvolver a experiência do usuário, modelos personalizados, componentes personalizados e integrações de back-end para AEM. |
-| **Autor do conteúdo** | Uma vez que a estrutura e os canais do projeto são definidos de acordo com os requisitos do projeto, um Autor de conteúdo é responsável por adicionar conteúdo aos canais e gerenciar locais e dispositivos. |
+| **Autor de conteúdo** | Uma vez que a estrutura e os canais do projeto são definidos de acordo com os requisitos do projeto, um Autor de conteúdo é responsável por adicionar conteúdo aos canais e gerenciar locais e dispositivos. |
 | **Executivo comercial - Digital** | Responsável pela estratégia e receitas de marketing de produtos da unidade de negócios, principais participantes de negócios para casos de uso digital, soluções e ofertas de serviços para os usuários finais, assina a implementação e o delivery do caso de uso. |

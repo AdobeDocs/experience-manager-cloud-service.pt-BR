@@ -82,7 +82,7 @@ Para ativar e executar rapidamente:
 
    Você publica um Conjunto de carrossel como faria com qualquer ativo. Em Ativos, navegue até o Conjunto de carrossel , selecione-o e selecione-o **[!UICONTROL Publicar]**. A publicação de um Conjunto de carrossel ativa o URL e a cadeia de caracteres de inserção.
 
-1. Faça uma das seguintes opções:
+1. Siga uma das seguintes opções:
 
    * [Adicionar um banner de carrossel à página do site](#adding-a-carousel-banner-to-your-website-page)Você pode adicionar a URL do banner do carrossel ou incorporar o código que você copiou na página do site.
 

@@ -56,7 +56,7 @@ Você pode ativar o Brand Portal ao criar os ambientes para os Ativos do Experie
 >
 >O Brand Portal deve ser ativado na mesma organização IMS dos Ativos do Experience Manager como um [!DNL Cloud Service] instância.
 >
->Se você tiver uma configuração de nuvem Brand Portal existente ([configurado manualmente usando o Console do Desenvolvedor do Adobe](#manual-configuration)) para uma organização IMS (org1-existing) e seus Ativos Experience Manager as a [!DNL Cloud Service] está configurada para outra organização IMS (org2-new), ativar o Brand Portal no Cloud Manager redefine a organização do Brand Portal IMS para `org2-new`. Embora a configuração de nuvem configurada manualmente no `org1-existing` estarão visíveis na instância do autor do Experience Manager Assets, mas não estarão mais em uso após ativar o Brand Portal no Cloud Manager.
+>Se você tiver uma configuração de nuvem Brand Portal existente ([configurado manualmente usando o Console do Adobe Developer](#manual-configuration)) para uma organização IMS (org1-existing) e seus Ativos Experience Manager as a [!DNL Cloud Service] está configurada para outra organização IMS (org2-new), ativar o Brand Portal no Cloud Manager redefine a organização do Brand Portal IMS para `org2-new`. Embora a configuração de nuvem configurada manualmente no `org1-existing` estarão visíveis na instância do autor do Experience Manager Assets, mas não estarão mais em uso após ativar o Brand Portal no Cloud Manager.
 >
 >Se a configuração de nuvem existente do Brand Portal e do Experience Manager Assets as a [!DNL Cloud Service] As instâncias estão usando a mesma organização IMS (org1), você só precisa ativar o Brand Portal no Cloud Manager.
 >
@@ -175,20 +175,20 @@ No exemplo acima, uma solicitação e uma resposta adicionais são acionadas. O 
 >
 >A solicitação adicional é gerada caso a pasta principal não exista no Brand Portal ou tenha sido modificada no Experience Manager Assets.
 
-Junto com o fluxo de trabalho de automação para ativar o Brand Portal no Experience Manager Assets as a [!DNL Cloud Service], existe outro método para configurar manualmente o Experience Manager Assets as a [!DNL Cloud Service] com o Brand Portal usando o Console do desenvolvedor do Adobe, o que não é mais recomendado.
+Junto com o fluxo de trabalho de automação para ativar o Brand Portal no Experience Manager Assets as a [!DNL Cloud Service], existe outro método para configurar manualmente o Experience Manager Assets as a [!DNL Cloud Service] com o Brand Portal usando o Adobe Developer Console, o que não é mais recomendado.
 
 >[!NOTE]
 >
 >Entre em contato com o Suporte ao cliente se tiver algum problema ao ativar o locatário do Brand Portal.
 
-## Configuração manual usando o Console do desenvolvedor do Adobe {#manual-configuration}
+## Configuração manual usando o Console do Adobe Developer {#manual-configuration}
 
-A seção a seguir descreve como configurar manualmente o Experience Manager Assets as a [!DNL Cloud Service] com o Brand Portal usando o Console do desenvolvedor do Adobe.
+A seção a seguir descreve como configurar manualmente o Experience Manager Assets as a [!DNL Cloud Service] com o Brand Portal usando o Adobe Developer Console.
 
 Anteriormente, o Experience Manager Assets as a [!DNL Cloud Service] O foi configurado manualmente com o Brand Portal por meio do Adobe Developer Console, que obtém um token de conta do Adobe Identity Management Services (IMS) para autorização do locatário do Brand Portal. Ela requer configurações no Experience Manager Assets e no Adobe Developer Console.
 
 1. No Experience Manager Assets, crie uma conta IMS e gere uma chave pública (certificado).
-1. No Console do desenvolvedor do Adobe, crie um projeto para seu locatário do Brand Portal (organização).
+1. No Adobe Developer Console, crie um projeto para seu locatário do Brand Portal (organização).
 1. No projeto, configure uma API usando a chave pública para criar uma conexão de conta de serviço.
 1. Obtenha as credenciais da conta de serviço e as informações de carga JSON Web Token (JWT).
 1. No Experience Manager Assets, configure a conta IMS usando as credenciais da conta de serviço e a carga JWT.
@@ -227,7 +227,7 @@ A configuração IMS inclui duas etapas:
 
 ### Obter certificado público {#public-certificate}
 
-A chave pública (certificado) autentica seu perfil no Console do desenvolvedor do Adobe.
+A chave pública (certificado) autentica seu perfil no Adobe Developer Console.
 
 1. Faça logon no Experience Manager Assets.
 1. No **Ferramentas** , navegue até **[!UICONTROL Segurança]** > **[!UICONTROL Configurações do Adobe IMS]**.
@@ -240,23 +240,23 @@ A chave pública (certificado) autentica seu perfil no Console do desenvolvedor 
 
 1. Clique no botão **[!UICONTROL Baixar chave pública]** e salve o arquivo de chave pública (CRT) em sua máquina.
 
-   A chave pública é usada posteriormente para configurar a API do locatário do Brand Portal e gerar credenciais de conta de serviço no Console do desenvolvedor do Adobe.
+   A chave pública é usada posteriormente para configurar a API do locatário do Brand Portal e gerar credenciais de conta de serviço no Adobe Developer Console.
 
    ![Baixar certificado](assets/ims-config3.png)
 
 1. Clique em **[!UICONTROL Avançar]**.
 
-   No **Conta** , é criada a conta do Adobe IMS, que requer as credenciais da conta de serviço geradas no Console do desenvolvedor do Adobe. Mantenha esta página aberta por enquanto.
+   No **Conta** , é criada uma conta do Adobe IMS que requer as credenciais da conta de serviço geradas no Adobe Developer Console. Mantenha esta página aberta por enquanto.
 
-   Abra uma nova guia e [criar uma conexão de conta de serviço (JWT) no Console do desenvolvedor do Adobe](#createnewintegration) para obter as credenciais e a carga JWT para configurar a conta IMS.
+   Abra uma nova guia e [criar uma conexão de conta de serviço (JWT) no Adobe Developer Console](#createnewintegration) para obter as credenciais e a carga JWT para configurar a conta IMS.
 
 ### Criar conexão de conta de serviço (JWT) {#createnewintegration}
 
-No Console do desenvolvedor do Adobe, os projetos e as APIs são configurados no nível de locatário (organização) do Brand Portal. Configurar uma API cria uma conexão de conta de serviço (JWT). Há dois métodos para configurar a API, gerando um par de chaves (chaves privadas e públicas) ou carregando uma chave pública. Para configurar o Experience Manager Assets com o Brand Portal, você deve gerar uma chave pública (certificado) no Experience Manager Assets e criar credenciais no Adobe Developer Console fazendo upload da chave pública. Essas credenciais são necessárias para configurar a conta IMS no Experience Manager Assets. Depois que a conta IMS é configurada, você pode configurar o serviço de nuvem da Brand Portal no Experience Manager Assets.
+No Adobe Developer Console, os projetos e as APIs são configurados no nível do locatário (organização) do Brand Portal. Configurar uma API cria uma conexão de conta de serviço (JWT). Há dois métodos para configurar a API, gerando um par de chaves (chaves privadas e públicas) ou carregando uma chave pública. Para configurar o Experience Manager Assets com o Brand Portal, você deve gerar uma chave pública (certificado) no Experience Manager Assets e criar credenciais no Adobe Developer Console fazendo upload da chave pública. Essas credenciais são necessárias para configurar a conta IMS no Experience Manager Assets. Depois que a conta IMS é configurada, você pode configurar o serviço de nuvem da Brand Portal no Experience Manager Assets.
 
 Execute as seguintes etapas para gerar as credenciais da conta de serviço e a carga JWT:
 
-1. Faça logon no Console do desenvolvedor do Adobe com privilégios de administrador de sistema na organização IMS (locatário do Brand Portal). O URL padrão é [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
+1. Faça logon no Adobe Developer Console com privilégios de administrador do sistema na organização IMS (locatário do Brand Portal). O URL padrão é [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
 
 
    >[!NOTE]

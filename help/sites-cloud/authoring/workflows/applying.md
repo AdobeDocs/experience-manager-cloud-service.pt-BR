@@ -1,9 +1,9 @@
 ---
 title: Aplicação de fluxos de trabalho a páginas
-description: Ao criar, você pode invocar fluxos de trabalho para realizar ações em suas páginas. Também é possível aplicar mais de um fluxo de trabalho.
+description: Ao criar, é possível invocar fluxos de trabalho para realizar ações em suas páginas. Também é possível aplicar mais de um fluxo de trabalho..
 exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '662'
 ht-degree: 100%
 
@@ -125,7 +125,7 @@ Você pode especificar os detalhes:
       * **Incluir filhos** para especificar que os filhos desse recurso serão incluídos no fluxo de trabalho.
 Uma caixa de diálogo será aberta, permitindo que você refine a seleção de acordo com:
 
-         * Incluir somente filhos imediatos.
+         * Incluir somente secundárias imediatas.
          * Incluir somente as páginas modificadas.
          * Incluir somente páginas já publicadas.
 

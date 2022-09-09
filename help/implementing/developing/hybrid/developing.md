@@ -54,7 +54,7 @@ Qualquer roteamento estático funciona em relação à variável [princípio da 
 
 ## Arquétipo de projeto do AEM {#aem-project-archetype}
 
-Qualquer projeto AEM deve aproveitar [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), que suporta projetos SPA usando o React ou Angular e aproveita o SDK SPA.
+Qualquer projeto AEM deve aproveitar [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt_BR), que suporta projetos SPA usando o React ou Angular e aproveita o SDK SPA.
 
 ## Modelos de design de SPA {#spa-design-models}
 
@@ -170,14 +170,14 @@ A arquitetura geral de AEM incluindo ambientes de desenvolvimento, criação e p
 
 ![Arquitetura AEM e SPA](assets/aem-architecture.png)
 
-* **Ambiente de build**
+* **Ambiente de criação**
 
    É aqui que a origem do aplicativo SPA e a origem do componente são verificadas.
 
    * O gerador clientlib do NPM cria uma biblioteca do cliente do projeto do SPA.
    * Essa biblioteca será obtida pelo Maven e implantada pelo plug-in Maven Build, juntamente com o componente para o autor do AEM.
 
-* **AEM Author**
+* **Autor do AEM**
 
    O conteúdo é criado no autor do AEM, incluindo a criação de SPA.
 

@@ -5,7 +5,7 @@ exl-id: 4ae70e40-fdf1-4a37-b4dd-0c4882d77908
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1155'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 Saiba como gerenciar experiências de produtos.
 
-## A História Até Agora {#story-so-far}
+## A história até agora {#story-so-far}
 
 No documento anterior da jornada Conteúdo e Comércio da AEM, [Gerenciar experiências de catálogo de produtos preparados](staged-catalog.md), você aprendeu a gerenciar experiências de catálogos de produtos preparados.
 
@@ -27,7 +27,7 @@ O Gerenciamento de experiência do produto é a disciplina para decorar dados do
 
 No AEM, você pode criar vários tipos de conteúdo e vinculá-los ao catálogo de produtos. O conteúdo associado pode ser facilmente descoberto e usado, o que leva a uma alta produtividade.
 
-### Ativos {#assets}
+### Assets {#assets}
 
 Em um alto nível, há dois tipos de ativos relacionados a produtos: produto e marketing. Os ativos do produto geralmente são gerenciados por comerciantes e têm como foco mostrar o produto (principalmente na frente de um fundo neutro). Os ativos são gerenciados na solução comercial ou na AEM Assets (com uma integração do Assets com a solução comercial/pim).
 
@@ -101,15 +101,15 @@ Se você criou conteúdo associado para esse produto, alterne na barra lateral A
 
 ![página enriquecida com pem](assets/pem-page-enriched.png)
 
-## Fim da Jornada? {#end-of-journey}
+## Fim da jornada? {#end-of-journey}
 
-Parabéns! Você concluiu a jornada do desenvolvedor de conteúdo e comércio AEM! Agora você deve:
+Parabéns. Você concluiu a jornada do desenvolvedor de conteúdo e comércio AEM! Agora você deve:
 
 * saiba como associar qualquer conteúdo AEM a objetos de catálogo de produtos
 * usar espaços reservados para enriquecer individualmente as páginas de produto e categoria
 * saiba como tornar o conteúdo passível de compra e usar a guia conteúdo associado
 
-Agora você está pronto para gerenciar experiências de produtos usando Conteúdo e Comércio de AEM. No entanto, AEM conteúdo e comércio têm muitas opções adicionais disponíveis. Confira alguns dos recursos adicionais disponíveis no [Seção Recursos adicionais](#additional-resources) para saber mais sobre os recursos que você viu nesta jornada.
+Agora você está pronto para gerenciar experiências de produtos usando Conteúdo e Comércio de AEM. No entanto, AEM conteúdo e comércio têm muitas opções adicionais disponíveis. Confira alguns dos recursos adicionais disponíveis na [seção Recursos adicionais](#additional-resources) para saber mais sobre os recursos que você viu nesta jornada.
 
 ## Recursos adicionais {#additional-resources}
 

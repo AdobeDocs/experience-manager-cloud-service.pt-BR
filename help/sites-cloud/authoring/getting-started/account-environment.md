@@ -1,9 +1,9 @@
 ---
-title: 'Configurar o ambiente da sua conta  '
+title: Configurar o ambiente da sua conta
 description: O AEM fornece a capacidade de configurar a sua conta e determinados aspectos do ambiente de criação
 exl-id: 1b948f0b-85b9-478a-8b7e-61495c1d57b6
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 100%
 

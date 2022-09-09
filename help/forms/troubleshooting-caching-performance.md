@@ -1,7 +1,7 @@
 ---
-title: 'Solução de problemas do desempenho do armazenamento em cache  '
+title: Solução de problemas do desempenho do armazenamento em cache
 seo-title: Troubleshooting caching performance
-description: 'Solução de problemas do desempenho do armazenamento em cache  '
+description: Solução de problemas do desempenho do armazenamento em cache
 seo-description: Troubleshooting caching performance
 contentOwner: khsingh
 exl-id: eae44a6f-25b4-46e9-b38b-5cec57b6772c
