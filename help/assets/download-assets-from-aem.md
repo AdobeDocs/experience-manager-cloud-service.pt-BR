@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: cf6cfb38a43004c8ac0c1d1e99153335a47860a8
+source-git-commit: 4f6901de479086ac40471885292ae82824516bd1
 workflow-type: tm+mt
-source-wordcount: '1192'
+source-wordcount: '1189'
 ht-degree: 4%
 
 ---
@@ -22,7 +22,7 @@ Você pode baixar ativos, incluindo representações estáticas e dinâmicas. Co
 >Recipients of emails must be members of the `dam-users` group to access the ZIP download link in the email message. To be able to download the assets, the members must have permissions to launch workflows that trigger downloading of assets.
 -->
 
-Os tipos de ativos Conjuntos de imagens, Conjuntos de rotação, Conjuntos de mídia mista e Conjuntos de carrossel não podem ser baixados.
+Os seguintes tipos de ativos não podem ser baixados: Conjuntos de imagens, Conjuntos de rotação, Conjuntos de mídia mista e Conjuntos de carrossel.
 
 Você pode baixar ativos do Experience Manager usando os seguintes métodos:
 
@@ -35,9 +35,9 @@ Você pode baixar ativos do Experience Manager usando os seguintes métodos:
 
 ## Baixar ativos usando [!DNL Experience Manager] interface {#download-assets}
 
-O serviço de download assíncrono fornece uma estrutura para o download perfeito de ativos de grande porte. O download arquiva arquivos com mais de 100 GB em tamanho se divide em vários arquivos zip com um tamanho máximo de 100 GB cada. Eles podem ser baixados individualmente. Arquivos menores são baixados da interface do usuário em tempo real. [!DNL Experience Manager] não arquiva downloads de ativos únicos onde o arquivo original é baixado. Essa funcionalidade permite downloads mais rápidos.
+O Experience Manager otimiza a experiência de download com base na quantidade e no tamanho do ativo. Arquivos menores são baixados da interface do usuário em tempo real. [!DNL Experience Manager] O baixa diretamente solicitações de ativos únicos para o arquivo original, em vez de incluir ativos únicos em um arquivo ZIP para permitir downloads mais rápidos. O Experience Manager suporta downloads grandes com solicitações assíncronas. As solicitações de download com mais de 100 GB são divididas em vários arquivos ZIP com um tamanho máximo de 100 GB cada.
 
-Por padrão, [!DNL Experience Manager] aciona uma notificação após a conclusão do workflow de download. A notificação de download é exibida no  [[!DNL Experience Manager] Caixa de entrada](/help/sites-cloud/authoring/getting-started/inbox.md).
+Por padrão, [!DNL Experience Manager] aciona uma notificação no [[!DNL Experience Manager] Caixa de entrada](/help/sites-cloud/authoring/getting-started/inbox.md) após a geração de um arquivo de download.
 
 ![Notificação da caixa de entrada](assets/inbox-notification-for-large-downloads.png)
 
@@ -50,15 +50,15 @@ Os downloads assíncronos são acionados em qualquer um dos seguintes casos:
 * Se o tamanho de download for superior a 100 MB
 * Se o download demorar mais de 30 segundos para se preparar
 
-Embora o download assíncrono seja executado no back-end, o usuário pode continuar a explorar e trabalhar mais no Experience Manager. É necessário um mecanismo pronto para uso para notificar o usuário após a conclusão do processo de download. Para atingir esse objetivo, os administradores podem configurar o serviço de email configurando um servidor SMTP. Consulte [configurar Serviço de Correio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
+Embora o download assíncrono seja executado no back-end, o usuário pode continuar a explorar e trabalhar mais no Experience Manager. Além das notificações da caixa de entrada do Experience Manager, o Experience Manager pode enviar emails para notificar o usuário ao concluir o processo de download. Para habilitar esse recurso, os administradores podem configurar o serviço de email ao [configuração de uma conexão do servidor SMTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
 
 Após configurar o serviço de email, os administradores e usuários poderão ativar notificações por email na interface do Experience Manager.
 
 Para ativar notificações por email:
 
 1. Faça logon em [!DNL Experience Manager Assets].
-1. Clique no ícone do usuário no canto superior direito e clique em **[!UICONTROL Minhas preferências]**. A janela Preferências de usuário é aberta.
-1. Selecione o **[!UICONTROL Notificações por email de download de ativos]** e clique em **[!UICONTROL Aceitar]**.
+1. Clique no ícone do usuário no canto superior direito e clique em **[!UICONTROL Minhas preferências]** para abrir a janela Preferências de usuário.
+1. Selecione o **[!UICONTROL Notificações por email de download de ativos]** caixa de seleção e clique em **[!UICONTROL Aceitar]**.
 
    ![enable-email-notifications-for-large-downloads](/help/assets/assets/enable-email-for-large-downloads.png)
 
@@ -74,16 +74,16 @@ Para baixar ativos, siga estas etapas:
 
    | Opção de download | Descrição |
    |---|---|
-   | **[!UICONTROL Criar uma pasta separada para cada ativo]** | Selecione essa opção para incluir cada ativo que você baixar, incluindo ativos em pastas filhas aninhadas na pasta principal do ativo, em uma pasta no computador local. Quando esta opção estiver *not* selecione, por padrão, a hierarquia de pastas é ignorada e todos os ativos são baixados em uma pasta no computador local. |
+   | **[!UICONTROL Criar uma pasta separada para cada ativo]** | Selecione essa opção para criar uma pasta para cada ativo contendo todas as representações baixadas do ativo. Se não estiver selecionado, cada ativo (e suas renderizações, se selecionado para download) estará contido na pasta principal do arquivo gerado. |
    | **[!UICONTROL Email]** | Selecione essa opção para enviar uma notificação por email (contendo um link para download) para outro usuário. O usuário destinatário deve ser membro do `dam-users` grupo. Os modelos padrão de emails estão disponíveis nos seguintes locais:<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> Os modelos personalizados durante a implantação estão disponíveis nos seguintes locais: <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul>Você pode armazenar modelos personalizados específicos do locatário nos seguintes locais:<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> |
-   | **[!UICONTROL Ativo(s)]** | Selecione essa opção para baixar o ativo em seu formulário original sem nenhuma representação.<br>A opção de subativos estará disponível se o ativo original tiver subativos. |
+   | **[!UICONTROL Ativo(s)]** | Selecione essa opção para baixar o ativo em seu formulário original.<br>A opção de subativos estará disponível se o ativo original tiver subativos. |
    | **[!UICONTROL Representações]** | Uma representação é uma representação binária de um ativo. Os ativos têm uma representação principal: a do arquivo carregado. Eles podem ter qualquer número de representações. <br> Com essa opção, você pode selecionar as representações que deseja baixar. As representações disponíveis dependem do ativo selecionado. |
    | **[!UICONTROL Cortes inteligentes]** | Selecione esta opção para baixar todas as representações de recorte inteligente do ativo selecionado de dentro [!DNL Experience Manager]. Um arquivo zip com as representações de Recorte inteligente é criado e baixado no computador local. |
    | **[!UICONTROL Representação(ões) dinâmica(s)]** | Selecione essa opção para gerar uma série de representações alternativas em tempo real. Ao selecionar essa opção, você também seleciona as representações que deseja criar dinamicamente, selecionando no [Predefinição de imagem](/help/assets/dynamic-media/image-presets.md) lista. <br>Além disso, é possível selecionar o tamanho e a unidade de medida, o formato, o espaço de cores, a resolução e qualquer modificador de imagem opcional, como inverter a imagem. A opção só estará disponível se você tiver [!DNL Dynamic Media] habilitado. |
 
 1. Na caixa de diálogo, clique em **[!UICONTROL Baixar]**.
 
-   Se a notificação por email estiver ativada para downloads grandes, um email contendo um URL de download da pasta zip arquivada aparecerá em sua caixa de entrada. Clique no link de download do email para baixar a pasta zip.
+   Se a notificação por email estiver ativada para downloads grandes, um email contendo um URL de download da pasta zip arquivada aparecerá em sua caixa de entrada. Clique no link de download do email para baixar o arquivo zip.
 
    ![email-notifications-for-large-downloads](/help/assets/assets/email-for-large-notification.png)
 
@@ -95,7 +95,7 @@ Para baixar ativos, siga estas etapas:
 
 O compartilhamento de ativos usando um link é uma maneira conveniente de disponibilizá-lo para as pessoas interessadas, sem a necessidade de fazer logon no [!DNL Assets]. Consulte [Funcionalidade de compartilhamento de links](/help/assets/share-assets.md#sharelink).
 
-Quando usuários baixam ativos de links compartilhados, [!DNL Assets] O usa um serviço assíncrono que oferece downloads mais rápidos e ininterruptos. Os ativos a serem baixados são enfileirados em segundo plano em uma caixa de entrada em arquivos ZIP com tamanho de arquivo gerenciável. Para downloads muito grandes, o download é fragmentado em arquivos de 100 GB de tamanho.
+Quando usuários baixam ativos de links compartilhados, [!DNL Assets] O usa um serviço assíncrono que oferece downloads mais rápidos e ininterruptos. Os ativos a serem baixados são enfileirados em segundo plano em uma caixa de entrada em arquivos ZIP com tamanho de arquivo gerenciável. Para downloads maiores, o download é fragmentado em arquivos de 100 GB.
 
 O [!UICONTROL Baixar Caixa de entrada] exibe o status de processamento de cada arquivo. Após concluir o processamento, é possível baixar os arquivos da caixa de entrada.
 
@@ -103,7 +103,7 @@ O [!UICONTROL Baixar Caixa de entrada] exibe o status de processamento de cada a
 
 ## Habilitar servlet de download de ativos {#enable-asset-download-servlet}
 
-O servlet padrão em [!DNL Experience Manager] O permite que usuários autenticados emitam solicitações de download simultâneas e arbitrariamente grandes para criar arquivos ZIP de ativos. A preparação do download pode ter implicações de desempenho ou pode até mesmo sobrecarregar o servidor e a rede. Para mitigar esses potenciais riscos do tipo DoS causados por esse recurso, `AssetDownloadServlet` O componente OSGi está desabilitado para instâncias de publicação. Se você não precisar do recurso de download em instâncias do autor, desative o servlet no autor.
+O servlet padrão em [!DNL Experience Manager] O permite que usuários autenticados emitam solicitações de download arbitrariamente grandes e simultâneas para criar arquivos ZIP de ativos. A preparação do download pode ter implicações de desempenho ou pode até mesmo sobrecarregar o servidor e a rede. Para mitigar esses potenciais riscos do tipo DoS causados por esse recurso, `AssetDownloadServlet` O componente OSGi está desabilitado para instâncias de publicação. Se você não precisar do recurso de download em instâncias do autor, desative o servlet no autor.
 
 Para permitir o download de ativos do DAM, digamos ao usar algo como o Asset Share Commons ou outra implementação semelhante a portal, ative manualmente o servlet por meio de uma configuração OSGi. A Adobe recomenda definir o tamanho de download permitido o mais baixo possível sem afetar os requisitos diários de download. Um alto valor pode afetar o desempenho.
 
@@ -112,7 +112,7 @@ Para permitir o download de ativos do DAM, digamos ao usar algo como o Asset Sha
    `/apps/<your-app-name>/config.publish`
 
 1. Na pasta de configuração, crie um novo arquivo do tipo `nt:file` nomeado `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config`.
-1. Preencher `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config` com o seguinte. Define um tamanho máximo (em bytes) para download como valor de `asset.download.prezip.maxcontentsize`. A amostra abaixo configura o tamanho máximo do download ZIP para não exceder 100 kB.
+1. Preencher `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config` com o seguinte. Define um tamanho máximo (em bytes) para download como valor de `asset.download.prezip.maxcontentsize`. A amostra abaixo configura o tamanho máximo do download do ZIP para não exceder 100 KB.
 
    ```java
    enabled=B"true"
