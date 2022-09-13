@@ -2,10 +2,10 @@
 title: Personalização e direcionamento de conteúdo
 description: Saiba como o AEM pode criar conteúdo personalizado
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 8b741b64db43369bf0ca3bfbe947fb58ef5ec05a
 workflow-type: tm+mt
-source-wordcount: '518'
-ht-degree: 100%
+source-wordcount: '517'
+ht-degree: 97%
 
 ---
 
@@ -45,7 +45,11 @@ Uma oferta é um conteúdo que aparece em uma localização em uma página para 
 
 Por exemplo, a página feminina de um site de amostra pode usar ofertas como a imagem do teaser que aparece na parte superior da página. Uma oferta diferente é usada como teaser para a experiência Mulheres acima de 30 anos e para a experiência Mulheres com menos de 30 anos.
 
-Use o [console Ofertas](/help/sites-cloud/authoring/personalization/offers.md) para criar ofertas que você possa usar em várias experiências. Crie ofertas de uso único ou adicione ofertas de uma biblioteca de ofertas ao [criar conteúdo direcionado](/help/sites-cloud/authoring/personalization/targeted-content.md).
+Use [Fragmentos de experiência](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) para criar ofertas que você pode usar em várias experiências. Crie ofertas de uso único ou adicione ofertas de uma biblioteca de ofertas ao [criar conteúdo direcionado](/help/sites-cloud/authoring/personalization/targeted-content.md).
+
+<!--
+Use the [Offers console](/help/sites-cloud/authoring/personalization/offers.md) to create offers that you can use in multiple experiences. Create single-use offers or add offers from an offer library when [authoring targeted content](/help/sites-cloud/authoring/personalization/targeted-content.md).
+-->
 
 ## Mecanismo de direcionamento {#targeting-engine}
 

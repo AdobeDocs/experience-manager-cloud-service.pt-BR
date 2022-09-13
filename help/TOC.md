@@ -8,9 +8,9 @@ user-guide-description: Recursos de autoajuda e links de documentação da visã
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 4e18d2e075833bd455087aca149a12c0dc2a9245
+source-git-commit: b423aaad1857e8b8016b4d61fe71360ead88c65f
 workflow-type: tm+mt
-source-wordcount: '3721'
+source-wordcount: '3723'
 ht-degree: 97%
 
 ---
@@ -274,7 +274,7 @@ ht-degree: 97%
          + [Como o gerenciamento multisite para conteúdo direcionado está estruturado](/help/sites-cloud/authoring/personalization/multisite-structure.md)
          + [Gerenciamento de atividades](/help/sites-cloud/authoring/personalization/activities.md)
          + [Gerenciamento de públicos](/help/sites-cloud/authoring/personalization/audiences.md)
-         + [Criação e gerenciamento de ofertas](/help/sites-cloud/authoring/personalization/offers.md)
+         + [Criação e gerenciamento de ofertas (Console Ofertas)](/help/sites-cloud/authoring/personalization/offers.md)
          + [Noções sobre segmentação](/help/sites-cloud/authoring/personalization/segmentation.md)
          + [Configuração da segmentação com o ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
          + [Registro, logon e perfil do usuário](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)

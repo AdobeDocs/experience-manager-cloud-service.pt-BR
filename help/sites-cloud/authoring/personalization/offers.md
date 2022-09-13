@@ -1,15 +1,101 @@
 ---
-title: Criação e gerenciamento de ofertas
+title: Criação e gerenciamento de ofertas (console Ofertas)
 description: Use o console Ofertas para criar ofertas que você pode usar em experiências de atividades
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 9274496200af93708d5fd95666f969afc71125a6
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 100%
+source-wordcount: '1306'
+ht-degree: 67%
 
 ---
 
-# Criação e gerenciamento de ofertas {#creating-and-managing-offers}
+# Criação e gerenciamento de ofertas (Console Ofertas) {#creating-and-managing-offers}
+
+O **Ofertas** O console será descontinuado no futuro. Então, a partir de agora, é:
+
+* Disponível somente para clientes que têm *legado* ofertas já definidas (ou seja, pré-existentes)
+* Recomendado que qualquer oferta herdada seja convertida em ofertas de fragmento de experiência
+   * Assim que a última oferta herdada for convertida/removida, a variável **Ofertas** O console não estará mais disponível.
+
+![Consoles de personalização](/help/sites-cloud/authoring/assets/offers-consoles.png)
+
+>[!NOTE]
+>
+>Os clientes que têm ofertas herdadas pré-existentes ainda podem usar o **Ofertas** para ver as ofertas existentes e criar novas ofertas herdadas.
+>
+>Os clientes sem ofertas herdadas pré-existentes não verão a variável **Ofertas** console.
+>
+>Todos os clientes podem usar **Ofertas de fragmentos de experiência** para criar e gerenciar ofertas.
+
+## Conversão de uma oferta herdada em um fragmento de experiência {#convert-legacy-offer-to-experience-fragment}
+
+A **Converter em variação de fragmento de experiência** A opção e o fluxo de trabalho foram implementados para ajudá-lo a converter sua oferta herdada em um Fragmento de experiência:
+
+>[!NOTE]
+>
+>Esse é o fluxo de trabalho recomendado para converter ofertas herdadas em fragmentos de experiência.
+
+>[!NOTE]
+>
+>Você também pode criar um novo Fragmento de experiência, transferir manualmente o conteúdo da oferta herdada para o fragmento e, em seguida, excluir a oferta herdada.
+
+>[!CAUTION]
+>
+>O **Converter em variação de fragmento de experiência** está disponível para todos os Componentes principais.
+>
+>Essa opção não será compatível com componentes personalizados. Para esses componentes, você deve converter manualmente o conteúdo em um fragmento de experiência.
+
+>[!CAUTION]
+>
+>Assim que a última oferta herdada for convertida/removida:
+>
+>* O **Ofertas** O console não estará mais disponível.
+>* O ícone de destino na barra de ferramentas de qualquer outro componente afetado não será mais exibido.
+
+
+1. Abra uma página que contenha a oferta para edição.
+
+1. Mudar para **Direcionamento** para essa página.
+
+1. Selecione **Iniciar o direcionamento**.
+
+1. Selecione o componente (direcionado) apropriado.
+
+1. A barra de ferramentas do componente fornecerá uma opção para **Converter em variação de fragmento de experiência**:
+
+   ![Conversão da oferta herdada em Fragmento de experiência](/help/sites-cloud/authoring/assets/offers-convert-legacy-icon.png)
+
+1. Uma caixa de diálogo será exibida. Aqui você pode selecionar o **Ação**:
+
+   * Criar novo Fragmento de experiência
+   * Adicionar o conteúdo a um Fragmento de experiência existente
+
+   Para este cenário, selecione **Criar um novo fragmento de experiência**.
+
+   ![Caixa de diálogo Converter em variação de fragmento de experiência](/help/sites-cloud/authoring/assets/offers-convert-dialog.png)
+
+1. Preencha os campos obrigatórios na caixa de diálogo:
+
+   * **Caminho pai**
+Especificar o caminho pai do novo fragmento de experiência
+   * **Modelo**
+Selecione o modelo a ser usado para criar o fragmento de experiência.
+   * **Título do fragmento**
+Especifique o título.
+   * **Tags de fragmento**
+Adicione tags, se necessário.
+
+1. Confirme com **Concluído**.
+
+   Agora, você pode navegar até a **Ofertas de fragmento de experiência** , você verá seu novo fragmento de experiência, juntamente com suas variações associadas.
+
+## O console Ofertas {#offers-console}
+
+>[!CAUTION]
+>
+>Esse console está sendo descontinuado no futuro, pois oferece uma maneira herdada de personalizar o conteúdo.
+>
+>Você tem tempo para se preparar. Veja como [converter as ofertas herdadas existentes em uma oferta de fragmento de experiência](#convert-legacy-offer-to-experience-fragment).
 
 Use o console Ofertas para criar ofertas que você pode [usar em experiências de atividades](/help/sites-cloud/authoring/personalization/targeted-content.md). A criação de ofertas no console Ofertas poupa tempo quando várias experiências exigem a mesma oferta:
 
@@ -18,7 +104,7 @@ Use o console Ofertas para criar ofertas que você pode [usar em experiências d
 
 O console Ofertas organiza ofertas por marca. Cada marca contém uma biblioteca de ofertas que podem ser usadas nas experiências de uma marca. Use pastas para definir uma estrutura hierárquica para organizar ofertas em cada biblioteca. Uma estrutura de pastas lógica permite que os autores naveguem e encontrem ofertas facilmente. Ferramentas de marcação e pesquisa também permitem que os autores encontrem ofertas.
 
-## Adicionar uma marca usando o console Ofertas {#add-a-brand-using-the-offers-console}
+### Adicionar uma marca usando o console Ofertas {#add-a-brand-using-the-offers-console}
 
 Crie uma marca à qual as suas ofertas estejam associadas. Abra uma marca no console Ofertas para acessar sua biblioteca de ofertas, onde você pode criar pastas e ofertas.
 
@@ -33,7 +119,7 @@ Quando você cria uma marca usando o console Ofertas, ela também aparece no [co
 1. Digite o título que você deseja atribuir para a exibição da marca nos consoles Ofertas e Atividades. Opcionalmente, digite ou selecione uma ou mais tags para associar à marca.
 1. Clique ou toque em **Criar**.
 
-## Adicionar uma pasta a uma biblioteca de ofertas {#add-a-folder-to-an-offer-library}
+### Adicionar uma pasta a uma biblioteca de ofertas {#add-a-folder-to-an-offer-library}
 
 Adicione uma pasta à biblioteca de ofertas de uma marca para organizar e armazenar ofertas. É possível criar uma pasta abaixo da marca ou abaixo de outras pastas.
 
@@ -49,7 +135,7 @@ Adicione uma pasta à biblioteca de ofertas de uma marca para organizar e armaze
 
 1. Clique ou toque em **Criar**.
 
-## Adicionar uma oferta a uma biblioteca de ofertas {#add-an-offer-to-an-offer-library}
+### Adicionar uma oferta a uma biblioteca de ofertas {#add-an-offer-to-an-offer-library}
 
 Adicione uma oferta à biblioteca de ofertas de uma marca para que ela possa ser adicionada às experiências da marca. Ao adicionar uma oferta, você fornece um título para ela. Também é possível associar a oferta a uma ou mais tags para melhorar a capacidade de pesquisa.
 
@@ -64,7 +150,7 @@ Depois de criar a oferta, você pode abri-la para criar o conteúdo.
 1. Digite um título para a oferta e, opcionalmente, selecione ou digite uma ou mais tags a serem associadas à oferta. Em seguida, clique ou toque em **Criar**.
 1. Na caixa de diálogo de confirmação, para abrir a oferta para edição, clique ou toque em **Abrir página**.
 
-## Edição de uma oferta {#editing-an-offer}
+### Edição de uma oferta {#editing-an-offer}
 
 Abra uma oferta e edite o conteúdo como você deseja que ele apareça nas experiências que o utilizam. Quando você edita uma oferta que é usada em qualquer experiência, suas alterações aparecem nessas experiências.
 
@@ -73,7 +159,7 @@ Abra uma oferta e edite o conteúdo como você deseja que ele apareça nas exper
 1. No console Ofertas, toque ou clique no ícone ao lado da oferta e depois clique ou toque em **Editar**.
 1. Adicione componentes à oferta e edite o conteúdo dos componentes como de costume.
 
-## Exclusão de uma oferta {#deleting-an-offer}
+### Exclusão de uma oferta {#deleting-an-offer}
 
 Exclua uma oferta quando ela não for mais necessária. Quando você tentar excluir uma oferta usada em uma experiência, será necessário confirmar a exclusão. A confirmação exclui a oferta e a remove das experiências.
 
@@ -89,7 +175,7 @@ Você pode excluir uma oferta enquanto visualiza o conteúdo de uma pasta em uma
    * Para excluir a oferta e removê-la das experiências, clique ou toque em **Forçar exclusão**.
    * Para manter a oferta, clique ou toque em **Cancelar**.
 
-## Procurar ofertas {#searching-for-offers}
+### Procurar ofertas {#searching-for-offers}
 
 Procure ofertas de qualquer marca usando palavras-chave para correspondência do título.
 
