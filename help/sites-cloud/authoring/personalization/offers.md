@@ -2,10 +2,10 @@
 title: Criação e gerenciamento de ofertas (console Ofertas)
 description: Use o console Ofertas para criar ofertas que você pode usar em experiências de atividades
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
-source-git-commit: 9274496200af93708d5fd95666f969afc71125a6
+source-git-commit: ca389013fd1e703e7decd1aae968589b12a43489
 workflow-type: tm+mt
-source-wordcount: '1306'
-ht-degree: 67%
+source-wordcount: '1393'
+ht-degree: 63%
 
 ---
 
@@ -88,6 +88,23 @@ Adicione tags, se necessário.
 1. Confirme com **Concluído**.
 
    Agora, você pode navegar até a **Ofertas de fragmento de experiência** , você verá seu novo fragmento de experiência, juntamente com suas variações associadas.
+
+### Direcionamento com o modelo de ofertas {#targeting-offers-template}
+
+>[!CAUTION]
+>
+>Essa opção só está disponível para clientes com ofertas herdadas pré-existentes.
+>
+>Como com o **Ofertas** O console também não estará mais disponível:
+>
+>* depois que a última oferta herdada for convertida em Fragmentos de experiência
+>* quando as ofertas herdadas estiverem obsoletas (no futuro)
+>
+>Portanto, a opção recomendada é usar Fragmentos de experiência, não essa opção.
+
+Para clientes com ofertas herdadas pré-existentes, a variável **Usar modelo de oferta** opções estarão visíveis ao direcionar componentes que **not** Fragmentos de experiência:
+
+![Caixa de diálogo Converter em variação de fragmento de experiência](/help/sites-cloud/authoring/assets/offers-legacy-target-non-experience-fragment.png)
 
 ## O console Ofertas {#offers-console}
 
