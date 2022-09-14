@@ -3,9 +3,9 @@ title: Atualizações de versão do AEM
 description: Atualizações de versão do AEM
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: 575be022704e998e63162f19c37ece877efef627
+source-git-commit: becc07c0042cdfb5de86dc8895801c00c882f8a1
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '399'
 ht-degree: 4%
 
 ---
@@ -39,7 +39,7 @@ AEM atualizações passam por um pipeline de validação de produto intenso e to
 
 >[!NOTE]
 >
->Se o código personalizado foi enviado para o armazenamento temporário e depois rejeitado por você, a próxima atualização do AEM removerá essas alterações para refletir a tag git da última versão bem-sucedida do cliente para produção.
+>Se o código personalizado foi enviado para o armazenamento temporário e não para a produção, a próxima atualização do AEM removerá essas alterações para refletir a tag git da última versão bem-sucedida do cliente para produção. Portanto, o código personalizado que estava disponível somente no armazenamento temporário terá que ser implantado novamente.
 
 ## Loja de nós composta {#composite-node-store}
 
