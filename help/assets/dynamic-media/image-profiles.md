@@ -4,10 +4,10 @@ description: Saiba como criar Perfis de imagem do Dynamic Media que contêm conf
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: a2bbc64051214efa83d74d414e2e5f1407433127
+source-git-commit: 28dbb0afa6c63efd64d409f8df0ef837bc10f5d9
 workflow-type: tm+mt
-source-wordcount: '3277'
-ht-degree: 9%
+source-wordcount: '3333'
+ht-degree: 8%
 
 ---
 
@@ -84,6 +84,10 @@ Você tem duas opções de recorte de imagem para escolher. Você também pode o
 ### Formatos de arquivo de imagem compatíveis com o Recorte inteligente e Amostras de cores
 
 A resolução máxima de tamanho de arquivo de entrada compatível é de 16K.
+
+>[!NOTE]
+>
+>Resolução de 16K é uma resolução de exibição com aproximadamente 16.000 pixels horizontalmente. A resolução de 16K mais comumente discutida é de 15360 × 8640, o que dobra a contagem de pixels de 8K UHD em cada dimensão, para um total de quatro vezes mais pixels. Essa resolução tem 132,7 megapixels, 16 vezes mais pixels do que a resolução de 4K e 64 vezes mais pixels do que a resolução de 1080p.
 
 | Formato de imagem | Extensão de arquivo que não diferencia maiúsculas de minúsculas | Tipo MIME | Espaço de cores de entrada suportado | Tamanho máximo suportado do arquivo de entrada | Formato de imagem suportado? |
 | --- | --- | --- | --- | --- | --- |
