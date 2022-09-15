@@ -2,9 +2,9 @@
 title: Usar bibliotecas do lado do cliente no AEM as a Cloud Service
 description: O AEM fornece Pastas de biblioteca do lado do cliente, que permitem armazenar o código do lado do cliente (clientlibs) no repositório, organizá-lo em categorias e definir quando e como cada categoria de código deve ser apresentada ao cliente
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 014b53dfd35103660772d273dbf49d2388f6d000
 workflow-type: tm+mt
-source-wordcount: '2561'
+source-wordcount: '2565'
 ht-degree: 1%
 
 ---
@@ -211,7 +211,7 @@ A incorporação do código é útil para fornecer acesso a bibliotecas que são
 
 #### Pastas da biblioteca de clientes específicas do aplicativo {#app-specific-client-library-folders}
 
-É uma prática recomendada manter todos os arquivos relacionados a aplicativos em sua pasta de aplicativos abaixo `/app`. Também é uma prática recomendada negar o acesso dos visitantes do site à variável `/app` pasta. Para atender às duas práticas recomendadas, crie uma pasta de biblioteca de clientes abaixo do `/etc` pasta que incorpora a biblioteca do cliente que está abaixo `/app`.
+É uma prática recomendada manter todos os arquivos relacionados ao aplicativo em sua pasta de aplicativo abaixo de /apps. Também é uma prática recomendada negar o acesso dos visitantes do site à pasta /apps. Para atender às duas práticas recomendadas, crie uma pasta de biblioteca do cliente abaixo da pasta /etc que incorpora a biblioteca do cliente que está abaixo de /apps.
 
 Use a propriedade categories para identificar a pasta da biblioteca de clientes a ser incorporada. Para incorporar a biblioteca, adicione uma propriedade à incorporação `cq:ClientLibraryFolder` , usando os seguintes atributos de propriedade:
 
