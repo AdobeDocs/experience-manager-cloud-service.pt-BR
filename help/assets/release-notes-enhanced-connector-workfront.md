@@ -2,9 +2,9 @@
 title: Notas da versão [!DNL Workfront for Experience Manager enhanced connector]
 description: Notas da versão [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: f49ac67b7a90d638e266b9f7f5bf5ac9d7f78e3a
+source-git-commit: 590ee3f855051e212570c624e31ca3164938122c
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '568'
 ht-degree: 2%
 
 ---
@@ -15,19 +15,24 @@ A seção a seguir descreve as Notas de versão gerais de [!DNL Workfront for Ex
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento da versão mais recente 1.9.2 do [!DNL Workfront for Experience Manager enhanced connector] é 3 de agosto de 2022.
+A data de lançamento da versão mais recente 1.9.3 do [!DNL Workfront for Experience Manager enhanced connector] é 16 de setembro de 2022.
 
 ## Destaques da versão {#release-highlights}
 
 A versão mais recente do [!DNL Workfront for Experience Manager enhanced connector] O inclui os seguintes aprimoramentos e correções de erros:
 
-* O **[!UICONTROL Fazer upload do documento]** falha na etapa do fluxo de trabalho ao anexar um documento ao Workfront.
+* Não é possível carregar um arquivo com mais de 8 GB.
+* Problemas ao publicar automaticamente ativos que são enviados do Workfront para o AEM.
+* O campo Caminho raiz não está disponível para o campo Tags durante a edição de um Formulário de esquema de metadados padrão.
+* Problemas ao adicionar novas versões no Workfront usando AEM workflows
+* Ao executar uma pesquisa AEM por ativos disponíveis no Workfront, AEM exibe uma mensagem de erro.
+* Quando você cria um workflow AEM para criação de tarefa a partir de um ativo e não define um nome de tarefa pai, a tarefa não é criada no Workfront.
 
-* O **[!UICONTROL Fazer upload do documento]** A etapa do fluxo de trabalho não anexa um documento a Tarefas e Problemas no Workfront. A etapa do fluxo de trabalho anexa um documento aos Projetos com êxito.
+
 
 >[!IMPORTANT]
 >
->O Adobe recomenda [atualizar para a versão 1.9.2 mais recente](../assets/update-workfront-enhanced-connector.md) do [!DNL Workfront for Experience Manager enhanced connector].
+>O Adobe recomenda [atualizar para a versão 1.9.3 mais recente](../assets/update-workfront-enhanced-connector.md) do [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Problemas conhecidos {#known-issues}
 
@@ -35,7 +40,17 @@ A versão mais recente do [!DNL Workfront for Experience Manager enhanced connec
 
 * Quando estiver usando a experiência clássica do Workfront, a variável **[!UICONTROL Enviar para]** disponível na **[!UICONTROL Mais]** a lista suspensa não permite selecionar o destino desejado no Experience Manager. O **[!UICONTROL Enviar para]** A opção funciona corretamente usando o **[!UICONTROL Ações do documento]** lista suspensa. O **[!UICONTROL Enviar para]** A opção funciona corretamente para **[!UICONTROL Mais]** lista suspensa, bem como a **[!UICONTROL Ações do documento]** lista suspensa disponível na nova experiência do Workfront.
 
+* O Workfront exibe um `SERVER_ERROR` ao vincular documentos ao AEM após a atualização para a versão 8316. Para resolver o problema, atribua `rep:readProperties` para `content/dam/collections` para `wf-workfront-user` Grupo de usuários AEM.
+
 ## Versões anteriores {#previous-releases}
+
+### Versão de agosto de 2022 {#august-2022-release}
+
+[!DNL Workfront for Experience Manager enhanced connector] A versão 1.9.2, lançada em agosto de 2003, inclui as seguintes atualizações:
+
+* O **[!UICONTROL Fazer upload do documento]** falha na etapa do fluxo de trabalho ao anexar um documento ao Workfront.
+
+* O **[!UICONTROL Fazer upload do documento]** A etapa do fluxo de trabalho não anexa um documento a Tarefas e Problemas no Workfront. A etapa do fluxo de trabalho anexa um documento aos Projetos com êxito.
 
 ### Versão de julho de 2022 {#july-2022-release}
 
