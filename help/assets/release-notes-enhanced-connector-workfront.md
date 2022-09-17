@@ -2,7 +2,7 @@
 title: Notas da versão [!DNL Workfront for Experience Manager enhanced connector]
 description: Notas da versão [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 590ee3f855051e212570c624e31ca3164938122c
+source-git-commit: 14b779c476b88ff1ee9d2798296add14f337dbfa
 workflow-type: tm+mt
 source-wordcount: '568'
 ht-degree: 2%
@@ -24,7 +24,7 @@ A versão mais recente do [!DNL Workfront for Experience Manager enhanced connec
 * Não é possível carregar um arquivo com mais de 8 GB.
 * Problemas ao publicar automaticamente ativos que são enviados do Workfront para o AEM.
 * O campo Caminho raiz não está disponível para o campo Tags durante a edição de um Formulário de esquema de metadados padrão.
-* Problemas ao adicionar novas versões no Workfront usando AEM workflows
+* Problemas ao adicionar novas versões no Workfront usando AEM workflows.
 * Ao executar uma pesquisa AEM por ativos disponíveis no Workfront, AEM exibe uma mensagem de erro.
 * Quando você cria um workflow AEM para criação de tarefa a partir de um ativo e não define um nome de tarefa pai, a tarefa não é criada no Workfront.
 
