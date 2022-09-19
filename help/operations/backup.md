@@ -5,7 +5,7 @@ exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
 source-git-commit: e816bd55b8b5febb19566f3d6009e6f5e823b22e
 workflow-type: tm+mt
 source-wordcount: '1229'
-ht-degree: 89%
+ht-degree: 95%
 
 ---
 
@@ -33,15 +33,15 @@ O processo de restauração afeta apenas o conteúdo, deixando o código e a ver
 
 O Cloud Manager fornece dois tipos de backups, a partir dos quais você pode restaurar o conteúdo.
 
-* **Ponto no tempo (PIT):** Esse tipo é restaurado a partir de backups contínuos do sistema a partir das últimas 24 horas do tempo atual.
+* **Ponto no tempo (PIT):** esse tipo restaura a partir de backups de sistema contínuos das últimas 24 horas, contadas a partir da hora atual.
 * **Semana passada:** esse tipo restaura a partir de backups de sistema dos últimos sete dias, exceto as últimas 24 horas.
 
 Em ambos os casos, a versão do código personalizado e do AEM permanecem inalteradas.
 
 As métricas de desempenho de restauração de conteúdo no AEM as a ContentService referem-se aos benchmarks padronizados:
 
-* **RTO (Recovery Time Objetive, objetivo de tempo de recuperação):** O Objetivo de Tempo de Recuperação varia dependendo do tamanho do repositório, mas, como regra geral, após o início da sequência de recuperação, ela deve levar cerca de 30 minutos.
-* **O RPO (Recovery Point Objetive, objetivo de ponto de recuperação):** O objetivo do ponto de recuperação é no máximo 24 horas
+* **Meta de tempo de recuperação (RTO):** a Meta de tempo de recuperação varia dependendo do tamanho do repositório, mas, como regra geral, após o início da sequência de recuperação, ela deve levar cerca de 30 minutos.
+* **A Meta de ponto de recuperação (RPO):** a Meta de ponto de recuperação é de no máximo 24 horas
 
 >[!TIP]
 >

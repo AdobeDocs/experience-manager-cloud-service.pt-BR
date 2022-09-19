@@ -5,13 +5,13 @@ exl-id: 6c501897-48f9-478a-b143-d3ad19643b8c
 source-git-commit: 7c9a8765c1d193a880ad4352f20660249effa881
 workflow-type: tm+mt
 source-wordcount: '237'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
 # Atalhos de teclado para edição de página {#keyboard-shortcuts-when-editing-pages}
 
-Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns são aplicáveis ao editar páginas, outros para o [uso de consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)e alguns, em particular, [Console Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
+Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns são aplicáveis ao editar páginas, outros para o [uso de consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) e alguns, em particular, ao [Console de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
 
 >[!NOTE]
 >
@@ -35,9 +35,9 @@ Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns são aplic�
 
 >[!NOTE]
 >
->Uma vez que o usuário começa a interagir com a página no modo Visualização, o atalho`Ctrl-Shift-m` não fica mais disponível. O usuário deve clicar na barra superior do editor ou voltar para o modo Edição para que o atalho fique disponível novamente.
+>Uma vez que o usuário começa a interagir com a página no modo Visualização, o atalho `Ctrl-Shift-m` não fica mais disponível. O usuário deve clicar na barra superior do editor ou voltar para o modo Edição para que o atalho fique disponível novamente.
 
-Vários atalhos de teclado também estão disponíveis para os usuários da área de trabalho ao usar a variável [consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)e alguns, em particular, [Console Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
+Vários atalhos de teclado também estão disponíveis para usuários de desktop que utilizam [consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) e alguns, em particular, para o [Console de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
 
 >[!NOTE]
 >

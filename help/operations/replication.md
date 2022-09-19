@@ -5,7 +5,7 @@ exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 source-git-commit: 30428716603a53f3a549a18541de593bbfe879df
 workflow-type: tm+mt
 source-wordcount: '1258'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
@@ -174,7 +174,7 @@ O `ReplicationStatus` geral de um recurso só será modificado se a ação de re
 
 ### Métodos de invalidação de conteúdo {#invalidating-content}
 
-Você pode invalidar diretamente o conteúdo usando a Invalidação de conteúdo do Sling (SCD) do autor (o método preferido) ou usando a API de Replicação para chamar o agente de replicação de liberação do dispatcher de publicação. Consulte a [Armazenamento em cache](/help/implementing/dispatcher/caching.md) para obter mais detalhes.
+Você pode invalidar o conteúdo diretamente usando a Invalidação de conteúdo do Sling (SCD) a partir do autor (o método preferencial) ou usando a API de replicação para chamar o agente de replicação de limpeza do Dispatcher de publicação. Consulte a página [Armazenamento em cache](/help/implementing/dispatcher/caching.md) para obter mais detalhes.
 
 **Limites de capacidade da API de replicação**
 

@@ -5,7 +5,7 @@ exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '2253'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -284,4 +284,4 @@ Se não precisar mais de uma personalização de um índice pronto para uso, voc
 
 O Apache Jackrabbit Oak permite configurações de índice flexíveis para lidar com consultas de pesquisa com eficiência. Os índices são especialmente importantes para repositórios maiores. Certifique-se de que todas as consultas sejam apoiadas por um índice adequado. Consultas sem um índice adequado podem ler milhares de nós, o que será então registrado como um aviso.
 
-Consulte [este documento](query-and-indexing-best-practices.md) para obter informações sobre como queries e índices podem ser otimizados.
+Consulte [este documento](query-and-indexing-best-practices.md) para obter informações sobre como consultas e índices podem ser otimizados.

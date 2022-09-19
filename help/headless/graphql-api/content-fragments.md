@@ -6,7 +6,7 @@ exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 source-git-commit: f773671e3c62e2dff6f843d42a5b36211e2d1fc3
 workflow-type: tm+mt
 source-wordcount: '2708'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -348,7 +348,7 @@ Consulte [Exemplo de consulta - todas as cidades com uma variável nomeada](/hel
 
 >[!NOTE]
 >
->Se a variação especificada não existir para um Fragmento de conteúdo, a variação principal será retornada como um padrão (fallback).
+>Se a variação especificada não existir para um Fragmento de conteúdo, a variação principal será retornada como padrão (substituta).
 
 <!--
 ## Security Considerations {#security-considerations}
@@ -587,7 +587,7 @@ A operação básica de consultas com o GraphQL para AEM adere à especificaçã
 
          >[!NOTE]
          >
-         >Se a variação especificada não existir para um Fragmento de conteúdo, a variação principal será retornada como um padrão (fallback).
+         >Se a variação especificada não existir para um Fragmento de conteúdo, a variação principal será retornada como padrão (substituta).
 
          * Consulte [Exemplo de consulta - Todas as cidades com uma variação nomeada](#sample-cities-named-variation)
    * E operações:

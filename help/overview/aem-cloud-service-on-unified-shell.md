@@ -5,16 +5,16 @@ exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
 source-git-commit: c3b72395504b9e32178182d0a79db804d19fbcf3
 workflow-type: tm+mt
 source-wordcount: '369'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 # AEM as a Cloud Service no shell unificado {#aem-as-a-cloud-service-on-unified-shell}
 
 >[!NOTE]
->Esse recurso está no Canal de pré-lançamento de julho de 2022.
+>Esse recurso está no canal de pré-lançamento de julho de 2022.
 >
->Isso é uma introdução a um novo recurso que estará geralmente disponível na versão de agosto de 2022.
+>Esta é uma introdução a um novo recurso que estará disponível por completo na versão de agosto de 2022.
 >
 >Consulte a [Documentação do canal de pré-lançamento](/help/release-notes/prerelease.md#enable-prerelease) para obter informações sobre como habilitar o recurso no seu ambiente.
 

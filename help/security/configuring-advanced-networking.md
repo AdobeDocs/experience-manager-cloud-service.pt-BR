@@ -5,7 +5,7 @@ exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 source-git-commit: b8a827e73d8eba9184be352d0aa4705dfb24b642
 workflow-type: tm+mt
 source-wordcount: '3016'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ Uma vez chamada, normalmente leva aproximadamente 15 minutos para a infraestrutu
 
 Se a configuração de saída de porta flexível com escopo de programa estiver pronta, o endpoint `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` deve ser chamado por ambiente para permitir a operação em rede no nível do ambiente e declarar, opcionalmente, quaisquer regras de encaminhamento de portas. Os parâmetros são configuráveis por ambiente para oferecer flexibilidade.
 
-As regras de encaminhamento de porta devem ser declaradas para qualquer porta de destino diferente de 80/443, mas somente se não estiver usando o protocolo http ou https, especificando o conjunto de hosts de destino (nomes ou IP e com portas). Para cada host de destino, os clientes devem mapear a porta de destino pretendida para uma porta de 30000 a 30999.
+As regras de encaminhamento de porta devem ser declaradas para qualquer porta de destino além da 80/443, mas somente se não estiverem usando o protocolo http ou https por especificar o conjunto de hosts de destino (nomes ou IP, com portas). Para cada host de destino, os clientes devem mapear a porta de destino pretendida para uma porta de 30000 a 30999.
 
 A API deve responder em apenas alguns segundos, indicando um status de atualização e, após cerca de 10 minutos, o método `GET` do endpoint deve indicar que a rede avançada está ativada.
 
@@ -209,7 +209,7 @@ Para obter mais informações sobre as APIs, consulte a [Documentação da API d
 
 ### Roteamento de tráfego {#dedcated-egress-ip-traffic-routing}
 
-O tráfego HTTP ou https passará por um proxy pré-configurado, desde que usem propriedades padrão do sistema Java para configurações de proxy.
+O tráfego http ou https passará por um proxy pré-configurado, desde que use propriedades padrão do sistema Java para configurações de proxy.
 
 O tráfego não http/s com destinos por meio de portas declaradas no parâmetro `portForwards` deve fazer referência a uma propriedade chamada `AEM_PROXY_HOST`, juntamente com a porta mapeada. Por exemplo:
 

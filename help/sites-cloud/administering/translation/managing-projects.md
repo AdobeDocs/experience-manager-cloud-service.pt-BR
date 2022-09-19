@@ -7,7 +7,7 @@ exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
 source-git-commit: 998b71903f3ea0c3c1082ecc800331811c2af8cf
 workflow-type: tm+mt
 source-wordcount: '3992'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -170,27 +170,27 @@ Preencha sua cópia de idioma para que ela tenha conteúdo do idioma principal q
 
 ### Atualização da memória de tradução {#updating-translation-memory}
 
-As edições manuais de conteúdo traduzido podem ser sincronizadas de volta ao Sistema de Gerenciamento de Tradução (TMS) para treinar sua memória de tradução.
+As edições manuais de conteúdo traduzido podem ser sincronizadas com o Sistema de gerenciamento de tradução (TMS) para treinar a memória de tradução.
 
 1. No console Sites, depois de atualizar o conteúdo do texto em uma página traduzida, selecione **Atualizar memória de tradução**.
 1. Uma exibição de lista mostra uma comparação lado a lado da origem e da tradução para cada componente de texto que foi editado. Selecione quais atualizações de tradução devem ser sincronizadas com a memória de tradução e selecione **Atualizar memória**.
 
 ![Comparar alterações da memória de tradução](../assets/update-translation-memory-compare.png)
 
-AEM atualiza a tradução das cadeias de caracteres existentes na memória de tradução do TMS configurado.
+O AEM atualiza a tradução dos segmentos existentes na memória de tradução do TMS configurado.
 
-* A ação atualiza a tradução das cadeias de caracteres existentes na memória de tradução do TMS configurado.
-* Ele não cria novos trabalhos de tradução.
-* Ele envia as traduções de volta para o TMS, por meio AEM API de tradução (veja abaixo).
+* A ação atualiza a tradução dos segmentos existentes na memória de tradução do TMS configurado.
+* Isso não cria novos trabalhos de tradução.
+* As traduções são enviadas de volta para o TMS, por meio da API de tradução do AEM (veja abaixo).
 
 Para usar este recurso:
 
-* Um TMS deve ser configurado para uso com AEM.
+* Um TMS deve ser configurado para uso com o AEM.
 * O conector precisa implementar o método [`storeTranslation`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/translation/api/TranslationService.html).
-   * O código nesse método determina o que acontece com a solicitação de atualização da memória de tradução.
-   * A estrutura de tradução de AEM envia os pares de valores da sequência de caracteres (tradução original e atualizada) para o TMS por meio dessa implementação de método.
+   * O código desse método determina o que acontece com a solicitação de atualização da memória de tradução.
+   * A estrutura de tradução do AEM envia os pares de valores do segmento (tradução original e atualizada) para o TMS por meio da implementação desse método.
 
-As atualizações da memória de tradução podem ser interceptadas e enviadas para um destino personalizado, nos casos em que uma memória de tradução proprietária é usada.
+As atualizações da memória de tradução podem ser interceptadas e enviadas a um destino personalizado, nos casos em que uma memória de tradução própria for usada.
 
 ### Verificação do status de tradução de uma página {#check-translation-status}
 

@@ -5,7 +5,7 @@ exl-id: ef48f737-a5b3-4913-9f37-6b9f681bc048
 source-git-commit: 3260cd8c9c0e121048b4403217b68500be37ddda
 workflow-type: tm+mt
 source-wordcount: '758'
-ht-degree: 92%
+ht-degree: 96%
 
 ---
 
@@ -39,7 +39,7 @@ Isso é feito usando fragmentos de conteúdo em conjunto com a API GraphQL do AE
 
 ## CMS headless {#headless-cms}
 
-Um Sistema de gerenciamento de conteúdo sem cabeçalho (CMS) é um sistema de gerenciamento de conteúdo somente de back-end, projetado e criado explicitamente como um repositório de conteúdo que torna o conteúdo acessível por meio de uma API, para exibição em qualquer dispositivo.
+Um sistema de gerenciamento de conteúdo (CMS) headless é um sistema exclusivamente back-end criado desde o início como um repositório de conteúdo e que torna o conteúdo acessível por meio de uma API para exibição em qualquer dispositivo.
 
 Em termos de criação de fragmentos de conteúdo no AEM, isso significa que:
 

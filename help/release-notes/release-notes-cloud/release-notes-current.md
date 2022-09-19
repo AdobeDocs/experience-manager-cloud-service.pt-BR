@@ -6,7 +6,7 @@ mini-toc-levels: 1
 source-git-commit: bcd62d1d1a66e17585e35c11c12cd72067e0e46e
 workflow-type: tm+mt
 source-wordcount: '626'
-ht-degree: 23%
+ht-degree: 28%
 
 ---
 
@@ -26,7 +26,7 @@ A seção a seguir descreve as Notas de versão gerais da versão atual (mais re
 ## Data de lançamento {#release-date}
 
 A data de lançamento do [!DNL Adobe Experience Manager] como [!DNL Cloud Service] a versão atual (2022.8.0) é 1º de setembro de 2022.
-A próxima versão (2022.9.0) está planejada para 29 de setembro de 2022.
+A próxima versão (2022.9.0) está planejada para 29º de setembro de 2022.
 
 ## Vídeo da versão {#release-video}
 
@@ -55,7 +55,7 @@ Assista ao vídeo Visão geral da versão de agosto de 2022 para obter um resumo
 
 ### Novos recursos no [!DNL Assets] {#features-assets}
 
-* Agora você pode configurar os Ativos Adobe Experience Manager para [restringir o tipo de ativos que os usuários podem fazer upload com base no tipo MIME](/help/assets/configure-asset-upload-restrictions.md).
+* Agora é possível configurar o Adobe Experience Manager Assets para [restringir os tipos de ativos que os usuários podem fazer upload com base no tipo de MIME](/help/assets/configure-asset-upload-restrictions.md).
 
    ![Restrições de upload de ativos](/help/assets/assets/asset-upload-restrictions.png)
 

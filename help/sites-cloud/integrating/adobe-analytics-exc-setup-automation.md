@@ -7,7 +7,7 @@ exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
 source-git-commit: 8b8811decee087291b74fa0e3839991f6a7f3850
 workflow-type: tm+mt
 source-wordcount: '756'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -23,23 +23,23 @@ Este vídeo explica como um site do AEM pode ser integrado ao Experience Platfor
 
 ## Requisitos
 
-A configuração da automação foi projetada para funcionar prontamente com um site do AEM criado com o uso dos [Componentes principais do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR), com a [Camada de dados do cliente Adobe](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=pt_BR) habilitada. É possível gerar um novo site que tenha esses recursos habilitados automaticamente usando o [Arquétipo de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt_BR) ou criando um site usando um [Modelo de site](/help/journey-sites/quick-site/create-site.md).
+A configuração da automação foi projetada para funcionar prontamente com um site do AEM criado com o uso dos [Componentes principais do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR), com a [Camada de dados do cliente Adobe](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=pt-BR) habilitada. É possível gerar um novo site que tenha esses recursos habilitados automaticamente usando o [Arquétipo de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR) ou criando um site usando um [Modelo de site](/help/journey-sites/quick-site/create-site.md).
 
 ## Pré-requisitos {#prerequisites}
 
-Antes de usar esse recurso, é importante seguir estas instruções para garantir que os serviços pré-requisitos tenham sido configurados corretamente em seu ambiente:
+Antes de usar esse recurso, é importante seguir estas instruções para garantir que os serviços de pré-requisitos tenham sido configurados corretamente em seu ambiente:
 
 1. Faça logon no Adobe Admin Console (https://adminconsole.adobe.com/).
-1. Verifique se a ID organizacional IMS adequada está selecionada no canto superior direito.
-1. Clique na opção de navegação Produtos .
-1. Verifique se o &quot;Adobe Experience Manager as a Cloud Service&quot; foi provisionado para a IMS Org.
-1. Verifique se o &quot;Adobe Analytics&quot; foi provisionado para a IMS Org.
-1. Vá para o Cloud Manager (https://experience.adobe.com/cloud-manager).
-1. Selecione o Programa apropriado.
-1. Verifique se Environment está na versão mais recente do Cloud Service (caso contrário, selecione Update in the menu options) (Atualizar nas opções do menu).
-1. Execute um pipeline de Pilha completa no Cloud Manager.
+1. Verifique se a ID da organização IMS adequada está selecionada no canto superior direito.
+1. Clique na opção de navegação de Produtos.
+1. Verifique se o “Adobe Experience Manager as a Cloud Service” foi provisionado para a organização IMS.
+1. Verifique se o “Adobe Analytics” foi provisionado para a organização IMS.
+1. Acesse o Cloud Manager (https://experience.adobe.com/cloud-manager).
+1. Selecione o programa apropriado.
+1. Verifique se o ambiente está na versão mais recente do Cloud Service (caso contrário, selecione Atualizar nas opções do menu).
+1. Execute um pipeline de pilha completa no Cloud Manager.
 
-O ambiente agora deve estar pronto para a Automação de configuração do Experience Cloud.
+O ambiente agora deve estar pronto para a automação de configuração da Experience Cloud.
 
 ## Como configurar
 
@@ -50,7 +50,7 @@ O ambiente agora deve estar pronto para a Automação de configuração do Exper
 1. Toque no botão **Integrar o Analytics**.
 1. Na caixa de diálogo resultante, forneça um nome para a **ID do conjunto de relatórios**.
 
-   Esta sequência de caracteres será usada para criar um novo [ID do conjunto de relatórios](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=pt_BR) no Adobe Analytics como o armazenamento de dados para os dados analíticos do site do AEM selecionado. A sequência de caracteres fornecida será anexada com identificadores de ambiente e nível para garantir a exclusividade.
+   Esta sequência de caracteres será usada para criar um novo [ID do conjunto de relatórios](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=pt-BR) no Adobe Analytics como o armazenamento de dados para os dados analíticos do site do AEM selecionado. A sequência de caracteres fornecida será anexada com identificadores de ambiente e nível para garantir a exclusividade.
 
 1. Atualize a página e o painel e toque em **Verificar status da integração** para verificar o status da automação.
 

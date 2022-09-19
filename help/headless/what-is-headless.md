@@ -5,7 +5,7 @@ exl-id: 53f24f69-ad49-4b8e-9a91-36cd64c1f2b9
 source-git-commit: 5663b1224dddcb2db9e0ca139bb8cf6b43787fab
 workflow-type: tm+mt
 source-wordcount: '742'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Ele é muito eficiente pois fornece controle total do conteúdo e da formataçã
 
 Agora, com um sistema de gerenciamento de conteúdo headless, o back-end e o front-end são dissociados.
 
-A parte sem periféricos é o back-end de conteúdo, já que um Sistema de Gerenciamento de Conteúdo sem periféricos (CMS) é um sistema de gerenciamento de conteúdo somente de back-end, projetado e criado explicitamente como um repositório de conteúdo que torna o conteúdo acessível por meio de uma API, para exibição em qualquer dispositivo.
+A parte headless representa o back-end de conteúdo, já que um Sistema de gerenciamento de conteúdo (CMS) headless é um sistema exclusivamente back-end, projetado e criado explicitamente como um repositório de conteúdo que torna o conteúdo acessível por meio de uma API, para exibição em qualquer dispositivo.
 
 O front-end, que é desenvolvido e mantido de maneira independente, busca conteúdo do back-end headless usando uma API de entrega de conteúdo, normalmente no formato JSON. Por exemplo, como um aplicativo em React ou Angular (aplicativo de página única (SPA)).
 

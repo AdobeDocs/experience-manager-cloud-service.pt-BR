@@ -5,7 +5,7 @@ exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 source-git-commit: 9dc9bd253ea2df30ad287f5d8d5ffa99e3a6b092
 workflow-type: tm+mt
 source-wordcount: '616'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -19,10 +19,10 @@ ht-degree: 95%
 
 ## Como se preparar para uma versão {#how-to-prepare}
 
-Com o modelo de liberação contínua no [!DNL Adobe Experience Manager] as a Cloud Service, o aplicativo é atualizado automaticamente de forma contínua. Há dois tipos de atualizações, versões de recursos e versões de manutenção:
+Com o modelo de liberação contínua no [!DNL Adobe Experience Manager] as a Cloud Service, o aplicativo é atualizado automaticamente de forma contínua. Há dois tipos de atualizações: versões de recursos e versões de manutenção.
 
 * As versões de recursos são liberadas com uma frequência mensal previsível e são focadas em novos recursos e inovações de produtos.
-* As versões de manutenção são feitas com frequência e são focadas em atualizações de segurança, correções de erros e aprimoramentos de desempenho. Isso garante que o [!DNL Adobe Experience Manager] as a Cloud Service esteja sempre atualizado com qualquer correção crítica.
+* As versões de manutenção são liberadas frequentemente e seu foco são as atualizações de segurança, correções de erros e aprimoramentos de desempenho. Isso garante que o [!DNL Adobe Experience Manager] as a Cloud Service esteja sempre atualizado com qualquer correção crítica.
 
 Além da velocidade da inovação, o [!DNL Adobe Experience Manager] as a Cloud Service também oferece a flexibilidade de pré-visualizar os recursos futuros com um mês de antecedência, antes que eles sejam lançados para produção. Isso permite avaliar o impacto de uma versão futura na organização, testando a condução dos recursos em seu próprio ambiente personalizado e treinando/preparando os usuários internos com bastante antecedência.
 

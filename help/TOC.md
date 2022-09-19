@@ -11,7 +11,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: 05adf79b66c36e6354fe95fe4d5f654b49980589
 workflow-type: tm+mt
 source-wordcount: '3726'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -130,19 +130,19 @@ ht-degree: 97%
    + [Suporte a cookies Same Site para o AEM as a Cloud Service](/help/security/same-site-cookie-support.md)
    + [Suporte OAuth2 para o serviço de email](/help/security/oauth2-support-for-mail-service.md)
 + Integração {#onboarding}
-   + [Comece aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
+   + [Comece aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=pt-BR)
    + Jornada de integração {#journey}
       + [Jornada de integração Visão geral](/help/journey-onboarding/overview.md)
       + [Preparação de integração](/help/journey-onboarding/preparation.md)
-      + [AEM Terminologia as a Cloud Service](/help/journey-onboarding/terminology.md)
+      + [Terminologia do AEM as a Cloud Service](/help/journey-onboarding/terminology.md)
       + [O Admin Console](/help/journey-onboarding/admin-console.md)
       + [Atribuir perfis de produto do Cloud Manager](/help/journey-onboarding/assign-profiles-cloud-manager.md)
       + [Acessar o Cloud Manager](/help/journey-onboarding/cloud-manager.md)
       + [Criar um programa](/help/journey-onboarding/create-program.md)
       + [Criar ambientes](/help/journey-onboarding/create-environments.md)
-      + [Atribuir perfis de produto AEM](/help/journey-onboarding/assign-profiles-aem.md)
+      + [Atribuir perfis de produto do AEM](/help/journey-onboarding/assign-profiles-aem.md)
       + [Tarefas do desenvolvedor e do gerenciador de implantação](/help/journey-onboarding/developers.md)
-      + [Tarefas do usuário AEM](/help/journey-onboarding/aem-users.md)
+      + [Tarefas do usuário do AEM](/help/journey-onboarding/aem-users.md)
       + [Grupos de usuários](/help/journey-onboarding/user-groups.md)
    + Jornada do complemento de demonstrações de referência do AEM {#demo-add-on}
       + [Visão geral](/help/journey-sites/demos-add-on/overview.md)
@@ -153,7 +153,7 @@ ht-degree: 97%
       + [Gerenciar seu site de demonstração](/help/journey-sites/demos-add-on/manage.md)
    + Outros conceitos de integração {#concepts}
       + [Introdução ao Cloud Manager](/help/onboarding/cloud-manager-introduction.md)
-      + [AEM equipe as a Cloud Service e perfis de produto](/help/onboarding/aem-cs-team-product-profiles.md)
+      + [Equipe e perfis de produto do AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md)
 + Jornada de migração do AEM as a Cloud Service {#migration-journey}
    + [Introdução à movimentação do AEM as a Cloud Service](/help/journey-migration/getting-started.md)
    + [Fase de preparação](/help/journey-migration/readiness.md)
@@ -280,7 +280,7 @@ ht-degree: 97%
          + [Configuração da segmentação com o ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
          + [Registro, logon e perfil do usuário](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
       + Campanha {#campaign}
-         + [Criação de informativos com AEM](/help/sites-cloud/authoring/campaign/creating-newsletters.md)
+         + [Criação de informativos com o AEM](/help/sites-cloud/authoring/campaign/creating-newsletters.md)
    + Administração {#administering}
       + Fragmentos de conteúdo {#content-fragments}
          + [Trabalho com fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments.md)
@@ -296,7 +296,7 @@ ht-degree: 97%
          + [Markdown](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md)
          + [Árvore de estrutura](/help/sites-cloud/administering/content-fragments/content-fragments-structure-tree.md)
          + [Visualização - Representação JSON](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
-         + [Console Fragmentos de conteúdo - Atalhos de teclado](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)
+         + [Console de fragmentos de conteúdo - Atalhos de teclado](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)
       + Criação do site {#site-creation}
          + [Criação de um novo site](/help/sites-cloud/administering/site-creation/create-site.md)
          + [Ativar pipeline front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
@@ -345,7 +345,7 @@ ht-degree: 97%
       + [Integração ao Adobe Analytics](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
       + [Integração com a configuração automática do Adobe Analytics](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
       + [Configuração do IMS para uso na integração com o Adobe Analytics](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)
-      + [Integração com o gerenciador de aprendizado do Adobe](/help/sites-cloud/integrating/integrating-adobe-learning-manager.md)
+      + [Integração com o Adobe Learning Manager](/help/sites-cloud/integrating/integrating-adobe-learning-manager.md)
       + [Integração com o Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
       + [Configuração do IMS para uso na integração com o Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
       + [Exportar fragmentos de experiência para o Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
@@ -512,7 +512,7 @@ ht-degree: 97%
       + Adicionar componentes a um formulário adaptável {#add-components-to-an-adaptive-form}
          + [Usar CAPTCHA em um formulário adaptável](/help/forms/captcha-adaptive-forms.md)
          + [Usar componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)
-         + [Aplicar assinatura do Scribble](/help/forms/signing-forms-using-scribble.md)
+         + [Aplicar assinatura escrita](/help/forms/signing-forms-using-scribble.md)
       + Configurar o layout e aplicar estilo a um formulário adaptável {#configure-layout-of-an-adaptive-form}
          + [Definir o layout de um formulário adaptável](/help/forms/layout-capabilities-adaptive-forms.md)
          + [Usar o modo Layout para redimensionar componentes](/help/forms/resize-using-layout-mode.md)
@@ -521,7 +521,7 @@ ht-degree: 97%
       + Adicionar regras e usar expressões em um Formulário adaptável {#add-rules-and-use-expressions-in-an-adaptive-form}
          + [Adicionar regras a um Formulário adaptável](/help/forms/rule-editor.md)
       + Uso do [!DNL Adobe Sign] {#use-adobe-sign}
-         + [Usar o Adobe Acrobat Sign para assinar eletronicamente um Formulário adaptável](/help/forms/working-with-adobe-sign.md)
+         + [Usar o Adobe Sign para assinar eletronicamente um Formulário adaptável](/help/forms/working-with-adobe-sign.md)
       + Configurar o envio de ações e metadados {#configure-submit-actions-and-metadata-submission}
          + [Definir a Ação de envio para um Formulário adaptável](/help/forms/configuring-submit-actions.md)
          + [Configurar página de redirecionamento](/help/forms/configuring-redirect-page.md)
@@ -543,7 +543,7 @@ ht-degree: 97%
       + [Criar modelo de dados do formulário](/help/forms/create-form-data-models.md)
       + [Trabalhar com o modelo de dados de formulário](/help/forms/work-with-form-data-model.md)
       + [Utilizar modelo de dados do formulário](/help/forms/using-form-data-model.md)
-   + [Integrar ao Adobe Acrobat Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
+   + [Integrar ao Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
    + [Integrar ao DocuSign](/help/forms/integrate-docusign-adaptive-forms.md)
    + [Integração com o Sites](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/aemform/v1/aemform)
    + [Integrar ao Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)

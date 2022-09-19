@@ -4,8 +4,8 @@ description: Saiba como usar o console de Fragmentos de conteúdo para gerenciar
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
 source-git-commit: 3260cd8c9c0e121048b4403217b68500be37ddda
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1947'
+ht-degree: 93%
 
 ---
 
@@ -86,18 +86,18 @@ Para criar um fragmento de conteúdo:
 
 ## Status dos fragmentos de conteúdo {#statuses-content-fragments}
 
-Durante sua existência, um Fragmento de conteúdo pode ter vários status, como mostrado na variável [Console do fragmento do conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-console.md):
+Durante sua existência, um fragmento de conteúdo pode ter vários status, como mostrado no [Console de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-console.md):
 
 * **Novo**
-Um novo Fragmento de conteúdo foi criado, mas nunca foi editado ou aberto, no editor Fragmento de conteúdo.
+Um novo fragmento de conteúdo foi criado, mas nunca foi editado ou aberto no editor de fragmentos de conteúdo.
 * **Rascunho**
-Alguém editou ou abriu o (novo) Fragmento de conteúdo no Editor de fragmento de conteúdo - mas ele ainda não foi publicado.
+Alguém editou ou abriu o (novo) fragmento de conteúdo no editor de fragmentos de conteúdo, mas não o publicou ainda.
 * **Publicado**
-O Fragmento do conteúdo foi publicado.
+O fragmento de conteúdo foi publicado.
 * **Modificado**
-O Fragmento do conteúdo foi editado após sua publicação (mas antes da publicação da modificação).
-* **Não publicado**
-A publicação do Fragmento do conteúdo foi cancelada.
+O fragmento de conteúdo foi editado após a publicação (mas antes da publicação da modificação).
+* **Publicação desfeita**
+A publicação do fragmento de conteúdo foi desfeita.
 
 ## Abrir o editor de fragmentos {#opening-the-fragment-editor}
 

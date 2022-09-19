@@ -5,7 +5,7 @@ exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
 source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
 workflow-type: tm+mt
 source-wordcount: '329'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Um administrador só precisaria criar uma configuração uma vez ou, muito raram
       * Ele pode ser ajustado, se necessário.
 1. Verifique as seguintes opções:
    * **Modelos de fragmentos do conteúdo**
-   * **Consultas GraphQL Persistidas**
+   * **Consultas GraphQL persistidas**
 
    ![Criar configuração](../assets/create-configuration.png)
 
@@ -43,7 +43,7 @@ Um administrador só precisaria criar uma configuração uma vez ou, muito raram
 
 >[!NOTE]
 >
->Opções de configuração além de **Modelos de fragmentos do conteúdo** e **Consultas Persistentes GraphQL** pode ser necessário, dependendo de seus requisitos de implementação.
+>Outras opções de configuração além dos **Modelos de fragmento do conteúdo** e das **Consultas GraphQL persistidas** podem ser necessárias, dependendo de seus requisitos de implementação.
 
 ## Próximas etapas {#next-steps}
 

@@ -5,7 +5,7 @@ exl-id: d1ce126e-960c-4367-b741-af709dd81010
 source-git-commit: 575be022704e998e63162f19c37ece877efef627
 workflow-type: tm+mt
 source-wordcount: '1903'
-ht-degree: 92%
+ht-degree: 93%
 
 ---
 
@@ -150,7 +150,7 @@ Também é significativamente diferente, pois agora há:
 
 >[!TIP]
 >
->Para obter uma visão geral completa do processo de integração, consulte o [jornada de integração.](/help/journey-onboarding/overview.md)
+>Para obter uma visão geral completa do processo de integração, consulte a [jornada de integração.](/help/journey-onboarding/overview.md)
 
 ## Desenvolvimento {#developing}
 
