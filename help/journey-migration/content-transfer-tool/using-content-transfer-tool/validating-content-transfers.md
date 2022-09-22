@@ -2,9 +2,9 @@
 title: Validar transferências de conteúdo
 description: Use a ferramenta Transferência de conteúdo para validar transferências de conteúdo
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: b88277cda730d9499c7e2750026b6f415c2a8d0e
+source-git-commit: 015f3b0232861ac961922245650cb02db44daf77
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '890'
 ht-degree: 2%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 ## Introdução {#getting-started}
 
-Os usuários têm a capacidade de determinar de forma confiável se todo o conteúdo que foi extraído pela ferramenta Transferência de conteúdo foi assimilado com êxito na instância de destino. Esse recurso de validação funciona comparando um resumo dos nós envolvidos durante a extração com um resumo dos nós envolvidos durante a assimilação. Se houver caminhos de nó incluídos no resumo de extração que estejam ausentes no resumo de assimilação, a validação será considerada como uma falha e poderá ser necessária uma validação manual adicional.
+Os usuários têm a capacidade de determinar de forma confiável se todo o conteúdo que foi extraído pela ferramenta Transferência de conteúdo foi assimilado com êxito na instância de destino. Esse recurso de validação funciona comparando um resumo dos caminhos de todos os nós envolvidos durante a extração, com um resumo dos caminhos de todos os nós envolvidos durante a assimilação. Se houver caminhos de nó incluídos no resumo de extração que estejam ausentes no resumo de assimilação, a validação será considerada como uma falha e poderá ser necessária uma validação manual adicional.
 
 >[!INFO]
 >
