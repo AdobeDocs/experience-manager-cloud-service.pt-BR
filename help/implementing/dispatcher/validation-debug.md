@@ -3,10 +3,10 @@ title: Validação e depuração usando ferramentas do Dispatcher
 description: Validação e depuração usando ferramentas do Dispatcher
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 6b0fffb599d46a36270e98e0d818f33d5f97e955
+source-git-commit: c1889a6d905be6fd84e75416839a85e67a5f048a
 workflow-type: tm+mt
-source-wordcount: '2655'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -313,13 +313,26 @@ Esta instrução destina-se a permitir pedidos para `css` arquivos, mas também 
 
 **o arquivo incluído (...) não corresponde a nenhum arquivo conhecido**
 
-Há dois tipos de arquivos na configuração de host virtual do Apache que podem ser especificados como inclui: regravações e variáveis.
-Os arquivos incluídos precisam ser nomeados da seguinte maneira:
+Por padrão, dois tipos de arquivos na sua configuração de host virtual do Apache podem ser especificados como inclui: regravações e variáveis.
 
 | Tipo | Incluir nome de arquivo |
 |-----------|---------------------------------|
 | Regravações | `conf.d/rewrites/rewrite.rules` |
 | Variáveis | `conf.d/variables/custom.vars` |
+
+No modo flexível, outros arquivos também podem ser incluídos, desde que estejam localizados em subdiretórios (em qualquer nível) de `conf.d` diretório com o prefixo a seguir.
+
+| Incluir prefixo do diretório superior do arquivo |
+|-------------------------------------|
+| `conf.d/includes` |
+| `conf.d/modsec` |
+| `conf.d/rewrites` |
+
+Por exemplo, você pode incluir um arquivo em algum diretório recém-criado em `conf.d/includes` diretório como segue:
+
+```
+Include conf.d/includes/mynewdirectory/myincludefile.conf
+```
 
 Como alternativa, você pode incluir a variável **default** versão das regras de regravação, cujo nome é `conf.d/rewrites/default_rewrite.rules`.
 Observe que não há uma versão padrão dos arquivos de variáveis.

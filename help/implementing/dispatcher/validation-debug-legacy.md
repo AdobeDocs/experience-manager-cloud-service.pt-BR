@@ -4,10 +4,10 @@ description: Validação e depuração usando ferramentas do Dispatcher (herdada
 feature: Dispatcher
 hidefromtoc: true
 exl-id: dc04d035-f002-42ef-9c2e-77602910c2ec
-source-git-commit: 97279969981d6abacbf4d15eb2002cce577d8fc9
+source-git-commit: 377a577616d7e804c7dfe9e9c68fed15350bdb4f
 workflow-type: tm+mt
-source-wordcount: '2304'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -309,6 +309,10 @@ Os arquivos incluídos precisam ser nomeados da seguinte maneira:
 |-----------|---------------------------------|
 | Regravações | `conf.d/rewrites/rewrite.rules` |
 | Variáveis | `conf.d/variables/custom.vars` |
+
+>[!TIP]
+>
+>Para incluir mais arquivos de maneira muito menos limitada, você pode querer alternar para o modo de configuração flexível do dispatcher. Consulte o documento [Validação e depuração usando ferramentas do Dispatcher](/help/implementing/dispatcher/validation-debug.md) para obter mais detalhes sobre o modo flexível.
 
 Como alternativa, você pode incluir a variável **default** versão das regras de regravação, cujo nome é `conf.d/rewrites/default_rewrite.rules`.
 Observe que não há uma versão padrão dos arquivos de variáveis.
