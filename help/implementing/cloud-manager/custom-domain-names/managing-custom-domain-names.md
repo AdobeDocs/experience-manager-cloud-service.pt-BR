@@ -2,7 +2,7 @@
 title: Gerenciar nomes de domínio personalizados
 description: Saiba como usar o Cloud Manager para exibir, atualizar, substituir e excluir nomes de domínio personalizados.
 exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
-source-git-commit: 878381f9c5780864f218a00a272b1600d578dcca
+source-git-commit: 955f4bb55434eeb1a429a1972714b71c5370de1e
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 5%
@@ -35,7 +35,7 @@ Você pode seguir [as mesmas etapas para exibir e atualizar um nome de domínio 
 >
 >O certificado SSL deve ser válido, [já configurado,](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) e conter o nome de domínio personalizado que você está atualizando.
 
-##  Excluir um nome de domínio personalizado {#deleting}
+## Excluir um nome de domínio personalizado {#deleting}
 
 Um usuário com a **Proprietário da empresa** ou **Gerenciador de implantação** pode usar o Cloud Manager para excluir um nome de domínio personalizado.
 
