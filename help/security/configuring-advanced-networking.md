@@ -2,10 +2,10 @@
 title: Configuração de redes avançadas para o AEM as a Cloud Service
 description: Saiba como configurar recursos avançados de rede, como VPN ou um endereço IP de saída flexível ou dedicado para o AEM as a Cloud Service
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: b8a827e73d8eba9184be352d0aa4705dfb24b642
+source-git-commit: 9c9cc0139d6351f99c60828ee0a9d4630224f87c
 workflow-type: tm+mt
-source-wordcount: '3016'
-ht-degree: 100%
+source-wordcount: '3036'
+ht-degree: 99%
 
 ---
 
@@ -48,7 +48,7 @@ Saída de porta flexível é a opção recomendada se você não precisar de VPN
 
 ### Configuração {#configuring-flexible-port-egress-provision}
 
-Uma vez por programa, o endpoint `/program/<programId>/networkInfrastructures` POST é chamado, passando o valor de `flexiblePortEgress` para o parâmetro e região `kind`. O endpoint responde com a `network_id`, bem como com outras informações, incluindo o status. O conjunto completo de parâmetros e a sintaxe exata devem ser referenciados nos documentos da API.
+Uma vez por programa, o endpoint `/program/<programId>/networkInfrastructures` POST é chamado, passando o valor de `flexiblePortEgress` para o parâmetro e região `kind`. O endpoint responde com a `network_id`, bem como com outras informações, incluindo o status. O conjunto completo de parâmetros e a sintaxe exata, bem como informações importantes como quais parâmetros não poderão ser alterados posteriormente, [podem ser referenciadas nos documentos da API.](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)
 
 Uma vez chamada, normalmente leva aproximadamente 15 minutos para a infraestrutura de rede ser provisionada. Uma chamada para o [endpoint da infraestrutura de rede GET](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) do Cloud Manager mostraria o status de &quot;pronto&quot;.
 
