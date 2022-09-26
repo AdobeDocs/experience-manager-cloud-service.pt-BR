@@ -2,9 +2,9 @@
 title: Renderização de SPA e do servidor
 description: O uso da renderização do lado do servidor (SSR) em seu SPA pode acelerar a carga inicial da página e, em seguida, transmitir mais renderização para o cliente.
 exl-id: be409559-c7ce-4bc2-87cf-77132d7c2da1
-source-git-commit: 4965bd30c02536efb81a26fff8da6e5f75dbfae4
+source-git-commit: cc50520d7ee2bb3e7d1491154d531aa84ac9e956
 workflow-type: tm+mt
-source-wordcount: '1502'
+source-wordcount: '1512'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ O SSR geralmente fornece algum valor quando há um claro &quot;sim&quot; para qu
 * **SEO:** O SSR ainda é necessário para que seu site seja indexado corretamente pelos mecanismos de pesquisa que trazem tráfego? Lembre-se de que os principais rastreadores de mecanismo de pesquisa agora avaliam o JS.
 * **Velocidade da página:** O SSR fornece uma melhoria mensurável da velocidade em ambientes reais e adiciona à experiência geral do usuário?
 
-Somente quando pelo menos uma dessas duas perguntas for respondida com um &quot;sim&quot; claro para o seu projeto o Adobe recomenda a implementação do SSR. As seções a seguir descrevem como fazer isso usando o Adobe I/O Runtime.
+Somente quando pelo menos uma dessas duas perguntas for respondida com um &quot;sim&quot; claro para o seu projeto o Adobe recomenda a implementação do SSR. As seções a seguir descrevem como fazer isso usando o Adobe I/O Runtime, parte de [App Builder](https://developer.adobe.com/app-builder).
 
 ## Adobe I/O Runtime {#adobe-i-o-runtime}
 
@@ -34,8 +34,9 @@ Se você [estão confiantes de que seu projeto requer a implementação do SSR](
 
 Para obter mais informações sobre o Adobe I/O Runtime, consulte
 
-* [https://www.adobe.io/apis/experienceplatform/runtime.html](https://www.adobe.io/apis/experienceplatform/runtime.html) - para obter uma visão geral do serviço
-* [https://www.adobe.io/apis/experienceplatform/runtime/docs.html](https://www.adobe.io/apis/experienceplatform/runtime/docs.html) - para obter documentação detalhada sobre a plataforma
+* [https://developer.adobe.com/runtime](https://developer.adobe.com/runtime) - para obter uma visão geral do recurso Tempo de execução do App Builder
+* [https://developer.adobe.com/app-builder](https://developer.adobe.com/app-builder) - para obter detalhes sobre o produto App Builder completo
+* [https://developer.adobe.com/runtime/docs/](https://developer.adobe.com/runtime/docs) - para documentação detalhada
 
 As seções a seguir detalham como o Adobe I/O Runtime pode ser usado para implementar o SSR para seu SPA em dois modelos diferentes:
 
@@ -44,7 +45,7 @@ As seções a seguir detalham como o Adobe I/O Runtime pode ser usado para imple
 
 >[!NOTE]
 >
->O Adobe recomenda um espaço de trabalho Adobe I/O Runtime separado por ambiente (estágio, produção, teste etc.). Isso permite padrões típicos de ciclo de vida de desenvolvimento de sistemas (SDLC) com diferentes versões de um único aplicativo implantado em diferentes ambientes. Consulte o documento [CI/CD para projetos de aplicativos Firefly](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/guides/ci_cd_for_firefly_apps.md) para obter mais informações.
+>O Adobe recomenda um espaço de trabalho Adobe I/O Runtime separado por ambiente (estágio, produção, teste etc.). Isso permite padrões típicos de ciclo de vida de desenvolvimento de sistemas (SDLC) com diferentes versões de um único aplicativo implantado em diferentes ambientes.  Consulte o documento [CI/CD para aplicativos do App Builder](https://developer.adobe.com/app-builder/docs/guides/deployment/ci_cd_for_firefly_apps/) para obter mais informações.
 >
 >Um espaço de trabalho separado não é necessário por instância (autor, publicação), a menos que haja diferenças na implementação de tempo de execução por tipo de instância.
 
