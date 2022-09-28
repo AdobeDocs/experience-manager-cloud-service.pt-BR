@@ -2,10 +2,10 @@
 title: Configuração de redes avançadas para o AEM as a Cloud Service
 description: Saiba como configurar recursos avançados de rede, como VPN ou um endereço IP de saída flexível ou dedicado para o AEM as a Cloud Service
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 9c9cc0139d6351f99c60828ee0a9d4630224f87c
+source-git-commit: dde06fb7b678de8bf07aae54ee411aab7208ab2c
 workflow-type: tm+mt
-source-wordcount: '3036'
-ht-degree: 99%
+source-wordcount: '3053'
+ht-degree: 98%
 
 ---
 
@@ -336,7 +336,7 @@ Para validar se o tráfego está saindo no endereço IP dedicado esperado, verif
 ## Clientes de endereço de saída dedicado herdado {#legacy-dedicated-egress-address-customers}
 
 Se você tiver sido provisionado com um IP de saída dedicado antes de 30/09/2021, seu recurso de IP de saída dedicado só será compatível com portas HTTP e HTTPS.
-Isso inclui HTTP/1.1 e HTTP/2 quando há criptografia.
+Isso inclui HTTP/1.1 e HTTP/2 quando há criptografia. Além disso, um endpoint de saída dedicado pode conversar com qualquer target somente por HTTP/HTTPS nas portas 80/443, respectivamente.
 
 ## VPN (Virtual Private Network) {#vpn}
 
