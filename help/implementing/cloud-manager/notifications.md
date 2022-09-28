@@ -2,7 +2,7 @@
 title: Notificações
 description: Saiba como receber informações sobre implantações de pipeline usando o sistema de notificação Adobe Experience Cloud.
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
-source-git-commit: 0de041211c8257d920bcf354593b3caa2db43572
+source-git-commit: 451b5a089645004c58c2674fd1fb13afbe1201cf
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 1%
@@ -78,7 +78,7 @@ Você pode definir o comportamento dos alertas.
 * **Os alertas devem ficar na tela até que eu os descarte** - Controla se os alertas devem persistir, a menos que você os ignore ativamente
 * **Duração** - Define quanto tempo o alerta deve permanecer na tela, caso não tenha escolhido que eles devem permanecer na tela.
 
-## Emails {#emails}
+### Emails {#emails}
 
 As notificações estão disponíveis na interface do usuário da Web em todo o Adobe [!UICONTROL Experience Cloud] soluções. Também é possível optar por enviar essas notificações por email no **Emails** seção.
 
