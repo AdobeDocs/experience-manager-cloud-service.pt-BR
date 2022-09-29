@@ -1,11 +1,13 @@
 ---
 title: Metadados - propriedades dos fragmentos
-description: Veja como visualizar e editar as propriedades de metadados dos fragmentos de conteúdo do AEM.
+description: Saiba como visualizar e editar as propriedades de metadados em AEM Fragmentos de conteúdo, para entrega de conteúdo sem cabeçalho e criação de página.
+feature: Content Fragments
+role: User
 exl-id: c1b90118-4501-4f93-bd2d-6552e0d17aee
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
-source-wordcount: '195'
-ht-degree: 100%
+source-wordcount: '203'
+ht-degree: 89%
 
 ---
 

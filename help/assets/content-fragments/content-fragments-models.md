@@ -1,13 +1,11 @@
 ---
 title: Modelos de fragmentos do conteúdo (Ativos - Fragmentos de conteúdo)
 description: Saiba como os Modelos de fragmentos de conteúdo servem como base para seu conteúdo headless no AEM e como criar Fragmentos de conteúdo com conteúdo estruturado.
-feature: Content Fragments
-role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 21ee6ec3ffef602bfbac7d89bb6c3454869deda9
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
 source-wordcount: '2893'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -75,7 +73,7 @@ O modelo de fragmento de conteúdo define efetivamente a estrutura dos fragmento
 
          >[!CAUTION]
          >
-         >Ao atualizar manualmente a propriedade **Nome da propriedade** para um tipo de dados, observe que os nomes devem conter somente A-Z, a-z, 0-9 e sublinhado &quot;_&quot; como caractere especial.
+         >Ao atualizar manualmente a propriedade **Nome da propriedade** de um tipo de dados, observe que os nomes devem conter somente caracteres latinos (A-Z, a-z), dígitos numéricos (0-9) e o underline (“_”) como caractere especial.
          >
          >Se os modelos criados em versões anteriores do AEM contiverem caracteres ilegais, remova ou atualize esses caracteres.
       Por exemplo:
@@ -141,7 +139,7 @@ Muitas propriedades são autoexplicativas. Para certas propriedades, os detalhes
 
 * **Nome da Propriedade**
 
-   Ao atualizar manualmente essa propriedade para um tipo de dados, observe que os nomes **must** contain *only* A-Z, a-z, 0-9 e sublinhe &quot;_&quot; como caractere especial.
+   Ao atualizar manualmente essa propriedade para um tipo de dados, observe que os nomes **devem** conter *somente* caracteres latinos (A-Z, a-z), dígitos numéricos (0-9) e o underline (“_”) como caractere especial.
 
    >[!CAUTION]
    >

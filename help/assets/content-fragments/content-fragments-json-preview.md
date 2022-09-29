@@ -1,13 +1,11 @@
 ---
 title: Visualização - Representação JSON (Ativos - Fragmentos de conteúdo)
-description: Saiba como visualizar facilmente a representação em JSON dos fragmentos de conteúdo ao implementar sua solução AEM Headless.
-feature: Content Fragments
-role: User
+description: Saiba como visualizar com facilidade uma representação JSON dos Fragmentos de conteúdo ao implementar sua solução sem periféricos de AEM.
 exl-id: e5f3f3ee-c191-4b7b-8a29-67524bb68a8e
-source-git-commit: 21ee6ec3ffef602bfbac7d89bb6c3454869deda9
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
-source-wordcount: '116'
-ht-degree: 94%
+source-wordcount: '117'
+ht-degree: 79%
 
 ---
 

@@ -1,12 +1,14 @@
 ---
 title: Console de fragmentos de conteúdo
 description: Saiba como gerenciar fragmentos de conteúdo no Console de fragmentos de conteúdo.
-landing-page-description: Saiba como gerenciar fragmentos de conteúdo no Console de fragmentos de conteúdo, que está focado no alto volume de uso de fragmentos de conteúdo para casos de uso headless, mas que também é usado para a criação de páginas.
+landing-page-description: Saiba como gerenciar Fragmentos de conteúdo no console Fragmentos de conteúdo , que está focado no alto volume de uso de Fragmentos de conteúdo para casos de uso sem interface, mas também é usado durante a criação de página.
+feature: Content Fragments
+role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: 3e47ebad94e51379d909384f7e3ec407fba47b4d
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
-source-wordcount: '882'
-ht-degree: 68%
+source-wordcount: '883'
+ht-degree: 64%
 
 ---
 

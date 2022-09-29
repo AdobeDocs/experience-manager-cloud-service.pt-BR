@@ -1,13 +1,11 @@
 ---
 title: Fragmentos de conteúdo - Navegador de configuração (Ativos - Fragmentos de conteúdo)
-description: Saiba como ativar determinadas funcionalidades de Fragmento de conteúdo no Navegador de configuração para aproveitar AEM poderosos recursos de entrega sem cabeçalho.
-feature: Content Fragments
-role: User
+description: Saiba como ativar a funcionalidade de Fragmento de conteúdo no Navegador de configuração.
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: 21ee6ec3ffef602bfbac7d89bb6c3454869deda9
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 78%
+source-wordcount: '364'
+ht-degree: 82%
 
 ---
 
@@ -20,7 +18,7 @@ Saiba como ativar determinadas funcionalidades de Fragmento de conteúdo no Nave
 Antes de usar fragmentos de conteúdo, você precisa usar o **navegador de configuração** para ativar:
 
 * **Modelos de fragmentos de conteúdo** (obrigatório)
-* **Consultas Persistentes GraphQL** - opcional
+* **Consultas GraphQL persistidas** - opcional
 
 >[!CAUTION]
 >
@@ -65,10 +63,10 @@ Para [usar determinadas funcionalidades do fragmento de conteúdo](#creating-a-c
    1. Especifica um **Título**.
    1. O **Nome** se tornará o nome do nó no repositório.
       * Ele será gerado automaticamente com base no título e ajustado de acordo com as [convenções de nomenclatura do AEM.](/help/implementing/developing/introduction/naming-conventions.md)
-      * Pode ajustá-lo se necessário.
+      * Você pode ajustá-lo se necessário.
    1. Para permitir seu uso, selecione
       * **Modelos de fragmentos do conteúdo**
-      * **Consultas GraphQL Persistidas**
+      * **Consultas GraphQL persistidas**
 
       ![Definir configuração](assets/cfm-conf-01.png)
 
