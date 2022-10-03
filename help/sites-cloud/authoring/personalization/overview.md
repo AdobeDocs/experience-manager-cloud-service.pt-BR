@@ -2,7 +2,7 @@
 title: Personalização e direcionamento de conteúdo
 description: Saiba como criar conteúdo personalizado e direcionado com o AEM
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
-source-git-commit: 635a9e577f03c865cdb31f539598fb8fe034d7b7
+source-git-commit: d2975ec84745f9520ead89588ab727af8e43b740
 workflow-type: tm+mt
 source-wordcount: '1041'
 ht-degree: 12%
@@ -38,9 +38,6 @@ Ao criar páginas, você define várias experiências, com cada experiência res
 
 ### Oferta {#offer}
 
-<!-- not clear - needs clarification -->
-<!-- is an offer a personalized experience, or an activity? -->
-
 Uma oferta é uma experiência personalizada, geralmente disponível por um período de tempo limitado.
 
 Por exemplo, uma página de um site de exemplo pode usar ofertas como a imagem de teaser que aparece na parte superior da página. Uma Pessoa acima de 30 anos e uma Pessoa abaixo de 30 anos verão diferentes ofertas como o teaser de experiência.
@@ -62,8 +59,6 @@ Uma atividade :
 * define o mapeamento de um público-alvo (segmento) específico com uma experiência específica
 * define o período para o qual o direcionamento é aplicado
 * identifica a [mecanismo de direcionamento](#targeting-engine) que suas páginas usam
-
-<!-- an example for each of the two types would be good -->
 
 A atividade pode ser uma atividade de personalização ou uma atividade de Teste A/B (no caso do fluxo de trabalho de personalização AEM e Adobe Target).
 
