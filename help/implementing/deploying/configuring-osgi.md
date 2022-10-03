@@ -3,9 +3,9 @@ title: Configuração do OSGi para Adobe Experience Manager as a Cloud Service
 description: Configuração do OSGi com valores secretos e valores específicos do ambiente
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 339030fc5edd22f81f977046185b53649869cc83
+source-git-commit: aeff6c3e81eb71521dbd75fc73d3e177aac60abd
 workflow-type: tm+mt
-source-wordcount: '3285'
+source-wordcount: '3297'
 ht-degree: 1%
 
 ---
@@ -295,6 +295,10 @@ Recomenda-se que um script bash simples seja gravado, que defina as variáveis d
 Os valores para segredos são lidos de arquivos. Portanto, para cada espaço reservado usando um segredo, um arquivo de texto contendo o valor secreto deve ser criado.
 
 Por exemplo, se `$[secret:server_password]` é usado, um arquivo de texto chamado **server_password** deve ser criado. Todos esses arquivos secretos devem ser armazenados no mesmo diretório e na propriedade framework `org.apache.felix.configadmin.plugin.interpolation.secretsdir` deve ser configurado com esse diretório local.
+
+>[!CAUTION]
+>
+>O arquivo de texto deve ser nomeado **server_password** - sem uma extensão de arquivo.
 
 O `org.apache.felix.configadmin.plugin.interpolation.secretsdir` é uma propriedade de estrutura do Sling; dessa forma, essa propriedade não é definida no console felix (/system/console), mas é definida no arquivo sling.properties que é usado quando o sistema é inicializado. Esse arquivo pode ser encontrado no subdir /conf da pasta Jar/install extraída (crx-quickstart/conf).
 
