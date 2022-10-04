@@ -2,9 +2,9 @@
 title: Implantação de código
 description: Saiba como implantar seu código usando os pipelines do Cloud Manager AEM as a Cloud Service.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: cb08fcbd6c1060466ca9e6b4639774d43b70c83c
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1220'
 ht-degree: 2%
 
 ---
@@ -121,6 +121,10 @@ As etapas a seguir atingirão o tempo limite se forem deixadas aguardando o feed
 ## Processo de implantação {#deployment-process}
 
 Todas as implantações de Cloud Service seguem um processo contínuo para garantir tempo de inatividade zero. Consulte o documento [Como funcionam as implantações em andamento](/help/implementing/deploying/overview.md#how-rolling-deployments-work) para saber mais.
+
+>[!NOTE]
+>
+>O cache do Dispatcher é limpo em cada implantação. Em seguida, ele é aquecido antes que os novos nós de publicação aceitem o tráfego.
 
 ## Reexecutar uma implantação de produção {#Reexecute-Deployment}
 
