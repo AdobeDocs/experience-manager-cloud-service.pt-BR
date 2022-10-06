@@ -2,7 +2,7 @@
 title: Extrair conteúdo da origem
 description: Extrair conteúdo da origem
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: a2e14d73fd6b8138799799c6408a0846224cd8c9
+source-git-commit: 509715eb6324a370e28d681111ee0fd3fa2a7b44
 workflow-type: tm+mt
 source-wordcount: '765'
 ht-degree: 21%
@@ -35,7 +35,7 @@ Siga as etapas abaixo para extrair seu conjunto de migração da ferramenta Tran
    >[!IMPORTANT]
    >
    >Certifique-se de que a chave de Extração seja válida e não esteja próxima da expiração. Se estiver próximo da data de expiração, é possível renovar a chave de Extração selecionando o conjunto de migração e clicando em Propriedades. Clique em **Renovar**. Isso o levará ao Cloud Acceleration Manager, onde você pode clicar em **Copiar chave de extração**. Toda vez que você clicar em **Copiar chave de extração**, uma nova chave de Extração é gerada e é válida por 14 dias a partir do momento da criação.
-   >[!imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam13.png)
+   >![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam13.png)
 
 1. Isso exibirá a caixa de diálogo Extração. Clique em **Extract** para iniciar a fase de extração.
 
