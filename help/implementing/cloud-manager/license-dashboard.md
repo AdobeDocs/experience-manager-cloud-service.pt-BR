@@ -2,10 +2,10 @@
 title: Painel de licenças
 description: O Cloud Manager fornece um painel para facilitar a visualização dos direitos de produto do AEMaaCS disponíveis para sua organização ou locatário.
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
-source-git-commit: 28036cd047404babddbb1365c80327adc5b6fa71
+source-git-commit: b5078c849c9fa088546f5df1fcbef1dec59f3cdb
 workflow-type: tm+mt
-source-wordcount: '787'
-ht-degree: 4%
+source-wordcount: '876'
+ht-degree: 3%
 
 ---
 
@@ -83,6 +83,10 @@ As Solicitações de conteúdo terão variações com as ferramentas de relatór
 | Bloqueadores de tráfego | O uso de um bloqueador de rastreadores em um navegador pode impedir que algumas solicitações sejam rastreadas. |
 | Firewalls | Os firewalls podem bloquear o rastreamento do Analytics. Isso é mais frequente com firewalls corporativos. |
 
+### E se eu quiser saber mais sobre o volume de solicitação de conteúdo? {#current-request-volumes}
+
+Se você quiser obter insights adicionais sobre o volume de solicitação de conteúdo mostrado no Painel de licenças, a equipe do Adobe pode fornecer um relatório que mostra os principais drivers de volume das solicitações de conteúdo. Entre em contato com a equipe do Adobe ou com o Atendimento ao cliente do Adobe para solicitar um relatório de uso principal.
+
 ### E se eu estiver usando meu próprio CDN? {#using-own-cdn}
 
-O Painel de solicitações de conteúdo no Cloud Manager não mostrará o rastreamento para seu próprio CDN.
+O Painel de Licenças mostrará apenas os dados rastreados pelo Cloud Service CDN.  Se optar por trazer seu próprio CDN (BYOCDN), você reportará o volume de solicitação de conteúdo de volta ao Adobe anualmente, conforme declarado em seu contrato.
