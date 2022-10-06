@@ -2,10 +2,10 @@
 title: Personalização e direcionamento de conteúdo
 description: Saiba como criar conteúdo personalizado e direcionado com o AEM
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
-source-git-commit: d2975ec84745f9520ead89588ab727af8e43b740
+source-git-commit: f2466cb5cda759f0c97cd69810d208d47fb73b98
 workflow-type: tm+mt
-source-wordcount: '1041'
-ht-degree: 12%
+source-wordcount: '1056'
+ht-degree: 10%
 
 ---
 
@@ -111,29 +111,32 @@ Atualmente, AEM pode usar:
 
 ### AEM ContextHub {#aem-contexthub}
 
-AEM fornece o mecanismo de direcionamento integrado ContextHub que processa solicitações de página e determina o conteúdo a ser exibido. Ao usar o mecanismo de direcionamento do AEM, você está limitado a usar segmentos criados no AEM para definir os públicos das suas experiências.
+AEM fornece o mecanismo de direcionamento integrado [ContextHub](/help/implementing/developing/personalization/contexthub.md) que processa solicitações de página e determina o conteúdo a ser exibido. Ao usar o mecanismo de direcionamento do AEM, você está limitado a usar segmentos criados no AEM para definir os públicos das suas experiências.
 
 ### Adobe Target {#adobe-target}
 
-O mecanismo de direcionamento do Adobe Target faz com que as informações coletadas das visitas às páginas sejam rastreadas no Adobe Target.
+O [Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md) o mecanismo de direcionamento faz com que as informações coletadas das visitas da página sejam rastreadas no Adobe Target.
 
 * Ao usar esse mecanismo de direcionamento, você usa segmentos importados do Adobe Target para definir os públicos das suas experiências.
 * As atividades que usam o mecanismo do Adobe Target são [sincronizadas com o Target](/help/sites-cloud/authoring/personalization/activities.md#synchronizing-activities-with-adobe-target).
 
-Você pode usar esse mecanismo quando tiver [integrado ao Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md).
+Você pode usar esse mecanismo quando tiver [integrado ao Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
 
 ## Como configurar seu conteúdo personalizado {#how-to-setup-personalized-content}
 
 Há várias etapas e definições necessárias para fornecer seu conteúdo personalizado:
 
-1. Integre o AEM ao seu mecanismo de direcionamento.
+1. Configure seu mecanismo de direcionamento por:
+
+   1. Configuração [ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md)
+   1. Integração com [Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
 
 1. Configure os públicos.
 
-   1. Dependendo do mecanismo de direcionamento, defina o público-alvo ou o segmento, juntamente com as regras.
+   1. Dependendo do mecanismo de direcionamento, defina a variável [Público-alvo](https://experienceleague.adobe.com/docs/target/using/audiences/target.html) ou [Segmento do ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md), juntamente com as regras.
 
-1. Crie sua marca e atividades.
+1. Crie seu [Marca e atividades](/help/sites-cloud/authoring/personalization/activities.md).
 
 1. Crie a seleção de experiências que deseja exibir para os vários públicos-alvo.
 
-1. Personalize essas experiências, direcionando-as para públicos-alvo específicos (segmentos).
+1. Personalize essas experiências, por [direcionamento](/help/sites-cloud/authoring/personalization/targeted-content.md) para públicos-alvo específicos (segmentos).
