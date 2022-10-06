@@ -3,9 +3,9 @@ title: CDN no AEM as a Cloud Service
 description: CDN no AEM as a Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 2e0846ba3addf2ecc7d075d4da85620d7d9e9e2f
+source-git-commit: 95dfcdbc434e4c65bbcae84d6cb45ecd1601f14a
 workflow-type: tm+mt
-source-wordcount: '1093'
+source-wordcount: '1139'
 ht-degree: 8%
 
 ---
@@ -25,7 +25,7 @@ Além disso, veja os vídeos a seguir [Cloud 5 AEM CDN Parte 1](https://experien
 
 ## CDN gerenciada AEM  {#aem-managed-cdn}
 
-Siga as seções abaixo para usar a interface do usuário de autoatendimento do Cloud Manager para preparar a entrega de conteúdo usando a CDN predefinida do AEM:
+Siga as seções abaixo para usar a interface do usuário de autoatendimento do Cloud Manager para preparar a entrega de conteúdo usando AEM CDN pronto para uso:
 
 1. [Gerenciar certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
 1. [Gerenciar nomes de domínio personalizados](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
@@ -38,7 +38,7 @@ Consulte [Gerenciamento de Listas de permissões IP](/help/implementing/cloud-ma
 
 >[!CAUTION]
 >
->Somente as solicitações dos IPs permitidos serão atendidas pelo CDN gerenciado do AEM. Se você apontar seu próprio CDN para o CDN gerenciado AEM, verifique se os IPs do seu CDN estão incluídos na lista de permissões de .
+>Somente as solicitações dos IPs permitidos serão atendidas por AEM CDN gerenciada. Se você apontar seu próprio CDN para o CDN gerenciado AEM, verifique se os IPs do seu CDN estão incluídos na lista de permissões de .
 
 ## A CDN do cliente aponta para AEM CDN gerenciada {#point-to-point-CDN}
 
@@ -120,6 +120,19 @@ Apresentamos abaixo vários exemplos de configuração de vários fornecedores l
 
 ![Cloudflare1](assets/cloudflare1.png "Cloudflare")
 ![Cloudflare2](assets/cloudflare2.png "Cloudflare")
+
+## Disposição do conteúdo {#content-disposition}
+
+Para o nível de publicação, o padrão para o serviço de blobs é como um anexo. Isso pode ser substituído usando o padrão [cabeçalho de disposição de conteúdo](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Disposition) no dispatcher.
+
+Veja abaixo um exemplo de como a configuração deve ser:
+
+```
+<LocationMatch "^\/content\/dam.*\.(pdf).*">
+ Header unset Content-Disposition
+ Header set Content-Disposition inline
+</LocationMatch>
+```
 
 ## Cabeçalhos de geolocalização {#geo-headers}
 
