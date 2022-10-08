@@ -2,9 +2,9 @@
 title: Referência de predicado do construtor de consultas
 description: Referência de predicado para a API do Construtor de consultas.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2218'
+source-wordcount: '2221'
 ht-degree: 2%
 
 ---
@@ -275,7 +275,7 @@ Ele suporta extração de facetas e fornece buckets para cada valor de proprieda
 
 Esse predicado corresponde a uma propriedade JCR em relação a um intervalo. Isso se aplica a propriedades com tipos lineares como `LONG`, `DOUBLE` e `DECIMAL`. Para `DATE` consulte o [`daterange`](#daterange) predicado que otimizou a entrada de formato de data.
 
-Você pode definir um limite inferior, um limite superior ou ambos. A operação (por exemplo, menor ou menor ou igual a) também pode ser especificada individualmente para limite inferior e superior.
+Você pode definir um limite inferior, um limite superior ou ambos. A operação (por exemplo, menor que ou menor ou igual a) também pode ser especificada individualmente para limite inferior e superior.
 
 Ele não oferece suporte à extração de facetas.
 
@@ -370,7 +370,7 @@ Ele não oferece suporte à extração de facetas.
 
 * **`tagsearch`** - palavra-chave a ser pesquisada em títulos de tags
 * **`property`** - propriedade (ou caminho relativo para propriedade) a ser considerada (padrão `cq:tags`)
-* **`lang`** - para pesquisar somente um título de tag localizado (por exemplo, `de`)
+* **`lang`** - para pesquisar somente um determinado título de tag localizado (por exemplo, `de`)
 * **`all`** - valor booleano para pesquisar o texto completo da tag, ou seja, todos os títulos, descrição etc. (tem precedência sobre `lang`)
 
 ### tipo {#type}

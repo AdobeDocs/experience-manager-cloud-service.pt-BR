@@ -4,10 +4,10 @@ description: Conheça as práticas recomendadas compiladas pelas equipes de enge
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1433'
-ht-degree: 100%
+source-wordcount: '1434'
+ht-degree: 97%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 O MSM é uma estrutura configurável para automatizar a implantação de conteúdo. As implementações geralmente envolvem partes importantes de um site e abrangem organizações e regiões geográficas. Portanto, é altamente recomendável planejar as implementações do MSM com o cuidado necessário ao planejar seu site:
 
 * Cuidadosamente **planeje a estrutura do plano e os fluxos de conteúdo** antes de iniciar a implementação.
-* **Personalize o quanto for necessário, mas o mínimo possível.** Embora o MSM suporte um alto grau de personalização (por exemplo, configurações de implantação), normalmente, a prática recomendada para obter desempenho, confiabilidade e capacidade de atualização no seu site é minimizar as personalizações.
+* **Personalize o quanto for necessário, mas o mínimo possível.** Embora o MSM suporte um alto grau de personalização (por exemplo, configurações de implementação), a prática recomendada para o desempenho, confiabilidade e atualização de seu site é minimizar a personalização.
 * Estabeleça um modelo de **governança** desde o início e treine os usuários adequadamente para garantir o sucesso. Uma prática recomendada do ponto de vista da governança é **minimizar a autoridade que os produtores de conteúdo locais têm** para alocar/conectar conteúdo a outros usuários locais e suas respectivas Live Copies. Isso ocorre porque heranças encadeadas e sem governança podem aumentar significativamente a complexidade de uma estrutura do MSM e comprometer seu desempenho e confiabilidade.
 * Quando existir um plano para sua estrutura, fluxos de conteúdo, automação e governança, **crie um protótipo e teste completamente seu sistema** antes de iniciar uma implementação real.
 * Lembre-se que a **Adobe Consulting e os principais integradores de sistema** têm ampla experiência em planejar e implementar a automação de conteúdo com o MSM, então eles podem ajudar você a começar o projeto do MSM e durante toda a implementação.

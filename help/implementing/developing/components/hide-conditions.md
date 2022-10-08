@@ -2,9 +2,9 @@
 title: Uso de condições de ocultação
 description: As condições Ocultar podem ser usadas para determinar se um recurso de componente é renderizado ou não.
 exl-id: 2a96f246-fb0f-4298-899e-ebbf9fc1c96f
-source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '615'
 ht-degree: 2%
 
 ---

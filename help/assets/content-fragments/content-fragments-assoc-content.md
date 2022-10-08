@@ -2,10 +2,10 @@
 title: Conteúdo associado (Ativos - Fragmentos de conteúdo)
 description: Entenda como AEM recurso de conteúdo associado fornece a conexão para que os ativos possam ser usados opcionalmente com o fragmento.
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 62%
+source-wordcount: '233'
+ht-degree: 55%
 
 ---
 
@@ -17,7 +17,7 @@ AEM recurso de conteúdo associado fornece a conexão para que os ativos possam 
 
 >[!NOTE]
 >
->Existem vários métodos de adicionar [ativos visuais (por exemplo, imagens)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) ao fragmento e/ou página.
+>Existem vários métodos de adição [ativos visuais (por exemplo, imagens)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) ao fragmento e/ou página.
 
 Para fazer a associação, primeiro é necessário [adicionar ativos de mídia a uma coleção](/help/assets/manage-collections.md). Depois disso, você pode:
 

@@ -4,10 +4,10 @@ description: Saiba mais sobre as práticas recomendadas compiladas pelas equipes
 feature: Language Copy
 role: Admin
 exl-id: 51b98c24-5566-4088-9010-bd39841a1633
-source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 100%
+source-wordcount: '876'
+ht-degree: 96%
 
 ---
 
@@ -35,7 +35,7 @@ Criar ou expandir uma presença global na Web pode ser um processo complexo, mas
 * Use uma convenção de nomenclatura de site de idioma/país que siga os **[padrões W3C.](/help/sites-cloud/authoring/fundamentals/accessible-content.md)**
 * Determine como o conteúdo será distribuído por regiões e países. Considere quais países compartilham idiomas. É recomendável criar matrizes de idioma, uma camada de páginas não ativadas em que o conteúdo traduzido pode ser revisado, modificado e depois enviado ou extraído para um site de país que compartilha esse idioma.
 * Há duas abordagens para a criação de matrizes de idioma: usar cópias de idioma ou usar o MSM e as Live Copies.
-   * A abordagem de cópia de idioma é a utilizada pela estrutura de integração de tradução pronta para uso do AEM e, portanto, é a maneira mais fácil de começar. A estrutura fornece uma interface que inicialmente facilita a propagação e tradução de alterações de conteúdo da matriz de idioma principal (por exemplo, inglês) para as matrizes de outros idiomas. No entanto, à medida que o projeto cresce, a automação do fluxo de trabalho torna-se cada vez mais necessária para gerenciar a tradução do crescente número de páginas e/ou idiomas.
+   * A abordagem de cópia de idioma é a utilizada pela estrutura de integração de tradução pronta para uso do AEM e, portanto, é a maneira mais fácil de começar. A estrutura fornece uma interface de usuário que facilita inicialmente a propagação e tradução de alterações de conteúdo do idioma principal (por exemplo, inglês) principal para o mestre de idiomas. No entanto, à medida que o projeto cresce, a automação do fluxo de trabalho torna-se cada vez mais necessária para gerenciar a tradução do crescente número de páginas e/ou idiomas.
    * A abordagem do MSM/Live Copy pode ser uma alternativa para casos de uso avançados, em que os sites são maiores e mais complexos. Uma governança forte e a automação do fluxo de trabalho são necessárias desde o início para lidar com os complexos relacionamentos de herança entre as matrizes em inglês e de outros idiomas, além de reduzir o risco de sobrepor traduções existentes. Esse manuseio pode ser realizado com a ajuda de alguns conectores de tradução. Consulte [MSM e sites multilíngues](/help/sites-cloud/administering/msm/best-practices.md#msm-and-multilingual-websites) para obter mais informações.
 * Se sua matriz de idioma tiver variações globais, uma opção seria usar o MSM para criar uma Live Copy a partir da matriz global para usar na tradução. Por exemplo, se a criação global for realizada em uma matriz de inglês dos EUA, crie uma matriz de inglês internacional como uma Live Copy e como base de tradução para outros idiomas.
 * Use o MSM para criar sites de países a partir das matrizes de idioma traduzidas e implantar conteúdo em sites que compartilhem o mesmo idioma. Por exemplo, a matriz de idioma francês pode ser distribuída para sites da França, Bélgica e Suíça.

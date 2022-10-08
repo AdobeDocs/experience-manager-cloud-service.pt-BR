@@ -2,9 +2,9 @@
 title: Usar bibliotecas do lado do cliente no AEM as a Cloud Service
 description: O AEM fornece Pastas de biblioteca do lado do cliente, que permitem armazenar o código do lado do cliente (clientlibs) no repositório, organizá-lo em categorias e definir quando e como cada categoria de código deve ser apresentada ao cliente
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 014b53dfd35103660772d273dbf49d2388f6d000
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2565'
+source-wordcount: '2566'
 ht-degree: 1%
 
 ---
@@ -348,5 +348,5 @@ A IU é definida como minificador padrão no AEM. Para alterar para GCC, siga es
 1. Encontre e edite o **Gerenciador de biblioteca de HTML do Adobe Granite**.
 1. Ative o **Minimizar** (se ainda não estiver habilitado).
 1. Defina o valor **Configurações padrão do processador JS** para `min:gcc`.
-   * As opções podem ser passadas se separadas por um ponto e vírgula, por exemplo `min:gcc;obfuscate=true`.
+   * As opções podem ser passadas se separadas por um ponto e vírgula, por exemplo, `min:gcc;obfuscate=true`.
 1. Clique em **Salvar** para salvar as alterações.

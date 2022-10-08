@@ -2,10 +2,10 @@
 title: Manuseio básico
 description: Familiarize-se com navegação pelo AEM e seu uso básico
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: df29eb83efc026bc7fc21dde228cdac47361282d
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2993'
-ht-degree: 100%
+source-wordcount: '2994'
+ht-degree: 99%
 
 ---
 

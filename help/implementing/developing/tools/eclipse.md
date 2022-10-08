@@ -2,9 +2,9 @@
 title: Ferramentas de desenvolvedor do AEM para Eclipse
 description: Ferramentas de desenvolvedor do AEM para Eclipse
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: d60659f443d130a195fd81cfe4773cd87df28264
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1182'
+source-wordcount: '1183'
 ht-degree: 3%
 
 ---
@@ -196,7 +196,7 @@ Depois de concluído, seu pacote deverá estar em execução na instância e, ao
 
 Para reconstruir um pacote do seu projeto, clique com o botão direito do mouse no `PROJECT.ui.apps` ou `PROJECT.ui.content` e escolha **Executar como** -> **Instalação do Maven**.
 
-Agora você tem uma pasta de destino que foi criada com seu pacote interno (chamada de `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`).
+Agora você tem uma pasta de destino que foi criada com seu pacote dentro do (chamada de , por exemplo, `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`).
 
 ## Resolução de problemas {#troubleshooting}
 

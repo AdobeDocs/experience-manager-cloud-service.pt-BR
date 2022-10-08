@@ -2,10 +2,10 @@
 title: Estrutura de projetos do AEM
 description: Saiba mais sobre como definir estruturas de pacote para implantação no Adobe Experience Manager Cloud Service.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2930'
-ht-degree: 13%
+source-wordcount: '2931'
+ht-degree: 12%
 
 ---
 
@@ -13,13 +13,13 @@ ht-degree: 13%
 
 >[!TIP]
 >
->Familiarize-se com as [Uso do Arquétipo de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt_BR)e o [Plug-in FileVault Content Maven](/help/implementing/developing/tools/maven-plugin.md) à medida que este artigo se baseia nesses aprendizados e conceitos.
+>Familiarize-se com as [Uso do Arquétipo de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR)e o [Plug-in FileVault Content Maven](/help/implementing/developing/tools/maven-plugin.md) à medida que este artigo se baseia nesses aprendizados e conceitos.
 
 Este artigo descreve as alterações necessárias para que os projetos Adobe Experience Manager Maven sejam AEM as a Cloud Service compatíveis, garantindo que eles respeitem a divisão de conteúdo mutável e imutável, que as dependências sejam estabelecidas para criar implantações determinísticas e não conflitantes e que sejam compactadas em uma estrutura implantável.
 
 AEM implantações de aplicativos devem ser compostas por um único pacote AEM. Este pacote deve, por sua vez, conter subpacotes que contêm tudo o que o aplicativo requer para funcionar, incluindo código, configuração e qualquer conteúdo de linha de base de suporte.
 
-O AEM requer uma separação de **conteúdo** e **código**, ou seja, um único pacote de conteúdo **não pode** ser implantado em **ambos** `/apps` as áreas graváveis em tempo de execução (por exemplo, `/content`, `/conf`, `/home` ou qualquer outra que não `/apps`) do repositório. Em vez disso, o aplicativo deve separar código e conteúdo em pacotes separados para implantação no AEM.
+AEM exige a separação de **conteúdo** e **código**, o que significa um pacote de conteúdo único **cannot** implantar em **both** `/apps` e áreas graváveis em tempo de execução (por exemplo, `/content`, `/conf`, `/home`ou nada que não `/apps`) do repositório. Em vez disso, o aplicativo deve separar código e conteúdo em pacotes separados para implantação no AEM.
 
 A estrutura do pacote descrita neste documento é compatível com **ambas** as implantações de desenvolvimento locais e implantações do serviço da AEM Cloud.
 

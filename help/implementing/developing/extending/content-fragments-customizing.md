@@ -2,9 +2,9 @@
 title: Personalização e extensão de fragmentos de conteúdo
 description: Um fragmento de conteúdo estende um ativo padrão.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1808'
+source-wordcount: '1811'
 ht-degree: 3%
 
 ---
@@ -63,7 +63,7 @@ Fragmentos de conteúdo, com base em um modelo de fragmento de conteúdo, são m
    * Os dados do elemento são armazenados no subnó principal :
       `jcr:content/data/master`
 
-   * As variações são armazenadas em um subnó que leva o nome da variação: por exemplo `jcr:content/data/myvariation`
+   * As variações são armazenadas em um subnó que leva o nome da variação: por exemplo, `jcr:content/data/myvariation`
 
    * Os dados de cada elemento são armazenados no respectivo subnó como uma propriedade com o nome do elemento: por exemplo, o conteúdo do elemento `text` é armazenado como propriedade `text` on `jcr:content/data/master`
 

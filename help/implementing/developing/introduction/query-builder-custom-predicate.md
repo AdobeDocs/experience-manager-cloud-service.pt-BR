@@ -2,9 +2,9 @@
 title: Implementando um Avaliador de Predicados Personalizados para o Construtor de Consultas
 description: O Query Builder no AEM oferece uma maneira fácil e personalizável de consultar o repositório de conteúdo
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '669'
 ht-degree: 0%
 
 ---

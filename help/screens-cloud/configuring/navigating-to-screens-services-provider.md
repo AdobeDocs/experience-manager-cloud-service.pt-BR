@@ -2,9 +2,9 @@
 title: Navegar até o provedor de serviços do Screens
 description: Esta página descreve como navegar até o Provedor de serviços do Screens.
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
-source-git-commit: 9e43db0fdd55e396de2cf737e1d79bd06a1835e4
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '266'
 ht-degree: 6%
 
 ---
@@ -37,7 +37,7 @@ Siga as etapas abaixo para configurar o Provedor de serviços do Screens:
 
 3. Digite os seguintes detalhes na caixa de diálogo Editar configurações.
    * **Publicar Url** - AEM URL de publicação (por exemplo, `https://publish-p12345-e12345.adobeaemcloud.com`)
-   * **Url Do Autor** - AEM URL de criação (por exemplo, `https://author-p12345-e12345.adobeaemcloud.com`)
+   * **Url Do Autor** - AEM URL do autor (por exemplo, `https://author-p12345-e12345.adobeaemcloud.com`)
 
    ![imagem](/help/screens-cloud/assets/configure/configure-screens4.png)
 

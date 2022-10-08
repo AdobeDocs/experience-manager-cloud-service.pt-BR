@@ -2,9 +2,9 @@
 title: Edição de um SPA externo no AEM
 description: Este documento descreve as etapas recomendadas para carregar um SPA independente em uma instância de AEM, adicionar seções editáveis de conteúdo e ativar a criação.
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: af7d8229ee080852f3c5b542db97b5c223357cf0
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2401'
+source-wordcount: '2402'
 ht-degree: 1%
 
 ---
@@ -188,7 +188,7 @@ O `AEMText` agora pode ser criado em AEM.
 ### AEM páginas autoráveis {#aem-authorable-pages}
 
 1. Identifique uma página a ser adicionada para criação no SPA. Esse exemplo usa `/content/wknd-spa-react/us/en/home.html`.
-1. Criar um novo arquivo (por exemplo, `Page.js`) para o Componente de página criável. Aqui, podemos reutilizar o Componente de página fornecido em `@adobe/cq-react-editable-components`.
+1. Crie um novo arquivo (por exemplo, `Page.js`) para o Componente de página criável. Aqui, podemos reutilizar o Componente de página fornecido em `@adobe/cq-react-editable-components`.
 1. Repita a etapa quatro na seção [AEM componentes de folha autoráveis.](#authorable-leaf-components) Usar a função wrapper `withMappable` no componente.
 1. Como foi feito anteriormente, aplique `MapTo` aos tipos de recurso AEM para todos os componentes filhos na página.
 

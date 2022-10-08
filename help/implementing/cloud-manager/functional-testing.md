@@ -2,7 +2,7 @@
 title: Teste funcional
 description: Saiba mais sobre os três diferentes tipos de testes funcionais integrados ao processo de implantação as a Cloud Service AEM para garantir a qualidade e confiabilidade do seu código.
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: f8d5b94d176dfbd5bcecf552f974dc77c5afe4e2
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
 source-wordcount: '898'
 ht-degree: 0%
@@ -123,7 +123,7 @@ As propriedades do sistema são as seguintes.
 * `sling.it.instances - should be set to 2`
 * `sling.it.instance.url.1 - should be set to the author URL, for example, http://localhost:4502`
 * `sling.it.instance.runmode.1 - should be set to author`
-* `sling.it.instance.adminUser.1 - should be set to the author admin user, e.g. admin`
+* `sling.it.instance.adminUser.1 - should be set to the author admin user, for example, admin`
 * `sling.it.instance.adminPassword.1 - should be set to the author admin password`
 * `sling.it.instance.url.2 - should be set to the publish URL, for example, http://localhost:4503`
 * `sling.it.instance.runmode.2 - should be set to publish`

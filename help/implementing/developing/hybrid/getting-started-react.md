@@ -2,9 +2,9 @@
 title: Introdução ao SPA no AEM usando o React
 description: Este artigo apresenta um exemplo de aplicativo SPA, explica como ele é montado e permite que você entre em funcionamento com seu próprio SPA rapidamente usando a estrutura React.
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '1144'
 ht-degree: 3%
 
 ---
@@ -105,7 +105,7 @@ Depois de criado, o pacote pode ser carregado em uma instância de AEM.
 
 ### Arquétipo de projeto do AEM {#aem-project-archetype}
 
-Qualquer projeto AEM deve aproveitar [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt_BR), que suporta projetos SPA usando o React ou Angular e aproveita o SDK SPA.
+Qualquer projeto AEM deve aproveitar [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR), que suporta projetos SPA usando o React ou Angular e aproveita o SDK SPA.
 
 ## Estrutura do aplicativo {#application-structure}
 

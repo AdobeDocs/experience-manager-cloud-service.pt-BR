@@ -2,10 +2,10 @@
 title: Regulamentos de proteção e privacidade de dados - Disponibilidade do Adobe Experience Manager as a Cloud Service
 description: Saiba mais sobre o suporte do Adobe Experience Manager as a Cloud Service para os vários Regulamentos de proteção e privacidade de dados; incluindo o Regulamento Geral sobre a Proteção de Dados da UE (GDPR), a Lei de Privacidade do Consumidor da Califórnia, e como cumpri-las ao implementar um novo projeto AEM as a Cloud Service.
 exl-id: 5dfa353b-84c5-4b07-bfcd-b03c2d361553
-source-git-commit: e9c1ec6807f86ab00f89ef292a89a0c8efdf802b
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 100%
+source-wordcount: '730'
+ht-degree: 97%
 
 ---
 
@@ -91,7 +91,7 @@ Consulte [Disponibilidade do AEM Sites para Regulamentos de proteção e privaci
 
 ## Integração do Adobe Experience Manager as a Cloud Service com o Adobe Target e o Adobe Analytics {#aem-integration-with-adobe-target-adobe-analytics}
 
-Essas integrações do Adobe Experience Manager as a Cloud Service já incluem os serviços prontos de proteção e privacidade de dados (por exemplo, GDPR). Nenhum dado pessoal do Adobe Target ou Adobe Analytics é armazenado no AEM em relação às integrações.
+Essas integrações do Adobe Experience Manager as a Cloud Service estão com serviços prontos para proteção de dados e privacidade (por exemplo, GDPR). Nenhum dado pessoal do Adobe Target ou Adobe Analytics é armazenado no AEM em relação às integrações.
 Para obter mais informações, consulte:
 
 * [Adobe Target - Visão geral sobre a privacidade](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/privacy/privacy.html?lang=pt-BR)

@@ -4,10 +4,10 @@ description: Entenda como as variações permitem criar conteúdo para o fragmen
 feature: Content Fragments
 role: User
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
-source-git-commit: 3e08f725cfa0ba06b18da9e435978ba41eb4dbde
+source-git-commit: 14395cf97b23896e929e215e7e0b9e33620637eb
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2308'
+ht-degree: 98%
 
 ---
 
@@ -307,7 +307,7 @@ Eles serão adicionados à sequência de parágrafo do fragmento sem qualquer fo
 
 >[!CAUTION]
 Esses ativos não podem ser movidos ou excluídos em uma página de referência. Isso deve ser feito no editor do fragmento.
-No entanto, a formatação do ativo (por exemplo, seu tamanho) deve ser feita no [editor de páginas](/help/sites-cloud/authoring/fundamentals/content-fragments.md). A representação do ativo no editor de fragmento serve meramente para a criação do fluxo de conteúdo.
+No entanto, a formatação do ativo (por exemplo, tamanho) deve ser feita na variável [editor de páginas](/help/sites-cloud/authoring/fundamentals/content-fragments.md). A representação do ativo no editor de fragmento serve meramente para a criação do fluxo de conteúdo.
 
 >[!NOTE]
 Existem vários métodos de adicionar [imagens](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) ao fragmento e/ou página.
@@ -343,7 +343,7 @@ Essa opção está disponível quando o **Texto multilinha** é configurado com 
 
 >[!CAUTION]
 Esses ativos não podem ser movidos ou excluídos em uma página de referência. Isso deve ser feito no editor do fragmento.
-No entanto, a formatação do ativo (por exemplo, seu tamanho) deve ser feita no [editor de páginas](/help/sites-cloud/authoring/fundamentals/content-fragments.md). A representação do ativo no editor de fragmento serve meramente para a criação do fluxo de conteúdo.
+No entanto, a formatação do ativo (por exemplo, tamanho) deve ser feita na variável [editor de páginas](/help/sites-cloud/authoring/fundamentals/content-fragments.md). A representação do ativo no editor de fragmento serve meramente para a criação do fluxo de conteúdo.
 
 >[!NOTE]
 Existem vários métodos de adicionar [imagens](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) ao fragmento e/ou página.

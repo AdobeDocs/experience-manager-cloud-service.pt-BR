@@ -2,9 +2,9 @@
 title: API do Construtor de consulta
 description: A funcionalidade do Construtor de consultas de compartilhamento de ativos é exposta por meio de uma API Java e uma API REST.
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2039'
+source-wordcount: '2040'
 ht-degree: 0%
 
 ---

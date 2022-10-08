@@ -2,9 +2,9 @@
 title: Fundamentos técnicos do AEM
 description: Uma visão geral dos fundamentos técnicos do AEM incluindo como o AEM é estruturado e tecnologias fundamentais como JCR, Sling e OSGi.
 exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
-source-git-commit: 08559417c8047c592f2db54321afe68836b75bd1
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2186'
+source-wordcount: '2191'
 ht-degree: 1%
 
 ---
@@ -71,7 +71,7 @@ O diagrama a seguir explica todos os parâmetros de solicitação ocultos, mas p
 O Sling é *centrado no conteúdo*. Isso significa que o processamento está focado no conteúdo, já que cada solicitação (HTTP) é mapeada no conteúdo na forma de um recurso JCR (um nó de repositório):
 
 * O primeiro target é o recurso (nó JCR) que contém o conteúdo
-* Em segundo lugar, a representação, ou script, está localizada nas propriedades do recurso em combinação com determinadas partes da solicitação (por exemplo, seletores e/ou extensão)
+* Em segundo lugar, a representação, ou script, está localizada nas propriedades do recurso em combinação com determinadas partes da solicitação (por exemplo, seletores e/ou a extensão)
 
 ### Sling RESTful {#restful-sling}
 
@@ -123,8 +123,8 @@ Com o Sling, você especifica qual script renderiza uma determinada entidade (de
 
 O pedido é dividido e as informações necessárias são extraídas. O repositório é pesquisado pelo recurso solicitado (nó de conteúdo):
 
-* O primeiro Sling verifica se há um nó no local especificado na solicitação; por exemplo `../content/corporate/jobs/developer.html`
-* Se nenhum nó for encontrado, a extensão será removida e a pesquisa será repetida; por exemplo `../content/corporate/jobs/developer`
+* O primeiro Sling verifica se há um nó no local especificado na solicitação; por exemplo, `../content/corporate/jobs/developer.html`
+* Se nenhum nó for encontrado, a extensão será removida e a pesquisa será repetida; por exemplo, `../content/corporate/jobs/developer`
 * Se nenhum nó for encontrado, o Sling retornará o código http 404 (Não encontrado).
 
 O Sling também permite que outras coisas além dos nós JCR sejam recursos, mas esse é um recurso avançado.
@@ -146,7 +146,7 @@ Todos os scripts Sling são armazenados em subpastas de `/apps` (mutável, scrip
 
 Alguns outros pontos são:
 
-* Quando o método (GET, POST) é necessário, ele será especificado em maiúsculas de acordo com a especificação HTTP, por exemplo `jobs.POST.esp`
+* Quando o método (GET, POST) for necessário, ele será especificado em maiúsculas como de acordo com a especificação HTTP, por exemplo, `jobs.POST.esp`
 * Vários mecanismos de script são compatíveis, mas os scripts comuns e recomendados são HTL e JavaScript.
 
 A lista de mecanismos de script compatíveis com a instância específica de AEM é listada no Console de Gerenciamento do Felix ( `http://<host>:<port>/system/console/slingscripting`).
@@ -278,7 +278,7 @@ Isso permite executar as seguintes ações em qualquer um dos pacotes da instala
 * Atualizar o
 * Desinstalar
 * Ver o status atual
-* Acesse informações mais detalhadas (por exemplo, nome simbólico, versão, localização, etc.) sobre os pacotes específicos
+* Acesse informações mais detalhadas (por exemplo, nome simbólico, versão, localização etc.) sobre os pacotes específicos
 
 Consulte [Configuração do OSGi para AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md) para obter mais informações.
 

@@ -2,9 +2,9 @@
 title: Roteamento do Modelo de SPA
 description: Para aplicativos de página única no AEM, o aplicativo é responsável pelo roteamento. Este documento descreve o mecanismo de roteamento, o contrato e as opções disponíveis.
 exl-id: 1186b64e-11f8-43a6-bc75-450c4d7587ec
-source-git-commit: 823b6412c9e75fe523e93c4f234ddd9d0ae93f5a
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '442'
 ht-degree: 0%
 
 ---

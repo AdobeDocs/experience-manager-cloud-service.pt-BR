@@ -2,9 +2,9 @@
 title: Fragmentos de conteúdo configuram componentes para renderização
 description: Fragmentos de conteúdo configuram componentes para renderização
 exl-id: 6606dc3b-f1b8-4941-8fd0-f69cbd414afa
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '518'
+source-wordcount: '522'
 ht-degree: 6%
 
 ---
@@ -73,22 +73,22 @@ A configuração do OSGi é:
   <tr>
    <td><strong>Tipo de recurso</strong></td>
    <td><code>dam.cfm.component.resourceType</code></td>
-   <td>O tipo de recurso a ser registrado; por exemplo <br /> <p><span class="cmp-examples-demo__property-value"><code>core/wcm/components/contentfragment/v1/contentfragment</code></code></p> </td>
+   <td>O tipo de recurso a ser registrado; por exemplo, <br /> <p><span class="cmp-examples-demo__property-value"><code>core/wcm/components/contentfragment/v1/contentfragment</code></code></p> </td>
   </tr>
   <tr>
    <td><strong>Propriedade de referência</strong></td>
    <td><code>dam.cfm.component.fileReferenceProp</code></td>
-   <td>O nome da propriedade que contém a referência ao fragmento; por exemplo <code>fragmentPath</code> ou <code>fileReference</code></td>
+   <td>O nome da propriedade que contém a referência ao fragmento; por exemplo, <code>fragmentPath</code> ou <code>fileReference</code></td>
   </tr>
   <tr>
    <td><strong>Propriedade do(s) elemento(s)</strong></td>
    <td><code>dam.cfm.component.elementsProp</code></td>
-   <td>O nome da propriedade que contém o(s) nome(s) dos elementos a serem renderizados; por exemplo<code>elementName</code></td>
+   <td>O nome da propriedade que contém o(s) nome(s) dos elementos a serem renderizados; por exemplo,<code>elementName</code></td>
   </tr>
   <tr>
    <td><strong>Propriedade de variação</strong><br /> </td>
    <td><code>dam.cfm.component.variationProp</code></td>
-   <td>O nome da propriedade que contém o nome da variação a ser renderizada; por exemplo<code>variationName</code></td>
+   <td>O nome da propriedade que contém o nome da variação a ser renderizada; por exemplo,<code>variationName</code></td>
   </tr>
  </tbody>
 </table>

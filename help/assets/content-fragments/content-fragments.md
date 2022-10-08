@@ -2,10 +2,10 @@
 title: Trabalho com fragmentos de conteúdo (Ativos - Fragmentos de conteúdo)
 description: Saiba como os fragmentos de conteúdo no Adobe Experience Manager (AEM) as a Cloud Service permitem projetar, criar, preparar e usar conteúdo independente de página, ideal para criação de páginas e entrega headless.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
 workflow-type: tm+mt
-source-wordcount: '2073'
-ht-degree: 94%
+source-wordcount: '2075'
+ht-degree: 93%
 
 ---
 
@@ -60,8 +60,8 @@ Esta e as seguintes páginas abordam as tarefas de criação, configuração, ma
 
 O número de canais de comunicação aumenta anualmente. Normalmente, os canais se referem ao mecanismo de entrega, como:
 
-* Canal físico; por exemplo, desktop, dispositivo móvel.
-* Forma de entrega em um canal físico; por exemplo, “página de detalhes do produto”, “página de categoria do produto” para desktop ou “web para publicação de conteúdo para dispositivos móveis”, “aplicativo para dispositivos móveis” para dispositivos móveis.
+* Canal físico; por exemplo, desktop, móvel.
+* Forma de entrega num canal físico; por exemplo, a &quot;página de detalhes do produto&quot;, &quot;página de categoria do produto&quot; para desktop, ou &quot;web móvel&quot;, &quot;aplicativo móvel&quot; para dispositivos móveis.
 
 No entanto, você (provavelmente) não deseja usar exatamente o mesmo conteúdo para todos os canais; é necessário otimizar o conteúdo de acordo com o canal específico.
 

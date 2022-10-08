@@ -2,10 +2,10 @@
 title: Fragmentos de conteúdo
 description: Os Fragmentos de conteúdo do Adobe Experience Manager as a Cloud Service permitem projetar, criar, selecionar e usar conteúdo independente da página
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
-source-git-commit: 624b202efd08243e91b36a35f3df7c8c0bd998a9
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1164'
-ht-degree: 100%
+source-wordcount: '1166'
+ht-degree: 96%
 
 ---
 
@@ -153,7 +153,7 @@ Se você tiver [conteúdo associado](/help/sites-cloud/administering/content-fra
 
 >[!NOTE]
 >
->Existem vários métodos de adicionar [ativos visuais (por exemplo, imagens)](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) ao fragmento e/ou página.
+>Existem vários métodos de adição [ativos visuais (por exemplo, imagens)](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) ao fragmento e/ou página.
 
 >[!NOTE]
 >
@@ -167,7 +167,7 @@ Aqui, é possível arrastar os ativos para o local desejado (para um componente 
 
 ### Ativos inseridos no fragmento {#assets-inserted-into-the-fragment}
 
-Se os ativos (por exemplo, imagens) tiverem sido inseridos no próprio fragmento (como [fragmentos de mídia mista](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets)), as opções para editar esses ativos no editor de páginas serão limitadas.
+Se os ativos (por exemplo, imagens) tiverem sido inseridos no próprio fragmento (como [fragmentos de mídia mista](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets)), as opções para editar esses ativos no editor de páginas são limitadas.
 
 Por exemplo, para uma imagem, é possível
 

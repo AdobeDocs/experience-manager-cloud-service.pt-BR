@@ -2,9 +2,9 @@
 title: Estrutura de marcação do AEM
 description: Marque o conteúdo e aproveite a infraestrutura de marcação de AEM para categorizá-lo e organizá-lo.
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1567'
+source-wordcount: '1570'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ Em AEM, o caminho base é `/content/cq:tags` e o nó raiz é do tipo `cq:Folder`
 
 ### Namespace de tag {#tag-namespace}
 
-Os namespaces permitem agrupar itens. O caso de uso mais comum é ter um namespace por site (por exemplo, público versus interno) ou por aplicativo maior (por exemplo, Sites ou Ativos), mas os namespaces podem ser usados para várias outras necessidades. Os namespaces são usados na interface do usuário para mostrar apenas o subconjunto de tags (ou seja, tags de um determinado namespace) que é aplicável ao conteúdo atual.
+Os namespaces permitem agrupar itens. O caso de uso mais comum é ter um namespace por site (por exemplo, público versus interno) ou por aplicativo maior (por exemplo, Sites ou Assets), mas os namespaces podem ser usados para várias outras necessidades. Os namespaces são usados na interface do usuário para mostrar apenas o subconjunto de tags (ou seja, tags de um determinado namespace) que é aplicável ao conteúdo atual.
 
 O namespace da tag é o primeiro nível na subárvore da taxonomia, que é o nó imediatamente abaixo do [nó raiz da taxonomia.](#taxonomy-root-node) Um namespace é um nó do tipo `cq:Tag` cujo pai não é um `cq:Tag` tipo de nó.
 

@@ -2,9 +2,9 @@
 title: Visão geral do editor de SPA
 description: Este artigo fornece uma visão geral abrangente do Editor de SPA e como ele funciona, incluindo fluxos de trabalho detalhados de interação do Editor de SPA no AEM.
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
-source-git-commit: c7759e390d9ea6c2196c9f6c895232c4e75c6d23
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1635'
+source-wordcount: '1636'
 ht-degree: 1%
 
 ---
@@ -171,7 +171,7 @@ Seletores personalizados adicionais podem ser definidos e usados como parte de u
 Se você quiser usar o editor no local de um componente de texto criado SPA há uma configuração adicional necessária.
 
 1. Defina um atributo (pode ser qualquer) no elemento wrapper de contêiner que contém o HTML de texto. No caso do projeto SPA WKND, é um `<div>` e o seletor que foi usado é `data-rte-editelement`.
-1. Definir a configuração `editElementQuery` no componente de texto AEM correspondente `cq:InplaceEditingConfig` que aponte para esse seletor, por exemplo `data-rte-editelement`. Isso permite que o editor saiba qual elemento HTML envolve o texto HTML.
+1. Definir a configuração `editElementQuery` no componente de texto AEM correspondente `cq:InplaceEditingConfig` que aponta para esse seletor, por exemplo, `data-rte-editelement`. Isso permite que o editor saiba qual elemento HTML envolve o texto HTML.
 
 Para obter mais informações sobre o `editElementQuery` e a configuração do editor de rich text, consulte [Configure o Editor de Rich Text.](/help/implementing/developing/extending/rich-text-editor.md)
 

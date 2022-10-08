@@ -2,9 +2,9 @@
 title: Ambiente de criação
 description: Saiba mais sobre o ambiente de criação do Cloud Manager e como ele cria e testa seu código.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 0e1fbef77cb42dd8bb280bb971dc0643019901a3
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '986'
 ht-degree: 1%
 
 ---

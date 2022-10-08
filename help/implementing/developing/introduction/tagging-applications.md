@@ -2,9 +2,9 @@
 title: Criação de tags em aplicativos do AEM
 description: Trabalhar programaticamente com tags ou estender tags em um aplicativo de AEM personalizado
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '762'
 ht-degree: 1%
 
 ---
@@ -121,7 +121,7 @@ replicator.replicate(session, replicationActionType, tagPath);
 
 ## O Coletor de lixo de tags {#the-tag-garbage-collector}
 
-O coletor de lixo da tag é um serviço em segundo plano que limpa as tags ocultas e não utilizadas. Tags ocultas e não usadas são tags abaixo `/content/cq:tags` que tenham uma `cq:movedTo` e não são usadas em um nó de conteúdo. Eles têm uma contagem de zero. Ao usar esse processo de exclusão lento, o nó de conteúdo (ou seja, o `cq:tags` ) não precisa ser atualizada como parte da operação de movimentação ou mesclagem. As referências no `cq:tags` são atualizadas automaticamente quando a variável `cq:tags` for atualizada, por exemplo, por meio da caixa de diálogo de propriedades da página.
+O coletor de lixo da tag é um serviço em segundo plano que limpa as tags ocultas e não utilizadas. Tags ocultas e não usadas são tags abaixo `/content/cq:tags` que tenham uma `cq:movedTo` e não são usadas em um nó de conteúdo. Eles têm uma contagem de zero. Ao usar esse processo de exclusão lento, o nó de conteúdo (ou seja, o `cq:tags` ) não precisa ser atualizada como parte da operação de movimentação ou mesclagem. As referências no `cq:tags` são atualizadas automaticamente quando a variável `cq:tags` é atualizada, por exemplo, por meio da caixa de diálogo Propriedades da página.
 
 O coletor de lixo da tag é executado por padrão uma vez por dia. Isso pode ser configurado em:
 
@@ -136,7 +136,7 @@ A pesquisa por tags e a listagem de tags funcionam da seguinte maneira:
 
 ## Tags em diferentes idiomas {#tags-in-different-languages}
 
-Uma tag `title` pode ser definido em idiomas diferentes. Uma propriedade sensível ao idioma é então adicionada ao nó da tag. Essa propriedade tem o formato `jcr:title.<locale>`, por exemplo `jcr:title.fr` para a tradução em francês. `<locale>` deve ser uma sequência de caracteres de localidade ISO em letras minúsculas e usar sublinhado (`_`) em vez de hífen/traço (`-`), por exemplo: `de_ch`.
+Uma tag `title` pode ser definido em idiomas diferentes. Uma propriedade sensível ao idioma é então adicionada ao nó da tag. Essa propriedade tem o formato `jcr:title.<locale>`, por exemplo, `jcr:title.fr` para a tradução em francês. `<locale>` deve ser uma sequência de caracteres de localidade ISO em letras minúsculas e usar sublinhado (`_`) em vez de hífen/traço (`-`), por exemplo: `de_ch`.
 
 Por exemplo, quando a variável **Animais** é adicionada à variável **Produtos** página, o valor `stockphotography:animals` é adicionado à propriedade `cq:tags` do nó `/content/wknd/en/products/jcr:content`. A tradução é referenciada a partir do nó da tag .
 

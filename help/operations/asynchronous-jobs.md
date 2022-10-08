@@ -2,10 +2,10 @@
 title: Trabalhos assíncronos
 description: O Adobe Experience Manager otimiza o desempenho ao concluir de modo assíncrono algumas tarefas que consomem muitos recursos.
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '882'
-ht-degree: 100%
+source-wordcount: '886'
+ht-degree: 98%
 
 ---
 
@@ -101,7 +101,7 @@ Se o número de ativos ou pastas que serão excluídos exceder o limite, a opera
 
    ![Limite de exclusão de ativos](assets/async-delete-threshold.png)
 
-1. Marque a opção **Habilitar notificação por email** para receber notificações por email sobre o status do trabalho. Sucesso e falha são exemplos de status.
+1. Marque a opção **Habilitar notificação por email** para receber notificações por email sobre o status do trabalho. por exemplo, sucesso, falha.
 1. Salve as alterações.
 
 ### Configurar operações assíncronas de movimentação de ativos {#configuring-asynchronous-move-operations}
@@ -114,7 +114,7 @@ Se o número de ativos/pastas ou referências que serão movidos exceder o limit
 
    ![Limite de movimentação do ativo](assets/async-move-threshold.png)
 
-1. Marque a opção **Habilitar notificação por email** para receber notificações por email sobre o status do trabalho. Sucesso e falha são exemplos de status.
+1. Marque a opção **Habilitar notificação por email** para receber notificações por email sobre o status do trabalho. Por exemplo, sucesso, falha.
 1. Salve as alterações.
 
 ### Configurar operações assíncronas de movimentação de página {#configuring-asynchronous-page-move-operations}
@@ -127,14 +127,14 @@ Se o número de referências às páginas que serão movidas exceder o número l
 
    ![Limite da movimentação da página](assets/async-page-move.png)
 
-1. Marque a opção **Habilitar notificação por email** para receber notificações por email sobre o status do trabalho. Sucesso e falha são exemplos de status.
+1. Marque a opção **Habilitar notificação por email** para receber notificações por email sobre o status do trabalho. Por exemplo, sucesso, falha.
 1. Salve as alterações.
 
 ### Configurar operações assíncronas do MSM {#configuring-asynchronous-msm-operations}
 
 1. Na Navegação global, clique em **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Console da Web]**.
 1. No console da Web, abra a **[!UICONTROL Configuração do processamento assíncrono da operação de movimentação de página.]**
-1. Marque a opção **Habilitar notificação por email** para receber notificações por email sobre o status do trabalho. Sucesso e falha são exemplos de status.
+1. Marque a opção **Habilitar notificação por email** para receber notificações por email sobre o status do trabalho. Por exemplo, sucesso, falha.
 
    ![Configuração do MSM](assets/async-msm.png)
 

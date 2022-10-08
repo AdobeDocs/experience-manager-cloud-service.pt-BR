@@ -3,10 +3,10 @@ title: Validação e depuração usando ferramentas do Dispatcher
 description: Validação e depuração usando ferramentas do Dispatcher
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: c1889a6d905be6fd84e75416839a85e67a5f048a
+source-git-commit: 58f36799f65988eddf0c82dc10b0e62621be5a7c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2693'
+ht-degree: 1%
 
 ---
 
@@ -282,7 +282,7 @@ Há quatro seções na configuração do farm em que você pode incluir seu pró
 | `/rules` | `../cache/rules.any` |
 | `/virtualhosts` | `../virtualhosts/virtualhosts.any` |
 
-Como alternativa, inclua a versão **padrão** desses arquivos, cujos nomes são anexados à palavra `default_`, por exemplo, `../filters/default_filters.any`.
+Como alternativa, você pode incluir a variável **default** versão desses arquivos, cujos nomes são anexados à palavra `default_`, por exemplo, `../filters/default_filters.any`.
 
 **inclua instrução em (..), fora de qualquer local conhecido: ...**
 
@@ -301,7 +301,7 @@ Esse erro é gerado quando você não especifica uma inclusão para `/renders` e
 
 **o filtro não deve usar o padrão glob para permitir solicitações**
 
-Não é seguro permitir solicitações com um `/glob` regra de estilo, que é correspondida com a linha de solicitação completa, por exemplo
+Não é seguro permitir solicitações com um `/glob` regra de estilo, que é correspondida com a linha de solicitação completa, por exemplo,
 
 ```
 /0100 {

@@ -2,10 +2,10 @@
 title: Variações - Criação dos fragmentos de conteúdo (Ativos - Fragmentos de conteúdo)
 description: Entenda como as variações podem tornar o conteúdo sem interface AEM ainda mais flexível, permitindo que você crie conteúdo para o fragmento e, em seguida, crie variações desse conteúdo de acordo com a finalidade.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
 workflow-type: tm+mt
-source-wordcount: '2286'
-ht-degree: 96%
+source-wordcount: '2288'
+ht-degree: 95%
 
 ---
 
@@ -305,7 +305,7 @@ Eles serão adicionados à sequência de parágrafo do fragmento sem qualquer fo
 
 >[!CAUTION]
 Esses ativos não podem ser movidos ou excluídos em uma página de referência. Isso deve ser feito no editor do fragmento.
-No entanto, a formatação do ativo (por exemplo, seu tamanho) deve ser feita no [editor de páginas](/help/sites-cloud/authoring/fundamentals/content-fragments.md). A representação do ativo no editor de fragmento serve meramente para a criação do fluxo de conteúdo.
+No entanto, a formatação do ativo (por exemplo, tamanho) deve ser feita na variável [editor de páginas](/help/sites-cloud/authoring/fundamentals/content-fragments.md). A representação do ativo no editor de fragmento serve meramente para a criação do fluxo de conteúdo.
 
 >[!NOTE]
 Existem vários métodos de adicionar [imagens](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) ao fragmento e/ou página.
@@ -341,7 +341,7 @@ Essa opção está disponível quando o **Texto multilinha** é configurado com 
 
 >[!CAUTION]
 Esses ativos não podem ser movidos ou excluídos em uma página de referência. Isso deve ser feito no editor do fragmento.
-No entanto, a formatação do ativo (por exemplo, seu tamanho) deve ser feita no [editor de páginas](/help/sites-cloud/authoring/fundamentals/content-fragments.md). A representação do ativo no editor de fragmento serve meramente para a criação do fluxo de conteúdo.
+No entanto, a formatação do ativo (por exemplo, tamanho) deve ser feita na variável [editor de páginas](/help/sites-cloud/authoring/fundamentals/content-fragments.md). A representação do ativo no editor de fragmento serve meramente para a criação do fluxo de conteúdo.
 
 >[!NOTE]
 Existem vários métodos de adicionar [imagens](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) ao fragmento e/ou página.

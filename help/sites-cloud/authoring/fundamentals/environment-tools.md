@@ -2,10 +2,10 @@
 title: Ambiente e ferramentas de criação
 description: O ambiente de criação do AEM fornece vários mecanismos para organização e edição de conteúdo
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: f9a122f27ab1e2dc8ba429ce9048e3eab0509db9
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2154'
-ht-degree: 100%
+source-wordcount: '2157'
+ht-degree: 97%
 
 ---
 
@@ -58,7 +58,7 @@ Ao abrir o painel lateral, ele deslizará para ser aberto no lado esquerdo (sele
 
 A aparência e o manuseio real dependem do tipo de dispositivo usado:
 
-* **Dispositivo móvel (por exemplo iPad)**
+* **Dispositivo móvel (por exemplo, iPad)**
 
    O navegador de componente cobre completamente a página sendo editada.
 
@@ -230,7 +230,7 @@ Selecione o tipo de referência apropriado para obter mais informações. Em det
 
 ## Eventos - Linha do tempo {#events-timeline}
 
-Para os recursos adequados (por exemplo, as páginas no console **Sites** ou os ativos no console **Ativos**), a [linha do tempo pode ser usada para mostrar a atividade recente de qualquer item selecionado](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline).
+Para os recursos apropriados (por exemplo, as páginas da variável **Sites** ou ativos do **Ativos** ) o [a linha do tempo pode ser usada para mostrar a atividade recente de qualquer item selecionado](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline).
 
 Abra o console e navegue até o recurso desejado, e abra **Linha do tempo** usando:
 
@@ -282,7 +282,7 @@ Você pode acessar esses itens usando os ícones no canto superior direito. O í
 >* Dependendo das características da página, alguns modos podem não estar disponíveis.
 >* O acesso a alguns modos exige permissões/privilégios adequados.
 >* O modo Desenvolvedor não está disponível em dispositivos móveis devido a restrições de espaço.
->* Existe um [atalho de teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) (`Ctrl-Shift-M`) para alternar entre o modo de **Visualização** e o atualmente selecionado (por exemplo, **Editar**, **Layout** etc).
+>* Existe um [atalho do teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) ( `Ctrl-Shift-M`) para alternar entre **Visualizar** e o modo selecionado no momento (por exemplo, **Editar**, **Layout**, etc).
 >
 
 

@@ -4,10 +4,10 @@ description: Saiba mais sobre as poderosas opções de sincronização da Live C
 feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2336'
-ht-degree: 100%
+source-wordcount: '2337'
+ht-degree: 98%
 
 ---
 
@@ -54,7 +54,7 @@ If the installed rollout configuration actions do not meet your requirements, yo
 | Acionar com a ativação do blueprint | Publica a Live Copy quando a origem é publicada | No modo de ativação | `targetActivate` |
 | Desligar com a desativação do blueprint | Desativa a Live Copy quando a origem é desativada | Ao desativar | `targetDeactivate` |
 | Forçar modificação | Força o conteúdo para a Live Copy quando a origem é modificada<br>Use essa configuração de implantação com moderação, pois ela usa o acionador Ao modificar. | Em modificação | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`referencesUpdate`<br>`orderChildren` |
-| Forçar modificação (superficial) | Força o conteúdo para a Live Copy quando a página do blueprint é modificada, sem atualizar referências (por exemplo, para cópias superficiais)<br>Use essa configuração de implantação com moderação, pois ela usa o acionador Ao modificar. | Em modificação | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`orderChildren` |
+| Forçar modificação (superficial) | Força o conteúdo para a Live Copy quando a página do blueprint é modificada, sem atualizar referências (por exemplo, para cópias superficiais)<br>Use essa configuração de implementação com moderação, pois usa o acionador Em modificação . | Em modificação | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`orderChildren` |
 | Promover lançamento | Configuração de implementação padrão para a promoção de páginas de inicialização. | Na implantação | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`referencesUpdate`<br>`orderChildren`<br>`markLiveRelationship` |
 
 ### Ações de sincronização {#synchronization-actions}

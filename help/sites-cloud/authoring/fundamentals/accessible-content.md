@@ -2,10 +2,10 @@
 title: Criar conteúdo acessível para o Adobe Experience Manager as a Cloud Service (Conformidade com WCAG 2.1)
 description: Usar o AEM as a Cloud Service para ajuda a tornar o conteúdo da Web acessível e utilizável por pessoas com deficiência
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: 13885fbb3ed35c43ccfff03d47e4dc3ced2bc327
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '14053'
-ht-degree: 98%
+source-wordcount: '14061'
+ht-degree: 96%
 
 ---
 
@@ -441,7 +441,7 @@ Siga as orientações em [Como cumprir o Critério de sucesso 1.3.2](https://www
 
 Os designers muitas vezes se concentram nos recursos de design visual, como cor, forma, estilo de texto ou uma parte da posição absoluta ou relativa do conteúdo ao apresentar as informações. Estas podem ser técnicas de design muito poderosas na transmissão de informações (e podem melhorar a acessibilidade geral para usuários com necessidades de acessibilidade cognitiva), mas pessoas cegas ou deficientes visuais podem não conseguir acessar informações que exigem a identificação visual de atributos como posição, cor ou forma.
 
-Da mesma forma, as informações que exigem a distinção entre sons diferentes (por exemplo, o conteúdo falado masculino ou feminino) vão apresentar barreiras de acessibilidade para os indivíduos com deficiência auditiva, se não estiverem refletidas em nenhuma alternativa em texto para o conteúdo de áudio.
+Da mesma forma, as informações que exigem a distinção entre sons diferentes (por exemplo, conteúdo falado masculino ou feminino) vão apresentar barreiras de acessibilidade para os indivíduos com deficiência auditiva, se não estiverem refletidas em nenhuma alternativa em texto para o conteúdo de áudio.
 
 >[!NOTE]
 >
@@ -452,7 +452,7 @@ Da mesma forma, as informações que exigem a distinção entre sons diferentes 
 Certifique-se de que todas as informações baseadas em características visuais do conteúdo da página também são apresentadas em um formato alternativo.
 
 * Não se baseie na posição visual para fornecer informações. Por exemplo, se você deseja fazer uma referência para os usuários sobre um menu no lado direito da página para obter acesso a mais informações, não se refira ao *menu à direita*; em vez disso, nomeie o menu (por exemplo, através de um cabeçalho) e faça uma referência a esse nome no texto. 
-* Não se baseie no estilo do texto (por exemplo, negrito ou itálico) como a única maneira de transmitir as informações.
+* Não se baseie no estilo do texto (por exemplo, negrito ou itálico) como a única maneira de transmitir informações.
 
 >[!NOTE]
 >
@@ -493,7 +493,7 @@ Sempre que a cor for usada para transmitir informações, certifique-se de que a
 
 Por exemplo, verifique se as informações fornecidas através das cores também estão evidentes no texto.
 
-Se a cor for usada como dica para fornecer informações, você deve fornecer uma dica visual adicional, como a alteração do estilo (por exemplo, negrito, itálico) ou da fonte. Isso ajuda as pessoas com pouca visão ou daltonismo a identificar as informações. No entanto, não é possível depender dessas opções completamente, uma vez que isso não ajudará os indivíduos que não conseguem visualizar nada na página. Portanto, é (às vezes) útil fornecer texto oculto ou usar soluções programáticas, como o [pacote de padrões da Web ARIA (Accessible Rich Internet Applications)](https://www.w3.org/WAI/standards-guidelines/aria/), para transmitir essas informações a usuários sem visão.
+Se a cor for usada como dica para fornecer informações, você deve fornecer uma dica visual adicional, como a alteração do estilo (por exemplo, negrito, itálico) ou da fonte. Isso ajuda os indivíduos com problemas de visão ou daltonismo a identificar as informações. No entanto, não é possível depender dessas opções completamente, uma vez que isso não ajudará os indivíduos que não conseguem visualizar nada na página. Portanto, é (às vezes) útil fornecer texto oculto ou usar soluções programáticas, como o [pacote de padrões da Web ARIA (Accessible Rich Internet Applications)](https://www.w3.org/WAI/standards-guidelines/aria/), para transmitir essas informações a usuários sem visão.
 
 #### Mais informações - Utilização de cor (1.4.1) {#more-information-use-of-color}
 
@@ -616,7 +616,7 @@ Além de seguir as diretrizes em [Como atender ao critério para o sucesso 1.4.4
 
 #### Propósito - Imagens de texto (1.4.5)       {#purpose-images-of-text}
 
-As imagens de texto são usadas, frequentemente, quando um estilo de texto específico é o preferido; por exemplo, um logotipo ou se o texto foi gerado de uma outra fonte (por exemplo, uma verificação de um documento em papel). No entanto, em comparação com o texto apresentado em HTML e o estilo usando CSS, as imagens de texto não têm flexibilidade para mudar o tamanho ou aparência, o que pode ser necessário para os indivíduos com deficiência visual ou dificuldade de leitura.
+As imagens de texto são frequentemente usadas quando um estilo de texto específico é preferencial; por exemplo, um logotipo ou se o texto foi gerado de outra fonte (por exemplo, uma verificação de um documento em papel). No entanto, em comparação com o texto apresentado em HTML e o estilo usando CSS, as imagens de texto não têm flexibilidade para mudar o tamanho ou aparência, o que pode ser necessário para os indivíduos com deficiência visual ou dificuldade de leitura.
 
 #### Como cumprir - Imagens de texto (1.4.5)       {#how-to-meet-images-of-text}
 
@@ -1217,8 +1217,7 @@ O posicionamento das etiquetas também é importante, pois ajuda a localizar os 
 
 * As caixas de seleção ou botões de opção:
 As etiquetas são posicionadas imediatamente à direita do campo.
-* Todos os outros componentes do formulário (por exemplo, caixas de texto, caixas de combinação):
-As etiquetas são posicionadas imediatamente acima ou à esquerda do campo.
+* Todos os outros componentes do formulário (por exemplo, caixas de texto, caixas de combinação): Os rótulos são posicionados imediatamente acima ou à esquerda do campo.
 
 Em formulários simples, com funcionalidade muito limitada, a identificação adequada de um botão `Submit` pode servir como etiqueta para o campo adjacente (por exemplo, `Search`). Isso é útil em situações em que encontrar espaço para o texto da etiqueta pode ser difícil.
 

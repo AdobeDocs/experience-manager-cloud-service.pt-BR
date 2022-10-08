@@ -4,7 +4,7 @@ description: Saiba como preparar conteúdo para tradução.
 feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
 source-wordcount: '768'
 ht-degree: 100%
@@ -71,7 +71,7 @@ Para criar a raiz do idioma, crie uma página e use um código de idioma ISO com
 * `<language-code>` - O código de idioma compatível é um código de duas letras, conforme definido pela ISO-639-1, como por exemplo `en`.
 * `<language-code>_<country-code>` ou `<language-code>-<country-code>` - O código do país compatível é um código de duas letras em minúsculas ou maiúsculas, conforme definido pela norma ISO 3166, como por exemplo `en_US`, `en_us`, `en_GB`, `en-gb`.
 
-É possível usar qualquer um dos formatos, de acordo com a estrutura escolhida para o site global.  Por exemplo, a página raiz da cópia em francês do site do WKND tem `fr` como a propriedade **Nome**. Observe que a propriedade **Nome** é usada como o nome do nó da página no repositório e, portanto, determina o caminho da página (`http://<host>:<4502>/content/wknd/language-masters/fr.html`).
+É possível usar qualquer um dos formatos, de acordo com a estrutura escolhida para o site global. Por exemplo, a página raiz da cópia em francês do site do WKND tem `fr` como a propriedade **Nome**. Observe que a propriedade **Nome** é usada como o nome do nó da página no repositório e, portanto, determina o caminho da página (`http://<host>:<4502>/content/wknd/language-masters/fr.html`).
 
 1. Navegue até Sites.
 1. Clique ou toque no site para o qual deseja criar uma cópia de idioma.

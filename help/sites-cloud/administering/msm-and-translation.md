@@ -4,10 +4,10 @@ description: Saiba como reutilizar o conteúdo em todo seu projeto e gerenciar s
 feature: Administering
 role: Admin
 exl-id: a3d48884-081e-44f8-8055-ee3657757bfd
-source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '410'
-ht-degree: 100%
+source-wordcount: '411'
+ht-degree: 95%
 
 ---
 
@@ -41,7 +41,7 @@ Normalmente, você cria um site principal em um idioma e para um país específi
 >
 >Limite o uso do gerenciador de vários sites para conteúdo em um único idioma.
 >
->Por exemplo, use o conteúdo principal em inglês para criar a versão em inglês das páginas dos EUA, Canadá, Reino Unido etc. e o conteúdo principal em francês para criar a versão em francês das páginas da França, Suíça, Canadá etc.
+>Por exemplo, use o principal inglês para criar a versão em inglês das páginas para os EUA, Canadá, Reino Unido etc. e o conteúdo principal em francês para criar a versão em francês das páginas da França, Suíça, Canadá etc.
 
 O diagrama a seguir ilustra como os principais conceitos se cruzam (mas não mostra todos os níveis/elementos envolvidos):
 

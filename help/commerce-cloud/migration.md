@@ -2,9 +2,9 @@
 title: Migração para o complemento CIF (Commerce Integration Framework) da AEM
 description: Como migrar para o complemento CIF (Commerce Integration Framework) do AEM de uma versão antiga
 exl-id: 0db03a05-f527-4853-b52f-f113bce929cf
-source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '491'
 ht-degree: 45%
 
 ---
@@ -51,4 +51,4 @@ Se você usar o blueprint do catálogo com a CIF clássica, precisará atualizar
 
 ## Interação entre dados não armazenáveis em cache e compras
 
-As solicitações do lado do cliente para dados e interações que não podem ser armazenados em cache (por exemplo, adicionar ao carrinho, pesquisa) devem ir diretamente para o terminal de comércio (solução comercial ou camada de integração) via CDN/Dispatcher. Remova qualquer chamada em que AEM era apenas um proxy.
+As solicitações do lado do cliente para dados e interações que não podem ser armazenados em cache (por exemplo, adicionar ao carrinho, pesquisa) devem ir diretamente para o endpoint de comércio (solução comercial ou camada de integração) via CDN/Dispatcher. Remova qualquer chamada em que AEM era apenas um proxy.
