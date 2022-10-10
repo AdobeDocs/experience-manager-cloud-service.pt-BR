@@ -2,12 +2,13 @@
 title: Usar bibliotecas do lado do cliente no AEM as a Cloud Service
 description: O AEM fornece Pastas de biblioteca do lado do cliente, que permitem armazenar o código do lado do cliente (clientlibs) no repositório, organizá-lo em categorias e definir quando e como cada categoria de código deve ser apresentada ao cliente
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 51933d1ed509117f1ed0488900807b74f55ef46b
 workflow-type: tm+mt
-source-wordcount: '2566'
+source-wordcount: '2568'
 ht-degree: 1%
 
 ---
+
 
 # Usar bibliotecas do lado do cliente no AEM as a Cloud Service {#using-client-side-libraries}
 
@@ -55,7 +56,7 @@ Uma pasta de biblioteca do lado do cliente é um nó de repositório do tipo `cq
 
 Cada `cq:ClientLibraryFolder` O é preenchido com um conjunto de arquivos JS e/ou CSS, juntamente com alguns arquivos de suporte (veja abaixo). Propriedades importantes da variável `cq:ClientLibraryFolder` são configuradas da seguinte maneira:
 
-* `allowProxy`: Como todas as clientlibs devem ser armazenadas em `apps`, essa propriedade permite acesso a bibliotecas de clientes por meio do servlet proxy. Consulte [Localizando uma pasta da biblioteca do cliente e usando o servlet de bibliotecas do cliente proxy](#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) abaixo.
+* `allowProxy`: Como todas as clientlibs devem ser armazenadas em `apps`, essa propriedade permite o acesso às bibliotecas do cliente por meio do servlet proxy. Consulte a seção [Localizando uma pasta da biblioteca do cliente e usando o servlet de bibliotecas do cliente proxy](#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) abaixo.
 * `categories`: Identifica as categorias em que o conjunto de arquivos JS e/ou CSS dentro dessa `cq:ClientLibraryFolder` outono. O `categories` , com vários valores, permite que uma pasta de biblioteca faça parte de mais de uma categoria (veja abaixo como isso pode ser útil).
 
 Se a pasta da biblioteca do cliente contiver um ou mais arquivos de origem que, no tempo de execução, serão mesclados em um único arquivo JS e/ou CSS. O nome do arquivo gerado é o nome do nó com a variável `.js` ou `.css` extensão do nome do arquivo. Por exemplo, o nó da biblioteca chamado `cq.jquery` resulta no arquivo gerado chamado `cq.jquery.js` ou `cq.jquery.css`.
@@ -87,7 +88,7 @@ Para as bibliotecas de clientes em `/apps` para ser acessível, um servidor prox
    * Tipo: booliano
    * Valor: `true`
 1. Se precisar gerenciar recursos estáticos, crie uma subpasta chamada `resources` abaixo da pasta da biblioteca do cliente.
-   * Se você armazenar recursos estáticos na pasta `resources`, elas não podem ser referenciadas em uma instância de publicação.
+   * Se você armazenar recursos estáticos em qualquer lugar diferente da pasta `resources`, elas não podem ser referenciadas em uma instância de publicação.
 1. Adicione arquivos de origem à pasta da biblioteca.
    * Normalmente, isso é feito pelo processo de build front-end do [AEM Arquétipo de projeto.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)
    * Você pode organizar os arquivos de origem em subpastas, se desejar.
@@ -211,7 +212,7 @@ A incorporação do código é útil para fornecer acesso a bibliotecas que são
 
 #### Pastas da biblioteca de clientes específicas do aplicativo {#app-specific-client-library-folders}
 
-É uma prática recomendada manter todos os arquivos relacionados ao aplicativo em sua pasta de aplicativo abaixo de /apps. Também é uma prática recomendada negar o acesso dos visitantes do site à pasta /apps. Para atender às duas práticas recomendadas, crie uma pasta de biblioteca do cliente abaixo da pasta /etc que incorpora a biblioteca do cliente que está abaixo de /apps.
+É uma prática recomendada manter todos os arquivos relacionados a aplicativos em sua pasta de aplicativos abaixo `/apps`. Também é uma prática recomendada negar o acesso dos visitantes do site à variável `/apps` pasta. Para atender às duas práticas recomendadas, crie uma pasta de biblioteca de clientes abaixo do `/etc` pasta que incorpora a biblioteca do cliente que está abaixo `/apps`.
 
 Use a propriedade categories para identificar a pasta da biblioteca de clientes a ser incorporada. Para incorporar a biblioteca, adicione uma propriedade à incorporação `cq:ClientLibraryFolder` , usando os seguintes atributos de propriedade:
 
