@@ -6,9 +6,9 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: 01d54ba56ccab372396829a012c4da8ef4a57fe2
 workflow-type: tm+mt
-source-wordcount: '3763'
+source-wordcount: '3797'
 ht-degree: 16%
 
 ---
@@ -66,7 +66,9 @@ As várias funções envolvidas para configurar e o recurso e seus grupos de usu
 
 ### Arquitetura do Connected Assets {#connected-assets-architecture}
 
-O Experience Manager permite conectar uma implantação remota de DAM como uma origem a vários Experience Manager [!DNL Sites] implantações. Você pode conectar um máximo de quatro [!DNL Sites] implantações em um DAM remoto de origem. No entanto, é possível conectar uma [!DNL Sites] implantação com apenas uma implantação remota do DAM.
+O Experience Manager permite conectar uma implantação remota de DAM como uma origem a vários Experience Manager [!DNL Sites] implantações. No entanto, é possível conectar uma [!DNL Sites] implantação com apenas uma implantação remota do DAM.
+
+Avalie o número ideal de instâncias do Sites para se conectar a uma implantação remota do DAM. O Adobe recomenda conectar incrementalmente instâncias de Sites à implantação e testar se não há impacto no desempenho no DAM remoto, pois cada instância de Sites conectada contribui para o tráfego de dados no DAM remoto.
 
 Os diagramas a seguir ilustram os cenários compatíveis:
 
@@ -261,9 +263,9 @@ Configure o recurso Connected Assets somente quando for necessário usar os ativ
 
 +++
 
-+++**Quantos [!DNL Sites] as implantações podem ser conectadas a uma implantação remota do DAM após a configuração do Connected Assets?**
++++**Você pode conectar vários [!DNL Sites] implantações em uma implantação remota do DAM após a configuração do Connected Assets?**
 
-Você pode conectar um máximo de quatro [!DNL Sites] implantações em uma implantação remota do DAM após a configuração do Connected Assets. Para obter mais informações, consulte [Arquitetura do Connected Assets](#connected-assets-architecture).
+Sim, você pode conectar vários [!DNL Sites] implantações em uma implantação remota do DAM após a configuração do Connected Assets. Para obter mais informações, consulte [Arquitetura do Connected Assets](#connected-assets-architecture).
 
 +++
 
