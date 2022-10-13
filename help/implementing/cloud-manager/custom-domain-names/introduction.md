@@ -2,10 +2,10 @@
 title: Introdução a nomes de domínio personalizados
 description: A interface do usuário do Cloud Manager permite que você adicione um domínio personalizado para identificar seu site com um nome exclusivo e de marca, de maneira automatizada.
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: cc1b0d653706150c616ceafd002dc7594b6c7072
+source-git-commit: fe08925c86a82a600eabd5a7d4ad6e38b3e76dfe
 workflow-type: tm+mt
-source-wordcount: '562'
-ht-degree: 9%
+source-wordcount: '606'
+ht-degree: 8%
 
 ---
 
@@ -44,6 +44,10 @@ Há várias limitações no uso de nomes de domínio personalizados com o AEMaaC
 * Os nomes de domínio não podem ser adicionados a ambientes enquanto houver um pipeline de execução atual anexado a esses ambientes.
 * Somente um nome de domínio pode ser adicionado por vez.
 * O mesmo nome de domínio não pode ser usado em mais de um ambiente.
+
+>[!NOTE]
+>
+>Domínios personalizados são compatíveis com o Cloud Manager **only** se estiver usando o CDN gerenciado AEM. Se você trazer seu próprio CDN e [aponte-o para o CDN gerenciado AEM](/help/implementing/dispatcher/cdn.md) será necessário usar essa CDN específica para gerenciar domínios e não o Cloud Manager.
 
 ## Fluxo de trabalho {#workflow}
 
