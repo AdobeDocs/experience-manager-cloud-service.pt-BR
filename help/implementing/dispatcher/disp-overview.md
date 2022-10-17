@@ -3,9 +3,9 @@ title: Dispatcher na nuvem
 description: Dispatcher na nuvem
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
-source-git-commit: 90a49312d4609c2de992a93926a329bf50861801
+source-git-commit: 69cb9b9015ed3a7acdcc42c7e25fb45b479a7f4e
 workflow-type: tm+mt
-source-wordcount: '952'
+source-wordcount: '998'
 ht-degree: 6%
 
 ---
@@ -55,6 +55,19 @@ As ferramentas do dispatcher são usadas para validar e depurar a configuração
 * **Modo herdado** - para obter detalhes sobre a estrutura de pastas e a validação local para o modo herdado de configuração do dispatcher, consulte [Validação e depuração usando ferramentas do Dispatcher (herdadas)](/help/implementing/dispatcher/validation-debug-legacy.md)
 
 Para obter mais informações sobre como migrar do modelo de configuração herdado para o mais flexível, fornecido com AEM arquétipo 28 em diante, consulte [esta documentação](/help/implementing/dispatcher/validation-debug.md#migrating).
+
+## Disposição do conteúdo {#content-disposition}
+
+Para o nível de publicação, o padrão para o serviço de blobs é como um anexo. Isso pode ser substituído usando o padrão [cabeçalho de disposição de conteúdo](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Disposition) no dispatcher.
+
+Veja abaixo um exemplo de como a configuração deve ser:
+
+```
+<LocationMatch "^\/content\/dam.*\.(pdf).*">
+ Header unset Content-Disposition
+ Header set Content-Disposition inline
+</LocationMatch>
+```
 
 ## Módulos Apache Suportados {#supported-directives}
 
