@@ -1,12 +1,12 @@
 ---
 title: jornada do desenvolvedor sem periféricos do AEM
-description: Saiba como desenvolver seu projeto para entrega de conteúdo sem periféricos usando o Adobe Experience Manager (AEM) como um CMS sem periféricos. Saiba como usar recursos como Modelos de conteúdo, Fragmentos de conteúdo e uma API GraphQL para potencializar experiências headless.
+description: Saiba mais sobre o desenvolvimento sem periféricos usando o Adobe Experience Manager (AEM) como um CMS sem periféricos. Saiba como usar recursos como Modelos de conteúdo, Fragmentos de conteúdo e uma API GraphQL para potencializar a entrega de conteúdo sem interface.
 landing-page-description: Saiba mais sobre a entrega e implementação de conteúdo sem periféricos. Saiba mais sobre como desenvolver sua estratégia na sua empresa.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: 2d0856b7370b6b50935378ad26c7361e95820f4d
+source-git-commit: 8932a8f158fe478d23457ac24afdd17f05a048f5
 workflow-type: tm+mt
-source-wordcount: '1273'
-ht-degree: 26%
+source-wordcount: '1268'
+ht-degree: 27%
 
 ---
 
