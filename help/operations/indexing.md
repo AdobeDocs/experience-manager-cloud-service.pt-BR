@@ -2,9 +2,9 @@
 title: Pesquisa e indexação de conteúdo
 description: Pesquisa e indexação de conteúdo
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: ac7e4f7d7b771c392d8f67bd0751dfeede970a5f
 workflow-type: tm+mt
-source-wordcount: '2255'
+source-wordcount: '2246'
 ht-degree: 98%
 
 ---
@@ -74,7 +74,9 @@ que deverá ficar em `ui.apps/src/main/content/jcr_root`. Todas as definições 
 
 O filtro do pacote precisa ser definido de maneira que os índices existentes (prontos para uso) sejam retidos. No arquivo `ui.apps/src/main/content/META-INF/vault/filter.xml`, cada índice personalizado precisa ser listado. Por exemplo, como `<filter root="/oak:index/damAssetLucene-6-custom-1"/>`. Se a versão do índice for alterada posteriormente, o filtro precisará ser ajustado.
 
-O pacote do exemplo acima é criado como `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`.
+<!-- Alexandru: temporarily drafting this statement due to CQDOC-17701
+
+The package from the above sample is built as `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`. -->
 
 >[!NOTE]
 >
