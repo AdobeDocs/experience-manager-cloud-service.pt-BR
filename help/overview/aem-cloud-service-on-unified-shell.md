@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service no shell unificado
 description: AEM as a Cloud Service no shell unificado
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
-source-git-commit: c3b72395504b9e32178182d0a79db804d19fbcf3
+source-git-commit: 51ecb21bf479cfaacb01a9c99c88d7f112f6ff95
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -30,14 +30,14 @@ Os benefícios disso são:
 * Fácil alternação entre organizações ou para um aplicativo diferente
 * Ajuda do produto aprimorada
 * Botão de feedback de fácil acesso no produto para reportar problemas ou compartilhar ideias com a Adobe
-* Acesso a anúncios e notificações de produtos globais, além de notificações específicas do AEM as a Cloud Service
+* Acesso a anúncios e notificações de produtos globais, além de notificações específicas AEM as a Cloud Service
 
 ## Desabilitar o Unified Shell {#disabling-unified-shell}
 
 Por padrão, o AEM as a Cloud Service vem com o Unified Shell ativado. No entanto, caso o cabeçalho superior tenha sido personalizado, é recomendável desativar o Unified Shell para evitar problemas com as personalizações. Para desativar o Unified Shell, siga as etapas abaixo:
 
 >[!NOTE]
->O Unified Shell só pode ser desativado por uma conta com privilégios administrativos.
+>O Shell Unificado só pode ser desativado por uma conta com privilégios administrativos.
 
 1. Navegue até **Ferramentas - Serviços na nuvem**.
 
@@ -49,7 +49,7 @@ Por padrão, o AEM as a Cloud Service vem com o Unified Shell ativado. No entant
 
    ![imagem](/help/overview/assets/unifiedshell3.png)
 
-## Alterar para o tema escuro {#chaning-to-dark-theme}
+## Alterar para o tema escuro {#changing-to-dark-theme}
 
 Para alterar para o tema escuro, clique no ícone do seu perfil. Isso exibirá uma janela pop-up, como mostrado abaixo. Você pode usar o botão de alternância para alternar para um tema escuro do Unified Shell.
 
