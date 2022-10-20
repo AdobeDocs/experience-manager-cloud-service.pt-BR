@@ -5,7 +5,7 @@ exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
 source-git-commit: 75c0e8cbaa409fa48750e794c27ace98eda107d0
 workflow-type: tm+mt
 source-wordcount: '1175'
-ht-degree: 17%
+ht-degree: 19%
 
 ---
 
@@ -74,15 +74,15 @@ Os artigos a seguir descrevem em detalhes os principais conceitos de integraçã
 |---|---|---|---|
 | 0 | Jornada de integração | Este documento | Administrador do sistema |
 | 1 | [Preparação de integração](preparation.md) | Antes do início do processo de integração, há várias etapas preparatórias que o administrador do sistema deve entender antes de fazer logon no sistema. | Administrador do sistema |
-| 2 | [AEM Terminologia as a Cloud Service](terminology.md) | Antes de fazer logon no AEMaaCS pela primeira vez, é útil entender a terminologia do sistema e sua estrutura básica. | Administrador do sistema |
+| 2 | [Terminologia do AEM as a Cloud Service](terminology.md) | Antes de fazer logon no AEMaaCS pela primeira vez, é útil entender a terminologia do sistema e sua estrutura básica. | Administrador do sistema |
 | 3 | [O Admin Console](admin-console.md) | Saiba o que é o Admin Console, como fazer logon e como verificar seu perfil como administrador de sistema. | Administrador do sistema |
 | 4 | [Atribuir perfis de produto do Cloud Manager](assign-profiles-cloud-manager.md) | Revise os Perfis de produto do Cloud Manager e saiba como atribuir membros da equipe aos perfis de produto do Cloud Manager. | Administrador do sistema |
 | 5 | [Acessar o Cloud Manager](cloud-manager.md) | Saiba como acessar o Cloud Manager para poder configurar os recursos do projeto. | Administrador do sistema |
 | 6 | [Criar um programa](create-program.md) | Saiba como criar um programa usando o Cloud Manager. | Administrador do sistema |
 | 7 | [Criar ambientes](create-environments.md) | Saiba como criar um ambiente usando o Cloud Manager. | Administrador do sistema |
-| 8 | [Atribuir perfis de produto AEM](assign-profiles-aem.md) | Saiba como o Administrador do sistema atribui membros da sua equipe a AEM perfis de produto as a Cloud Service. | Administrador do sistema |
+| 8 | [Atribuir perfis de produto do AEM](assign-profiles-aem.md) | Saiba como o Administrador do sistema atribui membros da sua equipe a AEM perfis de produto as a Cloud Service. | Administrador do sistema |
 | 9 | [Tarefas do desenvolvedor e do gerenciador de implantação](developers.md) | Opcional - saiba como, como desenvolvedor, você pode acessar e gerenciar o Git do Cloud Manager e como, como Gerenciador de implantação, você pode configurar pipelines e implantar código no Cloud Manager. | Desenvolvedores e gerenciadores de implantação |
-| 10 | [Tarefas do usuário AEM](aem-users.md) | Opcional - saiba como um autor de AEM você pode acessar AEM instância as a Cloud Service e se familiarizar com o conteúdo de criação para AEM as a Cloud Service. | Usuários AEM |
+| 10 | [Tarefas do usuário do AEM](aem-users.md) | Opcional - saiba como um autor de AEM você pode acessar AEM instância as a Cloud Service e se familiarizar com o conteúdo de criação para AEM as a Cloud Service. | Usuários AEM |
 
 ## O que vem a seguir {#what-is-next}
 
