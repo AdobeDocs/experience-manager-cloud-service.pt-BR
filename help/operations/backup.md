@@ -2,10 +2,10 @@
 title: Restauração de conteúdo no AEM as a Cloud Service
 description: Saiba como restaurar conteúdo do backup no AEM as a Cloud Service usando o Cloud Manager.
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: e816bd55b8b5febb19566f3d6009e6f5e823b22e
+source-git-commit: 564be5a7bcbcab95b1bbf824b01f80e018aae2a2
 workflow-type: tm+mt
-source-wordcount: '1229'
-ht-degree: 95%
+source-wordcount: '1259'
+ht-degree: 85%
 
 ---
 
@@ -36,12 +36,14 @@ O Cloud Manager fornece dois tipos de backups, a partir dos quais você pode res
 * **Ponto no tempo (PIT):** esse tipo restaura a partir de backups de sistema contínuos das últimas 24 horas, contadas a partir da hora atual.
 * **Semana passada:** esse tipo restaura a partir de backups de sistema dos últimos sete dias, exceto as últimas 24 horas.
 
-Em ambos os casos, a versão do código personalizado e do AEM permanecem inalteradas.
+Em ambos os casos, a versão do código personalizado e a versão AEM permanecem inalteradas.
 
 As métricas de desempenho de restauração de conteúdo no AEM as a ContentService referem-se aos benchmarks padronizados:
 
 * **Meta de tempo de recuperação (RTO):** a Meta de tempo de recuperação varia dependendo do tamanho do repositório, mas, como regra geral, após o início da sequência de recuperação, ela deve levar cerca de 30 minutos.
-* **A Meta de ponto de recuperação (RPO):** a Meta de ponto de recuperação é de no máximo 24 horas
+* **O RPO (Recovery Point Objetive, objetivo de ponto de recuperação):** O Objetivo do Ponto de Recuperação depende de quanto tempo sua instância tem funcionado:
+   * para as primeiras 24 horas de funcionamento: qualquer momento durante essas 24 horas.
+   * Após as primeiras 24 horas: um máximo de 12 horas para os seis dias anteriores.
 
 >[!TIP]
 >
@@ -55,13 +57,13 @@ O uso do mecanismo de restauração de autoatendimento está sujeito às seguint
 * No máximo dez restaurações bem-sucedidas são permitidas em todos os ambientes em um programa por mês.
 * Após a criação do ambiente, pode levar até seis horas para que o primeiro instantâneo de backup seja criado. Até que esse instantâneo seja criado, nenhuma restauração poderá ser executada no ambiente.
 * Uma operação de restauração não será iniciada se houver uma pilha completa ou um pipeline de configuração de camada da Web em execução no momento para o ambiente.
-* Uma restauração não pode ser iniciada se outra restauração já estiver em execução no mesmo ambiente.
+* Uma restauração não poderá ser iniciada se outra restauração já estiver em execução no mesmo ambiente.
 * Em casos raros, devido ao limite de 24 horas/sete dias para backups, o backup selecionado pode se tornar indisponível devido a um atraso entre o momento em que foi selecionado e o momento em que a restauração é iniciada.
 * Os dados de ambientes excluídos são perdidos permanentemente e não podem ser recuperados.
 
 ## Restauração de conteúdo {#restoring-content}
 
-Primeiro, determine o intervalo de tempo do conteúdo que você deseja restaurar. Em seguida, para restaurar o conteúdo do ambiente a partir de um backup, execute essas etapas.
+Primeiro, determine o período do conteúdo que você deseja restaurar. Em seguida, para restaurar o conteúdo do ambiente a partir de um backup, execute essas etapas.
 
 >[!NOTE]
 >
@@ -112,7 +114,7 @@ Quando a restauração for concluída com sucesso, o ambiente:
 
 ## Escolher o backup certo {#choosing-backup}
 
-As restaurações apenas restauram o conteúdo para o AEM. Por isso, você deve considerar cuidadosamente as alterações de código que foram feitas entre o ponto de restauração desejado e o horário atual, revisando o histórico de confirmações entre a ID de confirmação atual e a que está sendo restaurada.
+As restaurações apenas restauram o conteúdo para o AEM. Por esse motivo, você deve considerar cuidadosamente as alterações de código que foram feitas entre seu ponto de restauração desejado e o horário atual, revisando o histórico de commit entre a ID de confirmação atual e a que está sendo restaurada.
 
 Existem vários cenários.
 
