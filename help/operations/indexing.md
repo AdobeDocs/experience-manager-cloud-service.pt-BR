@@ -2,10 +2,10 @@
 title: Pesquisa e indexação de conteúdo
 description: Pesquisa e indexação de conteúdo
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: ac7e4f7d7b771c392d8f67bd0751dfeede970a5f
+source-git-commit: 82f959a8a4f02486c1b3431b40534cdb95853dd6
 workflow-type: tm+mt
-source-wordcount: '2246'
-ht-degree: 98%
+source-wordcount: '2289'
+ht-degree: 90%
 
 ---
 
@@ -34,11 +34,6 @@ Abaixo está uma lista das principais alterações em comparação ao AEM 6.5 e 
 1. Em alto nível no AEM as a Cloud Service, com a introdução do [Modelo de implantação azul-verde](#index-management-using-blue-green-deployments), dois conjuntos de índices existirão: um conjunto para a versão antiga (azul) e um conjunto para a nova versão (verde).
 
 1. Os clientes poderão ver se o trabalho de indexação foi concluído na página de criação do Cloud Manager e serão notificados quando a nova versão estiver pronta para receber tráfego.
-
-1. Limitações:
-* Atualmente, o gerenciamento de índice no AEM as a Cloud Service é compatível somente com índices do tipo `lucene`.
-* Somente os analisadores padrão são compatíveis (ou seja, aqueles enviados com o produto). Não há compatibilidade com analisadores personalizados.
-* Internamente, outros índices podem ser configurados e usados para consultas. Por exemplo, consultas gravadas em relação ao índice `damAssetLucene` podem, no Skyline, ser executadas em uma versão Elasticsearch desse índice. Normalmente, essa diferença não é visível para o aplicativo e para o usuário. No entanto, certas ferramentas, como o recurso `explain`, relatarão um índice diferente. Para ver as diferenças entre os índices Lucene e os índices Elastic, consulte [a documentação do Elastic no Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Os clientes não precisam e não podem configurar os índices de Elasticsearch diretamente.
 
 ## Como usar {#how-to-use}
 
@@ -221,7 +216,11 @@ Quando a Adobe altera um índice pronto para uso, como “damAssetLucene” ou �
 
 ### Limitações atuais {#current-limitations}
 
-Atualmente, o gerenciamento de índice é compatível apenas com índices do tipo `lucene`. Internamente, outros índices podem ser configurados e usados para consultas; por exemplo, índices Elastic.
+Atualmente, o gerenciamento de índice é compatível apenas com índices do tipo `lucene`, com `compatVersion` defina como `2`. Internamente, outros índices podem ser configurados e usados para consultas, por exemplo, índices de Elasticsearch. Queries que são gravados em relação à variável `damAssetLucene` O índice pode, em AEM as a Cloud Service, ser executado em uma versão Elasticsearch desse índice. Essa diferença é invisível para o usuário final do aplicativo, no entanto, certas ferramentas, como a variável `explain` reportará um índice diferente. Para obter diferenças entre os índices Lucene e Elasticsearch, consulte [a documentação do Elasticsearch no Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Os clientes não podem e não precisam configurar os índices de Elasticsearch diretamente.
+
+Somente os analisadores integrados são suportados (ou seja, aqueles enviados com o produto). Não há compatibilidade com analisadores personalizados.
+
+Para um melhor desempenho operacional, os índices não devem ser excessivamente elevados. O tamanho total de todos os índices pode ser usado como guia: Se este aumento for superior a 100% após a adição de índices personalizados e os índices padrão tiverem sido ajustados em um ambiente de desenvolvimento, as definições de índices personalizados deverão ser ajustadas. AEM as a Cloud Service pode impedir a implantação de índices que afetariam negativamente a estabilidade e o desempenho do sistema.
 
 ### Adicionar um índice {#adding-an-index}
 
