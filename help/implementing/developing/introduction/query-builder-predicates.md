@@ -2,9 +2,9 @@
 title: Referência de predicado do construtor de consultas
 description: Referência de predicado para a API do Construtor de consultas.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 3c7e6d2213e059b1b8a90feea4672a4436873a01
 workflow-type: tm+mt
-source-wordcount: '2221'
+source-wordcount: '2268'
 ht-degree: 2%
 
 ---
@@ -244,10 +244,12 @@ Ele não oferece suporte à extração de facetas.
 * **`path`** - Isso define o padrão de caminho.
    * Dependendo do `exact` , a subárvore inteira corresponderá (como anexar) `//*` no xpath, mas observe que isso não inclui o caminho base) ou apenas uma correspondência exata de caminho, que pode incluir curingas (`*`).
       * O padrão é `true`
-   * Se a variável `self`for definida, a subárvore inteira, incluindo o nó base, será pesquisada.
+
+<!---   * If the `self`property is set, the entire subtree including the base node will be searched.--->
 * **`exact`** - se `exact` é `true`, o caminho exato deve corresponder, mas pode conter curingas simples (`*`), que correspondem aos nomes, mas não `/`; se for `false` (padrão) todos os descendentes são incluídos (opcional)
 * **`flat`** - pesquisa apenas os filhos diretos (como anexar `/*` em xpath) (usado somente se `exact` não é verdadeiro, opcional)
-* **`self`** - pesquisa a subárvore, mas inclui o nó base fornecido como caminho (sem curingas)
+* **`self`** - pesquisa a subárvore, mas inclui o nó base fornecido como caminho (sem curingas).
+   * *Observação importante*: Um problema foi identificado com `self` na implementação atual do querybuilder e usá-lo em queries podem não produzir resultados de pesquisa corretos. Alteração da implementação atual de `self` A propriedade também não é viável, pois pode quebrar os aplicativos existentes que dependem dela. Devido a isso, `self` foi substituída e é recomendável evitar usá-la.
 
 ### propriedade {#property}
 
