@@ -2,9 +2,9 @@
 title: Introdução à ferramenta Transferência de conteúdo
 description: Introdução à ferramenta Transferência de conteúdo
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 501441717f541439ac8d914f1e419491399e6667
+source-git-commit: c6a27c996458259904b6532c69a1bd33e2f725c6
 workflow-type: tm+mt
-source-wordcount: '1341'
+source-wordcount: '1292'
 ht-degree: 9%
 
 ---
@@ -34,16 +34,8 @@ A ferramenta Transferência de conteúdo pode ser baixada como um arquivo zip no
 
 A instância de AEM de origem pode estar em execução atrás de um firewall em que só pode alcançar determinados hosts que foram adicionados a uma Lista de permissões. Para executar com êxito uma extração, os seguintes endpoints precisarão ser acessíveis da instância que está executando AEM:
 
-* O público-alvo AEM ambiente as a Cloud Service: `author-p<program_id>-e<env_id>.adobeaemcloud.com`
 * O serviço de armazenamento de blobs do Azure: `casstorageprod.blob.core.windows.net`
 * O ponto de extremidade de E/S de Mapeamento de Usuário: `usermanagement.adobe.io`
-
-Para testar a conectividade com o ambiente de destino AEM as a Cloud Service, emita o seguinte comando cURL do shell da instância de origem (substitua `program_id`, `environment_id`e `migration_token`):
-
-`curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/migration/migrationSet -H "Authorization: Bearer <migration_token>"`
-
->[!NOTE]
->Se uma `HTTP/2 200` for recebida, uma conexão com AEM as a Cloud Service foi bem-sucedida.
 
 ### Ativar o registro em SSL {#enable-ssl-logging}
 
@@ -111,7 +103,7 @@ A seção a seguir se aplica à nova versão da ferramenta Transferência de con
 
 Para preencher o conjunto de migração criado no Cloud Acceleration Manager, é necessário instalar a versão mais recente da ferramenta Transferência de conteúdo na instância de origem do Adobe Experience Manager (AEM). Siga esta seção para saber como preencher o conjunto de migração.
 
-1. Depois de instalar a versão mais recente (v2.0.10) da ferramenta Transferência de conteúdo na instância de origem do Adobe Experience Manager, acesse **Operações - Migração de conteúdo**
+1. Depois de instalar a versão mais recente da ferramenta Transferência de conteúdo na instância do Adobe Experience Manager de origem, acesse **Operações - Migração de conteúdo**
 
 1. Clique em **Criar conjunto de migração**
 

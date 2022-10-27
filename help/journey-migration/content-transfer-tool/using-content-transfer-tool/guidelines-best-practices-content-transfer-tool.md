@@ -2,10 +2,10 @@
 title: Diretrizes e práticas recomendadas para usar a ferramenta Transferência de conteúdo
 description: Diretrizes e práticas recomendadas para usar a ferramenta Transferência de conteúdo
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: 98b81d918d60722ddb3f1c7736bc5b3506e05f6f
+source-git-commit: c6a27c996458259904b6532c69a1bd33e2f725c6
 workflow-type: tm+mt
-source-wordcount: '1654'
-ht-degree: 21%
+source-wordcount: '1597'
+ht-degree: 19%
 
 ---
 
@@ -26,13 +26,11 @@ Uma nova versão da ferramenta Transferência de conteúdo está disponível e i
 * Melhoria na experiência do usuário por meio de melhores estados de carregamento, medidas de proteção e tratamento de erros
 * Os logs de assimilação são mantidos e sempre estão disponíveis para solução de problemas
 
-Para começar a usar a nova versão (v2.0.10), será necessário desinstalar as versões mais antigas da ferramenta Transferência de conteúdo. Isso é necessário porque a nova versão traz uma grande mudança arquitetônica. Com a versão 2.0.10, será necessário criar novos conjuntos de migração e executar novamente a extração e a assimilação nos novos conjuntos de migração. Se uma migração já estiver em andamento, você poderá continuar usando a versão anterior da CTT até que a migração seja concluída.
+Para começar a usar a nova versão, será necessário desinstalar versões mais antigas da ferramenta Transferência de conteúdo. Isso é necessário porque a nova versão traz uma grande mudança arquitetônica. Com a versão 2.0.10, será necessário criar novos conjuntos de migração e executar novamente a extração e a assimilação nos novos conjuntos de migração. Se uma migração já estiver em andamento, você poderá continuar usando a versão anterior da CTT até que a migração seja concluída.
 
 As diretrizes e práticas recomendadas a seguir se aplicam à nova versão da ferramenta Transferência de conteúdo:
 
 * É aconselhável executar a [Limpeza de revisão](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html) e as [verificações de consistência do armazenamento de dados](https://helpx.adobe.com/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html) no repositório de **origem** para identificar possíveis problemas e reduzir o tamanho do repositório.
-
-* Se a Rede de entrega de conteúdo (CDN) do Autor da AEM Cloud estiver configurada para ter uma lista de permissões de IPs, será necessário garantir que os IPs do ambiente de origem também sejam adicionados à lista de permissões para que o ambiente de origem e o ambiente da AEM Cloud possam se comunicar.
 
 * Na fase de assimilação, é recomendável executar a assimilação usando o modo de *limpeza* ativado, no qual o repositório existente (autor ou publicação) no ambiente de serviço do AEM Cloud Service será completamente excluído e depois atualizado com os dados do conjunto de migração. Esse modo é muito mais rápido que o modo sem limpeza, no qual o conjunto de migração é aplicado sobre o conteúdo atual.
 
@@ -60,11 +58,11 @@ Siga a seção abaixo para entender as considerações importantes ao executar a
 
 * Se estiver usando um *Ambiente de sandbox*, certifique-se de que seu ambiente esteja atualizado e seja atualizado para a versão mais recente. Se você estiver usando um *Ambiente de produção*, ele será atualizado automaticamente.
 
-* Para usar a ferramenta Transferência de conteúdo, você precisa ser um usuário administrador na instância de origem e pertencer ao AEM local **administradores** na instância do Cloud Service para a qual você está transferindo conteúdo. Usuários sem privilégios não poderão iniciar ingestões.
+* Para iniciar uma assimilação, você precisa pertencer ao AEM local **administradores** na instância do Cloud Service para a qual você está transferindo conteúdo. Os usuários sem privilégios não poderão iniciar ingestões sem fornecer manualmente o token de migração.
 
 * Se a configuração **Limpar o conteúdo existente na instância do Cloud antes da assimilação** estiver ativada, ela excluirá todo o repositório existente e criará um novo repositório para assimilar conteúdo. Isso significa que ele redefine todas as configurações, incluindo permissões na instância do Cloud Service de destino. Isso também é verdadeiro para um usuário administrador adicionado ao **administradores** grupo. O usuário deve ser adicionado novamente ao **administradores** para recuperar o token de acesso da ferramenta Transferência de conteúdo.
 
-* A ferramenta Transferência de conteúdo não oferece suporte à mesclagem de conteúdo de várias fontes na instância do Cloud Service de destino se o conteúdo das duas fontes for movido para os mesmos caminhos no destino. Para mover o conteúdo de várias fontes para uma única instância do Cloud Service de destino, você precisa garantir que não haja sobreposição dos caminhos de conteúdo das fontes.
+* As assimilações não oferecem suporte à mesclagem de conteúdo de várias fontes na instância do Cloud Service de destino se o conteúdo das duas fontes for movido para os mesmos caminhos no destino. Para mover o conteúdo de várias fontes para uma única instância do Cloud Service de destino, você precisa garantir que não haja sobreposição dos caminhos de conteúdo das fontes.
 
 * A chave de extração é válida por 14 dias a partir do momento em que foi criada/renovada. Pode ser renovado a qualquer momento. Se a chave de extração tiver expirado, você não poderá executar uma extração.
 
