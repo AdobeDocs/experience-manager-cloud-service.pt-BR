@@ -2,10 +2,10 @@
 title: Verificando o status do nome de domínio
 description: Saiba como determinar se o nome de domínio personalizado foi verificado com êxito pelo Cloud Manager.
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: ba0226b5ad3852dd5f72dd7e0ace650035f5ac6a
+source-git-commit: d22d657361ea6c4885babd76e6b4c10f88378994
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 0%
+source-wordcount: '663'
+ht-degree: 2%
 
 ---
 
@@ -52,23 +52,35 @@ O Cloud Manager acionará automaticamente uma verificação TXT ao selecionar **
 
 ## Erros de nome de domínio {#domain-error}
 
-Esta seção explica os erros que você pode ver e como resolvê-los.
+A seguir estão alguns erros comuns de nome de domínio e suas resoluções típicas.
 
-**Domínio não instalado** - Você recebe esse erro durante a validação do domínio do registro TXT mesmo depois de verificar que o registro foi atualizado adequadamente.
+### Erro de Domínio Não Instalado {#domain-not-installed}
 
-**Explicação de erro** - Bloqueia com frequência um domínio para a conta inicial que o registrou e nenhuma outra conta pode registrar um subdomínio sem solicitar permissão. Além disso, o Fastly permite atribuir somente um domínio de ápice e subdomínios associados a um serviço e uma conta do Fastly. Se você tiver uma conta Fastly existente que vincula o mesmo apex e subdomínios usados para os domínios da AEM Cloud Service, verá esse erro.
+Esse erro pode ocorrer durante a validação do domínio do registro TXT mesmo após ter verificado que o registro foi atualizado adequadamente.
 
-**Resolução de Erro** - O erro é corrigido da seguinte maneira:
+#### Causa do erro {#cause}
 
-* Remova o apex e os subdomínios da conta existente antes de instalar o domínio no Cloud Manager. Use essa opção para vincular o domínio apex e todos os subdomínios à conta as a Cloud Service Fastly AEM. Consulte [Trabalhar com domínios na documentação do Fastly](https://docs.fastly.com/en/guides/working-with-domains) para obter mais detalhes.
+Bloqueia com rapidez um domínio na conta inicial que o registrou e nenhuma outra conta pode registrar um subdomínio sem solicitar permissão. Além disso, o Fastly permite atribuir somente um domínio de ápice e subdomínios associados a um serviço e uma conta do Fastly. Se você tiver uma conta Fastly existente que vincula o mesmo apex e subdomínios usados para os domínios da AEM Cloud Service, verá esse erro.
 
-* Se o domínio apex tiver vários subdomínios para AEM sites as a Cloud Service e não AEM que você deseja vincular a contas Fastly diferentes, tente instalar o domínio no Cloud Manager e, se a instalação do domínio falhar, crie um tíquete de Suporte ao Cliente com Fastly para podermos dar seguimento com Fastly em seu nome.
+#### Resolução de Erro {#resolution}
+
+O erro é corrigido da seguinte maneira:
+
+* Remova o apex e os subdomínios da conta existente antes de instalar o domínio no Cloud Manager.
+
+* Use essa opção para vincular o domínio apex e todos os subdomínios à conta as a Cloud Service Fastly AEM. Consulte [Trabalhar com domínios na documentação do Fastly](https://docs.fastly.com/en/guides/working-with-domains) para obter mais detalhes.
+
+* Se o domínio apex tiver vários subdomínios para AEM sites as a Cloud Service e não AEM que você deseja vincular a diferentes contas Fastly, tente instalar o domínio no Cloud Manager. Se a instalação do domínio falhar, crie um tíquete de Suporte ao cliente com o Fastly para que o Adobe possa dar seguimento com o Fastly em seu nome.
+
+>[!TIP]
+>
+>A solução de problemas de delegação de domínio com o Fastly geralmente leva de 1 a 2 dias úteis. Por esse motivo, é altamente recomendável instalar os domínios bem antes de sua data de ativação.
 
 >[!NOTE]
 >
->OBSERVAÇÃO: Não roteie o DNS do site para AEM IPs as a Cloud Service se o domínio não tiver sido instalado com êxito.
+>Não roteie o DNS do site para AEM IPs as a Cloud Service se o domínio não tiver sido instalado com êxito.
 
-## Configurações de CDN pré-existentes para nomes de domínio personalizados {#pre-existing-cdn}
+## Configurações pré-existentes da CDN para nomes de domínio personalizados {#pre-existing-cdn}
 
 Se você tiver uma configuração de CDN preexistente para seus nomes de domínio personalizados, haverá uma mensagem informativa no **Nomes de Domínio Personalizados** e **Ambiente** páginas, incentivando você a adicionar essas configurações por meio da interface do usuário, para que fiquem visíveis e configuráveis no Cloud Manager.
 
