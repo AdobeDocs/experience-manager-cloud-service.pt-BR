@@ -3,10 +3,10 @@ title: Notas de versão do Cloud Manager 2022.6.0 no Adobe Experience Manager as
 description: Estas são as notas de versão do Cloud Manager 2022.6.0 em AEM as a Cloud Service.
 feature: Release Information
 exl-id: 0a348836-74cd-4fd4-aef4-6ffbd6483c24
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: e05c2fa2cfb035ed363e2c80d4aac33b022bd435
 workflow-type: tm+mt
-source-wordcount: '348'
-ht-degree: 1%
+source-wordcount: '313'
+ht-degree: 35%
 
 ---
 
@@ -24,20 +24,18 @@ A data de lançamento do Cloud Manager versão 2022.6.0 em AEM as a Cloud Servic
 
 ## Novidades {#what-is-new}
 
-* A interface do usuário do Cloud Manager agora permite [restauração de conteúdo de autoatendimento](/help/operations/backup.md) para um estado em boas condições do ambiente de nuvem AEM.
-   * Esse recurso será implementado em uma abordagem em fases nas semanas seguintes à versão 2022.06.0.
-* Um novo cartão de boas-vindas na página de aterrissagem do Cloud Manager fornece aos usuários acesso rápido a tutoriais de integração e métricas de progresso relacionadas ao locatário.
-   * Esse recurso será implementado em uma abordagem em fases na semana seguinte à versão 2022.06.0.
+* Um novo cartão de boas-vindas na página de destino do Cloud Manager fornece aos usuários acesso rápido a tutoriais de integração e métricas de progresso relacionadas ao locatário.
+   * Esse recurso será implementado em fases durante a semana seguinte ao lançamento da versão 2022.06.0.
 * Os usuários com as permissões necessárias podem acessar um novo [Painel de licenças](/help/implementing/cloud-manager/license-dashboard.md) na página de aterrissagem do Cloud Manager para exibir detalhes dos direitos disponíveis para o locatário.
    * O AEM Sites é a primeira solução para a qual o consumo de disponibilidade e uso é fornecido por meio do painel do Cloud Manager.
    * Esse recurso será implementado em uma abordagem em fases nas semanas seguintes à versão 2022.06.0.
 * [Nova subconta do Relic e gerenciamento de usuários de autoatendimento](/help/implementing/cloud-manager/user-access-new-relic.md) O agora está disponível por meio da interface do usuário do Cloud Manager.
    * Esse recurso será implementado em uma abordagem em fases nas semanas seguintes à versão 2022.06.0.
 * Um novo widget Go Live na página inicial dos programas de produção do Cloud Service agora fornece orientação para se preparar para uma experiência dinâmica bem-sucedida.
-* [Os artefatos da build agora podem ser reutilizados](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) ao usar o espelhamento de git.
+* [Os artefatos da build agora podem ser reutilizados](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) ao usar o espelhamento de Git.
 
 ## Alterações na API {#api-changes}
 
-* O [`List Programs`](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getPrograms) A API foi substituída e [`List Programs for Tenant`](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getProgramsForTenant) deve ser usada em vez disso.
-   * `List Programs` continua a funcionar, mas seu uso gerará mensagens de aviso em logs.
-   * Ele não será mais suportado após três meses.
+* A API [`List Programs`](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getPrograms) foi descontinuada e a [`List Programs for Tenant`](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getProgramsForTenant) deve ser usada em seu lugar.
+   * A `List Programs` continua funcionando, mas seu uso gerará mensagens de aviso em logs.
+   * Ele não será mais compatível após três meses.
