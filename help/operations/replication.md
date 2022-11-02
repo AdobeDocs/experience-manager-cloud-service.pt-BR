@@ -2,9 +2,9 @@
 title: Replicação
 description: Distribuição e solução de problemas de replicação.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 30428716603a53f3a549a18541de593bbfe879df
+source-git-commit: 9260e3cfffdbff3469e92847af8d12c2eb52f5b1
 workflow-type: tm+mt
-source-wordcount: '1258'
+source-wordcount: '1262'
 ht-degree: 99%
 
 ---
@@ -84,7 +84,7 @@ Como alternativa, também é possível fazer isso criando um modelo de fluxo de 
 * `enableVersion` (valor booleano, padrão: `true`). Esse parâmetro determina se uma nova versão será criada na replicação.
 * `agentId` (valor da string; o valor padrão significa que apenas os agentes para publicação são usados). É recomendado ser explícito sobre o agentId; por exemplo, definir o valor como: publicar. Configurar o agente como `preview` publicará no serviço de visualização
 * `filters` (valor da string; o valor padrão significa que todos os caminhos são ativados). Os valores disponíveis são:
-   * `onlyActivated` - somente os caminhos marcados como ativados serão ativados.
+   * `onlyActivated` - ativar apenas as páginas que (já) foram ativadas. Atua como uma forma de reativação.
    * `onlyModified` - ativar apenas os caminhos que já estejam ativados e tenham uma data de modificação posterior à data de ativação.
    * O conteúdo acima pode ser ORed com uma barra vertical “|”. Por exemplo, `onlyActivated|onlyModified`.
 
