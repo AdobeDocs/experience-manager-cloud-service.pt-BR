@@ -2,10 +2,10 @@
 title: APIs obsoletas
 description: Notas de versão específicas a APIs obsoletas e removidas do  [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service].
 exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
-source-git-commit: ed57f15e2e85d1b2d957d396f9d93725d389375c
+source-git-commit: 89a50c17c10a19b394db5709692fb065c19e878f
 workflow-type: tm+mt
-source-wordcount: '1063'
-ht-degree: 99%
+source-wordcount: '1076'
+ht-degree: 98%
 
 ---
 
@@ -203,6 +203,12 @@ Veja abaixo uma extensa lista de APIs obsoletas do AEM e a data esperada da remo
     <td>Essa API não é mais suportada. Em vez disso, use org.apache.sling.api.resource.ResourceResolverFactory .</td>
     <td>29/9/2022</td>
     <td>24/11/2022</td>
+  </tr>
+  <tr>
+    <td>com.day.cq.contentsync.handler.util</td>
+    <td>Essa API está obsoleta. Em vez disso, use os Construtores do Apache Sling.</td>
+    <td>31/10/2022</td>
+    <td>01/01/2023</td>
   </tr>
 </tbody>
 </table>
