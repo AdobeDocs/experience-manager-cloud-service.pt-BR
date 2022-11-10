@@ -2,9 +2,9 @@
 title: Assimilar conteúdo no Target
 description: Assimilar conteúdo no Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 0a5b74427bedfa7b1e802a91632b0765adfb8248
+source-git-commit: e8b4fe047c9656aa592fc851279dc6a189144023
 workflow-type: tm+mt
-source-wordcount: '908'
+source-wordcount: '916'
 ht-degree: 13%
 
 ---
@@ -54,7 +54,7 @@ Siga as etapas abaixo para assimilar seu conjunto de migração da ferramenta Tr
 
    ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam22.png)
 
-1. Em seguida, você pode monitorar a fase de Assimilação na exibição da lista Tarefas de Assimilação
+1. Em seguida, você pode monitorar a fase de assimilação na exibição da lista Trabalhos de assimilação e usar o menu de ação da assimilação para exibir o log conforme a assimilação avança.
 
    ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23.png)
 
@@ -124,4 +124,4 @@ Você poderá iniciar uma assimilação no ambiente de destino somente se perten
 
 ## O que vem a seguir {#whats-next}
 
-Depois de aprender a Inserir conteúdo no Target na ferramenta Transferência de conteúdo, você pode visualizar logs ao concluir cada etapa (extração e assimilação) e procurar erros. Consulte [Visualização de logs para um conjunto de migração](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en) para saber mais.
+Depois de concluir a Inserção de conteúdo no Target, você pode visualizar os logs de cada etapa (extração e assimilação) e procurar erros. Consulte [Visualização de logs para um conjunto de migração](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en) para saber mais.
