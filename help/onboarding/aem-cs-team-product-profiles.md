@@ -1,15 +1,15 @@
 ---
-title: AEM equipe as a Cloud Service e perfis de produto
+title: Equipe e perfis de produto do AEM as a Cloud Service
 description: Saiba como AEM equipe as a Cloud Service e perfis de produtos, além de conceder e limitar o acesso às soluções de Adobe licenciadas.
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
-source-git-commit: d54c25791cbb06232ff6e24bb7b8005b366a2144
+source-git-commit: d4786b5d527092027e8e825d0a2475a8be6a710a
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 0%
+source-wordcount: '687'
+ht-degree: 2%
 
 ---
 
-# AEM equipe as a Cloud Service e perfis de produto {#product-profiles}
+# Equipe e perfis de produto do AEM as a Cloud Service {#product-profiles}
 
 Saiba como AEM equipe as a Cloud Service e perfis de produtos, além de conceder e limitar o acesso às soluções de Adobe licenciadas.
 
@@ -35,7 +35,9 @@ Os membros AEM da equipe as a Cloud Service serão adicionados e atribuídos a u
 
 >[!TIP]
 >
->Para obter mais informações sobre o processo de integração, consulte [jornada de integração.](/help/journey-onboarding/overview.md)
+>* Para saber mais sobre AEM perfis de produtos, consulte o documento [Atribuindo Perfis de Produto AEM.](/help/journey-onboarding/assign-profiles-aem.md)
+>* Para obter mais informações sobre o processo de integração, consulte [jornada de integração.](/help/journey-onboarding/overview.md)
+
 
 ## Perfis de produto do Cloud Manager {#cloud-manager-product-profiles}
 
@@ -63,3 +65,9 @@ A equipe do Cloud Manager incluirá pelo menos:
 >[!NOTE]
 >
 >Para ter acesso a AEM as a Cloud Service, os usuários devem pertencer a um dos dois perfis de produto: `AEM Users` ou `AEM Administrators`. As permissões para administrar o Cloud Manager não serão suficientes.
+
+>[!TIP]
+>
+>* Para saber mais sobre os perfis de produtos do Cloud Manager, consulte o documento [Atribuindo membros da equipe aos perfis de produto do Cloud Manager.](/help/journey-onboarding/assign-profiles-cloud-manager.md)
+>* Para obter mais informações sobre o processo de integração, consulte [jornada de integração.](/help/journey-onboarding/overview.md)
+
