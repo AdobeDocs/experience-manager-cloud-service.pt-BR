@@ -8,9 +8,9 @@ user-guide-description: Recursos de autoajuda e links de documentação da visã
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 28c64256c64bf3f7f2e38e1f52a615ff8ca457bb
+source-git-commit: d310b48d3abe8ffba2f25a27899cd042a186db84
 workflow-type: tm+mt
-source-wordcount: '3738'
+source-wordcount: '3739'
 ht-degree: 99%
 
 ---
@@ -145,7 +145,6 @@ ht-degree: 99%
       + [Atribuir perfis de produto do AEM](/help/journey-onboarding/assign-profiles-aem.md)
       + [Tarefas do desenvolvedor e do gerenciador de implantação](/help/journey-onboarding/developers.md)
       + [Tarefas do usuário do AEM](/help/journey-onboarding/aem-users.md)
-      + [Grupos de usuários](/help/journey-onboarding/user-groups.md)
    + Jornada do complemento de demonstrações de referência do AEM {#demo-add-on}
       + [Visão geral](/help/journey-sites/demos-add-on/overview.md)
       + [Instalação](/help/journey-sites/demos-add-on/installation.md)
@@ -156,6 +155,7 @@ ht-degree: 99%
    + Outros conceitos de integração {#concepts}
       + [Introdução ao Cloud Manager](/help/onboarding/cloud-manager-introduction.md)
       + [Equipe e perfis de produto do AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md)
+      + [Grupos de usuários de notificação](/help/journey-onboarding/user-groups.md)
 + Jornada de migração do AEM as a Cloud Service {#migration-journey}
    + [Introdução à movimentação do AEM as a Cloud Service](/help/journey-migration/getting-started.md)
    + [Fase de preparação](/help/journey-migration/readiness.md)

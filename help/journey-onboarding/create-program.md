@@ -3,9 +3,9 @@ title: Criar um programa
 description: Saiba como usar o Cloud Manager para criar seu primeiro programa.
 role: Admin, User, Developer
 exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
-source-git-commit: fbf1e0b7cefb1dc981d7ee106283280fb2225007
+source-git-commit: 69ac8e444a0f22649b48ec25b549ad60858f8b1b
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '604'
 ht-degree: 4%
 
 ---
@@ -39,10 +39,6 @@ Existem dois tipos diferentes de programas:
 
 Como atendem a diferentes objetivos, os diferentes ambientes têm diferentes opções. No entanto, o processo de criação é semelhante. Para essa jornada de integração, criaremos um ambiente sandbox.
 
->[!NOTE]
->
->Por padrão, um usuário com acesso a um ambiente de AEM também terá a função Cloud > Gerenciar usuário . Essa função em si mesma é insuficiente para dar ao usuário acesso à visualização dos detalhes do programa. Esse usuário com apenas a função de usuário do Cloud Manager pode navegar pelas opções de menu do programa até o URL do autor do ambiente de AEM (se existirem ambientes). Esses usuários devem entrar em contato com o administrador se quiserem obter acesso no nível do programa.
-
 ## Criação de um programa de sandbox {#create-sandbox}
 
 Siga estas etapas para criar um programa sandbox.
@@ -75,3 +71,4 @@ Siga os recursos adicionais para saber mais sobre:
 * [Criação de programas de sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) - Saiba como usar o Cloud Manager para criar seu próprio programa sandbox para treinamento, demonstração, POC ou outros fins que não sejam de produção.
 * [Criação de programas de produção](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) - Saiba como usar o Cloud Manager para criar seu próprio programa de produção para hospedar o tráfego ao vivo.
 * [Uso do Adobe Cloud Manager - Programas](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html) - Os programas do Cloud Manager representam conjuntos de ambientes de AEM que oferecem suporte a conjuntos lógicos de iniciativas de negócios, normalmente correspondendo a um SLA (Service Level Agreement, contrato de nível de serviço) adquirido.
+* [AEM equipe as a Cloud Service e perfis de produto](/help/onboarding/aem-cs-team-product-profiles.md) - Saiba como AEM equipe as a Cloud Service e os perfis de produto podem conceder e limitar o acesso às soluções de Adobe licenciadas.

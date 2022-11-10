@@ -1,17 +1,17 @@
 ---
 title: Equipe e perfis de produto do AEM as a Cloud Service
-description: Saiba como AEM equipe as a Cloud Service e perfis de produtos, além de conceder e limitar o acesso às soluções de Adobe licenciadas.
+description: Saiba como AEM equipe as a Cloud Service e os perfis de produto podem conceder e limitar o acesso às soluções de Adobe licenciadas.
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
-source-git-commit: d4786b5d527092027e8e825d0a2475a8be6a710a
+source-git-commit: 69ac8e444a0f22649b48ec25b549ad60858f8b1b
 workflow-type: tm+mt
-source-wordcount: '687'
+source-wordcount: '748'
 ht-degree: 2%
 
 ---
 
 # Equipe e perfis de produto do AEM as a Cloud Service {#product-profiles}
 
-Saiba como AEM equipe as a Cloud Service e perfis de produtos, além de conceder e limitar o acesso às soluções de Adobe licenciadas.
+Saiba como AEM equipe as a Cloud Service e os perfis de produto podem conceder e limitar o acesso às soluções de Adobe licenciadas.
 
 ## Perfis de produto {#profiles}
 
@@ -31,7 +31,9 @@ Os membros AEM da equipe as a Cloud Service serão adicionados e atribuídos a u
 
 >[!NOTE]
 >
->Todos os usuários atribuídos a um perfil de produto AEM as a Cloud Service têm (somente leitura) acesso ao Cloud Manager.
+>Todos os usuários atribuídos a um perfil de produto AEM as a Cloud Service têm acesso somente leitura ao Cloud Manager por meio do **Usuário do Cloud Manager** função.
+>
+>Usuários com somente o **Usuário do Cloud Manager** A função pode fazer logon no Cloud Manager e navegar até os ambientes do autor do AEM (se existirem) usando o **Programas** opções de menu. O **Usuário do Cloud Manager** não é suficiente para acessar os detalhes do programa. Se esse acesso for necessário, os usuários devem receber funções adicionais pelo administrador do sistema.
 
 >[!TIP]
 >
