@@ -5,10 +5,10 @@ landing-page-description: Saiba como gerenciar Fragmentos de conteúdo no consol
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: b20ec4fb6068fe0ecfe74a6d1bff8038f330ff38
 workflow-type: tm+mt
-source-wordcount: '883'
-ht-degree: 64%
+source-wordcount: '901'
+ht-degree: 63%
 
 ---
 
@@ -33,6 +33,10 @@ O Console de fragmentos de conteúdo é dedicado ao gerenciamento, pesquisa e cr
 >[!NOTE]
 >
 >Uma seleção de [atalhos de teclado estão disponíveis para uso neste console](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
+
+>[!NOTE]
+>
+>A equipe do projeto pode personalizar o console, se necessário. Consulte [Personalização do console Fragmento do conteúdo](/help/implementing/developing/extending/content-fragment-console-customizing.md) para obter mais detalhes.
 
 O Console de fragmentos de conteúdo pode ser acessado diretamente do nível superior da navegação global:
 
