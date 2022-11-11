@@ -4,9 +4,9 @@ description: Saiba como criar Perfis de imagem do Dynamic Media que contêm conf
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 28dbb0afa6c63efd64d409f8df0ef837bc10f5d9
+source-git-commit: 7ab618893ab18dde6dbbceaf098fe7334b503d07
 workflow-type: tm+mt
-source-wordcount: '3333'
+source-wordcount: '3351'
 ht-degree: 8%
 
 ---
@@ -17,15 +17,15 @@ Ao fazer upload de imagens, você pode cortar automaticamente a imagem ao fazer 
 
 >[!IMPORTANT]
 >
->Os Perfis de imagem não se aplicam a arquivos PDF, GIF animado ou INDD (Adobe InDesign).
+>・ O formato de imagem CMYK não é compatível com o recorte inteligente.
+・ Os perfis de imagem não se aplicam a arquivos PDF, GIF animado ou INDD (Adobe InDesign).
 
 ## Opção Tirar nitidez da máscara {#unsharp-mask}
 
 Ao criar um Perfil de imagem, você pode usar a variável **[!UICONTROL Tirar nitidez da máscara]** para ajustar um efeito de filtro de nitidez na imagem final com resolução reduzida. Você pode controlar a intensidade do efeito, o raio do efeito (medido em pixels) e um limite de contraste que é ignorado. Esse efeito usa as mesmas opções do filtro &quot;Tirar nitidez da máscara&quot; do Adobe Photoshop.
 
 >[!NOTE]
->
->A Tirar nitidez da máscara é aplicada apenas a representações baixadas dentro do PTIFF (tiff de pirâmide) que têm uma resolução reduzida de mais de 50%. Isso significa que as representações de maior porte dentro do ptiff não são afetadas pela máscara de nitidez. Enquanto as representações de menor tamanho, como miniaturas, são alteradas (e mostram a máscara de nitidez).
+A Tirar nitidez da máscara é aplicada apenas a representações baixadas dentro do PTIFF (tiff de pirâmide) que têm uma resolução reduzida de mais de 50%. Isso significa que as representações de maior porte dentro do ptiff não são afetadas pela máscara de nitidez. Enquanto as representações de menor tamanho, como miniaturas, são alteradas (e mostram a máscara de nitidez).
 
 Em **[!UICONTROL Tirar nitidez da máscara]**, você tem as seguintes opções de filtragem:
 
@@ -71,8 +71,7 @@ Cada geração de Corte inteligente que você cria requer processamento extra. P
 Você tem duas opções de recorte de imagem para escolher. Você também pode optar por automatizar a criação de amostras de cores e imagens ou preservar o conteúdo de corte nas resoluções do target.
 
 >[!IMPORTANT]
->
->O Adobe recomenda que você analise todas as culturas e amostras geradas para garantir que elas sejam apropriadas e relevantes para sua marca e valores.
+O Adobe recomenda que você analise todas as culturas e amostras geradas para garantir que elas sejam apropriadas e relevantes para sua marca e valores.
 
 | Opção | Quando usar | Descrição |
 | --- | --- | --- |
@@ -85,9 +84,10 @@ Você tem duas opções de recorte de imagem para escolher. Você também pode o
 
 A resolução máxima de tamanho de arquivo de entrada compatível é de 16K.
 
+O formato de imagem CMYK não é compatível com o recorte inteligente.
+
 >[!NOTE]
->
->Resolução de 16K é uma resolução de exibição com aproximadamente 16.000 pixels horizontalmente. A resolução de 16K mais comumente discutida é de 15360 × 8640, o que dobra a contagem de pixels de 8K UHD em cada dimensão, para um total de quatro vezes mais pixels. Essa resolução tem 132,7 megapixels, 16 vezes mais pixels do que a resolução de 4K e 64 vezes mais pixels do que a resolução de 1080p.
+Resolução de 16K é uma resolução de exibição com aproximadamente 16.000 pixels horizontalmente. A resolução de 16K mais comumente discutida é de 15360 × 8640, o que dobra a contagem de pixels de 8K UHD em cada dimensão, para um total de quatro vezes mais pixels. Essa resolução tem 132,7 megapixels, 16 vezes mais pixels do que a resolução de 4K e 64 vezes mais pixels do que a resolução de 1080p.
 
 | Formato de imagem | Extensão de arquivo que não diferencia maiúsculas de minúsculas | Tipo MIME | Espaço de cores de entrada suportado | Tamanho máximo suportado do arquivo de entrada | Formato de imagem suportado? |
 | --- | --- | --- | --- | --- | --- |
@@ -200,17 +200,15 @@ Você pode reprocessar ativos em uma pasta que já tenha um perfil de vídeo exi
 ## Editar o recorte inteligente ou a amostra inteligente de uma única imagem {#editing-the-smart-crop-or-smart-swatch-of-a-single-image}
 
 >[!IMPORTANT]
->
->O Adobe recomenda que você analise todas as culturas inteligentes e amostras inteligentes geradas para garantir que elas sejam apropriadas e relevantes para sua marca e valores.
+O Adobe recomenda que você analise todas as culturas inteligentes e amostras inteligentes geradas para garantir que elas sejam apropriadas e relevantes para sua marca e valores.
 
 Você pode realinhar ou redimensionar manualmente a janela de recorte inteligente de uma imagem para refinar ainda mais seu ponto focal.
 
 Depois de editar um recorte inteligente e salvar, a alteração é propagada em todos os locais em que você usa o recorte para as imagens específicas.
 
 >[!IMPORTANT]
->
->Quando você realinha ou redimensiona manualmente a janela de recorte inteligente de um ativo, essa edição é mantida e preservada, mesmo se posteriormente você decidir reprocessar o ativo. No entanto, se você editar a largura, a altura ou ambos na variável **[!UICONTROL Recorte responsivo de imagem]** do Perfil de imagem, esse ativo está sujeito ao reprocessamento.
->Consulte [Reprocessar ativos do Dynamic Media em uma pasta](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+Quando você realinha ou redimensiona manualmente a janela de recorte inteligente de um ativo, essa edição é mantida e preservada, mesmo se posteriormente você decidir reprocessar o ativo. No entanto, se você editar a largura, a altura ou ambos na variável **[!UICONTROL Recorte responsivo de imagem]** do Perfil de imagem, esse ativo está sujeito ao reprocessamento.
+Consulte [Reprocessar ativos do Dynamic Media em uma pasta](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
 Você pode executar o recorte inteligente novamente para gerar as culturas adicionais, se necessário.
 
@@ -240,9 +238,8 @@ Depois de aplicar um Perfil de imagem - contendo Recorte inteligente - a uma pas
 Depois de editar um recorte inteligente e salvar, a alteração é propagada em todos os locais em que você usa o recorte para as imagens específicas.
 
 >[!IMPORTANT]
->
->Ao realinhar ou redimensionar manualmente a janela de recorte inteligente de vários ativos, essas edições são mantidas e preservadas, mesmo que você decida reprocessar esses ativos posteriormente. No entanto, se você editar a largura, a altura ou ambos na área **[!UICONTROL Recorte de imagem responsivo]** do Perfil de imagem, esses ativos estarão sujeitos a reprocessamento.
->Consulte [Reprocessar ativos do Dynamic Media em uma pasta](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+Ao realinhar ou redimensionar manualmente a janela de recorte inteligente de vários ativos, essas edições são mantidas e preservadas, mesmo que você decida reprocessar esses ativos posteriormente. No entanto, se você editar a largura, a altura ou ambos na área **[!UICONTROL Recorte de imagem responsivo]** do Perfil de imagem, esses ativos estarão sujeitos a reprocessamento.
+Consulte [Reprocessar ativos do Dynamic Media em uma pasta](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
 Você pode executar o recorte inteligente novamente para gerar as culturas adicionais, se necessário.
 
