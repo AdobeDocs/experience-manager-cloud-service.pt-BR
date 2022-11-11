@@ -2,9 +2,9 @@
 title: Notas da versão [!DNL Workfront for Experience Manager enhanced connector]
 description: Notas da versão [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 8bcfcae211b2203915e7facc361188a0f5739547
+source-git-commit: 31198a1279e07d0a1afe41100d3cfe59d02fd686
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '830'
 ht-degree: 1%
 
 ---
@@ -57,7 +57,7 @@ A versão mais recente do [!DNL Workfront for Experience Manager enhanced connec
          `200` como o código de resposta significa exclusão bem-sucedida de assinaturas de evento incorretas.
    >[!NOTE]
    >
-   >Se você já tiver excluído as assinaturas de evento incorretas antes de executar as etapas mencionadas neste procedimento, ignore a Etapa 4.
+   >Se você já tiver excluído as assinaturas de evento incorretas antes de executar as etapas mencionadas neste procedimento, ignore a última etapa deste procedimento.
 
 
 >[!IMPORTANT]
