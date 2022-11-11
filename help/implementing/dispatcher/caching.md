@@ -3,9 +3,9 @@ title: Armazenamento em cache no AEM as a Cloud Service
 description: Armazenamento em cache no AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: c2160e7aee8ba0b322398614524ba385ba5c56cf
+source-git-commit: e354443e4f21cd1bc61593b95f718fbb1126ea5a
 workflow-type: tm+mt
-source-wordcount: '2580'
+source-wordcount: '2663'
 ht-degree: 1%
 
 ---
@@ -196,6 +196,19 @@ A camada de AEM não armazenará em cache o conteúdo do blob por padrão.
 ### Comportamento da solicitação de HEAD {#request-behavior}
 
 Quando uma solicitação de HEAD é recebida na CDN do Adobe para um recurso que é **not** em cache, a solicitação é transformada e recebida pelo Dispatcher e/ou AEM instância como uma solicitação do GET. Se a resposta for armazenável em cache, as solicitações de HEAD subsequentes serão atendidas no CDN. Se a resposta não puder ser armazenada em cache, as solicitações de HEAD subsequentes serão passadas para a instância do Dispatcher e/ou AEM por um período de tempo que depende do `Cache-Control` TTL.
+
+### Parâmetros da campanha de marketing {#marketing-parameters}
+
+Os URLs do site frequentemente incluem parâmetros de campanha de marketing usados para rastrear o sucesso de uma campanha. Para usar o cache do dispatcher de maneira eficaz, é recomendável configurar o `ignoreUrlParams` propriedade como [documentado](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters).
+
+O `ignoreUrlParams` deve estar sem comentários e deve fazer referência ao arquivo `conf.dispatcher.d/cache/marketing_query_parameters.any`, que podem ser modificadas ao descomentar as linhas correspondentes aos parâmetros relevantes para seus canais de marketing. Você também pode adicionar outros parâmetros.
+
+```
+/ignoreUrlParams {
+{{ /0001 { /glob "*" /type "deny" }}}
+{{ $include "../cache/marketing_query_parameters.any"}}
+}
+```
 
 ## Invalidação de cache do Dispatcher {#disp}
 

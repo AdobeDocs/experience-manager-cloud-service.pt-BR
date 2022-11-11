@@ -2,9 +2,9 @@
 title: Gerar documento de registro para Forms adaptável
 description: Explica como você pode gerar um modelo para um Documento de registro (DoR) para Adaptive Forms.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 21db238b0808d6131c2a22de3d47ba7f7bd2f48b
+source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
 workflow-type: tm+mt
-source-wordcount: '3659'
+source-wordcount: '4100'
 ht-degree: 2%
 
 ---
@@ -330,27 +330,35 @@ Para localizar as informações de marca inseridas na guia Document of Record , 
 1. Selecione um painel (painel raiz) no Documento de registro e toque em ![configure](assets/configure.png).
 1. Toque ![dortab](assets/dortab.png). A guia Document of Record é exibida.
 1. Selecione o modelo padrão ou um modelo personalizado para renderizar o Documento de registro. Se você selecionar o modelo padrão, uma visualização em miniatura do Documento de registro será exibida abaixo do menu suspenso Modelo.
+1. Com base na seleção de um modelo padrão ou personalizado, algumas ou todas as propriedades a seguir serão exibidas na guia Documento de registro. Especifique as propriedades mencionadas abaixo para definir a aparência do Documento de registro:
 
-   ![modelo de marca](assets/brandingtemplate.png)
+   1. **Propriedades básicas**:
+      * **Modelo**: Se você optar por selecionar um modelo personalizado, navegue por um XDP selecionado em seu [!DNL AEM Forms] servidor. Se você quiser usar um modelo que ainda não esteja em seu [!DNL AEM Forms] primeiro faça upload do XDP em seu [!DNL AEM Forms] servidor.
+      * **Cor do destaque**: A cor na qual o texto do cabeçalho e as linhas separadoras são renderizados no PDF de documento ou registro.
+      * **Família de fontes**: Família de fontes do texto no PDF Documento de registro.
+      * **Incluir objetos de formulário que não estão vinculados ao modelo de dados**: A configuração da propriedade inclui campos não vinculados do Formulário adaptável baseado em esquema no documento de registro.
+      * **Excluir campos ocultos do Documento de registro**: Definir a propriedade identifica os campos ocultos para exclusão do Documento de registro.
+      * **Ocultar descrição de painéis**: A configuração da propriedade exclui a descrição do painel/tabela do Documento de registro. Aplicável para painel e tabela.
 
-   Se você optar por selecionar um modelo personalizado, navegue por um XDP selecionado em seu [!DNL AEM Forms] servidor. Se você quiser usar um modelo que ainda não esteja em seu [!DNL AEM Forms] primeiro faça upload do XDP em seu [!DNL AEM Forms] servidor.
+      ![Propriedades básicas](/help/forms/assets/basicpropertiesdor.png)
 
-1. Com base na seleção de um modelo padrão ou personalizado, algumas ou todas as propriedades a seguir serão exibidas na guia Documento de registro. Especifique estes adequadamente:
+   1. **Propriedades do campo de formulário**:
+      * **Para os componentes Caixa de seleção e Botão de opção , mostrar somente os valores selecionados**: A configuração da propriedade exibe apenas os valores selecionados da caixa de seleção e do botão de opção em [!UICONTROL Documento de registro].
+      * **Separador para vários valores**: É possível escolher qualquer separador, como vírgula ou quebra de linha, para exibir vários valores.
+      * **Alinhamento de opções**: Você pode selecionar o alinhamento desejado (horizontal, vertical, igual ao formulário adaptável) para definir o alinhamento dos campos, como caixa de seleção ou botão de opção a serem exibidos em [!UICONTROL Documento de registro]. Por padrão, o alinhamento vertical é definido para os campos em [!UICONTROL Documento de registro]. A configuração das propriedades na [!UICONTROL Propriedades do campo de formulário] do DoR substitui as propriedades definidas no [!UICONTROL Alinhamento de Item] para os campos em um formulário adaptável. Nesse caso, selecione [!UICONTROL Igual ao formulário aptivo] , o alinhamento como configurado em uma instância do autor do formulário adaptável é usado para [!UICONTROL Documento de registro] campos.
+      * **Número de opções para alinhamento horizontal**: é possível definir o número de opções a serem exibidas no Documento de registro para o alinhamento horizontal.
 
-   * **Imagem do logotipo**: Você pode optar por usar a imagem do logotipo do Formulário adaptável, escolher um DAM ou fazer upload de um de seu computador.
-   * **Título do formulário**
-   * **Texto do cabeçalho**
-   * **Rótulo do aviso**
-   * **Aviso**
-   * **Texto do aviso**
-   * **Cor do destaque**: A cor na qual o texto do cabeçalho e as linhas separadoras são renderizados no PDF de documento ou registro
-   * **Família de fontes**: Família de fontes do texto no Document of Record PDF
-   * **Para os componentes Caixa de seleção e Botão de opção , mostrar somente os valores selecionados**
-   * **Separador para vários valores selecionados**
-   * **Incluir objetos de formulário que não estão vinculados ao modelo de dados**
-   * **Excluir campos ocultos do Documento de registro**
-   * **Ocultar descrição de painéis**
+      ![Propriedades do campo de formulário](/help/forms/assets/formfieldpropertiesdor.png)
 
+   1. **Página principal  Propriedades**:
+      * **Imagem do logotipo**: Você pode optar por usar a imagem do logotipo do Formulário adaptável, escolher um DAM ou fazer upload de um de seu computador.
+      * **Título do formulário**: Título do DoR.
+      * **Texto do cabeçalho**: Texto que aparece na seção de cabeçalho do Documento de registro.
+      * **Rótulo de isenção de responsabilidade**: Rótulo de isenção de responsabilidade.
+      * **Isenção de responsabilidade**: Texto que especifica o âmbito dos direitos e obrigações do Documento de Registro.
+      * **Texto de isenção de responsabilidade**: Texto de isenção de responsabilidade.
+
+      ![Página principal  Propriedades](/help/forms/assets/masterpagepropertiesdor.png)
    >[!NOTE]
    >
    >Se você estiver usando um modelo de Formulário adaptável criado com uma versão do Designer anterior à 6.3, para que as propriedades Cor do destaque e Família de fontes funcionem, verifique se o seguinte está presente no modelo de Formulário adaptável abaixo do subformulário raiz:
@@ -367,7 +375,30 @@ Para localizar as informações de marca inseridas na guia Document of Record , 
    </proto>
    ```
 
-1. Para salvar as alterações da marca, toque em Concluído.
+1. Para salvar as alterações da marca, toque em **[!UICONTROL Concluído]**.
+
+## Suporte para documento de registro no editor de formulário adaptável {#dor-support-in-adaptiveform}
+
+Você pode configurar o [!UICONTROL Documento de registro] diretamente do editor de formulário adaptável ou do editor de modelo de formulário adaptável.
+
+Execute as seguintes etapas da instância do autor do editor de formulário adaptável:
+
+1. Selecione o **[!UICONTROL Contêiner de formulário adaptável (raiz)]** componente.
+1. Clique em ![Ícone Configurar](/help/forms/assets/configure-icon.svg) ícone para abrir o **[!UICONTROL Propriedades]** do contêiner de Formulário adaptável.
+1. Abra o **[!UICONTROL Documento de Modelo de Registro]** e selecione uma das seguintes opções:
+   * **[!UICONTROL Nenhum]**: Quando esta opção é selecionada, não [!UICONTROL Documento de registro] modelo criado para o formulário adaptável.
+
+   * **[!UICONTROL Associar Modelo de Formulário como Documento de Modelo de Registro]**: quando essa opção é selecionada, o Formulário XFA é usado como modelo para o Documento de registro.
+
+   * **[!UICONTROL Gerar Documento de Registro]**: Quando essa opção é selecionada, a variável [!UICONTROL Documento de registro] O modelo é gerado automaticamente para o formulário adaptável.
+
+1. Toque ![Salvar](/help/forms/assets/check-button.png) para salvar as propriedades.
+
+![Suporte para Modelo de Documento de Registro](/help/forms/assets/dor-templatesupport.png)
+
+>[!NOTE]
+>
+>When [!UICONTROL Documento de registro] O modelo é criado usando um editor de modelo de formulário adaptável, então apenas duas opções estão disponíveis em [!UICONTROL Documento de Modelo de Registro] guia como [!UICONTROL Nenhum] e [!UICONTROL Gerar Documento de Registro].
 
 ## Layouts de tabela e coluna para painéis no Documento de registro {#table-and-column-layouts-for-panels-in-document-of-record}
 
@@ -400,7 +431,7 @@ A configuração do componente Documento de registro está disponível em suas p
 **Configurações de nível de formulário**
 
 * **Incluir campos não vinculados em DoR:** A configuração da propriedade inclui campos não vinculados do Formulário adaptável baseado em esquema no documento de registro. Por padrão, é verdadeiro.
-* **Excluir campos de DoR se ocultos:** A configuração da propriedade substitui o comportamento da propriedade de nível de campo &quot;Excluir do documento de registro&quot; quando não é verdadeira. Se os campos estiverem ocultos no momento do envio do formulário, eles serão excluídos do Documento de registro se a propriedade estiver definida como true, desde que a propriedade &quot;Excluir do documento de registro&quot; não esteja definida. Configuração [Revalidar no servidor](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form) propriedade to true identifica os campos ocultos para exclusão do documento de registro no lado do servidor.
+* **Excluir campos de DoR se ocultos:** A configuração da propriedade substitui o comportamento da propriedade de nível de campo &quot;Excluir do documento de registro&quot; quando não é verdadeira. Se os campos estiverem ocultos no momento do envio do formulário, eles serão excluídos do Documento de registro se a propriedade estiver definida como true, desde que a propriedade &quot;Excluir do documento de registro&quot; não esteja definida. Configuração [Revalidar no servidor](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form) propriedade to true identifica os campos ocultos para exclusão do Documento de registro no lado do servidor.
 
 ## Usar um arquivo XCI personalizado
 

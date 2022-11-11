@@ -2,10 +2,10 @@
 title: Fragmentos de experiência
 description: Use os Fragmentos de experiência do Adobe Experience Manager as a Cloud Service para tornar suas experiências reutilizáveis e flexíveis.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 456b754fad3dc2d8f684f344b69d57d47b823b03
+source-git-commit: ccf5cdf56867ca077d7ff71bfb2f1f4af1b32bd9
 workflow-type: tm+mt
-source-wordcount: '1566'
-ht-degree: 100%
+source-wordcount: '1971'
+ht-degree: 79%
 
 ---
 
@@ -308,6 +308,62 @@ Ao editar um Fragmento de experiência disponível, os Blocos de construção s�
 
 ![Seleção de blocos de construção](/help/sites-cloud/authoring/assets/xf-14.png)
 
+## Personalização no seu fragmento de experiência {#personalization-experience-fragment}
+
+A personalização no Fragmento de experiência permite que você, como profissional de marketing, defina públicos-alvo para o Fragmento de experiência apenas uma vez e, em seguida, reutilize o fragmento em qualquer página. Isso:
+
+* elimina a necessidade de especificar as variações necessárias para cada público-alvo sempre que o fragmento for usado
+* mantém o estilo nas ofertas
+
+Você pode criar um Fragmento de experiência com vários componentes agrupados dentro desse único fragmento. Você também pode criar variações do fragmento para cada segmento de público-alvo específico e reutilizar esses Fragmentos de experiência nos canais necessários.
+
+A personalização é alcançada definindo o **Personalização** propriedades no Fragmento de experiência ou na variação, ou na pasta que contém os fragmentos; isso significa que a herança pode substituir propriedades de personalização.
+
+A configuração dessas propriedades também ativa a variável **Direcionamento** no editor Fragmento de experiência.
+
+### Definição de personalização para seu fragmento de experiência {#defining-personalization-experience-fragment}
+
+Para personalizar o fragmento:
+
+1. Navegue até o local desejado no **Fragmentos de experiência** console.
+
+1. Selecione uma pasta ou o fragmento e **Propriedades** na barra de ferramentas.
+
+   >[!NOTE]
+   >
+   >As propriedades de personalização definidas em uma pasta serão herdadas por todas as pastas filho por meio da subárvore e os Fragmentos de experiência (e variações) dentro dessa subárvore. Elas podem ser substituídas quebrando a herança.
+
+1. Abra o **Personalização** para definir e salvar suas configurações. Por exemplo, em uma pasta:
+
+   ![Fragmento de experiência - Propriedades de personalização](/help/sites-cloud/authoring/assets/xf-personalization-properties.png)
+
+   >[!CAUTION]
+   >
+   >Quando um fragmento é incorporado em uma página do Sites e **Personalização** foi configurada, então somente a versão de personalização da página será usada no tempo de renderização da página.
+   >
+   >Para que o direcionamento executado nos componentes de um fragmento funcione na renderização da página, as seguintes condições devem ser atendidas:
+   >
+   >O **Caminho do ContextHub** selecionado no **Personalização** A guia deve ser:
+   >
+   >* o mesmo caminho que o configurado para a página em que o fragmento será renderizado
+      >Ou:
+   >* um caminho que contém um subconjunto dos armazenamentos definidos no ContextHub configurado para a página
+
+   >
+   > 
+O **Caminho dos segmentos** selecionado no **Personalização** A guia deve ser:
+   * o mesmo caminho que o configurado para a página em que o fragmento será renderizado Ou
+   * um caminho que contém um subconjunto dos segmentos configurados para a página
+
+
+### Definição de direcionamento para seu fragmento de experiência {#defining-targeting-experience-fragment}
+
+Após configurar as propriedades de personalização, o modo Direcionamento estará disponível quando o fragmento for aberto para edição.
+
+![Editor de fragmento de experiência - Modo de direcionamento](/help/sites-cloud/authoring/assets/xf-targeting-mode.png)
+
+Esse modo opera da mesma maneira que para edição de página. Consulte [Modo de Direcionamento para o Editor de páginas](/help/sites-cloud/authoring/personalization/targeted-content.md) para obter mais detalhes.
+
 ## Detalhes do Fragmento de experiência {#details-of-your-experience-fragment}
 
 Os detalhes do fragmento podem ser vistos:
@@ -324,10 +380,8 @@ Os detalhes são mostrados em todas as exibições do console **Fragmentos de ex
    As propriedades estão disponíveis em várias guias:
 
    >[!CAUTION]
-   >
-   >Essas guias são exibidas quando você abre **Propriedades** no console Fragmentos de experiência.
-   >
-   >Se você clicar em **Abrir propriedades** ao editar um Fragmento de experiência, as [Propriedades da página](/help/sites-cloud/authoring/fundamentals/page-properties.md) apropriadas serão exibidas.
+   Essas guias são exibidas quando você abre **Propriedades** no console Fragmentos de experiência.
+   Se você clicar em **Abrir propriedades** ao editar um Fragmento de experiência, as [Propriedades da página](/help/sites-cloud/authoring/fundamentals/page-properties.md) apropriadas serão exibidas.
 
    ![Propriedades do fragmento de experiência](/help/sites-cloud/authoring/assets/xf-17.png)
 
@@ -356,8 +410,7 @@ Os detalhes são mostrados em todas as exibições do console **Fragmentos de ex
 Usando o seletor `.plain.` no URL, você poderá acessar a representação HTML simples do navegador.
 
 >[!NOTE]
->
->Embora isso esteja disponível diretamente no navegador, [o principal objetivo é permitir que outros aplicativos (por exemplo, aplicativos Web de terceiros, implementações personalizadas de publicações de conteúdo para dispositivos móveis) acessem o conteúdo do Fragmento de experiência diretamente, usando apenas o URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
+Embora isso esteja disponível diretamente no navegador, [o principal objetivo é permitir que outros aplicativos (por exemplo, aplicativos Web de terceiros, implementações personalizadas de publicações de conteúdo para dispositivos móveis) acessem o conteúdo do Fragmento de experiência diretamente, usando apenas o URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
 
 ## Publicação de fragmentos de experiência {#publishing-experience-fragments}
 

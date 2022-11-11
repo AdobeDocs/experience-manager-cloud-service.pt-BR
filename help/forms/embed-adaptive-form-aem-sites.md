@@ -3,10 +3,10 @@ title: Incorporar um formulário adaptável na página do AEM Sites
 seo-title: Hwo to add an Adaptive Form to an AEM Sites page?
 description: Você pode usar o componente Contêiner do AEM Forms para adicionar ou incorporar o Adaptive Forms a uma página do AEM Sites para preencher e enviar um formulário sem sair das páginas do AEM Sites.
 feature: Adaptive Forms
-source-git-commit: dac38b2a90b2a1969e5332b8a658e8f1e0e5eccb
+source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
 workflow-type: tm+mt
-source-wordcount: '1036'
-ht-degree: 1%
+source-wordcount: '1178'
+ht-degree: 0%
 
 ---
 
@@ -20,17 +20,21 @@ O AEM Forms permite que desenvolvedores de formulários incorporem, sem interrup
 
 Na página AEM Sites, é possível adicionar um Formulário adaptável usando:
 
-* **[Componente Contêiner do AEM Forms](/help/forms/using/embed-adaptive-form-aem-sites.md#af-component)**
+* **Componente Contêiner do AEM Forms**
 O AEM Forms fornece um componente que pode ser adicionado às páginas do site. O componente Contêiner do AEM Forms permite que você incorpore um Formulário adaptável.
 
-* **[Navegador de ativos](/help/forms/using/embed-adaptive-form-aem-sites.md#asset-browser)**
+* **Navegador de ativos**
 Todos os formulários estão disponíveis em Ativos. Você pode arrastar e soltar o formulário como um ativo na página.
 
 ## Pré-requisitos {#prerequisites}
 
-Para incorporar um formulário adaptável em uma página do AEM Sites que use um modelo editável, verifique se o componente Formulário AEM está configurado como um componente permitido no modelo associado. Para obter mais informações, consulte **Política e propriedades (contêiner de layout)** seção em [Criação de modelos de página](/help/sites-authoring/templates.md).
+Para incorporar um formulário adaptável em uma página do AEM Sites que use um modelo editável, verifique se o componente Formulário AEM está configurado como um componente permitido no modelo associado.
 
-No caso de uma página Sites usando um modelo estático, é necessário configurá-la no sistema de parágrafo da página do site. Para obter mais informações, Consulte [Configuração dos componentes no modo de Design](/help/sites-authoring/default-components-designmode.md).
+Em caso **Componente Contêiner do AEM Forms** não está visível no **Painel do navegador de componentes** de sites AEM, execute as seguintes etapas, conforme ilustrado no vídeo.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3410544)
+
+Caso a página Sites esteja usando um modelo estático, é necessário configurá-lo no sistema de parágrafo da página do site.
 
 ## Como incorporar um formulário adaptável {#af-component}
 
@@ -48,21 +52,31 @@ Para incorporar um formulário adaptável usando o componente Contêiner do AEM 
 1. Toque no componente AEM Forms Container incorporado na página Sites e toque em ![settings_icon](assets/settings_icon.png) na barra de ações. O **[!UICONTROL Editar contêiner do AEM Forms]** será aberta.
 1. Na caixa de diálogo Editar contêiner do AEM Forms , especifique o seguinte.
 
-   <!-- * **Asset Type:** Select the type of asset to embed. The options are Adaptive Form -->
+   **Tipo de ativo:** Selecione o tipo de ativo a ser incorporado.
    * **Caminho do ativo**: Navegue e selecione o Formulário adaptável a ser incorporado. Ele é preenchido automaticamente se você soltou no navegador Ativos.
    * **Pós-envio** : Selecione a ação a ser acionada no envio do formulário. Você pode optar por mostrar uma mensagem de agradecimento ou uma página de agradecimento.
+      * Mostrar
 
       * **Mensagem de agradecimento**: Escreva uma mensagem usando o editor de rich text para mostrar no envio do formulário. Essa opção está disponível somente quando você opta por mostrar uma mensagem de agradecimento.
       * **Página de agradecimento**: Navegue e selecione a página a ser exibida no envio do formulário. Essa opção está disponível somente quando você opta por mostrar uma página de agradecimento.
          * **Redirecionar para página de agradecimento**: Habilite a opção para substituir a página que contém o formulário adaptável incorporado pela página de agradecimento. Caso contrário, a página de agradecimento substituirá o Formulário adaptável no contêiner do AEM Forms, sem atualizar os sites subjacentes na página. Essa opção está disponível somente quando você opta por mostrar uma página de agradecimento.
    * **Usar idioma da página**: Use o local da página do AEM Sites em vez do local do Formulário adaptativo.
    * **Definir foco no formulário**: Selecione para definir o foco no primeiro campo do formulário adaptável.
-
    * **Tema**: Selecione um tema que defina o estilo dos componentes do seu formulário adaptável. O estilo inclui propriedades de aparência, como estilo de fonte, cor de plano de fundo, dimensões e alinhamento.
+   * **O formulário cobre toda a largura do quadro**: Se marcada, o iframe não é usado para renderizar o formulário.
    * **Altura**: Especifique a altura do contêiner. Deixe em branco para redimensionar automaticamente o contêiner.
    * **Biblioteca de clientes CSS**: Especifique o caminho para uma biblioteca de cliente CSS.
 
 1. Salve as configurações. O formulário adaptável agora está incorporado na página.
+
+AEM site também permite criar um formulário adaptável dinamicamente usando o componente contêiner de formulários AEM . Siga as etapas para criar um formulário adaptável usando **Componente de contêiner do AEM Forms** na página de sites AEM:
+1. Abra a página AEM sites, no modo de edição, na qual deseja incorporar um formulário adaptável.
+1. No painel Navegador de componentes , arraste e solte o componente Contêiner do AEM Forms na página.
+1. Clique no botão **Plus** e você será redirecionado para o assistente de criação de formulário.
+
+   ![Componente do contêiner de formulário AEM](/help/forms/assets/aemformcontainer.png)
+
+1. Quando um formulário adaptável é criado, você é redirecionado para a página de sites de AEM e o formulário criado é renderizado na página de sites de AEM.
 
 ## Publicação do formulário adaptável incorporado {#publishing-embedded-adaptive-form}
 

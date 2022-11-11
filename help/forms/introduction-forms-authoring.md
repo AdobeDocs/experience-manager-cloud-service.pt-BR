@@ -9,9 +9,9 @@ topic-tags: author, introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
 workflow-type: tm+mt
-source-wordcount: '2317'
+source-wordcount: '2409'
 ht-degree: 4%
 
 ---
@@ -23,8 +23,8 @@ ht-degree: 4%
 
 O Adaptive Forms permite criar formulários envolventes, responsivos, dinâmicos e adaptáveis. [!DNL AEM Forms] O oferece uma interface de usuário intuitiva e componentes prontos para uso para criar e trabalhar com o Adaptive Forms. É possível optar por criar um formulário adaptável com base em um modelo ou esquema de formulário ou sem um modelo de formulário. É importante escolher cuidadosamente o modelo de formulário que atende não apenas às suas necessidades, mas estende os investimentos e ativos existentes em infraestrutura. Você pode escolher entre as seguintes opções para criar um formulário adaptável:
 
-<!-- * **Using a form data model**
-  [Data integration](data-integration.md) lets you integrate entities and services from disparate data sources in to a Form Data Model that you can use to create Adaptive Forms. Choose Form Data Model if the Adaptive Form you are creating involves fetching and write data from and to multiple data source. -->
+* **Uso de um modelo de dados de formulário**
+   [Integração de dados](data-integration.md) O permite integrar entidades e serviços de diferentes fontes de dados em um Modelo de dados de formulário que pode ser usado para criar o Adaptive Forms. Escolha Modelo de dados de formulário se o Formulário adaptável que você está criando envolver a busca e gravação de dados de e para várias fontes de dados.
 
 * **Uso de um modelo de formulário XDP**
 É um modelo de formulário ideal se você tiver investimentos em formulários XFA ou XDP. Ele fornece uma maneira direta de converter formulários baseados em XFA em Adaptive Forms. Quaisquer regras XFA existentes são retidas no Adaptive Forms associado. O Adaptive Forms resultante oferece suporte a construções XFA, como validações, eventos, propriedades e padrões.
@@ -35,7 +35,11 @@ Os esquemas XML e JSON representam a estrutura na qual os dados são produzidos 
 * **Uso de um modelo de formulário nenhum ou sem**
 O Adaptive Forms criado com essa opção não usa nenhum modelo de formulário. O XML de dados gerado desses formulários tem uma estrutura simples com campos e valores correspondentes.
 
-<!--  For more information about creating an Adaptive Form, see [Creating an Adaptive Form](creating-adaptive-form.md). -->
+   >[!NOTE]
+   >
+   > É possível modificar as propriedades do modelo de formulário no editor de formulário adaptável ou no editor de modelo de formulário adaptável. Para obter mais informações, consulte [Editar as propriedades do Modelo de formulário de um formulário adaptável](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model).
+
+Para criar um formulário adaptável, consulte [Criação de um formulário adaptável](creating-adaptive-form.md).
 
 ## Interface do usuário de criação de formulário adaptável {#adaptive-form-authoring-ui}
 

@@ -2,10 +2,10 @@
 title: Criação de conteúdo direcionado usando o modo Direcionar
 description: O modo de Direcionamento e o componente de Direcionamento fornecem ferramentas para criar o conteúdo das experiências
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f619cc2b1fcc697ebe7af7370b6839fe5ce40419
 workflow-type: tm+mt
-source-wordcount: '5342'
-ht-degree: 100%
+source-wordcount: '5414'
+ht-degree: 98%
 
 ---
 
@@ -22,7 +22,25 @@ Crie conteúdo direcionado usando o modo Direcionar do AEM. O modo Direcionar e 
 * Simule a experiência do usuário.
 * Para mais customização, configure o componente do Target.
 
-Você pode usar o AEM ou o Adobe Target como o mecanismo de direcionamento (é necessário ter uma conta válida do Adobe Target para usá-lo). Se você estiver usando o Adobe Target, é necessário configurar a integração primeiro. Consulte as instruções de integração com o Adobe Target. <!--See the[instructions for integrating with Adobe Target](/help/sites-administering/target.md).-->
+>[!NOTE]
+>
+>O modo Direcionar está disponível no Editor de páginas e no Editor de fragmentos de experiência.
+>
+>A documentação a seguir é aplicável a ambos (já que ambos operam na mesma base), embora tenha sido escrita para o Editor de páginas.
+
+>[!CAUTION]
+>
+>Ao direcionar no Editor de páginas, somente os componentes do Fragmento de experiência podem ser direcionados.
+>
+>Outros tipos de componentes podem ser convertidos em um Fragmento de experiência usando o **Converter em variação de fragmento de experiência** na barra de ferramentas do componente.
+
+<!--
+>Other component types can be converted to an Experience Fragment using the **Convert to experience fragment variation** icon on the component toolbar:
+>
+>![Converting component to Experience Fragment](/help/sites-cloud/authoring/assets/offers-convert-legacy-icon.png)
+-->
+
+Você pode usar o AEM ou o Adobe Target como o mecanismo de direcionamento (é necessário ter uma conta válida do Adobe Target para usá-lo). Se você estiver usando o Adobe Target, é necessário configurar a integração primeiro. Consulte a [instruções para integração com o Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
 
 ![Direcionamento de conteúdo](../assets/targeted-content.png)
 

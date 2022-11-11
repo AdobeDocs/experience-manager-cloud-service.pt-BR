@@ -4,9 +4,9 @@ description: Adicione seus ativos digitais ao [!DNL Adobe Experience Manager] co
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 1ef60a024d6ffe704ef48df97ca998af3cd6b8a8
+source-git-commit: ad5bc4b1ae80421bc843d323c214c64334609de6
 workflow-type: tm+mt
-source-wordcount: '3029'
+source-wordcount: '3064'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ Embora você possa fazer upload e gerenciar qualquer arquivo binário no [!DNL E
 
 Você também pode optar por realizar processamento adicional nos ativos carregados. Vários perfis de processamento de ativos podem ser configurados na pasta, na qual os ativos são carregados, para adicionar metadados, representações ou serviços de processamento de imagens específicos. Consulte [processar ativos ao fazer upload](#process-when-uploaded).
 
-[!DNL Assets] O fornece os seguintes métodos de upload. O Adobe recomenda compreender o caso de uso e a aplicabilidade de uma opção de upload antes de usá-la.
+[!DNL Assets] forneça os seguintes métodos de upload. O Adobe recomenda compreender o caso de uso e a aplicabilidade de uma opção de upload antes de usá-la.
 
 | Método de upload | Quando usar? | Persona Primária |
 |---------------------|----------------|-----------------|
@@ -58,7 +58,7 @@ Você também pode optar por realizar processamento adicional nos ativos carrega
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
 -->
 
-Para carregar um arquivo (ou vários arquivos), você pode selecioná-los na área de trabalho e arrastar a interface do usuário (navegador da Web) para a pasta de destino. Como alternativa, você pode iniciar o upload a partir da interface do usuário do .
+Para carregar um arquivo (ou vários arquivos), você pode selecioná-los na área de trabalho e arrastar a interface do usuário (navegador da Web) para a pasta de destino. Como alternativa, você pode iniciar o upload na interface do usuário do .
 
 1. No [!DNL Assets] na interface do usuário, navegue até o local onde deseja adicionar ativos digitais.
 1. Para fazer upload dos ativos, siga um destes procedimentos:
@@ -118,7 +118,7 @@ Para reter o ativo duplicado em [!DNL Assets], clique em **[!UICONTROL Manter]**
 
 [!DNL Experience Manager Assets] impede que você carregue ativos com os caracteres proibidos em seus nomes de arquivo. Se você tentar fazer upload de um ativo com nomes de arquivo contendo um caractere não permitido ou mais, [!DNL Assets] exibe uma mensagem de aviso e interrompe o upload até que você remova esses caracteres ou faça upload com um nome permitido.
 
-Para adequar as convenções específicas de nomenclatura de arquivos para sua organização, a [!UICONTROL Fazer upload de ativos] permite especificar nomes longos para os arquivos carregados. Os seguintes caracteres (lista separada por espaços de) não são suportados:
+Para adequar-se a convenções específicas de nomenclatura de arquivos para a sua organização, o [!UICONTROL Fazer upload de ativos] permite especificar nomes longos para os arquivos carregados. Os seguintes caracteres (lista separada por espaços de) não são suportados:
 
 * Caracteres inválidos para o nome do ativo: `* / : [ \\ ] | # % { } ? &`
 * Caracteres inválidos para o nome da pasta de ativos: `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
@@ -172,6 +172,8 @@ Para configurar a ferramenta Importação em massa, siga estas etapas:
 
 1. Forneça os valores para criar uma conexão com a fonte de dados. Por exemplo, se você selecionar **Armazenamento Azure Blob** como fonte de dados, especifique os valores para a conta de armazenamento do Azure, o contêiner de blob do Azure e a chave de acesso do Azure.
 
+1. Selecione o modo de autenticação necessário na lista suspensa. **Chave de Acesso do Azure** fornece acesso completo à conta de armazenamento do Azure, enquanto **Token SAS do Azure** permite que o administrador limite os recursos do token usando permissões e políticas de expiração.
+
 1. Forneça o nome da pasta raiz que contém ativos na fonte de dados na **[!UICONTROL Pasta de Origem]** campo.
 
 1. (Opcional) Forneça o tamanho mínimo de arquivo dos ativos em MB para incluí-los no processo de assimilação no **[!UICONTROL Filtrar por tamanho mínimo]** campo.
@@ -220,7 +222,7 @@ Selecione a configuração e clique em **[!UICONTROL Execução de prática]** p
 
 Ao importar ativos ou pastas em massa, [!DNL Experience Manager Assets] importa toda a estrutura do que existe na fonte de importação. [!DNL Experience Manager] O segue as regras incorporadas para caracteres especiais nos nomes de ativo e pasta, portanto, esses nomes de arquivo precisam de limpeza. Para o nome da pasta e do ativo, o título definido pelo usuário permanece inalterado e é armazenado em `jcr:title`.
 
-Durante a importação em massa, [!DNL Experience Manager] procure as pastas existentes para evitar a reimportação de ativos e pastas, e também verifique as regras de limpeza aplicadas na pasta principal em que a importação ocorre. Se as regras de limpeza forem aplicadas na pasta pai, as mesmas regras serão aplicadas à fonte de importação. Para nova importação, as seguintes regras de privatização são aplicadas para gerenciar os nomes de arquivo de ativos e pastas.
+Durante a importação em massa, [!DNL Experience Manager] procure as pastas existentes para evitar a reimportação de ativos e pastas, e também verifique as regras de limpeza aplicadas na pasta principal em que a importação ocorre. Se as regras de limpeza forem aplicadas na pasta pai, as mesmas regras serão aplicadas à fonte de importação. Para nova importação, as seguintes regras de limpeza são aplicadas para gerenciar os nomes de arquivo de ativos e pastas.
 
 **Nomes não permitidos na importação em massa**
 

@@ -2,9 +2,9 @@
 title: Como criar um modelo de formulário adaptável?
 description: Crie modelos de formulário adaptável para definir a estrutura básica e o conteúdo inicial usando o Editor de modelos.
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
 workflow-type: tm+mt
-source-wordcount: '1750'
+source-wordcount: '1806'
 ht-degree: 1%
 
 ---
@@ -153,9 +153,17 @@ Ao criar um formulário adaptável, você pode ver o modelo listado quando for s
 
 Um formulário funciona com seu modelo. Quando você faz o download de um formulário adaptável criado usando um modelo personalizado, o modelo não é baixado. Ao importar o formulário em um [!DNL AEM Forms] , ele é importado sem seu template. Se um formulário for importado, mas seu modelo não estiver disponível, o formulário não será renderizado. Você pode empacotar o modelo personalizado de `/conf` nó no `https://<server>:<port>/crx/packmgr`e importe-o no [!DNL AEM Forms] instância em que deseja fazer upload do formulário. Você também pode [Crie um modelo usando o AEM Arqueype e implante-o na sua instância do Cloud Services](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html#prerequisites).
 
+>[!NOTE]
+>
+> * Você pode associar um [!UICONTROL Esquema do modelo de dados de formulário] para um modelo de Formulário adaptável em um editor de modelos. Consulte [Criação de um formulário adaptável](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model) para obter mais informações.
+> * Você também pode configurar o [!UICONTROL Documento de registro] diretamente do editor de formulário adaptável ou do editor de modelo de formulário adaptável. Para obter mais informações, consulte [Gerar documento de registro para Forms adaptável](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+
+
+
 ## Criação de um formulário adaptável usando o modelo {#creating-an-adaptive-form-using-the-template}
 
 Depois de criar e ativar um modelo, ele estará disponível no gerenciador de formulários ao criar um Formulário adaptável. Para usar um modelo e criar um formulário adaptável, consulte [Criação de um formulário adaptável](creating-adaptive-form.md).
+
 
 <!--
 ## Change display option of out of the box templates  {#change-display-option-of-out-of-the-box-templates}

@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: bcd9f3cfe6c22a6db51a9e6f96576bb8cdde7d0c
+source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
 workflow-type: tm+mt
-source-wordcount: '1217'
+source-wordcount: '1359'
 ht-degree: 0%
 
 ---
@@ -60,10 +60,15 @@ Você precisa do seguinte para criar um formulário adaptável:
 
    Depois de fazer logon, no canto superior esquerdo, toque em **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms &amp; Documents]**.
 
-1. Toque **[!UICONTROL Criar]**  > **[!UICONTROL Forms adaptável]**. O Assistente é aberto.s
+1. Toque **[!UICONTROL Criar]**  > **[!UICONTROL Forms adaptável]**. O Assistente é aberto.
 1. Na guia Source , selecione um template:
 
    * Ao selecionar um modelo editável, um tema e uma ação de envio especificada no modelo são selecionados automaticamente e o **[!UICONTROL Criar]** estiver ativado. Você pode ir para o **[!UICONTROL Estilo]** ou **[!UICONTROL Submissão]** guias para selecionar um tema diferente ou enviar uma ação. Se o modelo Editável selecionado não especificar um tema, o botão criar permanecerá desativado. Você pode ir para o **[!UICONTROL Estilos]** para selecionar manualmente um tema.
+
+      >[!NOTE]
+      >
+      > Você também pode criar [!UICONTROL Documento de registro] modelo usando um editor de formulário adaptável. Para obter mais informações, consulte [Suporte para documento de registro no editor de formulário adaptável](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+
    * Quando você seleciona um template estático, as opções de dados, estilo, envio, delivery e visualização não estão disponíveis. Quando você cria um novo formulário adaptável, é recomendável usar um modelo editável.
 
 1. Na guia Estilo , selecione um tema:
@@ -159,3 +164,15 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
    * Se o formulário adaptável for baseado em um modelo de formulário, você poderá escolher outro <!-- form template, --> Esquema XML ou JSON ou Modelo de dados de formulário para o mesmo modelo de formulário.
 
 1. Toque **[!UICONTROL Salvar]** para salvar as propriedades.
+
+Também é possível modificar as propriedades do modelo de formulário no editor de formulário adaptável ou no editor de modelo de formulário adaptável.
+
+1. Selecione o **[!UICONTROL Contêiner de formulário adaptável (raiz)]** componente.
+1. Clique em ![Ícone Configurar](/help/forms/assets/configure-icon.svg) ícone para abrir o **[!UICONTROL Propriedades]** do contêiner de Formulário adaptável.
+1. Selecione o **[!UICONTROL Modelo de dados]** e faça o seguinte:
+
+   * Se o formulário adaptável não tiver um modelo de formulário, é possível escolher um modelo de formulário e, consequentemente, selecionar <!-- a form template, --> Esquema XML ou JSON ou modelo de dados de formulário.
+   * Se o formulário adaptável for baseado em um modelo de formulário, não será possível alterar o modelo de formulário. Você pode escolher outro <!-- form template, --> Esquema XML ou JSON ou Modelo de dados de formulário para o mesmo modelo de formulário aplicável.
+1. Toque ![Salvar](/help/forms/assets/check-button.png) para salvar as propriedades.
+
+![FDM-Schema-Support](/help/forms/assets/fdmsupport.png)
