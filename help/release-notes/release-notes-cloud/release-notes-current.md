@@ -3,9 +3,9 @@ title: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud S
 description: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 094e90050747d5412f34b79cd5a11b8f5e05e6eb
+source-git-commit: 6446f5e334c3802505d6a41035b6d2ab3ad2b72c
 workflow-type: tm+mt
-source-wordcount: '1107'
+source-wordcount: '1106'
 ht-degree: 13%
 
 ---
@@ -76,7 +76,8 @@ Assista ao vídeo Visão geral da versão de outubro de 2022 para obter um resum
 
 ## [!DNL Experience Manager Forms] como [!DNL Cloud Service] {#forms}
 
-### Novos recursos disponíveis em [!DNL Forms] canal {#new-features-available-in-channel}
+### Novos recursos disponíveis em [!DNL Forms] {#new-features-available-in-channel}
+
 
 * [Assistente adaptável Forms](/help/forms/creating-adaptive-form.md): O AEM Forms fornece um assistente para usuários empresariais para criar rapidamente o Adaptive Forms. O assistente tem uma navegação de guia rápida para selecionar facilmente o modelo pré-configurado, o estilo, os campos e as opções de envio para criar um formulário adaptável. Esta versão traz as seguintes melhorias ao assistente:
 
@@ -85,8 +86,6 @@ Assista ao vídeo Visão geral da versão de outubro de 2022 para obter um resum
    * Usar modelos estáticos: Os clientes com investimentos existentes em modelos estáticos herdados podem continuar sua jornada de adoção da nuvem usando modelos estáticos no assistente para criar formulários adaptáveis. Isso oferece mais tempo para os clientes migrarem modelos estáticos antigos para modelos editáveis modernos.
 
 * [Remover campos ocultos de um Documento de registro (DoR) durante o processamento no servidor](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md): Você pode gerar o documento de PDF de registro para usuários finais contendo apenas os campos que estavam visíveis para eles durante a experiência de captura de dados. Após o envio do formulário, o servidor valida quais campos estavam ocultos para o usuário final com base nos dados enviados e exclui do documento de registro para fins de consistência.
-
-
 
 ### Novos recursos disponíveis no canal de pré-lançamento do [!DNL Forms] {#prerelease-features-forms}
 
