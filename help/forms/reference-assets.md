@@ -4,9 +4,9 @@ seo-title: Reference Themes
 description: O AEM Forms fornece temas de formulários adaptáveis que podem ser obtidos da Distribuição de software e usados para criar um estilo em um formulário.
 seo-description: AEM Forms provides adaptive forms themes that you can get from Software Distribution and use to style a form.
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
-source-git-commit: 5d4da55a8485f9b1793dc0b997be40244188b052
+source-git-commit: 094e90050747d5412f34b79cd5a11b8f5e05e6eb
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '513'
 ht-degree: 3%
 
 ---
@@ -14,8 +14,7 @@ ht-degree: 3%
 
 # Ativos de referência para o Forms as a Cloud Service {#reference-themes}
 
-Você pode obter os temas de referência, modelos e modelos de dados de formulário instalando o [Pacote de ativos de referência](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). Ele ajuda a iniciar e acelerar rapidamente o desenvolvimento do Adaptive Forms. Você pode usar [Gerenciador de pacotes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html?lang=pt-BR) para implantar este pacote no ambiente as a Cloud Service do AEM Forms.
-
+Você pode obter os temas de referência, modelos e modelos de dados de formulário instalando o [Pacote de ativos de referência](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). Ele ajuda a iniciar e acelerar rapidamente o desenvolvimento do Adaptive Forms. Você pode usar [Gerenciador de pacotes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html?lang=pt-BR) para implantar este pacote no ambiente as a Cloud Service do Forms.
 Os ativos de referência incluídos no pacote são:
 
 ## Temas {#themes}
