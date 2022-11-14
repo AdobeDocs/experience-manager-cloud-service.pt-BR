@@ -1,18 +1,18 @@
 ---
 title: Notas de versão do Cloud Manager 2022.8.0 no Adobe Experience Manager as a Cloud Service
-description: Estas são as notas de versão do Cloud Manager 2022.8.0 em AEM as a Cloud Service.
+description: Estas são as notas de versão do Cloud Manager 2022.8.0 no AEM as a Cloud Service.
 feature: Release Information
-source-git-commit: 43a60bfea1564aa201a26c9ee31ee1ff4c881e45
-workflow-type: tm+mt
+exl-id: df31673a-0ffd-4ea8-a6da-fbf75318b915
+source-git-commit: 83e49215eff975300f263dcf0215081b02260e70
+workflow-type: ht
 source-wordcount: '187'
-ht-degree: 7%
+ht-degree: 100%
 
 ---
 
-
 # Notas de versão do Cloud Manager 2022.8.0 no Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Esta página documenta as notas de versão do Cloud Manager 2022.8.0 AEM as a Cloud Service.
+Esta página documenta as notas de versão do Cloud Manager 2022.8.0 no AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -20,16 +20,16 @@ Esta página documenta as notas de versão do Cloud Manager 2022.8.0 AEM as a Cl
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento do Cloud Manager versão 2022.8.0 em AEM as a Cloud Service é 11 de agosto de 2022. A próxima versão está planejada para 9 de setembro de 2022.
+A data de lançamento do Cloud Manager 2022.8.0 no AEM as a Cloud Service é 11 de agosto de 2022. A próxima versão está planejada para 9 de setembro de 2022.
 
 ## Novidades {#what-is-new}
 
-* Há uma experiência de interface do usuário atualizada no [adicionar fluxo de trabalho do ambiente.](/help/implementing/cloud-manager/manage-environments.md)
-* [O Arquétipo de Projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt_BR) incluído no Cloud Manager foi atualizado para a versão 37.
+* Há uma experiência de interface do usuário atualizada em [adicionar fluxo de trabalho de ambiente.](/help/implementing/cloud-manager/manage-environments.md)
+* O [Arquétipo de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR) incluído no Cloud Manager foi atualizado para a versão 37.
 
 ## Correções de erros {#bug-fixes}
 
-* Caso em que usuários do New Relic não foram criados ou excluídos na interface do usuário do Cloud Manager foi corrigido.
-* Alguns casos de falhas raras de criação de repositório foram tornados mais resilientes.
-* Ocorrências raras de erros de configuração de organização de VSTS agora são reduzidas devido a tentativas introduzidas.
-* A validação aprimorada durante a criação de usuários da subconta New Relic agora evita determinados erros.
+* Correção do caso em que usuários do New Relic não eram criados ou excluídos na interface do usuário do Cloud Manager.
+* Alguns casos raros de falha na criação de repositórios se tornaram mais resilientes.
+* As raras ocorrências de erros de configuração de organizações VSTS foram reduzidas devido à introdução de novas tentativas.
+* O aprimoramento da validação durante a criação de usuários na subconta do New Relic agora evita determinados erros.
