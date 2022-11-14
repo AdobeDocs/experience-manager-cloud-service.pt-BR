@@ -2,10 +2,10 @@
 title: Tarefas de manutenção no AEM as a Cloud Service
 description: Tarefas de manutenção no AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 4e820caa043eeba22d14894d6943c957ea0bf80a
 workflow-type: tm+mt
-source-wordcount: '1001'
-ht-degree: 92%
+source-wordcount: '1013'
+ht-degree: 81%
 
 ---
 
@@ -44,23 +44,23 @@ A tabela a seguir ilustra as tarefas de manutenção disponíveis no momento do 
   <tr>
     <td>Remoção da versão</td>
     <td>Adobe</td>
-    <td>Para que o nível de criação permaneça com bom desempenho, as versões mais antigas de cada parte do conteúdo no nó <code>/content</code> do repositório são removidas de acordo com o seguinte comportamento:<br><br> <!--Alexandru: please leave the two line breaks in place, otherwise spacing won't render properly-->
+    <td>Para ambientes existentes (criados antes de 1º de março de 2023), a limpeza é desativada e não será ativada no futuro, a menos que seja explicitamente ativada pelo cliente, e nesse momento ela também pode configurá-la com valores personalizados.<br><br> <!--Alexandru: please leave the two line breaks in place, otherwise spacing won't render properly-->Novos ambientes (aqueles criados a partir de 1º de março de 2023) terão a limpeza ativada por padrão com os valores abaixo, com os clientes sendo capazes de configurar com valores personalizados.
      <ol>
        <li>Versões com mais de 30 dias são removidas</li>
        <li>As 5 versões mais recentes nos últimos 30 dias são mantidas</li>
        <li>Independentemente das regras acima, a versão mais recente é preservada.</li>
-     </ol><br>OBSERVAÇÃO: o comportamento descrito acima é aplicado por padrão para novos ambientes criados após 14 de março de 2022. Envie um tíquete de suporte ao cliente se você precisar de configurações diferentes.</td>
+     </ol></td>
   </td>
   </tr>
   <tr>
     <td>Limpeza do log de auditoria</td>
     <td>Adobe</td>
-    <td>Para que o nível de criação permaneça com bom desempenho, os registros de auditoria mais antigos sob o nó <code>/content</code> do repositório são removidos de acordo com o seguinte comportamento:<br><br> <!-- See above for the two line breaks -->
+    <td>Para ambientes existentes (criados antes de 1º de março de 2023), a limpeza é desativada e não será ativada no futuro, a menos que seja explicitamente ativada pelo cliente, e nesse momento ela também pode configurá-la com valores personalizados.<br><br> <!-- See above for the two line breaks -->Novos ambientes (aqueles criados a partir de 1º de março de 2023) terão a limpeza ativada por padrão no <code>/content</code> nó do repositório de acordo com o seguinte comportamento:
      <ol>
        <li>Para auditoria de replicação, os logs de auditoria com mais de 3 dias são removidos</li>
        <li>Para auditoria do DAM (Assets), os logs de auditoria com mais de 30 dias são removidos</li>
        <li>Para auditoria de página, os logs com mais de 3 dias são removidos.</li>
-     </ol><br>OBSERVAÇÃO: o comportamento descrito acima é aplicado por padrão a novos ambientes criados após 14 de março de 2022. Envie um tíquete de suporte ao cliente se você precisar de configurações diferentes.</td>
+     </ol></td>
    </td>
   </tr>
   <tr>
