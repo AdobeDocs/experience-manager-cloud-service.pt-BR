@@ -1,11 +1,11 @@
 ---
 title: Notificações
-description: Saiba como receber informações sobre implantações de pipeline usando o sistema de notificação Adobe Experience Cloud.
+description: Saiba como receber informações sobre implantações de pipeline usando o sistema de notificação da Adobe Experience Cloud.
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
 source-git-commit: 451b5a089645004c58c2674fd1fb13afbe1201cf
 workflow-type: tm+mt
 source-wordcount: '559'
-ht-degree: 1%
+ht-degree: 12%
 
 ---
 
@@ -20,9 +20,9 @@ Saiba como o Cloud Manager notifica você sobre eventos importantes.
 
 Essas notificações são enviadas por meio da variável [!UICONTROL Experience Cloud] sistema de notificação aos usuários na **Proprietário da empresa**, **Gerenciador de programas** e **Gerenciador de implantação** funções.
 
-As notificações são exibidas em uma barra lateral no [!UICONTROL Cloud Manager] e através do Adobe [!UICONTROL Experience Cloud]. O ícone de sino no cabeçalho está danificado quando você tem novas notificações.
+As notificações são exibidas em uma barra lateral no [!UICONTROL Cloud Manager] e através do Adobe [!UICONTROL Experience Cloud]. O ícone de sino no cabeçalho é destacado quando você tem novas notificações.
 
-![Ícone Notificações](assets/notifications-bell-badged.png)
+![Ícone de notificações](assets/notifications-bell-badged.png)
 
 Clique no ícone de sino para abrir a barra lateral e exibir as notificações. O **Notificações** na barra lateral, lista as notificações mais recentes, como confirmações de implantação. As notificações se referem aos seus ambientes.
 

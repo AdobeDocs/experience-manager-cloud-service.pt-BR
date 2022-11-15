@@ -1,22 +1,22 @@
 ---
-title: Notas de versão do Cloud Manager AEM versão as a Cloud Service 2020.7.0
-description: Notas de versão do Cloud Manager AEM versão as a Cloud Service 2020.7.0
+title: Notas de versão do Cloud Manager no AEM as a Cloud Service versão 2020.7.0
+description: Notas de versão do Cloud Manager no AEM as a Cloud Service versão 2020.7.0
 feature: Release Information
 exl-id: b5ac4dd4-18c6-4867-b2df-53711555007f
 source-git-commit: 596a7a41dac617e2fb57ba2e4891a2b4dce31fad
 workflow-type: tm+mt
 source-wordcount: '309'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
 # Notas de versão do Cloud Manager no Adobe Experience Manager as a Cloud Service 2020.7.0 {#release-notes}
 
-Esta página descreve as Notas de versão do Cloud Manager AEM as a Cloud Service 2020.7.0.
+Esta página descreve as notas de versão do Cloud Manager no AEM as a Cloud Service 2020.7.0.
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento do Cloud Manager AEM as a Cloud Service 2020.7.0 é 9 de julho de 2020.
+A data de lançamento do Cloud Manager no AEM as a Cloud Service 2020.7.0 é 9 de julho de 2020.
 
 ## Novidades {#whats-new-cloud-manager}
 
@@ -30,16 +30,16 @@ A data de lançamento do Cloud Manager AEM as a Cloud Service 2020.7.0 é 9 de j
 
    Consulte Variáveis de pipeline para saber mais.
 
-* Agora há suporte para Repositórios Maven privados vinculados à autenticação.
+* Agora há suporte aos Repositórios Maven privados vinculados à autenticação.
 
 * O container de build do Cloud Manager agora é compatível com Java 8 e Java 11.
-Consulte Uso do suporte ao Java 11 para obter mais detalhes.
+Consulte Como usar o suporte ao Java 11 para obter mais detalhes.
 
 ### Correções de erros {#bug-fixes-cm}
 
 * Devido a um erro, o link do Cloud Manager para o Console do desenvolvedor estava ativo antes dos ambientes serem totalmente criados.
 
-* O link direto do Cloud Manager para o Console do desenvolvedor não exibia a opção de desibernar/hibernar para ambientes do Programa de sandbox.
+* O link direto do Cloud Manager para o Console do desenvolvedor não exibia a opção de cancelar hibernação/hibernar para ambientes do Programa de sandbox.
 
 * As opções **Cancelar** e **Salvar** nem sempre estavam visíveis na página de edição do pipeline de não produção.
 

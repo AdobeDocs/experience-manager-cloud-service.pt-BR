@@ -1,18 +1,18 @@
 ---
-title: Notas de versão do Cloud Manager AEM versão as a Cloud Service 2021.11.0
-description: Estas são as notas de versão do Cloud Manager AEM as a Cloud Service versão 2021.11.0
+title: Notas de versão do Cloud Manager no AEM as a Cloud Service versão 2021.11.0
+description: Estas são as notas de versão do Cloud Manager no AEM as a Cloud Service versão 2021.11.0
 feature: Release Information
 exl-id: 98fd6d8a-ddc2-4f53-9dfc-d8e21af0c14d
 source-git-commit: 4505f703754fa46cd746ae4794a3cab65cb19976
 workflow-type: tm+mt
 source-wordcount: '458'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
 # Notas de versão do Cloud Manager no Adobe Experience Manager as a Cloud Service 2021.11.0 {#release-notes}
 
-Esta página descreve as Notas de versão do Cloud Manager AEM as a Cloud Service 2021.11.0.
+Esta página descreve as notas de versão do Cloud Manager no AEM as a Cloud Service 2021.11.0.
 
 >[!NOTE]
 >
@@ -20,7 +20,7 @@ Esta página descreve as Notas de versão do Cloud Manager AEM as a Cloud Servic
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento do Cloud Manager AEM as a Cloud Service 2021.11.0 é 4 de novembro de 2021.
+A data de lançamento do Cloud Manager no AEM as a Cloud Service 2021.11.0 é 4 de novembro de 2021.
 A próxima versão está planejada para 16 de dezembro de 2021.
 
 ## Novidades {#what-is-new}
@@ -28,7 +28,7 @@ A próxima versão está planejada para 16 de dezembro de 2021.
 * Os usuários agora podem aproveitar os novos pipelines de front-end para implantar exclusivamente o código de front-end de forma acelerada. Consulte [Pipelines de front-end do Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) para saber mais.
 
    >[!IMPORTANT]
-   >Você deve estar AEM versão `2021.10.5933.20211012T154732Z` para utilizar novos pipelines Front-End.
+   >Você deve estar usando o AEM versão `2021.10.5933.20211012T154732Z` ou posterior para aproveitar os novos pipelines de front-end.
 
 * A duração do pipeline de qualidade de código é significativamente reduzida ao executar a análise de código de uma maneira mais eficiente, sem a necessidade de criar uma imagem completa do AEM. Esta alteração será gradual durante as semanas que se seguem ao lançamento.
 
@@ -40,7 +40,7 @@ A próxima versão está planejada para 16 de dezembro de 2021.
 
 * O cabeçalho de resposta `x-request-id` agora está visível na API Playground em [www.adobe.io](https://www.adobe.io/). Esse cabeçalho é útil ao enviar problemas de atendimento ao cliente para solução de problemas.
 
-* Como usuário, vejo que o pipeline card com zero pipelines me fornece a orientação apropriada.
+* Como usuário, vejo que o cartão Pipeline com zero pipeline me fornece a orientação apropriada.
 
 * Uma nova Página de atividade agora está disponível, em que atividades como pipeline e execuções de código podem ser visualizadas junto a seus detalhes associados. Com o tempo, as atividades listadas nesta página se expandirão em escopo junto com os detalhes fornecidos.
 

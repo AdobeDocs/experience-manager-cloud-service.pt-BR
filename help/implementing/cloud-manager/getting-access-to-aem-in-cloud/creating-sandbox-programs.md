@@ -1,23 +1,23 @@
 ---
 title: Criação de programas do sandbox
-description: Saiba como usar o Cloud Manager para criar seu próprio programa sandbox para treinamento, demonstração, POC ou outros fins que não sejam de produção.
+description: Saiba como usar o Cloud Manager para criar seu próprio programa de sandbox para treinamentos, demonstrações, POCs ou outros fins de não produção.
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
 source-git-commit: cf6941759dfc1e50928009490c7c518a89ed093e
 workflow-type: tm+mt
 source-wordcount: '331'
-ht-degree: 6%
+ht-degree: 100%
 
 ---
 
 # Criação de programas do sandbox {#create-sandbox-program}
 
-Um programa de sandbox é normalmente criado para servir os propósitos de treinamento, execução de demonstrações, ativação, POCs ou documentação, e não é destinado ao tráfego ao vivo.
+Um programa de sandbox é normalmente criado para fins de treinamento, execução de demonstrações, capacitação, POCs ou documentação e não se destina a transportar tráfego direto.
 
-Saiba mais sobre os tipos de programas no documento [Entendendo os tipos de programas e programas.](program-types.md)
+Saiba mais sobre os tipos de programas no documento [Noções sobre programas e tipos de programas.](program-types.md)
 
 ## Criar um programa de sandbox {#create}
 
-Siga estas etapas para criar um programa sandbox.
+Siga estas etapas para criar um programa de sandbox.
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
@@ -25,38 +25,38 @@ Siga estas etapas para criar um programa sandbox.
 
    ![Página de aterrissagem do Cloud Manager](assets/first_timelogin1.png)
 
-1. No assistente criar programa, selecione **Configurar uma sandbox**, forneça um nome de programa e clique em **Criar**.
+1. No assistente de criação de programas, selecione **Configurar uma sandbox**, forneça um nome para o programa e clique em **Criar**.
 
-   ![Criação do tipo de programa](assets/create-sandbox.png)
+   ![Criação de tipo de programa](assets/create-sandbox.png)
 
-Você verá um novo cartão de programa sandbox na página de aterrissagem com um indicador de status conforme o processo de configuração avança.
+Você verá um cartão de novo programa de sandbox na página de aterrissagem com um indicador de status, conforme o processo de configuração avança.
 
 ![Criação de sandbox a partir da página de visão geral](assets/program-create-setupdemo2.png)
 
-## Acessar seu sandbox {#access}
+## Acessar sua sandbox {#access}
 
-Você pode visualizar os detalhes da configuração da sandbox, bem como acessar o ambiente (uma vez disponível), visualizando a página de visão geral do programa.
+Você pode visualizar os detalhes da configuração da sandbox, bem como acessar o ambiente (se disponível), visualizando a página de visão geral do programa.
 
-1. Na página de aterrissagem do Cloud Manager, clique no botão de reticências do programa recém-criado.
+1. Na página de aterrissagem do Cloud Manager, clique no botão de reticências no programa recém-criado.
 
    ![Visão geral do acesso ao programa](assets/program-overview-sandbox.png)
 
-1. Depois que a etapa de criação do projeto for concluída, você poderá acessar o **Acessar informações do repositório** para poder usar seu git repo.
+1. Depois que a etapa de criação do projeto for concluída, você poderá acessar o link **Acessar informações do repositório** para poder usar seu repositório Git.
 
    ![Configuração do programa](assets/create-program4.png)
 
    >[!TIP]
    >
-   >Para saber mais sobre como acessar e gerenciar o repositório Git, consulte o documento [Acesso ao Git.](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
+   >Para saber mais sobre como acessar e gerenciar o repositório Git, consulte o documento [Acessar o Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
 
-1. Depois que o ambiente de desenvolvimento for criado, você poderá usar a variável **AEM de acesso** link para entrar no AEM.
+1. Uma vez criado o ambiente de desenvolvimento, você poderá usar o link **Acessar o AEM** para entrar no AEM.
 
-   ![Acessar AEM link](assets/create-program-5.png)
+   ![Link Acessar o AEM](assets/create-program-5.png)
 
-1. Quando o pipeline de não produção que está implantando no desenvolvimento é concluído, o assistente o orientará a acessar o ambiente de desenvolvimento AEM ou implantar o código no ambiente de desenvolvimento.
+1. Uma vez concluída a implantação em desenvolvimento do pipeline de não produção, o assistente o orientará a acessar o ambiente de desenvolvimento do AEM ou implantar o código no ambiente de desenvolvimento.
 
-   ![Implantação da sandbox](assets/create-program-setup-deploy.png)
+   ![Implantar a sandbox](assets/create-program-setup-deploy.png)
 
-Se, a qualquer momento, precisar alternar para outro programa ou retornar à página de visão geral para criar outro programa, clique no nome do programa no canto superior esquerdo da tela para exibir o **Navegar para** opção.
+Se, a qualquer momento, você precisar alternar para outro programa ou retornar à página de visão geral para criar outro programa, clique no nome do programa no canto superior esquerdo da tela para exibir a opção **Navegar para**.
 
 ![Vá até](assets/create-program-a1.png)

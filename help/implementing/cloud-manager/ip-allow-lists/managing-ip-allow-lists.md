@@ -1,99 +1,99 @@
 ---
 title: Gerenciamento de listas de permissões de IP
-description: Saiba como visualizar, editar, excluir e verificar o status de suas listas de permissões de IP no Cloud Manager.
+description: Saiba como exibir, editar, excluir e verificar o status de suas listas de permissões de IP no Cloud Manager.
 exl-id: 6efabe53-3f45-47d4-ac1f-979cae0ab33e
 source-git-commit: 3080427529bb65e27721e05069012b33579fdd73
 workflow-type: tm+mt
 source-wordcount: '821'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 # Gerenciamento de listas de permissões de IP {#manage-ip-allow-lists}
 
-Saiba como visualizar, editar, excluir e verificar o status de suas listas de permissões de IP no Cloud Manager.
+Saiba como exibir, editar, excluir e verificar o status de suas listas de permissões de IP no Cloud Manager.
 
-## Exibindo e Atualizando Listas de permissões IP {#update-ip-allow-lists}
+## Exibição e atualização de listas de permissões de IP {#update-ip-allow-lists}
 
-Um usuário na **Proprietário da empresa** ou **Gerenciador de implantação** pode seguir essas etapas para visualizar e atualizar uma lista de permissões IP.
+Um usuário com a função **Proprietário da empresa** ou **Gerente de implantação** pode seguir essas etapas para exibir e atualizar uma lista de permissões de IP.
 
-1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização e o programa apropriados.
-1. Navegar para **Ambientes** da tela **Visão geral** página.
-1. Navegue até o **LISTAS DE PERMISSÕES de IP** da página **Ambientes** tela.
-1. Identifique a linha para as listas de permissões IP que deseja visualizar ou atualizar.
-1. Clique no botão de reticências na extremidade direita da linha.
-1. Selecione o **Exibir e atualizar** opção.
-1. O **Exibir e atualizar** O assistente exibirá o nome, os endereços IP (ou intervalos) que definem a regra junto com os ambientes e o serviço aos quais a regra é aplicada.
-1. Faça alterações no nome ou endereços IP e confirme o envio.
+1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização e o programa apropriado.
+1. Acesse a tela **Ambientes** a partir da página **Visão geral**.
+1. Acesse a página **Listas de permissão de IP** na tela **Ambientes**.
+1. Identifique a linha das listas de permissões de IP que deseja exibir ou atualizar.
+1. Clique no botão de reticências localizado na extremidade direita da linha.
+1. Selecione a opção **Exibir e atualizar**.
+1. O assistente **Exibir e atualizar** exibirá o nome, os endereços IP (ou intervalos) que definem a regra, juntamente com os ambientes e o serviço aos quais a regra é aplicada.
+1. Altere o nome ou os endereços IP e confirme o envio.
 
-A adição ou remoção de um novo intervalo IP a uma lista de permissões IP automaticamente o aplicará/desaplicará a todos os ambientes/serviços correspondentes aos quais foi aplicado anteriormente.
+A adição ou remoção de um novo intervalo IP em uma lista de permissões de IP automaticamente o aplicará/desaplicará a todos os ambientes/serviços correspondentes aos quais foram aplicados anteriormente.
 
-Não é possível fazer atualizações em uma lista de permissões IP enquanto uma atualização anterior estiver em andamento e não tiver sido concluída.
+Não será possível atualizar uma lista de permissões IP enquanto uma atualização anterior estiver em andamento e não tiver sido concluída.
 
-## Verificar o status das Listas de permissões IP {#check-allow-list-status}
+## Verificação do status das listas de permissões de IP {#check-allow-list-status}
 
 Siga estas etapas para verificar o status das listas de permissões de IP.
 
-1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização e o programa apropriados.
+1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização e o programa apropriado.
 
-1. Navegar para **Ambientes** da tela **Visão geral** página.
+1. Acesse a tela **Ambientes** a partir da página **Visão geral**.
 
-1. Clique no botão **Status** ícone para a lista de permissões IP na tabela na **Ambientes** e selecione o **LISTAS DE PERMISSÕES de IP** página.
+1. Clique no ícone **Status** para a lista de permissões de IP na tabela na tabela **Ambientes** e selecione a página **Lista de permissões de IP**.
 
 1. O Cloud Manager exibirá o status da lista de permissões conforme descrito [na seção a seguir.](#status)
 
-### Status de uma Lista de permissões IP {#status}
+### Status de uma lista de permissões de IP {#status}
 
-[Ao verificar o status das listas de permissões de IP,](#check-allow-list-status) eles podem ter um dos valores a seguir.
+[Ao verificar o status das listas de permissões de IP,](#check-allow-list-status) pode haver um dos valores a seguir.
 
-* **Aplicado** - A lista de permissões IP é aplicada com êxito a um ou mais ambientes.
+* **Aplicada** - A lista de permissões de IP foi aplicada com sucesso a um ou mais ambientes.
 
-* **Atualização** - Uma atualização da lista de permissões de IP está em andamento, o que pode incluir um ou mais aplicativos ou o cancelamento da aplicação da lista.
+* **Em atualização** - Uma atualização da lista de permissões de IP está em andamento, o que pode incluir um ou mais aplicativos ou o cancelamento da aplicação da lista.
 
-   * Cada aplicativo/não aplicativo é listado junto com seu próprio status de **Não iniciado**, **Em Andamento**, **Concluído** ou **Falha**.
+   * Cada aplicação/cancelamento de aplicação é listado junto com seu próprio status **Não iniciado**, **Em andamento**, **Concluído** ou **Falha**.
 
-* **Falha** - Falha em um ou mais processos de aplicativo ou de cancelamento de aplicativo de uma atualização.
-   * Cada aplicativo e desaplicativo é listado junto com seu status.
-      * O status é **Falha** se um aplicativo/desaplicativo na atualização falhar.
-      * O status permanecerá como **Falha** até que todas as falhas sejam apagadas.
-         * Você deve selecionar a variável **Tentar novamente** ícone ao lado do status para limpar a falha.
-      * Não é possível atualizar ou excluir uma lista de permissões IP com uma **Falha** status.
+* **Falha** - Falha em um ou mais processos de aplicação ou de cancelamento de aplicação de uma atualização.
+   * Cada aplicação e cancelamento de aplicação é listada junto com seu status.
+      * O status é **Falha** se uma aplicação/cancelamento de aplicação na atualização falhar.
+      * O status permanecerá como **Falha** até que todas as falhas sejam resolvidas.
+         * Você deve selecionar o ícone **Tentar novamente** ao lado do status para resolver a falha.
+      * Não é possível atualizar ou excluir uma lista de permissões de IP com status de **Falha**.
 
-* **Exclusão** - Uma exclusão de uma lista de permissões IP está em andamento.
-   * A exclusão envolve a desaplicação da lista de todos os serviços.
-   * Cada não aplicativo é listado junto com seu próprio status de **Não iniciado**, **Em Andamento**, **Concluído** ou **Falha**.
+* **Em exclusão** - Uma exclusão de uma lista de permissões de IP está em andamento.
+   * A exclusão envolve o cancelamento da aplicação da lista de todos os serviços.
+   * Cada cancelamento de aplicação é listado junto com seu próprio status **Não iniciado**, **Em andamento**, **Concluído** ou **Falha**.
    * Quando a operação de exclusão for concluída, a lista de permissões de IP:
-      * Não é mais exibido na tabela de lista de permissões de IP.
-      * Não pode mais ser aplicado a nenhum serviço no programa no Cloud Manager.
+      * Não será mais exibida na tabela de lista de permissões de IP.
+      * Não poderá mais ser aplicada a nenhum serviço no programa no Cloud Manager.
 
-* **Falha ao Excluir** - Um ou mais desaplicativos falharam durante uma operação de exclusão.
+* **Falha ao excluir** - Um ou mais cancelamentos de aplicação falharam durante uma operação de exclusão.
 
-   * Cada não aplicativo é listado junto com o status **Concluído** ou **Falha**.
-   * O status será **Falha ao Excluir** se um desaplicativo falhar.
-   * O status permanecerá como **Falha ao Excluir** até que todas as falhas sejam apagadas.
-      * Você deve selecionar **Excluir** no menu reticências, na extremidade direita da linha da tabela, para limpar qualquer falha.
-   * Não é possível atualizar uma lista de permissões IP enquanto o status estiver **Falha**.
+   * Cada cancelamento de aplicação é listado junto com o status **Concluído** ou **Falha**.
+   * O status será **Falha ao excluir** se um cancelamento de aplicação falhar.
+   * O status permanecerá como **Falha ao excluir** até que todas as falhas sejam resolvidas.
+      * Você deve selecionar **Excluir** no menu reticências, na extremidade direita da linha da tabela, para resolver qualquer falha.
+   * Não será possível atualizar uma lista de permissões de IP enquanto o status for **Falha**.
 
 ## Excluir uma lista de permissões de IP {#delete-allow-list}
 
-Um usuário na **Proprietário da empresa** ou **Gerenciador de implantação** pode seguir essas etapas para visualizar e atualizar uma lista de permissões IP.
+Um usuário com a função **Proprietário da empresa** ou **Gerente de implantação** pode seguir essas etapas para exibir e atualizar uma lista de permissões de IP.
 
-1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização e o programa apropriados.
-1. Navegar para **Ambientes** da tela **Visão geral** página.
-1. Navegue até o **LISTAS DE PERMISSÕES de IP** da página **Ambientes** tela.
-1. Identifique a linha da lista de permissões IP que deseja excluir.
+1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização e o programa apropriado.
+1. Acesse a tela **Ambientes** a partir da página **Visão geral**.
+1. Acesse a página **Listas de permissão de IP** na tela **Ambientes**.
+1. Identifique a linha da lista de permissões de IP que deseja excluir.
 1. Selecione o menu de reticências na extremidade direita da linha.
 1. Clique em **Excluir**.
 1. Confirme seu envio.
 
-A exclusão de uma lista de permissões IP a desaplica automaticamente de todos os serviços e a exclui da tabela.
+A exclusão de uma lista de permissões IP cancela automaticamente sua aplicação de todos os serviços e a exclui da tabela.
 
-## Configurações pré-existentes de CDN {#pre-existing-cdn}
+## Configurações pré-existentes para CDN {#pre-existing-cdn}
 
-Se você tiver uma configuração de CDN pré-existente para suas listas de permissões de IP, haverá uma mensagem informativa no **LISTA DE PERMISSÕES IP** , incentivando você a adicionar essas configurações por meio da interface do usuário, para que fiquem visíveis e configuráveis no Cloud Manager.
+Se você tiver uma configuração de CDN pré-existente para suas listas de permissões de IP, haverá uma mensagem informativa na página **Lista de permissões de IP** incentivando você a adicionar essas configurações por meio da interface do usuário, para que fiquem visíveis e possam ser definidas no Cloud Manager.
 
-A mensagem desaparece assim que todas as configurações de ambiente pré-existentes são migradas usando a interface do usuário do . Pode levar de 1 a 2 dias úteis para a mensagem desaparecer.
+A mensagem desaparece assim que todas as configurações de ambiente pré-existentes são migradas usando a interface do usuário. Pode levar de 1 a 2 dias úteis para a mensagem desaparecer.
 
-Consulte o documento [Adicionar uma lista de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) para obter mais detalhes.
+Consulte o documento [Adição de uma lista de permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) para obter mais detalhes.
 
-Uma mensagem semelhante também é fornecida no **Certificados SSL** e **Ambientes** páginas para ambientes que tenham configurações CDN pré-existentes para certificados SSL ou nomes de domínio personalizados.
+Uma mensagem semelhante também é fornecida nas páginas **Certificados SSL** e **Ambientes** para ambientes que tenham configurações de CDN pré-existentes para certificados SSL ou nomes de domínio personalizados.

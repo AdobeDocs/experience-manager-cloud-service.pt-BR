@@ -1,56 +1,56 @@
 ---
-title: Notas de versão do Cloud Manager AEM versão as a Cloud Service 2021.5.0
-description: Notas de versão do Cloud Manager AEM versão as a Cloud Service 2021.5.0
+title: Notas de versão do Cloud Manager no AEM as a Cloud Service versão 2021.5.0
+description: Notas de versão do Cloud Manager no AEM as a Cloud Service versão 2021.5.0
 feature: Release Information
 exl-id: 8ae3cf2f-1865-427a-b612-bdf56e2f0304
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
 workflow-type: tm+mt
 source-wordcount: '377'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
 # Notas de versão do Cloud Manager no Adobe Experience Manager as a Cloud Service 2021.5.0 {#release-notes}
 
-Esta página descreve as Notas de versão do Cloud Manager AEM as a Cloud Service 2021.5.0.
+Esta página descreve as notas de versão do Cloud Manager no AEM as a Cloud Service 2021.5.0.
 
 >[!NOTE]
->Para ver as Notas de versão atuais do Adobe Experience Manager as a Cloud Service, clique em [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=pt-BR).
+>Para ver as notas de versão atuais do Adobe Experience Manager as a Cloud Service, clique [aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=pt-BR).
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento do Cloud Manager AEM as a Cloud Service 2021.5.0 é 6 de maio de 2021.
+A data de lançamento do Cloud Manager no AEM as a Cloud Service 2021.5.0 é 6 de maio de 2021.
 
 ### Novidades {#what-is-new}
 
-* A regra de qualidade PackageOverlaps agora detecta casos em que o mesmo pacote foi implantado várias vezes, ou seja, em vários locais incorporados, no mesmo conjunto de pacotes implantado.
+* A regra de qualidade PackageOverlaps agora detecta casos em que o mesmo pacote era implantado várias vezes, ou seja, em vários locais incorporados, no mesmo conjunto de pacotes implantados.
 
-* O endpoint do repositório na API pública agora inclui o URL do Git.
+* O endpoint do repositório na API pública agora inclui a URL do Git.
 
 * O log de implantação baixado por um usuário do Cloud Manager será mais revelador e incluirá detalhes sobre falhas e cenários de sucesso.
 
-* Falhas intermitentes encontradas ao enviar o código para o Adobe git foram resolvidas.
+* As falhas intermitentes encontradas ao enviar o código para o Git da Adobe foram resolvidas.
 
-* O complemento Commerce agora pode ser aplicado a programas Sandbox durante o fluxo de trabalho Editar programa .
+* O complemento de comércio agora pode ser aplicado a programas de sandbox durante o fluxo de trabalho Editar programa.
 
-* O *Editar programa* a experiência foi atualizada.
+* A experiência *Editar programa* foi atualizada.
 
-* A tabela Nomes de Domínio na página Detalhes do Ambiente exibirá até 250 nomes de Domínio por paginação.
+* A tabela de Nomes de domínio na página Detalhes do ambiente exibirá até 250 nomes de Domínio por página.
 
-* O **Soluções e complementos** em **Adicionar programa** e **Editar programa** os fluxos de trabalho exibirão a solução, mesmo se apenas uma solução estiver disponível para o Programa.
+* A guia **Soluções e complementos** nos fluxos de trabalho **Adicionar programa** e **Editar programa** exibirá a solução, mesmo se apenas uma solução estiver disponível para o Programa.
 
-* A mensagem de erro no log de etapas da criação quando a build não produziu nenhum pacote de conteúdo implantado não estava clara.
+* A mensagem de erro no log de etapas de compilação quando a compilação não produzia nenhum pacote de conteúdo implantado não era clara.
 
 ### Correções de erros {#bug-fixes}
 
-* Ocasionalmente, o usuário pode ver um status verde &quot;ativo&quot; ao lado de uma Lista de permissões de IP, mesmo quando essa configuração não foi implantada.
+* Ocasionalmente, o usuário pode ver um status verde “ativo” ao lado de uma Lista de permissões de IP, mesmo quando essa configuração não foi implantada.
 
-* Em vez de remover variáveis &quot;excluídas&quot;, a API de variáveis de pipelines somente as marcaria com status **EXCLUÍDO**.
+* Em vez de remover variáveis “excluídas”, a API de variáveis de pipelines somente as marcava com o status **EXCLUÍDO**.
 
-* Alguns problemas de qualidade do tipo Código Smell estavam afetando incorretamente a Classificação de confiabilidade.
+* Alguns problemas de qualidade do tipo Code Smell afetavam incorretamente a avaliação de confiabilidade.
 
-* Como domínios curingas não são compatíveis, a interface do usuário não permitirá que o usuário envie um domínio curinga.
+* Como não há suporte a domínios curingas, a interface do usuário não permitirá que o usuário envie um domínio curinga.
 
-* Quando uma execução de pipeline era iniciada entre meia-noite e 1h UTC, a versão de artefato gerada pelo Cloud Manager não tinha garantia de ser maior do que uma versão criada no dia anterior.
+* Quando uma execução de pipeline era iniciada entre meia-noite e 1h (UTC), não havia garantia de que a versão de artefato gerada pelo Cloud Manager seria maior do que uma versão criada no dia anterior.
 
-* Durante a configuração do programa de sandbox, depois que o projeto com código de amostra for criado com êxito, o Gerenciar Git será exibido como um link do cartão herói na página Visão geral .
+* Durante a configuração do programa de sandbox, depois que o projeto com código de amostra fosse criado com sucesso, a opção Gerenciar Git apareceria como um link do cartão hore na página Visão geral.

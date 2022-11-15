@@ -1,91 +1,91 @@
 ---
-title: Preparação de integração
-description: Antes do início do processo de integração, há várias etapas preparatórias que o administrador do sistema deve entender antes de fazer logon no sistema.
+title: Preparação para a integração
+description: Antes de começar o processo de integração, há várias etapas preparatórias que o administrador do sistema deve entender para fazer logon no sistema.
 exl-id: 86139b1a-c22a-4716-a0f9-cf142cbc6c53
 source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
 workflow-type: tm+mt
 source-wordcount: '768'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Preparação de integração {#onboarding-preparation}
+# Preparação para a integração {#onboarding-preparation}
 
-Agora que você sabe o que está disponível para você no processo de integração por ter lido o artigo [AEM introdução à Jornada de integração as a Cloud Service,](overview.md) você provavelmente está pronto para entrar. No entanto, antes do início do processo de integração, há várias etapas preparatórias que o administrador do sistema deve entender antes de fazer logon no sistema.
+Depois de ler o artigo [Introdução à jornada de integração do AEM as a Cloud Service](overview.md), agora você sabe o que o espera e provavelmente está pronto para começar. No entanto, antes de começar o processo de integração, há várias etapas preparatórias que o administrador do sistema deve entender para fazer logon no sistema.
 
 ## Objetivo {#objective}
 
-AEM as a Cloud Service é uma ferramenta poderosa e flexível com várias soluções, complementos e modelos de implantação disponíveis. A solução que sua organização tem direito a usar é definida em seu contrato com o Adobe, que orienta o início do processo de integração.
+O AEM as a Cloud Service é uma ferramenta poderosa e flexível com várias soluções, complementos e modelos de implantação disponíveis. A solução que sua organização está autorizada a usar é especificada no contrato com a Adobe, que orienta o início do processo de integração.
 
-Após ler este documento, você compreenderá
+Depois de ler este documento, você compreenderá:
 
-* O que seu contrato com o Adobe define.
-* Que Adobe.
-* A forma como esse contrato afeta o processo de integração.
+* O que o seu contrato com a Adobe estabelece.
+* O que é provisionado pela Adobe.
+* Como esse contrato afeta o processo de integração.
 * Como se preparar para sua chamada de integração.
 
-Não se preocupe se você não estiver familiarizado com todos os termos usados nesta página. Elas serão explicadas na próxima parte da jornada.
+Não se preocupe se você não estiver familiarizado com todos os termos usados nesta página. Eles serão explicados na próxima parte da jornada.
 
 ## Vídeo {#video}
 
-Este vídeo resume o processo de integração definido nesta jornada e serve como uma visão geral de opções. Todos os tópicos do vídeo são apresentados em detalhes na jornada.
+Este vídeo resume o processo de integração definido nesta jornada e serve como uma visão geral das opções. Todos os tópicos do vídeo são apresentados em detalhes na jornada.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336959/?quality=12&learn=on)
 
 ## Seu contrato {#contract}
 
-A integração AEM as a Cloud Service começa com um contrato assinado entre sua organização e o Adobe. Isso ocorre porque o contrato especifica uma série de contratos importantes entre o Adobe e sua organização, como:
+A integração do AEM as a Cloud Service começa com um contrato assinado entre a sua organização e a Adobe. Isso ocorre porque o contrato especifica uma série de acordos importantes entre a Adobe e a sua organização, como:
 
 * Quais soluções e complementos sua organização pode usar.
-* O número e os tipos de ambientes que você pode acessar
+* O número e os tipos de ambientes que você pode acessar.
 * A data de início do seu serviço.
 * Seu nível de suporte principal (se aplicável).
-* Seus contatos para integração.
+* Seus contatos de integração.
 
-Se não tiver conhecimento desses detalhes, entre em contato com a equipe adjudicante da sua organização.
+Se não tiver conhecimento desses detalhes, entre em contato com a equipe contratante da sua organização.
 
-Depois que o contrato for assinado, o Adobe fornecerá seus ambientes, um email de boas-vindas será enviado aos contatos de integração definidos no contrato e uma chamada de integração será organizada pelo Adobe. Isso geralmente acontece alguns dias após o fechamento do contrato, a menos que uma data futura de início do serviço seja organizada.
+Uma vez assinado o contrato, a Adobe provisiona seus ambientes, envia um email de boas-vindas aos contatos de integração especificados no contrato e organiza uma chamada de integração. Isso geralmente acontece alguns dias após o fechamento do contrato, a menos que uma data futura de início do serviço seja acordada.
 
 ## Provisionamento do sistema {#provisioning}
 
-Depois que o contrato for assinado, todos os ambientes de nuvem de AEM cobertos pelo contrato serão automaticamente provisionados pelo Adobe. Esses ambientes também serão vinculados aos seus programas no Cloud Manager (mais informações sobre esse tópico posteriormente na jornada). Esses ambientes de nuvem AEM estão incluídos em cada assinatura as a Cloud Service AEM e geralmente são compostos de pelo menos um ambiente de produção, um ambiente de preparo e, opcionalmente, um ou mais ambientes de desenvolvimento ou teste.
+Uma vez assinado o contrato, todos os ambientes de nuvem do AEM abrangidos pelo contrato serão provisionados automaticamente pela Adobe. Esses ambientes também serão vinculados aos seus programas no Cloud Manager (mais informações sobre esse tópico são fornecidas posteriormente na jornada). Esses ambientes de nuvem do AEM estão incluídos em cada assinatura do AEM as a Cloud Service e geralmente são compostos de pelo menos um ambiente de produção, um ambiente de preparo e, opcionalmente, um ou mais ambientes de desenvolvimento ou teste.
 
 ## Chamada de integração {#onboarding-call}
 
-Na conclusão do contrato, a equipe de integração do Adobe agendará uma chamada com representantes de sua organização para discutir como começar.
+Na execução do contrato, a equipe de integração da Adobe agendará uma chamada com os representantes da sua organização para discutir como começar.
 
 Os participantes da organização devem incluir:
 
 * Líder da empresa
-* Profissionais da tecnologia
-* Seu parceiro de implementação
+* Profissionais de tecnologia
+* Parceiro de implementação
 
-Adobe será representado por:
+A Adobe será representada por:
 
 * Especialista em integração
-* Seu gerente de conta técnica (conforme aplicável)
-* Seu engenheiro de sucesso nomeado para o cliente (conforme aplicável)
-* Peritos de assuntos adicionais, conforme necessário
+* Gerente de conta técnica (conforme aplicável)
+* Engenheiro de sucesso nomeado para o cliente (conforme aplicável)
+* Especialistas adicionais, conforme necessário
 
-O objetivo da chamada é dar a você a oportunidade de fazer perguntas, aprender sobre o processo de suporte e possivelmente ver o produto pela primeira vez.
+O objetivo da chamada é dar a você a oportunidade de fazer perguntas, conhecer o processo de suporte e possivelmente ver o produto pela primeira vez.
 
 ## Email de boas-vindas {#welcome-email}
 
-Após a conclusão do processo de provisionamento do ambiente, o administrador do sistema definido no contrato recebe um email de boas-vindas com a confirmação de que recebeu acesso à Adobe Experience Cloud. Se você estiver lendo esta jornada de documentação, essa pessoa provavelmente você!
+Após a conclusão do processo de provisionamento do ambiente, o administrador do sistema especificado no contrato recebe um email de boas-vindas com a confirmação de que obteve acesso à Adobe Experience Cloud. Se estiver lendo esta jornada de documentação, essa pessoa provavelmente é você!
 
-O email contém informações detalhadas sobre como começar a usar os serviços do Experience Cloud e o portal de autoatendimento do Cloud Manager. Além disso, o email contém informações importantes, como para onde ir os recursos de suporte, fóruns, perguntas frequentes e muito mais. Na lista de recursos fornecidos no email, você também receberá detalhes sobre como acessar os ambientes da nuvem de AEM.
+O email contém informações detalhadas sobre como começar a usar os serviços da Experience Cloud e o portal de autoatendimento do Cloud Manager. Além disso, o email contém informações importantes, como onde encontrar os recursos de suporte, fóruns, perguntas frequentes e muito mais. Na lista de recursos fornecidos no email, você também receberá detalhes sobre como acessar os ambientes de nuvem do AEM.
 
 >[!TIP]
 >
->Se você recebeu o email de boas-vindas e não é o administrador do sistema, informe o Adobe durante a chamada de boas-vindas. Como alternativa, continue nessa jornada e, nas próximas etapas, saiba como designar outro colega como administrador do sistema.
+>Se você recebeu o email de boas-vindas e não é o administrador do sistema, informe à Adobe durante a chamada de boas-vindas. Como alternativa, continue nessa jornada e, nas próximas etapas, saiba como designar outro colega como administrador do sistema.
 
 ## O que vem a seguir {#whats-next}
 
 Agora você deve ter uma compreensão básica sobre:
 
-* O que seu contrato com o Adobe define.
-* Que Adobe.
-* A forma como esse contrato afeta o processo de integração.
+* O que o seu contrato com a Adobe estabelece.
+* O que é provisionado pela Adobe.
+* Como esse contrato afeta o processo de integração.
 * Como se preparar para sua chamada de integração.
 
-Agora que você está familiarizado com essas etapas de preparação, você está quase pronto para entrar no sistema sozinho. Mas primeiro você precisará de uma breve visão geral de como AEM as a Cloud Service é estruturado do ponto de vista de um administrador de sistema e conhecer uma terminologia importante. Por favor, continue para a próxima parte da jornada, [AEM Terminologia as a Cloud Service.](terminology.md)
+Agora que está familiarizado com essas etapas de preparação, você está quase pronto para entrar no sistema por conta própria. Porém, primeiro você precisará ter de uma breve visão geral de como o AEM as a Cloud Service é estruturado do ponto de vista de um administrador de sistema, além de conhecer terminologias importantes. Continue com a próxima parte da jornada, a [Terminologia do AEM as a Cloud Service.](terminology.md)

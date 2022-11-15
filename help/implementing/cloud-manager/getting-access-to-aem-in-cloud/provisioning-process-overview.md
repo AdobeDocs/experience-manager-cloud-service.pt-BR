@@ -4,74 +4,75 @@ description: Processo de provisionamento - Visão geral
 source-git-commit: ffeda76f9c661117ddba50588ebea01d151ee8c3
 workflow-type: tm+mt
 source-wordcount: '331'
-ht-degree: 8%
+ht-degree: 100%
 
 ---
 
 
-# AEM as a Cloud Service: Integração e acesso
+# AEM as a Cloud Service: integração e acesso
 
-Esta página lista os recursos de autoajuda sobre o processo de provisionamento para o Experience Manager as a Cloud Service.
+Esta página lista os recursos de autoajuda sobre o processo de provisionamento do Experience Manager as a Cloud Service.
 
-## Visão Geral do Processo de Provisionamento as a Cloud Service AEM
+## Visão geral do processo de provisionamento do AEM as a Cloud Service
 
 Esta seção contempla os artigos-chave com foco em:
 
-* Acesso AEM as a Cloud Service
+* Acesso ao AEM as a Cloud Service
 * Processo de integração e provisionamento do Adobe Experience Manager as a Cloud Service
 * Ajuda e recursos
 
 
-### Acesso AEM as a Cloud Service
+### Acesso ao AEM as a Cloud Service
 
 Quando o provisionamento automático for concluído:
 
-* Direitos de acesso concedidos - o Adobe criará uma organização no Adobe Identity Management System (IMS)
-* Por padrão, o Administrador designado terá permissões de administrador
-* O administrador pode adicionar usuários e funções para membros de equipe adicionais por meio do Admin Console
-* Revise permissões com base em funções para que os usuários determinem atribuições de permissão no Cloud Manager
+* Direitos de acesso concedidos – a Adobe criará uma organização no Identity Management System (IMS)
+* O Administrador designado terá permissões de administrador por padrão
+* O administrador poderá adicionar usuários e funções para membros de equipe adicionais por meio do Admin Console
+* Revisar as permissões com base em funções para que os usuários determinem quais permissões devem ser atribuídas no Cloud Manager
 
 ![processoverview.jpg](assets/processOverview.jpg)
 
 
-Para obter mais informações, visite [Integração ao Experience Manager as a Cloud Service no Experience League](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=en)
+Para obter mais informações, acesse [Integração do Experience Manager as a Cloud Service na Experience League](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=pt-BR)
 
 ### Recursos e links
 
-* [Suporte IMS do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en)
-* [Permissões baseadas em funções no Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html?lang=en#what-is-required)
-* [Acesso ao Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=en#getting-access)
+* [Suporte IMS do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=pt-BR)
+* [Permissões com base em funções no Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html?lang=pt-BR#what-is-required)
+* [Acesso ao Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=pt-BR#getting-access)
 
 
 ## Processo de integração do Adobe Experience Manager as a Cloud Service
 
-### 1. A ordem de compra Dispara o provisionamento automático.
+### 1. A ordem de compra aciona o provisionamento automático.
 
-### 2. Organizações integradas da Adobe Admin Console:
+### 2. Integração das organizações no Adobe Admin Console:
 
-![processador overview2.jpg](assets/processOverview2.jpg)
+![processoverview2.jpg](assets/processOverview2.jpg)
 
 * Administrador do sistema:
-   * Provisionar programas e ambientes AEM.
-   * Navegue até o Admin Console para tarefas administrativas.
-   * Reivindica que um domínio confirme a propriedade do respectivo domínio
+   * Provisiona programas e ambientes do AEM.
+   * Usa o Admin Console para tarefas administrativas.
+   * Reivindica um domínio para confirme a propriedade do respectivo domínio.
    * Configura os diretórios do usuário.
    * Configuração do IDP.
 * Administrador do AEM:
-   * Gerencie grupos locais, permissões e privilégios.
+   * Gerencia grupos locais, permissões e privilégios.
 
-### 3. Usuários integrados e Gerenciar acesso no Admin Console:
+### 3. Integração de usuários e gerenciamento do acesso no Admin Console:
 
-![processador overview3.jpg](assets/processOverview3.jpg)
+![processoverview3.jpg](assets/processOverview3.jpg)
 
 Três métodos para integrar usuários, dependendo do tamanho e da preferência:
 * Criar usuários manualmente no Admin Console
-* Fazer upload do arquivo .csv
-* Sincronizar usuários do Ative Diretory corporativo
+* Fazer upload de um arquivo .csv
+* Sincronizar usuários do Ative
+Diretory da empresa
 
 ### 4. O administrador configura a organização e concede aos usuários e ao grupo acesso aos ambientes
 
 ## Ajuda e recursos
 
 * [Primeiro logon - Cloud Service](/help/journey-onboarding/sysadmin/learning-path-aem-users.md)
-* [Configuração do acesso a AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=en#accessing)
+* [Configuração do acesso ao AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=pt-BR#accessing)
