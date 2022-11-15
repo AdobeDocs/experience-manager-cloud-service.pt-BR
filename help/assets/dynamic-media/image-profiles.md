@@ -4,9 +4,9 @@ description: Saiba como criar Perfis de imagem do Dynamic Media que contêm conf
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 7ab618893ab18dde6dbbceaf098fe7334b503d07
+source-git-commit: ce14d830db2f3e163102d748f5fbaa2de4da17b5
 workflow-type: tm+mt
-source-wordcount: '3351'
+source-wordcount: '3344'
 ht-degree: 8%
 
 ---
@@ -84,14 +84,13 @@ O Adobe recomenda que você analise todas as culturas e amostras geradas para ga
 
 A resolução máxima de tamanho de arquivo de entrada compatível é de 16K.
 
-O formato de imagem CMYK não é compatível com o recorte inteligente.
-
 >[!NOTE]
 Resolução de 16K é uma resolução de exibição com aproximadamente 16.000 pixels horizontalmente. A resolução de 16K mais comumente discutida é de 15360 × 8640, o que dobra a contagem de pixels de 8K UHD em cada dimensão, para um total de quatro vezes mais pixels. Essa resolução tem 132,7 megapixels, 16 vezes mais pixels do que a resolução de 4K e 64 vezes mais pixels do que a resolução de 1080p.
 
 | Formato de imagem | Extensão de arquivo que não diferencia maiúsculas de minúsculas | Tipo MIME | Espaço de cores de entrada suportado | Tamanho máximo suportado do arquivo de entrada | Formato de imagem suportado? |
 | --- | --- | --- | --- | --- | --- |
 | BMP | `.bmp` | image/bmp | sRGB | 4 GB | Sim |
+| CMYK |  |  |  |  | Não |
 | EPS |  |  |  |  | Não |
 | GIF | `.gif` | image/gif | sRGB | 15 GB | Sim; o primeiro quadro do GIF animado é usado para a representação. Não é possível configurar ou alterar o primeiro quadro. |
 | JPEG | `.jpg` e `.jpeg` | image/jpeg | sRGB | 15 GB | Sim |
