@@ -8,9 +8,9 @@ geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
 feature: Dynamic Media Classic,Asset Management,Image Sets,Spin Sets,eCatalog
 role: User
 exl-id: fb63e2d4-2c8c-48dd-a0dc-fdfbbfb57b30
-source-git-commit: e669fc821402f84fae58f457d5d9d1680c39ffaf
+source-git-commit: a3b16a47be8ec28a02763655d49a9bb469fbc118
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '279'
 ht-degree: 5%
 
 ---
@@ -30,8 +30,8 @@ Quando você cria um Conjunto de rotação ou um Conjunto de imagens, ou faz upl
 
 | Ativo - Tipo de limite | Prática recomendada | Limite imposto | Alteração do limite em 31 de dezembro de 2022 |
 | --- | --- | --- | --- |
-| **Imagem** - Número de Smart Crops por imagem | 5 | 100 | 20 |
-| **Todos os conjuntos** - Número de ativos duplicados por conjunto | Sem duplicatas | 20º | Não aplicável |
+| **Imagem** - Número de Smart Crops por imagem | 5 | 100 | Não aplicável |
+| **Todos os conjuntos** - Número de ativos duplicados por conjunto | Sem duplicatas | 20 | Não aplicável |
 | **Todos os conjuntos** - Número máximo de ativos por conjunto | 5 a 10 imagens por conjunto | 1000 | Não aplicável |
 | **Conjunto de rotação** - Número máximo de linhas/colunas por conjunto 2D | 12 a 18 imagens por conjunto | 1000 | Não aplicável |
 | **PDF** - Número máximo de páginas para um PDF a ser considerado para extração |  | 5000 (para novos uploads) | 100 (para todos os PDF) |
