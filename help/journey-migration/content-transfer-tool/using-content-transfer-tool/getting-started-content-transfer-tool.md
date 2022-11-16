@@ -2,9 +2,9 @@
 title: Introdução à ferramenta Transferência de conteúdo
 description: Introdução à ferramenta Transferência de conteúdo
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: c6a27c996458259904b6532c69a1bd33e2f725c6
+source-git-commit: 1dfef0f1157ead7f1240e9a41794436197136daa
 workflow-type: tm+mt
-source-wordcount: '1292'
+source-wordcount: '1327'
 ht-degree: 9%
 
 ---
@@ -36,6 +36,9 @@ A instância de AEM de origem pode estar em execução atrás de um firewall em 
 
 * O serviço de armazenamento de blobs do Azure: `casstorageprod.blob.core.windows.net`
 * O ponto de extremidade de E/S de Mapeamento de Usuário: `usermanagement.adobe.io`
+
+>[!NOTE]
+>Se a extração falhar devido ao seguinte erro: &quot;javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: Falha na criação do caminho PKIX: sun.security.provider.certpath.SunCertPathBuilderException: não é possível localizar o caminho de certificação válido para o destino solicitado&quot;, então isso pode ser resolvido importando o certificado da autoridade de certificação relevante.
 
 ### Ativar o registro em SSL {#enable-ssl-logging}
 
