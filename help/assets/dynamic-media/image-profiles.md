@@ -4,9 +4,9 @@ description: Saiba como criar Perfis de imagem do Dynamic Media que contêm conf
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: ce14d830db2f3e163102d748f5fbaa2de4da17b5
+source-git-commit: 568109e90df20aae3181975b1b83fd0dd1857eb3
 workflow-type: tm+mt
-source-wordcount: '3344'
+source-wordcount: '3390'
 ht-degree: 8%
 
 ---
@@ -56,9 +56,9 @@ A nitidez é descrita em [Nitidez de imagens](/help/assets/dynamic-media/assets/
 
 Quando você implementa o Recorte inteligente em imagens, o Adobe recomenda a seguinte prática recomendada e aplica o seguinte limite:
 
-| Tipo de limite | Prática recomendada | Limite imposto | Alteração do limite em 31 de dezembro de 2022 |
-| --- | --- | --- | --- |
-| Número de Recortes Inteligentes por imagem | 5 | 100 | 20 |
+| Tipo de limite | Prática recomendada | Limite imposto |
+| --- | --- | --- |
+| Número de Recortes Inteligentes por imagem | 5 | 100 |
 
 Consulte também [Limitações do Dynamic Media](/help/assets/dynamic-media/limitations.md).
 
@@ -71,7 +71,8 @@ Cada geração de Corte inteligente que você cria requer processamento extra. P
 Você tem duas opções de recorte de imagem para escolher. Você também pode optar por automatizar a criação de amostras de cores e imagens ou preservar o conteúdo de corte nas resoluções do target.
 
 >[!IMPORTANT]
-O Adobe recomenda que você analise todas as culturas e amostras geradas para garantir que elas sejam apropriadas e relevantes para sua marca e valores.
+・ O Adobe recomenda que você analise todas as culturas e amostras geradas para garantir que elas sejam apropriadas e relevantes para sua marca e valores.
+・ O formato de imagem CMYK não é compatível com o recorte inteligente.
 
 | Opção | Quando usar | Descrição |
 | --- | --- | --- |
@@ -199,7 +200,8 @@ Você pode reprocessar ativos em uma pasta que já tenha um perfil de vídeo exi
 ## Editar o recorte inteligente ou a amostra inteligente de uma única imagem {#editing-the-smart-crop-or-smart-swatch-of-a-single-image}
 
 >[!IMPORTANT]
-O Adobe recomenda que você analise todas as culturas inteligentes e amostras inteligentes geradas para garantir que elas sejam apropriadas e relevantes para sua marca e valores.
+・ O Adobe recomenda que você analise todas as culturas inteligentes geradas e amostras inteligentes para garantir que elas sejam apropriadas e relevantes para sua marca e valores.
+・ O formato de imagem CMYK não é compatível com o recorte inteligente.
 
 Você pode realinhar ou redimensionar manualmente a janela de recorte inteligente de uma imagem para refinar ainda mais seu ponto focal.
 
@@ -231,6 +233,10 @@ Consulte também [Editar o recorte inteligente ou a amostra inteligente de vári
 1. Ao lado do canto superior direito da página, selecione **[!UICONTROL Salvar]**, em seguida selecione **[!UICONTROL Fechar]** para retornar à pasta de ativos.
 
 ## Editar o recorte inteligente ou a amostra inteligente de várias imagens {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
+
+>[!IMPORTANT]
+・ O Adobe recomenda que você analise todas as culturas inteligentes geradas e amostras inteligentes para garantir que elas sejam apropriadas e relevantes para sua marca e valores.
+・ O formato de imagem CMYK não é compatível com o recorte inteligente.
 
 Depois de aplicar um Perfil de imagem - contendo Recorte inteligente - a uma pasta, todas as imagens nessa pasta têm um recorte aplicado a elas. Se desejar, é possível *manualmente* realinhar ou redimensionar a janela de recorte inteligente em várias imagens para refinar ainda mais seu ponto focal.
 
