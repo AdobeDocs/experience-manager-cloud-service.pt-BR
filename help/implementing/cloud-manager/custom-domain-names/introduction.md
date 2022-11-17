@@ -2,10 +2,10 @@
 title: Introdução a nomes de domínio personalizados
 description: A interface do usuário do Cloud Manager permite adicionar um domínio personalizado para identificar seu site com um nome exclusivo e de marca, de maneira automatizada.
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: d22d657361ea6c4885babd76e6b4c10f88378994
+source-git-commit: 42318a42a55134501eb13feca22791bb5db4e83f
 workflow-type: tm+mt
 source-wordcount: '665'
-ht-degree: 84%
+ht-degree: 83%
 
 ---
 
@@ -55,7 +55,7 @@ A adição de um nome de domínio personalizado exige interação entre o servi�
 
 | Etapa | Descrição | Responsabilidade | Saiba mais |
 |--- |--- |--- |---|
-| 1 | Adicionar certificado SLL ao Cloud Manager | Cliente | [Adicionar um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
+| 1 | Adicionar certificado SSL ao Cloud Manager | Cliente | [Adicionar um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
 | 2 | Adicionar registro TXT para verificar o domínio | Cliente | [Adicionar um registro TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) |
 | 3 | Revisar o status de verificação de domínio | Cliente | [Verificação de status do nome de domínio](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
 | 3a | Se a verificação de domínio falhar com o status `Domain Verification Failure` | Cliente | [Verificação de status do nome de domínio](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
