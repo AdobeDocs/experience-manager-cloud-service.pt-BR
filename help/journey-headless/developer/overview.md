@@ -3,9 +3,9 @@ title: jornada do desenvolvedor de CMS sem periféricos AEM
 description: Saiba mais sobre o desenvolvimento sem periféricos usando o Adobe Experience Manager (AEM) como um CMS sem periféricos. Saiba como usar recursos como Modelos de conteúdo, Fragmentos de conteúdo e uma API GraphQL para potencializar a entrega de conteúdo sem interface.
 landing-page-description: Saiba mais sobre a entrega e implementação de conteúdo sem periféricos. Saiba mais sobre como desenvolver sua estratégia na sua empresa.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: 06aec2fa43db2393416dd5efab886d9c301ffdb2
+source-git-commit: 64862456bfbffe1799a3f0b6ea3353f45e60c52f
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1051'
 ht-degree: 16%
 
 ---
@@ -61,6 +61,8 @@ Embora seja possível ir diretamente para uma parte específica da jornada, muit
 | 7 | [Como unir tudo - seu aplicativo e seu conteúdo no AEM Headless](put-it-all-together.md) | Saiba como aceitar seu AEM Project e prepará-lo para entrar em vigor com o AEM Headless SDK. |
 | 8 | [Como executar o aplicativo headless](go-live.md) | Saiba como implantar o aplicativo ao vivo e obter seu código local no Git e movê-lo para o pipeline de Git do Cloud Manager para CI/CD. |
 | 9 | [Opcional - Como criar aplicativos de página única (SPA) com AEM](create-spa.md) | Explore como combinar a entrega sem interface e saiba como criar SPA editáveis usando AEM estrutura SPA Editor. |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## O que vem a seguir {#what-is-next}
 
