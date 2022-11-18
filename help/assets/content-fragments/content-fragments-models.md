@@ -2,10 +2,10 @@
 title: Modelos de fragmentos do conteúdo (Ativos - Fragmentos de conteúdo)
 description: Saiba como os Modelos de fragmentos de conteúdo servem como base para seu conteúdo headless no AEM e como criar Fragmentos de conteúdo com conteúdo estruturado.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: 17705b698915d4fac1e60ad06396d40f2e19ebd5
 workflow-type: tm+mt
-source-wordcount: '2893'
-ht-degree: 98%
+source-wordcount: '2887'
+ht-degree: 97%
 
 ---
 
@@ -17,7 +17,7 @@ Para usar modelos de fragmento de conteúdo, você pode:
 
 1. [Ativar a funcionalidade de modelo de fragmento de conteúdo para sua instância](/help/assets/content-fragments/content-fragments-configuration-browser.md)
 1. [Criar](#creating-a-content-fragment-model) e [configurar](#defining-your-content-fragment-model) os modelos de fragmento de conteúdo
-1. [Ativar os modelos de fragmento de conteúdo](#enabling-disabling-a-content-fragment-model) para uso ao criar fragmentos de conteúdo
+1. [Ativar os modelos de fragmento de conteúdo](#enabling-disabling-a-content-fragment-model) para uso ao criar Fragmentos de conteúdo
 1. [Autorizar os modelos de fragmento de conteúdo nas pastas de ativos necessárias](#allowing-content-fragment-models-assets-folder) ao configurar as **Políticas**.
 
 ## Criação de um modelo de fragmento de conteúdo {#creating-a-content-fragment-model}
