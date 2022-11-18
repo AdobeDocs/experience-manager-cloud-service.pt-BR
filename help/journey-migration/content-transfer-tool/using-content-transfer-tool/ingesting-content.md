@@ -2,9 +2,9 @@
 title: Assimilar conteúdo no Target
 description: Assimilar conteúdo no Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: e8b4fe047c9656aa592fc851279dc6a189144023
+source-git-commit: 4b716f3a41e431b47c8f439d4d24610b79f22736
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '956'
 ht-degree: 13%
 
 ---
@@ -26,6 +26,11 @@ Siga as etapas abaixo para assimilar seu conjunto de migração da ferramenta Tr
 1. Vá para Cloud Acceleration Manager. Clique no cartão do projeto e clique no cartão Transferência de conteúdo . Navegar para **Trabalhos de assimilação** e clique em **Nova Assimilação**
 
    ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-01.png)
+
+
+1. Revise a lista de verificação de assimilação e verifique se todas as etapas foram concluídas. Essas são etapas necessárias para garantir uma assimilação bem-sucedida. Você poderá prosseguir para a **Próximo** somente se a lista de verificação tiver sido concluída.
+
+   ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/Ingestion-checklist.png)
 
 1. Forneça as informações necessárias para criar uma nova assimilação.
 
