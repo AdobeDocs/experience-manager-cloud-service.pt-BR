@@ -3,10 +3,10 @@ title: Dispatcher na nuvem
 description: Dispatcher na nuvem
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
-source-git-commit: 69cb9b9015ed3a7acdcc42c7e25fb45b479a7f4e
+source-git-commit: 10da82c572682156534f7a897715d703ba3bde3d
 workflow-type: tm+mt
-source-wordcount: '998'
-ht-degree: 6%
+source-wordcount: '1010'
+ht-degree: 7%
 
 ---
 
@@ -50,7 +50,7 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 
 As ferramentas do dispatcher são usadas para validar e depurar a configuração do Dispatcher do seu projeto. Saiba mais sobre como usar essas ferramentas nas páginas referenciadas abaixo, com base em se a configuração do dispatcher do seu projeto está estruturada em modo flexível ou no modo herdado:
 
-* **Modo flexível** - o modo recomendado e o padrão para [AEM arquétipo 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) e superior, que também é usada pelo Cloud Manager para novos ambientes criados após a versão 2021.7.0 do Cloud Manager. Os clientes podem ativar esse modo adicionando a pasta e o arquivo `opt-in/USE_SOURCES_DIRECTLY`. Ao usar esse modo mais flexível, não há limitações na estrutura de arquivos na pasta de regravações que, no modo herdado, exigiam uma única `rewrite.rules` arquivo. Além disso, não há limitação no número de regras que podem ser adicionadas. Para obter detalhes sobre a estrutura de pastas e a validação local, consulte [Validação e depuração usando ferramentas do Dispatcher](/help/implementing/dispatcher/validation-debug.md).
+* **Modo flexível** - o modo recomendado e o padrão para [AEM arquétipo 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR) e superior, que também é usada pelo Cloud Manager para novos ambientes criados após a versão 2021.7.0 do Cloud Manager. Os clientes podem ativar esse modo adicionando a pasta e o arquivo `opt-in/USE_SOURCES_DIRECTLY`. Ao usar esse modo mais flexível, não há limitações na estrutura de arquivos na pasta de regravações que, no modo herdado, exigiam uma única `rewrite.rules` arquivo. Além disso, não há limitação no número de regras que podem ser adicionadas. Para obter detalhes sobre a estrutura de pastas e a validação local, consulte [Validação e depuração usando ferramentas do Dispatcher](/help/implementing/dispatcher/validation-debug.md).
 
 * **Modo herdado** - para obter detalhes sobre a estrutura de pastas e a validação local para o modo herdado de configuração do dispatcher, consulte [Validação e depuração usando ferramentas do Dispatcher (herdadas)](/help/implementing/dispatcher/validation-debug-legacy.md)
 
@@ -100,6 +100,7 @@ A tabela abaixo mostra os módulos apache suportados:
 | `mod_substitute` | [https://httpd.apache.org/docs/2.4/mod/mod_substitute.html](https://httpd.apache.org/docs/2.4/mod/mod_substitute.html) |
 | `mod_userdir` | [https://httpd.apache.org/docs/2.4/mod/mod_userdir.html](https://httpd.apache.org/docs/2.4/mod/mod_userdir.html) |
 | `mod_macro` | [https://httpd.apache.org/docs/2.4/mod/mod_macro.html](https://httpd.apache.org/docs/2.4/mod/mod_macro.html) |
+| `mod_include (no directives supported)` | [https://httpd.apache.org/docs/2.4/mod/mod_include.html](https://httpd.apache.org/docs/2.4/mod/mod_include.html) |
 
 
 Os clientes não podem adicionar módulos arbitrários, no entanto, módulos adicionais podem ser considerados para inclusão futura. Os clientes podem encontrar a lista de diretivas disponíveis para uma determinada versão do Dispatcher executando o comando de  lista de permissões do validador no SDK.
