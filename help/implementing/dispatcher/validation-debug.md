@@ -3,7 +3,7 @@ title: Validação e depuração usando ferramentas do Dispatcher
 description: Validação e depuração usando ferramentas do Dispatcher
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 58f36799f65988eddf0c82dc10b0e62621be5a7c
+source-git-commit: 687323031ecfd179a1875033411b8398a3d1d74b
 workflow-type: tm+mt
 source-wordcount: '2693'
 ht-degree: 1%
@@ -50,6 +50,7 @@ A estrutura da subpasta do Dispatcher do projeto é a seguinte:
     ├── cache
     │   ├── default_invalidate.any
     │   ├── default_rules.any
+    │   ├── marketing_query_parameters.any
     │   └── rules.any
     ├── clientheaders
     │   ├── clientheaders.any
@@ -535,7 +536,7 @@ $ docker exec d75fbd23b29 httpd-test
 
 ## Migração do modo herdado para o modo flexível {#migrating}
 
-Com a versão 2021.7.0 do Cloud Manager, os novos programas do Cloud Manager geram estruturas de projeto maven com [AEM arquétipo 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) ou superior, que inclui o arquivo **opt-in/USE_SOURCES_DIRECTLY**. Isso remove as limitações anteriores do [modo herdado](/help/implementing/dispatcher/validation-debug-legacy.md) em torno do número e do tamanho dos arquivos, fazendo com que o SDK e o tempo de execução validem e implantem a configuração de maneira aprimorada. Se a configuração do dispatcher não tiver esse arquivo, é altamente recomendável migrar. Use as seguintes etapas para garantir uma transição segura:
+Com a versão 2021.7.0 do Cloud Manager, os novos programas do Cloud Manager geram estruturas de projeto maven com [AEM arquétipo 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR) ou superior, que inclui o arquivo **opt-in/USE_SOURCES_DIRECTLY**. Isso remove as limitações anteriores do [modo herdado](/help/implementing/dispatcher/validation-debug-legacy.md) em torno do número e do tamanho dos arquivos, fazendo com que o SDK e o tempo de execução validem e implantem a configuração de maneira aprimorada. Se a configuração do dispatcher não tiver esse arquivo, é altamente recomendável migrar. Use as seguintes etapas para garantir uma transição segura:
 
 1. **Teste local.** Usando as ferramentas mais recentes do dispatcher SDK, adicione a pasta e o arquivo `opt-in/USE_SOURCES_DIRECTLY`. Siga as instruções de &quot;validação local&quot; neste artigo para testar se o dispatcher funciona localmente.
 1. **Teste de desenvolvimento em nuvem:**
