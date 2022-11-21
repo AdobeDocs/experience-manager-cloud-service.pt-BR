@@ -2,7 +2,7 @@
 title: Visão geral da ferramenta Transferência de conteúdo
 description: Visão geral da ferramenta Transferência de conteúdo
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: c6a27c996458259904b6532c69a1bd33e2f725c6
+source-git-commit: 99ecf1309b9fa7613bfb9c99de9677700082f128
 workflow-type: tm+mt
 source-wordcount: '629'
 ht-degree: 44%
@@ -34,7 +34,7 @@ Uma nova versão da ferramenta Transferência de conteúdo está disponível e i
 
 * Maneira de autoatendimento de extrair um conjunto de migração uma vez e assimilá-lo em vários ambientes em paralelo
 * Melhoria na experiência do usuário por meio de melhores estados de carregamento, medidas de proteção e tratamento de erros
-* Os logs de assimilação são mantidos e sempre estão disponíveis para solução de problemas
+* Os logs de assimilação são persistentes e sempre estão disponíveis para solução de problemas
 
 Para começar a usar a nova versão, será necessário desinstalar as versões mais antigas da ferramenta Transferência de conteúdo, pois houve uma mudança importante na arquitetura da ferramenta.
 

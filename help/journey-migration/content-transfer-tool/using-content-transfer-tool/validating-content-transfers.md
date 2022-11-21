@@ -2,7 +2,7 @@
 title: Validar transferências de conteúdo
 description: Use a ferramenta Transferência de conteúdo para validar transferências de conteúdo
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: 015f3b0232861ac961922245650cb02db44daf77
+source-git-commit: 99ecf1309b9fa7613bfb9c99de9677700082f128
 workflow-type: tm+mt
 source-wordcount: '890'
 ht-degree: 2%

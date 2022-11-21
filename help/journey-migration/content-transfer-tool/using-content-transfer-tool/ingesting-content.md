@@ -2,10 +2,10 @@
 title: Assimilar conteúdo no Target
 description: Assimilar conteúdo no Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 4b716f3a41e431b47c8f439d4d24610b79f22736
+source-git-commit: 319a9bc2aa6d82d0fb322cd1f2ca37e95c33e97d
 workflow-type: tm+mt
-source-wordcount: '956'
-ht-degree: 13%
+source-wordcount: '1029'
+ht-degree: 12%
 
 ---
 
@@ -40,6 +40,10 @@ Siga as etapas abaixo para assimilar seu conjunto de migração da ferramenta Tr
    >[!NOTE]
    >
    >Se a origem foi Autor, é recomendável assimilá-la no nível Autor no destino. Da mesma forma, se a origem foi Publicar, o destino também deve ser Publicar.
+
+   >[!NOTE]
+   >
+   >Se a camada de destino for `Author`, a instância do autor será encerrada durante a assimilação e não estará disponível para os usuários (por exemplo, autores ou qualquer pessoa que faça manutenção etc.). Isto serve para proteger o sistema e impedir quaisquer alterações que possam ser perdidas ou causar um conflito de ingestão. Certifique-se de que a sua equipe esteja ciente deste fato. Observe também que o ambiente aparecerá hibernado durante a assimilação do autor.
 
    >[!NOTE]
    >
