@@ -10,10 +10,10 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: fbd2fdcb61bcbae49f07c3da26b14d56d50b1cab
 workflow-type: tm+mt
-source-wordcount: '2043'
-ht-degree: 17%
+source-wordcount: '2214'
+ht-degree: 15%
 
 ---
 
@@ -182,6 +182,18 @@ Páginas específicas do produto são selecionadas pelo SKU ou categoria do prod
 O `UrlProvider` O é pré-configurado para gerar deep links para páginas de categoria e produto específicas em instâncias da camada do autor. Isso é útil para editores que navegam em um site usando o modo de Visualização, navegam até uma página de produto ou categoria específica e alternam de volta para o modo de Edição para editar a página.
 
 Por outro lado, ao publicar instâncias de nível, os URLs de página de catálogo devem ser mantidos estáveis para não perder ganhos nas classificações do mecanismo de pesquisa, por exemplo. Devido a essa situação, as instâncias de camada de publicação não renderizarão deep links para páginas de catálogo específicas por padrão. Para alterar esse comportamento, a variável _Estratégia da página específica do provedor de URL da CIF_ pode ser configurado para sempre gerar URLs de página específicos.
+
+### Várias páginas de catálogo {#multiple-product-pages}
+
+Quando os editores desejam ter controle total da navegação de nível superior de um site, usar uma única página de catálogo para renderizar as categorias de nível superior de um catálogo pode não ser desejado. Em vez disso, os editores podem criar várias páginas de catálogo, uma para cada categoria do catálogo que desejam incluir na navegação de nível superior.
+
+Para esse caso de uso, cada página de catálogo pode ter uma referência a uma página de produto e categoria específica para a categoria configurada para a página de catálogo. O `UrlProvider` usará esses links para criar links para as páginas e categorias na categoria configurada. No entanto, por motivos de desempenho, somente os filhos da página de catálogo direto da raiz de navegação/página de aterrissagem de um site são considerados.
+
+Recomenda-se que as páginas de produto e categoria de uma página de catálogo sejam descendentes dessa página de catálogo, caso contrário, componentes como a Navegação ou a navegação estrutural podem não funcionar corretamente.
+
+>[!NOTE]
+>
+> O suporte completo para várias páginas de catálogo requer [Componentes principais da CIF 2.10.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.10.0) ou mais recente.
 
 ## Personalizações {#customization}
 
