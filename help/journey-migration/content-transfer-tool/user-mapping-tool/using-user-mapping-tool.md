@@ -2,9 +2,9 @@
 title: Utilização da ferramenta Mapeamento de usuários
 description: Utilização da ferramenta Mapeamento de usuários
 exl-id: dcb750c4-0f81-4d11-ac6c-0592162b683d
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 68ade018185892528854a9438953ee7eb4b90f27
 workflow-type: tm+mt
-source-wordcount: '752'
+source-wordcount: '753'
 ht-degree: 4%
 
 ---
@@ -20,7 +20,7 @@ Siga as etapas abaixo para configurar isso:
 1. Navegar para [Console do Adobe Developer](https://console.adobe.io) usando sua Adobe ID.
 1. Crie um novo projeto ou abra um projeto existente.
 1. Adicionar uma API - Clique **Adicionar ao projeto** e selecione **API**
-1. Escolha a API de gerenciamento de usuários.  Talvez seja necessário obter permissões para ter essa opção.
+1. Escolha a API de gerenciamento de usuários.  Você deve ter permissões de Administrador do sistema para ter essa opção disponível.
 1. Crie uma credencial JWT.
 1. Gere um par de chaves ou Carregue uma chave pública (rsa não está bom).  Há um botão. **Gerar um par de chaves público/privado**, o que fará isso por você.  Salve as chaves públicas e privadas.
 1. Navegue até a API de gerenciamento de usuários.
