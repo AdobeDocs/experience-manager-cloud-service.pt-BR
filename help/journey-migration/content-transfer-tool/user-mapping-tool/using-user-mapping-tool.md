@@ -2,9 +2,9 @@
 title: Utilização da ferramenta Mapeamento de usuários
 description: Utilização da ferramenta Mapeamento de usuários
 exl-id: dcb750c4-0f81-4d11-ac6c-0592162b683d
-source-git-commit: 68ade018185892528854a9438953ee7eb4b90f27
+source-git-commit: a9e30f6a15bbc9fc830849e05e1814a2cdd50fd5
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '816'
 ht-degree: 4%
 
 ---
@@ -14,6 +14,8 @@ ht-degree: 4%
 A Ferramenta de mapeamento de usuários usa uma API que permite procurar usuários do Adobe Identity Management System (IMS) por email e retornar suas IDs IMS. Essa API exige que o usuário crie uma ID do cliente para sua organização, um Segredo do cliente e um Token de acesso ou portador.
 
 ## Configurar a ferramenta Mapeamento de usuários {#setting-up-user-mapping}
+
+**Pré-requisito:** O mapeamento de usuário exige que cada usuário seja mapeado para sua ID IMS tenha um endereço de email no perfil no AEM e no IMS.  Observe que mesmo que o usuário use um endereço de email como ID de usuário para fazer logon, o mapeamento não funcionará para esse usuário, a menos que o endereço de email também esteja no perfil e também no IMS.
 
 Siga as etapas abaixo para configurar isso:
 
