@@ -2,9 +2,9 @@
 title: Considerações importantes para a ferramenta Mapeamento de usuários
 description: Considerações importantes para a ferramenta Mapeamento de usuários
 exl-id: 0d39a5be-93e1-4b00-ac92-c2593c02b740
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 18047b129a9a347cbf6edcdc07dc6570fca26d3b
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '594'
 ht-degree: 0%
 
 ---
@@ -16,13 +16,15 @@ ht-degree: 0%
 
 Os seguintes casos específicos serão registrados:
 
-1. Se um usuário não tiver endereço de email na `profile/email` do seu *jcr* nó em que o usuário ou grupo em questão será migrado, mas não mapeado.
+1. Se um usuário não tiver endereço de email na `profile/email` do seu *jcr* nó em que o usuário ou grupo em questão será migrado, mas não mapeado.  Esse será o caso mesmo se o endereço de email for usado como nome de usuário para fazer logon.
 
 1. Se um determinado email não for encontrado no sistema Adobe Identity Management System (IMS) para a ID da organização usada (ou se a ID IMS não puder ser recuperada por outro motivo), o usuário ou grupo em questão será migrado, mas não mapeado.
 
 1. Se o usuário estiver desabilitado no momento, ele será tratado como se não estivesse desabilitado. Ele será mapeado e migrado normalmente e permanecerá desativado na instância da nuvem.
 
 1. Se um usuário existir na instância de destino do AEM Cloud Service com o mesmo nome de usuário (rep:principalName) de um dos usuários na instância de origem do AEM, o usuário ou grupo em questão não será migrado.
+
+1. Se um usuário for migrado sem ser mapeado primeiro por meio do Mapeamento de usuário, no sistema da nuvem de destino, ele não poderá fazer logon usando sua ID IMS.  Eles podem fazer logon usando o método AEM tradicional, mas lembrem-se de que isso não é normalmente o que é desejado ou esperado.
 
 ## Considerações adicionais {#additional-considerations}
 
