@@ -2,9 +2,9 @@
 title: Páginas de erro personalizadas
 description: AEM vem com um manipulador de erros padrão para lidar com erros HTTP, que podem ser personalizados.
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
-source-git-commit: db997127c6cbba434b86990852d1ba590d5f12a5
+source-git-commit: 570e7d71fc8b3db33e93394d0aa53cb159636fb7
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: '575'
 ht-degree: 2%
 
 ---
@@ -70,9 +70,9 @@ Para lidar com erros 500, o nome do arquivo do script do manipulador de erros de
 
 >[!NOTE]
 >
->No AEM como Cloud Service, a CDN serve uma página de erro genérica sempre que um erro 5XX é recebido do back-end. Para permitir que a resposta real do back-end passe por você precisa adicionar o seguinte cabeçalho à resposta:
->`x-aem-error-pass: true`
->Isso funcionará somente para respostas provenientes de AEM ou da camada do Apache/Dispatcher. Outros erros inesperados provenientes de camadas de infraestrutura intermediárias ainda exibirão a página de erro genérica.
+>No AEM como Cloud Service, a CDN serve uma página de erro genérica quando um erro 5XX é recebido do back-end. Para permitir que a resposta real do back-end passe por você precisa adicionar o seguinte cabeçalho à resposta: `x-aem-error-pass: true`.
+>
+>Isso funciona somente para respostas provenientes de AEM ou da camada do Apache/Dispatcher. Outros erros inesperados provenientes de camadas de infraestrutura intermediárias ainda exibirão a página de erro genérica.
 
 >[!CAUTION]
 >
