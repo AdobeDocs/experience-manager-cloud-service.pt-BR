@@ -2,9 +2,9 @@
 title: Assimilar conteúdo no Target
 description: Assimilar conteúdo no Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 319a9bc2aa6d82d0fb322cd1f2ca37e95c33e97d
+source-git-commit: 71370cf59bd1f65db78c2818c118e7d9ec2c9196
 workflow-type: tm+mt
-source-wordcount: '1029'
+source-wordcount: '1072'
 ht-degree: 12%
 
 ---
@@ -22,6 +22,9 @@ ht-degree: 12%
 Siga as etapas abaixo para assimilar seu conjunto de migração da ferramenta Transferência de conteúdo:
 >[!NOTE]
 >Você pode executar a etapa opcional de pré-cópia para acelerar significativamente a fase de assimilação. A etapa de pré-cópia é mais eficaz para a primeira extração e ingestão completas. Consulte [Integração com o AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) para obter mais detalhes.
+
+>[!NOTE]
+>Lembrou-se de registrar um tíquete de suporte para esta assimilação? Consulte [Considerações importantes antes de usar a ferramenta Transferência de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#important-considerations) para isso e outras considerações que ajudem a tornar a ingestão bem-sucedida.
 
 1. Vá para Cloud Acceleration Manager. Clique no cartão do projeto e clique no cartão Transferência de conteúdo . Navegar para **Trabalhos de assimilação** e clique em **Nova Assimilação**
 
@@ -96,7 +99,8 @@ Siga as etapas abaixo para assimilar seu conjunto de migração da ferramenta Tr
 ## Ingestão complementar {#top-up-ingestion-process}
 
 >[!CONTEXTUALHELP]
->id="aemcloud_ctt_ingestion_topup" title="Top Up Ingestion"
+>id="aemcloud_ctt_ingestion_topup"
+>title="Ingestão complementar"
 >abstract="Use o recurso de cima para mover o conteúdo modificado desde a atividade de transferência de conteúdo anterior. Após a conclusão da assimilação, verifique os logs em busca de erros/avisos. Todos os erros devem ser resolvidos imediatamente, lidando com os problemas relatados ou entrando em contato com o Atendimento ao Cliente do Adobe."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en" text="Visualização de logs"
 
