@@ -3,9 +3,9 @@ title: CDN no AEM as a Cloud Service
 description: CDN no AEM as a Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 69cb9b9015ed3a7acdcc42c7e25fb45b479a7f4e
+source-git-commit: 093a83b7e76167b1962639b245332e515df2447b
 workflow-type: tm+mt
-source-wordcount: '1117'
+source-wordcount: '1145'
 ht-degree: 8%
 
 ---
@@ -38,7 +38,7 @@ Siga as seções abaixo para usar a interface do usuário de autoatendimento do 
 
 Por padrão, para uma configuração de CDN gerenciada AEM, todo o tráfego público pode chegar ao serviço de publicação, para ambientes de produção e não produção (desenvolvimento e estágio). Se quiser limitar o tráfego para o serviço de publicação de um determinado ambiente (por exemplo, limitando o armazenamento temporário por um intervalo de endereços IP), faça isso de uma maneira automatizada por meio da interface do usuário do Cloud Manager.
 
-Consulte [Gerenciamento de Listas de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) para saber mais.
+Consulte [Gerenciamento de listas de permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) para saber mais.
 
 >[!CAUTION]
 >
@@ -90,7 +90,8 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 >[!NOTE]
 >
->Ao usar seu próprio CDN, não há necessidade de instalar os domínios e certificados no Cloud Manager. O roteamento no Adobe CDN será feito usando o domínio padrão `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
+>Ao usar sua própria CDN, não é necessário instalar domínios e certificados no Cloud Manager. O roteamento no Adobe CDN será feito usando o domínio padrão `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com` que devem ser enviadas no pedido `Host` cabeçalho. Substituição da solicitação `Host` com um nome de domínio personalizado pode fazer com que a solicitação seja roteada incorretamente pelo Adobe CDN.
+
 
 >[!NOTE]
 >
