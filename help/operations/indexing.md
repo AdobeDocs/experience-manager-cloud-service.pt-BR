@@ -2,10 +2,10 @@
 title: Pesquisa e indexação de conteúdo
 description: Pesquisa e indexação de conteúdo
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 82f959a8a4f02486c1b3431b40534cdb95853dd6
+source-git-commit: 7e32c997a69feb8447609bf984ba731008489095
 workflow-type: tm+mt
-source-wordcount: '2289'
-ht-degree: 90%
+source-wordcount: '2498'
+ht-degree: 88%
 
 ---
 
@@ -18,22 +18,20 @@ Com o AEM as a Cloud Service, a Adobe está passando de um modelo centrado em in
 Abaixo está uma lista das principais alterações em comparação ao AEM 6.5 e versões anteriores:
 
 1. Os usuários não terão mais acesso ao Gerenciador de índice de uma instância única do AEM para depurar, configurar ou manter a indexação. Ele só será usado para desenvolvimento e implantações locais.
-
 1. Os usuários não poderão mais alterar índices em uma instância única do AEM, nem precisarão se preocupar com verificações de consistência ou reindexação.
-
 1. Em geral, as alterações de índice são iniciadas antes de entrar na produção, para não contornar gateways de qualidade nos pipelines CI/CD do Cloud Manager e não afetar os KPIs de negócios em produção.
-
 1. Todas as métricas relacionadas, incluindo o desempenho da pesquisa na produção, estarão disponíveis para os clientes durante o tempo de execução para fornecer uma visualização integral sobre os tópicos de pesquisa e indexação.
-
 1. Os clientes poderão configurar alertas de acordo com suas necessidades.
-
 1. Os SREs estão monitorando a integridade do sistema 24 horas por dia, 7 dias por semana, e tomarão as medidas necessárias assim que possível.
-
 1. A configuração do índice é alterada por meio de implantações. As alterações na definição do índice são configuradas como outras alterações de conteúdo.
-
 1. Em alto nível no AEM as a Cloud Service, com a introdução do [Modelo de implantação azul-verde](#index-management-using-blue-green-deployments), dois conjuntos de índices existirão: um conjunto para a versão antiga (azul) e um conjunto para a nova versão (verde).
-
 1. Os clientes poderão ver se o trabalho de indexação foi concluído na página de criação do Cloud Manager e serão notificados quando a nova versão estiver pronta para receber tráfego.
+
+Limitações:
+
+* Atualmente, o gerenciamento de índice no AEM as a Cloud Service é compatível somente com índices do tipo `lucene`.
+* Somente os analisadores padrão são compatíveis (ou seja, aqueles enviados com o produto). Não há compatibilidade com analisadores personalizados.
+* Internamente, outros índices podem ser configurados e usados para consultas. Por exemplo, consultas gravadas em relação ao índice `damAssetLucene` podem, no Skyline, ser executadas em uma versão Elasticsearch desse índice. Normalmente, essa diferença não é visível para o aplicativo e para o usuário. No entanto, certas ferramentas, como o recurso `explain`, relatarão um índice diferente. Para ver as diferenças entre os índices Lucene e os índices Elastic, consulte [a documentação do Elastic no Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Os clientes não precisam e não podem configurar os índices de Elasticsearch diretamente.
 
 ## Como usar {#how-to-use}
 
@@ -146,6 +144,64 @@ Em `ui.apps.structure/pom.xml`, a seção `filters` desse plug-in precisa conter
 ```
 
 Depois que a nova definição de índice é adicionada, o novo aplicativo precisa ser implantado por meio do Cloud Manager. Após a implantação, dois trabalhos são iniciados, responsáveis por adicionar (e mesclar, se necessário) as definições de índice ao MongoDB e ao Azure Segment Store para criação e publicação, respectivamente. Os repositórios subjacentes estão sendo reindexados com as novas definições de índice, antes da mudança azul-verde ocorrer.
+
+### OBSERVAÇÃO
+
+Caso observe o seguinte erro na validação do filevault <br>
+`[ERROR] ValidationViolation: "jackrabbit-nodetypes: Mandatory child node missing: jcr:content [nt:base] inside node with types [nt:file]"` <br>
+Em seguida, qualquer uma das etapas a seguir pode ser seguida para corrigir o problema - <br>
+1. Faça o downgrade do arquivo padrão para a versão 1.0.4 e adicione o seguinte ao pom de nível superior :
+
+```xml
+<allowIndexDefinitions>true</allowIndexDefinitions>
+```
+
+Abaixo está um exemplo de onde colocar a configuração acima no pom.
+
+```xml
+<plugin>
+    <groupId>org.apache.jackrabbit</groupId>
+    <artifactId>filevault-package-maven-plugin</artifactId>
+    <configuration>
+        <properties>
+        ...
+        </properties>
+        ...
+        <allowIndexDefinitions>true</allowIndexDefinitions>
+        <repositoryStructurePackages>
+        ...
+        </repositoryStructurePackages>
+        <dependencies>
+        ...
+        </dependencies>
+    </configuration>
+</plugin>
+```
+
+1. Desative a validação do tipo de nó. Defina a seguinte propriedade na seção jackrabbit-nodetypes da configuração do plug-in filevault:
+
+```xml
+<isDisabled>true</isDisabled>
+```
+
+Abaixo está um exemplo de onde colocar a configuração acima no pom.
+
+```xml
+<plugin>
+    <groupId>org.apache.jackrabbit</groupId>
+    <artifactId>filevault-package-maven-plugin</artifactId>
+    ...
+    <configuration>
+    ...
+        <validatorsSettings>
+        ...
+            <jackrabbit-nodetypes>
+                <isDisabled>true</isDisabled>
+            </jackrabbit-nodetypes>
+        </validatorsSettings>
+    </configuration>
+</plugin>
+```
 
 >[!TIP]
 >
@@ -276,7 +332,7 @@ Se um índice precisar ser removido em uma versão posterior do aplicativo, voc�
                 </properties>
             </rep:root>
         </indexRules>
-    </acme.product-custom-3>
+</acme.product-custom-3>
 ```
 
 Se não precisar mais de uma personalização de um índice pronto para uso, você deverá copiar a definição desse índice. Por exemplo, se você já implantou o índice `damAssetLucene-8-custom-3`, mas não precisa mais das personalizações e deseja voltar para o índice padrão (`damAssetLucene-8`), você deve adicionar um índice `damAssetLucene-8-custom-4` que contém a definição de índice de `damAssetLucene-8`.
