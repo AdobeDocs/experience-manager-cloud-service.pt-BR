@@ -8,10 +8,10 @@ user-guide-description: Recursos de autoajuda e links de documentação da visã
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 6d5ca58e8545da89dc424304586bc8a1afc07540
+source-git-commit: f1e1e12d9a19afd6c98029fc5b7a7b73ebf41686
 workflow-type: tm+mt
-source-wordcount: '3786'
-ht-degree: 98%
+source-wordcount: '3816'
+ht-degree: 97%
 
 ---
 
@@ -69,6 +69,7 @@ ht-degree: 98%
    + Notas de versão do Cloud Manager {#cloud-manager}
       + [Notas de versão atuais](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
       + 2022 {#2022}
+         + [Notas da versão 2022.11.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-11-0.md)
          + [Notas da versão 2022.10.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-10-0.md)
          + [Notas da versão 2022.9.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-9-0.md)
          + [Notas da versão 2022.8.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-8-0.md)
@@ -157,6 +158,12 @@ ht-degree: 98%
       + [Introdução ao Cloud Manager](/help/onboarding/cloud-manager-introduction.md)
       + [Equipe e perfis de produto do AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md)
       + [Grupos de usuários de notificação](/help/journey-onboarding/user-groups.md)
++ Testes do AEMaaCS {#trials}
+   + Ensaios sem cabeçalho {#headless}
+      + [Personalizar conteúdo em um aplicativo de amostra do React](/help/trials/headless/customize-app.md)
+      + [Criar a estrutura de conteúdo para seu aplicativo](/help/trials/headless/content-structure.md)
+      + [Criar conteúdo headless](/help/trials/headless/create-content.md)
+      + [Extrair conteúdo por meio da API GraphQL](/help/trials/headless/extract-content.md)
 + Jornada de migração do AEM as a Cloud Service {#migration-journey}
    + [Introdução à movimentação do AEM as a Cloud Service](/help/journey-migration/getting-started.md)
    + [Fase de preparação](/help/journey-migration/readiness.md)
