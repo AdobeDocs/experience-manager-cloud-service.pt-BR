@@ -3,10 +3,10 @@ title: Armazenamento em cache no AEM as a Cloud Service
 description: Armazenamento em cache no AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 18f8a0737dbcce643a5949fb5f942e73f066fa59
+source-git-commit: 6c2baf7fde73abc831db906c7a6471751be3572d
 workflow-type: tm+mt
-source-wordcount: '2666'
-ht-degree: 1%
+source-wordcount: '2753'
+ht-degree: 2%
 
 ---
 
@@ -72,6 +72,8 @@ Isso pode ser útil, por exemplo, quando sua lógica comercial requer o ajuste f
      </LocationMatch>
    ```
 
+* Embora o conteúdo de HTML definido como privado não seja armazenado em cache no CDN, ele pode ser armazenado em cache no dispatcher se [Cache sensível a permissão](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=pt-BR) é configurado, de forma eficiente, garantindo que somente usuários autorizados possam receber o conteúdo.
+
    >[!NOTE]
    >Os outros métodos, incluindo o [dispatcher-ttl AEM projeto ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), não substituirá os valores com êxito.
 
@@ -80,7 +82,7 @@ Isso pode ser útil, por exemplo, quando sua lógica comercial requer o ajuste f
 
 ### Bibliotecas do lado do cliente (js, css) {#client-side-libraries}
 
-* ao usar AEM estrutura de biblioteca do lado do cliente, o JavaScript e o código CSS são gerados de forma que os navegadores possam armazená-los em cache indefinidamente, já que qualquer alteração se manifesta como novos arquivos com um caminho exclusivo.  Em outras palavras, o HTML que faz referência às bibliotecas de clientes será produzido conforme necessário para que os clientes possam ter novo conteúdo conforme ele é publicado. O controle de cache é definido como &quot;imutável&quot; ou 30 dias para navegadores mais antigos que não respeitam o valor &quot;imutável&quot;.
+* Ao usar AEM estrutura de biblioteca do lado do cliente, o JavaScript e o código CSS são gerados de forma que os navegadores possam armazená-los em cache indefinidamente, já que qualquer alteração se manifesta como novos arquivos com um caminho exclusivo.  Em outras palavras, o HTML que faz referência às bibliotecas de clientes será produzido conforme necessário para que os clientes possam ter novo conteúdo conforme ele é publicado. O controle de cache é definido como &quot;imutável&quot; ou 30 dias para navegadores mais antigos que não respeitam o valor &quot;imutável&quot;.
 * consulte a seção [Bibliotecas do lado do cliente e consistência da versão](#content-consistency) para obter mais detalhes.
 
 ### Imagens e qualquer conteúdo grande o suficiente para ser armazenado no armazenamento de blobs {#images}
@@ -116,6 +118,8 @@ A camada de AEM não armazenará em cache o conteúdo do blob por padrão.
 
 >[!NOTE]
 >É recomendável alterar o comportamento padrão mais antigo para que seja consistente com o novo comportamento (ids de programa mais altas que 65000), definindo a variável de ambiente do Cloud Manager AEM_BLOB_ENABLE_CACHING_HEADERS como true. Se o programa já estiver ativo, verifique se, depois das alterações, o conteúdo se comporta conforme o esperado.
+
+No momento, as imagens no armazenamento de blob marcadas como privadas não podem ser armazenadas em cache no dispatcher usando [Cache sensível a permissão](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html). A imagem é sempre solicitada da origem da AEM e servida se o usuário estiver autorizado.
 
 >[!NOTE]
 >Os outros métodos, incluindo o [dispatcher-ttl AEM projeto ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), não substituirá os valores com êxito.
