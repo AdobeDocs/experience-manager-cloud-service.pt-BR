@@ -2,10 +2,10 @@
 title: Replicação
 description: Distribuição e solução de problemas de replicação.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 9260e3cfffdbff3469e92847af8d12c2eb52f5b1
+source-git-commit: b40c46ff5d4399e6feff0ccaf37bdf0336c88016
 workflow-type: tm+mt
-source-wordcount: '1262'
-ht-degree: 99%
+source-wordcount: '1374'
+ht-degree: 91%
 
 ---
 
@@ -18,6 +18,14 @@ O Adobe Experience Manager as a Cloud Service usa o recurso de [Distribuição d
 >Consulte [Distribuição](/help/overview/architecture.md#content-distribution) para obter mais informações.
 
 ## Métodos de publicação de conteúdo {#methods-of-publishing-content}
+
+>[!NOTE]
+>
+>Se você estiver interessado em publicar conteúdo em massa, use a variável [Fluxo de trabalho da Árvore de conteúdo da publicação](#publish-content-tree-workflow).
+>Essa etapa do fluxo de trabalho é criada especificamente para o Cloud Service e pode lidar com grandes cargas de trabalho com eficiência.
+>Não é recomendado criar seu próprio código personalizado de publicação em massa.
+>Se você precisar personalizar por qualquer motivo, é possível acionar essa etapa do fluxo de trabalho/fluxo de trabalho usando APIs de fluxo de trabalho existentes.
+>Embora seja sempre uma boa prática publicar apenas conteúdo que precisa ser publicado e ser prudente em não tentar publicar um grande número de conteúdo se não for necessário, não há limites para o conteúdo que você pode enviar por meio do Fluxo de trabalho Publicar árvore de conteúdo.
 
 ### Publicação/Cancelamento de publicação rápidos — Publicação/Cancelamento de publicação planejados {#publish-unpublish}
 
