@@ -4,9 +4,9 @@ description: Saiba como criar Perfis de imagem do Dynamic Media que contêm conf
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 568109e90df20aae3181975b1b83fd0dd1857eb3
+source-git-commit: 08b523fe66b86867f65c794e843fc55fe0faa050
 workflow-type: tm+mt
-source-wordcount: '3390'
+source-wordcount: '3524'
 ht-degree: 8%
 
 ---
@@ -54,19 +54,28 @@ A nitidez é descrita em [Nitidez de imagens](/help/assets/dynamic-media/assets/
 
 ## Opções de corte {#crop-options}
 
-Quando você implementa o Recorte inteligente em imagens, o Adobe recomenda a seguinte prática recomendada e aplica o seguinte limite:
+Quando você implementa o recorte inteligente em imagens, o Adobe recomenda a seguinte prática recomendada e aplica o seguinte limite:
 
 | Tipo de limite | Prática recomendada | Limite imposto |
 | --- | --- | --- |
-| Número de Recortes Inteligentes por imagem | 5 | 100 |
+| Número de recortes inteligentes por imagem | 5 | 100 |
 
 Consulte também [Limitações do Dynamic Media](/help/assets/dynamic-media/limitations.md).
 
 <!-- CQDOC-16069 for the paragraph directly below -->
 
-As coordenadas de recorte inteligente dependem da taxa de proporção. Para as configurações de recorte inteligente em um Perfil de imagem, se a proporção for a mesma para as dimensões adicionadas no Perfil de imagem, a mesma proporção de aspecto será enviada para a Dynamic Media. O Adobe recomenda usar a mesma área de corte. Isso garante que não haja impacto para diferentes dimensões usadas no Perfil de imagem.
+As coordenadas de recorte inteligente dependem da taxa de proporção. Para as configurações de Recorte inteligente em um Perfil de imagem, se a proporção for a mesma para as dimensões adicionadas no Perfil de imagem, a mesma proporção de aspecto será enviada para a Dynamic Media. O Adobe recomenda usar a mesma área de corte. Isso garante que não haja impacto para diferentes dimensões usadas no Perfil de imagem.
 
-Cada geração de Corte inteligente que você cria requer processamento extra. Por exemplo, adicionar mais de cinco taxas de proporção de Corte inteligente pode resultar em uma taxa lenta de ingestão de ativos. Também pode causar um aumento da carga nos sistemas. Como você pode aplicar o Recorte inteligente no nível da pasta, o Adobe recomenda usá-lo nas pastas *only* quando necessário.
+Cada geração de recorte inteligente criada requer processamento extra. Por exemplo, adicionar mais de cinco taxas de proporção de recorte inteligente pode resultar em uma taxa lenta de ingestão de ativos. Também pode causar um aumento da carga nos sistemas. Como você pode aplicar o Recorte inteligente no nível da pasta, o Adobe recomenda usá-lo nas pastas *only* quando necessário.
+
+**Diretrizes para definir o Recorte inteligente em um perfil de imagem**
+Para manter o uso do Smart Crop sob controle e otimizar o tempo de processamento e o armazenamento de colheitas, o Adobe recomenda as seguintes diretrizes e dicas:
+
+* Evite criar perfis de recorte inteligente duplicados que tenham os mesmos valores de largura e altura.
+* Nomeie as culturas inteligentes com base em dimensões de corte, não no uso final. Isso ajuda a otimizar para duplicatas, onde uma única dimensão é usada em várias páginas.
+* Crie perfis de imagem em toda a página/no tipo de ativo para pastas e subpastas específicas em vez de um perfil de recorte inteligente comum aplicado a todas as pastas ou a todos os ativos.
+* Um perfil de Imagem aplicado às subpastas substitui um perfil de Imagem aplicado à pasta.
+* Idealmente, tenha 10 a 15 recortes inteligentes por imagem para otimizar as taxas de tela e o tempo de processamento.
 
 Você tem duas opções de recorte de imagem para escolher. Você também pode optar por automatizar a criação de amostras de cores e imagens ou preservar o conteúdo de corte nas resoluções do target.
 
