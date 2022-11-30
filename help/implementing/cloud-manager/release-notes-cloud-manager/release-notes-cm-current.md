@@ -1,19 +1,19 @@
 ---
-title: Notas de versão do Cloud Manager 2022.11.0 no Adobe Experience Manager as a Cloud Service
-description: Estas são as notas de versão do Cloud Manager 2022.11.0 no AEM as a Cloud Service.
+title: Notas de versão do Cloud Manager 2022.12.0 no Adobe Experience Manager as a Cloud Service
+description: Estas são as notas de versão do Cloud Manager 2022.12.0 no AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 3045c042129951bf693bca36a42c9111862e09f2
+source-git-commit: aa7f2175e2a43a318a6171e622d292ed3a8e958b
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 37%
+source-wordcount: '202'
+ht-degree: 38%
 
 ---
 
 
-# Notas de versão do Cloud Manager 2022.11.0 no Adobe Experience Manager as a Cloud Service {#release-notes}
+# Notas de versão do Cloud Manager 2022.12.0 no Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Esta página documenta as notas de versão do Cloud Manager 2022.11.0 no AEM as a Cloud Service.
+Esta página documenta as notas de versão do Cloud Manager 2022.12.0 no AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -21,19 +21,15 @@ Esta página documenta as notas de versão do Cloud Manager 2022.11.0 no AEM as 
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento do Cloud Manager versão 2022.11.0 em AEM as a Cloud Service é 3 de novembro de 2022. A próxima versão está planejada para 29 de novembro de 2022.
+A data de lançamento da versão 2022.12.0 do Cloud Manager AEM as a Cloud Service é 29 de novembro de 2022. A próxima versão está planejada para 19 de janeiro de 2023.
 
 ## Novidades {#what-is-new}
 
-* O painel de licença da solução AEM Sites agora exibirá os detalhes do contrato, incluindo se o locatário está ou não dentro de sua assinatura.
-
->[!NOTE]
->
-> Esse recurso será distribuído em fases nas próximas semanas para todos os locatários.
-
-* Quando um ambiente associado a um pipeline tem um status que não permite a execução do pipeline, a ação de execução é desativada com uma dica de ferramenta explicativa.
-* Uma mensagem aprimorada foi adicionada à interface do usuário quando a função **Adicionar programa** está desativado devido a direitos insuficientes para o locatário.
+* Notificações para [Atualizações de manutenção de AEM](/help/overview/what-is-new-and-different.md#aem-updates) será exibida na interface do usuário do Cloud Manager. Essa alteração será implementada em fases nas semanas após a versão 2022.12.0.
+* Quando uma ingestão por meio do [Ferramenta de transferência de conteúdo (CTT)](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) estiver em andamento, o status do ambiente no console do desenvolvedor e no Cloud Manager será exibido como `Ingestion in Progress`.
+* Melhorias na disponibilidade e confiabilidade da [pipelines do Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) foram feitas.
 
 ## Correções de erros {#bug-fixes}
 
-* O feedback durante o pipeline de produção de edição foi aprimorado para capturar ocorrências pouco frequentes de um ou mais ambientes ausentes.
+* Foi efetuada uma alteração para evitar [Gasodutos front-end](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) da execução enquanto uma execução de pipeline está em andamento no mesmo ambiente.
+* Foi efetuada uma alteração para evitar uma `PATCH /program//environment//variables` solicitação para ambientes com o `FAILED` status.
