@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 3255e988c5ec9a0de33660061aeb21d91c3bc4d3
+source-git-commit: 54057d6b5563de3455dddb7866c7c93a3b0294ec
 workflow-type: tm+mt
-source-wordcount: '2449'
+source-wordcount: '2420'
 ht-degree: 11%
 
 ---
@@ -29,11 +29,11 @@ Você precisa do seguinte para ativar o Brand Portal no Experience Manager Asset
 
 >[!NOTE]
 >
->Uma Experience Manager Assets as a [!DNL Cloud Service] A instância tem direito para se conectar com apenas um locatário do Brand Portal. Você pode ter vários ambientes (desenvolvimento, produção e estágio) para o Experience Manager Assets as a [!DNL Cloud Service] , onde o Brand Portal é ativado em um ambiente.
+>Um ambiente de produção configurado é necessário para um Experience Manager Assets as a [!DNL Cloud Service] instância para se conectar com o locatário do Brand Portal.
 
 **Etapas para ativar o Brand Portal**
 
-Você pode ativar o Brand Portal ao criar os ambientes para seu Experience Manager Assets as a [!DNL Cloud Service] ou separadamente. Vamos supor que os ambientes já foram criados e agora você precisa ativar o Brand Portal.
+Você pode ativar o Brand Portal ao criar ambientes de produção para seu Experience Manager Assets as a [!DNL Cloud Service] ou separadamente. Vamos supor que o ambiente já foi criado e agora você precisa ativar o Brand Portal.
 
 1. Faça logon no Adobe Cloud Manager e navegue até **[!UICONTROL Ambientes]**.
 
@@ -71,7 +71,7 @@ Você pode ativar o Brand Portal ao criar os ambientes para seu Experience Manag
 
 **Faça logon no seu locatário do Brand Portal**:
 
-Após a ativação do locatário do Brand Portal no Cloud Manager, é possível fazer logon no Brand Portal pelo Admin Console ou diretamente usando o URL do locatário.
+Após a ativação do locatário do Brand Portal no Cloud Manager, você pode fazer logon no Brand Portal pelo Admin Console ou diretamente usando o URL do locatário.
 
 O URL padrão do seu locatário do Brand Portal é: `https://<tenant-id>.brand-portal.adobe.com/`.
 
@@ -256,7 +256,7 @@ No Adobe Developer Console, os projetos e as APIs são configurados no nível do
 
 Execute as seguintes etapas para gerar as credenciais da conta de serviço e a carga JWT:
 
-1. Faça logon no Adobe Developer Console com privilégios de administrador do sistema na organização IMS (locatário do Brand Portal). O URL padrão é [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
+1. Faça logon no Adobe Developer Console com privilégios de administrador de sistema na organização IMS (locatário do Brand Portal). O URL padrão é [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
 
 
    >[!NOTE]
@@ -403,7 +403,7 @@ Agora é possível testar a configuração, verificando o agente de distribuiç�
 
 Perform the following steps to validate the configuration:
 
-1. Log in to AEM Assets.
+1. Login to AEM Assets.
 
 1. From the **Tools** panel, navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Distribution]**.
 
