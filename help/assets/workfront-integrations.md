@@ -4,9 +4,9 @@ description: Introdução à integração entre [!DNL Assets] e [!DNL Workfront]
 role: Admin,Leader,Architect
 feature: Integrations
 exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
-source-git-commit: 5937ee8328be1af7e7f3f4765e24d65b074e02f1
+source-git-commit: 20dbcff249e3fc1beab24600cd54ce1bf4085d38
 workflow-type: tm+mt
-source-wordcount: '1272'
+source-wordcount: '1267'
 ht-degree: 4%
 
 ---
@@ -50,7 +50,7 @@ Veja a seguir os detalhes das funcionalidades disponíveis por meio de vários t
 
 | Recurso | Descrição | [!DNL Workfront] e [!DNL Assets Essentials] *Sem conector (OOTB)* | [!DNL Workfront] para [!DNL AEM] conector *Requer conector* | [!DNL Workfront for Experience Manager enhanced connector] *Requer conector* | Workfront e [!DNL Experience Manager as a Cloud Service] *Sem conector (OOTB)* |
 |----|----|----|------|-----|-----|
-| Métodos de implantação | Adequado [!DNL Assets] oferta. | Assets Essentials | Cloud Service, Adobe Managed Services, no local | Cloud Service, Adobe Managed Services, no local | Cloud Service, Adobe Managed Services, no local |
+| Métodos de implantação | Adequado [!DNL Assets] oferta. | Assets Essentials | Cloud Service, Adobe Managed Services, no local | Cloud Service, Adobe Managed Services, no local | Serviço em nuvem |
 | **Geral** |
 | Enviar arquivos digitais de [!DNL Workfront] para [!DNL Assets] | A versão mais recente de um documento WF pode ser carregada para o AEM Assets, que será vinculada como uma nova versão do documento. | ✓ | ✓ | ✓ | ✓ |
 | Vincular manualmente AEM pastas a objetos Workfront | As pastas AEM existentes podem ser vinculadas como uma pasta Workfront e seus ativos filhos são vinculados como novos documentos Workfront. | ✓ | ✓ | ✓ | ✓ |
@@ -66,7 +66,7 @@ Veja a seguir os detalhes das funcionalidades disponíveis por meio de vários t
 | Ativos vinculados no Workfront quando clicados em Usuário direto para AEM | Os usuários são direcionados ao AEM para visualizar um ativo vinculado no Workfront. | ✓ | ✓ | ✓ | Em breve |
 | Criar automaticamente pastas de AEM vinculadas no Workfront | Criar automaticamente pastas de AEM vinculadas no Workfront usando os status do projeto. Configure automaticamente AEM pastas com base em Portfolio, programas e projetos da Workfront. | Não | Não | ✓ | Não |
 | Navegue diretamente para AEM repositórios do Workfront | Permita que os usuários naveguem até repositórios AEM disponíveis configurados no Workfront. | ✓ | Não | Não | ✓ |
-| Criar automaticamente pastas de AEM vinculadas no Workfront | Crie automaticamente AEM pastas vinculadas no Workfront usando a opção disponível na guia Documents . | ✓ | Não | Não | ✓ |
+| Criar pastas de AEM vinculadas no Workfront | Crie manualmente AEM pastas vinculadas no Workfront usando a opção disponível na guia Documents . | ✓ | Não | Não | ✓ |
 | Sincronização de comentários | Sincronizar automaticamente comentários de ativos do [!DNL Workfront] para [!DNL Assets] | Não | ✓ | ✓ | Não |
 | Suporte para vários ambientes Workfront conectando-se a um único ambiente de AEM | Os usuários de vários ambientes Workfront podem se conectar a um único ambiente de AEM. | ✓ | Não | Não | ✓ |
 | Oferecem suporte a vários ambientes AEM conectados a um único ambiente Workfront | Os usuários em um único ambiente do Workfront podem enviar ou vincular ativos entre vários ambientes de AEM. | ✓ | ✓ | ✓ | ✓ |
