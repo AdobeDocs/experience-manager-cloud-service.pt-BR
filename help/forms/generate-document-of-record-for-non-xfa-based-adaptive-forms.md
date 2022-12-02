@@ -2,9 +2,9 @@
 title: Gerar documento de registro para Forms adaptável
 description: Explica como você pode gerar um modelo para um Documento de registro (DoR) para Adaptive Forms.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
+source-git-commit: 8d6a5aceaf930c6597f570cdaec44015b86e20cd
 workflow-type: tm+mt
-source-wordcount: '4100'
+source-wordcount: '4065'
 ht-degree: 2%
 
 ---
@@ -431,7 +431,7 @@ A configuração do componente Documento de registro está disponível em suas p
 **Configurações de nível de formulário**
 
 * **Incluir campos não vinculados em DoR:** A configuração da propriedade inclui campos não vinculados do Formulário adaptável baseado em esquema no documento de registro. Por padrão, é verdadeiro.
-* **Excluir campos de DoR se ocultos:** A configuração da propriedade substitui o comportamento da propriedade de nível de campo &quot;Excluir do documento de registro&quot; quando não é verdadeira. Se os campos estiverem ocultos no momento do envio do formulário, eles serão excluídos do Documento de registro se a propriedade estiver definida como true, desde que a propriedade &quot;Excluir do documento de registro&quot; não esteja definida. Configuração [Revalidar no servidor](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form) propriedade to true identifica os campos ocultos para exclusão do Documento de registro no lado do servidor.
+* **Excluir campos de DoR se ocultos:** Defina a propriedade para excluir os campos ocultos do Documento de registro no envio do formulário. Ao ativar [Revalidar no servidor](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), o servidor recalcula os campos ocultos antes de excluí-los do Documento de registro.
 
 ## Usar um arquivo XCI personalizado
 
