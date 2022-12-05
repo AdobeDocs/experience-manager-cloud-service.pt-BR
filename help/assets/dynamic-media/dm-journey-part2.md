@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: c82707d07d888c48d3c02a76d58171720a6279eb
+source-git-commit: 1200dc41af22ae8f34f33d176de1c0db7c7ae424
 workflow-type: tm+mt
-source-wordcount: '2878'
+source-wordcount: '2900'
 ht-degree: 0%
 
 ---
@@ -47,15 +47,15 @@ A ID ou o nome do ativo, `AdobeStock_28563982` está em verde. Observe que o ati
 
 E finalmente, há alguns parâmetros de processamento de imagens. `?wid=1000&fmt=jpeg&qlt=85`, exibido em amarelo na extremidade.
 
-O caminho do URL inteiro está ativo. [Experimente](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?wid=1000&amp;fmt=jpeg&amp;qlt=85).
+O caminho do URL inteiro está ativo. [Experimente](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?wid=1000&amp;fmt=jpeg&amp;qlt=85){target=&quot;_blank&quot;}.
 
 Com sua janela do navegador ainda aberta para o URL da Dynamic Media e a imagem de observação, vamos olhar mais de perto para como você pode criar representações da imagem apenas alterando o URL.
 
 ### Renderizar a imagem de observação por meio do URL
 
-Comece excluindo manualmente apenas as regras de processamento de imagem no caminho do URL; deixe o nome do servidor, o nome da conta e a ID do ativo ou o nome da imagem. [Experimente](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982).
+Comece excluindo manualmente apenas as regras de processamento de imagem no caminho do URL; deixe o nome do servidor, o nome da conta e a ID do ativo ou o nome da imagem. [Experimente](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982){target=&quot;_blank&quot;}.
 
-Agora, adicione um parâmetro de processamento de imagem ao final do URL. No campo URL , à direita do nome da imagem, digite `?wid=500`e pressione **[!UICONTROL Enter]**. [Experimente](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=500).
+Agora, adicione um parâmetro de processamento de imagem ao final do URL. No campo URL , à direita do nome da imagem, digite `?wid=500`e pressione **[!UICONTROL Enter]**. [Experimente](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=500){target=&quot;_blank&quot;}.
 
 Observe que uma nova representação do relógio é gerada. Uma opção importante para entender a partir desse simples exercício de alteração da largura da imagem é que a imagem vista é gerada 100% dinamicamente.
 
@@ -64,9 +64,9 @@ No momento em que você pressiona **[!UICONTROL Enter]**, o navegador volta para
 
 A Dynamic Media tem vários parâmetros de processamento de imagens que você pode usar para ajustar os ativos de imagem nas páginas da Web. Você pode [veja uma lista deles aqui](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=en).
 
-Agora tente adicionar um parâmetro de rotação à imagem de observação. E o final do caminho do URL, imediatamente após `wid=1000`, tipo `&rotate=90`e pressione **[!UICONTROL Enter]**. [Experimente](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=90).
+Agora tente adicionar um parâmetro de rotação à imagem de observação. E o final do caminho do URL, imediatamente após `wid=1000`, tipo `&rotate=90`e pressione **[!UICONTROL Enter]**. [Experimente](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=90){target=&quot;_blank&quot;}.
 
-O relógio ainda está um pouco inclinado para a esquerda. Alterar o valor de girar de `90` para `92`e pressione **[!UICONTROL Enter]**. [Experimente](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=9)
+O relógio ainda está um pouco inclinado para a esquerda. Alterar o valor de girar de `90` para `92`e pressione **[!UICONTROL Enter]**. [Experimente](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=9){target=&quot;_blank&quot;}.
 
 Novamente, no momento que você pressiona **[!UICONTROL Enter]**, uma nova representação do relógio é gerada de forma quase instantânea. Você pode ver o tipo de desempenho que você obtém, o que explica por que o Dynamic Media pode fornecer mais de 800.000 solicitações de imagem. _por segundo_, em um fim de semana ocupado ou grande feriado.
 
@@ -128,7 +128,7 @@ Quando terminar, salve a predefinição e agora ela estará disponível para tod
 ![Aplicar a predefinição de imagem *Médio* para gerar uma representação de uma imagem](/help/assets/dynamic-media/assets/dm-medium-image-preset.png)
 _Aplicação da mídia predefinida da imagem para gerar uma representação de uma imagem._
 
-Você copia o URL e o cola no navegador para verificar a aparência da imagem. [Experimente](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_74043302?$Medium$). No seu navegador, observe o nome da predefinição de imagem _Médio_ no caminho do URL completo.
+Você copia o URL e o cola no navegador para verificar a aparência da imagem. [Experimente](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_74043302?$Medium$){target=&quot;_blank&quot;}. No seu navegador, observe o nome da predefinição de imagem _Médio_ no caminho do URL completo.
 
 Você pode ver o tipo de clareza que é exibido na imagem. Essa qualidade deve-se, em parte, à forma como a tigela do chocolate foi abatida. Além disso, é parcialmente porque com o Dynamic Media, você pode armazenar imagens maiores do que o que está sendo entregue aos canais digitais.
 
@@ -159,7 +159,7 @@ _O início da criação de um conjunto de imagens._
 
 Para criar o conjunto de imagens, você escolhe **[!UICONTROL Conjunto de imagens]** do **[!UICONTROL Criar]** menu suspenso. Observe no menu que também há opções para criar um **[!UICONTROL Conjunto de mídias mistas]**, a **[!UICONTROL Conjunto de rotação]** e um **[!UICONTROL Conjunto de carrossel]**. Você cria esses conjuntos da mesma forma que um conjunto de imagens.
 
-Um conjunto de mídias mistas pode conter imagens, conjuntos de amostras, conjuntos de rotação, vídeos e conjuntos de Vídeo adaptável. [Experimente](https://s7d9.scene7.com/s7viewers/html5/MixedMediaViewer.html?asset=Scene7SharedAssets/Mixed_Media_Set_Sample). Um conjunto de rotação simula o ato real de girar um objeto para examiná-lo. Os conjuntos de rotação permitem visualizar os detalhes visuais principais a partir de qualquer ângulo. [Experimente](https://s7d9.scene7.com/s7viewers/html5/SpinViewer.html?asset=Scene7SharedAssets/SpinSet_Sample&amp;stagesize=500,400).
+Um conjunto de mídias mistas pode conter imagens, conjuntos de amostras, conjuntos de rotação, vídeos e conjuntos de Vídeo adaptável. [Experimente](https://s7d9.scene7.com/s7viewers/html5/MixedMediaViewer.html?asset=Scene7SharedAssets/Mixed_Media_Set_Sample). Um conjunto de rotação simula o ato real de girar um objeto para examiná-lo. Os conjuntos de rotação permitem visualizar os detalhes visuais principais a partir de qualquer ângulo. [Experimente](https://s7d9.scene7.com/s7viewers/html5/SpinViewer.html?asset=Scene7SharedAssets/SpinSet_Sample&amp;stagesize=500,400){target=&quot;_blank&quot;}.
 
 Criar um conjunto de imagens é simples. Basta adicionar os ativos de imagem que deseja incluir no conjunto.
 
@@ -185,13 +185,13 @@ Observe na visualização que você pode selecionar as amostras de sapato de cor
 ![O conjunto de imagens em execução com o visualizador do Flyout aplicado a ele](/help/assets/dynamic-media/assets/dm-image-set-flyout-viewer.png)
 _O `Running` Conjunto de imagens com o visualizador do Flyout aplicado a ele._
 
-Nesse caso, a variável `Flyout` o visualizador foi selecionado. Nesse ponto, você pode visualizar o conjunto de imagens no visualizador. Mas é melhor vê-lo em seu navegador, como um cliente o vê. Você seleciona **[!UICONTROL URL]** no canto inferior esquerdo, copie o URL e o cole no navegador. [Experimente](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&amp;config=jpearldemo/Flyout).
+Nesse caso, a variável `Flyout` o visualizador foi selecionado. Nesse ponto, você pode visualizar o conjunto de imagens no visualizador. Mas é melhor vê-lo em seu navegador, como um cliente o vê. Você seleciona **[!UICONTROL URL]** no canto inferior esquerdo, copie o URL e o cole no navegador. [Experimente](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&amp;config=jpearldemo/Flyout){target=&quot;_blank&quot;}.
 
 O URL único permite que você use o conjunto de imagens e o visualizador, onde você precisa, onde ele está no site. Você pode ter notado no exemplo anterior que **[!UICONTROL Incorporar]** é à direita do botão URL . Ao selecionar **[!UICONTROL Incorporar]**, você pode copiar o código desse conjunto de imagens/visualizador e adicioná-lo a uma página da Web ou a um componente do Experience Manager Sites.
 
 O visualizador do Flyout é um visualizador padrão, pronto para uso, cujas propriedades podem ser editadas. Ou, assim como criar uma predefinição de imagem, você pode criar seu próprio visualizador personalizado.
 
-Suponha que sua equipe de vendas e marketing não goste do visualizador do Flyout. Eles gostam do recurso de zoom, mas querem que os clientes vejam o efeito de zoom diretamente sobre os sapatos. Nesse caso, basta aplicar o visualizador InlineZoom ao conjunto de imagens e copiar e colar o URL no navegador para ver como ele se comporta. [Experimente](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&amp;config=jpearldemo/InlineZoom).
+Suponha que sua equipe de vendas e marketing não goste do visualizador do Flyout. Eles gostam do recurso de zoom, mas querem que os clientes vejam o efeito de zoom diretamente sobre os sapatos. Nesse caso, basta aplicar o visualizador InlineZoom ao conjunto de imagens e copiar e colar o URL no navegador para ver como ele se comporta. [Experimente](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&amp;config=jpearldemo/InlineZoom){target=&quot;_blank&quot;}.
 
 Quando você move o ponteiro do mouse sobre o sapato, você amplia a imagem e pode ver mais detalhes enquanto você move o ponteiro. E a razão para isso é simplesmente o tamanho da imagem que foi inicialmente carregada no Dynamic Media.
 
@@ -201,8 +201,8 @@ Você acabou de ler um pouco sobre conjuntos de imagens e visualizadores. Vamos 
 
 <!-- LEAVE THIS HIDDEN PATH IN THE DOCUMENTATION FOR DEMO PURPOSES [Flyout viewer with image set](http://www.partycity.com/girls-little-old-lady-costume-P750948.html) -->
 
-* `ZoomVertical_dark` visualizador aplicado a um ativo de imagem. [Experimente](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_96311480&amp;config=jpearldemo/ZoomVertical_dark).
-* `Zoom_light` visualizador aplicado a uma imagem. [Experimente](https://s7d1.scene7.com/s7viewers/html5/BasicZoomViewer.html?asset=jpearldemo/AdobeStock_38827423&amp;config=jpearldemo/Zoom_light).
+* `ZoomVertical_dark` visualizador aplicado a um ativo de imagem. [Experimente](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_96311480&amp;config=jpearldemo/ZoomVertical_dark){target=&quot;_blank&quot;}.
+* `Zoom_light` visualizador aplicado a uma imagem. [Experimente](https://s7d1.scene7.com/s7viewers/html5/BasicZoomViewer.html?asset=jpearldemo/AdobeStock_38827423&amp;config=jpearldemo/Zoom_light){target=&quot;_blank&quot;}.
 
 ## Opcional - Saiba mais
 

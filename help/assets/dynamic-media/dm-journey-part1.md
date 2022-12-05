@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: aea668753222e981a7f2c8bd71bc6c790aa32a15
+source-git-commit: 1200dc41af22ae8f34f33d176de1c0db7c7ae424
 workflow-type: tm+mt
-source-wordcount: '3710'
+source-wordcount: '3712'
 ht-degree: 1%
 
 ---
@@ -254,7 +254,7 @@ Após o upload, há diferentes maneiras de visualizar as representações de um 
 ![Visualização de uma representação de um ativo com base na predefinição de imagem grande](/help/assets/dynamic-media/assets/dm-image-preset-with-url.png)
 _Visualização de uma representação de um ativo com base na predefinição de imagem &quot;Grande&quot; selecionada. O botão URL foi clicado. O caminho do URL resultante contém o nome predefinido de imagem &quot;Grande&quot; e pode ser usado em uma página da Web._
 
-O URL acima está ativo! [Experimente](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?$Large$).
+O URL acima está ativo! [Experimente](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?$Large$){target=&quot;_blank&quot;}.
 
 Outro método para visualizar um ativo é selecionar um ativo de imagem e, em seguida, selecionar um _Visualizadores_ como mostrado no exemplo a seguir.
 
