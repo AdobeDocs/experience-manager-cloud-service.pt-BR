@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: e16d107dff1817e8b62de86e295590b13d853bf0
+source-git-commit: aea668753222e981a7f2c8bd71bc6c790aa32a15
 workflow-type: tm+mt
-source-wordcount: '3708'
+source-wordcount: '3710'
 ht-degree: 1%
 
 ---
@@ -261,7 +261,7 @@ Outro método para visualizar um ativo é selecionar um ativo de imagem e, em se
 ![Visualização de um ativo com base na predefinição do visualizador de Luz vertical de zoom](/help/assets/dynamic-media/assets/dm-viewer-preset.png)
 _Visualização de um ativo com base na predefinição do visualizador &quot;ZoomVertical_light&quot; selecionada. O ponteiro do mouse (`+`) foi movido sobre o relógio para ampliar. Observe o URL e os botões Incorporar ._
 
-A representação acima está ao vivo! [Experimente](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&amp;config=jpearldemo/ZoomVertical_light).
+A representação acima está ao vivo! [Experimente](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&amp;config=jpearldemo/ZoomVertical_light){target=&quot;_blank&quot;}.
 
 ## Opcional - Saiba mais
 
