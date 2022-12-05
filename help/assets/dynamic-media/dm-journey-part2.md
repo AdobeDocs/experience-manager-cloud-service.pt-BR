@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: 1200dc41af22ae8f34f33d176de1c0db7c7ae424
+source-git-commit: 9e425601c493740050d61e8025ea3f9e3dbdc4d8
 workflow-type: tm+mt
-source-wordcount: '2900'
+source-wordcount: '2902'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Agora, adicione um parâmetro de processamento de imagem ao final do URL. No cam
 
 Observe que uma nova representação do relógio é gerada. Uma opção importante para entender a partir desse simples exercício de alteração da largura da imagem é que a imagem vista é gerada 100% dinamicamente.
 
-Agora, altere o valor de largura de `500` pixels para `1000` pixels e pressione **[!UICONTROL Enter]**. [Experimente](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000).
+Agora, altere o valor de largura de `500` pixels para `1000` pixels e pressione **[!UICONTROL Enter]**. [Experimente](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000){target=&quot;_blank}.
 No momento em que você pressiona **[!UICONTROL Enter]**, o navegador volta para o servidor de imagem do Dynamic Media. Ele gera uma nova representação do relógio, com base no novo valor de largura que você acabou de digitar, depois entrega a nova imagem de volta ao navegador e a armazena em cache.
 
 A Dynamic Media tem vários parâmetros de processamento de imagens que você pode usar para ajustar os ativos de imagem nas páginas da Web. Você pode [veja uma lista deles aqui](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=en).
@@ -128,7 +128,9 @@ Quando terminar, salve a predefinição e agora ela estará disponível para tod
 ![Aplicar a predefinição de imagem *Médio* para gerar uma representação de uma imagem](/help/assets/dynamic-media/assets/dm-medium-image-preset.png)
 _Aplicação da mídia predefinida da imagem para gerar uma representação de uma imagem._
 
-Você copia o URL e o cola no navegador para verificar a aparência da imagem. [Experimente](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_74043302?$Medium$){target=&quot;_blank&quot;}. No seu navegador, observe o nome da predefinição de imagem _Médio_ no caminho do URL completo.
+Você copia o URL e o cola no navegador para verificar a aparência da imagem. [Experimente](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_74043302?$Medium$){target=&quot;_blank&quot;}.
+
+No seu navegador, observe o nome da predefinição de imagem _Médio_ no caminho do URL completo.
 
 Você pode ver o tipo de clareza que é exibido na imagem. Essa qualidade deve-se, em parte, à forma como a tigela do chocolate foi abatida. Além disso, é parcialmente porque com o Dynamic Media, você pode armazenar imagens maiores do que o que está sendo entregue aos canais digitais.
 
