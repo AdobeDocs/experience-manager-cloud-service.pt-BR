@@ -4,7 +4,7 @@ description: Adicione seus ativos digitais ao [!DNL Adobe Experience Manager] co
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: ad5bc4b1ae80421bc843d323c214c64334609de6
+source-git-commit: bc46064093c22d8902a673e76fdb53c626a5cbb0
 workflow-type: tm+mt
 source-wordcount: '3064'
 ht-degree: 1%
@@ -238,7 +238,7 @@ Arquivos ou pastas com nomes que correspondem a essas condições são ignorados
 Para nomes de arquivos de ativos, o nome e o caminho do JCR são limpos usando a API: `JcrUtil.escapeIllegalJcrChars`.
 
 * Caracteres Unicode não são alterados
-* Substitua os caracteres especiais por seu Código de escape de URL, por exemplo, `new asset.png` é atualizado para `new%20asset.png`:
+* Substitua os caracteres especiais por seu Código de escape de URL, por exemplo, `new%asset.png` é atualizado para `new%25asset.png`:
 
    ```
                    URL escape code   
@@ -247,16 +247,14 @@ Para nomes de arquivos de ativos, o nome e o caminho do JCR são limpos usando a
    %               %25
    '               %27
    *               %2A
-   .               %2E
    /               %2F
    :               %3A
    [               %5B
-   \n              %5Cn
-   \r              %5Cr
-   \t              %5Ct
+   \n              %0A
+   \r              %0D
+   \t              %09
    ]               %5D
    |               %7C
-   space char      %20
    ```
 
 **Manipulação do nome da pasta na importação em massa**
