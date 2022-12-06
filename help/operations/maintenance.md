@@ -2,7 +2,7 @@
 title: Tarefas de manutenção no AEM as a Cloud Service
 description: Tarefas de manutenção no AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 0e33ef91ce3668e7ce6aff98053c9f798b940dfd
+source-git-commit: e52d44015c040c1739152263d88ae436bd83d414
 workflow-type: tm+mt
 source-wordcount: '1068'
 ht-degree: 75%
@@ -49,7 +49,7 @@ A tabela a seguir ilustra as tarefas de manutenção disponíveis no momento do 
        <li>Versões com mais de 30 dias são removidas</li>
        <li>As 5 versões mais recentes nos últimos 30 dias são mantidas</li>
        <li>Independentemente das regras acima, a versão mais recente é preservada.</li>
-       <li>Recomenda-se que os clientes, que têm requisitos normativos para renderizar as páginas do site exatamente como apareciam em uma data específica, se integrem a serviços externos especializados.<li>
+       <br>Recomenda-se que os clientes que têm requisitos normativos para renderizar as páginas do site exatamente como apareciam em uma data específica se integrem a serviços externos especializados.
      </ol></td>
   </td>
   </tr>
@@ -61,7 +61,7 @@ A tabela a seguir ilustra as tarefas de manutenção disponíveis no momento do 
        <li>Para auditoria de replicação, os logs de auditoria com mais de 3 dias são removidos</li>
        <li>Para auditoria do DAM (Assets), os logs de auditoria com mais de 30 dias são removidos</li>
        <li>Para auditoria de página, os logs com mais de 3 dias são removidos.</li>
-       <li>Recomenda-se que os clientes, que têm requisitos normativos para produzir logs de auditoria ineditáveis, se integrem a serviços externos especializados.<li>
+       <br>Recomenda-se que os clientes que têm requisitos normativos para produzir logs de auditoria ineditáveis se integrem a serviços externos especializados.
      </ol></td>
    </td>
   </tr>
