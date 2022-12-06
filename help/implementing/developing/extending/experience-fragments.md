@@ -2,9 +2,9 @@
 title: Visão geral dos fragmentos de experiência
 description: Estender fragmentos de experiência do Adobe Experience Manager as a Cloud Service.
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
-source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
+source-git-commit: 912ecb02f0f38fc2766a81445c448f869964f94a
 workflow-type: tm+mt
-source-wordcount: '1527'
+source-wordcount: '1651'
 ht-degree: 3%
 
 ---
@@ -48,6 +48,19 @@ Por exemplo:
 O seletor de representação simples usa um transformador em vez de scripts adicionais; o [Reescrita Sling](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) é usado como o transformador. Isso é configurado em
 
 * `/libs/experience-fragments/config/rewriter/experiencefragments`
+
+### Configuração da geração de representação de HTML {#configuring-html-rendition-generation}
+
+A representação de HTML é gerada usando os Pipelines de regravação do Sling. O pipeline é definido em `/libs/experience-fragments/config/rewriter/experiencefragments`. O Transformador de HTML suporta as seguintes opções:
+
+* `allowedCssClasses`
+   * Uma expressão RegEx que corresponde às classes CSS que devem ser deixadas na representação final.
+   * Isso é útil se o cliente quiser eliminar algumas classes CSS específicas
+* `allowedTags`
+   * Uma lista de tags HTML a serem permitidas na representação final.
+   * Por padrão, as seguintes tags são permitidas (nenhuma configuração é necessária): html, cabeçalho, título, corpo, img, p, span, ul, li, a, b, i, em, strong, h1, h2, h3, h4, h5, h6, br, noscript, div, link e script
+
+É recomendável configurar o regravador usando uma sobreposição. Consulte [Sobreposições em AEM as a Cloud Service](/help/implementing/developing/introduction/overlays.md)
 
 ## Modelos para Fragmentos de experiência {#templates-for-experience-fragments}
 
