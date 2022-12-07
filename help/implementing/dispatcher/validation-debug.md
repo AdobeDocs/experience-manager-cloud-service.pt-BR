@@ -3,9 +3,9 @@ title: Validação e depuração usando ferramentas do Dispatcher
 description: Validação e depuração usando ferramentas do Dispatcher
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 687323031ecfd179a1875033411b8398a3d1d74b
+source-git-commit: 3915e0f281731928b8d918e741235f8bef41c885
 workflow-type: tm+mt
-source-wordcount: '2693'
+source-wordcount: '2701'
 ht-degree: 1%
 
 ---
@@ -31,11 +31,12 @@ A estrutura da subpasta do Dispatcher do projeto é a seguinte:
 ./
 ├── conf.d
 │   ├── available_vhosts
+│   │   ├── my_site.vhost # Created by customer
 │   │   └── default.vhost
 │   ├── dispatcher_vhost.conf
 │   ├── enabled_vhosts
 │   │   ├── README
-│   │   └── default.vhost -> ../available_vhosts/default.vhost
+│   │   └── my_site.vhost -> ../available_vhosts/my_site.vhost  # Created by customer
 │   └── rewrites
 │   │   ├── default_rewrite.rules
 │   │   └── rewrite.rules
@@ -46,6 +47,7 @@ A estrutura da subpasta do Dispatcher do projeto é a seguinte:
 │   └── USE_SOURCES_DIRECTLY
 └── conf.dispatcher.d
     ├── available_farms
+    │   ├── my_farm.farm # Created by customer
     │   └── default.farm
     ├── cache
     │   ├── default_invalidate.any
@@ -58,7 +60,7 @@ A estrutura da subpasta do Dispatcher do projeto é a seguinte:
     ├── dispatcher.any
     ├── enabled_farms
     │   ├── README
-    │   └── default.farm -> ../available_farms/default.farm
+    │   └── my_farm.farm -> ../available_farms/my_farm.farm  # Created by customer
     ├── filters
     │   ├── default_filters.any
     │   └── filters.any
@@ -131,6 +133,7 @@ Esses arquivos fazem parte da estrutura básica e impõem padrões e práticas r
 * `conf.d/available_vhosts/default.vhost`
 
 Contém um host virtual de amostra. Para seu próprio host virtual, crie uma cópia desse arquivo, personalize-o, vá para `conf.d/enabled_vhosts` e crie um link simbólico para sua cópia personalizada.
+Não copie o arquivo default.vhost diretamente para o `conf.d/enabled_vhosts`.
 
 Certifique-se de que um host virtual esteja sempre disponível que corresponda a ServerAlias `\*.local` e também localhost, necessário para processos internos de Adobe.
 
