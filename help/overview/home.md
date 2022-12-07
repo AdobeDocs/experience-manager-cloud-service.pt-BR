@@ -2,14 +2,14 @@
 title: Introdução ao Experience Manager as a Cloud Service
 description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 exl-id: d346ad01-af00-48a1-96a4-e742369defff
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: 76eb13cc1efeb8617b48b7e6134bdf1c7d324e27
 workflow-type: tm+mt
-source-wordcount: '359'
-ht-degree: 100%
+source-wordcount: '360'
+ht-degree: 93%
 
 ---
 
-# Visão geral do Experience Manager as a Cloud Service {#aem-overview-guide}
+# Documentação do Experience Manager as a Cloud Service {#aem-overview-guide}
 
 Comece aqui para saber como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 
@@ -20,7 +20,7 @@ Comece aqui para saber como o Experience Manager as a Cloud Service funciona e o
 * [Novidades e diferenças](what-is-new-and-different.md)
 * [Introdução à arquitetura](architecture.md)
 
-## Guias do Experience Manager as a Cloud Service {#aem-guides}
+## Guias Experience Manager as a Cloud Service {#aem-guides}
 
 | Guia do usuário | Descrição |
 |---|---|
@@ -36,7 +36,7 @@ Comece aqui para saber como o Experience Manager as a Cloud Service funciona e o
 | [Guia do usuário de operações](/help/operations/home.md) | Saiba mais sobre as operações de back-end do Experience Manager as a Cloud Service, como tarefas de indexação e manutenção. |
 | [Guia do usuário do Commerce](/help/commerce-cloud/home.md) | Saiba mais sobre a Commerce Integration Framework no AEM as a Cloud Service. |
 
-## Outros recursos do Experience Manager {#other-resources}
+## Outros recursos de ajuda do Experience Manager {#other-resources}
 
 * [Atualizações recentes na documentação](https://helpx.adobe.com/br/experience-manager/documentation-updates.html#AEMasaCloudService)
 * [Documentação do Dispatcher](/help/implementing/dispatcher/overview.md)
