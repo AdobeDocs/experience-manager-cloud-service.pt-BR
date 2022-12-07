@@ -2,10 +2,10 @@
 title: Programas de edição
 description: Saiba como editar os programas de sandbox e produção para ajustar as opções depois de criá-las.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: d805ed744af0e5c95863a1c67439b384cc5d11b2
+source-git-commit: b56b8b448060cd446c6f17689882bc0515e27d25
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 100%
+source-wordcount: '513'
+ht-degree: 87%
 
 ---
 
@@ -55,6 +55,12 @@ Siga estas etapas para editar um programa.
 1. Clique em **Atualizar** para salvar as alterações no programa.
 
 Sempre que um programa for editado, incluindo a adição ou remoção de uma solução ou complemento, essas alterações entrarão em vigor após a próxima implantação.
+
+Se o programa de produção tiver a segurança aprimorada ativada, uma **Segurança aprimorada** estará disponível no **Editar programa** para confirmar que o recurso está ativo para o programa.
+
+![Segurança avançada ativa para um programa](assets/edit-program-enhanced.png)
+
+Esta configuração não pode ser modificada após a criação do programa. Para obter mais informações sobre a opção de segurança aprimorada, consulte o [Criação de programas de produção](creating-production-programs.md) documento.
 
 ## Exclusão de programas de sandbox {#delete-sandbox-program}
 
