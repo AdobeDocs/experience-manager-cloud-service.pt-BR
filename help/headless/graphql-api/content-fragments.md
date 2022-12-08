@@ -3,10 +3,10 @@ title: API GraphQL do AEM para uso com Fragmentos de conteúdo
 description: Saiba como usar os Fragmentos de conteúdo no Adobe Experience Manager (AEM) as a Cloud Service com a API GraphQL do AEM, para entrega de conteúdo headless.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: f773671e3c62e2dff6f843d42a5b36211e2d1fc3
+source-git-commit: 9ad36e1b81d41a49cd318bbbb6ff8f4aaf6efd4a
 workflow-type: tm+mt
-source-wordcount: '2708'
-ht-degree: 100%
+source-wordcount: '4179'
+ht-degree: 60%
 
 ---
 
@@ -101,18 +101,22 @@ Com o GraphQL, é possível executar consultas para retornar:
 
 * Uma **[lista de entradas](https://graphql.org/learn/schema/#lists-and-non-null)**
 
-Também é possível executar:
+AEM fornece recursos para converter consultas (ambos os tipos) em [Consultas Persistentes, que podem ser armazenadas em cache](/help/headless/graphql-api/persisted-queries.md) por Dispatcher e CDN.
 
-* [Consultas persistentes, que são armazenadas em cache](/help/headless/graphql-api/persisted-queries.md)
+### Práticas recomendadas de consulta do GraphQL (Dispatcher e CDN) {#graphql-query-best-practices}
 
-### Práticas recomendadas de consulta GraphQL (Dispatcher) {#graphql-query-best-practices}
-
-As [Consultas persistentes](/help/headless/graphql-api/persisted-queries.md) são o método recomendado, pois:
+O [Consultas Persistentes](/help/headless/graphql-api/persisted-queries.md) são o método recomendado a ser usado em instâncias de publicação como:
 
 * são armazenadas em cache
 * são gerenciadas de forma central pelo AEM as a Cloud Service
 
-As consultas diretas e/ou POST não são recomendadas, pois não são armazenadas em cache. Portanto, em uma instância padrão, o Dispatcher é configurado para bloquear essas consultas.
+>[!NOTE]
+>
+>Geralmente, não há dispatcher/CDN no autor, portanto, não há mais vantagem em usar consultas persistentes lá; além de testá-los.
+
+As consultas do GraphQL que usam solicitações POST não são recomendadas, pois não são armazenadas em cache. Portanto, em uma instância padrão, o Dispatcher é configurado para bloquear essas consultas.
+
+Embora o GraphQL também ofereça suporte a solicitações do GET, elas podem atingir limites (por exemplo, o comprimento do URL) que podem ser evitados usando Consultas Persistentes.
 
 >[!NOTE]
 >
@@ -121,6 +125,8 @@ As consultas diretas e/ou POST não são recomendadas, pois não são armazenada
 >* Crie uma variável de ambiente do Cloud Manager chamada `ENABLE_GRAPHQL_ENDPOINT`
 >* com o valor `true`
 
+
+<!-- maybe add a link to the documentation that explains how to create that environment variable -->
 
 >[!NOTE]
 >
@@ -146,6 +152,10 @@ Os casos de uso podem depender do tipo de ambiente do AEM as a Cloud Service:
 
 As permissões são as necessárias para acessar o Assets.
 
+As consultas do GraphQL são executadas com a permissão do usuário AEM da solicitação subjacente. Se o usuário não tiver acesso de leitura a alguns fragmentos (armazenados como Ativos), ele não fará parte do conjunto de resultados.
+
+Além disso, o usuário precisa ter acesso a um terminal GraphQL para poder executar consultas do GraphQL.
+
 ## Geração de esquemas {#schema-generation}
 
 O GraphQL é uma API altamente tipificada, o que significa que os dados devem ser estruturados e organizados claramente por tipo.
@@ -160,7 +170,7 @@ Para fragmentos de conteúdo, os esquemas de GraphQL (estrutura e tipos) são ba
 >
 >Isso significa que você precisa garantir que não haja dados confidenciais disponíveis, pois eles poderiam ser vazados dessa maneira; por exemplo, isso inclui informações que podem estar presentes como nomes de campo na definição do modelo.
 
-Por exemplo, se um usuário criou um modelo de fragmento de conteúdo chamado `Article`, então o AEM irá gerar o objeto `article`, que é do tipo `ArticleModel`. Os campos desse tipo correspondem aos campos e tipos de dados definidos no modelo.
+Por exemplo, se um usuário criou um Modelo de fragmento de conteúdo chamado `Article`e AEM gera um tipo GraphQL `ArticleModel`. Os campos desse tipo correspondem aos campos e tipos de dados definidos no modelo. Além disso, ele cria alguns pontos de entrada para as queries que operam nesse tipo, como `articleByPath` ou `articleList`.
 
 1. Um modelo de fragmento de conteúdo:
 
@@ -173,11 +183,15 @@ Por exemplo, se um usuário criou um modelo de fragmento de conteúdo chamado `A
 
    * Três deles foram controlados pelo usuário: `author`, `main` e `referencearticle`.
 
-   * Os outros campos foram adicionados automaticamente pelo AEM e representam métodos úteis para fornecer informações sobre um determinado fragmento de conteúdo; neste exemplo, `_path`, `_metadata` e `_variations`. Esses [campos auxiliares](#helper-fields) estão marcados com um `_` precedente, para distinguir entre o que foi definido pelo usuário e o que foi gerado automaticamente.
+   * Os outros campos foram adicionados automaticamente por AEM e representam métodos úteis para fornecer informações sobre um determinado Fragmento de conteúdo; neste exemplo, (a variável [campos auxiliares](#helper-fields)) `_path`, `_metadata`, `_variations`.
 
 1. Depois que um usuário cria um fragmento de conteúdo com base no modelo de Artigo, ele pode ser interrogado por meio do GraphQL. Para obter exemplos, consulte [Exemplos de consulta](/help/headless/graphql-api/sample-queries.md#graphql-sample-queries) (baseado em uma [amostra da estrutura do fragmento de conteúdo para uso com GraphQL](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql)).
 
 No GraphQL para AEM, o esquema é flexível. Isso significa que ele é gerado automaticamente toda vez que um modelo de fragmento de conteúdo é criado, atualizado ou excluído. Os caches do esquema de dados também são atualizados quando você atualiza um modelo de fragmento de conteúdo.
+
+<!-- move the following to a separate "in depth" page -->
+
+Os caches do esquema de dados também são atualizados quando você atualiza um modelo de fragmento de conteúdo.
 
 O serviço GraphQL do Sites acompanha (em segundo plano) quaisquer modificações feitas em um modelo de fragmento de conteúdo. Quando as atualizações são detectadas, somente essa parte do esquema é gerada novamente. Essa otimização economiza tempo e oferece estabilidade.
 
@@ -199,6 +213,8 @@ Por exemplo, se você:
 
 O esquema é distribuído por meio do mesmo endpoint das consultas de GraphQL, com o cliente lidando com o fato de que o esquema é chamado com a extensão `GQLschema`. Por exemplo, executar uma simples solicitação `GET` em `/content/cq:graphql/global/endpoint.GQLschema` resultará na saída do esquema com o tipo do conteúdo: `text/x-graphql-schema;charset=iso-8859-1`.
 
+<!-- move through to here to a separate "in depth" page -->
+
 ### Geração de esquema - Modelos não publicados {#schema-generation-unpublished-models}
 
 Quando os fragmentos de conteúdo são aninhados, pode acontecer que um modelo de fragmento de conteúdo principal seja publicado, mas um modelo referenciado não.
@@ -215,46 +231,46 @@ Dentro do esquema há campos individuais de duas categorias básicas:
 
 * Campos gerados.
 
-   Uma seleção de [Tipos de campos](#field-types) é usada para criar campos com base em como você configura o modelo de fragmento de conteúdo. Os nomes de campo são retirados do campo **Nome da propriedade** do **Tipo de dados**.
+   Uma seleção de [Tipos de dados](#Data-types) são usados para criar campos com base em como você configura o Modelo de fragmento de conteúdo. Os nomes de campo são retirados do **Nome da propriedade** do **Tipo de dados** guia .
 
-   * A propriedade **Renderizar como** também precisa ser considerada, pois os usuários podem configurar determinados tipos de dados; por exemplo, como um texto de linha única ou como um multicampo.
+   * Há também o **Renderizar como** configuração para considerar, já que os usuários podem configurar determinados tipos de dados. Por exemplo, um campo de texto de linha única pode ser configurado para conter vários textos de linha única escolhendo `multifield` na lista suspensa.
 
 * O GraphQL do AEM também gera vários [campos auxiliares](#helper-fields).
 
-   Eles são usados para identificar um fragmento de conteúdo ou obter mais informações sobre ele.
-
-### Tipos de campos {#field-types}
+### Tipos de dados {#data-types}
 
 O GraphQL do AEM oferece suporte a uma lista de tipos. Todos os tipos de dados do modelo de fragmento de conteúdo compatíveis e os tipos de GraphQL correspondentes são representados:
 
 | Modelo de fragmento de conteúdo - Tipo de dados | Tipo de GraphQL | Descrição |
 |--- |--- |--- |
 | Texto em linha única | Sequência de caracteres, [Sequência de caracteres] |  Usado para sequências de caracteres simples, como nomes de autor, nomes de localização etc. |
-| Texto multilinha | Sequência de caracteres |  Usado para saída de texto, como o corpo de um artigo |
+| Texto multilinha | Sequência de caracteres, [Sequência de caracteres] |  Usado para saída de texto, como o corpo de um artigo |
 | Número |  Flutuante, [Flutuante] | Usado para exibir números de ponto flutuantes e números regulares |
 | Booleano |  Booleano |  Usado para exibir caixas de seleção → declarações simples de verdadeiro/falso |
 | Data e hora | Calendário |  Usado para exibir data e hora em um formato ISO 8086. Dependendo do tipo selecionado, há três opções disponíveis para uso no GraphQL do AEM: `onlyDate`, `onlyTime` e `dateTime` |
 | Enumeração |  Sequência de caracteres |  Usado para exibir uma opção de uma lista de opções definidas na criação do modelo |
 |  Tags |  [Sequência de caracteres] |  Usado para exibir uma lista de sequências de caracteres que representam tags usadas no AEM |
-| Referência de conteúdo |  Sequência de caracteres |  Usado para exibir o caminho para outro ativo no AEM |
+| Referência de conteúdo |  Sequência de caracteres, [Sequência de caracteres] |  Usado para exibir o caminho para outro ativo no AEM |
 | Referência do fragmento |  *Um tipo de modelo* |  Usado para fazer referência a outro Fragmento de conteúdo de um determinado Tipo de modelo, definido quando o modelo foi criado |
 
 ### Campos auxiliares {#helper-fields}
 
 Além dos tipos de dados para campos gerados pelo usuário, o GraphQL para AEM também gera vários campos *auxiliares* para ajudar a identificar um Fragmento de conteúdo ou fornecer informações adicionais sobre um Fragmento de conteúdo.
 
-#### Caminho {#path}
+Esses [campos auxiliares](#helper-fields) estão marcados com um `_` precedente, para distinguir entre o que foi definido pelo usuário e o que foi gerado automaticamente.
 
-O campo de caminho é usado como um identificador no GraphQL. Ele representa o caminho do ativo Fragmento de conteúdo dentro do repositório do AEM. Escolhemos isso como o identificador de um fragmento de conteúdo, pois ele:
+#### Caminho  {#path}
+
+O campo path é usado como um identificador AEM GraphQL. Ele representa o caminho do ativo Fragmento de conteúdo dentro do repositório do AEM. Escolhemos isso como o identificador de um fragmento de conteúdo, pois ele:
 
 * é exclusivo dentro do AEM,
 * pode ser buscado facilmente.
 
-O código a seguir exibirá os caminhos de todos os Fragmentos de conteúdo que foram criados com base no Modelo de fragmento de conteúdo `Person`.
+O código a seguir exibirá os caminhos de todos os Fragmentos de conteúdo que foram criados com base no Modelo do Fragmento de conteúdo `Author`, conforme fornecido pelo tutorial WKND.
 
-```xml
+```graphql
 {
-  personList {
+  authorList {
     items {
       _path
     }
@@ -262,15 +278,15 @@ O código a seguir exibirá os caminhos de todos os Fragmentos de conteúdo que 
 }
 ```
 
-Para recuperar um único Fragmento de conteúdo de um tipo específico, também é necessário determinar seu caminho primeiro. por exemplo:
+Para recuperar um único Fragmento de conteúdo de um tipo específico, também é necessário determinar seu caminho primeiro. Por exemplo:
 
-```xml
+```graphql
 {
-  personByPath(_path: "/content/dam/path/to/fragment/john-doe") {
+  authorByPath(_path: "/content/dam/wknd-shared/en/contributors/sofia-sj-berg") {
     item {
       _path
       firstName
-      name
+      lastName
     }
   }
 }
@@ -303,11 +319,10 @@ Por exemplo, se você quiser recuperar o título de um Fragmento de conteúdo, s
 
 Para consultar metadados:
 
-```xml
+```graphql
 {
-  personByPath(_path: "/content/dam/path/to/fragment/john-doe") {
+  authorByPath(_path: "/content/dam/wknd-shared/en/contributors/sofia-sj-berg") {
     item {
-      _path
       _metadata {
         stringMetadata {
           name
@@ -334,9 +349,9 @@ Consulte [Exemplo de consulta para metadados - listar os metadados para prêmios
 
 O campo `_variations` foi implementado para simplificar a consulta das variações que um Fragmento de conteúdo possui. Por exemplo:
 
-```xml
+```graphql
 {
-  personByPath(_path: "/content/dam/path/to/fragment/john-doe") {
+  authorByPath(_path: "/content/dam/wknd-shared/en/contributors/ian-provo") {
     item {
       _variations
     }
@@ -344,11 +359,15 @@ O campo `_variations` foi implementado para simplificar a consulta das variaçõ
 }
 ```
 
+>[!NOTE]
+>
+>Observe que a variável `_variations` não contém um `master` , como tecnicamente os dados originais (referenciados como *Principal* na interface do usuário) não é considerada uma variação explícita.
+
 Consulte [Exemplo de consulta - todas as cidades com uma variável nomeada](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation).
 
 >[!NOTE]
 >
->Se a variação especificada não existir para um Fragmento de conteúdo, a variação principal será retornada como padrão (substituta).
+>Se a variação especificada não existir para um Fragmento de conteúdo, os dados originais (também conhecidos como variação principal) serão retornados como um padrão (fallback).
 
 <!--
 ## Security Considerations {#security-considerations}
@@ -358,24 +377,51 @@ Consulte [Exemplo de consulta - todas as cidades com uma variável nomeada](/hel
 
 O GraphQL permite que as variáveis sejam colocadas na consulta. Para obter mais informações, é possível visualizar a [documentação do GraphQL sobre variáveis](https://graphql.org/learn/queries/#variables).
 
-Por exemplo, para obter todos os Fragmentos de conteúdo do tipo `Article` que tenham uma variação específica, é possível especificar a variável `variation` no GraphiQL.
+Por exemplo, para obter todos os Fragmentos de conteúdo do tipo `Author` em uma variação específica (se disponível), é possível especificar o argumento `variation` em GraphiQL.
 
 ![Variáveis GraphQL](assets/cfm-graphqlapi-03.png "Variáveis GraphQL")
 
-```xml
-### query
-query GetArticlesByVariation($variation: String!) {
-    articleList(variation: $variation) {
-        items {
-            _path
-            author
-        }
+**Consulta**:
+
+```graphql
+query($variation: String!) {
+  authorList(variation: $variation) {
+    items {
+      _variation
+      lastName
+      firstName
     }
+  }
 }
- 
-### in query variables
+```
+
+**Variáveis de consulta**:
+
+```json
 {
-    "variation": "Introduction"
+  "variation": "another"
+}
+```
+
+Esse query retornará a lista completa de autores. Autores sem o `another` voltará aos dados originais (`_variation` relatório `master` neste caso).
+
+Se quiser restringir a lista aos autores que fornecem a variação especificada (e ignorar autores que retornariam aos dados originais), será necessário aplicar um [filter](#filtering):
+
+```graphql
+query($variation: String!) {
+  authorList(variation: $variation, filter: {
+    _variation: {
+      _expressions: {
+        value: $variation
+      }
+    }
+  }) {
+    items {
+      _variation
+      lastName
+      firstName
+    }
+  }
 }
 ```
 
@@ -387,18 +433,22 @@ Por exemplo, é possível incluir o campo `adventurePrice` em uma consulta para 
 
 ![Diretivas de GraphQL](assets/cfm-graphqlapi-04.png "Diretivas de GraphQL")
 
-```xml
-### query
+**Consulta**:
+
+```graphql
 query GetAdventureByType($includePrice: Boolean!) {
   adventureList {
     items {
-      adventureTitle
-      adventurePrice @include(if: $includePrice)
+      title
+      price @include(if: $includePrice)
     }
   }
 }
- 
-### in query variables
+```
+
+**Variáveis de consulta**:
+
+```json
 {
     "includePrice": true
 }
@@ -410,30 +460,93 @@ Também é possível usar a filtragem em consultas de GraphQL para retornar dado
 
 A filtragem usa uma sintaxe baseada em operadores lógicos e expressões.
 
-Por exemplo, a consulta a seguir (básica) filtra todas as pessoas cujo nome é `Jobs` ou `Smith`:
+A parte mais atômica é uma única expressão que pode ser aplicada ao conteúdo de um determinado campo. Ele compara o conteúdo do campo com um determinado valor constante.
 
-```xml
-query {
-  personList(filter: {
-    name: {
+Por exemplo, a expressão
+
+```graphql
+{
+  value: "some text"
+  _op: EQUALS
+}
+```
+
+compararia o conteúdo do campo com o valor `some text` e é bem-sucedido se o conteúdo for igual ao valor. Caso contrário, a expressão falhará.
+
+As ações
+
+Os operadores a seguir podem ser usados para comparar campos com um determinado valor:
+
+| Operador | Tipo(s) | A expressão terá êxito se ... |
+|--- |--- |--- |
+| `EQUALS` | `String`, `ID`, `Boolean` | ... o valor é exatamente o mesmo que o conteúdo do campo |
+| `EQUALS_NOT` | `String`, `ID` | ... o valor é *not* igual ao conteúdo do campo |
+| `CONTAINS` | `String` | ... o conteúdo do campo contém o valor (`{ value: "mas", _op: CONTAINS }` corresponderá `Christmas`, `Xmas`, `master`, ...) |
+| `CONTAINS_NOT` | `String` | ... o conteúdo do campo faz *not* contém o valor |
+| `STARTS_WITH` | `ID` | ... a ID começa com um determinado valor (`{ value: "/content/dam/", _op: STARTS_WITH` corresponderá `/content/dam/path/to/fragment`, mas não `/namespace/content/dam/something` |
+| `EQUAL` | `Int`, `Float` | ... o valor é exatamente o mesmo que o conteúdo do campo |
+| `UNEQUAL` | `Int`, `Float` | ... o valor é *not* igual ao conteúdo do campo |
+| `GREATER` | `Int`, `Float` | ... o conteúdo do campo é maior que o valor |
+| `GREATER_EQUAL` | `Int`, `Float` | ... o conteúdo do campo é maior ou igual ao valor |
+| `LOWER` | `Int`, `Float` | ... o conteúdo do campo é menor que o valor |
+| `LOWER_EQUAL` | `Int`, `Float` | ... o conteúdo do campo é menor ou igual ao valor |
+| `AT` | `Calendar`, `Date`, `Time` | ... o conteúdo do campo é exatamente o mesmo que o valor (incluindo a configuração de fuso horário) |
+| `NOT_AT` | `Calendar`, `Date`, `Time` | ... o conteúdo do campo é *not* igual ao valor |
+| `BEFORE` | `Calendar`, `Date`, `Time` | ... o ponto no tempo indicado pelo valor é antes do ponto no tempo indicado pelo conteúdo do campo |
+| `AT_OR_BEFORE` | `Calendar`, `Date`, `Time` | ... o ponto no tempo indicado pelo valor é antes ou no mesmo ponto no tempo indicado pelo conteúdo do campo |
+| `AFTER` | `Calendar`, `Date`, `Time` | ... o ponto no tempo indicado pelo valor é após o ponto no tempo indicado pelo conteúdo do campo |
+| `AT_OR_AFTER` | `Calendar`, `Date`, `Time` | ... o ponto no tempo indicado pelo valor é depois ou no mesmo ponto no tempo indicado pelo conteúdo do campo |
+
+Alguns tipos também permitem especificar opções adicionais que modificam como uma expressão é avaliada:
+
+| Opção | Tipo(s) | Descrição |
+|--- |--- |--- |
+| _ignoreCase | Sequência de caracteres | Ignora o caso de uma string, por exemplo, um valor de `time` corresponderá `TIME`, `time`, `tImE`, ... |
+| _sensibilidade | Flutuar | Permite que uma determinada margem para valores flutuantes seja considerada a mesma (para contornar limitações técnicas devido à representação interna de valores flutuantes; deve ser evitada, pois essa opção pode ter um impacto negativo no desempenho |
+
+As expressões podem ser combinadas a um conjunto com a ajuda de um operador lógico (`_logOp`):
+
+* `OR` - o conjunto de expressões terá êxito se pelo menos uma expressão tiver êxito
+* `AND` - o conjunto de expressões terá êxito se todas as expressões tiverem êxito (padrão)
+
+Cada campo pode ser filtrado por seu próprio conjunto de expressões. Os conjuntos de expressões de todos os campos mencionados no argumento filter serão combinados pelo seu próprio operador lógico.
+
+Uma definição de filtro (passada como `filter` para um query) contém:
+
+* Uma subdefinição para cada campo (o campo pode ser acessado por meio de seu nome, por exemplo, há uma `lastName` no filtro para a variável `lastName` no tipo de campo)
+* Cada subdefinição contém a variável `_expressions` , fornecendo o conjunto de expressões e o `_logOp` que define o operador lógico com o qual as expressões devem ser combinadas
+* Cada expressão é definida pelo valor (`value` ) e o operador (`_operator` ) o conteúdo de um campo deve ser comparado a
+
+Observe que você pode omitir `_logOp` se quiser combinar itens com `AND` e `_operator` se quiser verificar a igualdade, pois esses são os valores padrão.
+
+O exemplo a seguir demonstra um query completa que filtra todas as pessoas que têm um `lastName` de `Provo` ou contendo `sjö`, independentemente do caso:
+
+```graphql
+{
+  authorList(filter: {
+    lastname: {
       _logOp: OR
       _expressions: [
         {
-          value: "Jobs"
+          value: "sjö",
+          _operator: CONTAINS,
+          _ignoreCase: true
         },
         {
-          value: "Smith"
+          value: "Provo"
         }
       ]
     }
   }) {
     items {
-      name
+      lastName
       firstName
     }
   }
 }
 ```
+
+Embora também seja possível filtrar em campos aninhados, isso não é recomendado, pois pode levar a problemas de desempenho.
 
 Para obter mais exemplos, consulte:
 
@@ -445,67 +558,121 @@ Para obter mais exemplos, consulte:
 
 * [Exemplos de consulta com base no projeto WKND](/help/headless/graphql-api/sample-queries.md#sample-queries-using-wknd-project)
 
-<!-- CQDOC-19418 -->
+## Classificação {#sorting}
 
-<!--
-## Sorting {#sorting}
+Esse recurso permite classificar os resultados da consulta de acordo com um campo especificado.
 
-This feature allows you to sort the query results according to a specified field.
+Os critérios de classificação:
 
-For example:
+* é uma lista de valores separada por vírgulas que representa o caminho do campo
+   * o primeiro campo na lista definirá a ordem de classificação primária, o segundo campo será usado se dois valores do critério de classificação principal forem iguais, o terceiro se os dois primeiros critérios forem iguais, etc.
+   * notação pontilhada, ou seja, field1.subfield.subfield etc..
+* com uma direção de ordem opcional
+   * ASC (ascendente) ou DESC (descendente); como o ASC padrão é aplicado
+   * a direção pode ser especificada por campo; isso significa que você pode classificar um campo em ordem crescente, outro em ordem decrescente (nome, nome DESC)
+
+Por exemplo:
 
 ```graphql
 query {
-  articleList(sort:"author, _uuid DESC") {
+  authorList(sort: "lastName, firstName") {
     items {
-      author
-      _path
+      firstName
+      lastName
     }
   }
 }
 ```
 
-## Paging {#paging}
-
-This feature allows you to perform paging on query types that returns a list. Two methods are provided:
-
-* `offset` and `limit` in a `List` query
-* `first` and `after` in a `Paginated` query
-
-### List query - offset and limit {#list-offset-limit}
-
-In a `...List`query you can use `offset` and `limit` to return a specific subset of results:
-
-* `offset`: Specifies the first data set to return
-* `limit`: Specifies the maximum number of data sets to be returned
-
-For example, to output the page of results containing up to five articles, starting from the fifth article from the *complete* results list:
+E também:
 
 ```graphql
-query {
-   articleList(offset: 5, limit:5) {
+{
+  authorList(sort: "lastName DESC, firstName DESC") {
     items {
-      author
-      _path
+        lastName
+        firstName
     }
   }
 }
 ```
+
+<!-- to be included? -->
+
+Também é possível classificar em um campo dentro de um fragmento aninhado, usando o formato de `nestedFragmentname.fieldname`.
 
 >[!NOTE]
 >
->* Paging is impacted by the order to the jcr query result set. By default it uses `jcr:path` to make sure the order is always the same. If a different sort order is used, and if that sorting cannot be done at jcr query level, then there will be a negative performance impact as the paging cannot be done in memory.
+>Isso pode ter um impacto negativo no desempenho.
+
+Por exemplo:
+
+```graphql
+query {
+  articleList(sort: "authorFragment.lastName")  {
+    items {
+      title
+      authorFragment {
+        firstName
+        lastName
+        birthDay
+      }
+      slug
+    }
+  }
+}
+```
+
+## Paginação {#paging}
+
+Esse recurso permite executar paginação em tipos de query que retornam uma lista. São fornecidos dois métodos:
+
+* `offset` e `limit` em `List` query
+* `first` e `after` em `Paginated` query
+
+### Consulta de lista - deslocamento e limite {#list-offset-limit}
+
+Em um `...List`consulta que você pode usar `offset` e `limit` para retornar um subconjunto específico de resultados:
+
+* `offset`: Especifica o primeiro conjunto de dados a ser retornado
+* `limit`: Especifica o número máximo de conjuntos de dados a serem retornados
+
+Por exemplo, para exibir a página de resultados contendo até cinco artigos, a partir do quinto artigo da *complete* lista de resultados:
+
+```graphql
+query {
+   articleList(offset: 5, limit: 5) {
+    items {
+      authorFragment {
+        lastName
+        firstName
+      }
+    }
+  }
+}
+```
+
+<!-- When available link to BP and replace "jcr query level" with a more neutral term. -->
+
+<!-- When available link to BP and replace "jcr query result set" with a more neutral term. -->
+
+>[!NOTE]
 >
->* The higher the offset, the more time it will take to skip the items from the complete jcr query result set. An alternative solution for large result sets is to use the Paginated query with `first` and `after` method.
+>* A paginação requer uma ordem de classificação estável para funcionar corretamente em vários queries, solicitando páginas diferentes do mesmo conjunto de resultados. Por padrão, ele usa o caminho do repositório de cada item do conjunto de resultados para garantir que a ordem seja sempre a mesma. Se uma ordem de classificação diferente for usada e essa classificação não puder ser feita no nível de consulta jcr, haverá um impacto negativo no desempenho, pois todo o conjunto de resultados deverá ser carregado na memória antes que as páginas possam ser determinadas.
+>
+>* Quanto maior o deslocamento, mais tempo levará para ignorar os itens do conjunto completo de resultados da consulta jcr. Uma solução alternativa para grandes conjuntos de resultados é usar a consulta Paginada com `first` e `after` método .
 
-### Paginated query - first and after {#paginated-first-after}
 
-The `...Paginated` query type reuses most of the `...List` query type features (filtering, sorting), but instead of using `offset`/`limit` arguments, it uses the standard `first`/`after` arguments defined by [GraphQL](https://graphql.org/learn/pagination/#pagination-and-edges).
+### Consulta paginada - primeiro e depois {#paginated-first-after}
 
-* `first`: The `n` first items to return. The default is `50`.
-* `after`: The cursor-id as returned in the complete result set - if `cursor` is selected.
+O `...Paginated` O tipo de consulta reutiliza a maioria dos `...List` recursos do tipo de consulta (filtragem, classificação), mas em vez de usar `offset`/`limit` argumentos, ele usa a variável `first`/`after` argumentos definidos por [a Especificação de Conexões do Cursor GraphQL](https://relay.dev/graphql/connections.htm). Você pode encontrar uma introdução menos formal no [Introdução ao GraphQL](https://graphql.org/learn/pagination/#pagination-and-edges).
 
-For example, output the page of results containing up to five adventures, starting from the given cursor item in the *complete* results list:
+* `first`: O `n` primeiro itens a retornar.
+O padrão é `50`.
+O máximo é `100`.
+* `after`: O cursor que determina o início da página solicitada; observe que o item representado pelo cursor não está incluído no conjunto de resultados; o cursor de um item é determinado pela variável `cursor` do `edges` estrutura.
+
+Por exemplo, crie a saída da página de resultados contendo até cinco aventuras, começando pelo item de cursor especificado na variável *complete* lista de resultados:
 
 ```graphql
 query {
@@ -513,7 +680,7 @@ query {
         edges {
           cursor
           node {
-            adventureTitle
+            title
           }
         }
         pageInfo {
@@ -524,34 +691,37 @@ query {
 }
 ```
 
+<!-- When available link to BP -->
+<!-- Due to internal technical constraints, performance will degrade if sorting and filtering is applied on nested fields. Therefore it is recommended to use filter/sort fields stored at root level. For more information, see the [Best Practices document](link). -->
+
 >[!NOTE]
 >
->* Paging defaults use `_uuid` for ordering to ensure the order of results is always the same. When `sort` is used, `_uuid` is added as a last order-by field.
+>* Por padrão, a paginação usa o UUID do nó do repositório que representa o fragmento para solicitar, a fim de garantir que a ordem dos resultados seja sempre a mesma. When `sort` for usada, a UUID será usada implicitamente para garantir uma classificação exclusiva; mesmo para dois itens com chaves de classificação idênticas.
 >
->* Performance is expected to be degraded if sort/filter parameters cannot be executed at jcr query level, as the query first has to gather the results in memory then sort them, then finally apply paging. Therefore it is recommended to use filter/sort fields stored at root level.
--->
+>* Devido a restrições técnicas internas, o desempenho será degradado se a classificação e a filtragem forem aplicadas em campos aninhados. Portanto, é recomendável usar campos de filtro/classificação armazenados no nível raiz. Essa também é a maneira recomendada se você quiser consultar grandes conjuntos de resultados paginados.
+
 
 ## GraphQL para AEM - resumo das extensões {#graphql-extensions}
 
 A operação básica de consultas com o GraphQL para AEM adere à especificação GraphQL padrão. Para consultas de GraphQL com o AEM, há algumas extensões:
 
-<!-- CQDOC-19418 -->
+* Se você espera uma lista de resultados:
+   * adicione `List` ao nome do modelo; por exemplo, `cityList`
+   * Consulte [Exemplo de consulta - Todas as informações sobre todas as cidades](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
 
-<!--
-* If you expect a list of results:
-  * add `List` to the model name; for example,  `cityList`
-  * See [Sample Query - All Information about All Cities](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
-  
-  You can then:
-  
-  * [Sort the results](#sorting)
+   É possível: 
 
-  * Return a page of results using either:
+   * [Classifique os resultados](#sorting)
 
-    * [A List query with offset and limit](#list-offset-limit)
-    * [A Paginated query with first and after](#paginated-first-after)
-  * See [Sample Query - All Information about All Cities](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
--->
+      * `ASC` : ascendente
+      * `DESC` : descendente
+   * Retorne uma página de resultados usando:
+
+      * [Uma consulta List com deslocamento e limite](#list-offset-limit)
+      * [Uma consulta paginada com o primeiro e o depois](#paginated-first-after)
+   * Consulte [Exemplo de consulta - Todas as informações sobre todas as cidades](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
+
+
 
 * Se você precisar de um único resultado:
    * utilize o nome do modelo; por exemplo, cidade
@@ -627,18 +797,6 @@ Para acessar o endpoint do GraphQL a partir de um site externo, é necessário c
 ## Autenticação {#authentication}
 
 Consulte [Autenticação para consultas de GraphQL remotas do AEM sobre fragmentos de conteúdo](/help/headless/security/authentication.md).
-
-<!-- to be addressed later -->
-
-<!--
-## Sorting {#sorting}
--->
-
-<!-- to be addressed later -->
-
-<!--
-## Paging {#paging}
--->
 
 ## Perguntas frequentes {#faqs}
 
