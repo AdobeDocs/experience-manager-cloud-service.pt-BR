@@ -2,10 +2,10 @@
 title: Assimilar conteúdo no Target
 description: Assimilar conteúdo no Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 71370cf59bd1f65db78c2818c118e7d9ec2c9196
+source-git-commit: ee2240eac76d4df372d94152a7c17b6e449ef7c8
 workflow-type: tm+mt
-source-wordcount: '1072'
-ht-degree: 12%
+source-wordcount: '1181'
+ht-degree: 11%
 
 ---
 
@@ -119,7 +119,7 @@ Você pode fazer isso criando um novo trabalho de assimilação e garantir que *
 
 ### O CAM não pode recuperar o token de migração {#cam-unable-to-retrieve-the-migration-token}
 
-A recuperação automática do token de migração pode falhar por motivos diferentes, incluindo você [configuração de uma lista de permissões IP via Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) no ambiente Cloud Service do target.  Nesses cenários, você verá a seguinte caixa de diálogo ao tentar iniciar uma assimilação:
+A recuperação automática do token de migração pode falhar por motivos diferentes, incluindo você [configuração de uma lista de permissões IP via Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) no ambiente Cloud Service do target. Nesses cenários, você verá a seguinte caixa de diálogo ao tentar iniciar uma assimilação:
 
 ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/troubleshooting-token.png)
 
@@ -134,6 +134,14 @@ Você precisará recuperar o token de migração manualmente clicando no link &q
 Você poderá iniciar uma assimilação no ambiente de destino somente se pertencer ao local **Administradores de AEM** no serviço de criação do Cloud Service de destino. Se você não pertencer ao grupo de administradores AEM, verá um erro como mostrado abaixo ao tentar iniciar uma assimilação. Você pode solicitar que o administrador o adicione ao local **Administradores de AEM** ou peça o token em si, que pode ser colado no **Entrada do token de migração** campo.
 
 ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
+
+### Atualizações automáticas por meio do Orquestrador de versões ainda estão ativadas
+
+O Release Orchestrator mantém os ambientes atualizados automaticamente ao aplicar atualizações automaticamente. Se a atualização for acionada quando uma assimilação estiver sendo executada, poderá causar resultados imprevisíveis, incluindo a corrupção do ambiente. Esse é um dos motivos pelos quais um tíquete de suporte deve ser registrado antes de iniciar uma assimilação (consulte &quot;Observação&quot; acima), para que a desativação temporária do Orquestrador de versões possa ser agendada.
+
+Se o Orquestrador de versões ainda estiver em execução quando uma assimilação estiver sendo iniciada, a interface do usuário apresentará esta mensagem de erro. Você pode optar por continuar assim mesmo, aceitando o risco, marcando o campo e pressionando o botão novamente.
+
+![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
 
 ## O que vem a seguir {#whats-next}
 
