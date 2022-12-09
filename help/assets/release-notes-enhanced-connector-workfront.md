@@ -2,9 +2,9 @@
 title: Notas da versão [!DNL Workfront for Experience Manager enhanced connector]
 description: Notas da versão [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 31198a1279e07d0a1afe41100d3cfe59d02fd686
+source-git-commit: f98704357c38f61e8e7d36b33ad32e9154c611e6
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '948'
 ht-degree: 1%
 
 ---
@@ -15,11 +15,43 @@ A seção a seguir descreve as Notas de versão gerais de [!DNL Workfront for Ex
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento da versão mais recente 1.9.5 do [!DNL Workfront for Experience Manager enhanced connector] é 11 de novembro de 2022.
+A data de lançamento da versão mais recente 1.9.6 do [!DNL Workfront for Experience Manager enhanced connector] 09 de dezembro de 2022.
 
 ## Destaques da versão {#release-highlights}
 
 A versão mais recente do [!DNL Workfront for Experience Manager enhanced connector] O inclui os seguintes aprimoramentos e correções de erros:
+
+**Aprimoramento**
+
+<!--
+
+* Workfront enhanced connector now allows you to use new search parameters to be more specific while defining folder names on large repositories.
+
+-->
+
+* O conector aprimorado do Workfront agora é compatível com a pesquisa de texto completo em ativos e pastas.
+
+**Correções de erros**
+
+* Os metadados da Versão do documento não são sincronizados adequadamente entre o Workfront e o Experience Manager.
+* Problemas ao criar uma pasta vinculada ao Experience Manager no Workfront quando a pasta está usando um schema que está faltando definição na configuração global.
+* O formulário do editor de esquema de metadados para de responder ao clicar em qualquer campo devido a um tempo de carregamento maior do que o esperado. Adição de uma configuração OSGi específica para formulários personalizados para resolver o problema. Os nomes dos formulários personalizados adicionados ao editor de esquema de metadados estão disponíveis nos logs.
+
+>[!IMPORTANT]
+>
+>O Adobe recomenda [atualizar para a versão 1.9.6 mais recente](../assets/update-workfront-enhanced-connector.md) do [!DNL Workfront for Experience Manager enhanced connector].
+
+## Problemas conhecidos {#known-issues}
+
+* Ao configurar pastas vinculadas ao projeto com o AEM 6.4, o Experience Manager não salva os valores para **[!UICONTROL subpastas]** e **[!UICONTROL Criar pasta vinculada em projetos com portfólio]** campos. O valor da variável **[!UICONTROL subpastas]** atualizações de campo para **[!UICONTROL indefinido]** e o valor da variável **[!UICONTROL Criar pasta vinculada em projetos com portfólio]** atualizações de campo para **[!UICONTROL Portfolio padrão]** automaticamente após salvar a configuração.
+
+* Quando estiver usando a experiência clássica do Workfront, a variável **[!UICONTROL Enviar para]** disponível na **[!UICONTROL Mais]** a lista suspensa não permite selecionar o destino desejado no Experience Manager. O **[!UICONTROL Enviar para]** A opção funciona corretamente usando o **[!UICONTROL Ações do documento]** lista suspensa. O **[!UICONTROL Enviar para]** A opção funciona corretamente para **[!UICONTROL Mais]** lista suspensa, bem como a **[!UICONTROL Ações do documento]** lista suspensa disponível na nova experiência do Workfront.
+
+## Versões anteriores {#previous-releases}
+
+### Versão de novembro de 2022 {#november-2022-release}
+
+[!DNL Workfront for Experience Manager enhanced connector] A versão 1.9.5, lançada em 11 de novembro, inclui as seguintes atualizações:
 
 * Ao definir apenas um valor para um campo de vários valores no Workfront, o valor do campo não é mapeado adequadamente para Experience Manager.
 
@@ -58,19 +90,6 @@ A versão mais recente do [!DNL Workfront for Experience Manager enhanced connec
    >[!NOTE]
    >
    >Se você já tiver excluído as assinaturas de evento incorretas antes de executar as etapas mencionadas neste procedimento, ignore a última etapa deste procedimento.
-
-
->[!IMPORTANT]
->
->O Adobe recomenda [atualizar para a versão 1.9.5 mais recente](../assets/update-workfront-enhanced-connector.md) do [!DNL Workfront for Experience Manager enhanced connector].
-
-## Problemas conhecidos {#known-issues}
-
-* Ao configurar pastas vinculadas ao projeto com o AEM 6.4, o Experience Manager não salva os valores para **[!UICONTROL subpastas]** e **[!UICONTROL Criar pasta vinculada em projetos com portfólio]** campos. O valor da variável **[!UICONTROL subpastas]** atualizações de campo para **[!UICONTROL indefinido]** e o valor da variável **[!UICONTROL Criar pasta vinculada em projetos com portfólio]** atualizações de campo para **[!UICONTROL Portfolio padrão]** automaticamente após salvar a configuração.
-
-* Quando estiver usando a experiência clássica do Workfront, a variável **[!UICONTROL Enviar para]** disponível na **[!UICONTROL Mais]** a lista suspensa não permite selecionar o destino desejado no Experience Manager. O **[!UICONTROL Enviar para]** A opção funciona corretamente usando o **[!UICONTROL Ações do documento]** lista suspensa. O **[!UICONTROL Enviar para]** A opção funciona corretamente para **[!UICONTROL Mais]** lista suspensa, bem como a **[!UICONTROL Ações do documento]** lista suspensa disponível na nova experiência do Workfront.
-
-## Versões anteriores {#previous-releases}
 
 ### Versão de outubro de 2022 {#october-2022-release}
 
