@@ -4,9 +4,9 @@ description: Use o modelo de Fragmento de conteúdo criado anteriormente para cr
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: 02112c4db42fe1108bd398229a159a7763ec9a0c
+source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '814'
 ht-degree: 1%
 
 ---
@@ -14,6 +14,11 @@ ht-degree: 1%
 # Criar conteúdo headless {#create-content}
 
 Ao seguir o módulo de aprendizado no produto, saiba como usar [os modelos de Fragmento de conteúdo criados anteriormente](content-structure.md) para criar conteúdo que pode ser usado para criação de página ou como a base para seu conteúdo sem periféricos. Este documento constitui um complemento da viagem interativa, que cobre as mesmas etapas e se vincula aos recursos adicionais, se for caso disso.
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_create_content"
+>title="Criar novo conteúdo"
+>abstract="Com base nos modelos criados no módulo 1, você aprenderá a criar conteúdo que pode ser usado para criação de página ou como a base do seu conteúdo headless."
 
 ## Fragmentos de conteúdo {#introduction}
 
@@ -83,7 +88,7 @@ Depois de salvar o novo Fragmento do conteúdo, o editor de Fragmento do conteú
 
 Neste módulo, você aprendeu a criar um Fragmento de conteúdo com base no modelo criado anteriormente. É assim que um autor de conteúdo criaria conteúdo estruturado sem cabeçalho.
 
-Agora que seu conteúdo foi criado e publicado, você pode extrair esse conteúdo via Graph QL via APIs AEM. Você aprenderá sobre isso no módulo [Extraia conteúdo por meio da API GraphQL.](extract-content.md)
+Agora que seu conteúdo foi criado e publicado, você pode extrair esse conteúdo via Graph QL via APIs AEM. Você aprenderá sobre isso no módulo [Extraia conteúdo por meio da API do GraphQL.](extract-content.md)
 
 Você pode retornar à sua tela inicial de avaliação clicando em **Soluções** botão na parte superior direita da barra de navegação e selecionando **Experience Manager**.
 

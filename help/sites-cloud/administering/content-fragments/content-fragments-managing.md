@@ -4,10 +4,10 @@ description: Saiba como usar o console de Fragmentos de conteúdo para gerenciar
 feature: Content Fragments
 role: User
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
 workflow-type: tm+mt
-source-wordcount: '1947'
-ht-degree: 93%
+source-wordcount: '1915'
+ht-degree: 95%
 
 ---
 
@@ -54,11 +54,6 @@ O console Fragmentos de conteúdo fornece acesso direto aos fragmentos e às tar
 * [Pesquisar e filtrar no Console de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#filtering-fragments)
 
 ## Criação de fragmentos de conteúdo {#creating-content-fragments}
-
->[!CONTEXTUALHELP]
->id="aemcloud_sites_trial_admin_content_fragments_create_content"
->title="Criar novo conteúdo"
->abstract="Com base nos modelos criados no módulo 1, você aprenderá a criar conteúdo que pode ser usado para criação de página ou como a base do seu conteúdo headless."
 
 ### Criação de um modelo de conteúdo {#creating-a-content-model}
 

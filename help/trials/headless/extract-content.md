@@ -1,19 +1,19 @@
 ---
 title: Extrair conteúdo por meio da API do GraphQL
-description: Saiba como usar Fragmentos de conteúdo e a API do GraphQL como um sistema de gerenciamento de conteúdo sem periféricos.
+description: Saiba como usar Fragmentos de conteúdo e a API GraphQL como um sistema de gerenciamento de conteúdo sem periféricos.
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 02112c4db42fe1108bd398229a159a7763ec9a0c
+source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1216'
 ht-degree: 1%
 
 ---
 
 # Extrair conteúdo por meio da API GraphQL {#extract-content}
 
-Até agora, em AEM de Julgamentos por impotência, você tem [criou seus próprios modelos de Fragmento de conteúdo](content-structure.md) além de criar seu próprio conteúdo sem periféricos [Fragmentos de conteúdo.](create-content.md) Agora você pode aprender a usar os Fragmentos de conteúdo e a API GraphQL como um sistema de gerenciamento de conteúdo sem periféricos para fornecer seu conteúdo.
+Até agora, em AEM de Julgamentos por impotência, você tem [criou seus próprios modelos de Fragmento de conteúdo](content-structure.md) além de criar seu próprio conteúdo sem periféricos [Fragmentos de conteúdo.](create-content.md) Agora você pode aprender a usar os Fragmentos de conteúdo e a API do GraphQL como um sistema de gerenciamento de conteúdo sem periféricos para fornecer seu conteúdo.
 
 O GraphQL fornece uma API baseada em query que permite que aplicativos clientes externos consultem AEM somente o conteúdo necessário usando uma única chamada de API.
 
@@ -21,13 +21,18 @@ Primeiro, você aprenderá a executar dois tipos diferentes de consultas: **list
 
 >[!TIP]
 >
->Se desejar mais detalhes sobre a API GraphQL, consulte o [Seção Recursos adicionais](#additional-resources) no final deste módulo para o guia da API do GraphQL.
+>Se desejar mais detalhes sobre a API do GraphQL, consulte a seção [Seção Recursos adicionais](#additional-resources) no final deste módulo para o guia da API do GraphQL.
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_graphql"
+>title="Extrair conteúdo usando a API do GraphQL"
+>abstract="Neste módulo, você aprenderá como usar Fragmentos de conteúdo e a API do GraphQL como um Sistema de gerenciamento de conteúdo sem cabeçalho."
 
 ## GraphQL Explorer {#graphql-explorer}
 
 Você inicia no GraphQL Explorer. Aqui você pode criar e executar consultas em relação ao seu conteúdo sem periféricos.
 
-![O Editor de consultas do GraphQL](assets/extract-content/query-editor.png)
+![O Editor de consultas GraphQL](assets/extract-content/query-editor.png)
 
 Se você quiser navegar até o GraphQL Explorer fora da orientação no aplicativo, ele será encontrado usando o ícone Adobe no canto superior esquerdo da página. Isso abre a navegação global do AEM. Aqui, você escolhe o **Ferramentas** e depois **Geral** -> **Editor de consultas GraphQL**.
 
@@ -157,7 +162,7 @@ Agora que você executou os dois tipos principais de queries, está pronto para 
 
    ![Resultados de sua própria query](assets/extract-content/custom-query-results.png)
 
-É assim que seu conteúdo pode ser entregue para experiências digitais omnicanais. Consulte a [Seção Recursos adicionais](#additional-resources) para obter mais consultas de exemplo e saber o quanto você pode fazer com a API GraphQL.
+É assim que seu conteúdo pode ser entregue para experiências digitais omnicanais. Consulte a [Seção Recursos adicionais](#additional-resources) para obter exemplos adicionais de consultas e saber o quanto você pode fazer com a API do GraphQL.
 
 ## Você aprendeu a consultar conteúdo! {#conclusion}
 

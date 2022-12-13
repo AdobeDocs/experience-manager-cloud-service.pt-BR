@@ -4,10 +4,10 @@ description: Saiba mais sobre os conceitos básicos da criação de um CMS headl
 feature: Content Fragments, GraphQL API
 role: User
 exl-id: ef48f737-a5b3-4913-9f37-6b9f681bc048
-source-git-commit: bdbd78f0fdb14113d0eddccf4faba499849d48fe
+source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
 workflow-type: tm+mt
-source-wordcount: '758'
-ht-degree: 96%
+source-wordcount: '731'
+ht-degree: 100%
 
 ---
 
@@ -33,11 +33,6 @@ Isso é feito usando fragmentos de conteúdo em conjunto com a API GraphQL do AE
 >* [O AEM Commerce consome dados de uma plataforma de comércio por meio do GraphQL](/help/commerce-cloud/integrating/magento.md).
 >* [Fragmentos de conteúdo do AEM trabalham em conjunto com a API GraphQL do AEM (uma implementação personalizada, com base no GraphQL padrão), para fornecer conteúdo estruturado para uso em seus aplicativos](/help/headless/graphql-api/content-fragments.md).
 
-
->[!CONTEXTUALHELP]
->id="aemcloud_sites_trial_admin_content_fragments_graphql"
->title="Extrair conteúdo usando a API GraphQL"
->abstract="Neste módulo, você aprenderá como usar Fragmentos de conteúdo e a API GraphQL como um Sistema de gerenciamento de conteúdo sem cabeçalho."
 
 ## CMS headless {#headless-cms}
 

@@ -4,9 +4,9 @@ description: Use um exemplo de aplicativo React para saber como personalizar o c
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 02112c4db42fe1108bd398229a159a7763ec9a0c
+source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
 workflow-type: tm+mt
-source-wordcount: '1371'
+source-wordcount: '1400'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,11 @@ ht-degree: 0%
 AEM as provas para headless são pré-carregadas com um aplicativo React simples para mostrar conteúdo headless. Neste módulo, você aprenderá a visualizar esse aplicativo e modificar seu conteúdo trocando uma imagem e criando um momento que pode ser comprado para ele.
 
 O próprio aplicativo é baseado na estrutura dos Fragmentos de conteúdo. Usando o editor de Fragmento de conteúdo no AEM, é possível modificar o conteúdo dos aplicativos. Para ajudá-lo a entender como isso é feito, este módulo de Ensaios de AEM o orienta pelo processo com um tour interativo e rápido. Este documento constitui um complemento da viagem interativa, que cobre as mesmas etapas e se vincula aos recursos adicionais, se for caso disso.
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_react_app"
+>title="Personalizar conteúdo em um aplicativo React de amostra"
+>abstract="Criamos um aplicativo React moderno, que pode ser usado para aprender como personalizar o conteúdo usando o conjunto de recursos sem cabeçalho."
 
 ## Editor de fragmento de conteúdo {#fragment-editor}
 
