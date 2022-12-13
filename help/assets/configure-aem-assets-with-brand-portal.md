@@ -5,7 +5,7 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 85de154adbd0bc09aa9960665826c36af05b3a56
+source-git-commit: 4f58f36e646677071d7f9a4aa56238d68c7689ba
 workflow-type: tm+mt
 source-wordcount: '2478'
 ht-degree: 11%
@@ -145,7 +145,7 @@ Consulte [Documentação do Brand Portal](https://experienceleague.adobe.com/doc
 
 Você pode monitorar os registros do agente de distribuição para o fluxo de trabalho de publicação de ativos.
 
-Agora, vamos publicar um ativo do Experience Manager Assets para o Brand Portal e ver os logs.
+Agora, vamos publicar um ativo do Experience Manager Assets para o Brand Portal e visualizar os logs.
 
 1. Siga as etapas (de 1 a 4) conforme mostrado no **Testar conexão** e navegue até a página do agente de distribuição.
 1. Clique em **[!UICONTROL Logs]** para visualizar o processamento e os registros de erros.

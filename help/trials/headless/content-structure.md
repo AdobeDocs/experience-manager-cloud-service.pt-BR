@@ -3,13 +3,13 @@ title: Criar a estrutura de conteúdo para seu aplicativo
 description: Saiba como criar a estrutura que serve como base para todo o seu conteúdo sem periféricos usando modelos de Fragmento de conteúdo AEM.
 hidefromtoc: true
 index: false
-source-git-commit: 6010fb398ec8c04ae9153f313585bcf38ccaa26d
+exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
+source-git-commit: 02112c4db42fe1108bd398229a159a7763ec9a0c
 workflow-type: tm+mt
 source-wordcount: '1003'
 ht-degree: 1%
 
 ---
-
 
 # Criar a estrutura de conteúdo para seu aplicativo {#content-structure}
 
