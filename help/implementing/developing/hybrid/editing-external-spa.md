@@ -2,9 +2,9 @@
 title: Edição de um SPA externo no AEM
 description: Este documento descreve as etapas recomendadas para carregar um SPA independente em uma instância de AEM, adicionar seções editáveis de conteúdo e ativar a criação.
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: b06e734fd6874946323cdc71073ecb1c50945845
 workflow-type: tm+mt
-source-wordcount: '2402'
+source-wordcount: '2456'
 ht-degree: 1%
 
 ---
@@ -359,12 +359,16 @@ Para habilitar a edição no AEM para este SPA de exemplo, as etapas a seguir s�
 
    * Implante o projeto para AEM e navegue até o `test` página. O conteúdo da página agora é renderizado e AEM componentes podem ser editados.
 
+## Limitações da estrutura {#framework-limitations}
+
+O componente RemotePage espera que a implementação forneça um manifesto de ativo como aquele [encontrado aqui.](https://github.com/shellscape/webpack-manifest-plugin) No entanto, o componente RemotePage só foi testado para funcionar com a estrutura React (e Next.js através do componente página remota seguinte) e, portanto, não suporta o carregamento remoto de aplicativos de outras estruturas, como o Angular.
+
 ## Recursos adicionais {#additional-resources}
 
 O seguinte material de referência pode ser útil para entender SPA no contexto da AEM.
 
 * [Headful e Headless no AEM](/help/implementing/developing/headful-headless.md)
-* [O Arquétipo de Projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+* [O Arquétipo de Projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR)
 * [O projeto SPA WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html)
 * [Introdução ao SPA no AEM usando o React](/help/implementing/developing/hybrid/getting-started-react.md)
 * [Materiais de referência SPA (referências de API)](/help/implementing/developing/hybrid/reference-materials.md)
