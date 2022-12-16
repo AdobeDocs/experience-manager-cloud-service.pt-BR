@@ -2,13 +2,13 @@
 title: Notas de versão para Ferramentas de migração AEM versão as a Cloud Service 2022.7.0
 description: Notas de versão para Ferramentas de migração AEM versão as a Cloud Service 2022.7.0
 feature: Release Information
-source-git-commit: 15eaf14bd15e38e5954ee468e2ea9d1a1b3085d6
+exl-id: bc8f1a80-867e-423a-9c03-4a53b1ebc57c
+source-git-commit: cc52dfac1e7495d6a792bc7525720695022db8eb
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 9%
 
 ---
-
 
 # Notas de versão para Ferramentas de migração AEM versão as a Cloud Service 2022.7.0 {#release-notes}
 
