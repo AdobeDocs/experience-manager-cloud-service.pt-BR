@@ -3,7 +3,7 @@ title: Saiba como usar o GraphQL com o AEM - Exemplos de conteúdo e consultas
 description: Saiba como usar o GraphQL com o AEM para fornecer conteúdo em headless, explorando exemplos de conteúdo e consultas.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: df1bccc632b3287c73a926bc5f9c6b63d51d8de6
+source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
 workflow-type: tm+mt
 source-wordcount: '1540'
 ht-degree: 93%
@@ -1655,29 +1655,29 @@ Os fragmentos a seguir são usados para o modelo apropriado.
 | Nome da empresa | CEO | Empregados |
 |--- |--- |--- |
 | Apple | Steve Jobs | Duke Marsh<br>Max Caulfield |
-|  Little Pony Inc. | Adam Smith | Lara Croft<br>Cutter Slade |
+| Little Pony Inc. | Adam Smith | Lara Croft<br>Cutter Slade |
 | NextStep Inc. | Steve Jobs | Joe Smith<br>Abe Lincoln |
 
 #### Pessoa {#fragment-person}
 
 | Nome | Nome | Prêmios |
 |--- |--- |--- |
-| Lincoln |  Abe |  |
-| Smith | Adam |   |
-| Slade |  Cutter |  Gameblitz<br>Gamestar |
-| Marsh |  Duke |   |   |
-|  Smith |  Joe |   |
-| Croft |  Lara | Gamestar |
-| Caulfield |  Max |  Gameblitz |
-|  Jobs |  Steve |   |
+| Lincoln | Abe |  |
+| Smith | Adam |  |
+| Slade | Cutter | Gameblitz<br>Gamestar |
+| Marsh | Duke |  |
+| Smith | Joe |  |
+| Croft | Lara | Gamestar |
+| Caulfield | Max | Gameblitz |
+| Tarefas | Steve |  |
 
 #### Prêmio {#fragment-award}
 
 | Atalho/ID | Título |
 |--- |--- |
 | GB | Gameblitz |
-|  GS | Gamestar |
-|  OSC | Oscar |
+| GS | Gamestar |
+| OSC | Oscar |
 
 #### Cidade {#fragment-city}
 
@@ -1685,8 +1685,8 @@ Os fragmentos a seguir são usados para o modelo apropriado.
 |--- |--- |--- |--- |
 | Basileia | Suíça | 172258 | city:emea |
 | Berlim | Alemanha | 3669491 | city:capital<br>city:emea |
-| Bucareste | Romênia | 1821000 |  city:capital<br>city:emea |
-| São Francisco |  EUA |  883306 |  city:beach<br>city:na |
-| San Jose |  EUA |  102635 |  city:na |
-| Stuttgart |  Alemanha |  634830 |  city:emea |
-|  Zurique |  Suíça |  415367 |  cidade:capital<br>cidade:emea |
+| Bucareste | Romênia | 1821000 | city:capital<br>city:emea |
+| São Francisco | EUA | 883306 | city:beach<br>city:na |
+| San Jose | EUA | 102635 | city:na |
+| Stuttgart | Alemanha | 634830 | city:emea |
+| Zurique | Suíça | 415367 | city:capital<br>city:emea |

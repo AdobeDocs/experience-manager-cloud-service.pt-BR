@@ -3,7 +3,7 @@ title: API GraphQL do AEM para uso com Fragmentos de conteúdo
 description: Saiba como usar os Fragmentos de conteúdo no Adobe Experience Manager (AEM) as a Cloud Service com a API GraphQL do AEM, para entrega de conteúdo headless.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 666125abe28ed71e85fdcf4a3b44f26e61c7795f
+source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
 workflow-type: tm+mt
 source-wordcount: '4174'
 ht-degree: 59%
@@ -307,7 +307,7 @@ Como os metadados são gerados por meio do Editor de esquemas e, como tal, não 
 | `floatMetadata:[FloatMetadata]!` |
 | `floatArrayMetadata:[FloatArrayMetadata]!` |
 | `booleanMetadata:[BooleanMetadata]!` |
-| `booleanArrayMetadata:[booleanArrayMetadata]!`  |
+| `booleanArrayMetadata:[booleanArrayMetadata]!` |
 | `calendarMetadata:[CalendarMetadata]!` |
 | `calendarArrayMetadata:[CalendarArrayMetadata]!` |
 
