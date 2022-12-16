@@ -2,9 +2,9 @@
 title: Introdução e passo a passo do SPA
 description: Este artigo apresenta os conceitos de um SPA e aborda o uso de um aplicativo SPA básico para criação, mostrando como ele está relacionado ao Editor de SPA subjacente do AEM.
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: f201e8bf8a44db6b408edec5b77cc814c7e87abb
 workflow-type: tm+mt
-source-wordcount: '1984'
+source-wordcount: '2076'
 ht-degree: 2%
 
 ---
@@ -23,7 +23,18 @@ Este artigo apresenta os conceitos básicos de SPA antes de levar o leitor por u
 
 O objetivo desta introdução e apresentação é demonstrar para um desenvolvedor de AEM por que SPA são relevantes, como eles geralmente funcionam, como um SPA é manipulado pelo Editor de SPA de AEM e como é diferente de um aplicativo de AEM padrão.
 
-A apresentação é baseada na funcionalidade de AEM padrão e no aplicativo de projeto SPA WKND de amostra. Para seguir em frente, por favor [baixe e instale o aplicativo SPA projeto WKND de amostra no GitHub aqui.](https://github.com/adobe/aem-guides-wknd-spa)
+## Requisitos {#requirements}
+
+A apresentação é baseada na funcionalidade de AEM padrão e no aplicativo de projeto SPA WKND de amostra. Para acompanhar essa apresentação, você deve ter o seguinte disponível.
+
+* [SDK de desenvolvimento mais recente do AEMaaCS](/help/release-notes/release-notes-cloud/release-notes-current.md)
+   * Ele deve funcionar como um ambiente de desenvolvimento local.
+   * Você deve ter direitos de administrador no sistema.
+* [O exemplo de aplicativo SPA projeto WKND disponível no GitHub](https://github.com/adobe/aem-guides-wknd-spa)
+   * Baixe o [última versão do aplicativo React](https://github.com/adobe/aem-guides-wknd-spa/releases) nomeado semelhante a `wknd-spa-react.all-X.Y.Z-SNAPSHOT.zip`.
+   * Baixe o [imagens de amostra mais recentes para o aplicativo](https://github.com/adobe/aem-guides-wknd-spa/releases) nomeado semelhante a `wknd-spa-sample-images-X.Y.Z.zip`.
+   * [Usar gerenciador de pacotes](/help/implementing/developing/tools/package-manager.md) para instalar ambos os pacotes como você faria com qualquer outro pacote no AEM.
+   * O aplicativo não precisa ser instalado usando o Maven para fins desta apresentação.
 
 >[!CAUTION]
 >
@@ -31,7 +42,7 @@ A apresentação é baseada na funcionalidade de AEM padrão e no aplicativo de 
 
 >[!TIP]
 >
->Qualquer projeto AEM deve aproveitar [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt_BR), que suporta projetos SPA usando o React ou Angular e aproveita o SDK SPA.
+>Qualquer projeto AEM deve aproveitar [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR), que suporta projetos SPA usando o React ou Angular e aproveita o SDK SPA.
 
 ### O que é um SPA? {#what-is-a-spa}
 
@@ -231,7 +242,7 @@ Na seção a seguir, exploraremos o contrato que permite que o Editor de SPA rel
 
 ## Headful e Headless no AEM {#headful-headless}
 
-SPA pode ser ativado com níveis flexíveis de integração dentro do AEM incluindo SPA desenvolvidos e mantidos fora do AEM. Além disso, SPA pode ser aproveitado no AEM, além de usar AEM para fornecer conteúdo a endpoints adicionais sem interrupções.
+SPA pode ser ativado com níveis flexíveis de integração dentro do AEM incluindo SPA desenvolvido e mantido fora do AEM. Além disso, SPA pode ser aproveitado no AEM, além de usar AEM para fornecer conteúdo a endpoints adicionais sem interrupções.
 
 >[!TIP]
 >
