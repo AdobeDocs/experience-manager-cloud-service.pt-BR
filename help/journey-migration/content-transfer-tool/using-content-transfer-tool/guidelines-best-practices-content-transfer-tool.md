@@ -2,9 +2,9 @@
 title: Diretrizes e práticas recomendadas para usar a ferramenta Transferência de conteúdo
 description: Diretrizes e práticas recomendadas para usar a ferramenta Transferência de conteúdo
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: c6a27c996458259904b6532c69a1bd33e2f725c6
+source-git-commit: b0d219f712b1dbbfa70d66ac14c0a66dc89ebbab
 workflow-type: tm+mt
-source-wordcount: '1597'
+source-wordcount: '1595'
 ht-degree: 19%
 
 ---
@@ -68,7 +68,7 @@ Siga a seção abaixo para entender as considerações importantes ao executar a
 
 * A Ferramenta de transferência de conteúdo (CTT) não executa nenhum tipo de análise de conteúdo antes de transferir o conteúdo da instância de origem para a instância de destino. Por exemplo, a CTT não diferencia entre conteúdo publicado e não publicado enquanto assimila conteúdo em um ambiente de publicação. Qualquer conteúdo especificado no conjunto de migração será assimilado na instância de destino escolhida. O usuário pode assimilar um conjunto de migração em uma instância de Autor ou de Publicação ou em ambos. Recomenda-se que, ao mover o conteúdo para uma instância de Produção, a CTT seja instalada na instância de Autor de origem para mover o conteúdo para a instância de Autor de destino e, de forma semelhante, instale a CTT na instância de Publicação de origem para mover o conteúdo para a instância de Publicação de destino. Consulte [Execução da ferramenta Transferência de conteúdo em uma instância de publicação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-ctt-on-publish) para obter mais detalhes.
 
-* Os Usuários e grupos transferidos pela ferramenta Transferência de conteúdo são apenas aqueles que são exigidos pelo conteúdo para atender às permissões. O *Extração* o processo copia todo o `/home` no conjunto de migração e na variável *Assimilação* O processo copia todos os usuários e grupos referenciados nas ACLs do conteúdo migrado. Para mapear automaticamente os usuários e grupos existentes para suas IDs IMS, consulte [Usar a ferramenta Mapeamento de usuários](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration).
+* Os Usuários e grupos transferidos pela ferramenta Transferência de conteúdo são apenas aqueles que são exigidos pelo conteúdo para atender às permissões. O *Extração* o processo copia todo o `/home` no conjunto de migração e na variável *Assimilação* O processo copia todos os usuários e grupos referenciados nas ACLs do conteúdo migrado. Para mapear automaticamente os usuários existentes para suas IDs IMS, consulte [Usar a ferramenta Mapeamento de usuários](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration).
 
 * Durante a fase de extração, a ferramenta Transferência de conteúdo é executada em uma instância de origem do AEM ativa.
 
