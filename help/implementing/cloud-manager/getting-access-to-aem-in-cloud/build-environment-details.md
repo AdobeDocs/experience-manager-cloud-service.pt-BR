@@ -2,12 +2,13 @@
 title: Ambiente de compilação
 description: Saiba mais sobre o ambiente de compilação do Cloud Manager e como ele cria e testa seu código.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 98%
+source-wordcount: '1003'
+ht-degree: 96%
 
 ---
+
 
 # Ambiente de compilação {#build-environment}
 
@@ -225,3 +226,7 @@ Essa mesma técnica pode ser usada para instalar pacotes específicos do idioma,
 >[!NOTE]
 >
 >Instalar um pacote de sistema dessa maneira não o instala no ambiente de tempo de execução usado para executar o Adobe Experience Manager. Se a instalação de um pacote de sistema no ambiente AEM for necessária, entre em contato com o representante da Adobe.
+
+>[!TIP]
+>
+>Para obter detalhes sobre o ambiente de build front-end, consulte o documento [Desenvolvimento de sites com o pipeline front-end.](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)

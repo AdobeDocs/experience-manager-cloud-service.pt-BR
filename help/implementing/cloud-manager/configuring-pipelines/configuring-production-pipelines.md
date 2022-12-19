@@ -3,12 +3,13 @@ title: Configuração de pipelines de produção
 description: Saiba como configurar pipelines de produção para compilar e implantar seu código em ambientes de produção.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
 workflow-type: tm+mt
-source-wordcount: '1462'
+source-wordcount: '1520'
 ht-degree: 100%
 
 ---
+
 
 # Configuração de um pipeline de produção {#configure-production-pipeline}
 
@@ -168,6 +169,12 @@ Para concluir a configuração do pipeline de produção com código de pilha co
 >Se você tiver um pipeline de pilha completa existente implantando em um ambiente, a criação de um pipeline de configuração no nível da Web para o mesmo ambiente fará com que a configuração existente no pipeline de pilha completa seja ignorada.
 
 O pipeline é salvo e agora você pode [gerenciar seus pipelines](managing-pipelines.md) no cartão **Pipelines** na página **Visão geral do programa**.
+
+## Desenvolvimento de Sites com o pipeline front-end {#developing-with-front-end-pipeline}
+
+Com os pipelines de front-end, é dada mais independência aos desenvolvedores de front-end e o processo de desenvolvimento pode ser acelerado.
+
+Consulte o documento [Desenvolvimento de Sites com o pipeline de front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) para saber como esse processo funciona, além de algumas considerações a serem feitas a fim de aproveitar ao máximo o potencial desse processo.
 
 ## Ignorar pacotes do Dispatcher {#skip-dispatcher-packages}
 

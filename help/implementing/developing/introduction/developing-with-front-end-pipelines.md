@@ -1,21 +1,36 @@
 ---
-title: Desenvolvimento de sites com o pipeline front-end
-description: Com o pipeline front-end, mais independência é dada aos desenvolvedores front-end e o processo de desenvolvimento pode ganhar uma velocidade substancial.
+title: Desenvolvimento de Sites com o pipeline front-end
+description: Com o pipeline front-end, mais independência é dada aos desenvolvedores front-end e o processo de desenvolvimento pode ganhar uma velocidade substancial. Este documento descreve algumas considerações específicas do processo de build front-end que devem ser fornecidas.
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 868382c37c3744642e96353aecfc4369105a42ec
 workflow-type: tm+mt
-source-wordcount: '1024'
-ht-degree: 2%
+source-wordcount: '1157'
+ht-degree: 1%
 
 ---
 
-# Desenvolvimento de sites com o pipeline front-end {#developing-site-with-front-end-pipeline}
+
+# Desenvolvimento de Sites com o pipeline front-end {#developing-site-with-front-end-pipeline}
 
 [Com o pipeline front-end,](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) é dada mais independência aos desenvolvedores front-end e o processo de desenvolvimento pode ganhar uma velocidade substancial. Este documento descreve como esse processo funciona, além de algumas considerações que devem ser levadas em consideração para aproveitar todo o potencial desse processo.
 
 >[!TIP]
 >
 >Se ainda não estiver familiarizado com o uso do pipeline front-end e os benefícios que ele pode trazer, verifique o [Jornada Rápida de Criação de Site](/help/journey-sites/quick-site/overview.md) para obter um exemplo de como implantar rapidamente um novo site e personalizar seu tema completamente independente do desenvolvimento de back-end.
+
+## Contrato de construção de front-end {#front-end-build-contract}
+
+Semelhante ao [ambiente de criação de pilha completa,](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) o pipeline front-end tem seu próprio ambiente. Os desenvolvedores têm alguma flexibilidade neste pipeline, desde que o seguinte contrato de construção de front-end seja observado.
+
+O pipeline de front-end requer o projeto Node.js de front-end para usar o `build` diretiva de script para gerar a build que será implantada pelo pipeline front-end. Ou seja, o Cloud Manager usa o comando `npm run build` para gerar o projeto implantável no `dist` pasta.
+
+O conteúdo da `dist` é o que é implantado em AEM as a Cloud Service no pipeline do Cloud Manager.
+
+### Versões de nó {#node-versions}
+
+Por padrão, o pipeline de front-end usa o Nó 14, mas 16 e 16 também estão disponíveis.
+
+Você pode usar o `CM_CUSTOM_VAR_NODE_VERSION` variável de ambiente para definir a versão desejada.
 
 ## Fonte única da verdade {#single-source-of-truth}
 
