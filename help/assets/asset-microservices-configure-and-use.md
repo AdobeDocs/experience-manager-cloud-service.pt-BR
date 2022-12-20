@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 2478276c8f8a2c92a63e24e50520e8d81b9a4e26
+source-git-commit: 5545cd1739db41dbabf06cff916811123e7e09be
 workflow-type: tm+mt
-source-wordcount: '2899'
+source-wordcount: '2902'
 ht-degree: 2%
 
 ---
@@ -111,10 +111,10 @@ Ele pode transformar imagens, vídeos, documentos e outros formatos de arquivo e
 
 Os desenvolvedores podem usar o [!DNL Asset Compute Service] para [criar aplicativos personalizados](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html) para os casos de uso suportados. [!DNL Experience Manager] O pode chamar esses aplicativos personalizados da interface do usuário usando perfis personalizados configurados pelos administradores. [!DNL Asset Compute Service] O suporta os seguintes casos de uso de invocar serviços externos:
 
-* Use [!DNL Adobe Photoshop]&#39;s [API ImageCutout](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) e salve o resultado como representação.
+* Use [!DNL Adobe Photoshop]&#39;s [API ImageCutout](https://developer.adobe.com/photoshop/photoshop-api-docs/) e salve o resultado como representação.
 * Chame sistemas de terceiros para atualizar dados, por exemplo, um sistema PIM.
 * Use [!DNL Photoshop] API para gerar várias representações com base no modelo do Photoshop.
-* Use [API do Adobe Lightroom](https://github.com/AdobeDocs/lightroom-api-docs#supported-features) para otimizar os ativos assimilados e salvá-los como representações.
+* Use [API do Adobe Lightroom](https://developer.adobe.com/photoshop/photoshop-api-docs/) para otimizar os ativos assimilados e salvá-los como representações.
 
 >[!NOTE]
 >
@@ -129,17 +129,17 @@ Para criar um perfil personalizado, siga estas etapas:
 1. Forneça as seguintes informações.
 
    * Nome do arquivo de cada renderização e uma extensão de arquivo compatível.
-   * [URL de ponto final de um aplicativo personalizado Firefly](https://experienceleague.adobe.com/docs/asset-compute/using/extend/deploy-custom-application.html). O aplicativo deve ser da mesma organização da conta do Experience Manager.
+   * [URL de ponto final de um aplicativo personalizado do App Builder](https://experienceleague.adobe.com/docs/asset-compute/using/extend/deploy-custom-application.html). O aplicativo deve ser da mesma organização da conta do Experience Manager.
    * Adicionar parâmetros de serviço a [transmitir informações ou parâmetros adicionais ao aplicativo personalizado](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#extend).
    * Tipos MIME incluídos e excluídos para limitar o processamento a alguns formatos de arquivo específicos.
 
    Clique em **[!UICONTROL Salvar]**.
 
-Os aplicativos personalizados não têm cabeça [Projeto Firefly](https://github.com/AdobeDocs/project-firefly) aplicativos. O aplicativo personalizado obtém todos os arquivos fornecidos se eles estiverem configurados com um perfil de processamento. O aplicativo deve filtrar os arquivos.
+Os aplicativos personalizados não têm cabeça [Construtor de aplicativos do projeto](https://developer.adobe.com/app-builder/docs/overview/) aplicativos. Seu aplicativo personalizado obtém todos os arquivos fornecidos se eles estiverem configurados com um perfil de processamento. O aplicativo deve filtrar os arquivos.
 
 >[!CAUTION]
 >
->Se o aplicativo Firefly e [!DNL Experience Manager] não forem da mesma organização, a integração não funcionará.
+>Se o aplicativo App Builder e [!DNL Experience Manager] não forem da mesma organização, a integração não funcionará.
 
 ### Um exemplo de um perfil personalizado {#custom-profile-example}
 
@@ -229,7 +229,7 @@ Para casos de uso típicos de pós-processamento, considere usar o método para 
 
 Você pode configurar o serviço de execução do fluxo de trabalho personalizado para as configurações avançadas que não podem ser cumpridas aplicando um fluxo de trabalho a uma pasta. Por exemplo, um workflow que usa uma expressão regular. O Adobe CQ DAM Custom Workflow Runner (`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`) é um serviço OSGi. Ela fornece as duas opções a seguir para configuração:
 
-* Fluxos de trabalho de pós-processamento por caminho (`postProcWorkflowsByPath`): Vários modelos de fluxo de trabalho podem ser listados, com base em caminhos de repositório diferentes. Separe caminhos e modelos usando dois pontos. Caminhos de repositório simples são suportados. Mapeie-os para um modelo de fluxo de trabalho na `/var` caminho. Por exemplo: `/content/dam/my-brand:/var/workflow/models/my-workflow`.
+* Fluxos de trabalho de pós-processamento por caminho (`postProcWorkflowsByPath`): Vários modelos de fluxo de trabalho podem ser listados, com base em caminhos de repositório diferentes. Separe caminhos e modelos usando dois pontos. Caminhos de repositório simples são compatíveis. Mapeie-os para um modelo de fluxo de trabalho na `/var` caminho. Por exemplo: `/content/dam/my-brand:/var/workflow/models/my-workflow`.
 * Fluxos de trabalho de pós-processamento por expressão (`postProcWorkflowsByExpression`): Vários modelos de fluxo de trabalho podem ser listados, com base em diferentes expressões regulares. As expressões e os modelos devem ser separados por dois pontos. A expressão regular deve apontar para o nó do ativo diretamente, e não para uma das representações ou arquivos. Por exemplo: `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
 
 Para saber como implantar uma configuração OSGi, consulte [implantar em [!DNL Experience Manager]](/help/implementing/deploying/overview.md).
