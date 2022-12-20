@@ -4,9 +4,9 @@ description: Use o modelo de Fragmento de conteúdo criado anteriormente para cr
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
+source-git-commit: 1456891dc3b13b3d79fa8ee9f3ded37e92cfbc85
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '900'
 ht-degree: 1%
 
 ---
@@ -19,6 +19,13 @@ Ao seguir o módulo de aprendizado no produto, saiba como usar [os modelos de Fr
 >id="aemcloud_sites_trial_admin_content_fragments_create_content"
 >title="Criar novo conteúdo"
 >abstract="Com base nos modelos criados no módulo 1, você aprenderá a criar conteúdo que pode ser usado para criação de página ou como a base do seu conteúdo headless."
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_create_content_guide"
+>title="Iniciar o console Fragmento de conteúdo"
+>abstract="Em AEM CMS sem periféricos, &quot;fragmentos de conteúdo&quot; são todos pedaços de conteúdo que se encaixam na estrutura predefinida chamada de &quot;modelo de fragmento de conteúdo&quot;. Nesta apresentação, você aprenderá a criar conteúdo para o modelo de fragmento de conteúdo.<br><br>Clique abaixo para iniciar o recurso em uma nova guia e siga este documento de aprendizagem para criar seu primeiro fragmento de conteúdo."
+>additional-url="https://video.tv.adobe.com/v/328618" text="Espaço reservado do vídeo de introdução"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home_c1.png" text="Miniatura do vídeo: Adição de conteúdo - a receita vencedora"
 
 ## Fragmentos de conteúdo {#introduction}
 
@@ -88,7 +95,7 @@ Depois de salvar o novo Fragmento do conteúdo, o editor de Fragmento do conteú
 
 Neste módulo, você aprendeu a criar um Fragmento de conteúdo com base no modelo criado anteriormente. É assim que um autor de conteúdo criaria conteúdo estruturado sem cabeçalho.
 
-Agora que seu conteúdo foi criado e publicado, você pode extrair esse conteúdo via Graph QL via APIs AEM. Você aprenderá sobre isso no módulo [Extraia conteúdo por meio da API do GraphQL.](extract-content.md)
+Agora que seu conteúdo foi criado e publicado, você pode extrair esse conteúdo via Graph QL via APIs AEM. Você aprenderá sobre isso no módulo [Extraia conteúdo por meio da API GraphQL.](extract-content.md)
 
 Você pode retornar à sua tela inicial de avaliação clicando em **Soluções** botão na parte superior direita da barra de navegação e selecionando **Experience Manager**.
 

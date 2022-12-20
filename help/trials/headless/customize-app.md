@@ -4,9 +4,9 @@ description: Use um exemplo de aplicativo React para saber como personalizar o c
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
+source-git-commit: 1456891dc3b13b3d79fa8ee9f3ded37e92cfbc85
 workflow-type: tm+mt
-source-wordcount: '1400'
+source-wordcount: '1481'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,13 @@ O próprio aplicativo é baseado na estrutura dos Fragmentos de conteúdo. Usand
 >id="aemcloud_sites_trial_admin_content_fragments_react_app"
 >title="Personalizar conteúdo em um aplicativo React de amostra"
 >abstract="Criamos um aplicativo React moderno, que pode ser usado para aprender como personalizar o conteúdo usando o conjunto de recursos sem cabeçalho."
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_react_app_guide"
+>title="Iniciar o editor de Fragmento de conteúdo"
+>abstract="AEM as provas para headless são pré-carregadas com um aplicativo React simples para mostrar conteúdo headless. O aplicativo é baseado na estrutura dos Fragmentos de conteúdo. Usando o editor de Fragmento de conteúdo no AEM, você pode modificar o conteúdo do seu aplicativo.<br><br>Inicie o recurso em uma nova guia clicando abaixo e siga este guia."
+>additional-url="https://video.tv.adobe.com/v/328618" text="Espaço reservado do vídeo de introdução"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home_c1.png" text="Miniatura do vídeo: Modificar o conteúdo do aplicativo em um flash"
 
 ## Editor de fragmento de conteúdo {#fragment-editor}
 

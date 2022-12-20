@@ -4,9 +4,9 @@ description: Saiba como criar a estrutura que serve como base para todo o seu co
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
+source-git-commit: 1456891dc3b13b3d79fa8ee9f3ded37e92cfbc85
 workflow-type: tm+mt
-source-wordcount: '1149'
+source-wordcount: '1120'
 ht-degree: 1%
 
 ---
@@ -18,19 +18,16 @@ Os fragmentos de conteúdo permitem projetar, criar, preparar e publicar conteú
 Para ajudá-lo a entender como isso é feito, esse módulo de Ensaios de AEM o orienta pelo processo com um tour interativo e rápido, criando primeiro o modelo e adicionando sua estrutura. O presente documento constitui um complemento da viagem no interior do produto, que abrange as mesmas etapas e vincula-se, se for caso disso, a recursos adicionais.
 
 >[!CONTEXTUALHELP]
->id="aemcloud_sites_trial_admin_content_fragments_overview_guide_br_test"
->title="Iniciar o editor de modelo"
->abstract="A criação de um modelo de fragmento de conteúdo começa com a criação de um item de modelo no fluxo de trabalho de administração de modelo, em seguida, com a adição de elementos de estrutura a ele, usando o editor de modelo de fragmento de conteúdo.<br><br>Clique abaixo para iniciar o recurso em uma nova guia e siga este documento de aprendizagem para criar seu primeiro fragmento de conteúdo."
-
->[!CONTEXTUALHELP]
->id="aemcloud_sites_trial_admin_content_fragments_overview_guide_newline_test"
->title="Iniciar o editor de modelo"
->abstract="A criação de um modelo de fragmento de conteúdo começa com a criação de um item de modelo no fluxo de trabalho de administração de modelo, em seguida, com a adição de elementos de estrutura a ele, usando o editor de modelo de fragmento de conteúdo.\n\nClique abaixo para iniciar o recurso em uma nova guia e siga este documento de aprendizagem para criar seu primeiro fragmento de conteúdo."
-
->[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview"
 >title="Criar a estrutura de conteúdo para seu aplicativo"
 >abstract="Ao seguir nossa série de guias interativos, você aprenderá a criar a estrutura (também conhecida como o modelo de fragmento de conteúdo) que serve como base para todo o seu conteúdo sem periféricos."
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_overview_guide"
+>title="Iniciar o editor de modelo"
+>abstract="A criação de um modelo de fragmento de conteúdo começa com a criação de um item de modelo no fluxo de trabalho de administração de modelo, em seguida, com a adição de elementos de estrutura a ele, usando o editor de modelo de fragmento de conteúdo.<br><br>Clique abaixo para iniciar o recurso em uma nova guia e siga este documento de aprendizagem para criar seu primeiro modelo de fragmento de conteúdo."
+>additional-url="https://video.tv.adobe.com/v/328618" text="Espaço reservado do vídeo de introdução"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home_c1.png" text="Miniatura do vídeo: Os elementos fundamentais de AEM sem cabeça"
 
 ## O console Modelo do Fragmento de conteúdo {#content-fragment-model-console}
 
