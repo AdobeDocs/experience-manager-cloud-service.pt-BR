@@ -4,9 +4,9 @@ description: Use o modelo de Fragmento de conteúdo criado anteriormente para cr
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: 1456891dc3b13b3d79fa8ee9f3ded37e92cfbc85
+source-git-commit: 4269bc9650f197ae33fcef40a847f8b200097e45
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '885'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,6 @@ Ao seguir o módulo de aprendizado no produto, saiba como usar [os modelos de Fr
 >title="Iniciar o console Fragmento de conteúdo"
 >abstract="Em AEM CMS sem periféricos, &quot;fragmentos de conteúdo&quot; são todos pedaços de conteúdo que se encaixam na estrutura predefinida chamada de &quot;modelo de fragmento de conteúdo&quot;. Nesta apresentação, você aprenderá a criar conteúdo para o modelo de fragmento de conteúdo.<br><br>Clique abaixo para iniciar o recurso em uma nova guia e siga este documento de aprendizagem para criar seu primeiro fragmento de conteúdo."
 >additional-url="https://video.tv.adobe.com/v/328618" text="Espaço reservado do vídeo de introdução"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home_c1.png" text="Miniatura do vídeo: Adição de conteúdo - a receita vencedora"
 
 ## Fragmentos de conteúdo {#introduction}
 
@@ -95,7 +94,7 @@ Depois de salvar o novo Fragmento do conteúdo, o editor de Fragmento do conteú
 
 Neste módulo, você aprendeu a criar um Fragmento de conteúdo com base no modelo criado anteriormente. É assim que um autor de conteúdo criaria conteúdo estruturado sem cabeçalho.
 
-Agora que seu conteúdo foi criado e publicado, você pode extrair esse conteúdo via Graph QL via APIs AEM. Você aprenderá sobre isso no módulo [Extraia conteúdo por meio da API GraphQL.](extract-content.md)
+Agora que seu conteúdo foi criado e publicado, você pode extrair esse conteúdo via Graph QL via APIs AEM. Você aprenderá sobre isso no módulo [Extraia conteúdo por meio da API do GraphQL.](extract-content.md)
 
 Você pode retornar à sua tela inicial de avaliação clicando em **Soluções** botão na parte superior direita da barra de navegação e selecionando **Experience Manager**.
 

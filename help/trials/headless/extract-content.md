@@ -4,9 +4,9 @@ description: Saiba como usar Fragmentos de conteúdo e a API do GraphQL como um 
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 1456891dc3b13b3d79fa8ee9f3ded37e92cfbc85
+source-git-commit: 4269bc9650f197ae33fcef40a847f8b200097e45
 workflow-type: tm+mt
-source-wordcount: '1301'
+source-wordcount: '1287'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 Até agora, em AEM de Julgamentos por impotência, você tem [criou seus próprios modelos de Fragmento de conteúdo](content-structure.md) além de criar seu próprio conteúdo sem periféricos [Fragmentos de conteúdo.](create-content.md) Agora você pode aprender a usar os Fragmentos de conteúdo e a API do GraphQL como um sistema de gerenciamento de conteúdo sem periféricos para fornecer seu conteúdo.
 
-GraphQL fornece uma API baseada em query que permite que aplicativos clientes externos consultem AEM somente o conteúdo necessário usando uma única chamada de API.
+O GraphQL fornece uma API baseada em query que permite que aplicativos clientes externos consultem AEM somente o conteúdo necessário usando uma única chamada de API.
 
 Primeiro, você aprenderá a executar dois tipos diferentes de consultas: **lista** e **byPath** consultas. Em seguida, você aprenderá a recuperar o conteúdo do Fragmento de conteúdo criado anteriormente. Este documento constitui um complemento da viagem interativa, que cobre as mesmas etapas e se vincula aos recursos adicionais, se for caso disso.
 
@@ -33,7 +33,6 @@ Primeiro, você aprenderá a executar dois tipos diferentes de consultas: **list
 >title="Iniciar o GraphQL Explorer"
 >abstract="O GraphQL fornece uma API baseada em query que permite que aplicativos clientes externos consultem AEM somente o conteúdo necessário, usando uma única chamada de API. Siga este guia para saber como executar dois tipos diferentes de consultas e recuperar o conteúdo do fragmento de conteúdo criado em um módulo anterior.<br><br>Inicie o recurso em uma nova guia clicando em abaixo."
 >additional-url="https://video.tv.adobe.com/v/328618" text="Espaço reservado do vídeo de introdução"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home_c1.png" text="Miniatura do vídeo: Extração rápida de conteúdo do GraphQL"
 
 ## GraphQL Explorer {#graphql-explorer}
 
@@ -169,7 +168,7 @@ Agora que você executou os dois tipos principais de queries, está pronto para 
 
    ![Resultados de sua própria query](assets/extract-content/custom-query-results.png)
 
-É assim que seu conteúdo pode ser entregue para experiências digitais omnicanais. Consulte a [Seção Recursos adicionais](#additional-resources) para obter mais consultas de exemplo e saber o quanto você pode fazer com a API GraphQL.
+É assim que seu conteúdo pode ser entregue para experiências digitais omnicanais. Consulte a [Seção Recursos adicionais](#additional-resources) para obter exemplos adicionais de consultas e saber o quanto você pode fazer com a API do GraphQL.
 
 ## Você aprendeu a consultar conteúdo! {#conclusion}
 
