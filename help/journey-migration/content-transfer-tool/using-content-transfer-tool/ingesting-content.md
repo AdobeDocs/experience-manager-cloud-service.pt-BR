@@ -2,10 +2,10 @@
 title: Assimilar conteúdo no Target
 description: Assimilar conteúdo no Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
+source-git-commit: acddd68b61173ab956cafcc7168fd7f898973638
 workflow-type: tm+mt
-source-wordcount: '1181'
-ht-degree: 11%
+source-wordcount: '1375'
+ht-degree: 9%
 
 ---
 
@@ -142,6 +142,18 @@ O Release Orchestrator mantém os ambientes atualizados automaticamente ao aplic
 Se o Orquestrador de versões ainda estiver em execução quando uma assimilação estiver sendo iniciada, a interface do usuário apresentará esta mensagem de erro. Você pode optar por continuar assim mesmo, aceitando o risco, marcando o campo e pressionando o botão novamente.
 
 ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
+
+### Falha de assimilação complementar
+
+Uma causa comum de um [Assimilação complementar](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) falha é um conflito nas ids de nó. Para identificar esse erro, baixe o log de assimilação usando a interface do usuário do Cloud Acceleration Manager e procure uma entrada como a seguinte:
+
+>java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakConstraint0030: Propriedade violada de restrição de exclusividade [jcr:uuid] com o valor a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5: /some/path/jcr:content, /some/other/path/jcr:content
+
+Cada nó no AEM deve ter um uuid exclusivo. Este erro indica que um nó que está sendo assimilado tem o mesmo uuid que um que já existe em um caminho diferente na instância de destino.
+Isso pode acontecer se um nó for movido para a origem entre uma extração e uma [Extração complementar](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process).
+Isso também pode acontecer se um nó no destino for movido entre uma assimilação e uma assimilação complementar subsequente.
+
+Este conflito deve ser resolvido manualmente. Alguém familiarizado com o conteúdo deve decidir qual dos dois nós deve ser excluído, tendo em mente outro conteúdo que o referencie. A solução pode exigir que a extração complementar seja feita novamente sem o nó ofensivo.
 
 ## O que vem a seguir {#whats-next}
 
