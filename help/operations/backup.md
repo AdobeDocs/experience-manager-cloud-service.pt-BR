@@ -2,9 +2,9 @@
 title: Backup e restauração em AEM as a Cloud Service
 description: Backup e restauração em AEM as a Cloud Service
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: 3720ad4a7c7b20c7f594ecefbead669fa1280f75
+source-git-commit: 12e747ff73e9416775a3f26040ac7e15c21505ec
 workflow-type: tm+mt
-source-wordcount: '505'
+source-wordcount: '504'
 ht-degree: 3%
 
 ---
@@ -36,7 +36,7 @@ AEM suporte as a Cloud Service:
 
 Em todos os casos, a versão do código personalizado será a retirada da última implantação bem-sucedida antes do ponto de restauração.
 
-O RTO (Recovery Time Objetive, objetivo de tempo de recuperação) varia de acordo com o tamanho do repositório, mas como diretriz geral, a sequência de recuperação deve levar de 30 minutos a várias horas.
+O RTO (Recovery Time Objetive, objetivo de tempo de recuperação) pode variar, mas como diretriz geral, a sequência de recuperação leva entre 60 e 90 minutos em média, dependendo de vários fatores, como o tamanho do repositório.
 
 Após uma restauração, a versão do AEM será atualizada para a mais recente.
 
