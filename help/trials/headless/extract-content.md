@@ -11,7 +11,7 @@ ht-degree: 1%
 
 ---
 
-# Extrair conteúdo por meio da API do GraphQL {#extract-content}
+# Extrair conteúdo por meio da API GraphQL {#extract-content}
 
 Até agora, em AEM de Julgamentos por impotência, você tem [criou seus próprios modelos de Fragmento de conteúdo](content-structure.md) além de criar seu próprio conteúdo sem periféricos [Fragmentos de conteúdo.](create-content.md) Agora você pode aprender a usar os Fragmentos de conteúdo e a API do GraphQL como um sistema de gerenciamento de conteúdo sem periféricos para fornecer seu conteúdo.
 
@@ -168,7 +168,7 @@ Agora que você executou os dois tipos principais de queries, está pronto para 
 
    ![Resultados de sua própria query](assets/extract-content/custom-query-results.png)
 
-É assim que seu conteúdo pode ser entregue para experiências digitais omnicanais. Consulte a [Seção Recursos adicionais](#additional-resources) para obter exemplos adicionais de consultas e saber o quanto você pode fazer com a API do GraphQL.
+É assim que seu conteúdo pode ser entregue para experiências digitais omnicanais. Consulte a [Seção Recursos adicionais](#additional-resources) para obter mais consultas de exemplo e saber o quanto você pode fazer com a API GraphQL.
 
 ## Você aprendeu a consultar conteúdo! {#conclusion}
 

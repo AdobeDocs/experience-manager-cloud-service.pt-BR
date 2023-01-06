@@ -10,7 +10,7 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: fbd2fdcb61bcbae49f07c3da26b14d56d50b1cab
+source-git-commit: 9c25d9991b41a5a714df3f07e84946162e5495c0
 workflow-type: tm+mt
 source-wordcount: '2214'
 ht-degree: 15%
@@ -63,7 +63,7 @@ Com os dados de exemplo acima, um URL de variante de produto formatado usando o 
 
 Isso configura os URLs das páginas de categoria ou lista de produtos e oferece suporte às seguintes opções:
 
-* `{{page}}.html/{{url_path}}.html` (padrão)
+* `{{page}}.html/{{url_path}}.html` (default)
 * `{{page}}.html/{{url_key}}.html`
 
 No caso de [Loja de referência Venia](https://github.com/adobe/aem-cif-guides-venia):
@@ -219,7 +219,7 @@ Conforme mencionado antes de selecionar um dos formatos padrão disponíveis, ou
 
 _**Use o formato de URL da página do produto que contém o SKU.**_
 
-Os Componentes principais da CIF usam o SKU como identificador principal em todos os componentes. Se o formato de URL da página do produto não contiver o SKU, será necessário um query GraphQL para resolvê-lo. Isso pode afetar o tempo para o primeiro byte. Além disso, pode ser desejável que os compradores possam encontrar produtos por sku usando mecanismos de pesquisa.
+Os Componentes principais da CIF usam o SKU como identificador principal em todos os componentes. Se o formato de URL da página do produto não contiver o SKU, uma consulta GraphQL será necessária para resolvê-lo. Isso pode afetar o tempo para o primeiro byte. Além disso, pode ser desejável que os compradores possam encontrar produtos por sku usando mecanismos de pesquisa.
 
 _**Use um formato de URL da página do produto que contenha o contexto da categoria.**_
 

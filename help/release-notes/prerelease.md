@@ -48,7 +48,7 @@ Aproveitar efetivamente o canal de pré-lançamento requer quatro etapas.
 
 ## Marcar seus calendários {#mark-calendars}
 
-As versões mensais são programadas com bastante antecedência e as datas de lançamento são publicadas em [Adobe Experience League.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)
+As versões mensais são programadas com bastante antecedência e as datas de lançamento são publicadas em [Adobe Experience League.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=pt-BR#aem-as-cloud-service)
 
 Anote as datas de lançamento para que você possa planejar tempo para revisar e testar os recursos futuros.
 

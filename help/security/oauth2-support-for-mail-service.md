@@ -2,8 +2,8 @@
 title: Suporte OAuth2 para o serviço de email
 description: Suporte do Oauth2 para o serviço de email no Adobe Experience Manager as a Cloud Service
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: 5f8da9f846c159aa00273909b93aa10358daf609
-workflow-type: ht
+source-git-commit: 0d0b137dfca0a91f02ff8358747f59ec7530cae5
+workflow-type: tm+mt
 source-wordcount: '674'
 ht-degree: 100%
 

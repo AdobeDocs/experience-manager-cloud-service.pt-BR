@@ -369,7 +369,7 @@ O seguinte material de referência pode ser útil para entender SPA no contexto 
 
 * [Headful e Headless no AEM](/help/implementing/developing/headful-headless.md)
 * [O Arquétipo de Projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR)
-* [O projeto SPA WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html)
+* [O projeto SPA WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=pt-BR)
 * [Introdução ao SPA no AEM usando o React](/help/implementing/developing/hybrid/getting-started-react.md)
 * [Materiais de referência SPA (referências de API)](/help/implementing/developing/hybrid/reference-materials.md)
 * [SPA Blueprint e PageModelManager](/help/implementing/developing/hybrid/blueprint.md#pagemodelmanager)

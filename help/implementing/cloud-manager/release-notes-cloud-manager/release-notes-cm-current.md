@@ -3,10 +3,10 @@ title: Notas de versão do Cloud Manager 2022.12.0 no Adobe Experience Manager a
 description: Estas são as notas de versão do Cloud Manager 2022.12.0 no AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: aa7f2175e2a43a318a6171e622d292ed3a8e958b
+source-git-commit: 516c0027f917ea1e54286b268e7a0fb4c4e2b3d7
 workflow-type: tm+mt
 source-wordcount: '202'
-ht-degree: 38%
+ht-degree: 48%
 
 ---
 
@@ -27,7 +27,7 @@ A data de lançamento da versão 2022.12.0 do Cloud Manager AEM as a Cloud Servi
 
 * Notificações para [Atualizações de manutenção de AEM](/help/overview/what-is-new-and-different.md#aem-updates) será exibida na interface do usuário do Cloud Manager. Essa alteração será implementada em fases nas semanas após a versão 2022.12.0.
 * Quando uma ingestão por meio do [Ferramenta de transferência de conteúdo (CTT)](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) estiver em andamento, o status do ambiente no console do desenvolvedor e no Cloud Manager será exibido como `Ingestion in Progress`.
-* Melhorias na disponibilidade e confiabilidade da [pipelines do Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) foram feitas.
+* Melhorias na disponibilidade e confiabilidade dos [pipelines do Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) foram feitas.
 
 ## Correções de erros {#bug-fixes}
 

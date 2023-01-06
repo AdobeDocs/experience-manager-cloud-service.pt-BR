@@ -145,7 +145,7 @@ Consulte [Documentação do Brand Portal](https://experienceleague.adobe.com/doc
 
 Você pode monitorar os registros do agente de distribuição para o fluxo de trabalho de publicação de ativos.
 
-Agora, vamos publicar um ativo do Experience Manager Assets para o Brand Portal e visualizar os logs.
+Agora, vamos publicar um ativo do Experience Manager Assets para o Brand Portal e ver os logs.
 
 1. Siga as etapas (de 1 a 4) conforme mostrado no **Testar conexão** e navegue até a página do agente de distribuição.
 1. Clique em **[!UICONTROL Logs]** para visualizar o processamento e os registros de erros.
@@ -406,7 +406,7 @@ Os IPs de saída são os seguintes:
 |--- |--- |
 | ND | 130.248.160.68, 20.94.203.130 |
 | EMEA | 185.34.189.3, 51.132.146.75 |
-| APAC | 63 140 44,54 |
+| APAC | 63.140.44.54 |
 
 <!--
 ### Test configuration {#test-configuration}

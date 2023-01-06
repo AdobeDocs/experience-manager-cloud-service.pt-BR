@@ -3,10 +3,10 @@ title: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud S
 description: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 218dd65d1969f92317ae1d9877e2e37bb201ea6a
+source-git-commit: 33bf3dbf6118a9d93e0fe021736b74079100a214
 workflow-type: tm+mt
 source-wordcount: '1092'
-ht-degree: 13%
+ht-degree: 17%
 
 ---
 
@@ -25,12 +25,12 @@ A seção a seguir descreve as Notas de versão gerais da versão atual (mais re
 
 >[!CAUTION]
 >
->**Período de Exclusão de Manutenção Planejada**
+>**Período de wxclusão de manutenção planejada**
 >
 > Nenhuma manutenção automática do AEMaaCS será executada durante os seguintes períodos de tempo, começando e terminando à meia-noite (00:00) CET:
 >
->* segunda-feira, 21 de novembro a segunda-feira, 12 de dezembro
->* segunda-feira, 19 de dezembro a terça-feira, 3 de janeiro
+>* de segunda-feira, 21 de novembro até segunda-feira, 12 de dezembro
+>* de segunda-feira, 19 de dezembro até terça-feira, 3 de janeiro
 
 
 ## Data de lançamento {#release-date}
@@ -56,11 +56,11 @@ Assista ao vídeo Visão geral da versão de outubro de 2022 para obter um resum
 
 * Reduza ainda mais o tempo de carregamento de página para visitantes, otimizando as configurações de tamanhos de imagem em modelos. Encontre mais informações para o componente de imagem em [Componente WCM principal](https://github.com/adobe/aem-core-wcm-components)
 
-## [!DNL Experience Manager Assets] como [!DNL Cloud Service] {#assets}
+## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Novos recursos no [!DNL Assets] {#assets-features}
 
-* O Experience Manager Assets agora permite fazer upload de documentos em outros tipos de formato compatíveis e[ visualizá-los usando o Document Cloud viewer incluído](/help/assets/manage-pdf-documents.md). Os tipos de formato compatíveis incluem TXT, RTF, DOC, DOCX, PPT, PPTX, XLS e XLSX.
+* O Experience Manager Assets agora permite fazer upload de documentos em outros tipos de formato compatíveis e[ visualizá-los usando o Document Cloud viewer incluído](/help/assets/manage-pdf-documents.md). Os tipos de formato compatíveis incluem: TXT, RTF, DOC, DOCX, PPT, PPTX, XLS e XLSX.
 
    ![representação de PDF para outros formatos](/help/release-notes/assets/multi-page-other-formats.png)
 
@@ -73,7 +73,7 @@ Assista ao vídeo Visão geral da versão de outubro de 2022 para obter um resum
 
 * Experience Manager Assets agora [suporta o token SAS](/help/assets/add-assets.md#asset-bulk-ingestor) além da Chave de acesso para autenticação ao conectar-se à fonte de dados do Armazenamento Azure Blob para assimilar ativos usando a ferramenta Importação em massa .
 
-## [!DNL Experience Manager Forms] como [!DNL Cloud Service] {#forms}
+## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Novos recursos disponíveis em [!DNL Forms] {#new-features-available-in-channel}
 
