@@ -4,7 +4,7 @@ description: Adicione seus ativos digitais ao [!DNL Adobe Experience Manager] co
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: a01a9e34fed9182c6c1e7325b2035c63acf875dd
+source-git-commit: 55e117bba7037d44eaadab8bd2de7164e23b47fa
 workflow-type: tm+mt
 source-wordcount: '3064'
 ht-degree: 1%
@@ -259,11 +259,11 @@ Para nomes de arquivos de ativos, o nome e o caminho do JCR são limpos usando a
 
 **Manipulação do nome da pasta na importação em massa**
 
-Para nomes de arquivos de pastas, o nome e o caminho do JCR são limpos usando a API: `JcrUtil.createValidName`.
+Para nomes de arquivos de pastas, o nome e o caminho do JCR são limpos usando a API: `DamUtil.getSanitizedFolderName`.
 
 * Os caracteres em maiúsculas são convertidos em minúsculas
 * Caracteres Unicode não são alterados
-* Substitua os caracteres especiais por um traço (&#39;-&#39;), por exemplo, `new asset.png` é atualizado para `new-asset.png`:
+* Substitua os caracteres especiais por um traço (&#39;-&#39;), por exemplo, `new folder` é atualizado para `new-folder`:
 
    ```
    "                           
