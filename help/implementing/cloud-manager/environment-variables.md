@@ -2,10 +2,10 @@
 title: Variáveis de ambiente do Cloud Manager
 description: As variáveis de ambiente padrão podem ser configuradas e gerenciadas por meio do Cloud Manager e fornecidas para o ambiente de tempo de execução, a ser usado na configuração do OSGi.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: abce1369b3b97a1e9ff7d0c8434b671cc7c5f8c2
-workflow-type: ht
-source-wordcount: '897'
-ht-degree: 100%
+source-git-commit: 6c2d5c4c1dd9ca56cf3ab5487d9a8794f4fbd97b
+workflow-type: tm+mt
+source-wordcount: '1015'
+ht-degree: 88%
 
 ---
 
@@ -107,3 +107,29 @@ Você pode acessar segredos e variáveis de ambiente por meio do XML, como segue
 Consulte o documento [Configuração do projeto](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repository-support-password-protected-maven-repositories) para obter um exemplo de como usar os dois tipos de variáveis em um arquivo `pom.xml`.
 
 Consulte a [documentação oficial do Maven](https://maven.apache.org/settings.html#quick-overview) para obter mais detalhes.
+
+## Disponibilidade da variável de ambiente {#availability}
+
+As variáveis de ambiente podem ser usadas em vários lugares.
+
+### Autor, visualização e publicação {#author-preview-publish}
+
+As variáveis e os segredos comuns do ambiente podem ser usados nos ambientes de criação, visualização e publicação.
+
+### Dispatcher {#dispatcher}
+
+Somente variáveis de ambiente normais podem ser usadas no dispatcher. Segredos não podem ser usados.
+
+No entanto, as variáveis de ambiente não podem ser usadas em `IfDefine` diretivas.
+
+>[!TIP]
+>
+>Você deve validar o uso das variáveis de ambiente com a variável [dispatcher localmente](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html) antes da implantação.
+
+### Configurações do OSGi {#osgi}
+
+Tanto as variáveis de ambiente normais quanto os segredos podem ser usados em configurações do OSGi.
+
+### Variáveis de pipeline {#pipeline}
+
+Além das variáveis de ambiente, também há variáveis de pipeline, que são expostas durante a fase de criação. [Saiba mais sobre variáveis de pipeline aqui.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables)
