@@ -4,9 +4,9 @@ description: Saiba mais sobre a extensão Visualizadores do Dynamic Media para T
 feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
+source-git-commit: 3060b6b411c3ce2f0b70e08628bccfece3e1fd49
 workflow-type: tm+mt
-source-wordcount: '6675'
+source-wordcount: '6679'
 ht-degree: 7%
 
 ---
@@ -32,7 +32,7 @@ Para saber mais sobre extensões do Adobe ou de terceiros, consulte [Extensões 
 * A integração de Tags Experience Platform para visualizadores Dynamic Media não funciona no nó de autor do Experience Manager. Não é possível ver nenhum rastreamento de uma página do WCM até que ela seja publicada.
 * A integração de Tags de Experience Platform para visualizadores do Dynamic Media não é compatível com o modo de operação &quot;pop-up&quot;, onde o URL do visualizador é obtido usando o botão &quot;URL&quot; na página Detalhes do ativo.
 * A integração de Tags do Experience Platform não pode ser usada simultaneamente com a integração do Analytics de visualizadores herdados (por meio do `config2=` parâmetro).
-* O suporte para rastreamento de vídeo é limitado somente ao rastreamento de reprodução principal, conforme descrito em [Visão geral do rastreamento](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html#player-events). Especificamente, o rastreamento de QoS, Anúncios, Capítulo/Segmentos ou Erros não é suportado.
+* O suporte para rastreamento de vídeo é limitado somente ao rastreamento de reprodução principal, conforme descrito em [Visão geral do rastreamento](https://experienceleague.adobe.com/docs/media-analytics/using/tracking/track-av-playback/track-core-overview.html?lang=en#player-events). Especificamente, o rastreamento de QoS, Anúncios, Capítulo/Segmentos ou Erros não é suportado.
 * A configuração da Duração do armazenamento para Elementos de dados não é compatível com Elementos de dados que usam o *Visualizadores do Dynamic Media* extensão. Duração do armazenamento deve ser definida como **[!UICONTROL Nenhum]**.
 
 ### Casos de uso da integração {#use-cases-for-the-integration}
@@ -127,7 +127,7 @@ Quando uma conta do Experience Cloud é inscrita para usar o Adobe Analytics par
 
 Consulte [Instalação e configuração de extensões](#installing-and-setup-of-extensions).
 
-Atualmente, o suporte para rastreamento de vídeo está limitado somente ao rastreamento de &quot;reprodução principal&quot;, conforme descrito em [Visão geral do rastreamento](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html#player-events). Especificamente, o rastreamento de QoS, Anúncios, Capítulo/Segmentos ou Erros não é suportado.
+Atualmente, o suporte para rastreamento de vídeo está limitado somente ao rastreamento de &quot;reprodução principal&quot;, conforme descrito em [Visão geral do rastreamento](https://experienceleague.adobe.com/docs/media-analytics/using/tracking/track-av-playback/track-core-overview.html?lang=en#player-events). Especificamente, o rastreamento de QoS, Anúncios, Capítulo/Segmentos ou Erros não é suportado.
 
 ## Usar a extensão Visualizadores do Dynamic Media {#using-the-dynamic-media-viewers-extension}
 
@@ -149,7 +149,7 @@ Complete as etapas de configuração no [Configurar o Adobe Analytics](#configur
 
 Após a configuração correta, você pode adicionar suporte a Tags de Experience Platform a uma página da Web com um visualizador do Dynamic Media.
 
-Consulte [Adicionar o código de inserção de tags de Experience Platform](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/configure-launch/launch-add-embed.html#configure-launch) para saber mais sobre como usar o código incorporado da biblioteca de Tags do Experience Platform.
+Consulte [Adicionar o código de inserção de tags de Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/add-embed-code.html) para saber mais sobre como usar o código incorporado da biblioteca de Tags do Experience Platform.
 
 Para saber mais sobre como usar o recurso de código incorporado do Experience Manager Dynamic Media, consulte [Incorporação do visualizador de vídeo ou imagem em uma página da Web](/help/assets/dynamic-media/embed-code.md).
 
@@ -224,7 +224,7 @@ Agora, suponha que o usuário final carregue a página da Web com os dois visual
 
 A atividade do usuário final resulta nas duas chamadas de rastreamento a seguir feitas para o Adobe Analytics:
 
-* A primeira chamada ocorre porque **[!UICONTROL TrackPan]** A regra é acionada quando o usuário entra *viewer1*. Essa chamada envia 50% como um valor de **[!UICONTROL ZoomScale]** Elemento de dados porque o Elemento de dados sabe que a Regra é acionada por *viewer1* e buscar o valor de escala correspondente;
+* A primeira chamada ocorre porque **[!UICONTROL TrackPan]** A regra é acionada quando o usuário entra *viewer1*. Essa chamada envia 50% como um valor de **[!UICONTROL ZoomScale]** Elemento de dados porque o Elemento de dados sabe que a Regra é acionada por *viewer1* e obtém o valor de escala correspondente;
 * A segunda chamada ocorre porque **[!UICONTROL TrackKey]** A regra é acionada quando o usuário pressiona uma tecla no teclado. Essa chamada envia 25% como um valor de **[!UICONTROL ZoomScale]** Elemento de dados porque a regra não foi acionada pelo visualizador. Dessa forma, o Elemento de dados retorna o valor mais atualizado.
 
 A amostra configurada acima também afeta a duração do valor do Elemento de dados. O valor do Elemento de dados gerenciado pelo Visualizador do Dynamic Media é armazenado no código da biblioteca de Tags do Experience Platform mesmo depois que o próprio visualizador é descartado na página da Web. Essa funcionalidade significa que, se houver uma Regra que é acionada por uma extensão de Visualizador que não é da Dynamic Media e faz referência a esse Elemento de dados, o Elemento de dados retornará o último valor conhecido. Mesmo se o visualizador não estiver mais presente na página da Web.
@@ -412,7 +412,7 @@ Você usará os seguintes produtos do Adobe para configurar a integração:
 
 Além disso, se essa solução de integração for usada com o Experience Manager Sites, a seguinte configuração deve ser realizada:
 
-* Console Adobe I/O - a integração é criada para Tags do Experience Platform.
+* [Console do Adobe Developer](https://developer.adobe.com/console/home) - a integração é criada para Tags Experience Platform.
 * Nó Experience Manager author - Configuração IMS e configuração da nuvem de Experience Platform Tags.
 
 Como parte da configuração, certifique-se de ter acesso a uma empresa no Adobe Experience Cloud que já tenha Adobe Analytics e Experience Platform Tags ativadas.
@@ -443,7 +443,7 @@ Consulte também [Guia de implementação do Analytics](https://experienceleague
 
    Se nenhum conjunto de relatórios estiver disponível, você ou o administrador da Adobe Analytics devem criar um antes de continuar com a configuração.
 
-   Consulte [Relatórios e conjuntos de relatórios](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html#manage-report-suites) e [Criar um conjunto de relatórios](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html#manage-report-suites).
+   Consulte [Relatórios e conjuntos de relatórios](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/report-suites-admin.html) e [Criar um conjunto de relatórios](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite.html).
 
    No Adobe Analytics, os conjuntos de relatórios são gerenciados em **[!UICONTROL Administrador]** > **[!UICONTROL Conjuntos de relatórios]**.
 
@@ -505,7 +505,7 @@ Após configurar as Tags de Experience Platform, as seguintes etapas serão conf
 
 Uma propriedade nas Tags do Experience Platform é uma configuração nomeada que mantém todas as configurações juntas. Uma biblioteca das configurações é gerada e publicada em diferentes níveis de ambiente (desenvolvimento, armazenamento temporário e produção).
 
-Consulte também [Criar uma propriedade de Tags](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-mobile-android-apps-with-launch/configure-launch/launch-create-a-property.html#configure-launch).
+Consulte também [Configurar uma propriedade de toque](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html).
 
 **Para criar uma propriedade em Tags de Experience Platform:**
 
@@ -532,7 +532,7 @@ Quando necessário, as seguintes extensões devem ser instaladas e configuradas:
 
 Nenhuma configuração adicional é necessária, aceite para qualquer valor proposto. Quando terminar, selecione **[!UICONTROL Salvar]**.
 
-Consulte [Extensão do Experience Cloud Identity Service](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html).
+Consulte [Extensão do Experience Cloud Identity Service](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/id-service/overview.html).
 
 * (Obrigatório) *Adobe Analytics* extensão
 
@@ -552,7 +552,7 @@ No **[!UICONTROL Instalar extensão]** página, expandir **[!UICONTROL Geral]**,
 
 Selecione **[!UICONTROL Salvar]**.
 
-Consulte [Extensão do Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html).
+Consulte [Extensão do Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html).
 
 * (Opcional. Obrigatório somente se o rastreamento de vídeo for necessário) *Adobe Medium Analytics para áudio e vídeo* extensão
 
@@ -560,7 +560,7 @@ Preencha o campo do servidor de rastreamento. O servidor de rastreamento para *A
 
 Todos os outros campos são opcionais.
 
-Consulte [Extensão Adobe Medium Analytics for Audio and Video](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html).
+Consulte [Extensão Adobe Medium Analytics for Audio and Video](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics/overview.html).
 
 * (Obrigatório) *Visualizadores do Dynamic Media* extensão
 
@@ -677,7 +677,7 @@ A configuração de Experience Manager consiste nas duas etapas principais a seg
 
    A seguinte mensagem de Informações é exibida:
 
-   *Para recuperar um token de acesso válido, a chave pública do novo certificado deve ser adicionada à conta técnica no Adobe I/O!*
+   *Para recuperar um token de acesso válido, a chave pública do novo certificado deve ser adicionada à conta técnica no Adobe Developer!*
 
    Para fechar a caixa de diálogo Informações, selecione **[!UICONTROL OK]**.
 
@@ -691,12 +691,12 @@ A configuração de Experience Manager consiste nas duas etapas principais a seg
 
    ![2019-07-25_12-52-24](assets/2019-07-25_12-52-24.png)
 
-1. Em uma nova guia do navegador, navegue até o [Console Adobe I/O](https://console.adobe.io/integrations).
+1. Em uma nova guia do navegador, navegue até o [Console do Adobe Developer](https://developer.adobe.com/console/integrations).
 
 1. No **[!UICONTROL Integrações do console do Adobe I/O]** , próximo ao canto superior direito, selecione **[!UICONTROL Nova integração]**.
 1. No **[!UICONTROL Criar uma nova integração]** , verifique se **[!UICONTROL Acessar uma API]** o botão de opção está selecionado e, em seguida, selecione **[!UICONTROL Continuar]**.
 
-   ![2019-07-25_13-04-20](assets/2019-07-25_13-04-20.png)
+![2019-07-25_13-04-20](assets/2019-07-25_13-04-20.png)
 
 1. No segundo **[!UICONTROL Criar uma nova integração]** , ativar (ativar) a **[!UICONTROL API de Tags do Experience Platform]** botão de opção. No canto inferior direito da página, selecione **[!UICONTROL Continuar]**.
 
@@ -728,19 +728,19 @@ A configuração de Experience Manager consiste nas duas etapas principais a seg
    >***Deixe aberta esta página de Detalhes da integração***. Você precisará de várias informações da **[!UICONTROL Visão geral]** e **[!UICONTROL JWT]** em um momento.
 
    ![2019-07-25_14-35-30](assets/2019-07-25_14-35-30.png)
-   _Página de detalhes da integração_
+   *Página de detalhes da integração*
 
 1. Retorne à página **[!UICONTROL Configuração de conta técnica do Adobe IMS]** que você deixou aberta anteriormente. No canto superior direito da página, selecione **[!UICONTROL Próximo]** para abrir o **[!UICONTROL Conta]** na página **[!UICONTROL Configuração de conta técnica do Adobe IMS]** janela.
 
    (Se você tiver fechado a página anterior, volte para o autor do Experience Manager e, em seguida, vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Segurança]** > **[!UICONTROL Configurações do Adobe IMS]**. Selecione **[!UICONTROL Criar]**. No **[!UICONTROL Solução da nuvem]** , selecione **[!UICONTROL Tags de Experience Platform]**. Na lista suspensa **[!UICONTROL Certificado]**, selecione o nome do certificado criado anteriormente.
 
    ![2019-07-25_20-57-50](assets/2019-07-25_20-57-50.png)
-   _Configuração de conta técnica do Adobe IMS - página Certificado_
+   *Configuração de conta técnica do Adobe IMS - página Certificado*
 
 1. O **[!UICONTROL Conta]** tem cinco campos que exigem que você preencha usando as informações da página Detalhes da integração da etapa anterior.
 
    ![2019-07-25_20-42-45](assets/2019-07-25_20-42-45.png)
-   _Configuração de conta técnica do Adobe IMS - Página Conta_
+   *Configuração de conta técnica do Adobe IMS - Página Conta*
 
 1. No **[!UICONTROL Conta]** preencha os seguintes campos:
 
@@ -752,14 +752,14 @@ Por exemplo, `https://ims-na1.adobelogin.com/`
 (o nome de servidor de exemplo é somente para fins de explicação)
 
    ![2019-07-25_15-01-53](assets/2019-07-25_15-01-53.png)
-   _Página de detalhes da integração - guia JWT_
+   *Página de detalhes da integração - guia JWT*
 
 1. **[!UICONTROL Chave da API]** - Retorne à página de detalhes da integração. Selecione o **[!UICONTROL Visão geral]** , em seguida à direita do **[!UICONTROL Chave da API (ID do cliente)]** , selecione **[!UICONTROL Copiar]**.
 
    Retorne à página **[!UICONTROL Conta]** e cole a chave no respectivo campo.
 
    ![2019-07-25_14-35-333](assets/2019-07-25_14-35-333.png)
-   _Página de detalhes da integração_
+   *Página de detalhes da integração*
 
 1. **[!UICONTROL Segredo do cliente]** - Retorne à página Detalhes da integração. No **[!UICONTROL Visão geral]** guia , selecione **[!UICONTROL Recuperar Segredo do Cliente]**. À direita do **[!UICONTROL Segredo do cliente]** , selecione **[!UICONTROL Copiar]**.
 
@@ -770,7 +770,7 @@ Por exemplo, `https://ims-na1.adobelogin.com/`
    Retorne à página **[!UICONTROL Conta]** e cole o código no respectivo campo.
 
    ![2019-07-25_21-59-12](assets/2019-07-25_21-59-12.png)
-   _Página de detalhes da integração - Guia JWT_
+   *Página de detalhes da integração - Guia JWT*
 
    A página Conta, com todos os campos preenchidos, é semelhante ao seguinte:
 
@@ -804,9 +804,10 @@ Por exemplo, `https://ims-na1.adobelogin.com/`
    * **[!UICONTROL Empresa]** - Do **[!UICONTROL Empresa]** selecione sua empresa do Experience Cloud. A lista é preenchida automaticamente.
 
    * **[!UICONTROL Propriedade]** - Na lista suspensa Propriedade, selecione a propriedade Tags de Experience Platform criada anteriormente. A lista é preenchida automaticamente.
-   Depois de completar todos os campos, **[!UICONTROL Geral]** será semelhante ao seguinte:
 
-   ![image2019-7-15_14-34-23](assets/image2019-7-15_14-34-23.png)
+Depois de completar todos os campos, **[!UICONTROL Geral]** será semelhante ao seguinte:
+
+![image2019-7-15_14-34-23](assets/image2019-7-15_14-34-23.png)
 
 1. Ao lado do canto superior esquerdo, selecione **[!UICONTROL Próximo]**.
 1. No **[!UICONTROL Estágios]** página (2/3 páginas) do **[!UICONTROL Criar configuração de Experience Platform Tags]** , preencha o seguinte campo:
