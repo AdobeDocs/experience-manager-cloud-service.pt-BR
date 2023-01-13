@@ -2,9 +2,9 @@
 title: Ferramentas de desenvolvedor do AEM para Eclipse
 description: Ferramentas de desenvolvedor do AEM para Eclipse
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: 3af790d9b42eb2f685258eb18352ec4cd752efcc
+source-git-commit: cac6692e10da4b271610edd495d4cb38507a726b
 workflow-type: tm+mt
-source-wordcount: '1179'
+source-wordcount: '1182'
 ht-degree: 3%
 
 ---
@@ -40,11 +40,11 @@ Antes de usar as Ferramentas do desenvolvedor do AEM, é necessário:
 
 Quando tiver cumprido [requisitos](#requirements) acima, você pode instalar o plug-in da seguinte maneira:
 
-1. Abra o [Site das ferramentas do desenvolvedor do AEM](https://eclipse.adobe.com/aem/dev-tools/).
+1. Abra o [Site das ferramentas do desenvolvedor do AEM](https://eclipse.adobe.com/aem/dev-tools/). <!-- RB: This URL is generating a 404 error in the experience-manager-cloud-service.en LinkCheckExl report . The website appears to be dead; no redirects at all. Clicking "Installation Link" does not do anything. Only the link "Download archive" works. The "Online Documentation" link just takes you to the AEM Docs home page. Not sure if this topic is still needed?? -->
 
 1. Copie o **Link de instalação**.
 
-   Observe que, como alternativa, você pode baixar um arquivo em vez de usar o link de instalação. Isso permite a instalação offline, mas você perderá as notificações de atualização automáticas dessa maneira.
+   Observe que, como alternativa, você pode baixar um arquivo em vez de usar o link de instalação. Esse método permite a instalação offline, mas você não recebe notificações de atualização automática de falta dessa forma.
 
 1. No Eclipse, abra o **Ajuda** menu.
 1. Clique em **Instalar novo software**.
