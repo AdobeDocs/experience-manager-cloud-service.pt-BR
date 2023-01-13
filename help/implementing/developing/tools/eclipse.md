@@ -2,9 +2,9 @@
 title: Ferramentas de desenvolvedor do AEM para Eclipse
 description: Ferramentas de desenvolvedor do AEM para Eclipse
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 3af790d9b42eb2f685258eb18352ec4cd752efcc
 workflow-type: tm+mt
-source-wordcount: '1183'
+source-wordcount: '1179'
 ht-degree: 3%
 
 ---
@@ -196,7 +196,7 @@ Depois de concluído, seu pacote deverá estar em execução na instância e, ao
 
 Para reconstruir um pacote do seu projeto, clique com o botão direito do mouse no `PROJECT.ui.apps` ou `PROJECT.ui.content` e escolha **Executar como** -> **Instalação do Maven**.
 
-Agora você tem uma pasta de destino que foi criada com seu pacote dentro do (chamada de , por exemplo, `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`).
+Agora você tem uma pasta de destino criada com seu pacote dentro (chamada de , por exemplo, `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`).
 
 ## Resolução de problemas {#troubleshooting}
 
@@ -216,7 +216,7 @@ O Eclipse baixa as dependências necessárias. Isso pode levar um momento.
 
 O site oficial Apache Sling IDE tooling for Eclipse fornece informações úteis:
 
-* O [**Ferramentas do Apache Sling IDE para Eclipse** Guia do usuário](https://sling.apache.org/documentation/development/ide-tooling.html), esta documentação guiará você pelos conceitos gerais, pela integração de servidor e pelos recursos de implantação suportados pelas Ferramentas de desenvolvimento de AEM.
+* O [**Ferramentas do Apache Sling IDE para Eclipse** Guia do usuário](https://sling.apache.org/documentation/development/ide-tooling.html), esta documentação o orienta pelos conceitos gerais, integração de servidor e recursos de implantação compatíveis com as Ferramentas de desenvolvimento de AEM.
 * O [Seção Solução de problemas](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting).
 * O [Lista de problemas conhecidos](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues).
 
