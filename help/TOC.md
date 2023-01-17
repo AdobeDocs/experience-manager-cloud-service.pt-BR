@@ -8,9 +8,9 @@ user-guide-description: Saiba como o Experience Manager as a Cloud Service funci
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 156cf55a33184bd986628d775475ed1f841e8ef4
+source-git-commit: 077ab3c83e3d97cfdec939081b5862e173f17603
 workflow-type: tm+mt
-source-wordcount: '3827'
+source-wordcount: '3834'
 ht-degree: 97%
 
 ---
@@ -164,7 +164,7 @@ ht-degree: 97%
       + [Personalizar conteúdo em um aplicativo de amostra do React](/help/trials/headless/customize-app.md)
       + [Criar a estrutura de conteúdo para seu aplicativo](/help/trials/headless/content-structure.md)
       + [Criar conteúdo headless](/help/trials/headless/create-content.md)
-      + [Extrair conteúdo por meio da API do GraphQL](/help/trials/headless/extract-content.md)
+      + [Extrair conteúdo por meio da API GraphQL](/help/trials/headless/extract-content.md)
 + Jornada de migração do AEM as a Cloud Service {#migration-journey}
    + [Introdução à movimentação do AEM as a Cloud Service](/help/journey-migration/getting-started.md)
    + [Fase de preparação](/help/journey-migration/readiness.md)
@@ -525,6 +525,7 @@ ht-degree: 97%
          + [Usar CAPTCHA em um formulário adaptável](/help/forms/captcha-adaptive-forms.md)
          + [Usar componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)
          + [Aplicar assinatura escrita](/help/forms/signing-forms-using-scribble.md)
+         + [Adicionar uma tabela a um formulário adaptável](/help/forms/adaptive-forms-tables.md)
       + Configurar o layout e aplicar estilo a um formulário adaptável {#configure-layout-of-an-adaptive-form}
          + [Definir o layout de um formulário adaptável](/help/forms/layout-capabilities-adaptive-forms.md)
          + [Usar o modo Layout para redimensionar componentes](/help/forms/resize-using-layout-mode.md)

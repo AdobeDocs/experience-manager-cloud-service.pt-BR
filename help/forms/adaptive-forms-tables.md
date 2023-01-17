@@ -1,26 +1,22 @@
 ---
-title: Tabelas no Adaptive Forms
-seo-title: Tables in Adaptive Forms
-description: O componente Tabela em [!DNL AEM Forms] permite criar tabelas no Adaptive Forms que são responsivas aos layouts móveis e também permitem usar componentes de tabela XDP.
-seo-description: The Table component in [!DNL AEM Forms] lets you create tables in Adaptive Forms that are responsive to mobile layouts, and also allows using XDP table components.
-uuid: 03436c81-42f0-430f-9e52-14a4ab0e877d
-topic-tags: author
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: fc418da9-496f-4a2b-bfe4-2add3ac4f468
-docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+title: Tabelas em formulários adaptáveis
+seo-title: Tables in adaptive forms
+description: O componente Tabela no AEM Forms permite criar tabelas em formulários adaptáveis que são responsivos a layouts móveis e também permitem o uso de componentes de tabela XDP.
+seo-description: The Table component in AEM Forms lets you create tables in adaptive forms that are responsive to mobile layouts, and also allows using XDP table components.
+products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
+feature: Adaptive Forms
+source-git-commit: c9cfaff7f155dc85b2f2ee4e2851e3eb59f5871d
 workflow-type: tm+mt
-source-wordcount: '2311'
+source-wordcount: '2418'
 ht-degree: 0%
 
 ---
 
-
-# Tabelas no Adaptive Forms {#tables-in-adaptive-forms}
+# Tabelas em forma adaptável {#tables-in-adaptive-forms}
 
 O uso de tabelas é uma maneira eficiente, simplificada e organizada de apresentar dados complexos. Ajuda os usuários a identificar informações facilmente e fornecer entradas em uma disposição ordenada de linhas e colunas. A maioria das formas de serviços financeiros e organizações governamentais requer grandes tabelas de dados para colocar números e realizar cálculos.
 
-[!DNL AEM Forms] O fornece um componente Tabela no navegador de componentes na barra lateral que permite criar tabelas no Adaptive Forms. Alguns dos principais recursos que ele oferece são:
+O AEM Forms fornece um componente de Tabela no navegador de componentes na barra lateral que permite criar tabelas em formulários adaptáveis. Alguns dos principais recursos que ele oferece são:
 
 * Layout responsivo em dispositivos móveis
 * Linhas e colunas configuráveis
@@ -42,7 +38,7 @@ Para criar uma tabela, arraste e solte o componente Tabela do navegador de compo
 
 As células de cabeçalho são campos de texto. Para alterar o rótulo de um cabeçalho, clique com o botão direito do mouse na célula de cabeçalho e clique em **Editar**. Na caixa de diálogo Editar, atualize o rótulo na **Valor** e clique em **OK**.
 
-Por padrão, as células de corpo são caixas de texto. Você pode substituir uma célula do corpo por qualquer outro componente do Adaptive Forms disponível no sidekick, como uma caixa numérica, um seletor de datas ou uma lista suspensa.
+Por padrão, as células de corpo são caixas de texto. Você pode substituir uma célula de corpo por qualquer outro componente de formulários adaptáveis disponível no sidekick, como uma caixa numérica, um seletor de data ou uma lista suspensa.
 
 Por exemplo, a primeira linha de corpo na tabela a seguir inclui a caixa de texto, o seletor de data e os componentes da lista suspensa como células.
 
@@ -54,25 +50,30 @@ Você pode unir duas ou mais células de corpo selecionando as células que dese
 
 É possível adicionar e excluir uma linha ou coluna e mover uma linha para cima e para baixo em uma tabela.
 
-Para adicionar ou excluir uma linha ou coluna ou mover uma linha, clique em qualquer célula na linha ou coluna. Um menu suspenso é exibido na parte superior da coluna e à esquerda da linha. O menu na parte superior fornece opções para adicionar ou excluir a coluna, enquanto o menu à esquerda permite adicionar, excluir ou mover a linha.
+#### Adicionar, excluir ou mover uma linha
 
-* A operação Add adiciona uma linha abaixo ou uma coluna à direita da linha ou da coluna selecionada.
-* A operação Delete exclui a linha ou a coluna selecionada.
-* A operação Mover para cima e Mover para baixo move a linha selecionada para cima e para baixo.
+Para adicionar, excluir ou mover a linha, clique em qualquer célula da linha. abrir o navegador de conteúdo ![Navegador de conteúdo](/help/forms/assets/Smock_Layers_18_N.svg) e selecionar a linha correspondente, ela destaca a linha selecionada com a opção da barra de ferramentas da qual é possível adicionar, excluir ou mover a linha para cima ou para baixo.
+* O **[!UICONTROL Mover para cima]** e **[!UICONTROL Mover para baixo]** move a linha selecionada para cima e para baixo.
 
-O menu suspenso da linha também fornece a operação Editar para editar propriedades, configurações e opções de estilo de linha.
+* O **[!UICONTROL Adicionar coluna]** adiciona uma linha abaixo da linha selecionada.
 
-![add-delete-move-row-column](assets/add-delete-move-row-column.png)
+* O **[!UICONTROL Excluir coluna]** a operação exclui a linha selecionada.
+
+![add-delete-move-row-column](assets/add-delete-move-row.png)
+
+Clique duas vezes na linha para configurar as propriedades de uma linha, como Nome, Referência de associação, Configurações de repetição, Classe CSS.
+![add-delete-move-row-column](assets/row-properties-image.png)
+
+
+#### Adicionar ou excluir uma coluna
+
+Para adicionar ou excluir uma coluna, clique na célula de texto na seção do cabeçalho, uma barra de ferramentas abrirá com as opções para adicionar ou excluir uma coluna:
+
+![add-delete-move-row-column](assets/add-delet-column.png)
 
 >[!NOTE]
 >
->* Embora seja possível adicionar qualquer número de linhas em uma tabela, o número máximo de colunas que você pode adicionar é seis. Além disso, não é possível excluir a linha de cabeçalho da tabela.
->
->* A conversão automatizada de um formulário PDF para Formulário adaptável pode criar tabelas sem cabeçalhos. É possível adicionar e excluir colunas em tabelas sem cabeçalhos. Cabeçalhos ocultos são adicionados a essas tabelas para ajudá-lo a adicionar e excluir colunas. Esses cabeçalhos são visíveis durante a criação, mas permanecem ocultos no formulário publicado.
-
-
-
-
+>Embora seja possível adicionar qualquer número de linhas em uma tabela, o número máximo de colunas que você pode adicionar é seis. Além disso, não é possível excluir a linha de cabeçalho da tabela.
 
 ### Adicionar descrição da tabela {#add-table-description}
 
@@ -84,7 +85,7 @@ Você pode adicionar uma descrição da tabela para explicar como as informaçõ
 
 ### Classificar colunas em uma tabela {#sortcolumnstable}
 
-Você pode classificar dados com base em qualquer coluna em uma tabela no Formulário adaptável. Os valores na coluna podem ser classificados em ordem crescente ou decrescente.
+Você pode classificar dados com base em qualquer coluna em uma tabela no formulário adaptável. Os valores na coluna podem ser classificados em ordem crescente ou decrescente.
 
 A classificação pode ser aplicada às colunas da tabela contendo:
 
@@ -113,6 +114,14 @@ Para ativar a classificação:
 
    Também é possível fazer alterações na tabela no **Visualizar** e clique no cabeçalho da coluna novamente para classificar os valores da coluna.
 
+## Definir a largura da coluna para uma tabela {#set-column-width}
+
+Execute as seguintes etapas para definir a largura da coluna de uma tabela:
+
+1. No **[!UICONTROL Conteúdo]** toque na guia **[!UICONTROL Tabela]** e toque em Configurar (![Configurar](assets/configure-icon.svg))ícone.
+
+1. Insira a lista de valores separada por vírgulas no **[!UICONTROL Largura da coluna]** para especificar a largura proporcional de cada coluna na tabela. Por exemplo, para uma tabela que inclui 3 colunas, especificando 2,4,6 como o valor na variável **[!UICONTROL Largura da coluna]** O campo resulta na configuração da largura das colunas como 2/12 para a primeira coluna, 4/12 para a segunda coluna e 6/12 para a terceira coluna. 2/12 dado que a largura da primeira coluna corresponde a um sexto da largura da tabela. Da mesma forma, 4/12 define a largura da segunda coluna como um terço da largura da tabela e 6/12 define a largura da terceira coluna como metade da largura da tabela.
+
 ## Configurar estilo de tabela {#configure}
 
 Você pode definir o estilo de uma tabela usando o modo Estilo na barra de ferramentas da página. Execute as seguintes etapas para alternar para o modo de estilo e editar o estilo da tabela
@@ -126,7 +135,7 @@ Você pode ver as propriedades de estilo na barra lateral.
 
 >[!NOTE]
 >
->Você pode alterar o tema de cor para linhas de cabeçalho e de corpo alterando os valores das variáveis MENOS. Para obter mais informações, consulte [Temas em [!DNL AEM Forms]](themes.md)
+>Você pode alterar o tema de cor das linhas de cabeçalho e corpo alterando os valores de [MENOS variáveis](https://lesscss.org//). Para obter mais informações, consulte [Temas no AEM Forms](/help/forms/themes.md).
 
 ## Adicionar ou excluir uma linha dinamicamente {#add-or-delete-a-row-dynamically}
 
@@ -136,9 +145,9 @@ As tabelas fornecem suporte pronto para uso para adicionar ou excluir dinamicame
 1. Na guia Repetir configurações , especifique as contagens mínima e máxima para limitar o número de linhas na tabela.
 1. Clique em **Concluído**.
 
-No tempo de execução, você verá **+** e *-* botões para adicionar ou excluir uma linha.
+Em tempo de execução ou pré-visualização, você verá **+** e ![Botão Excluir](/help/forms/assets/Smock_Delete.svg) botões para adicionar ou excluir uma linha.
 
-![add-delete-rows-dynamically](assets/add-delete-rows-dynamically.png)
+![add-delete-rows-dynamically](assets/add-delete-layout.png)
 
 >[!NOTE]
 >
@@ -146,7 +155,7 @@ No tempo de execução, você verá **+** e *-* botões para adicionar ou exclui
 
 ## Expressões em uma tabela {#expressions-in-a-table}
 
-Tabelas no Adaptive Forms permitem gravar expressões no JavaScript para induzir comportamentos, como mostrar ou ocultar uma tabela ou linha, adicionar todos os números e mostrar o total em uma célula, ativar ou desativar uma célula, validar a entrada do usuário e assim por diante. Essas expressões usam APIs do modelo de script Adaptive Forms.
+Tabelas em formulários adaptáveis permitem gravar expressões em JavaScript para induzir comportamentos, como mostrar ou ocultar uma tabela ou linha, adicionar todos os números e mostrar o total em uma célula, ativar ou desativar uma célula, validar a entrada do usuário e assim por diante. Essas expressões usam APIs de modelo de script de formulários adaptáveis.
 
 Embora as tabelas e as linhas sejam compatíveis apenas com expressões de visibilidade para controlar sua visibilidade com base no valor retornado por uma expressão, as células são compatíveis com as seguintes expressões:
 
@@ -164,11 +173,11 @@ Embora as tabelas e as linhas sejam compatíveis apenas com expressões de visib
 
 A expressão de visibilidade de uma tabela ou linha pode ser definida na guia Propriedades do painel da caixa de diálogo correspondente do componente de edição. As expressões de uma célula podem ser definidas na guia Script da caixa de diálogo Editar componente .
 
-Para obter a lista completa de classes, eventos, objetos e APIs públicas do Adaptive Forms, consulte [Referência da API da biblioteca JavaScript para Adaptive Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
+Para obter a lista completa de classes de formulários adaptáveis, eventos, objetos e APIs públicas, consulte [Referência da API da biblioteca JavaScript para formulários adaptáveis](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 ## Layouts para dispositivos móveis {#mobile-layouts}
 
-As tabelas no Adaptive Forms fornecem experiências inigualáveis para dispositivos móveis devido a seus layouts fluidos e responsivos. [!DNL AEM Forms] O oferece dois tipos de layouts móveis para tabelas - Cabeçalhos à esquerda e Colapsíveis .
+Tabelas em formulários adaptáveis fornecem experiência inigualável em dispositivos móveis devido a seus layouts fluidos e responsivos. O AEM Forms oferece dois tipos de layouts móveis para tabelas - Cabeçalhos à esquerda e Colapsíveis.
 
 É possível configurar um layout móvel para uma tabela na guia Estilo da caixa de diálogo Editar componente para uma tabela.
 
@@ -204,7 +213,7 @@ Coluna expandida de uma tabela em um dispositivo móvel
 
 ## Mesclar dados em uma tabela {#merge-data-in-a-table}
 
-As tabelas no Adaptive Forms permitem preencher a tabela em tempo de execução usando dados de um arquivo XML. O arquivo XML de dados pode residir no sistema de arquivos local da máquina em que [!DNL AEM Forms] O servidor está em execução ou no repositório CRX.
+Tabelas em formulários adaptáveis permitem preencher a tabela em tempo de execução usando dados de um arquivo XML. O arquivo XML de dados pode residir no sistema de arquivos local da máquina em que o servidor AEM Forms está sendo executado ou no repositório CRX.
 
 Vamos ver o exemplo da seguinte tabela de resumo de transação bancária que queremos preencher com dados de um arquivo XML.
 
@@ -278,23 +287,23 @@ O arquivo XML que contém dados no seguinte formato:
 
 No XML de amostra, os dados de uma linha são definidos pela variável `<Row1>` tags , que é o nome do elemento para a linha na tabela. No `<Row1>` , os dados de cada célula são definidos dentro da tag para o nome do elemento, como `<tableItem1>`, `<tableItem2>`, `<tableItem3>`e `<type>`.
 
-Para mesclar esses dados com a tabela no tempo de execução, precisamos apontar o Formulário adaptável que contém a tabela para o local XML absoluto com wcmmode desabilitado. Por exemplo, se o formulário adaptável estiver em *https://`servername`/myForms/bankTransaction.html* e o arquivo XML de dados é salvo em *C:/myTransactions/bankSummary.xml*, é possível exibir a tabela com dados no seguinte URL:
+Para mesclar esses dados com a tabela no tempo de execução, precisamos apontar o formulário adaptável contendo a tabela para o local XML absoluto com wcmmode desabilitado. Por exemplo, se o formulário adaptável estiver em *https://localhost:4502/myForms/bankTransaction.html* e o arquivo XML de dados é salvo em *C:/myTransactions/bankSummary.xml*, é possível exibir a tabela com dados no seguinte URL:
 
-*https://`servername`/myForms/bankTransaction.html?dataRef=file:/// C:/myTransactions/bankSummary.xml&amp;wcmmode=disabled*
+*https://localhost:4502/myForms/bankTransaction.html?dataRef=file:/// C:/myTransactions/bankSummary.xml&amp;wcmmode=disabled*
 
 ![tabela unida por dados](assets/data-merged-table.png)
 
 ## Usar componentes XDP e tipos complexos XSD {#use-xdp-components-and-xsd-complex-types}
 
-Se você criou um formulário adaptável com base em um modelo de formulário XFA, os elementos XFA estarão disponíveis na guia Modelo de dados AEM Localizador de conteúdo. Você pode arrastar e soltar esses elementos XFA, incluindo tabelas, no Formulário adaptável.
+Se você criou um formulário adaptável com base em um modelo de formulário XFA, os elementos XFA estarão disponíveis na guia Modelo de dados AEM Localizador de conteúdo. Você pode arrastar e soltar esses elementos XFA, incluindo tabelas, no formulário adaptável.
 
-O elemento de tabela XFA é mapeado para o componente Tabela e funciona imediatamente no Adaptive Forms. Todas as propriedades e funcionalidades da tabela XDP são preservadas quando movidas para o Formulário adaptável, e você pode executar qualquer operação nela da mesma forma que faz com a tabela de Formulário adaptável nativa. Por exemplo, se uma linha em uma tabela XDP estiver marcada como repetível, ela também será repetida quando solta no Adaptive Forms.
+O elemento de tabela XFA é mapeado para o componente Tabela e funciona imediatamente em formulários adaptáveis. Todas as propriedades e funcionalidades da tabela XDP são preservadas quando movidas para um formulário adaptável, e você pode executar qualquer operação nela da mesma forma que faz com a tabela de formulário adaptável nativa. Por exemplo, se uma linha em uma tabela XDP estiver marcada como repetível, ela também será repetida quando solta em formulários adaptáveis.
 
 Além disso, é possível arrastar e soltar o subformulário XDP para adicionar uma nova linha na tabela. No entanto, observe que soltar um subformulário aninhado não funciona.
 
 >[!NOTE]
 >
->Uma tabela XDP sem uma linha de cabeçalho não será mapeada para o componente Tabela de formulário adaptável. Em vez disso, ele será mapeado para o componente Painel de formulário adaptável com layout fluido. Além disso, ao adicionar uma tabela aninhada de um XDP em um formulário adaptável, a tabela externa é convertida em um painel enquanto mantém a tabela interna.
+>Uma tabela XDP sem uma linha de cabeçalho não será mapeada para o componente de Tabela de formulário adaptável. Em vez disso, ele será mapeado para o componente de painel de formulário adaptável com layout fluido. Além disso, ao adicionar uma tabela aninhada de um XDP em um formulário adaptável, a tabela externa é convertida em um painel enquanto mantém a tabela interna.
 
 Além disso, você pode arrastar e soltar um grupo de elementos de tipo complexo XSD para criar uma linha de tabela. Uma nova linha é criada logo abaixo da linha na qual você soltou os elementos. As células criadas usando os elementos de tipo complexo XSD mantêm uma referência de vínculo com o XSD. Você também pode substituir uma célula de corpo por um elemento de tipo complexo XSD, soltando o elemento na célula.
 
@@ -307,7 +316,6 @@ Além disso, você pode arrastar e soltar um grupo de elementos de tipo complexo
 ## Principais considerações {#key-considerations}
 
 * Se você mover linhas para cima e para baixo durante a criação de uma tabela baseada em XSD, alguma perda de dados das linhas da tabela será vista no XML de dados gerado ao enviar o formulário.
-* Cada célula de corpo em uma tabela padrão tem um nome de elemento predefinido associado a ela. Se outra tabela for adicionada no Formulário adaptável, as células de corpo padrão na nova tabela terão o mesmo nome de elemento que na primeira tabela. Nesse cenário, os dados gerados ao enviar o formulário incluirão dados nas células de corpo padrão de apenas uma das tabelas. Portanto, renomeie os nomes de elemento das células de corpo padrão para mantê-las exclusivas nas tabelas e evitar perda de dados.
+* Cada célula de corpo em uma tabela padrão tem um nome de elemento predefinido associado a ela. Se outra tabela for adicionada no formulário adaptável, as células de corpo padrão na nova tabela terão o mesmo nome de elemento que na primeira tabela. Nesse cenário, os dados gerados ao enviar o formulário incluirão dados nas células de corpo padrão de apenas uma das tabelas. Portanto, renomeie os nomes de elemento das células de corpo padrão para mantê-las exclusivas nas tabelas e evitar perda de dados.
 
    Observe que isso se aplica somente às células de corpo padrão. Se você adicionar mais linhas ou colunas a uma tabela, o gerará automaticamente nomes de elemento exclusivos para células de corpo não padrão.
-
