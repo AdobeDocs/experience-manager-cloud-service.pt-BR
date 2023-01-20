@@ -3,9 +3,9 @@ title: O que é diferente e quais são as novidades - Adobe Experience Manager a
 description: O que é diferente e quais são as novidades - Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
 source-git-commit: 575be022704e998e63162f19c37ece877efef627
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1903'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -67,23 +67,23 @@ Isso permite o dimensionamento automático para vários padrões de uso:
 
 ## Atualizações do AEM {#aem-updates}
 
-AEM as a Cloud Service agora usa integração contínua e entrega contínua (CI/CD) para garantir que seus projetos estejam na versão de AEM mais recente. Isso significa que as instâncias de produção e de preparo são atualizadas para a versão de AEM mais recente, sem interrupção do serviço para os usuários.
+O AEM as a Cloud Service agora usa a integração/entrega contínua (CI/CD) para garantir que seus projetos estejam sempre na versão do AEM mais recente. Isso significa que as instâncias de preparo e produção são atualizadas para a versão mais recente do AEM sem interrupção do serviço para os usuários.
 
 >[!NOTE]
 >
->Se a atualização para o ambiente de produção falhar, o Cloud Manager reverterá automaticamente o ambiente de preparo. Isso é feito automaticamente para garantir que, após a conclusão de uma atualização, os ambientes de preparo e produção estejam na mesma versão AEM.
+>Se a atualização para o ambiente de produção falhar, o Cloud Manager reverterá automaticamente o ambiente de preparo. Isso é feito automaticamente para garantir que, após a conclusão de uma atualização, os ambientes de preparo e de produção estejam na mesma versão do AEM.
 
-Há dois tipos de atualizações de versão AEM:
+Há dois tipos de atualizações de versão do AEM:
 
-* **Atualizações de manutenção de AEM**
+* **Atualizações de manutenção do AEM**
 
    * Pode ser lançado diariamente.
    * Elas são utilizadas principalmente para fins de manutenção, incluindo as correções de erros e atualizações de segurança mais recentes.
-   * Ter um impacto mínimo, uma vez que as alterações são aplicadas regularmente.
+   * Têm um impacto mínimo, uma vez que as alterações são aplicadas regularmente.
 
 * **Novas atualizações de recursos**
 
-   * São liberados por meio de uma programação mensal previsível.
+   * Elas são liberadas em um cronograma mensal previsível.
 
 >[!TIP]
 >
