@@ -3,9 +3,9 @@ title: Editar conteúdo da página
 description: Uma vez que a sua página é criada, você poderá editar o conteúdo para fazer atualizações necessárias
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
 source-git-commit: 2bfabfc2c12faf6f813ecd5b11b289117724d9ec
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3019'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -468,9 +468,9 @@ Uma vez bloqueadas, as informações de exibição do console são atualizadas e
 >
 >O bloqueio de uma página pode ser executado quando se representa um usuário. No entanto, uma página bloqueada dessa maneira só pode ser desbloqueada (por clientes) usando o usuário que foi representado.
 >
->As páginas não podem ser desbloqueadas representando o usuário que as bloqueou.
+>Páginas não podem ser desbloqueadas representando o usuário que as bloqueou.
 >
->Se o usuário que bloqueou a página não estiver disponível para desbloquear a página, entre em contato com o Suporte ao cliente para avaliar as opções para remover o bloqueio.
+>Se o usuário que bloqueou a página não estiver disponível para desbloqueá-la, entre em contato com o Suporte ao cliente para avaliar as opções para remover o bloqueio.
 
 ## Desbloquear uma página {#unlocking-a-page}
 
@@ -484,9 +484,9 @@ O menu de Informações da página lista **Desbloquear** como uma opção, e o �
 >
 >O bloqueio de uma página pode ser executado quando se representa um usuário. No entanto, uma página bloqueada dessa maneira só pode ser desbloqueada (por clientes) usando o usuário que foi representado.
 >
->As páginas não podem ser desbloqueadas representando o usuário que as bloqueou.
+>Páginas não podem ser desbloqueadas representando o usuário que as bloqueou.
 >
->Se o usuário que bloqueou a página não estiver disponível para desbloquear a página, entre em contato com o Suporte ao cliente para avaliar as opções para remover o bloqueio.
+>Se o usuário que bloqueou a página não estiver disponível para desbloqueá-la, entre em contato com o Suporte ao cliente para avaliar as opções para remover o bloqueio.
 
 <!--
 >[!CAUTION]
