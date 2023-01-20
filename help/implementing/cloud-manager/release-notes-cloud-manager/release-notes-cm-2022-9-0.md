@@ -1,18 +1,18 @@
 ---
 title: Notas de versão do Cloud Manager 2022.9.0 no Adobe Experience Manager as a Cloud Service
-description: Estas são as notas de versão do Cloud Manager 2022.9.0 em AEM as a Cloud Service.
+description: Estas são as notas de versão do Cloud Manager 2022.9.0 no AEM as a Cloud Service.
 feature: Release Information
-source-git-commit: 115c98b207d3dea89cbeb3dbc8559a81efefe461
-workflow-type: tm+mt
+exl-id: d61ef0fe-f632-4222-bb7b-10a337010942
+source-git-commit: 83e49215eff975300f263dcf0215081b02260e70
+workflow-type: ht
 source-wordcount: '220'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
-
 # Notas de versão do Cloud Manager 2022.9.0 no Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Esta página documenta as notas de versão do Cloud Manager 2022.9.0 AEM as a Cloud Service.
+Esta página documenta as notas de versão do Cloud Manager 2022.9.0 no AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -20,16 +20,16 @@ Esta página documenta as notas de versão do Cloud Manager 2022.9.0 AEM as a Cl
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento da versão 2022.9.0 do Cloud Manager AEM as a Cloud Service é 8 de setembro de 2022. A próxima versão está prevista para 6 de outubro de 2022.
+A data de lançamento do Cloud Manager versão 2022.9.0 no AEM as a Cloud Service é 8 de setembro de 2022. A próxima versão está planejada para 6 de outubro de 2022.
 
 ## Novidades {#what-is-new}
 
-* Os Guias de AEM agora podem ser configurados de maneira automatizada em programas de sandbox.
+* O AEM Guides agora pode ser configurado na forma de autoatendimento em programas de sandbox.
 * Clientes sem nenhuma função do Cloud Manager não poderão acessar os detalhes do programa. No entanto, eles podem navegar até os pontos de extremidade do autor nas páginas de aterrissagem do Cloud Manager.
-* Os clientes podem configurar **Notificação de incidente e proativa** grupos para ouvir o Adobe sobre incidentes ou recomendações relacionados ao aplicativo AEMaaCS. Consulte [Grupo de usuários para notificações](/help/journey-onboarding/user-groups.md) para obter mais detalhes.
-* A adição da disponibilidade do Programa na interface do usuário fornecerá, de forma consistente, dicas de ferramentas quando estiver desativada devido a motivos relacionados à permissão ou direito.
+* Os clientes podem configurar grupos de **Incidentes e Notificações proativas** para ouvir da Adobe sobre incidentes ou recomendações relacionados ao aplicativo AEMaaCS. Consulte [Grupo de usuários para notificações](/help/journey-onboarding/user-groups.md) para obter mais detalhes.
+* A funcionalidade Adicionar programa na interface fornecerá consistentemente dicas de ferramentas quando estiver desativada devido a motivos relacionados à permissão ou direitos.
 
 ## Correções de erros {#bug-fixes}
 
 * O fluxo de trabalho Adicionar ambiente inclui validações adicionais para garantir um resultado bem-sucedido.
-* Feedback do cliente aprimorado relacionado à criação do aplicativo de AEM do cliente quando o Maven enfrenta problemas de conectividade com acordos de recompra privados.
+* Feedback aprimorado do cliente relacionado à build do aplicativo AEM do cliente quando o maven enfrenta problemas de conectividade com repositórios privados.
