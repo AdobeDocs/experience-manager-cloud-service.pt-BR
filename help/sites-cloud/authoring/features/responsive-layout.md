@@ -3,9 +3,9 @@ title: Layout responsivo
 description: O AEM permite que você crie um layout responsivo para suas páginas
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1766'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Este componente fornece um sistema de parágrafo que permite posicionar os compo
 O contêiner de layout:
 
 * Fornece encaixe horizontal na grade, em conjunto com a capacidade de posicionar os componentes lado a lado na grade e definir quando devem se recolher/refluir.
-* Usa pontos de interrupção predefinidos (por exemplo, para telefone, tablet etc.) para permitir que você defina o comportamento obrigatório do conteúdo para dispositivos/orientações relacionados.
+* Usa pontos de interrupção predefinidos (por exemplo para telefone, tablet etc.) para permitir que você defina o comportamento obrigatório do conteúdo para dispositivos/orientações relacionados.
    * Por exemplo, você pode personalizar o tamanho do componente ou se o componente pode ser visto em dispositivos específicos.
 * Podem ser aninhados para permitir o controle da coluna.
 
