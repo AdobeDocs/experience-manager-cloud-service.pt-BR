@@ -3,9 +3,9 @@ title: Exportar fragmentos de experiência para o Adobe Target
 description: Exportar fragmentos de experiência para o Adobe Target
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
 source-git-commit: d3b2b779b2b435309255e7a4f7957a94be520b34
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2249'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -128,7 +128,7 @@ As opções necessárias podem ser selecionadas nas **Propriedades de página** 
 >
 >Adicionar uma nova configuração herdada é um cenário de caso especial, permitido apenas na exportação de fragmentos de experiência.
 
-Depois de [adicionar a Configuração da nuvem](#add-the-cloud-configuration) para usar a Launch by Adobe para integrar inicialmente o AEM com o Adobe Target, também é necessário integrar manualmente ao Adobe Target usando uma configuração herdada.
+Depois de [adicionar a Configuração da nuvem](#add-the-cloud-configuration) para usar a Experience Platform Launch para integrar inicialmente o AEM com o Adobe Target, também é necessário integrar manualmente ao Adobe Target usando uma configuração herdada.
 
 ### Criação de uma configuração da nuvem do Target {#creating-a-target-cloud-configuration}
 
