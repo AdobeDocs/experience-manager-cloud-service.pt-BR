@@ -1,13 +1,13 @@
 ---
 title: Fragmentos de conteúdo — Navegador de configuração
-description: Saiba como ativar a funcionalidade de Fragmento de conteúdo e GraphQL no Navegador de configuração para aproveitar AEM recursos de entrega sem interface.
+description: Saiba como ativar a funcionalidade de Fragmento de conteúdo e GraphQL no Navegador de configuração para aproveitar recursos de entrega headless AEM.
 feature: Content Fragments
 role: User
 exl-id: 55d442ae-ae06-4dfa-8e4e-b415385ccea5
 source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '365'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
