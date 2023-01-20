@@ -3,9 +3,9 @@ title: Regulamentos de proteção e privacidade de dados - Disponibilidade do Ad
 description: Saiba mais sobre o suporte do Adobe Experience Manager as a Cloud Service para os vários Regulamentos de proteção e privacidade de dados; incluindo o Regulamento Geral sobre a Proteção de Dados da UE (GDPR), a Lei de Privacidade do Consumidor da Califórnia, e como cumpri-las ao implementar um novo projeto AEM as a Cloud Service.
 exl-id: 5dfa353b-84c5-4b07-bfcd-b03c2d361553
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '730'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ A Adobe está fornecendo documentação e procedimentos (com APIs, quando dispon
 >
 >Dados de outro Serviço sob demanda do Adobe, juntamente com quaisquer solicitações de privacidade relacionadas, exigirão que ações sejam tomadas nesse serviço.
 >
->Para mais informações, consulte o [Centro de privacidade da Adobe](https://www.adobe.com/privacy.html).
+>Para mais informações, consulte o [Centro de privacidade da Adobe](https://www.adobe.com/br/privacy.html).
 
 ## Introdução {#introduction}
 
@@ -91,7 +91,7 @@ Consulte [Disponibilidade do AEM Sites para Regulamentos de proteção e privaci
 
 ## Integração do Adobe Experience Manager as a Cloud Service com o Adobe Target e o Adobe Analytics {#aem-integration-with-adobe-target-adobe-analytics}
 
-Essas integrações do Adobe Experience Manager as a Cloud Service estão com serviços prontos para proteção de dados e privacidade (por exemplo, GDPR). Nenhum dado pessoal do Adobe Target ou Adobe Analytics é armazenado no AEM em relação às integrações.
+Essas integrações do Adobe Experience Manager as a Cloud Service já incluem os serviços prontos de proteção e privacidade de dados (por exemplo, GDPR). Nenhum dado pessoal do Adobe Target ou Adobe Analytics é armazenado no AEM em relação às integrações.
 Para obter mais informações, consulte:
 
 * [Adobe Target - Visão geral sobre a privacidade](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/privacy/privacy.html?lang=pt-BR)
