@@ -3,9 +3,9 @@ title: Atalhos de teclado para edição de página
 description: Vários atalhos do teclado estão disponíveis em todo o AEM, inclusive alguns para edição de páginas
 exl-id: 6c501897-48f9-478a-b143-d3ad19643b8c
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '238'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns são aplic�
 
 | Local | Atalho | Descrição |
 |---|---|---|
-| Qualquer modo de Editar janela | `Ctrl-Shift-m` | Alternar entre **Visualizar** e os [modo](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)</a> (por exemplo, **Editar**, **Layout** etc)* |
+| Qualquer modo de Editar janela | `Ctrl-Shift-m` | Alternar entre a **Visualização** e o [modo](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)</a> selecionado atualmente (por exemplo, **Editar**, **Layout** etc.)* |
 | Modo de **Edição** | `Ctrl-z` | [Desfazer a última alteração](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-y` | [Refazer a última alteração](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | Selecionar parágrafos múltiplos |
