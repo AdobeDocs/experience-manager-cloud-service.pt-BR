@@ -3,9 +3,9 @@ title: Introdução aos programas de sandbox
 description: Saiba o que são programas de sandbox e como se diferem dos programas de produção.
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '438'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ Domínios personalizados e listas de permissões IP não estão disponíveis em 
 
 ### Sem rede avançada {#advanced-networking}
 
-[Recursos avançados de rede](/help/security/configuring-advanced-networking.md) (por exemplo, provisionamento de autoatendimento de VPN, portas não padrão, endereços IP de saída dedicados etc.) não estão disponíveis em programas de sandbox.
+[Recursos avançados de rede](/help/security/configuring-advanced-networking.md) (por exemplo, provisionamento de VPNs via autoatendimento, portas não padrão, endereços IP de saída dedicados etc.) não estão disponíveis em programas de sandbox.
 
 ### Atualizações manuais do AEM {#updates}
 
