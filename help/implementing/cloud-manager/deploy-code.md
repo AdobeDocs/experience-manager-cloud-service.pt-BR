@@ -3,9 +3,9 @@ title: Implantação de código
 description: Saiba como implantar seu código usando os pipelines do Cloud Manager no AEM as a Cloud Service.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 source-git-commit: 14395cf97b23896e929e215e7e0b9e33620637eb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1221'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ O processo de compilação implanta o código pelas três fases.
 
 A fase de **Implantação em preparo** envolve estas etapas.
 
-* **Validação** - Essa etapa garante que o pipeline esteja configurado para usar os recursos disponíveis no momento. por exemplo, teste se a ramificação configurada existe e se os ambientes estão disponíveis.
+* **Validação** - Essa etapa garante que o pipeline esteja configurado para usar os recursos disponíveis no momento. por exemplo, testar se a ramificação configurada existe e se os ambientes estão disponíveis.
 * **Teste de compilação e unidade** - Essa etapa executa um processo de compilação contido.
    * Consulte o documento [Detalhes do ambiente de compilação](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) para obter detalhes sobre o ambiente de compilação.
 * **Verificação do código Scanning** - Essa etapa avalia a qualidade do código do seu aplicativo.
