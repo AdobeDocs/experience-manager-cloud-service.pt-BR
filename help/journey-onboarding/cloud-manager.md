@@ -4,9 +4,9 @@ description: Saiba como acessar o Cloud Manager para poder configurar os recurso
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
 source-git-commit: 69ac8e444a0f22649b48ec25b549ad60858f8b1b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1055'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -134,4 +134,4 @@ Acesse os recursos adicionais para saber mais sobre:
 
 * [Introdução ao Cloud Manager](/help/onboarding/cloud-manager-introduction.md) -
 Saiba mais sobre o Cloud Manager e seus programas e ambientes.
-* [AEM equipe as a Cloud Service e perfis de produto](/help/onboarding/aem-cs-team-product-profiles.md) - Saiba como AEM equipe as a Cloud Service e os perfis de produto podem conceder e limitar o acesso às soluções de Adobe licenciadas.
+* [Perfis de produto e de equipe do AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md) - Saiba como os perfis de produto e de equipe do AEM as a Cloud Service podem conceder e limitar o acesso às soluções licenciadas da Adobe.
