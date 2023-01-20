@@ -3,9 +3,9 @@ title: Manuseio básico
 description: Familiarize-se com navegação pelo AEM e seu uso básico
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2994'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -71,7 +71,7 @@ Em Navegação, os consoles disponíveis são:
 | Projetos | O console Projetos concede acesso direto aos projetos. [Projetos são painéis virtuais](/help/sites-cloud/authoring/projects/overview.md) que podem ser usados para criar uma equipe. Você pode conceder a essa equipe acesso a recursos, fluxos de trabalho e tarefas, permitindo que as pessoas trabalhem por um objetivo comum. |
 | Sites | O console Sites permite [criar, exibir e gerenciar sites](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) em execução na sua instância do AEM. Por meio desse console, você pode criar, copiar, mover e excluir páginas, iniciar fluxos de trabalho e publicar páginas. |
 | Fragmentos de experiência | Um [Fragmento de experiência](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) é uma experiência independente que pode ser reutilizada em vários canais e que apresenta variações, evitando o trabalho de copiar e colar repetidamente as experiências ou partes das experiências. |
-| Ativos | O console de Ativos permite importar e gerenciar [ativos digitais como imagens, vídeos, documentos e arquivos de áudio.](/help/assets/overview.md) Esses ativos podem ser usados por um site em execução na mesma instância do AEM. Também é possível criar e gerenciar [Fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md) no console de Ativos. |
+| Ativos | O console de Ativos permite importar e gerenciar [ativos digitais como imagens, vídeos, documentos e arquivos de áudio. ](/help/assets/overview.md) Esses ativos podem ser usados por um site em execução na mesma instância do AEM. Também é possível criar e gerenciar [Fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md) no console de Ativos. |
 | Personalização | Esse console fornece uma estrutura de ferramentas para a [criação de conteúdo direcionado e a apresentação de experiências personalizadas.](/help/sites-cloud/authoring/personalization/overview.md) |
 | Fragmentos de conteúdo | [Os fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments.md) permitem projetar, criar, preparar e publicar conteúdo independente de página. Eles permitem preparar conteúdo estruturado pronto para uso em vários locais/canais e são ideais para a criação de páginas e entrega headless. |
 
