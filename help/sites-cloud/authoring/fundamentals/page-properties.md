@@ -3,7 +3,7 @@ title: Editar as propriedades da página
 description: Defina as propriedades desejadas para uma página
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 source-git-commit: 6e4919e73ef3efdfc64174a1babab084596aba48
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1975'
 ht-degree: 100%
 
@@ -145,7 +145,7 @@ Configurar a miniatura de página
 
 * **Compartilhamento em rede social**
 
-   Define as opções de compartilhamento disponíveis na página. Expõe as opções disponíveis para o [Componente de compartilhamento principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/sharing.html?lang=pt_BR).
+   Define as opções de compartilhamento disponíveis na página. Expõe as opções disponíveis para o [Componente de compartilhamento principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/sharing.html?lang=pt-BR).
 
    * **Permitir o compartilhamento de usuário para Facebook**
    * **Permitir o compartilhamento de usuário para Pinterest**
