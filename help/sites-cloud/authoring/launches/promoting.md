@@ -3,9 +3,9 @@ title: Promoção de inicializações
 description: Você precisa promover as páginas de lançamento para retornar o conteúdo à fonte (produção) antes de publicar.
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '818'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ Você precisa promover as páginas de lançamento para retornar o conteúdo à f
 1. Abrir:
    * O console do **Sites** ao navegar pelas páginas de origem:
       1. Abra o [painel de referências](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) e selecione a página de origem desejada usando o [modo de seleção](/help/sites-cloud/authoring/getting-started/basic-handling.md) (ou selecione e abra o painel de referências; a ordem não é importante). Todas as referências serão exibidas.
-      1. Selecionar **Lançamentos** (por exemplo, Lançamentos (1)) para mostrar uma lista de lançamentos específica.
+      1. Selecione **Lançamentos** (por exemplo, Lançamentos [1]) para exibir uma lista de lançamentos específica.
       1. Selecione o lançamento específico para mostrar as ações disponíveis.
       1. Selecione **Promover lançamento** para abrir o assistente.
    * O console do **Sites** ao navegar pelas páginas de inicialização:
