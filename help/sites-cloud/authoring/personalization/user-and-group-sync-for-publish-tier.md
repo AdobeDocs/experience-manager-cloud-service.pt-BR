@@ -3,9 +3,9 @@ title: Registro, logon e perfil do usuário
 description: Saiba mais sobre registro, logon, dados do usuário e sincronização de grupos no AEM as a Cloud Service
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
 source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1174'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ Depois que um usuário final é registrado no serviço de publicação do AEM, e
 
 O logon pode ser implementado com as duas abordagens a seguir:
 
-### AEM gerenciado {#aem-managed-implementation}
+### AEM Managed {#aem-managed-implementation}
 
 Os clientes podem gravar seus próprios componentes personalizados. Para saber mais, familiarize-se com:
 
