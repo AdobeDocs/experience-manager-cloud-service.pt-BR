@@ -1,18 +1,18 @@
 ---
 title: Notas de versão do Cloud Manager 2022.10.0 no Adobe Experience Manager as a Cloud Service
-description: Estas são as notas de versão do Cloud Manager 2022.10.0 em AEM as a Cloud Service.
+description: Estas são as notas de versão do Cloud Manager 2022.10.0 no AEM as a Cloud Service.
 feature: Release Information
-source-git-commit: 435d42e750f868970bed8f6b3f30a2762c5ce395
-workflow-type: tm+mt
+exl-id: 2e502ead-8515-4594-becc-caa207643a36
+source-git-commit: 83e49215eff975300f263dcf0215081b02260e70
+workflow-type: ht
 source-wordcount: '207'
-ht-degree: 6%
+ht-degree: 100%
 
 ---
 
-
 # Notas de versão do Cloud Manager 2022.10.0 no Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Esta página documenta as notas de versão do Cloud Manager 2022.10.0 AEM as a Cloud Service.
+Esta página documenta as notas de versão do Cloud Manager 2022.10.0 no AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -20,15 +20,15 @@ Esta página documenta as notas de versão do Cloud Manager 2022.10.0 AEM as a C
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento da versão 2022.10.0 do Cloud Manager AEM as a Cloud Service é 6 de outubro de 2022. A próxima versão está planejada para 3 de novembro de 2022.
+A data de lançamento do Cloud Manager versão 2022.10.0 no AEM as a Cloud Service é 6 de outubro de 2022. A próxima versão está planejada para 3 de novembro de 2022.
 
 ## Novidades {#what-is-new}
 
-* A versão do [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR) usado pelo Cloud Manager foi atualizado para a versão 39.
-* A interface do usuário do painel de licença agora informará os usuários se um programa do Sites estiver configurado com um CDN além AEM as a Cloud Service.
+* A versão do [Arquétipo de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR) usada pelo Cloud Manager foi atualizada para a versão 39.
+* A interface do painel de licença agora informará aos usuários se um programa do Sites estiver configurado com um CDN além do AEM as a Cloud Service.
 
 ## Correções de erros {#bug-fixes}
 
-* Foi corrigida uma situação em que os usuários com letras maiúsculas em seu endereço de email não podiam ser adicionados a uma subconta New Relic no Cloud Manager.
+* Foi corrigida uma situação em que os usuários com letras maiúsculas em seu endereço de email não podiam ser adicionados a uma nova subconta Relic no Cloud Manager.
 * A solução do Screens agora é exibida se houver várias soluções no programa.
 * Correção de uma situação em que a execução do pipeline de front-end não era iniciada quando o ambiente tinha o status ATUALIZANDO.
