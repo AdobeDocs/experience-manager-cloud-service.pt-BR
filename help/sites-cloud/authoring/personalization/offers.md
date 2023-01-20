@@ -1,61 +1,61 @@
 ---
 title: Criação e gerenciamento de ofertas (console Ofertas)
-description: Use o console Ofertas para criar ofertas que você pode usar em experiências de atividades
+description: Use o console Ofertas para criar ofertas que você possa usar em experiências de atividades
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
 source-git-commit: ca389013fd1e703e7decd1aae968589b12a43489
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1393'
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
-# Criação e gerenciamento de ofertas (Console Ofertas) {#creating-and-managing-offers}
+# Criação e gerenciamento de ofertas (Console de Ofertas) {#creating-and-managing-offers}
 
-O **Ofertas** O console será descontinuado no futuro. Então, a partir de agora, é:
+O console de **Ofertas** será descontinuado no futuro. Então, a partir de agora, é:
 
-* Disponível somente para clientes que têm *legado* ofertas já definidas (ou seja, pré-existentes)
+* Disponível somente para clientes que têm ofertas *herdadas* já definidas (ou seja, pré-existentes)
 * Recomendado que qualquer oferta herdada seja convertida em ofertas de fragmento de experiência
-   * Assim que a última oferta herdada for convertida/removida, a variável **Ofertas** O console não estará mais disponível.
+   * Assim que a última oferta herdada for convertida/removida, o console de **Ofertas** não estará mais disponível.
 
 ![Consoles de personalização](/help/sites-cloud/authoring/assets/offers-consoles.png)
 
 >[!NOTE]
 >
->Os clientes que têm ofertas herdadas pré-existentes ainda podem usar o **Ofertas** para ver as ofertas existentes e criar novas ofertas herdadas.
+>Os clientes que têm ofertas herdadas pré-existentes ainda podem usar o console de **Ofertas** para ver as ofertas existentes e criar novas ofertas herdadas.
 >
->Os clientes sem ofertas herdadas pré-existentes não verão a variável **Ofertas** console.
+>Os clientes sem ofertas herdadas pré-existentes não verão o console de **Ofertas**.
 >
->Todos os clientes podem usar **Ofertas de fragmentos de experiência** para criar e gerenciar ofertas.
+>Todos os clientes podem usar as **Ofertas de fragmentos de experiência** para criar e gerenciar ofertas.
 
 ## Conversão de uma oferta herdada em um fragmento de experiência {#convert-legacy-offer-to-experience-fragment}
 
-A **Converter em variação de fragmento de experiência** A opção e o fluxo de trabalho foram implementados para ajudá-lo a converter sua oferta herdada em um Fragmento de experiência:
+A opção **Converter em variação de fragmento de experiência** e o fluxo de trabalho foram implementados para ajudá-lo a converter sua oferta herdada em um Fragmento de experiência:
 
 >[!NOTE]
 >
->Esse é o fluxo de trabalho recomendado para converter ofertas herdadas em fragmentos de experiência.
+>Este é o fluxo de trabalho recomendado para converter ofertas herdadas em fragmentos de experiência.
 
 >[!NOTE]
 >
->Você também pode criar um novo Fragmento de experiência, transferir manualmente o conteúdo da oferta herdada para o fragmento e, em seguida, excluir a oferta herdada.
+>Você mesmo também pode criar um novo Fragmento de experiência, transferir manualmente o conteúdo da oferta herdada para o fragmento e, em seguida, excluir a oferta herdada.
 
 >[!CAUTION]
 >
->O **Converter em variação de fragmento de experiência** está disponível para todos os Componentes principais.
+>A opção **Converter em variação de fragmento de experiência** está disponível para todos os Componentes principais.
 >
->Essa opção não será compatível com componentes personalizados. Para esses componentes, você deve converter manualmente o conteúdo em um fragmento de experiência.
+>Esta opção não será compatível com componentes personalizados. Para esses componentes, você deve converter manualmente o conteúdo em um fragmento de experiência.
 
 >[!CAUTION]
 >
 >Assim que a última oferta herdada for convertida/removida:
 >
->* O **Ofertas** O console não estará mais disponível.
->* O ícone de destino na barra de ferramentas de qualquer outro componente afetado não será mais exibido.
+>* O console de **Ofertas** não estará mais disponível.
+>* O ícone de direcionamento na barra de ferramentas de qualquer outro componente afetado não será mais exibido.
 
 
 1. Abra uma página que contenha a oferta para edição.
 
-1. Mudar para **Direcionamento** para essa página.
+1. Mudar para o modo **Direcionamento** para essa página.
 
 1. Selecione **Iniciar o direcionamento**.
 
@@ -65,19 +65,19 @@ A **Converter em variação de fragmento de experiência** A opção e o fluxo d
 
    ![Conversão da oferta herdada em Fragmento de experiência](/help/sites-cloud/authoring/assets/offers-convert-legacy-icon.png)
 
-1. Uma caixa de diálogo será exibida. Aqui você pode selecionar o **Ação**:
+1. Uma caixa de diálogo será exibida. Aqui você pode selecionar a **Ação**:
 
    * Criar novo Fragmento de experiência
-   * Adicionar o conteúdo a um Fragmento de experiência existente
+   * Adicionar conteúdo a um fragmento de experiência existente
 
-   Para este cenário, selecione **Criar um novo fragmento de experiência**.
+   Para este cenário, selecione **Criar um novo Fragmento de experiência**.
 
-   ![Caixa de diálogo Converter em variação de fragmento de experiência](/help/sites-cloud/authoring/assets/offers-convert-dialog.png)
+   ![Converter para diálogo da variação do Fragmento da experiência](/help/sites-cloud/authoring/assets/offers-convert-dialog.png)
 
 1. Preencha os campos obrigatórios na caixa de diálogo:
 
-   * **Caminho pai**
-Especificar o caminho pai do novo fragmento de experiência
+   * **Caminho principal**
+Especificar o caminho principal do novo fragmento de experiência
    * **Modelo**
 Selecione o modelo a ser usado para criar o fragmento de experiência.
    * **Título do fragmento**
@@ -87,32 +87,32 @@ Adicione tags, se necessário.
 
 1. Confirme com **Concluído**.
 
-   Agora, você pode navegar até a **Ofertas de fragmento de experiência** , você verá seu novo fragmento de experiência, juntamente com suas variações associadas.
+   Agora, ao navegar até o console **Ofertas de Fragmento de experiência**, você verá seu novo fragmento de experiência, juntamente com suas variações associadas.
 
 ### Direcionamento com o modelo de ofertas {#targeting-offers-template}
 
 >[!CAUTION]
 >
->Essa opção só está disponível para clientes com ofertas herdadas pré-existentes.
+>Esta opção só está disponível para clientes com ofertas herdadas pré-existentes.
 >
->Como com o **Ofertas** O console também não estará mais disponível:
+>Como no console de **Ofertas**, também não estará mais disponível:
 >
 >* depois que a última oferta herdada for convertida em Fragmentos de experiência
 >* quando as ofertas herdadas estiverem obsoletas (no futuro)
 >
->Portanto, a opção recomendada é usar Fragmentos de experiência, não essa opção.
+>Portanto, a opção recomendada é usar Fragmentos de experiência, não esta opção.
 
-Para clientes com ofertas herdadas pré-existentes, a variável **Usar modelo de oferta** opções estarão visíveis ao direcionar componentes que **not** Fragmentos de experiência:
+Para clientes com ofertas herdadas pré-existentes, as opções **Usar modelo de oferta** estarão visíveis ao direcionar componentes que **não** são Fragmentos de experiência:
 
-![Caixa de diálogo Converter em variação de fragmento de experiência](/help/sites-cloud/authoring/assets/offers-legacy-target-non-experience-fragment.png)
+![Converter em diálogo de variação de Fragmento de experiência](/help/sites-cloud/authoring/assets/offers-legacy-target-non-experience-fragment.png)
 
-## O console Ofertas {#offers-console}
+## O console de Ofertas {#offers-console}
 
 >[!CAUTION]
 >
->Esse console está sendo descontinuado no futuro, pois oferece uma maneira herdada de personalizar o conteúdo.
+>Este console será descontinuado no futuro, pois oferece uma maneira herdada de personalizar o conteúdo.
 >
->Você tem tempo para se preparar. Veja como [converter as ofertas herdadas existentes em uma oferta de fragmento de experiência](#convert-legacy-offer-to-experience-fragment).
+>Você tem tempo para se preparar. Veja como [converter as ofertas legadas existentes em uma oferta de fragmento de experiência](#convert-legacy-offer-to-experience-fragment).
 
 Use o console Ofertas para criar ofertas que você pode [usar em experiências de atividades](/help/sites-cloud/authoring/personalization/targeted-content.md). A criação de ofertas no console Ofertas poupa tempo quando várias experiências exigem a mesma oferta:
 
