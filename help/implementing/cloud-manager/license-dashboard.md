@@ -3,9 +3,9 @@ title: Painel de licenças
 description: O Cloud Manager fornece um painel para facilitar a visualização dos direitos de produto do AEMaaCS disponíveis para sua organização ou locatário.
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 source-git-commit: b5078c849c9fa088546f5df1fcbef1dec59f3cdb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '876'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ Cada seção resume o que está disponível e como é usado no momento, se for o
 
 ### O que é uma solicitação de conteúdo? {#what-is-a-content-request}
 
-Uma solicitação de conteúdo é uma solicitação que entra no AEM Sites ou em qualquer sistema de cache fornecido pelo cliente, como uma rede de entrega de conteúdo para fornecer conteúdo ou dados no formato HTML como uma exibição de página ou no formato JSON como uma chamada de API.
+Uma solicitação de conteúdo é uma solicitação recebida no AEM Sites ou em qualquer sistema de cache fornecido pelo cliente, como por exemplo, uma rede de entrega de conteúdo, para fornecer conteúdo ou dados no formato HTML como uma exibição de página ou no formato JSON como uma chamada de API.
 
 Uma solicitação de conteúdo é contabilizada para cada exibição de página ou para cada cinco chamadas de API, medidas na entrada do primeiro sistema de cache a receber uma solicitação de conteúdo. As solicitações de conteúdo são contabilizadas somente em ambientes de produção.
 
@@ -63,7 +63,7 @@ As solicitações de conteúdo excluem solicitações ou atividades iniciadas pe
 
 ### Como o Adobe Experience Manager mede as solicitações de conteúdo? {#how-are-content-requests-measured}
 
-As solicitações de conteúdo são rastreadas nos servidores de borda AEM as a Cloud Service. O tráfego de origem não é contabilizado nas solicitações de conteúdo. A CDN incorporada AEM rastreia solicitações HTML e JSON válidas.
+As solicitações de conteúdo são rastreadas nos servidores de borda do AEM as a Cloud Service. O tráfego de origem não é contabilizado nas solicitações de conteúdo. O CDN incorporado ao AEM as a Cloud Service rastreia solicitações HTML e JSON válidas.
 
 O AEM também tem regras em vigor para excluir bots conhecidos, incluindo serviços conhecidos que acessam o site regularmente para atualizar seu índice de pesquisa ou serviço.
 
@@ -85,8 +85,8 @@ As solicitações de conteúdo terão variações entre as ferramentas de relat�
 
 ### E se eu quiser saber mais sobre o volume de solicitação de conteúdo? {#current-request-volumes}
 
-Se você quiser obter insights adicionais sobre o volume de solicitação de conteúdo mostrado no Painel de licenças, a equipe do Adobe pode fornecer um relatório que mostra os principais drivers de volume das solicitações de conteúdo. Entre em contato com a equipe do Adobe ou com o Atendimento ao cliente do Adobe para solicitar um relatório de uso principal.
+Se você quiser obter insights adicionais sobre o volume de solicitação de conteúdo mostrado no Painel de licenças, a equipe da Adobe pode fornecer um relatório que mostra os principais responsáveis pelo volume das solicitações de conteúdo. Entre em contato com a equipe da Adobe ou com o Atendimento ao cliente da Adobe para solicitar um relatório de uso principal.
 
 ### E se eu estiver usando meu próprio CDN? {#using-own-cdn}
 
-O Painel de Licenças mostrará apenas os dados rastreados pelo Cloud Service CDN.  Se optar por trazer seu próprio CDN (BYOCDN), você reportará o volume de solicitação de conteúdo de volta ao Adobe anualmente, conforme declarado em seu contrato.
+O Painel de Licenças mostrará apenas os dados rastreados pelo CDN do Cloud Service.  Se optar por trazer seu próprio CDN (BYOCDN), você precisará relatar o volume de solicitações de conteúdo à Adobe anualmente, conforme declarado em seu contrato.
