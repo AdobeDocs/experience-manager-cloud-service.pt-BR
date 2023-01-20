@@ -6,7 +6,7 @@ mini-toc-levels: 1
 source-git-commit: 33bf3dbf6118a9d93e0fe021736b74079100a214
 workflow-type: tm+mt
 source-wordcount: '1092'
-ht-degree: 17%
+ht-degree: 100%
 
 ---
 
@@ -25,21 +25,21 @@ A seção a seguir descreve as Notas de versão gerais da versão atual (mais re
 
 >[!CAUTION]
 >
->**Período de wxclusão de manutenção planejada**
+>**Período de Exclusão de manutenção planejada**
 >
 > Nenhuma manutenção automática do AEMaaCS será executada durante os seguintes períodos de tempo, começando e terminando à meia-noite (00:00) CET:
 >
 >* de segunda-feira, 21 de novembro até segunda-feira, 12 de dezembro
->* de segunda-feira, 19 de dezembro até terça-feira, 3 de janeiro
+>* Segunda-feira, 19 de dezembro até terça-feira, 3 de janeiro
 
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento do [!DNL Adobe Experience Manager] como [!DNL Cloud Service] a versão mensal atual (2022.10.0) é 10 de novembro de 2022. A próxima versão mensal (2023.1.0) está planejada para 26 de janeiro de 2023.
+A data de lançamento da versão atual (2022.10.0) do [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] é 10 de novembro de 2022. A próxima versão (2023.1.0) mensal está planejada para 26 de janeiro de 2023.
 
 ## Vídeo da versão {#release-video}
 
-Assista ao vídeo Visão geral da versão de outubro de 2022 para obter um resumo dos recursos adicionados na versão 2022.10.0:
+Assista ao vídeo de Visão geral da versão de outubro de 2022 que exibe um resumo dos recursos adicionados na versão 2022.10.0:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3409801/?quality=12)
 
@@ -48,58 +48,58 @@ Assista ao vídeo Visão geral da versão de outubro de 2022 para obter um resum
 
 ### Novos recursos no [!DNL Sites] {#sites-features}
 
-* O [Guia Personalização para fragmentos de experiência](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) O permite recursos de especificação de segmentação para o Editor de fragmento de experiência, bem como a flexibilidade para criar Fragmentos de experiência aninhados, onde as variações de cabeçalhos e rodapés podem ser criadas para vários segmentos. Antes do lançamento desse recurso, a personalização oferecida pelo AEM só está disponível para páginas do site, mas não para Fragmentos de experiência
+* O [Guia Personalização para Fragmentos de experiência](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) permite recursos de especificação de segmentação para o editor de Fragmento de experiência, bem como a flexibilidade para criar Fragmentos de experiência aninhados, nos quais as variações de cabeçalhos e rodapés podem ser criadas para vários segmentos. Antes do lançamento desse recurso, a personalização oferecida pelo AEM só está disponível para páginas do site, mas não para Fragmentos de experiência
 
-* O [Console do fragmento do conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) agora permite que os usuários gerenciem com eficiência fragmentos de conteúdo traduzidos. Um acesso de 1 clique foi fornecido para exibir todas as cópias de idioma também. Os usuários também podem filtrar a exibição de tabela pelo local de seu interesse.
+* O [Console do Fragmento do conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) agora permite que os usuários gerenciem com eficiência fragmentos de conteúdo traduzidos. Um acesso de 1 clique também foi fornecido para exibir todas as cópias de idioma. Os usuários também podem filtrar a exibição de tabela pela localidade de seu interesse.
 
-![Idiomas de fragmentos de conteúdo](/help/release-notes/assets/cfconsole-languages.png)
+![Idiomas de Fragmentos de conteúdo](/help/release-notes/assets/cfconsole-languages.png)
 
-* Reduza ainda mais o tempo de carregamento de página para visitantes, otimizando as configurações de tamanhos de imagem em modelos. Encontre mais informações para o componente de imagem em [Componente WCM principal](https://github.com/adobe/aem-core-wcm-components)
+* Reduza ainda mais o tempo de carregamento de página para visitantes otimizando as configurações de tamanhos de imagem em modelos. Encontre mais informações para o componente de imagem em [Componente WCM principal](https://github.com/adobe/aem-core-wcm-components)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Novos recursos no [!DNL Assets] {#assets-features}
 
-* O Experience Manager Assets agora permite fazer upload de documentos em outros tipos de formato compatíveis e[ visualizá-los usando o Document Cloud viewer incluído](/help/assets/manage-pdf-documents.md). Os tipos de formato compatíveis incluem: TXT, RTF, DOC, DOCX, PPT, PPTX, XLS e XLSX.
+* O Experience Manager Assets agora permite fazer upload de documentos em outros tipos de formato compatíveis e [efetuar a pré-visualização usando o visualizador do Document Cloud incluído](/help/assets/manage-pdf-documents.md). Os tipos de formato compatíveis incluem TXT, RTF, DOC, DOCX, PPT, PPTX, XLS e XLSX.
 
-   ![representação de PDF para outros formatos](/help/release-notes/assets/multi-page-other-formats.png)
+   ![Representação de PDF para outros formatos](/help/release-notes/assets/multi-page-other-formats.png)
 
 
-### Novos recursos em [!DNL Assets] pré-lançamento {#prerelease-features-assets}
+### Novos recursos no pré-lançamento do [!DNL Assets] {#prerelease-features-assets}
 
-* O Experience Manager Assets agora usa uma estrutura de inteligência artificial aprimorada para tags inteligentes de imagem. Essa inteligência de conteúdo resulta em melhor relevância e precisão das Tags inteligentes disponíveis para todos os ativos de imagem na assimilação. Além disso, as informações de orientação são preenchidas em `cq:tags`, que permite melhores resultados de pesquisa usando o filtro Orientação .
+* O Experience Manager Assets agora usa uma estrutura de inteligência artificial aprimorada para tags inteligentes de imagem. Essa inteligência de conteúdo resulta em melhor relevância e precisão das Tags inteligentes disponíveis para todos os ativos de imagem na assimilação. Além disso, as informações de orientação são preenchidas em `cq:tags`, o que permite melhores resultados de pesquisa através da utilização do filtro de Orientação.
 
-   Se você estiver interessado em participar da versão beta, [preencher este formulário](https://forms.office.com/pages/responsepage.aspx?id=Wht7-jR7h0OUrtLBeN7O4epXZrTVKKdJkUiHeolccf9UNEwyNEpHVEFaODdBNFZQSlFDREZQOVRRTy4u) até 14 de novembro.
+   Se você estiver interessado em participar da versão beta, [preencha este formulário](https://forms.office.com/pages/responsepage.aspx?id=Wht7-jR7h0OUrtLBeN7O4epXZrTVKKdJkUiHeolccf9UNEwyNEpHVEFaODdBNFZQSlFDREZQOVRRTy4u) até 14 de novembro.
 
-* Experience Manager Assets agora [suporta o token SAS](/help/assets/add-assets.md#asset-bulk-ingestor) além da Chave de acesso para autenticação ao conectar-se à fonte de dados do Armazenamento Azure Blob para assimilar ativos usando a ferramenta Importação em massa .
+* O Experience Manager Assets agora [é compatível com o token SAS](/help/assets/add-assets.md#asset-bulk-ingestor) além da Chave de acesso para autenticação ao conectar-se à fonte de dados do Armazenamento de Blobs do Azure para assimilar ativos usando a ferramenta Importação em massa.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Novos recursos disponíveis em [!DNL Forms] {#new-features-available-in-channel}
 
 
-* [Assistente adaptável Forms](/help/forms/creating-adaptive-form.md): O AEM Forms fornece um assistente para usuários empresariais para criar rapidamente o Adaptive Forms. O assistente tem uma navegação de guia rápida para selecionar facilmente o modelo pré-configurado, o estilo, os campos e as opções de envio para criar um formulário adaptável. Esta versão traz as seguintes melhorias ao assistente:
+* [Assistente de Formulários adaptáveis](/help/forms/creating-adaptive-form.md): o AEM Forms fornece um assistente para usuários empresariais para criar rapidamente Formulários adaptáveis. O assistente fornece uma navegação rápida por guias para selecionar facilmente o modelo pré-configurado, o estilo, os campos e as opções de envio para criar um formulário adaptável. Esta versão traz as seguintes melhorias ao assistente:
 
-   * Selecionar ou desmarcar campos: O assistente permite criar um formulário adaptável com base em esquemas JSON e do Modelo de dados de formulário. Agora é possível selecionar um subconjunto de campos em um esquema para incluir em um Formulário adaptável. Os campos selecionados são convertidos em componentes de captura de dados do formulário adaptável correspondentes para criar rapidamente os formulários adaptáveis desejados.
+   * Selecionar ou desmarcar campos: o assistente permite criar um Formulário adaptável com base em esquemas JSON e do Modelo de dados de formulário. Agora é possível selecionar um subconjunto de campos em um esquema para incluir em um Formulário adaptável. Os campos selecionados são convertidos em componentes de captura de dados correspondentes do Formulário adaptável para criar rapidamente os formulários adaptáveis desejados.
 
-   * Usar modelos estáticos: Os clientes com investimentos existentes em modelos estáticos herdados podem continuar sua jornada de adoção da nuvem usando modelos estáticos no assistente para criar formulários adaptáveis. Isso oferece mais tempo para os clientes migrarem modelos estáticos antigos para modelos editáveis modernos.
+   * Usar modelos estáticos: os clientes com investimentos existentes em modelos estáticos herdados podem continuar sua jornada de adoção da nuvem usando modelos estáticos no assistente para criar formulários adaptáveis. Isso oferece mais tempo para os clientes migrarem modelos estáticos antigos para modelos editáveis modernos.
 
-* [Remover campos ocultos de um Documento de registro (DoR) durante o processamento no servidor](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md): Você pode gerar o documento de PDF de registro para usuários finais contendo apenas os campos que estavam visíveis para eles durante a experiência de captura de dados. Após o envio do formulário, o servidor valida quais campos estavam ocultos para o usuário final com base nos dados enviados e exclui do documento de registro para fins de consistência.
+* [Remover campos ocultos de um Documento de registro (DoR) durante o processamento no lado do servidor](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md): você pode gerar o documento de PDF de registro para usuários finais contendo apenas os campos que estavam visíveis para eles durante a experiência de captura de dados. Após o envio do formulário, o servidor valida quais campos estavam ocultos para o usuário final com base nos dados enviados e exclui do documento de registro para fins de consistência.
 
 ### Novos recursos disponíveis no canal de pré-lançamento do [!DNL Forms] {#prerelease-features-forms}
 
-* **Editor de modelo adaptável do Forms**: O editor de modelos permite que você predefina a estrutura básica e a aparência do Adaptive Forms de uma organização. Esta versão traz as seguintes melhorias para o editor de modelo:
-   * **[Modelo de dados de formulário no editor de modelos](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model)**: Você pode associar um esquema de Modelo de dados de formulário a um modelo de Formulário adaptável no editor de modelos. Ajuda a reduzir o tempo gasto para criar um formulário adaptável. A opção também é adicionada ao editor Adaptive Forms para permitir que os usuários selecionem ou alterem o Modelo de dados de formulário para formulários existentes.
-   * **[Documento de registro no editor de modelo](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)**: Agora é possível padronizar a geração de Documento de registro para todos os formulários criados usando um modelo. Isso ajuda a aprimorar a conformidade e a padronização dos requisitos de organização.
+* **Editor de modelo de Formulários adaptáveis**: o editor de modelos permite que você predefina a estrutura básica e a aparência dos formulários adaptáveis de uma organização. Esta versão traz as seguintes melhorias para o editor de modelo:
+   * **[Modelo de dados de formulário no editor de modelos](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model)**: você pode associar um esquema de Modelo de dados de formulário a um modelo de formulário adaptável no editor de modelos. Isso ajuda a reduzir o tempo gasto para criar um Formulário adaptável. A opção também é adicionada ao editor de Formulários adaptáveis para permitir que os usuários selecionem ou alterem o Modelo de Dados de Formulário para formulários existentes.
+   * **[Documento de Registro no editor de modelo](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)**: Agora é possível padronizar a geração de Documento de Registro para todos os formulários criados usando um modelo. Isso ajuda a aprimorar a conformidade e a padronização dos requisitos da organização.
 
-* **[Iniciar o assistente de Formulário adaptável em uma página do AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)**: A página AEM Sites tem suporte estendido para o Adaptive Forms. Agora é possível criar um novo formulário adaptável ou incorporar um formulário adaptável existente, permanecendo na página do AEM Sites.
-* **[Alterar o alinhamento de exibição para caixas de seleção e botão de opção no DoR](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record-customize-the-branding-information-in-document-of-record)**: Agora é possível definir o alinhamento desejado (horizontal, vertical, igual ao Forms adaptável) para as caixas de seleção e os botões de opção no Documento de registro. Essa opção determina o posicionamento das opções de caixa de seleção e botão de opção no Documento de registro.
+* **[Iniciar o assistente de Formulário Adaptável em uma página do AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)**: A página AEM Sites tem suporte estendido para o Formulários Adaptáveis. Agora é possível criar um novo Formulário Adaptável ou incorporar um Formulário Adaptável existente, permanecendo na página do AEM Sites.
+* **[Alterar o alinhamento de exibição para caixas de seleção e botões de rádio no DoR](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record-customize-the-branding-information-in-document-of-record)**: Agora é possível definir o alinhamento desejado (Horizontal, Vertical, Igual ao Adaptive Forms) para as caixas de seleção e os botões de rádio no Documento de Registro. Essa opção determina o posicionamento das opções de caixa de seleção e botão de opção no Documento de registro.
 
 ## Complemento CIF {#cloud-services-cif}
 
 ### Novidades {#what-is-new-cif}
 
-* Os autores podem enriquecer dinamicamente listas de produtos com Fragmentos de experiência (exemplo: colocar banner entre as listas de produtos).
+* Os autores podem enriquecer dinamicamente listas de produtos com Fragmentos de experiência (por exemplo: colocar banner entre as listas de produtos).
 * O componente de lista agora oferece suporte às páginas de produto/categoria associadas para mostrar dinamicamente páginas relacionadas.
 * Foi adicionado suporte para componentes do Peregrine 12.5.
 * Foi adicionado suporte para o carregamento de preço no lado do cliente no teaser e no carrossel do produto.
@@ -108,9 +108,9 @@ Assista ao vídeo Visão geral da versão de outubro de 2022 para obter um resum
 
 ### Novidades {#what-is-new-foundation}
 
-* AEM as a Cloud Service (Serviço de Autor) agora está integrado ao Unified Shell para melhorar a experiência do usuário e unificá-la com todos os outros aplicativos do Experience Cloud. Consulte AEM como um [Cloud Service no shell unificado](/help/overview/aem-cloud-service-on-unified-shell.md) para obter mais detalhes.
+* O AEM as a Cloud Service (Serviços do autor) agora está integrado com o Unified Shell para melhorar a experiência dos usuários e unificá-lo com todos os outros aplicativos da Experience Cloud. Consulte AEM as a [Cloud Service no Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) para obter mais detalhes.
 
-* Conforme mencionado anteriormente nas notas de versão, o uso da tela de administração do agente de replicação ou da API de replicação para distribuição de pacotes de conteúdo maiores que 10 MB (nós com propriedades, não incluindo binários) está obsoleto e será aplicado nos próximos dias. Consulte [Gerenciar publicação](/help/operations/replication.md#manage-publication) ou [Fluxo de trabalho da Árvore de conteúdo de publicação](/help/operations/replication.md#publish-content-tree-workflow) para as abordagens sugeridas para replicar esses pacotes de conteúdo grandes.
+* Conforme mencionado anteriormente nas notas de versão, o uso da tela de administrador do agente de replicação ou da API de replicação para distribuição de pacotes de conteúdo maiores que 10 MB (nós com propriedades, não incluindo binários) está obsoleto e será aplicado nos próximos dias. Consulte [Gerenciar publicação](/help/operations/replication.md#manage-publication) ou o [Fluxo de trabalho de publicação da árvore de conteúdo](/help/operations/replication.md#publish-content-tree-workflow) para as abordagens sugeridas para replicar esses pacotes de conteúdo grandes.
 
 * A configuração do Dispatcher agora faz referência a um arquivo que lista parâmetros de consulta de campanha de marketing comuns. Os clientes podem optar por remover o comentário dos parâmetros que são relevantes para eles, resultando em um melhor armazenamento em cache. Consulte [Parâmetros da campanha de marketing](/help/implementing/dispatcher/caching.md#marketing-parameters) para obter mais detalhes.
 

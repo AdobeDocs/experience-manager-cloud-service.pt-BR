@@ -5,7 +5,7 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
 workflow-type: tm+mt
 source-wordcount: '1003'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -221,7 +221,7 @@ Algumas compilações exigem a instalação de pacotes de sistema adicionais par
         </profile>
 ```
 
-Essa mesma técnica pode ser usada para instalar pacotes específicos do idioma, por exemplo, usando `gem` para RubyGems ou `pip` Python Packages.
+Essa mesma técnica pode ser usada para instalar pacotes de linguagem específicos, por exemplo, usando `gem`para RubyGems ou  `pip` para Pacotes Python.
 
 >[!NOTE]
 >

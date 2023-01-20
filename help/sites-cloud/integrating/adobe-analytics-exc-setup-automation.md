@@ -1,23 +1,23 @@
 ---
 title: Integrar o Adobe Analytics com a automação de configuração do Experience Cloud
-description: A Automação de configuração do Experience Cloud oferece uma maneira simples e automatizada de integrar e instrumentar o Experience Manager Sites com tags Experience Platform e Adobe Analytics com uma interface simples do assistente de interface do usuário. Saiba como usar a configuração automatizada em seu próprio site.
+description: A Automação de configuração da Experience Cloud oferece uma maneira simples e automatizada de integrar e instrumentar o Experience Manager Sites com Tags da Experience Platform e Adobe Analytics com uma interface de assistente simples. Saiba como usar a configuração automatizada em seu próprio site.
 feature: Administering
 role: Admin
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
 source-git-commit: f91885a7d15c0ff927c6e10f65852f787cf26eb3
 workflow-type: tm+mt
 source-wordcount: '756'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
 # Integrar o Adobe Analytics com a automação de configuração do Experience Cloud {#integrate-adobe-analytics-automation-setup}
 
-A Automação de configuração do Experience Cloud oferece uma maneira simples e automatizada de integrar e instrumentar o Experience Manager Sites com tags Experience Platform e Adobe Analytics com uma interface simples do assistente de interface do usuário.
+A Automação de configuração da Experience Cloud oferece uma maneira simples e automatizada de integrar e instrumentar o Experience Manager Sites com Tags da Experience Platform e Adobe Analytics com uma interface de assistente simples.
 
 Nunca foi tão simples integrar o Adobe Analytics com o AEM Sites. Com a Automação de configuração do Experience Cloud, a configuração, a integração e a instrumentação do site para capturar análises de desempenho e entender o quão bem seus clientes estão interagindo e se convertendo são todas resolvidas com apenas alguns cliques.
 
-Este vídeo explica como um site de AEM é integrado às Tags do Experience Platform e ao Analytics usando a Automação de configuração do Experience Cloud:
+Este vídeo explica como um site do AEM pode ser integrado às Tags da Experience Platform e ao Analytics usando a Automação de configuração da Experience Cloud:
 
 >[!VIDEO](https://video.tv.adobe.com/v/345372/?quality=12)
 
@@ -57,7 +57,7 @@ O ambiente agora deve estar pronto para a automação de configuração da Exper
    A configuração da automação ocorre de maneira assíncrona. O **Verificar status da integração** mostrará o status atual da integração.
 
    * **Em andamento** - indica que a tarefa está em execução.
-   * **Integração concluída** - indica que a tarefa concluiu a integração do Analytics e das Tags, a configuração das extensões e regras de Tags do Tags e a criação do novo Conjunto de relatórios no Adobe Analytics.
+   * **Integração concluída** - indica que o processo concluiu a integração do Analytics e das tags, configurando extensões de tags e regras de tags e criando o novo conjunto de relatórios no Adobe Analytics.
    * **Fracasso** - indica que a tarefa automatizada não pôde ser concluída com êxito. Verifique os arquivos de log dessa tarefa clicando no link Logs.
 
 ## Validar configuração do AEM 
@@ -66,7 +66,7 @@ Depois que a automação for concluída, valide se seu site está acionando os e
 
 1. Abra uma página no seu site usando o **Editor de sites**.
 1. Use a opção **Exibir conforme publicado** para carregar uma versão publicada da página
-1. Use as ferramentas de desenvolvedor do navegador para inspecionar o tráfego da rede e que **Tags** e `AppMeasurement.js` agora os arquivos estão sendo carregados.
+1. Use as ferramentas de desenvolvedor do navegador para inspecionar o tráfego da rede e se agora os arquivos de **Tags** e do `AppMeasurement.js` estão sendo carregados.
 1. Inspecione o console do navegador para conferir se os eventos de nível de página e componente são acionados e coletados pela Camada de dados do cliente Adobe.
 
 ## Validar a configuração do Analytics

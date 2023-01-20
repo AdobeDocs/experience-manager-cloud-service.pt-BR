@@ -5,7 +5,7 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 source-git-commit: 0ea7255f4dfc5c9f2e99cb144ef58152a2565822
 workflow-type: tm+mt
 source-wordcount: '1407'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -195,11 +195,11 @@ A imagem do Docker deve gerar relatórios de teste no formato XML JUnit e salvá
 
 Se a imagem do Docker for implementada com outras linguagens de programação ou executores de teste, verifique a documentação das ferramentas escolhidas para saber como gerar relatórios XML JUnit.
 
-### Capturar capturas de tela e vídeos {#capture-screenshots}
+### Capturar imagens de tela e vídeos {#capture-screenshots}
 
-A imagem Docker pode gerar saídas de teste adicionais (por exemplo, capturas de tela, vídeos) e salvá-las no caminho especificado pela variável de ambiente `REPORTS_PATH`. Qualquer arquivo encontrado abaixo do `REPORTS_PATH` estão incluídos no arquivo de resultados de teste.
+A imagem Docker pode gerar saídas de teste adicionais (por exemplo, capturas de tela, vídeos) e salvá-las no caminho especificado pela variável de ambiente `REPORTS_PATH`. Qualquer arquivo encontrado abaixo de `REPORTS_PATH` está incluído no arquivo de resultados de teste.
 
-Se um arquivo de resultados de teste tiver sido criado durante uma execução de teste da interface do usuário, o arquivo de log de teste conterá no final uma referência ao local do arquivo de resultados de teste.
+Se um arquivo de resultados de teste tiver sido criado durante uma execução de teste da interface, o arquivo de log de teste conterá no final uma referência ao local do arquivo de resultados de teste.
 
 ```
 [...]

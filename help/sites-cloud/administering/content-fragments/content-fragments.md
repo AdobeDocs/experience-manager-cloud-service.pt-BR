@@ -7,7 +7,7 @@ exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
 source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
 workflow-type: tm+mt
 source-wordcount: '2070'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -64,7 +64,7 @@ Para ajudar nisso, é possível visualizar a [Árvore de estrutura](/help/sites-
 O número de canais de comunicação aumenta anualmente. Normalmente, os canais se referem ao mecanismo de entrega, como:
 
 * Canal físico; por exemplo, desktop, móvel.
-* Forma de entrega num canal físico; por exemplo, a &quot;página de detalhes do produto&quot;, &quot;página de categoria do produto&quot; para desktop, ou &quot;web móvel&quot;, &quot;aplicativo móvel&quot; para dispositivos móveis.
+* Forma de entrega em um canal físico; por exemplo, “página de detalhes do produto”, “página de categoria do produto” para desktop ou “web para publicação de conteúdo para dispositivos móveis”, “aplicativo para publicação de conteúdo para dispositvos móveis” para celular.
 
 No entanto, você (provavelmente) não deseja usar exatamente o mesmo conteúdo para todos os canais; é necessário otimizar o conteúdo de acordo com o canal específico.
 

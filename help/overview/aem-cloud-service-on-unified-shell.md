@@ -5,7 +5,7 @@ exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
 source-git-commit: aeb8244b4da17a0675b86a69727807abf45ca84a
 workflow-type: tm+mt
 source-wordcount: '399'
-ht-degree: 68%
+ht-degree: 82%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 68%
 
 ## Visão geral {#overview}
 
-AEM as a Cloud Service (Serviço de Autor) é integrado ao Unified Shell para melhorar a experiência do usuário e unificá-la com todos os outros aplicativos do Experience Cloud. O impacto dessa integração pode ser visto no cabeçalho superior do aplicativo, como mostrado abaixo.
+O AEM as a Cloud Service (Serviço do autor) está integrado ao Unified Shell para melhorar a experiência do usuário e unificá-la com todos os outros aplicativos da Experience Cloud. O impacto dessa integração pode ser visto no cabeçalho superior do aplicativo, como mostrado abaixo.
 
 ![imagem](/help/overview/assets/unifiedshell_header.png)
 
@@ -23,14 +23,14 @@ Os benefícios disso são:
 * Fácil alternação entre organizações ou para um aplicativo diferente
 * Ajuda do produto aprimorada
 * Botão de feedback de fácil acesso no produto para reportar problemas ou compartilhar ideias com a Adobe
-* Acesso a anúncios e notificações de produtos globais, além de notificações específicas AEM as a Cloud Service
+* Acesso a anúncios e notificações de produtos globais, além de notificações específicas do AEM as a Cloud Service
 
 ## Desabilitar o Unified Shell {#disabling-unified-shell}
 
 Por padrão, o AEM as a Cloud Service vem com o Unified Shell ativado. No entanto, caso o cabeçalho superior tenha sido personalizado, é recomendável desativar o Unified Shell para evitar problemas com as personalizações. Para desativar o Unified Shell, siga as etapas abaixo:
 
 >[!NOTE]
->O Shell Unificado só pode ser desativado por uma conta com privilégios administrativos.
+>O Unified Shell só pode ser desativado por uma conta com privilégios administrativos.
 
 1. Navegue até **Ferramentas - Serviços na nuvem**.
 

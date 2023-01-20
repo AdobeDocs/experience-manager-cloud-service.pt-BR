@@ -7,7 +7,7 @@ exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
 source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
 workflow-type: tm+mt
 source-wordcount: '1915'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -39,17 +39,17 @@ O [Editor de fragmentos de conteúdo](#opening-the-fragment-editor) fornece vár
 >
 >Os fragmentos de conteúdo são armazenados como **Ativos**. Eles são gerenciados principalmente pelo console de **Fragmentos de conteúdo**, mas também podem ser gerenciados no console de **Ativos**.
 
-## O console Fragmentos de conteúdo {#content-fragments-console}
+## O console de Fragmentos de conteúdo {#content-fragments-console}
 
-O console Fragmentos de conteúdo fornece acesso direto aos fragmentos e às tarefas relacionadas. Para obter mais informações, consulte:
+O console de Fragmentos de conteúdo fornece acesso direto aos seus fragmentos e às tarefas relacionadas. Para mais informações, consulte:
 
-* [Estrutura básica e manipulação do console Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#basic-structure-handling-content-fragments-console)
+* [Estrutura básica e manuseio do console de Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#basic-structure-handling-content-fragments-console)
 
-* [As informações fornecidas sobre os Fragmentos do conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments)
+* [As informações fornecidas sobre os seus Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments)
 
-* [Ações para um fragmento de conteúdo no Console de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment)
+* [Ações para um fragmento de conteúdo no console de Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment)
 
-* [Personalização das colunas disponíveis no console Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#select-available-columns)
+* [Personalizar as colunas disponíveis no console de Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#select-available-columns)
 
 * [Pesquisar e filtrar no Console de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#filtering-fragments)
 
@@ -288,13 +288,13 @@ Para excluir um fragmento:
    >[!CAUTION]
    Se o fragmento já tiver sido referenciado a partir de outro fragmento, ou de uma página, você verá uma mensagem de aviso e terá que confirmar se deseja continuar com uma **Exclusão forçada**. O fragmento, junto com seu componente do fragmento de conteúdo, será excluído de qualquer página de conteúdo.
 
-## Encontrar referências pai do fragmento {#parent-references-fragment}
+## Encontrar referências principais do fragmento {#parent-references-fragment}
 
-É possível acessar os detalhes de referências principais no **Referências** da coluna [Console Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments).
+É possível acessar os detalhes de referências principais na coluna **Referências** do [Console de Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments).
 
 ## Encontrar cópias de idioma do fragmento {#language-copies-fragment}
 
-É possível acessar os detalhes das Cópias de idioma no **Idioma** da coluna [Console Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments).
+É possível acessar os detalhes das cópias de idioma na coluna **Idioma** do [Console Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments).
 
 ## Linha de tempo dos fragmentos de conteúdo {#timeline-for-content-fragments}
 

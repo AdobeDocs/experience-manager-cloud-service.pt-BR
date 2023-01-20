@@ -5,7 +5,7 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 source-git-commit: 01ff58fee9d309de75afcb556726e1cf32b9f70a
 workflow-type: tm+mt
 source-wordcount: '665'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ Existem várias limitações no uso de nomes de domínio personalizados com o AE
 
 >[!NOTE]
 >
->Domínios personalizados são compatíveis com o Cloud Manager **only** se estiver usando o CDN gerenciado AEM. Se você trazer seu próprio CDN e [aponte-o para o CDN gerenciado AEM](/help/implementing/dispatcher/cdn.md) será necessário usar essa CDN específica para gerenciar domínios e não o Cloud Manager.
+>Domínios personalizados são compatíveis com o Cloud Manager **apenas** se estiver usando a CDN gerenciada pelo AEM. Se você trouxer sua própria CDN e [apontá-la para a CDN gerenciada pelo AEM](/help/implementing/dispatcher/cdn.md) será necessário usar essa CDN específica para gerenciar domínios e não o Cloud Manager.
 
 ## Fluxo de trabalho {#workflow}
 

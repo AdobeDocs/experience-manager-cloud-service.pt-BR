@@ -11,7 +11,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: 5877f3c84ab6303520dd4697144e9b18d717b74f
 workflow-type: tm+mt
 source-wordcount: '3837'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -165,7 +165,7 @@ ht-degree: 97%
       + [Personalizar conteúdo em um aplicativo de amostra do React](/help/trials/headless/customize-app.md)
       + [Criar a estrutura de conteúdo para seu aplicativo](/help/trials/headless/content-structure.md)
       + [Criar conteúdo headless](/help/trials/headless/create-content.md)
-      + [Extrair conteúdo por meio da API do GraphQL](/help/trials/headless/extract-content.md)
+      + [Extrair conteúdo por meio da API GraphQL](/help/trials/headless/extract-content.md)
 + Jornada de migração do AEM as a Cloud Service {#migration-journey}
    + [Introdução à movimentação do AEM as a Cloud Service](/help/journey-migration/getting-started.md)
    + [Fase de preparação](/help/journey-migration/readiness.md)
@@ -287,7 +287,7 @@ ht-degree: 97%
          + [Como o gerenciamento multisite para conteúdo direcionado está estruturado](/help/sites-cloud/authoring/personalization/multisite-structure.md)
          + [Gerenciamento de atividades](/help/sites-cloud/authoring/personalization/activities.md)
          + [Gerenciamento de públicos](/help/sites-cloud/authoring/personalization/audiences.md)
-         + [Criação e gerenciamento de ofertas (Console Ofertas)](/help/sites-cloud/authoring/personalization/offers.md)
+         + [Criação e gerenciamento de ofertas (Console de Ofertas)](/help/sites-cloud/authoring/personalization/offers.md)
          + [Noções sobre segmentação](/help/sites-cloud/authoring/personalization/segmentation.md)
          + [Configuração da segmentação com o ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
          + [Registro, logon e perfil do usuário](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
@@ -359,7 +359,7 @@ ht-degree: 97%
       + [Integração com o Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
       + [Configuração do IMS para uso na integração com o Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
       + [Exportar fragmentos de experiência para o Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
-      + [Integração com o Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
+      + [Integração ao Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
 + Assets {#assets}
    + [[!DNL Assets] as a  [!DNL Cloud Service]](/help/assets/home.md)
    + [Visão geral e novidades](/help/assets/overview.md)
@@ -398,7 +398,7 @@ ht-degree: 97%
       + [Inserir marca d&#39;água em ativos](/help/assets/watermark-assets.md)
       + [Processar ativos usando APIs da  [!DNL Creative Cloud] ](/help/assets/cc-api-integration.md)
       + [Tags de cores para imagens](/help/assets/color-tag-images.md)
-      + [Gerenciar documentos do PDF](/help/assets/manage-pdf-documents.md)
+      + [Gerenciar documentos PDF](/help/assets/manage-pdf-documents.md)
    + Configurar, administrar e estender [!DNL Assets] {#admin}
       + [Documentos do desenvolvedor e referências de APIs](/help/assets/developer-reference-material-apis.md)
       + [Esquema de metadados de pastas](/help/assets/folder-metadata-schema.md)
@@ -512,7 +512,7 @@ ht-degree: 97%
       + [Revisar e corrigir formulários convertidos](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html?lang=pt-BR#welcome-to-review-and-correct-editor)
    + Criar e publicar um Formulário adaptável {#create-an-adaptive-form}
       + Antes de você iniciar {#before-you-start}
-         + [Introdução à criação de um Adaptive Forms](/help/forms/introduction-forms-authoring.md)
+         + [Introdução à criação de um Formulário adaptável](/help/forms/introduction-forms-authoring.md)
          + [Criar um modelo](/help/forms/template-editor.md)
          + [Criar um tema](/help/forms/themes.md)
          + [Conectar suas fontes de dados ao Cloud Service](/help/forms/data-integration.md)
@@ -563,7 +563,7 @@ ht-degree: 97%
       + [Integração com o Sites](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/aemform/v1/aemform)
       + [Integrar ao Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
       + [Integrar um formulário adaptável ao Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
-      + [Incorporar Forms adaptável ao AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)
+      + [Incorporação de Formulários adaptáveis ao AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)
    + Criar e usar fluxos de trabalho {#create-form-centric-workflows}
       + [Usar etapas centradas no Forms em um fluxo de trabalho + referência de etapa](/help/forms/aem-forms-workflow-step-reference.md)
       + [Usar variáveis em um fluxo de trabalho centrado no Forms](/help/forms/variable-in-aem-workflows.md)
@@ -640,7 +640,7 @@ ht-degree: 97%
          + [Recomendações do produto](/help/commerce-cloud/authoring/product-recommendations.md)
       + Administração {#administering}
          + [Configuração de várias lojas](/help/commerce-cloud/configuring/multi-store-setup.md)
-         + [Configuração de sistemas de comércio múltiplo](/help/commerce-cloud/configuring/multiple-commerce-systems-setup.md)
+         + [Configuração de sistemas de comércio múltiplos](/help/commerce-cloud/configuring/multiple-commerce-systems-setup.md)
          + [Configurar URLs para SEO](/help/commerce-cloud/configuring/advanced-url-configuration.md)
          + [Opções de armazenamento em cache](/help/commerce-cloud/configuring/caching.md)
          + [Cabeçalhos HTTP personalizados](/help/commerce-cloud/configuring/custom-http-headers.md)
@@ -655,7 +655,7 @@ ht-degree: 97%
 + Headless {#headless}
    + [O que é um CMS headless?](/help/headless/what-is-headless.md)
    + [Introdução ao AEM Headless](/help/headless/introduction.md)
-   + [Portal do desenvolvedor (recursos adicionais)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+   + [Portal do desenvolvedor (recursos adicionais)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
    + Configurar {#setup}
       + [Introdução](/help/headless/setup/introduction.md)
       + [Configuração](/help/headless/setup/create-configuration.md)
@@ -703,7 +703,7 @@ ht-degree: 97%
          + [Como reunir e organizar tudo](/help/journey-headless/developer/put-it-all-together.md)
          + [Como executar o aplicativo headless](/help/journey-headless/developer/go-live.md)
          + [Opcional - Como criar aplicativos de página única com o AEM](/help/journey-headless/developer/create-spa.md)
-         + [Portal do desenvolvedor (recursos adicionais)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+         + [Portal do desenvolvedor (recursos adicionais)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
       + Jornada do arquiteto de conteúdo do Headless {#architect}
          + [Visão geral da jornada do Arquiteto de conteúdo do AEM Headless](/help/journey-headless/architect/overview.md)
          + [Modelagem de conteúdo para headless com o AEM - uma introdução](/help/journey-headless/architect/introduction.md)
@@ -886,7 +886,7 @@ ht-degree: 97%
       + [Extensão de fragmentos de experiência](/help/implementing/developing/extending/experience-fragments.md)
       + [Personalização e extensão de fragmentos de conteúdo](/help/implementing/developing/extending/content-fragments-customizing.md)
       + [Fragmentos de conteúdo configuram componentes para renderização](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
-      + [Personalização do console Fragmento do conteúdo](/help/implementing/developing/extending/content-fragment-console-customizing.md)
+      + [Personalização do console de Fragmentos de conteúdo](/help/implementing/developing/extending/content-fragment-console-customizing.md)
       + Gerenciar formulários de pesquisa {#manage-search-forms}
          + [Configuração de formulários de pesquisa](/help/implementing/developing/extending/search-forms.md)
          + [Configurar filtros de pesquisa para a Caixa de entrada](/help/implementing/developing/extending/configure-inbox-search-rail.md)
@@ -919,7 +919,7 @@ ht-degree: 97%
    + [Operações e manutenção do AEM as a Cloud Service](/help/operations/home.md)
    + [Pesquisa e indexação de conteúdo](/help/operations/indexing.md)
    + [Serviço de replicação de conteúdo](/help/operations/replication.md)
-   + [Monitoramento de infraestrutura e serviços em AEM as a Cloud Service](/help/operations/monitoring.md)
+   + [Monitoramento de infraestrutura e serviços no AEM as a Cloud Service](/help/operations/monitoring.md)
    + [Tarefas de manutenção](/help/operations/maintenance.md)
    + [Backup e restauração](/help/operations/backup.md)
    + [Trabalhos assíncronos](/help/operations/asynchronous-jobs.md)
