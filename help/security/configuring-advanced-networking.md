@@ -3,9 +3,9 @@ title: Configuração de redes avançadas para o AEM as a Cloud Service
 description: Saiba como configurar recursos avançados de rede, como VPN ou um endereço IP de saída flexível ou dedicado para o AEM as a Cloud Service
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 source-git-commit: dde06fb7b678de8bf07aae54ee411aab7208ab2c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3053'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ Saída de porta flexível é a opção recomendada se você não precisar de VPN
 
 ### Configuração {#configuring-flexible-port-egress-provision}
 
-Uma vez por programa, o endpoint `/program/<programId>/networkInfrastructures` POST é chamado, passando o valor de `flexiblePortEgress` para o parâmetro e região `kind`. O endpoint responde com a `network_id`, bem como com outras informações, incluindo o status. O conjunto completo de parâmetros e a sintaxe exata, bem como informações importantes como quais parâmetros não poderão ser alterados posteriormente, [podem ser referenciadas nos documentos da API.](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)
+Uma vez por programa, o endpoint `/program/<programId>/networkInfrastructures` POST é chamado, passando o valor de `flexiblePortEgress` para o parâmetro e região `kind`. O endpoint responde com a `network_id`, bem como com outras informações, incluindo o status. O conjunto completo de parâmetros e a sintaxe exata, bem como informações importantes, como quais parâmetros não poderão ser alterados posteriormente, [podem ser referenciados nos documentos da API.](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)
 
 Uma vez chamada, normalmente leva aproximadamente 15 minutos para a infraestrutura de rede ser provisionada. Uma chamada para o [endpoint da infraestrutura de rede GET](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) do Cloud Manager mostraria o status de &quot;pronto&quot;.
 
@@ -336,7 +336,7 @@ Para validar se o tráfego está saindo no endereço IP dedicado esperado, verif
 ## Clientes de endereço de saída dedicado herdado {#legacy-dedicated-egress-address-customers}
 
 Se você tiver sido provisionado com um IP de saída dedicado antes de 30/09/2021, seu recurso de IP de saída dedicado só será compatível com portas HTTP e HTTPS.
-Isso inclui HTTP/1.1 e HTTP/2 quando há criptografia. Além disso, um endpoint de saída dedicado pode conversar com qualquer target somente por HTTP/HTTPS nas portas 80/443, respectivamente.
+Isso inclui HTTP/1.1 e HTTP/2 quando há criptografia. Além disso, um endpoint de saída dedicado pode conversar com qualquer público-alvo somente por HTTP/HTTPS nas portas 80/443, respectivamente.
 
 ## VPN (Virtual Private Network) {#vpn}
 
