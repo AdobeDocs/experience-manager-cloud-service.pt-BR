@@ -5,9 +5,9 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '760'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -75,7 +75,7 @@ Como alternativa, você pode:
 
 ### Por que vejo páginas da Live Copy com o sufixo “_msm_moved”? {#moved-pages}
 
-Se uma página de blueprint for implantada, ela atualizará sua página Live Copy ou criará uma nova página Live Copy se ainda não existir (por exemplo, quando for implantada pela primeira vez ou a página Live Copy for excluída manualmente).
+Se uma página de blueprint for implantada, ela atualizará sua página da Live Copy ou criará uma nova página da Live Copy se ainda não existir (por exemplo, quando ela for implantada pela primeira vez ou a página da Live Copy for excluída manualmente).
 
 Nesse último caso, no entanto, se uma página sem uma propriedade `cq:LiveRelationship` existir com o mesmo nome, ela será renomeada de acordo, antes que a página da Live Copy seja criada.
 
