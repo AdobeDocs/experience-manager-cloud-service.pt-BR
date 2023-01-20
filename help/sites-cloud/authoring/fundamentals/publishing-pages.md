@@ -3,9 +3,9 @@ title: Publicar páginas
 description: Como publicar e desfazer a publicação de páginas usando o AEM
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1812'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -215,9 +215,9 @@ Para publicar ou desfazer a publicação de uma página usando Gerenciar publica
 
 ## Desfazer a publicação de páginas {#unpublishing-pages}
 
-Desfazer a publicação de uma página a removerá de sua publicação ou [visualização](/help/sites-cloud/authoring/fundamentals/previewing-content.md), ambiente para que não esteja mais disponível para seus leitores.
+Desfazer a publicação de uma página fará com que ela seja removida do seu ambiente de publicação ou [pré-visualização](/help/sites-cloud/authoring/fundamentals/previewing-content.md), deixando de estar disponível aos seus leitores.
 
-Em um [maneira semelhante à publicação](#publishing-pages), uma ou mais páginas podem ter a publicação desfeita do destino desejado:
+De uma [maneira semelhante à publicação](#publishing-pages), uma ou mais páginas podem ter a publicação desfeita do destino desejado:
 
 * [No editor de páginas](#unpublishing-from-the-editor)
 * [Do console do Sites](#unpublishing-from-the-console)
@@ -246,7 +246,7 @@ Da mesma forma que você [usa a opção Gerenciar publicação para publicar](#m
    >Caso deseje cancelar a publicação/desfazer a publicação mais tarde, acesse o [Console de Fluxos de trabalho](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance) para encerrar o fluxo de trabalho correspondente.
 
    >[!NOTE]
-   >Se você tiver uma [Visualizar](/help/sites-cloud/authoring/fundamentals/previewing-content.md) você pode selecionar o **Destino** durante Gerenciar publicação.
+   >Se você tiver um ambiente de [Pré-visualização](/help/sites-cloud/authoring/fundamentals/previewing-content.md), você pode selecionar o **Destino** durante Gerenciar Publicação.
 
 1. Para concluir o cancelamento da publicação, prossiga com o assistente como faria para [publicar a página](#manage-publication).
 
