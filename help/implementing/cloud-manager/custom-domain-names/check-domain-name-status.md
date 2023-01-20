@@ -3,9 +3,9 @@ title: Verificação de status do nome de domínio
 description: Saiba como determinar se o nome de domínio personalizado foi verificado com sucesso pelo Cloud Manager.
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 source-git-commit: d22d657361ea6c4885babd76e6b4c10f88378994
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '663'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
@@ -54,15 +54,15 @@ O Cloud Manager acionará automaticamente uma verificação TXT quando você sel
 
 A seguir estão alguns erros comuns de nome de domínio e suas resoluções típicas.
 
-### Erro de Domínio Não Instalado {#domain-not-installed}
+### Erro de domínio não Instalado {#domain-not-installed}
 
-Esse erro pode ocorrer durante a validação do domínio do registro TXT mesmo após ter verificado que o registro foi atualizado adequadamente.
+Esse erro pode ocorrer durante a validação do domínio do registro TXT mesmo após a verificação de que o registro foi atualizado adequadamente.
 
 #### Causa do erro {#cause}
 
-Bloqueia com rapidez um domínio na conta inicial que o registrou e nenhuma outra conta pode registrar um subdomínio sem solicitar permissão. Além disso, o Fastly permite atribuir somente um domínio apex e subdomínios associados a um serviço e a uma conta do Fastly. Você verá esse erro se tiver uma conta existente do Fastly vinculada ao mesmo apex e subdomínios usados para os domínios do AEM Cloud Service.
+O Fastly bloqueia um domínio para a conta inicial que o registrou e nenhuma outra conta pode registrar um subdomínio sem solicitar permissão. Além disso, o Fastly permite atribuir somente um domínio apex e subdomínios associados a um serviço e a uma conta do Fastly. Você verá esse erro se tiver uma conta existente do Fastly vinculada ao mesmo apex e subdomínios usados para os domínios do AEM Cloud Service.
 
-#### Resolução de Erro {#resolution}
+#### Resolução de erro {#resolution}
 
 O erro é corrigido da seguinte maneira:
 
@@ -70,17 +70,17 @@ O erro é corrigido da seguinte maneira:
 
 * Use essa opção para vincular o domínio apex e todos os subdomínios à conta do Fastly no AEM as a Cloud Service. Consulte [Trabalho com domínios na documentação do Fastly](https://docs.fastly.com/en/guides/working-with-domains) para obter mais detalhes.
 
-* Se o domínio apex tiver vários subdomínios para AEM sites as a Cloud Service e não AEM que você deseja vincular a diferentes contas Fastly, tente instalar o domínio no Cloud Manager. Se a instalação do domínio falhar, crie um tíquete de Suporte ao cliente com o Fastly para que o Adobe possa dar seguimento com o Fastly em seu nome.
+* Se o seu domínio apex tiver vários subdomínios para os sites do AEM as a Cloud Service e os sites diferentes do AEM as a Cloud Service que você deseja vincular a diferentes contas Fastly, tente instalar o domínio no Cloud Manager. Se a instalação do domínio falhar, crie um tíquete de Suporte ao cliente com o Fastly para que a Adobe possa dar seguimento com o Fastly em seu nome.
 
 >[!TIP]
 >
->A solução de problemas de delegação de domínio com o Fastly geralmente leva de 1 a 2 dias úteis. Por esse motivo, é altamente recomendável instalar os domínios bem antes de sua data de ativação.
+>A solução de problemas de delegação de domínio com o Fastly geralmente leva de 1 a 2 dias úteis. Por esse motivo, é altamente recomendável instalar os domínios bem antes das respectivas datas de ativação.
 
 >[!NOTE]
 >
->Não roteie o DNS do site para AEM IPs as a Cloud Service se o domínio não tiver sido instalado com êxito.
+>Não roteie o DNS do site para os IPs do AEM as a Cloud Service se o domínio não tiver sido instalado com sucesso.
 
-## Configurações pré-existentes da CDN para nomes de domínio personalizados {#pre-existing-cdn}
+## Configurações de CDNs pré-existentes para nomes de domínio personalizados {#pre-existing-cdn}
 
 Se você tiver uma configuração de CDN pré-existente para seus nomes de domínio personalizados, haverá uma mensagem informativa nas páginas **Nomes de domínio personalizados** e **Ambiente** incentivando você a adicionar essas configurações por meio da interface do usuário, para que fiquem visíveis e possam ser definidas no Cloud Manager.
 
