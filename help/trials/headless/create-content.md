@@ -4,10 +4,10 @@ description: Use o modelo de Fragmento de conteúdo criado anteriormente para cr
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: bcab02cbd84955ecdc239d4166ae38e5f79b3264
+source-git-commit: 741fadcffc496cb1c32d1943f7759e8d70cf92ff
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 1%
+source-wordcount: '478'
+ht-degree: 3%
 
 ---
 
@@ -32,17 +32,11 @@ ht-degree: 1%
 
 ## Criar um fragmento de conteúdo {#create-fragment}
 
-Clicar no **Iniciar o console Fragmento de conteúdo** acima abre o console Fragmento de conteúdo em uma nova guia.
-
-![Edição do conteúdo do fragmento](assets/create-content/content-fragment-console.png)
-
-Os Fragmentos de conteúdo representam o conteúdo sem periféricos e são baseados em estruturas predefinidas, chamadas Modelos de Fragmento de conteúdo. Pense no console Fragmento de conteúdo como a biblioteca de conteúdo sem periféricos. Use-o para criar novos Fragmentos de conteúdo e gerenciar os existentes. Seu console começa vazio, por isso vamos criar um novo fragmento!
+Os Fragmentos de conteúdo representam o conteúdo sem periféricos e são baseados em estruturas predefinidas, chamadas Modelos de Fragmento de conteúdo. Pense no console Fragmento de conteúdo como a biblioteca de conteúdo sem periféricos. Use-o para criar novos Fragmentos do conteúdo e gerenciar fragmentos existentes.
 
 1. Toque ou clique no botão **Criar** na parte superior direita do console.
 
 1. O **Novo fragmento de conteúdo** será aberta onde você pode começar a criar um novo Fragmento do conteúdo. **Localização** é automaticamente preenchida com onde o novo conteúdo será salvo.
-
-   ![Caixa de diálogo Criar fragmento de conteúdo](assets/create-content/create-content-fragment.png)
 
 1. No **Modelo do fragmento de conteúdo** selecione o modelo de Fragmento de conteúdo criado anteriormente.
 
@@ -50,26 +44,24 @@ Os Fragmentos de conteúdo representam o conteúdo sem periféricos e são basea
 
 1. Toque ou clique **Criar e abrir**.
 
+![Criar um novo fragmento de conteúdo](assets/do-not-localize/create-content-3-4-5.png)
+
 ## Adicionar conteúdo ao fragmento de conteúdo {#add-content}
 
 Depois de salvar e abrir o novo Fragmento de conteúdo, o editor Fragmento de conteúdo é aberto em uma nova guia. Aqui, você pode adicionar o conteúdo do novo fragmento.
 
 1. O editor de Fragmento de conteúdo mostra os campos definidos no modelo selecionado. Aqui, você pode adicionar conteúdo a cada campo para concluir o Fragmento de conteúdo. Seu progresso é salvo automaticamente.
 
-   ![Editor de fragmento de conteúdo](assets/create-content/content-fragment-editor.png)
-
 1. Quando terminar de adicionar conteúdo, toque ou clique no botão **Publicar** na parte superior direita do editor. Isso disponibiliza o Fragmento de conteúdo para consumo por aplicativos externos.
 
 1. Selecionar **Agora** no menu suspenso . Você também pode agendá-lo para publicação posteriormente.
 
-   ![Botão Publicar](assets/create-content/publish.png)
+   ![Criar conteúdo](assets/do-not-localize/add-content-1-2.png)
 
 1. O **Publicar fragmentos de conteúdo** será exibida. O AEM executa automaticamente uma verificação de referência para garantir que todos os recursos necessários sejam publicados no Fragmento do conteúdo. Nesse caso, também será necessário publicar o modelo criado. Toque ou clique em **Publicar**.
 
-   ![Verificação de referência](assets/create-content/references.png)
+   ![Publicação e verificação de referência](assets/do-not-localize/publish-4.png)
 
 1. A publicação é confirmada em um banner.
-
-   ![Confirmação da publicação](assets/create-content/publish-confirm.png)
 
 Seu conteúdo é publicado e está pronto para ser entregue ao seu aplicativo ou site como um Fragmento de conteúdo.

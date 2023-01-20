@@ -4,9 +4,9 @@ description: Use um exemplo de aplicativo React para saber como personalizar o c
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: bcab02cbd84955ecdc239d4166ae38e5f79b3264
+source-git-commit: 741fadcffc496cb1c32d1943f7759e8d70cf92ff
 workflow-type: tm+mt
-source-wordcount: '1070'
+source-wordcount: '1035'
 ht-degree: 0%
 
 ---
@@ -32,19 +32,15 @@ ht-degree: 0%
 
 ## Visualizar o aplicativo {#preview}
 
-Clicar no **Iniciar o editor de Fragmento de conteúdo** acima abre o editor Fragmento de conteúdo em uma nova guia.
-
-![Editor de fragmento de conteúdo](assets/customize-app/content-fragment-editor.png)
-
-O aplicativo de amostra fornecido com a avaliação sem cabeçalho do AEM é fornecido pelos Fragmentos de conteúdo fornecidos pelo GraphQL. Use o editor Fragmento de conteúdo para se familiarizar com o conteúdo ao visualizar a amostra.
+Você inicia no editor Fragmento de conteúdo com o aplicativo de amostra fornecido com a avaliação sem cabeçalho AEM já carregada. O aplicativo de amostra é alimentado por Fragmentos de conteúdo fornecidos pelo GraphQL. Use o editor Fragmento de conteúdo para se familiarizar com o editor, visualizando o aplicativo de amostra.
 
 1. Toque ou clique no botão **Visualizar** na parte superior direita da tela do editor.
 
 1. O aplicativo de demonstração é aberto em uma nova guia. O aplicativo é para a ficcional marca de estilo de vida ao ar livre da WKND. Clique em para navegar pelo conteúdo de amostra.
 
-   ![Visualização do aplicativo de demonstração](assets/customize-app/preview-demo-app.png)
-
 1. Retorne à guia do navegador do editor Fragmento de conteúdo para continuar.
+
+![Visualizar o aplicativo](assets/do-not-localize/preview-app-1.png)
 
 ## Editar um cabeçalho no aplicativo {#edit-app}
 
@@ -52,25 +48,19 @@ O editor Fragmento de conteúdo exibe o layout básico do aplicativo como um Fra
 
 1. Toque ou clique **Mtn Biker em Canyon** no **Painéis** seção.
 
-   ![Toque em Mtn Biker no fragmento Canyon](assets/customize-app/mtn-biker-in-canyon.png)
+   ![Selecionar painel de texto](assets/do-not-localize/edit-header-1.png)
 
 1. O editor abre o painel de cabeçalho do aplicativo para o construtor de montanha. Cada painel é composto de camadas, representando imagens e texto diferentes que compõem a experiência.
 
-   ![Painéis](assets/customize-app/panels.png)
+1. Selecionar a camada de texto **Mtn Biker na Camada de Texto do Canyon** para abrir o detalhe da camada no editor. A camada é composta de vários Fragmentos do conteúdo que controlam o texto exibido neste painel do aplicativo.
 
-1. Selecionar a camada de texto **Mtn Biker na Camada de Texto do Canyon**. Isso abre o detalhe da camada no editor. A camada é composta de vários Fragmentos do conteúdo que controlam o texto exibido neste painel do aplicativo.
-
-   ![Selecione o Mtn Biker no Título do Canyon](assets/customize-app/mtn-biker-in-canyon-text-layer.png)
-
-1. Selecione o **Mtn Biker no Título do Canyon** item de texto. Isso abre o editor de Fragmento de conteúdo.
-
-   ![Selecionar o item de texto Mtn Biker no Título do Canyon](assets/customize-app/mtn-biker-in-canyon-title.png)
+1. Selecione o **Mtn Biker no Título do Canyon** item de texto. Isso abre o editor de Fragmento de conteúdo, mostrando o conteúdo desse fragmento e permitindo modificá-lo.
 
 1. Alterar o texto de `Your next great adventure is calling` para `Choose your own adventure`. A alteração é salva automaticamente pelo editor.
 
 1. Toque ou clique **Visualizar** na parte superior direita da janela para ver as alterações. A visualização do aplicativo de demonstração é aberta em uma nova guia.
 
-   ![Visualização do aplicativo de demonstração](assets/customize-app/preview-demo-app-text.png)
+   ![Visualização do aplicativo de demonstração](assets/do-not-localize/edit-header-5-6.png)
 
 É assim que é fácil atualizar o conteúdo em um aplicativo React quando integrado AEM CMS sem periféricos.
 
@@ -78,19 +68,17 @@ O editor Fragmento de conteúdo exibe o layout básico do aplicativo como um Fra
 
 Agora que você modificou um título no aplicativo, tente alterar uma imagem.
 
-1. Retorne à guia do navegador do editor Fragmento de conteúdo .
+1. Retorne à guia do navegador do editor Fragmento de conteúdo a partir da visualização.
 
 1. Você precisa retornar ao local correto no editor Fragmento de conteúdo . As navegações estruturais no canto superior esquerdo do editor mostram onde você está na hierarquia de conteúdo. Toque ou clique **Mtn Biker em Canyon** na navegação estrutural para retornar a essa página.
 
-   ![Navegações estruturais](assets/customize-app/breadcrumbs.png)
+   ![Navegações estruturais](assets/do-not-localize/swap-image-2.png)
 
 1. Selecione o **Mtn Biking - Biker** camada da imagem. Isso abre o editor de Fragmento de conteúdo
 
-   ![Editar fragmento de imagem](assets/customize-app/mtn-biking-biker.png)
-
 1. Toque ou clique no botão **X** para remover a imagem do biker. A imagem desaparece e o editor mostra um erro, pois a imagem é um dado necessário para esse modelo de Fragmento de conteúdo.
 
-   ![Imagem removida do fragmento](assets/customize-app/mtn-biking-biker-no-image.png)
+   ![Remover imagem do fragmento](assets/do-not-localize/swap-image-4.png)
 
 1. Toque ou clique **Adicionar ativo**.
 
@@ -98,11 +86,7 @@ Agora que você modificou um título no aplicativo, tente alterar uma imagem.
 
 1. Selecione a imagem `biker-yellow.png` e toque ou clique em **Selecionar**.
 
-   ![Selecionar ativo](assets/customize-app/select-asset.png)
-
 1. A imagem do biker é substituída pela imagem selecionada. O editor salva as alterações automaticamente.
-
-   ![Fragmento editado da imagem do biker](assets/customize-app/mtn-biking-biker-edited.png)
 
 1. Toque ou clique **Visualizar** na parte superior direita da janela para ver as alterações. A visualização do aplicativo de demonstração é aberta em uma nova guia. Clique em atualizar no navegador e você deverá ver sua nova imagem de biker com shorts amarelos no aplicativo.
 
@@ -112,44 +96,39 @@ Agora que você modificou um título no aplicativo, tente alterar uma imagem.
 
 Agora que você atualizou a imagem do biker, vamos analisar como adicionar novo conteúdo a um aplicativo criando e referenciando um novo Fragmento do conteúdo. Você adicionará uma chamada de produto gerenciada por um Fragmento de conteúdo de &quot;momento que pode ser comprado&quot; ao segundo painel do aplicativo.
 
-![Exemplo de um momento que pode ser comprado](assets/customize-app/example-shoppable-moment.png)
+![Exemplo de um momento que pode ser comprado](assets/do-not-localize/example-shoppable-moment.png)
 
-1. Retorne à guia do navegador do editor Fragmento de conteúdo .
+1. Retorne à guia do navegador do editor Fragmento de conteúdo na guia pré-visualização.
 
 1. Você precisa retornar ao local correto no editor Fragmento de conteúdo . As navegações estruturais no canto superior esquerdo do editor mostram onde você está na hierarquia de conteúdo. Toque ou clique **WKND Home** na navegação estrutural para retornar a essa página.
 
-   ![Voltar para a tela de layout](assets/customize-app/breadcrumbs-2.png)
-
 1. Selecione o **Mtn Biker em WKND Yellow** painel.
-
-   ![Criar um momento que pode ser comprado](assets/customize-app/mtn-biker-on-wknd-yellow.png)
 
 1. Selecione o **Mtn Biking - Comprável** camada.
 
-   ![Selecionar camada de momento que pode ser comprada](assets/customize-app/mtn-biking-shoppable.png)
-
 1. Para criar uma nova chamada nesse painel, você deve criar um novo Fragmento de conteúdo de momento que pode ser comprado. Toque ou clique no botão **+ Criar novo fragmento** botão.
 
-   ![Adicionar um momento que pode ser comprado](assets/customize-app/create-new-fragment.png)
+   ![Adicionar um momento que pode ser comprado](assets/do-not-localize/add-reference-1-5.png)
 
 1. Primeiro, você deve escolher um modelo no qual basear o novo Fragmento de conteúdo. Selecione o **Item de Momento Comprável** do **Modelo do fragmento de conteúdo** lista suspensa.
 
 1. Nomeie o Fragmento do conteúdo. Por exemplo, insira `Shorts` na **Nome** campo.
 
-   ![Dê um nome ao momento que pode ser comprado](assets/customize-app/new-content-fragment.png)
-
 1. Toque ou clique **Criar e abrir**.
+
+   ![Dê um nome ao momento que pode ser comprado](assets/do-not-localize/add-reference-6-7-8.png)
 
 1. O editor é aberto para o novo Fragmento do conteúdo.
 
 1. Dê um nome ao momento que pode ser comprado na **Texto** como `Yellow shorts`.
 
 1. Definir valores para **X** e **Y**. É aqui que essa chamada deve ser sobreposta ao painel. As alterações no fragmento são salvas automaticamente pelo editor
-   * **X**: `-18`
-   * **Y**: `-28`
 
-   ![Editar o momento que pode ser comprado](assets/customize-app/edit-shoppable-moment.png)
+   * **X**: `-5`
+   * **Y**: `-10`
 
 1. Toque ou clique **Visualizar** na parte superior direita da janela para ver as alterações. A visualização do aplicativo de demonstração é aberta em uma nova guia. Clique em atualizar no navegador para testar o posicionamento e fazer ajustes, conforme necessário, no editor.
+
+   ![Visualizar](assets/do-not-localize/add-reference-10-11-12.png)
 
 Agora você sabe como criar novo conteúdo e referenciá-lo como um Fragmento de conteúdo no aplicativo podem ser concluídos sem ciclos de desenvolvimento.

@@ -4,19 +4,19 @@ description: Saiba como usar Fragmentos de conteúdo e a API do GraphQL como um 
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: bcab02cbd84955ecdc239d4166ae38e5f79b3264
+source-git-commit: 741fadcffc496cb1c32d1943f7759e8d70cf92ff
 workflow-type: tm+mt
-source-wordcount: '847'
-ht-degree: 0%
+source-wordcount: '732'
+ht-degree: 1%
 
 ---
 
 
-# Extrair conteúdo por meio da API GraphQL {#extract-content}
+# Extrair conteúdo por meio da API do GraphQL {#extract-content}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_graphql"
->title="Extrair conteúdo usando a API do GraphQL"
+>title="Extrair conteúdo usando a API GraphQL"
 >abstract="Neste módulo, você aprenderá a usar os Fragmentos de conteúdo e a API do GraphQL como um sistema de gerenciamento de conteúdo sem periféricos."
 
 >[!CONTEXTUALHELP]
@@ -32,15 +32,9 @@ ht-degree: 0%
 
 ## Consulta de uma lista de conteúdo de amostra {#list-query}
 
-Clicar no **Iniciar o GraphQL Explorer** acima abre o explorador do GraphQL em uma nova guia.
+Você inicia no GraphQL Explorer em uma nova guia. Aqui, você pode criar e validar consultas contra seu conteúdo headless antes de usá-las para alimentar o conteúdo do seu aplicativo ou site.
 
-![O Editor de consultas GraphQL](assets/extract-content/query-editor.png)
-
-Usando o GraphQL Explorer, você pode criar e validar consultas em relação ao seu conteúdo headless antes de usá-las para potencializar o conteúdo do seu aplicativo ou site. Vamos ver como isso é feito!
-
-1. Sua avaliação sem cabeçalho de AEM vem com um terminal pré-carregado com Fragmentos de conteúdo do qual você pode extrair conteúdo para fins de teste. Selecione o **Ativos de demonstração AEM** do **Endpoint** menu suspenso no canto superior direito do editor.
-
-   ![Selecionar ponto de extremidade](assets/extract-content/select-endpoint.png)
+1. Sua avaliação sem cabeçalho de AEM vem com um terminal pré-carregado com Fragmentos de conteúdo do qual você pode extrair conteúdo para fins de teste. Certifique-se de que a variável **Ativos de demonstração AEM** O endpoint é selecionado na variável **Endpoint** menu suspenso no canto superior direito do editor.
 
 1. Copie o seguinte trecho de código para uma consulta de lista do pré-carregado **Ativos de demonstração AEM** endpoint . Um query de lista retorna uma lista de todo o conteúdo que usa um modelo de Fragmento de conteúdo específico. As páginas Inventário e categoria normalmente usam esse formato de consulta.
 
@@ -67,19 +61,17 @@ Usando o GraphQL Explorer, você pode criar e validar consultas em relação ao 
 
 1. Substitua o conteúdo existente no editor de consultas colando o código copiado.
 
-   ![Listar consulta](assets/extract-content/list-query.png)
-
 1. Depois de colado, clique no botão **Reproduzir** na parte superior esquerda do Editor de consultas para executar a query.
 
 1. Os resultados são exibidos no painel direito, ao lado do editor de query. Se a consulta estiver incorreta, um erro aparecerá no painel direito.
 
-   ![Listar resultados da consulta](assets/extract-content/list-query-results.png)
+   ![Listar consulta](assets/do-not-localize/list-query-1-3-4-5.png)
 
 Você acabou de validar uma consulta de lista para obter uma lista completa de todos os Fragmentos de conteúdo. Esse processo ajuda a garantir que a resposta seja o que seu aplicativo espera, com resultados que ilustram como seus aplicativos e sites recuperarão o conteúdo criado no AEM.
 
 ## Consulta de uma parte específica do conteúdo de amostra {#bypath-query}
 
-A execução de uma consulta byPath permite recuperar o conteúdo de um Fragmento de conteúdo específico. As páginas de detalhes do produto e as páginas que se concentram em um conjunto específico de conteúdo normalmente exigem esse tipo de consulta. Vamos ver como funciona!
+A execução de uma consulta byPath permite recuperar o conteúdo de um Fragmento de conteúdo específico. As páginas de detalhes do produto e as páginas que se concentram em um conjunto específico de conteúdo normalmente exigem esse tipo de consulta.
 
 1. Copie o seguinte trecho de código para uma consulta byPath do pré-carregado **Ativos de demonstração AEM** endpoint .
 
@@ -90,11 +82,11 @@ A execução de uma consulta byPath permite recuperar o conteúdo de um Fragment
      ) {
        item {
          _path
-         adventureTitle
-         adventureDescription {
+         title
+         description {
            json
          }
-         adventurePrimaryImage {
+         primaryImage {
            ... on ImageRef {
              _path
              width
@@ -108,46 +100,32 @@ A execução de uma consulta byPath permite recuperar o conteúdo de um Fragment
 
 1. Substitua o conteúdo existente no editor de consultas colando o código copiado.
 
-   ![Consulta byPath](assets/extract-content/bypath-query.png)
-
 1. Depois de colado, clique no botão **Reproduzir** na parte superior esquerda do Editor de consultas para executar a query.
 
 1. Os resultados são exibidos no painel direito, ao lado do editor de query. Se a consulta estiver incorreta, um erro aparecerá no painel direito.
 
-   ![Resultados da consulta porPath](assets/extract-content/bypath-query-results.png)
+   ![Resultados da consulta porPath](assets/do-not-localize/bypath-query-2-3-4.png)
 
 Você acabou de validar um query byPath para recuperar um Fragmento do conteúdo específico identificado pelo caminho desse fragmento.
 
 ## Consultar seu próprio conteúdo {#own-queries}
 
-Agora que você executou os dois tipos principais de queries, está pronto para consultar seu próprio conteúdo!
+Agora que você executou os dois tipos principais de queries, está pronto para consultar seu próprio conteúdo.
 
 1. Para executar consultas em relação aos seus próprios Fragmentos de conteúdo, altere o endpoint da variável **Ativos de demonstração AEM** para **Seu projeto** pasta.
 
-   ![Selecione seu próprio terminal](assets/extract-content/select-endpoint.png)
-
 1. Exclua todo o conteúdo existente no Editor de consultas. Em seguida, digite o colchete de abertura `{` e pressione Ctrl+Espaço ou Option+Espaço para obter uma lista de modelos de preenchimento automático que foram definidos no seu ponto de extremidade. Selecione o modelo criado que termina em `List` nas opções.
 
-   ![Modelos de preenchimento automático no Editor de consultas](assets/extract-content/auto-complete-models.png)
+   ![Iniciar consulta personalizada](assets/do-not-localize/custom-query-1-2.png)
 
 1. Defina os itens que a consulta deve conter para o modelo de Fragmento de conteúdo selecionado. Novamente, digite o colchete aberto `{`e pressione Ctrl+Espaço ou Opção+Espaço para obter uma lista de preenchimento automático. Selecionar `items` nas opções.
 
-   ![Preencher automaticamente itens no Editor de consultas](assets/extract-content/auto-complete-items.png)
+1. Toque ou clique no botão **Prettify** para formatar automaticamente seu código para facilitar a leitura.
 
-1. Defina os campos que a consulta deve conter para o modelo de fragmento de conteúdo selecionado. Mais uma vez, digite o colchete aberto `{`e pressione Ctrl+Espaço ou Option+Espaço para obter uma lista de campos disponíveis no modelo de Fragmento de conteúdo. Selecione os campos que deseja do modelo na lista.
-
-   ![Preencher automaticamente campos no Editor de consultas](assets/extract-content/auto-complete-fields.png)
-
-1. Delimite vários campos com uma vírgula (`,`) ou espaço e pressione Ctrl+Espaço ou Option+Espaço novamente para selecionar campos adicionais.
-
-1. À medida que você trabalha, é possível tocar ou clicar no botão **Prettify** para formatar automaticamente seu código para facilitar a leitura.
-
-   ![Prettify](assets/extract-content/prettify.png)
-
-1. Depois de concluir, toque ou clique no botão **Reproduzir** na parte superior esquerda do editor para executar a query.
-
-   ![Resultados de sua própria query](assets/extract-content/custom-query-results.png)
+1. Depois de concluir, toque ou clique no botão **Reproduzir** na parte superior esquerda do editor para executar a query. O editor preenche automaticamente o `items` e a consulta é executada.
 
 1. Os resultados são exibidos no painel direito, ao lado do editor de query.
+
+   ![Executar consulta personalizada](assets/do-not-localize/custom-query-3-4-5-6.png)
 
 É assim que seu conteúdo pode ser entregue para experiências digitais omnicanais.
