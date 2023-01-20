@@ -3,9 +3,9 @@ title: Visualização de conteúdo
 description: Saiba como usar o serviço de visualização do AEM para visualizar o conteúdo antes de ele ser publicado.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
 source-git-commit: 5a804895013e19592f918341bbc7921261b26945
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '407'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -48,9 +48,9 @@ O conteúdo também pode ser publicado para visualização usando uma [árvore d
 
 ## Cancelar publicação de conteúdo da visualização {#unpublishing-content-from-preview}
 
-Cancelar a publicação de conteúdo do **Visualizar** o ambiente é basicamente o mesmo processo que [desfazer a publicação de páginas](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages) do **Publicar** ambiente.
+Cancelar a publicação de conteúdo do seu ambiente de **visualização** é basicamente o mesmo processo que [desfazer a publicação de páginas](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages) do **Publicar** ambiente.
 
-A única diferença é que você pode selecionar a variável **Destino** a **Visualizar**.
+A única diferença é que você pode selecionar o **destino** a ser **visualizado**.
 
 ## Configurações do OSGi para o nível de visualização {#configuring-osgi-settings-for-the-preview-tier}
 
