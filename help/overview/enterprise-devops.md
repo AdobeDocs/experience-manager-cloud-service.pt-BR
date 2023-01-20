@@ -3,9 +3,9 @@ title: DevOps empresarial
 description: Saiba mais sobre os processos, os métodos e a comunicação necessários para facilitar a implantação e simplificar a colaboração.
 exl-id: c8da1fd7-fe3e-4c7b-8fe7-1f7faf02769c
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1002'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -108,7 +108,7 @@ O código deve sempre ser propagado de baixo para cima:
 * depois testado novamente nos ambientes de preparo
 * somente então esse código deve ser implantado nos ambientes de produção
 
-O código (por exemplo, modelos de design e funcionalidade de aplicativos Web personalizados) geralmente é transferido por meio da exportação e importação de pacotes entre os diferentes repositórios de conteúdo. Quando significativo, essa replicação pode ser configurada como um processo automático.
+O código (por exemplo, funcionalidade de aplicativo web personalizado e modelos de design) geralmente é transferido por meio da exportação e importação de pacotes entre os diferentes repositórios de conteúdo. Quando significativo, essa replicação pode ser configurada como um processo automático.
 
 Os projetos do AEM as a Cloud Service geralmente acionam a implantação de código:
 
