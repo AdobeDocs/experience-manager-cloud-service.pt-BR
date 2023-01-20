@@ -3,9 +3,9 @@ title: Configuração do IMS para uso na integração com o Adobe Target
 description: Saiba mais sobre a configuração do IMS para uso na integração com o Adobe Target
 exl-id: b5474b70-bedc-4cc9-ad47-89dcb2415e3a
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '860'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ A integração do AEM com o Adobe Target por meio da API do Target Standard requ
 
 >[!NOTE]
 >
->A compatibilidade com a API do Target Standard da Adobe é novidade no AEMaaCS. A API do Target Standard usa autenticação IMS.
+>A compatibilidade com a API do Adobe Target Standard é novidade no AEMaaCS. A API do Target Standard usa autenticação IMS.
 >
 >A seleção da API é orientada pelo método de autenticação usado para a integração do AEM/Target.
 
@@ -161,7 +161,7 @@ Ao retornar para o AEM, é possível concluir a configuração do IMS adicionand
 1. Aqui você pode usar os [detalhes da configuração do projeto no Adobe Developer Console](#details-stored-for-the-ims-integration-project):
 
    * **Título**: seu texto.
-   * **Servidor de autorização**: Copie/cole no `aud` da **Carga** seção abaixo, por exemplo, `https://ims-na1.adobelogin.com` no exemplo abaixo
+   * **Servidor de autorização**: Copiar/colar isso da `aud` linha da seção de **Carga** abaixo, por exemplo, `https://ims-na1.adobelogin.com` no exemplo abaixo
    * **Chave da API**: copie isso da seção [Visão geral](#details-stored-for-the-ims-integration-project) do projeto
    * **Segredo do cliente**: gere isso na seção [Visão geral](#details-stored-for-the-ims-integration-project) do projeto e copie
    * **Carga**: copie isso da seção [Gerar JWT](#details-stored-for-the-ims-integration-project) 
