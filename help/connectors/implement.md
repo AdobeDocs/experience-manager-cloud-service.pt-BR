@@ -3,9 +3,9 @@ title: Implementação de um conector do AEM
 description: Implementação de um conector do AEM
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
 source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '968'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ Além da documentação estática acima, a Adobe e a comunidade do AEM oferecem 
 
 * O [Fórum AEM](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html) da comunidade da Adobe é um site ativo no qual seus colegas fazem perguntas e respondem a dúvidas
 * Recursos técnicos adicionais da Adobe estão disponíveis para determinados níveis de parceiros. Saiba mais sobre o [Programa Adobe Exchange](https://partners.adobe.com/exchangeprogram/experiencecloud).
-* Se sua organização deseja obter ajuda de implementação, considere a equipe de [Serviços profissionais](https://www.adobe.com/marketing-cloud/service-support/professional-consulting-training.html) da Adobe ou consulte o [Localizador de parceiros de soluções](https://solutionpartners.adobe.com/home/partnerFinder.html) para obter uma lista de parceiros da Adobe em todo o mundo
+* Se sua organização deseja obter ajuda de implementação, considere a equipe de [Serviços profissionais](https://www.adobe.com/br/marketing-cloud/service-support/professional-consulting-training.html) da Adobe ou consulte o [Localizador de parceiros de soluções](https://solutionpartners.adobe.com/home/partnerFinder.html) para obter uma lista de parceiros da Adobe em todo o mundo
 
 Regras de estrutura do pacote
 -----------------------
