@@ -3,15 +3,15 @@ title: Criação de conteúdo direcionado usando o modo Direcionar
 description: O modo de Direcionamento e o componente de Direcionamento fornecem ferramentas para criar o conteúdo das experiências
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
 source-git-commit: f619cc2b1fcc697ebe7af7370b6839fe5ce40419
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5414'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # Criação de conteúdo direcionado usando o modo Direcionar {#authoring-targeted-content-using-targeting-mode}
 
-Crie conteúdo direcionado usando o modo Direcionar do AEM. O modo Direcionar e o componente do Target fornecem ferramentas para criar conteúdo para experiências:
+Crie conteúdo direcionado usando o modo de Direcionamento do AEM. O modo Direcionar e o componente do Target fornecem ferramentas para criar conteúdo para experiências:
 
 * Reconheça facilmente o conteúdo direcionado que está na página. Uma linha pontilhada forma uma borda em torno de todo o conteúdo direcionado.
 * Selecione uma marca e uma atividade para ver as experiências.
@@ -24,15 +24,15 @@ Crie conteúdo direcionado usando o modo Direcionar do AEM. O modo Direcionar e 
 
 >[!NOTE]
 >
->O modo Direcionar está disponível no Editor de páginas e no Editor de fragmentos de experiência.
+>O modo de direcionamento está disponível no Editor de páginas e no Editor de fragmentos de experiência.
 >
->A documentação a seguir é aplicável a ambos (já que ambos operam na mesma base), embora tenha sido escrita para o Editor de páginas.
+>A documentação a seguir é aplicável a ambos (já que os dois operam na mesma base), embora tenha sido escrita para o Editor de páginas.
 
 >[!CAUTION]
 >
 >Ao direcionar no Editor de páginas, somente os componentes do Fragmento de experiência podem ser direcionados.
 >
->Outros tipos de componentes podem ser convertidos em um Fragmento de experiência usando o **Converter em variação de fragmento de experiência** na barra de ferramentas do componente.
+>Outros tipos de componentes podem ser convertidos em um Fragmento de experiência usando o ícone **Converter em variação de fragmento de experiência** na barra de ferramentas do componente.
 
 <!--
 >Other component types can be converted to an Experience Fragment using the **Convert to experience fragment variation** icon on the component toolbar:
@@ -40,7 +40,7 @@ Crie conteúdo direcionado usando o modo Direcionar do AEM. O modo Direcionar e 
 >![Converting component to Experience Fragment](/help/sites-cloud/authoring/assets/offers-convert-legacy-icon.png)
 -->
 
-Você pode usar o AEM ou o Adobe Target como o mecanismo de direcionamento (é necessário ter uma conta válida do Adobe Target para usá-lo). Se você estiver usando o Adobe Target, é necessário configurar a integração primeiro. Consulte a [instruções para integração com o Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
+Você pode usar o AEM ou o Adobe Target como o mecanismo de direcionamento (é necessário ter uma conta válida do Adobe Target para usá-lo). Se você estiver usando o Adobe Target, é necessário configurar a integração primeiro. Consulte as [instruções de integração com o Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
 
 ![Direcionamento de conteúdo](../assets/targeted-content.png)
 
@@ -520,13 +520,13 @@ Para definir metas e configurações usando o Adobe Target:
 
    ![Fonte dos relatórios](../assets/targeted-reporting-source.png)
 
-1. Na área **Métrica de meta**, em **Meu objetivo principal**, selecione a métrica de sucesso que deseja rastrear - Conversão, Receita, Participação - e insira como essa métrica é medida (ou que ação o público-alvo executa para indicar que um objetivo foi atingido). Consulte a definição das métricas de objetivo na tabela anterior e consulte a [documentação do Adobe Target](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html) sobre métricas de sucesso.
+1. Na área **Métrica de meta**, em **Meu objetivo principal**, selecione a métrica de sucesso que deseja rastrear - Conversão, Receita, Participação - e insira como essa métrica é medida (ou que ação o público-alvo executa para indicar que um objetivo foi atingido). Consulte a definição das métricas de objetivo na tabela anterior e consulte a [documentação do Adobe Target](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=pt-BR) sobre métricas de sucesso.
 
    Você pode renomear a meta ao clicar nos três pontos no canto superior direito e selecionar **Renomear**.
 
    Se precisar limpar todos os campos, clique nos três pontos no canto superior direito e selecione **Limpar todos os campos**.
 
-   Todas as métricas também possuem configurações avançadas que você pode definir. Selecione **Configurações avançadas** para acessá-las. Consulte a definição de como as métricas de sucesso são contadas na tabela anterior, bem como a [documentação do Adobe Target](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html).
+   Todas as métricas também possuem configurações avançadas que você pode definir. Selecione **Configurações avançadas** para acessá-las. Consulte a definição de como as métricas de sucesso são contadas na tabela anterior, bem como a [documentação do Adobe Target](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=pt-BR).
 
    >[!NOTE]
    >
