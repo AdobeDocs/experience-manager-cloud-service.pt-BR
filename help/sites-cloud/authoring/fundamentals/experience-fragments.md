@@ -346,11 +346,11 @@ Para personalizar o fragmento:
    >O **Caminho do ContextHub** selecionado na guia **Personalização** deve ser:
    >
    >* o mesmo caminho que o configurado para a página em que o fragmento será renderizado
-      >Ou:
+   >Ou:
    >* um caminho que contenha um subconjunto dos armazenamentos definidos no ContextHub configurado para a página
-
    >
    > 
+
 O **Caminho dos segmentos** selecionado na guia **Personalização** deve ser:
    * o mesmo caminho que o configurado para a página em que o fragmento será renderizado
 Ou
@@ -381,8 +381,8 @@ Os detalhes são mostrados em todas as exibições do console **Fragmentos de ex
    As propriedades estão disponíveis em várias guias:
 
    >[!CAUTION]
-   Essas guias são exibidas quando você abre **Propriedades** no console Fragmentos de experiência.
-   Se você clicar em **Abrir propriedades** ao editar um Fragmento de experiência, as [Propriedades da página](/help/sites-cloud/authoring/fundamentals/page-properties.md) apropriadas serão exibidas.
+   >Essas guias são exibidas quando você abre **Propriedades** no console Fragmentos de experiência.
+   >Se você clicar em **Abrir propriedades** ao editar um Fragmento de experiência, as [Propriedades da página](/help/sites-cloud/authoring/fundamentals/page-properties.md) apropriadas serão exibidas.
 
    ![Propriedades do fragmento de experiência](/help/sites-cloud/authoring/assets/xf-17.png)
 
@@ -411,7 +411,7 @@ Os detalhes são mostrados em todas as exibições do console **Fragmentos de ex
 Usando o seletor `.plain.` no URL, você poderá acessar a representação HTML simples do navegador.
 
 >[!NOTE]
-Embora isso esteja disponível diretamente no navegador, [o principal objetivo é permitir que outros aplicativos (por exemplo, aplicativos Web de terceiros, implementações personalizadas de publicações de conteúdo para dispositivos móveis) acessem o conteúdo do Fragmento de experiência diretamente, usando apenas o URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
+>Embora isso esteja disponível diretamente no navegador, [o principal objetivo é permitir que outros aplicativos (por exemplo, aplicativos Web de terceiros, implementações personalizadas de publicações de conteúdo para dispositivos móveis) acessem o conteúdo do Fragmento de experiência diretamente, usando apenas o URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
 
 ## Publicação de fragmentos de experiência {#publishing-experience-fragments}
 
