@@ -2,10 +2,10 @@
 title: Ambientes de desenvolvimento rápido
 description: Saiba como aproveitar os ambientes de desenvolvimento rápido para iterações de desenvolvimento rápidas em um ambiente em nuvem.
 hidefromtoc: true
-source-git-commit: 983901387d059a98942b4f7c533770a55dd4ff4a
+source-git-commit: 084ebface5a28cdf5dbacf21b79934046062a847
 workflow-type: tm+mt
-source-wordcount: '2114'
-ht-degree: 7%
+source-wordcount: '2350'
+ht-degree: 6%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 7%
 
 >[!AVAILABILITY]
 >
->Este recurso ainda não está disponível.
+>Esse recurso está planejado para ser implantado gradualmente nos clientes durante o mês de fevereiro.
 
 Para implantar alterações, os ambientes atuais de desenvolvimento da Cloud exigem o uso de um processo que emprega extensas regras de qualidade e segurança de código chamadas de pipeline de CI/CD. Para situações em que são necessárias alterações rápidas e iterativas, o Adobe introduziu Ambientes de Desenvolvimento Rápido (RDEs).
 
@@ -30,9 +30,7 @@ Cada programa é provisionado com um RDE. No caso de contas de sandbox, elas hib
 
 Normalmente, um RDE seria usado por um único desenvolvedor em um determinado momento, para testar e depurar um recurso específico. Quando a sessão de desenvolvimento é concluída, o RDE pode ser redefinido em um estado padrão para o próximo uso.
 
-<!-- Temporarily hiding this. See CQDOC-19795 for more details
-
-Additional RDEs may be purchased for Production programs -->
+Os RDEs adicionais podem ser licenciados para programas de Produção (não sandbox).
 
 ## Ativando o RDE em um programa {#enabling-rde-in-a-program}
 
@@ -388,14 +386,17 @@ Embora o RDE seja, de muitas formas, semelhante a um Ambiente de desenvolvimento
 
 Por esses motivos, é recomendável que, depois de validar o código em um ambiente RDE, você implante o código em um Ambiente de desenvolvimento de nuvem usando o pipeline de não produção. Por fim, teste o código antes de implantar com o pipeline de produção.
 
-<!-- Temporarily hiding this. See CQDOC-19795 for more details
+Observe também as seguintes considerações específicas da solução:
 
-## How many RDEs do I need? {#how-many-rds-do-i-need}
+* No momento, os RDEs não suportam a visualização e a depuração do código front-end implantado usando o Pipeline de front-end do Cloud Manager.
 
-The purchase of additional RDEs for Production programs will be possible beginning with late January.
 
-The number of RDEs needed depends on the make-up and processes of an organization. The most flexible model is where an organization purchases a dedicated RDE for each one of their AEM CS developers. In this model, each developer can test their code on the RDE without needing to coordinate with other team members around whether an RDE environment is available.
+## Quantos RDEs eu preciso? {#how-many-rds-do-i-need}
 
-At the other extreme, a team with a single RDE may use internal processes to coordinate which developer can use the environment at a given time. This can possibly be whenever a developer has hit an intermediate feature milestone and is ready to validate in a Cloud environment where they can quickly make the changes they need.
+Um RDE está disponível para cada solução licenciada e o Adobe também oferece RDEs adicionais, que podem ser licenciados para programas de produção (não sandbox).
 
-An intermediate model is one where an organization purchases a number of RDEs that will create a situation in which not every developer will have a dedicated environment, but there is a greater likelihood of an unused RDE being available. One strategy could be to allocate an RDE per scrum team or major feature. Internal processes may be used to coordinate usage of the environments. -->
+O número de RDEs necessários depende da composição e dos processos de uma organização. O modelo mais flexível é o local em que uma organização compra um RDE dedicado para cada um de seus desenvolvedores de AEM Cloud Service. Neste modelo, cada desenvolvedor pode testar seu código no RDE sem coordenar com outros membros da equipe sobre se um ambiente RDE está disponível.
+
+No outro extremo, uma equipe com um único RDE pode usar processos internos para coordenar qual desenvolvedor pode usar o ambiente em um determinado momento. Isso pode ser possível sempre que um desenvolvedor atingir um marco de recurso intermediário e estiver pronto para validar em um ambiente do Cloud, onde poderá fazer rapidamente as alterações necessárias.
+
+Um modelo intermediário é aquele em que uma organização compra vários RDEs para que haja uma maior probabilidade de um RDE não utilizado estar disponível. Uma estratégia poderia ser alocar um RDE por equipe de arranhão ou recurso principal. Processos internos podem ser usados para coordenar o uso dos ambientes.
