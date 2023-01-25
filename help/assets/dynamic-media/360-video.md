@@ -4,9 +4,9 @@ description: Saiba como trabalhar com 360 e Vídeo de realidade virtual (VR) no 
 feature: 360 VR Video
 role: User
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
-source-git-commit: 033692b82ee366b70f69ca35d55bfac59da3157f
+source-git-commit: 419ec6604ee8c93510cb8bf4e1d46bc9b9c9383a
 workflow-type: tm+mt
-source-wordcount: '929'
+source-wordcount: '989'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Consulte também [Gerenciar predefinições do visualizador](/help/assets/dynami
 
 Selecionar [Estação Espacial 360](https://s7d1.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) para abrir uma janela do navegador e assistir a um vídeo de 360°. Durante a reprodução do vídeo, arraste o ponteiro para um novo local para alterar o ângulo de exibição.
 
-![360 Amostra de vídeo](assets/6_5_360videoiss_simplified.png)
+![Vídeo quadro da estação espacial 360](assets/6_5_360videoiss_simplified.png)
 *Quadro de vídeo da Estação Espacial 360*
 
 ## Vídeo 360/VR e Adobe Premiere Pro {#vr-video-and-adobe-premiere-pro}
@@ -42,7 +42,7 @@ Consulte [Editar vídeo 360/VR](https://helpx.adobe.com/premiere-pro/how-to/edit
 
 360 ativos de vídeo que são enviados por upload para [!DNL Experience Manager] são rotuladas como **Multimídia** em uma página Ativo, semelhante ao ativo de vídeo normal.
 
-![6_5_360seleção de vídeo para visualização](assets/6_5_360video-selecttopreview.png)
+![Um ativo de vídeo de 360 enviado, visualizado na exibição de Cartão](assets/6_5_360video-selecttopreview.png)
 *Um ativo de vídeo de 360 enviado, visualizado na exibição de Cartão. O ativo é rotulado como Multimídia.*
 
 **Faça upload de ativos para usar com o visualizador de vídeo 360:**
@@ -106,25 +106,25 @@ Consulte [Adicionar ativos Dynamic Media às páginas](/help/assets/dynamic-medi
 
 1. Em **[!UICONTROL Ativos]**, navegue até um vídeo 360 existente que você criou. Para abri-lo no modo de visualização, selecione o ativo de Vídeo 360.
 
-   ![6_5_360seleção de vídeo-visualização-1](assets/6_5_360video-selecttopreview-1.png)
+   ![Captura de tela de um ativo de vídeo 360 carregado, conforme visto na exibição Cartão do Experience Manager.](assets/6_5_360video-selecttopreview-1.png)
 
    Para visualizar o vídeo, selecione o ativo de 360 vídeos.
 
 1. Na página de visualização, próximo ao canto superior esquerdo da página, selecione a lista suspensa e selecione **[!UICONTROL Visualizadores]**.
 
-   ![6_5_360visualizadores de visualização de vídeo](assets/6_5_360video-preview-viewers.png)
+   ![Captura de tela da seleção de Visualizadores para ver a lista de visualizadores de vídeo disponíveis.](assets/6_5_360video-preview-viewers.png)
 
    Na lista Visualizadores , selecione **[!UICONTROL Video360_social]**, em seguida, execute um dos seguintes procedimentos:
 
    * Para alterar o ângulo de visualização da cena estática, arraste o ponteiro sobre o vídeo.
    * Para iniciar a reprodução, selecione o **[!UICONTROL Reproduzir]** botão. Conforme o vídeo é reproduzido, arraste o ponteiro sobre o vídeo para alterar seu ângulo de exibição.
 
-   ![6_5_360video-preview-video360-social ](assets/6_5_360video-preview-video360-social.png)*Uma captura de tela de 360 vídeos.*
+   ![Captura de tela de um usuário selecionando o visualizador do Video360_Social para visualizar um vídeo de 360 graus.](assets/6_5_360video-preview-video360-social.png)*Uma captura de tela de 360 vídeos.*
 
    * Na lista Visualizadores , selecione **[!UICONTROL Video360VR]**.
 
       Vídeo VR (Virtual Reality) é um conteúdo de vídeo imersivo que é acessado usando fones de realidade virtual. Assim como em vídeos comuns, você cria vídeos VR no início quando um vídeo está sendo gravado ou capturado por meio de câmeras de vídeo 360°.
-   ![6_5_360video-preview-video360vr](assets/6_5_360video-preview-video360vr.png)
+   ![Captura de tela de um usuário passando o ponteiro do mouse sobre a opção Visualizador de vídeo360VR.](assets/6_5_360video-preview-video360vr.png)
    *Uma captura de tela de vídeo 360 VR.*
 
 1. Próximo ao canto superior direito da página de visualização, selecione **[!UICONTROL Fechar]**.
