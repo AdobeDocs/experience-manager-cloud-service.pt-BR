@@ -3,7 +3,7 @@ title: Suporte a novas localidades para localização de formulários adaptávei
 seo-title: Supporting new locales for adaptive forms localization
 description: O AEM Forms permite adicionar novas localidades para localizar formulários adaptáveis. Inglês (en), Espanhol (es), Francês (fr), Italiano (it), Alemão (de), Japonês (ja), Português-Brasileiro (pt-BR), Chinês (zh-CN), Chinês-Taiwan (zh-TW) e Coreano (ko-KR).
 seo-description: AEM Forms allows you to add new locales for localizing adaptive forms. We support 10 locales out of the box curently, as  "en","fr","de","ja","pt-br","zh-cn","zh-tw","ko-kr","it","es".
-source-git-commit: eb722054f6a51320a7772bf666f656418f8392cd
+source-git-commit: 848c6a4ea403f644408407aed0a7e06c3524d942
 workflow-type: tm+mt
 source-wordcount: '1141'
 ht-degree: 0%
@@ -34,8 +34,8 @@ Para adicionar suporte para um novo local no tempo de execução do Adaptive For
 1. [Clonar o repositório](#1-clone-the-repository-clone-the-repository)
 1. [Adicionar uma localidade ao serviço GuideLocalizationService](#1-add-a-locale-to-the-guide-localization-service-add-a-locale-to-the-guide-localization-service-br)
 1. [Adicionar pasta específica do nome da localidade](#3-add-locale-name-specific-folder-add-locale-name-specific-folder)
-3.1. [Adicionar biblioteca de cliente XFA para uma localidade](#3-add-xfa-client-library-for-a-locale)
-3.2. [Adicionar biblioteca do cliente de formulário adaptável para uma localidade](#4-add-adaptive-form-client-library-for-a-locale-add-adaptive-form-client-library-for-a-locale-br)
+   * [Adicionar biblioteca de cliente XFA para uma localidade](#3-add-xfa-client-library-for-a-locale)
+   * [Adicionar biblioteca do cliente de formulário adaptável para uma localidade](#4-add-adaptive-form-client-library-for-a-locale-add-adaptive-form-client-library-for-a-locale-br)
 1. [Adicionar suporte de local ao dicionário](#5-add-locale-support-for-the-dictionary-add-locale-support-for-the-dictionary-br)
 1. [Confirme as alterações no repositório e implante o pipeline](#7-commit-the-changes-in-the-repository-and-deploy-the-pipeline-commit-changes-in-repo-deploy-pipeline)
 
@@ -63,9 +63,9 @@ Para adicionar suporte para um novo local no tempo de execução do Adaptive For
 #### 3.1 Adicionar biblioteca do cliente XFA para um local na pasta de nome do local
 
 1. Criar um nó chamado como `[locale-name]_xfa` e digite como `cq:ClientLibraryFolder` under `etc/clientlibs/locale_name`, com categoria `xfaforms.I18N.<locale>`e adicione os seguintes arquivos:
-* **I18N.js** definição `xfalib.locale.Strings` para `<locale>` conforme definido em `/etc/clientlibs/fd/xfaforms/I18N/ja/I18N`.
-* **js.txt** Contendo o seguinte:
-   */libs/fd/xfaforms/clientlibs/I18N/Namespace.js I18N.js /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js*
+   * **I18N.js** definição `xfalib.locale.Strings` para `<locale>` conforme definido em `/etc/clientlibs/fd/xfaforms/I18N/ja/I18N`.
+   * **js.txt** Contendo o seguinte:
+      */libs/fd/xfaforms/clientlibs/I18N/Namespace.js I18N.js /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js*
 
 #### 3.2. Adicionar a biblioteca do cliente de Formulário adaptável para uma pasta de nome de localidade {#add-adaptive-form-client-library-for-a-locale-br}
 
@@ -77,9 +77,9 @@ Para adicionar suporte para um novo local no tempo de execução do Adaptive For
 
 1. Adicionar **js.txt** Contendo o seguinte:
 
-   ```text
+   ```
      i18n.js
-       LogMessages.js
+     LogMessages.js
    ```
 
 ### 4. Adicionar suporte de local ao dicionário {#add-locale-support-for-the-dictionary-br}
@@ -143,7 +143,7 @@ Se nenhuma informação de local estiver presente, o Formulário adaptável ser�
 
 Get [exemplo de biblioteca do cliente](/help/forms/assets/locale-support-sample.zip) para adicionar suporte a novo local. Você precisa alterar o conteúdo da pasta no local desejado.
 
-### Práticas recomendadas para oferecer suporte à nova localização {#best-practices}
+## Práticas recomendadas para oferecer suporte à nova localização {#best-practices}
 
 * O Adobe recomenda criar um projeto de tradução após a criação de um Formulário adaptável.
 
