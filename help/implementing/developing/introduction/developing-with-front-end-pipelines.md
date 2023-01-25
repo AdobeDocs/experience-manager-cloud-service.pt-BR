@@ -2,7 +2,7 @@
 title: Desenvolvimento de Sites com o pipeline front-end
 description: Com o pipeline front-end, mais independência é dada aos desenvolvedores front-end e o processo de desenvolvimento pode ganhar uma velocidade substancial. Este documento descreve algumas considerações específicas do processo de build front-end que devem ser fornecidas.
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
-source-git-commit: 868382c37c3744642e96353aecfc4369105a42ec
+source-git-commit: 2afdd0682d1baf39d737ee7a5721657e639739a7
 workflow-type: tm+mt
 source-wordcount: '1157'
 ht-degree: 1%
@@ -28,7 +28,7 @@ O conteúdo da `dist` é o que é implantado em AEM as a Cloud Service no pipeli
 
 ### Versões de nó {#node-versions}
 
-Por padrão, o pipeline de front-end usa o Nó 14, mas 16 e 16 também estão disponíveis.
+Por padrão, o pipeline de front-end usa o Nó 14, mas 12 e 16 também estão disponíveis.
 
 Você pode usar o `CM_CUSTOM_VAR_NODE_VERSION` variável de ambiente para definir a versão desejada.
 
