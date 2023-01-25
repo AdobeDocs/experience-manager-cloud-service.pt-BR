@@ -4,9 +4,9 @@ description: Use um exemplo de aplicativo React para saber como personalizar o c
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 741fadcffc496cb1c32d1943f7759e8d70cf92ff
+source-git-commit: c811268d4882204c5a5610c9f45cd344df50b8dd
 workflow-type: tm+mt
-source-wordcount: '1035'
+source-wordcount: '1028'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,6 @@ ht-degree: 0%
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide"
 >title="Iniciar o editor de Fragmento de conteúdo"
 >abstract="Sua avaliação sem periféricos de AEM vem integrada a um aplicativo React de amostra, para que você possa ver como é fácil para qualquer pessoa gerenciar o conteúdo independentemente sem tempo de desenvolvimento.<br><br>Inicie este módulo em uma nova guia clicando em abaixo e siga este guia."
->additional-url="https://video.tv.adobe.com/v/328618" text="Personalizar vídeo de introdução ao aplicativo"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide_footer"

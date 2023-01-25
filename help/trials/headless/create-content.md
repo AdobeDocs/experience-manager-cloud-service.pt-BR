@@ -4,9 +4,9 @@ description: Use o modelo de Fragmento de conteúdo criado anteriormente para cr
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: 741fadcffc496cb1c32d1943f7759e8d70cf92ff
+source-git-commit: 4a99ce530f3ca13f52648ffc0782d62cd5ebf395
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '459'
 ht-degree: 3%
 
 ---
@@ -22,8 +22,7 @@ ht-degree: 3%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide"
 >title="Iniciar o console Fragmento de conteúdo"
->abstract="Criar conteúdo consistente e de alta qualidade que funcione perfeitamente em seus aplicativos e sites leva a excelentes experiências do cliente. Este módulo o orienta pela criação do primeiro Fragmento de conteúdo para ilustrar como fazer isso acontecer. Assista ao vídeo para entender por que isso é um passo importante.<br><br>Inicie esse módulo em uma nova guia clicando no botão abaixo e siga este guia."
->additional-url="https://video.tv.adobe.com/v/328618" text="Vídeo Criar nova introdução ao conteúdo"
+>abstract="Criar conteúdo consistente e de alta qualidade que funcione perfeitamente em seus aplicativos e sites leva a excelentes experiências do cliente. Este módulo o orienta pela criação do primeiro Fragmento de conteúdo para ilustrar como fazer isso acontecer.<br><br>Inicie esse módulo em uma nova guia clicando no botão abaixo e siga este guia."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide_footer"
