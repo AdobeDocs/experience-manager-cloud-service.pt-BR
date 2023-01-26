@@ -2,10 +2,10 @@
 title: Teste de interface do usuário
 description: Os testes de interface do usuário personalizados são um recurso opcional que permite criar e executar automaticamente testes na interface do usuário para seus aplicativos personalizados.
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 0ea7255f4dfc5c9f2e99cb144ef58152a2565822
+source-git-commit: 00cbf0b9fa50ab3f42a0a3917caf40708c7209b9
 workflow-type: tm+mt
 source-wordcount: '1407'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -35,7 +35,7 @@ Diferentemente dos testes funcionais personalizados, que são testes HTTP escrit
 
 ### Adesão do cliente {#customer-opt-in}
 
-Para que o Cloud Manager compile e execute seus testes de interface do usuário, é necessário aderir a esse recurso adicionando um arquivo ao repositório.
+Para que o Cloud Manager crie e execute seus testes de interface do usuário, é necessário aderir a esse recurso adicionando um arquivo ao repositório.
 
 * O nome do arquivo deve ser `testing.properties`.
 * O conteúdo do arquivo deve ser `ui-tests.version=1`.

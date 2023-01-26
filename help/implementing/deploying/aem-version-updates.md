@@ -3,10 +3,10 @@ title: Atualizações de versão do AEM
 description: Atualizações de versão do AEM
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: becc07c0042cdfb5de86dc8895801c00c882f8a1
+source-git-commit: c3e1559923699d300d78a71195bd5658c3323331
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -15,23 +15,23 @@ ht-degree: 4%
 
 ## Introdução {#introduction}
 
-AEM as a Cloud Service agora usa integração contínua e entrega contínua (CI/CD) para garantir que seus projetos estejam na versão de AEM mais recente. Isso significa que as instâncias de produção e de preparo são atualizadas para a versão de AEM mais recente, sem interrupção do serviço para os usuários.
+O AEM as a Cloud Service agora usa a integração/entrega contínua (CI/CD) para garantir que seus projetos estejam sempre na versão do AEM mais recente. Isso significa que as instâncias de produção e de preparo são atualizadas para a versão de AEM mais recente, sem interrupção do serviço para os usuários.
 
 >[!NOTE]
 >
->Se a atualização para o ambiente de produção falhar, o Cloud Manager reverterá automaticamente o ambiente de preparo. Isso é feito automaticamente para garantir que, após a conclusão de uma atualização, os ambientes de preparo e produção estejam na mesma versão AEM.
+>Se a atualização para o ambiente de produção falhar, o Cloud Manager reverterá automaticamente o ambiente de preparo. Isso é feito automaticamente para garantir que, após a conclusão de uma atualização, os ambientes de preparo e de produção estejam na mesma versão do AEM.
 
-Há dois tipos de atualizações de versão AEM:
+Há dois tipos de atualizações de versão do AEM:
 
-* **Atualizações de manutenção de AEM**
+* **Atualizações de manutenção do AEM**
 
    * Pode ser lançado diariamente.
    * Elas são utilizadas principalmente para fins de manutenção, incluindo as correções de erros e atualizações de segurança mais recentes.
-   * Ter um impacto mínimo, uma vez que as alterações são aplicadas regularmente.
+   * Têm um impacto mínimo, uma vez que as alterações são aplicadas regularmente.
 
 * **Novas atualizações de recursos**
 
-   * São liberados por meio de uma programação mensal previsível.
+   * Elas são liberadas em um cronograma mensal previsível.
 
 AEM atualizações passam por um pipeline de validação de produto intenso e totalmente automatizado, envolvendo várias etapas, garantindo que o serviço não seja interrompido em nenhum sistema em produção. Os controlos sanitários são utilizados para monitorizar a saúde da aplicação. Se essas verificações falharem durante uma atualização as a Cloud Service AEM, a versão não continuará e o Adobe investigará por que a atualização causou esse comportamento inesperado.
 
