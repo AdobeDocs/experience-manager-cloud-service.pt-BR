@@ -2,10 +2,10 @@
 title: Ambientes de desenvolvimento rápido
 description: Saiba como aproveitar os ambientes de desenvolvimento rápido para iterações de desenvolvimento rápidas em um ambiente em nuvem.
 hidefromtoc: true
-source-git-commit: 755e24ab8add432bf399e2674870d781f532302f
+source-git-commit: c8cb222cdba805652123df852410ffed8b047ceb
 workflow-type: tm+mt
-source-wordcount: '2396'
-ht-degree: 7%
+source-wordcount: '2446'
+ht-degree: 6%
 
 ---
 
@@ -390,6 +390,20 @@ Também é possível redefinir o RDE usando o botão de reticências diretamente
 ![Redefinir RDE do cartão Ambientes](/help/implementing/cloud-manager/assets/rde-reset-environments-card.png)
 
 Para obter mais informações sobre como usar o Cloud Manager para gerenciar seus ambientes, consulte [a documentação do Cloud Manager.](/help/implementing/cloud-manager/manage-environments.md)
+
+## Modos de execução {#runmodes}
+
+A configuração OSGI específica do RDE pode ser aplicada usando sufixos no nome da pasta, como nos exemplos abaixo:
+
+* `config.rde`
+* `config.author.rde`
+* `config.publish.rde`
+
+Consulte a [documentação do runmode](/help/implementing/deploying/overview.md#runmodes) para obter informações gerais sobre modos de execução.
+
+>[!NOTE]
+>
+>A configuração OSGI do RDE é exclusiva, pois herda os valores de quaisquer propriedades OSGI declaradas pelo pacote `dev` modo de execução.
 
 ## Logs {#logging}
 
