@@ -2,10 +2,10 @@
 title: Ambientes de desenvolvimento rápido
 description: Saiba como aproveitar os ambientes de desenvolvimento rápido para iterações de desenvolvimento rápidas em um ambiente em nuvem.
 hidefromtoc: true
-source-git-commit: 084ebface5a28cdf5dbacf21b79934046062a847
+source-git-commit: 755e24ab8add432bf399e2674870d781f532302f
 workflow-type: tm+mt
-source-wordcount: '2350'
-ht-degree: 6%
+source-wordcount: '2396'
+ht-degree: 7%
 
 ---
 
@@ -72,6 +72,11 @@ Para obter mais informações sobre como usar o Cloud Manager para criar ambient
 
 Depois de adicionar um RDE ao seu programa usando o Cloud Manager, você pode interagir com ele configurando as ferramentas de linha de comando, conforme descrito nas seguintes etapas:
 
+>[!IMPORTANT]
+>
+>Certifique-se de ter a versão mais recente de [Nó e NPM instalado](https://nodejs.org/en/download/) para que a CLI do Adobe I/O e os plug-ins relacionados funcionem corretamente.
+
+
 1. Instale as ferramentas da CLI do Adobe I/O de acordo com o procedimento [here](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
 1. Instale o plug-in do gerenciador de nuvem das ferramentas da CLI do Adobe I/O e configure-os conforme descrito [here](https://github.com/adobe/aio-cli-plugin-cloudmanager).
 1. Instale as ferramentas da CLI do Adobe I/O AEM o plug-in RDE executando estes comandos:
@@ -120,6 +125,16 @@ Depois de adicionar um RDE ao seu programa usando o Cloud Manager, você pode in
    Como alternativa, você pode confirmar que tem essa função de desenvolvedor se puder fazer logon no console do desenvolvedor executando este comando:
 
    `aio cloudmanager:environment:open-developer-console`
+
+>[!TIP]
+>
+>   Se você vir a variável `Warning: cloudmanager:list-programs is not a aio command.` , é necessário instalar o [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager) executando o comando abaixo:
+>
+>   
+```
+>   aio plugins:install @adobe/aio-cli-plugin-cloudmanager
+>   ```
+
 
 ## Usar o RDE ao desenvolver um novo recurso {#using-rde-while-developing-a-new-feature}
 
