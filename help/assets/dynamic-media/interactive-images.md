@@ -1,10 +1,11 @@
 ---
 title: Imagens interativas
 description: Saiba como trabalhar com Imagens interativas no Dynamic Media.
+contentOwner: Rick Brough
 feature: Interactive Images
 role: User
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
-source-git-commit: 77f1b744dabd72fc26d3b0607db9561e6cb7fa66
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '4176'
 ht-degree: 2%
@@ -64,7 +65,7 @@ Se você usar um WCM (Web Content Manager, Gerenciador de conteúdo da Web) de t
 >* Você deseja adicionar interatividade à imagem, acionando para Visualizações rápidas.
 >* Sua implementação do Experience Manager faz *not* use uma estrutura de integração de comércio eletrônico para inserir dados de produtos no Experience Manager a partir de qualquer solução de comércio eletrônico. Essas soluções incluem IBM® WebSphere® Commerce, Elastic Path, SAP Hybris ou Intershop.
 >
->Se sua implementação do Experience Manager usar o eCommerce, você poderá ignorar esta tarefa e prosseguir para a próxima tarefa.
+Se sua implementação do Experience Manager usar o eCommerce, você poderá ignorar esta tarefa e prosseguir para a próxima tarefa.
 
 Comece identificando as variáveis dinâmicas usadas pela implementação existente do Quickview, para que você possa inserir dados de pontos de acesso para criar a imagem interativa.
 
@@ -220,8 +221,7 @@ Ao adicionar pontos de acesso, você pode defini-los como uma exibição pop-up 
 Consulte [Fragmentos de experiência](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
 
 >[!NOTE]
->
->As ferramentas de compartilhamento de mídia social na Imagem interativa não são compatíveis quando você incorpora o visualizador em um Fragmento de experiência. Em vez disso, use ou crie predefinições do visualizador que não tenham ferramentas de compartilhamento de mídia social. Essas predefinições do visualizador permitem que você as incorpore com êxito aos Fragmentos de experiência.
+As ferramentas de compartilhamento de mídia social na Imagem interativa não são compatíveis quando você incorpora o visualizador em um Fragmento de experiência. Em vez disso, use ou crie predefinições do visualizador que não tenham ferramentas de compartilhamento de mídia social. Essas predefinições do visualizador permitem que você as incorpore com êxito aos Fragmentos de experiência.
 
 As opções Desfazer e Refazer, próximo ao canto superior direito da página, são compatíveis durante a sessão de criação/edição atual.
 
@@ -230,8 +230,7 @@ Ao terminar de criar a imagem interativa, você pode usar a Visualização para 
 Consulte [(Opcional) Visualizar imagens interativas](#optional-previewing-interactive-images).
 
 >[!NOTE]
->
->Quando você adiciona pontos de acesso a uma imagem em uma Imagem interativa ou em um Banner de carrossel, as informações do ponto de acesso são armazenadas no mesmo local de metadados. Esse local é relativo ao local da imagem, independentemente de ser uma Imagem interativa ou um Banner de carrossel. Essa funcionalidade significa que você pode reutilizar facilmente a mesma imagem - juntamente com seus dados de ponto de acesso definidos - em qualquer um dos visualizadores.
+Quando você adiciona pontos de acesso a uma imagem em uma Imagem interativa ou em um Banner de carrossel, as informações do ponto de acesso são armazenadas no mesmo local de metadados. Esse local é relativo ao local da imagem, independentemente de ser uma Imagem interativa ou um Banner de carrossel. Essa funcionalidade significa que você pode reutilizar facilmente a mesma imagem - juntamente com seus dados de ponto de acesso definidos - em qualquer um dos visualizadores.
 Esteja ciente, no entanto, de que os carrossel Banners suportam mapas de imagens em imagens que também podem conter pontos de acesso; uma Imagem interativa não. Lembre-se desse pensamento se você pretende criar uma Imagem interativa ou um Banner de carrossel que use a mesma imagem. Você pode criar Imagens interativas e Banners de carrossel usando cópias separadas da mesma imagem.
 Consulte também [Banners em carrossel](/help/assets/dynamic-media/carousel-banners.md).
 

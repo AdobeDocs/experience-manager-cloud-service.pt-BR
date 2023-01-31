@@ -1,10 +1,11 @@
 ---
 title: Perfis de vídeo do Dynamic Media
 description: O Dynamic Media já vem com um perfil de codificação de vídeo adaptável predefinido. As configurações nesse perfil pronto para uso são otimizadas para proporcionar aos clientes a melhor experiência de visualização possível. Você também pode adicionar recorte inteligente aos seus vídeos.
+contentOwner: Rick Brough
 feature: Asset Management,Video Profiles,Renditions
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: cec07dad7a62439e26d9657459964b01ce6e3dba
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '3656'
 ht-degree: 7%
@@ -74,7 +75,7 @@ A tabela a seguir identifica perfis de codificação de práticas recomendadas p
    <td>540</td>
    <td>Sim</td>
    <td>2000<br /> </td>
-   <td>30º</td>
+   <td>30</td>
    <td>Dolby HE-AAC</td>
    <td>128</td>
   </tr>
@@ -84,7 +85,7 @@ A tabela a seguir identifica perfis de codificação de práticas recomendadas p
    <td>720<br /> </td>
    <td>Sim</td>
    <td>3000<br /> </td>
-   <td>30º</td>
+   <td>30</td>
    <td>Dolby HE-AAC</td>
    <td>128</td>
   </tr>

@@ -1,7 +1,8 @@
 ---
 title: Trabalhar com o Dynamic Media
 description: O Dynamic Media ajuda a fornecer ativos de marketing e merchandising visual por demanda, automaticamente dimensionados para o consumo na Web, em dispositivos móveis e sites sociais. Usando um conjunto de ativos de origem primária, a Dynamic Media gera e fornece várias variações de conteúdo rico em tempo real por meio de sua rede global, escalável e otimizada para desempenho
-source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
+contentOwner: Rick Brough
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 30%

@@ -1,7 +1,8 @@
 ---
 title: Entregar ativos do Dynamic Media
 description: Com o Dynamic Media, você tem várias opções para fornecer seus ativos do Dynamic Media - vídeo e imagens - ao seu site.
-source-git-commit: 6933f053e11320d8201922723879983084c52209
+contentOwner: Rick Brough
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '108'
 ht-degree: 19%

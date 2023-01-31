@@ -1,10 +1,11 @@
 ---
 title: Arquivo de informativo do Dynamic Media
 description: O informativo do Dynamic Media por Experience League é um informativo mensal. Ela foi criada para ajudar você a usar o Dynamic Media e o Dynamic Media Classic e obter valor imediatamente. Recursos valiosos para a criação de conhecimento estão disponíveis neste boletim informativo de balcão único. Por exemplo, há vídeos de instruções e visões gerais da solução. Leia sobre alguns dos principais recursos e características, como predefinições de imagens, predefinições do visualizador, perfis de vídeo e muito mais.
+contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
-source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '1050'
 ht-degree: 0%
@@ -37,7 +38,7 @@ Neste boletim informativo arquivado de balcão único, você pode encontrar recu
     * Summit customer spotlight: Under Armour.
     * Never miss an Experience Insider webinar.
     * Public sector spotlight: The urgent need for digital enrollment.
-    * Look what’s new in Experience Manager Innovation.
+    * Look what's new in Experience Manager Innovation.
     * Build your Experience Manager skills *live* with the Adobe pros.
     * Connect with the Adobe Experience Manager Community.
     * Fast-track your Adobe expertise with Adobe Experience League. -->

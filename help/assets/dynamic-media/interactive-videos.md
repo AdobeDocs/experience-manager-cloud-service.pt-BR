@@ -1,10 +1,11 @@
 ---
 title: Vídeos interativos
 description: Saiba como trabalhar com vídeo interativo e vídeo que pode ser comprado no Dynamic Media.
+contentOwner: Rick Brough
 feature: Interactive Videos
 role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: 77f1b744dabd72fc26d3b0607db9561e6cb7fa66
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '5966'
 ht-degree: 3%
@@ -68,9 +69,8 @@ Etapas de vídeo interativo:
 
 1. **(Opcional) Identificar variáveis do Quickview** - Comece identificando as variáveis dinâmicas usadas pela implementação existente do Quickview. Você usa as variáveis para mapear miniaturas de produto para o produto correspondente do Quickview, ao criar seu vídeo interativo. Consulte [(Opcional) Identificação de variáveis do Quickview](#optional-identifying-quickview-variables).
    **Essa etapa só será necessária se todas as seguintes etapas forem verdadeiras:**
-・ Você deseja adicionar interatividade ao vídeo, acionando para as visualizações rápidas.
-・ Sua implementação do Experience Manager faz 
-*not* use uma estrutura de integração de eCommerce para inserir dados de produtos no Experience Manager a partir de qualquer solução de eCommerce, como IBM® WebSphere® Commerce, Elastic Path, SAP Hybris ou Intershop.
+   * Você deseja adicionar interatividade ao vídeo, acionando para as visualizações rápidas.
+   * Sua implementação do Experience Manager faz *not* use uma estrutura de integração de eCommerce para inserir dados de produtos no Experience Manager a partir de qualquer solução de eCommerce, como IBM® WebSphere® Commerce, Elastic Path, SAP Hybris ou Intershop.
 
 1. **(Opcional) Criar uma predefinição do visualizador de Vídeo interativo** - Personalize a aparência e o comportamento de vários componentes que compõem o reprodutor, como o depurador de vídeo e as miniaturas interativas.
 A criação de sua própria predefinição do visualizador de Vídeo interativo não é necessária se você pretende usar as predefinições do visualizador de Vídeo interativo prontas para uso `Shoppable_Video_Light` ou `Shoppable_Video_Dark` em vez disso.
@@ -102,7 +102,7 @@ Se estiver usando um WCM de terceiros (Web Content Manager), é necessário inte
 >* Você deseja adicionar interatividade ao vídeo, acionando para as visualizações rápidas.
 >* Sua implementação do Experience Manager faz *not* use uma estrutura de integração de eCommerce para inserir dados de produtos no Experience Manager a partir de qualquer solução de eCommerce, como IBM® WebSphere® Commerce, Elastic Path, SAP Hybris ou Intershop. <!-- See [eCommerce concepts in Experience Manager Assets](/help/sites-administering/concepts.md).-->
 >
->Se sua implementação do Experience Manager usar o eCommerce, você poderá ignorar esta tarefa e prosseguir para a próxima tarefa.
+Se sua implementação do Experience Manager usar o eCommerce, você poderá ignorar esta tarefa e prosseguir para a próxima tarefa.
 
 Comece identificando as variáveis dinâmicas usadas pela implementação existente do Quickview, para que seja possível mapear miniaturas de produtos para o produto correspondente do Quickview durante o processo de criação interativo de vídeo.
 
@@ -242,8 +242,7 @@ Consulte [Criar uma predefinição do visualizador](/help/assets/dynamic-media/m
 Se você já tiver carregado o vídeo e os ativos de miniatura, continue para [Adicionar interatividade ao vídeo](#adding-interactivity-to-your-video).
 
 >[!NOTE]
->
->O formato de vídeo MXF ainda não é compatível com o uso com Vídeos interativos no Dynamic Media.
+O formato de vídeo MXF ainda não é compatível com o uso com Vídeos interativos no Dynamic Media.
 
 Se você carregou os vídeos ou imagens errados, ou deseja excluir os vídeos ou imagens carregados que não são mais necessários, consulte [Excluir ativos](/help/assets/manage-digital-assets.md#delete-assets).
 
@@ -265,12 +264,10 @@ Após adicionar segmentos de linha do tempo, adicione imagens em miniatura em ca
 Consulte [Fragmentos de experiência](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
 
 >[!NOTE]
->
->As ferramentas de compartilhamento de mídia social em Vídeo interativo não são compatíveis quando você incorpora o visualizador em um Fragmento de experiência. Em vez disso, você pode usar ou criar predefinições do visualizador que não tenham ferramentas de compartilhamento de redes sociais. Essas predefinições do visualizador permitem que você as incorpore com êxito aos Fragmentos de experiência.
+As ferramentas de compartilhamento de mídia social em Vídeo interativo não são compatíveis quando você incorpora o visualizador em um Fragmento de experiência. Em vez disso, você pode usar ou criar predefinições do visualizador que não tenham ferramentas de compartilhamento de redes sociais. Essas predefinições do visualizador permitem que você as incorpore com êxito aos Fragmentos de experiência.
 
 >[!NOTE]
->
->O método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, especialmente links para páginas do Experience Manager Sites.
+O método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, especialmente links para páginas do Experience Manager Sites.
 
 As opções Desfazer e Refazer, próximo ao canto superior direito da página, são compatíveis durante a sessão de criação/edição atual.
 
@@ -491,8 +488,7 @@ Depois de salvar o vídeo interativo, ele é aberto imediatamente na Visualizaç
    Quando terminar, selecione **[!UICONTROL Salvar]**.
 
    >[!NOTE]
-   >
-   >Ao salvar o vídeo interativo, um arquivo associado é automaticamente salvo com ele. `.vtt` O `.vtt` é salvo no `_VTT` na raiz de **[!UICONTROL Ativos]**. O arquivo e a pasta são necessários para que o vídeo interativo seja reproduzido corretamente no site. Sendo assim, não mova, edite ou exclua a pasta `_VTT` ou seu conteúdo.
+   Ao salvar o vídeo interativo, um arquivo associado é automaticamente salvo com ele. `.vtt` O `.vtt` é salvo no `_VTT` na raiz de **[!UICONTROL Ativos]**. O arquivo e a pasta são necessários para que o vídeo interativo seja reproduzido corretamente no site. Sendo assim, não mova, edite ou exclua a pasta `_VTT` ou seu conteúdo.
 
 1. Publique o vídeo interativo. A publicação cria o código incorporado ou URL que você eventualmente copia e cola nas experiências do site.
 
@@ -501,8 +497,7 @@ Depois de salvar o vídeo interativo, ele é aberto imediatamente na Visualizaç
    Consulte [Publicar ativos](publishing-dynamicmedia-assets.md).
 
    >[!NOTE]
-   >
-   >Para publicar um vídeo que pode ser comprado com visualizações rápidas, certifique-se de publicar também cada um dos ativos de imagem relacionados do vídeo de sua área de comércio, separadamente.
+   Para publicar um vídeo que pode ser comprado com visualizações rápidas, certifique-se de publicar também cada um dos ativos de imagem relacionados do vídeo de sua área de comércio, separadamente.
 
    Depois de adicionar segmentos de linha do tempo e publicar o vídeo interativo, você estará pronto para adicioná-lo à página de aterrissagem do site. Consulte [Integrar um vídeo interativo ao seu site](#integrating-an-interactive-video-with-your-website).
 
@@ -527,10 +522,8 @@ Se você adicionou interatividade com visualizações rápidas, use somente o c�
 O código incorporado copiado é definido para um ambiente responsivo, de modo que se ajuste automaticamente à área ocupada anteriormente pelo vídeo estático.
 
 >[!NOTE]
->
->Nesse ponto, se você adicionou interatividade somente com páginas da Web com hiperlink, foi concluído.
->
->No entanto, se você tiver adicionado qualquer interatividade para acionar uma exibição rápida, as miniaturas ao lado do vídeo interativo serão apenas para fins de exibição; eles ainda não estão integrados às suas visualizações rápidas existentes. Nesse caso, é necessário integrar o vídeo interativo com as Exibições rápidas existentes no site.
+Nesse ponto, se você adicionou interatividade somente com páginas da Web com hiperlink, foi concluído.
+No entanto, se você tiver adicionado qualquer interatividade para acionar uma exibição rápida, as miniaturas ao lado do vídeo interativo serão apenas para fins de exibição; eles ainda não estão integrados às suas visualizações rápidas existentes. Nesse caso, é necessário integrar o vídeo interativo com as Exibições rápidas existentes no site.
 
 **Exemplo**
 
@@ -572,8 +565,7 @@ A integração é tão simples como remover o código de inserção do vídeo e 
 ## Integrar um vídeo interativo a um Quickview existente {#integrating-an-interactive-video-with-an-existing-quickview}
 
 >[!NOTE]
->
->Essa tarefa só se aplica se você for um cliente independente do Experience Manager Assets.
+Essa tarefa só se aplica se você for um cliente independente do Experience Manager Assets.
 
 A última etapa desse processo é integrar o vídeo interativo com uma implementação existente do Quickview, usada em seu site. Não há solução para a integração que funcione para todos os casos. Cada implementação do Quickview é exclusiva. Como tal, é necessária uma abordagem específica que envolva a assistência de uma pessoa de TI front-end.
 

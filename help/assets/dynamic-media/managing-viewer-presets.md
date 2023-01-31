@@ -1,10 +1,11 @@
 ---
 title: Gerenciar predefinições do visualizador
 description: Saiba como criar e gerenciar predefinições do visualizador no Dynamic Media.
+contentOwner: Rick Brough
 feature: Viewer Presets,Viewers
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: 1b9864c4532d15068b6edbd187a78a0ee0fdcfb4
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '4194'
 ht-degree: 9%
@@ -69,7 +70,7 @@ Todas as predefinições do visualizador prontas para uso que acompanham o Dynam
 * Android™ Smartphone
 * Tablet Android™
 
-<!-- OUTDATED 2/25/22 * For video, extra support for MP4 playback is provided for [BlackBerry®](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) and [Windows® Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs). -->
+<!-- OUTDATED 2/25/22 * For video, extra support for MP4 playback is provided for [BlackBerry&reg;](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) and [Windows&reg; Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs). -->
 
 ### Tipos de mídia avançada para predefinições do visualizador {#rich-media-types-for-viewer-presets}
 
@@ -319,7 +320,7 @@ A tabela a seguir identifica os gestos do visualizador móvel que são compatív
  <tbody>
   <tr>
    <td><strong>Gesto</strong></td>
-   <td><strong>Zoom do Flyout</strong></td>
+   <td><strong>Flyout Zoom</strong></td>
    <td><strong>Zoom</strong></td>
    <td><strong>Rotação</strong></td>
   </tr>
@@ -577,7 +578,7 @@ Editar qualquer *predefinições predefinidas e prontas para uso do visualizador
 
 1. No canto superior esquerdo do Experience Manager, selecione o logotipo Experience Manager e, em seguida, no painel à esquerda, selecione **[!UICONTROL Ferramentas]** (ícone de martelo) > **[!UICONTROL Ativos] > [!UICONTROL Predefinições do visualizador]**.
 1. Na página Predefinições do visualizador , marque um Título de predefinição e selecione o **[!UICONTROL Lixeira]** ícone .
-1. Selecionar **[!UICONTROL Excluir]**.
+1. Selecione **[!UICONTROL Excluir]**.
 
 ## Aplicar predefinições do visualizador a um ativo {#applying-a-viewer-preset-to-an-asset}
 

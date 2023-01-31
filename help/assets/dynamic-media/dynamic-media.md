@@ -1,9 +1,10 @@
 ---
 title: Trabalhar com o Dynamic Media
 description: Saiba como usar o Dynamic Media para fornecer ativos para consumo na Web, em dispositivos móveis e em sites sociais.
+contentOwner: Rick Brough
 role: Admin,User
 exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
-source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 13%
@@ -37,7 +38,7 @@ Os recursos exclusivos ao Dynamic Media incluem o seguinte:
 * [Vídeo](video.md)
 * [Entrega de ativos de Mídia dinâmica](delivering-dynamic-media-assets.md)
 * [Gerenciar ativos](managing-assets.md)
-* [Usar o Quick views para criar pop-up personalizado do Windows®](custom-pop-ups.md)
+* [Usar o Quick views para criar janelas pop-up personalizadas](custom-pop-ups.md)
 
 Consulte também [Configuração do Dynamic Media](administering-dynamic-media.md).
 

@@ -1,10 +1,11 @@
 ---
 title: Incorporar o visualizador de vídeo ou imagem do Dynamic Media em uma página da Web
 description: Saiba como incorporar vídeos ou ativos de imagem do Dynamic Media em uma página da Web.
+contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 76335781-e39f-4aae-967f-5af8634d8f61
-source-git-commit: 6933f053e11320d8201922723879983084c52209
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 21%

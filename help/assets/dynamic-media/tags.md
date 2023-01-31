@@ -1,10 +1,11 @@
 ---
 title: Integrar visualizadores do Dynamic Media com tags do Analytics e da Adobe Experience Platform
 description: Saiba mais sobre a extensão Visualizadores do Dynamic Media para Tags do Experience Platform e Visualizadores do Dynamic Media 5.13. Ela permite que clientes de Adobe Analytics e Tags da plataforma usem eventos e dados específicos para os Visualizadores do Dynamic Media em suas configurações de Tags do Experience Platform.
+contentOwner: Rick Brough
 feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: 3060b6b411c3ce2f0b70e08628bccfece3e1fd49
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '6679'
 ht-degree: 7%

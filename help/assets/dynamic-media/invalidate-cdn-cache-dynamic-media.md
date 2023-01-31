@@ -1,10 +1,11 @@
 ---
 title: Invalidar o cache da Rede de entrega de conteúdo por meio do Dynamic Media
 description: Saiba como invalidar o conteúdo em cache do CDN (Content Delivery Network) para permitir que você atualize rapidamente os ativos entregues pela Dynamic Media, em vez de esperar que o cache expire.
+contentOwner: Rick Brough
 feature: Asset Management
 role: Admin,User
 exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
-source-git-commit: db0451e76564f238b34555aafa3692202887a1d6
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '1384'
 ht-degree: 1%
