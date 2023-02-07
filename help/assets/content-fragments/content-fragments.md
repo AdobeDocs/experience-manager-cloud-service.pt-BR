@@ -2,9 +2,9 @@
 title: Trabalho com fragmentos de conteúdo (Ativos - Fragmentos de conteúdo)
 description: Saiba como os fragmentos de conteúdo no Adobe Experience Manager (AEM) as a Cloud Service permitem projetar, criar, preparar e usar conteúdo independente de página, ideal para criação de páginas e entrega headless.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
+source-git-commit: 4478cee8f9a20e0b70bfe2fa8767e3262188cb33
 workflow-type: tm+mt
-source-wordcount: '2075'
+source-wordcount: '2071'
 ht-degree: 93%
 
 ---
@@ -45,7 +45,7 @@ Esta e as seguintes páginas abordam as tarefas de criação, configuração, ma
 * [Markdown](/help/assets/content-fragments/content-fragments-markdown.md) — uso da sintaxe de marcação para o fragmento
 * [Uso de conteúdo associado](/help/assets/content-fragments/content-fragments-assoc-content.md) — adição de conteúdo associado
 * [Metadados - Propriedades do fragmento](/help/assets/content-fragments/content-fragments-metadata.md) — visualização e edição das propriedades do fragmento
-* Use [Fragmentos de conteúdo, juntamente com GraphQL, para fornecer conteúdo](/help/assets/content-fragments/content-fragments-graphql.md) para uso em seus aplicativos. Para ajudar nisso, você pode visualizar [Saída JSON](/help/assets/content-fragments/content-fragments-json-preview.md).
+* Use [Fragmentos de conteúdo, juntamente com o GraphQL, para fornecer conteúdo](/help/assets/content-fragments/content-fragments-graphql.md) para uso em seus aplicativos. Para ajudar nisso, você pode visualizar [Saída JSON](/help/assets/content-fragments/content-fragments-json-preview.md).
 
 >[!NOTE]
 >
@@ -61,7 +61,7 @@ Esta e as seguintes páginas abordam as tarefas de criação, configuração, ma
 O número de canais de comunicação aumenta anualmente. Normalmente, os canais se referem ao mecanismo de entrega, como:
 
 * Canal físico; por exemplo, desktop, móvel.
-* Forma de entrega num canal físico; por exemplo, a &quot;página de detalhes do produto&quot;, &quot;página de categoria do produto&quot; para desktop, ou &quot;web móvel&quot;, &quot;aplicativo móvel&quot; para dispositivos móveis.
+* Forma de entrega em um canal físico; por exemplo, “página de detalhes do produto”, “página de categoria do produto” para desktop ou “web para publicação de conteúdo para dispositivos móveis”, “aplicativo para publicação de conteúdo para dispositvos móveis” para celular.
 
 No entanto, você (provavelmente) não deseja usar exatamente o mesmo conteúdo para todos os canais; é necessário otimizar o conteúdo de acordo com o canal específico.
 
@@ -79,7 +79,7 @@ Esses fragmentos de conteúdo podem ser reunidos para proporcionar experiências
 >[!NOTE]
 >
 >**Fragmentos de conteúdo** e **[Fragmentos de experiência](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** são recursos diferentes no AEM:
->* **Fragmentos de conteúdo** são conteúdos editoriais que podem ser usados para acessar dados estruturados, incluindo textos, números, datas, entre outros. Eles são conteúdo puro, com definição e estrutura, mas sem designs visuais e/ou layouts adicionais.
+>* **Fragmentos de conteúdo** são conteúdo editorial, com definição e estrutura, mas sem design visual e/ou layout adicionais. Eles podem ser usados para acessar dados estruturados, incluindo textos, números e datas, entre outros.
 >* **Fragmentos de experiência** são conteúdo totalmente apresentado; um fragmento de uma página da Web.
 >
 >Fragmentos de experiência podem incluir conteúdo na forma de Fragmentos de conteúdo, mas não o contrário.
