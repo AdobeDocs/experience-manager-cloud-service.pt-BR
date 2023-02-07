@@ -2,9 +2,9 @@
 title: Programas de edição
 description: Saiba como editar os programas de sandbox e produção para ajustar as opções depois de criá-las.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: 2638843c5646d3190327ae1dbd5348a9c207d674
+source-git-commit: d8815a17601f475267b50a6a527246f1433ed7eb
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '517'
 ht-degree: 87%
 
 ---
@@ -18,9 +18,11 @@ Os usuários com as permissões necessárias podem editar tanto [programas de pr
 * Adicionar o segundo direito de solução não utilizado a um programa existente ou como um novo programa.
 * Excluir programas de sandbox.
 
->[!NOTE]
->
->Você deve ser um membro da função **Proprietário da empresa** para editar ou excluir programas de sandbox.
+## Permissões {#permissions}
+
+Você deve ser um membro da função **Proprietário da empresa** para editar ou excluir programas de sandbox.
+
+## Edição de um programa {#editing}
 
 Siga estas etapas para editar um programa.
 
