@@ -1,43 +1,30 @@
 ---
 title: Notas de versão de manutenção mais recentes da [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas de versão de manutenção mais recentes da [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: bb310f87a3bbc114e971dc2dca5eab6a028d140a
+source-git-commit: 76da86d31e2780c2d22419cb8a338cf37963fad8
 workflow-type: tm+mt
-source-wordcount: '153'
-ht-degree: 3%
+source-wordcount: '155'
+ht-degree: 5%
 
 ---
 
 
 # Notas de versão de manutenção {#maintenance-release-notes}
 
-A seção a seguir descreve as Notas de versão técnicas para a versão de manutenção mais recente do Experience Manager as a Cloud Service.
+A seção a seguir descreve as rotas de lançamento técnico da versão de manutenção mais recente do Experience Manager as a Cloud Service.
 
 ## Versão 10912 {#release-10912}
 
->[!IMPORTANT]
-> Não atualize se estiver usando o CORS. Identificamos um problema que afeta a parte da entrega de conteúdo do GraphQL nesta versão. Uma alteração na configuração padrão AEM dispatcher sobre como as consultas persistentes do GraphQL são armazenadas em cache pode quebrar a entrega de conteúdo do GraphQL de consultas persistentes para clientes usando uma configuração CORS.
+Resumidos abaixo estão as melhorias contínuas da versão de manutenção de 10912, lançada publicamente em 3 de fevereiro de 2023. Esta versão de manutenção é uma atualização da versão de manutenção anterior 9850.
 
-Resumidos abaixo estão as melhorias contínuas para a versão 10912, lançada publicamente em 3 de fevereiro de 2023. Esta versão é uma atualização da versão anterior 9850.
+A ativação de recursos para esta versão de manutenção fornecerá o conjunto completo de recursos. Consulte a [notas de versão atuais](/help/release-notes/release-notes-cloud/release-notes-current.md) para obter detalhes completos.
 
-A ativação de recursos para esta versão fornecerá o conjunto completo de recursos. Consulte a [notas de versão atuais](/help/release-notes/release-notes-cloud/release-notes-current.md) para obter detalhes completos.
+### Problemas conhecidos {#known-issues}
 
-### Componentes principais  {#corecomponents}
+Não atualize se estiver usando o CORS. Identificamos um problema que afeta a parte da entrega de conteúdo do GraphQL nesta versão. Uma alteração na configuração padrão AEM dispatcher sobre como as consultas persistentes do GraphQL são armazenadas em cache pode quebrar a entrega de conteúdo do GraphQL de consultas persistentes para clientes usando uma configuração CORS.
 
-Versão 2.21.2
+### Tecnologias integradas {#embedded-tech}
 
-### Sites {#sites}
-
-Total de alterações : 86 Alterações
-
-### Assets {#assets}
-
-Total de alterações : 115 Alterações
-
-### Forms {#forms}
-
-Total de alterações : Alterações em 207
-
-### Foundation {#foundation}
-
-Total de alterações : 323 alterações
+| Tecnologia | Versão | Link |
+|---|---|---|
+| Componentes principais do WCM AEM | Versão 2.21.2 | [GitHub](https://github.com/adobe/aem-core-wcm-components) |
