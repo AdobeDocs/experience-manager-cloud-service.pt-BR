@@ -2,9 +2,9 @@
 title: Lidar com grandes repositórios de conteúdo
 description: Esta seção descreve o tratamento de repositórios de conteúdo grande
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: 7a9c601dd42aed9fbd0113e71c1c7a58b5bba8f7
+source-git-commit: 1a2ff747361bb0def718bee2e8eb0a1055b8efcf
 workflow-type: tm+mt
-source-wordcount: '1732'
+source-wordcount: '1749'
 ht-degree: 2%
 
 ---
@@ -36,6 +36,9 @@ Siga a seção abaixo para entender as considerações importantes antes de come
 
 * A coleta de lixo do armazenamento de dados foi executada nos 7 dias anteriores na fonte. Para obter mais detalhes, consulte [Coleta de lixo do armazenamento de dados](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=en#data-store-garbage-collection).
 
+### Considerações adicionais ao usar o AzCopy
+
+No momento, a pré-cópia usando AzCopy não é compatível com o Windows durante a extração de CTT.
 
 ### Considerações adicionais se a instância de AEM de origem estiver configurada para usar um armazenamento de dados Amazon S3 ou Azure Blob {#additional-considerations-amazons3-azure}
 
@@ -166,7 +169,7 @@ Com o arquivo de configuração acima em vigor, a fase de pré-cópia do AzCopy 
 c.a.g.s.m.commons.ContentExtractor - *************** Beginning AzCopy Pre-Copy phase ***************
 ```
 
-Parabéns. Essa entrada de log significa que sua configuração foi considerada válida e que o AzCopy está copiando atualmente todos os blobs do contêiner de origem para o contêiner de migração.
+Parabéns! Essa entrada de log significa que sua configuração foi considerada válida e que o AzCopy está copiando atualmente todos os blobs do contêiner de origem para o contêiner de migração.
 
 As entradas de log do AzCopy serão exibidas no log de extração e terão o prefixo c.a.g.s.m.c.azcopy.AzCopyBlobPreCopy - [Pré-cópia do AzCopy]
 
