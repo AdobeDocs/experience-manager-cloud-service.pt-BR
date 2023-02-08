@@ -3,9 +3,9 @@ title: Armazenamento em cache no AEM as a Cloud Service
 description: Armazenamento em cache no AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 762c30f83a15aba24b56a8d4a6059b371b87aae2
+source-git-commit: b0db2224e3dd7af01bf61fe29e8e24793ab33c5b
 workflow-type: tm+mt
-source-wordcount: '2833'
+source-wordcount: '2832'
 ht-degree: 2%
 
 ---
@@ -72,7 +72,7 @@ Isso pode ser útil, por exemplo, quando sua lógica comercial requer o ajuste f
      </LocationMatch>
    ```
 
-* Embora o conteúdo de HTML definido como privado não seja armazenado em cache no CDN, ele pode ser armazenado em cache no dispatcher se [Cache sensível a permissão](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=pt-BR) é configurado, de forma eficiente, garantindo que somente usuários autorizados possam receber o conteúdo.
+* Embora o conteúdo de HTML definido como privado não seja armazenado em cache no CDN, ele pode ser armazenado em cache no dispatcher se [Cache sensível a permissão](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=pt-BR) estiver configurado, garantindo que somente usuários autorizados possam receber o conteúdo.
 
    >[!NOTE]
    >Os outros métodos, incluindo o [dispatcher-ttl AEM projeto ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), não substituirá os valores com êxito.
