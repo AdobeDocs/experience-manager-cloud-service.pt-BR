@@ -2,9 +2,9 @@
 title: Como criar um modelo de formulário adaptável?
 description: Crie modelos de formulário adaptável para definir a estrutura básica e o conteúdo inicial usando o Editor de modelos.
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
+source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
 workflow-type: tm+mt
-source-wordcount: '1806'
+source-wordcount: '1920'
 ht-degree: 1%
 
 ---
@@ -184,6 +184,23 @@ Perform the following steps to show and hide templates:
     * To show or hide out of the box Adaptive Form templates that were added in AEM 6.0 Forms or AEM 6.1 Forms releases but are now deprecated, check or uncheck the **Include AEM 6.0 AF Templates** option. If this option is checked, in order to take effect, it requires the **Include Out of the box AF and AD Templates** configuration to be enabled.
 
 1. Click **Save**. The display options for the out of the box templates are changed. -->
+
+## Salvar um formulário adaptável como modelo {#saving-adaptive-form-as-template}
+
+Também é possível salvar um formulário adaptável como um modelo para uso futuro. Para salvar um formulário adaptável como um modelo:
+
+1. Selecione um formulário adaptável para salvá-lo como um modelo.
+1. Clique em **[!UICONTROL Salvar como modelo]**. Uma caixa de diálogo é exibida.
+1. Especificar **[!UICONTROL Título]** (campo obrigatório), **[!UICONTROL Localização]** (campo obrigatório) e **[!UICONTROL Descrição]** (campo opcional) para o modelo.
+1. Clique em **[!UICONTROL Criar]**.
+
+   ![Salvar como formulário como modelo](/help/forms/assets/saveformastemplate.png)
+
+
+
+>[!NOTE]
+>
+>Para usar a mesma política de contêiner do Formulário adaptativo de origem, é recomendável salvar o modelo na mesma pasta do Formulário adaptável de origem. Nesse caso, o modelo é salvo em qualquer outra pasta, diferente do modelo criado, e usa uma política de contêiner padrão.
 
 ## Recomendações {#recommendations}
 

@@ -1,14 +1,15 @@
 ---
 title: Gerar documento de registro para Forms adaptável
 description: Explica como você pode gerar um modelo para um Documento de registro (DoR) para Adaptive Forms.
+exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
 workflow-type: tm+mt
-source-wordcount: '4065'
+source-wordcount: '3214'
 ht-degree: 2%
 
 ---
 
-# Gerar documento de registro para Forms adaptável
+# Gerar documento de registro para Forms adaptável (Componentes principais)
 
 ## Visão geral {#overview}
 
@@ -16,8 +17,7 @@ Quando um formulário é preenchido ou enviado, é possível manter um registro 
 
 ![Documento do registro](assets/document-of-record.png)
 
-Para criar um Documento de registro, um modelo baseado em XFA ou Acroform é unido aos dados coletados por um formulário adaptável. Você pode gerar um Documento de registro automaticamente ou sob demanda.
-A opção sob demanda permite especificar um modelo personalizado baseado em XFA ou Acroform para fornecer uma aparência personalizada ao seu Documento de registro.
+Para criar um Documento de registro, um modelo baseado em XFA ou Acroform é unido aos dados coletados por um formulário adaptável. Você pode gerar um Documento de registro automaticamente ou sob demanda. A opção sob demanda permite especificar um modelo personalizado baseado em XFA ou Acroform para fornecer uma aparência personalizada ao seu Documento de registro.
 
 É possível:
 
@@ -29,7 +29,7 @@ A opção sob demanda permite especificar um modelo personalizado baseado em XFA
 
 Antes de começar a aprender e a preparar os ativos necessários para um Documento de registro:
 
-**Modelo base:** Um modelo XFA (arquivo XDP) criado no Forms Designer ou em um formulário Acrobat (AcroForm). [Modelo base](#base-template-of-a-document-of-record) é usada para especificar informações de estilo e identidade visual para um Documento de registro. Faça upload do seu modelo XFA (arquivo XDP) para a sua instância do AEM Forms antes de
+**Modelo base:** Um modelo XFA (arquivo XDP) criado no Forms Designer ou em um formulário Acrobat (AcroForm). [Modelo base](#base-template-of-a-document-of-record) é usada para especificar informações de estilo e identidade visual para um Documento de registro. Faça upload de seu modelo XFA (arquivo XDP) para sua instância do AEM Forms antes.
 
 **Formulário adaptável:** Um formulário adaptável para o qual o documento de registro deve ser gerado.
 
@@ -38,9 +38,9 @@ Antes de começar a aprender e a preparar os ativos necessários para um Documen
 Carregue seu modelo XFA (arquivo XDP) na instância do AEM Forms. Execute as seguintes etapas para configurar um Formulário adaptável para usar o modelo XFA (arquivo XDP) como modelo para o Documento de registro:
 
 1. Na instância do autor do Experience Manager, clique em **[!UICONTROL Forms]** > **[!UICONTROL Forms e documentos].**
-1. Selecione um formulário e clique em **[!UICONTROL Propriedades]**.
+1. Selecione um formulário ou Crie um formulário adaptável e clique em **[!UICONTROL Propriedades]**.
 1. Na janela Propriedades, toque em **[!UICONTROL Modelo de formulário]**.
-1. No  **[!UICONTROL Modelo de formulário]** na guia , no **[!UICONTROL Selecionar de]** , selecione **[!UICONTROL Esquema]** ou **[!UICONTROL Nenhum]**. Também é possível selecionar um modelo de formulário ao criar um formulário.
+1. No  **[!UICONTROL Modelo de formulário]** na guia , no **[!UICONTROL Selecionar de]** , selecione **[!UICONTROL Modelo de dados do formulário]**, **[!UICONTROL Esquema]** ou **[!UICONTROL Nenhum]**. Também é possível selecionar um modelo de formulário ao criar um formulário.
 1. Na seção Document of Record Template Configuration da guia Form Model , selecione **Associar Modelo de Formulário como Documento de Modelo de Registro**. Ao selecionar essa opção, todos os modelos XFA (arquivos XDP) disponíveis em sua máquina são exibidos. Selecione o arquivo apropriado. Além disso, verifique se o mesmo esquema (esquema de dados) é usado para o Formulário adaptável e para o modelo XFA selecionado (arquivo XDP).
 1. Clique em **[!UICONTROL Feito.]**
 
@@ -51,17 +51,17 @@ Seu formulário adaptável agora está configurado para usar um arquivo XDP como
 Faça upload do seu PDF Adobe Acrobat (Acroform) para a instância do AEM Forms. Execute as seguintes etapas para configurar um Formulário adaptável para usar o Adobe Acrobat PDF (Acroform) como modelo para o Documento de registro:
 
 1. Na instância do autor do Experience Manager, clique em **[!UICONTROL Forms]** > **[!UICONTROL Forms e documentos].**
-1. Selecione um formulário e clique em **[!UICONTROL Propriedades]**.
+1. Selecione um formulário ou **[!UICONTROL Criar um formulário adaptável]** e clique em **[!UICONTROL Propriedades]**.
 1. Na janela Propriedades, toque em **[!UICONTROL Modelo de formulário]**.
-1. No  **[!UICONTROL Modelo de formulário]** na guia , no **[!UICONTROL Selecionar de]** , selecione **[!UICONTROL Esquema]** ou **[!UICONTROL Nenhum]**. Também é possível selecionar um modelo de formulário ao criar um formulário.
-1. Na seção Document of Record Template Configuration da guia Form Model , selecione **Associar Modelo de Formulário como Documento de Modelo de Registro**. Ao selecionar essa opção, todo o Acrobat PDF (Acroform) disponível em sua máquina será exibido. Selecione o arquivo apropriado.
+1. No  **[!UICONTROL Modelo de formulário]** na guia , no **[!UICONTROL Selecionar de]** , selecione **[!UICONTROL Modelo de dados do formulário]**, **[!UICONTROL Esquema]** ou **[!UICONTROL Nenhum]**. Também é possível selecionar um modelo de formulário ao criar um formulário.
+1. Na seção Document of Record Template Configuration da guia Form Model , selecione **Associar Modelo de Formulário como Documento de Modelo de Registro**. Ao selecionar essa opção, todos os PDF Acrobat disponíveis em sua máquina são exibidos. Selecione o formulário que deseja usar.
 1. Clique em **[!UICONTROL Feito.]**
 
 O Formulário adaptável agora está configurado para usar um Acroform como modelo para o Documento de registro. As próximas etapas são para [vincular componentes do formulário adaptável aos campos de modelo correspondentes](#bind-adaptive-form-components-with-template-fields).
 
 ## Gerar automaticamente um Documento de Registro {#auto-generate-a-document-of-record}
 
-Quando um Formulário adaptável é configurado para gerar automaticamente um Documento de registro, sempre que um formulário é alterado, seu Documento de registro é atualizado imediatamente. Por exemplo, se um campo for removido de um formulário adaptável existente, o campo correspondente também será removido e não estará visível no Documento de registro. Há muitas outras vantagens de gerar automaticamente o Documento de Registro. :
+Quando um Formulário adaptável é configurado para gerar automaticamente um Documento de registro, sempre que um formulário é alterado, seu Documento de registro é atualizado imediatamente. Por exemplo, se um campo for removido de um formulário adaptável existente, o campo correspondente também será removido e não estará visível no Documento de registro. Há muitas outras vantagens de gerar automaticamente o Documento de registro:
 
 * Os desenvolvedores de formulários não precisam manter os vínculos de dados manualmente. O Documento de registro gerado automaticamente cuida de atualizações relacionadas ao vínculo de dados.
 * Os desenvolvedores de formulários não precisam ocultar manualmente os campos que estão marcados como excluídos do Documento de registro. O Documento de registro gerado automaticamente é pré-configurado para excluir esses campos.
@@ -72,9 +72,9 @@ Quando um Formulário adaptável é configurado para gerar automaticamente um Do
 Execute as seguintes etapas para configurar um Formulário adaptável para gerar automaticamente um Documento de registro:
 
 1. Na instância do autor do Experience Manager, clique em **[!UICONTROL Forms]** > **[!UICONTROL Forms e documentos].**
-1. Selecione um formulário e clique em **[!UICONTROL Propriedades]**.
+1. Selecione um formulário ou Crie um formulário adaptável e clique em **[!UICONTROL Propriedades]**.
 1. Na janela Propriedades, toque em **[!UICONTROL Modelo de formulário]**.
-1. No  **[!UICONTROL Modelo de formulário]** na guia , no **[!UICONTROL Selecionar de]** , selecione **[!UICONTROL Esquema]** ou **[!UICONTROL Nenhum]**. Também é possível selecionar um modelo de formulário ao criar um formulário.
+1. No  **[!UICONTROL Modelo de formulário]** na guia , no **[!UICONTROL Selecionar de]** , selecione **[!UICONTROL Modelo de dados do formulário]**, **[!UICONTROL Esquema]** ou **[!UICONTROL Nenhum]**. Também é possível selecionar um modelo de formulário ao criar um formulário.
 1. Na seção Document of Record Template Configuration da guia Form Model , selecione **Gerar Documento de Registro**.
 1. Clique em **[!UICONTROL Feito.]**
 
@@ -97,7 +97,10 @@ Vincule campos de formulário adaptável com campos de modelo para exibir dados 
 In the following video Adaptive Form components are binded with corresponding Acroform template fields and the Document of Record is sent as an email attachment.
 -->
 
-Você pode usar a ação Enviar email, Enviar fluxo de trabalho do Experience Manager, juntamente com [Etapa Documento de registro e outras ações de envio](configuring-submit-actions.md) para receber um documento de registro.
+Você pode usar ações de envio, como &quot;Enviar email&quot;, &quot;Chamar um fluxo de trabalho AEM&quot;, &quot;Chamar um fluxo do Power Automate&quot; e outras [Enviar ações](configuring-submit-actions.md) para receber um documento de registro.
+![Ações de envio de imagem](/help/forms/assets/submit-actions-img.png)
+
+
 
 ## Atualizações incrementais no modelo de Documento de registro {#document-of-record-template-incremental-updates}
 
@@ -109,7 +112,7 @@ Por exemplo, uma Organização, *We.Retail*, tem um modelo de Documento de regis
 
 ![Modelo original](assets/we-retail-invoice.png)
 
-Depois de usar o modelo por algum tempo, a organização decide renomear `invoice-number` campo para `bill-number` e capturar o endereço de email dos compradores. Um desenvolvedor atualiza o nome da variável `invoice-number` e adiciona um campo de email ao modelo. Ele também cria uma nova versão de modelo chamada  *we-retail-Invoice-v2.pdf*.
+Depois de usar o modelo por algum tempo, a organização decide renomear `invoice-number` campo para `bill-number` e capturar o endereço de email dos compradores. Um desenvolvedor atualiza o nome da variável `invoice-number` e adiciona um campo de email ao modelo. Ele também cria uma nova versão do modelo chamada  *we-retail-Invoice-v2.pdf*.
 
 ![Modelo atualizado](assets/we-retail-new-invoice.png)
 
@@ -120,11 +123,11 @@ O desenvolvedor faz upload e se aplica ao modelo atualizado para o formulário a
 O desenvolvedor do formulário vincula os campos Adaptive Forms ao modelo Documento de registro correspondente.
 >[!VIDEO](assets/we-retail-binding.mp4)
 
-Agora, quando o formulário adaptativo é enviado, um Documento de registro atualizado é criado.
+Agora, quando o Formulário adaptativo é enviado, um Documento de registro atualizado é gerado.
 
 ![Atualização dos pacotes-](assets/we-retail-new-invoice-sent-to-customer.png)
 
-## Considerações principais ao trabalhar com o Documento de registro {#key-considerations-when-working-with-document-of-record}
+## Principais considerações ao trabalhar com o Documento de registro {#key-considerations-when-working-with-document-of-record}
 
 Lembre-se das considerações e limitações a seguir ao trabalhar no Documento de registro do Adaptive Forms.
 
@@ -189,21 +192,9 @@ A tabela a seguir descreve os componentes do Formulário adaptável e os compone
    <td> </td>
   </tr>
   <tr>
-   <td>Rabiscar a assinatura</td>
-   <td>Scribble de assinatura</td>
-   <td>verdadeiro</td>
-   <td> </td>
-  </tr>
-  <tr>
    <td>Caixa numérica</td>
    <td>Campo numérico</td>
    <td>verdadeiro</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Caixa de senha</td>
-   <td>Campo de senha</td>
-   <td>falso</td>
    <td> </td>
   </tr>
   <tr>
@@ -228,12 +219,6 @@ A tabela a seguir descreve os componentes do Formulário adaptável e os compone
    <td>Botão Enviar</td>
    <td><p>Botão Submeter por email</p> <p>Botão Submeter por HTTP</p> </td>
    <td>falso</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Termos e condições</td>
-   <td> </td>
-   <td>verdadeiro</td>
    <td> </td>
   </tr>
   <tr>
@@ -275,15 +260,15 @@ Os componentes da tabela Adaptive Forms, como cabeçalho, rodapé e mapa de linh
 
 ## Modelo base de um Documento de Registro {#base-template-of-a-document-of-record}
 
-O modelo base fornece informações de estilo e aparência ao Documento de registro. Ele permite personalizar a aparência padrão do Documento de registro gerado automaticamente. Por exemplo, você pode usar o modelo base para adicionar o logotipo de sua empresa no cabeçalho e as informações de direitos autorais no rodapé do Documento de registro.
+O modelo base fornece informações de estilo e aparência ao Documento de registro. Ele permite personalizar a aparência padrão do Documento de registro gerado automaticamente. Por exemplo, você pode usar um modelo básico para adicionar o logotipo de sua empresa no cabeçalho e as informações de direitos autorais no rodapé do Documento de registro.
 
-A página principal do modelo base é usada como uma página principal para o modelo Documento de registro. A página principal pode ter informações como cabeçalho de página, rodapé de página e número de página que você pode aplicar ao Documento de registro. Você pode aplicar essas informações ao Documento de registro usando o modelo básico para a geração automática do Documento de registro. O uso do template base permite alterar as propriedades padrão dos campos.
+A página principal de um modelo base é usada como uma página principal para o modelo Documento de registro. A página mestre pode ter informações como um cabeçalho de página, rodapé de página e número de página que você pode aplicar ao Documento de registro. Você pode aplicar essas informações ao Documento de Registro usando o modelo base para a geração automática do Documento de Registro. Usar um template base permite alterar as propriedades padrão dos campos.
 
 Sempre siga [Convenções de modelo básico](#base-template-conventions) ao criar o modelo base.
 
 ## Convenções de modelo básico {#base-template-conventions}
 
-Um modelo base é usado para definir o cabeçalho, o rodapé, o estilo e a aparência de um Documento de registro. O cabeçalho e o rodapé podem incluir informações como o logotipo da empresa e o texto de direitos autorais. A primeira página principal no modelo base é copiada e usada como uma página principal para o Documento de registro, que contém cabeçalho, rodapé, número de página ou qualquer outra informação que deve aparecer em todas as páginas no Documento de registro. Se você usar um modelo base que não esteja em conformidade com as convenções do modelo base, a primeira página principal do modelo base ainda será usada no modelo Documento de registro. É altamente recomendável criar seu modelo base de acordo com suas convenções e usá-lo para a geração automática de Documento de registro.
+Um modelo base é usado para definir o cabeçalho, o rodapé, o estilo e a aparência de um Documento de registro. O cabeçalho e o rodapé podem incluir informações como o logotipo da empresa e o texto de direitos autorais. A primeira página principal no modelo base é copiada e usada como uma página principal para o Documento de registro, que contém um cabeçalho, rodapé, número de página ou qualquer outra informação que deve aparecer em todas as páginas no Documento de registro. Se você usar um modelo base que não esteja em conformidade com as convenções do modelo base, a primeira página principal do modelo base ainda será usada no modelo Documento de registro. É altamente recomendável criar seu modelo base de acordo com suas convenções e usá-lo para a geração automática do Documento de registro.
 
 **Convenções de página principais**
 
@@ -310,12 +295,13 @@ Para criar um modelo base, faça o seguinte no Forms Designer.
 
 1. (Opcional) Modifique o estilo e a aparência dos campos que você deseja aplicar aos campos no Documento de registro.
 1. Salve o formulário.
+   ![Propriedades básicas](/help/forms/assets/form-designer-dor-img.png)
 
-Agora você pode usar o formulário salvo como modelo base para o Documento de registro. Não modifique ou remova nenhum script presente no modelo base.
+Agora você pode usar o formulário salvo como modelo base para um Documento de registro. Não modifique ou remova nenhum script presente no modelo base.
 
 **Modificação do modelo base**
 
-* Se não aplicar nenhum estilo sobre campos no template base, é aconselhável remover esses campos do template base para que todas as atualizações no template base sejam selecionadas automaticamente.
+* Não aplique nenhum estilo sobre campos no template base, é aconselhável remover esses campos do template base para que todas as atualizações no template base sejam selecionadas automaticamente.
 * Ao modificar o modelo base, não remova, adicione ou modifique scripts.
 
 Siga rigorosamente as convenções acima mencionadas e as instruções para criar um modelo base.
@@ -332,23 +318,17 @@ Para localizar as informações de marca inseridas na guia Document of Record , 
 1. Com base na seleção de um modelo padrão ou personalizado, algumas ou todas as propriedades a seguir serão exibidas na guia Documento de registro. Especifique as propriedades mencionadas abaixo para definir a aparência do Documento de registro:
 
    1. **Propriedades básicas**:
-      * **Modelo**: Se você optar por selecionar um modelo personalizado, navegue por um XDP selecionado em seu [!DNL AEM Forms] servidor. Se você quiser usar um modelo que ainda não esteja em seu [!DNL AEM Forms] primeiro faça upload do XDP em seu [!DNL AEM Forms] servidor.
-      * **Cor do destaque**: A cor na qual o texto do cabeçalho e as linhas separadoras são renderizados no PDF de documento ou registro.
+      * **Modelo**: Se quiser selecionar um modelo personalizado, navegue e selecione um XDP no [!DNL AEM Forms] servidor. Se quiser usar um modelo que não esteja disponível em seu [!DNL AEM Forms] primeiro faça upload do XDP em seu [!DNL AEM Forms] servidor.
+      * **Cor do destaque**: A cor na qual o texto do cabeçalho e as linhas separadoras são renderizados no documento de PDF de registro.
       * **Família de fontes**: Família de fontes do texto no PDF Documento de registro.
-      * **Incluir objetos de formulário que não estão vinculados ao modelo de dados**: A configuração da propriedade inclui campos não vinculados do Formulário adaptável baseado em esquema no documento de registro.
+      * **Incluir objetos de formulário que não estão vinculados ao modelo de dados**: A configuração da propriedade inclui campos não vinculados do Formulário adaptável baseado em esquema no Documento de registro.
       * **Excluir campos ocultos do Documento de registro**: Definir a propriedade identifica os campos ocultos para exclusão do Documento de registro.
       * **Ocultar descrição de painéis**: A configuração da propriedade exclui a descrição do painel/tabela do Documento de registro. Aplicável para painel e tabela.
-
-      ![Propriedades básicas](/help/forms/assets/basicpropertiesdor.png)
-
    1. **Propriedades do campo de formulário**:
       * **Para os componentes Caixa de seleção e Botão de opção , mostrar somente os valores selecionados**: A configuração da propriedade exibe apenas os valores selecionados da caixa de seleção e do botão de opção em [!UICONTROL Documento de registro].
       * **Separador para vários valores**: É possível escolher qualquer separador, como vírgula ou quebra de linha, para exibir vários valores.
       * **Alinhamento de opções**: Você pode selecionar o alinhamento desejado (horizontal, vertical, igual ao formulário adaptável) para definir o alinhamento dos campos, como caixa de seleção ou botão de opção a serem exibidos em [!UICONTROL Documento de registro]. Por padrão, o alinhamento vertical é definido para os campos em [!UICONTROL Documento de registro]. A configuração das propriedades na [!UICONTROL Propriedades do campo de formulário] do DoR substitui as propriedades definidas no [!UICONTROL Alinhamento de Item] para os campos em um formulário adaptável. Nesse caso, selecione [!UICONTROL Igual ao formulário aptivo] , o alinhamento como configurado em uma instância do autor do formulário adaptável é usado para [!UICONTROL Documento de registro] campos.
       * **Número de opções para alinhamento horizontal**: é possível definir o número de opções a serem exibidas no Documento de registro para o alinhamento horizontal.
-
-      ![Propriedades do campo de formulário](/help/forms/assets/formfieldpropertiesdor.png)
-
    1. **Página principal  Propriedades**:
       * **Imagem do logotipo**: Você pode optar por usar a imagem do logotipo do Formulário adaptável, escolher um DAM ou fazer upload de um de seu computador.
       * **Título do formulário**: Título do DoR.
@@ -357,7 +337,7 @@ Para localizar as informações de marca inseridas na guia Document of Record , 
       * **Isenção de responsabilidade**: Texto que especifica o âmbito dos direitos e obrigações do Documento de Registro.
       * **Texto de isenção de responsabilidade**: Texto de isenção de responsabilidade.
 
-      ![Página principal  Propriedades](/help/forms/assets/masterpagepropertiesdor.png)
+      ![Página principal  Propriedades](/help/forms/assets/dorpropertiesimg.png)
    >[!NOTE]
    >
    >Se você estiver usando um modelo de Formulário adaptável criado com uma versão do Designer anterior à 6.3, para que as propriedades Cor do destaque e Família de fontes funcionem, verifique se o seguinte está presente no modelo de Formulário adaptável abaixo do subformulário raiz:
@@ -376,28 +356,7 @@ Para localizar as informações de marca inseridas na guia Document of Record , 
 
 1. Para salvar as alterações da marca, toque em **[!UICONTROL Concluído]**.
 
-## Suporte para documento de registro no editor de formulário adaptável {#dor-support-in-adaptiveform}
 
-Você pode configurar o [!UICONTROL Documento de registro] diretamente do editor de formulário adaptável ou do editor de modelo de formulário adaptável.
-
-Execute as seguintes etapas da instância do autor do editor de formulário adaptável:
-
-1. Selecione o **[!UICONTROL Contêiner de formulário adaptável (raiz)]** componente.
-1. Clique em ![Ícone Configurar](/help/forms/assets/configure-icon.svg) ícone para abrir o **[!UICONTROL Propriedades]** do contêiner de Formulário adaptável.
-1. Abra o **[!UICONTROL Documento de Modelo de Registro]** e selecione uma das seguintes opções:
-   * **[!UICONTROL Nenhum]**: Quando esta opção é selecionada, não [!UICONTROL Documento de registro] modelo criado para o formulário adaptável.
-
-   * **[!UICONTROL Associar Modelo de Formulário como Documento de Modelo de Registro]**: quando essa opção é selecionada, o Formulário XFA é usado como modelo para o Documento de registro.
-
-   * **[!UICONTROL Gerar Documento de Registro]**: Quando essa opção é selecionada, a variável [!UICONTROL Documento de registro] O modelo é gerado automaticamente para o formulário adaptável.
-
-1. Toque ![Salvar](/help/forms/assets/check-button.png) para salvar as propriedades.
-
-![Suporte para Modelo de Documento de Registro](/help/forms/assets/dor-templatesupport.png)
-
->[!NOTE]
->
->When [!UICONTROL Documento de registro] O modelo é criado usando um editor de modelo de formulário adaptável, então apenas duas opções estão disponíveis em [!UICONTROL Documento de Modelo de Registro] guia como [!UICONTROL Nenhum] e [!UICONTROL Gerar Documento de Registro].
 
 ## Layouts de tabela e coluna para painéis no Documento de registro {#table-and-column-layouts-for-panels-in-document-of-record}
 
@@ -431,65 +390,3 @@ A configuração do componente Documento de registro está disponível em suas p
 
 * **Incluir campos não vinculados em DoR:** A configuração da propriedade inclui campos não vinculados do Formulário adaptável baseado em esquema no documento de registro. Por padrão, é verdadeiro.
 * **Excluir campos de DoR se ocultos:** Defina a propriedade para excluir os campos ocultos do Documento de registro no envio do formulário. Ao ativar [Revalidar no servidor](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), o servidor recalcula os campos ocultos antes de excluí-los do Documento de registro.
-
-## Usar um arquivo XCI personalizado
-
-Um arquivo XCI ajuda a definir várias propriedades de um documento. O Forms as a Cloud Service tem um arquivo XCI principal. Você pode usar um arquivo XCI personalizado para substituir uma ou mais propriedades padrão especificadas no arquivo XCI principal. Por exemplo, é possível optar por incorporar uma fonte em um documento ou ativar a propriedade com tags para todos os documentos. A tabela a seguir especifica as opções de XCI:
-
-| Opção XCI | Descrição |
-|--- |--- |
-| config/presente/pdf/criador | Identifica o criador do documento usando a entrada Creator no dicionário Informações do documento. Para obter informações sobre esse dicionário, consulte a [Guia de referência do PDF](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/). |
-| config/presente/pdf/produtor | Identifica o produtor do documento utilizando a menção Produtor no dicionário Informações do Documento. Para obter informações sobre esse dicionário, consulte a [Guia de referência do PDF](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/). |
-| configuração/presente/layout | Controla se a saída é um único painel ou paginado. |
-| config/presente/pdf/compression/level | Especifica o grau de compactação a ser usado ao gerar um documento PDF. |
-| config/present/pdf/fontInfo/embed | Controla a incorporação de fontes no documento de saída. |
-| config/present/pdf/scriptModel | Controla se informações específicas de XFA são incluídas no documento PDF de saída. |
-| config/present/common/data/adaptData | Controla se o aplicativo XFA ajusta os dados após a mesclagem. |
-| config/present/pdf/renderPolicy | Controla se a geração de conteúdo da página é feita no servidor ou adiada para o cliente. |
-| config/present/common/locale | Especifica o local padrão usado no documento de saída. |
-| config/presente/destino | Quando contido por um elemento presente, especifica o formato de saída. Quando contido por um elemento openAction , especifica a ação a ser executada ao abrir o documento em um cliente interativo. |
-| config/present/output/type | Especifica o tipo de compactação a ser aplicado a um arquivo ou o tipo de saída a ser produzido. |
-| config/presente/common/temp/uri | Especifica o URI do formulário. |
-| config/presente/common/template/base | Fornece um local básico para URIs no design de formulário. Quando esse elemento está ausente ou vazio, o local do design de formulário é usado como base. |
-| config/presente/common/log/to | Controla o local onde os dados de log ou de saída são gravados. |
-| config/present/output/to | Controla o local onde os dados de log ou de saída são gravados. |
-| config/present/script/currentPage | Especifica a página inicial quando o documento é aberto. |
-| config/present/script/exclude | Informa o Forms as a Cloud Service quais eventos devem ser ignorados. |
-| config/presente/pdf/linearized | Controla se o documento PDF de saída é linearizado. |
-| config/present/script/runScripts | Controla qual conjunto de scripts é executado pelo Forms as a Cloud Service. |
-| config/present/pdf/tagged | Controla a inclusão de tags no documento PDF de saída. As tags, no contexto do PDF, são informações adicionais incluídas em um documento para expor a estrutura lógica do documento. As tags ajudam a acessibilidade e a reformatação. Por exemplo, um número de página pode ser marcado como um artefato, de modo que um leitor de tela não o enuncie no meio do texto. Embora as tags tornem um documento mais útil, elas também aumentam o tamanho do documento e o tempo de processamento para criá-lo. |
-| config/present/pdf/fontInfo/alwaysEmbed | Especifica uma fonte incorporada no documento de saída. |
-| config/present/pdf/fontInfo/neverEmbed | Especifica uma fonte que nunca deve ser incorporada ao documento de saída. |
-| config/present/pdf/pdfa/part | Especifica o número da versão da especificação PDF/A que o documento está em conformidade. |
-| config/presente/pdf/pdfa/amd | Especifica o nível de alteração da especificação PDF/A. |
-| config/presente/pdf/pdfa/conformação | Especifica o nível de conformidade com a especificação PDF/A. |
-| config/presente/pdf/version | Especifica a versão do documento PDF a ser gerado |
-| config/presente/pdf/version/map | Especifica as fontes de fallback para o documento |
-
-### Usar um arquivo XCI personalizado em seu ambiente as a Cloud Service do Forms
-
-1. Adicione o arquivo XCI personalizado ao seu projeto de desenvolvimento.
-1. Especifique o seguinte [propriedade inline](/help/implementing/deploying/configuring-osgi.md):
-
-   ```JSON
-    {
-     "xciFilePath": "[path of XCI file]"
-    }
-   ```
-
-   Por exemplo,
-
-   ```JSON
-    {
-     "xciFilePath": "/content/dam/formsanddocuments/customMinionProBoldAndTagged.xci"
-    }
-   ```
-
-1. Implante o projeto no ambiente Cloud Service.
-
-### Usar um arquivo XCI personalizado em seu ambiente de desenvolvimento as a Cloud Service do Forms local
-
-1. Faça upload do arquivo XCI para o ambiente de desenvolvimento local.
-1. Abra o gerenciador de configuração do SDK do Cloud Service. O URL padrão é: <http://localhost:4502/system/console/configMgr>.
-1. Localize e abra o **[!UICONTROL Canal da Web de comunicação interativa e Forms adaptável]** configuração.
-1. Especifique o caminho do arquivo XCI e clique em **[!UICONTROL Salvar]**.

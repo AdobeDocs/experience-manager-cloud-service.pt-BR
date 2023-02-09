@@ -3,9 +3,9 @@ title: Como atribuir um fluxo de trabalho a outro usuário, enviar email, usar o
 description: Os fluxos de trabalho centrados no Forms permitem que você crie rapidamente os fluxos de trabalho baseados no Adaptive Forms. Você pode usar o Adobe Sign para assinar documentos por email, criar processos comerciais baseados em formulários, recuperar e enviar dados para várias fontes de dados e enviar notificações por email
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: a8dae80f79e32117341519b31c389f8fc30b5957
+source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
 workflow-type: tm+mt
-source-wordcount: '6132'
+source-wordcount: '7210'
 ht-degree: 0%
 
 ---
@@ -242,7 +242,7 @@ Se você especificar o caminho de uma pasta, por exemplo, anexos, todos os arqui
 
 ## Invocar etapa DDX {#invokeddx}
 
-Document Description XML (DDX) é uma linguagem de marcação declarativa cujos elementos representam blocos de construção de documentos. Esses blocos fundamentais incluem documentos PDF e XDP e outros elementos, como comentários, marcadores e texto estilizado. O DDX define um conjunto de operações, que pode ser aplicado em um ou mais documentos de entrada para gerar um ou mais documentos de saída.  Um único DDX pode ser usado com um intervalo de documentos de origem. Você pode usar o ***Invocar etapa DDX*** em um Fluxo de trabalho AEM para executar várias operações, como Assemblagem de documentos de desmontagem, Criação e modificação do Acrobat e XFA Forms, e outras descritas em [Documentação de referência DDX](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf).
+Document Description XML (DDX) é uma linguagem de marcação declarativa cujos elementos representam blocos de construção de documentos. Esses blocos fundamentais incluem documentos PDF e XDP, além de outros elementos, como comentários, marcadores e texto estilizado. O DDX define um conjunto de operações, que pode ser aplicado em um ou mais documentos de entrada para gerar um ou mais documentos de saída.  Um único DDX pode ser usado com uma variedade de documentos de origem. Você pode usar o ***Invocar etapa DDX*** em um Fluxo de trabalho AEM para executar várias operações, como Assemblagem de documentos de desmontagem, Criação e modificação do Acrobat e XFA Forms, e outras descritas em [Documentação de referência DDX](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf).
 
 A etapa Chamar DDX tem as seguintes propriedades:
 
@@ -392,14 +392,13 @@ A etapa Assinar documento tem as seguintes propriedades:
 * **[!UICONTROL Script ou serviço para selecionar signatários]**: A opção estará disponível somente se a opção Dinamicamente estiver selecionada no campo Selecionar signatários . Você pode especificar um ECMAScript ou um serviço para escolher assinantes e opções de verificação para um documento.
 * **[!UICONTROL Detalhes do assinante]**: A opção só estará disponível se a opção Manualmente estiver selecionada no campo Selecionar signatários . Especifique o endereço de email e escolha um mecanismo de verificação opcional. Antes de selecionar um mecanismo de verificação em duas etapas, verifique se a opção de verificação correspondente está ativada para o [!DNL Adobe Sign] conta. Você pode usar uma variável do tipo de dados String para definir valores para campos Email, Código do país e Número de telefone. Os campos Código do país e Número de telefone são exibidos somente se você selecionar Verificação de telefone na lista suspensa de verificação de duas etapas.
 
-<!-- 
-
+<!--
 ## Document Services steps {#document-services-steps}
 
 AEM Document services are a set of services for creating, assembling, and securing PDF Documents. [!DNL AEM Forms] provides a separate AEM Workflow step for each document service.
 
 Similar to other [!DNL AEM Forms] workflow steps, such as Assign Task, Send Email, and Sign Document, you can use variables in all AEM Document services steps. For more information on creating and managing variables, see [Variables in AEM workflows](variable-in-aem-workflows.md).
-
+ 
 ### Apply Document Time Stamp step {#apply-document-time-stamp-step}
 
 Add time stamp to a document. You provide document details such as input document path, input document name, location to store exported data. You may choose to overwrite existing payload file, choose a different file name to store data in a different file under payload folder, provide an absolute path to the data, or store data in a variable of Document data type.
@@ -487,65 +486,83 @@ Send a document directly to a printer. It supports the following printing access
 
 * **[!UICONTROL Direct accessible printer]**: A printer that is installed on the same computer is called a direct accessible printer, and the computer is named printer host. This type of printer can be a local printer that is connected to the computer directly.
 * **[!UICONTROL Indirect accessible printer]**: The printer that is installed on a print server is accessed from other computers. Technologies such as the common UNIX® printing system (CUPS) and the Line Printer Daemon (LPD) protocol are available to connect to a network printer. To access an indirect accessible printer, specify the print server’s IP or host name. Using this mechanism, you can send a document to an LPD URI when the network has an LPD running. The mechanism lets you route the document to any printer that is connected to the network that has an LPD running.
-
-### Generate Printed Output Step {#generatePrintedOutput}
-
-The step generates a PCL, PostScript, ZPL, IPL, TPCL, or DPL output given a form design and data file. The data file is merged with the form design and formatted for printing. The output generated by this step can be sent directly to a printer or saved as file. It is recommended that you use this step when you want to use form designs or data from an application. If your form designs or form designs are located on the network, local file system, or HTTP location, use the generatePrintedOutput operation operation.
-
-For example, your application requires that you merge a form design with a data file. The data contains hundreds of records. In addition, it requires the output is sent to a printer that supports ZPL. The form design and your input data are located in an application. Use the generatePrintedOutput operation to merge each record with a form design and send the output to a printer that supports ZPL.
-
-The Generate Printed Output step has the following properties:
-
-**[!UICONTROL Input properties]**
-
-* **[!UICONTROL Select template file using]**: Specify the path of the template file. You can select the template file using the path that is relative to the payload, saved at an absolute path, or using a variable of Document data type. For example, [Payload_Directory]/Workflow/data.xml. If the path does not exist in crx-repository, an administrator can create the path before using it. Moreover, you can also accept payload as the input data file.
-
-* **[!UICONTROL Select data document using]**: Specify the path of a input data file. You can select the input data file using the path that is relative to the payload, saved at an absolute path, or using a variable of Document data type. For example, [Payload_Directory]/Workflow/data.xml. If the path does not exist in crx-repository, an administrator can create the path before using it.
-
-* **[!UICONTROL Printer Format]**: A Print Format value that specifies the page description language to use, when an XDC file is not provided, to generate the output stream. If you provide a literal value, select one of these values:
-
-  * **[!UICONTROL Custom PCL]**: Use the option to specify a custom XDC file for PCL.
-  * **[!UICONTROL Custom PostScript]**: Use the option to specify a custom XDC file for PostScript.
-  * **[!UICONTROL Custom ZPL]**: Use the option to specify a custom XDC file file for ZPL.
-  * **[!UICONTROL Generic Color PCL (5c)]**: Use a generic color PCL (5c).
-  * **[!UICONTROL Generic PostScript Level3]**: Use generic PostScript Level 3.
-  * **[!UICONTROL ZPL 300 DPI]**: Use ZPL 300 DPI. The zpl300.xdc is used.
-  * **[!UICONTROL ZPL 600 DPI]**: Use ZPL 600 DPI. The zpl600.xdc file is used.
-  * **[!UICONTROL Custom IPL]**: Use the option to specify a custom XDC file for IPL.
-  * **[!UICONTROL IPL 300 DPI]**: Use IPL 300 DPI. The ipl300.xdc is used.
-  * **[!UICONTROL IPL 400 DPI]**: Use IPL 400 DPI. The ipl400.xdc file is used.
-  * **[!UICONTROL Custom TPCL]**: Use the option to specify a custom XDC file for TPCL.
-  * **[!UICONTROL TPCL 305 DPI]**: Use TPCL 300 DPI. The tpcl305.xdc file is used.
-  * **[!UICONTROL PCL 600 DPI]**: Use TPCL 600 DPI. The tpcl600.xdc file is used.
-  * **[!UICONTROL Custom DPL]**: Use the option to specify a custom XDC file DPL.
-  * **[!UICONTROL DPL300DPI]**: Use DPL 300 DPI. The dpl300.xdc file is used.
-  * **[!UICONTROL DPL406DPI]**: Use DPL 400 DPI. The dpl406.xdc is used.
-  * **[!UICONTROL DPL600DPI]**: Use DPL 600 DPI. The dpl600.xdc is used.
-
-**[!UICONTROL Output Properties]**
-
-* **[!UICONTROL Save output document using]**: Specify the location to save the output file. You can save the output file at an location  which is relative to the payload, in a variable, or specify an absolute location to save the output file. If the path does not exist in crx-repository, an administrator can create the path before using it.
-
-**[!UICONTROL Advanced Properties]**
-
-* **[!UICONTROL Select Content Root location using]**: Content root is a string value that specifies the URI, absolute reference, or location in the repository to retrieve relative assets used by the form design. For example, if the form design references an image relatively, such as ../myImage.gif, myImage.gif must be located at repository://. The default value is repository://, which points to the root level of the repository.
-
-  When you pick an asset from your application, the Content Root URI path must have the correct structure. For example, if a form is picked from an application named SampleApp, and is placed at SampleApp/1.0/forms/Test.xdp, the Content Root URI must be specified as repository://administrator@password/Applications/SampleApp/1.0/forms/, or repository:/Applications/SampleApp/1.0/forms/ (when authority is null). When the Content Root URI is specified this way, the paths of all of the referenced assets in the form will be resolved against this URI.
-
-* **[!UICONTROL Select XCI file using]**: XCI files are used to describe fonts and other properties that are used for form design elements. You can keep an XCI file relative to the payload, at an absolute path, or using a variable of Document data type.
-
-* **[!UICONTROL Locale]**: Specifies the language used for generating the PDF document. If you provide a literal value, select a language from the list or select one of these values:
-  * **[!UICONTROL To use server default]**:
-    (Default) Use the Locale setting configured on the [!DNL AEM Forms] Server. The Locale setting is configured using Administration Console. (See [Designer Help](http://www.adobe.com/go/learn_aemforms_designer_65).)
-
-  * **[!UICONTROL To use custom value]**:
-    Type the Locale code in the literal box or select a string variable containing the locale code. For a complete list of supported locale codes, see http://java.sun.com/j2se/1.5.0/docs/guide/intl/locale.doc.html.
-
-* **[!UICONTROL Copies]**: An integer value that specifies the number of copies to generate for the output. The default value is 1.
-
-* **[!UICONTROL Duplex Printing]**:  A Pagination value that specifies whether to use two-sided or single-sided printing. Printers that support PostScript and PCL use this value.If you provide a literal value, select one of these values:
-    * **[!UICONTROL Duplex Long Edge]**: Use two-sided printing and print using long-edge pagination. 
-    * **[!UICONTROL Duplex Short Edge]**: Use two-sided printing and print using short-edge pagination. 
-    * **[!UICONTROL Simplex]**: Use single-sided printing.
-    
     -->
+
+## Etapa Gerar Saída Impressa {#generatePrintedOutput}
+
+A etapa gera uma saída PCL, PostScript, ZPL, IPL, TPCL ou DPL considerando um design de formulário e um arquivo de dados. O arquivo de dados é unido ao design de formulário e formatado para impressão. A saída gerada por esta etapa pode ser enviada diretamente para uma impressora ou salva como arquivo. É recomendável usar essa etapa quando quiser usar designs de formulário ou dados de um aplicativo. Se os designs de formulário ou designs de formulário estiverem localizados na rede, no sistema de arquivos local ou no local HTTP, use a operação generatePrintedOutput .
+
+Por exemplo, seu aplicativo requer que você mescle um design de formulário com um arquivo de dados. Os dados contêm centenas de registros. Além disso, requer que a saída seja enviada para uma impressora que suporte ZPL. O design de formulário e seus dados de entrada estão localizados em um aplicativo. Use a operação generatePrintedOutput para unir cada registro a um design de formulário e enviar a saída para uma impressora que ofereça suporte a ZPL.
+
+A etapa Gerar saída impressa tem as seguintes propriedades:
+
+**[!UICONTROL Propriedades de entrada]**
+
+* **[!UICONTROL Selecionar arquivo de modelo usando]**: Especifique o caminho do arquivo de modelo. Você pode selecionar o arquivo de modelo usando o caminho relativo à carga útil, salvo em um caminho absoluto ou usando uma variável do tipo de dados Documento. Por exemplo, [Diretório_de_carga]/Workflow/data.xml. Se o caminho não existir no crx-repository, um administrador pode criar o caminho antes de usá-lo. Além disso, também é possível aceitar a carga como arquivo de dados de entrada.
+
+* **[!UICONTROL Selecionar documento de dados usando]**: Especifique o caminho de um arquivo de dados de entrada. Você pode selecionar o arquivo de dados de entrada usando o caminho relativo à carga útil, salvo em um caminho absoluto ou usando uma variável do tipo de dados Documento. Por exemplo, [Diretório_de_carga]/Workflow/data.xml. Se o caminho não existir no crx-repository, um administrador pode criar o caminho antes de usá-lo.
+
+* **[!UICONTROL Formato da impressora]**: Um valor de Formato de Impressão que especifica a linguagem de descrição da página a ser usada, quando um arquivo XDC não for fornecido, para gerar o fluxo de saída. Se você fornecer um valor literal, selecione um destes valores:
+
+   * **[!UICONTROL colorir PCL]**: Use a opção para especificar um arquivo XDC para PCL.
+   * **[!UICONTROL PostScript genérico]**: Use a opção para especificar um arquivo XDC genérico para PostScript.
+   * **[!UICONTROL ZPL 300 DPI]**: Utilizar ZPL 300 DPI. O zpl300.xdc é usado.
+   * **[!UICONTROL ZPL 600 DPI]**: Utilizar ZPL 600 DPI. O arquivo zpl600.xdc é usado.
+   * **[!UICONTROL IPL 300 DPI]**: Utilizar IPL 300 DPI. O ipl300.xdc é usado.
+   * **[!UICONTROL IPL 400 DPI]**: Utilizar IPL 400 DPI. O arquivo ipl400.xdc é usado.
+   * **[!UICONTROL TPCL 600 DPI]**: Use TPCL 600 DPI. O arquivo tpcl600.xdc é usado.
+   * **[!UICONTROL PostScript Simples]**: Use a opção para especificar um arquivo XDC de texto simples para PostScript.
+   * **[!UICONTROL DPL300DPI]**: Utilizar DPL 300 DPI. O dpl300.xdc é usado.
+   * **[!UICONTROL DPL400DPI]**: Utilizar DPL 400 DPI. O dpl400.xdc é usado.
+   * **[!UICONTROL DPL600DPI]**: Utilizar DPL 600 DPI. O dpl600.xdc é usado.
+   * **[!UICONTROL HP_PCL_5e]**: Use a opção para suportar vários dispositivos Canon.
+
+
+**[!UICONTROL Propriedades de saída]**
+
+* **[!UICONTROL Salvar documento de saída usando]**: Especifique o local para salvar o arquivo de saída. Você pode salvar o arquivo de saída em um local relativo à carga, em uma variável ou especificar um local absoluto para salvar o arquivo de saída. Se o caminho não existir no crx-repository, um administrador pode criar o caminho antes de usá-lo.
+
+**[!UICONTROL Propriedades avançadas]**
+
+* **[!UICONTROL Selecionar local raiz do conteúdo usando]**: A raiz de conteúdo é um valor de string que especifica o URI, a referência absoluta ou o local no repositório para recuperar os ativos relativos usados pelo design de formulário. Por exemplo, se o design de formulário fizer referência a uma imagem relativamente, como ../myImage.gif, myImage.gif deve estar localizado em repository://. O valor padrão é repository://, que aponta para o nível raiz do repositório.
+
+   Quando você seleciona um ativo do seu aplicativo, o caminho do URI da raiz de conteúdo deve ter a estrutura correta. Por exemplo, se um formulário for extraído de um aplicativo chamado SampleApp e for colocado em SampleApp/1.0/forms/Test.xdp, o URI da Raiz de Conteúdo deve ser especificado como repository://administrator@password/Applications/SampleApp/1.0/forms/ ou repository:/Applications/SampleApp/1.0/forms/ (quando a autoridade é nula). Quando o URI raiz do conteúdo é especificado dessa forma, os caminhos de todos os ativos referenciados no formulário serão resolvidos em relação a esse URI.
+
+* **[!UICONTROL Selecione o arquivo XCI usando]**: Os arquivos XCI são usados para descrever fontes e outras propriedades usadas para elementos de design de formulário. Você pode manter um arquivo XCI relativo à carga, em um caminho absoluto ou usando uma variável do tipo de dados Document .
+
+* **[!UICONTROL Localidade]**: Especifica o idioma usado para gerar o documento PDF. Se você fornecer um valor literal, selecione um idioma na lista ou selecione um destes valores:
+   * **[!UICONTROL Para usar o padrão do servidor]**: (Padrão) Use a configuração Localidade definida na variável [!DNL AEM Forms] Servidor. A configuração Local é configurada usando o Console de administração. (Consulte [Ajuda do Designer](http://www.adobe.com/go/learn_aemforms_designer_65).)
+
+   * **[!UICONTROL Para usar um valor personalizado]**: Digite o Código de localidade na caixa literal ou selecione uma variável de string que contenha o código de localidade. Para obter uma lista completa dos códigos de localidade compatíveis, consulte http://java.sun.com/j2se/1.5.0/docs/guide/intl/locale.doc.html.
+
+* **[!UICONTROL Cópias]**: Um valor inteiro que especifica o número de cópias a serem geradas para a saída. O valor padrão é 1.
+
+* **[!UICONTROL Impressão frente e verso]**: Um valor de Paginação que especifica o uso da impressão nos dois lados ou nos dois lados. As impressoras compatíveis com PostScript e PCL usam esse valor. Se você fornecer um valor literal, selecione um destes valores:
+   * **[!UICONTROL Borda longa duplex]**: Use impressão nos dois lados e impressão usando paginação de borda longa.
+   * **[!UICONTROL Borda curta duplex]**: Use impressão nos dois lados e impressão usando paginação de borda curta.
+   * **[!UICONTROL Simplex]**: Use impressão em um único lado.
+
+## Etapa Gerar PDF Output não interativo   {#generatePDFdocuments}
+
+1. Arraste o fluxo de trabalho Gerar saída de PDF não interativa na guia Forms Workflow no Sidekick.
+1. Clique duas vezes na etapa de fluxo de trabalho adicionada para editar o componente.
+1. Na caixa de diálogo Editar componente, configure documentos de entrada, documentos de saída e parâmetros adicionais e clique em **[!UICONTROL OK]**.
+
+### Documentos de entrada {#input-documents-3}
+
+* **Arquivo de modelo**: Especifica o local do modelo XDP. É um campo obrigatório.
+
+* **Documento de dados**: Especifica o local do xml de dados que precisa ser unido ao modelo.
+
+### Documento de saída {#output-document}
+
+**Documento de saída**: Especifica o nome do formulário PDF gerado.
+
+### Parâmetros adicionais {#additional-parameters-1}
+
+* **Raiz do conteúdo**: Especifica o caminho para a pasta no repositório onde os fragmentos ou imagens usados no modelo XDP de entrada são armazenados.
+* **Localidade**: Especifica o local padrão para o formulário PDF gerado.
+* **Versão do Acrobat**: Especifica a versão de destino do Acrobat para o formulário PDF gerado.
+* **PDF linearizado**: Especifica se deve-se otimizar o PDF gerado para visualização da Web.
+* **PDF com tags**: Especifica se o PDF gerado deve ser acessível.
+* **Documento XCI**: Especifica o caminho para o arquivo XCI.

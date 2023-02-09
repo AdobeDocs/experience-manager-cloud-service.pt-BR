@@ -5,17 +5,22 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
+source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
 workflow-type: tm+mt
-source-wordcount: '1359'
+source-wordcount: '1414'
 ht-degree: 0%
 
 ---
 
-# Criar um formulário adaptável {#creating-an-adaptive-form}
+# Criar um formulário adaptável (componentes básicos) {#creating-an-adaptive-form}
 
 
 O Adaptive Forms permite criar formulários envolventes, responsivos, dinâmicos e adaptáveis. O AEM Forms fornece um assistente para usuários empresariais para criar rapidamente o Adaptive Forms. O assistente tem uma navegação de guia rápida para selecionar facilmente o modelo pré-configurado, o estilo, os campos e as opções de envio para criar um formulário adaptável.
+
+>[!NOTE]
+>
+> Este artigo descreve uma abordagem antiga para criar um formulário adaptável. Para criar o Adaptive Forms com base na abordagem mais recente, consulte [Criar um formulário adaptável (Componentes principais)](creating-adaptive-form.md).
+
 
 <!-- 
 
@@ -39,7 +44,7 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
    XML and JSON schemas represent the structure in which data is produced or consumed by the back-end system in your organization. You can associate the schema to an Adaptive Form and use its elements to add dynamic content to the Adaptive Form. The elements of the schema will be available for use in the Data Model Objects tab of the Content browser when authoring Adaptive Forms.
 
 * **Using none or without a form model**
-   Adaptive Forms created with this option don’t use any form model. The data XML generated from such forms has flat structure with fields and corresponding values. -->
+   Adaptive Forms created with this option don't use any form model. The data XML generated from such forms has flat structure with fields and corresponding values. -->
 
 ## Pré-requisitos
 
@@ -54,6 +59,8 @@ Você precisa do seguinte para criar um formulário adaptável:
 
 * **Permissões**: Adicione seus usuários a [!DNL forms-users] para fornecer permissões para criar um formulário adaptável. Para obter uma lista detalhada dos grupos de usuários específicos de formulários, consulte [Grupos e permissões](forms-groups-privileges-tasks.md).
 
+## Criar um formulário adaptável (componentes básicos) {#create-an-adaptive-form-foundation-components}
+
 1. Acesso [!DNL Experience Manager Forms] Instância do autor. Pode ser uma instância do Cloud ou uma instância de desenvolvimento local.
 
 1. Insira suas credenciais na página de logon do Experience Manager.
@@ -67,15 +74,19 @@ Você precisa do seguinte para criar um formulário adaptável:
 
       >[!NOTE]
       >
-      > Você também pode criar [!UICONTROL Documento de registro] modelo usando um editor de formulário adaptável. Para obter mais informações, consulte [Suporte para documento de registro no editor de formulário adaptável](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+      > Você também pode criar [!UICONTROL Documento de registro] usando um editor adaptável do Forms. Para obter mais informações, consulte [Suporte para documento de registro no editor de formulário adaptável](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
 
    * Quando você seleciona um template estático, as opções de dados, estilo, envio, delivery e visualização não estão disponíveis. Quando você cria um novo formulário adaptável, é recomendável usar um modelo editável.
 
-1. Na guia Estilo , selecione um tema:
+1. No **[!UICONTROL Estilo]** selecione um tema:
+
    * Quando o template selecionado especifica um tema, o tema é selecionado automaticamente no assistente. Também é possível escolher um tema diferente na guia Style .
    * Se o modelo selecionado não especificar um tema, você pode usar a guia Style para escolher um tema. O **[!UICONTROL Criar]** é ativado somente depois que um tema é selecionado.
-1. (Opcional) Na guia Dados, selecione um modelo de dados:
+
+1. (Opcional) Na seção **[!UICONTROL Dados]** selecione um modelo de dados:
+
    * **Modelo de dados do formulário**: A [Modelo de dados do formulário](data-integration.md) O permite integrar entidades e serviços de diferentes fontes de dados a um Formulário adaptável. Escolha Modelo de dados de formulário se o Formulário adaptável que você está criando envolver a busca e gravação de dados de e para várias fontes de dados.
+
    * **Esquema JSON**: [Esquema JSON](adaptive-form-json-schema-form-model.md) representa a estrutura na qual os dados são produzidos ou consumidos pelo sistema de back-end em sua organização. Você pode associar o esquema a um Formulário adaptável e usar seus elementos para adicionar conteúdo dinâmico ao Formulário adaptável. Os elementos do esquema estão disponíveis para uso na guia Objetos do modelo de dados do navegador Conteúdo ao criar o Adaptive Forms e todos os campos também são adicionados ao Formulário adaptável recém-criado.
 
    Por padrão, todos os campos do modelo de dados são selecionados. Quando você cria o Formulário adaptativo, todos os campos do modelo de dados selecionados são convertidos em componentes do Formulário adaptável correspondentes. O assistente fornece caixas de seleção para selecionar apenas os campos que devem ser incluídos no formulário adaptável.
@@ -86,7 +97,7 @@ Você precisa do seguinte para criar um formulário adaptável:
    
    -->
 
-1. Na guia Enviar, selecione uma ação de envio:
+1. No **[!UICONTROL Submissão]** selecione uma ação enviar:
 
    * Quando você seleciona um modelo, a ação de envio especificada no modelo é selecionada automaticamente. Você pode selecionar uma ação de envio diferente da guia Enviar. O **[!UICONTROL Submissão]** exibe todas as ações de envio disponíveis.
 
@@ -176,3 +187,7 @@ Também é possível modificar as propriedades do modelo de formulário no edito
 1. Toque ![Salvar](/help/forms/assets/check-button.png) para salvar as propriedades.
 
 ![FDM-Schema-Support](/help/forms/assets/fdmsupport.png)
+
+>[!NOTE]
+>
+> Também é possível salvar um Formulário adaptativo como modelo. Para obter mais informações, consulte [Criar um modelo usando um formulário adaptável](/help/forms/template-editor.md#saving-an-adaptive-form-as-template-saving-adaptive-form-as-template).

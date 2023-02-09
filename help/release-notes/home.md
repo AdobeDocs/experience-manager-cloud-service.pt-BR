@@ -2,7 +2,7 @@
 title: Notas de versão do Adobe Experience Manager (AEM) as a Cloud Service.
 description: Notas de versão do Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: e98ba2840795f136bf2c10c66863b52beede1342
+source-git-commit: fda4fdd3a28caa0a35014fbf4b0bbac8800e343c
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 100%
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 | Produto | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| Versão | 2022.10.0 |
+| Versão | 2023.1.0 |
 | Tipo | Atualizações contínuas |
 | Data de disponibilidade | Atualização contínua |
 
@@ -21,8 +21,8 @@ ht-degree: 100%
 
 Com o modelo de liberação contínua no [!DNL Adobe Experience Manager] as a Cloud Service, o aplicativo é atualizado automaticamente de forma contínua. Há dois tipos de atualizações: versões de recursos e versões de manutenção.
 
-* As versões de recursos são liberadas com uma frequência mensal previsível e são focadas em novos recursos e inovações de produtos.
-* As versões de manutenção são liberadas frequentemente e seu foco são as atualizações de segurança, correções de erros e aprimoramentos de desempenho. Isso garante que o [!DNL Adobe Experience Manager] as a Cloud Service esteja sempre atualizado com qualquer correção crítica.
+* [As versões de recursos são liberadas com uma frequência mensal previsível e são focadas em novos recursos e inovações de produtos.](/help/release-notes/release-notes-cloud/release-notes-current.md)
+* [As versões de manutenção são liberadas frequentemente e seu foco são as atualizações de segurança, correções de erros e aprimoramentos de desempenho. ](/help/release-notes/maintenance/latest.md) Isso garante que o [!DNL Adobe Experience Manager] as a Cloud Service esteja sempre atualizado com qualquer correção crítica.
 
 Além da velocidade da inovação, o [!DNL Adobe Experience Manager] as a Cloud Service também oferece a flexibilidade de pré-visualizar os recursos futuros com um mês de antecedência, antes que eles sejam lançados para produção. Isso permite avaliar o impacto de uma versão futura na organização, testando a condução dos recursos em seu próprio ambiente personalizado e treinando/preparando os usuários internos com bastante antecedência.
 

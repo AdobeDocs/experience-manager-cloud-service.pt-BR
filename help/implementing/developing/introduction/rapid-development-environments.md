@@ -1,11 +1,10 @@
 ---
 title: Ambientes de desenvolvimento rápido
 description: Saiba como aproveitar os ambientes de desenvolvimento rápido para iterações de desenvolvimento rápidas em um ambiente em nuvem.
-hidefromtoc: true
-source-git-commit: 10d74413ece591de52b7dbebd59191cace81e238
+source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
 workflow-type: tm+mt
-source-wordcount: '2664'
-ht-degree: 6%
+source-wordcount: '2903'
+ht-degree: 5%
 
 ---
 
@@ -450,3 +449,20 @@ O número de RDEs necessários depende da composição e dos processos de uma or
 No outro extremo, uma equipe com um único RDE pode usar processos internos para coordenar qual desenvolvedor pode usar o ambiente em um determinado momento. Isso pode ser possível sempre que um desenvolvedor atingir um marco de recurso intermediário e estiver pronto para validar em um ambiente do Cloud, onde poderá fazer rapidamente as alterações necessárias.
 
 Um modelo intermediário é aquele em que uma organização compra vários RDEs para que haja uma maior probabilidade de um RDE não utilizado estar disponível. Uma estratégia poderia ser alocar um RDE por equipe de arranhão ou recurso principal. Processos internos podem ser usados para coordenar o uso dos ambientes.
+
+## Como um RDE (AEM Forms Cloud Service Rapid Development Environment, ambiente de desenvolvimento rápido) é diferente de outros ambientes? {#how-are-forms-rds-different-from-cloud-development-environments}
+
+Os desenvolvedores do Forms podem usar o Ambiente de desenvolvimento do AEM Forms Cloud Service Rapid para desenvolver rapidamente o Forms adaptável, fluxos de trabalho e personalizações, como personalizar componentes principais, integrações com sistemas de terceiros e muito mais. O AEM Forms Cloud Service Rapid Development Environment (RDE) não tem suporte para recursos e capacidades que exigem Documento de registro, como gerar um Documento de registro no envio de um formulário adaptável. Os recursos listados abaixo usam Documento de registro. Estes não estão disponíveis para um Ambiente de desenvolvimento rápido (RDE):
+
+* Configurar um documento de registro para um formulário adaptável
+* Gerar um documento de registro no envio de um formulário adaptável ou com uma etapa de fluxo de trabalho
+* Enviar documento de registro como anexo com a ação Enviar por email ou com a etapa Enviar por email em um fluxo de trabalho
+* Uso do Adobe Sign em um formulário adaptável ou em uma etapa do fluxo de trabalho
+* APIs de comunicação
+
+Você encontra mensagens de erro sobre o uso de um recurso que requer Documento de registro.
+
+>[!NOTE]
+>
+> Não há alteração entre a interface do usuário do Rapid Development Environment (RDE) e outros ambientes do Cloud Service para o Forms. Todas as opções relacionadas ao Documento de registro, como selecionar um documento de modelo de registro para um formulário adaptável, continuam a aparecer na interface do usuário. Esses ambientes não têm recursos de Documento de registro para testar essas opções. Portanto, ao escolher qualquer opção Documento de registro, nenhuma ação é executada e uma mensagem de erro é exibida ou retornada.
+

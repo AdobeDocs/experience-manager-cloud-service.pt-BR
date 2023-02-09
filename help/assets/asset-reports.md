@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Reports,Asset Management
 role: Admin,User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: ede33e43bdfd4b6aa4670fe74c2133a7a3b54b75
 workflow-type: tm+mt
-source-wordcount: '868'
-ht-degree: 7%
+source-wordcount: '890'
+ht-degree: 6%
 
 ---
 
@@ -29,6 +29,7 @@ Quando um relatório é gerado, você é notificado por meio de <!-- through an 
 [!DNL Experience Manager Assets] gera os seguintes relatórios padrão para você:
 
 * Upload
+* Download
 * Expiração
 * Modificação
 * Publicação
@@ -60,7 +61,7 @@ Quando um relatório é gerado, você é notificado por meio de <!-- through an 
 
    ![Selecionar tipo de relatório](assets/choose_report.png)
 
-1. Configure os detalhes do relatório, como título, descrição, miniatura e caminho da pasta no repositório CRX, onde o relatório é armazenado. Por padrão, o caminho da pasta é `/content/dam`. Você pode especificar um caminho diferente.
+1. Configure detalhes do relatório, como título, descrição, miniatura e caminho da pasta. Por padrão, o caminho da pasta é `/content/dam`. Você pode especificar um caminho diferente para executar o relatório em uma pasta específica.
 
    ![Página para adicionar detalhes do relatório](assets/report_configuration.png)
 
@@ -104,6 +105,10 @@ Quando um relatório é gerado, você é notificado por meio de <!-- through an 
    ![Um relatório gerado](assets/report_page.png)
 
    Clique em **[!UICONTROL Baixar]** na barra de ferramentas para baixar o relatório no formato CSV.
+
+   >[!NOTE]
+   >
+   >Você pode gerar relatórios com base nos eventos gerados nos últimos 360 dias. O Experience Manager retém os dados da ID de usuário por 30 dias.
 
 ## Adicionar colunas personalizadas aos relatórios {#add-custom-columns}
 
