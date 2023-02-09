@@ -4,10 +4,10 @@ description: Após configurar os recursos de nuvem, é necessário conceder à e
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
-source-git-commit: 709a80683357b0d56280ff14aa5f4ba6bf2c6b23
+source-git-commit: 050e5966728e157bf2ae51f99a31f68a1d347e4b
 workflow-type: tm+mt
-source-wordcount: '743'
-ht-degree: 100%
+source-wordcount: '769'
+ht-degree: 96%
 
 ---
 
@@ -33,6 +33,10 @@ Para usar o AEM, os membros da equipe devem ser atribuídos a pelo menos um perf
 * `AEM Administrators` - Esse grupo inclui usuários responsáveis por recursos avançados ou pelo AEM.
 
 Todos os usuários atribuídos a um perfil de produto do AEM também terão acesso somente leitura ao Cloud Manager. O acesso de gravação ao Cloud Manager pode ser concedido por meio de outros perfis de produto.
+
+>[!CAUTION]
+>
+>Não edite nem exclua os Perfis de produto nomeados AEM Administradores ou Usuários AEM. A edição desses nomes de perfil pode interromper o logon na instância da nuvem de AEM.
 
 ## Pré-requisitos {#prerequisites}
 
