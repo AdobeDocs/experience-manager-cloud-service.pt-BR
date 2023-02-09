@@ -2,9 +2,9 @@
 title: Ambientes de desenvolvimento rápido
 description: Saiba como aproveitar os ambientes de desenvolvimento rápido para iterações de desenvolvimento rápidas em um ambiente em nuvem.
 hidefromtoc: true
-source-git-commit: ca6e0fa5a4f34c84a523821a6615f4c70e457fcf
+source-git-commit: 6751a14ba38d038b006b8499feb517b7ae2d00bd
 workflow-type: tm+mt
-source-wordcount: '2476'
+source-wordcount: '2634'
 ht-degree: 6%
 
 ---
@@ -406,6 +406,20 @@ Consulte a [documentação do runmode](/help/implementing/deploying/overview.md#
 >[!NOTE]
 >
 >A configuração OSGI do RDE é exclusiva, pois herda os valores de quaisquer propriedades OSGI declaradas pelo pacote `dev` modo de execução.
+
+Os RDEs são diferentes de outros ambientes no que o conteúdo pode ser instalado em uma pasta install.rde (ou install.author.rde ou install.publish.rde) em /apps. Isso permite confirmar o conteúdo para git e entregá-lo ao RDE usando a ferramenta de linha de comando.
+
+## Preenchimento com conteúdo {#populating-content}
+
+Quando um RDE é redefinido, todo o conteúdo é removido e, portanto, se desejado, uma ação explícita deve ser tomada para adicionar conteúdo. Como prática recomendada, considere reunir um conjunto de conteúdo a ser usado como conteúdo de teste para validar ou depurar recursos no RDE. Há várias estratégias possíveis para preencher o RDE com esse conteúdo:
+
+1. Sincronize o pacote de conteúdo explicitamente com o RDE usando a ferramenta de linha de comando
+
+1. Coloque e confirme o conteúdo de amostra no git dentro de uma pasta install.rde em /apps e sincronize o pacote de conteúdo abrangente com o RDE usando a ferramenta de linha de comando.
+
+1. Usar o Gerenciador de Pacotes
+
+Observe que você está limitado a 1 GB ao sincronizar pacotes de conteúdo.
 
 ## Logs {#logging}
 
