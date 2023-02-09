@@ -2,9 +2,9 @@
 title: Ambientes de desenvolvimento rápido
 description: Saiba como aproveitar os ambientes de desenvolvimento rápido para iterações de desenvolvimento rápidas em um ambiente em nuvem.
 hidefromtoc: true
-source-git-commit: 6751a14ba38d038b006b8499feb517b7ae2d00bd
+source-git-commit: 10d74413ece591de52b7dbebd59191cace81e238
 workflow-type: tm+mt
-source-wordcount: '2634'
+source-wordcount: '2664'
 ht-degree: 6%
 
 ---
@@ -201,9 +201,13 @@ A resposta para uma implantação bem-sucedida é semelhante à seguinte:
 
 Como opção, você pode fazer referência a um repositório remoto:
 
-`aio aem:rde:install 'https://repo1.maven.org/maven2/com/adobe/aem/guides/aem-guides-wknd.all/2.1.0/aem-guides-wknd.all-2.1.0.zip'`
+`aio aem:rde:install -t content-package "https://repo1.maven.org/maven2/com/adobe/aem/guides/aem-guides-wknd.all/2.1.0/aem-guides-wknd.all-2.1.0.zip"`
 
 Por padrão, os artefatos são implantados em níveis de criação e publicação, mas o sinalizador &quot;-s&quot; pode ser usado para direcionar uma camada específica.
+
+>[!IMPORTANT]
+>
+>A configuração do dispatcher para o projeto WKND não é implantada por meio da instalação do pacote de conteúdo acima. Você precisará implantá-lo separadamente seguindo as etapas de &quot;Implantação de uma configuração do Apache/Dispatcher&quot;.
 
 <u>Implantação de uma configuração OSGI</u>
 
