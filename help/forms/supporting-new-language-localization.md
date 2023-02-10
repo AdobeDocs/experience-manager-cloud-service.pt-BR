@@ -1,18 +1,20 @@
 ---
-title: Suporte a novas localidades para localização de formulários adaptáveis
-seo-title: Supporting new locales for adaptive forms localization
+title: Adicionar suporte para novas localidades a um formulário adaptável
+seo-title: Learn to add support for new locales to your adaptive forms
 description: O AEM Forms permite adicionar novas localidades para localizar formulários adaptáveis. Inglês (en), Espanhol (es), Francês (fr), Italiano (it), Alemão (de), Japonês (ja), Português-Brasileiro (pt-BR), Chinês (zh-CN), Chinês-Taiwan (zh-TW) e Coreano (ko-KR).
 seo-description: AEM Forms allows you to add new locales for localizing adaptive forms. We support 10 locales out of the box curently, as  "en","fr","de","ja","pt-br","zh-cn","zh-tw","ko-kr","it","es".
-source-git-commit: 848c6a4ea403f644408407aed0a7e06c3524d942
+source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
 workflow-type: tm+mt
-source-wordcount: '1141'
+source-wordcount: '1180'
 ht-degree: 0%
 
 ---
 
-# Suporte a novas localidades para a localização do Adaptive Forms{#supporting-new-locales-for-adaptive-forms-localization}
+# Suporte a novas localidades para a localização do Adaptive Forms {#supporting-new-locales-for-adaptive-forms-localization}
 
-## Sobre dicionários de localidades {#about-locale-dictionaries}
+O AEM Forms fornece suporte pronto para uso para localidades Inglês (en), Espanhol (es), Francês (fr), Italiano (it), Alemão (de), Japonês (ja), Português-Brasileiro (pt-BR), Chinês (zh-CN), Chinês-Taiwan (zh-TW) e Coreano (ko-KR). Você também pode adicionar suporte para mais localidades, como Hindi(hi_IN).
+
+## Como entender dicionários de localidades {#about-locale-dictionaries}
 
 A localização de formulários adaptáveis depende de dois tipos de dicionários de localidade:
 
@@ -20,33 +22,33 @@ A localização de formulários adaptáveis depende de dois tipos de dicionário
 
 * **Dicionários globais** Há dois dicionários globais, gerenciados como objetos JSON, em AEM biblioteca do cliente. Esses dicionários contêm mensagens de erro padrão, nomes de mês, símbolos de moeda, padrões de data e hora e assim por diante. Você pode encontrar esses dicionários em `[author-instance]/libs/fd/xfaforms/clientlibs/I18N`. Esses locais contêm pastas separadas para cada localidade. Como os dicionários globais não são atualizados com frequência, manter arquivos JavaScript separados para cada localidade permite que os navegadores os armazenem em cache e reduzam o uso da largura de banda da rede ao acessar diferentes formulários adaptáveis no mesmo servidor.
 
-Etapas para suportar a nova localização do AEM Forms:
+## Adicionar suporte para novas localidades {#add-support-for-new-locales}
+
+Siga as etapas abaixo para adicionar suporte a uma nova localidade:
 
 1. [Adicionar suporte de localização para localidades não suportadas](#add-localization-support-for-non-supported-locales-add-localization-support-for-non-supported-locales)
 1. [Usar localidades adicionadas no Adaptive Forms](#use-added-locale-in-adaptive-forms-use-added-locale-in-af)
 
-## Adicionar suporte de localização para localidades não suportadas {#add-localization-support-for-non-supported-locales}
+### Adicionar suporte de localização para localidades não suportadas {#add-localization-support-for-non-supported-locales}
 
 Atualmente, o AEM Forms oferece suporte para a localização do conteúdo do Adaptive Forms em inglês (en), espanhol (es), francês (fr), italiano (it), alemão (de), japonês (ja), português-brasileiro (pt-BR), chinês (zh-CN), chinês-Taiwan (zh-TW) e coreano (ko-KR).
 
 Para adicionar suporte para um novo local no tempo de execução do Adaptive Forms:
 
 1. [Clonar o repositório](#1-clone-the-repository-clone-the-repository)
-1. [Adicionar uma localidade ao serviço GuideLocalizationService](#1-add-a-locale-to-the-guide-localization-service-add-a-locale-to-the-guide-localization-service-br)
-1. [Adicionar pasta específica do nome da localidade](#3-add-locale-name-specific-folder-add-locale-name-specific-folder)
-   * [Adicionar biblioteca de cliente XFA para uma localidade](#3-add-xfa-client-library-for-a-locale)
-   * [Adicionar biblioteca do cliente de formulário adaptável para uma localidade](#4-add-adaptive-form-client-library-for-a-locale-add-adaptive-form-client-library-for-a-locale-br)
-1. [Adicionar suporte de local ao dicionário](#5-add-locale-support-for-the-dictionary-add-locale-support-for-the-dictionary-br)
-1. [Confirme as alterações no repositório e implante o pipeline](#7-commit-the-changes-in-the-repository-and-deploy-the-pipeline-commit-changes-in-repo-deploy-pipeline)
+1. [Adicionar uma localidade ao serviço GuideLocalizationService](#2-add-a-locale-to-the-guide-localization-service-add-a-locale-to-the-guide-localization-service-br)
+1. [Adicionar pasta específica do nome da localidade](#3-add-locale-name-specific-folder-client-library-add-locale-name-specific-folder)
+1. [Adicionar suporte de local ao dicionário](#about-locale-dictionaries-about-locale-dictionaries)
+1. [Confirme as alterações no repositório e implante o pipeline](#5-commit-the-changes-in-the-repository-and-deploy-the-pipeline-commit-chnages-in-repo-deploy-pipeline)
 
-### 1. Clonar o repositório {#clone-the-repository}
+#### 1. Clonar o repositório {#clone-the-repository}
 
 1. Na linha de comando, navegue até o local em que deseja clonar o repositório do Forms Cloud Service.
 1. Execute o comando que você [recuperado do Cloud Manager.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) É semelhante a `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`.
 1. Use o nome de usuário e a senha do git para clonar o repositório.
 1. Abra a pasta do repositório do Forms Cloud Service no editor preferencial.
 
-### 2. Adicione um local ao serviço de localização do Guia {#add-a-locale-to-the-guide-localization-service-br}
+#### 2. Adicione um local ao serviço de localização do Guia {#add-a-locale-to-the-guide-localization-service-br}
 
 1. Localize a variável `Guide Localization Service.cfg.json` e adicione a localidade que deseja adicionar à lista de localidades suportadas.
 
@@ -55,19 +57,20 @@ Para adicionar suporte para um novo local no tempo de execução do Adaptive For
    >* Crie um arquivo com o nome como `Guide Localization Service.cfg.json` , se já não estiver presente.
 
 
-### 3. Adicionar biblioteca cliente de pasta específica do nome da localidade {#add-locale-name-specific-folder}
+#### 3. Adicionar biblioteca cliente de pasta específica do nome da localidade {#add-locale-name-specific-folder}
 
 1. Na pasta UI.content, crie `etc/clientlibs` pasta.
 1. Crie uma pasta chamada como `locale-name` under `etc/clientlibs` para servir como container para xfa e af clientlibs.
 
-#### 3.1 Adicionar biblioteca do cliente XFA para um local na pasta de nome do local
+##### 3.1 Adicionar biblioteca do cliente XFA para um local na pasta de nome do local
 
-1. Criar um nó chamado como `[locale-name]_xfa` e digite como `cq:ClientLibraryFolder` under `etc/clientlibs/locale_name`, com categoria `xfaforms.I18N.<locale>`e adicione os seguintes arquivos:
-   * **I18N.js** definição `xfalib.locale.Strings` para `<locale>` conforme definido em `/etc/clientlibs/fd/xfaforms/I18N/ja/I18N`.
-   * **js.txt** Contendo o seguinte:
-      */libs/fd/xfaforms/clientlibs/I18N/Namespace.js I18N.js /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js*
+Criar um nó chamado como `[locale-name]_xfa` e digite como `cq:ClientLibraryFolder` under `etc/clientlibs/locale_name`, com categoria `xfaforms.I18N.<locale>`e adicione os seguintes arquivos:
 
-#### 3.2. Adicionar a biblioteca do cliente de Formulário adaptável para uma pasta de nome de localidade {#add-adaptive-form-client-library-for-a-locale-br}
+* **I18N.js** definição `xfalib.locale.Strings` para `<locale>` conforme definido em `/etc/clientlibs/fd/xfaforms/I18N/ja/I18N`.
+* **js.txt** Contendo o seguinte:
+   */libs/fd/xfaforms/clientlibs/I18N/Namespace.js I18N.js /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js*
+
+##### 3.2. Adicionar a biblioteca do cliente de Formulário adaptável para uma pasta de nome de localidade {#add-adaptive-form-client-library-for-a-locale-br}
 
 1. Criar um nó chamado como `[locale-name]_af` e digite como `cq:ClientLibraryFolder` under `etc/clientlibs/locale_name`, com categoria como `guides.I18N.<locale>` e e dependências como `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` e `guide.common`.
 1. Crie uma pasta chamada como `javascript` e adicione os seguintes arquivos:
@@ -82,7 +85,7 @@ Para adicionar suporte para um novo local no tempo de execução do Adaptive For
      LogMessages.js
    ```
 
-### 4. Adicionar suporte de local ao dicionário {#add-locale-support-for-the-dictionary-br}
+#### 4. Adicionar suporte de local ao dicionário {#add-locale-support-for-the-dictionary-br}
 
 Execute esta etapa somente se a variável `<locale>` você está adicionando que não está entre `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`.
 
@@ -102,7 +105,7 @@ Add the newly created folders in the `filter.xml` under etc/META-INF/[folder hie
 
 Antes de confirmar as alterações no repositório Git do AEM, é necessário acessar o [Informações do repositório Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git).
 
-### 5. Confirme as alterações no repositório e implante o pipeline {#commit-chnages-in-repo-deploy-pipeline}
+#### 5. Confirme as alterações no repositório e implante o pipeline {#commit-chnages-in-repo-deploy-pipeline}
 
 Confirme as alterações no repositório GIT após adicionar um novo suporte de local. Implante seu código usando o pipeline de pilha completo. Saiba mais [como configurar um pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) para adicionar novo suporte à localidade.
 
@@ -110,7 +113,7 @@ Quando o pipeline estiver concluído, a localidade recém-adicionada aparecerá 
 
 ### Usar localidade adicionada no Adaptive Forms {#use-added-locale-in-af}
 
-Etapas para usar e renderizar um formulário adaptável usando um local recém-adicionado:
+Execute as seguintes etapas para usar e renderizar um formulário adaptável usando um local recém-adicionado:
 
 1. Faça logon na instância do autor do AEM.
 1. Ir para **Forms** >  **Forms e documentos**.
@@ -121,11 +124,11 @@ Etapas para usar e renderizar um formulário adaptável usando um local recém-a
 1. Adicionar `&afAcceptLang=<locale-name>` no URL de um formulário adaptável.
 1. Atualize a página e o Formulário adaptativo é renderizado em um local especificado.
 
-Há dois métodos para identificar a localidade de um formulário adaptável. Quando um formulário adaptável é renderizado, ele identifica a localidade solicitada ao :
+Há dois métodos para identificar a localidade de um formulário adaptável. Quando um formulário adaptável é renderizado, ele identifica a localidade solicitada ao:
 
-* analisar a `[local]` no URL do formulário adaptável. O formato do URL é `http://host:[port]/content/forms/af/[afName].[locale].html?wcmmode=disabled`. Usando `[local]` permite armazenar em cache um formulário adaptável.
+* Recuperação da variável `[local]` no URL do formulário adaptável. O formato do URL é `http://host:[port]/content/forms/af/[afName].[locale].html?wcmmode=disabled`. Usando `[local]` permite armazenar em cache um formulário adaptável.
 
-* observando os seguintes parâmetros na ordem especificada:
+* Recuperando os seguintes parâmetros na ordem listada:
 
    * Parâmetro de solicitação `afAcceptLang`
 Para substituir a localidade do navegador de usuários, você pode passar a variável 
