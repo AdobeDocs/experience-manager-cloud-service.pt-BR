@@ -2,10 +2,10 @@
 title: Gerenciamento de ambientes
 description: Saiba mais sobre os tipos de ambientes que você pode criar e como criá-los para o seu projeto do Cloud Manager.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 7174b398040acbf9b18b5ac2aa20fdba4f98ca78
+source-git-commit: 2af14814a4e8af22cfdc1caa2ff656020c79ce77
 workflow-type: tm+mt
-source-wordcount: '1745'
-ht-degree: 100%
+source-wordcount: '1826'
+ht-degree: 88%
 
 ---
 
@@ -17,12 +17,13 @@ Saiba mais sobre os tipos de ambientes que você pode criar e como criá-los par
 
 Um usuário com as permissões necessárias pode criar os tipos de ambientes descritos a seguir (dentro dos limites do que está disponível para o locatário específico).
 
-* **Produção e preparo** - Os ambientes de produção e preparo estão disponíveis como um par e são usados para fins de produção e teste, respectivamente.
+* **Produção + Estágio** - Os ambientes de produção e de preparo estão disponíveis como um par e são usados para fins de produção e teste, respectivamente.
 
 * **Desenvolvimento** - Um ambiente de desenvolvimento pode ser criado para fins de desenvolvimento e testes, e pode ser associado apenas a pipelines de não produção.
 
+* **Desenvolvimento rápido** - Um ambiente de desenvolvimento rápido (RDE) permite que um desenvolvedor implante e analise rapidamente as alterações, minimizando o tempo necessário para testar recursos que comprovadamente funcionam em um ambiente de desenvolvimento local. Consulte [a documentação do ambiente de desenvolvimento rápido](/help/implementing/developing/introduction/rapid-development-environments.md) para obter detalhes sobre como usar um RDE.
 
-Os recursos de ambientes individuais dependem das soluções ativadas no [programa que as contém.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
+Os recursos de ambientes individuais dependem das soluções ativadas no [programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) do ambiente.
 
 * [Sites](/help/sites-cloud/home.md)
 * [Assets](/help/assets/home.md)
@@ -51,13 +52,14 @@ Os recursos de ambientes individuais dependem das soluções ativadas no [progra
 
 1. Na caixa de diálogo **Adicionar ambiente**:
 
-   * Selecione um **Tipo de ambiente**.
-      * O número de ambientes disponíveis/usados é exibido entre parênteses atrás do tipo de ambiente de desenvolvimento.
-   * Forneça o **Nome do ambiente**.
-   * Forneça a **Descrição do ambiente**.
-   * Selecione a **Região da nuvem**.
-
-   ![Caixa de diálogo Adicionar ambiente](assets/add-environment2.png)
+   * Selecione um [**tipo de ambiente**.](#environment-types)
+      * O número de ambientes disponíveis/usados é exibido entre parênteses atrás do nome do tipo de ambiente.
+   * Fornecer um ambiente **Nome**.
+   * Fornecer um ambiente **Descrição**.
+   * Selecione um **Região primária** no menu suspenso .
+      * Observe que isso não pode ser alterado após a criação.
+   * Se você adicionar um **Produção + Estágio** , é necessário fornecer um nome de ambiente e uma descrição para os ambientes de produção e de preparo.
+      ![Caixa de diálogo Adicionar ambiente](assets/add-environment2.png)
 
 1. Clique em **Salvar** para adicionar o ambiente especificado.
 
@@ -101,7 +103,7 @@ Após a criação, será aplicada uma lista de permissões de IP padrão ao serv
 
 ![Serviço de visualização e sua lista de permissões](assets/preview-ip-allow.png)
 
-Um usuário com as permissões necessárias deve concluir as etapas das seguintes opções antes de compartilhar a URL do serviço de visualização com qualquer uma das equipes para garantir o acesso à URL de visualização.
+Um usuário com as permissões necessárias deve concluir as etapas a seguir antes de compartilhar o URL do serviço de visualização para garantir o acesso a ele.
 
 1. Crie uma lista de permissões de IP apropriada, aplique-a ao serviço de visualização e remova imediatamente a lista de permissões `Preview Default [<envId>]`.
 
@@ -109,13 +111,13 @@ Um usuário com as permissões necessárias deve concluir as etapas das seguinte
 
 1. Use o fluxo de trabalho da **Lista de permissões de IP** para remover o IP padrão e adicionar IPs conforme apropriado. Consulte [Gerenciamento de listas de permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md) para saber mais.
 
-Quando o acesso ao serviço de visualização estiver desbloqueado, o ícone de bloqueio antes do nome do serviço não será mais exibido.
+Quando o acesso ao serviço de visualização estiver desbloqueado, o ícone de bloqueio na frente do nome do serviço de visualização não será mais exibido.
 
 Uma vez ativado, você poderá publicar conteúdo no serviço de visualização usando a interface do usuário Gerenciar publicação no AEM. Consulte o documento [Visualização de conteúdo](/help/sites-cloud/authoring/fundamentals/previewing-content.md) para obter mais detalhes.
 
 >[!NOTE]
 >
->Seu ambiente deve usar o AEM versão `2021.05.5368.20210529T101701Z` ou mais recente. Para fazer isso, verifique se um pipeline de atualização foi executado com sucesso no seu ambiente.
+>Seu ambiente deve estar AEM versão `2021.05.5368.20210529T101701Z` ou mais recente para usar o serviço de visualização. Para fazer isso, verifique se um pipeline de atualização foi executado com sucesso no seu ambiente.
 
 ## Atualização de ambientes {#updating-dev-environment}
 
