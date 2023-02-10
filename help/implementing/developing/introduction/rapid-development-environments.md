@@ -1,9 +1,9 @@
 ---
 title: Ambientes de desenvolvimento rápido
 description: Saiba como aproveitar os ambientes de desenvolvimento rápido para iterações de desenvolvimento rápidas em um ambiente em nuvem.
-source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
+source-git-commit: 1d34834af35451b072afde536ee8aaa5155c58b3
 workflow-type: tm+mt
-source-wordcount: '2898'
+source-wordcount: '3062'
 ht-degree: 5%
 
 ---
@@ -26,6 +26,8 @@ Depois que as alterações forem testadas em um RDE, elas poderão ser implantad
 Os RDEs podem ser usados para configurações de código, conteúdo e Apache ou Dispatcher. Ao contrário dos ambientes comuns de desenvolvimento em nuvem, os desenvolvedores podem usar as ferramentas de linha de comando locais para sincronizar o código criado localmente em um RDE.
 
 Cada programa é provisionado com um RDE. No caso de contas de sandbox, elas hibernam após algumas horas de não uso.
+
+Após a criação, os RDEs são definidos para a versão de AEM mais recente disponível. Uma redefinição de RDE, que pode ser executada usando o Cloud Manager, alternará o RDE e o definirá como a versão de AEM mais recente disponível.
 
 Normalmente, um RDE seria usado por um único desenvolvedor em um determinado momento, para testar e depurar um recurso específico. Quando a sessão de desenvolvimento é concluída, o RDE pode ser redefinido em um estado padrão para o próximo uso.
 
@@ -64,6 +66,8 @@ Siga estas etapas para usar o Cloud Manager para criar um RDE para seu programa.
 1. Clique em **Salvar** para adicionar o ambiente especificado.
 
 A tela **Visão geral** agora exibe seu novo ambiente no cartão **Ambientes.**
+
+Após a criação, os RDEs são definidos para a versão de AEM mais recente disponível. Uma redefinição de RDE, que também pode ser executada usando o Cloud Manager, alternará o RDE e o definirá como a versão de AEM mais recente disponível.
 
 Para obter mais informações sobre como usar o Cloud Manager para criar ambientes, gerenciar quem tem acesso a eles e atribuir domínios personalizados, consulte [a documentação do Cloud Manager.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
 
@@ -141,7 +145,12 @@ O Adobe recomenda o seguinte workflow para desenvolver um novo recurso:
 
 * Quando um marco intermediário é atingido e validado com êxito localmente com o SDK as a Cloud Service AEM, o código deve ser comprometido com uma ramificação de recurso Git que ainda não faz parte da linha principal, embora o compromisso com git seja opcional. O que constitui um &quot;marco intermediário&quot; varia com base nos hábitos da equipe. Os exemplos incluem algumas novas linhas de código, meio dia de trabalho ou a conclusão de um subrecurso.
 
-* Redefina o RDE se ele tiver sido usado por outro recurso e desejar [redefini-lo para um estado padrão](#reset-rde). <!-- Alexandru: hiding for now, please don't delete This can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). -->A redefinição levará alguns minutos e todo o conteúdo e código existentes serão excluídos. Você pode usar o comando RDE status para confirmar se o RDE está pronto.
+* Redefina o RDE se ele tiver sido usado por outro recurso e desejar [redefini-lo para um estado padrão](#reset-rde). <!-- Alexandru: hiding for now, please don't delete This can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). -->A redefinição levará alguns minutos e todo o conteúdo e código existentes serão excluídos. Você pode usar o comando RDE status para confirmar se o RDE está pronto. O RDE retornará a versão mais recente do AEM.
+
+   >[!IMPORTANT]
+   >
+   > Se os seus ambientes de armazenamento temporário e produção não estiverem recebendo atualizações automáticas de versão de AEM e estiverem muito atrás da versão mais recente da versão de AEM, lembre-se de que o código em execução no RDE pode não corresponder a como o código funcionará no armazenamento temporário e na produção. Nesse caso, é especialmente importante executar testes completos do código no armazenamento temporário antes de implantá-lo na produção.
+
 
 * Usando a interface de linha de comando RDE, sincronize o código local com o RDE. As opções incluem instalar um pacote de conteúdo, um pacote específico, um arquivo de configuração OSGI, um arquivo de conteúdo e um arquivo zip de uma configuração do Apache/Dispatcher. A referência a um pacote de conteúdo remoto também é possível. Consulte a [Ferramentas de Linha de Comando RDE](#rde-cli-commands) para obter mais informações. Você pode usar o comando de status para validar que a implantação foi bem-sucedida. Como opção, use o Gerenciador de pacotes para instalar pacotes de conteúdo.
 
@@ -337,6 +346,8 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 ## Redefinir {#reset-rde}
 
 Redefinir o RDE remove todos os códigos, configurações e conteúdos personalizados das instâncias de autor e de publicação. Isso pode ser útil, por exemplo, se o RDE tiver sido usado para testar um recurso específico e você quiser redefini-lo para um estado padrão para testar um recurso diferente.
+
+Uma redefinição definirá o RDE para a versão de AEM mais recente disponível.
 
 <!-- Alexandru: hiding for now, please don't delete
 
