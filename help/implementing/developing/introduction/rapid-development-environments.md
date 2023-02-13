@@ -1,9 +1,9 @@
 ---
 title: Ambientes de desenvolvimento rápido
 description: Saiba como aproveitar os ambientes de desenvolvimento rápido para iterações de desenvolvimento rápidas em um ambiente em nuvem.
-source-git-commit: 1d34834af35451b072afde536ee8aaa5155c58b3
+source-git-commit: 79f58c14625ed3e7a9d684006b3abbc97334ceeb
 workflow-type: tm+mt
-source-wordcount: '3062'
+source-wordcount: '3069'
 ht-degree: 5%
 
 ---
@@ -447,6 +447,7 @@ Por esses motivos, é recomendável que, depois de validar o código em um ambie
 
 Observe também as seguintes considerações:
 
+* Os RDEs não incluem um nível de visualização
 * No momento, os RDEs não suportam a visualização e a depuração do código front-end implantado usando o Pipeline de front-end do Cloud Manager.
 * No momento, os RDEs não são compatíveis com o canal de pré-lançamento.
 
