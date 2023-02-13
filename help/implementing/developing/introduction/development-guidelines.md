@@ -2,9 +2,9 @@
 title: Diretrizes de desenvolvimento do AEM as a Cloud Service
 description: Conheça as diretrizes para o desenvolvimento AEM as a Cloud Service e sobre as formas importantes com que ele difere das AEM locais e AEM no AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: e305f9fa7d1c485362bddb8fcd7c9e3e2edefe10
+source-git-commit: 01087aa2ec621d6bebd4d62edbc320df8122f71d
 workflow-type: tm+mt
-source-wordcount: '2590'
+source-wordcount: '2591'
 ht-degree: 2%
 
 ---
@@ -162,7 +162,7 @@ Os clientes podem acessar o CRXDE lite no ambiente de desenvolvimento do nível 
 
 Em vez disso, o Navegador de Repositório pode ser iniciado a partir do Console do Desenvolvedor, fornecendo uma visualização somente leitura no repositório para todos os ambientes nos níveis de criação, publicação e visualização. Leia mais sobre o Navegador de Repositório [here](/help/implementing/developing/tools/repository-browser.md).
 
-Um conjunto de ferramentas para depurar AEM ambientes de desenvolvedor as a Cloud Service está disponível no Console do desenvolvedor para ambientes de desenvolvimento, preparo e produção. O url pode ser determinado ajustando os urls do serviço de Autor ou Publicação da seguinte maneira:
+Um conjunto de ferramentas para depurar AEM ambientes de desenvolvedor as a Cloud Service está disponível no Console do desenvolvedor para ambientes RDE, dev, stage e production. O url pode ser determinado ajustando os urls do serviço de Autor ou Publicação da seguinte maneira:
 
 `https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
