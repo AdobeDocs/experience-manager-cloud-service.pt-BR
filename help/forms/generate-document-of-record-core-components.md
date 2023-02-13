@@ -2,9 +2,9 @@
 title: Gerar documento de registro para Forms adaptável
 description: Explica como você pode gerar um modelo para um Documento de registro (DoR) para Adaptive Forms.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 90a10fd4e414f3457fa9658a50ccd0cf935fdb69
 workflow-type: tm+mt
-source-wordcount: '3214'
+source-wordcount: '3172'
 ht-degree: 2%
 
 ---
@@ -116,11 +116,16 @@ Depois de usar o modelo por algum tempo, a organização decide renomear `invoic
 
 ![Modelo atualizado](assets/we-retail-new-invoice.png)
 
-O desenvolvedor faz upload e se aplica ao modelo atualizado para o formulário adaptável. O formulário adaptável detecta e exibe automaticamente a lista de campos onde o vínculo foi alterado.
+<!--
 
-![Erro de vínculo](assets/we-retail-binding-error.png)
+The developer uploads and applies to the updated template to the adaptive form. The adaptive form automatically detects and displays list of fields where binding has changed.
 
-O desenvolvedor do formulário vincula os campos Adaptive Forms ao modelo Documento de registro correspondente.
+![Binding Error](assets/we-retail-binding-error.png)
+
+The form developer binds Adaptive Forms fields with corresponding Document of Record template.
+
+-->
+
 >[!VIDEO](assets/we-retail-binding.mp4)
 
 Agora, quando o Formulário adaptativo é enviado, um Documento de registro atualizado é gerado.

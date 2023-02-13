@@ -2,9 +2,9 @@
 title: Como criar um modelo de formulário adaptável?
 description: Crie modelos de formulário adaptável para definir a estrutura básica e o conteúdo inicial usando o Editor de modelos.
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: fce9900a1979875fc725318a6cd735341d0b6275
 workflow-type: tm+mt
-source-wordcount: '1920'
+source-wordcount: '2017'
 ht-degree: 1%
 
 ---
@@ -50,8 +50,7 @@ Contém as seguintes opções:
    * **Informações da página**: Permite que você especifique informações como o tempo de publicação/cancelamento de publicação, miniaturas, bibliotecas do lado do cliente, política de página e biblioteca do lado do cliente de design de página.
 
    <!-- * **Emulator**: Lets you simulate and customize the look for different devices.-->
-   * **Seletor de modo:** Permite alterar o modo.
-Você pode escolher **[!UICONTROL Estrutura]** modo, **[!UICONTROL Conteúdo inicial]**, **[!UICONTROL Controle de layout]** modo. O modo Estrutura permite adicionar e personalizar o cabeçalho e o rodapé. O modo Conteúdo inicial permite personalizar o conteúdo do formulário.
+   * **Seletor de modo:** Permite alterar o modo.Você pode escolher **[!UICONTROL Estrutura]** modo, **[!UICONTROL Conteúdo inicial]**, **[!UICONTROL Controle de layout]** modo. O modo Estrutura permite adicionar e personalizar o cabeçalho e o rodapé. O modo Conteúdo inicial permite personalizar o conteúdo do formulário.
    * **Visualizar:** Permite que você visualize a aparência do modelo ao publicá-lo. Você pode usar o Seletor de camada e a Visualização para alternar os modos de edição e visualização.
 * **Barra lateral:** Fornece os navegadores de Conteúdo, Propriedades, Ativos e Componentes.
 * **Barra de ferramentas do componente:** Ao selecionar um componente, você verá uma barra de ferramentas que permite personalizar o componente.
@@ -155,8 +154,20 @@ Um formulário funciona com seu modelo. Quando você faz o download de um formul
 
 >[!NOTE]
 >
-> * Você pode associar um [!UICONTROL Esquema do modelo de dados de formulário] para um modelo de Formulário adaptável em um editor de modelos. Consulte [Criação de um formulário adaptável](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model) para obter mais informações.
 > * Você também pode configurar o [!UICONTROL Documento de registro] diretamente do editor de formulário adaptável ou do editor de modelo de formulário adaptável. Para obter mais informações, consulte [Gerar documento de registro para Forms adaptável](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+
+
+
+### Associar um esquema de modelo de dados de formulário a um modelo {#associating-form-data-model-schema-in-template}
+
+Os autores podem associar um [!UICONTROL Esquema do modelo de dados de formulário] para um modelo de Formulário adaptável no editor de modelos. Isso permite que os autores selecionem um esquema no editor de modelos. Quando um esquema é associado a um modelo e um autor de formulário cria um formulário com base nesse modelo, ele é pré-selecionado para o formulário. Ajuda os autores de formulários a regular o uso do esquema e economiza tempo para o autor de formulários também. Para selecionar um esquema de modelo de dados de formulário no editor de modelo:
+
+1. Toque **[!UICONTROL Navegador de conteúdo]** localizado no lado esquerdo.
+1. Ir para o contêiner de formulário **[!UICONTROL Configuração]**.
+1. Selecionar **[!UICONTROL Modelo de dados]**.
+1. Escolha seu modelo de dados de formulário por meio de **[!UICONTROL Selecionar Modelo de Dados de Formulário]** e salve a configuração.
+
+![Form-Data-Model-Association-in-Forms](/help/forms/assets/select-form-data-model-img.png)
 
 
 
