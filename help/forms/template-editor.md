@@ -2,7 +2,7 @@
 title: Como criar um modelo de formulário adaptável?
 description: Crie modelos de formulário adaptável para definir a estrutura básica e o conteúdo inicial usando o Editor de modelos.
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: fce9900a1979875fc725318a6cd735341d0b6275
+source-git-commit: b4cc89f32dcdddf93f12f087a20395e055ea85bb
 workflow-type: tm+mt
 source-wordcount: '2017'
 ht-degree: 1%
@@ -158,7 +158,7 @@ Um formulário funciona com seu modelo. Quando você faz o download de um formul
 
 
 
-### Associar um esquema de modelo de dados de formulário a um modelo {#associating-form-data-model-schema-in-template}
+## Associar um esquema de modelo de dados de formulário a um modelo {#associating-form-data-model-schema-in-template}
 
 Os autores podem associar um [!UICONTROL Esquema do modelo de dados de formulário] para um modelo de Formulário adaptável no editor de modelos. Isso permite que os autores selecionem um esquema no editor de modelos. Quando um esquema é associado a um modelo e um autor de formulário cria um formulário com base nesse modelo, ele é pré-selecionado para o formulário. Ajuda os autores de formulários a regular o uso do esquema e economiza tempo para o autor de formulários também. Para selecionar um esquema de modelo de dados de formulário no editor de modelo:
 
