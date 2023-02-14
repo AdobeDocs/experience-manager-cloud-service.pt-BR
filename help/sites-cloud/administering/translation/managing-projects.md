@@ -4,10 +4,10 @@ description: Saiba como criar e gerenciar projetos de tradução automática e h
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 998b71903f3ea0c3c1082ecc800331811c2af8cf
+source-git-commit: c9d901db6873965643f5ababe544be3aa635a8e4
 workflow-type: tm+mt
-source-wordcount: '3992'
-ht-degree: 100%
+source-wordcount: '4086'
+ht-degree: 97%
 
 ---
 
@@ -445,6 +445,16 @@ Para comparar cópias de idioma ao idioma principal:
 
 1. As duas páginas (lançamento e origem) serão abertas lado a lado.
    * Para obter informações completas sobre como usar esse recurso, consulte [Diferencial de página](/help/sites-cloud/authoring/features/page-diff.md).
+
+## Mover ou renomear uma página de origem {#move-source}
+
+Se uma página de origem já traduzida precisar ser [renomeado ou movido](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page), a tradução da página novamente após a mudança criará uma nova cópia de idioma com base no nome/local da nova página. A cópia de idioma antiga com base no nome/local anterior ainda estará lá.
+
+A prática recomendada neste cenário é seguir este procedimento:
+1. Cancele a publicação das cópias de idioma associadas à página de origem que você deseja mover.
+1. Exclua-os.
+1. Crie novas cópias de idioma a partir da página de origem recém-movida.
+1. Publique as cópias de idioma recém-criadas.
 
 ## Importar e exportar trabalhos de tradução {#import-export}
 
