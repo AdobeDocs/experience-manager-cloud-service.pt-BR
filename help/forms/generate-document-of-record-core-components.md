@@ -2,9 +2,9 @@
 title: Gerar documento de registro para Forms adaptável
 description: Explica como você pode gerar um modelo para um Documento de registro (DoR) para Adaptive Forms.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 90a10fd4e414f3457fa9658a50ccd0cf935fdb69
+source-git-commit: b0e49296344a4f52a07699a308eb0cbeef897bb9
 workflow-type: tm+mt
-source-wordcount: '3172'
+source-wordcount: '3109'
 ht-degree: 2%
 
 ---
@@ -326,8 +326,10 @@ Para localizar as informações de marca inseridas na guia Document of Record , 
       * **Modelo**: Se quiser selecionar um modelo personalizado, navegue e selecione um XDP no [!DNL AEM Forms] servidor. Se quiser usar um modelo que não esteja disponível em seu [!DNL AEM Forms] primeiro faça upload do XDP em seu [!DNL AEM Forms] servidor.
       * **Cor do destaque**: A cor na qual o texto do cabeçalho e as linhas separadoras são renderizados no documento de PDF de registro.
       * **Família de fontes**: Família de fontes do texto no PDF Documento de registro.
+
       * **Incluir objetos de formulário que não estão vinculados ao modelo de dados**: A configuração da propriedade inclui campos não vinculados do Formulário adaptável baseado em esquema no Documento de registro.
-      * **Excluir campos ocultos do Documento de registro**: Definir a propriedade identifica os campos ocultos para exclusão do Documento de registro.
+      <!-- **Exclude hidden fields from the Document of Record**: Setting the property identifies the hidden fields for exclusion from Document of Record.-->
+
       * **Ocultar descrição de painéis**: A configuração da propriedade exclui a descrição do painel/tabela do Documento de registro. Aplicável para painel e tabela.
    1. **Propriedades do campo de formulário**:
       * **Para os componentes Caixa de seleção e Botão de opção , mostrar somente os valores selecionados**: A configuração da propriedade exibe apenas os valores selecionados da caixa de seleção e do botão de opção em [!UICONTROL Documento de registro].
@@ -341,7 +343,6 @@ Para localizar as informações de marca inseridas na guia Document of Record , 
       * **Rótulo de isenção de responsabilidade**: Rótulo de isenção de responsabilidade.
       * **Isenção de responsabilidade**: Texto que especifica o âmbito dos direitos e obrigações do Documento de Registro.
       * **Texto de isenção de responsabilidade**: Texto de isenção de responsabilidade.
-
       ![Página principal  Propriedades](/help/forms/assets/dorpropertiesimg.png)
    >[!NOTE]
    >
@@ -394,4 +395,4 @@ A configuração do componente Documento de registro está disponível em suas p
 **Configurações de nível de formulário**
 
 * **Incluir campos não vinculados em DoR:** A configuração da propriedade inclui campos não vinculados do Formulário adaptável baseado em esquema no documento de registro. Por padrão, é verdadeiro.
-* **Excluir campos de DoR se ocultos:** Defina a propriedade para excluir os campos ocultos do Documento de registro no envio do formulário. Ao ativar [Revalidar no servidor](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), o servidor recalcula os campos ocultos antes de excluí-los do Documento de registro.
+<!-- **Exclude fields from DoR if hidden:** Set the property to exclude the hidden fields from Document of Record at form submission. When you enable [Revalidate on server](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), the server recomputes the hidden fields before excluding those fields from the Document of Record.->>
