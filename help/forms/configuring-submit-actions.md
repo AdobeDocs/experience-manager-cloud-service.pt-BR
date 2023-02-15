@@ -2,9 +2,9 @@
 title: Como configurar uma ação de envio para um formulário adaptável
 description: Um formulário adaptável fornece várias ações de envio. Uma ação de envio define como um formulário adaptável é processado após o envio. Você pode usar as ações de envio incorporadas ou criar as suas próprias.
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 6a124b476b4dd18ea38d35438866a07958918461
 workflow-type: tm+mt
-source-wordcount: '3065'
+source-wordcount: '3131'
 ht-degree: 1%
 
 ---
@@ -174,7 +174,7 @@ O **[!UICONTROL Enviar para a SharePoint]** A ação Enviar conecta um formulár
 
 Para conectar o AEM Forms ao seu armazenamento do Microsoft Sharepoint:
 
-1. Vá para o **Autor do AEM Forms** instância > **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft SharePoint]**.
+1. Vá para o seu **Autor do AEM Forms** instância > **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft SharePoint]**.
 1. Depois de selecionar a variável **[!UICONTROL Microsoft SharePoint]**, você será redirecionado para **[!UICONTROL Navegador SharePoint]**.
 1. Selecione um **Contêiner de configuração**. A configuração é armazenada no Contêiner de configuração selecionado.
 1. Clique em **[!UICONTROL Criar]**. O assistente de configuração do SharePoint é exibido.
@@ -184,6 +184,10 @@ Para conectar o AEM Forms ao seu armazenamento do Microsoft Sharepoint:
    * No portal do Microsoft Azure, adicione o URI de redirecionamento como `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`. Substituir `[author-instance]` com o URL da instância do autor.
    * Adicionar as permissões da API `offline_access` e `Sites.Manage.All` para fornecer permissões de leitura/gravação.
    * Use o URL OAuth: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Substituir `<tenant-id>` com o `tenant-id` do seu aplicativo no portal do Microsoft Azure.
+
+   >[!NOTE]
+   >
+   > O **segredo do cliente** O campo é obrigatório ou opcional depende da configuração do aplicativo do Azure Ative Diretory. Se seu aplicativo estiver configurado para usar um segredo de cliente, é obrigatório fornecer o segredo do cliente.
 
 1. Clique em **[!UICONTROL Connect]**. Em uma conexão bem-sucedida, a variável `Connection Successful` será exibida.
 
@@ -227,7 +231,7 @@ O **[!UICONTROL Enviar para o OneDrive]** A ação Enviar conecta um formulário
 
 Para conectar o AEM Forms ao seu armazenamento Microsoft OneDrive:
 
-1. Vá para o **Autor do AEM Forms** instância > **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft OneDrive]**.
+1. Vá para o seu **Autor do AEM Forms** instância > **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft OneDrive]**.
 1. Depois de selecionar a variável **[!UICONTROL Microsoft OneDrive]**, você será redirecionado para **[!UICONTROL Navegador OneDrive]**.
 1. Selecione um **Contêiner de configuração**. A configuração é armazenada no Contêiner de configuração selecionado.
 1. Clique em **[!UICONTROL Criar]**. O assistente de configuração do OneDrive é exibido.
@@ -239,6 +243,10 @@ Para conectar o AEM Forms ao seu armazenamento Microsoft OneDrive:
    * No portal do Microsoft Azure, adicione o URI de redirecionamento como `https://[author-instance]/libs/cq/onedrive/content/configurations/wizard.html`. Substituir `[author-instance]` com o URL da instância do autor.
    * Adicionar as permissões da API `offline_access` e `Files.ReadWrite.All` para fornecer permissões de leitura/gravação.
    * Use o URL OAuth: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Substituir `<tenant-id>` com o `tenant-id` do seu aplicativo no portal do Microsoft Azure.
+
+   >[!NOTE]
+   >
+   > O **segredo do cliente** O campo é obrigatório ou opcional depende da configuração do aplicativo do Azure Ative Diretory. Se seu aplicativo estiver configurado para usar um segredo de cliente, é obrigatório fornecer o segredo do cliente.
 
 1. Clique em **[!UICONTROL Connect]**. Em uma conexão bem-sucedida, a variável `Connection Successful` será exibida.
 
@@ -281,7 +289,7 @@ O **[!UICONTROL Enviar para o Armazenamento Azure Blob]**  A ação Enviar conec
 ### Criar um Contêiner de Armazenamento do Azure Blob {#create-azure-configuration}
 
 Para conectar o AEM Forms aos seus contêineres de Armazenamento do Azure:
-1. Vá para o seu **Autor do AEM Forms** instância > **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Armazenamento do Azure]**.
+1. Vá para o **Autor do AEM Forms** instância > **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Armazenamento do Azure]**.
 1. Depois de selecionar a variável **[!UICONTROL Armazenamento do Azure]**, você será redirecionado para **[!UICONTROL Navegador de Armazenamento do Azure]**.
 1. Selecione um **Contêiner de configuração**. A configuração é armazenada no Contêiner de configuração selecionado.
 1. Clique em **[!UICONTROL Criar]**. O assistente Criar Configuração de Armazenamento do Azure é exibido.
