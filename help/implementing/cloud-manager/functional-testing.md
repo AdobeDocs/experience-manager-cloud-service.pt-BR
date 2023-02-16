@@ -2,10 +2,10 @@
 title: Teste funcional
 description: Saiba mais sobre os três diferentes tipos de testes funcionais integrados ao processo de implantação do AEM as a Cloud Service para garantir a qualidade e a confiabilidade do seu código.
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: ht
-source-wordcount: '898'
-ht-degree: 100%
+source-git-commit: 73a73f2f6c56386f3058d89e66b036e8f5e5a17b
+workflow-type: tm+mt
+source-wordcount: '1101'
+ht-degree: 72%
 
 ---
 
@@ -33,7 +33,7 @@ Esses logs não incluem os logs do processo de tempo de execução real do AEM. 
 
 Tanto os testes funcionais do produto quanto os testes funcionais personalizados de amostra se baseiam nos [Clientes de teste do AEM.](https://github.com/adobe/aem-testing-clients)
 
-## Teste funcional do produto {#product-functional-testing}
+### Teste funcional do produto {#product-functional-testing}
 
 Os testes funcionais do produto são um conjunto de testes estáveis de integração HTTP (ITs) com funcionalidade principal no AEM, como tarefas de autoria e replicação. Esses testes são mantidos pela Adobe e têm como objetivo impedir a implantação de alterações no código de aplicativo personalizado, caso interrompa as funcionalidades principais.
 
@@ -41,19 +41,41 @@ Os testes funcionais do produto são executados automaticamente sempre que um no
 
 Os testes funcionais do produto são mantidos como um projeto de código aberto. Consulte os [testes funcionais do produto](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) no GitHub para obter detalhes.
 
-## Teste funcional personalizado {#custom-functional-testing}
+### Teste funcional personalizado {#custom-functional-testing}
 
 Embora o teste funcional do produto seja definido pela Adobe, você pode criar seu próprio teste de qualidade para o seu aplicativo. Ele será executado como um teste funcional personalizado como parte do pipeline de produção para garantir a qualidade do seu aplicativo.
 
-O teste funcional personalizado é executado tanto para implantações de código personalizado quanto para atualizações por push, o que torna especialmente importante criar bons testes funcionais que impeçam as alterações de quebrar o código do aplicativo. A etapa de teste funcional personalizado está sempre presente e não pode ser ignorada.
+O teste funcional personalizado é executado tanto para implantações de código personalizadas quanto para atualizações de push, o que torna especialmente importante gravar bons testes funcionais que impeçam AEM alterações de código de quebrar seu código de aplicativo. A etapa de teste funcional personalizado está sempre presente e não pode ser ignorada.
 
-### Gravação de testes funcionais personalizados {#writing-functional-tests}
+### Testes de interface do usuário personalizados {#custom-ui-testing}
+
+Os testes de interface do usuário personalizados são um recurso opcional que permite criar e executar automaticamente testes na interface do usuário para seus aplicativos. Os testes da interface do usuário são testes baseados em Selenium compactados em uma imagem Docker, a fim de permitir uma ampla variedade de idiomas e estruturas, como Java e Maven, Node e WebDriver.io, ou qualquer outra estrutura e tecnologia desenvolvida na Selenium.
+
+Consulte o documento [Testes de interface do usuário personalizados](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing) para obter mais detalhes.
+
+## Introdução a testes funcionais {#getting-started-functional-tests}
+
+Após a criação de um novo repositório de código no Cloud Manager, um `it.tests` é criada automaticamente com casos de teste de amostra.
+
+>[!NOTE]
+>
+>Se o repositório foi criado antes da criação automática do Cloud Manager `it.tests` , você também pode gerar a versão mais recente usando o [AEM Arquétipo de projeto.](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)
+
+Depois de ter o conteúdo da `it.tests` use-a como base para seus próprios testes e, em seguida:
+
+1. [Desenvolva seus casos de teste.](#writing-functional-tests)
+1. [Execute os testes localmente.](#local-test-execution)
+1. Confirme seu código no repositório do Cloud Manager e execute um pipeline do Cloud Manager.
+
+## Gravação de testes funcionais personalizados {#writing-functional-tests}
 
 As mesmas ferramentas que a Adobe usa para gravar testes funcionais do produto podem ser usadas para gravar seus testes funcionais personalizados. Use os [testes funcionais do produto](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) no GitHub como exemplo para gravar seus testes.
 
 O código do teste funcional personalizado é o código Java localizado na pasta `it.tests` do seu projeto. Ele deve produzir um único JAR com todos os testes funcionais. Se a compilação produzir mais de um JAR de teste, o JAR selecionado será não determinístico. Se produzir zero JAR de teste, a etapa de teste será aprovada por padrão. [Consulte o Arquétipo de Projetos AEM](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests) para ver exemplos de testes.
 
 Os testes são executados em uma infraestrutura de teste mantida pela Adobe, incluindo pelo menos duas instâncias de autoria, duas instâncias de publicação e uma configuração de dispatcher. Portanto, os testes funcionais personalizados são executados em relação a toda a pilha do AEM.
+
+### Estrutura dos testes funcionais {#functional-tests-structure}
 
 Os testes funcionais personalizados devem ser empacotados como um arquivo JAR separado produzido pela mesma compilação Maven que os artefatos a serem implantados no AEM. Geralmente, é um módulo Maven separado. O arquivo JAR resultante deve conter todas as dependências necessárias e geralmente é criado usando o `maven-assembly-plugin` com o descritor `jar-with-dependencies`.
 
@@ -106,15 +128,19 @@ Consulte o [`aem-testing-clients` repositório GitHub](https://github.com/adobe/
 >
 >[Assista a este vídeo](https://www.youtube.com/watch?v=yJX6r3xRLHU) sobre como você pode usar testes funcionais personalizados para melhorar a confiança nos seus pipelines de CI/CD.
 
-## Testes de interface do usuário personalizados {#custom-ui-testing}
+### Execução local de testes {#local-test-execution}
 
-Os testes de interface do usuário personalizados são um recurso opcional que permite criar e executar automaticamente testes na interface do usuário para seus aplicativos. Os testes de interface do usuário são testes baseados em Selenium, compactados em uma imagem do Docker, para permitir uma variedade de opções de linguagens e estruturas (como Java e Maven, Node e WebDriver.io, ou qualquer outra estrutura e tecnologia criada no Selenium).
+Antes de ativar testes funcionais em um pipeline do Cloud Manager, é recomendável executar os testes funcionais localmente usando o [AEM SDK as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) ou uma instância real AEM as a Cloud Service.
 
-Consulte o documento [Testes de interface do usuário personalizados](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing) para obter mais detalhes.
+#### Pré-requisitos {#prerequisites}
 
-## Execução local de testes {#local-test-execution}
+Os testes no Cloud Manager serão executados com um usuário administrador técnico.
 
-Como as classes de teste são testes JUnit, elas podem ser executadas a partir das principais IDEs Java, como Eclipse, IntelliJ, NetBeans, entre outras. Como os testes funcionais do produto e os testes funcionais personalizados se baseiam na mesma tecnologia, ambos podem ser executados localmente copiando os testes de produto aos seus testes personalizados.
+Para executar os testes funcionais a partir de sua máquina local, crie um usuário com permissões de administrador para obter o mesmo comportamento.
+
+#### Executando em um IDE {#running-in-an-ide}
+
+Como as classes de teste são testes JUnit, elas podem ser executadas a partir de IDEs Java mainstream como Eclipse, IntelliJ e NetBeans. Como os testes funcionais do produto e os testes funcionais personalizados se baseiam na mesma tecnologia, ambos podem ser executados localmente copiando os testes de produto aos seus testes personalizados.
 
 No entanto, ao executá-los, será necessário definir uma variedade de propriedades do sistema esperadas pela biblioteca `aem-testing-clients` (e os Clientes de teste Sling subjacentes).
 
@@ -129,3 +155,19 @@ As propriedades do sistema são mostradas a seguir.
 * `sling.it.instance.runmode.2 - should be set to publish`
 * `sling.it.instance.adminUser.2 - should be set to the publish admin user, for example, admin`
 * `sling.it.instance.adminPassword.2 - should be set to the publish admin password`
+
+#### Execução de todos os testes usando Maven {#using-maven}
+
+1. Abra um shell e navegue até o `it.tests` no seu repositório.
+
+1. Execute o seguinte comando fornecendo os parâmetros necessários para iniciar os testes usando Maven.
+
+```shell
+mvn verify -Plocal \
+    -Dit.author.url=https://author-<program-id>-<environment-id>.adobeaemcloud.com \
+    -Dit.author.user=<user> \
+    -Dit.author.password=<password> \
+    -Dit.publish.url=https://publish-<program-id>-<environment-id>.adobeaemcloud.com \
+    -Dit.publish.user=<user> \
+    -Dit.publish.password=<password>
+```
