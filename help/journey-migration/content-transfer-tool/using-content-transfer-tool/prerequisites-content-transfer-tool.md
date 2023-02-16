@@ -2,7 +2,7 @@
 title: Pré-requisitos para a ferramenta Transferência de conteúdo
 description: Pré-requisitos para a ferramenta Transferência de conteúdo
 exl-id: 41a9cff1-4d89-480c-b9fc-5e8efc2a0705
-source-git-commit: 4ccebe19d38f1ece58ea7170344ef2fd86a513d2
+source-git-commit: 048f358ed125e3627896aeeb86242340e2db9272
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 4%
@@ -25,7 +25,7 @@ Revise todas as considerações listadas abaixo:
 | Considerações | O que é compatível no momento |
 |--- |--- |
 | Versão do AEM | A ferramenta Transferência de conteúdo pode ser executada somente no AEM 6.3 ou versões superiores. |
-| Tamanho do armazenamento de segmentos | Um repositório existente que tem menos de 55 milhões de nós JCR e até 83 GB (tamanho compactado online) em *Autor* e 50 GB em *Publicar* atualmente são compatíveis. Crie um tíquete de suporte com o Atendimento ao cliente do Adobe para discutir opções de tamanho de armazenamento de segmento acima desses limites. |
+| Tamanho do armazenamento de segmentos | Um repositório existente que tem menos de 55 milhões de nós JCR e até 250 GB (tamanho compactado online) em *Autor* e 50 GB em *Publicar* atualmente são compatíveis. Crie um tíquete de suporte com o Atendimento ao cliente do Adobe para discutir opções de tamanho de armazenamento de segmento acima desses limites. |
 | Tamanho total do repositório de conteúdo <br>*(armazenamento de segmentos + armazenamento de dados)* | A ferramenta Transferência de conteúdo foi criada para transferir conteúdo de até 20 TB para o tipo de armazenamento de dados File Data Store. Qualquer coisa superior a 20 TB não é compatível no momento. Crie um tíquete de suporte com o Atendimento ao cliente do Adobe para discutir opções de conteúdo maior que 20 TB. <br>Para acelerar significativamente o processo de transferência de conteúdo para repositórios grandes, uma [pré-cópia](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#setting-up-pre-copy-step) pode ser usada. Isso se aplica aos tipos de armazenamento de dados do File Data Store, Amazon S3 e Azure Data Store. Para o Amazon S3 e o Azure Data Store, são suportados tamanhos de repositório maiores que 20 TB. |
 | Tamanho total do índice de Lucene | Tamanho total do Índice Lucene de 25 GB no máximo, excluindo `/oak:index/lucene` e `/oak:index/damAssetLucene` atualmente é compatível. Crie um tíquete de suporte com o Atendimento ao cliente do Adobe para discutir opções de tamanho de índice acima desse limite. |
 | Tamanho do nome do nó | O comprimento de um nome de nó deve ser de 150 bytes ou menos quando o caminho pai do nó for >= (igual ou maior que) 350 bytes. Esses nomes de nó devem ser encurtados para serem &lt;= 150 bytes para terem suporte no armazenamento de nó do documento em AEM as a Cloud Service. As sugestões falharão se esses nomes de nó longos não forem corrigidos. |
