@@ -4,10 +4,10 @@ description: Saiba como administrar instâncias de fluxo de trabalho
 feature: Administering
 role: Admin
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
-source-git-commit: c03959a9acc22a119b2a4c8c473abc84b0b9bf0d
+source-git-commit: 594efd18c7358505c859ca7e6269a3fc5e517926
 workflow-type: tm+mt
-source-wordcount: '1118'
-ht-degree: 100%
+source-wordcount: '1165'
+ht-degree: 95%
 
 ---
 
@@ -63,6 +63,12 @@ Há vários consoles disponíveis para administrar seus fluxos de trabalho. Use 
 
    ![wf-97-1](/help/sites-cloud/administering/assets/wf-97-1.png)
 
+   >[!NOTE]
+   >
+   >
+   >Para encerrar ou suspender um fluxo de trabalho, ele deve estar em um estado de espera pela intervenção do usuário, como em uma Etapa do participante. Tentar suspender um workflow que está executando trabalhos no momento (threads ativos que estão em execução) pode não produzir os resultados esperados.
+
+
 ## Visualização de fluxos de trabalho arquivados {#viewing-archived-workflows}
 
 1. Usando a navegação, selecione **Ferramentas** e, em seguida, **Fluxo de trabalho**.
@@ -76,6 +82,7 @@ Há vários consoles disponíveis para administrar seus fluxos de trabalho. Use 
    >
    >* o uso da ação **Encerrar**
    >* quando uma página que está sujeita a um fluxo de trabalho é excluída (à força), o fluxo de trabalho é encerrado
+
 
 
 1. Selecione um item específico e **Abra o histórico** para ver mais detalhes:
