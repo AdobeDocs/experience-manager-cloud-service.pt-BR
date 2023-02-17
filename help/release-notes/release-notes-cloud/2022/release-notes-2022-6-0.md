@@ -2,7 +2,7 @@
 title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2022.6.0.
 description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2022.6.0.
 exl-id: cf2133dc-56cd-4a07-ab11-72e16f015ff5
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 7b21a8af886c8e1f209e3b7cc5d94de5c58be1ac
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 97%
@@ -43,13 +43,13 @@ Assista ao vídeo de Visão geral da versão de junho de 2022 para ver um resumo
 
 * O novo [Componente de índice](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/tableofcontents.html?lang=pt-BR) funciona não apenas com os Componentes principais, mas com todos os componentes, renderizando índices automaticamente nas páginas de conteúdo. E como ele é renderizado no lado do servidor e totalmente armazenado em cache pelo Dispatcher, seu carregamento também é eficiente.
 
-## [!DNL Experience Manager Assets] como [!DNL Cloud Service] {#assets}
+## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Novos recursos no [!DNL Assets] {#assets-features}
 
 Agora, o Experience Manager Assets usa os recursos de IA do Adobe Sensei para [distinguir cores em uma imagem e aplicá-las automaticamente como tags na assimilação](/help/assets/color-tag-images.md). Essas tags permitem uma experiência de pesquisa aprimorada, com base na composição de cores da imagem. É possível configurar o número de cores, dentro de um intervalo de uma a quarenta, que são marcadas em uma imagem para que, posteriormente, você possa pesquisar por imagens com base nessas cores.
 
-## [!DNL Experience Manager Forms] como [!DNL Cloud Service] {#forms}
+## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Novos recursos no [!DNL Forms] {#forms-features}
 
@@ -98,7 +98,7 @@ Agora, o Experience Manager Assets usa os recursos de IA do Adobe Sensei para [d
 
 ## Cloud Manager {#cloud-manager}
 
-Você pode encontrar uma lista completa de versões mensais do Cloud Manager [aqui](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
+Você pode encontrar uma lista completa de versões mensais do Cloud Manager [aqui.](/help/implementing/cloud-manager/release-notes/current.md)
 
 ## Ferramentas de migração {#migration-tools}
 

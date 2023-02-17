@@ -2,10 +2,10 @@
 title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2021.6.0.
 description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2021.6.0.
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: 7b21a8af886c8e1f209e3b7cc5d94de5c58be1ac
 workflow-type: tm+mt
 source-wordcount: '1440'
-ht-degree: 11%
+ht-degree: 34%
 
 ---
 
@@ -43,46 +43,46 @@ Esta seção descreve as Notas de versão do Cloud Manager AEM as a Cloud Servic
 
 ### Data de lançamento {#release-date-june-cm}
 
-A data de lançamento do Cloud Manager AEM as a Cloud Service 2021.6.0 é 10 de junho de 2021.
+A data de lançamento do Cloud Manager no AEM as a Cloud Service 2021.6.0 é 10 de junho de 2021.
 A próxima versão está planejada para 15 de julho de 2021.
 
 ### Novidades {#what-is-new-junecm}
 
-* O Serviço de Pré-visualização será implantado continuamente em todos os Programas. Os clientes serão notificados no produto quando o Programa estiver ativado para o Serviço de visualização. Consulte [Acesso ao serviço de visualização](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) para obter mais detalhes.
+* O Serviço de visualização será implantado continuamente em todos os programas. Os clientes serão notificados no produto quando o programa estiver ativado para o Serviço de visualização. Consulte [Acesso ao serviço de visualização](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) para obter mais detalhes.
 
-* As Dependências de Maven baixadas durante a etapa de build agora serão armazenadas em cache entre as execuções de pipeline. Esse recurso será ativado para clientes nas próximas semanas.
+* As Dependências do Maven baixadas durante a etapa de compilação agora serão armazenadas em cache entre as execuções de pipeline. Esse recurso será ativado para os clientes nas próximas semanas.
 
-* O nome do programa agora pode ser editado por meio da caixa de diálogo Editar programa .
+* O nome do programa agora pode ser editado por meio da caixa de diálogo Editar programa.
 
-* O nome da ramificação padrão usado durante a criação do projeto e no comando de push padrão por meio do gerenciamento de workflows do git foi alterado para `main`.
+* O nome da ramificação padrão usado durante a criação do projeto e no comando de push padrão por meio do gerenciamento de fluxos de trabalho do Git foi alterado para `main`.
 
-* A experiência de edição de programa na interface do usuário foi atualizada.
+* A experiência de edição do programa na interface do usuário foi atualizada.
 
-* A regra de qualidade `ImmutableMutableMixCheck` foi atualizada para classificar `/oak:index` como sendo imutáveis.
+* A regra de qualidade `ImmutableMutableMixCheck` foi atualizada para classificar os nós `/oak:index` como sendo imutáveis.
 
-* Regras de qualidade `CQBP-84` e `CQBP-84--dependencies` foram consolidadas em uma única regra. Como parte dessa consolidação, a varredura de dependências identifica com mais precisão os problemas em dependências de terceiros que estão sendo implantados no tempo de execução AEM.
+* As regras de qualidade `CQBP-84` e `CQBP-84--dependencies` foram consolidadas em uma única regra. Como parte dessa consolidação, a verificação de dependências identifica com mais precisão os problemas em dependências de terceiros que estão sendo implantadas no tempo de execução do AEM.
 
 * Para evitar confusão, as linhas de segmento Publicar AEM e Publicar Dispatcher na página Detalhes do ambiente foram consolidadas.
 
-   ![](/help/implementing/cloud-manager/release-notes-cloud-manager/assets/aem-dispatcher.png)
+   ![](/help/implementing/cloud-manager/release-notes/assets/aem-dispatcher.png)
 
-* Uma nova regra de qualidade de código foi adicionada para validar a estrutura de `damAssetLucene` índices. Consulte [Índices Oak do Ativo DAM Personalizado](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check) para obter mais detalhes.
+* Uma nova regra de qualidade do código foi adicionada para validar a estrutura dos índices `damAssetLucene`. Consulte [Índices Oak Lucese Asset DAM personalizados](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check) para obter mais detalhes.
 
-* A página Detalhes do ambiente agora exibe vários nomes de domínio para os serviços de Publicação e Visualização (conforme aplicável). Consulte [Detalhes do ambiente](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) para obter mais detalhes.
+* A página Detalhes do ambiente agora exibe vários nomes de domínio para os serviços de publicação e visualização (conforme aplicável). Consulte [Detalhes do ambiente](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) para obter mais detalhes.
 
 ### Correções de erros {#bug-fixes-junecm}
 
-* Definições de nó JCR contendo uma nova linha após o nome do elemento raiz não foram analisadas corretamente.
+* As definições de nó JCR contendo uma nova linha após o nome do elemento raiz não eram analisadas corretamente.
 
-* A API de repositórios de lista não filtra repositórios excluídos.
+* A API dos repositórios de lista não filtrava repositórios excluídos.
 
-* Uma mensagem de erro incorreta era exibida quando um valor inválido era fornecido para a etapa de programação.
+* Uma mensagem de erro incorreta era exibida quando um valor inválido era fornecido para a etapa de agendamento.
 
-* Ocasionalmente, o usuário pode ver um verde *ative* status ao lado de uma Lista de permissões de IP, mesmo quando essa configuração não foi implantada.
+* Ocasionalmente, o usuário poderia ver um status verde *ativo* ao lado de uma Lista de permissões de IP, mesmo quando essa configuração não tinha sido implantada.
 
-* Algumas sequências de edição de programas podem resultar na incapacidade de criar ou editar o pipeline de produção.
+* Algumas sequências de edição de programas poderiam resultar na incapacidade de criar ou editar o pipeline de produção.
 
-* Algumas sequências de edição de programas podem resultar no **Visão geral** página exibindo uma mensagem enganosa para executar novamente a configuração do programa.
+* Algumas sequências de edição de programas poderiam resultar na exibição de uma mensagem enganosa na página **Visão geral** para executar novamente a configuração do programa.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -110,14 +110,14 @@ A próxima versão está planejada para 15 de julho de 2021.
 * Ao adicionar ativos a Coleções, se um usuário aplicar um filtro na pesquisa Coleções, ele não poderá exibir as Coleções na exibição Lista . (CQ-4323181)
 * Ao pesquisar arquivos e pastas, se o usuário aplicar um filtro e selecionar [!UICONTROL Arquivos e pastas], somente os arquivos são exibidos, mas não a pasta. (CQ-4319543)
 
-## [!DNL Experience Manager Sites] como [!DNL Cloud Service] {#sites}
+## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### Novos recursos no [!DNL Sites] {#ga-features-sites}
 
 * Publicar na camada de visualização agora é exibido como status da página na interface do usuário de administração do Sites
 * Publicar na camada de visualização agora exibe o URL de visualização no final da ação e persiste o URL nas propriedades da página para referência posterior
 
-## [!DNL Experience Manager Forms] como [!DNL Cloud Service] {#forms}
+## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Novidades do [!DNL Forms] {#what-is-new-forms}
 
@@ -142,7 +142,7 @@ Você pode escrever para [!DNL formscsbeta@adobe.com] para se inscrever no progr
 * Quando um campo é validado antes de enviar dados para o serviço de backend por meio do FDM (Form Data Model), as validações são bem-sucedidas, mas o serviço do Modelo de dados de formulário não consegue invocar a validação posterior.
 * Às vezes, ao enviar um formulário contendo um campo de carregamento HTML padrão de um dispositivo Apple iOS, o conteúdo do arquivo não é enviado e um arquivo de 0 bytes é recebido na outra extremidade. Esse é um problema conhecido no Apple iOS. [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
 
-## [!DNL Experience Manager Screens] como [!DNL Cloud Service] {#screens}
+## [!DNL Experience Manager Screens] as a [!DNL Cloud Service] {#screens}
 
 Esta seção descreve as Notas de versão do AEM Screens as a Cloud Service.
 
