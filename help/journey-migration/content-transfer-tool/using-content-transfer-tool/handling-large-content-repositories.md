@@ -2,9 +2,9 @@
 title: Lidar com grandes repositórios de conteúdo
 description: Esta seção descreve o tratamento de repositórios de conteúdo grande
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: 1a2ff747361bb0def718bee2e8eb0a1055b8efcf
+source-git-commit: d07a4fd0a335295d399057ea1eef567e757e2d92
 workflow-type: tm+mt
-source-wordcount: '1749'
+source-wordcount: '1771'
 ht-degree: 2%
 
 ---
@@ -101,7 +101,7 @@ Em resumo, você provavelmente fará o download do binário x86-64 do Linux na [
 
 O suporte do AzCopy para Amazon S3, Armazenamento Azure Blob e Armazenamento de dados de arquivo está incluído na versão mais recente do CTT.
 Você pode baixar a versão mais recente da CTT no [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) portal.
-
+Observe que somente as versões 2.0.0 e superior serão compatíveis e é aconselhável usar a versão mais recente.
 
 ### 3. Configurar um arquivo azcopy.config {#configure-azcopy-config-file}
 
