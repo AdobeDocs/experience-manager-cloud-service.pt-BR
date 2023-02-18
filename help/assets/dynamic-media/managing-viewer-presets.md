@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Viewer Presets,Viewers
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
+source-git-commit: b35455652bd16b6c56c0bd75ee87acfb50473f1c
 workflow-type: tm+mt
-source-wordcount: '4194'
-ht-degree: 9%
+source-wordcount: '4369'
+ht-degree: 8%
 
 ---
 
@@ -49,9 +49,9 @@ Você pode adicionar, editar, excluir, publicar, cancelar a publicação e visua
 >
 >Por padrão, o sistema mostra 15 predefinições do visualizador ao selecionar Visualizadores na exibição detalhada de um ativo. Você pode aumentar esse limite. Consulte [Aumentar o número de predefinições do visualizador exibidas](#increasing-the-number-of-viewer-presets-that-display).
 
-### Suporte para visualizador para páginas da Web responsivas projetadas {#viewer-support-for-responsive-designed-web-pages}
+### Suporte a visualizadores para páginas da Web com design responsivo {#viewer-support-for-responsive-designed-web-pages}
 
-Páginas da Web diferentes têm necessidades diferentes. Por exemplo, às vezes, você deseja uma página da Web que forneça um link que abra o Visualizador do HTML5 em uma janela separada do navegador. Em outros casos, é necessário incorporar o Visualizador do HTML5 diretamente na página de hospedagem. No último caso, a página da Web tem um layout estático. Ou é &quot;responsivo&quot; e exibido de forma diferente em diferentes dispositivos ou para tamanhos de janela de navegador diferentes. Para acomodar essas necessidades, todos os visualizadores HTML5 predefinidos e prontos para uso que vêm com o Dynamic Media suportam páginas da Web estáticas e páginas da Web responsivas projetadas.
+Páginas da Web diferentes têm necessidades diferentes. Por exemplo, às vezes, você deseja uma página da Web que forneça um link que abra o Visualizador do HTML5 em uma janela separada do navegador. Em outros casos, é necessário incorporar o Visualizador do HTML5 diretamente na página de hospedagem. No último caso, a página da Web tem um layout estático. Ou é &quot;responsivo&quot; e exibido de forma diferente em diferentes dispositivos ou para tamanhos de janela de navegador diferentes. Para acomodar essas necessidades, todos os visualizadores HTML5 predefinidos e prontos para uso que vêm com o Dynamic Media suportam páginas da Web estáticas e páginas da Web com design responsivo.
 
 Consulte [Biblioteca de imagens estáticas responsivas](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html#about-responsive-image-library) no *Ajuda da API de disponibilização e renderização de imagens do Dynamic Media* para obter mais informações sobre como incorporar visualizadores responsivos às suas páginas da Web.
 
@@ -440,6 +440,19 @@ Consulte [Considerações especiais para criar uma predefinição de Visualizado
 
 1. (Opcional) Próximo à parte superior da página Editar predefinição do visualizador, selecione **[!UICONTROL Desktop]**, **[!UICONTROL Comprimido]** ou **[!UICONTROL Telefone]** para definir estilos visuais de forma exclusiva para diferentes tipos de dispositivos e telas.
 1. Na página Editor de predefinições do visualizador , selecione o **[!UICONTROL Comportamento]** guia . Como alternativa, você pode selecionar qualquer elemento visual no visualizador para selecioná-lo para configuração.
+Por exemplo, para a variável *VideoPlayer* tipo, em **[!UICONTROL Modificadores]** > **[!UICONTROL Reprodução]**, você pode selecionar uma das três opções de transmissão adaptável:
+
+   * **[!UICONTROL traço]** - Vídeos são transmitidos somente como traço.
+   * **[!UICONTROL hls]** - Vídeos são transmitidos somente como hls.
+   * **[!UICONTROL auto]** - Melhores práticas. A criação de fluxos DASH e HLS é otimizada para armazenamento. Portanto, o Adobe recomenda que você sempre selecione **[!UICONTROL auto]** como o tipo de reprodução. Os vídeos são transmitidos como traço, hls ou progressivo, como no seguinte:
+      * Se o navegador suportar DASH, então a transmissão DASH é usada primeiro.
+      * Se o navegador não suporta DASH, então o streaming de HLS é usado, segundo.
+      * Se o navegador não suportar DASH ou HLS, a reprodução progressiva será usada, por fim.
+
+   >[!NOTE]
+   >
+   >Para ver e usar o **[!UICONTROL traço]** deve ser ativada primeiro pelo Suporte Técnico do Adobe em sua conta. Consulte [Habilitar o DASH em sua conta](/help/assets/dynamic-media/video.md#enable-dash).
+
 1. No menu suspenso **[!UICONTROL Tipo selecionado]**, selecione um componente cujos comportamentos você deseja alterar.
 
    Muitos componentes no editor visual têm uma descrição detalhada associada a ela. Essas descrições são exibidas em caixas azuis quando você expande um componente para revelar seus parâmetros associados.
@@ -454,15 +467,19 @@ Consulte [Considerações especiais para criar uma predefinição de Visualizado
    >Depois de digitar um valor no campo de texto, selecione outro lugar na interface do usuário para enviar a alteração e fechar o teclado virtual. Se você selecionar **[!UICONTROL Enter]**, nenhuma ação ocorre.
 
 1. Ao lado do canto superior direito da página, selecione **[!UICONTROL Salvar]**.
-1. Publique sua nova predefinição do visualizador. É necessário publicar a predefinição para usá-la em seu site.
+1. Publique sua nova predefinição do visualizador. É necessário publicar a predefinição para usar o URL resultante no site.
 
    Consulte [Predefinições do visualizador de publicação](#publishing-viewer-presets).
+
+   >[!IMPORTANT]
+   >
+   >Para vídeos antigos que usam um perfil de transmissão adaptável, o URL continua sendo reproduzido como de costume — com transmissão HLS — até que você [reprocessar os ativos de vídeo](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). Após o reprocessamento, o mesmo URL continuará a funcionar, mas agora com *both* Transmissão DASH e HLS ativada.
 
 ### Considerações especiais para criar uma predefinição interativa do visualizador {#special-considerations-for-creating-an-interactive-viewer-preset}
 
 **Sobre modos de exibição para miniaturas de imagem no painel:**
 
-Ao criar ou editar uma predefinição do visualizador de Vídeo interativo, você tem a opção de qual configuração do Modo de exibição usar. Essa opção ocorre ao selecionar `InteractiveSwatches` do **[!UICONTROL Componente selecionado]** menu suspenso abaixo do **[!UICONTROL Comportamento]** guia . O Modo de exibição escolhido afeta a forma como e quando as miniaturas aparecem enquanto o vídeo está sendo reproduzido. Você pode escolher um Modo de exibição `segment` (padrão) ou um Modo de exibição `continuous`.
+Ao criar ou editar uma predefinição do visualizador de Vídeo interativo, você tem a opção de qual configuração do Modo de exibição usar. Essa opção ocorre ao selecionar `InteractiveSwatches` do **[!UICONTROL Componente selecionado]** menu suspenso abaixo do **[!UICONTROL Comportamento]** guia . O Modo de exibição escolhido afeta a forma como e quando as miniaturas são exibidas durante a reprodução do vídeo. Você pode escolher um Modo de exibição `segment` (padrão) ou um Modo de exibição `continuous`.
 
 <table>
  <tbody>

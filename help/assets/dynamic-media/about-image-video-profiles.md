@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Video Profiles
 role: Admin,User
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
+source-git-commit: 8b878a26653874c94a671a404d9b35740e43a514
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1377'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Consulte também [Práticas recomendadas para organizar ativos digitais para usa
 
 Você pode reprocessar ativos em uma pasta que já tenha um Perfil de imagem do Dynamic Media ou um Perfil de vídeo do Dynamic Media que você alterou posteriormente.
 
-Por exemplo, suponha que você criou um Perfil de imagem do Dynamic Media e o atribuiu a uma pasta. Qualquer ativo de imagem carregado na pasta tinha automaticamente o Perfil de imagem aplicado aos ativos. No entanto, posteriormente você decide adicionar uma nova proporção de recorte inteligente ao Perfil de imagem. Agora, em vez de ter selecionado e refazer o upload dos ativos para a pasta novamente, basta executar o *Scene7: Reprocessar ativos* fluxo de trabalho.
+Por exemplo, suponha que você criou um Perfil de imagem do Dynamic Media e o atribuiu a uma pasta. Qualquer ativo de imagem carregado na pasta tinha automaticamente o Perfil de imagem aplicado aos ativos. No entanto, posteriormente você decide adicionar uma nova proporção de recorte inteligente ao Perfil de imagem. Agora, em vez de precisar selecionar e fazer upload novamente dos ativos para a pasta, basta executar o *Scene7: Reprocessar ativos* fluxo de trabalho.
 
 Você pode executar o fluxo de trabalho de reprocessamento em um ativo para o qual o processamento falhou na primeira vez. Mesmo que você não tenha editado um perfil de imagem ou de vídeo ou já tenha aplicado um perfil de imagem ou de vídeo, ainda poderá executar o fluxo de trabalho de reprocessamento em uma pasta de ativos a qualquer momento.
 

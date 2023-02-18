@@ -5,16 +5,16 @@ contentOwner: Rick Brough
 feature: Asset Management,Video Profiles,Renditions
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
+source-git-commit: b35455652bd16b6c56c0bd75ee87acfb50473f1c
 workflow-type: tm+mt
-source-wordcount: '3656'
+source-wordcount: '3705'
 ht-degree: 7%
 
 ---
 
 # Perfis de vídeo do Dynamic Media{#video-profiles}
 
-O Dynamic Media já vem com um perfil de codificação de vídeo adaptável predefinido. As configurações nesse perfil pronto para uso são otimizadas para proporcionar aos clientes a melhor experiência de visualização possível. Quando você codifica os vídeos de origem primária usando o perfil de Codificação de Vídeo Adaptável, durante a reprodução o reprodutor de vídeo ajusta automaticamente a qualidade do fluxo de vídeo com base na velocidade de conexão da Internet de seus clientes. Essa ação é conhecida como transmissão adaptável.
+O Dynamic Media já vem com um perfil de codificação de vídeo adaptável predefinido. As configurações nesse perfil pronto para uso são otimizadas para proporcionar aos clientes a melhor experiência de visualização possível. Quando você codifica os vídeos de origem primária usando o perfil Codificação de Vídeo Adaptável, durante a reprodução, o reprodutor de vídeo ajusta automaticamente a qualidade do fluxo de vídeo com base na velocidade de conexão da Internet de seus clientes. Essa ação é conhecida como transmissão adaptável.
 
 A seguir estão outros fatores que determinam a qualidade de seus vídeos:
 
@@ -45,7 +45,7 @@ Consulte também [Perfis para processar metadados, imagens e vídeos](/help/asse
 
 ## Predefinições de codificação de vídeo adaptável {#adaptive-video-encoding-presets}
 
-A tabela a seguir identifica perfis de codificação de práticas recomendadas para streaming de vídeo adaptável para dispositivos móveis e tablets, além de computadores desktop. Você pode usar essas predefinições para qualquer vídeo com taxa de proporção.
+A tabela a seguir identifica as práticas recomendadas ao codificar perfis para transmissão de vídeo adaptável para dispositivos móveis e tablets, além de computadores desktop. Você pode usar essas predefinições para qualquer vídeo com taxa de proporção.
 
 <table>
  <tbody>
@@ -112,7 +112,7 @@ O Adobe Sensei é limitado a 9000 quadros. Ou seja, cinco minutos a 30 QPS. Se o
 >
 >Para que o recorte inteligente de vídeo funcione, você deve incluir uma ou mais predefinições de codificação de vídeo com seu Perfil de vídeo.
 
-Para usar o recorte inteligente para vídeo, você cria um perfil de codificação de vídeo adaptável ou progressivo. Como parte do seu perfil, use o **[!UICONTROL Proporção de corte inteligente]** para selecionar taxas de proporção predefinidas. Como exemplo, depois de definir suas predefinições de codificação de vídeo, você pode adicionar uma definição de &quot;Paisagem móvel&quot; com uma proporção de aspecto de 16x9 e uma definição de &quot;Retrato móvel&quot; com uma proporção de aspecto de 9x16. Outros aspectos ou proporções de corte a partir dos quais você pode escolher incluem 1x1, 4x3 e 4x5.
+Para usar o recorte inteligente para vídeo, você cria um perfil de codificação de vídeo adaptável ou progressivo. Como parte do seu perfil, use o **[!UICONTROL Proporção de corte inteligente]** para selecionar taxas de proporção predefinidas. Como exemplo, depois de definir suas predefinições de codificação de vídeo, você pode adicionar uma definição de &quot;Paisagem móvel&quot; com uma proporção de aspecto de 16x9 e uma definição de &quot;Retrato móvel&quot; com uma proporção de aspecto de 9x16. Outro aspecto ou proporções de corte a partir do qual você pode optar por incluir 1x1, 4x3 e 4x5.
 
 ![Editar um perfil de codificação de vídeo com recorte inteligente](assets/edit-smart-crop-video2.png)
 
@@ -243,7 +243,7 @@ Agora é possível aplicar o perfil às pastas que contêm vídeos. Consulte [Ap
 
 ## Usar parâmetros de codificação de vídeo personalizados {#using-custom-added-video-encoding-parameters}
 
-É possível editar um perfil de codificação de vídeo existente para aproveitar os parâmetros de codificação avançada de vídeo não encontrados na interface do usuário ao criar ou editar um Perfil de vídeo no Experience Manager. É possível adicionar um ou mais parâmetros avançados, como minBitrate e maxBitrate, ao perfil existente.
+Você pode editar um perfil de codificação existente para vídeo para aproveitar os parâmetros de codificação avançada de vídeo que não são encontrados na interface do usuário ao criar ou editar um Perfil de vídeo no Experience Manager. É possível adicionar um ou mais parâmetros avançados, como minBitrate e maxBitrate, ao perfil existente.
 
 **Para usar parâmetros de codificação de vídeo personalizados:**
 
@@ -274,7 +274,7 @@ Agora é possível aplicar o perfil às pastas que contêm vídeos. Consulte [Ap
    <td><code>keyframe</code></td>
    <td>O número alvo de quadros entre quadros-chave. Calcule esse valor para gerar um quadro-chave a cada 2-10 segundos. Por exemplo, a 30 quadros por segundo, o intervalo do quadro-chave é de 60 a 300.<br /> <br /> Intervalos de quadro-chave menores melhoram o comportamento de busca de fluxo e troca de fluxo para codificações de vídeo adaptáveis e também podem melhorar a qualidade de vídeos que têm muito movimento. No entanto, como os quadros-chave aumentam o tamanho de um arquivo, um intervalo de quadros-chave mais baixo normalmente resulta em uma menor qualidade geral do vídeo em uma determinada taxa de bits.</td>
    <td><code>String</code></td>
-   <td><p>Número positivo.</p> <p>O padrão é 300.</p> <p>O valor recomendado para HLS (HTTP Live Streaming) é 60-90.</p> </td>
+   <td><p>Número positivo.</p> <p>O padrão é 300.</p> <p>O valor recomendado para HLS ou DASH (transmissão adaptável) é de 60 a 90. (Para ver ou usar o DASH, ele deve ser ativado primeiro pelo Suporte Técnico do Adobe em sua conta. Consulte <a href="/help/assets/dynamic-media/video.md#enable-dash">Habilitar o DASH em sua conta</a>.)</p> </td>
   </tr>
   <tr>
    <td><code>minBitrate</code></td>
@@ -292,7 +292,7 @@ Agora é possível aplicar o perfil às pastas que contêm vídeos. Consulte [Ap
    <td><code>audioBitrateCustom</code></td>
    <td>Defina o valor como <code>true</code> para forçar uma taxa de bits constante para o fluxo de áudio, se suportado pelo codec de áudio.</td>
    <td><code>String</code></td>
-   <td><p><code>true</code>/<code>false</code></p> <p>O padrão é <code>false</code>.</p> <p>O valor recomendado para HLS (HTTP Live Streaming) é <code>false</code>.</p> <p> </p> </td>
+   <td><p><code>true</code>/<code>false</code></p> <p>O padrão é <code>false</code>.</p> <p>O valor recomendado para HLS ou DASH é <code>false</code>. (Para ver ou usar o DASH, ele deve ser ativado primeiro pelo Suporte Técnico do Adobe em sua conta. Consulte <a href="/help/assets/dynamic-media/video.md#enable-dash">Habilitar o DASH em sua conta</a>.)</p> <p> </p> </td>
   </tr>
  </tbody>
 </table>
