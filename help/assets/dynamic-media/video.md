@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 4b51ace98d547a6a31f30d6348508a71266dbfed
+source-git-commit: 499fcda8ab6639de8f41383b1334a1e92aa52656
 workflow-type: tm+mt
-source-wordcount: '10300'
+source-wordcount: '10318'
 ht-degree: 4%
 
 ---
@@ -157,9 +157,9 @@ No lado de design do reprodutor, é possível projetar a funcionalidade do repro
 
 No lado da reprodução do visualizador, ele detecta automaticamente o recurso de vídeo do navegador. Em seguida, ele serve o vídeo usando HLS ou DASH, também conhecido como streaming de vídeo adaptável. Ou, se esses métodos de entrega não estiverem presentes, então HTML5 progressivo será usado.
 
->[!IMPORTANT]
+>[!NOTE]
 >
->Para ver ou usar o DASH, primeiro ele deve ser ativado pelo Suporte técnico do Adobe em sua conta. Consulte [Habilitar o DASH em sua conta](#enable-dash).)
+>Para usar o DASH em seus vídeos, primeiro ele deve ser ativado pelo Suporte técnico do Adobe em sua conta. Consulte [Habilitar o DASH em sua conta](#enable-dash).)
 
 Você pode combinar em um único reprodutor a capacidade de projetar os componentes de reprodução usando HTML5 e CSS. Pode ter reprodução incorporada e usar transmissão adaptável e progressiva, dependendo da capacidade do navegador. Essa funcionalidade significa que você pode estender o alcance do conteúdo de mídia avançada para usuários de desktop e de dispositivos móveis e garantir uma experiência de vídeo simplificada.
 
@@ -174,9 +174,9 @@ A reprodução de vídeo ocorre usando HLS ou DASH, ou o download de vídeo prog
 
 No entanto, no Experience Manager 6.3 e mais, os vídeos agora são transmitidos por HTTPS (ou seja, HLS ou DASH) porque o URL do serviço de gateway do DM sempre usa HTTPS também. Não há impacto do cliente nesse comportamento padrão. Ou seja, o streaming de vídeo sempre ocorrerá por HTTPS, a menos que não seja suportado pelo navegador. (ver quadro seguinte).
 
->[!IMPORTANT]
+>[!NOTE]
 >
->Para ver ou usar o DASH, primeiro ele deve ser ativado pelo Suporte técnico do Adobe em sua conta. Consulte [Habilitar o DASH em sua conta](#enable-dash).)
+>Para usar o DASH em seus vídeos, primeiro ele deve ser ativado pelo Suporte técnico do Adobe em sua conta. Consulte [Habilitar o DASH em sua conta](#enable-dash).)
 
 Portanto,
 
@@ -256,7 +256,7 @@ A tabela a seguir descreve o dispositivo, o navegador e o método de reproduçã
 
 >[!IMPORTANT]
 >
->*Para ver ou usar o DASH, primeiro ele deve ser habilitado pelo Suporte Técnico do Adobe em sua conta. Consulte [Habilitar o DASH em sua conta](#enable-dash).)
+>*Para usar o DASH em seus vídeos, primeiro ele deve ser ativado pelo Suporte técnico do Adobe em sua conta. Consulte [Habilitar o DASH em sua conta](#enable-dash).)
 
 <!--  THIS LINE WAS REMOVED FROM THE TABLE ABOVE ON FEB 28, 2022 BASED ON CQDOC 18692 -RSB <tr>
    <td>Mobile</td>
@@ -1396,9 +1396,13 @@ A API retornará um valor nulo se houver erros. As exceções são registradas e
 * `IOException` é registrado quando há um problema ao se conectar ao Dynamic Media.
 * `UnsupportedOperationException` é registrado quando um `manifestType` parâmetro passado é `ManifestType.DASH`, enquanto o vídeo não foi processado usando o formato DASH.
 
-Este é um exemplo da API acima usando servlets escritos em *HTTPWhiteBoard* especificação.
+Este é um exemplo da API acima usando servlets escritos em *HTTPWhiteBoard* especificação. Selecione cada guia para a sintaxe do código.
 
-**Adicionar dependência em pom.xml**
+>[!BEGINTABS]
+
+>[!TAB Adicionar dependência em pom.xml]
+
++++**Adicionar dependência em pom.xml**
 
 ```java
 dependency> 
@@ -1409,7 +1413,7 @@ dependency>
 </dependency> 
 ```
 
->[!BEGINTABS]
++++
 
 >[!TAB Servlet de exemplo]
 
@@ -1650,6 +1654,19 @@ public class DMSampleApiHttpContext extends ServletContextHelper {
 +++
 
 >[!ENDTABS]
+
++++**Adicionar dependência em pom.xml**
+
+```java
+dependency> 
+     <groupId>com.day.cq.dam</groupId> 
+     <artifactId>cq-scene7-api</artifactId> 
+     <version>5.12.64</version> 
+     <scope>provided</scope> 
+</dependency> 
+```
+
++++
 
 +++**Servlet de exemplo**
 
