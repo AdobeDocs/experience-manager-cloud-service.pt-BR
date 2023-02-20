@@ -4,9 +4,9 @@ description: Saiba como criar um formulário adaptável usando [!DNL Experience 
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
-source-git-commit: e3eb2fb6e48b8821199fa5e81ce63d54ae4d82b7
+source-git-commit: 0d158082973cd0f0745f5e3f0391119e585fc743
 workflow-type: tm+mt
-source-wordcount: '1406'
+source-wordcount: '1458'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,8 @@ Antes de começar, saiba mais sobre o tipo de componentes do Forms disponíveis 
 
 Você precisa do seguinte para criar um formulário adaptável:
 
-* **Ativar os Componentes principais adaptáveis do Forms para o seu ambiente**: Se você estiver usando o AEM Archetype versão 40 ou posterior, os Componentes principais serão ativados automaticamente para seu ambiente. Para ativar os Componentes principais adaptáveis do Forms para o seu ambiente as a Cloud Service do AEM Forms com base em versões anteriores do Arquétipo, consulte, [Ativar os Componentes principais adaptáveis do Forms para o seu ambiente](setup-local-development-environment.md#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project)
+* **Ativar os Componentes principais adaptáveis do Forms para o seu ambiente**: Quando você cria um novo programa, os Componentes principais adaptativos do Forms já estão ativados para seu ambiente. Se você tiver um ambiente as a Cloud Service do Forms com base no Archetype 39 ou anterior, [Ativar os Componentes principais adaptáveis do Forms para o seu ambiente](setup-local-development-environment.md#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project). Ao ativar os Componentes principais para seu ambiente, a variável **Adaptável Forms (Componente principal)** modelo e tema da tela são adicionados ao seu ambiente.
+
 * **Um modelo de formulário adaptável**: Um modelo fornece uma estrutura básica e define a aparência (layouts e estilos) de um formulário adaptável. Ele tem componentes pré-formatados contendo determinadas propriedades e estrutura de conteúdo. Também fornece as opções para definir um tema e uma ação de envio. O tema define a ação de aparência e envio define a ação a ser executada no envio de um formulário adaptável. Por exemplo, enviar os dados coletados para uma fonte de dados. O serviço em nuvem fornece um modelo OOTB, chamado em branco:
 
    * O `blank` O modelo é incluído em cada programa as a Cloud Service do AEM Forms.
@@ -55,6 +56,11 @@ Você precisa do seguinte para criar um formulário adaptável:
    ![Modelo dos componentes principais](/help/forms/assets/core-components-template.png)
 
    Quando você seleciona um modelo, um tema e uma ação de envio especificada no modelo são selecionados automaticamente e o **[!UICONTROL Criar]** estiver ativado. Você pode ir para o **[!UICONTROL Estilo]** ou **[!UICONTROL Submissão]** guias para selecionar um tema diferente ou enviar uma ação. Se o template selecionado não especificar um tema, o botão criar permanecerá desativado. Você pode ir para o **[!UICONTROL Estilos]** para selecionar manualmente um tema.
+
+   >[!NOTE]
+   >
+   >
+   > Se não tiver, **Adaptável Forms (Componente principal)** modelo em seu ambiente, [Ativar os Componentes principais adaptáveis do Forms para o seu ambiente](setup-local-development-environment.md#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project). Ao ativar os Componentes principais para seu ambiente, a variável **Adaptável Forms (Componente principal)** é adicionado ao seu ambiente.
 
 1. No **[!UICONTROL Estilo]** selecione um tema:
 
