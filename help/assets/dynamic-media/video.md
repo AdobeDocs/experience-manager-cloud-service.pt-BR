@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 499fcda8ab6639de8f41383b1334a1e92aa52656
+source-git-commit: f3d8f0a7a5c41ecca7bced1d5de9017ada422f7a
 workflow-type: tm+mt
-source-wordcount: '10318'
+source-wordcount: '10322'
 ht-degree: 4%
 
 ---
@@ -204,7 +204,7 @@ A tabela a seguir descreve o dispositivo, o navegador e o método de reproduçã
   <tr>
    <td>Área de trabalho</td>
    <td>Internet Explorer 11+</td>
-   <td>No Windows® 8 e no Windows® 10 - Forçar o uso de HTTPS sempre que HLS for solicitado. Limitação conhecida: HTTP no HLS não funciona nesta combinação de navegador/sistema operacional<br /> <br /> No Windows® 7 - Download progressivo. Usa a lógica padrão para selecionar o protocolo HTTP versus HTTPS.</td>
+   <td>No Windows® 8 e no Windows® 10 - Forçar o uso de HTTPS sempre que DASH ou HLS for solicitado. Limitação conhecida: HTTP no DASH ou HLS não funciona nessa combinação de navegador/sistema operacional<br /> <br /> No Windows® 7 - Download progressivo. Usa a lógica padrão para selecionar o protocolo HTTP versus HTTPS.</td>
   </tr>
   <tr>
    <td>Área de trabalho</td>
@@ -448,8 +448,7 @@ Crie um caso de suporte conforme descrito abaixo. No seu caso de suporte, certif
 1. O Suporte ao cliente do Adobe adiciona você à Lista de espera do cliente DASH com base na ordem em que as solicitações são enviadas.
 1. Quando o Adobe estiver pronto para lidar com sua solicitação, o Suporte ao cliente entrará em contato com você para coordenar e definir uma data de destino para a ativação do DASH.
 1. Você será notificado após a conclusão pelo Suporte ao cliente.
-1. Crie seu [predefinição do visualizador de vídeo](#creating-a-new-viewer-preset) como de costume.
-
+1. Crie seu [predefinição do visualizador de vídeo](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset) como de costume.
 
 ## Publicar vídeos no YouTube {#publishing-videos-to-youtube}
 
