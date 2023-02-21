@@ -1,7 +1,7 @@
 ---
 title: Otimização de consultas da GraphQL
 description: Saiba como otimizar as consultas do GraphQL ao filtrar, pagar e classificar os fragmentos de conteúdo no Adobe Experience Manager as a Cloud Service para entrega de conteúdo sem periféricos.
-source-git-commit: e156ed7348815e02c942cb8feace70c675956752
+source-git-commit: 0fe0bd301fb09cdc631878926f2e40df51a2cc23
 workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Antes de aplicar essas recomendações de otimização, considere [Atualização dos fragmentos de conteúdo para paginação e classificação na filtragem do GraphQL](/help/headless/graphql-api/graphql-paging-sorting-content-update.md) para melhor desempenho.
+>Antes de aplicar essas recomendações de otimização, considere [Atualização dos fragmentos de conteúdo para paginação e classificação na filtragem do GraphQL](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md) para melhor desempenho.
 
 Em uma instância do AEM com um alto número de Fragmentos de conteúdo que compartilham o mesmo modelo, as consultas de lista do GraphQL podem se tornar caras (em termos de recursos).
 
