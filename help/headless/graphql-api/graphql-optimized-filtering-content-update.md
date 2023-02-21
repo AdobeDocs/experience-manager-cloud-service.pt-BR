@@ -1,10 +1,10 @@
 ---
 title: Atualização dos fragmentos de conteúdo para a filtragem otimizada do GraphQL
 description: Saiba como atualizar os Fragmentos de conteúdo para a Filtragem otimizada do GraphQL no Adobe Experience Manager as a Cloud Service para entrega de conteúdo sem periféricos.
-source-git-commit: 1561668046909e88c283145205c16b167c04ca8c
+source-git-commit: 7c6dcf4548972740803d64e21a74e885caf8b487
 workflow-type: tm+mt
-source-wordcount: '738'
-ht-degree: 6%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -158,7 +158,7 @@ Para executar o procedimento, siga as etapas abaixo:
 
    Após a execução do procedimento de atualização, redefina a variável do ambiente de nuvem `CF_MIGRATION_ENABLED` para &#39;0&#39;, para acionar a reciclagem de todos os pods.
 
-   <table>
+   <table style="table-layout:auto">
     <tbody>
      <tr>
       <th> </th>
