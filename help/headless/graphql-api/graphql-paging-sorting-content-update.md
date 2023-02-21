@@ -1,7 +1,7 @@
 ---
 title: Atualização dos fragmentos de conteúdo para paginação e classificação
 description: Saiba como atualizar os Fragmentos de conteúdo para paginação e classificação no Adobe Experience Manager as a Cloud Service para entrega de conteúdo sem periféricos.
-source-git-commit: 130f653a1b0db55ea6d49a87be1215001223bf78
+source-git-commit: d12e2c3c23b5c0eebe35038c6c461c7f05dedc55
 workflow-type: tm+mt
 source-wordcount: '741'
 ht-degree: 6%
@@ -32,7 +32,7 @@ Para executar o procedimento, siga as etapas abaixo:
 
    As variáveis disponíveis são:
 
-   <table>
+   <table style="table-layout:auto">
     <tbody>
      <tr>
       <th> </th>
