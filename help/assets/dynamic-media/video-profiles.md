@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Asset Management,Video Profiles,Renditions
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: 41e17fdae57244d83c8ee715326a0ee41488ba60
+source-git-commit: 73b23ec17c987b1dbcbc868143e2b7159cf21408
 workflow-type: tm+mt
 source-wordcount: '3707'
 ht-degree: 7%
@@ -274,7 +274,7 @@ Você pode editar um perfil de codificação existente para vídeo para aproveit
    <td><code>keyframe</code></td>
    <td>O número alvo de quadros entre quadros-chave. Calcule esse valor para gerar um quadro-chave a cada 2-10 segundos. Por exemplo, a 30 quadros por segundo, o intervalo do quadro-chave é de 60 a 300.<br /> <br /> Intervalos de quadro-chave menores melhoram o comportamento de busca de fluxo e troca de fluxo para codificações de vídeo adaptáveis e também podem melhorar a qualidade de vídeos que têm muito movimento. No entanto, como os quadros-chave aumentam o tamanho de um arquivo, um intervalo de quadros-chave mais baixo normalmente resulta em uma menor qualidade geral do vídeo em uma determinada taxa de bits.</td>
    <td><code>String</code></td>
-   <td><p>Número positivo.</p> <p>O padrão é 300.</p> <p>O valor recomendado para HLS ou DASH (transmissão adaptável) é de 60 a 90. (Para usar o DASH, em seus vídeos, ele deve ser ativado primeiro pelo Suporte técnico do Adobe em sua conta. Consulte <a href="/help/assets/dynamic-media/video.md#enable-dash">Habilitar o DASH em sua conta</a>.)</p> </td>
+   <td><p>Número positivo.</p> <p>O padrão é 300.</p> <p>O valor recomendado para HLS ou DASH (transmissão adaptável) é de 60 a 90. (Para usar o DASH em seus vídeos, ele deve ser ativado primeiro pelo Suporte técnico do Adobe em sua conta. Consulte <a href="/help/assets/dynamic-media/video.md#enable-dash">Habilitar o DASH em sua conta</a>.)</p> </td>
   </tr>
   <tr>
    <td><code>minBitrate</code></td>
