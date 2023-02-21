@@ -4,9 +4,9 @@ description: Introdução à integração entre [!DNL Assets] e [!DNL Workfront]
 role: Admin,Leader,Architect
 feature: Integrations
 exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
-source-git-commit: 269dff32b41dba86fb048418da3f3b3ef8a6781e
+source-git-commit: 1631ec4b7174c9d98747fe290e21db3839777fcb
 workflow-type: tm+mt
-source-wordcount: '1226'
+source-wordcount: '1224'
 ht-degree: 3%
 
 ---
@@ -50,7 +50,7 @@ Veja a seguir os detalhes das funcionalidades disponíveis por meio de vários t
 
 | Recurso | Descrição | [!DNL Workfront] e [!DNL Assets Essentials] *Sem conector (OOTB)* | [!DNL Workfront for Experience Manager enhanced connector] *Requer conector* | Workfront e [!DNL Experience Manager as a Cloud Service] *Sem conector (OOTB)* |
 |----|----|----|-----|-----|
-| Métodos de implantação | Adequado [!DNL Assets] oferta. | Assets Essentials | Cloud Service, Adobe Managed Services, no local | Serviço em nuvem |
+| Métodos de implantação | Adequado [!DNL Assets] oferta. | Assets Essentials | Adobe Managed Services, no local | Serviço em nuvem |
 | **Geral** |
 | Enviar arquivos digitais de [!DNL Workfront] para [!DNL Assets] | A versão mais recente de um documento WF pode ser carregada para o AEM Assets, que será vinculada como uma nova versão do documento. | ✓ | ✓ | ✓ |
 | Vincular manualmente AEM pastas a objetos Workfront | As pastas AEM existentes podem ser vinculadas como uma pasta Workfront e seus ativos filhos são vinculados como novos documentos Workfront. | ✓ | ✓ | ✓ |
