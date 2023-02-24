@@ -4,9 +4,9 @@ description: Saiba como usar o GraphQL com o AEM para fornecer conteúdo em head
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1540'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Para isso, consulte:
 
 * Um [exemplo de estrutura do Fragmento de conteúdo](#content-fragment-structure-graphql)
 
-* E alguns [exemplo de consultas do GraphQL](#graphql-sample-queries), com base na estrutura do Fragmento de conteúdo de amostra (Modelos de fragmento de conteúdo e Fragmentos de conteúdo relacionados).
+* E alguns [exemplos de consultas GraphQL](#graphql-sample-queries), com base no exemplo de estrutura de fragmento de conteúdo (modelos de fragmento de conteúdo e fragmentos de conteúdo relacionados).
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_headless_graphql_sample"
@@ -1121,7 +1121,7 @@ Esses exemplos de consultas são baseadas no projeto WKND. Isso tem:
 Este exemplo de consulta interroga:
 
 * por todos os Fragmentos de conteúdo do tipo `article`
-* com o `_path` e das propriedades da `authorFragment`.
+* com o `_path` e as propriedades do `authorFragment`.
 
 **Exemplo de consulta**
 
@@ -1491,7 +1491,7 @@ Esta consulta interroga:
 
 >[!NOTE]
 >
->Isso demonstrará o fallback dos Fragmentos de conteúdo que não têm um [Variação](/help/headless/graphql-api/content-fragments.md#variations) do nome especificado.
+>Isso demonstrará o fallback dos fragmentos de conteúdo que não têm uma [Variação](/help/headless/graphql-api/content-fragments.md#variations) do nome especificado.
 
 **Exemplo de consulta**
 
@@ -1543,7 +1543,7 @@ Esta consulta interroga:
 
 Esta consulta interroga:
 
-* para a página de resultados que contenha até cinco artigos, a partir do quinto artigo da *complete* lista de resultados
+* para a página de resultados que contém até cinco artigos, a partir do quinto artigo da lista de resultados *completa*
 
 **Exemplo de consulta**
 
@@ -1567,7 +1567,7 @@ Esta consulta interroga:
 
 Esta consulta interroga:
 
-* para a página de resultados que contenha até cinco aventuras, a partir do item de cursor especificado no *complete* lista de resultados
+* para a página de resultados que contém até cinco aventuras, a partir do item de cursor especificado na lista de resultados *completa*
 
 **Exemplo de consulta**
 
@@ -1602,7 +1602,7 @@ Para o exemplo de consultas, usaremos os seguintes Modelos de conteúdo e suas i
 
 * [Empresa](#model-company)
 -> [Pessoa](#model-person)
-    -> [Prêmio](#model-award)
+-> [Prêmio](#model-award)
 
 * [Cidade](#model-city)
 
@@ -1613,7 +1613,7 @@ Os campos básicos que definem a empresa são:
 | Nome do campo | Tipo de dados | Referência |
 |--- |--- |--- |
 | Nome da empresa | Texto em linha única |  |
-| CEO | Referência do fragmento (único) | [Person](#model-person) |
+| CEO | Referência do fragmento (único) | [Pessoa](#model-person) |
 | Empregados | Referência do fragmento (vários campos) | [Pessoa](#model-person) |
 
 #### Pessoa {#model-person}
