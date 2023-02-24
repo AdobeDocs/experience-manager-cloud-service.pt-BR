@@ -4,9 +4,9 @@ description: O Filtro referenciador do Adobe Experience Manager permite o acesso
 feature: GraphQL API
 exl-id: e2e3d2dc-b839-4811-b5d1-38ed8ec2cc87
 source-git-commit: 076cafe3d096fd7f4c808f1b2553a9ba6b6c1833
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '277'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -14,10 +14,10 @@ ht-degree: 69%
 
 O Filtro referenciador do Adobe Experience Manager permite o acesso de hosts de terceiros.
 
-Uma configuração OSGi para o Filtro do Referenciador é necessária para habilitar o acesso ao ponto de extremidade do GraphQL para aplicativos sem periféricos no POST HTTP. Ao usar AEM Consultas Persistentes Sem Cabeçalho que acessam AEM por HTTP GET, uma configuração do Filtro do Referenciador não é necessária.
+Uma configuração OSGi é necessária para o filtro referenciador a fim de habilitar o acesso ao ponto de acesso GraphQL para aplicativos headless por HTTP POST. Ao usar consultas persistentes do AEM Headless que acessam o AEM por HTTP GET, a configuração do filtro referenciador não é necessária.
 
 >[!WARNING]
-> AEM Filtro de Referenciador não é uma fábrica de configuração OSGi, o que significa que apenas uma configuração está ativa em um serviço de AEM de cada vez. Quando possível, evite adicionar configurações personalizadas de Filtro de referenciador, pois isso substituirá AEM configurações nativas e poderá quebrar a funcionalidade do produto.
+> O filtro referenciador não é uma fábrica de configurações OSGi, o que significa que apenas uma configuração pode ser ativada em um serviço do AEM de cada vez. Quando possível, evite adicionar configurações personalizadas do filtro referenciador, pois elas substituirão as configurações nativas do AEM e isso poderá prejudicar a funcionalidade do produto.
 
 Isso é feito adicionando uma configuração OSGi apropriada para o Filtro referenciador que:
 
