@@ -3,9 +3,9 @@ title: Criação de programas de produção
 description: Saiba como usar o Cloud Manager para criar seu próprio programa de produção para hospedar o tráfego direto.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 source-git-commit: bfa1b56e5c066557c1b369b5f13335080a965055
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '541'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -36,22 +36,22 @@ Siga estas etapas para criar um programa de produção.
 
 1. Selecione **Configurar para produção** no assistente Criar programa para criar um programa de produção.
 
-   1. Você pode aceitar o nome padrão do programa ou editá-lo.
+   1. É possível aceitar o nome padrão do programa ou editá-lo.
    1. Opcionalmente, é possível arrastar e soltar uma imagem em miniatura para identificar o programa.
    1. Toque ou clique em **Continuar**.
 
    ![Assistente de criação de programa](assets/create-production-program.png)
 
-1. Se tiver direitos de segurança aprimorados, a variável **Segurança aprimorada** A guia fornecerá a opção de **Habilitar segurança aprimorada** para seu programa de produção. Se necessário, marque a opção para ativar a segurança aprimorada e toque ou clique em **Continuar**.
+1. Se você tiver direitos de segurança aprimorados, a guia **Segurança aprimorada** fornecerá a opção de **Ativar segurança aprimorada** para o seu programa de produção. Caso necessário, marque a opção para ativar a segurança aprimorada e toque ou clique em **Continuar**.
 
    * A segurança aprimorada não pode ser ativada ou desativada após a criação do programa.
-   * [Saiba mais](https://www.adobe.com/go/hipaa-ready) sobre a implementação do Adobe IPAA ready
+   * [Saiba mais](https://www.adobe.com/go/hipaa-ready) sobre a solução de implementação pronta para HIPAA da Adobe.
 
    ![Opção de segurança aprimorada](assets/create-production-program-enhanced.png)
 
 1. Na guia **Soluções e complementos**, selecione as soluções a serem incluídas no programa.
 
-   * Se você selecionou a variável **Habilitar segurança aprimorada** anteriormente, você terá permissão para selecionar apenas quantas soluções os direitos HIPAA estiverem disponíveis.
+   * Se você selecionou **Ativar segurança aprimorada** anteriormente, o número de soluções que você poderá selecionar será limitado à quantidade de direitos de HIPAA disponíveis.
 
    ![Selecionar soluções](assets/setup-prod-select.png)
 
