@@ -5,7 +5,7 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
 workflow-type: tm+mt
 source-wordcount: '1003'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -221,7 +221,7 @@ Algumas compilações exigem a instalação de pacotes de sistema adicionais par
         </profile>
 ```
 
-Essa mesma técnica pode ser usada para instalar pacotes de linguagem específicos, por exemplo, usando `gem`para RubyGems ou  `pip` para Pacotes Python.
+Essa mesma técnica pode ser usada para instalar pacotes de linguagem específicos, por exemplo, usando `gem`para RubyGems ou `pip` para Pacotes Python.
 
 >[!NOTE]
 >
@@ -229,4 +229,4 @@ Essa mesma técnica pode ser usada para instalar pacotes de linguagem específic
 
 >[!TIP]
 >
->Para obter detalhes sobre o ambiente de build front-end, consulte o documento [Desenvolvimento de sites com o pipeline front-end.](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
+>Para obter detalhes sobre o ambiente de criação de front-end, consulte o documento [Desenvolvimento de sites com o pipeline de front-end.](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)

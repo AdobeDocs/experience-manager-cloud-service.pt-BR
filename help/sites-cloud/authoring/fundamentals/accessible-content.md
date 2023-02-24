@@ -5,7 +5,7 @@ exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
 source-git-commit: 48ac0566409f74d3ffa389e5016af0d14419dc3a
 workflow-type: tm+mt
 source-wordcount: '14056'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -106,14 +106,14 @@ São imagens de pessoas, objetos ou lugares. É importante pensar na função da
 * Ícones:
 São pequenos pictogramas (gráficos) que transmitem informações específicas. Eles devem ser usados de forma consistente em uma página e um site. Todas as instâncias do ícone em uma página ou um site devem ter a mesma alternativa em texto curta e sucinta, a menos que isso resulte em duplicação desnecessária do texto adjacente.
 * Tabelas e gráficos: geralmente representam dados numéricos. Dessa forma, uma opção para fornecer uma alternativa em texto pode ser incluir um breve resumo das principais tendências indicadas na tabela ou gráfico. Se necessário, também forneça uma descrição mais detalhada no texto usando o campo **Descrição** na guia de propriedades de imagem **Avançadas**. Além disso, você pode fornecer os dados de origem em forma de tabela em outro lugar na página ou no site.
-* Mapas, diagramas, fluxogramas: para gráficos que fornecem dados espaciais (por exemplo, para suportar a descrição das relações entre objetos ou um processo), verifique se a mensagem principal é fornecida em formato de texto e se essa informação sobre o texto está posicionada perto de cada ponto de dados associado. Para mapas, fornecer um equivalente de texto completo provavelmente não será prático, mas se o mapa for fornecido como uma maneira de ajudar as pessoas a encontrar o caminho para um determinado local, o texto alternativo da imagem do mapa poderá indicar brevemente *Mapa de X*, em seguida, forneça as direções para esse local no texto em outro lugar na página ou por meio do **Descrição** no campo **Avançado** da guia **Imagem** componente.
+* Mapas, diagramas, fluxogramas: para gráficos que fornecem dados espaciais (por exemplo, para suportar a descrição das relações entre objetos ou um processo), verifique se a mensagem principal é fornecida em formato de texto e se essa informação sobre o texto está posicionada perto de cada ponto de dados associado. Para mapas, fornecer um equivalente de texto completo provavelmente não será prático, mas se o mapa for fornecido como uma maneira de ajudar as pessoas a encontrar o caminho para um determinado local, o texto alternativo da imagem do mapa poderá indicar brevemente a informação *Mapa de X* e, em seguida, fornecer instruções para acessar esse local no texto de outro lugar da página ou por meio do campo **Descrição** na guia **Avançado** do componente **Imagem**.
 * CAPTCHAs:
 Um CAPTCHA é um *teste de Turing público completamente automatizado para diferenciação entre computadores e humanos*. É uma verificação de segurança usada em páginas da Web para diferenciar os humanos de um software mal-intencionado, mas que pode causar barreiras de acessibilidade. São imagens que exigem que os usuários descrevam o que visualizam, a fim de passar por um teste de segurança. Fornecer uma alternativa em texto para a imagem, obviamente, não é possível, portanto, em vez disso, você terá de considerar as soluções alternativas não gráficas.
 O W3C fornece uma série de sugestões, como: cada uma dessas abordagens tem suas próprias vantagens e desvantagens.
    * Enigmas de lógica
    * O uso da saída de som, em vez de imagens
    * Contas e filtros de spam de uso limitado.
-* Imagens de plano de fundo: Isso é feito usando a Cascading Style Sheets (CSS), em vez de no HTML. Isso significa que não é possível especificar um valor de texto alternativo. Portanto, as imagens de plano de fundo não devem fornecer informações textuais importantes - se o fizerem, também devem ser fornecidas no texto da página. No entanto, é importante que um plano de fundo alternativo seja exibido quando a imagem não puder ser exibida.
+* Imagens de fundo: são obtidas usando Cascading Style Sheets (CSS) em vez de HTML. Isso significa que não é possível especificar um valor de texto alternativo. Portanto, as imagens de fundo não devem fornecer informações textuais importantes; se o fizerem, essas informações também deverão ser disponibilizadas no texto da página. No entanto, é importante que um fundo alternativo seja mostrado quando a imagem não puder ser exibida.
 
 >[!NOTE]
 >
@@ -439,7 +439,7 @@ Siga as orientações em [Como cumprir o Critério de sucesso 1.3.2](https://www
 
 #### Propósito - Características sensoriais (1.3.3)       {#purpose-sensory-characteristics}
 
-Os designers muitas vezes se concentram nos recursos de design visual, como cor, forma, estilo de texto ou uma parte da posição absoluta ou relativa do conteúdo ao apresentar as informações. Estas podem ser técnicas de design muito poderosas na transmissão de informações (e podem melhorar a acessibilidade geral para usuários com necessidades de acessibilidade cognitiva), mas pessoas cegas ou deficientes visuais podem não conseguir acessar informações que exigem a identificação visual de atributos como posição, cor ou forma.
+Ao apresentar as informações, os designers geralmente se concentram nos recursos de design visual, como cor, forma, estilo de texto ou a posição relativa/absoluta de uma parte do conteúdo. Estas podem ser técnicas de design muito eficientes na transmissão de informações (e podem melhorar a acessibilidade geral para usuários com necessidades de acessibilidade cognitiva), mas pessoas cegas ou deficientes visuais podem não conseguir acessar informações que exigem a identificação visual de atributos como posição, cor ou forma.
 
 Da mesma forma, as informações que exigem a distinção entre sons diferentes (por exemplo, o conteúdo falado com voz masculina ou feminina) vão apresentar barreiras de acessibilidade para os indivíduos com deficiência auditiva, se não estiverem refletidas em nenhuma alternativa em texto para o conteúdo de áudio.
 
@@ -456,7 +456,7 @@ Certifique-se de que todas as informações baseadas em características visuais
 
 >[!NOTE]
 >
->O uso de termos descritivos será aceitável se forem entendidos como relevantes em um contexto não visual. Por exemplo, usando *above* e *below* seria geralmente aceitável, uma vez que implicam, respectivamente, conteúdo antes e depois de um determinado conteúdo; isso ainda faria sentido quando o conteúdo fosse falado em voz alta.
+>A utilização dos termos descritivos será aceitável se eles forem considerados relevantes em um contexto não visual. Por exemplo, normalmente é aceitável o uso dos termos *acima* e *abaixo*, já que sugerem, respectivamente, um conteúdo encontrado antes e depois de um item específico; isso ainda faz sentido quando o conteúdo é lido em voz alta.
 
 #### Mais informações - Características sensoriais (1.3.3)       {#more-information-sensory-characteristics}
 
@@ -567,14 +567,14 @@ Verifique se o texto contrasta o suficiente com o plano de fundo. As relações 
 >
 >As seguintes ferramentas podem ajudar você a converter para outras unidades:
 >
->* [Calculadora Px to Em](https://www.omnicalculator.com/conversion/px-to-em)
+>* [Calculadora de pixel para EM](https://www.omnicalculator.com/conversion/px-to-em)
 >* [Font size conversion: pixel-point-em-rem-percent](https://websemantics.uk/tools/)
->* [Pixel para Conversor EM](https://www.w3schools.com/tags/ref_pxtoemconversion.asp)
+>* [Conversor de pixel para EM](https://www.w3schools.com/tags/ref_pxtoemconversion.asp)
 
 
 Para verificar as relações de contraste, use uma ferramenta de contraste em cores, como o [Paciello Group Color Contrast Analyser](https://www.tpgi.com/resources/contrast-analyser.html) ou o [verificador de contraste em cores do WebAIM](https://webaim.org/resources/contrastchecker/). Essas ferramentas permitem que você verifique os pares de cores e informe quaisquer problemas de contraste.
 
-Como alternativa, se você estiver menos preocupado sobre como especificar a aparência de sua página, poderá optar por não especificar as cores do texto de plano de fundo e de primeiro plano. Nenhuma verificação de contraste é necessária, pois o navegador do usuário determinará as cores do texto e do plano de fundo.
+De forma alternativa, se você não estiver preocupado em especificar a aparência da página, é possível optar por não especificar as cores de fundo e do texto em primeiro plano. Nenhuma verificação de contraste é necessária, já que o navegador do usuário determinará as cores do texto e de fundo.
 
 Se não for possível atender aos níveis de contraste recomendados, será necessário fornecer um link para uma versão alternativa equivalente da página (que não tenha problemas de contraste de cor), ou permitir que o usuário ajuste o contraste do esquema de cores da página de acordo com as suas próprias necessidades.
 
@@ -862,7 +862,7 @@ No momento da escrita, há algumas questões relacionadas ao uso de atributos de
 
 Embora o atributo de título possa ser usado para fornecer contexto adicional a um link, esteja ciente de suas limitações e não o utilize como uma alternativa ao texto de link apropriado.
 
-Sempre que um link for composto de uma imagem, verifique se o texto alternativo para a imagem descreve o destino do link. Por exemplo, se uma imagem de uma estante de livros for definida como um link para as publicações de uma pessoa, o texto alternativo deverá informar **Publicações de John Smith** e não **Estante**.
+Sempre que um link for constituído por uma imagem, certifique-se de que o texto alternativo da imagem descreva o destino do link. Por exemplo, se uma imagem de uma estante de livros for definida como um link para as publicações de uma pessoa, o texto alternativo deverá informar **Publicações de John Smith**, e não **Estante de livros**.
 
 Alternativamente, se a âncora do link contém texto que descreve a finalidade do link, além do elemento de imagem (e, portanto, o texto é exibido ao lado da imagem), use um atributo alternativo vazio para a imagem:
 
@@ -950,7 +950,7 @@ O propósito deste Critério de sucesso é ajudar uma pessoa a saber qual elemen
 
 Uma pessoa deve ser capaz de saber qual elemento entre vários elementos tem o foco do teclado. Se houver apenas um controle acionável pelo teclado na tela, o critério de sucesso será atendido porque o design visual apresenta apenas um item acionável do teclado.
 
-Sempre que o critério de sucesso indicar &quot;modo de operação&quot;, deve ter em conta plataformas que nem sempre apresentam um indicador de foco. Na maioria dos casos, há apenas um modo de operação, então este critério de sucesso se aplica.
+Quando o critério de sucesso indica “modo de operação”, é com o objetivo de levar em conta as plataformas que nem sempre apresentam um indicador de foco. Na maioria dos casos, há apenas um modo de operação, então este critério de sucesso se aplica.
 
 #### Como cumprir - Foco visível (2.4.7) {#how-to-meet-focus-visible}
 
@@ -1019,7 +1019,7 @@ As páginas que aplicam este critério de sucesso:
 
 #### Como Cumprir - Idioma de Partes (3.1.2)       {#how-to-meet-language-of-parts}
 
-O atributo `lang` pode ser utilizado para identificar alterações no idioma do conteúdo. Por exemplo, uma citação em alemão (ISO 639-1 código &quot;de&quot;) pode ser mostrada da seguinte maneira:
+O atributo `lang` pode ser utilizado para identificar alterações no idioma do conteúdo. Por exemplo, uma citação em alemão (ISO 639-1, código “de”) pode ser apresentada da seguinte maneira:
 
 ```xml
 <blockquote cite = "John F. Kennedy" lang = "de">

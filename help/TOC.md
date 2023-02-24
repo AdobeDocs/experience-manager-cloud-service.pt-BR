@@ -11,7 +11,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: 1561668046909e88c283145205c16b167c04ca8c
 workflow-type: tm+mt
 source-wordcount: '3946'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
@@ -125,7 +125,7 @@ ht-degree: 94%
          + [Notas de versão 2021.12.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
          + [Notas da versão 2021.11.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
          + [Notas da versão 2021.10.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
-   + Notas de versão do conector aprimorado do Workfront para Experience Manager{#workfront}
+   + Notas de versão do conector aprimorado do Workfront para Experience Manager {#workfront}
       + [Notas de versão atuais do conector aprimorado do Workfront para Experience Manager](/help/assets/release-notes-enhanced-connector-workfront.md)
    + [Novidades?](/help/release-notes/what-is-new.md)
    + [Alterações importantes no AEM Cloud Service](/help/release-notes/aem-cloud-changes.md)
@@ -165,12 +165,12 @@ ht-degree: 94%
       + [Introdução ao Cloud Manager](/help/onboarding/cloud-manager-introduction.md)
       + [Equipe e perfis de produto do AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md)
       + [Grupos de usuários de notificação](/help/journey-onboarding/user-groups.md)
-+ Testes do AEMaaCS {#trials}
-   + Ensaios sem cabeçalho {#headless}
-      + [Personalizar conteúdo em um aplicativo de amostra do React](/help/trials/headless/customize-app.md)
-      + [Criar a estrutura de conteúdo para seu aplicativo](/help/trials/headless/content-structure.md)
++ Avaliações do AEMaaCS {#trials}
+   + Avaliações headless {#headless}
+      + [Personalizar conteúdo em um aplicativo de exemplo do React](/help/trials/headless/customize-app.md)
+      + [Criar a estrutura de conteúdo do seu aplicativo](/help/trials/headless/content-structure.md)
       + [Criar conteúdo headless](/help/trials/headless/create-content.md)
-      + [Extrair conteúdo por meio da API do GraphQL](/help/trials/headless/extract-content.md)
+      + [Extrair conteúdo por meio da API GraphQL](/help/trials/headless/extract-content.md)
 + Jornada de migração do AEM as a Cloud Service {#migration-journey}
    + [Introdução à movimentação do AEM as a Cloud Service](/help/journey-migration/getting-started.md)
    + [Fase de preparação](/help/journey-migration/readiness.md)
@@ -806,7 +806,7 @@ ht-degree: 94%
       + [Estrutura de projetos do AEM](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
       + [Pacote de estrutura do repositório de projetos do AEM](/help/implementing/developing/introduction/repository-structure-package.md)
       + [SDK do AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
-      + [AEM ambientes de desenvolvimento rápido](/help/implementing/developing/introduction/rapid-development-environments.md)
+      + [Ambientes de desenvolvimento rápido do AEM](/help/implementing/developing/introduction/rapid-development-environments.md)
       + [Diretrizes de desenvolvimento do AEM as a Cloud Service](/help/implementing/developing/introduction/development-guidelines.md)
       + [Logs](/help/implementing/developing/introduction/logging.md)
       + [Configurações e o navegador de configuração](/help/implementing/developing/introduction/configurations.md)

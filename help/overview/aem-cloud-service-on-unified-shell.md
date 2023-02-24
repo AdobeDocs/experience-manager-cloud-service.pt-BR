@@ -5,7 +5,7 @@ exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
 source-git-commit: aeb8244b4da17a0675b86a69727807abf45ca84a
 workflow-type: tm+mt
 source-wordcount: '399'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -34,11 +34,11 @@ Por padrão, o AEM as a Cloud Service vem com o Unified Shell ativado. No entant
 
 1. Navegue até **Ferramentas - Serviços na nuvem**.
 
-   Um usuário administrador visualizará o cartão de configuração do Unified Shell, como mostrado abaixo:
+   Um usuário administrador visualizará o cartão de configuração do Shell Unificado, como mostrado abaixo:
 
    ![imagem](/help/overview/assets/unifiedshell2.png)
 
-1. Clique em **Configuração do Unified Shell**. Em seguida, desmarque a caixa de seleção mostrada abaixo para desativar o Unified Shell:
+1. Clique em **Configuração do Shell Unificado**. Em seguida, desmarque a caixa de seleção mostrada abaixo para desativar o Unified Shell:
 
    ![imagem](/help/overview/assets/unifiedshell3.png)
 
@@ -52,9 +52,9 @@ Para alterar para o tema escuro, clique no ícone do seu perfil. Isso exibirá u
 
 ![imagem](/help/overview/assets/unifiedshell4.png)
 
-## Identificação do ambiente AEM as a Cloud Service {#identify-aemaacs-environment}
+## Identificação do ambiente do AEM as a Cloud Service {#identify-aemaacs-environment}
 
-AEM as a Cloud Service fornece três tipos de ambientes: Produção, preparo e desenvolvimento. Consulte [Tipos de ambientes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=en) para obter mais detalhes. Com essa integração com o Unified Shell, o tipo de ambiente no qual o usuário está conectado no serviço Autor é exibido no cabeçalho superior por meio de um rótulo, como mostrado abaixo.
+O AEM as a Cloud Service fornece três tipos de ambientes: produção, preparo e desenvolvimento. Consulte os [Tipos de ambientes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=pt-BR) para obter mais detalhes. Com essa integração com o Unified Shell, o tipo de ambiente em que o usuário está conectado no serviço de Autor é exibido no cabeçalho superior por meio de um rótulo, como mostrado abaixo.
 
 ![imagem](/help/overview/assets/unifiedshell_header_label.png)
 

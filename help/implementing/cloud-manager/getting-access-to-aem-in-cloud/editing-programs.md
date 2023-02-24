@@ -5,7 +5,7 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 source-git-commit: d8815a17601f475267b50a6a527246f1433ed7eb
 workflow-type: tm+mt
 source-wordcount: '517'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Siga estas etapas para editar um programa.
 
    ![Selecionar soluções](assets/edit-prg.png)
 
-1. Clique na divisa antes dos nomes de solução para exibir os complementos opcionais, por exemplo, como selecionar a opção de complemento **Comércio** no **Sites**.
+1. Clique na divisa antes dos nomes de solução para exibir os complementos opcionais, por exemplo, como selecionar a opção de complemento **Commerce** no **Sites**.
 
    ![Editar complementos](assets/edit-program-add-on.png)
 
@@ -58,11 +58,11 @@ Siga estas etapas para editar um programa.
 
 Sempre que um programa for editado, incluindo a adição ou remoção de uma solução ou complemento, essas alterações entrarão em vigor após a próxima implantação.
 
-Se o programa de produção tiver a segurança aprimorada ativada, uma **Segurança aprimorada** estará disponível no **Editar programa** para confirmar que o recurso está ativo para o programa.
+Se o programa de produção estiver com a segurança aprimorada ativada, uma guia adicional chamada **Segurança aprimorada** estará disponível na janela **Editar programa** para confirmar que o recurso está ativo para o programa.
 
-![Segurança avançada ativa para um programa](assets/edit-program-enhanced.png)
+![Segurança aprimorada ativa para um programa](assets/edit-program-enhanced.png)
 
-Esta configuração não pode ser modificada após a criação do programa. Para obter mais informações sobre a opção de segurança aprimorada, consulte o [Criação de programas de produção](creating-production-programs.md) documento.
+Esta configuração não pode ser modificada após a criação do programa. Para obter mais informações sobre a opção de segurança aprimorada, consulte o documento [Criação de programas de produção](creating-production-programs.md).
 
 ## Exclusão de programas de sandbox {#delete-sandbox-program}
 
