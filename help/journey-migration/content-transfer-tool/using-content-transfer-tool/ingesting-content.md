@@ -2,10 +2,10 @@
 title: Assimilar conteúdo no Target
 description: Assimilar conteúdo no Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: acddd68b61173ab956cafcc7168fd7f898973638
+source-git-commit: 3ccc225a665392552621c78615a31917eb44f1fd
 workflow-type: tm+mt
-source-wordcount: '1375'
-ht-degree: 9%
+source-wordcount: '1660'
+ht-degree: 8%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 9%
 >id="aemcloud_ctt_ingestion"
 >title="Assimilação de conteúdo"
 >abstract="Assimilação refere-se à assimilação de conteúdo do conjunto de migração na instância do Cloud Service de destino. A ferramenta Transferência de conteúdo tem um recurso que oferece suporte a atualizações complementares de conteúdo diferencial, com o qual é possível transferir somente as alterações feitas desde a atividade de transferência de conteúdo anterior."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-ingestion-process" text="Ingestão complementar"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html#top-up-ingestion-process" text="Ingestão complementar"
 
 Siga as etapas abaixo para assimilar seu conjunto de migração da ferramenta Transferência de conteúdo:
 >[!NOTE]
@@ -135,11 +135,28 @@ Você poderá iniciar uma assimilação no ambiente de destino somente se perten
 
 ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
 
+### Não é possível acessar o serviço de migração {#unable-to-reach-migration-service}
+
+Depois que uma assimilação é solicitada, uma mensagem como a seguinte pode ser apresentada ao usuário: &quot;O serviço de migração no ambiente de destino está inacessível no momento. Tente novamente mais tarde ou entre em contato com o suporte ao Adobe.&quot;
+
+![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/error_cannot_reach_migser.png)
+
+Isso indica que o Cloud Acceleration Manager não conseguiu acessar o serviço de migração do ambiente de destino para iniciar a assimilação. Isso pode acontecer por várias razões.
+
+>[!NOTE]
+> 
+> O campo &quot;Token de migração&quot; é exibido porque, em alguns casos, a recuperação desse token é o que está sendo realmente proibido. Ao permitir que seja fornecido manualmente, pode permitir que o usuário inicie a ingestão rapidamente, sem qualquer ajuda adicional. Se o token for fornecido, e a mensagem ainda aparecer, a recuperação do token não foi o problema.
+
+* AEM as a Cloud Service mantém o estado do ambiente e, ocasionalmente, pode precisar reiniciar o serviço de migração por vários motivos normais. Se esse serviço estiver sendo reiniciado, ele não poderá ser acessado, mas estará disponível em breve.
+* É possível que outro processo esteja sendo executado na instância. Por exemplo, se o Orquestrador de versões estiver aplicando uma atualização, o sistema poderá estar ocupado e o serviço de migração regularmente não estará disponível. É por isso que, e a possibilidade de corromper o estágio ou a instância de produção, pausar atualizações durante uma assimilação é altamente recomendado.
+* Se uma [A  de Lista de permissões de IP foi aplicada](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) por meio do Cloud Manager, isso impedirá que o Cloud Acceleration Manager chegue ao serviço de migração. Um endereço IP não pode ser adicionado para ingestões porque seu endereço é muito dinâmico. Atualmente, a única solução é desativar a lista de permissões IP enquanto a assimilação estiver em execução.
+* Pode haver outras razões que precisem de investigação. Se a ingestão continuar falhando, entre em contato com o Atendimento ao Cliente do Adobe.
+
 ### Atualizações automáticas por meio do Orquestrador de versões ainda estão ativadas
 
 O Release Orchestrator mantém os ambientes atualizados automaticamente ao aplicar atualizações automaticamente. Se a atualização for acionada quando uma assimilação estiver sendo executada, poderá causar resultados imprevisíveis, incluindo a corrupção do ambiente. Esse é um dos motivos pelos quais um tíquete de suporte deve ser registrado antes de iniciar uma assimilação (consulte &quot;Observação&quot; acima), para que a desativação temporária do Orquestrador de versões possa ser agendada.
 
-Se o Orquestrador de versões ainda estiver em execução quando uma assimilação estiver sendo iniciada, a interface do usuário apresentará esta mensagem de erro. Você pode optar por continuar assim mesmo, aceitando o risco, marcando o campo e pressionando o botão novamente.
+Se o Orquestrador de versões ainda estiver em execução quando uma assimilação estiver sendo iniciada, a interface do usuário apresentará esta mensagem. Você pode optar por continuar assim mesmo, aceitando o risco, marcando o campo e pressionando o botão novamente.
 
 ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
 
