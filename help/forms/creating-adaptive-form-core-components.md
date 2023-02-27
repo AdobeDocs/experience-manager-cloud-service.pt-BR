@@ -4,7 +4,7 @@ description: Saiba como criar um formulário adaptável usando [!DNL Experience 
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
-source-git-commit: 0d158082973cd0f0745f5e3f0391119e585fc743
+source-git-commit: 37274b28ab2343fd3cdfb4747c9dee701c699b46
 workflow-type: tm+mt
 source-wordcount: '1458'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Você precisa do seguinte para criar um formulário adaptável:
 * **Um modelo de formulário adaptável**: Um modelo fornece uma estrutura básica e define a aparência (layouts e estilos) de um formulário adaptável. Ele tem componentes pré-formatados contendo determinadas propriedades e estrutura de conteúdo. Também fornece as opções para definir um tema e uma ação de envio. O tema define a ação de aparência e envio define a ação a ser executada no envio de um formulário adaptável. Por exemplo, enviar os dados coletados para uma fonte de dados. O serviço em nuvem fornece um modelo OOTB, chamado em branco:
 
    * O `blank` O modelo é incluído em cada programa as a Cloud Service do AEM Forms.
-   * Você pode instalar o pacote de referência, por meio do gerenciador de pacotes, para adicionar o `blank` modelo para seu programa as a Cloud Service do AEM Forms.
+   * Você pode instalar o pacote de referência, por meio do Gerenciador de pacotes, para adicionar a variável `blank` modelo para seu programa as a Cloud Service do AEM Forms.
    * Você também pode [criar um novo modelo adaptável do Forms (Componentes principais)](template-editor.md) do zero.
 
 * **Um tema de formulário adaptável**: Um tema contém detalhes de estilo para os componentes e painéis. Os estilos incluem propriedades como cores de plano de fundo, cores de estado, transparência, alinhamento e tamanho. Quando você aplica um tema, o estilo especificado reflete nos componentes correspondentes.  O `Canvas` O modelo é incluído em cada programa as a Cloud Service do AEM Forms.

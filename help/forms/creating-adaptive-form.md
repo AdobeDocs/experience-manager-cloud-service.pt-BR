@@ -5,7 +5,7 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
+source-git-commit: 37274b28ab2343fd3cdfb4747c9dee701c699b46
 workflow-type: tm+mt
 source-wordcount: '1500'
 ht-degree: 0%
@@ -55,8 +55,8 @@ Você precisa do seguinte para criar um formulário adaptável:
 
 * **Um modelo de formulário adaptável**: Um modelo fornece uma estrutura básica e define a aparência (layouts e estilos) de um formulário adaptável. Ele tem componentes pré-formatados contendo determinadas propriedades e estrutura de conteúdo. Também fornece as opções para definir um tema e uma ação de envio. O tema define a ação de aparência e envio define a ação a ser executada no envio de um formulário adaptável. Por exemplo, enviar os dados coletados para uma fonte de dados. O serviço em nuvem oferece suporte a dois tipos de modelos:
 
-   * **Modelo editável**: Você pode [criar um novo](template-editor.md) ou [importar um template editável existente](migrate-to-forms-as-a-cloud-service.md). Você também pode implantar o [arquétipo mais recente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.tests%3A%20são%20integração%20baseada em Java%20testes.) para obter algumas amostras de modelos editáveis.
-   * **Modelo estático**: Esses são modelos herdados e são recomendados apenas para clientes que estão migrando do Adobe Managed Services (AMS) e instalações locais do AEM Forms (AEM 6.5 Forms ou anterior). Isso permite que você continue aproveitando seu investimento existente em modelos estáticos. Quando você cria um novo formulário adaptável, é recomendável usar um modelo editável.
+* **Modelo editável**: Você pode [criar um novo](template-editor.md) ou [importar um template editável existente](migrate-to-forms-as-a-cloud-service.md). Você também pode implantar o [arquétipo mais recente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.tests%3A%20são%20integração%20baseada em Java%20testes.) para obter algumas amostras de modelos editáveis.
+* **Modelo estático**: Esses são modelos herdados e são recomendados apenas para clientes que estão migrando do Adobe Managed Services (AMS) e instalações locais do AEM Forms (AEM 6.5 Forms ou anterior). Isso permite que você continue aproveitando seu investimento existente em modelos estáticos. Quando você cria um novo formulário adaptável, é recomendável usar um modelo editável.
 
 * **Um tema de formulário adaptável**: Um tema contém detalhes de estilo para os componentes e painéis. Os estilos incluem propriedades como cores de plano de fundo, cores de estado, transparência, alinhamento e tamanho. Quando você aplica um tema, o estilo especificado reflete nos componentes correspondentes. Você pode [criar um novo tema](themes.md) ou [importar um tema existente](import-export-forms-templates.md#uploading-a-theme). Você também pode implantar o [arquétipo mais recente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html#create-project) para alguns temas de amostra.
 
