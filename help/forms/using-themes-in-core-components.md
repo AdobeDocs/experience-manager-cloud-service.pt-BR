@@ -1,15 +1,15 @@
 ---
 title: Criação e uso de temas
 description: É possível usar temas para estilizar e fornecer uma identidade visual a um Formulário adaptável usando componentes principais. Você pode compartilhar um tema em qualquer número de adaptadores Forms.
-source-git-commit: e3fa30d5be29b4070a09873e8ca20036a788486a
+source-git-commit: 0205ffeabcb422ad70fd9439a1af246f438c52d5
 workflow-type: tm+mt
-source-wordcount: '1669'
+source-wordcount: '1666'
 ht-degree: 5%
 
 ---
 
 
-# Introdução aos Temas do formulário adaptável usando os Componentes principais {#introduction-to-themes-for-af-using-core-components}
+# Temas no Adaptive Forms (Componentes principais) {#themes-for-af-using-core-components}
 
 É possível criar e aplicar temas para estilizar um Formulário adaptável usando componentes principais. Um tema contém detalhes de estilo para os componentes e painéis. Os estilos incluem propriedades como cores de plano de fundo, cores de estado, transparência, alinhamento e tamanho. Quando você aplica um tema, o estilo especificado reflete nos componentes correspondentes. O tema é gerenciado de forma independente sem uma referência a um formulário adaptável.
 
