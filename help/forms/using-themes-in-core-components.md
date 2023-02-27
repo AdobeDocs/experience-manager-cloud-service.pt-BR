@@ -1,10 +1,10 @@
 ---
 title: Criação e uso de temas
 description: É possível usar temas para estilizar e fornecer uma identidade visual a um Formulário adaptável usando componentes principais. Você pode compartilhar um tema em qualquer número de adaptadores Forms.
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: e3fa30d5be29b4070a09873e8ca20036a788486a
 workflow-type: tm+mt
-source-wordcount: '1601'
-ht-degree: 7%
+source-wordcount: '1669'
+ht-degree: 5%
 
 ---
 
@@ -50,7 +50,8 @@ Para personalizar um tema,
 
 Para personalizar um tema de Tela:
 1. [Clonar o tema Tela](#1-download-canvas-theme-download-canvas-theme)
-1. [Compreender a estrutura do tema](#2-understand-structure-of-the-canvas-theme-structure-of-canvas-theme)
+1. [Entender a estrutura do tema](#2-understand-structure-of-the-canvas-theme-structure-of-canvas-theme)
+1. [Alterar nome em package.json e package_lock.json](#changename-packagelock-packagelockjson)
 1. [Crie o ](#3-create-the-env-file-in-a-theme-folder-creating-env-file-theme-folder)
 1. [Iniciar o servidor proxy local](#4-start-a-local-proxy-server-starting-a-local-proxy-server)
 1. [Personalizar o tema](#customize-the-theme-customizing-theme)
@@ -67,7 +68,7 @@ git clone https://github.com/adobe/aem-forms-theme-canvas
 
 >[!NOTE]
 >
-> A guia Estilo do Assistente de criação de formulário exibe o mesmo nome de tema como package.json .
+> A guia Estilo do Assistente de criação de formulário exibe o mesmo nome de tema do arquivo package.json.
 
 ### 2. Compreender a estrutura do tema {#structure-of-canvas-theme}
 
@@ -85,12 +86,22 @@ O `src/components` tem arquivos JavaScript e CSS específicos para todos os comp
 
 Para personalizar o tema, você pode iniciar o servidor proxy local para ver as personalizações do tema em tempo real com base no conteúdo real do AEM.
 
+### 4. Altere o nome em package.json e package_lock.json do tema Canvas {#changename-packagelock-packagelockjson}
+
+Atualize o nome e a versão do tema Tela no `package.json` e `package_lock.json` arquivos.
+
+>[!NOTE]
+>
+> Os nomes não devem ter `@aemforms` . Deve ser um texto simples como o nome fornecido pelo usuário.
+
+![Imagem do Tema da Tela](/help/forms/assets/changename_canvastheme.png)
+
 ### 3. Crie o arquivo .env em uma pasta de tema {#creating-env-file-theme-folder}
 
 Crie um `.env` na pasta de temas e adicione os seguintes parâmetros:
 
 * **URL de AEM**
-AEM_URL=https://[author-instance] ou http://localhost:[porta]/
+AEM_URL=https://[author-instance]
 
 * **Nome do site AEM**
 AEM_ADAPTIVE_FORM=Form_name
@@ -109,7 +120,7 @@ AEM_PROXY_PORT=7000
 
    ![npm run live](/help/forms/assets/theme_proxy.png)
 
-1. Quando o servidor proxy é iniciado, ele abre automaticamente um navegador para `http://localhost:[port]/`.
+
 1. Toque ou clique **FAZER LOGON LOCALMENTE (SOMENTE TAREFAS DE ADMINISTRADOR)** e faça logon com as credenciais do usuário proxy fornecidas pelo administrador do AEM.
 
    ![Fazer logon localmente](/help/forms/assets/local_signin.png)
@@ -168,18 +179,33 @@ Depois de fazer alterações no tema e testá-lo com um servidor proxy local, co
 
 Antes de confirmar as alterações no repositório Git do seu Cloud Service AEM Forms, é necessário um clone do repositório no computador local. Para clonar o repositório:
 
-1. Abra o prompt de comando e execute o comando abaixo após substituir [my-org] e [my-program] com valores fornecidos pelo administrador do AEM. Você também pode encontrar detalhes na sua [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git):
+1. Crie um novo repositório de temas clicando no botão **[!UICONTROL Repositórios]** opção.
+
+   ![criar novo repositório de temas](/help/forms/assets/createrepo_canvastheme.png)
+
+1. Clique em **[!UICONTROL Adicionar Repositório]** e especifique o **Nome do Repositório** no **Adicionar Repositório** caixa de diálogo. Clique em **[!UICONTROL Salvar]**.
+
+   ![Adicionar repositório de Tema de Tela](/help/forms/assets/addcanvasthemerepo.png)
+
+1. Clique em **[!UICONTROL Copiar URL do repositório]** para copiar o URL do repositório criado.
+
+   ![URL do tema da tela de desenho](/help/forms/assets/copyurl_canvastheme.png)
+
+1. Abra o prompt de comando e clone o repositório de nuvem criado acima.
 
    ```
-   git clone https://git.cloudmanager.adobe.com/[my-org]/[my-org]/
+   git clone https://git.cloudmanager.adobe.com/aemforms/Canvasthemerepo/
    ```
-1. Mova o projeto de tema que você estava editando para o repositório clonado com um comando semelhante a `mv <theme-sources> <cloned-repo>`.
-1. Faça as alterações desejadas nas pastas do componente de tema modificando seu arquivo CSS.
-1. No diretório do repositório clonado, confira os arquivos de tema que você acabou de mover com os seguintes comandos.
+
+1. Mova os arquivos do repositório de temas que você está editando para o repositório da nuvem com um comando semelhante a
+   `cp -r [source-theme-folder]/* [destination-cloud-repo]`
+Por exemplo, use este comando 
+`cp -r [C:/cloned-git-canvas/*] [C:/cloned-repo]`
+1. No diretório do repositório da nuvem, confira os arquivos de tema que você moveu com os seguintes comandos.
 
    ```text
-   git add <theme-file-name>
-   git commit -m "Adding theme sources"
+   git add .
+   git commit -a -m "Adding theme files"
    git push
    ```
 
@@ -190,10 +216,10 @@ Antes de confirmar as alterações no repositório Git do seu Cloud Service AEM 
 Suas personalizações agora são armazenadas com segurança no repositório Git.
 
 
-### 7. Implantar o pipeline de frontend {#deploy-pipeline}
+### 7. Execute o pipeline de frontend {#deploy-pipeline}
 
-Implante seu tema personalizado usando o pipeline de front-end. Saiba mais [como configurar um pipeline de linha de frente para implantar tema personalizado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline).
-
+1. Crie o pipeline de front-end para implantar o tema personalizado. Saiba mais [como configurar um pipeline de linha de frente para implantar tema personalizado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline).
+1. Execute o pipeline de frontend criado para implantar a pasta de temas personalizados no **[!UICONTROL Estilo]** guia de um assistente de criação de formulário adaptável.
 
 >[!NOTE]
 >
@@ -205,13 +231,13 @@ Implante seu tema personalizado usando o pipeline de front-end. Saiba mais [como
 1. Abra um formulário adaptável criado usando componentes principais.
 1. Inicie o servidor proxy local usando o prompt de comando e clique em **FAZER LOGON LOCALMENTE (SOMENTE TAREFAS DE ADMINISTRADOR)**.
 1. Depois de fazer logon, você será redirecionado para o navegador e verá o tema aplicado.
-1. Baixe o tema Canvas e extraia a pasta zip baixada.
+1. Baixe o [Tema da tela de desenho](https://github.com/adobe/aem-forms-theme-canvas) e extraia a pasta zip baixada.
 1. Abra a pasta zip extraída no editor preferencial.
 1. Crie um `.env` na pasta de temas e adicione parâmetros: **URL AEM**, **AEM_ADAPTIVE_FORM** e **AEM_PROXY_PORT**.
 1. Abra o arquivo CSS da caixa de texto na pasta de tema Tela e altere a cor da borda para dizer `red` e salve as alterações.
 1. Reabra o navegador novamente e veja que as alterações são refletidas imediatamente em um formulário adaptável.
 1. Mova a pasta de tema da tela em seu repositório clonado.
-1. Confirme as alterações e implante o pipeline de front-end.
+1. Confirme as alterações e execute o pipeline de front-end.
 
 Depois que o pipeline for executado, o tema estará disponível na guia Style .
 
