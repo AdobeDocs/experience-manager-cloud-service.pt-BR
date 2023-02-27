@@ -362,7 +362,6 @@ O AEM facilita a construção de conteúdo da Web semanticamente significativo u
       >
       >* `<b>` para `<strong>`
       >* `<i>` para `<em>`
-
       >
       >Eles são efetivamente os mesmos, mas `<strong>` e `<em>` são preferíveis, pois são html semanticamente corretos. Sua equipe de desenvolvimento pode configurar o RTE para usar `<strong>` e `<em>` (em vez de `<b>` e `<i>`), ao desenvolver a instância do projeto.
 
