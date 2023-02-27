@@ -241,8 +241,8 @@ Você também pode [associar conteúdo](/help/sites-cloud/administering/content-
 ## Publicar e referenciar um fragmento {#publishing-and-referencing-a-fragment}
 
 >[!CAUTION]
-Se o fragmento for baseado em um modelo, é preciso certificar-se de que o [modelo foi publicado](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
-Se você publicar um fragmento de conteúdo cujo modelo ainda não foi publicado, uma lista de seleção indicará isso e o modelo será publicado junto com o fragmento.
+>Se o fragmento for baseado em um modelo, é preciso certificar-se de que o [modelo foi publicado](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
+>Se você publicar um fragmento de conteúdo cujo modelo ainda não foi publicado, uma lista de seleção indicará isso e o modelo será publicado junto com o fragmento.
 
 Os fragmentos de conteúdo devem ser publicados para uso no ambiente de publicação. Isso é feito usando a funcionalidade padrão do Assets
 
@@ -260,17 +260,17 @@ Os fragmentos de conteúdo devem ser publicados para uso no ambiente de publica�
 Além disso, ao [publicar uma página que use o fragmento](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); o fragmento será listado nas referências da página.
 
 >[!CAUTION]
-Depois que um fragmento tiver sido publicado e/ou referenciado, o AEM exibirá um aviso quando um autor abrir o fragmento para edição novamente. Isso serve para avisar que as alterações no fragmento também afetarão as páginas referenciadas.
+>Depois que um fragmento tiver sido publicado e/ou referenciado, o AEM exibirá um aviso quando um autor abrir o fragmento para edição novamente. Isso serve para avisar que as alterações no fragmento também afetarão as páginas referenciadas.
 
 ## Desfazer a publicação de um fragmento {#unpublishing-a-fragment}
 
 Para desfazer a publicação de fragmentos de conteúdo, selecione um ou mais fragmentos e selecione **Desfazer publicação**.
 
 >[!NOTE]
-A ação **Desfazer publicação** estará visível quando os fragmentos publicados estiverem disponíveis.
+>A ação **Desfazer publicação** estará visível quando os fragmentos publicados estiverem disponíveis.
 
 >[!CAUTION]
-Se o fragmento já tiver sido referenciado a partir de outro fragmento, ou de uma página, você verá uma mensagem de aviso e terá que confirmar que deseja continuar.
+>Se o fragmento já tiver sido referenciado a partir de outro fragmento, ou de uma página, você verá uma mensagem de aviso e terá que confirmar que deseja continuar.
 
 ## Excluir um fragmento {#deleting-a-fragment}
 
@@ -280,13 +280,13 @@ Para excluir um fragmento:
 2. Selecione o fragmento.
 
    >[!NOTE]
-   A opção **Excluir** não está disponível como uma ação rápida.
+   >A opção **Excluir** não está disponível como uma ação rápida.
 
 3. Selecione **Excluir** na barra de ferramentas.
 4. Confirme a ação **Excluir**.
 
    >[!CAUTION]
-   Se o fragmento já tiver sido referenciado a partir de outro fragmento, ou de uma página, você verá uma mensagem de aviso e terá que confirmar se deseja continuar com uma **Exclusão forçada**. O fragmento, junto com seu componente do fragmento de conteúdo, será excluído de qualquer página de conteúdo.
+   >Se o fragmento já tiver sido referenciado a partir de outro fragmento, ou de uma página, você verá uma mensagem de aviso e terá que confirmar se deseja continuar com uma **Exclusão forçada**. O fragmento, junto com seu componente do fragmento de conteúdo, será excluído de qualquer página de conteúdo.
 
 ## Encontrar referências principais do fragmento {#parent-references-fragment}
 
@@ -299,7 +299,7 @@ Para excluir um fragmento:
 ## Linha de tempo dos fragmentos de conteúdo {#timeline-for-content-fragments}
 
 >[!NOTE]
-Essa funcionalidade só está disponível no console de **Ativos**
+>Essa funcionalidade só está disponível no console de **Ativos**
 
 Além das opções padrão, a [Linha de tempo](/help/assets/manage-digital-assets.md#timeline) fornece informações e ações específicas para fragmentos de conteúdo:
 
@@ -319,14 +319,13 @@ Além das opções padrão, a [Linha de tempo](/help/assets/manage-digital-asset
    * **Excluir**
 
 >[!NOTE]
-Os comentários são:
-* Uma funcionalidade padrão para todos os ativos
-* Feitos na Linha de tempo
-* Relacionados ao ativo de fragmento
->
-As anotações (para fragmentos de conteúdo) são:
-* Inseridas no editor de fragmentos
-* Específicas de um segmento de texto selecionado no fragmento
+>Os comentários são:
+>* Uma funcionalidade padrão para todos os ativos
+>* Feitos na Linha de tempo
+>* Relacionados ao ativo de fragmento
+>As anotações (para fragmentos de conteúdo) são:
+>* Inseridas no editor de fragmentos
+>* Específicas de um segmento de texto selecionado no fragmento
 >
 
 
@@ -337,7 +336,7 @@ Por exemplo:
 ## Comparação de versões do fragmento {#comparing-fragment-versions}
 
 >[!NOTE]
-Essa funcionalidade só está disponível no console de **Ativos**
+>Essa funcionalidade só está disponível no console de **Ativos**
 
 A ação **Comparar com atual** fica disponível na [Linha de tempo](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) após selecionar uma versão específica.
 
@@ -360,14 +359,14 @@ Elas serão mostradas lado a lado, onde:
 * **Concluído** retornará ao console
 
 >[!NOTE]
-Não é possível editar o conteúdo do fragmento ao comparar fragmentos.
+>Não é possível editar o conteúdo do fragmento ao comparar fragmentos.
 
 ![comparação](assets/cfm-managing-06.png)
 
 ## Reverter para uma versão  {#reverting-to-a-version}
 
 >[!NOTE]
-Essa funcionalidade só está disponível no console de **Ativos**
+>Essa funcionalidade só está disponível no console de **Ativos**
 
 Você pode reverter para uma versão específica do fragmento:
 
