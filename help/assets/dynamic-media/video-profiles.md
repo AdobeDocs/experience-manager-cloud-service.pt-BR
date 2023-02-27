@@ -5,16 +5,16 @@ contentOwner: Rick Brough
 feature: Asset Management,Video Profiles,Renditions
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: 73b23ec17c987b1dbcbc868143e2b7159cf21408
+source-git-commit: 223d37e036194b6a7174f4ef551065285b930eb7
 workflow-type: tm+mt
-source-wordcount: '3707'
+source-wordcount: '3716'
 ht-degree: 7%
 
 ---
 
 # Perfis de vídeo do Dynamic Media{#video-profiles}
 
-O Dynamic Media já vem com um perfil de codificação de vídeo adaptável predefinido. As configurações nesse perfil pronto para uso são otimizadas para proporcionar aos clientes a melhor experiência de visualização possível. Quando você codifica os vídeos de origem primária usando o perfil Codificação de Vídeo Adaptável, durante a reprodução, o reprodutor de vídeo ajusta automaticamente a qualidade do fluxo de vídeo com base na velocidade de conexão da Internet de seus clientes. Essa ação é conhecida como transmissão adaptável.
+O Dynamic Media já vem com um perfil de codificação de vídeo adaptável predefinido. As configurações nesse perfil pronto para uso são otimizadas para proporcionar aos clientes a melhor experiência de visualização possível. Quando você codifica os vídeos de origem primária usando o perfil Codificação de Vídeo Adaptável, durante a reprodução, o reprodutor de vídeo ajusta automaticamente a qualidade do fluxo de vídeo com base na velocidade de conexão da Internet de seus clientes. Essa ação é conhecida como transmissão adaptável da taxa de bits.
 
 A seguir estão outros fatores que determinam a qualidade de seus vídeos:
 
@@ -124,7 +124,7 @@ Consulte [Aplicar perfis de vídeo a pastas específicas](#applying-video-profil
 
 Consulte também [Recorte inteligente de imagens](image-profiles.md).
 
-## Criar um perfil de vídeo para transmissão adaptável {#creating-a-video-encoding-profile-for-adaptive-streaming}
+## Crie um perfil de vídeo para transmissão adaptável da taxa de bits {#creating-a-video-encoding-profile-for-adaptive-streaming}
 
 O Dynamic Media já vem com um perfil de codificação de vídeo adaptável predefinido, um grupo de configurações de upload de vídeo para MP4 H.264, que é otimizado para a melhor experiência de visualização. Você pode usar esse perfil ao carregar seus vídeos.
 
@@ -132,7 +132,7 @@ No entanto, se esse perfil predefinido não atender às suas necessidades, você
 
 Ao criar o perfil de codificação de vídeo, você percebe que a maioria das opções de codificação é pré-preenchida com as configurações padrão recomendadas para ajudá-lo. No entanto, se você selecionar um valor diferente do padrão recomendado, isso pode resultar em má qualidade do vídeo durante a reprodução e outros problemas de desempenho.
 
-Portanto, para todas as predefinições de codificação de vídeo MP4 H.264 no perfil, os seguintes valores são validados para garantir que sejam os mesmos em predefinições de codificação individuais no perfil, possibilitando o streaming adaptável:
+Portanto, para todas as predefinições de codificação de vídeo MP4 H.264 no perfil, os seguintes valores são validados para garantir que sejam os mesmos em predefinições de codificação individuais no perfil, possibilitando o streaming adaptável da taxa de bits:
 
 * Codec de formato de vídeo - MP4 H.264 (.mp4)
 * Codec de áudio
@@ -143,7 +143,7 @@ Portanto, para todas as predefinições de codificação de vídeo MP4 H.264 no 
 * Perfil H264
 * Taxa de amostra do áudio
 
-Se os valores não forem os mesmos, você poderá continuar criando o perfil como está. No entanto, o streaming adaptável não é possível. Em vez disso, os usuários experimentam o streaming de taxa de bits única. É recomendável editar as configurações de codificação para usar os mesmos valores em predefinições de codificação individuais no perfil. (O editor de perfil de vídeo/predefinição impõe paridade das configurações de codificação de vídeo adaptável se &quot;Codificar para transmissão adaptável&quot; estiver ativado.)
+Se os valores não forem os mesmos, você poderá continuar criando o perfil como está. No entanto, o streaming adaptável da taxa de bits não é possível. Em vez disso, os usuários experimentam o streaming de taxa de bits única. É recomendável editar as configurações de codificação para usar os mesmos valores em predefinições de codificação individuais no perfil. (O editor de perfil de vídeo/predefinição impõe paridade das configurações de codificação de vídeo adaptável se &quot;Codificar para transmissão adaptável&quot; estiver ativado.)
 
 Consulte também [Criar um perfil de codificação de vídeo para streaming progressivo](#creating-a-video-encoding-profile-for-progressive-streaming).
 
@@ -151,7 +151,7 @@ Consulte também [Práticas recomendadas para codificação de vídeo](/help/ass
 
 Para definir parâmetros de processamento avançados para outros tipos de ativos, consulte [Configurar o processamento de ativos](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing).
 
-**Para criar um perfil de vídeo para transmissão adaptável**,
+**Para criar um perfil de vídeo para transmissão adaptável da taxa de bits**,
 
 1. Selecione o logotipo do Experience Manager e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Perfis de vídeo]**.
 1. Selecione **[!UICONTROL Criar]**.
@@ -194,7 +194,7 @@ Se você optar por não usar a opção **[!UICONTROL Codificar para transmissão
 
 Os codecs de formato de vídeo compatíveis são H.264 (.mp4) e WebM.
 
-Consulte também [Criar um perfil de codificação de vídeo para transmissão adaptável](#creating-a-video-encoding-profile-for-adaptive-streaming).
+Consulte também [Criar um perfil de codificação de vídeo para transmissão adaptável da taxa de bits](#creating-a-video-encoding-profile-for-adaptive-streaming).
 
 Consulte também [Práticas recomendadas para codificação de vídeo](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos).
 
@@ -274,7 +274,7 @@ Você pode editar um perfil de codificação existente para vídeo para aproveit
    <td><code>keyframe</code></td>
    <td>O número alvo de quadros entre quadros-chave. Calcule esse valor para gerar um quadro-chave a cada 2-10 segundos. Por exemplo, a 30 quadros por segundo, o intervalo do quadro-chave é de 60 a 300.<br /> <br /> Intervalos de quadro-chave menores melhoram o comportamento de busca de fluxo e troca de fluxo para codificações de vídeo adaptáveis e também podem melhorar a qualidade de vídeos que têm muito movimento. No entanto, como os quadros-chave aumentam o tamanho de um arquivo, um intervalo de quadros-chave mais baixo normalmente resulta em uma menor qualidade geral do vídeo em uma determinada taxa de bits.</td>
    <td><code>String</code></td>
-   <td><p>Número positivo.</p> <p>O padrão é 300.</p> <p>O valor recomendado para HLS ou DASH (transmissão adaptável) é de 60 a 90. (Para usar o DASH em seus vídeos, ele deve ser ativado primeiro pelo Suporte técnico do Adobe em sua conta. Consulte <a href="/help/assets/dynamic-media/video.md#enable-dash">Habilitar o DASH em sua conta</a>.)</p> </td>
+   <td><p>Número positivo.</p> <p>O padrão é 300.</p> <p>O valor recomendado para HLS ou DASH (streaming de taxa de bits adaptável) é de 60 a 90. (Para usar o DASH em seus vídeos, ele deve ser ativado primeiro pelo Suporte técnico do Adobe em sua conta. Consulte <a href="/help/assets/dynamic-media/video.md#enable-dash">Habilitar o DASH em sua conta</a>.)</p> </td>
   </tr>
   <tr>
    <td><code>minBitrate</code></td>
@@ -324,7 +324,7 @@ Para definir parâmetros de processamento avançados para outros tipos de ativos
 1. Na barra de ferramentas, selecione **[!UICONTROL Editar]**.
 1. Na página Perfil de codificação de vídeo , edite o nome e a descrição, conforme desejado.
 1. Como prática recomendada, verifique se a caixa de seleção **[!UICONTROL Codificar para transmissão adaptável]** está selecionada.
-Selecione o ícone de informações para obter uma descrição do streaming adaptável. (Se você estiver editando um Perfil de vídeo progressivo, não marque essa caixa de seleção.)
+Selecione o ícone de informações para obter uma descrição do fluxo de taxa de bits adaptável. (Se você estiver editando um Perfil de vídeo progressivo, não marque essa caixa de seleção.)
 1. No cabeçalho Predefinições de codificação de vídeo , adicione, edite ou exclua predefinições de codificação de vídeo que compõem o perfil.
 
    Selecione o ícone de informações ao lado de cada opção na **[!UICONTROL Básico]** e **[!UICONTROL Avançado]** para obter mais descrições ou configurações recomendadas com base no codec de formato de vídeo selecionado.
@@ -337,7 +337,7 @@ Selecione o ícone de informações para obter uma descrição do streaming adap
 1. Na página Perfis de vídeo , marque um nome de Perfil de vídeo.
 1. Na barra de ferramentas, selecione **[!UICONTROL Copiar]**.
 1. Na página Perfil de codificação de vídeo , digite um novo nome para o perfil.
-1. Como prática recomendada, verifique se a caixa de seleção **[!UICONTROL Codificar para transmissão adaptável]** está selecionada. Selecione o ícone de informações para obter uma descrição do streaming adaptável. (Se você estiver copiando um Perfil de vídeo progressivo, não marque a caixa de seleção.)
+1. Como prática recomendada, verifique se a caixa de seleção **[!UICONTROL Codificar para transmissão adaptável]** está selecionada. Selecione o ícone de informações para obter uma descrição do fluxo de taxa de bits adaptável. (Se você estiver copiando um Perfil de vídeo progressivo, não marque a caixa de seleção.)
 
    No Dynamic Media - Modo híbrido, se uma predefinição de vídeo do WebM fizer parte do Perfil de vídeo, **[!UICONTROL Codificar para transmissão adaptável]** não é possível porque todas as predefinições devem ser MP4.
 1. No cabeçalho Predefinições de codificação de vídeo , adicione, edite ou exclua predefinições de codificação de vídeo que compõem o perfil.

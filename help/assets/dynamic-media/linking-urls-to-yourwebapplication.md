@@ -4,9 +4,9 @@ description: Saiba como vincular URLs ao aplicativo da Web no Dynamic Media.
 contentOwner: Rick Brough
 role: User
 exl-id: 3cd3f4d5-ebf0-4318-9a0d-1ea69453d57b
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
+source-git-commit: 223d37e036194b6a7174f4ef551065285b930eb7
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: '1276'
 ht-degree: 6%
 
 ---
@@ -152,7 +152,7 @@ O Dynamic Media oferece suporte à entrega de ativos estáticos, que são outros
 
    Esse caminho é o URL completo do vídeo para uma representação de vídeo publicada.
 
-## Obter um URL de vídeo para transmissão adaptável (HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls}
+## Obter um URL de vídeo para transmissão adaptável de taxa de bits (HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
 1. No Experience Manager, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Implantação]** > **[!UICONTROL Cloud]** > **[!UICONTROL Cloud Services]**.
 1. No **[!UICONTROL Cloud Services]** página, role para baixo até a página **[!UICONTROL Dynamic Media Cloud Services]** e selecione **[!UICONTROL Mostrar configurações]**.

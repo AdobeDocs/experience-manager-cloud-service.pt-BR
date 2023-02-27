@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 572e8ed320dcfb9619110b42229ef81adb726790
+source-git-commit: 223d37e036194b6a7174f4ef551065285b930eb7
 workflow-type: tm+mt
-source-wordcount: '10103'
+source-wordcount: '10122'
 ht-degree: 4%
 
 ---
@@ -151,7 +151,7 @@ Consulte também [Visualizadores do Experience Manager Assets e Dynamic Media Cl
 
 ## Prática recomendada: Uso do visualizador de vídeo do HTML5 {#best-practice-using-the-html-video-viewer}
 
-As predefinições do visualizador de vídeo do Dynamic Media HTML5 são players de vídeo robustos. Você pode usá-los para evitar muitos problemas comuns associados à reprodução de vídeo do HTML5 e problemas associados a dispositivos móveis. Por exemplo, falta de entrega de streaming adaptável e alcance limitado do navegador de desktop.
+As predefinições do visualizador de vídeo do Dynamic Media HTML5 são players de vídeo robustos. Você pode usá-los para evitar muitos problemas comuns associados à reprodução de vídeo do HTML5 e problemas associados a dispositivos móveis. Por exemplo, falta de entrega adaptável de streaming de taxa de bits e alcance limitado do navegador de desktop.
 
 No lado de design do reprodutor, é possível projetar a funcionalidade do reprodutor de vídeo usando ferramentas de desenvolvimento da Web padrão. Por exemplo, você pode projetar botões, controles e imagens de fundo de pôster personalizadas usando HTML5 e CSS para ajudá-lo a alcançar seus clientes com uma aparência personalizada.
 
@@ -179,7 +179,7 @@ Portanto,
 * Se você tiver um site HTTPS com streaming de vídeo HTTPS, o streaming estará bom.
 * Se você tiver um site HTTP com streaming de vídeo HTTPS, o streaming estará correto e não haverá problemas de conteúdo misto no navegador da Web.
 
-HLS é um padrão Apple para streaming de vídeo adaptável que ajusta automaticamente a reprodução com base na capacidade da largura de banda da rede. Ele também permite que o cliente &quot;procure&quot; em qualquer ponto do vídeo, sem precisar aguardar o download do restante do vídeo.
+O DASH é o padrão internacional e o HLS é um padrão da Apple. Ambos são usados para streaming de vídeo adaptável. Além disso, ambas as tecnologias ajustam automaticamente a reprodução com base na capacidade da largura de banda da rede. Ele também permite que o cliente &quot;procure&quot; em qualquer ponto do vídeo, sem precisar aguardar o download do restante do vídeo.
 
 O vídeo progressivo é fornecido pelo download e armazenamento local do vídeo no sistema de desktop de um usuário ou dispositivo móvel.
 
@@ -210,17 +210,17 @@ A tabela a seguir descreve o dispositivo, o navegador e o método de reproduçã
   <tr>
    <td>Área de trabalho</td>
    <td>Firefox 45 ou superior</td>
-   <td>Transmissão adaptável HLS ou DASH*</td>
+   <td>Fluxo de taxa de bits adaptável HLS ou DASH*</td>
   </tr>
   <tr>
    <td>Área de trabalho</td>
    <td>Chrome</td>
-   <td>Transmissão adaptável HLS ou DASH*</td>
+   <td>Fluxo de taxa de bits adaptável HLS ou DASH*</td>
   </tr>
   <tr>
    <td>Área de trabalho</td>
    <td>Safari (Mac)</td>
-   <td>Transmissão adaptável HLS</td>
+   <td>Fluxo de taxa de bits adaptável HLS</td>
   </tr>
   <tr>
    <td>Móvel</td>
@@ -230,7 +230,7 @@ A tabela a seguir descreve o dispositivo, o navegador e o método de reproduçã
   <tr>
    <td>Móvel</td>
    <td>Chrome (Android™ 7 ou posterior)</td>
-   <td>Transmissão adaptável HLS ou DASH*/td&gt;
+   <td>Fluxo de taxa de bits adaptável HLS ou DASH*/td&gt;
   </tr>
   <tr>
    <td>Móvel</td>
@@ -240,12 +240,12 @@ A tabela a seguir descreve o dispositivo, o navegador e o método de reproduçã
   <tr>
    <td>Móvel</td>
    <td>Safari (iOS)</td>
-   <td>Transmissão adaptável HLS</td>
+   <td>Fluxo de taxa de bits adaptável HLS</td>
   </tr>
   <tr>
    <td>Móvel</td>
    <td>Chrome (iOS)</td>
-   <td>Transmissão adaptável HLS</td>
+   <td>Fluxo de taxa de bits adaptável HLS</td>
   </tr>
  </tbody>
 </table>
@@ -418,7 +418,7 @@ O DASH (Digital Adaptive Streaming over HTTP, transmissão adaptativa digital po
 
 Alguns dos principais benefícios de habilitar o DASH em sua conta incluem o seguinte:
 
-* Compacte o vídeo de fluxo DASH para transmissão adaptável. Esse método leva a uma maior eficiência do delivery. O streaming adaptativo garante a melhor experiência de visualização para seus clientes.
+* Compacte o vídeo de fluxo DASH para transmissão adaptável da taxa de bits. Esse método leva a uma maior eficiência do delivery. O streaming adaptativo garante a melhor experiência de visualização para seus clientes.
 * Streaming otimizado pelo navegador com switches Dynamic Media players entre streaming HLS e DASH para garantir a melhor qualidade de serviço. O reprodutor de vídeo alterna automaticamente para HLS quando um navegador Safari é usado.
 * Você pode configurar seu método de transmissão preferido (HLS ou DASH) editando a predefinição do visualizador de vídeo.
 * A codificação otimizada de vídeo garante que nenhum armazenamento adicional seja usado durante a ativação do recurso DASH. Um único conjunto de codificações de vídeo é criado para HLS e DASH para otimizar os custos de armazenamento de vídeo.
