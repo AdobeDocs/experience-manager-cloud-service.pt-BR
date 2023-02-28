@@ -2,9 +2,9 @@
 title: Teste de interface do usuário
 description: Os testes de interface do usuário personalizados são um recurso opcional que permite criar e executar automaticamente testes na interface do usuário para seus aplicativos personalizados.
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: b1eacc8432a73f015529975e6960afbe9dee7565
+source-git-commit: 3e31b065999d36717b81253d2773e41b76949954
 workflow-type: tm+mt
-source-wordcount: '2143'
+source-wordcount: '2141'
 ht-degree: 56%
 
 ---
@@ -221,7 +221,7 @@ As variáveis de ambiente a seguir serão passadas para a imagem do Docker no te
 As amostras de teste de Adobe fornecem funções auxiliares para acessar os parâmetros de configuração:
 
 * JavaScript: Consulte a [lib/config.js](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/config.js) módulo
-* Java: Consulte a [Configuração](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) classe
+* Java: Consulte a [Configuração](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) classe
 
 ### Aguardar o Selenium estar pronto {#waiting-for-selenium}
 
@@ -255,21 +255,9 @@ As amostras de teste fornecidas pelo Adobe por padrão criam capturas de tela pa
 Você pode usar as funções de ajuda para criar capturas de tela por meio de seus testes.
 
 * JavaScript: [comando takeScreenshot](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/commons.js)
-* Java: [Comandos](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java)
+* Java: [Comandos](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java)
 
-Se um arquivo de resultados de teste for criado durante uma execução de teste da interface do usuário, o arquivo de log de teste conterá uma referência ao local do arquivo de resultados de teste no final.
-
-```
-[...]
-
-===============================================================
-The detailed test results can be downloaded from the URL below.
-Note: the link will expire after 60 days
-
-    https://results-host/test-results.zip
-
-===============================================================
-```
+Se um arquivo de resultados de teste for criado durante uma execução de teste da interface do usuário, você poderá baixá-lo do Cloud Manager usando a `Download Details` sob a [**Teste de interface personalizada** etapa.](/help/implementing/cloud-manager/deploy-code.md)
 
 ### Fazer upload de arquivos {#upload-files}
 
@@ -282,7 +270,7 @@ Os testes às vezes devem carregar arquivos no aplicativo que está sendo testad
    * Consulte a documentação e as bibliotecas da linguagem de programação usada na imagem do Docker para saber como executar essa solicitação HTTP.
    * As amostras de teste de Adobe fornecem funções auxiliares para carregar arquivos:
       * JavaScript: Consulte a [getFileHandleForUpload](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/wdio.commands.js) comando.
-      * Java: Consulte a [FileHandler](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/FileHandler.java) classe .
+      * Java: Consulte a [FileHandler](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/FileHandler.java) classe .
 1. Se o upload for bem-sucedido, a solicitação retornará uma resposta `200 OK` do tipo `text/plain`.
    * O conteúdo da resposta é um identificador de arquivo opaco.
    * Você pode usar esse identificador no lugar de um caminho de arquivo em um elemento `<input>` para testar os uploads de arquivo em seu aplicativo.
@@ -344,4 +332,4 @@ Para executar os testes da interface do usuário na máquina local, crie um usu�
 >
 >* Os arquivos de log serão armazenados no `target/reports` pasta do seu repositório.
 >
->Para obter detalhes, consulte a [AEM repositório Exemplos de teste .](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver/README.MD)
+>Para obter detalhes, consulte a [AEM repositório Exemplos de teste .](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md)

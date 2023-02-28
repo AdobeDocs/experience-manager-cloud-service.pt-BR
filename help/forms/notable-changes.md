@@ -3,10 +3,10 @@ title: O que mudou entre AEM 6.5 Forms e AEM Cloud Services
 description: Você é um usuário do Experience Manager Forms e deseja atualizar para o Adobe Experience Manager Forms as a Cloud Service? Saiba mais sobre as alterações mais importantes antes de atualizar ou migrar para o Cloud Service.
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: 7c157cbeb530627c1b888379896ddffda3f3efb3
+source-git-commit: f44a789984c38f6d34eb5c7d6999d5148b15aec8
 workflow-type: tm+mt
-source-wordcount: '1215'
-ht-degree: 1%
+source-wordcount: '1179'
+ht-degree: 0%
 
 ---
 
@@ -28,26 +28,16 @@ O Adobe Experience Manager Forms as a Cloud Service traz algumas alterações no
 | Integração com o [!DNL Micosoft Power Automate] | ✅ | ⛌ |
 | Integração com o [!DNL DocuSign] | ✅ | ⛌ |
 | Fácil conectividade com o Microsoft Dynamics e o Salesforce | ✅ | ⛌ |
-| Fácil conectividade com o armazenamento de dados do Microsoft Azure | ✅ | ⛌ |
+| Fácil conectividade com os armazenamentos de dados do Microsoft Azure | ✅ | ⛌ |
 | Editor de regras mais rígidas | ✅ | ⛌ |
 | Assistente de criação do formulário | ✅ | ⛌ |
 | Suporte XCI personalizado para o documento de registro | ✅ | ⛌ |
 | Forms adaptável <sup>1</sup> | ✅ | ✅ |
-| Integração de dados com várias fontes de dados | ✅ | ✅ |
 | APIs de comunicações (Serviços de documentos) <sup>2,3</sup> | ✅ | ✅ |
 | Serviço Automated forms conversion <sup>4</sup> | ✅ | ✅ |
-| Integração com o [!DNL Adobe Sign] | ✅ | ✅ |
-| Integração com o [!DNL AEM Sites] | ✅ | ✅ |
-| Integração com o [!DNL Adobe Launch] | ✅ | ✅ |
-| Integração com o [!DNL Adobe Analytics] | ✅ | ✅ |
 | Forms Portal <sup>5</sup> | ✅ | ✅ |
-| Fluxos de trabalho do AEM | ✅ | ✅ |
-| Documento do registro | ✅ | ✅ |
-| Captcha invisível | ✅ | ✅ |
-| Configurações reutilizáveis do Modelo de dados de formulário | ✅ | ✅ |
-| Documento de registro baseado em formulário | ✅ | ✅ |
-| Autenticação de identidade baseada em ID de governo para Forms adaptável habilitado para Adobe Sign | ✅ | ✅ |
-| HTML5 <sup>6</sup> | ⛌ | ✅ |
+| Forms Data Model <sup>6</sup> | ✅ | ✅ |
+| HTML5 Forms <sup>7</sup> | ⛌ | ✅ |
 | Segurança de documentos | ⛌ | ✅ |
 
 Antes de prosseguir com o serviço, tenha em conta os seguintes casos excepcionais:
@@ -94,29 +84,31 @@ O serviço não fornece metamodelo para o Automated forms conversion Service. Vo
 
 +++
 
-+++ 5. Portal Forms
++++ 5. Portal do Forms
 
-O suporte para uso anônimo do portal Forms não está disponível imediatamente (OOTB). Você pode personalizar o portal de formulários para permitir a exibição de formulários para usuários não conectados.
-
-+++
-
-
-+++ 6. HTML5 Forms (Mobile Forms)
-
-* O serviço não é compatível com o HTML5 Forms (Mobile Forms). Se você renderizar os formulários baseados em XDP como HTML5 Forms, poderá continuar usando o recurso no AEM 6.5 Forms.
-
-* Se você tiver uma utilização para capturar dados offline e sincronizá-los na próxima vez que retornar online, poderá continuar usando a variável [AEM Forms Workspace](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-aem-forms-workspace/introduction-html-workspace.html) no AEM 6.5 Forms.
+O suporte para uso anônimo do Forms Portal não está disponível para uso imediato (OOTB). Você pode personalizar o Portal do Forms para permitir a exibição de formulários para usuários não conectados.
 
 +++
 
-
-+++ 7. Modelo de dados do formulário
++++ 6. Modelo de dados do formulário
 
 * O modelo de dados Forms oferece suporte somente a pontos de extremidade HTTP e HTTP para o envio de dados. O serviço não oferece suporte para SSL Mútuo para conector REST e autenticação baseada em certificado x509 para fontes de dados SOAP.
 
 * O Forms as a Cloud Service permite usar o Microsoft Azure Blob, o Microsoft Sharepoint, o Microsoft OneDrive e serviços compatíveis com operações CRUD gerais (Criar, Ler, Atualizar e Excluir) como armazenamentos de dados. Tanto a especificação da API aberta 2.0 quanto a especificação da API aberta são compatíveis. O serviço também fornece suporte para o conector JDBC.
 
 +++
+
+
++++ 7. HTML5 Forms (Mobile Forms)
+
+* O serviço não é compatível com o HTML5 Forms (Mobile Forms). Se você renderizar os formulários baseados em XDP como HTML5 Forms, poderá continuar usando o recurso no AEM 6.5 Forms.
+
+* Se você tiver um caso de uso para capturar dados offline e sincronizá-los na próxima vez que retornar online, poderá continuar usando o [AEM Forms Workspace](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-aem-forms-workspace/introduction-html-workspace.html) no AEM 6.5 Forms.
+
++++
+
+
+
 
 
 +++ 8. Ambiente do desenvolvedor
