@@ -3,7 +3,7 @@ title: Introdução ao [!DNL AEM Forms] as a Cloud Service
 description: Descubra o AEM Forms e saiba como ele ajuda você a produzir conteúdo de formulários e documentos prontos para os negócios. Saiba mais sobre a Plataforma como serviço (PaaS), sobre como gerenciar formulários digitais e processos comerciais de nível corporativo e como conectar o Forms a fontes de dados atuais.
 landing-page-description: Saiba como usar formulários no AEM as a Cloud Service.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: 6861f83b292dfb8a8e62e685830289e3a2eded2d
+source-git-commit: c51aa20a37e27252a8c1e6a72d4bc6ffacea46f7
 workflow-type: tm+mt
 source-wordcount: '940'
 ht-degree: 7%
@@ -20,7 +20,7 @@ Você pode usar o serviço para criar e implantar formulários digitais interati
 
 A organização pode usar [!DNL AEM Forms] as a Cloud Service para criar formulários digitais, conectar formulários às fontes de dados existentes, integrar formulários com o [!DNL Adobe Sign] para adicionar assinaturas eletrônicas a formulários e gerar o Documento de registro (DoR) para arquivar formulários enviados como arquivos PDF. A organização também pode usar o serviço para converter seus PDF forms existentes em formulários digitais.
 
-![Coleta de dados - Design de formulário responsivo](/help/forms/assets/data-collection.jpeg)
+![Coleta de dados - Design de formulário responsivo](/help/forms/assets/data-collection.jpeg){width="40%"}
 Design de formulário responsivo
 
 Em grandes empresas, os formulários geralmente são criados uma vez e reutilizados, copiando para um sistema de gerenciamento de conteúdo. Manter um grande banco de dados de formulários atualizado e torná-los descobertos pode ser um desafio considerável. O AEM oferece um Forms Portal personalizável que garante que os clientes encontrem e acessem formulários necessários em canais móveis e da Web.
@@ -34,7 +34,7 @@ Usando o AEM Forms, os usuários empresariais podem criar experiências de usuá
 Documentos personalizados, como recibos, kits de boas-vindas e declarações podem ser facilmente gerados. As organizações podem direcionar o tráfego para portais da Web personalizados, resultando na inscrição ou compra de serviços adicionais.
 
 
-![Comunicação personalizada - Design responsivo](/help/forms/assets/personalized-communication.jpeg)
+![Comunicação personalizada - Design responsivo](/help/forms/assets/personalized-communication.jpeg){width="40%"}
 Fatura personalizada
 
 O serviço é sempre atual, sempre disponível e sempre aprendendo. As organizações podem usar [!DNL AEM Forms] as a Cloud Service e obtenha todos esses recursos na nuvem sem precisar de infraestrutura local. O serviço também libera as organizações de ciclos complexos de atualização, pois está sempre atualizado com os recursos mais recentes.
