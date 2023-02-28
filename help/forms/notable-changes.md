@@ -3,9 +3,9 @@ title: O que mudou entre AEM 6.5 Forms e AEM Cloud Services
 description: Você é um usuário do Experience Manager Forms e deseja atualizar para o Adobe Experience Manager Forms as a Cloud Service? Saiba mais sobre as alterações mais importantes antes de atualizar ou migrar para o Cloud Service.
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: da53f453b0f2def98d92aae0e3e92d13eb748dab
+source-git-commit: 7c157cbeb530627c1b888379896ddffda3f3efb3
 workflow-type: tm+mt
-source-wordcount: '1178'
+source-wordcount: '1215'
 ht-degree: 1%
 
 ---
@@ -103,14 +103,18 @@ O suporte para uso anônimo do portal Forms não está disponível imediatamente
 
 +++ 6. HTML5 Forms (Mobile Forms)
 
-O serviço não é compatível com o HTML5 Forms (Mobile Forms). Se você renderizar os formulários baseados em XDP como HTML5 Forms, poderá continuar usando o recurso no AEM 6.5 Forms.
+* O serviço não é compatível com o HTML5 Forms (Mobile Forms). Se você renderizar os formulários baseados em XDP como HTML5 Forms, poderá continuar usando o recurso no AEM 6.5 Forms.
+
+* Se você tiver uma utilização para capturar dados offline e sincronizá-los na próxima vez que retornar online, poderá continuar usando a variável [AEM Forms Workspace](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-aem-forms-workspace/introduction-html-workspace.html) no AEM 6.5 Forms.
 
 +++
 
 
 +++ 7. Modelo de dados do formulário
 
-O modelo de dados Forms oferece suporte somente a pontos de extremidade HTTP e HTTP para o envio de dados. O serviço não oferece suporte para SSL Mútuo para conector REST e autenticação baseada em certificado x509 para fontes de dados SOAP. * O Forms as a Cloud Service permite usar o Microsoft Azure Blob, o Microsoft Sharepoint, o Microsoft OneDrive e serviços compatíveis com operações CRUD gerais (Criar, Ler, Atualizar e Excluir) como armazenamentos de dados. As especificações da API aberta 2.0 e da API aberta são compatíveis. O serviço também fornece suporte para o conector JDBC.
+* O modelo de dados Forms oferece suporte somente a pontos de extremidade HTTP e HTTP para o envio de dados. O serviço não oferece suporte para SSL Mútuo para conector REST e autenticação baseada em certificado x509 para fontes de dados SOAP.
+
+* O Forms as a Cloud Service permite usar o Microsoft Azure Blob, o Microsoft Sharepoint, o Microsoft OneDrive e serviços compatíveis com operações CRUD gerais (Criar, Ler, Atualizar e Excluir) como armazenamentos de dados. Tanto a especificação da API aberta 2.0 quanto a especificação da API aberta são compatíveis. O serviço também fornece suporte para o conector JDBC.
 
 +++
 
