@@ -4,10 +4,10 @@ description: Saiba como criar a estrutura que serve como base para todo o seu co
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: 741fadcffc496cb1c32d1943f7759e8d70cf92ff
-workflow-type: ht
+source-git-commit: fa36470e50abdf6dd019a91665945ff6e68e40c2
+workflow-type: tm+mt
 source-wordcount: '477'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 100%
 
 ## Criar um modelo {#create-model}
 
-O console de modelos de fragmento de conteúdo é aberto em uma nova guia. Considere o console de modelos de fragmento de conteúdo como uma biblioteca de modelos, onde você cria novos modelos e gerencia os modelos existentes.
+O console de modelos do Fragmento de conteúdo é aberto em uma nova guia. Considere o console de modelos de Fragmento de conteúdo como a biblioteca de modelos, onde você cria novos modelos e gerencia modelos existentes.
 
 1. Clique no botão **Criar** na parte superior direita da tela para começar a criar um modelo de fragmento de conteúdo.
 
