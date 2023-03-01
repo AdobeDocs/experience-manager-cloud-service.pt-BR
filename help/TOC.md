@@ -8,9 +8,9 @@ user-guide-description: Saiba como o Experience Manager as a Cloud Service funci
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: da53f453b0f2def98d92aae0e3e92d13eb748dab
+source-git-commit: 4416c43b408f576a547590796141a6b551e25681
 workflow-type: tm+mt
-source-wordcount: '3946'
+source-wordcount: '3952'
 ht-degree: 95%
 
 ---
@@ -501,7 +501,7 @@ ht-degree: 95%
 + Forms {#forms}
    + Visão geral {#forms-overview}
       + [Introdução](/help/forms/home.md)
-      + [Últimas inovações](/help/forms/latest-innovations.md)
+      + [Inovações mais recentes](/help/forms/latest-innovations.md)
       + [Alterações importantes](/help/forms/notable-changes.md)
       + [Arquitetura](/help/forms/aem-forms-cloud-service-architecture.md)
       + [Perguntas frequentes](/help/forms/faq.md)
@@ -509,18 +509,17 @@ ht-degree: 95%
    + Configurar e migrar {#setup-configure-migrate}
       + [Integrar ao ambiente do Cloud Service](/help/forms/setup-forms-cloud-service.md)
       + [Configurar um ambiente de desenvolvimento local](/help/forms/setup-local-development-environment.md)
-      + [Instalar e configurar o Forms Designer](/help/forms/installing-configuring-designer.md)
       + [Configurar o conector de armazenamento unificado](/help/forms/configure-unified-storage-connector.md)
-      + [Migrar para o  [!DNL AEM Forms]  as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
+      + [Migrar de [!DNL AEM 6.5 Forms] ou anterior a [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [Grupos e permissões](/help/forms/forms-groups-privileges-tasks.md)
       + [Importar, exportar e organizar formulários adaptáveis, formulários PDF e outros ativos](/help/forms/import-export-forms-templates.md)
    + Integrar {#integrate}
       + Serviços {#services}
-         + [Integração do AEM Forms as a Cloud Service com o Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
-         + [Integração do AEM Forms as a Cloud Service com o DocuSign](/help/forms/integrate-docusign-adaptive-forms.md)
-         + [Integração do AEM Forms as a Cloud Service com o Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
+         + [Integrar o AEM Forms as a Cloud Service com o Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
+         + [Integrar o AEM Forms as a Cloud Service com o DocuSign](/help/forms/integrate-docusign-adaptive-forms.md)
+         + [Integrar o AEM Forms as a Cloud Service com o Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
          + [Integrar um formulário adaptável ao Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
-         + [Incorpore um Forms adaptável em uma página do AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)
+         + [Incorporar uma Forms adaptável em uma página do AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)
       + Modelo de dados do formulário {#use-form-data-model}
          + [Conectar suas fontes de dados ao Cloud Service](/help/forms/data-integration.md)
          + [Configurar fontes de dados](/help/forms/configure-data-sources.md)
@@ -535,9 +534,9 @@ ht-degree: 95%
          + Criar um formulário adaptável {#create-an-adaptive-form-on-forms-cs}
             + [Criar um formulário adaptável](/help/forms/creating-adaptive-form-core-components.md)
             + [Criar temas para um formulário adaptável - Componentes principais](/help/forms/using-themes-in-core-components.md)
-            + [Gerar documento de registro para Forms adaptável](/help/forms/generate-document-of-record-core-components.md)
-      + Criação de adaptativos Forms - Componentes básicos {#authoring-adaptive-forms-foundation-components}
-         + Converta seus PDF forms em Adaptive Forms {#afcs}
+            + [Gerar documento de registro para o Adaptive Forms](/help/forms/generate-document-of-record-core-components.md)
+      + Criação de Forms adaptável - Componentes de base {#authoring-adaptive-forms-foundation-components}
+         + Converter seus PDF forms em Forms adaptável {#afcs}
             + [Introdução ao serviço de conversão automática de formulários](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=pt-BR)
             + [Converter um Formulário PDF existente em um Formulário adaptável](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=pt-BR)
             + [Revisar e corrigir formulários convertidos](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html?lang=pt-BR#welcome-to-review-and-correct-editor)
@@ -548,7 +547,6 @@ ht-degree: 95%
             + [Criar um tema](/help/forms/themes.md)
             + [Ativos de referência](/help/forms/reference-assets.md)
             + [Criar um esquema JSON para um formulário adaptável](/help/forms/adaptive-form-json-schema-form-model.md)
-            + [Usar o Forms Designer](/help/forms/use-forms-designer.md)
             + [Melhorar o desempenho de formulários grandes com carregamento lento](/help/forms/lazy-loading-adaptive-forms.md)
          + Adicionar componentes a um formulário adaptável {#add-components-to-an-adaptive-form}
             + [Usar CAPTCHA em um formulário adaptável](/help/forms/captcha-adaptive-forms.md)
@@ -579,8 +577,8 @@ ht-degree: 95%
          + Melhorar a acessibilidade de um Formulário adaptável {#accessible-adaptive-forms}
             + [Criar um Formulário adaptável acessível](/help/forms/creating-accessible-adaptive-forms.md)
          + [Configurar o Forms Portal](/help/forms/configure-forms-portal.md)
-         + [Criar e gerenciar revisões](/help/forms/create-reviews-forms.md)
-   + Fluxos de trabalho centrados na Forms {#create-form-centric-workflows}
+         + [Criar e gerenciar análises](/help/forms/create-reviews-forms.md)
+   + Fluxos de trabalho centrados no Forms {#create-form-centric-workflows}
       + [Usar etapas centradas no Forms em um fluxo de trabalho + referência de etapa](/help/forms/aem-forms-workflow-step-reference.md)
       + [Usar variáveis em um fluxo de trabalho centrado no Forms](/help/forms/variable-in-aem-workflows.md)
       + [Usar a opção Out of Office](/help/forms/configure-out-of-office-settings.md)
@@ -588,12 +586,14 @@ ht-degree: 95%
       + [Introdução às APIs de comunicações](/help/forms/aem-forms-cloud-service-communications-introduction.md)
       + [APIs de comunicações - Processamento síncrono](/help/forms/aem-forms-cloud-service-communications.md)
       + [APIs de comunicação - Processamento em lote](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+      + [Instalar e configurar o Forms Designer](/help/forms/installing-configuring-designer.md)
+      + [Usar o Forms Designer para criar modelos](/help/forms/use-forms-designer.md)
       + [Uso de fontes personalizadas em documentos PDF](/help/forms/use-custom-fonts.md)
       + [Problemas conhecidos, práticas recomendadas e perguntas frequentes](/help/forms/communications-known-issues-limitations.md)
    + Referência da API do desenvolvedor {#aem-forms-developer-api-reference}
       + [Referência da API de comunicações do AEM Forms Cloud Service](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
-      + [Referência da API do JavaScript do AEM Forms Cloud Service](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html)
-      + [Referência da API do AEM Forms Cloud Service Java](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/aem-forms-cloud-service-javadoc/index.html)
+      + [Referência da API JavaScript do AEM Forms Cloud Service](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html)
+      + [Referência da API Java do AEM Forms Cloud Service](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/aem-forms-cloud-service-javadoc/index.html)
    + Resolução de problemas {#troubleshooting-aem-forms-cloud-service}
       + [Instalação e configuração](/help/forms/troubleshooting-installation-and-configuration.md)
       + [Armazenamento em cache do Dispatcher e CDN](/help/forms/troubleshooting-caching-performance.md)
@@ -698,8 +698,8 @@ ht-degree: 95%
       + [Gerenciar pontos de extremidade do GraphQL](/help/headless/graphql-api/graphql-endpoint.md)
       + [IDE GraphiQL](/help/headless/graphql-api/graphiql-ide.md)
       + [Consultas persistentes de GraphQL ](/help/headless/graphql-api/persisted-queries.md)
-      + [Otimizando consultas do GraphQL](/help/headless/graphql-api/graphql-optimization.md)
-      + [Atualização dos Fragmentos de conteúdo para filtragem otimizada do GraphQL](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
+      + [Otimização de consultas do GraphQL](/help/headless/graphql-api/graphql-optimization.md)
+      + [Atualização dos fragmentos de conteúdo para uma filtragem otimizada do GraphQL](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
       + [Exemplo de consultas GraphQL](/help/headless/graphql-api/sample-queries.md)
    + [API REST de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=pt-BR)
    + Segurança {#security}
