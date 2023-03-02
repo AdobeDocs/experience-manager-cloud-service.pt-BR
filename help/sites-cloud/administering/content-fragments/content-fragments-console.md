@@ -5,10 +5,10 @@ landing-page-description: Saiba como gerenciar Fragmentos de conteúdo no Consol
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: b20ec4fb6068fe0ecfe74a6d1bff8038f330ff38
-workflow-type: ht
-source-wordcount: '901'
-ht-degree: 100%
+source-git-commit: db81eac064d4616cb6b1beae85abc0c55a993fce
+workflow-type: tm+mt
+source-wordcount: '913'
+ht-degree: 98%
 
 ---
 
@@ -65,7 +65,7 @@ Aqui você pode ver três áreas principais:
             * Mostrar informações sobre referências
             * Mostrar informações sobre versões de idioma do fragmento
          * É possível [selecionar um ou mais Fragmentos de conteúdo para mostrar as ações disponíveis](#actions-selected-content-fragment)
-      * Você pode selecionar um cabeçalho de coluna para classificar a tabela de acordo com essa coluna; selecione novamente para alternar entre ordem crescente e decrescente
+      * Você pode selecionar um cabeçalho de coluna para classificar a tabela de acordo com essa coluna; selecione novamente para alternar entre ordem crescente e decrescente. No momento, a classificação é compatível com o **Título**, **Modificado**, e **Modificado por** colunas.
    * **[Criar](#creating-new-content-fragment)** um novo fragmento de conteúdo
    * [Filtrar](#filtering-fragments) os fragmentos de conteúdo de acordo com uma seleção de predicados e salvar o filtro para uso futuro
    * [Pesquisar](#searching-fragments) os fragmentos de conteúdo
