@@ -2,10 +2,10 @@
 title: Atalhos de teclado para Consoles
 description: Poupe tempo durante a criação usando estes atalhos de teclado
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
-source-git-commit: 7c9a8765c1d193a880ad4352f20660249effa881
+source-git-commit: 1698b78c3d58714c6e1d354143964741ee17d60e
 workflow-type: tm+mt
-source-wordcount: '373'
-ht-degree: 100%
+source-wordcount: '376'
+ht-degree: 96%
 
 ---
 
@@ -20,7 +20,7 @@ Os seguintes atalhos estão disponíveis para os consoles Sites, Ativos, Usuári
 |  | `Left Arrow` | Navegar para cima na estrutura de árvore / recolher o nó de árvore |
 |  | `Down Arrow` | Mova para baixo uma lista de páginas no mesmo nível |
 |  | `Up Arrow` | Mova para cima uma lista de páginas no mesmo nível |
-| Console - Exibição de coluna | `Shift-Up/Down Arrow` | Mova para cima uma lista de páginas no mesmo nível |
+| Console - Exibição de coluna | `Shift-Up/Down Arrow` | Mova para cima/para baixo e selecione uma lista de páginas no mesmo nível |
 |  | `Esc` | Mova para cima uma lista de páginas no mesmo nível |
 | Consoles | `?` | Ajuda dos atalhos de teclado |
 |  | `/` | Executar a [pesquisa](/help/sites-cloud/authoring/getting-started/search.md) |
