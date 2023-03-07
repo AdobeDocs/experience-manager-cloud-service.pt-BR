@@ -8,9 +8,9 @@ user-guide-description: Saiba como o Experience Manager as a Cloud Service funci
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 4416c43b408f576a547590796141a6b551e25681
+source-git-commit: 5815dacd2806cc7886aa0c7c5c9fd329306b3e1b
 workflow-type: tm+mt
-source-wordcount: '3952'
+source-wordcount: '3955'
 ht-degree: 95%
 
 ---
@@ -72,7 +72,7 @@ ht-degree: 95%
    + Notas de versão do Cloud Manager {#cloud-manager}
       + [Notas de versão atuais](/help/implementing/cloud-manager/release-notes/current.md)
       + 2023 {#2023}
-         + [Notas da versão 2023.1.0](/help/implementing/cloud-manager/release-notes/2023/2023-1-0.md)
+         + [Notas de versão 2023.1.0](/help/implementing/cloud-manager/release-notes/2023/2023-1-0.md)
       + 2022 {#2022}
          + [Notas da versão 2022.12.0](/help/implementing/cloud-manager/release-notes/2022/2022-12-0.md)
          + [Notas da versão 2022.11.0](/help/implementing/cloud-manager/release-notes/2022/2022-11-0.md)
@@ -114,6 +114,7 @@ ht-degree: 95%
    + Notas de versão das ferramentas de migração {#migration-tools}
       + [Notas de versão atuais](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
       + 2022 {#2022}
+         + [Notas da versão 2022.12.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-12-0.md)
          + [Notas da versão 2022.9.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-09-0.md)
          + [Notas da versão 2022.7.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-07-0.md)
          + [Notas da versão 2022.5.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-05-0.md)
