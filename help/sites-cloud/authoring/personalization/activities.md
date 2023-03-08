@@ -2,10 +2,10 @@
 title: Gerenciamento de atividades
 description: O console Atividades permite criar, organizar e gerenciar as atividades de marketing das suas marcas
 exl-id: e7cab16d-7678-472d-b75f-7f67b303ba8d
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 56a7f214a4a1a3a58c56f1e06e3a98532054ffee
 workflow-type: tm+mt
-source-wordcount: '2002'
-ht-degree: 100%
+source-wordcount: '2019'
+ht-degree: 99%
 
 ---
 
@@ -81,6 +81,10 @@ Adicione uma atividade ou edite uma atividade existente para concentrar seus esf
 * **Duração:** o período em que a atividade é aplicada.
 * **Prioridade**: a prioridade relativa da atividade. Quando as atividades fornecem conteúdo para os mesmos segmentos de usuários, a atividade de maior prioridade é priorizada.
 * **Métrica de meta:** se o Adobe Target for selecionado como o mecanismo de definição de metas, você poderá adicionar métricas de sucesso à atividade. É necessária uma métrica de sucesso.
+
+>[!NOTE]
+>
+>Para poder **Selecionar uma configuração de direcionamento** você deve estar no **Autores da atividade do Target** grupo.
 
 >[!NOTE]
 >
