@@ -2,9 +2,9 @@
 title: Lidar com grandes repositórios de conteúdo
 description: Esta seção descreve a manipulação de grandes repositórios de conteúdo
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: 5043caa54c3ba4553245a948758ee7da40c1e227
+source-git-commit: cf09c7774b633ae2cf1c5b28fee2bd8191d80bb3
 workflow-type: tm+mt
-source-wordcount: '1878'
+source-wordcount: '1846'
 ht-degree: 2%
 
 ---
@@ -37,9 +37,6 @@ Siga a seção abaixo para entender as considerações importantes antes de inic
 * Você precisará de acesso para instalar o [AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) na instância (ou VM) que executa a instância do AEM de origem.
 
 * A Coleta de Lixo do Armazenamento de Dados foi executada nos 7 dias anteriores na origem. Para obter mais detalhes, consulte [Coleta de lixo do armazenamento de dados](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#data-store-garbage-collection).
-
->[!NOTE]
->Atualmente, as representações de texto não estão funcionando corretamente em computadores com Windows e esse é um problema conhecido. No entanto, abordaremos esse problema na próxima versão e forneceremos uma correção para ele.
 
 ### Considerações adicionais se a instância do AEM de origem estiver configurada para usar um armazenamento de dados Amazon S3 ou Azure Blob {#additional-considerations-amazons3-azure}
 
