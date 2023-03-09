@@ -4,10 +4,10 @@ description: Visão geral da ferramenta Transferência de conteúdo
 hide: true
 hidefromtoc: true
 exl-id: dd031580-e9d7-461e-8689-9bc3dbb2121b
-source-git-commit: 22bbf15e33ab3d5608dc01ed293bb04b07cb6c8c
+source-git-commit: 3c8035e4db5729f58bae29136a32a0b9944d6a2f
 workflow-type: tm+mt
-source-wordcount: '476'
-ht-degree: 63%
+source-wordcount: '475'
+ht-degree: 56%
 
 ---
 
@@ -23,14 +23,14 @@ Existem duas fases associadas à transferência de conteúdo:
 
 1. **Extração**: Extração refere-se à extração de conteúdo da instância do AEM de origem em uma área temporária chamada de *conjunto de migração*. Um *conjunto de migração* é uma área de armazenamento em nuvem fornecida pela Adobe para armazenar temporariamente o conteúdo transferido entre a instância do AEM de origem e a instância do AEM Cloud Service.
 
-   Consulte [Processo de extração na transferência de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/extracting-content.html) para obter mais detalhes.
+   Consulte [Processo de extração na transferência de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html) para obter mais detalhes.
 
    >[!NOTE]
-   > É recomendável executar a Ferramenta de Mapeamento de Usuário como parte da fase de Extração. Consulte [Usar a ferramenta Mapeamento de usuários](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html) para obter mais detalhes.
+   >Execute a Ferramenta de mapeamento de usuário como parte da fase de Extração. Consulte [Utilização da ferramenta Mapeamento de usuários](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html?lang=en) para obter mais detalhes.
 
 1. **Assimilação**: Assimilação refere-se à assimilação de conteúdo do *conjunto de migração* na instância de destino do Cloud Service.
 
-   Consulte [Processo de assimilação na transferência de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/ingesting-content.html) para obter mais detalhes.
+   Consulte [Processo de assimilação na transferência de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html) para obter mais detalhes.
 
 ## Atributos de um conjunto de migração {#attributes-migration-set}
 
@@ -47,10 +47,10 @@ A ferramenta Transferência de conteúdo tem um recurso que oferece suporte a at
 >[!NOTE]
 >Após a transferência inicial do conteúdo, é recomendável fazer atualizações complementares frequentes de conteúdo diferencial para reduzir o período de congelamento de conteúdo para a transferência final de conteúdo diferencial antes de entrar online no Cloud Service.
 
-Na fase de extração, para ***complementar*** um conjunto de migração existente, a opção de *Substituir* deve estar desativada. Consulte [Extração complementar](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/extracting-content.html?lang=en#top-up-extraction-process) para obter mais detalhes.
+Na fase de extração, para ***complementar*** um conjunto de migração existente, a variável *substituir* deve estar desabilitada. Consulte [Extração complementar](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html?lang=en#top-up-extraction-process) para obter mais detalhes.
 
-Na fase de assimilação, para aplicar o conteúdo delta sobre o conteúdo atual, a opção de *limpeza* deve estar desativada. Consulte [Assimilação complementar](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/ingesting-content.html?lang=en#top-up-ingestion-process) para obter mais detalhes.
+Na fase de assimilação, para aplicar o conteúdo delta sobre o conteúdo atual, a opção de *limpeza* deve estar desativada. Consulte [Assimilação complementar](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html?lang=en#top-up-ingestion-process) para obter mais detalhes.
 
 ## O que vem a seguir {#whats-next}
 
-Depois de saber mais sobre a ferramenta Transferência de conteúdo e sua visão geral que descreve essa ferramenta podem ser usadas para mover o conteúdo existente de uma instância de AEM de origem (no local ou AMS) para a instância de destino do AEM Cloud Service, você deve revisar [Pré-requisitos para a ferramenta Transferência de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en).
+Depois de aprender sobre a ferramenta Transferência de conteúdo e sua visão geral, essa ferramenta pode ser usada para mover o conteúdo existente de uma instância do AEM de origem (no local ou AMS) para a instância do AEM Cloud Service de destino. Revisão [Pré-requisitos para a ferramenta Transferência de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en).
