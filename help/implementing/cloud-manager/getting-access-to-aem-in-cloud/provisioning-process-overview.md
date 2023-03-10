@@ -2,7 +2,7 @@
 title: Processo de provisionamento - Visão geral
 description: Processo de provisionamento - Visão geral
 source-git-commit: ffeda76f9c661117ddba50588ebea01d151ee8c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '331'
 ht-degree: 100%
 
