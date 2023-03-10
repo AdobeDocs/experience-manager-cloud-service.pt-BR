@@ -1,6 +1,6 @@
 ---
 title: Introdução ao App Builder
-description: Saiba mais sobre as noções básicas do App Builder desde seu valor comercial até sua arquitetura.
+description: Saiba mais sobre as noções básicas do App Builder, desde seu valor comercial até sua arquitetura.
 version: Cloud Service
 feature: App Builder
 topic: Integrations, Development
@@ -10,9 +10,9 @@ kt: 9452, 9464, 9465, 9466
 thumbnail: 339158.jpg
 exl-id: c6fc96a0-ff95-4fb9-8674-71e60d23ef5c
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '97'
-ht-degree: 10%
+ht-degree: 100%
 
 ---
 
@@ -24,13 +24,13 @@ ht-degree: 10%
 
 ## Introdução
 
-Saiba mais sobre o App Builder, seus recursos e o valor comercial que o App Builder oferece.
+Saiba mais sobre o App Builder, seus recursos e o valor comercial que ele oferece.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339158/?quality=12&learn=on)
 
-## Pontos de contato
+## Touchpoints
 
-Saiba como os usuários finais interagem com a SPA do App Builder e onde os desenvolvedores podem aprender mais sobre o desenvolvimento do App Builder.
+Saiba como os usuários finais interagem com SPAs do App Builder e onde os desenvolvedores podem aprender mais sobre o desenvolvimento do App Builder.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339159/?quality=12&learn=on)
 
