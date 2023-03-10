@@ -3,9 +3,9 @@ title: Configure o conector de tradução para conteúdo headless
 description: Saiba como conectar o AEM a um serviço de tradução.
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
 source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1234'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -15,10 +15,10 @@ Saiba como conectar o AEM a um serviço de tradução.
 
 ## A história até agora {#story-so-far}
 
-No documento anterior da jornada de tradução AEM sem cabeçalho, [Introdução a AEM tradução headless](learn-about.md) você aprendeu a organizar seu conteúdo sem periféricos e como AEM ferramentas de tradução funcionam, e agora você deve:
+No documento anterior da jornada de tradução headless do AEM, [Introdução à tradução headless no AEM](learn-about.md), você aprendeu a organizar o conteúdo headless e descobriu como funcionam as ferramentas de tradução do AEM. Agora, você deverá:
 
 * Compreender a importância da estrutura de conteúdo para a tradução.
-* Entenda como o AEM armazena conteúdo sem interface.
+* Entenda como o AEM armazena conteúdo headless.
 * Se familiarizar com as ferramentas de tradução do AEM.
 
 Este artigo se baseia nesses fundamentos para que você possa realizar a primeira etapa e configurar um serviço de tradução, que será usado posteriormente na jornada para traduzir o conteúdo.
@@ -66,7 +66,7 @@ Depois que o pacote do conector do seu serviço de tradução de preferência fo
 
 * Qual provedor de serviços de tradução usar
 * Se deve ser realizada tradução humana ou automática
-* Traduzir ou não outro conteúdo associado ao Fragmento do conteúdo, como tags
+* Se outros conteúdos associados ao Fragmento de conteúdo, como tags, devem ou não ser traduzidos
 
 Para criar uma nova configuração de tradução:
 
@@ -85,7 +85,7 @@ Para criar uma nova configuração de tradução:
 
 1. Toque ou clique em **Criar** e a janela **Editar configuração** será exibida, onde você poderá definir as propriedades de configuração.
 
-1. Lembre-se de que os Fragmentos de conteúdo são armazenados como ativos no AEM. Toque ou clique no botão **Ativos** guia .
+1. Lembre-se de que os Fragmentos de conteúdo são armazenados como ativos no AEM. Toque ou clique na guia **Ativos**.
 
 ![Propriedades de configuração de tradução](assets/translation-configuration.png)
 
@@ -94,13 +94,13 @@ Para criar uma nova configuração de tradução:
    1. **Método de tradução** - selecione **Tradução automática** ou **Tradução humana**, dependendo do seu provedor de tradução. Para os fins desta jornada, vamos pressupor o uso de tradução automática.
    1. **Provedores de tradução** - selecione na lista o conector instalado para o serviço de tradução.
    1. **Categoria de conteúdo** - selecione a categoria mais apropriada para direcionar melhor a tradução (somente para tradução automática).
-   1. **Traduzir ativos de fragmento do conteúdo** - Marque essa opção para traduzir ativos associados aos Fragmentos de conteúdo.
-   1. **Traduzir ativos** - Marque essa opção para traduzir os ativos.
-   1. **Traduzir metadados** - Marque essa opção para traduzir metadados de ativos.
-   1. **Traduzir tags** - Marque essa opção para traduzir tags associadas ao ativo.
+   1. **Traduzir ativos de fragmento de conteúdo**: marque essa opção para traduzir ativos associados aos Fragmentos de conteúdo.
+   1. **Traduzir ativos**: marque essa opção para traduzir os ativos.
+   1. **Traduzir metadados**: marque essa opção para traduzir metadados de ativos.
+   1. **Traduzir tags**: marque essa opção para traduzir tags associadas ao ativo.
    1. **Executar tradução automaticamente** - marque essa propriedade se desejar que as traduções sejam enviadas automaticamente para o serviço de tradução.
-   1. **Desativar Tradução Somente Atualização** - Quando essa opção estiver marcada, a atualização do projeto de tradução enviará todos os campos traduzíveis para tradução, não apenas os alterados desde a última tradução. A atualização do seu projeto de tradução será discutida posteriormente na jornada.
-   1. **Ativar campos do modelo de conteúdo para tradução** - Marque essa opção para que a configuração de tradução reconheça automaticamente os campos nos Modelos de conteúdo com base no **Traduzível** sinalizador.
+   1. **Desativar tradução somente de atualização**: quando essa opção estiver marcada, a atualização do projeto de tradução enviará todos os campos traduzíveis para tradução, e não apenas os alterados desde a última tradução. A atualização do projeto de tradução será discutida posteriormente na jornada.
+   1. **Ativar campos do modelo de conteúdo para tradução**: marque essa opção para que a configuração de tradução reconheça automaticamente os campos nos Modelos de conteúdo com base no sinalizador **Traduzível**.
 
 1. Toque ou clique em **Salvar e fechar**.
 
@@ -127,16 +127,16 @@ Para fazer isso, navegue até a raiz do idioma do conteúdo. Para os fins do nos
 
 ## O que vem a seguir {#what-is-next}
 
-Agora que você concluiu esta parte da jornada de tradução sem cabeçalho, é necessário:
+Agora que você concluiu esta parte da jornada de tradução headless, você deve:
 
 * Compreender os parâmetros fundamentais da estrutura de integração de tradução no AEM.
 * Ser capaz de configurar sua própria conexão com o serviço de tradução.
 
-Aproveite esse conhecimento e prossiga com sua jornada de tradução sem periféricos de AEM ao próximo revisar o documento [Traduzir conteúdo,](translation-rules.md) onde você aprenderá a usar sua configuração até agora para traduzir seu conteúdo.
+Aproveite esse conhecimento e prossiga com sua jornada de tradução headless do AEM revisando o documento [Traduzir conteúdo,](translation-rules.md) por meio do qual você aprenderá a usar sua configuração até agora para realmente traduzir seu conteúdo.
 
 ## Recursos adicionais {#additional-resources}
 
-Embora seja recomendável seguir para a próxima parte da jornada de tradução sem periféricos revisando o documento [Configurar regras de tradução](translation-rules.md) a seguir estão alguns recursos adicionais e opcionais que aprofundam alguns conceitos mencionados neste documento, mas não é necessário que eles continuem na jornada sem periféricos.
+Embora seja recomendável seguir para a próxima parte da jornada de tradução headless revisando o documento [Configurar regras de tradução](translation-rules.md), veja a seguir alguns recursos adicionais e opcionais que aprofundam alguns conceitos mencionados neste documento, mas que não são necessários para continuar na jornada.
 
 *  [Configuração da estrutura de integração de tradução](/help/sites-cloud/administering/translation/integration-framework.md) - revise uma lista de conectores de tradução selecionados e saiba como configurar a estrutura de integração de tradução para integrar-se a serviços de tradução de terceiros.
 * [Conexão com o Microsoft Translator](/help/sites-cloud/administering/translation/connect-ms-translator.md) - o AEM fornece uma conta de avaliação do Microsoft Translation para fins de teste.
