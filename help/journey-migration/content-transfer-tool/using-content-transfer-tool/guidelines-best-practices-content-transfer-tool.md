@@ -2,10 +2,10 @@
 title: Diretrizes e práticas recomendadas para usar a ferramenta Transferência de conteúdo
 description: Diretrizes e práticas recomendadas para usar a ferramenta Transferência de conteúdo
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: 2c53d1cce6b1e889a0e49254621d02bd152bfbbf
+source-git-commit: eadcf71aa96298383b05e61251dfeb5f345df6b9
 workflow-type: tm+mt
 source-wordcount: '1554'
-ht-degree: 19%
+ht-degree: 23%
 
 ---
 
@@ -24,11 +24,11 @@ ht-degree: 19%
 
 -->
 
-Uma nova versão da ferramenta Transferência de conteúdo está disponível e integra o processo de transferência de conteúdo ao Cloud Acceleration Manager. É altamente recomendável mudar para essa nova versão para aproveitar todos os benefícios que ela oferece:
+Uma nova versão da ferramenta de Transferência de conteúdo está disponível para integrar o processo de transferência de conteúdo ao Cloud Acceleration Manager. É altamente recomendável mudar para essa nova versão para aproveitar todos os benefícios que ela oferece:
 
-* Forma de autoatendimento para extrair um conjunto de migração uma vez e assimilá-lo em vários ambientes em paralelo
-* Experiência do usuário aprimorada por meio de melhores estados de carregamento, medidas de proteção e tratamento de erros
-* Os registros de assimilação são mantidos e estão sempre disponíveis para solução de problemas
+* Sistema de autoatendimento para extrair um conjunto de migração uma vez e assimilá-lo em vários ambientes em paralelo
+* Aprimoramento da experiência do usuário por meio de melhores estados de carregamento, medidas de proteção e tratamento de erros
+* Os logs de assimilação são persistentes e sempre estão disponíveis para solução de problemas
 
 Para começar a usar a nova versão, será necessário desinstalar as versões mais antigas da ferramenta Transferência de conteúdo. Isso é necessário porque a nova versão vem com uma grande mudança arquitetônica. Com a versão 2.x, será necessário criar novos conjuntos de migração e executar novamente a extração e a assimilação nos novos conjuntos de migração.
 As versões anteriores à 2.0.0 não serão mais suportadas, e é aconselhável usar a versão mais recente.
@@ -71,9 +71,9 @@ Siga a seção abaixo para entender as considerações importantes ao executar a
 
 * A chave de extração é válida por 14 dias a partir do momento em que foi criada/renovada. Ele pode ser renovado a qualquer momento. Se a chave de extração tiver expirado, você não poderá executar uma extração.
 
-* A ferramenta Transferência de conteúdo (CTT) não executa nenhum tipo de análise de conteúdo antes de transferir o conteúdo da instância de origem para a instância de destino. Por exemplo, a CTT não diferencia entre conteúdo publicado e não publicado ao assimilar conteúdo em um ambiente de publicação. Qualquer conteúdo especificado no conjunto de migração será assimilado na instância de destino escolhida. O usuário pode assimilar um conjunto de migração em uma instância de Autor ou instância de Publicação, ou ambos. É recomendável que, ao mover o conteúdo para uma instância de Produção, a CTT seja instalada na instância do Autor de origem para mover o conteúdo para a instância do Autor de destino e, de forma semelhante, instale a CTT na instância de Publicação de origem para mover o conteúdo para a instância de Publicação de destino. Consulte [Execução da ferramenta Transferência de conteúdo em uma instância de publicação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.md?lang=en#running-ctt-on-publish) para obter mais detalhes.
+* A ferramenta Transferência de conteúdo (CTT) não executa nenhum tipo de análise de conteúdo antes de transferir o conteúdo da instância de origem para a instância de destino. Por exemplo, a CTT não diferencia entre conteúdo publicado e não publicado ao assimilar conteúdo em um ambiente de publicação. Qualquer conteúdo especificado no conjunto de migração será assimilado na instância de destino escolhida. O usuário pode assimilar um conjunto de migração em uma instância de Autor ou instância de Publicação, ou ambos. É recomendável que, ao mover o conteúdo para uma instância de Produção, a CTT seja instalada na instância do Autor de origem para mover o conteúdo para a instância do Autor de destino e, de forma semelhante, instale a CTT na instância de Publicação de origem para mover o conteúdo para a instância de Publicação de destino. Consulte [Execução da ferramenta Transferência de conteúdo em uma instância de publicação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#running-tool) para obter mais detalhes.
 
-* Os usuários e grupos transferidos pela ferramenta Transferência de conteúdo são apenas aqueles exigidos pelo conteúdo para atender às permissões. A variável _Extração_ o processo copia todo o `/home` no conjunto de migração e faz o Mapeamento de usuários, adicionando um campo criado a partir do endereço de email de cada usuário. Para obter mais informações, consulte [Mapeamento de usuários e migração de entidade de segurança](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).  A variável _Assimilação_ O processo copia todos os usuários e grupos referenciados nas ACLs de conteúdo migradas.
+* Os usuários e grupos transferidos pela ferramenta Transferência de conteúdo são apenas aqueles exigidos pelo conteúdo para atender às permissões. A variável _Extração_ o processo copia todo o `/home` no conjunto de migração e faz o Mapeamento de usuários, adicionando um campo criado a partir do endereço de email de cada usuário. Para obter mais informações, consulte [Mapeamento de usuários e migração de entidade de segurança](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md). A variável _Assimilação_ O processo copia todos os usuários e grupos referenciados nas ACLs de conteúdo migradas.
 
 * Durante a fase de extração, a ferramenta Transferência de conteúdo é executada em uma instância de origem do AEM ativa.
 

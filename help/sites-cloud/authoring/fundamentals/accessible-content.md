@@ -2,9 +2,9 @@
 title: Criar conteúdo acessível para o Adobe Experience Manager as a Cloud Service (Conformidade com WCAG 2.1)
 description: Usar o AEM as a Cloud Service para ajuda a tornar o conteúdo da Web acessível e utilizável por pessoas com deficiência
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: 3c8035e4db5729f58bae29136a32a0b9944d6a2f
+source-git-commit: eadcf71aa96298383b05e61251dfeb5f345df6b9
 workflow-type: tm+mt
-source-wordcount: '13853'
+source-wordcount: '13870'
 ht-degree: 73%
 
 ---
@@ -101,7 +101,7 @@ Tipos específicos de conteúdo não textual que necessitam de alternativas em t
 São pequenos pictogramas (gráficos) que transmitem informações específicas. Eles devem ser usados de forma consistente em uma página e um site. Todas as instâncias do ícone em uma página ou um site devem ter a mesma alternativa em texto curta e sucinta, a menos que isso resulte em duplicação desnecessária do texto adjacente.
 * Tabelas e gráficos: geralmente representam dados numéricos. Portanto, uma opção para fornecer uma alternativa em texto pode ser incluir um breve resumo das principais tendências mostradas no gráfico. Se necessário, forneça também uma descrição mais detalhada no texto usando o **Descrição** no campo **Avançado** guia de propriedades da imagem. Além disso, você pode fornecer os dados de origem em forma de tabela em outro lugar na página ou no site.
 * Mapas, diagramas, fluxogramas: para gráficos que fornecem dados espaciais (por exemplo, para suportar a descrição das relações entre objetos ou um processo), verifique se a mensagem principal é fornecida em formato de texto e se essa informação sobre o texto está posicionada perto de cada ponto de dados associado. Para mapas, fornecer um equivalente de texto completo provavelmente não será prático, mas se o mapa for fornecido como uma maneira de ajudar as pessoas a encontrar o caminho para um determinado local, o texto alternativo da imagem do mapa poderá indicar brevemente a informação *Mapa de X* e, em seguida, fornecer instruções para acessar esse local no texto de outro lugar da página ou por meio do campo **Descrição** na guia **Avançado** do componente **Imagem**.
-* CAPTCHAs: Um CAPTCHA é um *Teste de Turing público completamente automatizado para diferenciação entre computadores e humanos*. É uma verificação de segurança usada em páginas da Web para distinguir os humanos de softwares mal-intencionados, mas que pode causar barreiras de acessibilidade. São imagens que exigem que os usuários descrevam o que veem para serem aprovadas em um teste de segurança. Não é possível fornecer uma alternativa em texto para a imagem. Portanto, você deve considerar soluções alternativas não gráficas. O W3C fornece várias sugestões. Cada uma dessas abordagens tem suas próprias vantagens e desvantagens.
+* CAPTCHA: Um CAPTCHA é um *Teste de Turing público completamente automatizado para diferenciação entre computadores e humanos*. É uma verificação de segurança usada em páginas da Web para diferenciar os humanos de um software mal-intencionado, mas que pode causar barreiras de acessibilidade. São imagens que exigem que os usuários descrevam o que visualizam, a fim de passar por um teste de segurança. Não é possível fornecer uma alternativa em texto para a imagem. Portanto, você deve considerar soluções alternativas não gráficas. O W3C fornece várias sugestões. Cada uma dessas abordagens tem suas próprias vantagens e desvantagens.
 
    * Enigmas de lógica
    * O uso da saída de som, em vez de imagens
@@ -116,7 +116,7 @@ Deve haver um nível adequado de contraste entre o plano de fundo e o texto de p
 
 * [Noções sobre o Critério de sucesso 1.1.1](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html)
 * [Como cumprir o Critério de sucesso 1.1.1](https://www.w3.org/WAI/WCAG21/quickref/#non-text-content)
-* [Explicação do W3C sobre as alternativas para CAPTCHAs](https://www.w3.org/TR/turingtest/)
+* [Explicação do W3C sobre as alternativas para CAPTCHA](https://www.w3.org/TR/turingtest/)
 
 <!--
 * [W3C: HTML5 Techniques for providing useful text alternatives (draft)](https://dev.w3.org/html5/alt-techniques/)
@@ -198,9 +198,9 @@ Se você precisar usar as legendas abertas, insira o texto na faixa de vídeo. E
 * [Noções sobre o Critério de sucesso 1.2.2](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html)
 * [Como cumprir o Critério de sucesso 1.2.2](https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded)
 
-<!--
-* [W3C: Synchronized Multimedia](https://www.w3.org/AudioVideo/)
-* [Captions, Transcripts, and Audio Descriptions - by WebAIM](https://webaim.org/techniques/captions/)
+c
+* [W3C: Multimídia sincronizada](https://www.w3.org/AudioVideo/)
+* [Legendas, transcrições e descrições de áudio - pelo WebAIM](https://webaim.org/techniques/captions/)
 -->
 
 ### Descrição de áudio ou alternativa de mídia (pré-gravada) (1.2.3) {#audio-description-or-media-alternative-prerecorded}
@@ -539,13 +539,13 @@ Lembre-se de que as fontes podem diferir na forma como renderizam o tamanho equi
 Use bom senso e confira no lado da legibilidade e da usabilidade ao selecionar fontes e dimensionamento apropriados para o conteúdo da Web.
 
 >[!NOTE]
-As seguintes ferramentas podem ajudar você a converter para outras unidades:
-* [Calculadora de pixel para EM](https://www.omnicalculator.com/conversion/px-to-em)
-* [Font size conversion: pixel-point-em-rem-percent](https://www.websemantics.uk/tools/)
-* [Conversor de pixel para EM](https://www.w3schools.com/tags/ref_pxtoemconversion.asp)
+Execute uma pesquisa na Web nas seguintes frases para encontrar ferramentas que possam ajudá-lo a converter em outras unidades:
+* Calculadora de pixel para EM <!--  (https://www.omnicalculator.com/conversion/px-to-em) -->
+* Font size conversion: pixel-point-em-rem-percent <!-- CAUSES 404 ERROR DESPITE URL BEING CORRECT https://www.websemantics.uk/tools/ -->
+* Conversor de pixel para EM <!-- (https://www.w3schools.com/tags/ref_pxtoemconversion.asp) -->
 
 
-Para verificar as relações de contraste, use uma ferramenta de contraste em cores, como o [Paciello Group Color Contrast Analyser](https://www.tpgi.com/resources/contrast-analyser.html) ou o [verificador de contraste em cores do WebAIM](https://webaim.org/resources/contrastchecker/). Essas ferramentas permitem que você verifique os pares de cores e informe quaisquer problemas de contraste.
+Para verificar as taxas de contraste, use uma ferramenta de contraste de cores, como o [Analisador de Contraste de Cores do Grupo Paciello](https://www.tpgi.com/resources/contrast-analyser.html) ou o [Verificador de contraste de cores do WebAIM](https://webaim.org/resources/contrastchecker/). Essas ferramentas permitem que você verifique os pares de cores e informe quaisquer problemas de contraste.
 
 De forma alternativa, se você estiver menos preocupado sobre como especificar a aparência de sua página, é possível optar por não especificar as cores do texto de plano de fundo e de primeiro plano. Nenhuma verificação de contraste é necessária, pois o navegador do usuário determina as cores do texto e do plano de fundo.
 
@@ -810,7 +810,7 @@ Siga as orientações em [Como cumprir o Critério de sucesso 2.4.3](https://www
 
 #### Finalidade - Finalidade do link (Em contexto) (2.4.4)       {#purpose-link-purpose-in-context}
 
-Para todos os usuários, independentemente da incapacidade cognitiva, indicar claramente a direção de um link por meio de um texto de link adequado é fundamental. Isso ajuda os usuários a decidir se realmente desejam seguir um link. Para usuários com visão, o texto de link significativo é útil quando há vários links em uma página (principalmente se a página tiver muitos textos), já que o texto de link significativo fornece uma indicação mais clara da funcionalidade da página de destino. Os usuários de algumas tecnologias de assistência, que podem gerar uma lista de todos os links em uma única página, poderão entender mais facilmente o texto do link fora do contexto se o texto do link for exclusivo e informativo. No entanto, indivíduos com deficiências cognitivas poderão se confundir se um link não fornecer informações suficientes para descrever com precisão onde o link os leva.
+Para todos os usuários, independentemente da incapacidade cognitiva, indicar claramente a direção de um link por meio de um texto de link adequado é fundamental. Isso ajuda os usuários a decidir se realmente desejam seguir um link. Para usuários com visão, o texto de link significativo é útil quando há vários links em uma página (principalmente se a página tiver muito texto), já que o texto de link significativo fornece uma indicação mais clara da funcionalidade da página de destino. Os usuários de algumas tecnologias de assistência, que podem gerar uma lista de todos os links em uma única página, poderão entender mais facilmente o texto do link fora do contexto se o texto do link for exclusivo e informativo. No entanto, indivíduos com deficiências cognitivas poderão se confundir se um link não fornecer informações suficientes para descrever com precisão onde o link os leva.
 
 #### Como cumprir - Finalidade do link (Em contexto) (2.4.4)       {#how-to-meet-link-purpose-in-context}
 
@@ -847,7 +847,7 @@ John Smith's publications
 >[!NOTE]
 O snippet acima é uma ilustração; recomenda-se usar o componente **Imagem**.
 
-Embora seja aconselhável fornecer um texto de link que identifique a finalidade do link sem a necessidade de contexto adicional, reconhece-se que isto nem sempre é possível. Links sem contexto podem ser usados nos casos a seguir, exemplos de HTML podem ser encontrados em [Como cumprir o Critério de sucesso 2.4.4](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context).
+Embora seja recomendável fornecer um texto de link que identifique a finalidade do link sem a necessidade de contexto adicional, reconhece-se que isto nem sempre é possível. Links sem contexto podem ser usados nos casos a seguir, exemplos de HTML podem ser encontrados em [Como cumprir o Critério de sucesso 2.4.4](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context).
 
 * Sempre que o texto do link fizer parte de uma lista de links estritamente relacionados e quando um item de lista que delimita o link fornecer contexto suficiente.
 * Sempre que a finalidade de um link puder ser claramente identificada no texto do parágrafo *anterior* (não o seguinte).
