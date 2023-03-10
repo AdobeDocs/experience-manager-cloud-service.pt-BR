@@ -2,10 +2,10 @@
 title: Visão geral da ferramenta Transferência de conteúdo
 description: Visão geral da ferramenta Transferência de conteúdo
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: 5a4592531377109fba88b5cdc9df027803feca7a
+source-git-commit: ac35bbe5ad78e07cc5292e089f3d71c6a8ed6ccc
 workflow-type: tm+mt
-source-wordcount: '581'
-ht-degree: 47%
+source-wordcount: '708'
+ht-degree: 39%
 
 ---
 
@@ -63,6 +63,25 @@ A ferramenta Transferência de conteúdo tem um recurso que oferece suporte a at
 Na fase de extração, para ***complementar*** um conjunto de migração existente, a opção de *Substituir* deve estar desativada. Consulte [Extração complementar](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process) para obter mais detalhes.
 
 Na fase de assimilação, para aplicar o conteúdo delta sobre o conteúdo atual, a opção de *limpeza* deve estar desativada. Consulte [Assimilação complementar](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) para obter mais detalhes.
+
+## Expiração do conjunto de migração {#migration-set-expiry}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_migrationset_expiry"
+>title="Expiração de um conjunto de migração"
+>abstract="Saiba mais sobre a expiração de um conjunto de migração."
+
+Todos os conjuntos de migração expiram após um período prolongado de inatividade de aproximadamente 90 dias. Depois que os indicadores forem exibidos no cartão do projeto e nas linhas da tabela de trabalhos de migração por um período, o conjunto de migração expirará e seus dados não estarão mais disponíveis. O tempo de expiração pode ser facilmente estendido atuando sobre a migração definida por:
+
+* editar sua descrição
+* obtendo a chave de extração
+* executar uma extração para ele
+* executar uma assimilação a partir dele
+
+A expiração de um conjunto de migração pode ser monitorada na linha Conjunto de migração. Um indicador visual útil de que um conjunto de migração está se aproximando da data de expiração também adicionou o cartão do projeto.
+
+![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam29.png)
+
 
 ## O que vem a seguir {#whats-next}
 

@@ -2,9 +2,9 @@
 title: Extrair conteúdo da origem
 description: Extrair conteúdo da origem
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: 5a4592531377109fba88b5cdc9df027803feca7a
+source-git-commit: 614b2d9e0b3c34bdef854115dce91effed0b36f8
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '663'
 ht-degree: 24%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 24%
 Siga as etapas abaixo para extrair seu conjunto de migração da ferramenta Transferência de conteúdo:
 
 >[!NOTE]
->Se o Amazon S3, Azure Data Store ou File Data Store for usado como o tipo de armazenamento de dados, você poderá executar a etapa opcional de pré-cópia para acelerar significativamente a fase de extração. A etapa de pré-cópia é mais eficaz para a primeira extração e assimilação completas. Para fazer isso, será necessário configurar um `azcopy.config` arquivo antes de executar a extração. Consulte [Lidar com grandes repositórios de conteúdo](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) para obter mais detalhes.
+>Se o Amazon S3, Azure Data Store ou File Data Store for usado como o tipo de armazenamento de dados, você poderá executar a etapa opcional de pré-cópia para acelerar significativamente a fase de extração. A etapa de pré-cópia é mais eficaz para a primeira extração e assimilação completas. Consulte [Lidar com grandes repositórios de conteúdo](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) para obter mais detalhes.
 
 1. Selecione um conjunto de migração em **Transferência de conteúdo** e clique em **Extract** para iniciar a extração.
 

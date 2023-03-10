@@ -2,9 +2,9 @@
 title: Diretrizes e práticas recomendadas para usar a ferramenta Transferência de conteúdo
 description: Diretrizes e práticas recomendadas para usar a ferramenta Transferência de conteúdo
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: b36756395cc516ab4e4725f718ed6de77d9872f8
+source-git-commit: 2c53d1cce6b1e889a0e49254621d02bd152bfbbf
 workflow-type: tm+mt
-source-wordcount: '1538'
+source-wordcount: '1554'
 ht-degree: 19%
 
 ---
@@ -30,7 +30,7 @@ Uma nova versão da ferramenta Transferência de conteúdo está disponível e i
 * Experiência do usuário aprimorada por meio de melhores estados de carregamento, medidas de proteção e tratamento de erros
 * Os registros de assimilação são mantidos e estão sempre disponíveis para solução de problemas
 
-Para começar a usar a nova versão, será necessário desinstalar as versões mais antigas da ferramenta Transferência de conteúdo. Isso é necessário porque a nova versão vem com uma grande mudança arquitetônica. Com a v2.0.10, será necessário criar novos conjuntos de migração e executar novamente a extração e a assimilação nos novos conjuntos de migração. Se uma migração já estiver em andamento, você poderá continuar usando a versão anterior da CTT até que a migração seja concluída.
+Para começar a usar a nova versão, será necessário desinstalar as versões mais antigas da ferramenta Transferência de conteúdo. Isso é necessário porque a nova versão vem com uma grande mudança arquitetônica. Com a versão 2.x, será necessário criar novos conjuntos de migração e executar novamente a extração e a assimilação nos novos conjuntos de migração.
 As versões anteriores à 2.0.0 não serão mais suportadas, e é aconselhável usar a versão mais recente.
 
 As diretrizes e práticas recomendadas a seguir se aplicam à nova versão da ferramenta Transferência de conteúdo:
@@ -87,11 +87,13 @@ Siga a seção abaixo para entender as considerações importantes ao executar a
 
 * Ao usar `Amazon S3` ou `Azure` como o armazenamento de dados no sistema AEM de origem, o armazenamento de dados deve ser configurado para que os blobs armazenados não possam ser excluídos (coleta de lixo). Isso garante a integridade dos dados do índice, e a falha na configuração dessa maneira pode resultar em extrações com falha devido à falta de integridade desses dados de índice.
 
-* Se estiver usando índices personalizados, certifique-se de configurar os índices personalizados com `tika` antes de executar a ferramenta Transferência de conteúdo. Consulte [Preparação da nova definição de índice](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#preparing-the-new-index-definition) para obter mais detalhes.
+* Se estiver usando índices personalizados, certifique-se de configurar os índices personalizados com `tika` antes de executar a ferramenta Transferência de conteúdo. Consulte [Preparação da nova definição de índice](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=pt-BR#preparing-the-new-index-definition) para obter mais detalhes.
 
 * Se você pretende fazer atualizações complementares, é essencial que a estrutura de conteúdo do conteúdo existente não seja alterada do momento em que a extração inicial é realizada até o momento em que a extração complementar é executada. Os complementos não podem ser executados em um conteúdo cuja estrutura foi alterada desde a extração inicial. Restrinja isso durante o processo de migração.
 
 * Se você pretende incluir versões como parte de um conjunto de migração e estiver executando atualizações com `wipe=false`, é necessário desativar a limpeza de versão devido a uma limitação atual na Ferramenta de transferência de conteúdo. Se preferir manter a limpeza de versão ativada e estiver executando atualizações complementares em um conjunto de migração, você deverá executar a assimilação como `wipe=true`.
+
+* Um conjunto de migração expirará após um período prolongado de inatividade, após o qual seus dados não estarão mais disponíveis. Revise [Expiração do conjunto de migração](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html#migration-set-expiry) para obter mais detalhes.
 
 ## O que vem a seguir {#whats-next}
 
