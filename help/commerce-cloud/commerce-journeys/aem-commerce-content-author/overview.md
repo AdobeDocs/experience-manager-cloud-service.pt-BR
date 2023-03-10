@@ -1,26 +1,26 @@
 ---
-title: jornada do autor de conteúdo de comércio AEM
-description: Comece aqui para obter uma jornada guiada por meio da Criação de comércio AEM
+title: Jornada de autor de conteúdo do AEM Commerce
+description: Comece aqui uma jornada guiada pela criação do AEM Commerce
 exl-id: 155a2534-746d-4237-b7e2-9212c36fac7f
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '458'
-ht-degree: 35%
+ht-degree: 100%
 
 ---
 
 # Jornada de autor de conteúdo do AEM Content and Commerce {#aem-commerce-author-journey}
 
-Comece aqui para obter uma jornada guiada por meio de Conteúdo e Comércio AEM para saber como gerenciar as experiências do produto.
+Comece aqui uma jornada guiada por meio do AEM Content and Commerce para saber como gerenciar as experiências do produto.
 
 ## Introdução {#introduction}
 
-Este guia aborda os tópicos mais importantes de criação de Conteúdo AEM e Comércio para que, na conclusão, você:
+Este guia aborda os tópicos mais importantes de criação do AEM Content and Commerce para que, ao concluir, você:
 
-* Saiba mais sobre as noções básicas de Conteúdo e comércio do AEM
-* Introdução AEM conceitos básicos de criação da CIF
-* Criar experiências de catálogo de produtos com modelos e conteúdo individuais
-* Gerenciar experiências de catálogo de produtos preparados
+* Saiba mais sobre as noções básicas do AEM Content and Commerce
+* Conheça os conceitos básicos da CIF do AEM
+* Crie experiências de catálogo de produtos com modelos e conteúdo individuais
+* Gerencie experiências de catálogo de produtos em estágios
 * Enriqueça os dados do produto com conteúdo usando as Ferramentas de gerenciamento de experiência do produto
 
 ## Jornadas de documentação do AEM {#documentation-journeys}
@@ -33,25 +33,25 @@ Se quiser saber como a Adobe recomenda resolver casos de negócios de sites com 
 
 ## Público {#audience}
 
-Essa jornada foi projetada para o autor de conteúdo do Commerce do AEM. Esta jornada apresenta os requisitos, as etapas e a abordagem para começar e gerenciar páginas de catálogo, modelos e experiências completas do produto.
+Esta jornada foi projetada para o autor de conteúdo do AEM Commerce. Esta jornada apresenta os requisitos, as etapas e a abordagem para começar e gerenciar páginas de catálogo, modelos e experiências completas do produto.
 
-As informações nesta jornada podem, é claro, ser úteis para outras pessoas, mas algumas informações serão supérfluas para certas funções. Fique atento para jornadas futuras que abordarão funções adicionais.
+As informações nesta jornada podem ser úteis para outros perfis, mas algumas informações são desnecessárias para determinadas funções. Fique atento para jornadas futuras que abordarão funções adicionais.
 
-## A Jornada {#the-journey}
+## A jornada {#the-journey}
 
-Muitos tópicos serão explorados nesta jornada. Os artigos a seguir fornecem conhecimento fundamental e vinculam a documentação técnica detalhada.
+Muitos tópicos serão explorados nesta jornada. Os artigos a seguir fornecem conhecimento básico e links para documentação técnica detalhada.
 
-Embora seja possível ir diretamente para uma parte específica da jornada, muitos conceitos baseiam-se em artigos anteriores. Portanto, se você é novo em AEM de Conteúdo e Comércio, recomendamos que você comece no início e avance sequencialmente.
+Embora seja possível ir diretamente para uma parte específica da jornada, muitos conceitos baseiam-se em artigos anteriores. Portanto, se você é novo no AEM Content and Commerce, recomendamos que comece do início e avance sequencialmente.
 
 | # | Artigo | Descrição |
 |---|---|---|
-| 0 | AEM Content and Commerce Developer Jornada | Este documento |
-| 1 | [Saiba mais sobre conteúdo e comércio AEM](/help/commerce-cloud/introduction.md) | Saiba mais sobre conceitos e noções básicas sobre Conteúdo e comércio AEM. |
-| 2 | [Introdução às AEM noções básicas de criação da CIF](getting-started.md) | Saiba como acessar e usar dados do produto para casos de uso de criação. |
+| 0 | Jornada de desenvolvedor do AEM Content and Commerce | Este documento |
+| 1 | [Saiba mais sobre o AEM Content and Commerce](/help/commerce-cloud/introduction.md) | Conheça os conceitos e as noções básicas do AEM Content and Commerce. |
+| 2 | [Introdução às noções básicas de criação da CIF do AEM](getting-started.md) | Saiba como acessar e usar dados do produto para casos de uso de criação. |
 | 3 | [Gerenciar páginas e modelo do catálogo de produtos](catalog-templates.md) | Saiba como criar uma experiência típica de catálogo de produtos. |
-| 4 | [Gerenciar experiências de catálogo de produtos preparados](staged-catalog.md) | Saiba como criar uma experiência futura de catálogo de produtos com dados preparados e AEM inicializações. |
-| 5 | [Criação de experiências de produto](product-experience-management.md) | Saiba como aumentar os dados do produto com conteúdo imersivo em AEM. |
+| 4 | [Gerenciar experiências de catálogo de produtos em etapas](staged-catalog.md) | Saiba como criar uma experiência futura de catálogo de produtos com dados preparados e inicializações do AEM. |
+| 5 | [Criação de experiências de produto](product-experience-management.md) | Saiba como aumentar os dados do produto com conteúdo imersivo no AEM. |
 
 ## O que vem a seguir {#what-is-next}
 
-Agora você está pronto para começar a usar a jornada de desenvolvimento de conteúdo e comércio do AEM. Recomendamos que você continue para a próxima parte da jornada e leia o artigo [Saiba mais sobre conteúdo e comércio AEM](/help/commerce-cloud/introduction.md).
+Agora você está pronto para começar a jornada de desenvolvimento do AEM Content and Commerce. Recomendamos que você siga para a próxima parte da jornada e leia o artigo [Conheça o AEM Content and Commerce](/help/commerce-cloud/introduction.md).
