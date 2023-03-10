@@ -3,10 +3,10 @@ title: Notas de versão das Ferramentas de migração no AEM as a Cloud Service 
 description: Notas de versão das Ferramentas de migração no AEM as a Cloud Service versão 2022.03.0
 feature: Release Information
 exl-id: 2f787321-f156-480d-bbe8-1a6d04f110c5
-source-git-commit: 5815dacd2806cc7886aa0c7c5c9fd329306b3e1b
+source-git-commit: b2681113f5565e4f63c76abeaf46d5f4b1a8a8ea
 workflow-type: tm+mt
-source-wordcount: '150'
-ht-degree: 15%
+source-wordcount: '320'
+ht-degree: 10%
 
 ---
 
@@ -28,3 +28,19 @@ A data de lançamento do Analisador de práticas recomendadas v2.1.40 é 03 de m
 ### Correções de erros {#bug-fixes-bpa}
 
 * O BPA relatava falsos positivos no `grouprendercondition`. Isso foi corrigido.
+
+## Ferramenta Transferência de conteúdo {#ctt-release}
+
+### Data de lançamento {#release-date-ctt}
+
+A data de lançamento da ferramenta de transferência de conteúdo v2.0.16 é 8 de março de 2022.
+
+### Novidades {#what-is-new-ctt}
+
+* O mapeamento de usuários foi simplificado e integrado à etapa de extração de conteúdo. Nenhuma configuração é necessária e, por padrão, o mapeamento de usuários será feito automaticamente quando o usuário iniciar a extração de conteúdo. O usuário tem a opção de desativar o mapeamento de usuários, se necessário. Saiba mais [aqui.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/user-mapping-and-migration.html?lang=en#user-mapping-detail)
+* A etapa de pré-cópia usando [AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) O foi integrado à ferramenta Transferência de conteúdo para acelerar significativamente as extrações de conteúdo. A pré-cópia é configurada e instalada automaticamente quando essa versão da CTT é instalada. Por padrão, quando a extração é iniciada, a pré-cópia é executada automaticamente para conjuntos de migração maiores que 200 GB. O usuário tem a opção de desativá-la, se necessário. Saiba mais [aqui.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en)
+* A CTT agora pode ser usada em servidores Windows.
+
+### Correções de erros {#bug-fixes-ctt}
+
+* Várias correções de erros para melhorar a resiliência da extração de conteúdo.
