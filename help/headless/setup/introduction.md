@@ -3,7 +3,7 @@ title: Configuração do headless
 description: Com este guia rápido de introdução, saiba mais sobre os recursos headless avançados do AEM as a Cloud Service, como os modelos de conteúdo, fragmentos de conteúdo e a API GraphQL.
 exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
 source-git-commit: d35b60810a1624390d3d9c82c2a364140ea37536
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '287'
 ht-degree: 100%
 
