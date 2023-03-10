@@ -2,7 +2,7 @@
 title: Personalização e direcionamento de conteúdo
 description: Saiba como criar conteúdo personalizado e direcionado com o AEM
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
-source-git-commit: f2466cb5cda759f0c97cd69810d208d47fb73b98
+source-git-commit: 566cd449c536de4179e32c94df90b46d61e0103a
 workflow-type: ht
 source-wordcount: '1056'
 ht-degree: 100%
@@ -16,7 +16,7 @@ A personalização do conteúdo da Web que você fornece aos clientes significa 
 
 Com o Adobe Experience Manager as a Cloud Service (AEM), é possível criar uma seleção de conteúdo e especificar quais públicos (grupos de usuários finais) verão cada experiência individual. Isso significa que você está direcionando suas experiências personalizadas para públicos específicos.
 
-Quando seu leitor estiver online, seu mecanismo de direcionamento verificará as informações disponíveis sobre o usuário final e as comparará com as definições da experiência. Em seguida, o mecanismo *&quot;decide&quot;* qual experiência personalizada deve ser exibida.
+Quando seu leitor estiver online, seu mecanismo de direcionamento verificará as informações disponíveis sobre o usuário final e as comparará com as definições da experiência. Em seguida, o mecanismo *“decide”* qual experiência personalizada deve ser exibida.
 
 O AEM fornece uma estrutura de ferramentas para:
 
