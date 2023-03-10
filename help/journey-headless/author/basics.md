@@ -1,11 +1,11 @@
 ---
-title: Noções básicas sobre criação de aprendizado
-description: Saiba mais sobre os conceitos e os mecanismos de criação de conteúdo para seu CMS sem cabeçalho usando Fragmentos de conteúdo.
+title: Saiba mais sobre as noções básicas de criação
+description: Saiba mais sobre os conceitos e os mecanismos de criação de conteúdo para seu CMS headless usando Fragmentos de conteúdo.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
 source-git-commit: 60ddcb3f2fd2219b0b1672791703582920825e81
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1668'
-ht-degree: 11%
+ht-degree: 100%
 
 ---
 
@@ -13,31 +13,31 @@ ht-degree: 11%
 
 ## A história até agora {#story-so-far}
 
-No início do [jornada do autor de conteúdo sem cabeçalho do AEM](overview.md) o [Introdução](introduction.md) O aborda os conceitos básicos e a terminologia relevantes para a criação para periféricos.
+No início da [Jornada do autor de conteúdo headless do AEM](overview.md), a [Introdução](introduction.md) abordou os conceitos básicos e a terminologia relevante para a criação de conteúdo headless.
 
-Este artigo é baseado neles para que você entenda como criar seu próprio conteúdo para seu projeto sem periféricos de AEM.
+Este artigo se baseia nessas noções para que você entenda como criar seu próprio conteúdo para o seu projeto headless do AEM.
 
 ## Objetivo {#objective}
 
-* **Público**: Iniciante
-* **Objetivo**: Apresente as noções básicas da criação de CMS sem cabeçalho:
+* **Público-alvo**: iniciante
+* **Objetivo**: apresentar as noções básicas da criação de CMS headless:
    * Introdução à criação com o AEMaaCS
-   * Introdução aos fragmentos de conteúdo
+   * Introdução aos Fragmentos de conteúdo
 
 ## Manuseio básico {#basic-handling}
 
-Antes de lidar com Fragmentos de conteúdo, veja uma (muito) rápida introdução ao uso de AEM....mas nada substitui a experiência de entrar e tentar usar o sistema.
+Antes de lidar com os Fragmentos de conteúdo, veja uma introdução (muito) rápida ao uso do AEM....mas nada substitui a experiência de entrar e tentar usar o sistema.
 
-### Autor e publicação {#author-preview-publish}
+### Criação e publicação {#author-preview-publish}
 
 Uma instalação do AEM geralmente consiste em pelo menos dois ambientes:
 
 * Autor
 * Publicação
 
-Você faz logon e usa o ambiente de criação para gerar seu conteúdo. Quando estiver pronto, publique seu conteúdo para que ele fique disponível. Para ser impotente, isso seria para outros aplicativos, para páginas da Web isso seria para os leitores na Web.
+Você faz logon e usa o ambiente de criação para gerar o seu conteúdo. Quando estiver pronto, publique seu conteúdo para que ele fique disponível. Para headless, isso seria para outros aplicativos, para páginas da Web, isso seria para os leitores na Web.
 
-Para obter mais detalhes, consulte os Conceitos de criação .
+Para obter mais detalhes, consulte os Conceitos de criação.
 
 ### Fazer logon {#signing-in}
 
@@ -47,15 +47,15 @@ Assim como na maioria dos sistemas, você precisará fazer logon. Como autor, vo
 * Senha
 * Link para acessar a tela de logon
 
-Sua conta terá sido configurada com os privilégios necessários. Em caso de problemas, recomendamos que você entre em contato com a equipe interna de suporte a projetos.
+Sua conta já terá sido configurada com os privilégios necessários. Em caso de problemas, recomendamos que você entre em contato com a equipe interna de suporte a projetos.
 
 ### Navegação {#navigation}
 
-A primeira vez que você efetuar o logon em um pequeno tutorial online destacará alguns dos principais recursos da interface do usuário do .
+A primeira vez que você efetuar o logon, um pequeno tutorial online destacará alguns dos principais recursos da interface.
 
-Em seguida, você pode usar o Painel de navegação para acessar áreas-chave de AEM. Para Fragmentos de conteúdo, você usará a variável **Fragmentos de conteúdo** (para algumas ações, você também usará o **Ativos** ).
+Em seguida, você pode usar o Painel de navegação para acessar as áreas-chave do AEM. Para Fragmentos de conteúdo, você usará o console de **Fragmentos de conteúdo** (para algumas ações, você também usará o console **Ativos**).
 
-O Painel de navegação pode ser aberto selecionando o ícone de Adobe na parte superior esquerda, seguido pelo ícone de pequena bússola.
+O Painel de navegação pode ser aberto selecionando o ícone da Adobe na parte superior esquerda, seguido pelo ícone de uma pequena bússola.
 
 <!--
 The Navigation Panel can be opened by selecting Adobe icon at the top left, followed by the small compass icon:
@@ -64,11 +64,11 @@ The Navigation Panel can be opened by selecting Adobe icon at the top left, foll
 -->
 
 >[!NOTE]
->Embora os Fragmentos de conteúdo sejam um recurso de AEM **Sites**, são salvas como **Ativos**. Este é um detalhe técnico que não deve afetá-lo, mas que pode ser útil saber.
+>Embora os Fragmentos de conteúdo sejam um recurso do AEM **Sites**, eles são salvos como **Ativos**. Este é um detalhe técnico que não deve afetar você, mas que pode ser útil.
 
-No console, é possível selecionar pastas no painel esquerdo para navegar até o Fragmento de conteúdo. Também é possível filtrar e/ou pesquisar.
+No console, é possível selecionar pastas no painel esquerdo para navegar até o seu Fragmento de conteúdo. Também é possível filtrar e/ou pesquisar.
 
-![Console Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/assets/cfc-console-filter.png)
+![Console de Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/assets/cfc-console-filter.png)
 
 ### Ações, Seleção, Exibição {#actions-selecting-viewing}
 
@@ -118,62 +118,62 @@ You can view additional information about items using the Rail Selector. This al
 
 ## Criação de fragmentos de conteúdo {#authoring-content-fragments}
 
-Então, essa foi uma introdução muito rápida à interface do usuário do AEM, mas espero que você tenha tido a chance de experimentá-la. Agora, mostramos seu interesse real - Fragmentos de conteúdo para headless.
+Então, essa foi uma introdução bem rápida à interface do AEM, mas espero que você tenha tido uma chance de experimentá-la. Agora, chegamos ao seu verdadeiro interesse: Fragmentos de conteúdo para headless.
 
 Teremos que passar pelas coisas do início ao fim, mas sua instância já pode ter pastas e/ou fragmentos criados, e eles podem estar em locais diferentes. Os princípios são os mesmos.
 
 ### Organização e navegação {#organizing-and-navigating}
 
-A menos que tenha pouquíssimos Fragmentos de conteúdo, você desejará organizá-los - para que você (e outros) os encontre novamente.
+A menos que tenha pouquíssimos Fragmentos de conteúdo, você vai querer organizá-los - para que você (e outros) possam encontrá-los novamente.
 
-#### Criação de uma pasta {#creating-folder}
+#### Criação de pastas {#creating-folder}
 
-Você pode fazer isso criando uma série de pastas no **Arquivos** da seção **Ativos** console. Selecione o **Criar** (canto superior direito), seguido por **Pasta**:
+Você pode fazer isso criando uma série de pastas na seção **Arquivos** do console **Ativos**. Selecione a opção **Criar** (parte superior direita), seguido por **Pasta**:
 
 ![Opção Criar pasta](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
-Uma caixa de diálogo será aberta onde você pode inserir os detalhes e, em seguida, confirmar com **Criar**:
+Uma caixa de diálogo será aberta em que você pode inserir os detalhes e, em seguida, confirmar clicando em **Criar**:
 
 ![Caixa de diálogo Criar pasta](/help/journey-headless/author/assets/headless-journey-author-folder-02.png)
 
-#### Uso de caminhos e tags para limitar os modelos de fragmentos de conteúdo disponíveis na pasta {#tags-paths-for-models-in-folder}
+#### Uso de caminhos e tags para limitar os Modelos de fragmentos de conteúdo disponíveis na pasta {#tags-paths-for-models-in-folder}
 
-Esta seção está um pouco mais avançada. Você realmente não precisa disso se você está apenas começando e tentando coisas, mas é *very* útil quando você tem muitos fragmentos. Por isso é bom saber - mesmo que ainda não o utilize.
+Esta seção é um pouco mais avançada. Você realmente não precisa dela se você está começando e apenas testando as coisas, mas é *muito* útil quando você tem muitos fragmentos. Por isso é bom saber - mesmo que ainda não o utilize.
 
-Seu Arquiteto de conteúdo terá criado todos os Modelos de fragmento de conteúdo necessários para seu projeto atual e talvez alguns outros projetos também. Para ajudar a simplificar as coisas para si mesmo e para outros autores, você pode limitar a lista de modelos disponíveis para uma pasta específica.
+Seu Arquiteto de conteúdo terá criado todos os Modelos de fragmentos de conteúdo necessários para seu projeto atual e talvez alguns outros projetos também. Para ajudar a simplificar as coisas para você mesmo e para outros autores, você pode limitar a lista de modelos disponíveis para uma pasta específica.
 
-Depois de criar a pasta, você pode abri-la **Propriedades**. Aqui estão várias guias com informações e detalhes de configuração sobre a pasta. Especificamente para Fragmentos de conteúdo, você pode usar o **Políticas** para definir caminhos e/ou tags específicas para essa pasta. Isso limita os Modelos de fragmento de conteúdo disponíveis para uso na pasta, pois significa que os Modelos de fragmento de conteúdo devem atender a esses requisitos antes que possam ser usados para gerar fragmentos nessa pasta.
+Depois de criar a pasta, você pode abrir suas **Propriedades**. Aqui estão várias guias com informações e detalhes de configuração sobre a pasta. Especificamente para Fragmentos de conteúdo, você pode usar a guia **Políticas** para definir caminhos e/ou tags específicas para a pasta. Isso limita os Modelos de fragmentos do conteúdo disponíveis para uso na pasta, pois significa que eles devem atender a esses critérios antes que possam ser usados para gerar fragmentos nessa pasta.
 
 ![Criar propriedades de pasta - Políticas](/help/journey-headless/author/assets/headless-journey-author-folder-04.png)
 
 >[!NOTE]
 >
->Você pode ler mais detalhes em Modelos de fragmentos de conteúdo - Permitir modelos de fragmentos de conteúdo na pasta Ativos.
+>Você pode ler mais detalhes em Modelos de fragmentos do conteúdo - Permitir Modelos de fragmentos do conteúdo na pasta de ativos.
 
 Em seguida, navegue por essas pastas para criar e editar os Fragmentos de conteúdo.
 
-#### Por acaso - Configuração de Cloud Services de pasta {#cloud-services-folder}
+#### Por segurança - Configuração dos serviços de pasta na nuvem  {#cloud-services-folder}
 
-Só para o caso...
+Por segurança...
 
-Você provavelmente receberá uma pasta inicial onde poderá criar suas pastas. Isso ocorre porque alguns detalhes de configuração devem ser aplicados (geralmente por um Desenvolvedor ou Administrador do Sistema) à pasta raiz. Isso provavelmente não lhe interessará, mas se necessário, você poderá verificar a variável **Configuração** no **Cloud Services** da pasta **Propriedades**:
+Você provavelmente receberá uma pasta inicial em que poderá criar suas pastas. Isso ocorre porque alguns detalhes de configuração devem ser aplicados (geralmente por um Desenvolvedor ou Administrador do Sistema) à pasta raiz. Isso provavelmente não lhe interessará, mas, se necessário, você poderá verificar a **Configuração** nos **Serviços na nuvem** da pasta **Propriedades**:
 
 ![Criar propriedades de pasta - Configuração](/help/journey-headless/author/assets/headless-journey-author-folder-03.png)
 
 >[!NOTE]
 >
->Você pode ler mais em Aplicar a configuração à pasta Ativos .
+>Você pode ler mais em Aplicar a configuração à sua pasta de Ativos.
 
-### Criação de um fragmento de conteúdo {#creating-fragment}
+### Criação de um Fragmento de conteúdo {#creating-fragment}
 
-No **Fragmentos de conteúdo** console que você pode usar **Criar** para abrir o **Novo fragmento de conteúdo** caixa de diálogo:
+No console de **Fragmentos de conteúdo**, você pode usar **Criar** para abrir a caixa de diálogo **Novo fragmento de conteúdo**:
 
-![Console de fragmentos de conteúdo - Criar um novo fragmento](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
+![Console de Fragmentos de conteúdo - Criar um novo fragmento](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
 
 Especifique o:
 
 * **Local**
-* **Modelo do fragmento de conteúdo**
+* **Modelo de Fragmentos do conteúdo**
 * **Título**
 * **Nome**
 * **Descrição**
@@ -198,72 +198,72 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
 ### Edição de um fragmento {#editing-fragment}
 
-É possível abrir um fragmento imediatamente depois de criá-lo ou selecionando-o no console Fragmentos de conteúdo (também no console Ativos ).
+É possível abrir um fragmento imediatamente depois de criá-lo ou selecionando-o no console Fragmentos de conteúdo (também no console Ativos).
 
 Quando o editor for aberto pela primeira vez, você verá:
 
-* Uma lista de ícones no lado esquerdo - isso dá acesso a várias áreas de funcionalidade. O editor é aberto no **Variações** é aqui que ocorre a maioria das edições. Você também pode estar interessado no **Anotações** e **Metadados** guias.
+* Uma lista de ícones no lado esquerdo - isso lhe dá acesso a várias áreas de funcionalidade. O editor é aberto na guia **Variações**, em que ocorre a maioria das edições. Você também pode estar interessado nas guias **Anotações** e **Metadados**.
 
-* Um cabeçalho com informações sobre o fragmento e acesso a várias ações.
+* Um cabeçalho com as informações sobre o fragmento e acesso a várias ações.
 
-* A área de edição principal - depende do modelo usado para criar o fragmento.
+* A área de edição principal - isso depende do modelo usado para criar o fragmento.
 
 Como exemplos:
 
-* Um fragmento que requer apenas várias informações, algumas com um tipo específico. Para conteúdo sem cabeçalho, as referências são fundamentais, você aprenderá sobre isso mais tarde na sua jornada.
+* Um fragmento que apenas requer várias informações, algumas com um tipo específico. Para conteúdo headless, as referências são fundamentais. Você aprenderá sobre isso mais tarde na sua jornada.
 
    ![Editor de fragmento de conteúdo - Meu fragmento](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
 
 * Um fragmento que permite escrever uma longa seção de texto. Aqui há opções adicionais para gerenciar e formatar o texto. Você pode até mesmo abrir os campos de texto individuais em um editor de tela cheia (usando o ícone de tela pequena à direita)
 
-   ![Editor de fragmentos de conteúdo - Espirais do Alasca](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
+   ![Editor de Fragmentos de conteúdo - Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
 
 >[!NOTE]
 >
 >A documentação específica do projeto pode ser necessária para ajudar os autores com detalhes sobre como preencher alguns campos com êxito.
 >
->Consulte Modelos de fragmentos de conteúdo - Tipos de dados e propriedades para obter detalhes genéricos.
+>Consulte Modelos de fragmentos de conteúdo - Tipos de dados e propriedades para detalhes genéricos.
 
 Confirme suas atualizações com **Salvar** ou **Salvar e fechar**.
 
 >[!NOTE]
 >
->Para obter mais detalhes, leia Variações - Criação de fragmentos de conteúdo .
+>Para obter mais detalhes, leia Variações - Criação de Fragmentos de conteúdo.
 
-#### O que você (provavelmente) não precisa se preocupar {#what-you-probably-do-not-need-to-worry-about}
+#### Com o que você (provavelmente) não precisa se preocupar {#what-you-probably-do-not-need-to-worry-about}
 
-OK, essa seção pode parecer um pouco estranha, mas depois de abrir o Editor de fragmento de conteúdo e começar a explorar, você verá várias opções que (provavelmente) não se aplicam à sua jornada sem cabeçalho como um Autor de conteúdo. Então isto é apenas uma breve visualização do que você deve ser capaz de ignorar no contexto sem cabeça:
+Essa seção pode parecer um pouco estranha, mas após abrir o Editor de Fragmento de conteúdo e começar a explorar, você verá várias opções que (provavelmente) não se aplicam à sua jornada headless como um Autor de conteúdo. Então, isto é apenas um rápido aviso do que você deve ser capaz de ignorar no contexto headless:
 
-* **Modelos de fragmentos do conteúdo**
+* **Modelos de fragmentos de conteúdo**
 
-   Você verá o nome do Modelo do fragmento de conteúdo na parte superior do editor - diretamente sob o nome do fragmento. Este também é um link que leva você ao editor de modelo.
-Os Modelos de fragmentos de conteúdo são essenciais para os Fragmentos de conteúdo, pois definem a estrutura usada. No entanto, criá-los e editá-los é (geralmente) responsabilidade de outra pessoa, o Arquiteto de conteúdo.
+   Você verá o nome do Modelo do Fragmento de Conteúdo na parte superior do editor - diretamente sob o nome do fragmento. Este também é um link que leva você ao editor de modelo.
+Os Modelos de fragmentos de conteúdo são essenciais para os Fragmentos de conteúdo, pois definem a estrutura usada. No entanto, criá-los e editá-los é (geralmente) responsabilidade de outro perfil, o Arquiteto de conteúdo.
 
    >[!NOTE]
    >
-   >Se quiser saber mais, leia a Jornada do AEM Headless Content Architect.
+   >Se quiser saber mais, leia a Jornada do arquiteto de conteúdo do AEM Headless.
 
 * **Conteúdo associado**
 
    Esta é bastante óbvia, já que é uma guia no editor.
 
-   Fragmentos de conteúdo foram disponibilizados no AEM para várias versões. Originalmente, eles eram disponibilizados para uso &quot;tradicional&quot; durante a criação de páginas....e ainda são usados nesse contexto. Isso pode envolver a associação de ativos (por exemplo, imagens) que, embora não estejam incorporados ao fragmento, precisam estar disponíveis para o autor ao criar uma página.
+   Fragmentos de conteúdo foram disponibilizados no AEM há algumas versões. Originalmente, eles eram disponibilizados para uso “tradicional” durante a criação de páginas....e ainda são usados nesse contexto. Isso pode envolver a associação de ativos (por exemplo, imagens) que, embora não estejam incorporados ao fragmento, precisam estar disponíveis para o autor ao criar uma página.
 
-* **Visualizar**
+* **Visualização**
 
    Esta é outra guia no editor e fornece uma visualização técnica, destinada principalmente aos desenvolvedores.
 
 * **Atualizar referências de página**
 
-   Essa ação está disponível no **...** menu suspenso (elipses). Não é interessante para autores sem cabeçalho, pois se relaciona à criação de página.
+   Essa ação está disponível no menu suspenso **...** (reticências). Não é interessante para autores headless, pois se relaciona à criação de página.
 
 ### Publicação {#publishing}
 
 <!-- needs more details -->
 
-Após concluir o fragmento, é possível **Publicar** para que esteja disponível para os aplicativos sem periféricos.
+Após concluir o fragmento, é possível **Publicar** para que esteja disponível para os aplicativos headless.
 
-As ações de publicação estão disponíveis no editor (ou na barra de ferramentas do **Fragmentos de conteúdo** ou o **Ativos** console):
+As ações de publicação estão disponíveis no editor (ou na barra de ferramentas dos consoles **Fragmentos de conteúdo** ou **Ativos**):
 
 ![Editor de fragmento de conteúdo - Meu fragmento](/help/journey-headless/author/assets/headless-journey-author-content-fragment-06.png)
 
@@ -275,7 +275,7 @@ Agora que você aprendeu o básico, o próximo passo é [Saiba mais sobre refer�
 
 * [Conceitos de criação](/help/sites-cloud/authoring/getting-started/concepts.md)
 
-* [Manuseio básico](/help/sites-cloud/authoring/getting-started/basic-handling.md) - esta página se baseia principalmente no **Sites** , mas muitos/a maioria dos recursos também são relevantes para a criação **Fragmentos de conteúdo** nos termos do **Ativos** console.
+* [Manuseio básico](/help/sites-cloud/authoring/getting-started/basic-handling.md) - esta página se baseia principalmente no console **Sites**, mas muitos/a maioria dos recursos também são relevantes para a criação **Fragmentos de conteúdo** no console **Ativos**.
 
    * [Painel Navegação  ](/help/sites-cloud/authoring/getting-started/basic-handling.md#navigation-panel)
 
@@ -299,23 +299,23 @@ Agora que você aprendeu o básico, o próximo passo é [Saiba mais sobre refer�
 
    * [Gerenciamento dos fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
 
-      * [Aplicar a configuração à sua pasta de ativos](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+      * [Aplique a configuração à sua pasta de ativos](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
       * [Criação de um fragmento de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
-   * [Variações - Criação de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
+   * [Variações: criação de Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
 
    * [Modelos de fragmentos do conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 
-      * [Modelos de fragmentos do conteúdo - Tipos de dados](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
+      * [Modelos de fragmento de conteúdo - Tipos de dados](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
 
-      * [Modelos de fragmentos do conteúdo - Propriedades](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
+      * [Modelos de fragmento de conteúdo: propriedades](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
 
-      * [Modelos de fragmentos do conteúdo - Permitir modelos de fragmentos do conteúdo na pasta Ativos](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+      * [Modelos de fragmentos de conteúdo: permitir modelos de fragmento de conteúdo na pasta Ativos](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
 
 
 * Guias de introdução
-   * [Criação de uma configuração headless para uma pasta de ativos](/help/headless/setup/create-assets-folder.md)
+   * [Criação de uma Pasta de ativos Configuração do Headless](/help/headless/setup/create-assets-folder.md)
 
 * Jornada do arquiteto de conteúdo do AEM Headless
 
-* jornada de tradução sem cabeçalho AEM
+* Jornada de tradução headless do AEM
