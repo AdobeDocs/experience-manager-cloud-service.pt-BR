@@ -3,7 +3,7 @@ title: Jornada do complemento de demonstrações de referência do AEM
 description: Comece aqui para obter uma jornada guiada sobre como adicionar facilmente o complemento de demonstrações de referência do AEM a um ambiente de sandbox com configuração mínima do AEM e sobre poder testar os recursos avançados do AEM com exemplos completos com base nas práticas recomendadas.
 exl-id: 8a6d4abf-0832-40e8-9ba6-1ad4ba794ffa
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '855'
 ht-degree: 100%
 
@@ -60,5 +60,5 @@ Agora você está pronto para começar a usar a jornada do complemento de demons
 
 Confira estes recursos adicionais para obter mais informações sobre como os recursos avançados do AEM trabalham juntos.
 
-* [Documentação do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=pt_BR) — se quiser obter mais detalhes sobre os recursos do Cloud Manager, consulte diretamente os documentos técnicos detalhados.
+* [Documentação do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=pt-BR) — se quiser obter mais detalhes sobre os recursos do Cloud Manager, consulte diretamente os documentos técnicos detalhados.
 * [Documentação técnica do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=pt-BR) — se você já conhece bem o AEM, talvez queira consultar diretamente os documentos técnicos detalhados.
