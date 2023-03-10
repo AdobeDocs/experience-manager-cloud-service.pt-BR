@@ -1,5 +1,5 @@
 ---
-title: Visão geral da ferramenta Transferência de conteúdo (herdada)
+title: Visão geral da ferramenta Transferência de conteúdo (Legada)
 description: Visão geral da ferramenta Transferência de conteúdo
 hide: true
 hidefromtoc: true
@@ -7,11 +7,11 @@ exl-id: dd031580-e9d7-461e-8689-9bc3dbb2121b
 source-git-commit: 3c8035e4db5729f58bae29136a32a0b9944d6a2f
 workflow-type: tm+mt
 source-wordcount: '475'
-ht-degree: 56%
+ht-degree: 68%
 
 ---
 
-# Visão geral da ferramenta Transferência de conteúdo (herdada) {#overview-content-transfer-tool}
+# Visão geral da ferramenta Transferência de conteúdo (Legada) {#overview-content-transfer-tool}
 
 A ferramenta Transferência de conteúdo é uma ferramenta desenvolvida pela Adobe que pode ser usada para mover o conteúdo existente de uma instância do AEM de origem (no local ou AMS) para a instância de destino do AEM Cloud Service.
 
@@ -26,9 +26,9 @@ Existem duas fases associadas à transferência de conteúdo:
    Consulte [Processo de extração na transferência de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html) para obter mais detalhes.
 
    >[!NOTE]
-   >Execute a Ferramenta de mapeamento de usuário como parte da fase de Extração. Consulte [Utilização da ferramenta Mapeamento de usuários](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html?lang=en) para obter mais detalhes.
+   >Execute a Ferramenta de mapeamento de usuário como parte da fase de Extração. Consulte [Usar a ferramenta de Mapeamento de usuários](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html?lang=en) para obter mais detalhes.
 
-1. **Assimilação**: Assimilação refere-se à assimilação de conteúdo do *conjunto de migração* na instância de destino do Cloud Service.
+1. **Assimilação**: refere-se à assimilação de conteúdo do *conjunto de migração* na instância de destino do Cloud Service.
 
    Consulte [Processo de assimilação na transferência de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html) para obter mais detalhes.
 
@@ -36,7 +36,7 @@ Existem duas fases associadas à transferência de conteúdo:
 
 Um conjunto de migração possui os seguintes atributos:
 
-* No máximo dez conjuntos de migração podem ser criados e mantidos por vez durante a atividade de transferência de conteúdo.
+* Um máximo de dez conjuntos de migração podem ser criados e mantidos por vez durante a atividade de transferência de conteúdo.
 * Cada conjunto de migração deve ter um nome exclusivo.
 * Se um conjunto de migração estiver inativo por mais de 30 dias, ele será excluído automaticamente.
 * Sempre que você cria um conjunto de migração, ele é associado a um ambiente específico. Você só pode assimilar em um autor ou uma instância de publicação do mesmo ambiente.
