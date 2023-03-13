@@ -170,7 +170,7 @@ Com o arquivo de configuração acima em vigor, a fase de pré-cópia do AzCopy 
 c.a.g.s.m.commons.ContentExtractor - *************** Beginning AzCopy Pre-Copy phase ***************
 ```
 
-Parabéns. Essa entrada de log significa que sua configuração foi considerada válida e que o AzCopy está copiando todos os blobs do container de origem para o container de migração no momento.
+Parabéns! Essa entrada de log significa que sua configuração foi considerada válida e que o AzCopy está copiando todos os blobs do container de origem para o container de migração no momento.
 
 As entradas de log do AzCopy aparecerão no log de extração e terão o prefixo c.a.g.s.m.c.azcopy.AzCopyBlobPreCopy - [Pré-cópia do AzCopy]
 

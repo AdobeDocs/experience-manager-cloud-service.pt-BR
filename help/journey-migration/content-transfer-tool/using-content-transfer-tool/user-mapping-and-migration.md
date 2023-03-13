@@ -4,7 +4,7 @@ description: Visão geral do mapeamento de usuários e da migração principal
 source-git-commit: aeb8f633b45908a87f15f9feeb3723f90470be92
 workflow-type: tm+mt
 source-wordcount: '759'
-ht-degree: 3%
+ht-degree: 18%
 
 ---
 
@@ -13,16 +13,16 @@ ht-degree: 3%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_usermapping"
 >title="Mapeamento de usuário"
->abstract="A ferramenta Transferência de conteúdo ajuda a mover usuários e grupos do sistema AEM existente para o AEM as a Cloud Service. Os usuários existentes devem ser mapeados para as IDs IMS para evitar a duplicação na instância do autor do Cloud Service."
+>abstract="A ferramenta de Transferência de conteúdo ajuda a mover usuários e grupos do sistema existente do AEM para o AEM as a Cloud Service. Os usuários existentes devem ser mapeados para as IDs IMS para evitar a duplicação na instância do autor do Cloud Service."
 
 >[!NOTE]
 >Para versões anteriores da Ferramenta de mapeamento de usuários, consulte a [documentação herdada](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md).
 
 ## Introdução {#introduction}
 
-Como parte da jornada de transição para o Adobe Experience Manager (AEM) as a Cloud Service AEM AEM, é necessário mover usuários e grupos do seu sistema existente para o as a Cloud Service. Isso é feito pela ferramenta Transferência de conteúdo.
+Como parte da jornada de transição para o Adobe Experience Manager (AEM) as a Cloud Service, é necessário mover usuários e grupos do sistema existente do AEM para o AEM as a Cloud Service. Isso é feito através da ferramenta de Transferência de conteúdo.
 
-Uma mudança importante do AEM as a Cloud Service é o uso totalmente integrado de Adobe IDs para acessar o nível do autor. Isso exige o uso do [Adobe Admin Console](https://helpx.adobe.com/br/enterprise/using/admin-console.html) para gerenciar usuários e grupos de usuários. As informações do perfil do usuário são centralizadas no Adobe Identity Management System (IMS) que fornece logon único em todos os aplicativos de nuvem do Adobe. Para obter mais detalhes, consulte [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html?lang=en#identity-management). Devido a essa alteração, os usuários existentes precisam ser mapeados para suas IDs IMS para evitar usuários duplicados na instância do autor do Cloud Service. Como os grupos no AEM tradicional são fundamentalmente diferentes dos grupos no IMS, os grupos não são mapeados, mas os dois conjuntos de grupos devem ser reconciliados após a conclusão da migração.
+Uma mudança importante do AEM as a Cloud Service é o uso totalmente integrado de Adobe IDs para acessar o nível do autor. É preciso usar o [Adobe Admin Console](https://helpx.adobe.com/br/enterprise/using/admin-console.html) para gerenciar usuários e grupos de usuários. As informações do perfil do usuário são centralizadas no Adobe Identity Management System (IMS), que fornece um logon único para todos os aplicativos de nuvem da Adobe. Para obter mais detalhes, consulte [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html?lang=pt-BR#identity-management). Devido a essa alteração, os usuários existentes precisam ser mapeados para suas IDs IMS para evitar usuários duplicados na instância do autor do Cloud Service. Como os grupos no AEM tradicional são fundamentalmente diferentes dos grupos no IMS, os grupos não são mapeados, mas os dois conjuntos de grupos devem ser reconciliados após a conclusão da migração.
 
 ## Detalhes de mapeamento e migração de usuários {#user-mapping-detail}
 

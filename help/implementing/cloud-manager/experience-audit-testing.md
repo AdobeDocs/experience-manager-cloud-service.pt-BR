@@ -2,7 +2,7 @@
 title: Teste de auditoria de experiência
 description: Saiba como a Auditoria de experiência valida seu processo de implantação e ajuda a garantir que as alterações implantadas atendam aos padrões básicos de desempenho, acessibilidade, práticas recomendadas e SEO.
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: fe9d76362f7d2bd7d0ebe89d5161f0c1868e80a3
+source-git-commit: c8bfeda015962d3f327057a375b4edd3d80c6316
 workflow-type: tm+mt
 source-wordcount: '552'
 ht-degree: 97%

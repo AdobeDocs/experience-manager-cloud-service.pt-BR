@@ -1,5 +1,5 @@
 ---
-title: Visão geral da ferramenta Mapeamento de usuários (herdado)
+title: Visão geral da ferramenta de Mapeamento de usuários (Legado)
 description: Visão geral da ferramenta Mapeamento de usuários (herdado)
 exl-id: 17ed5721-093e-4491-b8c4-3dadcaa6598b
 hide: true
@@ -7,11 +7,11 @@ hidefromtoc: true
 source-git-commit: 69dfe7f98628ab67cc3a994c32b1530550ec6a01
 workflow-type: tm+mt
 source-wordcount: '282'
-ht-degree: 11%
+ht-degree: 97%
 
 ---
 
-# Visão geral da ferramenta Mapeamento de usuários {#overview-user-mapping-tool}
+# Visão geral da ferramenta de Mapeamento de usuários {#overview-user-mapping-tool}
 
 
 <!-- Alexandru: drafting this for now
@@ -27,14 +27,14 @@ ht-degree: 11%
 
 ## Introdução {#introduction}
 
-Como parte da jornada de transição para o Adobe Experience Manager (AEM) as a Cloud Service AEM AEM, é necessário mover usuários e grupos do seu sistema existente para o as a Cloud Service. Isso é feito pela ferramenta Transferência de conteúdo.
+Como parte da jornada de transição para o Adobe Experience Manager (AEM) as a Cloud Service, é necessário mover usuários e grupos do sistema existente do AEM para o AEM as a Cloud Service. Isso é feito através da ferramenta de Transferência de conteúdo.
 
-Uma mudança importante do AEM as a Cloud Service é o uso totalmente integrado de Adobe IDs para acessar o nível do autor.  Isso exige o uso do [Adobe Admin Console](https://helpx.adobe.com/br/enterprise/using/admin-console.html) para gerenciar usuários e grupos de usuários. As informações do perfil do usuário são centralizadas no Adobe Identity Management System (IMS) que fornece logon único em todos os aplicativos de nuvem do Adobe. Para obter mais detalhes, consulte [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html?lang=en#identity-management). Devido a essa alteração, os usuários e grupos existentes precisam ser mapeados para suas IDs IMS para evitar usuários e grupos duplicados na instância de autor do Cloud Service.
+Uma mudança importante do AEM as a Cloud Service é o uso totalmente integrado de Adobe IDs para acessar o nível do autor.  É preciso usar o [Adobe Admin Console](https://helpx.adobe.com/br/enterprise/using/admin-console.html) para gerenciar usuários e grupos de usuários. As informações do perfil do usuário são centralizadas no Adobe Identity Management System (IMS), que fornece um logon único para todos os aplicativos de nuvem da Adobe. Para obter mais detalhes, consulte [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html?lang=pt-BR#identity-management). Devido a essa alteração, usuários e grupos existentes precisam ser mapeados de acordo com suas IDs do IMS para evitar usuários e grupos duplicados na instância de autor do Cloud Service.
 
 ## Ferramenta de Mapeamento de usuários {#mapping-tool}
 
-A ferramenta Transferência de conteúdo (sem o mapeamento de usuários) migrará todos os usuários e grupos associados ao conteúdo que está sendo migrado. A Ferramenta de mapeamento de usuários faz parte da Ferramenta de transferência de conteúdo e seu único objetivo é modificar os usuários para que eles possam ser reconhecidos corretamente pelo IMS, a funcionalidade de logon único usada pelo AEM as a Cloud Service. Quando essas modificações forem feitas, a ferramenta Transferência de conteúdo migrará os usuários e grupos do conteúdo especificado como de costume.
+A ferramenta de Transferência de conteúdo (sem o Mapeamento de usuários) migrará qualquer usuário e grupo associado ao conteúdo que está sendo migrado. A ferramenta de Mapeamento de usuários faz parte da ferramenta de Transferência de conteúdo e seu único objetivo é modificar os usuários para que eles possam ser reconhecidos corretamente pelo IMS, a funcionalidade de logon único usada pelo AEM as a Cloud Service. Quando essas modificações forem feitas, a ferramenta de Transferência de conteúdo migrará os usuários e grupos do conteúdo especificado como de costume.
 
 ### O que vem a seguir {#whats-next}
 
-Depois de saber o que é uma ferramenta de Mapeamento de usuários, você estará pronto para analisar considerações importantes e casos excepcionais antes de usar a Ferramenta de Mapeamento de usuários. Consulte [Considerações importantes sobre a ferramenta Mapeamento de usuários](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md) para obter mais detalhes.
+Depois de descobrir o que é uma ferramenta de Mapeamento de usuários, você estará pronto para revisar considerações importantes e casos excepcionais antes de usar a ferramenta de Mapeamento de usuários. Consulte [Considerações importantes da ferramenta de Mapeamento de usuários](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md) para obter mais detalhes.
