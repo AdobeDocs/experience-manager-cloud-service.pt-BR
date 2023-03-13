@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Panoramic Images
 role: User
 exl-id: bdc5d00e-fa92-4db5-a3b2-4dd5885eec0b
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
+source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 2%
@@ -14,25 +14,25 @@ ht-degree: 2%
 
 # Imagens panorâmicas{#panoramic-images}
 
-Esta seção descreve como trabalhar com o visualizador de Imagem panorâmica para renderizar imagens panorâmicas esféricas para uma experiência de visualização imersiva de 360° de uma sala, propriedade, localização ou paisagem.
+Esta seção descreve como trabalhar com o visualizador de imagens panorâmicas para renderizar imagens panorâmicas esféricas para uma experiência de visualização imersiva de 360° em uma sala, propriedade, localização ou paisagem.
 
 Consulte também [Gerenciar predefinições do visualizador](/help/assets/dynamic-media/managing-viewer-presets.md).
 
 ![panoramic-image2](assets/panoramic-image2.png)
 
-## Fazer upload de ativos para usar com o visualizador de Imagem panorâmica {#uploading-assets-for-use-with-the-panoramic-image-viewer}
+## Fazer upload de ativos para uso com o visualizador de imagens panorâmicas {#uploading-assets-for-use-with-the-panoramic-image-viewer}
 
-Para que um ativo carregado seja qualificado como uma imagem panorâmica esférica que você pretende usar com o visualizador de Imagem panorâmica, o ativo deve ter um ou ambos os itens a seguir:
+Para que um ativo carregado seja qualificado como uma imagem panorâmica esférica que você pretende usar com o visualizador de Imagem panorâmica, o ativo deve ter uma ou ambas as opções a seguir:
 
-* Uma proporção largura/altura de 2.
+* Uma taxa de proporção de 2.
 
 <!--  You can override the default aspect ratio setting of 2 in CRXDE Lite at the following:
   `/conf/global/settings/cloudconfigs/dmscene7/jcr:content` -->
 * Marcado com as palavras-chave `equirectangular`ou `spherical`e `panorama`ou `spherical` e `panoramic`. Consulte [Usar tags](/help/sites-cloud/authoring/features/tags.md).
 
-Tanto a proporção quanto os critérios de palavra-chave se aplicam aos ativos panorâmicos da página de detalhes do ativo e a `Panoramic Media` componente WCM.
+Tanto a proporção quanto os critérios de palavra-chave se aplicam aos ativos panorâmicos da página de detalhes do ativo e da `Panoramic Media` Componente WCM.
 
-Para fazer upload de ativos para uso com o visualizador de Imagem panorâmica, consulte [Fazer upload de ativos](/help/assets/manage-digital-assets.md#uploading-assets).
+Para fazer upload de ativos para uso com o visualizador de imagens panorâmicas, consulte [Fazer upload de ativos](/help/assets/manage-digital-assets.md#uploading-assets).
 
 <!--  NEED TO CHECK IF DM CLASSIC PART OF SKYLINE 
 

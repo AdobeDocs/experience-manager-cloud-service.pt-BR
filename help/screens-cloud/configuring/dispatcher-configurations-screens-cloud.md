@@ -1,6 +1,6 @@
 ---
 title: Configurações do Dispatcher no Screens as a Cloud Service
-description: Esta página descreve as configurações do Dispatcher no Screens as a Cloud Service.
+description: Esta página descreve as Configurações do Dispatcher no Screens as a Cloud Service.
 exl-id: cc04b480-9310-4975-a7c2-20682c567fa4
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Esta seção descreve as configurações do dispatcher para o Screens as a Cloud Service.
 
-## Adicionar filtros e regras de cache no Dispatcher para implantação as a Cloud Service do Screens {#deployment}
+## Adição de filtros e regras de cache na implantação as a Cloud Service do Dispatcher for Screens {#deployment}
 
 Permita os seguintes filtros e regras de cache nos dispatchers para as instâncias de publicação no Screens as a Cloud Service.
 
@@ -35,7 +35,7 @@ Permita os seguintes filtros e regras de cache nos dispatchers para as instânci
 * Adicionar `/statfileslevel "10"` para `/cache` seção em `publish_farm.any`/.
 
    >[!NOTE]
-   >Essa regra de cache oferece suporte ao armazenamento em cache de até 10 níveis a partir do ponto de cache e invalida quando o conteúdo é publicado, em vez de invalidar tudo. Você pode alterar esse nível com base no quão profundo sua estrutura de conteúdo está configurada.
+   >Essa regra de cache aceita o armazenamento em cache de até 10 níveis do docroot do cache e invalida quando o conteúdo é publicado, em vez de invalidar tudo. Você pode alterar esse nível com base na profundidade da configuração da estrutura de conteúdo.
 
 * Adicione o seguinte a `/invalidate` seção em `publish_farm.any`.
 

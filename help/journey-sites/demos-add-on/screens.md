@@ -15,7 +15,7 @@ Saiba mais sobre as etapas para habilitar a experiência completa do AEM Screens
 
 >[!NOTE]
 >
->A demonstração do AEM Screens requer que o complemento Screens seja adicionado ao Programa Cloud Manager. Saiba mais [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/adding-screens-addon/add-on-new-program-screens-cloud.html) como adicioná-lo.
+>A demonstração do AEM Screens exige que o complemento do Screens seja adicionado ao programa do Cloud Manager. Saiba mais [aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/adding-screens-addon/add-on-new-program-screens-cloud.html) como adicioná-lo.
 
 ## A história até agora {#story-so-far}
 

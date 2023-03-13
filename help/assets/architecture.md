@@ -1,6 +1,6 @@
 ---
-title: Arquitetura do [!DNL Assets]
-description: Arquitetura dos ativos Adobe Experience Manager as a [!DNL Cloud Service]
+title: Arquitetura de [!DNL Assets]
+description: Arquitetura dos ativos do Adobe Experience Manager as a [!DNL Cloud Service]
 contentOwner: AG
 feature: Asset Management,Asset Compute Microservices
 role: Architect
@@ -12,15 +12,15 @@ ht-degree: 9%
 
 ---
 
-# Arquitetura do Assets as a [!DNL Cloud Service] solução {#assets-architecture}
+# Arquitetura de ativos as a [!DNL Cloud Service] solução {#assets-architecture}
 
-[!DNL Experience Manager Assets] como [!DNL Cloud Service] é baseado em [!DNL Adobe Experience Manager] e se compara bem com a oferta mais recente [!DNL Experience Manager] 6.5. [!DNL Cloud Service] A oferta tem uma arquitetura e funcionalidade ajustadas para ser um serviço nativo em nuvem. As alterações na arquitetura subjacente não permitem que toda a funcionalidade do Experience Manager 6.5 faça parte do [!DNL Cloud Service].
+[!DNL Experience Manager Assets] as a [!DNL Cloud Service] é baseado em [!DNL Adobe Experience Manager] e compara bem com a oferta mais recente [!DNL Experience Manager] 6.5. O [!DNL Cloud Service] A oferta do tem uma oferta ajustada de arquitetura e funcionalidade para ser um serviço nativo em nuvem. As alterações na arquitetura subjacente não permitem que toda a funcionalidade do Experience Manager 6.5 faça parte do [!DNL Cloud Service].
 
-Para ver a visão geral da arquitetura dos microsserviços de ativos, consulte isto [visão geral dos microsserviços de ativos](asset-microservices-overview.md#asset-microservices-architecture).
+Para ver a visão geral da arquitetura dos microsserviços de ativos, consulte este [visão geral dos microsserviços de ativos](asset-microservices-overview.md#asset-microservices-architecture).
 
 >[!MORELIKETHIS]
 >
 >* [Visão geral e novidades](/help/assets/overview.md)
->* [Formatos de arquivo suportados e tipos MIME](file-format-support.md)
+>* [Formatos de arquivo e tipos MIME compatíveis](file-format-support.md)
 >* [Visão geral dos microsserviços de ativos](asset-microservices-overview.md)
 

@@ -1,7 +1,7 @@
 ---
 title: Converter um AMS em uma configuração de Dispatcher do Adobe Experience Manager as a Cloud Service
 description: Converter um AMS em uma configuração de Dispatcher do Adobe Experience Manager as a Cloud Service
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
 workflow-type: tm+mt
 source-wordcount: '1342'
 ht-degree: 95%
@@ -89,7 +89,7 @@ Se você encontrar erros sobre a falta de arquivos de inclusão, verifique se os
 
 1. **Renomear arquivos de farm**
 
-   Todos os farms em conf.dispatcher.d/enabled_farms devem ser renomeados para corresponder ao padrão *.farm. Por exemplo, um arquivo farm chamado customerX_farm.any deve ser renomeado customerX.farm.
+   Todos os farms em conf.dispatcher.d/enabled_farms devem ser renomeados para corresponder ao padrão *.farm. Portanto, por exemplo, um arquivo de farm chamado customerX_farm.any deve ser renomeado customerX.farm.
 
 1. **Verificar cache**
 

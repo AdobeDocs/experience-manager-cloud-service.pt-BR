@@ -11,22 +11,22 @@ ht-degree: 8%
 
 # Criação e gerenciamento de exibições no Screens as a Cloud Service {#create-displays-screens-cloud}
 
-Depois de publicar seu canal, é hora de criar sua exibição no Provedor de serviços do Screens.
+Depois de publicar seu canal, agora é hora de criar sua exibição no Provedor de serviços do Screens.
 
-Uma Exibição é um agrupamento virtual de telas que geralmente são posicionadas próximas umas das outras. A exibição é, em geral, permanente com relação a uma instalação. Esse será o objeto no qual os autores de conteúdo irão trabalhar e é sempre referenciado como uma exibição lógica em vez de suas contrapartes físicas.
+Uma Exibição é um agrupamento virtual de telas que geralmente são posicionadas uma ao lado da outra. A exibição é, em geral, permanente com relação a uma instalação. Esse será o objeto no qual os autores de conteúdo irão trabalhar e é sempre referenciado como uma exibição lógica em vez de suas contrapartes físicas.
 
 ## Objetivo {#objective}
 
-Este documento ajuda você a entender como criar e gerenciar exibições no Provedor de serviços do Screens. Depois de ler esse documento, você deverá:
+Este documento ajuda você a entender como criar e gerenciar exibições no provedor de serviços do Screens. Depois de ler esse documento, você deverá:
 
-* Entender como criar e excluir exibições
-* Entender como organizar as exibições em pastas
+* Saiba como criar e excluir exibições
+* Saiba como organizar exibições em pastas
 
 ## Etapas para criar uma exibição {#create-display}
 
-Siga as etapas abaixo para criar a exibição do Provedor de serviços do Screens:
+Siga as etapas abaixo para criar a exibição a partir do provedor de serviços do Screens:
 
-1. Navegue até o Provedor de serviços do Screens na sua instância do AEM Cloud Service.
+1. Navegue até o provedor de serviços do Screens a partir da instância do AEM Cloud Service.
 1. Selecionar **Exibições** no painel de navegação esquerdo e clique em **Criar** no canto superior direito da tela.
 
    ![imagem](/help/screens-cloud/assets/display/disp-1.png)
@@ -35,19 +35,19 @@ Siga as etapas abaixo para criar a exibição do Provedor de serviços do Screen
 
    ![imagem](/help/screens-cloud/assets/display/disp-2.png)
 
-1. Insira o título como **LoopingChannelDisplay** em **Nome de exibição** e clique em **Criar**.
+1. Insira o título como **LoopingChannelDisplay** in **Nome de exibição** e clique em **Criar**.
 
    ![imagem](/help/screens-cloud/assets/display/disp3.png)
 
-1. A exibição com o título como **LoopingChannelDisplay** agora estarão visíveis na lista de exibição.
+1. A exibição intitulada como **LoopingChannelDisplay** agora estarão visíveis na lista de exibição.
 
    ![imagem](/help/screens-cloud/assets/display/disp-4.png)
 
-### Exclusão de uma exibição {#deleting-display}
+### Excluir uma exibição {#deleting-display}
 
-Você pode excluir uma exibição do Provedor de serviços do Screens.
+Você pode excluir uma exibição do provedor de serviços do Screens.
 
-Selecione a exibição e clique em **Excluir** na parte inferior do painel, conforme mostrado na figura abaixo.
+Selecione a exibição e clique em **Excluir** na parte inferior do painel, como mostrado na figura abaixo.
 
 ![imagem](/help/screens-cloud/assets/display/disp-5.png)
 
@@ -55,9 +55,9 @@ Selecione a exibição e clique em **Excluir** na parte inferior do painel, conf
 
 ## Como alternar o painel de pastas {#toggle-rail}
 
-Você pode deixar que o painel de pastas exiba todas as pastas para pastas específicas:
+Você pode alternar o painel de pastas da exibição de todas as pastas para pastas específicas:
 
-1. Navegue até a exibição de inventário de exibições clicando no botão destacado abaixo:
+1. Navegue até a exibição do inventário de exibições clicando no botão destacado abaixo:
 
    ![imagem](/help/screens-cloud/assets/display/display-inventory.png)
 
@@ -65,20 +65,20 @@ Você pode deixar que o painel de pastas exiba todas as pastas para pastas espec
 
    ![imagem](/help/screens-cloud/assets/display/toggle-rail.png)
 
-1. Selecionar **Ocultar pastas** para fechá-lo novamente.
+1. Selecionar **Ocultar pastas** para fechá-la novamente.
 
 ## Como criar uma nova pasta {#create-folder}
 
 Você pode criar pastas para organizar melhor suas exibições.
 
-1. Navegue até a exibição de inventário exibida.
-1. Certifique-se de que você não está em uma pasta no momento, deve ver o seguinte:
+1. Navegue até a exibição do inventário de exibições.
+1. Verifique se você não está atualmente em uma pasta. Você deve ver o seguinte:
 
    ![imagem](/help/screens-cloud/assets/display/verify-view.png)
 
-   Observação: **Todas as exibições** deve ser selecionada no painel lateral da pasta e a navegação da navegação estrutural deve mostrar somente **Exibições**.
+   Nota: **Todas as exibições** deve ser selecionado no painel lateral da pasta e a navegação estrutural deve mostrar apenas **Exibições**.
 
-1. Clique no botão &quot;Criar&quot; na parte superior direita e selecione o **Pasta** opção.
+1. Clique no botão &quot;Criar&quot; no canto superior direito e selecione a **Pasta** opção.
 
    ![imagem](/help/screens-cloud/assets/display/Createfolder.png)
 
@@ -88,17 +88,17 @@ Você pode criar pastas para organizar melhor suas exibições.
 
 ## Como criar uma nova pasta aninhada {#nested-folder}
 
-1. Navegue até a exibição de inventário exibida.
+1. Navegue até a exibição do inventário de exibições.
 
-1. Selecione a pasta pai desejada no painel lateral da pasta ou navegando na visualização de inventário.
-1. Verifique se a pasta pai desejada está selecionada.
+1. Selecione a pasta principal desejada no painel lateral da pasta ou navegue na visualização de inventário.
+1. Verifique se a pasta principal desejada está selecionada.
 
    ![imagem](/help/screens-cloud/assets/display/Nestedview.png)
 
    * A pasta deve ser selecionada no painel lateral da pasta.
-   * A navegação da navegação estrutural deve mostrar o nome atual da pasta ao lado de **Exibições**.
+   * A navegação estrutural deve mostrar o nome da pasta atual ao lado de **Exibições**.
 
-1. Clique em  **Criar**  na parte superior direita e selecione o **Pasta** opção.
+1. Clique em  **Criar**  na parte superior direita e selecione a **Pasta** opção.
 
    ![imagem](/help/screens-cloud/assets/display/Createfolder.png)
 
@@ -106,31 +106,31 @@ Você pode criar pastas para organizar melhor suas exibições.
 
    ![imagem](/help/screens-cloud/assets/display/Createfolder2.png)
 
-## Como mover o conteúdo para uma nova pasta {#move-folder}
+## Como mover conteúdo para uma nova pasta {#move-folder}
 
 Você pode mover o conteúdo para suas novas pastas para organizar melhor suas exibições.
 
-1. Navegue até a exibição de inventário exibida.
+1. Navegue até a exibição do inventário de exibições.
 
-1. Selecione a pasta pai desejada no painel lateral da pasta ou selecionando na visualização de inventário.
+1. Selecione a pasta principal desejada no painel lateral da pasta ou selecione na visualização de inventário.
 
-1. Verifique se você selecionou a pasta pai desejada.
+1. Verifique se você selecionou a pasta principal desejada.
 
 ![imagem](/help/screens-cloud/assets/display/movetofolder.png)
 
-**Observação**: A pasta deve ser selecionada no painel lateral da pasta. Além disso, a navegação da navegação estrutural deve mostrar o nome atual da pasta ao lado de **Exibições**.
+**Nota**: a pasta deve ser selecionada no painel lateral da pasta. Além disso, a navegação estrutural deve mostrar o nome da pasta atual ao lado de **Exibições**.
 
 ## Como excluir conteúdo de uma pasta {#delete-folder}
 
-Todas as operações de pasta são acessíveis pela barra de ação de seleção na exibição de inventário.
+Todas as operações de pastas podem ser acessadas pela barra de ação de seleção na exibição de inventário.
 
-1. Navegue até a pasta pai ou selecione-a no painel lateral.
+1. Navegue até a pasta principal ou selecione-a no painel lateral.
 
-1. Na exibição de inventário, selecione a pasta secundária desejada que deseja excluir e verifique se está vazia.
+1. Na visualização de inventário, selecione a pasta secundária que você deseja excluir e certifique-se de que ela esteja vazia.
 
-1. Clique no botão **Excluir** na barra de ações de seleção. A ação será desativada se a pasta não estiver vazia.
+1. Clique em **Excluir** ação na barra de ação da seleção. A ação será desativada se a pasta não estiver vazia.
 
 
 ## O que vem a seguir {#whats-next}
 
-Agora que você aprendeu a criar e gerenciar exibições para o seu projeto, deve continuar sua jornada as a Cloud Service do Screens ao próxima revisar o documento [Atribuir canal a uma exibição no Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html?lang=en).
+Agora que você aprendeu a criar e gerenciar exibições para o seu projeto, deve continuar a jornada as a Cloud Service do Screens revisando o documento em seguida [Atribuição de canal a uma Exibição no Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html?lang=en).

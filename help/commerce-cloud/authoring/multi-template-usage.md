@@ -1,6 +1,6 @@
 ---
 title: Criação de várias categorias e páginas de produto
-description: Saiba como enriquecer as páginas de aterrissagem de categoria e detalhes do produto com conteúdo de marketing direcionado.
+description: Saiba como enriquecer as páginas de aterrissagem de categoria e de detalhes do produto com conteúdo de marketing direcionado.
 sub-product: Commerce
 version: Cloud Service
 doc-type: feature-video
@@ -10,7 +10,7 @@ feature: Commerce Integration Framework
 kt: 3455
 thumbnail: 28969.jpg
 exl-id: 06417775-1a0b-4487-86f3-83f2fe12458e,8c611756-5719-488d-a519-a12c5c90c614
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
 workflow-type: tm+mt
 source-wordcount: '187'
 ht-degree: 49%
@@ -27,7 +27,7 @@ Os [Componentes principais da CIF do AEM](https://github.com/adobe/aem-core-cif-
 
 >[!VIDEO](https://video.tv.adobe.com/v/28969/?quality=12)
 
-Páginas de produto específicas podem ser selecionadas por sku ou por categoria de produto. A versão posterior só é compatível com alguns dos formatos de URL da página de produto padrão disponíveis, pois requer que as informações da categoria sejam codificadas no url do produto.
+Páginas de produto específicas podem ser selecionadas por um SKU ou pela categoria de um produto. O último só é compatível com alguns dos formatos padrão de URL da página do produto disponíveis, pois requer que as informações da categoria sejam codificadas no URL do produto.
 
 Você pode encontrar mais informações sobre esse tópico nos seguintes recursos:
 
@@ -36,4 +36,4 @@ Você pode encontrar mais informações sobre esse tópico nos seguintes recurso
 
 ## Recursos relacionados {#related}
 
-Também é possível direcionar dinamicamente regiões específicas de uma página e reutilizar o mesmo modelo. Saiba como [enriquecer dados do produto com conteúdo de AEM associado](./enrich-product-associated-content.md).
+Também é possível direcionar dinamicamente regiões específicas de uma página e reutilizar o mesmo modelo. Saiba como [enriquecer os dados do produto com o conteúdo de AEM associado](./enrich-product-associated-content.md).

@@ -28,8 +28,8 @@ Siga esta seção para saber mais sobre as novidades e atualizações do Cloud M
 
 ### Correções de erros  {#bug-fixes}
 
-* Não foi possível baixar os arquivos de registro para as etapas de teste funcional personalizadas e do produto por meio da interface do usuário.
-* Quando ocorria uma falha na criação do repositório de git de um programa do Cloud Service, às vezes os usuários na função do Gerenciador de implantação não conseguiam se recuperar dessa falha.
+* Não foi possível baixar os arquivos de log para as etapas de teste funcional personalizadas e do produto por meio da interface do usuário.
+* Quando ocorria uma falha na criação do repositório de git de um programa do Cloud Service, às vezes os usuários na função do Gerente de implantação não conseguiam se recuperar dessa falha.
 * Certas atividades do usuário durante a criação de um programa sandbox podem causar falha na criação do programa, antes da criação do pipeline não relacionado à produção.
 * Ocasionalmente, ocorria uma falha na instância efêmera SonarQube usada na etapa de build, ao iniciar dentro do tempo limite configurado.
 * A criação simultânea de ambientes de desenvolvimento no mesmo programa de Cloud Service pode encontrar uma condição em que apenas um pode ser criado com sucesso.

@@ -2,8 +2,8 @@
 title: Criação de conteúdo direcionado usando o modo Direcionar
 description: O modo de Direcionamento e o componente de Direcionamento fornecem ferramentas para criar o conteúdo das experiências
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
-source-git-commit: f619cc2b1fcc697ebe7af7370b6839fe5ce40419
-workflow-type: ht
+source-git-commit: 41027653bffb064b3c313d6512b0314336f6c8dc
+workflow-type: tm+mt
 source-wordcount: '5414'
 ht-degree: 100%
 

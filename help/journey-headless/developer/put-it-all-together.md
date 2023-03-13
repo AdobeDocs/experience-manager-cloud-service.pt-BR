@@ -3,7 +3,7 @@ title: 'Como unir tudo: seu aplicativo e seu conteúdo no AEM headless'
 description: Nesta parte da Jornada de desenvolvedores headless do AEM, saiba como participar do Projeto do AEM, incluindo Fragmentos de conteúdo, chamadas de GraphQL, chamadas de API REST e aplicativo, e prepará-lo para entrar em funcionamento.
 exl-id: bece84ad-4c8c-410c-847e-9ef3f79970cb
 source-git-commit: d925310603961f1f3721c283fc247105459e9c0f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1069'
 ht-degree: 100%
 

@@ -4,8 +4,8 @@ description: Saiba como conectar o AEM ao Microsoft Translator pronto para uso p
 feature: Language Copy
 role: Admin
 exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
-source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
-workflow-type: ht
+source-git-commit: d925310603961f1f3721c283fc247105459e9c0f
+workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 100%
 

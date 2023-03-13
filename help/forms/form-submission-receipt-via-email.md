@@ -1,7 +1,7 @@
 ---
 title: Envio de uma confirmação de envio de formulário por email
 seo-title: Sending a form submission acknowledgement via email
-description: O AEM Forms permite configurar a Ação de envio de email que envia uma confirmação para um usuário ao enviar o formulário.
+description: O AEM Forms permite configurar a Ação enviar de email que envia uma confirmação para um usuário ao enviar o formulário.
 seo-description: AEM Forms allows you to configure the email Submit Action that sends an acknowledgement to a user on submitting the form.
 uuid: c80b1ef4-8fe3-48e0-8fc6-3032dc022a38
 content-type: reference
@@ -21,19 +21,19 @@ ht-degree: 0%
 
 ## Envio de dados do formulário adaptável {#adaptive-form-data-submission}
 
-O Adaptive Forms fornece vários recursos prontos para uso [Enviar ações](configuring-submit-actions.md) fluxos de trabalho para enviar os dados do formulário para diferentes pontos de extremidade.
+O Forms adaptável fornece vários recursos prontos para uso [Ações de envio](configuring-submit-actions.md) fluxos de trabalho para enviar os dados de formulário para diferentes endpoints.
 
-Por exemplo, a variável **[!UICONTROL Enviar email]** Enviar ação envia um email após o envio bem-sucedido de um formulário adaptável. Ele também pode ser configurado para enviar os dados do formulário e o PDF no email.
+Por exemplo, a variável **[!UICONTROL Enviar e-mail]** A Ação de envio envia um email ao enviar um Formulário adaptável com êxito. Ele também pode ser configurado para enviar os dados do formulário e o PDF no email.
 
-Este artigo detalha as etapas para habilitar a ação Email em um Formulário adaptável e diferentes configurações fornecidas.
+Este artigo detalha as etapas para habilitar a ação de Email em um Formulário adaptável e as diferentes configurações que ele fornece.
 
 >[!NOTE]
 >
->Também é possível usar a variável **[!UICONTROL Enviar PDF por email]** para enviar o formulário preenchido por email como anexo de PDF. As opções de configuração disponíveis para essa ação são as mesmas opções disponíveis para a variável **[!UICONTROL Enviar email]** ação. A ação PDF de email está disponível somente para o Forms adaptável baseado em XFA
+>Você também pode usar a variável **[!UICONTROL Enviar PDF por e-mail]** opção para enviar o formulário preenchido por email como um anexo PDF. As opções de configuração disponíveis para esta ação são as mesmas que as opções disponíveis para a **[!UICONTROL Enviar e-mail]** ação. A ação PDF de email está disponível somente para o Adaptive Forms baseado em XFA
 
-## Enviar ação por email {#email-action}
+## Enviar ação de email {#email-action}
 
-A ação Enviar email permite que um autor envie emails automaticamente para um ou mais recipients no envio bem-sucedido de um Formulário adaptável.
+A ação Enviar email permite que um autor envie email automaticamente para um ou mais recipients no envio bem-sucedido de um Formulário adaptável.
 
 <!-- >>[!NOTE]
 >
@@ -63,25 +63,25 @@ A ação Enviar email permite que um autor envie emails automaticamente para um 
 
 1. Click ![save](assets/save_icon.svg) to save the changes. -->
 
-### Uso de nomes de campos do formulário adaptável para criar conteúdo de email dinamicamente {#using-adaptive-form-field-names-to-dynamically-create-email-content}
+### Utilização de nomes de campos do Formulário adaptável para criar conteúdo de email dinamicamente {#using-adaptive-form-field-names-to-dynamically-create-email-content}
 
-Os nomes de campos em um formulário adaptável são chamados de espaços reservados que são substituídos pelo valor desse campo depois que um usuário envia o formulário.
+Os nomes de campos em um Formulário adaptável são chamados de espaços reservados que são substituídos pelo valor desse campo depois que um usuário envia o formulário.
 
-No **[!UICONTROL Enviar email]** , é possível usar espaços reservados que são processados quando a ação é executada. Isso implica que os cabeçalhos do email (como **[!UICONTROL Para]**, **[!UICONTROL CC]**, **[!UICONTROL CCO]**, **[!UICONTROL Assunto]**) são geradas quando o usuário envia o formulário.
+No **[!UICONTROL Enviar e-mail]** , é possível usar espaços reservados que são processados quando a ação é executada. Isso implica que os cabeçalhos do email (como **[!UICONTROL Para]**, **[!UICONTROL CC]**, **[!UICONTROL CCO]**, **[!UICONTROL Assunto]**) são gerados quando o usuário envia o formulário.
 
-Para definir um espaço reservado, especifique `${<field name>}` em um campo depois de selecionar **[!UICONTROL Enviar email]** como Ação de envio.
+Para definir um espaço reservado, especifique `${<field name>}` em um campo depois de selecionar **[!UICONTROL Enviar e-mail]** como a Ação enviar.
 
-Por exemplo, se o formulário contiver a variável **[!UICONTROL Endereço de email]** campo, nome `email_addr`, para capturar a ID do email de um usuário, é possível especificar o seguinte na variável **[!UICONTROL Para]**, **[!UICONTROL CC]** ou **[!UICONTROL CCO]** campos.
+Por exemplo, se o formulário contiver a variável **[!UICONTROL Endereço de email]** campo, nomeado `email_addr`, para capturar a ID de email de um usuário, você pode especificar o seguinte na **[!UICONTROL Para]**, **[!UICONTROL CC]** ou **[!UICONTROL CCO]** campos.
 
 `${email_addr}`
 
-Quando um usuário envia o formulário, um email é enviado para a ID de email inserida na variável `email_addr` do formulário.
+Quando um usuário envia o formulário, um email é enviado para a ID de email inserida na `email_addr` do formulário.
 
 >[!NOTE]
 >
->Você pode encontrar o nome de um campo na variável **[!UICONTROL Editar]** para o campo.
+>É possível encontrar o nome de um campo no **[!UICONTROL Editar]** para o campo.
 
-Os marcadores de posição de variável também podem ser usados na variável **[!UICONTROL Assunto]** e **[!UICONTROL Modelo de email]** campos.
+Espaços reservados para variáveis também podem ser usados no **[!UICONTROL Assunto]** e **[!UICONTROL Modelo de e-mail]** campos.
 
 Por exemplo:
 
@@ -95,5 +95,5 @@ Por exemplo:
 
 >[!NOTE]
 >
->Os campos em painéis repetíveis não podem ser usados como espaços reservados variáveis.
+>Os campos em painéis repetíveis não podem ser usados como espaços reservados para variáveis.
 

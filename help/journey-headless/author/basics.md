@@ -3,7 +3,7 @@ title: Saiba mais sobre as noções básicas de criação
 description: Saiba mais sobre os conceitos e os mecanismos de criação de conteúdo para seu CMS headless usando Fragmentos de conteúdo.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
 source-git-commit: 60ddcb3f2fd2219b0b1672791703582920825e81
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1668'
 ht-degree: 100%
 
@@ -297,11 +297,11 @@ Agora que você aprendeu o básico, o próximo passo é [Saiba mais sobre refer�
 
 * [Trabalho com fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments.md)
 
-   * [Gerenciamento dos fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
+   * [Gerenciamento dos Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
 
       * [Aplique a configuração à sua pasta de ativos](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
-      * [Criação de um fragmento de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+      * [Criação de um Fragmento de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
    * [Variações: criação de Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
 
    * [Modelos de fragmentos do conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)

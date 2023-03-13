@@ -7,7 +7,7 @@ hidefromtoc: true
 source-git-commit: 69dfe7f98628ab67cc3a994c32b1530550ec6a01
 workflow-type: tm+mt
 source-wordcount: '596'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -42,4 +42,4 @@ Os seguintes casos específicos serão registrados:
 
 ### O que vem a seguir {#whats-next}
 
-Depois de conhecer as considerações importantes e os casos excepcionais, você estará pronto para usar a ferramenta. Consulte [Utilização da ferramenta Mapeamento de usuários](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md) para obter mais detalhes.
+Depois de conhecer as considerações importantes e os casos excepcionais, você estará pronto para usar a ferramenta. Consulte [Usar a ferramenta de Mapeamento de usuários](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md) para obter mais detalhes.

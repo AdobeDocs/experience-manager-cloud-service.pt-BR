@@ -3,7 +3,7 @@ title: Jornada do arquiteto de conteúdo do AEM Headless
 description: Comece aqui para obter uma jornada guiada pelos recursos headless avançados e flexíveis do AEM, suas funcionalidades e aprenda a modelar o conteúdo em seu primeiro projeto headless.
 exl-id: ccfec100-8005-4f47-b5b6-ca188b35315c
 source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '789'
 ht-degree: 100%
 
@@ -31,7 +31,7 @@ Este manual aborda os tópicos mais importantes para que, ao concluí-lo, você:
 
 As Jornadas de documentação foram projetadas com princípios de práticas recomendadas, informadas pela última pesquisa da Adobe, experiência comprovada de implementação dos consultores da Adobe e feedback de projetos de clientes.
 
-Se quiser saber como a Adobe recomenda resolver casos de negócios headless com o AEM, as [Jornadas do AEM headless](/help/journey-documentation/documentation-journeys.md) são um ótimo ponto de partida.
+Se quiser saber como a Adobe recomenda resolver casos de negócios headless com o AEM, inicie com as [Jornadas headless do AEM](/help/journey-documentation/documentation-journeys.md).
 
 ## Público {#audience}
 

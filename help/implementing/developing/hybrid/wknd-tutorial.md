@@ -1,8 +1,8 @@
 ---
 title: Projeto SPA WKND
-description: Mergulhe no desenvolvimento SPA com este tutorial em várias partes que o orienta pela configuração do projeto, mapeamento de componentes, ferramentas de desenvolvimento front-end e roteamento de aplicativos para implementar seu próprio SPA usando o React e o Angular.
+description: Mergulhe no desenvolvimento do SPA com este tutorial de várias partes que o orienta pela configuração de projetos, mapeamento de componentes, ferramentas de desenvolvimento de front-end e roteamento de aplicativos para implementar seu próprio SPA usando o React e o Angular.
 exl-id: 3e4445b7-6215-4126-aefa-bdba1ee1398d
-source-git-commit: 173f6cd2c07ddc3a3a343696b166af88bc2631ed
+source-git-commit: f9ebd60892ae2cdaf844b7978f53a76b6e5cb137
 workflow-type: tm+mt
 source-wordcount: '155'
 ht-degree: 0%
@@ -11,13 +11,13 @@ ht-degree: 0%
 
 # Projeto SPA WKND {#wknd-spa-project}
 
-Mergulhe no desenvolvimento SPA com este tutorial em várias partes que o orienta pela configuração do projeto, mapeamento de componentes, ferramentas de desenvolvimento front-end e roteamento de aplicativos para implementar sua própria SPA.
+Mergulhe no desenvolvimento do SPA com este tutorial dividido em várias partes que o orienta na configuração de projetos, no mapeamento de componentes, nas ferramentas de desenvolvimento de front-end e no roteamento de aplicativos para implementar seu próprio SPA.
 
 ![Projeto SPA WKND](assets/wknd-spa-project.png)
 
-Semelhante ao tutorial WKND do AEM, essa contrapartida com foco em SPA oferece um exemplo completo de criação de seu próprio aplicativo de página única que pode ser editado AEM começar pela configuração do projeto por meio do roteamento de aplicativos.
+Semelhante ao Tutorial WKND para AEM, esse homólogo com foco no SPA oferece um exemplo completo de como criar seu próprio aplicativo de página única editável com AEM, começando com a configuração do projeto por meio do roteamento de aplicativos.
 
-* [Crie seu primeiro SPA de Angular em AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html?lang=en)
-* [Crie seu primeiro SPA React em AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=en)
+* [Criar seu primeiro Angular SPA no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html?lang=en)
+* [Criar o seu primeiro SPA React no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=en)
 
-No entanto, antes de iniciar seu próprio projeto de SPA para AEM, também é possível revisar a variável [Desenvolvimento de SPA para AEM](developing.md) documento.
+No entanto, antes de começar seu próprio projeto de SPA para AEM, você também pode querer revisar a [Desenvolvimento de AEM para SPA](developing.md) documento.

@@ -103,7 +103,7 @@ Agora você está pronto para explorar os recursos do AEM usando seus próprios 
 
 ## Recursos adicionais {#additional-resources}
 
-* [Documentação do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=pt_BR) - se quiser obter mais detalhes sobre os recursos do Cloud Manager, consulte diretamente os documentos técnicos detalhados.
+* [Documentação do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=pt-BR) - se quiser obter mais detalhes sobre os recursos do Cloud Manager, consulte diretamente os documentos técnicos detalhados.
 * [Criar Site](/help/sites-cloud/administering/site-creation/create-site.md) - saiba como usar o AEM para criar um site usando modelos de site para definir o estilo e a estrutura do site.
 * [Convenções de nomenclatura de página do AEM.](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices) - consulte esta página para entender as convenções de organização das páginas do AEM.
 * [Manuseio básico do AEM](/help/sites-cloud/authoring/getting-started/basic-handling.md) - explore este documento se você é novo no AEM para entender conceitos básicos, como navegação e organização do console.

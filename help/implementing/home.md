@@ -17,7 +17,7 @@ Encontre recursos de autoajuda sobre implementação do Experience Manager as a 
 ## Artigos-chave sobre implementação {#key-articles}
 
 * [Gerenciamento de ambientes com o Cloud Manager](cloud-manager/manage-environments.md)
-* [Implantação AEM as a Cloud Service](deploying/overview.md)
+* [Implantação do AEM as a Cloud Service](deploying/overview.md)
 * [Desenvolvimento do AEM as a Cloud Service](developing/introduction/development-guidelines.md)
 * [Jornada de desenvolvedores headless](/help/journey-headless/developer/overview.md)
 * [Dispatcher no AEM as a Cloud Service](dispatcher/overview.md)
@@ -32,7 +32,7 @@ Encontre recursos de autoajuda sobre implementação do Experience Manager as a 
 | [Jornada de integração](/help/journey-onboarding/overview.md) | Este guia fornece um resumo de como começar a usar o Experience Manager as a Cloud Service, incluindo como obter acesso e informações importantes sobre proteção de dados. |
 | [Guia do usuário do Sites](/help/sites-cloud/home.md) | Entenda como administrar e criar com o Experience Manager Sites as a Cloud Service. |
 | [Guia do usuário do Assets](/help/assets/home.md) | Aprenda a usar e administrar o Experience Manager Assets as a Cloud Service. |
-| [Implementação do Guia do usuário](/help/implementing/home.md) | Entenda como criar e personalizar experiências usando AEM recursos avançados. |
+| [Implementação do Guia do usuário](/help/implementing/home.md) | Entenda como criar e personalizar experiências usando recursos avançados do AEM. |
 | [Jornada de desenvolvedores headless](/help/journey-headless/developer/overview.md) | Explore essa jornada guiada com os recursos headless avançados e flexíveis do AEM para se preparar para o seu primeiro projeto headless. |
 | [Migração para o AEM as a Cloud Service](/help/journey-migration/getting-started.md) | Entenda a jornada de transição para o Cloud Service. |
 | [Guia do usuário de conectores](/help/connectors/home.md) | Saiba como integrar conectores ao Experience Manager as a Cloud Service. |

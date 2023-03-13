@@ -1,6 +1,6 @@
 ---
 title: Noções sobre segmentação
-description: A segmentação é uma preocupação chave ao criar uma campanha
+description: A segmentação é uma consideração importante ao criar uma campanha
 exl-id: 36a9623a-bb19-498a-a0e9-ef80582b1fcf
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt

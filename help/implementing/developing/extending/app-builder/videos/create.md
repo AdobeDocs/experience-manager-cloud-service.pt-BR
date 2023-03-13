@@ -1,5 +1,5 @@
 ---
-title: Criar um aplicativo do App Builder
+title: Criar um aplicativo App Builder
 description: Saiba como criar e inicializar um novo aplicativo do App Builder.
 version: Cloud Service
 feature: App Builder
@@ -12,17 +12,17 @@ exl-id: 6e080945-8789-4dfa-b093-9df10c278e11
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '99'
-ht-degree: 0%
+ht-degree: 16%
 
 ---
 
-# Criar um aplicativo do App Builder
+# Criar um aplicativo App Builder
 
 >[!IMPORTANT]
 >
 > _O Adobe Project Firefly, como mencionado nos vídeos desta série, agora é chamado de App Builder_
 
-## Configurar seu primeiro projeto
+## Configurar o primeiro projeto
 
 Saiba mais sobre os fundamentos da criação do seu primeiro projeto do App Builder.
 
@@ -34,14 +34,14 @@ Saiba como configurar seu ambiente local para o desenvolvimento do App Builder.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339169/?quality=12&learn=on)
 
-## Inicializar seu primeiro projeto
+## Inicializar o primeiro projeto
 
 Saiba como inicializar um projeto do App Builder.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339170/?quality=12&learn=on)
 
-## Crie, execute e teste seu aplicativo
+## Criar, executar e testar o aplicativo
 
-Saiba como criar, executar e testar seu aplicativo App Builder.
+Saiba como criar, executar e testar o aplicativo App Builder.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339171/?quality=12&learn=on)

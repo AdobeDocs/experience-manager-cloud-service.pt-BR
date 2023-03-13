@@ -3,7 +3,7 @@ title: Introdução ao AEM Screens as a Cloud Service
 description: Esta página serve como uma introdução ao AEM Screens as a Cloud Service.
 exl-id: b1cc0a63-ecd3-4d89-ac49-f384cc610cdc
 source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 100%
 

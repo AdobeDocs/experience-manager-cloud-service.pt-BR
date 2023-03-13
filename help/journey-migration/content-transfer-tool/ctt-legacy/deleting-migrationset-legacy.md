@@ -1,5 +1,5 @@
 ---
-title: Exclusão de um conjunto de migração na ferramenta Transferência de conteúdo (herdada)
+title: Exclusão de um conjunto de migração na Ferramenta de transferência de conteúdo (herdado)
 description: Exclusão de um conjunto de migração na ferramenta Transferência de conteúdo
 hide: true
 hidefromtoc: true
@@ -19,7 +19,7 @@ Você pode excluir o conjunto de migração na página *Visão geral.*
 
 Siga as etapas abaixo:
 
-1. Navegue até o **Transferência de conteúdo** , selecione o conjunto de migração que deseja excluir e clique em **Excluir** na barra de ações.
+1. Navegue até a **Transferência de conteúdo** e selecione o conjunto de migração que deseja excluir e clique em **Excluir** na barra de ações.
 
    ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/migration-delete1.png)
 

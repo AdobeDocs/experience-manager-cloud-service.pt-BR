@@ -16,13 +16,13 @@ Entenda como usar e administrar o Experience Manager Content and Commerce as a C
 
 >[!NOTE]
 >
->Para obter AEM conteúdo e comércio com o AEM 6.5 e a CIF clássica, consulte [AEM 6.5 Conteúdo e comércio](https://experienceleague.adobe.com/docs/experience-manager-65/commerce/home.html).
+>Para Conteúdo e Comércio de AEM com AEM 6.5 e CIF clássica, consulte [AEM 6.5 Comércio e conteúdo](https://experienceleague.adobe.com/docs/experience-manager-65/commerce/home.html).
 
-## Artigos-chave sobre conteúdo e comércio {#key-articles}
+## Principais artigos sobre conteúdo e comércio {#key-articles}
 
-* [Introdução de conteúdo e comércio AEM](introduction.md)
-* [Introdução ao conteúdo e comércio AEM](/help/commerce-cloud/getting-started.md)
-* [Desenvolvimento de conteúdo e comércio AEM](/help/commerce-cloud/develop.md)
+* [Introdução ao conteúdo e ao comércio do AEM](introduction.md)
+* [Introdução ao conteúdo e comércio de AEM](/help/commerce-cloud/getting-started.md)
+* [Desenvolvimento de conteúdo e comércio de AEM](/help/commerce-cloud/develop.md)
 
 ## Guias do Experience Manager as a Cloud Service {#aem-guides}
 

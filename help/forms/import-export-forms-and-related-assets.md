@@ -1,7 +1,7 @@
 ---
 title: Importar e exportar ativos
 seo-title: Import and export assets to [!DNL AEM Forms]
-description: É possível importar e exportar o Adaptive Forms e ativos relacionados para instâncias AEM. Isso ajuda a migrar formulários ou movê-los pelos sistemas.
+description: Você pode importar e exportar o Adaptive Forms e ativos relacionados para instâncias AEM. Isso ajuda a migrar formulários ou movê-los entre sistemas.
 seo-description: You can import and export Adaptive Forms and templates from and in to AEM instances. This helps in migrating forms or moving them across systems.
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
@@ -13,63 +13,63 @@ ht-degree: 1%
 
 # Importar e exportar ativos {#importing-and-exporting-assets-to-aem-forms}
 
-É possível mover formulários, temas, modelos, fragmentos de documentos, temas e outros ativos entre diferentes [!DNL AEM Forms] instâncias. Esse movimento é necessário ao migrar sistemas ou mover formulários de um servidor de desenvolvimento ou de preparo para um servidor de produção.
+Você pode mover formulários, temas, modelos, fragmentos de documentos, temas e outros ativos entre diferentes [!DNL AEM Forms] instâncias. Esse movimento é necessário ao migrar sistemas ou mover formulários de um servidor de desenvolvimento ou de preparo para um servidor de produção.
 
-Para os ativos para os quais upload e importação via [!DNL AEM Forms] A interface do usuário é compatível, o uso da interface do usuário do Forms é a maneira recomendada para exportar ou importar. Não é recomendado usar o Gerenciador de pacotes AEM para exportar ou importar esses ativos.
+Para os ativos para os quais carregar e importar por meio da variável [!DNL AEM Forms] A interface do usuário é compatível, usar a interface do usuário do Forms é a maneira recomendada para exportar ou importar. Não é recomendado usar o Gerenciador de pacotes AEM para exportar ou importar esses ativos.
 
-## Baixar ou carregar ativos do Forms &amp; Documents {#download-or-upload-forms-amp-documents-assets}
+## Baixar ou carregar ativos da Forms e de documentos {#download-or-upload-forms-amp-documents-assets}
 
-[!DNL AEM Forms] a interface do usuário do permite exportar ativos de uma instância do AEM baixando-os como um pacote CRX ou arquivos binários AEM. Em seguida, você pode importar o pacote AEM CRX baixado ou o arquivo binário para outra instância AEM.
+[!DNL AEM Forms] A interface do usuário do permite exportar ativos de uma instância do AEM baixando-os como um pacote AEM CRX ou arquivos binários. Você pode importar o pacote AEM CRX baixado ou o arquivo binário para outra instância do AEM.
 
-Exportar e importar via [!DNL AEM Forms] a interface do usuário é compatível com todos os ativos, exceto os modelos de formulário adaptável e as políticas de conteúdo do formulário adaptável. Portanto, ao exportar um formulário adaptável de [!DNL AEM Forms] Interface do usuário, o modelo de formulário adaptável relacionado e as políticas de conteúdo não são exportados automaticamente como outros ativos relacionados.
+Exportar e importar via [!DNL AEM Forms] A interface do usuário é compatível com todos os ativos, exceto os modelos de Formulário adaptável e as políticas de conteúdo do Formulário adaptável. Portanto, ao exportar um Formulário adaptável do [!DNL AEM Forms] , o modelo de Formulário adaptável relacionado e as políticas de conteúdo não são exportados automaticamente como outros ativos relacionados.
 
-Para esses tipos de ativos, você deve usar AEM Gerenciador de Pacotes para criar um pacote CRX no servidor de AEM de origem e instalar o pacote no servidor de destino. Para obter informações sobre como criar e instalar pacotes, consulte [Implantação para AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=pt-BR).
+Para esses tipos de ativos, você deve usar o Gerenciador de pacotes AEM para criar um pacote CRX no servidor AEM de origem e instalar o pacote no servidor de destino. Para obter informações sobre a criação e instalação de pacotes, consulte [Implantação no AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=pt-BR).
 
-### Baixar ativos do Forms &amp; Documents {#download-forms-amp-documents-assets}
+### Baixar ativos da Forms e de documentos {#download-forms-amp-documents-assets}
 
-Para baixar os ativos Forms &amp; Documents :
+Para baixar os ativos do Forms e do Documents:
 
 1. Faça logon no [!DNL AEM Forms] instância.
-1. Toque em Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) ícone > navegação ![bússola](assets/Smock_Compass_18_N.svg) ícone> **[!UICONTROL Forms]** > **[!UICONTROL Forms &amp; Documents]**.
-1. Selecione os ativos de formulários e toque no **[!UICONTROL Baixar]** ícone .
-1. Em Baixar ativo(s), escolha uma das opções a seguir e toque em **[!UICONTROL Baixar]**.
+1. Toque em Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) ícone > navegação ![bússola](assets/Smock_Compass_18_N.svg) ícone> **[!UICONTROL Forms]** > **[!UICONTROL Forms e documentos]**.
+1. Selecione os ativos de formulários e toque no **[!UICONTROL Baixar]** ícone.
+1. Em Baixar ativo(s), escolha uma das seguintes opções e toque em **[!UICONTROL Baixar]**.
 
-   * **Baixar como pacote CRX:** Use a opção para baixar e mover todos os ativos selecionados e dependências relacionadas de um [!DNL AEM Forms] para outra. Ele baixa todos os ativos e pastas como pacote crx. Qualquer ativo(s) de formulário, incluindo os formulários criados em AEM (Adaptive Forms e Adaptive Form Fragments), documentos PDF e recursos (XSDs, XFS, imagens) podem ser baixados como pacote a partir de [!DNL AEM Forms] IU.
-A vantagem de baixar ativos como pacote é que ele também baixa ativos que foram usados pelo ativo selecionado para download. Por exemplo, se você tiver um formulário adaptável que use um modelo de formulário, XSD e uma imagem. Ao selecionar esse formulário adaptável e baixá-lo como pacote, o pacote baixado também contém o modelo de formulário, o XSD e a imagem. Todas as propriedades de metadados (incluindo propriedades personalizadas) associadas ao ativo também são baixadas.
+   * **Baixar como Pacote CRX:** Use a opção para baixar e mover todos os ativos selecionados e as dependências relacionadas de um [!DNL AEM Forms] instância para outra. Ele baixa todos os ativos e pastas como pacote crx. Qualquer ativo de formulário, incluindo os formulários criados em AEM (Fragmentos adaptáveis de Forms e formulário adaptável), documentos PDF e recursos (XSDs, XFS, imagens) podem ser baixados como pacote em [!DNL AEM Forms] IU.
+A vantagem de baixar ativos como pacote é que ele também baixa ativos que foram usados pelo ativo selecionado para download. Por exemplo, se você tiver um formulário adaptável que usa um modelo de formulário, XSD e uma imagem. Ao selecionar esse Formulário adaptável e baixá-lo como pacote, o pacote baixado também conterá o modelo de formulário, o XSD e a imagem. Todas as propriedades de metadados (incluindo propriedades personalizadas) associadas ao ativo também são baixadas.
 
-   * **Baixar ativos como arquivos binários:** Use a opção para baixar somente modelos de formulário (XDP), PDF forms (PDF), documento (PDF) e recursos (imagens, esquemas, folhas de estilos). É possível editar esses ativos com aplicativos externos. Ele baixa os ativos de formulários que têm binários, como XSDs, XDPs, imagens, PDF e XDPs como um arquivo .zip.
-Não é possível baixar o Adaptive Forms, Fragmentos de formulário adaptável e temas com **[!UICONTROL Baixar ativos como arquivos binários]** opção. Para baixar esses ativos, você deve usar **[!UICONTROL Baixar como pacote CRX]** opção.
+   * **Baixar ativos como arquivos binários:** Use a opção para baixar somente os modelos de formulário (XDP), PDF forms (PDF), documento (PDF) e recursos (imagens, esquemas, folhas de estilos). É possível editar esses ativos com aplicativos externos. Ele baixa os ativos de formulários que têm binários, como XSDs, XDPs, imagens, PDF e XDPs como um arquivo .zip.
+Não é possível baixar o Forms adaptável, fragmentos de formulário adaptável e temas, com **[!UICONTROL Baixar ativos como arquivos binários]** opção. Para baixar esses ativos, você deve usar **[!UICONTROL Baixar como pacote CRX]** opção.
 
-   Os ativos selecionados são baixados como um arquivo morto (arquivo .zip).
+   Os ativos selecionados são baixados como um arquivo (arquivo .zip).
 
    >[!NOTE]
    >
-   >O pacote AEM e os arquivos binários são baixados como um arquivo (arquivo .zip). Os modelos para os ativos não são baixados junto com os ativos. É necessário exportar os modelos de ativos separadamente.
+   >O pacote AEM e os arquivos binários são baixados como um arquivo (arquivo .zip). Os modelos dos ativos não são baixados junto com os ativos. É necessário exportar os modelos de ativos separadamente.
 
 ### Fazer upload de ativos {#upload-forms-amp-documents-assets}
 
-Para fazer upload dos ativos Forms &amp; Documents :
+Para fazer upload de ativos do Forms e do Documents:
 
 1. Faça logon no [!DNL AEM Forms] instância.
-1. Toque em Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) ícone > navegação ![bússola](assets/Smock_Compass_18_N.svg) ícone> **[!UICONTROL Forms]** > **[!UICONTROL Forms &amp; Documents]**.
-1. Toque **Criar** >**Upload de arquivo**. Uma caixa de diálogo carregar formulários ou pacotes é exibida.
-1. Na caixa de diálogo , navegue e selecione o pacote ou o arquivo a ser importado. Você também pode selecionar PDF document, XSDs, imagens, folhas de estilos e formulários XDP. Toque **[!UICONTROL Abrir]**. A pasta ou o nome de arquivo selecionado não deve incluir caracteres especiais.
+1. Toque em Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) ícone > navegação ![bússola](assets/Smock_Compass_18_N.svg) ícone> **[!UICONTROL Forms]** > **[!UICONTROL Forms e documentos]**.
+1. Toque **Criar** >**Upload de arquivo**. Uma caixa de diálogo Carregar formulários ou pacote é exibida.
+1. Na caixa de diálogo, procure e selecione o pacote ou o arquivo a ser importado. Você também pode selecionar o documento PDF, XSDs, imagens, folhas de estilos e formulários XDP. Toque **[!UICONTROL Abertura]**. A pasta ou o nome de arquivo selecionado não deve incluir caracteres especiais.
 
-   Na caixa de diálogo, verifique os detalhes dos ativos que estão sendo carregados e toque em **[!UICONTROL Upload]**.
+   Na caixa de diálogo, verifique os detalhes dos ativos que estão sendo carregados e toque em **[!UICONTROL Carregar]**.
 
-   Caso faça upload de um ativo de formulários existente, o ativo é atualizado.
+   Caso você carregue um ativo de formulários existente, o ativo é atualizado.
 
    >[!NOTE]
    >
-   >O upload de um pacote não substitui a hierarquia de pastas existente. Por exemplo, se você tiver um formulário adaptável chamado &quot;Treinamento&quot; no local /content/dam/formsanddocuments em um servidor. Você faz o download do Formulário adaptável e faz o upload do formulário em outro servidor. O segundo servidor também tem uma pasta com o nome &#39;Treinamento&#39; no mesmo local /content/dam/formsanddocuments. O upload falha.
+   >O carregamento de um pacote não substitui a hierarquia de pastas existente. Por exemplo, se você tiver um formulário adaptável chamado &quot;Treinamento&quot; no local /content/dam/formsanddocuments em um servidor. Você baixou o Formulário adaptável e carregou o formulário em outro servidor. O segundo servidor também tem uma pasta com o nome &#39;Training&#39; no mesmo local /content/dam/formsanddocuments. Falha no upload.
 
 ## Download ou upload de um tema {#downloading-or-uploading-a-theme}
 
-Com [!DNL AEM Forms], você pode criar, baixar ou fazer upload de temas. Um tema é criado como outros ativos, como formulários, documentos e cartas. Você pode criar um tema, baixá-lo e carregá-lo em uma instância separada para reutilizá-lo. Para obter mais informações sobre temas, consulte [Temas](themes.md) em [!DNL AEM Forms].
+Com [!DNL AEM Forms], você pode criar, baixar ou carregar temas. Um tema é criado como outros ativos, como formulários, documentos e cartas. É possível criar um tema, baixá-lo e carregá-lo em uma instância separada para reutilizá-lo. Para obter mais informações sobre temas, consulte [Temas](themes.md) in [!DNL AEM Forms].
 
 ### Download de um tema {#downloading-a-theme}
 
-É possível exportar temas em [!DNL AEM Forms] que você pode usar em outros projetos ou instâncias. AEM permite baixar o tema como um arquivo zip, que você pode fazer upload na instância.
+É possível exportar temas no [!DNL AEM Forms] que você pode usar em outros projetos ou instâncias. O AEM permite baixar temas como um arquivo zip, que você pode carregar na instância.
 
 Para baixar um tema:
 
@@ -77,15 +77,15 @@ Para baixar um tema:
 1. Toque em Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) ícone > navegação ![bússola](assets/Smock_Compass_18_N.svg) ícone> **[!UICONTROL Forms]** > **[!UICONTROL Temas]**.
 1. Selecione o tema e toque em **[!UICONTROL Baixar]**. O tema é baixado como um arquivo (arquivo .zip).
 
-### Fazer upload de um tema {#uploading-a-theme}
+### Carregamento de um tema {#uploading-a-theme}
 
-É possível usar os temas criados com predefinições de estilização em seu projeto. Você pode importar pacotes de temas criados por outras pessoas, carregando-os no seu projeto.
+Você pode usar temas criados com predefinições de estilo em seu projeto. Você pode importar pacotes de temas que outras pessoas criam carregando-os no seu projeto.
 
 Para fazer upload de um tema:
 
 1. No Experience Manager, navegue até **[!UICONTROL Forms]** > **[!UICONTROL Temas do Forms]**.
-1. Na página Temas , clique em **[!UICONTROL Criar Forms]** > **[!UICONTROL Upload de arquivo Forms]**.
-1. No prompt Upload de arquivo, procure e selecione um pacote de temas no seu computador e clique em **[!UICONTROL Upload do Forms]**. O tema é carregado.
+1. Na página Temas, clique em **[!UICONTROL Criar Forms]** > **[!UICONTROL Upload de arquivo do Forms]**.
+1. No prompt File Upload (Upload de arquivo), procure e selecione um pacote de temas no computador e clique em **[!UICONTROL Upload do Forms]**. O tema é carregado.
 
 <!--
 
@@ -162,25 +162,25 @@ You can import assets that are exported into a .cmp file. A .cmp file can have o
 
 ## Exportar um aplicativo de fluxo de trabalho {#export-a-workflow-application}
 
-Você pode usar AEM gerenciador de pacotes para exportar aplicativos de fluxo de trabalho. O procedimento está listado abaixo:
+Você pode usar o gerenciador de pacotes AEM para exportar aplicativos de workflow. O procedimento é conforme listado abaixo:
 
-1. Abrir [!DNL AEM Forms] gerenciador de pacotes.
-1. Clique em **[!UICONTROL Criar pacote]**. O **[!UICONTROL Novo pacote]** será exibida.
+1. Abertura [!DNL AEM Forms] gerenciador de pacotes.
+1. Clique em **[!UICONTROL Criar pacote]**. A variável **[!UICONTROL Novo pacote]** é exibida.
 1. Especifique o nome, a versão e o grupo do pacote. Clique em **[!UICONTROL OK]**.
-1. Clique em **[!UICONTROL Editar]** e abra o **[!UICONTROL Filtros]** guia . Clique em **[!UICONTROL Adicionar filtro]**. Especifique o caminho do aplicativo de fluxo de trabalho. Por exemplo, /etc/fd/dashboard/startpoints/homemortgauge. Clique em **[!UICONTROL Adicionar regra]**.
+1. Clique em **[!UICONTROL Editar]** e abra o **[!UICONTROL Filtros]** guia. Clique em **[!UICONTROL Adicionar filtro]**. Especifique o caminho do aplicativo de workflow. Por exemplo, /etc/fd/dashboard/startpoints/homemortgage. Clique em **[!UICONTROL Adicionar regra]**.
 
-1. Abra a guia **[!UICONTROL Avançado.]** Selecionar **[!UICONTROL Mesclar]** ou **[!UICONTROL Substituir]** no campo Manuseio de ACL. Clique em **[!UICONTROL Salvar]**.
-1. Clique em **[!UICONTROL Criar]** para criar o pacote.
+1. Abra a guia **[!UICONTROL Avançado.]** Selecionar **[!UICONTROL Mesclar]** ou **[!UICONTROL Substituir]** no campo Tratamento de ACL. Clique em **[!UICONTROL Salvar]**.
+1. Clique em **[!UICONTROL Build]** para criar o pacote.
 
-   Após a criação do pacote, é possível baixá-lo e importá-lo para o outro servidor. O aplicativo de workflow aparece no servidor onde o pacote é carregado.
+   Depois que o pacote for criado, é possível baixá-lo e importá-lo para o outro servidor. O aplicativo de workflow aparece no servidor onde o pacote é carregado.
 
    >[!NOTE]
    >
    >Para que o aplicativo de fluxo de trabalho funcione corretamente, exporte também o formulário adaptável correspondente e o modelo de fluxo de trabalho com o aplicativo de trabalho.
 
-## Pastas e ativos organizacionais {#folders-and-organizing-assets}
+## Pastas e organização de ativos {#folders-and-organizing-assets}
 
-[!DNL AEM Forms] a interface do usuário usa pastas para organizar ativos. Essas pastas são usadas para organizar ativos criados no [!DNL AEM Forms] interface do usuário. É possível renomear, criar subpastas e armazenar ativos e documentos nessas pastas. Organizar documentos e ativos em uma pasta permite agrupar os arquivos para fácil gerenciamento. Você pode selecionar uma pasta e optar por baixá-la ou excluí-la.
+[!DNL AEM Forms] A interface do usuário do usa pastas para organizar ativos. Essas pastas são usadas para organizar ativos criados no [!DNL AEM Forms] interface do usuário. Você pode renomear, criar subpastas e armazenar ativos e documentos nessas pastas. Organizar documentos e ativos em uma pasta permite agrupar os arquivos para facilitar o gerenciamento. Você pode selecionar uma pasta e escolher baixá-la ou excluí-la.
 
 Para criar uma pasta, conclua as seguintes etapas:
 
@@ -191,18 +191,18 @@ Para criar uma pasta, conclua as seguintes etapas:
 1. Toque **[!UICONTROL Criar]** > **[!UICONTROL Pasta]**.
 1. Insira os seguintes detalhes:
 
-   * **Título:** Nome de exibição para a pasta
-   * **Nome:** *(Obrigatório)* O nome do nó no qual você deseja armazenar a pasta no repositório
+   * **Título:** Nome de exibição da pasta
+   * **Nome:** *(Obrigatório)* O nome do nó sob o qual você deseja armazenar a pasta no repositório
 
    >[!NOTE]
    >
-   >Por padrão, o valor do campo de nome é preenchido automaticamente a partir do título. O nome só pode conter caracteres alfanuméricos ou os caracteres especiais de hífen (-) e sublinhado (_). Quaisquer outros caracteres especiais inseridos no título serão substituídos automaticamente por um hífen e você será solicitado a confirmar o novo nome. Você pode optar por continuar com o nome sugerido ou editá-lo ainda mais.
+   >Por padrão, o valor do campo de nome é preenchido automaticamente a partir do título. O nome só pode conter caracteres alfanuméricos ou os caracteres especiais de hífen (-) e sublinhado (_). Quaisquer outros caracteres especiais inseridos no título são substituídos automaticamente por um hífen e você será solicitado a confirmar o novo nome. Você pode optar por continuar com o nome sugerido ou fazer mais edições.
 
 1. Uma nova pasta com o título definido é exibida no local atual na lista de ativos.
 
-   Se existir uma pasta com o nome especificado, o envio falhará com um erro. Você pode exibir a mensagem de erro passando o mouse sobre o erro ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) ícone que aparece ao lado do campo de nome.
+   Se existir uma pasta com o nome especificado, o envio falha com um erro. Você pode exibir a mensagem de erro passando o cursor do mouse sobre ele ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) ícone que aparece ao lado do campo de nome.
 
-   Toque na pasta recém-criada para entrar na pasta e criar ativos ou pastas dentro dela. Além disso, você pode selecionar uma pasta e escolher colocá-la em fila para download, excluí-la ou editar seu nome.
+   Toque na pasta recém-criada para entrar na pasta e criar ativos ou pastas dentro dela. Além disso, você pode selecionar uma pasta e optar por colocá-la na fila para download, excluí-la ou editar seu nome.
 
 <!-- ### Create copies of one or more assets or letters {#create-copies-of-one-or-more-assets-or-letters}
 

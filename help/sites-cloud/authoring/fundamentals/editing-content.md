@@ -2,8 +2,8 @@
 title: Editar conteúdo da página
 description: Uma vez que a sua página é criada, você poderá editar o conteúdo para fazer atualizações necessárias
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 2bfabfc2c12faf6f813ecd5b11b289117724d9ec
-workflow-type: ht
+source-git-commit: 81d58f25af8b023774ce8653154597d92a7ac70b
+workflow-type: tm+mt
 source-wordcount: '3019'
 ht-degree: 100%
 
@@ -541,5 +541,5 @@ Você pode usar os comandos desfazer e refazer para os seguintes tipos de altera
 >* Permissões especiais são necessárias para desfazer e refazer as alterações nos arquivos e imagens.
 >* O histórico de alterações em arquivos e imagens dura um mínimo de dez horas. Entretanto, além desse tempo, desfazer as alterações não é garantido. O administrador pode alterar a duração padrão de dez horas.
 >* O administrador do sistema pode configurar vários aspectos dos recursos desfazer/refazer de acordo com os requisitos de sua ocorrência.
+   <!--* Your system administrator can [configure various aspects of the Undo/Redo features](/help/sites-administering/config-undo.md) according to the requirements for your instance.-->
 
-<!--* Your system administrator can [configure various aspects of the Undo/Redo features](/help/sites-administering/config-undo.md) according to the requirements for your instance.-->

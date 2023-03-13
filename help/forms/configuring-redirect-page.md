@@ -14,19 +14,19 @@ ht-degree: 0%
 
 # Configuração da página de redirecionamento {#configuring-redirect-page}
 
-Os autores de formulários podem configurar uma página para cada formulário, para a qual os usuários do formulário são redirecionados após enviar um formulário.
+Os autores de formulários podem configurar uma página para cada formulário, para a qual os usuários são redirecionados após enviarem um formulário.
 
-1. No modo de edição, selecione um componente e clique em ![nível de campo](assets/select_parent_icon.svg) > **[!UICONTROL Contêiner de formulário adaptável]** e, em seguida, clique em ![cmppr](assets/configure-icon.svg).
+1. No modo de edição, selecione um componente e clique em ![nível de campo](assets/select_parent_icon.svg) > **[!UICONTROL Contêiner de formulário adaptável]** e clique em ![cmppr](assets/configure-icon.svg).
 
-1. Na barra lateral, clique em **[!UICONTROL Submissão]**.
+1. Na barra lateral, clique em **[!UICONTROL Envio]**.
 
-1. Forneça o URL da página de redirecionamento em **[!UICONTROL Redirecionar URL/caminho]** no **[!UICONTROL Submissão]** seção.
-1. Como opção, em Enviar ação, para a ação Enviar para o ponto de extremidade REST, você pode configurar o parâmetro a ser transmitido à página de redirecionamento.
+1. Forneça o URL da página de redirecionamento em **[!UICONTROL URL/caminho de redirecionamento]** no **[!UICONTROL Envio]** seção.
+1. Como opção, em Enviar ação, para a ação de endpoint Enviar para REST, é possível configurar o parâmetro a ser transmitido para a página de redirecionamento.
 
-   ![Redirecionar configuração da página](assets/redirect-url.png)
+   ![Redirecionar configuração de página](assets/redirect-url.png)
 
-   Redirecionar configuração da página
+   Redirecionar configuração de página
 
-Os autores de formulários podem usar os seguintes parâmetros passados para a página de agradecimento. Para todas as ações de envio disponíveis, `status` e `owner` parâmetros são passados. Além desses dois parâmetros, alguns parâmetros adicionais são passados para as seguintes Ações de envio:
+Os autores de formulário podem usar os seguintes parâmetros que são passados para a página Thank you. Para todas as ações enviar disponíveis, `status` e `owner` parâmetros são transmitidos. Além desses dois parâmetros, alguns parâmetros adicionais são transmitidos para as seguintes Ações de envio:
 
-* **[!UICONTROL Enviar para ponto de extremidade REST]**: Os parâmetros adicionados para mapeamento de parâmetro no campo são passados. `status` e `owner` parâmetros não são passados nesta Ação de envio. Para obter mais informações, consulte [Configuração da ação Enviar para o endpoint REST Enviar](configuring-submit-actions.md).
+* **[!UICONTROL Enviar para endpoint REST]**: os parâmetros adicionados para o mapeamento no campo para o parâmetro são transmitidos. `status` e `owner` Os parâmetros do não são transmitidos nesta Ação de envio. Para obter mais informações, consulte [Configuração da ação enviar Enviar para endpoint REST](configuring-submit-actions.md).

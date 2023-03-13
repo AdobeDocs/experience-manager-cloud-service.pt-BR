@@ -14,17 +14,17 @@ ht-degree: 29%
 >[!CONTEXTUALHELP]
 >id="aemcloud_bpa_overview"
 >title="Visão geral do Analisador de práticas recomendadas"
->abstract="O Analisador de práticas recomendadas fornece uma avaliação da implementação de AEM atual, indicando áreas que não estão seguindo AEM práticas recomendadas. Também fornece orientação sobre as próximas etapas para adotar AEM práticas recomendadas. Além disso, ajuda a acelerar os processos de avaliação da prontidão para migrar de uma implantação do Adobe Experience Manager (AEM) existente para AEM as a Cloud Service."
+>abstract="O Analisador de práticas recomendadas fornece uma avaliação de sua implementação de AEM atual, indicando áreas que não estão seguindo as práticas recomendadas de AEM. Também fornece orientação sobre as próximas etapas para adotar as práticas recomendadas para o AEM. Além disso, ajuda a acelerar os processos de avaliação da prontidão para mudar de uma implantação existente do Adobe Experience Manager (AEM) para o AEM as a Cloud Service."
 
-O Analisador de práticas recomendadas fornece uma avaliação da implementação de AEM atual, indicando áreas que não estão seguindo AEM práticas recomendadas. Também fornece orientação sobre as próximas etapas para adotar AEM práticas recomendadas. Além disso, ajuda a acelerar os processos de avaliação da prontidão para migrar de uma implantação do Adobe Experience Manager (AEM) existente para AEM as a Cloud Service.
+O Analisador de práticas recomendadas fornece uma avaliação de sua implementação de AEM atual, indicando áreas que não estão seguindo as práticas recomendadas de AEM. Também fornece orientação sobre as próximas etapas para adotar as práticas recomendadas para o AEM. Além disso, ajuda a acelerar os processos de avaliação da prontidão para mudar de uma implantação existente do Adobe Experience Manager (AEM) para o AEM as a Cloud Service.
 
 Essa ferramenta gera um relatório que identifica áreas de refatoração potencial, que é o primeiro passo na jornada da transição para o AEM as a Cloud Service.
 
 ## Relatório do Analisador de práticas recomendadas {#bpa-report}
 
-O Relatório do Analisador de práticas recomendadas é usado para obter um alto nível de compreensão da disponibilidade geral de atualização. O relatório consiste em conclusões em categorias de problemas que devem ser abordados antes de uma implantação bem-sucedida no AEM as a Cloud Service.
+O Relatório do Analisador de práticas recomendadas é usado para obter um alto nível de compreensão da disponibilidade geral para atualização. O relatório consiste em conclusões em categorias de problemas que devem ser abordados antes de uma implantação bem-sucedida no AEM as a Cloud Service.
 
-O relatório do Analisador de práticas recomendadas inclui as seguintes categorias:
+O relatório Analisador de práticas recomendadas inclui as seguintes categorias:
 
 * Funcionalidade do aplicativo que deve ser refatorado
 * Itens do repositório que devem ser movidos para um local com suporte
@@ -35,6 +35,6 @@ O relatório do Analisador de práticas recomendadas inclui as seguintes categor
 Informações adicionais sobre as categorias e possíveis implicações e soluções associadas a essas categorias são fornecidas por meio de links do Relatório do Analisador de práticas recomendadas.
 
 >[!NOTE]
->O Relatório do Analisador de Práticas Recomendadas acelera o processo de estimativa do tempo e custo necessários para a transição para o AEM as a Cloud Service, fornecendo informações que de outra forma precisariam ser coletadas e avaliadas manualmente.
+>O Relatório do Analisador de práticas recomendadas acelera o processo de estimativa do tempo e o custo necessário para a transição para o AEM as a Cloud Service, fornecendo informações que de outra forma precisariam ser coletadas e avaliadas manualmente.
 
-Também é possível baixar o relatório do Analisador de práticas recomendadas da instância do AEM. Consulte [Como visualizar o relatório do Analisador de práticas recomendadas](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report) para obter mais detalhes.
+Você também pode baixar o relatório do Analisador de práticas recomendadas da sua instância do AEM. Consulte [Exibição do relatório do Analisador de práticas recomendadas](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report) para obter mais detalhes.

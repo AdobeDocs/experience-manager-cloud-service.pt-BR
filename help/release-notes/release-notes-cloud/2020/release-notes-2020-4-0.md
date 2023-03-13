@@ -49,7 +49,7 @@ Saiba mais sobre novos recursos, melhorias e correções de erros do [!DNL Exper
 >
 >* [Sobre o Adobe Asset Link](https://www.adobe.com/br/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [Configurar Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)
->* [Configurar Experience Manager para funcionar com o Asset Link](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html)
+>* [Configurar Experience Manager para funcionar com o Asset Link](https://helpx.adobe.com/br/enterprise/using/configure-aem-assets-for-asset-link.html)
 >* [Criar fluxo de trabalho no Experience Manager usando microsserviços de ativos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
 
 

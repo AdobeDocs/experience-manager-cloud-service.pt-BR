@@ -2,7 +2,7 @@
 title: Metadados - Propriedades do fragmento (Ativos - Fragmentos de conteúdo)
 description: Veja como visualizar e editar as propriedades de metadados dos fragmentos de conteúdo do
 exl-id: bc67480d-a1e4-4ef9-b811-8bd110f70369
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
 workflow-type: tm+mt
 source-wordcount: '202'
 ht-degree: 87%
@@ -11,7 +11,7 @@ ht-degree: 87%
 
 # Metadados - propriedades dos fragmentos {#metadata-fragment-properties}
 
-Veja como visualizar e editar as propriedades de metadados dos Fragmentos de conteúdo no AEM para ajustar o conteúdo sem cabeçalho.
+Veja como visualizar e editar as propriedades de metadados dos fragmentos de conteúdo no AEM para ajustar o conteúdo headless.
 
 ## Edição de propriedades / metadados {#editing-properties-meta-data}
 

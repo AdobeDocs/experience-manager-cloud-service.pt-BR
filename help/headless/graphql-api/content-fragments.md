@@ -3,7 +3,7 @@ title: API GraphQL do AEM para uso com Fragmentos de conteúdo
 description: Saiba como usar os Fragmentos de conteúdo no Adobe Experience Manager (AEM) as a Cloud Service com a API GraphQL do AEM, para entrega de conteúdo headless.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 0fe0bd301fb09cdc631878926f2e40df51a2cc23
+source-git-commit: cda6d7e382b090fd726b27e565da08c8b1c80008
 workflow-type: tm+mt
 source-wordcount: '4203'
 ht-degree: 99%
@@ -249,7 +249,7 @@ O GraphQL do AEM oferece suporte a uma lista de tipos. Todos os tipos de dados d
 | Enumeração | Sequência de caracteres | Usado para exibir uma opção de uma lista de opções definidas na criação do modelo |
 | Tags | [Sequência de caracteres] | Usado para exibir uma lista de sequências de caracteres que representam tags usadas no AEM |
 | Referência de conteúdo | Sequência de caracteres, [Sequência de caracteres] | Usado para exibir o caminho para outro ativo no AEM |
-| Referência do fragmento | *Um tipo de modelo* | Usado para fazer referência a outro Fragmento de conteúdo de um determinado Tipo de modelo, definido quando o modelo foi criado |
+| Referência de fragmento | *Um tipo de modelo* | Usado para fazer referência a outro Fragmento de conteúdo de um determinado Tipo de modelo, definido quando o modelo foi criado |
 
 ### Campos auxiliares {#helper-fields}
 
@@ -558,7 +558,7 @@ Para obter mais exemplos, consulte:
 
 >[!NOTE]
 >
->Para melhor desempenho, considere [Atualização dos fragmentos de conteúdo para paginação e classificação na filtragem do GraphQL](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md).
+>Para obter o melhor desempenho, considere [Atualização dos fragmentos de conteúdo para paginação e classificação na filtragem do GraphQL](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md).
 
 Esse recurso permite classificar os resultados da consulta de acordo com um campo especificado.
 
@@ -625,7 +625,7 @@ query {
 
 >[!NOTE]
 >
->Para melhor desempenho, considere [Atualização dos fragmentos de conteúdo para paginação e classificação na filtragem do GraphQL](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md).
+>Para obter o melhor desempenho, considere [Atualização dos fragmentos de conteúdo para paginação e classificação na filtragem do GraphQL](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md).
 
 Esse recurso permite executar a paginação em tipos de consulta que retornam uma lista. Dois métodos são fornecidos:
 

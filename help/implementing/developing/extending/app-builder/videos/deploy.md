@@ -12,7 +12,7 @@ exl-id: 54ad1cbc-a8b5-44b2-b12c-24c530a5a929
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '52'
-ht-degree: 0%
+ht-degree: 30%
 
 ---
 
@@ -22,6 +22,6 @@ ht-degree: 0%
 >
 > _O Adobe Project Firefly, como mencionado nos vídeos desta série, agora é chamado de App Builder_
 
-Saiba mais sobre o significado de implantação do para o App Builder e como implantar seu aplicativo do App Builder usando a CLI do Adobe I/O.
+Saiba o que significa implantação para o App Builder e como implantar seu aplicativo do App Builder usando a CLI do Adobe I/O.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339250/?quality=12&learn=on)

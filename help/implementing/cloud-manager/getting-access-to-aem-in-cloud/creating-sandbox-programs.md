@@ -25,7 +25,7 @@ Siga estas etapas para criar um programa de sandbox.
 
    ![Página de aterrissagem do Cloud Manager](assets/first_timelogin1.png)
 
-1. No assistente de criação de programas, selecione **Configurar uma sandbox**, forneça um nome para o programa e clique em **Criar**.
+1. No assistente de criação de programas, selecione **Configure um sandbox**, forneça um nome para o programa e clique em **Criar**.
 
    ![Criação de tipo de programa](assets/create-sandbox.png)
 

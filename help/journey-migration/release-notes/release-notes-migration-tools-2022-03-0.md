@@ -1,6 +1,6 @@
 ---
-title: Notas de versão para Ferramentas de migração AEM versão as a Cloud Service 2022.3.0
-description: Notas de versão para Ferramentas de migração AEM versão as a Cloud Service 2022.3.0
+title: Notas de versão das Ferramentas de migração no AEM as a Cloud Service versão 2022.3.0
+description: Notas de versão das Ferramentas de migração no AEM as a Cloud Service versão 2022.3.0
 feature: Release Information
 exl-id: ab43605d-d46e-43de-b71f-fab610609550
 source-git-commit: 87e3291b4a72c24fc6cf8df488df305f1a078ea5
@@ -10,9 +10,9 @@ ht-degree: 86%
 
 ---
 
-# Notas de versão para Ferramentas de migração AEM versão as a Cloud Service 2022.3.0 {#release-notes}
+# Notas de versão das Ferramentas de migração no AEM as a Cloud Service versão 2022.3.0 {#release-notes}
 
-Esta página descreve as Notas de versão para as Ferramentas de migração AEM as a Cloud Service 2022.3.0.
+Esta página descreve as notas de versão das ferramentas de migração no AEM as a Cloud Service 2022.3.0.
 
 ## Analisador de práticas recomendadas {#bpa-release}
 

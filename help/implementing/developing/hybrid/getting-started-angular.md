@@ -1,29 +1,29 @@
 ---
-title: Introdução ao SPA no AEM usando o Angular
-description: Este artigo apresenta um exemplo de aplicativo SPA, explica como ele é montado e permite que você entre em funcionamento com seu próprio SPA rapidamente usando a estrutura do Angular.
+title: Introdução a SPAs no AEM usando o Angular
+description: Este artigo apresenta uma amostra de aplicativo SPA, explica como ele é montado e permite que você comece a usar seu próprio SPA rapidamente usando a estrutura do Angular.
 exl-id: 8013ac2c-d1a7-4940-bb65-15e3ed7652d6
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
 source-wordcount: '993'
-ht-degree: 4%
+ht-degree: 12%
 
 ---
 
-# Introdução ao SPA no AEM usando o Angular {#getting-started-with-spas-in-aem-using-angular}
+# Introdução a SPAs no AEM usando o Angular {#getting-started-with-spas-in-aem-using-angular}
 
-Aplicativos de página única (SPAs) podem oferecer experiências interessantes para usuários de sites. Os desenvolvedores desejam criar sites usando estruturas SPA e os autores desejam editar com facilidade o conteúdo no AEM para um site criado usando estruturas SPA.
+Aplicativos de página única (SPAs) podem oferecer experiências interessantes para usuários de sites. Os desenvolvedores desejam criar sites usando estruturas SPA, e os autores desejam editar o conteúdo no AEM para um site criado usando estruturas SPA.
 
-O recurso de criação de SPA oferece uma solução abrangente para oferecer suporte à SPA no AEM. Este artigo apresenta um aplicativo de SPA simplificado na estrutura do Angular, explica como ele é montado, permitindo que você entre em funcionamento com seu próprio SPA rapidamente.
+O recurso de criação do SPA oferece uma solução abrangente para oferecer suporte ao SPA no AEM. Este artigo apresenta um aplicativo simplificado de SPA na estrutura do Angular e explica como ele é montado, permitindo que você comece a usar seu próprio SPA rapidamente.
 
 >[!NOTE]
 >
->Este artigo é baseado na estrutura do Angular. Para o documento correspondente para o Quadro React, consulte [Introdução ao SPA no AEM - React](getting-started-react.md).
+>Este artigo é baseado na estrutura do Angular. Para o documento correspondente para o quadro do React, ver [SPA Introdução ao AEM - React](getting-started-react.md).
 
 ## Introdução {#introduction}
 
-Este artigo resume o funcionamento básico de um SPA simples e o mínimo que você precisa saber para executar o seu.
+Este artigo resume o funcionamento básico de um SPA simples e o mínimo que você precisa saber para que o seu funcione.
 
-Para obter mais detalhes sobre como SPA trabalhar no AEM, consulte os seguintes documentos:
+Para obter mais detalhes sobre como o SPA funciona no AEM, consulte os seguintes documentos:
 
 * [Introdução e passo a passo do SPA](introduction.md)
 * [Visão geral do editor de SPA](editor-overview.md)
@@ -31,19 +31,19 @@ Para obter mais detalhes sobre como SPA trabalhar no AEM, consulte os seguintes 
 
 >[!NOTE]
 >
->Para poder criar conteúdo em um SPA, o conteúdo deve ser armazenado no AEM e ser exposto pelo modelo de conteúdo.
+>Para ser capaz de criar conteúdo dentro de um SPA, o conteúdo deve ser armazenado no AEM e ser exposto pelo modelo de conteúdo.
 >
 >Um SPA desenvolvido fora do AEM não será autorável se não respeitar o contrato do modelo de conteúdo.
 
-Este documento abordará a estrutura de um SPA simplificado e ilustrará como ele funciona, para que você possa aplicar essa compreensão ao seu próprio SPA.
+Este documento abordará a estrutura de um SPA simplificado e ilustrará como ele funciona para que você possa aplicar essa compreensão ao seu próprio SPA.
 
 ## Dependências, configuração e criação {#dependencies-configuration-and-building}
 
-Além da dependência esperada do Angular, o SPA de amostra pode aproveitar bibliotecas adicionais para tornar a criação do SPA mais eficiente.
+Além da dependência de Angular esperada, a amostra SPA pode aproveitar bibliotecas adicionais para tornar a criação do SPA mais eficiente.
 
 ### Dependências {#dependencies}
 
-O `package.json` O arquivo define os requisitos do pacote de SPA geral. As dependências mínimas de AEM necessárias estão listadas aqui.
+A variável `package.json` define os requisitos do pacote SPA geral. As dependências mínimas necessárias do AEM estão listadas aqui.
 
 ```
 "dependencies": {
@@ -53,13 +53,13 @@ O `package.json` O arquivo define os requisitos do pacote de SPA geral. As depen
 }
 ```
 
-O `aem-clientlib-generator` O é aproveitado para tornar a criação de bibliotecas de clientes automática como parte do processo de criação.
+A variável `aem-clientlib-generator` O é aproveitado para tornar a criação de bibliotecas de clientes automática como parte do processo de criação.
 
 `"aem-clientlib-generator": "^1.4.1",`
 
 Mais detalhes podem ser encontrados [no GitHub aqui](https://github.com/wcm-io-frontend/aem-clientlib-generator).
 
-O `aem-clientlib-generator` é configurado no `clientlib.config.js` como mostrado a seguir.
+A variável `aem-clientlib-generator` está configurado no `clientlib.config.js` arquivo como segue.
 
 ```
 module.exports = {
@@ -90,27 +90,27 @@ module.exports = {
 
 ### Criando {#building}
 
-Na verdade, criar as alavancas do aplicativo [Webpack](https://webpack.js.org/) para transpilação, além do gerador aem-clientlib para criação automática de biblioteca do cliente. Portanto, o comando build será semelhante a:
+Criar o aplicativo realmente aproveita [Webpack](https://webpack.js.org/) para tradução, além do aem-clientlib-generator para criação automática da biblioteca do cliente. Portanto, o comando build será semelhante a:
 
 `"build": "ng build --build-optimizer=false && clientlib",`
 
-Depois de criado, o pacote pode ser carregado em uma instância de AEM.
+Depois de criado, o pacote pode ser carregado para uma instância AEM.
 
 ### Arquétipo de projeto do AEM {#aem-project-archetype}
 
-Qualquer projeto AEM deve aproveitar [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt_BR), que suporta projetos SPA usando o React ou Angular e aproveita o SDK SPA.
+Qualquer projeto do AEM deve utilizar o [Arquétipo de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR), que aceita projetos SPA que usam o React ou Angular e utiliza o SDK do SPA.
 
 ## Estrutura do aplicativo {#application-structure}
 
-Incluir as dependências e criar seu aplicativo conforme descrito anteriormente o colocará em funcionamento um pacote de SPA que você pode fazer upload para sua instância de AEM.
+Incluir as dependências e criar seu aplicativo conforme descrito anteriormente deixará você com um pacote de SPA que funciona e que você pode carregar para sua instância do AEM.
 
-A próxima seção deste documento abordará a estrutura de um SPA no AEM, os arquivos importantes que orientam o aplicativo e como eles trabalham juntos.
+A próxima seção deste documento abordará como um SPA no AEM está estruturado, os arquivos importantes que orientam o aplicativo e como eles funcionam juntos.
 
-Um componente de imagem simplificado é usado como exemplo, mas todos os componentes do aplicativo são baseados no mesmo conceito.
+Um componente de imagem simplificado é usado como exemplo, mas todos os componentes do aplicativo se baseiam no mesmo conceito.
 
 ### app.module.ts {#app-module-ts}
 
-O ponto de entrada no SPA é o `app.module.ts` arquivo mostrado aqui simplificado para se concentrar no conteúdo importante.
+O ponto de entrada no SPA é o `app.module.ts` O arquivo mostrado aqui foi simplificado para se concentrar no conteúdo importante.
 
 ```
 // app.module.ts
@@ -133,15 +133,15 @@ import { AppRoutingModule } from './app-routing.module';
 export class AppModule {}
 ```
 
-O `app.module.ts` O arquivo é o ponto inicial do aplicativo e contém a configuração inicial do projeto e os `AppComponent` para inicializar o aplicativo.
+A variável `app.module.ts` arquivo é o ponto inicial do aplicativo e contém a configuração inicial do projeto e usa `AppComponent` para inicializar o aplicativo.
 
-#### Instalação estática {#static-instantiation}
+#### Instanciação estática {#static-instantiation}
 
-Quando o componente é instanciado estaticamente usando o modelo de componente, o valor deve ser passado do modelo para as propriedades do componente. Os valores do modelo são passados como atributos para disponibilização posterior como propriedades do componente.
+Quando o componente é instanciado estaticamente usando o template do componente, o valor deve ser passado do modelo para as propriedades do componente. Os valores do modelo são passados como atributos para ficarem disponíveis posteriormente como propriedades de componente.
 
 ### app.component.ts {#app-component-ts}
 
-Uma vez `app.module.ts` bootstraps `AppComponent`, ele pode inicializar o aplicativo, que é mostrado aqui em uma versão simplificada para se concentrar no conteúdo importante.
+Uma vez `app.module.ts` bootstrap `AppComponent`, ele poderá inicializar o aplicativo, que é mostrado aqui em uma versão simplificada para se concentrar no conteúdo importante.
 
 ```
 // app.component.ts
@@ -206,11 +206,11 @@ export class MainContentComponent {
 }
 ```
 
-O `MainComponent` assimila a representação JSON do modelo de página e processa o conteúdo para envolver/decorar cada elemento da página. Mais detalhes sobre o `Page` pode ser encontrado no documento [SPA Blueprint](blueprint.md).
+A variável `MainComponent` A assimila a representação JSON do modelo de página e processa o conteúdo para envolver/decorar cada elemento da página. Mais detalhes sobre o `Page` pode ser encontrado no documento [Blueprint SPA](blueprint.md).
 
 ### image.component.ts {#image-component-ts}
 
-O `Page` é composto de componentes. Com o JSON assimilado, a variável `Page` pode processar esses componentes, como `image.component.ts` como mostrado aqui.
+A variável `Page` O é composto por componentes. Com o JSON assimilado, a variável `Page` podem processar esses componentes, como `image.component.ts` como mostrado aqui.
 
 ```
 /// image.component.ts
@@ -239,17 +239,17 @@ export class ImageComponent {
 MapTo('my-angular-app/components/image')(ImageComponent, ImageEditConfig);
 ```
 
-A ideia central de SPA no AEM é mapear componentes SPA para AEM componentes e atualizar o componente quando o conteúdo for modificado (e vice-versa). Consulte o documento [Visão geral do editor de SPA](editor-overview.md) para um resumo deste modelo de comunicação.
+A ideia central do AEM é a ideia de mapear componentes do SPA AEM para componentes do SPA e atualizar o componente quando o conteúdo é modificado (e vice-versa). Consulte o documento [Visão geral do editor de SPA](editor-overview.md) para obter um resumo deste modelo de comunicação.
 
 `MapTo('my-angular-app/components/image')(Image, ImageEditConfig);`
 
-O `MapTo` O método mapeia o componente de SPA para o componente de AEM. Ele suporta o uso de uma única string ou de uma matriz de strings.
+A variável `MapTo` O método mapeia o componente SPA para o componente AEM. Ele suporta o uso de uma única string ou uma matriz de strings.
 
-`ImageEditConfig` é um objeto de configuração que contribui para habilitar os recursos de criação de um componente, fornecendo os metadados necessários para que o editor gere espaços reservados
+`ImageEditConfig` é um objeto de configuração que contribui para habilitar os recursos de criação de um componente, fornecendo os metadados necessários para o editor gerar espaços reservados
 
 Se não houver conteúdo, os rótulos serão fornecidos como espaços reservados para representar o conteúdo vazio.
 
-#### Propriedades transmitidas dinamicamente {#dynamically-passed-properties}
+#### Propriedades passadas dinamicamente {#dynamically-passed-properties}
 
 Os dados provenientes do modelo são transmitidos dinamicamente como propriedades do componente.
 
@@ -264,16 +264,16 @@ Finalmente, a imagem pode ser renderizada em `image.component.html`.
 
 ## Compartilhamento de informações entre componentes do SPA {#sharing-information-between-spa-components}
 
-É necessário que os componentes em um aplicativo de página única compartilhem informações regularmente. Há várias maneiras recomendadas de fazer isso, listadas a seguir em uma ordem crescente de complexidade.
+É regularmente necessário que os componentes de um aplicativo de página única compartilhem informações. Há várias maneiras recomendadas de fazer isso, listadas a seguir em uma ordem crescente de complexidade.
 
-* **Opção 1:** Centralize a lógica e a transmissão para os componentes necessários, por exemplo, usando uma classe util como uma solução pura orientada a objetos.
-* **Opção 2:** Compartilhe estados do componente usando uma biblioteca de estado, como NgRx.
-* **Opção 3:** Aproveite a hierarquia de objetos personalizando e estendendo o componente do contêiner.
+* **Opção 1:** Centralize a lógica e a transmissão para os componentes necessários, por exemplo, usando uma classe util como uma solução puramente orientada a objetos.
+* **Opção 2:** Compartilhe estados do componente usando uma biblioteca de estado como NgRx.
+* **Opção 3:** Aproveite a hierarquia de objetos personalizando e estendendo o componente de contêiner.
 
 ## Próximas etapas {#next-steps}
 
-* [Introdução ao SPA no AEM usando o React](getting-started-react.md) mostra como um SPA básico é criado para funcionar com o Editor de SPA no AEM usando o React.
-* [Visão geral do editor de SPA](editor-overview.md) aprofunda o modelo de comunicação entre AEM e SPA.
-* [Projeto SPA WKND](wknd-tutorial.md) O é um tutorial passo a passo que implementa um projeto de SPA simples no AEM.
-* [Modelo dinâmico para mapeamento de componentes para SPA](model-to-component-mapping.md) explica o modelo dinâmico para o mapeamento de componentes e como ele funciona no SPA em AEM.
-* [SPA Blueprint](blueprint.md) O oferece um mergulho profundo em como o SDK do SPA para AEM funciona, caso você deseje implementar SPA em AEM para uma estrutura diferente de React ou Angular ou deseje simplesmente uma compreensão mais profunda.
+* O artigo [Introdução aos SPAs no AEM usando o React](getting-started-react.md) mostra como um SPA básico é desenvolvido para funcionar com o editor de SPA no AEM usando o React.
+* A [Visão geral do editor de SPA](editor-overview.md) aborda em detalhes o modelo de comunicação do AEM e do SPA.
+* [Projeto SPA WKND](wknd-tutorial.md) O é um tutorial passo a passo para a implementação de um projeto simples de SPA no AEM.
+* [Modelo dinâmico para mapeamento de componentes para SPA](model-to-component-mapping.md) SPA explica o modelo dinâmico para o mapeamento de componentes e como ele funciona dentro do AEM.
+* [Blueprint SPA](blueprint.md) O oferece um aprofundamento em como o SDK do SPA para AEM funciona caso você deseje implementar o SPA no AEM para uma estrutura diferente do React ou do Angular ou simplesmente deseje um entendimento mais profundo.

@@ -2,7 +2,7 @@
 title: Introdução à arquitetura do Adobe Experience Manager as a Cloud Service
 description: Introdução à arquitetura do Adobe Experience Manager as a Cloud Service.
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: 01087aa2ec621d6bebd4d62edbc320df8122f71d
+source-git-commit: 5a8d66c2ca2bed664d127579a8fdbdf3aa45c910
 workflow-type: tm+mt
 source-wordcount: '1797'
 ht-degree: 98%
@@ -79,7 +79,7 @@ Há três tipos de ambientes disponíveis no AEM as a Cloud Service:
 
    Consulte [Gerenciamento de ambientes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=pt-BR#using-cloud-manager) para obter mais detalhes.
 
-* **Ambiente de desenvolvimento rápido**: O permite iterações de desenvolvimento rápidas para depurar código novo ou existente.
+* **Ambiente de desenvolvimento rápido**: permite iterações de desenvolvimento rápidas para depuração de código novo ou existente.
 
 ## Programas {#programs}
 

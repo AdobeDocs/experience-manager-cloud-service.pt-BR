@@ -2,7 +2,7 @@
 title: Notas de versão do Adobe Experience Manager (AEM) as a Cloud Service.
 description: Notas de versão do Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: 554912f0e08fdf699b16ab9bf0b12ee84e8a682b
+source-git-commit: 71a691a6fea3cd43545eaa01113823d54f7c70b1
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 95%
@@ -24,7 +24,7 @@ Com o modelo de liberação contínua no [!DNL Adobe Experience Manager] as a Cl
 * [As versões de recursos são liberadas com uma frequência mensal previsível e são focadas em novos recursos e inovações de produtos.](/help/release-notes/release-notes-cloud/release-notes-current.md)
 * [As versões de manutenção são liberadas frequentemente e seu foco são as atualizações de segurança, correções de erros e aprimoramentos de desempenho. ](/help/release-notes/maintenance/latest.md) Isso garante que o [!DNL Adobe Experience Manager] as a Cloud Service esteja sempre atualizado com qualquer correção crítica.
 
-Além da velocidade da inovação, o [!DNL Adobe Experience Manager] as a Cloud Service também oferece a flexibilidade de pré-visualizar os recursos futuros com um mês de antecedência, antes que eles sejam lançados para produção. Isso permite avaliar o impacto de uma versão futura na organização, testando a condução dos recursos em seu próprio ambiente personalizado e treinando/preparando os usuários internos com bastante antecedência. Se você tiver um complemento AEM, como formulários, é possível garantir que ele seja atualizado também selecionando a solução na [configurações do programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
+Além da velocidade da inovação, o [!DNL Adobe Experience Manager] as a Cloud Service também oferece a flexibilidade de pré-visualizar os recursos futuros com um mês de antecedência, antes que eles sejam lançados para produção. Isso permite avaliar o impacto de uma versão futura na organização, testando a condução dos recursos em seu próprio ambiente personalizado e treinando/preparando os usuários internos com bastante antecedência. Se você tiver um complemento AEM, como formulários, poderá garantir que ele também seja atualizado selecionando a solução no [configurações do programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
 
 >[!NOTE]
 >

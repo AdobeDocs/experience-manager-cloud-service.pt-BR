@@ -171,7 +171,7 @@ Parte da estrutura base, esse arquivo é gerado na inicialização. Você está 
 
 O recurso de curinga de host padrão é adequado para um projeto padrão. Se precisar de personalização, modifique `virtualhosts.any`. Na personalização, não inclua o recurso de curinga do host padrão, pois ele corresponde **a cada** solicitação de entrada.
 
-## Módulos compatíveis do Apache {#apache-modules}
+## Módulos Apache compatíveis {#apache-modules}
 
 Consulte [Módulos compatíveis do Apache](/help/implementing/dispatcher/disp-overview.md#supported-directives).
 

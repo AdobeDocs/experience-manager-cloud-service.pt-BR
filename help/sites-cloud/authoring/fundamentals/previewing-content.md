@@ -2,8 +2,8 @@
 title: Visualização de conteúdo
 description: Saiba como usar o serviço de visualização do AEM para visualizar o conteúdo antes de ele ser publicado.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: 5a804895013e19592f918341bbc7921261b26945
-workflow-type: ht
+source-git-commit: dc55bd43641c03dd022a891c8b85569d9be28ebe
+workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 100%
 

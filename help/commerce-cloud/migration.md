@@ -1,8 +1,8 @@
 ---
-title: Migração para o complemento CIF (Commerce Integration Framework) da AEM
-description: Como migrar para o complemento CIF (Commerce Integration Framework) do AEM de uma versão antiga
+title: Migração para o complemento AEM Commerce Integration Framework (CIF)
+description: Como migrar de uma versão antiga para o complemento Estrutura de integração de comércio (CIF) do AEM
 exl-id: 0db03a05-f527-4853-b52f-f113bce929cf
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
 workflow-type: tm+mt
 source-wordcount: '491'
 ht-degree: 45%
@@ -17,18 +17,18 @@ Este guia ajuda a identificar as áreas que você precisa atualizar para a migra
 
 Para o Experience Manager as a Cloud Service, o complemento CIF é a única solução de integração comercial compatível para soluções comerciais do Adobe Commerce e de terceiros. O complemento CIF é implantado automaticamente para clientes no Experience Manager as a Cloud Service; não é necessária implantação manual. Consulte [Introdução ao AEM Commerce as a Cloud Service](getting-started.md).
 
-Para apoiar projetos que implantam o Adobe da CIF, [Componentes principais da CIF do AEM](https://github.com/adobe/aem-core-cif-components).
+Para dar suporte a projetos que implantam o Adobe da CIF, forneça [Componentes principais da CIF do AEM](https://github.com/adobe/aem-core-cif-components).
 
 O complemento CIF está disponível para o AEM 6.5 e por meio do [Portal de distribuição de softwares](https://experience.adobe.com/#/downloads/content/software-distribution/br/aem.html). Ele é compatível e fornece os mesmos recursos do complemento CIF para o Experience Manager as a Cloud Service, não sendo necessário fazer ajustes.
 
-A CIF clássica com suas dependências não está mais disponível. Código que depende desta versão da CIF usando `com.adobe.cq.commerce.api` As APIs do Java devem ser ajustadas ao complemento CIF e seus princípios.
+A CIF clássica com suas dependências não está mais disponível. Código que depende dessa versão da CIF usando `com.adobe.cq.commerce.api` As APIs do Java devem ser ajustadas para o complemento CIF e seus princípios.
 
-O conector da CIF disponível anteriormente não pode mais ser instalado. O código que depende desse conector deve ser ajustado para o complemento CIF e seus princípios.
+O conector da CIF disponível anteriormente não pode mais ser instalado. Códigos que dependem desse conector precisam ser ajustados para o complemento CIF e seus princípios.
 
-## Estrutura do projeto
+## Estrutura de projeto
 
-Saiba mais sobre o [Estrutura do projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=pt-BR) e as características AEM as a Cloud Service. Adapte a configuração do seu projeto ao layout do AEM as a Cloud Service.
-Comparado às implantações AEM 6.5, há duas diferenças principais aqui:
+Saiba mais sobre [Estrutura de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=pt-BR) e as características do AEM as a Cloud Service. Adapte a configuração do seu projeto ao layout do AEM as a Cloud Service.
+Em comparação às implantações do AEM 6.5, há duas diferenças principais:
 
 * O pacote OSGI do cliente GraphQL **não** deve mais ser incluído nos projetos AEM, agora ele é implantado por meio do complemento CIF.
 * As configurações de OSGI para o cliente GraphQL e o Graphql Data Service **não** devem mais ser incluídas nos projetos AEM.
@@ -39,16 +39,16 @@ Comparado às implantações AEM 6.5, há duas diferenças principais aqui:
 
 ## Catálogo de produtos
 
-A importação de dados de catálogo de produtos não é mais suportada. O uso dos principais do complemento CIF solicitações de produtos e catálogos é feito por demanda por meio de chamadas em tempo real para uma solução comercial externa. Acesse Integração de capítulo para saber mais sobre a integração de uma solução comercial.
+A importação de dados do catálogo de produtos não é mais suportada. Usando as entidades complementares da CIF, as solicitações de produtos e catálogos são feitas sob demanda por meio de chamadas em tempo real para uma solução de comércio externo. Acesse o capítulo Integração para saber mais sobre a integração de uma solução comercial.
 
 >[!TIP]
 >
 >Se nenhuma API em tempo real estiver disponível, um cache de produto externo com APIs deverá ser usado para a integração. Exemplo [Magento open-source](https://business.adobe.com/products/magento/open-source.html).
 
-## Experiências do catálogo de produtos com renderização de AEM
+## Experiências do catálogo de produtos com renderização por AEM
 
-Se você usar o blueprint do catálogo com a CIF clássica, precisará atualizar o fluxo de trabalho do catálogo de produtos. O complemento CIF agora renderiza experiências de catálogo de produtos dinamicamente usando modelos de catálogo de AEM. Não é mais necessária a replicação de dados de produto ou páginas de produto.
+Se você usa o blueprint do catálogo com a CIF clássica, é necessário atualizar o fluxo de trabalho do catálogo de produtos. O complemento CIF agora renderiza experiências de catálogo de produtos de maneira rápida usando modelos de catálogo AEM. Não é mais necessária a replicação de dados ou páginas de produtos.
 
-## Interação entre dados não armazenáveis em cache e compras
+## Interação de compra e dados não armazenáveis em cache
 
-As solicitações do lado do cliente para dados e interações que não podem ser armazenados em cache (por exemplo, adicionar ao carrinho, pesquisa) devem ir diretamente para o endpoint de comércio (solução comercial ou camada de integração) via CDN/Dispatcher. Remova qualquer chamada em que AEM era apenas um proxy.
+As solicitações do lado do cliente para dados e interações não armazenáveis em cache (por exemplo, adição ao carrinho, pesquisa) devem ir diretamente para o endpoint de comércio (solução de comércio ou camada de integração) por meio de CDN/Dispatcher. Remova todas as chamadas em que o AEM era apenas um proxy.

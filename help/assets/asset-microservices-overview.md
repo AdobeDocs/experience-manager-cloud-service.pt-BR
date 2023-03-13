@@ -6,7 +6,7 @@ feature: Asset Compute Microservices,Workflow,Release Information,Asset Processi
 role: Architect,Admin
 exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
 source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '820'
 ht-degree: 100%
 

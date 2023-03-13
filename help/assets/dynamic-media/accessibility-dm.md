@@ -1,6 +1,6 @@
 ---
 title: Acessibilidade no Dynamic Media
-description: Saiba como trabalhar com vídeo no Dynamic Media, como práticas recomendadas para codificação de vídeos, publicação de vídeos no YouTube e exibição de relatórios de vídeo. Saiba também como adicionar legendas ocultas, legendas ou marcadores de capítulo aos vídeos.
+description: Saiba como trabalhar com vídeo no Dynamic Media, como práticas recomendadas para codificação de vídeos, publicação de vídeos no YouTube e visualização de relatórios de vídeo. Saiba também como adicionar legendas ocultas, legendas ou marcadores de capítulo a vídeos.
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
@@ -16,25 +16,25 @@ ht-degree: 1%
 
 # Acessibilidade no Dynamic Media {#accessibility-in-dm}
 
-O Dynamic Media oferece suporte a tecnologias de assistência e controle de teclado, como leitores de tela JAWS e NVDA, na interface de criação do usuário.
+O Dynamic Media oferece suporte ao controle de teclado e às tecnologias assistivas, como leitores de tela JAWS e NVDA, na interface do usuário de criação.
 
-## Suporte à acessibilidade de teclado no Dynamic Media {#keyboard-support-in-dm}
+## Suporte para acessibilidade do teclado no Dynamic Media {#keyboard-support-in-dm}
 
-Como o Dynamic Media é um plug-in para [!DNL Experience Manager Assets], a maioria do comportamento de controle do teclado é igual ao comportamento do [!DNL Experience Manager Assets]. Por exemplo, a variável `Cancel` no Dynamic Media tem o mesmo realce de foco do [!DNL Experience Manager Assets]. Reage também ao `Spacebar` como em [!DNL Experience Manager Assets]. Consulte [atalhos de teclado do Assets](/help/assets/accessibility.md#keyboard-shortcuts).
+Como o Dynamic Media é um plug-in para [!DNL Experience Manager Assets], a maior parte do comportamento de controle do teclado é igual ao de [!DNL Experience Manager Assets]. Por exemplo, a variável `Cancel` no Dynamic Media tem o mesmo destaque de foco que em [!DNL Experience Manager Assets]. Além disso, reage à `Spacebar` chave como em [!DNL Experience Manager Assets]. Consulte [atalhos de teclado no Assets](/help/assets/accessibility.md#keyboard-shortcuts).
 
-Os pressionamentos de tecla suportados pelos elementos da interface do usuário individual no Dynamic Media são, na maioria dos casos, óbvios e fáceis de encontrar. O controle de teclado no Dynamic Media é sobre o seguinte:
+Os pressionamentos de tecla suportados por elementos da interface do usuário individual no Dynamic Media são, na maioria dos casos, óbvios e fáceis de encontrar. O controle do teclado no Dynamic Media é sobre o seguinte:
 
 * Capacidade de usar `Tab` e `Shift+Tab` pressionamentos de teclas para navegar entre elementos interativos na página.
-Usando `Tab` avança o foco de entrada para o próximo elemento da interface do usuário na ordem de tabulação; usar `Shift+Tab` traz o foco de entrada de volta ao elemento anterior da interface do usuário.
-A travessia de foco segue a localização do elemento da interface de usuário natural na tela e se move de esquerda para direita e de cima para baixo. Além disso, se algum campo tiver um erro, você poderá pressionar `Tab` para mover o foco para ele.
+Usar `Tab` avança o foco de entrada para o próximo elemento da interface do usuário na ordem de tabulação; usando `Shift+Tab` O traz o foco de entrada de volta para o elemento anterior da interface do usuário.
+O percurso do foco segue o local natural do elemento da interface do usuário na tela e se move da esquerda para a direita e de cima para baixo. Além disso, se algum campo tiver um erro, você poderá pressionar `Tab` para mover o foco para ele.
 * Capacidade de usar o `Spacebar` e `Enter` tecla para ativar elementos padrão da interface do usuário, como botões e listas suspensas.
-* Capacidade de ver o foco do teclado realçar no elemento ativo. O elemento da interface do usuário que tem o foco de entrada recebeu uma indicação do foco visual como uma borda renderizada em torno do elemento da interface do usuário.
-* No editor de ponto de acesso, você pode usar alguns pressionamentos de tecla personalizados, como teclas de seta, para interagir com elementos complexos da interface do usuário e reposicionar pontos de acesso.
-* No editor de Vídeo interativo, você pode usar o `Spacebar` para selecionar uma imagem e adicioná-la a um segmento. Além disso, você pode usar o `Backspace` chave para excluir o item selecionado da **[!UICONTROL Conteúdo]** guia . Além disso, pressionar `Tab` conforme desejado para navegar entre elementos interativos na página.
-* No editor Recortar de imagem/Recorte inteligente, você pode fazer o seguinte:
+* Capacidade de ver o foco do teclado destacado no elemento ativo. O elemento da interface do usuário que tem foco de entrada recebeu uma indicação de foco visual como uma borda renderizada ao redor do elemento da interface do usuário.
+* No editor de ponto de acesso, é possível usar alguns pressionamentos de tecla personalizados, como teclas de seta, para interagir com elementos complexos da interface do usuário e reposicionar pontos de acesso.
+* No editor de Vídeo interativo, é possível usar a variável `Spacebar` para selecionar uma imagem e adicioná-la a um segmento. Além disso, você pode usar a variável `Backspace` para excluir o item selecionado da lista **[!UICONTROL Conteúdo]** guia. Além disso, pressionando `Tab` funciona conforme desejado para navegar entre elementos interativos na página.
+* No editor de Recorte de imagem/Recorte inteligente, você pode fazer o seguinte:
    * Use as teclas de seta para recortar o tamanho do quadro ou reposicionar a imagem, ou ambos.
-   * O primeiro `Tab` a parada realça todo o quadro da imagem. Você pode usar as teclas de seta no teclado para reposicionar o quadro.
-   * Os próximos quatro `Tab` as paradas são os quatro cantos do quadro. Quando o foco é colocado em um canto do quadro, o canto é realçado. Novamente, você pode usar as teclas de seta no teclado para mover o canto focado.
+   * O primeiro `Tab` parar realça o quadro de imagem inteiro. Em seguida, é possível usar as teclas de seta no teclado para reposicionar o quadro.
+   * Os próximos quatro `Tab` as paradas são os quatro cantos do quadro. Quando o foco é colocado em um canto do quadro, o canto é realçado. Novamente, você pode usar as teclas de seta no teclado para mover o canto focalizado.
 Consulte [Edição do recorte inteligente ou da amostra inteligente de uma única imagem](/help/assets/dynamic-media/image-profiles.md#editing-the-smart-crop-or-smart-swatch-of-a-single-image)
 
 <!-- Keyboarding is the same because Dynamic Media is using the same UI library (Coral 3 (Experience Manager 6.5) or Coral Spectrum (in Skyline)) as entire Experience Manager Assets.  -->
@@ -45,26 +45,26 @@ Consulte [Edição do recorte inteligente ou da amostra inteligente de uma únic
 
 <!-- I would not get into much of details of specific keyboard support logic of these editors. One of the reasons - chances are that accessibility support will receive Phase2-like attention, with more holistic approach. -->
 
-## Suporte à tecnologia assistiva no Dynamic Media {#assistive-technology=support-for-dm}
+## Suporte de tecnologia assistiva no Dynamic Media {#assistive-technology=support-for-dm}
 
-Os elementos da interface do usuário do Dynamic Media funcionam com tecnologias de assistência, como leitores de tela. Por exemplo, ele reconhece marcos em uma página ao navegar por marcos usando o atalho do teclado `D` ou regiões que usam atalho do teclado `R`. Ele também narra o cabeçalho ao navegar usando o atalho do teclado do cabeçalho `H`.
+Os elementos da interface do usuário do Dynamic Media funcionam com tecnologias assistivas, como leitores de tela. Por exemplo, ela reconhece pontos de referência em uma página quando você navega por pontos de referência usando o atalho de teclado `D` ou regiões usando o atalho de teclado `R`. Ele também narra o cabeçalho ao navegar usando o atalho de teclado do cabeçalho `H`.
 
-## Suporte para acessibilidade de teclado em visualizadores Dynamic Media {#keyboard-accessibility-for-dm-viewers}
+## Suporte para acessibilidade do teclado em visualizadores do Dynamic Media {#keyboard-accessibility-for-dm-viewers}
 
-Todos os componentes prontos para uso dos visualizadores Dynamic Media suportam a acessibilidade do teclado para seus clientes.
+Todos os componentes de visualizadores do Dynamic Media prontos para uso oferecem suporte à acessibilidade do teclado para seus clientes.
 
-Consulte [Acessibilidade e navegação do teclado](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) no Guia de referência de visualizadores do Dynamic Media.
+Consulte [Acessibilidade e navegação pelo teclado](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) no Guia de referência de visualizadores do Dynamic Media.
 
-## Suporte à tecnologia assistiva em visualizadores Dynamic Media {#assistive-technology=support-for-dm-viewers}
+## Suporte tecnológico de assistência em visualizadores do Dynamic Media {#assistive-technology=support-for-dm-viewers}
 
-Todos os componentes do visualizador do Dynamic Media suportam funções e atributos ARIA (Accessible Rich Internet Applications) para melhorar a integração com tecnologias de assistência, como leitores de tela.
-Consulte a **Suporte à tecnologia assistiva** Tópico de Ajuda em qualquer tópico de personalização do visualizador no Guia de Referência de Visualizadores do Dynamic Media. Por exemplo, consulte [Suporte à tecnologia assistiva](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) para o visualizador de vídeo ou [Suporte à tecnologia assistiva](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html#viewers-for-aem-assets-only) para o visualizador de Imagem interativa .
+Todos os componentes do visualizador do Dynamic Media são compatíveis com funções e atributos ARIA (Accessible Rich Internet Applications) para melhorar a integração com tecnologias assistivas, como leitores de tela.
+Consulte a **Suporte de tecnologia assistiva** Tópico de ajuda em qualquer tópico de personalização do visualizador no Guia de referência do Dynamic Media Viewers. Por exemplo, consulte [Suporte de tecnologia assistiva](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) para o visualizador de vídeo ou [Suporte de tecnologia assistiva](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html#viewers-for-aem-assets-only) para o visualizador de imagem interativa.
 
-## Suporte a legendas ocultas em [!DNL Dynamic Media] {#closed-caption-support}
+## Suporte a legendas ocultas no [!DNL Dynamic Media] {#closed-caption-support}
 
-O Dynamic Media oferece suporte para vídeos e conjuntos de vídeos adaptáveis com legendas ocultas. As legendas devem ser exibidas sobre o conteúdo do vídeo.
+O Dynamic Media é compatível com a entrega de vídeos e conjuntos de vídeos adaptáveis com legendas ocultas. As legendas devem ser exibidas sobre o conteúdo do vídeo.
 
-Consulte [Vídeo no Dynamic Media - Adicionar legendas ou legendas ocultas ao vídeo](/help/assets/dynamic-media/video.md#adding-captions-to-video).
+Consulte [Vídeo no Dynamic Media - Adicionar legendas ocultas ou legendas ao vídeo](/help/assets/dynamic-media/video.md#adding-captions-to-video).
 
 
 >[!MORELIKETHIS]

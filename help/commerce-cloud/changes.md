@@ -2,7 +2,7 @@
 title: Alterações importantes do complemento Commerce Integration Framework (CIF)
 description: Alterações importantes da Commerce Integration Framework (CIF) em comparação às versões antigas da CIF.
 exl-id: 5a526960-96a1-421e-9fb0-0825e7df8f32
-source-git-commit: b81ac7529e7757fbd9f9fbc48e47e740ab9ecbf3
+source-git-commit: 6c9a44940ea9e52bd27a233c7aa24e320a24076c
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 1%

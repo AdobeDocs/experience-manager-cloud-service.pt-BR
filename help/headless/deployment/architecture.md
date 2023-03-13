@@ -16,7 +16,7 @@ Um ambiente do AEM típico é composto de um serviço do autor, um serviço de p
 
 * **O serviço do Autor** é onde os usuários internos criam, gerenciam e visualizam conteúdo.
 
-* **O serviço de Publicação** é considerado o ambiente &quot;ativo&quot; e é, normalmente, com o que os usuários finais interagem. O conteúdo, após ser editado e aprovado no serviço do Autor, é distribuído ao serviço de Publicação. O padrão de implantação mais comum com aplicativos headless do AEM é ter uma versão de produção do aplicativo conectada a um serviço de publicação do AEM.
+* **O serviço de Publicação** é considerado o ambiente “ativo” e é, normalmente, com o que os usuários finais interagem. O conteúdo, após ser editado e aprovado no serviço do Autor, é distribuído ao serviço de Publicação. O padrão de implantação mais comum com aplicativos headless do AEM é ter uma versão de produção do aplicativo conectada a um serviço de publicação do AEM.
 
 * **O serviço de Visualização** é funcionalmente igual ao **serviço de Publicação**. No entanto, ele é disponibilizado apenas para usuários internos. Isso torna o sistema ideal para os aprovadores revisarem alterações futuras no conteúdo antes destas serem disponibilizadas aos usuários finais.
 

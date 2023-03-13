@@ -1,6 +1,6 @@
 ---
 title: Configuração do Dynamic Media
-description: Para configurar o Dynamic Media, você deve configurar o Dynamic Media e gerenciar predefinições de imagens e do visualizador.
+description: Para configurar o Dynamic Media, você deve configurar o Dynamic Media e gerenciar predefinições de imagens e visualizadores.
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 83b70b17-7ee3-41cb-be90-c92ca161660e
@@ -13,7 +13,7 @@ ht-degree: 7%
 
 # Configuração do Dynamic Media {#setting-up-dynamic-media}
 
-[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) O ajuda a gerenciar ativos fornecendo merchandising visual avançado e ativos de marketing sob demanda, automaticamente dimensionados para o consumo na Web, em dispositivos móveis e sites sociais. Usando um conjunto de ativos de origem primária, a Dynamic Media gera e fornece várias variações de conteúdo rico em tempo real por meio de sua rede global, escalável e otimizada para desempenho.
+[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) O ajuda você a gerenciar ativos fornecendo merchandising visual avançado e ativos de marketing sob demanda, dimensionados automaticamente para consumo em sites da Web, móveis e sociais. Usando um conjunto de ativos de origem primária, a Dynamic Media gera e fornece várias variações de conteúdo avançado em tempo real por meio de sua rede global, dimensionável e com desempenho otimizado.
 
 <!-- OBSOLETE UNTIL THE INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
@@ -28,7 +28,7 @@ ht-degree: 7%
 Se você estiver administrando o Dynamic Media, os seguintes tópicos serão de interesse:
 
 * [Configurar o Dynamic Media](config-dm.md)
-* [Gerenciar predefinições da imagem](managing-image-presets.md)
+* [Gerenciar predefinições de imagem](managing-image-presets.md)
 * [Gerenciar predefinições do visualizador](managing-viewer-presets.md)
 * [Solução de problemas do Dynamic Media](troubleshoot-dm.md)
 
@@ -39,7 +39,7 @@ Consulte também os seguintes tópicos:
 
 >[!NOTE]
 >
->**Se estiver atualizando:**
+>**Se você estiver atualizando:**
 >
->* Depois de ter o Adobe [!DNL Experience Manager] em execução, qualquer ativo carregado tem o Dynamic Media ativado automaticamente (a menos que ele tenha sido explicitamente desativado pelo administrador do sistema). Se você estiver em uma instância atualizada de [!DNL Experience Manager] Além disso, é necessário reprocessar seus ativos para torná-los habilitados para Dynamic Media. Consulte [Reprocessar ativos em uma pasta](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+>* Depois que você tiver o Adobe [!DNL Experience Manager] ativo e em execução, qualquer ativo que você fizer upload tem o Dynamic Media ativado automaticamente (a menos que tenha sido explicitamente desativado pelo administrador do sistema). Se você estiver em uma instância atualizada do [!DNL Experience Manager] e novo no Dynamic Media, você provavelmente deve reprocessar seus ativos para ativá-los para Dynamic Media. Consulte [Reprocessar ativos em uma pasta](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 

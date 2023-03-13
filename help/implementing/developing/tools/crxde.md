@@ -1,8 +1,8 @@
 ---
 title: Uso do CRXDE Lite
-description: O CRXDE Lite faz parte do AEM quickstart e está disponível para você acessar e modificar o repositório em seus ambientes de desenvolvimento local no navegador.
+description: o CRXDE Lite faz parte do AEM quickstart e está disponível para você acessar e modificar o repositório em seus ambientes de desenvolvimento locais no navegador.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
 workflow-type: tm+mt
 source-wordcount: '1694'
 ht-degree: 4%
@@ -11,22 +11,22 @@ ht-degree: 4%
 
 # Uso do CRXDE Lite {#using-crxde-lite}
 
-O CRXDE Lite faz parte do AEM quickstart e está disponível para você acessar e modificar o repositório em seus ambientes de desenvolvimento local no navegador. Com o CRXDE Lite, você pode editar arquivos, pastas, nós e propriedades. O repositório inteiro é acessível a você nessa interface fácil de usar.
+o CRXDE Lite faz parte do AEM quickstart e está disponível para você acessar e modificar o repositório em seus ambientes de desenvolvimento locais no navegador. Com o CRXDE Lite, é possível editar arquivos, pastas, nós e propriedades. O repositório inteiro é acessível nesta interface fácil de usar.
 
 >[!NOTE]
 >
->O CRXDE Lite só está disponível em seus ambientes de desenvolvimento locais. Não está disponível AEM as a Cloud Service.
+>O CRXDE Lite só está disponível em seus ambientes de desenvolvimento locais. Não está disponível no AEM as a Cloud Service.
 
 ## Introdução ao CRXDE Lite {#getting-started-with-crxde-lite}
 
 Para começar a usar o CRXDE Lite:
 
-1. Inicie o desenvolvimento de AEM local rapidamente.
-1. No seu navegador, abra o URL `https://<host>:<port>/crx/de`.
-1. Insira seu **username** e **senha**.
+1. Inicie rapidamente o desenvolvimento local do AEM.
+1. No navegador, abra o URL `https://<host>:<port>/crx/de`.
+1. Insira seu **nome de usuário** e **senha**.
 1. Clique em **OK**.
 
-A interface do usuário do CRXDE Lite é exibida da seguinte maneira em seu navegador:
+A interface do usuário do CRXDE Lite é exibida da seguinte maneira no seu navegador:
 
 ![A interface do CRXDE Lite](assets/crxde-lite.png)
 
@@ -36,86 +36,86 @@ A interface do usuário do CRXDE Lite é exibida da seguinte maneira em seu nave
 
 ## Visão geral da interface do usuário {#overview-of-the-user-interface}
 
-A interface do usuário do CRXDE Lite tem muitas partes e muitas funções.
+A interface de usuário do CRXDE Lite tem muitas partes e muitas funções.
 
-### Barra do comutador superior {#top-switcher-bar}
+### Barra do seletor superior {#top-switcher-bar}
 
-A Barra do Alternador Superior permite que você alterne rapidamente entre o CRXDE Lite e [Gerenciador de pacotes.](package-manager.md)
+A barra superior do alternador permite alternar rapidamente entre o CRXDE Lite e o [Gerenciador de pacotes.](package-manager.md)
 
-### Widget do caminho do nó {#node-path-widget}
+### Widget de caminho de nó {#node-path-widget}
 
-O widget Caminho do nó exibe o caminho para o nó selecionado no momento.
+O Widget de caminho do nó exibe o caminho para o nó atualmente selecionado.
 
-Você também pode usá-lo para pular para um nó inserindo o caminho manualmente ou colando de outro lugar e pressionando Enter.
+Você também pode usá-lo para saltar para um nó, inserindo o caminho manualmente ou colando-o de outro lugar e pressionando Enter.
 
-Também oferece suporte para procurar nós com nome de nó específico. Insira o nome do nó que deseja localizar e aguarde (ou selecione o ícone de pesquisa no lado direito). Se um determinado nó ou nós forem carregados no painel explorador, a lista será exibida e você poderá selecionar o caminho e pressionar Enter para navegar até ele. Observe que ele só funciona para os nós atualmente carregados no aplicativo cliente CRXDE no navegador. Se quiser pesquisar o repositório inteiro, use **Ferramentas** ->: **Query**.
+Também oferece suporte para procurar nós com nomes de nó específicos. Insira o nome do nó que deseja localizar e aguarde (ou selecione o ícone de pesquisa no lado direito). Se um determinado nó ou nós forem carregados no painel do explorador, a lista será exibida, e você poderá selecionar o caminho e pressionar Enter para navegar até ele. Observe que isso só funciona para os nós atualmente carregados no aplicativo cliente CRXDE no navegador. Se quiser pesquisar todo o repositório, use **Ferramentas** ->: **Query**.
 
 ### Painel do Explorer {#explorer-pane}
 
-O **Painel do Explorer** exibe uma árvore de todos os nós no repositório.
+A variável **Painel do Explorer** exibe uma árvore de todos os nós no repositório.
 
-Clique em um nó para exibir suas propriedades na **Propriedades** guia . Depois de clicar em um nó, você pode selecionar uma ação na barra de ferramentas. Clique no nó novamente para renomeá-lo.
+Clique em um nó para exibir suas propriedades na **Propriedades** guia. Depois de clicar em um nó, você pode selecionar uma ação na barra de ferramentas. Clique no nó novamente para renomeá-lo.
 
-O Filtro de navegação em árvore (o ícone binóculos) permite filtrar os nós no repositório para o qual o nome contém o texto de entrada. Ela se aplica somente aos nós que foram carregados localmente.
+O Filtro de Navegação em Árvore (o ícone binóculo ) permite filtrar os nós no repositório cujo nome contém o texto de entrada. Ela se aplica somente a nós que foram carregados localmente.
 
-### Painel Editar {#edit-pane}
+### Editar Painel {#edit-pane}
 
-O **Painel Editar** permite exibir o conteúdo do arquivo atualmente selecionado no repositório. Cada arquivo aberto será representado como sua própria guia no painel .
+A variável **Editar Painel** permite visualizar o conteúdo do arquivo selecionado no momento no repositório. Cada arquivo aberto será representado como sua própria guia no painel.
 
-O **Início** permite pesquisar conteúdo e/ou documentação e acessar a documentação do desenvolvedor e o suporte ao Adobe.
+A variável **Início** A guia permite pesquisar conteúdo e/ou documentação e acessar a documentação do desenvolvedor e o suporte ao Adobe.
 
-Clique duas vezes em um arquivo na **Painel do Explorer** para exibir seu conteúdo no **Painel Editar**. Em seguida, você pode modificá-la e salvar as alterações.
+Clique duas vezes em um arquivo na **Painel do Explorer** para exibir seu conteúdo no **Editar Painel**. Em seguida, você pode modificá-lo e salvar as alterações.
 
-Depois que um arquivo é editado no **Painel Editar**, as seguintes ferramentas estão disponíveis na barra de ferramentas:
+Quando um arquivo for editado na variável **Editar Painel**, as seguintes ferramentas estão disponíveis na barra de ferramentas:
 
-* **Mostrar na árvore** - Mostra o arquivo na árvore de repositório.
-* **Pesquisar/Substituir** - Realiza uma pesquisa ou substituição.
+* **Mostrar na árvore** - Mostra o arquivo na árvore do repositório.
+* **Pesquisar/substituir** - Executa uma pesquisa ou substituição.
 
-Clique duas vezes na linha de status do **Painel Editar** abre o **Ir para linha** para inserir um número de linha específico.
+Clique duas vezes na linha de status da **Editar Painel** abre o **Ir para a linha** para que você possa inserir um número de linha específico.
 
 ### Guia Propriedades {#properties-tab}
 
-O **Guia Propriedades** exibe as propriedades do nó selecionado. É possível adicionar novas propriedades ou excluir as existentes.
+A variável **Guia Propriedades** exibe as propriedades do nó selecionado. É possível adicionar novas propriedades ou excluir propriedades existentes.
 
 ### Guia Controle de acesso {#access-control-tab}
 
-O **Guia Controle de acesso** exibe permissões com base no caminho, repositório ou principal atual.
+A variável **Guia Controle de acesso** exibe permissões com base no caminho, repositório ou principal atual.
 
 As permissões são divididas nas seguintes categorias.
 
-* **Política de Controle de Acesso Aplicável** - As políticas que podem ser aplicadas à seleção atual
-* **Políticas de Controle de Acesso Local** - As políticas atuais aplicadas localmente à seleção atual
-* **Políticas de Controle de Acesso Efetivas** - As políticas atuais aplicadas para a seleção atual, que pode ser definida localmente ou herdada dos nós pai
+* **Política do controle de acesso aplicável** - As políticas que podem ser aplicadas à seleção atual
+* **Políticas do controle de acesso local** - As políticas atuais aplicadas localmente à seleção atual
+* **Políticas do controle de acesso efetivo** - As políticas atuais aplicadas para a seleção atual, que pode ser definida localmente ou herdada dos nós principais
 
 >[!NOTE]
-Para poder ver as informações de controle de acesso, o usuário conectado ao CRXDE Lite deve ter direitos para ler as entradas ACL.
+Para ver as informações de controle de acesso, o usuário conectado ao CRXDE Lite deve ter direitos de leitura das entradas de ACL.
 
 ### Guia Replicação {#replication-tab}
 
-O **Guia Replicação** exibe o status de replicação do nó atual. Você pode replicar e excluir o nó atual.
+A variável **Guia Replicação** exibe o status de replicação do nó atual. É possível replicar e replicar e excluir o nó atual.
 
 ### Guia Console {#console-tab}
 
-O **Guia Console** exibe mensagens de log. Você pode configurar o nível de log, limpar o console, fixar na posição de rolagem selecionada e ativar/desativar a exibição de mensagens.
+A variável **Guia Console** exibe mensagens de logs. Você pode configurar o nível de log, limpar o console, fixar na posição de rolagem selecionada e ativar/desativar a exibição de mensagens.
 
-### Guia Informações da compilação {#build-info-tab}
+### Guia Informações da build {#build-info-tab}
 
-O **Guia Informações da compilação** exibe informações quando um pacote está sendo criado.
+A variável **Guia Informações da build** exibe informações quando um pacote está sendo criado.
 
 ### Botão Atualizar {#refresh-button}
 
-O **Botão Atualizar** atualiza a seleção atual. As alterações de outros usuários são atualizadas na visualização do repositório. As alterações efetuadas não são afetadas.
+A variável **Botão Atualizar** atualiza a seleção atual. As alterações de outros usuários são atualizadas na sua visualização do repositório. As alterações feitas não serão afetadas.
 
 ### Botão Salvar tudo {#save-all-button}
 
-O **Botão Salvar tudo** salva todas as alterações feitas. Até você optar por salvar, as alterações são temporárias e serão perdidas ao sair do console.
+A variável **Botão Salvar tudo** O salva todas as alterações feitas. Até que você opte por salvar, as alterações serão temporárias e serão perdidas quando você sair do console.
 
-* **Reverter** - Descarta todas as alterações feitas no nó selecionado desde a última ação de salvar e, em seguida, recarrega o estado atual do repositório para o nó selecionado
-* **Reverter tudo** - Descarta todas as alterações feitas em todo o repositório desde a última ação de salvar e, em seguida, recarrega o estado atual do repositório
+* **Reverter** - Descarta todas as alterações feitas no nó selecionado desde a última ação salva e, em seguida, recarrega o estado atual do repositório para o nó selecionado
+* **Reverter tudo** - Descarta todas as alterações feitas em todo o repositório desde a última ação de salvamento e, em seguida, recarrega o estado atual do repositório
 
 ### Botão Criar {#create-button}
 
-O **Botão Criar** é um menu suspenso que cria o seguinte no nó selecionado:
+A variável **Botão Criar** é um menu suspenso para criar o seguinte no nó selecionado:
 
 * Nó - um nó com um tipo de nó arbitrário
 * Arquivo - um `nt:file` nó e seu subnó nt:resource
@@ -123,128 +123,128 @@ O **Botão Criar** é um menu suspenso que cria o seguinte no nó selecionado:
 
 ### Botão Excluir {#delete-button}
 
-O **Botão Excluir** exclui o nó selecionado.
+A variável **Botão Excluir** exclui o nó selecionado.
 
 ### Botão Copiar {#copy-button}
 
-O **Botão Copiar** copia o nó selecionado.
+A variável **Botão Copiar** copia o nó selecionado.
 
 ## Botão Colar {#paste-button}
 
-O **Botão Colar** cola o nó copiado no nó selecionado.
+A variável **Botão Colar** cola o nó copiado sob o nó selecionado.
 
 ### Botão Mover {#move-button}
 
-O **Botão Mover** move o nó selecionado para o nó definido na caixa de diálogo.
+A variável **Botão Mover** move o nó selecionado para o nó definido pela caixa de diálogo.
 
 ### Renomear {#rename-button}
 
-O **Botão Renomear** renomeia o nó selecionado.
+A variável **Botão Renomear** renomeia o nó selecionado.
 
 ### Misturas {#mixins-button}
 
-O **Botão Mixins** O permite adicionar tipos mixin ao tipo de nó. Os tipos mixin são usados principalmente para adicionar recursos avançados.
+A variável **Botão Misturas** permite adicionar tipos de mixin ao tipo de nó. Os tipos de mixin são usados principalmente para adicionar recursos avançados.
 
 ### Ferramentas {#tools-button}
 
-O **Botão Ferramentas** O é um menu suspenso com as seguintes ferramentas disponíveis:
+A variável **Botão Ferramentas** O é um menu suspenso com as seguintes ferramentas disponíveis:
 
 * **Configuração do servidor** - para acessar o Felix Console (também disponível em `https://<host>:<port>/system/console/configMgr`)
 * **Query** - para consultar o repositório
-* **Privilégios** - para visualizar e adicionar privilégios
-* **Testar controle de acesso** - testar a permissão para determinados caminhos e/ou principais
+* **Privilégios** - para exibir e adicionar privilégios
+* **Testar o controle de acesso** - testar a permissão para determinado caminho e/ou principal
 * **Exportar tipo de nó** - para exportar tipos de nó no sistema como notação CND
-* **Importar Tipo de Nó** - para importar tipos de nó usando a notação CND.
+* **Importar tipo de nó** - para importar tipos de nó usando a notação CND.
 
-### Widget de logon {#login-widget}
+### Widget de login {#login-widget}
 
-O **Widget de logon** exibe o usuário conectado no momento.
+A variável **Widget de login** exibe o usuário conectado no momento.
 
-Clique nele para fazer logon ou fazer logon novamente como outro usuário. O `@crx.default` representa que você está no espaço de trabalho padrão (e somente) no repositório.
+Clique nele para fazer logon ou refazer logon como outro usuário. A variável `@crx.default` representa que você está no espaço de trabalho padrão (e somente) no repositório.
 
-O **Preferências** pode ser usada para definir o idioma da interface do usuário e exibir e personalizar as teclas de atalho para várias ações, como salvar, pesquisar, criar nota, etc.
+A variável **Preferências** A opção pode ser usada para definir o idioma da interface do usuário e para exibir e personalizar as teclas de atalho para várias ações, como salvar, pesquisar, criar notas etc.
 
-## Criação de uma pasta {#creating-a-folder}
+## Criação de pastas {#creating-a-folder}
 
 Para criar uma pasta com o CRXDE Lite:
 
 1. Abra o CRXDE Lite no seu navegador da 
-1. No painel Navegação, clique com o botão direito do mouse na pasta na qual deseja criar a nova pasta e selecione **Criar ...**, em seguida **Criar pasta ...**.
+1. No painel Navegação, clique com o botão direito do mouse na pasta em que deseja criar a nova pasta, selecione **Criar ...**, depois **Criar pasta ...**.
 
 1. Insira a pasta **Nome** e clique em **OK**.
 
 1. Clique em **Salvar tudo** para salvar as alterações no servidor.
 
-## Criação de um nó {#creating-a-node}
+## Criando um nó {#creating-a-node}
 
 Para criar um nó com CRXDE Lite:
 
 1. Abra o CRXDE Lite no seu navegador da 
-1. No [**Painel do explorador**,](#explorer-pane) clique com o botão direito do mouse no nó onde deseja criar o novo nó, selecione **Criar**, em seguida **Criar nó**.
+1. No [**Painel do explorador**,](#explorer-pane) clique com o botão direito do mouse no nó em que deseja criar o novo nó, selecione **Criar**, depois **Criar nó**.
 1. Insira o **Nome** e selecione o **Tipo**.
 1. Clique em **OK**.
-1. Clique no botão [**Botão Salvar tudo**](#save-all-button) para salvar as alterações no servidor.
+1. Clique em [**Botão Salvar tudo**](#save-all-button) para salvar as alterações no servidor.
 
 Agora você pode adaptar o nó às suas necessidades modificando propriedades ou criando novos nós.
 
 >[!NOTE]
-A maioria das operações de edição, incluindo **Criar nó**, mantém todas as alterações na memória e as armazena somente no repositório ao salvar (usando o [**Botão Salvar tudo**](#save-all-button)). No entanto, algumas operações, como mover, são automaticamente persistentes.
-A validação com relação a se o nó recém-criado é permitido pelo tipo de nó do nó pai também é realizada pelo repositório ao salvar as alterações. Se você receber uma mensagem de erro ao salvar um nó, verifique se a estrutura de conteúdo é válida (por exemplo, não é possível criar um `nt:unstructured` nó como filho de `nt:folder` nó ).
+A maioria das operações de edição, incluindo **Criar nó** O, mantém todas as alterações na memória e só as armazena no repositório após salvar (usando o [**Botão Salvar tudo**](#save-all-button)). No entanto, algumas operações, como mover, são automaticamente mantidas.
+A validação relacionada à permissão do nó recém-criado pelo tipo de nó principal também é realizada pelo repositório ao salvar as alterações. Se você receber uma mensagem de erro ao salvar um nó, verifique se a estrutura do conteúdo é válida (por exemplo, não é possível criar um `nt:unstructured` nó como filho de `nt:folder` nó).
 
 ## Criação de uma propriedade {#creating-a-property}
 
 Para criar uma propriedade com o CRXDE Lite:
 
 1. Abra o CRXDE Lite no seu navegador da 
-1. No [**Painel do explorador**,](#explorer-pane) selecione o nó no qual deseja adicionar a nova propriedade.
-1. No [**Guia Propriedades**](#properties-tab) no painel inferior, insira o **Nome**, o **Tipo** e o **Valor**.
+1. No [**Painel do explorador**,](#explorer-pane) selecione o nó onde deseja adicionar a nova propriedade.
+1. No [**Guia Propriedades**](#properties-tab) no painel inferior, digite o **Nome**, o **Tipo**, e o **Valor**.
 1. Clique em **Adicionar**.
-1. Clique no botão [**Botão Salvar tudo**](#save-all-button) para salvar as alterações no servidor.
+1. Clique em [**Botão Salvar tudo**](#save-all-button) para salvar as alterações no servidor.
 
 ## Criação de um arquivo {#creating-a-file}
 
 Para criar um novo arquivo com o CRXDE Lite:
 
 1. Abra o CRXDE Lite no seu navegador da 
-1. No [**Painel do explorador**,](#explorer-pane) clique com o botão direito do mouse no componente onde deseja criar o arquivo, selecione **Criar**, em seguida **Criar arquivo**.
+1. No [**Painel do explorador**,](#explorer-pane) clique com o botão direito do mouse no componente em que deseja criar o arquivo e selecione **Criar**, depois **Criar arquivo**.
 1. Insira o arquivo **Nome** incluindo a sua extensão.
 1. Clique em **OK**.
-1. O novo arquivo é aberto como uma guia no [**Painel Editar**.](#edit-pane)
-1. Edite o arquivo .
-1. Clique no botão [**Botão Salvar tudo**](#save-all-button) para salvar as alterações.
+1. O novo arquivo é aberto como uma guia no [**Editar Painel**.](#edit-pane)
+1. Edite o arquivo.
+1. Clique em [**Botão Salvar tudo**](#save-all-button) para salvar as alterações.
 
-## Como exportar e importar tipos de nó {#exporting-and-importing-node-types}
+## Exportando e importando tipos de nós {#exporting-and-importing-node-types}
 
-Com o CRXDE Lite, você pode importar e/ou exportar definições de tipo de nó em [Notação Compact Namespace e Definição de Tipo de Nó (CND)](https://jackrabbit.apache.org/jcr/node-type-notation.html).
+Com o CRXDE Lite, você pode importar e/ou exportar definições de tipo de nó no [Namespace compacto e notação CND (Node Type Definition)](https://jackrabbit.apache.org/jcr/node-type-notation.html).
 
 Para exportar uma definição de tipo de nó no CRXDE Lite:
 
 1. Abra o CRXDE Lite no seu navegador da 
 1. Selecione o nó desejado.
-1. Selecionar **Ferramentas** then **Exportar tipo de nó**.
+1. Selecionar **Ferramentas** depois **Exportar tipo de nó**.
 1. A definição será exibida na notação CND em uma nova guia no navegador.
 1. Salve as informações, se necessário.
 
 Para importar uma definição de tipo de nó:
 
 1. Abra o CRXDE Lite no seu navegador da 
-1. Selecionar **Ferramentas** then **Importar Tipo de Nó**.
-1. Uma nova guia é aberta no [**Painel Editar**](#edit-pane) rotulado **Importar Tipo de Nó**.
-1. Insira a notação de CND para a definição na caixa de texto da variável **Importar Tipo de Nó** guia .
-1. Verificar **Permitir atualização** se estiver atualizando uma definição existente.
+1. Selecionar **Ferramentas** depois **Importar tipo de nó**.
+1. Uma nova guia é aberta na janela [**Editar Painel**](#edit-pane) rotulado **Importar tipo de nó**.
+1. Insira a notação CND para a definição na caixa de texto do **Importar tipo de nó** guia.
+1. Marcar **Permitir atualização** se estiver atualizando uma definição existente.
 1. Clique em **Importar**.
 
 ## Logs {#logging}
 
-Com o CRXDE Lite, você pode exibir o arquivo `error.log` que está localizado no sistema de arquivos em `<aem-install-dir>/crx-quickstart/logs` e filtrá-lo com o nível de log apropriado. Proceda do seguinte modo:
+Com o CRXDE Lite, é possível exibir o arquivo `error.log` que está localizado no sistema de arquivos em `<aem-install-dir>/crx-quickstart/logs` e filtrá-lo com o nível de log apropriado. Proceda da seguinte forma:
 
 1. Abra o CRXDE Lite no seu navegador da 
-1. No menu suspenso , à direita do [**Guia Console**](#console-tab) na parte inferior da janela, selecione **Logs do servidor**.
-1. Clique no botão **Stop** ícone para exibir as mensagens.
+1. No menu suspenso à direita do [**Guia Console**](#console-tab) na parte inferior da janela, selecione **Logs do servidor**.
+1. Clique em **Parar** ícone para exibir as mensagens.
 
 É possível:
 
-* Ajuste os parâmetros de log no Felix Console clicando no botão **Configurações de registro** ícone .
-* Limpe as mensagens clicando no botão **Limpar Console** ícone .
-* Fixar a mensagem na seleção atual clicando no botão **Console de pinos** ícone .
-* Ative ou desative a exibição de mensagens clicando no botão **Stop** ícone .
+* Ajuste os parâmetros de log no Felix Console clicando no ícone **Configurações de registro** ícone.
+* Limpe as mensagens clicando no ícone **Limpar console** ícone.
+* Fixar a mensagem na seleção atual clicando no **Fixar console** ícone.
+* Ative ou desative a exibição de mensagens clicando no link **Parar** ícone.

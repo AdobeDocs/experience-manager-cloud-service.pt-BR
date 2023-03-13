@@ -6,7 +6,7 @@ exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
 source-git-commit: 33dfe795140f2780f7f2cf876f3ebc725310214d
 workflow-type: tm+mt
 source-wordcount: '2701'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -177,7 +177,7 @@ Parte da estrutura base, esse arquivo é gerado na inicialização. Você está 
 
 O recurso de curinga de host padrão é adequado para um projeto padrão. Se precisar de personalização, modifique `virtualhosts.any`. Na personalização, não inclua o recurso de curinga do host padrão, pois ele corresponde **a cada** solicitação de entrada.
 
-## Módulos compatíveis do Apache {#apache-modules}
+## Módulos Apache compatíveis {#apache-modules}
 
 Consulte [Módulos compatíveis do Apache](/help/implementing/dispatcher/disp-overview.md#supported-directives).
 

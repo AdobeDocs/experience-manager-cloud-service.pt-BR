@@ -3,7 +3,7 @@ title: Conheça as noções básicas da modelagem de conteúdo
 description: Conheça as noções básicas da modelagem de conteúdo do seu CMS headless usando fragmentos de conteúdo.
 exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 100%
 
@@ -64,10 +64,10 @@ Um Modelo de fragmento de conteúdo descreve uma entidade.
 
 Dentro de um modelo:
 
-1. Os **tipos de dados** permitem definir os atributos individuais.
-Por exemplo, defina o campo que contém o nome de um professor como **Texto** e os seus anos de serviço como **Número**.
-1. Os tipos de dados **Referência de conteúdo** e **Referência do fragmento** permitem criar relações com outros conteúdos no AEM.
-1. O tipo de dados **Referência de fragmento** permite que você estabeleça vários níveis de estrutura aninhando seus fragmentos de conteúdo (de acordo com o tipo de modelo). Isso é essencial para a modelagem de conteúdo.
+1. **Tipos de dados** permitem definir os atributos individuais.
+Por exemplo, defina o campo com o nome de um professor como **Texto** e seus anos de serviço como **Número**.
+1. Os tipos de dados **Referência de conteúdo** e **Referência de fragmento** permitem criar relações com outro conteúdo no AEM.
+1. O tipo de dados **Referência de fragmento** permite que você atinja vários níveis de estrutura aninhando seus Fragmentos de conteúdo (de acordo com o tipo de modelo). Isso é essencial para a modelagem de conteúdo.
 
 Por exemplo:
 
@@ -97,11 +97,11 @@ O AEM fornece os seguintes tipos de dados para você modelar o conteúdo:
 Dois tipos de dados fornecem referências ao conteúdo fora de um fragmento específico:
 
 * **Referência de conteúdo**
-Fornece uma referência simples a outro conteúdo de qualquer tipo.
+Isso fornece uma referência simples a outro conteúdo de qualquer tipo.
 Por exemplo, você pode fazer referência a uma imagem em um local especifico.
 
 * **Referência de fragmento**
-Fornece referências a outros fragmentos de conteúdo.
+Isso fornece referências a outros Fragmentos de conteúdo.
 Esse tipo de referência é usado para criar conteúdo aninhado, introduzindo as relações necessárias para modelar o conteúdo.
 O tipo de dados pode ser configurado para permitir que os autores de fragmento:
    * Editem o fragmento referenciado diretamente.

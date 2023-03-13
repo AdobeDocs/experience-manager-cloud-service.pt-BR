@@ -1,10 +1,10 @@
 ---
-title: Marcação (Ativos - Fragmentos de conteúdo)
-description: Entenda como o editor de Fragmento de conteúdo usa a sintaxe de marcação para permitir que você crie conteúdo sem periféricos com facilidade.
+title: Markdown (Ativos - Fragmentos de conteúdo)
+description: Entenda como o editor de Fragmento de conteúdo usa a sintaxe de Markdown para permitir que você crie conteúdo headless facilmente.
 feature: Content Fragments
 role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
-source-git-commit: 21ee6ec3ffef602bfbac7d89bb6c3454869deda9
+source-git-commit: c15ef1cc9b14466105e5565c8ccc15120346f0f2
 workflow-type: tm+mt
 source-wordcount: '525'
 ht-degree: 92%
@@ -13,7 +13,7 @@ ht-degree: 92%
 
 # Markdown {#markdown}
 
-Quando você [criação](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), o editor de fragmento de conteúdo usa *marcação* sintaxe para permitir que você grave facilmente o conteúdo sem periféricos:
+Quando você estiver [criação](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), o editor de fragmento de conteúdo usa *markdown* sintaxe para permitir que você grave conteúdo headless facilmente:
 
 ![editor de Markdown](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 

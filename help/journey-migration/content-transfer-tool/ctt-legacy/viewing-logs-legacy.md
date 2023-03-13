@@ -13,7 +13,7 @@ ht-degree: 64%
 
 # Visualização de logs para um conjunto de migração (herdado) {#view-logs-content-transfer-tool}
 
-Após a conclusão de cada etapa (extração e assimilação), verifique os logs e procure erros.  Todos os erros devem ser resolvidos imediatamente, lidando com os problemas relatados ou entrando em contato com o suporte ao Adobe.
+Após a conclusão de cada etapa (extração e assimilação), verifique os registros e procure por erros.  Quaisquer erros devem ser solucionados imediatamente, tratando dos problemas relatados ou entrando em contato com o suporte da Adobe.
 
 ## Etapas para visualizar logs {#viewing-logs}
 

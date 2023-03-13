@@ -2,8 +2,8 @@
 title: Adicionar um certificado SSL
 description: Saiba como adicionar seu próprio certificado SSL usando as ferramentas de autoatendimento do Cloud Manager.
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: 14e0255b3ce2ca44579b9fc3de6c7b7f5d8f34b6
-workflow-type: ht
+source-git-commit: d0d4b22cdca02d81ca755e4045ffccb110739303
+workflow-type: tm+mt
 source-wordcount: '579'
 ht-degree: 100%
 

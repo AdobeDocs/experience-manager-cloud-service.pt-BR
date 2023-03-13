@@ -11,30 +11,30 @@ ht-degree: 17%
 
 # Convenções de nomenclatura{#naming-conventions}
 
-Os nós no repositório estão sujeitos às convenções de nomenclatura do Java Content Repository. No entanto, AEM impõe mais convenções para o nome dos nós da página.
+Os nós no repositório estão sujeitos às convenções de nomenclatura do Java Content Repository. No entanto, o AEM impõe mais convenções para o nome dos nós da página.
 
 ## Convenções de nomenclatura para páginas {#naming-conventions-for-pages}
 
 Essas convenções de nomenclatura são implementadas em vários níveis:
 
-* JcrUtil: a AEM da aplicação do [Utilitários JCR](#jcr-utilities).
-* PageManager: o [Gerenciador de página](#page-manager) O fornece métodos para operações no nível da página.
-* Na interface do usuário do AEM {#ui-behavior}
+* JcrUtil: a implementação do AEM do [Utilitários JCR](#jcr-utilities).
+* PageManager: a [Gerenciador de páginas](#page-manager) O fornece métodos para operações em nível de página.
+* Na interface do AEM {#ui-behavior}
 
 ### Utilitários JCR {#jcr-utilities}
 
-[JcrUtil](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/jcr/JcrUtil.html) é a AEM implementação dos utilitários JCR. De especial interesse para validar nomes são os mapeamentos de caracteres que ele controla e as seguintes validações:
+[JcrUtil](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/jcr/JcrUtil.html) é a implementação AEM dos utilitários JCR. De especial interesse para validar nomes são os mapeamentos de caracteres que ele controla e as seguintes validações:
 
 * `isValidName`
    * Verifica se o nome não está vazio e contém apenas caracteres válidos.
    * Pode ser usado para verificar se um nome proposto é válido.
 * `createValidName`
-   * Isso cria um rótulo válido de uma cadeia de caracteres arbitrária.
-   * Ele pode ser usado para criar um nome a partir de um título.
+   * Isso cria um rótulo válido de uma sequência arbitrária.
+   * Ela pode ser usada para criar um nome a partir de um título.
 
-### Gerenciador de página {#page-manager}
+### Gerenciador de páginas {#page-manager}
 
-[PageManager](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageManager.html) O fornece métodos para operações de nível de página, com base em [JCRUtil](#jcr-utilities).
+[PageManager](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageManager.html) O fornece métodos para operações no nível da página, com base em [JCRUtil](#jcr-utilities).
 
 ### Comportamento da interface do usuário do AEM {#ui-behavior}
 

@@ -3,7 +3,7 @@ title: Saiba mais sobre o desenvolvimento headless do CMS
 description: Nesta parte da Jornada de desenvolvedores headless do AEM, saiba mais sobre a tecnologia headless e por que usá-la.
 exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
 source-git-commit: 7ded4f891f5ab5c1562044772ea3304fc07b173e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1623'
 ht-degree: 100%
 

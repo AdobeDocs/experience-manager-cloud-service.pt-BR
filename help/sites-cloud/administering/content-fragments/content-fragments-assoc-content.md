@@ -4,8 +4,8 @@ description: Entenda como o recurso de conteúdo associado para Fragmentos de co
 feature: Content Fragments
 role: User
 exl-id: eb524872-1403-42d1-b735-eaab382cf313
-source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
-workflow-type: ht
+source-git-commit: 737d4d56312b763a50c2dfad0ea51feb9dbf4dde
+workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 100%
 

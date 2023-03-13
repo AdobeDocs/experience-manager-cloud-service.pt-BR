@@ -2,7 +2,7 @@
 title: Trabalho com fragmentos de conteúdo (Ativos - Fragmentos de conteúdo)
 description: Saiba como os fragmentos de conteúdo no Adobe Experience Manager (AEM) as a Cloud Service permitem projetar, criar, preparar e usar conteúdo independente de página, ideal para criação de páginas e entrega headless.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: 4478cee8f9a20e0b70bfe2fa8767e3262188cb33
+source-git-commit: 3c287425441db2eac19149a3080df333afff0e86
 workflow-type: tm+mt
 source-wordcount: '2071'
 ht-degree: 93%
@@ -11,7 +11,7 @@ ht-degree: 93%
 
 # Trabalho com fragmentos de conteúdo {#working-with-content-fragments}
 
-Com o Adobe Experience Manager (AEM) as a Cloud Service, os Fragmentos de conteúdo permitem projetar, criar, preparar e [publicar conteúdo independente da página](/help/sites-cloud/authoring/fundamentals/content-fragments.md) Eles permitem que você prepare conteúdo pronto para uso em vários locais/em vários canais, ideal para entrega sem interface.
+Com o Adobe Experience Manager (AEM) as a Cloud Service, os fragmentos de conteúdo permitem projetar, criar, preparar e [publicar conteúdo independente de página](/help/sites-cloud/authoring/fundamentals/content-fragments.md) Eles permitem preparar conteúdo pronto para uso em vários locais/canais, ideal para entrega headless.
 
 Os fragmentos de conteúdo contêm conteúdo estruturado:
 
@@ -34,7 +34,7 @@ Os fragmentos de conteúdo também podem ser entregues no formato JSON, usando o
 
 >[!NOTE]
 >
->Os fragmentos de conteúdo são armazenados como **Ativos**. Agora, eles são gerenciados principalmente com a variável **[Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)** , embora ainda possam ser gerenciadas no **Ativos** console. Esta seção cobre a gestão da **Ativos** console.
+>Os fragmentos de conteúdo são armazenados como **Ativos**. Agora, eles são gerenciados principalmente com o **[Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)** console, embora ainda possam ser gerenciados no **Assets** console. Esta seção abrange o gerenciamento do **Assets** console.
 
 Esta e as seguintes páginas abordam as tarefas de criação, configuração, manutenção e uso dos fragmentos de conteúdo:
 
@@ -45,7 +45,7 @@ Esta e as seguintes páginas abordam as tarefas de criação, configuração, ma
 * [Markdown](/help/assets/content-fragments/content-fragments-markdown.md) — uso da sintaxe de marcação para o fragmento
 * [Uso de conteúdo associado](/help/assets/content-fragments/content-fragments-assoc-content.md) — adição de conteúdo associado
 * [Metadados - Propriedades do fragmento](/help/assets/content-fragments/content-fragments-metadata.md) — visualização e edição das propriedades do fragmento
-* Use [Fragmentos de conteúdo, juntamente com o GraphQL, para fornecer conteúdo](/help/assets/content-fragments/content-fragments-graphql.md) para uso em seus aplicativos. Para ajudar nisso, você pode visualizar [Saída JSON](/help/assets/content-fragments/content-fragments-json-preview.md).
+* Uso [Fragmentos de conteúdo, juntamente com o GraphQL, para fornecer conteúdo](/help/assets/content-fragments/content-fragments-graphql.md) para uso em seus aplicativos. Para ajudar nisso, você pode visualizar [Saída JSON](/help/assets/content-fragments/content-fragments-json-preview.md).
 
 >[!NOTE]
 >
@@ -79,7 +79,7 @@ Esses fragmentos de conteúdo podem ser reunidos para proporcionar experiências
 >[!NOTE]
 >
 >**Fragmentos de conteúdo** e **[Fragmentos de experiência](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** são recursos diferentes no AEM:
->* **Fragmentos de conteúdo** são conteúdo editorial, com definição e estrutura, mas sem design visual e/ou layout adicionais. Eles podem ser usados para acessar dados estruturados, incluindo textos, números e datas, entre outros.
+>* **Fragmentos de conteúdo** são conteúdos editoriais, com definição e estrutura, mas sem designs visuais e/ou layouts adicionais. Eles podem ser usados para acessar dados estruturados, incluindo textos, números, datas, entre outros.
 >* **Fragmentos de experiência** são conteúdo totalmente apresentado; um fragmento de uma página da Web.
 >
 >Fragmentos de experiência podem incluir conteúdo na forma de Fragmentos de conteúdo, mas não o contrário.
@@ -120,7 +120,7 @@ Os fragmentos de conteúdo são:
 
 * Armazenados como **Ativos**:
 
-   * Os fragmentos de conteúdo (e suas variações) podem ser criados e mantidos a partir do **Ativos** console.
+   * Os fragmentos de conteúdo (e suas variações) podem ser criados e mantidos do **Assets** console.
    * Criados e editados no Editor de fragmento de conteúdo.
 
 * Usados no [editor de páginas por meio do componente Fragmento de conteúdo](/help/sites-cloud/authoring/fundamentals/content-fragments.md) (componente de referência):

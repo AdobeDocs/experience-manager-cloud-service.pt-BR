@@ -1,11 +1,11 @@
 ---
 title: Sobre perfis de imagem e perfis de vídeo do Dynamic Media
-description: Um Perfil de imagem ou um Perfil de vídeo é uma receita para quais opções se aplicam a ativos que você faz upload em uma pasta. Por exemplo, você pode especificar qual codificação de vídeo aplicar aos ativos de vídeo do Dynamic Media você faz upload. Ou, qual Perfil de imagem aplicar aos ativos de imagem da Dynamic Media para cortá-los corretamente.
+description: Um Perfil de imagem ou um Perfil de vídeo é uma fórmula para quais opções aplicar aos ativos que você faz upload em uma pasta. Por exemplo, você pode especificar qual codificação de vídeo aplicar aos ativos de vídeo do Dynamic Media que você carrega. Ou qual perfil de imagem aplicar aos ativos de imagem do Dynamic Media para cortá-los corretamente.
 contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Video Profiles
 role: Admin,User
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
-source-git-commit: 8b878a26653874c94a671a404d9b35740e43a514
+source-git-commit: a641903bf47634cd969f23840c5e6e6fa5a3693b
 workflow-type: tm+mt
 source-wordcount: '1377'
 ht-degree: 0%
@@ -14,45 +14,45 @@ ht-degree: 0%
 
 # Sobre perfis de imagem e perfis de vídeo do Dynamic Media{#about-dm-image-video-profiles}
 
-Um Perfil de imagem ou Perfil de vídeo é uma receita para quais opções se aplicam a ativos que você faz upload em uma pasta. Por exemplo, você pode especificar qual codificação de vídeo aplicar aos ativos de vídeo do Dynamic Media você faz upload. Ou, qual Perfil de imagem aplicar aos ativos de imagem da Dynamic Media para cortá-los corretamente.
+Um Perfil de imagem ou Perfil de vídeo é uma fórmula para quais opções aplicar aos ativos que você faz upload em uma pasta. Por exemplo, você pode especificar qual codificação de vídeo aplicar aos ativos de vídeo do Dynamic Media que você carrega. Ou qual perfil de imagem aplicar aos ativos de imagem do Dynamic Media para cortá-los corretamente.
 
 No Dynamic Media, você pode criar dois tipos de perfis, que são abordados detalhadamente nos seguintes links:
 
 * [Perfis de imagem do Dynamic Media](/help/assets/dynamic-media/image-profiles.md)
-* [Perfis de vídeo do Dynamic Media](/help/assets/dynamic-media/video-profiles.md)
+* [Perfis de vídeo Dynamic Media](/help/assets/dynamic-media/video-profiles.md)
 
 Consulte também [Perfis de metadados](/help/assets/metadata-profiles.md).
 
-Você deve ter direitos de Administrador para criar, editar e excluir Perfis de imagem do Dynamic Media ou Perfis de vídeo do Dynamic Media.
+Você deve ter direitos de administrador para criar, editar e excluir Perfis de imagem do Dynamic Media ou Perfis de vídeo do Dynamic Media.
 
-Depois de criar o Perfil de imagem ou o Perfil de vídeo, atribua-o a uma ou mais pastas que usa para os ativos recém-carregados do Dynamic Media.
+Depois de criar o Perfil de imagem ou o Perfil de vídeo, atribua-o a uma ou mais pastas que você usa para ativos do Dynamic Media recém-carregados.
 
 Consulte também [Práticas recomendadas para organizar ativos digitais para usar perfis de processamento](/help/assets/organize-assets.md).
 
 
 >[!NOTE]
 >
->Os ativos que você move de uma pasta para outra não são reprocessados. Por exemplo, suponha que você tenha a Pasta 1 que tem o perfil A atribuído a ela e a Pasta 2 que tem o perfil B atribuído a ela. Se você mover ativos da Pasta 1 para a Pasta 2, os ativos movidos manterão o processamento original da Pasta 1.
+>Os ativos que você move de uma pasta para outra não são reprocessados. Por exemplo, suponha que você tenha uma Pasta 1 com o perfil A atribuído a ela e uma Pasta 2 com o perfil B atribuído a ela. Se você mover ativos da Pasta 1 para a Pasta 2, os ativos movidos manterão o processamento original da Pasta 1.
 >
->O mesmo é verdadeiro mesmo quando você move ativos entre duas pastas que têm o mesmo perfil atribuído a ele.
+>O mesmo é verdadeiro mesmo quando você move ativos entre duas pastas que têm o mesmo perfil atribuído a elas.
 
 ## Reprocessar ativos do Dynamic Media em uma pasta {#reprocessing-assets}
 
-Você pode reprocessar ativos em uma pasta que já tenha um Perfil de imagem do Dynamic Media ou um Perfil de vídeo do Dynamic Media que você alterou posteriormente.
+Você pode reprocessar ativos em uma pasta que já tenha um Perfil de imagem do Dynamic Media existente ou um Perfil de vídeo do Dynamic Media que você alterou posteriormente.
 
-Por exemplo, suponha que você criou um Perfil de imagem do Dynamic Media e o atribuiu a uma pasta. Qualquer ativo de imagem carregado na pasta tinha automaticamente o Perfil de imagem aplicado aos ativos. No entanto, posteriormente você decide adicionar uma nova proporção de recorte inteligente ao Perfil de imagem. Agora, em vez de precisar selecionar e fazer upload novamente dos ativos para a pasta, basta executar o *Scene7: Reprocessar ativos* fluxo de trabalho.
+Por exemplo, suponha que você criou um Perfil de imagem do Dynamic Media e o atribuiu a uma pasta. Todos os ativos de imagem carregados na pasta automaticamente tinham o Perfil de imagem aplicado aos ativos. No entanto, mais tarde, você decide adicionar uma nova taxa de corte inteligente ao Perfil de imagem. Agora, em vez de precisar selecionar e fazer upload novamente dos ativos para a pasta, execute o *Scene7: Reprocessar ativos* fluxo de trabalho.
 
-Você pode executar o fluxo de trabalho de reprocessamento em um ativo para o qual o processamento falhou na primeira vez. Mesmo que você não tenha editado um perfil de imagem ou de vídeo ou já tenha aplicado um perfil de imagem ou de vídeo, ainda poderá executar o fluxo de trabalho de reprocessamento em uma pasta de ativos a qualquer momento.
+Você pode executar o fluxo de trabalho de reprocessamento em um ativo cujo processamento falhou pela primeira vez. Mesmo que você não tenha editado um Perfil de imagem ou Perfil de vídeo, ou já tenha aplicado um Perfil de imagem ou Perfil de vídeo, ainda será possível executar o fluxo de trabalho de reprocessamento em uma pasta de ativos a qualquer momento.
 
-Opcionalmente, é possível ajustar o tamanho do lote do workflow de reprocessamento a partir de um padrão de 50 ativos até 1000 ativos. Quando você executa a variável _Scene7: Reprocessar ativos_ em uma pasta, os ativos são agrupados em lotes e enviados ao servidor da Dynamic Media para processamento. Após o processamento, os metadados de cada ativo em todo o conjunto de lotes são atualizados em [!DNL Adobe Experience Manager]. Se o tamanho do lote for grande, você pode experimentar um atraso no processamento. Ou, se o tamanho do lote for muito pequeno, pode causar muitas viagens de ida e volta para o servidor do Dynamic Media.
+Como opção, é possível ajustar o tamanho do lote do fluxo de trabalho de reprocessamento de um padrão de 50 ativos até 1000 ativos. Quando você executa o _Scene7: Reprocessar ativos_ em uma pasta, os ativos são agrupados em lotes e depois enviados ao servidor do Dynamic Media para processamento. Após o processamento, os metadados de cada ativo no conjunto de lotes inteiro são atualizados em [!DNL Adobe Experience Manager]. Se o tamanho do lote for grande, você pode enfrentar um atraso no processamento. Ou, se o tamanho do lote for muito pequeno, poderá causar muitas viagens de ida e volta para o servidor do Dynamic Media.
 
-Consulte [Ajuste o tamanho do lote do workflow de reprocessamento](#adjusting-load).
+Consulte [Ajustar o tamanho do lote do fluxo de trabalho de reprocessamento](#adjusting-load).
 
 >[!NOTE]
 >
->Se você estiver executando uma migração em massa de ativos do Dynamic Media Classic para o [!DNL Experience Manager], ative o agente de replicação Migration no servidor do Dynamic Media. Quando a migração estiver concluída, desative o agente.
+>Se você estiver executando uma migração em massa de ativos do Dynamic Media Classic para o [!DNL Experience Manager], habilite o Agente de replicação de migração no servidor do Dynamic Media. Quando a migração for concluída, desative o agente.
 >
->O agente de publicação de Migração deve estar desabilitado no servidor do Dynamic Media para que o fluxo de trabalho de Reprocessamento funcione como esperado.
+>O agente de publicação de migração deve ser desativado no servidor do Dynamic Media para que o fluxo de trabalho de reprocessamento funcione conforme esperado.
 
 <!-- LEAVE IN PLACE, MAY BE USED IN THE FUTURE
 
@@ -60,67 +60,67 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 -->
 
-**Para reprocessar ativos Dynamic Media em uma pasta:**
+**Para reprocessar ativos do Dynamic Media em uma pasta:**
 
-1. Em [!DNL Experience Manager], na página Ativos , navegue até uma pasta de ativos que tenha um Perfil de imagem ou um Perfil de vídeo atribuído a ela e para a qual deseja aplicar a variável **Scene7: Reprocessar ativo** fluxo de trabalho.
+1. Entrada [!DNL Experience Manager], na página Ativos, navegue até uma pasta de ativos que tenha um Perfil de imagem ou um Perfil de vídeo atribuído a ele e para a qual você deseja aplicar a **Scene7: Reprocessar ativo** fluxo de trabalho.
 
    As pastas que têm um Perfil de imagem ou Perfil de vídeo atribuído a elas têm o nome do perfil exibido logo abaixo do nome da pasta na Exibição de cartão.
 
 1. Selecione uma pasta.
 
-   * O workflow considera todos os arquivos na pasta selecionada, de forma recursiva.
-   * Se houver uma ou mais subpastas com ativos na pasta selecionada principal, o workflow reprocessará cada ativo na hierarquia de pastas.
-   * Como prática recomendada, evite executar esse workflow em uma hierarquia de pastas que tenha mais de 1000 ativos.
+   * O fluxo de trabalho considera todos os arquivos na pasta selecionada de forma recursiva.
+   * Se houver uma ou mais subpastas com ativos na pasta principal selecionada, o fluxo de trabalho reprocessará cada ativo na hierarquia de pastas.
+   * Como prática recomendada, evite executar esse fluxo de trabalho em uma hierarquia de pastas com mais de 1000 ativos.
 
 1. Próximo ao canto superior esquerdo da página, na lista suspensa, selecione **[!UICONTROL Linha do tempo]**.
-1. Próximo ao canto inferior esquerdo da página, à direita do [!UICONTROL Comentário] selecione o ícone do carrinho ( **^** ).
+1. Próximo ao canto inferior esquerdo da página, à direita da [!UICONTROL Comentário] , selecione o ícone de quilate ( **^** ).
 
-   ![Captura de tela de Ativos no Experience Manager mostrando uma pasta selecionada de ativos, a lista suspensa Linha do tempo realçada, o botão Iniciar fluxo de trabalho realçado e o ícone do carrinho à direita do campo Comentário também destacaram.](/help/assets/dynamic-media/assets/reprocess-assets1.png)
+   ![Captura de tela de Ativos no Experience Manager mostrando uma pasta selecionada de ativos, a lista suspensa Linha do tempo destacada, o botão Iniciar fluxo de trabalho destacado e o ícone de carrinho à direita do campo Comentário também destacado.](/help/assets/dynamic-media/assets/reprocess-assets1.png)
 
 1. Selecionar **[!UICONTROL Iniciar fluxo de trabalho]**.
-1. No **[!UICONTROL Iniciar fluxo de trabalho]** lista suspensa, escolha **[!UICONTROL Scene7: Reprocessar ativos]**.
-1. (Opcional) Na seção **Inserir o título do fluxo de trabalho** , digite um nome para o workflow. Você pode usar o nome para fazer referência à instância do workflow, se necessário.
+1. No **[!UICONTROL Iniciar fluxo de trabalho]** selecione **[!UICONTROL Scene7: Reprocessar ativos]**.
+1. (Opcional) Na **Inserir título do fluxo de trabalho** digite um nome para o workflow. Você pode usar o nome para fazer referência à instância do workflow, se necessário.
 
-   ![Captura de tela da interface do usuário da Linha do tempo com &quot;Scene7: Reprocessar ativos&quot; selecionado na lista suspensa Iniciar fluxo de trabalho e o botão Iniciar foi realçado.](/help/assets/dynamic-media/assets/reprocess-assets2.png)
+   ![Captura de tela da interface do usuário da Linha do tempo com a opção &quot;Scene7: Reprocessar ativos&quot; selecionada na lista suspensa Iniciar fluxo de trabalho, e o botão Iniciar realçado.](/help/assets/dynamic-media/assets/reprocess-assets2.png)
 
-1. Selecionar **[!UICONTROL Iniciar]**, em seguida selecione **[!UICONTROL Confirmar]**.
+1. Selecionar **[!UICONTROL Início]** e selecione **[!UICONTROL Confirmar o]**.
 
-   Para monitorar ou verificar o progresso do workflow, no [!DNL Experience Manager] página principal do console, selecione **[!UICONTROL Ferramentas > Fluxo de trabalho]**. Na página Instâncias de fluxo de trabalho , selecione um fluxo de trabalho. Na barra de menus, selecione **[!UICONTROL Abrir Histórico]**. Você também pode encerrar, suspender ou renomear um fluxo de trabalho selecionado na mesma página Instâncias de fluxo de trabalho .
+   Para monitorar o workflow ou verificar seu progresso, no [!DNL Experience Manager] página do console principal, selecione **[!UICONTROL Ferramentas > Fluxo de trabalho]**. Na página Instâncias do fluxo de trabalho, selecione um fluxo de trabalho. Na barra de menus, selecione **[!UICONTROL Abrir histórico]**. Você também pode encerrar, suspender ou renomear um workflow selecionado na mesma página Instâncias do workflow.
 
-### Ajuste o tamanho do lote do workflow de reprocessamento (opcional) {#adjusting-load}
+### Ajustar o tamanho do lote do fluxo de trabalho de reprocessamento (opcional) {#adjusting-load}
 
-(Opcional) O tamanho padrão do lote no fluxo de trabalho de reprocessamento é de 50 ativos por trabalho. Esse tamanho ideal do lote é regulado pelo tamanho médio do ativo e pelos tipos MIME de ativos em que o reprocessamento é executado. Um valor maior significa que você tem muitos arquivos em um único trabalho de reprocessamento. Assim, o banner de processamento permanece ativo [!DNL Experience Manager] ativos por um tempo maior. No entanto, se o tamanho médio do arquivo for de 1 MB ou menos Adobe, a recomenda que você aumente o valor para vários 100, mas nunca mais que 1000. Se o tamanho médio do arquivo for de centenas de megabytes, o Adobe recomenda diminuir o tamanho do lote para até 10.
+(Opcional) O tamanho de lote padrão no fluxo de trabalho de reprocessamento é de 50 ativos por trabalho. Esse tamanho ideal do lote é determinado pelo tamanho médio do ativo e pelos tipos MIME de ativos nos quais o reprocessamento é executado. Um valor mais alto significa que você tem muitos arquivos em um único trabalho de reprocessamento. Assim, o banner de processamento permanece ativado [!DNL Experience Manager] ativos por mais tempo. No entanto, se o tamanho médio do arquivo for pequeno - 1 MB ou menos - o Adobe recomenda que você aumente o valor para vários 100, mas nunca mais do que um 1000. Se o tamanho médio do arquivo for centenas de megabytes, a Adobe recomenda que você reduza o tamanho do lote para 10.
 
-**Para ajustar opcionalmente o tamanho do lote do workflow de reprocessamento:**
+**Como opção, para ajustar o tamanho do lote do workflow de reprocessamento:**
 
-1. Em [!DNL Experience Manager], selecione **[!UICONTROL Adobe Experience Manager]** para acessar o console de navegação global, selecione o **[!UICONTROL Ferramentas]** Ícone (martelo) > **[!UICONTROL Fluxo de trabalho > Modelos]**.
-1. Na página Modelos de fluxo de trabalho , na Exibição de cartão ou na Exibição de lista, selecione **[!UICONTROL Scene7: Reprocessar ativos]**.
+1. Entrada [!DNL Experience Manager], selecione **[!UICONTROL Adobe Experience Manager]** para acessar o console de navegação global, selecione a guia **[!UICONTROL Ferramentas]** Ícone (martelo) > **[!UICONTROL Fluxo de trabalho > Modelos]**.
+1. Na página Modelos de fluxo de trabalho, na Exibição de cartão ou na Exibição de lista, selecione **[!UICONTROL Scene7: Reprocessar ativos]**.
 
-   ![Captura de tela da página Modelos de fluxo de trabalho com &quot;Scene7: Reprocessar ativos&quot; selecionado na exibição Cartão do Experience Manager.](/help/assets/dynamic-media/assets/reprocess-assets7.png)
+   ![Captura de tela da página Modelos de fluxo de trabalho com o fluxo de trabalho &quot;Scene7: Reprocessar ativos&quot; selecionado na exibição Cartão do Experience Manager.](/help/assets/dynamic-media/assets/reprocess-assets7.png)
 
-1. Na barra de ferramentas, selecione **[!UICONTROL Editar]**. Uma nova guia do navegador abre o Scene7: Página de modelo de fluxo de trabalho Reprocessar ativos .
-1. Na Scene7: Reprocessar ativos na página de fluxo de trabalho, próximo ao canto superior direito, selecione **[!UICONTROL Editar]** para &quot;desbloquear&quot; o workflow.
-1. No fluxo de trabalho, selecione o componente Upload em lote do Scene7 para abrir a barra de ferramentas e selecione **[!UICONTROL Configurar]** na barra de ferramentas.
+1. Na barra de ferramentas, selecione **[!UICONTROL Editar]**. Uma nova guia do navegador abre a página Scene7: Reprocessar ativos do modelo de fluxo de trabalho.
+1. Na página de fluxo de trabalho Scene7: Reprocessar ativos, próximo ao canto superior direito, selecione **[!UICONTROL Editar]** para &quot;desbloquear&quot; o workflow.
+1. No fluxo de trabalho, selecione o componente Scene7 Batch Upload para abrir a barra de ferramentas e selecione **[!UICONTROL Configurar]** na barra de ferramentas.
 
-   ![Captura de tela do componente &quot;Upload em lote do Scene7&quot; na &quot;Scene7: Reprocessar ativos&quot; com o ponteiro do mouse sobre o ícone &quot;Configurar&quot;.](/help/assets/dynamic-media/assets/reprocess-assets8.png)
+   ![Captura de tela do componente &quot;Upload em lote do Scene7&quot; na página &quot;Scene7: Reprocessamento de ativos&quot; com o ponteiro do mouse sobre o ícone &quot;Configurar&quot;.](/help/assets/dynamic-media/assets/reprocess-assets8.png)
 
-1. No **[!UICONTROL Upload em lote para o Scene7 — Propriedades da etapa]** , defina o seguinte:
+1. No **[!UICONTROL Upload em lote para o Scene7 — Propriedades da etapa]** defina o seguinte:
    * No **[!UICONTROL Título]** e **[!UICONTROL Descrição]** campos de texto, insira um novo título e descrição para a tarefa, se desejado.
-   * Selecionar **[!UICONTROL Avanço do Manipulador]** se o manipulador avançar para a próxima etapa.
-   * No **[!UICONTROL Tempo limite]** , insira o tempo limite do processo externo (segundos).
-   * No **[!UICONTROL Período]** , insira um intervalo de polling (segundos) para testar a conclusão do processo externo.
-   * No **[!UICONTROL Campo em lote]**, insira o número máximo de ativos (50-1000) a serem processados em um trabalho de upload de processamento em lote do servidor Dynamic Media.
-   * Selecionar **[!UICONTROL Avanço no tempo limite]** se desejar avançar quando o tempo limite for atingido. Desmarque se deseja continuar com a caixa de entrada quando o tempo limite for atingido.
+   * Selecionar **[!UICONTROL Avanço do manipulador]** se o seu manipulador avançar para a próxima etapa.
+   * No **[!UICONTROL Tempo limite]** insira o tempo limite do processo externo (segundos).
+   * No **[!UICONTROL Período]** insira um intervalo de pesquisa (segundos) para testar a conclusão do processo externo.
+   * No **[!UICONTROL Campo de lote]**, insira o número máximo de ativos (50-1000) a serem processados em um trabalho de upload de processamento em massa do servidor do Dynamic Media.
+   * Selecionar **[!UICONTROL Avançar no tempo limite]** se desejar avançar quando o tempo limite for atingido. Desmarque se deseja continuar na caixa de entrada quando o tempo limite for atingido.
 
-   ![Captura de tela da página &quot;Upload em lote para Scene7 - Propriedades da etapa&quot;.](/help/assets/dynamic-media/assets/reprocess-assets3.png)
+   ![Captura de tela da página &quot;Upload em lote para o Scene7 - Propriedades da etapa&quot;.](/help/assets/dynamic-media/assets/reprocess-assets3.png)
 
-1. No canto superior direito do **[!UICONTROL Upload em lote para o Scene7 - Propriedades da etapa]** caixa de diálogo, selecione **[!UICONTROL Concluído]**.
+1. No canto superior direito da **[!UICONTROL Upload em lote para o Scene7 - Propriedades da etapa]** caixa de diálogo, selecione **[!UICONTROL Concluído]**.
 
-1. No canto superior direito da Scene7: Reprocessar página de modelo do fluxo de trabalho Ativos , selecione **[!UICONTROL Sincronizar]**. Quando você vê **[!UICONTROL Sincronizado]**, o modelo de tempo de execução do workflow é sincronizado e pronto para reprocessar ativos em uma pasta.
+1. No canto superior direito da página do modelo de fluxo de trabalho Scene7: Reprocessar ativos, selecione **[!UICONTROL Sincronizar]**. Quando você vê **[!UICONTROL Sincronizado]**, o modelo de tempo de execução de fluxo de trabalho foi sincronizado com sucesso e está pronto para reprocessar ativos em uma pasta.
 
-   ![Captura de tela de Ativos no Experience Manager mostrando uma pasta selecionada de ativos, a lista suspensa Linha do tempo realçada, o botão Iniciar fluxo de trabalho realçado e o ícone do carrinho à direita do campo Comentário também destacaram.](/help/assets/dynamic-media/assets/reprocess-assets1.png)
+   ![Captura de tela de Ativos no Experience Manager mostrando uma pasta selecionada de ativos, a lista suspensa Linha do tempo destacada, o botão Iniciar fluxo de trabalho destacado e o ícone de carrinho à direita do campo Comentário também destacado.](/help/assets/dynamic-media/assets/reprocess-assets1.png)
 
-1. Feche a guia do navegador que mostra a Scene7: Reprocessar modelo de fluxo de trabalho do Assets.
+1. Feche a guia do navegador que mostra o modelo de fluxo de trabalho Scene7: Reprocessar ativos.
 
 <!-- MAY BE NEEDED IN THE FUTURE
 

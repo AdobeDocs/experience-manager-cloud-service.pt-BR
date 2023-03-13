@@ -4,7 +4,7 @@ description: Saiba como administrar instâncias de fluxo de trabalho
 feature: Administering
 role: Admin
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
-source-git-commit: 594efd18c7358505c859ca7e6269a3fc5e517926
+source-git-commit: 0a87842923298be1a801a85519ac85fae5ef7933
 workflow-type: tm+mt
 source-wordcount: '1165'
 ht-degree: 95%
@@ -66,7 +66,7 @@ Há vários consoles disponíveis para administrar seus fluxos de trabalho. Use 
    >[!NOTE]
    >
    >
-   >Para encerrar ou suspender um fluxo de trabalho, ele deve estar em um estado de espera pela intervenção do usuário, como em uma Etapa do participante. Tentar suspender um workflow que está executando trabalhos no momento (threads ativos que estão em execução) pode não produzir os resultados esperados.
+   >Para encerrar ou abortar um workflow, ele deve estar em um estado de espera pela intervenção do usuário, como em uma Etapa do participante. A tentativa de anular um fluxo de trabalho que está executando trabalhos (threads ativos que estão em execução) pode não produzir os resultados esperados.
 
 
 ## Visualização de fluxos de trabalho arquivados {#viewing-archived-workflows}

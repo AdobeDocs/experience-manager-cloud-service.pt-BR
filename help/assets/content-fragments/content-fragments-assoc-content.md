@@ -1,23 +1,23 @@
 ---
 title: Conteúdo associado (Ativos - Fragmentos de conteúdo)
-description: Entenda como AEM recurso de conteúdo associado fornece a conexão para que os ativos possam ser usados opcionalmente com o fragmento.
+description: Entenda como o recurso de conteúdo associado ao AEM fornece a conexão para que os ativos possam ser usados opcionalmente com o fragmento.
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
-source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
+source-git-commit: 737d4d56312b763a50c2dfad0ea51feb9dbf4dde
 workflow-type: tm+mt
 source-wordcount: '233'
-ht-degree: 55%
+ht-degree: 62%
 
 ---
 
 # Conteúdo associado{#associated-content}
 
-AEM recurso de conteúdo associado fornece a conexão para que os ativos possam ser usados opcionalmente com o fragmento quando ele for adicionado a uma página de conteúdo. Isso proporciona flexibilidade para a entrega de conteúdo sem periféricos por [fornecer um intervalo de ativos para acessar ao usar o fragmento de conteúdo em uma página,](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) ao mesmo tempo, ajuda a reduzir o tempo necessário para pesquisar o ativo apropriado.
+O recurso de conteúdo associado ao AEM fornece a conexão para que os ativos possam ser usados opcionalmente com o fragmento quando ele for adicionado a uma página de conteúdo. Isso proporciona flexibilidade para a entrega de conteúdo headless ao [fornecer uma variedade de ativos para acessar ao usar o fragmento de conteúdo em uma página,](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) ao mesmo tempo que ajuda a reduzir o tempo necessário para pesquisar o ativo apropriado.
 
 ## Adicionar conteúdo associado {#adding-associated-content}
 
 >[!NOTE]
 >
->Existem vários métodos de adição [ativos visuais (por exemplo, imagens)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) ao fragmento e/ou página.
+>Existem vários métodos de adicionar [ativos visuais (por exemplo, imagens)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) ao fragmento e/ou página.
 
 Para fazer a associação, primeiro é necessário [adicionar ativos de mídia a uma coleção](/help/assets/manage-collections.md). Depois disso, você pode:
 

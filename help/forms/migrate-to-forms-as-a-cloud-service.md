@@ -7,10 +7,10 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: 4416c43b408f576a547590796141a6b551e25681
+source-git-commit: d9c19d0b567a9a97973c4c4e25e64722da109dbb
 workflow-type: tm+mt
 source-wordcount: '1335'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -48,7 +48,7 @@ Você pode migrar suas configurações adaptáveis do Forms, temas, modelos e nu
 
 ## Pré-requisitos {#prerequisites}
 
-* [Habilitar Forms - Inscrição digital](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/setting-up-program.html?#editing-program) para o seu programa Forms Cloud Service e [executar o pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html).
+* [Habilitar Forms - Inscrição digital](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/setting-up-program.html?#editing-program) para o seu programa Forms Cloud Service e [executar o pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=pt-BR).
 
    ![Resultado do teste](assets/enable-add-on.png)
 

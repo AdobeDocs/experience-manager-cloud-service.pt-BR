@@ -2,8 +2,8 @@
 title: Verificação de status do nome de domínio
 description: Saiba como determinar se o nome de domínio personalizado foi verificado com sucesso pelo Cloud Manager.
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: d22d657361ea6c4885babd76e6b4c10f88378994
-workflow-type: ht
+source-git-commit: 357c1b9c29b3a79ee7322f7f2176b6ae41fc9c2a
+workflow-type: tm+mt
 source-wordcount: '663'
 ht-degree: 100%
 

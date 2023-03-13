@@ -1,7 +1,7 @@
 ---
 title: Recursos de layout do Adaptive Forms
 seo-title: Layout capabilities of Adaptive Forms
-description: O layout e a aparência do Adaptive Forms em vários dispositivos são regidos pelas configurações de layout. Entenda os vários layouts e como aplicá-los.
+description: O layout e as aparências do Adaptive Forms em vários dispositivos são regidos pelas configurações de layout. Entenda os vários layouts e como aplicá-los.
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Recursos de layout do Adaptive Forms {#layout-capabilities-of-adaptive-forms}
 
-[!DNL Adobe Experience Manager] permite criar Forms adaptáveis de fácil uso que oferecem experiências dinâmicas para os usuários finais. O layout do formulário controla como os itens ou componentes são exibidos em um formulário adaptável.
+[!DNL Adobe Experience Manager] O permite criar Forms adaptável fácil de usar, que oferece experiências dinâmicas para usuários finais. O layout de formulário controla como os itens ou componentes são exibidos em um Formulário adaptável.
 
 <!-- ## Prerequisite knowledge {#prerequisite-knowledge}
 
@@ -20,39 +20,39 @@ Before learning about the different layout capabilities of Adaptive Forms, read 
 
 ## Tipos de layouts {#types-of-layouts}
 
-Um formulário adaptável fornece os seguintes tipos de layouts:
+Um Formulário adaptável fornece os seguintes tipos de layouts:
 
 **[!UICONTROL Layout do painel]** Controla como os itens ou componentes dentro de um painel são exibidos em um dispositivo.
 
-**[!UICONTROL Layout móvel]** Controla a navegação de um formulário em um dispositivo móvel. Se a largura do dispositivo for de 768 pixels ou mais, o layout será considerado um layout Móvel e otimizado para um dispositivo móvel.
+**[!UICONTROL Layout de dispositivo móvel]** Controla a navegação de um formulário em um dispositivo móvel. Se a largura do dispositivo for de 768 pixels ou mais, o layout é considerado um Layout de dispositivo móvel e otimizado para um dispositivo móvel.
 
-**[!UICONTROL Layout da barra de ferramentas]** Controla o posicionamento dos botões de Ação na barra de ferramentas ou na barra de ferramentas do painel em um formulário.
+**[!UICONTROL Layout da barra de ferramentas]** Controla a colocação dos botões de Ação na barra de ferramentas ou na barra de ferramentas do painel em um formulário.
 
-Todos esses layouts de painel são definidos na seção `/libs/fd/af/layouts` local.
+Todos esses layouts de painel são definidos no `/libs/fd/af/layouts` localização.
 
-Para alterar o layout de um formulário adaptável, use o Modo de criação em [!DNL Experience Manager].
+Para alterar o layout de um formulário adaptável, use o Modo de criação no [!DNL Experience Manager].
 
 ## [!UICONTROL Layout do painel] {#panel-layout}
 
 Um autor de formulário pode associar um layout a cada painel de um formulário adaptável, incluindo o painel raiz.
 
-Os layouts do Painel estão disponíveis em `/libs/fd/af/layouts/panel` local. Toque no painel e selecione ![cmppr1](assets/configure-icon.svg) para exibir as propriedades do painel.
+Os layouts do painel estão disponíveis em `/libs/fd/af/layouts/panel` localização. Toque no painel e selecione ![cmppr1](assets/configure-icon.svg) para exibir as propriedades do painel.
 
 ![Lista de layouts de painel para o painel raiz de um formulário adaptável](assets/layouts.png)
 
 ### [!UICONTROL Responsivo - tudo em uma página sem navegação] {#responsive-everything-on-one-page-without-navigation-br}
 
-Use este layout de painel para criar um layout responsivo que se ajuste ao tamanho da tela do seu dispositivo sem precisar de navegação especializada.
+Use este layout de painel para criar um layout responsivo que se ajuste ao tamanho da tela do seu dispositivo sem qualquer necessidade de navegação especializada.
 
-Com esse layout, é possível colocar vários **[!UICONTROL Formulário adaptável do painel]** componentes um após o outro dentro do painel.
+Usando este layout, você pode colocar vários **[!UICONTROL Formulário adaptável do painel]** componentes um após o outro, dentro do painel.
 
-![Um formulário usando um layout responsivo, como visto em uma tela pequena](assets/responsive-layout.png)
+![Um formulário usando layout responsivo como visto em uma tela pequena](assets/responsive-layout.png)
 
 ### [!UICONTROL Assistente] {#wizard}
 
-Use esse layout de painel para fornecer a navegação guiada dentro de um formulário. Por exemplo, use esse layout quando desejar capturar informações obrigatórias em um formulário, ao mesmo tempo em que orienta os usuários passo a passo.
+Use esse layout de painel para fornecer navegação guiada dentro de um formulário. Por exemplo, use esse layout quando quiser capturar informações obrigatórias em um formulário enquanto guia os usuários passo a passo.
 
-Use o **[!UICONTROL Formulário adaptável do painel]** componente para fornecer navegação passo a passo dentro de um painel. Quando você usa esse layout, um usuário move para a próxima etapa somente após a conclusão da etapa atual
+Use o **[!UICONTROL Formulário adaptável do painel]** para fornecer navegação passo a passo dentro de um painel. Quando você usa esse layout, um usuário passa para a próxima etapa somente após a etapa atual ser concluída
 
 ```javascript
 window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpression)
@@ -62,51 +62,51 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 ### [!UICONTROL Acordeão] {#layout-for-accordion-design}
 
-Com esse layout, é possível colocar a variável **[!UICONTROL Formulário adaptável do painel]** em um painel com navegação no estilo acordeão. Com esse layout, também é possível criar painéis repetitivos. Painéis repetitivos permitem adicionar ou remover dinamicamente painéis, conforme necessário. Você pode definir o número mínimo e máximo de vezes que um painel se repete. Além disso, o título do painel pode ser determinado dinamicamente, com base nas informações fornecidas nos itens do painel.
+Usando esse layout, você pode colocar o **[!UICONTROL Formulário adaptável do painel]** em um painel com navegação de estilo Accordion. Usando esse layout, você também pode criar painéis repetíveis. Os painéis repetíveis permitem adicionar ou remover painéis dinamicamente, conforme necessário. Você pode definir o número mínimo e máximo de vezes que um painel é repetido. Além disso, o título do painel pode ser determinado dinamicamente, com base nas informações fornecidas nos itens do painel.
 
-A expressão Summary pode ser usada para mostrar os valores fornecidos pelo usuário final no título do painel minimizado.
+A expressão de resumo pode ser usada para mostrar os valores fornecidos pelo usuário final no título do painel minimizado.
 
 ![Painéis repetíveis usando o layout Acordeão no Adaptive Forms](assets/accordion-layout.png)
 
 ### [!UICONTROL Layout com guias - as guias são exibidas à esquerda ]{#tabbed-layout-tabs-appear-on-the-left}
 
-Com esse layout, é possível colocar a variável **[!UICONTROL Formulário adaptável do painel]** em um painel com navegação por guias. As guias são colocadas à esquerda do conteúdo do painel.
+Usando esse layout, você pode colocar o **[!UICONTROL Formulário adaptável do painel]** em um painel com navegação por guias. As guias são colocadas à esquerda do conteúdo do painel.
 
-![No layout Tabbed , as guias são exibidas à esquerda](assets/tabs-on-left.png)
+![No layout com guias, as guias são exibidas à esquerda](assets/tabs-on-left.png)
 
 Guias que aparecem à esquerda de um painel
 
-### [!UICONTROL Layout com guias - as guias são exibidas na parte superior] {#tabbed-layout-tabs-appear-on-the-top}
+### [!UICONTROL Layout com guias - guias são exibidas na parte superior] {#tabbed-layout-tabs-appear-on-the-top}
 
-Com esse layout, é possível colocar a variável **[!UICONTROL Formulário adaptável do painel]** Componente em um painel com navegação de guia. As guias são colocadas sobre o conteúdo do painel.
+Usando esse layout, você pode colocar o **[!UICONTROL Formulário adaptável do painel]** Componente em um painel com navegação por guias. As guias são colocadas em cima do conteúdo do painel.
 
 ![Layout com guias no Adaptive Forms com guias na parte superior](assets/tabs-on-top.png)
 
-## Layouts para dispositivos móveis {#mobile-layouts}
+## Layouts móveis {#mobile-layouts}
 
-Os layouts móveis permitem uma navegação simples nos dispositivos móveis com telas relativamente menores. Os layouts móveis usam estilos de guias ou de assistente para navegação de formulários. Aplicar um layout móvel fornece um único layout para todo o formulário.
+Os layouts móveis permitem uma navegação fácil nos dispositivos móveis com telas relativamente menores. Os layouts móveis usam estilos com guias ou de assistente para navegação de formulário. A aplicação de um layout móvel fornece um único layout para todo o formulário.
 
-Esse layout controla a navegação usando uma barra de navegação e um menu de navegação. A barra de navegação mostra **&lt;** e **>** ícone para indicar **[!UICONTROL next]** e **[!UICONTROL previous]** etapas de navegação no formulário.
+Esse layout controla a navegação usando uma barra de navegação e um menu de navegação. A barra de navegação mostra **&lt;** e **>** ícone para indicar **[!UICONTROL próximo]** e **[!UICONTROL anterior]** etapas de navegação no formulário.
 
-Os Layouts móveis estão disponíveis em `/libs/fd/af/layouts/mobile/` local. Os seguintes layouts para dispositivos móveis estão disponíveis no Adaptive Forms, por padrão.
+Os Layouts móveis estão disponíveis em `/libs/fd/af/layouts/mobile/` localização. Os seguintes layouts móveis estão disponíveis no Adaptive Forms, por padrão.
 
 ![Lista de layouts móveis no Adaptive Forms](assets/mobile-navigation.png)
 
-Selecione o **[!UICONTROL Adicionar itens navegáveis do layout responsivo ao menu móvel]** para exibir as opções de navegação disponíveis para um painel no layout Móvel. As opções navegáveis só estarão visíveis se você selecionar **[!UICONTROL Responsivo]** layout para um painel.
+Selecione o **[!UICONTROL Adicionar itens navegáveis do layout responsivo para o menu móvel]** opção para visualizar as opções navegáveis disponíveis para um painel no Layout móvel. As opções navegáveis estarão visíveis somente se você selecionar **[!UICONTROL Responsivo]** para um painel.
 
-Ao usar um layout Móvel, o menu de formulário, para acessar vários painéis, fica disponível ao tocar em ![aem6forms_form_menu](assets/rail-icon.svg) ícone .
+Ao usar um layout Móvel, o menu de formulário, para acessar vários painéis de formulário, está disponível ao tocar em ![aem6forms_form_menu](assets/rail-icon.svg) ícone.
 
 ### [!UICONTROL Layout com títulos de painel no cabeçalho do formulário] {#layout-with-panel-titles-in-the-form-header}
 
-Esse layout, como o nome sugere, mostra os títulos do painel junto com o menu de navegação e a barra de navegação. Esse layout também fornece ícones Próximo e Anterior para navegação.
+Esse layout, como o nome sugere, mostra títulos de painel junto com o menu de navegação e a barra de navegação. Esse layout também fornece ícones Próximo e Anterior para navegação.
 
-![Layouts para dispositivos móveis com títulos de painéis nos cabeçalhos do formulário](assets/mobile-layout1.png)
+![Layouts móveis com títulos de painel nos cabeçalhos do formulário](assets/mobile-layout1.png)
 
 ### [!UICONTROL Layout sem títulos de painel no cabeçalho do formulário ]{#layout-without-panel-titles-in-the-form-header}
 
-Esse layout, como o nome sugere, mostra somente o menu de navegação e a barra de navegação sem títulos de painel. Esse layout também fornece ícones Próximo e Anterior para navegação.
+Esse layout, como o nome sugere, mostra apenas o menu de navegação e a barra de navegação sem títulos de painel. Esse layout também fornece ícones Próximo e Anterior para navegação.
 
-![Layouts para dispositivos móveis sem títulos de painéis nos cabeçalhos do formulário](assets/mobile-layout2.png)
+![Layouts móveis sem títulos de painel nos cabeçalhos do formulário](assets/mobile-layout2.png)
 
 <!-- ## Toolbar layouts {#toolbar-layouts}
 

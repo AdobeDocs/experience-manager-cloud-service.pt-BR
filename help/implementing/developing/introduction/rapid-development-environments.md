@@ -1,7 +1,7 @@
 ---
 title: Ambientes de desenvolvimento rápido
 description: Saiba como aproveitar os Ambientes de desenvolvimento rápido para iterações de desenvolvimento rápido em um ambiente de nuvem.
-source-git-commit: 74ccf3a22043bfc7ac47e8fa1c9d064ad88a886e
+source-git-commit: f4b9aafc3f805a8f19f35b8a8447cae6c537076a
 workflow-type: tm+mt
 source-wordcount: '3293'
 ht-degree: 5%

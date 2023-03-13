@@ -1,7 +1,7 @@
 ---
 title: Palavras-chave adaptáveis do Forms
 seo-title: Adaptive Forms keywords
-description: Não é possível usar essas palavras reservadas como identificadores no Adaptive Forms.
+description: Não é possível usar essas palavras reservadas como identificadores no Forms adaptável.
 seo-description: You cannnot use these reserved words as identifiers in your Adaptive Forms.
 uuid: 79e77692-2f0c-493b-8c2c-c408ff3dcece
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -17,7 +17,7 @@ ht-degree: 16%
 
 # Palavras-chave adaptáveis do Forms {#adaptive-forms-keywords}
 
-As palavras-chave adaptáveis do Forms são identificadores predefinidos e reservados que têm significado especial para o Adaptive Forms. Não é possível usar essas palavras-chave como identificadores no Adaptive Forms. A tabela a seguir lista todas as palavras-chave que são identificadores reservados para o Adaptive Forms.
+As palavras-chave do Forms adaptável são identificadores predefinidos e reservados que têm significado especial para o Forms adaptável. Não é possível usar essas palavras-chave como identificadores no Forms adaptável. A tabela a seguir lista todas as palavras-chave que são identificadores reservados para o Adaptive Forms.
 
 <table>
  <tbody>
@@ -49,7 +49,7 @@ As palavras-chave adaptáveis do Forms são identificadores predefinidos e reser
   <tr>
    <td><p>resetData</p> </td>
    <td><p>runPendingExpressions</p> </td>
-   <td><p>repetitivo</p> </td>
+   <td><p>repetível</p> </td>
   </tr>
   <tr>
    <td><p>calcExp</p> </td>
@@ -72,7 +72,7 @@ As palavras-chave adaptáveis do Forms são identificadores predefinidos e reser
    <td><p>getElement</p> </td>
   </tr>
   <tr>
-   <td><p>espaço reservadoText</p> </td>
+   <td><p>placeholderText</p> </td>
    <td><p>autoSaveStartExpression</p> </td>
    <td><p>filhos</p> </td>
   </tr>
@@ -187,33 +187,33 @@ As palavras-chave adaptáveis do Forms são identificadores predefinidos e reser
    <td><p>setFocus</p> </td>
   </tr>
   <tr>
-   <td><p>CompletionExp</p> </td>
+   <td><p>completionExp</p> </td>
    <td><p>sectionTitle</p> </td>
    <td><p>ativeInstance</p> </td>
   </tr>
   <tr>
-   <td><p>CompletionExpReq</p> </td>
-   <td><p>CompletionScript</p> </td>
-   <td><p>ativePart</p> </td>
+   <td><p>completionExpReq</p> </td>
+   <td><p>completionScript</p> </td>
+   <td><p>parteAtiva</p> </td>
   </tr>
   <tr>
    <td><p>toolbar</p> </td>
-   <td><p>completeBeforeMessage</p> </td>
+   <td><p>completionBeforeMessage</p> </td>
    <td><p>isLastPart</p> </td>
   </tr>
   <tr>
    <td><p>instanceManager</p> </td>
-   <td><p>CompletionAfterMessage</p> </td>
+   <td><p>completionAfterMessage</p> </td>
    <td><p>isFirstPart</p> </td>
   </tr>
   <tr>
    <td><p>instanceIndex</p> </td>
-   <td><p>CompletionSuccessScript</p> </td>
+   <td><p>completionSuccessScript</p> </td>
    <td><p>currentActivePart</p> </td>
   </tr>
   <tr>
    <td><p>resumo</p> </td>
-   <td><p>CompletionFailureScript</p> </td>
+   <td><p>completionFailureScript</p> </td>
    <td><p>sectionName</p> </td>
   </tr>
   <tr>
@@ -223,11 +223,11 @@ As palavras-chave adaptáveis do Forms são identificadores predefinidos e reser
   </tr>
   <tr>
    <td><p>fetchedFromService</p> </td>
-   <td><p>RepeablePanelId</p> </td>
-   <td><p>getSeletedIndex</p> </td>
+   <td><p>repeatPanelId</p> </td>
+   <td><p>getSelectedIndex</p> </td>
   </tr>
   <tr>
-   <td><p>repetiablePanelPath</p> </td>
+   <td><p>repeatPanelPath</p> </td>
    <td><p>getItemIdentifier</p> </td>
    <td><p>mobileLayout</p> </td>
   </tr>
@@ -239,4 +239,4 @@ As palavras-chave adaptáveis do Forms são identificadores predefinidos e reser
  </tbody>
 </table>
 
-Além das palavras-chave listadas acima, evite usar nomes semelhantes a [APIs adaptáveis do Forms JavaScript](https://adobe.com/go/learn_aemforms_javascript_api_63).
+Além das palavras-chave listadas acima, evite usar nomes semelhantes a [APIs JavaScript adaptáveis do Forms](https://adobe.com/go/learn_aemforms_javascript_api_63).

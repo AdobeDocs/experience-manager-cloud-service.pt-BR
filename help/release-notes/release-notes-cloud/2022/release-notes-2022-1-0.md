@@ -63,7 +63,7 @@ Assista ao vídeo [Visão geral da versão de janeiro de 2022](https://video.tv.
 
 * Durante a migração de ativos do AEM local para os serviços em nuvem, os ativos não processados e sem representação original são enviados ao Asset Compute para processamento.
 
-## [!DNL Experience Manager Forms] como [!DNL Cloud Service] {#forms}
+## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Novidades do [!DNL Forms] {#what-is-new-forms}
 
@@ -104,7 +104,7 @@ A data de lançamento do Cloud Manager no AEM as a Cloud Service 2022.01.0 é 20
 ### Novidades {#what-is-new-cm}
 
 * O Cloud Manager [evitará reconstruir a base de código quando detectar que a mesma Git Commit é usada](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) em várias execuções de pipeline de pilha completa.
-* Acessar o log de ambiente AEM agora requer o perfil de produto **Gerenciador de implantação**. Os usuários sem esse perfil verão um botão desativado na interface do usuário.
+* Acessar o log de ambiente AEM agora requer o perfil de produto **Gerente de implantação**. Os usuários sem esse perfil verão um botão desativado na interface do usuário.
 * A interface não permitirá a configuração de pipeline de front-end para um programa em que o Sites não está habilitado como uma solução.
 * Após gerar uma senha Git, a data de expiração será exibida.
 

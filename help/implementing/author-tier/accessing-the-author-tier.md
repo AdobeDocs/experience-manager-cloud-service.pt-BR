@@ -17,4 +17,4 @@ No momento, o formato do URL é o seguinte:
 
 * `https://author-p[Program ID]-e[EnvironmentID].adobeaemcloud.com/`
 
-Não há suporte para nomes de domínio personalizados para a camada de autor de AEM.
+Não há suporte para nomes de domínio personalizados para a camada de autor AEM.

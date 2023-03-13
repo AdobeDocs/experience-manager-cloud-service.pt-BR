@@ -162,7 +162,7 @@ Você também pode usar o componente para controlar o comportamento da tarefa. P
 
 ## Converter em etapa PDF/A {#convert-pdfa}
 
-PDF/A é um formato de arquivo que permite preservar o conteúdo do documento a longo prazo, incorporando as fontes e descompactando o arquivo. Como resultado, um documento PDF/A é normalmente maior do que um documento PDF padrão. Você pode usar o ***Converter em PDF/A*** etapa em um fluxo de trabalho de AEM para converter seus documentos PDF para o formato PDF/A.
+PDF/A é um formato de arquivo que permite preservar o conteúdo do documento a longo prazo, incorporando as fontes e descompactando o arquivo. Como resultado, um documento PDF/A geralmente é maior do que um documento PDF padrão. Você pode usar o ***Converter em PDF/A*** etapa em um fluxo de trabalho de AEM para converter seus documentos PDF para o formato PDF/A.
 
 A etapa converter em PDF/A tem as seguintes propriedades:
 

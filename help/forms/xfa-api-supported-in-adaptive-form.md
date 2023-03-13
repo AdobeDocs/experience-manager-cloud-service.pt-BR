@@ -1,5 +1,5 @@
 ---
-title: Suporte XFA no Forms adaptável baseado em XDP
+title: Suporte XFA no Adaptive Forms baseado em XDP
 seo-title: XFA support in XDP-based Adaptive Forms
 description: Lista eventos XFA, propriedades, scripts e validação compatíveis no Adaptive Forms.
 seo-description: Lists supported XFA events, properties, scripts, and validation in Adaptive Forms.
@@ -16,21 +16,21 @@ ht-degree: 7%
 ---
 
 
-# Suporte XFA no Forms adaptável baseado em XDP{#xfa-support-in-xdp-based-adaptive-forms}
+# Suporte XFA no Adaptive Forms baseado em XDP{#xfa-support-in-xdp-based-adaptive-forms}
 
 ## Introdução {#introduction}
 
-A Adaptive Forms oferece suporte para vários eventos, propriedades, scripts e validações XFA definidos em um arquivo XDP, incluindo:
+O Adaptive Forms oferece suporte a vários eventos, propriedades, scripts e validações XFA definidos em um arquivo XDP, incluindo:
 
 * Execução de scripts definidos em eventos no arquivo XDP.
-* Capturando valores padrão e propriedades comportamentais para campos no arquivo XDP.
+* Captura de valores padrão e propriedades comportamentais para campos no arquivo XDP.
 * Execução de scripts de validação definidos no arquivo XDP.
 
-Quando um formulário adaptável é criado com base em um arquivo XDP, as propriedades, os eventos e as validações são preenchidos automaticamente na interface do usuário de criação de formulário. No entanto, os autores de formulários podem substituir alguns desses elementos para criar uma experiência alternativa.
+Quando um formulário adaptável é criado com base em um arquivo XDP, as propriedades, os eventos e as validações são preenchidos automaticamente na interface de criação do formulário. No entanto, os autores de formulário podem substituir alguns desses elementos para criar uma experiência alternativa.
 
 Este artigo lista eventos, propriedades e validações XFA compatíveis honrados no Adaptive Forms e explica como substituí-los no Adaptive Forms.
 
-## Elementos XFA suportados e mapeamento no Adaptive Forms {#supported-xfa-elements-and-their-mapping-in-adaptive-forms-br}
+## Elementos XFA compatíveis e seu mapeamento no Adaptive Forms {#supported-xfa-elements-and-their-mapping-in-adaptive-forms-br}
 
 ### Campos {#fields}
 
@@ -59,7 +59,7 @@ Quando um formulário adaptável é criado usando um arquivo XDP, você pode arr
    <td><p>Seletor de datas</p> </td>
   </tr>
   <tr>
-   <td><p>Scribble de assinatura</p> </td>
+   <td><p>Rabisco de assinatura</p> </td>
    <td><p>Rabiscar a assinatura</p> </td>
   </tr>
   <tr>
@@ -113,15 +113,15 @@ A tabela a seguir captura como vários scripts XFA definidos nos arquivos XDP se
   </tr>
   <tr>
    <td><p>somExpression </p> </td>
-   <td><p>Mapeado para a propriedade Bind reference (bindRef) no Formulário adaptável.</p> </td>
+   <td><p>Mapeado para a propriedade Referência de vínculo (bindRef) no Formulário adaptável.</p> </td>
   </tr>
   <tr>
    <td><p>presence </p> </td>
-   <td><p>Mapeado para a propriedade visível no Formulário adaptável. Você pode substituí-lo usando a expressão Visibility .</p> </td>
+   <td><p>Mapeado para a propriedade visível no Formulário adaptável. É possível substituí-lo usando a expressão Visibility.</p> </td>
   </tr>
   <tr>
    <td><p>access </p> </td>
-   <td><p>Mapeado para a propriedade ativada no Formulário adaptável. Você pode substituí-lo usando a expressão Access .</p> </td>
+   <td><p>Mapeado para a propriedade ativada no Formulário adaptável. Você pode substituí-lo usando a expressão Access.</p> </td>
   </tr>
   <tr>
    <td><p>Acessibilidade: função </p> </td>
@@ -129,7 +129,7 @@ A tabela a seguir captura como vários scripts XFA definidos nos arquivos XDP se
   </tr>
   <tr>
    <td><p>Acessibilidade: speakPriority </p> </td>
-   <td><p>Mapeado para a propriedade speakPriority no formulário adaptável.</p> </td>
+   <td><p>Mapeado para a propriedade speakPriority no Formulário adaptável.</p> </td>
   </tr>
   <tr>
    <td><p>Acessibilidade: speakText</p> </td>
@@ -140,40 +140,40 @@ A tabela a seguir captura como vários scripts XFA definidos nos arquivos XDP se
    <td><p>Mapeado para a propriedade de descrição curta no Formulário adaptável.</p> </td>
   </tr>
   <tr>
-   <td><p>caption<em> (todos os tipos de campo)</em></p> </td>
-   <td><p>Mapeado para a propriedade Título no Formulário adaptável.</p> </td>
+   <td><p>legenda<em> (todos os tipos de campos)</em></p> </td>
+   <td><p>Mapeado para a propriedade de título no Formulário adaptável.</p> </td>
   </tr>
   <tr>
-   <td><p>displayFormat<em> (todos os tipos de campo)</em></p> </td>
+   <td><p>displayFormat<em> (todos os tipos de campos)</em></p> </td>
    <td><p>Mapeado para o padrão de exibição no formulário adaptável.</p> </td>
   </tr>
   <tr>
-   <td><p>rawValue<em> (todos os tipos de campo)</em></p> </td>
-   <td><p>Mapeado para a propriedade value no Formulário adaptável.</p> </td>
+   <td><p>rawValue<em> (todos os tipos de campos)</em></p> </td>
+   <td><p>Mapeado para a propriedade de valor no Formulário adaptável.</p> </td>
   </tr>
   <tr>
-   <td><p>items<em> (Caixa De Listagem, Caixa De Seleção)</em></p> </td>
-   <td><p>Mapeada para a propriedade options no Formulário adaptável. É possível substituí-lo usando a expressão Options .</p> </td>
+   <td><p>itens<em> (Caixa de listagem, Caixa de seleção)</em></p> </td>
+   <td><p>Mapeado para a propriedade de opções no Formulário adaptável. Você pode substituí-lo usando a expressão Options.</p> </td>
   </tr>
   <tr>
    <td><p>maxChar<em> (Campo de texto)</em></p> </td>
    <td><p>Mapeado para a propriedade Máximo de caracteres permitidos no Formulário adaptável.</p> </td>
   </tr>
   <tr>
-   <td><p>multiline<em> (Campo de texto)</em></p> </td>
-   <td><p>Mapeado para a propriedade Permitir várias linhas no formulário adaptável.</p> </td>
+   <td><p>multilinha<em> (Campo de texto)</em></p> </td>
+   <td><p>Mapeado para a propriedade Permitir várias linhas no Formulário adaptável.</p> </td>
   </tr>
   <tr>
-   <td><p>fracDigit<em> (Campo numérico, Campo decimal)</em></p> </td>
+   <td><p>fracDigit<em> (Campo Numérico, Campo Decimal)</em></p> </td>
    <td><p>Mapeado para a propriedade de dígitos Frac no Formulário adaptável.</p> </td>
   </tr>
   <tr>
-   <td><p>leadDigit<em> (Campo numérico, Campo decimal)</em></p> </td>
-   <td><p>Mapeado para a propriedade de dígitos de lead no Formulário adaptável.</p> </td>
+   <td><p>leadDigit<em> (Campo Numérico, Campo Decimal)</em></p> </td>
+   <td><p>Mapeado para a propriedade de dígitos de cliente potencial no Formulário adaptável.</p> </td>
   </tr>
   <tr>
    <td><p>multiSelect<em> (Caixa de listagem)</em></p> </td>
-   <td><p>Mapeado para a propriedade Permitir várias seleções no Formulário adaptável.</p> </td>
+   <td><p>Mapeado para a propriedade Permite seleção múltipla no Formulário adaptável.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -194,11 +194,11 @@ A tabela a seguir captura como vários scripts XFA definidos no arquivo XDP se c
   </tr>
   <tr>
    <td><p>calculate</p> </td>
-   <td><p>Mapeado para a expressão Calculate no formulário adaptável.</p> </td>
+   <td><p>Mapeado para a expressão Calcular no Formulário adaptável.</p> </td>
   </tr>
   <tr>
    <td><p>validate </p> </td>
-   <td><p>Mapeado para a expressão Validação no formulário adaptável.</p> </td>
+   <td><p>Mapeado para a expressão Validação no Formulário adaptável.</p> </td>
   </tr>
   <tr>
    <td><p>validationState </p> </td>
@@ -213,7 +213,7 @@ A tabela a seguir captura como vários scripts XFA definidos no arquivo XDP se c
    <td><p>Mapeado para a expressão Click do botão.</p> </td>
   </tr>
   <tr>
-   <td><p>Suporte para script no servidor</p> </td>
+   <td><p>Suporte para script de servidor</p> </td>
    <td><p>Esse script é executado no tempo de execução e não pode ser substituído no Formulário adaptável.</p> </td>
   </tr>
   <tr>
@@ -229,20 +229,20 @@ A tabela a seguir captura como vários scripts XFA definidos no arquivo XDP se c
 
 ### Validações {#validations}
 
-A tabela a seguir captura como as validações do XFA mapeiam para validações no Adaptive Forms.
+A tabela a seguir captura como as validações XFA são mapeadas para validações no Adaptive Forms.
 
 <table>
  <tbody>
   <tr>
    <td><p><strong>Validação de XFA</strong></p> </td>
-   <td><p><strong>Validação correspondente no formulário adaptável</strong></p> </td>
+   <td><p><strong>Validação correspondente no Formulário adaptável</strong></p> </td>
   </tr>
   <tr>
    <td><p>Padrão de validação (formatTest)</p> </td>
    <td><p>validatePictureClause</p> </td>
   </tr>
   <tr>
-   <td><p>Mensagem de padrão de validação (formatTestMessage)</p> </td>
+   <td><p>Mensagem do padrão de validação (formatTestMessage)</p> </td>
    <td><p>validatePictureMessage</p> </td>
   </tr>
   <tr>
@@ -258,7 +258,7 @@ A tabela a seguir captura como as validações do XFA mapeiam para validações 
    <td><p>validateExp</p> </td>
   </tr>
   <tr>
-   <td><p>Mensagem de script de validação (scriptTestMessage)</p> </td>
+   <td><p>Mensagem do script de validação (scriptTestMessage)</p> </td>
    <td><p>validateMessage</p> </td>
   </tr>
  </tbody>
@@ -266,5 +266,5 @@ A tabela a seguir captura como as validações do XFA mapeiam para validações 
 
 >[!NOTE]
 >
->Não é possível substituir a propriedade obrigatória do botão de opção Formulário adaptável e do grupo de caixas de seleção que estão vinculados aos botões de seleção XFA.
+>Não é possível substituir a propriedade obrigatória pelo botão de opção Formulário adaptável e pelo grupo de caixas de seleção vinculados aos botões de seleção XFA.
 

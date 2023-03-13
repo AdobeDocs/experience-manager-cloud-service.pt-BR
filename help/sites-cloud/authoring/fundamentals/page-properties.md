@@ -2,8 +2,8 @@
 title: Editar as propriedades da página
 description: Defina as propriedades desejadas para uma página
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 6e4919e73ef3efdfc64174a1babab084596aba48
-workflow-type: ht
+source-git-commit: d0a698a8f8685b1e5957a9d93d805ca3f825354a
+workflow-type: tm+mt
 source-wordcount: '1975'
 ht-degree: 100%
 

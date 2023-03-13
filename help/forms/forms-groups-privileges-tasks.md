@@ -13,7 +13,7 @@ ht-degree: 5%
 
 Você pode [criar grupos](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) e atribuir políticas e [usuários](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) aos grupos. Essas políticas controlam as permissões dos usuários que fazem parte do grupo.
 
-Depois de configurar [!DNL AEM Forms] as a Cloud Service, os grupos listados na tabela abaixo, como [!DNL forms-users] e forms-power-user, são automaticamente disponíveis para atribuição:
+Depois de configurar [!DNL AEM Forms] as a Cloud Service, os grupos listados na tabela abaixo, como [!DNL forms-users] e forms-power-user, estão automaticamente disponíveis para atribuição:
 
 <table>
  <tbody>
@@ -25,9 +25,9 @@ Depois de configurar [!DNL AEM Forms] as a Cloud Service, os grupos listados na 
    <td>[!DNL forms-users] <sup>[1]</sup></td> 
    <td>
     <ul> 
-     <li>Criar, visualizar, publicar e enviar o Adaptive Forms</li> 
+     <li>Criar, visualizar, publicar e enviar Forms adaptável</li> 
     <!-- <li>Create, preview, and publish interactive communications and document fragments</li> -->
-     <li>Fazer upload de ativos para uma instância de AEM</li> 
+     <li>Fazer upload de ativos para uma instância AEM</li> 
      <li>Criar temas</li> 
     </ul> </td> 
   </tr>
@@ -35,12 +35,12 @@ Depois de configurar [!DNL AEM Forms] as a Cloud Service, os grupos listados na 
    <td>[!DNL forms-power-user]</td> 
    <td>
     <ul> 
-     <li>Criar, visualizar, publicar e enviar o Adaptive Forms</li> 
+     <li>Criar, visualizar, publicar e enviar Forms adaptável</li> 
      <!-- <li>Create, preview, and publish interactive communications and document fragments</li> 
      <li>Create scripts for Adaptive Forms using code editor</li> -->
-     <li>Fazer upload de ativos incluindo scripts</li> 
+     <li>Fazer upload de ativos, incluindo scripts</li> 
      <li>Criar temas</li> 
-     <li>Importar pacotes contendo XDP</li> 
+     <li>Importar pacotes que contêm XDP</li> 
     </ul> </td> 
   </tr>
   <!-- <tr>
@@ -55,7 +55,7 @@ Depois de configurar [!DNL AEM Forms] as a Cloud Service, os grupos listados na 
    <td>[!DNL template-authors] <sup>[2]</sup></td> 
    <td>
     <ul> 
-     <li>Criar e visualizar o Adaptive Forms <!-- or interactive communications --> modelos</li> 
+     <li>Criar e visualizar Forms adaptável <!-- or interactive communications --> modelos</li> 
     </ul> </td> 
   </tr>
   <tr>

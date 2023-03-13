@@ -2,7 +2,7 @@
 title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2022.8.0.
 description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2022.8.0.
 exl-id: 0eff8100-5990-4553-8373-445fb7e6fb27
-source-git-commit: 7b21a8af886c8e1f209e3b7cc5d94de5c58be1ac
+source-git-commit: 9a08514f11c86b783ae68940a0c3c58fcada3dc2
 workflow-type: tm+mt
 source-wordcount: '628'
 ht-degree: 65%
@@ -23,12 +23,12 @@ A seção a seguir descreve as Notas de versão gerais da versão atual (mais re
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento do [!DNL Adobe Experience Manager] como [!DNL Cloud Service] a versão atual (2022.8.0) é 1º de setembro de 2022.
+A data de lançamento de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] A versão atual (2022.8.0) é 1º de setembro de 2022.
 A próxima versão (2022.10.0) está planejada para 10 de novembro de 2022.
 
 ## Vídeo da versão {#release-video}
 
-Assista ao vídeo Visão geral da versão de agosto de 2022 para obter um resumo dos recursos adicionados na versão 2022.8.0:
+Assista ao vídeo Visão geral da versão de agosto de 2022 que exibe um resumo dos recursos adicionados na versão 2022.8.0:
 
 >[!VIDEO](https://video.tv.adobe.com/v/346608/?quality=12)
 
@@ -36,16 +36,16 @@ Assista ao vídeo Visão geral da versão de agosto de 2022 para obter um resumo
 
 ### Novos recursos no [!DNL Sites] {#sites-features}
 
-* O componente Email permite a criação de conteúdo no AEM, que é então entregue como emails via Campaign Classic. O Componente Principal De Email:
-   * é baseado no [Componente WCM principal](https://github.com/adobe/aem-core-wcm-components) que suporta Modelos editáveis e o Sistema de estilos.
-   * O fornece 10 componentes de produção otimizados por email (Página, Contêiner, Título, Texto, Imagem, Botão, Teaser, Fragmento de experiência, Fragmento de conteúdo, Segmentação).
-   * O oferece personalização e segmentação avançadas, graças à [inserção de variáveis de Campanha](https://github.com/adobe/aem-core-email-components/wiki/RTE-Personalization) na maioria dos campos de diálogo, e para o [Componente de segmentação](https://github.com/adobe/aem-core-email-components/wiki/Segmentation-component-(Technical-Documentation)).
-   * O fornece a saída de HTML amigável para email ideal, graças ao [Estilos CSS em invólucro](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation), o [Intransmissões de atributo HTML](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation)e o [HTML sanitizer](https://github.com/adobe/aem-core-email-components/wiki/HTML-sanitizing:-Technical-documentation).
+* O Componente de email permite a criação de conteúdo no AEM, que é então entregue por email através do Campaign Classic. O Componente principal de email:
+   * baseia-se no [Componente WCM do núcleo](https://github.com/adobe/aem-core-wcm-components) que aceita Modelos editáveis e o Sistema de estilos.
+   * O fornece 10 componentes de produção otimizados para email (página, contêiner, título, texto, imagem, botão, teaser, fragmento de experiência, fragmento de conteúdo e segmentação).
+   * O oferece personalização e segmentação avançadas, graças à [inserção de variáveis de campanha](https://github.com/adobe/aem-core-email-components/wiki/RTE-Personalization) na maioria dos campos de diálogo, e para a flexibilidade [Componente de segmentação](https://github.com/adobe/aem-core-email-components/wiki/Segmentation-component-(Technical-Documentation)).
+   * O fornece saída de HTML ideal para email, graças à [Estilos CSS incorporados](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation), o [inliner de atributo HTML](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation), e o [higienizador de HTML](https://github.com/adobe/aem-core-email-components/wiki/HTML-sanitizing:-Technical-documentation).
    * permite a criação de emails em qualquer lugar.
 
 ### Novos recursos disponíveis no canal de pré-lançamento do [!DNL Sites] {#prerelease-features-sites}
 
-* O [Console do fragmento do conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) O fornece aos usuários uma opção para exibir o número total de cópias de idioma associadas a um fragmento de conteúdo. Um acesso de 1 clique também foi fornecido para exibir todas as cópias de idioma. Os usuários também podem filtrar a exibição de tabela pela localidade de seu interesse.
+* A variável [Console de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) O fornece aos usuários uma opção para exibir o número total de cópias de idioma associadas a um fragmento de conteúdo. Um acesso de 1 clique também foi fornecido para exibir todas as cópias de idioma. Os usuários também podem filtrar a exibição de tabela pela localidade de seu interesse.
 
 ![Idiomas de Fragmentos de conteúdo](/help/release-notes/assets/cfconsole-languages.png)
 
@@ -73,8 +73,8 @@ Assista ao vídeo Visão geral da versão de agosto de 2022 para obter um resumo
 
 ### Novidades {#what-is-new-cif}
 
-* Associação de páginas de AEM a produtos e categorias por meio das propriedades AEM página mais visão geral do cockpit de produtos
-   ![associação da página de cockpit do produto](/help/assets/CIF/product_cockpit_page_association.png)
+* Associação de páginas de AEM a produtos e categorias por meio de propriedades de página de AEM, além de visão geral no cockpit do produto
+   ![associação de página do cockpit do produto](/help/assets/CIF/product_cockpit_page_association.png)
 
 ## Cloud Manager {#cloud-manager}
 

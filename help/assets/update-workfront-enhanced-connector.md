@@ -15,16 +15,16 @@ ht-degree: 1%
 
 >[!TIP]
 >
->Você está procurando por [!DNL Workfront for Experience Manager enhanced connector] atualizar documentação do AEM 6.5? Clique em [here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html?lang=en##update-enhanced-connector-for-workfront).
+>Você está procurando por [!DNL Workfront for Experience Manager enhanced connector] atualizar a documentação do AEM 6.5? Clique em [aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html?lang=en##update-enhanced-connector-for-workfront).
 
 
 Para atualizar o [!DNL Workfront for Experience Manager enhanced connector] para a versão mais recente:
 
 1. Baixe a versão mais recente do conector aprimorado em [Distribuição de software Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/workfront-tools.ui.apps.zip).
 
-1. [Acesso](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=en) e clonar seu repositório as a Cloud Service AEM do Cloud Manager.
+1. [Access](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=en) e clonar seu repositório do AEM as a Cloud Service no Cloud Manager.
 
-1. Abra o repositório do Experience Manager as a Cloud Service clonado usando um IDE de sua escolha.
+1. Abra o repositório as a Cloud Service Experience Manager clonado usando um IDE de sua escolha.
 
 1. Coloque o arquivo zip do conector aprimorado baixado na Etapa 1 no seguinte caminho:
 
@@ -34,9 +34,9 @@ Para atualizar o [!DNL Workfront for Experience Manager enhanced connector] para
 
    >[!NOTE]
    >
-   >Se a variável `resources` não existe, crie a pasta.
+   >Se a variável `resources` pasta não existe, crie a pasta.
 
-1. Atualizar a versão do conector aprimorado no pai `pom.xml`.
+1. Atualizar a versão aprimorada do conector no pai `pom.xml`.
 
    ```XML
       <dependency>
@@ -49,7 +49,7 @@ Para atualizar o [!DNL Workfront for Experience Manager enhanced connector] para
       </dependency>
    ```
 
-1. Atualize a dependência em `all module pom.xml`.
+1. Atualizar a dependência no `all module pom.xml`.
 
    ```XML
       <dependency>
@@ -63,9 +63,9 @@ Para atualizar o [!DNL Workfront for Experience Manager enhanced connector] para
 
    >[!NOTE]
    >
-   >Certifique-se de adicionar `<scope>` e `<systemPath>` às dependências na etapa 5 e 6.
+   >Adicione `<scope>` e `<systemPath>` às dependências nas etapas 5 e 6.
 
-1. Atualizar `pom.xml` incorporados. Adicione o [!DNL Workfront for Experience Manager enhanced connector] pacotes para `embeddeds` da seção `pom.xml` de todo o seu subprojeto. Incorpore as atualizações em todos os módulos `pom.xml`.
+1. Atualizar `pom.xml` incorpora. Adicione o [!DNL Workfront for Experience Manager enhanced connector] pacotes para `embeddeds` seção do `pom.xml` de todo o subprojeto. Incorporar as atualizações em todos os módulos `pom.xml`.
 
    ```XML
    <!-- Workfront Tools -->
@@ -77,10 +77,10 @@ Para atualizar o [!DNL Workfront for Experience Manager enhanced connector] para
    </embedded>
    ```
 
-   O target da seção incorporada é definido como `/apps/<path-to-project-install-folder>/install`. Este caminho JCR `/apps/<path-to-project-install-folder>` deve ser incluído nas regras de filtro no `all/src/main/content/META-INF/vault/filter.xml` arquivo. As regras de filtro do repositório geralmente são derivadas do nome do programa. Use o nome da pasta como destino nas regras existentes.
+   O target da seção incorporada é definido como `/apps/<path-to-project-install-folder>/install`. Este caminho JCR `/apps/<path-to-project-install-folder>` deve ser incluído nas regras de filtro na `all/src/main/content/META-INF/vault/filter.xml` arquivo. As regras de filtro do repositório geralmente são derivadas do nome do programa. Use o nome da pasta como destino nas regras existentes.
 
-1. [Remova as dependências nos pontos de distribuição do Hoodoo](remove-external-dependencies.md), se houver.
+1. [Remover as dependências nos pontos de distribuição Hoodoo](remove-external-dependencies.md), se houver.
 
-1. Encaminhe as alterações para o repositório.
+1. Enviar as alterações para o repositório.
 
-1. Execute o pipeline para [implantar as alterações no Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
+1. Executar o pipeline para [implantar as alterações no Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
