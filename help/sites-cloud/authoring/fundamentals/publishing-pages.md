@@ -140,6 +140,7 @@ Para publicar ou desfazer a publicação de uma página usando Gerenciar publica
       >[!NOTE]
       >
       >Caso deseje cancelar a publicação/desfazer a publicação mais tarde, acesse o [Console do Fluxo de trabalhos](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance) para encerrar o fluxo de trabalho correspondente.
+
    ![Gerenciar opções de publicação](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 
 1. Clique em **Avançar** para continuar.

@@ -134,7 +134,7 @@ Para tornar um projeto inativo (ou ativo):
 1. No console **Projetos**, abra o projeto e, em seguida, localize o mosaico **Informações do projeto**.
 
    >[!NOTE]
-   Talvez seja necessário adicionar este mosaico se ele ainda não estiver no seu projeto. Consulte [Adicionar mosaico](#adding-items-to-a-tile).
+   >Talvez seja necessário adicionar este mosaico se ele ainda não estiver no seu projeto. Consulte [Adicionar mosaico](#adding-items-to-a-tile).
 
 1. Toque/clique em **Editar**.
 1. Altere o seletor de **Ativo** para **Inativo** (ou vice-versa).
