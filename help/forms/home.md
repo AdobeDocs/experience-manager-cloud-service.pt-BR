@@ -3,9 +3,9 @@ title: Introdução ao [!DNL AEM Forms] as a Cloud Service
 description: Descubra o AEM Forms e saiba como ele ajuda a produzir formulários e documentos prontos para os negócios. Saiba mais sobre a Plataforma como serviço (PaaS) e como gerenciar formulários digitais e processos comerciais de nível empresarial, bem como conectar o Forms ao Adobe Sign e às fontes de dados atuais.
 landing-page-description: Saiba como usar formulários no AEM as a Cloud Service.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: fa8629fefe3ad29f70213b15bb31623a2f7d5420
+source-git-commit: 8f3ffc72507be1d28bc437041579578d6a479e23
 workflow-type: tm+mt
-source-wordcount: '1109'
+source-wordcount: '1092'
 ht-degree: 4%
 
 ---
@@ -25,9 +25,6 @@ Você pode usar o serviço para criar e implantar formulários digitais interati
 
 A organização pode usar [!DNL AEM Forms] as a Cloud Service para criar formulários digitais, conectar formulários a fontes de dados existentes, integrar formulários com [!DNL Adobe Sign] para adicionar assinaturas eletrônicas a formulários e gerar o Documento de registro (DoR) para arquivar formulários enviados como arquivos PDF. A organização também pode usar o serviço para converter os PDF forms existentes em formulários digitais.
 
-![Design de formulário responsivo](/help/forms/assets/data-collection.jpeg "Experiências adaptáveis do Forms para vários dispositivos"){width="70%" align="center"}
-
-
 Em grandes empresas, os formulários são frequentemente criados uma vez e reutilizados copiando para um sistema de gerenciamento de conteúdo. Manter um grande banco de dados de formulários atualizado e torná-los detectáveis pode ser um desafio considerável. O AEM fornece um Forms Portal personalizável que garante que os clientes encontrem e acessem os formulários de que precisam, tanto na Web quanto em canais móveis. Você pode personalizar a aparência, a marca e os logotipos do Forms Portal para atender aos requisitos específicos de sua organização.
 
 ## Fornecer comunicações personalizadas
@@ -36,16 +33,13 @@ Um componente importante de uma experiência digital de autoatendimento eficient
 
 Usando o AEM Forms, os usuários empresariais podem criar experiências de usuário personalizadas atraentes personalizando modelos de documentos e incorporando informações de processos de back-end aos modelos. Um conjunto de APIs intuitivas ajuda as regras de conjunto de negócios que decidem quando gerar uma comunicação com base em uma consulta ou em intervalos regulares em lotes.
 
-![Fatura personalizada](/help/forms/assets/personalized-communication.jpeg "Faturas de PDF personalizadas geradas sob demanda"){width="70%" align="center"}
 
 Documentos personalizados, como recibos, kits de boas-vindas e demonstrativos, podem ser facilmente gerados. As organizações podem direcionar o tráfego para portais da Web personalizados, resultando na inscrição ou compra de serviços adicionais.
 
 
 ## Automatizar fluxos de trabalho de back-office
 
-Use workflows centrados em formulários para automatizar o processamento e o roteamento de dados de formulário para vários participantes, como gerentes ou departamentos, para revisão, aprovação ou processamento adicional.
-
-Esses fluxos de trabalho ajudam sua organização a minimizar os riscos e manter a conformidade, garantindo um processamento consistente e auditável de dados de formulário, automatizar tarefas manuais, fornecer controle de acesso baseado em funções e ajudar a cumprir os requisitos normativos.
+Use workflows centrados em formulários para automatizar o processamento e o roteamento de dados de formulário para vários participantes, como gerentes ou departamentos, para revisão, aprovação ou processamento adicional. Esses fluxos de trabalho ajudam sua organização a minimizar os riscos e manter a conformidade, garantindo um processamento consistente e auditável de dados de formulário, automatizar tarefas manuais, fornecer controle de acesso baseado em funções e ajudar a cumprir os requisitos normativos.
 
 
 ## Otimizar o desempenho dos formulários
