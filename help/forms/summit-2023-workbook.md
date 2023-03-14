@@ -5,9 +5,10 @@ description: Crie um Forms envolvente usando componentes principais e headless
 seo-description: Build Engaging Forms Using Core Components and Headless
 topic-tags: develop
 hide: true
-source-git-commit: 8f3ffc72507be1d28bc437041579578d6a479e23
+hidefromtoc: true
+source-git-commit: b68902ef4f7c61f77aa0d03ad718d5bf3023dea0
 workflow-type: tm+mt
-source-wordcount: '2453'
+source-wordcount: '2465'
 ht-degree: 1%
 
 ---
@@ -242,8 +243,6 @@ Configurar repositório local do tema:
 
    ![](/help/forms/assets/screenshot2028116429.png)
 
-   ![](/help/forms/assets/screenshot20228116569.png)
-
 
 1. Na janela Prompt de comando, execute o seguinte comando:
 
@@ -271,8 +270,7 @@ Configurar repositório local do tema:
 
    >[!NOTE]
    >
-   >Se você encontrar uma tela em branco no navegador após executar o `npm run live` comando, alterar `localhost` no URL do navegador para 127.0.0.1 e na ocorrência **Enter**.
-
+   >Se você encontrar uma tela em branco no navegador após executar o `npm run live` por mais de 3 a 4 minutos, altere `localhost` no URL do navegador para 127.0.0.1 e na ocorrência **Enter**.
 
 
    ![](/help/forms/assets/screenshot2028115129.png)
@@ -381,7 +379,8 @@ Para renderizar o formulário hospedado no ambiente de publicação do Cloud Ser
 
    >[!NOTE]
    >
-   >Se você encontrar uma tela em branco no navegador após executar o `npm start` comando, alterar `localhost` no URL do navegador para 127.0.0.1 e na ocorrência **Enter**.
+   > 
+   > Se você encontrar uma tela em branco no navegador após executar o `npm start` por mais de 3 a 4 minutos, altere `localhost` no URL do navegador para 127.0.0.1 e na ocorrência **Enter**.
 
    ![](/help/forms/assets/screenshot2028118229.png)
 
@@ -529,7 +528,7 @@ Para renderizar o formulário hospedado no ambiente de publicação do Cloud Ser
 
    >[!NOTE]
    >
-   >Se você encontrar uma tela em branco no navegador após executar o `npm start` comando, alterar `localhost` no URL do navegador para 127.0.0.1 e na ocorrência **Enter**.
+   >Se você encontrar uma tela em branco no navegador após executar o `npm start` por mais de 3 a 4 minutos, altere `localhost` no URL do navegador para 127.0.0.1 e na ocorrência **Enter**.
 
    ![](/help/forms/assets/screenshot2028127229.png)
 
