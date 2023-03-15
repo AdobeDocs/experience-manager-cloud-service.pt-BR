@@ -18,9 +18,9 @@ Saiba mais sobre os poderosos e flexíveis recursos headless, suas funcionalidad
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_headless_developer_resources"
->title="Recursos do desenvolvedor sem periféricos do AEM e documentação avançada"
->abstract="Tudo o que você precisa para aprender sobre o AEM headless CMS e criar e enviar melhores aplicativos e experiências mais rápidas."
->additional-url="https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR" text="Recursos do desenvolvedor do AEM Headless"
+>title="Recursos do desenvolvedor sem cabeçalho AEM e documentação avançada"
+>abstract="Tudo o que você precisa saber sobre AEM CMS sem periféricos e criar e enviar aplicativos melhores e experiências mais rápidas."
+>additional-url="https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR" text="Recursos de desenvolvedor sem periféricos do AEM"
 
 ## Introdução {#introduction}
 
