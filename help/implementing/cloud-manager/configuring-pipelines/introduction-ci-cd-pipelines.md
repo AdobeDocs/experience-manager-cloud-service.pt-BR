@@ -3,10 +3,10 @@ title: Pipelines de CI/CD
 description: Saiba mais sobre os pipelines de CI/CD do Cloud Manager e como eles podem ser usados para implantar seu código com eficiência.
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
+source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
 workflow-type: tm+mt
-source-wordcount: '1368'
-ht-degree: 100%
+source-wordcount: '1367'
+ht-degree: 98%
 
 ---
 
@@ -109,7 +109,7 @@ Os pipelines de pilha completa podem ser pipelines de qualidade do código ou de
 
 ## Pipelines de front-end {#front-end}
 
-O código de front-end é qualquer código que é servido como arquivos estáticos. Ele é separado do código de interface do usuário fornecido pelo AEM e pode incluir temas de site, SPA definidas pelo cliente, SPAs Firefly e outras soluções.
+O código de front-end é qualquer código que é servido como arquivos estáticos. Ele é separado do código da interface fornecido pelo AEM e pode incluir temas do site, SPA, SPA e outras soluções definidas pelo cliente.
 
 Os pipelines de front-end ajudam as equipes a agilizar o processo de design e desenvolvimento, permitindo uma implantação mais rápida do código de front-end de forma assíncrona ao desenvolvimento de back-end. Esse pipeline dedicado implanta JavaScript e CSS na camada de distribuição do AEM como um tema, resultando em uma nova versão de tema que pode ser referenciada a partir de páginas entregues pelo AEM.
 

@@ -9,19 +9,15 @@ level: Beginner
 kt: 9461
 thumbnail: 339250.jpg
 exl-id: 54ad1cbc-a8b5-44b2-b12c-24c530a5a929
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
 workflow-type: tm+mt
-source-wordcount: '52'
-ht-degree: 30%
+source-wordcount: '36'
+ht-degree: 0%
 
 ---
 
 # Implantação de aplicativos do App Builder
 
->[!IMPORTANT]
->
-> _O Adobe Project Firefly, como mencionado nos vídeos desta série, agora é chamado de App Builder_
-
-Saiba o que significa implantação para o App Builder e como implantar seu aplicativo do App Builder usando a CLI do Adobe I/O.
+Saiba mais sobre o significado de implantação do para o App Builder e como implantar seu aplicativo do App Builder usando a CLI do Adobe I/O.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339250/?quality=12&learn=on)

@@ -9,19 +9,15 @@ level: Beginner
 kt: 9462
 thumbnail: 339251.jpg
 exl-id: ebbc1249-ed82-47c3-96ce-27a4d9c8ee99
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
 workflow-type: tm+mt
-source-wordcount: '54'
-ht-degree: 29%
+source-wordcount: '38'
+ht-degree: 0%
 
 ---
 
 # Publicação de aplicativos do App Builder
 
->[!IMPORTANT]
->
-> _O Adobe Project Firefly, como mencionado nos vídeos desta série, agora é chamado de App Builder_
-
-Saiba como enviar seu aplicativo do App Builder para revisão e aprovação e como executar um aplicativo recém-publicado.
+Saiba como enviar seu aplicativo App Builder para revisão e aprovação e como executar um aplicativo recém-publicado.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339251/?quality=12&learn=on)

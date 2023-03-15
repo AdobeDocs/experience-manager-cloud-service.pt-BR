@@ -1,6 +1,6 @@
 ---
 title: Bibliotecas de armazenamento do App Builder
-description: Saiba mais sobre as bibliotecas de armazenamento de estado e arquivo para aplicativos do App Builder.
+description: Saiba mais sobre as bibliotecas de armazenamento de arquivos e de estado para aplicativos do App Builder.
 version: Cloud Service
 feature: App Builder
 topic: Integrations, Development
@@ -9,20 +9,16 @@ level: Beginner
 kt: 9457,9479,9480
 thumbnail: 339238.jpg
 exl-id: 3ddd452c-6291-4560-aabc-dcd6e628f7ab
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
 workflow-type: tm+mt
-source-wordcount: '101'
-ht-degree: 16%
+source-wordcount: '85'
+ht-degree: 0%
 
 ---
 
 # Bibliotecas de armazenamento do App Builder
 
->[!IMPORTANT]
->
-> _O Adobe Project Firefly, como mencionado nos vídeos desta série, agora é chamado de App Builder_
-
-## Introdução para bibliotecas de armazenamento
+## Introdução às bibliotecas de armazenamento
 
 Saiba mais sobre as opções de armazenamento do App Builder e por que o armazenamento é importante em um aplicativo do App Builder.
 
