@@ -2,9 +2,9 @@
 title: Descubra as últimas inovações no Adobe Experience Manager Forms as a Cloud Service.
 description: "Descubra os recursos mais recentes da [!DNL AEM Forms] as a Cloud Service para criar, gerenciar e publicar formulários e processos de negócios de classe empresarial."
 exl-id: 3a90b0aa-369a-4350-9904-79ef656b0f9a
-source-git-commit: 3636af1f4b9a3956e8bf6fe5b064c0e0c8c9ab35
+source-git-commit: 6949e35b65f4c21b4304fb99bfe71bd4b952ef20
 workflow-type: tm+mt
-source-wordcount: '1008'
+source-wordcount: '1181'
 ht-degree: 0%
 
 ---
@@ -24,119 +24,12 @@ An organization can sign up for [!DNL AEM Forms] as a Cloud Service and start us
 
 Algumas das mais recentes inovações no AEM Forms as a Cloud Service incluem:
 
-| Recurso | Detalhes |
+| Inovação | Detalhes |
 |---|---|
 | Forms adaptável headless | Criar e gerenciar [Forms adaptável headless](https://experienceleague.corp.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) na plataforma Adobe Experience Manager. Permita que seus desenvolvedores criem, publiquem e gerenciem formulários interativos que podem ser acessados e interagidos com por meio de APIs, em vez de por meio de uma interface gráfica tradicional. <br/> <br/> Esses formulários são projetados para serem enviados sem a necessidade de uma interface de forma HTML tradicional. Em outras palavras, elas permitem enviar dados de formulário de forma programática por meio de uma API ou código de back-end com e sem elementos de formulário visíveis no front-end. <br/> ![](https://experienceleague.corp.adobe.com/docs/experience-manager-headless-adaptive-forms/assets/how-headless-adaprive-forms-work.png?)<br/> Formulários headless são úteis em vários cenários, como ao criar aplicativos de página única, aplicativos web progressivos ou aplicativos móveis, onde uma interface de formulário HTML tradicional pode não ser necessária ou prática. Ao permitir que os desenvolvedores enviem dados de formulário diretamente por meio de APIs ou código de back-end, os formulários sem periféricos ajudam a simplificar os fluxos de trabalho e a melhorar o desempenho geral dos aplicativos Web. |
 | Componentes principais  | O [Componentes principais adaptáveis do Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features) são um conjunto de 24 componentes de código aberto compatíveis com BEM, criados na base dos Componentes principais do WCM Adobe Experience Manager. Eles foram especificamente projetados para serem usados na criação do Adaptive Forms, que são formulários que se adaptam ao dispositivo, navegador e tamanho da tela do usuário. <br/> <br/> Esses componentes podem ser usados para criar experiências excepcionais de captura e registro de dados, fornecendo uma grande variedade de opções de campos de formulário, incluindo campos de texto, caixas de seleção, menus suspensos e muito mais. Eles também incluem recursos como validação, lógica condicional e design responsivo, que podem ser usados para criar formulários fáceis de usar e amigáveis. <br/> ![](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/assets/sample-core-components-based-adaptive-form.png?)<br/>  Além disso, como esses componentes são de código aberto, os desenvolvedores têm a capacidade de personalizar e estender facilmente os componentes para atender às necessidades específicas de sua organização. Além disso, esses componentes são criados com base na metodologia BEM, que garante a escalabilidade e a manutenção. |
 | Conector Microsoft PowerAutomate | O AEM Forms Power Automate Connector permite integrar o Adobe Experience Manager (AEM) Forms com o Microsoft Power Automate (anteriormente conhecido como Fluxo do Microsoft). O Power Automate é um serviço baseado em nuvem que permite criar fluxos de trabalho automatizados entre diferentes aplicativos e serviços.  <br/> <br/> Com AEM conector do Form Power Automate, você pode criar fluxos de trabalho que são acionados automaticamente com base no envio de um formulário adaptável. Por exemplo, é possível criar um fluxo de trabalho que envie automaticamente uma notificação por email para uma pessoa específica quando um usuário envia um formulário ou cria uma tarefa no Microsoft Planner quando um usuário conclui um formulário.  <br/> ![](https://powerusers.microsoft.com/t5/image/serverpage/image-id/182924i17C4BEA1C045D731/image-size/large/is-moderation-mode/true?v=1.0&amp;px=999) <br/> O AEM Forms Power Automate Connector é uma ferramenta poderosa que permite automatizar e integrar seu Adaptive Forms com outros aplicativos e serviços que se conectam ao Microsoft Power Automate, permitindo que você trabalhe com uma grande variedade de ferramentas. Você pode criar fluxos de trabalho adaptados às suas necessidades específicas, com a capacidade de adicionar ações, condições e acionadores personalizados. Além disso, o Power Automate fornece análises e relatórios detalhados, permitindo que você monitore e otimize seus fluxos de trabalho ao longo do tempo. |
 | Conectores de armazenamento Microsoft | Conectores de armazenamento AEM Forms Microsoft para <a href="https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#submit-to-sharedrive">OneDrive</a>, <a href="https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?#submit-to-sharedrive"> SharePoint, </a> e <a href="https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?#submit-to-azure-blob-storage"> Armazenamento Azure Blob </a> são conectores que permitem integrar o Adobe Experience Manager (AEM) Forms com o Microsoft OneDrive e o SharePoint. Com esse conector, você pode fazer upload de arquivos de dados e anexos para o OneDrive e o SharePoint diretamente do Adaptive Forms. <br/> ![](/help/forms/assets/onedrive-and-sharepoint.jpg) <br/>O OneDrive e o SharePoint podem se integrar a outros aplicativos de negócios, como sistemas de CRM, software de contabilidade e ferramentas de gerenciamento de projetos. Isso permite que você simplifique seus processos de negócios, reduza a entrada manual de dados e melhore a eficiência geral. |
 | Interface do usuário do assistente | A interface do Assistente adaptável Forms é uma ferramenta poderosa para criar formulários adaptáveis de forma rápida e fácil. Suas opções de personalização e interface amigáveis o tornam acessível a todos os usuários, independentemente do nível de conhecimento técnico. <br/> <br/> A interface do usuário do assistente simplifica o processo de criação de formulários adaptáveis, orientando os usuários passo a passo pelo processo de criação de formulários. A interface do usuário do assistente é dividida em várias guias, com cada guia fornecendo claramente as opções para configurar um formulário adaptável. Um autor de formulário avança pelas guias de forma linear para selecionar opções como modelos, enviar ações e fontes de dados para componentes do formulário. <br/> ![](/help/release-notes/assets/wizard.png) <br/>A interface do assistente simplifica o processo de descoberta de todas as opções essenciais para um formulário adaptável e facilita a criação do formulário, mesmo para usuários que não estão familiarizados com a tecnologia. |
-| Análise de rastreamento rápido | A análise de formulários pode fornecer informações valiosas sobre o desempenho dos formulários, medindo o envolvimento do usuário, otimizando as taxas de conversão, monitorando o desempenho do formulário e melhorando a experiência do usuário.  Ao rastrear o comportamento do usuário e o feedback, o Analytics pode identificar áreas do formulário que estão causando frustração ou confusão, orientando melhorias no design e na funcionalidade do formulário. <br/> <br/> Ao usar a Análise de rastreamento rápido, é possível ativar o Forms Analytics com um único botão. O Fast Track Analytics permite conectar a AEM Forms as a Cloud Service com tags Experience Platform e Adobe Analytics para capturar e rastrear métricas de desempenho de seus formulários publicados. <br/> <br/> ![](/help/forms/assets/forms-analytics-report.png) <br/><br/> O Forms as a Cloud Service fornece um relatório OOTB da Adobe Analytics. Ele ajuda você a entender facilmente o desempenho de seus formulários. As métricas no nível do formulário fornecem um insight sobre o desempenho do formulário em vários KPIs (indicadores chave de desempenho), como representações, visitantes, envios, tempo médio de preenchimento. <br/> <br/> Também fornece detalhes sobre o número médio de vezes que os usuários acessaram a ajuda no contexto dos campos no painel para ajudar você a manter os campos que fazem com que os usuários parem e procurem informações antes de fornecer informações. Você pode simplificar ainda mais esses campos ou ajudar o conteúdo a melhorar as conversões. |
-
-
-<!-- 
-
-# Key features and capabilities {#key-features}
-
-[!DNL AEM Forms] as a Cloud Service provides several cloud-native capabilities such as a cloud-native architecture, auto-scaling, zero downtime for upgrades, a CDN (Content Delivery Network), cloud-native development environment, and ability to self-Service the environments via Cloud Manager. You can use the service to: 
-
-* [Create Adaptive Forms](creating-adaptive-form.md#strong-create-an-adaptive-form-strong) that automatically render for a user's device and browser.
-
-    ![Adaptive Forms](assets/rule-editor-example.gif)
-
-* [Create pixel-perfect PDF forms](use-forms-designer.md#create-an-adaptive-form) that look almost like paper.
-
-* Use [Automated Forms Conversion service](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html) to convert a PDF Form to an Adaptive Form. It helps you accelerate digitization and modernization of data capture experiences of your organization.
-
-    ![Automated Forms Conversion service](assets/pdf-to-adaptive-form-gitx50.gif)
-
-* [Create business processes](aem-forms-workflow-step-reference.md#create-form-centric-workflows). For example, You can create and trigger an approval and rejection workflow on submission of an Adaptive Form.
-
-In addition to above [!DNL AEM Forms] as a Cloud Service offers the following features and capabilities:
-
-* An easy-to-use graphical user interface to let business users easily import, manage, preview, and publish forms
-* A responsive forms directory with powerful search features using keywords, tags, and metadata
-* Dynamic detection of a user's device and location to render the form appropriately across web and mobile channels
-* [Integration with Adobe Sign](adobe-sign-integration-adaptive-forms.md) services or Scribble to electronically sign documents containing confidential information
-* Ability to [connect the service to various types of data sources](data-integration.md#create-an-adaptive-form) to send and retrieve data. The service supports sending and retrieving data from RESTful web services, SOAP-based web services, and OData enabled services.
-* Integration with AEM Sites. It allows to embed an adaptive form in an AEM Sites page. You can also integrate an adaptive form to any webpage. 
-* Ability to create a Document of Record (DoR) to keep a record of the information that you provide and submit in an Adaptive Form so that you can refer to it later. A DoR is a PDF version of a form. It includes both a template and data. The service provides a default DoR template and tools to develop a custom template.
-* Ability to create Adaptive Forms to produce schema-compliant data. It helps you submit captured data to existing processes and data sources without any or minimal modifications.
-* Ability to create a prefill service to fill a form with existing customer data based on a criteria. It helps fasten the form filling process and reduce the abandon rate.
-
-
-<!-- 
-
-## Enterprise-class forms {#enterprise-class-forms}
-
-You can create enterprise class forms (Adaptive Forms) and deliver beautiful, interactive, responsive, and personalized experiences to your customers. These forms change behavior and appearance based on the underlying device. You can also use themes and templates with Adaptive Forms to mandate a uniform structure and appearance for all the forms of an organization or a department.
-
-![Creating custom patterns for fields in CrxDe](assets/adaptive-form.png)
-
-## Automatic conversion of PDF forms to Adaptive Forms {#automatic-conversion-of-pdf-forms-to-adaptive-forms}
-
-You can use Automated Forms Conversion service to convert a PDF Form to an Adaptive Form. It helps you accelerate digitization and modernization of data capture experiences of your organization.
-
-![Creating custom patterns for fields in CrxDe](assets/pdf-to-adaptive-form-gitx50.gif)
-
-## Data Integration {#data-integration}
-
-You can connect the service to various types of data sources to send and retrieve data. The service supports sending and retrieving data from RESTful web services, SOAP-based web services, and OData enabled services.
-
-![Build dynamism and interactivity to Adaptive Forms](assets/rule-editor-example.gif)
-
-## Integration with [!DNL Adobe Sign] {#integration-with-adobe-sign}
-
- You can integrate the service with [!DNL Adobe Sign] and add [!DNL Adobe Sign] fields to an Adaptive Form. It allows your users to e-sign an Adaptive Form and use [!DNL Adobe Sign] with AEM Workflows. You can use AEM Workflows to develop a business logic and send forms and documents to recipients for signatures based on the business logic.
-
-![Creating custom patterns for fields in CrxDe](assets/adobe-sign.png)
-
-
-## Integration with [!DNL AEM Sites] {#integration-with-aem-sites}
-
-You can embed an adaptive form in an AEM Sites or an external webpage. The service provides a component out of the box to integrate an adaptive forms to an AEM Sites page.
-
-![integrate an adaptive forms to an AEM Sites page](assets/integrate.png)
-
-## Business Processes Automation {#bpa}
-
-You can use AEM Workflows to create business processes and automate operations. For example, You can create and trigger an approval and rejection workflow on submission of an Adaptive Form. 
-
-![Create and trigger an approval and rejection workflow](assets/workflow.png)
-
-## Document of Record {#dor}
-
-You can create a Document of Record (DoR) to keep a record of the information that you provide and submit in an Adaptive Form so that you can refer to it later. A DoR is a PDF version of a form. It includes both a template and data. The service provides a default DoR template and tools to develop a custom template.
-
-![Build dynamism and interactivity to Adaptive Forms](assets/designer.png)
-
-## Rule editor {#rule-editor}
-
-Rule editor empowers you to build dynamism and interactivity to Adaptive Forms. These rules define actions to trigger on form objects based on preset conditions, user inputs, and user actions on the form. It helps  streamline the form filling experience while ensuring accuracy and speed.
-  
-![Creating custom patterns for fields in CrxDe](assets/form-data-model.png)
-
-
-## WYSIWYG editors {#wysiwyg-editor} 
-
-The service provides several WYSIWYG editors: Adaptive Forms editor, Theme editor, and Template editor. These help you create and edit forms and related assets in WYSIWYG manner. The editors also provide out-of-the-box options to simulate views for popular mobile devices, tablets, and desktop screen configurations.
-
-![Creating custom patterns for fields in CrxDe](assets/emulators.png)
-
-## Schema-compliant data {#schema-complaint-data}
-
-You can create Adaptive Forms to produce schema-compliant data. It helps you submit captured data to existing processes and data sources without any or minimal modifications.
-
-![Build dynamism and interactivity to Adaptive Forms](assets/display-validation-error.gif)
-
-## Prefill a form
-
-You can create a prefill service to fill a form with existing customer data based on a criteria. It helps fasten the form filling process and reduce the abandon rate.
-
-## Submit Actions
-
-A Submit Action allows you to persist and process captured data. The service provides several Submit Actions out-of-the-box. You can use these Submit Actions to send submitted data to a REST endpoint, database, or an AEM Workflow. You can also email submitted data along with attachments and Document of Record(DoR). You can also develop a custom Submit Action to perform an action specific to your business.
-
-* **Emulators:** You can view an Adaptive Form in an in-built emulator. It helps you simulate how an Adaptive Form appears on different devices to an end user. It provides out-of-the-box options to simulate views for popular mobile devices, tablets, and desktop screen configurations. 
-
-In addition to standard [!DNL AEM Forms] features, [!DNL AEM Forms] as a Cloud Service provides several cloud-native capabilities such as a cloud-native architecture, auto-scaling, zero downtime for upgrades, a CDN (Content Delivery Network), cloud-native development environment, and ability to self-Service the environments via Cloud Manager. -->
+| Análise de rastreamento rápido | A análise de formulários pode fornecer informações valiosas sobre o desempenho dos formulários, medindo o envolvimento do usuário, otimizando as taxas de conversão, monitorando o desempenho do formulário e melhorando a experiência do usuário.  Ao rastrear o comportamento do usuário e o feedback, o Analytics pode identificar áreas do formulário que estão causando frustração ou confusão, orientando melhorias no design e na funcionalidade do formulário. <br/> <br/> Ao usar a Análise de rastreamento rápido, é possível ativar o Forms Analytics com um único botão. O Fast Track Analytics permite conectar a AEM Forms as a Cloud Service com tags Experience Platform e Adobe Analytics para capturar e rastrear métricas de desempenho de seus formulários publicados. <br/> <br/> ![](/help/forms/assets/forms-analytics-report.png) <br/><br/> O Forms as a Cloud Service fornece um relatório OOTB da Adobe Analytics. Ele ajuda você a entender facilmente o desempenho de seus formulários. As métricas no nível do formulário fornecem um insight sobre o desempenho do formulário em vários KPIs (indicadores chave de desempenho), como representações, visitantes, envios, tempo médio de preenchimento. <br/> <br/> Ela também fornece detalhes sobre o número médio de vezes que os usuários acessaram a ajuda no contexto dos campos no painel para ajudar a determinar os campos que fazem com que os usuários parem e procurem informações antes de fornecer informações. Você pode simplificar ainda mais esses campos ou ajudar o conteúdo a melhorar as conversões. |
+| Composição da próxima geração | A Composição de próxima geração oferece a criação de formulários a todos, permitindo que funcionários de uma empresa criem formulários nas ferramentas de sua escolha, como o Microsoft Excel e Google Sheets. Isso aumenta a velocidade do conteúdo e elimina a necessidade de treinamento em novos fluxos de trabalho da interface do usuário. Além disso, a Composição de próxima geração aproveita a funcionalidade integrada do Office365 e dos produtos Google Suite, permitindo colaboração direta e controle de versão. <br/> <br/> Com a Composabilidade da próxima geração, a implantação de formulários é rápida e fácil, com ferramentas simples que minimizam o tempo de desenvolvimento e simplificam o caminho para entrar online. Além disso, você pode fornecer experiências excepcionais com formulários que carregam com velocidade inigualável. Ela determina uma pontuação do Google Lighthouse de quase 100 nas páginas ativas. <br/> <br/> ![](/help/forms/assets/web-vitals.jpeg) <br/> <br/> Em geral, a Composição de próxima geração simplifica a criação e a publicação de conteúdo, além de oferecer desempenho excepcional na Web e recursos de colaboração. Ao permitir que os membros da equipe usem ferramentas de criação conhecidas e eliminar a necessidade de treinamento extenso em sistemas de gerenciamento de conteúdo, as empresas podem aumentar a velocidade do conteúdo e simplificar suas operações. Com a próxima geração de capacidade, os clientes podem desfrutar de experiências rápidas e bem projetadas na Web, enquanto as empresas se beneficiam do aumento da eficiência e da produtividade. |
