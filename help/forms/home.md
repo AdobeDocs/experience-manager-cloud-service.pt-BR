@@ -1,12 +1,12 @@
 ---
 title: Introdução ao [!DNL AEM Forms] as a Cloud Service
-description: Descubra o AEM Forms e saiba como ele ajuda a produzir formulários e documentos prontos para negócios. Saiba mais sobre a Plataforma como um Serviço (PaaS) e como gerenciar formulários digitais de nível empresarial e processos de negócios, bem como conectar o Forms ao Adobe Sign e às fontes de dados atuais.
+description: Conheça o AEM Forms e saiba como ele ajuda você a produzir formulários e documentos prontos para os negócios. Saiba mais sobre a Plataform-as-a-Service (PaaS), como gerenciar formulários digitais e processos comerciais de nível corporativo e como conectar o Forms ao Adobe Acrobat Sign e a fontes de dados atuais.
 landing-page-description: Saiba como usar formulários no AEM as a Cloud Service.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
 source-git-commit: 8f3ffc72507be1d28bc437041579578d6a479e23
 workflow-type: tm+mt
 source-wordcount: '1092'
-ht-degree: 4%
+ht-degree: 7%
 
 ---
 
@@ -47,7 +47,7 @@ Use fluxos de trabalho centrados em formulários para automatizar o processament
 O serviço integra-se ao Adobe Analytics, que permite capturar e rastrear métricas de desempenho para seus formulários publicados. O objetivo por trás da análise dessas métricas é tomar decisões informadas com base em dados sobre as alterações necessárias para tornar os formulários ou documentos mais utilizáveis. Você pode usar o Adobe Analytics para descobrir padrões e problemas de interação que os usuários enfrentam ao usar formulários adaptáveis.
 
 
-## Introdução {#key-features}
+## Comece já {#key-features}
 
 |  |  |
 |---|---|

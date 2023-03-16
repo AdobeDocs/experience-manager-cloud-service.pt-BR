@@ -79,7 +79,7 @@ Há três tipos de ambientes disponíveis no AEM as a Cloud Service:
 
    Consulte [Gerenciamento de ambientes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=pt-BR#using-cloud-manager) para obter mais detalhes.
 
-* **Ambiente de desenvolvimento rápido**: permite iterações de desenvolvimento rápidas para depuração de código novo ou existente.
+* **Ambiente de desenvolvimento rápido**: O permite iterações de desenvolvimento rápidas para depurar código novo ou existente.
 
 ## Programas {#programs}
 

@@ -35,7 +35,7 @@ A Auditoria de experiência é disponibilizada pelo Google Lighthouse, uma ferra
 
 >[!TIP]
 >
->Você configura quais páginas são incluídas na Auditoria de experiência quando [configure seu pipeline.](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code)
+>Você configura quais páginas estão incluídas na Auditoria de experiência quando [configure o pipeline.](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code)
 
 ## Noções básicas sobre os resultados da auditoria de experiência {#understanding-experience-audit-results}
 

@@ -1,6 +1,6 @@
 ---
 title: Visão geral da ferramenta de Mapeamento de usuários (Legado)
-description: Visão geral da ferramenta Mapeamento de usuários (herdado)
+description: Visão geral da ferramenta Mapeamento de usuários (herdada)
 exl-id: 17ed5721-093e-4491-b8c4-3dadcaa6598b
 hide: true
 hidefromtoc: true
