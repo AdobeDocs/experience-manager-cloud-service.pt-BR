@@ -3,10 +3,10 @@ title: Configurar pipelines de não produção
 description: Saiba como configurar pipelines de não produção para testar a qualidade do código antes de implantar em ambientes de produção.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
+source-git-commit: aac397310babe1aa1e950c176459beaf665b72ce
 workflow-type: tm+mt
-source-wordcount: '1177'
-ht-degree: 100%
+source-wordcount: '1369'
+ht-degree: 90%
 
 ---
 
@@ -38,7 +38,10 @@ Depois de configurar seu programa e ter pelo menos um ambiente usando a interfac
 
    ![Adicionar pipeline de não produção](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add1.png)
 
-1. Na guia **Configuração** da caixa de diálogo **Adicionar pipeline de não produção**, selecione o tipo de pipeline de não produção que você deseja adicionar, **Pipeline de qualidade do código** ou **Pipeline de implantação**.
+1. Na guia **Configuração** da caixa de diálogo **Adicionar pipeline de não produção**, selecione o tipo de pipeline de não produção que você deseja adicionar.
+
+   * **Pipeline de qualidade do código** - Crie um pipeline que crie seu código, execute testes de unidade e avalie a qualidade do código, mas NÃO implante.
+   * **Pipeline de implantação** - Crie um pipeline que crie seu código, execute testes de unidade, avalie a qualidade do código e implante em um ambiente.
 
    ![Caixa de diálogo Adicionar pipeline de não produção](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config.png)
 
@@ -48,6 +51,12 @@ Depois de configurar seu programa e ter pelo menos um ambiente usando a interfac
 
       * **Manual** - Use essa opção para iniciar manualmente o pipeline.
       * **Quando o Git é alterado** - Essas opções iniciam o pipeline de CI/CD sempre que confirmações são adicionadas à ramificação Git configurada. Com essa opção, ainda é possível iniciar o pipeline manualmente, conforme necessário.
+
+1. Se você optar por criar um **Pipeline de implantação** você também precisará definir a variável **Comportamento de falhas importantes da métrica**.
+
+   * **Sempre perguntar** - Essa é a configuração padrão e requer intervenção manual em qualquer falha importante.
+   * **Falhar imediatamente** - Se selecionado, o pipeline será cancelado sempre que ocorrer uma falha importante. É como emular um usuário que rejeita manualmente cada falha.
+   * **Continuar imediatamente** - Se selecionado, o pipeline continuará automaticamente sempre que ocorrer uma falha importante. É como emular um usuário que aprova manualmente cada falha.
 
 1. Clique em **Continuar**.
 
@@ -106,6 +115,12 @@ Para concluir a configuração do pipeline de não produção do código de pilh
    * **Ramificação Git** - Essa opção define de qual ramificação o pipeline selecionado deve recuperar o código.
       * Insira os primeiros caracteres do nome da ramificação e o recurso de preenchimento automático do campo localizará as ramificações correspondentes para ajudá-lo em sua seleção.
    * **Ignorar configuração no nível da Web** - Quando marcado, o pipeline não implantará sua configuração no nível da Web.
+
+   * **Pipeline** - Se o pipeline for um pipeline de implantação, você pode optar por executar uma fase de teste. Marque as opções que deseja habilitar nesta fase. Se nenhuma das opções estiver selecionada, a fase de teste não será exibida durante a execução do pipeline.
+
+      * **Teste funcional do produto** - Execute [testes funcionais do produto](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) contra o ambiente de desenvolvimento.
+      * **Teste funcional personalizado** - Execute [testes funcionais personalizados](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) contra o ambiente de desenvolvimento.
+      * **Teste de interface personalizada** - Execute [testes de interface personalizada](/help/implementing/cloud-manager/ui-testing.md) para aplicativos personalizados.
 
    ![Pipeline de pilha completa](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
 
