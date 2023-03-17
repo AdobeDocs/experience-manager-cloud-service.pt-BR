@@ -2,10 +2,10 @@
 title: Editar as propriedades da página
 description: Defina as propriedades desejadas para uma página
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 628a95d7b7d0e84bfc8edecaaf127dd83ce1e578
+source-git-commit: ba1f2b7f1f61f7ba094047171e42e3cc8811a1b6
 workflow-type: tm+mt
-source-wordcount: '2428'
-ht-degree: 82%
+source-wordcount: '2387'
+ht-degree: 81%
 
 ---
 
@@ -168,17 +168,6 @@ As propriedades são distribuídas por várias guias.
    * **Selecionar imagem** - selecione um Ativo existente para usar como miniatura
    * **Reverter** - esta opção fica disponível após você ter feito uma alteração na miniatura. Se você não quiser manter sua alteração, poderá reverter essa alteração antes de salvar.
 
-### Redes sociais {#social-media}
-
-* **Compartilhamento em rede social**
-
-   Define as opções de compartilhamento disponíveis na página. Expõe as opções disponíveis para o [Componente de compartilhamento principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/sharing.html?lang=pt-BR).
-
-   * **Permitir o compartilhamento de usuário para Facebook**
-   * **Permitir o compartilhamento de usuário para Pinterest**
-   * **Variação preferida de XF**
-      * Define a variação do fragmento de experiência usada para gerar metadados para a página
-
 ### Cloud Services {#cloud-services}
 
 * **Configurações do Cloud Service** - defina propriedades para os serviços em nuvem
@@ -208,7 +197,7 @@ As propriedades são distribuídas por várias guias.
 
 ### Blueprint {#blueprint}
 
-Essa guia só fica visível para páginas que servem como blueprints. Blueprints servem como base para as Live Copies que fazem parte do [Gerenciamento de vários sites.](/help/sites-cloud/administering/msm/overview.md)
+Essa guia só fica visível para páginas que servem como blueprints. Blueprints servem de base para as Live Copies e fazem parte do [Gerenciamento de vários sites.](/help/sites-cloud/administering/msm/overview.md)
 
 * **Live Copies atuais** - lista páginas que são baseadas nesta (ou seja, são Live Copies da) página do blueprint
 
@@ -216,7 +205,7 @@ Essa guia só fica visível para páginas que servem como blueprints. Blueprints
 
 ### Live Copy  {#live-copy}
 
-Essa guia só fica visível para páginas configuradas como cópias em tempo real.
+Essa guia só fica visível para páginas configuradas como cópias em tempo real. Assim como com o Blueprints, as Live Copies fazem parte do [Gerenciamento de vários sites.](/help/sites-cloud/administering/msm/overview.md).
 
 * **Sincronizar** - sincronizar o Live Copy com o blueprint, mantendo as modificações locais
 * **Redefinir** - redefinir o Live Copy para o estado de blueprint, removendo as modificações locais
