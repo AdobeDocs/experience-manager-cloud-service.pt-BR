@@ -2,10 +2,10 @@
 title: Editar as propriedades da página
 description: Defina as propriedades desejadas para uma página
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: d0a698a8f8685b1e5957a9d93d805ca3f825354a
+source-git-commit: 628a95d7b7d0e84bfc8edecaaf127dd83ce1e578
 workflow-type: tm+mt
-source-wordcount: '1975'
-ht-degree: 100%
+source-wordcount: '2428'
+ht-degree: 82%
 
 ---
 
@@ -37,10 +37,12 @@ As propriedades são distribuídas por várias guias.
 
    Aplique uma identidade de marca consistente em todas as páginas, anexando uma descrição da marca a cada título de página. Essa funcionalidade requer o uso do Componente de página da versão 2.14.0 ou posterior do [Componentes principais.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)
 
-   * **Substituir** - marque essa opção para definir a descrição da marca nesta página.
-      * O valor será herdado por qualquer página secundária, a menos que também tenha definidos seus valores para **Substituir**.
-   * **Substituir valor** - o texto da descrição da marca a ser anexado ao título da página.
-      * O valor é anexado ao título da página após um caractere de barra vertical, como &quot;Cycling Tuscany | Sempre pronto para a WKND&quot;
+   * **Slug da marca**
+
+      * **Substituir** - marque essa opção para definir a descrição da marca nesta página.
+         * O valor será herdado por qualquer página secundária, a menos que também tenha definidos seus valores para **Substituir**.
+      * **Substituir valor** - o texto da descrição da marca a ser anexado ao título da página.
+         * O valor é anexado ao título da página após um caractere de barra vertical, como &quot;Cycling Tuscany | Sempre pronto para a WKND&quot;
 
 * **ID HTML**
 
@@ -105,14 +107,13 @@ As propriedades são distribuídas por várias guias.
       * Por exemplo: se você definir um pseudônimo de `private` para a página `/content/wknd/us/en/magazine/members-only`, essa página poderá ser acessada por meio de `/content/wknd/us/en/magazine/private`
       * A criação de um pseudônimo define a propriedade de `sling:alias` no nó da página, que afeta apenas o recurso, não o caminho do repositório.
       * As páginas acessadas por pseudônimos no editor não podem ser publicadas. As [Opções de publicação](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) no editor só estão disponíveis para páginas acessadas por meio de seus caminhos de fato.
-
-   <!--
-  >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
-  -->
+      * Para obter mais detalhes, consulte [Nomes de página localizados em SEO e Práticas recomendadas de gerenciamento de URL](/help/overview/seo-and-url-management.md#localized-page-names).
 
 * **Configuração**
 
-   * **Configuração na nuvem** - o caminho para a configuração
+   * **Herdado de &lt;path>** - ativar/desativar herança; alterna a disponibilidade de **Configuração na nuvem** para seleção
+
+   * **Configuração na nuvem** - O caminho para a configuração selecionada
 
 * **Configurações de modelos**
 
@@ -132,14 +133,40 @@ As propriedades são distribuídas por várias guias.
 
    * **Exportar configuração** - especifica uma configuração de exportação
 
-### Miniatura  {#thumbnail}
+* **SEO**
 
-Configurar a miniatura de página
+   * **Url Canônica** - pode ser usado para substituir o Url canônico da página; se deixado em branco, o URL da página será seu URL canônico
 
-* **Gerar visualização** - gere uma visualização da página para usar como miniatura
-* **Fazer upload da imagem** - faça upload de uma imagem para usar como miniatura
-* **Selecionar imagem** - selecione um Ativo existente para usar como miniatura
-* **Reverter** - esta opção fica disponível após você ter feito uma alteração na miniatura. Se você não quiser manter sua alteração, poderá reverter essa alteração antes de salvar.
+   * **Tags de robôs** - selecione as tags de robôs para controlar o comportamento dos rastreadores de mecanismo de pesquisa.
+
+      >[!NOTE]
+      >
+      >Algumas das opções estão em conflito entre si. Em caso de conflito, a opção mais permissiva tem precedência.
+
+   * **Gerar mapa de site** - quando selecionado, um sitemap.xml será gerado para esta página e seus descendentes
+
+### Imagens {#images}
+
+* **Imagem em destaque**
+
+   Selecione e configure a imagem a ser apresentada. Isso é usado em componentes que fazem referência à página; por exemplo, teasers, listas de páginas etc.
+
+   * **Imagem**
+
+      Você pode **Selecionar** um Ativo ou procure um arquivo para fazer upload, em seguida **Editar** ou **Limpar**.
+
+   * **Texto alternativo** - um texto utilizado para representar o significado e/ou a função da imagem; por exemplo, para uso por leitores de tela.
+
+   * **Herdar - Valor obtido do ativo DAM** - quando marcado, isso preencherá o texto alternativo com o valor da variável `dc:description`metadados no DAM
+
+* **Miniatura**
+
+   Configurar a miniatura de página
+
+   * **Gerar visualização** - gere uma visualização da página para usar como miniatura
+   * **Fazer upload da imagem** - faça upload de uma imagem para usar como miniatura
+   * **Selecionar imagem** - selecione um Ativo existente para usar como miniatura
+   * **Reverter** - esta opção fica disponível após você ter feito uma alteração na miniatura. Se você não quiser manter sua alteração, poderá reverter essa alteração antes de salvar.
 
 ### Redes sociais {#social-media}
 
@@ -156,12 +183,11 @@ Configurar a miniatura de página
 
 * **Configurações do Cloud Service** - defina propriedades para os serviços em nuvem
 
-   <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
-  -->
-
 ### Personalização {#personalization}
 
 * **Configurações do ContextHub**
+
+   * **Herdado de &lt;path>** - ativar/desativar herança; alterna a disponibilidade de **Caminho do ContextHub** e **Caminho dos segmentos** para seleção
 
    * **Caminho do ContextHub** - defina a [configuração do ContextHub](/help/sites-cloud/authoring/personalization/contexthub.md)
    * **Caminho dos segmentos** - defina o [Caminho dos segmentos](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
@@ -176,15 +202,9 @@ Configurar a miniatura de página
 
 * **Permissões**
 
-   * Adicionar permissões
-   * Editar grupo de usuários fechado
-   * Exibir as permissões efetivas
-
-   <!--[Add Permissions](/help/sites-administering/user-group-ac-admin.md) -->
-
-   <!-- [Edit Closed User Group](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)-->
-
-   <!-- View the [Effective Permissions](/help/sites-administering/user-group-ac-admin.md)-->
+   * **Adicionar permissões**
+   * **Editar grupo de usuários fechado**
+   * Exibir as **permissões efetivas**
 
 ### Blueprint {#blueprint}
 
@@ -195,6 +215,8 @@ Essa guia só fica visível para páginas que servem como blueprints. Blueprints
 * **Configurações de implantação** - controla as circunstâncias sob as quais as modificações serão propagadas no Live Copy
 
 ### Live Copy  {#live-copy}
+
+Essa guia só fica visível para páginas configuradas como cópias em tempo real.
 
 * **Sincronizar** - sincronizar o Live Copy com o blueprint, mantendo as modificações locais
 * **Redefinir** - redefinir o Live Copy para o estado de blueprint, removendo as modificações locais
@@ -220,6 +242,33 @@ Essa guia só fica visível para páginas que servem como blueprints. Blueprints
 Quando um ambiente de Visualização estiver habilitado, você verá:
 
 * URL de visualização - o URL usado para acessar o conteúdo no ambiente de Visualização
+
+### Aplicativo web progressivo {#progressive-web-app}
+
+Por meio de uma configuração simples, um autor de conteúdo agora pode ativar recursos do aplicativo web progressivo (PWA) para experiências criadas no AEM Sites.
+
+>[!NOTE]
+>
+>Para obter mais detalhes, consulte [Ativação de recursos progressivos do aplicativo web](/help/sites-cloud/authoring/features/enable-pwa.md).
+
+* **Configurar experiência instalável**
+
+   * **Ativar o PWA** - ativar/desativar o recurso; permite que os usuários instalem o site como um PWA
+   * **StartupURL** - o URL de inicialização preferencial
+   * **Modo de exibição** - como o navegador deve ser oculto ou apresentado ao usuário no dispositivo local
+   * **Orientação da tela** - como o PWA lidará com as orientações dos dispositivos
+   * **Cor do tema** - a cor do aplicativo que afeta a forma como o sistema operacional do usuário local exibe a barra de ferramentas da interface do usuário nativa e os controles de navegação
+   * **Cor do plano de fundo** - a cor de fundo do aplicativo, que é mostrada à medida que o aplicativo é carregado
+   * **Ícone** - o ícone que representa o aplicativo no dispositivo do usuário
+
+* **Gerenciamento de cache (avançado)**
+
+   * **Estratégia de armazenamento em cache e frequência de atualização de conteúdo** - define o modelo de armazenamento em cache do seu PWA
+   * **Arquivos para armazenar em cache para uso offline**
+      * **Pré-armazenamento em cache de arquivos (pré-visualização técnica)** - os arquivos hospedados no AEM serão salvos no cache do navegador local quando o trabalhador do serviço estiver instalando e antes de ser usado
+      * **Bibliotecas do lado do cliente** - bibliotecas do lado do cliente para armazenar em cache para experiência offline
+      * **Inclusões de caminho** - as solicitações de rede para os caminhos definidos são interceptadas e o conteúdo em cache é retornado de acordo com a estratégia de Cache configurada e a frequência de atualização de conteúdo
+      * **Exclusões de caminho** - esses arquivos nunca serão armazenados em cache, independentemente das configurações em File pre-caching e Path insions
 
 ## Editar as propriedades da página {#editing-page-properties-1}
 
