@@ -2,10 +2,10 @@
 title: Tarefas de manutenção no AEM as a Cloud Service
 description: Tarefas de manutenção no AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: f1d1009db31585ff82c02080a6ab7ea7ca5bf66b
+source-git-commit: 8209faed876f5ab37a0332d72327aad76228063b
 workflow-type: tm+mt
-source-wordcount: '1068'
-ht-degree: 75%
+source-wordcount: '1075'
+ht-degree: 74%
 
 ---
 
@@ -44,7 +44,7 @@ A tabela a seguir ilustra as tarefas de manutenção disponíveis no momento do 
   <tr>
     <td>Remoção da versão</td>
     <td>Adobe</td>
-    <td>Para ambientes existentes (criados antes de 1º de março de 2023), a limpeza é desativada e não será ativada no futuro, a menos que seja explicitamente ativada pelo cliente, e nesse momento ela também pode configurá-la com valores personalizados.<br><br> <!--Alexandru: please leave the two line breaks in place, otherwise spacing won't render properly-->Novos ambientes (aqueles criados a partir de 1º de março de 2023) terão a limpeza ativada por padrão com os valores abaixo, com os clientes sendo capazes de configurar com valores personalizados.
+    <td>Para ambientes existentes (criados antes de 1º de junho de 2023), a limpeza é desativada e não será ativada no futuro, a menos que seja explicitamente ativada pelo cliente, e nesse momento ela também pode configurá-la com valores personalizados.<br><br> <!--Alexandru: please leave the two line breaks in place, otherwise spacing won't render properly-->Novos ambientes (aqueles criados a partir de 1º de junho de 2023) terão a limpeza ativada por padrão com os valores abaixo, com os clientes sendo capazes de configurar com valores personalizados.
      <ol>
        <li>Versões com mais de 30 dias são removidas</li>
        <li>As 5 versões mais recentes nos últimos 30 dias são mantidas</li>
@@ -56,7 +56,7 @@ A tabela a seguir ilustra as tarefas de manutenção disponíveis no momento do 
   <tr>
     <td>Limpeza do log de auditoria</td>
     <td>Adobe</td>
-    <td>Para ambientes existentes (criados antes de 1º de março de 2023), a limpeza é desativada e não será ativada no futuro, a menos que seja explicitamente ativada pelo cliente, e nesse momento ela também pode configurá-la com valores personalizados.<br><br> <!-- See above for the two line breaks -->Novos ambientes (aqueles criados a partir de 1º de março de 2023) terão a limpeza ativada por padrão no <code>/content</code> nó do repositório de acordo com o seguinte comportamento:
+    <td>Para ambientes existentes (criados antes de 1º de junho de 2023), a limpeza é desativada e não será ativada no futuro, a menos que seja explicitamente ativada pelo cliente, e nesse momento ela também pode configurá-la com valores personalizados.<br><br> <!-- See above for the two line breaks -->Novos ambientes (aqueles criados a partir de 1º de junho de 2023) terão a limpeza ativada por padrão no <code>/content</code> nó do repositório de acordo com o seguinte comportamento:
      <ol>
        <li>Para auditoria de replicação, os logs de auditoria com mais de 3 dias são removidos</li>
        <li>Para auditoria do DAM (Assets), os logs de auditoria com mais de 30 dias são removidos</li>
@@ -92,7 +92,7 @@ A tabela a seguir ilustra as tarefas de manutenção disponíveis no momento do 
     <td>Cliente</td>
     <td>
     <p>Deve ser feito no Git. Substitua o nó de configuração da janela de manutenção pronto para uso em <code>/libs</code>, criando propriedades na pasta <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> ou <code>granite_daily</code>. Consulte a tabela Janela de manutenção abaixo para obter mais detalhes sobre a configuração.</p>
-    <p>Ative a tarefa de manutenção adicionando outro nó sob o nó acima (nomeie-o como <code>granite_ProjectPurgeTask</code>) com as propriedades apropriadas. Configure as propriedades OSGI.</p>
+    <p>Ative a tarefa de manutenção adicionando outro nó sob o nó acima (nomeie-o como <code>granite_ProjectPurgeTask</code>) com as propriedades apropriadas. Consulte a lista de propriedades OSGI em "Configuração de limpeza de projetos do Adobe".</p>
   </td>
   </tr>
   </tbody>
