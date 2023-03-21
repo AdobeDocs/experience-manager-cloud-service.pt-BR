@@ -1,17 +1,17 @@
 ---
 title: Trabalhos assíncronos
-description: O Adobe Experience Manager otimiza o desempenho ao concluir de modo assíncrono algumas tarefas que consomem muitos recursos.
+description: O Adobe Experience Manager otimiza o desempenho ao concluir de forma assíncrona algumas tarefas que consomem muitos recursos como operações em segundo plano.
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 26ca2addb14f62588035323ce886ae890919b759
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 98%
+source-wordcount: '971'
+ht-degree: 70%
 
 ---
 
 # Operações assíncronas {#asynchronous-operations}
 
-Para reduzir o impacto negativo no desempenho, o Adobe Experience Manager processa de modo assíncrono determinadas operações de longa duração e operações que usam muitos recursos. O processamento assíncrono envolve enfileiramento de vários trabalhos e sua execução em série dependendo da disponibilidade dos recursos do sistema.
+Para reduzir o impacto negativo no desempenho, o Adobe Experience Manager processa determinadas operações de longa duração e operações que consomem muitos recursos de forma assíncrona como operações em segundo plano. O processamento assíncrono envolve enfileiramento de vários trabalhos e sua execução em série dependendo da disponibilidade dos recursos do sistema.
 
 Essas operações incluem:
 
@@ -22,7 +22,7 @@ Essas operações incluem:
 * Mover páginas
 * Implantação de Live Copy
 
-Você pode visualizar o status de trabalhos assíncronos no painel **[!UICONTROL Status de trabalhos assíncronos]** em **Navegação global** -> **Ferramentas** -> **Operações** -> **Trabalhos**.
+Você pode visualizar o status de trabalhos assíncronos no **[!UICONTROL Operações em segundo plano]** painel em **Navegação global** -> **Ferramentas** -> **Geral** -> **Tarefas**.
 
 >[!NOTE]
 >
@@ -34,11 +34,11 @@ Você pode visualizar o status de trabalhos assíncronos no painel **[!UICONTROL
 
 Sempre que o AEM processar uma operação de modo assíncrono, você receberá uma notificação na sua [caixa de entrada](/help/sites-cloud/authoring/getting-started/inbox.md) e por email (se ativada essa opção).
 
-Para visualizar o status das operações assíncronas em detalhes, acesse a página **[!UICONTROL Status do trabalho assíncrono]**.
+Para visualizar o status das operações assíncronas em detalhes, acesse o **[!UICONTROL Operações em segundo plano]** página.
 
-1. Na interface do Experience Manager, clique em **[!UICONTROL Operações]** > **[!UICONTROL Trabalhos]**.
+1. Na interface do Experience Manager, selecione **Navegação global** -> **Ferramentas** -> **Geral** -> **Tarefas**.
 
-1. Na página **[!UICONTROL Status do trabalho assíncrono]**, verifique os detalhes das operações.
+1. No **[!UICONTROL Operações em segundo plano]** consulte os detalhes das operações.
 
    ![Status e detalhes de operações assíncronas](assets/async-operation-status.png)
 
@@ -70,13 +70,22 @@ Para visualizar o status das operações assíncronas em detalhes, acesse a pág
    >
    >Não é possível excluir um trabalho se o seu status for **Ativo** ou **Em fila**.
 
-## Limpar trabalhos concluídos {#purging-completed-jobs}
+## Configuração das opções assíncronas de processamento de trabalhos {#configure}
 
-O AEM executa um trabalho de limpeza todos os dias à 1h para excluir trabalhos assíncronos concluídos há mais de um dia.
+Há várias opções sobre trabalhos assíncronos que podem ser configurados. Os exemplos a seguir mostram como isso pode ser feito usando o gerenciador de configuração em um sistema de desenvolvimento local.
+
+>[!NOTE]
+>
+>[Configurações do OSGi](/help/implementing/deploying/configuring-osgi.md#creating-osgi-configurations) são consideradas conteúdo mutável e qualquer configuração desse tipo deve ser implantada como um pacote de conteúdo para um ambiente de produção.
+
+### Limpar trabalhos concluídos {#purging-completed-jobs}
+
+AEM executa um trabalho de limpeza todos os dias às 01:00 para excluir trabalhos assíncronos concluídos há mais de um dia.
 
 Você pode modificar a programação da limpeza e a duração da retenção dos detalhes dos trabalhos concluídos, antes da sua exclusão. Você também pode configurar, a qualquer momento, o número máximo de trabalhos concluídos cujos detalhes serão retidos.
 
-1. Na Navegação global, clique em **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Console da Web]**.
+1. Faça logon no console AEM Web do AEM SDK Quickstart Jar em `https://<host>:<port>/system/console` como usuário administrador.
+1. Navegar para **OSGi** > **Configuração**
 1. Abra o **[!UICONTROL Trabalho agendado de limpeza de trabalhos assíncronos no Adobe Granite]**.
 1. Especifique:
    * O limite de dias após o qual os trabalhos concluídos são excluídos.
@@ -87,15 +96,12 @@ Você pode modificar a programação da limpeza e a duração da retenção dos 
 
 1. Salve as alterações.
 
-## Configurar o processamento assíncrono {#configuring-asynchronous-processing}
-
-Você pode configurar o limite de ativos, páginas ou referências para que o AEM processe uma operação específica de modo assíncrono, bem como ativar notificações por email para quando os trabalhos forem processados.
-
 ### Configurar operações assíncronas de exclusão de ativos {#configuring-synchronous-delete-operations}
 
 Se o número de ativos ou pastas que serão excluídos exceder o limite, a operação de exclusão será feita de modo assíncrono.
 
-1. Na Navegação global, clique em **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Console da Web]**.
+1. Faça logon no console AEM Web do AEM SDK Quickstart Jar em `https://<host>:<port>/system/console` como usuário administrador.
+1. Navegar para **OSGi** > **Configuração**
 1. No console da Web, abra a **[!UICONTROL Configuração da fila padrão de processo assíncrono.]**
 1. Na caixa **[!UICONTROL Limite de ativos]**, especifique o limite de ativos/pastas para o processamento assíncrono de operações de exclusão.
 
@@ -108,7 +114,8 @@ Se o número de ativos ou pastas que serão excluídos exceder o limite, a opera
 
 Se o número de ativos/pastas ou referências que serão movidos exceder o limite, a operação de movimentação será feita de modo assíncrono.
 
-1. Na Navegação global, clique em **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Console da Web]**.
+1. Faça logon no console AEM Web do AEM SDK Quickstart Jar em `https://<host>:<port>/system/console` como usuário administrador.
+1. Navegar para **OSGi** > **Configuração**
 1. No console da Web, abra a **[!UICONTROL Configuração do processamento assíncrono da operação de movimentação.]**
 1. Na caixa **[!UICONTROL Limite de ativos/referências]**, especifique o limite de ativos/pastas ou referências para o processamento assíncrono de operações de movimentação.
 
@@ -121,7 +128,8 @@ Se o número de ativos/pastas ou referências que serão movidos exceder o limit
 
 Se o número de referências às páginas que serão movidas exceder o número limite, a operação de movimentação será executada de modo assíncrono.
 
-1. Na Navegação global, clique em **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Console da Web]**.
+1. Faça logon no console AEM Web do AEM SDK Quickstart Jar em `https://<host>:<port>/system/console` como usuário administrador.
+1. Navegar para **OSGi** > **Configuração**
 1. No console da Web, abra a **[!UICONTROL Configuração do processamento assíncrono da operação de movimentação de página.]**
 1. No campo **[!UICONTROL Limite de referências]**, especifique o número de referências para o processamento assíncrono de operações de movimentação de página.
 
@@ -132,7 +140,8 @@ Se o número de referências às páginas que serão movidas exceder o número l
 
 ### Configurar operações assíncronas do MSM {#configuring-asynchronous-msm-operations}
 
-1. Na Navegação global, clique em **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Console da Web]**.
+1. Faça logon no console AEM Web do AEM SDK Quickstart Jar em `https://<host>:<port>/system/console` como usuário administrador.
+1. Navegar para **OSGi** > **Configuração**
 1. No console da Web, abra a **[!UICONTROL Configuração do processamento assíncrono da operação de movimentação de página.]**
 1. Marque a opção **Habilitar notificação por email** para receber notificações por email sobre o status do trabalho. Por exemplo, sucesso, falha.
 
