@@ -2,7 +2,7 @@
 title: Utilização do Analisador de práticas recomendadas
 description: Utilização do Analisador de práticas recomendadas
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: e11cb3215dc005bfd38959f3ceaaad25becad65c
 workflow-type: tm+mt
 source-wordcount: '2490'
 ht-degree: 41%
@@ -69,7 +69,6 @@ Siga esta seção para saber como visualizar o relatório do Analisador de prát
 
    ![imagem](/help/journey-migration/best-practices-analyzer/assets/BPA_pic3.png)
 
-
 1. Depois que o relatório BPA é gerado, ele exibe um resumo e o número de conclusões em um formato de tabela organizado pelo tipo de descoberta e o nível de importância. Para obter mais detalhes sobre uma descoberta específica, clique no número que corresponde ao tipo de descoberta na tabela.
 
    ![imagem](/help/journey-migration/best-practices-analyzer/assets/BPA_pic4.png)
@@ -92,8 +91,6 @@ Siga esta seção para saber como visualizar o relatório do Analisador de prát
 
    ![imagem](/help/journey-migration/best-practices-analyzer/assets/BPA_pic8.png)
 
-
-
 #### Uso de filtros no relatório do Analisador de práticas recomendadas {#bpa-filters}
 
 Para filtrar as descobertas relacionadas a [ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)siga as etapas abaixo:
@@ -111,7 +108,6 @@ Para filtrar as descobertas relacionadas a [ACS Commons](https://adobe-consultin
 
    >[!NOTE]
    > As conclusões do ACS Commons não devem ser ignoradas. Consulte [documentação](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) para determinar a compatibilidade com AEM as a Cloud Service.
-
 
 <!--
 ### Adobe Experience Manager 6.2 and 6.1 {#aem-specific-versions}
@@ -158,7 +154,6 @@ Siga a tabela abaixo para entender os níveis de importância:
 | CONSULTIVO | Essa conclusão pode ser um problema de atualização. Recomenda-se uma investigação mais aprofundada. |
 | IMPORTANTE | Essa conclusão provavelmente será um problema de atualização que deve ser resolvido. |
 | CRÍTICO | Essa conclusão provavelmente será um problema de atualização que deve ser resolvido para evitar a perda de função ou do desempenho. |
-
 
 ## Interpretação do relatório CSV do Analisador de práticas recomendadas {#cra-csv-report}
 
