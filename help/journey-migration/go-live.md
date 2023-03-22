@@ -2,9 +2,9 @@
 title: Publicação
 description: Saiba como executar a migração assim que o código e o conteúdo estiverem prontos para a nuvem
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 7f43e09c411b0402701b5c65639ca988702ab75e
+source-git-commit: 55ecd685afa28226974f3415b550bd2e8d05e2e6
 workflow-type: tm+mt
-source-wordcount: '1729'
+source-wordcount: '1727'
 ht-degree: 2%
 
 ---
@@ -153,7 +153,7 @@ Revise esta lista de atividades para garantir que você realize uma migração t
       * Se você tiver um TTL muito alto, as atualizações no registro DNS levarão mais tempo para serem propagadas.
 * Execute testes de desempenho e segurança que atendam às necessidades e objetivos de sua empresa.
 * Recorte e certifique-se de que o lançamento real seja executado sem qualquer nova implantação ou atualização de conteúdo.
-* Crie grupos de notificação de usuário do Admin Console. Consulte [Grupos de usuários para notificações](/help/journey-onboarding/user-groups.md)
+* Crie perfis de notificação do usuário do Admin Console. Consulte [Perfis de notificação](/help/journey-onboarding/notification-profiles.md)
 
 Você sempre pode fazer referência à lista caso precise recalibrar suas tarefas ao executar a migração.
 
