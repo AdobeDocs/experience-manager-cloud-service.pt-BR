@@ -1,17 +1,17 @@
 ---
-title: Introdução ao Editor Universal
-description: Saiba como o Editor Universal permite a edição de qualquer aspecto de conteúdo em qualquer implementação, para fornecer experiências excepcionais, aumentar a velocidade do conteúdo e fornecer uma experiência de desenvolvedor de última geração.
-source-git-commit: f454475b65da8f410812bbbe30ca5fc393be410a
+title: Introdução ao Editor Visual Universal
+description: Saiba como o Editor Visual Universal (também conhecido como Editor Universal) permite a edição do que você vê é o que você obtém (WYSIWYG) de qualquer experiência headless e headful. Entenda como ele pode ajudar os autores de conteúdo a entregar experiências excepcionais, aumentar a velocidade do conteúdo e como ele oferece uma experiência de desenvolvedor avançada.
+source-git-commit: f242abbd7f53c523667d1d56a0f5b913bb26dee0
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '911'
 ht-degree: 0%
 
 ---
 
 
-# Introdução ao Editor Universal {#introduction}
+# Introdução ao Editor Visual Universal {#introduction}
 
-Saiba como o Editor Universal permite a edição de qualquer aspecto de conteúdo em qualquer implementação, para fornecer experiências excepcionais, aumentar a velocidade do conteúdo e fornecer uma experiência de desenvolvedor de última geração.
+Saiba como o Editor Visual Universal (também conhecido como Editor Universal) permite a edição do que você vê é o que você obtém (WYSIWYG) de qualquer experiência headless e headful. Entenda como ele pode ajudar os autores de conteúdo a entregar experiências excepcionais, aumentar a velocidade do conteúdo e como ele oferece uma experiência de desenvolvedor avançada.
 
 ## Segundo plano {#background}
 
@@ -42,17 +42,14 @@ Os requisitos para uma implementação aproveitar o Editor Universal são muito 
 Um autor de conteúdo deve ter a mesma experiência de edição avançada anteriormente oferecida pelo editor de página de AEM. Mas o Editor universal permite que os autores de conteúdo editem **any** conteúdo visualmente e em contexto e suporte:
 
 * **AEM Estruturas de Página** - Aninhado `cq:Components` de `cq:Pages`, incluindo Fragmentos de experiência
-* **Fragmentos de conteúdo do AEM** - Editar conteúdo dos Fragmentos de conteúdo conforme eles aparecem no contexto da experiência
-* **Documentos** - Word, Excel, Google Docs, Markdown ou até mesmo o simples HTML persistiu, por exemplo, no GitHub
-* **Conteúdo de terceiros** - Um sistema de plug-in permite que qualquer fonte de conteúdo externo seja editável.
+* **Fragmentos de conteúdo do AEM** - Edite o conteúdo dos Fragmentos de conteúdo conforme eles aparecem no contexto da experiência.
+* **Documentos** - A prova de conceitos mostrou que também os documentos do Word, Excel, Google Docs ou Markdown também podem ser editados da mesma maneira (trata-se do WIP).
 
 ### Qualquer aspecto {#any-aspect}
 
 Para um autor de conteúdo, o conteúdo não é apenas sobre as informações contidas, mas sobre como é renderizado e recebido. O conteúdo vem com metadados e regras de instrumentação adicionais, que o Editor Universal pode entender e editar, incluindo:
 
-* **Aplicar layout e estilo** - Ao usar um sistema de estilos, o profissional de marketing e o autor de conteúdo podem aplicar estilos diferentes ao conteúdo e criar layouts diferentes, como colunas, carrosséis, guias, acordeões etc.
-* **Execução de experimentação** - Ao publicar uma nova versão de conteúdo que desafia o conteúdo existente, o profissional de marketing pode experimentar melhorias de conteúdo e medir o impacto.
-* **Personalização de variações** - Ao criar e gerenciar variações de conteúdo específicas para determinados públicos-alvo, os profissionais de marketing podem personalizar o conteúdo fornecido.
+* **Aplicar layout e estilo** - Ao usar um sistema de estilos, o profissional de marketing e o autor de conteúdo podem aplicar estilos diferentes ao conteúdo e criar layouts diferentes para o conteúdo, como colunas, carrosséis, guias, acordeões etc.
 
 ## Valor {#value}
 
@@ -64,9 +61,9 @@ Ao dissociar a experiência de edição de conteúdo de qualquer sistema de entr
 * **Aumentar a velocidade do conteúdo** - Para simplificar o fluxo de trabalho de gerenciamento dos profissionais, o Editor Universal permite que o conteúdo de edição na pré-visualização seja exibido para os profissionais de guia, mostrando apenas as opções relevantes para esse contexto e tornando o fluxo de trabalho independente das fontes de conteúdo.
 * **Experiência de desenvolvedor avançada** - Para oferecer suporte ao cenário de aplicativos heterogêneos do mundo real, o Editor Universal é completamente dissociado e independente da tecnologia, permitindo que os desenvolvedores usem sua pilha de tecnologia preferida para implementar a experiência.
 
-## Editor universal e o editor de fragmento de conteúdo {#universal-editor-content-fragment-editor}
+## Editor visual universal e o editor de fragmento de conteúdo {#universal-editor-content-fragment-editor}
 
-À primeira vista, pode parecer que o Editor Universal e o Editor de fragmento de conteúdo fornecem recursos de edição semelhantes. No entanto, esses editores oferecem recursos muito diferentes e realizam trabalhos diferentes do profissional de marketing.
+À primeira vista, pode parecer que o Editor visual universal e o Editor de fragmento de conteúdo fornecem recursos de edição semelhantes. No entanto, esses editores oferecem recursos muito diferentes e realizam trabalhos diferentes do profissional de marketing.
 
 ### Editor de fragmento de conteúdo {#content-fragment-editor}
 
@@ -74,7 +71,7 @@ Um profissional de marketing deseja criar conteúdo sem precisar se preocupar co
 
 * O trabalho subjacente a ser realizado é dimensionar a estratégia de conteúdo.
 
-### Editor universal {#universal-editor}
+### Editor visual universal {#universal-editor}
 
 Um profissional de marketing deseja criar conteúdo adaptado ao layout de um contexto específico para fornecer uma experiência excepcional.
 
@@ -82,9 +79,9 @@ Um profissional de marketing deseja criar conteúdo adaptado ao layout de um con
 
 ## Roteiro {#road-map}
 
-É importante observar que o Universal Editor é um trabalho em andamento e os recursos apresentados neste documento são uma visão do editor final e não necessariamente de suas capacidades atuais.
+É importante observar que o Universal Editor é um trabalho em andamento e alguns dos recursos apresentados neste documento são uma visão do editor final e não necessariamente representativa de suas capacidades atuais.
 
-Fale com o seu contato do Adobe para obter detalhes sobre os recursos futuros planejados para o Editor Universal
+Fale com o seu Adobe para obter detalhes sobre os recursos futuros planejados para o Universal Editor.
 
 ## Recursos adicionais {#additional-resources}
 
