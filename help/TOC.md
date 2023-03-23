@@ -8,10 +8,10 @@ user-guide-description: Saiba como o Experience Manager as a Cloud Service funci
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 5f664b92d9e5ff31e90ce8a5d7c35db683c4ef03
+source-git-commit: c5395c9c844744655054bb15e1b9b2178792b8b5
 workflow-type: tm+mt
-source-wordcount: '4005'
-ht-degree: 94%
+source-wordcount: '4011'
+ht-degree: 93%
 
 ---
 
@@ -964,6 +964,7 @@ ht-degree: 94%
 + Editor universal {#universal-editor}
    + [Introdução ao Editor Universal](/help/implementing/universal-editor/introduction.md)
    + [Criação de conteúdo com o editor universal](/help/implementing/universal-editor/authoring.md)
+   + [Publicação de conteúdo com o editor universal](/help/implementing/universal-editor/publishing.md)
    + [Introdução ao Editor universal no AEM](/help/implementing/universal-editor/getting-started.md)
    + [Arquitetura do editor universal](/help/implementing/universal-editor/architecture.md)
    + [Atributos e tipos](/help/implementing/universal-editor/attributes-types.md)

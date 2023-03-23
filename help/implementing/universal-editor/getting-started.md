@@ -1,9 +1,9 @@
 ---
 title: Introdução ao Editor universal no AEM
 description: Saiba como obter acesso ao Universal Editor e como começar a instrumentar seu primeiro aplicativo AEM para usá-lo.
-source-git-commit: acafa752c354781e41b11e46ac31a59feb8d94e7
+source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '773'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ import "@adobe/universal-editor-cors";
 
 ### Alternativa para aplicativos não reativos {#alternative}
 
-Se você não estiver implementando um aplicativo React e/ou precisar de renderização do lado do servidor e o método alternativo for incluir o seguinte ao corpo do documento.
+Se você não estiver implementando um aplicativo React e/ou exigir renderização do lado do servidor, um método alternativo é incluir o seguinte ao corpo do documento.
 
 ```html
 <script src="https://cdn.jsdelivr.net/gh/adobe/universal-editor-cors/dist/universal-editor-embedded.js" async></script>
@@ -157,50 +157,6 @@ itemid="urn:<referenceName>:<resource>"
 </html>
 ```
 
-### Serviço de tradução do editor universal {#translation}
-
-O Editor Universal executa a tradução com base nos metadados de instrumentação.
-
-#### Princípio básico de tradução {#principle}
-
-Considere a seguinte seleção do exemplo anterior.
-
-```html
-<meta name="urn:auecon:aemconnection" content="aem:https://localhost:4502">
-<ul itemscope itemid="urn:aemconnection:/content/example/list" itemtype="urn:fcs:type/list">
-```
-
-O editor fará substituições e internamente a função `itemid` será reescrita para o seguinte.
-
-```html
-itemid="urn:aem:https://localhost:4502/content/example/list"
-```
-
-Isso resulta no termo `aemconnection` sendo substituído pelo conteúdo da `<meta>` .
-
-#### Seletor de query {#query-selector}
-
-Essa substituição resultará na seguinte sequência de consulta para John Smith.
-
-```html
-<ul itemscope itemid="urn:aemconnection:/content/example/list" itemtype="urn:fcs:type/list">
-  <li itemscope itemid="urn:fcsconnection:/documents/mytext" itemtype="urn:fcs:type/fragment">.  
-    <p itemprop="name" itemtype="text">John Smith</p>
-    <p itemid="urn:aemconnection/content/example/another-source" itemprop="title" itemtype="text">Photographer</p>
-    <img itemprop="avatar" src="urn:fcs:missing" itemtype="image" alt="avatar"/>
-  </li>
-```
-
-`[itemid="urn:fcs:https://example.franklin.adobe.com/345fcdd/content/example/list][itemprop="name"]`
-
-Se quiser alterar o bloco de John Smith, o seletor será o seguinte.
-
-`[itemid="urn:aem:https://localhost:4502/content/example/another-source"][itemprop="title"]`
-
-Em vez de herança de `itemid`Como e recursos, o Universal Editor trabalha com escopos. Um escopo pode ser definido em um nível de nó e herdado por toda a subestrutura.
-
-Caso seja necessário um escopo diferente para uma subestrutura dentro da estrutura ou uma licença definida, outro `itemid` pode ser definido.
-
 ## Você está pronto para usar o editor universal {#youre-ready}
 
 Seu aplicativo agora é instrumentado a usar o Editor universal!
@@ -213,6 +169,7 @@ Para saber mais sobre o Universal Editor, consulte estes documentos.
 
 * [Introdução ao Editor Universal](introduction.md) - Saiba como o Editor Universal permite editar qualquer aspecto de qualquer conteúdo em qualquer implementação para fornecer experiências excepcionais, aumentar a velocidade do conteúdo e fornecer uma experiência de desenvolvedor de última geração.
 * [Criação de conteúdo com o editor universal](authoring.md) - Saiba como é fácil e intuitivo para os autores de conteúdo criar conteúdo usando o Editor Universal.
+* [Publicação de conteúdo com o editor universal](publishing.md) - Saiba como o Editor visual universal publica conteúdo e como seus aplicativos podem lidar com o conteúdo publicado.
 * [Arquitetura do editor universal](architecture.md) - Saiba mais sobre a arquitetura do Editor Universal e como os dados fluem entre seus serviços e camadas.
 * [Atributos e tipos](attributes-types.md) - Saiba mais sobre os atributos e tipos de dados exigidos pelo Editor Universal.
 * [Autenticação do editor universal](authentication.md) - Saiba como o Editor Universal se autentica.

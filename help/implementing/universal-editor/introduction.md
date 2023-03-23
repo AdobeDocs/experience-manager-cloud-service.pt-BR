@@ -1,9 +1,9 @@
 ---
 title: Introdução ao Editor Visual Universal
 description: Saiba como o Editor Visual Universal (também conhecido como Editor Universal) permite a edição do que você vê é o que você obtém (WYSIWYG) de qualquer experiência headless e headful. Entenda como ele pode ajudar os autores de conteúdo a entregar experiências excepcionais, aumentar a velocidade do conteúdo e como ele oferece uma experiência de desenvolvedor avançada.
-source-git-commit: f242abbd7f53c523667d1d56a0f5b913bb26dee0
+source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: '934'
 ht-degree: 0%
 
 ---
@@ -88,6 +88,7 @@ Fale com o seu Adobe para obter detalhes sobre os recursos futuros planejados pa
 Para saber mais sobre o Universal Editor, consulte estes documentos.
 
 * [Criação de conteúdo com o editor universal](authoring.md) - Saiba como é fácil e intuitivo para os autores de conteúdo criar conteúdo usando o Editor Universal.
+* [Publicação de conteúdo com o editor universal](publishing.md) - Saiba como o Editor visual universal publica conteúdo e como seus aplicativos podem lidar com o conteúdo publicado.
 * [Introdução ao Editor universal no AEM](getting-started.md) - Saiba como obter acesso ao Universal Editor e como começar a instrumentar seu primeiro aplicativo AEM para usá-lo.
 * [Arquitetura do editor universal](architecture.md) - Saiba mais sobre a arquitetura do Editor Universal e como os dados fluem entre seus serviços e camadas.
 * [Atributos e tipos](attributes-types.md) - Saiba mais sobre os atributos e tipos de dados exigidos pelo Editor Universal.
