@@ -2,10 +2,10 @@
 title: Tarefas de manutenção no AEM as a Cloud Service
 description: Tarefas de manutenção no AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 8209faed876f5ab37a0332d72327aad76228063b
+source-git-commit: 020d9a73141f650ebafcdec0a5976e5060fd16c2
 workflow-type: tm+mt
 source-wordcount: '1075'
-ht-degree: 74%
+ht-degree: 67%
 
 ---
 
@@ -75,7 +75,7 @@ A tabela a seguir ilustra as tarefas de manutenção disponíveis no momento do 
     <td>Limpeza de tarefa ad-hoc</td>
     <td>Cliente</td>
     <td>
-    <p>Deve ser feito no Git. Substitua o nó de configuração da janela de manutenção pronto para uso em <code>/libs</code>, criando propriedades na pasta <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> ou <code>granite_daily</code>.</p>
+    <p>Deve ser feito no Git. Substitua o nó de configuração da janela de manutenção pronto para uso em <code>/libs</code> criando propriedades na pasta <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> ou <code>granite_monthly</code>.</p>
     <p>Consulte a tabela Janela de manutenção abaixo para obter mais detalhes sobre a configuração. Ative a tarefa de manutenção adicionando outro nó no nó acima. Nomeie-o <code>granite_TaskPurgeTask</code>, com atributo <code>sling:resourceType</code> defina como <code>granite/operations/components/maintenance/task</code> e atributo <code>granite.maintenance.name</code> defina como <code>TaskPurge</code>. Configure as propriedades do OSGI, consulte <code>com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask</code> para a lista de propriedades.</p>
   </td>
   </tr>
@@ -83,7 +83,7 @@ A tabela a seguir ilustra as tarefas de manutenção disponíveis no momento do 
     <td>Remoção do fluxo de trabalho</td>
     <td>Cliente</td>
     <td>
-    <p>Deve ser feito no Git. Substitua o nó de configuração da janela de manutenção pronto para uso em <code>/libs</code>, criando propriedades na pasta <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> ou <code>granite_daily</code>. Consulte a tabela Janela de manutenção abaixo para obter mais detalhes sobre a configuração.</p>
+    <p>Deve ser feito no Git. Substitua o nó de configuração da janela de manutenção pronto para uso em <code>/libs</code> criando propriedades na pasta <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> ou <code>granite_monthly</code>. Consulte a tabela Janela de manutenção abaixo para obter mais detalhes sobre a configuração.</p>
     <p>Ative a tarefa de manutenção adicionando outro nó sob o nó acima (nomeie-o como <code>granite_WorkflowPurgeTask</code>) com as propriedades adequadas. Para configurar as propriedades do OSGI, consulte <a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html?lang=pt-BR#regular-purging-of-workflow-instances">Documentação da tarefa de manutenção do AEM 6.5</a>.</p>
   </td>
   </tr>
@@ -91,7 +91,7 @@ A tabela a seguir ilustra as tarefas de manutenção disponíveis no momento do 
     <td>Remoção do projeto</td>
     <td>Cliente</td>
     <td>
-    <p>Deve ser feito no Git. Substitua o nó de configuração da janela de manutenção pronto para uso em <code>/libs</code>, criando propriedades na pasta <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> ou <code>granite_daily</code>. Consulte a tabela Janela de manutenção abaixo para obter mais detalhes sobre a configuração.</p>
+    <p>Deve ser feito no Git. Substitua o nó de configuração da janela de manutenção pronto para uso em <code>/libs</code> criando propriedades na pasta <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> ou <code>granite_monthly</code>. Consulte a tabela Janela de manutenção abaixo para obter mais detalhes sobre a configuração.</p>
     <p>Ative a tarefa de manutenção adicionando outro nó sob o nó acima (nomeie-o como <code>granite_ProjectPurgeTask</code>) com as propriedades apropriadas. Consulte a lista de propriedades OSGI em "Configuração de limpeza de projetos do Adobe".</p>
   </td>
   </tr>
@@ -132,12 +132,12 @@ A tabela a seguir ilustra as tarefas de manutenção disponíveis no momento do 
     <td>Cliente</td>
     <td>Definição de Nó JCR</td>
     <td>
-    <p><strong>windowSchedule=daily</strong> (esse valor não deve ser alterado)</p>
+    <p><strong>windowSchedule=month</strong> (esse valor não deve ser alterado)</p>
     <p><strong>windowStartTime=HH:MM</strong> usando como relógio de 24 horas. Define quando as tarefas de manutenção associadas à Janela de manutenção mensal devem começar a ser executadas.</p>
     <p><strong>windowEndTime=HH:MM</strong> usando como relógio de 24 horas. Define quando as tarefas de manutenção associadas à Janela de manutenção mensal devem parar de ser executadas se ainda não tiverem sido concluídas.</p>
     <p><strong>windowScheduleWeekdays=Array de 2 valores de 1-7 (por exemplo, [5,5])</strong> O primeiro valor da matriz é o dia de início em que a tarefa é agendada e o segundo valor é o dia de término em que a tarefa seria interrompida. A hora exata de início e término é regida pelos parâmetros windowStartTime e windowEndTime, respectivamente.</p>
-    <p><strong>windowFirstLastStartDay= 0/1</strong> 0 para agendar na primeira semana do mês ou 1 para agendar na última semana do mês. A ausência de um valor agendaria trabalhos todos os dias, conforme determinado por windowScheduleWeekdays todos os meses.</p>
-    </td> 
+    <p><strong>windowFirstLastStartDay= 0/1</strong> 0 para agendar na primeira semana do mês ou 1 para agendar na última semana do mês. A ausência de um valor programaria efetivamente trabalhos no dia regido por windowScheduleWeekdays (a cada mês).</p>
+    </td>
     </tr>
     </tbody>
 </table>
