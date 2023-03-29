@@ -1,48 +1,45 @@
 ---
-title: Notas da versão de manutenção mais recente do  [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: Notas da versão de manutenção mais recente do  [!DNL Adobe Experience Manager]  as a Cloud Service.
-source-git-commit: edb8949b532b80a55106e706a49e2ada68722a67
+title: Notas de versão de manutenção atuais de [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Notas de versão de manutenção atuais de [!DNL Adobe Experience Manager] as a Cloud Service.
+source-git-commit: 7e66c9f26211bd92119c74f311f3e9b3195a8d98
 workflow-type: tm+mt
-source-wordcount: '303'
-ht-degree: 100%
+source-wordcount: '265'
+ht-degree: 36%
 
 ---
 
 
 # Notas da versão de manutenção {#maintenance-release-notes}
 
-A seção a seguir descreve as rotas de lançamento técnico para a versão de manutenção mais recente do Experience Manager as a Cloud Service.
+A seção a seguir descreve as notas de versão técnicas da versão de manutenção atual do Experience Manager as a Cloud Service.
 
-## Versão 11289 {#release-11289}
+## Versão 11382 {#release-11382}
 
-Veja abaixo um resumo das melhorias contínuas da versão de manutenção 11289, lançada publicamente em 7 de março de 2023. Esta versão de manutenção é uma atualização da versão de manutenção anterior: 10912.
+Resumidos abaixo estão as melhorias contínuas da versão de manutenção 11382, lançada publicamente em 28 de março de 2023. Esta versão de manutenção é uma atualização da versão de manutenção anterior: 11289.
 
 A ativação de recursos desta versão de manutenção fornecerá o conjunto completo de recursos. Consulte as [notas de versão atuais](/help/release-notes/release-notes-cloud/release-notes-current.md) para obter detalhes completos.
 
-### Problemas conhecidos {#known-issues}
-
-Não atualize se estiver usando o CORS. Um problema que afeta a funcionalidade de entrega de conteúdo GraphQL foi identificado nesta versão. Uma alteração na configuração padrão do Dispatcher do AEM, em relação ao modo como as consultas persistentes de GraphQL são armazenadas em cache, pode interromper a entrega de conteúdo GraphQL de tais consultas. Esse problema será corrigido na próxima versão de manutenção.
-
 ### Problemas corrigidos {#fixed-issues}
+
+- ASSETS-21023 - Correção da renderização do Smart Crop, em que os clientes podiam observar uma exceção de Null Pointer na instância do Publisher de todos os ambientes AEM quando tentavam acessar essas renderizações por meio da API.
+- SKYOPS-49280 - Ao instalar uma configuração ou atualização de pacote usando RDE em Publicar, o resultado pode não ser observável porque o cache do Publicar dispatcher não é invalidado
 
 #### Sites {#sites-issues}
 
-- SITES-11584 Corrigido um problema com live copies que não podiam ser criadas para páginas com anotações
-- SITES-11683 Desativação de live copies do MSM que possuíam uma herança parcialmente corrompida
+- SITES-7796 - Capacidade do autor de conteúdo publicar o Fragmento de conteúdo Principal e suas respectivas variações ao exportar para o target
 
 #### Assets {#assets-issues}
 
-- ASSETS-20879 Corrigida a regressão que impedia o funcionamento correto da interface dos relatórios de ativos e exibia resultados incorretos nos relatórios gerados.
-- ASSETS-21020 Corrigido um problema com o download de ativos corrompidos: o perfil de imagem deixava de existir após mover o ativo
-- ASSETS-21023 Corrigido um problema com representações de imagem no Dynamic Media que impediam o acesso por meio da API
+- ASSETS-20076 - Adicionar suporte para marcas d&#39;água de vídeo que corresponda ao suporte atual para marcas d&#39;água de imagem
+- ASSETS-21428 - Exclusões adicionadas para alterações de CSS
 
 #### Forms {#forms-issues}
 
-- Nenhum
+- CQ-4351502 - Atualização do mapeamento de usuário do serviço para permitir acesso de leitura no Sites
 
 #### Platform {#platform-issues}
 
-- GRANITE-44467 - Corrigido um problema que causava a falha da importação ao atualizar um nó existente; em determinadas instâncias, o Filevault não preservava os tipos de mixin e os nós secundários
+- SITES-11040 - Ativação condicional de armazenamento em cache de consultas persistentes do GraphQL no dispatcher
 
 ### Tecnologias integradas {#embedded-tech}
 
