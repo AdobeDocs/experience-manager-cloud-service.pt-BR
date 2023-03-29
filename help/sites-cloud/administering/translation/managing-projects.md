@@ -7,7 +7,7 @@ exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
 source-git-commit: 05723d602362fd8fe8ed2318d42a669f00f79f87
 workflow-type: tm+mt
 source-wordcount: '4086'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -444,16 +444,16 @@ Para comparar cópias de idioma ao idioma principal:
    ![Comparar cópias de idioma](../assets/language-copy-compare.png)
 
 1. As duas páginas (lançamento e origem) serão abertas lado a lado.
-   * Para obter informações completas sobre como usar esse recurso, consulte [Diferencial de página](/help/sites-cloud/authoring/features/page-diff.md).
+   * Para obter informações completas sobre como usar esse recurso, consulte [Diff da página](/help/sites-cloud/authoring/features/page-diff.md).
 
 ## Mover ou renomear uma página de origem {#move-source}
 
-Se uma página de origem já traduzida precisar ser [renomeado ou movido](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page), traduzir a página novamente após a movimentação criará uma nova cópia de idioma com base no novo nome/local da página. A cópia de idioma antiga baseada no nome/local anterior ainda estará lá.
+Se uma página de origem já traduzida precisar ser [renomeada ou movida](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page), traduzir a página novamente após a movimentação criará uma nova cópia de idioma com base no novo nome/local da página. A cópia de idioma antiga baseada no nome/local anterior ainda estará lá.
 
 A prática recomendada neste cenário é seguir este procedimento:
-1. Desfaça a publicação das cópias de idioma associadas à página de origem que você deseja mover.
-1. Excluí-los.
-1. Criar novas cópias de idioma a partir da página de origem recém-movida.
+1. Cancele a publicação das cópias de idioma associadas à página de origem que você deseja mover.
+1. Exclua essas cópias.
+1. Crie novas cópias de idioma a partir da página de origem recém-movida.
 1. Publique as cópias de idioma recém-criadas.
 
 ## Importar e exportar trabalhos de tradução {#import-export}

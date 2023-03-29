@@ -1,11 +1,11 @@
 ---
 title: Atalhos de teclado para Consoles
-description: Poupe tempo durante a criação usando estes atalhos de teclado
+description: Economize tempo durante a criação usando esses atalhos de teclado
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
 source-git-commit: bdefc8ccdb44bec7a72d9223614b3a6ba5c65225
 workflow-type: tm+mt
 source-wordcount: '376'
-ht-degree: 96%
+ht-degree: 69%
 
 ---
 
@@ -47,19 +47,19 @@ As teclas modificadoras usadas para os atalhos de teclado variam de acordo com o
 
 ## Atalhos de teclado e dos navegadores {#browsers-and-keyboard-shortcuts}
 
-O AEM evita os atalhos comuns usados pelos navegadores mais populares, no entanto, o comportamento padrão do navegador não é substituído por atalhos do AEM.
+AEM evita atalhos comuns já usados por navegadores populares, no entanto, o comportamento padrão do navegador não é substituído por AEM atalhos.
 
 Além disso, os atalhos de teclado são os mesmos para todas as localidades e layouts de teclado.
 
 >[!NOTE]
 >
->Os atalhos do AEM não substituem o comportamento padrão do navegador.
+>AEM atalhos não substituem o comportamento padrão do navegador.
 >
->Caso ocorram conflitos entre os atalhos do AEM e do navegador, os atalhos do AEM não funcionarão, mantendo a funcionalidade do navegador.
+>Caso ocorra conflitos entre AEM e atalhos do navegador, AEM atalhos não funcionarão, resultando na funcionalidade do navegador.
 
 >[!CAUTION]
 >
->Os atalhos de teclado do AEM podem interferir com leitores de tela, alguns recursos do navegador e outras ferramentas de acessibilidade.
+>AEM atalhos de teclado podem interferir com leitores de tela, alguns recursos do navegador e outras ferramentas de acessibilidade.
 >
 >A Adobe recomenda [desabilitar os atalhos de teclado do AEM](#deactivating-keyboard-shortcuts) ao usar um leitor de tela.
 
@@ -67,7 +67,7 @@ Além disso, os atalhos de teclado são os mesmos para todas as localidades e la
 
 O AEM fornece atalhos de teclado para alguns dos recursos de uso geral (editar, propriedades, copiar/colar, mostrar vários menus do painel lateral etc.).
 
-Para os usuários que não usam atalhos de teclado ou que têm certos requisitos de acessibilidade, todos os atalhos de teclado podem ser desabilitados.
+Para usuários que não usam atalhos de teclado ou que têm determinados requisitos de acessibilidade, todos os atalhos de teclado podem ser desativados.
 
 É possível desativar os atalhos de teclado em dois locais:
 

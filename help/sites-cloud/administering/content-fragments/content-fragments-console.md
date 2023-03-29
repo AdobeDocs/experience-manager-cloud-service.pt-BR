@@ -8,7 +8,7 @@ exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
 source-git-commit: 13e75e8b0f08463f5fd941263497f5cf0a31129c
 workflow-type: tm+mt
 source-wordcount: '913'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -65,7 +65,7 @@ Aqui você pode ver três áreas principais:
             * Mostrar informações sobre referências
             * Mostrar informações sobre versões de idioma do fragmento
          * É possível [selecionar um ou mais Fragmentos de conteúdo para mostrar as ações disponíveis](#actions-selected-content-fragment)
-      * Você pode selecionar um cabeçalho de coluna para classificar a tabela de acordo com essa coluna; selecione novamente para alternar entre ordem crescente e decrescente. Atualmente, a classificação é compatível com o **Título**, **Modificado** e **Modificado por** colunas.
+      * Você pode selecionar um cabeçalho de coluna e classificar a tabela de acordo com essa coluna; selecione novamente para alternar entre ordem crescente e decrescente. No momento, a classificação é permitida nas colunas **Título**, **Modificado** e **Modificado por**.
    * **[Criar](#creating-new-content-fragment)** um novo fragmento de conteúdo
    * [Filtrar](#filtering-fragments) os fragmentos de conteúdo de acordo com uma seleção de predicados e salvar o filtro para uso futuro
    * [Pesquisar](#searching-fragments) os fragmentos de conteúdo

@@ -5,7 +5,7 @@ exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
 source-git-commit: 8e06dff01e06ced62686a4784619278f29345082
 workflow-type: tm+mt
 source-wordcount: '534'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -46,9 +46,9 @@ O iniciador dessas ações pode verificar seu status em uma nova interface em `/
 
 ## Novo site de referência e tutorial {#new-reference-site-and-tutorial}
 
-[WKND](https://wknd.site/), um novo site de referência do AEM, foi atualizado e publicado para refletir as práticas recomendadas para criar um site com AEM e com o conjunto abrangente de recursos, componentes e modelos de implantação que estão disponíveis no AEM. O novo site de referência e o [tutorial de acompanhamento](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR) A aborda tópicos fundamentais como configuração de projeto, Componentes principais, modelos editáveis, bibliotecas de clientes e desenvolvimento de componentes com o Adobe Experience Manager Sites.
+O [WKND](https://wknd.site/), um novo site de referência do AEM, foi atualizado e publicado para refletir as práticas recomendadas de criação de sites do AEM e o conjunto abrangente de recursos, componentes e modelos de implantação que estão disponíveis no AEM. O novo site de referência e o [tutorial de acompanhamento](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR) abordam tópicos fundamentais como a configuração de projetos, componentes principais, modelos editáveis, bibliotecas de clientes e o desenvolvimento de componentes com o Adobe Experience Manager Sites.
 
-Anteriormente, o We.Retail vinha instalado por padrão com o AEM (exceto quando iniciado no modo de produção). No AEM as a Cloud Service, um site de referência não é instalado por padrão. Em vez disso, o [git repo](https://github.com/adobe/aem-guides-wknd/) e o [tutorial de acompanhamento](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR) com o código atualizado do site de referência WKND será fornecido.
+Anteriormente, o We.Retail vinha instalado por padrão com o AEM (exceto quando iniciado no modo de produção). No AEM as a Cloud Service, o site de referência não é instalado por padrão. Em vez disso, o [git repo](https://github.com/adobe/aem-guides-wknd/) e o [tutorial de acompanhamento](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR) com o código atualizado do site de referência WKND será fornecido.
 
 ## Recursos não disponíveis em Tempo de execução {#capabilities-not-available-at-runtime}
 

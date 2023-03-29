@@ -6,7 +6,7 @@ exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 source-git-commit: cda6d7e382b090fd726b27e565da08c8b1c80008
 workflow-type: tm+mt
 source-wordcount: '4203'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -246,10 +246,10 @@ O GraphQL do AEM oferece suporte a uma lista de tipos. Todos os tipos de dados d
 | Número | Flutuante, [Flutuante] | Usado para exibir números de ponto flutuantes e números regulares |
 | Booleano | Booleano | Usado para exibir caixas de seleção → declarações simples de verdadeiro/falso |
 | Data e hora | Calendário | Usado para exibir data e hora em um formato ISO 8601. Dependendo do tipo selecionado, há três opções disponíveis para uso no GraphQL do AEM: `onlyDate`, `onlyTime` e `dateTime` |
-| Enumeração | Sequência de caracteres | Usado para exibir uma opção de uma lista de opções definidas na criação do modelo |
-| Tags | [Sequência de caracteres] | Usado para exibir uma lista de sequências de caracteres que representam tags usadas no AEM |
-| Referência de conteúdo | Sequência de caracteres, [Sequência de caracteres] | Usado para exibir o caminho para outro ativo no AEM |
-| Referência de fragmento | *Um tipo de modelo* | Usado para fazer referência a outro Fragmento de conteúdo de um determinado Tipo de modelo, definido quando o modelo foi criado |
+| Enumeração | String | Usado para exibir uma opção de uma lista de opções definidas na criação do modelo |
+| Tags | [String] | Usado para exibir uma lista de strings que representam tags usadas no AEM |
+| Referência de conteúdo | String, [String] | Usado para exibir o caminho para outro ativo no AEM |
+| Referência de fragmento | *Um tipo de modelo* | Usado para fazer referência a outro fragmento de conteúdo de um determinado tipo de modelo, definido quando o modelo foi criado |
 
 ### Campos auxiliares {#helper-fields}
 
@@ -558,7 +558,7 @@ Para obter mais exemplos, consulte:
 
 >[!NOTE]
 >
->Para obter o melhor desempenho, considere [Atualização dos fragmentos de conteúdo para paginação e classificação na filtragem do GraphQL](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md).
+>Para obter o melhor desempenho, considere [Atualizar os fragmentos de conteúdo para paginação e classificação na filtragem do GraphQL](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md).
 
 Esse recurso permite classificar os resultados da consulta de acordo com um campo especificado.
 
@@ -625,7 +625,7 @@ query {
 
 >[!NOTE]
 >
->Para obter o melhor desempenho, considere [Atualização dos fragmentos de conteúdo para paginação e classificação na filtragem do GraphQL](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md).
+>Para obter o melhor desempenho, considere [Atualizar os fragmentos de conteúdo para paginação e classificação na filtragem do GraphQL](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md).
 
 Esse recurso permite executar a paginação em tipos de consulta que retornam uma lista. Dois métodos são fornecidos:
 

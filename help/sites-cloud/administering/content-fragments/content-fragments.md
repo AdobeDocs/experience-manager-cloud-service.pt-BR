@@ -7,7 +7,7 @@ exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
 source-git-commit: 9c3153efe4aacd1666663cd5eb718f75329202af
 workflow-type: tm+mt
 source-wordcount: '2066'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -81,8 +81,8 @@ Esses fragmentos de conteúdo podem ser reunidos para proporcionar experiências
 
 >[!NOTE]
 >
->**Fragmentos de conteúdo** e **[Fragmentos de experiência](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** são recursos diferentes no AEM:
->* **Fragmentos de conteúdo** são conteúdos editoriais, com definição e estrutura, mas sem designs visuais e/ou layouts adicionais. Eles podem ser usados para acessar dados estruturados, incluindo textos, números, datas, entre outros.
+>**Fragmentos de conteúdo** e **[fragmentos de experiência](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** são recursos diferentes no AEM:
+>* Os **fragmentos de conteúdo** são conteúdos editoriais com definição e estrutura, mas sem design visual e/ou layout adicional. Eles podem ser usados para acessar dados estruturados, incluindo textos, números, datas, entre outros.
 >* **Fragmentos de experiência** são conteúdo totalmente apresentado; um fragmento de uma página da Web.
 >
 >Fragmentos de experiência podem incluir conteúdo na forma de Fragmentos de conteúdo, mas não o contrário.
@@ -265,7 +265,7 @@ Conteúdo intermediário:
 
 >[!CAUTION]
 >
->O conteúdo intermediário é o conteúdo da página. Não é armazenado no fragmento de conteúdo.
+>O conteúdo intermediário é o conteúdo da página. Ele não é armazenado no fragmento de conteúdo.
 
 ### Exigido por fragmentos {#required-by-fragments}
 

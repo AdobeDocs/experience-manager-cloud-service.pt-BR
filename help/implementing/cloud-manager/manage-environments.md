@@ -5,7 +5,7 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 source-git-commit: 4631ab86ae1b4405e31d8bb8eae8edbbe2272c2c
 workflow-type: tm+mt
 source-wordcount: '1826'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -17,11 +17,11 @@ Saiba mais sobre os tipos de ambientes que você pode criar e como criá-los par
 
 Um usuário com as permissões necessárias pode criar os tipos de ambientes descritos a seguir (dentro dos limites do que está disponível para o locatário específico).
 
-* **Produção + Preparo** - Os ambientes de produção e de preparo estão disponíveis como um par e são usados para fins de produção e teste, respectivamente.
+* **Produção + preparo**: os ambientes de produção e preparo estão disponíveis como um par e são usados para fins de produção e teste, respectivamente.
 
-* **Desenvolvimento** - Um ambiente de desenvolvimento pode ser criado para fins de desenvolvimento e testes, e pode ser associado apenas a pipelines de não produção.
+* **Desenvolvimento**: um ambiente de desenvolvimento pode ser criado para fins de desenvolvimento e testes, e pode ser associado apenas a pipelines de não produção.
 
-* **Desenvolvimento rápido** - Um ambiente de desenvolvimento rápido (RDE) permite que um desenvolvedor implante e revise alterações rapidamente, minimizando o tempo necessário para testar recursos que comprovadamente funcionam em um ambiente de desenvolvimento local. Consulte [a documentação do ambiente de desenvolvimento rápido](/help/implementing/developing/introduction/rapid-development-environments.md) para obter detalhes sobre como usar um RDE.
+* **Desenvolvimento rápido**: um ambiente de desenvolvimento rápido (RDE) permite que um desenvolvedor implante e revise alterações rapidamente, minimizando o tempo necessário para testar recursos que comprovadamente funcionam em um ambiente de desenvolvimento local. Consulte [a documentação de ambientes de desenvolvimento rápido](/help/implementing/developing/introduction/rapid-development-environments.md) para obter detalhes sobre como usar um RDE.
 
 Os recursos de ambientes individuais dependem das soluções ativadas no [programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) do ambiente.
 
@@ -54,11 +54,11 @@ Os recursos de ambientes individuais dependem das soluções ativadas no [progra
 
    * Selecione um [**tipo de ambiente**.](#environment-types)
       * O número de ambientes disponíveis/usados é exibido entre parênteses atrás do nome do tipo de ambiente.
-   * Fornecer um ambiente **Nome**.
-   * Fornecer um ambiente **Descrição**.
-   * Selecione um **Região principal** no menu suspenso.
+   * Forneça um **nome** de ambiente.
+   * Forneça uma **descrição** do ambiente.
+   * Selecione uma **região principal** no menu suspenso.
       * Observe que isso não pode ser alterado após a criação.
-   * Se você estiver adicionando um **Produção + Preparo** ambiente, você precisa fornecer um nome e uma descrição do ambiente para os ambientes de produção e de preparo.
+   * Se você estiver adicionando um ambiente de **Produção + Preparo**, é necessário fornecer um nome e uma descrição tanto para o ambiente de produção quanto para o de preparo.
       ![Caixa de diálogo Adicionar ambiente](assets/add-environment2.png)
 
 1. Clique em **Salvar** para adicionar o ambiente especificado.
@@ -103,7 +103,7 @@ Após a criação, será aplicada uma lista de permissões de IP padrão ao serv
 
 ![Serviço de visualização e sua lista de permissões](assets/preview-ip-allow.png)
 
-Um usuário com as permissões necessárias deve concluir as etapas a seguir antes de compartilhar a URL do serviço de visualização para garantir o acesso a ela.
+Um usuário com as permissões necessárias deve concluir as etapas a seguir antes de compartilhar o URL do serviço de visualização para garantir o acesso a ele.
 
 1. Crie uma lista de permissões de IP apropriada, aplique-a ao serviço de visualização e remova imediatamente a lista de permissões `Preview Default [<envId>]`.
 
@@ -111,13 +111,13 @@ Um usuário com as permissões necessárias deve concluir as etapas a seguir ant
 
 1. Use o fluxo de trabalho da **Lista de permissões de IP** para remover o IP padrão e adicionar IPs conforme apropriado. Consulte [Gerenciamento de listas de permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md) para saber mais.
 
-Quando o acesso ao serviço de visualização estiver desbloqueado, o ícone de bloqueio na frente do nome do serviço de visualização não será mais exibido.
+Quando o acesso ao serviço de visualização estiver desbloqueado, o ícone de cadeado não será mais exibido na frente do nome do serviço de visualização.
 
 Uma vez ativado, você poderá publicar conteúdo no serviço de visualização usando a interface do usuário Gerenciar publicação no AEM. Consulte o documento [Visualização de conteúdo](/help/sites-cloud/authoring/fundamentals/previewing-content.md) para obter mais detalhes.
 
 >[!NOTE]
 >
->Seu ambiente deve estar na versão AEM `2021.05.5368.20210529T101701Z` ou mais recente para usar o serviço de visualização. Para fazer isso, verifique se um pipeline de atualização foi executado com sucesso no seu ambiente.
+>Seu ambiente deve estar na versão `2021.05.5368.20210529T101701Z` do AEM, ou uma versão mais recente, para usar o serviço de visualização. Para fazer isso, verifique se um pipeline de atualização foi executado com sucesso no seu ambiente.
 
 ## Atualização de ambientes {#updating-dev-environment}
 

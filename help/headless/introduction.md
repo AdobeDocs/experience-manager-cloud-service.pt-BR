@@ -1,12 +1,12 @@
 ---
-title: Introdução ao Headless para AEM
-description: Saiba mais sobre o Headless no Adobe Experience Manager (AEM) com uma combinação de documentações detalhadas e jornadas headless. Saiba como recursos como Modelos de fragmentos de conteúdo, Fragmentos de conteúdo e uma API do GraphQL são usados para potencializar experiências headless.
-landing-page-description: Entenda como usar e administrar o Headless no Adobe Experience Manager as a Cloud Service.
+title: Introdução ao headless no AEM
+description: Saiba mais sobre Headless no Adobe Experience Manager (AEM) com uma combinação de documentações detalhadas e jornadas headless. Saiba como recursos como Modelos de fragmentos de conteúdo, Fragmentos de conteúdo e uma API do GraphQL são usados para potencializar experiências headless.
+landing-page-description: Aprenda como usar e administrar o headless no Adobe Experience Manager as a Cloud Service.
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
 source-git-commit: 6d8d75cd0b01154f420dd3d5f14589bb8a2b8297
 workflow-type: tm+mt
 source-wordcount: '699'
-ht-degree: 75%
+ht-degree: 76%
 
 ---
 
@@ -46,7 +46,7 @@ O AEM as a Cloud Service é uma ferramenta flexível para o modelo de implementa
    * A API REST do AEM Assets é compatível com operações CRUD de fragmentos de conteúdo.
    * A entrega direta de conteúdo também é possível com a [exportação em JSON do componente principal do fragmento de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=pt-BR).
 
-## Suas primeiras etapas {#first-steps}
+## Primeiros passos {#first-steps}
 
 Há vários recursos disponíveis para oferecer uma introdução às funcionalidades headless do AEM. Cada guia é personalizado para diferentes casos de uso e públicos.
 

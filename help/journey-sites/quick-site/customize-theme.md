@@ -5,7 +5,7 @@ exl-id: b561bee0-3a64-4dd3-acb8-996f0ca5bfab
 source-git-commit: 64509c13abacd6a6b54b58245acbf510feafdffa
 workflow-type: tm+mt
 source-wordcount: '963'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -70,7 +70,7 @@ Quando estiver confortável com a estrutura do projeto de tema, inicie o proxy l
 
    >[!TIP]
    >
-   >Se você não tiver essas credenciais, fale com o administrador referenciando o [Seção Configurar Usuário Proxy do artigo Criar Site a partir de Modelo](/help/journey-sites/quick-site/create-site.md#proxy-user) nesta jornada.
+   >Se você não tiver essas credenciais, fale com o administrador referenciando a [seção Configurar usuário proxy do artigo Criar site a partir de um modelo](/help/journey-sites/quick-site/create-site.md#proxy-user) desta jornada.
 
 1. Depois de fazer logon, altere o URL no navegador de modo que aponte o caminho para o conteúdo de amostra que o administrador do AEM forneceu.
 

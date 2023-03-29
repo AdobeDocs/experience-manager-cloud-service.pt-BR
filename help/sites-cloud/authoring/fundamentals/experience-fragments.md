@@ -5,7 +5,7 @@ exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 source-git-commit: 9c3153efe4aacd1666663cd5eb718f75329202af
 workflow-type: tm+mt
 source-wordcount: '2064'
-ht-degree: 98%
+ht-degree: 86%
 
 ---
 
@@ -20,11 +20,11 @@ No Adobe Experience Manager as a Cloud Service, um fragmento de experiência:
 
 Um fragmento de experiência:
 
-* É parte de uma experiência (página).
+* Faz parte de uma experiência (página).
 * Pode ser usado em várias páginas.
 * É baseado em um modelo (somente editável) para definir a estrutura e os componentes.
 * Esse modelo é usado para criar a *página raiz* do Fragmento de experiência.
-* É composto por um ou mais componentes, com layout, em um sistema de parágrafos.
+* É composto de um ou mais componentes, com layout, em um sistema de parágrafos.
 * Pode conter outros fragmentos de experiência.
 * Pode ser combinado com outros componentes (incluindo outros Fragmentos de experiência) para formar uma página completa (experiência).
 * Uma ou mais variações podem ser criadas, com base na página raiz.
@@ -41,8 +41,8 @@ Os autores desejam usar o AEM somente para criação, não para entrega ao cli
 
 >[!NOTE]
 >
->**[Fragmentos de conteúdo](/help/sites-cloud/authoring/fundamentals/content-fragments.md)** e **Fragmentos de experiência** são recursos diferentes no AEM:
->* **Fragmentos de conteúdo** são conteúdos editoriais, com definição e estrutura, mas sem designs visuais e/ou layouts adicionais. Eles podem ser usados para acessar dados estruturados, incluindo textos, números, datas, entre outros.
+>**[Fragmentos de conteúdo](/help/sites-cloud/authoring/fundamentals/content-fragments.md)** e **fragmentos de experiência** são recursos diferentes no AEM:
+>* Os **fragmentos de conteúdo** são conteúdos editoriais com definição e estrutura, mas sem design visual e/ou layout adicional. Eles podem ser usados para acessar dados estruturados, incluindo textos, números, datas, entre outros.
 >* **Fragmentos de experiência** são conteúdo totalmente apresentado; um fragmento de uma página da Web.
 >
 >Fragmentos de experiência podem incluir conteúdo na forma de Fragmentos de conteúdo, mas não o contrário.
@@ -55,19 +55,19 @@ Os autores desejam usar o AEM somente para criação, não para entrega ao cli
 >
 >* `experience-fragments-editors`
 >
->Entre em contato com o administrador do sistema se você tiver problemas.
+>Entre em contato com o administrador do sistema em caso de problemas.
 
 ## Quando você deve usar fragmentos de experiência?   {#when-should-you-use-experience-fragments}
 
-Os fragmentos de experiência devem ser usados:
+Fragmentos de experiência devem ser usados:
 
-* Sempre que você quiser reutilizar experiências.
+* Sempre que quiser reutilizar experiências.
    * Experiências que serão reutilizadas com o mesmo conteúdo ou com conteúdo semelhante.
-* Ao usar o AEM como uma plataforma de distribuição de conteúdo para terceiros.
-   * Qualquer solução que desejar usar o AEM como a plataforma de distribuição de conteúdo.
+* Ao usar o AEM como uma plataforma de entrega de conteúdo para terceiros.
+   * Qualquer solução que deseje usar o AEM como a plataforma de entrega de conteúdo.
    * Ao incorporar conteúdo em pontos de contato de terceiros.
-* Se você tiver uma Experiência com variações ou execuções diferentes.
-   * Canal ou variações específicas ao contexto.
+* Se você tiver uma Experiência com variações ou representações diferentes.
+   * Canal ou variações específicas do contexto.
    * Experiências que fazem sentido agrupar; por exemplo, uma campanha com diferentes experiências entre canais.
 * Quando você usar o Comércio omnichannel.
    * Tornar pontos de toque transacionais.
@@ -184,7 +184,7 @@ Para criar um fragmento de experiência:
 
 1. Insira as **Propriedades** do **Fragmento de experiência**.
 
-   É obrigatório ter um **título**. Se o **Nome** for deixado em branco, ele será derivado do **Título**.
+   É obrigatório ter um **título**. Se a variável **Nome** for deixado em branco, ele será derivado do **Título**.
 
    ![Propriedades do fragmento de experiência](/help/sites-cloud/authoring/assets/xf-04.png)
 
@@ -207,9 +207,9 @@ O Editor de fragmento de experiência oferece recursos semelhantes ao editor de 
 
 >[!NOTE]
 >
->Consulte [Edição de conteúdo de página](/help/sites-cloud/authoring/fundamentals/editing-content.md) para obter mais informações sobre como usar o Editor de páginas.
+>Consulte [Editar conteúdo da página](/help/sites-cloud/authoring/fundamentals/editing-content.md) para obter mais informações sobre como usar o editor de páginas.
 
-O exemplo de procedimento a seguir ilustra como criar um teaser para um produto:
+O seguinte procedimento de exemplo ilustra como criar um teaser para um produto:
 
 1. Arraste e solte o componente desejado do [Navegador de componentes](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser).
 
@@ -225,14 +225,14 @@ Por exemplo: `http://<host>:<port>/editor.html/content/experience-fragments/wknd
 
 ## Criação de uma variação de Fragmento de experiência {#creating-an-experience-fragment-variation}
 
-Você pode criar variações de seu fragmento de experiência, de acordo com suas necessidades:
+Você pode criar variações do Fragmento de experiência, dependendo das suas necessidades:
 
 1. Abra o fragmento para [edição](#editing-your-experience-fragment).
 1. Abra a guia **Variações**.
 
    ![Criação de uma variação de Fragmento de experiência](/help/sites-cloud/authoring/assets/xf-06.png)
 
-1. **Criar** permite criar:
+1. **Criar** O permite criar:
 
    * **Variação**
    * **Variação como Live Copy**.
@@ -254,7 +254,7 @@ Você pode criar variações de seu fragmento de experiência, de acordo com sua
 
 ## Usar seu fragmento de experiência {#using-your-experience-fragment}
 
-Agora você pode usar o Fragmento de experiência ao criar suas páginas:
+Agora é possível usar o Fragmento de experiência ao criar suas páginas:
 
 1. Abra qualquer página para edição.
 
@@ -299,7 +299,7 @@ Para criar um novo Bloco de construção:
 
 #### Gerenciar um bloco de construção {#managing-a-building-block}
 
-O bloco de construção está visível na guia **Blocos de construção**. As seguintes ações estão disponíveis para cada bloco:
+O bloco de construção está visível na guia **Blocos de construção**. Para cada bloco, as seguintes ações estão disponíveis:
 
 * **Acesse o mestre**: abra a variação da página raiz em uma nova guia
 * **Renomeie**
@@ -403,7 +403,7 @@ Os detalhes são mostrados em todas as exibições do console **Fragmentos de ex
       * **Número total de variantes** - somente informações
       * **Número de variantes da Web** - somente informações
       * **Número de variantes que não são da Web** - somente informações
-      * **Número de páginas que usam este fragmento** - somente informações
+      * **Número de páginas que usam este fragmento** - apenas informação
    * **Cloud Services**
       * **Configuração na nuvem**
       * **Configurações do Cloud Service**
@@ -431,9 +431,9 @@ Como alternativa, também é possível [publicar para visualização](/help/site
 
 ## Exportar fragmentos de experiência {#exporting-experience-fragments}
 
-Por padrão, os fragmentos de experiência são entregues no formato HTML. Isso pode ser usado pelo AEM e por canais de terceiros.
+Por padrão, os Fragmentos de experiência são entregues no formato HTML. Isso pode ser usado por canais de AEM e de terceiros.
 
-O JSON também pode ser usado para exportar para o Adobe Target. Consulte:
+Para exportar para o Adobe Target, JSON também pode ser usado. Consulte:
 
 * [Integração com o Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
 * [Exportar fragmentos de experiência para o Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)

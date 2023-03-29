@@ -7,7 +7,7 @@ exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
 source-git-commit: fd0716a95d66908e215ed44bc773ed3c26e0382b
 workflow-type: tm+mt
 source-wordcount: '769'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Todos os usuários atribuídos a um perfil de produto do AEM também terão aces
 
 >[!CAUTION]
 >
->Não edite nem exclua os Perfis de produto com os nomes Administradores do AEM ou Usuários do AEM. A edição desses nomes de perfil pode interromper o logon na instância da nuvem AEM.
+>Não edite nem exclua os perfis de produto com os nomes Administradores do AEM ou Usuários do AEM. A edição dos nomes desses perfis pode interromper o logon na instância de nuvem do AEM.
 
 ## Pré-requisitos {#prerequisites}
 

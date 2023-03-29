@@ -20,7 +20,7 @@ Os usuários com as permissões necessárias podem editar tanto [programas de pr
 
 ## Permissões {#permissions}
 
-Você deve ser um membro da função **Proprietário da empresa** para editar ou excluir programas de sandbox.
+Você deve ser um membro com a função **Proprietário da empresa** para editar ou excluir programas de sandbox.
 
 ## Edição de um programa {#editing}
 
