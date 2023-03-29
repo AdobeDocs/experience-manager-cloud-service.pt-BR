@@ -119,8 +119,7 @@ Para executar o procedimento, siga as etapas abaixo:
    >* CF_MIGRATION_LIMIT = 1000
    >* CF_MIGRATION_INTERNAL = 60 (Segundos)
    >* Tempo aproximado necessário para concluir a migração = 60 + (20.000/1.000 * 60) = 1.260 Segundos = 21 Minutos
-      >  Os “60” segundos adicionais no início se devem ao atraso inicial ao iniciar o processo.
-
+   >  Os “60” segundos adicionais no início se devem ao atraso inicial ao iniciar o processo.
    >
    >Você também deve estar ciente de que este é apenas o tempo *mínimo* necessário para concluir o processo e não inclui o tempo de E/S. O tempo efetivamente gasto pode ser significativamente maior do que esta estimativa.
 
@@ -139,6 +138,7 @@ Para executar o procedimento, siga as etapas abaixo:
          
          23.01.2023 13:20:40.960 *INFO* [sling-threadpool-09cbdb47-4d99-4c4c-b6d5-781b635ee21b-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished content fragments upgrade in 6m, slingJobId: 2023/1/23/13/13/50e1a575-4cd7-497b-adf0-62cb5768eedb_0, status: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Upgrade to version '1' succeeded.', errors=[], successCount=3781, failedCount=0, skippedCount=0}
          ```
+
    * Logs de publicação ouro; por exemplo:
 
       ```shell
