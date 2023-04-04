@@ -8,9 +8,9 @@ user-guide-description: Saiba como o Experience Manager as a Cloud Service funci
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 196a2f221c637d58ea6642177f530f158888efe0
+source-git-commit: a1830db797a88e43e17d73a2e8cbc979084f6328
 workflow-type: tm+mt
-source-wordcount: '4015'
+source-wordcount: '4013'
 ht-degree: 98%
 
 ---
@@ -517,7 +517,6 @@ ht-degree: 98%
       + [Migrar do  [!DNL AEM 6.5 Forms]  ou anterior para o  [!DNL AEM Forms]  as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [Grupos e permissões](/help/forms/forms-groups-privileges-tasks.md)
       + [Importar, exportar e organizar formulários adaptáveis, formulários PDF e outros ativos](/help/forms/import-export-forms-templates.md)
-      + [Temas de referência, modelos e modelos de dados](/help/forms/reference-themes-templates-data-models.md)
    + Integrar {#integrate}
       + Serviços {#services}
          + [Integrar o AEM Forms as a Cloud Service com o Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
@@ -549,9 +548,9 @@ ht-degree: 98%
          + Criar um Formulário adaptável {#create-an-adaptive-form-on-forms-cs}
             + [Introdução à criação de um Adaptive Forms](/help/forms/introduction-forms-authoring.md)
             + [Criar um Formulário adaptável](/help/forms/creating-adaptive-form.md)
+            + [Temas de referência, modelos e modelos de dados](/help/forms/reference-themes-templates-data-models.md)
             + [Criar um modelo](/help/forms/template-editor.md)
             + [Criar um tema](/help/forms/themes.md)
-            + [Ativos de referência](/help/forms/reference-assets.md)
             + [Criar um esquema JSON para um Formulário adaptável](/help/forms/adaptive-form-json-schema-form-model.md)
             + [Melhorar o desempenho de formulários grandes com carregamento lento](/help/forms/lazy-loading-adaptive-forms.md)
          + Adicionar componentes a um formulário adaptável {#add-components-to-an-adaptive-form}
