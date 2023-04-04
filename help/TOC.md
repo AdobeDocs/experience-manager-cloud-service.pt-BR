@@ -8,9 +8,9 @@ user-guide-description: Saiba como o Experience Manager as a Cloud Service funci
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 48ec92d559f9d1ead096316e77e04f2e1e02526d
+source-git-commit: 196a2f221c637d58ea6642177f530f158888efe0
 workflow-type: tm+mt
-source-wordcount: '4009'
+source-wordcount: '4015'
 ht-degree: 98%
 
 ---
@@ -74,7 +74,7 @@ ht-degree: 98%
    + Notas de versão do Cloud Manager {#cloud-manager}
       + [Notas de versão atuais](/help/implementing/cloud-manager/release-notes/current.md)
       + 2023 {#2023}
-         + [Notas da versão 2023.2.0](/help/implementing/cloud-manager/release-notes/2023/2023-2-0.md)
+         + [Notas de versão 2023.2.0](/help/implementing/cloud-manager/release-notes/2023/2023-2-0.md)
          + [Notas de versão 2023.1.0](/help/implementing/cloud-manager/release-notes/2023/2023-1-0.md)
       + 2022 {#2022}
          + [Notas da versão 2022.12.0](/help/implementing/cloud-manager/release-notes/2022/2022-12-0.md)
@@ -517,6 +517,7 @@ ht-degree: 98%
       + [Migrar do  [!DNL AEM 6.5 Forms]  ou anterior para o  [!DNL AEM Forms]  as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [Grupos e permissões](/help/forms/forms-groups-privileges-tasks.md)
       + [Importar, exportar e organizar formulários adaptáveis, formulários PDF e outros ativos](/help/forms/import-export-forms-templates.md)
+      + [Temas de referência, modelos e modelos de dados](/help/forms/reference-themes-templates-data-models.md)
    + Integrar {#integrate}
       + Serviços {#services}
          + [Integrar o AEM Forms as a Cloud Service com o Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
