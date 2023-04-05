@@ -4,10 +4,10 @@ description: Saiba como usar fragmentos de conteúdo e a API GraphQL como um sis
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 30fca14949e379fb427252f43d9f31d062e7e445
+source-git-commit: 09396211b428884f4d522fbcc2dd13086af51dfd
 workflow-type: tm+mt
-source-wordcount: '725'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -34,6 +34,10 @@ ht-degree: 100%
 O Explorer GraphQL é iniciado em uma nova guia. Aqui, é possível criar e validar consultas com o seu conteúdo headless antes de usá-las para fornecer conteúdo ao seu aplicativo ou site.
 
 1. Sua avaliação do AEM Headless vem com um ponto de acesso pré-carregado com fragmentos de conteúdo, do qual você pode extrair conteúdo para fins de teste. Certifique-se de que o ponto de acesso **Ativos de demonstração do AEM** esteja selecionado no menu suspenso **Ponto de acesso** no canto superior direito do editor.
+
+1. Problema conhecido: se a variável **Ativos de demonstração AEM** O endpoint não está presente no menu suspenso, navegue até o Gerenciador de pacotes (`/crx/packmgr` no seu ambiente de AEM) e reinstale o `aem-demo-assets.ui.content-{VERSION}.zip` pacote:
+
+   ![Reinstalar pacote](assets/do-not-localize/reinstall-aem-demo-assets-package.png)
 
 1. Copie o seguinte trecho de código para uma consulta de lista do ponto de acesso pré-carregado **Ativos de demonstração do AEM**. Uma consulta de lista retorna uma lista com todos os conteúdos que utilizam um modelo de fragmento de conteúdo específico. As páginas de inventário e categoria normalmente usam esse formato de consulta.
 
