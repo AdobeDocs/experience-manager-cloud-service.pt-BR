@@ -2,9 +2,9 @@
 title: Assimilar conteúdo no Target
 description: Assimilar conteúdo no Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 7e5a966693b139efa42111d8b6d675674516cfc6
+source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
 workflow-type: tm+mt
-source-wordcount: '1693'
+source-wordcount: '1722'
 ht-degree: 7%
 
 ---
@@ -39,7 +39,7 @@ Siga as etapas abaixo para assimilar seu conjunto de migração da ferramenta Tr
 
    * Selecione o conjunto de migração que contém os dados extraídos como a Fonte.
       * Os Conjuntos de Migração expirarão após um longo período de inatividade, portanto, espera-se que a assimilação ocorra relativamente cedo após a extração ter sido executada. Revisão [Expiração do conjunto de migração](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) para obter detalhes.
-   * Selecione o ambiente de destino. É aqui que o conteúdo do conjunto de migração será assimilado. Selecione a camada. (Autor/Publicação).
+   * Selecione o ambiente de destino. É aqui que o conteúdo do conjunto de migração será assimilado. Selecione a camada. (Autor/Publicação). Ambientes de desenvolvimento rápido não são compatíveis.
 
    >[!NOTE]
    >
@@ -54,6 +54,10 @@ Siga as etapas abaixo para assimilar seu conjunto de migração da ferramenta Tr
    >Você pode executar a etapa opcional de pré-cópia para acelerar significativamente a fase de assimilação. Consulte [Integração com o AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) para obter mais detalhes.
    > 
    >Se a assimilação com pré-cópia for usada (para S3 ou Azure Data Store), é recomendável executar a assimilação do autor primeiro sozinho. Isso irá acelerar a assimilação de Publicação quando for executada mais tarde.
+
+   >[!NOTE]
+   >
+   >As sugestões não são compatíveis com um destino de RDE (Rapid Development Environment). Eles não serão exibidos como uma possível escolha de destino, mesmo se o usuário tiver acesso a ele.
 
    >[!IMPORTANT]
    >
@@ -103,7 +107,7 @@ Siga as etapas abaixo para assimilar seu conjunto de migração da ferramenta Tr
 >id="aemcloud_ctt_ingestion_topup"
 >title="Ingestão complementar"
 >abstract="Use o recurso de cima para mover o conteúdo modificado desde a atividade de transferência de conteúdo anterior. Após a conclusão da assimilação, verifique os logs em busca de erros/avisos. Todos os erros devem ser resolvidos imediatamente, lidando com os problemas relatados ou entrando em contato com o Atendimento ao Cliente do Adobe."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en" text="Visualização de logs"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html" text="Visualização de logs"
 
 A ferramenta Transferência de conteúdo tem um recurso que oferece suporte a *atualizações complementares* de conteúdo diferencial, com o qual é possível transferir somente as alterações feitas desde a atividade de transferência de conteúdo anterior.
 
@@ -175,4 +179,4 @@ Este conflito deve ser resolvido manualmente. Alguém familiarizado com o conte�
 
 ## O que vem a seguir {#whats-next}
 
-Depois de concluir a Inserção de conteúdo no Target, você pode visualizar os logs de cada etapa (extração e assimilação) e procurar erros. Consulte [Visualização de logs para um conjunto de migração](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en) para saber mais.
+Depois de concluir a Inserção de conteúdo no Target, você pode visualizar os logs de cada etapa (extração e assimilação) e procurar erros. Consulte [Visualização de logs para um conjunto de migração](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html) para saber mais.

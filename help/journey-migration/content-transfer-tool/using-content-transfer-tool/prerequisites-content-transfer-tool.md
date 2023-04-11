@@ -2,9 +2,9 @@
 title: Pré-requisitos para a ferramenta Transferência de conteúdo
 description: Pré-requisitos para a ferramenta Transferência de conteúdo
 exl-id: 41a9cff1-4d89-480c-b9fc-5e8efc2a0705
-source-git-commit: fac037b59753ba1de960df47311c1febc2059d27
+source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '547'
 ht-degree: 6%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 6%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_prereqs"
 >title="Considerações importantes sobre o uso da ferramenta Transferência de conteúdo"
->abstract="Analise considerações importantes para usar a ferramenta Transferência de conteúdo , incluindo versões de Java e AEM, tipos compatíveis de armazenamento de dados, considerações sobre grupos de usuários e muito mais."
+>abstract="Analise considerações importantes para usar a ferramenta Transferência de conteúdo, incluindo versões Java e AEM, tipos compatíveis de armazenamento de dados, considerações sobre grupos de usuários e muito mais."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html#pre-reqs" text="Considerações importantes sobre o uso da ferramenta Transferência de conteúdo"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html#best-practices" text="Práticas recomendadas e diretrizes"
 
@@ -23,7 +23,7 @@ A tabela a seguir resume os pré-requisitos para usar a ferramenta Transferênci
 Revise todas as considerações listadas abaixo:
 
 | Considerações | O que é compatível no momento |
-|--- |--- |
+|---------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Versão do AEM | A ferramenta Transferência de conteúdo pode ser executada somente no AEM 6.3 ou versões superiores. |
 | Tamanho do armazenamento de segmentos | Um repositório existente que tem menos de 55 milhões de nós JCR e até 250 GB (tamanho compactado online) em *Autor* e 50 GB em *Publicar* atualmente são compatíveis. Crie um tíquete de suporte com o Atendimento ao cliente do Adobe para discutir opções de tamanho de armazenamento de segmento acima desses limites. |
 | Tamanho total do repositório de conteúdo <br>*(armazenamento de segmentos + armazenamento de dados)* | A ferramenta Transferência de conteúdo foi criada para transferir conteúdo de até 20 TB para o tipo de armazenamento de dados File Data Store. Qualquer coisa superior a 20 TB não é compatível no momento. Crie um tíquete de suporte com o Atendimento ao cliente do Adobe para discutir opções de conteúdo maior que 20 TB. <br>Para acelerar significativamente o processo de transferência de conteúdo para repositórios grandes, uma [pré-cópia](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=pt-BR#setting-up-pre-copy-step) pode ser usada. Isso se aplica aos tipos de armazenamento de dados do File Data Store, Amazon S3 e Azure Data Store. Para o Amazon S3 e o Azure Data Store, são suportados tamanhos de repositório maiores que 20 TB. |
@@ -34,4 +34,4 @@ Revise todas as considerações listadas abaixo:
 
 ## O que vem a seguir {#whats-next}
 
-Depois de revisar os pré-requisitos e determinar se você pode usar a ferramenta Transferência de conteúdo no projeto de migração, consulte [Diretrizes e práticas recomendadas para usar a ferramenta Transferência de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en).
+Depois de revisar os pré-requisitos e determinar se você pode usar a ferramenta Transferência de conteúdo no projeto de migração, consulte [Diretrizes e práticas recomendadas para usar a ferramenta Transferência de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html).
