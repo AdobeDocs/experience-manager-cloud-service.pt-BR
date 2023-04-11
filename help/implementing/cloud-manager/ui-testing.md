@@ -2,10 +2,10 @@
 title: Teste de interface do usuário
 description: Os testes de interface do usuário personalizados são um recurso opcional que permite criar e executar automaticamente testes na interface do usuário para seus aplicativos personalizados.
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: a2507c65df5d42ac53fcbb0a81cc2fb897438f44
+source-git-commit: 53f1a6bb83e4ad52d00f9899db0a87c3cb3e2653
 workflow-type: tm+mt
-source-wordcount: '2147'
-ht-degree: 98%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -23,15 +23,15 @@ Os testes de interface do usuário personalizados são um recurso opcional que p
 
 O AEM fornece um conjunto integrado de [quality gates (portais de qualidade) do Cloud Manager](/help/implementing/cloud-manager/custom-code-quality-rules.md) para garantir atualizações tranquilas para aplicativos personalizados. Em especial, os portais de teste de TI já promovem a criação e a automação de testes personalizados usando as APIs do AEM.
 
-Os testes de interface são testes baseados em Selenium, compactados em uma imagem do Docker, para permitir uma variedade de opções de linguagens e estruturas (como Java e Maven, Node e WebDriver.io, ou qualquer outra estrutura e tecnologia criada no Selenium). Além disso, um projeto de testes de interface pode ser facilmente gerado usando o [Arquétipo de projeto do AEM.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR)
+Os testes de interface são testes baseados em Selenium, compactados em uma imagem do Docker, para permitir uma variedade de opções de linguagens e estruturas (como Java e Maven, Node e WebDriver.io, ou qualquer outra estrutura e tecnologia criada no Selenium). Além disso, um projeto de testes de interface pode ser facilmente gerado usando o [Arquétipo de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR).
 
-Os testes da interface do usuário são executados como parte de uma porta de qualidade específica para cada pipeline do Cloud Manager com um [**Teste de interface personalizada** step](/help/implementing/cloud-manager/deploy-code.md) em [gasodutos de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) ou opcionalmente [Gasodutos não produtivos.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) Quaisquer testes de interface do usuário, incluindo regressão e novas funcionalidades, permitem que erros sejam detectados e relatados.
+Os testes da interface do usuário são executados como parte de uma porta de qualidade específica para cada pipeline do Cloud Manager com um [**Teste de interface personalizada** step](/help/implementing/cloud-manager/deploy-code.md) em [gasodutos de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) ou opcionalmente [Gasodutos de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). Quaisquer testes de interface do usuário, incluindo regressão e novas funcionalidades, permitem que erros sejam detectados e relatados.
 
-Diferentemente dos testes funcionais personalizados, que são testes HTTP escritos em Java, os testes de interface do usuário podem ser uma imagem do Docker com testes escritos em qualquer idioma, desde que sigam as convenções definidas na seção [Compilação de testes de interface do usuário.](#building-ui-tests)
+Diferentemente dos testes funcionais personalizados, que são testes HTTP escritos em Java, os testes de interface do usuário podem ser uma imagem do Docker com testes escritos em qualquer idioma, desde que sigam as convenções definidas na seção [Compilação de testes de interface do usuário](#building-ui-tests).
 
 >[!TIP]
 >
->A Adobe recomenda seguir a estrutura e a linguagem (JavaScript e WDIO) fornecidas no [Arquétipo de Projetos AEM.](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)
+>A Adobe recomenda seguir a estrutura e a linguagem (JavaScript e WDIO) fornecidas no [Arquétipo de Projetos AEM](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests).
 >
 >A Adobe também fornece um exemplo de módulo de teste de interface com base em Java e WebDriver. Consulte o [Repositório de exemplos de teste do AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver) para obter detalhes.
 
@@ -45,15 +45,15 @@ Esta seção descreve as etapas necessárias para a configuração dos testes de
 
       >[!NOTE]
       >
-      >Se o repositório foi criado antes do Cloud Manager criar automaticamente as pastas `it.tests`, você também poderá gerar a versão mais recente usando o [Arquétipo de projeto do AEM.](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)
+      >Se o repositório foi criado antes do Cloud Manager criar automaticamente as pastas `it.tests`, você também poderá gerar a versão mais recente usando o [Arquétipo de projeto do AEM](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests).
 
-   * Para Java e WebDriver, use o código de exemplo do [repositório de exemplos de teste do AEM.](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)
+   * Para Java e WebDriver, use o código de exemplo do [repositório de exemplos de teste do AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver).
 
    * Para outras linguagens de programação, consulte a seção [Criação de testes de interface](#building-ui-tests) deste documento para configurar o projeto de teste.
 
 1. Garanta que o teste da interface esteja ativado de acordo com a seção [Adesão do cliente](#customer-opt-in) deste documento.
 
-1. Desenvolva seus casos de teste e [execute-os localmente.](#run-ui-tests-locally)
+1. Desenvolva seus casos de teste e [execute-os localmente](#run-ui-tests-locally).
 
 1. Confirmar seu código no repositório do Cloud Manager e executar um pipeline do Cloud Manager.
 
@@ -257,7 +257,7 @@ Você pode usar as funções auxiliares para criar capturas de tela nos testes.
 * JavaScript: [comando takeScreenshot](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/commons.js)
 * Java: [comandos](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java)
 
-Se um arquivo de resultados de teste for criado durante a execução de um teste de interface, você poderá baixá-lo do Cloud Manager usando o botão `Download Details` na etapa [**Testes de interface personalizados**.](/help/implementing/cloud-manager/deploy-code.md)
+Se um arquivo de resultados de teste for criado durante uma execução de teste da interface do usuário, você poderá baixá-lo do Cloud Manager usando a `Download Details` sob a [**Teste de interface personalizada** step](/help/implementing/cloud-manager/deploy-code.md).
 
 ### Fazer upload de arquivos {#upload-files}
 
@@ -309,7 +309,7 @@ Para executar os testes de interface em seu computador local, crie um usuário c
 >* Os arquivos de log são armazenados na pasta `target/reports` do repositório
 >* Certifique-se de estar usando a versão mais recente do Chrome, pois o teste baixa a versão mais recente do ChromeDriver automaticamente.
 >
->Para obter detalhes, consulte o [repositório do Arquétipo de projeto do AEM.](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/README.md)
+>Para obter detalhes, consulte o [repositório do Arquétipo de projeto do AEM](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/README.md).
 
 ### Exemplo de teste do Java {#java-sample}
 
@@ -332,4 +332,4 @@ Para executar os testes de interface em seu computador local, crie um usuário c
 >
 >* Os arquivos de log serão armazenados na pasta `target/reports` do repositório.
 >
->Para obter detalhes, consulte o [repositório de exemplos de teste do AEM.](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md)
+>Para obter detalhes, consulte o [repositório de exemplos de teste do AEM](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md).
