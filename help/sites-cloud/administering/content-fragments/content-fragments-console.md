@@ -5,7 +5,7 @@ landing-page-description: Saiba como gerenciar Fragmentos de conteúdo no Consol
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: 13e75e8b0f08463f5fd941263497f5cf0a31129c
+source-git-commit: 449e189b117aca58b960e802f8b3b11e7a5ea523
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 100%
@@ -69,7 +69,7 @@ Aqui você pode ver três áreas principais:
    * **[Criar](#creating-new-content-fragment)** um novo fragmento de conteúdo
    * [Filtrar](#filtering-fragments) os fragmentos de conteúdo de acordo com uma seleção de predicados e salvar o filtro para uso futuro
    * [Pesquisar](#searching-fragments) os fragmentos de conteúdo
-   * [Personalizar a visualização da tabela para mostrar as colunas de informações selecionadas](#selectuse-available-columns)
+   * [Personalizar a visualização da tabela para mostrar as colunas de informações selecionadas](#select-available-columns)
    * Usar o recurso **Abrir no Assets** para abrir o local atual diretamente no console de **Ativos**
 
       >[!NOTE]
