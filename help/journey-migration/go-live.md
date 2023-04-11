@@ -2,7 +2,7 @@
 title: Publicação
 description: Saiba como executar a migração assim que o código e o conteúdo estiverem prontos para a nuvem
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 55ecd685afa28226974f3415b550bd2e8d05e2e6
+source-git-commit: 30acb844ee4021b3e14011b548825c864de8903d
 workflow-type: tm+mt
 source-wordcount: '1727'
 ht-degree: 2%
@@ -107,7 +107,7 @@ Considere que toda a assimilação falha se alguma das limitações a seguir for
 Comparativamente à seção acima da ingestão **não** falha devido às seguintes preocupações com o ativo. No entanto, é altamente recomendável que você siga as etapas apropriadas nesses cenários:
 
 * Qualquer ativo que tenha a representação original ausente
-* Qualquer pasta que esteja ausente `jcr:content` nó
+* Qualquer pasta que esteja ausente `jcr:content` nó .
 
 Ambos os itens acima serão identificados e reportados na variável [Analisador de práticas recomendadas](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md) relatório.
 
@@ -118,7 +118,7 @@ Revise esta lista de atividades para garantir que você realize uma migração t
 * Execute um pipeline de produção completo com teste funcional e de interface do usuário para garantir uma **sempre atual** AEM experiência com o produto. Consulte os seguintes recursos.
    * [Atualizações de versão do AEM](/help/implementing/deploying/aem-version-updates.md)
    * [Teste funcional personalizado](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)
-   * [Teste de interface do usuário](/help/implementing/cloud-manager/ui-testing.md)
+   * [Teste de interface](/help/implementing/cloud-manager/ui-testing.md)
 * Migre o conteúdo para produção e verifique se um subconjunto relevante está disponível no armazenamento temporário para testes.
    * Observe que as práticas recomendadas do DevOps para AEM implicam que o código avance do ambiente de desenvolvimento para o de produção, enquanto o conteúdo desaparece dos ambientes de produção.
 * Programe um período de congelamento de código e conteúdo.
