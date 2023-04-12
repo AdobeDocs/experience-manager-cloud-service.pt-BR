@@ -2,10 +2,10 @@
 title: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud Service.
 mini-toc-levels: 1
-source-git-commit: 411de178588ca94a0bdb60567b3c0a6b718edce1
+source-git-commit: 085ce15ebe4d48d32a437f13e728f60cfc57d0fa
 workflow-type: tm+mt
-source-wordcount: '1032'
-ht-degree: 99%
+source-wordcount: '733'
+ht-degree: 33%
 
 ---
 
@@ -26,86 +26,70 @@ A seção a seguir descreve as notas da versão de recurso atual (mais recente) 
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento da versão atual (2023.1.0) do [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] é 9 de fevereiro de 2023. A próxima versão de recurso (2023.2.0) está planejada para 12 de abril de 2023.
+A data de lançamento do [!DNL Adobe Experience Manager] como [!DNL Cloud Service] a versão do recurso atual (2023.2.0) é 12 de abril de 2023. A próxima versão de recurso (2023.4.0) está planejada para 27 de abril de 2023.
 
 ## Vídeo da versão {#release-video}
 
-Assista ao vídeo de Visão geral da versão de janeiro de 2023 que exibe um resumo dos recursos adicionados na versão 2023.1.0:
+Assista ao vídeo Visão geral da versão de fevereiro de 2023 para obter um resumo dos recursos adicionados na versão 2023.2.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3413479/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3416885/?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### Novos recursos no pré-lançamento do [!DNL Sites] {#prerelease-features-sites}
+### Novos recursos no [!DNL Experience Manager Sites] pré-lançamento {#prerelease-sites}
 
-* A API de entrega de conteúdo GraphQL do AEM agora é compatível com a [paginação](/help/headless/graphql-api/content-fragments.md#paging) e [classificação](/help/headless/graphql-api/content-fragments.md#sorting) de GraphQL, para tornar mais eficiente a busca e a renderização de grandes conjuntos de conteúdo. A paginação de GraphQL permite melhorar o tempo de resposta da consulta, retornando os resultados em subconjuntos, ao invés de todos de uma vez. A classificação de GraphQL permite colocar conjuntos de conteúdo em uma ordem desejada, facilitando o processamento do conteúdo por um aplicativo cliente.  O tempo de resposta da consulta é aprimorado ainda mais com a Filtragem híbrida no mecanismo GraphQL do AEM. O conteúdo agora é lido do JCR em conjuntos menores que correspondem aos filtros de consulta.
+* Exporte fragmentos de conteúdo do AEM as a cloud service para o Adobe target como ofertas JSON.
+* O suporte para paginação e classificação do GraphQL, juntamente com aprimoramentos internos de cache, agora ajuda a melhorar o desempenho de aplicativos clientes dissociados ao buscar grandes conjuntos de conteúdo de AEM usando consultas e filtros complexos do GraphQL.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Novos recursos no [!DNL Assets] {#assets-features}
 
-* Os relatórios de ativos agora permitem que os administradores [gerem relatórios de download de ativos](/help/assets/asset-reports.md) por meio da implantação do Experience Manager Assets as a Cloud Service. Esses dados capacitam ainda mais os administradores a obter insights das principais métricas de sucesso para medir a adoção de ativos na empresa e por clientes.
+* Novo suporte ao protocolo (DASH - Dynamic Adaptive Streaming over HTTP) lançado para o streaming adaptável na entrega de vídeo do Dynamic Media (com CMAF ativado):
+   * O streaming adaptável (DASH/HLS) garante uma melhor experiência de visualização do usuário final para vídeos
+   * DASH é o protocolo padrão internacional para transmissão de vídeo adaptável e é amplamente adotado no setor
+   * Disponível em NA, para ser habilitado por meio de tíquete de suporte, em breve em APAC, EMEA
 
-   ![Representação de PDF para outros formatos](/help/release-notes/assets/choose_report.png)
-
-* O Experience Manager Assets agora [é compatível com o token SAS](/help/assets/add-assets.md#asset-bulk-ingestor) além da chave de acesso para autenticação ao conectar-se à fonte de dados do Armazenamento do Azure Blob para assimilar ativos usando a ferramenta Importação em massa.
-
-* Gerenciamento aprimorado de imagens CMYK no Asset Compute, permitindo gerar cortes e tags inteligentes para imagens CMYK.
-
-### Novos recursos no pré-lançamento do [!DNL Assets] {#prerelease-features-assets}
-
-* O Experience Manager Assets agora é compatível com a [assimilação em grande escala de ativos da Google Cloud Platform](/help/assets/add-assets.md#asset-bulk-ingestor) usando a ferramenta Importação em massa.
+* Adição de suporte para imagens WebP para extrair metadados automaticamente, gerar miniaturas e representações personalizadas. Os recursos de Tag inteligente e Recorte inteligente também são compatíveis com esses arquivos.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Novos recursos disponíveis em [!DNL Forms] {#new-features-available-in-channel}
 
-* **[Etapas do fluxo de trabalho de geração de documentos PDF não interativos e saída imprimível](/help/forms/aem-forms-workflow-step-reference.md)**: automatize a criação de documentos PDF não interativos e saída imprimível para seus processos comerciais com as etapas do fluxo de trabalho do AEM, simplificando seu processo de geração de documentos e economizando tempo.
-* **[Use notas de rodapé para fornecer citações ou informações adicionais nos formulários adaptáveis](/help/forms/footnotes-richtextsupport.md)**: as notas de rodapé de um formulário adaptável podem ser usadas para exibir informações sobre como preencher ou usar um formulário. Você também pode usá-las para fornecer informações entre parênteses, permissões de direitos autorais e outras informações úteis.
-
-### Novos recursos no pré-lançamento do [!DNL Forms] {#prerelease-features-forms}
-
 * **[Use componentes principais de captura de dados para criar formulários adaptáveis](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR)**: o [editor de formulários adaptáveis](/help/forms/creating-adaptive-form-core-components.md) pode ser usado para criar formulários com base em componentes de captura de dados padronizados (componentes principais). Esses componentes fornecem recursos de personalização, tempo de desenvolvimento reduzido e custos de manutenção mais baixos para suas experiências de inscrição digital.
-* **[Suporte a pipeline de front-end para estilizar formulários adaptáveis baseados em componentes principais](/help/forms/using-themes-in-core-components.md)**: utilize temas facilmente personalizáveis baseados em BEM para formulários adaptáveis baseados em componentes principais, implantando-os com o pipeline de implantação de front-end para aprimorar a aparência de seus formulários.
-* **[Gerar documento de registro para formulários adaptáveis baseados em componentes principais](/help/forms/generate-document-of-record-core-components.md)**: crie um registro ao enviar o formulário adaptável baseado em componentes principais para um arquivamento de longo prazo, seja em formato impresso ou de documento.
+
+* **[Suporte a pipeline de fronteira para o Forms adaptável baseado em componentes principais de estilo](/help/forms/using-themes-in-core-components.md)**: Utilize temas padronizados baseados em BEM para o Forms adaptativo baseado em componentes principais, implantando-os com o pipeline de implantação do front-end para aprimorar a aparência de seus formulários e alinhar-se às diretrizes de design aprovadas pela marca de sua organização.
+
+* **[Gerar documento de registro para Forms adaptável baseado em componentes principais](/help/forms/generate-document-of-record-core-components.md)**: Crie um documento de registro contendo dados enviados para o Adaptive Forms criado usando componentes principais para arquivamento ou referência para usuários finais, na impressão ou no formato do documento.
 
 ![https://www.aemcomponents.dev/](/help/forms/assets/sample-core-components-based-adaptive-form.png)
 
-* **[Enviar formulários adaptáveis para o Microsoft SharePoint e Microsoft OneDrive](/help/forms/configuring-submit-actions.md)**: agilize o envio de dados com a capacidade de enviar dados de formulários adaptáveis diretamente para o Microsoft SharePoint e o Microsoft OneDrive. Você pode enviar dados baseados em esquema e sem esquema. Essas ações de envio são um complemento das ações de envio já disponíveis.
-* **[Criação eficiente de formulários com o recurso Salvar um formulário adaptável como modelo](/help/forms/template-editor.md#save-an-adaptive-form-as-template-saving-adaptive-form-as-template)**: simplifique o processo de criação de formulários salvando um formulário adaptável como modelo e reutilizando esses modelos no próximo formulário adaptável.
-* **[Conectar o AEM Forms a bancos de dados compatíveis com JDBC](/help/forms/configure-data-sources.md#configure-relational-database-configure-relational-database)**: conecte facilmente seu modelo de dados do AEM Forms a bancos de dados que oferecem suporte a JDBC, permitindo ler e gravar dados de maneira contínua.
-* **[Integrar a pontos de acesso REST usando a Open API 3.0](/help/forms/configure-data-sources.md#configure-restful-services-open-api-specification-version-20-configure-restful-services-swagger-version30)**: conecte os modelos de dados de formulário do AEM Forms as a Cloud Service aos pontos de acesso REST que são compatíveis com a especificação da Open API versão 3.0, permitindo enviar e receber dados com facilidade.
+* **[Criação eficiente de formulários com o recurso Salvar um formulário adaptável como modelo](/help/forms/template-editor.md#save-an-adaptive-form-as-template-saving-adaptive-form-as-template)**: Acelere e padronize o desenvolvimento de formulários, salvando formulários já aprovados como modelos de formulário para reutilização rápida.
+
+* **[Conectar o AEM Forms a bancos de dados compatíveis com JDBC](/help/forms/configure-data-sources.md#configure-relational-database-configure-relational-database)**: Conecte-se a bancos de dados corporativos diretamente do serviço AEM Cloud usando o protocolo JDBC, sem a necessidade de expô-los sobre a REST API.
+
+* **[Integre com endpoints REST usando a API 3.0 aberta](/help/forms/configure-data-sources.md#configure-restful-services-open-api-specification-version-20-configure-restful-services-swagger-version30)**: Integre-se perfeitamente aos sistemas de registro que oferecem suporte à API 3.0 aberta para armazenar e buscar dados usando modelos de dados de formulário.
+
 * **[Compartilhar um formulário adaptável para revisão](/help/forms/create-reviews-forms.md)**: use o mecanismo de revisão de formulários adaptáveis para permitir que um ou mais revisores revisem o formulário.
 
 
-## Complemento CIF {#cloud-services-cif}
+### Recursos em [!DNL Forms] pré-lançamento {#prerelease-features-forms}
 
-### Novidades {#what-is-new-cif}
+* **[Enviar Forms adaptável para o Microsoft SharePoint e Microsoft OneDrive](/help/forms/configuring-submit-actions.md)**: Melhore a agilidade do usuário empresarial para iniciar novos formulários rapidamente e armazenar dados enviados em ferramentas diárias usadas como o site Microsoft SharePoint ou a pasta OneDrive.
 
-* Os autores podem enriquecer dinamicamente listas de produtos com Fragmentos de experiência (por exemplo: colocar banner entre as listas de produtos).
-* O componente de lista agora oferece suporte às páginas de produto/categoria associadas para mostrar dinamicamente páginas relacionadas.
-* Foi adicionado suporte para componentes do Peregrine 12.5.
-* Foi adicionado suporte para o carregamento de preço no lado do cliente no teaser e no carrossel do produto.
+![Enviar Forms adaptável para o Microsoft SharePoint e Microsoft OneDrive](/help/forms/assets/onedrive-and-sharepoint.jpg)
 
-## [!DNL Experience Manager as a Cloud Service] Foundation {#foundation}
 
-### Novidades {#what-is-new-foundation}
+## Programa de usuários antecipados da Adaptive Forms sem cabeçalho {#forms-early-adopter}
 
-* [Ambientes de desenvolvimento rápido (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md): os RDEs permitem que os desenvolvedores solucionem problemas e implantem novos recursos no AEM as a Cloud Service rapidamente. 
+Use o Headless Adaptive Forms para permitir que seus desenvolvedores criem, publiquem e gerenciem formulários interativos que podem ser acessados e interagidos por meio de APIs, em vez de por meio de uma interface gráfica tradicional. Os formulários adaptáveis sem interface ajudam a:
 
-   Os ambientes de desenvolvimento rápido são um novo tipo de ambiente de nuvem criado como uma maneira rápida, consistente e extensível de validar se o código que funciona localmente também funciona conforme esperado na nuvem. Usando as ferramentas de linha de comando, “sincronize” rapidamente os pacotes de conteúdo, pacotes, arquivos de conteúdo, a configuração OSGI ou a configuração do Dispatcher com o RDE. Veja esse processo em ação no vídeo abaixo:
+* crie formulários multicanal de alta qualidade na linguagem de programação de sua escolha
+* Integre nativamente formulários a aplicativos móveis, sites e aplicativos de bate-papo
+* reutilize seus componentes proprietários da interface do usuário com aplicativos de formulários
+* aproveitar o potencial do Adobe Experience Manager Forms
 
-   >[!VIDEO](https://video.tv.adobe.com/v/3413508/?quality=12&learn=on)
-
-   Depois de validar o código com sucesso no RDE, é recomendável implantar em um ambiente de desenvolvimento da nuvem para testar as portas de qualidade do Cloud Manager, antes de implantar por meio do pipeline de produção em ambientes de preparo e produção.
-
-   Cada programa inclui um RDE e é possível licenciar outros.
-
-   >[!NOTE]
-   >
-   >Os RDEs serão lançados gradualmente nas próximas semanas; você pode enviar um email para aemcs-rde-support@adobe.com para obter prioridade na fila de espera.
-
-* [Suporte estendido para tokens de acesso de API do lado do servidor](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md): agora é possível gerar várias credenciais, o que é útil para cenários em que as APIs têm características diferentes. Agora também é possível revogar credenciais por meio do autoatendimento.
+Você pode enviar um email para aem-forms-headless@adobe.com a partir de sua ID de email oficial para participar do programa de adotante antecipado.
 
 ## Notas da versão de manutenção {#maintenance}
 

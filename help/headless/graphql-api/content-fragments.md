@@ -3,10 +3,10 @@ title: API GraphQL do AEM para uso com Fragmentos de conteúdo
 description: Saiba como usar os Fragmentos de conteúdo no Adobe Experience Manager (AEM) as a Cloud Service com a API GraphQL do AEM, para entrega de conteúdo headless.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: cda6d7e382b090fd726b27e565da08c8b1c80008
+source-git-commit: 32f14d94e2eb9e9ec9e6d04b663733bf5087a736
 workflow-type: tm+mt
-source-wordcount: '4203'
-ht-degree: 100%
+source-wordcount: '4768'
+ht-degree: 88%
 
 ---
 
@@ -703,6 +703,208 @@ query {
 >* Devido a restrições técnicas internas, o desempenho será prejudicado se a classificação e a filtragem forem aplicadas em campos aninhados. Portanto, é recomendável usar campos de filtro/classificação armazenados no nível raiz. Essa também é o método recomendado se você quiser consultar grandes conjuntos de resultados paginados.
 
 
+## Entrega de imagem otimizada para a Web em consultas do GraphQL {#web-optimized-image-delivery-in-graphql-queries}
+
+A entrega de imagem otimizada para a Web permite usar uma consulta Graphql para:
+
+* Solicitar um URL para uma imagem AEM do ativo
+
+* Passe parâmetros com a consulta, de modo que uma representação específica da imagem seja gerada automaticamente e retornada
+
+   >[!NOTE]
+   >
+   >A representação especificada não é armazenada no AEM Assets. A representação é gerada e mantida em cache por um curto período.
+
+* Retorna o URL como parte do delivery JSON
+
+Você pode usar AEM para:
+
+* Passar [Entrega de imagem otimizada para a Web](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=pt-BR) em queries GraphQL.
+
+Isso significa que os comandos são aplicados durante a execução da consulta, da mesma forma que os parâmetros de URL nas solicitações do GET para essas imagens.
+
+Isso permite que você crie dinamicamente representações de imagem para entrega JSON, o que evita a necessidade de criar e armazenar manualmente essas representações no repositório.
+
+A solução no GraphQL significa que você pode:
+
+* use `_dynamicUrl` no `ImageRef` referência
+
+* adicionar `_assetTransform` para o cabeçalho da lista em que seus filtros são definidos
+
+### Estrutura da solicitação de transformação {#structure-transformation-request}
+
+`AssetTransform` (`_assetTransform`) é usada para fazer as solicitações de transformação do URL.
+
+A estrutura e a sintaxe são:
+
+* `format`: uma enumeração com todos os formatos compatíveis por sua extensão: GIF, PNG, PNG8, JPG, PJPG, BJPG, WEBP, WEBPLL ou WEBPLL
+* `seoName`: uma string que será usada como nome de arquivo em vez do nome do nó
+* `crop`: uma subestrutura de quadro, se a largura ou a altura forem omitidas, a altura ou a largura serão usadas como o mesmo valor
+   * `xOrigin`: a origem x do quadro e é obrigatória
+   * `yOrigin`: a origem y do quadro e é obrigatória
+   * `width`: a largura do quadro
+   * `height`: a altura do quadro
+* `size`: uma subestrutura de dimensão, se a largura ou a altura forem omitidas, a altura ou a largura serão usadas como o mesmo valor
+   * `width`: a largura da dimensão
+   * `height`: a altura da dimensão
+* `rotation`: uma enumeração de todas as rotações suportadas: R90, R180, R270
+* `flip`: uma enumeração de HORIZONTAL, VERTICAL, HORIZONTAL_AND_VERTICAL
+* `quality`: um número inteiro entre 1 e 100 que anota a porcentagem da qualidade da imagem
+* `width`: um número inteiro que define a largura da imagem de saída, mas será ignorado pelo Gerador de imagens
+* `preferWebp`: um booleano que indica se webp é preferencial (o valor padrão é false)
+
+A transformação do URL está disponível para todos os tipos de consulta: por caminho, lista ou paginado.
+
+### Entrega de imagem otimizada para a Web com parâmetros completos {#web-optimized-image-delivery-full-parameters}
+
+Veja a seguir um exemplo de consulta com um conjunto completo de parâmetros:
+
+```graphql
+{
+  articleList(
+    _assetTransform: {
+      format:GIF
+      seoName:"test"
+      crop:{
+        xOrigin:10
+        yOrigin:20
+        width:50
+        height:45
+      }
+      size:{
+        height:100
+        width:200
+      }
+      rotation:R90
+      flip:HORIZONTAL_AND_VERTICAL
+      quality:55
+      width:123
+      preferWebp:true
+    }
+  ) {
+    items {
+      _path
+      featuredImage {
+        ... on ImageRef {
+          _dynamicUrl
+        }
+      }
+    }
+  }
+}
+```
+
+### Entrega de imagem otimizada para a Web com uma única variável de consulta {#web-optimized-image-delivery-single-query-variable}
+
+O exemplo a seguir mostra o uso de uma única variável de consulta:
+
+```graphql
+query ($seoName: String!) {
+  articleList(
+    _assetTransform: {
+      format:GIF
+      seoName:$seoName
+      crop:{
+        xOrigin:10
+        yOrigin:20
+        width:50
+        height:45
+      }
+      size:{
+        height:100
+        width:200
+      }
+      rotation:R90
+      flip:HORIZONTAL_AND_VERTICAL
+      quality:55
+      width:123
+      preferWebp:true
+    }
+  ) {
+    items {
+      _path
+      featuredImage {
+        ... on ImageRef {
+          _dynamicUrl
+        }
+      }
+    }
+  }
+}
+```
+
+### Entrega de imagem otimizada para a Web com várias variáveis de consulta {#web-optimized-image-delivery-multiple-query-variables}
+
+O exemplo a seguir mostra o uso de várias variáveis de consulta:
+
+```graphql
+query ($seoName: String!, $format: AssetTransformFormat!) {
+  articleList(
+    _assetTransform: {
+      format:$format
+      seoName:$seoName
+      crop:{
+        xOrigin:10
+        yOrigin:20
+        width:50
+        height:45
+      }
+      size:{
+        height:100
+        width:200
+      }
+      rotation:R90
+      flip:HORIZONTAL_AND_VERTICAL
+      quality:55
+      width:123
+      preferWebp:true
+    }
+  ) {
+    items {
+      _path
+      featuredImage {
+        ... on ImageRef {
+          _dynamicUrl
+        }
+      }
+    }
+  }
+}
+```
+
+### Solicitação de entrega de imagem otimizada pela Web por URL {#web-optimized-image-delivery-request-url}
+
+Se você salvar seu query como uma consulta persistente (por exemplo, com o nome `dynamic-url-x`) você pode [executar a consulta persistente diretamente](/help/headless/graphql-api/persisted-queries.md#execute-persisted-query).
+
+Por exemplo, para executar diretamente as amostras anteriores (salvas como consultas persistentes), use os seguintes URLs:
+
+* [Parâmetro único](#dynamic-image-delivery-single-specified-parameter); Consulta Persistente com o nome `dynamic-url-x`
+
+   * `http://localhost:4502/graphql/execute.json/wknd-shared/dynamic-url-x;seoName=xxx`
+
+      A resposta terá a seguinte aparência:
+
+      ![Entrega de imagem usando parâmetros](assets/cfm-graphiql-sample-image-delivery.png "Entrega de imagem usando parâmetros")
+
+* [Vários parâmetros](#dynamic-image-delivery-multiple-specified-parameters); Consulta Persistente com o nome `dynamic`
+
+   * `http://localhost:4502/graphql/execute.json/wknd-shared/dynamic;seoName=billiboy;format=GIF;`
+
+      >[!CAUTION]
+      >
+      >A direita `;`é obrigatório encerrar a lista de parâmetros de forma limpa.
+
+### Limitações do fornecimento de imagem {#image-delivery-limitations}
+
+As seguintes limitações existem:
+
+* Modificadores aplicados a todas as imagens parte da query (parâmetros globais)
+
+* Cabeçalhos de armazenamento em cache
+
+   * Nenhum armazenamento em cache no autor
+   * Armazenamento em cache na publicação - idade máxima de 10 minutos (não pode ser alterada pelo cliente)
+
 ## GraphQL para AEM - resumo das extensões {#graphql-extensions}
 
 A operação básica de consultas com o GraphQL para AEM adere à especificação GraphQL padrão. Para consultas de GraphQL com o AEM, há algumas extensões:
@@ -761,7 +963,18 @@ A operação básica de consultas com o GraphQL para AEM adere à especificaçã
          >
          >Se a variação especificada não existir para um Fragmento de conteúdo, a variação principal será retornada como padrão (substituta).
 
-         * Consulte [Exemplo de consulta - Todas as cidades com uma variação nomeada](#sample-cities-named-variation)
+         * Consulte [Exemplo de consulta - Todas as cidades com uma variação nomeada](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
+   * Para [entrega de imagem](#image-delivery):
+
+      * `_dynamicUrl`: no `ImageRef` referência
+
+      * `_assetTransform`: no cabeçalho da lista, onde os filtros são definidos
+
+      * Consulte:
+
+         * [Exemplo de consulta para entrega de imagem com parâmetros completos](#image-delivery-full-parameters)
+
+         * [Exemplo de consulta para entrega de imagem com um único parâmetro especificado](#image-delivery-single-specified-parameter)
    * E operações:
 
       * `_operator` : aplica operadores específicos; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS` e `STARTS_WITH`
@@ -771,6 +984,7 @@ A operação básica de consultas com o GraphQL para AEM adere à especificaçã
          * Consulte [Exemplo de consulta - Filtrar em uma matriz com um item que deve ocorrer pelo menos uma vez](/help/headless/graphql-api/sample-queries.md#sample-array-item-occur-at-least-once)
       * `_ignoreCase` : para ignorar se os caracteres são maiúsculos ou minúsculos ao consultar
          * Consulte [Exemplo de consulta - Todas as cidades com SAN no nome, independentemente de caracteres maiúsculos ou minúsculos](/help/headless/graphql-api/sample-queries.md#sample-all-cities-san-ignore-case)
+
 
 
 
