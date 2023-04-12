@@ -5,10 +5,10 @@ landing-page-description: Saiba como gerenciar Fragmentos de conteúdo no Consol
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: 449e189b117aca58b960e802f8b3b11e7a5ea523
+source-git-commit: d02bfc6fc6502a96e270e87ea8567d7a55e33b3a
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -56,6 +56,7 @@ Aqui você pode ver três áreas principais:
 * O painel esquerdo
    * Aqui você pode ocultar ou revelar a árvore de pastas
    * É possível selecionar uma ramificação específica da árvore
+   * Isso pode ser redimensionado para mostrar pastas aninhadas
 * O painel principal/direito; aqui, você pode:
    * Consultar a lista de todos os fragmentos de conteúdo na ramificação selecionada da árvore:
       * A localização é indicada pela navegação estrutural; elas também podem ser usadas para alterar a localização
@@ -64,8 +65,10 @@ Aqui você pode ver três áreas principais:
             * Abrir o fragmento apropriado no editor
             * Mostrar informações sobre referências
             * Mostrar informações sobre versões de idioma do fragmento
-         * É possível [selecionar um ou mais Fragmentos de conteúdo para mostrar as ações disponíveis](#actions-selected-content-fragment)
-      * Você pode selecionar um cabeçalho de coluna e classificar a tabela de acordo com essa coluna; selecione novamente para alternar entre ordem crescente e decrescente. No momento, a classificação é permitida nas colunas **Título**, **Modificado** e **Modificado por**.
+      * Ao usar o mouse sobre os cabeçalhos da coluna, um seletor de ação suspenso e os controles deslizantes de largura serão mostrados. Isso permite:
+         * Classificar - selecione a ação apropriada para crescente ou decrescente. Essa opção classificará toda a tabela de acordo com essa coluna. A classificação só está disponível nas colunas apropriadas.
+         * Redimensionar a coluna - usando os controles deslizantes de ação ou largura
+      * É possível [selecionar um ou mais Fragmentos de conteúdo para mostrar as ações disponíveis](#actions-selected-content-fragment)
    * **[Criar](#creating-new-content-fragment)** um novo fragmento de conteúdo
    * [Filtrar](#filtering-fragments) os fragmentos de conteúdo de acordo com uma seleção de predicados e salvar o filtro para uso futuro
    * [Pesquisar](#searching-fragments) os fragmentos de conteúdo
@@ -154,7 +157,7 @@ Selecionar **Criar** abre a caixa de diálogo compacta **Novo fragmento de conte
 
 O painel Filtro oferece:
 
-* uma seleção de predicados que podem ser selecionados e combinados
+* uma seleção de predicados; um ou mais predicados podem ser selecionados e combinados para criar o filtro
 * a oportunidade de **Salvar** sua configuração
 * a opção de recuperar um filtro de pesquisa salvo para reutilização
 
