@@ -2,10 +2,10 @@
 title: Assimilar conteúdo no Target
 description: Assimilar conteúdo no Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
+source-git-commit: 7854a0217c5d2e7d260a6fbe893aef1e6d4a4c72
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1687'
+ht-degree: 7%
 
 ---
 
@@ -20,8 +20,6 @@ ht-degree: 0%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html#top-up-ingestion-process" text="Ingestão complementar"
 
 Siga as etapas abaixo para assimilar seu conjunto de migração da ferramenta Transferência de conteúdo:
->[!NOTE]
->Você pode executar a etapa opcional de pré-cópia para acelerar significativamente a fase de assimilação. A etapa de pré-cópia é mais eficaz para a primeira extração e ingestão completas. Consulte [Integração com o AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) para obter mais detalhes.
 
 >[!NOTE]
 >Lembrou-se de registrar um tíquete de suporte para esta assimilação? Consulte [Considerações importantes antes de usar a ferramenta Transferência de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#important-considerations) para isso e outras considerações que ajudem a tornar a ingestão bem-sucedida.
@@ -29,7 +27,6 @@ Siga as etapas abaixo para assimilar seu conjunto de migração da ferramenta Tr
 1. Vá para Cloud Acceleration Manager. Clique no cartão do projeto e clique no cartão Transferência de conteúdo . Navegar para **Trabalhos de assimilação** e clique em **Nova Assimilação**
 
    ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-01.png)
-
 
 1. Revise a lista de verificação de assimilação e verifique se todas as etapas foram concluídas. Essas são etapas necessárias para garantir uma assimilação bem-sucedida. Você poderá prosseguir para a **Próximo** somente se a lista de verificação tiver sido concluída.
 
