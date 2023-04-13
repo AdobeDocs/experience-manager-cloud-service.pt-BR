@@ -5,7 +5,7 @@ landing-page-description: Saiba como gerenciar Fragmentos de conteúdo no Consol
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: d02bfc6fc6502a96e270e87ea8567d7a55e33b3a
+source-git-commit: 6c15a4dc408d96a6532da67c1736bc3e96824321
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -162,6 +162,22 @@ O painel Filtro oferece:
 * a opção de recuperar um filtro de pesquisa salvo para reutilização
 
 ![Console de fragmentos de conteúdo - Filtragem](assets/cfc-console-filter.png)
+
+### Filtragem rápida {#fast-filtering}
+
+Você também pode selecionar um predicado clicando em um valor de coluna específico na lista. Você pode selecionar um ou mais valores para combinar predicados.
+
+Por exemplo, selecione **Publicado** no **Status** coluna:
+
+>[!NOTE]
+>
+>A filtragem rápida só é compatível com o **Modelo**, **Status**, **Modificado por** e **Publicado por** colunas.
+
+![Console de fragmentos de conteúdo - Filtragem](assets/cfc-console-fast-filter-01.png)
+
+Uma vez selecionado, isso será mostrado como um predicado de filtro, e a lista será filtrada adequadamente:
+
+![Console de fragmentos de conteúdo - Filtragem](assets/cfc-console-fast-filter-02.png)
 
 ## Pesquisar fragmentos {#searching-fragments}
 
