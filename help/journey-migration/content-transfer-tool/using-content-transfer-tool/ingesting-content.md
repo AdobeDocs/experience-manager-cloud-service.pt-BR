@@ -2,9 +2,9 @@
 title: Assimilar conteúdo no Target
 description: Assimilar conteúdo no Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 7854a0217c5d2e7d260a6fbe893aef1e6d4a4c72
+source-git-commit: b0723faa23d77ac6b747f189e0643db59ddb2802
 workflow-type: tm+mt
-source-wordcount: '1687'
+source-wordcount: '1702'
 ht-degree: 7%
 
 ---
@@ -39,30 +39,19 @@ Siga as etapas abaixo para assimilar seu conjunto de migração da ferramenta Tr
    * Selecione o ambiente de destino. É aqui que o conteúdo do conjunto de migração será assimilado. Selecione a camada. (Autor/Publicação). Ambientes de desenvolvimento rápido não são compatíveis.
 
    >[!NOTE]
-   >
-   >Se a origem foi Autor, é recomendável assimilá-la no nível Autor no destino. Da mesma forma, se a origem foi Publicar, o destino também deve ser Publicar.
-
-   >[!NOTE]
-   >
-   >Se a camada de destino for `Author`, a instância do autor será encerrada durante a assimilação e não estará disponível para os usuários (por exemplo, autores ou qualquer pessoa que faça manutenção etc.). Isto serve para proteger o sistema e impedir quaisquer alterações que possam ser perdidas ou causar um conflito de ingestão. Certifique-se de que a sua equipe esteja ciente deste fato. Observe também que o ambiente aparecerá hibernado durante a assimilação do autor.
-
-   >[!NOTE]
-   >
-   >Você pode executar a etapa opcional de pré-cópia para acelerar significativamente a fase de assimilação. Consulte [Integração com o AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) para obter mais detalhes.
-   > 
-   >Se a assimilação com pré-cópia for usada (para S3 ou Azure Data Store), é recomendável executar a assimilação do autor primeiro sozinho. Isso irá acelerar a assimilação de Publicação quando for executada mais tarde.
-
-   >[!NOTE]
-   >
-   >As sugestões não são compatíveis com um destino de RDE (Rapid Development Environment). Eles não serão exibidos como uma possível escolha de destino, mesmo se o usuário tiver acesso a ele.
+   >As seguintes notas se aplicam à assimilação de conteúdo:
+   * Se a origem foi Autor, é recomendável assimilá-la no nível Autor no destino. Da mesma forma, se a origem foi Publicar, o destino também deve ser Publicar.
+   * Se a camada de destino for `Author`, a instância do autor será encerrada durante a assimilação e não estará disponível para os usuários (por exemplo, autores ou qualquer pessoa que faça manutenção etc.). Isto serve para proteger o sistema e impedir quaisquer alterações que possam ser perdidas ou causar um conflito de ingestão. Certifique-se de que a sua equipe esteja ciente deste fato. Observe também que o ambiente aparecerá hibernado durante a assimilação do autor.
+   * Você pode executar a etapa opcional de pré-cópia para acelerar significativamente a fase de assimilação. Consulte [Integração com o AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) para obter mais detalhes.
+   * Se a assimilação com pré-cópia for usada (para S3 ou Azure Data Store), é recomendável executar a assimilação do autor primeiro sozinho. Isso irá acelerar a assimilação de Publicação quando for executada mais tarde.
+   * As sugestões não são compatíveis com um destino de RDE (Rapid Development Environment). Eles não serão exibidos como uma possível escolha de destino, mesmo se o usuário tiver acesso a ele.
 
    >[!IMPORTANT]
-   >
-   >Você poderá iniciar uma assimilação no ambiente de destino somente se pertencer ao local **Administradores de AEM** no serviço de criação do Cloud Service de destino. Se não conseguir iniciar uma assimilação, consulte [Não é possível iniciar a assimilação](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) para obter mais detalhes.
+   > Os seguintes avisos importantes se aplicam à assimilação de conteúdo:
+   * Você poderá iniciar uma assimilação no ambiente de destino somente se pertencer ao local **Administradores de AEM** no serviço de criação do Cloud Service de destino. Se não conseguir iniciar uma assimilação, consulte [Não é possível iniciar a assimilação](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) para obter mais detalhes.
+   * Se a configuração **Varrer** estiver habilitado antes da assimilação, ele excluirá todo o repositório existente e criará um novo repositório para assimilar conteúdo. Isso significa que ele redefine todas as configurações, incluindo permissões na instância do Cloud Service de destino. Isso também é verdadeiro para um usuário administrador adicionado ao **administradores** grupo. Você precisará ser adicionado novamente ao grupo de administradores para iniciar uma assimilação.
 
-   >[!IMPORTANT]
-   >
-   >Se a configuração **Varrer** estiver habilitado antes da assimilação, ele excluirá todo o repositório existente e criará um novo repositório para assimilar conteúdo. Isso significa que ele redefine todas as configurações, incluindo permissões na instância do Cloud Service de destino. Isso também é verdadeiro para um usuário administrador adicionado ao **administradores** grupo. Você precisará ser adicionado novamente ao grupo de administradores para iniciar uma assimilação.
+
 
 1. Clique em **Assimilar**
 
