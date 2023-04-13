@@ -1,19 +1,15 @@
 ---
 title: Ambientes de desenvolvimento rápido
 description: Saiba como aproveitar os ambientes de desenvolvimento rápido para iterações de desenvolvimento rápidas em um ambiente em nuvem.
-source-git-commit: 95787669581c906a9cdc35a0ac450adf17b0b402
+source-git-commit: 2de6e2b6357f6cd03be2736d09cb4687ff337450
 workflow-type: tm+mt
-source-wordcount: '3314'
+source-wordcount: '3304'
 ht-degree: 5%
 
 ---
 
 
 # Ambientes de desenvolvimento rápido {#rapid-development-environments}
-
->[!AVAILABILITY]
->
->Esse recurso está planejado para ser implantado gradualmente nos clientes.
 
 Para implantar alterações, os ambientes atuais de desenvolvimento da Cloud exigem o uso de um processo que emprega extensas regras de qualidade e segurança de código chamadas de pipeline de CI/CD. Para situações em que são necessárias alterações rápidas e iterativas, o Adobe introduziu Ambientes de Desenvolvimento Rápido (RDEs).
 
