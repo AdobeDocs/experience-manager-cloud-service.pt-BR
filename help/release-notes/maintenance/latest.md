@@ -1,10 +1,10 @@
 ---
 title: Notas de versão de manutenção atuais de [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas de versão de manutenção atuais de [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: fb9b735c44dddda9572d3a1f90d49452c6ddc094
+source-git-commit: 3378322c16f12c5ec4a741b912bbe0833f68d8e4
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 22%
+source-wordcount: '470'
+ht-degree: 21%
 
 ---
 
@@ -29,6 +29,7 @@ A ativação de recursos desta versão de manutenção fornecerá o conjunto com
 - SITES-12573 - As consultas do GraphQL que usam variáveis dentro de um filtro falharão se uma variável não for especificada. Por favor, não atualize para esta versão caso use o GraphQL com AEM as a Cloud Service.
 - SKYOPS-51970 - Regressão identificada da versão FACT usada na etapa buildImage, levando ao mapeamento de usuário não correspondente.
 - GRANITE-44542 - Problemas relatados para clientes que não especificaram um tipo de nó de pacote (fornecendo um .content.xml com jcr:primaryType) para pastas incluídas no filtro de pacote. Isso fazia com que essas pastas fossem tratadas como nt:folder, criando problemas em vários casos.
+- SKYOPS-56928 - A regressão HTTPD do Apache pode causar erros 404. Se você tiver esses problemas, por motivos de segurança, é recomendável reverter para a versão anterior e evitar que qualquer pipeline seja executado durante esse período.
 
 ### Problemas corrigidos {#fixed-issues-11382}
 
