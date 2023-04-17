@@ -3,9 +3,9 @@ title: Suporte OAuth2 para o serviço de email
 description: Suporte do Oauth2 para o serviço de email no Adobe Experience Manager as a Cloud Service
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
 source-git-commit: fb6fd4a86f94ae282d95c73ecb702a372d7c1f86
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '691'
+ht-degree: 100%
 
 ---
 
@@ -103,7 +103,7 @@ Antes de continuar a configurar o OAuth no lado do AEM, valide o accessToken e o
 >
 > Você pode obter a coleção da API Postman [deste local](https://docs.microsoft.com/pt-br/azure/active-directory/develop/v2-oauth2-auth-code-flow).
 >
-> Verifique a documentação do MSFT OAuth [here](https://learn.microsoft.com/en-us/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth) para obter mais detalhes.
+> Consulte [aqui](https://learn.microsoft.com/pt-BR/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth) a documentação do MSFT OAuth para obter mais detalhes.
 
 ### Integração com o AEM as a Cloud Service {#integration-with-aem-as-a-cloud-service}
 
