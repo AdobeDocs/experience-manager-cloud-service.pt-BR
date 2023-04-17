@@ -2,10 +2,10 @@
 title: Visualização de conteúdo
 description: Saiba como usar o serviço de visualização do AEM para visualizar o conteúdo antes de ele ser publicado.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: dc55bd43641c03dd022a891c8b85569d9be28ebe
+source-git-commit: 7b56bb05e31d7a61d7a8fb13e2bd0ff6e4fb301d
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 100%
+source-wordcount: '277'
+ht-degree: 95%
 
 ---
 
@@ -16,11 +16,7 @@ O AEM oferece um serviço de visualização do Sites que permite que desenvolved
 
 Ele facilita a visualização de experiências de página que de outra forma não estariam visíveis no ambiente do autor, como transições de página e demais conteúdos disponíveis somente do lado da publicação.
 
-Para obter mais detalhes sobre os ambientes de visualização, consulte o documento [Gerenciar ambientes.](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
-
->[!NOTE]
->
->A publicação de um fragmento de experiência para visualização segue basicamente o mesmo procedimento de publicação de uma página, mas a partir do console ou do editor de fragmentos de experiência.
+Para obter mais detalhes sobre os ambientes de visualização, consulte o documento [Gerenciar ambientes](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
 ## Publicar conteúdo na visualização {#publishing-content-to-preview}
 
@@ -52,27 +48,10 @@ Cancelar a publicação de conteúdo do seu ambiente de **visualização** é ba
 
 A única diferença é que você pode selecionar o **destino** a ser **visualizado**.
 
-## Configurações do OSGi para o nível de visualização {#configuring-osgi-settings-for-the-preview-tier}
+## Informações adicionais {#further-information}
 
-Os valores da propriedade OSGi do nível de visualização são herdados do nível de publicação. No entanto, os valores do nível de visualização podem ser distintos do nível de publicação, definindo o parâmetro `service` para o valor `preview`. O exemplo a seguir de uma propriedade OSGi determina o URL de um endpoint de integração.
+Consulte também:
 
-```
-[
-{
-"name":"INTEGRATION_URL",
-"type":"string",
-"value":"http://s2.integrationvendor.com",
-"service": "preview"
-}
-]
-```
+* [Configurações do OSGi para o nível de visualização](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
 
-Para obter mais informações, consulte [esta seção](/help/implementing/deploying/configuring-osgi.md#author-vs-publish-configuration) da documentação de configuração do OSGi.
-
-## Depuração da visualização usando o Console do desenvolvedor {#debugging-preview-using-the-developer-console}
-
-Siga estas etapas para depurar o nível de visualização usando o Console do Desenvolvedor:
-
-* No [Console do Desenvolvedor](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools), selecione **-- Todas as visualizações --** ou um ambiente de produção que inclua **prev** no nome
-* Gere as informações relevantes para a instância de visualização 
-Consulte [Gerenciamento de ambientes](/help/implementing/cloud-manager/manage-environments.md) para obter mais informações sobre como obter os URLs para seus ambientes.
+* [Depuração da visualização usando o Console do desenvolvedor](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)
