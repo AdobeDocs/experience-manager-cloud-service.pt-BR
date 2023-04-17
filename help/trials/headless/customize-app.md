@@ -5,9 +5,9 @@ hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
 source-git-commit: f3f7102496e846705718a65d69f59e110fbecae9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1028'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -93,7 +93,7 @@ Atualizar imagens e ativos em seus aplicativos com o CMS do AEM Headless é simp
 
 ## Adicionar uma referência a um novo fragmento de conteúdo no aplicativo {#create-moment}
 
-Agora que você atualizou a imagem do biker, vamos analisar como adicionar novo conteúdo a um aplicativo criando e fazendo referência a um novo Fragmento do conteúdo. Você adicionará uma chamada de produto gerenciada por um fragmento de conteúdo de “momento de compra” ao segundo painel do aplicativo.
+Agora que você atualizou a imagem do ciclista, vamos analisar como adicionar um novo conteúdo a um aplicativo criando e referenciando um novo fragmento de conteúdo. Você adicionará uma chamada de produto gerenciada por um fragmento de conteúdo de “momento de compra” ao segundo painel do aplicativo.
 
 ![Exemplo de um momento de compra](assets/do-not-localize/example-shoppable-moment.png)
 
