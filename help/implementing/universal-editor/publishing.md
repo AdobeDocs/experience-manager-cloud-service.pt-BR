@@ -1,36 +1,36 @@
 ---
 title: Publicação de conteúdo com o Editor visual universal
-description: Saiba como o Editor visual universal publica conteúdo e como seus aplicativos podem lidar com o conteúdo publicado.
+description: Saiba como o Editor visual universal publica o conteúdo e como seus aplicativos podem lidar com esse conteúdo.
 source-git-commit: 7eeebade0255263a240476bc32f9530574495751
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '367'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
 # Publicação de conteúdo com o Editor visual universal {#publishing}
 
-Saiba como o Editor visual universal publica conteúdo e como seus aplicativos podem lidar com o conteúdo publicado.
+Saiba como o Editor visual universal publica o conteúdo e como seus aplicativos podem lidar com esse conteúdo.
 
-## Semelhanças com AEM {#similarities}
+## Semelhanças com o AEM {#similarities}
 
-Para usuários de AEM, o processo para publicar conteúdo com o Universal Visual Editor funciona conforme você está acostumado: na publicação no AEM, o conteúdo é replicado do nível de criação para o nível de publicação.
+Para usuários do AEM, o processo de publicação de conteúdo do Editor visual universal funciona como de costume: ao publicar no AEM, o conteúdo é replicado da camada do autor para a camada de publicação.
 
 ## Diferenças {#differences}
 
-O que torna a publicação com o Universal Visual Editor um pouco diferente não é tanto o próprio editor, mas sim a hospedagem externa do aplicativo que o Universal Editor permite.
+O que torna a publicação com o Editor visual universal um pouco diferente não é tanto o próprio editor, mas sim a hospedagem externa do aplicativo que o Editor universal possibilita.
 
-Quando hospedado externamente, o objetivo do aplicativo da Web é garantir que o conteúdo seja carregado da camada do autor quando o aplicativo for aberto por autores no editor e carregado da camada de publicação quando o aplicativo for acessado por visitantes.
+Quando hospedado externamente, o objetivo do aplicativo web é garantir que o conteúdo seja carregado da camada do autor quando o aplicativo for aberto por autores no editor e carregado da camada de publicação quando o aplicativo for acessado por visitantes.
 
 ## Detecção da camada no aplicativo {#detecting}
 
-Determinar se o nível de criação ou publicação deve ser acessado pode ser obtido por uma simples declaração condicional no aplicativo para escolher o ponto de extremidade de autor ou publicação apropriado ao detectar que seu conteúdo está sendo aberto no editor.
+Para determinar se a camada do autor ou de publicação deve ser acessada, uma simples declaração condicional pode ser utilizada no aplicativo ao detectar que seu conteúdo está sendo aberto no editor, a fim de escolher o ponto de acesso apropriado do autor ou da publicação.
 
-Outra opção é implantar o aplicativo em dois ambientes diferentes, que são configurados de forma diferente, para que você recupere seu conteúdo do nível de criação e um que o recupere do nível de publicação. Para permitir que os autores abram o URL publicado no Editor Universal, um pequeno script pode ser criado para &quot;converter&quot; o URL do lado da publicação para seu equivalente no ambiente de criação (por exemplo, ao anexar um `author` (subdomínio), para que os autores sejam redirecionados automaticamente.
+Outra opção é implantar o aplicativo em dois ambientes configurados de forma diferente, para que um recupere o conteúdo da camada do autor e o outro o recupere da camada de publicação. Para permitir que os autores abram a URL publicada no Editor universal, um pequeno script pode ser criado para “converter” a URL do lado da publicação para seu equivalente no ambiente do autor (por exemplo, anexando um subdomínio `author`), para que os autores sejam redirecionados automaticamente.
 
 ## Resumo {#summary}
 
-O objetivo do Editor Universal é não impor qualquer padrão específico, de modo que a implementação possa alcançar melhor os seus objetivos de uma forma totalmente dissociada, mantendo ao mesmo tempo tudo simples e inovador para a implementação.
+O Editor universal não impõe nenhum padrão específico, de modo que a implementação possa alcançar melhor os seus objetivos de uma forma totalmente dissociada, mantendo um processo simples e direto para a implementação.
 
-Da mesma forma, o Editor Universal não faz nenhum requisito sobre como qualquer projeto específico deve continuar determinando a partir de qual camada fornecer o conteúdo. Em vez disso, ele permite várias possibilidades e permite que o projeto determine qual solução é a melhor para suas próprias necessidades.
+Da mesma forma, o Editor universal não estabelece nenhum requisito sobre como um projeto específico deve se comportar ao determinar de qual camada fornecer o conteúdo. Em vez disso, ele proporciona várias possibilidades e permite que o projeto determine qual solução é a melhor para seus próprios requisitos.
