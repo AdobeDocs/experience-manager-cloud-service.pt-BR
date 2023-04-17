@@ -4,9 +4,9 @@ description: Saiba como configurar pipelines de não produção para testar a qu
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 source-git-commit: aac397310babe1aa1e950c176459beaf665b72ce
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1369'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -40,8 +40,8 @@ Depois de configurar seu programa e ter pelo menos um ambiente usando a interfac
 
 1. Na guia **Configuração** da caixa de diálogo **Adicionar pipeline de não produção**, selecione o tipo de pipeline de não produção que você deseja adicionar.
 
-   * **Pipeline de qualidade do código** - Crie um pipeline que crie seu código, execute testes de unidade e avalie a qualidade do código, mas NÃO implante.
-   * **Pipeline de implantação** - Crie um pipeline que crie seu código, execute testes de unidade, avalie a qualidade do código e implante em um ambiente.
+   * **Pipeline de qualidade do código**: cria um pipeline que gera o seu código, executa testes de unidade e avalia a qualidade do código; porém, ele NÃO realiza implantações.
+   * **Pipeline de implantação**: cria um pipeline que gera o seu código, executa testes de unidade, avalia a qualidade do código e implanta em um ambiente.
 
    ![Caixa de diálogo Adicionar pipeline de não produção](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config.png)
 
@@ -52,7 +52,7 @@ Depois de configurar seu programa e ter pelo menos um ambiente usando a interfac
       * **Manual** - Use essa opção para iniciar manualmente o pipeline.
       * **Quando o Git é alterado** - Essas opções iniciam o pipeline de CI/CD sempre que confirmações são adicionadas à ramificação Git configurada. Com essa opção, ainda é possível iniciar o pipeline manualmente, conforme necessário.
 
-1. Se você optar por criar um **Pipeline de implantação** você também precisará definir a variável **Comportamento de falhas importantes da métrica**.
+1. Se optar por criar um **Pipeline de implantação**, você também precisará definir a variável **Comportamento de falhas de métricas importantes**.
 
    * **Sempre perguntar** - Essa é a configuração padrão e requer intervenção manual em qualquer falha importante.
    * **Falhar imediatamente** - Se selecionado, o pipeline será cancelado sempre que ocorrer uma falha importante. É como emular um usuário que rejeita manualmente cada falha.
@@ -116,11 +116,11 @@ Para concluir a configuração do pipeline de não produção do código de pilh
       * Insira os primeiros caracteres do nome da ramificação e o recurso de preenchimento automático do campo localizará as ramificações correspondentes para ajudá-lo em sua seleção.
    * **Ignorar configuração no nível da Web** - Quando marcado, o pipeline não implantará sua configuração no nível da Web.
 
-   * **Pipeline** - Se o pipeline for um pipeline de implantação, você pode optar por executar uma fase de teste. Marque as opções que deseja habilitar nesta fase. Se nenhuma das opções estiver selecionada, a fase de teste não será exibida durante a execução do pipeline.
+   * **Pipeline**: se um pipeline de implantação for utilizado, você pode optar por executar uma fase de teste. Marque as opções que deseja habilitar nesta fase. Se nenhuma das opções for selecionada, a fase de teste não será exibida durante a execução do pipeline.
 
-      * **Teste funcional do produto** - Execute [testes funcionais do produto](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) contra o ambiente de desenvolvimento.
-      * **Teste funcional personalizado** - Execute [testes funcionais personalizados](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) contra o ambiente de desenvolvimento.
-      * **Teste de interface personalizada** - Execute [testes de interface personalizada](/help/implementing/cloud-manager/ui-testing.md) para aplicativos personalizados.
+      * **Teste funcional do produto**: executa [testes funcionais de produto](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) no ambiente de desenvolvimento.
+      * **Teste funcional personalizado**: executa [testes funcionais personalizados](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) no ambiente de desenvolvimento.
+      * **Teste de interface personalizada**: executa [testes de interface personalizada](/help/implementing/cloud-manager/ui-testing.md) para aplicativos personalizados.
 
    ![Pipeline de pilha completa](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
 
