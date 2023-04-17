@@ -1,20 +1,20 @@
 ---
 title: Perfis de notificação
-description: Saiba como criar perfis de usuário no Admin Console para gerenciar o recebimento de notificações de email importantes.
+description: Saiba como criar perfis de usuários no Admin Console para gerenciar o recebimento de notificações de email importantes.
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
 source-git-commit: f7b3dec6380266a35f1bf7d90e0195277dd37335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '934'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
 
 # Perfis de notificação {#notification-profiles}
 
-Saiba como criar perfis de usuário no Admin Console para gerenciar o recebimento de notificações de email importantes.
+Saiba como criar perfis de usuários no Admin Console para gerenciar o recebimento de notificações de email importantes.
 
 ## Visão geral {#overview}
 
@@ -23,18 +23,18 @@ Periodicamente, a Adobe precisa entrar em contato com os usuários com relação
 * **Notificação de Incidente** - Estas notificações são enviadas durante um incidente ou quando a Adobe identificou um problema potencial de disponibilidade com seu ambiente do AEM as a Cloud Service.
 * **Notificação proativa** - Estas notificações são enviadas quando um membro da equipe de suporte da Adobe deseja fornecer orientação sobre uma possível otimização ou recomendação que pode beneficiar seu ambiente do AEM as a Cloud Service.
 
-Para que os usuários corretos recebam essas notificações, é necessário configurar e atribuir perfis de usuário, conforme descrito neste documento.
+Para que os usuários corretos recebam essas notificações, é necessário configurar e atribuir perfis de usuários conforme é descrito neste documento.
 
 ## Pré-requisitos {#prerequisites}
 
-Como os perfis de usuário são criados e mantidos no Admin Console, antes de criar perfis para notificações, você deve:
+Visto que os perfis de usuários são criados e mantidos no Admin Console, antes de criá-los para suas notificações, você deve:
 
-* Ter permissões para adicionar e criar perfis de associação.
+* Ter permissões para adicionar e editar associações de perfil.
 * Ter um perfil Adobe Admin Console válido.
 
 ## Criar novos perfis de produto do Cloud Manager {#create-profiles}
 
-Para configurar corretamente o recebimento de notificações, será necessário criar dois perfis de usuário. Estas etapas só devem ser feitas uma vez.
+Para configurar corretamente o recebimento de notificações, será necessário criar dois perfis de usuários. Estas etapas só devem ser feitas uma vez.
 
 1. Faça logon no Admin Console em [`https://adminconsole.adobe.com`.](https://adminconsole.adobe.com)
 
@@ -42,7 +42,7 @@ Para configurar corretamente o recebimento de notificações, será necessário 
 
 1. Na página **Visão geral**, selecione **Adobe Experience Manager as a Cloud Service** no cartão **Produtos e serviços**.
 
-   ![Lista de produtos e serviços na Admin Console](assets/products_services.png)
+   ![Lista de produtos e serviços no Admin Console](assets/products_services.png)
 
 1. Navegue até a instância do **Cloud Manager** a partir da lista de todas as instâncias.
 
@@ -78,9 +78,9 @@ Seus dois novos perfis de notificação são criados.
 
 ## Atribuir usuários aos perfis de notificação {#add-users}
 
-Agora que os perfis foram criados, você deve atribuir os usuários apropriados. Você pode fazer isso ao criar novos usuários ou ao atualizar usuários existentes.
+Agora que os perfis foram criados, é necessário atribuir os usuários apropriados. Você pode fazer isso ao criar novos usuários ou ao atualizar usuários existentes.
 
-### Adicionar novos usuários a perfis {#new-user}
+### Adicionar novos usuários aos perfis {#new-user}
 
 Siga estas etapas para adicionar usuários para os quais as IDs federadas ainda não foram configuradas.
 
@@ -94,7 +94,7 @@ Siga estas etapas para adicionar usuários para os quais as IDs federadas ainda 
 
    ![Usuários](assets/product_services.png)
 
-1. Se a ID federareda dos membros da equipe ainda não tiver sido configurada, selecione a guia **Usuários** na navegação superior, em seguida, selecione **Adicionar usuário**. Caso contrário, pule para a seção [Adicionar usuários existentes a perfis.](#existing-users)
+1. Se a ID federareda dos membros da equipe ainda não tiver sido configurada, selecione a guia **Usuários** na navegação superior, em seguida, selecione **Adicionar usuário**. Caso contrário, pule para a seção [Adicionar usuários existentes aos perfis.](#existing-users)
 
    ![Usuários](assets/cloud_manager_add_user.png)
 
@@ -102,7 +102,7 @@ Siga estas etapas para adicionar usuários para os quais as IDs federadas ainda 
 
 1. Clique no botão de mais sob o título **Selecionar produtos** para iniciar a seleção do produto.
 
-1. Selecionar **Adobe Experience Manager as a Cloud Service** e atribua um ou ambos os novos perfis ao usuário.
+1. Selecione **Adobe Experience Manager as a Cloud Service** e atribua um ou ambos os novos perfis ao usuário.
 
    * **Notificação de incidente - Cloud Service**
    * **Notificação proativa - Cloud Service**
@@ -111,7 +111,7 @@ Siga estas etapas para adicionar usuários para os quais as IDs federadas ainda 
 
 O usuário convidado agora receberá as notificações. Repita essas etapas para os usuários de sua equipe que você gostaria que recebesse notificações.
 
-### Adicionar usuários existentes a perfis {#existing-user}
+### Adicionar usuários existentes aos perfis {#existing-user}
 
 Siga estas etapas para adicionar usuários para os quais já existem IDs federadas.
 
@@ -125,13 +125,13 @@ Siga estas etapas para adicionar usuários para os quais já existem IDs federad
 
 1. Selecione a guia **Usuários** na navegação superior.
 
-1. Se a ID federada já existir para o membro da equipe que você deseja adicionar a um perfil de notificação, localize esse usuário na lista e clique nele. Caso contrário, pule para a seção [Adicionar novos usuários a perfis.](#add-user)
+1. Se o Federated ID já existir para o membro da equipe que você deseja adicionar a um perfil de notificação, localize esse usuário na lista e clique nele. Caso contrário, pule para a seção [Adicionar novos usuários aos perfis.](#add-user)
 
 1. Na seção **Produtos** da janela de detalhes do usuário, clique no botão reticências e selecione **Editar**.
 
 1. Na janela **Editar produtos**, clique no botão de lápis abaixo do cabeçalho **Selecionar produtos** para iniciar a seleção de produtos.
 
-1. Selecionar **Adobe Experience Manager as a Cloud Service** e atribua um ou ambos os novos perfis ao usuário.
+1. Selecione **Adobe Experience Manager as a Cloud Service** e atribua um ou ambos os novos perfis ao usuário.
 
    * **Notificação de incidente - Cloud Service**
    * **Notificação proativa - Cloud Service**
