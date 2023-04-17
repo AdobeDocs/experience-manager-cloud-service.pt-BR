@@ -2,7 +2,7 @@
 title: Configuração de redes avançadas para o AEM as a Cloud Service
 description: Saiba como configurar recursos avançados de rede, como VPN ou um endereço IP de saída flexível ou dedicado para o AEM as a Cloud Service
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 8ca2340bf6d39248ed3596828f27745dcaff2c75
+source-git-commit: 67e801cc22adfbe517b769e829e534eadb1806f5
 workflow-type: tm+mt
 source-wordcount: '3053'
 ht-degree: 100%
@@ -494,7 +494,7 @@ O diagrama abaixo fornece uma representação visual de um conjunto de domínios
     <td>O IP do gateway de VPN no lado do AEM. A equipe de engenharia de rede de um cliente pode usar isso para permitir somente conexões VPN, de um endereço IP específico, ao respectivo gateway de VPN. </td>
   </tr>
   <tr>
-    <td><code>p{PROGRAM_ID}.inner.adobeaemcloud.net</code></td>
+    <td><code>p{PROGRAM_ID}.{REGION}.inner.adobeaemcloud.net</code></td>
     <td>O IP do tráfego vindo do lado AEM da VPN para o lado do cliente. Isso pode ser incluído na lista de permissões na configuração do cliente para garantir que as conexões só possam ser feitas a partir do AEM.</td>
     <td>Se o cliente quiser permitir o acesso por VPN ao AEM, ele deverá configurar as entradas de DNS CNAME para mapear seu domínio personalizado e/ou <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> e/ou <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> para isso.</td>
   </tr>
