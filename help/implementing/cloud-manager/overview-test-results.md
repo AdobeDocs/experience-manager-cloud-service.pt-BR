@@ -3,9 +3,9 @@ title: Visão geral dos testes do Cloud Manager
 description: Obtenha uma visão geral dos três tipos de testes que o Cloud Manager executa automaticamente para garantir a qualidade do seu código personalizado.
 exl-id: 5f5c97b1-4180-4f49-af8b-257d4744766e
 source-git-commit: 94f818b7622e0f878d15ba30e2f07a169bd114c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '164'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Há três categorias de testes compatíveis com o Cloud Manager para os pipeline
 
 1. [Teste funcional](/help/implementing/cloud-manager/functional-testing.md)
 
-   * O ensaio funcional faz parte da fase de ensaio de uma fase [pipeline de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) e, opcionalmente, parte da fase de ensaio de um [pipeline de não produção.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+   * O teste funcional faz parte da fase de testes de um [pipeline de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) e, opcionalmente, de um [pipeline de não produção.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
 
 1. [Teste de auditoria de experiência](/help/implementing/cloud-manager/experience-audit-testing.md)
 
