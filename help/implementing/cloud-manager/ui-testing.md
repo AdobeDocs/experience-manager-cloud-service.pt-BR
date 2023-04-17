@@ -4,8 +4,8 @@ description: Os testes de interface do usuário personalizados são um recurso o
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 source-git-commit: 53f1a6bb83e4ad52d00f9899db0a87c3cb3e2653
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2147'
+ht-degree: 98%
 
 ---
 
@@ -25,7 +25,7 @@ O AEM fornece um conjunto integrado de [quality gates (portais de qualidade) do 
 
 Os testes de interface são testes baseados em Selenium, compactados em uma imagem do Docker, para permitir uma variedade de opções de linguagens e estruturas (como Java e Maven, Node e WebDriver.io, ou qualquer outra estrutura e tecnologia criada no Selenium). Além disso, um projeto de testes de interface pode ser facilmente gerado usando o [Arquétipo de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR).
 
-Os testes da interface do usuário são executados como parte de uma porta de qualidade específica para cada pipeline do Cloud Manager com um [**Teste de interface personalizada** step](/help/implementing/cloud-manager/deploy-code.md) em [gasodutos de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) ou opcionalmente [Gasodutos de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). Quaisquer testes de interface do usuário, incluindo regressão e novas funcionalidades, permitem que erros sejam detectados e relatados.
+Os testes de interface são executados como parte de uma porta de qualidade específica para cada pipeline do Cloud Manager que contém uma etapa [**de** Teste de interface personalizada](/help/implementing/cloud-manager/deploy-code.md) nos [pipelines de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) ou, opcionalmente, nos [pipelines de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). Quaisquer testes de interface do usuário, incluindo regressão e novas funcionalidades, permitem que erros sejam detectados e relatados.
 
 Diferentemente dos testes funcionais personalizados, que são testes HTTP escritos em Java, os testes de interface do usuário podem ser uma imagem do Docker com testes escritos em qualquer idioma, desde que sigam as convenções definidas na seção [Compilação de testes de interface do usuário](#building-ui-tests).
 

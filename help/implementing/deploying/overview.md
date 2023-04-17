@@ -5,8 +5,8 @@ feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 source-git-commit: 4eb7b1a32f0e266f12f67fdd2d12935698eeac95
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3509'
+ht-degree: 100%
 
 ---
 
@@ -104,7 +104,7 @@ Após a mudança para a nova versão do aplicativo:
    * Pastas (adicionar, modificar, remover)
    * Modelos editáveis (adicionar, modificar, remover)
    * Configuração sensível ao contexto (qualquer item abaixo de `/conf`) (adicionar, modificar, remover)
-   * Scripts (os pacotes podem acionar ganchos de instalação em vários estágios do processo de instalação do pacote. Consulte a [Documentação do Jackrabbit filevault](https://jackrabbit.apache.org/filevault/installhooks.html) sobre ganchos de instalação.  Observe que o AEM CS usa atualmente o Filevault versão 3.4.0, que limita os ganchos de instalação aos usuários administradores, usuários do sistema e membros do grupo de administradores).
+   * Scripts (os pacotes podem acionar ganchos de instalação em vários estágios do processo de instalação do pacote. Consulte a [documentação do Jackrabbit Filevault](https://jackrabbit.apache.org/filevault/installhooks.html) sobre ganchos de instalação. Observe que o AEM CS usa atualmente o Filevault versão 3.4.0, que limita os ganchos de instalação aos usuários administradores, usuários do sistema e membros do grupo de administradores)).
 
 É possível limitar a instalação de conteúdo mutável para criar ou publicar incorporando pacotes em uma pasta install.author ou install.publish sob `/apps`. A reestruturação para refletir esta separação foi efetuada no AEM 6.5 e os detalhes sobre a reestruturação de projetos recomendada podem ser encontrados na [documentação do AEM 6.5.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=pt-BR)
 
@@ -287,14 +287,14 @@ Diferentemente dos ambientes de desenvolvimento comuns, que implantam código po
 
 ## Modos de execução {#runmodes}
 
-Nas soluções de AEM existentes, os clientes têm a opção de executar instâncias com modos de execução arbitrários e aplicar a configuração OSGI ou instalar pacotes OSGI a essas instâncias específicas. Os modos de execução definidos normalmente incluem o *serviço* (autor e publicação) e o ambiente (RDE, desenvolvimento, preparo, produção).
+Nas soluções do AEM existentes, os clientes têm a opção de executar instâncias com modos de execução arbitrários e aplicar a configuração OSGI ou instalar pacotes OSGI nessas instâncias específicas. Os modos de execução definidos normalmente incluem o *serviço* (autor e publicação) e o ambiente (RDE, desenvolvimento, preparo, produção).
 
 O AEM as a Cloud Service, por outro lado, é mais opinativo sobre quais modos de execução estão disponíveis e como os pacotes OSGI e a configuração OSGI podem ser mapeados para eles:
 
 * Os modos de execução da configuração OSGI devem fazer referência ao RDE, desenvolvimento, preparo e produção, no caso do ambiente, ou ao autor e à publicação, no caso do serviço. Uma combinação de `<service>.<environment_type>` está tendo suporte, mas elas devem ser usadas nessa ordem específica (por exemplo, `author.dev` ou `publish.prod`). Os tokens OSGI devem ser referenciados diretamente do código, em vez de usar o método de `getRunModes`, que não incluirá mais o `environment_type` no tempo de execução. Para obter mais informações, consulte [Configuração do OSGi para o AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md).
 * Os modos de execução de pacotes OSGI são limitados ao serviço (autor, publicação). Os pacotes OSGI do modo por execução devem ser instalados no pacote de conteúdo em `install.author` ou `install.publish`.
 
-AEM as a Cloud Service não permite o uso de modos de execução para instalar conteúdo para ambientes ou serviços específicos. Se um ambiente de desenvolvimento precisar ser pré-implantado com dados ou HTML que não estejam nos ambientes de armazenamento temporário ou de produção, o gerenciador de pacotes poderá ser usado.
+O AEM as a Cloud Service não permite o uso de modos de execução para instalar conteúdo em ambientes ou serviços específicos. Se um ambiente de desenvolvimento precisar ser semeado com dados ou HTML que não estejam nos ambientes de preparo ou produção, o gerenciador de pacotes poderá ser usado.
 
 As configurações de modo de execução compatíveis são:
 

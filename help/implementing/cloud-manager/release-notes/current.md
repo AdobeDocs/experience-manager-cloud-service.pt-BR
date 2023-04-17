@@ -13,7 +13,7 @@ ht-degree: 50%
 
 # Notas de versão do Cloud Manager 2023.4.0 no Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Esta página documenta as notas da versão 2023.4.0 do Cloud Manager no AEM as a Cloud Service.
+Esta página documenta as notas de versão 2023.4.0 do Cloud Manager no AEM as a Cloud Service.
 
 >[!NOTE]
 >

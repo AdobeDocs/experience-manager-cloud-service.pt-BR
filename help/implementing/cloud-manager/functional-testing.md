@@ -5,7 +5,7 @@ exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 source-git-commit: cd0b40ffa54eac0d7488b23329c4d2666c992da7
 workflow-type: tm+mt
 source-wordcount: '1124'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -37,14 +37,14 @@ Tanto os testes funcionais do produto quanto os testes funcionais personalizados
 
 Os testes funcionais do produto são um conjunto de testes estáveis de integração HTTP (ITs) com funcionalidade principal no AEM, como tarefas de autoria e replicação. Esses testes são mantidos pela Adobe e têm como objetivo impedir a implantação de alterações no código de aplicativo personalizado, caso interrompa as funcionalidades principais.
 
-* [Pipelines de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md): Os testes funcionais do produto são executados automaticamente sempre que você implanta o novo código no Cloud Manager e não podem ser ignorados.
-* [Pipelines de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md): Os testes funcionais do produto podem ser opcionalmente selecionados para serem executados sempre que você executar o pipeline de não produção.
+* [Pipelines de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md): os testes funcionais do produto são executados automaticamente sempre que um novo código é implantado no Cloud Manager e não podem ser ignorados.
+* [Pipelines de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md): os testes funcionais do produto podem ser opcionalmente selecionados para serem executados sempre que você executar o pipeline de não produção.
 
 Os testes funcionais do produto são mantidos como um projeto de código aberto. Consulte os [testes funcionais do produto](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) no GitHub para obter detalhes.
 
 ### Teste funcional personalizado {#custom-functional-testing}
 
-Embora o teste funcional do produto seja definido pela Adobe, você pode criar seu próprio teste de qualidade para o seu aplicativo. Isso será executado como um teste funcional personalizado como parte do [pipeline de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) ou opcionalmente [pipeline de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) para garantir a qualidade do seu aplicativo.
+Embora o teste funcional do produto seja definido pela Adobe, você pode criar seu próprio teste de qualidade para o seu aplicativo. Isso será realizado na forma de um teste funcional personalizado como parte do [pipeline de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) ou, opcionalmente, do [pipeline de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md), a fim de garantir a qualidade do seu aplicativo.
 
 O teste funcional personalizado é executado tanto para implantações de código personalizado quanto para atualizações por push, o que torna especialmente importante criar bons testes funcionais, a fim de impedir que as alterações de código do AEM quebrem o código do aplicativo. A etapa de teste funcional personalizado está sempre presente e não pode ser ignorada.
 

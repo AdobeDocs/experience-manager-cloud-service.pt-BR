@@ -11,7 +11,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: ca28ed2b9d566015bd62e54d27e69629650f9e82
 workflow-type: tm+mt
 source-wordcount: '4038'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -545,7 +545,7 @@ ht-degree: 98%
             + [Criar um formulário adaptável](/help/forms/creating-adaptive-form-core-components.md)
             + [Criar temas para um Formulário adaptável - Componentes principais](/help/forms/using-themes-in-core-components.md)
             + [Gerar documento de registro para Formulários adaptáveis](/help/forms/generate-document-of-record-core-components.md)
-            + [Livro da conferência](/help/forms/summit-2023-workbook.md)
+            + [Pasta de trabalho do Summit](/help/forms/summit-2023-workbook.md)
       + Criação de Formulários adaptáveis - Componentes básicos {#authoring-adaptive-forms-foundation-components}
          + Converter formulários em PDF em Formulários adaptáveis {#afcs}
             + [Introdução ao serviço de conversão automática de formulários](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=pt-BR)
@@ -967,10 +967,10 @@ ht-degree: 98%
       + [AEM as a Cloud Service e diretrizes de acessibilidade da Web](/help/compliance/accessibility/web-accessibility.md)
       + [Um guia rápido para a WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md)
 + Editor universal {#universal-editor}
-   + [Introdução ao Editor Universal](/help/implementing/universal-editor/introduction.md)
-   + [Criação de conteúdo com o editor universal](/help/implementing/universal-editor/authoring.md)
-   + [Publicação de conteúdo com o editor universal](/help/implementing/universal-editor/publishing.md)
+   + [Introdução ao Editor universal](/help/implementing/universal-editor/introduction.md)
+   + [Criação de conteúdo com o Editor universal](/help/implementing/universal-editor/authoring.md)
+   + [Publicação de conteúdo com o Editor universal](/help/implementing/universal-editor/publishing.md)
    + [Introdução ao Editor universal no AEM](/help/implementing/universal-editor/getting-started.md)
-   + [Arquitetura do editor universal](/help/implementing/universal-editor/architecture.md)
+   + [Arquitetura do Editor universal](/help/implementing/universal-editor/architecture.md)
    + [Atributos e tipos](/help/implementing/universal-editor/attributes-types.md)
-   + [Autenticação do editor universal](/help/implementing/universal-editor/authentication.md)
+   + [Autenticação do Editor universal](/help/implementing/universal-editor/authentication.md)
