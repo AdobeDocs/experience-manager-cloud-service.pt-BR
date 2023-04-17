@@ -1,41 +1,41 @@
 ---
-title: Autenticação do editor universal
-description: Saiba como o Editor Universal se autentica.
+title: Autenticação do Editor universal
+description: Saiba como funciona a autenticação do Editor universal.
 source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '326'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# Autenticação do editor universal {#authentication}
+# Autenticação do Editor universal {#authentication}
 
-Saiba como o Editor Universal se autentica.
+Saiba como funciona a autenticação do Editor universal.
 
 ## Opções {#options}
 
-O Editor Universal usa autenticação Adobe Identity Management System (IMS), que é fornecida por meio do Unified Shell.
+O Editor universal utiliza o sistema de Identify Management (IMS) da Adobe como forma de autenticação, que é fornecido por meio do Unified Shell.
 
-Todos os aplicativos/páginas remotas são responsáveis pela autenticação de sistemas de back-end necessários. O serviço Universal Editor precisa dessa autenticação para os sistemas de backend realizarem operações de CRUD, pois é um serviço independente.
+Todos os aplicativos/páginas remotas são responsáveis pela autenticação dos sistemas de back-end necessários. A autenticação é essencial no Editor universal para que os sistemas de back-end realizem operações CRUD, que é um serviço independente.
 
 ## Fluxo padrão {#standard-flow}
 
-Essa é a solução para AEM o as a Cloud Service e o AMS usando o IMS para usar o editor Universal.
+Essa é a solução que permite que o AEM as a Cloud Service e AMS utilizem o IMS para fazer uso do Editor universal.
 
-Para usar o Editor Universal, o usuário deve estar conectado no Unified Shell, que se autentica no IMS. O token IMS fornecido é armazenado no armazenamento de sessão dos usuários.
+Para utilizar o Editor universal, o usuário precisar estar conectado no Unified Shell, que utiliza o IMS na autenticação. O token do IMS fornecido é armazenado na sessão do usuário.
 
-Sempre que um usuário executa uma operação CRUD, uma chamada é enviada para o serviço do Editor Universal com o token portador IMS no cabeçalho HTTP. O serviço Editor Universal usa o token portador para autenticar a solicitação no sistema de back-end AEM para executar operações no nome do usuário.
+Ao executar uma operação CRUD, uma chamada é enviada para o serviço do Editor universal com o token do portador do IMS no cabeçalho HTTP. Em seguida, o token do portador é utilizado pelo serviço do Editor universal para autenticar a solicitação no sistema de back-end do AEM e executar operações no nome do usuário.
 
 ![Fluxo de autenticação padrão](assets/standard-flow.png)
 
 ## Recursos adicionais {#additional-resources}
 
-Para saber mais sobre o Universal Editor, consulte estes documentos.
+Para saber mais sobre o Editor universal, consulte estes documentos.
 
-* [Introdução ao Editor Universal](introduction.md) - Saiba como o Editor Universal permite editar qualquer aspecto de qualquer conteúdo em qualquer implementação para fornecer experiências excepcionais, aumentar a velocidade do conteúdo e fornecer uma experiência de desenvolvedor de última geração.
-* [Criação de conteúdo com o editor universal](authoring.md) - Saiba como é fácil e intuitivo para os autores de conteúdo criar conteúdo usando o Editor Universal.
-* [Publicação de conteúdo com o editor universal](publishing.md) - Saiba como o Editor visual universal publica conteúdo e como seus aplicativos podem lidar com o conteúdo publicado.
-* [Introdução ao Editor universal no AEM](getting-started.md) - Saiba como obter acesso ao Universal Editor e como começar a instrumentar seu primeiro aplicativo AEM para usá-lo.
-* [Arquitetura do editor universal](architecture.md) - Saiba mais sobre a arquitetura do Editor Universal e como os dados fluem entre seus serviços e camadas.
-* [Atributos e tipos](attributes-types.md) - Saiba mais sobre os atributos e tipos de dados exigidos pelo Editor Universal.
+* [Introdução ao Editor universal](introduction.md): saiba como o Editor universal permite editar qualquer aspecto do conteúdo das implementações, a fim de entregar experiências excepcionais, aumentar a velocidade do conteúdo e fornecer uma experiência de desenvolvedor de última geração.
+* [Criação de conteúdo com o Editor universal](authoring.md): saiba como é fácil e intuitivo para os autores criarem conteúdo utilizando o Editor universal.
+* [Publicação de conteúdo com o Editor universal](publishing.md): saiba como o Editor visual universal publica o conteúdo e como seus aplicativos podem lidar com esse conteúdo.
+* [Introdução ao Editor universal no AEM](getting-started.md): saiba como obter acesso ao Editor universal e começar a instrumentar seu primeiro aplicativo do AEM para utilizá-lo.
+* [Arquitetura do Editor universal](architecture.md): conheça a arquitetura do Editor universal e como os dados fluem entre seus serviços e camadas.
+* [Atributos e tipos](attributes-types.md): saiba mais sobre os atributos e tipos de dados exigidos pelo Editor universal.
