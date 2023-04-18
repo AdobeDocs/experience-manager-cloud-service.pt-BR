@@ -2,10 +2,10 @@
 title: Introdução aos programas de sandbox
 description: Saiba o que são programas de sandbox e como se diferem dos programas de produção.
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 18c5d2ba77a97413d0d83235ad2baec9fe4b0238
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 100%
+source-wordcount: '493'
+ht-degree: 88%
 
 ---
 
@@ -70,3 +70,9 @@ hibernados, eles podem ter sua hibernação cancelada manualmente.
 Os programas de sandbox são excluídos após seis meses em modo de hibernação contínua, depois disso, podem ser recriados.
 
 Consulte [Hibernação e cancelamento da hibernação de ambientes de sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md) para obter mais detalhes.
+
+### Sem suporte técnico {#no-support}
+
+Como um programa de sandbox é normalmente criado para servir aos propósitos de treinamento, execução de demonstrações, ativação ou prova de conceitos (POCs), o suporte técnico não está disponível para problemas enfrentados em um programa de sandbox.
+
+Se tiver problemas ao criar e gerenciar os programas do sandbox, isso ainda estará dentro do escopo do suporte técnico.
