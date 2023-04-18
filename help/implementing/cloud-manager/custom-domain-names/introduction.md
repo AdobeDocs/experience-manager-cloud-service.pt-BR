@@ -2,9 +2,9 @@
 title: Introdução a nomes de domínio personalizados
 description: A interface do usuário do Cloud Manager permite adicionar um domínio personalizado para identificar seu site com um nome exclusivo e de marca, de maneira automatizada.
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: 5649f083c55cd84296f38acbff3f395e77a7e422
+source-git-commit: cc6910bad0d0a62232bd66e0080b6802b9a1110b
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '673'
 ht-degree: 82%
 
 ---
@@ -42,7 +42,7 @@ Existem várias limitações no uso de nomes de domínio personalizados com o AE
 * Nomes de domínio não podem ser adicionados a ambientes enquanto houver um pipeline de execução atual anexado a esses ambientes.
 * O mesmo nome de domínio não pode ser usado em mais de um ambiente.
 * Somente um nome de domínio pode ser adicionado por vez.
-* AEM as a Cloud Service não suporta domínios curingas como `*.example.com`.
+* AEM as a Cloud Service não oferece suporte a domínios curingas, como `*.example.com`.
 * Antes de adicionar um nome de domínio personalizado, um certificado SSL válido que contenha o nome de domínio personalizado (certificados curingas são válidos) deve ser instalado para o seu programa. Consulte [Adicionar um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) para saber mais.
 
 >[!NOTE]
