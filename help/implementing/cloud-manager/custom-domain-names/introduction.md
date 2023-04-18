@@ -2,10 +2,10 @@
 title: Introdução a nomes de domínio personalizados
 description: A interface do usuário do Cloud Manager permite adicionar um domínio personalizado para identificar seu site com um nome exclusivo e de marca, de maneira automatizada.
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: 01ff58fee9d309de75afcb556726e1cf32b9f70a
+source-git-commit: 5649f083c55cd84296f38acbff3f395e77a7e422
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 100%
+source-wordcount: '672'
+ht-degree: 82%
 
 ---
 
@@ -37,13 +37,13 @@ Você pode comprar um nome de domínio de um registrador de nomes de domínio, d
 
 Existem várias limitações no uso de nomes de domínio personalizados com o AEMaaCS.
 
-* Os nomes de domínio personalizados são suportados no Cloud Manager para programas de publicação e visualização do Services for Sites. Os domínios personalizados no lado do autor não são suportados.
-* Cada ambiente do Cloud Manager pode hospedar até 500 domínios personalizados.
-* O AEM as a Cloud Service não oferece suporte a domínios curingas.
-* Antes de adicionar um nome de domínio personalizado, um certificado SSL válido contendo o nome de domínio personalizado deve ser instalado para o seu programa. Consulte Adição de um certificado SSL para saber mais.
-* Os nomes de domínio não podem ser adicionados aos ambientes enquanto houver um pipeline em execução anexado a eles.
-* Somente um nome de domínio pode ser adicionado por vez.
+* Os nomes de domínio personalizados são suportados no Cloud Manager para serviços de publicação e visualização de programas do Sites. Não há suporte para domínios personalizados para serviços de criação.
+* Cada ambiente do Cloud Manager pode hospedar até 500 domínios personalizados por ambiente.
+* Nomes de domínio não podem ser adicionados a ambientes enquanto houver um pipeline de execução atual anexado a esses ambientes.
 * O mesmo nome de domínio não pode ser usado em mais de um ambiente.
+* Somente um nome de domínio pode ser adicionado por vez.
+* AEM as a Cloud Service não suporta domínios curingas como `*.example.com`.
+* Antes de adicionar um nome de domínio personalizado, um certificado SSL válido que contenha o nome de domínio personalizado (certificados curingas são válidos) deve ser instalado para o seu programa. Consulte [Adicionar um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) para saber mais.
 
 >[!NOTE]
 >
