@@ -5,10 +5,10 @@ landing-page-description: Saiba como gerenciar Fragmentos de conteúdo no Consol
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: 6c15a4dc408d96a6532da67c1736bc3e96824321
+source-git-commit: cdc86e5661ec90f96f670e777a9c98b3dcd4a7ac
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1051'
+ht-degree: 80%
 
 ---
 
@@ -68,22 +68,33 @@ Aqui você pode ver três áreas principais:
       * Ao usar o mouse sobre os cabeçalhos da coluna, um seletor de ação suspenso e os controles deslizantes de largura serão mostrados. Isso permite:
          * Classificar - selecione a ação apropriada para crescente ou decrescente. Essa opção classificará toda a tabela de acordo com essa coluna. A classificação só está disponível nas colunas apropriadas.
          * Redimensionar a coluna - usando os controles deslizantes de ação ou largura
-      * É possível [selecionar um ou mais Fragmentos de conteúdo para mostrar as ações disponíveis](#actions-selected-content-fragment)
-   * **[Criar](#creating-new-content-fragment)** um novo fragmento de conteúdo
-   * [Filtrar](#filtering-fragments) os fragmentos de conteúdo de acordo com uma seleção de predicados e salvar o filtro para uso futuro
-   * [Pesquisar](#searching-fragments) os fragmentos de conteúdo
-   * [Personalizar a visualização da tabela para mostrar as colunas de informações selecionadas](#select-available-columns)
-   * Usar o recurso **Abrir no Assets** para abrir o local atual diretamente no console de **Ativos**
 
-      >[!NOTE]
-      >
-      >O console de **Ativos** é usado para acessar ativos, como imagens, vídeos etc.  Esse console pode ser acessado:
-      >
-      >* usando o link **Abrir no Assets** (no Console de fragmentos de conteúdo)
-      >* diretamente do painel de navegação global
+## Ações {#actions}
+
+No console, há um intervalo de ações que você pode usar, diretamente ou após selecionar um fragmento específico:
+
+* Várias ações são diretamente [disponível no console](#available-actions)
+* Você pode [selecione um ou mais Fragmentos de conteúdo para mostrar as ações apropriadas](#actions-selected-content-fragment)
+
+### Ações (não selecionadas) {#actions-unselected}
+
+Algumas ações estão disponíveis no console, sem selecionar um Fragmento de conteúdo específico:
+
+* **[Criar](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)** um novo fragmento de conteúdo
+* [Filtrar](#filtering-fragments) os fragmentos de conteúdo de acordo com uma seleção de predicados e salvar o filtro para uso futuro
+* [Pesquisar](#searching-fragments) os fragmentos de conteúdo
+* [Personalizar a visualização da tabela para mostrar as colunas de informações selecionadas](#select-available-columns)
+* Usar o recurso **Abrir no Assets** para abrir o local atual diretamente no console de **Ativos**
+
+   >[!NOTE]
+   >
+   >O console de **Ativos** é usado para acessar ativos, como imagens, vídeos etc.  Esse console pode ser acessado:
+   >
+   >* usando o link **Abrir no Assets** (no Console de fragmentos de conteúdo)
+   >* diretamente do painel de navegação global
 
 
-## Ações para um Fragmento de conteúdo (selecionado) {#actions-selected-content-fragment}
+### Ações para um Fragmento de conteúdo (selecionado) {#actions-selected-content-fragment}
 
 Selecionar um fragmento específico abrirá uma barra de ferramentas focada nas ações disponíveis para esse fragmento. Também é possível selecionar vários fragmentos; a seleção de ações será ajustada de acordo.
 
@@ -146,12 +157,6 @@ Assim como em outros consoles, você pode configurar as colunas que estão visí
 Isso apresentará uma lista de colunas que você pode ocultar ou mostrar:
 
 ![Console de Fragmentos de conteúdo - configuração de coluna](assets/cfc-console-column-selection.png)
-
-## Criar um novo fragmento de conteúdo {#creating-new-content-fragment}
-
-Selecionar **Criar** abre a caixa de diálogo compacta **Novo fragmento de conteúdo**:
-
-![Console de fragmentos de conteúdo - Criar um novo fragmento](assets/cfc-console-create.png)
 
 ## Filtrar fragmentos {#filtering-fragments}
 
