@@ -3,10 +3,10 @@ title: Configurar pipelines de não produção
 description: Saiba como configurar pipelines de não produção para testar a qualidade do código antes de implantar em ambientes de produção.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: aac397310babe1aa1e950c176459beaf665b72ce
-workflow-type: ht
-source-wordcount: '1369'
-ht-degree: 100%
+source-git-commit: 0dd1cfba81eb8dfab3e002333868ec79ebc5e96c
+workflow-type: tm+mt
+source-wordcount: '1403'
+ht-degree: 97%
 
 ---
 
@@ -94,6 +94,12 @@ Para concluir a configuração do pipeline de não produção do código de fron
 O pipeline é salvo e agora você pode [gerenciar seus pipelines](managing-pipelines.md) no cartão **Pipelines** na página **Visão geral do programa**.
 
 ### Código de pilha completa {#full-stack-code}
+
+>[!NOTE]
+>
+>* Esse recurso ainda não está disponível no geral. Espera-se que seja lançado em junho de 2023.
+>* Se você quiser experimentar o recurso e fornecer feedback para melhorar, entre em contato com o representante do Adobe.
+
 
 Um pipeline de código de pilha completa implanta simultaneamente compilações de código de back-end e front-end contendo um ou mais aplicativos de servidor do AEM, juntamente com a configuração HTTPD/Dispatcher. Consulte o documento [Pipelines de CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline) para obter mais informações sobre esse tipo de pipeline.
 
