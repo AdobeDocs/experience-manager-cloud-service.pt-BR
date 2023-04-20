@@ -2,10 +2,10 @@
 title: Conceitos de criação
 description: Conceitos de criação no AEM
 exl-id: ee9e4952-e075-4398-b31f-d7886153efff
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: b407765438086bb2f7fb720fb7f1dd05699cb48f
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 100%
+source-wordcount: '385'
+ht-degree: 81%
 
 ---
 
@@ -33,9 +33,9 @@ O autor trabalha no que é conhecido como **ambiente do autor**. Isso oferece um
 
 >[!NOTE]
 >
->Sua conta precisa dos direitos de acesso apropriados para criar, editar ou publicar conteúdos.
+>Sua conta precisa dos direitos de acesso apropriados para criar, editar ou publicar conteúdo.
 
-Dependendo do modo como sua instância e seus direitos de acesso pessoais estão configurados, você pode executar muitas tarefas no seu conteúdo, incluindo (dentre outras):
+Dependendo de como sua instância e seus direitos de acesso pessoais são configurados, você pode executar muitas tarefas no seu conteúdo, incluindo (entre outras):
 
 * Geração de conteúdo novo ou edição do conteúdo existente em uma página
 * Uso de modelos predefinidos para criar novas páginas de conteúdo
@@ -51,6 +51,12 @@ Além disso, há tarefas administrativas que o ajudam a gerenciar seu conteúdo:
 >[!NOTE]
 >
 >O AEM também é administrado no ambiente do autor.
+
+## Visualização de conteúdo {#previewing-content}
+
+O AEM também oferece um serviço de visualização do Sites que permite aos desenvolvedores e autores de conteúdo visualizar a experiência final de um site antes que ele chegue ao ambiente de publicação e esteja disponível publicamente.
+
+Consulte [Visualização de conteúdo](/help/sites-cloud/authoring/fundamentals/previewing-content.md) para obter mais detalhes.
 
 ## Ambiente de publicação {#publish-environment}
 
