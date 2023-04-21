@@ -2,10 +2,10 @@
 title: Introdução à arquitetura do Adobe Experience Manager as a Cloud Service
 description: Introdução à arquitetura do Adobe Experience Manager as a Cloud Service.
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: 5a8d66c2ca2bed664d127579a8fdbdf3aa45c910
+source-git-commit: c67be5b7f5dc454511753faa16bc46b10e72dde4
 workflow-type: tm+mt
-source-wordcount: '1797'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -56,11 +56,11 @@ Isso:
 
 * Permite que o AEM as a Cloud Service acomode os padrões de tráfego à medida que são alterados.
 
-O dimensionamento de instâncias por locatário do serviço pode ser automático ou manual, nos dois eixos:
+O dimensionamento de instâncias por locatário do serviço se aplica aos dois eixos:
 
-* Vertical: a memória alocada e a capacidade da CPU podem ser aumentadas ou diminuídas para um número fixo de nós.
+* Horizontal: o número de nós para um determinado serviço é aumentado ou diminuído automaticamente, permitindo ainda configurações padrão individuais.
 
-* Horizontal: o número de nós para determinado serviço pode ser aumentado ou diminuído.
+* Vertical: a memória alocada e a capacidade da CPU podem ser ampliadas ou diminuídas por meio da configuração de um número fixo de nós para atender aos requisitos individuais, conforme necessário.
 
 ## Ambientes {#environments}
 
