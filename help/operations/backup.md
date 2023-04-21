@@ -5,7 +5,7 @@ exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
 source-git-commit: eec03acf5d208236ddac338134f95fb3aaa5ee26
 workflow-type: tm+mt
 source-wordcount: '515'
-ht-degree: 3%
+ht-degree: 24%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 3%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_backuprestore"
 >title="Backup e restauração"
->abstract="AEM as a Cloud Service pode restaurar o aplicativo completo (código e conteúdo) de um cliente para horários específicos e predeterminados nos últimos sete dias, substituindo o que estava em produção. Esse recurso deve ser usado somente quando houver problemas graves com código ou conteúdo. Os dados recentes entre o momento do backup restaurado e o presente serão perdidos. O armazenamento temporário também será restaurado para a versão antiga."
+>abstract="O AEM as a Cloud Service pode restaurar o aplicativo completo (código e conteúdo) de um cliente para uma hora específica e predeterminada nos últimos sete dias, substituindo o que estava em produção. Esse recurso deve ser usado somente quando houver problemas graves com código ou conteúdo. Os dados recentes entre o momento do backup restaurado e o presente serão perdidos. O armazenamento temporário também será restaurado para a versão antiga."
 
 Caso ocorra corrupção de conteúdo ou dados, AEM as a Cloud Service pode restaurar o aplicativo completo (código e conteúdo) de um cliente para horários específicos e predeterminados nos últimos sete dias, substituindo o que estava em produção.
 Se a implantação de um cliente, o que significa que o código de aplicativo implantado está corrompido ou corrompido, é preferível corrigi-lo e implantá-lo em uma nova versão em vez de restaurá-lo a partir do backup. O backup é executado de uma maneira que não afeta o desempenho de tempo de execução de um aplicativo.

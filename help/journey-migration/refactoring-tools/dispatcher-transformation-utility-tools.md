@@ -5,7 +5,7 @@ exl-id: 2e95ff7b-cc94-477d-99ab-816a58998287
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '337'
-ht-degree: 48%
+ht-degree: 61%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 48%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_dispconverter"
 >title="Conversor do Dispatcher do AEM"
->abstract="O Conversor do Dispatcher do Adobe Experience Manager converte AEM configurações existentes do Dispatcher em AEM configurações as a Cloud Service do Dispatcher."
+>abstract="O Conversor do Dispatcher do Adobe Experience Manager converte as configurações existentes do Dispatcher do AEM para configurações do Dispatcher do AEM as a Cloud Service."
 
-O Conversor do Dispatcher do Adobe Experience Manager converte AEM configurações existentes do Dispatcher em AEM configurações as a Cloud Service do Dispatcher.
+O Conversor do Dispatcher do Adobe Experience Manager converte as configurações existentes do Dispatcher do AEM para configurações do Dispatcher do AEM as a Cloud Service.
 
 ## Introdução ao Dispatcher {#introduction-dispatcher}
 

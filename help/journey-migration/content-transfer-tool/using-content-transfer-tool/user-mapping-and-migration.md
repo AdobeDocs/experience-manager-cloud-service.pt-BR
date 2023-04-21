@@ -4,7 +4,7 @@ description: Visão geral do mapeamento de usuários e da migração principal
 source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
 workflow-type: tm+mt
 source-wordcount: '757'
-ht-degree: 18%
+ht-degree: 22%
 
 ---
 
@@ -12,7 +12,7 @@ ht-degree: 18%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_usermapping"
->title="Mapeamento de usuário"
+>title="Mapeamento de usuários"
 >abstract="A ferramenta de Transferência de conteúdo ajuda a mover usuários e grupos do sistema existente do AEM para o AEM as a Cloud Service. Os usuários existentes devem ser mapeados para suas IDs IMS para evitar que elas sejam duplicadas na instância do autor do Cloud Service."
 
 >[!NOTE]

@@ -1,11 +1,11 @@
 ---
 title: Diretrizes de desenvolvimento do AEM as a Cloud Service
-description: Conheça as diretrizes para o desenvolvimento AEM as a Cloud Service e sobre as formas importantes com que ele difere das AEM locais e AEM no AMS.
+description: Conheça as diretrizes para desenvolvimento no AEM as a Cloud Service e as principais diferenças em relação ao AEM local e ao AEM no AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 source-git-commit: 5a8d66c2ca2bed664d127579a8fdbdf3aa45c910
 workflow-type: tm+mt
 source-wordcount: '2591'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 2%
 >[!CONTEXTUALHELP]
 >id="development_guidelines"
 >title="Diretrizes de desenvolvimento do AEM as a Cloud Service"
->abstract="Conheça as diretrizes para o desenvolvimento AEM as a Cloud Service e sobre as formas importantes com que ele difere das AEM locais e AEM no AMS."
+>abstract="Conheça as diretrizes para desenvolvimento no AEM as a Cloud Service e as principais diferenças em relação ao AEM local e ao AEM no AMS."
 >additional-url="https://video.tv.adobe.com/v/330555?captions=por_br/" text="Demonstração da estrutura do pacote"
 
 O presente documento apresenta orientações para o desenvolvimento AEM as a Cloud Service e sobre formas importantes com que difere das AEM locais e AEM no AMS.
@@ -156,7 +156,7 @@ Para desenvolvimento local, os desenvolvedores têm acesso total ao CRXDE Lite (
 
 Observe que, no desenvolvimento local (usando o SDK), `/apps` e `/libs` O pode ser gravado diretamente no , o que é diferente dos ambientes do Cloud, onde as pastas de nível superior são imutáveis.
 
-### AEM ferramentas de desenvolvimento as a Cloud Service {#aem-as-a-cloud-service-development-tools}
+### Ferramentas de desenvolvimento do AEM as a Cloud Service {#aem-as-a-cloud-service-development-tools}
 
 Os clientes podem acessar o CRXDE lite no ambiente de desenvolvimento do nível de criação, mas não no ambiente de preparo ou produção. O repositório imutável (`/libs`, `/apps`) não pode ser gravado em no tempo de execução, portanto, tentar fazer isso resultará em erros.
 

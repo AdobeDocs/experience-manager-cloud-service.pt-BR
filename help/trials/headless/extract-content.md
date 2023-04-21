@@ -6,8 +6,8 @@ index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
 source-git-commit: 09396211b428884f4d522fbcc2dd13086af51dfd
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '755'
+ht-degree: 96%
 
 ---
 

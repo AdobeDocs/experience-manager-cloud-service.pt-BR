@@ -5,7 +5,7 @@ exl-id: 9d5a72b8-06af-4b82-ab20-e65aea7903b3
 source-git-commit: d925310603961f1f3721c283fc247105459e9c0f
 workflow-type: tm+mt
 source-wordcount: '2122'
-ht-degree: 13%
+ht-degree: 21%
 
 ---
 
@@ -14,15 +14,15 @@ ht-degree: 13%
 >[!CONTEXTUALHELP]
 >id="aemcloud_migration_overview"
 >title="Migração para o AEM as a Cloud Service"
->abstract="Descreve a abordagem em fases recomendada para clientes de transição de várias implantações de Experience Manager para o Experience Manager as a Cloud Service e ajuda os clientes existentes a fornecer experiências contínuas e conectadas"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html" text="Novidades e diferenças?"
+>abstract="Descreve a abordagem em fases recomendada para clientes de transição de várias implantações do Experience Manager para o Experience Manager as a Cloud Service e ajuda os clientes existentes a fornecer experiências contínuas e conectadas"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html" text="Quais são as novidades e as diferenças?"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/introduction.html" text="Introdução ao AEM as a Cloud Service."
 
 O Adobe Experience Manager (AEM) as a Cloud Service oferece uma base reformulada para o Experience Manager, baseada em uma infraestrutura baseada em contêiner, desenvolvimento orientado por API e processo DevOps orientado, permitindo que os profissionais de marketing e desenvolvedores continuem sempre à frente da curva nas inovações de gerenciamento de experiência do cliente.
 
 O Cloud Service reúne recursos avançados e prontos para uso do Adobe Experience Manager com a agilidade da arquitetura moderna nativa em nuvem, permitindo que as marcas atendam às demandas sempre em evolução do consumidor.
 
-Esse único pager descreve a abordagem de fases recomendada para clientes de transição de várias implantações de Experience Manager para o Experience Manager as a Cloud Service e ajuda os clientes existentes a fornecer experiências contínuas e conectadas nessa plataforma moderna e criada especificamente para o gerenciamento de experiências.
+Este resumo descreve a abordagem em fases recomendada para fazer a transição de clientes de várias implantações do Experience Manager para o Experience Manager as a Cloud Service e ajudar os clientes existentes a fornecer experiências conectadas e contínuas nesta plataforma moderna e específica para gerenciamento de experiências.
 
 <!-- It primarily focuses on:
 * Getting Started with Adobe Experience Manager as a Cloud Service
@@ -37,7 +37,7 @@ Consulte o diagrama abaixo para obter uma representação geral da jornada de mi
 
 | O que é diferente? | Visão geral da arquitetura |
 |--------------------------|--------------------------|
-| <ul><li>[Arquitetura moderna](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/architecture.html)</li><li>[Atualizações automáticas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html)</li><li>[Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)</li><li>[Microsserviços de ativos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/asset-microservices-overview.html)</li><li>[Binários de acesso direto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/asset-microservices-overview.html?lang=en)</li><li>[Separação de código e conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html?lang=en)</li><li>[Replicação como um serviço](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/replication.html?lang=en)</li><li>[Admin Console, Associação de Grupo/Usuário e ACLs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html)</li></ul> | <ul><li>[Introdução à arquitetura de AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-architecture.html?lang=en#underlying-technology)</li><li>[Pilha de ambiente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/architecture.html)</li><li>[Camada do autor](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html?lang=en#underlying-technology)</li><li>[Publicar camada](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html?lang=en#underlying-technology)</li><li>[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html?lang=en)</li><li>[CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=en) </li><li>[Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html) (CI/CD)</li><li>[Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=pt-BR) via [Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html)</li><li>[Serviço Asset compute](https://experienceleague.adobe.com/docs/asset-compute/using/home.html)</li></ul> |
+| <ul><li>[Arquitetura moderna](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/architecture.html)</li><li>[Atualizações automáticas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html)</li><li>[Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/introduction.html?lang=pt-BR)</li><li>[Microsserviços de ativos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/asset-microservices-overview.html)</li><li>[Binários de acesso direto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/asset-microservices-overview.html?lang=en)</li><li>[Separação de código e conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html?lang=en)</li><li>[Replicação como um serviço](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/replication.html?lang=pt-BR)</li><li>[Admin Console, Associação de Grupo/Usuário e ACLs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html)</li></ul> | <ul><li>[Introdução à arquitetura de AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-architecture.html?lang=en#underlying-technology)</li><li>[Pilha de ambiente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/architecture.html)</li><li>[Camada do autor](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html?lang=en#underlying-technology)</li><li>[Publicar camada](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html?lang=en#underlying-technology)</li><li>[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html?lang=en)</li><li>[CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=en) </li><li>[Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/introduction.html?lang=pt-BR) (CI/CD)</li><li>[Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=pt-BR) via [Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html)</li><li>[Serviço Asset compute](https://experienceleague.adobe.com/docs/asset-compute/using/home.html)</li></ul> |
 
 ![AEM as a Cloud Service - Arquitetura do tempo de execução](/help/overview/assets/concepts-03.png "AEM as a Cloud Service - Arquitetura do tempo de execução")
 
@@ -70,7 +70,7 @@ Consulte os recursos de autoajuda sobre como configurar e implantar em ambientes
 
 1. [Configurar pipeline CM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?lang=en)
    * Pipeline de produção
-   * Pipelines somente para não-produção e qualidade de código
+   * Pipelines somente de não produção e qualidade de código
 2. [Implantar código](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=en)
 3. [Noções básicas dos resultados de teste](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/test-results/overview-test-results.html?lang=en)
 4. **Acessar logs**
@@ -106,7 +106,7 @@ Consulte os recursos de autoajuda sobre como configurar e implantar em ambientes
 >[!CONTEXTUALHELP]
 >id="aemcloud_move_to_cloud"
 >title="Migração para o Adobe Experience Manager as a Cloud Service"
->abstract="Esse único pager descreve a abordagem de fases recomendada para clientes de transição de várias implantações de Experience Manager para o Experience Manager as a Cloud Service e ajuda os clientes existentes a fornecer experiências contínuas e conectadas nessa plataforma moderna e criada especificamente para o gerenciamento de experiências."
+>abstract="Este resumo descreve a abordagem em fases recomendada para fazer a transição de clientes de várias implantações do Experience Manager para o Experience Manager as a Cloud Service e ajudar os clientes existentes a fornecer experiências conectadas e contínuas nesta plataforma moderna e específica para gerenciamento de experiências."
 
 **O Experience Manager as a Cloud Service oferece uma base de tecnologia escalável, segura e ágil para Experience Manager Sites e Assets, permitindo que os profissionais de marketing e TI se concentrem em fornecer experiências impactantes em escala.**
 

@@ -1,23 +1,23 @@
 ---
-title: Benefícios do uso do Cloud Acceleration Manager
+title: Vantagens do uso do Cloud Acceleration Manager
 description: Esta página destaca os principais benefícios do uso do Cloud Acceleration Manager.
 exl-id: d7a6c4f6-0f50-4f44-8a62-4a5769c76bd5
 source-git-commit: fac037b59753ba1de960df47311c1febc2059d27
 workflow-type: tm+mt
 source-wordcount: '261'
-ht-degree: 0%
+ht-degree: 34%
 
 ---
 
-# Benefícios do uso do Cloud Acceleration Manager {#benefits-cam}
+# Vantagens do uso do Cloud Acceleration Manager {#benefits-cam}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_benefits"
->title="Benefícios do uso do Cloud Acceleration Manager"
->abstract="O Cloud Acceleration Manager (CAM) equipe suas equipes com uma experiência guiada com as práticas recomendadas e a metodologia do Adobe para ajudar suas equipes a planejar, implementar e ativar com confiança."
+>title="Vantagens do uso do Cloud Acceleration Manager"
+>abstract="O Cloud Acceleration Manager (CAM) prepara suas equipes com uma experiência guiada que inclui práticas recomendadas e a metodologia da Adobe para ajudá-las a planejar, implementar e publicar com confiança."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html" text="Introdução ao Cloud Acceleration Manager"
 
-Com uma grande variedade de requisitos comerciais e personalizações, a migração para a nuvem pode ser um projeto envolvido. O Cloud Acceleration Manager (CAM) equipe suas equipes com uma experiência guiada com as práticas recomendadas e a metodologia do Adobe para ajudar suas equipes a planejar, implementar e ativar com confiança.
+Com uma grande variedade de requisitos comerciais e personalizações, a migração para a nuvem pode ser um projeto envolvido. O Cloud Acceleration Manager (CAM) prepara suas equipes com uma experiência guiada que inclui práticas recomendadas e a metodologia da Adobe para ajudá-las a planejar, implementar e publicar com confiança.
 
 Os principais benefícios do uso do Cloud Acceleration Manager são:
 

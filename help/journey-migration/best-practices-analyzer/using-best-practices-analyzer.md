@@ -5,7 +5,7 @@ exl-id: e8498e17-f55a-4600-87d7-60584d947897
 source-git-commit: e11cb3215dc005bfd38959f3ceaaad25becad65c
 workflow-type: tm+mt
 source-wordcount: '2490'
-ht-degree: 41%
+ht-degree: 48%
 
 ---
 
@@ -13,9 +13,9 @@ ht-degree: 41%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_bpa_using"
->title="Uso do Analisador de práticas recomendadas"
->abstract="Consulte a documentação para usar o Analisador de práticas recomendadas (antigo Cloud Readiness Analyzer) e o relatório gerado. O Relatório do Analisador de práticas recomendadas é usado para obter um alto nível de compreensão da disponibilidade geral de atualização."
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introdução às ferramentas para acelerar a Jornada para o Adobe Experience Manager as a Cloud Service"
+>title="Utilização do Analisador de Práticas Recomendadas"
+>abstract="Consulte a documentação para usar o Analisador de Práticas Recomendadas (antigo Cloud Readiness Analyzer) e o relatório gerado. O relatório do Analisador de Práticas Recomendadas é usado para obter um alto nível de compreensão da preparação geral para a atualização."
+>additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinário] Introdução às ferramentas para acelerar a jornada para o Adobe Experience Manager as a Cloud Service"
 
 ## Considerações importantes sobre o uso do Analisador de práticas recomendadas {#imp-considerations}
 
@@ -43,10 +43,10 @@ Siga a seção abaixo para entender as considerações importantes para a execu�
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_bpa_download"
->title="Baixe o Analisador de práticas recomendadas"
->abstract="O Analisador de práticas recomendadas pode ser baixado como um arquivo zip no Portal de distribuição de software. Você pode instalar o pacote por meio do Gerenciador de pacotes na sua instância de origem do Adobe Experience Manager (AEM)."
+>title="Baixar o Analisador de práticas recomendadas"
+>abstract="É possível baixar o Analisador de Práticas Recomendadas como arquivo zip no Portal de distribuição de software. Você pode instalar o pacote por meio do Gerenciador de pacotes na sua instância de origem do Adobe Experience Manager (AEM)."
 
-O Analisador de práticas recomendadas pode ser baixado como um arquivo zip no Portal de distribuição de software. Você pode instalar o pacote via [Gerenciador de pacotes](/help/implementing/developing/tools/package-manager.md) na instância de origem do Adobe Experience Manager (AEM).
+É possível baixar o Analisador de Práticas Recomendadas como arquivo zip no Portal de distribuição de software. Você pode instalar o pacote via [Gerenciador de pacotes](/help/implementing/developing/tools/package-manager.md) na instância de origem do Adobe Experience Manager (AEM).
 
 >[!NOTE]
 >Baixe o Analisador de práticas recomendadas do [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) portal.
@@ -125,9 +125,9 @@ For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP i
 >[!CONTEXTUALHELP]
 >id="aemcloud_bpa_interpreting"
 >title="Interpretação do relatório do Analisador de práticas recomendadas"
->abstract="Há duas opções para visualizar saídas de relatórios BPA: Interface do usuário e CSV. Quando a ferramenta Analisador de práticas recomendadas é executada na instância de AEM, o relatório da interface do usuário é exibido como resultado na janela da ferramenta. O formato CSV do relatório inclui informações geradas a partir da saída do Detector de padrões, classificadas e organizadas por tipo de categoria, subtipo e nível de importância."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#analysis-report" text="Relatório de análise de práticas recomendadas"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=en" text="Noções básicas sobre as categorias de relatório do Analisador de práticas recomendadas"
+>abstract="Há duas opções para visualizar relatórios do Analisador de Práticas Recomendadas: na interface e CSV. Quando o Analisador de Práticas Recomendadas é executado na instância do AEM, o relatório é exibido como resultado na janela da ferramenta. O formato CSV do relatório inclui informações geradas a partir da saída do Detector de padrões, classificadas e organizadas por tipo de categoria, subtipo e nível de importância."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#analysis-report" text="Revisão do relatório do Analisador de Práticas Recomendadas"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=en" text="Noções básicas sobre as categorias do relatório do Analisador de Práticas Recomendadas"
 
 Quando a ferramenta Analisador de práticas recomendadas é executada na instância de AEM, o relatório é exibido como resultado na janela da ferramenta.
 

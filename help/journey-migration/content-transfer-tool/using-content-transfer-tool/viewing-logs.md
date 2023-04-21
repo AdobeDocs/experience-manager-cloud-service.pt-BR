@@ -5,7 +5,7 @@ exl-id: aed1ac83-a2fb-425e-aca4-39cd0bb42fd3
 source-git-commit: fac037b59753ba1de960df47311c1febc2059d27
 workflow-type: tm+mt
 source-wordcount: '249'
-ht-degree: 12%
+ht-degree: 40%
 
 ---
 
@@ -14,12 +14,12 @@ ht-degree: 12%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_logs"
->title="Visualização de logs"
->abstract="Após a conclusão da extração da assimilação, verifique os logs em busca de erros/avisos. Todos os erros devem ser resolvidos imediatamente, lidando com os problemas relatados ou entrando em contato com o suporte ao Adobe."
+>title="Exibir logs"
+>abstract="Após a conclusão da extração da ingestão, verifique os logs em busca de erros/avisos. Todos os erros devem ser resolvidos imediatamente, seja resolvendo os problemas relatados ou entrando em contato com o suporte da Adobe."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html#troubleshooting" text="Resolução de problemas"
 >additional-url="https://helpx.adobe.com/ca/enterprise/admin-guide.html/ca/enterprise/using/support-for-experience-cloud.ug.html" text="Contato com o suporte da Adobe"
 
-Após a conclusão de cada etapa (extração e assimilação), verifique os logs e procure erros.  Todos os erros devem ser resolvidos imediatamente, lidando com os problemas relatados ou entrando em contato com o suporte ao Adobe.
+Após a conclusão de cada etapa (extração e assimilação), verifique os logs e procure erros.  Todos os erros devem ser resolvidos imediatamente, seja resolvendo os problemas relatados ou entrando em contato com o suporte da Adobe.
 
 ## Etapas para visualizar logs {#viewing-logs}
 

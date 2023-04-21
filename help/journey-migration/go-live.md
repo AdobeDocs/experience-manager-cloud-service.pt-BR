@@ -5,7 +5,7 @@ exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
 source-git-commit: 30acb844ee4021b3e14011b548825c864de8903d
 workflow-type: tm+mt
 source-wordcount: '1727'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
@@ -13,8 +13,8 @@ ht-degree: 2%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_prep"
->title="Preparação ao vivo"
->abstract="Para garantir um lançamento tranquilo e bem-sucedido AEM as a Cloud Service, você deve planejar períodos de congelamento de código e conteúdo, iterações de teste, atualizações de conteúdo, testes de desempenho, testes de segurança e muito mais."
+>title="Preparo para a ativação"
+>abstract="Para garantir uma ativação tranquila e bem-sucedida do AEM as a Cloud Service, você deve planejar períodos de congelamento de código e conteúdo, iterações de teste, atualizações de conteúdo, testes de desempenho, testes de segurança e muito mais."
 
 Nesta parte da jornada, você aprenderá a planejar e executar a migração assim que o código e o conteúdo estiverem prontos para serem transferidos para AEM as a Cloud Service. Além disso, você aprenderá quais são as práticas recomendadas e as limitações conhecidas ao executar a migração.
 
