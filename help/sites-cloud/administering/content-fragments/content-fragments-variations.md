@@ -330,6 +330,7 @@ Eles serão adicionados à sequência de parágrafo do fragmento sem qualquer fo
 1. Use **Selecionar** para adicionar o ativo ao sistema de parágrafo do fragmento de conteúdo no local atual.
 
    >[!CAUTION]
+   >
    >Se, após adicionar um ativo, você alterar o formato para:
    >* **Texto simples:** o ativo será completamente perdido do fragmento.
    ?* **Marcação**: o ativo não estará visível, mas ainda estará lá ao retornar para **Rich Text**.
@@ -347,8 +348,8 @@ Eles serão adicionados como referência, no local atual no fragmento.
 
 >[!CAUTION]
 >
->E>sses ativos não podem ser movidos ou excluídos em uma página de referência. Isso deve ser feito no editor do fragmento.
-No entanto, a formatação do ativo (por exemplo, seu tamanho) deve ser feita no [editor de páginas](/help/sites-cloud/authoring/fundamentals/content-fragments.md). A representação do ativo no editor de fragmento serve meramente para a criação do fluxo de conteúdo.
+>Esses ativos não podem ser movidos ou excluídos em uma página de referência. Isso deve ser feito no editor do fragmento.
+>No entanto, a formatação do ativo (por exemplo, seu tamanho) deve ser feita no [editor de páginas](/help/sites-cloud/authoring/fundamentals/content-fragments.md). A representação do ativo no editor de fragmento serve meramente para a criação do fluxo de conteúdo.
 
 >[!NOTE]
 >
