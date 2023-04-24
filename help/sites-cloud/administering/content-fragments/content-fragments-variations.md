@@ -333,7 +333,7 @@ Eles serão adicionados à sequência de parágrafo do fragmento sem qualquer fo
    >
    >Se, após adicionar um ativo, você alterar o formato para:
    >* **Texto simples:** o ativo será completamente perdido do fragmento.
-   ?* **Marcação**: o ativo não estará visível, mas ainda estará lá ao retornar para **Rich Text**.
+   >* **Marcação**: o ativo não estará visível, mas ainda estará lá ao retornar para **Rich Text**.
 
 
 ### Inserir um fragmento de conteúdo no fragmento {#inserting-content-fragment-into-your-fragment}
