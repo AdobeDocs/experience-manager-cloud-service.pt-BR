@@ -4,10 +4,10 @@ description: Use um aplicativo de exemplo do React para saber como personalizar 
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: f3f7102496e846705718a65d69f59e110fbecae9
+source-git-commit: 2f4e38ba9bb2e0aab4dc126719a922fc983f8711
 workflow-type: tm+mt
 source-wordcount: '1028'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
