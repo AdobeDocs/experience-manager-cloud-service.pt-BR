@@ -4,14 +4,18 @@ description: Usar a ferramenta Mapeamento de usuários (herdada)
 exl-id: dcb750c4-0f81-4d11-ac6c-0592162b683d
 hide: true
 hidefromtoc: true
-source-git-commit: f7be351c85b8db6d11033c7cf064529a46c2802a
+source-git-commit: 154c3eb3dbee07e830f489212777540a18c952b3
 workflow-type: tm+mt
-source-wordcount: '819'
+source-wordcount: '842'
 ht-degree: 3%
 
 ---
 
 # Usar a ferramenta Mapeamento de usuários (herdada) {#using-user-mapping-tool}
+
+>[!INFO]
+>
+>Esta documentação se refere a uma versão obsoleta dessa ferramenta. Para obter mais informações sobre a versão mais recente, consulte [Mapeamento de usuários e migração principal](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
 
 A Ferramenta de mapeamento de usuários usa uma API que permite procurar usuários do Adobe Identity Management System (IMS) por email e retornar suas IDs IMS. Essa API exige que o usuário crie uma ID do cliente para sua organização, um Segredo do cliente e um Token de acesso ou portador.
 
