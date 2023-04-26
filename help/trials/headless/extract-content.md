@@ -4,10 +4,10 @@ description: Saiba como usar fragmentos de conteúdo e a API GraphQL como um sis
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 2f4e38ba9bb2e0aab4dc126719a922fc983f8711
+source-git-commit: a2064dcbec1c171b0a6de57b4197f4921d234428
 workflow-type: tm+mt
-source-wordcount: '1092'
-ht-degree: 71%
+source-wordcount: '1114'
+ht-degree: 69%
 
 ---
 
@@ -117,19 +117,19 @@ Agora que executou os dois tipos principais de consulta, você está pronto para
 
 1. Para executar consultas em seus próprios fragmentos de conteúdo, altere o ponto de acesso da pasta **Ativos de demonstração do AEM** para a pasta **Seu projeto**.
 
-1. Exclua todo o conteúdo existente no editor de consultas. Em seguida, insira um colchete de abertura `{` e pressione Ctrl+Barra de espaço ou Option+Barra de espaço para obter uma lista de modelos de preenchimento automático que foram definidos no seu ponto de acesso. Dentre as opções, selecione o modelo criado que termina em `List`.
+1. Exclua todo o conteúdo existente no editor de consultas. Em seguida, insira um colchete de abertura `{` e pressione Ctrl+Barra de espaço ou Option+Barra de espaço para obter uma lista de modelos de preenchimento automático que foram definidos no seu ponto de acesso. Dentre as opções, selecione o modelo criado que termina em `List`. Se você seguiu os exemplos dos módulos anteriores, deverá encontrar `adventureList` na lista de preenchimento automático.
 
-   ![Iniciar consulta personalizada](assets/do-not-localize/custom-query-1-2.png)
+   ![Iniciar consulta personalizada](assets/do-not-localize/custom-query-1.png)
 
 1. Defina os itens que a consulta deve conter para o modelo de fragmento de conteúdo selecionado. Novamente, insira um colchete de abertura `{` e pressione Ctrl+Barra de espaço ou Option+Barra de espaço para obter uma lista de preenchimento automático. Selecione `items` nas opções.
 
 1. Toque ou clique no botão **Adornar** para formatar automaticamente o seu código e facilitar a leitura.
 
-1. Depois de concluir, toque ou clique no botão **Reproduzir** na parte superior esquerda do editor para executar a consulta. O editor preenche automaticamente os `items` e a consulta é executada.
+1. Depois de concluir, toque ou clique no botão **Reproduzir** na parte superior esquerda do editor para executar a consulta. O editor preenche automaticamente o `items`, que são brevemente destacadas em amarelo e o query é executado.
 
 1. Os resultados são exibidos no painel direito, ao lado do editor de consultas.
 
-   ![Executar consulta personalizada](assets/do-not-localize/custom-query-3-4-5-6.png)
+   ![Executar consulta personalizada](assets/do-not-localize/custom-query-2.png)
 
 É assim que o seu conteúdo pode ser entregue em experiências digitais omnicanal.
 
@@ -151,7 +151,6 @@ Você criará uma consulta persistente que inclui dados que gostaria de consumir
          description {
            plaintext
          }
-         title
          price
          image {
            ... on ImageRef {
