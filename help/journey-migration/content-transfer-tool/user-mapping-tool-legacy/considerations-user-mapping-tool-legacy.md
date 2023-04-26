@@ -4,7 +4,7 @@ description: Considerações importantes para a ferramenta Mapeamento de usuári
 exl-id: 0d39a5be-93e1-4b00-ac92-c2593c02b740
 hide: true
 hidefromtoc: true
-source-git-commit: 154c3eb3dbee07e830f489212777540a18c952b3
+source-git-commit: 8a258c2c929f9af84a1cde99072291a3e7f6cfc3
 workflow-type: tm+mt
 source-wordcount: '620'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 >[!INFO]
 >
->Esta documentação se refere a uma versão obsoleta dessa ferramenta. Para obter mais informações sobre a versão mais recente, consulte [Mapeamento de usuários e migração principal](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
+>Esta documentação se refere a uma versão obsoleta da ferramenta. Para obter mais informações sobre a versão mais recente, consulte [Mapeamento de usuários e migração principal](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
 
 ## Casos excepcionais {#exceptional-cases}
 
