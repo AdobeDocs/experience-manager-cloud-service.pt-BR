@@ -8,9 +8,9 @@ user-guide-description: Saiba como o Experience Manager as a Cloud Service funci
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 2a487654c3af2d2ec3aa43481caed5e1d4fc77a2
+source-git-commit: 91b8fe48d72da9ef764732e5188bb8340b7a660a
 workflow-type: tm+mt
-source-wordcount: '4062'
+source-wordcount: '4068'
 ht-degree: 98%
 
 ---
@@ -789,8 +789,10 @@ ht-degree: 98%
          + [Visão geral](/help/implementing/cloud-manager/overview-test-results.md)
          + [Teste de qualidade do código](/help/implementing/cloud-manager/code-quality-testing.md)
          + [Regras de qualidade do código personalizado](/help/implementing/cloud-manager/custom-code-quality-rules.md)
-         + [Teste funcional](/help/implementing/cloud-manager/functional-testing.md)
-         + [Teste de interface](/help/implementing/cloud-manager/ui-testing.md)
+         + Teste funcional {#functional-testing}
+            + [Visão geral dos testes funcionais](/help/implementing/cloud-manager/functional-testing.md)
+            + [Teste funcional Java](/help/implementing/cloud-manager/java-functional-testing.md)
+            + [Teste de interface](/help/implementing/cloud-manager/ui-testing.md)
          + [Teste de auditoria de experiência](/help/implementing/cloud-manager/experience-audit-testing.md)
       + [Acesso e gerenciamento de registros](/help/implementing/cloud-manager/manage-logs.md)
       + [Relatórios de SLA](/help/implementing/cloud-manager/sla-reporting.md)

@@ -2,10 +2,10 @@
 title: Teste de interface do usuário
 description: Os testes de interface do usuário personalizados são um recurso opcional que permite criar e executar automaticamente testes na interface do usuário para seus aplicativos personalizados.
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 53f1a6bb83e4ad52d00f9899db0a87c3cb3e2653
+source-git-commit: 24796bd7d9c5e726cda13885bc4bd7e4155610dc
 workflow-type: tm+mt
-source-wordcount: '2147'
-ht-degree: 98%
+source-wordcount: '2238'
+ht-degree: 93%
 
 ---
 
@@ -275,15 +275,32 @@ Os testes às vezes devem carregar arquivos no aplicativo que está sendo testad
    * O conteúdo da resposta é um identificador de arquivo opaco.
    * Você pode usar esse identificador no lugar de um caminho de arquivo em um elemento `<input>` para testar os uploads de arquivo em seu aplicativo.
 
-## Execução de testes de interface locais {#run-ui-tests-locally}
-
-Antes de ativar os testes de interface em um pipeline do Cloud Manager, é recomendável executá-los localmente no [SDK do AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) ou em uma instância real do AEM as a Cloud Service.
-
 ### Pré-requisitos {#prerequisites}
 
-Os testes no Cloud Manager serão executados usando um usuário administrador técnico.
+1. Os testes no Cloud Manager serão executados usando um usuário administrador técnico.
 
-Para executar os testes de interface em seu computador local, crie um usuário com permissões de administrador para obter o mesmo comportamento.
+>[!NOTE]
+>
+>Para executar os testes funcionais no computador local, crie um usuário com permissões de administrador para alcançar o mesmo comportamento.
+
+1. A infraestrutura confinada que é escoada para testes funcionais é limitada pelos seguintes limites:
+
+| Tipo | Valor | Descrição |
+|----------------------|-------|--------------------------------------------------------------------|
+| CPU | 2.0 | Quantidade de tempo reservado da CPU por execução de teste |
+| Memória | 1Gi | Quantidade de memória alocada no teste, valor em gibytes |
+| Tempo limite | 30m | A duração após a qual o teste será encerrado. |
+| Duração recomendada | 15m | Recomendamos escrever os testes para não demorar mais do que esse tempo. |
+
+>[!NOTE]
+>
+> Caso precise de mais recursos, crie um caso de Atendimento ao cliente e descreva o caso de uso; nossa equipe verificará sua solicitação e fornecerá a assistência apropriada.
+
+
+## Execução de testes de interface locais {#run-ui-tests-locally}
+
+Antes de ativar testes da interface em um pipeline do Cloud Manager, é recomendável executar os testes da interface localmente em relação à variável [AEM SDK as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
+ou contra uma instância real AEM as a Cloud Service.
 
 ### Exemplo de teste do JavaScript {#javascript-sample}
 
