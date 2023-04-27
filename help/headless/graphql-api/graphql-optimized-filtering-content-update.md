@@ -119,8 +119,7 @@ Para executar o procedimento, siga as etapas abaixo:
    >* CF_MIGRATION_LIMIT = 1000
    >* CF_MIGRATION_INTERNAL = 60 (Segundos)
    >* Tempo aproximado necessário para concluir a migração = 60 + (20.000/1.000 * 60) = 1.260 Segundos = 21 Minutos
-      >  Os “60” segundos adicionais no início se devem ao atraso inicial ao iniciar o processo.
-
+   >  Os “60” segundos adicionais no início se devem ao atraso inicial ao iniciar o processo.
    >
    >Você também deve estar ciente de que este é apenas o tempo *mínimo* necessário para concluir o processo e não inclui o tempo de E/S. O tempo efetivamente gasto pode ser significativamente maior do que esta estimativa.
 
