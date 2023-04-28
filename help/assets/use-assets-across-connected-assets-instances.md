@@ -6,9 +6,9 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: a7545f0f2143983a052f272992d5e27b78f271a1
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '3768'
+source-wordcount: '3796'
 ht-degree: 16%
 
 ---
@@ -355,3 +355,17 @@ Para solucionar erros comuns, siga estas etapas:
 * Se referências remotas não forem recuperadas e resultarem em uma mensagem de erro, verifique se [!DNL Sites] a implantação está disponível e verifique se há problemas de conectividade de rede. Tente novamente mais tarde para verificar. [!DNL Assets] a implantação tenta duas vezes estabelecer a conexão com o [!DNL Sites] e, em seguida, relata uma falha.
 
    ![falha ao recuperar referências remotas do ativo](assets/reference-report-failure.png)
+
+**Consulte também**
+
+* [Traduzir ativos](translate-assets.md)
+* [API HTTP de ativos](mac-api-assets.md)
+* [Formatos de arquivo compatíveis com os ativos](file-format-support.md)
+* [Pesquisar ativos](search-assets.md)
+* [Relatórios de ativos](asset-reports.md)
+* [Esquemas de metadados](metadata-schemas.md)
+* [Baixar ativos](download-assets-from-aem.md)
+* [Gerenciar metadados](manage-metadata.md)
+* [Pesquisar aspectos](search-facets.md)
+* [Gerenciar coleções](manage-collections.md)
+* [Importação de metadados em massa](metadata-import-export.md)

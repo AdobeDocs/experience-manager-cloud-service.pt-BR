@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Publishing,Collaboration,Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: 0ba6ce129322df9ad108822e86e5acfdbf99e613
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '4886'
-ht-degree: 5%
+source-wordcount: '4916'
+ht-degree: 6%
 
 ---
 
@@ -590,6 +590,20 @@ O formato de vídeo MXF ainda não é compatível com anotações de ativos de v
       * 8 GB para transcodificação de 720p.
    * O tamanho máximo de arquivo que você pode transcodificar para a resolução de 4 k é um arquivo MP4 de 2,55 GB com resolução de 4 k, taxa de bits de 12 Mbps e 23 fps.
 
+   **Consulte também**
+
+* [Traduzir ativos](translate-assets.md)
+* [API HTTP de ativos](mac-api-assets.md)
+* [Formatos de arquivo compatíveis com os ativos](file-format-support.md)
+* [Pesquisar ativos](search-assets.md)
+* [Ativos conectados](use-assets-across-connected-assets-instances.md)
+* [Relatórios de ativos](asset-reports.md)
+* [Esquemas de metadados](metadata-schemas.md)
+* [Baixar ativos](download-assets-from-aem.md)
+* [Gerenciar metadados](manage-metadata.md)
+* [Pesquisar aspectos](search-facets.md)
+* [Gerenciar coleções](manage-collections.md)
+* [Importação de metadados em massa](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 * [Documentação de vídeo do Dynamic Media](/help/assets/dynamic-media/video.md).

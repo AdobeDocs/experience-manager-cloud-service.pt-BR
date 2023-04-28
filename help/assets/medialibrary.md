@@ -1,14 +1,14 @@
 ---
-title: Use o Media Library para o gerenciamento básico de ativos digitais
+title: Usar o Media Library para o gerenciamento básico de ativos digitais
 description: "[!DNL Experience Manager Assets] e Media Library para gerenciamento de ativos."
 contentOwner: AG
 feature: Asset Management,Publishing
 role: User,Architect,Leader
 exl-id: 4737d5ee-9a93-49f3-9f20-d4368e60e9fb
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 1%
+source-wordcount: '572'
+ht-degree: 4%
 
 ---
 
@@ -23,32 +23,32 @@ Define what is not included
 
 # Usar o Media Library para gerenciamento básico de ativos {#manage-assets-using-media-library}
 
-[!DNL Adobe Experience Manager] A plataforma fornece diferentes recursos para gerenciar ativos. O Media Library permite que os usuários façam upload de um pequeno número de ativos no repositório, pesquisem e usem esses ativos nas páginas da Web e realizem tarefas simples de gerenciamento de ativos nos ativos.
+[!DNL Adobe Experience Manager] A plataforma fornece diferentes recursos para gerenciar ativos. O Media Library permite que os usuários façam upload de um pequeno número de ativos para o repositório, pesquisem e usem nas páginas da Web e realizem tarefas simples de gerenciamento de ativos nos ativos.
 
-O Media Library é uma solução leve de gerenciamento de ativos digitais (DAM) que vem complementar com [!DNL Adobe Experience Manager Sites] licença. [!DNL Sites] O é uma oferta de Gerenciamento de conteúdo da Web (WCM). O Media Library funciona com todos os recursos do Experience Manager.
+A Media Library é uma solução leve de Gerenciamento de ativos digitais (DAM) que vem complementar com [!DNL Adobe Experience Manager Sites] licença. [!DNL Sites] O é uma oferta do Web Content Management (WCM). O Media Library funciona com todos os recursos do Experience Manager.
 
-[!DNL Adobe Experience Manager Assets] A licença do está disponível separadamente para compra. [!DNL Experience Manager Assets] O permite a manipulação robusta de ativos por meio de casos de uso corporativos, personalizações de metadados, esquemas, pesquisa e interface do usuário, além de muitos outros recursos além do que o Media Library oferece.
+[!DNL Adobe Experience Manager Assets] está disponível separadamente para compra. [!DNL Experience Manager Assets] O permite o gerenciamento robusto de ativos por meio de casos de uso corporativos, personalizações de metadados, esquemas, pesquisa e interface do usuário, além do que a Media Library oferece.
 
 ## Requisitos de licenciamento {#avail-media-library-license}
 
-Clientes que têm [!DNL Sites] estão autorizadas a usar o Media Library. Funciona com todos os componentes do [!DNL Experience Manager].
+Clientes que tenham [!DNL Sites] As licenças estão habilitadas a usar o Media Library. Funciona com todos os componentes de [!DNL Experience Manager].
 
-O Media Library é instalado como parte do Sites. Não é necessária nenhuma licença ou pacote adicional além da licença e instalação do Sites.
+O Media Library é instalado como parte do Sites. Nenhuma licença ou pacote adicional é necessário além da licença e instalação do Sites.
 
 ## [!DNL Assets] versus Media Library {#assets-and-media-library}
 
-A Experience Manager Assets oferece a funcionalidade DAM de nível empresarial. A funcionalidade de ativos é fornecida com o [!DNL Experience Manager] em um único pacote. No entanto, os usuários que não compraram uma licença do Assets não estão autorizados a usar os recursos avançados do DAM. Sem a licença do Assets, somente [Recursos do Media Library](#use-media-library) estão disponíveis.
+O Experience Manager Assets fornece funcionalidade de DAM de nível empresarial. A funcionalidade de ativos é fornecida com [!DNL Experience Manager] numa única embalagem. No entanto, os usuários que não compraram uma licença do Assets não têm direito a usar os recursos avançados do DAM. Somente sem a licença do Assets [Recursos do Media Library](#use-media-library) estão disponíveis.
 
-Se você quiser impedir o uso não intencional de [!DNL Assets] recursos que você não licenciou, remova todas as [!DNL Assets]fluxos de trabalho específicos do, componentes, taxonomias, opções e a [!DNL Assets] administrador de [!DNL Experience Manager]. Isso evita que os usuários usem acidentalmente [!DNL Assets] recursos que você não licenciou.
+Se quiser evitar o uso não intencional de [!DNL Assets] recursos que você não licenciou e remova todos os [!DNL Assets]fluxos de trabalho específicos, componentes, taxonomias, opções e o [!DNL Assets] administrador de [!DNL Experience Manager]. Isso evita que os usuários usem acidentalmente [!DNL Assets] recursos que você não licenciou.
 
 ## Usar o Media Library {#use-media-library}
 
-O Media Library abrange amplamente os seguintes casos de uso:
+A Media Library abrange os seguintes casos de uso:
 
-* Fornecer recursos básicos do DAM para páginas da Web criadas com o [!DNL Adobe Experience Manager Sites].
-* Formulários e comunicações adaptáveis criados usando o [!DNL Adobe Experience Manager Forms].
-* Experiências de tela digital criadas com o [!DNL Adobe Experience Manager Screens].
-* [!DNL Assets] APIs REST HTTP para operações headless.
+* Fornecer recursos básicos do DAM para páginas da Web criadas usando [!DNL Adobe Experience Manager Sites].
+* Formulários adaptáveis e comunicações criados com [!DNL Adobe Experience Manager Forms].
+* Experiências em tela digital criadas com o uso de [!DNL Adobe Experience Manager Screens].
+* [!DNL Assets] REST APIs HTTP para operações sem periféricos.
 
 <!-- TBD: Remove this after confirmation. May need to merge this list with the list provided by PMs.
 
@@ -56,26 +56,26 @@ O Media Library abrange amplamente os seguintes casos de uso:
 
 -->
 
-Para usar a funcionalidade Media Library, é possível usar o padrão [!DNL Experience Manager] interface do usuário. O Media Library faz parte da [!DNL Experience Manager Sites] instalação e nenhuma interface ou complemento separado é necessário. Usando a interface existente, os usuários do Media Library estão autorizados a realizar as seguintes tarefas:
+Para usar a funcionalidade do Media Library, é possível usar o [!DNL Experience Manager] interface do usuário. A Media Library faz parte do [!DNL Experience Manager Sites] instalação e nenhuma interface ou complemento separado é necessário. Usando a interface existente, os usuários do Media Library têm direito a realizar as seguintes tarefas:
 
-* Criar pastas para organizar ativos.
+* Crie pastas para organizar ativos.
 * Fazer upload de ativos.
 * Publicar ativos.
 * Editar, mover e copiar ativos.
-* Procurar, filtrar e pesquisar (inclui pesquisa de semelhança) ativos.
-* Adicione valores e edite-os nos campos de metadados, exceto no campo Tags inteligentes, que estão disponíveis na [!UICONTROL Básico] de um ativo [!UICONTROL Propriedades] por padrão.
-* Adicionar e excluir representações estáticas.
+* Pesquisar, filtrar e pesquisar (inclui pesquisa de semelhança) ativos.
+* Adicione valores e edite os valores nos campos de metadados, exceto no campo Tags inteligentes , que estão disponíveis no [!UICONTROL Básico] da guia de um ativo [!UICONTROL Propriedades] por padrão.
+* Adicione e exclua representações estáticas.
 * Baixe pastas, ativos e representações de ativos.
 * Criar versões de ativos.
-* Criar e executar tarefas de revisão em ativos.
+* Crie e execute tarefas de revisão em ativos.
 * Anotar ativos.
-* Adicionar ativos ao [!DNL Sites] páginas por meio do Localizador de conteúdo.
+* Adicionar ativos a [!DNL Sites] nas páginas do Localizador de conteúdo.
 * Uso [!DNL Content Fragments].
-* Use APIs REST e GraphQL HTTP para [!DNL Content Fragments] e ativos de mídia referenciados, sob licença do Sites.
-* integração com o Marketing Cloud.
-* Personalizar e estender a interface do usuário do gerenciamento de ativos.
-* Acesse o Construtor de consultas (API) para estender a funcionalidade de pesquisa.
-* Criar tags estáticas.
+* Usar HTTP REST e APIs do GraphQL para [!DNL Content Fragments] e ativos de mídia referenciados, sob licença Sites.
+* Integração do Marketing Cloud.
+* Personalize e estenda a interface do usuário do gerenciamento de ativos.
+* Acesse o Query Builder (API) para estender a funcionalidade de pesquisa.
+* Crie tags estáticas.
 * Crie projetos e tarefas.
 * Fluxo de atividade (linha do tempo).
 * Comentários e anotações.
@@ -87,11 +87,26 @@ As per PM, we must avoid stating such a list, as we don't have a list that makes
 
 >[!IMPORTANT]
 >
->Muitos casos de uso de DAM avançados são atendidos pelo [!DNL Experience Manager Assets]. A licença da Media Library permite que você preencha apenas os casos de uso listados usando o Media Library. Se um caso de uso não estiver listado, não o use com a licença da Media Library. Em caso de dúvidas, entre em contato com o Suporte ao cliente.
+>Muitos casos de uso avançados de DAM são cumpridos por [!DNL Experience Manager Assets]. A licença da Media Library permite atender somente aos casos de uso listados usando o Media Library. Se um caso de uso não estiver listado, não o use com a licença do Media Library. Em caso de dúvidas, entre em contato com o Suporte ao cliente.
 
-Observe que não é possível usar tags inteligentes, [!DNL Asset] link, [!DNL Asset] seletor, marcação em massa, modificar fluxos de trabalho de ativos ou padrão [!DNL Adobe Experience Manager] para acessar o Media Library sem [!DNL Assets] licença.
+Observe que não é possível usar tags inteligentes, [!DNL Asset] link , [!DNL Asset] seletor, marcação em massa, modificar workflows de ativos ou padrão [!DNL Adobe Experience Manager] interface do usuário para acessar o Media Library sem [!DNL Assets] licença.
 
 <!-- TBD: Add a CTA - how to contact Adobe for queries. -->
+
+**Consulte também**
+
+* [Traduzir ativos](translate-assets.md)
+* [API HTTP de ativos](mac-api-assets.md)
+* [Formatos de arquivo compatíveis com os ativos](file-format-support.md)
+* [Pesquisar ativos](search-assets.md)
+* [Ativos conectados](use-assets-across-connected-assets-instances.md)
+* [Relatórios de ativos](asset-reports.md)
+* [Esquemas de metadados](metadata-schemas.md)
+* [Baixar ativos](download-assets-from-aem.md)
+* [Gerenciar metadados](manage-metadata.md)
+* [Pesquisar aspectos](search-facets.md)
+* [Gerenciar coleções](manage-collections.md)
+* [Importação de metadados em massa](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

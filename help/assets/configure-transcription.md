@@ -11,10 +11,10 @@ topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: 4edf66127696ce91466811e2ffdcfbbd73f7cc2c
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '1666'
-ht-degree: 100%
+source-wordcount: '1696'
+ht-degree: 95%
 
 ---
 
@@ -23,9 +23,9 @@ ht-degree: 100%
 A transcrição é o processo de traduzir o áudio de um arquivo de áudio ou vídeo em texto (fala para texto) usando a tecnologia de reconhecimento de voz.
 O [!DNL Adobe Experience Manager Assets] está configurado com o [!DNL Azure Media Services], que gera automaticamente uma transcrição de texto do idioma falado em um arquivo de áudio ou vídeo compatível no formato WebVTT (.vtt). Quando um ativo de áudio ou vídeo é processado no [!DNL Experience Manager Assets], o serviço de transcrição gera automaticamente a representação da transcrição de texto do ativo de áudio ou vídeo e o armazena no mesmo local no repositório do Assets, onde o ativo original está. O serviço de transcrição do [!DNL Experience Manager Assets] permite que os profissionais de marketing gerenciem efetivamente o conteúdo de áudio e vídeo com mais capacidade de descoberta do conteúdo de texto, além de aumentar o ROI desses ativos ao oferecer suporte à acessibilidade e localização.
 
-As transcrições são versões em texto do conteúdo falado; um exemplo é um filme que você está assistindo em qualquer plataforma OTT, que geralmente inclui legendas ou legendas ocultas para ajudar na acessibilidade ou no consumo do conteúdo em outros idiomas. Ou qualquer arquivo de áudio ou vídeo usado para fins de marketing, aprendizado ou entretenimento. Essas experiências começam com uma transcrição que é formatada ou traduzida conforme apropriado. A transcrição de áudio ou vídeo é um processo que exige muito tempo e pode causar erros quando executado manualmente. Também é um desafio escalar o processo manual, dada a necessidade cada vez maior de conteúdo de áudio e vídeo. O [!DNL Experience Manager Assets] usa a transcrição com IA do Azure, que permite o processamento em alta escala dos ativos de áudio e vídeo e gera as transcrições de texto (arquivos .vtt) junto com detalhes de carimbo de data e hora. Além do Assets, o recurso de transcrição também é compatível com o Dynamic Media.
+As transcrições são versões em texto do conteúdo falado; um exemplo é um filme que você está assistindo em qualquer plataforma OTT, que geralmente inclui legendas ou legendas ocultas para ajudar na acessibilidade ou no consumo do conteúdo em outros idiomas. Ou qualquer arquivo de áudio ou vídeo usado para fins de marketing, aprendizado ou entretenimento. Essas experiências começam com uma transcrição que é formatada ou traduzida conforme apropriado. A transcrição de áudio ou vídeo é um processo que exige muito tempo e pode causar erros quando executado manualmente. Também é um desafio escalar o processo manual, dada a necessidade cada vez maior de conteúdo de áudio e vídeo. [!DNL Experience Manager Assets] O usa a transcrição baseada em AI do Azure, que permite o processamento em alta escala dos ativos de áudio e vídeo e gera as transcrições de texto (arquivos .vtt) junto com os detalhes do carimbo de data e hora. Além do Assets, o recurso de transcrição também é compatível com o Dynamic Media.
 
-O recurso de transcrição está disponível sem nenhum custo no [!DNL Experience Manager Assets]. No entanto, os administradores exigem as credenciais do Azure do usuário para configurar o serviço de transcrição no [!DNL Experience Manager Assets]. Você também pode [obter credenciais de avaliação](https://azure.microsoft.com/en-us/pricing/details/media-services/) diretamente da Microsoft® para experimentar o recurso de transcrição de áudio ou vídeo no Assets.
+O recurso de transcrição está disponível sem nenhum custo no [!DNL Experience Manager Assets]. No entanto, os administradores exigem as credenciais do Azure do usuário para configurar o serviço de transcrição em [!DNL Experience Manager Assets]. Você também pode [obter credenciais de avaliação](https://azure.microsoft.com/en-us/pricing/details/media-services/) diretamente da Microsoft® para experimentar o recurso de transcrição de áudio ou vídeo no Assets.
 
 ## Pré-requisitos de transcrição {#prerequisites}
 
@@ -101,7 +101,7 @@ Depois que o perfil de processamento for configurado para transcrição de arqui
 >
 >Um perfil de processamento aplicado a uma pasta funciona para toda a árvore, no entanto, pode ser substituído por outro perfil aplicado a uma subpasta.
 >
->Quando os ativos são carregados para uma pasta, o Experience Manager se comunica com as propriedades da pasta que os contém para identificar o perfil de processamento. Se nenhum for aplicado, uma pasta principal na hierarquia será verificada em busca de um perfil de processamento para ser aplicado.
+>Quando os ativos são carregados em uma pasta, o Experience Manager se comunica com as propriedades da pasta contêiner para identificar o perfil de processamento. Se nenhum for aplicado, uma pasta principal na hierarquia será verificada em busca de um perfil de processamento para ser aplicado.
 
 
 ## Gerar transcrição dos ativos de áudio ou vídeo {#generate-transcription}
@@ -166,3 +166,18 @@ Os formatos de arquivo de áudio e vídeo a seguir são compatíveis com a trans
 ## Dicas de solução de problemas {#troubleshooting}
 
 Faça logon na conta do [!DNL Azure Media Services] com as mesmas credenciais (usadas para configuração) para verificar o status da solicitação. Entre em contato com o suporte do [!DNL Azure] caso sua solicitação não seja processada.
+
+**Consulte também**
+
+* [Traduzir ativos](translate-assets.md)
+* [API HTTP de ativos](mac-api-assets.md)
+* [Formatos de arquivo compatíveis com os ativos](file-format-support.md)
+* [Pesquisar ativos](search-assets.md)
+* [Ativos conectados](use-assets-across-connected-assets-instances.md)
+* [Relatórios de ativos](asset-reports.md)
+* [Esquemas de metadados](metadata-schemas.md)
+* [Baixar ativos](download-assets-from-aem.md)
+* [Gerenciar metadados](manage-metadata.md)
+* [Pesquisar aspectos](search-facets.md)
+* [Gerenciar coleções](manage-collections.md)
+* [Importação de metadados em massa](metadata-import-export.md)
