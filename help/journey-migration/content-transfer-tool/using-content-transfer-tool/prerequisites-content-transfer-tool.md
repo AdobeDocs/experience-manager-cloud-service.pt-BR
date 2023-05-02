@@ -5,7 +5,7 @@ exl-id: 41a9cff1-4d89-480c-b9fc-5e8efc2a0705
 source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
 workflow-type: tm+mt
 source-wordcount: '547'
-ht-degree: 11%
+ht-degree: 15%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 11%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_prereqs"
 >title="Considerações importantes sobre o uso do Content Transfer Tool"
->abstract="Analise considerações importantes para usar a ferramenta Transferência de conteúdo, incluindo versões Java e AEM, tipos compatíveis de armazenamento de dados, considerações sobre grupos de usuários e muito mais."
+>abstract="Revise considerações importantes para usar a ferramenta de Transferência de Conteúdo, incluindo versões do Java e AEM, tipos compatíveis de armazenamento de dados, considerações sobre grupos de usuários e mais."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html#pre-reqs" text="Considerações importantes sobre o uso da ferramenta Transferência de conteúdo"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html#best-practices" text="Práticas recomendadas e diretrizes"
 

@@ -7,7 +7,7 @@ exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
 source-git-commit: 3b64b909996674bcbe36f746bcfd15e1422a8a4b
 workflow-type: tm+mt
 source-wordcount: '1013'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide_footer"
->title="Neste módulo, você aprendeu a usar o AEM Headless Client for JavaScript para buscar dados JSON de seu ambiente de avaliação usando consultas persistentes do GraphQL.<br><br>Agora você sabe como usar esse cliente para consumir dados de dentro de seu próprio aplicativo web."
+>title="Neste módulo, você aprendeu a usar o Cliente AEM Headless para JavaScript para buscar dados JSON de seu ambiente de avaliação usando consultas persistentes do GraphQL.<br><br>Agora você sabe como usar esse cliente para consumir dados de seu próprio aplicativo web."
 >abstract=""
 
 ## CodePen {#codepen}
