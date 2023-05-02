@@ -1,25 +1,25 @@
 ---
-title: Pesquisar ativos e imagens digitais em [!DNL Adobe Experience Manager]
-description: Saiba como encontrar os ativos necessários no [!DNL Adobe Experience Manager] usando o painel Filtros e como usar os ativos exibidos na pesquisa.
+title: Como pesquisar ativos no AEM?
+description: Saiba como pesquisar ativos no AEM usando o painel Filtros e como usar os resultados exibidos na pesquisa de ativos.
 contentOwner: AG
 mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: bb067222423ba70c412a80e210bd79d0f72b7ccb
 workflow-type: tm+mt
-source-wordcount: '4925'
+source-wordcount: '4931'
 ht-degree: 6%
 
 ---
 
-# Pesquisar ativos no [!DNL Adobe Experience Manager] {#search-assets-in-aem}
+# Pesquisar ativos no AEM {#search-assets-in-aem}
 
-[!DNL Adobe Experience Manager Assets] O oferece métodos robustos de detecção de ativos que ajudam a alcançar uma velocidade de conteúdo maior. Suas equipes podem reduzir o tempo de comercialização com uma experiência de pesquisa inteligente e contínua usando recursos prontos para uso e métodos personalizados. Pesquisar ativos é fundamental para o uso de um sistema de gerenciamento de ativos digitais — seja para uso adicional por parte dos criadores, para o gerenciamento robusto de ativos pelos usuários e profissionais de marketing ou para administração por administradores de DAM. Pesquisas simples, avançadas e personalizadas que você pode realizar por meio de [!DNL Assets] a interface do usuário ou outros aplicativos e superfícies ajudam a atender a esses casos de uso.
+[!DNL Adobe Experience Manager Assets] O fornece métodos robustos de pesquisa de ativos que ajudam a atingir uma velocidade de conteúdo maior. Suas equipes podem reduzir o tempo de comercialização com uma experiência de pesquisa de ativos inteligente e contínua usando recursos prontos para uso e métodos personalizados. O recurso de ativos de pesquisa é essencial para o uso de um sistema de gerenciamento de ativos digitais — seja para uso adicional por parte dos criadores, para o gerenciamento robusto de ativos pelos usuários e profissionais de marketing ou para administração por administradores de DAM. Pesquisas simples, avançadas e personalizadas que você pode realizar por meio de [!DNL Assets] a interface do usuário ou outros aplicativos e superfícies ajudam a atender a esses casos de uso.
 
-[!DNL Experience Manager Assets] O suporta os seguintes casos de uso e este artigo descreve o uso, os conceitos, as configurações, as limitações e a solução de problemas desses casos de uso.
+[!DNL Experience Manager Assets] O suporta os seguintes casos de uso para pesquisar ativos e este artigo descreve o uso, os conceitos, as configurações, as limitações e a solução de problemas desses casos de uso.
 
-| Pesquisar por ativos | Configurar e administrar a funcionalidade de pesquisa | Trabalhar com resultados de pesquisa |
+| Pesquisar ativos | Configurar e administrar a funcionalidade de pesquisa | Trabalhar com resultados de pesquisa de ativos |
 |---|---|---|
 | [Pesquisas básicas](#searchbasics) | [Índice de pesquisa](#searchindex) | [Classificar resultados](#sort) |
 | [Entender a interface do usuário de pesquisa](#searchui) | [Extração de texto](#extracttextupload) | [Verificar propriedades e metadados de um ativo](#checkinfo) |

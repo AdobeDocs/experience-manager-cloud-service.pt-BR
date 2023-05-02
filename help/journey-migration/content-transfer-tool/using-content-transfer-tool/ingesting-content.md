@@ -2,9 +2,9 @@
 title: Assimilar conteúdo no Target
 description: Assimilar conteúdo no Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: cab182a7998be6a569cf16e4000184f7235082da
+source-git-commit: 79f5133e681261fa8f7604f1fc9c3fbf5c6a5f59
 workflow-type: tm+mt
-source-wordcount: '1702'
+source-wordcount: '1722'
 ht-degree: 12%
 
 ---
@@ -146,6 +146,10 @@ Isso indica que o Cloud Acceleration Manager não conseguiu acessar o serviço d
 O Release Orchestrator mantém os ambientes atualizados automaticamente ao aplicar atualizações automaticamente. Se a atualização for acionada quando uma assimilação estiver sendo executada, poderá causar resultados imprevisíveis, incluindo a corrupção do ambiente. Esse é um dos motivos pelos quais um tíquete de suporte deve ser registrado antes de iniciar uma assimilação (consulte &quot;Observação&quot; acima), para que a desativação temporária do Orquestrador de versões possa ser agendada.
 
 Se o Orquestrador de versões ainda estiver em execução quando uma assimilação estiver sendo iniciada, a interface do usuário apresentará esta mensagem. Você pode optar por continuar assim mesmo, aceitando o risco, marcando o campo e pressionando o botão novamente.
+
+>[!NOTE]
+>
+> O Release Orchestrator agora está sendo implantado em ambientes de desenvolvimento, portanto, também deve ser feita a pausa das atualizações nesses ambientes.
 
 ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
 
