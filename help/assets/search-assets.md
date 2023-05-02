@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: bb067222423ba70c412a80e210bd79d0f72b7ccb
+source-git-commit: 33baeea93c1fa2b74946699e53d2f428e77aee77
 workflow-type: tm+mt
-source-wordcount: '4931'
+source-wordcount: '4934'
 ht-degree: 6%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 6%
 
 [!DNL Adobe Experience Manager Assets] O fornece métodos robustos de pesquisa de ativos que ajudam a atingir uma velocidade de conteúdo maior. Suas equipes podem reduzir o tempo de comercialização com uma experiência de pesquisa de ativos inteligente e contínua usando recursos prontos para uso e métodos personalizados. O recurso de ativos de pesquisa é essencial para o uso de um sistema de gerenciamento de ativos digitais — seja para uso adicional por parte dos criadores, para o gerenciamento robusto de ativos pelos usuários e profissionais de marketing ou para administração por administradores de DAM. Pesquisas simples, avançadas e personalizadas que você pode realizar por meio de [!DNL Assets] a interface do usuário ou outros aplicativos e superfícies ajudam a atender a esses casos de uso.
 
-[!DNL Experience Manager Assets] O suporta os seguintes casos de uso para pesquisar ativos e este artigo descreve o uso, os conceitos, as configurações, as limitações e a solução de problemas desses casos de uso.
+A pesquisa de ativos no AEM oferece suporte aos seguintes casos de uso e este artigo descreve o uso, os conceitos, as configurações, as limitações e a solução de problemas desses casos de uso.
 
 | Pesquisar ativos | Configurar e administrar a funcionalidade de pesquisa | Trabalhar com resultados de pesquisa de ativos |
 |---|---|---|
@@ -38,9 +38,9 @@ Use o **[!UICONTROL Filtros]** painel para pesquisar ativos, pastas, tags e meta
 
 [!DNL Experience Manager] o recurso de pesquisa suporta a pesquisa de coleções e a pesquisa de ativos dentro de uma coleção. Consulte [pesquisar coleções](/help/assets/manage-collections.md).
 
-## Entender a interface de pesquisa {#searchui}
+## Entender a interface de pesquisa de ativos {#searchui}
 
-Familiarize-se com a interface de pesquisa e as ações disponíveis.
+Familiarize-se com a interface de pesquisa de ativos e as ações disponíveis.
 
 ![Entender a interface de resultados de pesquisa do Experience Manager Assets](assets/aem_search_results.png)
 
