@@ -3,10 +3,10 @@ title: Saiba como usar o GraphQL com o AEM - Exemplos de conteúdo e consultas
 description: Saiba como usar o GraphQL com o AEM para fornecer conteúdo em headless, explorando exemplos de conteúdo e consultas.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
+source-git-commit: 0d289b8c7757cce2c2b578e74dc6d581e2f2dda5
 workflow-type: tm+mt
-source-wordcount: '1540'
-ht-degree: 100%
+source-wordcount: '1596'
+ht-degree: 97%
 
 ---
 
@@ -1291,16 +1291,40 @@ Esta consulta interroga:
 
 ### Exemplo de consulta para um Fragmento de conteúdo aninhado - tipo de modelo múltiplo {#sample-wknd-nested-fragment-multiple-model}
 
+#### Tipo de modelo referenciado único
+
 Esta consulta interroga:
 
 * por vários Fragmentos de conteúdo do tipo `bookmark`
-   * com Referências de fragmentos a outros fragmentos dos tipos de modelo específicos `article` e `adventure`
+   * com referências de fragmento a outro fragmento do tipo de modelo específico `article`
 
 >[!NOTE]
 >
->O campo `fragments` tem o tipo de dados `fragment-reference`, com os modelos `Article` e `Adventure` selecionados.
+>O campo `fragments` tem o tipo de dados `fragment-reference`, com o modelo `Article` selecionado. O query fornece `fragments` como uma matriz de `[Article]`
 
-<!-- need replacement query -->
+```graphql
+{
+  bookmarkList {
+    items {
+        fragments {
+          _path
+          author
+        }
+     }
+  }
+}
+```
+
+#### Vários tipos de modelo referenciados
+
+Esta consulta interroga:
+
+* por vários Fragmentos de conteúdo do tipo `bookmark`
+   * com Referências de fragmentos a outros fragmentos dos tipos de modelo específicos `Article` e `Adventure`
+
+>[!NOTE]
+>
+>O campo `fragments` tem o tipo de dados `fragment-reference`, com os modelos `Article` e `Adventure` selecionados. Entrega de query `fragments` como uma matriz de `[AllFragmentModels]` que é cancelado com o tipo de união.
 
 ```graphql
 {
