@@ -2,9 +2,9 @@
 title: Regras de qualidade do código personalizado
 description: Esta página descreve as regras personalizadas de qualidade do código executadas pelo Cloud Manager como parte do teste de qualidade do código. Elas são baseadas nas práticas recomendadas pela equipe de engenharia do Adobe Experience Manager.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: 0b71e15c956cd39907440be319347bd1a749eb0b
+source-git-commit: eb633db8fe64a62661c094b88f0ce8d9950ed6d7
 workflow-type: tm+mt
-source-wordcount: '3485'
+source-wordcount: '3473'
 ht-degree: 100%
 
 ---
@@ -757,7 +757,7 @@ Semelhante à regra [Pacotes não devem conter configurações OSGi duplicadas](
 * **Severidade**: Baixa
 * **Desde**: Versão 2020.5.0
 
-A configuração `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` do OSGi define o modo de criação padrão no Experience Manager. Visto que a [interface clássica foi descontinuada no Experience Manager 6.4](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=pt-BR), um problema será gerado se o modo de criação padrão estiver configurado para usá-la.
+A configuração `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` do OSGi define o modo de criação padrão no Experience Manager. Visto que a interface clássica foi descontinuada no Experience Manager 6.4, um problema será gerado se o modo de criação padrão estiver configurado para usá-la.
 
 ### Os componentes com caixas de diálogo devem ter caixas de diálogo com interface de toque {#oakpal-components-dialogs}
 
@@ -860,7 +860,7 @@ A migração de modelos estáticos para modelos editáveis pode ser quase totalm
 * **Severidade**: Baixa
 * **Desde**: Versão 2021.2.0
 
-Os componentes básicos herdados (ou seja, localizados em `/libs/foundation`) foram [descontinuados em várias versões do Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=pt-BR) para incentivar o uso dos componentes principais. O uso dos componentes básicos como base para os componentes personalizados (seja por sobreposição ou herança) não é recomendado e deve ser convertido para os componentes principais correspondentes.
+Os componentes básicos herdados (ou seja, localizados em `/libs/foundation`) foram descontinuados em várias versões do Experience Manager para incentivar o uso dos componentes principais. O uso dos componentes básicos como base para os componentes personalizados (seja por sobreposição ou herança) não é recomendado e deve ser convertido para os componentes principais correspondentes.
 
 Essa conversão pode ser facilitada pelas [ferramentas de modernização do Experience Manager.](https://opensource.adobe.com/aem-modernize-tools/)
 

@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 9abafe051672de65f042332314445b239f95852b
 workflow-type: tm+mt
-source-wordcount: '2441'
+source-wordcount: '2423'
 ht-degree: 5%
 
 ---
@@ -236,7 +236,7 @@ A marcação inteligente aprimorada é baseada em modelos de aprendizagem de ima
 
 * Incapacidade de reconhecer sutis diferenças em imagens. Por exemplo, camisas de ajuste fino versus camisas de ajuste regular.
 * Incapacidade de identificar tags com base em pequenos padrões ou partes de uma imagem. Por exemplo, logotipos em camisas.
-* A marcação é compatível com os idiomas que [!DNL Experience Manager] suporta. Para obter uma lista de idiomas, consulte [Notas de versão do Serviço de conteúdo inteligente](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages).
+* A marcação é compatível com os idiomas que [!DNL Experience Manager] suporta.
 * As tags que não são manipuladas estão relacionadas a:
 
    * Aspectos não visuais e abstratos. Por exemplo, o ano ou a estação de lançamento de um produto, estado de espírito ou emoção evocado por uma imagem e uma conotação subjetiva de um vídeo.
