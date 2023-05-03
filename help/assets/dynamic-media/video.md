@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 13a1915e9aca812024e8eb27c131500cdc8e01b2
+source-git-commit: 96d11aad425ba7c78a685b3509cd96749d938229
 workflow-type: tm+mt
 source-wordcount: '5887'
 ht-degree: 2%
@@ -158,7 +158,7 @@ No lado da reprodução do visualizador, ele detecta automaticamente o recurso d
 
 >[!NOTE]
 >
->Para usar o DASH em seus vídeos, primeiro ele deve ser ativado pelo Suporte técnico do Adobe em sua conta. Consulte [Habilitar o DASH em sua conta](#enable-dash).)
+>Para usar o DASH em seus vídeos, primeiro ele deve ser ativado pelo Suporte técnico do Adobe em sua conta. Consulte [Habilitar o DASH em sua conta](#enable-dash).
 
 Você pode combinar em um único reprodutor a capacidade de projetar os componentes de reprodução usando HTML5 e CSS. Pode ter reprodução incorporada e usar transmissão adaptável e progressiva, dependendo da capacidade do navegador. Essa funcionalidade significa que você pode estender o alcance do conteúdo de mídia avançada para usuários de desktop e de dispositivos móveis e garantir uma experiência de vídeo simplificada.
 
