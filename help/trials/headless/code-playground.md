@@ -4,9 +4,9 @@ description: Explore a busca de conteúdo JSON do seu ambiente de avaliação co
 hidefromtoc: true
 index: false
 exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
-source-git-commit: 3b64b909996674bcbe36f746bcfd15e1422a8a4b
+source-git-commit: 1949ee211b4f816e05aa779deb9e287347f006ad
 workflow-type: tm+mt
-source-wordcount: '1013'
+source-wordcount: '987'
 ht-degree: 5%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 5%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide"
 >title="Inicie o aplicativo CodePen de amostra"
->abstract="Este guia aborda a consulta de dados JSON do seu ambiente de avaliação em um aplicativo Web JavaScript básico. Usaremos os Fragmentos de conteúdo que você modelou e criou nos módulos de aprendizagem anteriores, portanto, navegue primeiro por esses guias antes de entrar nesse.<br><br>Para demonstrar como o conteúdo pode ser consultado em um aplicativo da Web JavaScript, configuramos uma Caneta de código que você pode usar como está ou bifurcar em sua própria conta para personalizar ainda mais."
+>abstract="Este guia aborda a consulta de dados JSON do seu ambiente de avaliação em um aplicativo Web JavaScript básico. Usaremos os Fragmentos de conteúdo que você modelou e criou nos módulos de aprendizagem anteriores, portanto, navegue primeiro por esses guias antes de entrar nesse."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide_footer"
@@ -61,7 +61,7 @@ import AdobeAemHeadlessClientJs from 'https://cdn.skypack.dev/@adobe/aem-headles
 
 Na linha 6, lemos os detalhes do host de publicação no `publishHost` parâmetro de consulta. Este é o host do qual o Cliente Sem Cabeça do AEM buscará dados. Normalmente, isso seria codificado no aplicativo, mas estamos usando um parâmetro de consulta para facilitar o trabalho do aplicativo CodePen com ambientes diferentes.
 
-Configuramos o Cliente Sem Cabeçalho do AEM na linha 12 para usar uma função proxy Adobe Runtime para evitar problemas de CORS. Isso não é necessário para seus próprios projetos, mas é necessário para que o aplicativo CodePen funcione com seu ambiente de avaliação. A função de proxy está configurada para usar a variável `publishHost` valor que foi fornecido no parâmetro de consulta.
+Configuramos o Cliente Sem Cabeçalho do AEM na linha 12:
 
 ```javascript
 const aemHeadlessClient = new AdobeAemHeadlessClientJs({
@@ -72,6 +72,10 @@ const aemHeadlessClient = new AdobeAemHeadlessClientJs({
   }
 });
 ```
+
+>[!NOTE]
+>
+>O **serviceURL** está definida para usar uma função Adobe IO Runtime proxy para evitar problemas de CORS. Isso não é necessário para seus próprios projetos, mas é necessário para que o aplicativo CodePen funcione com seu ambiente de avaliação. A função de proxy está configurada para usar a variável **publishHost** valor que foi fornecido no parâmetro de consulta.
 
 Finalmente, a função `fetchJsonFromGraphQL()` é usado para executar a solicitação de busca usando o Cliente Sem Cabeça do AEM. Ele é chamado sempre que o código é alterado ou pode ser acionado clicando no botão **Refetch** link . O `aemHeadlessClient.runPersistedQuery(..)` ocorre na linha 34. Um pouco mais tarde, faremos uma alteração na forma como esses dados JSON são renderizados, mas por enquanto vamos imprimi-los no `#output` div usando o `resultToPreTag(queryResult)` .
 
