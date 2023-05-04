@@ -2,10 +2,10 @@
 title: Atualizar fragmentos de conteúdo para a filtragem otimizada de GraphQL
 description: Saiba como atualizar os fragmentos de conteúdo para uma filtragem otimizada de GraphQL no Adobe Experience Manager as a Cloud Service para entrega de conteúdo headless.
 exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
-source-git-commit: e18a60197aab3866b839ff7b923f1aa135c594cc
+source-git-commit: 02e27a8eee18893e0183b3ace056b396a9084b12
 workflow-type: tm+mt
-source-wordcount: '738'
-ht-degree: 100%
+source-wordcount: '925'
+ht-degree: 80%
 
 ---
 
@@ -20,7 +20,13 @@ Para otimizar o desempenho dos filtros de GraphQL, é necessário executar um pr
 
 ## Pré-requisitos {#prerequisites}
 
-Verifique se você tem no mínimo a versão 2023.1.0 do AEM as a Cloud Service.
+Existem pré-requisitos para esta tarefa:
+
+1. Verifique se você tem no mínimo a versão 2023.1.0 do AEM as a Cloud Service.
+
+1. Verifique se o usuário que está executando a tarefa tem as permissões necessárias:
+
+   * no mínimo, `Deployment Manager` no Cloud Manager é necessária.
 
 ## Atualização dos fragmentos de conteúdo {#updating-content-fragments}
 
@@ -119,7 +125,8 @@ Para executar o procedimento, siga as etapas abaixo:
    >* CF_MIGRATION_LIMIT = 1000
    >* CF_MIGRATION_INTERNAL = 60 (Segundos)
    >* Tempo aproximado necessário para concluir a migração = 60 + (20.000/1.000 * 60) = 1.260 Segundos = 21 Minutos
-   >  Os “60” segundos adicionais no início se devem ao atraso inicial ao iniciar o processo.
+      >  Os “60” segundos adicionais no início se devem ao atraso inicial ao iniciar o processo.
+
    >
    >Você também deve estar ciente de que este é apenas o tempo *mínimo* necessário para concluir o processo e não inclui o tempo de E/S. O tempo efetivamente gasto pode ser significativamente maior do que esta estimativa.
 
@@ -148,6 +155,44 @@ Para executar o procedimento, siga as etapas abaixo:
          ...
          23.01.2023 12:40:45.180 *INFO* [sling-threadpool-8abcc1bb-cdcb-46d4-8565-942ad8a73209-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished content fragments upgrade in 5m, slingJobId: 2023/1/23/12/34/ad1b399e-77be-408e-bc3f-57097498fddb_0, status: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Upgrade to version '1' succeeded.', errors=[], successCount=3781, failedCount=0, skippedCount=0}
          ```
+   Os clientes que habilitaram o acesso aos logs de ambiente usando o Splunk, podem usar o exemplo de consulta abaixo para monitorar o processo de atualização. Para obter detalhes sobre como ativar o log do Splunk, consulte [Depuração da produção e do estágio](/help/implementing/developing/introduction/logging.md#debugging-production-and-stage) página.
+
+   ```splunk
+   index=<indexName> sourcetype=aemerror aem_envId=<environmentId> msg="*com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished*" 
+   (aem_tier=golden-publish OR aem_tier=author) | table _time aem_tier pod_name msg | sort -_time desc
+   ```
+
+   Em que:
+
+   * `environmentId` - um identificador do ambiente do cliente; por exemplo, `e1234`
+   * `indexName` - um nome de índice do cliente, reunião `aemerror` events
+
+   Exemplo de saída:
+
+   <table style="table-layout:auto">
+     <thead>
+       <tr>
+       <th>_hora</th>
+       <th>aem_tier</th>
+       <th>pod_name</th>
+       <th>msg</th>
+       </tr>
+     </thead> 
+     <tbody>
+       <tr>
+         <td>2023-04-21 06:00:35.723</td>
+         <td>autor</td>
+         <td>cm-p1234-e1234-aem-author-76d6dc4b79-8lsb5</td>
+         <td>[sling-threadpool-bb5da4dd-6b05-4230-93ea-1d5cd242e24f-(apache-sling-job-thread-pool)-1-Configuração da fila de trabalhos de atualização de fragmento de conteúdo (cfm/upgrader)] com.adobe.cq.dam.cfm.impl Atualização de fragmentos de conteúdo .upgrade.UpgradeJob Finished em 391m, slingJobId: 2023/4/20/23/16/db7963df-e267-489b-b69a-5930b0dadb37_0, status: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Upgrade to version '1' bem-sucedido.', errors=[], successCount=36756, failedCount=0, skippedCount=0}</td>
+       </tr>
+       <tr>
+         <td>2023-04-21 06:05:48.207</td>
+         <td>publicação de ouro</td>
+         <td>cm-p1234-e1234-aem-golden-publish-644487c9c5-lvkv2</td>
+         <td>[sling-threadpool-284b9a9a-8454-461e-9bdb-44866c6dfb1-(apache-sling-job-thread-pool)-1-Configuração da fila de trabalhos de atualização de fragmento de conteúdo (cfm/upgrader)] com.adobe.cq.dam.cfm .impl.upgrade.UpgradeJob Atualização de fragmentos de conteúdo concluídos em 211m, slingJobId: 2023/4/20/23/15/66c1690a-cdb7-4e66-bc52-90f33394dfc_0, status: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Upgrade to version '1' bem-sucedido.', errors=[], successCount=19557, failedCount=0, skippedCount=0}</td>
+       </tr>
+     </tbody>
+   <table>
 
 1. Desative o procedimento de atualização.
 
