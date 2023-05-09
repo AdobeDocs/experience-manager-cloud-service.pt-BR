@@ -1,32 +1,41 @@
 ---
 title: Notas de versão de manutenção atuais de [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas de versão de manutenção atuais de [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: 4aa4954f214545dcd768fdf955f1fc2f776da939
+exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
+source-git-commit: ea3a476f7f2d7d97a2428c6facf61b746dba7a23
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 34%
+source-wordcount: '208'
+ht-degree: 47%
 
 ---
-
 
 # Notas da versão de manutenção {#maintenance-release-notes}
 
 A seção a seguir descreve as notas de versão técnicas da versão de manutenção atual do Experience Manager as a Cloud Service.
 
-## Versão 11835 {#release-11835}
+## Versão 11873 {#release-11873}
 
-Resumidos abaixo estão as melhorias contínuas da versão de manutenção 11835, lançada publicamente em 19 de abril de 2023. Esta versão de manutenção é uma atualização da versão de manutenção anterior: 11382.
+Resumidos abaixo estão as melhorias contínuas da versão de manutenção 11873, lançada publicamente em 3 de maio de 2023. Esta versão de manutenção é uma atualização da versão de manutenção anterior: 11835.
 
 A ativação de recursos desta versão de manutenção fornecerá o conjunto completo de recursos. Consulte as [notas de versão atuais](/help/release-notes/release-notes-cloud/release-notes-current.md) para obter detalhes completos.
 
-### Problemas corrigidos {#fixed-issues-11835}
+### Aprimoramentos {#enhancements}
 
-- SITES-12573 - As consultas do GraphQL que usam variáveis dentro de um filtro falharão se uma variável não for especificada. Por favor, não atualize para esta versão caso use o GraphQL com AEM as a Cloud Service.
-- SKYOPS-51970 - Regressão identificada da versão FACT usada na etapa buildImage, levando ao mapeamento de usuário não correspondente.
-- GRANITE-44542 - Problemas relatados para clientes que não especificaram um tipo de nó de pacote (fornecendo um .content.xml com jcr:primaryType) para pastas incluídas no filtro de pacote. Isso fazia com que essas pastas fossem tratadas como nt:folder, criando problemas em vários casos.
-- SKYOPS-56928 - A regressão HTTPD do Apache pode causar erros 404. Se você tiver esses problemas, por motivos de segurança, é recomendável reverter para a versão anterior e evitar que qualquer pipeline seja executado durante esse período.
+- SITES-1200 - Melhorias na API de pesquisa com filtragem baseada em tags
+- GRANITE-42939 - Adicionar anotações e avisos de descontinuação ao código oauth-server
 
-### Tecnologias integradas {#embedded-tech-11835}
+### Problemas conhecidos {#known-issues-11873}
+
+Nenhum.
+
+### Problemas corrigidos {#fixed-issues-11873}
+
+- SKYSI-19884/SKYOPS-53745 - Corrigido um problema com PublishPageRenderingErrorsHigh
+- GRANITE-4388 - Correção da degradação da taxa de transferência após um grande número de gravações de ativos do DAM no Mongo
+- SITES-11922 - Corrigido um problema com o cancelamento da publicação da visualização que não removia o status de sincronização
+- ASSETS-21648 - Correção de um problema de permissão com a funcionalidade de relacionamento entre ativos
+
+### Tecnologias integradas {#embedded-tech-11873}
 
 | Tecnologia | Versão | Link |
 |---|---|---|
