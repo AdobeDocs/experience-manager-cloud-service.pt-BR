@@ -6,13 +6,13 @@ seo-description: Build Engaging Forms Using Core Components and Headless
 topic-tags: develop
 hide: true
 hidefromtoc: true
-source-git-commit: f65c5241e1e61e5a0bd9981778939caa313de76a
-workflow-type: ht
-source-wordcount: '3412'
+exl-id: e1eb0812-c92e-4a18-aabb-5a70b9e6fc7d
+source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
+workflow-type: tm+mt
+source-wordcount: '3360'
 ht-degree: 100%
 
 ---
-
 
 # Crie formulários envolventes usando componentes principais e a tecnologia headless
 
@@ -60,8 +60,7 @@ Nesta lição, você poderá se familiarizar com o AEM Forms as a Cloud Service 
 
 ### Exercício
 
-1. Abra o navegador e insira a URL do ambiente de autor do Cloud Service. Por exemplo:
-   [https://author-p105303-e986623.adobeaemcloud.com/ui#/aem/aem/start.html](https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/start.html)
+1. Abra o navegador e insira a URL do ambiente de autor do Cloud Service.
 
 1. Faça logon no ambiente de autor do Cloud Service. As credenciais de logon para acessar o ambiente de autor serão compartilhadas com você durante o laboratório.
 
@@ -408,8 +407,8 @@ Vamos verificar a execução das regras neste formulário headless:
 
 Vamos fazer alterações no formulário no servidor como um usuário empresarial e vejamos como elas são aplicadas automaticamente no formulário headless.
 
-1. Abra a interface de gerenciamento do AEM Forms no navegador. Por exemplo, [https://author-p105303-e986623.adobeaemcloud.com/ui#/aem/aem/forms.html/content/dam/formsanddocuments](https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/forms.html/content/dam/formsanddocuments).
-
+1. Abra a interface de gerenciamento do AEM Forms no navegador.
+\
 1. Selecione o formulário de **registro** e clique em **Editar.** Isso abre o formulário no editor de adaptive forms.
 
    ![](/help/forms/assets/screenshot2028118529.png)
@@ -515,7 +514,7 @@ Para renderizar o formulário hospedado no ambiente de publicação do Cloud Ser
 
 1. Defina os seguintes valores para as variáveis no arquivo .env. Depois de atualizar as variáveis, salve o arquivo. Use as teclas **CTRL+S** para salvar o arquivo.
 
-   * **AEM_URL**: especifica a URL do ambiente de publicação do Cloud Service. Por exemplo, [https://publish-p105303-e986623.adobeaemcloud.com](https://publish-p105303-e986623.adobeaemcloud.com/)
+   * **AEM_URL**: especifica a URL do ambiente de publicação do Cloud Service.
 
    * **AEM_FORM_PATH**: especifica o caminho do formulário adaptável criado na lição anterior. Por exemplo, /content/forms/af/registration/
 
@@ -643,12 +642,10 @@ Agora que aprendeu a criar adaptive forms e entregá-los a vários canais usando
 
 * [Introdução aos componentes principais de formulários adaptáveis](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-br)
 
-* [Criar um formulário adaptável usando componentes principais](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=pt-br)
+* [Criar um formulário adaptável usando componentes principais](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=pt-BR)
 
 * [Atualizar estilo do formulário adaptável baseado em componentes principais](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html?lang=pt-br)
 
 * [Headless adaptive forms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=pt-br)
 
 * [Uso do kit inicial headless do React](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form.html?lang=pt-br)
-
-

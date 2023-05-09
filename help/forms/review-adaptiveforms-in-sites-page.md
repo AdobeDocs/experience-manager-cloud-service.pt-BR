@@ -5,7 +5,7 @@ description: A revisão é um mecanismo que permite ao revisor executar tarefas 
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 2a487654c3af2d2ec3aa43481caed5e1d4fc77a2
+source-git-commit: daeb407e27b9f1d390fe40151ca16ec0196712e6
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 4%
@@ -29,8 +29,8 @@ Usar o [Atribuir etapa](https://experienceleague.adobe.com/docs/experience-manag
 1. Toque ![settings_icon](assets/settings_icon.png) na barra de ações. O **[!UICONTROL Atribuir tarefa]** será aberta.
 1. Abrir [!UICONTROL Formulário e documento] e abra [!UICONTROL Pré-preenchido] e especifique:
 
-* Selecione o arquivo de dados de entrada usando
-* Selecione os anexos de entrada usando
+   * Selecione o arquivo de dados de entrada usando
+   * Selecione os anexos de entrada usando
 
    ![Etapa de revisão](/help/forms/assets/assigntask-review1.gif)
 

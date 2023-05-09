@@ -2,10 +2,10 @@
 title: Exportar fragmentos de experiência para o Adobe Target
 description: Exportar fragmentos de experiência para o Adobe Target
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: 6127d86ad174979506f36bb345129e4a130d35c8
+source-git-commit: acd80887d71a528604d37fa2787bca3c3a48d7c4
 workflow-type: tm+mt
-source-wordcount: '2249'
-ht-degree: 100%
+source-wordcount: '2250'
+ht-degree: 99%
 
 ---
 
@@ -197,7 +197,7 @@ Agora é possível selecionar a nova configuração para edição.
 
       >[!NOTE]
       >
-      >O arquivo da biblioteca do Target, [AT.JS](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/implement-target-for-client-side-web.html?lang=pt-BR), é uma nova biblioteca de implementação do Adobe Target, projetada para implementações típicas da Web e aplicativos de página única.
+      >O arquivo da biblioteca do Target, [AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html), é uma nova biblioteca de implementação do Adobe Target, projetada para implementações típicas da Web e aplicativos de página única.
       >
       >A mbox.js foi descontinuada e será removida em um estágio posterior.
       >
@@ -209,6 +209,7 @@ Agora é possível selecionar a nova configuração para edição.
       >* Segurança aprimorada
       >* Melhores opções de implementação para aplicativos de página única
       >* A AT.js contém os componentes que foram incluídos na target.js, portanto, a target.js não é mais chamada
+
       >
       >É possível selecionar AT.js ou mbox.js no menu suspenso **Biblioteca do cliente**.
 
