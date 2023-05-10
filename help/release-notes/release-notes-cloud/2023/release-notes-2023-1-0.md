@@ -1,17 +1,17 @@
 ---
-title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2023.1.0.
-description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2023.1.0.
+title: Notas de versão do [!DNL Adobe Experience Manager]  as a Cloud Service 2023.1.0.
+description: Notas de versão do [!DNL Adobe Experience Manager]  as a Cloud Service 2023.1.0.
 source-git-commit: e0f3f876ce8bc4245f7118f8ae7553907bc0567e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '978'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 
-# Notas de versão 2023.1.0 para [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2023.1.0 {#release-notes}
 
-A seção a seguir descreve as notas de versão do recurso para a versão 2023.1.0 do [!DNL Experience Manager] as a Cloud Service.
+A seção a seguir descreve as notas de versão de recursos do [!DNL Experience Manager] as a Cloud Service 2023.1.0.
 
 >[!NOTE]
 >
@@ -25,7 +25,7 @@ A seção a seguir descreve as notas de versão do recurso para a versão 2023.1
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento do [!DNL Adobe Experience Manager] como [!DNL Cloud Service] A versão de recurso 2023.1.0 é 9 de fevereiro de 2023. A próxima versão de recurso (2023.2.0) está planejada para 12 de abril de 2023.
+A data de lançamento dos recursos do [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 2023.1.0 é 9 de fevereiro de 2023. O próximo lançamento de recursos (2023.2.0) está planejado para 12 de abril de 2023.
 
 ## Vídeo da versão {#release-video}
 
@@ -80,7 +80,7 @@ Assista ao vídeo de Visão geral da versão de janeiro de 2023 que exibe um res
 
 ### Novidades {#what-is-new-foundation}
 
-* [Ambientes de desenvolvimento rápido (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md): os RDEs permitem que os desenvolvedores solucionem problemas e implantem novos recursos no AEM as a Cloud Service rapidamente. 
+* [Ambientes de desenvolvimento rápido (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md): os RDEs permitem que os desenvolvedores solucionem problemas e implantem novos recursos no AEM as a Cloud Service rapidamente.
 
    Os ambientes de desenvolvimento rápido são um novo tipo de ambiente de nuvem criado como uma maneira rápida, consistente e extensível de validar se o código que funciona localmente também funciona conforme esperado na nuvem. Usando as ferramentas de linha de comando, “sincronize” rapidamente os pacotes de conteúdo, pacotes, arquivos de conteúdo, a configuração OSGI ou a configuração do Dispatcher com o RDE. Veja esse processo em ação no vídeo abaixo:
 
