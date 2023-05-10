@@ -1,13 +1,13 @@
 ---
 title: Renderizar o conteúdo em um aplicativo simples
-description: Explore a busca de conteúdo JSON do seu ambiente de avaliação com um aplicativo de exemplo CodePen e o AEM Headless Client para JavaScript.
+description: Explore a busca de conteúdo JSON do seu ambiente de avaliação com um aplicativo CodePen de exemplo e o AEM Headless Client para JavaScript.
 hidefromtoc: true
 index: false
 exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
 source-git-commit: 1949ee211b4f816e05aa779deb9e287347f006ad
 workflow-type: tm+mt
 source-wordcount: '987'
-ht-degree: 39%
+ht-degree: 48%
 
 ---
 
@@ -16,13 +16,13 @@ ht-degree: 39%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript"
->title="Renderizar o conteúdo em um aplicativo simples"
->abstract="Explore a busca de conteúdo JSON do seu ambiente de avaliação com um aplicativo de exemplo CodePen e o AEM Headless Client para JavaScript."
+>title="Renderize o conteúdo em um aplicativo simples"
+>abstract="Explore a busca de conteúdo JSON do seu ambiente de avaliação com um aplicativo CodePen de exemplo e o AEM Headless Client para JavaScript."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide"
 >title="Inicie o aplicativo CodePen de exemplo"
->abstract="Este guia aborda a consulta de dados JSON do seu ambiente de avaliação em um aplicativo Web JavaScript básico. Usaremos os Fragmentos de conteúdo que você modelou e criou nos módulos de aprendizagem anteriores, portanto, navegue primeiro por esses guias antes de entrar nesse."
+>abstract="Este guia aborda a consulta de dados JSON do seu ambiente de avaliação em um aplicativo web JavaScript básico. Usaremos os fragmentos de conteúdo que você modelou e criou nos módulos de aprendizagem anteriores, portanto, conclua esses guias antes de entrar neste."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide_footer"
