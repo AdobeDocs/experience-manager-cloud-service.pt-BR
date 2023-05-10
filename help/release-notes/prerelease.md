@@ -3,9 +3,9 @@ title: Canal de pré-lançamento do Adobe Experience Manager as a Cloud Service
 description: Saiba como usar o canal de pré-lançamento para visualizar os recursos futuros do AEM as a Cloud Service.
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 source-git-commit: a66814c0f7f8dbdf794ff1867c7a4d7fdc2956cf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1311'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -16,22 +16,22 @@ Saiba como usar o canal de pré-lançamento para visualizar os recursos futuros 
 
 ## Introdução {#introduction}
 
-A Adobe Experience Manager as a Cloud Service fornece novos recursos regularmente, de acordo com a [Roteiro de versões do Experience Manager.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=pt-BR#aem-as-cloud-service)
+O Adobe Experience Manager as a Cloud Service fornece novos recursos regularmente, de acordo com o [Roteiro de versões do Experience Manager.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=pt-BR#aem-as-cloud-service)
 
-Para se familiarizar com os recursos agendados para entrar no ar na versão de recursos a seguir, você pode assinar o canal de pré-lançamento, que pode ser acessado ao configurar os ambientes de desenvolvimento ou quaisquer ambientes sandbox. Você pode visualizar as alterações acessíveis pela interface do AEM e programar usando as novas APIs de pré-lançamento.
+Para se familiarizar com os recursos programados para serem lançados no mês seguinte, você pode assinar o canal de pré-lançamento, acessível por meio da configuração dos ambientes de desenvolvimento ou de qualquer ambiente de sandbox. Você pode visualizar as alterações acessíveis pela interface do AEM e programar usando as novas APIs de pré-lançamento.
 
-A lista de recursos de pré-lançamento de uma determinada versão de recurso é publicada no [notas de versão.](/help/release-notes/release-notes-cloud/release-notes-current.md)
+A lista de recursos de pré-lançamento de um determinado recurso é publicada nas [notas de versão.](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
 ## Versões do AEM as a Cloud Service {#releases}
 
 O AEM as a Cloud Service tem dois tipos de versões.
 
-* **Versões de recursos** adicionar recursos e funcionalidades ao AEM as a Cloud Service, após a ativação
-* **Versões de manutenção** adicione atualizações de segurança, aprimoramentos de desempenho e correções de erros, e elas são aplicadas regularmente.
+* Os **lançamentos de recursos** adicionam recursos e funcionalidades ao AEM as a Cloud Service após a ativação
+* **Versões de manutenção** adicionam atualizações de segurança, aprimoramentos de desempenho e correções de erros, e são aplicadas com frequência.
 
 Esse padrão garante uma atualização contínua de versões sem interrupção do serviço.
 
-O canal de pré-lançamento permite que você visualize os recursos agendados para a versão futura do recurso para avaliar a funcionalidade futura e planejar sua possível implementação para seus próprios projetos. Ele permite que você se planeje antecipadamente para a próxima versão de recursos.
+O canal de pré-lançamento permite que você visualize os recursos programados da próxima versão para avaliar as funcionalidades futuras e planejar possíveis implementações em seus próprios projetos. Permite que você se prepare com antecedência para a próxima versão.
 
 Por exemplo, se for o mês de maio e você estiver inscrito no canal de pré-lançamento, será possível avaliar os recursos da versão de junho.
 
@@ -48,7 +48,7 @@ Aproveitar de forma eficaz o canal de pré-lançamento é um processo de quatro 
 
 ## Marcar o seu calendário {#mark-calendars}
 
-As versões de recursos são agendadas com bastante antecedência e as datas de ativação da versão de recursos são publicadas em [Adobe Experience League.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=pt-BR#aem-as-cloud-service)
+As versões de recursos são programadas com bastante antecedência e as datas de ativação são publicadas na [Adobe Experience League.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=pt-BR#aem-as-cloud-service)
 
 Anote as datas de lançamento para que você possa reservar um tempo para revisar e testar os recursos futuros.
 
@@ -62,7 +62,7 @@ Você também pode [verificar os problemas conhecidos](/help/release-notes/maint
 
 ## Ative o canal de pré-lançamento para acessar e experimentar novos recursos {#new-features}
 
-O canal de pré-lançamento pode ser ativado em qualquer ambiente de desenvolvimento ou sandbox. O pré-lançamento não pode ser ativado em ambientes de preparação ou produção.
+O canal de pré-lançamento pode ser ativado em qualquer ambiente de desenvolvimento ou sandbox. O pré-lançamento não pode ser habilitado em ambientes de preparo ou produção.
 
 Os recursos de pré-lançamento podem ser vistos de diferentes maneiras:
 
