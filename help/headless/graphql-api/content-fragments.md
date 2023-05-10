@@ -6,7 +6,7 @@ exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 source-git-commit: 9c4d416b37be684aae37d42a02cc86dfa87fbc2f
 workflow-type: tm+mt
 source-wordcount: '4769'
-ht-degree: 86%
+ht-degree: 98%
 
 ---
 
@@ -705,57 +705,57 @@ query {
 >* Devido a restrições técnicas internas, o desempenho será prejudicado se a classificação e a filtragem forem aplicadas em campos aninhados. Portanto, é recomendável usar campos de filtro/classificação armazenados no nível raiz. Essa também é o método recomendado se você quiser consultar grandes conjuntos de resultados paginados.
 
 
-## Entrega de imagem otimizada para a Web em consultas do GraphQL {#web-optimized-image-delivery-in-graphql-queries}
+## Entrega de imagem otimizada para a Web em consultas de GraphQL {#web-optimized-image-delivery-in-graphql-queries}
 
-A entrega de imagem otimizada para a Web permite usar uma consulta Graphql para:
+A entrega de imagem otimizada para a Web permite usar uma consulta de GraphQL para:
 
-* Solicitar um URL para uma imagem AEM do ativo
+* Solicitar um URL de uma imagem do AEM Assets
 
-* Passe parâmetros com a consulta, de modo que uma representação específica da imagem seja gerada automaticamente e retornada
+* Transmitir parâmetros com a consulta, de modo que uma representação específica da imagem seja gerada e retornada automaticamente
 
    >[!NOTE]
    >
-   >A representação especificada não é armazenada no AEM Assets. A representação é gerada e mantida em cache por um curto período.
+   >A representação especificada não é armazenada no AEM Assets. A representação é gerada e armazenada em cache por um curto período.
 
-* Retorna o URL como parte do delivery JSON
+* Retornar o URL como parte da entrega JSON
 
-Você pode usar AEM para:
+Você pode usar o AEM para:
 
-* Passar [Entrega de imagem otimizada para a Web](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=pt-BR) em queries GraphQL.
+* Transmitir a [entrega de imagem otimizada para a Web](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=pt-BR) em consultas de GraphQL.
 
-Isso significa que os comandos são aplicados durante a execução da consulta, da mesma forma que os parâmetros de URL nas solicitações do GET para essas imagens.
+Isso significa que os comandos são aplicados durante a execução da consulta, da mesma forma que os parâmetros de URL nas solicitações GET dessas imagens.
 
-Isso permite que você crie dinamicamente representações de imagem para entrega JSON, o que evita a necessidade de criar e armazenar manualmente essas representações no repositório.
+Permite criar dinamicamente as representações de imagem para entrega JSON, sem a necessidade de criar e armazenar manualmente essas representações no repositório.
 
 A solução no GraphQL significa que você pode:
 
-* use `_dynamicUrl` no `ImageRef` referência
+* usar `_dynamicUrl` na referência `ImageRef`
 
-* adicionar `_assetTransform` para o cabeçalho da lista em que seus filtros são definidos
+* adicionar `_assetTransform` ao cabeçalho de lista no qual seus filtros são definidos
 
 ### Estrutura da solicitação de transformação {#structure-transformation-request}
 
-`AssetTransform` (`_assetTransform`) é usada para fazer as solicitações de transformação do URL.
+`AssetTransform` (`_assetTransform`) é usado para fazer as solicitações de transformação do URL.
 
 A estrutura e a sintaxe são:
 
-* `format`: uma enumeração com todos os formatos compatíveis por sua extensão: GIF, PNG, PNG8, JPG, PJPG, BJPG, WEBP, WEBPLL ou WEBPLL
+* `format`: uma lista discriminada com todos os formatos compatíveis com sua extensão: GIF, PNG, PNG8, JPG, PJPG, BJPG, WEBP, WEBPLL ou WEBPLY
 * `seoName`: uma string que será usada como nome de arquivo em vez do nome do nó
-* `crop`: uma subestrutura de quadro, se a largura ou a altura forem omitidas, a altura ou a largura serão usadas como o mesmo valor
-   * `xOrigin`: a origem x do quadro e é obrigatória
-   * `yOrigin`: a origem y do quadro e é obrigatória
+* `crop`: uma subestrutura de quadro, se a largura ou a altura for omitida, elas serão usadas como o mesmo valor
+   * `xOrigin`: a origem x do quadro (obrigatória)
+   * `yOrigin`: a origem y do quadro (obrigatória)
    * `width`: a largura do quadro
    * `height`: a altura do quadro
-* `size`: uma subestrutura de dimensão, se a largura ou a altura forem omitidas, a altura ou a largura serão usadas como o mesmo valor
+* `size`: uma subestrutura de dimensão; se a largura ou a altura for omitida, elas serão usadas como o mesmo valor
    * `width`: a largura da dimensão
    * `height`: a altura da dimensão
-* `rotation`: uma enumeração de todas as rotações suportadas: R90, R180, R270
-* `flip`: uma enumeração de HORIZONTAL, VERTICAL, HORIZONTAL_AND_VERTICAL
-* `quality`: um número inteiro entre 1 e 100 que anota a porcentagem da qualidade da imagem
-* `width`: um número inteiro que define a largura da imagem de saída, mas será ignorado pelo Gerador de imagens
-* `preferWebp`: um booleano que indica se webp é preferencial (o valor padrão é false)
+* `rotation`: uma lista discriminada de todas as rotações compatíveis: R90, R180, R270
+* `flip`: uma lista discriminada de HORIZONTAL, VERTICAL, HORIZONTAL_AND_VERTICAL
+* `quality`: um número inteiro entre 1 e 100 que indica a porcentagem da qualidade da imagem
+* `width`: um número inteiro que define a largura da imagem de saída, mas será ignorado pelo gerador de imagens
+* `preferWebp`: um booleano que indica se há preferência pelo formato WEBP (o valor padrão é false)
 
-A transformação do URL está disponível para todos os tipos de consulta: por caminho, lista ou paginado.
+A transformação do URL está disponível para todos os tipos de consulta: por caminho, lista ou paginação.
 
 ### Entrega de imagem otimizada para a Web com parâmetros completos {#web-optimized-image-delivery-full-parameters}
 
@@ -835,9 +835,9 @@ query ($seoName: String!) {
 }
 ```
 
-### Entrega de imagem otimizada para a Web com várias variáveis de consulta {#web-optimized-image-delivery-multiple-query-variables}
+### Entrega de imagem otimizada para a Web com múltiplas variáveis de consulta {#web-optimized-image-delivery-multiple-query-variables}
 
-O exemplo a seguir mostra o uso de várias variáveis de consulta:
+O exemplo a seguir mostra o uso de múltiplas variáveis de consulta:
 
 ```graphql
 query ($seoName: String!, $format: AssetTransformFormat!) {
@@ -874,13 +874,13 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
 }
 ```
 
-### Solicitação de entrega de imagem otimizada pela Web por URL {#web-optimized-image-delivery-request-url}
+### Solicitação de entrega de imagem otimizada para a Web por URL {#web-optimized-image-delivery-request-url}
 
-Se você salvar seu query como uma consulta persistente (por exemplo, com o nome `dynamic-url-x`) você pode [executar a consulta persistente diretamente](/help/headless/graphql-api/persisted-queries.md#execute-persisted-query).
+Se você salvar a consulta como uma consulta persistente (por exemplo, com o nome `dynamic-url-x`), será possível [executar a consulta persistente diretamente](/help/headless/graphql-api/persisted-queries.md#execute-persisted-query).
 
-Por exemplo, para executar diretamente as amostras anteriores (salvas como consultas persistentes), use os seguintes URLs:
+Por exemplo, para executar diretamente os exemplos anteriores (salvas como consultas persistentes), use os seguintes URLs:
 
-* [Parâmetro único](#dynamic-image-delivery-single-specified-parameter); Consulta Persistente com o nome `dynamic-url-x`
+* [Parâmetro único](#dynamic-image-delivery-single-specified-parameter); consulta persistente com o nome `dynamic-url-x`
 
    * `http://localhost:4502/graphql/execute.json/wknd-shared/dynamic-url-x;seoName=xxx`
 
@@ -888,24 +888,24 @@ Por exemplo, para executar diretamente as amostras anteriores (salvas como consu
 
       ![Entrega de imagem usando parâmetros](assets/cfm-graphiql-sample-image-delivery.png "Entrega de imagem usando parâmetros")
 
-* [Vários parâmetros](#dynamic-image-delivery-multiple-specified-parameters); Consulta Persistente com o nome `dynamic`
+* [Vários parâmetros](#dynamic-image-delivery-multiple-specified-parameters); consulta persistente com o nome `dynamic`
 
    * `http://localhost:4502/graphql/execute.json/wknd-shared/dynamic;seoName=billiboy;format=GIF;`
 
       >[!CAUTION]
       >
-      >A direita `;`é obrigatório encerrar a lista de parâmetros de forma limpa.
+      >O sufixo `;`é obrigatório para encerrar a lista de parâmetros de forma limpa.
 
-### Limitações do fornecimento de imagem {#image-delivery-limitations}
+### Limitações da entrega de imagem {#image-delivery-limitations}
 
 As seguintes limitações existem:
 
-* Modificadores aplicados a todas as imagens parte da query (parâmetros globais)
+* Modificadores aplicados a todas as imagens que fazem parte da consulta (parâmetros globais)
 
 * Cabeçalhos de armazenamento em cache
 
    * Nenhum armazenamento em cache no autor
-   * Armazenamento em cache na publicação - idade máxima de 10 minutos (não pode ser alterada pelo cliente)
+   * Armazenamento em cache na publicação: “max-age” de 10 minutos (não pode ser alterado pelo cliente)
 
 ## GraphQL para AEM - resumo das extensões {#graphql-extensions}
 
@@ -964,9 +964,9 @@ A operação básica de consultas com o GraphQL para AEM adere à especificaçã
          * Consulte [Exemplo de consulta - Todas as cidades com uma variação nomeada](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
    * Para [entrega de imagem](#image-delivery):
 
-      * `_dynamicUrl`: no `ImageRef` referência
+      * `_dynamicUrl`: na referência `ImageRef`
 
-      * `_assetTransform`: no cabeçalho da lista, onde os filtros são definidos
+      * `_assetTransform`: no cabeçalho de lista no qual os filtros são definidos
 
       * Consulte:
 

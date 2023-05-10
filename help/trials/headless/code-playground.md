@@ -7,7 +7,7 @@ exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
 source-git-commit: 1949ee211b4f816e05aa779deb9e287347f006ad
 workflow-type: tm+mt
 source-wordcount: '987'
-ht-degree: 5%
+ht-degree: 39%
 
 ---
 
@@ -21,12 +21,12 @@ ht-degree: 5%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide"
->title="Inicie o aplicativo CodePen de amostra"
+>title="Inicie o aplicativo CodePen de exemplo"
 >abstract="Este guia aborda a consulta de dados JSON do seu ambiente de avaliação em um aplicativo Web JavaScript básico. Usaremos os Fragmentos de conteúdo que você modelou e criou nos módulos de aprendizagem anteriores, portanto, navegue primeiro por esses guias antes de entrar nesse."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide_footer"
->title="Neste módulo, você aprendeu a usar o Cliente AEM Headless para JavaScript para buscar dados JSON de seu ambiente de avaliação usando consultas persistentes do GraphQL.<br><br>Agora você sabe como usar esse cliente para consumir dados de seu próprio aplicativo web."
+>title="Neste módulo, você aprendeu a usar o AEM Headless Client para JavaScript para buscar dados JSON de seu ambiente de avaliação usando consultas persistentes de GraphQL.<br><br>Agora você sabe como pode usar esse cliente para consumir dados de seu próprio aplicativo web."
 >abstract=""
 
 ## CodePen {#codepen}
@@ -53,13 +53,13 @@ Agora que você sabe um pouco sobre a CodePen, em seguida, configurará o aplica
 
 ## Apresentação do código JavaScript {#code-walkthrough}
 
-O **JS** painel à direita em CodePen contém o Javascript do aplicativo de exemplo. A partir da linha 2, importamos o Cliente sem cabeçalho AEM para JavaScript do CDN do Skypack. O Skypack é usado para facilitar o desenvolvimento sem uma etapa de compilação, mas você também pode usar o Cliente Sem Cabeça AEM com NPM ou Yarn em seus próprios projetos. Confira as instruções de uso no [LEITURA](https://github.com/adobe/aem-headless-client-js#aem-headless-client-for-javascript) para obter mais detalhes.
+O **JS** painel à direita em CodePen contém o Javascript do aplicativo de exemplo. Começando na linha 2, importaremos o AEM Headless Client para JavaScript do Skypack CDN. O Skypack é usado para facilitar o desenvolvimento sem uma etapa de criação, mas você também pode usar o AEM Headless Client com o NPM ou Yarn em seus próprios projetos. Confira as instruções de uso no arquivo [README](https://github.com/adobe/aem-headless-client-js#aem-headless-client-for-javascript) para obter mais detalhes.
 
 ```javascript
 import AdobeAemHeadlessClientJs from 'https://cdn.skypack.dev/@adobe/aem-headless-client-js@v3.2.0';
 ```
 
-Na linha 6, lemos os detalhes do host de publicação no `publishHost` parâmetro de consulta. Este é o host do qual o Cliente Sem Cabeça do AEM buscará dados. Normalmente, isso seria codificado no aplicativo, mas estamos usando um parâmetro de consulta para facilitar o trabalho do aplicativo CodePen com ambientes diferentes.
+Na linha 6, lemos os detalhes do host de publicação do parâmetro de consulta `publishHost`. Este é o host no qual o AEM Headless Client buscará os dados. Normalmente, isso seria programado no aplicativo, mas estamos usando um parâmetro de consulta para facilitar o trabalho do aplicativo CodePen com ambientes diferentes.
 
 Configuramos o Cliente Sem Cabeçalho do AEM na linha 12:
 
@@ -75,15 +75,15 @@ const aemHeadlessClient = new AdobeAemHeadlessClientJs({
 
 >[!NOTE]
 >
->O **serviceURL** está definida para usar uma função Adobe IO Runtime proxy para evitar problemas de CORS. Isso não é necessário para seus próprios projetos, mas é necessário para que o aplicativo CodePen funcione com seu ambiente de avaliação. A função de proxy está configurada para usar a variável **publishHost** valor que foi fornecido no parâmetro de consulta.
+>O **serviceURL** está definida para usar uma função Adobe IO Runtime proxy para evitar problemas de CORS. Isso não será obrigatório nos seus próprios projetos, mas é necessário para que o aplicativo CodePen funcione com seu ambiente de avaliação. A função de proxy está configurada para usar a variável **publishHost** valor que foi fornecido no parâmetro de consulta.
 
-Finalmente, a função `fetchJsonFromGraphQL()` é usado para executar a solicitação de busca usando o Cliente Sem Cabeça do AEM. Ele é chamado sempre que o código é alterado ou pode ser acionado clicando no botão **Refetch** link . O `aemHeadlessClient.runPersistedQuery(..)` ocorre na linha 34. Um pouco mais tarde, faremos uma alteração na forma como esses dados JSON são renderizados, mas por enquanto vamos imprimi-los no `#output` div usando o `resultToPreTag(queryResult)` .
+Por fim, a função `fetchJsonFromGraphQL()` é usada para executar a solicitação de busca usando o AEM Headless Client. Ele é chamado sempre que o código é alterado ou pode ser acionado clicando no botão **Refetch** link . A chamada `aemHeadlessClient.runPersistedQuery(..)` ocorre na linha 34. Mais à frente, faremos uma alteração na forma como esses dados JSON são renderizados, mas por enquanto vamos imprimi-los no div `#output` usando a função `resultToPreTag(queryResult)`.
 
 ## Buscar dados da sua consulta persistente {#use-persisted-query}
 
-Na linha 25, indicamos qual consulta persistente do GraphQL o aplicativo deve buscar dados. O nome da consulta persistente é uma combinação do nome do ponto de extremidade (ou seja, `your-project` ou `aem-demo-assets`), seguido por uma barra e, em seguida, o nome do query. Se você seguiu exatamente as instruções do módulo anterior, a consulta persistente criada estará no `your-project` endpoint .
+Na linha 25, indicamos de qual consulta persistente de GraphQL o aplicativo deve buscar dados. O nome da consulta persistente é uma combinação do nome do ponto de extremidade (ou seja, `your-project` ou `aem-demo-assets`), seguido por uma barra e, em seguida, o nome do query. Se você seguiu exatamente as instruções do módulo anterior, a consulta persistente criada estará no `your-project` endpoint .
 
-1. Atualize o `persistedQueryName` para usar a consulta persistente criada no módulo anterior. Se você seguisse a sugestão de nomenclatura, teria criado uma consulta persistente chamada `adventure-list` no `your-project` e você definiria a variável `persistedQueryName` para `your-project/adventure-list`:
+1. Atualize a variável `persistedQueryName` para usar a consulta persistente criada no módulo anterior. Se você seguisse a sugestão de nomenclatura, teria criado uma consulta persistente chamada `adventure-list` no `your-project` e você definiria a variável `persistedQueryName` para `your-project/adventure-list`:
 
    ```javascript
    //
@@ -92,15 +92,15 @@ Na linha 25, indicamos qual consulta persistente do GraphQL o aplicativo deve bu
    persistedQueryName = 'your-project/adventure-list';
    ```
 
-1. Depois que essa alteração for feita, o aplicativo deverá atualizar automaticamente e imprimir a resposta JSON bruta da sua consulta persistente para o `#output` div. Se aparecer uma mensagem de erro, verifique o console para obter mais detalhes. Entre em contato [no Slack](https://adobe-dx-support.slack.com) se você ainda tiver problemas com essa etapa.
+1. Depois que essa alteração for feita, o aplicativo deve ser atualizado automaticamente e imprimir a resposta JSON bruta da sua consulta persistente no div `#output`. Se uma mensagem de erro aparecer, verifique o console para obter mais detalhes. Entre em contato [no Slack](https://adobe-dx-support.slack.com) se você ainda tiver problemas com essa etapa.
 
 1. Esse JSON contém as propriedades exatas de que seu aplicativo precisa? Caso contrário, volte para a [Extrair conteúdo usando a API do GraphQL](https://experience.adobe.com/experiencemanager/learn/extract_content_using_graphql) guia de aprendizado para fazer alterações. Não se esqueça de salvar e publicar seu query uma vez concluído.
 
 ## Alterar a renderização de JSON {#change-rendering}
 
-O JSON é renderizado como está em um `pre` tag, que não é muito criativa. Podemos mudar nossa Caneta de código para usar o `resultToDom()` em vez disso, para ilustrar como a resposta JSON pode ser repetida para criar um resultado mais interessante.
+O JSON é renderizado como está em um `pre` tag, que não é muito criativa. Em vez disso, podemos configurar o CodePen para usar a função `resultToDom()`, para ilustrar como a resposta JSON pode ser iterada para criar um resultado mais interessante.
 
-1. Para fazer essa alteração, comente a linha 37 e remova o comentário da linha 40:
+1. Para fazer essa alteração, comente na linha 37 e remova o comentário da linha 40:
 
    ```javascript
    // Output the results to a pre tag
@@ -110,14 +110,14 @@ O JSON é renderizado como está em um `pre` tag, que não é muito criativa. Po
    resultToDom(queryResult);
    ```
 
-1. Essa função também renderizará quaisquer imagens incluídas na resposta JSON como uma `img` . Se a variável **Aventura** os fragmentos de conteúdo criados não incluem imagens, você pode tentar alternar para usar o `aem-demo-assets/adventures-all` consulta persistente modificando a linha 25:
+1. Essa função também renderizará quaisquer imagens incluídas na resposta JSON como uma tag `img`. Se a variável **Aventura** os fragmentos de conteúdo criados não incluem imagens, você pode tentar alternar para usar o `aem-demo-assets/adventures-all` consulta persistente modificando a linha 25:
 
    ```javascript
    persistedQueryName = 'aem-demo-assets/adventures-all';
    ```
 
-Essa consulta produzirá uma resposta JSON que inclui imagens e a variável `resultToDom()` os renderizará em linha.
+Essa consulta produzirá uma resposta JSON que inclui imagens, e a função `resultToDom()` as renderizará em linha.
 
-![Resultado da consulta de aventuras-tudo e da função de renderização resultToDom](assets/do-not-localize/adventures-all-query-result.png)
+![Resultado da consulta adventures-all e da função de renderização resultToDom](assets/do-not-localize/adventures-all-query-result.png)
 
 Agora que você realizou o trabalho para criar os modelos e consultas, sua equipe de conteúdo pode assumir o controle com facilidade. Mostraremos o fluxo do autor de conteúdo no próximo módulo.

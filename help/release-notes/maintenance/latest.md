@@ -1,17 +1,17 @@
 ---
-title: Notas de versão de manutenção atuais de [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Notas de versão de manutenção atuais de [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: ea3a476f7f2d7d97a2428c6facf61b746dba7a23
 workflow-type: tm+mt
 source-wordcount: '208'
-ht-degree: 47%
+ht-degree: 65%
 
 ---
 
 # Notas da versão de manutenção {#maintenance-release-notes}
 
-A seção a seguir descreve as notas de versão técnicas da versão de manutenção atual do Experience Manager as a Cloud Service.
+A seção a seguir descreve as notas de versão técnicas para a versão de manutenção atual do Experience Manager as a Cloud Service.
 
 ## Versão 11873 {#release-11873}
 

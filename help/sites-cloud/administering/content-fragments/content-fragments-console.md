@@ -8,7 +8,7 @@ exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
 source-git-commit: cdc86e5661ec90f96f670e777a9c98b3dcd4a7ac
 workflow-type: tm+mt
 source-wordcount: '1051'
-ht-degree: 80%
+ht-degree: 94%
 
 ---
 
@@ -56,7 +56,7 @@ Aqui você pode ver três áreas principais:
 * O painel esquerdo
    * Aqui você pode ocultar ou revelar a árvore de pastas
    * É possível selecionar uma ramificação específica da árvore
-   * Isso pode ser redimensionado para mostrar pastas aninhadas
+   * Ela pode ser redimensionada para mostrar pastas aninhadas
 * O painel principal/direito; aqui, você pode:
    * Consultar a lista de todos os fragmentos de conteúdo na ramificação selecionada da árvore:
       * A localização é indicada pela navegação estrutural; elas também podem ser usadas para alterar a localização
@@ -65,9 +65,10 @@ Aqui você pode ver três áreas principais:
             * Abrir o fragmento apropriado no editor
             * Mostrar informações sobre referências
             * Mostrar informações sobre versões de idioma do fragmento
-      * Ao usar o mouse sobre os cabeçalhos da coluna, um seletor de ação suspenso e os controles deslizantes de largura serão mostrados. Isso permite:
-         * Classificar - selecione a ação apropriada para crescente ou decrescente. Essa opção classificará toda a tabela de acordo com essa coluna. A classificação só está disponível nas colunas apropriadas.
-         * Redimensionar a coluna - usando os controles deslizantes de ação ou largura
+      * Ao passar o mouse sobre os cabeçalhos da coluna, um seletor de ação suspenso e os controles deslizantes de largura serão mostrados. Eles permitem:
+         * Classificar: selecione a ação apropriada para classificar em ordem crescente ou decrescente 
+Isso classificará toda a tabela de acordo com essa coluna. A classificação só está disponível nas colunas apropriadas.
+         * Redimensionar a coluna: usando os controles deslizantes de ação ou largura
 
 ## Ações {#actions}
 
@@ -172,15 +173,15 @@ O painel Filtro oferece:
 
 Você também pode selecionar um predicado clicando em um valor de coluna específico na lista. Você pode selecionar um ou mais valores para combinar predicados.
 
-Por exemplo, selecione **Publicado** no **Status** coluna:
+Por exemplo, selecione **Publicado** na coluna **Status**:
 
 >[!NOTE]
 >
->A filtragem rápida só é compatível com o **Modelo**, **Status**, **Modificado por** e **Publicado por** colunas.
+>A filtragem rápida só é compatível com as colunas **Modelo**, **Status**, **Modificado por** e **Publicado por**.
 
 ![Console de fragmentos de conteúdo - Filtragem](assets/cfc-console-fast-filter-01.png)
 
-Uma vez selecionado, isso será mostrado como um predicado de filtro, e a lista será filtrada adequadamente:
+Após a seleção, isso será exibido como um predicado de filtro, e a lista será filtrada adequadamente:
 
 ![Console de fragmentos de conteúdo - Filtragem](assets/cfc-console-fast-filter-02.png)
 
