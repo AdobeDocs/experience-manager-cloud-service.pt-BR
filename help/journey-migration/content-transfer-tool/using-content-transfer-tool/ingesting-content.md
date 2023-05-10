@@ -2,9 +2,9 @@
 title: Assimilar conteúdo no Target
 description: Assimilar conteúdo no Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 79f5133e681261fa8f7604f1fc9c3fbf5c6a5f59
+source-git-commit: addfa18ed8fa45b1cfc17d4e35cbdde47b491507
 workflow-type: tm+mt
-source-wordcount: '1722'
+source-wordcount: '1753'
 ht-degree: 12%
 
 ---
@@ -59,7 +59,9 @@ Siga as etapas abaixo para assimilar seu conjunto de migração da ferramenta Tr
 
    ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23.png)
 
-1. Quando a assimilação estiver concluída, clique no botão (i) no canto superior direito da tela para obter mais informações sobre o trabalho de assimilação.
+1. Clique em **i)** na linha para obter mais informações sobre o trabalho de assimilação. Você pode ver a duração de cada etapa da Assimilação ao executar ou concluir clicando em **...** e depois **Exibir durações**. As informações da extração também são mostradas para perceber o que está sendo assimilado.
+
+   ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23b.png)
 
 <!-- Alexandru: hiding temporarily, until it's reviewed 
 

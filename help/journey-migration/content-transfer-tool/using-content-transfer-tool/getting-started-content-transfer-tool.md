@@ -2,9 +2,9 @@
 title: Introdução à ferramenta Transferência de conteúdo
 description: Introdução à ferramenta Transferência de conteúdo
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
+source-git-commit: b31fe77cd43362b6ad768e8a2b258c23ae84466c
 workflow-type: tm+mt
-source-wordcount: '1388'
+source-wordcount: '1406'
 ht-degree: 22%
 
 ---
@@ -91,6 +91,10 @@ A seção a seguir se aplica à nova versão da ferramenta Transferência de con
    A caixa de diálogo a seguir será apresentada. Observe que um conjunto de migração expirará após um período prolongado de inatividade. Depois que os avisos forem exibidos no cartão do projeto e nas linhas da tabela de tarefas de migração por um período de tempo, o conjunto de migração expirará e seus dados não estarão mais disponíveis. Revisão [Expiração do conjunto de migração](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) para obter detalhes.
 
    ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
+
+   >[!NOTE]
+   >
+   >O nome deve seguir as mesmas convenções de um nó AEM, portanto, não pode conter nenhum desses caracteres: . / : [ ] | *
 
 1. Agora você deve ver sua lista de migração na exibição de lista. Clique no símbolo de três pontos (**...**) para abrir a lista suspensa e clicar em **Chave de extração de cópia**. Essa tecla será necessária durante a fase de Extração. Copie essa chave de Extração.
 
