@@ -2,10 +2,10 @@
 title: Introdução à jornada de integração do AEM as a Cloud Service
 description: Comece aqui para obter uma visão geral da jornada guiada por meio do processo de integração para o AEM as a Cloud Service.
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
-source-git-commit: 75c0e8cbaa409fa48750e794c27ace98eda107d0
+source-git-commit: 5c5db0d133adfbbb678930ef27d8ade10fd0c3be
 workflow-type: tm+mt
-source-wordcount: '1175'
-ht-degree: 100%
+source-wordcount: '1228'
+ht-degree: 95%
 
 ---
 
@@ -95,3 +95,9 @@ Agora você está pronto para iniciar sua jornada de integração do AEM as a Cl
 As Jornadas de documentação foram projetadas com princípios de práticas recomendadas, informadas pela última pesquisa da Adobe, experiência comprovada de implementação dos consultores da Adobe e feedback de projetos de clientes.
 
 Se você quiser saber como a Adobe recomenda que você integre sua equipe no aplicativo AEM as a Cloud Service, este é o ponto de partida.
+
+## Recursos adicionais {#additional-resources}
+
+Veja a seguir recursos adicionais e opcionais, caso deseje ir além do conteúdo da jornada de integração.
+
+* [Dicas e truques de campeão do AEM - Playbook integrado do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-champions/onboarding-playbook.md) - Assista a este vídeo para saber mais sobre dicas de integração do Cloud Manager e truques de um campeão de AEM.

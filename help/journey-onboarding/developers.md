@@ -4,10 +4,10 @@ description: Depois que o administrador do sistema configurar os recursos de nuv
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
-source-git-commit: 709a80683357b0d56280ff14aa5f4ba6bf2c6b23
+source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
 workflow-type: tm+mt
-source-wordcount: '1400'
-ht-degree: 100%
+source-wordcount: '1419'
+ht-degree: 98%
 
 ---
 
@@ -143,6 +143,8 @@ Se você estiver interessado em como os autores de conteúdo acessam e usam o AE
 >Agora que você passou pela integração, saiba como [adicionar facilmente o complemento de demonstrações de referência do AEM](/help/journey-sites/demos-add-on/overview.md) a um ambiente de sandbox com configuração mínima do AEM e sobre poder testar os recursos avançados do AEM com exemplos completos com base nas práticas recomendadas.
 
 ## Recursos adicionais {#additional-resources}
+
+Veja a seguir recursos adicionais e opcionais, caso deseje ir além do conteúdo da jornada de integração.
 
 * [Acessar repositórios](/help/implementing/cloud-manager/managing-code/accessing-repos.md) - Saiba como acessar e gerenciar o repositório Git usando o gerenciamento de conta Git por autoatendimento do Cloud Manager.
 * [Uso do Git com o Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md) - Saiba como usar os repositórios Git do Cloud Manager e como integrar seu próprio repositório Git local gerenciado pelo cliente com o Cloud Manager.
