@@ -3,10 +3,10 @@ title: Centro de notificação
 description: Utilize o centro de notificações para tomar ações apropriadas em caso de incidentes e para obter outras informações importantes
 hidefromtoc: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: b72d22e8788c04ab4faa3616a4a0ce5e6d8ce991
+source-git-commit: 283493187142e1aeaaf272818bb9b7921841ed67
 workflow-type: tm+mt
-source-wordcount: '798'
-ht-degree: 36%
+source-wordcount: '810'
+ht-degree: 35%
 
 ---
 
@@ -37,7 +37,9 @@ No Centro de notificações, é possível selecionar um programa e ambiente espe
 Siga as etapas abaixo para configurar o recebimento de notificações:
 
 1. Crie os seguintes Perfis de produto, conforme descrito [neste artigo](/help/journey-onboarding/notification-profiles.md), também atribuindo as IDs de Adobe apropriadas de sua organização a esses perfis. Isso permite que um administrador determine quais usuários se qualificam para receber essas notificações.
-1. Cada usuário atribuído na etapa anterior pode configurar como ele gostaria de receber suas notificações. No [Página de preferências do Experience Cloud](https://experience.adobe.com/preferences/notification-section), verifique se a assinatura do Experience Manager está ativada e a variável **Incidentes operacionais** e **Recomendações proativas** as caixas de seleção são selecionadas. Além disso, é recomendável que a seção Emails esteja definida como **Notificações instantâneas** assim, as notificações são recebidas imediatamente quando ocorre um incidente.
+1. Cada usuário atribuído na etapa anterior pode configurar como ele gostaria de receber suas notificações. No [Página de preferências do Experience Cloud](https://experience.adobe.com/preferences/notification-section), verifique se a assinatura do Experience Manager está ativada e a variável **Incidentes operacionais** e **Recomendações proativas** as caixas de seleção são selecionadas para as colunas no aplicativo e de email (veja a imagem abaixo). Além disso, é recomendável que a seção Emails esteja definida como **Notificações instantâneas** assim, as notificações são recebidas imediatamente quando ocorre um incidente.
+
+![Configurar assinaturas](/help/operations/assets/configure-subscriptions.png)
 
 >[!NOTE]
 >As notificações funcionam no nível da organização para que os assinantes recebam notificações de todos os programas e ambientes nesses programas.
