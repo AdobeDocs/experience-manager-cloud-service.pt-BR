@@ -2,10 +2,10 @@
 title: Programas de edição
 description: Saiba como editar os programas de sandbox e produção para ajustar as opções depois de criá-las.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: 3e2635ff34f66c9f7504799204091ef921ccd860
+source-git-commit: b916bf5b252045120659600293e004fc34b96e7a
 workflow-type: tm+mt
-source-wordcount: '517'
-ht-degree: 100%
+source-wordcount: '525'
+ht-degree: 98%
 
 ---
 
@@ -53,6 +53,7 @@ Siga estas etapas para editar um programa.
    ![Editar configurações de publicação](assets/edit-program-go-live.png)
 
    * Essa data é somente para fins informativos e aciona o widget de publicação na página de visão geral do programa para fornecer links no produto para a documentação de práticas recomendadas do AEM as a Cloud Service em tempo hábil, a fim de se alinhar com a sua jornada, resultando em uma experiência de publicação bem-sucedida e tranquila.
+   * Esta guia não está disponível para programas sandbox.
 
 1. Clique em **Atualizar** para salvar as alterações no programa.
 

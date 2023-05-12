@@ -2,10 +2,10 @@
 title: Criação de programas de produção
 description: Saiba como usar o Cloud Manager para criar seu próprio programa de produção para hospedar o tráfego direto.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: bfa1b56e5c066557c1b369b5f13335080a965055
+source-git-commit: b916bf5b252045120659600293e004fc34b96e7a
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 100%
+source-wordcount: '582'
+ht-degree: 82%
 
 ---
 
@@ -15,14 +15,6 @@ ht-degree: 100%
 Um programa de produção deve ser usado por um usuário familiarizado com o AEM e o Cloud Manager e que está pronto para começar a gravar, compilar e testar o código com o objetivo de implantá-lo para hospedar o tráfego direto.
 
 Saiba mais sobre os tipos de programas no documento [Noções sobre programas e tipos de programas.](program-types.md)
-
-## Tutoriais em vídeo {#video-tutorials}
-
-Você pode assistir a estes dois tutoriais em vídeo para saber como criar um programa no Cloud Manager, ou [seguir as instruções documentadas.](#create)
-
->[!VIDEO](https://video.tv.adobe.com/v/334953)
-
->[!VIDEO](https://video.tv.adobe.com/v/334954)
 
 ## Criação de um programa de produção {#create}
 
@@ -34,13 +26,11 @@ Siga estas etapas para criar um programa de produção.
 
    ![Página de aterrissagem do Cloud Manager](assets/log-in.png)
 
-1. Selecione **Configurar para produção** no assistente Criar programa para criar um programa de produção.
-
-   1. É possível aceitar o nome padrão do programa ou editá-lo.
-   1. Opcionalmente, é possível arrastar e soltar uma imagem em miniatura para identificar o programa.
-   1. Toque ou clique em **Continuar**.
+1. Selecionar **Configurar para produção** no assistente Criar programa para criar um programa de produção e fornecer um nome de programa.
 
    ![Assistente de criação de programa](assets/create-production-program.png)
+
+1. Opcionalmente, é possível adicionar uma imagem ao programa arrastando e soltando um arquivo de imagem na **Adicionar uma imagem de programa** direcione ou clique nela para selecionar uma imagem de um navegador de arquivos. Toque ou clique em **Continuar**.
 
 1. Se você tiver direitos de segurança aprimorados, a guia **Segurança aprimorada** fornecerá a opção de **Ativar segurança aprimorada** para o seu programa de produção. Caso necessário, marque a opção para ativar a segurança aprimorada e toque ou clique em **Continuar**.
 
@@ -51,6 +41,7 @@ Siga estas etapas para criar um programa de produção.
 
 1. Na guia **Soluções e complementos**, selecione as soluções a serem incluídas no programa.
 
+   * Se não tiver certeza se precisa de um ou mais programas para as várias soluções disponíveis, selecione aquele que mais lhe interessa. Você pode ativar soluções adicionais ao [edição do programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) mais tarde. Consulte a [Introdução ao documento de Programas de produção](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) para obter mais recomendações de configuração de programa.
    * Se você selecionou **Ativar segurança aprimorada** anteriormente, o número de soluções que você poderá selecionar será limitado à quantidade de direitos de HIPAA disponíveis.
 
    ![Selecionar soluções](assets/setup-prod-select.png)
