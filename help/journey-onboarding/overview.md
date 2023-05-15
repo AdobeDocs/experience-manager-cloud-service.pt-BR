@@ -2,54 +2,54 @@
 title: Introdução à jornada de integração do AEM as a Cloud Service
 description: Comece aqui para obter uma visão geral da jornada guiada por meio do processo de integração para o AEM as a Cloud Service.
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
-source-git-commit: 5c5db0d133adfbbb678930ef27d8ade10fd0c3be
+source-git-commit: 98eff568686c72c626d2bf77d82e8c3f224eda42
 workflow-type: tm+mt
-source-wordcount: '1228'
-ht-degree: 95%
+source-wordcount: '1172'
+ht-degree: 58%
 
 ---
 
 
 # Jornada de integração {#onboarding-journey}
 
-Parabéns por escolher o AEM as a Cloud Service! Este documento é o seu ponto de partida para uma jornada guiada pelo processo de integração. Se você estiver implantando um novo aplicativo ou migrando um existente, essa jornada de integração garante que suas equipes estejam configuradas e tenham acesso ao AEM as a Cloud Service.
+Parabéns por escolher o AEM as a Cloud Service! Este documento é o seu ponto de partida para uma jornada guiada pelo processo de integração. Se você estiver implantando um novo aplicativo ou migrando um existente, essa jornada de integração garante que suas equipes estejam configuradas e tenham acesso a AEM as a Cloud Service.
 
 ## Introdução {#introduction}
 
-A integração é o processo durante o qual um administrador de sistema designado configura o AEM as a Cloud Service para sua organização. O processo inclui o provisionamento inicial de recursos de nuvem e a atribuição de usuários a funções com base em suas responsabilidades de trabalho. Como resultado, cada membro pode fazer logon e acessar os recursos do AEM as a Cloud Service.
+A integração é o processo durante o qual um administrador de sistema designado configura o AEM as a Cloud Service para sua organização. Esse processo inclui o provisionamento inicial de recursos de nuvem e a atribuição de usuários a funções com base em suas responsabilidades de trabalho. Como resultado, cada membro pode fazer logon e acessar seu recurso AEM as a Cloud Service.
 
 ![A jornada de integração](/help/journey-onboarding/assets/onboarding-journey.png)
 
-Este guia aborda os tópicos mais importantes da integração. No final, você terá:
+Este guia aborda os tópicos de integração mais importantes para que, na conclusão, você tenha o seguinte:
 
 * Uma compreensão completa dos diferentes termos, serviços e usuários envolvidos no processo de integração.
 * Uma equipe habilitada para dar os primeiros passos e aprender como criar e desenvolver conteúdo para o seu aplicativo AEM as a Cloud Service.
 
 Como resultado:
 
-* Sua equipe está configurada e terá acesso aos recursos de nuvem.
-* Os autores do AEM terão acesso ao AEM as a Cloud Service e poderão começar a criar conteúdo.
-* Os desenvolvedores e gerentes de implantação do AEM terão acesso ao AEM as a Cloud Service e poderão começar a criar e implantar aplicativos personalizados.
+* Sua equipe está configurada e tem acesso aos recursos da nuvem.
+* AEM autores têm acesso a AEM as a Cloud Service e podem começar a criar conteúdo.
+* AEM desenvolvedores e gerentes de implantação têm acesso a AEM as a Cloud Service e podem começar a criar e implantar aplicativos personalizados.
 
 ## Conceitos e objetivo {#concepts}
 
 Embora pareça haver muito a aprender quando se começa a usar o AEM as a Cloud Service, conceitualmente, existem apenas algumas partes óbvias.
 
-* **O contrato** - Você precisa se familiarizar com o seu contrato com a Adobe, pois ele define os aspectos do processo de integração.
-* **Admin Console** - É aqui que os usuários são gerenciados e as funções são atribuídas.
-* **Cloud Manager** - Essa é a ferramenta usada para configurar recursos como programas e ambientes. Também é onde você acessa o Git e cria pipelines para gerenciar e implantar código personalizado.
+* **O contrato** - Você deve estar familiarizado com o contrato de Adobe, pois ele define os aspectos do processo de integração.
+* **Admin Console** - Onde os usuários são gerenciados e as funções são atribuídas.
+* **Cloud Manager** - A ferramenta para configurar recursos como programas e ambientes. Também é onde você acessa o Git e cria pipelines para gerenciar e implantar código personalizado.
 
-Esses conceitos serão abordados em detalhes nesta jornada de integração. O objetivo é que, ao final da jornada, você:
+Esses conceitos são detalhados nesta jornada de integração. O objetivo é que, ao final da jornada, você:
 
-* Conceda aos usuários necessários acesso ao AEMaaCS
-* Configure os primeiros recursos de nuvem para o seu projeto
+* Concederam ao usuário o acesso necessário para AEM as a Cloud Service.
+* Configure os primeiros recursos de nuvem para o seu projeto.
 * Saiba como implantar seu primeiro código e criar seu primeiro conteúdo.
 
-Basicamente, você vai começar com o pé direito seu novo projeto do AEM as a Cloud Service!
+Basicamente, você bate o chão com seu novo AEM as a Cloud Service projeto!
 
 ## Público {#audience}
 
-A jornada de integração é escrita especificamente para o **administrador do sistema** de clientes novos no AEM as a Cloud Service e no AEM em geral. O administrador do sistema é o indivíduo com quem a Adobe entra em contato inicialmente após a assinatura do contrato do AEM as a Cloud Service e normalmente é a primeira pessoa a acessar e configurar os recursos do AEM as a Cloud Service. Se estiver lendo isso, provavelmente você é o administrador do sistema.
+A jornada de integração é escrita especificamente para o **administrador do sistema** de clientes novos no AEM as a Cloud Service e no AEM em geral. O administrador do sistema é o indivíduo que é contatado pela primeira vez pelo Adobe depois que seu contrato as a Cloud Service AEM é assinado. Normalmente, são a primeira pessoa a acessar e configurar seus recursos AEM as a Cloud Service. Se estiver lendo este tópico, é provável que você seja o administrador do sistema.
 
 O administrador do sistema gerencia todos os aspectos dos usuários do AEMaaCS da organização, desde o acesso até as permissões. No entanto, o administrador do sistema deve interagir com outras pessoas ao longo do caminho.
 
@@ -64,11 +64,11 @@ Este guia de integração ilustra todo o processo de integração como administr
 
 >[!TIP]
 >
->Se você é novo no AEM as a Cloud Service, mas já está familiarizado com o AEM e está migrando do Adobe Managed Services ou do local, não deixe de conferir a [Jornada de migração do AEM as a Cloud Service.](/help/journey-migration/getting-started.md)
+>Se você é novo em AEM as a Cloud Service e familiarizado com AEM e está migrando do Adobe Managed Services ou no local, certifique-se de verificar o [jornada de migração as a Cloud Service AEM](/help/journey-migration/getting-started.md).
 
 ## Visão geral da jornada de integração {#overview}
 
-Os artigos a seguir descrevem em detalhes os principais conceitos de integração e fornecem conhecimento fundamental sobre o AEM as a Cloud Service. Embora seja possível ir diretamente para uma parte específica da jornada, muitos conceitos baseiam-se em artigos anteriores. Portanto, se você for novo na integração, recomendamos começar do início e avançar sequencialmente.
+Os artigos a seguir descrevem em detalhes os principais conceitos de integração e fornecem conhecimento fundamental sobre o AEM as a Cloud Service. Embora seja possível ir diretamente para uma parte específica da jornada, muitos conceitos baseiam-se em artigos anteriores. Portanto, se você não estiver familiarizado com a integração, o Adobe recomenda que você comece no início e avance sequencialmente.
 
 | # | Artigo | Descrição | Público |
 |---|---|---|---|
@@ -80,24 +80,27 @@ Os artigos a seguir descrevem em detalhes os principais conceitos de integraçã
 | 5 | [Acessar o Cloud Manager](cloud-manager.md) | Saiba como acessar o Cloud Manager para poder configurar os recursos do projeto. | Administrador do sistema |
 | 6 | [Criar um programa](create-program.md) | Saiba como criar um programa usando o Cloud Manager. | Administrador do sistema |
 | 7 | [Criar ambientes](create-environments.md) | Saiba como criar um ambiente usando o Cloud Manager. | Administrador do sistema |
-| 8 | [Atribuição de perfis de produto do AEM](assign-profiles-aem.md) | Saiba como o administrador do sistema atribui membros da equipe aos perfis de produto do AEM as a Cloud Service. | Administrador do sistema |
-| 9 | [Tarefas do desenvolvedor e do gerente de implantação](developers.md) | Opcional - Saiba como você, na qualidade de desenvolvedor, pode acessar e gerenciar o Git do Cloud Manager e como você, na qualidade de gerente de implantação, pode configurar pipelines e implantar código no Cloud Manager. | Desenvolvedores e gerentes de implantação |
-| 10 | [Tarefas do usuário do AEM](aem-users.md) | Opcional - Saiba como você, na qualidade de autor do AEM, pode acessar a instância do AEM as a Cloud Service e se familiarizar com o conteúdo de autoria. | Usuários do AEM |
+| 8 | [Atribuição de perfis de produto do AEM](assign-profiles-aem.md) | Saiba como o Administrador do sistema atribui membros da sua equipe a perfis de produtos AEM as a Cloud Service. | Administrador do sistema |
+| 9 | [Tarefas do desenvolvedor e do gerente de implantação](developers.md) | Opcional - Como desenvolvedor, saiba como você pode acessar e gerenciar o Git do Cloud Manager e como gerenciador de implantação você pode configurar pipelines e implantar código no Cloud Manager. | Desenvolvedores e gerentes de implantação |
+| 10 | [Tarefas do usuário do AEM](aem-users.md) | Opcional - Como autor de AEM, saiba como você pode acessar AEM instância as a Cloud Service e se familiarizar com o conteúdo de criação para AEM as a Cloud Service. | Usuários do AEM |
 
 ## O que vem a seguir {#what-is-next}
 
-Agora você está pronto para iniciar sua jornada de integração do AEM as a Cloud Service. Recomendamos que você continue com a próxima parte da jornada e leia o artigo [Preparação para a integração](preparation.md)
+Agora você está pronto para iniciar sua jornada de integração do AEM as a Cloud Service. É recomendável continuar com a próxima parte da jornada e ler o artigo [Preparação de integração](preparation.md)
 
 ## Jornadas de documentação do AEM {#documentation-journeys}
 
-[Uma Jornada de documentação](/help/journey-documentation/documentation-journeys.md) une vários tópicos e recursos diferentes e talvez complicados, fornecendo uma narrativa que ajuda o leitor, que pode ser novo no AEM, a entender e resolver um problema da empresa do começo ao fim, assumindo o mínimo de conhecimento prévio do tópico ou do AEM.
+[Uma Jornada de documentação](/help/journey-documentation/documentation-journeys.md) une vários tópicos e recursos diferentes e complicados. Ele fornece uma narrativa que ajuda um leitor novo a AEM compreender e resolver um problema comercial do início ao fim, além de assumir um tópico anterior mínimo ou conhecimento AEM.
 
 As Jornadas de documentação foram projetadas com princípios de práticas recomendadas, informadas pela última pesquisa da Adobe, experiência comprovada de implementação dos consultores da Adobe e feedback de projetos de clientes.
 
-Se você quiser saber como a Adobe recomenda que você integre sua equipe no aplicativo AEM as a Cloud Service, este é o ponto de partida.
+Se você quiser saber o que o Adobe recomenda sobre como integrar sua equipe no novo aplicativo as a Cloud Service AEM, comece aqui!
 
-## Recursos adicionais {#additional-resources}
+<!-- ERROR: Not Found (HTTP error 404)
+## Additional Resources {#additional-resources}
 
-Veja a seguir recursos adicionais e opcionais, caso deseje ir além do conteúdo da jornada de integração.
+The following are additional, optional resources if you would like to go beyond the content of the onboarding journey.
 
-* [Dicas e truques de campeão do AEM - Playbook integrado do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-champions/onboarding-playbook.md) - Assista a este vídeo para saber mais sobre dicas de integração do Cloud Manager e truques de um campeão de AEM.
+* [AEM Champion Tips and Tricks - Cloud Manager Onboarding Playbook](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-champions/onboarding-playbook.md) - Watch this video to learn Cloud Manager onboarding tips and trick from an AEM champion. -->
+
+
