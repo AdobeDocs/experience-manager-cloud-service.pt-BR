@@ -2,7 +2,7 @@
 title: Introdução ao Editor universal no AEM
 description: Saiba como obter acesso ao Editor universal e começar a instrumentar seu primeiro aplicativo do AEM para utilizá-lo.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: e62ddc2a72d12ad356decc0e2a933d8c7d308469
+source-git-commit: de33ea3efed87170b081ea467f12a997e0d41a83
 workflow-type: tm+mt
 source-wordcount: '810'
 ht-degree: 98%
@@ -109,14 +109,14 @@ Os atributos de instrumentação adicionados à página consistem principalmente
 As conexões usadas no aplicativo são armazenadas como tags de `<meta>` no `<head>` da página.
 
 ```html
-<meta name="urn:adobe:aem:editor:aemconnection:<referenceName>" content="<protocol>:<url>">
+<meta name="urn:adobe:aem:editor:<referenceName>" content="<protocol>:<url>">
 ```
 
 * `<referenceName>`: este é um nome curto que é reutilizado no documento para identificar a conexão. Por exemplo: `aemconnection`
 * `<protocol>`: isso indica qual plug-in do serviço de persistência do Editor universal deve ser utilizado. Por exemplo: `aem`
 * `<url>`: esta é a URL do sistema no qual as alterações devem ser mantidas. Por exemplo: `http://localhost:4502`
 
-O identificador `adobe:aem:editor:aemconnection` representa a conexão do Editor Universal do Adobe.
+O identificador `adobe:aem:editor` representa a conexão do Editor Universal do Adobe.
 
 `itemid`s usarão o prefixo `urn` para encurtar o identificador.
 
@@ -136,8 +136,8 @@ itemid="urn:<referenceName>:<resource>"
 ```html
 <html>
 <head>
-    <meta name="urn:adobe:aem:editor:aemconnection:aemconnection" content="aem:https://localhost:4502">
-    <meta name="urn:adobe:aem:editor:aemconnection:fcsconnection" content="fcs:https://example.franklin.adobe.com/345fcdd">
+    <meta name="urn:adobe:aem:editor:aemconnection" content="aem:https://localhost:4502">
+    <meta name="urn:adobe:aem:editor:fcsconnection" content="fcs:https://example.franklin.adobe.com/345fcdd">
 </head>
 <body>
         <aside>
