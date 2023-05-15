@@ -4,7 +4,7 @@ description: Use o modelo de fragmento de conteúdo criado anteriormente para cr
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: 73ff4edc591e64e797e14d00d6f87759e3f1301a
+source-git-commit: ac94981e477e1fe8b883460ed9be009b4c1c088d
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 65%
@@ -57,7 +57,7 @@ Depois de salvar e abrir o novo fragmento de conteúdo, o editor de fragmentos d
 
 1. O editor de fragmentos de conteúdo mostra os campos definidos no modelo selecionado. Aqui, é possível adicionar conteúdo a cada campo para concluir o fragmento de conteúdo. Seu progresso é salvo automaticamente.
 
-1. Forneça uma **Título** para o fragmento, inserindo `Tuscan adventure`.
+1. Forneça uma **Título** para o fragmento, inserindo `Tuscan Adventure`.
 
 1. Forneça uma **Descrição** para o fragmento colando no texto a seguir.
 

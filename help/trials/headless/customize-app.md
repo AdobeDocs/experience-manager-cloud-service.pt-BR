@@ -4,9 +4,9 @@ description: Use um aplicativo de exemplo do React para saber como personalizar 
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 2f4e38ba9bb2e0aab4dc126719a922fc983f8711
+source-git-commit: ac94981e477e1fe8b883460ed9be009b4c1c088d
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '1036'
 ht-degree: 97%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 97%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide"
 >title="Iniciar o editor de fragmento de conteúdo"
->abstract="Sua avaliação do AEM Headless é integrada a um aplicativo de exemplo do React, para que você possa ver como é fácil para qualquer pessoa gerenciar o conteúdo independentemente e sem tempo de desenvolvimento.<br><br>Inicie este módulo em uma nova guia clicando abaixo e, em seguida, siga este guia."
+>abstract="Agora vamos explorar como a criação de conteúdo sem periféricos funciona. Sua avaliação do AEM Headless é integrada a um aplicativo de exemplo do React, para que você possa ver como é fácil para qualquer pessoa gerenciar o conteúdo independentemente e sem tempo de desenvolvimento.<br><br>Inicie este módulo em uma nova guia clicando abaixo e, em seguida, siga este guia."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide_footer"
