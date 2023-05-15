@@ -2,10 +2,10 @@
 title: Atualizar fragmentos de conteúdo para a filtragem otimizada de GraphQL
 description: Saiba como atualizar os fragmentos de conteúdo para uma filtragem otimizada de GraphQL no Adobe Experience Manager as a Cloud Service para entrega de conteúdo headless.
 exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
-source-git-commit: 02e27a8eee18893e0183b3ace056b396a9084b12
+source-git-commit: a18742abdd4693ab1e97d7db3ed6854b735bc0f9
 workflow-type: tm+mt
-source-wordcount: '925'
-ht-degree: 80%
+source-wordcount: '913'
+ht-degree: 79%
 
 ---
 
@@ -50,18 +50,9 @@ Para executar o procedimento, siga as etapas abaixo:
       <th>Tipo</th>
       <th>Notas</th>
      </tr>
-     <tr>
+
+   <tr>
       <td>1</td>
-      <td>`AEM_RELEASE_CHANNEL` </td>
-      <td>`pré-lançamento` </td>
-      <td> </td>
-      <td>Todos </td>
-      <td> </td>
-      <td>Variável </td>
-      <td>Necessário para habilitar o recurso. </td>
-     </tr>
-     <tr>
-      <td>2</td>
       <td>`CF_MIGRATION_ENABLED` </td>
       <td>`1` </td>
       <td>`0` </td>
@@ -71,7 +62,7 @@ Para executar o procedimento, siga as etapas abaixo:
       <td>Habilita(!=0) ou desabilita(0) o acionamento do processo de migração do fragmento de conteúdo. </td>
      </tr>
      <tr>
-      <td>3</td>
+      <td>2</td>
       <td>`CF_MIGRATION_ENFORCE` </td>
       <td>`1` </td>
       <td>`0` </td>
@@ -81,7 +72,7 @@ Para executar o procedimento, siga as etapas abaixo:
       <td>Força (!=0) a remigração de fragmentos de conteúdo.<br>Definir esse sinalizador como 0 fará uma migração incremental de CFs. Isso significa que, se o processo for encerrado por algum motivo, a próxima execução do processo iniciará a migração a partir do ponto em que foi encerrada. Observe que, é recomendável forçar a primeira migração (value=1). </td>
      </tr>
      <tr>
-      <td>4</td>
+      <td>3</td>
       <td>`CF_MIGRATION_BATCH` </td>
       <td>`50` </td>
       <td>`50` </td>
@@ -91,7 +82,7 @@ Para executar o procedimento, siga as etapas abaixo:
       <td>Tamanho do lote para salvar o número de fragmentos de conteúdo após a migração.<br>Isso é relevante dependendo de quantos CFs serão salvos no repositório em um lote e pode ser usado para otimizar o número de gravações no repositório. </td>
      </tr>
      <tr>
-      <td>5</td>
+      <td>4</td>
       <td>`CF_MIGRATION_LIMIT` </td>
       <td>`1000` </td>
       <td>`1000` </td>
@@ -101,7 +92,7 @@ Para executar o procedimento, siga as etapas abaixo:
       <td>Número máximo de fragmentos de conteúdo a serem processados de cada vez.<br>Consulte também as notas de `CF_MIGRATION_INTERVAL`. </td>
      </tr>
      <tr>
-      <td>6</td>
+      <td>5</td>
       <td>`CF_MIGRATION_INTERVAL` </td>
       <td>`60` </td>
       <td>`600` </td>
