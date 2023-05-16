@@ -5,9 +5,10 @@ description: É possível usar o Formulário adaptável (Componentes principais)
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 2a487654c3af2d2ec3aa43481caed5e1d4fc77a2
+exl-id: 1046231f-787c-4e49-9ba0-e7dd59e41bce
+source-git-commit: 0d21b4ba2e7ce7592e3f2c57e4d320adc0af1008
 workflow-type: tm+mt
-source-wordcount: '2185'
+source-wordcount: '2207'
 ht-degree: 2%
 
 ---
@@ -22,22 +23,16 @@ Você pode escolher um dos seguintes métodos para criar ou incorporar um formul
 
 * **Crie um formulário adaptável arrastando e soltando componentes do formulário no Componente adaptável do contêiner do Forms**: Use o [Contêiner Adaptive Forms](#af-container-component) para criar um espaço na página da Web que hospedaria o Formulário adaptável. Você pode arrastar e soltar o componente Formulário adaptável nesse espaço para criar um formulário. Por exemplo, veja o vídeo abaixo para saber como criar um formulário adaptável usando [!UICONTROL Contêiner Adaptive Forms] componente:
 
->[!VIDEO](/help/forms/assets/formcreationbyadaptiveformcontainer.mp4)
-
 O [Contêiner de formulário adaptável](#af-container-component) permite criar experiências de registro digital utilizando componentes adaptáveis do Forms diretamente no editor do AEM Sites. Essa integração fornece uma experiência contínua aos autores do AEM Sites que desejam criar e gerenciar formulários em suas páginas do AEM Sites.
 
-* **Incorporar um formulário adaptável existente**: O [Adaptável Forms - Incorporado](#embed-existing-af) permite incorporar facilmente um formulário adaptável pré-existente em uma página no AEM Sites. Por exemplo, incorpore um formulário adaptável usando o [!UICONTROL Adaptável Forms - Incorporado] na página do Site, conforme ilustrado no vídeo a seguir:
-
->[!VIDEO](/help/forms/assets/embednewform_embed.mp4)
+* **Incorporar um formulário adaptável existente**: O [Adaptável Forms - Incorporado(V2)](#embed-existing-af) permite incorporar facilmente um formulário adaptável pré-existente em uma página no AEM Sites. Por exemplo, incorpore um formulário adaptável usando o [!UICONTROL Adaptável Forms - Incorporado] na página do Site, conforme ilustrado no vídeo a seguir:
 
 Esse recurso melhora a adaptabilidade e a reutilização do Adaptive Forms. Essa integração oferece uma maneira conveniente de os clientes reutilizarem o Adaptive Forms que já criaram.
 
 * **Usar o Assistente do Adaptive Forms para criar um formulário**:
 
-   Use o [Adaptável Forms - Incorporado](#embed-new-af) para criar um formulário adaptável no editor do AEM Sites usando o assistente de criação de formulários. O formulário é salvo como uma entidade externa. É possível reutilizar esse formulário em outras páginas do Sites e também em formulários independentes.
+   Use o [Adaptável Forms - Incorporado(v2)](#embed-new-af) para criar um formulário adaptável no editor do AEM Sites usando o assistente de criação de formulários. O formulário é salvo como uma entidade externa. É possível reutilizar esse formulário em outras páginas do Sites e também em formulários independentes.
 Por exemplo, veja o vídeo abaixo para saber como criar e incorporar um formulário adaptável recém-criado usando o [!UICONTROL Adaptável Forms - Incorporado] na página do Site.
-
->[!VIDEO](/help/forms/assets/createnewform_embed.mp4)
 
 ### Consideração {#considerations}
 
@@ -52,11 +47,12 @@ O [!UICONTROL Contêiner de formulário adaptável] permite criar experiências 
 +++ Habilitar **[!UICONTROL Contêiner Adaptive Forms]** na política do modelo associado.
 
 Para ativar [!UICONTROL Contêiner Adaptive Forms] na política do modelo, execute as seguintes etapas:
-1. Vá para o [!UICONTROL Informações da página] > [!UICONTROL Editar modelo]
-1. Clique no botão [!UICONTROL Política] e selecione o **Exemplos de componentes principais - Formulário adaptável** caixa de seleção.
-1. Clique em [!UICONTROL Concluído].
 
->[!VIDEO](/help/forms/assets/adaptiveformcontainer.mp4)
+1. Vá para o [!UICONTROL Informações da página] > [!UICONTROL Editar modelo]
+1. Clique no botão [!UICONTROL Política] e selecione o **[!UICONTROL Contêiner Adaptive Forms]**  caixa de seleção na guia **[Nome do Projeto de Arquétipo de AEM] - Formulário adaptável**.
+1. Clique em **[!UICONTROL Concluído]**.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3419370?quality=12&learn=on)
 
 +++
 
@@ -104,7 +100,7 @@ Para criar um formulário adaptável usando [!UICONTROL Contêiner Adaptive Form
 1. Crie um formulário adaptável usando os componentes adaptáveis do Forms.
 1. Salve as configurações.
 
->[!VIDEO](/help/forms/assets/af-container.mp4)
+>[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
 Seu formulário está pronto. Ao publicar a página do AEM Sites, ele publica automaticamente um formulário adaptável e seus ativos referenciados associados.
 
@@ -148,9 +144,9 @@ No [!UICONTROL Editar contêiner adaptável do Forms] , é possível especificar
 * **Mostrar mensagem**
    * **Conteúdo da mensagem**: Escreva uma mensagem usando o editor de rich text para mostrar no envio do formulário. Essa opção está disponível somente quando você opta por mostrar uma mensagem de agradecimento.
 
-## Incorporar um formulário adaptável existente  {#aem-container-component}
+## Incorporar um formulário adaptável  {#aem-container-component}
 
-Usando **[!UICONTROL Adaptável Forms - Incorporado]** , é possível incorporar o novo formulário adaptável ou incorporar um formulário adaptável existente na página do site. O [!UICONTROL Adaptável Forms - Incorporado] permite:
+Usando **[!UICONTROL Adaptável Forms - Incorporado (V2)]** , é possível incorporar o novo formulário adaptável ou incorporar um formulário adaptável existente na página do site. O [!UICONTROL Adaptável Forms - Incorporado] permite:
 
 * [Incorporar um formulário adaptável existente](#embed-new-af)
 
@@ -160,12 +156,14 @@ Usando **[!UICONTROL Adaptável Forms - Incorporado]** , é possível incorporar
 
 +++ Ative o **Adaptável Forms - Incorporado** na política do modelo associado.
 
-Para ativar [!UICONTROL Adaptável Forms - Incorporado] na política do modelo, execute as seguintes etapas:
-1. Vá para o [!UICONTROL Informações da página] > [!UICONTROL Editar modelo]
-1. Clique no botão [!UICONTROL Política] e selecione o **Conteúdo principal** caixa de seleção.
-1. Clique em [!UICONTROL Concluído].
+Para ativar [!UICONTROL Adaptável Forms - Incorporado(v2)] na política do modelo, execute as seguintes etapas:
 
->[!VIDEO](/help/forms/assets/enableadaptiveform-embedtemplate.mp4)
+1. Vá para o [!UICONTROL Informações da página] > [!UICONTROL Editar modelo]
+
+1. Clique no botão [!UICONTROL Política] e selecione o **[!UICONTROL Formulário adaptável - Incorporado (v2)]** caixa de seleção na guia **[!UICONTROL [Nome do Projeto de Arquétipo de AEM] - Forms]** grupo .
+1. Clique em **[!UICONTROL Concluído]**.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3419369?quality=12&learn=on)
 
 +++
 
@@ -212,7 +210,7 @@ Para usar componentes Adaptive Forms em uma página do AEM Sites, inclua as bibl
 ### Incorporar novo formulário adaptável {#embed-new-af}
 
 1. Abra a página do AEM Sites no modo de edição.
-1. No painel Navegador de componentes , arraste e solte o [!UICONTROL Adaptável Forms - Incorporado] na página.
+1. No painel Navegador de componentes , arraste e solte o [!UICONTROL Adaptável Forms - Incorporado(v2)] na página.
 1. Clique no botão **Plus** e você será redirecionado para o assistente de criação de formulário.
 
    ![Adaptável Forms - Componente incorporado](/help/forms/assets/aemformcontainer.png)
@@ -220,6 +218,8 @@ Para usar componentes Adaptive Forms em uma página do AEM Sites, inclua as bibl
 1. Crie um novo formulário adaptável no [!UICONTROL Criação de formulário] assistente.
 1. O [!UICONTROL Caminho do ativo] já inclui o caminho de um formulário adaptável criado
 1. Salve as configurações. O formulário adaptável agora está incorporado na página.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3419366/adaptive-form-aem-forms?quality=12&learn=on)
 
 ### Incorporar formulário adaptável existente {#embed-existing-af}
 
@@ -229,9 +229,12 @@ Para usar componentes Adaptive Forms em uma página do AEM Sites, inclua as bibl
 1. Navegue e selecione o Formulário adaptável a ser incorporado no [!UICONTROL Caminho do ativo].
 1. Salve as configurações. O formulário adaptável agora está incorporado na página.
 
+>[!VIDEO](https://video.tv.adobe.com/v/3419368?quality=12&learn=on)
+
 #### Configurar formulário adaptável - Incorporar propriedades
 
-Você pode personalizar as configurações avançadas do [!UICONTROL Formulário adaptável - Incorporar] componente. No [!UICONTROL Editar Forms adaptável - Incorporar] , é possível especificar o seguinte.
+Você pode personalizar as configurações avançadas do [!UICONTROL Formulário adaptável - Incorporado(v2)] componente. No [!UICONTROL Editar Forms adaptável - Incorporado(v2)] , é possível especificar o seguinte.
+
 * **Caminho do ativo**: Navegue e selecione o Formulário adaptável a ser incorporado. Ele é preenchido automaticamente se você soltou no navegador Ativos.
 * **Pós-envio** : Selecione a ação a ser acionada no envio do formulário. Você pode optar por mostrar uma mensagem de agradecimento ou uma página de agradecimento.
    * **Mostrar mensagem de agradecimento**: Escreva uma mensagem usando o editor de rich text para mostrar no envio do formulário. Essa opção está disponível somente quando você opta por mostrar uma mensagem de agradecimento.
@@ -272,4 +275,3 @@ Para modificar qualquer configuração ou propriedade do Formulário adaptável 
 ![Suporte para layout de AF](/help/forms/assets/afsite-layoutsupport.gif)
 
 AEM página de sites mantém uma referência ao formulário adaptável. Ao traduzir uma página do AEM Sites, ela traduz automaticamente um Formulário adaptável e seus ativos referenciados associados usando o [projetos de tradução](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/translation/managing-projects.html?lang=en#adding-pages-assets-to-a-translation-job) em outros idiomas.
-
