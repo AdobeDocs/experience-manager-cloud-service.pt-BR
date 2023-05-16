@@ -5,14 +5,19 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
 workflow-type: tm+mt
-source-wordcount: '2508'
+source-wordcount: '2530'
 ht-degree: 12%
 
 ---
 
 # Configurar o Experience Manager Assets com o Brand Portal {#configure-aem-assets-with-brand-portal}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/brandportal/configure-aem-assets-with-brand-portal.html?lang=pt-BR) |
+| AEM as a Cloud Service | Este artigo |
 
 A configuração do Adobe Experience Manager Assets Brand Portal permite publicar ativos de marca aprovados do Adobe Experience Manager Assets as a [!DNL Cloud Service] para o Brand Portal e distribua-as para os usuários do Brand Portal.
 
@@ -145,7 +150,7 @@ Consulte [Documentação do Brand Portal](https://experienceleague.adobe.com/doc
 
 Você pode monitorar os registros do agente de distribuição para o fluxo de trabalho de publicação de ativos.
 
-Agora, vamos publicar um ativo do Experience Manager Assets para o Brand Portal e visualizar os logs.
+Agora, vamos publicar um ativo do Experience Manager Assets para o Brand Portal e ver os logs.
 
 1. Siga as etapas (de 1 a 4) conforme mostrado no **Testar conexão** e navegue até a página do agente de distribuição.
 1. Clique em **[!UICONTROL Logs]** para visualizar o processamento e os registros de erros.
