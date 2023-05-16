@@ -2,9 +2,9 @@
 title: Editar as propriedades da página
 description: Definir as propriedades obrigatórias de uma página
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: ba1f2b7f1f61f7ba094047171e42e3cc8811a1b6
-workflow-type: ht
-source-wordcount: '2387'
+source-git-commit: 5a43b6db8a5743b87d6eafdad31418e6cb45d22b
+workflow-type: tm+mt
+source-wordcount: '2363'
 ht-degree: 100%
 
 ---
@@ -345,11 +345,3 @@ Depois de entrar na edição de itens em massa é possível:
       * Os novos valores serão aplicados a todas as páginas selecionadas ao escolher **Concluído**.
       * Quando o campo tem vários valores (por exemplo, tags), você pode anexar um novo valor ou remover um valor comum.
    * Os campos que são comuns, mas têm valores diferentes em várias páginas, serão indicados com um valor especial; como o texto `<Mixed Entries>`.
-
->[!NOTE]
->
->O componente da página pode ser configurado para especificar os campos disponíveis para edição de itens em massa. Consulte Configurar sua página para a edição de itens em massa das propriedades da página.
-
-<!--
->The page component can be configured to specify the fields available for bulk editing. See [Configuring your page for bulk editing of page properties](/help/sites-developing/bulk-editing.md).
--->
