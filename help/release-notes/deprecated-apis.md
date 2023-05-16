@@ -2,10 +2,10 @@
 title: APIs obsoletas
 description: Notas de versão específicas a APIs obsoletas e removidas do  [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service].
 exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
-source-git-commit: 983e26980cace26d1e62334cb44088d9e3e5c34a
+source-git-commit: 9e722de86e925cb8de626dc16624954dfac063cc
 workflow-type: tm+mt
-source-wordcount: '1076'
-ht-degree: 100%
+source-wordcount: '1120'
+ht-degree: 96%
 
 ---
 
@@ -209,6 +209,15 @@ Veja abaixo uma extensa lista de APIs obsoletas do AEM e a data esperada da remo
     <td>Essa API está obsoleta. Em vez disso, use os Construtores do Apache Sling.</td>
     <td>31/10/2022</td>
     <td>01/01/2023</td>
+  </tr>
+  <tr><td>org.apache.sling.commons.json<br>org.apache.sling.commons.json.http<br>org.apache.sling.commons.json.io<br>org.apache.sling.commons.json.jcr<br>org.apache.sling.commons.json.sling<br>org.apache.sling.commons.json.util<br>org.apache.sling.commons.json.xml</td>
+    <td>Esta API não é suportada por AEM as a Cloud Service.</td>
+    <td>5/15/2023</td>
+    <td>6/15/2023</td>
+  </tr><td>com.google.common.annotations<br>com.google.common.base<br>com.google.common.cache<br>com.google.common.collect<br>com.google.common.escape<br>com.google.common.eventbus<br>com.google.common.hash<br>com.google.common.html<br>com.google.common.io<br>com.google.common.math<br>com.google.common.net<br>com.google.common.primitives<br>com.google.common.reflect<br>com.google.common.util.concurrent<br>com.google.common.xml</td>
+    <td>As bibliotecas principais do Google Guava estão obsoletas.</td>
+    <td>5/15/2023</td>
+    <td>6/15/2023</td>
   </tr>
 </tbody>
 </table>
