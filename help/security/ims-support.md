@@ -2,10 +2,10 @@
 title: Suporte IMS do Adobe Experience Manager as a Cloud Service
 description: Suporte IMS do Adobe Experience Manager as a Cloud Service
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: 1e3130578b7e36e5ffd5ad7b04cc7981a95bb291
 workflow-type: tm+mt
-source-wordcount: '2022'
-ht-degree: 100%
+source-wordcount: '2054'
+ht-degree: 97%
 
 ---
 
@@ -142,11 +142,15 @@ Você verá uma lista de instâncias existentes:
 
 Em cada instância de Contexto do Produto, haverá instâncias que abrangem os serviços de Autor ou Publicação em todos os ambientes de Produção, Preparo ou Desenvolvimento. Cada instância será associada às funções Perfis de produto ou Cloud Manager. Esses perfis de produto são usados para atribuir acesso a usuários e grupos com os privilégios necessário.
 
-O perfil **Administrator_xxx** será usado para conceder privilégios de Administrador na instância do AEM associada, enquanto o perfil **User_xxx** é usado para adicionar usuários regulares.
+O **Administradores de AEM_xxx** O perfil será usado para conceder privilégios de Administrador na instância de AEM associada enquanto a função **AEM Users_xxx** perfil é usado para adicionar usuários regulares.
 
 Os usuários e grupos adicionados nesse perfil de produto poderão fazer logon nessa instância específica, como mostra o exemplo abaixo:
 
 ![Perfil de produto](/help/security/assets/ims8.png)
+
+>[!WARNING]
+>
+>O **Administradores de AEM** o nome do perfil de produto não deve ser alterado. Alteração do nome do **Administradores de AEM** o perfil de produto removerá os direitos de administrador de todos os usuários atribuídos a esse perfil.
 
 ### Fazendo logon no Adobe Experience Manager as a Cloud Service {#logging-in-to-aem}
 
