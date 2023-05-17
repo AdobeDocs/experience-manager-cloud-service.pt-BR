@@ -2,10 +2,10 @@
 title: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 4353f2a9f6cd649a4377adb9891e0873a51d6ab2
+source-git-commit: 56eaacc1ad78b47ef90f9c04fa09a4b751bff78d
 workflow-type: tm+mt
-source-wordcount: '240'
-ht-degree: 55%
+source-wordcount: '197'
+ht-degree: 68%
 
 ---
 
@@ -13,36 +13,32 @@ ht-degree: 55%
 
 A seção a seguir descreve as notas de versão técnicas para a versão de manutenção atual do Experience Manager as a Cloud Service.
 
-## Versão 11873 {#release-11873}
+## Versão 11983 {#release-11983}
 
-Resumidos abaixo estão as melhorias contínuas da versão de manutenção 11873, lançada publicamente em 3 de maio de 2023. Esta versão de manutenção é uma atualização da versão de manutenção anterior: 11835.
+Resumidos abaixo estão as melhorias contínuas da versão de manutenção de 1983, lançada publicamente em 17 de maio de 2023. Esta versão de manutenção é uma atualização da versão de manutenção anterior: 11873.
 
 A ativação de recursos desta versão de manutenção fornecerá o conjunto completo de recursos. Consulte as [notas de versão atuais](/help/release-notes/release-notes-cloud/release-notes-current.md) para obter detalhes completos.
 
-### Aprimoramentos {#enhancements}
+### Aprimoramentos {#enhancements-11983}
 
-- SITES-1200 - Melhorias na API de pesquisa com filtragem baseada em tags
-- GRANITE-42939 - Adicionar anotações e avisos de descontinuação ao código oauth-server
+Nenhum.
 
-### Problemas conhecidos {#known-issues-11873}
+### Problemas conhecidos {#known-issues-11983}
 
-- SITES-13253 - RecursionTooDeepException em Componentes principais v2.22.6
-- SITES-13256 - Teaser do WCM principal configurado com URL especial quebra a renderização da página
-- GRANITE-45462 - Configuração de várias regiões do cliente de mensagens
-- GRANITE-45562 - Problemas com a combinação de imagens retornando 200 em vez de 404
+Nenhum.
 
-### Problemas corrigidos {#fixed-issues-11873}
+### Problemas corrigidos {#fixed-issues-11983}
 
-- SKYSI-19884/SKYOPS-53745 - Corrigido um problema com PublishPageRenderingErrorsHigh
-- GRANITE-4388 - Correção da degradação da taxa de transferência após um grande número de gravações de ativos do DAM no Mongo
-- SITES-11922 - Corrigido um problema com o cancelamento da publicação da visualização que não removia o status de sincronização
-- ASSETS-21648 - Correção de um problema de permissão com a funcionalidade de relacionamento entre ativos
+- SITES-13253 - Correção de um problema com RecursionTooDeepException em Componentes principais v2.22.6
+- SITES-13256 - Corrigido um problema com o Teaser do WCM principal configurado com URL especial quebras de página
+- GRANITE-45462 - Correção de um problema com a configuração de várias regiões do cliente de mensagens
+- GRANITE-45562 - Correção de um problema em que a combinação de imagens retornava 200 em vez de 404
 
-### Tecnologias integradas {#embedded-tech-11873}
+### Tecnologias integradas {#embedded-tech-11983}
 
 | Tecnologia | Versão | Link |
 |---|---|---|
 | AEM OAK | 1.50-T20230405052634-f9df4aa | [API Oak 1.50.0](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.50.0/index.html) |
 | API do Sling do AEM | Versão 2.27.0 | [API do Apache Sling 2.27.0](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | HTL do AEM | Versão 1.4.20-1.4.0 | [Especificação da linguagem de modelo HTML](https://github.com/adobe/htl-spec) |
-| Componentes principais do AEM | Versão 2.22.6 | [Componentes principais de WCM do AEM](https://github.com/adobe/aem-core-wcm-components) |
+| Componentes principais do AEM | Versão 2.22.10 | [Componentes principais de WCM do AEM](https://github.com/adobe/aem-core-wcm-components) |
