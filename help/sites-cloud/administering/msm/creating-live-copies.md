@@ -4,10 +4,10 @@ description: Saiba como criar e sincronizar Live Copies para reutilizar seu cont
 feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 17d828f7813657aaeca49bfc87447c2bc24e712d
 workflow-type: tm+mt
-source-wordcount: '4274'
-ht-degree: 100%
+source-wordcount: '4322'
+ht-degree: 98%
 
 ---
 
@@ -136,6 +136,10 @@ Para criar uma Live Copy:
 
 1. (Opcional) Para especificar uma ou mais configurações de implantação a serem usadas na Live Copy, use a lista suspensa **Configurações de implantação** para selecioná-las. As configurações selecionadas serão mostradas abaixo do seletor da lista suspensa.
 1. Clique ou toque em **Criar**. Uma mensagem de confirmação será exibida e aqui é possível selecionar **Abrir** ou **Concluído**.
+
+   >[!NOTE]
+   >
+   >Uma caixa de diálogo de erro pode aparecer com a mensagem &quot;Falha ao enviar o formulário&quot;. Isso ocorre devido a um tempo limite de rede. No entanto, o processo para criar a live copy está sendo executado em segundo plano. Aguarde alguns minutos e verifique se as páginas da live copy foram criadas corretamente.
 
 ### Criação de uma Live Copy de um site a partir de uma configuração de blueprint {#creating-a-live-copy-of-a-site-from-a-blueprint-configuration}
 
