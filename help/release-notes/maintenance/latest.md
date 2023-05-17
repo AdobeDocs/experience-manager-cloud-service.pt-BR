@@ -2,10 +2,10 @@
 title: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 3823b9369c612058998e265346b3f727001aef4b
+source-git-commit: 4353f2a9f6cd649a4377adb9891e0873a51d6ab2
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 56%
+source-wordcount: '240'
+ht-degree: 55%
 
 ---
 
@@ -42,7 +42,7 @@ A ativação de recursos desta versão de manutenção fornecerá o conjunto com
 
 | Tecnologia | Versão | Link |
 |---|---|---|
-| AEM OAK | 1.44-T20221206170501-6d59064 | [API Oak 1.44.0](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.44.0/index.html) |
+| AEM OAK | 1.50-T20230405052634-f9df4aa | [API Oak 1.50.0](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.50.0/index.html) |
 | API do Sling do AEM | Versão 2.27.0 | [API do Apache Sling 2.27.0](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | HTL do AEM | Versão 1.4.20-1.4.0 | [Especificação da linguagem de modelo HTML](https://github.com/adobe/htl-spec) |
-| Componentes principais do AEM | Versão 2.21.2 | [Componentes principais de WCM do AEM](https://github.com/adobe/aem-core-wcm-components) |
+| Componentes principais do AEM | Versão 2.22.6 | [Componentes principais de WCM do AEM](https://github.com/adobe/aem-core-wcm-components) |
