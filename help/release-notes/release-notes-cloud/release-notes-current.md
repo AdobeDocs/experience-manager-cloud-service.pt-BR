@@ -3,10 +3,10 @@ title: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud S
 description: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 371a8a0af731c1d9c139d08e4c773c0654dafd4e
+source-git-commit: d202b0543020b277de982e3965475074a71b286d
 workflow-type: tm+mt
-source-wordcount: '733'
-ht-degree: 100%
+source-wordcount: '730'
+ht-degree: 98%
 
 ---
 
@@ -50,7 +50,7 @@ Assista ao vídeo de visão geral da versão de fevereiro de 2023 para obter um 
    * DASH é o protocolo internacional padrão para transmissão de vídeo adaptável e é amplamente adotado no setor
    * Disponível na América do Norte (habilitado por meio de um tíquete de suporte); em breve para as regiões da APAC e EMEA
 
-* Adição de suporte para imagens WebP para extrair metadados automaticamente e gerar miniaturas e representações personalizadas. Os recursos de Tag inteligente e Corte inteligente agora também são compatíveis com esses arquivos.
+* Adição de suporte para imagens WebP para extrair metadados automaticamente e gerar miniaturas e representações personalizadas. O recurso de Tag inteligente também é compatível com esses arquivos.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
