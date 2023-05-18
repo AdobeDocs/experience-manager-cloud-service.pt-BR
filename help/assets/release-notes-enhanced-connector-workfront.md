@@ -1,35 +1,32 @@
 ---
-title: Notas da versão [!DNL Workfront for Experience Manager enhanced connector]
-description: Notas da versão [!DNL Workfront for Experience Manager enhanced connector]
+title: Notas de versão [!DNL Workfront for Experience Manager enhanced connector]
+description: Notas de versão [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: eb633db8fe64a62661c094b88f0ce8d9950ed6d7
+source-git-commit: 3a00faaf285be693243e3fb55159149520293610
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1113'
 ht-degree: 1%
 
 ---
 
-# Notas da versão [!DNL Workfront for Experience Manager enhanced connector] {#release-notes-enhanced-connector-workfront}
+# Notas de versão [!DNL Workfront for Experience Manager enhanced connector] {#release-notes-enhanced-connector-workfront}
 
 A seção a seguir descreve as Notas de versão gerais de [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento da versão mais recente 1.9.9 do [!DNL Workfront for Experience Manager enhanced connector] é 10 de abril de 2023.
+A data de lançamento da versão mais recente 1.9.10 do [!DNL Workfront for Experience Manager enhanced connector] for 18 de maio de 2023.
 
 ## Destaques da versão {#release-highlights}
 
 A versão mais recente do [!DNL Workfront for Experience Manager enhanced connector] O inclui as seguintes atualizações:
 
-* Experience Manager exibe um `DateTimeParseException` exceção quando recebe a data da última modificação do Workfront durante a criação da pasta vinculada.
+* O Workfront retorna uma resposta HTTP 409 para assinaturas de evento duplicadas com base em uma chamada REST de Experience Manager para Workfront, o que leva a uma exceção de ponteiro nulo.
 
-* Problemas ao criar várias pastas de projeto vinculadas dentro de uma curta duração.
-
-* Incapacidade de configurar um limite no número de novos conjuntos de pastas vinculadas ao projeto.
 
 >[!IMPORTANT]
 >
->O Adobe recomenda [atualizar para a versão 1.9.9 mais recente](../assets/update-workfront-enhanced-connector.md) do [!DNL Workfront for Experience Manager enhanced connector].
+>O Adobe recomenda [atualizar para a versão 1.9.10 mais recente](../assets/update-workfront-enhanced-connector.md) do [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Problemas conhecidos {#known-issues}
 
@@ -38,6 +35,16 @@ A versão mais recente do [!DNL Workfront for Experience Manager enhanced connec
 * Quando estiver usando a experiência clássica do Workfront, a variável **[!UICONTROL Enviar para]** disponível na **[!UICONTROL Mais]** a lista suspensa não permite selecionar o destino desejado no Experience Manager. O **[!UICONTROL Enviar para]** A opção funciona corretamente usando o **[!UICONTROL Ações do documento]** lista suspensa. O **[!UICONTROL Enviar para]** A opção funciona corretamente para **[!UICONTROL Mais]** lista suspensa, bem como a **[!UICONTROL Ações do documento]** lista suspensa disponível na nova experiência do Workfront.
 
 ## Versões anteriores {#previous-releases}
+
+### Versão de abril de 2023 {#april-2023-release}
+
+[!DNL Workfront for Experience Manager enhanced connector] A versão 1.9.9, lançada em 10 de abril de 2023, inclui as seguintes atualizações:
+
+* Experience Manager exibe um `DateTimeParseException` exceção quando recebe a data da última modificação do Workfront durante a criação da pasta vinculada.
+
+* Problemas ao criar várias pastas de projeto vinculadas dentro de uma curta duração.
+
+* Incapacidade de configurar um limite no número de novos conjuntos de pastas vinculadas ao projeto.
 
 ### Versão de março de 2023 {#march-2023-release}
 
