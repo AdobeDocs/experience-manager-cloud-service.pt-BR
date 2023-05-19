@@ -3,9 +3,9 @@ title: Seletor de ativos para [!DNL Adobe Experience Manager] como [!DNL Cloud S
 description: Use o Seletor de ativos para pesquisar, localizar e recuperar os metadados e as representações dos ativos em seu aplicativo.
 contentOwner: Adobe
 role: Admin,User
-source-git-commit: 22d2a2235c8696fce76369d3ffe369bcbaa3f6f2
+source-git-commit: af36101d8fecd7fab2300f93d40bba4c92f8eafe
 workflow-type: tm+mt
-source-wordcount: '2355'
+source-wordcount: '2378'
 ht-degree: 3%
 
 ---
@@ -30,6 +30,8 @@ O Seletor de ativo oferece muitos benefícios, como:
 * Capacidade de alternar repositórios em uma organização IMS para seleção de ativos.
 
 * Capacidade de classificar ativos por nome, dimensões e tamanho e exibi-los em Lista, Grade, Galeria ou Visualização de cascata.
+
+O escopo deste artigo é demonstrar como usar o Seletor de ativos com um [!DNL Adobe] aplicativo em Unified Shell ou quando você já tem um imsToken gerado para autenticação. Esses workflows são chamados de fluxo não-SUSI neste artigo.
 
 Execute as seguintes tarefas para integrar e usar o Seletor de ativos com seu [!DNL Experience Manager Assets as a Cloud Service] repositório:
 
@@ -361,8 +363,8 @@ Você pode usar as propriedades do Seletor de ativos para personalizar a forma c
 |---|---|---|---|---|
 | *trilho* | booleano | Não | falso | Se marcada `true`, o Seletor de ativos será renderizado em uma exibição no painel esquerdo. Se estiver marcado `false`, o Seletor de ativos será renderizado na exibição modal. |
 | *imsOrg* | string | Sim |  | ID do Sistema Adobe Identity Management (IMS) atribuída durante o provisionamento [!DNL Adobe Experience Manager] como [!DNL Cloud Service] para sua organização. O `imsOrg` é necessária para autenticar se a organização que você está acessando está ou não no Adobe IMS. |
-| *imsToken* | string | Não |  | Token portador IMS usado para autenticação. `imsToken` não é necessário se você estiver usando o fluxo SUSI. No entanto, é necessário se você estiver usando o fluxo não-SUSI. |
-| *apiKey* | string | Não |  | Chave da API usada para acessar o serviço AEM Discovery. `apiKey` não é necessário se você estiver usando o fluxo SUSI. No entanto, é necessário em fluxo não-SUSI. |
+| *imsToken* | string | Não |  | Token portador IMS usado para autenticação. `imsToken` é necessário se você estiver usando o fluxo não-SUSI. |
+| *apiKey* | string | Não |  | Chave da API usada para acessar o serviço AEM Discovery. `apiKey` é necessário se você estiver usando o fluxo não-SUSI. |
 | *rootPath* | string | Não | /content/dam/ | Caminho da pasta a partir da qual o Seletor de ativos exibe seus ativos. `rootPath` também pode ser usado na forma de encapsulamento. Por exemplo, considerando o seguinte caminho, `/content/dam/marketing/subfolder/`, o Seletor de ativos não permite navegar por qualquer pasta pai, mas exibe apenas as pastas filhas. |
 | *caminho* | string | Não |  | Caminho usado para navegar até um diretório específico de ativos quando o Seletor de ativos é renderizado. |
 | *filterSchema* | array | Não |  | Modelo usado para configurar propriedades de filtro. Isso é útil quando você deseja limitar determinadas opções de filtro no Seletor de ativo. |
