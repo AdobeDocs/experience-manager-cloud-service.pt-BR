@@ -5,13 +5,13 @@ exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
 source-git-commit: 2d1b40b8d6f7b6ca5ce112331a7d389816739494
 workflow-type: tm+mt
 source-wordcount: '1521'
-ht-degree: 100%
+ht-degree: 77%
 
 ---
 
 # Trabalhar com versões de páginas {#working-with-page-versions}
 
-O controle de versão cria um “instantâneo” de uma página em um ponto no tempo específico. Com o controle de versão, você pode executar as seguintes ações:
+O controle de versão cria um &quot;instantâneo&quot; de uma página em um momento específico. Com o controle de versão, você pode executar as seguintes ações:
 
 * Criar uma versão de uma página.
 * Restaurar uma versão anterior de uma ou mais páginas para:
@@ -39,8 +39,8 @@ O controle de versão cria um “instantâneo” de uma página em um ponto no t
 
    ![Versões no painel da linha do tempo](/help/sites-cloud/authoring/assets/versions-timeline-rail.png)
 
-1. Selecione **Salvar como versão**.
-1. Insira um **Rótulo** e **Comentário**, se necessário.
+1. Selecionar **Salvar como versão**.
+1. Insira um **Rótulo** e **Comentário** se necessário.
 
    ![Adicionar etiqueta a uma versão](/help/sites-cloud/authoring/assets/versions-add-label.png)
 
@@ -52,7 +52,7 @@ O controle de versão cria um “instantâneo” de uma página em um ponto no t
 
 1. Navegue para mostrar a página para a qual você deseja criar uma versão.
 1. Selecione a página no [modo de seleção](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. Selecione a opção **Criar** na barra de ferramentas.
+1. Selecione o **Criar** na barra de ferramentas.
 1. A mesma caixa de diálogo será aberta. É possível inserir um **Rótulo** e um **Comentário**, se necessário.
 1. Confirme a nova versão com a opção **Criar**.
 
@@ -86,7 +86,7 @@ Depois de criar uma versão da página, há vários métodos para restaurar uma 
 >1. Os nomes dos rótulos iniciais e do nó da versão serão 1.0, 1.1, 1.2 e assim por diante.
 >1. Restaure a primeira versão; isto é, a versão 1.0.
 >1. Crie novas versões novamente.
->1. Os rótulos e os nomes de nó gerados agora serão 1.0.0, 1.0.1, 1.0.2 etc.
+>1. Os rótulos e nomes de nó gerados agora serão 1.0.0, 1.0.1, 1.0.2, etc.
 
 
 ### Reverter para uma versão {#revert-to-a-version}
@@ -96,11 +96,11 @@ Para **Reverter** a página selecionada para uma versão anterior:
 1. Navegue para mostrar a página para a qual você deseja reverter para uma versão anterior.
 1. Selecione a página no [modo de seleção](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Abra a coluna **Linha do tempo** e selecione **Mostrar tudo** ou **Versões**. As versões de página da página selecionada serão listadas.
-1. Selecione a versão para a qual você deseja reverter. As opções possíveis serão mostradas:
+1. Selecione a versão para a qual deseja reverter. As opções possíveis serão mostradas:
 
    ![Reverter para essa versão](/help/sites-cloud/authoring/assets/versions-revert.png)
 
-1. Selecione **Reverter para esta versão**. A versão selecionada será restaurada e as informações na linha do tempo serão atualizadas.
+1. Selecionar **Reverter para esta versão**. A versão selecionada será restaurada e as informações na linha do tempo serão atualizadas.
 
 ### Restaurar versão {#restore-version}
 
@@ -115,6 +115,7 @@ Este método pode ser usado para restaurar versões de páginas especificadas na
    >Se você:
    >* selecionou uma página única que nunca teve páginas secundárias,
    >* ou nenhuma das páginas na pasta tem versões,
+
    >
    >Então, a exibição estará vazia, pois não há versões aplicáveis.
 
@@ -163,17 +164,17 @@ Esse método pode ser usado para restaurar uma versão de uma árvore, por exemp
 1. Navegue para mostrar a página que você deseja comparar.
 1. Selecione a página no [modo de seleção](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Abra a coluna **Linha do tempo** e selecione **Mostrar tudo** ou **Versões**.
-1. As versões de página serão listadas. Selecione a versão que você deseja visualizar:
+1. As versões da página serão listadas. Selecione a versão que deseja visualizar:
 
    ![Versão de visualização](/help/sites-cloud/authoring/assets/versions-revert.png)
 
-1. Selecione **Visualizar**. A página será exibida em uma nova guia.
+1. Selecionar **Visualizar**. A página será exibida em uma nova guia.
 
    >[!CAUTION]
    >
-   >Se uma página tiver sido movida, você não poderá mais executar uma visualização em versões feitas antes do movimento.
+   >Se uma página tiver sido movida, não será mais possível executar uma pré-visualização em nenhuma versão feita antes da movimentação.
    >
-   >Se você tiver problemas com uma visualização, verifique a [Linha do tempo](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) para ver se a página foi movida.
+   >Se tiver problemas com uma visualização, verifique a [Linha do tempo](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) para ver se a página foi movida.
 
 ## Comparar uma versão com a página atual {#comparing-a-version-with-current-page}
 
@@ -182,11 +183,11 @@ Para comparar uma versão anterior com a página atual:
 1. Navegue para mostrar a página que você deseja comparar.
 1. Selecione a página no [modo de seleção](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Abra a coluna **Linha do tempo** e selecione **Mostrar tudo** ou **Versões**.
-1. As versões de página serão listadas. Selecione a versão que você deseja comparar:
+1. As versões da página serão listadas. Selecione a versão que deseja comparar:
 
    ![Comparar versões](/help/sites-cloud/authoring/assets/versions-revert.png)
 
-1. Selecione **Comparar a atual**. O [diferencial de páginas](/help/sites-cloud/authoring/features/page-diff.md) será aberto e exibirá as diferenças.
+1. Selecionar **Comparar ao atual**. A variável [diff de página](/help/sites-cloud/authoring/features/page-diff.md) abrirá e exibirá as diferenças.
 
 ## Timewarp   {#timewarp}
 
@@ -200,16 +201,16 @@ Como a criação de conteúdo é um processo contínuo e colaborativo, o objetiv
 
 Para fazer isso:
 
-* O sistema procura a versão de página que estava ativa no momento selecionado.
-* Isso significa que a versão mostrada foi criada/ativada *antes* do ponto no tempo selecionado no Timewarp.
+* O sistema procura a versão da página que estava ativa no momento selecionado.
+* Isso significa que a versão mostrada foi criada/ativada *antes* o ponto no tempo selecionado no Timewarp.
 * Durante a navegação para uma página que foi excluída, isso também será renderizado - desde que as versões antigas da página ainda estejam disponíveis no repositório.
 * Se nenhuma versão publicada for encontrada, o Timewarp reverterá para o estado atual da página no ambiente de criação (o objetivo é evitar um erro de página/404, que poderia impedir a navegação).
 
 ### Uso do Timewarp {#using-timewarp}
 
-O Timewarp é um [modo](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) do editor de páginas. Para iniciá-lo, basta ativá-lo como você faria com qualquer outro modo.
+O Timewarp é um [modo](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) do editor de páginas. Para iniciá-lo, basta alterná-lo como faria com qualquer outro modo.
 
-1. Inicie o editor da página em que você deseja iniciar o Timewarp e selecione **Timewarp** na seleção do modo.
+1. Inicie o editor da página em que deseja iniciar o Timewarp e selecione **Timewarp** na seleção de modo.
 
    ![Modo Timewarp](/help/sites-cloud/authoring/assets/versions-timewarp-mode.png)
 
@@ -217,7 +218,7 @@ O Timewarp é um [modo](/help/sites-cloud/authoring/fundamentals/environment-too
 
    ![Data de destino do Timewarp](/help/sites-cloud/authoring/assets/versions-timewarp-target.png)
 
-1. A página é exibida com base na data definida. O modo Timewarp é indicado na barra de status azul localizada na parte superior da janela. Use os links na barra de status para selecionar uma nova data de destino ou para sair do modo Timewarp.
+1. A página é exibida com base no conjunto de datas. O modo Timewarp é indicado por meio da barra de status azul na parte superior da janela. Use os links na barra de status para selecionar uma nova data de destino ou sair do modo Timewarp.
 
    ![No modo Timewarp](/help/sites-cloud/authoring/assets/versions-timewarp.png)
 

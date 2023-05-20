@@ -1,6 +1,6 @@
 ---
 title: Gerenciamento de fragmentos de conteúdo (Ativos - Fragmentos de conteúdo)
-description: Saiba como usar o console Assets para gerenciar os Fragmentos de conteúdo AEM, a base do seu conteúdo sem periféricos.
+description: Saiba como usar o console de Ativos para gerenciar os fragmentos de conteúdo de AEM, a base do conteúdo headless.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 source-git-commit: 449e189b117aca58b960e802f8b3b11e7a5ea523
 workflow-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 81%
 
 # Gerenciamento dos Fragmentos de conteúdo {#managing-content-fragments}
 
-Saiba como usar o console Assets para gerenciar os Fragmentos de conteúdo AEM, a base do seu conteúdo sem periféricos.
+Saiba como usar o console de Ativos para gerenciar os fragmentos de conteúdo de AEM, a base do conteúdo headless.
 
 Depois de definir os [Modelos de fragmentos de conteúdo](#creating-a-content-model), você pode usá-los para [criar fragmentos de conteúdo](#creating-a-content-fragment).
 
@@ -35,7 +35,7 @@ O [Editor de fragmentos de conteúdo](#opening-the-fragment-editor) fornece vár
 
 >[!NOTE]
 >
->Os fragmentos de conteúdo são armazenados como **Ativos**. Agora, eles são gerenciados principalmente com a variável **[Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)** , embora ainda possam ser gerenciadas no **Ativos** console. Esta seção cobre a gestão da **Ativos** console.
+>Os fragmentos de conteúdo são armazenados como **Ativos**. Agora, eles são gerenciados principalmente com o **[Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)** console, embora ainda possam ser gerenciados no **Assets** console. Esta seção abrange o gerenciamento do **Assets** console.
 
 ## Criação de fragmentos de conteúdo {#creating-content-fragments}
 
@@ -45,17 +45,17 @@ Os [modelos de fragmento de conteúdo](/help/assets/content-fragments/content-fr
 
 ### Criação de um fragmento de conteúdo {#creating-a-content-fragment}
 
-O método de criação de um fragmento de conteúdo é:
+O método para criar um fragmento de conteúdo é:
 
 1. Navegue até a pasta **Ativos** na qual deseja criar o fragmento.
 1. Selecione **Criar** e **Fragmento de conteúdo** para abrir o assistente.
 1. A primeira etapa do assistente requer que você especifique a base do novo fragmento.
 
-   * [Modelo](/help/assets/content-fragments/content-fragments-models.md) - usado para criar um fragmento que requer conteúdo estruturado; por exemplo, a variável **Aventura** modelo
+   * [Modelo](/help/assets/content-fragments/content-fragments-models.md) - usado para criar um fragmento que requer conteúdo estruturado; por exemplo, o **Aventura** modelo
 
       * Todos os modelos disponíveis são exibidos.
 
-   Após a seleção, use **Próximo** para continuar.
+   Após a seleção, use **Próxima** para continuar.
 
    ![base do fragmento](assets/cfm-managing-01.png)
 
@@ -76,53 +76,53 @@ O método de criação de um fragmento de conteúdo é:
 
       * **Nome**
 
-         O nome; será usada para formar o URL.
+         O nome; será usado para formar o URL.
 
-         Obrigatório; serão derivadas automaticamente do título, mas podem ser atualizadas.
+         Obrigatório; será derivado automaticamente do título, mas pode ser atualizado.
 
 
 1. Selecione **Criar** para concluir a ação e, em seguida, **Abra** o fragmento para editar ou retorne ao console com **Concluído**.
 
    >[!NOTE]
-   >Em **Lista** do console, você pode atualizar o **Exibir configurações** para ativar o **Modelo de fragmento de conteúdo** coluna.
+   >Entrada **Lista** do console, é possível atualizar a variável **Configurações de exibição** para habilitar o **Modelo de fragmento de conteúdo** coluna.
 
-## Ações para um fragmento de conteúdo no console Ativos {#actions-for-a-content-fragment-assets-console}
+## Ações para um fragmento de conteúdo no console de Ativos {#actions-for-a-content-fragment-assets-console}
 
-No **Ativos** no console, uma variedade de ações está disponível para seus fragmentos de conteúdo:
+No **Assets** console de uma variedade de ações estão disponíveis para seus fragmentos de conteúdo:
 
-* Na barra de ferramentas; após a seleção do fragmento, todas as ações apropriadas estarão disponíveis.
-* As [ações rápidas](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions); um subconjunto de ações disponível para os cartões de fragmento individuais.
+* Na barra de ferramentas; após a seleção do fragmento, todas as ações apropriadas ficam disponíveis.
+* Como [ações rápidas](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions); um subconjunto de ações disponíveis para os cartões de fragmento individuais.
 
 ![ações](assets/cfm-managing-02.png)
 
-Selecione o fragmento para exibir a barra de ferramentas com as ações aplicáveis:
+Selecione o fragmento para revelar a barra de ferramentas com ações aplicáveis:
 
 * **Processar ativos novamente**
 * **Criar**
 * **Download**
 
-   * Salve o fragmento como um arquivo ZIP; você pode definir se deseja incluir Elementos, Variações, Metadados.
+   * Salve o fragmento como um arquivo ZIP; é possível definir se deseja incluir Elementos, Variações, Metadados.
 
 * **Check-out**
 * **Propriedades**
 
-   * Permite exibir e/ou editar os metadados do fragmento.
+   * Permite visualizar e/ou editar os metadados do fragmento.
 
 * **Editar**
 
-   * Permite que você [abrir o fragmento para edição de conteúdo](/help/assets/content-fragments/content-fragments-variations.md) juntamente com seus elementos, variações, conteúdo associado e metadados.
+   * Permite que você [abrir o fragmento para edição de conteúdo](/help/assets/content-fragments/content-fragments-variations.md) junto com seus elementos, variações, conteúdo associado e metadados.
 
 * **Publicação rápida**
 * **Gerenciar publicação**
 * **Gerenciar tags**
 * **Para a coleção**
-* **Copiar** e **Colar**)
+* **Copiar** (e **Colar**)
 * **Mover**
 * **Excluir**
 
 >[!NOTE]
 >
->Muitos deles são [ações padrão do Assets](/help/assets/manage-digital-assets.md) e/ou a [AEM aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=pt-BR).
+>Muitos deles são [ações padrão do Assets](/help/assets/manage-digital-assets.md) e/ou a [aplicativo de desktop AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=pt-BR).
 
 ## Abrir o editor de fragmentos {#opening-the-fragment-editor}
 
@@ -132,8 +132,8 @@ Para abrir o fragmento para edição:
 >
 >Para editar um fragmento de conteúdo, você precisa [das permissões apropriadas](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Entre em contato com o administrador do sistema em caso de problemas.
 
-1. Use o **Ativos** para navegar até o local do fragmento de conteúdo.
-1. Abra o fragmento para edição, por:
+1. Use o **Assets** para navegar até o local do fragmento de conteúdo.
+1. Abra o fragmento para edição ao:
 
    * Clicar/tocar no link do fragmento ou fragmento (depende da exibição do console).
    * Selecionar o fragmento e **Editar** na barra de ferramentas.
@@ -354,7 +354,7 @@ Os fragmentos de conteúdo devem ser publicados para uso no ambiente de publica�
 
 Esse pode ser acessado:
 
-* Após a criação; usar [ações disponíveis no console Ativos](#actions-for-a-content-fragment-assets-console).
+* Após a criação; uso de [ações disponíveis no console de Ativos](#actions-for-a-content-fragment-assets-console).
 * No [Editor de fragmento de conteúdo](#toolbar-actions-in-the-content-fragment-editor).
 
 Além disso, ao [publicar uma página que use o fragmento](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); o fragmento será listado nas referências da página.

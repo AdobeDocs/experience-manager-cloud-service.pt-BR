@@ -11,7 +11,7 @@ exl-id: 82084ba7-1302-4cbd-8626-d77b3aaa4ed1
 source-git-commit: 347da5edf4c8ad2ae72284f4e1a4003493596194
 workflow-type: tm+mt
 source-wordcount: '2260'
-ht-degree: 5%
+ht-degree: 3%
 
 ---
 
@@ -85,13 +85,13 @@ Esta seção descreve como visualizar e interagir com ativos 3D de duas maneiras
 
 O visualizador 3D interativo inclui, entre outras coisas, uma coleção de controles interativos de câmera que permitem que você orbite, amplie e desloque o ativo 3D.
 
-O tempo necessário para abrir um ativo 3D na exibição de página Detalhes do ativo depende de vários fatores. Esses fatores incluem informações como as seguintes:
+O tempo necessário para abrir um ativo 3D na exibição de página Detalhes do ativo depende de vários fatores. Esses fatores incluem coisas como as seguintes:
 
 * Largura de banda do servidor.
 * Latências no servidor
 * Complexidade da imagem.
 
-Além disso, os recursos do computador cliente - como estação de trabalho, notebook ou dispositivo de toque móvel - também são importantes ao manipular a câmera interativamente. Um sistema bastante eficiente com bons recursos gráficos pode tornar a experiência de visualização interativa em 3D mais fácil e favorável.
+Além disso, os recursos do computador cliente - como estação de trabalho, notebook ou dispositivo de toque móvel - também são importantes ao manipular a câmera interativamente. Um sistema razoavelmente eficiente com boas capacidades gráficas pode tornar a experiência de visualização 3D interativa mais suave e favorável.
 
 >[!TIP]
 >
@@ -105,13 +105,13 @@ Consulte também [Visualizar ativos usando a interface de software](/help/assets
 
 **Para visualizar e interagir com um ativo 3D na página de detalhes do ativo:**
 
-1. Verifique se você fez upload dos ativos 3D no [!DNL Experience Manager].
+1. Verifique se você carregou ativos 3D no [!DNL Experience Manager].
 
    Consulte [Fazer upload de ativos 3D para uso no Dynamic Media](/help/assets/add-assets.md#upload-assets).
 
 1. De [!DNL Experience Manager], no **[!UICONTROL Navegação]** selecione **[!UICONTROL Ativos > Arquivos]**.
 1. Próximo ao canto superior direito da página, no **[!UICONTROL Exibir]** selecione **[!UICONTROL Exibição de cartão]**.
-1. Navegue até o ativo 3D que deseja visualizar.
+1. Navegue até um ativo 3D que deseja visualizar.
 1. Para abrir o ativo na página Detalhes, selecione o cartão do ativo 3D.
 1. Na página Detalhes do ativo 3D, siga um destes procedimentos:
 
@@ -120,7 +120,7 @@ Consulte também [Visualizar ativos usando a interface de software](/help/assets
    | **Girar a câmera** | Gire a visualização em torno da cena 3D e dos objetos. | Clique com o botão esquerdo + arraste. | Pressione com um dedo + arraste. |
    | **Deslocar a câmera** | Desloque sua exibição para a esquerda, direita, para cima ou para baixo. | Clique com o botão direito + arraste. | Pressione com dois dedos + arraste. |
    | **Aplicar zoom à sua câmera** | Mova para dentro e para fora das áreas na cena 3D. | Roda de rolagem. | Pinça de dois dedos. |
-   | **Recentralize sua câmera** | Recentralize sua câmera em um ponto sobre um objeto na cena 3D. | Duplo clique. | Toque duas vezes. |
+   | **Recentralize sua câmera** | Recentralize sua câmera em um ponto sobre um objeto na cena 3D. | Clique duas vezes em. | Toque duas vezes. |
    | **Redefinir** | Próximo ao canto inferior direito da página, selecione o ícone Redefinir para restaurar o ponto de destino de exibição para o centro do ativo 3D. A redefinição também move a câmera para mais perto ou mais longe, para mostrar o ativo em sua totalidade e em um tamanho de visualização razoável. |  |  |
    | **Modo de tela cheia** | Para entrar no modo de tela cheia, no canto inferior direito da página, selecione o ícone Tela cheia. |  |  |
 
@@ -153,7 +153,7 @@ Um ativo 3D totalmente interativo, conforme exibido na **[!UICONTROL Visualizar]
    | **Girar a câmera** | Gire a visualização em torno da cena 3D e dos objetos. | Clique com o botão esquerdo + arraste. | Pressione com um dedo + arraste. |
    | **Deslocar a câmera** | Desloque sua exibição para a esquerda, direita, para cima ou para baixo. | Clique com o botão direito + arraste. | Pressione com dois dedos + arraste. |
    | **Aplicar zoom à sua câmera** | Mova para dentro e para fora das áreas na cena 3D. | Roda de rolagem. | Pinça de dois dedos. |
-   | **Recentralize sua câmera** | Recentralize sua câmera em um ponto sobre um objeto na cena 3D. | Duplo clique. | Toque duas vezes. |
+   | **Recentralize sua câmera** | Recentralize sua câmera em um ponto sobre um objeto na cena 3D. | Clique duas vezes em. | Toque duas vezes. |
    | **Redefinir** | Próximo ao canto inferior direito da página, selecione o ícone Redefinir para restaurar o ponto de destino de exibição para o centro do ativo 3D. A redefinição também move a câmera para mais perto ou mais longe, para mostrar o ativo em sua totalidade e em um tamanho de visualização razoável. |  |  |
    | **Modo de tela cheia** | Para entrar no modo de tela cheia, no canto inferior direito da página, selecione o ícone Tela cheia. |  |  |
 

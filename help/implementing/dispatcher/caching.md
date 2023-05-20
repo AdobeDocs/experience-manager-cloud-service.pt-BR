@@ -78,7 +78,7 @@ Isso pode ser útil, por exemplo, quando a lógica de negócios exigir o ajuste 
    >Os outros métodos, incluindo o [dispatcher-ttl projeto AEM ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), não substituirão os valores com êxito.
 
    >[!NOTE]
-   >Observe que o Dispatcher ainda pode armazenar conteúdo em cache de acordo com seu próprio conteúdo [regras de armazenamento em cache](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html). Para tornar o conteúdo realmente privado, você deve garantir que ele não seja armazenado em cache pelo Dispatcher.
+   >Observe que o Dispatcher ainda pode armazenar conteúdo em cache de acordo com seu próprio conteúdo [regras de armazenamento em cache](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html?lang=pt-BR). Para tornar o conteúdo realmente privado, você deve garantir que ele não seja armazenado em cache pelo Dispatcher.
 
 ### Bibliotecas do lado do cliente (js,css) {#client-side-libraries}
 

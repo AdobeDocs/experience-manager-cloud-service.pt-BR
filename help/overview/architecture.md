@@ -4,8 +4,8 @@ description: Introdução à arquitetura do Adobe Experience Manager as a Cloud 
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 source-git-commit: c67be5b7f5dc454511753faa16bc46b10e72dde4
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1807'
+ht-degree: 96%
 
 ---
 
@@ -58,9 +58,9 @@ Isso:
 
 O dimensionamento de instâncias por locatário do serviço se aplica aos dois eixos:
 
-* Horizontal: o número de nós para um determinado serviço é aumentado ou diminuído automaticamente, permitindo ainda configurações padrão individuais.
+* Horizontal: o número de nós para um determinado serviço aumenta ou diminui automaticamente, ainda permitindo configurações default individuais.
 
-* Vertical: a memória alocada e a capacidade da CPU podem ser ampliadas ou diminuídas por meio da configuração de um número fixo de nós para atender aos requisitos individuais, conforme necessário.
+* Vertical: a memória alocada e a capacidade da CPU podem ser aumentadas ou diminuídas por meio da configuração de um número fixo de nós para atender a requisitos individuais, conforme necessário.
 
 ## Ambientes {#environments}
 

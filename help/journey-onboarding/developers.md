@@ -144,7 +144,7 @@ Se você estiver interessado em como os autores de conteúdo acessam e usam o AE
 
 ## Recursos adicionais {#additional-resources}
 
-Veja a seguir recursos adicionais e opcionais, caso deseje ir além do conteúdo da jornada de integração.
+A seguir estão recursos adicionais e opcionais se você quiser ir além do conteúdo da jornada de integração.
 
 * [Acessar repositórios](/help/implementing/cloud-manager/managing-code/accessing-repos.md) - Saiba como acessar e gerenciar o repositório Git usando o gerenciamento de conta Git por autoatendimento do Cloud Manager.
 * [Uso do Git com o Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md) - Saiba como usar os repositórios Git do Cloud Manager e como integrar seu próprio repositório Git local gerenciado pelo cliente com o Cloud Manager.

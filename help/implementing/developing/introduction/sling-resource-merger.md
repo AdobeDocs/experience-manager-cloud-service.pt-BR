@@ -226,7 +226,7 @@ O Sling Resource Merger inclui dois provedores de recursos personalizados, um pa
 
    * finalidade: mesclar recursos com base no caminho de pesquisa
    * ponto de montagem: `/mnt/overlay`
-   * usage: `mount point + relative path`
+   * uso: `mount point + relative path`
    * exemplo:
 
       * `getResource('/mnt/overlay' + '<relative-path-to-resource>');`
@@ -235,7 +235,7 @@ O Sling Resource Merger inclui dois provedores de recursos personalizados, um pa
 
    * finalidade: mesclar recursos com base em seu supertipo
    * ponto de montagem: `/mnt/overide`
-   * usage: `mount point + absolute path`
+   * uso: `mount point + absolute path`
    * exemplo:
 
       * `getResource('/mnt/override' + '<absolute-path-to-resource>');`

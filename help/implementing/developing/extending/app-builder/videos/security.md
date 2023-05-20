@@ -1,6 +1,6 @@
 ---
 title: Segurança do App Builder
-description: Saiba mais sobre a segurança de aplicativos do App Builder.
+description: Saiba mais sobre a segurança do aplicativo App Builder.
 version: Cloud Service
 feature: App Builder
 topic: Integrations, Development
@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Segurança do App Builder
 
-Saiba mais sobre a segurança da ação Adobe Runtime, a autenticação e a autorização do usuário e do AppBuilder.
+Saiba mais sobre a segurança de ação do Adobe Runtime, autenticação e autorização do usuário e do AppBuilder.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339249/?quality=12&learn=on)

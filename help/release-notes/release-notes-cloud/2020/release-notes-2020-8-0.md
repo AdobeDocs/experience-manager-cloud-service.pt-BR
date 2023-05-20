@@ -1,5 +1,5 @@
 ---
-title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2020.8.0.
+title: Notas de versão do [!DNL Adobe Experience Manager]  as a Cloud Service 2020.8.0.
 description: "[!DNL Adobe Experience Manager] Notas de versão as a Cloud Service para 2020.8.0."
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13

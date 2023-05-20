@@ -21,11 +21,11 @@ O Adobe Experience Manager as a Cloud Service usa o recurso de [Distribuição d
 
 >[!NOTE]
 >
->Se você estiver interessado em publicar conteúdo em massa, use a variável [Fluxo de trabalho da Árvore de conteúdo da publicação](#publish-content-tree-workflow).
->Essa etapa do fluxo de trabalho é criada especificamente para o Cloud Service e pode lidar com grandes cargas de trabalho com eficiência.
->Não é recomendado criar seu próprio código personalizado de publicação em massa.
->Se você precisar personalizar por qualquer motivo, é possível acionar essa etapa do fluxo de trabalho/fluxo de trabalho usando APIs de fluxo de trabalho existentes.
->Embora seja sempre uma boa prática publicar apenas conteúdo que precisa ser publicado e ser prudente em não tentar publicar um grande número de conteúdo se não for necessário, não há limites para o conteúdo que você pode enviar por meio do Fluxo de trabalho Publicar árvore de conteúdo.
+>Se você estiver interessado em publicar conteúdo em massa, use o [Fluxo de trabalho da árvore de conteúdo de publicação](#publish-content-tree-workflow).
+>Essa etapa do fluxo de trabalho é criada especificamente para o Cloud Service e pode lidar com cargas grandes de maneira eficiente.
+>Não é recomendável criar seu próprio código personalizado de publicação em massa.
+>Se você precisar personalizar por qualquer motivo, poderá acionar essa etapa de fluxo de trabalho/fluxo de trabalho usando APIs de fluxo de trabalho existentes.
+>Embora seja sempre uma boa prática publicar somente o conteúdo que precisa ser publicado e ser prudente ao não tentar publicar um grande número de conteúdo, se não for necessário, não há limites para o conteúdo que você pode enviar por meio do Fluxo de trabalho de publicação da árvore de conteúdo.
 
 ### Publicação/Cancelamento de publicação rápidos — Publicação/Cancelamento de publicação planejados {#publish-unpublish}
 
@@ -70,7 +70,7 @@ Como alternativa, também é possível fazer isso criando um modelo de fluxo de 
    ![Etapa do processo](/help/operations/assets/processstep.png)
 
 1. Clique na etapa do processo no fluxo e selecione **Configurar**, selecionando o ícone de chave inglesa
-1. Clique na guia **Processo** e selecione `Publish Content Tree` na lista suspensaem seguida, marque a opção **Avanço do Manipulador** caixa de seleção
+1. Clique na guia **Processo** e selecione `Publish Content Tree` na lista suspensa, em seguida, verifique a **Avanço do manipulador** caixa de seleção
 
    ![Treeactivation](/help/operations/assets/newstep.png)
 
@@ -92,7 +92,7 @@ Como alternativa, também é possível fazer isso criando um modelo de fluxo de 
 * `enableVersion` (valor booleano, padrão: `true`). Esse parâmetro determina se uma nova versão será criada na replicação.
 * `agentId` (valor da string; o valor padrão significa que apenas os agentes para publicação são usados). É recomendado ser explícito sobre o agentId; por exemplo, definir o valor como: publicar. Configurar o agente como `preview` publicará no serviço de visualização
 * `filters` (valor da string; o valor padrão significa que todos os caminhos são ativados). Os valores disponíveis são:
-   * `onlyActivated` - ativar apenas as páginas que (já) foram ativadas. Atua como uma forma de reativação.
+   * `onlyActivated` - ativar somente as páginas que (já) foram ativadas. Atua como uma forma de reativação.
    * `onlyModified` - ativar apenas os caminhos que já estejam ativados e tenham uma data de modificação posterior à data de ativação.
    * O conteúdo acima pode ser ORed com uma barra vertical “|”. Por exemplo, `onlyActivated|onlyModified`.
 

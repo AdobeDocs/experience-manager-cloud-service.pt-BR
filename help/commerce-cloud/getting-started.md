@@ -103,7 +103,7 @@ Agora você está pronto para usar o AEM Commerce as a Cloud Service e implantar
 
 ## Configuração de lojas e catálogos {#catalog}
 
-O complemento CIF e o [Componentes principais da CIF](https://github.com/adobe/aem-core-cif-components) pode ser usado em várias estruturas de site de AEM conectadas a diferentes lojas de comércio (ou visualizações de loja etc.). Por padrão, o complemento CIF é implantado com uma configuração padrão conectada à loja e ao catálogo padrão da Adobe Commerce.
+O complemento CIF e a variável [Componentes principais da CIF](https://github.com/adobe/aem-core-cif-components) pode ser usado em várias estruturas de site de AEM conectadas a diferentes lojas de comércio (ou visualizações de loja etc.). Por padrão, o complemento CIF é implantado com uma configuração padrão conectada à loja e ao catálogo padrão da Adobe Commerce.
 
 Essa configuração pode ser ajustada para o projeto por meio da configuração de Cloud Service da CIF seguindo estas etapas:
 

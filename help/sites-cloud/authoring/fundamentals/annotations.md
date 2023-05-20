@@ -5,7 +5,7 @@ exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
 source-git-commit: 64d801b108229866394e993811a67f983be5df6c
 workflow-type: tm+mt
 source-wordcount: '699'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -61,9 +61,9 @@ Além de visualizar as anotações, o modo Anotação permite criar, editar, mov
 
    ![Adição de uma anotação](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
-   Aqui, você pode usar o campo e/ou ícone apropriado para:
+   Aqui você pode usar o campo e/ou ícone apropriado para:
 
-   * Inserir o texto da anotação.
+   * Insira o texto da anotação.
    * Criar um rascunho (linhas e formas) para realçar uma área do componente.
 
       ![Botão Rascunho de anotação](/help/sites-cloud/authoring/assets/annotation-sketch.png)

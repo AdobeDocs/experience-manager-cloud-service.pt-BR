@@ -1296,11 +1296,11 @@ Esta consulta interroga:
 Esta consulta interroga:
 
 * por vários Fragmentos de conteúdo do tipo `bookmark`
-   * com referências de fragmento a outros fragmentos do tipo de modelo específico `Article`
+   * com Referências de fragmentos a outros fragmentos do tipo de modelo específico `Article`
 
 >[!NOTE]
 >
->O campo `fragments` tem o tipo de dados `fragment-reference`, com o modelo `Article` selecionado. O query fornece `fragments` como uma matriz de `[Article]`.
+>O campo `fragments` tem o tipo de dados `fragment-reference`, com o modelo `Article` selecionado. Entrega da consulta `fragments` como uma matriz de `[Article]`.
 
 ```graphql
 {
@@ -1324,7 +1324,7 @@ Esta consulta interroga:
 
 >[!NOTE]
 >
->O campo `fragments` tem o tipo de dados `fragment-reference`, com os modelos `Article` e `Adventure` selecionados. O query fornece `fragments` como uma matriz de `[AllFragmentModels]`, que é cancelado com o tipo de união.
+>O campo `fragments` tem o tipo de dados `fragment-reference`, com os modelos `Article` e `Adventure` selecionados. Entrega da consulta `fragments` como uma matriz de `[AllFragmentModels]`, que é desreferenciado com o tipo de união.
 
 ```graphql
 {

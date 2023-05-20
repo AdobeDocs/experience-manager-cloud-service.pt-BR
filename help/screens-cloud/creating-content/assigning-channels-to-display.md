@@ -5,7 +5,7 @@ exl-id: ba001c18-7b05-4ae2-aa7f-9ebb320fedd0
 source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '452'
-ht-degree: 19%
+ht-degree: 1%
 
 ---
 
@@ -21,7 +21,7 @@ Este documento ajuda você a entender como atribuir um canal a uma exibição, q
 
 Antes de executar as etapas abaixo para atribuir um canal a uma exibição, é necessário que você tenha terminado de aprender:
 
-* Criação e gerenciamento de exibições
+* Criando e Gerenciando Exibições
 * Criação e gerenciamento de canais
 
 ## Etapas para atribuir um canal a uma exibição {#assign-channel-to-display}
@@ -42,7 +42,7 @@ Siga as etapas abaixo para atribuir um canal a uma exibição:
    1. Escolha a prioridade.
 
       >[!NOTE]
-      >A prioridade é usada para ordenar as atribuições, no caso de várias delas corresponderem aos critérios de reprodução. A atribuição com o valor mais alto sempre terá precedência sobre aquelas com valores mais baixos. Por exemplo, se houver dois canais, A e B, em que A tem uma prioridade de 1 e B tem uma prioridade de 2, o canal B será exibido, pois tem uma prioridade mais alta que A.
+      >A prioridade é usada para ordenar as atribuições caso várias correspondam aos critérios de reprodução. Aquele com o valor mais alto sempre terá precedência sobre os valores mais baixos. Por exemplo, se houver dois canais A e B. A tem uma prioridade 1 e B tem uma prioridade 2, então o canal B é exibido, pois tem uma prioridade mais alta que A.
    1. Selecionar a data inicial e a data final de **Ativação**.
 
 1. Clique em **+ Adicionar recorrência** para adicionar um cronograma de recorrência para seu canal.

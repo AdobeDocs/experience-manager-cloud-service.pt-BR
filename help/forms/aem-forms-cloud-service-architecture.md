@@ -5,7 +5,7 @@ exl-id: 9d677bee-50ca-460e-b503-6b7799900735
 source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
 workflow-type: tm+mt
 source-wordcount: '1045'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -62,7 +62,7 @@ A Replicação reversa não está disponível no AEM as a Cloud Service para env
 
 ### Serviços da Adobe
 
-**Serviço Automated forms conversion**
+**Serviço de conversão automática de formulários**
 
 [serviço Automated forms conversion](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=pt-BR) O converte automaticamente seus formulários PDF e XFA em formulários adaptáveis compatíveis com dispositivos responsivos e baseados em HTML5.
 

@@ -26,7 +26,7 @@ ht-degree: 0%
 
 [!DNL AEM Forms] oferecem suporte aos seguintes tipos de ativos:
 
-* Formulários adaptáveis
+* Adaptive Forms
 * Documentos adaptáveis
 * Fragmentos do formulário adaptável
 * Temas

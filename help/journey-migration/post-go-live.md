@@ -18,15 +18,15 @@ ht-degree: 39%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html" text="Acesso e gerenciamento de registros"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="Ferramentas de desenvolvimento do AEM as a Cloud Service"
 
-Esta é a última parte da jornada, portanto, você aprenderá a monitorar os problemas e a melhorar o desempenho após a conclusão da migração. Você deve garantir a limpeza de arquivos temporários, analisar práticas recomendadas para desenvolvimento contínuo e gerenciar logs.
+Esta é a última parte da jornada; portanto, você aprenderá a monitorar problemas e melhorar o desempenho após a conclusão da migração. Você deve garantir a limpeza de arquivos temporários, analisar práticas recomendadas para desenvolvimento contínuo e gerenciar logs.
 
 ## A história até agora {#story-so-far}
 
-Na etapa anterior da jornada, você aprendeu a executar a migração e [Ao vivo](/help/journey-migration/go-live.md) assim que o código e o conteúdo estavam prontos para serem movidos para AEM as a Cloud Service.
+Na etapa anterior da jornada, você aprendeu a executar a migração e [Ativação](/help/journey-migration/go-live.md) quando o código e o conteúdo estavam prontos para serem transferidos para o AEM as a Cloud Service.
 
 ## Objetivo {#objective}
 
-Este documento descreve as ferramentas disponíveis para solucionar problemas AEM ambientes as a Cloud Service:
+Este documento descreve as ferramentas disponíveis para solucionar problemas de ambientes as a Cloud Service AEM:
 
 * **Console do desenvolvedor**
 * **CRXDE Lite**
@@ -34,7 +34,7 @@ Este documento descreve as ferramentas disponíveis para solucionar problemas AE
 
 ## Console do desenvolvedor {#developer-console}
 
-A depuração AEM ambientes as a Cloud Service de desenvolvedor está disponível no Console do desenvolvedor para ambientes de desenvolvimento, preparo e produção.
+A depuração de ambientes de desenvolvedor do AEM as a Cloud Service está disponível no Console do desenvolvedor para ambientes de desenvolvimento, preparo e produção.
 
 Consulte [Implementação do AEM as a Cloud Service](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools) para saber mais sobre ferramentas de desenvolvimento.
 
@@ -43,7 +43,7 @@ Consulte [Implementação do AEM as a Cloud Service](/help/implementing/developi
 Como usuário, você pode acessar o CRXDE Lite no ambiente de desenvolvimento, mas não no ambiente de preparo ou produção.
 
 >[!IMPORTANT]
->Gravação em repositórios imutáveis, como `/libs` e `/apps` em tempo de execução resulta em erros. Além disso, você não tem acesso a ferramentas de desenvolvedor para ambientes de preparo e produção.
+>Gravação em repositórios imutáveis, como `/libs` e `/apps` no tempo de execução resulta em erros. Além disso, você não tem acesso a ferramentas de desenvolvedor para ambientes de preparo e produção.
 
 Consulte [Desenvolvimento com o CRXDE Lite](/help/implementing/developing/tools/crxde.md) para saber como desenvolver seu aplicativo do AEM usando o CRXDE Lite.
 
@@ -53,7 +53,7 @@ Os usuários podem acessar uma lista de arquivos de log disponíveis para o ambi
 
 Consulte [Acessar e gerenciar logs](/help/implementing/cloud-manager/manage-logs.md) para saber como acessar e gerenciar logs por meio da interface do usuário ou da API via Cloud Manager.
 
-## Entrar em contato com o suporte {#contacting-support}
+## Entrando em contato com o suporte {#contacting-support}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_support"
@@ -61,24 +61,24 @@ Consulte [Acessar e gerenciar logs](/help/implementing/cloud-manager/manage-logs
 >abstract="Entre em contato com a Equipe de suporte do AEM para tirar dúvidas ou enviar preocupações."
 >additional-url="https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html" text="Suporte para a Experience Cloud"
 
-Em caso de dúvidas sobre o acesso ao Cloud Service, entre em contato com o representante do Adobe ou [Suporte para Experience Cloud](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html) para obter mais detalhes.
+Em caso de dúvidas sobre o acesso ao Cloud Service, entre em contato com o representante da Adobe ou [Suporte para Experience Cloud](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html) para obter mais detalhes.
 
-## Aprendizados de documentos {#document-learnings}
+## Aprendizados de documento {#document-learnings}
 
-Quando a migração estiver concluída, você deverá documentar o conhecimento adquirido durante esse processo. Algumas perguntas que podem ajudar no processo de documentação são:
+Quando a migração estiver concluída, você deverá documentar o conhecimento adquirido durante esse processo. Algumas perguntas que podem ajudar no processo de documentação do são:
 
-* O que funcionou bem e o que não funcionou?
-* Quais foram os principais pontos problemáticos?
+* O que funcionou bem e o que não?
+* Quais eram os principais pontos problemáticos?
 * Recommendations no caso de uma migração futura.
 
-Em seguida, você deve compartilhar esses aprendizados pós-migração com as partes interessadas e equipes em sua organização.
+Em seguida, você deve compartilhar esses aprendizados pós-migração com as partes interessadas e as equipes dentro da organização.
 
 ## A jornada termina - Será? {#journey-ends}
 
-Parabéns! Você concluiu a Jornada de migração AEM as a Cloud Service! Você deve conhecer como:
+Parabéns! Você concluiu a Jornada de migração as a Cloud Service do AEM! Você deve entender como:
 
-* Comece já a mudar para AEM as a Cloud Service
-* Determine se sua implantação está pronta para ser movida para AEM as a Cloud Service
-* Prepare seu código e a nuvem de conteúdo
+* Introdução à migração para o AEM as a Cloud Service
+* Determine se sua implantação está pronta para ser movida para o AEM as a Cloud Service
+* Prepare o código e a nuvem de conteúdo
 * Executar a migração
 * Monitore problemas e melhore o desempenho

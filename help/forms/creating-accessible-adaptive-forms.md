@@ -12,7 +12,7 @@ exl-id: 3b5247fa-decb-40eb-a629-6d834976d33c
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '2025'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -157,7 +157,7 @@ Os seguintes atalhos de teclado estão disponíveis em [!DNL AEM Forms].
 |---|---|
 | Mover o cursor para frente em um formulário | Guia |
 | Mover o cursor para trás em um formulário | Shift+Tab |
-| Mover para o próximo painel | Alt+Seta para a direita |
+| Mover para o próximo painel | Alt+Seta para a Direita |
 | Mover para o painel anterior | Alt+Seta para a esquerda |
 | Redefinir os dados preenchidos em um formulário | Alt+R |
 | Enviar um formulário | Alt+S |
@@ -176,9 +176,9 @@ As seguintes teclas de atalho de teclado estão disponíveis para o componente S
 | Mova o cursor para cima no calendário disponível no componente Seletor de datas | Seta para cima |
 | Mova o cursor para trás no calendário disponível no componente Seletor de datas | Seta para a esquerda |
 | Mova o cursor para frente no calendário disponível no componente Seletor de datas | Seta para a direita |
-| Executar a ação da legenda disponível entre as setas de navegação direita e esquerda no calendário | Shift+Seta para cima |
-| Executar a ação para o ícone de seta de navegação direita ![seta para a direita](assets/right-navigation-icon.svg) disponível no calendário | Shift+Seta para a esquerda |
-| Executar a ação para o ícone de seta de navegação à esquerda ![seta para a esquerda](assets/left-navigation-icon.svg) disponível no calendário | Shift+Seta para a direita |
+| Executar a ação da legenda disponível entre as setas de navegação direita e esquerda no calendário | Shift + Seta para cima |
+| Executar a ação para o ícone de seta de navegação direita ![seta para a direita](assets/right-navigation-icon.svg) disponível no calendário | Shift+Seta para a Esquerda |
+| Executar a ação para o ícone de seta de navegação à esquerda ![seta para a esquerda](assets/left-navigation-icon.svg) disponível no calendário | Shift + seta para a direita |
 
 ## Use a ferramenta de acessibilidade para encontrar problemas de acessibilidade restantes
 

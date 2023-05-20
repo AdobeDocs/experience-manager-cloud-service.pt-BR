@@ -26,7 +26,7 @@ As marcas podem integrar o Experience Manager com o Adobe Commerce, parte da Ado
 * Enriquecer e diferenciar as experiências para clientes
 * Simplificar a criação com acesso a dados comerciais
 
-## Introdução à Estrutura de Integração do Commerce (CIF) do AEM {#cif-intro}
+## Introdução à Estrutura de Integração (CIF) do AEM Commerce {#cif-intro}
 
 Como esses projetos têm de lidar com a complexidade da integração de uma solução comercial. Uma solução comercial pode ser qualquer coisa, desde uma solução comercial, como a Adobe Commerce Cloud, a um conjunto de serviços comerciais personalizados. A integração é altamente dependente dos casos de uso e do ecossistema. Ela costuma tocar em vários lugares e vem em vários tipos diferentes:
 

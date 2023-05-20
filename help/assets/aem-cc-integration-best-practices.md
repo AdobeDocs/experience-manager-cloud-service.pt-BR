@@ -1,6 +1,6 @@
 ---
-title: Práticas recomendadas para integrar a [!DNL Adobe Creative Cloud]
-description: As práticas recomendadas integram uma implantação do Experience Manager com o Adobe Creative Cloud para simplificar os fluxos de trabalho de transferência de ativos e obter o máximo de eficiência.
+title: Práticas recomendadas para integração com o [!DNL Adobe Creative Cloud]
+description: As práticas recomendadas integram uma implantação de Experience Manager com o Adobe Creative Cloud para simplificar os fluxos de trabalho de transferência de ativos e alcançar a eficiência máxima.
 contentOwner: AG
 mini-toc-levels: 1
 feature: Collaboration,Adobe Asset Link,Desktop App
@@ -20,38 +20,38 @@ ht-degree: 16%
 | AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/aem-cc-integration-best-practices.html?lang=pt-BR) |
 | AEM as a Cloud Service | Este artigo |
 
-O Adobe Experience Manager Assets é uma solução de gerenciamento de ativos digitais (DAM) que pode se integrar ao Adobe Creative Cloud para ajudar os usuários do DAM a trabalhar junto às equipes criativas, simplificando a colaboração no processo de criação de conteúdo.
+O Adobe Experience Manager Assets é uma solução de gerenciamento de ativos digitais (DAM) que pode se integrar ao Adobe Creative Cloud para ajudar os usuários do DAM a trabalhar em conjunto com equipes criativas, simplificando a colaboração no processo de criação de conteúdo.
 
-A Adobe Creative Cloud fornece às equipes criativas um ecossistema de soluções e serviços para ajudá-las a criar ativos digitais. Ele inclui aplicativos móveis e de desktop, serviços em nuvem como armazenamento com sincronização de desktop ou experiência na Web, além de mercados como o Adobe Stock.
+A Adobe Creative Cloud fornece às equipes criativas um ecossistema de soluções e serviços para ajudá-las a criar ativos digitais. Ele inclui aplicativos móveis e de desktop, serviços em nuvem como armazenamento com sincronização de desktop ou experiência da Web, bem como mercados como o Adobe Stock.
 
-Leia para saber quais integrações devem ser escolhidas entre o desktop e o DAM de nível empresarial com base no seu caso de uso e quais são as práticas recomendadas associadas para os workflows de conexão.
+Leia para saber quais integrações escolher entre o desktop e o DAM de nível empresarial com base no seu caso de uso e quais são as práticas recomendadas associadas para os fluxos de trabalho de conexão.
 
 >[!NOTE]
 >
->O compartilhamento de Experience Manager para Creative Cloud agora está obsoleto e não é mais coberto abaixo. O Adobe recomenda novos recursos como o Adobe Asset Link ou o aplicativo de desktop Experience Manager para fornecer aos usuários criativos acesso aos ativos gerenciados no Experience Manager.
+>O compartilhamento da pasta Experience Manager para Creative Cloud agora está obsoleto e não é mais coberto abaixo. O Adobe recomenda novos recursos, como o Adobe Asset Link ou o aplicativo de desktop Experience Manager, para fornecer aos usuários de criação acesso aos ativos gerenciados no Experience Manager.
 
-## Necessidade de colaboração de criativos, profissionais de marketing e usuários do DAM {#collaboration-need-of-creatives-marketers-and-dam-users}
+## Necessidade de colaboração de criadores, profissionais de marketing e usuários do DAM {#collaboration-need-of-creatives-marketers-and-dam-users}
 
 | Requisitos | Caso de uso | Superfícies envolvidas |
 |---|---|---|
-| Simplifique a experiência para criações no desktop | Simplifique o acesso a ativos de um DAM ([!DNL Assets]) para profissionais criativos, ou de maneira mais ampla, usuários de desktop que trabalham em aplicativos de criação de ativos nativos. Eles precisam de uma maneira fácil e direta de descobrir, usar (abrir), editar e salvar alterações no Experience Manager, bem como fazer upload de novos arquivos. | Desktop Win ou Mac; Creative Cloud apps |
-| Fornecer ativos de alta qualidade e prontos para uso do [!DNL Adobe Stock] | Os profissionais de marketing ajudam a acelerar o processo de criação de conteúdo, auxiliando no fornecimento e descoberta de ativos. Profissionais de criação usam os ativos aprovados diretamente de suas ferramentas criativas. | [!DNL Assets]; [!DNL Adobe Stock] Mercado; campos de metadados |
-| Distribuir e compartilhar ativos por organizações | Os departamentos internos/ramificações locais e parceiros externos, distribuidores e agências usam os ativos aprovados compartilhados pela organização pai. A organização deseja compartilhar com segurança e facilidade os ativos criados para reutilização mais ampla. | [!DNL Brand Portal], [!DNL Asset Share Commons] |
-| Gerar variações predefinidas de ativos carregados automaticamente | Processar automaticamente ativos aproveitando a tecnologia de manipulação e transformação de mídia exclusiva do Adobe para ações predefinidas. Crie uma lógica personalizada para definir suas próprias ações usando APIs e microsserviços de ativos. | [!DNL Assets]Interface |
+| Simplifique a experiência para profissionais criativos no desktop | Simplificar o acesso ao ativo a partir de um DAM ([!DNL Assets]) para profissionais criativos ou, de modo mais amplo, usuários em desktops que trabalham em aplicativos nativos de criação de ativos. Eles precisam de uma maneira fácil e direta de descobrir, usar (abrir), editar e salvar alterações no Experience Manager, bem como fazer upload de novos arquivos. | Desktop Win ou Mac; aplicativos Creative Cloud |
+| Fornecer ativos de alta qualidade e prontos para uso do [!DNL Adobe Stock] | Os profissionais de marketing ajudam a acelerar o processo de criação de conteúdo, auxiliando na origem e descoberta de ativos. Os profissionais criativos usam os ativos aprovados diretamente de suas ferramentas criativas. | [!DNL Assets]; [!DNL Adobe Stock] marketplace, campos de metadados |
+| Distribuir e compartilhar ativos por organizações | Departamentos internos/filiais locais e parceiros externos, distribuidores e agências usam os ativos aprovados compartilhados pela organização principal. A organização deseja compartilhar com segurança e perfeição os ativos criados para reutilização mais ampla. | [!DNL Brand Portal], [!DNL Asset Share Commons] |
+| Gerar automaticamente variações predefinidas de ativos carregados | Processar ativos automaticamente usando a tecnologia exclusiva de manipulação e transformação de mídia do Adobe para ações predefinidas. Crie uma lógica personalizada para definir suas próprias ações usando APIs e microsserviços de ativos. | [!DNL Assets]Interface |
 
-## Ofertas do Adobe para dar suporte à necessidade de colaboração {#adobe-offerings-to-support-the-collaboration-need}
+## ofertas de Adobe para dar suporte à necessidade de colaboração {#adobe-offerings-to-support-the-collaboration-need}
 
-| Proposta de valor para as personas envolvidas | oferta de Adobe | Superfícies envolvidas |
+| Proposta de valor para os perfis envolvidos | oferta de Adobe | Superfícies envolvidas |
 |---|---|---|
-| Usuários criativos descobrem ativos de [!DNL Experience Manager], abra-as e use-as, edite e faça upload das alterações em [!DNL Experience Manager], bem como fazer upload de novos arquivos no [!DNL Experience Manager], sem deixar [!DNL Creative Cloud] aplicativo. | [Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html) | Photoshop, Illustrator e InDesign. |
-| Usuários empresariais simplificam a abertura e o uso de ativos, a edição e o upload de alterações em [!DNL Experience Manager]e fazer upload de novos arquivos no [!DNL Experience Manager] no ambiente de desktop. Eles usam uma integração genérica para abrir qualquer tipo de ativo no aplicativo de desktop nativo, incluindo os não-Adobe. | Aplicativo de desktop do [[!DNL Experience Manager]  ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | Aplicativo de desktop do Experience Manager no desktop Win e Mac |
-| Os profissionais de marketing e usuários empresariais descobrem, visualizam, licenciam e salvam e gerenciam os ativos do Adobe Stock no Experience Manager. Os ativos licenciados e salvos fornecem metadados Adobe Stock selecionados para melhor governança. | [Integração do Experience Manager e Adobe Stock](aem-assets-adobe-stock.md) | [!DNL Experience Manager] interface da Web |
-| Melhore a colaboração entre designers de produtos digitais e profissionais de marketing. Permita que os designers usem os ativos digitais em modelos de design e wireframe na tela do Adobe XD. | [[!DNL Adobe Asset Link]  para  [!DNL Adobe XD]](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link-for-xd.html) | [!DNL Adobe XD] |
-| Os profissionais de marketing podem criar automaticamente variações e derivados com base em ativos carregados e ações predefinidas criadas usando a personalização. Use essa automação para melhorar a velocidade do conteúdo e reduzir o esforço manual. | [Automação de conteúdo](/help/assets/cc-api-integration.md) | [!DNL Experience Manager Assets] interface da Web |
+| Os usuários de criação descobrem ativos do [!DNL Experience Manager], abra e use-os, edite e faça upload de alterações no [!DNL Experience Manager], bem como fazer upload de novos arquivos no [!DNL Experience Manager], sem sair do seu [!DNL Creative Cloud] aplicativo. | [Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html) | Photoshop, Illustrator e InDesign. |
+| Usuários empresariais simplificam a abertura e o uso de ativos, a edição e o upload de alterações no [!DNL Experience Manager]e carregando novos arquivos no [!DNL Experience Manager] do ambiente de desktop. Eles usam uma integração genérica para abrir qualquer tipo de ativo no aplicativo de desktop nativo, incluindo aqueles não-Adobe. | Aplicativo de desktop do [[!DNL Experience Manager]  ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | aplicativo de desktop Experience Manager no desktop Win e Mac |
+| Profissionais de marketing e usuários empresariais descobrem, visualizam, licenciam e salvam e gerenciam os ativos da Adobe Stock no Experience Manager. Os ativos licenciados e salvos fornecem metadados selecionados do Adobe Stock para melhorar o controle. | [Integração de Experience Manager e Adobe Stock](aem-assets-adobe-stock.md) | [!DNL Experience Manager] interface da web |
+| Melhore a colaboração entre designers de produtos digitais e profissionais de marketing. Permita que os designers usem os ativos digitais nos modelos de design e wireframe na tela do Adobe XD. | [[!DNL Adobe Asset Link]  para  [!DNL Adobe XD]](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link-for-xd.html) | [!DNL Adobe XD] |
+| Os profissionais de marketing podem criar variações e derivações automaticamente com base nos ativos carregados e nas ações predefinidas criadas usando a personalização. Use essa automação para melhorar a velocidade do conteúdo e reduzir o esforço manual. | [Automação de conteúdo](/help/assets/cc-api-integration.md) | [!DNL Experience Manager Assets] interface da web |
 
-Este artigo foca principalmente nos dois primeiros aspectos das necessidades de colaboração. A distribuição e o fornecimento de ativos em escala são brevemente mencionadas como um caso de uso. Para essas necessidades, considere o Adobe Brand Portal ou o Asset Share Commons. Soluções alternativas, como [Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html), soluções que podem ser criadas com base em [Compartilhamento de ativos Commons](https://opensource.adobe.com/asset-share-commons/) componentes, [Compartilhamento de links](share-assets.md), usando [Interface do usuário da Web do Experience Manager Assets](/help/assets/manage-digital-assets.md) devem ser revistas com base em requisitos específicos.
+Este artigo foca principalmente nos dois primeiros aspectos das necessidades de colaboração. A distribuição e o fornecimento de ativos em escala são brevemente mencionadas como um caso de uso. Para essas necessidades, considere o Adobe Brand Portal ou o Asset Share Commons. Soluções alternativas, como [Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html), soluções que podem ser criadas com base em [Asset Share Commons](https://opensource.adobe.com/asset-share-commons/) componentes, [Compartilhamento de link](share-assets.md), utilizando [Interface do usuário da Web do Experience Manager Assets](/help/assets/manage-digital-assets.md) deve ser revista com base em requisitos específicos.
 
-![Conexões Creative Cloud para Experience Manager: Decidir qual recurso usar](assets/creative-connections-aem.png)
+![Conexões Creative Cloud para Experience Manager: decisão sobre qual capacidade usar](assets/creative-connections-aem.png)
 
 Decisão sobre qual recurso usar
 
@@ -59,18 +59,18 @@ Decisão sobre qual recurso usar
 
 | Caso de uso | Adobe Asset Link | Aplicativo de desktop do Experience Manager | Observações ou métodos alternativos |
 |----------------------------------------------------------|-----------------------------------------------------------------------------------|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| Discover - procurar pastas | Sim | Experience Manager Web UI + ações da área de trabalho | Ao navegar pelo compartilhamento de rede, desative as miniaturas para evitar o download de arquivos binários de ativos. |
-| Discover - acessar coleções | Sim | Experience Manager Web UI + ações da área de trabalho |  |
-| Discover - procurar ativos | Sim | Experience Manager Web UI + ações da área de trabalho |  |
-| Usar - abrir ativo | Sim | Sim - para qualquer aplicativo | [Abrir da interface da Web](/help/assets/manage-digital-assets.md#previewing-assets) ou do Finder |
-| Usar - coloque o ativo do Experience Manager em um documento | Sim - incorporação | Sim - vinculação ou incorporação | O aplicativo de desktop do Experience Manager dá acesso a ativos como arquivos no sistema de arquivos local. Esses links nos aplicativos nativos são representados por caminhos locais. |
-| Editar - abrir para edição | Sim - Ação de check-out | Sim - Abrir ação (no compartilhamento de rede) | [Check-out no AAL](https://helpx.adobe.com/br/enterprise/using/manage-assets-using-adobe-asset-link.html) salva o ativo na conta de armazenamento da creative cloud do usuário (sincronizada pelo aplicativo do Creative Cloud) por padrão. |
-| Editar - trabalho em andamento fora do Experience Manager | Sim - Ativo disponível na conta de armazenamento de Creative Cloud do usuário sincronizada com o desktop. | Sim |  |
+| Descobrir - procurar pastas | Sim | UI da Web do Experience Manager + ações do desktop | Ao navegar pelo compartilhamento de rede, desative as miniaturas para evitar o download de arquivos binários de ativos. |
+| Descobrir - acessar coleções | Sim | UI da Web do Experience Manager + ações do desktop |  |
+| Discover - pesquisar ativos | Sim | UI da Web do Experience Manager + ações do desktop |  |
+| Usar - abrir ativo | Sim | Sim - para qualquer aplicativo | [Abrir da interface da Web](/help/assets/manage-digital-assets.md#previewing-assets) ou do Localizador |
+| Uso - colocar ativo do Experience Manager em um documento | Sim - incorporação | Sim - vinculação ou incorporação | O aplicativo de desktop do Experience Manager dá acesso aos ativos como arquivos no sistema de arquivos local. Esses links nos aplicativos nativos são representados por caminhos locais. |
+| Editar - abrir para edição | Sim - Ação de check-out | Sim - Abrir ação (no compartilhamento de rede) | [Check-out no AAL](https://helpx.adobe.com/br/enterprise/using/manage-assets-using-adobe-asset-link.html) salva o ativo na conta de armazenamento da creative cloud do usuário (sincronizada pelo aplicativo Creative Cloud) por padrão. |
+| Editar - trabalho em andamento fora do Experience Manager | Sim - ativo disponível na conta de armazenamento Creative Cloud do usuário sincronizado com o desktop. | Sim |  |
 | Editar - fazer upload de alterações | Sim - [Ação de check-in](https://helpx.adobe.com/br/enterprise/using/manage-assets-using-adobe-asset-link.html) com comentário opcional | Sim |  |
-| Upload - arquivo único | Sim - carrega o documento ativo atual | Sim | [Fazer upload por meio da interface da Web](/help/assets/manage-digital-assets.md#uploading-assets) |
-| Upload - vários arquivos / estruturas hierárquicas de pastas | Não | Sim | [Fazer upload por meio da interface da Web](/help/assets/manage-digital-assets.md#uploading-assets); Ferramenta ou script personalizado |
-| Misc - usuário e logon | O usuário Creative Cloud conectado ao aplicativo de desktop Creative Cloud é reconhecido (SSO) | Usuário do Experience Manager / login | Os usuários de ambas as soluções contam com a cota de usuários do Experience Manager. |
-| Misc - rede e acesso | Requer acesso da área de trabalho do usuário à implantação do Experience Manager através da rede | Requer acesso da área de trabalho do usuário à implantação do Experience Manager através da rede | O Adobe Asset Link não compartilha o ambiente proxy de rede. |
+| Upload - único arquivo | Sim - carrega o documento ativo atual | Sim | [Fazer upload via interface da Web](/help/assets/manage-digital-assets.md#uploading-assets) |
+| Upload - vários arquivos/estruturas de pastas hierárquicas | Não | Sim | [Fazer upload via interface da Web](/help/assets/manage-digital-assets.md#uploading-assets); Criação de script ou ferramenta personalizada |
+| Diversos - usuário e logon | O usuário do Creative Cloud conectado ao aplicativo de desktop do Creative Cloud é reconhecido (SSO) | Experience Manager user / login | Os usuários de ambas as soluções são contabilizados em relação à cota de usuários Experience Manager. |
+| Diversos - rede e acesso | Requer acesso do desktop do usuário à implantação de Experience Manager pela rede | Requer acesso do desktop do usuário à implantação de Experience Manager pela rede | O Adobe Asset Link não compartilha o ambiente proxy de rede. |
 
 
 <!-- Removing this row from table as migration guide is not yet final.
@@ -79,11 +79,11 @@ Decisão sobre qual recurso usar
 
 Para suportar casos de uso de distribuição de ativos, considere as seguintes opções:
 
-* [Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) para um complemento configurável para publicar ativos.
+* [Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) para obter um complemento configurável do Assets para publicar ativos.
 
-* As soluções personalizadas são criadas com base em [Compartilhamento de ativos Commons](https://opensource.adobe.com/asset-share-commons/) base de código.
+* As soluções personalizadas são criadas com base em [Asset Share Commons](https://opensource.adobe.com/asset-share-commons/) base de código.
 * Experience Manager [compartilhamento de link](/help/assets/share-assets.md) para compartilhar ativos ad hoc usando links.
-* [Interface da Web de ativos](/help/assets/manage-digital-assets.md) com áreas para terceiros externos seguras pela configuração de Controle de acesso do Experience Manager e com ajustes necessários de configuração de TI/rede, dando a esses usuários externos acesso ao Experience Manager.
+* [Interface da Web do Assets](/help/assets/manage-digital-assets.md) com áreas para terceiros protegidas pela configuração do Controle de acesso de Experience Manager e com os ajustes necessários de configuração de TI/rede, dando a esses usuários externos acesso ao Experience Manager.
 
 ## Principais conceitos e casos de uso {#key-concepts-and-use-cases}
 
@@ -101,7 +101,7 @@ Para suportar casos de uso de distribuição de ativos, considere as seguintes o
 * **Usuário criativo**: um profissional criativo, que cria ativos digitais usando aplicativos e serviços da Creative Cloud. Em alguns casos, um usuário criativo pode ser membro de uma equipe criativa que pode usar a Creative Cloud, mas não cria ativos digitais (como um diretor criativo ou gerente de equipe criativa).
 * **Usuário do DAM:** um usuário típico de um sistema DAM. Dependendo da organização, um usuário do DAM pode ser um usuário de marketing ou não, por exemplo, um usuário de Linha de Negócios (LOB), um bibliotecário, um vendedor e assim por diante.
 
-### Considerações ao usar a integração Experience Manager e Creative Cloud {#considerations-when-using-aem-and-creative-cloud-integration}
+### Considerações sobre o uso da integração de Experience Manager e Creative Cloud {#considerations-when-using-aem-and-creative-cloud-integration}
 
 <!--incomplete and TBD: 
 
@@ -112,127 +112,127 @@ Para suportar casos de uso de distribuição de ativos, considere as seguintes o
 
 -->
 
-Este é um breve resumo das práticas recomendadas para a integração de Experience Manager e Creative Cloud. Leia o resto deste documento para obter a compreensão detalhada sobre eles.
+Este é um breve resumo das práticas recomendadas para a integração de Experience Manager e Creative Cloud. Leia o restante deste documento para obter a compreensão detalhada desses itens.
 
-* **Para usuários criativos, que trabalham no Photoshop, InDesign ou Illustrator:** O Adobe Asset Link fornece a melhor experiência do usuário, incluindo a manipulação limpa do Trabalho em andamento em ativos com check-out do Experience Manager
+* **Para usuários criativos, que trabalham no Photoshop, InDesign ou Illustrator:** O Adobe Asset Link fornece a melhor experiência ao usuário, incluindo o tratamento limpo do Trabalho em andamento em ativos tirados do Experience Manager
 * **Para simplificar o acesso a ativos do desktop para qualquer formato de arquivo ou aplicativo genérico:** usar o aplicativo de desktop do Experience Manager
 * **Entenda por que e quando armazenar ativos no DAM:** atualizações a serem disponibilizadas para a equipe maior em sua organização
 * **Considere o volume de ativos compartilhados:** se o caso de uso for a distribuição de ativos, a governança e a segurança podem ser os aspectos mais importantes. Considere usar ferramentas criadas para fazer isso em escala, como o Brand Portal.
 * **Entenda o ciclo de vida do ativo:** saiba como os ativos são manipulados em sua organização por equipes diferentes
 * **Lidar com salvamentos frequentes em ativos com cuidado:** o Adobe Asset Link cuida disso para você com PS, AI, ID. Em outros aplicativos, não realize tarefas em andamento na pasta mapeada/compartilhada, a menos que precise de todas as alterações no DAM
 
-### Acesso aos ativos do Adobe Stock da Experience Manager Assets {#access-to-adobe-stock-assets-from-aem-assets}
+### Acesso aos ativos do Adobe Stock pelo Experience Manager Assets {#access-to-adobe-stock-assets-from-aem-assets}
 
-[Integração do Experience Manager e Adobe Stock](/help/assets/aem-assets-adobe-stock.md) O fornece aos usuários do Experience Manager a capacidade de pesquisar, visualizar, licenciar e salvar ativos da Adobe Stock no Experience Manager. Os ativos licenciados e salvos do Adobe Stock selecionaram metadados de Estoque, que podem ser usados para pesquisá-los com filtros extras.
+[Integração de Experience Manager e Adobe Stock](/help/assets/aem-assets-adobe-stock.md) O fornece aos usuários do Experience Manager a capacidade de pesquisar, visualizar, licenciar e salvar ativos do Adobe Stock no Experience Manager. Os ativos licenciados e salvos do Adobe Stock selecionaram metadados do Stock, que podem ser usados para pesquisá-los com filtros extras.
 
 Alguns pontos importantes sobre essa integração:
 
-* Quando os ativos do Adobe stock são salvos no Experience Manager, eles se tornam um Experience Manager Assets comum, com o binário salvo no repositório do Experience Manager. Alguns metadados relacionados ao Adobe Stock são salvos para o ativo no Experience Manager, caso contrário, o processo de assimilação será igual ao de qualquer outro arquivo. Por exemplo, se as Tags inteligentes estiverem ativas, as tags serão adicionadas a esses ativos ao salvar.
-* O ativo salvo no Experience Manager é uma cópia, não um link de volta para o Adobe Stock.
+* Quando os ativos do estoque de Adobe são salvos em Experience Manager, eles se tornam um Experience Manager Assets comum, com o binário salvo no repositório de Experience Manager. Alguns metadados relacionados ao Adobe Stock são salvos para o ativo no Experience Manager, caso contrário, o processo de assimilação é igual ao de qualquer outro arquivo. Por exemplo, se as Tags inteligentes estiverem ativas, as tags serão adicionadas a esses ativos ao salvar.
+* O ativo salvo no Experience Manager é uma cópia, não um link de volta no Adobe Stock.
 
-**Trabalhar com ativos salvos do Adobe Stock no Experience Manager no Creative Cloud**. Essa integração é independente do Adobe Asset Link, mas o Adobe Asset Link reconhece esses ativos salvos do Stock dessa forma e exibe metadados adicionais e ícone de Estoque nesses ativos na interface do usuário da extensão Adobe Asset Link no Photoshop, Illustrator ou InDesign. Os arquivos estão disponíveis para navegação, abertura e assim por diante, porque são ativos Experience Manager comuns quando salvos no Experience Manager.
-Usuários criativos que trabalham em aplicativos Creative Cloud com extensão Adobe Asset Link presentes, além de terem acesso a ativos já licenciados do Adobe Stock no Experience Manager, também podem usar o painel Bibliotecas Creative Cloud para pesquisar, visualizar e licenciar ativos da Adobe Stock.
-Os ativos da Adobe Stock licenciados e salvos no Experience Manager tornam-se disponíveis para as equipes mais amplas que acessam a implantação do Experience Manager Assets, enquanto os ativos de licenciamento da Adobe Stock por meio do painel Creative Cloud Bibliotecas os os disponibilizam somente para si por padrão em sua conta Creative Cloud.
+**Trabalhar com ativos salvos do Adobe Stock no Experience Manager no Creative Cloud**. Essa integração não depende do Adobe Asset Link, mas o Adobe Asset Link reconhece esses ativos salvos do Stock dessa maneira e exibe metadados adicionais e ícone do Stock nesses ativos na interface de extensão do Adobe Asset Link no Photoshop, Illustrator ou InDesign. Os arquivos estão disponíveis para navegação, abertura e assim por diante, pois são ativos de Experience Manager comuns quando salvos em Experience Manager.
+Os usuários criativos que trabalham em aplicativos Creative Cloud com a extensão Adobe Asset Link presentes, além de terem acesso a ativos já licenciados do Adobe Stock para o Experience Manager, também podem usar o painel Bibliotecas do Creative Cloud para pesquisar, visualizar e licenciar ativos do Adobe Stock.
+Os ativos da Adobe Stock licenciados e salvos no Experience Manager ficam disponíveis para as equipes mais amplas que acessam a implantação do Experience Manager Assets, enquanto os ativos de licenciamento criados da Adobe Stock por meio do painel Bibliotecas do Creative Cloud os tornam disponíveis para si mesmos somente por padrão em sua conta Creative Cloud.
 
 ## Sobre o armazenamento de ativos em um DAM {#about-storing-assets-in-a-dam}
 
-Para projetar um fluxo de trabalho eficiente entre equipes de criação e de marketing/linha de negócios (LOB) e escolher os melhores recursos de suporte, é importante entender quando e por que os ativos são armazenados no DAM.
+Para projetar um fluxo de trabalho eficiente entre as equipes de criação e marketing/linha de negócios (LOB) e escolher os melhores recursos de suporte, é importante entender quando e por que os ativos são armazenados no DAM.
 
 ### Por que os ativos são armazenados no DAM {#why-assets-are-stored-in-dam}
 
-Armazenar ativos no DAM os torna facilmente acessíveis e acessíveis. Ela garante que os ativos possam ser aproveitados por vários usuários na organização ou no ecossistema, o que inclui parceiros, clientes e assim por diante.
+Armazenar ativos no DAM facilita o acesso e a localização. Ele garante que os ativos possam ser aproveitados por vários usuários em toda a organização ou ecossistema, o que inclui parceiros, clientes e assim por diante.
 
-A maioria das organizações opta por armazenar apenas ativos relevantes para os processos de marketing/LOB de downstream (publicação em canais como canal da Web pelo Experience Manager Sites ou outros canais fornecidos pelo Adobe Experience Cloud - Marketing Cloud, Advertising Cloud e medidos pelo Analytics Cloud, fornecendo a usuários/parceiros e assim por diante). Além disso, as organizações armazenam ativos que podem estar sujeitos a um processo de revisão/aprovação no DAM. Dessa forma, o DAM armazena principalmente ativos que têm altas chances de serem aproveitados e evita o armazenamento de ativos inativos.
+A maioria das organizações opta por armazenar somente ativos que sejam relevantes para os processos de marketing/LOB de downstream (publicação em canais como o canal da Web por meio do Experience Manager Sites ou outros canais atendidos pela Adobe Experience Cloud — Marketing Cloud, Advertising Cloud e medidos pela Analytics Cloud, fornecimento para usuários/parceiros etc.). Além disso, as organizações armazenam ativos que podem estar sujeitos a um processo de revisão/aprovação no DAM. Dessa forma, o DAM armazena principalmente ativos que têm altas chances de serem aproveitados e evita o armazenamento de ativos ociosos.
 
 O armazenamento de ativos também está sujeito a considerações técnicas e de utilização de recursos. O DAM fornece serviços adicionais sobre ativos armazenados, incluindo extração de metadados, controle de versão, geração de visualizações/transcodificação, gerenciamento de referências e adição de informações de controle de acesso. Esses serviços consomem mais tempo e recursos de infraestrutura.
 
-Geralmente, o armazenamento de todos os ativos e atualizações não é desejável. Por exemplo, se as atualizações de ativos específicos forem de baixa qualidade e consumirem recursos excessivos, os ativos podem não ser armazenados no DAM.
+Geralmente, armazenar todos os ativos e atualizações não é desejável. Por exemplo, se as atualizações de ativos específicos forem de baixa qualidade e consumirem recursos excessivos, os ativos podem não ser armazenados no DAM.
 
 #### Quando os ativos são armazenados no DAM {#when-assets-are-stored-in-dam}
 
-Geralmente, as equipes criativas (e organizações) não estão interessadas em armazenar ativos em cada estágio do ciclo de vida do ativo. Por exemplo, eles evitam armazenar ativos nos seguintes casos:
+As equipes de criação (e organizações) geralmente não estão interessadas em armazenar ativos em cada estágio do ciclo de vida do ativo. Por exemplo, eles evitam armazenar ativos nos seguintes casos:
 
 * Ativos que ainda não foram finalizados ou estão sujeitos a experimentação
-* Ativos que não passam no ciclo de análise do criativo/da equipe interna
-* Em comparação com o ativo em questão, a equipe tem melhores candidatos para representar seu trabalho para equipes externas
+* Ativos que não passam no ciclo de revisão criativa/interna da equipe
+* Em comparação ao ativo em questão, a equipe tem melhores candidatos para representar seu trabalho para equipes externas
 
-Normalmente, os seguintes ativos de classes são armazenados no DAM:
+Normalmente, as seguintes classes de ativos são armazenadas no DAM:
 
-* Ativos que atingiram um determinado prazo e são considerados prontos para serem partilhados
-* Ativos pré-selecionados pela equipe criativa
-* Formatos de ativos específicos que podem ser usados ou solicitados pelo marketing, dependendo de um contrato ou contrato específico (por exemplo, arquivos JPG convertidos de arquivos RAW, TIFF/imagens de originais do PSD)
+* Ativos que atingiram um determinado vencimento e são considerados prontos para serem compartilhados
+* Ativos que foram pré-selecionados pela equipe criativa
+* Formatos de ativos específicos que podem ser usados ou solicitados pelo marketing, dependendo de um contrato ou contrato específico (por exemplo, arquivos JPG convertidos de arquivos RAW, TIFF/imagens de originais PSD)
 
 #### Quando as atualizações de ativos são armazenadas no DAM {#when-updates-to-assets-are-stored-in-dam}
 
-Como regra, somente as atualizações de ativos relevantes para o conjunto mais amplo de usuários do DAM devem ser armazenadas no DAM. Isso garante que os usuários (marketing e funções semelhantes) visualizem apenas as versões relevantes na linha do tempo do ativo do DAM.
+Como regra, somente as atualizações de ativos que são relevantes para o conjunto mais amplo de usuários do DAM devem ser armazenadas no DAM. Ele garante que os usuários (marketing e funções semelhantes) vejam apenas as versões relevantes na linha do tempo do ativo DAM.
 
-Normalmente, as alterações estão relacionadas aos marcos principais no ciclo de vida do ativo. Por exemplo, o ativo pronto para marketing ou uma atualização oficial com base na solicitação/revisão fornecida pela equipe criativa deve ser armazenado e ter controle de versão no DAM.
+Normalmente, alterações relacionadas aos principais marcos no ciclo de vida do ativo. Por exemplo, o ativo pronto para marketing inicial ou uma atualização oficial com base na solicitação/revisão fornecida pela equipe criativa deve ser armazenado e ter a versão atualizada no DAM.
 
-A atualização da equipe criativa para revisão pela equipe de marketing após uma solicitação de alteração do ativo existente no DAM é um exemplo de uma atualização relevante. Ele deve ser armazenado e ter controle de versão no DAM para referência adicional ou para reverter para a versão anterior.
+A atualização da equipe criativa para análise pela equipe de marketing após uma solicitação de alteração no ativo existente no DAM é um exemplo de atualização relevante. Ele deve ser armazenado e ter sua versão atualizada no DAM para referência adicional ou para reverter para a versão anterior.
 
-A seguir estão exemplos de atualizações que normalmente não são relevantes:
+Veja a seguir exemplos de atualizações que normalmente não são relevantes:
 
-* Versões anteriores de ativos carregados antes de estarem prontos para análise de marketing
-* Alterações criativas frequentes no ativo na fase de trabalho em andamento antes que as equipes criativas e de marketing decidam que o ativo está pronto
+* Versões anteriores de ativos carregados antes de estarem prontos para revisão de marketing
+* Alterações criativas frequentes no ativo na fase de trabalho em andamento antes que as equipes de criação e marketing decidam que o ativo está pronto
 
 ### Acesso do usuário ao DAM {#user-access-to-dam}
 
-O Experience Manager Assets oferece suporte a dois tipos de usuários com base no acesso à implantação do Experience Manager Assets. Normalmente, os usuários dentro da rede corporativa (firewall) têm acesso direto ao DAM. Outros utilizadores fora da rede empresarial não teriam acesso direto. O tipo de usuário determina quais integrações podem ser usadas do ponto de vista técnico.
+O Experience Manager Assets oferece suporte a dois tipos de usuários com base em seu acesso à implantação do Experience Manager Assets. Normalmente, os usuários dentro da rede corporativa (firewall) têm acesso direto ao DAM. Outros usuários fora da rede corporativa não teriam acesso direto. O tipo de usuário determina quais integrações podem ser usadas do ponto de vista técnico.
 
-#### Usuários criativos com acesso direto ao DAM {#creative-users-with-direct-access-to-dam}
+#### Usuários de criação com acesso direto ao DAM {#creative-users-with-direct-access-to-dam}
 
-Normalmente, as equipes criativas internas ou os profissionais de criação/integrados à rede interna têm acesso à instância do DAM, incluindo o logon no Experience Manager. A infraestrutura de Experience Manager e rede pode ser configurada para permitir o acesso direto a partes externas - geralmente organizações confiáveis, como agências que trabalham para um cliente - para ter acesso ao Experience Manager pela rede, por exemplo, via VPN ou lista de permissões IP.
+Normalmente, as equipes de criação internas ou as agências/profissionais de criação integrados à rede interna têm acesso à instância do DAM, incluindo logon em Experience Manager. A infraestrutura de Experience Manager e de rede pode ser configurada para permitir o acesso direto a terceiros - geralmente organizações confiáveis, como agências que trabalham para um cliente - para ter acesso ao Experience Manager pela rede, por exemplo, via VPN ou lista de permissões IP.
 
-Nesses casos, o Adobe Asset Link ou o aplicativo de desktop Experience Manager fornece acesso fácil a ativos finais/aprovados e permite salvar ativos prontos para criação no DAM.
+Nesses casos, o Adobe Asset Link ou o aplicativo de desktop Experience Manager fornece acesso fácil aos ativos finais/aprovados e permite salvar ativos prontos para criação no DAM.
 
-#### Usuários criativos sem acesso ao DAM {#creative-users-without-access-to-dam}
+#### Usuários de criação sem acesso ao DAM {#creative-users-without-access-to-dam}
 
-Agências externas e independentes sem acesso direto à instância do DAM podem exigir acesso a ativos aprovados ou desejar adicionar seus novos designs ao DAM.
+Agências externas e freelancers sem acesso direto à instância do DAM podem exigir acesso a ativos aprovados ou adicionar seus novos designs ao DAM.
 
-Use as seguintes estratégias para fornecer acesso a ativos finais/aprovados:
+Use as seguintes estratégias para fornecer acesso aos ativos finais/aprovados:
 
 * Use o aplicativo de desktop se o Asset Link não funcionar.
-* Use [Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) para distribuir ativos com segurança para parceiros externos
-* Usar uma implementação personalizada de um portal de distribuição e fornecimento com base em [Compartilhamento de ativos Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
-* Use o Controle de Acesso configurado no Experience Manager e a infraestrutura de rede necessária (por exemplo, lista de permissões de VPN e IP) para conceder a terceiros acesso a uma área dedicada de conteúdo no DAM. Eles podem usar a interface do usuário da Web do Experience Manager para obter ativos e carregar novo conteúdo no DAM.
+* Uso [Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) para distribuir ativos com segurança a parceiros externos
+* Usar uma implementação personalizada de um portal de distribuição e fornecimento com base em [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
+* Use o Controle de acesso configurado no Experience Manager e a infraestrutura de rede necessária (por exemplo, VPN e lista de permissões de IP) para conceder a terceiros acesso a uma área dedicada de conteúdo em seu DAM. Eles podem usar a interface da Web do Experience Manager para obter ativos e fazer upload de novo conteúdo para o seu DAM.
 
 #### Trabalho em andamento em ativos do Experience Manager {#work-in-progress-on-assets-from-aem}
 
-Conforme discutido neste documento, é recomendável realizar atualizações importantes em ativos, às vezes chamados de trabalho em andamento, sem ter todas as edições salvas no arquivo local também carregadas no Experience Manager como alterações. Isso acelera o trabalho de um usuário de desktop, limita a largura de banda da rede usada e mantém a linha do tempo dos ativos limpa e focada em atualizações importantes e controladas.
+Conforme discutido neste documento, é recomendável realizar grandes atualizações nos ativos, às vezes chamadas de trabalho em andamento, sem que todas as edições salvas no arquivo local também sejam carregadas no Experience Manager como alterações. Isso acelera o trabalho de um usuário de desktop, limita a largura de banda de rede usada e mantém a linha do tempo dos ativos limpa e concentrada em atualizações importantes e controladas.
 
 O Adobe Asset Link oferece um bom suporte para este caso de uso:
 
-* Quando os usuários do Photoshop, InDesign ou Illustrator pretendem editar um arquivo, eles executam uma operação de Check-out no ativo em questão
-* O ativo é baixado em segundo plano, colocado na conta do Creative Cloud de usuários sincronizada ao disco pelo aplicativo de desktop do Creative Cloud e o sinalizador de check-out é alternado no Experience Manager no ativo para minimizar conflitos de edição
+* Quando os usuários no Photoshop, InDesign ou Illustrator pretendem editar um arquivo, eles executam uma operação de Check-out no ativo especificado
+* O ativo é baixado em segundo plano, é colocado na conta de Creative Cloud dos usuários sincronizada ao disco pelo aplicativo de desktop Creative Cloud, e o sinalizador de check-out é alternado para Experience Manager no ativo para minimizar os conflitos de edição
 * A partir daí, o usuário trabalha em um arquivo armazenado localmente no local sincronizado e pode continuar trabalhando e salvando as alterações necessárias a qualquer frequência necessária
-* Além disso, como o ativo está na conta do Creative Cloud, ele também está disponível em outros dispositivos que o usuário pode ter (por exemplo, pode ser aberto ou editado em um aplicativo móvel Creative Cloud dedicado) e pode ser compartilhado com outros usuários do Creative Cloud para fins de colaboração.
-* Quando o usuário criativo terminar com as alterações, ele poderá executar uma operação de Check-in nesse arquivo em seu aplicativo Creative Cloud, com um comentário opcional. Os ativos correspondentes no Experience Manager têm controle de versão e são atualizados para com o novo binário. Usuários do Experience Manager como profissionais de marketing ou LOB têm acesso a grandes alterações de ativos ou marcos, por meio da interface do usuário da linha do tempo do ativo do Experience Manager.
+* Além disso, como o ativo está na conta Creative Cloud, ele também está disponível em outros dispositivos que o usuário pode ter (por exemplo, pode ser aberto ou editado em um aplicativo móvel Creative Cloud dedicado) e pode ser compartilhado com outros usuários Creative Cloud para fins de colaboração.
+* Quando o usuário criativo conclui as alterações, ele pode executar uma operação de Check-in nesse arquivo no aplicativo Creative Cloud com um comentário opcional. O ativo correspondente no Experience Manager recebe a versão e é atualizado para com o novo binário. Usuários do Experience Manager, como profissionais de marketing ou usuários de LOB, têm acesso a grandes alterações de ativos, ou marcos, por meio da interface do usuário da linha do tempo dos ativos do Experience Manager.
 
-O aplicativo de desktop do Experience Manager fornece um compartilhamento de rede para ativos abertos no aplicativo nativo. Por padrão, todas as alterações feitas localmente são carregadas automaticamente no Experience Manager após algum tempo. Com tal configuração, salvamentos frequentes durante a fase de trabalho em andamento seriam todos enviados para Experience Manager e versões, criando muito tráfego de rede e possíveis desafios de escalabilidade - para não mencionar versões desnecessárias no Experience Manager.
+o aplicativo de desktop do Experience Manager fornece um compartilhamento de rede para ativos abertos no aplicativo nativo. Por padrão, todas as alterações feitas localmente são carregadas no Experience Manager automaticamente após um breve período. Com essa configuração, salvamentos frequentes durante a fase de trabalho em andamento seriam carregados no Experience Manager e teriam suas versões alteradas, criando muito tráfego de rede e possíveis desafios de escalabilidade, sem mencionar as versões desnecessárias no Experience Manager.
 
-A abordagem recomendada aqui é usar uma opção no aplicativo de desktop do Experience Manager para desativar atualizações automatizadas e fazer upload manual de alterações em ativos para o Experience Manager, aproveitando a ação de upload de alterações na interface do usuário de status de ativos do aplicativo.
+A abordagem recomendada aqui é usar uma opção no aplicativo de desktop Experience Manager para desativar atualizações automatizadas e fazer upload de alterações em ativos para o Experience Manager manualmente, aproveitando a ação fazer upload de alterações na interface do usuário de status do ativo do aplicativo.
 
-#### Upload em massa no DAM {#bulk-upload-to-dam}
+#### Upload em massa para DAM {#bulk-upload-to-dam}
 
-Você pode ter um requisito para fazer upload simultâneo de um número maior de arquivos no DAM em alguns cenários, por exemplo:
+Você pode ter um requisito para carregar simultaneamente um número maior de arquivos no DAM em alguns cenários, por exemplo:
 
-* Upload de resultados de sessão fotográfica ou projetos maiores
-* Upload de ativos fornecidos por agências criativas
-* Fazer upload dos ativos selecionados de um conjunto maior se a seleção for feita fora do DAM
+* Carregamento de resultados de sessão de fotos para projetos maiores
+* Upload de ativos fornecidos por agências de criação
+* Fazer upload de ativos selecionados de um conjunto maior se a seleção for feita fora do DAM
 
-Observe que esta descrição se refere ao upload de arquivos operacionalmente (por exemplo, toda semana ou com cada sessão fotográfica ), como uma parte normal do fluxo de trabalho do usuário do desktop. As migrações de ativos grandes não são contempladas aqui.
+Observe que essa descrição se refere ao upload de arquivos operacionalmente (por exemplo, toda semana ou com cada sessão de fotos ), como uma parte normal do fluxo de trabalho do usuário do desktop. As migrações de ativos grandes não são contempladas aqui.
 
 Você pode aproveitar os seguintes recursos de upload:
 
-* Para fazer upload de pastas grandes/hierárquicas em massa, use o aplicativo de desktop do Experience Manager que fornece [upload de pasta](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#bulk-upload-assets) funcionalidade. Também é possível fazer upload de estruturas hierárquicas de pastas. Os ativos são carregados em segundo plano e, portanto, não estão vinculados a uma sessão do navegador da Web
-* Para carregar alguns arquivos de uma única pasta, arraste os arquivos diretamente para a interface da Web ou use a opção Criar na interface da Web do Experience Manager Assets.
-* Dependendo dos requisitos de sua empresa, você também pode usar o carregador personalizado.
+* Para fazer upload de pastas grandes/hierárquicas em massa, use o aplicativo de desktop do Experience Manager que fornece [upload de pasta](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#bulk-upload-assets) funcionalidade. Também é possível fazer upload de estruturas hierárquicas de pastas. O upload dos ativos é feito em segundo plano e, portanto, não está vinculado a uma sessão do navegador da Web
+* Para fazer upload de alguns arquivos de uma única pasta, arraste os arquivos diretamente para a interface da Web ou use a opção Criar na interface da Web do Experience Manager Assets.
+* Dependendo das necessidades da sua empresa, também é possível usar o carregador personalizado.
 
 #### Gerenciamento de ativos digitais diretamente do desktop {#managing-digital-assets-directly-from-desktop}
 
-Se você usar os Compartilhamentos de arquivos de rede para gerenciar ativos digitais, o uso do compartilhamento de rede mapeado pelo aplicativo de desktop do Experience Manager pode ser visto como um substituto conveniente. Ao fazer a transição dos compartilhamentos de arquivos de rede, a interface da Web do Experience Manager fornece um conjunto avançado de recursos de Gerenciamento de ativos digitais que vai muito além do que é possível em um compartilhamento de rede (pesquisa, coleções, metadados, colaboração, visualizações e assim por diante), e o aplicativo de desktop do Experience Manager fornece um link útil para conectar o repositório DAM do lado do servidor com o trabalho no desktop.
+Se você usa compartilhamentos de arquivos de rede para gerenciar ativos digitais, usar o compartilhamento de rede mapeado pelo aplicativo de desktop Experience Manager pode ser visto como um substituto conveniente. Ao fazer a transição de compartilhamentos de arquivos de rede, a interface da Web do Experience Manager fornece um conjunto avançado de recursos de Gerenciamento de ativos digitais que vão muito além do que é possível em um compartilhamento de rede (pesquisa, coleções, metadados, colaboração, visualizações e assim por diante) e o aplicativo para desktop do Experience Manager fornece um link útil para conectar o repositório DAM do lado do servidor com o trabalho no desktop.
 
-Evite usar o aplicativo de desktop do Experience Manager para gerenciar ativos diretamente no compartilhamento de rede do Experience Manager Assets. Por exemplo, evite usar o aplicativo de desktop do Experience Manager para mover/copiar vários arquivos. Em vez disso, use a interface do usuário da Web do Experience Manager Assets para arrastar as pastas do Localizador/Explorer para o compartilhamento de rede ou usar o recurso de Upload de pasta do Experience Manager Assets.
+Evite usar o aplicativo de desktop do Experience Manager para gerenciar ativos diretamente no compartilhamento de rede do Experience Manager Assets. Por exemplo, evite usar o aplicativo de desktop Experience Manager para mover/copiar vários arquivos. Em vez disso, use a interface da Web do Experience Manager Assets para arrastar as pastas do Finder/Explorer para o compartilhamento de rede ou use o recurso Upload de pasta do Experience Manager Assets.
 
 **Consulte também**
 

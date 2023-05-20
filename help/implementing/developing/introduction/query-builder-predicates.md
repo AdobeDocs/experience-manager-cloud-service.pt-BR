@@ -174,7 +174,7 @@ Este é um predicado somente de filtragem e não pode utilizar um índice de pes
 
 * **`hasPermission`** - privilégios JCR separados por vírgulas que a sessão do usuário atual DEVE TER PARA o nó em questão; por exemplo `jcr:write`, `jcr:modifyAccessControl`
 
-### language {#language}
+### idioma {#language}
 
 Esse predicado encontra páginas AEM em um idioma específico. Isso verifica a propriedade de idioma da página e o caminho da página, que geralmente inclui o idioma ou localidade em uma estrutura de site de nível superior.
 
@@ -233,7 +233,7 @@ Ela suporta a extração de facetas da mesma forma que a [`daterange`](#daterang
 * **`notexpired`** - booleano, `true` para ainda não expirado (data futura ou igual), `false` para expirados (data no passado) (obrigatório)
 * **`property`** - caminho relativo para o `DATE` propriedade a ser verificada (obrigatório)
 
-### path {#path}
+### caminho {#path}
 
 Esse predicado pesquisa em um determinado caminho.
 

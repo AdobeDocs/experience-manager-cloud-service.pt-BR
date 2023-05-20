@@ -47,8 +47,8 @@ Com base na inicialização, o seguinte conjunto de propriedades CSS define o te
 * Borda (tipo, cor, espessura)
 * Cor da fonte
 * Preenchimento
-* Imagem
-* Tamanho da Fonte
+* Margem
+* Tamanho da fonte
 * AlturaDaLinha
 
 Atualmente, as variáveis LESS são definidas apenas para essas propriedades dos vários elementos em um Formulário adaptável.
@@ -1021,7 +1021,7 @@ Essas variáveis influenciam o indicador de rolagem, que é uma seta laranja exi
 
 ## Variáveis específicas do layout da barra de ferramentas fixa para dispositivos móveis {#mobile-fixed-toolbar-layout-specific-variables}
 
-Essas variáveis na tabela a seguir influenciam o layout da barra de ferramentas móvel fixa.
+Essas variáveis na tabela a seguir influenciam o layout da barra de ferramentas fixa móvel.
 
 <table>
  <tbody>

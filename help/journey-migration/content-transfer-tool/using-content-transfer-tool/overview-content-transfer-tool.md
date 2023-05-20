@@ -42,7 +42,7 @@ Existem duas fases associadas à transferência de conteúdo:
    Consulte [Processo de extração na transferência de conteúdo](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) para obter mais detalhes.
 
    >[!NOTE]
-   >O Mapeamento de usuários agora é executado automaticamente como parte da fase de Extração no autor (mas pode, opcionalmente, ser desativado no autor ou ativado na publicação). Consulte [Mapeamento de usuários e migração principal](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) para obter mais detalhes.
+   >O Mapeamento de usuário agora é executado automaticamente como parte da fase de Extração no autor (mas pode, opcionalmente, ser desativado no autor ou ativado na publicação). Consulte [Mapeamento de usuários e migração de entidade de segurança](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) para obter mais detalhes.
 
 1. **Assimilação**: refere-se à assimilação de conteúdo do *conjunto de migração* na instância de destino do Cloud Service.
 
@@ -71,14 +71,14 @@ Na fase de assimilação, para aplicar o conteúdo delta sobre o conteúdo atual
 >title="Expiração de um conjunto de migração"
 >abstract="Saiba mais sobre a expiração de um conjunto de migração."
 
-Todos os conjuntos de migração acabarão por expirar após um período prolongado de inatividade de aproximadamente 90 dias. Depois que os indicadores forem exibidos no cartão do projeto e nas linhas da tabela de tarefas de migração por um período de tempo, o conjunto de migração expirará e seus dados não estarão mais disponíveis. O prazo de validade pode ser facilmente prorrogado, atuando com base no conjunto de migração:
+Todos os conjuntos de migração expiram após um período prolongado de inatividade de aproximadamente 90 dias. Depois que os indicadores forem exibidos no cartão do projeto e nas linhas da tabela de trabalhos de migração por um período, o conjunto de migração expirará e seus dados não estarão mais disponíveis. O tempo de expiração pode ser facilmente estendido atuando sobre a migração definida por:
 
 * editar sua descrição
-* obter a chave de extração
+* obtendo a chave de extração
 * executar uma extração para ele
-* executar uma ingestão com base nela
+* executar uma assimilação a partir dele
 
-A expiração de um conjunto de migração pode ser monitorada na linha Conjunto de migração . Um indicador visual útil de que um conjunto de migração está se aproximando da data de expiração também adicionou o cartão do projeto.
+A expiração de um conjunto de migração pode ser monitorada na linha Conjunto de migração. Um indicador visual útil de que um conjunto de migração está se aproximando da data de expiração também adicionou o cartão do projeto.
 
 ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam29.png)
 

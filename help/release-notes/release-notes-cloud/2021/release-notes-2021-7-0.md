@@ -1,6 +1,6 @@
 ---
-title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2021.7.0.
-description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2021.7.0.
+title: Notas de versão do [!DNL Adobe Experience Manager]  as a Cloud Service 2021.7.0.
+description: Notas de versão do [!DNL Adobe Experience Manager]  as a Cloud Service 2021.7.0.
 exl-id: 848f6a29-2e0f-4976-8ed7-6b7f69408c1b
 source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
 workflow-type: tm+mt

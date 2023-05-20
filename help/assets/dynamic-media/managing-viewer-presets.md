@@ -331,7 +331,7 @@ A tabela a seguir identifica os gestos do visualizador móvel compatíveis com d
    <td><p>Panelas</p> </td>
   </tr>
   <tr>
-   <td><p><strong>Tocar</strong></p> </td>
+   <td><p><strong>Toque</strong></p> </td>
    <td><p>Mostra a janela de imagem suspensa</p> </td>
    <td><p>Mostra ou oculta a interface do usuário</p> </td>
    <td><p>Mostra ou oculta a interface do usuário</p> </td>

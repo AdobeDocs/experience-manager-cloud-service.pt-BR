@@ -35,14 +35,14 @@ Você pode comprar um nome de domínio de um registrador de nomes de domínio, d
 
 ## Nomes de domínio personalizados e CDNs BYO {#byo-cdn}
 
-AEM as a Cloud Service oferece um serviço de rede de entrega de conteúdo (CDN) integrado, mas também permite que você traga sua própria CDN (BYO) para usar com AEM. Os domínios personalizados podem ser instalados no CDN gerenciado pela AEM ou em um CDN gerenciado por você.
+O AEM as a Cloud Service oferece um serviço de rede de entrega de conteúdo (CDN) integrado, mas também permite que você traga seu próprio CDN (BYO) para usar com o AEM. Domínios personalizados podem ser instalados na CDN gerenciada pelo AEM ou em uma CDN gerenciada por você.
 
-* Os nomes de domínio personalizados (e certificados) que são instalados no CDN gerenciado pela AEM são gerenciados pelo Cloud Manager.
-* Os nomes de domínio personalizados (e certificados) que são instalados em seu próprio CDN são gerenciados nesse CDN específico.
+* Os nomes de domínio personalizados (e certificados) instalados na CDN gerenciada pelo AEM são gerenciados por meio do Cloud Manager.
+* Os nomes de domínio personalizados (e certificados) instalados em sua própria CDN são gerenciados nessa CDN específica.
 
-Os domínios gerenciados em seu próprio CDN não precisam ser instalados via Cloud Manager. Eles serão disponibilizados para AEM via X-Forwarded-Host e corresponderão aos vhosts definidos no dispatcher. [Consulte a documentação da CDN para obter mais informações.](/help/implementing/dispatcher/cdn.md)
+Os domínios gerenciados na sua própria CDN não precisam ser instalados por meio do Cloud Manager. Eles serão disponibilizados para AEM via X-Forwarded-Host e corresponderão aos vhosts definidos no dispatcher. [Consulte a documentação da CDN para obter mais informações.](/help/implementing/dispatcher/cdn.md)
 
-Em um ambiente, você pode ter ambos os domínios instalados na CDN gerenciada pela AEM e instalados em sua própria CDN.
+Em um ambiente, você pode ter ambos os domínios instalados na CDN gerenciada pelo AEM e no seu próprio CDN.
 
 ## Fluxo de trabalho {#workflow}
 
@@ -68,10 +68,10 @@ A adição de um nome de domínio personalizado exige interação entre o servi�
 
 Existem várias limitações no uso de nomes de domínio personalizados com o AEMaaCS.
 
-* Os nomes de domínio personalizados são suportados no Cloud Manager para serviços de publicação e visualização de programas do Sites. Não há suporte para domínios personalizados para serviços de criação.
-* Cada ambiente do Cloud Manager pode hospedar até 500 domínios personalizados por ambiente.
-* Nomes de domínio não podem ser adicionados a ambientes enquanto houver um pipeline de execução atual anexado a esses ambientes.
+* Os nomes de domínio personalizados são suportados no Cloud Manager para serviços de publicação e visualização de programas do Sites. Não há suporte para domínios personalizados para serviços de autor.
+* Cada ambiente do Cloud Manager pode hospedar até 500 domínios personalizados.
+* Os nomes de domínio não podem ser adicionados aos ambientes enquanto houver um pipeline em execução anexado a eles.
 * O mesmo nome de domínio não pode ser usado em mais de um ambiente.
 * Somente um nome de domínio pode ser adicionado por vez.
-* AEM as a Cloud Service não oferece suporte a domínios curingas, como `*.example.com`.
-* Antes de adicionar um nome de domínio personalizado, um certificado SSL válido que contenha o nome de domínio personalizado (certificados curingas são válidos) deve ser instalado para o seu programa. Consulte [Adicionar um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) para saber mais.
+* O AEM as a Cloud Service não é compatível com domínios curingas, como `*.example.com`.
+* Antes de adicionar um nome de domínio personalizado, um certificado SSL válido contendo o nome de domínio personalizado (certificados curingas são válidos) deve ser instalado para o seu programa. Consulte [Adicionar um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) para saber mais.

@@ -1,6 +1,6 @@
 ---
 title: A ferramenta de cópia de conteúdo
-description: A ferramenta de cópia de conteúdo permite que os usuários copiem conteúdo mutável sob demanda de seus ambientes de produção AEM as a Cloud Service para ambientes inferiores para fins de teste.
+description: A ferramenta de cópia de conteúdo permite que os usuários copiem conteúdo mutável sob demanda de seus ambientes de produção do AEM as a Cloud Service para ambientes inferiores para fins de teste.
 source-git-commit: 4a5470ae8fe5a8e7f615009bf5f6b180aee4669b
 workflow-type: tm+mt
 source-wordcount: '1212'
@@ -11,13 +11,13 @@ ht-degree: 64%
 
 # A ferramenta de cópia de conteúdo {#content-copy}
 
-A ferramenta de cópia de conteúdo permite que os usuários copiem conteúdo mutável sob demanda de seus ambientes de produção AEM as a Cloud Service para ambientes inferiores para fins de teste.
+A ferramenta de cópia de conteúdo permite que os usuários copiem conteúdo mutável sob demanda de seus ambientes de produção do AEM as a Cloud Service para ambientes inferiores para fins de teste.
 
 ## Introdução {#introduction}
 
-Os dados atuais e reais são valiosos para fins de teste, validação e aceitação do usuário. A ferramenta de cópia de conteúdo permite copiar o conteúdo de um ambiente de AEM de produção para um ambiente de preparo, desenvolvimento ou [Ambiente de desenvolvimento rápido (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) ambiente para esses testes.
+Os dados atuais e reais são valiosos para fins de teste, validação e aceitação do usuário. A ferramenta de cópia de conteúdo permite copiar o conteúdo de um ambiente de produção AEM para um ambiente de preparo, desenvolvimento ou [RDE (Rapid Development Environment, ambiente de desenvolvimento rápido)](/help/implementing/developing/introduction/rapid-development-environments.md) ambiente para esses testes.
 
-O conteúdo a ser copiado é definido por um conjunto de conteúdo. Um conjunto de conteúdo consiste em uma lista de caminhos JCR que contêm o conteúdo mutável a ser copiado de um ambiente de serviço de criação de origem para um ambiente de serviço de criação de público-alvo no mesmo programa do Cloud Manager. Os seguintes caminhos são permitidos em um conjunto de conteúdo.
+O conteúdo a ser copiado é definido por um conjunto de conteúdo. Um conjunto de conteúdo consiste em uma lista de caminhos JCR que contêm o conteúdo mutável a ser copiado de um ambiente de serviço de autoria de origem para um ambiente de serviço de autoria de destino no mesmo programa do Cloud Manager. Os seguintes caminhos são permitidos em um conjunto de conteúdo.
 
 ```text
 /content
@@ -55,7 +55,7 @@ Antes que qualquer conteúdo possa ser copiado, um conjunto de conteúdo deve se
 
    ![Conjuntos de conteúdo](assets/content-sets.png)
 
-1. No **Detalhes** do assistente, forneça um nome e uma descrição para o conjunto de conteúdo e toque ou clique em **Continuar**.
+1. No **Detalhes** do assistente, forneça um nome e uma descrição para o conjunto de conteúdo e toque ou clique **Continuar**.
 
    ![Detalhes do conjunto de conteúdo](assets/add-content-set-details.png)
 
@@ -75,7 +75,7 @@ Antes que qualquer conteúdo possa ser copiado, um conjunto de conteúdo deve se
    1. Toque ou clique em **Excluir caminho**.
    1. Toque ou clique em **Adicionar subcaminhos de exclusão** novamente para adicionar caminhos adicionais a serem excluídos, se necessário.
       * Os caminhos excluídos devem ser relativos ao caminho incluído.
-      * Não há limite no número de caminhos excluídos.
+      * Não há limite para o número de caminhos excluídos.
 
    ![Excluir caminhos](assets/add-content-set-paths-excluded.png)
 
@@ -118,19 +118,19 @@ Depois que um conjunto de conteúdo é criado, você pode usá-lo para copiar co
    >
    >* O usuário não tiver as permissões apropriadas.
    >* O ambiente tiver um pipeline em execução ou uma operação de cópia de conteúdo em andamento.
-   >* O ambiente está hibernando ou iniciando.
+   >* O ambiente está hibernando ou sendo inicializado.
 
 
 1. Na caixa de diálogo **Copiar conteúdo**, especifique a origem e o destino da sua ação de cópia de conteúdo.
 
    ![Copiar conteúdo](assets/copying-content.png)
 
-   * O conteúdo só pode ser copiado de um ambiente mais alto para um ambiente mais baixo ou entre ambientes de desenvolvimento/RDE, onde a hierarquia de ambientes é a seguinte (do mais alto ao mais baixo):
+   * O conteúdo só pode ser copiado de um ambiente superior para um ambiente inferior ou entre ambientes de desenvolvimento/RDE, em que a hierarquia de ambientes é a seguinte (do mais alto para o mais baixo):
       * Produção
       * Estágios
       * Desenvolvimento / RDE
 
-1. Se necessário, também é possível selecionar **Incluir Listas de Controle de Acesso** no processo de cópia.
+1. Se necessário, você também pode optar por **Incluir listas de controle de acesso** no processo de cópia.
 
 1. Toque ou clique em **Copiar**.
 
@@ -163,26 +163,26 @@ Depois de começar a copiar o conteúdo, o processo poderá ter um dos status a 
 
 Se precisar abortar uma operação de cópia de conteúdo após iniciá-la, você terá a opção de cancelá-la.
 
-Para fazer isso, no **Atividade Copiar conteúdo** selecione o **Cancelar** ação do menu reticências do processo de cópia iniciado anteriormente.
+Para isso, no **Atividade de cópia de conteúdo** selecione a **Cancelar** ação do menu de reticências do processo de cópia iniciado anteriormente.
 
 ![Cancelar cópia de conteúdo](assets/content-copy-cancel.png)
 
 >[!NOTE]
 >
->Ao cancelar uma operação de cópia de conteúdo, ela pode resultar em uma cópia parcial do conteúdo no ambiente de destino. Isso pode deixar o ambiente de destino em um estado inutilizável.
+>Ao cancelar uma operação de cópia de conteúdo, pode resultar em uma cópia parcial do conteúdo no ambiente de destino. Isso pode deixar o ambiente de destino em um estado inutilizável.
 >
->Se seu ambiente estiver em tal estado devido ao cancelamento, entre em contato com o Atendimento ao cliente do Adobe para obter assistência.
+>Se o ambiente estiver em tal estado devido ao cancelamento, entre em contato com o Atendimento ao cliente do Adobe para obter assistência.
 
 ## Limitações {#limitations}
 
 A ferramenta de cópia de conteúdo tem as seguintes limitações.
 
 * O conteúdo não pode ser copiado de um ambiente inferior para um ambiente superior.
-* O conteúdo só pode ser copiado de e para os serviços de criação.
+* O conteúdo só pode ser copiado de e para os serviços de autoria.
 * Não é possível copiar conteúdo entre programas.
 * Não é possível executar operações de cópia de conteúdo simultâneas no mesmo ambiente.
 * É possível especificar até dez caminhos por conjunto de conteúdo. Não há limitação de caminhos excluídos.
 * A ferramenta de cópia de conteúdo não deve ser usada como uma ferramenta de clonagem ou espelhamento, pois ela não pode rastrear os conteúdos movidos ou excluídos da origem.
 * A ferramenta de cópia de conteúdo não tem nenhum recurso de controle de versão e não pode detectar automaticamente o conteúdo modificado ou recém-criado no ambiente de origem de um conjunto de conteúdo desde a última operação de cópia de conteúdo.
-   * Se quiser atualizar seu ambiente de destino com alterações de conteúdo somente desde a última operação de cópia de conteúdo, será necessário criar um conjunto de conteúdo e especificar os caminhos na instância de origem onde as alterações foram feitas desde a última operação de cópia de conteúdo.
+   * Se quiser atualizar o ambiente de destino com alterações de conteúdo somente desde a última operação de cópia de conteúdo, será necessário criar um conjunto de conteúdo e especificar os caminhos na instância de origem em que as alterações foram feitas desde a última operação de cópia de conteúdo.
 * As informações da versão não são incluídas em uma cópia de conteúdo.

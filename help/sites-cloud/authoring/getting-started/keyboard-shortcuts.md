@@ -1,6 +1,6 @@
 ---
 title: Atalhos de teclado para Consoles
-description: Economize tempo durante a criação usando esses atalhos de teclado
+description: Economize tempo ao criar usando estes atalhos de teclado
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
 source-git-commit: bdefc8ccdb44bec7a72d9223614b3a6ba5c65225
 workflow-type: tm+mt
@@ -47,19 +47,19 @@ As teclas modificadoras usadas para os atalhos de teclado variam de acordo com o
 
 ## Atalhos de teclado e dos navegadores {#browsers-and-keyboard-shortcuts}
 
-AEM evita atalhos comuns já usados por navegadores populares, no entanto, o comportamento padrão do navegador não é substituído por AEM atalhos.
+O AEM evita atalhos comuns já usados por navegadores populares, no entanto, o comportamento padrão do navegador não é substituído por atalhos AEM.
 
-Além disso, os atalhos de teclado são os mesmos para todas as localidades e layouts de teclado.
+Além disso, os atalhos de teclado são os mesmos para todos os locais e layouts de teclado.
 
 >[!NOTE]
 >
->AEM atalhos não substituem o comportamento padrão do navegador.
+>Os atalhos do AEM não substituem o comportamento padrão do navegador.
 >
->Caso ocorra conflitos entre AEM e atalhos do navegador, AEM atalhos não funcionarão, resultando na funcionalidade do navegador.
+>Caso ocorram conflitos entre os atalhos do AEM e do navegador, os atalhos do AEM não funcionarão, resultando na funcionalidade do navegador.
 
 >[!CAUTION]
 >
->AEM atalhos de teclado podem interferir com leitores de tela, alguns recursos do navegador e outras ferramentas de acessibilidade.
+>Atalhos de teclado do AEM podem interferir com leitores de tela, alguns recursos do navegador e outras ferramentas de acessibilidade.
 >
 >A Adobe recomenda [desabilitar os atalhos de teclado do AEM](#deactivating-keyboard-shortcuts) ao usar um leitor de tela.
 
@@ -69,7 +69,7 @@ O AEM fornece atalhos de teclado para alguns dos recursos de uso geral (editar, 
 
 Para usuários que não usam atalhos de teclado ou que têm determinados requisitos de acessibilidade, todos os atalhos de teclado podem ser desativados.
 
-É possível desativar os atalhos de teclado em dois locais:
+Você pode desativar atalhos de teclado em dois locais:
 
 * [Minhas preferências](/help/sites-cloud/authoring/getting-started/account-environment.md#my-preferences)
 * No [menu de ajuda](/help/sites-cloud/authoring/getting-started/basic-handling.md#accessing-help)

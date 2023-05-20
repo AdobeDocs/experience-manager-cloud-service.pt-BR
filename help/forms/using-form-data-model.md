@@ -8,7 +8,7 @@ exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '1010'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 ![integração de dados](do-not-localize/data-integeration.png)
 
-[!DNL Experience Manager Forms] a integração de dados permite usar fontes de dados de back-end diferentes para criar um Modelo de dados de formulário que você pode usar como esquema em vários Forms adaptáveis <!--and interactive communications--> fluxos de trabalho. Ele requer a configuração de fontes de dados e a criação do Modelo de dados de formulário com base nos objetos e serviços do modelo de dados disponíveis nas fontes de dados. Para obter mais informações, consulte:
+[!DNL Experience Manager Forms] a integração de dados permite usar fontes de dados de back-end diferentes para criar um Modelo de dados de formulário que você pode usar como esquema em vários Forms adaptáveis <!--and interactive communications--> fluxos de trabalho. Ele requer a configuração de fontes de dados e a criação do Modelo de dados de formulário com base nos objetos e serviços do modelo de dados disponíveis nas fontes de dados. Para obter mais informações, consulte o seguinte:
 
 * [[!DNL Experience Manager Forms] Integração de dados](data-integration.md)
 * [Configurar fontes de dados](configure-data-sources.md)

@@ -1,11 +1,11 @@
 ---
 title: Pesquisar
-description: Localize seu conteúdo mais com mais rapidez usando uma pesquisa abrangente
+description: Encontre seu conteúdo mais rapidamente com a pesquisa abrangente
 exl-id: 8a799e9a-1461-4e79-ae90-1978af6cf0ed
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '494'
-ht-degree: 100%
+ht-degree: 72%
 
 ---
 
@@ -33,7 +33,7 @@ Com o painel de pesquisa, você pode:
 
 Para pesquisar e filtrar os recursos:
 
-1. Abra **Pesquisar** (com a lupa na barra de ferramentas) e insira o termo de pesquisa. Serão feitas sugestões que poderão ser selecionadas:
+1. Abertura **Pesquisar** (com a lupa na barra de ferramentas) e insira o termo de pesquisa. Serão feitas sugestões e elas poderão ser selecionadas:
 
    ![Pesquisar termo](/help/sites-cloud/authoring/assets/search-term.png)
 
@@ -41,7 +41,7 @@ Para pesquisar e filtrar os recursos:
 
    ![Local de pesquisa](/help/sites-cloud/authoring/assets/search-term-location.png)
 
-1. Se necessário, é possível remover o filtro de localização (selecione **X** no filtro que deseja remover) para pesquisar em todos os consoles/tipos de recurso.
+1. Se necessário, é possível remover o filtro de localização (selecione **X** no filtro que deseja remover) para pesquisar em todos os consoles/tipos de recursos.
 1. Os resultados serão mostrados, agrupados de acordo com o console e o tipo de recurso relacionado.
 
    Você pode selecionar um recurso específico (para a ação adicional) ou detalhar selecionando o tipo de recurso desejado; por exemplo, **Exibir todos os sites**: 
@@ -63,7 +63,7 @@ Para pesquisar e filtrar os recursos:
 
    >[!NOTE]
    >
-   >O critério de pesquisa pode variar:
+   >Os critérios de pesquisa podem variar:
    >
    >* Dependendo do tipo de recurso selecionado; por exemplo, os critérios de Ativos e comunidades são compreensivelmente especializados.
    >* Sua instância, como os Formulários de pesquisa, pode ser personalizada (adequada ao local no AEM).
@@ -81,7 +81,7 @@ Para pesquisar e filtrar os recursos:
 
 >[!NOTE]
 >
->Os critérios de pesquisa persistem ao selecionar um item nos resultados de pesquisa.
+>Os critérios de pesquisa são mantidos ao selecionar um item nos resultados da pesquisa.
 >
 >Quando você seleciona um item na página de resultados da pesquisa e retorna à página de pesquisa após usar o botão Voltar do navegador, os critérios de pesquisa permanecem.
 
@@ -89,7 +89,7 @@ Para pesquisar e filtrar os recursos:
 
 Além de pesquisar por uma grande variedade de aspectos, também é possível salvar uma configuração de pesquisa específica para recuperar e usar em um estágio posterior:
 
-1. Defina o seu critério de pesquisa e selecione **Salvar**.
+1. Defina os critérios de pesquisa e selecione **Salvar**.
 
    ![Como salvar uma pesquisa](/help/sites-cloud/authoring/assets/search-side-panel.png)
 
@@ -101,10 +101,10 @@ Além de pesquisar por uma grande variedade de aspectos, também é possível sa
 
    ![Pesquisas salvas](/help/sites-cloud/authoring/assets/saved-searches.png)
 
-1. Depois de salvo é possível:
+1. Depois de salvo, você pode:
 
-   * Use **X** (em comparação ao nome da pesquisa salva) para iniciar uma nova consulta (a própria pesquisa salva não será excluída).
-   * **Edite a pesquisa salva**, altere as condições de pesquisa e, em seguida, **Salve** novamente.
+   * Uso **x** (em relação ao nome da pesquisa salva) para iniciar uma nova consulta (a pesquisa salva em si não será excluída).
+   * **Editar pesquisa salva**, alterar as condições de pesquisa e **Salvar** novamente.
 
 As pesquisas salvas podem ser modificadas ao selecionar a pesquisa salva e clicar em **Editar pesquisa salva** na parte inferior do painel de pesquisa.
 

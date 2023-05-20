@@ -11,7 +11,7 @@ docset: aem65
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '683'
-ht-degree: 7%
+ht-degree: 5%
 
 ---
 
@@ -56,7 +56,7 @@ Quando um formulário adaptável é criado usando um arquivo XDP, você pode arr
   </tr>
   <tr>
    <td><p>Campo de data/hora </p> </td>
-   <td><p>Seletor de datas</p> </td>
+   <td><p>Seletor de data</p> </td>
   </tr>
   <tr>
    <td><p>Rabisco de assinatura</p> </td>
@@ -116,11 +116,11 @@ A tabela a seguir captura como vários scripts XFA definidos nos arquivos XDP se
    <td><p>Mapeado para a propriedade Referência de vínculo (bindRef) no Formulário adaptável.</p> </td>
   </tr>
   <tr>
-   <td><p>presence </p> </td>
+   <td><p>presença </p> </td>
    <td><p>Mapeado para a propriedade visível no Formulário adaptável. É possível substituí-lo usando a expressão Visibility.</p> </td>
   </tr>
   <tr>
-   <td><p>access </p> </td>
+   <td><p>acesso </p> </td>
    <td><p>Mapeado para a propriedade ativada no Formulário adaptável. Você pode substituí-lo usando a expressão Access.</p> </td>
   </tr>
   <tr>
@@ -189,15 +189,15 @@ A tabela a seguir captura como vários scripts XFA definidos no arquivo XDP se c
    <td><p><strong>Comportamento correspondente no Adaptive Forms</strong></p> </td>
   </tr>
   <tr>
-   <td><p>initialize </p> </td>
+   <td><p>inicializar </p> </td>
    <td><p>Esse script é executado no tempo de execução e não pode ser substituído no Formulário adaptável.</p> </td>
   </tr>
   <tr>
-   <td><p>calculate</p> </td>
+   <td><p>calcular</p> </td>
    <td><p>Mapeado para a expressão Calcular no Formulário adaptável.</p> </td>
   </tr>
   <tr>
-   <td><p>validate </p> </td>
+   <td><p>validar </p> </td>
    <td><p>Mapeado para a expressão Validação no Formulário adaptável.</p> </td>
   </tr>
   <tr>
@@ -205,7 +205,7 @@ A tabela a seguir captura como vários scripts XFA definidos no arquivo XDP se c
    <td><p>Esse script é executado no tempo de execução e não pode ser substituído no Formulário adaptável.<br /> </p> </td>
   </tr>
   <tr>
-   <td><p>exit </p> </td>
+   <td><p>sair </p> </td>
    <td><p>Esse script é executado no tempo de execução e não pode ser substituído no Formulário adaptável.</p> </td>
   </tr>
   <tr>
@@ -247,7 +247,7 @@ A tabela a seguir captura como as validações XFA são mapeadas para validaçõ
   </tr>
   <tr>
    <td><p>Obrigatório (nullTest )</p> </td>
-   <td><p>mandatory </p> </td>
+   <td><p>obrigatório </p> </td>
   </tr>
   <tr>
    <td><p>Mensagem vazia (nullTestMessage) </p> </td>

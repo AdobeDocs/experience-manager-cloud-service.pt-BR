@@ -169,6 +169,6 @@ Você pode configurar o recurso de salvamento automático para um formulário ad
 
 1. Na instância do autor, abra um Formulário adaptável no modo de edição.
 1. No painel esquerdo, toque no ![Ícone Propriedades](assets/configure_icon.png) e expanda a variável [!UICONTROL SALVAMENTO AUTOMÁTICO] opção.
-1. Selecione o **[!UICONTROL Ativar]** para ativar o salvamento automático do formulário. É possível configurar os seguintes itens:
+1. Selecione o **[!UICONTROL Ativar]** para ativar o salvamento automático do formulário. Você pode configurar o seguinte:
 * Por padrão, a variável [!UICONTROL Evento de formulário adaptável] está definido como &quot;true&quot;, o que implica que o formulário é salvo automaticamente após cada evento.
 * Entrada [!UICONTROL Acionador], configure o para acionar o salvamento automático com base na ocorrência de um evento ou após um intervalo de tempo específico.

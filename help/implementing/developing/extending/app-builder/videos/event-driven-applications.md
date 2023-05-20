@@ -1,6 +1,6 @@
 ---
-title: Aplicativos do App Builder orientados por eventos
-description: Saiba como criar aplicativos do App Builder orientados por eventos.
+title: Aplicativos orientados por eventos do App Builder
+description: Saiba como criar aplicativos orientados por eventos do App Builder.
 version: Cloud Service
 feature: App Builder
 topic: Integrations, Development
@@ -16,16 +16,16 @@ ht-degree: 0%
 
 ---
 
-# Aplicativos do App Builder orientados por eventos
+# Aplicativos orientados por eventos do App Builder
 
-## Introdução a aplicativos do App Builder orientados por eventos
+## Introdução a aplicativos orientados por eventos do App Builder
 
-Saiba mais sobre arquitetura orientada a eventos, Adobe I/O events e eventos personalizados.
+Saiba mais sobre a arquitetura orientada por eventos, eventos Adobe I/O e eventos personalizados.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339244/?quality=12&learn=on)
 
-## Criação de aplicativos do App Builder orientados por eventos
+## Criação de aplicativos orientados por eventos do App Builder
 
 >[!VIDEO](https://video.tv.adobe.com/v/339245/?quality=12&learn=on)
 
-Saiba como criar publicação e pode consumir eventos em um aplicativo do App Builder.
+Saiba como criar publicações que podem consumir eventos em um aplicativo do App Builder.

@@ -5,7 +5,7 @@ exl-id: 1b948f0b-85b9-478a-8b7e-61495c1d57b6
 source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
 workflow-type: tm+mt
 source-wordcount: '490'
-ht-degree: 100%
+ht-degree: 74%
 
 ---
 
@@ -19,7 +19,7 @@ Comece acessando a opção [Usuário](#user-settings) no cabeçalho.
 
 ## Configurações de usuário {#user-settings}
 
-A caixa de diálogo **Configurações do usuário** oferece acesso ao seguinte:
+A variável **Usuário** a caixa de diálogo configurações dá acesso a:
 
 * Representar como
    * Com a funcionalidade Representar como, um usuário pode trabalhar em nome de outro usuário. <!--With the [Impersonate as](/help/sites-administering/security.md#impersonating-another-user) functionality, a user can work on behalf of another user.-->
@@ -40,13 +40,13 @@ Cada usuário pode definir certas propriedades para si mesmo.
 
 * **Idioma**
 
-   Isso define o idioma a ser usado para a interface de usuário do ambiente de criação. Selecione o idioma desejado na lista disponível.
+   Isso define o idioma a ser usado para a interface do usuário do ambiente de criação. Selecione o idioma desejado na lista disponível.
 
 * **Gerenciamento de janelas**
 
-   Isso define o comportamento ou abertura das janelas. Selecione um dos seguintes:
+   Isso define o comportamento ou a abertura de janelas. Selecione um dos seguintes:
 
-   * **Diversas janelas** (padrão)
+   * **Várias janelas** (Padrão)
 
       * As páginas serão abertas em uma nova janela.
    * **Uma janela**
@@ -85,7 +85,7 @@ Cada usuário pode definir certas propriedades para si mesmo.
    * [Atalhos de teclado para editar páginas](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
    * [Atalhos de teclado para os consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
-   Essa opção ativa atalhos de teclado. Por padrão, eles estão ativados, mas podem ser desativados, por exemplo, caso um usuário tenha determinados requisitos de acessibilidade.
+   Essa opção ativa os atalhos de teclado. Por padrão, eles estão ativados, mas podem ser desativados se um usuário tiver determinados requisitos de acessibilidade.
 
 * **Ativar a Página inicial dos ativos**
 
@@ -93,4 +93,4 @@ Cada usuário pode definir certas propriedades para si mesmo.
 
 * **Configuração do Stock**
 
-   Essa opção permite especificar a configuração preferencial do Adobe Stock e só estará disponível se o administrador do sistema tiver habilitado a [integração com o Adobe Stock](/help/assets/aem-assets-adobe-stock.md).
+   Essa opção permite especificar a configuração preferencial do Adobe Stock e só estará disponível se o administrador do sistema tiver ativado [Integração do Adobe Stock](/help/assets/aem-assets-adobe-stock.md).

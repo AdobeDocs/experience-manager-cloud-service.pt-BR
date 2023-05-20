@@ -10,7 +10,7 @@ discoiquuid: 377d804d-4a75-4c93-8125-d2660cf56418
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '363'
-ht-degree: 4%
+ht-degree: 3%
 
 ---
 
@@ -40,7 +40,7 @@ A tabela a seguir lista as opções de visualização disponíveis para diferent
    <td>Visualização e visualização do PDF com dados<br /> </td>
   </tr>
   <tr>
-   <td>Formulário adaptativo</td>
+   <td>Formulário adaptável</td>
    <td>Visualização de HTML e visualização de HTML com dados</td>
   </tr>
   <tr>

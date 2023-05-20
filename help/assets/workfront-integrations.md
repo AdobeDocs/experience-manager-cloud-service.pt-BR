@@ -48,7 +48,7 @@ Consulte o site de suporte e [pré-requisitos para o conector aprimorado](https:
 
 Veja a seguir os detalhes das funcionalidades disponíveis por meio de vários tipos de integrações entre [!DNL Assets] e [!DNL Workfront].
 
-| Recurso | Descrição | [!DNL Workfront] e [!DNL Assets Essentials] *Sem conector (OOTB)* | [!DNL Workfront for Experience Manager enhanced connector] *Requer conector* | WORKFRONT e [!DNL Experience Manager as a Cloud Service] *Sem conector (OOTB)* |
+| Destaque | Descrição | [!DNL Workfront] e [!DNL Assets Essentials] *Sem conector (OOTB)* | [!DNL Workfront for Experience Manager enhanced connector] *Requer conector* | WORKFRONT e [!DNL Experience Manager as a Cloud Service] *Sem conector (OOTB)* |
 |----|----|----|-----|-----|
 | Métodos de implantação | Adequado para o qual [!DNL Assets] oferta. | Assets Essentials | Adobe Managed Services, no local | Serviço em nuvem |
 | **Geral** |

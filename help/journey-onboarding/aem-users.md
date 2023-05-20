@@ -81,7 +81,7 @@ Se você estiver interessado em como desenvolvedores e gerentes de implantação
 
 ## Recursos adicionais {#additional-resources}
 
-Veja a seguir recursos adicionais e opcionais, caso deseje ir além do conteúdo da jornada de integração.
+A seguir estão recursos adicionais e opcionais se você quiser ir além do conteúdo da jornada de integração.
 
 [Guia de início rápido sobre páginas de autoria](/help/sites-cloud/authoring/getting-started/quick-start.md) - Comece aqui para obter uma rápida visão geral dos fundamentos de autoria no AEM.
 [Jornada de autoria sem comando](/help/journey-headless/author/overview.md) - Se quiser criar conteúdo sem comando, siga esta introdução guiada.

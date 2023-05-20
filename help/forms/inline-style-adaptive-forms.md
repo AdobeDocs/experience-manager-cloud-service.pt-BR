@@ -61,7 +61,7 @@ Observe a alteração no estilo da caixa de texto, como mostrado na imagem a seg
   </tr>
   <tr>
    <td><p>Texto</p> </td>
-   <td><p>border</p> </td>
+   <td><p>borda</p> </td>
    <td><p>Largura da borda =2px</p> <p>Estilo da borda=Sólido</p> <p>Cor da borda=#1111</p> </td>
    <td><p>Cria uma borda preta com 2 pixels de largura em torno do campo</p> </td>
   </tr>
@@ -86,7 +86,7 @@ Observe a alteração no estilo da caixa de texto, como mostrado na imagem a seg
   <tr>
    <td><p>Descrição longa</p> </td>
    <td><p>text-align</p> </td>
-   <td><p>center</p> </td>
+   <td><p>centro</p> </td>
    <td><p>Alinha a descrição longa da ajuda para centralizar</p> </td>
   </tr>
  </tbody>

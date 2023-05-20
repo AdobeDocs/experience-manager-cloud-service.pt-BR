@@ -281,7 +281,7 @@ Os componentes do AEM Screens são renderizados de forma diferente no modo Edita
 
    * `allowProxy` | Booleano | `true`
 
-   * `categories`| Sequência de caracteres[] | `cq.screens.components`
+   * `categories`| String[] | `cq.screens.components`
 
    ![Propriedades de /apps/weretail-run/components/content/helloworld/clientlibs/shared](/help/screens-cloud/developing/assets/2018-05-03_at_1026pm.png)
 
@@ -378,7 +378,7 @@ Uma terceira categoria de clientlibrary: `cq.screens.components.edit` pode ser u
 
 O AEM Screens usa [Modelos de página estáticos](https://helpx.adobe.com/br/experience-manager/6-5/sites/developing/using/page-templates-static.html) e [Configurações de design](https://helpx.adobe.com/experience-manager/6-4/sites/authoring/using/default-components-designmode.html) para alterações globais. As configurações de design são usadas com frequência para configurar componentes permitidos para o Parsys em um canal. Uma prática recomendada é armazenar essas configurações de uma maneira específica do aplicativo.
 
-Abaixo, uma página de design de execução do We.Retail é criada e armazenará todas as configurações específicas do projeto de execução do We.Retail.
+Abaixo, uma página de Design de execução do We.Retail é criada e armazenará todas as configurações específicas do projeto de execução do We.Retail.
 
 1. Entrada **CRXDE-Lite** `http://localhost:4502/crx/de/index.jsp#/apps/settings/wcm/designs` navegue até `/apps/settings/wcm/designs`
 1. Crie um novo nó abaixo da pasta de designs, chamado `we-retail-run` com um tipo de `cq:Page`.
@@ -386,9 +386,9 @@ Abaixo, uma página de design de execução do We.Retail é criada e armazenará
 
    | Nome | Tipo | Valor |
    |---|---|---|
-   | jcr:title | Sequência de caracteres | Execução do We.Retail |
-   | sling:resourceType | Sequência de caracteres | wcm/core/components/designer |
-   | cq:doctype | Sequência de caracteres | html_5 |
+   | jcr:title | String | Execução do We.Retail |
+   | sling:resourceType | String | wcm/core/components/designer |
+   | cq:doctype | String | html_5 |
 
    ![Página de design em /apps/settings/wcm/designs/we-retail-run](/help/screens-cloud/developing/assets/2018-05-07_at_1219pm.png)
 

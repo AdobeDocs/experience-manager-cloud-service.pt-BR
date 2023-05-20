@@ -1,11 +1,11 @@
 ---
 title: Como o gerenciamento multisite para conteúdo direcionado está estruturado
-description: Um diagrama mostra como o suporte multisite para conteúdo direcionado está estruturado
+description: Um diagrama mostra como o suporte a vários sites para conteúdo direcionado está estruturado
 exl-id: c6b05c2a-0897-4514-8937-e23bfcf757d5
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '181'
-ht-degree: 100%
+ht-degree: 39%
 
 ---
 
@@ -17,12 +17,12 @@ As áreas aparecem dentro de **/conteúdo/campanhas/&lt;marca>** e, por padrão,
 
 ![Estrutura multisite](/help/sites-cloud/authoring/assets/multisite-structure.png)
 
-Para procurar conteúdo direcionado, páginas ou sites podem ser mapeados para uma área. Se não houver nenhuma área configurada, o AEM recuará para a área mestre dessa marca específica.
+Para pesquisar conteúdo direcionado, as páginas ou os sites podem mapear para uma área. Se não houver uma área configurada, o AEM voltará para a área principal dessa marca específica.
 
 O diagrama a seguir é um exemplo de como a lógica funciona para três sites, chamados de site1, site2 e site3.
 
 ![Estrutura multisite entre sites](/help/sites-cloud/authoring/assets/multisite-structure-2.png)
 
-* Site1 pesquisa myarea1 em busca de brand1 e otherarea2 em busca de brand2 com base no mapeamento de áreas.
-* Site2 pesquisa myarea1 em busca de brand1 e a área mestra em busca de brand2, pois apenas o mapeamento de áreas para brand1 está definido.
-* Site3 pesquisa a área mestra para brand1 e brand2, pois nenhum outro mapeamento de área é definido para esse site.
+* site1 procura myarea1 para brand1 e otherarea2 para brand2 com base no area mapping.
+* site2 procura myarea1 para brand1 e área principal para brand2 pois somente o mapeamento de área para brand1 é definido.
+* site3 procura a área principal para marca1 e marca2 já que nenhum outro mapeamento de área foi definido para este site.

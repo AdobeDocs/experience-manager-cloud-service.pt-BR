@@ -15,7 +15,7 @@ A seção a seguir descreve as notas de versão técnicas para a versão de manu
 
 ## Versão 11983 {#release-11983}
 
-Resumidos abaixo estão as melhorias contínuas da versão de manutenção de 1983, lançada publicamente em 17 de maio de 2023. Esta versão de manutenção é uma atualização da versão de manutenção anterior: 11873.
+Resumidos abaixo estão as melhorias contínuas da versão de manutenção 11983, que foi lançada publicamente em 17 de maio de 2023. Esta versão de manutenção é uma atualização da versão de manutenção anterior: 11873.
 
 A ativação de recursos desta versão de manutenção fornecerá o conjunto completo de recursos. Consulte as [notas de versão atuais](/help/release-notes/release-notes-cloud/release-notes-current.md) para obter detalhes completos.
 
@@ -29,10 +29,10 @@ Nenhum.
 
 ### Problemas corrigidos {#fixed-issues-11983}
 
-- SITES-13253 - Correção de um problema com RecursionTooDeepException em Componentes principais v2.22.6
-- SITES-13256 - Corrigido um problema com o Teaser do WCM principal configurado com URL especial quebras de página
-- GRANITE-45462 - Correção de um problema com a configuração de várias regiões do cliente de mensagens
-- GRANITE-45562 - Correção de um problema em que a combinação de imagens retornava 200 em vez de 404
+- SITES-13253 - Corrigido o problema com RecursionTooDeepException nos Componentes principais v2.22.6
+- SITES-13256 - Corrigido o problema com o teaser principal do WCM configurado com renderização especial de URL quebra a página
+- GRANITE-45462 - Corrigido o problema com a configuração de várias regiões do cliente de mensagens
+- GRANITE-45562 - Corrigido um problema em que a combinação de imagens retornava 200 em vez de 404
 
 ### Tecnologias integradas {#embedded-tech-11983}
 

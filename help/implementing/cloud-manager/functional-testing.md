@@ -21,11 +21,11 @@ Saiba mais sobre os três diferentes tipos de testes funcionais integrados ao [p
 
 ## Escopo
 
-O objetivo das etapas de teste funcional no pipeline do Cloud Manager é garantir que a funcionalidade essencial do seu aplicativo funcione conforme esperado.
+O objetivo das etapas de teste funcional no pipeline do Cloud Manager é garantir que a funcionalidade essencial do aplicativo funcione conforme esperado.
 
 Essa fase de teste é o último nível de teste automatizado antes de implantar seu código na produção.
 
-Os testes funcionais não devem substituir, mas sim complementar e estender outras estratégias de teste, como testes de unidade, testes de integração ou testes funcionais executados fora da execução do pipeline no Cloud Manager.
+O teste funcional não deve substituir, mas complementar e estender outras estratégias de teste, como teste de unidade, teste de integração ou teste funcional executado fora da execução do pipeline no Cloud Manager.
 
 ## Visão geral {#overview}
 
@@ -56,12 +56,12 @@ Embora o teste funcional do produto seja definido pela Adobe, você pode criar s
 
 O teste funcional personalizado é executado tanto para implantações de código personalizado quanto para atualizações por push, o que torna especialmente importante criar bons testes funcionais, a fim de impedir que as alterações de código do AEM quebrem o código do aplicativo. A etapa de teste funcional personalizado está sempre presente e não pode ser ignorada.
 
-Consulte [Testes funcionais de Java](/help/implementing/cloud-manager/java-functional-testing.md) para obter mais informações.
+Consulte [Testes funcionais Java](/help/implementing/cloud-manager/java-functional-testing.md) para obter mais informações.
 
 
 ### Testes de interface do usuário personalizados {#custom-ui-testing}
 
 Os testes de interface do usuário personalizados são um recurso opcional que permite criar e executar automaticamente testes na interface do usuário para seus aplicativos. Os testes de interface são baseados no Selenium e compactados em uma imagem do Docker, para permitir uma variedade de opções de linguagens e estruturas, como Java e Maven, Node e WebDriver.io ou qualquer outra estrutura e tecnologia criada com base no Selenium.
 
-Consulte [Teste de interface personalizada](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing) para obter mais informações.
+Consulte [Testes de interface do usuário personalizados](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing) para obter mais informações.
 

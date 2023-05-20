@@ -5,7 +5,7 @@ exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
 source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
 workflow-type: tm+mt
 source-wordcount: '4622'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -74,7 +74,7 @@ Retorna todos os armazenamentos registrados do ContextHub.
 
 Esta função não tem parâmetros.
 
-##### Retorna {#returns-}
+##### Devoluções {#returns-}
 
 Um objeto que contém todos os armazenamentos do ContextHub. Cada armazenamento é um objeto que usa o mesmo nome do armazenamento.
 
@@ -95,7 +95,7 @@ Recupera um armazenamento como um objeto JavaScript.
 
 * **`name`:** O nome com o qual o armazenamento foi registrado.
 
-##### Retorna {#returns-getstore-name}
+##### Devoluções {#returns-getstore-name}
 
 Um objeto que representa o armazenamento.
 
@@ -131,7 +131,7 @@ Fornece acesso aos segmentos do ContextHub.
 
 Retorna os segmentos resolvidos no contexto atual. Esta função não tem parâmetros.
 
-##### Retorna {#returns-getresolvedsegments}
+##### Devoluções {#returns-getresolvedsegments}
 
 Uma matriz de `ContextHub.SegmentEngine.Segment` objetos.
 
@@ -169,7 +169,7 @@ Observe que os valores podem ser objetos.
 * **`tree`:** (Objeto ou matriz) Os dados a serem adicionados ao armazenamento.
 * **`options`:** (Object) Um objeto opcional de opções passado para a função setItem. Para obter informações, consulte a `options` parâmetro de [`setItem(key,value,options)`](#setitem-key-value-options).
 
-##### Retorna {#returns-addallitems}
+##### Devoluções {#returns-addallitems}
 
 A `boolean` valor:
 
@@ -186,7 +186,7 @@ Cria uma referência de uma chave para outra. Uma chave não pode fazer referên
 
 * **`anotherkey`:** A chave que é referenciada pelo `key`.
 
-##### Retorna {#returns-addreference}
+##### Devoluções {#returns-addreference}
 
 A `boolean` valor:
 
@@ -209,7 +209,7 @@ Retorna o valor associado a uma chave.
 
 * **`key`:** (String) A chave para a qual retornar o valor.
 
-##### Retorna {#returns-getitem}
+##### Devoluções {#returns-getitem}
 
 Um Objeto que representa o valor da chave.
 
@@ -221,7 +221,7 @@ Recupera as chaves do armazenamento. Como opção, você pode recuperar as chave
 
 * **`includeInternals`:** Um valor de `true` inclui chaves usadas internamente nos resultados. Essas teclas começam com um sublinhado (`_`). O valor padrão é `false`.
 
-##### Retorna {#returns-getkeys}
+##### Devoluções {#returns-getkeys}
 
 Uma matriz de nomes de chave ( `string` valores).
 
@@ -229,7 +229,7 @@ Uma matriz de nomes de chave ( `string` valores).
 
 Recupera as referências do armazenamento.
 
-##### Retorna {#returns-getreferences}
+##### Devoluções {#returns-getreferences}
 
 Uma matriz que usa chaves de referência como índices para as chaves referenciadas:
 
@@ -244,7 +244,7 @@ Recupera a árvore de dados do armazenamento. Como opção, inclua os pares chav
 
 * `includeInternals:` Um valor de `true` O inclui pares de chave/valor usados internamente nos resultados. As chaves desses dados começam com um sublinhado (`_`). O valor padrão é `false`.
 
-##### Retorna {#returns-gettree}
+##### Devoluções {#returns-gettree}
 
 Um objeto que representa a árvore de dados. As chaves são os nomes de propriedade do objeto.
 
@@ -269,7 +269,7 @@ Inicializa o armazenamento.
 
 Determina se o evento está pausado para este armazenamento.
 
-##### Retorna {#returns-iseventingpaused}
+##### Devoluções {#returns-iseventingpaused}
 
 Um valor booleano:
 
@@ -294,7 +294,7 @@ Como opção, você pode impedir o acionamento da variável `data` evento.
 * **`options`:** (Object) Um objeto de opções. As seguintes propriedades de objeto são válidas:
    * silencioso: um valor de `true` impede o acionamento da `data` evento. O valor padrão é `false`.
 
-##### Retorna {#returns-removeitem}
+##### Devoluções {#returns-removeitem}
 
 A `boolean` valor:
 
@@ -309,7 +309,7 @@ Remove uma referência do armazenamento.
 
 * **`key`:** A referência de chave a ser removida. Esse parâmetro corresponde à variável `key` parâmetro do `addReference` função.
 
-##### Retorna {#returns-removereference}
+##### Devoluções {#returns-removereference}
 
 A `boolean` valor:
 
@@ -335,7 +335,7 @@ Recupera uma chave referenciada. Opcionalmente, você pode especificar o número
 * **`key`:** (String) A chave para a qual resolver a referência. Este `key` O parâmetro corresponde à variável `key` parâmetro do `addReference` função.
 * **`retry`:** (Número) O número de iterações a serem usadas.
 
-##### Retorna {#returns-resolvereference}
+##### Devoluções {#returns-resolvereference}
 
 A `string` que representa a chave referenciada. Se nenhuma referência for resolvida, o valor de `key` é retornado.
 
@@ -358,7 +358,7 @@ Os dados do evento incluem o nome do armazenamento, a chave, o valor anterior, o
    * `silent`: um valor de `true` impede o acionamento da `data` evento. O valor padrão é `false`.
 * **`value`:** (Objeto) O valor a ser associado à chave.
 
-##### Retorna {#returns-setitem}
+##### Devoluções {#returns-setitem}
 
 A `boolean` valor:
 
@@ -397,7 +397,7 @@ Configura os detalhes para a conexão com o serviço JSONP que este objeto usa. 
 
 Retorna a resposta bruta armazenada em cache desde a última chamada para o serviço JSONP. A função não requer parâmetros.
 
-##### Retorna {#returns-getrawresponse}
+##### Devoluções {#returns-getrawresponse}
 
 Um objeto que representa a resposta bruta.
 
@@ -405,7 +405,7 @@ Um objeto que representa a resposta bruta.
 
 Recupera o objeto de serviço para este objeto ContextHub.Store.JSONPStore. O objeto de serviço contém todas as informações necessárias para criar o URL do serviço.
 
-##### Retorna {#returns-getservicedetails}
+##### Devoluções {#returns-getservicedetails}
 
 Um objeto com as seguintes propriedades:
 
@@ -427,7 +427,7 @@ Recupera o URL do serviço JSONP.
 
 * **`resolve`:** (Booleano) Determina se os parâmetros resolvidos devem ser incluídos no URL. Um valor de `true` resolve parâmetros, e `false` não.
 
-##### Retorna {#returns-getserviceurl}
+##### Devoluções {#returns-getserviceurl}
 
 A `string` valor que representa o URL do serviço.
 
@@ -465,7 +465,7 @@ Aciona o evento pronto quando a consulta é concluída. Se o URL do serviço JSO
 
 * **`reload`:** (Booleano) Um valor true remove a resposta em cache e força o serviço JSONP a ser chamado.
 
-#### reset {#reset}
+#### redefinir {#reset}
 
 Redefine os valores iniciais dos dados persistentes do armazenamento e, em seguida, chama o serviço JSONP. Como opção, você pode remover todos os outros dados do armazenamento. O evento é pausado para este armazenamento enquanto os valores iniciais são redefinidos. Esta função não retorna nenhum valor.
 
@@ -529,7 +529,7 @@ Determina se um cookie existe.
 
 * **`key`:** A `String` que contém a chave do cookie para o qual você está testando.
 
-##### Retorna {#returns-exists}
+##### Devoluções {#returns-exists}
 
 A `boolean` valor true indica que o cookie existe.
 
@@ -553,7 +553,7 @@ Retorna todos os cookies com chaves que correspondem a um filtro.
    * Um objeto RegExp: a função de teste do objeto é usada para corresponder chaves de cookie.
    * Uma função: uma função que testa uma correspondência em uma chave de cookie. A função deve tomar a chave do cookie como um parâmetro e retornar true se o teste confirmar uma correspondência.
 
-##### Retorna {#returns-getallitems}
+##### Devoluções {#returns-getallitems}
 
 Um objeto de cookies. As propriedades do objeto são chaves de cookie e os valores de chave são valores de cookie.
 
@@ -571,7 +571,7 @@ Retorna um valor de cookie.
 
 * **`key`:** A chave do cookie para o qual você deseja o valor.
 
-##### Retorna {#returns-getitem-1}
+##### Devoluções {#returns-getitem-1}
 
 O valor do cookie, ou `null` se nenhum cookie for encontrado para a chave.
 
@@ -593,7 +593,7 @@ Retorna uma matriz das chaves de cookies existentes que correspondem a um filtro
    * Um objeto RegExp: a função de teste do objeto é usada para corresponder chaves de cookie.
    * Uma função: uma função que testa uma correspondência em uma chave de cookie. A função deve tomar a chave do cookie como um parâmetro e retornar `true` se o teste confirmar uma correspondência.
 
-##### Retorna {#returns-getkeys-1}
+##### Devoluções {#returns-getkeys-1}
 
 Uma matriz de strings em que cada string é a chave de um cookie que corresponde ao filtro.
 
@@ -612,7 +612,7 @@ Remove um cookie. Para remover o cookie, o valor é definido como uma string vaz
 * **`key`:** A `String` valor que representa a chave do cookie a ser removido.
 * **`options`:** Um objeto que contém valores de propriedade para configurar os atributos do cookie. Consulte a [`setItem`](#setitem-key-value-options) função para obter informações. A variável `expires` propriedade não tem efeito.
 
-##### Retorna {#returns-removeitem-1}
+##### Devoluções {#returns-removeitem-1}
 
 Esta função não retorna um valor.
 
@@ -635,7 +635,7 @@ Cria um cookie com a chave e o valor fornecidos e adiciona o cookie ao documento
    * `secure`: A `boolean` valor que especifica a `Secure` atributo do cookie. O valor padrão é `false`.
    * `path`: A `String` valor a ser usado como `Path` atributo do cookie. O valor padrão é `undefined`.
 
-##### Retorna {#returns-setitem-1}
+##### Devoluções {#returns-setitem-1}
 
 O cookie com o valor definido.
 
@@ -659,7 +659,7 @@ Remove todos os cookies que correspondem a um determinado filtro. Os cookies sã
 * **`filter`:** A variável `filter` argumento a ser usado na chamada para o [`getKeys`](#getkeys-filter) função.
 * **`options`:** A variável `options` argumento a ser usado na chamada para o [`removeItem`](#removeitem-key-options) função.
 
-##### Retorna {#returns-vanish}
+##### Devoluções {#returns-vanish}
 
 Esta função não retorna um valor.
 
@@ -678,7 +678,7 @@ Desassocia uma função de um evento.
 * **`name`:** A variável [nome do evento](#contexthub-utils-eventing) para o qual você está desvinculando a função.
 * **`selector`:** O seletor que identifica a associação. (Consulte a `selector` parâmetro para o [`on`](#on-name-handler-selector-triggerforpastevents) e [`once`](#once-name-handler-selector-triggerforpastevents) funções).
 
-##### Retorna {#returns-off}
+##### Devoluções {#returns-off}
 
 Esta função não retorna nenhum valor.
 
@@ -693,7 +693,7 @@ Vincula uma função a um evento. A função é chamada sempre que o evento ocor
 * **`selector`:** (String) Um identificador exclusivo para a associação. Você precisa do seletor para identificar o vínculo se quiser usar o `off` para remover a associação.
 * **`triggerForPastEvents`:** (Booleano) Indica se o manipulador deve ser executado para eventos que ocorreram no passado. Um valor de `true` chama o manipulador de eventos anteriores. Um valor de `false` chama o manipulador para eventos futuros. O valor padrão é `true`.
 
-##### Retorna {#returns-on}
+##### Devoluções {#returns-on}
 
 Quando a variável `triggerForPastEvents` o argumento é `true`, esta função retorna uma `boolean` valor que indica se o evento ocorreu no passado:
 
@@ -733,7 +733,7 @@ Vincula uma função a um evento. A função é chamada apenas uma vez, para a p
 * **`selector`:** (String) Um identificador exclusivo para a associação. Você precisa do seletor para identificar o vínculo se quiser usar o `off` para remover a associação.
 * **`triggerForPastEvents`:** (Booleano) Indica se o manipulador deve ser executado para eventos que ocorreram no passado. Um valor de `true` chama o manipulador de eventos anteriores. Um valor de `false` chama o manipulador para eventos futuros. O valor padrão é `true`.
 
-##### Retorna {#returns-once}
+##### Devoluções {#returns-once}
 
 Quando a variável `triggerForPastEvents` o argumento é `true`, esta função retorna uma `boolean` valor que indica se o evento ocorreu no passado:
 
@@ -771,7 +771,7 @@ Analisa um valor de string como JSON e o converte em um objeto javascript.
 
 * **`data`:** Um valor de string no formato JSON.
 
-##### Retorna {#returns-parse}
+##### Devoluções {#returns-parse}
 
 Um objeto Javascript.
 
@@ -801,7 +801,7 @@ Serializa valores e objetos Javascript em valores de string do formato JSON.
 
 * **`data`:** O valor ou objeto a ser serializado. Esta função oferece suporte a valores booleanos, de matriz, número, sequência de caracteres e data.
 
-##### Retorna {#returns-stringify}
+##### Devoluções {#returns-stringify}
 
 O valor da string serializada. Quando `data` é um R `egExp` value, esta função retorna um objeto vazio. Quando `data` é uma função, retorna `undefined`.
 
@@ -817,7 +817,7 @@ ContextHub.Utils.JSON.stringify({
 });
 ```
 
-Retorna:
+Devoluções:
 
 ```javascript
 "{'city':'Basel','country':'Switzerland','population':'173330'}":
@@ -838,7 +838,7 @@ Cria uma cópia de um objeto de dados e adiciona a ele a árvore de dados de um 
 * **`tree`:** O objeto copiado.
 * **`secondTree`:** O objeto que é mesclado com a cópia do `tree` objeto.
 
-##### Retorna {#returns-addallitems-1}
+##### Devoluções {#returns-addallitems-1}
 
 Um objeto que contém os dados mesclados.
 
@@ -850,7 +850,7 @@ Cria uma cópia de um objeto, localiza e remove itens na árvore de dados que n�
 
 * **`tree`:** O objeto a ser limpo.
 
-##### Retorna {#returns-cleanup}
+##### Devoluções {#returns-cleanup}
 
 Uma cópia da árvore que é limpa.
 
@@ -863,7 +863,7 @@ Recupera o valor de um objeto para a chave a.
 * **`tree`:** O objeto de dados.
 * **`key`:** A chave do valor que você deseja recuperar.
 
-##### Retorna {#returns-getitem-2}
+##### Devoluções {#returns-getitem-2}
 
 O valor que corresponde à chave. Quando a chave tem chaves filhas, essa função retorna um objeto complexo. Quando o tipo do valor da chave é `undefined`, `null` é retornado.
 
@@ -921,7 +921,7 @@ Recupera todas as chaves da árvore de dados de um objeto. Como opção, você p
 * **`parent`:** (Opcional) A chave de um item na árvore de dados para o qual você deseja recuperar as chaves dos itens secundários.
 * **`order`:** (Opcional) Uma função que determina a ordem de classificação das chaves retornadas. (Consulte [`Array.prototype.sort`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) na Mozilla Developer Network.)
 
-##### Retorna {#returns-getkeys-2}
+##### Devoluções {#returns-getkeys-2}
 
 Uma matriz de chaves.
 
@@ -961,7 +961,7 @@ Cria uma cópia de um determinado objeto, remove a ramificação especificada da
 * **`tree`:** Um objeto de dados.
 * **`key`:** A chave a ser removida.
 
-##### Retorna {#returns-removeitem-2}
+##### Devoluções {#returns-removeitem-2}
 
 Uma cópia do objeto de dados original com a chave removida.
 
@@ -1015,7 +1015,7 @@ Use a matriz resultante para criar uma chave utilizável.
 
 * **`key`:** A variável `string` para limpar.
 
-##### Retorna {#returns-sanitizekey}
+##### Devoluções {#returns-sanitizekey}
 
 Uma matriz de `string` valores em que cada string é a parte da variável `key` que foi demarcado por barras. representa a chave limpa. Se a matriz limpa tiver um comprimento de zero, essa função retornará `null`.
 
@@ -1039,7 +1039,7 @@ Adiciona um par de chave/valor à árvore de dados de uma cópia de um objeto. P
 * **`key`:** A chave a ser associada ao valor que você está adicionando. A chave é o caminho para o item na árvore de dados. Essa função chama `ContextHub.Utils.JSON.tree.sanitize` para limpar a chave antes de adicioná-la.
 * **`value`:** O valor a ser adicionado à árvore de dados.
 
-##### Retorna {#returns-setitem-2}
+##### Devoluções {#returns-setitem-2}
 
 Uma cópia do `tree` objeto que inclui o `key`/ `value` emparelhar.
 
@@ -1080,7 +1080,7 @@ Retorna os tipos de armazenamento registrados como candidatos de armazenamento. 
 
 * **`storeType`:** (String) O nome do tipo de armazenamento. Consulte a `storeType` parâmetro do [`ContextHub.Utils.storeCandidates.registerStoreCandidate`](#contexthub-utils-storecandidates) função.
 
-##### Retorna {#returns-getregisteredcandidates}
+##### Devoluções {#returns-getregisteredcandidates}
 
 Um objeto de tipos de armazenamento. As propriedades do objeto são os nomes do tipo de armazenamento e os valores da propriedade são uma matriz de candidatos de armazenamento registrados.
 
@@ -1092,7 +1092,7 @@ Retorna um tipo de armazenamento dos candidatos registrados. Se mais de um tipo 
 
 * `storeType`: (String) O nome do candidato a armazenamento. Consulte a `storeType` parâmetro do [`ContextHub.Utils.storeCandidates.registerStoreCandidate`](#registerstorecandidate-store-storetype-priority-applies) função.
 
-##### Retorna {#returns-getstorefromcandidates}
+##### Devoluções {#returns-getstorefromcandidates}
 
 Um objeto que representa o candidato de armazenamento registrado. Se o Tipo de armazenamento solicitado não estiver registrado, um erro será lançado.
 
@@ -1100,7 +1100,7 @@ Um objeto que representa o candidato de armazenamento registrado. Se o Tipo de a
 
 Retorna os nomes dos tipos de armazenamento registrados como candidatos de armazenamento. Esta função não requer parâmetros.
 
-##### Retorna {#returns-getsupportedstoretypes}
+##### Devoluções {#returns-getsupportedstoretypes}
 
 Uma matriz de valores de string, em que cada string é o tipo de loja com o qual um candidato a armazenamento foi registrado. Consulte a `storeType` parâmetro do [`ContextHub.Utils.storeCandidates.registerStoreCandidate`](#contexthub-utils-storecandidates) função.
 

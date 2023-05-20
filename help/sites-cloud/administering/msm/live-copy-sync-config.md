@@ -7,7 +7,7 @@ exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
 source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
 workflow-type: tm+mt
 source-wordcount: '2337'
-ht-degree: 100%
+ht-degree: 88%
 
 ---
 
@@ -19,17 +19,17 @@ O Adobe Experience Manager fornece várias configurações de sincronização pr
 1. Se não atendem, decida se é necessário criar as suas próprias configurações.
 1. Especifique as configurações de implantação a serem usadas para as Live Copies.
 
-## Configurações instaladas e personalizadas de implementação {#installed-and-custom-rollout-configurations}
+## Configurações de implantação instaladas e personalizadas {#installed-and-custom-rollout-configurations}
 
-Esta seção fornece informações sobre as configurações de implementação instaladas e as ações de sincronização que elas usam, além de como criar configurações personalizadas, se necessário.
+Esta seção fornece informações sobre as configurações de implantação instaladas e as ações de sincronização que elas usam, e como criar configurações personalizadas, se necessário.
 
 >[!CAUTION]
 >
 >Atualizar ou alterar uma configuração de implantação pronta para uso **not** é recomendado. Se houver um requisito para uma ação ativa personalizada, ela deverá ser adicionada em uma configuração de implantação personalizada.
 
-### Acionadores de implementação {#rollout-triggers}
+### Acionadores de implantação {#rollout-triggers}
 
-Cada configuração de implementação usa um acionador de implementação que faz com que a implementação ocorra. As configurações de implementação podem usar um dos seguintes acionadores:
+Cada configuração de implantação usa um acionador de implantação que ocasiona a implantação. As configurações de implantação podem usar um dos seguintes acionadores:
 
 * **Ao implantar**: o comando **Implantação** é usado na página de blueprint ou o comando **Sincronizar** é usado na página da Live Copy.
 * **Em modificação**: a página de origem é modificada.
@@ -100,7 +100,7 @@ Você pode configurar vários serviços OSGi que suportam ações de sincroniza�
 
 Ao trabalhar com o AEM há vários métodos de gerenciamento das definições de configuração desses serviços; consulte [Configurar OSGi](/help/implementing/deploying/configuring-osgi.md) para obter mais detalhes e as práticas recomendadas
 
-A tabela a seguir lista as ações de sincronização para as quais você pode especificar os nós a serem excluídos. A tabela fornece os nomes dos serviços a serem configurados usando o Console na Web e o PID para configurar o usando um nó de repositório.
+A tabela a seguir lista as ações de sincronização para as quais você pode especificar os nós a serem excluídos. A tabela fornece os nomes dos serviços a serem configurados usando o Console da Web e o PID para configurar usando um nó de repositório.
 
 | Ação de sincronização | Nome do serviço no Console da web | PID do serviço |
 |---|---|---|
@@ -119,11 +119,11 @@ A tabela a seguir descreve as propriedades que você pode configurar:
 | Propriedades da página excluída | `cq.wcm.msm.action.excludedprops` | Uma expressão regular que corresponde às propriedades de página que serão excluídas da ação de sincronização |
 | Tipos de nó Mixin ignorados | `cq.wcm.msm.action.ignoredMixin` | Uma expressão regular que corresponde aos nomes dos tipos de nó mixin que serão excluídos da ação de sincronização (disponível somente para a ação`contentUpdate`) |
 
-#### Ação de atualização de conteúdo do MSM CQ - Exclusões {#cq-msm-content-update-action-exclusions}
+#### Ação de atualização de conteúdo MSM CQ - Exclusões {#cq-msm-content-update-action-exclusions}
 
-Várias propriedades e tipos de nó são excluídas por padrão, elas são definidas na configuração OSGi da **Ação de atualização de conteúdo do MSM CQ**, em **Propriedades de página excluídas**.
+Várias propriedades e tipos de nó são excluídos por padrão, eles são definidos na configuração OSGi de **Ação de atualização de conteúdo MSM CQ**, em **Propriedades da página excluída**.
 
-Por padrão, as propriedades que correspondentes às seguintes expressões comuns são excluídas (ou seja, não é atualizada) na implementação:
+Por padrão, as propriedades que correspondem às seguintes expressões regulares são excluídas (ou seja, não atualizadas) na implantação:
 
 ![Regexes de exclusão da Live Copy](../assets/live-copy-exclude.png)
 
@@ -139,7 +139,7 @@ Você pode configurar vários serviços OSGi que oferecem suporte às ações de
 
 Ao trabalhar com o AEM, há vários métodos de gerenciamento das definições de configuração desses serviços; consulte [Configurar OSGi](/help/implementing/deploying/configuring-osgi.md) para obter mais detalhes e as práticas recomendadas
 
-A tabela a seguir lista as ações de sincronização para as quais você pode especificar a atualização de referência. A tabela fornece os nomes dos serviços a serem configurados usando o Console na Web e o PID para configurar o usando um nó de repositório.
+A tabela a seguir lista as ações de sincronização para as quais você pode especificar a atualização de referência. A tabela fornece os nomes dos serviços a serem configurados usando o Console da Web e o PID para configurar usando um nó de repositório.
 
 | Propriedade do Console da web | Propriedade OSGi | Descrição |
 |---|---|---|
@@ -157,7 +157,7 @@ A seguinte lista de locais onde você pode especificar as configurações de dis
 * **Propriedades da página principal da Live Copy:** quando nenhuma página de Live Copy ou página de origem do blueprint é definida com uma configuração de implantação, a configuração que se aplica à página principal da página de Live Copy é usada. 
 * **[Padrão do sistema](live-copy-sync-config.md#setting-the-system-default-rollout-configuration):** quando a configuração de implantação da página principal da Live Copy não pode ser determinada, a configuração padrão do sistema é usada.
 
-Por exemplo, um blueprint usa o site de [tutorial WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) como conteúdo de origem. Um site é criado a partir do blueprint. Cada item da lista a seguir descreve um cenário diferente sobre o uso de configurações de implementação:
+Por exemplo, um blueprint usa o site de [tutorial WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) como conteúdo de origem. Um site é criado a partir do blueprint. Cada item na lista a seguir descreve um cenário diferente com relação ao uso de configurações de implantação:
 
 * Nenhuma das páginas do blueprint ou das páginas de Live Copy é configurada para usar uma configuração de implantação. O MSM usa a configuração de implantação padrão do sistema para todas as páginas de Live Copy.
 * A página raiz do site WKND é configurada com várias configurações de implantação. O MSM usa essas configurações de implantação para todas as páginas de Live Copy.
@@ -179,19 +179,19 @@ Também é possível definir as configurações de implantação para uma págin
 
 1. Se necessário, ajuste o sinalizador de **Herança da Live Copy**. Se essa opção for marcada, a configuração da Live Copy terá efeito em todas as tarefas derivadas.
 
-1. Desmarque a propriedade **Herdar configuração de implementação do Pai** e selecione uma ou mais configurações de implementação na lista.
+1. Limpe a **Herdar configurações de implantação do primário** e selecione uma ou mais configurações de implantação na lista.
 
-   As configurações de implementação selecionadas aparecem abaixo da lista suspensa.
+   As configurações de implantação selecionadas aparecem abaixo da lista suspensa.
 
    ![Substituição da herança de configuração da Live Copy](../assets/live-copy-inherit-override.png)
 
 1. Clique ou toque em **Salvar &amp; Fechar**.
 
-### Definir a configuração de implementação de uma página do blueprint {#setting-the-rollout-configuration-for-a-blueprint-page}
+### Definir a configuração de implantação de uma página do blueprint {#setting-the-rollout-configuration-for-a-blueprint-page}
 
-Configure uma página do blueprint com as configurações de implementação a serem usadas quando a página do blueprint for distribuída.
+Configure uma página de blueprint com as configurações de implantação a serem usadas quando a página de blueprint for implantada.
 
-Observe que as páginas secundárias da página do blueprint herdam a configuração. Ao definir a configuração de implementação a ser usada, você pode estar substituindo a configuração que a página herda de seu pai.
+Observe que as páginas secundárias da página do blueprint herdam a configuração. Ao definir a configuração de implantação a ser usada, você pode substituir a configuração que a página herda da página principal.
 
 1. Use o console **Sites** para selecionar a página raiz do blueprint.
 1. Selecione **Propriedades** na barra de ferramentas.

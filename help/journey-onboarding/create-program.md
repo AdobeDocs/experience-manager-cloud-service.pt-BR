@@ -53,11 +53,11 @@ Siga estas etapas para criar um programa de sandbox.
 
    ![Página de aterrissagem do Cloud Manager](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cloud-manager-my-programs.png)
 
-1. No assistente criar programa, selecione **Configurar uma sandbox** e forneça um nome de programa e toque ou clique **Continuar**.
+1. No assistente de criação de programas, selecione **Configurar uma sandbox** e forneça um nome de programa e toque ou clique **Continuar**.
 
    ![Criação de tipo de programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-sandbox.png)
 
-1. No **Configurar a sandbox** , escolha as soluções que deseja ativar no programa sandbox. O **Sites** e **Ativos** As soluções do sempre são incluídas em programas sandbox e são selecionadas automaticamente. Isso é suficiente para o nosso exemplo de integração. Clique em **Criar**.
+1. No **Configurar sua sandbox** , você pode escolher quais soluções deseja ativar no programa de sandbox. A variável **Sites** e **Assets** as soluções são sempre incluídas em programas de sandbox e são selecionadas automaticamente. Isso é suficiente para nosso exemplo de integração. Clique em **Criar**.
 
    ![Seleção da solução](assets/set-up-sandbox-onboarding.png)
 
@@ -73,7 +73,7 @@ Agora que seu primeiro programa foi criado, você pode criar ambientes para ele.
 
 ## Recursos adicionais {#additional-resources}
 
-Veja a seguir recursos adicionais e opcionais, caso deseje ir além do conteúdo da jornada de integração.
+A seguir estão recursos adicionais e opcionais se você quiser ir além do conteúdo da jornada de integração.
 
 * [Programas e tipos de programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) - Saiba mais sobre a hierarquia do Cloud Manager e como os diferentes tipos de programas se encaixam em sua estrutura e a diferença entre eles.
 * [Criação de programas do sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) - Saiba como usar o Cloud Manager para criar seu próprio programa de sandbox para treinamentos, demonstrações, POCs ou outros fins de não produção.

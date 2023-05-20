@@ -1,11 +1,11 @@
 ---
 title: Criação de uma página para dispositivos móveis
-description: Ao criar em dispositivos móveis, você pode alternar entre vários emuladores para ver o que o usuário final vê
+description: Ao criar para dispositivos móveis, você pode alternar entre vários emuladores para ver o que o usuário final vê
 exl-id: fabd4468-3304-402f-9522-342da3bbae94
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '267'
-ht-degree: 100%
+ht-degree: 57%
 
 ---
 
@@ -13,9 +13,9 @@ ht-degree: 100%
 
 As páginas do Adobe Experience Manager são baseadas em um layout responsivo. [O layout responsivo adapta o conteúdo para ajustá-lo automaticamente ao dispositivo de destino, eliminando a necessidade de criar conteúdo para dispositivos específicos.](/help/sites-cloud/authoring/features/responsive-layout.md)
 
-Ao criar uma página para dispositivos móveis, a página é exibida de uma maneira que emula o dispositivo móvel. Ao criar a página, você pode alternar entre vários emuladores para ver o que o usuário final vê ao acessar a página.
+Ao criar uma página móvel, a página é exibida de uma forma que emula o dispositivo móvel. Ao criar a página, você pode alternar entre vários emuladores para ver o que o usuário final vê ao acessar a página.
 
-Os dispositivos são agrupados nas categorias Recurso, Inteligente e Toque, de acordo com as capacidades dos dispositivos de renderizar uma página. Quando o usuário final acessa uma página para dispositivos móveis, o AEM detecta o dispositivo e envia a representação que corresponde ao seu grupo de dispositivos.
+Os dispositivos são agrupados no recurso de categorias, inteligente e por toque de acordo com os recursos dos dispositivos para renderizar uma página. Quando o usuário final acessa uma página móvel, o AEM detecta o dispositivo e envia a representação que corresponde ao seu grupo de dispositivos.
 
 >[!NOTE]
 >

@@ -157,7 +157,7 @@ O aplicativo é o Formulário adaptável associado ao fluxo de trabalho. Quando 
    <td>A descrição está visível na Caixa de entrada do AEM. Forneça informações detalhadas sobre o aplicativo nos campos de descrição. Por exemplo, Finalidade do aplicativo.<br /> </td>
   </tr>
   <tr>
-   <td>Formulário adaptativo</td>
+   <td>Formulário adaptável</td>
    <td><p>Especifique o caminho de um Formulário adaptável. Quando um usuário inicia um aplicativo, o Formulário adaptável especificado é exibido.</p> <p><strong>Nota</strong>: os aplicativos de fluxo de trabalho não são compatíveis com formulários e documentos PDF que são maiores que uma página ou exigem rolagem no Apple iPad. Quando um aplicativo é aberto no Apple iPad e o formulário adaptável ou o documento PDF é maior que uma página, os campos de formulário e o conteúdo da segunda página são perdidos.</p> </td>
   </tr>
   <tr>

@@ -382,7 +382,7 @@ Você pode visualizar banners do carrossel no Editor do carrossel (método prefe
 
    ![experience_fragment-carouselbanner-viewdropdown](assets/experience_fragment-carouselbanner-viewerdropdown.png)
 
-1. Selecione **[!UICONTROL Visualizar]**.
+1. Selecionar **[!UICONTROL Visualizar]**.
 1. Para testar suas ações associadas, selecione os pontos de acesso ou mapas de imagem na imagem.
 
 **Para visualizar banners do carrossel na lista Visualizadores:**

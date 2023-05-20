@@ -5,7 +5,7 @@ exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
 source-git-commit: 9db22dca0fd6debaff0d93e1958e59536efabad8
 workflow-type: tm+mt
 source-wordcount: '1107'
-ht-degree: 5%
+ht-degree: 1%
 
 ---
 
@@ -54,7 +54,7 @@ Siga as etapas abaixo para criar um novo canal de sequência no Screens as a Clo
 
 ## Gerenciamento de um canal {#managing-channels}
 
-Você pode editar, exibir propriedades e o painel, copiar, visualizar e excluir um canal.
+É possível editar, exibir propriedades e painel, copiar, visualizar e excluir um canal.
 
 Navegue até o canal no seu projeto e selecione o canal, conforme mostrado na figura abaixo. Agora é possível selecionar as opções, como editar o canal, exibir propriedades, visualizar conteúdo, gerenciar publicação ou excluir o canal da barra de ações.
 
@@ -84,7 +84,7 @@ Os seguintes modelos estão disponíveis ao usar o **Criar** assistente de canal
 
 | Modelos disponíveis | Descrição |
 |--- |--- |
-| Pasta de canais | Permite criar uma pasta para armazenar uma coleção de canais. |
+| Pasta de canais | Permite criar uma pasta para armazenar a coleção de canais. |
 | Canal de sequência | Permite criar um canal que reproduz os componentes sequencialmente (um por um em uma apresentação de slides). |
 | Canal de tela dividida em L à esquerda ou à direita | Permite que os autores de conteúdo visualizem diferentes tipos de ativos em zonas de tamanho adequado. |
 

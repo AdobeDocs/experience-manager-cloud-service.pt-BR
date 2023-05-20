@@ -1,17 +1,17 @@
 ---
 title: Convenções de nomenclatura
-description: Os nós no repositório estão sujeitos às convenções de nomenclatura do Java Content Repository
+description: Os nós no repositório estão sujeitos às convenções de nomenclatura do Repositório de conteúdo Java
 exl-id: 3c5c39dd-b209-488b-a93e-e840786fe224
 source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
 source-wordcount: '223'
-ht-degree: 17%
+ht-degree: 1%
 
 ---
 
 # Convenções de nomenclatura{#naming-conventions}
 
-Os nós no repositório estão sujeitos às convenções de nomenclatura do Java Content Repository. No entanto, o AEM impõe mais convenções para o nome dos nós da página.
+Os nós no repositório estão sujeitos às convenções de nomenclatura do Repositório de conteúdo Java. No entanto, o AEM impõe mais convenções para o nome dos nós da página.
 
 ## Convenções de nomenclatura para páginas {#naming-conventions-for-pages}
 

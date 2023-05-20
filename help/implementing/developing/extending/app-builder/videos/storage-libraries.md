@@ -1,6 +1,6 @@
 ---
 title: Bibliotecas de armazenamento do App Builder
-description: Saiba mais sobre as bibliotecas de armazenamento de arquivos e de estado para aplicativos do App Builder.
+description: Saiba mais sobre as bibliotecas de armazenamento de estado e arquivo para aplicativos do App Builder.
 version: Cloud Service
 feature: App Builder
 topic: Integrations, Development

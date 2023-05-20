@@ -114,9 +114,9 @@ Ambientes hibernados ainda permitem a realização de implantações e atualiza�
 
 * Os ambientes em um programa de sandbox são hibernados automaticamente após oito horas de inatividade.
    * A inatividade é definida como o não recebimento de solicitações dos serviços de autoria, visualização ou publicação.
-   * Uma vez hibernados, eles podem ser [hibernação manual.](#de-hibernation-introduction)
+   * Uma vez hibernados, eles podem ser [hibernação cancelada manualmente.](#de-hibernation-introduction)
 * Os programas de sandbox são excluídos após seis meses em modo de hibernação contínua, depois disso, podem ser recriados.
 
 >[!NOTE]
 >
->Somente ambientes sandbox são excluídos automaticamente após seis meses de hibernação contínua. O programa sandbox com seu repositório e código é retido.
+>Somente ambientes de sandbox são excluídos automaticamente após seis meses de hibernação contínua. O programa de sandbox com seu repositório e código é retido.

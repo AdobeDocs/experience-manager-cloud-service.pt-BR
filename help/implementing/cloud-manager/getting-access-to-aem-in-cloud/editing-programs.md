@@ -53,7 +53,7 @@ Siga estas etapas para editar um programa.
    ![Editar configurações de publicação](assets/edit-program-go-live.png)
 
    * Essa data é somente para fins informativos e aciona o widget de publicação na página de visão geral do programa para fornecer links no produto para a documentação de práticas recomendadas do AEM as a Cloud Service em tempo hábil, a fim de se alinhar com a sua jornada, resultando em uma experiência de publicação bem-sucedida e tranquila.
-   * Esta guia não está disponível para programas sandbox.
+   * Esta guia não está disponível para programas de sandbox.
 
 1. Clique em **Atualizar** para salvar as alterações no programa.
 

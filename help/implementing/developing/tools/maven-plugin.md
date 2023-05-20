@@ -132,7 +132,7 @@ Além dos parâmetros a seguir, consulte as descrições nas [Parâmetros comuns
 | `project` | `org.apache.maven.project.MavenProject` | Sim | O projeto para o qual o plug-in está configurado | O projeto Maven que está implícito porque o projeto contém a configuração do plug-in |
 | `repositoryId` (POM), `repoID` (linha de comando) | `String` | Não | `temp` | A ID do repositório do qual o artefato é recuperado |
 | `repositoryUrl` (POM), `repoURL` (linha de comando) | `String` | Não | Nenhum | O URL do repositório do qual o artefato é recuperado |
-| version | Sequência de caracteres | Não | Nenhum | A versão do artefato a ser instalado |
+| version | String | Não | Nenhum | A versão do artefato a ser instalado |
 
 ### ls {#ls}
 

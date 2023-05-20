@@ -21,14 +21,14 @@ Esta página documenta as notas de versão do Cloud Manager 2023.5.0 no AEM as a
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento do Cloud Manager versão 2023.5.0 em AEM as a Cloud Service é 11 de maio de 2023. A próxima versão está planejada para 8 de junho de 2023.
+A data de lançamento do Cloud Manager versão 2023.5.0 no AEM as a Cloud Service é 11 de maio de 2023. A próxima versão está planejada para 8 de junho de 2023.
 
 ## Novidades {#what-is-new}
 
-* O suporte a testes de produto, funcionalidade e interface do usuário foi estendido para [teste de pipeline de não produção.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
-* Além de permitir o teste upstream, [O suporte de teste de interface do usuário foi estendido para o teste Cypress.](/help/implementing/cloud-manager/ui-testing.md)
-* [Cópia de conteúdo de autoatendimento](/help/implementing/developing/tools/content-copy.md) O agora está disponível de um ambiente superior para inferior por meio da interface do usuário do Cloud Manager.
-* A etapa de validação da execução do pipeline foi aprimorada para validar o estado das filas de replicação no início do processo de execução. Isso garante que as etapas de implantação não sejam afetadas por filas bloqueadas que devem ser endereçadas AEM usuários administradores diretamente no ambiente de criação.
+* O suporte a testes de produtos, funcionalidades e interfaces foi estendido para [teste de pipeline de não produção.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+* Além de permitir testes upstream, [O suporte a testes de interface do usuário foi estendido para testes de Cypress.](/help/implementing/cloud-manager/ui-testing.md)
+* [Cópia de conteúdo de autoatendimento](/help/implementing/developing/tools/content-copy.md) Agora está disponível de um ambiente superior a inferior por meio da interface do usuário do Cloud Manager.
+* A etapa de validação da execução do pipeline foi aprimorada para validar o estado das filas de replicação no início do processo de execução. Isso garante que as etapas de implantação não sejam afetadas por filas bloqueadas que devem ser endereçadas por usuários administradores do AEM diretamente no ambiente de criação.
 
 ## Correções de erros {#bug-fixes}
 

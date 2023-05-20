@@ -1,13 +1,13 @@
 ---
 title: Publicação de conteúdo com o Editor visual universal
 description: Saiba como o Editor visual universal publica o conteúdo e como seus aplicativos podem lidar com esse conteúdo.
-source-git-commit: 7eeebade0255263a240476bc32f9530574495751
-workflow-type: ht
+exl-id: aee34469-37c2-4571-806b-06c439a7524a
+source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 100%
 
 ---
-
 
 # Publicação de conteúdo com o Editor visual universal {#publishing}
 

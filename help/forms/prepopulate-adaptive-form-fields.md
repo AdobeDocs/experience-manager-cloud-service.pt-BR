@@ -338,7 +338,7 @@ Você pode usar o serviço de preenchimento prévio personalizado para os cenár
 
 O serviço de pré-preenchimento é um serviço OSGi e é empacotado por meio do pacote OSGi. Crie o pacote OSGi, faça upload e instale-o no [!DNL AEM Forms] pacotes. Antes de começar a criar o pacote:
 
-- [Baixe o [!DNL AEM Forms] Client SDK](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html)
+- [Baixe o [!DNL AEM Forms] Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
 - Baixar o pacote padrão
 
 - Coloque o arquivo de dados (dados de preenchimento prévio) no repositório crx. Você pode colocar o arquivo em qualquer local na pasta \contents do repositório crx.

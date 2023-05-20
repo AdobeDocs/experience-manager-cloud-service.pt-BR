@@ -446,7 +446,7 @@ A tabela a seguir lista as restrições para dados de entrada com base na fonte 
    <td>Fonte de dados de entrada</td> 
   </tr> 
   <tr> 
-   <td>required</td> 
+   <td>obrigatório</td> 
    <td>Se true, o parâmetro deve ser incluído nos dados de entrada.</td> 
    <td>Swagger, WSDL e banco de dados</td> 
   </tr> 
@@ -486,7 +486,7 @@ A tabela a seguir lista as restrições para dados de entrada com base na fonte 
    <td>Swagger, WSDL, Odata e banco de dados</td> 
   </tr> 
   <tr> 
-   <td>pattern</td> 
+   <td>padrão</td> 
    <td>Especifica uma sequência fixa de caracteres. A cadeia de caracteres de entrada é validada com êxito somente se os caracteres estiverem em conformidade com o padrão especificado.</td> 
    <td>Swagger</td> 
   </tr> 

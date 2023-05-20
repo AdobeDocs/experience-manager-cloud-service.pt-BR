@@ -25,23 +25,23 @@ Siga estas etapas para criar um programa de sandbox.
 
    ![Página de aterrissagem do Cloud Manager](assets/cloud-manager-my-programs.png)
 
-1. No assistente criar programa, selecione **Configurar uma sandbox** e forneça um nome de programa.
+1. No assistente de criação de programas, selecione **Configurar uma sandbox** e forneça um nome de programa.
 
    ![Criação de tipo de programa](assets/create-sandbox.png)
 
 1. Opcionalmente, é possível adicionar uma imagem ao programa arrastando e soltando um arquivo de imagem na **Adicionar uma imagem de programa** direcione ou clique nela para selecionar uma imagem de um navegador de arquivos. Toque ou clique em **Continuar**.
 
-   * A imagem serve somente como o bloco na janela de visão geral do programa e ajuda a identificar o programa.
+   * A imagem serve apenas como o bloco na janela de visão geral do programa e ajuda a identificar o programa.
 
-1. No **Configurar a sandbox** escolha as soluções que deseja ativar no programa sandbox marcando as opções na caixa de diálogo **Soluções e complementos** tabela.
+1. No **Configurar sua sandbox** escolha quais soluções você deseja ativar no programa de sandbox, marcando as opções na caixa de diálogo **Soluções e complementos** tabela.
 
-   * Use as divisas ao lado dos nomes das soluções para mostrar complementos adicionais e opcionais para as soluções.
+   * Use as divisas ao lado dos nomes de solução para mostrar complementos adicionais e opcionais para as soluções.
 
-   * O **Sites** e **Ativos** As soluções são sempre incluídas em programas sandbox e não podem ser desselecionadas.
+   * A variável **Sites** e **Assets** as soluções são sempre incluídas em programas de sandbox e não podem ser desmarcadas.
 
    ![Selecionar soluções e complementos para uma sandbox](assets/sandbox-solutions-add-ons.png)
 
-1. Depois de selecionar as soluções e os complementos para o programa sandbox, toque em **Criar**.
+1. Depois de selecionar as soluções e os complementos para seu programa de sandbox, toque em clique **Criar**.
 
 Você verá um cartão de novo programa de sandbox na página de aterrissagem com um indicador de status, conforme o processo de configuração avança.
 

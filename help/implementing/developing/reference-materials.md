@@ -59,7 +59,7 @@ Se uma API for fornecida pelo AEM, prefira-a ao Sling, JCR e OSGi. Se o AEM não
 
 O AEM oferece componentes personalizáveis e opções de entrega de conteúdo.
 
-| Recurso | Descrição |
+| Destaque | Descrição |
 |---|---|
 | [Os Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) | Componentes Web Content Management (WCM) padronizados para AEM para acelerar o tempo de desenvolvimento e reduzir o custo de manutenção de seus sites |
 | [Exportador JSON](/help/implementing/developing/components/json-exporter.md) | Entregar o conteúdo de qualquer página AEM no formato de modelo de dados JSON |

@@ -23,9 +23,9 @@ Os testes de interface do usuário personalizados são um recurso opcional que p
 
 O AEM fornece um conjunto integrado de [quality gates (portais de qualidade) do Cloud Manager](/help/implementing/cloud-manager/custom-code-quality-rules.md) para garantir atualizações tranquilas para aplicativos personalizados. Em especial, os portais de teste de TI já promovem a criação e a automação de testes personalizados usando as APIs do AEM.
 
-Os testes da interface do usuário são empacotados em uma imagem do Docker para permitir uma grande escolha de idioma e estruturas (como Cypress.IO, Selenium, Java e Maven e Javascript). Além disso, um projeto de testes de interface pode ser facilmente gerado usando o [Arquétipo de projeto do AEM.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR)
+Os testes de interface do usuário são empacotados em uma imagem do Docker para permitir uma grande variedade de opções de linguagem e estruturas (como Cypress.IO, Selenium, Java e Maven, além de Javascript). Além disso, um projeto de testes de interface pode ser facilmente gerado usando o [Arquétipo de projeto do AEM.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR)
 
-O Adobe incentiva o uso do Cypress.IO, pois oferece recarregamento em tempo real e espera automática, o que ajuda a economizar tempo e melhora a produtividade durante os testes. O Cypress.IO também oferece uma sintaxe simples e intuitiva, facilitando o aprendizado e o uso, mesmo para aqueles que são novos em testes.
+O Adobe incentiva o uso do Cypress.IO, pois oferece recarregamento em tempo real e espera automática, o que ajuda a economizar tempo e melhora a produtividade durante os testes. O Cypress.IO também fornece uma sintaxe simples e intuitiva, facilitando a aprendizagem e o uso, mesmo para quem é novo no teste.
 
 Os testes de interface são executados como parte de uma porta de qualidade específica para cada pipeline do Cloud Manager que contém uma etapa [**de** Teste de interface personalizada](/help/implementing/cloud-manager/deploy-code.md) nos [pipelines de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) ou, opcionalmente, nos [pipelines de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). Quaisquer testes de interface, incluindo regressão e novas funcionalidades, permitem que erros sejam detectados e relatados.
 
@@ -205,12 +205,12 @@ Esta seção descreve as convenções que a imagem do Docker que contém seus te
 
 ### Variáveis de ambiente {#environment-variables}
 
-As variáveis de ambiente a seguir serão passadas para a imagem Docker em tempo de execução, dependendo da estrutura.
+As variáveis de ambiente a seguir serão passadas para a imagem do Docker no tempo de execução, dependendo da sua estrutura.
 
-| Variável | Exemplos | Descrição | Estrutura de teste |
+| Variável | Exemplos | Descrição | Estrutura de testes |
 |---|---|---|---|
-| `SELENIUM_BASE_URL` | `http://my-ip:4444` | A URL do servidor Selenium | Apenas selênio |
-| `SELENIUM_BROWSER` | `chrome` | A implementação do navegador usada pelo servidor Selenium | Apenas selênio |
+| `SELENIUM_BASE_URL` | `http://my-ip:4444` | A URL do servidor Selenium | Somente selênio |
+| `SELENIUM_BROWSER` | `chrome` | A implementação do navegador usada pelo servidor Selenium | Somente selênio |
 | `AEM_AUTHOR_URL` | `http://my-ip:4502/context-path` | A URL da instância do autor do AEM | Todos |
 | `AEM_AUTHOR_USERNAME` | `admin` | O nome de usuário para fazer logon na instância de autor do AEM | Todos |
 | `AEM_AUTHOR_PASSWORD` | `admin` | A senha para fazer logon na instância de autor do AEM | Todos |
@@ -218,7 +218,7 @@ As variáveis de ambiente a seguir serão passadas para a imagem Docker em tempo
 | `AEM_PUBLISH_USERNAME` | `admin` | O nome de usuário para fazer logon na instância de publicação do AEM | Todos |
 | `AEM_PUBLISH_PASSWORD` | `admin` | A senha para fazer logon na instância de publicação do AEM | Todos |
 | `REPORTS_PATH` | `/usr/src/app/reports` | O caminho onde o relatório XML dos resultados do teste deve ser salvo | Todos |
-| `UPLOAD_URL` | `http://upload-host:9090/upload` | O URL para o qual o arquivo deve ser carregado para torná-lo acessível à estrutura de teste | Todos |
+| `UPLOAD_URL` | `http://upload-host:9090/upload` | O URL onde o arquivo deve ser carregado para torná-lo acessível à estrutura de teste | Todos |
 
 Os exemplos de teste da Adobe fornecem funções auxiliares para acessar os parâmetros de configuração:
 
@@ -289,24 +289,24 @@ Os testes às vezes devem carregar arquivos no aplicativo que está sendo testad
 >
 >Para executar os testes funcionais no computador local, crie um usuário com permissões de administrador para alcançar o mesmo comportamento.
 
-1. A infraestrutura confinada que é escoada para testes funcionais é limitada pelos seguintes limites:
+1. A infraestrutura contida que tem escopo para testes funcionais é limitada pelos seguintes limites:
 
 | Tipo | Valor | Descrição |
 |----------------------|-------|--------------------------------------------------------------------|
-| CPU | 2.0 | Quantidade de tempo reservado da CPU por execução de teste |
-| Memória | 1Gi | Quantidade de memória alocada no teste, valor em gibytes |
+| CPU | 2.0 | Quantidade de tempo de CPU reservado por execução de teste |
+| Memória | 1Gi | Quantidade de memória alocada para o teste, valor em gibibytes |
 | Tempo limite | 30m | A duração após a qual o teste será encerrado. |
-| Duração recomendada | 15m | Recomendamos escrever os testes para não demorar mais do que esse tempo. |
+| Duração recomendada | 15m | Recomendamos gravar os testes para não demorar mais do que esse tempo. |
 
 >[!NOTE]
 >
-> Caso precise de mais recursos, crie um caso de Atendimento ao cliente e descreva o caso de uso; nossa equipe verificará sua solicitação e fornecerá a assistência apropriada.
+> Se você precisar de mais recursos, crie um caso de Atendimento ao cliente e descreva seu caso de uso. Nossa equipe analisará sua solicitação e fornecerá a assistência apropriada.
 
 
 ## Execução de testes de interface locais {#run-ui-tests-locally}
 
-Antes de ativar testes da interface em um pipeline do Cloud Manager, é recomendável executar os testes da interface localmente em relação à variável [AEM SDK as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
-ou contra uma instância real AEM as a Cloud Service.
+Antes de ativar testes de interface do usuário em um pipeline do Cloud Manager, é recomendável executar os testes de interface do usuário localmente no [SDK AS A CLOUD SERVICE AEM](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
+ou contra uma instância as a Cloud Service real do AEM.
 
 ### Exemplo de teste do JavaScript {#javascript-sample}
 

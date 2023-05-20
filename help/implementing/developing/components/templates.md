@@ -5,7 +5,7 @@ exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 source-git-commit: f5aa9229ff06fdcff5474594269ebcf9daf09e41
 workflow-type: tm+mt
 source-wordcount: '3300'
-ht-degree: 10%
+ht-degree: 6%
 
 ---
 
@@ -40,7 +40,7 @@ Este documento:
 
 A criação de modelos de página é feita principalmente com o [console de modelos e editor de modelos](/help/sites-cloud/authoring/features/templates.md) por um autor de modelo. Esta seção fornece uma visão geral desse processo e segue com uma descrição do que ocorre em nível técnico.
 
-Ao criar um novo modelo editável:
+Ao criar um novo modelo editável, você:
 
 1. Criar um [pasta dos modelos](#template-folders). Isso não é obrigatório, mas é uma prática recomendada.
 1. Selecione um [tipo de modelo](#template-type). Isso é copiado para criar o [definição do modelo](#template-definitions).
@@ -54,8 +54,8 @@ Ao criar um novo modelo editável:
    **Estrutura**
 
    * A estrutura permite definir os componentes e o conteúdo para o modelo.
-   * Os componentes definidos na estrutura do modelo não podem ser movidos em uma página resultante ou excluídos de qualquer página resultante.
-   * Se desejar que os autores da página possam adicionar e remover componentes, adicione um sistema de parágrafo ao modelo.
+   * Os componentes definidos na estrutura do modelo não podem ser movidos em uma página resultante nem excluídos de qualquer página resultante.
+   * Se você quiser que os autores de página possam adicionar e remover componentes, adicione um sistema de parágrafo ao modelo.
    * Os componentes podem ser desbloqueados e bloqueados novamente para permitir que você defina o conteúdo inicial.
 
    Para obter detalhes sobre como um autor de modelo define a estrutura, consulte [Criação de modelos de página](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author).
@@ -66,8 +66,8 @@ Ao criar um novo modelo editável:
 
    * As políticas de conteúdo definem as propriedades de design de um componente.
 
-      * Por exemplo, os componentes disponíveis ou as dimensões mínimas/máximas.
-   * Eles são aplicáveis ao modelo (e às páginas criadas com o modelo).
+      * Por exemplo, os componentes disponíveis ou as dimensões mínima/máxima.
+   * Elas são aplicáveis ao modelo (e às páginas criadas com o modelo).
 
    Para obter detalhes sobre como um autor de modelo define políticas, consulte [Criação de modelos de página](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author).
 
@@ -102,7 +102,7 @@ Ao criar um novo modelo editável:
 
 1. Use-a para criar páginas de conteúdo.
 
-   * Ao usar um modelo para criar uma nova página, não há diferenças visíveis e nenhuma indicação entre os modelos estáticos e editáveis.
+   * Ao usar um modelo para criar uma nova página, não há diferença visível e nenhuma indicação entre modelos estáticos e editáveis.
    * Para o autor da página, o processo é transparente.
 
    Para obter detalhes sobre como um autor de página usa modelos para criar uma página, consulte [Criar e organizar páginas](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#templates).
@@ -246,7 +246,7 @@ A tabela a seguir detalha as permissões necessárias para a edição de modelos
   </tr>
   <tr>
    <td>Usuário da Web Anônimo</td>
-   <td>leitura</td>
+   <td>ler</td>
    <td>O usuário da Web anônimo deve ler os modelos ao renderizar uma página</td>
   </tr>
   <tr>
@@ -262,7 +262,7 @@ A tabela a seguir detalha as permissões necessárias para a edição de modelos
   </tr>
   <tr>
    <td>Usuário da Web Anônimo</td>
-   <td>leitura</td>
+   <td>ler</td>
    <td>O Usuário Anônimo da Web deve ler as políticas ao renderizar uma página</td>
   </tr>
   <tr>
@@ -273,12 +273,12 @@ A tabela a seguir detalha as permissões necessárias para a edição de modelos
   <tr>
    <td rowspan="2"><code>/conf/&lt;site&gt;/settings/template-types</code></td>
    <td>Autor do modelo</td>
-   <td>leitura</td>
+   <td>ler</td>
    <td>O autor do modelo cria um novo modelo com base em um dos tipos de modelo predefinidos.</td>
   </tr>
   <tr>
    <td>Usuário da Web Anônimo</td>
-   <td>nenhum</td>
+   <td>nenhuma</td>
    <td>O usuário da Web anônimo não deve acessar os tipos de modelo</td>
   </tr>
  </tbody>
@@ -458,7 +458,7 @@ Quando [editando um modelo, é possível definir o layout](/help/sites-cloud/aut
 
 ### Políticas de conteúdo {#content-policies}
 
-As políticas de conteúdo definem as propriedades de design de um componente. Por exemplo, os componentes disponíveis ou as dimensões mínimas/máximas. Eles são aplicáveis ao modelo (e às páginas criadas com o modelo). As políticas de conteúdo podem ser criadas e selecionadas no editor de modelo.
+As políticas de conteúdo definem as propriedades de design de um componente. Por exemplo, os componentes disponíveis ou as dimensões mínima/máxima. Elas são aplicáveis ao modelo (e às páginas criadas com o modelo). As políticas de conteúdo podem ser criadas e selecionadas no editor de modelo.
 
 * A propriedade `cq:policy`, no `root` nó
    `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`

@@ -22,7 +22,7 @@ ht-degree: 97%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide"
 >title="Iniciar o editor de fragmento de conteúdo"
->abstract="Agora vamos explorar como a criação de conteúdo sem periféricos funciona. Sua avaliação do AEM Headless é integrada a um aplicativo de exemplo do React, para que você possa ver como é fácil para qualquer pessoa gerenciar o conteúdo independentemente e sem tempo de desenvolvimento.<br><br>Inicie este módulo em uma nova guia clicando abaixo e, em seguida, siga este guia."
+>abstract="Agora vamos explorar como funciona a criação de conteúdo headless. Sua avaliação do AEM Headless é integrada a um aplicativo de exemplo do React, para que você possa ver como é fácil para qualquer pessoa gerenciar o conteúdo independentemente e sem tempo de desenvolvimento.<br><br>Inicie este módulo em uma nova guia clicando abaixo e, em seguida, siga este guia."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide_footer"

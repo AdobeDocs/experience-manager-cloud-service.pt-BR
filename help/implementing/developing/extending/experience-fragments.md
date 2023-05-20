@@ -5,7 +5,7 @@ exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
 source-git-commit: 5968554ec221b1fe9969b131ccf0b08ffb7f6494
 workflow-type: tm+mt
 source-wordcount: '1651'
-ht-degree: 3%
+ht-degree: 1%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 ## Noções básicas {#the-basics}
 
-Um [Fragmento de experiência](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) é um grupo de um ou mais componentes, incluindo o conteúdo e o layout que podem ser referenciados nas páginas.
+Um [Fragmento de experiência](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) é um grupo de um ou mais componentes, incluindo conteúdo e layout que podem ser referenciados nas páginas.
 
 Um fragmento de experiência Principal e/ou variante usa:
 

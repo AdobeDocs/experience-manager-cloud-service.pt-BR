@@ -1,6 +1,6 @@
 ---
 title: Fluxo de atividades na linha do tempo
-description: Este artigo descreve como exibir registros de atividades para ativos na linha do tempo.
+description: Este artigo descreve como exibir logs de atividades para ativos na linha do tempo.
 contentOwner: AG
 feature: Asset Reports,Asset Management
 role: Admin,User
@@ -12,9 +12,9 @@ ht-degree: 29%
 
 ---
 
-# Exibir logs de operações de ativos no fluxo de atividades {#activity-stream-in-timeline}
+# Exibir logs de operação de ativos no fluxo de atividades {#activity-stream-in-timeline}
 
-Esse recurso exibe registros de atividades para ativos na linha do tempo. Se você executar qualquer uma das seguintes operações relacionadas a ativos em [!DNL Experience Manager Assets], o recurso de fluxo de atividade atualiza a linha do tempo para refletir a atividade.
+Esse recurso exibe logs de atividades para ativos na linha do tempo. Se você executar qualquer uma das seguintes operações relacionadas ao ativo no [!DNL Experience Manager Assets], o recurso de fluxo de atividade atualiza a linha do tempo para refletir a atividade.
 
 As seguintes operações são registradas no fluxo de atividade:
 
@@ -31,13 +31,13 @@ Os registros de atividades a serem exibidos na linha do tempo são obtidos do lo
 
 >[!NOTE]
 >
->Fluxos de trabalho transitórios não são exibidos na linha do tempo, pois nenhuma informação de histórico é salva para esses fluxos de trabalho.
+>Os workflows transitórios não são exibidos na linha do tempo, pois nenhuma informação de histórico é salva para esses workflows.
 
-Para exibir o fluxo de atividades, execute uma ou mais operações no ativo, selecione o ativo e escolha **[!UICONTROL Linha do tempo]** na lista GlobalNavigation.
+Para exibir o fluxo de atividades, execute uma ou mais operações no ativo, selecione o ativo e escolha **[!UICONTROL Linha do tempo]** na lista GlobalNav.
 
 <!-- ![timeline-2](assets/timeline-2.png) -->
 
-A linha do tempo exibe o fluxo de atividades para as operações que você executa nos ativos.
+A linha do tempo exibe o fluxo de atividades para as operações executadas nos ativos.
 
 <!-- ![activity_stream](assets/activity_stream.png) -->
 

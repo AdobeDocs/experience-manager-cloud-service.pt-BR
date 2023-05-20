@@ -1,13 +1,13 @@
 ---
 title: Configurações do OSGi para o nível de visualização
-description: Saiba como configurar o serviço de visualização de AEM para visualizar o conteúdo antes de entrar em vigor.
-source-git-commit: 7b56bb05e31d7a61d7a8fb13e2bd0ff6e4fb301d
+description: Saiba como configurar o serviço de visualização do AEM para visualizar o conteúdo antes de ele ser publicado.
+exl-id: 1200bb17-8a3c-4e41-85f4-ed2334b61f69
+source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
 workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 64%
 
 ---
-
 
 # Configurações do OSGi para o nível de visualização {#configure-osgi-preview-tier}
 
@@ -21,7 +21,7 @@ Os valores da propriedade OSGi do nível de visualização são herdados do nív
 >
 >Para obter mais detalhes sobre os ambientes de visualização, consulte o documento [Gerenciar ambientes.](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
 
-## Definição das configurações do OSGi para a camada de visualização {#configuring-osgi-settings-for-the-preview-tier}
+## Definição das configurações de OSGi para a camada de visualização {#configuring-osgi-settings-for-the-preview-tier}
 
 O exemplo a seguir de uma propriedade OSGi determina o URL de um endpoint de integração.
 

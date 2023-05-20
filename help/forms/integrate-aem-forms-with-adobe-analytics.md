@@ -223,7 +223,7 @@ Para usar [!DNL Adobe Launch] em um Formulário adaptável existente:
 1. Selecione o Formulário adaptável e toque em **[!UICONTROL Propriedades]**.
 1. No **[!UICONTROL Básico]** , selecione a [contêiner de configuração](#create-adobe-launch-configuration) usado ao criar a configuração do Adobe Launch.
 1. Toque **[!UICONTROL Salvar e fechar]**. O formulário adaptável está ativado para [!DNL Adobe Analytics].
-1. Publicar o formulário.
+1. Publique o formulário.
 
 Depois de habilitar [!DNL Adobe Analytics] para um formulário adaptável, é possível [validar](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html?lang=en#validate-the-page-view-beacon) se houver um fluxo de evento de dados apropriado entre o AEM Forms e [!DNL Adobe Analytics]. A integração do AEM Forms com o Adobe Analytics está concluída. Agora você pode [configurar e exibir relatórios no Adobe Analytics](#view-reports-adobe-analytics).
 

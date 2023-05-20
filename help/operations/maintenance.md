@@ -44,24 +44,24 @@ A tabela a seguir ilustra as tarefas de manutenção disponíveis no momento do 
   <tr>
     <td>Remoção da versão</td>
     <td>Adobe</td>
-    <td>Para ambientes existentes (criados antes de 1º de junho de 2023), a limpeza é desativada e não será ativada no futuro, a menos que seja explicitamente ativada pelo cliente, e nesse momento ela também pode configurá-la com valores personalizados.<br><br> <!--Alexandru: please leave the two line breaks in place, otherwise spacing won't render properly-->Novos ambientes (aqueles criados a partir de 1º de junho de 2023) terão a limpeza ativada por padrão com os valores abaixo, com os clientes sendo capazes de configurar com valores personalizados.
+    <td>Para ambientes existentes (aqueles criados antes de 1° de junho de 2023), a limpeza está desativada e não será ativada no futuro, a menos que seja explicitamente ativada pelo cliente, momento em que ele também poderá configurá-la com valores personalizados.<br><br> <!--Alexandru: please leave the two line breaks in place, otherwise spacing won't render properly-->Os novos ambientes (criados a partir de 1 de junho de 2023) terão a limpeza ativada por padrão com os valores abaixo, com os clientes podendo configurar com valores personalizados.
      <ol>
        <li>Versões com mais de 30 dias são removidas</li>
        <li>As 5 versões mais recentes nos últimos 30 dias são mantidas</li>
        <li>Independentemente das regras acima, a versão mais recente é preservada.</li>
-       <br>Recomenda-se que os clientes que têm requisitos normativos para renderizar as páginas do site exatamente como apareciam em uma data específica se integrem a serviços externos especializados.
+       <br>Recomenda-se que os clientes que têm requisitos normativos para renderizar as páginas do site exatamente como aparecem em uma data específica se integrem a serviços externos especializados.
      </ol></td>
   </td>
   </tr>
   <tr>
     <td>Limpeza do log de auditoria</td>
     <td>Adobe</td>
-    <td>Para ambientes existentes (criados antes de 1º de junho de 2023), a limpeza é desativada e não será ativada no futuro, a menos que seja explicitamente ativada pelo cliente, e nesse momento ela também pode configurá-la com valores personalizados.<br><br> <!-- See above for the two line breaks -->Novos ambientes (aqueles criados a partir de 1º de junho de 2023) terão a limpeza ativada por padrão no <code>/content</code> nó do repositório de acordo com o seguinte comportamento:
+    <td>Para ambientes existentes (aqueles criados antes de 1° de junho de 2023), a limpeza está desativada e não será ativada no futuro, a menos que seja explicitamente ativada pelo cliente, momento em que ele também poderá configurá-la com valores personalizados.<br><br> <!-- See above for the two line breaks -->Os novos ambientes (criados a partir de 1º de junho de 2023) terão a limpeza ativada por padrão no <code>/content</code> do repositório de acordo com o seguinte comportamento:
      <ol>
        <li>Para auditoria de replicação, os logs de auditoria com mais de 3 dias são removidos</li>
        <li>Para auditoria do DAM (Assets), os logs de auditoria com mais de 30 dias são removidos</li>
        <li>Para auditoria de página, os logs com mais de 3 dias são removidos.</li>
-       <br>Recomenda-se que os clientes que têm requisitos normativos para produzir logs de auditoria ineditáveis se integrem a serviços externos especializados.
+       <br>Recomenda-se que os clientes que têm requisitos normativos para produzir logs de auditoria não editáveis se integrem a serviços externos especializados.
      </ol></td>
    </td>
   </tr>
@@ -76,7 +76,7 @@ A tabela a seguir ilustra as tarefas de manutenção disponíveis no momento do 
     <td>Cliente</td>
     <td>
     <p>Deve ser feito no Git. Substitua o nó de configuração da janela de manutenção pronto para uso em <code>/libs</code> criando propriedades na pasta <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> ou <code>granite_monthly</code>.</p>
-    <p>Consulte a tabela Janela de manutenção abaixo para obter mais detalhes sobre a configuração. Ative a tarefa de manutenção adicionando outro nó no nó acima. Nomeie-o <code>granite_TaskPurgeTask</code>, com atributo <code>sling:resourceType</code> defina como <code>granite/operations/components/maintenance/task</code> e atributo <code>granite.maintenance.name</code> defina como <code>TaskPurge</code>. Configure as propriedades do OSGI, consulte <code>com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask</code> para a lista de propriedades.</p>
+    <p>Consulte a tabela Janela de manutenção abaixo para obter mais detalhes sobre a configuração. Ative a tarefa de manutenção adicionando outro nó sob o nó acima. Nomear como <code>granite_TaskPurgeTask</code>, com atributo <code>sling:resourceType</code> definir como <code>granite/operations/components/maintenance/task</code> atributo e <code>granite.maintenance.name</code> definir como <code>TaskPurge</code>. Para configurar as propriedades OSGI, consulte <code>com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask</code> para obter a lista de propriedades.</p>
   </td>
   </tr>
     <tr>
@@ -92,7 +92,7 @@ A tabela a seguir ilustra as tarefas de manutenção disponíveis no momento do 
     <td>Cliente</td>
     <td>
     <p>Deve ser feito no Git. Substitua o nó de configuração da janela de manutenção pronto para uso em <code>/libs</code> criando propriedades na pasta <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> ou <code>granite_monthly</code>. Consulte a tabela Janela de manutenção abaixo para obter mais detalhes sobre a configuração.</p>
-    <p>Ative a tarefa de manutenção adicionando outro nó sob o nó acima (nomeie-o como <code>granite_ProjectPurgeTask</code>) com as propriedades apropriadas. Consulte a lista de propriedades OSGI em "Configuração de limpeza de projetos do Adobe".</p>
+    <p>Ative a tarefa de manutenção adicionando outro nó sob o nó acima (nomeie-o como <code>granite_ProjectPurgeTask</code>) com as propriedades apropriadas. Consulte a lista de propriedades OSGI em "Configuração de limpeza de projetos Adobe".</p>
   </td>
   </tr>
   </tbody>
@@ -126,7 +126,7 @@ A tabela a seguir ilustra as tarefas de manutenção disponíveis no momento do 
     <p><strong>windowStartTime=HH:MM</strong> usando como relógio de 24 horas. Define quando as tarefas de manutenção associadas à Janela de manutenção semanal devem começar a ser executadas.</p>
     <p><strong>windowEndTime=HH:MM</strong> usando como relógio de 24 horas. Define quando as tarefas de manutenção associadas à Janela de manutenção semanal devem parar de ser executadas se ainda não tiverem sido concluídas.</p>
     <p>Uma tarefa de manutenção não pode ser executada mais de uma vez durante esse período.</p>
-    <p><strong>windowScheduleWeekdays= Matriz de 2 valores de 1-7 (por exemplo, [5,5])</strong> O primeiro valor da matriz é o dia de início em que a tarefa é agendada e o segundo valor é o dia de término em que a tarefa seria interrompida. A hora exata de início e término é regida pelos parâmetros windowStartTime e windowEndTime, respectivamente.</p>
+    <p><strong>windowScheduleWeekdays= Matriz de 2 valores de 1 a 7 (por exemplo, [5,5])</strong> O primeiro valor da matriz é o dia de início em que a tarefa é agendada e o segundo valor é o dia de término em que a tarefa será interrompida. A hora exata de início e término é regida pelos parâmetros windowStartTime e windowEndTime, respectivamente.</p>
     </td>
   </tr>
   <tr>
@@ -134,12 +134,12 @@ A tabela a seguir ilustra as tarefas de manutenção disponíveis no momento do 
     <td>Cliente</td>
     <td>Definição de Nó JCR</td>
     <td>
-    <p><strong>windowSchedule=month</strong> (esse valor não deve ser alterado)</p>
+    <p><strong>windowSchedule=month</strong> (este valor não deve ser alterado)</p>
     <p><strong>windowStartTime=HH:MM</strong> usando como relógio de 24 horas. Define quando as tarefas de manutenção associadas à Janela de manutenção mensal devem começar a ser executadas.</p>
     <p><strong>windowEndTime=HH:MM</strong> usando como relógio de 24 horas. Define quando as tarefas de manutenção associadas à Janela de manutenção mensal devem parar de ser executadas se ainda não tiverem sido concluídas.</p>
     <p>Uma tarefa de manutenção não pode ser executada mais de uma vez durante esse período.</p>
-    <p><strong>windowScheduleWeekdays=Array de 2 valores de 1-7 (por exemplo, [5,5])</strong> O primeiro valor da matriz é o dia de início em que a tarefa é agendada e o segundo valor é o dia de término em que a tarefa seria interrompida. A hora exata de início e término é regida pelos parâmetros windowStartTime e windowEndTime, respectivamente.</p>
-    <p><strong>windowFirstLastStartDay= 0/1</strong> 0 para agendar na primeira semana do mês ou 1 para agendar na última semana do mês. A ausência de um valor programaria efetivamente trabalhos no dia regido por windowScheduleWeekdays (a cada mês).</p>
+    <p><strong>windowScheduleWeekdays=Matriz de 2 valores de 1 a 7 (por exemplo, [5,5])</strong> O primeiro valor da matriz é o dia de início em que a tarefa é agendada e o segundo valor é o dia de término em que a tarefa será interrompida. A hora exata de início e término é regida pelos parâmetros windowStartTime e windowEndTime, respectivamente.</p>
+    <p><strong>windowFirstLastStartDay= 0/1</strong> 0 para agendar na primeira semana do mês ou 1 para agendar na última semana do mês. A ausência de um valor agendaria trabalhos no dia regido por windowScheduleWeekdays (todos os meses).</p>
     </td>
     </tr>
     </tbody>

@@ -105,7 +105,7 @@ Você está pronto para continuar sua jornada de integração, aprendendo como [
 
 ## Recursos adicionais {#additional-resources}
 
-Veja a seguir recursos adicionais e opcionais, caso deseje ir além do conteúdo da jornada de integração.
+A seguir estão recursos adicionais e opcionais se você quiser ir além do conteúdo da jornada de integração.
 
 * [Visão geral do Admin Console](https://helpx.adobe.com/br/enterprise/using/admin-console.html) - Uma visão geral abrangente do Admin Console
 * [Criar ou atualizar seu Adobe ID](https://helpx.adobe.com/br/manage-account/using/create-update-adobe-id.html#HowtocreateorupdateyourAdobeID) - Saiba como criar um Adobe ID, alterá-lo e gerenciar vários Adobe IDs.

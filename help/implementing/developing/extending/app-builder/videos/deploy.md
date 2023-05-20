@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Implantação de aplicativos do App Builder
 
-Saiba mais sobre o significado de implantação do para o App Builder e como implantar seu aplicativo do App Builder usando a CLI do Adobe I/O.
+Saiba o que significa implantação para o App Builder e como implantar seu aplicativo do App Builder usando a CLI do Adobe I/O.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339250/?quality=12&learn=on)

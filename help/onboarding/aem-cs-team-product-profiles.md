@@ -37,7 +37,7 @@ Os membros da sua equipe do AEM as a Cloud Service serão adicionados e atribuí
 
 >[!WARNING]
 >
->O **Administradores de AEM** o nome do perfil de produto não deve ser alterado. Alteração do nome do **Administradores de AEM** o perfil de produto removerá os direitos de administrador de todos os usuários atribuídos a esse perfil.
+>A variável **Administradores de AEM** o nome do perfil do produto não deve ser alterado. Alteração do nome da variável **Administradores de AEM** O perfil de produto removerá os direitos de administrador de todos os usuários atribuídos a esse perfil.
 
 >[!TIP]
 >

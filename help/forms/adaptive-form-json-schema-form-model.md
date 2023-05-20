@@ -1,5 +1,5 @@
 ---
-title: Criar um esquema JSON para um formulário adaptável
+title: Criar um esquema JSON para um Formulário adaptável
 description: Saiba como criar Forms adaptável usando o esquema JSON como modelo de formulário. Você pode usar esquemas JSON existentes para criar o Forms adaptável. Saiba mais com uma amostra de um esquema JSON, pré-configure campos na definição do esquema JSON, limite valores aceitáveis para um componente de Formulário adaptável e aprenda construções não compatíveis.
 feature: Adaptive Forms
 role: User, Developer
@@ -8,11 +8,11 @@ exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '1228'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 
-# Criar um esquema JSON para um formulário adaptável {#creating-adaptive-forms-using-json-schema}
+# Criar um esquema JSON para um Formulário adaptável {#creating-adaptive-forms-using-json-schema}
 
 ## Pré-requisitos {#prerequisites}
 
@@ -639,24 +639,24 @@ Você pode adicionar as seguintes restrições aos elementos do Esquema JSON par
   </tr>
   <tr>
    <td><p><code>maximum</code></p> </td>
-   <td><p>Sequência de caracteres</p> </td>
+   <td><p>String</p> </td>
    <td><p>Especifica o limite superior para valores numéricos e datas. Por padrão, o valor máximo é incluído.</p> </td>
    <td>
     <ul>
      <li>Caixa numérica</li>
      <li>Escalonador numérico<br /> </li>
-     <li>Seletor de datas</li>
+     <li>Seletor de data</li>
     </ul> </td>
   </tr>
   <tr>
    <td><p><code>minimum</code></p> </td>
-   <td><p>Sequência de caracteres</p> </td>
+   <td><p>String</p> </td>
    <td><p>Especifica o limite inferior para valores numéricos e datas. Por padrão, o valor mínimo é incluído.</p> </td>
    <td>
     <ul>
      <li>Caixa numérica</li>
      <li>Escalonador numérico</li>
-     <li>Seletor de datas</li>
+     <li>Seletor de data</li>
     </ul> </td>
   </tr>
   <tr>
@@ -667,7 +667,7 @@ Você pode adicionar as seguintes restrições aos elementos do Esquema JSON par
     <ul>
      <li>Caixa numérica</li>
      <li>Escalonador numérico</li>
-     <li>Seletor de datas</li>
+     <li>Seletor de data</li>
     </ul> </td>
   </tr>
   <tr>
@@ -678,12 +678,12 @@ Você pode adicionar as seguintes restrições aos elementos do Esquema JSON par
     <ul>
      <li>Caixa numérica</li>
      <li>Escalonador numérico</li>
-     <li>Seletor de datas</li>
+     <li>Seletor de data</li>
     </ul> </td>
   </tr>
   <tr>
    <td><p><code>minLength</code></p> </td>
-   <td><p>Sequência de caracteres</p> </td>
+   <td><p>String</p> </td>
    <td><p>Especifica o número mínimo de caracteres permitidos em um componente. O comprimento mínimo deve ser igual ou maior que zero.</p> </td>
    <td>
     <ul>
@@ -692,7 +692,7 @@ Você pode adicionar as seguintes restrições aos elementos do Esquema JSON par
   </tr>
   <tr>
    <td><code>maxLength</code></td>
-   <td>Sequência de caracteres</td>
+   <td>String</td>
    <td>Especifica o número máximo de caracteres permitidos em um componente. O comprimento máximo deve ser igual ou maior que zero.</td>
    <td>
     <ul>
@@ -701,7 +701,7 @@ Você pode adicionar as seguintes restrições aos elementos do Esquema JSON par
   </tr>
   <tr>
    <td><p><code>pattern</code></p> </td>
-   <td><p>Sequência de caracteres</p> </td>
+   <td><p>String</p> </td>
    <td><p>Especifica a sequência dos caracteres. Um componente aceita os caracteres se eles estiverem em conformidade com o padrão especificado.</p> <p>A propriedade padrão mapeia para o padrão de validação do componente de Formulário adaptável correspondente.</p> </td>
    <td>
     <ul>
@@ -710,13 +710,13 @@ Você pode adicionar as seguintes restrições aos elementos do Esquema JSON par
   </tr>
   <tr>
    <td><code>maxItems</code></td>
-   <td>Sequência de caracteres</td>
+   <td>String</td>
    <td>Especifica o número máximo de itens em uma matriz. O máximo de itens deve ser igual ou maior que zero.</td>
    <td> </td>
   </tr>
   <tr>
    <td><code>minItems</code></td>
-   <td>Sequência de caracteres</td>
+   <td>String</td>
    <td>Especifica o número mínimo de itens em uma matriz. Os itens mínimos devem ser iguais ou maiores que zero.</td>
    <td> </td>
   </tr>

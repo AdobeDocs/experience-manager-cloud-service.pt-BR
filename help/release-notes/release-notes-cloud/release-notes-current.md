@@ -50,7 +50,7 @@ Assista ao vídeo de visão geral da versão de fevereiro de 2023 para obter um 
    * DASH é o protocolo internacional padrão para transmissão de vídeo adaptável e é amplamente adotado no setor
    * Disponível na América do Norte (habilitado por meio de um tíquete de suporte); em breve para as regiões da APAC e EMEA
 
-* Adição de suporte para imagens WebP para extrair metadados automaticamente e gerar miniaturas e representações personalizadas. O recurso de Tag inteligente também é compatível com esses arquivos.
+* Adição de suporte para imagens WebP para extrair metadados automaticamente e gerar miniaturas e representações personalizadas. O recurso de tag inteligente agora também é compatível com esses arquivos.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 

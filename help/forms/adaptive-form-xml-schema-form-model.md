@@ -182,7 +182,7 @@ Você pode adicionar as seguintes restrições aos elementos do esquema XML para
   </tr>
   <tr>
    <td><p><code>totalDigits</code></p> </td>
-   <td><p>Sequência de caracteres</p> </td>
+   <td><p>String</p> </td>
    <td><p>Especifica o número máximo de dígitos permitidos em um componente. O número de dígitos especificado deve ser maior que zero.</p> </td>
    <td>
     <ul>
@@ -192,24 +192,24 @@ Você pode adicionar as seguintes restrições aos elementos do esquema XML para
   </tr>
   <tr>
    <td><p><code>maximum</code></p> </td>
-   <td><p>Sequência de caracteres</p> </td>
+   <td><p>String</p> </td>
    <td><p>Especifica o limite superior para valores numéricos e datas. Por padrão, o valor máximo é incluído.</p> </td>
    <td>
     <ul>
      <li>Caixa numérica</li>
      <li>Escalonador numérico<br /> </li>
-     <li>Seletor de datas</li>
+     <li>Seletor de data</li>
     </ul> </td>
   </tr>
   <tr>
    <td><p><code>minimum</code></p> </td>
-   <td><p>Sequência de caracteres</p> </td>
+   <td><p>String</p> </td>
    <td><p>Especifica o limite inferior para valores numéricos e datas. Por padrão, o valor mínimo é incluído.</p> </td>
    <td>
     <ul>
      <li>Caixa numérica</li>
      <li>Escalonador numérico</li>
-     <li>Seletor de datas</li>
+     <li>Seletor de data</li>
     </ul> </td>
   </tr>
   <tr>
@@ -220,7 +220,7 @@ Você pode adicionar as seguintes restrições aos elementos do esquema XML para
     <ul>
      <li>Caixa numérica</li>
      <li>Escalonador numérico</li>
-     <li>Seletor de datas</li>
+     <li>Seletor de data</li>
     </ul> </td>
   </tr>
   <tr>
@@ -231,12 +231,12 @@ Você pode adicionar as seguintes restrições aos elementos do esquema XML para
     <ul>
      <li>Caixa numérica</li>
      <li>Escalonador numérico</li>
-     <li>Seletor de datas</li>
+     <li>Seletor de data</li>
     </ul> </td>
   </tr>
   <tr>
    <td><p><code>minLength</code></p> </td>
-   <td><p>Sequência de caracteres</p> </td>
+   <td><p>String</p> </td>
    <td><p>Especifica o número mínimo de caracteres permitidos em um componente. O comprimento mínimo deve ser igual ou maior que zero.</p> </td>
    <td>
     <ul>
@@ -245,7 +245,7 @@ Você pode adicionar as seguintes restrições aos elementos do esquema XML para
   </tr>
   <tr>
    <td><p><code>maxLength</code></p> </td>
-   <td><p>Sequência de caracteres</p> </td>
+   <td><p>String</p> </td>
    <td><p>Especifica o número máximo de caracteres permitidos em um componente. O comprimento máximo deve ser maior que zero.</p> </td>
    <td>
     <ul>
@@ -254,7 +254,7 @@ Você pode adicionar as seguintes restrições aos elementos do esquema XML para
   </tr>
   <tr>
    <td><p><code>length</code></p> </td>
-   <td><p>Sequência de caracteres</p> </td>
+   <td><p>String</p> </td>
    <td><p>Especifica o número exato de caracteres permitidos em um componente. O comprimento deve ser igual ou maior que zero.</p> </td>
    <td>
     <ul>
@@ -263,7 +263,7 @@ Você pode adicionar as seguintes restrições aos elementos do esquema XML para
   </tr>
   <tr>
    <td><p><code>fractionDigits</code></p> </td>
-   <td><p>Sequência de caracteres</p> </td>
+   <td><p>String</p> </td>
    <td><p>Especifica o número máximo de casas decimais permitidas em um componente. O número de dígitos da fração deve ser igual ou maior que zero.</p> </td>
    <td>
     <ul>
@@ -272,7 +272,7 @@ Você pode adicionar as seguintes restrições aos elementos do esquema XML para
   </tr>
   <tr>
    <td><p><code>pattern</code></p> </td>
-   <td><p>Sequência de caracteres</p> </td>
+   <td><p>String</p> </td>
    <td><p>Especifica a sequência dos caracteres. Um componente aceita os caracteres se eles estiverem em conformidade com o padrão especificado.</p> <p>A propriedade padrão mapeia para o padrão de validação do componente de Formulário adaptável correspondente.</p> </td>
    <td>
     <ul>

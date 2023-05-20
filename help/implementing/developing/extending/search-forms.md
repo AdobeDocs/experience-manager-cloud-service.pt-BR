@@ -357,7 +357,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
     </ul> </td>
   </tr>
   <tr>
-   <td>Classificação</td>
+   <td>Avaliação</td>
    <td>Pesquise recursos de acordo com a classificação média.<br /> </td>
    <td>
     <ul>
@@ -652,7 +652,7 @@ O exemplo a seguir (para pesquisar de acordo com o modelo usado para criar uma p
    >
    >O método recomendado para configuração e outras alterações é:
    >
-   >1. Recrie o item necessário, como ele existe em `/libs`, em `/apps`. Nesse caso, de:
+   >1. Recriar o item necessário, como ele existe em `/libs`, em `/apps`. Nesse caso, de:
    >1. `/libs/cq/gui/content/common/options/predicates`
    >1. Fazer alterações em `/apps.`
 

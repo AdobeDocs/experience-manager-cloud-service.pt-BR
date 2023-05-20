@@ -386,7 +386,7 @@ ht-degree: 99%
    + [Visão geral dos microsserviços de ativos](/help/assets/asset-microservices-overview.md)
    + [Acessibilidade no  [!DNL Assets]](/help/assets/accessibility.md)
    + Gerenciar ativos digitais {#manage}
-      + [Seletor de ativo micro-fronteira](/help/assets/asset-selector.md)
+      + [Seletor de ativos de micro front-end](/help/assets/asset-selector.md)
       + [Compartilhar ativos](/help/assets/share-assets.md)
       + [Monitorar atividades e tarefas do DAM](/help/assets/assets-activity-history.md)
       + [Introdução ao uso dos microsserviços de ativos](/help/assets/asset-microservices-configure-and-use.md)
@@ -792,7 +792,7 @@ ht-degree: 99%
          + [Teste de qualidade do código](/help/implementing/cloud-manager/code-quality-testing.md)
          + [Regras de qualidade do código personalizado](/help/implementing/cloud-manager/custom-code-quality-rules.md)
          + Teste funcional {#functional-testing}
-            + [Visão geral dos testes funcionais](/help/implementing/cloud-manager/functional-testing.md)
+            + [Visão geral do teste funcional](/help/implementing/cloud-manager/functional-testing.md)
             + [Teste funcional Java](/help/implementing/cloud-manager/java-functional-testing.md)
             + [Teste de interface](/help/implementing/cloud-manager/ui-testing.md)
          + [Teste de auditoria de experiência](/help/implementing/cloud-manager/experience-audit-testing.md)
@@ -940,7 +940,7 @@ ht-degree: 99%
    + Camada do autor {#author-tier}
       + [Acesso à camada do autor](/help/implementing/author-tier/accessing-the-author-tier.md)
       + [Proteção da camada do autor](/help/implementing/author-tier/securing-the-author-tier.md)
-   + Visualizar camada {#preview-tier}
+   + Camada de visualização {#preview-tier}
       + [Configurações do OSGi para o nível de visualização](/help/implementing/preview-tier/preview-tier-configuring-osgi.md)
    + Visão geral da entrega de conteúdo {#content-delivery}
       + [Fluxo de entrega de conteúdo](/help/implementing/dispatcher/overview.md)

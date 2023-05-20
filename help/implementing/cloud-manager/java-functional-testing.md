@@ -1,7 +1,8 @@
 ---
-title: Testes funcionais de Java
-description: Saiba como gravar testes funcionais de Java para AEM as a Cloud Service
-source-git-commit: 24796bd7d9c5e726cda13885bc4bd7e4155610dc
+title: Testes funcionais Java
+description: Saiba como gravar testes funcionais Java para AEM as a Cloud Service
+exl-id: e449a62a-c8ad-4d39-a170-abacdda3f1b1
+source-git-commit: cda1f51c89a98cfb75d63f8bd9b54e76ee745aa7
 workflow-type: tm+mt
 source-wordcount: '851'
 ht-degree: 77%
@@ -10,7 +11,7 @@ ht-degree: 77%
 
 # Teste funcional Java
 
-Saiba como gravar testes funcionais de Java para AEM as a Cloud Service
+Saiba como gravar testes funcionais Java para AEM as a Cloud Service
 
 ## Introdução aos testes funcionais {#getting-started-functional-tests}
 
@@ -96,19 +97,19 @@ Consulte o [`aem-testing-clients` repositório GitHub](https://github.com/adobe/
 >
 >Para executar os testes funcionais no computador local, crie um usuário com permissões de administrador para alcançar o mesmo comportamento.
 
-1. A infraestrutura confinada que é escoada para testes funcionais é limitada pelos seguintes limites:
+1. A infraestrutura contida que tem escopo para testes funcionais é limitada pelos seguintes limites:
 
 
 | Tipo | Valor | Descrição |
 |----------------------|-------|--------------------------------------------------------------------|
-| CPU | 0.5 | Quantidade de tempo reservado da CPU por execução de teste |
-| Memória | 0.5Gi | Quantidade de memória alocada no teste, valor em gibytes |
+| CPU | 0.5 | Quantidade de tempo de CPU reservado por execução de teste |
+| Memória | 0.5Gi | Quantidade de memória alocada para o teste, valor em gibibytes |
 | Tempo limite | 30m | A duração após a qual o teste será encerrado. |
-| Duração recomendada | 15m | Recomendamos escrever os testes para não demorar mais do que esse tempo. |
+| Duração recomendada | 15m | Recomendamos gravar os testes para não demorar mais do que esse tempo. |
 
 >[!NOTE]
 >
-> Caso precise de mais recursos, crie um caso de Atendimento ao cliente e descreva o caso de uso; nossa equipe verificará sua solicitação e fornecerá a assistência apropriada.
+> Se você precisar de mais recursos, crie um caso de Atendimento ao cliente e descreva seu caso de uso. Nossa equipe analisará sua solicitação e fornecerá a assistência apropriada.
 
 
 ### Execução local de testes {#local-test-execution}
@@ -125,15 +126,15 @@ As propriedades do sistema são mostradas a seguir.
 
 | Propriedade | Descrição | Exemplo |
 |-------------------------------------|------------------------------------------------------------------|-------------------------|
-| `sling.it.instances` | quantidade de instâncias, para corresponder ao serviço em nuvem deve ser definida como `2` | `2` |
+| `sling.it.instances` | quantidade de instâncias, para corresponder ao serviço de nuvem, deve ser definido como `2` | `2` |
 | `sling.it.instance.url.1` | deve ser definido como o URL do autor | `http://localhost:4502` |
 | `sling.it.instance.runmode.1` | runmode da primeira instância, deve ser definido como `author` | `author` |
 | `sling.it.instance.adminUser.1` | deve ser definido como o usuário administrador do autor. | `admin` |
 | `sling.it.instance.adminPassword.1` | deve ser definido como a senha do administrador do autor. |  |
 | `sling.it.instance.url.2` | deve ser definido como o URL de publicação | `http://localhost:4503` |
 | `sling.it.instance.runmode.2` | runmode da segunda instância, deve ser definido como `publish` | `publish` |
-| `sling.it.instance.adminUser.2` | deve ser definido como publicar usuário administrador. | `admin` |
-| `sling.it.instance.adminPassword.2` | deve ser definido como publicar senha do administrador. |  |
+| `sling.it.instance.adminUser.2` | deve ser definido como o usuário administrador de publicação. | `admin` |
+| `sling.it.instance.adminPassword.2` | deve ser definido como a senha do administrador de publicação. |  |
 
 
 

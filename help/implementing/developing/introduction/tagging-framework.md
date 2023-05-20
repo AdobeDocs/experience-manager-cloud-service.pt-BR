@@ -90,8 +90,8 @@ A tabela a seguir mostra algumas amostras `TagID`s, seus elementos e como o `Tag
 |---|---|---|---|---|---|
 | `dam:fruit/apple/braeburn` | `dam` | `fruit/apple/braeburn` | `fruit`,`apple` | `braeburn` | `content/cq:tags/dam/fruit/apple/braeburn` |
 | `color/red` | `default` | `color/red` | `color` | `red` | `/content/cq:tags/default/color/red` |
-| `sky` | `default` | `sky` | (nenhum) | `sky` | `/content/cq:tags/default/sky` |
-| `dam:` | `dam` | (nenhum) | (nenhum) | (nenhum) | `/content/cq:tags/dam` |
+| `sky` | `default` | `sky` | (nenhuma) | `sky` | `/content/cq:tags/default/sky` |
+| `dam:` | `dam` | (nenhuma) | (nenhuma) | (nenhuma) | `/content/cq:tags/dam` |
 | `content/cq:tags/category/car` | `category` | `car` | `car` | `car` | `content/cq:tags/category/car` |
 
 ### Localização do título da tag {#localization-of-tag-title}

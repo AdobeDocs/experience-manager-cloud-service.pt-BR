@@ -4,7 +4,8 @@ seo-title: Creating and managing reviews in forms
 description: Uma Revisão é um mecanismo que permite que um ou mais revisores comentem sobre um ativo que está disponível em um formulário.
 seo-description: A Review is a mechanism that allows one or more reviewers to comment on an asset that is available in a form.
 topic-tags: forms-manager
-source-git-commit: 659484f80d1f31794512af5e4d190b04a9f3e4e8
+exl-id: 378049f8-bf21-4595-819d-ba5fba7023c0
+source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
 workflow-type: tm+mt
 source-wordcount: '670'
 ht-degree: 0%
@@ -112,5 +113,3 @@ Esta seção descreve o que acontece no(a) Revisar atualização/término:
    1. **Iniciador**: a tarefa atribuída ao iniciador da revisão está marcada como concluída. A tarefa é removida da seção Notificação do iniciador da revisão.
    1. **Todos**: a revisão aparece na seção Análises anteriores. Nenhum comentário adicional pode ser adicionado.
       ![revisão concluída](assets/review-complete-imgg.png)
-
-

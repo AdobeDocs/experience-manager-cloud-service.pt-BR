@@ -5,7 +5,8 @@ description: O componente Tabela no AEM Forms permite criar tabelas em formulár
 seo-description: The Table component in AEM Forms lets you create tables in adaptive forms that are responsive to mobile layouts, and also allows using XDP table components.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms
-source-git-commit: 6bca307dcf41b138b5b724a8eb198ac35e2d906e
+exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
+source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
 workflow-type: tm+mt
 source-wordcount: '2418'
 ht-degree: 0%
@@ -28,7 +29,7 @@ O AEM Forms fornece um componente Tabela no navegador de componentes na barra la
 * Suporte para adicionar linhas ou células usando elementos de tipo complexo XSD
 * Mesclar dados de um arquivo XML
 
-## Crie uma tabela {#create-a-table}
+## Criar uma tabela {#create-a-table}
 
 Para criar uma tabela, arraste e solte o componente Tabela do navegador de componentes no sidekick do formulário adaptável. Por padrão, a tabela contém duas colunas e três linhas, incluindo a linha de cabeçalho.
 

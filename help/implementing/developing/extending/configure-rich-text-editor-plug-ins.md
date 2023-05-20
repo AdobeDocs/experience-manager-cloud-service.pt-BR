@@ -62,7 +62,7 @@ Depois de ativar um plug-in, siga estas diretrizes para configurar o `features` 
 |  | Habilitar todos os recursos | Habilite alguns recursos específicos. | Desative todos os recursos. |
 |---|---|---|---|
 | Nome | recursos | recursos | recursos |
-| Tipo | Sequência de caracteres | `String` (várias sequências de caracteres; defina Tipo como `String` e clique em `Multi` in CRXDE Lite) | Sequência de caracteres |
+| Tipo | String | `String` (várias sequências de caracteres; defina Tipo como `String` e clique em `Multi` in CRXDE Lite) | String |
 | Valor | `*` (um asterisco) | Defina para um ou mais valores de recurso. | - |
 
 ## Entender o plug-in findreplace {#findreplace}

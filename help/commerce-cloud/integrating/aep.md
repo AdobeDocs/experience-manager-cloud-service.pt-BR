@@ -467,7 +467,7 @@ A variável [Conector de Experience Platform da CIF](https://github.com/adobe/ae
 O projeto PWA Studio permite criar vitrines de Progressive Web Application (PWA) alimentadas por Adobe Commerce ou Magento Open Source. O projeto também contém uma biblioteca de componentes chamada [Peregrin](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) para adicionar lógica aos componentes visuais. A variável [Biblioteca Peregrin](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) também fornece os ganchos personalizados do React usados pelo [Conector Experience Platform](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) para integrar com o Experience Platform sem interrupções.
 
 
-## Eventos compatíveis {#supported-events}
+## Eventos suportados {#supported-events}
 
 A partir de agora, os seguintes eventos serão compatíveis:
 

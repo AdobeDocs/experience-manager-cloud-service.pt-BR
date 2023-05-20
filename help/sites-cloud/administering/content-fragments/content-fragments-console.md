@@ -72,14 +72,14 @@ Isso classificará toda a tabela de acordo com essa coluna. A classificação s�
 
 ## Ações {#actions}
 
-No console, há um intervalo de ações que você pode usar, diretamente ou após selecionar um fragmento específico:
+No console, há uma variedade de ações que você pode usar, diretamente ou depois de selecionar um fragmento específico:
 
 * Várias ações são diretamente [disponível no console](#available-actions)
 * Você pode [selecione um ou mais Fragmentos de conteúdo para mostrar as ações apropriadas](#actions-selected-content-fragment)
 
 ### Ações (não selecionadas) {#actions-unselected}
 
-Algumas ações estão disponíveis no console, sem selecionar um Fragmento de conteúdo específico:
+Determinadas ações estão disponíveis no console — sem selecionar um Fragmento de conteúdo específico:
 
 * **[Criar](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)** um novo fragmento de conteúdo
 * [Filtrar](#filtering-fragments) os fragmentos de conteúdo de acordo com uma seleção de predicados e salvar o filtro para uso futuro

@@ -10,7 +10,7 @@ discoiquuid: 678e9dfc-2c46-430a-8da9-0329dda80090
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '208'
-ht-degree: 16%
+ht-degree: 4%
 
 ---
 
@@ -27,7 +27,7 @@ As palavras-chave do Forms adaptável são identificadores predefinidos e reserv
    <td><p>minOccur</p> </td>
   </tr>
   <tr>
-   <td><p>validate</p> </td>
+   <td><p>validar</p> </td>
    <td><p>setGuideState</p> </td>
    <td><p>maxOccur</p> </td>
   </tr>
@@ -38,7 +38,7 @@ As palavras-chave do Forms adaptável são identificadores predefinidos e reserv
   </tr>
   <tr>
    <td><p>checkIfNull</p> </td>
-   <td><p>initialize</p> </td>
+   <td><p>inicializar</p> </td>
    <td><p>instanceTemplateId</p> </td>
   </tr>
   <tr>
@@ -102,7 +102,7 @@ As palavras-chave do Forms adaptável são identificadores predefinidos e reserv
    <td><p>name</p> </td>
   </tr>
   <tr>
-   <td><p>mandatory</p> </td>
+   <td><p>obrigatório</p> </td>
    <td><p>painel</p> </td>
    <td><p>templateId</p> </td>
   </tr>
@@ -118,7 +118,7 @@ As palavras-chave do Forms adaptável são identificadores predefinidos e reserv
   </tr>
   <tr>
    <td><p>validatePictureClauseMessage</p> </td>
-   <td><p>items</p> </td>
+   <td><p>itens</p> </td>
    <td><p>nonLocalizedTitle</p> </td>
   </tr>
   <tr>
@@ -129,7 +129,7 @@ As palavras-chave do Forms adaptável são identificadores predefinidos e reserv
   <tr>
    <td><p>largura</p> </td>
    <td><p>buttonText</p> </td>
-   <td><p>index</p> </td>
+   <td><p>Índice</p> </td>
   </tr>
   <tr>
    <td><p>altura</p> </td>
@@ -197,7 +197,7 @@ As palavras-chave do Forms adaptável são identificadores predefinidos e reserv
    <td><p>parteAtiva</p> </td>
   </tr>
   <tr>
-   <td><p>toolbar</p> </td>
+   <td><p>barra de ferramentas</p> </td>
    <td><p>completionBeforeMessage</p> </td>
    <td><p>isLastPart</p> </td>
   </tr>

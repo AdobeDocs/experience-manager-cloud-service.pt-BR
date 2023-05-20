@@ -57,4 +57,4 @@ Você começa a configurar uma conta alias da empresa do Dynamic Media enviando 
 
 1. No **[!UICONTROL Editar configuração do Dynamic Media]** página, no campo **[!UICONTROL Alias da empresa]** campo de texto, digite o nome da conta alias Dynamic Media que você especificou anteriormente no caso de suporte.
 1. No canto superior direito da página, selecione **[!UICONTROL Salvar]**.
-A conta alias da empresa Dynamic Media agora é salva e ativada; todos os URLs e códigos incorporados do visualizador para ativos existentes e novos agora refletem o novo nome alias da empresa.
+A conta alias da empresa do Dynamic Media agora é salva e ativada; todos os URLs e códigos incorporados do visualizador para ativos existentes e novos agora refletem o novo nome alias da empresa.

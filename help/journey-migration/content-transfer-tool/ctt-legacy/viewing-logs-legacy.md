@@ -7,13 +7,13 @@ exl-id: 01c8afd3-c594-4a41-b905-8c3a2d74db6f
 source-git-commit: 22bbf15e33ab3d5608dc01ed293bb04b07cb6c8c
 workflow-type: tm+mt
 source-wordcount: '181'
-ht-degree: 64%
+ht-degree: 74%
 
 ---
 
 # Visualização de logs para um conjunto de migração (herdado) {#view-logs-content-transfer-tool}
 
-Após a conclusão de cada etapa (extração e assimilação), verifique os registros e procure por erros.  Quaisquer erros devem ser solucionados imediatamente, tratando dos problemas relatados ou entrando em contato com o suporte da Adobe.
+Após a conclusão de cada etapa (extração e assimilação), verifique os registros e procure por erros.  Todos os erros devem ser resolvidos imediatamente, seja resolvendo os problemas relatados ou entrando em contato com o suporte da Adobe.
 
 ## Etapas para visualizar logs {#viewing-logs}
 

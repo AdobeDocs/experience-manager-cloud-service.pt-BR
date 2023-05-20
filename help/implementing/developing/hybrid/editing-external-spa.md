@@ -153,7 +153,7 @@ Neste exemplo, a variável `ModelManager` é inicializado e um está vazio `Mode
 
 Depois que os componentes autoráveis do React são criados, podemos usá-los em todo o aplicativo.
 
-Vamos pegar uma página de exemplo onde precisamos adicionar um texto do projeto SPA WKND. Neste exemplo, queremos exibir o texto &quot;Olá, mundo!&quot; em `/content/wknd-spa-react/us/en/home.html`.
+Vamos pegar uma página de exemplo onde precisamos adicionar um texto do projeto SPA WKND. Neste exemplo, queremos exibir o texto &quot;Olá, mundo!&quot; ligado `/content/wknd-spa-react/us/en/home.html`.
 
 1. Determine o caminho do nó a ser exibido.
 

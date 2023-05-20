@@ -142,7 +142,7 @@ Você verá uma lista de instâncias existentes:
 
 Em cada instância de Contexto do Produto, haverá instâncias que abrangem os serviços de Autor ou Publicação em todos os ambientes de Produção, Preparo ou Desenvolvimento. Cada instância será associada às funções Perfis de produto ou Cloud Manager. Esses perfis de produto são usados para atribuir acesso a usuários e grupos com os privilégios necessário.
 
-O **Administradores de AEM_xxx** O perfil será usado para conceder privilégios de Administrador na instância de AEM associada enquanto a função **AEM Users_xxx** perfil é usado para adicionar usuários regulares.
+A variável **Administradores do AEM_xxx** perfil será usado para conceder privilégios de Administrador na instância associada do AEM enquanto o **Usuários AEM_xxx** perfil é usado para adicionar usuários regulares.
 
 Os usuários e grupos adicionados nesse perfil de produto poderão fazer logon nessa instância específica, como mostra o exemplo abaixo:
 
@@ -150,7 +150,7 @@ Os usuários e grupos adicionados nesse perfil de produto poderão fazer logon n
 
 >[!WARNING]
 >
->O **Administradores de AEM** o nome do perfil de produto não deve ser alterado. Alteração do nome do **Administradores de AEM** o perfil de produto removerá os direitos de administrador de todos os usuários atribuídos a esse perfil.
+>A variável **Administradores de AEM** o nome do perfil do produto não deve ser alterado. Alteração do nome da variável **Administradores de AEM** O perfil de produto removerá os direitos de administrador de todos os usuários atribuídos a esse perfil.
 
 ### Fazendo logon no Adobe Experience Manager as a Cloud Service {#logging-in-to-aem}
 

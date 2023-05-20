@@ -5,7 +5,7 @@ exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
 source-git-commit: 9e0ab778e97658bc8d7669b1f582f3bcddd47915
 workflow-type: tm+mt
 source-wordcount: '668'
-ht-degree: 8%
+ht-degree: 3%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 8%
 
 Depois de publicar seu canal, agora é hora de criar sua exibição no Provedor de serviços do Screens.
 
-Uma Exibição é um agrupamento virtual de telas que geralmente são posicionadas uma ao lado da outra. A exibição é, em geral, permanente com relação a uma instalação. Esse será o objeto no qual os autores de conteúdo irão trabalhar e é sempre referenciado como uma exibição lógica em vez de suas contrapartes físicas.
+Uma Exibição é um agrupamento virtual de telas que geralmente são posicionadas uma ao lado da outra. O visor é geralmente permanente em relação a uma instalação. Esse será o objeto com o qual os autores de conteúdo trabalharão e sempre se referirão como exibição lógica em vez de suas contrapartes físicas.
 
 ## Objetivo {#objective}
 

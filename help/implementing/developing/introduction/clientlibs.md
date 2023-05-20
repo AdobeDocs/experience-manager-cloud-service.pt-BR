@@ -85,7 +85,7 @@ Para que as bibliotecas de clientes em `/apps` para ser acessível, um servlet p
    * Multi: selecionado
 1. Para que as bibliotecas de clientes sejam acessíveis por proxy em `/etc.clientlibs`, selecione o `cq:ClientLibraryFolder` , adicione a seguinte propriedade e clique em **Salvar tudo**:
    * Nome: `allowProxy`
-   * Tipo: booliano
+   * Tipo: Booleano
    * Valor: `true`
 1. Se precisar gerenciar recursos estáticos, crie uma subpasta chamada `resources` abaixo da pasta da biblioteca do cliente.
    * Se você armazenar recursos estáticos em qualquer lugar que não seja na pasta `resources`, elas não podem ser referenciadas em uma instância de publicação.

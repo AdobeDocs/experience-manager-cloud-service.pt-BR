@@ -7,7 +7,7 @@ exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '1660'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -30,7 +30,7 @@ Os seguintes tipos de ativos são compatíveis com o [!DNL AEM Forms]:
 * Modelos de formulário (formulários XFA)
 * PDF forms
 * Documento (PDF simples)
-* Formulários adaptáveis
+* Adaptive Forms
 * Modelo de dados do Forms
 * XFS
 
@@ -63,7 +63,7 @@ Veja a seguir uma extensa lista de propriedades de metadados compatíveis com o 
      <li>Modelo de formulário</li> 
      <li>formulário PDF, formulário PDF (Acroform) ou formulário PDF (Signed)</li> 
      <li>Documento, Documento (Assinado)</li> 
-     <li>Formulário adaptativo</li> 
+     <li>Formulário adaptável</li> 
      <li>Modelo de dados do formulário</li>
      <li>Recurso</li> 
     </ul> </td> 
@@ -128,7 +128,7 @@ Veja a seguir uma extensa lista de propriedades de metadados compatíveis com o 
   </tr> 
   <tr> 
    <td>Renderizar formato</td> 
-   <td><p>Modelo de formulário</p> <p>Formulário adaptativo</p> </td> 
+   <td><p>Modelo de formulário</p> <p>Formulário adaptável</p> </td> 
    <td><p>Essa opção permite que o usuário especifique o formato de renderização do formulário quando os formulários forem publicados:</p> 
     <ul> 
      <li>HTML</li> 
@@ -143,7 +143,7 @@ Veja a seguir uma extensa lista de propriedades de metadados compatíveis com o 
   </tr> 
   <tr> 
    <td>Referências</td> 
-   <td><p>Formulário adaptativo</p> <p>Modelo de formulário</p> <p>Recurso</p> </td> 
+   <td><p>Formulário adaptável</p> <p>Modelo de formulário</p> <p>Recurso</p> </td> 
    <td><p>Lista de ativos (outros formulários ou recursos) aos quais este formulário está relacionado. Esses ativos podem estar nas duas categorias a seguir:</p> 
     <ul> 
      <li>Refere-se: ativos aos quais o formulário atual se refere.</li> 
@@ -152,7 +152,7 @@ Veja a seguir uma extensa lista de propriedades de metadados compatíveis com o 
   </tr> 
   <tr> 
    <td>Seleção do modelo de formulário (XDP/XSD)</td> 
-   <td>Formulário adaptativo</td> 
+   <td>Formulário adaptável</td> 
    <td><p>Especifica qual modelo de formulário é usado durante a criação do Formulário adaptável. Essa propriedade pode ter os seguintes valores:</p> 
     <ul> 
       <li>Modelo de dados do formulário </li>

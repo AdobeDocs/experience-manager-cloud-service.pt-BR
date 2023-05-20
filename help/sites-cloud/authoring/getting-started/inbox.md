@@ -1,11 +1,11 @@
 ---
 title: Sua caixa de entrada
-description: Gerenciar suas tarefas com a caixa de entrada
+description: Gerenciamento de tarefas com a caixa de entrada
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '913'
-ht-degree: 100%
+ht-degree: 78%
 
 ---
 
@@ -21,7 +21,7 @@ Você pode receber notificações de diversas áreas do AEM, incluindo fluxos de
       * Estes são o produto de etapas do fluxo de trabalho **Participante.**
    * Itens de falha, para permitir que os administradores tentem novamente a etapa que falhou
 
-Você recebe essas notificações em sua própria caixa de entrada, onde você pode visualizá-las e executar a ação necessária.
+Você recebe essas notificações em sua própria Caixa de entrada, onde pode visualizá-las e tomar medidas.
 
 >[!NOTE]
 >
@@ -34,7 +34,7 @@ Você recebe essas notificações em sua própria caixa de entrada, onde você p
 
 ## Caixa de entrada no cabeçalho {#inbox-in-the-header}
 
-De qualquer um dos consoles, o número atual de itens em sua caixa de entrada é mostrado no cabeçalho. O indicador também pode ser aberto para fornecer acesso rápido às páginas que requerem ações ou acesso à caixa de entrada:
+Em qualquer um dos consoles, o número atual de itens na sua caixa de entrada é mostrado no cabeçalho. O indicador também pode ser aberto para fornecer acesso rápido às páginas que exigem ação(ões) ou acesso à caixa de entrada:
 
 ![Visão geral da caixa de entrada no cabeçalho](/help/sites-cloud/authoring/assets/inbox-header.png)
 
@@ -82,11 +82,11 @@ Esta exibição apresenta itens de acordo com sua posição no calendário:
 
 ### Caixa de entrada - configurações de exibição {#inbox-view-settings}
 
-Para ambas as exibições (Lista e Calendário), você pode definir configurações:
+Para ambas as exibições (Lista e Calendário), é possível definir as configurações:
 
 * **Exibição de calendário**
 
-   Para a **Exibição de calendário** é possível configurar:
+   Para **Exibição de calendário** você pode configurar:
 
    * **Agrupar por**
    * **Agendamento** ou **Nenhum**
@@ -96,7 +96,7 @@ Para ambas as exibições (Lista e Calendário), você pode definir configuraç�
 
 * **Exibição de lista**
 
-   Para a **Exibição de lista**, você pode configurar o mecanismo de classificação:
+   Para **Exibição de lista** você pode configurar o mecanismo de classificação:
 
    * **Classificar por**
    * **Ordem de classificação**
@@ -113,7 +113,7 @@ Para ambas as exibições (Lista e Calendário), você pode definir configuraç�
 >
 >Embora seja possível selecionar mais de um item, ações só podem ser executadas em um item de cada vez.
 
-1. Para executar uma ação em um item, selecione a miniatura do item apropriado. Os ícones de ações aplicáveis a esse item serão mostrados na barra de ferramentas:
+1. Para realizar uma ação em um item, selecione a miniatura do item apropriado. Os ícones das ações aplicáveis a esse item serão mostrados na barra de ferramentas:
 
    ![Selecionar item da caixa de entrada](/help/sites-cloud/authoring/assets/inbox-select-item.png)
 
@@ -156,9 +156,9 @@ Para ambas as exibições (Lista e Calendário), você pode definir configuraç�
 
 ## Criação de uma tarefa {#creating-a-task}
 
-Na caixa de entrada, você pode criar tarefas:
+Na caixa de entrada, é possível criar tarefas:
 
-1. Selecione **Criar**, **Tarefa**.
+1. Selecionar **Criar**, depois **Tarefa**.
 1. Preencha os campos necessários nas guias **Básicas** e **Avançadas** (somente o **Título** é obrigatório, todos os demais são opcionais):
 
    * **Básico**:
@@ -186,7 +186,7 @@ Na caixa de entrada, você pode criar tarefas:
 
 Para determinadas tarefas, você pode criar um [Projeto](/help/sites-cloud/authoring/projects/overview.md) com base nessa tarefa:
 
-1. Toque ou clique na miniatura para selecionar a tarefa apropriada.
+1. Selecione a tarefa apropriada, tocando/clicando na miniatura.
 
    >[!NOTE]
    >
@@ -195,7 +195,7 @@ Para determinadas tarefas, você pode criar um [Projeto](/help/sites-cloud/autho
    >Itens de trabalho (de um fluxo de trabalho) não podem ser usados para criar um projeto.
 
 1. Selecione **Criar projeto** na barra de ferramentas para abrir o assistente.
-1. Selecione o modelo apropriado e, em seguida, clique em **Avançar**.
+1. Selecione o modelo apropriado e, em seguida, **Próxima**.
 1. Especifique as propriedades necessárias:
 
    * **Básico**
@@ -210,9 +210,9 @@ Para determinadas tarefas, você pode criar um [Projeto](/help/sites-cloud/autho
       * **Nome**
    >[!NOTE]
    >
-   >Consulte [Criação de um projeto](/help/sites-cloud/authoring/projects/managing.md#creating-a-project) para obter as informações completas.
+   >Consulte [Criação de um projeto](/help/sites-cloud/authoring/projects/managing.md#creating-a-project) para obter informações completas.
 
-1. Selecione **Criar** para confirmar a ação.
+1. Selecionar **Criar** para confirmar a ação
 
 ## Filtrar itens na Caixa de entrada do AEM {#filtering-items-in-the-aem-inbox}
 

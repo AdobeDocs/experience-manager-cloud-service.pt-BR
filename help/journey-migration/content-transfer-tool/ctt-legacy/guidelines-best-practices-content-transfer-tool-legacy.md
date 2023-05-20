@@ -7,7 +7,7 @@ exl-id: 03449606-0fb4-4a9f-9abb-6b17c27a6046
 source-git-commit: eadcf71aa96298383b05e61251dfeb5f345df6b9
 workflow-type: tm+mt
 source-wordcount: '1476'
-ht-degree: 14%
+ht-degree: 15%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 14%
 
 Siga a seção abaixo para entender as diretrizes e práticas recomendadas de uso da ferramenta Transferência de conteúdo:
 
-* Executar [Limpeza de revisão](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html) e [verificações de consistência do armazenamento de dados](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16550.html?lang=en) no **origem** repositório para identificar possíveis problemas e reduzir o tamanho do repositório.
+* Executar [Limpeza de revisão](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html) e [verificações de consistência do armazenamento de dados](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16550.html?lang=pt-BR) no **origem** repositório para identificar possíveis problemas e reduzir o tamanho do repositório.
 
 * Se a configuração da rede de entrega de conteúdo (CDN) do autor da nuvem do AEM estiver configurada para ter um incluo na lista de permissões de IPs, verifique se os IPs do ambiente de origem também são adicionados ao grupo de inclui na lista de permissões. Isso garante que o ambiente de origem e o ambiente da nuvem de AEM possam se comunicar entre si.
 

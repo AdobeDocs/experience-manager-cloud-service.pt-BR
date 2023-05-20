@@ -24,7 +24,7 @@ Essa ferramenta gera um relatório que identifica áreas de refatoração potenc
 
 O relatório do Analisador de Práticas Recomendadas é usado para obter um alto nível de compreensão da preparação geral para a atualização. O relatório consiste em conclusões em categorias de problemas que devem ser abordados antes de uma implantação bem-sucedida no AEM as a Cloud Service.
 
-O relatório do Analisador de práticas recomendadas inclui as seguintes categorias:
+O relatório Analisador de práticas recomendadas inclui as seguintes categorias:
 
 * Funcionalidade do aplicativo que deve ser refatorado
 * Itens do repositório que devem ser movidos para um local com suporte
@@ -35,6 +35,6 @@ O relatório do Analisador de práticas recomendadas inclui as seguintes categor
 Informações adicionais sobre as categorias e possíveis implicações e soluções associadas a essas categorias são fornecidas por meio de links do Relatório do Analisador de práticas recomendadas.
 
 >[!NOTE]
->O Relatório do Analisador de Práticas Recomendadas acelera o processo de estimativa do tempo e custo necessários para a transição para o AEM as a Cloud Service, fornecendo informações que de outra forma precisariam ser coletadas e avaliadas manualmente.
+>O Relatório do Analisador de práticas recomendadas acelera o processo de estimativa do tempo e o custo necessário para a transição para o AEM as a Cloud Service, fornecendo informações que de outra forma precisariam ser coletadas e avaliadas manualmente.
 
-Também é possível baixar o relatório do Analisador de práticas recomendadas da instância do AEM. Consulte [Como visualizar o relatório do Analisador de práticas recomendadas](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report) para obter mais detalhes.
+Você também pode baixar o relatório do Analisador de práticas recomendadas da sua instância do AEM. Consulte [Exibição do relatório do Analisador de práticas recomendadas](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report) para obter mais detalhes.

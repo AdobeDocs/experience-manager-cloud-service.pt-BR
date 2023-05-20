@@ -41,7 +41,7 @@ Siga estas etapas para criar um programa de produção.
 
 1. Na guia **Soluções e complementos**, selecione as soluções a serem incluídas no programa.
 
-   * Se não tiver certeza se precisa de um ou mais programas para as várias soluções disponíveis, selecione aquele que mais lhe interessa. Você pode ativar soluções adicionais ao [edição do programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) mais tarde. Consulte a [Introdução ao documento de Programas de produção](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) para obter mais recomendações de configuração de programa.
+   * Se você não tiver certeza se precisa de um ou mais programas para as várias soluções disponíveis, selecione aquele que for mais do seu interesse. Você pode ativar soluções adicionais ao [editar o programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) posteriormente. Consulte a [Introdução ao documento Programas de produção](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) para obter mais recomendações de configuração do programa.
    * Se você selecionou **Ativar segurança aprimorada** anteriormente, o número de soluções que você poderá selecionar será limitado à quantidade de direitos de HIPAA disponíveis.
 
    ![Selecionar soluções](assets/setup-prod-select.png)

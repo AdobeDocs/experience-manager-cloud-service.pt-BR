@@ -5,7 +5,7 @@ exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
 source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
 workflow-type: tm+mt
 source-wordcount: '1694'
-ht-degree: 4%
+ht-degree: 1%
 
 ---
 
@@ -168,7 +168,7 @@ A variável **Preferências** A opção pode ser usada para definir o idioma da 
 
 Para criar uma pasta com o CRXDE Lite:
 
-1. Abra o CRXDE Lite no seu navegador da 
+1. Abra o CRXDE Lite no navegador.
 1. No painel Navegação, clique com o botão direito do mouse na pasta em que deseja criar a nova pasta, selecione **Criar ...**, depois **Criar pasta ...**.
 
 1. Insira a pasta **Nome** e clique em **OK**.
@@ -179,7 +179,7 @@ Para criar uma pasta com o CRXDE Lite:
 
 Para criar um nó com CRXDE Lite:
 
-1. Abra o CRXDE Lite no seu navegador da 
+1. Abra o CRXDE Lite no navegador.
 1. No [**Painel do explorador**,](#explorer-pane) clique com o botão direito do mouse no nó em que deseja criar o novo nó, selecione **Criar**, depois **Criar nó**.
 1. Insira o **Nome** e selecione o **Tipo**.
 1. Clique em **OK**.
@@ -195,7 +195,7 @@ A validação relacionada à permissão do nó recém-criado pelo tipo de nó pr
 
 Para criar uma propriedade com o CRXDE Lite:
 
-1. Abra o CRXDE Lite no seu navegador da 
+1. Abra o CRXDE Lite no navegador.
 1. No [**Painel do explorador**,](#explorer-pane) selecione o nó onde deseja adicionar a nova propriedade.
 1. No [**Guia Propriedades**](#properties-tab) no painel inferior, digite o **Nome**, o **Tipo**, e o **Valor**.
 1. Clique em **Adicionar**.
@@ -205,7 +205,7 @@ Para criar uma propriedade com o CRXDE Lite:
 
 Para criar um novo arquivo com o CRXDE Lite:
 
-1. Abra o CRXDE Lite no seu navegador da 
+1. Abra o CRXDE Lite no navegador.
 1. No [**Painel do explorador**,](#explorer-pane) clique com o botão direito do mouse no componente em que deseja criar o arquivo e selecione **Criar**, depois **Criar arquivo**.
 1. Insira o arquivo **Nome** incluindo a sua extensão.
 1. Clique em **OK**.
@@ -219,7 +219,7 @@ Com o CRXDE Lite, você pode importar e/ou exportar definições de tipo de nó 
 
 Para exportar uma definição de tipo de nó no CRXDE Lite:
 
-1. Abra o CRXDE Lite no seu navegador da 
+1. Abra o CRXDE Lite no navegador.
 1. Selecione o nó desejado.
 1. Selecionar **Ferramentas** depois **Exportar tipo de nó**.
 1. A definição será exibida na notação CND em uma nova guia no navegador.
@@ -227,7 +227,7 @@ Para exportar uma definição de tipo de nó no CRXDE Lite:
 
 Para importar uma definição de tipo de nó:
 
-1. Abra o CRXDE Lite no seu navegador da 
+1. Abra o CRXDE Lite no navegador.
 1. Selecionar **Ferramentas** depois **Importar tipo de nó**.
 1. Uma nova guia é aberta na janela [**Editar Painel**](#edit-pane) rotulado **Importar tipo de nó**.
 1. Insira a notação CND para a definição na caixa de texto do **Importar tipo de nó** guia.
@@ -238,7 +238,7 @@ Para importar uma definição de tipo de nó:
 
 Com o CRXDE Lite, é possível exibir o arquivo `error.log` que está localizado no sistema de arquivos em `<aem-install-dir>/crx-quickstart/logs` e filtrá-lo com o nível de log apropriado. Proceda da seguinte forma:
 
-1. Abra o CRXDE Lite no seu navegador da 
+1. Abra o CRXDE Lite no navegador.
 1. No menu suspenso à direita do [**Guia Console**](#console-tab) na parte inferior da janela, selecione **Logs do servidor**.
 1. Clique em **Parar** ícone para exibir as mensagens.
 

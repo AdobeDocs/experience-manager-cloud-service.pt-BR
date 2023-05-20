@@ -443,8 +443,8 @@ Para comparar cópias de idioma ao idioma principal:
 
    ![Comparar cópias de idioma](../assets/language-copy-compare.png)
 
-1. As duas páginas (lançamento e origem) serão abertas lado a lado.
-   * Para obter informações completas sobre como usar esse recurso, consulte [Diff da página](/help/sites-cloud/authoring/features/page-diff.md).
+1. As duas páginas (inicialização e origem) serão abertas lado a lado.
+   * Para obter informações completas sobre como usar esse recurso, consulte [Diferença de página](/help/sites-cloud/authoring/features/page-diff.md).
 
 ## Mover ou renomear uma página de origem {#move-source}
 

@@ -53,7 +53,7 @@ Uma configuração IMS é necessária para integrar corretamente o Adobe Analyti
 
 Para aplicar uma configuração da interface de toque a um site, acesse: **Sites** → **Selecionar qualquer página do site** → **Propriedades** → **Avançado** → **Configuração** → selecione o locatário de configuração.
 
-## Integração do Adobe Analytics em sites do AEM usando o Adobe Launch {#analytics-launch}
+## Integração do Adobe Analytics no AEM Sites usando o Adobe Launch {#analytics-launch}
 
 O Adobe Analytics pode ser adicionado como uma extensão na propriedade do Launch. As regras podem ser definidas para executar o mapeamento e fazer uma chamada de publicação para o Adobe Analytics:
 

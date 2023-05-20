@@ -1,16 +1,16 @@
 ---
-title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2021.2.0.
+title: Notas de versão do [!DNL Adobe Experience Manager]  as a Cloud Service 2021.2.0.
 description: "[!DNL Adobe Experience Manager] Notas de versão as a Cloud Service para 2021.2.0."
 exl-id: 88dac54b-cc12-44a0-b429-6e691221f806
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
 source-wordcount: '1237'
-ht-degree: 36%
+ht-degree: 35%
 
 ---
 
 
-# Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service  {#release-notes}
 
 A seção a seguir descreve as Notas de versão gerais do [!DNL Experience Manager] as a Cloud Service.
 
@@ -21,7 +21,7 @@ A versão seguinte (2021.3.0) será lançada em 25 de março de 2021.
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
-### Gerenciamento de conteúdo sem periféricos {#headless}
+### Gerenciamento de conteúdo headless {#headless}
 
 * **[API do GraphQL para entrega de fragmentos de conteúdo](/help/headless/graphql-api/content-fragments.md)**: capacidade de consultar fragmentos de conteúdo usando sintaxe do GraphQL e esquemas com base em modelos de fragmento de conteúdo para saída no formato JSON.
 

@@ -3,13 +3,13 @@ title: Considerações de segurança do AEM as a Cloud Service
 description: Saiba mais sobre as considerações importantes de segurança ao usar o AEM as a Cloud Service
 hidefromtoc: true
 hide: true
-source-git-commit: 39ffd826f5d1e9cea2e6a03a74f39c16647b45fa
-workflow-type: ht
+exl-id: d2dfde05-ce02-478e-8697-b939fb8740c3
+source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+workflow-type: tm+mt
 source-wordcount: '231'
 ht-degree: 100%
 
 ---
-
 
 # Considerações de segurança do AEM as a Cloud Service {#security-considerations}
 

@@ -83,7 +83,7 @@ Agora que você compreende alguns conceitos fundamentais sobre o Cloud Manager, 
 1. Faça logon no Cloud Manager.
 1. Crie um novo programa sandbox do AEM, ativando o Complemento de demonstrações de referência do AEM como uma opção para o programa.
 1. O conteúdo e a configuração da demonstração são implantados no programa. O conteúdo da demonstração contém:
-   * Modelos de site usados para criar vários sites do AEM usando recursos do AEM, pré-preenchidos com exemplos de práticas recomendadas.
+   * Modelos de site usados para criar vários AEM Sites usando recursos do AEM, pré-preenchidos com exemplos de práticas recomendadas.
    * Ferramentas de configuração para gerenciar o conteúdo de demonstração.
 1. Faça logon no AEM no novo programa sandbox e use a ferramenta de criação rápida de sites para criar sites de demonstração com base nos modelos.
 1. Use as ferramentas de configuração para gerenciar esses sites de demonstração e modelos, incluindo a exclusão deles quando não forem mais necessários.

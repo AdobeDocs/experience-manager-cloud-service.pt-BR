@@ -139,7 +139,7 @@ Para criar uma Live Copy:
 
    >[!NOTE]
    >
-   >Uma caixa de diálogo de erro pode aparecer com a mensagem &quot;Falha ao enviar o formulário&quot;. Isso ocorre devido a um tempo limite de rede. No entanto, o processo para criar a live copy está sendo executado em segundo plano. Aguarde alguns minutos e verifique se as páginas da live copy foram criadas corretamente.
+   >Uma caixa de diálogo de erro pode ser exibida com a mensagem &quot;Falha ao enviar o formulário&quot;. Isso acontece devido a um tempo limite de rede. No entanto, o processo para criar a live copy está em execução em segundo plano. Aguarde alguns minutos e verifique se as páginas da live copy foram criadas corretamente.
 
 ### Criação de uma Live Copy de um site a partir de uma configuração de blueprint {#creating-a-live-copy-of-a-site-from-a-blueprint-configuration}
 

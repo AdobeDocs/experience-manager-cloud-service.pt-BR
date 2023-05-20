@@ -10,7 +10,7 @@ discoiquuid: 01724ca0-6901-45e7-b045-f44814ed574e
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '1117'
-ht-degree: 17%
+ht-degree: 0%
 
 ---
 
@@ -108,14 +108,14 @@ Um painel tem várias opções de layout. A opção Layout para design do acordi
 
 O subformulário repetível é semelhante aos painéis repetíveis no Adaptive Forms. Entrada [!DNL AEM Forms] Designer, execute as seguintes etapas para criar um subformulário repetitivo:
 
-1. Na paleta Hierarquia, selecione o subformulário pai daquele que você deseja repetir.
-1. Na paleta Objeto, clique na guia Subformulário e selecione Continuado na lista Conteúdo.
-1. Selecione o subformulário para repetir.
-1. Na paleta Objeto, clique na guia Subformulário e selecione Posicionado ou Continuado na lista Conteúdo.
-1. Clique na guia Vínculo e selecione Repetir subformulário para cada item de dados.
-1. Para especificar o número mínimo de repetições, selecione Contagem mín. e insira o número na caixa associada. Se esta opção estiver configurada como 0 e nenhum dado for fornecido para os objetos no subformulário no momento da incorporação de dados, o subformulário não é disposto quando o formulário é renderizado.
-1. Para especificar o número máximo de repetições do subformulário, selecione Máx. e insira o número na caixa associada. Se você não especificar um valor na caixa Máx., o número de repetições de subformulário será ilimitado.
-1. Para especificar um número definido de repetições de subformulários, independentemente da quantidade de dados, selecione Contagem inicial e digite o número na caixa correspondente. Se você selecionar essa opção e nenhum dado estiver disponível ou se houver uma quantidade inferior de dados em comparação ao valor especificado em Contagem inicial, as instâncias vazias do subformulários ainda serão posicionadas.
+1. Na paleta Hierarquia, selecione o subformulário pai do subformulário que deseja repetir.
+1. Na paleta Objeto, clique na guia Subformulário e, na lista Conteúdo, selecione Fluxo.
+1. Selecione o subformulário a ser repetido.
+1. Na paleta Objeto, clique na guia Subformulário e, na lista Conteúdo, selecione Posicionado ou Fluxado.
+1. Clique na guia Vinculação e selecione Repetir subformulário para cada item de dados.
+1. Para especificar o número mínimo de repetições, selecione Contagem Mínima e digite um número na caixa associada. Se essa opção estiver definida como 0 e nenhum dado for fornecido para os objetos no subformulário no momento da mesclagem de dados, o subformulário não será colocado quando o formulário for renderizado.
+1. Para especificar o número máximo de repetições do subformulário, selecione Máximo e digite um número na caixa associada. Se você não especificar um valor na caixa Máx., o número de repetições de subformulário será ilimitado.
+1. Para especificar um número definido de repetições de subformulário, independentemente da quantidade de dados, selecione Contagem inicial e digite um número na caixa associada. Se você selecionar essa opção e não houver dados disponíveis ou houver menos entradas de dados do que o valor de Contagem inicial especificado, instâncias vazias do subformulário ainda serão colocadas no formulário.
 1. Adicione dois botões no subformulário pai — um para adicionar a instância e outro para excluir a instância do subformulário repetível. Para obter etapas detalhadas, consulte [Criar uma ação](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c74572b5612a87ca2b56-8000.2.html#WS107c29ade9134a2c-1f74d86012a87d4fe55-8000.2).
 1. Agora, vincule o Modelo de formulário ao Formulário adaptável. Para obter etapas detalhadas, consulte [Criar um formulário adaptável com base em um modelo](creating-adaptive-form.md#create-an-adaptive-form-based-on-a-template).
 1. Use os botões criados na etapa 9 para adicionar e remover subformulários.

@@ -66,10 +66,10 @@ Consulte o documento [Atualização do ambiente](/help/implementing/cloud-manage
 
 Os ambientes em um programa de sandbox são hibernados automaticamente após oito horas de inatividade. Os ambientes de sandbox são excluídos após seis meses contínuos de hibernação.
 
-Consulte [Hibernar e desibernar ambientes de sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md) para obter mais detalhes sobre como cancelar a hibernação de ambientes e a exclusão automática de sandbox.
+Consulte [Hibernação e cancelamento da hibernação de ambientes de sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md) para obter mais detalhes sobre como cancelar a hibernação de ambientes e exclusão automática da sandbox.
 
-### Sem suporte técnico {#no-support}
+### Sem Suporte Técnico {#no-support}
 
-Como um programa de sandbox é normalmente criado para servir aos propósitos de treinamento, execução de demonstrações, ativação ou prova de conceitos (POCs), o suporte técnico não está disponível para problemas enfrentados em um programa de sandbox.
+Como um programa de sandbox é normalmente criado para fins de treinamento, execução de demonstrações, capacitação ou prova de conceito (POCs), o suporte técnico não está disponível para problemas enfrentados em um programa de sandbox.
 
-Se tiver problemas ao criar e gerenciar os programas do sandbox, isso ainda estará dentro do escopo do suporte técnico.
+Se tiver problemas ao criar e gerenciar seus programas de sandbox, isso ainda estará no escopo do suporte técnico.

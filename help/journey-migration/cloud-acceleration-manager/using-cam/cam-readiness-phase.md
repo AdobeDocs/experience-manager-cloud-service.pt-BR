@@ -127,7 +127,7 @@ Siga as etapas abaixo para exibir relatórios da opção de linha de tendência:
    >![imagem](/help/journey-migration/cloud-acceleration-manager/assets/reports-bpa1.png)
 
 
-### Revisar o relatório de análise de práticas recomendadas {#analysis-report}
+### Revisão do relatório do Analisador de Práticas Recomendadas {#analysis-report}
 
 Explore os seguintes cartões disponíveis na página Relatório de análise de práticas recomendadas:
 

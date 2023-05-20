@@ -35,7 +35,7 @@ O autor trabalha no que é conhecido como **ambiente do autor**. Isso oferece um
 >
 >Sua conta precisa dos direitos de acesso apropriados para criar, editar ou publicar conteúdo.
 
-Dependendo de como sua instância e seus direitos de acesso pessoais são configurados, você pode executar muitas tarefas no seu conteúdo, incluindo (entre outras):
+Dependendo de como sua instância e seus direitos de acesso pessoal estão configurados, você pode executar muitas tarefas no conteúdo, incluindo (entre outras):
 
 * Geração de conteúdo novo ou edição do conteúdo existente em uma página
 * Uso de modelos predefinidos para criar novas páginas de conteúdo
@@ -54,7 +54,7 @@ Além disso, há tarefas administrativas que o ajudam a gerenciar seu conteúdo:
 
 ## Visualização de conteúdo {#previewing-content}
 
-O AEM também oferece um serviço de visualização do Sites que permite aos desenvolvedores e autores de conteúdo visualizar a experiência final de um site antes que ele chegue ao ambiente de publicação e esteja disponível publicamente.
+O AEM também oferece um serviço de visualização do Sites que permite que desenvolvedores e autores de conteúdo visualizem a experiência final de um site antes que ele chegue ao ambiente de publicação e esteja disponível publicamente.
 
 Consulte [Visualização de conteúdo](/help/sites-cloud/authoring/fundamentals/previewing-content.md) para obter mais detalhes.
 

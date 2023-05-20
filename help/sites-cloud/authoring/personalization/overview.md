@@ -5,7 +5,7 @@ exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
 source-git-commit: 566cd449c536de4179e32c94df90b46d61e0103a
 workflow-type: tm+mt
 source-wordcount: '1056'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -117,8 +117,8 @@ O AEM fornece um mecanismo de direcionamento [ContextHub](/help/implementing/dev
 
 O mecanismo de direcionamento do [Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md) faz com que as informações coletadas das visitas às páginas sejam rastreadas no Adobe Target.
 
-* Ao usar esse mecanismo de direcionamento, você usa segmentos importados do Adobe Target para definir os públicos das suas experiências.
-* As atividades que usam o mecanismo do Adobe Target são [sincronizadas com o Target](/help/sites-cloud/authoring/personalization/activities.md#synchronizing-activities-with-adobe-target).
+* Ao usar esse mecanismo de direcionamento, use os segmentos importados da Adobe Target para definir os públicos das suas experiências.
+* As atividades que usam o mecanismo do Adobe Target são [sincronizado com o Target](/help/sites-cloud/authoring/personalization/activities.md#synchronizing-activities-with-adobe-target).
 
 Você pode usar esse mecanismo quando tiver [integrado com o Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
 

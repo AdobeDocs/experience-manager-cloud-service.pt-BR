@@ -343,7 +343,7 @@ Se você quiser definir um intervalo de salvamento automático de 5 minutos, ser
 
 * Valor: `300` (5 minutos equivale a 300 segundos)
 
-## Componentes da autoria de página {#components-for-page-authoring}
+## Componentes para criação de página {#components-for-page-authoring}
 
 Para obter mais informações, consulte
 

@@ -556,10 +556,10 @@ Como alternativa, você pode usar: `@argument` `{type} name <Parameter Descripti
 Mostra os parâmetros usados pela função. Uma função pode ter várias tags de parâmetro, uma tag para cada parâmetro na ordem de ocorrência.
    `{type}` representa o tipo de parâmetro. Os tipos de parâmetros permitidos são:
 
-   1. sequência de caracteres
+   1. string
    1. número
    1. booleano
-   1. scope
+   1. escopo
 
    O escopo se refere aos campos de um formulário adaptável. Quando um formulário usa carregamento lento, você pode usar `scope` para acessar seus campos. Você pode acessar campos quando eles forem carregados ou se estiverem marcados como globais.
 
@@ -571,7 +571,7 @@ Como alternativa, você pode usar `@returns {type}`.
 Adiciona informações sobre a função, como seu objetivo.
 {type} representa o tipo de retorno da função. Os tipos de retorno permitidos são:
 
-   1. sequência de caracteres
+   1. string
    1. número
    1. booleano
 

@@ -20,7 +20,7 @@ Esta página descreve as regras personalizadas de qualidade do código executada
 
 >[!NOTE]
 >
->As regras completas do SonarQube não estão disponíveis para download devido às informações proprietárias do Adobe. Você pode baixar a lista completa de regras [usando este link.](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx) Continue a ler este documento para obter descrições e exemplos das regras.
+>As regras completas da SonarQube não estão disponíveis para download devido a informações proprietárias do Adobe. Você pode baixar a lista completa de regras [usando este link.](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx) Continue lendo este documento para obter descrições e exemplos das regras.
 
 >[!NOTE]
 >
