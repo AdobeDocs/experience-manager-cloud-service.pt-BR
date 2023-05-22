@@ -22,7 +22,7 @@ ht-degree: 42%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide"
 >title="Iniciar o console de modelo"
->abstract="Vamos explorar como criar um esquema reutilizável, chamado de modelo de fragmento de conteúdo, para o seu conteúdo no Adobe Experience Manager as a Cloud Service. Assista ao vídeo para entender por que essa é uma etapa importante. <br><br>Neste módulo de aprendizagem, usaremos um site de viagem como exemplo e ensinaremos como criar um modelo que representa uma viagem.<br><br>Inicie esse módulo em uma nova guia clicando no botão abaixo e, em seguida, siga este guia."
+>abstract="Vamos explorar como criar um esquema reutilizável, chamado de modelo de fragmento de conteúdo, para o seu conteúdo no Adobe Experience Manager as a Cloud Service. Assista ao vídeo para entender por que essa é uma etapa importante. <br><br>Neste módulo de aprendizagem, usaremos um site de viagem como exemplo e ensinaremos como criar um modelo que represente uma viagem.<br><br>Inicie esse módulo em uma nova guia clicando no botão abaixo e, em seguida, siga este guia."
 >additional-url="https://video.tv.adobe.com/v/3413261?captions=por_br" text="Vídeo de introdução à estrutura de conteúdo"
 
 >[!CONTEXTUALHELP]
