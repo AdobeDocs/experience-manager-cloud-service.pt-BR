@@ -215,12 +215,12 @@ O resumo de texto foi criado para ajudar os usuários a reduzir o comprimento do
 >  `/content/dam/my-brand/en/path-down/my-content-fragment`
 
 >[!CAUTION]
-O inglês está disponível pronto para uso.
-Outros idiomas estão disponíveis como Pacotes de modelo de idioma na Distribuição de software:
-* [Francês (fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
-* [Alemão (de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
-* [Italiano (it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
-* [Espanhol (es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
+>O inglês está disponível pronto para uso.
+>Outros idiomas estão disponíveis como Pacotes de modelo de idioma na Distribuição de software:
+>* [Francês (fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
+>* [Alemão (de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
+>* [Italiano (it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
+>* [Espanhol (es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
 >
 
 
@@ -289,7 +289,7 @@ Anotações:
 * São indicadas pelo destaque no texto, no modo de tela cheia e no modo normal do editor. Detalhes completos de uma anotação podem ser visualizados, editados e/ou excluídos ao clicar no texto destacado, o que abrirá novamente a caixa de diálogo.
 
    >[!NOTE]
-   Um seletor suspenso é fornecido se várias anotações tiverem sido aplicadas a um texto.
+   >Um seletor suspenso é fornecido se várias anotações tiverem sido aplicadas a um texto.
 
 * Quando você exclui o texto inteiro ao qual a anotação foi aplicada, a anotação também é excluída.
 
@@ -306,11 +306,11 @@ Para facilitar o processo de criação de fragmentos de conteúdo, você pode ad
 Eles serão adicionados à sequência de parágrafo do fragmento sem qualquer formatação; a formatação pode ser feita quando o [fragmento for usado/referenciado em uma página](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 
 >[!CAUTION]
-Esses ativos não podem ser movidos ou excluídos em uma página de referência. Isso deve ser feito no editor do fragmento.
-No entanto, a formatação do ativo (por exemplo, seu tamanho) deve ser feita no [editor de páginas](/help/sites-cloud/authoring/fundamentals/content-fragments.md). A representação do ativo no editor de fragmento serve meramente para a criação do fluxo de conteúdo.
+>Esses ativos não podem ser movidos ou excluídos em uma página de referência. Isso deve ser feito no editor do fragmento.
+>No entanto, a formatação do ativo (por exemplo, seu tamanho) deve ser feita no [editor de páginas](/help/sites-cloud/authoring/fundamentals/content-fragments.md). A representação do ativo no editor de fragmento serve meramente para a criação do fluxo de conteúdo.
 
 >[!NOTE]
-Existem vários métodos de adicionar [imagens](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) ao fragmento e/ou página.
+>Existem vários métodos de adicionar [imagens](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) ao fragmento e/ou página.
 
 1. Posicione o cursor na posição que deseja adicionar a imagem.
 1. Use o ícone **Inserir ativo** para abrir a caixa de diálogo de pesquisa.
@@ -327,9 +327,9 @@ Existem vários métodos de adicionar [imagens](/help/sites-cloud/administering/
 1. Use **Selecionar** para adicionar o ativo ao sistema de parágrafo do fragmento de conteúdo no local atual.
 
    >[!CAUTION]
-   Se, após adicionar um ativo, você alterar o formato para:
-   * **Texto simples:** o ativo será completamente perdido do fragmento.
-   * **Marcação**: o ativo não estará visível, mas ainda estará lá ao retornar para **Rich Text**.
+   >Se, após adicionar um ativo, você alterar o formato para:
+   >* **Texto simples:** o ativo será completamente perdido do fragmento.
+   >* **Marcação**: o ativo não estará visível, mas ainda estará lá ao retornar para **Rich Text**.
 
 
 ### Inserir um fragmento de conteúdo no fragmento {#inserting-content-fragment-into-your-fragment}
@@ -339,14 +339,14 @@ Para facilitar o processo de criação de fragmentos de conteúdo, também é po
 Eles serão adicionados como referência, no local atual no fragmento.
 
 >[!NOTE]
-Essa opção está disponível quando o **Texto multilinha** é configurado com a opção **Permitir referência de fragmento**.
+>Essa opção está disponível quando o **Texto multilinha** é configurado com a opção **Permitir referência de fragmento**.
 
 >[!CAUTION]
-Esses ativos não podem ser movidos ou excluídos em uma página de referência. Isso deve ser feito no editor do fragmento.
-No entanto, a formatação do ativo (por exemplo, seu tamanho) deve ser feita no [editor de páginas](/help/sites-cloud/authoring/fundamentals/content-fragments.md). A representação do ativo no editor de fragmento serve meramente para a criação do fluxo de conteúdo.
+>Esses ativos não podem ser movidos ou excluídos em uma página de referência. Isso deve ser feito no editor do fragmento.
+>No entanto, a formatação do ativo (por exemplo, seu tamanho) deve ser feita no [editor de páginas](/help/sites-cloud/authoring/fundamentals/content-fragments.md). A representação do ativo no editor de fragmento serve meramente para a criação do fluxo de conteúdo.
 
 >[!NOTE]
-Existem vários métodos de adicionar [imagens](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) ao fragmento e/ou página.
+>Existem vários métodos de adicionar [imagens](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) ao fragmento e/ou página.
 
 1. Posicione o cursor na posição em que deseja adicionar o fragmento.
 1. Use o ícone **Inserir fragmento de conteúdo** para abrir a caixa de diálogo de pesquisa.
@@ -363,18 +363,18 @@ Existem vários métodos de adicionar [imagens](/help/sites-cloud/administering/
 1. Use **Selecionar** para adicionar uma referência ao fragmento de conteúdo selecionado no seu fragmento de conteúdo atual (no local atual).
 
    >[!CAUTION]
-   Se, após adicionar uma referência a outro fragmento, você alterar o formato para:
-   * **Texto sem formatação:** a referência será completamente removida do fragmento.
-   * **Markdown**: a referência permanecerá.
+   >Se, após adicionar uma referência a outro fragmento, você alterar o formato para:
+   >* **Texto sem formatação:** a referência será completamente removida do fragmento.
+   >* **Markdown**: a referência permanecerá.
 
 
 ## Gerenciamento de variações {#managing-variations}
 
-[!CONTEXTUALHELP]
-id="aemcloud_sites_contentfragments_variations"
-title="Variações - Criação dos fragmentos de conteúdo"
-abstract="Saiba como fazer variações de conteúdo para usar com canais específicos."
-additional-url="https://video.tv.adobe.com/v/333295" text="Variações de fragmento do conteúdo"
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_contentfragments_variations"
+>title="Variações - Criação dos fragmentos de conteúdo"
+>abstract="Saiba como fazer variações de conteúdo para usar com canais específicos."
+>additional-url="https://video.tv.adobe.com/v/333295" text="Variações de fragmento do conteúdo"
 
 ### Criar uma variação {#creating-a-variation}
 
@@ -389,7 +389,7 @@ Para criar uma nova variação:
 1. Selecione **Adicionar**; o fragmento **Mestre** será copiado para a nova variação, que agora está aberta para [edição](#editing-a-variation).
 
    >[!NOTE]
-   Ao criar uma nova variação, é sempre o **Principal** que é copiado, não a variação que está aberta no momento.
+   >Ao criar uma nova variação, é sempre o **Principal** que é copiado, não a variação que está aberta no momento.
 
 ### Editar uma variação {#editing-a-variation}
 
@@ -413,7 +413,7 @@ Para renomear uma variação existente:
 1. Confirme a ação **Renomear**.
 
 >[!NOTE]
-Isso só afeta o **Título** da variação.
+>Isso só afeta o **Título** da variação.
 
 ### Excluir uma Variação {#deleting-a-variation}
 
@@ -426,7 +426,7 @@ Para excluir uma variação existente:
 1. Confirme a ação de **Exclusão** na caixa de diálogo.
 
 >[!NOTE]
-Não é possível excluir o **Principal**.
+>Não é possível excluir o **Principal**.
 
 ### Sincronização com o Principal {#synchronizing-with-master}
 
@@ -435,10 +435,10 @@ O **Principal** é parte integral de um fragmento de conteúdo e, por definiçã
 Ao editar uma variação, você tem acesso à ação para sincronizar o elemento atual da variação com o Principal. Isso permite copiar automaticamente as alterações feitas no Principal para a variação necessária.
 
 >[!CAUTION]
-A sincronização só está disponível para copiar alterações *do **Principal**para a variação*.
-Somente o elemento atual da variação será sincronizado.
-A sincronização só funciona no tipo de dados **Texto de várias linhas**.
-A transferência de alterações *de uma variação para o **Principal*** não está disponível como uma opção.
+>A sincronização só está disponível para copiar alterações *do **Principal**para a variação*.
+>Somente o elemento atual da variação será sincronizado.
+>A sincronização só funciona no tipo de dados **Texto de várias linhas**.
+>A transferência de alterações *de uma variação para o **Principal*** não está disponível como uma opção.
 
 1. Abra o fragmento de conteúdo no editor de fragmentos. Certifique-se de que o **Principal** foi editado.
 
