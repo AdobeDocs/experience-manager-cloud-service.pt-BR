@@ -2,10 +2,10 @@
 title: Mapeamento de usuários e migração principal
 description: Visão geral do mapeamento de usuários e da migração principal
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: 25bfcd521e9bbc54bff3b87d17cdeb0f99a68511
 workflow-type: tm+mt
-source-wordcount: '757'
-ht-degree: 22%
+source-wordcount: '788'
+ht-degree: 21%
 
 ---
 
@@ -53,3 +53,7 @@ Os seguintes casos específicos são registrados:
 * Se a configuração **Apagar conteúdo existente na instância da nuvem antes da assimilação** estiver definido, os usuários já transferidos na instância do Cloud Service serão excluídos junto com todo o repositório existente e um novo repositório será criado para assimilar conteúdo no. Isso também redefine todas as configurações, incluindo permissões na instância do Cloud Service de destino, e é verdadeiro para um usuário administrador adicionado à **administradores** grupo. O usuário administrador deve ser adicionado novamente à **administradores** grupo para recuperar o token de acesso para CTT.
 * Quando atualizações complementares de conteúdo são executadas, se o conteúdo não for transferido porque não foi alterado desde a transferência anterior, os usuários e grupos associados a esse conteúdo também não serão transferidos, mesmo que os usuários e grupos tenham sido alterados enquanto isso. Isso ocorre porque usuários e grupos são migrados junto com o conteúdo ao qual estão associados.
 * Se a instância de destino do AEM Cloud Service tiver um usuário com um nome de usuário diferente, mas com o mesmo endereço de email de um dos usuários na instância de origem do AEM e o Mapeamento de usuários estiver ativado, uma mensagem de erro será gravada nos logs e o usuário do AEM de origem não será transferido, pois somente um usuário com um determinado endereço de email é permitido no sistema de destino.
+
+## Resumo final e relatório {#final-report}
+
+Depois que a extração e a assimilação forem concluídas com êxito, um relatório será gerado mostrando os detalhes da migração principal. Consulte [Como validar a migração principal](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md#how-to-validate-principal-migration) para obter os detalhes.

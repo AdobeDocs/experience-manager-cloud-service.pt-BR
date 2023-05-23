@@ -2,9 +2,9 @@
 title: Validar transferências de conteúdo
 description: Usar a ferramenta Transferência de conteúdo para validar as transferências de conteúdo
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: b6c9d7411e84b18926aa525efe25296002c2d3d2
+source-git-commit: c1f60a1ead466b47694b8918e5b39011041c5f25
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '1070'
 ht-degree: 2%
 
 ---
@@ -77,7 +77,7 @@ A parte superior do log de assimilação conterá uma entrada, semelhante a `aem
 Quando a assimilação estiver concluída e a validação estiver começando, a seguinte entrada de log será anotada no log de assimilação:
 
 ```
-Gathering artifacts for migration validation...  
+Gathering artifacts for migration validation...
 ```
 
 Os detalhes da validação seguirão esta entrada. Encontre um exemplo de uma grande migração abaixo:
@@ -131,6 +131,24 @@ Além de ser incluído no log de assimilação, o relatório de validação tamb
 
 
 ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
+
+## Como validar a migração principal {#how-to-validate-principal-migration}
+
+Consulte [Mapeamento de usuários e migração de entidade de segurança](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) para ler os detalhes das migrações principais e por que isso é necessário.
+
+Quando a extração e a assimilação forem concluídas com êxito, um resumo e um relatório da migração principal estarão disponíveis. Essas informações podem ser usadas para validar quais usuários e grupos foram migrados com êxito e, talvez, para determinar por que alguns não foram migrados.
+
+Para exibir essas informações, acesse Cloud Acceleration Manager. Clique no cartão do projeto e clique no cartão Transferência de conteúdo. Navegue até **Tarefas de assimilação** e localize a assimilação que deseja verificar. Clique nos três pontos (**..**) para essa assimilação, em seguida, clique em **Exibir resumo principal** no menu suspenso.
+
+![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
+
+Você verá uma caixa de diálogo com as informações de resumo. Use os ícones de ajuda para ler uma descrição mais completa. Clique em **Baixar relatório** botão para baixar o relatório separado por vírgula (CSV) completo.
+
+![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-dialog.png)
+
+>[!NOTE]
+>
+>Se o mapeamento de usuários estiver desativado, outra variante dessa caixa de diálogo será exibida. Ele indicará que o mapeamento de usuários foi desativado e não mostrará os três campos que fornecem valores de mapeamento de usuários.
 
 ## Resolução de problemas {#troubleshooting}
 
