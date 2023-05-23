@@ -1,19 +1,19 @@
 ---
-title: Adicionar tags automáticas a ativos [!DNL Adobe Sensei] serviço inteligente
-description: Adicione tags a ativos com um serviço artificialmente inteligente que aplica tags comerciais contextuais e descritivas.
+title: Como adicionar tags inteligentes a ativos no AEM?
+description: Adicione tags inteligentes aos ativos no AEM com um serviço artificialmente inteligente que aplica tags comerciais contextuais e descritivas.
 contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: f8535b9d1b8334bede817714eab469fbb1fcbb03
 workflow-type: tm+mt
-source-wordcount: '2445'
+source-wordcount: '2462'
 ht-degree: 6%
 
 ---
 
 
-# Adicione tags inteligentes aos seus ativos e melhore a experiência de pesquisa {#smart-tag-assets-for-faster-search}
+# Adicionar tags inteligentes a ativos no AEM {#smart-tags-assets-aem}
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
@@ -24,13 +24,13 @@ As organizações que lidam com ativos digitais usam cada vez mais vocabulário 
 
 Em comparação aos vocabulários de linguagem natural, a marcação com base na taxonomia comercial ajuda a alinhar os ativos aos negócios de uma empresa e garante que os ativos mais relevantes apareçam nas pesquisas. Por exemplo, um fabricante de carros pode marcar imagens de carro com nomes de modelo para que apenas imagens relevantes sejam exibidas quando pesquisadas para projetar uma campanha promocional.
 
-Em segundo plano, a funcionalidade usa a estrutura artificialmente inteligente do [Adobe Sensei](https://business.adobe.com/why-adobe/experience-cloud-artificial-intelligence.html) para treinar o algoritmo de reconhecimento de imagem de acordo com sua estrutura de tags e sua taxonomia comercial. Essa inteligência de conteúdo é usada para aplicar tags relevantes em um conjunto diferente de ativos. [!DNL Experience Manager Assets] O aplica tags inteligentes automaticamente a ativos carregados, por padrão.
+Em segundo plano, a funcionalidade usa a estrutura artificialmente inteligente do [Adobe Sensei](https://business.adobe.com/why-adobe/experience-cloud-artificial-intelligence.html) para treinar o algoritmo de reconhecimento de imagem de acordo com sua estrutura de tags e sua taxonomia comercial. Essa inteligência de conteúdo é usada para aplicar tags relevantes em um conjunto diferente de ativos. Por padrão, o AEM aplica tags inteligentes automaticamente a ativos carregados.
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
 -->
 
-## Tipos de ativos compatíveis {#smart-tags-supported-file-formats}
+## Tipos de ativos compatíveis com tags inteligentes no AEM {#smart-tags-supported-file-formats}
 
 Você pode marcar os seguintes tipos de ativos:
 
@@ -59,7 +59,7 @@ Você pode marcar os seguintes tipos de ativos:
 | image/psd |  |  |
 | image/vnd.adobe.photoshop |  |  |
 
-[!DNL Experience Manager] O adiciona automaticamente as Tags inteligentes aos ativos baseados em texto e aos vídeos por padrão. Para adicionar tags inteligentes automaticamente a imagens, conclua as tarefas a seguir.
+O AEM adiciona automaticamente as Tags inteligentes aos ativos baseados em texto e aos vídeos por padrão. Para adicionar tags inteligentes automaticamente a imagens, conclua as tarefas a seguir.
 
 * [Entender modelos e diretrizes de tags](#understand-tag-models-guidelines).
 * [Treinar o modelo](#train-model).
@@ -189,9 +189,9 @@ Para verificar se o serviço de Tags inteligentes é treinado em suas tags no co
 [!DNL Experience Manager] can automatically tag the assets that users upload to DAM. To do so, administrators configure a workflow to add an available step that tags assets. See [how to enable Smart Tags for uploaded assets](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
 -->
 
-## Marcar ativos com tags inteligentes {#tag-assets}
+## Marcar ativos com tags inteligentes no AEM {#tag-assets}
 
-Todos os tipos de ativos compatíveis são marcados automaticamente pelo [!DNL Experience Manager Assets] quando carregado. A marcação é ativada e funciona por padrão. [!DNL Experience Manager] O aplica as tags apropriadas em tempo quase real. <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
+Todos os tipos de ativos compatíveis são marcados automaticamente pelo [!DNL Experience Manager Assets] quando carregado. A marcação é ativada e funciona por padrão. O AEM aplica as tags inteligentes apropriadas em tempo quase real. <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
 
 * Para imagens e vídeos, as Tags inteligentes se baseiam em algum aspecto visual.
 
