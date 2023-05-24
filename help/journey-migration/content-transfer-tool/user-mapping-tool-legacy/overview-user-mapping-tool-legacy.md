@@ -4,7 +4,7 @@ description: Visão geral da ferramenta Mapeamento de usuários (herdado)
 exl-id: 17ed5721-093e-4491-b8c4-3dadcaa6598b
 hide: true
 hidefromtoc: true
-source-git-commit: 8a258c2c929f9af84a1cde99072291a3e7f6cfc3
+source-git-commit: e84b9e5403ee937b689e312fb06a2464b89fffe6
 workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 88%
@@ -18,6 +18,8 @@ ht-degree: 88%
 >Esta documentação se refere a uma versão obsoleta da ferramenta. Para obter mais informações sobre a versão mais recente, consulte [Mapeamento de usuários e migração de entidade de segurança](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
 
 <!-- Alexandru: drafting this for now
+
+NOTE: "LEGACY" for user mapping includes everything before (i.e. not including) 2.0.16 of CTT.
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_usermapping"
