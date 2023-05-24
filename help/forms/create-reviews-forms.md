@@ -1,40 +1,39 @@
 ---
 title: Criar e gerenciar revisões em formulários
 seo-title: Creating and managing reviews in forms
-description: Uma Revisão é um mecanismo que permite que um ou mais revisores comentem sobre um ativo que está disponível em um formulário.
-seo-description: A Review is a mechanism that allows one or more reviewers to comment on an asset that is available in a form.
+description: Uma Revisão é um mecanismo que permite que um ou mais revisores comente em um formulário.
+seo-description: A Review is a mechanism that allows one or more reviewers to comment on a form.
 topic-tags: forms-manager
-exl-id: 378049f8-bf21-4595-819d-ba5fba7023c0
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: 3efd7d81424369ce6430802373129ab91b7356ab
 workflow-type: tm+mt
-source-wordcount: '670'
+source-wordcount: '652'
 ht-degree: 0%
 
 ---
 
-# Criação e gerenciamento de revisões para ativos em formulários{#creating-and-managing-reviews-for-assets-in-forms}
+# Criar e gerenciar revisões em formulários{#creating-and-managing-reviews-to-forms}
 
 ## Análise {#review}
 
-Uma revisão é um mecanismo que permite que um ou mais revisores comentem um ativo que está disponível em um formulário.
+Uma revisão é um mecanismo que permite que um ou mais revisores comentem formulários.
 
 ## Configurar uma revisão {#setting-up-a-review}
 
-1. Navegue até a guia Forms e selecione um formulário.
-1. Se o formulário não tiver uma revisão em andamento, inicie a revisão ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) aparece na barra de Ações. Clique em Iniciar revisão ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) ícone.
+1. Navegue até o navegador de formulários e selecione um formulário para revisão.
+1. Se o Formulário não tiver uma revisão em andamento, uma solicitação **Iniciar revisão** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) aparece na barra de Ações. Clique em **Iniciar revisão** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) ícone.
 1. Insira as seguintes informações:
 
-   * Título: obrigatório, pode conter caracteres alfanuméricos, hífen ou sublinhado.
-   * Descrição: opcional, descrição da finalidade/conteúdo para revisão.
-   * Prazo: opcional, a data em que a revisão termina. Quando ultrapassado o prazo, a tarefa aparece como &#39;Vencida&#39;.
-   * Revisores: é obrigatório no mínimo um. Digitar um nome de grupo ou nome de usuário lista todos os nomes correspondentes, exceto o grupo de usuários de serviço. selecione um nome e clique em Adicionar.
+   * **Título**: obrigatório, pode conter caracteres alfanuméricos, hífen e sublinhado.
+   * **Descrição**: opcional, descrição da finalidade/conteúdo para revisão.
+   * **Prazo**: opcional, a data em que a revisão termina. Quando ultrapassado o prazo, a tarefa aparece como &#39;Vencida&#39;.
+   * **Nome do Revisor**: no mínimo um é obrigatório. Use a caixa de combinação para adicionar revisores, digitando uma lista de nomes com todos os nomes correspondentes; selecione um nome e clique em **Adicionar**. Na próxima seção do **Revisores** mostra o nome de todos os revisores.
 
-1. Clique em Iniciar para iniciar uma revisão.
+1. Clique em **Início** para iniciar uma revisão.
 
->[!NOTE]
->
->* O administrador pode acessar qualquer grupo associado aos usuários do formulário.
->* O grupo Usuários de Serviço não está disponível para seleção para revisão.
+   >[!NOTE]
+   >
+   >* O administrador pode acessar qualquer grupo associado aos usuários do formulário.
+   >* O grupo Usuários de Serviço não está disponível para seleção para revisão.
 
 
 ### Ações que ocorrem quando uma revisão é configurada {#actions-that-occur-when-a-review-is-set-up}
@@ -48,46 +47,42 @@ Esta seção descreve o que acontece quando uma revisão é criada ou configurad
 
    Alerta de notificação do revisor
 
-1. A caixa de comentário está disponível para os revisores do Formulário. Outras pessoas podem exibir os comentários, mas não podem escrevê-los.
+1. A caixa comment está disponível para os revisores do formulário. Outras pessoas podem ler os comentários, mas não podem adicionar os seus próprios.
 
 ## Gerenciamento de uma revisão {#managing-a-review}
 
 >[!NOTE]
 >
->Somente as revisões em andamento podem ser modificadas. As revisões concluídas não podem ser modificadas.
+>* Somente as revisões em andamento podem ser modificadas.
+>* As revisões concluídas não podem ser modificadas.
 
-1. Navegue até a guia Forms e selecione um formulário.
 
-1. Se um ativo tiver uma revisão em andamento e você for o iniciador da revisão, uma opção Gerenciar revisão ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) ícones são exibidos na barra de Ações. Somente o iniciador da revisão pode gerenciar (Atualizar/Encerrar) a revisão.
+1. Navegue até a guia formulários e selecione um formulário.
 
-   Clique em Gerenciar revisão ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png)ícone.
+1. Se um formulário tiver uma revisão em andamento e você for o iniciador da revisão, uma solicitação **Gerenciar revisão** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) aparece na barra de ações. Somente o iniciador da revisão pode gerenciar (Atualizar/Encerrar) a revisão.
+
+   Clique em **Gerenciar revisão** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png)ícone.
 
    Para usuários diferentes do iniciador, o ícone Gerenciar revisão está desativado.
 
-1. Você obtém uma tela que exibe informações:
+1. Agora você obtém uma tela que exibe informações:
 
-   * **Título**: não pode ser editado.
+   * **Nome da revisão**: não pode ser editado.
 
-   * **Descrição**: disponível para edição.
+   * **Descrição da revisão**: disponível para edição.
 
-   * **Prazo**: disponível para edição. É possível modificar o prazo para qualquer data e hora além da data e hora atuais.
+   * **Prazo da revisão**: disponível para edição. É possível modificar o prazo para qualquer data e hora além da data e hora atuais.
 
-   * **Nome do Revisor**: disponível para edição. É possível adicionar ou remover revisores. Se uma tarefa estiver vencida, você poderá adicionar revisores somente depois de estender o prazo além da data atual.
+   * **Revisores**: disponível para edição. É possível adicionar ou remover revisores. Se uma tarefa estiver vencida, você poderá adicionar revisores somente depois de estender o prazo além da data atual.
 
-1. Edite os campos necessários e clique em Concluído.
-
-   ![Revisar estado atualizado no Gerenciador de tarefas](assets/manage-review-img.png)
-
-   Revisar estado atualizado no Gerenciador de tarefas
-
-1. Para encerrar a revisão, clique em Encerrar revisão.
+1. Para encerrar a revisão, clique em **Fim**.
 
 ### Ações que ocorrem quando uma revisão é modificada {#actions-that-occur-when-a-review-is-modified}
 
-Esta seção descreve o que acontece no(a) Revisar atualização/término:
+Esta seção descreve o que acontece em **Atualização/Fim da Revisão**:
 
-1. Se a Descrição da revisão for modificada, a tarefa correspondente dos revisores e do iniciador será atualizada.
-1. Se o Prazo de revisão for modificado, a tarefa correspondente para os revisores será atualizada com a nova data.
+1. Se a descrição da revisão for modificada, a tarefa correspondente dos revisores e do iniciador será atualizada.
+1. Se o prazo da revisão for modificado, a tarefa correspondente para os revisores será atualizada com a nova data.
 
 1. Se um revisor for removido:
 
@@ -112,4 +107,4 @@ Esta seção descreve o que acontece no(a) Revisar atualização/término:
    1. **Revisores**: Para cada revisor, a tarefa incompleta relacionada à revisão é encerrada. A tarefa não aparece mais como &#39;Pendente&#39; na seção Notificações do revisor.
    1. **Iniciador**: a tarefa atribuída ao iniciador da revisão está marcada como concluída. A tarefa é removida da seção Notificação do iniciador da revisão.
    1. **Todos**: a revisão aparece na seção Análises anteriores. Nenhum comentário adicional pode ser adicionado.
-      ![revisão concluída](assets/review-complete-imgg.png)
+   ![revisão concluída](assets/review-complete-imgg.png)
