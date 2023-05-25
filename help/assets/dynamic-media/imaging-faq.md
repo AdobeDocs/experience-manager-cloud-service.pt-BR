@@ -4,9 +4,9 @@ description: Saiba como a Criação de imagens inteligentes com a IA do Adobe Se
 contentOwner: Rick Brough
 feature: Asset Management,Renditions
 role: User
-mini-toc-levels: 3
+mini-toc-levels: null
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 5cc750b3ea9a911355220f8b95f769000be9f41a
+source-git-commit: 2b1030a32733154491aa178f390038ef7d552151
 workflow-type: tm+mt
 source-wordcount: '3630'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 # Imagem inteligente {#smart-imaging}
 
-## O que é &quot;Smart Imaging&quot;? {#what-is-smart-imaging}
++++**O que é &quot;Smart Imaging&quot;?** {#what-is-smart-imaging}
 
 A tecnologia Smart Imaging aplica os recursos de IA do Adobe Sensei e funciona com &quot;predefinições de imagem&quot; existentes. Ele funciona para aprimorar o desempenho do delivery de imagens, otimizando automaticamente o formato, o tamanho e a qualidade da imagem com base nos recursos do navegador do cliente.
 
@@ -60,7 +60,9 @@ Consulte também [Otimização de imagem com formatos de imagem de última gera�
 
 In terms of images, the goal is to serve the best quality images as efficiently as possible. -->
 
-## Quais são os principais benefícios da geração de imagens inteligentes mais recente? {#what-are-the-key-benefits-of-smart-imaging}
++++
+
++++## Quais são os principais benefícios da geração de imagens inteligentes mais recente? {#what-are-the-key-benefits-of-smart-imaging}
 
 A Imagem inteligente oferece melhor desempenho de entrega de imagens, otimizando automaticamente o tamanho do arquivo de imagem com base no navegador do cliente em uso, na exibição do dispositivo e nas condições da rede. Como as imagens constituem a maioria do tempo de carregamento de uma página, qualquer melhoria de desempenho pode ter um impacto profundo nos KPIs de negócios, como taxas de conversão mais altas, tempo gasto em um site e taxas de rejeição mais baixas.
 
@@ -72,7 +74,9 @@ Os principais benefícios mais recentes da Smart Imaging mais recente incluem:
 * Proporção de pixels do dispositivo (`dpr`)
 * Largura de banda de rede (`network`)
 
-### Sobre a Conversão de Formato de Navegador (bfc) {#bfc}
++++
+
+**Sobre a Conversão de Formato de Navegador (bfc)** {#bfc}
 
 Ativando a Conversão de Formato de Navegador anexando `bfc=on` para o URL da imagem converte automaticamente o JPEG e PNG em AVIF com perdas, WebP com perdas, JPEGXR com perdas, JPEG2000 com perdas para navegadores diferentes. Para navegadores que não oferecem suporte a esses formatos, o Smart Imaging continua a servir o JPEG ou o PNG. Juntamente com o formato, a qualidade do novo formato é recalculada pelo Smart Imaging.
 
@@ -80,7 +84,7 @@ As imagens inteligentes também podem ser desativadas anexando `bfc=off` ao URL 
 
 Consulte também [bfc](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc.html?lang=en) na API do Dynamic Media Image Serving and Rendering.
 
-### Sobre a otimização da Relação de pixels do dispositivo (dpr) {#dpr}
+**Sobre a Proporção de pixels do dispositivo (dpr)** otimização {#dpr}
 
 Proporção de pixels do dispositivo (DPR) - também conhecida como Proporção de pixels CSS - é a relação entre os pixels físicos e os pixels lógicos de um dispositivo. Especialmente com o advento das telas retina, a resolução de pixels de dispositivos móveis modernos está crescendo a uma taxa rápida.
 
@@ -106,7 +110,7 @@ Atualmente, a densidade de pixels da exibição vem dos valores de cabeçalho da
 
 Consulte também [Ao trabalhar com imagens](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images) e [Ao trabalhar com o Recorte inteligente](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
 
-### Sobre a otimização da largura de banda da rede {#network}
+**Sobre a otimização da largura de banda da rede** {#network}
 
 Ativar a Largura de Banda da Rede ajusta automaticamente a qualidade da imagem fornecida com base na largura de banda real da rede. Para uma largura de banda de rede ruim, a otimização da DPR (Relação de pixels do dispositivo) é automaticamente desativada, mesmo que já esteja ativada.
 
@@ -118,7 +122,7 @@ Se desejar, sua empresa pode recusar a otimização da largura de banda da rede 
 
 Os valores de DPR e largura de banda da rede são baseados nos valores detectados do lado do cliente do CDN empacotado. Esses valores às vezes são imprecisos. Por exemplo, iPhone5 com DPR=2 e iPhone12 com `dpr=3`, ambos mostram `dpr=2`. Ainda, para dispositivos de alta resolução, enviar `dpr=2` é melhor do que enviar `dpr=1`. No entanto, a melhor maneira de superar essa imprecisão é usar a DPR do lado do cliente para fornecer valores 100% precisos. E funciona para qualquer dispositivo, seja Apple ou qualquer outro dispositivo que tenha sido iniciado. Consulte [Usar Imagem inteligente com proporção de pixels do dispositivo no lado do cliente](/help/assets/dynamic-media/client-side-dpr.md).
 
-### Principais benefícios adicionais da geração de imagens inteligentes
+**Principais benefícios adicionais da geração de imagens inteligentes**
 
 * Classificação da SEO do Google aprimorada para páginas da Web que usam a Imagem inteligente mais recente.
 * Fornece conteúdo otimizado imediatamente (no tempo de execução).
@@ -127,7 +131,9 @@ Os valores de DPR e largura de banda da rede são baseados nos valores detectado
 * Anteriormente, as imagens originais e derivadas eram armazenadas em cache e era um processo de duas etapas para invalidar o cache. Na Smart Imaging mais recente, somente os derivados são armazenados em cache, permitindo um processo de invalidação de cache de etapa única.
 * Os clientes que usam cabeçalhos personalizados em seu conjunto de regras se beneficiam da geração de Smart Imaging mais recente, pois esses cabeçalhos não são bloqueados, ao contrário da versão anterior do Smart Imaging. Por exemplo, &quot;Origem de permissão de tempo&quot;, &quot;X-Robot&quot; conforme sugerido em [Adicione um valor de cabeçalho personalizado às respostas da imagem|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
 
-## Há algum custo de licenciamento associado ao Smart Imaging? {#are-there-any-licensing-costs-associated-with-smart-imaging}
++++
+
++++**Há algum custo de licenciamento associado ao Smart Imaging?** {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
 Não. A imagem inteligente está incluída em sua licença atual do. Essa regra é verdadeira para Dynamic Media Classic ou Experience Manager - Dynamic Media (no local, AMS e Experience Manager as a Cloud Service).
 
@@ -135,7 +141,9 @@ Não. A imagem inteligente está incluída em sua licença atual do. Essa regra 
 >
 >A Criação de imagens inteligentes não está disponível para clientes Dynamic Media - Hybrid.
 
-## Como funciona o Smart Imaging? {#how-does-smart-imaging-work}
++++
+
++++**Como funciona o Smart Imaging?** {#how-does-smart-imaging-work}
 
 Quando uma imagem é solicitada por um consumidor, o Smart Imaging verifica as características do usuário e as converte para o formato de imagem apropriado com base no navegador em uso. Essas conversões de formato são feitas de uma maneira que não prejudica a fidelidade visual. A geração de imagens inteligentes converte automaticamente imagens em diferentes formatos com base na capacidade do navegador da seguinte maneira.
 
@@ -147,6 +155,8 @@ Quando uma imagem é solicitada por um consumidor, o Smart Imaging verifica as c
 * Para navegadores que não aceitam esses formatos, o formato de imagem solicitado originalmente é fornecido.
 
 Se o tamanho original da imagem for menor do que o produzido pela Smart Imaging, a imagem original será fornecida.
+
++++
 
 ## Quais formatos de imagem são compatíveis? {#what-image-formats-are-supported}
 
