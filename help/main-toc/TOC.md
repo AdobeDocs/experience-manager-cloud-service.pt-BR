@@ -8,9 +8,9 @@ user-guide-description: Saiba como o Experience Manager as a Cloud Service funci
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: b4aa3495538eebc2e87383e1490bc60403025fb0
+source-git-commit: f9e05b8d8fa6286c121f32e1e1f390a149471921
 workflow-type: tm+mt
-source-wordcount: '4012'
+source-wordcount: '4011'
 ht-degree: 99%
 
 ---
@@ -462,7 +462,7 @@ ht-degree: 99%
       + [Predefinições de conjunto de lotes](/help/assets/dynamic-media/batch-set-presets-dm.md)
       + [Invalidar o cache da CDN por meio do Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
       + [Invalidar o cache da CDN por meio do Dynamic Media Classic](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
-      + [Imagem inteligente Perguntas frequentes](/help/assets/dynamic-media/imaging-faq.md)
+      + [Imagem inteligente](/help/assets/dynamic-media/imaging-faq.md)
       + [Imagem inteligente com proporção de pixels do dispositivo no lado do cliente](/help/assets/dynamic-media/client-side-dpr.md)
       + [Entregar ativos do Dynamic Media](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
       + [Ativar proteção de hotlink no Dynamic Media](/help/assets/dynamic-media/hotlink-protection.md)
@@ -535,7 +535,7 @@ ht-degree: 99%
             + [Criar um formulário adaptável](/help/forms/creating-adaptive-form-core-components.md)
             + [Criar temas para um Formulário adaptável - Componentes principais](/help/forms/using-themes-in-core-components.md)
             + [Gerar documento de registro para Formulários adaptáveis](/help/forms/generate-document-of-record-core-components.md)
-            + [Criar um Forms adaptável - Componentes principais em uma página do AEM Sites](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
+            + [Criar um formulário adaptável - Componentes principais em uma página do Sites AEM](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
             + [Pasta de trabalho do Summit](/help/forms/summit-2023-workbook.md)
       + Criação de Formulários adaptáveis - Componentes básicos {#authoring-adaptive-forms-foundation-components}
          + Converter formulários em PDF em Formulários adaptáveis {#afcs}
@@ -779,8 +779,8 @@ ht-degree: 99%
          + [Teste de qualidade do código](/help/implementing/cloud-manager/code-quality-testing.md)
          + [Regras de qualidade do código personalizado](/help/implementing/cloud-manager/custom-code-quality-rules.md)
          + Teste funcional {#functional-testing}
-            + [Visão geral do teste funcional](/help/implementing/cloud-manager/functional-testing.md)
-            + [Teste funcional Java](/help/implementing/cloud-manager/java-functional-testing.md)
+            + [Visão geral dos testes funcionais](/help/implementing/cloud-manager/functional-testing.md)
+            + [Teste funcional de Java](/help/implementing/cloud-manager/java-functional-testing.md)
             + [Teste de interface](/help/implementing/cloud-manager/ui-testing.md)
          + [Teste de auditoria de experiência](/help/implementing/cloud-manager/experience-audit-testing.md)
       + [Acesso e gerenciamento de registros](/help/implementing/cloud-manager/manage-logs.md)
@@ -927,7 +927,7 @@ ht-degree: 99%
    + Camada do autor {#author-tier}
       + [Acesso à camada do autor](/help/implementing/author-tier/accessing-the-author-tier.md)
       + [Proteção da camada do autor](/help/implementing/author-tier/securing-the-author-tier.md)
-   + Camada de visualização {#preview-tier}
+   + Nível de visualização {#preview-tier}
       + [Configurações do OSGi para o nível de visualização](/help/implementing/preview-tier/preview-tier-configuring-osgi.md)
    + Visão geral da entrega de conteúdo {#content-delivery}
       + [Fluxo de entrega de conteúdo](/help/implementing/dispatcher/overview.md)
