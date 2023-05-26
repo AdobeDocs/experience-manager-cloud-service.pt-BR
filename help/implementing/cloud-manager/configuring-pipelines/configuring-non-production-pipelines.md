@@ -4,7 +4,7 @@ description: Saiba como configurar pipelines de não produção para testar a qu
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 source-git-commit: 5b4366c1e8791ffca4b5ad47f94de44f6df2cd0b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1369'
 ht-degree: 100%
 
