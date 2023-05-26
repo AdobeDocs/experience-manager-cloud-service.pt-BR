@@ -3,7 +3,7 @@ title: Editar as propriedades da página
 description: Definir as propriedades obrigatórias de uma página
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 source-git-commit: 5a43b6db8a5743b87d6eafdad31418e6cb45d22b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2363'
 ht-degree: 100%
 
