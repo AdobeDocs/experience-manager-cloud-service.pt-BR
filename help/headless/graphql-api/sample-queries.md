@@ -6,7 +6,7 @@ exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 source-git-commit: 12df921d7a6dbc46ee9effcdabe948a692eb64d9
 workflow-type: tm+mt
 source-wordcount: '1596'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -1296,11 +1296,11 @@ Esta consulta interroga:
 Esta consulta interroga:
 
 * por vários Fragmentos de conteúdo do tipo `bookmark`
-   * com Referências de fragmentos a outros fragmentos do tipo de modelo específico `Article`
+   * com referências de fragmentos a outros fragmentos dos tipos de modelo específicos `Article`
 
 >[!NOTE]
 >
->O campo `fragments` tem o tipo de dados `fragment-reference`, com o modelo `Article` selecionado. Entrega da consulta `fragments` como uma matriz de `[Article]`.
+>O campo `fragments` tem o tipo de dados `fragment-reference`, com o modelo `Article` selecionado. A consulta fornece `fragments` como uma matriz de `[Article]`.
 
 ```graphql
 {
@@ -1324,7 +1324,7 @@ Esta consulta interroga:
 
 >[!NOTE]
 >
->O campo `fragments` tem o tipo de dados `fragment-reference`, com os modelos `Article` e `Adventure` selecionados. Entrega da consulta `fragments` como uma matriz de `[AllFragmentModels]`, que é desreferenciado com o tipo de união.
+>O campo `fragments` tem o tipo de dados `fragment-reference`, com os modelos `Article` e `Adventure` selecionados. A consulta entrega `fragments` como uma matriz de `[AllFragmentModels]`, que é desreferenciada com o tipo de união.
 
 ```graphql
 {

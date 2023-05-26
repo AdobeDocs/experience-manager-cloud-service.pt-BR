@@ -5,7 +5,7 @@ exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
 source-git-commit: 7b56bb05e31d7a61d7a8fb13e2bd0ff6e4fb301d
 workflow-type: tm+mt
 source-wordcount: '277'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ O AEM oferece um serviço de visualização do Sites que permite que desenvolved
 
 Ele facilita a visualização de experiências de página que de outra forma não estariam visíveis no ambiente do autor, como transições de página e demais conteúdos disponíveis somente do lado da publicação.
 
-Para obter mais detalhes sobre os ambientes de visualização, consulte o documento [Gerenciar ambientes](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+Para obter mais detalhes sobre os ambientes de visualização, consulte o documento [Gerenciar ambientes.](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
 
 ## Publicar conteúdo na visualização {#publishing-content-to-preview}
 
@@ -54,4 +54,4 @@ Consulte também:
 
 * [Configurações do OSGi para o nível de visualização](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
 
-* [Depuração da visualização usando o Console do desenvolvedor](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)
+* [Depuração da visualização usando o Developer Console](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)

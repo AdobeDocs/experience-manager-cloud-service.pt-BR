@@ -5,7 +5,7 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 source-git-commit: 84b2648fe06b556534b53023769abaa69ef1ec2b
 workflow-type: tm+mt
 source-wordcount: '2411'
-ht-degree: 75%
+ht-degree: 77%
 
 ---
 
@@ -248,14 +248,14 @@ Se a imagem do Docker for implementada com outras linguagens de programação ou
 >
 >Para executar os testes funcionais no computador local, crie um usuário com permissões de administrador para alcançar o mesmo comportamento.
 
-* A infraestrutura contida que tem escopo para testes funcionais é limitada pelos seguintes limites:
+* A infraestrutura em container com escopo para testes funcionais apresenta os seguintes limites:
 
 | Tipo | Valor | Descrição |
 |----------------------|-------|-----------------------------------------------------------------------|
 | CPU | 2.0 | Quantidade de tempo de CPU reservado por execução de teste |
 | Memória | 1Gi | Quantidade de memória alocada para o teste, valor em gibibytes |
-| Tempo limite | 30m | A duração após a qual o teste será encerrado. |
-| Duração recomendada | 15m | A Adobe recomenda gravar os testes para não demorar mais do que esse tempo. |
+| Tempo limite | 30 min | A duração após a qual o teste será encerrado. |
+| Duração recomendada | 15 min | A Adobe recomenda gravar os testes para não demorar mais do que esse tempo. |
 
 >[!NOTE]
 >
@@ -309,7 +309,9 @@ Os testes às vezes devem carregar arquivos no aplicativo que está sendo testad
 
 ## Execução de testes de interface locais {#run-ui-tests-locally}
 
-Antes de ativar testes de interface do usuário em um pipeline do Cloud Manager, é recomendável executar os testes de interface do usuário localmente no [SDK AS A CLOUD SERVICE AEM](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) ou contra uma instância as a Cloud Service real do AEM.
+Antes de ativar os testes de interface em um pipeline do Cloud Manager, é recomendável executá-los localmente
+ no [SDK do AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
+ ou em uma instância real do AEM as a Cloud Service.
 
 ### Amostra de teste do Cypress {#cypress-sample}
 

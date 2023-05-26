@@ -6,7 +6,7 @@ exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 source-git-commit: 9c4d416b37be684aae37d42a02cc86dfa87fbc2f
 workflow-type: tm+mt
 source-wordcount: '4769'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -249,7 +249,7 @@ O GraphQL do AEM oferece suporte a uma lista de tipos. Todos os tipos de dados d
 | Enumeração | `String` | Usado para exibir uma opção de uma lista de opções definidas na criação do modelo |
 | Tags | `[String]` | Usado para exibir uma lista de strings que representam tags usadas no AEM |
 | Referência de conteúdo | `String`, `[String]` | Usado para exibir o caminho para outro ativo no AEM |
-| Referência de fragmento |  *Um tipo de modelo* <br><br>Campo único: `Model` - Tipo de modelo, referenciado diretamente <br><br>Vários campos, com um tipo referenciado: `[Model]` - Matriz de tipo `Model`, referenciado diretamente do array <br><br>Vários campos, com vários tipos referenciados: `[AllFragmentModels]` - Matriz de todos os tipos de modelo, referenciada da matriz com tipo de união |  Usado para fazer referência a um ou mais Fragmentos de conteúdo de determinados Tipos de modelo, definidos quando o modelo foi criado |
+| Referência de fragmento |  *Um tipo de modelo* <br><br>Campo único: `Model` - Tipo de modelo, referenciado diretamente <br><br>Vários campos, com um tipo referenciado: `[Model]` - Matriz de tipo `Model`, referenciada diretamente da matriz <br><br>Vários campos, com vários tipos referenciados: `[AllFragmentModels]` - Matriz de todos os tipos de modelo, referenciada a partir de matriz com tipo de união |  Usado para fazer referência a um ou mais Fragmentos de conteúdo de determinados Tipos de modelo, definidos quando o modelo foi criado |
 
 {style="table-layout:auto"}
 
@@ -700,7 +700,7 @@ query {
 
 >[!NOTE]
 >
->* Por padrão, a paginação usa a UUID do nó do repositório que representa o fragmento para fazer a ordem dos resultados sempre ser a mesma. Quando `sort` é usado, o UUID será usado implicitamente para garantir uma ordem de classificação exclusiva, mesmo para dois itens com chaves de classificação idênticas.
+>* Por padrão, a paginação usa o UUID do nó do repositório que representa o fragmento de ordenação, a fim de garantir que a ordem dos resultados seja sempre a mesma. Quando `sort` é usado, o UUID será usado implicitamente para garantir uma ordem de classificação exclusiva, mesmo para dois itens com chaves de classificação idênticas.
 >
 >* Devido a restrições técnicas internas, o desempenho será prejudicado se a classificação e a filtragem forem aplicadas em campos aninhados. Portanto, é recomendável usar campos de filtro/classificação armazenados no nível raiz. Essa também é o método recomendado se você quiser consultar grandes conjuntos de resultados paginados.
 

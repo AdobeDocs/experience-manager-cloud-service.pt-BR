@@ -5,23 +5,23 @@ exl-id: 1200bb17-8a3c-4e41-85f4-ed2334b61f69
 source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
 workflow-type: tm+mt
 source-wordcount: '222'
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
 # Configurações do OSGi para o nível de visualização {#configure-osgi-preview-tier}
 
-O AEM oferece um serviço de visualização do Sites que permite que desenvolvedores e autores de conteúdo visualizem a experiência final de um site antes que ele chegue ao ambiente de publicação e esteja disponível publicamente.
+O AEM oferece um serviço de visualização do Sites que permite que desenvolvedores e autores de conteúdo visualizem a experiência final de um site antes que ele chegue ao ambiente de publicação e fique disponível publicamente.
 
-Ele facilita a visualização de uma variedade de experiências que de outra forma não estariam visíveis no ambiente do autor. Por exemplo, transições de página, fragmentos de experiência e outro conteúdo somente do lado da publicação.
+Ele facilita a visualização de uma variedade de experiências que de outra forma não estariam visíveis no ambiente do autor. Por exemplo, transições de página, fragmentos de experiência e demais conteúdos disponíveis somente do lado da publicação.
 
 Os valores da propriedade OSGi do nível de visualização são herdados do nível de publicação. No entanto, os valores do nível de visualização podem ser distintos do nível de publicação, definindo o parâmetro `service` para o valor `preview`.
 
 >[!NOTE]
 >
->Para obter mais detalhes sobre os ambientes de visualização, consulte o documento [Gerenciar ambientes.](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
+>Para obter mais detalhes sobre os ambientes de visualização, consulte o documento [Gerenciar ambientes.](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
-## Definição das configurações de OSGi para a camada de visualização {#configuring-osgi-settings-for-the-preview-tier}
+## Configurações do OSGi para o nível de visualização {#configuring-osgi-settings-for-the-preview-tier}
 
 O exemplo a seguir de uma propriedade OSGi determina o URL de um endpoint de integração.
 

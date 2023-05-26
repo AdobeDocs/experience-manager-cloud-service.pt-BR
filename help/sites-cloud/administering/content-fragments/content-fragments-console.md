@@ -8,7 +8,7 @@ exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
 source-git-commit: cdc86e5661ec90f96f670e777a9c98b3dcd4a7ac
 workflow-type: tm+mt
 source-wordcount: '1051'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -72,14 +72,14 @@ Isso classificará toda a tabela de acordo com essa coluna. A classificação s�
 
 ## Ações {#actions}
 
-No console, há uma variedade de ações que você pode usar, diretamente ou depois de selecionar um fragmento específico:
+No console, há um intervalo de ações que podem ser usadas, diretamente ou após selecionar um fragmento específico:
 
-* Várias ações são diretamente [disponível no console](#available-actions)
-* Você pode [selecione um ou mais Fragmentos de conteúdo para mostrar as ações apropriadas](#actions-selected-content-fragment)
+* Várias ações estão diretamente [disponíveis no console](#available-actions)
+* É possível [selecionar um ou mais fragmentos de conteúdo para mostrar as ações apropriadas](#actions-selected-content-fragment)
 
 ### Ações (não selecionadas) {#actions-unselected}
 
-Determinadas ações estão disponíveis no console — sem selecionar um Fragmento de conteúdo específico:
+Algumas ações estão disponíveis no console, sem selecionar um fragmento de conteúdo específico:
 
 * **[Criar](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)** um novo fragmento de conteúdo
 * [Filtrar](#filtering-fragments) os fragmentos de conteúdo de acordo com uma seleção de predicados e salvar o filtro para uso futuro

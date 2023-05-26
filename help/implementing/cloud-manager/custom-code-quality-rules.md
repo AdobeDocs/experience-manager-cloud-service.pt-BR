@@ -5,7 +5,7 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 source-git-commit: 288faf39a86411bb96d781a320abfa47538b2066
 workflow-type: tm+mt
 source-wordcount: '3508'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Esta página descreve as regras personalizadas de qualidade do código executada
 
 >[!NOTE]
 >
->As regras completas da SonarQube não estão disponíveis para download devido a informações proprietárias do Adobe. Você pode baixar a lista completa de regras [usando este link.](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx) Continue lendo este documento para obter descrições e exemplos das regras.
+>As regras completas do SonarQube não estão disponíveis para download devido às informações proprietárias da Adobe. É possível baixar a lista completa de regras [usando este link.](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx) Continue a ler este documento para obter descrições e exemplos das regras.
 
 >[!NOTE]
 >
@@ -864,7 +864,7 @@ A migração de modelos estáticos para modelos editáveis pode ser quase totalm
 * **Severidade**: Baixa
 * **Desde**: Versão 2021.2.0
 
-Os componentes básicos herdados (ou seja, localizados em `/libs/foundation`) foram descontinuados em várias versões do Experience Manager para incentivar o uso dos componentes principais. O uso dos componentes básicos como base para os componentes personalizados (seja por sobreposição ou herança) não é recomendado e deve ser convertido para os componentes principais correspondentes.
+Os componentes básicos herdados (ou seja, localizados em `/libs/foundation`) foram descontinuados já há várias versões do Experience Manager, substituídos pelos componentes principais. O uso dos componentes básicos como base para os componentes personalizados (seja por sobreposição ou herança) não é recomendado e deve ser convertido para os componentes principais correspondentes.
 
 Essa conversão pode ser facilitada pelas [ferramentas de modernização do Experience Manager.](https://opensource.adobe.com/aem-modernize-tools/)
 

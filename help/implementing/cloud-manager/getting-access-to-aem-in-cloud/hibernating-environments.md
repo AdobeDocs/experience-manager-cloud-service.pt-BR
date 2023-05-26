@@ -5,7 +5,7 @@ exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 source-git-commit: 2ad5bdc886f3c47b6ee600e69c6e40f1df071cbc
 workflow-type: tm+mt
 source-wordcount: '691'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -114,9 +114,9 @@ Ambientes hibernados ainda permitem a realização de implantações e atualiza�
 
 * Os ambientes em um programa de sandbox são hibernados automaticamente após oito horas de inatividade.
    * A inatividade é definida como o não recebimento de solicitações dos serviços de autoria, visualização ou publicação.
-   * Uma vez hibernados, eles podem ser [hibernação cancelada manualmente.](#de-hibernation-introduction)
+   * Uma vez hibernados, eles podem ser [manualmente desibernados.](#de-hibernation-introduction)
 * Os programas de sandbox são excluídos após seis meses em modo de hibernação contínua, depois disso, podem ser recriados.
 
 >[!NOTE]
 >
->Somente ambientes de sandbox são excluídos automaticamente após seis meses de hibernação contínua. O programa de sandbox com seu repositório e código é retido.
+>Somente ambientes sandbox são excluídos automaticamente após seis meses de hibernação contínua. O programa sandbox com seu repositório e código é mantido.

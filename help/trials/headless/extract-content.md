@@ -7,7 +7,7 @@ exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
 source-git-commit: a2064dcbec1c171b0a6de57b4197f4921d234428
 workflow-type: tm+mt
 source-wordcount: '1114'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -70,7 +70,7 @@ Você acabou de validar uma consulta de lista que contém uma lista completa de 
 
 >[!NOTE]
 >
->Se não conseguir selecionar a variável **Ativos de demonstração do AEM** do menu suspenso, entre em contato com o Atendimento ao cliente do Adobe ou entre em contato com o [Canal de Slack de testes de AEM.](https://adobe-dx-support.slack.com/)
+>Se não conseguir selecionar o ponto de acesso **Ativos de demonstração do AEM** do menu suspenso, entre em contato com o Atendimento ao cliente da Adobe ou entre em contato com o [Canal Slack de avaliação do AEM.](https://adobe-dx-support.slack.com/)
 
 ## Consultar uma parte específica do conteúdo de amostra {#bypath-query}
 
@@ -117,7 +117,7 @@ Agora que executou os dois tipos principais de consulta, você está pronto para
 
 1. Para executar consultas em seus próprios fragmentos de conteúdo, altere o ponto de acesso da pasta **Ativos de demonstração do AEM** para a pasta **Seu projeto**.
 
-1. Exclua todo o conteúdo existente no editor de consultas. Em seguida, insira um colchete de abertura `{` e pressione Ctrl+Barra de espaço ou Option+Barra de espaço para obter uma lista de modelos de preenchimento automático que foram definidos no seu ponto de acesso. Dentre as opções, selecione o modelo criado que termina em `List`. Se você seguiu os exemplos dos módulos anteriores, deve encontrar `adventureList` na lista de preenchimento automático.
+1. Exclua todo o conteúdo existente no editor de consultas. Em seguida, insira um colchete de abertura `{` e pressione Ctrl+Barra de espaço ou Option+Barra de espaço para obter uma lista de modelos de preenchimento automático que foram definidos no seu ponto de acesso. Dentre as opções, selecione o modelo criado que termina em `List`. Se você seguiu os exemplos dos módulos anteriores, deverá encontrar `adventureList` na lista de preenchimento automático.
 
    ![Iniciar consulta personalizada](assets/do-not-localize/custom-query-1.png)
 
@@ -125,7 +125,7 @@ Agora que executou os dois tipos principais de consulta, você está pronto para
 
 1. Toque ou clique no botão **Adornar** para formatar automaticamente o seu código e facilitar a leitura.
 
-1. Depois de concluir, toque ou clique no botão **Reproduzir** na parte superior esquerda do editor para executar a consulta. O editor preenche automaticamente o `items`, que são brevemente destacadas em amarelo, e a consulta é executada.
+1. Depois de concluir, toque ou clique no botão **Reproduzir** na parte superior esquerda do editor para executar a consulta. O editor preenche automaticamente os `items`, que são brevemente destacados em amarelo, e a consulta é executada.
 
 1. Os resultados são exibidos no painel direito, ao lado do editor de consultas.
 
@@ -135,11 +135,11 @@ Agora que executou os dois tipos principais de consulta, você está pronto para
 
 ## Consultas persistentes {#persisted-queries}
 
-As consultas persistentes são o mecanismo preferido para expor a API do GraphQL aos aplicativos clientes. Depois que uma consulta é persistente, ela pode ser solicitada usando uma solicitação GET e armazenada em cache para recuperação rápida.
+As consultas persistentes são o mecanismo preferido para expor a API GraphQL aos aplicativos clientes. Depois que uma consulta persiste, ela pode ser solicitada usando uma solicitação GET e armazenada em cache para recuperação rápida.
 
-Você criará uma consulta persistente que inclui dados que você gostaria de consumir do aplicativo cliente.
+Você criará uma consulta persistente que incluirá dados que gostaria de consumir do aplicativo cliente.
 
-1. Você usará os dados criados como um fragmento de conteúdo anteriormente, portanto, verifique se **Seu projeto** O endpoint está selecionado na variável **Endpoint** no canto superior direito do editor.
+1. Você usará os dados criados como um fragmento de conteúdo anteriormente, portanto, certifique-se de que o ponto de acesso **Seu projeto** esteja selecionado no menu suspenso **Ponto de acesso** no canto superior direito do editor.
 
 1. Copie o trecho de código a seguir.
 
@@ -167,7 +167,7 @@ Você criará uma consulta persistente que inclui dados que você gostaria de co
 
    >[!NOTE]
    >
-   >Se você não usou as mesmas descrições de campo descritas nos módulos anteriores, será necessário atualizar os nomes de campo nesta query.
+   >Se não tiver usado as mesmas descrições de campo descritas nos módulos anteriores, você precisará atualizar os nomes de campo nesta consulta.
    >
    >Use o recurso de preenchimento automático (Ctrl+Espaço ou Option+Espaço) do GraphQL conforme descrito anteriormente para ajudar a identificar as propriedades disponíveis.
 
@@ -175,20 +175,20 @@ Você criará uma consulta persistente que inclui dados que você gostaria de co
 
 1. Os resultados serão exibidos no painel direito, ao lado do editor de consultas. Se a consulta estiver incorreta, um erro aparecerá no painel direito.
 
-   ![Criar própria consulta](assets/do-not-localize/own-query.png)
+   ![Criar consulta própria](assets/do-not-localize/own-query.png)
 
-1. Quando satisfeito com sua consulta, clique no link **Salvar como** botão na parte superior do editor de consultas para criar a consulta persistente.
+1. Quando estiver satisfeito com sua consulta, clique no botão **Salvar como** na parte superior do editor de consultas para persistir a consulta.
 
-1. No **Nome da consulta** pop-up, dê ao seu query o nome `adventure-list`.
+1. No pop-up **Nome da consulta**, dê o nome à sua consulta `adventure-list`.
 
-1. Toque ou clique **Salvar como**.
+1. Toque ou clique em **Salvar como**.
 
-   ![Consulta persistente](assets/do-not-localize/persist-query.png)
+   ![Persistir consulta](assets/do-not-localize/persist-query.png)
 
-1. A consulta é persistente, conforme confirmado por uma mensagem de banner na parte inferior da tela. A consulta agora também aparece no painel esquerdo de consultas persistentes na janela.
+1. A consulta é persistida como confirmado por uma mensagem em banner na parte inferior da tela. A consulta também aparece agora no painel esquerdo de consultas persistentes na janela.
 
-1. Para que a consulta persistente esteja disponível publicamente, ela precisará ser publicada, de modo semelhante a como os fragmentos de conteúdo precisam ser publicados. Clique em **Publish** botão na parte superior direita do editor de consultas para publicar a consulta.
+1. Para que a consulta persistente esteja disponível publicamente, ela precisará ser publicada, assim como seus fragmentos de conteúdo precisam ser publicados. Clique no botão **Publicar** na parte superior direita do editor de consultas para publicar a consulta.
 
-1. A publicação é confirmada por uma notificação de banner.
+1. A publicação é confirmada por uma notificação em banner.
 
-Agora você tem uma nova consulta persistente que conterá apenas as propriedades e os formatos específicos definidos.
+Agora você tem uma nova consulta persistente que conterá apenas as propriedades e os formatos específicos que você definiu.
