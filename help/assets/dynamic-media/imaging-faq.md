@@ -1,21 +1,21 @@
 ---
-title: Perguntas frequentes sobre imagens inteligentes
+title: Imagem inteligente
 description: Saiba como a Criação de imagens inteligentes com a IA do Adobe Sensei aplica as características de visualização exclusivas de cada usuário para fornecer automaticamente as imagens certas, otimizadas para sua experiência, resultando em melhor desempenho e envolvimento.
 contentOwner: Rick Brough
 feature: Asset Management,Renditions
 role: User
 mini-toc-levels: null
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: b5c887d6a6ad1db5094609a8bc1b738c9ba5e8d6
+source-git-commit: fca1da512c4015e77c1a982a551db354a0b1cace
 workflow-type: tm+mt
-source-wordcount: '3541'
+source-wordcount: '3531'
 ht-degree: 1%
 
 ---
 
 # Perguntas frequentes sobre imagens inteligentes {#smart-imaging}
 
-+++**O que é &quot;Smart Imaging&quot;?**
+## Sobre imagens inteligentes
 
 A tecnologia Smart Imaging aplica os recursos de IA do Adobe Sensei e funciona com &quot;predefinições de imagem&quot; existentes. Ele funciona para aprimorar o desempenho do delivery de imagens, otimizando automaticamente o formato, o tamanho e a qualidade da imagem com base nos recursos do navegador do cliente.
 
@@ -60,9 +60,7 @@ Consulte também [Otimização de imagem com formatos de imagem de última gera�
 
 In terms of images, the goal is to serve the best quality images as efficiently as possible. -->
 
-+++
-
-+++**Quais são os principais benefícios da geração de imagens inteligentes mais recente?**
+**Benefícios da imagem inteligente**
 
 A Imagem inteligente oferece melhor desempenho de entrega de imagens, otimizando automaticamente o tamanho do arquivo de imagem com base no navegador do cliente em uso, na exibição do dispositivo e nas condições da rede. Como as imagens constituem a maioria do tempo de carregamento de uma página, qualquer melhoria de desempenho pode ter um impacto profundo nos KPIs de negócios, como taxas de conversão mais altas, tempo gasto em um site e taxas de rejeição mais baixas.
 
@@ -70,11 +68,11 @@ Os principais benefícios mais recentes da Smart Imaging mais recente incluem:
 
 * Agora é compatível com o formato AVIF da próxima geração.
 * PNG para WebP e AVIF agora oferece suporte a conversões com perdas. Como o PNG é um formato sem perdas, o WebP e o AVIF anteriores eram sem perdas.
-* Conversão de formato de navegador (`bfc`)
-* Proporção de pixels do dispositivo (`dpr`)
-* Largura de banda de rede (`network`)
+* [Conversão de Formato de Navegador](#bfc)
+* [Proporção de pixels do dispositivo](#dpr)
+* [Largura de banda de rede](#bandwidth)
 
-**Sobre a Conversão de Formato de Navegador (bfc)**
+### Sobre a conversão de formato de navegador {#bfc}
 
 Ativando a Conversão de Formato de Navegador anexando `bfc=on` para o URL da imagem converte automaticamente o JPEG e PNG em AVIF com perdas, WebP com perdas, JPEGXR com perdas, JPEG2000 com perdas para navegadores diferentes. Para navegadores que não oferecem suporte a esses formatos, o Smart Imaging continua a servir o JPEG ou o PNG. Juntamente com o formato, a qualidade do novo formato é recalculada pelo Smart Imaging.
 
@@ -82,7 +80,7 @@ As imagens inteligentes também podem ser desativadas anexando `bfc=off` ao URL 
 
 Consulte também [bfc](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc.html?lang=en) na API do Dynamic Media Image Serving and Rendering.
 
-**Sobre a Proporção de pixels do dispositivo (dpr)** otimização
+### Sobre a otimização da proporção de pixels do dispositivo** {#dpr}
 
 Proporção de pixels do dispositivo (DPR) - também conhecida como Proporção de pixels CSS - é a relação entre os pixels físicos e os pixels lógicos de um dispositivo. Especialmente com o advento das telas retina, a resolução de pixels de dispositivos móveis modernos está crescendo a uma taxa rápida.
 
@@ -108,7 +106,7 @@ Atualmente, a densidade de pixels da exibição vem dos valores de cabeçalho da
 
 Consulte também [Ao trabalhar com imagens](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images) e [Ao trabalhar com o Recorte inteligente](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
 
-**Sobre a otimização da largura de banda da rede**
+### Sobre a otimização da largura de banda da rede {#bandwidth}
 
 Ativar a Largura de Banda da Rede ajusta automaticamente a qualidade da imagem fornecida com base na largura de banda real da rede. Para uma largura de banda de rede ruim, a otimização da DPR (Relação de pixels do dispositivo) é automaticamente desativada, mesmo que já esteja ativada.
 
@@ -128,8 +126,6 @@ Os valores de DPR e largura de banda da rede são baseados nos valores detectado
 * TTL (Time To Live) independente. Anteriormente, um TTL mínimo de 12 horas era obrigatório para que o Smart Imaging funcionasse.
 * Anteriormente, as imagens originais e derivadas eram armazenadas em cache e era um processo de duas etapas para invalidar o cache. Na Smart Imaging mais recente, somente os derivados são armazenados em cache, permitindo um processo de invalidação de cache de etapa única.
 * Os clientes que usam cabeçalhos personalizados em seu conjunto de regras se beneficiam da geração de Smart Imaging mais recente, pois esses cabeçalhos não são bloqueados, ao contrário da versão anterior do Smart Imaging. Por exemplo, &quot;Origem de permissão de tempo&quot;, &quot;X-Robot&quot; conforme sugerido em [Adicione um valor de cabeçalho personalizado às respostas da imagem|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
-
-+++
 
 +++**Existem custos de licenciamento associados ao Smart Imaging?**
 
@@ -153,6 +149,26 @@ Quando uma imagem é solicitada por um consumidor, o Smart Imaging verifica as c
 * Para navegadores que não aceitam esses formatos, o formato de imagem solicitado originalmente é fornecido.
 
 Se o tamanho original da imagem for menor do que o produzido pela Smart Imaging, a imagem original será fornecida.
+
++++
+
++++**O recurso Smart Imaging pode ser desativado para qualquer solicitação?**
+
+Sim. Você pode desativar o Smart Imaging adicionando qualquer um dos seguintes modificadores:
+
+* `bfc=off` para desativar a Conversão de Formato de Navegador. Consulte também [Conversão de Formato de Navegador](#bfc).
+* `dpr=off` para desativar a Proporção de pixels do dispositivo. Consulte também [Proporção de pixels do dispositivo](#dpr).
+* `network=off` para desativar a largura de banda da rede. Consulte também [Largura de banda de rede](#network).
+
++++
+
++++**É possível &quot;ajustar&quot; a imagem inteligente?**
+
+Sim. A Imagem inteligente tem três opções que podem ser ativadas ou desativadas.
+
+* [Conversão de Formato de Navegador](#bfc)
+* [Proporção de pixels do dispositivo](#dpr)
+* [Largura de banda de rede](#network)
 
 +++
 
@@ -338,26 +354,6 @@ Esse cabeçalho informa o seguinte:
 +++**Posso desativar a otimização AVIF na Imagem inteligente?**
 
 Sim. Se quiser voltar a servir WebP por padrão, crie um caso de suporte para o mesmo. Como de costume, é possível desativar o Smart Imaging adicionando o parâmetro `bfc=off` ao URL da imagem. No entanto, não é possível selecionar WebP ou AVIF no modificador de URL para Imagem inteligente. Essa capacidade é mantida no nível da conta da empresa.
-
-+++
-
-+++**O recurso Smart Imaging pode ser desativado para qualquer solicitação?**
-
-Sim. Você pode desativar o Smart Imaging adicionando qualquer um dos seguintes modificadores:
-
-* `bfc=off` para desativar a Conversão de Formato de Navegador. Consulte também [Conversão de Formato de Navegador](#bfc).
-* `dpr=off` para desativar a Proporção de pixels do dispositivo. Consulte também [Proporção de pixels do dispositivo](#dpr).
-* `network=off` para desativar a largura de banda da rede. Consulte também [Largura de banda de rede](#network).
-
-+++
-
-+++**É possível &quot;ajustar&quot; a imagem inteligente?**
-
-Sim. A Imagem inteligente tem três opções que podem ser ativadas ou desativadas.
-
-* [Conversão de Formato de Navegador](#bfc)
-* [Proporção de pixels do dispositivo](#dpr)
-* [Largura de banda de rede](#network)
 
 +++
 
