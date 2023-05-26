@@ -5,9 +5,9 @@ hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
 source-git-commit: ac94981e477e1fe8b883460ed9be009b4c1c088d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '659'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
@@ -33,15 +33,15 @@ ht-degree: 65%
 
 Os fragmentos de conteúdo representam o conteúdo headless e são baseados em estruturas predefinidas, chamadas de modelos de fragmento de conteúdo. Você já criou um modelo em um módulo anterior.
 
-Neste módulo, você criará um novo fragmento de conteúdo com base nesse modelo usando o console de Fragmentos de conteúdo. Pense no console de fragmentos de conteúdo como uma biblioteca de conteúdo headless. Use-o para criar novos fragmentos de conteúdo e gerenciar fragmentos existentes.
+Neste módulo, você criará um novo Fragmento de conteúdo com base nesse modelo, usando o console de Fragmentos de conteúdo. Pense no console de fragmentos de conteúdo como uma biblioteca de conteúdo headless. Use-o para criar novos fragmentos de conteúdo e gerenciar fragmentos existentes.
 
 1. Toque ou clique no botão **Criar** na parte superior direita do console.
 
 1. A caixa de diálogo **Novo fragmento de conteúdo** será aberta, onde é possível começar a criar um novo fragmento de conteúdo. O **Local** é automaticamente preenchido com a seção onde o novo conteúdo será salvo.
 
-1. No **Modelo de fragmento de conteúdo** selecione o **Aventura** Modelo de fragmento de conteúdo criado anteriormente.
+1. No menu suspenso **Modelo de Fragmentos de conteúdo**, selecione o modelo de Fragmento de conteúdo **Aventura** criado anteriormente.
 
-1. Adicionar `Tuscany` como um descritivo **Título** para o Fragmento de conteúdo. Isso serve para identificar o fragmento no console.
+1. Adicione `Tuscany` como um **Título** descritivo para o fragmento de conteúdo. Isso é para identificar o seu fragmento no console.
 
 1. Toque ou clique em **Criar e abrir**.
 
@@ -49,39 +49,39 @@ Neste módulo, você criará um novo fragmento de conteúdo com base nesse model
 
 >[!TIP]
 >
->Dependendo das configurações do navegador, a nova guia do navegador pode ser suprimida por um bloqueador de pop-ups. Se o novo fragmento não abrir depois de clicar em **Criar e abrir**, verifique as configurações do navegador.
+>Dependendo das configurações do seu navegador, a nova guia do navegador pode ser suprimida por um bloqueador de pop-up. Se o novo fragmento não abrir depois de clicar em **Criar e abrir**, verifique as configurações do seu navegador.
 
-## Adicionar conteúdo ao seu fragmento de conteúdo {#add-content}
+## Adicionar conteúdo ao fragmento de conteúdo {#add-content}
 
 Depois de salvar e abrir o novo fragmento de conteúdo, o editor de fragmentos de conteúdo será aberto em uma nova guia. Aqui, é possível adicionar o conteúdo do novo fragmento.
 
 1. O editor de fragmentos de conteúdo mostra os campos definidos no modelo selecionado. Aqui, é possível adicionar conteúdo a cada campo para concluir o fragmento de conteúdo. Seu progresso é salvo automaticamente.
 
-1. Forneça um **Título** para o fragmento inserindo `Tuscan Adventure`.
+1. Forneça um **Título** para o fragmento, inserindo `Tuscan Adventure`.
 
-1. Forneça um **Descrição** para o fragmento colando no texto a seguir.
+1. Forneça uma **Descrição** para o fragmento colando o texto a seguir.
 
    ```text
    Visiting Tuscany on a bicycle is about experiencing the old world charm of Italy on your own terms. Your efforts on the climbs of Italy's rolling hills during this tour will be rewarded with sunny Mediterranean landscapes and unmatched Italian hospitality.  Tuscany’s natural wonders have always been a well of inspiration for arts and culture. Find out why as you explore the Italian countryside and coastline on bicycle.
    ```
 
-1. Forneça um **Preço** para o fragmento inserindo em `$700`.
+1. Forneça um **Preço** para o fragmento, inserindo `$700`.
 
-1. Forneça um **Imagem** representativo da viagem, tocando ou clicando em **Adicionar ativo** no **Imagem** campo.
+1. Forneça uma **Imagem** que seja representativa da viagem tocando ou clicando em **Adicionar ativo** no campo **Imagem**.
 
-1. No pop-up do ativo, toque ou clique **Procurar ativos** para selecionar de um ativo existente na biblioteca de ativos.
+1. Na janela pop-up do ativo, toque ou clique em **Procurar ativos** para selecionar um ativo existente na biblioteca de ativos.
 
    ![Adicionar ativo](assets/do-not-localize/add-asset.png)
 
-1. A variável **Selecionar ativo** será aberta. Usando o navegador de árvore no painel esquerdo, navegue até **Todos os ativos** > **aem-demo-assets** > **en** > **aventuras** > **ciclismo-toscana**.
+1. A caixa de diálogo **Selecionar ativo** será aberta. Usando o navegador em árvore no painel esquerdo, navegue até **Todos os ativos** > **aem-demo-assets** > **en** > **aventuras** > **cycling-tuscany**.
 
-1. O conteúdo do **ciclismo-toscana** são exibidos à direita. Selecione a imagem `ADOBESTOCK_141786166.JPEG`.
+1. O conteúdo da pasta **cycling-tuscany** será exibido à direita. Selecione a imagem `ADOBESTOCK_141786166.JPEG`.
 
-1. Toque ou clique **Selecionar**.
+1. Toque ou clique em **Selecionar**.
 
    ![Selecionar ativo](assets/do-not-localize/select-asset.png)
 
-1. A imagem selecionada é mostrada no fragmento de conteúdo. O editor salva as alterações automaticamente.
+1. A imagem selecionada será mostrada no fragmento de conteúdo. O editor salvará as alterações automaticamente.
 
 1. Quando terminar de adicionar conteúdo, toque ou clique no botão **Publicar** na parte superior direita do editor. Isso disponibiliza o fragmento de conteúdo para ser consumido por aplicativos externos. Em seguida, selecione **Agora** no menu suspenso. Também é possível agendar sua publicação para um momento posterior.
 
