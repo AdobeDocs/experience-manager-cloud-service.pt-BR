@@ -5,14 +5,19 @@ contentOwner: AG
 feature: Asset Management,Publishing
 role: User,Admin
 exl-id: 210f8925-bd15-4b4a-8714-5a1486eeb49e
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
 workflow-type: tm+mt
-source-wordcount: '276'
-ht-degree: 8%
+source-wordcount: '296'
+ht-degree: 14%
 
 ---
 
 # Marca d&#39;água em seus ativos {#watermark-assets}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/watermarking.html) |
+| AEM as a Cloud Service | Este artigo |
 
 [!DNL Adobe Experience Manager Assets] permite adicionar uma marca d&#39;água digital a imagens. [!DNL Assets] O suporta a aplicação de uma imagem como marca d&#39;água a outros arquivos de imagem. As marcas d&#39;água podem ajudar os usuários a verificar a autenticidade e a propriedade de direitos autorais dos ativos. Além disso, uma marca d&#39;água pode ser usada para indicar o estado de um documento como confidencial, rascunho, validade e assim por diante.
 

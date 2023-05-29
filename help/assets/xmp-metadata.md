@@ -5,14 +5,19 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: fd9af408-d2a3-4c7a-9423-c4b69166f873
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
 workflow-type: tm+mt
-source-wordcount: '1041'
-ht-degree: 17%
+source-wordcount: '1061'
+ht-degree: 18%
 
 ---
 
 # Metadados XMP {#xmp-metadata}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/xmp-writeback.html) |
+| AEM as a Cloud Service | Este artigo |
 
 XMP (Extensible Metadata Platform) é o padrão de metadados usado pelo Experience Manager Assets para todo o gerenciamento de metadados. O XMP fornece um formato padrão para a criação, processamento e intercâmbio de metadados para uma grande variedade de aplicativos.
 

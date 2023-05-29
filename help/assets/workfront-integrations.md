@@ -4,14 +4,19 @@ description: Introdução à integração entre [!DNL Assets] e [!DNL Workfront]
 role: Admin,Leader,Architect
 feature: Integrations
 exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
-source-git-commit: 5bcc2e420c1683509e29eba41f5b1847cf2cfa72
+source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
 workflow-type: tm+mt
-source-wordcount: '1224'
-ht-degree: 3%
+source-wordcount: '1244'
+ht-degree: 4%
 
 ---
 
 # [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [!DNL Assets] integração com [!DNL Adobe Workfront] {#assets-integration-overview}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-integrations.html) |
+| AEM as a Cloud Service | Este artigo |
 
 O [!DNL Adobe Workfront] é um aplicativo de gerenciamento de trabalho que ajuda você a gerenciar todo o ciclo de vida do trabalho em um único local. A integração [!DNL Workfront] e [!DNL Adobe Experience Manager Assets] O permite que as organizações melhorem a velocidade do conteúdo e o prazo para comercialização, conectando intrinsecamente o gerenciamento de trabalho e de ativos digitais. No contexto do gerenciamento de trabalho no Workfront, os usuários têm acesso aos documentos e imagens necessários.
 

@@ -5,14 +5,19 @@ contentOwner: Vishabh Gupta
 role: User
 feature: Collaboration
 exl-id: d48f6daf-af81-4024-bff2-e8bf6d683b0c
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
 workflow-type: tm+mt
-source-wordcount: '599'
-ht-degree: 3%
+source-wordcount: '621'
+ht-degree: 6%
 
 ---
 
 # Pasta privada em [!DNL Adobe Experience Manager Assets] {#private-folder}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/private-folder.html?lang=en) |
+| AEM as a Cloud Service | Este artigo |
 
 Você pode criar uma pasta privada na variável [!DNL Adobe Experience Manager Assets] que está disponível exclusivamente para você. Você pode compartilhar essa pasta particular com outros usuários e atribuir vários privilégios a eles. Com base no nível de privilégio atribuído, os usuários podem executar várias tarefas na pasta, por exemplo, exibir ativos na pasta ou editar os ativos.
 

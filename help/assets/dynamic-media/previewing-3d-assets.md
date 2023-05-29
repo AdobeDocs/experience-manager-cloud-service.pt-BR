@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: 3D Assets
 role: User
 exl-id: e873bd25-f841-4063-824f-7e48f40bb678
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
 workflow-type: tm+mt
-source-wordcount: '587'
-ht-degree: 8%
+source-wordcount: '586'
+ht-degree: 10%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 8%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/previewing-3d-assets.html?lang=en) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/previewing-3d-assets.html?lang=pt-BR) |
 | AEM as a Cloud Service | Este artigo |
 
 O Experience Manager é compatível com upload, entrega e pré-visualização interativa de ativos 3D como parte do processo de criação.
