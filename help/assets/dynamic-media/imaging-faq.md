@@ -4,11 +4,11 @@ description: Saiba como a Criação de imagens inteligentes com a IA do Adobe Se
 contentOwner: Rick Brough
 feature: Asset Management,Renditions
 role: User
-mini-toc-levels: null
+mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: fca1da512c4015e77c1a982a551db354a0b1cace
+source-git-commit: c7555ef31d7657b4a90764224f4c8c58a6228157
 workflow-type: tm+mt
-source-wordcount: '3531'
+source-wordcount: '3539'
 ht-degree: 1%
 
 ---
@@ -80,7 +80,7 @@ As imagens inteligentes também podem ser desativadas anexando `bfc=off` ao URL 
 
 Consulte também [bfc](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc.html?lang=en) na API do Dynamic Media Image Serving and Rendering.
 
-### Sobre a otimização da proporção de pixels do dispositivo** {#dpr}
+### Sobre a otimização da Proporção de pixels do dispositivo {#dpr}
 
 Proporção de pixels do dispositivo (DPR) - também conhecida como Proporção de pixels CSS - é a relação entre os pixels físicos e os pixels lógicos de um dispositivo. Especialmente com o advento das telas retina, a resolução de pixels de dispositivos móveis modernos está crescendo a uma taxa rápida.
 
@@ -127,17 +127,7 @@ Os valores de DPR e largura de banda da rede são baseados nos valores detectado
 * Anteriormente, as imagens originais e derivadas eram armazenadas em cache e era um processo de duas etapas para invalidar o cache. Na Smart Imaging mais recente, somente os derivados são armazenados em cache, permitindo um processo de invalidação de cache de etapa única.
 * Os clientes que usam cabeçalhos personalizados em seu conjunto de regras se beneficiam da geração de Smart Imaging mais recente, pois esses cabeçalhos não são bloqueados, ao contrário da versão anterior do Smart Imaging. Por exemplo, &quot;Origem de permissão de tempo&quot;, &quot;X-Robot&quot; conforme sugerido em [Adicione um valor de cabeçalho personalizado às respostas da imagem|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
 
-+++**Existem custos de licenciamento associados ao Smart Imaging?**
-
-Não. A imagem inteligente está incluída em sua licença atual do. Essa regra é verdadeira para Dynamic Media Classic ou Experience Manager - Dynamic Media (no local, AMS e Experience Manager as a Cloud Service).
-
->[!IMPORTANT]
->
->A Criação de imagens inteligentes não está disponível para clientes Dynamic Media - Hybrid.
-
-+++
-
-+++**Como funciona o Smart Imaging?**
+## Como funciona o Smart Imaging**
 
 Quando uma imagem é solicitada por um consumidor, o Smart Imaging verifica as características do usuário e as converte para o formato de imagem apropriado com base no navegador em uso. Essas conversões de formato são feitas de uma maneira que não prejudica a fidelidade visual. A geração de imagens inteligentes converte automaticamente imagens em diferentes formatos com base na capacidade do navegador da seguinte maneira.
 
@@ -149,6 +139,30 @@ Quando uma imagem é solicitada por um consumidor, o Smart Imaging verifica as c
 * Para navegadores que não aceitam esses formatos, o formato de imagem solicitado originalmente é fornecido.
 
 Se o tamanho original da imagem for menor do que o produzido pela Smart Imaging, a imagem original será fornecida.
+
+## Formatos de imagem compatíveis com o Smart Imaging
+
+Os formatos de imagem a seguir são compatíveis com o Smart Imaging:
+
+* JPEG
+* PNG
+
+Para o formato de arquivo de imagem JPEG, a qualidade do novo formato é recalculada pelo Smart Imaging.
+
+Para formatos de arquivo de imagem que oferecem suporte a transparência, como PNG, você pode configurar a Imagem inteligente para fornecer AVIF e WebP com perdas. Para a conversão de formato com perdas, o Smart Imaging usa a qualidade mencionada no URL da imagem ou a qualidade configurada na conta da empresa do Dynamic Media.
+
+## Comandos de veiculação de imagens ignorados e suportados pelo Smart Imaging
+
+Os únicos comandos do Servidor de imagens ignorados pelo Smart Imaging são `fmt` e `qlt`. Todos os comandos restantes são suportados.
+
+
++++**Existem custos de licenciamento associados ao Smart Imaging?**
+
+Não. A imagem inteligente está incluída em sua licença atual do. Essa regra é verdadeira para Dynamic Media Classic ou Experience Manager - Dynamic Media (no local, AMS e Experience Manager as a Cloud Service).
+
+>[!IMPORTANT]
+>
+>A Criação de imagens inteligentes não está disponível para clientes Dynamic Media - Hybrid.
 
 +++
 
@@ -169,19 +183,6 @@ Sim. A Imagem inteligente tem três opções que podem ser ativadas ou desativad
 * [Conversão de Formato de Navegador](#bfc)
 * [Proporção de pixels do dispositivo](#dpr)
 * [Largura de banda de rede](#network)
-
-+++
-
-+++**Quais formatos de imagem são compatíveis?**
-
-Os formatos de imagem a seguir são compatíveis com o Smart Imaging:
-
-* JPEG
-* PNG
-
-Para o formato de arquivo de imagem JPEG, a qualidade do novo formato é recalculada pelo Smart Imaging.
-
-Para formatos de arquivo de imagem que oferecem suporte a transparência, como PNG, você pode configurar a Imagem inteligente para fornecer AVIF e WebP com perdas. Para a conversão de formato com perdas, o Smart Imaging usa a qualidade mencionada no URL da imagem ou a qualidade configurada na conta da empresa do Dynamic Media.
 
 +++
 
@@ -390,12 +391,6 @@ Não. Atualmente não há esse provisionamento.
 +++**O Smart Imaging ajusta a configuração de saída de qualidade percentual?**
 
 Sim. A Smart Imaging ajusta automaticamente a porcentagem de qualidade. Essa porcentagem de qualidade é determinada usando um algoritmo de aprendizado de máquina desenvolvido pelo Adobe. Essa porcentagem não é específica de intervalo.
-
-+++
-
-+++**Quais comandos de veiculação de imagens são aceitos ou ignorados?**
-
-Os únicos comandos ignorados são `fmt` e `qlt`. Todos os comandos restantes são suportados.
 
 +++
 
