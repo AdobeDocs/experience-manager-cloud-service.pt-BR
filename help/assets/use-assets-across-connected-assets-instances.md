@@ -6,9 +6,9 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
+source-git-commit: dbc6b5c0f11e52b45981cab36381258edcf6c167
 workflow-type: tm+mt
-source-wordcount: '3816'
+source-wordcount: '3829'
 ht-degree: 16%
 
 ---
@@ -316,6 +316,7 @@ Sim, após configurar o Connected Assets, você pode executar as operações atu
 ## Limitações e práticas recomendadas {#tip-and-limitations}
 
 * Para obter insights sobre o uso do ativo, configure o [Assets Insight](/help/assets/assets-insights.md) funcionalidade no [!DNL Sites] instância.
+* O uso do navegador de caminho nos componentes de criação não é compatível com os ativos conectados.
 
 ### Permissões e gerenciamento de ativos {#permissions-and-managing-assets}
 
