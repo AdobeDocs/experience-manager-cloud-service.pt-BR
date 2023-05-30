@@ -2,16 +2,18 @@
 title: Introdução à criação no AEM como um CMS headless
 description: Uma introdução ao uso dos recursos do Adobe Experience Manager as a Cloud Service como um CMS headless para criar conteúdo para seu projeto.
 exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
-source-git-commit: 00ec09f327bc2f382d263970e690ed067aaa1355
+source-git-commit: e03c067f4337bbf0e98cb4015b9be4fc99fc17c1
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Introdução à criação no AEM como um CMS headless {#author-headless-introduction}
 
 Nesta parte da [jornada do autor de conteúdo headless do AEM](overview.md), você pode aprender os conceitos (básicos) e terminologias necessários para entender sobre a criação de conteúdo ao usar o Adobe Experience Manager (AEM) as a Cloud Service como um CMS headless. Isso envolve criar e estruturar seu conteúdo para uma entrega de conteúdo headless.
+
+{{headless-trials-promotion}}
 
 ## Objetivo {#objective}
 

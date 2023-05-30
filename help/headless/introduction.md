@@ -3,7 +3,7 @@ title: Introdução ao headless no AEM
 description: Saiba mais sobre Headless no Adobe Experience Manager (AEM) com uma combinação de documentações detalhadas e jornadas headless. Saiba como recursos como modelos de fragmentos de conteúdo, fragmentos de conteúdo e a API GraphQL são utilizados em experiências headless.
 landing-page-description: Aprenda como usar e administrar o headless no Adobe Experience Manager as a Cloud Service.
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
-source-git-commit: 6d8d75cd0b01154f420dd3d5f14589bb8a2b8297
+source-git-commit: e03c067f4337bbf0e98cb4015b9be4fc99fc17c1
 workflow-type: tm+mt
 source-wordcount: '699'
 ht-degree: 100%
@@ -20,6 +20,8 @@ Você pode ler a documentação detalhada dos vários recursos envolvidos e/ou s
 >[!NOTE]
 >
 >Consulte também [O que é Headless?](/help/headless/what-is-headless.md) para obter uma introdução a conceitos e terminologia sobre headless.
+
+{{headless-trials-promotion}}
 
 ## Visão geral {#overview}
 
