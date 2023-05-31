@@ -2,7 +2,7 @@
 title: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 4b86e35efb11aca16f0d69c7a9b82b53bdb867a5
+source-git-commit: 66c77dd90fb220993e113fb3c4cfbaec879c1dee
 workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 82%
@@ -13,7 +13,7 @@ ht-degree: 82%
 
 A seção a seguir descreve as notas de versão técnicas para a versão de manutenção atual do Experience Manager as a Cloud Service.
 
-## Versão 11983 {#release-12142}
+## Versão 12142 {#release-12142}
 
 Veja abaixo um resumo das melhorias contínuas da versão de manutenção 12142, lançada publicamente em 31 de maio de 2023. Esta versão de manutenção é uma atualização da versão de manutenção anterior, a 11983.
 
