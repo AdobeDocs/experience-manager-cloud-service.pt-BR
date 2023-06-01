@@ -4,7 +4,7 @@ description: Instalar [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
 exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
-source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
+source-git-commit: 21f33c0b8710dd9d9db30543defff7dae9942c06
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 2%
