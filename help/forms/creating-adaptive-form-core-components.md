@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
+source-git-commit: 7dc36220c1f12177037aaa79d864c1ec2209a301
 workflow-type: tm+mt
 source-wordcount: '1495'
 ht-degree: 7%
@@ -29,7 +29,7 @@ Antes de começar, saiba mais sobre o tipo de componentes do Forms disponíveis 
 
 Você precisa do seguinte para criar um Formulário adaptável:
 
-* **Ativar os Componentes principais adaptáveis do Forms para o seu ambiente**: ao criar um novo programa, os Componentes principais adaptáveis do Forms já estão habilitados para o seu ambiente. Se você tiver um ambiente do Forms as a Cloud Service baseado no arquétipo 39 ou anterior, [habilite os componentes principais dos formulários adaptáveis no seu ambiente](setup-local-development-environment.md#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project). Ao habilitar os componentes principais no seu ambiente, o modelo **Formulários adaptáveis (Componente principal)** e o tema da tela são adicionados ao seu ambiente. Se sua versão do SDK do AEM for anterior à 2023.02.0, [certifique-se de que`prerelease` o sinalizador esteja habilitado em seu ambiente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=pt-BR#new-features), pois os componentes principais dos formulários adaptáveis faziam parte do pré-lançamento antes da versão 2023.02.0.
+* **Ativar os Componentes principais adaptáveis do Forms para o seu ambiente**: ao criar um novo programa, os Componentes principais adaptáveis do Forms já estão habilitados para o seu ambiente. Se você tiver um ambiente do Forms as a Cloud Service baseado no arquétipo 39 ou anterior, [habilite os componentes principais dos formulários adaptáveis no seu ambiente](enable-adaptive-forms-core-components.md). Ao habilitar os componentes principais no seu ambiente, o modelo **Formulários adaptáveis (Componente principal)** e o tema da tela são adicionados ao seu ambiente. Se sua versão do SDK do AEM for anterior à 2023.02.0, [certifique-se de que`prerelease` o sinalizador esteja habilitado em seu ambiente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=pt-BR#new-features), pois os componentes principais dos formulários adaptáveis faziam parte do pré-lançamento antes da versão 2023.02.0.
 
 * **Um modelo de formulário adaptável**: um modelo fornece uma estrutura básica e define a aparência (layouts e estilos) de um Formulário adaptável. Ele tem componentes pré-formatados que contêm determinadas propriedades e estrutura de conteúdo. Também fornece as opções para definir um tema e uma ação de envio. O tema define a aparência e a aparência, e a ação de envio define a ação a ser executada no envio de um Formulário adaptável. Por exemplo, enviar os dados coletados para uma fonte de dados. O serviço de nuvem fornece um modelo OOTB, chamado em branco:
 
