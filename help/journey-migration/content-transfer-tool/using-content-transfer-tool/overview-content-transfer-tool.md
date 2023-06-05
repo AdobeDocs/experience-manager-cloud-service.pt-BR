@@ -5,7 +5,7 @@ exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 source-git-commit: 8197b4f4e5cda21532c3660c2f0ec4855ba53a6a
 workflow-type: tm+mt
 source-wordcount: '648'
-ht-degree: 58%
+ht-degree: 63%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 58%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_overview"
 >title="Visão geral"
->abstract="A ferramenta Transferência de conteúdo é uma ferramenta desenvolvida pelo Adobe que pode ser usada para iniciar a migração do conteúdo existente de uma instância de AEM de origem (no local ou AMS) para a instância do AEM Cloud Service de destino. Essa ferramenta também transfere entidades principais (usuários ou grupos) automaticamente."
+>abstract="A ferramenta de Transferência de conteúdo é uma ferramenta desenvolvida pela Adobe que pode ser usada para iniciar a migração de conteúdo existente de uma instância de origem do AEM (no local ou AMS) para a instância de destino do AEM Cloud Service. Essa ferramenta também transfere entidades principais (usuários ou grupos) automaticamente."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=pt-BR" text="Diretrizes e práticas recomendadas"
 
 A ferramenta Transferência de conteúdo é uma ferramenta desenvolvida pelo Adobe que pode ser usada para iniciar a migração do conteúdo existente de uma instância de AEM de origem (no local ou AMS) para a instância do AEM Cloud Service de destino.
