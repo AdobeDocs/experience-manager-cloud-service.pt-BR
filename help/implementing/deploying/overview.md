@@ -3,10 +3,10 @@ title: Implantação do AEM as a Cloud Service
 description: Implantação do AEM as a Cloud Service
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 4eb7b1a32f0e266f12f67fdd2d12935698eeac95
+source-git-commit: a70bd2ffddcfb729812620743ead7f57860457f3
 workflow-type: tm+mt
-source-wordcount: '3509'
-ht-degree: 100%
+source-wordcount: '3541'
+ht-degree: 89%
 
 ---
 
@@ -51,6 +51,10 @@ O vídeo a seguir fornece uma visão geral de alto nível sobre como implantar c
 
 ### Implantações via Cloud Manager {#deployments-via-cloud-manager}
 
+<!-- Alexandru: temporarily commenting this out, until I get some clarification from Brian 
+
+![image](https://git.corp.adobe.com/storage/user/9001/files/e91b880e-226c-4d5a-93e0-ae5c3d6685c8) -->
+
 Os clientes implantam código personalizado em ambientes na nuvem por meio do Cloud Manager. Observe que o Cloud Manager transforma pacotes de conteúdo montados localmente em um artefato em conformidade com o modelo de recurso do Sling, que é a forma como um aplicativo do AEM as a Cloud Service é descrito ao ser executado em um ambiente na nuvem. Como resultado, ao examinar os pacotes do [Gerenciador de pacotes](/help/implementing/developing/tools/package-manager.md) em ambientes na nuvem, o nome incluirá “cp2fm” e os pacotes transformados terão todos os metadados removidos. Não é possível interagir com eles, o que significa que não podem ser baixados, replicados ou abertos. A documentação detalhada sobre o conversor pode ser [encontrada aqui](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
 
 Os pacotes de conteúdo criados para aplicativos do AEM as a Cloud Service devem ter uma separação clara entre conteúdo imutável e mutável (o Cloud Manager só instalará o conteúdo mutável), além de exibir uma mensagem como:
@@ -63,7 +67,7 @@ O resto desta seção descreverá a composição e as implicações dos pacotes 
 
 Todo conteúdo e código persistente no repositório imutável deve ser verificado no Git e implantado por meio do Cloud Manager. Em outras palavras, ao contrário das soluções atuais do AEM, o código nunca é implantado diretamente em uma instância em execução do AEM. Isso garante que o código executado para uma determinada versão seja idêntico em qualquer ambiente da nuvem, o que elimina o risco de uma variação não intencional do código na produção. Como exemplo, a configuração do OSGI deve ser enviada para o controle de origem em vez de ser gerenciada no tempo de execução por meio do gerenciador de configuração do console da web do AEM.
 
-À medida que o aplicativo muda devido ao padrão de implantação azul-verde ativado por um botão, ele não pode depender de alterações no repositório mutável, com exceção de alterações nos usuários de serviço, seus ACLs, tipos de nó e definições de índice.
+À medida que o aplicativo muda devido ao padrão de implantação ser ativado por um switch, ele não pode depender das alterações no repositório mutável, com exceção das alterações nos usuários de serviço, suas ACLs, tipos de nó e definições de índice.
 
 Para clientes com bases de código já existentes, é muito importante realizar o exercício de reestruturação de repositório descrito na documentação do AEM para garantir que o conteúdo anteriormente contido em /etc seja movido para o local correto.
 
@@ -235,23 +239,23 @@ O snippet `POM.xml` do Maven a seguir mostra como os pacotes de terceiros podem 
 
 ## Como funcionam as implantações contínuas {#how-rolling-deployments-work}
 
-Assim como as atualizações do AEM, as versões do cliente são implantadas usando uma estratégia de implantação contínua para eliminar o tempo de inatividade do cluster de autor nas circunstâncias certas. A sequência geral de eventos é a descrita abaixo, em que **Azul** é a versão antiga do código do cliente e **Verde** é a nova versão. Azul e Verde estão executando a mesma versão do código do AEM.
+Assim como as atualizações do AEM, as versões do cliente são implantadas usando uma estratégia de implantação contínua para eliminar o tempo de inatividade do cluster de autor nas circunstâncias certas. A sequência geral de eventos é descrita abaixo, onde os nós com as versões antiga e nova do código do cliente estão executando a mesma versão do código AEM.
 
-* A versão Azul está ativa e um candidato a lançamento para Verde foi criado e está disponível
-* Se houver definições de índice novas ou atualizadas, os índices correspondentes serão processados. Observe que a implantação azul sempre usará os índices antigos, enquanto a verde sempre usará os novos índices.
-* Verde está sendo iniciado enquanto Azul ainda está servindo
-* O Azul está sendo executado e servindo enquanto o Verde está sendo verificado por meio de verificações de integridade
-* Nós Verdes que estão prontos para aceitar o tráfego e substituir nós Azuis, que são desativados
-* Com o tempo, os nós Azuis são substituídos por nós Verdes até que apenas os Verdes permaneçam, concluindo assim a implantação
-* Qualquer conteúdo mutável novo ou modificado é implantado
+* Os nós com a versão antiga estão ativos e um candidato a lançamento para a nova versão é criado e fica disponível.
+* Se houver definições de índice novas ou atualizadas, os índices correspondentes serão processados. Observe que os nós com a versão antiga sempre usarão os índices antigos, enquanto os nós com a nova versão sempre usarão os novos índices.
+* Os nós com a nova versão são inicializados enquanto as versões antigas ainda fornecem tráfego.
+* Os nós com a versão antiga estão em execução e continuam funcionando, enquanto os nós com a nova versão são verificados quanto à disponibilidade por meio de verificações de integridade.
+* Os nós com a nova versão que estão prontos aceitarão o tráfego e substituirão os nós pela versão antiga, que é desativada.
+* Com o tempo, os nós com a versão antiga são substituídos por nós com a nova versão até que apenas os nós com novas versões permaneçam, concluindo assim a implantação.
+* Qualquer conteúdo mutável novo ou modificado é então implantado.
 
 ## Índices {#indexes}
 
-Índices novos ou modificados causarão uma etapa adicional de indexação ou reindexação antes que a nova versão (Verde) possa ganhar tráfego. Detalhes sobre a gestão de índice no AEM as a Cloud Service podem ser encontrados [neste artigo](/help/operations/indexing.md). Você pode verificar o status do trabalho de indexação na página de construção do Cloud Manager e receberá uma notificação quando a nova versão estiver pronta para receber tráfego.
+Índices novos ou modificados causarão uma etapa adicional de indexação ou reindexação antes que a nova versão possa receber tráfego. Detalhes sobre a gestão de índice no AEM as a Cloud Service podem ser encontrados [neste artigo](/help/operations/indexing.md). Você pode verificar o status do trabalho de indexação na página de construção do Cloud Manager e receberá uma notificação quando a nova versão estiver pronta para receber tráfego.
 
 >[!NOTE]
 >
->O tempo necessário para uma implantação contínua variará dependendo do tamanho do índice, já que a versão Verde não pode aceitar tráfego até que o novo índice tenha sido gerado.
+>O tempo necessário para uma implantação contínua varia de acordo com o tamanho do índice, já que a nova versão não pode aceitar tráfego até que o novo índice seja gerado.
 
 No momento, o AEM as a Cloud Service não funciona com ferramentas de gerenciamento de índice, como a ferramenta ACS Commons Ensure Oak Index.
 
@@ -269,15 +273,15 @@ Além disso, a versão antiga deve ser testada quanto à compatibilidade com qua
 
 ### Usuários do serviço e alterações de ACL {#service-users-and-acl-changes}
 
-Alterar os usuários do serviço ou as ACLs necessárias para acessar o conteúdo ou o código pode levar a erros nas versões do AEM mais antigas, resultando no acesso a esse conteúdo ou código com usuários de serviço desatualizados. Para lidar com esse comportamento, uma recomendação é fazer alterações distribuídas em pelo menos duas versões, com a primeira versão funcionando como uma ponte antes da limpeza na versão subsequente.
+Alterar os usuários do serviço ou as ACLs necessárias para acessar o conteúdo ou o código pode levar a erros nas versões do AEM mais antigas, resultando no acesso a esse conteúdo ou código com usuários de serviço desatualizados. Para lidar com esse comportamento, a recomendação é fazer alterações em pelo menos duas versões, com a primeira atuando como uma ponte antes de limpar na versão subsequente.
 
 ### Alterações de índice {#index-changes}
 
-Se forem feitas alterações nos índices, é importante que a versão Azul continue a usar seus índices até que seja encerrada, enquanto a versão Verde use seu próprio conjunto modificado de índices. O desenvolvedor deve seguir as técnicas de gerenciamento de índice descritas [neste artigo](/help/operations/indexing.md).
+Se forem feitas alterações nos índices, é importante que a nova versão continue a usar seus índices até que seja encerrada, enquanto a versão antiga usa seu próprio conjunto modificado de índices. O desenvolvedor deve seguir as técnicas de gerenciamento de índice descritas [neste artigo](/help/operations/indexing.md).
 
 ### Codificação conservadora para reversões {#conservative-coding-for-rollbacks}
 
-Se uma falha for relatada ou detectada após a implantação, é possível que uma reversão para a versão Azul seja necessária. Seria sensato garantir que o código Azul seja compatível com quaisquer novas estruturas criadas pela versão Verde, uma vez que as novas estruturas (qualquer conteúdo mutável) não serão revertidas. Se o código antigo não for compatível, as correções precisarão ser aplicadas nas versões subsequentes do cliente.
+Se uma falha for relatada ou detectada após a implantação, é possível que uma reversão para a versão antiga seja necessária. É recomendável garantir que o novo código seja compatível com qualquer nova estrutura criada por essa nova versão, já que as novas estruturas (qualquer conteúdo mutável) não serão revertidas. Se o código antigo não for compatível, as correções precisarão ser aplicadas nas versões subsequentes do cliente.
 
 ## Ambientes de desenvolvimento rápido (RDE) {#rde}
 
