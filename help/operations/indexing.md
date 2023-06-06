@@ -2,10 +2,10 @@
 title: Pesquisa e indexação de conteúdo
 description: Pesquisa e indexação de conteúdo
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 6fd5f8e7a9699f60457e232bb3cfa011f34880e9
+source-git-commit: 34189fd264d3ba2c1b0b22c527c2c5ac710fba21
 workflow-type: tm+mt
-source-wordcount: '2498'
-ht-degree: 88%
+source-wordcount: '2491'
+ht-degree: 78%
 
 ---
 
@@ -24,7 +24,7 @@ Abaixo está uma lista das principais alterações em comparação ao AEM 6.5 e 
 1. Os clientes poderão configurar alertas de acordo com suas necessidades.
 1. Os SREs estão monitorando a integridade do sistema 24 horas por dia, 7 dias por semana, e tomarão as medidas necessárias assim que possível.
 1. A configuração do índice é alterada por meio de implantações. As alterações na definição do índice são configuradas como outras alterações de conteúdo.
-1. Em alto nível no AEM as a Cloud Service, com a introdução do [Modelo de implantação azul-verde](#index-management-using-blue-green-deployments), dois conjuntos de índices existirão: um conjunto para a versão antiga (azul) e um conjunto para a nova versão (verde).
+1. A um nível elevado de AEM as a Cloud Service, com a introdução da [modelo de implantação contínua](#index-management-using-rolling-deployments) dois conjuntos de índices existirão: um conjunto para a versão antiga e um conjunto para a nova versão.
 1. Os clientes poderão ver se o trabalho de indexação foi concluído na página de criação do Cloud Manager e serão notificados quando a nova versão estiver pronta para receber tráfego.
 
 Limitações:
@@ -143,7 +143,7 @@ Em `ui.apps.structure/pom.xml`, a seção `filters` desse plug-in precisa conter
 <filter><root>/oak:index</root></filter>
 ```
 
-Depois que a nova definição de índice é adicionada, o novo aplicativo precisa ser implantado por meio do Cloud Manager. Após a implantação, dois trabalhos são iniciados, responsáveis por adicionar (e mesclar, se necessário) as definições de índice ao MongoDB e ao Azure Segment Store para criação e publicação, respectivamente. Os repositórios subjacentes estão sendo reindexados com as novas definições de índice, antes da mudança azul-verde ocorrer.
+Depois que a nova definição de índice é adicionada, o novo aplicativo precisa ser implantado por meio do Cloud Manager. Após a implantação, dois trabalhos são iniciados e responsáveis por adicionar (e mesclar, se necessário) as definições de índice ao MongoDB e ao Azure Segment Store para criação e publicação, respectivamente. Os repositórios subjacentes são reindexados com as novas definições de índice, antes que a mudança ocorra.
 
 ### OBSERVAÇÃO
 
@@ -207,19 +207,19 @@ Veja abaixo um exemplo de onde colocar a configuração acima no pom.
 >
 >Para obter mais detalhes sobre a estrutura do pacote necessária para o AEM as a Cloud Service, consulte o documento [Estrutura de projeto do AEM.](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
 
-## Gerenciamento de índice usando implantações azul-verde {#index-management-using-blue-green-deployments}
+## Gerenciamento de Índice usando Implantações Móveis {#index-management-using-rolling-deployments}
 
 ### O que é o gerenciamento de índice {#what-is-index-management}
 
 O gerenciamento de índice trata da adição, remoção e alteração de índices. Alterar a *definição* de um índice é uma tarefa rápida, mas aplicar essa alteração (o que geralmente é chamado de “criação de um índice” ou, para índices existentes, “reindexação”) requer tempo. Esse processo não é instantâneo: o repositório deve ser verificado para que os dados sejam indexados.
 
-### O que é a implantação azul-verde {#what-is-blue-green-deployment}
+### O que são implantações graduais {#what-are-rolling-deployments}
 
-A implantação azul-verde pode reduzir o tempo de inatividade. Ela também permite atualizações sem tempo de inatividade e reversões rápidas. A versão antiga do aplicativo (azul) é executada ao mesmo tempo que a nova versão (verde).
+Uma implantação contínua pode reduzir o tempo de inatividade. Ela também permite atualizações sem tempo de inatividade e reversões rápidas. A versão antiga do aplicativo é executada ao mesmo tempo que a nova versão do aplicativo.
 
 ### Áreas Somente de leitura e de Leitura e gravação {#read-only-and-read-write-areas}
 
-Determinadas áreas do repositório (partes somente de leitura) podem ser diferentes na versão antiga (azul) e na versão nova (verde) do aplicativo. As áreas somente de leitura do repositório normalmente são “`/app`” e “`/libs`”. No exemplo a seguir, o itálico é usado para marcar áreas somente de leitura, enquanto o negrito é usado para áreas de leitura e gravação.
+Determinadas áreas do repositório (partes somente de leitura) podem ser diferentes na versão antiga e na nova do aplicativo. As áreas somente de leitura do repositório normalmente são `/app` e `/libs`. No exemplo a seguir, o itálico é usado para marcar áreas somente de leitura, enquanto o negrito é usado para áreas de leitura e gravação.
 
 * **/**
 * */apps (somente leitura)*
@@ -233,13 +233,13 @@ Determinadas áreas do repositório (partes somente de leitura) podem ser difere
 
 As áreas de leitura e gravação do repositório são compartilhadas entre todas as versões do aplicativo, enquanto para cada versão do aplicativo há um conjunto específico de `/apps` e `/libs`.
 
-### Gerenciamento de índice sem a implantação azul-verde {#index-management-without-blue-green-deployment}
+### Gerenciamento de índice sem implantações graduais {#index-management-without-rolling-deployments}
 
 Durante o desenvolvimento, ou ao usar instalações locais, os índices podem ser adicionados, removidos ou alterados em tempo de execução. Os índices são usados assim que ficam disponíveis. Se um índice ainda não deve ser usado na versão antiga do aplicativo, ele normalmente é criado durante um tempo de inatividade agendado. O mesmo ocorre ao remover um índice ou ao alterar um índice existente. Ao remover um índice, ele fica indisponível assim que é removido.
 
-### Gerenciamento de índice com a implantação azul-verde {#index-management-with-blue-green-deployment}
+### Gerenciamento de índice com implantações graduais {#index-management-with-rolling-deployments}
 
-Com implantações azul-verde, não há tempo de inatividade. Durante uma atualização, por algum tempo, a versão antiga (por exemplo, a versão 1) do aplicativo e a nova versão (versão 2) são executadas simultaneamente, no mesmo repositório. Se a versão 1 exigir que um determinado índice esteja disponível, esse índice não deverá ser removido na versão 2: o índice deve ser removido posteriormente, por exemplo, na versão 3, pois nesse momento é garantido que a versão 1 do aplicativo não estará mais em execução. Além disso, os aplicativos devem ser programados de modo que a versão 1 funcione bem, mesmo se a versão 2 estiver em execução e se os índices da versão 2 estiverem disponíveis.
+Com implantações contínuas, não há tempo de inatividade. Durante uma atualização, tanto a versão antiga (por exemplo, a versão 1) do aplicativo quanto a nova versão (versão 2) são executadas simultaneamente no mesmo repositório. Se a versão 1 exigir que um determinado índice esteja disponível, esse índice não deverá ser removido na versão 2. O índice deve ser removido posteriormente, por exemplo, na versão 3, quando é garantido que a versão 1 do aplicativo não estará mais em execução. Além disso, os aplicativos devem ser programados de modo que a versão 1 funcione bem, mesmo se a versão 2 estiver em execução e se os índices da versão 2 estiverem disponíveis.
 
 Após a conclusão da atualização para a nova versão, os índices antigos podem ser coletados pela lixeira do sistema. Os índices antigos ainda podem permanecer por algum tempo, para acelerar as reversões (caso elas sejam necessárias).
 

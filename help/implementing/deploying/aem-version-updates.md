@@ -3,7 +3,7 @@ title: Atualizações de versão do AEM
 description: Saiba como o AEM as a Cloud Service usa integração e entrega contínuas (CI/CD) para manter seus projetos na versão mais recente.
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: 7cdc7bb56565cccc04a2dcb74a6c8088ed4e7847
+source-git-commit: dd1560aa4d260320f565ad993a8b3650c3ee5288
 workflow-type: tm+mt
 source-wordcount: '483'
 ht-degree: 23%
@@ -49,8 +49,8 @@ Se a atualização para o ambiente de produção falhar, o Cloud Manager reverte
 
 ## Armazenamento de nó composto {#composite-node-store}
 
-As atualizações na maioria dos casos não terão tempo de inatividade, inclusive para a instância de criação, que é um cluster de nós. As atualizações contínuas são possíveis devido a [o recurso de armazenamento de nós compostos no Oak.](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)
+Na maioria dos casos, as atualizações não terão tempo de inatividade, inclusive para a instância de criação, que é um cluster de nós. As atualizações contínuas são possíveis devido a [o recurso de armazenamento de nós compostos no Oak.](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)
 
-Esse recurso permite que o AEM faça referência a vários repositórios simultaneamente. Em um intervalo [implantação azul-verde,](/help/implementing/deploying/overview.md#how-rolling-deployments-work) a nova versão verde do AEM contém sua própria `/libs` (o repositório imutável baseado em TarMK), distinto da versão mais antiga do AEM azul, embora ambos façam referência a um repositório mutável compartilhado baseado em DocumentMK que contém áreas como `/content` , `/conf` , `/etc` e outros.
+Esse recurso permite que o AEM faça referência a vários repositórios simultaneamente. Em um [implantação contínua,](/help/implementing/deploying/overview.md#how-rolling-deployments-work) a nova versão do AEM contém sua própria `/libs` (o repositório imutável baseado em TarMK), distinto da versão mais antiga do AEM, embora ambos façam referência a um repositório mutável compartilhado baseado em DocumentMK que contém áreas como `/content` , `/conf` , `/etc` e outros.
 
-Porque tanto o azul quanto o verde têm suas próprias versões de `/libs`, ambos podem estar ativos durante a atualização contínua, ambos assumindo o tráfego até que o azul seja totalmente substituído pelo verde.
+Como a versão antiga e a nova têm suas próprias versões de `/libs`, ambos podem estar ativos durante a atualização contínua e ambos podem assumir o tráfego até que o antigo seja totalmente substituído pelo novo.
