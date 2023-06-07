@@ -4,10 +4,10 @@ description: Saiba como visualizar e editar as propriedades de metadados nos Fra
 feature: Content Fragments
 role: User
 exl-id: c1b90118-4501-4f93-bd2d-6552e0d17aee
-source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
+source-git-commit: 0d7d89e0d8343e7e00fdecb91a20dd7d4a736851
 workflow-type: tm+mt
-source-wordcount: '203'
-ht-degree: 100%
+source-wordcount: '219'
+ht-degree: 92%
 
 ---
 
@@ -24,7 +24,6 @@ Você pode visualizar e editar os metadados (propriedades) dos fragmentos de con
 
    * Selecione [**Visualizar propriedades** para abrir as caixas de diálogo](/help/assets/manage-digital-assets.md#editing-properties). Depois de aberto para visualização, você também pode editá-los.
    * Abra o fragmento de conteúdo para edição e selecione **Metadados** no painel lateral.
-
    ![metadados](assets/cfm-metadata-01.png)
 
 3. A guia **Básico** fornece opções que podem ser visualizadas ou editadas:
@@ -36,5 +35,10 @@ Você pode visualizar e editar os metadados (propriedades) dos fragmentos de con
    * **Tags**
       * As [Tags](/help/sites-cloud/authoring/features/tags.md) são particularmente eficientes ao organizar os fragmentos, pois podem ser usadas para a classificação de conteúdo e taxonomia. As tags podem ser usadas para encontrar conteúdo (por tags) e aplicar operações em massa.
 Por exemplo, você pode marcar fragmentos relevantes como “lançamento de Natal” para permitir a navegação somente entre eles como um subconjunto ou copiá-los para uso com outro lançamento futuro em uma nova pasta.
-   * Criado (somente exibição)
+
+         >[!NOTE]
+         >
+         >**Tags** também pode ser adicionado quando [criação de conteúdo de variação](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content) e quando [criação de variações](/help/assets/content-fragments/content-fragments-variations.md#creating-a-variation).
+   * **Criado em** (somente exibição)
+   Por exemplo:
    ![metadados](assets/cfm-metadata-02.png)

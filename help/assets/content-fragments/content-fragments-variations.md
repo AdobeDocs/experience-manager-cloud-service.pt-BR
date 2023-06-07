@@ -2,10 +2,10 @@
 title: Variações - Criação dos fragmentos de conteúdo (Ativos - Fragmentos de conteúdo)
 description: Entenda como as variações podem tornar o conteúdo headless no AEM ainda mais flexível, permitindo criar conteúdo para o fragmento e, em seguida, criar variações desse conteúdo de acordo com a finalidade.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 737d4d56312b763a50c2dfad0ea51feb9dbf4dde
+source-git-commit: 344d04eb18c100835b78fe59c909d92c1e42111b
 workflow-type: tm+mt
-source-wordcount: '2288'
-ht-degree: 96%
+source-wordcount: '2455'
+ht-degree: 90%
 
 ---
 
@@ -43,19 +43,32 @@ Ao abrir o fragmento de conteúdo para edição, a guia **Variações** será ab
 Por exemplo:
 
 ![editor de tela cheia](assets/cfm-variations-02.png)
+
 É possível:
 
-* fazer edições diretamente na guia **Variações**
+* Faça edições no seu conteúdo diretamente no **Variações** ; cada tipo de dados fornece opções de edição diferentes, por exemplo:
 
-   * cada tipo de dados fornece opções de edição diferentes
+   * para campos de **Texto multilinha**, também é possível abrir o [editor de tela cheia](#full-screen-editor) para:
 
-* para campos de **Texto multilinha**, também é possível abrir o [editor de tela cheia](#full-screen-editor) para:
+      * selecionar o [Formato](#formats)
+      * ver mais opções de edição (para formato [Rich text](#rich-text))
+      * acessar uma variedade de [ações](#actions)
+   * Para campos de **Referência do fragmento**, a opção [Editar fragmento de conteúdo](#fragment-references-edit-content-fragment) pode estar disponível, dependendo da definição do modelo.
 
-   * selecionar o [Formato](#formats)
-   * ver mais opções de edição (para formato [Rich text](#rich-text))
-   * acessar uma variedade de [ações](#actions)
 
-* Para campos de **Referência do fragmento**, a opção **[Editar fragmento de conteúdo](#fragment-references-edit-content-fragment)** pode estar disponível, dependendo da definição do modelo.
+* Atribuir **Tags** à variação atual; as tags podem ser adicionadas, atualizadas e removidas
+
+   * As [Tags](/help/sites-cloud/authoring/features/tags.md) são particularmente eficientes ao organizar os fragmentos, pois podem ser usadas para a classificação de conteúdo e taxonomia. As tags podem ser usadas para encontrar conteúdo (por tags) e aplicar operações em massa.
+
+      * As pesquisas por uma tag retornarão o fragmento, com a variação marcada destacada.
+      * As tags de variação também podem ser usadas para agrupar variações de um perfil específico da Rede de entrega de conteúdo (CDN) (para armazenamento em cache de CDN), em vez de usar o nome da variação.
+
+      Por exemplo, você pode marcar fragmentos relevantes como &quot;lançamento de Natal&quot; para permitir a navegação somente entre eles como um subconjunto ou copiá-los para uso com outro lançamento futuro em uma nova pasta.
+   >[!NOTE]
+   >
+   >**Tags** também podem ser adicionados (à lista **Principal** variação) como parte da [Metadados](/help/assets/content-fragments/content-fragments-metadata.md)
+
+* [Criar e gerenciar variações](#managing-variations) do conteúdo **Principal.**
 
 ### Editor de tela cheia {#full-screen-editor}
 
@@ -383,6 +396,9 @@ Para criar uma nova variação:
    >[!NOTE]
    Ao criar uma nova variação, é sempre o **Principal** que é copiado, não a variação que está aberta no momento.
 
+   >[!NOTE]
+   Ao criar uma nova variação, todas as **Tags** atualmente atribuído à **Principal** são copiadas para a nova variação.
+
 ### Editar uma variação {#editing-a-variation}
 
 Você pode fazer alterações no conteúdo de variação após:
@@ -452,4 +468,4 @@ A transferência de alterações *de uma variação para o **Principal*** não e
 
    ![sincronização com o Principal](assets/cfm-variations-11c.png)
 
-1. Selecione **Sincronizar**. A variação será atualizada e mostrada.
+1. Selecionar **Sincronizar**, a variação será atualizada e mostrada.
