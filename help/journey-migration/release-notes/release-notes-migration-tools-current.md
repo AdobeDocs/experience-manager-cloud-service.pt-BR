@@ -3,10 +3,10 @@ title: Notas de versão das Ferramentas de migração no AEM as a Cloud Service 
 description: Notas de versão das Ferramentas de migração no AEM as a Cloud Service versão 2022.03.0
 feature: Release Information
 exl-id: 2f787321-f156-480d-bbe8-1a6d04f110c5
-source-git-commit: b2681113f5565e4f63c76abeaf46d5f4b1a8a8ea
+source-git-commit: 586fbc136b866be149db1d4fcdd6ea2ef18a97b1
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 10%
+source-wordcount: '321'
+ht-degree: 9%
 
 ---
 

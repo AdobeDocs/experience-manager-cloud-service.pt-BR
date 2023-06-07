@@ -2,10 +2,10 @@
 title: Mapeamento de usuários e migração principal
 description: Visão geral do mapeamento de usuários e da migração principal
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 91a13f8b23136298e0ccf494e51fccf94fa1e0b4
+source-git-commit: caa04391077d594a828a42a1a5a6a03daa107168
 workflow-type: tm+mt
-source-wordcount: '808'
-ht-degree: 12%
+source-wordcount: '832'
+ht-degree: 11%
 
 ---
 
@@ -25,9 +25,13 @@ Como parte da jornada de transição para o Adobe Experience Manager (AEM) as a 
 
 Uma mudança importante do AEM as a Cloud Service é o uso totalmente integrado de Adobe IDs para acessar o nível do autor. Este processo requer a utilização do [Adobe Admin Console](https://helpx.adobe.com/br/enterprise/using/admin-console.html) para gerenciar usuários e grupos de usuários. As informações do perfil do usuário são centralizadas no Adobe Identity Management System (IMS) que fornece logon único em todos os aplicativos de nuvem do Adobe. Para obter mais detalhes, consulte [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html#identity-management). Devido a essa alteração, os usuários existentes devem ser mapeados para suas IDs IMS para evitar usuários duplicados na instância do autor do Cloud Service. Como os grupos no AEM tradicional são fundamentalmente diferentes dos grupos no IMS, os grupos não são mapeados, mas os dois conjuntos de grupos devem ser reconciliados após a conclusão da migração.
 
-## Detalhes de mapeamento e migração de usuários {#user-mapping-detail}
+## Detalhes da migração do usuário {#user-migration-detail}
 
-A ferramenta Transferência de conteúdo e o Cloud Acceleration Manager migram todos os usuários associados ao conteúdo que está sendo migrado. Esse mapeamento é feito automaticamente e a sua realização pode ser controlada por um botão antes de iniciar a extração. A configuração padrão do alternador pode ser substituída pelo usuário ao iniciar a extração.
+A ferramenta Transferência de conteúdo e o Cloud Acceleration Manager migrarão para o sistema de nuvem todos os usuários associados ao conteúdo que está sendo migrado.
+
+## Detalhes de Mapeamento de Usuário {#user-mapping-detail}
+
+Os usuários do AEM podem ser mapeados para usuários correspondentes do Adobe IMS com o mesmo endereço de email.  Esse mapeamento pode ser feito automaticamente na CTT e se é feito pode ser controlado por um botão antes de iniciar a extração. A configuração padrão do alternador pode ser substituída pelo usuário ao iniciar a extração.
 
 * Se o sistema de origem for uma instância de autor, por padrão, a opção para fazer o mapeamento será _em_, pois esse é o processo recomendado.
 * Se o sistema de origem for uma instância de publicação, por padrão, a opção para fazer o mapeamento será _desligado_, pois os usuários normalmente não são migrados ou usados em instâncias de publicação.
