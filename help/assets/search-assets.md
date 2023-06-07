@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
+source-git-commit: ca58b4df232dc658d7843ede2386710c4da43fcb
 workflow-type: tm+mt
-source-wordcount: '4954'
+source-wordcount: '5094'
 ht-degree: 7%
 
 ---
@@ -411,6 +411,10 @@ Você pode fazer o seguinte com os ativos pesquisados em [!DNL Experience Manage
 * Baixe um ou mais ativos.
 * Use as Ações da área de trabalho para abrir esses ativos no aplicativo de área de trabalho.
 * Criar coleções inteligentes.
+* Criar uma versão
+* Iniciar um fluxo de trabalho
+* Relacionar ou não relacionar ativos
+* Aplique filtros, usando o painel Filtros que é exibido automaticamente após a execução da pesquisa, para restringir os resultados da pesquisa.
 
 ### Classificar resultados da pesquisa {#sort}
 
@@ -450,6 +454,18 @@ Uma coleção é um conjunto ordenado de ativos que pode incluir ativos de locai
 * Uma lista dinâmica (coleção inteligente) que preenche ativos na coleção com base em um critério de pesquisa.
 
 Você pode criar coleções inteligentes com base nos critérios de pesquisa. No painel **[!UICONTROL Filtros]**, selecione **[!UICONTROL Arquivos]** e clique em **[!UICONTROL Salvar coleção inteligente]**. Consulte [gerenciar coleções](/help/assets/manage-collections.md).
+
+### Criar uma versão {#create-version}
+
+Crie uma versão para os ativos exibidos nos resultados da pesquisa. Selecione o ativo e clique em **[!UICONTROL Criar]** > **[!UICONTROL Versão]**. Adicione um rótulo opcional ou um comentário e clique em **[!UICONTROL Criar]**. Você também pode selecionar vários ativos e criar versões para eles simultaneamente.
+
+### Criar um workflow {#create-workflow}
+
+Semelhante ao recurso de criação de versão, também é possível criar um fluxo de trabalho para os ativos exibidos nos resultados da pesquisa. Selecione os ativos e clique em **[!UICONTROL Criar]** > **[!UICONTROL Fluxo de trabalho]**. Selecione o modelo de fluxo de trabalho, especifique um título para o fluxo de trabalho e clique em **[!UICONTROL Início]**.
+
+### Relacionar e não relacionar ativos {#relate-unrelate-assets}
+
+Relacione e não relacione ativos exibidos nos resultados da pesquisa. Selecione os ativos e clique em **[!UICONTROL Relacionar]** ou **[!UICONTROL Não Relacionado]**.
 
 ## Resultados e problemas de pesquisa inesperados {#unexpected-results}
 

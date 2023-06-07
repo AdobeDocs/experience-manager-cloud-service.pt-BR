@@ -2,10 +2,10 @@
 title: Trabalho com fragmentos de conteúdo (Ativos - Fragmentos de conteúdo)
 description: Saiba como os fragmentos de conteúdo no Adobe Experience Manager (AEM) as a Cloud Service permitem projetar, criar, preparar e usar conteúdo independente de página, ideal para criação de páginas e entrega headless.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: ca41657057211cb0736a866771253b166fa139b4
+source-git-commit: d452690b03ed32701030476572c5db9ddb1fbc2c
 workflow-type: tm+mt
-source-wordcount: '2063'
-ht-degree: 94%
+source-wordcount: '2135'
+ht-degree: 91%
 
 ---
 
@@ -46,6 +46,7 @@ Esta e as seguintes páginas abordam as tarefas de criação, configuração, ma
 * [Uso de conteúdo associado](/help/assets/content-fragments/content-fragments-assoc-content.md) — adição de conteúdo associado
 * [Metadados - Propriedades do fragmento](/help/assets/content-fragments/content-fragments-metadata.md) — visualização e edição das propriedades do fragmento
 * Uso [Fragmentos de conteúdo, juntamente com o GraphQL, para fornecer conteúdo](/help/assets/content-fragments/content-fragments-graphql.md) para uso em seus aplicativos. Para ajudar nisso, você pode visualizar [Saída JSON](/help/assets/content-fragments/content-fragments-json-preview.md).
+* [Reutilizar fragmentos de conteúdo usando o MSM para ativos](#reusing-content-fragments-with-msm-assets)
 
 >[!NOTE]
 >
@@ -109,6 +110,16 @@ Juntamente com os recursos de exportação em JSON dos componentes principais do
 >[!NOTE]
 >
 >O AEM também permite a tradução do conteúdo do fragmento. Consulte [Tradução de ativos](/help/assets/translate-assets.md) para obter mais informações.
+
+## Reutilizar fragmentos de conteúdo com o MSM para ativos {#reusing-content-fragments-with-msm-assets}
+
+Quando acessado por meio de **Assets** console, é possível usar o MSM e criar Live Copies para os fragmentos.
+
+Para obter mais detalhes, consulte [Reutilizar fragmentos de conteúdo usando o MSM para ativos](/help/assets/reuse-assets-using-msm.md).
+
+>[!CAUTION]
+>
+>Se você quiser usar o MSM (que cria cópias de Fragmentos de conteúdo), qualquer **Exclusivo** restrições devem ser removidas de qualquer Tipo de dados usado nos respectivos [Modelos de fragmentos do conteúdo](/help/assets/content-fragments/content-fragments-models.md).
 
 ## Tipo de conteúdo {#content-type}
 

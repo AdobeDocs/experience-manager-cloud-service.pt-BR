@@ -4,10 +4,10 @@ description: Saiba como os fragmentos de conteúdo no Adobe Experience Manager (
 feature: Content Fragments
 role: User
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
-source-git-commit: 448851bdbcdf626ef1b8cf2765ba54bb0576bec8
+source-git-commit: e99522cb6221285b5b4de5f026dcc4d925035ec1
 workflow-type: tm+mt
-source-wordcount: '2058'
-ht-degree: 100%
+source-wordcount: '2127'
+ht-degree: 96%
 
 ---
 
@@ -59,6 +59,7 @@ Para ajudar nisso, é possível visualizar a [Árvore de estrutura](/help/sites-
 >* [Fragmentos de conteúdo configuram componentes para renderização](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
 >* [Compatibilidade com os Fragmentos de conteúdo na API HTTP do AEM Assets](/help/assets/content-fragments/assets-api-content-fragments.md)
 >* [API GraphQL do AEM para uso com Fragmentos de conteúdo](/help/headless/graphql-api/content-fragments.md)
+>* [Reutilizar fragmentos de conteúdo usando o MSM para ativos](/help/assets/reuse-assets-using-msm.md) (disponível somente por meio da **Assets** console)
 
 
 O número de canais de comunicação aumenta anualmente. Normalmente, os canais se referem ao mecanismo de entrega, como:
@@ -112,6 +113,16 @@ Juntamente com os recursos de exportação em JSON dos componentes principais do
 >[!NOTE]
 >
 >O AEM também permite a tradução do conteúdo do fragmento. Consulte [Tradução de ativos](/help/assets/translate-assets.md) para obter mais informações.
+
+## Publicar e visualizar {#publish-and-preview}
+
+Como em todo o conteúdo, você desejará publicar os fragmentos de conteúdo na **[Serviço de publicação](/help/overview/architecture.md#runtime-architecture)**.
+
+Antes disso, também é possível visualizar uma experiência entregue usando Fragmentos de conteúdo, ao [publicar os fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md##publishing-and-previewing-a-fragment) ao AEM **[Serviço de visualização](/help/overview/architecture.md#runtime-architecture)**.
+
+>[!CAUTION]
+>
+>Publicação no **Serviço de visualização** O só está disponível no **Fragmentos de conteúdo** console.
 
 ## Tipo de conteúdo {#content-type}
 

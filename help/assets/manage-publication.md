@@ -1,21 +1,20 @@
 ---
 title: Gerenciar publicação
 description: Publicar ou cancelar a publicação de ativos no Experience Manager Assets, Dynamic Media e Brand Portal
-contentOwner: Vishabh Gupta
 mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 8466595f988d3a10806d4654885c14a622d14057
 workflow-type: tm+mt
-source-wordcount: '1465'
-ht-degree: 9%
+source-wordcount: '1630'
+ht-degree: 6%
 
 ---
 
 # Gerenciar publicação no Experience Manager Assets {#manage-publication-in-aem}
 
-Como um [!DNL Adobe Experience Manager Assets] administrador, você pode publicar ativos e pastas que contêm ativos da instância do autor no [!DNL Experience Manager Assets], [!DNL Dynamic Media], e [!DNL Brand Portal]. Além disso, você pode agendar o fluxo de trabalho de publicação de um ativo ou pasta para uma data ou hora posterior. Após a publicação, os usuários podem acessar e distribuir os ativos para outros usuários. Por padrão, você pode publicar ativos e pastas em [!DNL Experience Manager Assets]. No entanto, é possível configurar [!DNL Experience Manager Assets] para ativar a publicação para [[!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html) e [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html).
+Como um [!DNL Adobe Experience Manager Assets] administrador, você pode publicar ativos e pastas que contêm ativos da instância do autor no [!DNL Experience Manager Assets], [!DNL Dynamic Media], e [!DNL Brand Portal]. Além disso, você pode agendar a publicação de um ativo ou pasta em uma data ou hora posterior. Após a publicação, os usuários podem acessar e distribuir os ativos para outros usuários. Por padrão, você pode publicar ativos e pastas em [!DNL Experience Manager Assets]. No entanto, é possível configurar [!DNL Experience Manager Assets] para ativar a publicação para [[!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html) e [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html).
 
 É possível publicar ou cancelar a publicação de ativos no nível do ativo ou da pasta, usando **[!UICONTROL Publicação rápida]** ou **[!UICONTROL Gerenciar publicação]** opção disponível no [!DNL Experience Manager Assets] interface. Se fizer modificações subsequentes no ativo ou pasta original no [!DNL Experience Manager Assets], as alterações não serão refletidas na instância de publicação até que você publique novamente a partir de [!DNL Experience Manager Assets]. Isso garante que as alterações de trabalho em andamento não estejam disponíveis na instância de publicação. Somente as alterações aprovadas publicadas por um administrador estão disponíveis na instância de publicação.
 
@@ -24,6 +23,7 @@ Como um [!DNL Adobe Experience Manager Assets] administrador, você pode publica
 * [Publicar ativos mais tarde](#publish-assets-later)
 * [Publicar ativos no Dynamic Media](#publish-assets-to-dynamic-media)
 * [Publicar ativos no Brand Portal](#publish-assets-to-brand-portal)
+* [Solicitação para publicar](#request-publication)
 * [Limitações e dicas](#limitations-and-tips)
 
 ## Publicar ativos usando a Publicação rápida {#quick-publish}
@@ -177,24 +177,27 @@ Você pode publicar ativos, pastas e coleções na [!DNL Experience Manager Asse
 * [Publicar pastas no Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=en#publish-folders-to-brand-portal)
 * [Publicar coleções no Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=en#publish-collections-to-brand-portal)
 
+## Solicitação para publicar {#request-publication}
+
+A variável `Request Publication` ajuda na autenticação do fluxo de trabalho dos Assets antes de publicá-los no [!DNL AEM] Ambiente de ativos. [!DNL AEM] O fornece diferentes níveis de permissões para vários usuários. Você pode ser um *colaborador* que está fazendo upload de ativos, mas não pode publicá-los até que os uploads sejam verificados. Além disso, por ser um *Admin* é possível gerenciar para ler e gravar fluxos de trabalho dos Ativos.
+
+A opção Solicitar publicação está disponível para os seguintes usuários:
+* **Colaborador:** Se você for um usuário que pode contribuir com [!DNL AEM] ativos, você terá acesso limitado à [!DNL AEM] Fluxo de trabalho dos ativos. `Manage publication` está oculto para você. Como colaborador, você só pode contribuir adicionando Ativos, mas não pode publicá-los ou ter acesso de leitura ao fluxo de trabalho.
+
+* **Usuário do fluxo de trabalho:** Esse usuário não pode publicar ativos, mas tem acesso de leitura ao fluxo de trabalho. Como usuário de workflow, você pode:
+   * solicitar publicação
+   * exibir `Manage publication` botão
+   * agende o workflow e veja as opções `schedule now` e `schedule later`
+
+* **Administrador:** Como um tipo de usuário administrador, você pode gerenciar as etapas gerais do fluxo de trabalho para os Ativos. `Manage publication` está visível para você. Se o destino `publish` for selecionada, será possível agendar um ativo para a etapa do fluxo de trabalho.
+
+>[!NOTE]
+>
+>Se [!DNL Dynamic Media] for selecionada como destino, a etapa do fluxo de trabalho será desativada para **usuário do fluxo de trabalho** e **administrador** usuários.
+
 ## Limitações e dicas {#limitations-and-tips}
 
-* A opção de [!UICONTROL Gerenciar publicação] O está disponível somente para as contas de usuário que têm permissões de replicação.
+* `Manage publication` O está disponível para usuários que têm pelo menos permissões de Leitura para o fluxo de trabalho.
 * Pastas vazias não são publicadas.
 * Se você publicar um ativo que está sendo processado, somente o conteúdo original será publicado. As representações estão ausentes. Aguarde a conclusão do processamento e publique ou republique o ativo depois que o processamento for concluído.
 * Ao desfazer a publicação de um ativo complexo, cancele a publicação somente do ativo. Evite desfazer a publicação das referências, pois elas podem ser referenciadas por outros ativos publicados.
-
-**Consulte também**
-
-* [Traduzir ativos](translate-assets.md)
-* [API HTTP de ativos](mac-api-assets.md)
-* [Formatos de arquivo compatíveis com os ativos](file-format-support.md)
-* [Pesquisar ativos](search-assets.md)
-* [Ativos conectados](use-assets-across-connected-assets-instances.md)
-* [Relatórios de ativos](asset-reports.md)
-* [Esquemas de metadados](metadata-schemas.md)
-* [Baixar ativos](download-assets-from-aem.md)
-* [Gerenciar metadados](manage-metadata.md)
-* [Pesquisar aspectos](search-facets.md)
-* [Gerenciar coleções](manage-collections.md)
-* [Importação de metadados em massa](metadata-import-export.md)

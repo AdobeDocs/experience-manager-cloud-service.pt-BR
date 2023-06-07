@@ -6,10 +6,10 @@ mini-toc-levels: 1
 role: User, Admin, Architect
 feature: Asset Management,Multi Site Manager
 exl-id: a71aebdf-8e46-4c2d-8960-d188b14aaae9
-source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
+source-git-commit: ca58b4df232dc658d7843ede2386710c4da43fcb
 workflow-type: tm+mt
-source-wordcount: '3271'
-ht-degree: 11%
+source-wordcount: '3404'
+ht-degree: 12%
 
 ---
 
@@ -26,7 +26,17 @@ Funcionalidade de Gerenciamento de vários sites (MSM) no [!DNL Adobe Experience
 * Manter várias cópias em sincronização e atualizar a cópia principal original uma vez para enviar as alterações para as cópias secundárias.
 * Faça alterações locais suspendendo temporária ou permanentemente a vinculação entre ativos pai e filho.
 
-## Entenda os benefícios e os conceitos do MSM {#concepts}
+>[!NOTE]
+>
+>O MSM para [!DNL Assets] inclui Fragmentos de conteúdo, que são armazenados como [!DNL Assets] (embora considerado um recurso do Sites).
+
+>[!CAUTION]
+>
+>O MSM para fragmentos de conteúdo só está disponível ao usar fragmentos de conteúdo por meio do **[!UICONTROL Assets]** console.
+>
+>A funcionalidade do MSM é *não* disponível ao usar o **[!UICONTROL Fragmentos de conteúdo]** console.
+
+## Entender os benefícios e os conceitos do MSM {#concepts}
 
 ### Como funciona e os benefícios {#how-it-works-and-the-benefits}
 
@@ -43,7 +53,7 @@ O MSM mantém um relacionamento dinâmico entre o ativo de origem e suas live co
 
 **Live Copy:** A cópia dos ativos/pastas de origem que está em sincronização com sua origem. As Live Copies podem ser uma origem de mais Live Copies. Veja como criar LCs.
 
-**Herança:** Um link/referência entre um ativo/pasta de live copy e sua origem que o sistema usa para lembrar para onde enviar as atualizações. A herança existe em nível granular para campos de metadados. A herança pode ser removida para campos de metadados seletivos, preservando o relacionamento dinâmico entre a origem e sua live copy.
+**Herança:** Um link/referência entre um ativo/pasta de live copy e sua origem que o sistema usa para lembrar para onde enviar as atualizações. A herança existe em nível granular para campos de metadados, bem como para variações e campos de Fragmento de conteúdo. A herança pode ser removida dos itens selecionados, preservando o relacionamento dinâmico entre a origem e sua live copy.
 
 **Implantação:** Uma ação que envia as modificações feitas no downstream de origem para suas live copies. É possível atualizar uma ou mais live copies de uma só vez usando a ação de implantação. Consulte implantação.
 
@@ -66,7 +76,7 @@ Para criar uma live copy de um ou mais ativos ou pastas de origem, siga um deste
 * Método 1: selecione os ativos de origem e clique em **[!UICONTROL Criar]** > **[!UICONTROL Live Copy]** na barra de ferramentas na parte superior.
 * Método 2: Entrada [!DNL Experience Manager] clique em **[!UICONTROL Criar]** > **[!UICONTROL Live Copy]** no canto superior direito da interface.
 
-É possível criar live copies de um ativo ou pasta, uma por vez. É possível criar live copies derivadas de um ativo ou uma pasta que seja uma live copy. Fragmentos de conteúdo (CFs) não são compatíveis com o caso de uso. Ao tentar criar suas live copies, os CFs são copiados como estão, sem qualquer relação. Os CFs copiados são um instantâneo do tempo e não são atualizados quando os CFs originais são atualizados.
+É possível criar live copies de um ativo ou pasta, uma por vez. É possível criar live copies derivadas de um ativo ou uma pasta que seja uma live copy.
 
 Para criar live copies usando o primeiro método, siga estas etapas:
 
@@ -233,6 +243,38 @@ Para ver os status e as informações relacionadas a uma ação de sincronizaç�
 >
 >Se a relação for suspensa, a ação de sincronização não estará disponível na barra de ferramentas. Embora a ação de sincronização esteja disponível no painel Referências, as modificações não são propagadas mesmo após uma implantação bem-sucedida.
 
+## Cancelar e reativar a herança de itens individuais {#canceling-reenabling-inheritance-individual-items}
+
+Você pode cancelar a herança da Live Copy de:
+
+* campo de metadados
+* Variação do fragmento de conteúdo
+* Campo de dados do fragmento de conteúdo
+
+Isso significa que o item não será mais sincronizado com o componente de origem. Você pode ativar a herança em um ponto posterior, se necessário.
+
+### Cancelar herança {#cancel-inheritance}
+
+Para cancelar a herança:
+
+1. Selecione o **Cancelar herança** ícone, ao lado do item obrigatório:
+
+   ![A ação Sincronizar puxa as alterações feitas na origem](assets/cancel-inheritance-icon.png)
+
+1. Na caixa de diálogo Cancelar herança, confirme a ação com Sim.
+
+### Reativar herança {#reenable-inheritance}
+
+Para reativar a herança:
+
+1. Para habilitar a herança de um item, selecione o **Reativar herança** ícone ao lado do item obrigatório:
+
+   ![A ação Sincronizar puxa as alterações feitas na origem](assets/re-enable-inheritance-icon.png)
+
+   >[!NOTE]
+   >
+   >Quando você reativa a herança, o item não é sincronizado automaticamente com a origem. Você pode solicitar manualmente uma sincronização, se necessário.
+
 ## Suspender e retomar o relacionamento {#suspend-resume}
 
 Você pode suspender temporariamente o relacionamento para impedir que uma live copy receba modificações feitas no ativo ou pasta de origem. A relação também pode ser retomada para que a live copy comece a receber as modificações da origem.
@@ -319,11 +361,13 @@ Em mais cenários, o MSM para [!DNL Assets] corresponde ao comportamento do MSM 
 * A configuração de bloqueios de MSM nas propriedades da página não é compatível com o MSM para [!DNL Assets].
 * Para MSM para [!DNL Assets], use apenas o **[!UICONTROL Configuração de implantação padrão]**. As outras configurações de implantação não estão disponíveis para o MSM para [!DNL Assets].
 
+>[!NOTE]
+>
+>Lembre-se de que o MSM para fragmentos de conteúdo (acessado por meio de **[!UICONTROL Assets]** console) usa a funcionalidade Ativos; isso ocorre porque eles são armazenados como Ativos (embora considerados um recurso do Sites).
+
 ## Limitações e problemas conhecidos do MSM para [!DNL Assets] {#limitations}
 
 Veja a seguir as limitações do MSM para [!DNL Assets].
-
-* Fragmentos de conteúdo não são compatíveis. Ao tentar criar as live copies, os fragmentos de conteúdo são copiados como estão, sem qualquer relação. Os fragmentos de conteúdo copiados são um instantâneo do tempo e não são atualizados ao atualizar os fragmentos de conteúdo originais.
 
 * O MSM não funciona com o write-back de metadados habilitado. No write-back, a herança é interrompida.
 
@@ -341,3 +385,4 @@ Veja a seguir as limitações do MSM para [!DNL Assets].
 * [Pesquisar aspectos](search-facets.md)
 * [Gerenciar coleções](manage-collections.md)
 * [Importação de metadados em massa](metadata-import-export.md)
+* [Trabalho com Fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md)

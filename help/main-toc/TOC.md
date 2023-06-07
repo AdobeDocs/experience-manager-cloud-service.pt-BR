@@ -8,9 +8,9 @@ user-guide-description: Saiba como o Experience Manager as a Cloud Service funci
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: d6ea74834f73ad90f5df929a2806cd1ed53af0aa
+source-git-commit: 106cc7d006e796126f98f6632fa1086a46e5b9ee
 workflow-type: tm+mt
-source-wordcount: '4030'
+source-wordcount: '4036'
 ht-degree: 99%
 
 ---
@@ -36,6 +36,7 @@ ht-degree: 99%
       + [Notas de versão atuais](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2023 {#2023}
          + [Notas de versão 2023.1.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-1-0.md)
+         + [Notas de versão 2023.2.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-2-0.md)
       + 2022 {#2022}
          + [Notas da versão 2022.10.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-10-0.md)
          + [Notas da versão 2022.8.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-8-0.md)
@@ -949,6 +950,7 @@ ht-degree: 99%
    + [Centro de ações](/help/operations/actions-center.md)
    + [Pesquisa e indexação de conteúdo](/help/operations/indexing.md)
    + [Serviço de replicação de conteúdo](/help/operations/replication.md)
+   + [Regiões de publicação adicionais](/help/operations/additional-publish-regions.md)
    + [Monitoramento de infraestrutura e serviços no AEM as a Cloud Service](/help/operations/monitoring.md)
    + [Tarefas de manutenção](/help/operations/maintenance.md)
    + [Backup e restauração](/help/operations/backup.md)
@@ -972,4 +974,3 @@ ht-degree: 99%
    + [Arquitetura do Editor universal](/help/implementing/universal-editor/architecture.md)
    + [Atributos e tipos](/help/implementing/universal-editor/attributes-types.md)
    + [Autenticação do Editor universal](/help/implementing/universal-editor/authentication.md)
-
