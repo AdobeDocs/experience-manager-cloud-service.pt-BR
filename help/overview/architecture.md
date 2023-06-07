@@ -2,10 +2,10 @@
 title: Introdução à arquitetura do Adobe Experience Manager as a Cloud Service
 description: Introdução à arquitetura do Adobe Experience Manager as a Cloud Service.
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: c67be5b7f5dc454511753faa16bc46b10e72dde4
+source-git-commit: 1e9ca4f18c3698dbf4bbc0f104559e14f429e28e
 workflow-type: tm+mt
-source-wordcount: '1807'
-ht-degree: 100%
+source-wordcount: '1827'
+ht-degree: 97%
 
 ---
 
@@ -124,7 +124,15 @@ Há vários componentes principais dessa nova arquitetura:
       * A integração e o processamento de ativos usam um Serviço de cálculo de ativos dedicado.
    * O nível de pré-visualização é composto por um único nó de pré-visualização. Isso é usado para garantir a qualidade do conteúdo antes de publicar no nível de publicação.
 
-   * O nível de publicação é composto por dois ou mais nós em um único farm de publicação: eles podem operar independentemente uns dos outros. Cada nó consiste em um editor do AEM e um servidor da Web equipado com o módulo do AEM Dispatcher. É dimensionado automaticamente de acordo com as necessidades de tráfego do site.
+   * O nível de publicação é composto por dois ou mais nós em um único farm de publicação.
+
+      * Os nós podem operar independentemente uns dos outros.
+
+      * Cada nó consiste em um editor do AEM e um servidor da Web equipado com o módulo do AEM Dispatcher.
+
+      * É dimensionado automaticamente de acordo com as necessidades de tráfego do site.
+
+      * Por padrão, há um único farm de publicação na região primária, no entanto [regiões de publicação adicionais](/help/operations/additional-publish-regions.md) pode ser licenciado.
 
       * Os usuários finais ou visitantes do site visitam o site por meio do AEM Publish Service.
 
