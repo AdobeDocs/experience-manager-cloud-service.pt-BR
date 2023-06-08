@@ -1,13 +1,13 @@
 ---
 title: A ferramenta de cópia de conteúdo
 description: A ferramenta de cópia de conteúdo permite que os usuários copiem conteúdo mutável sob demanda de seus ambientes de produção do AEM as a Cloud Service para ambientes inferiores para fins de teste.
-source-git-commit: 4a5470ae8fe5a8e7f615009bf5f6b180aee4669b
+exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
+source-git-commit: d056ad0f29cfd2448164e3e866f2cedbe1bf6fc2
 workflow-type: tm+mt
-source-wordcount: '1212'
-ht-degree: 64%
+source-wordcount: '1227'
+ht-degree: 60%
 
 ---
-
 
 # A ferramenta de cópia de conteúdo {#content-copy}
 
@@ -55,7 +55,7 @@ Antes que qualquer conteúdo possa ser copiado, um conjunto de conteúdo deve se
 
    ![Conjuntos de conteúdo](assets/content-sets.png)
 
-1. No **Detalhes** do assistente, forneça um nome e uma descrição para o conjunto de conteúdo e toque ou clique **Continuar**.
+1. Na guia **Detalhes** do assistente, forneça um nome e uma descrição para o conjunto de conteúdo e toque ou clique em **Continuar**.
 
    ![Detalhes do conjunto de conteúdo](assets/add-content-set-details.png)
 
@@ -101,6 +101,9 @@ Observe que, ao editar seu conjunto de conteúdo, talvez seja necessário expand
 ## Copiar conteúdo {#copy-content}
 
 Depois que um conjunto de conteúdo é criado, você pode usá-lo para copiar conteúdo. Siga estas etapas para copiar conteúdo.
+
+>[!NOTE]
+> A cópia do conteúdo não deve ser iniciada em um ambiente enquanto uma [transferência de conteúdo](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) a operação está em execução nesse ambiente.
 
 1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização e o programa apropriado.
 
@@ -159,7 +162,7 @@ Depois de começar a copiar o conteúdo, o processo poderá ter um dos status a 
 | Concluído | A operação de cópia de conteúdo foi concluída com sucesso |
 | Cancelado | O usuário cancela uma operação de cópia de conteúdo após iniciá-la |
 
-### Cancelando um Processo de Cópia {#cancelling}
+### Cancelando um Processo de Cópia {#canceling}
 
 Se precisar abortar uma operação de cópia de conteúdo após iniciá-la, você terá a opção de cancelá-la.
 
@@ -182,7 +185,7 @@ A ferramenta de cópia de conteúdo tem as seguintes limitações.
 * Não é possível copiar conteúdo entre programas.
 * Não é possível executar operações de cópia de conteúdo simultâneas no mesmo ambiente.
 * É possível especificar até dez caminhos por conjunto de conteúdo. Não há limitação de caminhos excluídos.
-* A ferramenta de cópia de conteúdo não deve ser usada como uma ferramenta de clonagem ou espelhamento, pois ela não pode rastrear os conteúdos movidos ou excluídos da origem.
-* A ferramenta de cópia de conteúdo não tem nenhum recurso de controle de versão e não pode detectar automaticamente o conteúdo modificado ou recém-criado no ambiente de origem de um conjunto de conteúdo desde a última operação de cópia de conteúdo.
+* A ferramenta de cópia de conteúdo não deve ser usada como uma ferramenta de clonagem ou de espelhamento porque não pode rastrear conteúdo movido ou excluído na origem.
+* A ferramenta de cópia de conteúdo não tem recurso de controle de versão e não pode detectar automaticamente o conteúdo modificado ou o conteúdo recém-criado no ambiente de origem em um conjunto de conteúdo desde a última operação de cópia de conteúdo.
    * Se quiser atualizar o ambiente de destino com alterações de conteúdo somente desde a última operação de cópia de conteúdo, será necessário criar um conjunto de conteúdo e especificar os caminhos na instância de origem em que as alterações foram feitas desde a última operação de cópia de conteúdo.
 * As informações da versão não são incluídas em uma cópia de conteúdo.
