@@ -2,7 +2,7 @@
 title: Criação e uso de temas
 description: Você pode usar temas para estilizar e fornecer uma identidade visual a um Formulário adaptável usando componentes principais. Você pode compartilhar um tema em qualquer número do Adaptive Forms.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: f22554450d2eb1f4948f749ba00f78b568ee308f
 workflow-type: tm+mt
 source-wordcount: '1666'
 ht-degree: 5%
@@ -49,6 +49,7 @@ Para personalizar um tema,
 * Você deve ter um [conhecimento básico do Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git) e os repositórios Git do Cloud Service.
 
 Para personalizar um tema da Tela de Pintura:
+
 1. [Clonar o tema da tela de desenho](#1-download-canvas-theme-download-canvas-theme)
 1. [Entender a estrutura do tema](#2-understand-structure-of-the-canvas-theme-structure-of-canvas-theme)
 1. [Alterar nome em package.json e package_lock.json](#changename-packagelock-packagelockjson)
