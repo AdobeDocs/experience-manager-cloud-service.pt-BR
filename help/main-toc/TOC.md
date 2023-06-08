@@ -8,9 +8,9 @@ user-guide-description: Saiba como o Experience Manager as a Cloud Service funci
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 106cc7d006e796126f98f6632fa1086a46e5b9ee
+source-git-commit: 6b38601e9bd29c71e5f70b46d2fa55a928851adc
 workflow-type: tm+mt
-source-wordcount: '4036'
+source-wordcount: '4046'
 ht-degree: 99%
 
 ---
@@ -523,6 +523,7 @@ ht-degree: 99%
          + [Integrar o AEM Forms as a Cloud Service com o Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
          + [Integrar um Formulário adaptável ao Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
          + [Incorporar um Formulário adaptável em uma página do AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)
+         + [Criar ou adicionar um formulário adaptável à página do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
       + Modelo de dados do formulário {#use-form-data-model}
          + [Conectar suas fontes de dados ao Cloud Service](/help/forms/data-integration.md)
          + [Configurar fontes de dados](/help/forms/configure-data-sources.md)
