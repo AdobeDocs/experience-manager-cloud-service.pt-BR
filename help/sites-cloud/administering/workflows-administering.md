@@ -3,11 +3,10 @@ title: Administração de instâncias do fluxo de trabalho
 description: Saiba como administrar instâncias de fluxo de trabalho
 feature: Administering
 role: Admin
-exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
-source-git-commit: 0a87842923298be1a801a85519ac85fae5ef7933
+source-git-commit: 5801063c9c4c1c6b9f9e7f55ad4d66bb563e0eef
 workflow-type: tm+mt
-source-wordcount: '1165'
-ht-degree: 100%
+source-wordcount: '1281'
+ht-degree: 77%
 
 ---
 
@@ -27,10 +26,19 @@ Há vários consoles disponíveis para administrar seus fluxos de trabalho. Use 
 ## Monitorar o status de instâncias de fluxo de trabalho {#monitoring-the-status-of-workflow-instances}
 
 1. Usando a navegação, selecione **Ferramentas** e, em seguida, **Fluxo de trabalho**.
-1. Selecione **Instâncias** para exibir a lista de instâncias de fluxo de trabalho em andamento.
+1. Selecionar **Instâncias** para exibir a lista de instâncias de fluxo de trabalho em execução em andamento.
+1. No painel superior, no canto direito, as instâncias de fluxo de trabalho mostram **Fluxos de trabalho em execução**, **Status**, e **Detalhes**.
+1. **Fluxos de trabalho em execução** mostra o número de workflows em execução e seus status. por exemplo, nas imagens fornecidas, o número de **Fluxos de trabalho em execução** e a variável **Status** da instância AEM.
+   ![status-íntegro](/help/sites-cloud/administering/assets/status-healthy.png)
+   ![status-não íntegro](/help/sites-cloud/administering/assets/status-unhealthy.png)
+1. Para **Detalhes do status** de instâncias de fluxo de trabalho, clique em **Detalhes**, para mostrar a **número de instâncias de fluxos de trabalho em execução**, **instâncias de fluxo de trabalho concluídas**, **instâncias de fluxo de trabalho anuladas**, **instâncias de fluxo de trabalho com falha** e assim por diante. por exemplo, abaixo estão as imagens fornecidas que mostram **Detalhes do status** com **Status: Íntegro** e **Status: não íntegro**.
+   ![status-details-healthy](/help/sites-cloud/administering/assets/status-details-healthy.png)
 
-   ![wf-97](/help/sites-cloud/administering/assets/wf-97.png)
+   ![status-detalhes-não íntegro](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
 
+   >[!NOTE]
+   >
+   > Para manter a integridade da instância de fluxo de trabalho, siga as práticas recomendadas em [limpeza regular de instâncias de fluxo de trabalho](#regular-purging-of-workflow-instances) ou [práticas recomendadas de workflow](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html?lang=en).
 
 ## Pesquisar instâncias de fluxo de trabalho {#search-workflow-instances}
 
@@ -66,7 +74,7 @@ Há vários consoles disponíveis para administrar seus fluxos de trabalho. Use 
    >[!NOTE]
    >
    >
-   >Para encerrar ou abortar um fluxo de trabalho, ele deve estar em um estado de espera pela intervenção do usuário, como em uma Etapa do participante. A tentativa de abortar um fluxo de trabalho que está executando processos (threads ativos que estão em execução) pode não produzir os resultados esperados.
+   >Para encerrar ou abortar um workflow, ele deve estar em um estado de espera pela intervenção do usuário, como em uma Etapa do participante. A tentativa de abortar um fluxo de trabalho que está executando processos (threads ativos que estão em execução) pode não produzir os resultados esperados.
 
 
 ## Visualização de fluxos de trabalho arquivados {#viewing-archived-workflows}
@@ -75,14 +83,15 @@ Há vários consoles disponíveis para administrar seus fluxos de trabalho. Use 
 
 1. Selecione **Arquivo** para exibir a lista de instâncias de fluxo de trabalho concluídas com sucesso.
 
-   ![wf-98](/help/sites-cloud/administering/assets/wf-98.png)
+   ![instâncias arquivadas](/help/sites-cloud/administering/assets/archived-instances.png)
 
    >[!NOTE]
+   >
+   >
    >O status interrompido é considerado um encerramento bem-sucedido, pois ocorre como resultado da ação do usuário; por exemplo:
    >
    >* o uso da ação **Encerrar**
-   >* quando uma página que está sujeita a um fluxo de trabalho é excluída (à força), o fluxo de trabalho é encerrado
-
+   >* quando uma página que está sujeita a um fluxo de trabalho é excluída (à força), o fluxo de trabalho é encerrado.
 
 
 1. Selecione um item específico e **Abra o histórico** para ver mais detalhes:
@@ -95,14 +104,14 @@ Quando um fluxo de trabalho falha, o AEM fornece o console **Falhas**, que permi
 
 * **Detalhes da falha**
 Abre uma janela para mostrar a  
-**Mensagem de falha**, **Etapa** e **Pilha de falhas**.
+**Mensagem de falha**, **Etapa e **Pilha de falhas**.
 
 * **Abrir histórico**
 Mostra detalhes do histórico do fluxo de trabalho.
 
 * **Repetir etapa** Executa a instância do componente Etapa do script novamente. Use o comando Repetir etapa após corrigir a causa do erro original. Por exemplo, repita a etapa depois de corrigir um erro no script que a Etapa do processo executa.
 * **Encerrar** Encerra o fluxo de trabalho se o erro tiver gerado uma situação irreparável para o fluxo de trabalho. Por exemplo, o fluxo de trabalho pode depender de condições ambientais, como informações no repositório que não são mais válidas para a instância do fluxo de trabalho.
-* **Encerrar e repetir** Semelhante a **Encerrar**, exceto que uma nova instância de fluxo de trabalho é iniciada usando a carga, o título e a descrição originais.
+* **Encerrar e tentar novamente** semelhante a **Encerrar** exceto que uma nova instância de fluxo de trabalho é iniciada usando a carga, o título e a descrição originais.
 
 Para investigar falhas e, em seguida, retomar ou encerrar o fluxo de trabalho, use as seguintes etapas:
 
@@ -111,15 +120,15 @@ Para investigar falhas e, em seguida, retomar ou encerrar o fluxo de trabalho, u
 1. Selecione **Falhas** para exibir a lista de instâncias de fluxo de trabalho que não foram concluídas com sucesso.
 1. Selecione um item específico e, em seguida, a ação apropriada:
 
-   ![wf-47](/help/sites-cloud/administering/assets/wf-47.png)
+![fluxo de trabalho-falha](/help/sites-cloud/administering/assets/workflow-failure.png)
 
 ## Limpeza regular de instâncias de fluxo de trabalho {#regular-purging-of-workflow-instances}
 
 Minimizar o número de instâncias de fluxo de trabalho aumenta o desempenho do motor de workflow. Portanto, você pode remover regularmente do repositório as instâncias de fluxo de trabalho concluídas ou em execução.
 
-Configure a **Configuração de limpeza de fluxos de trabalho do Adobe Granite** para remover instâncias de fluxo de trabalho de acordo com sua idade e status. Você também pode remover as instâncias de fluxo de trabalho de todos os modelos ou de um modelo específico.
+Configurar **Configuração de limpeza de fluxo de trabalho do Adobe Granite** para remover instâncias de fluxo de trabalho de acordo com sua idade e status. Você também pode remover as instâncias de fluxo de trabalho de todos os modelos ou de um modelo específico.
 
-Você também pode criar várias configurações do serviço para remover as instâncias de fluxo de trabalho que satisfaçam critérios diferentes. Por exemplo, crie uma configuração que remova as instâncias de um modelo de fluxo de trabalho específico quando elas estiverem em execução por muito mais tempo do que o esperado. Crie outra configuração que remova todos os fluxos de trabalho concluídos após um determinado número de dias para minimizar o tamanho do repositório.
+Você também pode criar várias configurações do serviço para remover as instâncias de fluxo de trabalho que satisfaçam critérios diferentes. Por exemplo, crie uma configuração que remova as instâncias de um modelo de fluxo de trabalho específico quando elas estiverem em execução por muito mais tempo do que o esperado. Crie outra configuração que remova todos os fluxos de trabalho concluídos após alguns dias para minimizar o tamanho do repositório.
 
 Para configurar o serviço, você pode definir os arquivos de configuração do OSGi. Consulte [Arquivos de configuração do OSGi](/help/implementing/deploying/configuring-osgi.md). A tabela a seguir descreve as propriedades necessárias para qualquer método.
 
@@ -177,7 +186,7 @@ Para configurar o serviço, você pode definir os arquivos de configuração do 
 
 ## Uso de variáveis de fluxo de trabalho para armazenamentos de dados de propriedade do cliente {#using-workflow-variables-customer-datastore}
 
-Os dados processados por fluxos de trabalho são armazenados no armazenamento fornecido pela Adobe (JCR). Esses dados podem ser de natureza sensível. É possível salvar todos os metadados/dados definidos pelo usuário em seu próprio armazenamento gerenciado, em vez de usar o armazenamento fornecido pela Adobe. Essas seções descrevem como configurar essas variáveis para armazenamento externo.
+Os dados processados por fluxos de trabalho são armazenados no armazenamento fornecido pela Adobe (JCR). Esses dados podem ser de natureza sensível. Você pode salvar todos os metadados/dados definidos pelo usuário em seu próprio armazenamento gerenciado, em vez do armazenamento fornecido pelo Adobe. Essas seções descrevem como configurar essas variáveis para armazenamento externo.
 
 ### Definir o modelo para usar o armazenamento externo de metadados {#set-model-for-external-storage}
 
