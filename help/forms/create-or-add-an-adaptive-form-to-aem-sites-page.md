@@ -4,15 +4,18 @@ description: Descubra como criar ou adicionar facilmente um formulário adaptáv
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 6b38601e9bd29c71e5f70b46d2fa55a928851adc
+source-git-commit: 4d32a1768a97505ec2e7288904dde0c9120041a7
 workflow-type: tm+mt
-source-wordcount: '3182'
+source-wordcount: '3196'
 ht-degree: 0%
 
 ---
 
 
 # Criar ou adicionar um formulário adaptável à página do AEM Sites {#create-or-add-an-adaptive-form-to-aem-sites-page}
+
+|Cuidado|[!BADGE documentação de pré-lançamento]{type=Caution tooltip="Status amarelo"}
+<span class="preview"> Esta é a documentação de pré-lançamento e está sujeita a alterações.</span>
 
 Com o AEM Forms, você pode incorporar facilmente formulários adaptáveis em suas páginas da Web. Isso permite que seus visitantes preencham e enviem formulários de maneira conveniente sem nunca sair da página em que estão. Ao fazer isso, eles podem se envolver facilmente com outros elementos do site enquanto interagem ativamente com o formulário.
 
@@ -122,7 +125,7 @@ Para ativar a funcionalidade completa do componente de Contêiner adaptável do 
 
 +++
 
-+++ Ativar **[!UICONTROL Contêiner adaptável do Forms]
++++ Ativar contêiner adaptável do Forms
 
 Para habilitar [!UICONTROL Contêiner adaptável do Forms] componente na política do modelo, execute as seguintes etapas:
 
@@ -246,7 +249,7 @@ Você pode usar o serviço de Preenchimento do modelo de dados de formulário pa
 
 ### Usar o serviço Preenchimento prévio de rascunho do Forms Portal {#forms-portal-prefill-service}
 
-Você pode usar o serviço Preenchimento prévio de rascunho do portal do Forms para preencher previamente os campos de um formulário usando um rascunho do formulário adaptável salvo. Antes de usar o serviço Preenchimento prévio de rascunho do Forms Portal, verifique [Os componentes adaptáveis do Forms Portal são ativados e configurados ](configure-forms-portal.md#configure-azure-storage-for-adaptive-forms-configure-azure-storage-adaptive-forms) para o seu ambiente.
+Você pode usar o serviço Preenchimento prévio de rascunho do portal do Forms para preencher previamente os campos de um formulário usando um rascunho do formulário adaptável salvo. Antes de usar o serviço Preenchimento prévio de rascunho do Forms Portal, verifique se [Os componentes adaptáveis do Forms Portal são ativados e configurados](configure-forms-portal.md#configure-azure-storage-for-adaptive-forms-configure-azure-storage-adaptive-forms) para o seu ambiente.
 
 1. Abra o editor de páginas do AEM Sites ou o Fragmento de experiência que contém o Formulário adaptável.
 1. Abra as propriedades da página e defina a Configuração na nuvem.
