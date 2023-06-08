@@ -4,7 +4,7 @@ description: Saiba como criar e gerenciar projetos de tradução automática e h
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 05723d602362fd8fe8ed2318d42a669f00f79f87
+source-git-commit: d3194e646b326009dc204838ac74fc880952f286
 workflow-type: tm+mt
 source-wordcount: '4086'
 ht-degree: 99%
@@ -311,7 +311,7 @@ A tabela a seguir descreve cada status que um trabalho ou um item no trabalho po
 
 | Status | Descrição |
 |---|---|
-| **Rascunho** | O trabalho de tradução não foi iniciado. Os trabalhos de tradução estarão no status de **Rascunho**** ao serem criados. |
+| **Rascunho** | O trabalho de tradução não foi iniciado. Os trabalhos de tradução estão em **Rascunho** quando forem criadas. |
 | **Enviado** | Os arquivos no trabalho de tradução têm esse status quando são enviados com sucesso para o serviço de tradução. Esse status pode ser ativado após os comandos **Escopo da solicitação** ou **Iniciar** serem executados. |
 | **Escopo solicitado** | Para o fluxo de trabalho de tradução humana, os arquivos no trabalho são enviados ao fornecedor de tradução para definição do escopo. Este status aparece após o comando **Solicitar escopo** ser executado.  |
 | **Escopo concluído** | O fornecedor definiu o escopo do trabalho de tradução. |
