@@ -3,9 +3,9 @@ title: Configuração do OSGi para o Adobe Experience Manager as a Cloud Service
 description: Configuração OSGi com valores secretos e valores específicos do ambiente
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 26ca2addb14f62588035323ce886ae890919b759
+source-git-commit: 9ec45753f56d0576e75f148ca0165c0ccd621f23
 workflow-type: tm+mt
-source-wordcount: '3312'
+source-wordcount: '3323'
 ht-degree: 1%
 
 ---
@@ -136,7 +136,7 @@ Há três variedades de valores de configuração OSGi que podem ser usadas com 
 
 O caso comum de OSGi usa valores de configuração OSGi em linha. As configurações específicas do ambiente são usadas somente para casos de uso específicos em que um valor difere entre ambientes de desenvolvimento.
 
-![](assets/choose-configuration-value-type_res1.png)
+![Árvore decisória sobre como usar o tipo de valor de configuração apropriado](assets/choose-configuration-value-type_res1.png)
 
 As configurações específicas do ambiente estendem as configurações OSGi tradicionais definidas estaticamente que contêm valores em linha, fornecendo a capacidade de gerenciar os valores de configuração do OSGi externamente por meio da API do Cloud Manager. É importante entender quando a abordagem comum e tradicional de definir valores em linha e armazená-los no Git deve ser usada, em vez de abstrair os valores em configurações específicas do ambiente.
 
@@ -265,8 +265,7 @@ Os valores das variáveis não devem exceder 2048 caracteres.
 >1. Os clientes não devem fazer referência a variáveis com o prefixo `INTERNAL_` ou `ADOBE_` também.
 >
 >1. Variáveis de ambiente com o prefixo `AEM_` são definidos pelo produto como API pública para serem usados e definidos pelos clientes.
-   >   Embora os clientes possam usar e definir variáveis de ambiente começando com o prefixo `AEM_` eles não devem definir suas próprias variáveis com esse prefixo.
-
+>   Embora os clientes possam usar e definir variáveis de ambiente começando com o prefixo `AEM_` eles não devem definir suas próprias variáveis com esse prefixo.
 
 ### Valores padrão {#default-values}
 
@@ -317,7 +316,7 @@ Se uma propriedade OSGi exigir valores diferentes para autor e publicação:
 * Separado `config.author` e `config.publish` As pastas OSGi devem ser usadas, conforme descrito na seção [Seção Resolução do modo de execução](#runmode-resolution).
 * Há duas opções para criar os nomes de variáveis independentes que devem ser usadas:
    * a primeira opção, que é recomendada: em todas as pastas OSGi (como `config.author` e `config.publish`) declarado para definir valores diferentes, use o mesmo nome de variável. Por exemplo
-      `$[env:ENV_VAR_NAME;default=<value>]`, em que o padrão corresponde ao valor padrão desse nível (autor ou publicação). Ao definir a variável de ambiente via [API do Cloud Manager](#cloud-manager-api-format-for-setting-properties) ou por meio de um cliente, diferencie os níveis usando o parâmetro &quot;serviço&quot;, conforme descrito neste [Documentação de referência da API](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/). O parâmetro &quot;service&quot; vinculará o valor da variável ao nível OSGi apropriado. Pode ser &quot;autor&quot; ou &quot;publicar&quot; ou &quot;pré-visualização&quot;.
+     `$[env:ENV_VAR_NAME;default=<value>]`, em que o padrão corresponde ao valor padrão desse nível (autor ou publicação). Ao definir a variável de ambiente via [API do Cloud Manager](#cloud-manager-api-format-for-setting-properties) ou por meio de um cliente, diferencie os níveis usando o parâmetro &quot;serviço&quot;, conforme descrito neste [Documentação de referência da API](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/). O parâmetro &quot;service&quot; vinculará o valor da variável ao nível OSGi apropriado. Pode ser &quot;autor&quot; ou &quot;publicar&quot; ou &quot;pré-visualização&quot;.
    * a segunda opção, que é declarar variáveis distintas usando um prefixo, como `author_<samevariablename>` e `publish_<samevariablename>`
 
 ### Exemplos de configuração {#configuration-examples}
