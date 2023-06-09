@@ -2,9 +2,9 @@
 title: Configuração do IMS para uso na integração com o Adobe Target
 description: Saiba mais sobre a configuração do IMS para uso na integração com o Adobe Target
 exl-id: b5474b70-bedc-4cc9-ad47-89dcb2415e3a
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 21496a52fbe3caa08c606ddaeb85481a9d416b3d
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '863'
 ht-degree: 100%
 
 ---
@@ -72,9 +72,9 @@ Abra o Adobe Developer Console para criar um Projeto com o Adobe Target que o AE
 1. Quaisquer projetos que você tiver serão mostrados. Selecione **Criar novo projeto** - a localização e utilização dependerão:
 
    * Se você ainda não tiver um projeto, **Criar novo projeto** estará no centro, na parte inferior.
-      ![Criar novo projeto - Primeiro projeto](assets/integration-target-ims-02.png)
+     ![Criar novo projeto - Primeiro projeto](assets/integration-target-ims-02.png)
    * Caso já tenha projetos existentes, eles serão listados e **Criar novo projeto** estará no canto superior direito.
-      ![Criar novo projeto - Vários projetos](assets/integration-target-ims-03.png)
+     ![Criar novo projeto - Vários projetos](assets/integration-target-ims-03.png)
 
 
 1. Selecione **Adicionar ao projeto** e, em seguida, **API**:
@@ -87,7 +87,7 @@ Abra o Adobe Developer Console para criar um Projeto com o Adobe Target que o AE
    >
    >Se estiver inscrito no Adobe Target, mas ele não estiver listado, verifique os [Pré-requisitos](#prerequisites).
 
-   ![](assets/integration-target-ims-12.png)
+   ![Selecione Adobe Target](assets/integration-target-ims-12.png)
 
 1. **Fazer upload de sua chave pública**, e quando terminar, continue com **Próximo**:
 
@@ -105,7 +105,6 @@ Abra o Adobe Developer Console para criar um Projeto com o Adobe Target que o AE
    >
    >* Adobe Target Standard - somente o **Espaço de trabalho padrão** está disponível
    >* Adobe Target Premium - todos os espaços de trabalho disponíveis são listados, conforme mostrado abaixo
-
 
    ![Selecione perfis de produto e salve a API configurada](assets/integration-target-ims-16.png)
 
@@ -185,7 +184,6 @@ Para confirmar que a configuração está funcionando como esperado:
    Por exemplo:
 
    * `https://localhost:4502/libs/cq/adobeims-configuration/content/configurations.html`
-
 
 1. Selecione sua configuração.
 1. Selecione **Verificar integridade** na barra de ferramentas, seguido por **Verificar**.
