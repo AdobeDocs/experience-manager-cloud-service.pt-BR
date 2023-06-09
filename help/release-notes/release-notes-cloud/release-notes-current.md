@@ -3,10 +3,10 @@ title: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud S
 description: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 3209b3098544275bd31ee19842bef0eb2e7a29d8
+source-git-commit: d4d44f452406e452372e409c6594ef4a256b9682
 workflow-type: tm+mt
-source-wordcount: '1049'
-ht-degree: 41%
+source-wordcount: '1095'
+ht-degree: 31%
 
 ---
 
@@ -16,7 +16,7 @@ A seção a seguir descreve as notas da versão de recurso atual (mais recente) 
 
 >[!NOTE]
 >
->A partir daqui, você pode navegar até as notas de versão anteriores; por exemplo, as de 2021, 2022 e assim por diante.
+>Aqui, você pode navegar até as notas de versão de versões anteriores, como 2021 ou 2022.
 >
 >Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=pt-BR) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
 
@@ -54,25 +54,29 @@ Assista ao vídeo Visão geral da versão de abril de 2023 que exibe um resumo d
 * [Aprimoramentos na experiência de pesquisa](/help/assets/search-assets.md#aftersearch) - Agora você pode executar rapidamente as seguintes operações nos ativos exibidos nos resultados da pesquisa:
 
    * Criar um workflow
-   * Criar uma nova versão
+   * Criar uma versão
    * Relacionar ou não relacionar ativos
 
      Não é necessário navegar até o local do ativo e visualizar suas propriedades para executar essas operações.
 
 * Melhorias na usabilidade das facetas de Pesquisa de cores - O campo de entrada para valores de cor agora é editável e os resultados da pesquisa são atualizados somente quando você sai do seletor de cores.
 
-* Lançamento de um novo suporte de protocolo (DASH, Dynamic Adaptive Streaming over HTTP) para a transmissão adaptável na entrega de vídeos do Dynamic Media (com CMAF habilitado):
+* Novo suporte de protocolo iniciado (DASH - Dynamic Adaptive Streaming por HTTP) para transmissão adaptável na entrega de vídeo do Dynamic Media (com o CMAF ativado):
    * A transmissão adaptável (DASH/HLS) garante uma melhor experiência de exibição de vídeos ao usuário final
    * DASH é o protocolo internacional padrão para transmissão de vídeo adaptável e é amplamente adotado no setor
    * Disponível em todas as regiões, para ser ativado pelo tíquete de suporte
 
-* Dynamic Media _Instantâneo_ : experimente com imagens de teste ou URLs Dynamic Media para ver a saída de diferentes modificadores de imagem e otimizações de Imagem inteligente para tamanho de arquivo (com entrega de WebP e AVIF), largura de banda da rede e Proporção de pixels do dispositivo. Consulte [Instantâneo do Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html).
+* Dynamic Media _Instantâneo_ - Experimente com imagens de teste ou URLs Dynamic Media, para ver a saída de diferentes modificadores de imagem e avaliar as otimizações de Imagem inteligente para o tamanho do arquivo (com entrega de WebP e AVIF), largura de banda da rede e Proporção de pixels do dispositivo. Consulte [Instantâneo do Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html).
+
+### Recurso no [!DNL Assets] pré-lançamento {#prerelease-feature-assets}
+
+* Dynamic Media - A interface de alguns campos relacionados ao Corte inteligente em um Perfil de imagem agora é atualizada para refletir as diretrizes atuais para a definição de um Corte inteligente. Consulte [Opções de corte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=en#crop-options).
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Novos recursos disponíveis em [!DNL Forms] {#new-features-available-in-channel}
 
-* **[Enviar formulários adaptáveis para o Microsoft SharePoint e o Microsoft OneDrive](/help/forms/configuring-submit-actions.md)**: melhore o processo do usuário empresarial, agilizando o lançamento de novos formulários e permitindo o armazenamento de dados enviados em ferramentas usadas diariamente, como o site do Microsoft SharePoint ou a pasta do OneDrive.
+* **[Enviar Forms adaptável ao Microsoft® SharePoint e Microsoft® OneDrive](/help/forms/configuring-submit-actions.md)**: aumente a agilidade do usuário empresarial para que você possa iniciar novos formulários rapidamente e armazenar dados enviados em ferramentas diárias que eles usam, como o site do Microsoft® SharePoint ou a pasta do OneDrive.
 
 ### Recursos no pré-lançamento do [!DNL Forms] {#prerelease-features-forms}
 
@@ -84,13 +88,13 @@ Assista ao vídeo Visão geral da versão de abril de 2023 que exibe um resumo d
 
      >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
-* [Integração e conformidade aprimoradas com o Adobe Acrobat Sign](/help/forms/adobe-sign-integration-adaptive-forms.md): o AEM Forms agora se integra ao Adobe Acrobat Sign para o governo, fornecendo um nível avançado de conformidade e segurança para assinaturas eletrônicas com envios de formulários adaptáveis para contas associadas ao governo (departamentos e agências governamentais).
+* [Integração e conformidade aprimoradas com o Adobe Acrobat Sign](/help/forms/adobe-sign-integration-adaptive-forms.md): o AEM Forms agora se integra ao Adobe Acrobat Sign para o governo. Essa integração oferece um nível avançado de conformidade e segurança para assinaturas eletrônicas com envios de formulários adaptáveis para contas associadas ao governo (departamentos e agências governamentais).
 
-  A integração com o Adobe Acrobat Sign for Government permite que nossos parceiros e clientes governamentais usem assinaturas eletrônicas no Adaptive Forms para algumas das linhas de negócios mais críticas e confidenciais. Essa camada adicional de segurança garante que todas as assinaturas eletrônicas sejam totalmente compatíveis com a conformidade Moderada do FedRAMP, proporcionando tranquilidade aos clientes governamentais.
+  A integração com o Adobe Acrobat Sign para o governo permite que os parceiros do Adobe e os clientes do governo usem assinaturas eletrônicas no Adaptive Forms para algumas das linhas de negócios mais críticas e confidenciais. Essa camada adicional de segurança garante que todas as assinaturas eletrônicas sejam totalmente compatíveis com a conformidade Moderada do FedRAMP, proporcionando tranquilidade aos clientes governamentais Adobe.
 
-* Aprimorar o tratamento de erros com manipuladores de erros personalizados no editor de regras: agora é possível chamar uma função personalizada (usando a Biblioteca do cliente) em resposta a um erro retornado por um serviço externo e fornecer uma resposta personalizada aos usuários finais ou realizar ações específicas para erros retornados por um serviço. Por exemplo, você pode chamar um fluxo de trabalho personalizado no backend para códigos de erro específicos ou informar ao cliente que o serviço está inativo.
+* Tratamento de erros aprimorado com manipuladores de erros personalizados no editor de regras. Agora é possível chamar uma função personalizada (usando a Biblioteca do cliente) em resposta a um erro retornado por um serviço externo e fornecer uma resposta personalizada aos usuários finais. Ou você pode realizar ações específicas para erros retornados por um serviço. Por exemplo, você pode chamar um fluxo de trabalho personalizado no backend para códigos de erro específicos ou informar ao cliente que o serviço está inativo.
 
-  Isso ajuda a melhorar a capacidade geral de manipulação de erros, introduzindo respostas de erro baseadas em padrões, que são compatíveis com versões anteriores de manipuladores de erro OOTB, com maior flexibilidade e controle.
+  Essa funcionalidade ajuda a melhorar a capacidade geral de tratamento de erros, introduzindo respostas de erro baseadas em padrões que são compatíveis com versões anteriores de manipuladores de erro OOTB, com maior flexibilidade e controle.
 
 ### Programa de adoção antecipada de formulários adaptáveis headless {#forms-early-adopter}
 
@@ -99,7 +103,7 @@ Use formulários adaptáveis hedless para permitir que seus desenvolvedores crie
 * criar formulários multicanal de alta qualidade na linguagem de programação de sua escolha
 * integrar formulários nativamente a seus aplicativos móveis e de desktop, sites e aplicativos de bate-papo
 * reutilizar os componentes de interface de sua propriedade com aplicativos de formulários
-* aproveitar o potencial do Adobe Experience Manager Forms
+* use o poder do Adobe Experience Manager Forms
 
 Você pode enviar um email para `aem-forms-headless@adobe.com` do seu ID de e-mail oficial para participar do programa de adoção antecipada.
 
@@ -107,7 +111,7 @@ Você pode enviar um email para `aem-forms-headless@adobe.com` do seu ID de e-ma
 
 ### Novidades {#what-is-new-foundation}
 
-* Regiões de Publicação Adicionais: Os Clientes do Sites podem licenciar até três regiões de publicação, além da região principal. O tráfego é roteado para farms de publicação adicionais, o que resulta na redução da latência de determinadas solicitações, bem como no aumento da resiliência contra interrupções regionais. Entre em contato com o Gerente de conta do Adobe para obter informações sobre licenciamento [Regiões de publicação adicionais](/help/operations/additional-publish-regions.md) para seus programas.
+* Regiões de Publicação Adicionais: Os Clientes do Sites podem licenciar até três regiões de publicação, além da região principal. O tráfego é roteado para farms de publicação adicionais, o que resulta na redução da latência de determinadas solicitações e no aumento da resiliência contra interrupções regionais. Entre em contato com o Gerente de conta do Adobe para obter informações sobre licenciamento [Regiões de publicação adicionais](/help/operations/additional-publish-regions.md) para seus programas.
 
 ## Notas da versão de manutenção {#maintenance}
 
