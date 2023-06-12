@@ -2,9 +2,9 @@
 title: Diretrizes de desenvolvimento do AEM as a Cloud Service
 description: Conheça as diretrizes para desenvolvimento no AEM as a Cloud Service e as principais diferenças em relação ao AEM local e ao AEM no AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 5a8d66c2ca2bed664d127579a8fdbdf3aa45c910
+source-git-commit: 6a26006a20ed2f1d18ff376863b3c8b149de1157
 workflow-type: tm+mt
-source-wordcount: '2591'
+source-wordcount: '2602'
 ht-degree: 4%
 
 ---
@@ -71,9 +71,11 @@ Além de fornecer tempos limite, também deve ser implementado um tratamento ade
 
 O AEM as a Cloud Service é compatível apenas com a interface para toque para código de cliente de terceiros. A interface clássica não está disponível para personalização.
 
-## Evitar binários nativos {#avoid-native-binaries}
+## Não há binários nativos ou bibliotecas nativas {#avoid-native-binaries}
 
-O código não poderá baixar binários no tempo de execução nem modificá-los. Por exemplo, não será possível descompactar `jar` ou `tar` arquivos.
+Os binários e bibliotecas nativos não devem ser implantados ou instalados em ambientes de nuvem.
+
+Além disso, o código não deve tentar baixar binários nativos ou extensões java nativas (por exemplo, JNI) no tempo de execução.
 
 ## Nenhum binário de transmissão por meio do AEM as a Cloud Service {#no-streaming-binaries}
 
@@ -128,7 +130,11 @@ Não deixe o log no nível de log DEBUG por mais tempo do que o necessário, poi
 
 É possível definir níveis de log discretos para os diferentes ambientes AEM usando o direcionamento de configuração OSGi baseada no modo de execução, se for desejável sempre fazer logon em `DEBUG` durante o desenvolvimento. Por exemplo:
 
-Ambiente | | Localização da configuração do OSGi por modo de execução | `org.apache.sling.commons.log.level` valor da propriedade | | - | - | - | | Desenvolvimento | /apps/example/config/org.apache.sling.commons.log.LogManager.fatory.config~example.cfg.json | DEPURAÇÃO | | Fase | /apps/example/config.stage/org.apache.sling.commons.log.LogManager.fatory.config~example.cfg.json | AVISO | | Produção | /apps/example/config.prod/org.apache.sling.commons.log.LogManager.fatory.config~example.cfg.json | ERRO |
+| Ambiente | Localização da configuração do OSGi por modo de execução | `org.apache.sling.commons.log.level` valor da propriedade |
+| - | - | - |
+| Desenvolvimento | /apps/example/config/org.apache.sling.commons.log.LogManager.fatory.config~example.cfg.json | DEPURAR |
+| Fase | /apps/example/config.stage/org.apache.sling.commons.log.LogManager.fatory.config~example.cfg.json | AVISO |
+| Produção | /apps/example/config.prod/org.apache.sling.commons.log.LogManager.fatory.config~example.cfg.json | ERRO |
 
 Uma linha no arquivo de depuração geralmente começa com DEBUG e, em seguida, fornece o nível de log, a ação do instalador e a mensagem de log. Por exemplo:
 
