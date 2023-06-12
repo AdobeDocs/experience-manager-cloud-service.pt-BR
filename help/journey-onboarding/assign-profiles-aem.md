@@ -7,7 +7,7 @@ exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
 source-git-commit: fd14d9f88fed4ef0f90b5dd0c92c53b1a298bd76
 workflow-type: tm+mt
 source-wordcount: '805'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 96%
 >[!CONTEXTUALHELP]
 >id="assets_user_entitlements"
 >title="Atribuir perfis de produto do AEM"
->abstract="Você não está autorizado a usar o Experience Manager Assets. Entre em contato com seu administrador."
+>abstract="Você não tem autorização para usar o Experience Manager Assets. Entre em contato com o administrador."
 
 Nesta parte da [jornada de integração,](overview.md) você aprenderá a conceder à sua equipe acesso ao AEM usando perfis de produto do AEM.
 
