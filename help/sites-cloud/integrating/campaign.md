@@ -1,24 +1,30 @@
 ---
-title: Integração ao Adobe Campaign
+title: Integração do AEM as a Cloud Service com o Adobe Campaign
 description: Saiba mais sobre o suporte do AEM as a Cloud Service para integrações com o Adobe Campaign.
 feature: Administering
 role: Admin
 exl-id: 23874955-bdf3-41be-8a06-53d2afdd7f2b
-source-git-commit: b107d66803fea2422a681763314bcfaed4a729db
+source-git-commit: 6d391ea86a950a3777311543492b5b89813ae377
 workflow-type: tm+mt
-source-wordcount: '116'
-ht-degree: 17%
+source-wordcount: '176'
+ht-degree: 6%
 
 ---
 
 
-# Integração ao Adobe Campaign {#integrating-campaign}
+# Integração do AEM as a Cloud Service com o Adobe Campaign {#integrating-campaign}
 
 Saiba mais sobre o suporte do AEM as a Cloud Service para integrações com o Adobe Campaign.
 
+>[!NOTE]
+>
+>Este documento descreve a integração do Adobe Campaign com o AEM as a Cloud Service, a solução de nuvem-nativa do AEM.
+>
+>Para obter detalhes sobre a integração do Adobe Campaign com AEM 6.5, a solução AEM no local ou hospedada pela AMS, [consulte este documento.](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaign.html)
+
 ## Integração com o Adobe Campaign Classic {#acc}
 
-Há várias versões do Adobe Campaign Classic (ACC). O suporte para integração com o AEMaaCS depende da versão do ACC implementada.
+Há várias versões do Adobe Campaign Classic (ACC). O suporte para integração com o AEM as a Cloud Service depende da versão do ACC que você implementou.
 
 | Versão do ACC | Integração com o AEMaaCS |
 |---|---|
@@ -30,4 +36,4 @@ Há várias versões do Adobe Campaign Classic (ACC). O suporte para integraçã
 
 ## Integração com o Adobe Campaign Standard {#acs}
 
-O AEM as a Cloud Service não oferece suporte à integração com o Adobe Campaign Standard (ACS).
+O AEM as a Cloud Service não oferece suporte à integração com o [Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard.html) (ACS).
