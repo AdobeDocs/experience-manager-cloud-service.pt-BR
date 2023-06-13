@@ -3,9 +3,9 @@ title: Introdução à criação no AEM como um CMS headless
 description: Uma introdução ao uso dos recursos do Adobe Experience Manager as a Cloud Service como um CMS headless para criar conteúdo para seu projeto.
 exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
 source-git-commit: e03c067f4337bbf0e98cb4015b9be4fc99fc17c1
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '665'
+ht-degree: 100%
 
 ---
 
