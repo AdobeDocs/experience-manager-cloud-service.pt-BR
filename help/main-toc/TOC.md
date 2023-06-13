@@ -79,7 +79,7 @@ ht-degree: 98%
       + [Notas de versão atuais](/help/implementing/cloud-manager/release-notes/current.md)
       + 2023 {#2023}
          + [Notas de versão 2023.5.0](/help/implementing/cloud-manager/release-notes/2023/2023-5-0.md)
-         + [Notas da versão 2023.4.0](/help/implementing/cloud-manager/release-notes/2023/2023-4-0.md)
+         + [Notas de versão 2023.4.0](/help/implementing/cloud-manager/release-notes/2023/2023-4-0.md)
          + [Notas de versão 2023.3.0](/help/implementing/cloud-manager/release-notes/2023/2023-3-0.md)
          + [Notas de versão 2023.2.0](/help/implementing/cloud-manager/release-notes/2023/2023-2-0.md)
          + [Notas de versão 2023.1.0](/help/implementing/cloud-manager/release-notes/2023/2023-1-0.md)

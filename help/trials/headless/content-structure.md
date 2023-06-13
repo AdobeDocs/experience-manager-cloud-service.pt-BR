@@ -7,7 +7,7 @@ exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 source-git-commit: ac94981e477e1fe8b883460ed9be009b4c1c088d
 workflow-type: tm+mt
 source-wordcount: '1019'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -34,13 +34,13 @@ ht-degree: 90%
 
 O console de modelos de fragmento de conteúdo é aberto em uma nova guia. Considere o console de modelos de fragmento de conteúdo como uma biblioteca de modelos, onde você cria novos modelos e gerencia os modelos existentes.
 
-Para nosso exemplo, criaremos um modelo que representa a estrutura de dados de uma viagem que está em um site de viagens. Nos referiremos a uma viagem usando esse modelo como um **Aventura**.
+Para nosso exemplo, criaremos um modelo que representa a estrutura de dados de uma viagem que está em um site de viagens. Vamos nos referir a uma viagem nesse modelo como uma **Aventura**.
 
 1. Clique no botão **Criar** na parte superior direita da tela para começar a criar um modelo de fragmento de conteúdo.
 
 1. O assistente Criar modelo é iniciado e o orientará na criação do modelo. Forneça as informações obrigatórias.
 
-   * **Título do modelo** - Este é um rótulo breve do modelo e geralmente indica a finalidade do modelo. Chamaremos nosso novo modelo `Adventure`.
+   * **Título do modelo**: trata-se de uma breve descrição do modelo, que geralmente indica sua finalidade. Chamaremos nosso novo modelo `Adventure`.
    * **Ativar modelo**: essa opção está marcada por padrão e deve permanecer assim para que você possa criar fragmentos de conteúdo com base nesse modelo.
 
 1. Depois que os campos obrigatórios forem preenchidos, clique em **Criar** no canto superior esquerdo para criar o modelo.
@@ -51,13 +51,13 @@ Para nosso exemplo, criaremos um modelo que representa a estrutura de dados de u
 
 ## Usar o Editor de modelos {#configure-model}
 
-Agora temos um modelo chamado **Aventura**, mas não tem detalhes como duração, destino, atividades etc. Antes de usar o modelo, é necessário definir a estrutura dos seus dados.
+Agora temos um modelo chamado **Aventura**, mas sem detalhes como duração, destino, atividades etc. Antes de usar o modelo, é necessário definir a estrutura dos seus dados.
 
 O editor de modelos de fragmento de conteúdo é onde você configura os tipos de dados e as propriedades que definem o conteúdo do modelo.
 
 >[!TIP]
 >
->É importante seguir os esquemas de nomenclatura nas instruções a seguir, pois nos referiremos a esses nomes específicos em módulos posteriores.
+>É importante seguir os esquemas de nomenclatura das instruções a seguir, pois mencionaremos esses nomes específicos em módulos posteriores.
 
 1. Arraste um campo **Texto em linha única** do painel **Tipos de dados** à direita do editor e solte-o no modelo de fragmento de conteúdo.
 
@@ -76,11 +76,11 @@ Prossiga para a próxima seção para adicionar os campos necessários para conc
 
 ## Adicionar campos ao modelo {#additional-fields}
 
-Já existe um campo para o título da aventura. Agora é necessário adicionar campos para capturar a descrição, o preço e uma imagem representativa da aventura.
+Já existe um campo para o título da aventura. Agora, é necessário adicionar campos para capturar a descrição, o preço e uma imagem representativa da aventura.
 
 >[!TIP]
 >
->O modelo **Aventura** é baseado no site de amostra do WKND para AEM. Você pode [visite o site aqui](https://wknd.site/us/en/adventures/yosemite-backpacking.html) para ver o conteúdo que usa o **Aventura** modelo.
+>O modelo **Aventura** é baseado no site de amostra do WKND para AEM. Você pode [acessar o site aqui](https://wknd.site/us/en/adventures/yosemite-backpacking.html) para ver o conteúdo que usa o modelo **Aventura**.
 
 Siga as mesmas etapas descritas acima para acrescentar esses campos adicionais. A única diferença são as propriedades que você precisa definir.
 

@@ -5,7 +5,7 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: 66c77dd90fb220993e113fb3c4cfbaec879c1dee
 workflow-type: tm+mt
 source-wordcount: '181'
-ht-degree: 82%
+ht-degree: 85%
 
 ---
 
@@ -15,7 +15,7 @@ A seção a seguir descreve as notas de versão técnicas para a versão de manu
 
 ## Versão 12142 {#release-12142}
 
-Veja abaixo um resumo das melhorias contínuas da versão de manutenção 12142, lançada publicamente em 31 de maio de 2023. Esta versão de manutenção é uma atualização da versão de manutenção anterior, a 11983.
+Veja abaixo um resumo das melhorias contínuas da versão de manutenção 12142, lançada publicamente em 31 de maio de 2023. Esta versão de manutenção é uma atualização da versão de manutenção anterior a 11983.
 
 A ativação de recursos desta versão de manutenção fornecerá o conjunto completo de recursos. Consulte as [notas de versão atuais](/help/release-notes/release-notes-cloud/release-notes-current.md) para obter detalhes completos.
 

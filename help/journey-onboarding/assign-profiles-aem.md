@@ -7,7 +7,7 @@ exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
 source-git-commit: fd14d9f88fed4ef0f90b5dd0c92c53b1a298bd76
 workflow-type: tm+mt
 source-wordcount: '805'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -106,7 +106,7 @@ No entanto, se você quiser entender melhor como os autores e desenvolvedores us
 
 ## Recursos adicionais {#additional-resources}
 
-A seguir estão recursos adicionais e opcionais se você quiser ir além do conteúdo da jornada de integração.
+A seguir estão recursos adicionais e opcionais se quiser ir além do conteúdo da jornada de integração.
 
 * [Gerenciamento de produtos e acesso do usuário no Admin Console](/help/security/ims-support.md#managing-products-and-user-access-in-admin-console) - Saiba como usar o Admin Console para gerenciar o acesso dos usuários.
 * [Apresentação sobre como configurar o acesso ao AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=pt-BR) - Confira esta apresentação resumida para saber mais sobre como configurar usuários, grupos de usuários e perfis de produto do Adobe IMS no Admin Console.
