@@ -5,9 +5,9 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
 source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1419'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -144,7 +144,7 @@ Se você estiver interessado em como os autores de conteúdo acessam e usam o AE
 
 ## Recursos adicionais {#additional-resources}
 
-A seguir estão recursos adicionais e opcionais se você quiser ir além do conteúdo da jornada de integração.
+A seguir estão recursos adicionais e opcionais se quiser ir além do conteúdo da jornada de integração.
 
 * [Acessar repositórios](/help/implementing/cloud-manager/managing-code/accessing-repos.md) - Saiba como acessar e gerenciar o repositório Git usando o gerenciamento de conta Git por autoatendimento do Cloud Manager.
 * [Uso do Git com o Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md) - Saiba como usar os repositórios Git do Cloud Manager e como integrar seu próprio repositório Git local gerenciado pelo cliente com o Cloud Manager.
