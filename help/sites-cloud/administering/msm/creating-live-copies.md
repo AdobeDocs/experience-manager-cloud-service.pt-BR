@@ -5,9 +5,9 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 source-git-commit: 17d828f7813657aaeca49bfc87447c2bc24e712d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4322'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -91,7 +91,7 @@ Há diversas maneiras de criar uma Live Copy.
 É possível criar uma Live Copy de qualquer página ou ramificação. Ao criar a Live Copy, é possível especificar as configurações de implantação a serem usadas para sincronizar o conteúdo:
 
 * As configurações de implantação selecionadas se aplicam à página Live Copy e suas páginas secundárias.
-*  Se você não especificar nenhuma configuração de implantação, o MSM determinará quais configurações de implantação usar. Consulte [Especificação da configuração de implantação a ser usada](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use).
+* Se você não especificar nenhuma configuração de implantação, o MSM determinará quais configurações de implantação usar. Consulte [Especificação da configuração de implantação a ser usada](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use).
 
 É possível criar uma Live Copy de qualquer página:
 
@@ -139,7 +139,7 @@ Para criar uma Live Copy:
 
    >[!NOTE]
    >
-   >Uma caixa de diálogo de erro pode ser exibida com a mensagem &quot;Falha ao enviar o formulário&quot;. Isso acontece devido a um tempo limite de rede. No entanto, o processo para criar a live copy está em execução em segundo plano. Aguarde alguns minutos e verifique se as páginas da live copy foram criadas corretamente.
+   >Uma caixa de diálogo de erro pode ser exibida com a mensagem “Falha ao enviar o formulário”. Isso acontece devido a um tempo limite de rede. No entanto, o processo para criar a live copy está em execução em segundo plano. Aguarde alguns minutos e verifique se as páginas da live copy foram criadas corretamente.
 
 ### Criação de uma Live Copy de um site a partir de uma configuração de blueprint {#creating-a-live-copy-of-a-site-from-a-blueprint-configuration}
 
@@ -153,12 +153,12 @@ Se omitir algumas ramificações de idioma da Live Copy, você poderá adicioná
 
 Ao criar o site, forneça valores para as seguintes propriedades:
 
-* **Idiomas iniciais**: as ramificações de idioma da origem do blueprint a serem incluídas na Live Copy
-* **Capítulos iniciais**: as páginas secundárias das ramificações de idioma do blueprint a serem incluídas na Live Copy
+* **Idiomas iniciais**: as ramificações de idioma da origem do blueprint a serem incluídas na Live Copy.
+* **Capítulos iniciais**: as páginas secundárias das ramificações de idioma do blueprint a serem incluídas na Live Copy.
 * **Caminho de destino**: o local da página raiz do site Live Copy.
 * **Título**: o título da página raiz do site Live Copy.
-* **Nome**: (opcional) o nome do nó JCR que armazena a página raiz da Live Copy (o valor padrão é baseado no título)
-* **Proprietário do site**: (opcional) informações sobre o responsável pela Live Copy
+* **Nome**: (opcional) o nome do nó JCR que armazena a página raiz da Live Copy (o valor padrão é baseado no título).
+* **Proprietário do site**: (opcional) informações sobre o responsável pela Live Copy.
 * **Live Copy**: selecione essa opção para estabelecer uma relação dinâmica com o site de origem. Se essa opção não for selecionada, uma cópia do blueprint será criada, mas não será sincronizada com a origem na sequência.
 * **Configurações de implantação**: (opcional) selecione uma ou mais configurações de implantação a serem usadas para sincronizar a Live Copy. Por padrão, as configurações de implantação são herdadas do blueprint. Consulte [Especificar as configurações de implantação a serem usadas](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use) para obter mais detalhes.
 
@@ -201,7 +201,7 @@ As propriedades de uma página Live Copy mostram as seguintes informações sobr
 Para exibir as propriedades:
 
 1. No console do **Sites**, selecione a página Live Copy e abra as propriedades.
-1. Selecione a guia **Live Copy**. 
+1. Selecione a guia **Live Copy**.
 
    Por exemplo:
 
@@ -304,7 +304,7 @@ Sincronize uma Live Copy para extrair as alterações da origem para a Live Copy
 >A sincronização executa as configurações de implantação que usam o acionador [Na implantação](live-copy-sync-config.md#rollout-triggers).
 
 1. No console **Sites**, selecione a página da Live Copy e abra as propriedades.
-1. Abra a guia **Live Copy**. 
+1. Abra a guia **Live Copy**.
 1. Clique ou toque em **Sincronizar**.
 
    ![Botão Sincronizar](../assets/synchronize.png)
@@ -554,7 +554,7 @@ A redefinição afeta as alterações feitas nas propriedades da página, no sis
 #### Redefinir uma página Live Copy a partir das propriedades da página {#reset-a-live-copy-page-from-the-page-properties}
 
 1. No console do **Sites**, selecione a página Live Copy e selecione **Propriedades de exibição**.
-1. Abra a guia **Live Copy**. 
+1. Abra a guia **Live Copy**.
 1. Selecione **Redefinir** na barra de ferramentas.
 
    ![Botão de redefinição](../assets/reset.png)
@@ -635,7 +635,7 @@ Há implicações com relação ao local na árvore em que você usa **Desanexar
 Para desanexar uma Live Copy:
 
 1. No console do **Sites**, selecione a página Live Copy e clique ou toque em **Propriedades de exibição**.
-1. Abra a guia **Live Copy**. 
+1. Abra a guia **Live Copy**.
 1. Na barra de ferramentas, selecione **Desanexar**.
 
    ![Botão Desconectar](../assets/detach-button.png)
