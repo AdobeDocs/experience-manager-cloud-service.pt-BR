@@ -3,9 +3,9 @@ title: Criação de programas do sandbox
 description: Saiba como usar o Cloud Manager para criar seu próprio programa de sandbox para treinamentos, demonstrações, POCs ou outros fins de não produção.
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
 source-git-commit: b916bf5b252045120659600293e004fc34b96e7a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '464'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
@@ -25,23 +25,23 @@ Siga estas etapas para criar um programa de sandbox.
 
    ![Página de aterrissagem do Cloud Manager](assets/cloud-manager-my-programs.png)
 
-1. No assistente de criação de programas, selecione **Configurar uma sandbox** e forneça um nome de programa.
+1. No assistente Criar programa, selecione **Configurar uma sandbox** e forneça um nome de programa.
 
    ![Criação de tipo de programa](assets/create-sandbox.png)
 
-1. Opcionalmente, é possível adicionar uma imagem ao programa arrastando e soltando um arquivo de imagem na **Adicionar uma imagem de programa** direcione ou clique nela para selecionar uma imagem de um navegador de arquivos. Toque ou clique em **Continuar**.
+1. Opcionalmente, é possível adicionar uma imagem ao programa arrastando e soltando um arquivo de imagem no destino **Adicionar uma imagem de programa** ou clicando para selecionar uma imagem de um navegador de arquivos. Toque ou clique em **Continuar**.
 
    * A imagem serve apenas como o bloco na janela de visão geral do programa e ajuda a identificar o programa.
 
-1. No **Configurar sua sandbox** escolha quais soluções você deseja ativar no programa de sandbox, marcando as opções na caixa de diálogo **Soluções e complementos** tabela.
+1. Na caixa de diálogo **Configurar o sandbox**, escolha quais soluções você deseja habilitar no programa de sandbox, marcando as opções na tabela **Soluções e complementos**.
 
-   * Use as divisas ao lado dos nomes de solução para mostrar complementos adicionais e opcionais para as soluções.
+   * Use as divisas ao lado dos nomes das soluções para mostrar complementos adicionais e opcionais para as soluções.
 
-   * A variável **Sites** e **Assets** as soluções são sempre incluídas em programas de sandbox e não podem ser desmarcadas.
+   * As soluções **Sites** e **Assets** estão sempre incluídas em programas de sandbox e não podem ser desmarcadas.
 
    ![Selecionar soluções e complementos para uma sandbox](assets/sandbox-solutions-add-ons.png)
 
-1. Depois de selecionar as soluções e os complementos para seu programa de sandbox, toque em clique **Criar**.
+1. Depois de selecionar as soluções e complementos para seu programa de sandbox, toque em **Criar**.
 
 Você verá um cartão de novo programa de sandbox na página de aterrissagem com um indicador de status, conforme o processo de configuração avança.
 
