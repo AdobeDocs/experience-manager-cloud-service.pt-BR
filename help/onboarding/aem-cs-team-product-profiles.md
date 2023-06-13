@@ -3,9 +3,9 @@ title: Perfis de produto e de equipe do AEM as a Cloud Service
 description: Descubra como os perfis de produto e de equipe do AEM as a Cloud Service podem conceder e limitar o acesso às suas soluções licenciadas da Adobe.
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
 source-git-commit: 1e3130578b7e36e5ffd5ad7b04cc7981a95bb291
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '778'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ Os membros da sua equipe do AEM as a Cloud Service serão adicionados e atribuí
 
 >[!WARNING]
 >
->A variável **Administradores de AEM** o nome do perfil do produto não deve ser alterado. Alteração do nome da variável **Administradores de AEM** O perfil de produto removerá os direitos de administrador de todos os usuários atribuídos a esse perfil.
+>O nome do perfil do produto **Administradores do AEM** não deve ser alterado. A alteração do nome do perfil do produto **Administradores do AEM** removerá os direitos de administrador de todos os usuários atribuídos a esse perfil.
 
 >[!TIP]
 >
