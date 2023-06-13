@@ -3,9 +3,9 @@ title: Introdução ao Editor universal no AEM
 description: Saiba como obter acesso ao Editor universal e começar a instrumentar seu primeiro aplicativo do AEM para utilizá-lo.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 source-git-commit: de33ea3efed87170b081ea467f12a997e0d41a83
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '810'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -116,7 +116,7 @@ As conexões usadas no aplicativo são armazenadas como tags de `<meta>` no `<he
 * `<protocol>`: isso indica qual plug-in do serviço de persistência do Editor universal deve ser utilizado. Por exemplo: `aem`
 * `<url>`: esta é a URL do sistema no qual as alterações devem ser mantidas. Por exemplo: `http://localhost:4502`
 
-O identificador `adobe:aem:editor` representa a conexão para o Editor universal de Adobe.
+O identificador `adobe:aem:editor` representa a conexão do Editor universal da Adobe.
 
 `itemid`s usarão o prefixo `urn` para encurtar o identificador.
 
