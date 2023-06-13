@@ -5,9 +5,9 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: 86700cce-139f-451e-9c21-b38b6332f773
 source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '581'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -81,7 +81,7 @@ Se você estiver interessado em como desenvolvedores e gerentes de implantação
 
 ## Recursos adicionais {#additional-resources}
 
-A seguir estão recursos adicionais e opcionais se você quiser ir além do conteúdo da jornada de integração.
+A seguir estão recursos adicionais e opcionais se quiser ir além do conteúdo da jornada de integração.
 
 [Guia de início rápido sobre páginas de autoria](/help/sites-cloud/authoring/getting-started/quick-start.md) - Comece aqui para obter uma rápida visão geral dos fundamentos de autoria no AEM.
 [Jornada de autoria sem comando](/help/journey-headless/author/overview.md) - Se quiser criar conteúdo sem comando, siga esta introdução guiada.
