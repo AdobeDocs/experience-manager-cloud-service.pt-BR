@@ -3,9 +3,9 @@ title: Suporte IMS do Adobe Experience Manager as a Cloud Service
 description: Suporte IMS do Adobe Experience Manager as a Cloud Service
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
 source-git-commit: 1e3130578b7e36e5ffd5ad7b04cc7981a95bb291
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2054'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -57,8 +57,8 @@ Depois que um cliente existir como uma Organização do IMS, ele precisará conf
 ![Integração do IMS](/help/security/assets/ims2.png)
 
 1. O Administrador do sistema designado recebe um convite para fazer logon no Cloud Manager. Depois de fazer logon no Cloud Manager, os administradores do sistema podem optar por provisionar programas e ambientes do AEM ou navegar até o Admin Console para tarefas Administrativas.
-1. O Administrador do sistema alega que um domínio confirma a propriedade do respectivo domínio (por exemplo, acme.com)
-1. O Administrador do sistema configura os Diretórios de usuário
+1. O Administrador do sistema alega que um domínio confirma a propriedade do respectivo domínio (por exemplo, acme.com).
+1. O Administrador do sistema configura os Diretórios de usuário.
 1. O Administrador do sistema faz a configuração do IDP no Admin Console para definir o Logon único.
 1. O Administrador do AEM gerencia os grupos locais, permissões e privilégios, como de costume.
 
@@ -142,7 +142,7 @@ Você verá uma lista de instâncias existentes:
 
 Em cada instância de Contexto do Produto, haverá instâncias que abrangem os serviços de Autor ou Publicação em todos os ambientes de Produção, Preparo ou Desenvolvimento. Cada instância será associada às funções Perfis de produto ou Cloud Manager. Esses perfis de produto são usados para atribuir acesso a usuários e grupos com os privilégios necessário.
 
-A variável **Administradores do AEM_xxx** perfil será usado para conceder privilégios de Administrador na instância associada do AEM enquanto o **Usuários AEM_xxx** perfil é usado para adicionar usuários regulares.
+O perfil **Administradores_xxx do AEM** será usado para conceder privilégios de Administrador na instância do AEM associada, enquanto o perfil **Usuários_xxx do AEM** é usado para adicionar usuários regulares.
 
 Os usuários e grupos adicionados nesse perfil de produto poderão fazer logon nessa instância específica, como mostra o exemplo abaixo:
 
@@ -150,7 +150,7 @@ Os usuários e grupos adicionados nesse perfil de produto poderão fazer logon n
 
 >[!WARNING]
 >
->A variável **Administradores de AEM** o nome do perfil do produto não deve ser alterado. Alteração do nome da variável **Administradores de AEM** O perfil de produto removerá os direitos de administrador de todos os usuários atribuídos a esse perfil.
+>O nome do perfil do produto **Administradores do AEM** não deve ser alterado. A alteração do perfil do produto **Administradores do AEM** removerá os direitos de administrador de todos os usuários atribuídos a esse perfil.
 
 ### Fazendo logon no Adobe Experience Manager as a Cloud Service {#logging-in-to-aem}
 
