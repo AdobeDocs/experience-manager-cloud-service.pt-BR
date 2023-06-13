@@ -3,9 +3,9 @@ title: Acesso ao Admin Console
 description: Depois de entender a preparação necessária para realizar a integração e as noções básicas da estrutura do AEMaaCS, você estará pronto para fazer logon no Admin Console pela primeira vez.
 exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
 source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1111'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -105,7 +105,7 @@ Você está pronto para continuar sua jornada de integração, aprendendo como [
 
 ## Recursos adicionais {#additional-resources}
 
-A seguir estão recursos adicionais e opcionais se você quiser ir além do conteúdo da jornada de integração.
+A seguir estão recursos adicionais e opcionais se quiser ir além do conteúdo da jornada de integração.
 
 * [Visão geral do Admin Console](https://helpx.adobe.com/br/enterprise/using/admin-console.html) - Uma visão geral abrangente do Admin Console
 * [Criar ou atualizar seu Adobe ID](https://helpx.adobe.com/br/manage-account/using/create-update-adobe-id.html#HowtocreateorupdateyourAdobeID) - Saiba como criar um Adobe ID, alterá-lo e gerenciar vários Adobe IDs.
