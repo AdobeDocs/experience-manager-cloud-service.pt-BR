@@ -3,10 +3,10 @@ title: Implantação do AEM as a Cloud Service
 description: Implantação do AEM as a Cloud Service
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: a70bd2ffddcfb729812620743ead7f57860457f3
+source-git-commit: 3dd65a9bd67a0a029483d580dd819fb7ac2a10be
 workflow-type: tm+mt
-source-wordcount: '3541'
-ht-degree: 89%
+source-wordcount: '3542'
+ht-degree: 88%
 
 ---
 
@@ -115,7 +115,7 @@ Após a mudança para a nova versão do aplicativo:
 >[!NOTE]
 >Os pacotes de conteúdo são implantados em todos os tipos de ambiente (desenvolvimento, preparo, produção). Não é possível limitar a implantação a um ambiente específico. Esta limitação está em vigor para garantir a opção de uma execução de teste automatizada. Conteúdos que são específicos a um ambiente necessitam de instalação manual por meio do [Gerenciador de pacotes.](/help/implementing/developing/tools/package-manager.md)
 
-Além disso, não há mecanismo para reverter as alterações no pacote de conteúdo mutável depois de terem sido aplicadas. Se os clientes detectarem um problema, poderão optar por corrigi-lo na próxima versão do código ou, como último recurso, restaurar o sistema inteiro para um determinado estado antes da implantação.
+Além disso, não há um mecanismo para reverter as alterações mutáveis no pacote de conteúdo após serem aplicadas. Se os clientes detectarem um problema, poderão optar por corrigi-lo na próxima versão do código ou, como último recurso, restaurar o sistema inteiro para um determinado estado antes da implantação.
 
 Qualquer pacote de terceiros incluído deve ser validado como sendo compatível com o AEM as a Cloud Service, caso contrário, sua inclusão resultará em uma falha de implantação.
 
@@ -130,9 +130,9 @@ Nos casos a seguir, é preferível adotar a abordagem de codificação manual pa
 * Criar/excluir usuários
 * Adicionar ACLs
 
-   >[!NOTE]
-   >
-   >A definição de ACLs requer que as estruturas de nó já estejam presentes. Portanto, talvez sejam necessárias instruções de criação de caminho anteriores.
+  >[!NOTE]
+  >
+  >A definição de ACLs requer que as estruturas de nó já estejam presentes. Portanto, talvez sejam necessárias instruções de criação de caminho anteriores.
 
 * Adicionar caminho (por exemplo, para estruturas de pasta raiz)
 * Adicionar CNDs (definições de tipo de nó)

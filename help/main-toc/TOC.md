@@ -8,9 +8,9 @@ user-guide-description: Saiba como o Experience Manager as a Cloud Service funci
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: b104c7ddd102b3600384bf7472b166131e334c35
+source-git-commit: 663dae5785c13d74524054287869310d1fce5bd6
 workflow-type: tm+mt
-source-wordcount: '4064'
+source-wordcount: '4079'
 ht-degree: 98%
 
 ---
@@ -73,6 +73,7 @@ ht-degree: 98%
    + Notas da versão de manutenção do AEMaaCS {#maintenance}
       + [Notas de versão de manutenção atuais](/help/release-notes/maintenance/latest.md)
       + 2023 {#2023}
+         + [Notas da versão de manutenção 2023.4.0](/help/release-notes/maintenance/2023/2023.4.0.md)
          + [Notas da versão de manutenção 2023.2.0](/help/release-notes/maintenance/2023/2023.2.0.md)
          + [Notas da versão de manutenção 2023.1.0](/help/release-notes/maintenance/2023/2023.1.0.md)
    + Notas de versão do Cloud Manager {#cloud-manager}
@@ -546,6 +547,7 @@ ht-degree: 98%
             + [Criar temas para um Formulário adaptável - Componentes principais](/help/forms/using-themes-in-core-components.md)
             + [Gerar documento de registro para Formulários adaptáveis](/help/forms/generate-document-of-record-core-components.md)
             + [Criar um formulário adaptável - Componentes principais em uma página do Sites AEM](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
+            + [Usar tradução automática ou tradução humana para traduzir um Formulário adaptável](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [Configurando página de redirecionamento ou mensagem de agradecimento](/help/forms/configure-redirect-page-or-thank-you-message.md)
       + Criação de Formulários adaptáveis - Componentes básicos {#authoring-adaptive-forms-foundation-components}
          + Converter formulários em PDF em Formulários adaptáveis {#afcs}

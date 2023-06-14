@@ -2,10 +2,10 @@
 title: Configuração da equipe de desenvolvimento corporativa
 description: Saiba como configurar e dimensionar sua equipe de desenvolvimento corporativo e veja como o AEM as a Cloud Service pode apoiar seu processo de desenvolvimento.
 exl-id: 85f8779b-12cb-441b-a34d-04641184497a
-source-git-commit: a31c3693c9b2af9bd7f9d7f1f6fb0a61a4411df0
+source-git-commit: f19c4c71cf3b70331b9ccc56adf0bfd31e7edb2c
 workflow-type: tm+mt
-source-wordcount: '1444'
-ht-degree: 100%
+source-wordcount: '1445'
+ht-degree: 97%
 
 ---
 
