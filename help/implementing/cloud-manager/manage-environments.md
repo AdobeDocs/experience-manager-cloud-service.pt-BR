@@ -2,10 +2,10 @@
 title: Gerenciamento de ambientes
 description: Saiba mais sobre os tipos de ambientes que você pode criar e como criá-los para o seu projeto do Cloud Manager.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: ecc15501b6187380c2039afdf68cbef909c54721
+source-git-commit: e5142052423abee7a2e2ed64affb2b04a93bf0d1
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2336'
+ht-degree: 77%
 
 ---
 
@@ -47,7 +47,7 @@ Os recursos de ambientes individuais dependem das soluções ativadas no [progra
 
    * A opção **Adicionar ambiente** também está disponível na guia **Ambientes**.
 
-      ![Guia Ambientes](assets/environments-tab.png)
+     ![Guia Ambientes](assets/environments-tab.png)
 
    * A opção **Adicionar ambiente** pode estar desativada devido à falta de permissões ou dependendo dos recursos licenciados.
 
@@ -129,7 +129,7 @@ Você pode usar o cartão **Ambientes** na página de visão geral para acessar 
 
    * Como alternativa, clique no botão **Mostrar tudo** no cartão **Ambientes** para ir diretamente para a guia **Ambientes**.
 
-      ![Mostrar todas as opções](assets/environment-showall.png)
+     ![Mostrar todas as opções](assets/environment-showall.png)
 
 1. A tela **Ambientes** abre, listando todos os ambientes do programa.
 
@@ -231,12 +231,15 @@ A opção de exclusão também está disponível na guia **Ambientes** da janela
 >* Os ambientes de produção e de preparo criados em um programa de produção não podem ser excluídos.
 >* Os ambientes de produção e de preparo em um programa de sandbox podem ser excluídos.
 
-
 ## Gerenciamento de acesso {#managing-access}
 
 Selecione **Gerenciar acesso** no menu de reticências do ambiente no cartão **Ambientes**. Você pode navegar diretamente para a instância de autoria e gerenciar o acesso ao seu ambiente.
 
 ![Opção Gerenciar acesso](assets/environ-access.png)
+
+>[!TIP]
+>
+>Consulte o documento [Equipe as a Cloud Service do AEM e perfis de produto](/help/onboarding/aem-cs-team-product-profiles.md) para saber como os perfis de produto e de equipe do AEM as a Cloud Service podem conceder e limitar o acesso às soluções Adobe licenciadas.
 
 ## Acesso ao Developer Console {#accessing-developer-console}
 
