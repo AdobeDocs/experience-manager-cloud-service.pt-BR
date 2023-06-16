@@ -4,9 +4,9 @@ description: Saiba mais sobre as noções básicas do gerenciamento de pacotes d
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: e6b6dd3dcccfa73893d224ccbd5ead0d910072a8
 workflow-type: tm+mt
-source-wordcount: '3585'
+source-wordcount: '3788'
 ht-degree: 4%
 
 ---
@@ -44,6 +44,37 @@ Os pacotes de conteúdo criados para aplicativos do AEM as a Cloud Service devem
 >Não repita a instalação se esse erro aparecer. A instalação está ocorrendo corretamente em segundo plano. Se você reiniciar a instalação, alguns conflitos poderão ser introduzidos por vários processos de importação simultâneos.
 
 Para obter mais detalhes sobre como gerenciar pacotes para AEMaaCS, consulte o documento [Implantação no AEM as a Cloud Service](/help/implementing/deploying/overview.md) no guia do usuário implantar.
+
+## Tamanho do pacote {#package-size}
+
+O Adobe recomenda não criar pacotes grandes. Isso evita problemas de tempo limite ao carregar e baixar pacotes.
+
+Regra geral, um pacote deve ser transmitido na íntegra no prazo de 60 segundos. Isso fornece a seguinte fórmula como guia.
+
+```text
+MaxPackageSize (in MB) = ConnectionSpeed (in MB/s) * 60 s
+```
+
+Como o tráfego de rede é variável e é sempre menor do que o valor teórico máximo anunciado, tente usar uma ferramenta de teste de velocidade de conexão de internet online.
+
+As velocidades da Internet são quase sempre diferentes para uploads e downloads. Supondo que você precise carregar e baixar pacotes, você deve usar o valor mais baixo (geralmente a velocidade de upload) no seu cálculo.
+
+### Exemplo {#example}
+
+Usando uma ferramenta de teste de velocidade da Internet, vejo que minha velocidade de upload atual é de aproximadamente 100 Mbps.
+
+```text
+100 Mbps = 12.5 MB/s
+12.5 MB/s * 60 s = 750 MB
+```
+
+Portanto, qualquer pacote que eu criar deverá ter menos de 750 MB.
+
+>[!NOTE]
+>
+>As velocidades da rede estão sujeitas às condições locais atuais. Mesmo com um teste de velocidade recente, sua taxa de transferência real pode variar.
+>
+>Portanto, a fórmula fornecida é apenas uma diretriz e o tamanho máximo recomendado do pacote real pode variar.
 
 ## Gerenciador de pacotes {#package-manager}
 
@@ -237,6 +268,10 @@ Há muitas ações que podem ser executadas em um pacote.
 
 Não é obrigatório criar o pacote imediatamente após criá-lo. Um pacote não criado não tem conteúdo e consiste apenas nos dados de filtro e outros metadados do pacote.
 
+>[!TIP]
+>
+>Para evitar tempos limite, o Adobe recomenda [para não criar pacotes grandes.](#package-size)
+
 ### Criação de um pacote {#building-a-package}
 
 Um pacote geralmente é criado ao mesmo tempo que você [criar o pacote](#creating-a-new-package), mas você pode retornar posteriormente para criar ou reconstruir o pacote. Isso pode ser útil se o conteúdo no repositório tiver sido alterado ou os filtros do pacote tiverem sido alterados.
@@ -248,6 +283,10 @@ Um pacote geralmente é criado ao mesmo tempo que você [criar o pacote](#creati
 1. Clique em **Build**. Uma caixa de diálogo solicita a confirmação de que você deseja criar o pacote, pois qualquer conteúdo existente será substituído.
 
 1. Clique em **OK**. O AEM cria o pacote, listando todo o conteúdo adicionado ao pacote como faz na lista de atividades. Quando concluído, o AEM exibe uma confirmação de que o pacote foi criado e (quando você fecha a caixa de diálogo) atualiza as informações da lista de pacotes.
+
+>[!TIP]
+>
+>Para evitar tempos limite, o Adobe recomenda [para não criar pacotes grandes.](#package-size)
 
 ### Editar um pacote {#edit-package}
 
@@ -313,6 +352,10 @@ Depois que um pacote for criado, é possível visualizar o conteúdo.
 
 1. O AEM baixa o pacote para o computador.
 
+>[!TIP]
+>
+>Para evitar tempos limite, o Adobe recomenda [para não criar pacotes grandes.](#package-size)
+
 ### Fazer upload de pacotes do seu sistema de arquivos {#uploading-packages-from-your-file-system}
 
 1. [Acesse o Gerenciador de pacotes.](#accessing)
@@ -331,6 +374,10 @@ Depois que um pacote for criado, é possível visualizar o conteúdo.
 1. Clique em **OK** e o pacote selecionado é carregado e a lista de pacotes é atualizada adequadamente.
 
 O conteúdo do pacote agora existe no AEM, mas para disponibilizar o conteúdo para uso, certifique-se de [instalar o pacote](#installing-packages).
+
+>[!TIP]
+>
+>Para evitar tempos limite, o Adobe recomenda [para não criar pacotes grandes.](#package-size)
 
 ### Validação de pacotes {#validating-packages}
 
