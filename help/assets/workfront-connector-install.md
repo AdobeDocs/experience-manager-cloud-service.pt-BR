@@ -4,9 +4,9 @@ description: Instalar [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
 exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
-source-git-commit: 21f33c0b8710dd9d9db30543defff7dae9942c06
+source-git-commit: aa183901e80ba414fc3db5af01fbc49d082af7b6
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '779'
 ht-degree: 2%
 
 ---
@@ -30,14 +30,28 @@ Um usuário com acesso de administrador no [!DNL Adobe Experience Manager] as a 
 >
 >* Consulte [Exame de certificação de parceiros para o conector aprimorado do Workfront for Experience Manager Assets](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Para obter informações sobre o exame, consulte [Guia do exame](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
 
-
 Antes de instalar o conector, siga estas etapas de pré-instalação:
 
-1. [Configurar o firewall](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&amp;topicId=Content%2FAdministration_and_Setup%2FGet_started-WF_administration%2Fconfigure-your-firewall.html). Para conhecer o cluster IP em [!DNL Workfront], navegue até [!UICONTROL Configuração] > [!UICONTROL Sistema] > [!UICONTROL Informações do cliente].
+1. Se o seu programa AEM as a Cloud Service tiver configurado a Rede avançada e ativado a lista de permissões de IP, será necessário adicionar os IPs da Workfront AEM a essa lista de permissões para permitir Assinaturas de eventos e várias chamadas de API para passar para o.
 
-1. No dispatcher, permita cabeçalhos HTTP chamados `authorization`, `username`, e `apikey`. Permitir `GET`, `POST`, e `PUT` solicitações para `/bin/workfront-tools`.
+   * [IPs de cluster do Workfront](https://experienceleague.adobe.com/docs/workfront/using/administration-and-setup/get-started-administration/configure-your-firewall.html?lang=en#ip-addresses-to-allow-for-clusters-1-2-3-5-7-8-and-9). Para conhecer o cluster IP em [!DNL Workfront], navegue até **[!UICONTROL Configuração]** > **[!UICONTROL Sistema]** > **[!UICONTROL Informações do cliente]**.
 
-1. Verifique se os seguintes caminhos não existem no [!DNL Experience Manager] repositório:
+   * [IPs da API de assinatura de evento do Workfront](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api.html)
+
+   >[!IMPORTANT]
+   >
+   >* Se você tiver a Rede avançada configurada para seu programa e estiver usando a Lista de permissões de IP, devido a uma limitação com a arquitetura do Conector aprimorado do Workfront, também será necessário adicionar o IP de saída do programa à lista de permissões no Cloud Manager.
+   >
+   >* p{PROGRAM_ID}.external.adobeaemcloud.com
+   >
+   >* Para encontrar o IP do seu programa, abra uma janela de terminal e execute um comando, como:
+   >
+   >    ```TXT
+   >    dscacheutil -q host -a name p{PROGRAM_ID}.external.adobeaemcloud.com
+   >
+   >    ```
+
+1. Verifique se as seguintes sobreposições não existem no [!DNL Experience Manager] repositório. Se você tiver sobreposições pré-existentes nesses caminhos, será necessário remover as sobreposições ou mesclar o delta de alterações entre os dois:
 
    * `/apps/dam/gui/coral/components/admin/schemaforms/formbuilder`
    * `/apps/dam/gui/coral/components/admin/folderschemaforms/formbuilder`
