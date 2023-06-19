@@ -4,10 +4,10 @@ description: Use um aplicativo de exemplo do React para saber como personalizar 
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: ac94981e477e1fe8b883460ed9be009b4c1c088d
+source-git-commit: 469ebc7c3cae6dbfc38077e841db3c61ca16c680
 workflow-type: tm+mt
-source-wordcount: '1036'
-ht-degree: 100%
+source-wordcount: '1038'
+ht-degree: 99%
 
 ---
 
@@ -35,7 +35,7 @@ Você inicia no editor de fragmento de conteúdo com o aplicativo de exemplo for
 
 1. Toque ou clique no botão **Visualizar** na parte superior direita da tela do editor.
 
-1. O aplicativo de demonstração é aberto em uma nova guia. O aplicativo é para uma marca fictícia de estilo de vida ao ar livre: WKND. Clique onde quiser para navegar pelo conteúdo de exemplo.
+1. O aplicativo de demonstração é aberto em uma nova guia. O aplicativo é para uma marca fictícia de estilo de vida ao ar livre: WKND. Role para baixo na página para navegar pelo conteúdo de amostra.
 
 1. Retorne à guia do navegador do editor de fragmento de conteúdo para continuar.
 
