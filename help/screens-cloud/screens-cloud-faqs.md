@@ -2,7 +2,7 @@
 title: Perguntas frequentes sobre o Screens as a Cloud Service
 description: Esta página descreve as perguntas frequentes as a Cloud Service do Screens.
 exl-id: 93f2144c-0e64-4012-88c6-86972d8cad9f
-source-git-commit: 02c9cbff56399ea2ca1baad7d2289d5d4c17c1c5
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '459'
 ht-degree: 2%
@@ -43,7 +43,7 @@ As imagens no formato `*.tif` (Formato de arquivo de imagem de tag) não são co
 
 ## O que devo fazer se um Canal no modo de Desenvolvedor (online) não estiver sendo renderizado no AEM Screens Player?{#screens-cloud-online-channel-blank-iframe}
 
-É recomendável aproveitar os recursos de cache do AEM Screens, mas se for necessário executar o Canal no modo de desenvolvedor e o AEM Screens Player mostrar uma tela em branco, verifique as ferramentas de desenvolvedor do Player e procure `X-Frame-Options` ou `frame-ancestors` erros. A resolução é configurar o dispatcher para permitir a execução de conteúdo em iFrames. Normalmente, a seguinte configuração funcionará:
+É recomendável usar os recursos de cache do AEM Screens, mas se for necessário executar o Canal no modo de desenvolvedor e o AEM Screens Player mostrar uma tela em branco, verifique as ferramentas de desenvolvedor do Player e procure `X-Frame-Options` ou `frame-ancestors` erros. A resolução é configurar o dispatcher para permitir a execução de conteúdo em iFrames. Normalmente, a seguinte configuração funcionará:
 
 ```
 Header set Content-Security-Policy "frame-ancestors ‘self’ file: localhost:*;"

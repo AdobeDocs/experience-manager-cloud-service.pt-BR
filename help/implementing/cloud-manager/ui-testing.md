@@ -2,10 +2,10 @@
 title: Teste de interface do usuário
 description: Os testes de interface do usuário personalizados são um recurso opcional que permite criar e executar automaticamente testes na interface do usuário para seus aplicativos personalizados.
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 84b2648fe06b556534b53023769abaa69ef1ec2b
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2411'
-ht-degree: 99%
+source-wordcount: '2401'
+ht-degree: 95%
 
 ---
 
@@ -23,7 +23,7 @@ Os testes de interface do usuário personalizados são um recurso opcional que p
 
 O AEM fornece um conjunto integrado de [quality gates (portais de qualidade) do Cloud Manager](/help/implementing/cloud-manager/custom-code-quality-rules.md) para garantir atualizações tranquilas para aplicativos personalizados. Em especial, os portais de teste de TI já promovem a criação e a automação de testes personalizados usando as APIs do AEM.
 
-Os testes de interface são compactados em uma imagem do Docker para permitir uma variedade de opções de linguagens e estruturas (como Cypress, Selenium, Java e Maven, além de JavaScript). Além disso, um projeto de testes de interface pode ser facilmente gerado usando o [Arquétipo de projeto do AEM.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR)
+Os testes de interface do usuário são compactados em uma imagem de Docker para permitir uma grande variedade de opções de linguagens e estruturas (como Cypress, Selenium, Java e Maven, além de JavaScript). Além disso, um projeto de testes de interface pode ser facilmente gerado usando o [Arquétipo de projeto do AEM.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR)
 
 A Adobe incentiva o uso do Cypress, pois oferece recarregamento em tempo real e espera automática, o que ajuda a economizar tempo e melhorar a produtividade durante os testes. O Cypress também fornece uma sintaxe simples e intuitiva, facilitando a aprendizagem e o uso, até mesmo para aqueles que são novos em testes.
 
@@ -167,7 +167,7 @@ Para que o Cloud Manager compile e execute seus testes de interface, é necessá
 * O arquivo deve estar no submódulo Maven para testes de interface, próximo do arquivo `pom.xml` do submódulo de testes de interface.
 * O arquivo deve estar na raiz do arquivo de compilação `tar.gz`.
 
-A compilação dos testes de interface do usuário será ignorada se esse arquivo não estiver presente.
+A compilação dos testes de interface do usuário é ignorada se esse arquivo não estiver presente.
 
 Para incluir um arquivo `testing.properties` no artefato de compilação, adicione a instrução `include` no arquivo `assembly-ui-test-docker-context.xml`.
 
@@ -207,7 +207,7 @@ Esta seção descreve as convenções que a imagem do Docker que contém seus te
 
 ### Variáveis de ambiente {#environment-variables}
 
-As variáveis de ambiente a seguir serão passadas para a imagem do Docker no tempo de execução, dependendo da estrutura.
+As variáveis de ambiente a seguir são passadas para a imagem do Docker no tempo de execução, dependendo da estrutura.
 
 | Variável | Exemplos | Descrição | Estrutura de testes |
 |---|---|---|---|
@@ -220,7 +220,7 @@ As variáveis de ambiente a seguir serão passadas para a imagem do Docker no te
 | `AEM_PUBLISH_USERNAME` | `admin` | O nome de usuário para fazer logon na instância de publicação do AEM | Todos |
 | `AEM_PUBLISH_PASSWORD` | `admin` | A senha para fazer logon na instância de publicação do AEM | Todos |
 | `REPORTS_PATH` | `/usr/src/app/reports` | O caminho onde o relatório XML dos resultados do teste deve ser salvo | Todos |
-| `UPLOAD_URL` | `http://upload-host:9090/upload` | O URL onde o arquivo deve ser carregado para torná-lo acessível à estrutura de testes | Todos |
+| `UPLOAD_URL` | `http://upload-host:9090/upload` | O URL no qual o arquivo deve ser carregado para torná-lo acessível à estrutura de teste | Todos |
 
 Os exemplos de teste da Adobe fornecem funções auxiliares para acessar os parâmetros de configuração:
 
@@ -242,7 +242,7 @@ Se a imagem do Docker for implementada com outras linguagens de programação ou
 
 ### Pré-requisitos {#prerequisites}
 
-* Os testes no Cloud Manager serão executados usando um usuário administrador técnico.
+* Os testes no Cloud Manager são executados usando um usuário administrador técnico.
 
 >[!NOTE]
 >
@@ -254,7 +254,7 @@ Se a imagem do Docker for implementada com outras linguagens de programação ou
 |----------------------|-------|-----------------------------------------------------------------------|
 | CPU | 2.0 | Quantidade de tempo de CPU reservado por execução de teste. |
 | Memória | 1Gi | Quantidade de memória alocada no teste, valor em gibibytes. |
-| Tempo limite | 30 min | A duração após a qual o teste será encerrado. |
+| Tempo limite | 30 min | A duração após a qual o teste é encerrado. |
 | Duração recomendada | 15 min | A Adobe recomenda gravar os testes para não demorar mais do que esse tempo. |
 
 >[!NOTE]
@@ -343,7 +343,7 @@ Antes de ativar os testes de interface em um pipeline do Cloud Manager, é recom
 
 >[!NOTE]
 >
->Os arquivos de log serão armazenados na pasta `target/` do repositório.
+>Os arquivos de log são armazenados na pasta `target/` do repositório.
 >
 >Para obter detalhes, consulte o [repositório de Exemplos de teste do AEM](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/README.md).
 
@@ -390,6 +390,6 @@ Antes de ativar os testes de interface em um pipeline do Cloud Manager, é recom
 
 >[!NOTE]
 >
->Os arquivos de log serão armazenados na pasta `target/reports` do repositório.
+>Os arquivos de log são armazenados na pasta `target/reports` do repositório.
 >
 >Para obter detalhes, consulte o [repositório de Exemplos de teste do AEM](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md).

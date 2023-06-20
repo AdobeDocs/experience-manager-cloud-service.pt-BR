@@ -2,9 +2,9 @@
 title: Edição de um SPA externo no AEM
 description: Este documento descreve as etapas recomendadas para fazer upload de um SPA independente em uma instância AEM, adicionar seções editáveis de conteúdo e ativar a criação.
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: b06e734fd6874946323cdc71073ecb1c50945845
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2456'
+source-wordcount: '2447'
 ht-degree: 2%
 
 ---
@@ -23,7 +23,7 @@ Os pré-requisitos são simples.
 
 * Verifique se uma instância do AEM está sendo executada localmente.
 * AEM Criar um projeto base de SPA usando [o Arquétipo do Projeto AEM.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?#available-properties)
-   * Isso formará a base do projeto AEM, que será atualizado para incluir o SPA externo.
+   * Forms é a base do projeto AEM, que é atualizado para incluir o SPA externo.
    * Para as amostras neste documento, estamos usando o ponto de partida de [o projeto SPA WKND.](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html#spa-editor)
 * Tenha em mãos o SPA React externo e funcional que deseja integrar.
 
@@ -81,7 +81,7 @@ Neste exemplo, a variável `ModelManager` é inicializado e um está vazio `Mode
 
 ### Componentes de folha autoráveis do AEM {#authorable-leaf-components}
 
-1. Crie/identifique um componente do AEM para o qual um componente autorável do React será criado. Neste exemplo, estamos usando o componente de texto do projeto WKND.
+1. Crie/identifique um componente do AEM para o qual um componente autorável do React é criado. Neste exemplo, estamos usando o componente de texto do projeto WKND.
 
    ![Componente de texto WKND](assets/external-spa-text-component.png)
 
@@ -237,7 +237,7 @@ A variável `TestPage` é semelhante ao seguinte depois de adicionar o component
 >
 >Assegure a `AEMText` o componente tem sua `resourceType` definido na configuração para habilitar este recurso.
 
-Agora você pode implantar as alterações no AEM seguindo as etapas da seção [Verificar edição de conteúdo de texto no AEM.](#verify-text-edit) Um espaço reservado será exibido para o item não existente no momento `text_20` nó.
+Agora você pode implantar as alterações no AEM seguindo as etapas da seção [Verificar edição de conteúdo de texto no AEM.](#verify-text-edit) Um espaço reservado é exibido para o item atualmente não existente `text_20` nó.
 
 ![O nó text_20 no aem](assets/external-spa-text20-aem.png)
 
@@ -253,7 +253,7 @@ Há vários requisitos para adicionar componentes de folha virtual, bem como alg
 * O nó da página fornecido no caminho em `pagePath` deve existir no projeto AEM.
 * O nome do nó a ser criado deve ser fornecido na variável `itemPath`.
 * O componente pode ser criado em qualquer nível.
-   * Se fornecermos uma `itemPath='text_20'` no exemplo anterior, o novo nó será criado diretamente na página, ou seja, `/content/wknd-spa-react/us/en/home/jcr:content/text_20`
+   * Se fornecermos uma `itemPath='text_20'` no exemplo anterior, o novo nó é criado diretamente na página, ou seja, `/content/wknd-spa-react/us/en/home/jcr:content/text_20`
 * O caminho para o nó onde um novo nó é criado deve ser válido quando fornecido via `itemPath`.
    * Neste exemplo, `root/responsivegrid` deve existir para que o novo nó `text_20` pode ser criado lá.
 * Somente a criação de componente folha é suportada. O container virtual e a página serão compatíveis em versões futuras.
@@ -282,13 +282,13 @@ Depois que o autor adiciona um componente secundário ao contêiner, o novo nó 
 
 ![Contêiner com conteúdo no JCR](assets/container-with-content-jcr.png)
 
-Mais componentes e conteúdo podem ser adicionados ao contêiner agora, conforme exigido pelo autor, e as alterações serão persistentes.
+Mais componentes e conteúdo podem ser adicionados ao contêiner agora, conforme exigido pelo autor, e as alterações são persistentes.
 
 #### Requisitos e limitações {#container-limitations}
 
 Há vários requisitos para adicionar contêineres virtuais, bem como algumas limitações.
 
-* A política para determinar quais componentes podem ser adicionados será herdada do container principal.
+* A política para determinar quais componentes podem ser adicionados é herdada do container principal.
 * O pai imediato do contêiner a ser criado já deve existir no AEM.
    * Se o container `root/responsivegrid` já existir no contêiner AEM, um novo contêiner poderá ser criado fornecendo o caminho `root/responsivegrid/newContainer`.
    * No entanto `root/responsivegrid/newContainer/secondNewContainer` não é possível.
@@ -326,7 +326,7 @@ Por exemplo, suponha que tenhamos um SPA no qual o aplicativo é renderizado den
 
 Se o aplicativo externo SPA do React tiver várias páginas, [ele pode usar o roteamento para determinar a página/componente a ser renderizado.](/help/implementing/developing/hybrid/routing.md) O caso de uso básico é corresponder o URL ativo no momento com o caminho fornecido para uma rota. Para habilitar a edição nesses aplicativos habilitados para roteamento, o caminho a ser correspondido precisa ser transformado para acomodar informações específicas do AEM.
 
-No exemplo a seguir, temos um aplicativo simples do React com duas páginas. A página a ser renderizada é determinada pela correspondência do caminho fornecido ao roteador com o URL ativo. Por exemplo, se estivermos em `mydomain.com/test`, `TestPage` serão renderizados.
+No exemplo a seguir, temos um aplicativo simples do React com duas páginas. A página a ser renderizada é determinada pela correspondência do caminho fornecido ao roteador com o URL ativo. Por exemplo, se estivermos em `mydomain.com/test`, `TestPage` é renderizado.
 
 ![Roteamento em um SPA externo](assets/external-spa-routing.png)
 
@@ -351,9 +351,8 @@ Para habilitar a edição no AEM para este exemplo SPA, as seguintes etapas são
       * O caminho necessário para roteamento
       * O URL de origem da instância do AEM em que o SPA é editado
       * A raiz do projeto no AEM conforme determinado na primeira etapa
+
    * Esses valores podem ser definidos como variáveis de ambiente para obter mais flexibilidade.
-
-
 
 1. Verifique a edição da página no AEM.
 

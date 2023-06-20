@@ -2,10 +2,10 @@
 title: Gerenciamento de ambientes
 description: Saiba mais sobre os tipos de ambientes que você pode criar e como criá-los para o seu projeto do Cloud Manager.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: e5142052423abee7a2e2ed64affb2b04a93bf0d1
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2336'
-ht-degree: 77%
+source-wordcount: '2325'
+ht-degree: 72%
 
 ---
 
@@ -153,11 +153,11 @@ O Cloud Manager oferece um serviço de visualização (fornecido como um serviç
 
 Usando o serviço, você pode visualizar a experiência final de um site antes que ele atinja o ambiente de publicação real e esteja disponível publicamente.
 
-Após a criação, será aplicada uma lista de permissões de IP padrão ao serviço de visualização, identificada como `Preview Default [<envId>]`, que bloqueará todo o tráfego para o serviço de visualização. Você deve remover a lista de permissões de IP padrão do serviço de visualização para ativar o acesso.
+Após a criação, será aplicada uma lista de permissões de IP padrão ao serviço de visualização, identificada como `Preview Default [<envId>]`, que bloqueará todo o tráfego para o serviço de visualização. Você deve remover a lista de permissões de IP padrão do serviço de visualização para habilitar o acesso.
 
 ![Serviço de visualização e sua lista de permissões](assets/preview-ip-allow.png)
 
-Um usuário com as permissões necessárias deve concluir as etapas a seguir antes de compartilhar o URL do serviço de visualização para garantir o acesso a ele.
+Um usuário com as permissões necessárias deve concluir as etapas a seguir antes de compartilhar a URL do serviço de visualização para garantir o acesso a ela.
 
 1. Crie uma lista de permissões de IP apropriada, aplique-a ao serviço de visualização e remova imediatamente a lista de permissões `Preview Default [<envId>]`.
 
@@ -216,7 +216,7 @@ O comportamento da opção **Atualizar** varia dependendo da configuração e do
 
 ## Exclusão de ambientes de desenvolvimento {#deleting-environment}
 
-O usuário com as permissões necessárias poderá excluir um ambiente de desenvolvimento.
+O usuário com a permissão necessária pode excluir um ambiente de desenvolvimento.
 
 Na tela **Visão geral** do programa no cartão **Ambientes**, clique no botão de reticências do ambiente de desenvolvimento que deseja excluir.
 
@@ -290,9 +290,9 @@ Para gerenciar listas de permissões de IP, navegue até a guia **Ambientes** da
 
 ### Aplicação de uma lista de permissões de IP {#apply-ip-allow-list}
 
-A aplicação de uma lista de permissões de IP associa todos os intervalos IP incluídos na definição da lista de permissões a um serviço de autoria ou publicação em um ambiente. Um usuário com a função **Proprietário da empresa** ou **Gerente de implantação** deve estar conectado para poder aplicar uma lista de permissões de IP.
+A aplicação de uma lista de permissões de IP associa todos os intervalos IP incluídos na definição da lista de permissões a um serviço de autoria ou publicação em um ambiente. Um usuário no **Proprietário da empresa** ou **Gerente de implantação** A função deve estar conectada para poder aplicar uma lista de permissões IP.
 
-De A lista de permissões de IP deve existir no Cloud Manager para ser aplicada a um ambiente. Para saber mais sobre listas de permissões de IP no Cloud Manager, consulte o documento [Introdução às listas de permissões de IP no Cloud Manager.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
+A lista de permissões IP deve existir no Cloud Manager para ser aplicada a um ambiente. Para saber mais sobre listas de permissões de IP no Cloud Manager, consulte o documento [Introdução às listas de permissões de IP no Cloud Manager.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
 
 Siga estas etapas para aplicar uma lista de permissões de IP.
 
@@ -302,7 +302,7 @@ Siga estas etapas para aplicar uma lista de permissões de IP.
 
 ### Cancelamento da aplicação de uma lista de permissões de IP {#unapply-ip-allow-list}
 
-O cancelamento da aplicação de uma lista de permissões de IP desassocia todos os intervalos IP incluídos na definição da lista de permissões de um serviço de autoria ou publicação em um ambiente. Um usuário com a função **Proprietário da empresa** ou **Gerente de implantação** deve estar conectado para poder cancelar a aplicação de uma lista de permissões de IP.
+O cancelamento da aplicação de uma lista de permissões de IP desassocia todos os intervalos IP incluídos na definição da lista de permissões de um serviço de autoria ou publicação em um ambiente. Um usuário no **Proprietário da empresa** ou **Gerente de implantação** A função deve estar conectada para poder desaplicar uma lista de permissões IP.
 
 Siga estas etapas para cancelar a aplicação de uma lista de permissões de IP.
 

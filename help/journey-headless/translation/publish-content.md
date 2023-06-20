@@ -2,10 +2,10 @@
 title: Publicar conteúdo headless traduzido
 description: Saiba como publicar seu conteúdo traduzido e atualizar as traduções como atualizações de conteúdo.
 exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
-source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1391'
-ht-degree: 100%
+source-wordcount: '1392'
+ht-degree: 98%
 
 ---
 
@@ -78,7 +78,7 @@ Seu conteúdo headless traduzido foi publicado. Agora ele pode ser acessado e co
 
 >[!TIP]
 >
->Você pode selecionar vários itens (ou seja, várias pastas de idioma) durante a publicação para publicar várias traduções de uma vez.
+>Você pode selecionar vários itens (ou seja, várias pastas de idioma) ao publicar para poder publicar várias traduções de uma vez.
 
 Há opções adicionais ao publicar seu conteúdo, como agendar um horário de publicação, que estão além do escopo desta jornada. Consulte a seção [Recursos adicionais](#additional-resources) no final do documento para obter mais informações.
 

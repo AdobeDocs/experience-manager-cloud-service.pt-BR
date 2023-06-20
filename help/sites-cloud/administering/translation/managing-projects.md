@@ -4,10 +4,10 @@ description: Saiba como criar e gerenciar projetos de tradução automática e h
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: d3194e646b326009dc204838ac74fc880952f286
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '4086'
-ht-degree: 99%
+source-wordcount: '4085'
+ht-degree: 97%
 
 ---
 
@@ -17,7 +17,7 @@ Os projetos de tradução permitem gerenciar a tradução de conteúdo do AEM. U
 
 >[!TIP]
 >
->Se você é novo na tradução de conteúdo, consulte nossa [Jornada de tradução de sites,](/help/journey-sites/translation/overview.md) que é um caminho guiado pela tradução de conteúdo do AEM Sites usando as ferramentas de tradução avançadas do AEM, ideais para aqueles sem experiência no AEM ou em tradução.
+>Se você é novo na tradução de conteúdo, consulte nossa [Jornada de tradução de sites,](/help/journey-sites/translation/overview.md) que é um caminho guiado pela tradução de conteúdo do AEM Sites usando ferramentas de tradução poderosas do AEM, ideais para aqueles sem experiência com o AEM ou com tradução.
 
 Quando os recursos são adicionados a um projeto de tradução, um trabalho de tradução é criado para eles. Os trabalhos fornecem comandos e informações de status que são usados para gerenciar os fluxos de trabalho de tradução humana e tradução automática que são executados nos recursos.
 
@@ -374,7 +374,7 @@ Você também pode iniciar todos os trabalhos de tradução de um projeto.
 
 1. No console de projetos, selecione o projeto de tradução.
 1. Na barra de ferramentas, toque ou clique em **Iniciar trabalho de tradução**.
-1. Na caixa de diálogo, revise a lista de tarefas que serão iniciadas e confirme com **Iniciar** ou cancele com **Cancelar**.
+1. Na caixa de diálogo, revise a lista de tarefas iniciadas e confirme com **Início** ou abortar com **Cancelar**.
 
 ### Cancelar um trabalho de tradução {#canceling-a-translation-job}
 
@@ -390,7 +390,7 @@ Quando o conteúdo retorna após a tradução e está com o status **Pronto para
 
 Ao selecionar **Rejeitar tradução**, você terá a opção de adicionar um comentário.
 
-Rejeitar o conteúdo o envia de volta ao fornecedor de tradução, o qual poderá ver o comentário.
+Rejeitar o conteúdo o envia de volta ao fornecedor de tradução, onde ele pode ver o comentário.
 
 ### Concluir e arquivar trabalhos de tradução {#completing-and-archiving-translation-jobs}
 
@@ -443,7 +443,7 @@ Para comparar cópias de idioma ao idioma principal:
 
    ![Comparar cópias de idioma](../assets/language-copy-compare.png)
 
-1. As duas páginas (inicialização e origem) serão abertas lado a lado.
+1. As duas páginas (lançamento e origem) são abertas lado a lado.
    * Para obter informações completas sobre como usar esse recurso, consulte [Diferença de página](/help/sites-cloud/authoring/features/page-diff.md).
 
 ## Mover ou renomear uma página de origem {#move-source}

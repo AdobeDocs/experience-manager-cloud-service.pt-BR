@@ -2,9 +2,9 @@
 title: Implementação de um avaliador de predicado personalizado no Construtor de consultas
 description: O Query Builder do AEM oferece uma maneira fácil e personalizável de consultar o repositório de conteúdo
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '668'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,6 @@ Um predicado personalizado também pode executar outras coisas que não são dir
 >
 >* [Abra o projeto aem-search-custom-predicate-valuator no GitHub](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)
 >* Baixar o projeto como [um arquivo ZIP](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/archive/master.zip)
-
 
 >[!NOTE]
 >
@@ -106,7 +105,7 @@ Primeiro, é necessário atualizar as dependências do Maven do seu projeto. A v
 
 >[!NOTE]
 >
->O âmbito de aplicação do `cq-search` a dependência está definida como `provided` porque `cq-search` será fornecido pela `OSGi` recipiente.
+>O âmbito de aplicação do `cq-search` a dependência está definida como `provided` porque `cq-search` é fornecido pela `OSGi` recipiente.
 
 O trecho a seguir mostra as diferenças no `pom.xml` arquivo, em [formato de comparação unificado](https://en.wikipedia.org/wiki/Diff#Unified_format)
 

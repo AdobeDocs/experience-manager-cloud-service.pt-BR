@@ -2,10 +2,10 @@
 title: O que é diferente e quais são as novidades - Adobe Experience Manager as a Cloud Service
 description: O que é diferente e quais são as novidades - Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: 6c06df453a2c9116889c25b1d1198df2dbf26f88
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1903'
-ht-degree: 100%
+source-wordcount: '1899'
+ht-degree: 97%
 
 ---
 
@@ -192,7 +192,7 @@ Devido à clara separação de código e conteúdo, os desenvolvedores podem usa
 
 ### Desenvolvimento local {#aem-as-a-cloud-service-developing-local-development}
 
-A fim de suportar iterações e desenvolvimento rápidos, também é possível desenvolver aplicativos do AEM fora do contexto do AEM as a Cloud Service. Para essa finalidade, os seguintes artefatos são disponibilizados aos desenvolvedores:
+Para suportar iterações e desenvolvimento rápidos, também é possível desenvolver aplicações do AEM fora do contexto as a Cloud Service do AEM. Para essa finalidade, os seguintes artefatos são disponibilizados aos desenvolvedores:
 
 * O QuickStart do AEM as a Cloud Service: um instalador independente e com base em `.jar` da base de código do AEM mais recente, com a mesma superfície funcional e de API.
 
@@ -242,7 +242,7 @@ Isso combina os benefícios de:
 >
 >Para obter mais detalhes, o [Manuseio básico](/help/sites-cloud/authoring/getting-started/basic-handling.md) é um bom ponto de partida.
 
-Os princípios básicos da interface do usuário (UI) de criação, tanto para o Sites quanto para o Assets, serão reconhecíveis a qualquer pessoa que tenha usado o AEM no passado.
+Os princípios básicos da interface do usuário (UI) de criação, para Sites e Assets, serão familiares a qualquer pessoa que tenha usado AEM no passado.
 
 A principal diferença é que a interface é habilitada para toque; a interface clássica não está mais disponível. No mais, as funcionalidades básicas permanecem inalteradas, verificando-se apenas pequenas alterações.
 

@@ -2,9 +2,9 @@
 title: Desenvolvimento de um componente personalizado para o Screens as a Cloud Service
 description: O tutorial a seguir percorre as etapas para criar um componente personalizado para o AEM Screens. A AEM Screens reutiliza muitos padrões e tecnologias de design existentes de outros produtos AEM. O tutorial destaca as diferenças e considerações especiais ao desenvolver para o AEM Screens.
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
-source-git-commit: d925310603961f1f3721c283fc247105459e9c0f
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2115'
+source-wordcount: '2106'
 ht-degree: 3%
 
 ---
@@ -69,7 +69,7 @@ O código-fonte de um projeto do Screens geralmente é gerenciado como um projet
 
    Representação do código ui.apps no CRXDE Lite
 
-   A variável **helloworld** no momento, o componente é apenas um espaço reservado. Ao longo do tutorial, uma funcionalidade será adicionada permitindo que um autor atualize a mensagem exibida pelo componente.
+   A variável **helloworld** no momento, o componente é apenas um espaço reservado. Ao longo do tutorial, uma funcionalidade é adicionada, permitindo que um autor atualize a mensagem exibida pelo componente.
 
 1. A variável **screens-weretail-run.ui.content** o pacote instala o código abaixo de:
 
@@ -184,7 +184,7 @@ O AEM Screens tem algumas restrições interessantes que não são necessariamen
 
    Acima está a marcação de edição do componente Hello World. O primeiro bloco exibe uma versão de edição do componente se a mensagem de diálogo tiver sido preenchida.
 
-   O segundo bloco é renderizado se nenhuma mensagem de diálogo for inserida. A variável `cq-placeholder` e `data-emptytext` renderizar o rótulo ***Olá, mundo*** nesse caso, como titular. A string do rótulo pode ser internacionalizada usando o i18n para oferecer suporte à criação em vários locais.
+   O segundo bloco é renderizado se nenhuma mensagem de diálogo for inserida. A variável `cq-placeholder` e `data-emptytext` renderizar o rótulo ***Olá, mundo*** nesse caso, como titular. A string do rótulo pode ser internacionalizada usando i18n para oferecer suporte à criação em vários locais.
 
 1. **A caixa de diálogo Copiar imagem do Screens a ser usada para o componente Olá, mundo.**
 
@@ -242,7 +242,7 @@ O AEM Screens tem algumas restrições interessantes que não são necessariamen
                                    jcr:primaryType="nt:unstructured"
                                    sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
                                    defaultValue=""
-                                   fieldDescription="Amount of time the image will be shown in the sequence, in milliseconds"
+                                   fieldDescription="Amount of time the image is shown in the sequence, in milliseconds"
                                    fieldLabel="Duration (ms)"
                                    min="0"
                                    name="./duration"/>
@@ -255,7 +255,7 @@ O AEM Screens tem algumas restrições interessantes que não são necessariamen
    </jcr:root>
    ```
 
-   O campo de texto da mensagem será salvo em uma propriedade chamada `message` e que o campo numérico da Duração será salvo em uma propriedade chamada `duration`. Essas duas propriedades são referenciadas na `/apps/weretail-run/components/content/helloworld/production.html` por HTL como `${properties.message}` e `${properties.duration}`.
+   O campo de texto da mensagem é salvo em uma propriedade chamada `message` e que o campo numérico da Duração seja salvo em uma propriedade chamada `duration`. Essas duas propriedades são referenciadas na `/apps/weretail-run/components/content/helloworld/production.html` por HTL como `${properties.message}` e `${properties.duration}`.
 
    ![Olá, mundo - caixa de diálogo concluída](/help/screens-cloud/developing/assets/2018-04-29_at_5_21pm.png)
 
@@ -265,7 +265,7 @@ O AEM Screens tem algumas restrições interessantes que não são necessariamen
 
 As bibliotecas do lado do cliente fornecem um mecanismo para organizar e gerenciar arquivos CSS e JavaScript necessários para uma implementação do AEM.
 
-Os componentes do AEM Screens são renderizados de forma diferente no modo Editar versus no modo Pré-visualização/Produção. Duas bibliotecas de clientes serão criadas, uma para o modo Editar e outra para o modo Visualização/Produção.
+Os componentes do AEM Screens são renderizados de forma diferente no modo Editar versus no modo Pré-visualização/Produção. Duas bibliotecas de clientes são criadas: uma para o modo Editar e outra para Pré-visualização/Produção.
 
 1. Crie uma pasta para bibliotecas do lado do cliente para o componente Hello World.
 
@@ -411,6 +411,7 @@ O componente Hello World deve ser usado em um canal de sequência. Para testar o
 1. Etapa de modelo - Escolher **Canal de sequência**
 
    1. Etapa Propriedades
+
    * Guia Básica > Título = **Canal ocioso**
    * Guia Canal > verificar **Tornar o canal online**
 

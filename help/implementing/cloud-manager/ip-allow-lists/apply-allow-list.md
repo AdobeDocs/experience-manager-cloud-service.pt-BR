@@ -2,10 +2,10 @@
 title: Aplicação e remoção de listas de permissões de IP
 description: Saiba como aplicar e desaplicar listas de permissões de IP a ambientes.
 exl-id: 7158496c-b0c4-4228-a306-71dc51003c57
-source-git-commit: 7632a9fef71e95238d149ec5318903757bb2a326
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 100%
+source-wordcount: '269'
+ht-degree: 95%
 
 ---
 
@@ -22,7 +22,7 @@ Um usuário com a função **Proprietário da empresa** ou **Gerente de implanta
 1. Acesse a tela **Ambientes** a partir da página **Visão geral**.
 1. Acesse a página de detalhes do ambiente específico na tela **Ambientes** e navegue até a tabela **Lista de permissões de IP**.
 1. Use os campos de entrada na parte superior da tabela para selecionar a lista de permissões de IP e o serviço de autoria ou edição ao qual deseja aplicá-la.
-   * A lista de permissões de IP deve existir no Cloud Manager para ser aplicada.
+   * A Lista de permissões IP deve existir no Cloud Manager para ser aplicada.
 1. Clique em **Aplicar** e confirme o envio.
 
 ## Desaplicar listas de permissões {#un-applying}

@@ -2,10 +2,10 @@
 title: Introdução a SPAs no AEM usando o React
 description: Este artigo apresenta uma amostra de aplicativo SPA, explica como ele é montado e permite que você comece a usar seu próprio SPA rapidamente usando a estrutura do React.
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1144'
-ht-degree: 10%
+source-wordcount: '1142'
+ht-degree: 8%
 
 ---
 
@@ -39,7 +39,7 @@ Este documento abordará a estrutura de um SPA simplificado criado usando a estr
 
 ## Dependências, configuração e criação {#dependencies-configuration-and-building}
 
-Além da dependência esperada do React, a amostra de SPA pode aproveitar bibliotecas adicionais para tornar a criação do SPA mais eficiente.
+Além da dependência esperada do React, o SPA de amostra pode usar bibliotecas adicionais para tornar a criação do SPA mais eficiente.
 
 ### Dependências {#dependencies}
 
@@ -60,7 +60,7 @@ Como este exemplo se baseia na estrutura do React, há duas dependências espec�
  react-dom
 ```
 
-A variável `aem-clientlib-generator` O é aproveitado para tornar a criação de bibliotecas de clientes automática como parte do processo de criação.
+A variável `aem-clientlib-generator` O é usado para tornar a criação de bibliotecas de clientes automática como parte do processo de criação.
 
 `"aem-clientlib-generator": "^1.4.1",`
 
@@ -97,7 +97,7 @@ module.exports = {
 
 ### Criando {#building}
 
-Criar o aplicativo realmente aproveita [Webpack](https://webpack.js.org/) para tradução, além do aem-clientlib-generator para criação automática da biblioteca do cliente. Portanto, o comando build será semelhante a:
+Criar realmente os usos do aplicativo [Webpack](https://webpack.js.org/) para tradução, além do aem-clientlib-generator para criação automática da biblioteca do cliente. Portanto, o comando build será semelhante a:
 
 `"build": "webpack && clientlib --verbose"`
 
@@ -105,7 +105,7 @@ Depois de criado, o pacote pode ser carregado para uma instância AEM.
 
 ### Arquétipo de projeto do AEM {#aem-project-archetype}
 
-Qualquer projeto do AEM deve utilizar o [Arquétipo de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR), que aceita projetos SPA que usam o React ou Angular e utiliza o SDK do SPA.
+Qualquer projeto AEM deve usar o [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR), que oferece suporte a projetos SPA usando o React ou o Angular e usa o SDK do SPA.
 
 ## Estrutura do aplicativo {#application-structure}
 
@@ -134,7 +134,7 @@ ReactDOM.render(
 });
 ```
 
-A principal função do `index.js` é utilizar o `ReactDOM.render` para determinar onde inserir o aplicativo no DOM.
+A principal função do `index.js` é usar o `ReactDOM.render` para determinar onde inserir o aplicativo no DOM.
 
 Este é um uso padrão dessa função, não exclusivo deste aplicativo de exemplo.
 

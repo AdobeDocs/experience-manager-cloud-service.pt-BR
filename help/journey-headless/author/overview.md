@@ -2,10 +2,10 @@
 title: Jornada do autor de conteúdo headless do AEM
 description: Comece aqui uma jornada guiada pelos recursos headless eficientes e flexíveis do AEM, suas funcionalidades e como criar conteúdo para seu projeto.
 exl-id: fe124c6b-932a-44fc-a87b-12691aefea56
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '868'
-ht-degree: 100%
+source-wordcount: '865'
+ht-degree: 92%
 
 ---
 
@@ -39,11 +39,11 @@ Se quiser saber como a Adobe recomenda resolver casos de negócios headless com 
 
 ## Público {#audience}
 
-Essa jornada foi projetada para o perfil do autor de conteúdo. Como autor de conteúdo, você criará o conteúdo real nos Fragmentos de conteúdo.
+Essa jornada foi projetada para o perfil do autor de conteúdo. Como um Autor de conteúdo, você cria o conteúdo real nos Fragmentos de conteúdo.
 
 A jornada apresenta os requisitos, as etapas e a abordagem para a criação de conteúdo para um projeto headless do AEM. A jornada definirá perfis adicionais com as quais o autor deverá interagir para ter um projeto bem-sucedido, mas o ponto de vista da jornada é o do autor de conteúdo.
 
-As informações nesta jornada podem ser úteis para outros perfis, mas algumas informações são desnecessárias para determinadas funções. Fique atento para jornadas futuras que abordarão funções adicionais.
+As informações nesta jornada podem, é claro, ser úteis para outros perfis, mas algumas informações são supérfluas para determinadas funções. Fique atento para jornadas futuras que abordarão funções adicionais.
 
 ## A Jornada do autor de conteúdo headless {#the-journey}
 
@@ -78,8 +78,8 @@ As jornadas de documentação mostram como o AEM soluciona um problema empresari
 
 Como tal, as jornadas são projetadas para se sustentarem sozinhas. No entanto, algumas delas podem estar relacionadas entre si. Confira essas jornadas adicionais para obter mais informações sobre como os eficientes recursos do AEM funcionam juntos.
 
-* [Jornada de tradução headless do AEM](/help/journey-headless/translation/overview.md): essa jornada de documentação oferece uma ampla compreensão da tecnologia headless, como o AEM oferece conteúdo headless e como você pode traduzi-lo.
-* [Jornada de desenvolvedores headless do AEM](/help/journey-headless/developer/overview.md) - comece aqui para obter uma jornada guiada pelos recursos headless avançados e flexíveis do AEM, suas funcionalidades e como aproveitá-las em seu primeiro projeto.
+* [Jornada de tradução do AEM headless](/help/journey-headless/translation/overview.md) - essa jornada de documentação oferece uma ampla compreensão sobre a tecnologia headless, como o AEM fornece conteúdo headless e como você pode traduzi-lo.
+* [Jornada do desenvolvedor sem periféricos do AEM](/help/journey-headless/developer/overview.md) - Comece aqui para obter uma jornada guiada sobre os recursos headless avançados e flexíveis do AEM, suas capacidades e como usá-las em seu primeiro projeto de desenvolvimento.
 * [Jornada do arquiteto headless](/help/journey-headless/architect/overview.md) - comece aqui para obter uma introdução aos recursos headless avançados e flexíveis do Adobe Experience Manager as a Cloud Service e aprender como modelar o conteúdo para o seu projeto.
 * [Documentação técnica do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=pt-BR) - se você já tiver uma sólida compreensão das tecnologias headless e do AEM, poderá consultar diretamente os nossos documentos técnicos detalhados.
 * [Tutoriais do AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR) - se você prefere aprender na prática e tem conhecimento técnico, utilize nossos tutoriais práticos organizados por API e estrutura, que exploram a criação e o uso de aplicativos incorporados no AEM Headless.

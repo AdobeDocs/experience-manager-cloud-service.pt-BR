@@ -2,9 +2,9 @@
 title: Assimilar conteúdo no Target
 description: Assimilar conteúdo no Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: addfa18ed8fa45b1cfc17d4e35cbdde47b491507
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1753'
+source-wordcount: '1732'
 ht-degree: 12%
 
 ---
@@ -28,7 +28,7 @@ Siga as etapas abaixo para assimilar seu conjunto de migração da ferramenta Tr
 
    ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-01.png)
 
-1. Revise a lista de verificação de assimilação e verifique se todas as etapas foram concluídas. Essas são etapas necessárias para garantir uma assimilação bem-sucedida. Você poderá prosseguir para a etapa **Próxima** etapa somente se a lista de verificação tiver sido concluída.
+1. Revise a lista de verificação de assimilação e verifique se todas as etapas foram concluídas. Essas são etapas necessárias para garantir uma assimilação bem-sucedida. Vá para a página **Próxima** etapa somente se a lista de verificação estiver concluída.
 
    ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/Ingestion-checklist.png)
 
@@ -36,20 +36,20 @@ Siga as etapas abaixo para assimilar seu conjunto de migração da ferramenta Tr
 
    * Selecione o conjunto de migração que contém os dados extraídos como Origem.
       * Os conjuntos de migração expirarão após um período prolongado de inatividade, de modo que é esperado que a assimilação ocorra relativamente logo após a extração ter sido realizada. Revisão [Expiração do conjunto de migração](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) para obter detalhes.
-   * Selecione o ambiente de destino. É aqui que o conteúdo do conjunto de migração será assimilado. Selecione a camada. (Autor/Publicação). Os ambientes de desenvolvimento rápido não são compatíveis.
+   * Selecione o ambiente de destino. É nesse ambiente que o conteúdo do conjunto de migração é assimilado. Selecione a camada. (Autor/Publicação). Os ambientes de desenvolvimento rápido não são compatíveis.
 
    >[!NOTE]
    >As seguintes observações se aplicam à assimilação de conteúdo:
    > Se a origem foi do Autor, é recomendável assimilá-la no nível do Autor no destino. Da mesma forma, se a origem foi Publicar, o destino também deve ser Publicar.
-   > Se a camada de destino for `Author`, a instância do autor será encerrada durante a assimilação e não estará disponível para os usuários (por exemplo, autores ou qualquer pessoa que esteja executando a manutenção etc.). Isso protege o sistema e evita quaisquer alterações que possam ser perdidas ou causar um conflito de assimilação. Certifique-se de que sua equipe esteja ciente desse fato. Observe também que o ambiente parecerá hibernado durante a assimilação do autor.
+   > Se a camada de destino for `Author`, a instância do autor é encerrada durante a duração da assimilação e fica indisponível para os usuários (por exemplo, autores ou qualquer pessoa que esteja executando a manutenção). O motivo é proteger o sistema e evitar quaisquer alterações que possam ser perdidas ou causar um conflito de assimilação. Confirme se sua equipe está ciente desse fato. Observe também que o ambiente parece hibernado durante a assimilação do autor.
    > Você pode executar a etapa opcional de pré-cópia para acelerar significativamente a fase de assimilação. Consulte [Assimilar com AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) para obter mais detalhes.
-   > Se a assimilação com pré-cópia for usada (para S3 ou Azure Data Store), é recomendável executar a assimilação do autor primeiro sozinha. Isso irá acelerar a Assimilação de publicação quando for executado posteriormente.
-   > As assimilações não são compatíveis com um destino de RDE (Rapid Development Environment, ambiente de desenvolvimento rápido). Eles não aparecerão como uma possível escolha de destino, mesmo se o usuário tiver acesso a ele.
+   > Se a assimilação com pré-cópia for usada (para S3 ou Azure Data Store), é recomendável executar a assimilação do autor primeiro sozinha. Isso acelera a Assimilação de publicação quando executada posteriormente.
+   > As assimilações não são compatíveis com um destino de RDE (Rapid Development Environment, ambiente de desenvolvimento rápido) e não aparecem como uma possível opção de destino, mesmo que o usuário tenha acesso a ele.
 
    >[!IMPORTANT]
    > Os seguintes avisos importantes se aplicam à assimilação de conteúdo:
-   > Você poderá iniciar uma assimilação no ambiente de destino somente se pertencer ao local **Administradores do AEM** grupo no serviço de autor do Cloud Service de destino. Se não conseguir iniciar uma assimilação, consulte [Não foi possível iniciar a assimilação](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) para obter mais detalhes.
-   > Se a configuração **Limpar** estiver ativado antes da assimilação, ele exclui todo o repositório existente e cria um novo repositório para assimilar conteúdo. Isso significa que ele redefine todas as configurações, incluindo permissões na instância do Cloud Service de destino. Isso também ocorre para um usuário administrador adicionado à variável **administradores** grupo. Você precisará ser adicionado novamente ao grupo de administradores para iniciar uma assimilação.
+   > Você pode iniciar uma assimilação no ambiente de destino somente se pertencer ao local **Administradores do AEM** grupo no serviço de autor do Cloud Service de destino. Se não conseguir iniciar uma assimilação, consulte [Não foi possível iniciar a assimilação](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) para obter mais detalhes.
+   > Se a configuração **Limpar** estiver ativado antes da assimilação, ele exclui todo o repositório existente e cria um novo repositório para assimilar conteúdo. Isso significa que ele redefine todas as configurações, incluindo permissões na instância do Cloud Service de destino. Isso também ocorre para um usuário administrador adicionado à variável **administradores** grupo. Você deve ser adicionado novamente ao grupo de administradores para iniciar uma assimilação.
 
 1. Clique em **Assimilar**
 
@@ -118,11 +118,11 @@ Você precisará recuperar o token de migração manualmente clicando no link &q
 
 >[!NOTE]
 >
->O token estará disponível para usuários que pertencem ao local **Administradores do AEM** grupo no serviço de autor do Cloud Service de destino.
+>O token está disponível para usuários que pertencem ao local **Administradores do AEM** grupo no serviço de autor do Cloud Service de destino.
 
 ### Não foi possível iniciar a assimilação {#unable-to-start-ingestion}
 
-Você poderá iniciar uma assimilação no ambiente de destino somente se pertencer ao local **Administradores do AEM** grupo no serviço de autor do Cloud Service de destino. Se você não pertencer ao grupo de administradores do AEM, verá um erro como mostrado abaixo ao tentar iniciar uma assimilação. Você pode pedir ao administrador para adicioná-lo ao local **Administradores do AEM** ou solicite o token propriamente dito, que você pode colar na **Entrada do token de migração** campo.
+Você pode iniciar uma assimilação no ambiente de destino somente se pertencer ao local **Administradores do AEM** grupo no serviço de autor do Cloud Service de destino. Se você não pertencer ao grupo de administradores do AEM, verá um erro como mostrado abaixo ao tentar iniciar uma assimilação. Você pode pedir ao administrador para adicioná-lo ao local **Administradores do AEM** ou solicite o token propriamente dito, que você pode colar na **Entrada do token de migração** campo.
 
 ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
 
@@ -138,7 +138,7 @@ Isso indica que o Cloud Acceleration Manager não conseguiu atingir o serviço d
 > 
 > O campo &quot;Token de migração&quot; é exibido porque, em alguns casos, a recuperação desse token é o que realmente não é permitido. Ao permitir que seja fornecido manualmente, ele pode permitir que o usuário inicie a assimilação rapidamente, sem nenhuma ajuda adicional. Se o token for fornecido e a mensagem ainda for exibida, o problema não foi recuperar o token.
 
-* O AEM as a Cloud Service mantém o estado do ambiente e, ocasionalmente, pode precisar reiniciar o serviço de migração por vários motivos normais. Se esse serviço estiver sendo reiniciado, ele não poderá ser acessado, mas estará disponível em breve.
+* O AEM as a Cloud Service mantém o estado do ambiente e, ocasionalmente, pode precisar reiniciar o serviço de migração por vários motivos normais. Se esse serviço estiver sendo reiniciado, ele não poderá ser acessado, mas geralmente estará disponível em breve.
 * É possível que outro processo esteja sendo executado na instância. Por exemplo, se o Release Orchestrator estiver aplicando uma atualização, o sistema pode estar ocupado e o serviço de migração pode ficar indisponível regularmente. Isso e a possibilidade de corromper o estágio ou a instância de produção é o motivo pelo qual é altamente recomendável pausar as atualizações durante uma assimilação.
 * Se um [A Inclui na lista de permissões IP foi aplicada](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) por meio do Cloud Manager, isso impedirá que o Cloud Acceleration Manager chegue ao serviço de migração. Um endereço IP não pode ser adicionado para assimilações porque seu endereço é muito dinâmico. Atualmente, a única solução é desativar a lista de permissões IP enquanto a assimilação está em execução.
 * Pode haver outros motivos que precisem de investigação. Se a assimilação continuar a falhar, entre em contato com o Atendimento ao cliente da Adobe.

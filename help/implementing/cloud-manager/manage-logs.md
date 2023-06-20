@@ -2,10 +2,10 @@
 title: Acesso e gerenciamento de registros
 description: Saiba como acessar e gerenciar logs para auxiliar seu processo de desenvolvimento no AEM as a Cloud Service.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: a9303c659730022b7417fc9082dedd26d7cbccca
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '272'
-ht-degree: 100%
+source-wordcount: '270'
+ht-degree: 91%
 
 ---
 

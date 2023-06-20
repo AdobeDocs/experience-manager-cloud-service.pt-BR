@@ -4,9 +4,9 @@ description: Saiba como os modelos de site do AEM podem ser usados para predefin
 feature: Administering
 role: Admin
 exl-id: dc20f26c-59f0-4244-9797-926f25ed4da3
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '290'
 ht-degree: 25%
 
 ---
@@ -17,7 +17,7 @@ Saiba como os modelos de site do AEM podem ser usados para predefinir a estrutur
 
 ## Visão geral {#overview}
 
-Para permitir que os administradores do AEM criem sites rapidamente adaptados às necessidades do negócio, o AEM oferece suporte à criação de novos sites usando modelos de site e temas de site.
+Para permitir que os administradores do AEM criem sites rapidamente adaptados às necessidades comerciais, o AEM oferece suporte à criação de novos sites usando modelos de site e temas de site.
 
 * Um **Modelo de site AEM** geralmente contém a estrutura e o conteúdo de base do site, bem como informações de estilo (conhecidas como tema do site ) para iniciar o novo site rapidamente. Esses modelos são bastante eficientes, pois podem ser reutilizados e personalizados. E como é possível ter vários modelos disponíveis na sua instância do AEM, você tem a flexibilidade de criar sites diferentes para atender a várias necessidades comerciais.
 * Um **Tema do site AEM** é um pacote que contém o CSS, o JavaScript e os recursos estáticos que definem o estilo do site do AEM e está em conformidade com a estrutura de um tema de site do AEM.

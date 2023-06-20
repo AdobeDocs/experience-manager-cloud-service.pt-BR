@@ -2,10 +2,10 @@
 title: Configurações e o navegador de configuração
 description: Entenda as configurações do AEM e como elas gerenciam as configurações do espaço de trabalho no AEM.
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
-source-git-commit: 3be936be09f205a73dd053ac28df936d58e50919
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1498'
-ht-degree: 6%
+source-wordcount: '1492'
+ht-degree: 4%
 
 ---
 
@@ -62,7 +62,7 @@ O Navegador de configuração permite que um administrador crie, gerencie e conf
 
 >[!NOTE]
 >
->Somente é possível criar configurações usando o Navegador de configuração se o usuário tiver `admin` direitos. `admin` também são necessários direitos para atribuir direitos de acesso à configuração ou modificar uma configuração de outra forma.
+>Somente é possível criar configurações usando o Navegador de configuração se o usuário tiver `admin` direitos. `admin` Os direitos de também são necessários para atribuir direitos de acesso à configuração ou modificar uma configuração de outra forma.
 
 #### Criação de uma configuração {#creating-a-configuration}
 
@@ -75,8 +75,8 @@ O Navegador de configuração permite que um administrador crie, gerencie e conf
    ![Criar configuração](assets/configuration-create.png)
 
    * O **Título** deve ser descritivo.
-   * O **Nome** se tornará o nome do nó no repositório.
-      * Ele será gerado automaticamente com base no título e ajustado de acordo com as [convenções de nomenclatura do AEM.](naming-conventions.md)
+   * A variável **Nome** torna-se o nome do nó no repositório.
+      * Ele é gerado automaticamente com base no título e ajustado de acordo com [Convenções de nomenclatura do AEM.](naming-conventions.md)
       * Ele pode ser ajustado, se necessário.
 1. Verifique o tipo de configurações que deseja permitir.
    * [Segmentos do Context Hub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)

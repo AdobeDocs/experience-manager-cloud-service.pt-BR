@@ -2,10 +2,10 @@
 title: Introdução ao Editor visual universal
 description: Saiba como o Editor visual universal (também conhecido como Editor universal) permite realizar a edição de experiências headless e headful no estilo “WYSIWYG” (“o que você vê é o formato final”). Entenda como ele pode ajudar criadores de conteúdo a entregar experiências excepcionais, aumentar a velocidade do conteúdo e como ele oferece uma experiência de desenvolvedor de última geração.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '934'
-ht-degree: 100%
+source-wordcount: '933'
+ht-degree: 89%
 
 ---
 
@@ -27,11 +27,11 @@ O Editor universal pode ser utilizado em qualquer implementação, para qualquer
 
 ### Qualquer implementação {#any-implementation}
 
-Visto que o Editor universal permite criar experiências de diferentes maneiras, os autores podem utilizá-lo em qualquer implementação para realizar uma edição com contexto.
+Como as experiências podem ser criadas de várias maneiras diferentes, qualquer implementação pode usar o Editor universal para que os autores possam realizar edição no contexto.
 
-Muitos usuários acreditam que uma implementação headless limita a edição de conteúdo dos autores a uma interface baseada em formulário, mas isso não acontece no Editor universal.
+Os usuários geralmente pensam que uma implementação headless limita os autores à edição de todo o conteúdo em uma interface do usuário baseada em formulários, mas isso não é verdade com o Universal Editor
 
-Os requisitos para uma implementação utilizar o Editor universal da melhor forma possível são bastante simples e abrangem:
+Os requisitos para uma implementação usar o Editor universal são diretos e oferecem suporte para o seguinte:
 
 * **Qualquer arquitetura**: renderização do lado do servidor, do lado da borda, do lado do cliente etc.
 * **Qualquer estrutura**: AEM básico ou qualquer estrutura de terceiros, como React, Next.js, Angular etc.
@@ -57,7 +57,7 @@ Ao separar a experiência de edição de conteúdo de qualquer sistema de entreg
 
 ![O valor do Editor universal](assets/value.png)
 
-* **Entrega de experiências excepcionais**: com o objetivo de permitir que os profissionais criem um experiência atrativa para os visitantes, o Editor universal permite a criação e a edição do conteúdo no contexto da visualização. Isso permite que eles criem um conteúdo que se ajuste ao design, possibilitando uma experiência significativa para os visitantes.
+* **Fornecer experiências excepcionais** - Para permitir que os profissionais criem uma experiência atraente para os visitantes, o Editor universal permite que os profissionais criem e editem o conteúdo no contexto da visualização. Isso permite que eles criem um conteúdo que se ajuste ao design, possibilitando uma experiência significativa para os visitantes.
 * **Aumento da velocidade do conteúdo**: para simplificar a administração do fluxo de trabalho, o Editor universal permite editar o conteúdo da visualização a fim de orientar os profissionais, mostrando apenas as opções que são relevantes para o contexto e tornando o fluxo de trabalho independente das fontes de conteúdo.
 * **Experiência de desenvolvedor de última geração**: para se adequar ao atual cenário heterogêneo dos aplicativos, o Editor universal é completamente independente e não favorece tecnologias específicas, permitindo que os desenvolvedores utilizem sua tecnologia preferida para implementar a experiência.
 

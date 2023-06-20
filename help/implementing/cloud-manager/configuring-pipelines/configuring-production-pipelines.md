@@ -3,10 +3,10 @@ title: Configuração de pipelines de produção
 description: Saiba como configurar pipelines de produção para compilar e implantar seu código em ambientes de produção.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1520'
-ht-degree: 100%
+source-wordcount: '1513'
+ht-degree: 91%
 
 ---
 
@@ -51,7 +51,7 @@ Depois de configurar seu programa e ter pelo menos um ambiente usando a interfac
    **Comportamento de falhas importantes da métrica** - Durante a configuração ou edição do pipeline, o **Gerente de implantação** tem a opção de definir o comportamento do pipeline quando uma falha importante é encontrada em qualquer um dos quality gates (portais de qualidade). As opções disponíveis são:
 
    * **Sempre perguntar** - Essa é a configuração padrão e requer intervenção manual em qualquer falha importante.
-   * **Falhar imediatamente** - Se selecionado, o pipeline será cancelado sempre que ocorrer uma falha importante. É como emular um usuário que rejeita manualmente cada falha.
+   * **Falha imediata** - Se selecionado, o pipeline será cancelado sempre que ocorrer uma falha importante. É como emular um usuário que rejeita manualmente cada falha.
    * **Continuar imediatamente** - Se selecionado, o pipeline continuará automaticamente sempre que ocorrer uma falha importante. É como emular um usuário que aprova manualmente cada falha.
 
    ![Configuração do pipeline de produção](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-configuration.png)
@@ -73,6 +73,7 @@ Para concluir a configuração do pipeline de produção de front-end, siga esta
 1. Na guia **Código-fonte**, você deve definir as opções a seguir.
 
    * **Repositório** - Essa opção define de qual repositório Git o pipeline deve recuperar o código.
+
    >[!TIP]
    > 
    >Consulte o documento [Adição e gerenciamento de repositórios](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) para saber como adicionar e gerenciar repositórios no Cloud Manager.
@@ -101,6 +102,7 @@ Para concluir a configuração do pipeline de produção com código de pilha co
 1. Na guia **Código-fonte**, você deve definir as opções a seguir.
 
    * **Repositório** - Essa opção define de qual repositório Git o pipeline deve recuperar o código.
+
    >[!TIP]
    > 
    >Consulte o documento [Adição e gerenciamento de repositórios](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) para saber como adicionar e gerenciar repositórios no Cloud Manager.
@@ -124,7 +126,7 @@ Para concluir a configuração do pipeline de produção com código de pilha co
 
    ![Definição de um caminho para a Auditoria de experiência](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit3.png)
 
-1. Clique em **Adicionar página** e o caminho será preenchido automaticamente com o endereço do ambiente e adicionado à tabela de caminhos.
+1. Clique em **Adicionar página** e o caminho é preenchido automaticamente com o endereço do ambiente e adicionado à tabela de caminhos.
 
    ![Caminho salvo na tabela](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit4.png)
 
@@ -135,7 +137,7 @@ Para concluir a configuração do pipeline de produção com código de pilha co
 
 1. Clique em **Salvar** para salvar o pipeline.
 
-Os caminhos configurados para a Auditoria de experiência serão enviados ao serviço e avaliados de acordo com os testes de desempenho, acessibilidade, SEO (otimização do mecanismo de pesquisa), práticas recomendadas e PWA (Aplicativo Web Progressivo) quando o pipeline for executado. Consulte [Noções básicas sobre os resultados da Auditoria de experiência](/help/implementing/cloud-manager/experience-audit-testing.md) para obter mais detalhes.
+Os caminhos configurados para a Auditoria de experiência são enviados ao serviço e avaliados de acordo com os testes de desempenho, acessibilidade, SEO (Otimização do mecanismo de pesquisa), práticas recomendadas e PWA (Aplicativo Web Progressivo) quando o pipeline é executado. Consulte [Noções básicas sobre os resultados da Auditoria de experiência](/help/implementing/cloud-manager/experience-audit-testing.md) para obter mais detalhes.
 
 O pipeline é salvo e agora você pode [gerenciar seus pipelines](managing-pipelines.md) no cartão **Pipelines** na página **Visão geral do programa**.
 
@@ -148,6 +150,7 @@ Para concluir a configuração do pipeline de produção com código de pilha co
 1. Na guia **Código-fonte**, você deve definir as opções a seguir.
 
    * **Repositório** - Essa opção define de qual repositório Git o pipeline deve recuperar o código.
+
    >[!TIP]
    > 
    >Consulte o documento [Adição e gerenciamento de repositórios](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) para saber como adicionar e gerenciar repositórios no Cloud Manager.
@@ -174,7 +177,7 @@ O pipeline é salvo e agora você pode [gerenciar seus pipelines](managing-pipel
 
 Com os pipelines de front-end, é dada mais independência aos desenvolvedores de front-end e o processo de desenvolvimento pode ser acelerado.
 
-Consulte o documento [Desenvolvimento de Sites com o pipeline de front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) para saber como esse processo funciona, além de algumas considerações a serem feitas a fim de aproveitar ao máximo o potencial desse processo.
+Consulte o documento [Desenvolvimento de sites com o pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) para saber como esse processo funciona, além de algumas considerações a serem feitas para aproveitar ao máximo o potencial desse processo.
 
 ## Ignorar pacotes do Dispatcher {#skip-dispatcher-packages}
 

@@ -2,9 +2,9 @@
 title: Amostra de candidatos da loja do ContextHub
 description: O ContextHub fornece vários exemplos de candidatos de armazenamento que você pode usar em suas soluções
 exl-id: 9493d91e-0b23-4dc4-a014-d8d13687efad
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '464'
 ht-degree: 1%
 
 ---
@@ -103,7 +103,7 @@ O armazenamento usa uma árvore de dados semelhante ao seguinte exemplo:
 
 >[!NOTE]
 >
->Uma política de segurança introduzida no Chrome 50.x exige que todas as chamadas relacionadas à geolocalização sejam feitas em uma conexão segura. Portanto, o AEM força o uso de https para chamadas de API de geolocalização se o AEM também estiver em execução em https. Caso contrário, http é usado para estar em conformidade com a política da mesma origem.
+>Uma política de segurança introduzida no Chrome 50.x exige que todas as chamadas relacionadas à geolocalização sejam feitas em uma conexão segura. Portanto, o AEM força o uso de https para chamadas de API de geolocalização se o AEM também estiver em execução em https. Caso contrário, o http será usado para estar em conformidade com a política da mesma origem.
 >
 >Consulte [esta publicação do blog do Google](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) para obter mais detalhes sobre a alteração no Chrome.
 

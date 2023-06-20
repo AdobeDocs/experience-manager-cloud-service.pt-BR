@@ -3,9 +3,9 @@ title: Geração de tokens de acesso para APIs do lado do servidor (herdado)
 description: Saiba como facilitar a comunicação entre um servidor de terceiros e o AEM as a Cloud Service gerando um token JWT seguro
 hidefromtoc: true
 exl-id: 6561870c-cbfe-40ef-9efc-ea75c88c4ed7
-source-git-commit: 98eff568686c72c626d2bf77d82e8c3f224eda42
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1360'
+source-wordcount: '1359'
 ht-degree: 0%
 
 ---
@@ -122,6 +122,7 @@ Os desenvolvedores devem testar usando uma instância de desenvolvimento de seu 
 Consulte a [Documentação das Diretrizes do desenvolvedor](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console) para obter informações sobre as permissões necessárias para usar o console do desenvolvedor do AEM as a Cloud Service.
 
 >[!NOTE]
+>
 O token de acesso de desenvolvimento local é válido por no máximo 24 horas após as quais deve ser gerado novamente usando o mesmo método.
 
 Os desenvolvedores podem usar esse token para fazer chamadas de seu aplicativo de teste não-AEM para um ambiente as a Cloud Service AEM. Normalmente, o desenvolvedor usa esse token com o aplicativo não-AEM em seu próprio notebook. Além disso, o AEM as a Cloud normalmente é um ambiente de não produção.
@@ -147,9 +148,10 @@ Por padrão, as credenciais do AEM as a Cloud Service expiram após um ano. Para
 
 ![Atualização de credencial](assets/credential-refresh.png)
 
-Depois de pressionar o botão, um novo conjunto de credenciais será gerado. Você pode atualizar seu armazenamento secreto com as novas credenciais e validar se elas funcionam como deveriam.
+Depois de pressionar o botão, um novo conjunto de credenciais é gerado. Você pode atualizar seu armazenamento secreto com as novas credenciais e validar se elas funcionam como deveriam.
 
 >[!NOTE]
+>
 Depois de clicar na guia **Atualizar Credenciais de Serviço** As credenciais antigas permanecem registradas até que expirem, mas somente o conjunto mais recente está disponível para ser visto no Developer Console a qualquer momento.
 
 ## Revogação de Credenciais de Serviço {#service-credentials-revocation}

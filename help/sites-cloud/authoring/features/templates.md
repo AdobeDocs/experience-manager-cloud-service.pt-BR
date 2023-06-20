@@ -2,9 +2,9 @@
 title: Criação de modelos de páginas
 description: O modelo define a estrutura da página resultante e, com o editor de modelo, criar e manter modelos não é mais uma tarefa somente para desenvolvedores
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '4596'
+source-wordcount: '4595'
 ht-degree: 62%
 
 ---
@@ -91,7 +91,7 @@ Ao criar um novo modelo editável, você:
 >
 >Nunca insira qualquer informação que precise ser internacionalizada em um modelo. <!-- Never enter any information that needs to be [internationalized](/help/sites-developing/i18n.md) into a template.-->
 >
->Para elementos de modelo, como cabeçalhos e rodapés que devem ser localizados, aproveite os recursos de [localização dos componentes principais.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=pt-BR)
+>Para elementos de modelo, como cabeçalhos e rodapés que devem ser localizados, use o [recursos de localização dos componentes principais.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=pt-BR)
 
 ### Criação de uma pasta de modelo - Administrador {#creating-a-template-folder-admin}
 
@@ -202,7 +202,7 @@ Um modelo pode ser disponibilizado ou indisponibilizado para determinadas ramifi
 
    `/conf/<your-folder>/settings/wcm/templates/.*`
 
-   A ordem dos caminhos é irrelevante, todos os caminhos serão verificados e todos os modelos serão recuperados.
+   A ordem dos caminhos é irrelevante. Todos os caminhos são verificados e todos os modelos são recuperados.
 
    >[!NOTE]
    >
@@ -513,18 +513,18 @@ Embora todo o conteúdo criado no modo **Estrutura** seja visível no **Conteúd
 
 * Os componentes desbloqueados que estão disponíveis para edição são marcados. Quando selecionados, eles têm uma borda azul:
 
-   ![Modo Conteúdo inicial](/help/sites-cloud/authoring/assets/templates-initial-content-mode.png)
+  ![Modo Conteúdo inicial](/help/sites-cloud/authoring/assets/templates-initial-content-mode.png)
 
 * Os componentes desbloqueados têm uma barra de ferramentas, permitindo editar e configurar o conteúdo:
 
-   ![Componente desbloqueado](/help/sites-cloud/authoring/assets/templates-unlocked-components.png)
+  ![Componente desbloqueado](/help/sites-cloud/authoring/assets/templates-unlocked-components.png)
 
 * Se um componente do contêiner foi desbloqueado (no modo **estrutura**), você pode adicionar novos componentes ao contêiner (no modo **Conteúdo inicial**). Os componentes adicionados no modo **Conteúdo inicial** podem ser movidos para ou excluído das páginas resultantes.
 
-   Você pode adicionar o componente utilizando a área **Arraste componentes até aqui** ou a opção **Inserir novo componente** na barra de ferramentas do contêiner apropriado.
+  Você pode adicionar o componente utilizando a área **Arraste componentes até aqui** ou a opção **Inserir novo componente** na barra de ferramentas do contêiner apropriado.
 
-   ![Adicionar componente](/help/sites-cloud/authoring/assets/templates-add-component.png)
-   ![Adicionar componente](/help/sites-cloud/authoring/assets/templates-add-component-dialog.png)
+  ![Adicionar componente](/help/sites-cloud/authoring/assets/templates-add-component.png)
+  ![Adicionar componente](/help/sites-cloud/authoring/assets/templates-add-component-dialog.png)
 
 * Se o conteúdo inicial do modelo for atualizado depois que as páginas forem criadas com base no modelo, então essas páginas não serão afetadas por alterações no conteúdo inicial no modelo.
 
@@ -566,24 +566,24 @@ Para acessar a caixa de diálogo **Política da página**:
 
 * É possível selecionar uma política existente para a página na lista suspensa **Selecionar política**.
 
-   ![Seletor de políticas](/help/sites-cloud/authoring/assets/templates-policy-selector.png)
+  ![Seletor de políticas](/help/sites-cloud/authoring/assets/templates-policy-selector.png)
 
-   Uma nova política pode ser adicionada ao selecionar o botão adicionar ao lado da lista suspensa **Selecionar política**. Um novo título deve ser especificado no campo **Título da política**.
+  Uma nova política pode ser adicionada ao selecionar o botão adicionar ao lado da lista suspensa **Selecionar política**. Um novo título deve ser especificado no campo **Título da política**.
 
-   ![Botão Adicionar política](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
+  ![Botão Adicionar política](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-   A política existente selecionada na lista suspensa **Selecionar política** pode ser copiada como uma nova política usando o botão copiar ao lado do menu suspenso. Um novo título deve ser especificado no campo **Título da política**. Por padrão, a política copiada será denominada **Cópia de X**, onde X é o título da política copiada.
+  A política existente selecionada na lista suspensa **Selecionar política** pode ser copiada como uma nova política usando o botão copiar ao lado do menu suspenso. Um novo título deve ser especificado no campo **Título da política**. Por padrão, a política copiada será denominada **Cópia de X**, onde X é o título da política copiada.
 
-   ![Botão Copiar política](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
+  ![Botão Copiar política](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
 * Defina um título para a política no campo **Título da política**. É necessário que a política tenha um título para que possa ser facilmente selecionada na lista suspensa **Selecionar política**.
 
-   ![Título da política](/help/sites-cloud/authoring/assets/templates-policy-title.png)
+  ![Título da política](/help/sites-cloud/authoring/assets/templates-policy-title.png)
 
 * É opcional uma descrição da política no campo **Descrição da política**.
 * Na seção **Outros modelos que também utilizam a política selecionada**, você pode ver qual modelo utiliza a política selecionada na lista suspensa **Selecionar política**.
 
-   ![Uso de políticas](/help/sites-cloud/authoring/assets/templates-policy-use.png)
+  ![Uso de políticas](/help/sites-cloud/authoring/assets/templates-policy-use.png)
 
 #### Propriedades da página {#page-properties}
 
@@ -593,17 +593,17 @@ Usando as propriedades de página, é possível definir as bibliotecas do lado d
 
 * Especifique as bibliotecas do lado do cliente que você deseja aplicar às páginas criadas com este modelo. Inserção do nome de uma biblioteca no campo de texto na variável **Bibliotecas do cliente** seção.
 
-   ![Bibliotecas do lado do cliente](/help/sites-cloud/authoring/assets/templates-client-side-libraries.png)
+  ![Bibliotecas do lado do cliente](/help/sites-cloud/authoring/assets/templates-client-side-libraries.png)
 
 * Se as várias bibliotecas forem necessárias, clique no botão Adicionar para adicionar um campo de texto extra para o nome da biblioteca.
 
-   ![Botão Adicionar](/help/sites-cloud/authoring/assets/templates-add-button.png)
+  ![Botão Adicionar](/help/sites-cloud/authoring/assets/templates-add-button.png)
 
-   Adicione quantos campos de texto forem necessário para suas bibliotecas do lado do cliente.
+  Adicione quantos campos de texto forem necessário para suas bibliotecas do lado do cliente.
 
 * Defina a posição relativa das bibliotecas conforme necessário, ao arrastar os campos usando a alça de arrastar.
 
-   ![Alça de arrastar](/help/sites-cloud/authoring/assets/templates-drag-handle.png)
+  ![Alça de arrastar](/help/sites-cloud/authoring/assets/templates-drag-handle.png)
 
 >[!NOTE]
 >
@@ -633,13 +633,16 @@ Ao criar modelos, você deve considerar:
 
       * Elas são aplicadas imediatamente às páginas resultantes.
       * A publicação do template alterado ainda é necessária para que os visitantes vejam as alterações.
+
    * Alterações nas políticas de conteúdo e configurações de design:
 
       * Elas se aplicam imediatamente às páginas resultantes.
       * A publicação das alterações é necessária para que os visitantes vejam as alterações.
+
    * Alterações no conteúdo inicial:
 
       * Elas se aplicam somente às páginas criadas após as alterações no modelo.
+
    * As alterações no layout dependem se o componente modificado faz parte de:
 
       * Somente estrutura - aplicado imediatamente

@@ -2,10 +2,10 @@
 title: Tarefas de manutenção no AEM as a Cloud Service
 description: Tarefas de manutenção no AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: d4d1e97df58f8bd0951f0d5b0bf46e118b163457
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1111'
-ht-degree: 65%
+source-wordcount: '1105'
+ht-degree: 60%
 
 ---
 
@@ -24,7 +24,7 @@ Em versões anteriores do AEM, você podia configurar as tarefas de manutenção
 
 >[!CAUTION]
 >
->A Adobe reserva o direito de substituir as configurações da tarefa de manutenção de um cliente para atenuar problemas como degradação de desempenho.
+>O Adobe reserva o direito de substituir as configurações da tarefa de manutenção de um cliente para atenuar problemas como degradação de desempenho.
 
 A tabela a seguir ilustra as tarefas de manutenção disponíveis no momento do lançamento do AEM as a Cloud Service.
 

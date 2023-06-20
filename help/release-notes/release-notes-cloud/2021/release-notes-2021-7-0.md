@@ -2,9 +2,9 @@
 title: Notas de versão do [!DNL Adobe Experience Manager]  as a Cloud Service 2021.7.0.
 description: Notas de versão do [!DNL Adobe Experience Manager]  as a Cloud Service 2021.7.0.
 exl-id: 848f6a29-2e0f-4976-8ed7-6b7f69408c1b
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1316'
+source-wordcount: '1315'
 ht-degree: 36%
 
 ---
@@ -34,7 +34,7 @@ Dê uma olhada no [Visão geral da versão de julho de 2021](https://video.tv.ad
 
 ### Novidades {#what-is-new-foundation}
 
-* Configuração mais flexível do dispatcher: os projetos podem ser organizados mais facilmente. Por exemplo, agora você pode incluir vários arquivos de regras de regravação que refletem a estrutura do site. [Saiba mais sobre](/help/implementing/dispatcher/disp-overview.md#validation-debug) esse modo flexível, incluindo como estruturar a configuração do dispatcher para aproveitar ao máximo.
+* Configuração mais flexível do dispatcher: os projetos podem ser organizados mais facilmente. Por exemplo, agora você pode incluir vários arquivos de regras de regravação que refletem a estrutura do site. [Saiba mais sobre](/help/implementing/dispatcher/disp-overview.md#validation-debug) esse modo flexível, incluindo como estruturar a configuração do dispatcher para que você possa aproveitar ao máximo.
 * A interface de replicação de árvore na guia &quot;Distribuir&quot; do agente de replicação deve ser considerada obsoleta e deve ser removida após 30 de setembro. [Saiba mais sobre](/help/operations/replication.md#tree-activation) estratégias alternativas de replicação.
 * Pacote `org.apache.sling.datasource-1.0.4.jar` O suporte à fonte de dados do Sling foi removido, pois tem funcionalidades desatualizadas e não está em uso pelos clientes.
 
@@ -42,23 +42,23 @@ Dê uma olhada no [Visão geral da versão de julho de 2021](https://video.tv.ad
 
 ### Novos recursos no [!DNL Assets] {#assets-features}
 
-* A funcionalidade de Automatização de conteúdo permite [!DNL Experience Manager Assets] aproveitar o [!DNL Adobe Creative Cloud] APIs para automatizar a produção de ativos em escala. Isso melhora a velocidade do conteúdo diminuindo drasticamente o tempo gasto e as iterações necessárias para criar variações do mesmo ativo. A funcionalidade não requer programação e funciona no DAM. Consulte [gerar variações de ativos usando a integração com o Creative Cloud](/help/assets/cc-api-integration.md).
+* A funcionalidade de Automatização de conteúdo permite [!DNL Experience Manager Assets] use o [!DNL Adobe Creative Cloud] APIs para automatizar a produção de ativos em escala. Isso melhora a velocidade do conteúdo diminuindo drasticamente o tempo gasto e as iterações necessárias para criar variações do mesmo ativo. A funcionalidade não requer programação e funciona no DAM. Consulte [gerar variações de ativos usando a integração com o Creative Cloud](/help/assets/cc-api-integration.md).
 
-* [!DNL Experience Manager Assets] inclui o [!DNL Document Cloud] Visualizador de PDF para visualizar documentos PDF nativamente. Esse recurso permite que os usuários visualizem arquivos PDF de várias páginas sem processamento ou conversão de arquivos. Este recurso melhora a paridade com o [!DNL Experience Manager] 6.5. Os controles disponíveis no visualizador incluem zoom, navegar até páginas, desencaixar controles e visualizar em tela inteira. O caso dos usuários também pode ser visualizado e ir para páginas e marcadores. Comentários no próprio arquivo são aceitos, e comentários e anotações sobre o conteúdo no arquivo PDF serão adicionados em uma versão futura.
+* [!DNL Experience Manager Assets] inclui o [!DNL Document Cloud] Visualizador de PDF para visualizar documentos PDF nativamente. Esse recurso permite que os usuários visualizem arquivos PDF de várias páginas sem processamento ou conversão de arquivos. Este recurso melhora a paridade com o [!DNL Experience Manager] 6.5. Os controles disponíveis no visualizador incluem zoom, navegar até páginas, desencaixar controles e visualizar em tela inteira. O caso dos usuários também pode ser visualizado e ir para páginas e marcadores. Comentários no próprio arquivo são aceitos. Comentários e anotações sobre o conteúdo no arquivo PDF serão adicionados em uma versão futura.
 
-   ![Visualizar arquivos PDF em [!DNL Experience Manager] uso do Visualizador de PDF](/help/assets/assets/preview-pdf-file-viewer.png)
+  ![Visualizar arquivos PDF em [!DNL Experience Manager] uso do Visualizador de PDF](/help/assets/assets/preview-pdf-file-viewer.png)
 
 * A funcionalidade de download do Linkshare usa downloads assíncronos que aumentam a velocidade de download. Consulte [Baixar ativos compartilhados usando o compartilhamento de link](/help/assets/download-assets-from-aem.md#link-share-download).
 
-   ![Baixar caixa de entrada](/help/assets/assets/download-inbox.png)
+  ![Baixar caixa de entrada](/help/assets/assets/download-inbox.png)
 
 * As configurações de exibição são aprimoradas para permitir que os usuários escolham uma exibição padrão e um parâmetro de classificação padrão.
 
-   ![Definir exibição padrão em [!UICONTROL Configurações de exibição]](/help/assets/assets/view-settings-for-defaults.png)
+  ![Definir exibição padrão em [!UICONTROL Configurações de exibição]](/help/assets/assets/view-settings-for-defaults.png)
 
 * Os usuários podem pesquisar e filtrar as pastas com base em predicados de propriedade.
 
-   ![Filtrar pastas de pesquisa usando predicados de pesquisa](/help/assets/assets/search-folders-via-predicates.png)
+  ![Filtrar pastas de pesquisa usando predicados de pesquisa](/help/assets/assets/search-folders-via-predicates.png)
 
 ### Novos recursos disponíveis na [!DNL Assets] canal de pré-lançamento {#assets-prerelease-features}
 

@@ -2,10 +2,10 @@
 title: Implantação de código
 description: Saiba como implantar seu código usando os pipelines do Cloud Manager no AEM as a Cloud Service.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: 63e38485e2f15c6947c7fba1848d47eda4cc900e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1221'
-ht-degree: 100%
+source-wordcount: '1215'
+ht-degree: 94%
 
 ---
 
@@ -82,14 +82,14 @@ O **Teste de preparo** envolve essas etapas.
 * **Auditoria de experiência** - Essa etapa no pipeline é sempre executada e não pode ser ignorada. Conforme um pipeline de produção é executado, uma etapa de auditoria de experiência é incluída após o teste funcional personalizado que realizará as verificações.
    * As páginas configuradas são enviadas ao serviço e avaliadas.
    * Os resultados são informativos e mostram as pontuações e as alterações entre as pontuações atual e anterior.
-   * Esse insight é importante para determinar se uma regressão será introduzida com a implantação atual.
+   * Esse insight é importante para determinar se há uma regressão introduzida com a implantação atual.
    * Consulte o documento [Noções básicas sobre os resultados da auditoria de experiência](/help/implementing/cloud-manager/experience-audit-testing.md) para obter mais detalhes.
 
 ![Teste de preparo](assets/stage-testing.png)
 
 ## Fase de implantação em produção {#deployment-production}
 
-O processo de implantação nas topologias de produção é um pouco diferente para minimizar o impacto dos visitantes em um site do AEM.
+O processo de implantação nas topologias de produção é um pouco diferente para minimizar o impacto dos visitantes em um site AEM.
 
 As implantações em produção geralmente seguem as mesmas etapas descritas anteriormente, mas de maneira gradual.
 
@@ -149,7 +149,7 @@ Limitações:
 
 ### Como identificar a se uma reexecução foi iniciada
 
-Para identificar se uma execução foi reexecutada, analise o campo do acionador. Seu valor será *RE_EXECUTE*.
+Para identificar se uma execução foi reexecutada, analise o campo do acionador. Seu valor é *RE_EXECUTAR*.
 
 ### Acionamento de uma nova execução
 
@@ -193,4 +193,4 @@ Para acionar uma reexecução, uma solicitação PUT precisa ser feita ao Link H
 
 A sintaxe do valor _href_ do link HAL acima não deve ser usada como ponto de referência. O valor real sempre deve ser lido do link HAL, e não gerado.
 
-O envio de uma solicitação *PUT* para esse endpoint resultará em uma resposta *201* se bem-sucedido e o corpo da resposta será a representação da nova execução. É semelhante a iniciar uma execução regular por meio da API.
+Envio de um *PUT* solicitação para esse endpoint resulta em uma *201* se for bem-sucedido, e o corpo da resposta for a representação da nova execução. É semelhante a iniciar uma execução regular por meio da API.

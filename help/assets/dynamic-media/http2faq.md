@@ -4,9 +4,9 @@ description: Saiba mais sobre a entrega de conteúdo HTTP2.
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '795'
+source-wordcount: '794'
 ht-degree: 1%
 
 ---
@@ -46,9 +46,9 @@ Para usar HTTP/2, você deve atender aos seguintes requisitos:
 * Use a CDN (Content Delivery Network) agrupada em Adobe como parte de sua licença do Dynamic Media Classic.
 * Use um domínio dedicado (ou seja, `images.company.com` ou `mycompany.scene7.com`), não um domínio Dynamic Media genérico (ou seja, `s7d1.scene7.com`, `s7d2.scene7.com`ou `s7d13.scene7.com`).
 
-   Para encontrar seus domínios, abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), depois faça logon em sua conta.
+  Para encontrar seus domínios, abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), depois faça logon em sua conta.
 
-   Ir para **[!UICONTROL Configuração]** > **[!UICONTROL Configuração do aplicativo]** > **[!UICONTROL Configurações gerais]**. Procure o campo rotulado **Nome do servidor publicado**. Se você estiver usando um domínio Dynamic Media genérico no momento, poderá solicitar a mudança para seu próprio domínio personalizado como parte dessa transição.
+  Ir para **[!UICONTROL Configuração]** > **[!UICONTROL Configuração do aplicativo]** > **[!UICONTROL Configurações gerais]**. Procure o campo rotulado **Nome do servidor publicado**. Se você estiver usando um domínio Dynamic Media genérico no momento, poderá solicitar a mudança para seu próprio domínio personalizado como parte dessa transição.
 
 ## Qual é o processo de habilitação do HTTP/2 para minha conta do Dynamic Media? {#what-is-the-process-for-enabling-http-for-my-dm-account}
 
@@ -73,9 +73,7 @@ Para usar HTTP/2, você deve atender aos seguintes requisitos:
 
    1. O Suporte ao cliente adiciona você à lista de espera do cliente HTTP/2 com base na ordem em que as solicitações foram enviadas.
    1. Quando o Adobe estiver pronto para lidar com sua solicitação, o Suporte ao cliente entrará em contato com você para coordenar a transição e definir uma data limite.
-   1. Você será notificado após a conclusão e poderá verificar uma transição bem-sucedida para HTTP2.
-
-
+   1. Você é notificado após a conclusão e pode verificar uma transição bem-sucedida para HTTP2.
 
 ## Quando posso esperar a transição para HTTP/2? {#when-can-i-expect-to-be-transitioned-over-to-http}
 

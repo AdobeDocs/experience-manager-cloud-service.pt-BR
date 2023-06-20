@@ -2,10 +2,10 @@
 title: Introdução e passo a passo do SPA
 description: Este artigo apresenta os conceitos de um SPA e aborda o uso de um SPA básico para criação, mostrando como ele está relacionado ao editor de SPA integrado do AEM.
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
-source-git-commit: f201e8bf8a44db6b408edec5b77cc814c7e87abb
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2076'
-ht-degree: 100%
+source-wordcount: '2074'
+ht-degree: 94%
 
 ---
 
@@ -42,7 +42,7 @@ O passo a passo é baseado na funcionalidade padrão do AEM e no aplicativo de e
 
 >[!TIP]
 >
->Qualquer projeto do AEM deve utilizar o [Arquétipo de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR), que aceita projetos SPA que usam o React ou Angular e utiliza o SDK do SPA.
+>Qualquer projeto AEM deve usar o [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR), que oferece suporte a projetos SPA usando o React ou o Angular e usa o SDK do SPA.
 
 ### O que é um SPA? {#what-is-a-spa}
 
@@ -75,7 +75,7 @@ Devido a ser mais rápido, fluido e semelhante a um aplicativo nativo, um SPA ap
 
 ### Como funciona um SPA? {#how-does-a-spa-work}
 
-A ideia principal por trás de um SPA é que as chamadas realizadas para um servidor, bem como a dependência dele, sejam reduzidas para minimizar os atrasos causados pela latência do servidor, de modo que o SPA se aproxime da capacidade de resposta de um aplicativo nativo.
+A ideia principal por trás de um SPA é que as chamadas para um servidor e a dependência dele são reduzidas para minimizar os atrasos causados pela latência do servidor, de modo que o SPA se aproxime da capacidade de resposta de um aplicativo nativo.
 
 Em uma página da web tradicional e sequencial, somente os dados necessários para a página imediata são carregados. Isso significa que quando o visitante se move para outra página, o servidor é chamado para os recursos adicionais. Pode ser necessário realizar chamadas adicionais à medida que o visitante interage com elementos na página. Essas várias chamadas podem criar uma sensação de defasagem ou atraso na página, pois ela precisa acompanhar as solicitações do visitante.
 
@@ -94,10 +94,9 @@ Ao renderizar no lado do cliente, os elementos da página reagem mais rapidament
 >Para uma análise mais detalhada do design, arquitetura e fluxo de trabalho técnico do editor de SPA, consulte o artigo:
 >* [Visão geral do editor de SPA](editor-overview.md).
 
-
 ## Experiência de edição de conteúdo com SPA {#content-editing-experience-with-spa}
 
-Quando um SPA é criado para aproveitar o editor de SPA do AEM, o autor de conteúdo não percebe diferença ao editar e criar conteúdo. A funcionalidade comum do AEM pode ser utilizada e nenhuma alteração no fluxo de trabalho do autor é necessária.
+Quando um SPA AEM é criado para usar o Editor de SPA, o autor de conteúdo não percebe diferença ao editar e criar conteúdo. A funcionalidade comum do AEM pode ser utilizada e nenhuma alteração no fluxo de trabalho do autor é necessária.
 
 1. Edite o aplicativo Projeto SPA WKND no AEM.
 
@@ -188,7 +187,7 @@ A próxima seção, [Carregar um SPA](#loading-a-spa-application), aprofunda-se 
 
    ![JSON da página inicial do Projeto SPA WKND](assets/wknd-json.png)
 
-   O editor de SPA do AEM aproveita os [serviços de conteúdo do AEM](/help/sites-cloud/administering/content-fragments/content-fragments.md) para fornecer todo o conteúdo da página como um modelo JSON.
+   O Editor SPA do AEM usa [Serviços de conteúdo AEM](/help/sites-cloud/administering/content-fragments/content-fragments.md) para entregar todo o conteúdo da página como um modelo JSON.
 
    Ao implementar interfaces específicas, os modelos do Sling fornecem as informações necessárias para o SPA. A entrega dos dados JSON é delegada de cima para baixo a cada componente (da página, ao parágrafo, ao componente etc.).
 
@@ -242,7 +241,7 @@ Na seção a seguir, exploraremos o contrato que permite que o editor de SPA rel
 
 ## Headful e Headless no AEM {#headful-headless}
 
-SPAs podem ser ativados com níveis flexíveis de integração no AEM, incluindo SPAs desenvolvidos e mantidos fora do AEM. Além disso, é possível utilizar SPAs no AEM e ainda usar o AEM para fornecer conteúdo a pontos de acesso adicionais de forma headless.
+SPAs podem ser ativados com níveis flexíveis de integração no AEM, incluindo SPAs desenvolvidos e mantidos fora do AEM. Além disso, o SPA pode ser usado dentro do AEM, ao mesmo tempo que usa o AEM para fornecer conteúdo a endpoints adicionais de maneira headless.
 
 >[!TIP]
 >

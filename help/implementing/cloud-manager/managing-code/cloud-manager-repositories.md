@@ -2,10 +2,10 @@
 title: Repositórios do Cloud Manager
 description: Saiba como criar, exibir e excluir repositórios Git no Cloud Manager.
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '582'
-ht-degree: 100%
+source-wordcount: '580'
+ht-degree: 96%
 
 ---
 
@@ -51,7 +51,7 @@ Há um único repositório principal ou uma ramificação para um determinado pi
 A exclusão de um repositório:
 
 * Tornará o nome do repositório excluído inutilizável para novos repositórios que podem ser criados no futuro.
-   * A mensagem de erro `Repository name should be unique within organization.` será mostrado nesses casos.
+   * A mensagem de erro `Repository name should be unique within organization.` nesses casos.
 * Tornará o repositório excluído indisponível no Cloud Manager e indisponível para vinculação a um pipeline.
 
 Siga estas instruções para excluir um repositório no Cloud Manager.

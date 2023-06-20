@@ -2,10 +2,10 @@
 title: Atualizar fragmentos de conteúdo para a filtragem otimizada de GraphQL
 description: Saiba como atualizar os fragmentos de conteúdo para uma filtragem otimizada de GraphQL no Adobe Experience Manager as a Cloud Service para entrega de conteúdo headless.
 exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
-source-git-commit: a18742abdd4693ab1e97d7db3ed6854b735bc0f9
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 100%
+source-wordcount: '912'
+ht-degree: 97%
 
 ---
 
@@ -79,7 +79,7 @@ Para executar o procedimento, siga as etapas abaixo:
       <td>Todos </td>
       <td> </td>
       <td>Variável </td>
-      <td>Tamanho do lote para salvar o número de fragmentos de conteúdo após a migração.<br>Isso é relevante dependendo de quantos CFs serão salvos no repositório em um lote e pode ser usado para otimizar o número de gravações no repositório. </td>
+      <td>Tamanho do lote para salvar o número de fragmentos de conteúdo após a migração.<br>Isso é relevante para quantos CFs são salvos no repositório em um lote e pode ser usado para otimizar o número de gravações no repositório. </td>
      </tr>
      <tr>
       <td>4</td>

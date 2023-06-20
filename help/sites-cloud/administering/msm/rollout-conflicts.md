@@ -4,10 +4,10 @@ description: Saiba como gerenciar e resolver conflitos de implementação do Mul
 feature: Multi Site Manager
 role: Admin
 exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 100%
+source-wordcount: '922'
+ht-degree: 99%
 
 ---
 
@@ -22,7 +22,7 @@ Quando páginas conflitantes existem (nas ramificações do blueprint e da Live 
 Para garantir que a implantação não seja bloqueada, as possíveis definições podem incluir:
 
 * Qual página (blueprint ou Live Copy) terá prioridade durante a implantação
-* Quais páginas serão renomeadas (e como)
+* Quais páginas são renomeadas e como
 * Como isso afetará qualquer conteúdo publicado
 
 O comportamento padrão do AEM pronto para uso é que o conteúdo publicado não será afetado. Portanto, se uma página que foi criada manualmente na ramificação da Live Copy tiver sido publicada, esse conteúdo ainda será publicado após o tratamento do conflito e a implantação.
@@ -35,11 +35,11 @@ Nas seções a seguir, usamos o exemplo de uma nova página `b`, criada na ramif
 
 * blueprint: `/b`
 
-   Uma página principal com 1 página secundária, `bp-level-1`
+  Uma página principal com 1 página secundária, `bp-level-1`
 
 * Live Copy: `/b`
 
-   Uma página criada manualmente na ramificação da Live Copy com 1 página secundária, `lc-level-1`
+  Uma página criada manualmente na ramificação da Live Copy com 1 página secundária, `lc-level-1`
 
    * Ativado ao publicar como `/b`, junto com a página secundária
 
@@ -83,13 +83,13 @@ Esse manipulador de conflitos dá prioridade ao blueprint. Por exemplo, a págin
 
 * Live Copy: `/b`
 
-   É movido dentro da Live Copy para `/b_msm_moved`. Isso funciona como um backup e garante que nenhum conteúdo seja perdido.
+  É movido dentro da Live Copy para `/b_msm_moved`. Isso funciona como um backup e garante que nenhum conteúdo seja perdido.
 
    * `lc-level-1` não é movido.
 
 * Blueprint: `/b`
 
-   É implantado na página da Live Copy `/b`.
+  É implantado na página da Live Copy `/b`.
 
    * `bp-level-1` é implantado na Live Copy.
 
@@ -127,11 +127,11 @@ Nesse caso, a Live Copy tem prioridade efetiva. A página do blueprint `/b` não
 
 * Blueprint: `/b`
 
-   Não é copiado, mas é ignorado.
+  Não é copiado, mas é ignorado.
 
 * Live Copy: `/b`
 
-   Fica igual.
+  Fica igual.
 
 #### Após a implantação {#after-rollout-no-conflict}
 

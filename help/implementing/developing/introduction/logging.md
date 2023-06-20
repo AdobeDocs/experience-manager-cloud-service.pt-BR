@@ -1,17 +1,17 @@
 ---
 title: Registro para AEM as a Cloud Service
-description: Saiba como usar o Log para AEM as a Cloud Service para configurar parâmetros globais para o serviço de log central, configurações específicas para os serviços individuais ou como solicitar o log de dados.
+description: Saiba como usar o Logging para AEM as a Cloud Service para configurar parâmetros globais para o serviço de log central, configurações específicas para os serviços individuais ou como solicitar o registro de dados.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 9e67b4f68fe450e80249c3959e3517c6cba3275d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2382'
+source-wordcount: '2376'
 ht-degree: 3%
 
 ---
 
 # Registro para AEM as a Cloud Service {#logging-for-aem-as-a-cloud-service}
 
-O AEM as a Cloud Service é uma plataforma na qual os clientes incluem código personalizado para criar experiências exclusivas para sua base de clientes. Com isso em mente, o serviço de registro é uma função essencial para depurar e entender a execução de código em ambientes de desenvolvimento local e de nuvem, especialmente nos ambientes de desenvolvimento do AEM as a Cloud Service.
+O AEM as a Cloud Service é uma plataforma na qual os clientes incluem código personalizado para criar experiências exclusivas para sua base de clientes. Com isso em mente, o serviço de registro é uma função crítica para depurar e entender a execução de código em ambientes de desenvolvimento local e de nuvem, especialmente nos ambientes de desenvolvimento do AEM as a Cloud Service.
 
 As configurações de registro as a Cloud Service do AEM e os níveis de registro são gerenciados em arquivos de configuração que são armazenados como parte do projeto AEM AEM no Git e implantados como parte do projeto por meio do Cloud Manager. O registro no AEM as a Cloud Service pode ser dividido em dois conjuntos lógicos:
 
@@ -94,7 +94,7 @@ Quando o registro em log de ERRO estiver ativo, somente as instruções indicand
 
 Embora o registro em log do Java seja compatível com vários outros níveis de granularidade de registro, a AEM as a Cloud Service recomenda usar os três níveis descritos acima.
 
-Os níveis de log do AEM são definidos por tipo de ambiente por meio da configuração do OSGi, que por sua vez é comprometida com o Git, e implantada por meio do Cloud Manager no AEM as a Cloud Service. Por causa disso, é melhor manter as instruções de registro consistentes e bem conhecidas para tipos de ambiente, a fim de garantir que os registros disponíveis via AEM como Cloud Service estejam disponíveis no nível de registro ideal sem exigir a reimplantação do aplicativo com a configuração atualizada do nível de registro.
+Os níveis de log do AEM são definidos por tipo de ambiente por meio da configuração do OSGi, que por sua vez é comprometida com o Git, e implantada por meio do Cloud Manager no AEM as a Cloud Service. Por causa disso, é melhor manter as instruções de registro consistentes e bem conhecidas para tipos de ambiente para garantir que os registros disponíveis via AEM as Cloud Service estejam disponíveis no nível de registro ideal, sem exigir a reimplantação do aplicativo com a configuração atualizada do nível de registro.
 
 **Exemplo de saída de log**
 
@@ -545,7 +545,7 @@ Dependendo do tráfego e da quantidade da instrução de log gravada pela Depura
 
 ## Logs do Splunk {#splunk-logs}
 
-Os clientes que têm contas do Splunk podem solicitar por meio do tíquete de suporte ao cliente que seus logs do AEM Cloud Service sejam encaminhados para o índice apropriado. Os dados de registro são equivalentes aos disponíveis por meio dos downloads de log do Cloud Manager, mas os clientes podem achar conveniente aproveitar os recursos de consulta disponíveis no produto Splunk.
+Os clientes que têm contas do Splunk podem solicitar por meio do tíquete de suporte ao cliente que seus logs do AEM Cloud Service sejam encaminhados para o índice apropriado. Os dados de registro são equivalentes aos disponíveis por meio dos downloads de log do Cloud Manager, mas os clientes podem achar conveniente usar os recursos de consulta disponíveis no produto Splunk.
 
 A largura de banda da rede associada aos logs enviados ao Splunk é considerada parte do uso de E/S da rede pelo cliente.
 

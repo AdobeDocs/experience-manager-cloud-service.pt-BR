@@ -2,9 +2,9 @@
 title: Ferramentas de desenvolvedor do AEM para Eclipse
 description: Ferramentas de desenvolvedor do AEM para Eclipse
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: 3c8035e4db5729f58bae29136a32a0b9944d6a2f
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1190'
+source-wordcount: '1184'
 ht-degree: 3%
 
 ---
@@ -104,7 +104,7 @@ Siga estas etapas para criar o projeto de amostra:
 
 1. Em seguida, você configura um servidor AEM ao qual o Eclipse se conecta.
 
-   Para usar o recurso do depurador, é necessário iniciar o AEM no modo de depuração, o que pode ser obtido ao adicionar o seguinte à linha de comando:
+   Para usar o recurso do depurador, você precisa ter iniciado o AEM no modo de depuração, o que pode ser obtido ao adicionar o seguinte à linha de comando:
 
    ```text
        -nofork -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=10123
@@ -165,27 +165,27 @@ Você pode usar o **Novo projeto** recurso para criar a estrutura certa para voc
    1. Substitua o conteúdo de `<workspaceFilter>` elemento com as regras do pacote que começam com `/apps` e `/etc`
       * Por exemplo:
 
-         ```xml
-         <?xml version="1.0" encoding="UTF-8"?>
-         <workspaceFilter version="1.0">
-            <filter root="/apps/foo"/>
-            <filter root="/apps/foundation/components/bar"/>
-            <filter root="/etc/designs/foo"/>
-         </workspaceFilter>
-         ```
+        ```xml
+        <?xml version="1.0" encoding="UTF-8"?>
+        <workspaceFilter version="1.0">
+           <filter root="/apps/foo"/>
+           <filter root="/apps/foundation/components/bar"/>
+           <filter root="/etc/designs/foo"/>
+        </workspaceFilter>
+        ```
+
    1. Em seguida, abrir `PROJECT.ui.content/src/main/content/META-INF/filter.xml`.
    1. Substitua as regras pelas do pacote que começam com `/content`.
       * Por exemplo:
 
-         ```xml
-         <?xml version="1.0" encoding="UTF-8"?>
-         <workspaceFilter version="1.0">
-            <filter root="/content/foo"/>
-            <filter root="/content/dam/foo"/>
-            <filter root="/content/usergenerated/content/foo"/>
-         </workspaceFilter>
-         ```
-
+        ```xml
+        <?xml version="1.0" encoding="UTF-8"?>
+        <workspaceFilter version="1.0">
+           <filter root="/content/foo"/>
+           <filter root="/content/dam/foo"/>
+           <filter root="/content/usergenerated/content/foo"/>
+        </workspaceFilter>
+        ```
 
 1. Certifique-se de salvar todas as alterações. Agora você pode sincronizar esse novo conteúdo para sua instância do AEM.
 

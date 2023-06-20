@@ -2,10 +2,10 @@
 title: Painel de licenças
 description: O Cloud Manager fornece um painel para facilitar a visualização dos direitos de produto do AEMaaCS disponíveis para sua organização ou locatário.
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
-source-git-commit: d5e0ca924dee50d7dd4f9057010b1a39780b4352
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '876'
-ht-degree: 100%
+source-wordcount: '875'
+ht-degree: 97%
 
 ---
 
@@ -79,7 +79,7 @@ As solicitações de conteúdo terão variações entre as ferramentas de relat�
 | Report Suites | As páginas que fazem parte de uma mesma instância e domínio do AEM podem enviar dados para diferentes conjuntos de relatórios de Analytics. |
 | Ferramentas de segurança e monitoramento de terceiros | Ferramentas de verificação para monitoramento e segurança podem gerar solicitações de conteúdo para o AEM que não são rastreadas nos relatórios de Analytics. |
 | Solicitações de pré-busca | Usar um serviço de pré-busca para pré-carregar páginas a fim de aumentar a velocidade pode causar um aumento significativo no tráfego de solicitações de conteúdo. |
-| DDOS | Apesar de todos os esforços da Adobe para detectar e filtrar automaticamente o tráfego de ataques de DDOS, não há garantia de que todos os possíveis ataques de DDOS serão detectados. |
+| DDOS | Embora o Adobe se esforce ao máximo para detectar e filtrar automaticamente o tráfego de ataques de DDOS, não há garantia de que todos os possíveis ataques de DDOS sejam detectados |
 | Bloqueadores de tráfego | O uso de um bloqueador de rastreadores em um navegador pode impedir o rastreamento de algumas solicitações. |
 | Firewalls | Os firewalls podem bloquear o rastreamento do Analytics. Isso é mais frequente com firewalls corporativos. |
 

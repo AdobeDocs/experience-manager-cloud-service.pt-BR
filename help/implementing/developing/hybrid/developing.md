@@ -2,10 +2,10 @@
 title: Desenvolvimento de SPAs para o AEM
 description: Este artigo apresenta questões importantes a serem consideradas ao engajar um desenvolvedor de front-end a desenvolver um AEM, bem como fornece uma visão geral da arquitetura do AEM SPA SPA AEM com relação ao SPA para ter em mente ao implantar um desenvolvido no.
 exl-id: f6c6f31a-69ad-48f6-b995-e6d0930074df
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2076'
-ht-degree: 13%
+source-wordcount: '2072'
+ht-degree: 12%
 
 ---
 
@@ -24,7 +24,7 @@ O desenvolvimento de aplicativos de página única no AEM parte do princípio de
 * **[Renderização dinâmica](#dynamic-rendering)** - Todas as renderizações devem ser dinâmicas.
 * **[Roteamento dinâmico](#dynamic-routing)** - O SPA é responsável pelo roteamento e o AEM o escuta e realiza buscas com base nele. Qualquer roteamento também deve ser dinâmico.
 
-Se você considerar esses princípios ao desenvolver seu SPA, ele será o mais flexível e inovador possível e, ao mesmo tempo, ativará todas as funcionalidades de criação compatíveis com AEM.
+Se você considerar esses princípios ao desenvolver seu SPA, ele se tornará o mais flexível e inovador possível e, ao mesmo tempo, ativará todas as funcionalidades de criação compatíveis com AEM.
 
 Se não precisar de suporte para recursos de criação de AEM, talvez seja necessário considerar um [Modelo de design SPA](#spa-design-models).
 
@@ -54,7 +54,7 @@ Qualquer roteamento estático funciona contra o [princípio da portabilidade](#p
 
 ## Arquétipo de projeto do AEM {#aem-project-archetype}
 
-Qualquer projeto do AEM deve utilizar o [Arquétipo de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR), que aceita projetos SPA que usam o React ou Angular e utiliza o SDK do SPA.
+Qualquer projeto AEM deve usar o [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR), que oferece suporte a projetos SPA usando o React ou o Angular e usa o SDK do SPA.
 
 ## Modelos de design SPA {#spa-design-models}
 
@@ -72,7 +72,7 @@ Pode haver casos em que isso não seja totalmente necessário. A tabela a seguir
   <tr>
    <td>O AEM é usado como um CMS headless sem usar o <a href="/help/implementing/developing/hybrid/reference-materials.md">Estrutura do SDK do editor de SPA.</a></td>
    <td>O desenvolvedor front-end tem controle total sobre o aplicativo.</td>
-   <td><p>Os autores de conteúdo não podem aproveitar a experiência de criação de conteúdo AEM.</p> <p>O código não é portátil nem reutilizável se contiver referências estáticas ou roteamento.</p> <p>Não permite o uso do editor de modelo, portanto, o desenvolvedor de front-end deve manter modelos editáveis por meio do JCR.</p> </td>
+   <td><p>Os autores de conteúdo não podem usar a experiência de criação de conteúdo AEM.</p> <p>O código não é portátil nem reutilizável se contiver referências estáticas ou roteamento.</p> <p>Não permite o uso do editor de modelo, portanto, o desenvolvedor de front-end deve manter modelos editáveis por meio do JCR.</p> </td>
   </tr>
   <tr>
    <td>O desenvolvedor de front-end usa a estrutura do SDK do Editor de SPA, mas abre apenas algumas áreas para o autor de conteúdo.</td>
@@ -80,7 +80,7 @@ Pode haver casos em que isso não seja totalmente necessário. A tabela a seguir
    <td><p>Os autores de conteúdo estão restritos a um conjunto limitado de experiências de criação de conteúdo no AEM.</p> <p>O código corre o risco de não ser portátil nem reutilizável se contiver referências estáticas ou roteamento.</p> <p>Não permite o uso do editor de modelo, portanto, o desenvolvedor de front-end deve manter modelos editáveis por meio do JCR.</p> </td>
   </tr>
   <tr>
-   <td>O projeto aproveita totalmente o SDK do Editor de SPA, e os componentes de front-end são desenvolvidos como uma biblioteca e a estrutura de conteúdo do aplicativo é delegada ao AEM.</td>
+   <td>O projeto usa totalmente o SDK do Editor de SPA, e os componentes de front-end são desenvolvidos como uma biblioteca e a estrutura de conteúdo do aplicativo é delegada ao AEM.</td>
    <td><p>O aplicativo é reutilizável e portátil.</p> <p>O autor de conteúdo pode editar o aplicativo usando a experiência de criação de conteúdo AEM.<br /> </p> <p>O SPA é compatível com o editor de modelos.</p> </td>
    <td><p>O desenvolvedor não controla a estrutura do aplicativo e a parte do conteúdo delegada ao AEM.</p> <p>O desenvolvedor ainda pode reservar áreas do aplicativo para o conteúdo que não deve ser criado usando AEM.</p> </td>
   </tr>
@@ -119,7 +119,7 @@ Veja a seguir um esboço das etapas que um desenvolvedor de front-end precisa se
 
 1. **Implementar do componente `render()` método**
 
-   O desenvolvedor de front-end implementa o `render()` como bem entenderem e podem usar os campos de `cqModel` propriedade. Isso gera o DOM e os fragmentos de HTML que serão inseridos na página. Essa é a maneira padrão de criar um aplicativo no React.
+   O desenvolvedor de front-end implementa o `render()` como bem entenderem e podem usar os campos de `cqModel` propriedade. Isso gera o DOM e os fragmentos de HTML inseridos na página. Essa é a maneira padrão de criar um aplicativo no React.
 
 1. **Mapear o componente para o tipo de recurso AEM via`MapTo()`**
 
@@ -129,7 +129,7 @@ Veja a seguir um esboço das etapas que um desenvolvedor de front-end precisa se
 
    A variável `Page` e `ResponsiveGrid` são bons exemplos de classes que estendem a base `Container`.
 
-1. **Definir o do componente `EditConfig` como parâmetro para`MapTo()`**
+1. **Definir o `EditConfig` como parâmetro para`MapTo()`**
 
    Esse parâmetro é necessário para informar ao editor como o componente deve ser nomeado, desde que ainda não tenha sido renderizado ou não tenha conteúdo para renderizar.
 
@@ -172,16 +172,16 @@ A arquitetura geral do AEM, incluindo ambientes de desenvolvimento, criação e 
 
 * **Ambiente de compilação**
 
-   É aqui que a origem do aplicativo SPA e a origem do componente são verificadas.
+  É aqui que a origem do aplicativo SPA e a origem do componente são verificadas.
 
    * O gerador de clientlib do NPM cria uma biblioteca do cliente a partir do projeto SPA.
-   * Essa biblioteca será coletada pelo Maven e implantada pelo plug-in Maven Build junto com o componente no autor do AEM.
+   * Essa biblioteca é retirada pelo Maven e implantada pelo plug-in Maven Build junto com o componente no autor do AEM.
 
 * **Autor do AEM**
 
-   O conteúdo é criado sobre o autor de AEM, incluindo a criação de SPA.
+  O conteúdo é criado sobre o autor de AEM, incluindo a criação de SPA.
 
-   Quando um SPA é editado usando o Editor de SPA no ambiente de criação:
+  Quando um SPA é editado usando o Editor de SPA no ambiente de criação:
 
    1. O SPA solicita o HTML externo.
    1. O CSS é carregado.
@@ -191,11 +191,11 @@ A arquitetura geral do AEM, incluindo ambientes de desenvolvimento, criação e 
 
 * **AEM Publish**
 
-   É aqui que o conteúdo criado e as bibliotecas compiladas, incluindo artefatos de aplicativos SPA, clientlibs e componentes, são publicados para consumo público.
+  É aqui que o conteúdo criado e as bibliotecas compiladas, incluindo artefatos de aplicativos SPA, clientlibs e componentes, são publicados para consumo público.
 
 * **Dispatcher/CDN**
 
-   O dispatcher serve como a camada de cache do AEM para os visitantes do site.
+  O dispatcher serve como a camada de cache do AEM para os visitantes do site.
    * As solicitações são processadas de forma semelhante à do Autor do AEM, no entanto, não há solicitação de informações da página, pois elas são necessárias somente para o editor.
    * Javascript, CSS, JSON e HTML são armazenados em cache, otimizando a página para entrega rápida.
 

@@ -2,9 +2,9 @@
 title: Páginas de erro personalizadas
 description: O AEM vem com um manipulador de erros padrão para lidar com erros HTTP, que pode ser personalizado.
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
-source-git-commit: b20d40a9f5f4bda51c67cda1164d0c4d74943aa1
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '572'
 ht-degree: 2%
 
 ---
@@ -29,7 +29,7 @@ Para responder a erros, o AEM fornece uma `404.jsp` script em `/libs/sling/servl
 
 ## Como personalizar páginas mostradas pelo manipulador de erros {#how-to-customize-pages-shown-by-the-error-handler}
 
-Você pode desenvolver seus próprios scripts para personalizar as páginas mostradas pelo manipulador de erros quando um erro for encontrado. Para fazer isso, você aproveitará [Mecanismo de sobreposição padrão do AEM](/help/implementing/developing/introduction/overlays.md) para que suas páginas personalizadas sejam criadas em `/apps` e sobrepor as páginas padrão que estão em `/libs`.
+Você pode desenvolver seus próprios scripts para personalizar as páginas mostradas pelo manipulador de erros quando um erro for encontrado. Para fazer isso, você usa [Mecanismo de sobreposição padrão do AEM](/help/implementing/developing/introduction/overlays.md) para que suas páginas personalizadas sejam criadas em `/apps` e sobrepor as páginas padrão que estão em `/libs`.
 
 1. No repositório, copie o(s) script(s) padrão:
 

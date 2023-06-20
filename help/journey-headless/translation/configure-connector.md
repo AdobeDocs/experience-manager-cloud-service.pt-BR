@@ -2,10 +2,10 @@
 title: Configure o conector de tradução para conteúdo headless
 description: Saiba como conectar o AEM a um serviço de tradução.
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
-source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1234'
-ht-degree: 100%
+source-wordcount: '1233'
+ht-degree: 95%
 
 ---
 
@@ -58,7 +58,7 @@ Se você escolher outro provedor, o administrador deverá instalar o pacote do c
 >
 >Se você optar por usar o conector do Microsoft Translator para fins de teste, não será necessário executar as etapas das próximas duas seções: [Criar uma configuração de integração de tradução](#create-config) e [Associar a configuração ao seu conteúdo.](#associate) No entanto, é recomendável lê-las para que você esteja familiarizado com as etapas para quando precisar configurar seu conector de preferência.
 >
->A licença de avaliação do conector do Microsoft Translator não se destina a fins de produção e, caso decida adquirir uma licença, o administrador do sistema deverá seguir as etapas detalhadas na seção [Recursos adicionais](#additional-resources) ao final deste documento para configurá-la.
+>A licença de avaliação do conector do Microsoft Translator não se destina a fins de produção e, caso decida adquirir uma licença, o administrador do sistema deverá seguir as etapas detalhadas na [Recursos adicionais](#additional-resources) no final deste documento para que você possa configurar essa licença.
 
 ## Criar uma configuração de integração de tradução {#create-config}
 
@@ -99,7 +99,7 @@ Para criar uma nova configuração de tradução:
    1. **Traduzir metadados**: marque essa opção para traduzir metadados de ativos.
    1. **Traduzir tags**: marque essa opção para traduzir tags associadas ao ativo.
    1. **Executar tradução automaticamente** - marque essa propriedade se desejar que as traduções sejam enviadas automaticamente para o serviço de tradução.
-   1. **Desativar tradução somente de atualização**: quando essa opção estiver marcada, a atualização do projeto de tradução enviará todos os campos traduzíveis para tradução, e não apenas os alterados desde a última tradução. A atualização do projeto de tradução será discutida posteriormente na jornada.
+   1. **Desativar tradução somente de atualização**: quando essa opção estiver marcada, a atualização do projeto de tradução enviará todos os campos traduzíveis para tradução, e não apenas os alterados desde a última tradução. A atualização do projeto de tradução é discutida posteriormente na jornada.
    1. **Ativar campos do modelo de conteúdo para tradução**: marque essa opção para que a configuração de tradução reconheça automaticamente os campos nos Modelos de conteúdo com base no sinalizador **Traduzível**.
 
 1. Toque ou clique em **Salvar e fechar**.

@@ -5,10 +5,10 @@ landing-page-description: Saiba como gerenciar Fragmentos de conteúdo no Consol
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: 54efcf5fb486e7ecce66d8eb498625e447446e5d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1106'
-ht-degree: 95%
+source-wordcount: '1103'
+ht-degree: 89%
 
 ---
 
@@ -28,7 +28,6 @@ O Console de fragmentos de conteúdo é dedicado ao gerenciamento, pesquisa e cr
 >
 >* deste console de **Fragmentos de conteúdo**
 >* do console de **Ativos** — consulte [Gerenciamento de fragmentos de conteúdo](/help/assets/content-fragments/content-fragments-managing.md)
-
 
 >[!NOTE]
 >
@@ -60,12 +59,12 @@ Aqui você pode ver três áreas principais:
 * O painel principal/direito; aqui, você pode:
    * Consultar a lista de todos os fragmentos de conteúdo na ramificação selecionada da árvore:
       * A localização é indicada pela navegação estrutural; elas também podem ser usadas para alterar a localização
-      * Os fragmentos de conteúdo da pasta selecionada e de todas as pastas derivadas serão mostrados:
+      * Os fragmentos de conteúdo da pasta selecionada e de todas as pastas derivadas são mostrados:
          * [Vários campos de informação](#selectuse-available-columns) sobre um Fragmento do conteúdo fornecem links. Dependendo do campo, eles podem:
             * Abrir o fragmento apropriado no editor
             * Mostrar informações sobre referências
             * Mostrar informações sobre versões de idioma do fragmento
-      * Ao passar o mouse sobre os cabeçalhos da coluna, um seletor de ação suspenso e os controles deslizantes de largura serão mostrados. Eles permitem:
+      * Ao passar o mouse sobre os cabeçalhos da coluna, um seletor de ação suspenso e controles deslizantes de largura são mostrados. Isso permite que você faça o seguinte:
          * Classificar: selecione a ação apropriada para classificar em ordem crescente ou decrescente 
 Isso classificará toda a tabela de acordo com essa coluna. A classificação só está disponível nas colunas apropriadas.
          * Redimensionar a coluna: usando os controles deslizantes de ação ou largura
@@ -87,17 +86,16 @@ Algumas ações estão disponíveis no console, sem selecionar um fragmento de c
 * [Personalizar a visualização da tabela para mostrar as colunas de informações selecionadas](#select-available-columns)
 * Usar o recurso **Abrir no Assets** para abrir o local atual diretamente no console de **Ativos**
 
-   >[!NOTE]
-   >
-   >O console de **Ativos** é usado para acessar ativos, como imagens, vídeos etc.  Esse console pode ser acessado:
-   >
-   >* usando o link **Abrir no Assets** (no Console de fragmentos de conteúdo)
-   >* diretamente do painel de navegação global
-
+  >[!NOTE]
+  >
+  >O console de **Ativos** é usado para acessar ativos, como imagens, vídeos etc.  Esse console pode ser acessado:
+  >
+  >* usando o link **Abrir no Assets** (no Console de fragmentos de conteúdo)
+  >* diretamente do painel de navegação global
 
 ### Ações para um Fragmento de conteúdo (selecionado) {#actions-selected-content-fragment}
 
-Selecionar um fragmento específico abrirá uma barra de ferramentas focada nas ações disponíveis para esse fragmento. Também é possível selecionar vários fragmentos; a seleção de ações será ajustada de acordo.
+Selecionar um fragmento específico abrirá uma barra de ferramentas focada nas ações disponíveis para esse fragmento. Também é possível selecionar vários fragmentos; a seleção de ações é ajustada de acordo.
 
 ![Console de fragmentos de conteúdo - Barra de ferramentas de um fragmento selecionado](assets/cfc-fragment-toolbar.png)
 
@@ -142,17 +140,17 @@ Passar o mouse sobre o nome da pasta mostrará o caminho JCR.
 
    * Fornece um link que abre uma caixa de diálogo listando todas as referências principais desse fragmento; incluindo as referências a Fragmentos de conteúdo, Fragmentos de experiência e páginas. Para abrir uma referência específica, clique no botão **Título** na caixa de diálogo.
 
-      ![Console de Fragmentos de conteúdo - Caixa de diálogo Referências](assets/cfc-console-references-dialog.png)
+     ![Console de Fragmentos de conteúdo - Caixa de diálogo Referências](assets/cfc-console-references-dialog.png)
 
 * **Idioma**
 
    * Indica a localidade do fragmento de conteúdo, juntamente com o número total de localidades/cópias de idioma associadas ao fragmento de conteúdo.
 
-      ![Console de Fragmentos de conteúdo - Indicador de idioma](assets/cfc-console-language-indicator.png)
+     ![Console de Fragmentos de conteúdo - Indicador de idioma](assets/cfc-console-language-indicator.png)
 
       * Clique/toque na contagem para abrir uma caixa de diálogo que exibe todas as cópias de idioma. Para abrir uma cópia de idioma específica, clique no botão **Título** na caixa de diálogo.
 
-         ![Console de Fragmentos de conteúdo - Caixa de diálogo Idioma](assets/cfc-console-languages-dialog.png)
+        ![Console de Fragmentos de conteúdo - Caixa de diálogo Idioma](assets/cfc-console-languages-dialog.png)
 
 ## Selecionar as colunas disponíveis {#select-available-columns}
 
@@ -186,7 +184,7 @@ Por exemplo, selecione **Publicado** na coluna **Status**:
 
 ![Console de fragmentos de conteúdo - Filtragem](assets/cfc-console-fast-filter-01.png)
 
-Após a seleção, isso será exibido como um predicado de filtro, e a lista será filtrada adequadamente:
+Após a seleção, ele é mostrado como um predicado de filtro e a lista é filtrada de acordo:
 
 ![Console de fragmentos de conteúdo - Filtragem](assets/cfc-console-fast-filter-02.png)
 

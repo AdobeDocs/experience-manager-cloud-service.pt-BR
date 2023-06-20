@@ -2,10 +2,10 @@
 title: Criar programa
 description: Saiba como configurar um novo programa e pipeline para implantar o complemento.
 exl-id: 06287618-0328-40b1-bba8-84002283f23f
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '715'
-ht-degree: 100%
+source-wordcount: '713'
+ht-degree: 97%
 
 ---
 
@@ -37,7 +37,7 @@ Depois de fazer logon no Cloud Manager, você pode criar um novo programa de san
 
 >[!NOTE]
 >
->Seu usuário deve ter a função **Proprietário da empresa** no Cloud Manager em sua organização para criar programas.
+>Seu usuário deve ser membro do **Proprietário da empresa** no Cloud Manager em sua organização para criar programas.
 
 1. Faça logon no Adobe Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 

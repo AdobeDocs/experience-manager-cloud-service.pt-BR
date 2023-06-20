@@ -2,10 +2,10 @@
 title: Gerenciar certificados SSL
 description: Saiba como usar o Cloud Manager para verificar o status dos certificados SSL e como editá-los, substituí-los, atualizá-los e excluí-los.
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
-source-git-commit: 878381f9c5780864f218a00a272b1600d578dcca
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 100%
+source-wordcount: '634'
+ht-degree: 81%
 
 ---
 
@@ -20,7 +20,7 @@ O status dos certificados SSL pode ser entendido rapidamente na página de certi
 * **Verde** - Esse status indica que o certificado é válido por pelo menos 60 dias a partir da data atual.
 
 * **Laranja** - Esse status indica que o certificado vai expirar em menos de 60 dias.
-   * É hora de garantir que você tenha um plano para renovar seu certificado e substituí-lo na interface do usuário do Cloud Manager para evitar possíveis acessos ao site ou interrupções.
+   * É hora de garantir que você tenha um plano para renovar seu certificado e substituí-lo pela interface do Cloud Manager para evitar possíveis acessos ao site ou interrupções.
    * O Cloud Manager enviará notificações regulares na interface do usuário para alertá-lo sobre a expiração iminente de um certificado.
 
 * **Vermelho** - Esse status indica que o certificado SSL expirou.
@@ -37,7 +37,7 @@ Quando um certificado expira, todos os domínios que usem o certificado expirado
 
 >[!NOTE]
 >
->O usuário deve ser membro da função **Proprietário da empresa** ou **Gerente de implantação** para atualizar um certificado SSL no Cloud Manager.
+>O usuário deve ser membro do **Proprietário da empresa** ou **Gerente de implantação** para atualizar um certificado SSL no Cloud Manager.
 
 ## Substituição de um certificado SSL {#replace-ssl-certificate}
 
@@ -59,11 +59,11 @@ Siga estas etapas para excluir um certificado SSL.
 
 >[!NOTE]
 >
->O usuário deve ser membro da função **Proprietário da empresa** ou **Gerente de implantação** para excluir um certificado SSL no Cloud Manager.
+>O usuário deve ser membro do **Proprietário da empresa** ou **Gerente de implantação** para excluir um certificado SSL no Cloud Manager.
 
 ## Configurações pré-existentes para CDN {#pre-existing-cdn}
 
-Se você tiver uma configuração de CDN pré-existente para seu certificado SSL, haverá uma mensagem informativa na página **Certificado SSL** incentivando você a adicionar essas configurações por meio da interface do usuário, para que fiquem visíveis e possam ser definidas no Cloud Manager.
+Se você tiver uma configuração de CDN pré-existente para seu certificado SSL, haverá uma mensagem informativa no **Certificados SSL** incentivando você a adicionar essas configurações por meio da interface do usuário, para que fiquem visíveis e possam ser definidas no Cloud Manager.
 
 A mensagem desaparece assim que todas as configurações de ambiente pré-existentes são migradas usando a interface do usuário. Pode levar de 1 a 2 dias úteis para a mensagem desaparecer.
 

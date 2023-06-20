@@ -6,7 +6,7 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: dbc6b5c0f11e52b45981cab36381258edcf6c167
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '3829'
 ht-degree: 16%
@@ -31,7 +31,7 @@ A funcionalidade Connected Assets é compatível com os casos de uso acima ao in
 
 ## Visão geral do Connected Assets {#overview-of-connected-assets}
 
-Ao editar páginas no [!UICONTROL Editor de páginas] como destino, os autores podem pesquisar, navegar e incorporar facilmente ativos de uma [!DNL Assets] implantação que atua como uma fonte de ativos. Os administradores criam uma integração única de uma implantação do [!DNL Experience Manager] com [!DNL Sites] com outra implantação do [!DNL Experience Manager] com [!DNL Assets] capacidade. Você também pode usar imagens do Dynamic Media nas páginas da Web do site por meio do Connected Assets e aproveitar as funcionalidades do Dynamic Media, como recorte inteligente e predefinições de imagem.
+Ao editar páginas no [!UICONTROL Editor de páginas] como destino, os autores podem pesquisar, navegar e incorporar facilmente ativos de uma [!DNL Assets] implantação que atua como uma fonte de ativos. Os administradores criam uma integração única de uma implantação do [!DNL Experience Manager] com [!DNL Sites] com outra implantação do [!DNL Experience Manager] com [!DNL Assets] capacidade. Você também pode usar imagens do Dynamic Media nas páginas da Web do site por meio do Connected Assets e usar as funcionalidades do Dynamic Media, como recorte inteligente e predefinições de imagem.
 
 Para o [!DNL Sites] autores, os ativos remotos estão disponíveis como ativos locais somente leitura. A funcionalidade suporta pesquisa e acesso ininterruptos a ativos remotos no Editor de sites. Para quaisquer outros casos de uso que possam exigir que o conjunto completo de ativos esteja disponível no Sites, considere migrar os ativos em massa em vez de aproveitar os Ativos conectados.
 
@@ -42,11 +42,11 @@ Antes de usar ou configurar esse recurso, verifique o seguinte:
 * Os usuários fazem parte dos grupos de usuários apropriados em cada implantação.
 * Para [!DNL Adobe Experience Manager] tipos de implantação, um dos critérios compatíveis é atendido. [!DNL Experience Manager] as a Cloud Service [!DNL Assets] funciona com [!DNL Experience Manager] 6.5. Para obter mais informações sobre como essa funcionalidade funciona no [!DNL Experience Manager] 6.5, consulte [Ativos conectados no [!DNL Experience Manager] 6.5 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html).
 
-   |  | [!DNL Sites] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.5 [!DNL Sites] no AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] no local |
-   |---|---|---|---|
-   | **[!DNL Experience Manager Assets]as a[!DNL Cloud Service]** | Compatível | Compatível | Compatível |
-   | **[!DNL Experience Manager]6.5 [!DNL Assets] no AMS** | Compatível | Compatível | Compatível |
-   | **[!DNL Experience Manager]6.5 [!DNL Assets] no local** | Incompatível | Incompatível | Incompatível |
+  | | [!DNL Sites] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.5 [!DNL Sites] no AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] no local |
+  |---|---|---|---|
+  | **[!DNL Experience Manager Assets]as a[!DNL Cloud Service]** | Compatível | Compatível | Compatível |
+  | **[!DNL Experience Manager]6.5 [!DNL Assets] no AMS** | Compatível | Compatível | Compatível |
+  | **[!DNL Experience Manager]6.5 [!DNL Assets] no local** | Incompatível | Incompatível | Incompatível |
 
 ### Formatos de arquivo não compatíveis {#mimetypes}
 
@@ -144,7 +144,7 @@ Você pode verificar a conectividade entre as configurações [!DNL Sites] impla
 ## Usar ativos do Dynamic Media {#dynamic-media-assets}
 
 
-Com o Connected Assets, você pode usar ativos de imagem processados pelo [!DNL Dynamic Media] da implantação remota do DAM em páginas do Sites e aproveite as funcionalidades do Dynamic Media, como predefinições de recorte inteligente e de imagem.
+Com o Connected Assets, você pode usar ativos de imagem processados pelo [!DNL Dynamic Media] da implantação remota do DAM em páginas do Sites, e usar funcionalidades do Dynamic Media, como predefinições de recorte inteligente e de imagem.
 
 Para usar [!DNL Dynamic Media] com Connected Assets:
 
@@ -356,11 +356,11 @@ Para solucionar erros comuns, siga estas etapas:
 
 * Se não conseguir acessar a implantação remota do DAM a partir do local [!DNL Sites] garantir que os cookies entre sites sejam permitidos e [suporte a cookie no mesmo site](/help/security/same-site-cookie-support.md) está configurado. Se os cookies entre sites estiverem bloqueados, as implantações do [!DNL Experience Manager] não pode autenticar. Por exemplo, [!DNL Google Chrome] no modo Incógnito pode bloquear cookies de terceiros. Para permitir cookies no [!DNL Chrome] navegador, clique no ícone &quot;olho&quot; na barra de endereços e navegue até **Site não funciona** > **Bloqueado**, selecione o URL do DAM remoto e permita o cookie de token de logon. Como alternativa, consulte [como ativar cookies de terceiros](https://support.google.com/chrome/answer/95647).
 
-   ![Erro de cookie no navegador Chrome no modo Incógnito](assets/chrome-cookies-incognito-dialog.png)
+  ![Erro de cookie no navegador Chrome no modo Incógnito](assets/chrome-cookies-incognito-dialog.png)
 
 * Se as referências remotas não forem recuperadas e resultarem em uma mensagem de erro, verifique se [!DNL Sites] a implantação está disponível e verifique se há problemas de conectividade de rede. Tente novamente mais tarde para verificar. [!DNL Assets] A implantação do tenta estabelecer duas vezes a conexão com o [!DNL Sites] e, em seguida, relata uma falha.
 
-   ![falha ao recuperar referências remotas de ativos](assets/reference-report-failure.png)
+  ![falha ao recuperar referências remotas de ativos](assets/reference-report-failure.png)
 
 **Consulte também**
 

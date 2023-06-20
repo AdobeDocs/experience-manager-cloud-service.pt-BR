@@ -2,9 +2,9 @@
 title: Fase de implementação
 description: Verificar se o código e o conteúdo estão prontos para a migração para a nuvem
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
-source-git-commit: fedaa9b8a7baf707c71acd0535ad890254b6793a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2353'
+source-wordcount: '2337'
 ht-degree: 9%
 
 ---
@@ -49,7 +49,7 @@ A figura a seguir mostra as principais etapas envolvidas na fase que envolve a c
 
 ![imagem](/help/journey-migration/assets/exec-image1.png)
 
-Começaremos detalhando as ferramentas que você precisa usar para conseguir isso nos capítulos abaixo.
+Começaremos a detalhar as ferramentas que você deve usar para fazer isso nos capítulos abaixo.
 
 ## Migração de conteúdo {#content-migration}
 
@@ -67,7 +67,7 @@ Para obter detalhes completos sobre como a ferramenta funciona e como recomendam
 
 É hora de começar a refatorar os recursos existentes para serem compatíveis com o Cloud Services.
 
-Para fazer isso, você precisa consultar a documentação que detalha as ferramentas básicas necessárias para começar a refatorar seu código:
+Primeiro, observe a documentação que detalha as ferramentas básicas e comece a refatorar seu código:
 
 
 * Durante o planejamento, é uma boa ideia ter uma lista de áreas que devem ser refatoradas para serem compatíveis com o AEM as a Cloud Service. Você pode revisar [Diretrizes de desenvolvimento](/help/implementing/developing/introduction/development-guidelines.md) para obter mais detalhes sobre como refatorar e otimizar o código para Cloud Service.
@@ -79,11 +79,11 @@ Além disso, também é possível:
 
 * Assista a este vídeo para entender como instalar o SDK do Dispatcher localmente:
 
-   >[!VIDEO](https://video.tv.adobe.com/v/30601)
+  >[!VIDEO](https://video.tv.adobe.com/v/30601)
 
 * Assista a este vídeo para entender como configurar o SDK do Dispatcher:
 
-   >[!VIDEO](https://video.tv.adobe.com/v/30602)
+  >[!VIDEO](https://video.tv.adobe.com/v/30602)
 
 ### Uma mudança de mentalidade {#a-change-in-mindset}
 
@@ -163,7 +163,7 @@ A coleta de dados pode ajudar você a planejar as atividades de migração e as 
 
 <!-- Alexandru: hiding this for now
 
-One more important datapoint is the amount of time it takes to complete the [user mapping](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md), if this is coupled with the content migration. You can take this data point into consideration for more realistic estimates, since it will be added to the overall extraction timeline and it may not be required to run it during top-ups.
+One more important datapoint is the amount of time it takes to complete the [user mapping](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md), if this is coupled with the content migration. You can take this data point into consideration for more realistic estimates, because it is added to the overall extraction timeline and it may not be required to run it during top-ups.
 
 -->
 
@@ -177,8 +177,8 @@ A tabela a seguir ilustra um plano de migração típico:
 
 | Iteração de migração | Data inicial | Data de Término Estimada | Dependências | Duração Estimada (em dias) | Detalhes adicionais / Itens de ação |
 |---|---|---|---|---|---|
-| PRDCLONE-AUTHOR-INITIAL-USRMAP-CSSTAGE-AUTHOR |  |  |  |  |  |
-| PRDCLONE-PUBLISH-TOPUP-CSSTAGE-AUTHOR |  |  |  |  |  |
+| PRDCLONE-AUTHOR-INITIAL-USRMAP-CSSTAGE-AUTHOR |   |   |   |   |   |
+| PRDCLONE-PUBLISH-TOPUP-CSSTAGE-AUTHOR |   |   |   |   |   |
 
 Como você pode ver na tabela acima, é útil seguir um formato de nomenclatura específico para identificar as iterações de migração, por exemplo: **PRDCLONE** para o ambiente de AEM de origem , **AUTOR/PUBLICAÇÃO** para o ambiente as a Cloud Service do AEM, **CSSTAGE-AUTHOR** para a instância as a Cloud Service do AEM e assim por diante.
 
@@ -209,7 +209,7 @@ A tabela a seguir ilustra um rastreador de migração funcional:
 
 | Origem (Ambiente / Instância / URL) | Destino (Ambiente / Instância / URL) | Nome, tipo (inicial ou complementar) do conjunto de migrações | Tamanho do Conjunto de Migração (MB) | Mapeamento de usuários (Sim/Não) | Duração da extração (início, fim, tempo gasto) | Duração da assimilação (início, fim, tempo gasto) | Problemas/Resoluções/Detalhes |
 |---|---|---|---|---|---|---|---|
-|  |  |  |  |  |  |  |  |
+|   |   |   |   |   |   |   |   |
 
 ## Estratégia e cronograma de migração de conteúdo {#content-strategyand-timeline}
 
@@ -241,7 +241,7 @@ A seção a seguir mostra as etapas importantes e as tarefas associadas que pode
    * Está na mesma zona de rede
    * Fornecerá conteúdo de produção como usuários e grupos
    * Clona o autor e a publicação — um nó cada no caso de um cluster ou farm de publicação
-* Escolha um subconjunto do conteúdo que será migrado para que:
+* Escolha um subconjunto do conteúdo que é migrado para que:
    * É uma combinação de todos os tipos de conteúdo disponíveis
    * Contém todos os usuários e grupos
 * Inclui 25% do conteúdo ou até 1 TB, o que for menor.

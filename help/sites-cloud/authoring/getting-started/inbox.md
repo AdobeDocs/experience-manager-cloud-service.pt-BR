@@ -2,10 +2,10 @@
 title: Sua caixa de entrada
 description: Gerenciamento de tarefas com a caixa de entrada
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 78%
+source-wordcount: '909'
+ht-degree: 77%
 
 ---
 
@@ -30,7 +30,6 @@ Você recebe essas notificações em sua própria Caixa de entrada, onde pode vi
 >* [Projetos](/help/sites-cloud/authoring/projects/overview.md)
 >* [Projetos - trabalhar com tarefas](/help/sites-cloud/authoring/projects/tasks.md)
 >* [Fluxos de trabalhos](/help/sites-cloud/authoring/workflows/overview.md)
-
 
 ## Caixa de entrada no cabeçalho {#inbox-in-the-header}
 
@@ -86,26 +85,26 @@ Para ambas as exibições (Lista e Calendário), é possível definir as configu
 
 * **Exibição de calendário**
 
-   Para **Exibição de calendário** você pode configurar:
+  Para **Exibição de calendário** você pode configurar:
 
    * **Agrupar por**
    * **Agendamento** ou **Nenhum**
    * **Tamanho do cartão**
 
-   ![Configurações de exibição do calendário da caixa de entrada](/help/sites-cloud/authoring/assets/inbox-calendar-settings.png)
+  ![Configurações de exibição do calendário da caixa de entrada](/help/sites-cloud/authoring/assets/inbox-calendar-settings.png)
 
 * **Exibição de lista**
 
-   Para **Exibição de lista** você pode configurar o mecanismo de classificação:
+  Para **Exibição de lista** você pode configurar o mecanismo de classificação:
 
    * **Classificar por**
    * **Ordem de classificação**
 
-   ![Configurações de exibição da lista da caixa de entrada](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
+  ![Configurações de exibição da lista da caixa de entrada](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
 
-   Você também pode delegar o calendário a outros usuários, além de solicitar a delegação de outros usuários e gerenciar as delegações.
+  Você também pode delegar o calendário a outros usuários, além de solicitar a delegação de outros usuários e gerenciar as delegações.
 
-   ![Configurações de delegação da exibição de lista da caixa de entrada](/help/sites-cloud/authoring/assets/inbox-delegation.png)
+  ![Configurações de delegação da exibição de lista da caixa de entrada](/help/sites-cloud/authoring/assets/inbox-delegation.png)
 
 ## Realizar ação em um item {#taking-action-on-an-item}
 
@@ -126,6 +125,7 @@ Para ambas as exibições (Lista e Calendário), é possível definir as configu
       * Mostrar as propriedades do item
       * Abrir um painel ou um assistente apropriado para uma futura ação
       * Abrir a documentação relacionada
+
    * **Recuar** para uma etapa anterior
    * Visualizar a carga de um fluxo de trabalho
    * Criar um projeto a partir do item
@@ -135,7 +135,6 @@ Para ambas as exibições (Lista e Calendário), é possível definir as configu
    >Para obter mais informações, consulte:
    >
    >* Itens de fluxo de trabalho - [participar de fluxos de trabalho](/help/sites-cloud/authoring/workflows/participating.md)
-
 
 2. Dependendo do item selecionado, uma ação será iniciada, por exemplo:
 
@@ -152,7 +151,6 @@ Para ambas as exibições (Lista e Calendário), é possível definir as configu
    * Confirmar a ação apropriada, por exemplo, atribuir novamente.
    * Cancelar a ação
    * Selecione a seta para trás para retornar à caixa de entrada, por exemplo, se um assistente de ação ou uma página de documentação tiver sido aberta, você poderá retornar à Caixa de entrada.
-
 
 ## Criação de uma tarefa {#creating-a-task}
 
@@ -176,7 +174,7 @@ Na caixa de entrada, é possível criar tarefas:
 
    * **Avançado**
 
-      * **Nome**: isso será usado para formar o URL e, se estiver vazio, será baseado no **Título**.
+      * **Nome**: usado para formar o URL e, se estiver vazio, se baseia no **Título**.
 
    ![Opções avançadas da tarefa Adicionar caixa de entrada](/help/sites-cloud/authoring/assets/inbox-add-task-advanced.png)
 
@@ -205,9 +203,11 @@ Para determinadas tarefas, você pode criar um [Projeto](/help/sites-cloud/autho
       * **Data inicial**
       * **Data de vencimento**
       * **Usuário** e função
+
    * **Avançado**
 
       * **Nome**
+
    >[!NOTE]
    >
    >Consulte [Criação de um projeto](/help/sites-cloud/authoring/projects/managing.md#creating-a-project) para obter informações completas.

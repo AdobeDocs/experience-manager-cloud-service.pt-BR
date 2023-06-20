@@ -2,7 +2,7 @@
 title: Expressões de formulário adaptável
 seo-title: Adaptive Form Expressions
 description: Use expressões adaptáveis do Forms para adicionar validação automática, cálculo e ativar ou desativar a visibilidade de uma seção.
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '2696'
 ht-degree: 0%
@@ -237,7 +237,7 @@ window.addEventListener("bridgeInitializeStart", function(evnt) {
 
      gb.connect(function (){
 
-        //this function will be called after Adaptive Form is initialized
+        //this function is called after Adaptive Form is initialized
 
      })
 
@@ -275,7 +275,7 @@ Execute as seguintes etapas para criar um padrão personalizado para um tipo de 
 1. Abra a guia Properties do nó criado. Por exemplo, abra a guia Propriedades de `textboxpatterns`. Adicione o `guideComponentType` para esse nó e defina seu valor como *fd/af/components/formatter/guideTextBox*.
 
 1. O valor dessa propriedade varia dependendo do campo para o qual você deseja definir os padrões. Para campo numérico, o valor de `guideComponentType` propriedade é *fd/af/components/formatter/guideNumericBox*. O valor do campo Datepicker é *fd/af/components/formatter/guideDatepicker*. &quot;
-1. Você pode adicionar um padrão personalizado atribuindo uma propriedade à variável `textboxpatterns` nó. Adicione uma propriedade com um nome (por exemplo, `pattern1`) e defina seu valor com o padrão que deseja adicionar. Por exemplo, adicionar uma propriedade `pattern1` com o valor Fax=text{99-999-999999}. O padrão está disponível para todas as Caixas de texto usadas no Forms adaptável.
+1. Você pode adicionar um padrão personalizado atribuindo uma propriedade à variável `textboxpatterns` nó. Adicione uma propriedade com um nome (por exemplo, `pattern1`) e defina seu valor com o padrão que deseja adicionar. Por exemplo, adicionar uma propriedade `pattern1` com o valor Fax=text{99-999-9999999}. O padrão está disponível para todas as Caixas de texto usadas no Forms adaptável.
 
    ![Criação de padrões personalizados para campos no CrxDe](assets/creating-custom-patterns.png)
 

@@ -2,10 +2,10 @@
 title: Saiba mais sobre criação de Modelos de fragmento de conteúdo no AEM
 description: Saiba mais sobre os conceitos e os mecanismos de modelagem de conteúdo para seu Headless CMS usando Modelos de fragmentos de conteúdo.
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '688'
-ht-degree: 100%
+source-wordcount: '685'
+ht-degree: 92%
 
 ---
 
@@ -45,7 +45,7 @@ Em seguida, os Modelos de fragmentos de conteúdo podem ser criados e a estrutur
 
 Após selecionar isso, navegue até o local do modelo e selecione **Criar**. Aqui você pode inserir vários detalhes principais.
 
-A opção **Ativar modelo** é ativada por padrão. Isso significa que seu modelo estará disponível para uso (na criação de Fragmentos de conteúdo) assim que você salvá-lo. Você pode desativá-la se desejar — há oportunidades depois para ativar (ou desativar) um modelo existente.
+A opção **Ativar modelo** é ativada por padrão. Isso significa que seu modelo está disponível para uso (na criação de fragmentos de conteúdo) assim que você o salva. Você pode desativá-la se desejar — há oportunidades depois para ativar (ou desativar) um modelo existente.
 
 ![Criar Modelo de fragmento de conteúdo](/help/sites-cloud/administering/content-fragments/assets/cfm-models-02.png)
 

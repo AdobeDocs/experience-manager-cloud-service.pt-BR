@@ -3,9 +3,9 @@ title: Migração da configuração do Dispatcher do AMS para o AEM as a Cloud S
 description: Migração da configuração do Dispatcher do AMS para o AEM as a Cloud Service
 feature: Dispatcher
 exl-id: ff7397dd-b6e1-4d08-8e2d-d613af6b81b3
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1447'
+source-wordcount: '1445'
 ht-degree: 17%
 
 ---
@@ -18,7 +18,7 @@ A configuração do Apache e do Dispatcher no AEM as a Cloud Service é bastante
 
 * No AEM as a Cloud Service, algumas diretivas do Apache não podem ser usadas (por exemplo, `Listen` ou `LogLevel`)
 * No AEM as a Cloud Service, somente algumas partes da configuração do Dispatcher podem ser colocadas em arquivos de inclusão e seus nomes são importantes. Por exemplo, as regras de filtro que você deseja reutilizar em diferentes hosts devem ser colocadas em um arquivo chamado `filters/filters.any`. Consulte a página de referência do para obter mais informações.
-* No AEM as a Cloud Service, há validação extra para não permitir regras de filtro gravadas usando `/glob` para evitar problemas de segurança. Desde `deny *` será usado em vez de `allow *` (que não pode ser usado), os clientes se beneficiarão da execução do Dispatcher localmente e da realização de tentativas e erros, observando os registros para saber exatamente quais caminhos os filtros do Dispatcher estão bloqueando para que eles possam ser adicionados.
+* No AEM as a Cloud Service, há validação extra para não permitir regras de filtro gravadas usando `/glob` para evitar problemas de segurança. Porque `deny *` é usado em vez de `allow *` (que não pode ser usado), os clientes se beneficiam da execução local do Dispatcher e da realização de tentativas e erros, observando os registros para saber exatamente quais caminhos os filtros do Dispatcher estão bloqueando para que eles possam ser adicionados.
 
 ## Diretrizes para migrar a configuração do dispatcher do AMS para o AEM as a Cloud Service
 

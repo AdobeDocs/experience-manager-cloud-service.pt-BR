@@ -4,10 +4,10 @@ description: Integração com o Adobe Target
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 588825f910b3b9ad6a491c57322971200cea1d15
-workflow-type: ht
-source-wordcount: '1047'
-ht-degree: 100%
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+workflow-type: tm+mt
+source-wordcount: '1046'
+ht-degree: 98%
 
 ---
 
@@ -62,7 +62,6 @@ Como dito anteriormente, o primeiro caso é o mais comum para o AEM as a Cloud S
 > 1. Insira novamente a ID do locatário.
 > 2. Conecte-se novamente ao Target.
 > 3. Salve a configuração.
-
 
 ### Editar a configuração do Target {#edit-target-configuration}
 
@@ -157,4 +156,4 @@ Para saber como criar e publicar, consulte esta [página](https://experienceleag
 
 >[!NOTE]
 >
->As configurações herdadas ainda são compatíveis com clientes existentes (sem a opção de editar ou criar novos). As configurações herdadas farão parte dos pacotes de conteúdo carregados pelos clientes que usam o VSTS.
+>As configurações herdadas ainda são compatíveis com clientes existentes (sem a opção de editar ou criar novos). As configurações herdadas fazem parte dos pacotes de conteúdo carregados pelos clientes que usam o VSTS.

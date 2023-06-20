@@ -2,10 +2,10 @@
 title: Configuração da equipe de desenvolvimento corporativa
 description: Saiba como configurar e dimensionar sua equipe de desenvolvimento corporativo e veja como o AEM as a Cloud Service pode apoiar seu processo de desenvolvimento.
 exl-id: 85f8779b-12cb-441b-a34d-04641184497a
-source-git-commit: f19c4c71cf3b70331b9ccc56adf0bfd31e7edb2c
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1445'
-ht-degree: 97%
+source-wordcount: '1444'
+ht-degree: 85%
 
 ---
 
@@ -33,7 +33,7 @@ O código pode ser implantado em ambientes de desenvolvimento usando um pipeline
 
 O pipeline de produção primeiro implanta o código e a configuração no ambiente de preparo, testa o aplicativo e finalmente implanta no ambiente de produção.
 
-Um SDK do Cloud Service que é sempre atualizado com as melhorias mais recentes do AEM as a Cloud Service permite o desenvolvimento local utilizando diretamente o hardware local do desenvolvedor. Assim é possível um desenvolvimento rápido com tempos de resposta muito baixos. Assim, os desenvolvedores podem permanecer em seus ambientes locais familiares e escolher entre uma grande variedade de ferramentas de desenvolvimento, além de enviar para ambientes de desenvolvimento ou produção, quando bem entenderem.
+Um SDK Cloud Service que é sempre atualizado com as melhorias mais recentes do AEM as a Cloud Service permite o desenvolvimento local utilizando diretamente o hardware local do desenvolvedor. Assim é possível um desenvolvimento rápido com tempos de resposta muito baixos. Assim, os desenvolvedores podem permanecer em seus ambientes locais familiares e escolher entre uma grande variedade de ferramentas de desenvolvimento, além de enviar para ambientes de desenvolvimento ou produção, quando bem entenderem.
 
 O Cloud Manager é compatível com configurações flexíveis de várias equipes, que podem ser ajustadas para atender às necessidades de cada empresa. Para garantir implantações estáveis com várias equipes e, ao mesmo tempo, evitar situações em que uma equipe afeta a produção de todas as equipes, o pipeline opinativo do Cloud Manager sempre valida e testa o código de todas as equipes.
 
@@ -70,13 +70,13 @@ A configuração no repositório Git do Cloud Manager tem duas ramificações.
 * Uma ramificação de liberação estável contendo o código de produção de todas as equipes.
 * Uma ramificação de desenvolvimento contendo o código de desenvolvimento de todas as equipes.
 
-Cada push para o repositório Git de uma equipe na ramificação estável ou de desenvolvimento aciona uma [Ação do GitHub.](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md#managing-code)
+Cada push para o repositório Git de uma equipe na ramificação estável ou de desenvolvimento aciona um [Ação do GitHub.](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md#managing-code)
 
 Todos os projetos seguem a mesma configuração para a ramificação estável. Um push para a ramificação estável de um projeto é enviado automaticamente para a ramificação estável no repositório Git do Cloud Manager. O pipeline de produção no Cloud Manager é configurado para ser acionado por um push para a ramificação estável. O pipeline de produção é, portanto, executado por cada push de qualquer equipe em uma ramificação estável e a implantação em produção é atualizada se for aprovada em todos os quality gates (portais de qualidade).
 
 ![Diagrama de push](/help/implementing/cloud-manager/assets/team-setup2.png)
 
-Um push para a ramificação de desenvolvimento é tratado de forma diferente. Embora um push para uma ramificação de desenvolvedor no repositório Git de uma equipe também acione uma ação do GitHub e o código seja enviado automaticamente para a ramificação de desenvolvimento no repositório Git do Cloud Manager, o pipeline de não produção não é acionado automaticamente pelo push de código. Ele é acionado por uma chamada à API do Cloud Manager.
+Um push para a ramificação de desenvolvimento é tratado de forma diferente. Embora um push para uma ramificação de desenvolvedor no repositório Git de uma equipe também acione uma ação do GitHub e o código seja enviado automaticamente para a ramificação de desenvolvimento no repositório Git do Cloud Manager, o pipeline de não produção não é acionado automaticamente pelo push de código. É acionado por uma chamada à API do Cloud Manager.
 
 A execução do pipeline de produção inclui a verificação do código de todas as equipes por meio dos quality gates (portais de qualidade) fornecidos. Depois que o código é implantado em produção, os testes e as auditorias são executados para garantir que tudo está funcionando conforme o esperado. Uma vez aprovadas por todos os portais, as alterações são implementadas na produção sem interrupção ou tempo de inatividade.
 
@@ -96,7 +96,7 @@ Essa configuração do mundo real pode ser usada como um blueprint e personaliza
 
 Com o repositório Git do Cloud Manager e o pipeline de produção, o código de produção completo é sempre executado por todos os quality gates (portais de qualidade), tratando-o como uma única unidade de implantação. Dessa forma, o sistema de produção está sempre ativo, sem interrupções ou tempo de inatividade.
 
-Por outro lado, sem esse sistema em vigor, como cada equipe pode implantar separadamente, existe o risco de que uma atualização de uma única equipe possa levar a problemas de estabilidade na produção. Além disso, requer coordenação e tempo de inatividade planejado para lançar atualizações. Com um número crescente de equipes, o esforço de coordenação se tornará muito mais complexo e rapidamente sairá do controle.
+Por outro lado, sem esse sistema em vigor, como cada equipe pode implantar separadamente, existe o risco de que uma atualização de uma única equipe possa levar a problemas de estabilidade na produção. Além disso, requer coordenação e tempo de inatividade planejado para lançar atualizações. Com um número crescente de equipes, o esforço de coordenação se torna muito mais complexo e rapidamente incontrolável.
 
 Se um problema for detectado nos quality gates (portais de qualidade), a produção não será afetada e o problema poderá ser detectado e corrigido sem a necessidade de envolver o pessoal da Adobe. Sem o Cloud Service e sem sempre testar toda a implantação, implantações parciais podem causar paralisações que exigem uma solicitação de reversão ou até mesmo uma restauração completa de um backup. Os ensaios parciais também podem levar a outros problemas que terão de ser resolvidos posteriormente, exigindo coordenação e apoio do pessoal da Adobe.
 

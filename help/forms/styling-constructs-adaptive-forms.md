@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '2308'
 ht-degree: 3%
@@ -24,7 +24,7 @@ Conhecimento de CSS e da estrutura LESS.
 
 ## O que pode ser personalizado {#what-can-be-customized}
 
-O artigo lista as classes css disponíveis publicamente do Adaptive Forms. Você pode aproveitar essas classes para estilizar vários componentes de um Formulário adaptável. O estilo dos componentes de criação, como caixas de diálogo e barras de status que exibem avisos, está fora do escopo deste artigo. Use essas construções de estilo para criar estilos (usando CSS ou Menos) somente quando não for possível estilizar componentes usando [editor de tema](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html).
+O artigo lista as classes css disponíveis publicamente do Adaptive Forms. Você pode usar essas classes para estilizar vários componentes de um Formulário adaptável. O estilo dos componentes de criação, como caixas de diálogo e barras de status que exibem avisos, está fora do escopo deste artigo. Use essas construções de estilo para criar estilos (usando CSS ou Menos) somente quando não for possível estilizar componentes usando [editor de tema](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html).
 
 ## Personalização de estilos no Adaptive Forms {#customizing-styles-in-adaptive-forms}
 
@@ -1021,7 +1021,7 @@ Essas variáveis influenciam o indicador de rolagem, que é uma seta laranja exi
 
 ## Variáveis específicas do layout da barra de ferramentas fixa para dispositivos móveis {#mobile-fixed-toolbar-layout-specific-variables}
 
-Essas variáveis na tabela a seguir influenciam o layout da barra de ferramentas fixa móvel.
+Essas variáveis na tabela a seguir influenciam o layout da barra de ferramentas móvel fixa.
 
 <table>
  <tbody>

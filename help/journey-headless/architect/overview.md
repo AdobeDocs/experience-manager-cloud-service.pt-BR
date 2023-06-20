@@ -2,16 +2,16 @@
 title: Jornada do arquiteto de conteúdo do AEM Headless
 description: Comece aqui para obter uma jornada guiada pelos recursos headless avançados e flexíveis do AEM, suas funcionalidades e aprenda a modelar o conteúdo em seu primeiro projeto headless.
 exl-id: ccfec100-8005-4f47-b5b6-ca188b35315c
-source-git-commit: e03c067f4337bbf0e98cb4015b9be4fc99fc17c1
-workflow-type: ht
-source-wordcount: '789'
-ht-degree: 100%
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+workflow-type: tm+mt
+source-wordcount: '786'
+ht-degree: 86%
 
 ---
 
 # Jornada do arquiteto de conteúdo do AEM Headless {#aem-headless-content-architect-journey}
 
-Comece aqui para obter uma jornada guiada pelos recursos headless avançados e flexíveis do AEM, suas funcionalidades e como aproveitá-las em seu primeiro projeto headless.
+Comece aqui uma jornada guiada sobre os recursos headless avançados e flexíveis do AEM, suas capacidades e como usá-las em seu primeiro projeto headless.
 
 {{headless-trials-promotion}}
 
@@ -37,11 +37,11 @@ Se quiser saber como a Adobe recomenda resolver casos de negócios headless com 
 
 ## Público {#audience}
 
-Essa jornada foi projetada para o perfil do arquiteto de conteúdo. Como um arquiteto de conteúdo, você definirá a estrutura do conteúdo. Essas definições serão usadas pelos autores de conteúdo quando criarem o conteúdo real.
+Essa jornada foi projetada para o perfil do arquiteto de conteúdo. Como arquiteto de conteúdo, você está definindo a estrutura do conteúdo. Essas definições são então usadas pelos Autores de conteúdo, quando eles criam o conteúdo real.
 
 A jornada apresenta os requisitos, as etapas e a abordagem de um projeto headless do AEM da perspectiva de um arquiteto de conteúdo. A jornada define perfis adicionais com os quais o arquiteto de conteúdo deve interagir para um projeto bem-sucedido, mas o ponto de vista da jornada é o do arquiteto de conteúdo.
 
-As informações nesta jornada podem ser úteis para outros perfis, mas algumas informações são desnecessárias para determinadas funções. Fique atento para jornadas futuras que abordarão funções adicionais.
+As informações nesta jornada podem, é claro, ser úteis para outros perfis, mas algumas informações são supérfluas para determinadas funções. Fique atento para jornadas futuras que abordarão funções adicionais.
 
 ## Jornada do arquiteto de conteúdo headless {#the-journey}
 
@@ -68,6 +68,6 @@ Como tal, as jornadas são projetadas para se sustentarem sozinhas. No entanto, 
 
 * [Jornada de tradução do AEM headless](/help/journey-headless/translation/overview.md) - essa jornada de documentação oferece uma ampla compreensão sobre a tecnologia headless, como o AEM fornece conteúdo headless e como você pode traduzi-lo.
 * [Jornada de criação headless](/help/journey-headless/author/overview.md) - comece aqui para obter uma jornada guiada pelos recursos headless avançados e flexíveis do AEM, suas funcionalidades e aprenda a modelar o conteúdo em seu primeiro projeto headless.
-* [Jornada de desenvolvedores headless do AEM](/help/journey-headless/developer/overview.md) - comece aqui para obter uma jornada guiada pelos recursos headless avançados e flexíveis do AEM, suas funcionalidades e como aproveitá-las em seu primeiro projeto.
+* [Jornada do desenvolvedor sem periféricos do AEM](/help/journey-headless/developer/overview.md) - Comece aqui para obter uma jornada guiada sobre os recursos headless avançados e flexíveis do AEM, suas capacidades e como usá-las em seu primeiro projeto de desenvolvimento.
 * [Documentação técnica do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=pt-BR) - se você já tiver uma sólida compreensão das tecnologias headless e do AEM, poderá consultar diretamente os nossos documentos técnicos detalhados.
 * [Tutoriais do AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR) - se você prefere aprender na prática e tem conhecimento técnico, utilize nossos tutoriais práticos organizados por API e estrutura, que exploram a criação e o uso de aplicativos incorporados no AEM Headless.

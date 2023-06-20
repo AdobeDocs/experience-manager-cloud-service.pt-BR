@@ -5,16 +5,16 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Release Information,Asset Processing
 role: Architect,Admin
 exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '850'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
 # Visão geral da assimilação e processamento de ativos com microsserviços de ativos {#asset-microservices-overview}
 
-O Adobe Experience Manager as a [!DNL Cloud Service] fornece um método nativo da nuvem para aproveitar os aplicativos e os recursos do Experience Manager. Um dos principais elementos dessa nova arquitetura é a assimilação e processamento de ativos, possibilitadas por microsserviços de ativos. Os microsserviços de ativos fornecem um processamento escalável e resiliente de ativos usando serviços em nuvem. A Adobe gerencia os serviços em nuvem para obter o tratamento ideal de diferentes tipos de ativos e opções de processamento. Os principais benefícios dos microsserviços de ativos nativos da nuvem são:
+Adobe Experience Manager as a [!DNL Cloud Service] O fornece um método nativo em nuvem para usar aplicativos e recursos do Experience Manager. Um dos principais elementos dessa nova arquitetura é a assimilação e processamento de ativos, possibilitadas por microsserviços de ativos. Os microsserviços de ativos fornecem um processamento escalável e resiliente de ativos usando serviços em nuvem. A Adobe gerencia os serviços em nuvem para obter o tratamento ideal de diferentes tipos de ativos e opções de processamento. Os principais benefícios dos microsserviços de ativos nativos da nuvem são:
 
 * Arquitetura escalável que permite um processamento contínuo de operações com uso intenso de recursos.
 * Indexação e extrações de texto eficientes que não afetam o desempenho de seus ambientes do Experience Manager.
@@ -98,4 +98,3 @@ O Adobe Experience Manager pode ser configurado para acionar automaticamente os 
 >* [Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html)
 >* Aplicativo de desktop do [[!DNL Experience Manager]  ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=pt-BR)
 >* [Documentação do Apache Oak sobre acesso binário direto](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html)
-

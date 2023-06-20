@@ -9,10 +9,10 @@ audience: administrator
 feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
-exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: 9c25d9991b41a5a714df3f07e84946162e5495c0
+exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2211'
+source-wordcount: '2197'
 ht-degree: 15%
 
 ---
@@ -49,11 +49,11 @@ O modelo configura os URLs das páginas de produto e oferece suporte às seguint
 
 No caso do [Loja de referência Venia](https://github.com/adobe/aem-cif-guides-venia):
 
-* `{{page}}` será substituída por `/content/venia/us/en/products/product-page`
-* `{{sku}}` será substituído pelo SKU do produto, por exemplo, `VP09`
-* `{{url_key}}` será substituído pelo nome do produto `url_key` propriedade, por exemplo, `lenora-crochet-shorts`
-* `{{url_path}}` será substituído pelo nome do produto `url_path`, por exemplo, `venia-bottoms/venia-pants/lenora-crochet-shorts`
-* `{{variant_sku}}` será substituída pela variante selecionada no momento, por exemplo, `VP09-KH-S`
+* `{{page}}` é substituída por `/content/venia/us/en/products/product-page`
+* `{{sku}}` é substituído pelo SKU do produto, por exemplo, `VP09`
+* `{{url_key}}` é substituído pelo nome do produto `url_key` propriedade, por exemplo, `lenora-crochet-shorts`
+* `{{url_path}}` é substituído pelo nome do produto `url_path`, por exemplo, `venia-bottoms/venia-pants/lenora-crochet-shorts`
+* `{{variant_sku}}` é substituída pela variante selecionada no momento, por exemplo, `VP09-KH-S`
 
 Uma vez que a `url_path` foi descontinuado, os formatos de URL de produto predefinidos usam o `url_rewrites` e escolha aquele com mais segmentos de caminho como alternativa se a variável `url_path` não está disponível.
 
@@ -68,9 +68,9 @@ O modelo configura os URLs das páginas de categoria ou lista de produtos e ofer
 
 No caso do [Loja de referência Venia](https://github.com/adobe/aem-cif-guides-venia):
 
-* `{{page}}` será substituída por `/content/venia/us/en/products/category-page`
-* `{{url_key}}` será substituída pela categoria de `url_key` propriedade
-* `{{url_path}}` será substituída pela categoria de `url_path`
+* `{{page}}` é substituída por `/content/venia/us/en/products/category-page`
+* `{{url_key}}` é substituído pelo nome da `url_key` propriedade
+* `{{url_path}}` é substituído pelo nome da `url_path`
 
 Com os dados de exemplo acima, uma URL de página de categoria formatada usando o formato de URL padrão será semelhante a `/content/venia/us/en/products/category-page.html/venia-bottoms/venia-pants.html`.
 
@@ -156,7 +156,7 @@ Por exemplo, considere a resposta de um [consulta de produtos](https://devdocs.m
 
 ### Critérios de seleção {#specific-pages-selection}
 
-A seleção de uma página de categoria específica é direta, com base no `url_path` ou `url_key`. Subcategorias correspondentes são suportadas apenas para formatos de URL que contenham a categoria completa `url_path`. Caso contrário, apenas uma correspondência exata do `url_key` é possível.
+A seleção de uma página de categoria específica é direta, com base na `url_path` ou `url_key`. Subcategorias correspondentes são suportadas apenas para formatos de URL que contenham a categoria completa `url_path`. Caso contrário, apenas uma correspondência exata do `url_key` é possível.
 
 Páginas de produto específicas são selecionadas pelo SKU ou pela categoria do produto. Posteriormente, exige que algumas informações de categoria sejam codificadas no URL do produto. Isso só está disponível para alguns dos formatos de URL padrão. Consulte a tabela abaixo para obter uma comparação sobre qual formato de URL suporta a seleção de página específica por sku ou categoria.
 
@@ -205,7 +205,7 @@ As implementações de formato de URL personalizado devem implementar um par de 
 
 ### Combinar com Mapeamentos do Sling {#sling-mapping}
 
-Além do `UrlProvider`, também é possível configurar os [Mapeamentos do Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) para substituir e processar URLs. O Arquétipo do AEM também fornece [um exemplo de configuração](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish) para definir alguns Mapeamentos do Sling para as portas 4503 (Publish) e 80 (Dispatcher).
+Além do `UrlProvider`, também é possível configurar [Mapeamentos do Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) para substituir e processar URLs. O Arquétipo do AEM também fornece [um exemplo de configuração](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish) para definir alguns Mapeamentos do Sling para as portas 4503 (Publish) e 80 (Dispatcher).
 
 ### Combinar com o AEM Dispatcher {#dispatcher}
 
@@ -229,7 +229,7 @@ _**Equilíbrio entre comprimento do URL e informações codificadas.**_
 
 Dependendo do tamanho do catálogo, em particular o tamanho e a profundidade da árvore de categoria, pode não ser razoável codificar o inteiro `url_path` de categorias no URL. Nesse caso, o comprimento do URL poderia ser reduzido incluindo somente o da categoria. `url_key` em vez disso. Isso suportará a maioria dos recursos que estão disponíveis ao usar a categoria `url_path`.
 
-Além disso, utilize [Mapeamentos do Sling](#sling-mapping) para combinar o sku com o produto `url_key`. Na maioria dos sistemas de comércio eletrônico, o SKU segue um formato específico e separa o SKU do `url_key` para solicitações recebidas devem ser facilmente possíveis. Com isso em mente, deve ser possível reescrever o URL de uma página de produto para `/p/{{category}}/{{sku}}-{{url_key}}.html`e um URL de categoria para `/c/{{url_key}}.html` respectivamente. A variável `/p` e `/c` Os prefixos ainda são necessários para distinguir as páginas de produto e categoria de outras páginas de conteúdo.
+Além disso, utilize [Mapeamentos do Sling](#sling-mapping) para combinar o SKU com o produto `url_key`. Na maioria dos sistemas de comércio eletrônico, o SKU segue um formato específico e separa o SKU do `url_key` para solicitações recebidas devem ser facilmente possíveis. Com isso em mente, deve ser possível reescrever o URL de uma página de produto para `/p/{{category}}/{{sku}}-{{url_key}}.html`e um URL de categoria para `/c/{{url_key}}.html` respectivamente. A variável `/p` e `/c` Os prefixos ainda são necessários para distinguir as páginas de produto e categoria de outras páginas de conteúdo.
 
 ### Migração para um novo formato de URL {#migrate-url-formats}
 

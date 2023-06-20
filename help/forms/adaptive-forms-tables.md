@@ -6,9 +6,9 @@ seo-description: The Table component in AEM Forms lets you create tables in adap
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms
 exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2418'
+source-wordcount: '2415'
 ht-degree: 0%
 
 ---
@@ -305,7 +305,7 @@ Além disso, você pode arrastar e soltar o subformulário XDP para adicionar um
 
 >[!NOTE]
 >
->Uma tabela XDP sem uma linha de cabeçalho não será mapeada para o componente de tabela de formulário adaptável. Em vez disso, ele será mapeado para o componente Painel de formulário adaptável com layout fluido. Além disso, ao adicionar uma tabela aninhada de um XDP a um formulário adaptável, a tabela externa é convertida em um painel enquanto mantém a tabela interna.
+>Uma tabela XDP sem uma linha de cabeçalho não será mapeada para o componente de tabela de formulário adaptável. Em vez disso, ele é mapeado para o componente Painel de formulário adaptável com layout fluido. Além disso, ao adicionar uma tabela aninhada de um XDP a um formulário adaptável, a tabela externa é convertida em um painel enquanto mantém a tabela interna.
 
 Além disso, você pode arrastar e soltar um grupo de elementos de tipo complexo XSD para criar uma linha de tabela. Uma nova linha é criada logo abaixo da linha em que você soltou os elementos. As células criadas usando os elementos de tipo complexo XSD mantêm uma referência de ligação ao XSD. Você também pode substituir uma célula do corpo por um elemento de tipo complexo XSD soltando o elemento na célula.
 
@@ -320,4 +320,4 @@ Além disso, você pode arrastar e soltar um grupo de elementos de tipo complexo
 * Se você mover linhas para cima e para baixo durante a criação de uma tabela baseada em XSD, alguma perda de dados das linhas da tabela será vista no XML de dados gerado no envio do formulário.
 * Cada célula do corpo em uma tabela padrão tem um nome de elemento predefinido associado a ela. Se adicionar outra tabela no formulário adaptável, as células de corpo padrão na nova tabela terão o mesmo nome de elemento da primeira tabela. Nesse cenário, os dados gerados no envio do formulário incluirão dados nas células do corpo padrão de apenas uma das tabelas. Portanto, renomeie os nomes dos elementos para as células do corpo padrão para mantê-los exclusivos nas tabelas e evitar perda de dados.
 
-   Observe que isso é aplicável somente às células do corpo padrão. Se você adicionar mais linhas ou colunas a uma tabela, gerará automaticamente nomes de elementos exclusivos para células de corpo fora do padrão.
+  Observe que isso é aplicável somente às células do corpo padrão. Se você adicionar mais linhas ou colunas a uma tabela, gerará automaticamente nomes de elementos exclusivos para células de corpo fora do padrão.

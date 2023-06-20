@@ -3,13 +3,13 @@ title: Seletor de ativos para [!DNL Adobe Experience Manager] as a [!DNL Cloud S
 description: Use o Seletor de ativos para pesquisar, localizar e recuperar metadados e representações de ativos no aplicativo.
 contentOwner: Adobe
 role: Admin,User
-source-git-commit: af36101d8fecd7fab2300f93d40bba4c92f8eafe
-workflow-type: ht
-source-wordcount: '2378'
-ht-degree: 100%
+exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+workflow-type: tm+mt
+source-wordcount: '2376'
+ht-degree: 99%
 
 ---
-
 
 # Seletor de ativos de micro front-end {#Overview}
 
@@ -76,7 +76,6 @@ Defina os pré-requisitos no arquivo `index.html` ou em um arquivo semelhante na
 * imsOrg
 * imsToken
 * apikey
-
 <!--
 The prerequisites vary if you are authenticating using a SUSI flow or a non-SUSI flow.
 
@@ -361,28 +360,28 @@ Você pode usar as propriedades do Seletor de ativos para personalizar a forma c
 
 | Propriedade | Tipo | Obrigatório | Padrão | Descrição |
 |---|---|---|---|---|
-| *painel* | booleano | Não | falso | Se `true` estiver marcado, o Seletor de ativos será renderizado em uma exibição do painel à esquerda. Se `false` estiver marcado, o Seletor de ativos será renderizado na exibição modal. |
-| *imsOrg* | string | Sim |  | A ID do Adobe Identity Management System (IMS) atribuída durante o provisionamento do [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] para sua organização. A chave `imsOrg` é necessária para autenticar se a organização que você está acessando está no Adobe IMS ou não. |
-| *imsToken* | string | Não |  | Token de portador IMS usado para autenticação. O `imsToken` é obrigatório se você estiver usando o fluxo não SUSI. |
-| *apiKey* | string | Não |  | Chave de API usada para acessar o serviço de Descoberta do AEM. O `apiKey` é obrigatório se você estiver usando o fluxo não SUSI. |
+| *painel* | booleano | Não | falso | Se marcado `true`, o Seletor de ativos é renderizado em uma exibição do painel à esquerda. Se estiver marcado `false`, o Seletor de ativos é renderizado na exibição modal. |
+| *imsOrg* | string | Sim | | A ID do Adobe Identity Management System (IMS) atribuída durante o provisionamento do [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] para sua organização. A chave `imsOrg` é necessária para autenticar se a organização que você está acessando está no Adobe IMS ou não. |
+| *imsToken* | string | Não | | Token de portador IMS usado para autenticação. O `imsToken` é obrigatório se você estiver usando o fluxo não SUSI. |
+| *apiKey* | string | Não | | Chave de API usada para acessar o serviço de Descoberta do AEM. O `apiKey` é obrigatório se você estiver usando o fluxo não SUSI. |
 | *rootPath* | string | Não | /content/dam/ | Caminho da pasta na qual o Seletor de ativos exibe seus ativos. O `rootPath` também pode ser usado na forma de encapsulamento. Por exemplo, dado o seguinte caminho, `/content/dam/marketing/subfolder/`, o Seletor de ativos não permite navegar por qualquer pasta principal, apenas exibirá as pastas secundárias. |
-| *caminho* | string | Não |  | Caminho usado para navegar para um diretório específico de ativos quando o Seletor de ativos é renderizado. |
-| *filterSchema* | matriz | Não |  | Modelo usado para configurar propriedades de filtro. Isso é útil quando quiser limitar determinadas opções de filtro no Seletor de ativos. |
-| *filterFormProps* | Objeto | Não |  | Especifique as propriedades de filtro que precisam ser usadas para refinar sua pesquisa. Por exemplo, tipo MIME JPG, PNG, GIF. |
-| *selectedAssets* | Matriz `<Object>` | Não |  | Especifique os ativos selecionados quando o Seletor de ativos for renderizado. É necessária uma matriz de objetos que contenha uma propriedade de id dos ativos. Por exemplo, `[{id: 'urn:234}, {id: 'urn:555'}]` Um ativo deve estar disponível no diretório atual. Se precisar usar um diretório diferente, forneça um valor para a propriedade `path` também. |
-| *acvConfig* | Objeto | Não |  | A propriedade Exibição da coleção de ativos que contém o objeto com a configuração personalizada para substituir os padrões. |
-| *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | Não |  | Se as traduções prontas para uso forem insuficientes para as necessidades do aplicativo, é possível expor uma interface pela qual poderá passar seus próprios valores localizados personalizados pela propriedade `i18nSymbols`. Transmitir um valor por meio dessa interface substitui as traduções padrão fornecidas e usará suas próprias traduções.  Para executar a substituição, deverá transmitir um objeto [Descritor de mensagem](https://formatjs.io/docs/react-intl/api/#message-descriptor) à chave de `i18nSymbols` que deseja substituir. |
-| *intl* | Objeto | Não |  | O Seletor de ativos fornece traduções padrão prontas para uso. Você pode selecionar o idioma de tradução fornecendo uma string de idioma válida por meio da propriedade `intl.locale`. Por exemplo: `intl={{ locale: "es-es" }}` </br></br> As strings de idioma com suporte seguem os padrões [ISO 639 - Códigos](https://www.iso.org/iso-639-language-codes.html) para a representação de nomes de idiomas. </br></br> Lista de idiomas com suporte: Inglês - “en-us” (padrão) Espanhol - “es-es” Alemão - “de-de” Francês - “fr-fr” Italiano - “it-it” Japonês - “ja-jp” Coreano - “ko-kr” Português - “pt-br” Chinês (Tradicional) - “zh-cn” Chinês (Taiwan) - “zh-tw” |
+| *caminho* | string | Não | | Caminho usado para navegar para um diretório específico de ativos quando o Seletor de ativos é renderizado. |
+| *filterSchema* | matriz | Não | | Modelo usado para configurar propriedades de filtro. Isso é útil quando quiser limitar determinadas opções de filtro no Seletor de ativos. |
+| *filterFormProps* | Objeto | Não | | Especifique as propriedades de filtro que precisam ser usadas para refinar sua pesquisa. Por exemplo, tipo MIME JPG, PNG, GIF. |
+| *selectedAssets* | Matriz `<Object>` | Não |                 | Especifique os ativos selecionados quando o Seletor de ativos for renderizado. É necessária uma matriz de objetos que contenha uma propriedade de id dos ativos. Por exemplo, `[{id: 'urn:234}, {id: 'urn:555'}]` Um ativo deve estar disponível no diretório atual. Se precisar usar um diretório diferente, forneça um valor para a propriedade `path` também. |
+| *acvConfig* | Objeto | Não | | A propriedade Exibição da coleção de ativos que contém o objeto com a configuração personalizada para substituir os padrões. |
+| *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | Não |                 | Se as traduções prontas para uso forem insuficientes para as necessidades do aplicativo, é possível expor uma interface pela qual poderá passar seus próprios valores localizados personalizados pela propriedade `i18nSymbols`. Transmitir um valor por meio dessa interface substitui as traduções padrão fornecidas e usará suas próprias traduções.  Para executar a substituição, deverá transmitir um objeto [Descritor de mensagem](https://formatjs.io/docs/react-intl/api/#message-descriptor) à chave de `i18nSymbols` que deseja substituir. |
+| *intl* | Objeto | Não | | O Seletor de ativos fornece traduções padrão prontas para uso. Você pode selecionar o idioma de tradução fornecendo uma string de idioma válida por meio da propriedade `intl.locale`. Por exemplo: `intl={{ locale: "es-es" }}` </br></br> As strings de idioma com suporte seguem os padrões [ISO 639 - Códigos](https://www.iso.org/iso-639-language-codes.html) para a representação de nomes de idiomas. </br></br> Lista de idiomas com suporte: Inglês - “en-us” (padrão) Espanhol - “es-es” Alemão - “de-de” Francês - “fr-fr” Italiano - “it-it” Japonês - “ja-jp” Coreano - “ko-kr” Português - “pt-br” Chinês (Tradicional) - “zh-cn” Chinês (Taiwan) - “zh-tw” |
 | *repositoryId* | string | Não | &#39;&#39; | Repositório de onde o Seletor de ativos carrega o conteúdo. |
 | *additionalAemSolutions* | `Array<string>` | Não | [ ] | Permite adicionar uma lista de repositórios adicionais do AEM. Se nenhuma informação for fornecida nessa propriedade, somente a biblioteca de mídia ou os repositórios do AEM Assets serão considerados. |
 | *hideTreeNav* | booleano | Não |  | Especifica se deve mostrar ou ocultar a barra lateral de navegação da árvore de ativos. Usada apenas na exibição modal e, portanto, não há efeito dessa propriedade na exibição de painel. |
-| *onDrop* | Função | Não |  | A propriedade permite a funcionalidade soltar de um ativo. |
-| *dropOptions* | `{allowList?: Object}` | Não |  | Configura as opções de soltar usando “allowList”. |
-| *colorScheme* | string | Não |  | Configure o tema (`light` ou `dark`) do Seletor de ativos. |
-| *handleSelection* | Função | Não |  | Chamado com a matriz de itens do ativo quando os ativos são selecionados e o botão `Select` no modal é clicado. Essa função só é invocada na exibição modal. Para exibição do painel, use as funções `handleAssetSelection` ou `onDrop`. Exemplo: <pre>handleSelection=(assets: Asset[])=> {...}</pre> Consulte [Tipo de ativo selecionado](#selected-asset-type) para obter detalhes. |
-| *handleAssetSelection* | Função | Não |  | Invocado com uma matriz de itens enquanto os ativos estão sendo selecionados ou desmarcados. É útil quando você deseja acompanhar os ativos à medida que o usuário os seleciona. Exemplo: <pre>handleSelection=(assets: Asset[])=> {...}</pre> Consulte [Tipo de ativo selecionado](#selected-asset-type) para obter detalhes. |
-| *onClose* | Função | Não |  | Invocado quando o botão `Close` na exibição modal é pressionado. Somente é chamado na exibição `modal` e desconsiderado na exibição `rail`. |
-| *onFilterSubmit* | Função | Não |  | Invocado com itens de filtro à medida que o usuário altera critérios de filtro diferentes. |
+| *onDrop* | Função | Não | | A propriedade permite a funcionalidade soltar de um ativo. |
+| *dropOptions* | `{allowList?: Object}` | Não | | Configura as opções de soltar usando “allowList”. |
+| *colorScheme* | string | Não | | Configure o tema (`light` ou `dark`) do Seletor de ativos. |
+| *handleSelection* | Função | Não | | Chamado com a matriz de itens do ativo quando os ativos são selecionados e o botão `Select` no modal é clicado. Essa função só é invocada na exibição modal. Para exibição do painel, use as funções `handleAssetSelection` ou `onDrop`. Exemplo: <pre>handleSelection=(assets: Asset[])=> {...}</pre> Consulte [Tipo de ativo selecionado](#selected-asset-type) para obter detalhes. |
+| *handleAssetSelection* | Função | Não | | Invocado com uma matriz de itens enquanto os ativos estão sendo selecionados ou desmarcados. É útil quando você deseja acompanhar os ativos à medida que o usuário os seleciona. Exemplo: <pre>handleSelection=(assets: Asset[])=> {...}</pre> Consulte [Tipo de ativo selecionado](#selected-asset-type) para obter detalhes. |
+| *onClose* | Função | Não | | Invocado quando o botão `Close` na exibição modal é pressionado. Somente é chamado na exibição `modal` e desconsiderado na exibição `rail`. |
+| *onFilterSubmit* | Função | Não | | Invocado com itens de filtro à medida que o usuário altera critérios de filtro diferentes. |
 | *selectionType* | string | Não | individual | Configuração para a seleção `single` ou `multiple` de ativos de cada vez. |
 
 ## Exemplos de uso das propriedades do Seletor de ativos {#usage-examples}

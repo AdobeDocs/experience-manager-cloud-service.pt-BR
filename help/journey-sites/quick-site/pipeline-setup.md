@@ -2,10 +2,10 @@
 title: Configurar o seu pipeline
 description: Crie um pipeline de front-end para gerenciar a personalização do tema do seu site.
 exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '976'
-ht-degree: 100%
+source-wordcount: '975'
+ht-degree: 97%
 
 ---
 
@@ -90,7 +90,7 @@ Agora que você acessou o Cloud Manager, é possível criar um pipeline para imp
    * Verifique se o ambiente correto está selecionado em **Ambientes de implantação qualificados**.
    * Selecione o **Repositório** correto.
    * Defina a qual **Ramificação Git** o pipeline deve ser associado.
-   * Defina a **Localização do código** se o desenvolvimento de front-end estiver localizado em um caminho específico no repositório selecionado. O valor padrão é a raiz do repositório, mas com frequência o desenvolvimento de front-end e back-end estarão em caminhos diferentes.
+   * Defina a **Localização do código** se o desenvolvimento de front-end estiver localizado em um caminho específico no repositório selecionado. O valor padrão é a raiz do repositório, mas com frequência o desenvolvimento de front-end e back-end estão em caminhos diferentes.
 
    ![Informações do código-fonte para adicionar pipeline](assets/add-pipeline-source-code.png)
 

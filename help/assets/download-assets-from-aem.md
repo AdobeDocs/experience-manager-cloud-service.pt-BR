@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1239'
-ht-degree: 6%
+source-wordcount: '1238'
+ht-degree: 7%
 
 ---
 
@@ -155,4 +155,3 @@ Se você não precisar da funcionalidade de download, desative o servlet para ev
 >* [Baixar ativos protegidos DRM](drm.md)
 >* [Baixe ativos usando o aplicativo de desktop Experience Manager no Win ou no Mac desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
 >* [Baixe ativos usando o Link de ativos do Adobe nos aplicativos compatíveis da Adobe Creative Cloud](https://helpx.adobe.com/br/enterprise/using/manage-assets-using-adobe-asset-link.html)
-

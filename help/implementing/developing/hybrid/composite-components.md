@@ -2,16 +2,16 @@
 title: Composite Components em SPAs
 description: Saiba como criar seus próprios componentes compostos, componentes compostos por outros componentes que funcionam com o editor de aplicativo de página única (SPA) do AEM.
 exl-id: fa1ab1dd-9e8e-4e2c-aa9a-5b46ed8a02cb
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '782'
 ht-degree: 1%
 
 ---
 
 # Composite Components em SPAs {#composite-components-in-spas}
 
-Os componentes compostos aproveitam a natureza modular dos componentes AEM combinando vários componentes básicos em um único componente. Um caso de uso comum de componente composto é o componente de cartão, composto por uma combinação dos componentes de imagem e texto.
+Os componentes compostos usam a natureza modular dos componentes AEM ao combinar vários componentes básicos em um único componente. Um caso de uso comum de componente composto é o componente de cartão, composto por uma combinação dos componentes de imagem e texto.
 
 Quando os componentes compostos são implementados corretamente na estrutura do Editor de aplicativo de página única (SPA) do AEM, os autores de conteúdo podem arrastar e soltar esses componentes da mesma forma que fariam com qualquer outro componente, mas ainda têm a capacidade de editar individualmente cada componente que compõe o componente composto.
 
@@ -56,7 +56,7 @@ Comece criando os componentes que compõem o componente composto, ou seja, os co
    export const AEMText = withMappable(Text, TextEditConfig); 
    ```
 
-O componente de texto será semelhante ao seguinte.
+O componente de Texto é semelhante ao seguinte.
 
 ```javascript
 import React from 'react';

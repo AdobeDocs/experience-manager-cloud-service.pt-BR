@@ -4,9 +4,9 @@ description: Introdução à integração entre [!DNL Assets] e [!DNL Workfront]
 role: Admin,Leader,Architect
 feature: Integrations
 exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
-source-git-commit: e8607f5dfc9ad5fd5ababec47b4933bee131e566
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1319'
+source-wordcount: '1317'
 ht-degree: 4%
 
 ---
@@ -58,7 +58,7 @@ Veja a seguir os detalhes das funcionalidades disponíveis por meio de vários t
 |----|----|----|-----|-----|
 | Métodos de implantação | Adequado para o qual [!DNL Assets] oferta. | Assets Essentials | Adobe Managed Services, no local | Serviço em nuvem |
 | **Geral** |
-| Enviar arquivos digitais de [!DNL Workfront] para [!DNL Assets] | A versão mais recente de um documento WF pode ser carregada no AEM Assets, que será vinculado como uma nova versão do documento. | ✓ | ✓ | ✓ |
+| Enviar arquivos digitais de [!DNL Workfront] para [!DNL Assets] | A versão mais recente de um documento WF pode ser carregada no AEM Assets, que está vinculado como uma nova versão do documento. | ✓ | ✓ | ✓ |
 | Vincular manualmente pastas do AEM a objetos do Workfront | As pastas AEM existentes podem ser vinculadas como uma pasta do Workfront e seus ativos secundários são vinculados como novos documentos do Workfront. | ✓ | ✓ | ✓ |
 | Link [!DNL Assets] para objetos do Workfront | Os ativos existentes no AEM podem ser vinculados a um novo documento do Workfront ou como uma nova versão de um documento existente. | ✓ | ✓ | ✓ |
 | Os ativos adicionados às pastas vinculadas são enviados automaticamente para o AEM | Se um documento for adicionado a uma pasta vinculada, o ativo associado será carregado automaticamente no AEM Assets como um novo ativo. | ✓ | ✓ | ✓ |
@@ -77,7 +77,7 @@ Veja a seguir os detalhes das funcionalidades disponíveis por meio de vários t
 | Suporte a vários ambientes Workfront conectados a um único ambiente AEM | Usuários de vários ambientes do Workfront podem se conectar a um único ambiente AEM. | ✓ | Não | ✓ |
 | Suporte a vários ambientes AEM conectados a um único ambiente Workfront | Os usuários em um único ambiente do Workfront podem enviar ou vincular ativos entre vários ambientes AEM. | ✓ | ✓ | ✓ |
 | **Metadados** |
-| Mapear metadados de ativos do Workfront para o AEM Assets | As propriedades de objetos e formulários personalizados do Workfront podem ser mapeadas para propriedades de metadados de ativos AEM. Os valores serão enviados no upload/link inicial. | ✓ | ✓ | ✓ |
+| Mapear metadados de ativos do Workfront para o AEM Assets | As propriedades de objetos e formulários personalizados do Workfront podem ser mapeadas para propriedades de metadados de ativos AEM. Os valores são enviados no upload/link inicial. | ✓ | ✓ | ✓ |
 | Criar automaticamente Forms personalizados de documentos no Workfront | Anexe formulários personalizados a documentos, tarefas e problemas do Workfront usando workflows AEM. | Não | ✓ | Não |
 | Atualização automática bidirecional de metadados entre o AEM Assets e o Workfront | Atualize automaticamente os metadados entre o AEM Assets e o Workfront. O ativo deve ser inicialmente enviado do Workfront para o AEM e os metadados de ativos do Workfront devem ser mapeados para ativos do AEM para que as atualizações de metadados bidirecionais funcionem adequadamente. | Não | ✓ | Não |
 | Visualização em tempo real no Workfront para metadados mapeados para AEM | Visualize os metadados mapeados atualizados para AEM nos painéis Detalhes do documento e Resumo do documento do Workfront. | ✓ | Não | ✓ |

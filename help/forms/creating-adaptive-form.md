@@ -5,7 +5,7 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '1498'
 ht-degree: 3%
@@ -44,7 +44,7 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
    It is an ideal form model if you have investments in XFA-based or XDP forms. It provides a direct way to convert your XFA-based forms into Adaptive Forms. Any existing XFA rules are retained in the associated Adaptive Forms. The resulting Adaptive Forms support XFA constructs, such as validations, events, properties, and patterns. 
 
 * **Using an XML Schema Definition (XSD) or a JSON Schema**
-   XML and JSON schemas represent the structure in which data is produced or consumed by the back-end system in your organization. You can associate the schema to an Adaptive Form and use its elements to add dynamic content to the Adaptive Form. The elements of the schema will be available for use in the Data Model Objects tab of the Content browser when authoring Adaptive Forms.
+   XML and JSON schemas represent the structure in which data is produced or consumed by the back-end system in your organization. You can associate the schema to an Adaptive Form and use its elements to add dynamic content to the Adaptive Form. The elements of the schema are available for use in the Data Model Objects tab of the Content browser when authoring Adaptive Forms.
 
 * **Using none or without a form model**
    Adaptive Forms created with this option don't use any form model. The data XML generated from such forms has flat structure with fields and corresponding values. -->
@@ -61,7 +61,7 @@ Você precisa do seguinte para criar um Formulário adaptável:
 
    * **Modelo editável**: é possível [criar um novo](template-editor.md) ou [importar um modelo editável existente](migrate-to-forms-as-a-cloud-service.md). Você também pode implantar o [arquétipo mais recente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.tests%3A%20are%20integration%20based%20Java.) para obter alguns modelos editáveis de amostra.
 
-   * **Modelo estático**: esses são modelos herdados e são recomendados apenas para clientes que estão migrando do Adobe Managed Services (AMS) e de instalações locais do AEM Forms (AEM 6.5 Forms ou anterior). Isso permite que você continue aproveitando seu investimento existente em modelos estáticos. Ao criar um novo Formulário adaptável, é recomendável usar um Modelo editável.
+   * **Modelo estático**: esses são modelos herdados e são recomendados apenas para clientes que estão migrando do Adobe Managed Services (AMS) e de instalações locais do AEM Forms (AEM 6.5 Forms ou anterior). Eles permitem que você continue a usar seu investimento existente em modelos estáticos. Ao criar um novo Formulário adaptável, é recomendável usar um Modelo editável.
 
 
 
@@ -78,9 +78,9 @@ Você precisa do seguinte para criar um Formulário adaptável:
 
    * Ao selecionar um modelo Editável, um tema e uma ação de envio especificados no modelo são selecionados automaticamente e a variável **[!UICONTROL Criar]** for ativado. Você pode ir para o **[!UICONTROL Estilo]** ou **[!UICONTROL Envio]** para selecionar um tema ou uma ação de envio diferente. Se o modelo Editável selecionado não especificar um tema, o botão Criar permanecerá desativado. Você pode ir para o **[!UICONTROL Estilos]** para selecionar um tema manualmente.
 
-      >[!NOTE]
-      >
-      > Você também pode criar [!UICONTROL Documento do registro] usando um editor Forms adaptável. Para obter mais informações, consulte [Suporte a documento de registro no editor de formulário adaptável](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+     >[!NOTE]
+     >
+     > Você também pode criar [!UICONTROL Documento do registro] usando um editor Forms adaptável. Para obter mais informações, consulte [Suporte a documento de registro no editor de formulário adaptável](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
 
    * Ao selecionar um modelo estático, as opções de dados, estilo, envio, entrega e visualização não estão disponíveis. Ao criar um novo Formulário adaptável, é recomendável usar um Modelo editável.
 

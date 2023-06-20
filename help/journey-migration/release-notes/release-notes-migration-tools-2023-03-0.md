@@ -2,10 +2,10 @@
 title: Notas de versão das Ferramentas de migração no AEM as a Cloud Service versão 2023.03.0
 description: Notas de versão das Ferramentas de migração no AEM as a Cloud Service versão 2022.03.0
 feature: Release Information
-source-git-commit: 70061cb1bbaab486f719541e919acb9e462d741c
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '321'
-ht-degree: 9%
+source-wordcount: '320'
+ht-degree: 10%
 
 ---
 
@@ -36,7 +36,7 @@ A data de lançamento da ferramenta de transferência de conteúdo v2.0.16 é 8 
 
 ### Novidades {#what-is-new-ctt}
 
-* O mapeamento de usuários foi simplificado e integrado à etapa de extração de conteúdo. Nenhuma configuração é necessária e, por padrão, o mapeamento de usuários será feito automaticamente quando o usuário iniciar a extração de conteúdo. O usuário tem a opção de desativar o mapeamento de usuários, se necessário. Saiba mais [aqui.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/user-mapping-and-migration.html?lang=en#user-mapping-detail)
+* O mapeamento de usuários foi simplificado e integrado à etapa de extração de conteúdo. Nenhuma configuração é necessária e, por padrão, o mapeamento de usuários é feito automaticamente quando o usuário inicia a extração de conteúdo. O usuário tem a opção de desativar o mapeamento de usuários, se necessário. Saiba mais [aqui.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/user-mapping-and-migration.html?lang=en#user-mapping-detail)
 * A etapa de pré-cópia usando [AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) O foi integrado à ferramenta Transferência de conteúdo para acelerar significativamente as extrações de conteúdo. A pré-cópia é configurada e instalada automaticamente quando essa versão da CTT é instalada. Por padrão, quando a extração é iniciada, a pré-cópia é executada automaticamente para conjuntos de migração maiores que 200 GB. O usuário tem a opção de desativá-la, se necessário. Saiba mais [aqui.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en)
 * A CTT agora pode ser usada em servidores Windows.
 

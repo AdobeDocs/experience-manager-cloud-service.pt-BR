@@ -2,10 +2,10 @@
 title: New Relic One
 description: Saiba mais sobre o serviço de monitoramento de desempenho de aplicativo (APM) da New Relic One para o AEM as a Cloud Service e como você pode acessá-lo.
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: 6a633881be57b79ee167c3a16d514b903bc460ad
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1603'
-ht-degree: 100%
+source-wordcount: '1595'
+ht-degree: 92%
 
 ---
 
@@ -64,7 +64,7 @@ Depois de definir os usuários, a New Relic envia um email de confirmação para
 
 >[!NOTE]
 >
->Se você estiver gerenciando os usuários da New Relic One, também deverá adicionar a si mesmo como usuário para ter acesso. Para ter acesso à New Relic One, não basta ter a função **Proprietário da empresa** ou **Gerente de implantação**. Você também deve criar a si mesmo como um usuário.
+>Se você estiver gerenciando os usuários do New Relic One, também deverá adicionar a si mesmo como usuário para ter acesso. Para ter acesso à New Relic One, não basta ter a função **Proprietário da empresa** ou **Gerente de implantação**. Você também deve criar a si mesmo como um usuário.
 
 ## Ativar sua conta de usuário da New Relic One {#activate-account}
 
@@ -146,8 +146,8 @@ Se você não receber um email da New Relic:
 
 As seguintes limitações se aplicam à adição de usuários à New Relic One:
 
-* É possível adicionar no máximo 30 usuários. Se o número máximo de usuários for atingido, remova alguns para poder adicionar novos usuários.
-* Os usuários adicionados à New Relic serão do tipo **Restrito**; consulte [a documentação da New Relic para obter detalhes.](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)
+* É possível adicionar no máximo 30 usuários. Se o número máximo de usuários for atingido, remova os usuários para poder adicionar novos usuários.
+* Os usuários adicionados ao New Relic são do tipo **Restrito**, consulte [consulte a documentação do New Relic para obter detalhes.](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)
 * O AEM as a Cloud Service somente oferece a solução de APM da New Relic One e não oferece suporte a alertas, registros ou integrações de API.
 
 Para obter mais ajuda ou orientação sobre as ofertas da New Relic One para o seu programa do AEM as a Cloud Service, abra um tíquete de suporte no [Portal de suporte do AEM](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html).
@@ -172,7 +172,7 @@ Observação:
 
 ### Quem pode acessar os dados do serviço de nuvem da New Relic One? {#access-new-relic-cloud}
 
-O acesso integral para leitura será concedido para até 30 membros da sua equipe. O acesso de leitura incluirá todas as métricas de APM coletadas pelo agente da New Relic One.
+O acesso de leitura total é concedido para até 30 membros da sua equipe. O acesso de leitura incluirá todas as métricas de APM coletadas pelo agente da New Relic One.
 
 ### Há suporte à configuração personalizada de SSO? {#custom-sso}
 
@@ -184,7 +184,7 @@ A New Relic One é a nova plataforma de observabilidade da New Relic e permite q
 
 A New Relic One fornece aos usuários a capacidade de pesquisar em todas as contas, nas quais têm acesso e visualizam dados de todos os serviços e hosts em uma única visualização.
 
-Embora o suporte da Adobe monitore o aplicativo do AEM as a Cloud Service usando a New Relic One e outras ferramentas internas como parte de seu serviço, suas equipes podem continuar a utilizar a New Relic para serviços e infraestrutura hospedados no local. Eles poderão visualizar os dados de contas da New Relic One gerenciadas pela Adobe e de contas da New Relic gerenciadas pelo cliente.
+Embora o suporte ao Adobe monitore o aplicativo AEM as a Cloud Service usando o New Relic One e outras ferramentas internas como parte de seu serviço, suas equipes podem continuar a usar o New Relic para serviços e infraestrutura hospedados no local. Eles podem visualizar os dados de contas do Adobe New Relic One e de contas do New Relic gerenciadas pelo cliente.
 
 >[!NOTE]
 >

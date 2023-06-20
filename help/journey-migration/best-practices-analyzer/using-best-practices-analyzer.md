@@ -2,10 +2,10 @@
 title: Utilização do Analisador de práticas recomendadas
 description: Utilização do Analisador de práticas recomendadas
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: df1fdbe0f3590708e1da44864b6e08075a521b51
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2490'
-ht-degree: 48%
+source-wordcount: '2479'
+ht-degree: 46%
 
 ---
 
@@ -27,13 +27,13 @@ Siga a seção abaixo para entender considerações importantes na execução do
 
 * BPA é compatível em instâncias AEM com a versão 6.1 e superior.
 
-   >[!NOTE]
-   >Consulte [Instalação no AEM 6.1](#installing-on-aem61) para requisitos especiais de instalação do BPA no AEM 6.1.
+  >[!NOTE]
+  >Consulte [Instalação no AEM 6.1](#installing-on-aem61) para requisitos especiais de instalação do BPA no AEM 6.1.
 
 * O BPA pode ser executado em qualquer ambiente, mas é preferível executá-lo em um *Estágio* ambiente.
 
-   >[!NOTE]
-   >Para evitar um impacto em instâncias críticas para os negócios, é recomendável executar o BPA em um *Autor* que esteja o mais próximo possível do ambiente *Produção* nas áreas de personalizações, configurações, conteúdo e aplicativos do usuário. Como alternativa, ele pode ser executado em um clone do ambiente de *Autor* de produção.
+  >[!NOTE]
+  >Para evitar um impacto em instâncias críticas para os negócios, é recomendável executar o BPA em um *Autor* que esteja o mais próximo possível do ambiente *Produção* nas áreas de personalizações, configurações, conteúdo e aplicativos do usuário. Como alternativa, ele pode ser executado em um clone do ambiente de *Autor* de produção.
 
 * A geração de conteúdo do relatório do BPA pode levar um tempo significativo, de vários minutos a algumas horas. O tempo necessário depende muito do tamanho e da natureza do conteúdo do repositório do AEM, da versão do AEM e de outros fatores.
 
@@ -157,7 +157,7 @@ Siga a tabela abaixo para entender os níveis de importância:
 
 ## Interpretação do relatório CSV do Analisador de práticas recomendadas {#cra-csv-report}
 
-Ao clicar no botão **CSV** na instância do AEM, o formato CSV do relatório do Analisador de práticas recomendadas é criado a partir do cache de conteúdo e retornado ao navegador. Dependendo das configurações do navegador, esse relatório será baixado automaticamente como um arquivo com o nome padrão de `results.csv`.
+Ao clicar no botão **CSV** na instância do AEM, o formato CSV do relatório do Analisador de práticas recomendadas é criado a partir do cache de conteúdo e retornado ao navegador. Dependendo das configurações do navegador, esse relatório é baixado automaticamente como um arquivo com o nome padrão de `results.csv`.
 
 Se o cache tiver expirado, o relatório será gerado novamente antes que o arquivo CSV seja criado e baixado.
 
@@ -207,11 +207,11 @@ Os seguintes cabeçalhos HTTP são usados por essa interface:
 
 Os seguintes parâmetros de consulta HTTP estão disponíveis como conveniência para quando cabeçalhos HTTP não puderem ser usados com facilidade:
 
-* `max-age` (número, opcional): especifica o tempo de vida da atualização do cache em segundos. Esse número deve ser 0 ou maior. O tempo de vida da atualização padrão é de 86.400 segundos. Sem esse parâmetro ou o cabeçalho correspondente, um novo cache será usado para atender a solicitações por 24 horas, momento em que o cache deve ser regenerado. Usar `max-age=0` forçará a limpeza do cache e iniciará uma regeneração do relatório, usando o tempo de vida de atualização diferente de zero anterior para o cache recém-gerado.
+* `max-age` (número, opcional): especifica o tempo de vida da atualização do cache em segundos. Esse número deve ser 0 ou maior. O tempo de vida da atualização padrão é de 86.400 segundos. Sem esse parâmetro ou o cabeçalho correspondente, um novo cache é usado para atender a solicitações por 24 horas, momento em que o cache deve ser regenerado. Usar `max-age=0` forçará a limpeza do cache e iniciará uma regeneração do relatório, usando o tempo de vida de atualização diferente de zero anterior para o cache recém-gerado.
 * `respond-async` (booleano, opcional): especifica que a resposta deve ser fornecida de forma assíncrona. Usar `respond-async=true` quando o cache estiver obsoleto, fará com que o servidor retorne uma resposta de `202 Accepted` sem esperar que o cache seja atualizado e que o relatório seja gerado. Se o cache estiver atualizado, esse parâmetro não terá efeito. O valor padrão é `false`. Sem esse parâmetro ou o cabeçalho correspondente, o servidor responderá de forma síncrona, o que pode exigir uma quantidade significativa de tempo e um ajuste ao tempo máximo de resposta do cliente HTTP.
-* `may-refresh-cache` (booleano, opcional): especifica que o servidor pode atualizar o cache em resposta a uma solicitação se o cache atual estiver vazio, obsoleto ou prestes a ficar obsoleto. Se `may-refresh-cache=true`ou, se não for especificado, o servidor poderá iniciar uma tarefa em segundo plano que chamará o Detector de padrões e atualizará o cache. Se `may-refresh-cache=false` então, o servidor não iniciará nenhuma tarefa de atualização que teria sido feita se o cache estivesse vazio ou obsoleto, nesse caso, o relatório estará vazio. Qualquer tarefa de atualização que já esteja em andamento não será afetada por esse parâmetro.
+* `may-refresh-cache` (booleano, opcional): especifica que o servidor pode atualizar o cache em resposta a uma solicitação se o cache atual estiver vazio, obsoleto ou prestes a ficar obsoleto. Se `may-refresh-cache=true`ou, se não for especificado, o servidor poderá iniciar uma tarefa em segundo plano que chamará o Detector de padrões e atualizará o cache. Se `may-refresh-cache=false` então, o servidor não iniciará nenhuma tarefa de atualização que teria sido feita se o cache estivesse vazio ou obsoleto, caso em que o relatório estaria vazio. Qualquer tarefa de atualização que já esteja em andamento não será afetada por esse parâmetro.
 * `return-minimal` (booleano, opcional): especifica que a resposta do servidor deve incluir apenas o status que contém a indicação de progresso e o status do cache no formato JSON. Se `return-minimal=true`, o corpo da resposta será limitado ao objeto de status. Se `return-minimal=false`ou, se não for especificado, uma resposta completa será fornecida.
-* `log-findings` (booleano, opcional): especifica que o servidor deve registrar o conteúdo do cache quando ele é criado ou atualizado pela primeira vez. Cada descoberta do cache será registrada como uma cadeia de caracteres JSON. Esse registro só ocorrerá se `log-findings=true` e a solicitação gera um novo cache.
+* `log-findings` (booleano, opcional): especifica que o servidor deve registrar o conteúdo do cache quando ele é criado ou atualizado pela primeira vez. Cada descoberta do cache é registrada como uma cadeia de caracteres JSON. Esse registro só ocorrerá se `log-findings=true` e a solicitação gera um novo cache.
 
 Quando um cabeçalho HTTP e um parâmetro de consulta correspondente estiverem presentes, o parâmetro de consulta terá prioridade.
 
@@ -235,7 +235,7 @@ Os seguintes valores de resposta são possíveis:
 
 ### Ajuste do tempo de vida do cache {#cache-adjustment}
 
-O tempo de vida padrão do cache do BPA é de 24 horas. Com a opção de atualizar um relatório e regenerar o cache, tanto na instância AEM quanto na interface HTTP, esse valor padrão provavelmente será apropriado para a maioria dos usos do BPA. Se o tempo de geração do relatório for particularmente longo para a sua instância do AEM, talvez você queira ajustar o tempo de vida do cache para minimizar a regeneração do relatório.
+O tempo de vida padrão do cache do BPA é de 24 horas. Com a opção de atualizar um relatório e regenerar o cache, tanto na instância AEM quanto na interface HTTP, esse valor padrão provavelmente será apropriado para a maioria dos usos do BPA. Se o tempo de geração do relatório for particularmente longo para a instância AEM, talvez você queira ajustar o tempo de vida do cache para minimizar a regeneração do relatório.
 
 O valor vitalício do cache é armazenado como a propriedade `maxCacheAge` no seguinte nó do repositório:
 `/apps/best-practices-analyzer/content/BestPracticesReport/jcr:content`

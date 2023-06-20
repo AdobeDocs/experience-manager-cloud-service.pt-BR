@@ -2,9 +2,9 @@
 title: API do Construtor de consulta
 description: A funcionalidade do Construtor de consultas de compartilhamento de ativos é exposta por meio de uma API Java e uma API REST.
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2040'
+source-wordcount: '2033'
 ht-degree: 0%
 
 ---
@@ -133,7 +133,7 @@ Por exemplo, a interface pode adaptar a seguinte abordagem:
    * `total=43`, `more=false` - Indica que o número total de ocorrências é 43. A interface do usuário pode mostrar até dez resultados como parte da primeira página e fornecer paginação para as próximas três páginas. Você também pode usar essa implementação para exibir um texto descritivo como **&quot;43 resultados encontrados&quot;**.
    * `total=100`, `more=true` - Indica que o número total de ocorrências é maior que 100 e a contagem exata não é conhecida. A interface do usuário pode exibir até dez como parte da primeira página e fornecer paginação para as próximas dez páginas. Também é possível usar para exibir um texto como **&quot;mais de 100 resultados encontrados&quot;**. Conforme o usuário vai para as próximas páginas, as chamadas feitas para o Construtor de consultas aumentariam o limite de `guessTotal` e também da `offset` e `limit` parâmetros.
 
-`guessTotal` também devem ser usados nos casos em que a interface do usuário precisa usar rolagem infinita, para evitar que o Construtor de consultas determine a contagem exata de ocorrências.
+`guessTotal` também devem ser usados nos casos em que a interface do usuário precisa usar rolagem infinita para evitar que o Construtor de consultas determine a contagem exata de ocorrências.
 
 ### Localizar arquivos jar e ordená-los, os mais recentes primeiro {#find-jar-files-and-order-them-newest-first}
 
@@ -279,7 +279,7 @@ property.3_value=Whistler Mountain Biking
 
 ## Refinando o que é Retornado {#refining-what-is-returned}
 
-Por padrão, o Servlet JSON do QueryBuilder retornará um conjunto padrão de propriedades para cada nó no resultado da pesquisa (por exemplo, caminho, nome, título etc.). Para obter controle sobre quais propriedades são retornadas, você pode executar um dos seguintes procedimentos:
+Por padrão, o Servlet JSON do QueryBuilder retornará um conjunto padrão de propriedades para cada nó no resultado da pesquisa (por exemplo, caminho, nome e título). Para obter controle sobre quais propriedades são retornadas, você pode executar um dos seguintes procedimentos:
 
 Especifique
 
@@ -287,7 +287,7 @@ Especifique
 p.hits=full
 ```
 
-nesse caso, todas as propriedades serão incluídas para cada nó:
+Nesse caso, todas as propriedades são incluídas para cada nó:
 
 `http://<host>:<port>/bin/querybuilder.json?p.hits=full&property=jcr%3atitle&property.value=Cycling%20Tuscany`
 

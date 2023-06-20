@@ -2,9 +2,9 @@
 title: Validar transferências de conteúdo
 description: Usar a ferramenta Transferência de conteúdo para validar as transferências de conteúdo
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: c1f60a1ead466b47694b8918e5b39011041c5f25
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1070'
+source-wordcount: '1062'
 ht-degree: 2%
 
 ---
@@ -44,37 +44,37 @@ Para obter uma ilustração gráfica, consulte os exemplos abaixo:
 
 * **Extração (Substituir)**
 
-   ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/validation-01.png)
+  ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/validation-01.png)
 
 * **Assimilação (Varrer)**
 
-   ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/validation-02.png)
+  ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/validation-02.png)
 
 * **Notas**
 
-   Essa combinação de &quot;Substituir&quot; e &quot;Limpar&quot; resultará em resultados de validação consistentes, mesmo para assimilações repetidas.
+  Essa combinação de &quot;Substituir&quot; e &quot;Limpar&quot; resultará em resultados de validação consistentes, mesmo para assimilações repetidas.
 
 ### Exemplo 2 {#example-2}
 
 * **Extração**
 
-   ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/validation-03.png)
+  ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/validation-03.png)
 
 * **Assimilação**
 
-   ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/validation-04.png)
+  ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/validation-04.png)
 
 * **Notas**
 
-   Essa combinação de &quot;Substituir&quot; e &quot;Limpar&quot; resultará em resultados de validação consistentes para a assimilação inicial.
+  Essa combinação de &quot;Substituir&quot; e &quot;Limpar&quot; resultará em resultados de validação consistentes para a assimilação inicial.
 
-   Se a assimilação for repetida, o resumo da assimilação estará vazio e a validação parecerá ter falhado. O resumo da assimilação estará vazio porque todos os nós desta extração já estarão presentes no destino.
+  Se a assimilação for repetida, o resumo da assimilação fica vazio e a validação parece ter falhado. O resumo de assimilação está vazio porque todos os nós desta extração já estarão presentes no destino.
 
 Quando a extração estiver concluída, comece a assimilação.
 
 A parte superior do log de assimilação conterá uma entrada, semelhante a `aem-ethos/tools:1.2.438`. Certifique-se de que esse número de versão seja **1.2.438** ou superior, caso contrário, a validação não será suportada pela versão do AEM as a Cloud Service que você está usando.
 
-Quando a assimilação estiver concluída e a validação estiver começando, a seguinte entrada de log será anotada no log de assimilação:
+Depois que a assimilação estiver concluída e a validação estiver começando, a seguinte entrada de log será anotada no log de assimilação:
 
 ```
 Gathering artifacts for migration validation...
@@ -136,7 +136,7 @@ Além de ser incluído no log de assimilação, o relatório de validação tamb
 
 Consulte [Mapeamento de usuários e migração de entidade de segurança](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) para ler os detalhes das migrações principais e por que isso é necessário.
 
-Quando a extração e a assimilação forem concluídas com êxito, um resumo e um relatório da migração principal estarão disponíveis. Essas informações podem ser usadas para validar quais usuários e grupos foram migrados com êxito e, talvez, para determinar por que alguns não foram migrados.
+Depois que a extração e a assimilação forem concluídas com êxito, um resumo e um relatório da migração principal estarão disponíveis. Essas informações podem ser usadas para validar quais usuários e grupos foram migrados com êxito e, talvez, para determinar por que alguns não foram migrados.
 
 Para exibir essas informações, acesse Cloud Acceleration Manager. Clique no cartão do projeto e clique no cartão Transferência de conteúdo. Navegue até **Tarefas de assimilação** e localize a assimilação que deseja verificar. Clique nos três pontos (**..**) para essa assimilação, em seguida, clique em **Exibir resumo principal** no menu suspenso.
 

@@ -2,10 +2,10 @@
 title: Guia de início rápido para a criação de páginas
 description: Um guia rápido de alto nível para começar a criar conteúdo de página
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: 07702fbebc768ee877d68219eff5551b09c7ff3e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1585'
-ht-degree: 72%
+source-wordcount: '1578'
+ht-degree: 69%
 
 ---
 
@@ -33,7 +33,7 @@ Antes de começar o guia de início rápido, veja uma pequena coleção de dicas
 
 * Reordenação de páginas
 
-   * Isso pode ser feito na [Exibição de lista](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view). As alterações serão aplicadas e estarão visíveis em outras exibições.
+   * Isso pode ser feito em [Exibição de lista](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view). As alterações são aplicadas e visíveis em outras exibições.
 
 ### Criação de página {#page-authoring}
 
@@ -52,7 +52,6 @@ Antes de começar o guia de início rápido, veja uma pequena coleção de dicas
 >
 >* [Atalhos De Teclado Ao Editar Páginas](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
 >* [Atalhos de teclado para Consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
-
 
 ### Encontrar a sua página {#finding-your-page}
 
@@ -103,6 +102,7 @@ Como selecionar uma página depende da exibição usada no console:
 
       * Em um dispositivo móvel: toque e segure o cartão
       * Em um dispositivo de desktop: use a [ação rápida](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) representada pelo ícone de marca de verificação:
+
    * O cartão será sobreposto como uma marca de verificação para mostrar que a página foi selecionada.
 
    ![Exemplo de cartão](/help/sites-cloud/authoring/assets/card.png)
@@ -112,7 +112,7 @@ Como selecionar uma página depende da exibição usada no console:
 As [ações rápidas](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) estão disponíveis:
 
 1. [Navegue até a página](#finding-your-page) que deseja realizar a ação.
-1. Passe o mouse sobre o cartão que representa o recurso desejado. As ações rápidas serão mostradas:
+1. Passe o ponteiro do mouse sobre o cartão que representa o recurso desejado. As ações rápidas são mostradas:
 
    ![Ações do cartão](/help/sites-cloud/authoring/assets/card-actions.png)
 
@@ -138,27 +138,31 @@ Para editar sua página:
       * Selecionar a guia componentes (o [navegador de componentes](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser))
       * Arrastar o componente desejado para a página.
 
-      O painel lateral pode ser aberto (ou fechado) com:
+     O painel lateral pode ser aberto (ou fechado) com:
 
-      ![Botão Ativar/desativar painel lateral](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
+     ![Botão Ativar/desativar painel lateral](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
 
    * [Editar o conteúdo de um componente existente](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) na página:
 
       * Abra a barra de ferramentas do componente com um toque ou clique. Use o **Editar** (lápis) ícone para abrir a caixa de diálogo.
-      * Abra o editor local do componente com um clique de toque e segure ou com um clique duplo e lento. As ações disponíveis serão exibidas (para alguns componentes, essa será uma seleção limitada).
+      * Abra o editor local do componente com um clique de toque e segure ou com um clique duplo e lento. As ações disponíveis são exibidas (para alguns componentes, é uma seleção limitada).
       * Para ver todas as ações disponíveis, entre no modo de tela cheia usando:
 
-         ![Botão de tela cheia](/help/sites-cloud/authoring/assets/full-screen.png)
+        ![Botão de tela cheia](/help/sites-cloud/authoring/assets/full-screen.png)
+
    * [Configurar as propriedades de um componente existente](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-edit-dialog)
 
       * Abra a barra de ferramentas do componente com um toque ou clique. Use o **Configurar** Ícone (chave inglesa) para abrir a caixa de diálogo.
+
    * [Mover um componente](/help/sites-cloud/authoring/fundamentals/editing-content.md#moving-a-component) ou:
 
       * Arraste o componente para o novo local.
       * Abra a barra de ferramentas do componente com um toque ou clique. Use os ícones **Cortar** e **Colar** conforme necessário.
+
    * [Copiar (e Colar)](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) um componente:
 
       * Abra a barra de ferramentas do componente com um toque ou clique. Use os ícones **Copiar** e **Colar** conforme necessário.
+
    >[!NOTE]
    >
    >Você pode **Colar** os componentes na mesma página ou em uma diferente. Ao colar em uma página diferente que já foi aberta antes da operação de cortar/copiar, essa página precisará de uma atualização. 
@@ -166,14 +170,17 @@ Para editar sua página:
    * [Excluir](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) um componente:
 
       * Abra a barra de ferramentas do componente com um toque ou clique, em seguida, use o ícone **Excluir**.
+
    * [Adicionar anotações](/help/sites-cloud/authoring/fundamentals/annotations.md#annotations) à página:
 
       * Selecione o **Anotar** (ícone de balão de fala). Adicionar anotações usando o **Adicionar anotação** (mais). Saia do modo de anotação usando o X na parte superior direita.
 
-         ![Botão Anotações](/help/sites-cloud/authoring/assets/annotations.png)
+        ![Botão Anotações](/help/sites-cloud/authoring/assets/annotations.png)
+
    * [Visualizar uma página](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode) (para ver como ele aparecerá no ambiente de publicação)
 
       * Selecionar **Visualizar** na barra de ferramentas.
+
    * Retorne ao modo de edição (ou selecione outro modo) usando o **Editar** seletor suspenso.
 
    >[!NOTE]
@@ -194,8 +201,7 @@ Existem dois (principais) métodos de [editar propriedades da página](/help/sit
 
       ![Botão Propriedades](/help/sites-cloud/authoring/assets/properties.png)
 
-   1. As propriedades da página serão exibidas. É possível fazer atualizações conforme necessário, em seguida, usar a opção Salvar para continuar
-
+   1. As propriedades da página são exibidas. É possível fazer atualizações conforme necessário, em seguida, usar a opção Salvar para continuar
 
 * Quando [editar sua página](#editing-your-page-content):
 
@@ -218,7 +224,6 @@ Existem dois métodos principais de [publicar sua página](/help/sites-cloud/aut
 
       ![Botão Publicação rápida](/help/sites-cloud/authoring/assets/quick-publish.png)
 
-
 * Quando [editar sua página](#editing-your-page-content):
 
    1. Abra o **Informações da página** menu.
@@ -226,11 +231,11 @@ Existem dois métodos principais de [publicar sua página](/help/sites-cloud/aut
 
 * Desfazer a publicação de uma página do console só pode ser feito por meio da opção **Gerenciar publicação**, que está disponível somente na barra de ferramentas (não pelas ações rápidas).
 
-   ![Botão Gerenciar publicação](/help/sites-cloud/authoring/assets/manage-publication.png)
+  ![Botão Gerenciar publicação](/help/sites-cloud/authoring/assets/manage-publication.png)
 
-   A opção **Cancelar publicação da página** ainda está disponível por meio do menu **Informações da página** no editor.
+  A opção **Cancelar publicação da página** ainda está disponível por meio do menu **Informações da página** no editor.
 
-   Consulte [Publicar páginas](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages) para obter mais informações.
+  Consulte [Publicar páginas](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages) para obter mais informações.
 
 ### Mover, copiar e colar ou excluir sua página   {#move-copy-and-paste-or-delete-your-page}
 
@@ -247,12 +252,15 @@ Todas essas ações podem ser acionadas por:
    * [Copiar](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#copying-and-pasting-a-page):
 
       * Em seguida, será necessário navegar até o novo local e colar.
+
    * [Mover](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page):
 
       * Isso abrirá o assistente para coletar as informações necessárias para mover a página. Siga as instruções na tela.
+
    * [Excluir](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page):
 
       * Você receberá uma solicitação para confirmar a ação.
+
    >[!NOTE]
    >
    >A opção Excluir não está disponível como uma Ação rápida.
@@ -305,13 +313,14 @@ O mesmo mecanismo básico é usado ao restaurar e/ou comparar as versões da sua
 
    ![Opção Exibir linha do tempo](/help/sites-cloud/authoring/assets/timeline.png)
 
-   Se uma versão da sua página já foi salva, ela será listada na Linha do tempo.
+   Se uma versão da sua página já foi salva, ela é listada na Linha do tempo.
 
 1. Toque/clique na versão que deseja restaurar - isso revelará botões de ação adicionais:
 
    * **Reverter para essa versão**
 
       * A versão será restaurada.
+
    * **Exibir diferenças**
 
       * A página será aberta com as diferenças (entre as duas versões) destacadas.

@@ -2,10 +2,10 @@
 title: Teste de qualidade do código
 description: Saiba como funciona o teste de qualidade do código dos pipelines e como ele pode melhorar a qualidade das suas implantações.
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-source-git-commit: ae586cc2f576aa4aee4cc611b5184e2bbda6696c
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1176'
-ht-degree: 100%
+source-wordcount: '1175'
+ht-degree: 97%
 
 ---
 
@@ -116,7 +116,7 @@ Como parte do processo de análise de qualidade, o Cloud Manager realiza a anál
 * `ui.apps/myco-ui.apps-1.0.0-SNAPSHOT.zip` (skipped-content-package)
 * `ui.content/myco-ui.content-1.0.0-SNAPSHOT.zip` (skipped-content-package)
 
-Se os únicos itens dentro de `myco-all-1.0.0-SNAPSHOT.zip` são os dois pacotes de conteúdo ignorados, então os dois pacotes incorporados serão verificados no lugar do pacote de conteúdo “all”.
+Se os únicos itens dentro de `myco-all-1.0.0-SNAPSHOT.zip` são os dois pacotes de conteúdo ignorados e, em seguida, os dois pacotes incorporados são verificados no lugar do pacote de conteúdo &quot;all&quot;.
 
 Para projetos que produzem dezenas de pacotes incorporados, essa otimização economiza mais de 10 minutos por execução de pipeline.
 
@@ -126,4 +126,3 @@ Um caso especial pode ocorrer quando o pacote de conteúdo “all” contiver um
 >
 >* Essa otimização não afeta os pacotes implantados no AEM.
 >* Como a correspondência entre os pacotes de conteúdo incorporados e os pacotes de conteúdo ignorados se baseia em nomes de arquivo, essa otimização não pode ser executada se vários pacotes de conteúdo ignorados tiverem exatamente o mesmo nome de arquivo ou se o nome de arquivo for alterado durante a incorporação.
-

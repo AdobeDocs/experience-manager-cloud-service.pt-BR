@@ -4,9 +4,9 @@ description: Validação e depuração usando ferramentas do Dispatcher (herdado
 feature: Dispatcher
 hidefromtoc: true
 exl-id: dc04d035-f002-42ef-9c2e-77602910c2ec
-source-git-commit: 33dfe795140f2780f7f2cf876f3ebc725310214d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2345'
+source-wordcount: '2337'
 ht-degree: 1%
 
 ---
@@ -81,7 +81,7 @@ Os seguintes arquivos são personalizáveis e serão transferidos para a sua ins
 
 * `conf.d/available_vhosts/<CUSTOMER_CHOICE>.vhost`
 
-Você pode ter um ou mais desses arquivos. Eles contêm `<VirtualHost>` entradas que correspondem a nomes de host e permitem que o Apache manipule cada tráfego de domínio com regras diferentes. Os arquivos são criados no `available_vhosts` e habilitado com um link simbólico na variável `enabled_vhosts` diretório. No `.vhost` arquivos, outros arquivos como regravações e variáveis serão incluídos.
+Você pode ter um ou mais desses arquivos. Eles contêm `<VirtualHost>` entradas que correspondem a nomes de host e permitem que o Apache manipule cada tráfego de domínio com regras diferentes. Os arquivos são criados no `available_vhosts` e habilitado com um link simbólico na variável `enabled_vhosts` diretório. No `.vhost` arquivos, outros arquivos como regravações e variáveis são incluídos.
 
 * `conf.d/rewrites/rewrite.rules`
 
@@ -101,7 +101,7 @@ Esse arquivo está incluído de dentro do `dispatcher_vhost.conf` arquivo. Você
 
 * `conf.dispatcher.d/available_farms/<CUSTOMER_CHOICE>.farm`
 
-Você pode ter um ou mais desses arquivos, que contêm farms para corresponder a nomes de host e permitem que o módulo Dispatcher manipule cada farm com regras diferentes. Os arquivos são criados no `available_farms` e habilitado com um link simbólico na variável `enabled_farms` diretório. No `.farm` arquivos, outros arquivos como filtros, regras de cache e outros serão incluídos.
+Você pode ter um ou mais desses arquivos, que contêm farms para corresponder a nomes de host e permitem que o módulo Dispatcher manipule cada farm com regras diferentes. Os arquivos são criados no `available_farms` e habilitado com um link simbólico na variável `enabled_farms` diretório. No `.farm` arquivos, outros arquivos como filtros, regras de cache e outros são incluídos.
 
 * `conf.dispatcher.d/cache/rules.any`
 
@@ -221,7 +221,7 @@ O script faz o seguinte:
 2. Ele executa o `httpd -t` para testar se a sintaxe está correta, de modo que o apache httpd possa ser iniciado. Se for bem-sucedida, a configuração deve estar pronta para implantação.
 3. Verifica se o subconjunto dos arquivos de configuração do SDK do Dispatcher, que devem ser imutáveis, conforme descrito na seção [Seção de estrutura de arquivo](##legacy-mode-file-structure), não foi modificado. Esta é uma nova verificação, introduzida com o SDK AEM versão v2021.1.4738 que também inclui as Ferramentas do Dispatcher versão 2.0.36. Antes dessa atualização, os clientes podiam ter presumido incorretamente que qualquer modificação local do SDK desses arquivos imutáveis também seria aplicada ao ambiente da nuvem.
 
-Durante uma implantação do Cloud Manager, a variável `httpd -t` a verificação de sintaxe também será executada e todos os erros serão incluídos no Cloud Manager `Build Images step failure` registro.
+Durante uma implantação do Cloud Manager, a variável `httpd -t` a verificação de sintaxe também é executada e todos os erros são incluídos no Cloud Manager `Build Images step failure` registro.
 
 ### Fase 1 {#first-phase}
 
@@ -356,7 +356,7 @@ Essa fase verifica a sintaxe do Apache iniciando o Docker em uma imagem. O Docke
 
 Essa fase também pode ser executada independentemente por meio de `validator full -d out src/dispatcher`, que gera um diretório out, necessário para o comando next `bin/docker_run.sh out host.docker.internal:4503 8080`.
 
-Durante uma implantação do Cloud Manager, a variável `httpd -t` a verificação de sintaxe também será executada e todos os erros serão incluídos no log de falha da etapa Imagens de compilação do Cloud Manager.
+Durante uma implantação do Cloud Manager, a variável `httpd -t` a verificação de sintaxe é executada e todos os erros são incluídos no log de falha da etapa Imagens de compilação do Cloud Manager.
 
 ### Fase 3 {#third-phase}
 

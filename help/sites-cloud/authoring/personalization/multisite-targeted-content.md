@@ -2,9 +2,9 @@
 title: Trabalhar com conteúdo direcionado em vários sites
 description: Se você precisar gerenciar conteúdo direcionado, como atividades, experiências e ofertas entre seus sites, poderá se beneficiar do suporte integrado a vários sites do AEM para conteúdo direcionado
 exl-id: 03d2d640-8de8-4c4c-8a1d-756bb2dc8457
-source-git-commit: 7dd3a658a88cae98732820ab92da0d27d21beb6f
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '2893'
+source-wordcount: '2891'
 ht-degree: 31%
 
 ---
@@ -49,7 +49,6 @@ Um site ou uma live copy são vinculados a uma área que contém as atividades q
 >* Quando você está usando implantações ou Live Copies, é necessária uma licença do MSM.
 >* Quando você está usando a sincronização com o Adobe Target, é necessária uma licença do Adobe Target.
 >
-
 
 ## Casos de uso {#use-cases}
 
@@ -235,7 +234,6 @@ Uma atividade que está herdando de outro site é marcada em verde ao lado do no
 >* Você só pode suspender ou desanexar live copies em uma atividade.
 >* Não é necessário suspender ou desanexar live copies para estender uma atividade herdada. Você sempre pode criar **novo** experiências e ofertas locais para essa atividade. Se quiser modificar uma atividade existente, suspenda a herança.
 >
-
 
 ### Suspendendo herança {#suspending-inheritance}
 

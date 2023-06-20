@@ -4,9 +4,9 @@ description: Configurar o [!DNL Workfront for Experience Manager enhanced connec
 role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1723'
+source-wordcount: '1712'
 ht-degree: 0%
 
 ---
@@ -30,10 +30,9 @@ Um usuário com acesso de administrador no [!DNL Adobe Experience Manager] as a 
 >
 >* Consulte [Exame de certificação de parceiros para o conector aprimorado do Workfront for Experience Manager Assets](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Para obter informações sobre o exame, consulte [Guia do exame](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
 
-
 ## Configurar assinaturas de evento {#event-subscriptions}
 
-Assinaturas de eventos são usadas para notificar o AEM sobre eventos que ocorrem em [!DNL Adobe Workfront]. Há três [!DNL Workfront for Experience Manager enhanced connector] os recursos que precisam de assinaturas de evento para funcionar são:
+Assinaturas de eventos são usadas para notificar o AEM sobre eventos que ocorrem em [!DNL Adobe Workfront]. Há três [!DNL Workfront for Experience Manager enhanced connector] recursos que precisam de assinaturas de evento para funcionar:
 
 * Criação automática de pastas vinculadas ao projeto.
 * Sincronização de alterações nos valores de formulário personalizado do documento do Workfront com os metadados de ativos AEM.
@@ -45,7 +44,7 @@ Para usar esses recursos, habilite as assinaturas de evento.
 * Selecione o [!UICONTROL Integração personalizada do Workfront] você criou na seção 6.
 * Clique em [!UICONTROL Ativar assinaturas de evento do Workfront].
 
-   ![Assinatura do evento](/help/assets/assets/event-subs.png)
+  ![Assinatura do evento](/help/assets/assets/event-subs.png)
 
 ## Configurar pastas vinculadas {#linked-folders}
 
@@ -63,8 +62,8 @@ Para se inscrever nos eventos, siga estas etapas:
 1. Criar título de pasta vinculado no Workfront usando a caixa de seleção de nomes de estrutura de pastas deve ser marcada se o título da pasta no Workfront deve incluir todas as pastas na estrutura. Caso contrário, será o título da última pasta.
 1. Sub-folders multifield permite especificar uma lista de pastas que devem ser criadas como uma pasta filho da pasta vinculada.
 1. Status do projeto: selecione o status para o qual o projeto deve ser definido para criar a pasta vinculada.
-1. Criar uma pasta vinculada em projetos com portfólio: lista de Portfolio aos quais o projeto deve pertencer para criar a pasta vinculada. Deixe essa lista vazia para criar a pasta vinculada para todos os portfólios de projetos.
-1. Criar uma pasta vinculada em projetos com campo de formulário personalizado: o campo de formulário personalizado e seu valor correspondente que o projeto deve ter para criar a pasta vinculada. Essa configuração será ignorada se permanecer vazia. Selecionar `CUSTOM FORMS: Create DAM Linked Folder` para o campo e a entrada `Yes` para o valor.
+1. Criar uma pasta vinculada em projetos com portfólio: lista de Portfolio aos quais o projeto deve pertencer para que você possa criar a pasta vinculada. Deixe essa lista vazia para criar a pasta vinculada para todos os portfólios de projetos.
+1. Criar uma pasta vinculada em projetos com campo de formulário personalizado: o campo de formulário personalizado e seu valor correspondente que o projeto deve ter para que você possa criar a pasta vinculada. Essa configuração será ignorada se for deixada vazia. Selecionar `CUSTOM FORMS: Create DAM Linked Folder` para o campo e a entrada `Yes` para o valor.
 1. Clique em Habilitar criação automática de pastas vinculadas. Volte para a guia Inscrições em eventos e você verá que agora há um evento de criação.
 
 ![configuração de pasta vinculada](/help/assets/assets/wf-linked-folder-config.png)
@@ -104,7 +103,7 @@ Para configurar os mapeamentos, siga estas etapas:
    * Campos de formulário personalizado de tarefa
    * Campos de Visão Geral do Projeto (ID, Nome, Descrição ou Número de Referência)
 
-1. No caso de a [!DNL Workfront] campo selecionado em [!UICONTROL Campo de formulário personalizado do Workfront] for um campo de tipo antecipado do usuário do Workfront, será necessário especificar qual campo do usuário do Workfront você deseja mapear. Para fazer isso, marque o campo Get value from Workfront referenced object e especifique o nome do [!UICONTROL Campo de formulário personalizado do usuário do Workfront] do qual recuperar o valor a ser mapeado.
+1. No caso de a [!DNL Workfront] campo selecionado em [!UICONTROL Campo de formulário personalizado do Workfront] é um campo de tipo antecipado do usuário do Workfront, é necessário especificar qual campo do usuário do Workfront você deseja mapear. Para fazer isso, marque o campo Get value from Workfront referenced object e especifique o nome do [!UICONTROL Campo de formulário personalizado do usuário do Workfront] do qual recuperar o valor a ser mapeado.
 
    ![configuração de mapeamento de metadados](/help/assets/assets/wf-metadata-mapping-config1.png)
 
@@ -182,7 +181,7 @@ Para manter o histórico de versões de ativos no AEM, configure o controle de v
 
 ## Anexar formulários personalizados {#attach-custom-forms}
 
-Esta etapa do fluxo de trabalho permite que os usuários anexem um formulário personalizado a um [!DNL Workfront] artefato. Essa etapa do fluxo de trabalho pode ser adicionada a qualquer modelo de fluxo de trabalho. A variável [!DNL Workfront] o artefato que essa etapa afeta será pesquisado usando um caminho relativo da carga.
+Esta etapa do fluxo de trabalho permite que os usuários anexem um formulário personalizado a um [!DNL Workfront] artefato. Essa etapa do fluxo de trabalho pode ser adicionada a qualquer modelo de fluxo de trabalho. A variável [!DNL Workfront] o artefato que essa etapa afeta é pesquisado usando um caminho relativo da carga.
 
 No editor de workflow do Experience Manager, edite as propriedades da variável [!UICONTROL Workfront - Anexar formulário personalizado] etapa do fluxo de trabalho.
 

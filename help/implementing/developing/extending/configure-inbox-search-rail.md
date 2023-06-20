@@ -2,9 +2,9 @@
 title: Como configurar filtros de pesquisa para a Caixa de entrada?
 description: Saiba como configurar filtros de pesquisa para itens da Caixa de entrada.
 exl-id: 0e82d7ad-7a82-4d67-8eb8-9af6936652d8
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1001'
+source-wordcount: '1000'
 ht-degree: 1%
 
 ---
@@ -61,7 +61,7 @@ As alterações de configuração são refletidas ao abrir a página Filtros. O 
 
 >[!NOTE]
 >
->O artigo lista as opções mais recentes da interface do usuário. Os nomes das opções serão atualizados na interface do usuário na próxima versão.
+>O artigo lista as opções mais recentes da interface do usuário. Os nomes das opções são atualizados na interface do usuário na versão futura.
 
 ## Configurar predicado de texto {#text-predicate}
 

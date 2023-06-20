@@ -2,10 +2,10 @@
 title: Suporte ao cookie Same Site para o Adobe Experience Manager as a Cloud Service
 description: Suporte ao cookie Same Site para o Adobe Experience Manager as a Cloud Service
 exl-id: 2cec7202-4450-456f-8e62-b7ed3791505c
-source-git-commit: e1234e90e276a6274fc4dc9de0ae577219669ecf
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 100%
+source-wordcount: '283'
+ht-degree: 85%
 
 ---
 
@@ -15,7 +15,7 @@ Desde a versão 80, o Chrome e, mais tarde, o Safari introduziram um novo modelo
 
 O valor padrão dessa configuração (`SameSite=Lax`) pode fazer com que a autenticação entre instâncias ou serviços AEM não funcione. Isso ocorre porque os domínios ou as estruturas de URL desses serviços podem não se enquadrar nas restrições dessa política de cookie.
 
-Para contornar isso, é preciso definir o atributo de cookie SameSite como `None` para o token de logon.
+Para contornar isso, é necessário definir o atributo de cookie SameSite como `None` para o token de logon.
 
 >[!CAUTION]
 >
@@ -36,4 +36,4 @@ Para contornar isso, é preciso definir o atributo de cookie SameSite como `None
 1. Gere as configurações de formato JSON para essa configuração específica seguindo as etapas descritas em [Gerar configurações OSGi usando o Quickstart do SDK do AEM](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart)
 1. Aplique as configurações seguindo as etapas da documentação do OSGi [Formato de API do Cloud Manager para propriedades de configuração](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties).
 
-Depois que esta configuração for atualizada e os usuários forem desconectados e conectados novamente, os cookies `login-token` terão o atributo `None` definido e serão incluídos em solicitações entre sites.
+Depois que esta configuração for atualizada e os usuários forem desconectados e conectados novamente, `login-token` os cookies têm o `None` atributo definido e incluído em solicitações entre sites.

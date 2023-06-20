@@ -2,9 +2,9 @@
 title: Manuseio básico
 description: Familiarize-se com a navegação pelo AEM e seu uso básico
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2994'
+source-wordcount: '2993'
 ht-degree: 73%
 
 ---
@@ -17,7 +17,6 @@ Este documento foi criado para apresentar uma visão geral do manuseio básico a
 >
 >* Algumas funcionalidades não estão disponíveis em todos os consoles e funcionalidades adicionais podem estar disponíveis em alguns consoles. Informações específicas sobre os consoles individuais e suas funcionalidades relacionadas serão abordadas com mais detalhes em outras páginas.
 >* Os atalhos de teclado estão disponíveis em todo o AEM. Principalmente ao [usar páginas de console](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) e [edição](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
-
 
 ## Uma interface de usuário habilitada para toque {#a-touch-enabled-ui}
 
@@ -89,79 +88,79 @@ O cabeçalho da está sempre presente na parte superior da tela. Embora a maiori
 
 * [Navegação global](#global-navigation)
 
-   Selecione o link do **Adobe Experience Manager** para navegar entre consoles.
+  Selecione o link do **Adobe Experience Manager** para navegar entre consoles.
 
-   ![Navegação global](/help/sites-cloud/authoring/assets/global-navigation.png)
+  ![Navegação global](/help/sites-cloud/authoring/assets/global-navigation.png)
 
 * [Pesquisar](/help/sites-cloud/authoring/getting-started/search.md)
 
-   ![Ícone de pesquisa](/help/sites-cloud/authoring/assets/search-icon.png)
+  ![Ícone de pesquisa](/help/sites-cloud/authoring/assets/search-icon.png)
 
-   Você também pode usar a [tecla de atalho](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `/` (barra) para invocar a pesquisa em qualquer console.
+  Você também pode usar a [tecla de atalho](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `/` (barra) para invocar a pesquisa em qualquer console.
 
 * [Soluções](https://www.adobe.com/br/experience-cloud.html)
 
-   ![Botão Soluções](/help/sites-cloud/authoring/assets/solutions.png)
+  ![Botão Soluções](/help/sites-cloud/authoring/assets/solutions.png)
 
 * [Ajuda](#accessing-help)
 
-   ![Botão Ajuda](/help/sites-cloud/authoring/assets/help.png)
+  ![Botão Ajuda](/help/sites-cloud/authoring/assets/help.png)
 
 * [Notificações](/help/sites-cloud/authoring/getting-started/inbox.md)
 
-   ![Botão Notificações](/help/sites-cloud/authoring/assets/notifications.png)
+  ![Botão Notificações](/help/sites-cloud/authoring/assets/notifications.png)
 
-   Esse ícone exibirá o número de notificações incompletas atribuídas atualmente.
+  Esse ícone exibirá o número de notificações incompletas atribuídas atualmente.
 
 * [Propriedades do usuário](/help/sites-cloud/authoring/getting-started/account-environment.md)
 
-   ![Botão Propriedades do usuário](/help/sites-cloud/authoring/assets/user-properties.png)
+  ![Botão Propriedades do usuário](/help/sites-cloud/authoring/assets/user-properties.png)
 
 * [Seletor de painéis](#rail-selector)
 
-   ![Botão Seletor de painéis](/help/sites-cloud/authoring/assets/rail-selector.png)
+  ![Botão Seletor de painéis](/help/sites-cloud/authoring/assets/rail-selector.png)
 
-   As opções apresentadas dependem do seu console atual. Por exemplo, em **Sites**, é possível selecionar somente o conteúdo (o padrão), a linha do tempo, as referências ou o painel lateral de filtros.
+  As opções apresentadas dependem do seu console atual. Por exemplo, em **Sites**, é possível selecionar somente o conteúdo (o padrão), a linha do tempo, as referências ou o painel lateral de filtros.
 
-   ![Exemplo de seletor de painéis](/help/sites-cloud/authoring/assets/rail-selector-example.png)
+  ![Exemplo de seletor de painéis](/help/sites-cloud/authoring/assets/rail-selector-example.png)
 
 * Navegações estruturais
 
-   ![Navegação estrutural na barra de navegação](/help/sites-cloud/authoring/assets/breadcrumbs-navigation.png)
+  ![Navegação estrutural na barra de navegação](/help/sites-cloud/authoring/assets/breadcrumbs-navigation.png)
 
-   Situadas no meio do painel e sempre mostrando a descrição do item atualmente selecionado, as navegações estruturais permitem que você navegue dentro de um console específico. No console **Sites**, você pode navegar pelos níveis do seu site.
+  Situadas no meio do painel e sempre mostrando a descrição do item atualmente selecionado, as navegações estruturais permitem que você navegue dentro de um console específico. No console **Sites**, você pode navegar pelos níveis do seu site.
 
-   Basta clicar no texto da navegação estrutural para exibir uma lista suspensa que lista os níveis da hierarquia do item selecionado no momento. Clique em uma entrada para ir para esse local.
+  Basta clicar no texto da navegação estrutural para exibir uma lista suspensa que lista os níveis da hierarquia do item selecionado no momento. Clique em uma entrada para ir para esse local.
 
-   ![Exemplo de navegação estrutural expandida](/help/sites-cloud/authoring/assets/breadcrumbs-example.png)
+  ![Exemplo de navegação estrutural expandida](/help/sites-cloud/authoring/assets/breadcrumbs-example.png)
 
 * Botão **Criar**
 
-   ![Botão Criar](/help/sites-cloud/authoring/assets/create.png)
+  ![Botão Criar](/help/sites-cloud/authoring/assets/create.png)
 
-   Uma vez clicado, as opções exibidas são adequadas ao console/contexto.
+  Uma vez clicado, as opções exibidas são adequadas ao console/contexto.
 
 * [Exibições](#viewing-and-selecting-resources)
 
-   O ícone de exibição está na extrema direita da barra de ferramentas do AEM. Como também indica a exibição atual, ele muda. Por exemplo, no modo de exibição padrão, e **Exibição de coluna** ele aparece da seguinte forma:
+  O ícone de exibição está na extrema direita da barra de ferramentas do AEM. Como também indica a exibição atual, ele muda. Por exemplo, no modo de exibição padrão, e **Exibição de coluna** ele aparece da seguinte forma:
 
-   ![Botão Exibições](/help/sites-cloud/authoring/assets/views-button.png)
+  ![Botão Exibições](/help/sites-cloud/authoring/assets/views-button.png)
 
-   É possível alternar entre o modo de exibição de coluna, exibição de cartão e exibição de lista. No modo de exibição de lista também mostra as configurações de exibição.
+  É possível alternar entre o modo de exibição de coluna, exibição de cartão e exibição de lista. No modo de exibição de lista também mostra as configurações de exibição.
 
-   ![Exibições](/help/sites-cloud/authoring/assets/view.png)
+  ![Exibições](/help/sites-cloud/authoring/assets/view.png)
 
-   >[!NOTE]
-   >
-   >A opção **Configurações de exibição** só está disponível no modo **Exibição de lista**.
+  >[!NOTE]
+  >
+  >A opção **Configurações de exibição** só está disponível no modo **Exibição de lista**.
 
 * Navegação pelo teclado
 
-   Você pode navegar por um site usando apenas o teclado. Isso usa a funcionalidade padrão do navegador da tecla **TAB** (ou **OPT+TAB**) para que você possa percorrer os elementos na página que são focalizáveis.
+  Você pode navegar por um site usando apenas o teclado. Isso usa a funcionalidade padrão do navegador da tecla **TAB** (ou **OPT+TAB**) para que você possa percorrer os elementos na página que são focalizáveis.
 
-   No console do **Sites** há a opção adicionada para **Ir para o conteúdo principal**. Isso se torna visível à medida que você navega pelas opções de cabeçalho e acelera a navegação, possibilitando ignorar os elementos padrão na barra de ferramentas (produto) e acessar diretamente o conteúdo principal.
+  No console do **Sites** há a opção adicionada para **Ir para o conteúdo principal**. Isso se torna visível à medida que você navega pelas opções de cabeçalho e acelera a navegação, possibilitando ignorar os elementos padrão na barra de ferramentas (produto) e acessar diretamente o conteúdo principal.
 
-   ![Ir para o conteúdo principal](/help/sites-cloud/authoring/assets/skip-to-main-content.png)
+  ![Ir para o conteúdo principal](/help/sites-cloud/authoring/assets/skip-to-main-content.png)
 
 ## Acessar ajuda   {#accessing-help}
 
@@ -169,42 +168,41 @@ Há vários recursos de ajuda disponíveis:
 
 * **Barra de ferramentas do console**
 
-   Dependendo da sua localização, a variável **Ajuda** O ícone abrirá os recursos apropriados:
+  Dependendo da sua localização, a variável **Ajuda** O ícone abrirá os recursos apropriados:
 
-   ![Ícone da ajuda](/help/sites-cloud/authoring/assets/help-console.png)
+  ![Ícone da ajuda](/help/sites-cloud/authoring/assets/help-console.png)
 
 * **Navegação**
 
-   Na primeira vez que você navega pelo sistema, [uma série de slides apresenta a navegação no AEM](#product-navigation).
+  Na primeira vez que você navega pelo sistema, [uma série de slides apresenta a navegação no AEM](#product-navigation).
 
-   ![Tutorial](/help/sites-cloud/authoring/assets/tutorial.png)
+  ![Tutorial](/help/sites-cloud/authoring/assets/tutorial.png)
 
 * **Editor de página**
 
-   Na primeira vez que você edita uma página, uma série de slides apresenta o editor de páginas.
+  Na primeira vez que você edita uma página, uma série de slides apresenta o editor de páginas.
 
-   ![Tutorial do editor](/help/sites-cloud/authoring/assets/editor-tutorial.png)
+  ![Tutorial do editor](/help/sites-cloud/authoring/assets/editor-tutorial.png)
 
-   Navegue por essa visão geral como faria com a [visão geral de navegação do produto](#product-navigation) ao acessar qualquer console pela primeira vez.
+  Navegue por essa visão geral como faria com a [visão geral de navegação do produto](#product-navigation) ao acessar qualquer console pela primeira vez.
 
-   No menu [**Informações da página,** é possível selecionar **Ajuda**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#accessing-help) para exibir isso novamente, a qualquer momento.
+  No menu [**Informações da página,** é possível selecionar **Ajuda**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#accessing-help) para exibir isso novamente, a qualquer momento.
 
 * **Console de ferramentas**
 
-   No console **Ferramentas** é possível acessar os **Recursos** externos:
+  No console **Ferramentas** é possível acessar os **Recursos** externos:
 
    * **Documentação** - exibir a documentação do Adobe® Experience Manager
    * **Recursos do desenvolvedor** - recursos e downloads do desenvolvedor
 
-   >[!NOTE]
-   >
-   >É possível acessar uma visão geral das teclas de atalho disponíveis a qualquer momento, usando a tecla de atalho `?` (ponto de interrogação) em um console.
-   >
-   >Para obter uma visão geral de todos os atalhos de teclado, consulte a seguinte documentação:
-   >
-   >* [Atalhos de teclado para editar páginas](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
-   >* [Atalhos de teclado para os consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
-
+  >[!NOTE]
+  >
+  >É possível acessar uma visão geral das teclas de atalho disponíveis a qualquer momento, usando a tecla de atalho `?` (ponto de interrogação) em um console.
+  >
+  >Para obter uma visão geral de todos os atalhos de teclado, consulte a seguinte documentação:
+  >
+  >* [Atalhos de teclado para editar páginas](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
+  >* [Atalhos de teclado para os consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
 ## Barra de ferramentas de Ações {#actions-toolbar}
 
@@ -311,7 +309,7 @@ Selecionar um recurso na coluna mais à esquerda exibirá os recursos secundári
    * Os detalhes do recurso selecionado serão mostrados na coluna final.
    * A barra de ferramentas de ação ficará disponível.
 
-   Quando uma página é selecionada na exibição de coluna, a página selecionada é exibida na coluna final junto com os seguintes detalhes:
+  Quando uma página é selecionada na exibição de coluna, a página selecionada é exibida na coluna final junto com os seguintes detalhes:
 
    * Título da página
    * Nome da página (parte do URL da página)
@@ -319,7 +317,6 @@ Selecionar um recurso na coluna mais à esquerda exibirá os recursos secundári
    * Detalhes da modificação
    * Idioma da página
    * Publicação e detalhes da visualização
-
 
 ### Exibição de cartão {#card-view}
 
@@ -336,7 +333,7 @@ Selecionar um recurso na coluna mais à esquerda exibirá os recursos secundári
 
 * [Ações rápidas](#quick-actions) também estão disponíveis nessa visualização, como seleção e ações comuns, como editar.
 
-   ![Ações rápidas](/help/sites-cloud/authoring/assets/quick-actions.png)
+  ![Ações rápidas](/help/sites-cloud/authoring/assets/quick-actions.png)
 
 * É possível navegar para baixo na árvore tocando/clicando em cartões (com cautela para evitar as ações rápidas) ou para cima novamente usando a [navegação estrutural no cabeçalho](#the-header).
 
@@ -348,16 +345,16 @@ Selecionar um recurso na coluna mais à esquerda exibirá os recursos secundári
 * É possível navegar para baixo na árvore tocando/clicando no nome do recurso e fazer backup usando a [navegação estrutural no cabeçalho](#the-header).
 * Para selecionar facilmente todos os itens na lista, use a caixa de seleção no canto superior esquerdo da lista.
 
-   ![Exibição de lista selecionar tudo](/help/sites-cloud/authoring/assets/list-view-select-all.png)
+  ![Exibição de lista selecionar tudo](/help/sites-cloud/authoring/assets/list-view-select-all.png)
 
    * Quando todos os itens na lista forem selecionados, essa caixa de seleção aparecerá marcada.
 
       * Clique ou toque na caixa de seleção para desmarcar tudo.
+
    * Quando apenas alguns itens são selecionados, ele é exibido com um sinal de menos.
 
       * Clique ou toque na caixa de seleção para selecionar tudo.
       * Clique ou toque novamente na caixa de seleção para desmarcar tudo.
-
 
 * Selecione as colunas a serem mostradas usando a opção **Configurações de exibição**, localizada abaixo do botão Visualizações. As seguintes colunas estão disponíveis para exibição:
 
@@ -371,20 +368,21 @@ Selecionar um recurso na coluna mais à esquerda exibirá os recursos secundári
    * **Visitantes únicos**
    * **Tempo na página**
 
-      ![Selecionar colunas](/help/sites-cloud/authoring/assets/select-columns.png)
-   Por padrão, é exibida a coluna **Nome**, que faz parte do URL da página. Em alguns casos, o autor pode precisar acessar páginas que estão em um idioma diferente, e ver o nome da página (que normalmente é imutável) pode ser de grande ajuda quando ele não conhece o idioma.
+     ![Selecionar colunas](/help/sites-cloud/authoring/assets/select-columns.png)
+
+  Por padrão, é exibida a coluna **Nome**, que faz parte do URL da página. Em alguns casos, o autor pode precisar acessar páginas que estão em um idioma diferente, e ver o nome da página (que normalmente é imutável) pode ser de grande ajuda quando ele não conhece o idioma.
 
 * Altere a ordem dos itens usando a barra vertical pontilhada na extremidade direita de cada item da lista.
 
-   >[!NOTE]
-   >
-   >Alterar a ordem funciona somente em uma pasta ordenável que tenha o valor `jcr:primaryType` como `sling:OrderedFolder`.
+  >[!NOTE]
+  >
+  >Alterar a ordem funciona somente em uma pasta ordenável que tenha o valor `jcr:primaryType` como `sling:OrderedFolder`.
 
-   ![Ordem das colunas](/help/sites-cloud/authoring/assets/column-order.png)
+  ![Ordem das colunas](/help/sites-cloud/authoring/assets/column-order.png)
 
-   Clique ou toque na barra de seleção vertical e arraste o item até uma nova posição na lista.
+  Clique ou toque na barra de seleção vertical e arraste o item até uma nova posição na lista.
 
-   ![Lista de pedidos](/help/sites-cloud/authoring/assets/order-list.png)
+  ![Lista de pedidos](/help/sites-cloud/authoring/assets/order-list.png)
 
 ## Seletor de painéis {#rail-selector}
 

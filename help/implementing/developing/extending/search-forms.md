@@ -2,9 +2,9 @@
 title: Configuração de formulários de pesquisa
 description: Configuração do Search Forms para Adobe Experience Manager as a Cloud Service.
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2043'
+source-wordcount: '2037'
 ht-degree: 17%
 
 ---
@@ -495,47 +495,46 @@ Dependendo do predicado, uma seleção de configurações está disponível para
 
 * **Rótulo do campo**
 
-   O rótulo que aparecerá como o cabeçalho recolhível ou como o rótulo do campo do predicado.
+  O rótulo que aparecerá como o cabeçalho recolhível ou como o rótulo do campo do predicado.
 
 * **Descrição**
 
-   Detalhes descritivos do usuário.
+  Detalhes descritivos do usuário.
 
 * **Espaço reservado**
 
-   Texto vazio ou o marcador de posição do predicado, caso nenhum texto de filtragem seja inserido.
+  Texto vazio ou o marcador de posição do predicado, caso nenhum texto de filtragem seja inserido.
 
 * **Nome da Propriedade**
 
-   A propriedade a ser pesquisada. Usa um caminho relativo e os curingas `*/*/*` especifique a profundidade da propriedade em relação à variável `jcr:content` (cada asterisco representa um nível de nó).
+  A propriedade a ser pesquisada. Usa um caminho relativo e os curingas `*/*/*` especifique a profundidade da propriedade em relação à variável `jcr:content` (cada asterisco representa um nível de nó).
 
-   Se quiser pesquisar somente em um nó secundário de primeiro nível do recurso que tenha o `x` propriedade no `jcr:content` uso do nó `*/jcr:content/x`
+  Se quiser pesquisar somente em um nó secundário de primeiro nível do recurso que tenha o `x` propriedade no `jcr:content` uso do nó `*/jcr:content/x`
 
 * **Profundidade da propriedade**
 
-   A profundidade máxima para pesquisar essa propriedade nos recursos. Assim, uma pesquisa nessa propriedade pode ser executada em um recurso e em filhos recursivos até que o nível dos filhos seja igual à profundidade especificada.
+  A profundidade máxima para pesquisar essa propriedade nos recursos. Assim, uma pesquisa nessa propriedade pode ser executada em um recurso e em filhos recursivos até que o nível dos filhos seja igual à profundidade especificada.
 
 * **Valor da propriedade**
 
-   O valor da propriedade como uma cadeia de caracteres absoluta ou como uma linguagem de expressão; por exemplo, `cq:Page` ou
+  O valor da propriedade como uma cadeia de caracteres absoluta ou como uma linguagem de expressão; por exemplo, `cq:Page` ou
 
-   `${empty requestPathInfo.suffix ? "/content" : requestPathInfo.suffix}`.
+  `${empty requestPathInfo.suffix ? "/content" : requestPathInfo.suffix}`.
 
 * **Texto do intervalo**
 
-   O rótulo do campo de intervalo na variável **Intervalo de datas** predicado.
+  O rótulo do campo de intervalo na variável **Intervalo de datas** predicado.
 
 * **Caminho de opção**
 
-   O usuário pode selecionar o caminho usando o Navegador de caminho na guia de configuração do predicado. Depois de selecionar o **+** ícone é usado para adicionar a seleção à lista de opções válidas (em seguida, o **-** ícone a ser removido, se necessário).
+  O usuário pode selecionar o caminho usando o Navegador de caminho na guia de configuração do predicado. Depois de selecionar o **+** ícone é usado para adicionar a seleção à lista de opções válidas (em seguida, o **-** ícone a ser removido, se necessário).
 
-   As opções são nós de conteúdo criados pelo usuário, com a seguinte estrutura:
+  As opções são nós de conteúdo criados pelo usuário, com a seguinte estrutura:
 
-   `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
+  `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
 * **Caminho do nó de opções**
-Efetivamente, o mesmo que a 
-**Caminho de opções**, somente no campo de predicado comum, o outro é específico para ativos.
+Efetivamente, o mesmo que a **Caminho de opções**, somente no campo de predicado comum, o outro é específico para ativos.
 
 * **Seleção única**
 Se marcadas, as opções são renderizadas como caixas de seleção que permitem apenas uma única seleção. Se for marcada por engano, uma caixa de seleção pode ser desmarcada.
@@ -563,7 +562,6 @@ Os rótulos das caixas de seleção Publicar e Live Copy para o predicado espec�
    >* `/apps/cq/gui/content/facets/<option>`
    >* `/apps/commerce/gui/content/facets/<option>`
 
-
 ### Adicionar/editar um campo de predicado e definir configurações de campo {#add-edit-a-predicate-field-and-define-field-settings}
 
 É possível adicionar ou editar campos e definir/atualizar suas configurações:
@@ -577,11 +575,12 @@ Os rótulos das caixas de seleção Publicar e Live Copy para o predicado espec�
 
    * Você está adicionando um novo campo:
 
-      Depois de adicionar o predicado, a variável **Configurações** será aberta e mostrará as propriedades que podem ser definidas.
+     Depois de adicionar o predicado, a variável **Configurações** será aberta e mostrará as propriedades que podem ser definidas.
 
    * Você deseja atualizar um predicado existente:
 
-      Selecione o campo de predicado (à direita) e abra o **Configurações** guia.
+     Selecione o campo de predicado (à direita) e abra o **Configurações** guia.
+
    Por exemplo, as configurações para o **Predicado do intervalo de datas**:
 
    ![modificar predicado](assets/csf-modify-predicate.png)
@@ -594,7 +593,7 @@ Os rótulos das caixas de seleção Publicar e Live Copy para o predicado espec�
 
    ![ícone de visualização](assets/csf-preview-icon.png)
 
-1. Isso exibirá os formulários de pesquisa como eles serão exibidos (totalmente expandidos) na coluna Pesquisa do console apropriado.
+1. Exibe os formulários de pesquisa conforme são mostrados (totalmente expandidos) na coluna Pesquisa do console apropriado.
 
    ![visualizar formulário](assets/csf-preview-form.png)
 
@@ -625,7 +624,7 @@ A exclusão de uma configuração personalizada é feita no console:
 
    ![restaurar padrão](assets/csf-restore-default.png)
 
-1. A configuração personalizada será excluída e o padrão será restaurado (isso é indicado pelo reaparecimento do símbolo de cadeado no console).
+1. A configuração personalizada é excluída e o padrão é restabelecido (isso é indicado pela reaparição do símbolo de cadeado no console).
 
 ### Adição de predicados de opções {#adding-options-predicates}
 
@@ -656,7 +655,6 @@ O exemplo a seguir (para pesquisar de acordo com o modelo usado para criar uma p
    >1. `/libs/cq/gui/content/common/options/predicates`
    >1. Fazer alterações em `/apps.`
 
-
 1. Abra o **Pesquisar no Forms** e selecione a configuração que deseja atualizar. Por exemplo, **Trilho de pesquisa do administrador de sites**. Em seguida, selecione **Editar**.
 
 1. Dependendo da configuração, adicione uma **Opções** ou **Propriedade de opções** à configuração.
@@ -664,19 +662,20 @@ O exemplo a seguir (para pesquisar de acordo com o modelo usado para criar uma p
 
    * **Nome da Propriedade**
 
-      Específica a propriedade do nó a ser pesquisada nos nós de destino. Por exemplo:
+     Específica a propriedade do nó a ser pesquisada nos nós de destino. Por exemplo:
 
-      `jcr:content/cq:template`
+     `jcr:content/cq:template`
 
    * **Caminho do nó de opção**
 
-      Selecione o caminho para onde as opções são mantidas. Por exemplo:
+     Selecione o caminho para onde as opções são mantidas. Por exemplo:
 
-      `/apps/cq/gui/content/common/options/predicates/templatetype`
+     `/apps/cq/gui/content/common/options/predicates/templatetype`
+
    ![Predicados de opção](assets/csf-options-predicate-02.png)
 
 1. Selecionar **Concluído** para salvar sua configuração.
-1. Navegue até o console apropriado (neste exemplo, **Sites**) e abra a guia **Pesquisa - Filtros** ferroviário. Os formulários de pesquisa recém-definidos, juntamente com as várias opções, estarão visíveis. Selecione a opção necessária para ver os resultados da pesquisa.
+1. Navegue até o console apropriado (neste exemplo, **Sites**) e abra a guia **Pesquisa - Filtros** ferroviário. Os formulários de pesquisa recém-definidos, juntamente com as várias opções, ficam visíveis. Selecione a opção necessária para ver os resultados da pesquisa.
 
    ![opções que estão sendo usadas](assets/csf-options-usage.png)
 

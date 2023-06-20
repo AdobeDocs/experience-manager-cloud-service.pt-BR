@@ -4,10 +4,10 @@ description: Saiba mais sobre as considerações importantes de segurança ao us
 hidefromtoc: true
 hide: true
 exl-id: d2dfde05-ce02-478e-8697-b939fb8740c3
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 100%
+source-wordcount: '229'
+ht-degree: 93%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 ## Armazenamento confiável do AEM {#aem-trust-store}
 
-Para oferecer suporte a operações assimétricas e criptográficas, o AEM armazena certificados dentro do repositório de conteúdo, em um armazenamento confiável global. O conteúdo é público e, por padrão, é acessível anonimamente por todos nas instâncias do editor.
+Para oferecer suporte a operações assimétricas e criptográficas, o AEM armazena certificados dentro do repositório de conteúdo em um armazenamento global de confiança. O conteúdo é público e, por padrão, é acessível anonimamente por todos nas instâncias do editor.
 
 ### Características do armazenamento confiável {#truststore-characteristics}
 
@@ -24,7 +24,7 @@ Para oferecer suporte a operações assimétricas e criptográficas, o AEM armaz
 * Os clientes podem usá-lo em seu próprio código por meio da [API de armazenamento de chaves](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/keystore/KeyStoreService.html#getTrustStore-org.apache.sling.api.resource.ResourceResolver-)
 * O armazenamento confiável pode ser gerenciado por meio da interface em **Ferramentas** - **Segurança** - **Armazenamento confiável** ou acessando *`https://serveraddress:serverport/libs/granite/security/content/truststore.html`*, conforme mostrado abaixo:
 
-   ![Gerenciamento de armazenamento confiável](/help/security/assets/global-trust-store-modified.png)
+  ![Gerenciamento de armazenamento confiável](/help/security/assets/global-trust-store-modified.png)
 
 * O acesso ao armazenamento confiável pode ser ainda mais restrito pelo controle de acesso ao repositório, dependendo do caso de uso.
 

@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2003'
+source-wordcount: '2000'
 ht-degree: 1%
 
 ---
@@ -75,9 +75,9 @@ Além disso, se você selecionou um esquema XML ou modelo de formulário XDP com
 1. Na caixa de diálogo Criação de fragmento, especifique as seguintes informações:
 
    * **Nome**: Nome do fragmento. O valor padrão é o nome do elemento do painel. É um campo obrigatório.
-      >[!NOTE]
-      >
-      >Certifique-se de especificar um nome exclusivo para o fragmento. Se já existir outro fragmento com o mesmo nome, o fragmento não será criado.
+     >[!NOTE]
+     >
+     >Certifique-se de especificar um nome exclusivo para o fragmento. Se já existir outro fragmento com o mesmo nome, o fragmento não será criado.
 
    * **Título**: Título do fragmento. O valor padrão é o título do painel.
 
@@ -85,7 +85,7 @@ Além disso, se você selecionou um esquema XML ou modelo de formulário XDP com
 
    * **Tags**: marca os metadados do fragmento.
 
-   * **Caminho de destino**: Caminho do repositório onde o fragmento será salvo. Se você não especificar um caminho, um nó com o mesmo nome do fragmento será criado ao lado do nó que contém o Formulário adaptável. O fragmento é salvo neste nó.
+   * **Caminho de destino**: Caminho do repositório onde o fragmento é salvo. Se você não especificar um caminho, um nó com o mesmo nome do fragmento será criado ao lado do nó que contém o Formulário adaptável. O fragmento é salvo neste nó.
 
    * **Modelo de formulário**: Dependendo do modelo de formulário para o Formulário adaptável, esse campo exibe a variável **Esquema XML**, **Modelo de formulário** ou **Nenhum**. É um campo não editável.
 
@@ -230,7 +230,7 @@ Para localizar um Formulário adaptável que contenha Fragmentos de formulário 
 ## Pontos principais a serem lembrados ao trabalhar com fragmentos {#key-points-to-remember-when-working-with-fragments}
 
 * Certifique-se de que o nome do fragmento seja exclusivo. O fragmento não é criado se houver um fragmento existente com o mesmo nome.
-* Em um Formulário adaptável baseado em XDP, se você salvar um painel como fragmento que inclui outro fragmento XDP, o fragmento resultante será vinculado automaticamente ao fragmento XDP secundário. No caso de um Formulário adaptável baseado em XSD, o fragmento resultante será vinculado à raiz do esquema.
+* Em um Formulário adaptável baseado em XDP, se você salvar um painel como fragmento que inclui outro fragmento XDP, o fragmento resultante será vinculado automaticamente ao fragmento XDP filho. No caso de um Formulário adaptável baseado em XSD, o fragmento resultante é vinculado à raiz do esquema.
 * Ao criar um fragmento de formulário adaptável, um nó de fragmento é criado, o que é semelhante ao nó guideContainer de um formulário adaptável, no CRXDe Lite.
 * Um fragmento em um Formulário adaptável que usa um Modelo de dados de formulário diferente não é compatível. Por exemplo, um fragmento baseado em XDP não é compatível com um Formulário adaptável baseado em XSD e vice-versa.
 * Os fragmentos de formulário adaptáveis estão disponíveis para uso por meio da guia Fragmentos de formulário adaptáveis no localizador de conteúdo do AEM.
@@ -240,7 +240,7 @@ Para localizar um Formulário adaptável que contenha Fragmentos de formulário 
 * Ao republicar um fragmento de formulário adaptável atualizado, as alterações são refletidas nas instâncias publicadas do formulário adaptável em que o fragmento é usado.
 * O formulário adaptável que contém o componente Verificar não é compatível com usuários anônimos. Além disso, não é recomendado usar o componente Verificar em um fragmento de formulário adaptável.
 * (**Somente Mac**) Para garantir que a funcionalidade dos fragmentos de formulário funcione perfeitamente em todos os cenários, adicione a seguinte entrada ao arquivo /private/etc/hosts:
-   `127.0.0.1 <Host machine>` **Máquina host**: a máquina do Apple Mac na qual [!DNL AEM Forms] é implantado.
+  `127.0.0.1 <Host machine>` **Máquina host**: a máquina do Apple Mac na qual [!DNL AEM Forms] é implantado.
 
 ## Fragmentos de referência {#reference-fragments}
 

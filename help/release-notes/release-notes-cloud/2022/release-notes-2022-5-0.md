@@ -2,10 +2,10 @@
 title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2022.5.0.
 description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2022.5.0.
 exl-id: 1b867582-e34c-435b-b8f8-fc71dddcaccb
-source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '802'
-ht-degree: 98%
+source-wordcount: '795'
+ht-degree: 87%
 
 ---
 
@@ -60,7 +60,7 @@ Agora, o Experience Manager Assets usa recursos de IA do Adobe Sensei para [dist
 
 * **Assistente para criar um formulário adaptável**: você pode usar o assistente empresarial para criar formulários adaptáveis rapidamente. O assistente fornece uma navegação rápida por guias para selecionar facilmente o modelo pré-configurado, o estilo, os campos e as opções de envio para criar um formulário adaptável.
 
-   ![Assistente para criar um formulário adaptável](/help/release-notes/assets/wizard.png)
+  ![Assistente para criar um formulário adaptável](/help/release-notes/assets/wizard.png)
 
 ## Complemento CIF {#cloud-services-cif}
 
@@ -68,20 +68,20 @@ Agora, o Experience Manager Assets usa recursos de IA do Adobe Sensei para [dist
 
 * Acesso rápido ao cockpit de produtos: acesse facilmente as informações completas e detalhadas do produto com um clique no Editor de sites
 
-   ![Ativar lista de desejos](/help/assets/CIF/enable-wishlist.png)
+  ![Ativar lista de desejos](/help/assets/CIF/enable-wishlist.png)
 
 * Compatibilidade com componentes adicionais de comércio de marketing: os componentes podem ser configurados para mostrar uma chamada para ação de adição ao carrinho e de lista de desejos
 
-   ![Atalho do Editor de sites para o cockpit de produtos](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
+  ![Atalho do Editor de sites para o cockpit de produtos](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
 
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### Novidades {#what-is-new-foundation}
 
-* A opção “Adicionar árvore”, na **guia Distribuir** da tela do administrador do agente de replicação, que foi anunciada anteriormente como obsoleta, será removida em 20 de junho de 2022 ou em um futuro próximo. Os pacotes com uma hierarquia de árvore de conteúdo devem ser replicados usando [Gerenciar publicação](/help/operations/replication.md#manage-publication) ou o [Fluxo de trabalho de publicação da árvore de conteúdo](/help/operations/replication.md#publish-content-tree-workflow).
+* A opção &quot;Adicionar árvore&quot; na tela do administrador do agente de replicação **Guia Distribuir**, que foi anunciado anteriormente como obsoleto, foi removido em 20 de junho de 2022 ou logo depois. Os pacotes com uma hierarquia de árvore de conteúdo devem ser replicados usando [Gerenciar publicação](/help/operations/replication.md#manage-publication) ou o [Fluxo de trabalho de publicação da árvore de conteúdo](/help/operations/replication.md#publish-content-tree-workflow).
 
-* O uso da tela de administrador do agente de replicação ou da API de replicação para distribuir pacotes de conteúdo com mais de 10 MB (nós com propriedades, sem incluir os binários) foi descontinuado e será aplicado em 12 de setembro de 2022 ou em um futuro próximo. Em vez disso, [Gerenciar publicação](/help/operations/replication.md#manage-publication) ou o [Fluxo de trabalho de publicação da árvore de conteúdo](/help/operations/replication.md#publish-content-tree-workflow) deve ser usado para replicar esses pacotes de conteúdo grandes. Em julho, uma mensagem de aviso será exibida na **guia Distribuir** da tela do administrador do agente de replicação ao tentar replicar esses pacotes de conteúdo grandes e também no registro de erros do AEM sempre que a API de replicação for usada para replicar esses pacotes de conteúdo grandes. Em setembro, os avisos serão substituídos por erros. Ajuste os seus processos de acordo.
+* O uso da tela de administrador do agente de replicação ou da API de replicação para distribuir pacotes de conteúdo maiores que 10 MB (nós com propriedades, sem incluir binários) foi descontinuado e aplicado em 12 de setembro de 2022 ou logo em seguida. Em vez disso, [Gerenciar publicação](/help/operations/replication.md#manage-publication) ou o [Fluxo de trabalho de publicação da árvore de conteúdo](/help/operations/replication.md#publish-content-tree-workflow) deve ser usado para replicar esses pacotes de conteúdo grandes. Em julho, uma mensagem de aviso será exibida na **guia Distribuir** da tela do administrador do agente de replicação ao tentar replicar esses pacotes de conteúdo grandes e também no registro de erros do AEM sempre que a API de replicação for usada para replicar esses pacotes de conteúdo grandes. Em setembro, os avisos foram substituídos por erros. Ajuste seus processos de acordo.
 
 ### Novos recursos disponíveis no canal de pré-lançamento do [!DNL Experience Manager] {#prerelease-features-foundation}
 
@@ -91,7 +91,7 @@ Agora, o Experience Manager Assets usa recursos de IA do Adobe Sensei para [dist
 
 ### Descontinuidade do TLS 1.0 e 1.1
 
-A partir de 30 de junho de 2022, o Experience Manager as a Cloud Service exigirá comunicações de rede e trocas de dados mais seguras com os sistemas dos usuários. O AEM usará exclusivamente o protocolo TLS (Transport Layer Security) 1.2. As versões anteriores do TLS (1.0 e 1.1) serão descontinuadas.
+A partir de 30 de junho de 2022, o Experience Manager as a Cloud Service exigirá comunicações de rede e trocas de dados mais seguras com os sistemas dos usuários. O AEM usará exclusivamente o protocolo TLS (Transport Layer Security) 1.2. As versões anteriores do TLS (1.0 e 1.1) foram descontinuadas.
 
 Se você continuar a usar versões mais antigas do TLS (como 1.0 e 1.1), poderá perder o acesso ao Experience Manager as a Cloud Service.
 

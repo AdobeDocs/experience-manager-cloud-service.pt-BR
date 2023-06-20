@@ -2,10 +2,10 @@
 title: Notas de versão do [!DNL Adobe Experience Manager]  as a Cloud Service 2020.9.0.
 description: "[!DNL Adobe Experience Manager] Notas de versão as a Cloud Service para 2020.9.0."
 exl-id: 2332512f-8c52-4569-a006-faa36a7670a1
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '724'
-ht-degree: 21%
+source-wordcount: '723'
+ht-degree: 19%
 
 ---
 
@@ -74,7 +74,7 @@ A data de lançamento do [!UICONTROL Cloud Manager] A versão 2020.9.0 é 3 de s
 
 * A Auditoria de conteúdo foi renomeada para Auditoria de experiência.
 * O processo de compilação foi separado em três comandos Maven separados.
-* Se o Repositório Git não for clonado, serão feitas mais três tentativas.
+* Se o Repositório Git não for clonado, haverá mais três tentativas.
 
 ### Correções de erros {#bug-fixes-cm}
 
@@ -118,8 +118,8 @@ Siga esta seção para saber mais sobre as novidades e atualizações das Ferram
 
 * O plug-in AIO-CLI é compatível com o Repository Modernizer e permite que os usuários executem a ferramenta usando o plug-in.
 
-   Consulte [Recurso do Git: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) para obter mais detalhes.
+  Consulte [Recurso do Git: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) para obter mais detalhes.
 
 * O utilitário Repository Modernizer pode ser usado para reestruturar pacotes de projetos existentes em pacotes compatíveis com a estrutura do projeto definida para o AEM as a Cloud Service.
 
-   Consulte [Recurso do Git: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) para obter mais detalhes.
+  Consulte [Recurso do Git: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) para obter mais detalhes.

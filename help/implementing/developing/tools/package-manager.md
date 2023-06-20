@@ -4,9 +4,9 @@ description: Saiba mais sobre as noções básicas do gerenciamento de pacotes d
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: e6b6dd3dcccfa73893d224ccbd5ead0d910072a8
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3788'
+source-wordcount: '3782'
 ht-degree: 4%
 
 ---
@@ -280,7 +280,7 @@ Um pacote geralmente é criado ao mesmo tempo que você [criar o pacote](#creati
 
 1. Abra os detalhes do pacote na lista de pacotes clicando no nome do pacote.
 
-1. Clique em **Build**. Uma caixa de diálogo solicita a confirmação de que você deseja criar o pacote, pois qualquer conteúdo existente será substituído.
+1. Clique em **Build**. Uma caixa de diálogo solicita a confirmação de que você deseja criar o pacote porque qualquer conteúdo existente do pacote será substituído.
 
 1. Clique em **OK**. O AEM cria o pacote, listando todo o conteúdo adicionado ao pacote como faz na lista de atividades. Quando concluído, o AEM exibe uma confirmação de que o pacote foi criado e (quando você fecha a caixa de diálogo) atualiza as informações da lista de pacotes.
 
@@ -445,7 +445,7 @@ Para resolver esse problema, o mantenedor do arquivo de sobreposição no `/apps
 
 **O que está marcado**
 
-Essa validação verifica quais permissões estão sendo adicionadas, como elas serão tratadas (mesclar/substituir) e se as permissões atuais serão afetadas.
+Essa validação verifica quais permissões estão sendo adicionadas, como elas são tratadas (mesclar/substituir) e se as permissões atuais são afetadas.
 
 **Como é relatado**
 
@@ -453,7 +453,7 @@ As permissões são descritas no Log de atividades do Gerenciador de pacotes.
 
 **Estados de erro**
 
-Nenhum erro explícito pode ser fornecido. A validação simplesmente indica se qualquer nova permissão de ACL será adicionada ou afetada pela instalação do pacote.
+Nenhum erro explícito pode ser fornecido. A validação simplesmente indica se qualquer nova permissão de ACL é adicionada ou afetada pela instalação do pacote.
 
 **Resolução de erro**
 
@@ -528,7 +528,7 @@ Fazer upload de um pacote adiciona somente o conteúdo do pacote ao repositório
 >
 >A instalação de um pacote pode substituir ou excluir conteúdo existente. Carregue um pacote somente se tiver certeza de que ele não exclui nem substitui o conteúdo necessário.
 
-Antes da instalação do pacote, o Gerenciador de pacotes cria automaticamente um pacote de instantâneos que contém o conteúdo que será substituído. Este snapshot será reinstalado se você desinstalar o pacote.
+Antes da instalação do pacote, o Gerenciador de pacotes cria automaticamente um pacote de instantâneos que contém o conteúdo que é substituído. Este snapshot será reinstalado se você desinstalar o pacote.
 
 1. [Acesse o Gerenciador de pacotes.](#accessing)
 

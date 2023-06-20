@@ -1,10 +1,10 @@
 ---
 title: Ambientes de desenvolvimento rápido
-description: Saiba como aproveitar os Ambientes de desenvolvimento rápido para iterações de desenvolvimento rápido em um ambiente de nuvem.
+description: Saiba como usar Ambientes de desenvolvimento rápido para iterações de desenvolvimento rápido em um ambiente de nuvem.
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
-source-git-commit: 5bfa5a1df940b8903acd08f4c3cb7443adb897d8
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3325'
+source-wordcount: '3317'
 ht-degree: 5%
 
 ---
@@ -26,7 +26,7 @@ Você pode consultar vídeos adicionais que demonstram [como configurar](https:/
 
 Os RDEs podem ser usados para configurações de código, conteúdo e Apache ou Dispatcher. Diferentemente dos ambientes de desenvolvimento de nuvem comuns, os desenvolvedores podem usar ferramentas de linha de comando locais para sincronizar o código criado localmente em um RDE.
 
-Cada programa é provisionado com um RDE. No caso de contas de sandbox, elas ficarão hibernadas após algumas horas de não uso.
+Cada programa é provisionado com um RDE. No caso de contas de sandbox, elas ficam hibernadas após algumas horas de não uso.
 
 Após a criação, os RDEs são definidos para a versão mais recente do AEM disponível. Uma redefinição de RDE, que pode ser executada usando o Cloud Manager, desativará o RDE e o definirá para a versão do AEM mais recente.
 
@@ -50,7 +50,7 @@ Siga estas etapas para usar o Cloud Manager para criar um RDE para seu programa.
 
    * A opção **Adicionar ambiente** também está disponível na guia **Ambientes**.
 
-      ![Guia Ambientes](/help/implementing/cloud-manager/assets/environments-tab.png)
+     ![Guia Ambientes](/help/implementing/cloud-manager/assets/environments-tab.png)
 
    * A opção **Adicionar ambiente** pode estar desativada devido à falta de permissões ou dependendo dos recursos licenciados.
 
@@ -128,8 +128,7 @@ Depois de adicionar um RDE para o programa usando o Cloud Manager, você pode in
    >
    >Se você vir a variável `Warning: cloudmanager:list-programs is not a aio command.` erro, é necessário instalar o [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager) executando o comando abaixo:
    >
-   >
-   ```
+   >```
    >aio plugins:install @adobe/aio-cli-plugin-cloudmanager
    >```
 
@@ -148,11 +147,11 @@ A Adobe recomenda o seguinte fluxo de trabalho para desenvolver um novo recurso:
 
 * Quando um marco intermediário é atingido e validado localmente com êxito com o SDK as a Cloud Service do AEM, o código deve ser comprometido com uma ramificação de recurso do Git que ainda não faz parte da linha principal, embora a confirmação no Git seja opcional. O que constitui um &quot;marco intermediário&quot; varia com base nos hábitos da equipe. Os exemplos incluem algumas novas linhas de código, meio dia de trabalho ou a conclusão de um sub-recurso.
 
-* Redefina o RDE se ele tiver sido usado por outro recurso e você quiser [redefinir para um estado padrão](#reset-rde). <!-- Alexandru: hiding for now, please don't delete This can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). -->A redefinição levará alguns minutos e todo o conteúdo e código existentes serão excluídos. Você pode usar o comando RDE status para confirmar se o RDE está pronto. O RDE voltará com a versão mais recente do AEM.
+* Redefina o RDE se ele tiver sido usado por outro recurso e você quiser [redefinir para um estado padrão](#reset-rde). <!-- Alexandru: hiding for now, please don't delete This can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). -->A redefinição levará alguns minutos e todo o conteúdo e código existente será excluído. Você pode usar o comando RDE status para confirmar se o RDE está pronto. O RDE voltará com a versão mais recente do AEM.
 
-   >[!IMPORTANT]
-   >
-   > Se seus ambientes de preparo e produção não estiverem recebendo atualizações automáticas de lançamento de AEM e estiverem muito atrás da versão mais recente de lançamento de AEM, lembre-se de que o código em execução no RDE pode não corresponder a como o código funcionará no preparo e na produção. Nesse caso, é especialmente importante executar testes completos do código no preparo antes de implantá-lo na produção.
+  >[!IMPORTANT]
+  >
+  > Se seus ambientes de preparo e produção não estiverem recebendo atualizações automáticas de lançamento de AEM e estiverem muito atrás da versão mais recente de lançamento de AEM, lembre-se de que o código em execução no RDE pode não corresponder a como o código funcionará no preparo e na produção. Nesse caso, é especialmente importante executar testes completos do código no preparo antes de implantá-lo na produção.
 
 
 * Usando a interface de linha de comando do RDE, sincronize o código local com o RDE. As opções incluem instalar um pacote de conteúdo, um pacote específico, um arquivo de configuração OSGI, um arquivo de conteúdo e um arquivo zip de uma configuração do Apache/Dispatcher. Também é possível fazer referência a um pacote de conteúdo remoto. Consulte a [Ferramentas de Linha de Comando do RDE](#rde-cli-commands) para obter mais informações. Você pode usar o comando status para validar se a implantação foi bem-sucedida. Opcionalmente, use o Gerenciador de pacotes para instalar pacotes de conteúdo.
@@ -185,11 +184,11 @@ No entanto, com uma coordenação cuidadosa, é possível que mais de um desenvo
 
 * Para obter uma lista de comandos, digite:
 
-   `aio aem:rde`
+  `aio aem:rde`
 
 * Para obter ajuda detalhada sobre um comando, digite:
 
-   `aio aem rde <command> --help`
+  `aio aem rde <command> --help`
 
 ### Implantação no RDE {#deploying-to-rde}
 
@@ -352,7 +351,7 @@ Você pode excluir configurações e pacotes que foram implantados anteriormente
 
 Por exemplo, se `com.adobe.granite.demo.MyServlet.cfg.json` tiver sido instalado, a variável `bsn` é apenas `com.adobe.granite.demo.MyServlet`, sem o **cfg.json** sufixo.
 
-Não há suporte para a exclusão de pacotes de conteúdo ou arquivos de conteúdo. Para removê-los, o RDE deve ser redefinido, o que o retornará a um estado padrão.
+Não há suporte para a exclusão de pacotes de conteúdo ou arquivos de conteúdo. Para removê-los, o RDE deve ser redefinido, o que o retornará ao estado padrão.
 
 Consulte o exemplo abaixo para obter mais detalhes:
 
@@ -366,17 +365,17 @@ Para obter mais informações e demonstrações, consulte [como usar comandos RD
 
 ## Redefinir {#reset-rde}
 
-A redefinição do RDE remove todos os códigos personalizados, configurações e conteúdo das instâncias do autor e de publicação. Isso pode ser útil, por exemplo, se o RDE tiver sido usado para testar um recurso específico e você quiser redefini-lo para um estado padrão para testar um recurso diferente.
+A redefinição do RDE remove todos os códigos personalizados, configurações e conteúdo das instâncias do autor e de publicação. Essa redefinição é útil, por exemplo, se o RDE tiver sido usado para testar um recurso específico e você quiser redefini-lo para um estado padrão para que você possa testar um recurso diferente.
 
 Uma redefinição definirá o RDE para a versão do AEM mais recente disponível.
 
 <!-- Alexandru: hiding for now, please don't delete
 
-Resetting can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). Resetting takes a few minutes and all existing content and code will be deleted from the RDE.
+Resetting can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). Resetting takes a few minutes and all existing content and code is deleted from the RDE.
 
 >[NOTE!]
 >
->You must be assigned the Cloud Manager Developer role in order to be able to use the reset feature. If not, a reset action will result in an error.
+>You must be assigned the Cloud Manager Developer role to use the reset feature. If not, a reset action results in an error.
 
 ### Reset the RDE via Command Line {#reset-the-rde-command-line}
 
@@ -400,7 +399,7 @@ Você pode usar o Cloud Manager para redefinir seu RDE seguindo as etapas abaixo
 
    * Como alternativa, clique no botão **Mostrar tudo** no cartão **Ambientes** para ir diretamente para a guia **Ambientes**.
 
-      ![Mostrar todas as opções](/help/implementing/cloud-manager/assets/environment-showall.png)
+     ![Mostrar todas as opções](/help/implementing/cloud-manager/assets/environment-showall.png)
 
 1. A variável **Ambientes** é aberta e lista todos os ambientes do programa.
 
@@ -464,7 +463,7 @@ Os níveis de log podem ser definidos modificando as configurações de OSGi. Ve
 
 ## Em que os RDEs são diferentes dos ambientes de desenvolvimento na nuvem? {#how-are-rds-different-from-cloud-development-environments}
 
-Embora o RDE seja, de muitas maneiras, semelhante a um ambiente de desenvolvimento em nuvem, há algumas pequenas diferenças arquitetônicas a fim de permitir a sincronização rápida do código. O mecanismo para obter o código para o RDE é diferente — para RDEs, um sincroniza o código de um ambiente de desenvolvimento local, enquanto para Ambientes de desenvolvimento da nuvem, um implanta o código por meio do Cloud Manager.
+Embora o RDE seja, de muitas maneiras, semelhante a um ambiente de desenvolvimento em nuvem, há algumas pequenas diferenças arquitetônicas para permitir a sincronização rápida do código. O mecanismo para obter o código para o RDE é diferente — para RDEs, um sincroniza o código de um ambiente de desenvolvimento local, enquanto para Ambientes de desenvolvimento da nuvem, um implanta o código por meio do Cloud Manager.
 
 Por esses motivos, recomenda-se que, após validar o código em um ambiente de RDE, você implante o código em um Ambiente de desenvolvimento de nuvem usando o pipeline de não produção. Por fim, teste o código antes de implantar com o pipeline de produção.
 

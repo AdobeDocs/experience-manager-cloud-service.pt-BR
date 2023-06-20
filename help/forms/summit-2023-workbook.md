@@ -7,10 +7,10 @@ topic-tags: develop
 hide: true
 hidefromtoc: true
 exl-id: e1eb0812-c92e-4a18-aabb-5a70b9e6fc7d
-source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3360'
-ht-degree: 100%
+source-wordcount: '3359'
+ht-degree: 99%
 
 ---
 
@@ -62,7 +62,7 @@ Nesta lição, você poderá se familiarizar com o AEM Forms as a Cloud Service 
 
 1. Abra o navegador e insira a URL do ambiente de autor do Cloud Service.
 
-1. Faça logon no ambiente de autor do Cloud Service. As credenciais de logon para acessar o ambiente de autor serão compartilhadas com você durante o laboratório.
+1. Faça logon no ambiente de autor do Cloud Service. As credenciais de logon do ambiente de criação são compartilhadas com você durante o laboratório.
 
 1. Após fazer o logon, acesse a interface do AEM Forms. Clique em **Formulários**.
 
@@ -268,7 +268,6 @@ Configure o repositório local do tema:
    > * Se receber uma mensagem solicitando a atualização do npm por meio do comando `npm notice Run npm nstall -g npm@9.6.0`, ignore a mensagem.
    > * Não execute outros comandos de npm, a menos que seja instruído na pasta de trabalho.
 
-
 1. Em seguida, execute o seguinte comando para visualizar o formulário.
 
    ```Shell
@@ -367,7 +366,7 @@ Para renderizar o formulário hospedado no ambiente de publicação do Cloud Ser
 
    * **AEM_FORM_PATH**: especifica o caminho do formulário adaptável criado na lição anterior. Por exemplo, `/content/forms/af/registration/`
 
-      ![](/help/forms/assets/screenshot202023-03-0820at202.49.1820pm.png)
+     ![](/help/forms/assets/screenshot202023-03-0820at202.49.1820pm.png)
 
 1. Abra a janela de comando, verifique se você está no diretório react-starter-kit-aem-headless-forms e execute o seguinte comando:
 
@@ -518,7 +517,7 @@ Para renderizar o formulário hospedado no ambiente de publicação do Cloud Ser
 
    * **AEM_FORM_PATH**: especifica o caminho do formulário adaptável criado na lição anterior. Por exemplo, /content/forms/af/registration/
 
-      ![](/help/forms/assets/screenshot2028126929.png)
+     ![](/help/forms/assets/screenshot2028126929.png)
 
 1. Abra a janela de comando, verifique se você está no diretório **react-starter-kit-aem-headless-forms** e execute o seguinte comando:
 

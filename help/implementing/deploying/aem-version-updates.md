@@ -3,9 +3,9 @@ title: Atualizações de versão do AEM
 description: Saiba como o AEM as a Cloud Service usa integração e entrega contínuas (CI/CD) para manter seus projetos na versão mais recente.
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: dd1560aa4d260320f565ad993a8b3650c3ee5288
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '479'
 ht-degree: 23%
 
 ---

@@ -2,9 +2,9 @@
 title: Referência de predicado do construtor de consultas
 description: Referência de predicado para a API do Construtor de consultas.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: 14aafcb6c4acc798b0f0e0c51ecb0726f8d567aa
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2283'
+source-wordcount: '2280'
 ht-degree: 2%
 
 ---
@@ -28,7 +28,7 @@ O nome &quot;raiz&quot; nunca é usado em uma consulta, ele está implícito.
 * **`p.hits`** - (somente para o servlet JSON) selecione a forma como as ocorrências são gravadas como JSON, com estas padrão (extensíveis por meio do serviço ResultHitWriter):
    * **`simple`** - mínimo de itens como `path`, `title`, `lastmodified`, `excerpt` (se definido)
    * **`full`** - renderização Sling JSON do nó, com `jcr:path` indicando o caminho da ocorrência: por padrão, apenas lista as propriedades diretas do nó, inclui uma árvore mais profunda com `p.nodedepth=N`, com 0 significando a subárvore inteira e infinita; adicione `p.acls=true` para incluir as permissões JCR da sessão atual no item de resultado fornecido (mapeamentos: `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`)
-   * **`selective`** - somente as propriedades especificadas em `p.properties`, que é um espaço separado (use `+` em URLs) lista de caminhos relativos; se o caminho relativo tiver uma profundidade `>1` esses objetos serão representados como objetos filho; o `jcr:path` propriedade inclui o caminho da ocorrência
+   * **`selective`** - somente as propriedades especificadas em `p.properties`, que é um espaço separado (use `+` em URLs) lista de caminhos relativos; se o caminho relativo tiver uma profundidade `>1` esses objetos são representados como objetos filho; o `jcr:path` propriedade inclui o caminho da ocorrência
 
 ### grupo {#group}
 
@@ -108,7 +108,7 @@ Esse predicado restringe o resultado aos fragmentos de conteúdo.
 
 Esse predicado compara duas propriedades de data JCR entre si. É possível testar se eles são iguais, desiguais, maiores ou maiores ou iguais.
 
-Este é um predicado somente de filtragem e não pode utilizar um índice de pesquisa.
+Este é um predicado somente de filtragem e não pode usar um índice de pesquisa.
 
 #### Propriedades {#properties-2}
 
@@ -143,7 +143,7 @@ Ela não oferece suporte à filtragem.
 
 Esse predicado exclui nós do resultado em que seu caminho corresponde a uma expressão regular.
 
-Este é um predicado somente de filtragem e não pode utilizar um índice de pesquisa.
+Este é um predicado somente de filtragem e não pode usar um índice de pesquisa.
 
 Não há suporte para extração de facetas.
 
@@ -168,7 +168,7 @@ Não há suporte para extração de facetas.
 
 Este predicado restringe o resultado a itens nos quais a sessão atual tem o valor especificado [Privilégios JCR.](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
 
-Este é um predicado somente de filtragem e não pode utilizar um índice de pesquisa. Não há suporte para extração de facetas.
+Este é um predicado somente de filtragem e não pode usar um índice de pesquisa. Não há suporte para extração de facetas.
 
 #### Propriedades {#properties-7}
 
@@ -178,7 +178,7 @@ Este é um predicado somente de filtragem e não pode utilizar um índice de pes
 
 Esse predicado encontra páginas AEM em um idioma específico. Isso verifica a propriedade de idioma da página e o caminho da página, que geralmente inclui o idioma ou localidade em uma estrutura de site de nível superior.
 
-Este é um predicado somente de filtragem e não pode utilizar um índice de pesquisa.
+Este é um predicado somente de filtragem e não pode usar um índice de pesquisa.
 
 Ela oferece suporte à extração de facetas e a intervalos para cada código de idioma exclusivo.
 
@@ -190,7 +190,7 @@ Ela oferece suporte à extração de facetas e a intervalos para cada código de
 
 Esse predicado verifica se um nó é um ativo principal do DAM e não um subativo. Isso ocorre basicamente em todos os nós que não estão dentro de um nó sub assets. Observe que isso não verifica a `dam:Asset` tipo de nó. Para usar esse predicado, basta definir `mainasset=true` ou `mainasset=false`. Não há mais propriedades.
 
-Este é um predicado somente de filtragem e não pode utilizar um índice de pesquisa.
+Este é um predicado somente de filtragem e não pode usar um índice de pesquisa.
 
 Ela oferece suporte à extração de facetas e fornece dois buckets para ativos principais e secundários.
 
@@ -202,7 +202,7 @@ Ela oferece suporte à extração de facetas e fornece dois buckets para ativos 
 
 Esse predicado encontra itens que são membros de um [coleção de recursos do sling](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/resource/collection/ResourceCollection.html).
 
-Este é um predicado somente de filtragem e não pode utilizar um índice de pesquisa.
+Este é um predicado somente de filtragem e não pode usar um índice de pesquisa.
 
 Não há suporte para extração de facetas.
 
@@ -244,8 +244,7 @@ Não há suporte para extração de facetas.
 * **`path`** - Isso define o padrão de caminho.
    * Dependendo do `exact` propriedade, a subárvore inteira corresponderá (como anexar `//*` no xpath, mas observe que isso não inclui o caminho base) ou apenas um caminho exato corresponde, que pode incluir curingas (`*`).
       * O padrão é `true`
-&lt;!— * Se a variável 
-`self`for definida, toda a subárvore, incluindo o nó base, será pesquisada.—>
+&lt;!— * Se a variável `self`for definida, toda a subárvore, incluindo o nó base, será pesquisada.—>
 * **`exact`** - se `exact` é `true`, o caminho exato deve corresponder, mas pode conter curingas simples (`*`), que correspondem a nomes, mas não `/`; se for `false` (padrão) todos os descendentes são incluídos (opcional)
 * **`flat`** - pesquisa somente os filhos diretos (como anexar `/*` em xpath) (usado somente se `exact` não é verdadeiro, opcional)
 * **`self`** - pesquisa a subárvore, mas inclui o nó base fornecido como caminho (sem curingas).
@@ -267,7 +266,7 @@ Ela oferece suporte à extração de facetas e fornece compartimentos para cada 
    * `equals` para correspondência exata (padrão)
    * `unequals` para comparação de desigualdade
    * `like` para usar o `jcr:like` função xpath (opcional)
-   * `not` para nenhuma correspondência (por exemplo, `not(@prop)` em xpath, o parâmetro value será ignorado)
+   * `not` para nenhuma correspondência (por exemplo, `not(@prop)` em xpath, o parâmetro value é ignorado)
    * `exists` para verificação de existência
       * `true` a propriedade deve existir
       * `false` é o mesmo que `not` e é o padrão

@@ -4,10 +4,10 @@ description: Saiba mais sobre as poderosas opções de sincronização da Live C
 feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2337'
-ht-degree: 88%
+source-wordcount: '2335'
+ht-degree: 87%
 
 ---
 
@@ -69,7 +69,7 @@ A tabela a seguir lista as ações de sincronização que vêm prontas para uso 
 | `contentDelete` | Essa ação exclui nós da Live Copy que não existem na origem. [Configure o serviço de **Ação de exclusão de conteúdo MSM CQ**](#excluding-properties-and-node-types-from-synchronization) para especificar os tipos de nó, itens de parágrafo e propriedades de página a serem excluídos. |  |
 | `contentUpdate` | Essa ação atualiza o conteúdo da Live Copy com as alterações da origem. [Configure o serviço de **Ação de atualização de conteúdo MSM CQ**](#excluding-properties-and-node-types-from-synchronization) para especificar os tipos de nó, itens de parágrafo e propriedades de página a serem excluídos. |  |
 | `editProperties` | Essa ação edita as propriedades da Live Copy. A propriedade `editMap` determina quais propriedades são editadas e seus valores. O valor da propriedade `editMap` deve usar o seguinte formato:<br>`[property_name_n]#[current_value]#[new_value]`<br>`current_value` e `new_value` são expressões regulares e `n` é um número inteiro incrementado.<br>Por exemplo, considere o seguinte valor para `editMap`:<br>`sling:resourceType#/(contentpage`‖`homepage)#/mobilecontentpage,cq:template#/contentpage#/mobilecontentpage`<br>Esse valor edita as propriedades dos nós da Live Copy da seguinte maneira:<br>As propriedades `sling:resourceType` definidas como `contentpage` ou `homepage` são definidas como `mobilecontentpage`.<br>As propriedades `cq:template` definidas como `contentpage` são definidas como `mobilecontentpage`. | `editMap: (String)` identifica a propriedade, o valor atual e o novo valor. Consulte a descrição para obter informações. |
-| `notify` | Essa ação envia um evento de página de que a página foi distribuída. Para ser notificado, é necessário primeiro assinar eventos de distribuição. |  |
+| `notify` | Essa ação envia um evento de página de que a página foi distribuída. Para ser notificado, é necessário primeiro assinar eventos de implantação. |  |
 | `orderChildren` | Essa ação ordena os nós filhos com base na ordem no blueprint. |  |
 | `referencesUpdate` | Esta ação de sincronização atualiza referências na Live Copy.<br>Ela procura caminhos nas páginas da Live Copy que apontam para um recurso dentro do blueprint. Quando encontrado, ela atualiza o caminho para apontar para o recurso relacionado dentro da Live Copy. As referências que têm destinos fora do blueprint não são alteradas. <br>[Configure o serviço de **Ação de atualização de referências MSM CQ**](#excluding-properties-and-node-types-from-synchronization) para especificar os tipos de nó, itens de parágrafo e propriedades de página a serem excluídos. |  |
 | `targetVersion` | Essa ação cria uma versão da Live Copy.<br>Essa ação deve ser a única ação de sincronização incluída em uma configuração de implementação. |  |

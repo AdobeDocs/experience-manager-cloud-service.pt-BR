@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
-source-git-commit: 041f0fb62b1bca79cdf4b47f971c060deb77d28f
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2409'
-ht-degree: 100%
+source-wordcount: '2408'
+ht-degree: 97%
 
 ---
 
@@ -24,20 +24,20 @@ ht-degree: 100%
 Formulários adaptáveis fornecem uma experiência envolvente, responsiva, dinâmica e adaptável. O [!DNL AEM Forms] oferece uma interface intuitiva e componentes prontos para uso para criar e trabalhar com formulários adaptáveis. É possível optar por criar um formulário adaptável com base em um modelo ou esquema de formulário ou sem um modelo de formulário. É importante escolher cuidadosamente o modelo de formulário que atenda não apenas às suas necessidades, mas que amplie seus investimentos de infraestrutura e ativos. Você pode escolher entre as seguintes opções ao criar um formulário adaptável:
 
 * **Usar um modelo de dados de formulário**
-   A [integração de dados](data-integration.md) permite integrar entidades e serviços de diferentes fontes de dados em um modelo de dados de formulário que pode ser usado para criar formulários adaptáveis. Escolha a opção Modelo de dados de formulário se o formulário adaptável que você estiver criando envolver a busca e gravação de dados de e para várias fontes de dados.
+  A [integração de dados](data-integration.md) permite integrar entidades e serviços de diferentes fontes de dados em um modelo de dados de formulário que pode ser usado para criar formulários adaptáveis. Escolha a opção Modelo de dados de formulário se o formulário adaptável que você estiver criando envolver a busca e gravação de dados de e para várias fontes de dados.
 
 * **Usar um modelo de formulário XDP**
 Esse é um modelo de formulário ideal se você tiver investido em formulários baseados em XFA ou XDP. Ele fornece uma maneira direta de converter formulários baseados em XFA em formulários adaptáveis. Quaisquer regras de XFA existentes são retidas nos formulários adaptáveis associados. O formulário adaptável resultante oferece suporte a construções em XFA, como validações, eventos, propriedades e padrões.
 
 * **Usar uma definição de esquema XML (XSD) ou um esquema JSON**
-Os esquemas XML e JSON representam a estrutura na qual os dados são produzidos ou consumidos pelo sistema de back-end na sua organização. Você pode associar o esquema a um formulário adaptável e usar seus elementos para adicionar conteúdo dinâmico ao formulário adaptável. Os elementos do esquema estarão disponíveis para uso na guia Objetos do modelo de dados do navegador de conteúdo ao criar formulários adaptáveis.
+Os esquemas XML e JSON representam a estrutura na qual os dados são produzidos ou consumidos pelo sistema de back-end na sua organização. Você pode associar o esquema a um formulário adaptável e usar seus elementos para adicionar conteúdo dinâmico ao formulário adaptável. Os elementos do esquema estão disponíveis para uso na guia Objetos do modelo de dados do navegador de conteúdo ao criar o Adaptive Forms.
 
 * **Não usar nenhum ou criar sem um modelo de formulário**
 Os formulários adaptáveis criados com essa opção não usam nenhum modelo de formulário. O XML de dados gerado desses formulários tem uma estrutura simples com campos e valores correspondentes.
 
-   >[!NOTE]
-   >
-   > É possível modificar as propriedades do modelo de formulário no editor de formulário adaptável ou no editor de modelo de formulário adaptável. Para obter mais informações, consulte [Editar as propriedades do modelo de formulário de um formulário adaptável](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model).
+  >[!NOTE]
+  >
+  > É possível modificar as propriedades do modelo de formulário no editor de formulário adaptável ou no editor de modelo de formulário adaptável. Para obter mais informações, consulte [Editar as propriedades do modelo de formulário de um formulário adaptável](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model).
 
 Para criar um formulário adaptável, consulte [Criação de um formulário adaptável](creating-adaptive-form.md).
 
@@ -91,17 +91,17 @@ Isso permite arrastar e soltar elementos do modelo de formulário no formulário
 
 * **Navegador de propriedades**
 
-   Permite editar as propriedades de um componente. As propriedades mudam de acordo com um componente. Para ver as propriedades do container do Formulário adaptável:
+  Permite editar as propriedades de um componente. As propriedades mudam de acordo com um componente. Para ver as propriedades do container do Formulário adaptável:
 
-   Selecione um componente e toque em ![nível de campo](assets/Smock_SelectContainer_18_N.svg) > **[!UICONTROL Container de formulário adaptável]**, e toque em ![propriedades](assets/Smock_Wrench_18_N.svg).
+  Selecione um componente e toque em ![nível de campo](assets/Smock_SelectContainer_18_N.svg) > **[!UICONTROL Container de formulário adaptável]**, e toque em ![propriedades](assets/Smock_Wrench_18_N.svg).
 
 * **Navegador de ativos**
 
-   Segmenta diferentes tipos de conteúdo, como imagens, documentos, páginas, filmes e assim por diante.
+  Segmenta diferentes tipos de conteúdo, como imagens, documentos, páginas, filmes e assim por diante.
 
 * **Navegador de componentes**
 
-   Inclui componentes que podem ser usados para criar um Formulário adaptável. Você pode arrastar os componentes para o Formulário adaptável para adicionar elementos de formulário e configurá-los de acordo com os requisitos. A tabela a seguir descreve os componentes listados no navegador de componentes.
+  Inclui componentes que podem ser usados para criar um Formulário adaptável. Você pode arrastar os componentes para o Formulário adaptável para adicionar elementos de formulário e configurá-los de acordo com os requisitos. A tabela a seguir descreve os componentes listados no navegador de componentes.
 
 <table>
  <tbody>
@@ -151,7 +151,7 @@ Isso permite arrastar e soltar elementos do modelo de formulário no formulário
   </tr>
   <tr>
    <td>Email</td>
-   <td><p>Adicione um campo para capturar o endereço de email. O componente Email, por padrão, valida endereços de email usando a seguinte expressão regular.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
+   <td><p>Adicione um campo para capturar o endereço de email. O componente Email, por padrão, valida endereços de email usando a seguinte expressão regular.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
   </tr>
   <tr>
    <td>Anexo de arquivo</td>
@@ -191,7 +191,7 @@ Isso permite arrastar e soltar elementos do modelo de formulário no formulário
   </tr>
   <tr>
    <td>Painel</td>
-   <td><p>Adiciona um painel ou subpainel.</p> <p>Você também pode adicionar um componente de painel da barra de ferramentas do painel principal usando o botão <span class="uicontrol">Adicionar painel secundário</code>. Da mesma forma, é possível adicionar uma barra de ferramentas específica do painel usando o botão <span class="uicontrol">Adicionar barra de ferramentas do painel</code>. É possível configurar a posição da barra de ferramentas do painel usando a caixa de diálogo Editar painel.</code></code></p> </td>
+   <td><p>Adiciona um painel ou subpainel.</p> <p>Você também pode adicionar um componente Painel na barra de ferramentas do painel principal usando a <span class="uicontrol">Adicionar painel secundário</code> botão. Da mesma forma, é possível adicionar uma barra de ferramentas específica do painel usando o <span class="uicontrol">Adicionar a barra de ferramentas do painel</code> botão. É possível configurar a posição da barra de ferramentas do painel usando a caixa de diálogo Editar painel.</p> </td>
   </tr>
   <tr>
    <td>Caixa de senha</td>

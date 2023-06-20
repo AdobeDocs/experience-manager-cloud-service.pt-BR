@@ -4,9 +4,9 @@ seo-title: Repository Browser
 description: O navegador do repositório fornece uma visualização somente leitura no repositório para todos os ambientes nos níveis de criação, publicação e visualização.
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
-source-git-commit: 43429562ea4292f38d3459e03185270ec950a58a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '885'
 ht-degree: 2%
 
 ---
@@ -23,15 +23,15 @@ ht-degree: 2%
 
 ## Introdução {#introduction}
 
-O navegador do repositório é uma ferramenta de desenvolvedor que fornece uma visualização somente leitura no repositório para todos os ambientes nos níveis de criação, publicação e visualização. Ele foi projetado para facilitar a exibição da estrutura de conteúdo, a fim de facilitar a visualização ou depuração do conteúdo.
+O navegador do repositório é uma ferramenta de desenvolvedor que fornece uma visualização somente leitura no repositório para todos os ambientes nos níveis de criação, publicação e visualização. Ele foi projetado para facilitar a exibição da estrutura de conteúdo e facilitar a visualização ou depuração do conteúdo.
 
 Acessível no Console do desenvolvedor, ele pode ser usado para navegar pelo repositório de um autor ou instância de publicação para um ambiente selecionado.
 
 ### Pré-requisitos de acesso {#access-prerequisites}
 
-Essas condições devem ser atendidas para acessar o Developer Console ou o Navegador do repositório
+As seguintes condições devem ser atendidas para acessar o Developer Console ou o navegador do Repositório
 
-Para acessar o Developer Console:
+Para acessar o Console do desenvolvedor:
 
 * Para programas de Produção, os usuários devem ter o **Cloud Manager - Função do desenvolvedor** no Admin Console
 * Para programas de sandbox, está disponível para qualquer usuário com um perfil de produto que dê acesso ao AEM as a Cloud Service.
@@ -76,7 +76,7 @@ Além disso, ao clicar em uma pasta, o URL é modificado dinamicamente para incl
 
 Para publicação, por padrão, o Navegador do repositório mostrará apenas o conteúdo público, portanto, determinadas pastas, como `/conf` ou `/home` não estará visível.
 
-Para tornar esses locais visíveis, você precisa seguir o procedimento abaixo.
+Para tornar esses locais visíveis, faça o seguinte.
 
 1. Clique nos três pontos ao lado do ambiente de sua escolha e selecione **Gerenciar acesso**
 

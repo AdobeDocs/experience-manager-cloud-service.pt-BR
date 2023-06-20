@@ -2,10 +2,10 @@
 title: Pesquisa e indexação de conteúdo
 description: Pesquisa e indexação de conteúdo
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 34189fd264d3ba2c1b0b22c527c2c5ac710fba21
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2491'
-ht-degree: 78%
+source-wordcount: '2481'
+ht-degree: 74%
 
 ---
 
@@ -19,9 +19,9 @@ Abaixo está uma lista das principais alterações em comparação ao AEM 6.5 e 
 
 1. Os usuários não terão mais acesso ao Gerenciador de índice de uma instância única do AEM para depurar, configurar ou manter a indexação. Ele só será usado para desenvolvimento e implantações locais.
 1. Os usuários não poderão mais alterar índices em uma instância única do AEM, nem precisarão se preocupar com verificações de consistência ou reindexação.
-1. Em geral, as alterações de índice são iniciadas antes de entrar na produção, para não contornar gateways de qualidade nos pipelines CI/CD do Cloud Manager e não afetar os KPIs de negócios em produção.
-1. Todas as métricas relacionadas, incluindo o desempenho da pesquisa na produção, estarão disponíveis para os clientes durante o tempo de execução para fornecer uma visualização integral sobre os tópicos de pesquisa e indexação.
-1. Os clientes poderão configurar alertas de acordo com suas necessidades.
+1. Em geral, as alterações de índice são iniciadas antes de entrar na produção para não contornar gateways de qualidade nos pipelines CI/CD do Cloud Manager e não afetar os KPIs de negócios em produção.
+1. Todas as métricas relacionadas, incluindo o desempenho da pesquisa na produção, estão disponíveis para clientes no tempo de execução para fornecer uma visualização integral sobre os tópicos de Pesquisa e indexação.
+1. Os clientes podem configurar alertas de acordo com suas necessidades.
 1. Os SREs estão monitorando a integridade do sistema 24 horas por dia, 7 dias por semana, e tomarão as medidas necessárias assim que possível.
 1. A configuração do índice é alterada por meio de implantações. As alterações na definição do índice são configuradas como outras alterações de conteúdo.
 1. A um nível elevado de AEM as a Cloud Service, com a introdução da [modelo de implantação contínua](#index-management-using-rolling-deployments) dois conjuntos de índices existirão: um conjunto para a versão antiga e um conjunto para a nova versão.

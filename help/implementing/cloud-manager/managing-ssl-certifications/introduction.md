@@ -2,10 +2,10 @@
 title: Introdução ao gerenciamento de certificados SSL
 description: Saiba como o Cloud Manager fornece ferramentas de autoatendimento para instalar certificados SSL.
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
-source-git-commit: f69a26c6156c1f9038d612a00b16cac0e51e17ca
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 100%
+source-wordcount: '632'
+ht-degree: 79%
 
 ---
 
@@ -19,13 +19,13 @@ ht-degree: 100%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html?lang=pt-BR" text="Visualização, atualização e substituição de um certificado SSL"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html?lang=pt-BR" text="Verificar o status de um certificado SSL"
 
-O Cloud Manager fornece ferramentas de autoatendimento para instalar e gerenciar certificados SSL a fim de proteger seu site para os usuários. O Cloud Manager usa um serviço TLS para gerenciar certificados SSL e chaves privadas de propriedade de clientes e obtidas de autoridades de certificação terceirizadas, como a Let’s Encrypt.
+O Cloud Manager fornece ferramentas de autoatendimento para instalar e gerenciar certificados SSL a fim de proteger seu site para os usuários. O Cloud Manager usa um serviço TLS para gerenciar certificados SSL e chaves privadas de propriedade de clientes e obtidas de autoridades de certificação terceirizadas, como Let&#39;s Encrypt.
 
 ## Introdução aos certificados {#certificates}
 
 As empresas usam certificados SSL para proteger seus sites e permitir que os clientes confiem neles. Para usar o protocolo SSL, um servidor da Web exige o uso de um certificado SSL.
 
-Quando uma entidade solicita um certificado de uma autoridade de certificação, esta realiza um processo de verificação. Isso pode variar desde a verificação do controle do nome de domínio até a coleta de documentos de registro da empresa e contratos de assinante. Uma vez verificadas as informações de uma entidade, a CA assinará a chave pública usando sua chave privada. Como todas as principais autoridades de certificação têm certificados raiz em navegadores da Web, o certificado da entidade será vinculado por meio de uma *cadeia de confiança* e o navegador da Web a reconhecerá como um certificado confiável.
+Quando uma entidade solicita um certificado de uma autoridade de certificação, esta realiza um processo de verificação. Isso pode variar desde a verificação do controle do nome de domínio até a coleta de documentos de registro da empresa e contratos de assinante. Uma vez verificadas as informações de uma entidade, a CA assinará a chave pública usando sua chave privada. Como todas as principais autoridades de certificação têm certificados raiz em navegadores da Web, o certificado da entidade é vinculado por meio de um *cadeia de confiança* e o navegador da web o reconhecerá como um certificado confiável.
 
 >[!IMPORTANT]
 >
@@ -47,7 +47,7 @@ O Cloud Manager oferece suporte às opções de uso do certificado SSL do client
 O AEM as a Cloud Service somente oferece suporte seguro a sites `https`.
 
 * Os clientes com vários domínios personalizados não querem ter que carregar um certificado sempre que adicionam um domínio.
-* Esses clientes se beneficiarão de um certificado com vários domínios.
+* Esses clientes se beneficiam obtendo um certificado com vários domínios.
 
 ## Requisitos {#requirements}
 

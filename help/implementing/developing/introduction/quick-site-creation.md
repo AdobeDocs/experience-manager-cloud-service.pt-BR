@@ -2,9 +2,9 @@
 title: Criação rápida de sites e personalização de front-end
 description: Saiba como a ferramenta de Criação rápida de sites usa modelos de site, temas e o pipeline de front-end para permitir a implantação rápida de novos sites e dissociar o desenvolvimento de front-end.
 exl-id: 9ec5126b-bee4-445a-a4bb-0c27c1a93d3f
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '328'
 ht-degree: 5%
 
 ---
@@ -29,7 +29,7 @@ Para obter uma visão geral completa de como a ferramenta de Criação rápida d
 
 ## Recursos adicionais {#additional-resources}
 
-Como a ferramenta de Criação rápida de sites aproveita muitos recursos de AEM, esses recursos adicionais podem ser úteis.
+Como a ferramenta de Criação rápida de sites usa muitos recursos de AEM, esses recursos adicionais podem ser úteis.
 
 * [Modelos de site](/help/sites-cloud/administering/site-creation/site-templates.md) : saiba como os modelos de site do AEM podem ser usados para predefinir a estrutura do site e o conteúdo inicial para permitir que você crie novos sites rapidamente.
 * [Temas do site](/help/sites-cloud/administering/site-creation/site-themes.md) - Saiba como temas de site AEM podem ser usados para personalizar o estilo e o design do site.

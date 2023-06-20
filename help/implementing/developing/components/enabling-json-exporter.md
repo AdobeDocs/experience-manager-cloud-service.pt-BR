@@ -2,9 +2,9 @@
 title: Ativação de exportação em JSON para um componente
 description: Os componentes podem ser adaptados para gerar a exportação JSON de seu conteúdo com base em uma estrutura de modelador.
 exl-id: e9be5c0c-618e-4b56-a365-fcdd185ae808
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '472'
 ht-degree: 12%
 
 ---
@@ -66,7 +66,7 @@ Para ser considerada pela estrutura do Exportador JSON, a interface do Modelo de
 
 A interface do modelo Sling correspondente (`MyComponent`) seria então anotado usando [Anotações Jackson](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations) para definir como ele deve ser exportado (serializado).
 
-A interface do modelo precisa ser anotada corretamente para definir quais métodos devem ser serializados. Por padrão, todos os métodos que respeitam a convenção de nomenclatura usual para getters serão serializados e derivarão seus nomes de propriedade JSON naturalmente dos nomes de getter. Isso pode ser evitado ou substituído usando `@JsonIgnore` ou `@JsonProperty` para renomear a propriedade JSON.
+A interface do modelo precisa ser anotada corretamente para definir quais métodos devem ser serializados. Por padrão, todos os métodos que respeitam a convenção de nomenclatura usual para getters são serializados e derivarão seus nomes de propriedade JSON naturalmente dos nomes de getter. Isso pode ser evitado ou substituído usando `@JsonIgnore` ou `@JsonProperty` para renomear a propriedade JSON.
 
 ## Exemplo {#example}
 

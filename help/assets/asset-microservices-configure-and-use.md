@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '2932'
 ht-degree: 3%
@@ -143,7 +143,7 @@ Os aplicativos personalizados são headless [Construtor de aplicativos do Projec
 
 ### Exemplo de perfil personalizado {#custom-profile-example}
 
-Para ilustrar o uso do perfil personalizado, vamos considerar um caso de uso para aplicar texto personalizado a imagens da campanha. Você pode criar um perfil de processamento que aproveite a API do Photoshop para editar as imagens.
+Para ilustrar o uso do perfil personalizado, vamos considerar um caso de uso para aplicar texto personalizado a imagens da campanha. É possível criar um perfil de processamento que use a API do Photoshop para editar as imagens.
 
 A integração do Asset compute Service permite que o Experience Manager passe esses parâmetros para o aplicativo personalizado usando o [!UICONTROL Parâmetros de serviço] campo. O aplicativo personalizado chama a API do Photoshop e passa esses valores para a API. Por exemplo, você pode passar o nome da fonte, a cor do texto, a espessura e o tamanho do texto para adicionar o texto personalizado às imagens da campanha.
 
@@ -161,7 +161,7 @@ Aplique perfis de processamento a pastas usando um dos seguintes métodos:
 
 * Os administradores podem selecionar uma definição de perfil de processamento no **[!UICONTROL Ferramentas]** > **[!UICONTROL Assets]** > **[!UICONTROL Processamento de perfis]** e use **[!UICONTROL Aplicar perfil às pastas]** ação. Ele abre um navegador de conteúdo que permite navegar até pastas específicas, selecioná-las e confirmar a aplicação do perfil.
 * Os usuários podem selecionar uma pasta na interface do Assets, usar **[!UICONTROL Propriedades]** ação para abrir a tela de propriedades da pasta, clique na guia **[!UICONTROL Processamento de ativos]** e na guia [!UICONTROL Processando perfil] selecione o perfil de processamento apropriado para essa pasta. Para salvar as alterações, clique em **[!UICONTROL Salvar e fechar]**.
-   ![Aplicar perfil de processamento a uma pasta na guia Propriedades do ativo](assets/folder-properties-processing-profile.png)
+  ![Aplicar perfil de processamento a uma pasta na guia Propriedades do ativo](assets/folder-properties-processing-profile.png)
 
 * Os usuários podem selecionar pastas ou ativos específicos na interface do Assets para aplicar um perfil de processamento e selecionar ![ícone de reprocessamento de ativos](assets/do-not-localize/reprocess-assets-icon.png) **[!UICONTROL Reprocessar ativos]** nas opções disponíveis na parte superior.
 
@@ -287,7 +287,6 @@ Siga as etapas descritas em [aplicar um modelo de fluxo de trabalho a uma pasta]
 >* [Entenda a extensibilidade e quando usá-la](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html).
 >* [Como criar aplicativos personalizados](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html).
 >* [Tipos MIME compatíveis com vários casos de uso](/help/assets/file-format-support.md).
-
 
 <!-- TBD: 
 * How/where can admins check what's already configured and provisioned.

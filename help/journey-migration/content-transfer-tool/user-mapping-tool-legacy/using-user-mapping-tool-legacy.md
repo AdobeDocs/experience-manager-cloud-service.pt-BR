@@ -4,9 +4,9 @@ description: Utilização da Ferramenta de mapeamento de usuário (herdada)
 exl-id: dcb750c4-0f81-4d11-ac6c-0592162b683d
 hide: true
 hidefromtoc: true
-source-git-commit: 8a258c2c929f9af84a1cde99072291a3e7f6cfc3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '831'
 ht-degree: 3%
 
 ---
@@ -61,17 +61,17 @@ A Ferramenta de mapeamento de usuários é integrada à Ferramenta de transferê
 
    * **ID da organização**: digite a ID da organização da Adobe Identity Management System (IMS) da organização para a qual os usuários estão sendo migrados.
 
-      >[!NOTE]
-      >Para obter a ID da organização, faça logon na [Admin Console](https://adminconsole.adobe.com/) e escolha sua organização (na área superior direita) se pertencer a mais de uma. A ID da organização estará no URL dessa página, no formato como `xx@AdobeOrg`, em que xx é a ID organizacional IMS.  Como alternativa, você pode encontrar a ID da organização na [Console do Adobe Developer](https://console.adobe.io) página na qual você gera o token de acesso.
+     >[!NOTE]
+     >Para obter a ID da organização, faça logon na [Admin Console](https://adminconsole.adobe.com/) e escolha sua organização (na área superior direita) se pertencer a mais de uma. A ID da organização estará no URL dessa página, no formato como `xx@AdobeOrg`, em que xx é a ID organizacional IMS.  Como alternativa, você pode encontrar a ID da organização na [Console do Adobe Developer](https://console.adobe.io) página na qual você gera o token de acesso.
 
    * **ID do cliente**: digite a ID do cliente que você salvou na etapa de configuração.
 
    * **Token de acesso**: Insira o token de acesso salvo na etapa de Configuração.
 
-      >[!NOTE]
-      >O token de acesso expira a cada 24 horas e um novo precisa ser criado. Para criar um novo token, volte para [Console do Adobe Developer](https://console.adobe.io), escolha seu projeto, clique em **API de gerenciamento de usuários** e cole a mesma chave privada na caixa.
+     >[!NOTE]
+     >O token de acesso expira a cada 24 horas e um novo precisa ser criado. Para criar um novo token, volte para [Console do Adobe Developer](https://console.adobe.io)escolha seu projeto e clique em **API de gerenciamento de usuários** e cole a mesma chave privada na caixa.
 
-1. Depois de preencher os campos, clique em **Testar configuração** para testar a conexão com o serviço de API de gerenciamento de usuários. Se a conexão for bem-sucedida, você poderá clicar em **Salvar** para salvar a configuração.
+1. Depois de preencher os campos, clique em **Testar configuração** para testar a conexão com o serviço de API de gerenciamento de usuários. Se a conexão for bem-sucedida, você pode clicar em **Salvar** para salvar a configuração.
 
    ![imagem](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-access4.png)
 
@@ -88,13 +88,12 @@ A Ferramenta de mapeamento de usuários é integrada à Ferramenta de transferê
    ![imagem](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-start1.png)
 
 
-1. Quando o Mapeamento de usuário for concluído, clique em **Resultados** para exibir o resumo.
+1. Após a conclusão do Mapeamento de usuários, clique em **Resultados** para exibir o resumo.
 
    ![imagem](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-landing5.png)
 
    >[!IMPORTANT]
-   >* Quando o Mapeamento de usuários for concluído, você poderá navegar de volta para a página Migração de conteúdo usando a navegação estrutural. O cartão Mapeamento de usuário exibe o status e o carimbo de data e hora. Clique em **Transferência de conteúdo** para criar um Conjunto de migração para executar a extração. Consulte [Execução da ferramenta Transferência de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-tool) para obter mais detalhes.
-
+   >* Após a conclusão do Mapeamento de usuários, você pode navegar de volta para a página Migração de conteúdo usando a navegação estrutural. O cartão Mapeamento de usuário exibe o status e o carimbo de data e hora. Clique em **Transferência de conteúdo** para criar um Conjunto de migração para executar a extração. Consulte [Execução da ferramenta Transferência de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-tool) para obter mais detalhes.
 
 ### Retomando o Processo de Mapeamento de Usuário {#resume-user-mapping-process}
 
@@ -104,8 +103,8 @@ Se o processo de Mapeamento de usuário for interrompido devido a um dos seguint
 * o token de acesso expirou durante o processo ou
 * algum outro motivo
 
-   >[!NOTE]
-   >O progresso é salvo de onde o processo foi interrompido.
+  >[!NOTE]
+  >O progresso é salvo de onde o processo foi interrompido.
 
 Siga as etapas abaixo para retomar o processo de Mapeamento de Usuários:
 
@@ -113,7 +112,7 @@ Siga as etapas abaixo para retomar o processo de Mapeamento de Usuários:
 
    ![imagem](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping1.png)
 
-1. Clique no link **Iniciar mapeamento de usuário** botão novamente para retomar de onde parou.
+1. Clique em **Iniciar mapeamento de usuário** botão novamente para retomar de onde parou.
 
    >[!NOTE]
    >Antes de reiniciar, verifique se o token de acesso ainda é válido ou se foi atualizado.
@@ -124,6 +123,6 @@ Siga as etapas abaixo para retomar o processo de Mapeamento de Usuários:
 
    ![imagem](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
 
-   Quando o processo de mapeamento de usuários for concluído, você visualizará a **Status** as **CONCLUÍDO** para essa configuração específica.
+   Depois que o processo de Mapeamento de usuários for concluído, você poderá exibir a **Status** as **CONCLUÍDO** para essa configuração específica.
 
    ![imagem](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping4.png)

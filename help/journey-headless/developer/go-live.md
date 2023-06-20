@@ -2,10 +2,10 @@
 title: Como executar o aplicativo headless
 description: Nesta parte da Jornada do desenvolvedor headless do AEM, saiba como implantar um aplicativo headless, colocando seu código local no Git e movendo-o para o Git do Cloud Manager para o pipeline de CI/CD.
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
-source-git-commit: 270eb35023e34eed2cd17674372794c6c2cc7757
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1070'
-ht-degree: 100%
+source-wordcount: '1067'
+ht-degree: 96%
 
 ---
 
@@ -50,7 +50,7 @@ Para preparar o aplicativo headless do AEM para o lançamento, siga as práticas
    * Use consultas persistentes sempre que possível.
    * Forneça TTL CDN acima de 600 segundos para que a CDN armazene em cache.
    * O AEM pode calcular o impacto de uma alteração de modelo em consultas existentes.
-* Divida arquivos JSON/consultas GraphQL entre taxas de alteração de conteúdo baixas e altas para reduzir o tráfego de clientes para CDN e atribuir TTL maior. Isso minimiza a revalidação do CDN no JSON com o servidor de origem.
+* Divida arquivos JSON/consultas GraphQL entre taxa de alteração de conteúdo baixa e alta para que você possa reduzir o tráfego do cliente para CDN e atribuir um TTL mais alto. Isso minimiza a revalidação do CDN no JSON com o servidor de origem.
 * Para invalidar ativamente o conteúdo da CDN, use a limpeza suave. Isso permite que a CDN faça o download novamente do conteúdo sem causar a perda de um cache.
 
 ## Melhore o tempo de download de conteúdo headless {#improve-download-time}
@@ -101,7 +101,7 @@ Siga essas práticas recomendadas como uma abordagem geral para depurar:
 
 ### Registro de um erro com o suporte {#logging-a-bug-with-support}
 
-Para registrar um erro com o Suporte mais eficientemente, siga as etapas abaixo:
+Para registrar um erro com o Suporte do caso precise de mais ajuda, faça o seguinte:
 
 * Tire capturas de tela do problema, se necessário
 * Documente uma maneira de reproduzir o problema

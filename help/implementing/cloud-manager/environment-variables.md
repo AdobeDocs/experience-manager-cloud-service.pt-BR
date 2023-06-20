@@ -2,10 +2,10 @@
 title: Variáveis de ambiente do Cloud Manager
 description: As variáveis de ambiente padrão podem ser configuradas e gerenciadas por meio do Cloud Manager e fornecidas para o ambiente de tempo de execução, a ser usado na configuração do OSGi.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: 774a27e78abf091d96978911deea945ac35b7a44
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1021'
-ht-degree: 100%
+source-wordcount: '1016'
+ht-degree: 96%
 
 ---
 
@@ -34,7 +34,7 @@ Casos de uso típicos para as variáveis de ambiente incluem:
 
 >[!NOTE]
 >
->Você deve ser membro da função [**Gerente de implantação**](/help/onboarding/cloud-manager-introduction.md#role-based-premissions) para adicionar ou modificar variáveis de ambiente.
+>Você deve ser um membro do [**Gerente de implantação** função](/help/onboarding/cloud-manager-introduction.md#role-based-premissions) para adicionar ou modificar variáveis de ambiente.
 
 1. Faça logon no Adobe Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 1. O Cloud Manager lista os vários programas disponíveis. Selecione aquele que deseja gerenciar.
@@ -59,7 +59,7 @@ Casos de uso típicos para as variáveis de ambiente incluem:
 
 1. Selecione **Salvar** para manter suas variáveis.
 
-Um indicador com o status **Atualizando** é mostrado na parte superior da tabela e ao lado da variável recém-adicionada para indicar que o ambiente está sendo atualizado com a configuração. Uma vez concluída, a nova variável de ambiente ficará visível na tabela.
+Um indicador com o status **Atualizando** é mostrado na parte superior da tabela e ao lado da variável recém-adicionada para indicar que o ambiente está sendo atualizado com a configuração. Após a conclusão, a nova variável de ambiente fica visível na tabela.
 
 ![Atualização de variáveis](assets/updating-variables.png)
 
@@ -90,7 +90,7 @@ Depois de criar as variáveis de ambiente, você pode atualizá-las usando o bot
 
 1. Depois de fazer todas as alterações necessárias na configuração, selecione **Salvar**.
 
-[Como ocorre ao adicionar variáveis,](#add-variables) um indicador com o status **Atualização** é mostrado na parte superior da tabela e ao lado da variável recém-atualizada para indicar que o ambiente está sendo atualizado com a configuração. Uma vez concluída, as variáveis de ambiente atualizadas ficarão visíveis na tabela.
+[Como ocorre ao adicionar variáveis,](#add-variables) um indicador com o status **Atualização** é mostrado na parte superior da tabela e ao lado da variável recém-atualizada para indicar que o ambiente está sendo atualizado com a configuração. Após a conclusão, as variáveis de ambiente atualizadas ficam visíveis na tabela.
 
 >[!TIP]
 >

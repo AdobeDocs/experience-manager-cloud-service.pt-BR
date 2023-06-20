@@ -2,10 +2,10 @@
 title: Suporte IMS do Adobe Experience Manager as a Cloud Service
 description: Suporte IMS do Adobe Experience Manager as a Cloud Service
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: 1e3130578b7e36e5ffd5ad7b04cc7981a95bb291
-workflow-type: ht
-source-wordcount: '2054'
-ht-degree: 100%
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+workflow-type: tm+mt
+source-wordcount: '2035'
+ht-degree: 80%
 
 ---
 
@@ -31,14 +31,14 @@ O AEM as a Cloud Service oferece suporte à autenticação do IMS somente para o
 
 * O Admin Console representará clientes como Organizações de IMS, Instâncias de criação e publicação em um ambiente como Instâncias de contexto de produto. Isso permitirá que os administradores do Sistema e do Produto gerenciem o acesso às instâncias.
 * Os perfis de produto no Admin Console determinam quais instâncias um usuário pode acessar.
-* Os clientes poderão usar seus próprios Provedores de identidade compatíveis com SAML 2 (IDP) para Logon único.
-* Somente IDs Enterprise ou Federated para Logon único do cliente serão compatíveis, sem Adobe IDs pessoais.
+* Os clientes podem usar seus próprios Provedores de identidade compatíveis com SAML 2 (IDP) para Logon único.
+* Somente IDs Enterprise ou Federated para Logon único do cliente são compatíveis, sem IDs de Adobe pessoal.
 
 ## Arquitetura {#architecture}
 
 A autenticação do IMS funciona usando o protocolo OAuth entre o AEM e o terminal Adobe IMS. Depois que um usuário é adicionado ao IMS e tem uma Adobe Identity, ele pode fazer logon no serviço de criação do AEM usando as credenciais do IMS.
 
-O fluxo de logon do usuário é mostrado abaixo. O usuário será redirecionado para o IMS e, como opção, para o IDP do cliente para SSO e redirecionado para o AEM.
+O fluxo de logon do usuário é mostrado abaixo. O usuário é redirecionado para o IMS e, opcionalmente, para o IDP do cliente para SSO e redirecionado para AEM.
 
 ![Arquitetura do IMS](/help/security/assets/ims1.png)
 
@@ -50,7 +50,7 @@ A integração do cliente ao Adobe Admin Console é um pré-requisito para o uso
 
 Como primeira etapa, os clientes precisam ter uma Organização provisionada no Adobe IMS. Os clientes do Adobe Enterprise são representados como Organizações do IMS no [Adobe Admin Console](https://helpx.adobe.com/br/enterprise/using/admin-console.html). Este é o portal usado pelos clientes da Adobe para gerenciar os direitos de produto para usuários e grupos.
 
-Os clientes do AEM já devem ter uma Organização provisionada e, como parte do provisionamento do IMS, as instâncias do cliente serão disponibilizadas no Admin Console para gerenciar os direitos e o acesso do usuário.
+Os clientes do AEM já devem ter uma Organização provisionada e, como parte do provisionamento do IMS, as instâncias do cliente são disponibilizadas no Admin Console para gerenciar os direitos e o acesso do usuário.
 
 Depois que um cliente existir como uma Organização do IMS, ele precisará configurar o sistema conforme resumido abaixo:
 
@@ -59,7 +59,7 @@ Depois que um cliente existir como uma Organização do IMS, ele precisará conf
 1. O Administrador do sistema designado recebe um convite para fazer logon no Cloud Manager. Depois de fazer logon no Cloud Manager, os administradores do sistema podem optar por provisionar programas e ambientes do AEM ou navegar até o Admin Console para tarefas Administrativas.
 1. O Administrador do sistema alega que um domínio confirma a propriedade do respectivo domínio (por exemplo, acme.com).
 1. O Administrador do sistema configura os Diretórios de usuário.
-1. O Administrador do sistema faz a configuração do IDP no Admin Console para definir o Logon único.
+1. O Administrador do sistema faz a configuração do IDP no Admin Console para configurar o Logon único.
 1. O Administrador do AEM gerencia os grupos locais, permissões e privilégios, como de costume.
 
 As noções básicas do Adobe Identity Management, incluindo a configuração do IDP, são contempladas [aqui](https://helpx.adobe.com/br/enterprise/using/set-up-identity.html).
@@ -84,9 +84,9 @@ Para facilitar a criação de usuários, um arquivo `.csv` pode ser carregado pa
 
 **Ferramenta de sincronização de usuários**
 
-A Ferramenta de sincronização de usuários (UST, User Sync Tool) permite que nossos clientes corporativos criem e gerenciem usuários da Adobe que utilizam o Diretório ativo. Também funciona para outros serviços de diretório OpenLDAP testados. Os usuários de destino são Administradores de identidade de TI (Diretório corporativo ou Administradores do sistema) que poderão instalar e configurar a ferramenta. A ferramenta de código aberto pode ser personalizada para que os clientes possam modificá-la de acordo com seus próprios requisitos específicos.
+A Ferramenta de sincronização de usuários (UST, User Sync Tool) permite que nossos clientes corporativos criem e gerenciem usuários da Adobe que utilizam o Diretório ativo. Também funciona para outros serviços de diretório OpenLDAP testados. Os usuários de destino são Administradores de identidade de TI (Diretório corporativo ou Administradores do sistema) que podem instalar e configurar a ferramenta. A ferramenta de código aberto pode ser personalizada para que os clientes possam modificá-la de acordo com seus próprios requisitos específicos.
 
-Quando a Sincronização de usuários é executada, ela obtém uma lista de usuários do Diretório ativo da organização e a compara com a lista de usuários no Admin Console.  Em seguida, chama a API de gerenciamento de usuários da Adobe para que o Admin Console seja sincronizado com o diretório da organização. O fluxo de mudanças é totalmente unidirecional. As edições realizadas no Admin Console não são enviadas para o diretório.
+Quando a Sincronização de usuários é executada, ela obtém uma lista de usuários do Ative Diretory da organização e a compara com a lista de usuários no Admin Console.  Em seguida, ele chama a API de gerenciamento de usuários do Adobe para que o Admin Console seja sincronizado com o diretório da organização. O fluxo de mudanças é totalmente unidirecional. As edições realizadas no Admin Console não são enviadas para o diretório.
 
 A ferramenta permite que o administrador do sistema mapeie grupos de usuários no diretório do cliente com a configuração do produto e grupos de usuários no Admin Console.
 
@@ -118,13 +118,13 @@ A API de gerenciamento de usuários usada pela Ferramenta de sincronização de 
 
 >[!NOTE]
 >
->A configuração do AEM IMS necessária será configurada automaticamente quando os ambientes e as instâncias do AEM forem provisionados. No entanto, o administrador pode modificá-la de acordo com seus requisitos, usando o método descrito [aqui](/help/implementing/deploying/overview.md).
+>A configuração IMS do AEM necessária é configurada automaticamente quando os ambientes e as instâncias do AEM são provisionados. No entanto, o administrador pode modificá-la de acordo com seus requisitos, usando o método descrito [aqui](/help/implementing/deploying/overview.md).
 
-A configuração do AEM IMS necessária será configurada automaticamente quando os ambientes e as instâncias do AEM forem provisionados.  Os administradores do cliente podem modificar parte da configuração de acordo com seus requisitos
+A configuração IMS do AEM necessária é configurada automaticamente quando os ambientes e as instâncias do AEM são provisionados.  Os administradores do cliente podem modificar parte da configuração de acordo com seus requisitos
 
 A abordagem geral é configurar o Adobe IMS como provedor OAuth. O **Apache Jackrabbit Oak Default Sync Handler** pode ser modificado da mesma forma que na sincronização de LDAP.
 
-Estas são as principais configurações de OSGI que precisam ser modificadas para alterar propriedades como Associação automática do usuário ou Mapeamentos de grupos.
+Abaixo estão as principais configurações de OSGI que precisam ser modificadas para alterar propriedades como Associação automática do usuário ou Mapeamentos de grupos.
 
 <!-- Arun to provide list of osgi configs -->
 
@@ -140,11 +140,11 @@ Você verá uma lista de instâncias existentes:
 
 ![Logon de instâncias 2](/help/security/assets/ims7.png)
 
-Em cada instância de Contexto do Produto, haverá instâncias que abrangem os serviços de Autor ou Publicação em todos os ambientes de Produção, Preparo ou Desenvolvimento. Cada instância será associada às funções Perfis de produto ou Cloud Manager. Esses perfis de produto são usados para atribuir acesso a usuários e grupos com os privilégios necessário.
+Em cada instância do Contexto do Produto, há instâncias que abrangem os serviços de Autor ou Publicação em todos os ambientes de Produção, Preparo ou Desenvolvimento. Cada instância está associada às funções Perfis de produto ou Cloud Manager. Esses perfis de produto são usados para atribuir acesso a usuários e grupos com os privilégios necessário.
 
-O perfil **Administradores_xxx do AEM** será usado para conceder privilégios de Administrador na instância do AEM associada, enquanto o perfil **Usuários_xxx do AEM** é usado para adicionar usuários regulares.
+A variável **Administradores do AEM_xxx** perfil é usado para conceder privilégios de Administrador na instância AEM associada, enquanto o **Usuários AEM_xxx** perfil é usado para adicionar usuários regulares.
 
-Os usuários e grupos adicionados nesse perfil de produto poderão fazer logon nessa instância específica, como mostra o exemplo abaixo:
+Todos os usuários e grupos adicionados nesse perfil de produto podem fazer logon nessa instância específica, como mostra o exemplo abaixo:
 
 ![Perfil de produto](/help/security/assets/ims8.png)
 
@@ -179,11 +179,11 @@ Eles serão redirecionados para a tela de logon do IMS e precisarão digitar as 
 
 ![Logon do IMS 3](/help/security/assets/ims12.png)
 
-Se um IDP federado for configurado durante a instalação inicial do Admin Console, o usuário será redirecionado ao IDP do cliente para SSO:
+Se um IDP federado for configurado durante a configuração inicial do Admin Console, o usuário será redirecionado ao IDP do cliente para SSO:
 
 ![Logon do IMS 4](/help/security/assets/ims13.png)
 
-Após a conclusão da autenticação, o usuário será redirecionado de volta para o AEM e conectado:
+Após a conclusão da autenticação, o usuário é redirecionado de volta ao AEM e conectado:
 
 ![Logon do IMS 5](/help/security/assets/ims14.png)
 

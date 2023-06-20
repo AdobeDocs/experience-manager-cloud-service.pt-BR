@@ -2,10 +2,10 @@
 title: Fragmentos de conteúdo - Excluir considerações (Ativos - Fragmentos de conteúdo)
 description: Analise essas considerações importantes antes de definir as políticas de exclusão de fragmentos de conteúdo no AEM. Os fragmentos de conteúdo são uma ferramenta eficiente para fornecer conteúdo headless, e as implicações de excluí-los devem ser cuidadosamente consideradas.
 exl-id: 69c08f2f-4d51-4aea-957e-ee81c4604377
-source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '473'
-ht-degree: 98%
+source-wordcount: '472'
+ht-degree: 94%
 
 ---
 
@@ -49,7 +49,7 @@ Por exemplo, ao manipular variações; também ao editar metadados ou gerenciar 
 >
 >As permissões de exclusão, necessárias para editar/atualizar um fragmento de conteúdo, estão incluídas na permissão de exclusão atribuída por meio do gerenciamento de usuários e/ou grupos. <!-- The delete permissions, required to edit/update a Content Fragment, are included in the Delete permission [assigned through User and/or Group Management](/help/sites-administering/security.md#managing-permissions). -->
 
-As permissões necessárias para editar/atualizar um fragmento precisam ser aplicadas ao nó que contém o fragmento de conteúdo ou a um nó principal apropriado (em qualquer nível no `/content/dam`). Quando atribuídas a esse nó principal, as permissões serão aplicadas a todos os nós dentro dessa ramificação.
+As permissões necessárias para editar/atualizar um fragmento precisam ser aplicadas ao nó que contém o fragmento de conteúdo ou a um nó principal apropriado (em qualquer nível no `/content/dam`). Quando atribuídas a esse nó principal, as permissões são aplicadas a todos os nós dentro dessa ramificação.
 
 Por exemplo, uma pasta que manterá todos os fragmentos de conteúdo, como:
 

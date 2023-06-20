@@ -3,10 +3,10 @@ title: Configurar pipelines de não produção
 description: Saiba como configurar pipelines de não produção para testar a qualidade do código antes de implantar em ambientes de produção.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: 5b4366c1e8791ffca4b5ad47f94de44f6df2cd0b
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1369'
-ht-degree: 100%
+source-wordcount: '1362'
+ht-degree: 94%
 
 ---
 
@@ -55,7 +55,7 @@ Depois de configurar seu programa e ter pelo menos um ambiente usando a interfac
 1. Se optar por criar um **Pipeline de implantação**, você também precisará definir a variável **Comportamento de falhas de métricas importantes**.
 
    * **Sempre perguntar** - Essa é a configuração padrão e requer intervenção manual em qualquer falha importante.
-   * **Falhar imediatamente** - Se selecionado, o pipeline será cancelado sempre que ocorrer uma falha importante. É como emular um usuário que rejeita manualmente cada falha.
+   * **Falha imediata** - Se selecionado, o pipeline será cancelado sempre que ocorrer uma falha importante. É como emular um usuário que rejeita manualmente cada falha.
    * **Continuar imediatamente** - Se selecionado, o pipeline continuará automaticamente sempre que ocorrer uma falha importante. É como emular um usuário que aprova manualmente cada falha.
 
 1. Clique em **Continuar**.
@@ -166,7 +166,7 @@ O pipeline é salvo e agora você pode [gerenciar seus pipelines](managing-pipel
 
 Com os pipelines de front-end, é dada mais independência aos desenvolvedores de front-end e o processo de desenvolvimento pode ser acelerado.
 
-Consulte o documento [Desenvolvimento de Sites com o pipeline de front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) para saber como esse processo funciona, além de algumas considerações a serem feitas a fim de aproveitar ao máximo o potencial desse processo.
+Consulte o documento [Desenvolvimento de sites com o pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) para saber como esse processo funciona, além de algumas considerações a serem feitas para aproveitar ao máximo o potencial desse processo.
 
 ## Ignorar pacotes do Dispatcher {#skip-dispatcher-packages}
 

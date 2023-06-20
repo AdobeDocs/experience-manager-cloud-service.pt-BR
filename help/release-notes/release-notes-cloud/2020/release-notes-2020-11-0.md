@@ -2,10 +2,10 @@
 title: Notas de versão do [!DNL Adobe Experience Manager]  as a Cloud Service 2020.11.0.
 description: "[!DNL Adobe Experience Manager] Notas de versão as a Cloud Service para 2020.11.0."
 exl-id: 8066c0fb-c2f5-4625-9448-b0c74ff4e192
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1265'
-ht-degree: 19%
+source-wordcount: '1264'
+ht-degree: 18%
 
 ---
 
@@ -32,15 +32,15 @@ A versão seguinte (2020.12.0) será lançada em 17 de dezembro de 2020
 
 ### Novidades do [!DNL Assets] e [!DNL Dynamic Media] {#what-is-new-assets}
 
-* **Assimilação de ativos em massa**: forneça aos clientes um serviço de assimilação escalável e nativo em nuvem que aproveite [!DNL Experience Manager] Arquitetura as a Cloud Service, incluindo microsserviços de ativos. Os principais casos de uso incluem assimilação em escala com monitoramento, relatórios e agendamento, permitindo a transferência inicial de ativos para armazenamentos de dados em nuvem usando ferramentas comuns de upload em nuvem. Consulte [ferramenta de entrada de ativos em massa](/help/assets/add-assets.md#asset-bulk-ingestor).
+* **Assimilação de ativos em massa**: forneça aos clientes um serviço de assimilação escalável e nativo em nuvem que usa o [!DNL Experience Manager] Arquitetura as a Cloud Service, incluindo microsserviços de ativos. Os principais casos de uso incluem assimilação em escala com monitoramento, relatórios e agendamento, permitindo a transferência inicial de ativos para armazenamentos de dados em nuvem usando ferramentas comuns de upload em nuvem. Consulte [ferramenta de entrada de ativos em massa](/help/assets/add-assets.md#asset-bulk-ingestor).
 
-   Essa ferramenta é para personas de administrador do sistema, consultor ou parceiro de implementação. Esse recurso permite a assimilação em grande escala e é idealmente usado durante a assimilação inicial ou assimilação grande ocasional. Para tarefas de assimilação menores, use o [[!DNL Experience Manager] aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=en) ou [fazer upload usando a interface do Assets](/help/assets/add-assets.md#upload-assets).
+  Essa ferramenta é para personas de administrador do sistema, consultor ou parceiro de implementação. Esse recurso permite a assimilação em grande escala e é idealmente usado durante a assimilação inicial ou assimilação grande ocasional. Para tarefas de assimilação menores, use o [[!DNL Experience Manager] aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=en) ou [fazer upload usando a interface do Assets](/help/assets/add-assets.md#upload-assets).
 
-   ![Configuração do importador em massa](/help/assets/assets/bulk-import-config-low-res.png)
+  ![Configuração do importador em massa](/help/assets/assets/bulk-import-config-low-res.png)
 
 * Agora os usuários podem classificar os ativos digitais nas exibições de Cartão e Coluna.
 
-   ![classificar ativos](/help/assets/assets/asset-sort-options.png)
+  ![classificar ativos](/help/assets/assets/asset-sort-options.png)
 
 * Os seguintes aprimoramentos são feitos para acessibilidade no [!DNL Experience Manager Assets] nesta versão. Para obter mais informações, consulte [recursos de acessibilidade no [!DNL Assets]](/help/assets/accessibility.md).
 
@@ -54,7 +54,7 @@ A versão seguinte (2020.12.0) será lançada em 17 de dezembro de 2020
 
 * **Predefinições de conjunto de lotes no Dynamic Media**: agora é possível automatizar a criação e a organização de vários ativos em um conjunto de imagens ou em um conjunto de rotação no momento em que você faz upload de arquivos de ativos para uma pasta individualmente ou usando a assimilação em massa.
 
-   Consulte [Sobre predefinições de conjunto de lotes](/help/assets/dynamic-media/batch-set-presets-dm.md).
+  Consulte [Sobre predefinições de conjunto de lotes](/help/assets/dynamic-media/batch-set-presets-dm.md).
 
 * Os seguintes aprimoramentos de acessibilidade estão disponíveis no [!DNL Dynamic Media]:
 
@@ -67,7 +67,7 @@ A versão seguinte (2020.12.0) será lançada em 17 de dezembro de 2020
    * Os usuários de teclado e leitor de tela podem usar a funcionalidade de corte.
    * Os usuários de teclado podem gerenciar melhor os pontos de conexão.
 
-   Consulte [Acessibilidade em [!DNL Dynamic Media]](/help/assets/dynamic-media/accessibility-dm.md).
+  Consulte [Acessibilidade em [!DNL Dynamic Media]](/help/assets/dynamic-media/accessibility-dm.md).
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -99,7 +99,7 @@ Consulte [Gerenciamento de ambientes](/help/implementing/cloud-manager/manage-en
 * O carregamento de dependências realizado antes da execução da compilação exigia o download de um plug-in Maven.
 * O link do rodapé do Cloud Manager para selecionar um idioma agora direcionará para o local correto.
 * Às vezes, durante a verificação do código, o processo SonarQube não era iniciado. O processo agora será detectado automaticamente e haverá uma tentativa de reinicialização.
-* Todos os pipelines de produção existentes serão habilitados automaticamente na etapa Auditoria de experiência.
+* Todos os pipelines de produção existentes são habilitados automaticamente na etapa Auditoria de experiência.
 
 ## Adobe Experience Manager as a Cloud Service Foundation {#cloud-service-foundation}
 

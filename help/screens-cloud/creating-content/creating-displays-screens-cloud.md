@@ -2,9 +2,9 @@
 title: Criação e gerenciamento de exibições no Screens as a Cloud Service
 description: Esta página descreve como criar e gerenciar exibições no Screens as a Cloud Service.
 exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
-source-git-commit: 9e0ab778e97658bc8d7669b1f582f3bcddd47915
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '663'
 ht-degree: 3%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 Depois de publicar seu canal, agora é hora de criar sua exibição no Provedor de serviços do Screens.
 
-Uma Exibição é um agrupamento virtual de telas que geralmente são posicionadas uma ao lado da outra. O visor é geralmente permanente em relação a uma instalação. Esse será o objeto com o qual os autores de conteúdo trabalharão e sempre se referirão como exibição lógica em vez de suas contrapartes físicas.
+Uma Exibição é um agrupamento virtual de telas que geralmente são posicionadas uma ao lado da outra. O visor é geralmente permanente em relação a uma instalação. Esse conteúdo de objeto é com o que os autores trabalham e sempre se referem como exibição lógica em vez de suas contrapartes físicas.
 
 ## Objetivo {#objective}
 

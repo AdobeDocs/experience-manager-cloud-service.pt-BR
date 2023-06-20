@@ -2,16 +2,16 @@
 title: Guia de referência de componentes
 description: Um guia de referência do desenvolvedor para os detalhes dos componentes e sua estrutura
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: 36d42ec1a273e4b910340ca0cd15ac6ffc57454e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3659'
+source-wordcount: '3649'
 ht-degree: 2%
 
 ---
 
 # Guia de referência de componentes {#components-reference-guide}
 
-Os componentes são o núcleo da criação de uma experiência no AEM. A variável [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) e a variável [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR) simplificar a introdução a um conjunto de ferramentas de componentes robustos e prontos. A variável [Tutorial do WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) orienta o desenvolvedor sobre como usar essas ferramentas e como criar componentes personalizados para criar um novo site de AEM.
+Os componentes são o núcleo da criação de uma experiência no AEM. A variável [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) e a variável [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR) simplificar a introdução a um conjunto de ferramentas de componentes robustos e prontos. A variável [Tutorial do WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) orienta o desenvolvedor sobre como usar essas ferramentas e como criar componentes personalizados para criar um site de AEM.
 
 >[!TIP]
 >
@@ -55,7 +55,7 @@ Isso significa que você só precisa redefinir as diferenças necessárias, em v
 
 ### Lógica de conteúdo e marcação de renderização  {#content-logic-and-rendering-markup}
 
-Seu componente será renderizado com [HTML.](https://www.w3schools.com/htmL/html_intro.asp) Seu componente precisa definir o HTML necessário para obter o conteúdo necessário e, em seguida, renderizá-lo conforme necessário nos ambientes do autor e de publicação.
+Seu componente é renderizado com [HTML](https://www.w3schools.com/htmL/html_intro.asp). Seu componente precisa definir o HTML necessário para obter o conteúdo necessário e, em seguida, renderizá-lo conforme necessário nos ambientes do autor e de publicação.
 
 É recomendável manter o código responsável pela marcação e renderização separado do código que controla a lógica usada para selecionar o conteúdo do componente.
 
@@ -108,7 +108,7 @@ A definição de um componente pode ser dividida da seguinte forma:
    * Consulte a seção [Ícone do componente](#component-icon) para obter detalhes
 * **Nós-filhos vitais**:
    * `cq:editConfig (cq:EditConfig)` - Define as propriedades de edição do componente e permite que o componente seja exibido no Navegador de componentes
-      * Se o componente tiver uma caixa de diálogo, ele aparecerá automaticamente no navegador Componentes ou no Sidekick, mesmo se cq:editConfig não existir.
+      * Se o componente tiver uma caixa de diálogo, ele será exibido automaticamente no navegador de Componentes ou Sidekick, mesmo se cq:editConfig não existir.
    * `cq:childEditConfig (cq:EditConfig)` - Controla os aspectos da interface do usuário do autor para componentes secundários que não definem seus próprios `cq:editConfig`.
    * `cq:dialog (nt:unstructured)` - Caixa de diálogo para este componente. Define a interface que permite ao usuário configurar o componente e/ou editar conteúdo.
    * `cq:design_dialog (nt:unstructured)` - Edição de design para este componente
@@ -123,11 +123,11 @@ O ícone ou a abreviação do componente é definido por meio das propriedades J
    * A abreviação deve ser limitada a dois caracteres.
    * O fornecimento de uma cadeia de caracteres vazia criará a abreviação dos dois primeiros caracteres do `jcr:title` propriedade.
       * Por exemplo &quot;Im&quot; para &quot;Image&quot;
-      * O título localizado será usado para criar a abreviação.
+      * O título localizado é usado para criar a abreviação.
    * A abreviação só é traduzida se o componente tiver uma `abbreviation_commentI18n` que é usada como dica de tradução.
 1. `cq:icon.png` ou `cq:icon.svg` - Ícone para este componente, que é mostrado no Navegador de componentes
    * 20 x 20 pixels é o tamanho dos ícones dos componentes padrão.
-      * Ícones maiores serão reduzidos (lado do cliente).
+      * Ícones maiores são reduzidos (lado do cliente).
    * A cor recomendada é rgb(112, 112, 112) > #707070
    * O plano de fundo dos ícones de componente padrão é transparente.
    * Somente `.png` e `.svg` arquivos são suportados.
@@ -173,7 +173,7 @@ Um componente é um nó do tipo `cq:Component` e tem as seguintes propriedades e
 | `cq:editConfig` | `cq:EditConfig` | Isso define o [editar configuração do componente.](#edit-behavior) |
 | `cq:htmlTag` | `nt:unstructured` | Isso retorna atributos de tag adicionais que são adicionados à tag HTML ao redor. Permite a adição de atributos aos divs gerados automaticamente. |
 | `cq:noDecoration` | `Boolean` | Se true, o componente não será renderizado com as classes div e css geradas automaticamente. |
-| `cq:template` | `nt:unstructured` | Se encontrado, esse nó será usado como um modelo de conteúdo quando o componente for adicionado do Navegador de componentes. |
+| `cq:template` | `nt:unstructured` | Se encontrado, esse nó será usado como um template de conteúdo quando o componente for adicionado do Navegador de componentes. |
 | `jcr:created` | `Date` | Esta é a data de criação do componente. |
 | `jcr:description` | `String` | Esta é a descrição do componente. |
 | `jcr:title` | `String` | Este é o título do componente. |
@@ -272,7 +272,7 @@ Também é possível usar as condições de renderização (`rendercondition`) p
 
 ## Uso de componentes {#using-components}
 
-Depois de criar um componente, é necessário ativá-lo para usá-lo. Seu uso mostra como a estrutura do componente está relacionada à estrutura do conteúdo resultante no repositório.
+Depois de criar um componente, você deve ativá-lo para usá-lo. Seu uso mostra como a estrutura do componente está relacionada à estrutura do conteúdo resultante no repositório.
 
 ### Adicionar o componente ao modelo {#adding-your-component-to-the-template}
 
@@ -415,7 +415,6 @@ A variável `cq:listeners` nó (tipo de nó `cq:EditListenersConfig`) define o q
 >
 >* `aftermove`
 >* `aftercopy`
-
 
 O manipulador de eventos pode ser implementado com uma implementação personalizada. Por exemplo (onde `project.customerAction` é um método estático):
 

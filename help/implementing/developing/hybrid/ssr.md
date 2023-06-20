@@ -2,9 +2,9 @@
 title: Renderização do SPA e do servidor
 description: Usar a renderização do lado do servidor (SSR) no seu SPA pode acelerar o carregamento inicial da página e, em seguida, passar a renderização adicional para o cliente.
 exl-id: be409559-c7ce-4bc2-87cf-77132d7c2da1
-source-git-commit: a9eb03d4db478a4db8e6d2436bd06dcde70a3eeb
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1512'
+source-wordcount: '1498'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ Os seguintes campos estão disponíveis para a configuração:
 
 >[!NOTE]
 >
->Essa configuração utiliza o [Renderizador remoto de conteúdo,](#remote-content-renderer) que tem opções adicionais de extensão e personalização disponíveis.
+>Essa configuração usa o [Renderizador remoto de conteúdo,](#remote-content-renderer) que tem opções adicionais de extensão e personalização disponíveis.
 
 ## Fluxo de comunicação orientado por AEM {#aem-driven-communication-flow}
 
@@ -130,15 +130,15 @@ Ambos os modelos são válidos e suportados pelo AEM. No entanto, deve-se consid
 
 ## Planejamento para SSR {#planning-for-ssr}
 
-Geralmente, apenas parte de um aplicativo precisa ser renderizada no lado do servidor. O exemplo comum é o conteúdo que será exibido acima da dobra no carregamento inicial da página e renderizado no lado do servidor. Isso economiza tempo fornecendo ao cliente conteúdo já renderizado. Conforme o usuário interage com o SPA, o conteúdo adicional é renderizado pelo cliente.
+Geralmente, somente parte de um aplicativo precisa ser renderizada no lado do servidor. O exemplo comum é o conteúdo exibido acima da dobra no carregamento inicial da página que é renderizado no lado do servidor. Isso economiza tempo fornecendo ao cliente conteúdo já renderizado. Conforme o usuário interage com o SPA, o conteúdo adicional é renderizado pelo cliente.
 
-Ao considerar implementar a renderização no lado do servidor para o seu SPA, é necessário analisar quais partes do aplicativo serão necessárias.
+Ao considerar implementar a renderização no lado do servidor para o seu SPA, é necessário analisar quais partes do aplicativo são necessárias.
 
 ## Desenvolvimento de um SPA usando SSR {#developing-an-spa-using-ssr}
 
-Os componentes do SPA podem ser renderizados pelo cliente (no navegador) ou pelo servidor. Quando renderizadas no lado do servidor, as propriedades do navegador, como tamanho e localização da janela, não estão presentes. Portanto, os componentes SPA devem ser isomorfos, não fazendo suposições sobre onde serão renderizados.
+Os componentes do SPA podem ser renderizados pelo cliente (no navegador) ou pelo servidor. Quando renderizadas no lado do servidor, as propriedades do navegador, como tamanho e localização da janela, não estão presentes. Portanto, os componentes do SPA devem ser isomorfos, não fazendo suposições sobre onde são renderizados.
 
-Para usar o SSR, será necessário implantar seu código no AEM, bem como no Adobe I/O Runtime, que é responsável pela renderização no lado do servidor. A maioria do código será o mesmo, no entanto, as tarefas específicas do servidor serão diferentes.
+Para usar o SSR, você deve implantar seu código no AEM e no Adobe I/O Runtime, que é responsável pela renderização no lado do servidor. A maioria do código é o mesmo, no entanto, as tarefas específicas do servidor diferem.
 
 ## RSS para AEM no SPA {#ssr-for-spas-in-aem}
 
@@ -160,7 +160,7 @@ Este serviço é usado internamente pelo [ServletManipuladordeSolicitaçãodeRen
 
 ### ServletManipuladordeSolicitaçãodeRenderizadorDeConteúdoRemoto {#remotecontentrendererrequesthandlerservlet}
 
-A variável `RemoteContentRendererRequestHandlerServlet` pode ser usado para definir programaticamente a configuração da solicitação. `DefaultRemoteContentRendererRequestHandlerImpl`, a implementação do manipulador de solicitações padrão fornecida, permite criar várias configurações de OSGi para mapear um local na estrutura de conteúdo para um endpoint remoto.
+A variável `RemoteContentRendererRequestHandlerServlet` pode ser usado para definir programaticamente a configuração da solicitação. `DefaultRemoteContentRendererRequestHandlerImpl`, a implementação do manipulador de solicitações padrão fornecida, permite criar várias configurações de OSGi para que você possa mapear um local na estrutura de conteúdo para um endpoint remoto.
 
 Para adicionar um Manipulador de solicitação personalizado, implemente o `RemoteContentRendererRequestHandler` interface. Certifique-se de definir a variável `Constants.SERVICE_RANKING` propriedade de componente a um inteiro maior que 100, que é a classificação da variável `DefaultRemoteContentRendererRequestHandlerImpl`.
 

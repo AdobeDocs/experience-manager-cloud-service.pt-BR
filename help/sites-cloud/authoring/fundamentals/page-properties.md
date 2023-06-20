@@ -2,10 +2,10 @@
 title: Editar as propriedades da página
 description: Definir as propriedades obrigatórias de uma página
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 5a43b6db8a5743b87d6eafdad31418e6cb45d22b
-workflow-type: ht
-source-wordcount: '2363'
-ht-degree: 100%
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+workflow-type: tm+mt
+source-wordcount: '2357'
+ht-degree: 95%
 
 ---
 
@@ -35,7 +35,7 @@ As propriedades são distribuídas por várias guias.
 
 * **Marcas**
 
-   Aplique uma identidade de marca consistente em todas as páginas, anexando uma descrição da marca a cada título de página. Essa funcionalidade requer o uso do Componente de página da versão 2.14.0 ou posterior do [Componentes principais.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)
+  Aplique uma identidade de marca consistente em todas as páginas, anexando uma descrição da marca a cada título de página. Essa funcionalidade requer o uso do Componente de página da versão 2.14.0 ou posterior do [Componentes principais.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)
 
    * **Descrição da marca**
 
@@ -57,42 +57,40 @@ As propriedades são distribuídas por várias guias.
 
 * **Horário ligado/desligado**
 
-   >[!NOTE]
-   >
-   > Consulte [Momento da ativação e da desativação - Configuração do acionador](/help/operations/replication.md#on-and-off-times-trigger-configuration) para obter detalhes sobre como configurar a replicação automática relacionada.
+  >[!NOTE]
+  >
+  > Consulte [Momento da ativação e da desativação - Configuração do acionador](/help/operations/replication.md#on-and-off-times-trigger-configuration) para obter detalhes sobre como configurar a replicação automática relacionada.
 
-   >[!NOTE]
-   >Se tanto o **Momento da ativação** quanto o **Momento da desativação** estiverem no passado e a replicação automática estiver configurada, a ação relevante será acionada imediatamente.
+  >[!NOTE]
+  >Se tanto o **Momento da ativação** quanto o **Momento da desativação** estiverem no passado e a replicação automática estiver configurada, a ação relevante será acionada imediatamente.
 
    * **Momento da ativação** - a data e a hora em que a página publicada ficará visível (renderizada) no ambiente de publicação. A página deve ser publicada manualmente ou por replicação automática pré-configurada.
 
       * Se já [publicada (manualmente)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) essa página será mantida inativa (oculta) até a renderização no horário especificado.
       * Se não for publicada e configurada para replicação automática, a página será publicada automaticamente e, em seguida, renderizada no horário especificado.
       * Se não for publicada e não estiver configurada para replicação automática, a página não será publicada automaticamente. Um 404 será exibido quando for feita uma tentativa de acessar a página.
+
    * **Momento de desligar** - semelhante a e frequentemente utilizado em combinação com **Momento de ligar**, define o momento em que a página publicada será oculta no ambiente de publicação.
 
    * Deixe esses campos (**Momento de ligar** e **Hora de desligar**) vazios para páginas que deseja publicar imediatamente e que estão disponíveis no ambiente de publicação até que sejam desativadas (o cenário normal).
-
 
 * **URL personalizada**
 
    * Permite inserir uma URL personalizada para esta página, o que permite utilizar uma URL mais curta e/ou expressiva.
    * Por exemplo, se o URL personalizado estiver definido como `welcome` para a página identificada pelo caminho`/v1.0/startpage` para o site `http://example.com`, em seguida, `http://example.com/welcome`será o URL personalizado de `http://example.com/content/v1.0/startpage`
 
-   >[!CAUTION]
-   >
-   >URLs personalizadas:
-   >
-   >* Ela deve ser exclusiva, portanto, é necessário verificar se o valor já não está sendo usado por outra página.
-   >* Não é compatível com padrões de regex.
-   >* Não deve ser definido como uma página existente.
-
+  >[!CAUTION]
+  >
+  >URLs personalizadas:
+  >
+  >* Ela deve ser exclusiva, portanto, é necessário verificar se o valor já não está sendo usado por outra página.
+  >* Não é compatível com padrões de regex.
+  >* Não deve ser definido como uma página existente.
 
    * **Adicionar** - toque ou clique para mostrar um campo e definir uma URL personalizada para a página.
       * Toque ou clique novamente para adicionar vários.
       * Toque ou clique no ícone **Remover** para excluir o URL personalizado.
    * **Redirecionar URL personalizado** - indica se você deseja que a página use o URL personalizado.
-
 
 ### Avançado  {#advanced}
 
@@ -123,9 +121,9 @@ As propriedades são distribuídas por várias guias.
 
    * **Habilitar** - habilitar o uso de autenticação para acessar a página
 
-      >[!NOTE]
-      >
-      >Os grupos de usuários fechados para a página são definidos na guia **[Permissões](#permissions)**.
+     >[!NOTE]
+     >
+     >Os grupos de usuários fechados para a página são definidos na guia **[Permissões](#permissions)**.
 
    * **Página de logon** - a página a ser usada para logon
 
@@ -139,9 +137,9 @@ As propriedades são distribuídas por várias guias.
 
    * **Tags de robôs**: seleciona as tags de robôs para controlar o comportamento dos rastreadores de mecanismos de pesquisa.
 
-      >[!NOTE]
-      >
-      >Algumas das opções entram em conflito entre si. Em caso de conflito, a opção mais permissiva tem prioridade.
+     >[!NOTE]
+     >
+     >Algumas das opções entram em conflito entre si. Em caso de conflito, a opção mais permissiva tem prioridade.
 
    * **Gerar mapa do site**: quando selecionado, um arquivo sitemap.xml será gerado para esta página e suas descendentes
 
@@ -149,11 +147,11 @@ As propriedades são distribuídas por várias guias.
 
 * **Imagem em destaque**
 
-   Selecione e configure a imagem a ser colocada em destaque. Isso é usado em componentes que fazem referência à página; por exemplo, teasers, listas de páginas etc.
+  Selecione e configure a imagem a ser colocada em destaque. Isso é usado em componentes que fazem referência à página; por exemplo, teasers, listas de páginas etc.
 
    * **Imagem**
 
-      Você pode **Selecionar** um ativo ou procurar um arquivo para fazer upload e, em seguida, **Editar** ou **Limpar**.
+     Você pode **Selecionar** um ativo ou procurar um arquivo para fazer upload e, em seguida, **Editar** ou **Limpar**.
 
    * **Texto alternativo**: um texto utilizado para representar o significado e/ou a função da imagem; por exemplo, para ser usado por leitores de tela.
 
@@ -161,7 +159,7 @@ As propriedades são distribuídas por várias guias.
 
 * **Miniatura**
 
-   Configurar a miniatura de página
+  Configurar a miniatura de página
 
    * **Gerar visualização** - gere uma visualização da página para usar como miniatura
    * **Fazer upload da imagem** - faça upload de uma imagem para usar como miniatura
@@ -184,8 +182,9 @@ As propriedades são distribuídas por várias guias.
 * **Configuração de direcionamento**
 
    * **Marca** - defina uma [Marca para especificar um escopo para Direcionamento](/help/sites-cloud/authoring/personalization/targeted-content.md).
-   >[!NOTE]
-   >Para selecionar essa opção, é necessário que a conta de usuário esteja no `Target Administrators`grupo.
+
+  >[!NOTE]
+  >Para selecionar essa opção, é necessário que a conta de usuário esteja no `Target Administrators`grupo.
 
 ### Permissões  {#permissions}
 
@@ -201,7 +200,7 @@ Essa guia só fica visível para páginas que servem como blueprints. Os bluepri
 
 * **Live Copies atuais** - lista páginas que são baseadas nesta (ou seja, são Live Copies da) página do blueprint
 
-* **Configurações de implantação** - controla as circunstâncias sob as quais as modificações serão propagadas no Live Copy
+* **Configurações de implantação** - Controla as circunstâncias sob as quais as modificações são propagadas no Live Copy
 
 ### Live Copy  {#live-copy}
 
@@ -224,7 +223,7 @@ Essa guia só fica visível para páginas configuradas como Live Copies. Assim c
 
    * **Herança da Live Copy** - quando marcado, a configuração da Live Copy terá efeito em todas as páginas secundárias
    * **Herdar configurações de implantação da principal** - se marcado, a configuração de implantação é herdada da página principal
-   * **Escolher configuração de implantação** - define as circunstâncias sob as quais as modificações serão propagadas a partir do blueprint e só estarão disponíveis quando **Herdar configurações de implantação da principal** não estiver selecionado
+   * **Escolha a configuração de implantação** - Define as circunstâncias sob as quais as modificações são propagadas a partir do Blueprint e só ficam disponíveis quando **Herdar configurações de implantação do primário** não está selecionado
 
 ### Visualizar {#preview}
 
@@ -277,7 +276,7 @@ Ao clicar ou tocar em **Propriedades** para definir as propriedades da página:
 1. Selecione a opção **Propriedades da exibição** para a página desejada usando uma das seguintes opções:
    * [Ações rápidas](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [Modo de seleção](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources)
-   * As propriedades da página serão exibidas usando as guias adequadas.
+   * As propriedades da página são exibidas usando as guias apropriadas.
 1. Exiba ou edite as propriedades conforme necessário.
 1. Em seguida, clique em **Salvar** para salvar as atualizações, e em **Fechar** para retornar ao console.
 
@@ -313,7 +312,7 @@ Você pode selecionar várias páginas para a edição em massa por meio de vár
 * Ao navegar pelos consoles dos **Sites**
 * Depois de usar a função **Pesquisar** para localizar um conjunto de páginas
 
-Após selecionar as páginas e, em seguida, clicar ou tocar na opção **Propriedades**, as propriedades em massa serão mostradas:
+Depois de selecionar as páginas e clicar ou tocar no **Opção Propriedades**, as propriedades em massa são mostradas:
 
 ![Propriedades da página de edição em massa](/help/sites-cloud/authoring/assets/page-properties-bulk-edit.png)
 
@@ -342,6 +341,6 @@ Depois de entrar na edição de itens em massa é possível:
 * **Editar**
 
    * Você pode atualizar os valores nos campos disponíveis.
-      * Os novos valores serão aplicados a todas as páginas selecionadas ao escolher **Concluído**.
+      * Os novos valores são aplicados a todas as páginas selecionadas ao selecionar **Concluído**.
       * Quando o campo tem vários valores (por exemplo, tags), você pode anexar um novo valor ou remover um valor comum.
-   * Os campos que são comuns, mas têm valores diferentes em várias páginas, serão indicados com um valor especial; como o texto `<Mixed Entries>`.
+   * Os campos que são comuns, mas têm valores diferentes em várias páginas, são indicados com um valor especial; como o texto `<Mixed Entries>`.

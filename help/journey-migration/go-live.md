@@ -2,9 +2,9 @@
 title: Publicação
 description: Saiba como executar a migração depois que o código e o conteúdo estiverem prontos para nuvem
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 30acb844ee4021b3e14011b548825c864de8903d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1727'
+source-wordcount: '1720'
 ht-degree: 4%
 
 ---
@@ -59,7 +59,7 @@ Como mencionado anteriormente, será necessário agendar um código e um períod
 * Por quanto tempo preciso congelar as atividades de criação de conteúdo?
 * Por quanto tempo devo solicitar que minha equipe de entrega pare de adicionar novos recursos?
 
-Para responder à primeira pergunta, considere o tempo necessário para executar execuções de avaliação em ambientes não relacionados à produção. Para responder à segunda pergunta, você precisa de uma colaboração estreita entre a equipe que está adicionando novos recursos e a equipe que está refatorando o código. A meta deve ser garantir que todo o código adicionado à implantação existente também seja adicionado, testado e implantado na ramificação dos serviços em nuvem. De modo geral, isso significa que a quantidade de congelamento de código será menor.
+Para responder à primeira pergunta, considere o tempo necessário para executar execuções de avaliação em ambientes não relacionados à produção. Para responder à segunda pergunta, você precisa de uma colaboração estreita entre a equipe que está adicionando novos recursos e a equipe que está refatorando o código. O objetivo é garantir que todo o código adicionado à implantação existente também seja adicionado, testado e implantado na ramificação dos serviços em nuvem. Geralmente, significa que a quantidade de congelamento do código é menor.
 
 Além disso, você precisa planejar um congelamento de conteúdo quando a atualização final do conteúdo for agendada.
 
@@ -81,12 +81,12 @@ Ao entrar em funcionamento, certifique-se de executar a migração de conteúdo 
 
 Ao executar a migração de produção, você deve evitar a execução da ferramenta Transferência de conteúdo a partir de um clone, pois:
 
-* Se um cliente solicitar que as versões de conteúdo sejam migradas durante as migrações complementares, a execução da ferramenta Transferência de conteúdo de um clone não migrará as versões. Mesmo que o clone seja recriado frequentemente a partir de um autor ativo, cada vez que um clone for criado, os pontos de verificação que serão usados pela ferramenta Transferência de conteúdo para calcular os deltas serão redefinidos.
+* Se um cliente solicitar que as versões de conteúdo sejam migradas durante as migrações complementares, a execução da ferramenta Transferência de conteúdo de um clone não migrará as versões. Mesmo que o clone seja recriado frequentemente a partir de um autor ativo, cada vez que um clone é criado, os pontos de verificação usados pela ferramenta Transferência de conteúdo para calcular os deltas são redefinidos.
 * Como um clone não pode ser atualizado como um todo, o pacote de Consulta ACL deve ser usado para empacotar e instalar o conteúdo que está sendo adicionado ou editado de produção para clone. O problema dessa abordagem é que qualquer conteúdo excluído na instância de origem nunca chegará ao clone, a menos que seja excluído manualmente da origem e do clone. Isso introduz a possibilidade de que o conteúdo excluído na produção não seja excluído no clone e no AEM as a Cloud Service.
 
 **Otimização da carga na origem do AEM ao executar a migração de conteúdo**
 
-Lembre-se, a carga na fonte AEM será maior durante a fase de extração. Você deve estar ciente de que:
+Lembre-se, a carga na fonte AEM é maior durante a fase de extração. Você deve estar ciente de que:
 
 * A Ferramenta de transferência de conteúdo é um processo Java externo que usa um Heap JVM de 4 GB
 * A versão que não é do AzCopy baixa binários, armazena em um espaço temporário no autor AEM de origem, consumindo E/S de disco e faz upload no contêiner do Azure que consome largura de banda de rede
@@ -109,7 +109,7 @@ Em comparação à seção acima da assimilação **não** falha devido às segu
 * Qualquer ativo que tenha a representação original ausente
 * Qualquer pasta que tenha um ausente `jcr:content` nó.
 
-Ambos os itens acima serão identificados e relatados na variável [Analisador de práticas recomendadas](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md) relatório.
+Ambos os itens acima são identificados e relatados na variável [Analisador de práticas recomendadas](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md) relatório.
 
 ## Lista de verificação de ativação {#Go-Live-Checklist}
 

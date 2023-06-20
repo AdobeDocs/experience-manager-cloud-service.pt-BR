@@ -2,10 +2,10 @@
 title: Alterações importantes no Adobe Experience Manager (AEM) as a Cloud Service
 description: Alterações importantes no Adobe Experience Manager (AEM) as a Cloud Service
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
-source-git-commit: d3208a9a0785909e9b62d4033437a8ff44f7ba3e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '846'
-ht-degree: 100%
+source-wordcount: '845'
+ht-degree: 96%
 
 ---
 
@@ -29,7 +29,6 @@ O AEM Cloud Service oferece muitos novos recursos e possibilidades para gerencia
 >* [Alterações importantes no AEM Sites as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
 >* [Alterações importantes no AEM Assets as a Cloud Service](/help/assets/assets-cloud-changes.md)
 
-
 As principais diferenças encontram-se nas seguintes áreas:
 
 * [/apps e /libs não mudam no tempo de execução](#apps-libs-immutable)
@@ -50,14 +49,14 @@ As principais diferenças encontram-se nas seguintes áreas:
 
 ## /apps e /libs não mudam no tempo de execução {#apps-libs-immutable}
 
-O conteúdo e as subpastas em `/apps` e `/libs` são somente leitura. Não é possível fazer alterações nesses locais com recursos ou códigos personalizados. As tentativas de alteração recebem uma mensagem de erro com um aviso de que o conteúdo é do tipo somente leitura e não foi possível concluir a operação. Isso tem impacto em várias áreas do AEM:
+O conteúdo e as subpastas em `/apps` e `/libs` são somente leitura. Não é possível fazer alterações nesses locais com recursos ou códigos personalizados. É retornado um erro de que esse conteúdo é somente leitura e não foi possível concluir a operação de gravação. Isso tem impacto em várias áreas do AEM:
 
 * Não são permitidas alterações em `/libs` de forma alguma.
    * Essa não é uma regra nova, no entanto, não foi aplicada nas versões anteriores do AEM no local.
 * Sobreposições para áreas em `/libs` que podem ser sobrepostas ainda são permitidas dentro de `/apps`.
    * Essas sobreposições devem vir do Git por meio do pipeline de CI/CD.
 * As informações de design do modelo estático armazenadas no `/apps` não podem ser editadas por meio da interface do usuário.
-   * É recomendável que você aproveite os Modelos editáveis.
+   * É recomendável usar Modelos editáveis.
    * Se os Modelos estáticos ainda forem obrigatórios, as informações de configuração devem vir do Git por meio do pipeline de CI/CD.
 * As configurações de implantação de MSM Blueprint e MSM personalizado devem ser instaladas no Git por meio do pipeline de CI/CD.
 * As mudanças na tradução de I18n precisam vir do Git por meio do pipeline de CI/CD.

@@ -2,10 +2,10 @@
 title: Teste de auditoria de experiência
 description: Saiba como a Auditoria de experiência valida seu processo de implantação e ajuda a garantir que as alterações implantadas atendam aos padrões básicos de desempenho, acessibilidade, práticas recomendadas e SEO.
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: c8bfeda015962d3f327057a375b4edd3d80c6316
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '552'
-ht-degree: 100%
+source-wordcount: '551'
+ht-degree: 96%
 
 ---
 
@@ -29,7 +29,7 @@ A Auditoria de experiência é um recurso disponível nos pipelines de produçã
 
 A Auditoria de experiência no Cloud Manager garante que a experiência do usuário final no site seja do mais alto padrão.
 
-Os resultados da auditoria são informativos e permitem que o gerente de implantação veja as pontuações e as alterações entre as pontuações atual e anterior. Esse insight é importante para determinar se uma regressão será introduzida com a implantação atual.
+Os resultados da auditoria são informativos e permitem que o gerente de implantação veja as pontuações e as alterações entre as pontuações atual e anterior. Esse insight é importante para determinar se há uma regressão introduzida com a implantação atual.
 
 A Auditoria de experiência é disponibilizada pelo Google Lighthouse, uma ferramenta de código aberto do Google, e é ativada em todos os pipelines de produção do Cloud Manager.
 

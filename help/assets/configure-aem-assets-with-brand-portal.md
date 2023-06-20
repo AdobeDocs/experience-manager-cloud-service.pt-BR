@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 42927eec458553121f70b74a54f0f26eb616a13e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2530'
-ht-degree: 12%
+source-wordcount: '2529'
+ht-degree: 13%
 
 ---
 
@@ -61,7 +61,7 @@ Você pode ativar o Brand Portal ao criar os ambientes de produção para o seu 
 >
 >O Brand Portal deve ser ativado na mesma organização IMS do Experience Manager Assets como um [!DNL Cloud Service] instância.
 >
->Se você tiver uma configuração de nuvem existente do Brand Portal ([configurado manualmente usando o console do Adobe Developer](#manual-configuration)) para uma organização IMS (org1-existing) e seu Experience Manager Assets as a [!DNL Cloud Service] estiver configurada para outra organização IMS (org2-new), ativar o Brand Portal no Cloud Manager redefinirá a organização IMS do Brand Portal para `org2-new`. Embora a configuração de nuvem definida manualmente em `org1-existing` estará visível na instância do autor do Experience Manager Assets, mas não estará mais em uso após ativar o Brand Portal no Cloud Manager.
+>Se você tiver uma configuração de nuvem existente do Brand Portal ([configurado manualmente usando o console do Adobe Developer](#manual-configuration)) para uma organização IMS (org1-existing) e seu Experience Manager Assets as a [!DNL Cloud Service] estiver configurada para outra organização IMS (org2-new), ativar o Brand Portal no Cloud Manager redefinirá a organização IMS do Brand Portal para `org2-new`. Embora a configuração de nuvem definida manualmente em `org1-existing` está visível na instância do autor do Experience Manager Assets, mas não estará mais em uso após ativar o Brand Portal no Cloud Manager.
 >
 >Se a configuração de nuvem existente do Brand Portal e o Experience Manager Assets as a [!DNL Cloud Service] As instâncias do usam a mesma organização IMS (org1). Você só precisa ativar o Brand Portal no Cloud Manager.
 >
@@ -116,6 +116,7 @@ Execute as seguintes etapas para validar a conexão entre seu Experience Manager
    * **fila de processamento**: para distribuição de ativos no Brand Portal.
 
    * **fila de erros**: para os ativos em que a distribuição falhou.
+
    >[!NOTE]
    >
    >É recomendável analisar as falhas e limpar a **fila de erros** periodicamente.
@@ -339,7 +340,7 @@ Agora você pode usar a ID do cliente (chave de API), o segredo do cliente e a c
 
 1. Navigate to **[!UICONTROL JWT]** tab, and copy the **[!UICONTROL JWT payload]**.
 
-   The API Key, Client Secret key, and JWT payload information will be used to create IMS account configuration.
+   The API Key, Client Secret key, and JWT payload information is used to create IMS account configuration.
 
 -->
 

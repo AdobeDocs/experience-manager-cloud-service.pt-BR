@@ -3,9 +3,9 @@ title: Notas de versão das Ferramentas de migração no AEM as a Cloud Service 
 description: Notas de versão das Ferramentas de migração no AEM as a Cloud Service versão 2022.7.0
 feature: Release Information
 exl-id: bc8f1a80-867e-423a-9c03-4a53b1ebc57c
-source-git-commit: cc52dfac1e7495d6a792bc7525720695022db8eb
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '429'
 ht-degree: 9%
 
 ---
@@ -42,7 +42,7 @@ A data de lançamento da ferramenta de transferência de conteúdo v2.0.12 é 19
 * Para ajudar a depurar problemas de conexão SSL/TLS durante as extrações, os usuários agora podem ativar o registro SSL.
 * Para ajudar a depurar problemas de conectividade de origem, os nomes de subdomínio agora são impressos nos logs quando a conexão com o Azure falha.
 * Para ajudar a depurar problemas durante a pré-cópia, os logs do AzCopy agora são anexados aos logs de extração quando a pré-cópia falha.
-* Para evitar resultados obsoletos da verificação de tamanho, os usuários poderão executar a verificação de tamanho novamente somente após a conclusão de uma verificação de tamanho anterior.
+* Para evitar resultados obsoletos da verificação de tamanho, os usuários só podem executar a verificação de tamanho novamente após a conclusão de uma verificação de tamanho anterior.
 
 ### Correções de erros {#bug-fixes-ctt}
 

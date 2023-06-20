@@ -2,9 +2,9 @@
 title: Fase de preparação no Cloud Acceleration Manager
 description: Esta página fornece uma visão geral sobre a fase de Preparação no Cloud Acceleration Manager.
 exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1057'
+source-wordcount: '1055'
 ht-degree: 5%
 
 ---
@@ -83,7 +83,6 @@ Siga as etapas abaixo:
    >* A opção **Salvar como PDF** O é recomendado e compatível com a funcionalidade acima.
    >* Se o botão de impressão do navegador for usado, ele imprimirá apenas uma página.
 
-
    ![imagem](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview2.png)
 
 ### Usando Exibir Linha de Tendência {#trendline-view-cam}
@@ -121,7 +120,6 @@ Siga as etapas abaixo para exibir relatórios da opção de linha de tendência:
    >Você verá dois gráficos que exibem a tendência do:
    >1. **Informar tendência de Achados**
    >1. **Tendência de Componentes e Modelos Personalizados**
-
    >
    >É possível adicionar ou alterar a exibição gráfica por meio do menu suspenso, conforme mostrado na figura abaixo:
    >![imagem](/help/journey-migration/cloud-acceleration-manager/assets/reports-bpa1.png)
@@ -138,7 +136,6 @@ Explore os seguintes cartões disponíveis na página Relatório de análise de 
 >* clique em cada cartão para abrir a guia associada
 >* marcar todas as guias de relatório (incluindo filtragem) para compartilhamento ou recuperação futura
 >* use o ícone details para exibir os detalhes de cada descoberta de relatório
-
 
 #### Propriedades do relatório {#report-properties}
 
@@ -183,7 +180,7 @@ A opção Avaliação da complexidade da migração fornece uma avaliação da c
 * Avaliação
 * Considerações sobre a migração de conteúdo
 
-   ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/migration-complexity-1.png)
+  ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/migration-complexity-1.png)
 
 ## Usando o Cartão de Planejamento e Configuração {#planning-setup}
 

@@ -1,13 +1,13 @@
 ---
 title: Fragmentos de conteúdo — Navegador de configuração
-description: Saiba como ativar a funcionalidade de Fragmento de conteúdo e GraphQL no Navegador de configuração para aproveitar recursos de entrega headless AEM.
+description: Saiba como ativar a funcionalidade de Fragmento de conteúdo e GraphQL no Navegador de configuração para usar os recursos de entrega sem periféricos de AEM.
 feature: Content Fragments
 role: User
 exl-id: 55d442ae-ae06-4dfa-8e4e-b415385ccea5
-source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 100%
+source-wordcount: '362'
+ht-degree: 88%
 
 ---
 
@@ -28,7 +28,6 @@ Antes de usar fragmentos de conteúdo, você precisa usar o **navegador de confi
 >
 >* a opção **Criar** não estará disponível para criar novos modelos.
 >* você não poderá [selecionar a configuração de sites para criar o ponto de acesso relacionado](/help/headless/graphql-api/graphql-endpoint.md).
-
 
 Para ativar a funcionalidade do fragmento de conteúdo, é necessário:
 
@@ -57,21 +56,19 @@ Para [usar determinadas funcionalidades do fragmento de conteúdo](#creating-a-c
 >* As consultas persistentes (ainda) serão salvas relativas à configuração principal (raiz).
 
 
-
 1. Navegue até **Ferramentas**, **Geral**, e abra o **Navegador de configuração**.
 
 1. Selecione **Criar** para abrir a caixa de diálogo, onde você:
 
    1. Especifica um **Título**.
-   1. O **Nome** se tornará o nome do nó no repositório.
-      * Ele será gerado automaticamente com base no título e ajustado de acordo com as [convenções de nomenclatura do AEM.](/help/implementing/developing/introduction/naming-conventions.md)
+   1. A variável **Nome** torna-se o nome do nó no repositório.
+      * Ele é gerado automaticamente com base no título e ajustado de acordo com [Convenções de nomenclatura do AEM.](/help/implementing/developing/introduction/naming-conventions.md)
       * Você pode ajustá-lo se necessário.
    1. Para permitir seu uso, selecione
       * **Modelos de fragmentos do conteúdo**
       * **Consultas GraphQL persistidas**
 
       ![Definir configuração](assets/cfm-conf-01.png)
-
 
 1. Selecione **Criar** para salvar a definição.
 

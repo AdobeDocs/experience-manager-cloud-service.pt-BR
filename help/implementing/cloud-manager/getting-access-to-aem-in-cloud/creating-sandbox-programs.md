@@ -2,10 +2,10 @@
 title: Criação de programas do sandbox
 description: Saiba como usar o Cloud Manager para criar seu próprio programa de sandbox para treinamentos, demonstrações, POCs ou outros fins de não produção.
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
-source-git-commit: b916bf5b252045120659600293e004fc34b96e7a
-workflow-type: ht
-source-wordcount: '464'
-ht-degree: 100%
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+workflow-type: tm+mt
+source-wordcount: '462'
+ht-degree: 95%
 
 ---
 
@@ -55,7 +55,7 @@ Você pode visualizar os detalhes da configuração da sandbox, bem como acessar
 
    ![Visão geral do acesso ao programa](assets/program-overview-sandbox.png)
 
-1. Depois que a etapa de criação do projeto for concluída, você poderá acessar o link **Acessar informações do repositório** para poder usar seu repositório Git.
+1. Depois que a etapa de criação do projeto for concluída, você poderá acessar a **Acessar informações do repositório** para poder usar seu repositório Git.
 
    ![Configuração do programa](assets/create-program4.png)
 

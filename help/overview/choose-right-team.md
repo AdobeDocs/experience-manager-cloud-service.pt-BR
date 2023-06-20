@@ -2,10 +2,10 @@
 title: Pessoas certas, funções certas
 description: Pessoas certas, funções certas
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
-source-git-commit: 8bd001f6f70ce1aa9a63623b3ad68793fa355c9a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '825'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -77,4 +77,4 @@ Agora que você sabe que funções são necessárias, examine o gráfico abaixo 
 
 >[!TIP]
 >
-> Saiba mais sobre a Adobe Experience Cloud e aproveite os recursos da [Experience League](https://experienceleague.adobe.com/?lang=pt-BR#recommended/solutions/experience-manager) para obter certificação por meio do [Adobe Digital Learning](https://learning.adobe.com/certification.html).
+> Saiba mais sobre o Adobe Experience Cloud e use os recursos no [Experience League](https://experienceleague.adobe.com/?lang=pt-BR#recommended/solutions/experience-manager) e obter certificação por meio do [Aprendizado digital Adobe](https://learning.adobe.com/certification.html).

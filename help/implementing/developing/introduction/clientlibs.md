@@ -2,9 +2,9 @@
 title: Uso de bibliotecas do lado do cliente no AEM as a Cloud Service
 description: O AEM fornece Pastas de bibliotecas do lado do cliente, que permitem armazenar o código do lado do cliente (clientlibs) no repositório, organizá-lo em categorias e definir quando e como cada categoria de código deve ser entregue ao cliente
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 906fbefdbd100a7874b6f58ef23b7aaa46ac4ba3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2567'
+source-wordcount: '2562'
 ht-degree: 1%
 
 ---
@@ -71,7 +71,7 @@ As pastas da biblioteca do cliente contêm os seguintes itens:
 
 ## Criação de pastas de bibliotecas do lado do cliente {#creating-clientlib-folders}
 
-As bibliotecas de clientes devem estar localizadas em `/apps`. Isso é para isolar melhor o código do conteúdo e da configuração.
+As bibliotecas de clientes devem estar localizadas em `/apps`. Essa regra é necessária para isolar melhor o código do conteúdo e da configuração.
 
 Para que as bibliotecas de clientes em `/apps` para ser acessível, um servlet proxy é usado. As ACLs ainda são aplicadas na pasta da biblioteca do cliente, mas o servlet permite que o conteúdo seja lido via `/etc.clientlibs/` se a variável `allowProxy` propriedade está definida como `true`.
 
@@ -135,7 +135,7 @@ This is possible. Still need detail.
 
 ## Bibliotecas de clientes no Autor versus Publicar {#clientlibs-author-publish}
 
-A maioria das clientlibs será necessária na instância de publicação do AEM. Ou seja, a finalidade da maioria das clientlibs é produzir a experiência do usuário final do conteúdo. Para clientlibs em instâncias de publicação, [ferramentas de build de front-end](#fed-for-aemaacs) pode ser usado e implantado via [pastas da biblioteca do cliente conforme descrito acima.](#creating-clientlib-folders)
+A maioria das clientlibs é necessária na instância de publicação do AEM. Ou seja, a finalidade da maioria das clientlibs é produzir a experiência do usuário final do conteúdo. Para clientlibs em instâncias de publicação, [ferramentas de build de front-end](#fed-for-aemaacs) pode ser usado e implantado via [pastas da biblioteca do cliente conforme descrito acima.](#creating-clientlib-folders)
 
 No entanto, há momentos em que as bibliotecas de clientes podem ser necessárias para personalizar a experiência de criação. Por exemplo, personalizar uma caixa de diálogo pode exigir a implantação de pequenos bits de CSS ou JS na instância de criação do AEM.
 
@@ -185,7 +185,7 @@ As configurações adicionais da biblioteca do cliente podem ser controladas por
 As propriedades adicionais da pasta incluem permitir controle de dependências e incorporações, mas geralmente não são mais necessárias e seu uso não é incentivado:
 
 * `dependencies`: esta é uma lista de outras categorias de bibliotecas de clientes das quais essa pasta de biblioteca depende. Por exemplo, dados dois `cq:ClientLibraryFolder` nós `F` e `G`, se um arquivo em `F` requer outro arquivo em `G` para funcionar corretamente, pelo menos um dos `categories` de `G` deve estar entre os `dependencies` de `F`.
-* `embed`: usado para incorporar o código de outras bibliotecas do. Nó If `F` incorpora nós `G` e `H`, o HTML resultante será uma concatenação do conteúdo dos nós `G` e `H`.
+* `embed`: usado para incorporar o código de outras bibliotecas do. Nó If `F` incorpora nós `G` e `H`, o HTML resultante é uma concatenação de conteúdo de nós `G` e `H`.
 
 ### Vinculação a Dependências {#linking-to-dependencies}
 

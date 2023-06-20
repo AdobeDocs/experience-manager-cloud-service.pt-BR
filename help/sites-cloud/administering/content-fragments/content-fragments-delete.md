@@ -4,10 +4,10 @@ description: Analise essas considerações importantes antes de definir as polí
 feature: Content Fragments
 role: User
 exl-id: f6698dd8-3e2a-44ac-b00f-df578aa85ffe
-source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 100%
+source-wordcount: '469'
+ht-degree: 96%
 
 ---
 
@@ -51,7 +51,7 @@ Por exemplo, ao manipular variações; também ao editar metadados ou gerenciar 
 >
 >As permissões de exclusão, necessárias para editar/atualizar um fragmento de conteúdo, estão incluídas na permissão de exclusão atribuída por meio do gerenciamento de usuários e/ou grupos. <!-- The delete permissions, required to edit/update a Content Fragment, are included in the Delete permission [assigned through User and/or Group Management](/help/sites-administering/security.md#managing-permissions). -->
 
-As permissões necessárias para editar/atualizar um fragmento precisam ser aplicadas ao nó que contém o fragmento de conteúdo ou a um nó principal apropriado (em qualquer nível no `/content/dam`). Quando atribuídas a esse nó principal, as permissões serão aplicadas a todos os nós dentro dessa ramificação.
+As permissões necessárias para editar/atualizar um fragmento precisam ser aplicadas ao nó que contém o fragmento de conteúdo ou a um nó principal apropriado (em qualquer nível no `/content/dam`). Quando atribuídas a esse nó principal, as permissões são aplicadas a todos os nós dentro dessa ramificação.
 
 Por exemplo, uma pasta que manterá todos os fragmentos de conteúdo, como:
 

@@ -2,10 +2,10 @@
 title: A ferramenta de cópia de conteúdo
 description: A ferramenta de cópia de conteúdo permite que os usuários copiem conteúdo mutável sob demanda de seus ambientes de produção do AEM as a Cloud Service para ambientes inferiores para fins de teste.
 exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
-source-git-commit: d056ad0f29cfd2448164e3e866f2cedbe1bf6fc2
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1227'
-ht-degree: 60%
+source-wordcount: '1223'
+ht-degree: 56%
 
 ---
 
@@ -29,12 +29,12 @@ O conteúdo a ser copiado é definido por um conjunto de conteúdo. Um conjunto 
 
 Ao copiar o conteúdo, o ambiente de origem é a fonte de verdade.
 
-* Se o conteúdo tiver sido modificado no ambiente de destino, ele será substituído pelo conteúdo da origem se os caminhos forem os mesmos.
-* Se os caminhos forem diferentes, o conteúdo da origem será mesclado ao conteúdo do destino.
+* Se o conteúdo tiver sido modificado no ambiente de destino, ele será substituído pelo conteúdo na origem, se os caminhos forem os mesmos.
+* Se os caminhos forem diferentes, o conteúdo da origem será mesclado com o conteúdo no destino.
 
 ## Permissões {#permissions}
 
-Para usar a ferramenta de cópia de conteúdo, certas permissões são necessárias nos ambientes de origem e de destino.
+Para usar a ferramenta de cópia de conteúdo, determinadas permissões são necessárias nos ambientes de origem e de destino.
 
 | Recurso de cópia de conteúdo | Grupo de administradores AEM | Função de gerente de implantação |
 |---|---|---|
@@ -122,7 +122,6 @@ Depois que um conjunto de conteúdo é criado, você pode usá-lo para copiar co
    >* O usuário não tiver as permissões apropriadas.
    >* O ambiente tiver um pipeline em execução ou uma operação de cópia de conteúdo em andamento.
    >* O ambiente está hibernando ou sendo inicializado.
-
 
 1. Na caixa de diálogo **Copiar conteúdo**, especifique a origem e o destino da sua ação de cópia de conteúdo.
 

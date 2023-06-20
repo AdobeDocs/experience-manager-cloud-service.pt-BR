@@ -2,10 +2,10 @@
 title: Promoção de inicializações
 description: É necessário promover as páginas de inicialização para mover o conteúdo de volta para a origem (produção) antes de publicar.
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '818'
-ht-degree: 42%
+source-wordcount: '816'
+ht-degree: 41%
 
 ---
 
@@ -40,12 +40,11 @@ ht-degree: 42%
 >* [Inicializações - a ordem dos eventos](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events) para obter mais detalhes sobre promoção e publicação automáticas.
 >
 
-
 É possível promover inicializações a partir do **Sites** console ou o **Lançamentos** console:
 
 1. Abrir:
    * O console do **Sites** ao navegar pelas páginas de origem:
-      1. Abra o [painel de referências](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) e selecione a página de origem desejada usando o [modo de seleção](/help/sites-cloud/authoring/getting-started/basic-handling.md) (ou selecione e abra o painel de referências; a ordem não é importante). Todas as referências serão exibidas.
+      1. Abra o [painel de referências](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) e selecione a página de origem desejada usando o [modo de seleção](/help/sites-cloud/authoring/getting-started/basic-handling.md) (ou selecione e abra o painel de referências; a ordem não é importante). Todas as referências são mostradas.
       1. Selecione **Lançamentos** (por exemplo, Lançamentos [1]) para exibir uma lista de lançamentos específica.
       1. Selecione a inicialização específica para mostrar as ações disponíveis.
       1. Selecione **Promover lançamento** para abrir o assistente.
@@ -65,13 +64,13 @@ ht-degree: 42%
       * **Divulgar a página atual**
       * **Divulgar página atual e subpáginas**
 
-      Por exemplo, ao selecionar para promover somente as páginas modificadas:
+     Por exemplo, ao selecionar para promover somente as páginas modificadas:
 
-      ![Promover inicialização](/help/sites-cloud/authoring/assets/launches-promote.png)
+     ![Promover inicialização](/help/sites-cloud/authoring/assets/launches-promote.png)
 
-      >[!NOTE]
-      >
-      >Isso abrange uma única inicialização, se você tiver inicializações aninhadas, consulte [Promover uma inicialização aninhada](#promoting-a-nested-launch).
+     >[!NOTE]
+     >
+     >Isso abrange uma única inicialização, se você tiver inicializações aninhadas, consulte [Promover uma inicialização aninhada](#promoting-a-nested-launch).
 1. Selecionar **Próxima** para continuar.
 1. É possível analisar as páginas a serem promovidas; isso dependerá do intervalo de páginas escolhido:
 
@@ -119,7 +118,7 @@ Depois de criar uma inicialização aninhada, você pode promovê-la de volta pa
    >
    >As páginas listadas dependerão do tipo de **Escopo** e possivelmente as páginas que foram editadas.
 
-1. Suas alterações serão promovidas e refletidas no **Lançamentos** console:
+1. Suas alterações são promovidas e refletidas no **Lançamentos** console:
 
    ![No console de inicializações](/help/sites-cloud/authoring/assets/launches-console.png)
 

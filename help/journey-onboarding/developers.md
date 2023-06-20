@@ -4,10 +4,10 @@ description: Depois que o administrador do sistema configurar os recursos de nuv
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
-source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
-workflow-type: ht
-source-wordcount: '1419'
-ht-degree: 100%
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+workflow-type: tm+mt
+source-wordcount: '1417'
+ht-degree: 98%
 
 ---
 
@@ -51,7 +51,7 @@ Dependendo das suas necessidades organizacionais, os mesmos usuários podem ter 
 Antes de começar as tarefas descritas neste documento como um desenvolvedor ou gerente de implantação, verifique se o administrador do sistema concluiu todas as etapas desta jornada de integração. Isso significa que:
 
 * O administrador do sistema atribuiu desenvolvedores e gerentes de implantação aos respectivos perfis de produto.
-* Os desenvolvedores também devem ser atribuídos aos perfis de produto **Usuários do AEM** ou **Administradores do AEM** para usarem o AEM.
+* Os desenvolvedores também devem ser atribuídos a **Usuários do AEM** ou **Administradores de AEM** os perfis de produto na também usam AEM.
 * Os recursos de nuvem foram configurados.
 
 ## Acesso ao Git {#accessing-git}

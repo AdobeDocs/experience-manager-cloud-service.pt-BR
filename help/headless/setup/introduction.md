@@ -2,10 +2,10 @@
 title: Configuração do headless
 description: Com este guia rápido de introdução, saiba mais sobre os recursos headless avançados do AEM as a Cloud Service, como os modelos de conteúdo, fragmentos de conteúdo e a API GraphQL.
 exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
-source-git-commit: d35b60810a1624390d3d9c82c2a364140ea37536
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 100%
+source-wordcount: '286'
+ht-degree: 94%
 
 ---
 
@@ -30,12 +30,11 @@ Abaixo está um caminho simples para criar, gerenciar e fornecer experiências u
 >* [Jornada do autor de conteúdo headless](/help/journey-headless/author/overview.md)
 >* [Jornada de tradução headless](/help/journey-headless/translation/overview.md).
 
-
 ## Público {#audience}
 
 As tarefas descritas são necessárias para uma demonstração completa e básica das capacidades headless do AEM. Qualquer pessoa com acesso de administrador a uma instância de teste do AEM pode seguir esses guias para entender a entrega headless no AEM, embora o ideal seja alguém com experiência de desenvolvedor.
 
-No entanto, em uma situação de produção, as tarefas serão executadas por perfis diferentes em uma quantidade variável de vezes. Por exemplo:
+No entanto, em uma situação de produção, as tarefas são executadas por personas diferentes em um número variável de vezes. Por exemplo:
 
 * Normalmente, **administradores** precisarão definir a configuração inicial e a estrutura de pastas para o conteúdo apenas uma vez, ou esporadicamente.
 * Geralmente, **arquitetos de informações** adicionarão novos modelos à medida que as necessidades da organização evoluírem.

@@ -3,10 +3,10 @@ title: Pipelines de CI/CD
 description: Saiba mais sobre os pipelines de CI/CD do Cloud Manager e como eles podem ser usados para implantar seu código com eficiência.
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1367'
-ht-degree: 100%
+source-wordcount: '1358'
+ht-degree: 87%
 
 ---
 
@@ -97,10 +97,10 @@ Os pipelines de pilha completa podem implantar configurações no nível da Web 
 
 As restrições a seguir se aplicam.
 
-* O usuário deve estar conectado na função **Gerente de implantação** para configurar ou executar pipelines.
+* Um usuário deve estar conectado com o **Gerente de implantação** Função para configurar ou executar pipelines.
 * Em um dado momento, somente pode haver um pipeline de pilha completa por ambiente.
 
-Além disso, saiba como o pipeline de pilha completa se comportará se você optar por introduzir um [pipeline de configuração no nível da Web.](#web-tier-config-pipelines)
+Além disso, esteja ciente de como o pipeline de pilha completa se comporta se você optar por introduzir um [pipeline de configuração no nível da web.](#web-tier-config-pipelines)
 
 * O pipeline de pilha completa para um ambiente ignorará a configuração do Dispatcher se existir um pipeline de configuração no nível da Web correspondente.
 * Se não existir um pipeline de configuração no nível da Web correspondente para o ambiente, o usuário poderá configurar o pipeline de pilha completa para incluir ou ignorar a configuração do Dispatcher.
@@ -115,7 +115,7 @@ Os pipelines de front-end ajudam as equipes a agilizar o processo de design e de
 
 >[!IMPORTANT]
 >
->Você deve usar o AEM versão `2021.10.5933.20211012T154732Z ` ou posterior com o AEM Sites habilitado para utilizar pipelines de front-end.
+>Você deve estar usando a versão AEM `2021.10.5933.20211012T154732Z ` ou superior com o AEM Sites habilitado para usar pipelines de front-end.
 
 >[!NOTE]
 >
@@ -140,7 +140,7 @@ Para saber como configurar pipelines de front-end, consulte os documentos a segu
 
 Com os pipelines de front-end, é dada mais independência aos desenvolvedores de front-end e o processo de desenvolvimento pode ser acelerado.
 
-Consulte o documento [Desenvolvimento de Sites com o pipeline de front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) para saber como esse processo funciona, além de algumas considerações a serem feitas a fim de aproveitar ao máximo o potencial desse processo.
+Consulte o documento [Desenvolvimento de sites com o pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) para saber como esse processo funciona, além de algumas considerações a serem feitas para aproveitar ao máximo o potencial desse processo.
 
 ### Configuração de pipelines de pilha completa {#configure-full-stack}
 
@@ -160,18 +160,18 @@ Os pipelines de configuração no nível da Web permitem a implantação exclusi
 
 As restrições a seguir se aplicam.
 
-* Você deve usar o AEM versão `2021.12.6151.20211217T120950Z` ou posterior para aproveitar os novos pipelines de front-end.
-* Você deve [aceitar o modo flexível das ferramentas do dispatcher](/help/implementing/dispatcher/disp-overview.md#validation-debug) para aproveitar os pipelines de configuração no nível da Web.
-* O usuário deve estar conectado na função **Gerente de implantação** para configurar ou executar pipelines.
+* Você deve estar usando a versão AEM `2021.12.6151.20211217T120950Z` ou mais recente para usar pipelines de configuração no nível da Web.
+* Você deve [aceitar o modo flexível das ferramentas do dispatcher](/help/implementing/dispatcher/disp-overview.md#validation-debug) para usar pipelines de configuração no nível da web.
+* Um usuário deve estar conectado com o **Gerente de implantação** Função para configurar ou executar pipelines.
 * Em um dado momento, somente pode haver um pipeline de configuração no nível da Web por ambiente.
 * O usuário não pode definir um pipeline de configuração no nível da Web quando um pipeline de pilha completa correspondente está em execução.
 * A estrutura de nível da Web deve seguir a estrutura do modo flexível, conforme definido no documento [Dispatcher na nuvem.](/help/implementing/dispatcher/disp-overview.md#validation-debug)
 
-Além disso, esteja ciente de como o [pipeline de pilha completa](#full-stack-pipeline) se comportará ao introduzir um pipeline no nível da Web.
+Além disso, esteja ciente de como o [pipeline de pilha completa](#full-stack-pipeline) O se comporta ao introduzir um pipeline no nível da Web.
 
 * Se um pipeline de configuração no nível da Web não tiver sido configurado para um ambiente, o usuário poderá fazer uma seleção ao configurar seu pipeline de pilha completa correspondente para incluir ou ignorar a configuração de Dispatcher durante a execução e a implantação.
 * Depois que um pipeline de configuração no nível da Web é configurado para um ambiente, seu pipeline de pilha completa correspondente (se existir) ignorará a configuração do dispatcher durante a execução e a implantação.
-* Depois que um pipeline de configuração no nível da Web é excluído, seu pipeline de pilha completa correspondente será redefinido para implantar configurações do Dispatcher durante a execução.
+* Depois que um pipeline de configuração no nível da Web é excluído, seu pipeline de pilha completa correspondente é redefinido para implantar configurações do Dispatcher durante a execução.
 
 Os pipelines de configuração no nível da Web podem ser do tipo qualidade do código ou de implantação.
 

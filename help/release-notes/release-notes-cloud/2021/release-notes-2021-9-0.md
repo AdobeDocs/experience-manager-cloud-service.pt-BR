@@ -2,9 +2,9 @@
 title: Notas de versão do [!DNL Adobe Experience Manager]  as a Cloud Service 2021.9.0.
 description: Notas de versão do [!DNL Adobe Experience Manager]  as a Cloud Service 2021.9.0.
 exl-id: 8c12ff09-fbc8-42dd-87c0-46e509604f36
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1572'
+source-wordcount: '1570'
 ht-degree: 21%
 
 ---
@@ -42,8 +42,8 @@ Dê uma olhada no [Visão geral da versão de setembro de 2021](https://video.tv
 
 * Agora os usuários podem classificar os ativos exibidos nos resultados da pesquisa nas visualizações de Coluna e Cartão. A classificação funciona nas colunas Nome, Criado, Modificado ou Nenhum.
 
-   ![Classificar os resultados da pesquisa em [!DNL Assets] nas Visualizações de coluna e cartão](/help/assets/assets/sort-searched-assets.png)
-   *Figura: Classificar os resultados da pesquisa em [!DNL Assets] nas Visualizações de coluna e cartão.*
+  ![Classificar os resultados da pesquisa em [!DNL Assets] nas Visualizações de coluna e cartão](/help/assets/assets/sort-searched-assets.png)
+  *Figura: Classificar os resultados da pesquisa em [!DNL Assets] nas Visualizações de coluna e cartão.*
 
 * Para chamar programaticamente o processamento usando microsserviços de ativos, é introduzida uma nova API. Os desenvolvedores agora podem aplicar um perfil de processamento existente no nível da pasta a um ou mais ativos específicos em uma pasta. O perfil de processamento é aplicado com base em atualizações de propriedades de metadados personalizadas. Consulte `AssetProcessor` no [[!DNL Experience Manager] Referência da API](https://www.adobe.io/experience-manager/reference-materials/). Como antes, é possível [usar microsserviços de ativos na interface](/help/assets/asset-microservices-configure-and-use.md).
 
@@ -91,11 +91,11 @@ Você pode escrever para [!DNL formscsbeta@adobe.com] para se inscrever no progr
 
 * A nova guia &quot;conteúdo de comércio associado&quot; no editor de sites aumenta a eficiência do autor, obtendo rapidamente acesso ao conteúdo de produto AEM relevante para o contexto atual
 
-   ![Conteúdo de comércio associado](/help/assets/CIF/associated-commerce-content.png)
+  ![Conteúdo de comércio associado](/help/assets/CIF/associated-commerce-content.png)
 
 * Interface aprimorada do seletor de produtos para obter melhor experiência do usuário, maior eficiência e suporte para catálogos de produtos complexos
 
-   ![Novo seletor de produtos](/help/assets/CIF/product-picker.png)
+  ![Novo seletor de produtos](/help/assets/CIF/product-picker.png)
 
 * Respeitar a propriedade &quot;include_in_menu&quot; no componente de navegação
 

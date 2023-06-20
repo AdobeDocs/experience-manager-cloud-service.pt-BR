@@ -4,10 +4,10 @@ description: Saiba como usar o AEM para criar um site usando modelos de site par
 feature: Administering
 role: Admin
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '788'
-ht-degree: 100%
+source-wordcount: '786'
+ht-degree: 98%
 
 ---
 
@@ -71,7 +71,7 @@ Os modelos de site geralmente contêm o conteúdo básico e a estrutura do site,
 
    ![Selecione um modelo](../assets/select-site-template.png)
 
-1. Forneça um título para o site. É possível fornecer um nome de site ou, se omitido, ele será gerado a partir do título.
+1. Forneça um título para o site. Um nome de site pode ser fornecido ou gerado a partir do título, caso seja omitido.
 
    * O título do site aparece na barra de título dos navegadores.
    * O nome do site se torna parte do URL.

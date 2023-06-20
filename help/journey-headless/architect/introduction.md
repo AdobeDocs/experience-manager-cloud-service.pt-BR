@@ -2,10 +2,10 @@
 title: 'Modelagem de conteúdo para o AEM as a Headless CMS: uma introdução'
 description: Uma introdução ao uso dos recursos do Adobe Experience Manager as a Cloud Service as a Headless CMS para modelar o conteúdo do seu projeto.
 exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
-source-git-commit: 00ec09f327bc2f382d263970e690ed067aaa1355
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '721'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -25,7 +25,7 @@ Este documento ajuda você a entender a entrega de conteúdo headless, como o AE
 
 ## Entregar conteúdo em pilha completa {#full-stack}
 
-Desde o aumento dos sistemas de gerenciamento de conteúdo (CMSs) fáceis de usar e em larga escala, as organizações os estão aproveitando como um local central para gerenciar mensagens, identidade visual e comunicações. Usar o CMS como ponto central para administrar experiências melhorou a eficiência, eliminando a necessidade de duplicar tarefas em sistemas diferentes.
+Desde o surgimento de CMSs (Content Management Systems, sistemas de gerenciamento de conteúdo) de grande escala e fáceis de usar, as organizações os usam como um local central para gerenciar mensagens, marcas e comunicações. Usar o CMS como ponto central para administrar experiências melhorou a eficiência, eliminando a necessidade de duplicar tarefas em sistemas diferentes.
 
 ![O CMS clássico de pilha completa](/help/journey-headless/developer/assets/full-stack.png)
 

@@ -2,9 +2,9 @@
 title: Uso do CRXDE Lite
 description: o CRXDE Lite faz parte do AEM quickstart e está disponível para você acessar e modificar o repositório em seus ambientes de desenvolvimento locais no navegador.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1694'
+source-wordcount: '1689'
 ht-degree: 1%
 
 ---
@@ -60,7 +60,7 @@ O Filtro de Navegação em Árvore (o ícone binóculo ) permite filtrar os nós
 
 ### Editar Painel {#edit-pane}
 
-A variável **Editar Painel** permite visualizar o conteúdo do arquivo selecionado no momento no repositório. Cada arquivo aberto será representado como sua própria guia no painel.
+A variável **Editar Painel** permite visualizar o conteúdo do arquivo selecionado no momento no repositório. Cada arquivo aberto é representado como sua própria guia no painel.
 
 A variável **Início** A guia permite pesquisar conteúdo e/ou documentação e acessar a documentação do desenvolvedor e o suporte ao Adobe.
 
@@ -88,6 +88,7 @@ As permissões são divididas nas seguintes categorias.
 * **Políticas do controle de acesso efetivo** - As políticas atuais aplicadas para a seleção atual, que pode ser definida localmente ou herdada dos nós principais
 
 >[!NOTE]
+>
 Para ver as informações de controle de acesso, o usuário conectado ao CRXDE Lite deve ter direitos de leitura das entradas de ACL.
 
 ### Guia Replicação {#replication-tab}
@@ -188,7 +189,9 @@ Para criar um nó com CRXDE Lite:
 Agora você pode adaptar o nó às suas necessidades modificando propriedades ou criando novos nós.
 
 >[!NOTE]
+>
 A maioria das operações de edição, incluindo **Criar nó** O, mantém todas as alterações na memória e só as armazena no repositório após salvar (usando o [**Botão Salvar tudo**](#save-all-button)). No entanto, algumas operações, como mover, são automaticamente mantidas.
+>
 A validação relacionada à permissão do nó recém-criado pelo tipo de nó principal também é realizada pelo repositório ao salvar as alterações. Se você receber uma mensagem de erro ao salvar um nó, verifique se a estrutura do conteúdo é válida (por exemplo, não é possível criar um `nt:unstructured` nó como filho de `nt:folder` nó).
 
 ## Criação de uma propriedade {#creating-a-property}
@@ -222,7 +225,7 @@ Para exportar uma definição de tipo de nó no CRXDE Lite:
 1. Abra o CRXDE Lite no navegador.
 1. Selecione o nó desejado.
 1. Selecionar **Ferramentas** depois **Exportar tipo de nó**.
-1. A definição será exibida na notação CND em uma nova guia no navegador.
+1. A definição é exibida na notação CND em uma nova guia no navegador.
 1. Salve as informações, se necessário.
 
 Para importar uma definição de tipo de nó:

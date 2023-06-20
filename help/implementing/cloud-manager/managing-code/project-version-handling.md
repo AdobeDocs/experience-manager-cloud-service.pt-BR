@@ -2,10 +2,10 @@
 title: Manuseio da versão do projeto Maven
 description: Para implantações de preparo e produção do AEM as a Cloud Service, o Cloud Manager gera uma versão exclusiva com incremento numérico.
 exl-id: 658bcbed-0733-45da-a3e3-9a5f817099c5
-source-git-commit: 21607fadf33dac038c7f794b933b92f60b8e20a9
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 100%
+source-wordcount: '266'
+ht-degree: 91%
 
 ---
 

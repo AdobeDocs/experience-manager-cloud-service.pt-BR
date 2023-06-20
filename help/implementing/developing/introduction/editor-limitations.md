@@ -2,9 +2,9 @@
 title: Limitações do editor
 description: O editor na interface habilitada para toque usa sobreposições para interagir com o conteúdo confinado em um iframe. Essa interação cria algumas limitações no uso do editor e também para desenvolvedores.
 exl-id: 6a4f0e43-1076-4da9-95dc-9c5bf83e30d0
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '315'
 ht-degree: 10%
 
 ---
@@ -51,7 +51,7 @@ Imagens de fundo fixas podem não ser exibidas como fixas ao rolar a tela devido
 
 Não há suporte para 100% de altura no elemento de corpo de uma página.
 
-* Uma solução alternativa é possível para implementar um corpo em tela cheia &quot;esticando&quot; o elemento do corpo da seguinte maneira:
+* Uma solução alternativa é possível implementar um corpo de tela cheia &quot;esticando&quot; o elemento do corpo da seguinte maneira:
 
 ```xml
 body {

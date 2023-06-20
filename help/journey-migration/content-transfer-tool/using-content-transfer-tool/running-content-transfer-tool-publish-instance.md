@@ -2,9 +2,9 @@
 title: Execução da ferramenta Transferência de conteúdo em uma instância de publicação
 description: Execução da ferramenta Transferência de conteúdo em uma instância de publicação
 exl-id: 01faab94-a939-4004-b094-e9eb8f67b96e
-source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '252'
 ht-degree: 11%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 11%
 
 ## Introdução {#introduction}
 
-A ferramenta Transferência de conteúdo (CTT) não executa nenhum tipo de análise de conteúdo antes de transferir o conteúdo da instância de origem para a instância de destino. Por exemplo, a CTT não diferencia entre conteúdo publicado e não publicado ao assimilar conteúdo em um ambiente de publicação. Qualquer conteúdo especificado no conjunto de migração será assimilado na instância de destino escolhida. O usuário pode assimilar um conjunto de migração em uma instância de Autor ou instância de Publicação, ou ambos.
+A ferramenta Transferência de conteúdo (CTT) não executa nenhum tipo de análise de conteúdo antes de transferir o conteúdo da instância de origem para a instância de destino. Por exemplo, a CTT não diferencia entre conteúdo publicado e não publicado ao assimilar conteúdo em um ambiente de publicação. Qualquer conteúdo especificado no conjunto de migração é assimilado na instância de destino escolhida. O usuário pode assimilar um conjunto de migração em uma instância de Autor ou instância de Publicação, ou ambos.
 
 >[!NOTE]
 >É recomendável que, ao mover o conteúdo para uma instância de Produção, a Ferramenta de transferência de conteúdo seja instalada na instância do Autor de origem para mover o conteúdo para a instância do Autor de destino e, de forma semelhante, instalar a Ferramenta de transferência de conteúdo na instância de Publicação de origem para mover o conteúdo para a instância de Publicação de destino. Consulte [Abordagem recomendada](#recommended-approach) abaixo para obter mais detalhes.
@@ -28,8 +28,7 @@ Siga a abordagem recomendada conforme descrito abaixo:
 
 * Durante a assimilação para publicação, o nível de publicação não será reduzido (ao contrário do autor).
 
-   >[!IMPORTANT]
-   >Como precaução, evite quaisquer operações de gravação iniciadas pelo usuário, como:
-   > * Distribuição de conteúdo do autor do AEM as a Cloud Service para publicação nesse ambiente
-   > * Sincronização de usuários entre instâncias de publicação
-
+  >[!IMPORTANT]
+  >Como precaução, evite quaisquer operações de gravação iniciadas pelo usuário, como:
+  > * Distribuição de conteúdo do autor do AEM as a Cloud Service para publicação nesse ambiente
+  > * Sincronização de usuários entre instâncias de publicação

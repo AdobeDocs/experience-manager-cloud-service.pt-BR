@@ -2,10 +2,10 @@
 title: Notas de versão do [!DNL Adobe Experience Manager]  as a Cloud Service 2022.10.0.
 description: Notas de versão do [!DNL Adobe Experience Manager]  as a Cloud Service 2022.10.0.
 exl-id: 8fce7c50-f322-4bcf-bd76-390faedfd5b7
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '850'
-ht-degree: 97%
+source-wordcount: '842'
+ht-degree: 91%
 
 ---
 
@@ -50,14 +50,14 @@ Assista ao vídeo de Visão geral da versão de outubro de 2022 que exibe um res
 
 * O Experience Manager Assets agora permite fazer upload de documentos em outros tipos de formato compatíveis e [efetuar a pré-visualização usando o visualizador do Document Cloud incluído](/help/assets/manage-pdf-documents.md). Os tipos de formato compatíveis incluem TXT, RTF, DOC, DOCX, PPT, PPTX, XLS e XLSX.
 
-   ![Representação de PDF para outros formatos](/help/release-notes/assets/multi-page-other-formats.png)
+  ![Representação de PDF para outros formatos](/help/release-notes/assets/multi-page-other-formats.png)
 
 
 ### Novos recursos no pré-lançamento do [!DNL Assets] {#prerelease-features-assets}
 
 * O Experience Manager Assets agora usa uma estrutura de inteligência artificial aprimorada para tags inteligentes de imagem. Essa inteligência de conteúdo resulta em melhor relevância e precisão das Tags inteligentes disponíveis para todos os ativos de imagem na assimilação. Além disso, as informações de orientação são preenchidas em `cq:tags`, o que permite melhores resultados de pesquisa através da utilização do filtro de Orientação.
 
-   Se você estiver interessado em participar da versão beta, [preencha este formulário](https://forms.office.com/pages/responsepage.aspx?id=Wht7-jR7h0OUrtLBeN7O4epXZrTVKKdJkUiHeolccf9UNEwyNEpHVEFaODdBNFZQSlFDREZQOVRRTy4u) até 14 de novembro.
+  Se você estiver interessado em participar da versão beta, [preencha este formulário](https://forms.office.com/pages/responsepage.aspx?id=Wht7-jR7h0OUrtLBeN7O4epXZrTVKKdJkUiHeolccf9UNEwyNEpHVEFaODdBNFZQSlFDREZQOVRRTy4u) até 14 de novembro.
 
 * O Experience Manager Assets agora [é compatível com o token SAS](/help/assets/add-assets.md#asset-bulk-ingestor) além da Chave de acesso para autenticação ao conectar-se à fonte de dados do Armazenamento de Blobs do Azure para assimilar ativos usando a ferramenta Importação em massa.
 
@@ -87,7 +87,7 @@ Assista ao vídeo de Visão geral da versão de outubro de 2022 que exibe um res
 
 * O AEM as a Cloud Service (Serviços do autor) agora está integrado com o Unified Shell para melhorar a experiência dos usuários e unificá-lo com todos os outros aplicativos da Experience Cloud. Consulte AEM as a [Cloud Service no Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) para obter mais detalhes.
 
-* Conforme mencionado anteriormente nas notas de versão, o uso da tela de administrador do agente de replicação ou da API de replicação para distribuição de pacotes de conteúdo maiores que 10 MB (nós com propriedades, não incluindo binários) está obsoleto e será aplicado nos próximos dias. Consulte [Gerenciar publicação](/help/operations/replication.md#manage-publication) ou o [Fluxo de trabalho de publicação da árvore de conteúdo](/help/operations/replication.md#publish-content-tree-workflow) para as abordagens sugeridas para replicar esses pacotes de conteúdo grandes.
+* Conforme mencionado anteriormente nas notas de versão, o uso da tela de administrador do agente de replicação ou da API de replicação para distribuir pacotes de conteúdo maiores que 10 MB (nós com propriedades, sem incluir binários) agora está obsoleto e é aplicado. Consulte [Gerenciar publicação](/help/operations/replication.md#manage-publication) ou o [Fluxo de trabalho de publicação da árvore de conteúdo](/help/operations/replication.md#publish-content-tree-workflow) para obter abordagens sugeridas para replicar esses pacotes de conteúdo grandes.
 
 * A configuração do Dispatcher agora faz referência a um arquivo que lista parâmetros de consulta de campanha de marketing comuns. Os clientes podem optar por remover o comentário dos parâmetros que são relevantes para eles, resultando em um melhor armazenamento em cache. Consulte [Parâmetros da campanha de marketing](/help/implementing/dispatcher/caching.md#marketing-parameters) para obter mais detalhes.
 

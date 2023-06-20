@@ -4,10 +4,10 @@ description: Conheça as práticas recomendadas compiladas pelas equipes de enge
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1434'
-ht-degree: 100%
+source-wordcount: '1429'
+ht-degree: 95%
 
 ---
 
@@ -29,8 +29,8 @@ Lembre-se de que uma Live Copy pode ser criada usando [páginas normais](creatin
 
 Os benefícios adicionais de usar configurações de blueprint são que elas:
 
-* Permitem que o autor use a opção de **Implantação** em um blueprint para enviar modificações explicitamente para as Live Copies que herdam deste blueprint.
-* Permitem que o autor use a funcionalidade **Criar Site** para selecionar idiomas facilmente e configurar a estrutura da Live Copy.
+* Permitir que o autor use o **Implantação** opção em um blueprint para enviar modificações explicitamente para as Live Copies que herdam deste blueprint.
+* Permitir que o autor use **Criar site** para selecionar idiomas facilmente e configurar a estrutura da Live Copy.
 * Definir uma configuração de implantação padrão para Live Copies que tenham uma relação com o blueprint.
 
 No caso de uma configuração de blueprint não ser mencionada, as implantações só podem ser iniciadas a partir das próprias Live Copies, essencialmente obtendo conteúdo na origem.

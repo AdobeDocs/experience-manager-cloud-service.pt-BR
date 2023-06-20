@@ -2,9 +2,9 @@
 title: Tag de decoração
 description: Quando um componente em uma página da Web é renderizado, um elemento HTML pode ser gerado, vinculando o componente renderizado dentro de si mesmo. Para desenvolvedores, o AEM oferece lógica simples e clara controlando as tags de decoração que envolvem componentes incluídos.
 exl-id: a90fd619-eff6-466f-9178-90374f988b5d
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '787'
 ht-degree: 10%
 
 ---
@@ -39,7 +39,7 @@ As seguintes propriedades e nós podem ser aplicados aos componentes para contro
 * **`cq:htmlTag`nó :** Esse nó pode ser adicionado em um componente e pode ter as seguintes propriedades:
    * **`cq:tagName {String}`:** Isso pode ser usado para especificar uma tag HTML personalizada para ser usada para envolver os componentes em vez do elemento DIV padrão.
    * **`class {String}`:** Isso pode ser usado para especificar nomes de classe css a serem adicionados ao invólucro.
-   * Outros nomes de propriedades serão adicionados como atributos de HTML com o mesmo valor de string fornecido.
+   * Outros nomes de propriedades são adicionados como atributos de HTML com o mesmo valor de string fornecido.
 
 ## Controles de script {#script-controls}
 
@@ -89,7 +89,7 @@ Todos os exemplos a seguir pressupõem a seguinte estrutura de conteúdo e compo
 
 #### Caso de uso 1: Incluir um componente para reutilização de código {#use-case-include-a-component-for-code-reuse}
 
-O caso de uso mais comum é quando um componente inclui outro componente por motivos de reutilização de código. Nesse caso, o componente incluído não deseja ser editável com sua própria barra de ferramentas e caixa de diálogo, portanto, nenhum invólucro é necessário e as propriedades do componente `cq:htmlTag` serão ignorados. Esse pode ser considerado o comportamento padrão.
+O caso de uso mais comum é quando um componente inclui outro componente por motivos de reutilização de código. Nesse caso, o componente incluído não deseja ser editável com sua própria barra de ferramentas e caixa de diálogo, portanto, nenhum invólucro é necessário e as propriedades do componente `cq:htmlTag` é ignorado. Esse pode ser considerado o comportamento padrão.
 
 `one.html: <sly data-sly-resource="child"></sly>`
 

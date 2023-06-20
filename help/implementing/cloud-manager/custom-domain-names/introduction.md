@@ -2,10 +2,10 @@
 title: Introdução a nomes de domínio personalizados
 description: A interface do usuário do Cloud Manager permite adicionar um domínio personalizado para identificar seu site com um nome exclusivo e de marca, de maneira automatizada.
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: 1862ae2d0d60ac9ed89a4ba3da82dcf8f032ee65
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '770'
-ht-degree: 100%
+source-wordcount: '768'
+ht-degree: 94%
 
 ---
 
@@ -40,7 +40,7 @@ O AEM as a Cloud Service oferece um serviço de rede de entrega de conteúdo (CD
 * Os nomes de domínio personalizados (e certificados) que são instalados na CDN gerenciada pelo AEM são gerenciados através do Cloud Manager.
 * Os nomes de domínio personalizados (e certificados) que são instalados em sua própria CDN são gerenciados nessa CDN específica.
 
-Os domínios gerenciados em sua própria CDN não precisam ser instalados via Cloud Manager. Eles serão disponibilizados para o AEM via X-Forwarded-Host e corresponderão aos vhosts definidos no dispatcher. [Consulte a documentação da CDN para obter mais informações.](/help/implementing/dispatcher/cdn.md)
+Os domínios gerenciados na sua própria CDN não precisam ser instalados por meio do Cloud Manager. Eles são disponibilizados para o AEM por meio do X-Forwarded-Host e correspondem aos vhosts definidos no Dispatcher. Consulte a [Documentação da CDN](/help/implementing/dispatcher/cdn.md).
 
 Em um ambiente, é possível ter ambos os domínios instalados na CDN gerenciada pela AEM e instalados em sua própria CDN.
 

@@ -2,10 +2,10 @@
 title: Visão geral do editor de SPA
 description: Este artigo fornece uma visão geral abrangente do Editor de SPA e como ele funciona, incluindo fluxos de trabalho detalhados de interação do Editor de SPA no AEM.
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1636'
-ht-degree: 100%
+source-wordcount: '1630'
+ht-degree: 95%
 
 ---
 
@@ -35,7 +35,7 @@ O componente de página para um SPA não fornece os elementos HTML de seus compo
 
 ### Gerenciamento do modelo de página {#page-model-management}
 
-A resolução e o gerenciamento do modelo de página são delegados a uma biblioteca `PageModel`. O SPA deve usar a biblioteca de Modelos de página para ser inicializado e criado pelo Editor de SPA. A biblioteca de Modelos de página fornecida indiretamente ao componente Página de AEM por meio do npm `aem-react-editable-components`. O Modelo de página é um interpretador entre o AEM e o SPA e, portanto, sempre deve estar presente. Quando a página é criada, uma biblioteca adicional `cq.authoring.pagemodel.messaging` deve ser adicionada para permitir a comunicação com o editor de páginas.
+A resolução e o gerenciamento do modelo de página são delegados a uma biblioteca `PageModel`. O SPA deve usar a biblioteca de Modelo de página para que possa ser inicializado e criado pelo Editor de SPA. A biblioteca de Modelos de página fornecida indiretamente ao componente Página de AEM por meio do npm `aem-react-editable-components`. O Modelo de página é um interpretador entre o AEM e o SPA e, portanto, sempre deve estar presente. Quando a página é criada, uma biblioteca adicional `cq.authoring.pagemodel.messaging` deve ser adicionado para habilitar a comunicação com o editor de páginas.
 
 Se o componente Página de SPA herda do componente principal da página, há duas opções para criar a categoria de biblioteca de clientes `cq.authoring.pagemodel.messaging` disponível:
 
@@ -78,7 +78,7 @@ Lembrando os elementos principais do editor de SPA, o fluxo de trabalho de alto 
 1. O SPA é carregado em um quadro separado.
 1. O SPA solicita conteúdo JSON e renderiza componentes do lado do cliente.
 1. O Editor de SPA detecta componentes renderizados e gera sobreposições.
-1. O autor clica em sobrepor, exibindo a barra de ferramentas de edição do componente.
+1. O autor clica na sobreposição, exibindo a barra de ferramentas de edição do componente.
 1. O Editor de SPA mantém as edições com uma solicitação POST para o servidor.
 1. As solicitações do Editor de SPA atualizaram o JSON para o Editor de SPA, que é enviado ao SPA com um evento DOM.
 1. O SPA renderiza novamente o componente relacionado, atualizando seu DOM.
@@ -90,7 +90,6 @@ Lembrando os elementos principais do editor de SPA, o fluxo de trabalho de alto 
 >* O SPA é sempre encarregado de sua exibição.
 >* O Editor de SPA é isolado do próprio SPA.
 >* Na produção (publicação), o editor de SPA nunca é carregado.
-
 
 ### Fluxo de trabalho de edição de página do cliente-servidor {#client-server-page-editing-workflow}
 
@@ -161,7 +160,7 @@ As versões anteriores dessas estruturas podem funcionar com o SDK do Editor de 
 
 ### Estruturas adicionais {#additional-frameworks}
 
-Estruturas de SPA adicionais podem ser implementadas para funcionar com o SDK do Editor de SPA de AEM. Consulte o documento [Blueprint do SPA](blueprint.md) para os requisitos que uma estrutura deve atender para criar uma camada específica de estrutura composta por módulos, componentes e serviços para trabalhar com o Editor de SPA do AEM.
+Estruturas de SPA adicionais podem ser implementadas para funcionar com o SDK do Editor de SPA de AEM. Consulte a [Blueprint SPA](blueprint.md) documento para os requisitos que uma estrutura deve atender para criar uma camada específica da estrutura composta por módulos, componentes e serviços para trabalhar com o Editor de SPA AEM.
 
 ### Uso de vários seletores {#multiple-selectors}
 

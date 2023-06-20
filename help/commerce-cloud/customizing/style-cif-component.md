@@ -10,11 +10,11 @@ audience: developer
 feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
-exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34,75df606f-b22f-4f7e-bd8a-576d215f72bc
-source-git-commit: d054f960f13b7308dbf42556ef60a971e880197e
+exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2550'
-ht-degree: 29%
+source-wordcount: '2544'
+ht-degree: 27%
 
 ---
 
@@ -28,7 +28,7 @@ A variável [Projeto CIF Venia](https://github.com/adobe/aem-cif-guides-venia) �
 
 ## O que você vai criar
 
-Neste tutorial, um novo estilo será implementado para o Teaser do produto que se assemelha a um cartão. As lições aprendidas no tutorial podem ser aplicadas a outros Componentes principais da CIF.
+Neste tutorial, um novo estilo é implementado para o Teaser do produto que se assemelha a um cartão. As lições aprendidas no tutorial podem ser aplicadas a outros Componentes principais da CIF.
 
 ![O que você vai criar](../assets/style-cif-component/what-you-will-build.png)
 
@@ -192,7 +192,7 @@ Em seguida, faça uma pequena alteração no estilo de Teaser para ver como `ui.
 
    >[!NOTE]
    >
-   > Somente as bibliotecas base são &quot;codificadas&quot; como parte dos scripts da página. `venia.site` O não está incluído nesses arquivos e, em vez disso, é incluído como parte do modelo de página para obter mais flexibilidade. Isso será inspecionado posteriormente.
+   > Somente as bibliotecas base são &quot;codificadas&quot; como parte dos scripts da página. `venia.site` O não está incluído nesses arquivos e, em vez disso, é incluído como parte do modelo de página para obter mais flexibilidade. Esse processo é inspecionado posteriormente.
 
 1. No terminal, crie e implante todo o projeto em uma instância local do AEM:
 
@@ -277,14 +277,14 @@ Há várias opções para incluir uma biblioteca do lado do cliente. Em seguida,
 
    ![Política da página - página inicial](../assets/style-cif-component/page-policy-properties.png)
 
-   No lado direito, é possível ver uma lista das **categorias** de bibliotecas de clientes que serão incluídas em todas as páginas que utilizam esse modelo.
+   No lado direito, é possível ver uma lista de Bibliotecas de clientes **categorias** que estão incluídos em todas as páginas que usam esse modelo.
 
    * `venia.dependencies` - Fornece bibliotecas de fornecedores que `venia.site` depende do.
    * `venia.site` - Esta é a categoria para `clientlib-site` que o `ui.frontend` gerado pelo módulo.
 
    Observe que outros modelos utilizam a mesma política, **Página de conteúdo**, **Página de aterrissagem**, etc. Ao reutilizar a mesma política, podemos garantir que as mesmas bibliotecas de clientes sejam incluídas em todas as páginas.
 
-   A vantagem de utilizar modelos e políticas de página para gerenciar a inclusão das bibliotecas de clientes é que você pode alterar a política de acordo com o modelo. Por exemplo, talvez você esteja gerenciando duas marcas diferentes na mesma instância do AEM. Cada marca terá seu próprio estilo ou *tema*, mas as bibliotecas base e o código base serão os mesmos. Outro exemplo: se você quisesse que uma bibliotecas do cliente maior fosse exibida apenas em determinadas páginas, seria possível fazer uma política de página exclusiva para esse modelo.
+   A vantagem de utilizar modelos e políticas de página para gerenciar a inclusão das bibliotecas de clientes é que você pode alterar a política de acordo com o modelo. Por exemplo, talvez você esteja gerenciando duas marcas diferentes na mesma instância do AEM. Cada marca tem seu próprio estilo ou *tema* mas as bibliotecas base e o código são os mesmos. Outro exemplo: se você quisesse que uma bibliotecas do cliente maior fosse exibida apenas em determinadas páginas, seria possível fazer uma política de página exclusiva para esse modelo.
 
 ## Desenvolvimento de Webpack local {#local-webpack-development}
 
@@ -317,7 +317,7 @@ As imagens proxies webpack-dev-server e algumas das imagens CSS/JavaScript da in
    </body>
    ```
 
-   Eles são removidos porque representam a versão compilada do CSS e do JavaScript gerada pelo `ui.frontend` módulo. Deixe as outras bibliotecas do cliente como elas serão enviadas por proxy da instância do AEM em execução.
+   Eles são removidos porque representam a versão compilada do CSS e do JavaScript gerada pelo `ui.frontend` módulo. Deixe as outras bibliotecas de clientes como elas serão enviadas por proxy da instância do AEM em execução.
 
 1. Abra uma nova janela de terminal e acesse o `ui.frontend` pasta. Execute o comando `npm start`:
 
@@ -336,11 +336,11 @@ As imagens proxies webpack-dev-server e algumas das imagens CSS/JavaScript da in
 
    ![Servidor de desenvolvimento do Webpack na porta 80](../assets/style-cif-component/webpack-dev-server-port80.png)
 
-   Deixe o webpack-dev-server em execução. Ele será usado no próximo exercício.
+   Deixe o webpack-dev-server em execução. É usado no próximo exercício.
 
 ## Implementar estilo de cartão para Teaser do produto {#update-css-product-teaser}
 
-Em seguida, modifique os arquivos Sass na `ui.frontend` para implementar um Teaser do produto com estilo de cartão. O webpack-dev-server será usado para visualizar rapidamente as alterações.
+Em seguida, modifique os arquivos Sass na `ui.frontend` para implementar um Teaser do produto com estilo de cartão. O webpack-dev-server é usado para visualizar rapidamente as alterações.
 
 Retorne ao IDE e ao projeto gerado.
 
@@ -455,7 +455,7 @@ Depois que o código do projeto for implantado no AEM, poderemos ver as alteraç
 
    ![Estilo atualizado do Teaser do produto](../assets/style-cif-component/product-teaser-new-style.png)
 
-1. Tente adicionar outros teasers de produto. Use o Modo de layout para alterar a largura e a distância dos componentes a fim de exibir vários teasers em sequência.
+1. Tente adicionar outros teasers de produto. Use o Modo de layout para alterar a largura e a distância dos componentes para exibir vários teasers seguidos.
 
    ![Vários teasers de produtos](../assets/style-cif-component/multiple-teasers-final.png)
 

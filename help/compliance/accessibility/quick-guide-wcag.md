@@ -2,10 +2,10 @@
 title: Um guia rápido para a WCAG 2.1
 description: Um guia rápido para a WCAG 2.1
 exl-id: 56aa834b-cd07-41c5-88f2-915bc0596e48
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1776'
-ht-degree: 100%
+source-wordcount: '1774'
+ht-degree: 94%
 
 ---
 
@@ -42,8 +42,7 @@ em outras palavras, diretrizes que podem ser aplicadas a diversos formatos de co
 cada diretriz é redigida de forma que possa ser objetivamente testada, a fim de garantir que um grupo de especialistas em acessibilidade concordasse, de um modo geral, que a diretriz foi cumprida. Um dos desafios das diretrizes de acessibilidade é que, embora algumas possam ser testadas tecnicamente, outras exigem uma avaliação humana para determinar se a diretriz foi ou não cumprida com êxito.
 
 * Suporte para **implementação priorizada e contextual:**
-As orientações da WCAG 2.1 recebem prioridade, relacionadas com o impacto provável de não seguir uma orientação para um grupo específico de utilizadores com deficiência. Isso permite que os autores tomem uma decisão bem informada sobre as orientações mais importantes para suas situações específicas. Além disso, o conceito de 
-*acessibilidade compatível* foi introduzido. Isso permite que os autores tomem decisões sobre como usar tecnologias da Web que possam não ter suporte total para acessibilidade ou exigir que os usuários tenham tecnologias de assistência e/ou navegadores específicos para se beneficiarem dos recursos de acessibilidade.
+As orientações da WCAG 2.1 recebem prioridade, relacionadas com o impacto provável de não seguir uma orientação para um grupo específico de utilizadores com deficiência. Isso permite que os autores tomem uma decisão bem informada sobre as orientações mais importantes para suas situações específicas. Além disso, é introduzido o conceito &quot;*com suporte para acessibilidade*&quot;. Isso permite que os autores tomem decisões sobre como usar tecnologias da Web que podem não ter suporte total para acessibilidade ou exigir que os usuários tenham tecnologias de assistência e navegadores específicos ou ambos se beneficiem dos recursos de acessibilidade.
 
 Esses objetivos influenciaram significativamente a estrutura da WCAG 2.1.
 
@@ -115,7 +114,7 @@ Cada técnica tem um número exclusivo, que está relacionado à coleção. Por 
 
 As técnicas podem ser suficientes, consultivas ou uma falha:
 
-* Uma *Técnica suficiente* é aquela que, se for seguida, será suficiente para cumprir um critério de sucesso específico.
+* A *Técnica suficiente* é uma opção que, se for seguida, é suficiente para atender a um critério de sucesso específico.
 * Uma *Técnica consultiva* é aquela que, se for seguida, terá um impacto positivo na acessibilidade, mas pode não ser suficiente por si só para garantir que um critério específico de sucesso seja cumprido.
 * Uma *Falha* é uma técnica que descreve um exemplo específico de onde um critério de sucesso não seria atendido.
 
@@ -145,7 +144,7 @@ Um exemplo pode ser encontrado em: [Noções sobre o critério de sucesso 1.1.1 
 
 ### Como cumprir a WCAG 2.1 {#how-to-meet-wcag}
 
-A seção &quot;Como cumprir&quot; está disponível na página [Como cumprir a WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/). Esta seção fornece uma apresentação alternativa da WCAG, permitindo que os leitores refinem o conteúdo das diretrizes para os mais relevantes para os próprios interesses e/ou circunstâncias do leitor. Os leitores podem filtrar as técnicas de critérios de sucesso que desejam visualização, especificando tecnologias específicas de conteúdo na Web, como folhas de estilos em cascata ou scripts, ou especificando um ou mais níveis de prioridade específicos.
+A seção &quot;Como cumprir&quot; está disponível no [Como cumprir a WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/) página. Esta seção fornece uma apresentação alternativa da WCAG, permitindo que os leitores refinem o conteúdo das diretrizes para os mais relevantes para os próprios interesses e/ou circunstâncias do leitor. Os leitores podem filtrar as técnicas de critérios de sucesso que desejam visualização, especificando tecnologias específicas de conteúdo na Web, como folhas de estilos em cascata ou scripts, ou especificando um ou mais níveis de prioridade específicos.
 
 Sem filtragem, esse recurso fornece todos os critérios de sucesso agrupados por diretriz. Para cada critério de sucesso, é fornecido o seguinte:
 

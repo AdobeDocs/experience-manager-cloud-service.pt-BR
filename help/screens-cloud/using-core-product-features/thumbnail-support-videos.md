@@ -3,9 +3,9 @@ title: Suporte a miniaturas para vídeos no Screens as a Cloud Service
 description: Esta página descreve como adicionar suporte a miniaturas para vídeos no Screens as a Cloud Service.
 index: true
 exl-id: 7b15d7cc-f089-4008-9039-5f48343a0f20
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '490'
 ht-degree: 1%
 
 ---
@@ -68,7 +68,7 @@ Siga as etapas abaixo para usar a miniatura em vídeos:
 
 A miniatura em vídeos oferece suporte aos seguintes casos de uso:
 
-* Um componente de vídeo sem nada configurado será ignorado.
+* Um componente de vídeo sem nada configurado é ignorado.
 
 * Um componente de vídeo com apenas o conjunto de miniaturas reproduzirá a miniatura.
 

@@ -2,10 +2,10 @@
 title: Práticas recomendadas de gerenciamento de SEO e URL do Adobe Experience Manager as a Cloud Service
 description: Práticas recomendadas de gerenciamento de SEO e URL do Adobe Experience Manager as a Cloud Service
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
-source-git-commit: d925310603961f1f3721c283fc247105459e9c0f
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3714'
-ht-degree: 100%
+source-wordcount: '3709'
+ht-degree: 97%
 
 ---
 
@@ -25,7 +25,7 @@ Existem algumas práticas recomendadas aceitas de URLs.
 
 No projeto do AEM, ao avaliar os URLs, pergunte-se o seguinte:
 
-*“Se um usuário visualizar este URL, porém não houver conteúdo na página, ele poderia descrever sobre o que se trata essa página?”*
+*&quot;Se um usuário visualizar este URL, porém não houver conteúdo na página, ele poderia descrever sobre o que se trata essa página?&quot;*
 
 Se a resposta for sim, então é provável que o URL funcione bem em um mecanismo de pesquisa.
 
@@ -46,9 +46,8 @@ Estas são algumas dicas gerais sobre como criar os URLs para SEO:
    * Ao usar seletores em uma página, os seletores que fornecem valor semântico são preferenciais.
    * Se um humano não conseguir ler o URL, um mecanismo de pesquisa também não poderá.
    * Por exemplo:
-      `mybrand.com/products/product-detail.product-category.product-name.html`
-é preferível a 
-`mybrand.com/products/product-detail.1234.html`
+     `mybrand.com/products/product-detail.product-category.product-name.html`
+é preferível a `mybrand.com/products/product-detail.1234.html`
 
 * Evite subdomínios sempre que possível, já que os mecanismos de pesquisa os tratarão como entidades diferentes, fragmentando o valor de SEO do site.
 
@@ -78,7 +77,7 @@ Estas são algumas dicas gerais sobre como criar os URLs para SEO:
 
 * Certifique-se de que cada página seja distribuída somente de um protocolo.
 
-   * Às vezes, os sites serão distribuídos pelo `http` até que um usuário chegue a uma página com, por exemplo, um formulário de check-out ou logon, no qual ele é alternado para `https`. Ao acessar links a partir dessa página, se o usuário puder retornar às páginas `http` e acessá-las por meio de `https`, o mecanismo de pesquisa as rastreará como duas páginas separadas.
+   * Às vezes, os sites são distribuídos pelo `http` até que um usuário chegue a uma página com, por exemplo, um formulário de check-out ou logon, no qual ele é alternado para `https`. Ao acessar links a partir dessa página, se o usuário puder retornar às páginas `http` e acessá-las por meio de `https`, o mecanismo de pesquisa as rastreará como duas páginas separadas.
 
    * Atualmente, o Google prefere páginas `https` às páginas `http`. Por isso, muitas vezes é mais fácil distribuir todo o site pelo `https`.
 
@@ -151,7 +150,7 @@ Os servlets **sling** permitem registrar o servlet da maneira oposta. Em vez de 
 A anotação SCR para este tipo de servlet seria algo como isto:
 
 ```
-@SlingServlet(resourceTypes = "myBrand/components/pages/myPageType", selectors = "myRenderer", extensions = "json”, methods=”GET”)
+@SlingServlet(resourceTypes = "myBrand/components/pages/myPageType", selectors = "myRenderer", extensions = "json", methods="GET")
 ```
 
 Nesse caso, o recurso que o URL endereça (uma instância do recurso `myPageType`) é acessível automaticamente no servlet. Para acessá-lo, você chama:
@@ -186,20 +185,20 @@ Se um autor desejar que uma página seja acessível de um segundo local para fin
 Talvez você queira exibir nomes de página localizados para usuários de conteúdo traduzido. Por exemplo:
 
 * Em vez de um usuário de língua espanhola navegar até:
-   `www.mydomain.com/es/home.html`
+  `www.mydomain.com/es/home.html`
 
 * Seria melhor que o URL fosse:
-   `www.mydomain.com/es/casa.html`.
+  `www.mydomain.com/es/casa.html`.
 
 O desafio de localizar o nome da página é que muitas das ferramentas de localização disponíveis na plataforma AEM dependem que os nomes das páginas correspondam às localidades para manter o conteúdo sincronizado.
 
 A propriedade `sling:alias` permite ter os dois. `sling:alias` pode ser adicionado como uma propriedade a qualquer recurso para permitir um nome de alias para o recurso. No exemplo anterior, você teria:
 
 * Uma página no JCR em:
-   `…/es/home`
+  `…/es/home`
 
 * Em seguida, adicione uma propriedade a ela:
-   `sling:alias` = `casa`
+  `sling:alias` = `casa`
 
 Isso permitiria que as ferramentas de tradução do AEM, como o gerente de vários sites, continuassem a manter uma relação entre:
 
@@ -218,12 +217,11 @@ Ao mesmo tempo, permitiria que os usuários finais interagissem com o nome da p�
 Em uma instalação padrão do AEM:
 
 * para a configuração do OSGi
-   **Apache Sling Resource Resolver Factory**
-( 
-`org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl`)
+  **Apache Sling Resource Resolver Factory**
+( `org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl`)
 
 * a propriedade
-   **Localização do mapeamento** ( `resource.resolver.map.location`)
+  **Localização do mapeamento** ( `resource.resolver.map.location`)
 
 * toma como padrão `/etc/map`
 
@@ -252,8 +250,8 @@ No entanto, há também uma maneira mais simples de gerenciar isso:
    Usando o console da Web (por exemplo, localhost:4502/system/console/configMgr), você pode configurar o Sling Resource Resolver:
 
    * **Apache Sling Resource Resolver Factory**
+     `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
 
-      `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
    É recomendável criar os mapeamentos necessários para encurtar URLs como expressões regulares e, em seguida, definir essas configurações em um nó OsgiConfignode, `config.publish`, incluído na sua versão.
 
    Em vez de definir os mapeamentos no `/etc/map`, eles podem ser atribuídos diretamente à propriedade **Mapeamentos de URL** ( `resource.resolver.mapping`):
@@ -315,7 +313,7 @@ Exemplos:
 Ambos aplicariam a seguinte tag ao cabeçalho da página:
 
 ```xml
-<link rel=”canonical” href=”my-brand/my-page.html”/>
+<link rel="canonical" href="my-brand/my-page.html"/>
 ```
 
 O `href` pode ser relativo ou absoluto. O código deve ser incluído na marcação da página para determinar o URL canônico da página e exibir essa tag.
@@ -373,7 +371,7 @@ Por exemplo, considere um site que define uma raiz de mapa de site de nível sup
 
 Na configuração padrão, a caixa de diálogo Propriedades da página fornece uma opção para marcar uma página como uma raiz do mapa de site e, portanto, conforme descrito acima, gerar um mapa de site próprio e seus descendentes. Esse comportamento é implementado pelas implementações da interface `SitemapGenerator` e pode ser estendido adicionando implementações alternativas. No entanto, como a frequência na qual os mapas de site XML são regenerados depende muito dos fluxos de trabalho e cargas de trabalho de criação de conteúdo, o produto não envia nenhuma configuração `SitemapScheduler`. Isso resulta na aceitação eficaz do recurso.
 
-Para habilitar o trabalho em segundo plano que gera os mapas de site XML, um `SitemapScheduler` deve ser configurado. Para fazer isso, crie uma configuração OSGI para o PID `org.apache.sling.sitemap.impl.SitemapScheduler`. A expressão do scheduler `0 0 0 * * ?` pode ser usada como ponto de partida para regenerar todos os mapas de site XML uma vez por dia, à meia-noite.
+Para habilitar o trabalho em segundo plano que gera os mapas de site XML, `SitemapScheduler` deve ser configurado. Para fazer isso, crie uma configuração OSGI para o PID `org.apache.sling.sitemap.impl.SitemapScheduler`. A expressão do scheduler `0 0 0 * * ?` pode ser usada como ponto de partida para regenerar todos os mapas de site XML uma vez por dia, à meia-noite.
 
 ![Apache Sling Sitemap - Scheduler](assets/sling-sitemap-scheduler.png)
 

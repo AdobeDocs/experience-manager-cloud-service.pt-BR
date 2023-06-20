@@ -4,10 +4,10 @@ description: Use um aplicativo de exemplo do React para saber como personalizar 
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 469ebc7c3cae6dbfc38077e841db3c61ca16c680
+source-git-commit: 3645918f6ce592b6c70cb4339ab6f0e5e9d71519
 workflow-type: tm+mt
-source-wordcount: '1038'
-ht-degree: 99%
+source-wordcount: '1036'
+ht-degree: 97%
 
 ---
 
@@ -105,7 +105,7 @@ Agora que você atualizou a imagem do ciclista, vamos analisar como adicionar um
 
 1. Selecione a camada **Ciclismo de montanha - Comprável**.
 
-1. Para criar uma nova chamada nesse painel, você deve criar um novo fragmento de conteúdo de momento de compra. Toque ou clique no botão **+ Criar novo fragmento**.
+1. Para criar uma nova chamada neste painel, você deve criar um novo Fragmento de conteúdo do momento que pode ser comprado. Toque ou clique no botão **+ Criar novo fragmento**.
 
    ![Adicionar um momento de compra](assets/do-not-localize/add-reference-1-5.png)
 

@@ -2,10 +2,10 @@
 title: Teste funcional
 description: Saiba mais sobre os três diferentes tipos de testes funcionais integrados ao processo de implantação do AEM as a Cloud Service para garantir a qualidade e a confiabilidade do seu código.
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: 7d15440159a8e24314753acd5b37fcd2c5e8ec4c
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 100%
+source-wordcount: '551'
+ht-degree: 88%
 
 ---
 
@@ -53,7 +53,7 @@ Os testes funcionais do produto são mantidos como um projeto de código aberto.
 
 ### Teste funcional personalizado {#custom-functional-testing}
 
-Embora o teste funcional do produto seja definido pela Adobe, você pode criar seu próprio teste de qualidade para o seu aplicativo. Isso será realizado na forma de um teste funcional personalizado como parte do [pipeline de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) ou, opcionalmente, do [pipeline de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md), a fim de garantir a qualidade do seu aplicativo.
+Embora o teste funcional do produto seja definido pela Adobe, você pode criar seu próprio teste de qualidade para o seu aplicativo. Isso é executado como um teste funcional personalizado como parte da [pipeline de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) ou, opcionalmente [pipeline de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) para garantir a qualidade do seu aplicativo.
 
 O teste funcional personalizado é executado tanto para implantações de código personalizado quanto para atualizações por push, o que torna especialmente importante criar bons testes funcionais, a fim de impedir que as alterações de código do AEM quebrem o código do aplicativo. A etapa de teste funcional personalizado está sempre presente e não pode ser ignorada.
 
@@ -62,7 +62,7 @@ Consulte [Testes funcionais de Java](/help/implementing/cloud-manager/java-funct
 
 ### Testes de interface do usuário personalizados {#custom-ui-testing}
 
-Os testes de interface do usuário personalizados são um recurso opcional que permite criar e executar automaticamente testes na interface do usuário para seus aplicativos. Os testes de interface são baseados no Selenium e compactados em uma imagem do Docker, para permitir uma variedade de opções de linguagens e estruturas, como Java e Maven, Node e WebDriver.io ou qualquer outra estrutura e tecnologia criada com base no Selenium.
+Os testes de interface do usuário personalizados são um recurso opcional que permite criar e executar automaticamente testes na interface do usuário para seus aplicativos. Os testes de interface do usuário são testes baseados em Selenium, compactados em uma imagem do Docker, para permitir uma grande variedade de linguagens e estruturas, como Java e Maven, Node e WebDriver.io, ou qualquer outra estrutura e tecnologia criada no Selenium.
 
 Consulte [Teste personalizado da interface](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing) para obter mais informações.
 

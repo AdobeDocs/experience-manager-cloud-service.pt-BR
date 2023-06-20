@@ -2,10 +2,10 @@
 title: Jornada do complemento de demonstrações de referência do AEM
 description: Comece aqui para obter uma jornada guiada sobre como adicionar facilmente o complemento de demonstrações de referência do AEM a um ambiente de sandbox com configuração mínima do AEM e sobre poder testar os recursos avançados do AEM com exemplos completos com base nas práticas recomendadas.
 exl-id: 8a6d4abf-0832-40e8-9ba6-1ad4ba794ffa
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '855'
-ht-degree: 100%
+source-wordcount: '852'
+ht-degree: 91%
 
 ---
 
@@ -15,7 +15,7 @@ Comece aqui para obter uma jornada guiada sobre como adicionar facilmente o comp
 
 ## Introdução {#introduction}
 
-O AEM é um conjunto de ferramentas avançado para criar e gerenciar experiências digitais. Autores de conteúdo podem criar experiências digitais facilmente usando o editor de sites e organizar o conteúdo usando o console Sites, tudo isso enquanto visualizam o conteúdo em tempo real, conforme será entregue pelo AEM aos seus públicos entre canais.
+O AEM é um conjunto de ferramentas avançado para criar e gerenciar experiências digitais. Autores de conteúdo podem criar experiências digitais facilmente usando o editor de sites e organizar o conteúdo usando o console Sites, tudo isso enquanto visualizam o conteúdo em tempo real conforme é entregue pelo AEM aos seus públicos entre canais.
 
 Sem conteúdos e configurações de exemplo, pode ser difícil para os clientes novos e experientes testar os recursos avançados do AEM. O complemento de demonstrações de referência do AEM permite a fácil criação de ambientes sandbox pré-carregados com exemplos de conteúdos pré-configurados usando as diretrizes mais recentes de práticas recomendadas da Adobe. Com o complemento, é possível avaliar facilmente os recursos do AEM Sites e AEM Screens em contexto e com pouca configuração.
 
@@ -34,7 +34,7 @@ Se quiser saber como a Adobe recomenda resolver casos de negócios de sites com 
 
 ## Público {#audience}
 
-Esta jornada apresenta os requisitos, as etapas e a abordagem para criar um novo programa e configurar uma sandbox do AEM com o complemento de demonstrações de referência do AEM, incluindo o conteúdo de demonstração do Sites e/ou Screens. Seu público-alvo principal é o **administrador do sistema** que recebe a função de **Proprietário da empresa** no Cloud Manager. Essa é geralmente a mesma pessoa que seria responsável pela gestão do ambiente. No entanto, uma vez instalado o complemento de demonstrações de referência, esse administrador poderá conceder a outros usuários acesso ao ambiente do AEM para testar os recursos que foram ativados pelo complemento.
+Esta jornada apresenta os requisitos, as etapas e a abordagem para criar um novo programa e configurar uma sandbox do AEM com o complemento de demonstrações de referência do AEM, incluindo o conteúdo de demonstração do Sites e/ou Screens. Seu público-alvo principal é o **administrador do sistema** que recebe a função de **Proprietário da empresa** no Cloud Manager. Essa é geralmente a mesma pessoa que seria responsável pela gestão do ambiente. No entanto, após a instalação do Complemento de demonstrações de referência, esse administrador poderá conceder a outros usuários acesso ao ambiente AEM para testar os recursos que foram ativados pelo complemento.
 
 ## A jornada do complemento de demonstração de referência do AEM {#the-journey}
 

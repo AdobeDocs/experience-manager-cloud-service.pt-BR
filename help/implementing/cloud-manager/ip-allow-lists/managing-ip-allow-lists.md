@@ -2,10 +2,10 @@
 title: Gerenciamento de listas de permissões de IP
 description: Saiba como exibir, editar, excluir e verificar o status de suas listas de permissões de IP no Cloud Manager.
 exl-id: 6efabe53-3f45-47d4-ac1f-979cae0ab33e
-source-git-commit: 3080427529bb65e27721e05069012b33579fdd73
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '821'
-ht-degree: 100%
+source-wordcount: '818'
+ht-degree: 92%
 
 ---
 
@@ -69,8 +69,8 @@ Siga estas etapas para verificar o status das listas de permissões de IP.
 * **Falha ao excluir** - Um ou mais cancelamentos de aplicação falharam durante uma operação de exclusão.
 
    * Cada cancelamento de aplicação é listado junto com o status **Concluído** ou **Falha**.
-   * O status será **Falha ao excluir** se um cancelamento de aplicação falhar.
-   * O status permanecerá como **Falha ao excluir** até que todas as falhas sejam resolvidas.
+   * O status torna-se **Falha ao excluir** se um cancelamento de aplicação falhar.
+   * O status permanece como **Falha ao excluir** até que todas as falhas sejam resolvidas.
       * Você deve selecionar **Excluir** no menu reticências, na extremidade direita da linha da tabela, para resolver qualquer falha.
    * Não será possível atualizar uma lista de permissões de IP enquanto o status for **Falha**.
 
@@ -90,7 +90,7 @@ A exclusão de uma lista de permissões IP cancela automaticamente sua aplicaç�
 
 ## Configurações pré-existentes para CDN {#pre-existing-cdn}
 
-Se você tiver uma configuração de CDN pré-existente para suas listas de permissões de IP, haverá uma mensagem informativa na página **Lista de permissões de IP** incentivando você a adicionar essas configurações por meio da interface do usuário, para que fiquem visíveis e possam ser definidas no Cloud Manager.
+Se você tiver uma configuração de CDN pré-existente para suas listas de permissões de IP, haverá uma mensagem informativa no **LISTA DE PERMISSÕES de IP** incentivando você a adicionar essas configurações por meio da interface do usuário, para que fiquem visíveis e possam ser definidas no Cloud Manager.
 
 A mensagem desaparece assim que todas as configurações de ambiente pré-existentes são migradas usando a interface do usuário. Pode levar de 1 a 2 dias úteis para a mensagem desaparecer.
 

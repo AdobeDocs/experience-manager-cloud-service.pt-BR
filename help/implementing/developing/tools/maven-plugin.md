@@ -2,9 +2,9 @@
 title: Plug-in Maven do pacote de conteúdo do Adobe
 description: Usar o plug-in Maven do pacote de conteúdo para implantar aplicativos AEM
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
-source-git-commit: ba4e2427873fc9f5d91ee4f520df01018000a4c7
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1851'
+source-wordcount: '1847'
 ht-degree: 6%
 
 ---
@@ -28,7 +28,6 @@ Este documento detalha como usar o Maven para gerenciar essas tarefas. No entant
 >Pacote **criação** agora é de propriedade da [Plug-in Apache Jackrabbit FileVault Package Maven.](https://jackrabbit.apache.org/filevault-package-maven-plugin/)
 >* A variável `content-package-maven-plugin` O não é mais compatível com pacotes da versão 1.0.2.
 >* Este artigo descreve as **implantação** dos pacotes construídos para o AEM é executado pelo plug-in Adobe Content Package Maven.
-
 
 ## Pacotes e a estrutura do projeto AEM {#aem-project-structure}
 
@@ -95,7 +94,7 @@ Os parâmetros na tabela a seguir são comuns a todas as metas, exceto quando an
 | `serverId` | `String` | Não | A ID do servidor da qual recuperar o nome de usuário e a senha para autenticação | Todas as metas exceto `package` |
 | `targetURL` | `String` | Sim | `http://localhost:4502/crx/packmgr/service.jsp` | O URL da API de serviço HTTP do gerenciador de pacotes AEM | Todas as metas exceto `package` |
 | `timeout` | `int` | Não | `5` | O tempo limite da conexão para comunicação com o serviço do gerenciador de pacotes, em segundos | Todas as metas exceto `package` |
-| `useProxy` | `boolean` | Não | `true` | Um valor de `true` faz com que o Maven use a primeira configuração de proxy ativa encontrada para fazer solicitações de proxy para o Gerenciador de pacotes. | Todas as metas exceto `package` |
+| `useProxy` | `boolean` | Não | `true` | Um valor de `true` faz com que o Maven use a primeira configuração de proxy ativa encontrada para solicitações de proxy para o Gerenciador de pacotes. | Todas as metas exceto `package` |
 | `userId` | `String` | Sim | `admin` | O nome de usuário a ser autenticado com AEM | Todas as metas exceto `package` |
 | `verbose` | `boolean` | Não | `false` | Habilita ou desabilita o log detalhado | Todas as metas exceto `package` |
 
@@ -182,7 +181,7 @@ Além dos parâmetros a seguir, consulte a descrição da variável `name` parâ
 | `prefix` | `java.lang.String` | Não | Nenhum |  |
 | `project` | `org.apache.maven.project.MavenProject` | Sim | Nenhum | O projeto Maven |
 | `properties` | `java.util.Map` | Não | Nenhum | Esses parâmetros definem propriedades adicionais que podem ser definidas na variável `properties.xml` arquivo. Essas propriedades não podem substituir as seguintes propriedades predefinidas: `group` (use `group` parâmetro a definir), `name` (use `name` parâmetro a definir), `version` (use `version` parâmetro a definir), `description` (definido a partir da descrição do projeto), `groupId` (`groupId` do descritor de projeto Maven), `artifactId` (`artifactId` do descritor de projeto Maven), `dependencies` (use `dependencies` parâmetro a definir), `createdBy` (o valor da variável `user.name` propriedade do sistema), `created` (a hora atual do sistema), `requiresRoot` (use `requiresRoot` parâmetro a definir), `packagePath` (gerado automaticamente a partir do grupo e do nome do pacote) |
-| `requiresRoot` | `boolean` | Sim | falso | Define se o pacote requer raiz. Esta será a `requiresRoot` propriedade do `properties.xml` arquivo. |
+| `requiresRoot` | `boolean` | Sim | falso | Define se o pacote requer raiz. Torna-se o `requiresRoot` propriedade do `properties.xml` arquivo. |
 | `subPackages` | `java.util.List` | Não | Nenhum |  |
 | `version` | `java.lang.String` | Sim | A versão definida no projeto Maven | A versão do pacote de conteúdo |
 | `workDirectory` | `java.io.File` | Sim | O diretório definido no projeto Maven (fase de compilação) | O diretório que contém o conteúdo a ser incluído no pacote |

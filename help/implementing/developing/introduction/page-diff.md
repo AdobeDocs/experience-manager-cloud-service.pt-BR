@@ -2,9 +2,9 @@
 title: Desenvolvimento e diff de página
 description: Entenda como o recurso Diferença de página funciona e como ele pode afetar um desenvolvedor
 exl-id: 03c08616-2203-4b90-bed6-4836266e2507
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '334'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ O recurso de diferencial da página permite que um usuário compare a página at
 
 ## Detalhes da operação {#operation-details}
 
-Ao comparar versões de uma página, a versão anterior que o usuário deseja comparar é recriada pelo AEM em segundo plano para facilitar o diferencial. Isso é necessário para renderizar o conteúdo [para comparação lado a lado](/help/sites-cloud/authoring/features/page-diff.md).
+Ao comparar versões de uma página, a versão anterior que o usuário deseja comparar é recriada pelo AEM em segundo plano para facilitar a comparação. Isso é necessário para renderizar o conteúdo [para comparação lado a lado](/help/sites-cloud/authoring/features/page-diff.md).
 
 Essa operação de recreação é feita internamente pelo AEM e é transparente para o usuário e não requer nenhuma intervenção. No entanto, um administrador que visualizasse o repositório, por exemplo, no CRX DE Lite, veria essas versões recriadas na estrutura de conteúdo.
 

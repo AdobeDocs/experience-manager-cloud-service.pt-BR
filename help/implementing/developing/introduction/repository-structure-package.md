@@ -2,9 +2,9 @@
 title: Pacote de estrutura do repositório de projetos do AEM
 description: Os projetos Maven do Adobe Experience Manager as a Cloud Service exigem uma definição de subpacote de estrutura do repositório cujo único objetivo é definir as raízes do repositório JCR em que os subpacotes de código do projeto são implantados.
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '525'
 ht-degree: 9%
 
 ---
@@ -69,12 +69,12 @@ Certifique-se de adicionar esse novo subprojeto Maven aos projetos principais `<
                 <artifactId>filevault-package-maven-plugin</artifactId>
                 <extensions>true</extensions>
                 <properties>
-                    <!-- Set Cloud Manager Target to none, else this package will be deployed and remove all defined filter roots -->
+                    <!-- Set Cloud Manager Target to none, else this package is deployed and remove all defined filter roots -->
                     <cloudManagerTarget>none</cloudManagerTarget>
                 </properties>
                 <configuration>
                     <properties>
-                        <!-- Set Cloud Manager Target to none, else this package will be deployed and remove all defined filter roots -->
+                        <!-- Set Cloud Manager Target to none, else this package is deployed and remove all defined filter roots -->
                         <cloudManagerTarget>none</cloudManagerTarget>
                     </properties>
                     <filters>
@@ -171,7 +171,7 @@ Neste caso:
 
 ## Erros e depuração
 
-Se os pacotes de estrutura do repositório não forem configurados corretamente, na compilação Maven, um erro será relatado:
+Se os pacotes de estrutura do repositório não estiverem configurados corretamente, um erro será relatado na compilação Maven:
 
 ```
 1 error(s) detected during dependency analysis.

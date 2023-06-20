@@ -2,10 +2,10 @@
 title: Gerenciamento de fragmentos de conteúdo (Ativos - Fragmentos de conteúdo)
 description: Saiba como usar o console de Ativos para gerenciar os fragmentos de conteúdo de AEM, a base do conteúdo headless.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 449e189b117aca58b960e802f8b3b11e7a5ea523
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1761'
-ht-degree: 81%
+source-wordcount: '1754'
+ht-degree: 76%
 
 ---
 
@@ -31,7 +31,6 @@ O [Editor de fragmentos de conteúdo](#opening-the-fragment-editor) fornece vár
 >
 >* ao criar páginas; consulte [Criação de páginas com fragmentos de conteúdo](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 >* para [entrega de conteúdo headless usando fragmentos de conteúdo com GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
-
 
 >[!NOTE]
 >
@@ -65,21 +64,21 @@ O método para criar um fragmento de conteúdo é:
 
       * **Título**
 
-         O título do fragmento.
+        O título do fragmento.
 
-         Obrigatório.
+        Obrigatório.
 
       * **Descrição**
 
       * **Tags**
+
    * **Avançado**
 
       * **Nome**
 
-         O nome; será usado para formar o URL.
+        O name; é usado para formar o URL.
 
-         Obrigatório; será derivado automaticamente do título, mas pode ser atualizado.
-
+        Obrigatório; é derivado automaticamente do título, mas pode ser atualizado.
 
 1. Selecione **Criar** para concluir a ação e, em seguida, **Abra** o fragmento para editar ou retorne ao console com **Concluído**.
 
@@ -176,7 +175,7 @@ Alguns recursos na barra de ferramentas superior estão disponíveis em vários 
 
 ![modos](assets/cfm-managing-top-toolbar.png)
 
-* Uma mensagem será exibida quando o fragmento já tiver sido referenciado em uma página de conteúdo. Você pode **Fechar** a mensagem.
+* Uma mensagem é exibida quando o fragmento já é referenciado em uma página de conteúdo. Você pode **Fechar** a mensagem.
 
 * O painel lateral pode ser oculto/exibido usando o ícone **Ativar painel lateral**.
 
@@ -216,23 +215,23 @@ O editor tem várias opções:
    * **Salvar** salva as alterações mais recentes e permanece no editor.
    * **Salvar e fechar** salva as alterações mais recentes e fecha o editor.
 
-   >[!CAUTION]
-   >
-   >Para editar um fragmento de conteúdo, você precisa [das permissões apropriadas](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Entre em contato com o administrador do sistema em caso de problemas.
+  >[!CAUTION]
+  >
+  >Para editar um fragmento de conteúdo, você precisa [das permissões apropriadas](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Entre em contato com o administrador do sistema em caso de problemas.
 
-   >[!NOTE]
-   >
-   >É possível permanecer no editor e fazer uma série de alterações antes de salvar.
+  >[!NOTE]
+  >
+  >É possível permanecer no editor e fazer uma série de alterações antes de salvar.
 
-   >[!CAUTION]
-   >
-   >Além de simplesmente salvar suas alterações, as ações também atualizam quaisquer referências e garantem que o Dispatcher seja liberado conforme necessário. Essas alterações podem levar tempo para serem processadas. Devido a isso, pode haver um impacto no desempenho de um sistema grande/complexo/com bastante conteúdo.
-   >
-   >Lembre-se disso ao usar a opção **Salvar e fechar** e, logo em seguida, entrar novamente no editor de fragmentos para fazer mais alterações e salvá-las.
+  >[!CAUTION]
+  >
+  >Além de simplesmente salvar suas alterações, as ações também atualizam quaisquer referências e garantem que o Dispatcher seja liberado conforme necessário. Essas alterações podem levar tempo para serem processadas. Devido a isso, pode haver um impacto no desempenho de um sistema grande/complexo/com bastante conteúdo.
+  >
+  >Lembre-se disso ao usar a opção **Salvar e fechar** e, logo em seguida, entrar novamente no editor de fragmentos para fazer mais alterações e salvá-las.
 
 * **Fechar**
 
-   Fechará o editor sem salvar as alterações mais recentes (ou seja, feitas desde o último **Salvamento**).
+  Fechará o editor sem salvar as alterações mais recentes (ou seja, feitas desde o último **Salvamento**).
 
 Ao editar o fragmento de conteúdo, o AEM cria versões automaticamente para garantir que o conteúdo anterior possa ser restaurado se você cancelar as alterações (usando **Fechar** sem salvar):
 
@@ -289,16 +288,18 @@ Além das opções padrão, a [Linha de tempo](/help/assets/manage-digital-asset
    * **Excluir**
 
 >[!NOTE]
+>
 Os comentários são:
+>
 * Uma funcionalidade padrão para todos os ativos
 * Feitos na Linha de tempo
 * Relacionados ao ativo de fragmento
 >
 As anotações (para fragmentos de conteúdo) são:
+>
 * Inseridas no editor de fragmentos
 * Específicas de um segmento de texto selecionado no fragmento
 >
-
 
 Por exemplo:
 
@@ -314,7 +315,7 @@ Isso abrirá:
 
 * a versão selecionada **v&lt;*x.y*>** (à direita)
 
-Elas serão mostradas lado a lado, onde:
+Eles são mostrados lado a lado, onde:
 
 * Quaisquer diferenças serão destacadas
 
@@ -327,6 +328,7 @@ Elas serão mostradas lado a lado, onde:
 * **Concluído** retornará ao console
 
 >[!NOTE]
+>
 Não é possível editar o conteúdo do fragmento ao comparar fragmentos.
 
 ![comparação](assets/cfm-managing-06.png)
@@ -337,14 +339,16 @@ Você pode reverter para uma versão específica do fragmento:
 
 * Diretamente da [Linha de tempo](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
 
-   Selecione a versão necessária e, em seguida, a ação **Reverter para esta versão**.
+  Selecione a versão necessária e, em seguida, a ação **Reverter para esta versão**.
 
 * Ao [comparar uma versão com a versão atual](/help/assets/content-fragments/content-fragments-managing.md#comparing-fragment-versions), é possível **Reverter** para a versão selecionada.
 
 ## Publicar e referenciar um fragmento {#publishing-and-referencing-a-fragment}
 
 >[!CAUTION]
+>
 Se o fragmento for baseado em um modelo, é preciso certificar-se de que o [modelo foi publicado](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
+>
 Se você publicar um fragmento de conteúdo cujo modelo ainda não foi publicado, uma lista de seleção indicará isso e o modelo será publicado junto com o fragmento.
 
 Os fragmentos de conteúdo devem ser publicados para uso no ambiente de publicação. Isso é feito usando a funcionalidade padrão do Assets:
@@ -357,9 +361,10 @@ Esse pode ser acessado:
 * Após a criação; uso de [ações disponíveis no console de Ativos](#actions-for-a-content-fragment-assets-console).
 * No [Editor de fragmento de conteúdo](#toolbar-actions-in-the-content-fragment-editor).
 
-Além disso, ao [publicar uma página que use o fragmento](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); o fragmento será listado nas referências da página.
+Além disso, quando você [publicar uma página que use o fragmento](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); o fragmento é listado nas referências da página.
 
 >[!CAUTION]
+>
 Depois que um fragmento tiver sido publicado e/ou referenciado, o AEM exibirá um aviso quando um autor abrir o fragmento para edição novamente. Isso serve para avisar que as alterações no fragmento também afetarão as páginas referenciadas.
 
 ## Excluir um fragmento {#deleting-a-fragment}
@@ -370,10 +375,12 @@ Para excluir um fragmento:
 2. Selecione o fragmento.
 
    >[!NOTE]
+   >
    A opção **Excluir** não está disponível como uma ação rápida.
 
 3. Selecione **Excluir** na barra de ferramentas.
 4. Confirme a ação **Excluir**.
 
    >[!CAUTION]
-   Se o fragmento já estiver referenciado em uma página, você verá uma mensagem de aviso e será solicitado a confirmar se deseja continuar com uma **Exclusão forçada**. O fragmento, junto com seu componente do fragmento de conteúdo, será excluído de qualquer página de conteúdo.
+   >
+   Se o fragmento já estiver referenciado em uma página, você verá uma mensagem de aviso e será solicitado a confirmar se deseja continuar com uma **Exclusão forçada**. O fragmento, junto com seu componente de fragmento de conteúdo, é excluído de qualquer página de conteúdo.

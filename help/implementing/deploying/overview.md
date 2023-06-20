@@ -3,10 +3,10 @@ title: Implantação do AEM as a Cloud Service
 description: Implantação do AEM as a Cloud Service
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 3dd65a9bd67a0a029483d580dd819fb7ac2a10be
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3542'
-ht-degree: 88%
+source-wordcount: '3523'
+ht-degree: 80%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 88%
 
 Os fundamentos do desenvolvimento de código são semelhantes no AEM as a Cloud Service em comparação às soluções locais do AEM e Managed Services. Os desenvolvedores criam o código e o testam localmente, e depois o enviam para ambientes remotos do AEM as a Cloud Service. O uso do Cloud Manager, que era uma ferramenta opcional de entrega de conteúdo do Managed Services, é obrigatório. Ele agora é o único mecanismo para implantar código nos ambientes de desenvolvimento, preparo e produção do AEM as a Cloud Service. Para uma rápida validação e depuração de recursos antes da implantação desses ambientes mencionados, o código pode ser sincronizado de um ambiente local em um [ambiente de desenvolvimento rápido](/help/implementing/developing/introduction/rapid-development-environments.md).
 
-A atualização da [versão do AEM](/help/implementing/deploying/aem-version-updates.md) é sempre um evento de implantação separado do envio de [código personalizado](#customer-releases). Visto de outra maneira, as versões de código personalizado devem ser testadas em relação à versão do AEM que está em produção, pois é nela que o código será implantado. As atualizações frequentes da versão do AEM que ocorrem depois disso são aplicadas automaticamente. Elas são feitas para serem compatíveis com versões anteriores do código do cliente já implantado.
+A atualização da [versão do AEM](/help/implementing/deploying/aem-version-updates.md) é sempre um evento de implantação separado do envio de [código personalizado](#customer-releases). Visto de outra forma, as versões de código personalizadas devem ser testadas em relação à versão do AEM que está em produção, pois é ela que está implantada no topo. Atualizações de versão do AEM que ocorrem depois disso, que são frequentes e são aplicadas automaticamente. Elas são feitas para serem compatíveis com versões anteriores do código do cliente já implantado.
 
 O resto deste documento descreverá como os desenvolvedores devem adaptar suas práticas para que possam trabalhar com as atualizações da versão do AEM as a Cloud Service e as atualizações do cliente.
 
@@ -31,12 +31,12 @@ O resto deste documento descreverá como os desenvolvedores devem adaptar suas p
 
 Para soluções anteriores do AEM, a versão mais recente era alterada com pouca frequência (geralmente de forma anual com pacotes de serviços trimestrais) e os clientes atualizavam as instâncias de produção para o Quickstart mais recente no seu próprio ritmo, referenciando o Jar da API. No entanto, os aplicativos do AEM as a Cloud Service são atualizados automaticamente para a versão mais recente com mais frequência, portanto, o código personalizado para versões internas deve ser criado baseado na versão mais recente do AEM.
 
-Assim como nas versões fora da nuvem do AEM já existentes, haverá suporte para um desenvolvimento local e offline com base em um Quickstart específico, e essa deve ser a ferramenta preferencial para depuração na maioria dos casos.
+Assim como para versões do AEM que não estejam na nuvem, um desenvolvimento local e offline baseado em um início rápido específico é compatível e espera-se que seja a ferramenta de escolha para depuração na maioria dos casos.
 
 >[!NOTE]
 >Existem algumas diferenças operacionais sutis entre a maneira como o aplicativo funciona em um computador local comparado à Adobe Cloud. Essas diferenças de arquitetura devem ser respeitadas durante o desenvolvimento local e podem resultar em um comportamento diferente ao implantar na infraestrutura em nuvem. Devido a essas diferenças, é importante executar testes exaustivos nos ambientes de desenvolvimento e de preparo antes de implantar o novo código personalizado na produção.
 
-Para desenvolver um código personalizado para uma versão interna, a versão relevante do [SDK do AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) deve ser baixada e instalada. Para obter informações adicionais sobre o uso das ferramentas do Dispatcher do AEM as a Cloud Service, consulte [esta página](/help/implementing/dispatcher/disp-overview.md).
+Para desenvolver um código personalizado para uma versão interna, a versão relevante do [SDK AS A CLOUD SERVICE AEM](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) O deve ser baixado e instalado. Para obter informações adicionais sobre o uso das ferramentas do Dispatcher do AEM as a Cloud Service, consulte [esta página](/help/implementing/dispatcher/disp-overview.md).
 
 O vídeo a seguir fornece uma visão geral de alto nível sobre como implantar código no AEM as a Cloud Service:
 
@@ -86,7 +86,7 @@ Leia mais sobre a configuração do OSGI em [Configuração do OSGi para o AEM a
 
 Em alguns casos, pode ser útil preparar as alterações de conteúdo no controle de origem para que elas possam ser implantadas pelo Cloud Manager sempre que um ambiente for atualizado. Por exemplo, pode ser razoável implantar determinadas estruturas de pastas raiz ou alinhar alterações em modelos editáveis a fim de ativar políticas para componentes que foram atualizados pela implantação do aplicativo.
 
-Há duas estratégias para descrever o conteúdo que será implantado pelo Cloud Manager no repositório mutável: pacotes de conteúdo mutáveis e instruções repoinit.
+Há duas estratégias para descrever o conteúdo implantado pelo Cloud Manager no repositório mutável, pacotes de conteúdo mutáveis e instruções de repoinit.
 
 ### Pacotes de conteúdo mutáveis {#mutable-content-packages}
 
@@ -140,9 +140,9 @@ Nos casos a seguir, é preferível adotar a abordagem de codificação manual pa
 O repoinit é recomendado nesses casos de uso de modificação de conteúdo compatíveis devido aos seguintes benefícios:
 
 * O repoinit cria recursos na inicialização para que a lógica possa tomar a existência desses recursos como garantida. Na abordagem do pacote de conteúdo mutável, os recursos são criados após a inicialização, portanto, o código do aplicativo que depende deles pode falhar.
-* O repoinit é um conjunto de instruções relativamente seguro, pois você controla explicitamente a ação a ser tomada. Além disso, as únicas operações compatíveis são aditivas, com a exceção de alguns casos relacionados à segurança que permitem a remoção de Usuários, Usuários de serviços e Grupos. Em contrapartida, uma remoção de algo na abordagem do pacote de conteúdo mutável é explícita; quando você define um filtro, qualquer item presente coberto por um filtro será excluído. Ainda assim, deve-se ter cuidado, pois com qualquer conteúdo há cenários em que a presença de novo conteúdo pode alterar o comportamento do aplicativo.
+* O repoinit é um conjunto de instruções relativamente seguro, pois você controla explicitamente a ação a ser tomada. Além disso, as únicas operações compatíveis são aditivas, com a exceção de alguns casos relacionados à segurança que permitem a remoção de Usuários, Usuários de serviços e Grupos. Por outro lado, a remoção de algo na abordagem de pacote de conteúdo mutável é explícita; à medida que você define um filtro, qualquer item presente coberto por um filtro é excluído. Ainda assim, deve-se ter cuidado, pois com qualquer conteúdo há cenários em que a presença de novo conteúdo pode alterar o comportamento do aplicativo.
 * Repontar executa operações rápidas e atômicas. Em contraste, os pacotes de conteúdo variável podem depender muito do desempenho das estruturas cobertas por um filtro. Mesmo que você atualize um único nó, um instantâneo de uma árvore grande pode ser criado.
-* É possível validar instruções repoinit em um ambiente de desenvolvimento local em tempo de execução, pois elas serão executadas quando a configuração OSGi for registrada.
+* É possível validar instruções de repoinit em um ambiente de desenvolvimento local no tempo de execução porque elas são executadas quando a configuração do OSGi é registrada.
 * As instruções repoinit são atômicas e explícitas e serão ignoradas se o estado já estiver correspondente.
 
 Quando o Cloud Manager implanta o aplicativo, ele executa essas instruções, independentemente da instalação de qualquer pacote de conteúdo.
@@ -174,12 +174,12 @@ above appears to be internal, to confirm with Brian -->
 >[!CONTEXTUALHELP]
 >id="aemcloud_packagemanager"
 >title="Gerenciador de pacotes - Migração de pacotes de conteúdo variável"
->abstract="Explore o uso do gerenciador de pacotes para casos de uso em que um pacote de conteúdo deve ser instalado como “único”, o que inclui importar um conteúdo específico da produção para o preparo com o fim de depurar um problema de produção, transferir um pequeno pacote de conteúdo do ambiente local para ambientes de nuvem do AEM e muito mais."
+>abstract="Explore o uso do gerenciador de pacotes para casos de uso em que um pacote de conteúdo deve ser instalado como &quot;único&quot;, o que inclui a importação de conteúdo específico da produção para o preparo para depurar um problema de produção, a transferência de um pequeno pacote de conteúdo de um ambiente local para ambientes da nuvem AEM e muito mais."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=pt-BR#cloud-migration" text="Ferramenta Transferência de conteúdo"
 
-Há casos de uso em que um pacote de conteúdo deve ser instalado como “único”. Por exemplo, importação de conteúdo específico da produção para o preparo a fim de depurar um problema de produção. Para esses cenários, o [Gerenciador de pacotes](/help/implementing/developing/tools/package-manager.md) pode ser usado em ambientes do AEM as a Cloud Service.
+Há casos de uso em que um pacote de conteúdo deve ser instalado como “único”. Por exemplo, importar conteúdo específico da produção para o preparo para depurar um problema de produção. Para esses cenários, o [Gerenciador de pacotes](/help/implementing/developing/tools/package-manager.md) pode ser usado em ambientes do AEM as a Cloud Service.
 
-Como o Gerenciador de pacotes é um conceito de tempo de execução, não é possível instalar conteúdo ou código no repositório invariável, portanto, esses pacotes de conteúdo devem ter apenas conteúdo variável (principalmente `/content` ou `/conf`). Se o pacote de conteúdo incluir conteúdo misto (conteúdo variável e invariável), somente o conteúdo variável será instalado.
+Como o Gerenciador de pacotes é um conceito de tempo de execução, não é possível instalar conteúdo ou código no repositório invariável, portanto, esses pacotes de conteúdo devem ter apenas conteúdo variável (principalmente `/content` ou `/conf`). Se o pacote de conteúdo incluir conteúdo misto (conteúdo mutável e imutável), somente o conteúdo mutável será instalado.
 
 >[!IMPORTANT]
 >
@@ -239,7 +239,7 @@ O snippet `POM.xml` do Maven a seguir mostra como os pacotes de terceiros podem 
 
 ## Como funcionam as implantações contínuas {#how-rolling-deployments-work}
 
-Assim como as atualizações do AEM, as versões do cliente são implantadas usando uma estratégia de implantação contínua para eliminar o tempo de inatividade do cluster de autor nas circunstâncias certas. A sequência geral de eventos é descrita abaixo, onde os nós com as versões antiga e nova do código do cliente estão executando a mesma versão do código AEM.
+Assim como atualizações do AEM, as versões de clientes são implantadas usando uma estratégia de implantação contínua para eliminar o tempo de inatividade do cluster do autor nas circunstâncias certas. A sequência geral de eventos é descrita abaixo, onde os nós com as versões antiga e nova do código do cliente estão executando a mesma versão do código AEM.
 
 * Os nós com a versão antiga estão ativos e um candidato a lançamento para a nova versão é criado e fica disponível.
 * Se houver definições de índice novas ou atualizadas, os índices correspondentes serão processados. Observe que os nós com a versão antiga sempre usarão os índices antigos, enquanto os nós com a nova versão sempre usarão os novos índices.
@@ -263,7 +263,7 @@ No momento, o AEM as a Cloud Service não funciona com ferramentas de gerenciame
 
 O mecanismo de publicação é compatível com versões anteriores das [APIs Java de Replicação do AEM](https://helpx.adobe.com/br/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.day.cq.replication.Replicator.html).
 
-Para desenvolver e testar a replicação com o início rápido do AEM pronto para nuvem, os recursos clássicos de replicação precisam ser usados com uma configuração de Autor/Publicação. No caso do ponto de entrada da interface no AEM Author ter sido removido para a nuvem, os usuários acessariam `http://localhost:4502/etc/replication` para configuração.
+Para desenvolver e testar a replicação com o quickstart AEM pronto para nuvem, os recursos de replicação clássicos precisam ser usados com uma configuração de Autor/Publicação. No caso do ponto de entrada da interface no AEM Author ter sido removido para a nuvem, os usuários acessariam `http://localhost:4502/etc/replication` para configuração.
 
 ## Código compatível com versões anteriores para implantações em andamento {#backwards-compatible-code-for-rolling-deployments}
 

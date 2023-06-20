@@ -2,10 +2,10 @@
 title: Sistema de estilos
 description: O sistema de estilos permite ao autor do modelo definir classes de estilo na política de conteúdo de um componente para que autores de conteúdo possam selecioná-las ao editarem o componente em uma página. Esses estilos podem ser variações visuais alternativas de um componente, tornando-o mais flexível.
 exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1327'
-ht-degree: 64%
+source-wordcount: '1320'
+ht-degree: 60%
 
 ---
 
@@ -24,7 +24,7 @@ Da mesma forma, os autores de conteúdo precisam não apenas da capacidade de es
 O Sistema de estilos fornece uma solução unificada para os requisitos do autor de modelo e do autor de conteúdo:
 
 * Os autores dos modelos podem definir classes de estilo na política de conteúdo dos componentes.
-* Os autores de conteúdo podem selecionar essas classes em uma lista suspensa ao editar o componente em uma página para aplicar os estilos correspondentes.
+* Os autores de conteúdo podem selecionar essas classes em uma lista suspensa ao editar o componente em uma página para que possam aplicar os estilos correspondentes.
 
 A classe de estilo é então inserida no elemento wrapper de decoração do componente para que o desenvolvedor do componente não precise se preocupar com a manipulação de estilos, além de fornecer suas regras de CSS.
 
@@ -104,7 +104,7 @@ Se você desejar usar o Sistema de estilos em seus próprios componentes, faça 
 
 >[!CAUTION]
 >
->As classes CSS (bem como qualquer Javascript necessário) configuradas como propriedades de estilo da política de um componente devem ser implantadas como [Bibliotecas do cliente](/help/implementing/developing/introduction/clientlibs.md) para funcionarem.
+>As classes CSS - e qualquer Javascript necessário - configuradas como propriedades de estilo da política de um componente, devem ser implantadas como [Bibliotecas de clientes](/help/implementing/developing/introduction/clientlibs.md) para trabalhar.
 
 ## Configurar {#setup}
 
@@ -120,9 +120,9 @@ Para que um componente funcione com o sistema de estilos do AEM e mostre a guia 
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->Essa configuração aplica [sobreposições](/help/implementing/developing/introduction/overlays.md) por meio do [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md).
+Essa configuração aplica [sobreposições](/help/implementing/developing/introduction/overlays.md) por meio do [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md).
 
-Com o componente configurado, os estilos configurados pelos autores da página serão inseridos automaticamente pelo AEM no elemento de decoração que AEM envolve automaticamente cada componente editável. O componente em si não precisa fazer mais nada para que isso aconteça.
+Com o componente configurado, os estilos configurados pelos autores da página são inseridos automaticamente pelo AEM no elemento de decoração que o AEM envolve automaticamente cada componente editável. O componente em si não precisa fazer mais nada para que isso aconteça.
 
 ### Habilitar a guia Estilos na caixa de diálogo Editar {#enable-styles-tab-edit}
 
@@ -134,11 +134,11 @@ A guia Editar pode ser incluída de maneira semelhante na guia Design:
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->Essa configuração aplica [sobreposições](/help/implementing/developing/introduction/overlays.md) por meio do [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md).
+Essa configuração aplica [sobreposições](/help/implementing/developing/introduction/overlays.md) por meio do [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md).
 
 >[!NOTE]
 >
->A guia Estilos na caixa de diálogo Editar não está habilitada por padrão.
+A guia Estilos na caixa de diálogo Editar não está habilitada por padrão.
 
 ### Estilos com nomes de elemento  {#styles-with-element-names}
 
@@ -150,15 +150,13 @@ Essa propriedade é definida no nó `cq:Component`. Por exemplo:
 
 >[!CAUTION]
 >
->Evite definir nomes de elementos para estilos que podem ser combinados. Quando vários nomes de elemento são definidos, a ordem de prioridade é:
+Evite definir nomes de elementos para estilos que podem ser combinados. Quando vários nomes de elemento são definidos, a ordem de prioridade é:
 >
->1. HTL tem precedência sobre tudo: `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
->1. Entre os vários estilos ativos, o primeiro estilo na lista de estilos configurados na política do componente é aplicado.
->1. Por fim, a `cq:htmlTag`/ `cq:tagName` do componente será considerada um valor de fallback.
-
+1. HTL tem precedência sobre tudo: `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
+1. Entre os vários estilos ativos, o primeiro estilo na lista de estilos configurados na política do componente é aplicado.
+1. Por fim, a `cq:htmlTag`/ `cq:tagName` do componente será considerada um valor de fallback.
 >
 
-
-Essa capacidade de definir nomes de estilo é útil para componentes muito genéricos, como o Contêiner de layout ou o componente de Fragmento de conteúdo, para oferecer-lhes significado adicional.
+Essa capacidade de definir nomes de estilo é útil para componentes genéricos, como o Contêiner de layout ou o componente de Fragmento do conteúdo, para oferecer-lhes significado adicional.
 
 Por exemplo, permite que um Contêiner de layout receba uma semântica como `<main>`, `<aside>`, `<nav>`, etc.

@@ -1,10 +1,10 @@
 ---
 title: Estrutura de marcação do AEM
-description: Marque o conteúdo e aproveite a infraestrutura de marcação AEM para categorizá-lo e organizá-lo.
+description: Marque o conteúdo e use a infraestrutura de Marcação AEM para categorizá-lo e organizá-lo.
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1570'
+source-wordcount: '1568'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,11 @@ A marcação permite que o conteúdo seja categorizado e organizado. As tags pod
 * Consulte [Uso de tags](/help/sites-cloud/authoring/features/tags.md) para obter informações sobre como marcar conteúdo como autor de conteúdo.
 * Consulte Administração de tags para obter a perspectiva de um administrador sobre a criação e o gerenciamento de tags e sobre quais tags de conteúdo foram aplicadas.
 
-Este artigo se concentra na estrutura subjacente que oferece suporte à marcação no AEM e em como aproveitá-lo como desenvolvedor.
+Este artigo se concentra na estrutura subjacente que oferece suporte à marcação no AEM e em como usá-lo como desenvolvedor.
 
 ## Introdução {#introduction}
 
-Para marcar conteúdo e aproveitar a infraestrutura de marcação AEM:
+Para marcar conteúdo e usar a infraestrutura de marcação AEM:
 
 * A tag deve existir como um nó do tipo [`cq:Tag`](#cq-tag-node-type) no [nó raiz de taxonomia.](#taxonomy-root-node)
 * O do nó de conteúdo marcado `NodeType` deve incluir o [`cq:Taggable`](#taggable-content-cq-taggable-mixin) mixin.
@@ -128,7 +128,6 @@ A variável `cq:OwnerTaggable` mixin, que herda de `cq:Taggable`, destina-se a i
 >* Páginas (`cq:Page`) em que o `jcr:content`o nó é do tipo `cq:PageContent`, que inclui a `cq:Taggable` mixin.
 >* Ativos (`cq:Asset`) em que o `jcr:content/metadata` o nó sempre tem o `cq:Taggable` mixin.
 
-
 ### Notação de tipo de nó (CND) {#node-type-notation-cnd}
 
 As definições de Tipo de nó existem no repositório como arquivos CND. A notação CND é definida como parte da variável [Documentação JCR.](https://jackrabbit.apache.org/node-type-notation.html).
@@ -156,7 +155,7 @@ A variável `cq:tags` propriedade é um `String` matriz usada para armazenar um 
 
 >[!NOTE]
 >
->Para aproveitar a funcionalidade de marcação AEM, os aplicativos desenvolvidos de forma personalizada não devem definir propriedades de tag diferentes de `cq:tags`.
+>Para usar a funcionalidade de marcação AEM, os aplicativos desenvolvidos de forma personalizada não devem definir propriedades de tag diferentes de `cq:tags`.
 
 ## Mover e mesclar tags {#moving-and-merging-tags}
 
@@ -171,25 +170,22 @@ Quando a tag A é movida ou mesclada na tag B em `/content/cq:tags`:
    * A tag A fica oculta e é mantida somente no repositório para resolver IDs de tag em nós de conteúdo que apontam para a tag A.
    * O coletor de lixo da tag remove tags como a tag A assim que os nós de conteúdo não apontam mais para elas.
    * Um valor especial para o `cq:movedTo` propriedade é `nirvana`, que é aplicado quando a tag é excluída, mas não pode ser removida do repositório porque há subtags com uma `cq:movedTo` que deve ser mantido.
-
-      >[!NOTE]
-      >
-      >A variável `cq:movedTo` A propriedade só será adicionada à tag movida ou mesclada se qualquer uma dessas condições for atendida:
-      >
-      > 1. A tag é usada no conteúdo (o que significa que tem uma referência). OU
-      > 1. A tag tem filhos que já foram movidos.
-
+     >[!NOTE]
+     >
+     >A variável `cq:movedTo` A propriedade só será adicionada à tag movida ou mesclada se qualquer uma dessas condições for atendida:
+     >
+     > 1. A tag é usada no conteúdo (o que significa que tem uma referência). OU
+     > 1. A tag tem filhos que já foram movidos.
+     >
 * A tag B é criada (no caso de uma movimentação) e recebe um `cq:backlinks` propriedade.
    * `cq:backlinks` mantém as referências na outra direção, ou seja, mantém uma lista de todas as tags que foram movidas para ou mescladas com a tag B.
    * Isso é necessário principalmente para manter `cq:movedTo` propriedades atualizadas quando a tag B é movida/mesclada/excluída ou quando a tag B é ativada, nesse caso, todas as tags de backlinks também devem ser ativadas.
-
-      >[!NOTE]
-      >
-      >A variável `cq:backlinks` A propriedade só será adicionada à tag movida ou mesclada se qualquer uma dessas condições for atendida:
-      >
-      > 1. A tag é usada no conteúdo (o que significa que tem uma referência). OU
-      > 1. A tag tem filhos que já foram movidos.
-
+     >[!NOTE]
+     >
+     >A variável `cq:backlinks` A propriedade só será adicionada à tag movida ou mesclada se qualquer uma dessas condições for atendida:
+     >
+     > 1. A tag é usada no conteúdo (o que significa que tem uma referência). OU
+     > 1. A tag tem filhos que já foram movidos.
 
 Ler um `cq:tags` A propriedade de um nó de conteúdo envolve a seguinte resolução:
 

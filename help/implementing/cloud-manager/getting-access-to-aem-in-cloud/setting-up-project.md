@@ -2,10 +2,10 @@
 title: Configuração do projeto
 description: Saiba como os projetos do AEM são compilados no Maven e os padrões que você deve observar ao criar seu próprio projeto.
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1415'
-ht-degree: 100%
+source-wordcount: '1404'
+ht-degree: 85%
 
 ---
 
@@ -15,7 +15,7 @@ Saiba como os projetos do AEM são compilados no Maven e os padrões que você d
 
 ## Detalhes de configuração do projeto {#project-setup-details}
 
-Para serem criados e implantados com sucesso com o Cloud Manager, os projetos AEM precisam seguir estas diretrizes:
+Para criar e implantar com sucesso com o Cloud Manager, os projetos AEM precisam seguir as seguintes diretrizes:
 
 * Os projetos devem ser compilados usando [Apache Maven.](https://maven.apache.org)
 * Deve haver um arquivo `pom.xml` na raiz do repositório Git. Esse arquivo `pom.xml` pode se referir a quantos submódulos (que por sua vez podem ter outros submódulos etc.) forem necessários.
@@ -119,7 +119,7 @@ Para usar um repositório Maven protegido por senha no Cloud Manager:
 
 Quando o processo de compilação do Cloud Manager é iniciado:
 
-* O elemento `<servers>` neste arquivo será mesclado ao arquivo padrão `settings.xml` fornecido pelo Cloud Manager.
+* A variável `<servers>` o elemento neste arquivo é mesclado ao padrão `settings.xml` arquivo fornecido pelo Cloud Manager.
    * IDs de servidor que começam com `adobe` e `cloud-manager` são considerados reservados e não devem ser usados por servidores personalizados.
    * IDs de servidor que não correspondem a um desses prefixos ou ao ID padrão `central` nunca serão espelhados pelo Cloud Manager.
 * Com esse arquivo em vigor, o ID do servidor seria referenciado de dentro de um elemento `<repository>` e/ou `<pluginRepository>` dentro do arquivo `pom.xml`.
@@ -240,9 +240,9 @@ Para fazer isso, configure maven-assembly-plugin em seu projeto.
 
 ## Omissão de pacotes de conteúdo {#skipping-content-packages}
 
-No Cloud Manager, as compilações podem produzir qualquer número de pacotes de conteúdo. Por uma variedade de motivos, pode ser desejável produzir um pacote de conteúdo, mas não implantá-lo. Um exemplo pode ser a criação de pacotes de conteúdo usados apenas para teste ou que serão reempacotados em outra etapa no processo de compilação, ou seja, como um subpacote de outro pacote.
+No Cloud Manager, as compilações podem produzir qualquer número de pacotes de conteúdo. Por uma variedade de motivos, pode ser desejável produzir um pacote de conteúdo, mas não implantá-lo. Um exemplo pode ser a criação de pacotes de conteúdo usados apenas para teste ou que são reempacotados em outra etapa do processo de criação. Ou seja, um subpacote de outro pacote.
 
-Para acomodar esses cenários, o Cloud Manager procurará uma propriedade chamada `cloudManagerTarget` nas propriedades dos pacotes de conteúdo incorporados. Se essa propriedade estiver definida como `none`, o pacote será ignorado e não implantado.
+Para acomodar esses cenários, o Cloud Manager procura uma propriedade chamada `cloudManagerTarget` nas propriedades dos pacotes de conteúdo incorporados. Se essa propriedade estiver definida como `none`, o pacote é ignorado e não implantado.
 
 O mecanismo para definir essa propriedade depende da forma como a compilação produz o pacote de conteúdo. Por exemplo, com `filevault-maven-plugin`, você configuraria o plug-in conforme descrito a seguir.
 
@@ -322,11 +322,11 @@ Ambas as ramificações têm a mesma ID de confirmação.
 1. Um pipeline de desenvolvimento compila e executa `foo`.
 1. Posteriormente, um pipeline de produção compila e executa `bar`.
 
-Nesse caso, o artefato de `foo` será reutilizado para o pipeline de produção, desde que o mesmo hash de confirmação tenha sido identificado.
+Nesse caso, o artefato de `foo` é reutilizado para o pipeline de produção desde que o mesmo hash de confirmação foi identificado.
 
 ### Recusa {#opting-out}
 
-Se desejado, o comportamento de reutilização pode ser desativado para pipelines específicos, definindo a variável de pipeline `CM_DISABLE_BUILD_REUSE` como `true`. Se essa variável for definida, o hash de confirmação ainda será extraído e os artefatos resultantes serão armazenados para uso posterior, mas todos os artefatos armazenados anteriormente não serão reutilizados. Para entender esse comportamento, considere o cenário a seguir.
+Se desejado, o comportamento de reutilização pode ser desativado para pipelines específicos, definindo a variável de pipeline `CM_DISABLE_BUILD_REUSE` como `true`. Se essa variável for definida, o hash de confirmação ainda será extraído e os artefatos resultantes serão armazenados para uso posterior, mas os artefatos armazenados anteriormente não serão reutilizados. Para entender esse comportamento, considere o cenário a seguir.
 
 1. Um novo pipeline é criado.
 1. O pipeline é executado (execução nº 1) e a confirmação HEAD atual é `becdddb`. A execução é bem-sucedida e os artefatos resultantes são armazenados.
@@ -341,5 +341,5 @@ Se desejado, o comportamento de reutilização pode ser desativado para pipeline
 * Os artefatos de compilação não são reutilizados em diferentes programas, independentemente de o hash de confirmação ser idêntico.
 * Os artefatos de compilação são reutilizados em um mesmo programa, mesmo que a ramificação e/ou o pipeline sejam diferentes.
 * O [Manuseio de versão Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md) substitui a versão do projeto somente nos pipelines de produção. Portanto, se a mesma confirmação for usada em uma execução de implantação de desenvolvimento e em uma execução de pipeline de produção e o pipeline de implantação de desenvolvimento for executado primeiro, as versões serão implantadas em preparo e em produção sem serem alteradas. No entanto, uma tag ainda será criada nesse caso.
-* Se a recuperação dos artefatos armazenados não for bem-sucedida, a etapa de compilação será executada como se nenhum artefato tivesse sido armazenado.
+* Se a recuperação dos artefatos armazenados não for bem-sucedida, a etapa de criação será executada como se nenhum artefato tivesse sido armazenado.
 * Variáveis de pipeline diferentes de `CM_DISABLE_BUILD_REUSE` não são consideradas quando o Cloud Manager decide reutilizar artefatos de compilação criados anteriormente.

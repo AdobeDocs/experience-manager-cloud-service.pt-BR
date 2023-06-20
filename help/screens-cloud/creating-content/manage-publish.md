@@ -2,9 +2,9 @@
 title: Publicação de um canal no Screens as a Cloud Service
 description: Esta página descreve como publicar um canal no Screens as a Cloud Service.
 exl-id: a69086d2-777c-4a94-bd22-5c02f98bbedb
-source-git-commit: 9f6afc7bfe4f92a49e50dcf491347112e95e494d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '305'
+source-wordcount: '300'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 Você pode publicar conteúdo do AEM Screens. O recurso Gerenciar publicação permite entregar atualizações de conteúdo do autor para a publicação no reprodutor. Você pode publicar ou cancelar a publicação de conteúdo para todo o projeto do AEM Screens ou apenas para um de seus canais, locais, reprodutores ou um aplicativo.
 
 >[!IMPORTANT]
->Depois de criar o canal ou canais no projeto, é obrigatório publicar os canais para exibir os canais/canais na exibição da lista de inventário no Provedor de serviços da AEM Screens.
+>Depois de criar o canal ou os canais no projeto, é obrigatório publicar os canais para exibir o canal/canais na exibição de lista do inventário no Provedor de serviços da AEM Screens.
 
 ## Objetivo {#objective}
 
@@ -40,7 +40,7 @@ Siga as etapas abaixo para publicar o canal:
    ![](/help/screens-cloud/assets/create-content/managepub-2.png)
 
    >[!NOTE]
-   >Clique em **+ Incluir secundárias** na barra de ações, desmarque todas as opções para publicar todos os módulos no seu projeto e clique em Adicionar para publicar. Por padrão, todas as caixas serão marcadas e você terá que desmarcar manualmente as caixas para publicar todos os módulos no seu projeto.
+   >Clique em **Incluir filhos** na barra de ações, desmarque todas as opções para publicar todos os módulos no seu projeto e clique em Adicionar para publicar. Por padrão, todas as caixas são marcadas e você precisa desmarcar manualmente as caixas para publicar todos os módulos no seu projeto.
 
 1. Depois de selecionar o canal no menu **Gerenciar publicação** assistente, clique em **Publish** para publicar o canal.
 

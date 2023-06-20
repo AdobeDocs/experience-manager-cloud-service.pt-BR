@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '6679'
+source-wordcount: '6666'
 ht-degree: 7%
 
 ---
@@ -292,7 +292,7 @@ A tabela a seguir lista os eventos do Visualizador do Dynamic Media e seus argum
    <td><code>%event.detail.dm.timeStamp%</code></td>
   </tr>
   <tr>
-   <td><code>BANNER</code> </td>
+   <td><code>BANNER</code><br /> </td>
    <td><code>%event.detail.dm.BANNER.asset%</code></td>
   </tr>
   <tr>
@@ -420,7 +420,7 @@ Como parte da configuração, verifique se você tem acesso a uma empresa no Ado
 
 ## Configurar o Adobe Analytics para a integração {#configuring-adobe-analytics-for-the-integration}
 
-Depois de configurar o Adobe Analytics, o seguinte será configurado para a integração:
+Após configurar o Adobe Analytics, o seguinte é configurado para a integração:
 
 * Um conjunto de relatórios está em vigor e foi selecionado.
 * As variáveis do Analytics estão disponíveis para receber dados de rastreamento.
@@ -460,7 +460,7 @@ Consulte também [Guia de implementação do Analytics](https://experienceleague
 
    Consulte [Visão geral de props e eVars](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/evar.html#vars).
 
-   Para os fins desta documentação, somente uma variável de Tráfego personalizado (props) será usada porque ela fica disponível em um Relatório do Analytics dentro de alguns minutos após uma ação ocorrer em uma página da Web.
+   Para os fins desta documentação, somente uma variável de Tráfego personalizado (props) é usada porque ela fica disponível em um Relatório do Analytics dentro de alguns minutos após uma ação ocorrer em uma página da Web.
 
    Para habilitar uma nova variável de Tráfego personalizado, no Adobe Analytics, na barra de ferramentas, acesse **[!UICONTROL Admin]** > **[!UICONTROL Conjuntos de relatórios]**.
 
@@ -487,7 +487,7 @@ Consulte também [Guia de implementação do Analytics](https://experienceleague
 
 ## Configurar tags Experience Platform para a integração {#configuring-adobe-launch-for-the-integration}
 
-Depois de configurar as Tags do Experience Platform, o seguinte será configurado para a integração:
+Após configurar as Tags do Experience Platform, o seguinte é configurado para a integração:
 
 * A criação de uma nova propriedade para manter todas as suas configurações unidas.
 * A instalação e a configuração das extensões. O código do lado do cliente de todas as extensões instaladas na propriedade é compilado em conjunto em uma biblioteca. Essa biblioteca é usada pela página da Web posteriormente.
@@ -748,7 +748,7 @@ A configuração de Experience Manager consiste nas duas etapas principais a seg
    * **[!UICONTROL Título]** - Insira um título de conta descritivo.
    * **[!UICONTROL Servidor de autorização]** - Retorne à página de detalhes da integração aberta anteriormente. Selecione o **[!UICONTROL JWT]** guia. Copie o nome do servidor - sem o caminho - como destacado abaixo.
 
-(o nome do servidor de exemplo é somente para fins explicativos)   Retorne à página **[!UICONTROL Conta]** e cole o nome no respectivo campo.
+   Retorne à página **[!UICONTROL Conta]** e cole o nome no respectivo campo.
 Por exemplo, `https://ims-na1.adobelogin.com/`
 (o nome do servidor de exemplo é somente para fins explicativos)
 

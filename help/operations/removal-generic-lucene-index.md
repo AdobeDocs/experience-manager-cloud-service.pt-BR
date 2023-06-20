@@ -2,9 +2,9 @@
 title: Remoção do índice Lucene genérico
 description: Saiba mais sobre a remoção planejada de índices Lucene genéricos e como você pode ser afetado.
 exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1349'
+source-wordcount: '1339'
 ht-degree: 0%
 
 ---
@@ -38,15 +38,15 @@ Por exemplo, consultas de pesquisa de referência, como no exemplo a seguir, ago
 //*[jcr:contains(., '"/content/dam/mysite"')]
 ```
 
-Para oferecer suporte a maiores volumes de dados de clientes, o Adobe não criará mais o índice Lucene genérico em novos ambientes as a Cloud Service AEM. Além disso, o Adobe começará a remover o índice dos repositórios existentes. [Ver a linha do tempo](#timeline) no final deste documento para obter mais detalhes.
+Para oferecer suporte a volumes maiores de dados do cliente, o Adobe não cria mais o índice Lucene genérico em novos ambientes as a Cloud Service AEM. Além disso, o Adobe remove o índice dos repositórios existentes. [Ver a linha do tempo](#timeline) no final deste documento para obter mais detalhes.
 
 O Adobe já ajustou os custos do índice através do `costPerEntry` e `costPerExecution` propriedades para garantir que outros índices, como `/oak:index/pathreference` sempre que possível, são utilizadas de preferência.
 
-Os aplicativos do cliente que usam consultas que ainda dependem desse índice devem ser atualizados imediatamente para aproveitar outros índices existentes, que podem ser personalizados, se necessário. Como alternativa, novos índices personalizados podem ser adicionados ao aplicativo do cliente. Instruções completas para o gerenciamento de índice no AEM as a Cloud Service podem ser encontradas na [documentação de indexação.](/help/operations/indexing.md)
+Os aplicativos do cliente que usam consultas que ainda dependem desse índice devem ser atualizados imediatamente para usar outros índices existentes, que podem ser personalizados, se necessário. Como alternativa, novos índices personalizados podem ser adicionados ao aplicativo do cliente. Instruções completas para o gerenciamento de índice no AEM as a Cloud Service podem ser encontradas na [documentação de indexação.](/help/operations/indexing.md)
 
 ## Você É Afetado? {#are-you-affected}
 
-O índice Lucene genérico é usado atualmente como um fallback se nenhum outro índice de texto completo puder atender a uma consulta. Quando esse índice obsoleto for usado, uma mensagem como esta será registrada no nível AVISO:
+O índice Lucene genérico é usado atualmente como um fallback se nenhum outro índice de texto completo puder atender a uma consulta. Quando esse índice obsoleto é usado, uma mensagem semelhante à seguinte é registrada no nível de AVISO:
 
 ```text
 org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') /* xpath: //*[jcr:contains(.,"test")] */ fullText="test", path=*). Please change the query or the index definitions.
@@ -61,7 +61,7 @@ org.apache.jackrabbit.oak.query.QueryImpl Potentially improper use of index /oak
 Depois que o índice Lucene genérico for removido, uma mensagem como mostrado abaixo será registrada no nível WARN se uma consulta de texto completo não conseguir localizar nenhuma definição de índice adequada:
 
 ```text
-org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filter Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') /* xpath: //*[jcr:contains(.,"test")] */ fullText="test", path=*); no results will be returned
+org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filter Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') /* xpath: //*[jcr:contains(.,"test")] */ fullText="test", path=*); no results are returned
 ```
 
 >[!IMPORTANT]
@@ -80,7 +80,7 @@ Há várias áreas em que seus aplicativos e instalações de AEM podem ser depe
 
 #### Consultas de aplicativo personalizadas {#custom-application-queries}
 
-A fonte mais comum de consultas usando o índice Lucene genérico em uma instância de publicação serão consultas de aplicativo personalizadas.
+A fonte mais comum de consultas usando o índice Lucene genérico em uma instância de publicação são consultas de aplicativo personalizadas.
 
 Nos casos mais simples, essas podem ser consultas sem um tipo de nó especificado, o que implica `nt:base` ou `nt:base` especificados explicitamente, tais como:
 
@@ -117,7 +117,7 @@ Dessa forma, a consulta retorna ao índice de texto completo genérico em que to
 >
 >**Ação do Cliente Necessária**
 >
->Marcar o `jcr:content/metadata/@cq:tags` propriedade conforme analisada em uma versão personalizada do `damAssetLucene` o índice fará com que essa consulta seja tratada por esse índice, e nenhum AVISO será registrado.
+>Marcar o `jcr:content/metadata/@cq:tags` propriedade conforme analisada em uma versão personalizada do `damAssetLucene` o índice faz com que essa consulta seja tratada por esse índice e nenhum AVISO é registrado.
 
 ### Instância do autor {#author-instance}
 
@@ -157,7 +157,6 @@ Antes da remoção do índice Lucene genérico, a variável `pathfield` o compon
 > * No momento, esses executam consultas sem tipos de nó especificados, resultando no registro de um AVISO devido ao uso do índice Lucene genérico.
 > * Em breve, as instâncias desses componentes assumirão automaticamente o uso de `cq:Page` e `dam:Asset` tipos de nó sem nenhuma outra ação do cliente.
 > * A variável `nodeTypes` pode ser adicionada para substituir esses tipos de nó padrão.
-
 
 ## Linha de tempo para remoção de Lucene genérico {#timeline}
 

@@ -2,10 +2,10 @@
 title: Entender a instalação do Complemento de demonstrações de referência
 description: Saiba mais sobre o Cloud Manager e como ele é usado para instalar o complemento.
 exl-id: 9418aac6-a8c4-43f7-b329-b02149fe2d53
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '983'
-ht-degree: 100%
+source-wordcount: '976'
+ht-degree: 98%
 
 ---
 
@@ -70,7 +70,7 @@ Os programas podem ser de produção ou de sandbox.
 * **Um programa de produção** é criado para eventualmente permitir o tráfego ativo quando o programa estiver pronto para entrar no ar.
 * **Um programa sandbox** é criado para treinamento, execução de demonstrações, capacitação, POCs etc. e não se destina ao tráfego ativo.
 
-Para instalar o Complemento de demonstrações de referência do AEM, será necessário criar um novo programa sandbox.
+Para instalar o complemento de demonstrações de referência do AEM, crie um programa sandbox.
 
 >[!NOTE]
 >

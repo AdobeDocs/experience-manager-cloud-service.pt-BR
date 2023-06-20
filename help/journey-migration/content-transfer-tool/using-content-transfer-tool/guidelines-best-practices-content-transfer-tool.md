@@ -2,10 +2,10 @@
 title: Diretrizes e práticas recomendadas para usar a ferramenta Transferência de conteúdo
 description: Diretrizes e práticas recomendadas para usar a ferramenta Transferência de conteúdo
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1552'
-ht-degree: 22%
+source-wordcount: '1547'
+ht-degree: 19%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 22%
 
 -->
 
-Uma nova versão da ferramenta de Transferência de conteúdo está disponível para integrar o processo de transferência de conteúdo ao Cloud Acceleration Manager. É altamente recomendável mudar para essa nova versão para aproveitar todos os benefícios que ela oferece:
+Uma nova versão da ferramenta de Transferência de conteúdo está disponível para integrar o processo de transferência de conteúdo ao Cloud Acceleration Manager. É altamente recomendável mudar para essa nova versão para usar todos os benefícios que ela oferece:
 
 * Sistema de autoatendimento para extrair um conjunto de migração uma vez e assimilá-lo em vários ambientes em paralelo
 * Aprimoramento da experiência do usuário por meio de melhores estados de carregamento, medidas de proteção e tratamento de erros
@@ -37,13 +37,13 @@ As diretrizes e práticas recomendadas a seguir se aplicam à nova versão da fe
 
 * É aconselhável executar a [Limpeza de revisão](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html) e as [verificações de consistência do armazenamento de dados](https://helpx.adobe.com/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html) no repositório de **origem** para identificar possíveis problemas e reduzir o tamanho do repositório.
 
-* Na fase de assimilação, é recomendável executar a assimilação usando o modo de *limpeza* ativado, no qual o repositório existente (autor ou publicação) no ambiente de serviço do AEM Cloud Service será completamente excluído e depois atualizado com os dados do conjunto de migração. Esse modo é muito mais rápido que o modo sem limpeza, no qual o conjunto de migração é aplicado sobre o conteúdo atual.
+* Na fase de assimilação, é recomendável executar a assimilação usando o *varrer* modo ativado em que o repositório existente (autor ou publicação) no ambiente do AEM Cloud Service de destino é completamente excluído e depois atualizado com os dados do conjunto de migração. Esse modo é muito mais rápido que o modo sem limpeza, no qual o conjunto de migração é aplicado sobre o conteúdo atual.
 
 * Após a conclusão da atividade de transferência de conteúdo, a estrutura correta do projeto é necessária no ambiente do Cloud Service para garantir que o conteúdo seja renderizado com êxito no ambiente do Cloud Service.
 
 * Antes de executar a ferramenta Transferência de conteúdo, verifique se há espaço em disco suficiente no subdiretório `crx-quickstart` da instância de origem do AEM. Isso ocorre porque a ferramenta Transferência de conteúdo cria uma cópia local do repositório que depois é carregada no conjunto de migração.
 A fórmula geral para calcular o espaço livre em disco necessário é a seguinte:
-   `data store size + node store size * 1.5`
+  `data store size + node store size * 1.5`
 
    * *tamanho do armazenamento de dados*: a ferramenta Transferência de conteúdo usa 64 GB, mesmo que o armazenamento de dados real seja maior.
    * *tamanho do armazenamento do nó*: tamanho do diretório do repositório de segmentos ou tamanho do banco de dados MongoDB.
@@ -65,13 +65,13 @@ Siga a seção abaixo para entender as considerações importantes ao executar a
 
 * Para iniciar uma assimilação, você precisa pertencer ao AEM local **administradores** grupo na instância do Cloud Service para a qual você está transferindo conteúdo. Usuários sem privilégios não poderão iniciar assimilações sem fornecer manualmente o token de migração.
 
-* Se a configuração **Apagar conteúdo existente na instância da nuvem antes da assimilação** estiver ativada, excluirá todo o repositório existente e criará um novo repositório para assimilar conteúdo. Isso significa que ele redefine todas as configurações, incluindo permissões na instância do Cloud Service de destino. Isso também ocorre para um usuário administrador adicionado à variável **administradores** grupo. O usuário deve ser adicionado novamente à variável **administradores** para recuperar o token de acesso da ferramenta Transferência de conteúdo.
+* Se a configuração **Apagar conteúdo existente na instância da nuvem antes da assimilação** estiver ativada, excluirá todo o repositório existente e criará um novo repositório para assimilar conteúdo. Isso significa que ele redefine todas as configurações, incluindo permissões na instância do Cloud Service de destino. Isso também ocorre para um usuário administrador adicionado à variável **administradores** grupo. O usuário deve ser adicionado novamente à variável **administradores** grupo para recuperar o token de acesso da ferramenta Transferência de conteúdo.
 
 * As assimilações não são compatíveis com a mesclagem de conteúdo de várias fontes na instância do Cloud Service de destino se o conteúdo das duas fontes for movido para os mesmos caminhos no destino. Para mover o conteúdo de várias fontes para uma única ocorrência de Cloud Service de destino, é necessário garantir que não haja sobreposição dos caminhos de conteúdo das fontes.
 
 * A chave de extração é válida por 14 dias a partir do momento em que foi criada/renovada. Ele pode ser renovado a qualquer momento. Se a chave de extração tiver expirado, você não poderá executar uma extração.
 
-* A ferramenta Transferência de conteúdo (CTT) não executa nenhum tipo de análise de conteúdo antes de transferir o conteúdo da instância de origem para a instância de destino. Por exemplo, a CTT não diferencia entre conteúdo publicado e não publicado ao assimilar conteúdo em um ambiente de publicação. Qualquer conteúdo especificado no conjunto de migração será assimilado na instância de destino escolhida. O usuário pode assimilar um conjunto de migração em uma instância de Autor ou instância de Publicação, ou ambos. É recomendável que, ao mover o conteúdo para uma instância de Produção, a CTT seja instalada na instância do Autor de origem para mover o conteúdo para a instância do Autor de destino e, de forma semelhante, instale a CTT na instância de Publicação de origem para mover o conteúdo para a instância de Publicação de destino. Consulte [Execução da ferramenta Transferência de conteúdo em uma instância de publicação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#running-tool) para obter mais detalhes.
+* A ferramenta Transferência de conteúdo (CTT) não executa nenhum tipo de análise de conteúdo antes de transferir o conteúdo da instância de origem para a instância de destino. Por exemplo, a CTT não diferencia entre conteúdo publicado e não publicado ao assimilar conteúdo em um ambiente de publicação. Qualquer conteúdo especificado no conjunto de migração é assimilado na instância de destino escolhida. O usuário pode assimilar um conjunto de migração em uma instância de Autor ou instância de Publicação, ou ambos. É recomendável que, ao mover o conteúdo para uma instância de Produção, a CTT seja instalada na instância do Autor de origem para mover o conteúdo para a instância do Autor de destino e, de forma semelhante, instale a CTT na instância de Publicação de origem para mover o conteúdo para a instância de Publicação de destino. Consulte [Execução da ferramenta Transferência de conteúdo em uma instância de publicação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#running-tool) para obter mais detalhes.
 
 * Os usuários e grupos transferidos pela ferramenta Transferência de conteúdo são apenas aqueles exigidos pelo conteúdo para atender às permissões. A variável _Extração_ o processo copia todo o `/home` no conjunto de migração e faz o Mapeamento de usuários, adicionando um campo criado a partir do endereço de email de cada usuário. Para obter mais informações, consulte [Mapeamento de usuários e migração de entidade de segurança](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md). A variável _Assimilação_ O processo copia todos os usuários e grupos referenciados nas ACLs de conteúdo migradas.
 
@@ -83,7 +83,7 @@ Siga a seção abaixo para entender as considerações importantes ao executar a
    * Tipo de ambiente (Preparo ou Produção) no qual você planeja assimilar dados.
    * ID do programa.
 
-* A variável *Fase de assimilação* para o autor reduz a implantação do autor inteiro. Isso significa que o AEM do autor não estará disponível durante todo o processo de ingestão. Certifique-se também de que nenhum pipeline do Cloud Manager seja executado enquanto você estiver executando o *Assimilação* fase.
+* A variável *Fase de assimilação* para o autor reduz a implantação do autor inteiro. Significa que o AEM do autor não está disponível durante todo o processo de ingestão. Certifique-se também de que nenhum pipeline do Cloud Manager seja executado enquanto você estiver executando o *Assimilação* fase.
 
 * Ao usar `Amazon S3` ou `Azure` como o armazenamento de dados no sistema AEM de origem, o armazenamento de dados deve ser configurado para que os blobs armazenados não possam ser excluídos (coleta de lixo). Isso garante a integridade dos dados do índice, e a falha na configuração dessa maneira pode resultar em extrações com falha devido à falta de integridade desses dados de índice.
 

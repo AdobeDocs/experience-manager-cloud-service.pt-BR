@@ -2,10 +2,10 @@
 title: Backup e restauração no AEM as a Cloud Service
 description: Backup e restauração no AEM as a Cloud Service
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: eec03acf5d208236ddac338134f95fb3aaa5ee26
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 24%
+source-wordcount: '509'
+ht-degree: 17%
 
 ---
 
@@ -15,14 +15,14 @@ ht-degree: 24%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_backuprestore"
 >title="Backup e restauração"
->abstract="O AEM as a Cloud Service pode restaurar o aplicativo completo (código e conteúdo) de um cliente para uma hora específica e predeterminada nos últimos sete dias, substituindo o que estava em produção. Esse recurso deve ser usado somente quando houver problemas graves com código ou conteúdo. Os dados recentes entre o momento do backup restaurado e o presente serão perdidos. O armazenamento temporário também será restaurado para a versão antiga."
+>abstract="O AEM as a Cloud Service pode restaurar o aplicativo completo (código e conteúdo) de um cliente para uma hora específica e predeterminada nos últimos sete dias, substituindo o que estava em produção. Esse recurso deve ser usado somente quando houver problemas graves com código ou conteúdo. Os dados recentes entre o momento do backup restaurado e o presente são perdidos. O armazenamento temporário também será restaurado para a versão antiga."
 
 Caso ocorra corrupção de conteúdo ou dados, o AEM as a Cloud Service pode restaurar o aplicativo completo de um cliente (código e conteúdo) para horários específicos e predeterminados nos últimos sete dias, substituindo o que estava em produção.
 Se a implantação de um cliente, o que significa que o código do aplicativo implantado está corrompido ou com problemas, é preferível corrigi-lo e avançar para uma nova versão em vez de restaurá-lo a partir do backup. O backup é executado de forma que não afete o desempenho de tempo de execução de um aplicativo.
 
 >[!CAUTION]
 >
->Esse recurso deve ser usado somente quando houver problemas graves com código ou conteúdo. Os dados recentes entre o momento do backup restaurado e o presente serão perdidos. O armazenamento temporário também será restaurado para a versão antiga.
+>Esse recurso deve ser usado somente quando houver problemas graves com código ou conteúdo. Os dados recentes entre o momento do backup restaurado e o presente são perdidos. O armazenamento temporário também é restaurado para a versão antiga.
 
 ## Como usar {#how-to-use}
 
@@ -32,13 +32,13 @@ O AEM as a Cloud Service suporta:
 
 * Backup e restauração para ambientes de preparo, produção e desenvolvimento.
 * Recuperação em 24 horas, o que significa que o sistema pode ser restaurado para qualquer ponto nas últimas 24 horas.
-* Restaurar a partir de um carimbo de data e hora específico definido por Adobe, tirado duas vezes por dia nos últimos sete dias.  Todas as mensagens de replicação (exclusões, atualizações, criações) serão preservadas.
+* Restaurar a partir de um carimbo de data e hora específico definido por Adobe, tirado duas vezes por dia nos últimos sete dias.  Todas as mensagens de replicação (exclusões, atualizações, criações) são preservadas.
 
-Em todos os casos, a versão do código personalizado será a retirada da última implantação bem-sucedida antes do ponto de restauração.
+Em todos os casos, a versão do código personalizado é a retirada da última implantação bem-sucedida antes do ponto de restauração.
 
 O RTO (Recovery Time Objetive, objetivo de tempo de recuperação) pode variar, mas como diretriz geral, a sequência de recuperação leva entre 60 e 90 minutos em média, dependendo de vários fatores, como o tamanho do repositório. Ambientes de visualização e editores de várias regiões podem estender o objetivo de tempo de restauração.
 
-Após uma restauração, a versão do AEM será atualizada para a mais recente.
+Após uma restauração, a versão do AEM é atualizada para a mais recente.
 
 >[!CAUTION]
 >

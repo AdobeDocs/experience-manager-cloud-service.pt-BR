@@ -2,10 +2,10 @@
 title: Introdução a SPAs no AEM usando o Angular
 description: Este artigo apresenta uma amostra de aplicativo SPA, explica como ele é montado e permite que você comece a usar seu próprio SPA rapidamente usando a estrutura do Angular.
 exl-id: 8013ac2c-d1a7-4940-bb65-15e3ed7652d6
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '993'
-ht-degree: 12%
+source-wordcount: '991'
+ht-degree: 9%
 
 ---
 
@@ -39,7 +39,7 @@ Este documento abordará a estrutura de um SPA simplificado e ilustrará como el
 
 ## Dependências, configuração e criação {#dependencies-configuration-and-building}
 
-Além da dependência de Angular esperada, a amostra SPA pode aproveitar bibliotecas adicionais para tornar a criação do SPA mais eficiente.
+Além da dependência de Angular esperada, a amostra SPA pode usar bibliotecas adicionais para tornar a criação do SPA mais eficiente.
 
 ### Dependências {#dependencies}
 
@@ -53,7 +53,7 @@ A variável `package.json` define os requisitos do pacote SPA geral. As dependê
 }
 ```
 
-A variável `aem-clientlib-generator` O é aproveitado para tornar a criação de bibliotecas de clientes automática como parte do processo de criação.
+A variável `aem-clientlib-generator` O é usado para tornar a criação de bibliotecas de clientes automática como parte do processo de criação.
 
 `"aem-clientlib-generator": "^1.4.1",`
 
@@ -90,7 +90,7 @@ module.exports = {
 
 ### Criando {#building}
 
-Criar o aplicativo realmente aproveita [Webpack](https://webpack.js.org/) para tradução, além do aem-clientlib-generator para criação automática da biblioteca do cliente. Portanto, o comando build será semelhante a:
+Criar realmente os usos do aplicativo [Webpack](https://webpack.js.org/) para tradução, além do aem-clientlib-generator para criação automática da biblioteca do cliente. Portanto, o comando build será semelhante a:
 
 `"build": "ng build --build-optimizer=false && clientlib",`
 
@@ -98,7 +98,7 @@ Depois de criado, o pacote pode ser carregado para uma instância AEM.
 
 ### Arquétipo de projeto do AEM {#aem-project-archetype}
 
-Qualquer projeto do AEM deve utilizar o [Arquétipo de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR), que aceita projetos SPA que usam o React ou Angular e utiliza o SDK do SPA.
+Qualquer projeto AEM deve usar o [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR), que oferece suporte a projetos SPA usando o React ou o Angular e usa o SDK do SPA.
 
 ## Estrutura do aplicativo {#application-structure}
 

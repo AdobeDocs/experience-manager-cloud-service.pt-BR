@@ -2,9 +2,9 @@
 title: Edição de inicializações
 description: Depois de criar uma inicialização para sua página (ou conjunto de páginas), você pode editar o conteúdo na cópia de inicialização da(s) página(s).
 exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '553'
 ht-degree: 52%
 
 ---
@@ -27,7 +27,6 @@ Ao editar a página, você verá uma indicação na barra de ferramentas superio
 >Você não tem permissão para mover uma página em um lançamento. Tentar esta ação acionará uma mensagem de aviso:
 >
 >* Aviso: esta página é a origem de um lançamento. Não é permitido mover a página.
-
 
 ### Edição de páginas de lançamento sujeitas a uma live copy {#editing-launch-pages-subject-to-a-live-copy}
 
@@ -68,7 +67,7 @@ A qualquer momento, você pode adicionar ou remover páginas ao/do intervalo de 
       * Selecione **Editar**.
    * [Referências (console Sites)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) para mostrar as ações disponíveis:
       * Selecione **Editar lançamento**.
-      * As páginas de origem serão exibidas.
+      * As páginas de origem são exibidas.
 1. Faça as alterações necessárias e confirme com **Salvar**.
 
 >[!NOTE]
@@ -84,7 +83,7 @@ A qualquer momento, você pode editar as propriedades de um lançamento:
       * Selecionar **Propriedades**.
    * [Referências (console Sites)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) para mostrar as ações disponíveis:
       * Selecione **Editar propriedades**.
-      * Os detalhes serão mostrados.
+      * Os detalhes são mostrados.
 1. Faça as alterações necessárias e confirme com **Salvar**.
    * Consulte [Inicializações - a Ordem dos eventos](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events) para obter informações sobre a finalidade e interação dos campos **Data de inicialização** e **Pronto para produção**.
 

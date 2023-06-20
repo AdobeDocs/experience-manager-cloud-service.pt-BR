@@ -2,9 +2,9 @@
 title: Estrutura de projetos do AEM
 description: Saiba mais sobre como definir estruturas de pacote para implantação no Adobe Experience Manager Cloud Service.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2931'
+source-wordcount: '2927'
 ht-degree: 12%
 
 ---
@@ -74,7 +74,7 @@ A estrutura de implantação de aplicativo recomendada é a seguinte:
 
 >[!NOTE]
 >
->O mesmo código deve ser implantado em todos os ambientes. Isso é necessário para garantir que validações de nível de confiança no ambiente de preparo também estejam em produção. Para obter mais informações, consulte a seção sobre [Runmodes](/help/implementing/deploying/overview.md#runmodes).
+>O mesmo código deve ser implantado em todos os ambientes. Esse código é necessário para garantir que validações de nível de confiança no ambiente de preparo também estejam em produção. Para obter mais informações, consulte a seção sobre [Runmodes](/help/implementing/deploying/overview.md#runmodes).
 
 
 ### Pacotes de conteúdo
@@ -93,11 +93,11 @@ A estrutura de implantação de aplicativo recomendada é a seguinte:
 
 + A variável `all` é um pacote de contêiner que APENAS inclui artefatos implantáveis, o arquivo Jar do pacote OSGI, `ui.apps`, `ui.config` e `ui.content` pacotes como incorporados. A variável `all` o pacote não deve ter **qualquer conteúdo ou código** por conta própria, mas delegue toda a implantação no repositório em seus pacotes secundários ou arquivos Jar do pacote OSGi.
 
-   Agora os pacotes são incluídos usando o Maven [Configuração incorporada do plug-in FileVault Package Maven](#embeddeds), em vez de `<subPackages>` configuração.
+  Agora os pacotes são incluídos usando o Maven [Configuração incorporada do plug-in FileVault Package Maven](#embeddeds), em vez de `<subPackages>` configuração.
 
-   Para implantações complexas de Experience Manager, pode ser desejável criar vários `ui.apps`, `ui.config` e `ui.content` projetos/pacotes que representam sites ou locatários específicos no AEM. Se isso for feito, certifique-se de que a divisão entre conteúdo mutável e imutável seja respeitada e que os pacotes de conteúdo necessários e os arquivos Jar do pacote OSGi sejam incorporados como pacotes secundários na `all` pacote de conteúdo do container.
+  Para implantações complexas de Experience Manager, pode ser desejável criar vários `ui.apps`, `ui.config` e `ui.content` projetos/pacotes que representam sites ou locatários específicos no AEM. Se isso for feito, certifique-se de que a divisão entre conteúdo mutável e imutável seja respeitada e que os pacotes de conteúdo necessários e os arquivos Jar do pacote OSGi sejam incorporados como pacotes secundários na `all` pacote de conteúdo do container.
 
-   Por exemplo, uma estrutura complexa de pacote de conteúdo de implantação pode ter esta aparência:
+  Por exemplo, uma estrutura complexa de pacote de conteúdo de implantação pode ter esta aparência:
 
    + `all` o pacote de conteúdo incorpora os seguintes pacotes, para criar um artefato de implantação singular
       + `common.ui.apps` implanta o código exigido por **ambos** site A e site B
@@ -231,12 +231,12 @@ Detalhar esta estrutura de pasta:
    + `/apps/my-other-app-packages`
    + `/apps/vendor-packages`
 
-   >[!WARNING]
-   >
-   >Por convenção, as pastas incorporadas do pacote secundário são nomeadas com o sufixo `-packages`. Isso garante que o código de implantação e os pacotes de conteúdo **não** sejam implantados nas pastas de destino de qualquer pacote secundário `/apps/<app-name>/...` que resulte em comportamento de instalação destrutivo e cíclico.
+  >[!WARNING]
+  >
+  >Por convenção, as pastas incorporadas do pacote secundário são nomeadas com o sufixo `-packages`. Isso garante que o código de implantação e os pacotes de conteúdo **não** sejam implantados nas pastas de destino de qualquer pacote secundário `/apps/<app-name>/...` que resulte em comportamento de instalação destrutivo e cíclico.
 
 + A pasta de terceiro nível deve ser
-   `application`, `content` ou `container`
+  `application`, `content` ou `container`
    + A variável `application` a pasta contém pacotes de código
    + A variável `content` a pasta retém pacotes de conteúdo
    + A variável `container` a pasta contém qualquer [pacotes de aplicativos extras](#extra-application-packages) que pode ser incluído pelo aplicativo AEM.
@@ -549,7 +549,7 @@ Se vários `/apps/*-packages` são usados nos destinos incorporados, todos eles 
 
 >[!WARNING]
 >
->Adicionar mais repositórios Maven pode estender os tempos de compilação do Maven, pois repositórios Maven adicionais serão verificados em busca de dependências.
+>Adicionar mais repositórios Maven pode estender os tempos de compilação do Maven, à medida que repositórios Maven adicionais forem verificados em busca de dependências.
 
 No projeto do reator `pom.xml`, adicione as diretivas de repositório Maven públicas de terceiros necessárias. O conjunto `<repository>` A configuração do deve estar disponível no provedor de repositório de terceiros.
 

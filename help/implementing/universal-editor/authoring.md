@@ -2,10 +2,10 @@
 title: Criação de conteúdo com o Editor universal
 description: Saiba como é fácil e intuitivo para os autores criarem conteúdo utilizando o Editor universal.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1152'
-ht-degree: 100%
+source-wordcount: '1147'
+ht-degree: 84%
 
 ---
 
@@ -15,7 +15,7 @@ Saiba como é fácil e intuitivo para os autores criarem conteúdo utilizando o 
 
 ## Introdução {#introduction}
 
-O Editor universal permite editar qualquer aspecto do conteúdo das implementações, a fim de entregar experiências excepcionais, aumentar a velocidade do conteúdo e fornecer uma experiência de desenvolvedor de última geração.
+O Editor universal permite editar qualquer aspecto de qualquer conteúdo em qualquer implementação para que você possa fornecer experiências excepcionais, aumentar a velocidade do conteúdo e fornecer uma experiência do desenvolvedor de última geração.
 
 Para isso, ele fornece aos autores de conteúdo uma interface intuitiva que requer o mínimo de treinamento possível, permitindo simplesmente avançar e começar a editar o conteúdo.
 
@@ -39,7 +39,7 @@ Para criar conteúdo para um aplicativo usando o Editor universal, o aplicativo 
 
 Após o aplicativo ser instrumentado para funcionar com o Editor universal, será necessário fazer logon no Editor universal. Você precisará de uma Adobe ID para fazer logon e [ter acesso ao Editor universal.](getting-started.md#request-access)
 
-Depois de fazer logon, insira o URL da página que deseja editar na [barra de endereços.](#address-bar) para começar a [editar o conteúdo.](#edit-content)
+Depois de fazer logon, insira o URL da página que deseja editar na [barra de endereços.](#address-bar) para que você possa começar [editar o conteúdo.](#edit-content)
 
 ## Entenda a interface {#ui}
 
@@ -84,7 +84,7 @@ O ícone de ajuda fornece acesso rápido aos recursos de aprendizagem e suporte.
 
 #### Notificações {#notifications}
 
-Esse ícone será marcado com o número de [notificações](/help/implementing/cloud-manager/notifications.md) incompletas atribuídas atualmente.
+Esse ícone contém o número de incompletos atribuídos no momento [notificações.](/help/implementing/cloud-manager/notifications.md)
 
 ![Notificações](assets/notifications.png)
 
@@ -132,7 +132,7 @@ Toque ou clique no ícone Abrir visualização do aplicativo para abrir a págin
 
 #### Publicação {#publish}
 
-Toque ou clique no botão de publicação para que as alterações sejam publicadas no conteúdo ativo para os seus leitores.
+Toque ou clique no botão Publicar para poder publicar as alterações no conteúdo em tempo real para consumo pelos leitores.
 
 ![Botão de publicação](assets/publish.png)
 
@@ -172,7 +172,7 @@ Dependendo de se o editor está em [modo de edição](#edit-mode) ou [modo de vi
 
 ## Editar o conteúdo {#editing-content}
 
-A edição de conteúdo é simples e intuitiva. No [modo de edição,](#edit-mode) ao passar o mouse sobre o conteúdo no editor, o conteúdo editável será destacado com uma caixa azul.
+A edição de conteúdo é simples e intuitiva. Entrada [modo de edição,](#edit-mode) à medida que você passa o mouse sobre o conteúdo no editor, o conteúdo editável é realçado com uma caixa azul.
 
 ![O conteúdo editável é destacado por uma caixa azul](assets/editable-content.png)
 
@@ -192,7 +192,7 @@ Note que, no modo de visualização, a ação de tocar ou clicar no conteúdo fu
 
 Para saber mais sobre o Editor universal, consulte estes documentos.
 
-* [Introdução ao Editor universal](introduction.md): saiba como o Editor universal permite editar qualquer aspecto do conteúdo das implementações, a fim de entregar experiências excepcionais, aumentar a velocidade do conteúdo e fornecer uma experiência de desenvolvedor de última geração.
+* [Introdução ao Universal Editor](introduction.md) : saiba como o Editor universal permite editar qualquer aspecto de qualquer conteúdo em qualquer implementação para que você possa fornecer experiências excepcionais, aumentar a velocidade do conteúdo e fornecer uma experiência do desenvolvedor de última geração.
 * [Publicação de conteúdo com o Editor universal](publishing.md): saiba como o Editor visual universal publica o conteúdo e como seus aplicativos podem lidar com esse conteúdo.
 * [Introdução ao Editor universal no AEM](getting-started.md): saiba como obter acesso ao Editor universal e começar a instrumentar seu primeiro aplicativo do AEM para utilizá-lo.
 * [Arquitetura do Editor universal](architecture.md): saiba mais sobre a arquitetura do Editor universal e como os dados fluem entre seus serviços e camadas.

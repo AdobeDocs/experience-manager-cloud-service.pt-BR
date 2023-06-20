@@ -2,7 +2,7 @@
 title: Como criar um modelo de formulário adaptável?
 description: Crie modelos de Formulário adaptável para definir a estrutura básica e o conteúdo inicial usando o Editor de modelos.
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: c101ed97388b06dc71edfc9e13fac8a3e889c249
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
 source-wordcount: '2017'
 ht-degree: 1%
@@ -48,7 +48,7 @@ Contém as seguintes opções:
 
    * **Ativar/desativar painel lateral**: permite mostrar ou ocultar a barra lateral.
    * **Informações da página**: permite especificar informações como tempo de publicação/cancelamento de publicação, miniaturas, bibliotecas do lado do cliente, política da página e biblioteca do lado do cliente de design da página.
-      <!-- * **Emulator**: Lets you simulate and customize the look for different devices.-->
+     <!-- * **Emulator**: Lets you simulate and customize the look for different devices.-->
    * **Seletor de modo:** Permite alterar o modo.Você pode escolher **[!UICONTROL Estrutura]** modo, **[!UICONTROL Conteúdo inicial]**, **[!UICONTROL Controle de layout]** modo. O modo Estrutura permite adicionar e personalizar o cabeçalho e o rodapé. O modo Conteúdo inicial permite personalizar o conteúdo do formulário.
    * **Visualizar:** Permite visualizar a aparência do modelo ao publicá-lo. Você pode usar o Seletor de camada e a Visualização para alternar entre os modos de edição e visualização.
 * **Barra lateral:** Fornece os navegadores de Conteúdo, Propriedades, Ativos e Componentes.
@@ -156,7 +156,6 @@ Um formulário funciona com seu modelo. Ao baixar um Formulário adaptável cria
 > * Você também pode configurar as opções [!UICONTROL Documento do registro] modelo diretamente do editor de formulário adaptável ou do editor de modelo de formulário adaptável. Para obter mais informações, consulte [Gerar documento de registro para o Adaptive Forms](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
 
 
-
 ## Associar um esquema do modelo de dados de formulário a um modelo {#associating-form-data-model-schema-in-template}
 
 Os autores podem associar um [!UICONTROL Esquema do modelo de dados de formulário] para um modelo de Formulário adaptável no editor de modelos. Ele permite que os autores selecionem um esquema no editor de modelos. Quando você associa um esquema a um modelo e um autor de formulário cria um formulário com base no modelo, o esquema é pré-selecionado para o formulário. Ele ajuda os autores de formulários a regular o uso do esquema e também economiza tempo para o autor de formulários. Para selecionar um esquema de modelo de dados de formulário no editor de modelo:
@@ -191,7 +190,7 @@ Perform the following steps to show and hide templates:
 1. Locate and open the **FormsManager Configuration** settings:
 
     * To show or hide out of the box Adaptive Forms template, check or uncheck the **Include Out of the box AF and AD Templates** option.
-    * To show or hide out of the box Adaptive Form templates that were added in AEM 6.0 Forms or AEM 6.1 Forms releases but are now deprecated, check or uncheck the **Include AEM 6.0 AF Templates** option. If this option is checked, in order to take effect, it requires the **Include Out of the box AF and AD Templates** configuration to be enabled.
+    * To show or hide out of the box Adaptive Form templates that were added in AEM 6.0 Forms or AEM 6.1 Forms releases but are now deprecated, check or uncheck the **Include AEM 6.0 AF Templates** option. If this option is checked, and you want it to take effect, it requires the **Include Out of the box AF and AD Templates** configuration to be enabled.
 
 1. Click **Save**. The display options for the out of the box templates are changed. -->
 

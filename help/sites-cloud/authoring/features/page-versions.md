@@ -2,10 +2,10 @@
 title: Trabalhar com versões de páginas
 description: Criar, comparar e restaurar versões de uma página
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
-source-git-commit: 2d1b40b8d6f7b6ca5ce112331a7d389816739494
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1521'
-ht-degree: 77%
+source-wordcount: '1512'
+ht-degree: 72%
 
 ---
 
@@ -64,17 +64,17 @@ Depois de criar uma versão da página, há vários métodos para restaurar uma 
 
 * a opção **Reverter para esta versão** do painel [Linha do tempo](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)
 
-   Restaure uma versão anterior de uma página selecionada.
+  Restaure uma versão anterior de uma página selecionada.
 
 * a opção **Restaurar** na parte superior da [barra de ferramentas Ações](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar)
 
    * **Restaurar versão**
 
-      Restaure as versões das páginas especificadas na pasta atualmente selecionada; isso também pode incluir a restauração de páginas que foram excluídas anteriormente.
+     Restaure as versões das páginas especificadas na pasta atualmente selecionada; isso também pode incluir a restauração de páginas que foram excluídas anteriormente.
 
    * **Restaurar árvore**
 
-      Restaure uma versão de uma árvore inteira em uma data e hora especificadas; isso pode incluir páginas que foram excluídas anteriormente.
+     Restaure uma versão de uma árvore inteira em uma data e hora especificadas; isso pode incluir páginas que foram excluídas anteriormente.
 
 >[!NOTE]
 >
@@ -83,11 +83,10 @@ Depois de criar uma versão da página, há vários métodos para restaurar uma 
 >Para ilustrar:
 >
 >1. Crie versões de qualquer página.
->1. Os nomes dos rótulos iniciais e do nó da versão serão 1.0, 1.1, 1.2 e assim por diante.
+>1. Os nomes dos rótulos iniciais e do nó da versão são 1.0, 1.1, 1.2 e assim por diante.
 >1. Restaure a primeira versão; isto é, a versão 1.0.
 >1. Crie novas versões novamente.
->1. Os rótulos e nomes de nó gerados agora serão 1.0.0, 1.0.1, 1.0.2, etc.
-
+>1. Os rótulos e nomes de nó gerados agora são 1.0.0, 1.0.1, 1.0.2 e assim por diante.
 
 ### Reverter para uma versão {#revert-to-a-version}
 
@@ -95,8 +94,8 @@ Para **Reverter** a página selecionada para uma versão anterior:
 
 1. Navegue para mostrar a página para a qual você deseja reverter para uma versão anterior.
 1. Selecione a página no [modo de seleção](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. Abra a coluna **Linha do tempo** e selecione **Mostrar tudo** ou **Versões**. As versões de página da página selecionada serão listadas.
-1. Selecione a versão para a qual deseja reverter. As opções possíveis serão mostradas:
+1. Abra a coluna **Linha do tempo** e selecione **Mostrar tudo** ou **Versões**. As versões de página da página selecionada são listadas.
+1. Selecione a versão para a qual deseja reverter. As opções possíveis são mostradas:
 
    ![Reverter para essa versão](/help/sites-cloud/authoring/assets/versions-revert.png)
 
@@ -115,11 +114,10 @@ Este método pode ser usado para restaurar versões de páginas especificadas na
    >Se você:
    >* selecionou uma página única que nunca teve páginas secundárias,
    >* ou nenhuma das páginas na pasta tem versões,
-
    >
    >Então, a exibição estará vazia, pois não há versões aplicáveis.
 
-1. As versões disponíveis serão listadas:
+1. As versões disponíveis estão listadas:
 
    ![Restaurar versão - Lista de todas as páginas na pasta](/help/sites-cloud/authoring/assets/versions-restore-version-01.png)
 
@@ -151,9 +149,9 @@ Esse método pode ser usado para restaurar uma versão de uma árvore, por exemp
 
 1. Defina o sinalizador **Páginas sem controle de versão preservadas** conforme necessário:
 
-   * Se estiver ativo (selecionado), quaisquer páginas sem controle de versão serão mantidas e não serão afetadas pela restauração.
+   * Se estiver ativo (selecionado), todas as páginas sem controle de versão serão mantidas e não serão afetadas pela restauração.
 
-   * Se estiver inativo (não selecionado), quaisquer páginas sem controle de versão serão removidas, pois não existiam na árvore com controle de versões.
+   * Se estiver inativo (não selecionado), todas as páginas sem controle de versão serão removidas, pois não existiam na árvore com controle de versão.
 
 1. Selecione **Restaurar** para que a versão selecionada da árvore seja restaurada como a versão *atual*.
 
@@ -164,7 +162,7 @@ Esse método pode ser usado para restaurar uma versão de uma árvore, por exemp
 1. Navegue para mostrar a página que você deseja comparar.
 1. Selecione a página no [modo de seleção](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Abra a coluna **Linha do tempo** e selecione **Mostrar tudo** ou **Versões**.
-1. As versões da página serão listadas. Selecione a versão que deseja visualizar:
+1. As versões da página são listadas. Selecione a versão que deseja visualizar:
 
    ![Versão de visualização](/help/sites-cloud/authoring/assets/versions-revert.png)
 
@@ -183,7 +181,7 @@ Para comparar uma versão anterior com a página atual:
 1. Navegue para mostrar a página que você deseja comparar.
 1. Selecione a página no [modo de seleção](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Abra a coluna **Linha do tempo** e selecione **Mostrar tudo** ou **Versões**.
-1. As versões da página serão listadas. Selecione a versão que deseja comparar:
+1. As versões da página são listadas. Selecione a versão que deseja comparar:
 
    ![Comparar versões](/help/sites-cloud/authoring/assets/versions-revert.png)
 
@@ -197,7 +195,7 @@ O Timewarp é um recursos criado para simular o estado *publicado* de uma págin
 >
 >[O Timewarp também pode ser usado com Inicializações para visualizar o futuro.](/help/sites-cloud/authoring/launches/preview.md)
 
-Como a criação de conteúdo é um processo contínuo e colaborativo, o objetivo do Timewarp é permitir que os autores rastreiem o site publicado ao longo do tempo, para entender como o conteúdo mudou. Esse recurso usa as versões de página para determinar o estado do ambiente de publicação.
+Como a criação de conteúdo é um processo contínuo e colaborativo, o objetivo do Timewarp é permitir que os autores rastreiem o site publicado ao longo do tempo, para que possam entender como o conteúdo mudou. Esse recurso usa as versões de página para determinar o estado do ambiente de publicação.
 
 Para fazer isso:
 

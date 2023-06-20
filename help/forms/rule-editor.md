@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: e64e15c9096f837daa7fff5c64b8394736297579
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '6346'
+source-wordcount: '6321'
 ht-degree: 0%
 
 ---
@@ -60,11 +60,11 @@ Embora seja possível obter a maioria dos casos de uso usando qualquer construç
 
 * Uma regra prática comum ao criar uma regra é pensar nela no contexto do objeto no qual você está escrevendo uma regra. Considere que deseja ocultar ou mostrar o campo B com base no valor especificado por um usuário no campo A. Nesse caso, você está avaliando uma condição no campo A e, com base no valor retornado, aciona uma ação no campo B.
 
-   Portanto, se estiver gravando uma regra no campo B (o objeto no qual você está avaliando uma condição), use a construção de condição-ação ou o tipo de regra When. Da mesma forma, use a construção action-condition ou o tipo de regra Mostrar ou Ocultar no campo A.
+  Portanto, se estiver gravando uma regra no campo B (o objeto no qual você está avaliando uma condição), use a construção de condição-ação ou o tipo de regra When. Da mesma forma, use a construção action-condition ou o tipo de regra Mostrar ou Ocultar no campo A.
 
 * Às vezes, você deve executar várias ações com base em uma condição. Nesses casos, é recomendável usar a construção condição-ação. Nesta construção, você pode avaliar uma condição uma vez e especificar várias instruções de ação.
 
-   Por exemplo, para ocultar os campos B, C e D com base na condição que verifica o valor especificado por um usuário no campo A, grave uma regra com construção de condição-ação ou Quando tipo de regra no campo A e especifique ações para controlar a visibilidade dos campos B, C e D. Caso contrário, você precisará de três regras separadas nos campos B, C e D, em que cada regra verifica a condição e mostra ou oculta o respectivo campo. Neste exemplo, é mais eficiente escrever o tipo de regra Quando em um objeto do que Mostrar ou Ocultar em três objetos.
+  Por exemplo, para ocultar os campos B, C e D com base na condição que verifica o valor especificado por um usuário no campo A, grave uma regra com construção de condição-ação ou Quando tipo de regra no campo A e especifique ações para controlar a visibilidade dos campos B, C e D. Caso contrário, você precisará de três regras separadas nos campos B, C e D, em que cada regra verifica a condição e mostra ou oculta o respectivo campo. Neste exemplo, é mais eficiente escrever o tipo de regra Quando em um objeto do que Mostrar ou Ocultar em três objetos.
 
 * Para acionar uma ação com base em várias condições, é recomendável usar a construção action-condition. Por exemplo, para mostrar e ocultar o campo A avaliando as condições nos campos B, C e D, use Mostrar ou Ocultar tipo de regra no campo A.
 * Use a construção de condição-ação ou condição de ação se a regra contiver uma ação para uma condição.
@@ -537,36 +537,36 @@ Para obter mais informações, consulte [jsdoc.app](https://jsdoc.app/).
 Compatível `jsdoc` tags:
 
 * **Privado**
-Sintaxe: uma função privada não é incluída como uma função personalizada.`@private`
+Sintaxe: `@private`
 Uma função privada não está incluída como uma função personalizada.
 
 * **Nome**
-Sintaxe: Alternativamente `@name funcName <Function Name>`
+Sintaxe: `@name funcName <Function Name>`
 Alternativamente `,` você pode usar: `@function funcName <Function Name>` **ou** `@func` `funcName <Function Name>`.
-   `funcName` é o nome da função (sem espaços).
-   `<Function Name>` é o nome de exibição da função.
+  `funcName` é o nome da função (sem espaços).
+  `<Function Name>` é o nome de exibição da função.
 
 * **membro**
-Sintaxe: anexa um namespace à função.`@memberof namespace`
+Sintaxe: `@memberof namespace`
 Anexa um namespace à função.
 
 * **Parâmetro**
-Sintaxe: como alternativa, você pode usar: `@param {type} name <Parameter Description>`
+Sintaxe: `@param {type} name <Parameter Description>`
 Como alternativa, você pode usar: `@argument` `{type} name <Parameter Description>` **ou** `@arg` `{type}` `name <Parameter Description>`.
 Mostra os parâmetros usados pela função. Uma função pode ter várias tags de parâmetro, uma tag para cada parâmetro na ordem de ocorrência.
-   `{type}` representa o tipo de parâmetro. Os tipos de parâmetros permitidos são:
+  `{type}` representa o tipo de parâmetro. Os tipos de parâmetros permitidos são:
 
    1. string
    1. número
    1. booleano
    1. escopo
 
-   O escopo se refere aos campos de um formulário adaptável. Quando um formulário usa carregamento lento, você pode usar `scope` para acessar seus campos. Você pode acessar campos quando eles forem carregados ou se estiverem marcados como globais.
+  O escopo se refere aos campos de um formulário adaptável. Quando um formulário usa carregamento lento, você pode usar `scope` para acessar seus campos. Você pode acessar campos quando eles forem carregados ou se estiverem marcados como globais.
 
-   Todos os tipos de parâmetros são categorizados em um dos acima. Nenhum não é compatível. Selecione um dos tipos acima. Os tipos não diferenciam maiúsculas de minúsculas. Não são permitidos espaços no parâmetro `name`. `<Parameter Descrption>` `<parameter>  can have multiple words. </parameter>`
+  Todos os tipos de parâmetros são categorizados em um dos acima. Nenhum não é compatível. Selecione um dos tipos acima. Os tipos não diferenciam maiúsculas de minúsculas. Não são permitidos espaços no parâmetro `name`. `<Parameter Descrption>` `<parameter>  can have multiple words. </parameter>`
 
 * **Tipo de retorno**
-Sintaxe: como alternativa, você pode usar `@return {type}`
+Sintaxe: `@return {type}`
 Como alternativa, você pode usar `@returns {type}`.
 Adiciona informações sobre a função, como seu objetivo.
 {type} representa o tipo de retorno da função. Os tipos de retorno permitidos são:
@@ -575,33 +575,33 @@ Adiciona informações sobre a função, como seu objetivo.
    1. número
    1. booleano
 
-   Todos os outros tipos de retorno são categorizados em um dos itens acima. Nenhum não é compatível. Selecione um dos tipos acima. Os tipos de retorno não diferenciam maiúsculas de minúsculas.
+  Todos os outros tipos de retorno são categorizados em um dos itens acima. Nenhum não é compatível. Selecione um dos tipos acima. Os tipos de retorno não diferenciam maiúsculas de minúsculas.
 
    * **Este**
-Sintaxe: 
-`@this currentComponent`
-   Use @this para se referir ao componente de Formulário adaptável no qual a regra é gravada.
+Sintaxe: `@this currentComponent`
 
-   O exemplo a seguir é baseado no valor do campo. No exemplo a seguir, a regra oculta um campo no formulário. A variável `this` parte de `this.value` refere-se ao componente de Formulário adaptável subjacente, no qual a regra é gravada.
+  Use @this para se referir ao componente de Formulário adaptável no qual a regra é gravada.
 
-   ```
-      /**
-      * @function myTestFunction
-      * @this currentComponent
-      * @param {scope} scope in which code inside function will be executed.
-      */
-      myTestFunction = function (scope) {
-         if(this.value == "O"){
-               scope.age.visible = true;
-         } else {
-            scope.age.visible = false;
-         }
-      }
-   ```
+  O exemplo a seguir é baseado no valor do campo. No exemplo a seguir, a regra oculta um campo no formulário. A variável `this` parte de `this.value` refere-se ao componente de Formulário adaptável subjacente, no qual a regra é gravada.
 
-   >[!NOTE]
-   >
-   >Os comentários antes da função personalizada são usados para o resumo. O resumo pode ser estendido para várias linhas até que uma tag seja encontrada. Limite o tamanho a um único para obter uma descrição concisa no construtor de regras.
+  ```
+     /**
+     * @function myTestFunction
+     * @this currentComponent
+     * @param {scope} scope in which code inside function is run.
+     */
+     myTestFunction = function (scope) {
+        if(this.value == "O"){
+              scope.age.visible = true;
+        } else {
+           scope.age.visible = false;
+        }
+     }
+  ```
+
+  >[!NOTE]
+  >
+  >Comentários antes da função personalizada são usados para resumo. O resumo pode ser estendido para várias linhas até que uma tag seja encontrada. Limite o tamanho a um único para obter uma descrição concisa no construtor de regras.
 
 **Adição de uma função personalizada**
 

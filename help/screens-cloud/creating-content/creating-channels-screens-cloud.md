@@ -2,9 +2,9 @@
 title: Criação e gerenciamento de canais no Screens as a Cloud Service
 description: Esta página descreve como criar e gerenciar canais no Screens as a Cloud Service.
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: 9db22dca0fd6debaff0d93e1958e59536efabad8
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1107'
+source-wordcount: '1104'
 ht-degree: 1%
 
 ---
@@ -115,7 +115,7 @@ Esse bloco exibe as seguintes informações:
 
 ### Usar os detalhes de atribuição padrão ao atribuir a uma exibição {#default-display}
 
-Os canais com detalhes de atribuição padrão podem ser atribuídos a exibições da mesma forma que os canais regulares, com a opção adicionada para aproveitar os detalhes de atribuição padrão em vez de definir manualmente os personalizados a cada vez.
+Os canais com detalhes de atribuição padrão podem ser atribuídos a exibições da mesma forma que os canais normais, com a opção adicionada de usar os detalhes de atribuição padrão em vez de definir manualmente os personalizados a cada vez.
 
 1. Navegue até a página de detalhes de exibição à qual deseja atribuir o canal e clique no **Atribuir canal**.
 como alternativa, selecione a exibição desejada na exibição inventário e clique no **Atribuir canal**.
@@ -141,7 +141,7 @@ como alternativa, selecione a exibição desejada na exibição inventário e cl
 
    ![imagem](/help/screens-cloud/assets/display/Assignments8.png)
 
-**Nota:** Uma atribuição de canal que aproveita os detalhes de atribuição padrão não será editável no contexto da exibição.
+**Nota:** Uma atribuição de canal que usa os detalhes de atribuição padrão não será editável no contexto da exibição.
 
 * Se precisar alterá-la para uma atribuição personalizada, primeiro remova-a e depois adicione-a novamente usando o **Definir detalhes da atribuição personalizada** opção.
 * Se precisar alterar as propriedades dos detalhes da atribuição padrão, faça isso diretamente na página de detalhes do canal.
@@ -154,7 +154,7 @@ como alternativa, selecione a exibição desejada na exibição inventário e cl
 
    ![imagem](/help/screens-cloud/assets/display/Assignments9.png)
 
-1. Uma caixa de diálogo de confirmação será exibida e os detalhes corresponderão a uma das seguintes condições:
+1. Uma caixa de diálogo de confirmação é exibida e os detalhes correspondem a uma das seguintes condições:
    **a)** O canal não é usado em nenhuma exibição.
 
    ![imagem](/help/screens-cloud/assets/display/Assignments10.png)

@@ -2,9 +2,9 @@
 title: Visão geral dos fragmentos de experiência
 description: Estender fragmentos de experiência do Adobe Experience Manager as a Cloud Service.
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
-source-git-commit: 5968554ec221b1fe9969b131ccf0b08ffb7f6494
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1651'
+source-wordcount: '1648'
 ht-degree: 1%
 
 ---
@@ -85,8 +85,7 @@ Para criar um modelo de fragmento de experiência detectado pelo **Criar fragmen
 
    1. E o nome do template deve começar com:
       `experience-fragments`
-Isso permite que os usuários criem fragmentos de experiência em /content/experience-fragments como o 
-`cq:allowedTemplates` A propriedade desta pasta inclui todos os modelos com nomes que começam com `experience-fragment`. Os clientes podem atualizar essa propriedade para incluir seu próprio esquema de nomenclatura ou locais do modelo.
+Isso permite que os usuários criem fragmentos de experiência em /content/experience-fragments como o `cq:allowedTemplates` A propriedade desta pasta inclui todos os modelos com nomes que começam com `experience-fragment`. Os clientes podem atualizar essa propriedade para incluir seu próprio esquema de nomenclatura ou locais do modelo.
 
 1. [Modelos permitidos](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#configure-allowed-templates-folder) O pode ser configurado no console Fragmentos de experiência.
 
@@ -201,7 +200,7 @@ public interface ExperienceFragmentLinkRewriterProvider {
 
 Para usar a interface, primeiro é necessário criar um pacote contendo um novo componente de serviço que implemente a interface do Provedor de reescrita de link.
 
-Esse serviço será usado para conectar a regravação da Exportação do fragmento de experiência para o Target para ter acesso aos vários links.
+Esse serviço é usado para conectar a regravação da Exportação do fragmento de experiência para o Target, para que ele possa ter acesso aos vários links.
 
 Por exemplo, `ComponentService`:
 
@@ -266,7 +265,7 @@ No exemplo acima, gostaríamos de reescrever:
 * `href` somente atributos
 
 * para um Fragmento de experiência específico:
-   `/content/experience-fragment/master`
+  `/content/experience-fragment/master`
 
 Quaisquer outros Fragmentos de experiência que passam pelo sistema Exportar para o Target são ignorados e não são afetados pelas alterações implementadas neste Serviço.
 
@@ -279,8 +278,7 @@ Para a variação do Fragmento de experiência afetada pelo processo de regrava�
 Como entrada, o método recebe os parâmetros:
 
 * `link`
-O 
-`String` representação do link que está sendo processado no momento. Normalmente, esse é um URL relativo que aponta para o recurso na instância do autor.
+A variável `String` representação do link que está sendo processado no momento. Normalmente, esse é um URL relativo que aponta para o recurso na instância do autor.
 
 * `tag`
 O nome do elemento HTML que está sendo processado no momento.

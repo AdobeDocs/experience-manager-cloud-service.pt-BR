@@ -2,9 +2,9 @@
 title: Geração de tokens de acesso para APIs do lado do servidor
 description: Saiba como facilitar a comunicação entre um servidor de terceiros e o AEM as a Cloud Service gerando um token JWT seguro
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
-source-git-commit: dd869397feca593f93ee8ed5030828e01cc45c4d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2132'
+source-wordcount: '2123'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,7 @@ O fluxo de servidor para servidor envolve as seguintes etapas:
 
 Os usuários com acesso ao console do desenvolvedor AEM as a Cloud Service verão a guia Integrações no Console do desenvolvedor para um determinado ambiente. Um usuário com a função de administrador Ambiente as a Cloud Service AEM pode criar, exibir ou gerenciar credenciais.
 
-Clicar no **Criar nova conta técnica** , um novo conjunto de credenciais será criado e incluirá a id do cliente, o segredo do cliente, a chave privada, o certificado e a configuração para os níveis de criação e publicação do ambiente, independentemente da seleção do pod.
+Clicar no **Criar nova conta técnica** , um novo conjunto de credenciais é criado e inclui a id do cliente, o segredo do cliente, a chave privada, o certificado e a configuração para os níveis de criação e publicação do ambiente, independentemente da seleção do pod.
 
 ![Criação de uma nova conta técnica](/help/implementing/developing/introduction/assets/s2s-createtechaccount.png)
 
@@ -67,7 +67,7 @@ O aplicativo que faz chamadas para AEM deve ser capaz de acessar as credenciais 
 
 ### Gerar um token JWT e trocá-lo por um token de acesso {#generate-a-jwt-token-and-exchange-it-for-an-access-token}
 
-Use as credenciais para criar um token JWT em uma chamada para o serviço IMS Adobe para recuperar um token de acesso, válido por 24 horas.
+Use as credenciais para criar um token JWT em uma chamada para o serviço IMS Adobe para recuperar um token de acesso, que é válido por 24 horas.
 
 As Credenciais de Serviço AEM CS podem ser trocadas por um token de acesso usando bibliotecas de clientes criadas para essa finalidade. As bibliotecas de clientes estão disponíveis no [Repositório GitHub público do Adobe](https://github.com/adobe/aemcs-api-client-lib), que contém orientações mais detalhadas e informações mais recentes.
 
@@ -217,9 +217,9 @@ Para isso, é possível:
 
 * Use o **Adicionar certificado** botão em **Integrações** - **Contas técnicas** no Console do desenvolvedor, conforme mostrado abaixo
 
-   ![Atualização de credencial](/help/implementing/developing/introduction/assets/s2s-credentialrefresh.png)
+  ![Atualização de credencial](/help/implementing/developing/introduction/assets/s2s-credentialrefresh.png)
 
-* Depois de pressionar o botão, um conjunto de credenciais que inclui um novo certificado será gerado. Instale as novas credenciais em seu servidor off-AEM e verifique se a conectividade foi a esperada, sem remover as credenciais antigas 
+* Depois de pressionar o botão, um conjunto de credenciais que inclui um novo certificado é gerado. Instale as novas credenciais em seu servidor off-AEM e verifique se a conectividade foi a esperada, sem remover as credenciais antigas 
 * Verifique se as novas credenciais são usadas em vez das antigas ao gerar o token de acesso
 * Opcionalmente, revogue (e exclua) o certificado anterior para que ele não possa mais ser usado para autenticação com o AEM as a Cloud Service.
 
@@ -229,7 +229,7 @@ Se a chave privada estiver comprometida, será necessário criar credenciais com
 
 Você pode fazer isso seguindo estas etapas:
 
-1. Primeiro, adicione a nova chave. Isso gerará credenciais com uma nova chave privada e um novo certificado. A nova chave privada será marcada na interface como **atual** e, portanto, será usado para todas as novas credenciais para essa conta técnica a partir de agora. Observe que as credenciais associadas às chaves privadas mais antigas ainda serão válidas até serem revogadas. Para isso, pressione os três pontos (**..**) na sua conta técnica atual e pressione **Adicionar nova chave privada**:
+1. Primeiro, adicione a nova chave. Essa chave gera credenciais com uma nova chave privada e um novo certificado. A nova chave privada está marcada na interface como **atual** e, portanto, será usado para todas as novas credenciais para essa conta técnica a partir de agora. Observe que as credenciais associadas às chaves privadas mais antigas ainda serão válidas até serem revogadas. Para isso, pressione os três pontos (**..**) na sua conta técnica atual e pressione **Adicionar nova chave privada**:
 
    ![Adicionar nova chave privada](/help/implementing/developing/introduction/assets/s2s-addnewprivatekey.png)
 
@@ -237,7 +237,7 @@ Você pode fazer isso seguindo estas etapas:
 
    ![Confirmar adição de nova chave privada](/help/implementing/developing/introduction/assets/s2s-addprivatekeyconfirm.png)
 
-   Uma nova guia de navegação com os novos credencial será aberta e a interface do usuário será atualizada para mostrar ambas as chaves privadas, com a nova marcada como **atual**:
+   Uma nova guia de navegação com as novas credenciais é aberta e a interface de usuário é atualizada para mostrar as duas chaves privadas com a nova marcada como **atual**:
 
    ![Chaves privadas na interface](/help/implementing/developing/introduction/assets/s2s-twokeys.png)
 

@@ -2,10 +2,10 @@
 title: Ativação de recursos do aplicativo web progressivo
 description: O AEM Sites permite que o autor de conteúdo ative recursos de aplicativo web progressivo para qualquer site por meio de uma configuração simples, sem necessidade de desenvolver código.
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
-source-git-commit: 3910b47c5d25679d03409380d91afaa6ff5ab265
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '2004'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -22,7 +22,7 @@ Por meio de uma configuração simples, um autor de conteúdo agora pode ativar 
 >* Noções básicas sobre estratégias de armazenamento em cache
 >* Suporte da sua equipe de desenvolvimento
 >
->Antes de usar esse recurso, é recomendável discutir isso com a equipe de desenvolvimento para definir a melhor maneira de aproveitá-lo para o seu projeto.
+>Antes de usar esse recurso, é recomendável discutir isso com a equipe de desenvolvimento para definir a melhor maneira de usá-lo para o seu projeto.
 
 ## Introdução {#introduction}
 
@@ -50,7 +50,7 @@ Essas são etapas técnicas que o autor precisará coordenar com a equipe de des
 
 ### Usar componentes principais {#adjust-components}
 
-Os Componentes principais versões 2.15.0 e posteriores são compatíveis com os recursos de PWA do AEM Sites. Como o AEMaaCS sempre inclui a versão mais recente dos componentes principais, você pode aproveitar os recursos de PWA prontos para uso. Seu projeto AEMaaCS atende automaticamente a esse requisito.
+Os Componentes principais versões 2.15.0 e posteriores são compatíveis com os recursos de PWA do AEM Sites. Como o AEMaaCS sempre inclui a versão mais recente dos Componentes principais, você pode usar os recursos de PWA prontos para uso. Seu projeto AEMaaCS atende automaticamente a esse requisito.
 
 >[!NOTE]
 >
@@ -122,7 +122,6 @@ Com [os pré-requisitos](#prerequisites) atendidos, é muito fácil para um auto
       * `/etc/clientlibs/<sitename>`
 
       ![Definir caminhos offline do PWA](../assets/pwa-offline.png)
-
 
 1. Toque ou clique em **Salvar e fechar**.
 

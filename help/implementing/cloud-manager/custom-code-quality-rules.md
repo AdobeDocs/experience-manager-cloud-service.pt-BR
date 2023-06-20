@@ -2,10 +2,10 @@
 title: Regras de qualidade do código personalizado
 description: Esta página descreve as regras personalizadas de qualidade do código executadas pelo Cloud Manager como parte do teste de qualidade do código. Elas são baseadas nas práticas recomendadas pela equipe de engenharia do Adobe Experience Manager.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: 288faf39a86411bb96d781a320abfa47538b2066
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '3508'
-ht-degree: 100%
+source-wordcount: '3504'
+ht-degree: 98%
 
 ---
 
@@ -20,7 +20,7 @@ Esta página descreve as regras personalizadas de qualidade do código executada
 
 >[!NOTE]
 >
->As regras completas do SonarQube não estão disponíveis para download devido às informações proprietárias da Adobe. É possível baixar a lista completa de regras [usando este link.](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx) Continue a ler este documento para obter descrições e exemplos das regras.
+>As regras completas do SonarQube não estão disponíveis para download devido às informações proprietárias da Adobe. Você pode baixar a lista completa de regras [usando este link.](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx) Continue a ler este documento para obter descrições e exemplos das regras.
 
 >[!NOTE]
 >
@@ -112,7 +112,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 * **Severidade**: Crítica
 * **Desde**: Versão 2018.6.0
 
-Ao executar solicitações HTTP de dentro de um aplicativo do Experience Manager, é importante garantir que os tempos limite adequados sejam configurados para evitar o consumo desnecessário de thread. Infelizmente, o comportamento tradicional do cliente HTTP padrão do Java™ (`java.net.HttpUrlConnection`) e do cliente de componentes HTTP do Apache mais usado é o de nunca atingir o tempo limite, portanto, estes devem ser definidos de forma explícita. Além disso, como prática recomendada, esses tempos limite não devem ultrapassar 60 segundos.
+Ao executar solicitações HTTP de dentro de um aplicativo Experience Manager, é importante garantir que os tempos limite adequados sejam configurados para evitar o consumo desnecessário de thread. Infelizmente, o comportamento tradicional do cliente HTTP padrão do Java™ (`java.net.HttpUrlConnection`) e do cliente de componentes HTTP do Apache mais usado é o de nunca atingir o tempo limite, portanto, estes devem ser definidos de forma explícita. Além disso, como prática recomendada, esses tempos limite não devem ultrapassar 60 segundos.
 
 #### Código não compatível  {#non-compliant-code-2}
 
@@ -811,7 +811,7 @@ Os clientes que usam replicação reversa devem entrar em contato com a Adobe pa
 * **Severidade**: Baixa
 * **Desde**: Versão 2021.2.0
 
-As bibliotecas de cliente do Experience Manager podem conter recursos estáticos, como imagens e fontes. Conforme descrito no documento [Uso de pré-processadores,](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors) ao usar bibliotecas de clientes por proxy, esses recursos estáticos devem estar contidos em uma pasta secundária chamada `resources` para serem efetivamente referenciados nas instâncias de publicação.
+As bibliotecas de cliente do Experience Manager podem conter recursos estáticos, como imagens e fontes. Conforme descrito no documento [Uso de pré-processadores,](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors) ao usar bibliotecas de clientes com proxy, esses recursos estáticos devem estar contidos em uma pasta filho chamada `resources` para ser efetivamente referenciado nas instâncias de publicação.
 
 #### Código não compatível  {#non-compliant-proxy-enabled}
 

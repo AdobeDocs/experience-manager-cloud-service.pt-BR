@@ -2,10 +2,10 @@
 title: Criar e organizar páginas
 description: Como criar e organizar páginas com o AEM
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2561'
-ht-degree: 79%
+source-wordcount: '2556'
+ht-degree: 76%
 
 ---
 
@@ -112,7 +112,7 @@ Detalhes completos sobre todos os caracteres permitidos podem ser encontrados na
 
 Quando você fornece apenas um **Título** de página ao criar uma nova página, o AEM deriva o **Nome** de página desta cadeia de caracteres e o valida[ de acordo com as convenções](/help/implementing/developing/introduction/naming-conventions.md) impostas pelo AEM e JCR.
 
-Um campo de **Título** que contém caracteres inválidos será aceito, mas o nome derivado terá os caracteres inválidos substituídos. Por exemplo:
+A **Título** O campo que contém caracteres inválidos é aceito, mas o nome derivado tem os caracteres inválidos substituídos. Por exemplo:
 
 | Título | Nome derivado |
 |---|---|
@@ -196,6 +196,7 @@ A menos que todas as páginas tenham sido criadas antecipadamente para você, é
    * **Título**:
 
       * Ele é exibido ao usuário e é obrigatório.
+
    * **Nome**:
 
       * Usado para gerar o URI. Se não especificado, o nome é derivado do título.
@@ -323,6 +324,7 @@ O AEM oferece a funcionalidade de atualizar qualquer link interno que se refira 
 
       * Para selecionar o destino, clique em sua miniatura.
       * Clique em **Avançar** para continuar.
+
    * Uso **Voltar** para retornar à especificação do nome da página.
 
    >[!NOTE]
@@ -335,7 +337,7 @@ O AEM oferece a funcionalidade de atualizar qualquer link interno que se refira 
    >
    >Se você mover uma página para um local onde uma página com o mesmo nome já existe, o sistema gera automaticamente uma variação do nome ao anexar um número. Por exemplo, se `winter` já existir, `winter` se tornará `winter1`.
 
-1. Se a página estiver vinculada ou referenciada, ou tiver sido publicada, os detalhes serão listados na etapa **Ajustar/Republicar**.
+1. Se a página estiver vinculada ou referenciada, ou tiver sido publicada, os detalhes serão listados na **Ajustar/Republicar** etapa.
 
    Você pode indicar o que deve ser ajustado e/ou republicado, conforme necessário.
 
@@ -376,7 +378,7 @@ No entanto, se o número de páginas afetadas estiver acima de um limite definid
       * **Agora** a execução do trabalho assíncrono começa imediatamente.
       * **Mais tarde** permite que o usuário defina quando o trabalho assíncrono será iniciado.
 
-         ![Mover página assíncrona](/help/sites-cloud/authoring/assets/asynchronous-page-move.png)
+        ![Mover página assíncrona](/help/sites-cloud/authoring/assets/asynchronous-page-move.png)
 
 O status de trabalhos assíncronos pode ser verificado no painel [**Status de trabalhos assíncronos** ](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) em **Navegação global** -> **Ferramentas** -> **Operações** -> **Trabalhos**
 
@@ -440,4 +442,3 @@ Você pode criar pastas para ajudar a organizar seus arquivos e páginas.
 >* Pastas só podem ser criadas diretamente em **Sites** ou em outras pastas. Eles não podem ser criados em uma página.
 >* As ações padrão de mover, copiar, colar, excluir, publicar, cancelar a publicação e exibir/editar propriedades podem ser executadas em uma pasta.
 >* As pastas não estão disponíveis para seleção em uma live copy.
-

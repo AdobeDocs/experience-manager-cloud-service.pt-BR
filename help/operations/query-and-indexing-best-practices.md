@@ -3,10 +3,10 @@ title: Práticas recomendadas de consulta e indexação
 description: Saiba como otimizar seus índices e consultas com base nas diretrizes de práticas recomendadas da Adobe.
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: afeff7cfb8606eb58126a4ca62ce9e6e58c44215
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1563'
-ht-degree: 100%
+source-wordcount: '1558'
+ht-degree: 95%
 
 ---
 
@@ -32,7 +32,7 @@ Como as consultas podem ser uma das operações mais exigentes realizadas em um 
 
 ### Nós de passagem {#traversing-nodes}
 
-Se o repositório for projetado de forma que permita o conhecimento prévio da localização dos dados necessários, o código que recupera esses dados nos caminhos necessários poderá ser implantado sem a necessidade de executar consultas para encontrá-los.
+Se o repositório for projetado de uma forma que permita o conhecimento prévio da localização dos dados necessários, o código que recupera esses dados dos caminhos necessários poderá ser implantado sem a necessidade de executar consultas para encontrá-los.
 
 Um exemplo disso seria a renderização de um conteúdo que se encaixe em uma determinada categoria. Uma abordagem seria organizar o conteúdo com uma propriedade de categoria que possa ser consultada para preencher um componente que mostre itens em uma categoria.
 
@@ -77,7 +77,7 @@ Este gráfico ilustra o fluxo geral de uso da Ferramenta de desempenho de consul
 
 Cada consulta deve usar um índice para fornecer desempenho ideal. Na maioria dos casos, os índices prontos para uso existentes devem ser suficientes para lidar com as consultas.
 
-Às vezes, as propriedades personalizadas precisam ser adicionadas a um índice existente, para que restrições adicionais possam ser consultadas usando o índice. Consulte o documento [Pesquisa e indexação de conteúdo](/help/operations/indexing.md#changing-an-index) para obter mais detalhes. A seção [Folha de características de consulta JCR](#jcr-query-cheatsheet) deste documento descreve como deve ser uma definição de propriedade em um índice para atender aos requisitos de um tipo de consulta específico.
+Às vezes, as propriedades personalizadas precisam ser adicionadas a um índice existente, para que restrições adicionais possam ser consultadas usando o índice. Consulte o documento [Pesquisa e indexação de conteúdo](/help/operations/indexing.md#changing-an-index) para obter mais detalhes. A variável [Folha de características de consulta JCR](#jcr-query-cheatsheet) seção deste documento descreve como deve ser uma definição de propriedade em um índice para suportar um tipo de consulta específico.
 
 ### Use os critérios certos {#use-the-right-criteria}
 

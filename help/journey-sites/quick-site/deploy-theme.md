@@ -2,10 +2,10 @@
 title: Implantar um tema personalizado
 description: Saiba como implantar o tema do site usando o pipeline.
 exl-id: fe065972-39db-4074-a802-85895c701efd
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
 source-wordcount: '1027'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -117,4 +117,4 @@ Veja a seguir alguns recursos adicionais que explicam melhor alguns conceitos me
 * [Jornada de integração](/help/journey-onboarding/overview.md) - este guia serve como ponto de partida para garantir que suas equipes estejam preparadas e tenham acesso ao AEM as a Cloud Service.
 * [Documentação do Adobe Experience Manager Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=pt-BR) - explore a documentação do Cloud Manager para obter detalhes completos sobre seus recursos.
 * [Documentação de administração do site](/help/sites-cloud/administering/site-creation/create-site.md) - consulte os documentos técnicos sobre criação de sites para obter mais detalhes sobre os recursos da ferramenta Criação rápida de sites.
-* [Desenvolvimento de sites com o pipeline de front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) - este documento descreve algumas considerações que devem ser levadas em conta para obter todo o potencial do processo de desenvolvimento front-end usando o pipeline de front-end.
+* [Desenvolvimento de sites com o pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) - Este documento descreve algumas considerações que devem ser levadas em conta para que você possa obter todo o potencial do processo de desenvolvimento front-end usando o pipeline de front-end.

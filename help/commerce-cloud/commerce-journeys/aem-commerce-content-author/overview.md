@@ -2,10 +2,10 @@
 title: Jornada de autor de conteúdo do AEM Commerce
 description: Comece aqui uma jornada guiada pela criação do AEM Commerce
 exl-id: 155a2534-746d-4237-b7e2-9212c36fac7f
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '458'
-ht-degree: 100%
+source-wordcount: '457'
+ht-degree: 95%
 
 ---
 
@@ -35,7 +35,7 @@ Se quiser saber como a Adobe recomenda resolver casos de negócios de sites com 
 
 Esta jornada foi projetada para o autor de conteúdo do AEM Commerce. Esta jornada apresenta os requisitos, as etapas e a abordagem para começar e gerenciar páginas de catálogo, modelos e experiências completas do produto.
 
-As informações nesta jornada podem ser úteis para outros perfis, mas algumas informações são desnecessárias para determinadas funções. Fique atento para jornadas futuras que abordarão funções adicionais.
+As informações nesta jornada podem, é claro, ser úteis para outros perfis, mas algumas informações são supérfluas para determinadas funções. Fique atento para jornadas futuras que abordarão funções adicionais.
 
 ## A jornada {#the-journey}
 

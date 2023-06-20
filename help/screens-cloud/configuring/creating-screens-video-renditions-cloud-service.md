@@ -2,9 +2,9 @@
 title: Criação de representações de vídeo no Screens as a Cloud Service
 description: Esta página descreve como criar representações de vídeo no Screens as a Cloud Service.
 exl-id: a9c46036-cd29-47fa-81d9-c865cf22c98a
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '341'
 ht-degree: 0%
 
 ---
@@ -48,10 +48,10 @@ Siga as etapas abaixo para criar representações de vídeo no Screens as a Clou
    ![](/help/screens-cloud/assets/configure/screens-video-4.png)
 
    >[!IMPORTANT]
-   >Use o nome Codificação que começa com &quot;telas-&quot;; somente essas representações de vídeo serão consideradas para reproduzir a experiência de vídeo no Screens as a Cloud Service. Insira a taxa de bits que funciona em seus vídeos (2500 kbps para vídeo de 720 px e 5000 kbps para 1080 px).
+   >Use o nome Codificação que começa com &quot;telas-&quot;; somente essas representações de vídeo são consideradas para reproduzir a experiência de vídeo no Screens as a Cloud Service. Insira a taxa de bits que funciona em seus vídeos (2500 kbps para vídeo de 720 px e 5000 kbps para 1080 px).
 
    >[!NOTE]
-   >Várias representações de vídeo podem ser adicionadas com variação de largura/altura/taxa de bits para que seus vídeos funcionem. Lembre-se de que todas as representações de telas serão baixadas pelos dispositivos do Screens, mesmo que o dispositivo reproduza apenas a representação de vídeo.
+   >Várias representações de vídeo podem ser adicionadas com variação de largura/altura/taxa de bits para que seus vídeos funcionem. Todas as telas e representações são baixadas pelos dispositivos do Screens, mesmo que o dispositivo reproduza apenas a representação de vídeo.
 
 1. Clique em **Salvar**.
 
@@ -66,4 +66,3 @@ Siga as etapas abaixo para criar representações de vídeo no Screens as a Clou
    >[!NOTE]
    >* É possível criar vários perfis de processamento e aplicá-los às pastas correspondentes, para que os vídeos dessas pastas obtenham as representações de vídeo específicas.
    >* Ao fazer upload de qualquer vídeo para a pasta na qual o perfil de processamento é aplicado, os vídeos são processados e as representações configuradas são criadas, que são usadas ainda mais pelos dispositivos do Screens para reproduzir os vídeos.
-

@@ -2,10 +2,10 @@
 title: Notas de versão do [!DNL Adobe Experience Manager]  as a Cloud Service 2022.7.0.
 description: Notas de versão do [!DNL Adobe Experience Manager]  as a Cloud Service 2022.7.0.
 exl-id: b339ab48-e836-4589-a573-9c50917b9280
-source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '955'
-ht-degree: 98%
+source-wordcount: '953'
+ht-degree: 86%
 
 ---
 
@@ -39,9 +39,9 @@ Assista ao vídeo Visão geral da versão de julho de 2022 para ver um resumo do
 
 * O [Console de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) agora é compatível com [atalhos de teclado](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
 
-* A [entrega de imagem otimizada para a Web](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=pt-BR) do AEM as a Cloud Service permite melhorar significativamente a velocidade da página, fornecendo formatos como o WebP. Esse novo serviço também oferece opções mais flexíveis de redimensionamento e transformação de imagem. Todas as versões do [Componente de imagem principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=pt-BR) permitem aproveitar esse serviço e fornecer imagens em formato WebP clicando em uma opção na política do componente de imagem.
+* AEM como Cloud Service [entrega de imagens otimizadas para a Web](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=pt-BR) O permite melhorar significativamente a velocidade da página, fornecendo formatos como o WebP. Esse novo serviço também oferece opções mais flexíveis de redimensionamento e transformação de imagem. Todas as versões do [Componente de imagem principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=pt-BR) permite usar este serviço e fornecer imagens em formato WebP clicando em uma opção na política do componente de imagem.
 
-* As atividades de personalização do AEM agora podem utilizar fragmentos de experiência no lugar de nossas ofertas herdadas. Este recurso:
+* As atividades de personalização do AEM agora podem usar fragmentos de experiência no lugar de nossas ofertas herdadas. Este recurso:
    * permite um caminho de migração, onde o conteúdo do AEM promoveria ofertas de fragmentos de experiência, em vez de ofertas de bibliotecas herdadas, para fornecer conteúdo com estilo adequado e alinhado com a personalização em escala a partir de agora.
    * impede que os autores de conteúdo forneçam acidentalmente conteúdo não estilizado no site.
    * permite que o modo de direcionamento de qualquer componente seja convertido em um fragmento de experiência (dos tipos JSON e HTML) que usa modelos editáveis.
@@ -80,7 +80,7 @@ Agora é possível configurar o Adobe Experience Manager Assets para [restringir
 
 * **[Chamar DDX - uma etapa do fluxo de trabalho do AEM](/help/forms/aem-forms-workflow-step-reference.md#invokeddx)**: o Document Description XML (DDX) é uma linguagem de marcação declarativa cujos elementos representam os blocos fundamentais de documentos. Esses blocos fundamentais incluem documentos PDF e XDP, além de outros elementos, como comentários, marcadores e texto estilizado. Os documentos DDX são modelos de documentos e descrevem as características desejadas dos documentos de origem que devem aparecer nos documentos resultantes. Um único DDX pode ser usado com uma variedade de documentos de origem. Você pode usar a etapa Chamar do fluxo de trabalho do AEM para executar várias operações, como montar e desmontar documentos, criar e modificar formulários do Acrobat e do XFA, além de outras operações descritas na documentação de [referência do DDX](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf).
 
-* **[Converter em PDF/A - uma etapa do fluxo de trabalho do AEM](/help/forms/aem-forms-workflow-step-reference.md##convert-pdfa)**: PDF/A é um formato para arquivamento destinado a preservação do conteúdo do documento a longo prazo; todas as fontes são incorporadas e o arquivo é descompactado. Agora, é possível usar a etapa Converter em PDF/A do fluxo de trabalho do AEM para converter documentos ou arquivos de qualquer formato para o formato PDF/A.
+* **[Converter em PDF/A - Uma etapa do fluxo de trabalho AEM](/help/forms/aem-forms-workflow-step-reference.md##convert-pdfa)**: PDF/A é um formato para arquivamento destinado a preservação do conteúdo do documento a longo prazo; todas as fontes são incorporadas e o arquivo é descompactado. Agora, é possível usar a etapa Converter em PDF/A do fluxo de trabalho do AEM para converter documentos ou arquivos de qualquer formato para o formato PDF/A.
 
 
 ## Complemento CIF {#cloud-services-cif}
@@ -102,7 +102,7 @@ Agora é possível configurar o Adobe Experience Manager Assets para [restringir
 ### Novidades {#what-is-new-foundation}
 
 * Agora, o [Navegador do repositório](/help/implementing/developing/tools/repository-browser.md) tem um campo de entrada de caminho, permitindo navegar diretamente para uma pasta específica na hierarquia do repositório
-* A Distribuição de conteúdo do Sling (SCD) agora oferece suporte a uma ação de “invalidação” explícita para invalidar o conteúdo sem que ele seja publicado. Consulte a página [Armazenamento em cache no AEM as a Cloud Service](/help/implementing/dispatcher/caching.md#explicit-invalidation) para obter mais detalhes.
+* A Distribuição de conteúdo do Sling (SCD) agora é compatível com uma ação de &quot;invalidação&quot; explícita para invalidar o conteúdo sem que ele seja publicado. Consulte a página [Armazenamento em cache no AEM as a Cloud Service](/help/implementing/dispatcher/caching.md#explicit-invalidation) para obter mais detalhes.
 * O módulo mod_macro agora está disponível no AEM as a Cloud Service. Consulte [esta tabela](/help/implementing/dispatcher/disp-overview.md) para obter uma lista de módulos Apache compatíveis.
 
 ### Aprimoramentos das ferramentas do Dispatcher do SDK do AEM as a Cloud Service {#dispatcher-tools-enhancements}

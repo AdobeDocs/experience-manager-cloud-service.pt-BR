@@ -2,7 +2,7 @@
 title: Configuração do IMS para uso na integração com o Adobe Analytics
 description: Saiba mais sobre a configuração do IMS para uso na integração com o Adobe Analytics
 exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '894'
 ht-degree: 100%
@@ -74,9 +74,9 @@ Abra o Console do desenvolvedor da Adobe para criar um Projeto com o Adobe Analy
 1. Quaisquer projetos que você tiver serão mostrados. Selecione **Criar novo projeto** - a localização e utilização dependerão:
 
    * Se você ainda não tiver um projeto, **Criar novo projeto** estará no centro, na parte inferior.
-      ![Criar novo projeto - Primeiro projeto](assets/integration-analytics-ims-02.png)
+     ![Criar novo projeto - Primeiro projeto](assets/integration-analytics-ims-02.png)
    * Caso já tenha projetos existentes, eles serão listados e **Criar novo projeto** estará no canto superior direito.
-      ![Criar novo projeto - Vários projetos](assets/integration-analytics-ims-03.png)
+     ![Criar novo projeto - Vários projetos](assets/integration-analytics-ims-03.png)
 
 
 1. Selecione **Adicionar ao projeto**, seguido da **API**:
@@ -176,7 +176,6 @@ Para confirmar que a configuração está funcionando como esperado:
 
    * `https://localhost:4502/libs/cq/adobeims-configuration/content/configurations.html`
 
-
 1. Selecione sua configuração.
 1. Selecione **Verificar integridade** na barra de ferramentas e, em seguida, **Verificar**.
 
@@ -198,7 +197,7 @@ The configuration can now be referenced for a Cloud Service to use the Analytics
 
    The **Create Configuration** dialog will open.
 
-1. Enter a **Title** and, if you want, a **Name** (if left blank this will be generated from the title).
+1. Enter a **Title** and, if you want, a **Name** (if left blank, it is generated from the title).
 
    You can also select the required template (if more than one is available).
 

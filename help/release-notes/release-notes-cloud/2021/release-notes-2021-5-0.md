@@ -2,10 +2,10 @@
 title: Notas de versão do [!DNL Adobe Experience Manager]  as a Cloud Service 2021.5.0.
 description: Notas de versão do [!DNL Adobe Experience Manager]  as a Cloud Service 2021.5.0.
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
-source-git-commit: af5eb5aeb34e2f0ead98e0a0acb412b19bcfe517
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1355'
-ht-degree: 32%
+source-wordcount: '1352'
+ht-degree: 31%
 
 ---
 
@@ -47,19 +47,19 @@ A versão seguinte (2021.6.0) será lançada em 28 de junho de 2021.
 
 * É possível baixar os ativos compartilhados usando a funcionalidade Compartilhamento de link. Esse download agora usa um serviço assíncrono que oferece downloads mais rápidos e ininterruptos, mesmo para downloads muito grandes. Consulte [baixar ativos](/help/assets/download-assets-from-aem.md#link-share-download).
 
-   ![Baixar caixa de entrada](/help/assets/assets/download-inbox.png)
+  ![Baixar caixa de entrada](/help/assets/assets/download-inbox.png)
 
 ### Novos recursos disponíveis no canal de pré-lançamento {#what-is-new-assets-prerelease}
 
 * Os esquemas de metadados podem ser aplicados diretamente às propriedades da pasta.
 
-   ![Adicionar esquema de metadados das propriedades da pasta](/help/assets/assets/metadata-schema-folder-properties.png)
+  ![Adicionar esquema de metadados das propriedades da pasta](/help/assets/assets/metadata-schema-folder-properties.png)
 
 * A ferramenta Entrada de ativos em massa permite adicionar metadados durante uma entrada em massa.
 
 * As melhorias na experiência do usuário exibem o número de ativos presentes em uma pasta. Para mais de 1000 ativos em uma pasta, [!DNL Assets] exibe mais de 1000.
 
-   ![O número de ativos em uma pasta é exibido na interface](/help/assets/assets/browse-folder-number-of-assets.png)
+  ![O número de ativos em uma pasta é exibido na interface](/help/assets/assets/browse-folder-number-of-assets.png)
 
 ### Bugs corrigidos em [!DNL Assets] {#assets-bugs-fixed}
 
@@ -110,7 +110,7 @@ A próxima versão está planejada para 03 de junho de 2021.
 
 * O endpoint do repositório na API pública agora inclui a URL do Git.
 
-* O log de implantação baixado por um usuário do Cloud Manager será mais revelador e incluirá detalhes sobre falhas e cenários de sucesso.
+* O log de implantação baixado por um usuário do Cloud Manager é mais revelador e inclui detalhes sobre falhas e cenários de sucesso.
 
 * As falhas intermitentes encontradas ao enviar o código para o Git da Adobe foram resolvidas.
 
@@ -148,7 +148,7 @@ A data de lançamento da ferramenta de transferência de conteúdo v1.4.6 é 27 
 
 * Uma nova instrução de registro foi adicionada ao registro de erros do início rápido se o usuário não tiver permissão de execução no executável Java.
 
-* Quando um usuário exclui um conjunto de migração da interface da CTT, onde uma extração foi executada, a variável `tmp` a pasta associada a esse conjunto de migração será excluída para economizar espaço.
+* Quando um usuário exclui um conjunto de migração da interface da CTT, onde uma extração foi executada, a variável `tmp` a pasta associada a esse conjunto de migração é excluída para economizar espaço.
 
 ### Correções de erros {#bug-fixes-ctt-latest}
 

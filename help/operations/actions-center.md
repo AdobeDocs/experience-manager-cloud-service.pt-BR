@@ -4,10 +4,10 @@ description: Aproveite o Centro de ações para executar ações convenientement
 hidefromtoc: true
 hide: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: 9302220536e7a541d44d96626c65de94ee5d64c3
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '705'
-ht-degree: 32%
+source-wordcount: '703'
+ht-degree: 27%
 
 ---
 
@@ -46,7 +46,7 @@ Ao clicar no e-mail, você será redirecionado para o Centro de Ações, com um 
 
 Clicar no **Saiba mais** navegue pelo usuário até este artigo, onde o tipo de notificação pode ser referenciado na variável [tabela de tipos de notificação compatíveis](#supported-notification-types) abaixo, que fornece orientações sobre as medidas a serem tomadas.
 
-No Centro de Ações, você pode ver uma lista de outras notificações recentes. É recomendado reconhecer a existência de uma notificação, utilizando a lista Ações, para informar à Adobe que sua organização está ciente da tarefa, bem como “concluir” a notificação posteriormente, quando uma ação corretiva for tomada.
+No Centro de Ações, você pode ver uma lista de outras notificações recentes. Recomenda-se que, usando a lista Ações, você reconheça uma notificação para sinalizar ao Adobe que sua organização está ciente da tarefa e para resolver posteriormente a notificação quando uma ação corretiva tiver sido tomada.
 
 ![Lista de notificações](/help/operations/assets/notification-list.png)
 
@@ -68,7 +68,7 @@ O AEM as a Cloud Service tem vários tipos de notificações, mas apenas um subc
 |---|---|---|---|
 | Incidentes operacionais | Incidentes críticos que exigem ação imediata | Usuário atribuído ao perfil de produto &quot;Notificação de incidente - Cloud Service&quot; | X |
 | Recomendações proativas | Otimizações que devem ser planejadas | Usuário atribuído ao perfil de produto &quot;Notificação proativa - Cloud Service&quot; | X |
-| Status do pipeline do Cloud Manager | Informações sobre o estado dos seus pipelines | Usuário com funções de Proprietário da empresa, Gerente de Programas ou Gerente de implantação, caixa de seleção &quot;Outros&quot; selecionada em [Preferências da Experience Cloud](https://experience.adobe.com/preferences), como [descrito aqui](/help/implementing/cloud-manager/notifications.md). |  |
+| Status do pipeline do Cloud Manager | Informações sobre o estado dos seus pipelines | Usuário com funções de Proprietário da empresa, Gerente de Programas ou Gerente de implantação, caixa de seleção &quot;Outros&quot; selecionada em [Preferências da Experience Cloud](https://experience.adobe.com/preferences), como [descrito aqui](/help/implementing/cloud-manager/notifications.md). |   |
 
 ## Tipos de notificação compatíveis {#supported-notification-types}
 

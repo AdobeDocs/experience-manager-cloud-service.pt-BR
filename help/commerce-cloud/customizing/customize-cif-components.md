@@ -11,9 +11,9 @@ feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
-source-git-commit: d054f960f13b7308dbf42556ef60a971e880197e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2598'
+source-wordcount: '2594'
 ht-degree: 24%
 
 ---
@@ -28,7 +28,7 @@ A variável [Projeto CIF Venia](https://github.com/adobe/aem-cif-guides-venia) �
 
 ## O que você vai criar
 
-A marca Venia começou recentemente a fabricar alguns produtos usando materiais sustentáveis e a empresa gostaria de exibir uma **Eco Friendly** como parte do Teaser do produto. Um novo atributo personalizado será criado no Adobe Commerce para indicar se um produto usa o **Eco amigável** material. Esse atributo personalizado será adicionado como parte da consulta do GraphQL e exibido no Teaser do produto de produtos especificados.
+A marca Venia começou recentemente a fabricar alguns produtos usando materiais sustentáveis e a empresa gostaria de exibir uma **Eco Friendly** como parte do Teaser do produto. Um novo atributo personalizado é criado no Adobe Commerce para indicar se um produto usa o **Eco amigável** material. Esse atributo personalizado será adicionado como parte da consulta do GraphQL e exibido no Teaser do produto de produtos especificados.
 
 ![Medalha ecologicamente correta Implementação final](../assets/customize-cif-components/final-product-teaser-eco-badge.png)
 
@@ -69,7 +69,7 @@ Vamos clonar o [Projeto Venia](https://github.com/adobe/aem-cif-guides-venia) e 
 
 ## Criação do Teaser do produto {#author-product-teaser}
 
-O Teaser do produto será estendido neste tutorial. Como primeira etapa, adicione uma nova instância do Teaser do produto à página inicial para entender a funcionalidade da linha de base.
+O Teaser do produto é apresentado em todo este tutorial. Como primeira etapa, adicione uma nova instância do Teaser do produto à página inicial para entender a funcionalidade da linha de base.
 
 1. Acesse a **página inicial** do site: [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)
 
@@ -178,7 +178,7 @@ Em seguida, use um GraphQL IDE para verificar se o `eco_friendly` O atributo foi
 
    ![Exemplo de resposta do GraphQL](../assets/customize-cif-components/sample-graphql-query.png)
 
-   Observe que o valor de **Sim** é um número inteiro de **1**. Isso será útil quando escrevermos a consulta do GraphQL em Java.
+   Observe que o valor de **Sim** é um número inteiro de **1**. Isso é útil quando escrevemos a consulta do GraphQL em Java.
 
    >[!TIP]
    >
@@ -436,7 +436,7 @@ Em nosso caso, queremos renderizar um banner sobre o teaser para indicar que o p
 
 Nesse ponto, a lógica de quando exibir a variável **Eco Friendly** o símbolo está funcionando, no entanto, o texto sem formatação pode usar alguns estilos. Em seguida, adicione um ícone e estilos à `ui.frontend` módulo para concluir a implementação.
 
-1. Baixe o [eco_friendly.svg](../assets/customize-cif-components/eco_friendly.svg) arquivo. Isso será usado como **Eco Friendly** selo.
+1. Baixe o [eco_friendly.svg](../assets/customize-cif-components/eco_friendly.svg) arquivo. Isso é usado como **Eco Friendly** selo.
 1. Retorne ao IDE e navegue até o `ui.frontend` pasta.
 1. Adicione o `eco_friendly.svg` arquivo para o `ui.frontend/src/main/resources/images` pasta:
 

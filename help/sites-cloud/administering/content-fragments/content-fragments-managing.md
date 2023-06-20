@@ -4,10 +4,10 @@ description: Saiba como usar o console de Fragmentos de conteúdo para gerenciar
 feature: Content Fragments
 role: User
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
-source-git-commit: 6063c587c1d65587c44e551f3a5c2f3c34ced011
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2071'
-ht-degree: 87%
+source-wordcount: '2053'
+ht-degree: 81%
 
 ---
 
@@ -33,7 +33,6 @@ O [Editor de fragmentos de conteúdo](#opening-the-fragment-editor) fornece vár
 >
 >* ao criar páginas; consulte [Criação de páginas com fragmentos de conteúdo](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 >* para [entrega de conteúdo headless usando fragmentos de conteúdo com GraphQL](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md).
-
 
 >[!NOTE]
 >
@@ -71,10 +70,10 @@ Para criar um fragmento de conteúdo:
 
 1. A caixa de diálogo **Novo fragmento de conteúdo** será aberta, onde é possível especificar:
 
-   * **Local** — será preenchido automaticamente com o local atual, mas você pode selecionar um local diferente, se necessário
+   * **Localização** - preenchido automaticamente com o local atual, mas você pode selecionar um local diferente, se necessário
    * **Modelo de fragmento de conteúdo** — selecione o modelo a ser usado como base do fragmento na lista suspensa
    * **Título**
-   * **Nome** — será preenchido automaticamente com base no **Título**, mas você pode editá-lo, se necessário
+   * **Nome** - preenchido automaticamente com base no **Título**, mas você pode editá-lo, se necessário
    * **Descrição**
 
    ![Caixa de diálogo Novo fragmento de conteúdo](assets/cfm-managing-new-cf-01.png)
@@ -145,7 +144,7 @@ Alguns recursos na barra de ferramentas superior estão disponíveis em vários 
 
 ![modos](assets/cfm-managing-top-toolbar.png)
 
-* Uma mensagem será exibida quando o fragmento já tiver sido referenciado em uma página de conteúdo. Você pode **Fechar** a mensagem.
+* Uma mensagem é exibida quando o fragmento já é referenciado em uma página de conteúdo. Você pode **Fechar** a mensagem.
 
 * O painel lateral pode ser oculto/exibido usando o ícone **Ativar painel lateral**.
 
@@ -185,23 +184,23 @@ O editor tem várias opções:
    * **Salvar** salva as alterações mais recentes e permanece no editor.
    * **Salvar e fechar** salva as alterações mais recentes e fecha o editor.
 
-   >[!CAUTION]
-   >
-   >Para editar um fragmento de conteúdo, você precisa [das permissões apropriadas](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Entre em contato com o administrador do sistema em caso de problemas.
+  >[!CAUTION]
+  >
+  >Para editar um fragmento de conteúdo, você precisa [das permissões apropriadas](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Entre em contato com o administrador do sistema em caso de problemas.
 
-   >[!NOTE]
-   >
-   >É possível permanecer no editor e fazer uma série de alterações antes de salvar.
+  >[!NOTE]
+  >
+  >É possível permanecer no editor e fazer uma série de alterações antes de salvar.
 
-   >[!CAUTION]
-   >
-   >Além de simplesmente salvar suas alterações, as ações também atualizam quaisquer referências e garantem que o Dispatcher seja liberado conforme necessário. Essas alterações podem levar tempo para serem processadas. Devido a isso, pode haver um impacto no desempenho de um sistema grande/complexo/com bastante conteúdo.
-   >
-   >Lembre-se disso ao usar a opção **Salvar e fechar** e, logo em seguida, entrar novamente no editor de fragmentos para fazer mais alterações e salvá-las.
+  >[!CAUTION]
+  >
+  >Além de simplesmente salvar suas alterações, as ações também atualizam quaisquer referências e garantem que o Dispatcher seja liberado conforme necessário. Essas alterações podem levar tempo para serem processadas. Devido a isso, pode haver um impacto no desempenho de um sistema grande/complexo/com bastante conteúdo.
+  >
+  >Lembre-se disso ao usar a opção **Salvar e fechar** e, logo em seguida, entrar novamente no editor de fragmentos para fazer mais alterações e salvá-las.
 
 * **Fechar**
 
-   Fechará o editor sem salvar as alterações mais recentes (ou seja, feitas desde o último **Salvamento**).
+  Fechará o editor sem salvar as alterações mais recentes (ou seja, feitas desde o último **Salvamento**).
 
 Ao editar o fragmento de conteúdo, o AEM cria versões automaticamente para garantir que o conteúdo anterior possa ser restaurado se você cancelar as alterações (usando **Fechar** sem salvar):
 
@@ -246,30 +245,34 @@ Você pode publicar os fragmentos de conteúdo em:
 
 * o **[Serviço de visualização](/help/overview/architecture.md#runtime-architecture)** - para visualizar o conteúdo antes da disponibilidade completa
 
-   >[!CAUTION]
-   Publicar fragmentos de conteúdo na **Serviço de visualização** O só está disponível no [Console de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-console.md); utilizando o **Publish** ação.
+  >[!CAUTION]
+  >
+  Publicar fragmentos de conteúdo na **Serviço de visualização** O só está disponível no [Console de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-console.md); utilizando o **Publish** ação.
 
-   >[!NOTE]
-   Para obter mais detalhes sobre os ambientes de visualização, consulte:
-   * [Gerenciar ambientes](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
-   * [Configurações do OSGi para o nível de visualização](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
-   * [Depuração da visualização usando o Developer Console](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)
-
+  >[!NOTE]
+  >
+  Para obter mais detalhes sobre os ambientes de visualização, consulte:
+  >
+  * [Gerenciar ambientes](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
+  * [Configurações do OSGi para o nível de visualização](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
+  * [Depuração da visualização usando o Developer Console](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)
 
 Para publicar os fragmentos de conteúdo usando o **Publish** na barra de ferramentas do [Console de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment):
 
 >[!CAUTION]
+>
 Se o fragmento for baseado em um modelo, é preciso certificar-se de que o [modelo foi publicado](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
-Se você publicar um fragmento de conteúdo cujo modelo ainda não foi publicado, uma lista de seleção indicará isso e o modelo será publicado junto com o fragmento.
+>
+Se você publicar um fragmento de conteúdo cujo modelo ainda não foi publicado, uma lista de seleção indicará isso e o modelo será publicado com o fragmento.
 
 1. Selecione um ou mais fragmentos na lista.
 
 1. Na barra de ferramentas, selecione **Publish** e, em seguida, escolha uma das opções a seguir para abrir a caixa de diálogo apropriada:
 
-   * **Agora** - selecione a opção **Serviço de publicação** ou a variável **Serviço de visualização**; após a confirmação, o fragmento será publicado imediatamente
-   * **Agendar** - além do serviço necessário, também é possível selecionar a data e a hora em que o fragmento será publicado
+   * **Agora** - selecione a opção **Serviço de publicação** ou a variável **Serviço de visualização**; após a confirmação, o fragmento é publicado imediatamente
+   * **Agendar** - além do serviço necessário, também é possível selecionar a data e a hora em que o fragmento é publicado
 
-   Quando necessário, você deverá especificar as referências a serem publicadas. Por padrão, as referências também são publicadas no serviço de Visualização para garantir que não haja interrupção no conteúdo.
+   Quando necessário, você deve especificar as referências para publicar. Por padrão, as referências também são publicadas no serviço de Visualização para garantir que não haja interrupção no conteúdo.
 Por exemplo, para uma solicitação de publicação agendada:
    ![Caixa de diálogo Publicar](assets/cfm-publish-01.png)
 
@@ -280,10 +283,12 @@ Você também pode publicar na **Serviço de publicação** do [Editor de fragme
 * **Gerenciar publicação**
 
 >[!NOTE]
-Depois que você [publicar uma página que use o fragmento](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); o fragmento será listado nas referências da página.
+>
+Depois que você [publicar uma página que use o fragmento](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing), o fragmento é listado nas referências da página.
 
 >[!CAUTION]
-Depois que um fragmento tiver sido publicado e/ou referenciado, o AEM exibirá um aviso quando um autor abrir o fragmento para edição novamente. Isso serve para avisar que as alterações no fragmento também afetarão as páginas referenciadas.
+>
+Depois que um fragmento é publicado, referenciado ou ambos, o AEM exibe um aviso quando um autor abre o fragmento para edição novamente. O autor é avisado de que as alterações no fragmento também afetarão as páginas referenciadas.
 
 ## Desfazer a publicação de um fragmento {#unpublishing-a-fragment}
 
@@ -293,9 +298,11 @@ Quando a caixa de diálogo relevante for aberta, você poderá selecionar o serv
 ![Caixa de diálogo Cancelar publicação](assets/cfm-unpublish-01.png)
 
 >[!NOTE]
-A variável **Cancelar publicação** a ação só estará visível quando os fragmentos publicados estiverem disponíveis.
+>
+A variável **Cancelar publicação** A ação só estará visível quando os fragmentos publicados estiverem disponíveis.
 
 >[!CAUTION]
+>
 Se o fragmento já tiver sido referenciado a partir de outro fragmento, ou de uma página, você verá uma mensagem de aviso e terá que confirmar que deseja continuar.
 
 ## Excluir um fragmento {#deleting-a-fragment}
@@ -306,13 +313,15 @@ Para excluir um fragmento:
 2. Selecione o fragmento.
 
    >[!NOTE]
+   >
    A opção **Excluir** não está disponível como uma ação rápida.
 
 3. Selecione **Excluir** na barra de ferramentas.
 4. Confirme a ação **Excluir**.
 
    >[!CAUTION]
-   Se o fragmento já tiver sido referenciado a partir de outro fragmento, ou de uma página, você verá uma mensagem de aviso e terá que confirmar se deseja continuar com uma **Exclusão forçada**. O fragmento, junto com seu componente do fragmento de conteúdo, será excluído de qualquer página de conteúdo.
+   >
+   Se o fragmento já tiver sido referenciado a partir de outro fragmento, ou de uma página, você verá uma mensagem de aviso e terá que confirmar se deseja continuar com uma **Exclusão forçada**. O fragmento, junto com seu componente de fragmento de conteúdo, são excluídos de qualquer página de conteúdo.
 
 ## Encontrar referências principais do fragmento {#parent-references-fragment}
 
@@ -325,6 +334,7 @@ Para excluir um fragmento:
 ## Linha de tempo dos fragmentos de conteúdo {#timeline-for-content-fragments}
 
 >[!NOTE]
+>
 Essa funcionalidade só está disponível no console de **Ativos**
 
 Além das opções padrão, a [Linha de tempo](/help/assets/manage-digital-assets.md#timeline) fornece informações e ações específicas para fragmentos de conteúdo:
@@ -345,16 +355,18 @@ Além das opções padrão, a [Linha de tempo](/help/assets/manage-digital-asset
    * **Excluir**
 
 >[!NOTE]
+>
 Os comentários são:
+>
 * Uma funcionalidade padrão para todos os ativos
 * Feitos na Linha de tempo
 * Relacionados ao ativo de fragmento
 >
 As anotações (para fragmentos de conteúdo) são:
+>
 * Inseridas no editor de fragmentos
 * Específicas de um segmento de texto selecionado no fragmento
 >
-
 
 Por exemplo:
 
@@ -363,6 +375,7 @@ Por exemplo:
 ## Comparação de versões do fragmento {#comparing-fragment-versions}
 
 >[!NOTE]
+>
 Essa funcionalidade só está disponível no console de **Ativos**
 
 A ação **Comparar com atual** fica disponível na [Linha de tempo](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) após selecionar uma versão específica.
@@ -373,7 +386,7 @@ Isso abrirá:
 
 * a versão selecionada **v&lt;*x.y*>** (à direita)
 
-Elas serão mostradas lado a lado, onde:
+Eles são mostrados lado a lado, onde:
 
 * Quaisquer diferenças serão destacadas
 
@@ -386,6 +399,7 @@ Elas serão mostradas lado a lado, onde:
 * **Concluído** retornará ao console
 
 >[!NOTE]
+>
 Não é possível editar o conteúdo do fragmento ao comparar fragmentos.
 
 ![comparação](assets/cfm-managing-06.png)
@@ -393,12 +407,13 @@ Não é possível editar o conteúdo do fragmento ao comparar fragmentos.
 ## Reverter para uma versão  {#reverting-to-a-version}
 
 >[!NOTE]
+>
 Essa funcionalidade só está disponível no console de **Ativos**
 
 Você pode reverter para uma versão específica do fragmento:
 
 * Diretamente da [Linha de tempo](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
 
-   Selecione a versão necessária e, em seguida, a ação **Reverter para esta versão**.
+  Selecione a versão necessária e, em seguida, a ação **Reverter para esta versão**.
 
 * Ao [comparar uma versão com a versão atual](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#comparing-fragment-versions), é possível **Reverter** para a versão selecionada.

@@ -2,10 +2,10 @@
 title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2022.4.0.
 description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2022.4.0.
 exl-id: 6c86838a-cabf-4770-b1ae-618af70193a2
-source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '570'
-ht-degree: 97%
+ht-degree: 91%
 
 ---
 
@@ -64,7 +64,7 @@ O plug-in para Maven do Analisador de build do SDK do AEM as a Cloud Service det
 
 Recentemente, foi adicionado um novo analisador:
 
-* `content-packages-validation` - valida a qualidade de composição da sintaxe e da estrutura do conteúdo de pacotes que serão instalados durante a implantação
+* `content-packages-validation` - valida a qualidade de composição da sintaxe e da estrutura do conteúdo de pacotes instalados durante a implantação
 
 É altamente recomendável atualizar seu projeto Maven para utilizar a versão mais recente do analisador ou incluí-lo se ainda não tiver feito isso. Para obter mais informações, consulte a documentação [aqui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=pt-BR).
 
@@ -72,7 +72,7 @@ Recentemente, foi adicionado um novo analisador:
 
 ### Descontinuidade do TLS 1.0 e 1.1
 
-A partir de 30 de junho de 2022, o Experience Manager as a Cloud Service exigirá comunicações de rede e trocas de dados mais seguras com os sistemas dos usuários. O AEM usará exclusivamente o protocolo TLS (Transport Layer Security) 1.2. As versões anteriores do TLS (1.0 e 1.1) serão descontinuadas.
+A partir de 30 de junho de 2022, o Experience Manager as a Cloud Service exigirá comunicações de rede e trocas de dados mais seguras com os sistemas dos usuários. O AEM pretende usar exclusivamente o protocolo TLS (Transport Layer Security) 1.2. As versões anteriores do TLS (1.0 e 1.1) foram descontinuadas.
 
 Se você continuar a usar versões mais antigas do TLS (como 1.0 e 1.1), poderá perder o acesso ao Experience Manager as a Cloud Service.
 

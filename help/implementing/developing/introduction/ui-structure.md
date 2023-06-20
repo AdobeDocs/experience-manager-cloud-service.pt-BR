@@ -2,9 +2,9 @@
 title: Estrutura da interface do AEM
 description: A interface do AEM tem vários princípios subjacentes e é composta de vários elementos-chave
 exl-id: ac211716-d699-4fdb-a286-a0a1122c86c5
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '915'
 ht-degree: 4%
 
 ---

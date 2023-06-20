@@ -2,10 +2,10 @@
 title: Notas de versão do [!DNL Adobe Experience Manager]  as a Cloud Service 2021.4.0.
 description: Notas de versão do [!DNL Adobe Experience Manager]  as a Cloud Service 2021.4.0.
 exl-id: 775332b5-24ce-430e-97a2-6eeb80877c64
-source-git-commit: a2c844d6f72c22ed085690ff98572a52e97de40d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1535'
-ht-degree: 26%
+source-wordcount: '1533'
+ht-degree: 25%
 
 ---
 
@@ -41,7 +41,7 @@ A versão seguinte (2021.5.0) será lançada em 27 de maio de 2021.
 
 * Modelos de conteúdo, tipo de dados aprimorado Tags — agora é possível configurar o tipo de dados Tags para permitir a criação de tags únicas ou múltiplas.
 
-* Modelos de conteúdo, novo tipo de dados Espaço reservado de guia — o novo tipo de dados Espaço reservado de guia permite agrupar tipos de dados em seções que serão renderizadas em guias no editor de fragmento de conteúdo.
+* Modelos de conteúdo, novo tipo de dados Espaço reservado de guia — o novo tipo de dados Espaço reservado de guia permite agrupar tipos de dados em seções que são renderizadas em guias no editor de fragmento de conteúdo.
 
 ### Correções de erros no [!DNL Sites] {#bug-fixes-sites}
 
@@ -67,7 +67,7 @@ A versão seguinte (2021.5.0) será lançada em 27 de maio de 2021.
 
 * Ao editar um esquema de metadados, um tipo de dados que fornece uma área de texto de forma livre no editor de metadados é adicionado. Os usuários podem usar essa área de texto para inserir texto de forma livre como metadados de um ativo. Consulte [editor de esquema de metadados](/help/assets/metadata-schemas.md).
 
-* Os metadados de muitos ativos podem ser importados em massa usando um arquivo CSV e podem ser exportados para um arquivo CSV. O formato de data padrão agora é `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. Os usuários podem aproveitar um formato diferente atualizando o cabeçalho da coluna. Por exemplo, adicione `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` como o cabeçalho da coluna no arquivo CSV em vez da palavra `Date`.
+* Os metadados de muitos ativos podem ser importados em massa usando um arquivo CSV e podem ser exportados para um arquivo CSV. O formato de data padrão agora é `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. Os usuários podem usar um formato diferente atualizando o cabeçalho da coluna. Por exemplo, adicione `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` como o cabeçalho da coluna no arquivo CSV em vez da palavra `Date`.
 
 * Ao navegar pelos ativos na exibição Coluna, um indicador visual exibe o status aprovado ou rejeitado de cada ativo.
 
@@ -95,25 +95,25 @@ A versão seguinte (2021.5.0) será lançada em 27 de maio de 2021.
 
 * **Usar o método de autenticação de ID do governo no Adaptive Forms habilitado para Adobe Sign**
 
-   Alimentado por algoritmos avançados de aprendizado de máquina, o processo de ID do governo da Adobe Sign oferece a empresas do mundo todo a capacidade de garantir uma autenticação de alta qualidade da identidade do recipient. Agora, você pode usar o método de autenticação de ID do governo no Adaptive Forms habilitado para Adobe Sign.
+  Alimentado por algoritmos avançados de aprendizado de máquina, o processo de ID do governo da Adobe Sign oferece a empresas do mundo todo a capacidade de garantir uma autenticação de alta qualidade da identidade do recipient. Agora, você pode usar o método de autenticação de ID do governo no Adaptive Forms habilitado para Adobe Sign.
 
-   ID do governo é um método de autenticação de identidade premium que instrui o recipient a [fazer upload da imagem de um documento de identidade emitido pelo governo (CNH, identificação nacional, passaporte)](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html)e avalia esse documento para garantir sua autenticidade.
+  ID do governo é um método de autenticação de identidade premium que instrui o recipient a [carregar a imagem de um documento de identidade emitido pelo governo (CNH, identificação nacional, passaporte)](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html)e avalia esse documento para garantir sua autenticidade.
 
 * **Suporte para usar a experiência de assinatura no formulário para envios assíncronos de formulários adaptáveis**
 
-   Agora você pode usar a experiência de assinatura no formulário para envios assíncronos de formulários adaptáveis. Também é possível incorporar um formulário adaptável em uma [!DNL Experience Manager Sites] e use a experiência de assinatura no formulário para envios de formulários adaptáveis.
+  Agora você pode usar a experiência de assinatura no formulário para envios assíncronos de formulários adaptáveis. Também é possível incorporar um formulário adaptável em uma [!DNL Experience Manager Sites] e use a experiência de assinatura no formulário para envios de formulários adaptáveis.
 
 * **Suporte para usar uma variável para especificar um anexo enquanto preenche um formulário adaptável para uma etapa Atribuir tarefa**
 
-   Ao preencher previamente um formulário adaptável para uma etapa Atribuir tarefa, agora é possível usar uma variável do tipo de documento para selecionar um anexo de entrada para o formulário adaptável.
+  Ao preencher previamente um formulário adaptável para uma etapa Atribuir tarefa, agora é possível usar uma variável do tipo de documento para selecionar um anexo de entrada para o formulário adaptável.
 
 * **Suporte para usar a opção literal para definir valor para uma variável do tipo JSON**
 
-   Você pode usar a opção literal para definir o valor de uma variável do tipo JSON na etapa Definir variável de um fluxo de trabalho AEM. A opção literal permite especificar um JSON no formato de uma string.
+  Você pode usar a opção literal para definir o valor de uma variável do tipo JSON na etapa Definir variável de um fluxo de trabalho AEM. A opção literal permite especificar um JSON no formato de uma string.
 
 * **Usar o ambiente de desenvolvimento local para criar um Documento de registro (DoR)**
 
-   Você pode usar um XDP como um modelo de Documento de registro em instâncias do Cloud Service e SDK as a Cloud Service do AEM Forms (Ambiente de desenvolvimento local). Anteriormente, o suporte estava limitado apenas a instâncias Cloud Service.
+  Você pode usar um XDP como um modelo de Documento de registro em instâncias do Cloud Service e SDK as a Cloud Service do AEM Forms (Ambiente de desenvolvimento local). Anteriormente, o suporte estava limitado apenas a instâncias Cloud Service.
 
 ### Correções de erros no [!DNL Forms] {#bug-fixes-forms}
 
@@ -165,7 +165,7 @@ A próxima versão está planejada para 6 de maio de 2021.
 
 * Os projetos no Console do desenvolvedor do Adobe I/O criados pelo Cloud Manager não podem mais ser editados ou excluídos involuntariamente.
 
-* Quando um usuário adiciona um novo ambiente, ele é informado de que, uma vez criado o ambiente, ele não poderá ser movido para uma região diferente.
+* Quando um usuário adiciona um novo ambiente, ele é informado de que, depois que um ambiente é criado, ele não pode ser movido para uma região diferente.
 
 * Agora, as variáveis de ambiente podem ser enviadas para um serviço específico, seja de criação ou de publicação. Exige o AEM versão 2021.03.5104.20210328T185548Z ou superior.
 

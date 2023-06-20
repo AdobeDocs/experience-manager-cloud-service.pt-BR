@@ -2,10 +2,10 @@
 title: Notas de versão do  [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0.
 description: "[!DNL Adobe Experience Manager] Notas de versão as a Cloud Service para 2020.7.0."
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '1038'
-ht-degree: 83%
+ht-degree: 82%
 
 ---
 
@@ -57,7 +57,7 @@ O AEM Commerce agora está disponível no Cloud Service.
 
 Consulte [Introdução ao AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html) para obter mais detalhes.
 
-## Componentes principais  {#core-components}
+## Componentes principais {#core-components}
 
 ### Novidades {#what-is-new-core-components}
 
@@ -88,7 +88,7 @@ A data de lançamento da versão 2020.7.0 do [!UICONTROL Cloud Manager] é 9 de 
 
 * Os pipelines do Cloud Manager agora oferecem suporte a variáveis e segredos definidos pelo cliente.
 
-   Consulte Variáveis de pipeline para saber mais.
+  Consulte Variáveis de pipeline para saber mais.
 
 * Agora há suporte aos Repositórios Maven privados vinculados à autenticação.
 
@@ -121,7 +121,7 @@ Consulte Como usar o suporte ao Java 11 para obter mais detalhes.
 
 ### Novidades {#what-is-new-foundations}
 
-* [Os logs podem ser encaminhados para contas do Splunk](/help/implementing/developing/introduction/logging.md#splunk-logs), permitindo que as organizações aproveitem o investimento feito no Splunk.
+* [Os logs podem ser encaminhados para contas do Splunk](/help/implementing/developing/introduction/logging.md#splunk-logs), que permite que as organizações usem o investimento feito no Splunk.
 
 * [Um endereço IP de saída estático e dedicado](/help/implementing/developing/introduction/development-guidelines.md#dedicated-egress-ip-address) pode ser atribuído para tráfego externo programado no código Java, que pode ser útil para algumas integrações.
 
@@ -137,7 +137,7 @@ Siga esta seção para saber mais sobre as novidades e as atualizações do Clou
 
 * Não foi possível executar a versão anterior do CRA no Adobe Experience Manager (AEM) 6.1. Foi adicionado suporte direto para permitir usuários no grupo de administradores.
 
-   Consulte [Instalação do CRA no AEM 6.1](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61) para obter mais detalhes.
+  Consulte [Instalação do CRA no AEM 6.1](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61) para obter mais detalhes.
 
 * O carimbo de data e hora de expiração exibido no relatório de resumo estava incorreto.
 

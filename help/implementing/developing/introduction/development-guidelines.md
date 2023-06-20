@@ -2,10 +2,10 @@
 title: Diretrizes de desenvolvimento do AEM as a Cloud Service
 description: Conheça as diretrizes para desenvolvimento no AEM as a Cloud Service e as principais diferenças em relação ao AEM local e ao AEM no AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 6a26006a20ed2f1d18ff376863b3c8b149de1157
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2602'
-ht-degree: 4%
+source-wordcount: '2591'
+ht-degree: 5%
 
 ---
 
@@ -23,7 +23,7 @@ Este documento apresenta diretrizes para o desenvolvimento do AEM as a Cloud Ser
 
 O código em execução no AEM as a Cloud Service deve estar ciente do fato de que ele está sempre em execução em um cluster. Isso significa que sempre há mais de uma instância em execução. O código deve ser resiliente, especialmente porque uma instância pode ser interrompida a qualquer momento.
 
-Durante a atualização do AEM as a Cloud Service, haverá instâncias com códigos antigos e novos sendo executados em paralelo. Portanto, o código antigo não deve quebrar com o conteúdo criado pelo novo código e o novo código deve ser capaz de lidar com o conteúdo antigo.
+Durante a atualização do AEM as a Cloud Service, há instâncias com códigos antigos e novos sendo executados em paralelo. Portanto, o código antigo não deve quebrar com o conteúdo criado pelo novo código e o novo código deve ser capaz de lidar com o conteúdo antigo.
 
 Se for necessário identificar o principal no cluster, a API de descoberta do Apache Sling poderá ser usada para detectá-lo.
 
@@ -33,13 +33,13 @@ O estado não deve ser mantido na memória, mas mantido no repositório. Caso co
 
 ## Estado no sistema de arquivos {#state-on-the-filesystem}
 
-O sistema de arquivos da instância não deve ser usado no AEM as a Cloud Service. O disco é efêmero e será descartado quando as instâncias forem recicladas. O uso limitado do sistema de arquivos para armazenamento temporário relacionado ao processamento de solicitações únicas é possível, mas não deve ser usado para arquivos enormes. Isso ocorre porque pode ter um impacto negativo na cota de uso do recurso e gerar limitações de disco.
+O sistema de arquivos da instância não deve ser usado no AEM as a Cloud Service. O disco é efêmero e é descartado quando as instâncias são recicladas. O uso limitado do sistema de arquivos para armazenamento temporário relacionado ao processamento de solicitações únicas é possível, mas não deve ser usado para arquivos enormes. Isso ocorre porque pode ter um impacto negativo na cota de uso do recurso e gerar limitações de disco.
 
 Como exemplo em que o uso do sistema de arquivos não é compatível, a camada de Publicação deve garantir que todos os dados que precisam ser mantidos sejam enviados para um serviço externo para armazenamento de longo prazo.
 
 ## Observação {#observation}
 
-Semelhante, com tudo o que está acontecendo de forma assíncrona, como a ação em eventos de observação, não é possível garantir que seja executado localmente e, portanto, deve ser usado com cuidado. Isso é verdadeiro para eventos JCR e eventos de recursos Sling. No momento em que uma alteração estiver ocorrendo, a instância poderá ser desativada e substituída por outra instância. Outras instâncias na topologia que estão ativas nesse momento poderão reagir a esse evento. Nesse caso, no entanto, não será um evento local e pode até não haver líder ativo no caso de uma eleição de líder em andamento quando o evento for emitido.
+Semelhante, com tudo o que está acontecendo de forma assíncrona, como a ação em eventos de observação, não é possível garantir que seja executado localmente e, portanto, deve ser usado com cuidado. Isso é verdadeiro para eventos JCR e eventos de recursos Sling. No momento em que uma alteração estiver ocorrendo, a instância poderá ser desativada e substituída por outra instância. Outras instâncias na topologia que estão ativas nesse momento podem reagir a esse evento. Nesse caso, no entanto, não será um evento local e pode até não haver líder ativo no caso de uma eleição de líder em andamento quando o evento for emitido.
 
 ## Tarefas de segundo plano e tarefas de longa duração {#background-tasks-and-long-running-jobs}
 
@@ -47,7 +47,7 @@ O código executado como tarefas em segundo plano deve supor que a instância em
 
 Para minimizar o problema, se possível, a execução de trabalhos de longa duração deve ser evitada, e eles devem ser retomáveis no mínimo. Para executar esses trabalhos, use o Sling Jobs, que têm uma garantia de pelo menos uma vez e, portanto, se forem interrompidos, serão reexecutados o mais rápido possível. Mas elas provavelmente não devem recomeçar do início. Para agendar esses trabalhos, é melhor usar a variável [Sling Jobs](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) scheduler, pois isso garante novamente a execução de pelo menos uma vez.
 
-O Sling Commons Scheduler não deve ser usado para agendamento, pois a execução não pode ser garantida. É mais provável que seja programado.
+O Sling Commons Scheduler não deve ser usado para agendamento, pois a execução não pode ser garantida. É mais provável que ela esteja programada.
 
 Da mesma forma, com tudo o que está acontecendo de forma assíncrona, como a atuação em eventos de observação (ou seja, eventos JCR ou eventos de recursos Sling), não é garantido que seja executado e, portanto, deve ser usado com cuidado. Isso já é verdadeiro para implantações de AEM no presente.
 
@@ -105,7 +105,7 @@ Para alterar os níveis de log para ambientes em nuvem, a configuração OSGI do
 
 >[!NOTE]
 >
->Para executar as alterações de configuração listadas abaixo, é necessário criá-las em um ambiente de desenvolvimento local e depois enviá-las para uma instância as a Cloud Service do AEM. Para obter mais informações sobre como fazer isso, consulte [Implantação no AEM as a Cloud Service](/help/implementing/deploying/overview.md).
+>Para executar as alterações de configuração listadas abaixo, você as cria em um ambiente de desenvolvimento local e as envia para uma instância as a Cloud Service do AEM. Para obter mais informações sobre como fazer isso, consulte [Implantação no AEM as a Cloud Service](/help/implementing/deploying/overview.md).
 
 **Ativando o Nível de Log DEBUG**
 

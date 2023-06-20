@@ -6,9 +6,9 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '4378'
+source-wordcount: '4377'
 ht-degree: 11%
 
 ---
@@ -30,7 +30,6 @@ Ao organizar uma coleção de ativos, por exemplo, todas as `Nature` imagens, é
 >
 >* Compartilhamento de uma pasta de ativos do tipo `sling:OrderedFolder`, não é compatível ao compartilhar no Experience Cloud. Se quiser compartilhar uma pasta, não selecione [!UICONTROL Encomendado] ao criar uma pasta.
 >* O Experience Manager não permite usar `subassets` palavra como o nome de uma pasta. É uma palavra-chave reservada para o nó que contém subativos para ativos compostos
-
 
 1. Navegue até o local na pasta de ativos digitais em que deseja criar uma nova pasta. No menu, clique em **[!UICONTROL Criar]**. Selecionar **[!UICONTROL Nova pasta]**.
 1. No **[!UICONTROL Título]** , forneça um nome de pasta. Por padrão, o DAM usa o título fornecido como o nome da pasta. Depois que a pasta for criada, você poderá substituir o padrão e especificar outro nome de pasta.
@@ -184,11 +183,11 @@ As outras propriedades e informações de metadados são retidas. Uma cópia par
    * Especifique o nome do ativo depois que ele for movido. Toque/clique **[!UICONTROL Próxima]** para continuar.
 
    * Toque/clique **[!UICONTROL Cancelar]** para interromper o processo.
+
    >[!NOTE]
    >
    >* Você pode especificar o mesmo nome para o ativo se não houver um ativo com esse nome no novo local. No entanto, você deve usar um nome diferente se mover o ativo para um local onde exista um ativo com o mesmo nome. Se você usar o mesmo nome, o sistema gerará automaticamente uma variação do nome. Por exemplo, se o ativo tiver o nome Quadrado, o sistema gera o nome Quadrado1 para sua cópia.
    >* Ao renomear, não é permitido espaço em branco no nome do arquivo.
-
 
 1. No **[!UICONTROL Selecionar destino]** , siga um destes procedimentos:
 
@@ -486,7 +485,7 @@ Você pode exibir somente uma anotação por vez.
 
 >[!NOTE]
 >
->Se você estiver selecionando várias anotações, a anotação mais recente estará visível na interface do usuário.
+>Se você estiver selecionando várias anotações, a anotação mais recente estará visível na interface.
 >
 >A seleção múltipla é compatível somente com a impressão do ativo anotado como PDF.
 

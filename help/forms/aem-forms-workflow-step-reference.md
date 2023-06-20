@@ -3,9 +3,9 @@ title: Como atribuir um workflow a outro usuário, enviar email, usar o Adobe Si
 description: Fluxos de trabalho centrados no Forms permitem criar rapidamente fluxos de trabalho adaptáveis baseados no Forms. Você pode usar o Adobe Sign para assinar documentos eletronicamente, criar processos de negócios baseados em formulários, recuperar e enviar dados para várias fontes de dados e enviar notificações por email
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: 3c8035e4db5729f58bae29136a32a0b9944d6a2f
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '7190'
+source-wordcount: '7189'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ Você também pode usar o componente para controlar o comportamento da tarefa. P
 
 
 * **[!UICONTROL Usar formulário adaptável]**: especifique o método para localizar o Formulário adaptável de entrada. Essa opção estará disponível se você selecionar Formulário adaptável ou Formulário adaptável somente leitura na lista suspensa Tipo. Você pode usar o Formulário adaptável enviado ao fluxo de trabalho, disponível em um caminho absoluto ou disponível em um caminho em uma variável. Você pode usar uma variável do tipo String para especificar o caminho.\
-   É possível associar várias Forms adaptáveis a um fluxo de trabalho. Como resultado, você pode especificar um Formulário adaptável no tempo de execução usando os métodos de entrada disponíveis.
+  É possível associar várias Forms adaptáveis a um fluxo de trabalho. Como resultado, você pode especificar um Formulário adaptável no tempo de execução usando os métodos de entrada disponíveis.
 
 <!-- 
 
@@ -80,7 +80,7 @@ Você também pode usar o componente para controlar o comportamento da tarefa. P
    * **[!UICONTROL Selecione o arquivo de dados de entrada usando]**: caminho do arquivo de dados de entrada (.json, .xml, .doc ou modelo de dados de formulário). Você pode recuperar o arquivo de dados de entrada usando um caminho relativo à carga útil ou recuperar o arquivo armazenado em uma variável do tipo de dados Documento, XML ou JSON. Por exemplo, o arquivo contém os dados enviados para o formulário por meio de um aplicativo Caixa de entrada AEM. Um exemplo de caminho é [Payload_Diretory]/workflow/data.
    * **[!UICONTROL Selecione os anexos de entrada usando]**: os anexos disponíveis no local são anexados ao formulário associado à tarefa. O caminho pode ser relativo à carga ou recuperar o anexo armazenado em uma variável de um documento. Um exemplo de caminho é [Payload_Diretory]/attachments/. Você pode especificar anexos colocados em relação à carga ou usar uma variável do tipo de documento (Lista de matriz > Documento) para especificar um anexo de entrada para o Formulário adaptável.
 
-   <!-- 
+  <!-- 
     
     * **[!UICONTROL Choose input JSON]**: Select an input JSON file using a path that is relative to payload or stored in a variable of Document, JSON, or Form Data Model data type. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
 
@@ -92,7 +92,7 @@ Você também pode usar o componente para controlar o comportamento da tarefa. P
 
    * **[!UICONTROL Mapeamento de atributo de solicitação]**: Use a seção Mapeamento de atributos de solicitação para definir o [nome e valor do atributo de solicitação](work-with-form-data-model.md#bindargument). Recupere os detalhes da fonte de dados com base no nome e valor do atributo especificado na solicitação. Você pode definir um valor de atributo de solicitação usando um valor literal ou uma variável do tipo de dados String.
 
-   <!--  
+  <!--  
      
      The prefill service and request attribute mapping options are available only if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list. 
      
@@ -104,7 +104,7 @@ Você também pode usar o componente para controlar o comportamento da tarefa. P
    * **[!UICONTROL Salvar anexos usando]**: Salve os anexos de formulário fornecidos em uma tarefa. Você pode salvar os anexos usando um caminho relativo à carga ou armazená-lo em uma variável da lista de matriz do tipo de dados Documento.
    * **[!UICONTROL Salvar documento de registro usando]**: caminho para salvar um arquivo de documento de registro. Por exemplo, [Payload_Diretory]/DocumentofRecord/credit-card.pdf. Você pode salvar o documento de registro usando um caminho relativo à carga útil ou armazená-lo em uma variável do tipo de dados Documento. Se você selecionar **[!UICONTROL Relativo à carga útil]** , o documento de registro não será gerado se o campo de caminho estiver vazio. Essa opção estará disponível somente se você selecionar Formulário adaptável na lista suspensa Tipo.
 
-   <!-- 
+  <!-- 
     
     * **[!UICONTROL Save Web Channel data using]**: Save the Web Channel data file using a path that is relative to the payload or store it in a variable of Document, JSON, or Form Data Model data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. c
     * **[!UICONTROL Save PDF document using]**: Save the PDF document using a path that is relative to the payload or store it in a variable of Document data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list.
@@ -122,7 +122,7 @@ Você também pode usar o componente para controlar o comportamento da tarefa. P
 * **[!UICONTROL Argumentos]**: o campo fica disponível quando um script diferente do script RandomParticipantChoose é selecionado no campo Seletor de participantes. O campo permite fornecer uma lista de um argumento separado por vírgulas para o script selecionado no campo Seletor de participantes.
 
 * **[!UICONTROL Usuário ou grupo]**: a tarefa é atribuída ao usuário ou grupo selecionado. A opção está disponível quando a variável **[!UICONTROL Para uma opção específica de usuário ou grupo]** está selecionado no **[!UICONTROL Opções de atribuição]** campo. O campo lista todos os usuários e grupos do [!DNL workflow-users] grupo.\
-   A variável **[!UICONTROL Usuário ou grupo]** lista os usuários e grupos aos quais o usuário conectado tem acesso. A exibição do nome de usuário depende se você tem permissões de acesso no **[!UICONTROL usuários]** no repositório crx para esse usuário específico.
+  A variável **[!UICONTROL Usuário ou grupo]** lista os usuários e grupos aos quais o usuário conectado tem acesso. A exibição do nome de usuário depende se você tem permissões de acesso no **[!UICONTROL usuários]** no repositório crx para esse usuário específico.
 
 * **[!UICONTROL Enviar email de notificação]**: selecione essa opção para enviar notificações por email ao signatário. Essas notificações são enviadas quando uma tarefa é atribuída a um usuário ou grupo. Você pode usar o **[!UICONTROL Endereço de email do destinatário]** opção para especificar o mecanismo para recuperar o endereço de email.
 
@@ -135,7 +135,7 @@ Você também pode usar o componente para controlar o comportamento da tarefa. P
    * Quando a variável **[!UICONTROL Permitir que o destinatário compartilhe através do compartilhamento da caixa de entrada]** estiver selecionada e os usuários compartilharem seus itens da Caixa de entrada ou permitir que outros usuários acessem seus itens da Caixa de entrada. Somente as tarefas com a opção mencionada anteriormente ativada serão compartilhadas com outros usuários.
    * Quando a variável **[!UICONTROL Permitir que o destinatário delegue usando as configurações &quot;Ausente&quot;]** está selecionada. O responsável pode habilitar a opção para delegar a tarefa a outros usuários junto com outras opções de Ausência Temporária. Quaisquer novas tarefas atribuídas ao usuário ausente do escritório são automaticamente delegadas (atribuídas) aos usuários mencionados nas configurações ausentes do escritório.
 
-   Ele permite que outros usuários escolham tarefas atribuídas enquanto estiver fora do escritório e não puder trabalhar nas tarefas atribuídas.
+  Ele permite que outros usuários escolham tarefas atribuídas enquanto estiver fora do escritório e não puder trabalhar nas tarefas atribuídas.
 
 * **[!UICONTROL Ações]** > **[!UICONTROL Ações padrão]**: as ações Enviar, Salvar e Redefinir prontas para uso estão disponíveis. Todas as ações padrão são ativadas, por padrão.
 * **[!UICONTROL Variável de rota]**: Nome da variável de rota. A variável de rota captura as ações personalizadas que um usuário seleciona na Caixa de entrada do AEM.
@@ -354,7 +354,7 @@ A etapa Chamar serviço do modelo de dados de formulário tem os campos listados
 
    * **[!UICONTROL Relativo à carga útil]**: use a opção para recuperar o anexo de arquivo salvo em um caminho relativo à carga. Selecione a opção e especifique o nome da pasta que inclui o anexo de arquivo ou especifique o nome do anexo de arquivo na caixa de texto.
 
-      Por exemplo, se a pasta Relativo à carga no repositório CRX incluir um anexo de arquivo na `attachment\attachment-folder` local, especificar `attachment\attachment-folder` na caixa de texto após selecionar a variável **[!UICONTROL Relativo à carga útil]** opção.
+     Por exemplo, se a pasta Relativo à carga no repositório CRX incluir um anexo de arquivo na `attachment\attachment-folder` local, especificar `attachment\attachment-folder` na caixa de texto após selecionar a variável **[!UICONTROL Relativo à carga útil]** opção.
 
    * **[!UICONTROL Anotação JSON Dot]**: use a opção quando o valor a ser usado estiver em um arquivo JSON. Por exemplo, insurance.customerDetails.emailAddress. A opção Anotação JSON Dot estará disponível somente se a opção Mapear campos de entrada a partir de JSON de entrada estiver selecionada.
    * **[!UICONTROL Mapear campos de entrada a partir do JSON de entrada]**: especifique o caminho de um arquivo JSON para obter o valor de entrada de alguns argumentos de serviço do arquivo JSON. O caminho do arquivo JSON pode ser relativo à carga, um caminho absoluto ou você pode selecionar um documento JSON de entrada usando uma variável do tipo JSON ou Modelo de dados de formulário.
@@ -526,7 +526,7 @@ A etapa Gerar Saída Impressa tem as seguintes propriedades:
 
 * **[!UICONTROL Selecione o local da raiz do conteúdo usando]**: raiz de conteúdo é um valor de cadeia de caracteres que especifica o URI, a referência absoluta ou o local no repositório para recuperar ativos relativos usados pelo design do formulário. Por exemplo, se o design do formulário referenciar uma imagem relativamente, como `../myImage.gif`, `myImage.gif` deve estar em `repository://`. O valor padrão é `repository://`, que aponta para o nível raiz do repositório.
 
-   Quando você seleciona um ativo do aplicativo, o caminho do URI da raiz do conteúdo deve ter a estrutura correta. Por exemplo, se um formulário for selecionado de um aplicativo chamado SampleApp e for colocado em `SampleApp/1.0/forms/Test.xdp`, o URI da Raiz de Conteúdo deve ser especificado como `repository://administrator@password/Applications/SampleApp/1.0/forms/`ou `repository:/Applications/SampleApp/1.0/forms/` (quando a autoridade é nula). Quando o URI da raiz do conteúdo é especificado dessa maneira, os caminhos de todos os ativos referenciados no formulário serão resolvidos em relação a esse URI.
+  Quando você seleciona um ativo do aplicativo, o caminho do URI da raiz do conteúdo deve ter a estrutura correta. Por exemplo, se um formulário for selecionado de um aplicativo chamado SampleApp e for colocado em `SampleApp/1.0/forms/Test.xdp`, o URI da Raiz de Conteúdo deve ser especificado como `repository://administrator@password/Applications/SampleApp/1.0/forms/`ou `repository:/Applications/SampleApp/1.0/forms/` (quando a autoridade é nula). Quando o URI da raiz do conteúdo é especificado dessa maneira, os caminhos de todos os ativos referenciados no formulário são resolvidos em relação a esse URI.
 
 * **[!UICONTROL Selecione o arquivo XCI usando]**: os arquivos XCI são usados para descrever fontes e outras propriedades usadas para elementos de design de formulário. Você pode manter um arquivo XCI relativo à carga útil, em um caminho absoluto ou usando uma variável do tipo de dados Documento.
 

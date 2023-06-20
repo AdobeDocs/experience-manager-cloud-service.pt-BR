@@ -2,10 +2,10 @@
 title: Pesquisar
 description: Encontre seu conteúdo mais rapidamente com a pesquisa abrangente
 exl-id: 8a799e9a-1461-4e79-ae90-1978af6cf0ed
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '494'
-ht-degree: 72%
+source-wordcount: '492'
+ht-degree: 69%
 
 ---
 
@@ -33,16 +33,16 @@ Com o painel de pesquisa, você pode:
 
 Para pesquisar e filtrar os recursos:
 
-1. Abertura **Pesquisar** (com a lupa na barra de ferramentas) e insira o termo de pesquisa. Serão feitas sugestões e elas poderão ser selecionadas:
+1. Abertura **Pesquisar** (com a lupa na barra de ferramentas) e insira o termo de pesquisa. São feitas sugestões e elas podem ser selecionadas:
 
    ![Pesquisar termo](/help/sites-cloud/authoring/assets/search-term.png)
 
-   Por padrão, os resultados da pesquisa ficarão limitados à sua localização atual (ou seja, o console e o tipo de recurso relacionado): 
+   Por padrão, os resultados da pesquisa estão limitados à sua localização atual (ou seja, console e tipo de recurso relacionado):
 
    ![Local de pesquisa](/help/sites-cloud/authoring/assets/search-term-location.png)
 
 1. Se necessário, é possível remover o filtro de localização (selecione **X** no filtro que deseja remover) para pesquisar em todos os consoles/tipos de recursos.
-1. Os resultados serão mostrados, agrupados de acordo com o console e o tipo de recurso relacionado.
+1. Os resultados são mostrados, agrupados de acordo com o console e o tipo de recurso relacionado.
 
    Você pode selecionar um recurso específico (para a ação adicional) ou detalhar selecionando o tipo de recurso desejado; por exemplo, **Exibir todos os sites**: 
 
@@ -67,7 +67,6 @@ Para pesquisar e filtrar os recursos:
    >
    >* Dependendo do tipo de recurso selecionado; por exemplo, os critérios de Ativos e comunidades são compreensivelmente especializados.
    >* Sua instância, como os Formulários de pesquisa, pode ser personalizada (adequada ao local no AEM).
-
 
 <!--
   >* Your instance as the [Search Forms](/help/sites-administering/search-forms.md) can be customized (appropriate to the location within AEM).

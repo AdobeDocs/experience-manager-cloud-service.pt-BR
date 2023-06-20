@@ -6,7 +6,7 @@ mini-toc-levels: 1
 feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '3495'
 ht-degree: 16%
@@ -140,9 +140,9 @@ Para projetar um fluxo de trabalho eficiente entre as equipes de criação e mar
 
 ### Por que os ativos são armazenados no DAM {#why-assets-are-stored-in-dam}
 
-Armazenar ativos no DAM facilita o acesso e a localização. Ele garante que os ativos possam ser aproveitados por vários usuários em toda a organização ou ecossistema, o que inclui parceiros, clientes e assim por diante.
+Armazenar ativos no DAM facilita o acesso e a localização. Ele garante que os ativos possam ser usados por vários usuários em toda a organização ou ecossistema, o que inclui parceiros, clientes e assim por diante.
 
-A maioria das organizações opta por armazenar somente ativos que sejam relevantes para os processos de marketing/LOB de downstream (publicação em canais como o canal da Web por meio do Experience Manager Sites ou outros canais atendidos pela Adobe Experience Cloud — Marketing Cloud, Advertising Cloud e medidos pela Analytics Cloud, fornecimento para usuários/parceiros etc.). Além disso, as organizações armazenam ativos que podem estar sujeitos a um processo de revisão/aprovação no DAM. Dessa forma, o DAM armazena principalmente ativos que têm altas chances de serem aproveitados e evita o armazenamento de ativos ociosos.
+A maioria das organizações opta por armazenar somente ativos que sejam relevantes para os processos de marketing/LOB de downstream (publicação em canais como o canal da Web por meio do Experience Manager Sites ou outros canais atendidos pela Adobe Experience Cloud — Marketing Cloud, Advertising Cloud e medidos pela Analytics Cloud, fornecimento para usuários/parceiros etc.). Além disso, as organizações armazenam ativos que podem estar sujeitos a um processo de revisão/aprovação no DAM. Dessa forma, o DAM armazena principalmente ativos que têm altas chances de serem usados e evita o armazenamento de ativos ociosos.
 
 O armazenamento de ativos também está sujeito a considerações técnicas e de utilização de recursos. O DAM fornece serviços adicionais sobre ativos armazenados, incluindo extração de metadados, controle de versão, geração de visualizações/transcodificação, gerenciamento de referências e adição de informações de controle de acesso. Esses serviços consomem mais tempo e recursos de infraestrutura.
 
@@ -222,7 +222,7 @@ Você pode ter um requisito para carregar simultaneamente um número maior de ar
 
 Observe que essa descrição se refere ao upload de arquivos operacionalmente (por exemplo, toda semana ou com cada sessão de fotos ), como uma parte normal do fluxo de trabalho do usuário do desktop. As migrações de ativos grandes não são contempladas aqui.
 
-Você pode aproveitar os seguintes recursos de upload:
+Você pode usar os seguintes recursos de upload:
 
 * Para fazer upload de pastas grandes/hierárquicas em massa, use o aplicativo de desktop do Experience Manager que fornece [upload de pasta](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#bulk-upload-assets) funcionalidade. Também é possível fazer upload de estruturas hierárquicas de pastas. O upload dos ativos é feito em segundo plano e, portanto, não está vinculado a uma sessão do navegador da Web
 * Para fazer upload de alguns arquivos de uma única pasta, arraste os arquivos diretamente para a interface da Web ou use a opção Criar na interface da Web do Experience Manager Assets.

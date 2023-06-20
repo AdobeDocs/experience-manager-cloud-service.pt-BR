@@ -2,9 +2,9 @@
 title: Trabalho com fragmentos de conteúdo (Ativos - Fragmentos de conteúdo)
 description: Saiba como os fragmentos de conteúdo no Adobe Experience Manager (AEM) as a Cloud Service permitem projetar, criar, preparar e usar conteúdo independente de página, ideal para criação de páginas e entrega headless.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: d452690b03ed32701030476572c5db9ddb1fbc2c
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2135'
+source-wordcount: '2132'
 ht-degree: 91%
 
 ---
@@ -57,7 +57,6 @@ Esta e as seguintes páginas abordam as tarefas de criação, configuração, ma
 >* [Fragmentos de conteúdo configuram componentes para renderização](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
 >* [Compatibilidade com os Fragmentos de conteúdo na API HTTP do AEM Assets](/help/assets/content-fragments/assets-api-content-fragments.md)
 >* [API GraphQL do AEM para uso com Fragmentos de conteúdo](/help/headless/graphql-api/content-fragments.md)
-
 
 O número de canais de comunicação aumenta anualmente. Normalmente, os canais se referem ao mecanismo de entrega, como:
 
@@ -157,9 +156,9 @@ Os ativos podem ser usados com um fragmento de conteúdo de várias maneiras; ca
    * Definem a posição do ativo.
    * Consulte [Inserir ativos no fragmento](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment) no Editor de fragmentos para obter mais informações.
 
-   >[!NOTE]
-   >
-   >Os ativos visuais inseridos no fragmento de conteúdo propriamente dito são anexados ao parágrafo anterior no fragmento. Quando o fragmento é adicionado a uma página, esses ativos são movidos em relação a esse parágrafo quando o conteúdo intermediário é adicionado.
+  >[!NOTE]
+  >
+  >Os ativos visuais inseridos no fragmento de conteúdo propriamente dito são anexados ao parágrafo anterior no fragmento. Quando o fragmento é adicionado a uma página, esses ativos são movidos em relação a esse parágrafo quando o conteúdo intermediário é adicionado.
 
 * **Conteúdo associado**
 
@@ -202,13 +201,13 @@ Os ativos do fragmento de conteúdo são compostos das seguintes partes (direta 
    * Só podem ser adicionados a elementos de texto multilinha (qualquer tipo de fragmento).
    * São anexados ao texto anterior (parágrafo).
 
-      >[!CAUTION]
-      >
-      >Os ativos podem ser (inadvertidamente) removidos de um fragmento ao alternar para o formato de Texto sem formatação.
+     >[!CAUTION]
+     >
+     >Os ativos podem ser (inadvertidamente) removidos de um fragmento ao alternar para o formato de Texto sem formatação.
 
-      >[!NOTE]
-      >
-      >Os ativos também podem ser adicionados como [conteúdo adicional (intermediário)](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) ao usar um fragmento em uma página; usando o conteúdo associado ou ativos do navegador de ativos.
+     >[!NOTE]
+     >
+     >Os ativos também podem ser adicionados como [conteúdo adicional (intermediário)](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) ao usar um fragmento em uma página; usando o conteúdo associado ou ativos do navegador de ativos.
 
 * **Conteúdo associado**
 
@@ -231,9 +230,9 @@ Os ativos do fragmento de conteúdo são compostos das seguintes partes (direta 
          * Ao visualizar/editar as **Propriedades** do fragmento no console
          * Ao editar os **Metadados** no editor de fragmento
 
-   >[!CAUTION]
-   >
-   >Os perfis de processamento de metadados não se aplicam aos fragmentos de conteúdo.
+  >[!CAUTION]
+  >
+  >Os perfis de processamento de metadados não se aplicam aos fragmentos de conteúdo.
 
 * **Principal**
 
@@ -241,9 +240,9 @@ Os ativos do fragmento de conteúdo são compostos das seguintes partes (direta 
 
       * Cada fragmento de conteúdo tem uma instância Principal.
       * O Principal não pode ser excluído.
+
    * O Principal pode ser acessado no editor de fragmentos, em **[Variações](/help/assets/content-fragments/content-fragments-variations.md)**.
    * O Principal não é uma variação em si, mas a base de todas as variações.
-
 
 * **Variações**
 
@@ -296,7 +295,7 @@ Para usar os Fragmentos de conteúdo para a criação de páginas, também é ne
 
 ## Exemplo de uso {#example-usage}
 
-Um fragmento, com seus elementos e variações, pode ser usado para criar conteúdo coerente para vários canais. Ao projetar o fragmento, é necessário considerar o que e onde será usado.
+Um fragmento, com seus elementos e variações, pode ser usado para criar conteúdo coerente para vários canais. Ao projetar o fragmento, considere o que é usado e onde.
 
 ### Amostra do WKND {#wknd-sample}
 
@@ -305,7 +304,7 @@ As amostras do [Site WKND](/help/implementing/developing/introduction/develop-wk
 O projeto WKND inclui:
 
 * Modelos de fragmentos de conteúdo disponíveis em:
-   `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
+  `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
 
 * Fragmentos de conteúdo (e outro conteúdo) disponíveis em:
-   `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
+  `http://<hostname>:<port>/assets.html/content/dam/wknd/en`

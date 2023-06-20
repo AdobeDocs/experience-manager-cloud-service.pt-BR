@@ -2,10 +2,10 @@
 title: Configurar o ambiente da sua conta
 description: O AEM fornece a capacidade de configurar a sua conta e determinados aspectos do ambiente de criação
 exl-id: 1b948f0b-85b9-478a-8b7e-61495c1d57b6
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 74%
+source-wordcount: '488'
+ht-degree: 75%
 
 ---
 
@@ -40,36 +40,36 @@ Cada usuário pode definir certas propriedades para si mesmo.
 
 * **Idioma**
 
-   Isso define o idioma a ser usado para a interface do usuário do ambiente de criação. Selecione o idioma desejado na lista disponível.
+  Isso define o idioma a ser usado para a interface do usuário do ambiente de criação. Selecione o idioma desejado na lista disponível.
 
 * **Gerenciamento de janelas**
 
-   Isso define o comportamento ou a abertura de janelas. Selecione um dos seguintes:
+  Isso define o comportamento ou a abertura de janelas. Selecione um dos seguintes:
 
    * **Várias janelas** (Padrão)
 
-      * As páginas serão abertas em uma nova janela.
+      * As páginas são abertas em uma nova janela.
+
    * **Uma janela**
 
-      * As páginas serão abertas na janela atual.
-
+      * As páginas são abertas na janela atual.
 
 * **Mostrar ações do desktop para Ativos**
 
-   Essa opção requer o aplicativo de desktop do AEM para uso.
+  Essa opção requer o aplicativo de desktop do AEM para uso.
 
 * **Cor da anotação**
 
-   Isso define a cor padrão usada ao fazer anotações.
+  Isso define a cor padrão usada ao fazer anotações.
 
    * Clique no bloco de cores para abrir o seletor de amostras e selecionar uma cor.
    * Como alternativa, insira o código hexadecimal da cor desejada no campo.
 
 * **Apresentação de data relativa**
 
-   Para melhorar a legibilidade, o AEM renderizará datas nos últimos sete dias como datas relativas (por exemplo, três dias atrás) e datas mais antigas como datas exatas (por exemplo, 20 de março de 2017).
+  Para melhorar a legibilidade, o AEM renderizará datas nos últimos sete dias como datas relativas (por exemplo, três dias atrás) e datas mais antigas como datas exatas (por exemplo, 20 de março de 2017).
 
-   Essa opção define como as datas no sistema são exibidas. As opções disponíveis são as seguintes:
+  Essa opção define como as datas no sistema são exibidas. As opções disponíveis são as seguintes:
 
    * **Sempre mostrar data exata**: a data exata é sempre exibida (nunca uma data relativa).
    * **1 dia**: a data relativa é mostrada para datas dentro de um dia; caso contrário, uma data exata é mostrada.
@@ -80,17 +80,17 @@ Cada usuário pode definir certas propriedades para si mesmo.
 
 * **Habilitar atalhos**
 
-   O AEM oferece suporte a vários atalhos de teclado que tornam a criação mais eficiente.
+  O AEM oferece suporte a vários atalhos de teclado que tornam a criação mais eficiente.
 
    * [Atalhos de teclado para editar páginas](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
    * [Atalhos de teclado para os consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
-   Essa opção ativa os atalhos de teclado. Por padrão, eles estão ativados, mas podem ser desativados se um usuário tiver determinados requisitos de acessibilidade.
+  Essa opção ativa os atalhos de teclado. Por padrão, eles estão ativados, mas podem ser desativados se um usuário tiver determinados requisitos de acessibilidade.
 
 * **Ativar a Página inicial dos ativos**
 
-   Essa opção só estará disponível se o administrador do sistema tiver ativado a experiência da Página inicial do Ativos para toda a organização.
+  Essa opção só estará disponível se o administrador do sistema tiver ativado a experiência da Página inicial do Ativos para toda a organização.
 
 * **Configuração do Stock**
 
-   Essa opção permite especificar a configuração preferencial do Adobe Stock e só estará disponível se o administrador do sistema tiver ativado [Integração do Adobe Stock](/help/assets/aem-assets-adobe-stock.md).
+  Essa opção permite especificar a configuração preferencial do Adobe Stock e só estará disponível se o administrador do sistema tiver ativado [Integração do Adobe Stock](/help/assets/aem-assets-adobe-stock.md).

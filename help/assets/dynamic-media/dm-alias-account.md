@@ -8,7 +8,7 @@ feature: Image Profiles
 role: User,Admin
 mini-toc-levels: 4
 exl-id: 886063d4-71dd-48c8-a342-884ad2c111ca
-source-git-commit: 8bf73e87b1dbd9cd536248010a44404bc1b3d5f6
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '675'
 ht-degree: 0%
@@ -22,7 +22,7 @@ hidefromtoc: yes -->
 
 <!-- >[!NOTE]
 >
->This feature to create a Dynamic Media company alias account is in the Prerelease Channel for January 2022. See [Prerelease Channel documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) for information on how to enable the feature for your environment. The feature will be generally available in the February 2022 release. -->
+>This feature to create a Dynamic Media company alias account is in the Prerelease Channel for January 2022. See [Prerelease Channel documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) for information on how to enable the feature for your environment. The feature is generally available in the February 2022 release. -->
 
 Os URLs do Dynamic Media e o código de inserção do visualizador contêm o nome da conta da empresa. Esse nome de conta foi criado no momento do provisionamento do Dynamic Media. Pode haver cenários em que sua empresa tenha passado por uma aquisição ou reformulação da marca, ou em que você deseje simplesmente usar um nome mais fácil de memorizar. Nesses cenários, não é fácil atualizar manualmente o nome da conta da empresa em todos os URLs e o código de inserção do visualizador que aparece imediatamente. Além disso, há a possibilidade de que você afete seu repositório existente do Dynamic Media ou o conteúdo ativo. Para resolver esse problema, você pode configurar uma conta alias de empresa da Dynamic Media.
 
@@ -57,4 +57,4 @@ Você começa a configurar uma conta alias da empresa do Dynamic Media enviando 
 
 1. No **[!UICONTROL Editar configuração do Dynamic Media]** página, no campo **[!UICONTROL Alias da empresa]** campo de texto, digite o nome da conta alias Dynamic Media que você especificou anteriormente no caso de suporte.
 1. No canto superior direito da página, selecione **[!UICONTROL Salvar]**.
-A conta alias da empresa do Dynamic Media agora é salva e ativada; todos os URLs e códigos incorporados do visualizador para ativos existentes e novos agora refletem o novo nome alias da empresa.
+A conta alias da empresa Dynamic Media agora é salva e ativada; todos os URLs e códigos incorporados do visualizador para ativos existentes e novos agora refletem o novo nome alias da empresa.

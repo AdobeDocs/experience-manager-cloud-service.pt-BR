@@ -3,9 +3,9 @@ title: Configuração do OSGi para o Adobe Experience Manager as a Cloud Service
 description: Configuração OSGi com valores secretos e valores específicos do ambiente
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 9ec45753f56d0576e75f148ca0165c0ccd621f23
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3323'
+source-wordcount: '3318'
 ht-degree: 1%
 
 ---
@@ -60,7 +60,7 @@ Por exemplo, se o AEM estiver usando o autor de modos de execução e o desenvol
 
 Se várias configurações para o mesmo PID forem aplicáveis, a configuração com o maior número de modos de execução correspondentes será aplicada.
 
-A granularidade dessa regra está em um nível PID. Isso significa que não é possível definir algumas propriedades para o mesmo PID no `/apps/example/config.author/` e mais específicas em `/apps/example/config.author.dev/` para o mesmo PID. A configuração com o maior número de modos de execução correspondentes terá efeito para todo o PID.
+A granularidade dessa regra está em um nível PID. Isso significa que não é possível definir algumas propriedades para o mesmo PID no `/apps/example/config.author/` e mais específicas em `/apps/example/config.author.dev/` para o mesmo PID. A configuração com o maior número de modos de execução correspondentes é eficaz para todo o PID.
 
 >[!NOTE]
 >
@@ -187,7 +187,7 @@ O console da Web AEM do AEM SDK Quickstart Jar pode ser usado para configurar co
 
 >[!NOTE]
 >
->A interface do usuário de configuração do console da Web AEM grava `.cfg.json` arquivos no repositório. Portanto, esteja ciente disso para evitar um comportamento potencial inesperado durante o desenvolvimento local, quando as configurações OSGi definidas pelo projeto AEM puderem diferir das configurações geradas.
+>A interface do usuário de configuração do console da Web AEM grava `.cfg.json` arquivos no repositório. Portanto, esteja ciente desse fluxo de trabalho para evitar um comportamento potencial inesperado durante o desenvolvimento local, quando as configurações OSGi definidas pelo projeto AEM puderem diferir das configurações geradas.
 
 1. Faça logon no console da Web AEM do AEM do SDK do em `https://<host>:<port>/system/console` como usuário administrador
 1. Navegue até **OSGi** > **Configuração**
@@ -260,7 +260,7 @@ Os valores das variáveis não devem exceder 2048 caracteres.
 >
 >Há regras relacionadas ao uso de determinados prefixos para nomes de variáveis:
 >
->1. Nomes de variáveis com prefixo `INTERNAL_`, `ADOBE_`ou `CONST_` são reservados pelo Adobe. Quaisquer variáveis definidas pelo cliente que comecem com esses prefixos serão ignoradas.
+>1. Nomes de variáveis com prefixo `INTERNAL_`, `ADOBE_`ou `CONST_` são reservados pelo Adobe. Quaisquer variáveis definidas pelo cliente que comecem com esses prefixos são ignoradas.
 >
 >1. Os clientes não devem fazer referência a variáveis com o prefixo `INTERNAL_` ou `ADOBE_` também.
 >
@@ -480,7 +480,7 @@ Consulte [esta página](https://developer.adobe.com/experience-cloud/cloud-manag
 
 ### Configuração de valores por meio da API {#setting-values-via-api}
 
-Chamar a API implanta as novas variáveis e valores em um ambiente na nuvem, de modo semelhante a um pipeline típico de implantação de código do cliente. Os serviços de criação e publicação serão reiniciados e farão referência aos novos valores, normalmente levando alguns minutos.
+Chamar a API implanta as novas variáveis e valores em um ambiente na nuvem, de modo semelhante a um pipeline típico de implantação de código do cliente. Os serviços de criação e publicação são reiniciados e fazem referência aos novos valores, normalmente levando alguns minutos.
 
 ```
 PATCH /program/{programId}/environment/{environmentId}/variables
@@ -558,7 +558,7 @@ $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_
 
 Como os valores de configuração secretos e específicos do ambiente residem fora do Git e, portanto, não fazem parte dos mecanismos formais de implantação do Adobe Experience Manager as a Cloud Service, o cliente deve gerenciar, administrar e integrar ao processo de implantação do Adobe Experience Manager as a Cloud Service.
 
-Como mencionado acima, chamar a API implanta as novas variáveis e valores em ambientes de nuvem, de modo semelhante a um pipeline típico de implantação de código do cliente. Os serviços de criação e publicação serão reiniciados e farão referência aos novos valores, normalmente levando alguns minutos. Observe que os quality gates (portais de qualidade) e os testes que são executados pelo Cloud Manager durante uma implantação de código regular não são executados durante esse processo.
+Como mencionado acima, chamar a API implanta as novas variáveis e valores em ambientes de nuvem, de modo semelhante a um pipeline típico de implantação de código do cliente. Os serviços de criação e publicação são reiniciados e fazem referência aos novos valores, normalmente levando alguns minutos. Observe que os quality gates (portais de qualidade) e os testes que são executados pelo Cloud Manager durante uma implantação de código regular não são executados durante esse processo.
 
 Normalmente, os clientes chamariam a API para definir variáveis de ambiente antes de implantar o código que depende delas no Cloud Manager. Em algumas situações, pode ser necessário modificar uma variável existente depois que o código já tiver sido implantado.
 

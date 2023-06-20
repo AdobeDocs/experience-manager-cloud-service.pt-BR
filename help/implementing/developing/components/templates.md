@@ -1,10 +1,10 @@
 ---
 title: Modelos de páginas
-description: Os modelos de página são usados ao criar uma página que será usada como base para a nova página
+description: Os modelos de página são usados ao criar uma página que é usada como base para a nova página
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: f5aa9229ff06fdcff5474594269ebcf9daf09e41
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3300'
+source-wordcount: '3293'
 ht-degree: 6%
 
 ---
@@ -67,6 +67,7 @@ Ao criar um novo modelo editável, você:
    * As políticas de conteúdo definem as propriedades de design de um componente.
 
       * Por exemplo, os componentes disponíveis ou as dimensões mínima/máxima.
+
    * Elas são aplicáveis ao modelo (e às páginas criadas com o modelo).
 
    Para obter detalhes sobre como um autor de modelo define políticas, consulte [Criação de modelos de página](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author).
@@ -424,7 +425,7 @@ Este nó retém propriedades para o modelo:
 
 * **Nome**: `jcr:title`
 * **Nome**: `status`
-   * ``**Tipo**: `String`
+   * &quot;**Tipo**: `String`
    * **Valor**: `draft`, `enabled` ou `disabled`
 
 ### Estrutura {#structure}
@@ -432,11 +433,11 @@ Este nó retém propriedades para o modelo:
 Define a estrutura da página resultante:
 
 * É mesclado com o conteúdo inicial ( `/initial`) ao criar uma nova página.
-* As alterações feitas na estrutura serão refletidas em qualquer página criada com o modelo.
-* A variável `root` ( `structure/jcr:content/root`) define a lista de componentes que estarão disponíveis na página resultante.
+* As alterações feitas na estrutura são refletidas em qualquer página criada com o modelo.
+* A variável `root` ( `structure/jcr:content/root`) define a lista de componentes que estão disponíveis na página resultante.
    * Os componentes definidos na estrutura do modelo não podem ser movidos para ou excluído de qualquer página resultante.
    * Depois que um componente é desbloqueado, a variável `editable` propriedade está definida como `true`.
-   * Depois que um componente que já contém conteúdo for desbloqueado, esse conteúdo será movido para o `initial` filial.
+   * Depois que um componente que já contém conteúdo é desbloqueado, esse conteúdo é movido para a tag `initial` filial.
 
 * A variável `cq:responsive` o nó contém definições para o layout responsivo.
 
@@ -447,7 +448,7 @@ Define o conteúdo inicial que uma nova página terá após a criação:
 * Contém um `jcr:content` que é copiado para qualquer página nova.
 * É mesclado com a estrutura ( `/structure`) ao criar uma nova página.
 * Nenhuma página existente será atualizada se o conteúdo inicial for alterado após a criação.
-* A variável `root` O nó contém uma lista de componentes para definir o que estará disponível na página resultante.
+* A variável `root` O nó contém uma lista de componentes para definir o que está disponível na página resultante.
 * Se o conteúdo for adicionado a um componente no modo de estrutura e esse componente for subsequentemente desbloqueado (ou vice-versa), esse conteúdo será usado como conteúdo inicial.
 
 ### Layout {#layout}
@@ -461,13 +462,13 @@ Quando [editando um modelo, é possível definir o layout](/help/sites-cloud/aut
 As políticas de conteúdo definem as propriedades de design de um componente. Por exemplo, os componentes disponíveis ou as dimensões mínima/máxima. Elas são aplicáveis ao modelo (e às páginas criadas com o modelo). As políticas de conteúdo podem ser criadas e selecionadas no editor de modelo.
 
 * A propriedade `cq:policy`, no `root` nó
-   `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
+  `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
 Fornece uma referência relativa à política de conteúdo para o sistema de parágrafos da página.
 
 * A propriedade `cq:policy`, nos nós componente-explícito em `root`, fornecem links para as políticas de componentes individuais.
 
 * As definições de políticas reais são armazenadas em:
-   `/conf/<your-folder>/settings/wcm/policies/wcm/foundation/components`
+  `/conf/<your-folder>/settings/wcm/policies/wcm/foundation/components`
 
 >[!NOTE]
 >
@@ -488,7 +489,7 @@ As políticas de página permitem definir a variável [política de conteúdo](#
    * Definir a propriedade de status na variável `jcr:content` nó.
 
       * Por exemplo, em:
-         `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
+        `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
       * Defina a propriedade:
 
@@ -500,9 +501,9 @@ As políticas de página permitem definir a variável [política de conteúdo](#
 
    * [Defina os caminhos do Modelo permitidos na **Propriedades da página**](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) da página apropriada ou da página raiz de uma sub-ramificação.
    * Defina a propriedade:
-      `cq:allowedTemplates`
-No 
-`jcr:content` nó da ramificação necessária.
+     `cq:allowedTemplates`
+No `jcr:content` nó da ramificação necessária.
+
    Por exemplo, com um valor de:
 
    `/conf/<your-folder>/settings/wcm/templates/.*`
@@ -532,13 +533,13 @@ Ao processar uma página:
 
 * **Modelos**:
 
-   * A variável `cq:template` propriedade de seu `jcr:content` será referenciado para acessar o modelo que corresponde a essa página.
+   * A variável `cq:template` propriedade de seu `jcr:content` é referenciado para acessar o modelo que corresponde a essa página.
 
 * **Componentes**:
 
    * O componente da página mesclará as `structure/jcr:content` árvore do modelo com o `jcr:content` árvore da página.
       * O componente de Página permitirá que o autor edite apenas os nós da estrutura do modelo que foram sinalizados como editáveis (bem como quaisquer secundários).
-      * Ao renderizar um componente em uma página, o caminho relativo desse componente será retirado do `jcr:content` nó; o mesmo caminho sob o `policies/jcr:content` do modelo será pesquisado.
+      * Ao renderizar um componente em uma página, o caminho relativo desse componente é retirado do `jcr:content` nó; o mesmo caminho sob o `policies/jcr:content` do modelo será pesquisado.
          * A variável `cq:policy` propriedade deste nó aponta para a política de conteúdo real (ou seja, ele retém a configuração de design desse componente).
             * Isso permite ter vários modelos que reutilizam as mesmas configurações de política de conteúdo.
 

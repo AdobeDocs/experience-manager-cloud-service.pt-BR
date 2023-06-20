@@ -3,10 +3,10 @@ title: Administração de instâncias do fluxo de trabalho
 description: Saiba como administrar instâncias de fluxo de trabalho
 feature: Administering
 role: Admin
-source-git-commit: 5801063c9c4c1c6b9f9e7f55ad4d66bb563e0eef
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1281'
-ht-degree: 77%
+source-wordcount: '1279'
+ht-degree: 75%
 
 ---
 
@@ -33,7 +33,6 @@ Há vários consoles disponíveis para administrar seus fluxos de trabalho. Use 
    ![status-não íntegro](/help/sites-cloud/administering/assets/status-unhealthy.png)
 1. Para **Detalhes do status** de instâncias de fluxo de trabalho, clique em **Detalhes**, para mostrar a **número de instâncias de fluxos de trabalho em execução**, **instâncias de fluxo de trabalho concluídas**, **instâncias de fluxo de trabalho anuladas**, **instâncias de fluxo de trabalho com falha** e assim por diante. por exemplo, abaixo estão as imagens fornecidas que mostram **Detalhes do status** com **Status: Íntegro** e **Status: não íntegro**.
    ![status-details-healthy](/help/sites-cloud/administering/assets/status-details-healthy.png)
-
    ![status-detalhes-não íntegro](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
 
    >[!NOTE]
@@ -93,7 +92,6 @@ Há vários consoles disponíveis para administrar seus fluxos de trabalho. Use 
    >* o uso da ação **Encerrar**
    >* quando uma página que está sujeita a um fluxo de trabalho é excluída (à força), o fluxo de trabalho é encerrado.
 
-
 1. Selecione um item específico e **Abra o histórico** para ver mais detalhes:
 
    ![wf-99](/help/sites-cloud/administering/assets/wf-99.png)
@@ -103,8 +101,7 @@ Há vários consoles disponíveis para administrar seus fluxos de trabalho. Use 
 Quando um fluxo de trabalho falha, o AEM fornece o console **Falhas**, que permite investigar e tomar as medidas apropriadas após tratar a causa original:
 
 * **Detalhes da falha**
-Abre uma janela para mostrar a  
-**Mensagem de falha**, **Etapa e **Pilha de falhas**.
+Abre uma janela para mostrar a  **Mensagem de falha**, **Etapa e **Pilha de falhas**.
 
 * **Abrir histórico**
 Mostra detalhes do histórico do fluxo de trabalho.
@@ -192,7 +189,7 @@ Os dados processados por fluxos de trabalho são armazenados no armazenamento fo
 
 No nível do modelo de fluxo de trabalho, um sinalizador é fornecido para indicar que o modelo e suas instâncias de tempo de execução têm acesso ao armazenamento externo de metadados. As variáveis de fluxo de trabalho não serão mantidas no JCR para as instâncias de fluxo de trabalho cujos modelos foram marcados para armazenamento externo.
 
-A propriedade *userMetadataPersistenceEnabled* será armazenada no *nó jcr:content* do modelo de fluxo de trabalho. Esse sinalizador será mantido nos metadados do fluxo de trabalho como *cq:userMetaDataCustomPersistenceEnabled*.
+A propriedade *userMetadataPersistenceEnabled* é armazenado no *jcr:nó de conteúdo* do modelo de workflow. Esse sinalizador é mantido nos metadados do fluxo de trabalho como *cq:userMetaDataCustomPersistenceEnabled*.
 
 A ilustração abaixo mostra como definir o sinalizador em um fluxo de trabalho.
 

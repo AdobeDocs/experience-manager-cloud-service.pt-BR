@@ -2,10 +2,10 @@
 title: Preparação para a integração
 description: Antes de começar o processo de integração, há várias etapas preparatórias que o administrador do sistema deve entender para fazer logon no sistema.
 exl-id: 86139b1a-c22a-4716-a0f9-cf142cbc6c53
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '768'
-ht-degree: 100%
+source-wordcount: '766'
+ht-degree: 95%
 
 ---
 
@@ -24,7 +24,7 @@ Depois de ler este documento, você compreenderá:
 * Como esse contrato afeta o processo de integração.
 * Como se preparar para sua chamada de integração.
 
-Não se preocupe se você não estiver familiarizado com todos os termos usados nesta página. Eles serão explicados na próxima parte da jornada.
+Não se preocupe se você não estiver familiarizado com todos os termos usados nesta página. Os termos são explicados na próxima parte da jornada.
 
 ## Vídeo {#video}
 
@@ -48,7 +48,7 @@ Uma vez assinado o contrato, a Adobe provisiona seus ambientes, envia um email d
 
 ## Provisionamento do sistema {#provisioning}
 
-Uma vez assinado o contrato, todos os ambientes de nuvem do AEM abrangidos pelo contrato serão provisionados automaticamente pela Adobe. Esses ambientes também serão vinculados aos seus programas no Cloud Manager (mais informações sobre esse tópico são fornecidas posteriormente na jornada). Esses ambientes de nuvem do AEM estão incluídos em cada assinatura do AEM as a Cloud Service e geralmente são compostos de pelo menos um ambiente de produção, um ambiente de preparo e, opcionalmente, um ou mais ambientes de desenvolvimento ou teste.
+Após a assinatura do contrato, todos os ambientes de nuvem de AEM abrangidos pelo contrato são automaticamente provisionados pela Adobe. Esses ambientes também serão vinculados aos seus programas no Cloud Manager (mais informações sobre esse tópico são fornecidas posteriormente na jornada). Esses ambientes de nuvem do AEM estão incluídos em cada assinatura do AEM as a Cloud Service e geralmente são compostos de pelo menos um ambiente de produção, um ambiente de preparo e, opcionalmente, um ou mais ambientes de desenvolvimento ou teste.
 
 ## Chamada de integração {#onboarding-call}
 
@@ -60,7 +60,7 @@ Os participantes da organização devem incluir:
 * Profissionais de tecnologia
 * Parceiro de implementação
 
-A Adobe será representada por:
+Adobe é representado por:
 
 * Especialista em integração
 * Gerente de conta técnica (conforme aplicável)

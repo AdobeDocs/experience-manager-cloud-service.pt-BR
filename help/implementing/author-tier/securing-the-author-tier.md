@@ -2,10 +2,10 @@
 title: Proteção da camada do autor
 description: Proteção da camada do autor
 exl-id: f5be90a4-266a-4d23-8e8b-94156f0264d5
-source-git-commit: b2b319cf06bbad07add092059d3f093ce7336d4e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '124'
-ht-degree: 66%
+source-wordcount: '119'
+ht-degree: 53%
 
 ---
 

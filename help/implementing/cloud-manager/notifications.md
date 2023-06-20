@@ -2,10 +2,10 @@
 title: Notificações
 description: Saiba como receber informações sobre implantações de pipeline usando o sistema de notificação da Adobe Experience Cloud.
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
-source-git-commit: 6f390df560e9eeb76a8c4f1904e500aa5ed2bd65
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '559'
-ht-degree: 100%
+source-wordcount: '558'
+ht-degree: 96%
 
 ---
 
@@ -60,7 +60,7 @@ Por padrão, você receberá todas as notificações para todos os produtos. Cli
 
 ### Prioridade {#priority}
 
-Os alertas de prioridade serão marcados com uma tag **ALTA** e podem ser configurados para serem recebidos exclusivamente como alertas. Na seção **Prioridade**, você pode definir quais categorias se qualificam como notificações de prioridade.
+Os alertas de prioridade são marcados com um **ALTA** tag e podem ser configuradas para serem recebidas exclusivamente como alertas. Na seção **Prioridade**, você pode definir quais categorias se qualificam como notificações de prioridade.
 
 ![Prioridade de notificação](assets/notifications-priority.png)
 

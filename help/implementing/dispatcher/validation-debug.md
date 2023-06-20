@@ -3,9 +3,9 @@ title: Validação e depuração usando ferramentas do Dispatcher
 description: Validação e depuração usando ferramentas do Dispatcher
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: a56b0ed1efff7b8d04e65921ee9dd25ae7030dbd
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2865'
+source-wordcount: '2859'
 ht-degree: 1%
 
 ---
@@ -80,7 +80,7 @@ Os seguintes arquivos são personalizáveis e serão transferidos para a sua ins
 
 * `conf.d/available_vhosts/<CUSTOMER_CHOICE>.vhost`
 
-Você pode ter um ou mais desses arquivos. Eles contêm `<VirtualHost>` entradas que correspondem a nomes de host e permitem que o Apache manipule cada tráfego de domínio com regras diferentes. Os arquivos são criados no `available_vhosts` e habilitado com um link simbólico na variável `enabled_vhosts` diretório. No `.vhost` arquivos, outros arquivos como regravações e variáveis serão incluídos.
+Você pode ter um ou mais desses arquivos. Eles contêm `<VirtualHost>` entradas que correspondem a nomes de host e permitem que o Apache manipule cada tráfego de domínio com regras diferentes. Os arquivos são criados no `available_vhosts` e habilitado com um link simbólico na variável `enabled_vhosts` diretório. No `.vhost` arquivos, outros arquivos como regravações e variáveis são incluídos.
 
 >[!NOTE]
 >
@@ -92,17 +92,17 @@ Se você deseja fazer a correspondência exata do host porque você tem vários 
 
 ```
 <VirtualHost *:80>
-	ServerName	"example.com"
-	# Put names of which domains are used for your published site/content here
-	ServerAlias	 "*example.com" "\*.local" "localhost" "127.0.0.1" "*.adobeaemcloud.net" "*.adobeaemcloud.com"
-	# Use a document root that matches the one in conf.dispatcher.d/default.farm
-	DocumentRoot "${DOCROOT}"
-	# URI dereferencing algorithm is applied at Sling's level, do not decode parameters here
-	AllowEncodedSlashes NoDecode
-	# Add header breadcrumbs for help in troubleshooting which vhost file is chosen
-	<IfModule mod_headers.c>
-		Header add X-Vhost "publish-example-com"
-	</IfModule>
+    ServerName    "example.com"
+    # Put names of which domains are used for your published site/content here
+    ServerAlias     "*example.com" "\*.local" "localhost" "127.0.0.1" "*.adobeaemcloud.net" "*.adobeaemcloud.com"
+    # Use a document root that matches the one in conf.dispatcher.d/default.farm
+    DocumentRoot "${DOCROOT}"
+    # URI dereferencing algorithm is applied at Sling's level, do not decode parameters here
+    AllowEncodedSlashes NoDecode
+    # Add header breadcrumbs for help in troubleshooting which vhost file is chosen
+    <IfModule mod_headers.c>
+        Header add X-Vhost "publish-example-com"
+    </IfModule>
   ...
 </VirtualHost>
 ```
@@ -121,7 +121,7 @@ Esse arquivo está incluído de dentro do `dispatcher_vhost.conf` arquivo. Você
 
 * `conf.dispatcher.d/available_farms/<CUSTOMER_CHOICE>.farm`
 
-Você pode ter um ou mais desses arquivos, que contêm farms para corresponder a nomes de host e permitem que o módulo Dispatcher manipule cada farm com regras diferentes. Os arquivos são criados no `available_farms` e habilitado com um link simbólico na variável `enabled_farms` diretório. No `.farm` arquivos, outros arquivos como filtros, regras de cache e outros serão incluídos.
+Você pode ter um ou mais desses arquivos, que contêm farms para corresponder a nomes de host e permitem que o módulo Dispatcher manipule cada farm com regras diferentes. Os arquivos são criados no `available_farms` e habilitado com um link simbólico na variável `enabled_farms` diretório. No `.farm` arquivos, outros arquivos como filtros, regras de cache e outros são incluídos.
 
 * `conf.dispatcher.d/cache/rules.any`
 
@@ -262,7 +262,7 @@ Durante uma implantação do Cloud Manager, a variável `httpd -t` a verificaç�
 
 Incluir na lista de permissões Se uma diretiva não for alterada, a ferramenta registrará um erro e retornará um código de saída diferente de zero. Além disso, ele verifica ainda mais todos os arquivos com padrão `conf.dispatcher.d/enabled_farms/*.farm` e verifica se:
 
-* Não existe nenhuma regra de filtro que use permissões via `/glob` (consulte [CVE-2016-0957](https://nvd.nist.gov/vuln/detail/CVE-2016-0957) para obter mais detalhes.
+* Não existe nenhuma regra de filtro que use permissões via `/glob` (consulte [CVE-2016-0957](https://nvd.nist.gov/vuln/detail/CVE-2016-0957)) para obter mais detalhes.
 * Nenhum recurso de administrador está exposto. Por exemplo, o acesso a caminhos como `/crx/de or /system/console`.
 
 Incluir na lista de permissões Observe que a ferramenta de validação relata apenas o uso proibido de diretivas Apache que não foram migradas. Ele não relata problemas sintáticos ou semânticos com a configuração do Apache, pois essas informações só estão disponíveis para módulos Apache em um ambiente de execução.
@@ -401,7 +401,7 @@ Essa fase verifica a sintaxe do Apache, iniciando o Apache HTTPD em um contêine
 
 Essa fase também pode ser executada independentemente por meio de `bin/docker_run.sh src/dispatcher host.docker.internal:4503 8080`.
 
-Durante uma implantação do Cloud Manager, a variável `httpd -t` a verificação de sintaxe também será executada e todos os erros serão incluídos no log de falha da etapa Imagens de compilação do Cloud Manager.
+Durante uma implantação do Cloud Manager, a variável `httpd -t` a verificação de sintaxe também é executada e todos os erros são incluídos no log de falha da etapa Imagens de compilação do Cloud Manager.
 
 ### Fase 3 {#third-phase}
 
@@ -531,7 +531,7 @@ Na configuração do Dispatcher, a mesma variável de ambiente está disponível
 }
 ```
 
-Como alternativa, você pode usar as variáveis de ambiente do Cloud Manager na configuração httpd/dispatcher, embora não em segredos do ambiente. Esse método é especialmente importante se um programa tiver vários ambientes de desenvolvimento e alguns desses ambientes tiverem valores diferentes para a configuração httpd/dispatcher. A mesma sintaxe ${VIRTUALHOST} seria usada como no exemplo acima, no entanto, as declarações Define no arquivo de variáveis acima não seriam usadas. Leia o [Documentação do Cloud Manager](/help/implementing/cloud-manager/environment-variables.md) para obter instruções sobre como configurar as variáveis de ambiente do Cloud Manager.
+Como alternativa, você pode usar as variáveis de ambiente do Cloud Manager na configuração httpd/dispatcher, embora não em segredos do ambiente. Esse método é especialmente importante se um programa tiver vários ambientes de desenvolvimento e alguns desses ambientes tiverem valores diferentes para a configuração httpd/dispatcher. O mesmo ${VIRTUALHOST} A sintaxe seria usada como no exemplo acima, no entanto, as declarações Define no arquivo de variáveis acima não seriam usadas. Leia o [Documentação do Cloud Manager](/help/implementing/cloud-manager/environment-variables.md) para obter instruções sobre como configurar as variáveis de ambiente do Cloud Manager.
 
 Ao testar sua configuração localmente, você pode simular diferentes tipos de ambiente transmitindo a variável `DISP_RUN_MODE` para o `docker_run.sh` script diretamente:
 
@@ -574,7 +574,6 @@ Com a versão 2021.7.0 do Cloud Manager, novos programas do Cloud Manager geram 
    * Submeter o arquivo `opt-in/USE_SOURCES_DIRECTLY` para uma ramificação Git implantada pelo pipeline de não produção em um ambiente de desenvolvimento na nuvem.
    * Use o Cloud Manager para implantar em um ambiente de desenvolvimento da nuvem.
    * Teste completamente. É essencial validar se a configuração do Apache e Dispatcher se comporta conforme o esperado antes de implantar alterações em ambientes superiores. Verifique todo o comportamento relacionado à sua configuração personalizada. Registre um tíquete de suporte ao cliente se você achar que a configuração implantada do dispatcher não reflete a sua configuração personalizada.
-
    >[!NOTE]
    >
    >No modo flexível, você deve usar caminhos relativos em vez de caminhos absolutos.

@@ -2,9 +2,9 @@
 title: Desenvolvimento de Sites com o pipeline front-end
 description: Com o pipeline de front-end, é dada mais independência aos desenvolvedores de front-end e o processo de desenvolvimento pode ganhar velocidade substancial. Este documento descreve algumas considerações específicas do processo de build de front-end que devem ser fornecidas.
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
-source-git-commit: a6b228023d7bd2a40e4db3a1d2c3900a5c24031c
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1157'
+source-wordcount: '1154'
 ht-degree: 1%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # Desenvolvimento de Sites com o pipeline front-end {#developing-site-with-front-end-pipeline}
 
-[Com o pipeline de front-end,](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) mais independência é dada aos desenvolvedores de front-end e o processo de desenvolvimento pode ganhar velocidade substancial. Este documento descreve como esse processo funciona, além de algumas considerações que devem ser levadas em conta para aproveitar ao máximo o potencial desse processo.
+[Com o pipeline de front-end,](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) mais independência é dada aos desenvolvedores de front-end e o processo de desenvolvimento pode ganhar velocidade substancial. Este documento descreve como esse processo funciona, além de algumas considerações a serem levadas em conta para que você possa aproveitar ao máximo o potencial desse processo.
 
 >[!TIP]
 >
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 Semelhante ao [ambiente de build de pilha completa,](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) o pipeline de front-end tem seu próprio ambiente. Os desenvolvedores têm alguma flexibilidade nesse pipeline, desde que o seguinte contrato de build de front-end seja observado.
 
-O pipeline de front-end requer o projeto Node.js de front-end para usar o `build` diretiva de script para gerar a build que será implantada pelo pipeline de front-end. Ou seja, o Cloud Manager usa o comando `npm run build` para gerar o projeto implantável para o `dist` pasta.
+O pipeline de front-end requer o projeto Node.js de front-end para usar o `build` diretiva de script para gerar a build implantada pelo pipeline de front-end. Ou seja, o Cloud Manager usa o comando `npm run build` para gerar o projeto implantável para o `dist` pasta.
 
 O conteúdo do `dist` é a pasta que será implantada no AEM as a Cloud Service pelo pipeline do Cloud Manager.
 
@@ -68,7 +68,7 @@ As etapas a seguir são geralmente recomendadas quando é necessário executar a
    1. Como de costume, desenvolver localmente:
       1. A variável `npx aem-site-theme-builder proxy` comando executado no módulo de front-end inicia um servidor proxy que solicita o conteúdo de um ambiente AEM, enquanto substitui os arquivos CSS e JS do módulo de front-end pelos do ambiente local `dist` pasta.
       1. Configuração do `AEM_URL` na variável oculta `.env` O arquivo permite controlar de qual ambiente AEM o servidor proxy local consome o conteúdo.
-      1. Alterar o valor desse `AEM_URL` portanto, o permite alternar entre os ambientes de produção e desenvolvimento para ajustar o CSS e o JS para que se encaixem em ambos os ambientes.
+      1. Alterar o valor desse `AEM_URL` portanto, permite alternar entre os ambientes de produção e desenvolvimento para ajustar o CSS e o JS para que se encaixem em ambos os ambientes.
       1. Ele deve funcionar com o ambiente de desenvolvimento que renderiza a nova saída e com o ambiente de produção que renderiza a saída antiga.
    1. O trabalho de front-end é concluído quando o módulo de front-end atualizado funciona para ambos os ambientes e é implantado em ambos.
 1. A equipe de back-end pode atualizar o ambiente de produção implantando o código que renderiza a nova saída de HTML e/ou JSON por meio do pipeline de pilha completa.

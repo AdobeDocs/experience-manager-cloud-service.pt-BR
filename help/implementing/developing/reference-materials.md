@@ -1,8 +1,8 @@
 ---
 title: Materiais de referência de API
-description: O AEM tem APIs abrangentes e eficientes que você pode aproveitar para seu projeto de experiência digital.
+description: O AEM tem APIs abrangentes e poderosas que você pode usar para o seu projeto de experiência digital.
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 9%
@@ -11,7 +11,7 @@ ht-degree: 9%
 
 # Materiais de referência de API {#api-reference-materials}
 
-O Adobe Experience Manager (AEM) fornece muitas APIs para o desenvolvimento de aplicativos e a extensão do AEM. O AEM é construído sobre uma série de tecnologias de código aberto, que também podem ser aproveitadas.
+O Adobe Experience Manager (AEM) fornece muitas APIs para o desenvolvimento de aplicativos e a extensão do AEM. O AEM é construído com base em várias tecnologias de código aberto, que também podem ser usadas.
 
 ## APIs principais de AEM {#core-aem-apis}
 

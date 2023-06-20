@@ -2,9 +2,9 @@
 title: Criação e uso de temas
 description: Você pode usar temas para estilizar e fornecer uma identidade visual a um Formulário adaptável usando componentes principais. Você pode compartilhar um tema em qualquer número do Adaptive Forms.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: f22554450d2eb1f4948f749ba00f78b568ee308f
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1666'
+source-wordcount: '1664'
 ht-degree: 5%
 
 ---
@@ -131,7 +131,6 @@ AEM_PROXY_PORT=7000
    > * Crie um usuário local para fazer logon localmente. Forneça a função de colaborador para o designer de tema.
    > * Se você especificar o URL do AEM como `http://localhost:[port]/` no `.env` arquivo do tema da Tela, você é redirecionado diretamente para o navegador.
 
-
 1. Depois de fazer logon, altere o URL no navegador de modo que aponte o caminho para o conteúdo de amostra que o administrador do AEM forneceu.
 
    * Por exemplo, se o caminho fornecido foi `/content/formname.html?wcmmode=disabled`, altere o URL para `http://localhost:[port]/content/forms/af/formname.html?wcmmode=disabled`
@@ -200,8 +199,7 @@ Antes de confirmar as alterações no repositório Git do Cloud Service AEM Form
 
 1. Mova os arquivos do repositório de temas que você está editando para o repositório na nuvem com um comando semelhante a
    `cp -r [source-theme-folder]/* [destination-cloud-repo]`
-Por exemplo, use este comando 
-`cp -r [C:/cloned-git-canvas/*] [C:/cloned-repo]`
+Por exemplo, use este comando `cp -r [C:/cloned-git-canvas/*] [C:/cloned-repo]`
 1. No diretório do repositório da nuvem, confirme os arquivos de tema movidos para o com os seguintes comandos.
 
    ```text
@@ -246,15 +244,15 @@ Depois que o pipeline é executado, o tema fica disponível na guia Estilo.
 
 * **Como evitar ativos de outro tema**
 
-   Ao editar um tema, você pode procurar e adicionar ativos (como imagens) de outros temas. Por exemplo, você está editando o fundo de uma página. Por exemplo, ao selecionar **[!UICONTROL Página]** ![botão editar](assets/edit-button.png)> **[!UICONTROL Histórico]** > **[!UICONTROL Adicionar]** > **[!UICONTROL Imagem]**, você verá uma caixa de diálogo que permite navegar e adicionar imagens em outro tema.
+  Ao editar um tema, você pode procurar e adicionar ativos (como imagens) de outros temas. Por exemplo, você está editando o fundo de uma página. Por exemplo, ao selecionar **[!UICONTROL Página]** ![botão editar](assets/edit-button.png)> **[!UICONTROL Histórico]** > **[!UICONTROL Adicionar]** > **[!UICONTROL Imagem]**, você verá uma caixa de diálogo que permite navegar e adicionar imagens em outro tema.
 
-   Você pode enfrentar problemas com seu tema atual se um ativo for adicionado de outro tema e o outro tema for movido ou excluído. É recomendável evitar a navegação e adicionar ativos de outros temas.
+  Você pode enfrentar problemas com seu tema atual se um ativo for adicionado de outro tema e o outro tema for movido ou excluído. É recomendável evitar a navegação e adicionar ativos de outros temas.
 
 * **Alteração da largura do layout do painel de contêiner**
 
-   Não é recomendável alterar a largura do layout do painel de contêiner. Quando você especifica a largura de um painel de contêiner, ele se torna estático e não se adapta a exibições diferentes.
+  Não é recomendável alterar a largura do layout do painel de contêiner. Quando você especifica a largura de um painel de contêiner, ele se torna estático e não se adapta a exibições diferentes.
 
 * **Usar o editor de formulários ou de temas para trabalhar com cabeçalho e rodapé**
 
-   Use o editor de temas se desejar estilizar o cabeçalho e o rodapé usando opções de estilo, como estilo da fonte, plano de fundo e transparência.
+  Use o editor de temas se desejar estilizar o cabeçalho e o rodapé usando opções de estilo, como estilo da fonte, plano de fundo e transparência.
 Se você quiser fornecer informações como uma imagem de logotipo, o nome da empresa no cabeçalho e informações de direitos autorais no rodapé, use as opções do editor de formulários.

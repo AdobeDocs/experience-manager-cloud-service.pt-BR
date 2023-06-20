@@ -4,9 +4,9 @@ seo-title: Developer Mode
 description: O Modo de desenvolvedor abre um painel lateral com várias guias que fornecem ao desenvolvedor informações sobre a página atual
 seo-description: Developer mode opens a side panel with several tabs that provide a developer with information about the current page
 exl-id: fbf11c0f-dc6e-43f3-bcf2-080eacc6ba99
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '528'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,6 @@ Isso ajuda um desenvolvedor a:
 >* Não está disponível em dispositivos móveis ou janelas pequenas na área de trabalho (devido a restrições de espaço).
 >  * Isso ocorre quando a largura é menor que 1024px.
 >* Está disponível somente para usuários que são membros da `administrators` grupo.
-
 
 ## Abrindo o Modo de Desenvolvedor {#opening-developer-mode}
 
@@ -73,7 +72,7 @@ Cada entrada de componente pode ter as seguintes opções:
    * Todos os scripts de componentes usados para renderizar o componente.
    * O caminho do conteúdo do repositório para este componente específico.
 
-      ![Exibir Detalhes](assets/developer-mode-view-details.png)
+     ![Exibir Detalhes](assets/developer-mode-view-details.png)
 
 * **Editar script:** Um link que abre o script de componente no CRXDE Lite.
 
