@@ -4,9 +4,9 @@ description: Configurar o [!DNL Workfront for Experience Manager enhanced connec
 role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: 5568be57db4e270fcee22e637fc40f07529e0ecd
+source-git-commit: ff36f2dada09d8f46835dc0fbac8d0fe6707fa19
 workflow-type: tm+mt
-source-wordcount: '1787'
+source-wordcount: '1767'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,10 @@ Um usuário com acesso de administrador no [!DNL Adobe Experience Manager] as a 
 
 >[!IMPORTANT]
 >
->* A partir de junho de 2022, o Adobe lançou uma nova integração nativa para conectar o Workfront ao Adobe Experience Manager Assets as a Cloud Service. Essa integração se tornou o método necessário para conectar essas duas soluções. Qualquer nova implementação futura do conector aprimorado (1.9.8 e posterior) para conectar o Workfront com o AEM Assets as a Cloud Service será bloqueada. Para obter mais informações sobre como configurar essa integração, consulte [Configurar a integração as a Cloud Service do Experience Manager Assets](workfront-connector-configure.md).
+> A partir de junho de 2022, o Adobe lançou uma nova integração nativa para conectar o Workfront ao Adobe Experience Manager Assets as a Cloud Service. Essa integração se tornou o método necessário para conectar essas duas soluções. Qualquer nova implementação futura do conector aprimorado (1.9.8 e posterior) para conectar o Workfront com o AEM Assets as a Cloud Service será bloqueada.
+
+>[!IMPORTANT]
+>
 >* O Adobe exige a implantação e a configuração do [!DNL Adobe Workfront for Experience Manager enhanced connector] somente por meio de parceiros certificados ou [!DNL Adobe Professional Services]. Se implantado e configurado sem um parceiro certificado ou [!DNL Adobe Professional Services], não é compatível com o Adobe.
 >
 >* O Adobe pode lançar atualizações para [!DNL Adobe Workfront] e [!DNL Adobe Experience Manager] que tornam esse conector redundante; se isso ocorrer, pode ser necessário que os clientes façam a transição do uso desse conector.
