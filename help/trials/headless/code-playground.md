@@ -4,10 +4,10 @@ description: Explore a busca de conteúdo JSON do seu ambiente de avaliação co
 hidefromtoc: true
 index: false
 exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
-source-git-commit: 1949ee211b4f816e05aa779deb9e287347f006ad
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '987'
-ht-degree: 100%
+source-wordcount: '986'
+ht-degree: 98%
 
 ---
 
@@ -81,7 +81,7 @@ Por fim, a função `fetchJsonFromGraphQL()` é usada para executar a solicitaç
 
 ## Buscar dados da sua consulta persistente {#use-persisted-query}
 
-Na linha 25, indicamos de qual consulta persistente de GraphQL o aplicativo deve buscar dados. O nome da consulta persistente é uma combinação do nome do ponto de acesso (por exemplo, `your-project` ou `aem-demo-assets`), seguido por uma barra e então o nome da consulta. Se você seguiu exatamente as instruções do módulo anterior, a consulta persistente criada estará no ponto de acesso `your-project`.
+Na linha 25, indicamos de qual consulta persistente de GraphQL o aplicativo deve buscar dados. O nome da consulta persistente é uma combinação do nome do ponto de acesso (por exemplo, `your-project` ou `aem-demo-assets`), seguido por uma barra e então o nome da consulta. Se você seguiu exatamente as instruções anteriores do módulo, a consulta persistente criada está na `your-project` terminal.
 
 1. Atualize a variável `persistedQueryName` para usar a consulta persistente criada no módulo anterior. Se você seguiu a sugestão de nomenclatura, uma consulta persistente chamada `adventure-list` deve ter sido criada no ponto de acesso `your-project` e agora você deve definir a variável `persistedQueryName` como `your-project/adventure-list`:
 

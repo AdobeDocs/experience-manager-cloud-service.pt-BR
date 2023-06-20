@@ -2,10 +2,10 @@
 title: Fragmentos de conteúdo
 description: Os Fragmentos de conteúdo do Adobe Experience Manager as a Cloud Service permitem projetar, criar, selecionar e usar conteúdo independente da página
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1226'
-ht-degree: 97%
+source-wordcount: '1222'
+ht-degree: 92%
 
 ---
 
@@ -62,7 +62,7 @@ Os fragmentos de conteúdo habilitam:
    >
    >Um método alternativo é arrastar um fragmento de conteúdo específico diretamente para a página. Essa ação cria o componente associado (Fragmento de conteúdo) de maneira automática.
 
-4. Inicialmente, o conteúdo do elemento **Principal** e do **Mestre** (variação) serão mostrados. Você pode [selecionar outros elementos e/ou variações](#selecting-the-element-or-variation) conforme necessário.
+4. Inicialmente, o conteúdo do **Principal** Elemento e **Principal** (variação) são mostrados. Você pode [selecionar outros elementos e/ou variações](#selecting-the-element-or-variation) conforme necessário.
 
    ![Fragmentos de conteúdo no navegador de ativos](/help/sites-cloud/authoring/assets/content-fragments.png)
 
@@ -89,15 +89,15 @@ Na caixa de diálogo de configuração apropriada, é possível selecionar os pa
    * **Elemento de texto simples**
    * **Vários elementos**
 * **Elemento**
-   * Dependendo do modelo usado, haverá uma seleção disponível.
+   * Uma seleção está disponível dependendo do modelo usado.
 
   >[!NOTE]
   >
   >Os elementos disponíveis dependem do modelo usado.
 
 * **Variação**
-   * O padrão **Mestre** sempre estará disponível.
-   * Uma opção de seleção estará disponível caso tenham sido criadas variações do fragmento.
+   * O padrão **Principal** está sempre disponível.
+   * Uma seleção estará disponível se variações tiverem sido criadas para o fragmento.
 
 * **ID**
 
@@ -160,7 +160,7 @@ Se você tiver [conteúdo associado](/help/sites-cloud/administering/content-fra
 
 Após adicionar um fragmento com conteúdo associado à página, uma nova guia (**Conteúdo associado**) é aberta no painel lateral.
 
-Aqui, é possível arrastar os ativos para o local desejado (para um componente existente ou para a posição desejada onde o componente adequado será criado): 
+Aqui, é possível arrastar os ativos para o local desejado (para um componente existente ou para a posição desejada onde o componente adequado é criado):
 
 ![Inserção de uma imagem](/help/sites-cloud/authoring/assets/content-fragments-image.png)
 

@@ -2,16 +2,16 @@
 title: Criação de modelos de páginas
 description: O modelo define a estrutura da página resultante e, com o editor de modelo, criar e manter modelos não é mais uma tarefa somente para desenvolvedores
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '4595'
-ht-degree: 62%
+source-wordcount: '4579'
+ht-degree: 58%
 
 ---
 
 # Criação de modelos de páginas   {#creating-page-templates}
 
-Ao criar uma página, você deve selecionar um modelo, que será usado como base para a criação da nova página. O modelo define a estrutura da página resultante, qualquer conteúdo inicial e os componentes que podem ser usados.
+Ao criar uma página, você deve selecionar um modelo, que é usado como base para a criação da nova página. O modelo define a estrutura da página resultante, qualquer conteúdo inicial e os componentes que podem ser usados.
 
 Com o **Editor de modelos**, criar e manter modelos não é mais uma tarefa somente para desenvolvedores. Um tipo de usuário avançado, chamado de **autor de modelo**, também pode ser envolvido. Os desenvolvedores ainda são necessários para configurar o ambiente, criar bibliotecas de clientes e criar os componentes a serem usados, mas uma vez que essas noções básicas estejam em vigor, o **autor do modelo** terá a flexibilidade de criar e configurar modelos sem um projeto de desenvolvimento.
 
@@ -120,7 +120,7 @@ Uma pasta de modelo deve ser criada para que o projeto mantenha seus modelos esp
    * **Nome do modelo**
    * **Descrição**
 
-1. Selecione **Criar**. Uma confirmação será exibida, selecione **Abrir** para começar a editar o modelo ou **Concluído** para retornar ao console do modelo.
+1. Selecione **Criar**. Uma confirmação for exibida, selecione **Abertura** para começar a editar o modelo ou **Concluído** para retornar ao console modelo.
 
    >[!NOTE]
    >
@@ -163,7 +163,7 @@ Para definir a miniatura do modelo:
 1. Escolha se deseja fazer upload de uma miniatura ou gerá-la a partir do conteúdo do template.
    * Se desejar carregar uma miniatura, clique ou toque em **Fazer upload de imagem**
    * Se quiser gerar uma miniatura, clique ou toque em **Gerar visualização**
-1. Para ambos os métodos, uma pré-visualização da miniatura será exibida.
+1. Para ambos os métodos, uma pré-visualização da miniatura é exibida.
    * Se não for satisfatório, clique ou toque em **Limpar** para carregar outra imagem ou gerar novamente a miniatura.
 1. Quando estiver satisfeito com a miniatura, clique ou toque em **Salvar e fechar**.
 
@@ -180,7 +180,7 @@ Um modelo pode ser ativado ou desativado para torná-lo disponível ou indispon�
 
 >[!CAUTION]
 >
->Quando um modelo estiver ativado, um aviso será exibido quando um autor do modelo começar a atualizar mais o modelo. Isso é para informar ao usuário que o modelo pode ser referenciado, de modo que qualquer alteração possa afetar as páginas que fazem referência ao modelo.
+>Depois que um modelo é ativado, um aviso é exibido quando um autor do modelo começa a atualizar mais o modelo. Isso é para informar ao usuário que o modelo pode ser referenciado, de modo que qualquer alteração possa afetar as páginas que fazem referência ao modelo.
 
 1. No **console Modelos**, selecione o modelo.
 1. Selecione **Habilitar** ou **Desabilitar** da barra de ferramentas e depois na caixa de diálogo de confirmação.
@@ -244,7 +244,7 @@ Já a opção **Política de página** no menu **Informações de página** perm
 
 >[!CAUTION]
 >
->Se um autor começar a editar um modelo que já foi habilitado, um aviso será exibido. Isso é para informar ao usuário que o modelo pode ser referenciado, de modo que qualquer alteração possa afetar as páginas que fazem referência ao modelo.
+>Se um autor começar a editar um modelo que já foi ativado, um aviso será exibido. Isso é para informar ao usuário que o modelo pode ser referenciado, de modo que qualquer alteração possa afetar as páginas que fazem referência ao modelo.
 
 ### Atributos do modelo {#template-attributes}
 
@@ -262,7 +262,7 @@ Quando os componentes estiverem bloqueados, é possível adicionar conteúdo, qu
 
 #### Conteúdo inicial {#template-initial-content}
 
-Quando um componente tiver sido desbloqueado, é possível definir o [conteúdo inicial](#editing-a-template-initial-content-author) que será copiado para páginas resultantes, criado a partir do modelo. Esses componentes desbloqueados podem ser editados nas páginas resultantes.
+Quando um componente tiver sido desbloqueado, você poderá definir a variável [conteúdo inicial](#editing-a-template-initial-content-author) que é copiado para página(s) resultante(s), criado a partir do modelo. Esses componentes desbloqueados podem ser editados nas páginas resultantes.
 
 >[!NOTE]
 >
@@ -313,7 +313,7 @@ Depois de adicionado, cada componente é marcado com:
 >
 >Ao adicionar um componente de **Título** pronto ao modelo, ele conterá **estrutura** de texto padrão.
 >
->Se alterar e adicionar seu próprio texto, esse texto atualizado será usado quando uma página for criada a partir do modelo.
+>Se você alterar isso e adicionar seu próprio texto, esse texto atualizado será usado quando uma página for criada a partir do modelo.
 >
 >Se deixar o texto padrão (estrutura) como está, o título será padrão para o nome da página subsequente.
 
@@ -368,7 +368,7 @@ Uma nova política pode ser adicionada ao selecionar o botão adicionar ao lado 
 
 ![Botão Adicionar política](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-A política existente selecionada na lista suspensa **Selecionar política** pode ser copiada como uma nova política usando o botão copiar ao lado do menu suspenso. Um novo título deve ser especificado no campo **Título da política**. Por padrão, a política copiada será denominada **Cópia de X**, onde X é o título da política copiada.
+A política existente selecionada na lista suspensa **Selecionar política** pode ser copiada como uma nova política usando o botão copiar ao lado do menu suspenso. Um novo título deve ser especificado no campo **Título da política**. Por padrão, a política copiada é denominada **Cópia de X**, onde X é o título da política copiada.
 
 ![Botão Copiar política](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
@@ -427,7 +427,7 @@ As configurações de política e propriedades de um contêiner de layout são s
 
 >[!NOTE]
 >
->A configuração de uma política é obrigatória para componentes de contêiner, pois permite definir componentes que estarão disponíveis no contêiner.
+>A configuração de uma política é obrigatória para componentes de contêiner, pois permite definir componentes que estejam disponíveis no contêiner.
 
 A janela de configuração é dividida em dois, assim como no uso geral da janela.
 
@@ -478,14 +478,14 @@ Você desbloqueia/bloqueia componentes para definir se o conteúdo está dispon�
 Quando um componente tiver sido desbloqueado:
 
 * Um indicador de cadeado aberto é mostrado na borda.
-* A barra de ferramentas do componente será ajustada de acordo.
+* A barra de ferramentas do componente é ajustada de acordo.
 * Qualquer conteúdo já inserido não será mais exibido em **Estrutura** modo.
    * O conteúdo já inserido é considerado conteúdo inicial e é visível apenas no modo **Conteúdo inicial**.
 * Os pais do componente desbloqueado não podem ser movidos, recortados ou excluídos.
 
 ![Botão Bloquear componente](/help/sites-cloud/authoring/assets/templates-unlock-component.png)
 
-Isso inclui desbloquear componentes de contêiner para que outros componentes possam ser adicionados, no modo **Conteúdo inicial** ou nas páginas resultantes. Se você já tiver adicionado componentes/conteúdo ao contêiner antes de desbloqueá-lo, eles não serão mais exibidos quando estiverem no modo **Estrutura**, mas serão exibidos no modo **Conteúdo inicial**. No **modo Estrutura**, apenas o componente do contêiner será mostrado com sua lista de **Componentes permitidos**.
+Isso inclui desbloquear componentes de contêiner para que outros componentes possam ser adicionados, no modo **Conteúdo inicial** ou nas páginas resultantes. Se você já tiver adicionado componentes/conteúdo ao contêiner antes de desbloqueá-lo, eles não serão mais exibidos quando em **Estrutura** , mas são mostrados na **Conteúdo inicial** modo. Entrada **Modo de estrutura**, somente o componente de contêiner será mostrado com sua lista de **Componentes permitidos**.
 
 ![Componentes permitidos](/help/sites-cloud/authoring/assets/templates-allowed-components.png)
 
@@ -540,7 +540,7 @@ Embora todo o conteúdo criado no modo **Estrutura** seja visível no **Conteúd
 
 >[!NOTE]
 >
->As modificações no layout serão refletidas no modo **Conteúdo inicial**, mas nenhuma alteração será vista no modo **Estrutura**.
+>As alterações no layout são refletidas na **Conteúdo inicial** mas nenhuma alteração será vista no **Estrutura** modo.
 
 ![Layout Editar modelo](/help/sites-cloud/authoring/assets/templates-edit-layout.png)
 
@@ -572,7 +572,7 @@ Para acessar a caixa de diálogo **Política da página**:
 
   ![Botão Adicionar política](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-  A política existente selecionada na lista suspensa **Selecionar política** pode ser copiada como uma nova política usando o botão copiar ao lado do menu suspenso. Um novo título deve ser especificado no campo **Título da política**. Por padrão, a política copiada será denominada **Cópia de X**, onde X é o título da política copiada.
+  A política existente selecionada na lista suspensa **Selecionar política** pode ser copiada como uma nova política usando o botão copiar ao lado do menu suspenso. Um novo título deve ser especificado no campo **Título da política**. Por padrão, a política copiada é denominada **Cópia de X**, onde X é o título da política copiada.
 
   ![Botão Copiar política](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
@@ -653,7 +653,7 @@ Ao criar modelos, você deve considerar:
    * Bloquear ou desbloquear componentes em modelos ativados.
    * Isso pode ter efeitos colaterais, pois as páginas existentes já podem usá-lo. Normalmente:
 
-      * Desbloquear componentes (que foram bloqueados) não aparecerá nas páginas existentes.
+      * Os componentes de desbloqueio (que foram bloqueados) não estão presentes nas páginas existentes.
       * Bloquear os componentes (que eram editáveis) ocultará que esse conteúdo seja exibido nas páginas.
 
    >[!NOTE]

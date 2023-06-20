@@ -2,10 +2,10 @@
 title: Manuseio básico
 description: Familiarize-se com a navegação pelo AEM e seu uso básico
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '2993'
-ht-degree: 73%
+source-wordcount: '2986'
+ht-degree: 71%
 
 ---
 
@@ -15,7 +15,7 @@ Este documento foi criado para apresentar uma visão geral do manuseio básico a
 
 >[!NOTE]
 >
->* Algumas funcionalidades não estão disponíveis em todos os consoles e funcionalidades adicionais podem estar disponíveis em alguns consoles. Informações específicas sobre os consoles individuais e suas funcionalidades relacionadas serão abordadas com mais detalhes em outras páginas.
+>* Algumas funcionalidades não estão disponíveis em todos os consoles e funcionalidades adicionais podem estar disponíveis em alguns consoles. Informações específicas sobre os consoles individuais e suas funcionalidades relacionadas são abordadas com mais detalhes em outras páginas.
 >* Os atalhos de teclado estão disponíveis em todo o AEM. Principalmente ao [usar páginas de console](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) e [edição](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
 
 ## Uma interface de usuário habilitada para toque {#a-touch-enabled-ui}
@@ -110,7 +110,7 @@ O cabeçalho da está sempre presente na parte superior da tela. Embora a maiori
 
   ![Botão Notificações](/help/sites-cloud/authoring/assets/notifications.png)
 
-  Esse ícone exibirá o número de notificações incompletas atribuídas atualmente.
+  Esse ícone contém o número de notificações incompletas atribuídas atualmente.
 
 * [Propriedades do usuário](/help/sites-cloud/authoring/getting-started/account-environment.md)
 
@@ -299,15 +299,15 @@ Selecionar um recurso na coluna mais à esquerda exibirá os recursos secundári
 
 * É possível navegar para cima e para baixo na árvore tocando ou clicando no nome do recurso ou na divisa à direita do nome do recurso.
 
-   * O nome e a divisa do recurso serão realçados quando tocados ou clicados.
+   * O nome e a divisa do recurso são realçados quando tocados ou clicados.
    * Os filhos do recurso clicado/tocado são exibidos na coluna à direita do recurso clicado/tocado.
    * Se você tocar ou clicar em um nome de recurso que não tenha filhos, seus detalhes serão exibidos na coluna final.
 
 * Tocar ou clicar na miniatura seleciona o recurso.
 
-   * Quando essa opção for selecionada, uma marca de seleção será sobreposta à miniatura, e o nome do recurso também será destacado.
-   * Os detalhes do recurso selecionado serão mostrados na coluna final.
-   * A barra de ferramentas de ação ficará disponível.
+   * Quando selecionada, uma marca de seleção é sobreposta à miniatura e o nome do recurso também é realçado.
+   * Os detalhes do recurso selecionado são mostrados na coluna final.
+   * A barra de ferramentas de ação fica disponível.
 
   Quando uma página é selecionada na exibição de coluna, a página selecionada é exibida na coluna final junto com os seguintes detalhes:
 

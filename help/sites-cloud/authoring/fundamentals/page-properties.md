@@ -2,16 +2,16 @@
 title: Editar as propriedades da página
 description: Definir as propriedades obrigatórias de uma página
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '2357'
-ht-degree: 95%
+source-wordcount: '2340'
+ht-degree: 82%
 
 ---
 
 # Editar as propriedades da página {#editing-page-properties}
 
-Você pode definir as propriedades desejadas para uma página. Isso pode variar dependendo da natureza da página. Por exemplo, algumas páginas podem estar conectadas a uma Live Copy, enquanto outras não estão, e as informações da Live Copy estarão disponíveis conforme apropriado.
+Você pode definir as propriedades desejadas para uma página. Isso pode variar dependendo da natureza da página. Por exemplo, algumas páginas podem estar conectadas a uma live copy, enquanto outras não, e as informações da live copy estão disponíveis conforme apropriado.
 
 ## Propriedades da página {#page-properties}
 
@@ -26,7 +26,7 @@ As propriedades são distribuídas por várias guias.
    * **Tags**: aqui você pode adicionar ou remover as tags da página, atualizando a lista na caixa de seleção.
       * Após selecionar uma tag, ela é listada abaixo da caixa de seleção. Você pode remover uma tag dessa lista usando o ícone “x”.
       * Uma tag totalmente nova pode ser inserida digitando o nome em uma caixa de seleção vazia.
-         * A nova tag será criada quando você pressionar a tecla Enter.
+         * A nova tag é criada ao pressionar Enter.
          * A nova tag será então exibida com uma pequena estrela à direita, indicando que é uma tag nova.
       * Com a funcionalidade de menu suspenso, é possível selecionar tags existentes.
       * Um “x” é exibido ao passar o mouse sobre uma entrada de tag na caixa de seleção, e esse ícone pode ser usado para remover a tag desta página.
@@ -40,7 +40,7 @@ As propriedades são distribuídas por várias guias.
    * **Descrição da marca**
 
       * **Substituir** - marque essa opção para definir a descrição da marca nesta página.
-         * O valor será herdado por qualquer página secundária, a menos que também tenha definidos seus valores para **Substituir**.
+         * O valor é herdado por qualquer página secundária, a menos que também tenha suas **Substituir** valores definidos.
       * **Substituir valor** - o texto da descrição da marca a ser anexado ao título da página.
          * O valor é anexado ao título da página após um caractere de barra vertical, como &quot;Cycling Tuscany | Sempre pronto para a WKND&quot;
 
@@ -50,8 +50,8 @@ As propriedades são distribuídas por várias guias.
 
 * **Mais títulos e descrições**
 
-   * **Título da página** - um título a ser usado na página. Normalmente é usado pelos componentes de título. Se estiver vazio, o **Título** da página será usado.
-   * **Título de navegação** - você pode especificar um título separado para usar na navegação (por exemplo, caso deseje algo mais conciso). Caso esteja vazio, o **Título** será usado.
+   * **Título da página** - um título a ser usado na página. Normalmente é usado pelos componentes de título. Se estiver vazio, a variável **Título** é usada.
+   * **Título de navegação** - Você pode especificar um título separado para usar na navegação (por exemplo, se desejar algo mais conciso). Se estiver vazio, a variável **Título** é usada.
    * **Subtítulo** - um subtítulo para usar na página.
    * **Descrição** - a sua descrição da página, a finalidade dela ou qualquer outro detalhe que desejar adicionar.
 
@@ -62,15 +62,15 @@ As propriedades são distribuídas por várias guias.
   > Consulte [Momento da ativação e da desativação - Configuração do acionador](/help/operations/replication.md#on-and-off-times-trigger-configuration) para obter detalhes sobre como configurar a replicação automática relacionada.
 
   >[!NOTE]
-  >Se tanto o **Momento da ativação** quanto o **Momento da desativação** estiverem no passado e a replicação automática estiver configurada, a ação relevante será acionada imediatamente.
+  >Se uma das opções for **No Prazo** ou **Tempo desligado** estiver no passado e a replicação automática estiver configurada, a ação relevante será acionada imediatamente.
 
-   * **Momento da ativação** - a data e a hora em que a página publicada ficará visível (renderizada) no ambiente de publicação. A página deve ser publicada manualmente ou por replicação automática pré-configurada.
+   * **No Prazo** - A data e a hora em que a página publicada fica visível (renderizada) no ambiente de publicação. A página deve ser publicada manualmente ou por replicação automática pré-configurada.
 
-      * Se já [publicada (manualmente)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) essa página será mantida inativa (oculta) até a renderização no horário especificado.
+      * Se já [publicado (manualmente)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) essa página é mantida inativa (oculta) até a renderização no horário especificado.
       * Se não for publicada e configurada para replicação automática, a página será publicada automaticamente e, em seguida, renderizada no horário especificado.
-      * Se não for publicada e não estiver configurada para replicação automática, a página não será publicada automaticamente. Um 404 será exibido quando for feita uma tentativa de acessar a página.
+      * Se não for publicada e não estiver configurada para replicação automática, a página não será publicada automaticamente. Um 404 é exibido quando é feita uma tentativa de acessar a página.
 
-   * **Momento de desligar** - semelhante a e frequentemente utilizado em combinação com **Momento de ligar**, define o momento em que a página publicada será oculta no ambiente de publicação.
+   * **Tempo desligado** - Semelhante a e frequentemente utilizado em combinação com **No Prazo**, isso define a hora em que a página publicada fica oculta no ambiente de publicação.
 
    * Deixe esses campos (**Momento de ligar** e **Hora de desligar**) vazios para páginas que deseja publicar imediatamente e que estão disponíveis no ambiente de publicação até que sejam desativadas (o cenário normal).
 
@@ -115,7 +115,7 @@ As propriedades são distribuídas por várias guias.
 
 * **Configurações de modelos**
 
-   * **Modelos permitidos** - [define a lista de modelos que estará disponível](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author) dentro desta sub-ramificação
+   * **Modelos permitidos** - [Define a lista de modelos que estão disponíveis](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author) nesta sub-ramificação
 
 * **Requisitos de autenticação**
 
@@ -133,7 +133,7 @@ As propriedades são distribuídas por várias guias.
 
 * **SEO**
 
-   * **URL canônica**: pode ser usada para sobrescrever a URL canônica da página; se deixada em branco, a URL da página será a URL canônica
+   * **URL canônico** - pode ser usado para substituir o URL canônico da página; se deixado em branco, o URL da página será o seu URL canônico
 
    * **Tags de robôs**: seleciona as tags de robôs para controlar o comportamento dos rastreadores de mecanismos de pesquisa.
 
@@ -141,7 +141,7 @@ As propriedades são distribuídas por várias guias.
      >
      >Algumas das opções entram em conflito entre si. Em caso de conflito, a opção mais permissiva tem prioridade.
 
-   * **Gerar mapa do site**: quando selecionado, um arquivo sitemap.xml será gerado para esta página e suas descendentes
+   * **Gerar mapa do site** - quando selecionado, um sitemap.xml é gerado para esta página e seus descendentes
 
 ### Imagens {#images}
 
@@ -253,7 +253,7 @@ Por meio de uma configuração simples, um autor de conteúdo agora pode ativar 
 
    * **Estratégia de armazenamento em cache e frequência de atualização de conteúdo**: define o modelo de armazenamento em cache do seu PWA
    * **Arquivos para armazenar em cache para uso offline**
-      * **Pré-armazenamento em cache de arquivos (visualização técnica)**: os arquivos hospedados no AEM serão salvos no cache do navegador local quando o serviço secundário estiver sendo instalado e antes de ser usado
+      * **Pré-armazenamento em cache de arquivos (visualização técnica)** - os arquivos hospedados no AEM são salvos no cache do navegador local quando o service worker está sendo instalado e antes de ser usado
       * **Bibliotecas do lado do cliente**: bibliotecas do lado do cliente para armazenar em cache e oferecer a experiência offline
       * **Inclusões de caminhos**: as solicitações de rede para os caminhos definidos são interceptadas e o conteúdo em cache é retornado de acordo com a estratégia de armazenamento em cache e a frequência de atualização de conteúdo configuradas
       * **Exclusões de caminhos**: esses arquivos nunca serão armazenados em cache, independentemente das configurações definidas em Pré-armazenamento em cache de arquivos e Inclusões de caminhos
@@ -320,7 +320,7 @@ Só é possível editar em massa as páginas que:
 
 * Compartilham o mesmo tipo de recurso
 * Não fazem parte de uma live copy
-   * Uma mensagem será mostrada quando as propriedades forem abertas, se qualquer página estiver em uma live copy.
+   * Se qualquer uma das páginas estiver em uma live copy, uma mensagem será exibida quando as propriedades forem abertas.
 
 Depois de entrar na edição de itens em massa é possível:
 

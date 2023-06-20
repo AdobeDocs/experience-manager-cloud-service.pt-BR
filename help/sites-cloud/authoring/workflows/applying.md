@@ -2,10 +2,10 @@
 title: Aplicação de fluxos de trabalho a páginas
 description: Ao criar, é possível invocar fluxos de trabalho para realizar ações em suas páginas. Também é possível aplicar mais de um fluxo de trabalho..
 exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '662'
-ht-degree: 57%
+source-wordcount: '661'
+ht-degree: 55%
 
 ---
 
@@ -31,7 +31,6 @@ Os workflows podem ser iniciados de:
 >
 >* Como aplicar fluxos de trabalho a ativos do DAM.
 >* [Trabalhar com fluxos de trabalho de projeto](/help/sites-cloud/authoring/projects/workflows.md).
-
 
 <!-- 
 >* [How to apply workflows to DAM assets](/help/assets/assets-workflow.md).
@@ -104,6 +103,7 @@ Você pode especificar detalhes:
    * **Título do pacote**
 
       * Você pode especificar um título para o pacote, para ajudar na identificação.
+
    >[!NOTE]
    >
    >A opção **Manter pacote de fluxo de trabalho** estará disponível quando o fluxo de trabalho for configurado para Suporte a vários recursos e vários recursos foram selecionados.
@@ -122,14 +122,14 @@ Você pode especificar detalhes:
 
    * Um recurso existente para ver ações adicionais:
 
-      * **Incluir filhos** para especificar que os filhos desse recurso serão incluídos no fluxo de trabalho.
+      * **Incluir filhos** para especificar que os filhos desse recurso sejam incluídos no workflow.
 Uma caixa de diálogo será aberta, permitindo que você refine a seleção de acordo com:
 
          * Incluir somente secundárias imediatas.
          * Incluir somente as páginas modificadas.
          * Incluir somente páginas já publicadas.
 
-         Quaisquer filhos especificados são adicionados à lista de recursos aos quais o fluxo de trabalho será aplicado.
+        Quaisquer filhos especificados são adicionados à lista de recursos aos quais o fluxo de trabalho será aplicado.
 
       * **Remover seleção** para remover esse recurso do workflow.
 

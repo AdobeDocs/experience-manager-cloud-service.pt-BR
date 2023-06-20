@@ -2,10 +2,10 @@
 title: Adição de anotações de página
 description: Use o modo de anotação para deixar anotações e rascunhos nas páginas, como você usaria as notas adesivas para auxiliar no processo de revisão do conteúdo
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
-source-git-commit: 64d801b108229866394e993811a67f983be5df6c
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 97%
+source-wordcount: '698'
+ht-degree: 94%
 
 ---
 
@@ -57,7 +57,7 @@ Além de visualizar as anotações, o modo Anotação permite criar, editar, mov
 
 1. Clique ou toque no ícone Adicionar anotação (símbolo de mais à esquerda da barra de ferramentas) para começar a adicionar as anotações.
 
-1. Clique ou toque no componente desejado (os componentes que podem ser anotados serão destacados com uma borda azul) para adicionar a anotação e abrir a caixa de diálogo:
+1. Clique ou toque no componente desejado (os componentes que podem ser anotados são realçados com uma borda azul) para adicionar a anotação e abrir a caixa de diálogo:
 
    ![Adição de uma anotação](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
@@ -66,13 +66,13 @@ Além de visualizar as anotações, o modo Anotação permite criar, editar, mov
    * Insira o texto da anotação.
    * Criar um rascunho (linhas e formas) para realçar uma área do componente.
 
-      ![Botão Rascunho de anotação](/help/sites-cloud/authoring/assets/annotation-sketch.png)
+     ![Botão Rascunho de anotação](/help/sites-cloud/authoring/assets/annotation-sketch.png)
 
-      O cursor se transformará em uma cruz durante a criação de um rascunho. Você pode desenhar várias linhas distintas. A linha de rascunho reflete a cor da anotação e pode ser uma seta, círculo ou forma oval.
+     O cursor se transformará em uma cruz durante a criação de um rascunho. Você pode desenhar várias linhas distintas. A linha de rascunho reflete a cor da anotação e pode ser uma seta, círculo ou forma oval.
 
    * Escolher ou alterar a cor:
 
-      ![Botão Amostra de cor da anotação](/help/sites-cloud/authoring/assets/annotation-color-swatch.png)
+     ![Botão Amostra de cor da anotação](/help/sites-cloud/authoring/assets/annotation-color-swatch.png)
 
 1. Você pode fechar a caixa de diálogo de anotação clicando ou tocando fora dela. Uma exibição truncada da anotação, junto com os rascunhos existentes, é mostrada:
 

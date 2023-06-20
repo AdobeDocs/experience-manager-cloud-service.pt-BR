@@ -2,16 +2,16 @@
 title: Integração com o Adobe Target
 description: Integração com o Adobe Target
 exl-id: 2b4cf35e-2b75-4303-8d09-f6644ad99274
-source-git-commit: f40a2db6616aeaaf13f8ae19ab429a7301e6c05a
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '727'
-ht-degree: 100%
+source-wordcount: '726'
+ht-degree: 97%
 
 ---
 
 # Integração com o Adobe Target{#integrating-with-adobe-target}
 
-Como parte da Adobe Marketing Cloud, o [Adobe Target](https://www.adobe.com/br/solutions/testing-targeting/testandtarget.html) permite aumentar a relevância do conteúdo por meio do direcionamento e da medição em todos os canais. O Adobe Target é usado pelos profissionais de marketing para projetar e executar testes online, criar segmentos de público instantaneamente (com base no comportamento) e automatizar o direcionamento de conteúdo e experiências online. O AEM as a Cloud Service adotou o fluxo de trabalho direcionado usado no Adobe Target Standard. Se você usa o Target, estará familiarizado com o ambiente de edição de direcionamento do AEM as a Cloud Service.
+Como parte da Adobe Marketing Cloud, o [Adobe Target](https://www.adobe.com/br/solutions/testing-targeting/testandtarget.html) permite aumentar a relevância do conteúdo por meio do direcionamento e da medição em todos os canais. O Adobe Target é usado pelos profissionais de marketing para projetar e executar testes online, criar segmentos de público instantaneamente (com base no comportamento) e automatizar o direcionamento de conteúdo e experiências online. O AEM as a Cloud Service adotou o fluxo de trabalho direcionado usado no Adobe Target Standard. Se você usa o Target, está familiarizado com o ambiente de edição de direcionamento no AEM as a Cloud Service.
 
 Integre o AEM Sites com o Adobe Target para personalizar o conteúdo em suas páginas:
 
@@ -54,7 +54,6 @@ Para integrar com o Target, execute as seguintes tarefas:
 >* A 4.x está configurada com [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 >
 
-
 >[!CAUTION]
 >
 >Você deve proteger o nó de configurações de atividade **cq:ActivitySettings** na instância de publicação para que ele fique inacessível aos usuários normais. O nó de configurações de atividade só deve estar acessível ao serviço que lida com a sincronização de atividades com o Adobe Target.
@@ -83,4 +82,3 @@ Integrar o AEM as a Cloud Service com o Adobe Target exige conhecimento do Adobe
 >* 2.000 experiências
 >* 50 métricas
 >* 50 segmentos de relatórios
-

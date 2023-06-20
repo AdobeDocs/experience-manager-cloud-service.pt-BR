@@ -4,10 +4,10 @@ description: A Automação de configuração da Experience Cloud oferece uma man
 feature: Administering
 role: Admin
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
-source-git-commit: f91885a7d15c0ff927c6e10f65852f787cf26eb3
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '756'
-ht-degree: 100%
+source-wordcount: '754'
+ht-degree: 94%
 
 ---
 
@@ -50,7 +50,7 @@ O ambiente agora deve estar pronto para a automação de configuração da Exper
 1. Toque no botão **Integrar o Analytics**.
 1. Na caixa de diálogo resultante, forneça um nome para a **ID do conjunto de relatórios**.
 
-   Esta sequência de caracteres será usada para criar um novo [ID do conjunto de relatórios](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=pt-BR) no Adobe Analytics como o armazenamento de dados para os dados analíticos do site do AEM selecionado. A sequência de caracteres fornecida será anexada com identificadores de ambiente e nível para garantir a exclusividade.
+   Esta sequência de caracteres é usada para criar um novo [ID do conjunto de relatórios](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=pt-BR) no Adobe Analytics como o armazenamento de dados dos dados do analytics para o site AEM selecionado. A sequência de caracteres fornecida é anexada com identificadores de ambiente e nível para garantir a exclusividade.
 
 1. Atualize a página e o painel e toque em **Verificar status da integração** para verificar o status da automação.
 

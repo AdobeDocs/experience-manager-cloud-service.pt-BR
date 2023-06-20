@@ -2,10 +2,10 @@
 title: Ambiente e ferramentas de criação
 description: O ambiente de criação do AEM fornece vários mecanismos para organização e edição de conteúdo
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '2154'
-ht-degree: 57%
+source-wordcount: '2153'
+ht-degree: 56%
 
 ---
 
@@ -270,7 +270,7 @@ Há vários modos ao editar uma página que permitem ações diferentes:
 * [Timewarp](/help/sites-cloud/authoring/features/page-versions.md#timewarp) - permite exibir um estado de páginas em um momento específico.
 * [Status da Live Copy](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status) - permite uma visão geral rápida do status da live copy e de quais componentes não são herdados.
 * [Modo de desenvolvedor](/help/implementing/developing/tools/developer-mode.md)
-* [Visualização](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages)- o modo usado para visualizar a página da forma que será exibida no ambiente de publicação; ou navegar usando os links no conteúdo.
+* [Visualizar](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages) - usado para exibir a página como ela é mostrada no ambiente de publicação; ou navegar usando links no conteúdo.
 * [Anotar](/help/sites-cloud/authoring/fundamentals/annotations.md) - usado para adicionar ou exibir anotações na página.
 
 Você pode acessar esses itens usando os ícones no canto superior direito. O ícone real será alterado para refletir o modo usado no momento:

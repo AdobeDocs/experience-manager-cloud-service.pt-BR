@@ -2,10 +2,10 @@
 title: Ativação de recursos do aplicativo web progressivo
 description: O AEM Sites permite que o autor de conteúdo ative recursos de aplicativo web progressivo para qualquer site por meio de uma configuração simples, sem necessidade de desenvolver código.
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '2004'
-ht-degree: 97%
+source-wordcount: '2000'
+ht-degree: 94%
 
 ---
 
@@ -135,7 +135,7 @@ Agora que [configurou o site para oferecer suporte a PWA,](#enabling-pwa-for-you
 1. Você verá um novo ícone na barra de endereços do navegador, indicando que o site pode ser instalado como um aplicativo local.
    * Dependendo do navegador, o ícone pode variar e o navegador também pode exibir uma notificação (como um banner ou caixa de diálogo), indicando que é possível instalá-lo como um aplicativo local.
 1. Instale o aplicativo.
-1. O aplicativo será instalado na tela inicial do dispositivo.
+1. O aplicativo é instalado na tela inicial do dispositivo.
 1. Abra o aplicativo, navegue um pouco e veja se as páginas estão disponíveis offline.
 
 ## Opções detalhadas {#detailed-options}
@@ -181,12 +181,12 @@ Essas configurações disponibilizam partes do site de forma offline e local no 
 
 * **Estratégia de armazenamento em cache e frequência de atualização de conteúdo** — essa configuração define o modelo de armazenamento em cache do seu PWA.
    * **Moderadamente** — [esta configuração](https://web.dev/stale-while-revalidate/) é o caso da maioria dos sites e é o valor padrão.
-      * Com essa configuração, o conteúdo visualizado pela primeira vez pelo usuário será carregado do cache e, enquanto o usuário estiver consumindo esse conteúdo, o restante do conteúdo em cache será revalidado.
+      * Com essa configuração, o conteúdo visualizado pela primeira vez pelo usuário é carregado do cache e, enquanto o usuário estiver consumindo esse conteúdo, o restante do conteúdo em cache será revalidado.
    * **Frequentemente** — é o caso dos sites que necessitam de atualizações muito rápidas, como casas de leilões.
       * Com essa configuração, o aplicativo buscará primeiro o conteúdo mais recente por meio da rede e, se não estiver disponível, recorrerá ao cache local.
    * **Raramente** — esse é o caso para sites quase estáticos, como páginas de referência.
       * Com essa configuração, o aplicativo procurará primeiro o conteúdo no cache e, se não estiver disponível, recorrerá à rede para recuperá-lo.
-* **Pré-armazenamento em cache de arquivos** — esses arquivos hospedados no AEM serão salvos no cache do navegador local quando o service worker estiver sendo instalado e antes de ser usado. Isso garante que o aplicativo web esteja totalmente funcional quando estiver offline.
+* **Pré-armazenamento em cache de arquivos** - Esses arquivos hospedados no AEM são salvos no cache do navegador local quando o service worker está sendo instalado e antes de ser usado. Isso garante que o aplicativo web esteja totalmente funcional quando estiver offline.
 * **Inclusões de caminhos** — as solicitações de rede para os caminhos definidos são interceptadas e o conteúdo em cache é retornado de acordo com a **Estratégia de armazenamento em cache e frequência de atualização de conteúdo** configuradas.
 * **Exclusões de cache** — esses arquivos nunca serão armazenados em cache, independentemente das configurações em **Pré-armazenamento em cache de arquivos** e **Inclusões de caminho**.
 

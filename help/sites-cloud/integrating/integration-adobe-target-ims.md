@@ -2,10 +2,10 @@
 title: Configuração do IMS para uso na integração com o Adobe Target
 description: Saiba mais sobre a configuração do IMS para uso na integração com o Adobe Target
 exl-id: b5474b70-bedc-4cc9-ad47-89dcb2415e3a
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '863'
-ht-degree: 100%
+source-wordcount: '856'
+ht-degree: 92%
 
 ---
 
@@ -53,7 +53,7 @@ O primeiro estágio da configuração é criar uma configuração do IMS no AEM 
 
    >[!CAUTION]
    >
-   >Mantenha essa configuração aberta; ela será necessária novamente para [Concluir a configuração do IMS no AEM](#completing-the-ims-configuration-in-aem).
+   >Mantenha essa configuração aberta; ela será necessária novamente quando [Concluir a configuração do IMS no AEM](#completing-the-ims-configuration-in-aem).
 
    ![Baixar certificado](assets/integrate-target-ims-02.png)
 
@@ -69,11 +69,11 @@ Abra o Adobe Developer Console para criar um Projeto com o Adobe Target que o AE
 
    [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
-1. Quaisquer projetos que você tiver serão mostrados. Selecione **Criar novo projeto** - a localização e utilização dependerão:
+1. Todos os projetos que você tiver serão mostrados. Selecione **Criar novo projeto** - a localização e utilização dependerão:
 
-   * Se você ainda não tiver um projeto, **Criar novo projeto** estará no centro, na parte inferior.
+   * Se você ainda não tiver um projeto, **Criar novo projeto** está no centro, na parte inferior.
      ![Criar novo projeto - Primeiro projeto](assets/integration-target-ims-02.png)
-   * Caso já tenha projetos existentes, eles serão listados e **Criar novo projeto** estará no canto superior direito.
+   * Caso já tenha projetos existentes, eles são listados e **Criar novo projeto** está no canto superior direito.
      ![Criar novo projeto - Vários projetos](assets/integration-target-ims-03.png)
 
 
@@ -108,10 +108,10 @@ Abra o Adobe Developer Console para criar um Projeto com o Adobe Target que o AE
 
    ![Selecione perfis de produto e salve a API configurada](assets/integration-target-ims-16.png)
 
-1. A criação será confirmada.
+1. A criação é confirmada.
 
 <!--
-1. The creation will be confirmed, you can now **Continue to integration details**; these are needed for [Completing the IMS Configuration in AEM](#completing-the-ims-configuration-in-aem).
+1. The creation is confirmed, you can now **Continue to integration details**; these are needed for [Completing the IMS Configuration in AEM](#completing-the-ims-configuration-in-aem).
 
    ![](assets/integrate-target-ims-07.png)
 -->
@@ -169,7 +169,7 @@ Ao retornar para o AEM, é possível concluir a configuração do IMS adicionand
 
 1. Confirme com **Criar**.
 
-1. Sua configuração do Adobe Target será exibida no console do AEM.
+1. Sua configuração do Adobe Target é mostrada no console AEM.
 
    ![Configuração do IMS](assets/integrate-target-ims-11.png)
 
@@ -265,7 +265,7 @@ The configuration can now be referenced for a Cloud Service to use the Target St
 
 1. Select **OK** on the message, followed by **OK** on the dialog to confirm the configuration.
 
-1. You can now proceed to [Adding a Target Framework](/help/sites-administering/target-configuring.md#adding-a-target-framework) to configure ContextHub or ClientContext parameters that will be sent to Target. Note this may not be required for exporting AEM Experience Fragments to Target.
+1. You can now proceed to [Adding a Target Framework](/help/sites-administering/target-configuring.md#adding-a-target-framework) to configure ContextHub or ClientContext parameters that are sent to Target. Note this may not be required for exporting AEM Experience Fragments to Target.
 
 ### Tenant ID and Client Code {#tenant-client}
 
@@ -281,7 +281,7 @@ In both cases, be aware that:
 
 * By default, the Client Code (if added first) will also be automatically copied into the Tenant ID field.
 * You have the option to change the default Tenant ID set.
-* Accordingly, the backend calls to Target will be based on the **Tenant ID** and the client side calls to Target will be based on the **Client Code**.
+* Accordingly, the backend calls to Target are based on the **Tenant ID** and the client side calls to Target are based on the **Client Code**.
 
 As stated previously, the default case is the most common for AEM as a Cloud Service. Either way, make sure **both** fields contain the correct information depending on your requirements.
 

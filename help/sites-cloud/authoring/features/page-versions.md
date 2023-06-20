@@ -2,10 +2,10 @@
 title: Trabalhar com versões de páginas
 description: Criar, comparar e restaurar versões de uma página
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1512'
-ht-degree: 72%
+source-wordcount: '1502'
+ht-degree: 66%
 
 ---
 
@@ -46,7 +46,7 @@ O controle de versão cria um &quot;instantâneo&quot; de uma página em um mome
 
 1. Confirme a nova versão com a opção **Criar**.
 
-   As informações na linha do tempo serão atualizadas para indicar a nova versão.
+   As informações na linha do tempo são atualizadas para indicar a nova versão.
 
 ### Criar uma nova versão - Criar com um recurso selecionado {#creating-a-new-version-create-with-a-selected-resource}
 
@@ -56,7 +56,7 @@ O controle de versão cria um &quot;instantâneo&quot; de uma página em um mome
 1. A mesma caixa de diálogo será aberta. É possível inserir um **Rótulo** e um **Comentário**, se necessário.
 1. Confirme a nova versão com a opção **Criar**.
 
-A linha do tempo será aberta com as informações atualizadas para indicar a nova versão.
+A linha do tempo é aberta com as informações atualizadas para indicar a nova versão.
 
 ## Restaurar versões {#reinstating-versions}
 
@@ -78,7 +78,7 @@ Depois de criar uma versão da página, há vários métodos para restaurar uma 
 
 >[!NOTE]
 >
->Ao restaurar uma página, a versão criada será parte da nova ramificação.
+>Ao restaurar uma página, a versão criada faz parte de uma nova ramificação.
 >
 >Para ilustrar:
 >
@@ -99,7 +99,7 @@ Para **Reverter** a página selecionada para uma versão anterior:
 
    ![Reverter para essa versão](/help/sites-cloud/authoring/assets/versions-revert.png)
 
-1. Selecionar **Reverter para esta versão**. A versão selecionada será restaurada e as informações na linha do tempo serão atualizadas.
+1. Selecionar **Reverter para esta versão**. A versão selecionada é restaurada e as informações na linha do tempo são atualizadas.
 
 ### Restaurar versão {#restore-version}
 
@@ -112,10 +112,11 @@ Este método pode ser usado para restaurar versões de páginas especificadas na
    >[!NOTE]
    >
    >Se você:
+   >
    >* selecionou uma página única que nunca teve páginas secundárias,
    >* ou nenhuma das páginas na pasta tem versões,
    >
-   >Então, a exibição estará vazia, pois não há versões aplicáveis.
+   >A exibição fica vazia porque não há versões aplicáveis.
 
 1. As versões disponíveis estão listadas:
 
@@ -141,7 +142,7 @@ Esse método pode ser usado para restaurar uma versão de uma árvore, por exemp
 
 1. Navegue até a pasta desejada e [selecione-a](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 
-1. Selecione **Restaurar** e, em seguida, **Restaurar árvore** na [barra de ferramentas de ações](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar) localizada na parte superior. A versão mais recente da árvore será mostrada:
+1. Selecione **Restaurar** e, em seguida, **Restaurar árvore** na [barra de ferramentas de ações](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar) localizada na parte superior. A versão mais recente da árvore é mostrada:
 
    ![Restaurar árvore](/help/sites-cloud/authoring/assets/versions-restore-tree-01.png)
 
@@ -166,7 +167,7 @@ Esse método pode ser usado para restaurar uma versão de uma árvore, por exemp
 
    ![Versão de visualização](/help/sites-cloud/authoring/assets/versions-revert.png)
 
-1. Selecionar **Visualizar**. A página será exibida em uma nova guia.
+1. Selecionar **Visualizar**. A página é exibida em uma nova guia.
 
    >[!CAUTION]
    >
@@ -225,7 +226,7 @@ O Timewarp é um [modo](/help/sites-cloud/authoring/fundamentals/environment-too
 O Timewarp se esforça ao máximo para reproduzir uma página em um ponto selecionado no tempo. No entanto, devido às complexidades da criação contínua de conteúdo no AEM, isso nem sempre é possível. Essas limitações devem ser levadas em conta ao usar o Timewarp.
 
 * **O Timewarp funciona com base nas páginas publicadas** - o Timewarp só funcionará totalmente se você tiver publicado a página anteriormente. Caso contrário, o Timewarp mostrará a página atual no ambiente de criação.
-* **O Timewarp usa versões de página** - se você navegar para uma página que foi removida/excluída do repositório, ela será renderizada corretamente se ainda houver versões antigas disponíveis no repositório.
+* **O Timewarp usa versões de página** - Se você navegar para uma página que foi removida/excluída do repositório, ela será renderizada corretamente se ainda houver versões antigas disponíveis no repositório.
 * **As versões removidas afetam o Timewarp** - se as versões forem removidas do repositório, o Timewarp não poderá mostrar a exibição correta.
 * **O Timewarp é somente leitura** - não é possível editar a versão antiga da página. Ela só está disponível para exibição. Se você deseja restaurar a versão mais antiga, é necessário fazer isso manualmente usando [restaurar](#revert-to-a-version).
 * **O Timewarp é baseado apenas no conteúdo da página** - se os elementos (como código, css, ativos/imagens, etc) para renderização do site forem alterados, a exibição será diferente da original, pois esses itens não têm controle de versão no repositório.

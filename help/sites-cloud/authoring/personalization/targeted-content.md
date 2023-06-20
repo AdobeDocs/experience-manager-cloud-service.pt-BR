@@ -2,10 +2,10 @@
 title: Criação de conteúdo direcionado usando o modo Direcionar
 description: O modo Direcionar e o componente de Direcionamento fornecem ferramentas para criar conteúdo para experiências
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
-source-git-commit: 41027653bffb064b3c313d6512b0314336f6c8dc
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '5414'
-ht-degree: 45%
+source-wordcount: '5412'
+ht-degree: 44%
 
 ---
 
@@ -151,7 +151,7 @@ Depois que você [iniciar o processo de direcionamento](#the-targeting-process-c
 
 >[!CAUTION]
 >
->Tenha cuidado ao desativar o direcionamento para um componente que já está direcionado na instância do autor. A respectiva atividade será automaticamente excluída da instância de publicação também.
+>Tenha cuidado ao desativar o direcionamento para um componente que já está direcionado na instância do autor. A respectiva atividade é excluída automaticamente da instância de publicação também.
 
 >[!NOTE]
 >

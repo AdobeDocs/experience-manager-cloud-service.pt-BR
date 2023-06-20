@@ -2,10 +2,10 @@
 title: Criar e organizar páginas
 description: Como criar e organizar páginas com o AEM
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '2556'
-ht-degree: 76%
+source-wordcount: '2542'
+ht-degree: 71%
 
 ---
 
@@ -133,7 +133,7 @@ Quando você fornece um **Nome** de página ao criar uma nova página, o AEM val
 
 ### Modelos {#templates}
 
-No AEM, um modelo especifica um tipo de página especializado. Um modelo será usado como a base para qualquer nova página que está sendo criada.
+No AEM, um modelo especifica um tipo de página especializado. Um modelo é usado como a base para qualquer nova página que está sendo criada.
 
 O modelo define a estrutura de uma página, incluindo uma imagem em miniatura e outras propriedades. Por exemplo, você pode ter modelos separados para páginas de produtos, mapas de site e informações de contato. Os modelos são compostos de [componentes](#components).
 
@@ -201,7 +201,7 @@ A menos que todas as páginas tenham sido criadas antecipadamente para você, é
 
       * Usado para gerar o URI. Se não especificado, o nome é derivado do título.
       * Quando você fornece um **Nome** de página ao criar uma nova página, o AEM valida[ esse nome de acordo com as convenções](/help/implementing/developing/introduction/naming-conventions.md) impostas pelo AEM e JCR.
-      * Você **não é possível enviar caracteres inválidos** no **Nome** campo. Quando o AEM detectar caracteres inválidos, o campo será realçado e uma mensagem explicativa será exibida para indicar os caracteres que precisam ser removidos/substituídos.
+      * Você **não é possível enviar caracteres inválidos** no **Nome** campo. Quando o AEM detecta caracteres inválidos, o campo é realçado e uma mensagem explicativa é exibida para indicar os caracteres que precisam ser removidos/substituídos.
 
    >[!TIP]
    >
@@ -242,7 +242,7 @@ Após criar uma página ou navegar para uma página existente (no console), voc�
 
    ![Botão Editar](/help/sites-cloud/authoring/assets/edit.png)
 
-1. A página será aberta e aqui é possível [editar a página](/help/sites-cloud/authoring/fundamentals/editing-content.md) conforme necessário.
+1. A página é aberta e você pode [editar a página](/help/sites-cloud/authoring/fundamentals/editing-content.md) conforme necessário.
 
 >[!NOTE]
 >
@@ -277,7 +277,7 @@ Após criar uma página ou navegar para uma página existente (no console), voc�
 
 >[!NOTE]
 >
->Se você copiar a página para um local onde uma página com o mesmo nome que a original já existe, o sistema gera automaticamente uma variação do nome ao anexar um número. Por exemplo, se `beach` já existir, uma nova página com o nome `beach` se tornará `beach1`.
+>Se você copiar a página para um local onde uma página com o mesmo nome que a original já existe, o sistema gera automaticamente uma variação do nome ao anexar um número. Por exemplo, se `beach` já existir, uma nova página com o nome `beach` torna-se `beach1`.
 
 >[!NOTE]
 >
@@ -316,7 +316,7 @@ O AEM oferece a funcionalidade de atualizar qualquer link interno que se refira 
 
    >[!NOTE]
    >
-   >Se você mover uma página para um local onde uma página com o mesmo nome já existe, o sistema gera automaticamente uma variação do nome ao anexar um número. Por exemplo, se `beach` já existir, uma nova página com o nome `beach` se tornará `beach1`.
+   >Se você mover uma página para um local onde uma página com o mesmo nome já existe, o sistema gera automaticamente uma variação do nome ao anexar um número. Por exemplo, se `beach` já existir, uma nova página com o nome `beach` torna-se `beach1`.
 
 1. No estágio **Selecionar destino** do assistente, é possível:
 
@@ -329,13 +329,13 @@ O AEM oferece a funcionalidade de atualizar qualquer link interno que se refira 
 
    >[!NOTE]
    >
-   >Por padrão, a página principal da página que você está movendo/renomeando será selecionada como destino.
+   >Por padrão, a página principal da página que você está movendo ou renomeando é selecionada como destino.
 
    ![Selecionar destino de movimentação da página](/help/sites-cloud/authoring/assets/move-page-destination.png)
 
    >[!NOTE]
    >
-   >Se você mover uma página para um local onde uma página com o mesmo nome já existe, o sistema gera automaticamente uma variação do nome ao anexar um número. Por exemplo, se `winter` já existir, `winter` se tornará `winter1`.
+   >Se você mover uma página para um local onde uma página com o mesmo nome já existe, o sistema gera automaticamente uma variação do nome ao anexar um número. Por exemplo, se `winter` já existe, `winter` torna-se `winter1`.
 
 1. Se a página estiver vinculada ou referenciada, ou tiver sido publicada, os detalhes serão listados na **Ajustar/Republicar** etapa.
 
@@ -351,11 +351,11 @@ O AEM oferece a funcionalidade de atualizar qualquer link interno que se refira 
 
 >[!NOTE]
 >
->Se a página já tiver sido publicada, movê-la automaticamente desfará a publicação. Por padrão, ela será publicadas novamente quando o movimento for concluído, mas isso pode ser alterado ao desmarcar o campo **Republicar** na etapa **Ajustar/Republicar**.
+>Se a página já tiver sido publicada, movê-la automaticamente cancela a publicação. Por padrão, ela é republicada quando a mudança é concluída, mas isso pode ser alterado ao desmarcar a opção **Republicar** no campo **Ajustar/Republicar** etapa.
 
 >[!NOTE]
 >
->Caso a página não seja mencionada de alguma maneira, então a etapa **Ajustar/republicar** será ignorada.
+>Se a página não for mencionada de nenhuma maneira, a variável **Ajustar/Republicar** etapa ignorada.
 
 >[!NOTE]
 >
@@ -369,7 +369,7 @@ O AEM oferece a funcionalidade de atualizar qualquer link interno que se refira 
 
 Normalmente, uma ação de mover ou renomear página é executada imediatamente. Essa ação é considerada um processamento síncrono e outras ações na interface do usuário são bloqueadas até que a ação seja concluída.
 
-No entanto, se o número de páginas afetadas estiver acima de um limite definido, a ação será processada de modo assíncrono, permitindo que o usuário continue a criação na interface do usuário desimpedida pela ação de mover ou renomear página.
+No entanto, se o número de páginas afetadas estiver acima de um limite definido, a ação será processada de forma assíncrona, permitindo que o usuário continue a criação na interface do usuário desimpedida pela ação de mover ou renomear página.
 
 * Ao clicar em **Mover** na última etapa acima, o AEM verifica o limite configurado.
 * Se o número de páginas afetadas estiver abaixo do limite, ele executará uma operação síncrona.
@@ -401,13 +401,13 @@ O status de trabalhos assíncronos pode ser verificado no painel [**Status de tr
 
    ![Caixa de diálogo Excluir](/help/sites-cloud/authoring/assets/delete-page.png)
 
-   * **Você deseja arquivar as páginas antes de excluir?** - Se marcada, as versões das páginas selecionadas para exclusão serão criadas após a exclusão.
+   * **Você deseja arquivar as páginas antes de excluir?** - Se marcada, as versões das páginas selecionadas para exclusão serão criadas ao excluir.
       * [As versões podem ser restauradas em uma data posterior.](/help/sites-cloud/authoring/features/page-versions.md)
       * As páginas excluídas sem versões anteriores não podem ser restauradas.
    * **Cancelar** para suspender a ação
    * **Excluir** para confirmar a ação:
 
-      * Se a página não tiver referências, ela será excluída.
+      * Se a página não tiver referências, a página será excluída.
       * Caso a página tenha referências, uma caixa de mensagem vai informá-lo de que **Uma ou mais páginas são mencionadas.** Você pode selecionar **Forçar exclusão** ou **Cancelar**.
 
 >[!NOTE]

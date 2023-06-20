@@ -2,10 +2,10 @@
 title: Configuração da segmentação com o ContextHub
 description: Saiba como configurar a segmentação usando o ContextHub.
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
-source-git-commit: a278b3925180f4baa3b82af84080c947a72c9844
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1697'
-ht-degree: 100%
+source-wordcount: '1694'
+ht-degree: 95%
 
 ---
 
@@ -71,7 +71,7 @@ As comparações de segmentos a seguir estão disponíveis prontas para uso para
 >
 >Portanto, ao [criar um segmento](#creating-a-new-segment), você deve selecionar um **tipo de dados** sempre que os tipos de valores comparados forem conhecidos. Por exemplo:
 >
->Ao comparar a propriedade `profile/age`, você já sabe que o tipo comparado será **número**, mesmo que `profile/age` não esteja definido, uma comparação `profile/age` menor do que 30 retornará **falso**, como esperado.
+>Ao comparar a propriedade `profile/age`, você já sabe que o tipo comparado é um **número**, mesmo que `profile/age` não estiver definido, uma comparação `profile/age` menos de 30 é retornado **false**, como você esperaria.
 
 ### Referências {#references}
 
@@ -96,7 +96,7 @@ Para definir seu novo segmento:
 
    ![Novo segmento](../assets/contexthub-new-segment.png)
 
-   Cada segmento tem um parâmetro de reforço usado como fator de ponderação. Um número mais alto indica que o segmento será selecionado em detrimento de um segmento com um número menor em instâncias em que vários segmentos são válidos.
+   Cada segmento tem um parâmetro de reforço usado como fator de ponderação. Um número mais alto indica que o segmento é selecionado em detrimento de um segmento com um número menor em instâncias em que vários segmentos são válidos.
 
    * Valor mínimo: `0`
    * Valor máximo: `1000000`
@@ -199,8 +199,8 @@ Se você tiver muitos segmentos, eles podem se tornar difíceis de gerenciar com
 
 1. Forneça um **Título** e um **Nome** para sua pasta.
    * O **Título** deve ser descritivo.
-   * O **Nome** se tornará o nome do nó no repositório.
-      * Ele será gerado automaticamente com base no título e ajustado de acordo com as [convenções de nomenclatura do AEM.](/help/implementing/developing/introduction/naming-conventions.md)
+   * A variável **Nome** torna-se o nome do nó no repositório.
+      * Ele é gerado automaticamente com base no título e ajustado de acordo com [Convenções de nomenclatura do AEM.](/help/implementing/developing/introduction/naming-conventions.md)
       * Ele pode ser ajustado, se necessário.
 
    ![Criar pasta](../assets/contexthub-create-folder.png)
@@ -212,7 +212,7 @@ Se você tiver muitos segmentos, eles podem se tornar difíceis de gerenciar com
 1. A pasta aparecerá na lista de segmentos.
    * A forma como você classifica as colunas afetará onde a nova pasta aparece na lista.
    * Toque ou clique nos cabeçalhos da coluna para ajustar sua classificação.
-      ![A nova pasta](../assets/contexthub-folder.png)
+     ![A nova pasta](../assets/contexthub-folder.png)
 
 ### Modificar pastas existentes {#modify-folders}
 

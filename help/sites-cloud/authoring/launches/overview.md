@@ -2,10 +2,10 @@
 title: Lançamentos
 description: Os lançamentos permitem desenvolver conteúdo com eficiência para uma versão futura. Eles permitem que você faça alterações prontas para publicação futura, enquanto mantém suas páginas atuais
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '906'
-ht-degree: 46%
+source-wordcount: '903'
+ht-degree: 44%
 
 ---
 
@@ -63,8 +63,8 @@ Os lançamentos permitem:
       * Promover todas as páginas ou somente as páginas modificadas.
    * Automaticamente - isso envolve o seguinte:
       * O campo **Data de lançamento** (**Data de ativação**):**** pode ser definida ao criar ou editar um lançamento.
-      * A variável **Pronto para produção** sinalizador: só pode ser definido ao editar um lançamento.
-      * Se a variável **Pronto para produção** for definido, a inicialização será promovida automaticamente para as páginas de produção no **Launch**(**Ao vivo**) **data**. Após a promoção, as páginas de produção são publicadas automaticamente.\
+      * A variável **Pronto para produção** sinalizador: só pode ser definido ao editar uma inicialização.
+      * Se a variável **Pronto para produção** for definido, o lançamento será promovido automaticamente para as páginas de produção no **Launch**(**Ao vivo**) **data**. Após a promoção, as páginas de produção são publicadas automaticamente.\
         Se nenhuma data tiver sido definida, o sinalizador não terá efeito.
 * Atualize suas páginas de origem e de lançamento em paralelo:
    * As alterações nas páginas de origem são implementadas automaticamente na cópia de lançamento (se configurada como herança, ou seja, como uma live copy).
@@ -92,7 +92,7 @@ Os lançamentos permitem:
 
 1. No **Sites** navegue até a origem do(s) lançamento(s).
 1. Abra o **Referências** e selecione a página de origem.
-1. Selecione **Lançamentos**. Os lançamentos existentes serão listados, juntamente com o acesso ao **console de Lançamentos**:
+1. Selecionar **Lançamentos**, os lançamentos existentes são listados, juntamente com o acesso ao **Console Lançamentos**:
 
    ![Referências de lançamentos no console do Sites](/help/sites-cloud/authoring/assets/launches-references.png)
 

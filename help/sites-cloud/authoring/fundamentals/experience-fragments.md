@@ -2,10 +2,10 @@
 title: Fragmentos de experiência
 description: Use os Fragmentos de experiência do Adobe Experience Manager as a Cloud Service para tornar suas experiências reutilizáveis e flexíveis.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 9c3153efe4aacd1666663cd5eb718f75329202af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '2064'
-ht-degree: 86%
+source-wordcount: '2052'
+ht-degree: 79%
 
 ---
 
@@ -62,7 +62,7 @@ Os autores desejam usar o AEM somente para criação, não para entrega ao cli
 Fragmentos de experiência devem ser usados:
 
 * Sempre que quiser reutilizar as experiências.
-   * Experiências que serão reutilizadas com conteúdo igual ou semelhante.
+   * Experiências reutilizadas com conteúdo igual ou semelhante.
 * Ao usar o AEM como uma plataforma de entrega de conteúdo para terceiros.
    * Qualquer solução que deseje usar AEM como a plataforma de entrega de conteúdo.
    * Ao incorporar conteúdo em pontos de contato de terceiros.
@@ -83,15 +83,15 @@ A criação de pastas permite:
 
 * criar uma estrutura significativa para os Fragmentos de experiência; por exemplo, de acordo com a classificação
 
-   >[!NOTE]
-   >
-   >Não é necessário alinhar a estrutura dos Fragmentos de experiência com a estrutura de página do site.
+  >[!NOTE]
+  >
+  >Não é necessário alinhar a estrutura dos Fragmentos de experiência com a estrutura de página do site.
 
 * [alocar os modelos permitidos no nível da pasta](#configure-allowed-templates-folder)
 
-   >[!NOTE]
-   >
-   >Você pode usar o [editor de modelos](/help/sites-cloud/authoring/features/templates.md) para criar seu próprio modelo.
+  >[!NOTE]
+  >
+  >Você pode usar o [editor de modelos](/help/sites-cloud/authoring/features/templates.md) para criar seu próprio modelo.
 
 O projeto WKND estrutura alguns Fragmentos de experiência de acordo com `Contributors`. A estrutura usada também ilustra a maneira como outros recursos, como o Gerenciamento de vários sites (incluindo cópias de idiomas), podem ser usados.
 
@@ -184,7 +184,7 @@ Para criar um fragmento de experiência:
 
 1. Insira as **Propriedades** do **Fragmento de experiência**.
 
-   É obrigatório ter um **título**. Se a variável **Nome** for deixada em branco, será derivada do **Título**.
+   É obrigatório ter um **título**. Se a variável **Nome** é deixada em branco e é derivada do **Título**.
 
    ![Propriedades do fragmento de experiência](/help/sites-cloud/authoring/assets/xf-04.png)
 
@@ -196,7 +196,7 @@ Para criar um fragmento de experiência:
 
 1. Clique em **Criar**.
 
-   Uma mensagem será exibida. Selecionar:
+   Uma mensagem é exibida. Selecionar:
 
    * **Concluído** para retornar ao console
    * **Abrir** para abrir o editor de fragmento
@@ -241,7 +241,7 @@ Você pode criar variações do Fragmento de experiência, dependendo das suas n
 
    * **Modelo**
    * **Título**
-   * **Nome** - se deixado em branco, ele será derivado do Título
+   * **Nome** - se deixado em branco, é derivado do Título
    * **Descrição**
    * **Tags de variação**
 
@@ -250,7 +250,7 @@ Você pode criar variações do Fragmento de experiência, dependendo das suas n
    ![Propriedades de variação](/help/sites-cloud/authoring/assets/xf-07.png)
 
 
-1. Confirme com **Concluído**, a nova variação será mostrada no painel.
+1. Confirmar com **Concluído**, a nova variação é mostrada no painel.
 
 ## Usar seu fragmento de experiência {#using-your-experience-fragment}
 
@@ -293,7 +293,7 @@ Para criar um novo Bloco de Construção:
 
    ![Nomear bloco de construção](/help/sites-cloud/authoring/assets/xf-11.png)
 
-1. O **Bloco de construção** será mostrado na guia esquerda (**Local**) e poderá ser selecionado para outras ações:
+1. A variável **Bloco de construção** é exibido na guia à esquerda (**Local**) e pode ser selecionado para outras ações:
 
    ![Bloco de construção no painel](/help/sites-cloud/authoring/assets/xf-12.png)
 
@@ -341,7 +341,7 @@ Para personalizar o fragmento:
 
    >[!NOTE]
    >
-   >As propriedades de personalização definidas em uma pasta serão herdadas por todas as pastas secundárias por meio da subárvore e os Fragmentos de experiência (e variações) dentro dessa subárvore. Elas podem ser substituídas quebrando a herança.
+   >As propriedades de personalização definidas em uma pasta são herdadas por todas as pastas secundárias por meio da subárvore e os Fragmentos de experiência (e variações) dentro dessa subárvore. Elas podem ser substituídas quebrando a herança.
 
 1. Abra a guia **Personalização** para definir e salvar suas configurações. Por exemplo, em uma pasta:
 
@@ -349,27 +349,25 @@ Para personalizar o fragmento:
 
    >[!CAUTION]
    >
-   >Quando um fragmento é incorporado em uma página do Sites e a **Personalização** está configurada, então somente a versão de personalização da página é usada no tempo de renderização da página.
+   >Quando um fragmento é incorporado em uma página do Sites e **Personalização** for configurada, então somente a versão de personalização da página será usada no tempo de renderização da página.
    >
    >Para que o direcionamento executado nos componentes de um fragmento funcione na renderização da página, as seguintes condições devem ser atendidas:
    >
    >O **Caminho do ContextHub** selecionado na guia **Personalização** deve ser:
    >
-   >* o mesmo caminho que o configurado para a página em que o fragmento será renderizado
-      >Ou:
+   >* o mesmo caminho que o configurado para a página em que o fragmento é renderizado
+   >Ou:
    >* um caminho que contenha um subconjunto dos armazenamentos definidos no ContextHub configurado para a página
-
    >
    > 
 O **Caminho dos segmentos** selecionado na guia **Personalização** deve ser:
-   * o mesmo caminho que o configurado para a página em que o fragmento será renderizado
-Ou
+   >
+   * o mesmo caminho que o configurado para a página em que o fragmento é renderizado Ou
    * um caminho que contenha um subconjunto dos segmentos configurados para a página
-
 
 ### Definição de direcionamento para seu Fragmento de experiência {#defining-targeting-experience-fragment}
 
-Após configurar as propriedades de personalização, o modo Direcionamento estará disponível quando o fragmento for aberto para edição.
+Depois que as propriedades de personalização são configuradas, o modo Direcionamento fica disponível quando o fragmento é aberto para edição.
 
 ![Editor de fragmento de experiência - Modo de direcionamento](/help/sites-cloud/authoring/assets/xf-targeting-mode.png)
 
@@ -391,7 +389,9 @@ Os detalhes são mostrados em todas as exibições do console **Fragmentos de ex
    As propriedades estão disponíveis em várias guias:
 
    >[!CAUTION]
+   >
    Essas guias são exibidas quando você abre **Propriedades** no console Fragmentos de experiência.
+   >
    Se você clicar em **Abrir propriedades** ao editar um Fragmento de experiência, as [Propriedades da página](/help/sites-cloud/authoring/fundamentals/page-properties.md) apropriadas serão exibidas.
 
    ![Propriedades do fragmento de experiência](/help/sites-cloud/authoring/assets/xf-17.png)
@@ -421,6 +421,7 @@ Os detalhes são mostrados em todas as exibições do console **Fragmentos de ex
 Usando o seletor `.plain.` no URL, você poderá acessar a representação HTML simples do navegador.
 
 >[!NOTE]
+>
 Embora isso esteja disponível diretamente no navegador, [o principal objetivo é permitir que outros aplicativos (por exemplo, aplicativos Web de terceiros, implementações personalizadas de publicações de conteúdo para dispositivos móveis) acessem o conteúdo do Fragmento de experiência diretamente, usando apenas o URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
 
 ## Publicação de fragmentos de experiência {#publishing-experience-fragments}

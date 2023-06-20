@@ -2,10 +2,10 @@
 title: Sistema de estilos
 description: O sistema de estilos permite ao autor do modelo definir classes de estilo na política de conteúdo de um componente para que autores de conteúdo possam selecioná-las ao editarem o componente em uma página. Esses estilos podem ser variações visuais alternativas de um componente, tornando-o mais flexível.
 exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1320'
-ht-degree: 60%
+source-wordcount: '1319'
+ht-degree: 59%
 
 ---
 
@@ -154,7 +154,7 @@ Evite definir nomes de elementos para estilos que podem ser combinados. Quando v
 >
 1. HTL tem precedência sobre tudo: `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
 1. Entre os vários estilos ativos, o primeiro estilo na lista de estilos configurados na política do componente é aplicado.
-1. Por fim, a `cq:htmlTag`/ `cq:tagName` do componente será considerada um valor de fallback.
+1. Por fim, as `cq:htmlTag`/ `cq:tagName` é considerado um valor de fallback.
 >
 
 Essa capacidade de definir nomes de estilo é útil para componentes genéricos, como o Contêiner de layout ou o componente de Fragmento do conteúdo, para oferecer-lhes significado adicional.

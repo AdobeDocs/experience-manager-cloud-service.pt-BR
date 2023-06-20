@@ -2,10 +2,10 @@
 title: Promoção de inicializações
 description: É necessário promover as páginas de inicialização para mover o conteúdo de volta para a origem (produção) antes de publicar.
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '816'
-ht-degree: 41%
+source-wordcount: '814'
+ht-degree: 38%
 
 ---
 
@@ -50,7 +50,7 @@ ht-degree: 41%
       1. Selecione **Promover lançamento** para abrir o assistente.
    * O console do **Sites** ao navegar pelas páginas de inicialização:
       1. Selecione a página de inicialização necessária usando o [modo de seleção](/help/sites-cloud/authoring/getting-started/basic-handling.md).
-      1. A ação **Promover** estará disponível na barra de ferramentas.
+      1. A variável **Promover** ação está disponível na barra de ferramentas.
    * O console de **Inicializações**:
       1. Selecione o seu lançamento (toque/clique na miniatura).
       1. Selecionar **Promover**.
@@ -99,7 +99,7 @@ Depois de criar uma inicialização aninhada, você pode promovê-la de volta pa
 1. Insira os detalhes necessários:
    * **Target**
       * **Destino da promoção** - É possível promover para qualquer uma das origens.
-      * **Excluir a inicialização após a promoção** - Após a promoção, a inicialização selecionada e qualquer inicialização aninhada dentro dela será excluída.
+      * **Excluir inicialização após promoção** - Após a promoção, a inicialização selecionada e qualquer inicialização aninhada dentro dela será excluída.
    * **Escopo** - Aqui é possível promover toda a inicialização ou somente as páginas que foram editadas. No último caso, você pode optar por incluir/excluir subpáginas. A configuração padrão é promover alterações de página somente para a página atual:
       * **Promover lançamento completo**
       * **Divulgar as páginas modificadas**

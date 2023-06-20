@@ -4,10 +4,10 @@ description: Use o modelo de fragmento de conteúdo criado anteriormente para cr
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: ac94981e477e1fe8b883460ed9be009b4c1c088d
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
 source-wordcount: '659'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -37,7 +37,7 @@ Neste módulo, você criará um novo Fragmento de conteúdo com base nesse model
 
 1. Toque ou clique no botão **Criar** na parte superior direita do console.
 
-1. A caixa de diálogo **Novo fragmento de conteúdo** será aberta, onde é possível começar a criar um novo fragmento de conteúdo. O **Local** é automaticamente preenchido com a seção onde o novo conteúdo será salvo.
+1. A variável **Novo fragmento de conteúdo** é aberta, onde você pode começar a criar um novo Fragmento de conteúdo. **Localização** é automaticamente preenchido com onde o novo conteúdo é salvo.
 
 1. No menu suspenso **Modelo de Fragmentos de conteúdo**, selecione o modelo de Fragmento de conteúdo **Aventura** criado anteriormente.
 
@@ -62,7 +62,7 @@ Depois de salvar e abrir o novo fragmento de conteúdo, o editor de fragmentos d
 1. Forneça uma **Descrição** para o fragmento colando o texto a seguir.
 
    ```text
-   Visiting Tuscany on a bicycle is about experiencing the old world charm of Italy on your own terms. Your efforts on the climbs of Italy's rolling hills during this tour will be rewarded with sunny Mediterranean landscapes and unmatched Italian hospitality.  Tuscany’s natural wonders have always been a well of inspiration for arts and culture. Find out why as you explore the Italian countryside and coastline on bicycle.
+   Visiting Tuscany on a bicycle is about experiencing the old world charm of Italy on your own terms. Your efforts on the climbs of Italy's rolling hills during this tour are rewarded with sunny Mediterranean landscapes and unmatched Italian hospitality. Tuscany's natural wonders have always been a well of inspiration for arts and culture. Find out why as you explore the Italian countryside and coastline on bicycle.
    ```
 
 1. Forneça um **Preço** para o fragmento, inserindo `$700`.

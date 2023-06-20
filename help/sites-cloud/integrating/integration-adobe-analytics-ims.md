@@ -2,10 +2,10 @@
 title: Configuração do IMS para uso na integração com o Adobe Analytics
 description: Saiba mais sobre a configuração do IMS para uso na integração com o Adobe Analytics
 exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '894'
-ht-degree: 100%
+source-wordcount: '887'
+ht-degree: 92%
 
 ---
 
@@ -55,7 +55,7 @@ O primeiro estágio da configuração é criar uma configuração do IMS no AEM 
 
    >[!CAUTION]
    >
-   >Mantenha essa configuração aberta. Ela será necessária novamente ao [Concluir a configuração do IMS no AEM](#completing-the-ims-configuration-in-aem).
+   >Mantenha essa configuração aberta; ela será necessária novamente quando [Concluir a configuração do IMS no AEM](#completing-the-ims-configuration-in-aem).
 
    ![Baixar certificado](assets/integrate-analytics-ims-02.png)
 
@@ -71,11 +71,11 @@ Abra o Console do desenvolvedor da Adobe para criar um Projeto com o Adobe Analy
 
    [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
-1. Quaisquer projetos que você tiver serão mostrados. Selecione **Criar novo projeto** - a localização e utilização dependerão:
+1. Todos os projetos que você tiver serão mostrados. Selecione **Criar novo projeto** - a localização e utilização dependerão:
 
-   * Se você ainda não tiver um projeto, **Criar novo projeto** estará no centro, na parte inferior.
+   * Se você ainda não tiver um projeto, **Criar novo projeto** está no centro, na parte inferior.
      ![Criar novo projeto - Primeiro projeto](assets/integration-analytics-ims-02.png)
-   * Caso já tenha projetos existentes, eles serão listados e **Criar novo projeto** estará no canto superior direito.
+   * Caso já tenha projetos existentes, eles são listados e **Criar novo projeto** está no canto superior direito.
      ![Criar novo projeto - Vários projetos](assets/integration-analytics-ims-03.png)
 
 
@@ -107,7 +107,7 @@ Abra o Console do desenvolvedor da Adobe para criar um Projeto com o Adobe Analy
 
    ![Selecionar perfis de produto necessários](assets/integration-analytics-ims-16.png)
 
-1. A configuração será confirmada.
+1. A configuração é confirmada.
 
 ### Atribuir privilégios à integração {#assigning-privileges-to-the-integration}
 
@@ -160,7 +160,7 @@ Ao retornar para o AEM, é possível concluir a configuração do IMS adicionand
 
 1. Confirme com **Criar**.
 
-1. Sua configuração do Adobe Analytics será exibida no console do AEM.
+1. Sua configuração do Adobe Analytics é mostrada no console AEM.
 
    ![Configuração IMS](assets/integrate-analytics-ims-11.png)
 
@@ -219,5 +219,5 @@ The configuration can now be referenced for a Cloud Service to use the Analytics
 
 1. Complete other parameters as required, followed by **OK** on the dialog to confirm the configuration.
 
-1. You can now proceed to [Adding an Analytics Framework](/help/sites-administering/adobeanalytics-connect.md) to configure parameters that will be sent to Adobe Analytics. 
+1. You can now proceed to [Adding an Analytics Framework](/help/sites-administering/adobeanalytics-connect.md) to configure parameters that are sent to Adobe Analytics. 
 -->

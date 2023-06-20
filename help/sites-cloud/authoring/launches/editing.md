@@ -2,9 +2,9 @@
 title: Edição de inicializações
 description: Depois de criar uma inicialização para sua página (ou conjunto de páginas), você pode editar o conteúdo na cópia de inicialização da(s) página(s).
 exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '552'
 ht-degree: 52%
 
 ---
@@ -54,7 +54,7 @@ Para rastrear as alterações feitas, é possível exibir a inicialização em *
 
    ![Comparação do lançamento com a origem](/help/sites-cloud/authoring/assets/launches-compare.png)
 
-1. As duas páginas (inicialização e origem) serão abertas lado a lado.
+1. As duas páginas (lançamento e origem) são abertas lado a lado.
 
    Para obter informações completas sobre como usar esse recurso, consulte [Diferença de página](/help/sites-cloud/authoring/features/page-diff.md).
 

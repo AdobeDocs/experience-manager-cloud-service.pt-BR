@@ -2,10 +2,10 @@
 title: Sua caixa de entrada
 description: Gerenciamento de tarefas com a caixa de entrada
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '909'
-ht-degree: 77%
+source-wordcount: '905'
+ht-degree: 73%
 
 ---
 
@@ -112,7 +112,7 @@ Para ambas as exibições (Lista e Calendário), é possível definir as configu
 >
 >Embora seja possível selecionar mais de um item, ações só podem ser executadas em um item de cada vez.
 
-1. Para realizar uma ação em um item, selecione a miniatura do item apropriado. Os ícones das ações aplicáveis a esse item serão mostrados na barra de ferramentas:
+1. Para realizar uma ação em um item, selecione a miniatura do item apropriado. Os ícones das ações aplicáveis a esse item são mostrados na barra de ferramentas:
 
    ![Selecionar item da caixa de entrada](/help/sites-cloud/authoring/assets/inbox-select-item.png)
 
@@ -138,9 +138,9 @@ Para ambas as exibições (Lista e Calendário), é possível definir as configu
 
 2. Dependendo do item selecionado, uma ação será iniciada, por exemplo:
 
-   * Uma caixa de diálogo apropriada para a ação será aberta
-   * Um assistente de ação será iniciado
-   * Uma página de documentação será aberta
+   * Uma caixa de diálogo apropriada para a ação é aberta
+   * Um assistente de ação foi iniciado
+   * Uma página de documentação é aberta
 
    Por exemplo, **Delegar** abrirá uma caixa de diálogo:
 

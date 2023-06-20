@@ -2,9 +2,9 @@
 title: Participar de fluxos de trabalho
 description: Os fluxos de trabalho normalmente incluem etapas que exigem que uma pessoa execute uma atividade em uma página ou ativo.
 exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1545'
+source-wordcount: '1542'
 ht-degree: 40%
 
 ---
@@ -24,13 +24,13 @@ Os fluxos de trabalho normalmente incluem etapas que exigem que uma pessoa execu
 
 Quando um item de trabalho é atribuído a você (por exemplo, **Aprovar conteúdo**), vários alertas e/ou notificações são exibidos:
 
-* Seu [notificação](/help/sites-cloud/authoring/getting-started/inbox.md) O indicador (barra de ferramentas) será incrementado:
+* Seu [notificação](/help/sites-cloud/authoring/getting-started/inbox.md) O indicador (barra de ferramentas) é incrementado:
 
-   ![Barra de ferramentas Notificação](/help/sites-cloud/authoring/assets/workflows-notifications.png)
+  ![Barra de ferramentas Notificação](/help/sites-cloud/authoring/assets/workflows-notifications.png)
 
-* O item será listado na sua [Caixa de entrada](/help/sites-cloud/authoring/getting-started/inbox.md) de notificações:
+* O item está listado na sua notificação [Caixa de entrada](/help/sites-cloud/authoring/getting-started/inbox.md):
 
-   ![Notificações na caixa de entrada](/help/sites-cloud/authoring/assets/workflows-inbox.png)
+  ![Notificações na caixa de entrada](/help/sites-cloud/authoring/assets/workflows-inbox.png)
 
 * Quando você estiver usando o editor de páginas, a barra de status mostrará:
    * O nome do(s) fluxo(s) de trabalho que está sendo aplicado(s) à página; por exemplo, Solicitação de ativação.
@@ -39,18 +39,18 @@ Quando um item de trabalho é atribuído a você (por exemplo, **Aprovar conteú
       * use as setas para a esquerda/direita para navegar pelas informações de status dos vários workflows.
       * clique/toque no número real para abrir uma lista suspensa de todos os fluxos de trabalho aplicáveis e selecione o fluxo de trabalho que deseja exibir na barra de status.
 
-   ![Página com vários workflows](/help/sites-cloud/authoring/assets/workflows-multiple.png)
+  ![Página com vários workflows](/help/sites-cloud/authoring/assets/workflows-multiple.png)
 
-   >[!NOTE]
-   >
-   >A barra de status é visível apenas para usuários com privilégios de fluxo de trabalho, por exemplo, os membros do grupo `workflow-users`.
-   >
-   >
-   >As ações são exibidas quando o usuário atual está diretamente envolvido na etapa atual do fluxo de trabalho.
+  >[!NOTE]
+  >
+  >A barra de status é visível apenas para usuários com privilégios de fluxo de trabalho, por exemplo, os membros do grupo `workflow-users`.
+  >
+  >
+  >As ações são exibidas quando o usuário atual está diretamente envolvido na etapa atual do fluxo de trabalho.
 
-* Quando **Linha do tempo** estiver aberta para o recurso, a etapa do fluxo de trabalho será mostrada. Ao clicar/tocar no banner do alerta, as ações disponíveis também serão exibidas:
+* Quando **Linha do tempo** for aberta para o recurso, a etapa do fluxo de trabalho será mostrada. Ao clicar/tocar no banner do alerta, as ações disponíveis também serão exibidas:
 
-   ![Fluxo de trabalho na linha do tempo](/help/sites-cloud/authoring/assets/workflows-timeline.png)
+  ![Fluxo de trabalho na linha do tempo](/help/sites-cloud/authoring/assets/workflows-timeline.png)
 
 ### Concluindo uma etapa do participante {#completing-a-participant-step}
 
@@ -219,19 +219,19 @@ Os detalhes do workflow são mostrados em guias e as ações apropriadas estão 
 
 * Guia **ITEM DE TRABALHO:**
 
-   Guia ![ITEM DE TRABALHO](/help/sites-cloud/authoring/assets/workflows-work-item.png)
+  Guia ![ITEM DE TRABALHO](/help/sites-cloud/authoring/assets/workflows-work-item.png)
 
 * Guia **INFORMAÇÕES DO FLUXO DE TRABALHO**:
 
-   ![Guia FLUXO DE TRABALHO](/help/sites-cloud/authoring/assets/workflows-workflow-info.png)
+  ![Guia FLUXO DE TRABALHO](/help/sites-cloud/authoring/assets/workflows-workflow-info.png)
 
-   Se Estágio do fluxo de trabalho tiverem sido configurados para o modelo, você poderá visualizar o progresso de acordo com estes: <!--If [Workflow Stages](/help/sites-developing/workflows.md#workflow-stages) have been configured for the model, you can view the progress according to these:-->
+  Se Estágio do fluxo de trabalho tiverem sido configurados para o modelo, você poderá visualizar o progresso de acordo com estes: <!--If [Workflow Stages](/help/sites-developing/workflows.md#workflow-stages) have been configured for the model, you can view the progress according to these:-->
 
-   ![Estágios do fluxo de trabalho](/help/sites-cloud/authoring/assets/workflows-workflow-stages.png)
+  ![Estágios do fluxo de trabalho](/help/sites-cloud/authoring/assets/workflows-workflow-stages.png)
 
 * Guia **COMENTÁRIOS**:
 
-   ![Guia COMENTÁRIOS](/help/sites-cloud/authoring/assets/workflows-comments.png)
+  ![Guia COMENTÁRIOS](/help/sites-cloud/authoring/assets/workflows-comments.png)
 
 Você pode abrir os detalhes do item de trabalho nos seguintes locais:
 

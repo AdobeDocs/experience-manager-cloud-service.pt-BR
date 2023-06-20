@@ -2,10 +2,10 @@
 title: Criação de inicializações
 description: Você pode criar um lançamento para permitir a atualização de uma nova versão de páginas da Web existentes para ativação futura.
 exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1045'
-ht-degree: 60%
+source-wordcount: '1042'
+ht-degree: 59%
 
 ---
 
@@ -28,7 +28,6 @@ Como opção, especifique a **Data de inicialização** (e a hora) para definir 
 >Essas páginas não podem ser editadas. Você verá a mensagem:
 >
 >* **Esta página não faz parte da inicialização. Acesse a página de produção**
-
 
 ## Criação de um lançamento {#creating-a-launch}
 
@@ -80,7 +79,7 @@ Você pode criar uma inicialização no console Sites ou Inicializações:
 1. Na etapa **Propriedades** do assistente, é possível especificar:
 
    * **Título da inicialização**: o nome da inicialização. O nome deve ser significativo para os autores.
-   * **com conteúdo existente**: o conteúdo original será usado para criar a inicialização.
+   * **com conteúdo existente**: o conteúdo original é usado para criar a inicialização.
    * **usar um novo modelo para substituir a página**: consulte [Criar inicialização com um novo modelo](#create-launch-with-new-template) para obter mais detalhes.
    * **Herdar dados online da página de origem:** selecione essa opção para atualizar automaticamente o conteúdo das páginas de inicialização quando as páginas de origem forem alteradas. Essa opção faz isso transformando a inicialização em uma [Live Copy](/help/sites-cloud/administering/msm/overview.md). Por padrão, esta opção é selecionada.-->
    * **Data da inicialização**: a data e a hora em que a cópia de inicialização deve ser ativada (dependendo do sinalizador de **Pronto para produção**; consulte [Inicializações - a ordem dos eventos](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events)).
@@ -113,7 +112,7 @@ Selecionar isso irá:
 
 >[!CAUTION]
 >
->Como um modelo diferente é usado, a nova página ficará vazia. Devido à estrutura de página diferente, nenhum conteúdo será copiado.
+>À medida que um modelo diferente é usado, a nova página fica vazia. Devido à estrutura de página diferente, nenhum conteúdo é copiado.
 >
 >Esse mecanismo pode ser usado para alterar o template de um [página existente](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page) - embora a perda de conteúdo deva ser considerada.
 

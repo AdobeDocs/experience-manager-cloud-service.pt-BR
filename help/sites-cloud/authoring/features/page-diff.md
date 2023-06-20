@@ -2,10 +2,10 @@
 title: Diferencial de páginas
 description: O recurso de comparação de página permite a comparação conveniente lado a lado de duas páginas com suas diferenças destacadas.
 exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '618'
-ht-degree: 32%
+source-wordcount: '616'
+ht-degree: 26%
 
 ---
 
@@ -75,7 +75,7 @@ O lado selecionado preencherá a janela inteira, mas a barra permanecerá no top
 
 >[!NOTE]
 >
->Se a largura do navegador não puder acomodar ambos os nomes de página na exibição de tela cheia, somente o nome da página que está sendo exibida será mostrado e o outro estará disponível atrás da elipse.
+>Se a largura do navegador não puder acomodar ambos os nomes de página na exibição de tela cheia, somente o nome da página que está sendo exibida será mostrado e o outro estará disponível atrás das reticências.
 
 Você também pode optar por fechar a visualização em tela cheia clicando no ícone Saída da tela cheia.
 

@@ -2,10 +2,10 @@
 title: Registro, logon e perfil do usuário
 description: Saiba mais sobre registro, logon, dados do usuário e sincronização de grupos no AEM as a Cloud Service
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1170'
-ht-degree: 95%
+source-wordcount: '1168'
+ht-degree: 90%
 
 ---
 
@@ -23,7 +23,7 @@ Os aplicativos web geralmente fornecem recursos de gerenciamento de conta para o
 
 >[!IMPORTANT]
 >
->Para que as funcionalidades descritas neste artigo funcionem, o recurso de sincronização de dados do usuário deve ser ativado, o que, no momento, requer que uma solicitação indicando o programa e os ambientes apropriados seja feita ao suporte. Se o recurso não estiver ativado, as informações do usuário serão mantidas apenas por um curto período (de 1 a 24 horas) antes de desaparecerem.
+>Para que as funcionalidades descritas neste artigo funcionem, o recurso de sincronização de dados do usuário deve ser ativado, o que, no momento, requer que uma solicitação indicando o programa e os ambientes apropriados seja feita ao suporte. Se não estiver ativado, as informações do usuário são mantidas apenas por um curto período (de 1 a 24 horas) antes de desaparecerem.
 
 ## Registro {#registration}
 
