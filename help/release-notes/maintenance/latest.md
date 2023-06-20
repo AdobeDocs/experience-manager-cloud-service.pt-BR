@@ -2,10 +2,10 @@
 title: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: beb6ac3dbb036559510e6a2e2700b28c433ef98d
+source-git-commit: 26178edc3308801e0273aca67b7cd82180131483
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 38%
+source-wordcount: '372'
+ht-degree: 37%
 
 ---
 
@@ -27,6 +27,7 @@ Nenhum.
 
 - ASSETS-25729 - O menu do alternador de exibição está cortado
 - ASSETS-25728 - Opção Reprocessar ativo não disponível na exibição de pesquisa
+- ASSETS-22603 - Algumas colunas do Relatório de ativos do tipo Download exibem valores &quot;nulos&quot; na interface. O CSV para download não é afetado.
 
 ### Problemas corrigidos {#fixed-issues-12255}
 
