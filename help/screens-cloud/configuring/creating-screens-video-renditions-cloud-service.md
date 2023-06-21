@@ -2,9 +2,9 @@
 title: Criação de representações de vídeo no Screens as a Cloud Service
 description: Esta página descreve como criar representações de vídeo no Screens as a Cloud Service.
 exl-id: a9c46036-cd29-47fa-81d9-c865cf22c98a
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '353'
 ht-degree: 0%
 
 ---
@@ -29,11 +29,11 @@ Siga as etapas abaixo para criar representações de vídeo no Screens as a Clou
 
 1. Clique na seção Ferramentas na barra de navegação esquerda e clique em **Assets** e clique em **Processamento de perfis**.
 
-   ![](/help/screens-cloud/assets/configure/screens-cp-3.png)
+   ![Clique em Processar perfis](/help/screens-cloud/assets/configure/screens-cp-3.png)
 
 1. Clique em **Criar** para criar um novo perfil de processamento.
 
-   ![](/help/screens-cloud/assets/configure/screens-video-2.png)
+   ![Clique em Criar](/help/screens-cloud/assets/configure/screens-video-2.png)
 
 1. Insira o **Nome**, como **ScreensProcessingProfile**.
 
@@ -57,11 +57,11 @@ Siga as etapas abaixo para criar representações de vídeo no Screens as a Clou
 
 1. Selecione o perfil de Processamento e clique em **Aplicar perfil às pastas**.
 
-   ![](/help/screens-cloud/assets/configure/screens-video-5.png)
+   ![Aplicar perfil à pasta](/help/screens-cloud/assets/configure/screens-video-5.png)
 
 1. Selecione as pastas onde os vídeos do Screens são mantidos e clique em **Aplicar**.
 
-   ![](/help/screens-cloud/assets/configure/screens-video-6.png)
+   ![Clique em Aplicar](/help/screens-cloud/assets/configure/screens-video-6.png)
 
    >[!NOTE]
    >* É possível criar vários perfis de processamento e aplicá-los às pastas correspondentes, para que os vídeos dessas pastas obtenham as representações de vídeo específicas.

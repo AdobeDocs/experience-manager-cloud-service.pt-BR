@@ -2,9 +2,9 @@
 title: Gerenciamento de ambientes
 description: Saiba mais sobre os tipos de ambientes que você pode criar e como criá-los para o seu projeto do Cloud Manager.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 5311ba7f001201fc94c73fa52bc7033716c1ba78
+source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
 workflow-type: tm+mt
-source-wordcount: '2271'
+source-wordcount: '2276'
 ht-degree: 37%
 
 ---
@@ -245,7 +245,7 @@ Selecione **Gerenciar acesso** no menu de reticências do ambiente no cartão **
 
 Selecione **Developer Console** no menu de reticências do ambiente no cartão **Ambientes**. Uma nova guia é aberta no navegador com a página de logon na **Console do desenvolvedor**.
 
-![](assets/environ-devconsole.png)
+![Faça logon no Console do desenvolvedor](assets/environ-devconsole.png)
 
 Somente um usuário com o **Desenvolvedor** A função tem acesso à **Console do desenvolvedor**. No entanto, para programas de sandbox, qualquer usuário com acesso ao programa de sandbox tem acesso a **Console do desenvolvedor**.
 

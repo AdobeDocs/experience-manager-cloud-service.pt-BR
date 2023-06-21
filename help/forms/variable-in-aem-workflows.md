@@ -2,9 +2,9 @@
 title: Como adicionar variáveis nas etapas do fluxo de trabalho do AEM?
 description: Saiba como criar uma variável, definir um valor para a variável e usá-lo no [!DNL AEM Forms] Etapas do workflow.
 exl-id: d9139ea9-2f86-476c-8767-b36766790f2c
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
 workflow-type: tm+mt
-source-wordcount: '2059'
+source-wordcount: '2061'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Use o tipo de dados ArrayList para criar coleções de variáveis. Você pode cr
 
 Para criar uma variável:
 
-1. Em uma instância do AEM, navegue até Ferramentas ![](assets/hammer-icon.svg) > Workflow > Modelos.
+1. Em uma instância do AEM, navegue até Ferramentas ![Ícone de martelo](assets/hammer-icon.svg) > Workflow > Modelos.
 1. Toque **[!UICONTROL Criar]** e especifique o título e um nome opcional para o modelo de workflow. Selecione o modelo e toque em **[!UICONTROL Editar]**.
 1. Toque no ícone de variáveis disponível no sidekick do modelo de fluxo de trabalho e toque em **[!UICONTROL Adicionar variável]**.
 

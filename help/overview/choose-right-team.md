@@ -2,9 +2,9 @@
 title: Pessoas certas, funções certas
 description: Pessoas certas, funções certas
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '829'
 ht-degree: 97%
 
 ---
@@ -46,7 +46,7 @@ Agora que você sabe que funções são necessárias, examine o gráfico abaixo 
 
 <br>
 
-![](assets/team_involvement.png)
+![Revisar funções para implementação](assets/team_involvement.png)
 
 **Revise esta lista com sua equipe de implementação** e certifique-se de ter pessoas com qualificações relevantes em cada função. Membros da equipe menos familiarizados com a Adobe Experience Cloud podem usar os recursos de aprendizagem da [Experience League](https://experienceleague.adobe.com/?lang=pt-BR#recommended/solutions/experience-manager) para obter certificação por meio do [Adobe Digital Learning](https://learning.adobe.com/certification.html).
 
