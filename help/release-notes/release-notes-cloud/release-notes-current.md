@@ -3,10 +3,10 @@ title: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud S
 description: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: d4d44f452406e452372e409c6594ef4a256b9682
+source-git-commit: ca4046a94301cebae9e7a46e055977419fedd14e
 workflow-type: tm+mt
 source-wordcount: '1095'
-ht-degree: 31%
+ht-degree: 32%
 
 ---
 
@@ -41,7 +41,7 @@ Assista ao vídeo Visão geral da versão de abril de 2023 que exibe um resumo d
 * Exporte fragmentos de conteúdo do AEM as a Cloud Service para o Adobe Target como ofertas JSON.
 * O suporte para os recursos de paginação e classificação de GraphQL, juntamente com aprimoramentos internos de armazenamento em cache, agora ajuda a melhorar o desempenho de aplicativos clientes dissociados ao buscar grandes conjuntos de conteúdo do AEM usando consultas e filtros de GraphQL complexos.
 
-### Novos recursos no [!DNL Experience Manager Sites] pré-arrendar {#prerelease-sites}
+### Novos recursos no pré-lançamento do [!DNL Experience Manager Sites] {#prerelease-sites}
 
 * Fragmentos de conteúdo e suas referências agora podem ser publicados na [Serviço de visualização do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=en#access-preview-service) usando o [Console de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=en), permitindo que os usuários visualizem a experiência final em um aplicativo de visualização dissociado antes de entrar em funcionamento.
 
