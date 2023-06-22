@@ -2,10 +2,10 @@
 title: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 26178edc3308801e0273aca67b7cd82180131483
+source-git-commit: 46f0f8ba51b328bef1061d574b0d378a510fcf38
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 37%
+source-wordcount: '382'
+ht-degree: 31%
 
 ---
 
@@ -17,17 +17,11 @@ A seção a seguir descreve as notas de versão técnicas para a versão de manu
 
 Veja abaixo um resumo das melhorias contínuas da versão de manutenção 12255, lançada publicamente em 13 de junho de 2023. Esta versão de manutenção é uma atualização da versão de manutenção anterior a 12142.
 
-A ativação de recursos desta versão de manutenção fornecerá o conjunto completo de recursos. Consulte as [notas de versão atuais](/help/release-notes/release-notes-cloud/release-notes-current.md) para obter detalhes completos.
+A ativação de recursos para esta versão de manutenção fornecerá o conjunto completo de recursos com a ativação de recursos 2023.6.0. Consulte a [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=pt-BR) para obter mais informações.
 
 ### Aprimoramentos {#enhancements-12255}
 
 Nenhum.
-
-### Problemas conhecidos {#known-issues-12255}
-
-- ASSETS-25729 - O menu do alternador de exibição está cortado
-- ASSETS-25728 - Opção Reprocessar ativo não disponível na exibição de pesquisa
-- ASSETS-22603 - Algumas colunas do Relatório de ativos do tipo Download exibem valores &quot;nulos&quot; na interface. O CSV para download não é afetado.
 
 ### Problemas corrigidos {#fixed-issues-12255}
 
@@ -49,6 +43,12 @@ Nenhum.
 - ASSETS-23981 - Função de classificação para títulos que não funcionam em links de coleção
 - ASSETS-24723 - Os ativos publicados foram reprocessados sem intervenção do usuário
 - GRANITE-45385 - Migrar ativação de árvore para usar o trabalho do sling em vez do fluxo de trabalho
+
+### Problemas conhecidos {#known-issues-12255}
+
+- ASSETS-25729 - O menu do alternador de exibição está cortado
+- ASSETS-25728 - Opção Reprocessar ativo não disponível na exibição de pesquisa
+- ASSETS-22603 - Algumas colunas do Relatório de ativos do tipo Download exibem valores &quot;nulos&quot; na interface. O CSV para download não é afetado.
 
 ### Tecnologias integradas {#embedded-tech-12255}
 
