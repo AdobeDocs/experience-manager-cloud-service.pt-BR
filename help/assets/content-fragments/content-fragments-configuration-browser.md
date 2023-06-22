@@ -2,10 +2,10 @@
 title: Fragmentos de conteúdo - Navegador de configuração (Ativos - Fragmentos de conteúdo)
 description: Saiba como ativar a funcionalidade de Fragmento de conteúdo no Navegador de configuração.
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1fc57dacbf811070664d5f5aaa591dd705516fa8
 workflow-type: tm+mt
-source-wordcount: '360'
-ht-degree: 78%
+source-wordcount: '358'
+ht-degree: 27%
 
 ---
 
@@ -15,7 +15,7 @@ Saiba como ativar determinadas funcionalidades do Fragmento de conteúdo no Nave
 
 ## Ativar a funcionalidade de fragmento de conteúdo para sua instância {#enable-content-fragment-functionality-instance}
 
-Antes de usar fragmentos de conteúdo, você precisa usar o **navegador de configuração** para ativar:
+Antes de usar fragmentos de conteúdo, você deve usar **Navegador de configuração** para ativar:
 
 * **Modelos de fragmentos de conteúdo** (obrigatório)
 * **Consultas GraphQL persistidas** - opcional
@@ -24,34 +24,34 @@ Antes de usar fragmentos de conteúdo, você precisa usar o **navegador de confi
 >
 >Se você não ativar os **modelos de fragmentos de conteúdo**:
 >
->* a opção **Criar** não estará disponível para criar novos modelos.
->* você não poderá [selecionar a configuração de sites para criar o ponto de acesso relacionado](/help/headless/graphql-api/graphql-endpoint.md).
+>* o **Criar** opção não está disponível para criar modelos.
+>* você não pode [selecione a configuração Sites para criar o ponto de extremidade relacionado](/help/headless/graphql-api/graphql-endpoint.md).
 
-Para ativar a funcionalidade do fragmento de conteúdo, é necessário:
+Para ativar a funcionalidade de fragmento de conteúdo, você deve fazer o seguinte:
 
 * Ativar o uso da funcionalidade de fragmento de conteúdo por meio do navegador de configuração
 * Aplicar a configuração à sua pasta de ativos
 
 ### Ativar a funcionalidade de fragmento de conteúdo no navegador de configuração {#enable-content-fragment-functionality-in-configuration-browser}
 
-Para [usar determinadas funcionalidades do fragmento de conteúdo](#creating-a-content-fragment-model), primeiro é **necessário** habilitá-las por meio do **navegador de configuração**:
+Para usar determinados [Funcionalidade Fragmento de conteúdo](#creating-a-content-fragment-model), você **deve** primeiro ative-os por meio da **Navegador de configuração**:
 
 >[!NOTE]
 >
->Para obter mais detalhes, consulte também [Navegador de configuração:](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
+>Para obter mais detalhes, consulte [Navegador de configuração](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
 >[!NOTE]
 >
->[Subconfigurações](/help/implementing/developing/introduction/configurations.md#configuration-resolution) (uma configuração aninhada em outra configuração) são totalmente compatíveis com o uso de fragmentos de conteúdo, modelos de fragmento de conteúdo e consultas GraphQL.
+>[Subconfigurações](/help/implementing/developing/introduction/configurations.md#configuration-resolution) (uma configuração aninhada em outra configuração) são totalmente compatíveis com o uso de fragmentos de conteúdo, modelos de fragmento de conteúdo e consultas do GraphQL.
 >
 >Apenas observe que:
 >
 >
 >* Depois de criar modelos em uma subconfiguração, NÃO é possível mover ou copiar o modelo para outra subconfiguração.
 >
->* Um ponto de acesso de GraphQL (ainda) será baseado em uma configuração principal (raiz).
+>* Um endpoint do GraphQL (ainda) se baseia em uma configuração principal (raiz).
 >
->* As consultas persistentes (ainda) serão salvas relativas à configuração principal (raiz).
+>* As consultas persistentes são (ainda) salvas relevantes para a configuração principal (raiz).
 
 
 1. Navegue até **Ferramentas**, **Geral**, e abra o **Navegador de configuração**.
@@ -76,6 +76,6 @@ Para [usar determinadas funcionalidades do fragmento de conteúdo](#creating-a-c
 
 Quando a configuração **global** está ativado para a funcionalidade de fragmento de conteúdo e se aplica a qualquer pasta de ativos.
 
-Para usar outras configurações (ou seja, excluindo globais) com uma pasta do Assets comparável, é necessário definir a conexão. Isso é feito ao selecionar a **Configuração** apropriada na guia **Serviços da nuvem** das **Propriedades da pasta** da pasta apropriada.
+Para usar outras configurações (ou seja, excluindo globais) com uma pasta do Assets comparável, é necessário definir a conexão. Essa conexão é feita selecionando o **Configuração** no **Cloud Services** guia do **Propriedades da pasta** da pasta apropriada.
 
 ![Aplicar configuração](assets/cfm-conf-02.png)
