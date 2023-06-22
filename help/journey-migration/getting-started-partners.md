@@ -98,7 +98,6 @@ Consulte recursos de autoajuda sobre como configurar e implantar em ambientes as
 >1. [Entre em contato com a equipe de suporte do Experience Manager](https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=en)
 >2. Explorar [Comunidades e fóruns do Experience Manager](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
 
-
 <br>
 
 ## Migração para o Adobe Experience Manager as a Cloud Service {#move-to-cloud}
@@ -191,7 +190,6 @@ Na fase Pós-ativação, você deve garantir a limpeza de arquivos temporários,
 >2. [CRXDE Lite](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html?lang=en)
 >3. [Gerenciamento de logs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html?lang=en)
 
-
 <br>
 
 ### Ferramentas e recursos
@@ -204,4 +202,3 @@ Na fase Pós-ativação, você deve garantir a limpeza de arquivos temporários,
 > Para obter ajuda adicional, talvez você queira:
 >1. [Entre em contato com a equipe de suporte do Experience Manager](https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=en)
 >2. Explorar [Comunidades e fóruns do Experience Manager](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
-
