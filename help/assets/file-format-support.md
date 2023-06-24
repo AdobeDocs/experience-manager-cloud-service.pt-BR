@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: d00e1f49438ad36339a09f8914496faeda3d4de6
 workflow-type: tm+mt
-source-wordcount: '1025'
+source-wordcount: '1030'
 ht-degree: 10%
 
 ---
@@ -23,7 +23,7 @@ Os destaques da conversão de ativos usando microsserviços de ativos incluem:
 * Chave [formatos de arquivo Adobe](#adobe-formats) produzidos por aplicações e serviços Adobe, incluindo [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension], e [!DNL Adobe Acrobat] ou PDF.
 * Chave [formatos de arquivo de imagem](#image-formats).
 * [Formatos de arquivo Camera Raw](#camera-raw-formats) para uma ampla variedade de câmeras, incluindo Canon, Nikon, Fujifilm, Olympus e outros fabricantes (equipados pela Adobe Camera Raw).
-* Comum [formatos de documento](#document-formats), incluindo os formatos Microsoft Office e Open Document.
+* Comum [formatos de documento](#document-formats), incluindo os formatos Microsoft® Office e Open Document.
 * Grande variedade de formatos de [vídeo](#video-formats) e [áudio.](#audio-formats)
 
 A legenda a seguir descreve o nível de suporte para cada formato.
@@ -41,8 +41,9 @@ A legenda a seguir descreve o nível de suporte para cada formato.
 | IA | ✓ | - | ✓ | ✓ |
 | COLAGEM | - | - | ✓ | - |
 | DN | ✓ | - | ✓ | ✓ |
+| SBSAR | ✓ | - | ✓ | ✓ |
 | IDEIAS | - | - | ✓ | - |
-| INDD | ✓ | - | ✓ | ✓ * |
+| INDD | ✓ | - | ✓ | ✓ µ * |
 | INDT | - | - | ✓ | - |
 | PDF | ✓ | ✓ | ✓ | ✓ |
 | PROTO | - | - | ✓ | - |
@@ -50,7 +51,7 @@ A legenda a seguir descreve o nível de suporte para cada formato.
 | PSD | ✓ | - | ✓ | ✓ |
 | XD | ✓ | - | ✓ | ✓ |
 
-\* Para [!DNL Adobe InDesign] (INDD), o tamanho da representação é determinado pela pré-visualização incorporada no arquivo INDD. Configure as preferências no [!DNL InDesign] (**[!UICONTROL Preferências > Manuseio de arquivo > Sempre salvar imagens de visualização com documentos, Tamanho da visualização]**) para incorporar representações maiores.
+\* Para [!DNL Adobe InDesign] (INDD), o tamanho das representações é determinado pela pré-visualização incorporada no arquivo INDD. Configure as preferências no [!DNL InDesign] (**[!UICONTROL Preferências > Manuseio de arquivo > Sempre salvar imagens de visualização com documentos, Tamanho da visualização]**) para que você possa incorporar representações maiores.
 
 ## Formatos de imagem {#image-formats}
 
@@ -63,7 +64,7 @@ A legenda a seguir descreve o nível de suporte para cada formato.
 | PNG | ✓ | ✓ | ✓ | ✓ |
 | RGB | ✓ | ✓ | ✓ | ✓ |
 | RGBA | ✓ | ✓ | ✓ | ✓ |
-| SGI | ✓ | ✓ | ✓ | ✓ |
+| SGI™ | ✓ | ✓ | ✓ | ✓ |
 | SVG | ✓ | - | ✓ | ✓ |
 | TIFF | ✓ | ✓ | ✓ | - |
 | WebP | ✓ | ✓ | ✓ | ✓ |
@@ -77,13 +78,16 @@ Consulte também [Trabalhar com ativos 3D no Dynamic Media](/help/assets/dynamic
 | Formato | Armazenamento | Versões | Fluxo de trabalho | Publicação | Controle de acesso | Visualização da miniatura | Visualização 3D | Entrega do Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | DN | ✓ | ✓ | ✓ | - | ✓ | ✓ | - | - |
-| gLB | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| gLB | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | gLTF | ✓ | ✓ | ✓ | - | ✓ | - | ✓ | - |
-| OBJ | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| OBJ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | STL | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
-| USDz | ✓ | ✓ | ✓ | ✓ | ✓ | - | - | ✓ |
+| FBX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| 3DS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| USDz | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ |
+| SBSAR | ✓ | ✓ | ✓ | - | ✓ | ✓ | - | - |
 
-## [!DNL Camera RAW] formatos {#camera-raw-formats}
+## [!DNL Camera Raw] formatos {#camera-raw-formats}
 
 | Formato de arquivo | Geração de miniaturas | Extração de metadados | Largura/altura |
 | ----------- | -------------------- | ------------------- | ------------ |
@@ -179,22 +183,22 @@ Os formatos de documento compatíveis com os recursos de gerenciamento de ativos
 * MXF (.mxf)
 * MPEG2-PS, MPEG2-TS, 3GP (.ts, .ps, .3gp, .3gpp, .mpg)
 * Vídeo do Windows Media (WMV)/ASF (.wmv, .asf)
-* AVI (8 bits/10 bits descompactado) (.avi)
+* AVI (8 bits/10 bits não compactado) (.avi)
 * MP4 (.mp4, .m4a, .m4v)
-* Gravação de vídeo digital Microsoft (DVR-MS) (.dvr-ms)
+* Gravação de vídeo digital Microsoft® (DVR-MS) (.dvr-ms)
 * Matroska/WebM (.mkv)
 * WAVE/WAV (.wav)
 * QuickTime (.mov)
 
 ## Dicas e limitações {#limitations-and-tips}
 
-* Atualmente, o limite de tamanho do arquivo para extração de metadados é de aproximadamente 15 GB. Ao fazer upload de ativos muito grandes, às vezes a operação de extração de metadados falha.
+* Atualmente, o limite de tamanho do arquivo para extração de metadados é de aproximadamente 15 GB. Ao fazer upload de ativos grandes, às vezes a operação de extração de metadados falha.
 
 ## Dynamic Media - Formatos de vídeo de entrada compatíveis com transcodificação {#video-dynamic-media-transcoding}
 
 | Extensão do arquivo de vídeo | Contêiner | Codecs de vídeo recomendados | Codecs de vídeo não suportados |
 | --- | --- | --- | --- |
-| AVI | Intercalação A/V | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Vídeo Microsoft 1 (MS-CRAM) |
+| AVI | Intercalação A/V | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft® Video 1 (MS-CRAM) |
 | FLV, F4V | Flash Adobe | H264/AVC, Flix VP6, H263, Sorenson | SWF (arquivos de animação de vetor) |
 | M4V | Apple iTunes | H264/AVC | − |
 | MKV | Matroska | H264/AVC | − |
@@ -202,9 +206,9 @@ Os formatos de documento compatíveis com os recursos de gerenciamento de ativos
 | MP4 | MPEG-4 | H264/AVC (todos os perfis) | − |
 | MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | − |
 | MXF ‡ | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | − |
-| OGV, OGG | Ogg | Theora, VP3, Dirac | − |
+| OGV, OGG | OGG | Theora, VP3, Dirac | − |
 | WebM | WebM | Google VP8 | − |
-| WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Tela do Microsoft (MSS2), História de Foto do Microsoft (WVP2) |
+| WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Tela Microsoft® (MSS2), História de foto Microsoft® (WVP2) |
 
 ‡ Este formato de vídeo ainda não é suportado para ser usado com Vídeos interativos no Dynamic Media ou para ser usado com Anotação no Experience Manager Assets.
 
@@ -253,9 +257,9 @@ Consulte também [Formatos 3D compatíveis](/help/assets/file-format-support.md#
 | Extensão de arquivo 3D | Formato de arquivo | Tipo MIME | Notas |
 |---|---|---|---|
 | GLB | Transmissão GL Binária | model/gltf-binary | Inclui os materiais e texturas como um único ativo. |
-| OBJ | Arquivo de objeto 3D do WaveFront | application/x-tgif |  |
-| STL | Estereolitografia | application/vnd.ms-pki.stl |  |
-| USDZ | Arquivo Zip de Descrição de Cena Universal | model/vnd.usdz+zip | *Suporte somente para assimilação; nenhuma visualização ou interação está disponível.* O USDZ é um formato 3D proprietário que pode ser visualizado nativamente pelo Safari ou pelo iOS. |
+| OBJ | Arquivo de objeto 3D do WaveFront | application/x-tgif | |
+| STL | Estereolitografia | application/vnd.ms-pki.stl | |
+| USDZ | Arquivo Zip de Descrição de Cena Universal | model/vnd.usdz+zip | *Suporte para geração de assimilação e miniatura; visualizações 3D ainda não compatíveis.* USDZ é um formato 3D que pode ser visualizado nativamente pelo Safari ou iOS. |
 
 **Consulte também**
 
@@ -275,4 +279,3 @@ Consulte também [Formatos 3D compatíveis](/help/assets/file-format-support.md#
 >
 >* [Processamento de ativos usando microsserviços de ativos](asset-microservices-overview.md)
 >* [Formatos de arquivo compatíveis com a marcação inteligente de ativos baseados em texto](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
-
