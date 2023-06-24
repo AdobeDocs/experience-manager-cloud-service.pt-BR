@@ -2,9 +2,9 @@
 title: Desenvolvimento e diff de página
 description: Entenda como o recurso Diferença de página funciona e como ele pode afetar um desenvolvedor
 exl-id: 03c08616-2203-4b90-bed6-4836266e2507
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '333'
 ht-degree: 1%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 1%
 
 A criação de conteúdo é um processo iterativo. A criação com eficiência requer a capacidade de ver o que foi alterado de uma iteração para outra. Visualizar uma versão da página e, em seguida, a outra é ineficiente e sujeita a erros. Um autor deseja poder comparar a página atual com uma versão anterior lado a lado com as diferenças destacadas.
 
-O recurso de diferencial da página permite que um usuário compare a página atual com inicializações, versões anteriores etc. Para obter detalhes sobre esse recurso do usuário, consulte [Diferença de página](/help/sites-cloud/authoring/features/page-diff.md).
+A comparação de páginas permite que um usuário compare a página atual com inicializações, versões anteriores e assim por diante. Para obter detalhes sobre esse recurso do usuário, consulte [Diferença de página](/help/sites-cloud/authoring/features/page-diff.md).
 
 ## Detalhes da operação {#operation-details}
 
-Ao comparar versões de uma página, a versão anterior que o usuário deseja comparar é recriada pelo AEM em segundo plano para facilitar a comparação. Isso é necessário para renderizar o conteúdo [para comparação lado a lado](/help/sites-cloud/authoring/features/page-diff.md).
+Ao comparar versões de uma página, a versão anterior que o usuário deseja comparar é recriada pelo AEM em segundo plano para facilitar a comparação. Essa versão anterior é necessária para renderizar o conteúdo [para comparação lado a lado](/help/sites-cloud/authoring/features/page-diff.md).
 
-Essa operação de recreação é feita internamente pelo AEM e é transparente para o usuário e não requer nenhuma intervenção. No entanto, um administrador que visualizasse o repositório, por exemplo, no CRX DE Lite, veria essas versões recriadas na estrutura de conteúdo.
+Essa operação de recreação é feita internamente pelo AEM e é transparente para o usuário e não requer nenhuma intervenção. No entanto, um administrador que visualizasse o repositório, por exemplo, no CRXDE Lite, veria essas versões recriadas na estrutura do conteúdo.
 
 Quando o conteúdo é comparado, a árvore inteira até a página que será comparada é recriada no seguinte local:
 
@@ -31,9 +31,9 @@ Uma tarefa de limpeza é executada automaticamente para limpar esse conteúdo te
 
 ## Limitações {#limitations}
 
-O diferencial ocorre no lado do cliente por meio da comparação de DOM, tornando o processo do diferencial simples. No entanto, há várias limitações que precisam ser consideradas pelo desenvolvedor.
+O diferencial ocorre no lado do cliente por meio da comparação de DOM, tornando o processo de diferencial simples. No entanto, há várias limitações que devem ser consideradas pelo desenvolvedor.
 
-* Esse recurso usa classes CSS que não têm o nome espaçado para o produto AEM. Se outras classes CSS personalizadas ou classes CSS de terceiros com os mesmos nomes forem incluídas na página, a exibição do diferencial poderá ser afetada.
+* Esse recurso usa classes CSS que não têm namespace para o produto AEM. Se outras classes CSS personalizadas ou classes CSS de terceiros com os mesmos nomes forem incluídas na página, a exibição do diferencial poderá ser afetada.
 
    * `html-added`
    * `html-removed`
@@ -42,7 +42,7 @@ O diferencial ocorre no lado do cliente por meio da comparação de DOM, tornand
    * `cq-component-moved`
    * `cq-component-changed`
 
-* Como o diferencial é no lado do cliente e é executado no carregamento da página, os ajustes no DOM após a execução do serviço de diferencial do lado do cliente não serão considerados. Isso pode afetar
+* Como o recurso de diferencial é executado no lado do cliente e no carregamento da página, os ajustes no DOM após a execução do serviço de diferencial do lado do cliente não são considerados. Esse processo pode afetar o seguinte:
 
    * Componentes que usam AJAX para incluir conteúdo
    * Aplicativos de página única

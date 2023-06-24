@@ -4,10 +4,10 @@ description: Explore a busca de conteúdo JSON do seu ambiente de avaliação co
 hidefromtoc: true
 index: false
 exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 98%
+source-wordcount: '980'
+ht-degree: 57%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 98%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide"
 >title="Inicie o aplicativo CodePen de exemplo"
->abstract="Este guia aborda a consulta de dados JSON do seu ambiente de avaliação em um aplicativo web JavaScript básico. Usaremos os fragmentos de conteúdo que você modelou e criou nos módulos de aprendizagem anteriores, portanto, conclua esses guias antes de entrar neste."
+>abstract="Este guia aborda a consulta de dados JSON do seu ambiente de avaliação em um aplicativo web JavaScript básico. Os fragmentos de conteúdo são modelados e criados nos módulos de aprendizado anteriores. Se necessário, analise primeiro esses guias antes de pular para esse."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide_footer"
@@ -31,9 +31,9 @@ ht-degree: 98%
 
 ## CodePen {#codepen}
 
-O CodePen é um editor de código online e um playground para desenvolvimento web de front-end. Ele permite que você escreva códigos HTML, CSS e JavaScript em seu navegador e veja os resultados de seu trabalho quase instantaneamente. Também é possível salvar seu trabalho e compartilhá-lo com outras pessoas. Criamos um aplicativo no CodePen que você pode usar para buscar dados JSON de seu ambiente de avaliação usando o [AEM Headless Client para JavaScript](https://github.com/adobe/aem-headless-client-js). É possível usar este aplicativo como está ou copiá-lo para sua própria conta do CodePen para personalizá-lo ainda mais.
+O CodePen é um editor de código online e um playground para desenvolvimento web de front-end. Ele permite que você escreva código HTML, CSS e JavaScript no seu navegador e veja os resultados do seu trabalho quase que instantaneamente. Também é possível salvar seu trabalho e compartilhá-lo com outras pessoas. O Adobe criou um aplicativo no CodePen que você pode usar para buscar dados JSON no seu ambiente de avaliação usando o [Cliente AEM Headless para JavaScript](https://github.com/adobe/aem-headless-client-js). É possível usar este aplicativo como está ou copiá-lo para sua própria conta do CodePen para personalizá-lo ainda mais.
 
-Clicando no botão **Inicie o aplicativo CodePen de exemplo** na versão de avaliação, você será direcionado para o aplicativo no CodePen. O aplicativo é um exemplo mínimo de busca de dados JSON com JavaScript. O aplicativo de exemplo foi desenvolvido para renderizar qualquer conteúdo JSON que seja retornado, independentemente da estrutura do modelo de fragmento de conteúdo subjacente. Pronto para uso, o aplicativo buscará dados de uma consulta persistente de `aem-demo-assets` incluída no seu ambiente de avaliação. Você deve ver uma resposta JSON semelhante ao seguinte:
+Clicar no **Inicie o aplicativo de amostra CodePen** do teste leva você ao aplicativo no CodePen. O aplicativo é um exemplo mínimo de busca de dados JSON com JavaScript. O aplicativo de exemplo foi desenvolvido para renderizar qualquer conteúdo JSON que seja retornado, independentemente da estrutura do modelo de fragmento de conteúdo subjacente. Pronto para uso, o aplicativo busca dados de um `aem-demo-assets` consulta persistente que está incluída em seu ambiente de avaliação. Você deve ver uma resposta JSON semelhante ao seguinte:
 
 ```json
 {
@@ -53,15 +53,15 @@ Agora que você sabe um pouco sobre o CodePen, você configurará o aplicativo p
 
 ## Passo a passo do código JavaScript {#code-walkthrough}
 
-O painel **JS** à direita no CodePen contém o Javascript do aplicativo de exemplo. Começando na linha 2, importaremos o AEM Headless Client para JavaScript do Skypack CDN. O Skypack é usado para facilitar o desenvolvimento sem uma etapa de criação, mas você também pode usar o AEM Headless Client com o NPM ou Yarn em seus próprios projetos. Confira as instruções de uso no arquivo [README](https://github.com/adobe/aem-headless-client-js#aem-headless-client-for-javascript) para obter mais detalhes.
+A variável **JS** O painel à direita no CodePen contém o JavaScript do aplicativo de exemplo. A partir da linha 2, você importa o cliente AEM Headless para JavaScript do CDN do Skypack. O Skypack é usado para facilitar o desenvolvimento sem uma etapa de criação, mas você também pode usar o AEM Headless Client com o NPM ou Yarn em seus próprios projetos. Confira as instruções de uso no arquivo [README](https://github.com/adobe/aem-headless-client-js#aem-headless-client-for-javascript) para obter mais detalhes.
 
 ```javascript
 import AdobeAemHeadlessClientJs from 'https://cdn.skypack.dev/@adobe/aem-headless-client-js@v3.2.0';
 ```
 
-Na linha 6, lemos os detalhes do host de publicação do parâmetro de consulta `publishHost`. Este é o host no qual o AEM Headless Client buscará os dados. Normalmente, isso seria programado no aplicativo, mas estamos usando um parâmetro de consulta para facilitar o trabalho do aplicativo CodePen com ambientes diferentes.
+Na linha 6, os detalhes do host de publicação foram lidos no `publishHost` parâmetro de consulta. Esse parâmetro é o host do qual o cliente AEM headless busca dados. Normalmente, essa funcionalidade é codificada no aplicativo, mas você está usando um parâmetro de consulta para facilitar o funcionamento do aplicativo CodePen com ambientes diferentes.
 
-Configuramos o AEM Headless Client na linha 12:
+Você configura o cliente AEM headless na linha 12:
 
 ```javascript
 const aemHeadlessClient = new AdobeAemHeadlessClientJs({
@@ -75,15 +75,15 @@ const aemHeadlessClient = new AdobeAemHeadlessClientJs({
 
 >[!NOTE]
 >
->O **serviceURL** está definido para usar uma função proxy do Adobe IO Runtime para evitar problemas de CORS. Isso não será necessário nos seus próprios projetos, mas é necessário para que o aplicativo CodePen funcione com seu ambiente de avaliação. A função de proxy está configurada para usar o valor **publishHost** que foi fornecido no parâmetro de consulta.
+>A variável **serviceURL** está definido para usar uma função proxy Adobe I/O Runtime para evitar problemas com o CORS. Esse proxy não é necessário para seus próprios projetos, mas é necessário para que o aplicativo CodePen funcione com seu ambiente de avaliação. A função de proxy está configurada para usar o valor **publishHost** que foi fornecido no parâmetro de consulta.
 
-Por fim, a função `fetchJsonFromGraphQL()` é usada para executar a solicitação de busca usando o AEM Headless Client. Ela é chamada sempre que o código é alterado, ou pode ser acionada utilizando a opção **Buscar novamente**. A chamada `aemHeadlessClient.runPersistedQuery(..)` ocorre na linha 34. Mais à frente, faremos uma alteração na forma como esses dados JSON são renderizados, mas por enquanto vamos imprimi-los no div `#output` usando a função `resultToPreTag(queryResult)`.
+Por fim, a função `fetchJsonFromGraphQL()` é usada para executar a solicitação de busca usando o AEM Headless Client. Ela é chamada sempre que o código é alterado, ou pode ser acionada utilizando a opção **Buscar novamente**. A chamada `aemHeadlessClient.runPersistedQuery(..)` ocorre na linha 34. Um pouco depois, você altera a maneira como esses dados JSON são renderizados, mas, por enquanto, imprime-os no `#output` div usando o `resultToPreTag(queryResult)` função.
 
 ## Buscar dados da sua consulta persistente {#use-persisted-query}
 
-Na linha 25, indicamos de qual consulta persistente de GraphQL o aplicativo deve buscar dados. O nome da consulta persistente é uma combinação do nome do ponto de acesso (por exemplo, `your-project` ou `aem-demo-assets`), seguido por uma barra e então o nome da consulta. Se você seguiu exatamente as instruções anteriores do módulo, a consulta persistente criada está na `your-project` terminal.
+Na linha 25, você indica de qual consulta persistente do GraphQL o aplicativo deve buscar dados. O nome da consulta persistente é uma combinação do nome do endpoint (ou seja, `your-project` ou `aem-demo-assets`), seguido por uma barra e, em seguida, o nome da query. Se você seguiu exatamente as instruções anteriores do módulo, a consulta persistente criada está na `your-project` terminal.
 
-1. Atualize a variável `persistedQueryName` para usar a consulta persistente criada no módulo anterior. Se você seguiu a sugestão de nomenclatura, uma consulta persistente chamada `adventure-list` deve ter sido criada no ponto de acesso `your-project` e agora você deve definir a variável `persistedQueryName` como `your-project/adventure-list`:
+1. Atualize o `persistedQueryName` para que ela use a consulta persistente criada no módulo anterior. Se você seguiu a sugestão de nomenclatura, uma consulta persistente chamada `adventure-list` deve ter sido criada no ponto de acesso `your-project` e agora você deve definir a variável `persistedQueryName` como `your-project/adventure-list`:
 
    ```javascript
    //
@@ -98,7 +98,7 @@ Na linha 25, indicamos de qual consulta persistente de GraphQL o aplicativo deve
 
 ## Alterar a renderização JSON {#change-rendering}
 
-O JSON é renderizado como está em uma tag `pre`, o que não é muito criativo. Em vez disso, podemos configurar o CodePen para usar a função `resultToDom()`, para ilustrar como a resposta JSON pode ser iterada para criar um resultado mais interessante.
+O JSON é renderizado como está em um `pre` que não é muito criativa. Você pode alternar a Caneta do código para usar a `resultToDom()` para ilustrar como a resposta JSON pode ser repetida para criar um resultado mais interessante.
 
 1. Para fazer essa alteração, comente na linha 37 e remova o comentário da linha 40:
 
@@ -110,14 +110,14 @@ O JSON é renderizado como está em uma tag `pre`, o que não é muito criativo.
    resultToDom(queryResult);
    ```
 
-1. Essa função também renderizará quaisquer imagens incluídas na resposta JSON como uma tag `img`. Se os fragmentos de conteúdo de **Aventura** criados não incluírem imagens, tente alternar para o uso da consulta persistente `aem-demo-assets/adventures-all`, modificando a linha 25:
+1. Essa função renderiza todas as imagens incluídas na resposta JSON como uma `img` tag. Se os fragmentos de conteúdo de **Aventura** criados não incluírem imagens, tente alternar para o uso da consulta persistente `aem-demo-assets/adventures-all`, modificando a linha 25:
 
    ```javascript
    persistedQueryName = 'aem-demo-assets/adventures-all';
    ```
 
-Essa consulta produzirá uma resposta JSON que inclui imagens, e a função `resultToDom()` as renderizará em linha.
+Essa consulta produz uma resposta JSON que inclui imagens, e a variável `resultToDom()` A função os renderiza em linha.
 
 ![Resultado da consulta adventures-all e da função de renderização resultToDom](assets/do-not-localize/adventures-all-query-result.png)
 
-Agora que você realizou o trabalho de criar os modelos e consultas, sua equipe de conteúdo pode assumir o controle com facilidade. Mostraremos o fluxo do autor de conteúdo no próximo módulo.
+Agora que você realizou o trabalho de criar os modelos e consultas, sua equipe de conteúdo pode assumir o controle com facilidade. No próximo módulo, você exibe o fluxo do autor de conteúdo.

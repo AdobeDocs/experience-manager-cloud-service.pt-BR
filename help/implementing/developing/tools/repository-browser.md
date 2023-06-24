@@ -4,9 +4,9 @@ seo-title: Repository Browser
 description: O navegador do repositório fornece uma visualização somente leitura no repositório para todos os ambientes nos níveis de criação, publicação e visualização.
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '844'
 ht-degree: 2%
 
 ---
@@ -41,7 +41,7 @@ Para acessar o Navegador do repositório:
 * Os usuários devem ter o **Cloud Manager - Desenvolvedor** Função na Admin Console para exibir instâncias de Autor e Publicação.
 * Além disso, para o autor, os usuários com o Perfil de produto de usuários AEM podem visualizar o navegador do repositório com acesso mínimo de leitura; as permissões do usuário são respeitadas ao navegar pelo repositório. Os usuários com o Perfil de produto de administradores do AEM podem visualizar o navegador do repositório com acesso de leitura completo.
 
-Para obter mais informações sobre a configuração de permissões de usuário, consulte [Documentação do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
+Para obter mais informações sobre a configuração de permissões de usuário, consulte [Documentação do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html).
 
 ### Iniciar o navegador do repositório {#launching-the-repository-browser}
 
@@ -52,29 +52,29 @@ O navegador do repositório pode ser iniciado seguindo as etapas abaixo.
    ![repobrowser1](/help/implementing/developing/tools/assets/repobrowser1.png)
 
 1. Clique em **Navegador do repositório** guia
-1. Escolha qualquer pod correspondente ao autor, publicação ou visualização clicando no ícone **Pod** lista suspensa.
+1. Escolha qualquer pod correspondente ao autor, publicação ou visualização clicando no **Pod** lista suspensa.
 
    ![repobrowser2](/help/implementing/developing/tools/assets/repobrowser2.png)
 
-1. Inicie o navegador do repositório clicando no ícone **Abrir navegador do repositório** mais abaixo. Isso iniciará o navegador correspondente a uma instância representativa (pod) do nível escolhido. Isso iniciará o navegador correspondente a uma instância representativa (pod) do nível escolhido. Observe que você não pode controlar o pod específico para esse nível que é iniciado.
+1. Inicie o navegador do repositório clicando no ícone **Abrir navegador do repositório** mais abaixo. O navegador correspondente a uma instância representativa (pod) do nível escolhido é iniciado. Você não pode controlar o pod específico para esse nível que é iniciado.
 
 ## Recursos {#features}
 
 ### Navegar pela Hierarquia {#navigate-the-hierarchy}
 
-Você pode usar o painel de navegação esquerdo para navegar pela hierarquia de conteúdo. Clicar em cada pasta ou nó revelará seus filhos. A estrutura de pastas reflete a árvore do Sling Resource, que é um superconjunto da árvore de nós JCR.
+Você pode usar o painel de navegação esquerdo para navegar pela hierarquia de conteúdo. Clicar em cada pasta ou nó revela seus filhos. A estrutura de pastas reflete a árvore do Sling Resource, que é um superconjunto da árvore de nós JCR.
 
 ![repobrowser3](/help/implementing/developing/tools/assets/repobrowser3.png)
 
-Como alternativa, você pode navegar diretamente para um caminho inserindo-o na **Caminho** como mostrado abaixo. Isso também expandirá sua localização na visualização de hierarquia de conteúdo à esquerda.
+Como alternativa, você pode navegar diretamente para um caminho inserindo-o na **Caminho** como mostrado abaixo. Esse caminho também expande sua localização na visualização da hierarquia de conteúdo à esquerda.
 
 ![repobrowser14](/help/implementing/developing/tools/assets/repobrowser14.png)
 
-Sempre que você clica em uma pasta à esquerda, o campo Caminho é preenchido automaticamente com seu local. Isso é útil para copiar e colar o valor para uso posterior.
+Ao clicar em uma pasta à esquerda, o campo Caminho é preenchido automaticamente com seu local. Essa funcionalidade é útil para copiar e colar o valor para uso posterior.
 
-Além disso, ao clicar em uma pasta, o URL é modificado dinamicamente para incluir o caminho para essa pasta. Isso permite URLs marcáveis.
+Além disso, ao clicar em uma pasta, o URL é modificado dinamicamente para incluir o caminho para essa pasta. Essa funcionalidade permite URLs marcáveis.
 
-Para publicação, por padrão, o Navegador do repositório mostrará apenas o conteúdo público, portanto, determinadas pastas, como `/conf` ou `/home` não estará visível.
+Para publicação, por padrão, o Navegador do repositório mostra apenas o conteúdo público, portanto, determinadas pastas, como `/conf` ou `/home` não estão visíveis.
 
 Para tornar esses locais visíveis, faça o seguinte.
 
@@ -86,7 +86,7 @@ Para tornar esses locais visíveis, faça o seguinte.
 
    ![repobrowser8](/help/implementing/developing/tools/assets/repobrowser8.png)
 
-1. Crie um novo perfil de produto para administradores de publicação. No exemplo abaixo, ele é chamado de **DEV - Publicação de administradores do AEM**
+1. Criar um perfil de produto para administradores de publicação. No exemplo abaixo, ele é chamado de **DEV - Publicação de administradores do AEM**
 
    ![repobrowser9](/help/implementing/developing/tools/assets/repobrowser9.png)
 
@@ -95,7 +95,7 @@ Para tornar esses locais visíveis, faça o seguinte.
    ![repobrowser10](/help/implementing/developing/tools/assets/repobrowser10.png)
 
 1. Aguarde alguns minutos e abra a janela **Autor do AEM** console
-1. Adicione o grupo correspondente ao novo perfil de produto como membro do grupo de administradores. Você pode fazer isso clicando em **Ferramentas - Segurança - Grupos no autor** e, em seguida, clicando na guia **administradores** grupo. Em seguida, adicione o grupo como mostrado abaixo
+1. Adicione o grupo correspondente ao novo perfil de produto como membro do grupo do administrador clicando em **Ferramentas - Segurança - Grupos no autor** e, em seguida, clicando na guia **administradores** grupo. Em seguida, adicione o grupo como mostrado abaixo
 
    ![repobrowser11](/help/implementing/developing/tools/assets/repobrowser11.png)
 
@@ -103,7 +103,7 @@ Para tornar esses locais visíveis, faça o seguinte.
 
    ![repobrowser12](/help/implementing/developing/tools/assets/repobrowser12.png)
 
-1. Como uma boa prática de segurança, remova o novo **DEV - Publicação de administradores do AEM** grupo do grupo de administradores em **autor** portanto, o novo grupo é isolado para publicação
+1. Como uma boa prática de segurança, remova o novo **DEV - Publicação de administradores do AEM** grupo do grupo do administrador em **autor** portanto, o novo grupo é isolado para publicação
 
    ![repobrowser13](/help/implementing/developing/tools/assets/repobrowser13.png)
 
@@ -111,17 +111,17 @@ Para tornar esses locais visíveis, faça o seguinte.
 
 ### Visualizar propriedades do JCR {#view-jcr-properties}
 
-Clicar em um nó revelará suas propriedades JCR no painel direito do navegador de navegação. Veja abaixo um exemplo de `experience-fragments` nó.
+Clicar em um nó revela suas propriedades JCR no painel direito do navegador de navegação. Veja abaixo um exemplo de `experience-fragments` nó.
 
 ![repobrowser4](/help/implementing/developing/tools/assets/repobrowser41.png)
 
 ### Exibir conteúdo {#view-content}
 
-Você pode usar o navegador do repositório para exibir o conteúdo clicando em um recurso no painel de navegação. Isso abrirá uma visualização no lado direito do navegador, em uma guia chamada em homenagem ao respectivo recurso.
+Você pode usar o navegador do repositório para visualizar o conteúdo. Clique em um recurso no painel de navegação para abrir uma visualização no lado direito do navegador, em uma guia nomeada com base no respectivo recurso.
 
 ![repobrowser6](/help/implementing/developing/tools/assets/repobrowser61.png)
 
-A visualização está disponível atualmente para tipos de imagem na lista abaixo:
+A visualização está disponível para os seguintes tipos de imagem:
 
 * apng
 * avif

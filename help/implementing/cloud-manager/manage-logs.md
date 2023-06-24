@@ -2,10 +2,10 @@
 title: Acesso e gerenciamento de registros
 description: Saiba como acessar e gerenciar logs para auxiliar seu processo de desenvolvimento no AEM as a Cloud Service.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
 workflow-type: tm+mt
-source-wordcount: '270'
-ht-degree: 91%
+source-wordcount: '266'
+ht-degree: 69%
 
 ---
 
@@ -18,7 +18,7 @@ Você pode acessar uma lista de arquivos de log disponíveis para o ambiente sel
 
 ## Download de logs {#download-logs}
 
-Siga as etapas a seguir para baixar os logs.
+Para baixar os logs, faça o seguinte.
 
 1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização e o programa apropriado.
 
@@ -40,7 +40,7 @@ Você também pode acessar os logs na página **Ambientes**.
 
 ## Logs por meio da API {#logs-through-api}
 
-Além de fazer download dos logs por meio da interface do usuário, os logs também estão disponíveis por meio da API e da interface de linha de comando.
+Além de baixar logs por meio da interface do usuário, os logs também estão disponíveis por meio da API e da interface de linha de comando.
 
 Para baixar os arquivos de log de um ambiente específico, o comando seria semelhante ao descrito a seguir.
 
@@ -48,7 +48,7 @@ Para baixar os arquivos de log de um ambiente específico, o comando seria semel
 $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
 ```
 
-Também é possível rastrear logs por meio da interface de linha de comando.
+Além disso, é possível rastrear logs por meio da interface de linha de comando.
 
 ```shell
 $ aio cloudmanager:tail-log --programId 5 1884 author aemerror
@@ -79,7 +79,7 @@ Environment Id Service    Name
 
 ### Recursos adicionais {#resources}
 
-Consulte os seguintes recursos adicionais para saber mais sobre a API do Cloud Manager e a CLI do Adobe I/O:
+Consulte os seguintes recursos adicionais para saber mais sobre a API do Cloud Manager e a CLI do Adobe Developer:
 
-* [Documentação da API do Cloud Manager](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
-* [CLI do Adobe I/O](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+* [Documentação da API do Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/)
+* [CLI do Adobe Developer](https://github.com/adobe/aio-cli-plugin-cloudmanager)
