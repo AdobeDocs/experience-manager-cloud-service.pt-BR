@@ -5,7 +5,7 @@ exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
 source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
 workflow-type: tm+mt
 source-wordcount: '512'
-ht-degree: 15%
+ht-degree: 21%
 
 ---
 
@@ -15,14 +15,14 @@ ht-degree: 15%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_backuprestore"
 >title="Backup e restauração"
->abstract="O AEM as a Cloud Service pode restaurar o aplicativo completo (código e conteúdo) de um cliente para uma hora específica e predeterminada nos últimos sete dias, substituindo o que estava em produção. Esse recurso deve ser usado somente quando houver problemas graves com código ou conteúdo. Os dados recentes entre o momento do backup restaurado e o presente são perdidos. O armazenamento temporário também é restaurado para a versão antiga."
+>abstract="O AEM as a Cloud Service pode restaurar o aplicativo completo (código e conteúdo) de um cliente para uma hora específica e predeterminada nos últimos sete dias, substituindo o que estava em produção. Esse recurso deve ser usado somente quando houver problemas graves com código ou conteúdo. Os dados recentes entre o momento do backup restaurado e o presente foram perdidos. O armazenamento temporário também é restaurado para a versão antiga."
 
 Caso ocorra corrupção de conteúdo ou dados, o AEM as a Cloud Service pode restaurar o aplicativo completo de um cliente (código e conteúdo). Ele é restaurado para horários específicos e predeterminados nos últimos sete dias, substituindo o que estava em produção.
 Se a implantação de um cliente, o que significa que o código do aplicativo implantado está corrompido ou com problemas, é preferível corrigi-lo e avançar para uma nova versão em vez de restaurá-lo a partir do backup. O backup é executado de forma que não afete o desempenho de tempo de execução de um aplicativo.
 
 >[!CAUTION]
 >
->Esse recurso deve ser usado somente quando houver problemas graves com código ou conteúdo. Os dados recentes entre o momento do backup restaurado e o presente são perdidos. O armazenamento temporário também é restaurado para a versão antiga.
+>Esse recurso deve ser usado somente quando houver problemas graves com código ou conteúdo. Os dados recentes entre o momento do backup restaurado e o presente foram perdidos. O armazenamento temporário também é restaurado para a versão antiga.
 
 ## Como usar {#how-to-use}
 

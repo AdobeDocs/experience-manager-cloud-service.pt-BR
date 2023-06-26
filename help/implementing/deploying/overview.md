@@ -6,7 +6,7 @@ exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '3523'
-ht-degree: 80%
+ht-degree: 81%
 
 ---
 
@@ -174,7 +174,7 @@ above appears to be internal, to confirm with Brian -->
 >[!CONTEXTUALHELP]
 >id="aemcloud_packagemanager"
 >title="Gerenciador de pacotes - Migração de pacotes de conteúdo variável"
->abstract="Explore o uso do gerenciador de pacotes para casos de uso em que um pacote de conteúdo deve ser instalado como &quot;único&quot;, o que inclui a importação de conteúdo específico da produção para o preparo para depurar um problema de produção, a transferência de um pequeno pacote de conteúdo de um ambiente local para ambientes da nuvem AEM e muito mais."
+>abstract="Aproveite o gerenciador de pacotes para casos de uso em que um pacote de conteúdo deve ser instalado “uma única vez”, o que inclui importar um conteúdo específico da produção para o preparo com a finalidade de depurar um problema de produção, transferindo um pequeno pacote de conteúdo do ambiente local para ambientes do AEM Cloud e muito mais."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=pt-BR#cloud-migration" text="Ferramenta Transferência de conteúdo"
 
 Há casos de uso em que um pacote de conteúdo deve ser instalado como “único”. Por exemplo, importar conteúdo específico da produção para o preparo para depurar um problema de produção. Para esses cenários, o [Gerenciador de pacotes](/help/implementing/developing/tools/package-manager.md) pode ser usado em ambientes do AEM as a Cloud Service.
