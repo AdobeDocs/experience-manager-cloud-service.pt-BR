@@ -10,7 +10,7 @@ topic-tags: adaptive_forms, author
 discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: 1633e02fc6b79a45582b919863662bc1d1b49b42
+source-git-commit: a16da1b11cfe18910b2e57c0b6b668543dba46e3
 workflow-type: tm+mt
 source-wordcount: '1433'
 ht-degree: 0%
@@ -70,17 +70,14 @@ Para usar CAPTCHA no Adaptive Forms:
 
    >[!NOTE]
    >
-   >Verifique se o contêiner de configuração selecionado ao criar o formulário adaptável contém o serviço de nuvem reCAPTCHA. Também é possível editar as propriedades do Formulário adaptável para alterar o contêiner de configuração associado ao formulário.
+   > Verifique se o contêiner de configuração selecionado ao criar o formulário adaptável contém o serviço de nuvem reCAPTCHA. Também é possível editar as propriedades do Formulário adaptável para alterar o contêiner de configuração associado ao formulário.
 
 1. No navegador de componentes, arraste e solte a **[!UICONTROL Captcha]** no Formulário adaptável.
 
    >[!NOTE]
    >
-   >Não há suporte para o uso de mais de um componente Captcha em um Formulário adaptável. Além disso, não é recomendável usar CAPTCHA em um painel marcado para carregamento lento ou em um fragmento.
-
-   >[!NOTE]
-   >
-   >O Captcha é sensível ao tempo e expira em cerca de um minuto. Portanto, é recomendável colocar o componente Captcha antes do botão Enviar no Formulário adaptável.
+   > * Não há suporte para o uso de mais de um componente Captcha em um Formulário adaptável. Além disso, não é recomendável usar CAPTCHA em um painel marcado para carregamento lento ou em um fragmento.
+   > * O Captcha é sensível ao tempo e expira em cerca de um minuto. Portanto, é recomendável colocar o componente Captcha antes do botão Enviar no Formulário adaptável.
 
 1. Selecione o componente Captcha que você adicionou e toque em ![cmppr](assets/configure-icon.svg) para editar suas propriedades.
 1. Especifique um título para o widget CAPTCHA. O valor padrão é **[!UICONTROL Captcha]**. Selecionar **[!UICONTROL Ocultar título]** se não quiser que o título seja exibido.
@@ -91,7 +88,7 @@ Para usar CAPTCHA no Adaptive Forms:
 
    >[!NOTE]
    >
-   >* Não selecionar **[!UICONTROL Padrão]** no menu suspenso do serviço Captcha, como o serviço Experience Manager CAPTCHA padrão está obsoleto.
+   > Não selecionar **[!UICONTROL Padrão]** no menu suspenso do serviço Captcha, como o serviço Experience Manager CAPTCHA padrão está obsoleto.
 
 1. Salve as propriedades.
 
@@ -109,7 +106,7 @@ Toque no **[!UICONTROL Valor da moeda]** no formulário e crie as seguintes regr
 
 >[!NOTE]
 >
->* Se você selecionar a configuração reCAPTCHA v2 com tamanho como [!UICONTROL Invisível] a opção mostrar/ocultar não é aplicável.
+> Se você selecionar a configuração reCAPTCHA v2 com tamanho como [!UICONTROL Invisível] a opção mostrar/ocultar não é aplicável.
 
 ### Validar CAPTCHA {#validate-captcha}
 
