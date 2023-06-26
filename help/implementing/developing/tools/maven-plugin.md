@@ -2,9 +2,9 @@
 title: Plug-in Maven do pacote de conteúdo do Adobe
 description: Usar o plug-in Maven do pacote de conteúdo para implantar aplicativos AEM
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: a5eef46835e234bb47451693cf5fdcda66c5b26f
 workflow-type: tm+mt
-source-wordcount: '1849'
+source-wordcount: '1842'
 ht-degree: 6%
 
 ---
@@ -212,7 +212,7 @@ A variável `mode` element define como o conteúdo é o repositório é afetado 
 
 * **Mesclar:** O conteúdo do pacote que ainda não está no repositório é adicionado. O conteúdo que está no pacote e no repositório permanece inalterado. Nenhum conteúdo é removido do repositório.
 * **Substituir:** O conteúdo do pacote que não está no repositório é adicionado ao repositório. O conteúdo no repositório é substituído pelo conteúdo correspondente no pacote. O conteúdo é removido do repositório quando não existe no pacote.
-* **Atualizar:** O conteúdo do pacote que não está no repositório é adicionado ao repositório. O conteúdo no repositório é substituído pelo conteúdo correspondente no pacote. O conteúdo existente é removido do repositório.
+* **Atualizar:** O conteúdo do pacote que não está no repositório é adicionado ao repositório. O conteúdo no repositório é substituído pelo conteúdo correspondente no pacote.
 
 Quando o filtro não contém `mode` elemento, o valor padrão de `replace` é usada.
 
