@@ -3,10 +3,10 @@ title: Administração de instâncias do fluxo de trabalho
 description: Saiba como administrar instâncias de fluxo de trabalho
 feature: Administering
 role: Admin
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 31cda6f7eb7ef1c32ba9d0ec7d198a5f2f38b1e6
 workflow-type: tm+mt
-source-wordcount: '1279'
-ht-degree: 75%
+source-wordcount: '1284'
+ht-degree: 74%
 
 ---
 
@@ -28,12 +28,21 @@ Há vários consoles disponíveis para administrar seus fluxos de trabalho. Use 
 1. Usando a navegação, selecione **Ferramentas** e, em seguida, **Fluxo de trabalho**.
 1. Selecionar **Instâncias** para exibir a lista de instâncias de fluxo de trabalho em execução em andamento.
 1. No painel superior, no canto direito, as instâncias de fluxo de trabalho mostram **Fluxos de trabalho em execução**, **Status**, e **Detalhes**.
-1. **Fluxos de trabalho em execução** mostra o número de workflows em execução e seus status. por exemplo, nas imagens fornecidas, o número de **Fluxos de trabalho em execução** e a variável **Status** da instância AEM.
-   ![status-íntegro](/help/sites-cloud/administering/assets/status-healthy.png)
-   ![status-não íntegro](/help/sites-cloud/administering/assets/status-unhealthy.png)
-1. Para **Detalhes do status** de instâncias de fluxo de trabalho, clique em **Detalhes**, para mostrar a **número de instâncias de fluxos de trabalho em execução**, **instâncias de fluxo de trabalho concluídas**, **instâncias de fluxo de trabalho anuladas**, **instâncias de fluxo de trabalho com falha** e assim por diante. por exemplo, abaixo estão as imagens fornecidas que mostram **Detalhes do status** com **Status: Íntegro** e **Status: não íntegro**.
-   ![status-details-healthy](/help/sites-cloud/administering/assets/status-details-healthy.png)
-   ![status-detalhes-não íntegro](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
+1. **Fluxos de trabalho em execução** mostra o número de workflows em execução e seus status. por exemplo, nas imagens fornecidas, o número de **Fluxos de trabalho em execução** e a variável **Status** da instância AEM:
+
+   * **Status: íntegro**
+     ![status-íntegro](/help/sites-cloud/administering/assets/status-healthy.png)
+
+   * **Status: não íntegro**
+     ![status-não íntegro](/help/sites-cloud/administering/assets/status-unhealthy.png)
+
+1. Para **Detalhes do status** de instâncias de fluxo de trabalho, clique em **Detalhes**, para mostrar a **número de instâncias de fluxos de trabalho em execução**, **instâncias de fluxo de trabalho concluídas**, **instâncias de fluxo de trabalho anuladas**, **instâncias de fluxo de trabalho com falha** e assim por diante. por exemplo, abaixo estão as imagens fornecidas que mostram **Detalhes do status** com:
+
+   * **Detalhes do status: Íntegro**
+     ![status-details-healthy](/help/sites-cloud/administering/assets/status-details-healthy.png)
+
+   * **Detalhes do status: não íntegro**
+     ![status-detalhes-não íntegro](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
 
    >[!NOTE]
    >
