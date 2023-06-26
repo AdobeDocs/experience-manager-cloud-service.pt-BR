@@ -2,10 +2,10 @@
 title: Como modelar seu conteúdo
 description: Nesta parte da jornada do desenvolvedor do AEM Headless, saiba como modelar o conteúdo para a entrega do AEM Headless usando a modelagem de conteúdo com modelos de fragmento de conteúdo e fragmentos de conteúdo.
 exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
 source-wordcount: '1830'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -45,7 +45,7 @@ Este artigo se baseia nesses fundamentos para que você entenda como preparar se
 
 *O mundo é grande e complexo*.
 
-Talvez sim, talvez não. O fato é que há um mundo grande e ***complicado*** de informações, e a modelagem de dados é usada para definir uma representação simplificada de uma parcela muito pequena disso, usando apenas as informações específicas que são necessárias para um determinado propósito.
+Talvez, mas talvez não. Trata-se certamente de uma ***complicado*** mundo lá fora e a modelagem de dados é usada para definir uma representação simplificada de uma subseção muito (muito) pequena, usando as informações específicas necessárias para um determinado propósito.
 
 >[!NOTE]
 >

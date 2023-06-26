@@ -2,10 +2,10 @@
 title: Saiba mais sobre criação de Modelos de fragmento de conteúdo no AEM
 description: Saiba mais sobre os conceitos e os mecanismos de modelagem de conteúdo para seu Headless CMS usando Modelos de fragmentos de conteúdo.
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '685'
-ht-degree: 92%
+source-wordcount: '686'
+ht-degree: 89%
 
 ---
 
@@ -59,7 +59,7 @@ Ao abrir um novo modelo pela primeira vez, você verá um grande espaço em bran
 
 Então, o que deve ser feito?
 
-Você pode arrastar as instâncias da variável **Tipos de dados** para o espaço esquerdo — você já está definindo seu modelo.
+É possível arrastar instâncias do **Tipos de dados** no espaço esquerdo - você já está definindo seu modelo!
 
 ![Definição de campos](/help/sites-cloud/administering/content-fragments/assets/cfm-models-04.png)
 

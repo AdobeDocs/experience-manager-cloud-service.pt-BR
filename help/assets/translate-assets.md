@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Translation
 role: Admin,User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2642'
+source-wordcount: '2646'
 ht-degree: 24%
 
 ---
@@ -146,7 +146,6 @@ Se você usar essa opção, o fluxo de trabalho de tradução será executado pa
    >* Se você excluir a entrada de tags ou metadados, nenhuma tag ou metadado será traduzido para qualquer um dos ativos.
    >* Se você usar a Tradução automática, os binários de ativos não serão traduzidos.
    >* Se o ativo que você adicionar ao trabalho de tradução incluir subativos, selecione os subativos e remova-os para que a tradução continue sem falhas.
-
 
 1. Para iniciar a tradução dos ativos, clique/toque na seta na **[!UICONTROL Tarefa de tradução]** mosaico e selecionar **[!UICONTROL Início]** da lista. Uma mensagem notifica o início do trabalho de tradução.
 1. Para exibir o status do trabalho de tradução, clique/toque nas reticências na parte inferior da **[!UICONTROL Tarefa de tradução]** bloco. <!-- For more details, see [Monitoring the Status of a Translation Job](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job). -->

@@ -2,10 +2,10 @@
 title: Notas de versão do [!DNL Adobe Experience Manager]  as a Cloud Service 2021.8.0.
 description: Notas de versão do [!DNL Adobe Experience Manager]  as a Cloud Service 2021.8.0.
 exl-id: 8b041934-1c4a-4670-9b03-d38f683b99e5
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1032'
-ht-degree: 33%
+source-wordcount: '1028'
+ht-degree: 34%
 
 ---
 
@@ -36,24 +36,24 @@ Dê uma olhada no [Visão geral da versão de agosto de 2021](https://video.tv.a
 
 * Ao compartilhar ativos digitais como um link, os usuários podem copiar o URL para a área de transferência imediatamente. O aprimoramento permite compartilhar ativos de maneira mais rápida e prática. Essa funcionalidade permite um compartilhamento de ativos mais rápido e prático.
 
-   ![Opção Copiar URL ao compartilhar um ativo como um link](/help/assets/assets/link-share-copy-URL-option.png)
-   *Figura: ao compartilhar um ativo como um link, agora é possível copiar o URL para compartilhá-lo separadamente.*
+  ![Opção Copiar URL ao compartilhar um ativo como um link](/help/assets/assets/link-share-copy-URL-option.png)
+  *Figura: ao compartilhar um ativo como um link, agora é possível copiar o URL para compartilhá-lo separadamente.*
 
 * Ao fazer upload de arquivos TXT, os microsserviços de ativos geram automaticamente uma miniatura. A miniatura de PNG é uma representação do arquivo TXT que ajuda os usuários a identificar o conteúdo ou os arquivos até certo ponto, sem abrir os arquivos. Essa funcionalidade não requer configuração e funciona por padrão.
 
-   ![Uma representação de um arquivo TXT é gerada automaticamente pelo [!DNL Assets] em formato PNG](/help/assets/assets/thumbnail-rendition-txt-file.png)
-   *Figura: uma representação de um arquivo TXT é gerada automaticamente para ajudá-lo a identificar o arquivo sem abri-lo.*
+  ![Uma representação de um arquivo TXT é gerada automaticamente pelo [!DNL Assets] em formato PNG](/help/assets/assets/thumbnail-rendition-txt-file.png)
+  *Figura: uma representação de um arquivo TXT é gerada automaticamente para ajudá-lo a identificar o arquivo sem abri-lo.*
 
 ### Novo recurso na [!DNL Assets] canal de pré-lançamento {#assets-prerelease-features}
 
 * Agora os usuários podem classificar os ativos exibidos nos resultados da pesquisa nas visualizações de Coluna e Cartão. A classificação funciona nas colunas Nome, Criado, Modificado ou Nenhum.
 
-   ![Classificar os resultados da pesquisa em [!DNL Assets] nas Visualizações de coluna e cartão](/help/assets/assets/sort-searched-assets.png)
-   *Figura: Classificar os resultados da pesquisa em [!DNL Assets] nas Visualizações de coluna e cartão.*
+  ![Classificar os resultados da pesquisa em [!DNL Assets] nas Visualizações de coluna e cartão](/help/assets/assets/sort-searched-assets.png)
+  *Figura: Classificar os resultados da pesquisa em [!DNL Assets] nas Visualizações de coluna e cartão.*
 
 ### Bugs corrigidos em [!DNL Assets] {#assets-bugs-fixed}
 
-* Quando um membro do grupo de colaboradores navega até a [!DNL Assets] Console, um extra `POST` é gerada uma solicitação para tentar criar uma coleção. Essa solicitação não é necessária, falha devido a problemas de permissão e cria muitos erros nos logs. (CQ-4328856)
+* Quando um membro do grupo de colaboradores navega até a [!DNL Assets] Console, um extra `POST` é gerada para criar uma coleção. Essa solicitação não é necessária; ela falha devido a problemas de permissão e cria muitos erros nos logs. (CQ-4328856)
 * Quando os usuários visualizam um ativo e selecionam o [!UICONTROL Linha do tempo] no menu pop-up do painel esquerdo, um erro é exibido. Nos logs, muitos avisos são registrados devido a uma consulta inválida. (CQ-4328919)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -80,7 +80,7 @@ Dê uma olhada no [Visão geral da versão de agosto de 2021](https://video.tv.a
 
 * Nova interface do seletor de categorias para melhorar a experiência do usuário, aumentar a eficiência e melhorar o suporte para catálogos de produtos complexos
 
-   ![Novo Seletor de Categoria](/help/assets/CIF/category-picker.png)
+  ![Novo Seletor de Categoria](/help/assets/CIF/category-picker.png)
 
 * Melhor suporte A11Y para os Componentes principais da CIF
 

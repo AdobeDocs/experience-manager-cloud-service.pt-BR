@@ -4,10 +4,10 @@ description: Saiba como usar o AEM para criar um site usando modelos de site par
 feature: Administering
 role: Admin
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '786'
-ht-degree: 98%
+source-wordcount: '787'
+ht-degree: 96%
 
 ---
 
@@ -31,7 +31,7 @@ Reserve tempo para considerar a finalidade do site e o conteúdo planejado com b
 
 >[!TIP]
 >
->[O site de referência do WKND](https://wknd.site) fornece uma implementação de práticas recomendadas para um site de marca de experiências externas totalmente funcional. Explore-o para ver como um site do AEM bem construído é estruturado.
+>[O site de referência WKND](https://wknd.site) O fornece uma implementação de práticas recomendadas para um site de marca de experiências externas totalmente funcional. Explore-o para ver como um site do AEM bem construído é estruturado.
 
 ## Modelos de site {#site-templates}
 

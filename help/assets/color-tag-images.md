@@ -2,10 +2,10 @@
 title: Tags de cores para imagens
 description: O Experience Manager Assets permite distinguir cores em uma imagem e aplicá-las automaticamente como tags. Em seguida, você pode usar essas tags para pesquisar e filtrar imagens.
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1225'
-ht-degree: 8%
+source-wordcount: '1220'
+ht-degree: 7%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 8%
 
 O Experience Manager Assets usa os recursos de IA do Adobe Sensei para distinguir cores em uma imagem e aplicá-las automaticamente como tags na assimilação. Essas tags permitem uma experiência de pesquisa aprimorada, com base na composição de cores da imagem.
 
-É possível configurar o número de cores, dentro de um intervalo de uma a quarenta, que são marcadas em uma imagem para que, posteriormente, você possa pesquisar por imagens com base nessas cores. O Experience Manager Assets aplica as tags com base na cobertura de cor de uma imagem. Também é possível configurar o formato de exibição de uma tag de cor.
+Você pode configurar o número de cores, dentro de um intervalo de um a 40, que são marcados em uma imagem para que você possa pesquisar imagens com base nessas cores posteriormente. O Experience Manager Assets aplica as tags com base na cobertura de cor de uma imagem. Também é possível configurar o formato de exibição de uma tag de cor.
 
 A figura a seguir ilustra a sequência de tarefas executada para configurar e gerenciar a marcação de cores para imagens no Experience Manager Assets:
 
@@ -42,11 +42,11 @@ Para gerenciar as propriedades de marcação de cores para imagens:
 
 1. Especificar um formato de exibição para a marca de cor no **[!UICONTROL Formato de exibição]** campo. As opções possíveis incluem o nome da cor, o formato RGB ou HEX.
 
-1. Especifique o número de cores para marcar as imagens na **[!UICONTROL Limite]** campo. Essas cores são exibidas quando você exibe as propriedades de uma imagem.  Você pode definir um número entre um e quarenta nesse campo. O valor padrão desse campo é dez cores.
+1. Especifique o número de cores para marcar as imagens na **[!UICONTROL Limite]** campo. Essas cores são exibidas quando você exibe as propriedades de uma imagem.  Você pode definir um número entre um e 40 nesse campo. O valor padrão desse campo é dez cores.
 
-1. Especifique a porcentagem mínima de cobertura de cor para incluir uma tag de cor nos resultados da pesquisa na **[!UICONTROL Limite de cobertura/domínio %]** campo. Por exemplo, se a cobertura da cor vermelha em uma imagem for de dez por cento e você definir nove por cento nesse campo, a imagem será incluída quando você pesquisar imagens com a cor vermelha. No entanto, se a cobertura da cor vermelha em uma imagem for de dez por cento e você definir onze por cento nesse campo, a imagem não será incluída quando você pesquisar imagens com a cor vermelha.
+1. Especifique a porcentagem mínima de cobertura de cor para incluir uma tag de cor nos resultados da pesquisa na **[!UICONTROL Limite de cobertura/domínio %]** campo. Por exemplo, se a cobertura da cor vermelha em uma imagem for de dez por cento e você definir nove por cento nesse campo, a imagem será incluída quando você pesquisar imagens com a cor vermelha. No entanto, se a cobertura da cor vermelha em uma imagem for de dez por cento e você definir 11 por cento nesse campo, a imagem não será incluída quando você pesquisar imagens com cor vermelha.
 
-   Você pode especificar qualquer número entre cinco e cem nesse campo. O valor padrão é onze.
+   Você pode especificar qualquer número entre cinco e cem nesse campo. O valor padrão é 11.
 
    >[!NOTE]
    >

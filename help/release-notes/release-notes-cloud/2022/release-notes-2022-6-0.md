@@ -2,10 +2,10 @@
 title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2022.6.0.
 description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2022.6.0.
 exl-id: cf2133dc-56cd-4a07-ab11-72e16f015ff5
-source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 95%
+source-wordcount: '638'
+ht-degree: 87%
 
 ---
 
@@ -39,7 +39,7 @@ Assista ao vídeo de Visão geral da versão de junho de 2022 para ver um resumo
 
 * Uma nova [interface](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) já está disponível para que administradores e autores de conteúdo possam gerenciar (executando ações como publicar, desfazer a publicação, copiar, mover etc.), pesquisar/filtrar e criar fragmentos de conteúdo para casos de uso headless com eficiência.
 
-   ![Console de fragmentos de conteúdo](/help/release-notes/assets/cf-ui.png)
+  ![Console de fragmentos de conteúdo](/help/release-notes/assets/cf-ui.png)
 
 * O novo [Componente de índice](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/tableofcontents.html?lang=pt-BR) funciona não apenas com os Componentes principais, mas com todos os componentes, renderizando índices automaticamente nas páginas de conteúdo. E como ele é renderizado no lado do servidor e totalmente armazenado em cache pelo Dispatcher, seu carregamento também é eficiente.
 
@@ -47,7 +47,7 @@ Assista ao vídeo de Visão geral da versão de junho de 2022 para ver um resumo
 
 ### Novos recursos no [!DNL Assets] {#assets-features}
 
-Agora, o Experience Manager Assets usa os recursos de IA do Adobe Sensei para [distinguir cores em uma imagem e aplicá-las automaticamente como tags na assimilação](/help/assets/color-tag-images.md). Essas tags permitem uma experiência de pesquisa aprimorada, com base na composição de cores da imagem. É possível configurar o número de cores, dentro de um intervalo de uma a quarenta, que são marcadas em uma imagem para que, posteriormente, você possa pesquisar por imagens com base nessas cores.
+Agora, o Experience Manager Assets usa os recursos de IA do Adobe Sensei para [distinguir cores em uma imagem e aplicá-las automaticamente como tags na assimilação](/help/assets/color-tag-images.md). Essas tags permitem uma experiência de pesquisa aprimorada, com base na composição de cores da imagem. Você pode configurar o número de cores, dentro de um intervalo de um a 40, que são marcados em uma imagem para que você possa pesquisar imagens com base nessas cores posteriormente.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -57,7 +57,7 @@ Agora, o Experience Manager Assets usa os recursos de IA do Adobe Sensei para [d
 
 * **Assistente para criar um formulário adaptável**: você pode usar o assistente empresarial para criar formulários adaptáveis rapidamente. O assistente fornece uma navegação rápida por guias para selecionar facilmente o modelo pré-configurado, o estilo, os campos e as opções de envio para criar um formulário adaptável.
 
-   ![Assistente para criar um formulário adaptável](/help/release-notes/assets/wizard.png)
+  ![Assistente para criar um formulário adaptável](/help/release-notes/assets/wizard.png)
 
 ## Complemento CIF {#cloud-services-cif}
 
@@ -94,7 +94,7 @@ Agora, o Experience Manager Assets usa os recursos de IA do Adobe Sensei para [d
 
 ### Novidades {#what-is-new-foundation}
 
-* Conforme mencionado nas notas de versão de maio (2022.5.0), a opção “Adicionar árvore”, na guia **Distribuir** da tela do administrador do agente de replicação, foi removida. Os pacotes com uma hierarquia de árvore de conteúdo devem ser replicados usando o fluxo de trabalho [Gerenciar publicação](/help/operations/replication.md#manage-publication) ou [Publicar árvore de conteúdo](/help/operations/replication.md#manage-publication#publish-content-tree-workflow).
+* Conforme mencionado nas notas de versão de maio (2022.5.0), a opção &quot;Adicionar árvore&quot; na tela do administrador do agente de replicação **Distribuir** foi removida. Os pacotes com uma hierarquia de árvore de conteúdo devem ser replicados usando o fluxo de trabalho [Gerenciar publicação](/help/operations/replication.md#manage-publication) ou [Publicar árvore de conteúdo](/help/operations/replication.md#manage-publication#publish-content-tree-workflow).
 
 ## Cloud Manager {#cloud-manager}
 

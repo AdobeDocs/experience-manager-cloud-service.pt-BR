@@ -2,10 +2,10 @@
 title: Práticas recomendadas de gerenciamento de SEO e URL do Adobe Experience Manager as a Cloud Service
 description: Práticas recomendadas de gerenciamento de SEO e URL do Adobe Experience Manager as a Cloud Service
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
 source-wordcount: '3709'
-ht-degree: 97%
+ht-degree: 95%
 
 ---
 
@@ -286,7 +286,7 @@ No entanto, há também uma maneira mais simples de gerenciar isso:
 
 Até o momento, você implementou mapeamentos juntamente com a lógica nos componentes para usar esses mapeamentos ao enviar URLs para nossas páginas.
 
-A peça final do quebra-cabeça é lidar com estes URLs mais curtos quando eles chegam ao Dispatcher, que é onde o `mod_rewrite` entra em cena. O maior benefício de usar o `mod_rewrite` é que os URLs são mapeados de volta na sua forma longa *antes* de serem enviados ao módulo do Dispatcher. Isso significa que o Dispatcher solicitará o URL longo do servidor de publicação e o armazenará em cache de acordo. Portanto, todas as solicitações de liberação do Dispatcher que chegarem do servidor de publicação poderão invalidar esse conteúdo com sucesso.
+A peça final do quebra-cabeça é lidar com estes URLs mais curtos quando eles chegam ao Dispatcher, que é onde o `mod_rewrite` entra em cena. O maior benefício de usar `mod_rewrite` é que os URLs são mapeados de volta à sua forma longa *antes* eles são enviados para o módulo Dispatcher. Isso significa que o Dispatcher solicitará o URL longo do servidor de publicação e o armazenará em cache de acordo. Portanto, todas as solicitações de liberação do Dispatcher que chegarem do servidor de publicação poderão invalidar esse conteúdo com sucesso.
 
 Para implementar essas regras, você pode adicionar elementos `RewriteRule` no host virtual na configuração do Apache HTTP Server. Se quiser expandir os URLs encurtados do exemplo anterior, você pode implementar uma regra que se pareça com esta:
 
@@ -349,7 +349,7 @@ Disallow: /
 
 Como alternativa, em um ambiente em tempo real, você pode optar por não permitir determinados caminhos que não deseja indexar.
 
-O problema de colocar o arquivo `robots.txt` na raiz do site é que as solicitações de liberação do Dispatcher podem apagar este arquivo, e os mapeamentos de URL provavelmente colocarão a raiz do site em um local diferente do `DOCROOT` definido na configuração do servidor HTTP do Apache. Por isso, é comum colocar esse arquivo na instância do autor na raiz do site e replicá-lo na instância de publicação.
+A advertência ao colocar a variável `robots.txt` O arquivo na raiz do site é que as solicitações de liberação do Dispatcher podem apagar este arquivo, e os mapeamentos de URL provavelmente colocarão a raiz do site em um local diferente do `DOCROOT` conforme definido na configuração do Apache HTTP Server. Por isso, é comum colocar esse arquivo na instância do autor na raiz do site e replicá-lo na instância de publicação.
 
 ### Criar um mapa de site XML no AEM {#building-an-xml-sitemap-on-aem}
 

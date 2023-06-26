@@ -2,10 +2,10 @@
 title: Configuração da segmentação com o ContextHub
 description: Saiba como configurar a segmentação usando o ContextHub.
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1694'
-ht-degree: 95%
+source-wordcount: '1695'
+ht-degree: 94%
 
 ---
 
@@ -101,7 +101,7 @@ Para definir seu novo segmento:
    * Valor mínimo: `0`
    * Valor máximo: `1000000`
 
-1. No console segmentos, edite o segmento criado recentemente para abri-lo no editor de segmentos.
+1. No console segmentos, edite o segmento recém-criado para abri-lo no editor de segmentos.
 1. Arraste uma comparação ou referência para o editor de segmentos e ela aparecerá no contêiner AND padrão.
 1. Clique duas vezes em ou toque na opção de configuração da nova referência ou segmento para editar os parâmetros específicos. Neste exemplo, estamos testando para pessoas na Basileia.
 

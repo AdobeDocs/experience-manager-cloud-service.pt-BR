@@ -2,9 +2,9 @@
 title: Ambientes de desenvolvimento rápido
 description: Saiba como usar Ambientes de desenvolvimento rápido para iterações de desenvolvimento rápido em um ambiente de nuvem.
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '3317'
+source-wordcount: '3318'
 ht-degree: 5%
 
 ---
@@ -104,7 +104,7 @@ Depois de adicionar um RDE para o programa usando o Cloud Manager, você pode in
 
    `aio config:set cloudmanager_environmentid 123456`
 
-1. Quando terminar de configurar o plug-in, faça logon executando
+1. Depois de concluir a configuração do plug-in, faça logon executando
 
    `aio login`
 

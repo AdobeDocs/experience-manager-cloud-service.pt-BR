@@ -2,10 +2,10 @@
 title: Ativação de recursos do aplicativo web progressivo
 description: O AEM Sites permite que o autor de conteúdo ative recursos de aplicativo web progressivo para qualquer site por meio de uma configuração simples, sem necessidade de desenvolver código.
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2000'
-ht-degree: 94%
+source-wordcount: '1998'
+ht-degree: 93%
 
 ---
 
@@ -217,7 +217,7 @@ As bibliotecas de clientes são entregues com a adição de um seletor de cache,
 
 O Componente de imagem dos Componentes principais do AEM determina no front-end a melhor representação para buscar. Esse mecanismo também inclui um carimbo de data e hora que corresponde à hora da última modificação desse recurso. Esse mecanismo complica a configuração do pré-armazenamento em cache do PWA.
 
-Ao configurar o pré-armazenamento em cache, o usuário precisa listar todas as variações de caminho que podem ser buscadas. Essas variações são compostas de parâmetros como qualidade e largura. É recomendado reduzir o número destas variações para no máximo três — pequenas, médias e grandes. Você pode fazer isso através da caixa de diálogo de política de conteúdo do [Componente de imagem.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=pt-BR)
+Ao configurar o pré-armazenamento em cache, o usuário precisa listar todas as variações de caminho que podem ser buscadas. Essas variações são compostas de parâmetros como qualidade e largura. Recomenda-se reduzir o número dessas variações para no máximo três - pequeno, médio, grande. Você pode fazer isso através da caixa de diálogo de política de conteúdo do [Componente de imagem.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=pt-BR)
 
 Se não for configurado com cuidado, o consumo de memória e de rede podem afetar seriamente o desempenho do seu PWA. Além disso, se você pretende realizar o pré-armazenamento em cache de, por exemplo, 50 imagens, e tiver 3 larguras diferentes por imagem, o usuário que mantém o site terá que manter uma lista de até 150 entradas na seção pré-armazenamento em cache das propriedades da página do PWA.
 

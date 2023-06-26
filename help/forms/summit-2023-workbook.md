@@ -7,9 +7,9 @@ topic-tags: develop
 hide: true
 hidefromtoc: true
 exl-id: e1eb0812-c92e-4a18-aabb-5a70b9e6fc7d
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '3359'
+source-wordcount: '3358'
 ht-degree: 99%
 
 ---
@@ -238,7 +238,7 @@ Configure o repositório local do tema:
 
    ![](/help/forms/assets/screenshot2028116229.png)
 
-1. Para renderizar o formulário hospedado no ambiente de publicação do Cloud Service, renomeie o arquivo `env_template`.  Para renomear o arquivo, clique com o botão direito no arquivo **env_template** e selecione a opção **Renomear**.
+1. Para renderizar o formulário hospedado no ambiente de publicação do Cloud Service, renomeie o arquivo `env_template`.  Para renomear o arquivo, clique com o botão direito do mouse no **env_template** e selecione o **Renomear** opção.
 
    ![](/help/forms/assets/screenshot2028116429.png)
 

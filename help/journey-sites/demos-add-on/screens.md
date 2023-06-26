@@ -2,10 +2,10 @@
 title: Ativar o AEM Screens para o seu site de demonstração
 description: Saiba mais sobre as etapas para habilitar a experiência completa do AEM Screens as a Cloud Service em seu site de demonstração.
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2696'
-ht-degree: 97%
+source-wordcount: '2694'
+ht-degree: 96%
 
 ---
 
@@ -63,7 +63,7 @@ A cafeteria We.Cafe é composta de três lojas em três locais nos EUA. Todas as
 >
 >O quiosque não está incluído na versão atual da demonstração. Ele será incluído em uma versão futura.
 
-Pressupõe-se que a filial de Nova Iorque esteja em uma loja menor que não tem muito espaço e, como tal:
+Pressupõe-se que a filial de Nova York esteja em uma loja menor que não tem muito espaço e, como tal:
 
 * O menu board tem apenas dois painéis verticais em vez de três como em São Francisco e San Jose
 * A exibição de entrada está posicionada verticalmente em vez de horizontalmente

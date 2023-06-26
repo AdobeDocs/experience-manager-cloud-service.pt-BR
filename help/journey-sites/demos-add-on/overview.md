@@ -2,10 +2,10 @@
 title: Jornada do complemento de demonstrações de referência do AEM
 description: Comece aqui para obter uma jornada guiada sobre como adicionar facilmente o complemento de demonstrações de referência do AEM a um ambiente de sandbox com configuração mínima do AEM e sobre poder testar os recursos avançados do AEM com exemplos completos com base nas práticas recomendadas.
 exl-id: 8a6d4abf-0832-40e8-9ba6-1ad4ba794ffa
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '852'
-ht-degree: 91%
+source-wordcount: '853'
+ht-degree: 83%
 
 ---
 
@@ -19,10 +19,10 @@ O AEM é um conjunto de ferramentas avançado para criar e gerenciar experiênci
 
 Sem conteúdos e configurações de exemplo, pode ser difícil para os clientes novos e experientes testar os recursos avançados do AEM. O complemento de demonstrações de referência do AEM permite a fácil criação de ambientes sandbox pré-carregados com exemplos de conteúdos pré-configurados usando as diretrizes mais recentes de práticas recomendadas da Adobe. Com o complemento, é possível avaliar facilmente os recursos do AEM Sites e AEM Screens em contexto e com pouca configuração.
 
-* **Se você é iniciante no AEM**, seguir essa jornada é a maneira mais fácil de começar a usar o conteúdo real em um ambiente do AEM real e totalmente funcional, para permitir que você teste a funcionalidade e conheça os recursos do AEM.
+* **Se você é novo no AEM** No entanto, seguir essa jornada é a maneira mais fácil de começar a usar o conteúdo real em um ambiente AEM real e totalmente funcional para permitir que você teste a funcionalidade e conheça os recursos do AEM.
 * **Se você for um usuário experiente do AEM**, seguir essa jornada é a maneira mais fácil de configurar um ambiente de demonstração separado para fins de teste ou criar uma prova de conceito (POC) usando novas funcionalidades.
 
-Seja qual for a sua necessidade específica, se você precisar de um ambiente do AEM com conteúdo de exemplo realista e totalmente funcional, configurar uma sandbox com o complemento de demonstração de referência do AEM é para você. Continue lendo!
+Seja qual for a sua necessidade específica, se você precisar de um ambiente de AEM com conteúdo de amostra realista e totalmente funcional, configurar uma sandbox com o complemento de demonstração de referência de AEM é para você. Continue lendo!
 
 ## Jornadas de documentação do AEM {#documentation-journeys}
 

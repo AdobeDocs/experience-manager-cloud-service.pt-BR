@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management, Search
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '931'
-ht-degree: 4%
+source-wordcount: '930'
+ht-degree: 5%
 
 ---
 
@@ -48,7 +48,7 @@ You can limit who can access certain folders in Assets by making the folder part
 
 ## Use tags to organize assets {#use-tags-to-organize-assets}
 
-You can use folders or tags or both to organize assets. Adding tags to assets makes them more easy to retrieve during a search. To add tags to an asset, follow these steps:
+You can use folders or tags or both to organize assets. Adding tags to assets makes them easier to retrieve during a search. To add tags to an asset, follow these steps:
 
 1. In the Digital Asset Manager, double-click the asset to open it.
 1. In the **Tags** area, open the menu to reveal the available tags. Select tags as appropriate. To delete a tag, hover the pointer over the tag and click `X` to delete it.
@@ -136,5 +136,4 @@ A padronização do uso de metadados, da nomeação de arquivos e da estrutura d
 >* [Perfis de metadados](metadata-profiles.md)
 >* [Perfis de vídeo](/help/assets/dynamic-media/video-profiles.md)
 >* [Perfis de imagem do Dynamic Media](/help/assets/dynamic-media/image-profiles.md)
-
 

@@ -2,10 +2,10 @@
 title: Atalhos de teclado para edição de página
 description: Vários atalhos do teclado estão disponíveis em todo o AEM, inclusive alguns para edição de páginas
 exl-id: 6c501897-48f9-478a-b143-d3ad19643b8c
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 99%
+source-wordcount: '237'
+ht-degree: 91%
 
 ---
 
@@ -26,7 +26,7 @@ Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns são aplic�
 |  | `Ctrl-y` | [Refazer a última alteração](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | Selecionar parágrafos múltiplos |
 |  | `Ctrl-c` | Copiar parágrafos selecionados |
-|  | `Ctrl-x` | Recortar parágrafos selecionados (os parágrafos recortados não desaparecerão na interface do usuário até que sejam colados) |
+|  | `Ctrl-x` | Recortar parágrafos selecionados (os parágrafos recortados não desaparecem na interface até que sejam colados) |
 |  | `Ctrl-v` | Colar parágrafos recortados ou copiados anteriormente |
 |  | `Ctrl-Backspace` | Excluir os parágrafos selecionados |
 | **Modo de Edição** - Rich Text Editor | `Ctrl-b` | Negrito |

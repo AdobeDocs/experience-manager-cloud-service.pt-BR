@@ -2,7 +2,7 @@
 title: Estrutura de projetos do AEM
 description: Saiba mais sobre como definir estruturas de pacote para implantação no Adobe Experience Manager Cloud Service.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
 source-wordcount: '2927'
 ht-degree: 12%
@@ -223,7 +223,7 @@ Para direcionar o autor do AEM, a publicação do AEM ou ambos, o pacote é inco
 
 `/apps/<app-name>-packages/(content|application|container)/install(.author|.publish)?`
 
-Detalhar esta estrutura de pasta:
+Analisando a estrutura desta pasta:
 
 + A pasta de primeiro nível **deve ser** `/apps`.
 + A pasta de segundo nível representa o aplicativo com `-packages` pós-corrigido para o nome da pasta. Geralmente, há apenas uma única pasta de segundo nível em que todos os pacotes secundários são incorporados. No entanto, qualquer número de pastas de segundo nível pode ser criada para melhor representar a estrutura lógica do aplicativo:

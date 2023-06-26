@@ -2,10 +2,10 @@
 title: Como executar o aplicativo headless
 description: Nesta parte da Jornada do desenvolvedor headless do AEM, saiba como implantar um aplicativo headless, colocando seu código local no Git e movendo-o para o Git do Cloud Manager para o pipeline de CI/CD.
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1067'
-ht-degree: 96%
+source-wordcount: '1065'
+ht-degree: 94%
 
 ---
 
@@ -42,7 +42,7 @@ Para preparar o aplicativo headless do AEM para o lançamento, siga as práticas
 
 * Evite criar consultas que produzem mais de 15 kb de JSON (gzip compactado). Arquivos JSON longos consomem muitos recursos para análise do aplicativo cliente.
 * Evite mais de cinco níveis aninhados de hierarquias de fragmentos. Níveis adicionais tornam difícil para os autores de conteúdo considerar o impacto de suas alterações.
-* Use consultas de vários objetos em vez de modelar consultas com hierarquias de dependência nos modelos. Isso permite maior flexibilidade a longo prazo para reestruturar a saída JSON sem precisar fazer muitas alterações de conteúdo.
+* Use consultas de vários objetos em vez de modelar consultas com hierarquias de dependência nos modelos. Isso permite uma flexibilidade de mais longo prazo para reestruturar a saída JSON sem precisar fazer muitas alterações de conteúdo.
 
 ## Maximizar a taxa de ocorrências do cache CDN {#maximize-cdn}
 

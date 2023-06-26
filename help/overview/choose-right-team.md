@@ -2,10 +2,10 @@
 title: Pessoas certas, funções certas
 description: Pessoas certas, funções certas
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
-source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
 source-wordcount: '829'
-ht-degree: 97%
+ht-degree: 80%
 
 ---
 
@@ -54,7 +54,7 @@ Agora que você sabe que funções são necessárias, examine o gráfico abaixo 
 
 Do Arquiteto ao ScrumMaster, todas as funções desta equipe são indispensáveis — inclusive o bibliotecário do DAM.
 
-Talvez você já tenha maioria das pessoas necessárias para executar uma implementação bem-sucedida do Adobe Experience Manager Assets. Essa lista é semelhante à do Adobe Experience Manager Sites, com uma inclusão importante: você precisará de um bibliotecário para garantir que seus ativos digitais sejam organizados e rotulados de forma que sejam fáceis de encontrar.
+Talvez você já tenha maioria das pessoas necessárias para executar uma implementação bem-sucedida do Adobe Experience Manager Assets. Essa lista é semelhante à do Adobe Experience Manager Sites, com uma adição importante: você precisará de um bibliotecário para garantir que seus ativos digitais sejam organizados e rotulados de forma que sejam fáceis de encontrar.
 
 | Função | Habilidades | Nível de capacidade | Qualidades |
 |--- |--- |--- |--- |

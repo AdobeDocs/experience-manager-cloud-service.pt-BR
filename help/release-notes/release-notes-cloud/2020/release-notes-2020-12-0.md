@@ -2,10 +2,10 @@
 title: Notas de versão do [!DNL Adobe Experience Manager]  as a Cloud Service 2020.12.0.
 description: Notas de versão do [!DNL Adobe Experience Manager]  as a Cloud Service 2020.12.0.
 exl-id: 16875180-1f23-477d-9d4d-e220998c4983
-source-git-commit: aeee895e4a4b959125d08091619988d0ffa09ace
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '693'
-ht-degree: 21%
+source-wordcount: '691'
+ht-degree: 18%
 
 ---
 
@@ -48,9 +48,9 @@ A data de lançamento do Cloud Manager no AEM as a Cloud Service 2020.12.0 é 10
 
 ### Novidades do [!DNL Cloud Manager] {#what-is-new-cm}
 
-* Gerenciamento por autoatendimento de [Certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) e [Nomes de domínio personalizados](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
+* Gerenciamento de autoatendimento do [Certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) e [Nomes de domínio personalizados](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
 
-* Gerenciamento por autoatendimento de [Listas de permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+* Gerenciamento de autoatendimento do [LISTAS DE PERMISSÕES IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
 * A página de detalhes atualizada do **Ambiente** agora permite que os usuários gerenciem Nomes de domínio personalizados e Listas de permissões de IP em seus ambientes.
 

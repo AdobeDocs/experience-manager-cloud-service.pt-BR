@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: c17c0443-d4dc-41f8-9315-6cc49e6c471f
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '4121'
+source-wordcount: '4120'
 ht-degree: 0%
 
 ---
@@ -195,10 +195,9 @@ Use o atributo de solicitação para recuperar as propriedades associadas da fon
    >[!NOTE]
    >
    > * Se você usar um modelo estático, sobreponha o head.jsp em:
-      >   `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
+   >   `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
    > * Se você usar um modelo editável, sobreponha o aftemplatedpage.jsp em:
-      >   `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
-
+   >   `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
 
 1. Definir [!DNL paramMap] para o atributo de solicitação. Por exemplo, inclua o seguinte código no arquivo .jsp na pasta de aplicativos:
 
@@ -292,7 +291,8 @@ Para editar propriedades:
    * **[!UICONTROL Propriedade]**: especifique o tipo, subtipo e formato da propriedade. Você também pode especificar se a propriedade selecionada é a chave primária para o objeto de modelo de dados.
    * **[!UICONTROL Serviço]**: especifique o objeto de modelo de entrada, o tipo de saída e os argumentos do serviço. Para um serviço Get, você pode especificar se espera que ele retorne uma matriz.
 
-      ![edit-properties-service](assets/edit-properties-service.png)
+     ![edit-properties-service](assets/edit-properties-service.png)
+
    Caixa de diálogo Editar Propriedades de um serviço get
 
 1. Toque **[!UICONTROL Concluído]** para salvar as propriedades e **[!UICONTROL Salvar]** para salvar o modelo de dados do formulário.
@@ -419,7 +419,7 @@ O sinalizador pode ser definido como qualquer um dos seguintes valores:
 
 * **COMPLETO**: o FDM executa a validação com base em todas as restrições
 * **DESLIGADO**: Nenhuma validação
-* **BÁSICO**: o FDM executa a validação com base nas restrições &quot;obrigatórias&quot; e &quot;anuláveis&quot;
+* **BÁSICO**: o FDM executa a validação com base nas restrições &quot;obrigatório&quot; e &quot;anulável&quot;
 
 Se nenhum valor for definido para a variável `ValidationOptions`sinalizador, **BÁSICO** a validação é executada nos dados de entrada.
 
@@ -518,7 +518,7 @@ A tabela a seguir lista as restrições para dados de entrada com base na fonte 
  </tbody> 
 </table>
 
-Neste exemplo, os dados de entrada são validados com base nas restrições máxima, mínima e necessária definidas no arquivo Swagger. Os dados de entrada atendem aos critérios de validação somente se a ID do pedido estiver presente e seu valor estiver entre 1 e 10.
+Neste exemplo, os dados de entrada são validados com base nas restrições máxima, mínima e necessária definidas no arquivo Swagger. Os dados de entrada atendem aos critérios de validação somente se a ID do pedido estiver presente e seu valor for de 1 a 10.
 
 ```json
    parameters: [

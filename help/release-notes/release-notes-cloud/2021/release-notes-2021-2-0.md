@@ -2,10 +2,10 @@
 title: Notas de versão do [!DNL Adobe Experience Manager]  as a Cloud Service 2021.2.0.
 description: "[!DNL Adobe Experience Manager] Notas de versão as a Cloud Service para 2021.2.0."
 exl-id: 88dac54b-cc12-44a0-b429-6e691221f806
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1234'
-ht-degree: 34%
+source-wordcount: '1232'
+ht-degree: 32%
 
 ---
 
@@ -91,7 +91,7 @@ A data de lançamento do Cloud Manager no AEM as a Cloud Service 2021.2.0 é 11 
 ### Novidades {#what-is-new-cloud-manager}
 
 
-* Os clientes do Assets agora poderão escolher quando e onde implantar sua instância do Portal da marca de forma automatizada por meio da interface do usuário do Cloud Manager. Para um programa regular (não sandbox) com a solução Assets, ao Portal de marca agora pode ser provisionado no ambiente de produção. O provisionamento pode ser feito apenas uma vez no ambiente de produção.
+* Os clientes do Assets agora poderão escolher quando e onde implantar sua instância do Portal da marca de forma automatizada por meio da interface do usuário do Cloud Manager. Para um programa regular (não sandbox) com a solução Assets, o Brand Portal agora pode ser provisionado no ambiente de Produção. O provisionamento pode ser feito apenas uma vez no ambiente de produção.
 
 * O Arquétipo de Projetos AEM usado na criação do projeto e da sandbox foi atualizado para a versão 25.
 

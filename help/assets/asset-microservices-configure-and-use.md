@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2932'
+source-wordcount: '2933'
 ht-degree: 3%
 
 ---
@@ -75,7 +75,7 @@ Para criar um perfil de processamento padrão, siga estas etapas:
 
 1. Acesso de administradores **[!UICONTROL Ferramentas]** > **[!UICONTROL Assets]** > **[!UICONTROL Processamento de perfis]**. Clique em **[!UICONTROL Criar]**.
 1. Forneça um nome que ajude a identificar exclusivamente o perfil ao aplicar a uma pasta.
-1. Para gerar representações FPO, no campo **[!UICONTROL Imagem]** guia, ativar **[!UICONTROL Criar representação FPO]**. Inserir um **[!UICONTROL Qualidade]** valor entre 1 e 100.
+1. Para gerar representações FPO, no campo **[!UICONTROL Imagem]** guia, ativar **[!UICONTROL Criar representação FPO]**. Inserir um **[!UICONTROL Qualidade]** valor de 1-100.
 1. Para gerar outras representações, clique em **[!UICONTROL Adicionar novo]** e fornecer as seguintes informações:
 
    * Nome do arquivo de cada representação.
@@ -262,7 +262,7 @@ Siga as etapas descritas em [aplicar um modelo de fluxo de trabalho a uma pasta]
 
 ## Práticas recomendadas e limitações {#best-practices-limitations-tips}
 
-* Considere suas necessidades para todos os tipos de representações ao criar workflows. Se você não prever a necessidade de uma representação no futuro, remova a etapa de criação do fluxo de trabalho. As representações não podem ser excluídas em massa posteriormente. As representações indesejadas podem ocupar muito espaço de armazenamento após o uso prolongado de [!DNL Experience Manager]. Para ativos individuais, é possível remover representações manualmente da interface do usuário. Para vários ativos, é possível personalizar [!DNL Experience Manager] para excluir representações específicas ou excluir os ativos e carregá-los novamente.
+* Considere suas necessidades para todos os tipos de representações ao criar workflows. Se você não prever a necessidade de uma representação no futuro, remova a etapa de criação do fluxo de trabalho. As representações não podem ser excluídas em massa posteriormente. As renderizações indesejadas podem ocupar grandes quantidades de espaço de armazenamento após o uso prolongado de [!DNL Experience Manager]. Para ativos individuais, é possível remover representações manualmente da interface do usuário. Para vários ativos, é possível personalizar [!DNL Experience Manager] para excluir representações específicas ou excluir os ativos e carregá-los novamente.
 * No momento, o suporte está limitado à geração de representações. Não há suporte para a geração de novo ativo.
 * Atualmente, o limite de tamanho do arquivo para extração de metadados é de aproximadamente 15 GB. Ao fazer upload de ativos muito grandes, às vezes a operação de extração de metadados falha.
 

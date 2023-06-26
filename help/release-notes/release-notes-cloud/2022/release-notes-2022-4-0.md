@@ -2,10 +2,10 @@
 title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2022.4.0.
 description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2022.4.0.
 exl-id: 6c86838a-cabf-4770-b1ae-618af70193a2
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '570'
-ht-degree: 91%
+source-wordcount: '569'
+ht-degree: 87%
 
 ---
 
@@ -72,7 +72,7 @@ Recentemente, foi adicionado um novo analisador:
 
 ### Descontinuidade do TLS 1.0 e 1.1
 
-A partir de 30 de junho de 2022, o Experience Manager as a Cloud Service exigirá comunicações de rede e trocas de dados mais seguras com os sistemas dos usuários. O AEM pretende usar exclusivamente o protocolo TLS (Transport Layer Security) 1.2. As versões anteriores do TLS (1.0 e 1.1) foram descontinuadas.
+A partir de 30 de junho de 2022, o Experience Manager as a Cloud Service exigirá uma comunicação de rede e troca de dados com os sistemas dos usuários mais seguras. O AEM pretende usar exclusivamente o protocolo TLS (Transport Layer Security) 1.2. As versões anteriores do TLS (1.0 e 1.1) foram descontinuadas.
 
 Se você continuar a usar versões mais antigas do TLS (como 1.0 e 1.1), poderá perder o acesso ao Experience Manager as a Cloud Service.
 

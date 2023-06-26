@@ -2,10 +2,10 @@
 title: Saiba mais sobre como usar referências em Fragmentos de conteúdo
 description: Saiba mais sobre como usar referências em Fragmentos de conteúdo para conteúdo, outros fragmentos e outros ativos (mídia). Apresente a necessidade e a mecânica de fragmentos aninhados para a criação de CMS headless.
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 100%
+source-wordcount: '731'
+ht-degree: 95%
 
 ---
 
@@ -71,7 +71,7 @@ E isso é só para começar. Dependendo da complexidade, um prêmio pode ser esp
 
 A representação dessas inter-relações pode ser alcançada com as Referências de fragmento, já que são entendidas por você (o autor) e pelos aplicativos headless.
 
-Como autor, você não é responsável por definir esses relacionamentos (isso é feito pelo Arquiteto de conteúdo ao criar o Modelo de fragmento de conteúdo), mas precisa saber como reconhecer e editar as referências.
+Como autor, você não é responsável por definir esses relacionamentos (isso é feito pelo Arquiteto de conteúdo ao criar o modelo de fragmento de conteúdo), mas precisa saber como reconhecer e editar as referências.
 
 <!--
 ![Content Modeling with Content Fragments](/help/journey-headless/developer/assets/headless-modeling-01.png "Content Modeling with Content Fragments")
@@ -117,6 +117,7 @@ Agora que você aprendeu sobre referências e estrutura nos Fragmentos de conte�
       * [Aplique a configuração à sua pasta de ativos](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
       * [Criação de um Fragmento de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+
    * [Variações: criação de Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
 
    * [Modelos de fragmentos do conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
@@ -124,7 +125,6 @@ Agora que você aprendeu sobre referências e estrutura nos Fragmentos de conte�
       * [Modelos de fragmento de conteúdo - Tipos de dados](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
 
       * [Modelos de fragmento de conteúdo: propriedades](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
-
 
 * Guias de introdução
    * [Criação de uma pasta de ativos - Configuração do headless](/help/headless/setup/create-assets-folder.md)

@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '3495'
+source-wordcount: '3496'
 ht-degree: 16%
 
 ---
@@ -208,7 +208,7 @@ O Adobe Asset Link oferece um bom suporte para este caso de uso:
 * Além disso, como o ativo está na conta Creative Cloud, ele também está disponível em outros dispositivos que o usuário pode ter (por exemplo, pode ser aberto ou editado em um aplicativo móvel Creative Cloud dedicado) e pode ser compartilhado com outros usuários Creative Cloud para fins de colaboração.
 * Quando o usuário criativo conclui as alterações, ele pode executar uma operação de Check-in nesse arquivo no aplicativo Creative Cloud com um comentário opcional. O ativo correspondente no Experience Manager recebe a versão e é atualizado para com o novo binário. Usuários do Experience Manager, como profissionais de marketing ou usuários de LOB, têm acesso a grandes alterações de ativos, ou marcos, por meio da interface do usuário da linha do tempo dos ativos do Experience Manager.
 
-o aplicativo de desktop do Experience Manager fornece um compartilhamento de rede para ativos abertos no aplicativo nativo. Por padrão, todas as alterações feitas localmente são carregadas no Experience Manager automaticamente após um breve período. Com essa configuração, salvamentos frequentes durante a fase de trabalho em andamento seriam carregados no Experience Manager e teriam suas versões alteradas, criando muito tráfego de rede e possíveis desafios de escalabilidade, sem mencionar as versões desnecessárias no Experience Manager.
+o aplicativo de desktop do Experience Manager fornece um compartilhamento de rede para ativos abertos no aplicativo nativo. Por padrão, todas as alterações feitas localmente são carregadas no Experience Manager automaticamente após um breve período. Com essa configuração, salvamentos frequentes durante a fase de trabalho em andamento seriam carregados no Experience Manager e teriam suas versões alteradas, criando uma grande quantidade de tráfego de rede e possíveis desafios de escalabilidade, sem mencionar as versões desnecessárias no Experience Manager.
 
 A abordagem recomendada aqui é usar uma opção no aplicativo de desktop Experience Manager para desativar atualizações automatizadas e fazer upload de alterações em ativos para o Experience Manager manualmente, aproveitando a ação fazer upload de alterações na interface do usuário de status do ativo do aplicativo.
 

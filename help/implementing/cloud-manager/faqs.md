@@ -2,17 +2,17 @@
 title: Perguntas frequentes sobre o Cloud Manager
 description: Encontre respostas para as perguntas mais frequentes sobre o Cloud Manager no AEM as a Cloud Service.
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
-source-git-commit: 698ea704d821d26067e29a89b562388d7517772e
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 100%
+source-wordcount: '991'
+ht-degree: 91%
 
 ---
 
 
 # Perguntas frequentes sobre o Cloud Manager {#cloud-manager-faqs}
 
-Este documento fornece respostas para as perguntas mais frequentes sobre o Cloud Manager no AEM as a Cloud Service.
+Este documento fornece respostas às perguntas mais frequentes sobre o Cloud Manager no AEM as a Cloud Service.
 
 ## É possível usar o Java 11 com compilações do Cloud Manager? {#java-11-cloud-manager}
 
@@ -22,9 +22,9 @@ O processo está documentado [aqui](/help/implementing/cloud-manager/getting-acc
 
 Por exemplo, consulte o [código do projeto de amostra do wknd](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
 
-## Minha compilação falha com um erro sobre maven-scr-plugin após alternar do Java 8 para o Java 11. O que posso fazer? {#build-fails-maven-scr-plugin}
+## Minha build falha com um erro sobre o maven-scr-plugin após alternar do Java 8 para o Java 11. O que posso fazer? {#build-fails-maven-scr-plugin}
 
-A compilação do AEM Cloud Manager pode falhar ao tentar alternar a compilação do Java 8 para o 11. Se você encontrar o erro a seguir, será necessário remover `maven-scr-plugin` e converter todas as anotações OSGi para anotações OSGi R6.
+A build do AEM Cloud Manager pode falhar ao tentar mudar do Java 8 para o 11. Se você encontrar o erro a seguir, será necessário remover `maven-scr-plugin` e converter todas as anotações OSGi para anotações OSGi R6.
 
 ```text
 [main] [ERROR] Failed to execute goal org.apache.felix:maven-scr-plugin:1.26.4:scr (generate-scr-scrdescriptor) on project helloworld.core: /build_root/build/testsite/src/main/java/com/adobe/HelloWorldServiceImpl.java : Unable to load compiled class: com.adobe.HelloWorldServiceImpl: com/adobe/HelloWorldServiceImpl has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0 -> [Help 1]
@@ -32,7 +32,7 @@ A compilação do AEM Cloud Manager pode falhar ao tentar alternar a compilaçã
 
 Para obter instruções sobre como remover esse plug-in, veja [aqui.](https://cqdump.wordpress.com/2019/01/03/from-scr-annotations-to-osgi-annotations/)
 
-## Minha compilação falha com um erro sobre RequireJavaVersion após alternar do Java 8 para o Java 11. O que posso fazer? {#build-fails-requirejavaversion}
+## Minha build falha com um erro sobre RequireJavaVersion após alternar do Java 8 para o Java 11. O que posso fazer? {#build-fails-requirejavaversion}
 
 Para compilações do Cloud Manager, `maven-enforcer-plugin` pode falhar com esse erro.
 

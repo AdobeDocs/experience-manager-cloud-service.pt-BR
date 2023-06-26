@@ -2,10 +2,10 @@
 title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2022.5.0.
 description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2022.5.0.
 exl-id: 1b867582-e34c-435b-b8f8-fc71dddcaccb
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 87%
+source-wordcount: '791'
+ht-degree: 75%
 
 ---
 
@@ -45,11 +45,11 @@ Assista ao vídeo de visão geral da versão de maio de 2022, que exibe um resum
 
 * O recurso [Imagem inteligente do Dynamic Media](https://medium.com/adobetech/one-solution-fits-all-smart-imaging-with-aem-dynamic-media-be690b62df9f) agora é compatível com o formato de arquivo AVIF — melhore ainda mais o Google Core Web Vital (maior renderização de conteúdo) com o AVIF, que fornece 20% de redução de tamanho em relação ao WebP. No total, o AVIF fornece uma redução média de até 41% no tamanho do JPEG (em algumas imagens, esse valor pode chegar a 76%).
 
-* O [!UICONTROL Experience Manager Assets Brand Portal] agora executa processos automáticos a cada doze horas para excluir todos os ativos do Brand Portal publicados no AEM. Como resultado, não é necessário excluir manualmente os ativos na pasta Contribuição para manter o tamanho da pasta abaixo do limite. Consulte [Novidades no Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=pt-BR).
+* [!UICONTROL Experience Manager Assets Brand Portal] O agora executa processos automáticos a cada 12 horas para excluir todos os ativos do Brand Portal publicados no AEM. Como resultado, não é necessário excluir manualmente os ativos na pasta Contribuição para manter o tamanho da pasta abaixo do limite. Consulte [Novidades no Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=pt-BR).
 
 ### Novos recursos disponíveis no canal de pré-lançamento do [!DNL Assets] {#prerelease-features-assets}
 
-Agora, o Experience Manager Assets usa recursos de IA do Adobe Sensei para [distinguir cores em uma imagem e aplicá-las automaticamente como tags na assimilação](/help/assets/color-tag-images.md). Essas tags permitem uma experiência de pesquisa aprimorada, com base na composição de cores da imagem. É possível configurar o número de cores, dentro de um intervalo de uma a quarenta, que são marcadas em uma imagem para que, posteriormente, você possa pesquisar por imagens com base nessas cores.
+Agora, o Experience Manager Assets usa recursos de IA do Adobe Sensei para [distinguir cores em uma imagem e aplicá-las automaticamente como tags na assimilação](/help/assets/color-tag-images.md). Essas tags permitem uma experiência de pesquisa aprimorada, com base na composição de cores da imagem. Você pode configurar o número de cores, dentro de um intervalo de um a 40, que são marcados em uma imagem para que você possa pesquisar imagens com base nessas cores posteriormente.
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -58,7 +58,7 @@ Agora, o Experience Manager Assets usa recursos de IA do Adobe Sensei para [dist
 
 * **Integrar formulários adaptáveis com o Microsoft® Power Automate**: agora é possível configurar um formulário adaptável para executar um fluxo da nuvem do Microsoft® Power Automate no envio. O formulário adaptável configurado envia dados capturados, anexos e documentos de registro para processamento no fluxo da nuvem do Power Automate. Ele ajuda você a criar uma experiência personalizada de captura de dados, aproveitando o poder do Microsoft® Power Automate para criar lógicas de negócios sobre dados capturados e automatizar os fluxos de trabalho do cliente.
 
-* **Assistente para criar um formulário adaptável**: você pode usar o assistente empresarial para criar formulários adaptáveis rapidamente. O assistente fornece uma navegação rápida por guias para selecionar facilmente o modelo pré-configurado, o estilo, os campos e as opções de envio para criar um formulário adaptável.
+* **Assistente para criar um formulário adaptável**: você pode usar o assistente empresarial para criar rapidamente o Forms adaptável. O assistente fornece uma navegação rápida por guias para selecionar facilmente o modelo pré-configurado, o estilo, os campos e as opções de envio para criar um formulário adaptável.
 
   ![Assistente para criar um formulário adaptável](/help/release-notes/assets/wizard.png)
 
@@ -91,7 +91,7 @@ Agora, o Experience Manager Assets usa recursos de IA do Adobe Sensei para [dist
 
 ### Descontinuidade do TLS 1.0 e 1.1
 
-A partir de 30 de junho de 2022, o Experience Manager as a Cloud Service exigirá comunicações de rede e trocas de dados mais seguras com os sistemas dos usuários. O AEM usará exclusivamente o protocolo TLS (Transport Layer Security) 1.2. As versões anteriores do TLS (1.0 e 1.1) foram descontinuadas.
+A partir de 30 de junho de 2022, o Experience Manager as a Cloud Service exigirá uma comunicação de rede e troca de dados com os sistemas dos usuários mais seguras. O AEM usará exclusivamente o protocolo TLS (Transport Layer Security) 1.2. As versões anteriores do TLS (1.0 e 1.1) foram descontinuadas.
 
 Se você continuar a usar versões mais antigas do TLS (como 1.0 e 1.1), poderá perder o acesso ao Experience Manager as a Cloud Service.
 

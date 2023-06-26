@@ -2,10 +2,10 @@
 title: A ferramenta de cópia de conteúdo
 description: A ferramenta de cópia de conteúdo permite que os usuários copiem conteúdo mutável sob demanda de seus ambientes de produção do AEM as a Cloud Service para ambientes inferiores para fins de teste.
 exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1223'
-ht-degree: 56%
+source-wordcount: '1221'
+ht-degree: 55%
 
 ---
 
@@ -64,7 +64,7 @@ Antes que qualquer conteúdo possa ser copiado, um conjunto de conteúdo deve se
    1. Insira o caminho no campo **Adicionar caminho de inclusão**.
    1. Toque ou clique no botão **Adicionar caminho** para adicionar o caminho ao conjunto de conteúdo.
    1. Toque ou clique no botão **Adicionar caminho** novamente, se necessário.
-      * São permitidos até cinquenta caminhos.
+      * São permitidos até 50 caminhos.
 
    ![Adicionar caminhos ao conjunto de conteúdo](assets/add-content-set-paths.png)
 
@@ -183,7 +183,7 @@ A ferramenta de cópia de conteúdo tem as seguintes limitações.
 * O conteúdo só pode ser copiado de e para os serviços de autoria.
 * Não é possível copiar conteúdo entre programas.
 * Não é possível executar operações de cópia de conteúdo simultâneas no mesmo ambiente.
-* É possível especificar até dez caminhos por conjunto de conteúdo. Não há limitação de caminhos excluídos.
+* Até 50 caminhos podem ser especificados por conjunto de conteúdo. Não há limitação de caminhos excluídos.
 * A ferramenta de cópia de conteúdo não deve ser usada como uma ferramenta de clonagem ou de espelhamento porque não pode rastrear conteúdo movido ou excluído na origem.
 * A ferramenta de cópia de conteúdo não tem recurso de controle de versão e não pode detectar automaticamente o conteúdo modificado ou o conteúdo recém-criado no ambiente de origem em um conjunto de conteúdo desde a última operação de cópia de conteúdo.
    * Se quiser atualizar o ambiente de destino com alterações de conteúdo somente desde a última operação de cópia de conteúdo, será necessário criar um conjunto de conteúdo e especificar os caminhos na instância de origem em que as alterações foram feitas desde a última operação de cópia de conteúdo.

@@ -9,9 +9,9 @@ topic-tags: author
 discoiquuid: 1e95c66b-d132-4c44-a1dc-31fd09af8113
 docset: aem65
 exl-id: 3b5247fa-decb-40eb-a629-6d834976d33c
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2025'
+source-wordcount: '2024'
 ht-degree: 0%
 
 ---
@@ -125,7 +125,6 @@ Para usar a opção Acessibilidade, siga estas etapas:
 >
 >* O botão de opção e a caixa de seleção podem ter apenas duas opções de acessibilidade, a saber, Texto personalizado e Título.
 >* Para o Adaptive Forms baseado em XFA, a opção de acessibilidade é herdada das opções de acessibilidade definidas no XDP. As dicas de ferramentas do XDP são mapeadas de acordo com a Descrição curta e a Legenda são mapeadas de acordo com o Título. As outras opções funcionam como estão.
-
 
 ### 3. Fornecer equivalentes de texto para imagens {#provide-text-equivalents-for-images}
 

@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: 9202cf44595070c98ca3d21887dff257bcd88b87
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2878'
+source-wordcount: '2875'
 ht-degree: 0%
 
 ---
@@ -90,7 +90,7 @@ Mas, com o Dynamic Media, se você tiver predefinições de imagens diferentes, 
 ![Abordagem de arquivo principal](/help/assets/dynamic-media/assets/dm-onefile.png)
 _Melhor: um arquivo com várias representações criadas em tempo real usando predefinições de imagem, como `Search_Grid` e `Thumbnail`._
 
-| **Por que usar predefinições de imagens?** |  |
+| **Por que usar predefinições de imagens?** | |
 |---|---|
 | Padrões | As predefinições de imagem impõem um tratamento de processamento de imagem padrão em qualquer imagem com a qual ela é solicitada. |
 | Gerenciamento de alterações | Se precisar alterar o processamento da imagem, basta editar o parâmetro da predefinição de imagem existente. A definição atualizada é propagada automaticamente para todas as solicitações. |
@@ -199,7 +199,7 @@ Quando você move o ponteiro do mouse sobre o sapato, amplia a imagem e vê mais
 
 Enquanto você considera viver como um consumidor, ou enquanto você trabalha em seu papel diário, e conforme você vai a sites diferentes, você vê coisas como essas. Pense sobre como isso está sendo feito e como você pode usar o poder do Dynamic Media em seu próprio trabalho e no site de sua empresa.
 
-Você acabou de ler um pouco sobre conjuntos de imagens e visualizadores. Vamos analisar outros visualizadores e testá-los em ativos únicos. Para redefinir o visualizador, clique no botão **[!UICONTROL Atualizar]** no canto inferior esquerdo.
+Você leu sobre conjuntos de imagens e visualizadores. Vamos analisar outros visualizadores e testá-los em ativos únicos. Para redefinir o visualizador, clique no botão **[!UICONTROL Atualizar]** no canto inferior esquerdo.
 
 <!-- LEAVE THIS HIDDEN PATH IN THE DOCUMENTATION FOR DEMO PURPOSES [Flyout viewer with image set](http://www.partycity.com/girls-little-old-lady-costume-P750948.html) -->
 

@@ -3,9 +3,9 @@ title: Configurar o editor de rich text para criar conteúdo [!DNL Adobe Experie
 description: Configurar o editor de rich text para criar conteúdo no [!DNL Adobe Experience Manager] as a Cloud Service.
 contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
-source-git-commit: e6ab7ba91b52d3479a85870e8ffa8e8d2f1e303e
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1876'
+source-wordcount: '1875'
 ht-degree: 0%
 
 ---
@@ -163,7 +163,7 @@ A variável [Componente de texto dos Componentes principais](https://experiencel
 
 ## Configurar a barra de ferramentas do RTE {#dialogfullscreen}
 
-[!DNL Experience Manager] permite configurar a interface do Editor de Rich Text de forma diferente para os diferentes modos de edição. As configurações padrão são fornecidas abaixo. Você pode sobrepor esses valores-padrão com base em suas necessidades. Você personaliza apenas os recursos da barra de ferramentas que deseja fornecer aos autores. Não é necessário especificar todas as configurações da barra de ferramentas.
+[!DNL Experience Manager] O permite configurar a interface do Editor de Rich Text de forma diferente para os diferentes modos de edição. As configurações padrão são fornecidas abaixo. Você pode sobrepor esses valores-padrão com base em suas necessidades. Você personaliza apenas os recursos da barra de ferramentas que deseja fornecer aos autores. Não é necessário especificar todas as configurações da barra de ferramentas.
 
 Para configurar a barra de ferramentas para `dialogFullScreen`, use o exemplo de configuração a seguir.
 
@@ -282,4 +282,3 @@ Abaixo está um trecho de amostra para mapear o comando `Bold` ao ícone Coral c
 >* [Configurar plug-ins do RTE](configure-rich-text-editor-plug-ins.md)
 >* [Usar editor de rich text para criação](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md)
 >* [Configurar o RTE para sites acessíveis](rte-accessible-content.md)
-
