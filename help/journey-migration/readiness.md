@@ -75,7 +75,7 @@ A lista de itens na tabela abaixo é o subconjunto das alterações mais relevan
   <tr>
     <td>CRX/DE e Gerenciador de pacotes</td>
     <td></td>
-    <td>O CRX/DE é permitido somente no ambiente de desenvolvimento.<br>O Gerenciador de pacotes pode ser acessado em todas as instâncias de autor, mas os pacotes que serão implantados devem conter somente conteúdo mutável ( por exemplo: /content ou /conf)</td>
+    <td>O CRX/DE é permitido somente no ambiente de desenvolvimento.<br>O Gerenciador de pacotes pode ser acessado em todas as instâncias do autor, mas os pacotes que serão implantados devem conter somente conteúdo mutável ( por exemplo: /content ou /conf)</td>
   </tr>
   <tr>
     <td>CDN integrada e Obter seu próprio CDN</td>
