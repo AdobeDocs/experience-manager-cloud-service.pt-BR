@@ -2,10 +2,10 @@
 title: Integração entre SPA e Adobe Experience Platform Launch
 description: O Adobe Experience Platform Launch é a maneira recomendada de implementar o Analytics, o Target e o Audience Manager no SPA.
 exl-id: 95008563-c1e5-4685-9c6d-5226d4a66c53
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
 workflow-type: tm+mt
-source-wordcount: '171'
-ht-degree: 0%
+source-wordcount: '166'
+ht-degree: 4%
 
 ---
 
@@ -15,10 +15,10 @@ O Adobe Experience Platform Launch é a maneira recomendada de implementar o Ana
 
 ## Tutorial {#tutorial}
 
-Para entender como integrar o SPA ao Adobe Experience Platform Launch, consulte [este artigo e tutorial da knowledge base](https://helpx.adobe.com/experience-manager/kt/integration/using/launch-reference-architecture-SPA-tutorial-implement.html), que guiará você pela configuração do Launch, bem como implementará o Experience Cloud integrado com o Angular ou o React.
+Para entender como integrar o SPA ao Adobe Experience Platform Launch, consulte esta [artigo e tutorial da knowledge base](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=pt-BR). Ele pode orientá-lo pela configuração do Launch e pela implementação do Experience Cloud criado com o Angular ou o React.
 
 >[!NOTE]
 >
 >A base de conhecimento referenciada foi criada para permitir a integração do Adobe Experience Platform Launch com SPA que não usa o editor de AEM SPA. Esses métodos também devem permitir que a integração do Adobe Experience Platform Launch coexista com o SPA, que é criado para usar o Editor de SPA.
 >
->O uso do Redux junto com as bibliotecas SPA JavaScript ainda não foi totalmente explorado. O suporte ao Redux está planejado em uma versão futura do Editor de SPA.
+>O uso do Redux junto com as bibliotecas JavaScript SPA ainda não foi totalmente explorado. O suporte ao Redux está planejado em uma versão futura do Editor de SPA.

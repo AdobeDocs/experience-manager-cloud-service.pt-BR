@@ -2,9 +2,9 @@
 title: Navegar até o provedor de serviços do Screens
 description: Esta página descreve como navegar até o provedor de serviços do Screens.
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '263'
 ht-degree: 6%
 
 ---
@@ -29,7 +29,7 @@ Siga as etapas abaixo para configurar o Provedor de serviços do Screens:
 1. Navegue até o provedor de serviços do Screens a partir de [aqui](https://experience.adobe.com/screens).
 
    >[!CAUTION]
-   >Se você tiver acesso a várias organizações, verifique se fez logon na Organização correta. Para alterar a organização, clique no nome da organização no canto superior direito da tela e escolha a organização necessária à qual você precisa acessar o.
+   >Se você tiver acesso a várias organizações, verifique se fez logon na Organização correta. Para alterar a organização, clique no nome da organização no canto superior direito da tela e escolha a organização correta que você precisa acessar.
 
 2. Clique no ícone de engrenagem ao lado de Projeto (canto superior esquerdo)
 
@@ -43,7 +43,7 @@ Siga as etapas abaixo para configurar o Provedor de serviços do Screens:
 
 4. Clique em **Salvar** para se conectar ao provedor de conteúdo do Screens
 
-5. Selecionar **Canais** na barra de navegação esquerda e clique em **abrir no provedor de conteúdo**.
+5. Selecionar **Canais** na barra de navegação esquerda, e clique em **abrir no provedor de conteúdo**.
 
    ![imagem](/help/screens-cloud/assets/configure/configure-screens1.png)
 
@@ -53,4 +53,4 @@ Siga as etapas abaixo para configurar o Provedor de serviços do Screens:
 
 ## O que vem a seguir {#whats-next}
 
-Depois de aprender a configurar o provedor de serviços do Screens, você pode navegar até, [Utilização do provedor de conteúdo do Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=end) para obter mais detalhes.
+Depois de saber como configurar o provedor de serviços do Screens, navegue até [Utilização do provedor de conteúdo do Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=end#screens-content-provider) para obter mais detalhes.

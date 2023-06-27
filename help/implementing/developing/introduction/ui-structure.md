@@ -2,9 +2,9 @@
 title: Estrutura da interface do AEM
 description: A interface do AEM tem vários princípios subjacentes e é composta de vários elementos-chave
 exl-id: ac211716-d699-4fdb-a286-a0a1122c86c5
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '893'
 ht-degree: 4%
 
 ---
@@ -19,13 +19,13 @@ A interface do AEM tem vários princípios subjacentes e é composta por vários
 
 A interface do usuário atende a dispositivos móveis e de desktop, embora, em vez de criar dois estilos, o AEM use um estilo que funciona para todas as telas e dispositivos.
 
-Todos os módulos usam o mesmo layout básico; no AEM, isso pode ser visto como:
+Todos os módulos usam o mesmo layout básico:
 
 ![Console do AEM Sites](assets/ui-sites-console.png)
 
-O layout segue um estilo de design responsivo e se acomoda ao tamanho do dispositivo/janela que você está usando.
+O layout segue um estilo de design responsivo e se acomoda ao tamanho do dispositivo, da janela ou de ambos que você está usando.
 
-Por exemplo, quando a resolução cai para menos de 1024px (como em um dispositivo móvel), a tela é ajustada de acordo:
+Por exemplo, quando a resolução é inferior a 1024 pixels (como em um dispositivo móvel), a exibição é ajustada de acordo:
 
 ![Exibição móvel do console do Sites](assets/ui-sites-mobile.png)
 
@@ -35,11 +35,11 @@ Por exemplo, quando a resolução cai para menos de 1024px (como em um dispositi
 
 A barra de cabeçalho mostra elementos globais incluindo:
 
-* O logotipo e o produto/solução específica que você está usando atualmente; para o AEM, isso também forma um link para a Navegação global
+* O logotipo e o produto/solução específica que você está usando no momento. Para o AEM, esse elemento também forma um link para a Navegação global
 * Pesquisar
 * Ícone para acessar os recursos de ajuda
 * Ícone para acessar outras soluções
-* Um indicador de (e acesso a) qualquer alerta ou item da Caixa de entrada que esteja esperando por você
+* Um indicador - e acesso a - todos os alertas ou itens da Caixa de entrada que estão esperando por você
 * O ícone do usuário, junto com um link para o gerenciamento do perfil
 
 ### Barra de ferramentas {#toolbar}
@@ -50,7 +50,7 @@ Em qualquer local, a barra de ferramentas mostra as ações disponíveis no mome
 
 ![Barra de ferramentas do AEM Sites](assets/ui-sites-toolbar.png)
 
-Também depende de um recurso estar ou não selecionado:
+Também depende se um recurso está selecionado:
 
 ![Barra de ferramentas do AEM Sites selecionada](assets/ui-sites-toolbar-selected.png)
 
@@ -74,7 +74,7 @@ Ao criar páginas, as áreas estruturais são as seguintes.
 
 ### Quadro de conteúdo {#content-frame}
 
-O conteúdo da página é renderizado no quadro de conteúdo. O quadro de conteúdo é completamente independente do editor, para garantir que não haja conflitos devido ao CSS ou ao javascript.
+O conteúdo da página é renderizado no quadro de conteúdo. O quadro de conteúdo é independente do editor, para garantir que não haja conflitos devido ao CSS ou ao JavaScript.
 
 O quadro de conteúdo está na seção à direita da janela, na barra de ferramentas.
 
@@ -95,39 +95,39 @@ O quadro do editor é um container (abstrato) para todos os elementos de criaç�
 
 ### Painel lateral {#side-panel}
 
-Ela contém três guias padrão. A variável **Assets** e **Componentes** as guias permitem selecionar esses elementos e arrastá-los do painel e soltá-los na página. A variável **Árvore de conteúdo** permite inspecionar a hierarquia do conteúdo na página.
+Contém três guias padrão. A variável **Assets** e **Componentes** As guias permitem selecionar esses elementos, arrastá-los do painel e soltá-los na página. A variável **Árvore de conteúdo** permite inspecionar a hierarquia do conteúdo na página.
 
-O painel lateral fica oculto por padrão. Quando selecionado, ele será mostrado no lado esquerdo ou deslizará para cobrir a janela inteira quando o tamanho da janela estiver abaixo de uma largura de 1024px; como, por exemplo, em um dispositivo móvel.
+O painel lateral fica oculto por padrão. Quando selecionada, ela é exibida no lado esquerdo ou quando a largura da janela é inferior a 1024 pixels, ela desliza para cobrir a janela inteira como, por exemplo, em um dispositivo móvel.
 
 ![Painel lateral](assets/ui-side-panel.png)
 
 ### Painel lateral - Ativos {#side-panel-assets}
 
-Na guia Ativos, é possível selecionar dentre uma variedade de ativos. Você também pode filtrar por um termo específico ou selecionar um grupo.
+Na guia Ativos, é possível selecionar dentre uma variedade de ativos. Além disso, você pode filtrar por um termo específico ou selecionar um grupo.
 
 ![Guia Ativos](assets/ui-side-panel-assets.png)
 
 ### Painel lateral - Grupos de ativos {#side-panel-asset-groups}
 
-Na guia Ativos há uma lista suspensa que você pode usar para selecionar os grupos de ativos específicos.
+Na guia Ativos, há uma lista suspensa que você pode usar para selecionar os grupos de ativos específicos.
 
 ![Grupos de ativos](assets/ui-side-panel-asset-groups.png)
 
 ### Painel lateral - Componentes {#side-panel-components}
 
-Na guia Componentes, é possível selecionar dentre uma variedade de componentes. Você também pode filtrar por um termo específico ou selecionar um grupo.
+Na guia Componentes, é possível selecionar dentre uma variedade de componentes. Além disso, você pode filtrar por um termo específico ou selecionar um grupo.
 
 ![Guia Componentes](assets/ui-side-panel-components.png)
 
 ### Painel lateral - Árvore de conteúdo {#side-panel-content-tree}
 
-Na guia Árvore de conteúdo, é possível exibir a hierarquia do conteúdo na página. Clicar em uma entrada na guia salta para e seleciona o item na página no editor.
+Na guia Árvore de conteúdo, é possível visualizar a hierarquia do conteúdo na página. Clicar em uma entrada na guia salta para e seleciona o item na página no editor.
 
 ![Árvore de conteúdo](assets/ui-side-panel-content-tree.png)
 
 ### Sobreposições {#overlays}
 
-Eles sobrepõem o quadro de conteúdo e são usados pelo [camadas](#layer) para conhecer os mecanismos de como você pode interagir (de forma completamente transparente) com os componentes e seu conteúdo.
+Sobrepõe o quadro de conteúdo e são usados pelo [camadas](#layer) para conhecer os mecanismos de como você pode interagir de forma transparente com os componentes e seu conteúdo.
 
 As sobreposições ficam no quadro do editor (com todos os outros elementos de criação de página), embora elas realmente sobreponham os componentes apropriados no quadro de conteúdo.
 
@@ -146,7 +146,7 @@ O AEM vem com várias camadas já implementadas para a criação de páginas; in
 
 >[!NOTE]
 >
->As camadas são um conceito eficiente que afeta a visualização e a interação do usuário com o conteúdo da página. Ao desenvolver suas próprias camadas, é necessário garantir que a camada seja limpa ao sair.
+>As camadas são um conceito eficiente que afeta a visualização e a interação do usuário com o conteúdo da página. Ao desenvolver suas próprias camadas, certifique-se de que a camada seja limpa ao sair.
 
 ### Alternador de camada {#layer-switcher}
 
@@ -158,7 +158,7 @@ O alternador de camadas está disponível como uma lista suspensa na barra de fe
 
 ### Component Toolbar {#component-toolbar}
 
-Cada instância de um componente revelará sua barra de ferramentas quando clicado (uma vez ou com um clique duplo lento). A barra de ferramentas contém as ações específicas (por exemplo, copiar, colar, abrir editor) que estão disponíveis para a instância do componente na página.
+Cada instância de um componente revela sua barra de ferramentas quando clicado (uma vez ou com um clique duplo lento). A barra de ferramentas contém as ações específicas (por exemplo, copiar, colar, abrir editor) que estão disponíveis para a instância do componente na página.
 
 Dependendo do espaço disponível, as barras de ferramentas do componente são posicionadas no canto superior ou inferior direito do componente apropriado.
 
@@ -168,4 +168,4 @@ Dependendo do espaço disponível, as barras de ferramentas do componente são p
 
 <!--For more details about the concepts around the touch-enabled UI, continue to the article [Concepts of the AEM Touch-Enabled UI](/help/sites-developing/touch-ui-concepts.md).-->
 
-Para obter mais informações técnicas, consulte a seção [Conjunto de documentação JS](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) para o editor de páginas.
+Para obter mais informações técnicas, consulte a [Conjunto de documentação JS](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html) para o editor de páginas.

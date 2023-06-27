@@ -2,10 +2,10 @@
 title: Criação de representações de vídeo no Screens as a Cloud Service
 description: Esta página descreve como criar representações de vídeo no Screens as a Cloud Service.
 exl-id: a9c46036-cd29-47fa-81d9-c865cf22c98a
-source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
+source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
 workflow-type: tm+mt
-source-wordcount: '353'
-ht-degree: 0%
+source-wordcount: '343'
+ht-degree: 1%
 
 ---
 
@@ -25,13 +25,13 @@ Siga as etapas abaixo para criar representações de vídeo no Screens as a Clou
 1. Navegue até o canal no Provedor de conteúdo do Screens.
 
    >[!NOTE]
-   >Consulte [Utilização do provedor de conteúdo do Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en#screens-content-provider) para obter mais detalhes.
+   >Consulte [Utilização do provedor de conteúdo do Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en#screens-content-provider) para obter mais detalhes.
 
-1. Clique na seção Ferramentas na barra de navegação esquerda e clique em **Assets** e clique em **Processamento de perfis**.
+1. Clique na seção Ferramentas na barra de navegação à esquerda e clique em **Assets** e clique em **Processamento de perfis**.
 
    ![Clique em Processar perfis](/help/screens-cloud/assets/configure/screens-cp-3.png)
 
-1. Clique em **Criar** para criar um novo perfil de processamento.
+1. Clique em **Criar** para criar um perfil de processamento.
 
    ![Clique em Criar](/help/screens-cloud/assets/configure/screens-video-2.png)
 
@@ -48,14 +48,14 @@ Siga as etapas abaixo para criar representações de vídeo no Screens as a Clou
    ![](/help/screens-cloud/assets/configure/screens-video-4.png)
 
    >[!IMPORTANT]
-   >Use o nome Codificação que começa com &quot;telas-&quot;; somente essas representações de vídeo são consideradas para reproduzir a experiência de vídeo no Screens as a Cloud Service. Insira a taxa de bits que funciona em seus vídeos (2500 kbps para vídeo de 720 px e 5000 kbps para 1080 px).
+   >Use o nome da codificação que começa com &quot;screens-&quot;. Somente essas representações de vídeo são consideradas para reproduzir a experiência de vídeo no Screens as a Cloud Service. Insira a taxa de bits que funciona em seus vídeos (2500 kbps para vídeo de 720 px e 5000 kbps para 1080 px).
 
    >[!NOTE]
    >Várias representações de vídeo podem ser adicionadas com variação de largura/altura/taxa de bits para que seus vídeos funcionem. Todas as telas e representações são baixadas pelos dispositivos do Screens, mesmo que o dispositivo reproduza apenas a representação de vídeo.
 
 1. Clique em **Salvar**.
 
-1. Selecione o perfil de Processamento e clique em **Aplicar perfil às pastas**.
+1. Selecione o perfil de processamento e clique em **Aplicar perfil às pastas**.
 
    ![Aplicar perfil à pasta](/help/screens-cloud/assets/configure/screens-video-5.png)
 
@@ -64,5 +64,6 @@ Siga as etapas abaixo para criar representações de vídeo no Screens as a Clou
    ![Clique em Aplicar](/help/screens-cloud/assets/configure/screens-video-6.png)
 
    >[!NOTE]
+   >
    >* É possível criar vários perfis de processamento e aplicá-los às pastas correspondentes, para que os vídeos dessas pastas obtenham as representações de vídeo específicas.
-   >* Ao fazer upload de qualquer vídeo para a pasta na qual o perfil de processamento é aplicado, os vídeos são processados e as representações configuradas são criadas, que são usadas ainda mais pelos dispositivos do Screens para reproduzir os vídeos.
+   >* Os vídeos são processados quando você faz upload de qualquer vídeo para a pasta em que um perfil de processamento é aplicado. As representações configuradas são criadas e usadas pelos dispositivos do Screens para reproduzir os vídeos.

@@ -2,9 +2,9 @@
 title: Referência de predicado do construtor de consultas
 description: Referência de predicado para a API do Construtor de consultas.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
 workflow-type: tm+mt
-source-wordcount: '2280'
+source-wordcount: '2246'
 ht-degree: 2%
 
 ---
@@ -15,20 +15,20 @@ ht-degree: 2%
 
 ### raiz {#root}
 
-Este é o grupo de predicados raiz. Suporta todos os recursos de um grupo e permite a definição de parâmetros de consulta globais.
+O grupo de predicados raiz. Suporta todos os recursos de um grupo e permite a definição de parâmetros de consulta globais.
 
-O nome &quot;raiz&quot; nunca é usado em uma consulta, ele está implícito.
+O nome &quot;raiz&quot; nunca é usado em uma consulta; ele está implícito.
 
 #### Propriedades {#properties-18}
 
-* **`p.offset`** - número que indica o início da página de resultados, ou seja, quantos itens devem ser ignorados
-* **`p.limit`** - número que indica o tamanho da página
-* **`p.guessTotal`** - recomendado: evite calcular o total do resultado completo, que pode ser caro; um número que indique o total máximo a ser contado até (por exemplo, 1000, um número que forneça aos usuários feedback suficiente sobre o tamanho bruto e números exatos para resultados menores) ou `true` para contar somente até o mínimo necessário `p.offset` + `p.limit`
-* **`p.excerpt`** - se definido como `true`, incluir trecho de texto completo no resultado
-* **`p.hits`** - (somente para o servlet JSON) selecione a forma como as ocorrências são gravadas como JSON, com estas padrão (extensíveis por meio do serviço ResultHitWriter):
-   * **`simple`** - mínimo de itens como `path`, `title`, `lastmodified`, `excerpt` (se definido)
-   * **`full`** - renderização Sling JSON do nó, com `jcr:path` indicando o caminho da ocorrência: por padrão, apenas lista as propriedades diretas do nó, inclui uma árvore mais profunda com `p.nodedepth=N`, com 0 significando a subárvore inteira e infinita; adicione `p.acls=true` para incluir as permissões JCR da sessão atual no item de resultado fornecido (mapeamentos: `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`)
-   * **`selective`** - somente as propriedades especificadas em `p.properties`, que é um espaço separado (use `+` em URLs) lista de caminhos relativos; se o caminho relativo tiver uma profundidade `>1` esses objetos são representados como objetos filho; o `jcr:path` propriedade inclui o caminho da ocorrência
+* **`p.offset`** - número que indica o início da página de resultados, ou seja, quantos itens devem ser ignorados.
+* **`p.limit`** - número que indica o tamanho da página.
+* **`p.guessTotal`** - recomendado: evite calcular o total do resultado completo, que pode ser caro. Um número que indica o total máximo para contar até (por exemplo, 1000, um número que fornece aos usuários feedback suficiente sobre o tamanho bruto e números exatos para resultados menores). Ou, `true` para contar somente até o mínimo necessário `p.offset` + `p.limit`.
+* **`p.excerpt`** - se definido como `true`, incluir trecho de texto completo no resultado.
+* **`p.hits`** - (somente para o servlet JSON) selecione a forma como as ocorrências são gravadas como JSON, com essas padrão (extensível por meio do serviço ResultHitWriter).
+   * **`simple`** - mínimo de itens como `path`, `title`, `lastmodified`, `excerpt` (se definido).
+   * **`full`** - renderização Sling JSON do nó, com `jcr:path` indicando o caminho da ocorrência. Por padrão, o apenas lista as propriedades diretas do nó, inclui uma árvore mais profunda com `p.nodedepth=N`, com 0 significando a subárvore inteira e infinita. Adicionar `p.acls=true` para incluir as permissões JCR da sessão atual no item de resultado fornecido (mapeamentos: `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`).
+   * **`selective`** - somente as propriedades especificadas em `p.properties`, que é um espaço separado (use `+` em URLs) de caminhos relativos. Se o caminho relativo tiver uma profundidade `>1`, essas propriedades são representadas como objetos filho. O programa `jcr:path` propriedade inclui o caminho da ocorrência.
 
 ### grupo {#group}
 
@@ -44,7 +44,7 @@ group.2_property=navTitle
 group.2_property.value=My Page
 ```
 
-Isto é conceitualmente `(1_property` OU `2_property)`.
+Conceitualmente, é `(1_property` OU `2_property)`.
 
 Veja a seguir um exemplo de grupos aninhados:
 
@@ -57,9 +57,9 @@ group.2_group.path=/content/dam/wknd
 group.2_group.type=dam:Asset
 ```
 
-Isso pesquisa o termo **Gerenciamento** nas páginas em `/content/wknd/ch/de` ou em ativos no `/content/dam/wknd`.
+Pesquisa o termo **Gerenciamento** nas páginas em `/content/wknd/ch/de` ou em ativos no `/content/dam/wknd`.
 
-Isto é conceitualmente `fulltext AND ( (path AND type) OR (path AND type) )`. Esteja ciente de que essas junções OR precisam de bons índices por motivos de desempenho.
+Conceitualmente, é `fulltext AND ( (path AND type) OR (path AND type) )`. Essas associações OR precisam de bons índices por motivos de desempenho.
 
 #### Propriedades {#properties-6}
 
@@ -70,19 +70,19 @@ Isto é conceitualmente `fulltext AND ( (path AND type) OR (path AND type) )`. E
 
 ### orderby {#orderby}
 
-Este predicado permite classificar os resultados. Se a ordenação por várias propriedades for necessária, esse predicado precisará ser adicionado várias vezes usando o prefixo do número, como `1_orderby=first`, `2_oderby=second`.
+Este predicado permite classificar os resultados. Se a ordenação por várias propriedades for necessária, esse predicado deverá ser adicionado várias vezes usando o prefixo numérico, como `1_orderby=first`, `2_oderby=second`.
 
 #### Propriedades {#properties-13}
 
 * **`orderby`** - o nome da propriedade JCR indicado por um @ à esquerda, por exemplo `@jcr:lastModified` ou `@jcr:content/jcr:title`, ou outro predicado na consulta, por exemplo `2_property`, no qual classificar
 * **`sort`** - direção da classificação, ou `desc` para decrescente ou `asc` para crescente (padrão)
-* **`case`** - se definido como `ignore` fará com que a classificação não diferencie maiúsculas de minúsculas, o que significa `a` vem antes `B`; se estiver vazia ou for deixada de fora, a classificação diferencia maiúsculas de minúsculas, o que significa `B` vem antes `a`
+* **`case`** - se definido como `ignore`, faz com que a classificação não diferencie maiúsculas de minúsculas, ou seja, `a` vem antes `B`; se estiver vazia ou for omitida, a classificação diferencia maiúsculas de minúsculas, o que significa `B` vem antes `a`
 
 ## Predicados {#predicates}
 
 ### boolproperty {#boolproperty}
 
-Este predicado corresponde às propriedades booleanas do JCR. Aceita apenas os valores `true` e `false`. No caso de `false`, corresponderá se a propriedade tiver o valor `false` ou se não existir. Isso pode ser útil para verificar se há sinalizadores booleanos definidos apenas quando ativados.
+Este predicado corresponde às propriedades booleanas do JCR. Aceita apenas os valores `true` e `false`. Se o valor for `false`, corresponde se a propriedade tiver o valor `false`ou se não existir. Esse predicado é útil para verificar se há sinalizadores booleanos que só são definidos quando ativados.
 
 O herdado `operation` parâmetro não tem significado.
 
@@ -108,7 +108,7 @@ Esse predicado restringe o resultado aos fragmentos de conteúdo.
 
 Esse predicado compara duas propriedades de data JCR entre si. É possível testar se eles são iguais, desiguais, maiores ou maiores ou iguais.
 
-Este é um predicado somente de filtragem e não pode usar um índice de pesquisa.
+Um predicado somente de filtragem e não pode usar um índice de pesquisa.
 
 #### Propriedades {#properties-2}
 
@@ -143,7 +143,7 @@ Ela não oferece suporte à filtragem.
 
 Esse predicado exclui nós do resultado em que seu caminho corresponde a uma expressão regular.
 
-Este é um predicado somente de filtragem e não pode usar um índice de pesquisa.
+Um predicado somente de filtragem e não pode usar um índice de pesquisa.
 
 Não há suporte para extração de facetas.
 
@@ -153,7 +153,7 @@ Não há suporte para extração de facetas.
 
 ### texto completo {#fulltext}
 
-Esse predicado pesquisa por termos no índice de texto completo.
+Pesquisa por termos no índice de texto completo.
 
 Ela não oferece suporte à filtragem.
 
@@ -161,24 +161,24 @@ Não há suporte para extração de facetas.
 
 #### Propriedades {#properties-5}
 
-* **`fulltext`** - o(s) termo(s) de pesquisa de texto completo
+* **`fulltext`** - os termos de pesquisa de texto completo
 * **`relPath`** - o caminho relativo para pesquisar na propriedade ou no subnó. Essa propriedade é opcional.
 
 ### hasPermission {#haspermission}
 
-Este predicado restringe o resultado a itens nos quais a sessão atual tem o valor especificado [Privilégios JCR.](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
+Este predicado restringe o resultado a itens nos quais a sessão atual tem o valor especificado [Privilégios JCR.](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
 
-Este é um predicado somente de filtragem e não pode usar um índice de pesquisa. Não há suporte para extração de facetas.
+Um predicado somente de filtragem e não pode usar um índice de pesquisa. Não há suporte para extração de facetas.
 
 #### Propriedades {#properties-7}
 
-* **`hasPermission`** - privilégios JCR separados por vírgulas que a sessão do usuário atual DEVE TER PARA o nó em questão; por exemplo `jcr:write`, `jcr:modifyAccessControl`
+* **`hasPermission`** - todos os privilégios JCR separados por vírgulas que a sessão do usuário atual deve ter para o nó em questão. Por exemplo, `jcr:write`, `jcr:modifyAccessControl`
 
 ### idioma {#language}
 
-Esse predicado encontra páginas AEM em um idioma específico. Isso verifica a propriedade de idioma da página e o caminho da página, que geralmente inclui o idioma ou localidade em uma estrutura de site de nível superior.
+Esse predicado encontra páginas AEM em um idioma específico. Ela verifica a propriedade de idioma da página e o caminho da página, que geralmente inclui o idioma ou o local em uma estrutura de site de nível superior.
 
-Este é um predicado somente de filtragem e não pode usar um índice de pesquisa.
+Um predicado somente de filtragem e não pode usar um índice de pesquisa.
 
 Ela oferece suporte à extração de facetas e a intervalos para cada código de idioma exclusivo.
 
@@ -188,9 +188,9 @@ Ela oferece suporte à extração de facetas e a intervalos para cada código de
 
 ### principal ativo {#mainasset}
 
-Esse predicado verifica se um nó é um ativo principal do DAM e não um subativo. Isso ocorre basicamente em todos os nós que não estão dentro de um nó sub assets. Observe que isso não verifica a `dam:Asset` tipo de nó. Para usar esse predicado, basta definir `mainasset=true` ou `mainasset=false`. Não há mais propriedades.
+Esse predicado verifica se um nó é um ativo principal do DAM e não um subativo. Basicamente, cada nó não está dentro de um nó sub assets. Ele não verifica a `dam:Asset` tipo de nó. Para usar este predicado, defina `mainasset=true` ou `mainasset=false`. Não há mais propriedades.
 
-Este é um predicado somente de filtragem e não pode usar um índice de pesquisa.
+Um predicado somente de filtragem e não pode usar um índice de pesquisa.
 
 Ela oferece suporte à extração de facetas e fornece dois buckets para ativos principais e secundários.
 
@@ -200,9 +200,9 @@ Ela oferece suporte à extração de facetas e fornece dois buckets para ativos 
 
 ### memberOf {#memberof}
 
-Esse predicado encontra itens que são membros de um [coleção de recursos do sling](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/resource/collection/ResourceCollection.html).
+Esse predicado encontra itens que são membros de um [coleção de recursos do sling](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/resource/collection/ResourceCollection.html).
 
-Este é um predicado somente de filtragem e não pode usar um índice de pesquisa.
+Um predicado somente de filtragem e não pode usar um índice de pesquisa.
 
 Não há suporte para extração de facetas.
 
@@ -222,7 +222,7 @@ Ela oferece suporte à extração de facetas e buckets para cada nome de nó ún
 
 ### não expirado {#notexpired}
 
-Esse predicado corresponde a itens, verificando se uma propriedade de data JCR é maior ou igual à hora atual do servidor. Isso pode ser usado para verificar um `expiresAt` e limitar os resultados apenas àqueles que ainda não expiraram (`notexpired=true`) ou que já expiraram (`notexpired=false`).
+Esse predicado corresponde a itens, verificando se uma propriedade de data JCR é maior ou igual à hora atual do servidor. Ele pode ser usado para verificar um `expiresAt` e limita os resultados apenas aos valores que ainda não expiraram (`notexpired=true`) ou que já expiraram (`notexpired=false`).
 
 Ela não oferece suporte à filtragem.
 
@@ -241,14 +241,14 @@ Não há suporte para extração de facetas.
 
 #### Propriedades {#properties-14}
 
-* **`path`** - Isso define o padrão de caminho.
-   * Dependendo do `exact` propriedade, a subárvore inteira corresponderá (como anexar `//*` no xpath, mas observe que isso não inclui o caminho base) ou apenas um caminho exato corresponde, que pode incluir curingas (`*`).
-      * O padrão é `true`
+* **`path`** - Define o padrão do caminho.
+   * Dependendo do `exact` propriedade, a subárvore inteira corresponde (como anexar `//*` no xpath, mas observe que não inclui o caminho base), ou apenas um caminho exato é correspondido, que pode incluir curingas (`*`).
+      * O padrão é `true`.
 &lt;!— * Se a variável `self`for definida, toda a subárvore, incluindo o nó base, será pesquisada.—>
-* **`exact`** - se `exact` é `true`, o caminho exato deve corresponder, mas pode conter curingas simples (`*`), que correspondem a nomes, mas não `/`; se for `false` (padrão) todos os descendentes são incluídos (opcional)
-* **`flat`** - pesquisa somente os filhos diretos (como anexar `/*` em xpath) (usado somente se `exact` não é verdadeiro, opcional)
+* **`exact`** - se `exact` é `true`, o caminho exato deve corresponder, mas pode conter curingas simples (`*`), que correspondem a nomes, mas não `/`; se for `false` (padrão) todos os descendentes são incluídos (opcional).
+* **`flat`** - pesquisa somente os filhos diretos (como anexar `/*` em xpath) (usado somente se `exact` não é verdadeiro, opcional).
 * **`self`** - pesquisa a subárvore, mas inclui o nó base fornecido como caminho (sem curingas).
-   * *Observação importante*: Um problema foi identificado com `self` propriedade na implementação atual do querybuilder e usá-la em consultas pode não produzir resultados de pesquisa corretos. Alteração da implementação atual do `self` propriedade também não é viável, pois pode quebrar os aplicativos existentes que dependem dela. Devido a isso, `self` A propriedade do foi descontinuada e é recomendável evitar usá-la.
+   * *Observação importante*: Um problema foi identificado com `self` a propriedade na implementação atual do construtor de consultas e usá-la em consultas pode não produzir resultados de pesquisa corretos. Alteração da implementação atual do `self` A propriedade também não é viável porque pode quebrar os aplicativos existentes que dependem dela. Devido a essa funcionalidade, `self` propriedade agora está obsoleta; recomenda-se evitar usá-la.
 
 ### propriedade {#property}
 
@@ -258,23 +258,23 @@ Ela oferece suporte à extração de facetas e fornece compartimentos para cada 
 
 #### Propriedades {#properties-15}
 
-* **`property`** - caminho relativo para a propriedade, por exemplo `jcr:title`
-* **`value`** - valor para verificar a propriedade; segue o tipo de propriedade JCR para conversões de string
-* **`N_value`** - utilizar `1_value`, `2_value`, ... para verificar se há vários valores (combinados com `OR` por padrão, com `AND` se `and=true`)
+* **`property`** - caminho relativo para a propriedade, por exemplo `jcr:title`.
+* **`value`** - valor para verificar a propriedade; segue o tipo de propriedade JCR para conversões de sequência.
+* **`N_value`** - utilizar `1_value`, `2_value`, ... para verificar se há vários valores (combinados com `OR` por padrão, com `AND` se `and=true`).
 * **`and`** - defina como `true` para combinar vários valores (`N_value`) com `AND`
 * **`operation`**
-   * `equals` para correspondência exata (padrão)
-   * `unequals` para comparação de desigualdade
-   * `like` para usar o `jcr:like` função xpath (opcional)
-   * `not` para nenhuma correspondência (por exemplo, `not(@prop)` em xpath, o parâmetro value é ignorado)
-   * `exists` para verificação de existência
-      * `true` a propriedade deve existir
-      * `false` é o mesmo que `not` e é o padrão
-* **`depth`** - número de níveis curingas abaixo dos quais a propriedade/caminho relativo pode existir (por exemplo, `property=size depth=2` verificará `node/size`, `node/*/size` e `node/*/*/size`)
+   * `equals` para correspondência exata (padrão).
+   * `unequals` para comparação de desigualdade.
+   * `like` para usar o `jcr:like` função xpath (opcional).
+   * `not` para nenhuma correspondência (por exemplo, `not(@prop)` em xpath, o parâmetro value é ignorado).
+   * `exists` para verificação de existência.
+      * `true` a propriedade deve existir.
+      * `false` é o mesmo que `not` e é o padrão.
+* **`depth`** - número de níveis curingas abaixo dos quais a propriedade/caminho relativo pode existir (por exemplo, `property=size depth=2` cheques `node/size`, `node/*/size`, e `node/*/*/size`).
 
 ### rangeproperty {#rangeproperty}
 
-Este predicado corresponde a uma propriedade JCR em relação a um intervalo. Isso se aplica a propriedades com tipos lineares, como `LONG`, `DOUBLE` e `DECIMAL`. Para `DATE` consulte a [`daterange`](#daterange) predicado que otimizou a entrada de formato de data.
+Este predicado corresponde a uma propriedade JCR em relação a um intervalo. Ela se aplica a propriedades com tipos lineares, como `LONG`, `DOUBLE`, e `DECIMAL`. Para `DATE`, consulte o [`daterange`](#daterange) predicado que otimizou a entrada de formato de data.
 
 Você pode definir um limite inferior, um limite superior ou ambos. A operação (por exemplo, menor que ou menor que ou igual a) também pode ser especificada para limites inferior e superior individualmente.
 
@@ -291,7 +291,7 @@ Não há suporte para extração de facetas.
 
 ### relativedaterange {#relativedaterange}
 
-Este predicado corresponde a `JCR DATE` propriedades em um intervalo de data/hora usando deslocamentos de tempo relativos à hora atual do servidor. Você pode especificar `lowerBound` e `upperBound` usando um valor de milissegundo ou a sintaxe Bugzilla `1s 2m 3h 4d 5w 6M 7y` (um segundo, dois minutos, três horas, quatro dias, cinco semanas, seis meses, sete anos). Prefixar com `-` para indicar um deslocamento negativo antes da hora atual. Se você especificar apenas `lowerBound` ou `upperBound`, o outro assumirá como padrão `0`, representando a hora atual.
+Este predicado corresponde a `JCR DATE` propriedades em um intervalo de data/hora usando deslocamentos de tempo relativos à hora atual do servidor. Você pode especificar `lowerBound` e `upperBound` usando um valor de milissegundo ou a sintaxe Bugzilla `1s 2m 3h 4d 5w 6M 7y` (um segundo, dois minutos, três horas, quatro dias, cinco semanas, seis meses, sete anos). Prefixar com `-` para indicar um deslocamento negativo antes da hora atual. Se você especificar apenas `lowerBound` ou `upperBound`, o outro toma como padrão `0`, representando a hora atual.
 
 Por exemplo:
 
@@ -301,7 +301,7 @@ Por exemplo:
 * `lowerBound=-1500` e `upperBound=5500` seleciona algo entre 1500 milissegundos de idade e 5500 milissegundos no futuro
 * `lowerBound=1d` e `upperBound=2d` seleciona qualquer coisa depois de amanhã
 
-Observe que não são considerados anos bissextos e todos os meses são 30 dias.
+Ele não leva anos bissextos em consideração e todos os meses são 30 dias.
 
 Ela não oferece suporte à filtragem.
 
@@ -316,9 +316,9 @@ Ela suporta a extração de facetas da mesma forma que a [`daterange`](#daterang
 
 Esse predicado inclui todos os predicados de uma consulta persistente do Construtor de consultas na consulta atual como um predicado de subgrupo.
 
-Observe que isso não executará uma consulta extra, mas estenderá a consulta atual.
+Ela não executa uma consulta extra, mas estende a consulta atual.
 
-As consultas podem ser persistentes de forma programática usando `QueryBuilder#storeQuery()`. O formato pode ser multilinha `String` propriedade ou um `nt:file` nó que contém a consulta como um arquivo de texto no formato de propriedades Java.
+As consultas podem ser persistentes de forma programática usando `QueryBuilder#storeQuery()`. O formato pode ser multilinha `String` propriedade ou um `nt:file` nó que contém a consulta como um arquivo de texto no formato de propriedades Java™.
 
 Não há suporte para extração de facetas para os predicados da consulta salva.
 
@@ -363,7 +363,7 @@ Ela é compatível com a extração de facetas e fornece compartimentos para cad
 
 ### tagsearch {#tagsearch}
 
-Esse predicado pesquisa por conteúdo marcado com uma ou mais tags, especificando palavras-chave. Isso primeiro pesquisará tags que contenham essas palavras-chave em seus títulos e, em seguida, restringirá o resultado a apenas itens marcados com eles.
+Esse predicado pesquisa por conteúdo marcado com uma ou mais tags, especificando palavras-chave. Ela procura primeiro por tags contendo essas palavras-chave em seus títulos e, em seguida, restringe o resultado a apenas itens marcados com essas palavras-chave.
 
 Não há suporte para extração de facetas.
 
@@ -372,14 +372,14 @@ Não há suporte para extração de facetas.
 * **`tagsearch`** - palavra-chave para procurar em títulos de tags
 * **`property`** - propriedade (ou caminho relativo para a propriedade) a ser considerada (padrão `cq:tags`)
 * **`lang`** - para pesquisar apenas um determinado título de tag localizado (por exemplo, `de`)
-* **`all`** - valor booliano para pesquisar todo o texto completo da tag, ou seja, todos os títulos, descrição etc. (tem precedência sobre `lang`)
+* **`all`** - valor booleano para pesquisar todo o texto completo da tag, ou seja, todos os títulos, descrições e assim por diante (tem precedência sobre `lang`)
 
 ### tipo {#type}
 
-Esse predicado restringe os resultados a um tipo de nó JCR específico, tanto tipos de nó primário quanto tipos de mixin. Também encontrará subtipos desse tipo de nó. Observe que os índices de pesquisa do repositório precisam abranger os tipos de nó para uma execução eficiente.
+Esse predicado restringe os resultados a um tipo de nó JCR específico, tanto tipos de nó primário quanto `mixin` tipos. Ele também encontra subtipos desse tipo de nó. Os índices de pesquisa do repositório devem abranger os tipos de nó para uma execução eficiente.
 
 Ela suporta a extração de facetas e fornece intervalos para cada tipo único nos resultados.
 
 #### Propriedades {#Properties-2}
 
-* **`type`** - tipo de nó ou nome de mixin para procurar, por exemplo `cq:Page`
+* **`type`** - tipo de nó ou `mixin` nome a ser pesquisado, por exemplo `cq:Page`
