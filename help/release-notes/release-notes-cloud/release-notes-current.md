@@ -3,7 +3,7 @@ title: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud S
 description: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 060956eee5136924263e4df5bd756670384e8365
+source-git-commit: 171aca87ff725a2f142f0336dca3491e213f55ab
 workflow-type: tm+mt
 source-wordcount: '1172'
 ht-degree: 28%
@@ -90,11 +90,11 @@ Assista ao vídeo Visão geral da versão de abril de 2023 que exibe um resumo d
 
      >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
-* [Integração e conformidade aprimoradas com o Adobe Acrobat Sign](/help/forms/adobe-sign-integration-adaptive-forms.md): o AEM Forms agora se integra ao Adobe Acrobat Sign para o governo. Essa integração oferece um nível avançado de conformidade e segurança para assinaturas eletrônicas com envios de formulários adaptáveis para contas associadas ao governo (departamentos e agências governamentais).
+* [Adobe Acrobat Sign Solutions para o governo](/help/forms/adobe-sign-integration-adaptive-forms.md): o AEM Forms agora se integra ao Adobe Acrobat Sign Solutions para o governo. Essa integração oferece um nível avançado de conformidade e segurança para assinaturas eletrônicas com envios de formulários adaptáveis para contas associadas ao governo (departamentos e agências governamentais).
 
   A integração com o Adobe Acrobat Sign para o governo permite que os parceiros do Adobe e os clientes do governo usem assinaturas eletrônicas no Adaptive Forms para algumas das linhas de negócios mais críticas e confidenciais. Essa camada adicional de segurança garante que todas as assinaturas eletrônicas sejam totalmente compatíveis com a conformidade Moderada do FedRAMP, proporcionando tranquilidade aos clientes governamentais Adobe.
 
-* Tratamento de erros aprimorado com manipuladores de erros personalizados no editor de regras. Agora é possível chamar uma função personalizada (usando a Biblioteca do cliente) em resposta a um erro retornado por um serviço externo e fornecer uma resposta personalizada aos usuários finais. Ou você pode realizar ações específicas para erros retornados por um serviço. Por exemplo, você pode chamar um fluxo de trabalho personalizado no backend para códigos de erro específicos ou informar ao cliente que o serviço está inativo.
+* Tratamento de erros aprimorado com manipuladores de erros personalizados no editor de regras: agora é possível chamar uma função personalizada (usando a Biblioteca do cliente) em resposta a um erro retornado por um serviço externo e fornecer uma resposta personalizada aos usuários finais. Ou você pode realizar ações específicas para erros retornados por um serviço. Por exemplo, você pode chamar um fluxo de trabalho personalizado no backend para códigos de erro específicos ou informar ao cliente que o serviço está inativo.
 
   Essa funcionalidade ajuda a melhorar a capacidade geral de tratamento de erros, introduzindo respostas de erro baseadas em padrões que são compatíveis com versões anteriores de manipuladores de erro OOTB, com maior flexibilidade e controle.
 

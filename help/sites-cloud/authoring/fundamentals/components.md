@@ -2,10 +2,10 @@
 title: Componentes
 description: Os componentes são o bloco de construção fundamental de criação das páginas de conteúdo no AEM
 exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 171aca87ff725a2f142f0336dca3491e213f55ab
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 72%
+source-wordcount: '349'
+ht-degree: 63%
 
 ---
 
@@ -42,6 +42,8 @@ O console [Componentes](/help/sites-cloud/authoring/features/components-console.
 Os ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)Componentes principais[ oferecem funcionalidade de criação flexível e repleta de recursos, que fornecem tipos de conteúdo essenciais para criar páginas.
 
 São criados usando as práticas recomendadas do AEM e são a base da experiência de criação do AEM. Os componentes principais podem ser facilmente estendidos pelos desenvolvedores para atender às necessidades específicas do projeto.
+
+Junto com os Componentes principais do WCM, você também pode usar [Componentes principais adaptáveis do Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#features). Esses Componentes principais fornecem métodos padrão e mais fáceis de [criar ou adicionar formulários a uma página do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md).
 
 ### Configuração de modelos {#configuring-templates}
 

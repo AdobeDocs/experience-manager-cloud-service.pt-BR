@@ -2,10 +2,10 @@
 title: Criar site a partir de modelo
 description: Saiba como criar rapidamente um novo site do AEM usando um modelo de site.
 exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 171aca87ff725a2f142f0336dca3491e213f55ab
 workflow-type: tm+mt
-source-wordcount: '1485'
-ht-degree: 99%
+source-wordcount: '1513'
+ht-degree: 97%
 
 ---
 
@@ -184,3 +184,4 @@ Embora seja recomendável seguir para a próxima parte da jornada de Criação r
 * [Criar e organizar páginas](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) - Este guia detalha como gerenciar páginas do seu site do AEM, caso deseje personalizá-lo ainda mais após criá-lo a partir do modelo.
 * [Como trabalhar com pacotes](/help/implementing/developing/tools/package-manager.md) - Os pacotes permitem a importação e exportação de conteúdo do repositório. Este documento explica como trabalhar com pacotes no AEM 6.5, o que também se aplica ao AEMaaCS.
 * [Documentação de administração do site](/help/sites-cloud/administering/site-creation/create-site.md) - Consulte os documentos técnicos sobre criação de sites para obter mais detalhes sobre os recursos da ferramenta de Criação rápida de sites.
+* [Criar ou adicionar formulários a uma página do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) - Conheça as técnicas passo a passo e as práticas recomendadas para integrar formulários ao seu site, otimizando suas experiências digitais para obter o máximo impacto.
