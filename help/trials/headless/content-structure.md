@@ -4,7 +4,7 @@ description: Saiba como usar os modelos de fragmento de conteúdo do AEM para cr
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: e507b409e4d2382b1eac54b11a9ad68fd965db4b
 workflow-type: tm+mt
 source-wordcount: '993'
 ht-degree: 34%
@@ -43,7 +43,7 @@ Por exemplo, você cria um modelo que representa a estrutura de dados de uma via
    * **Título do modelo** - Uma etiqueta breve do modelo e geralmente indica a finalidade do modelo. Você pode chamar o novo modelo de `Adventure`.
    * **Ativar modelo**: essa opção está marcada por padrão e deve permanecer assim para que você possa criar fragmentos de conteúdo com base nesse modelo.
 
-1. Depois que os campos obrigatórios forem preenchidos, clique em **Criar** no canto superior esquerdo para criar o modelo.
+1. Depois que os campos obrigatórios forem preenchidos, clique em **Criar** no canto superior direito para criar o modelo.
 
 1. A variável **Sucesso** confirma que o modelo foi criado. Clique em **Abertura** na caixa de diálogo para que você possa abrir o novo Modelo de fragmento de conteúdo no editor em uma nova guia. Em seguida, continue com a próxima etapa para adicionar campos de dados ao modelo.
 
