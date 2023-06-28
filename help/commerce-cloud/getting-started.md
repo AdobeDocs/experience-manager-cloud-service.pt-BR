@@ -8,10 +8,10 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
 workflow-type: tm+mt
-source-wordcount: '1113'
-ht-degree: 14%
+source-wordcount: '1118'
+ht-degree: 15%
 
 ---
 
@@ -63,15 +63,15 @@ Depois que o ponto de extremidade e, opcionalmente, um cabeçalho de autorizaç�
 
 ![Informações de ambiente do CM](/help/commerce-cloud/assets/commerce-cmui-done.png)
 
-### Por meio da CLI do Adobe Developer  {#adobe-cli}
+### Por meio da CLI do Adobe I/O  {#adobe-cli}
 
-Para conectar o AEM a uma solução comercial por meio da CLI do Adobe Developer, siga estas etapas:
+Para conectar o AEM a uma solução comercial por meio da CLI do Adobe I/O, siga estas etapas:
 
-1. Obter a CLI do Adobe Developer com o plug-in do Cloud Manager
+1. Obtenha a CLI do Adobe I/O com o plug-in do Cloud Manager
 
-   Verifique a [Documentação do Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/introduction.html?lang=pt-BR) sobre como baixar, configurar e usar o [CLI do Adobe Developer](https://github.com/adobe/aio-cli) com o [Plug-in da CLI do Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager).
+   Verifique a [Documentação do Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/introduction.html?lang=pt-BR) sobre como baixar, configurar e usar o [CLI do Adobe I/O](https://github.com/adobe/aio-cli) com o [Plug-in da CLI do Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager).
 
-2. Autentique a CLI do Adobe Developer com o programa AEM as a Cloud Service
+2. Autentique a CLI do Adobe I/O com o programa AEM as a Cloud Service
 
 3. Defina a variável `COMMERCE_ENDPOINT` no Cloud Manager
 
@@ -103,7 +103,7 @@ Você está pronto para usar o AEM Commerce as a Cloud Service e pode implantar 
 
 ## Configuração de lojas e catálogos {#catalog}
 
-O complemento CIF e a variável [Componentes principais da CIF](https://github.com/adobe/aem-core-cif-components) pode ser usado em várias estruturas de site de AEM conectadas a diferentes lojas de comércio (ou visualizações de loja e assim por diante). Por padrão, o complemento CIF é implantado com uma configuração padrão conectada ao armazenamento e catálogo padrão da Adobe Commerce.
+O complemento CIF e o [Componentes principais da CIF](https://github.com/adobe/aem-core-cif-components) pode ser usado em várias estruturas de site de AEM conectadas a diferentes lojas de comércio (ou visualizações de loja e assim por diante). Por padrão, o complemento CIF é implantado com uma configuração padrão conectada ao armazenamento e catálogo padrão da Adobe Commerce.
 
 Essa configuração pode ser ajustada para o projeto por meio da configuração de Cloud Service da CIF seguindo estas etapas:
 

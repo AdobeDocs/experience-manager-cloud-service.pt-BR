@@ -1,29 +1,28 @@
 ---
 title: Saiba como usar o GraphQL com o AEM - Exemplos de conteúdo e consultas
-description: Saiba como usar o GraphQL com o AEM para fornecer conteúdo em headless, explorando exemplos de conteúdo e consultas.
+description: Saiba como usar o GraphQL com AEM para fornecer conteúdo de forma headless explorando exemplos de conteúdo e consultas.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 063d8a23c0634de7c5c25b4e617cc536c2dc3a3b
+source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
 workflow-type: tm+mt
-source-wordcount: '1760'
-ht-degree: 92%
+source-wordcount: '1752'
+ht-degree: 74%
 
 ---
 
 # Saiba como usar o GraphQL com o AEM - Exemplos de conteúdo e consultas {#learn-graphql-with-aem-sample-content-queries}
 
-Saiba como usar o GraphQL com o AEM para fornecer conteúdo em headless, explorando exemplos de conteúdo e consultas.
+Saiba como usar o GraphQL com AEM para fornecer conteúdo de forma headless explorando exemplos de conteúdo e consultas.
 
 >[!NOTE]
 >
->Esta página deve ser lida junto com:
+>Leia esta página junto com o seguinte:
 >
 >* [Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments.md)
 >* [Modelos de fragmentos do conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 >* [API GraphQL do AEM para uso com Fragmentos de conteúdo](/help/headless/graphql-api/content-fragments.md)
 
-
-Para começar a usar consultas GraphQL e saber como elas funcionam com Fragmentos de conteúdo do AEM, seria de ajuda examinar alguns exemplos práticos.
+Para começar a usar consultas do GraphQL e saber como elas funcionam com Fragmentos de conteúdo AEM, seria de ajuda ver alguns exemplos práticos.
 
 Para isso, consulte:
 
@@ -42,13 +41,12 @@ Veja esses exemplos de consultas para obter ilustrações de como criar consulta
 
 >[!NOTE]
 >
->Dependendo do seu caso, você pode acessar diretamente a [Interface GraphiQL incluída na API GraphQL do AEM](/help/headless/graphql-api/graphiql-ide.md) para enviar e testar consultas.
+>Dependendo da sua instância, você pode acessar diretamente a variável [Interface GraphiQL incluída com a API AEM GraphQL](/help/headless/graphql-api/graphiql-ide.md) para enviar e testar consultas.
 >
 >É possível acessar o editor de consultas por meio de:
 >
 >* **Ferramentas** -> **Geral** -> **Editor de consultas GraphQL**
 >* diretamente; por exemplo, `http://localhost:4502/aem/graphiql.html`
-
 
 >[!NOTE]
 >
@@ -56,7 +54,7 @@ Veja esses exemplos de consultas para obter ilustrações de como criar consulta
 
 ### Exemplo de consulta - Todos os esquemas e tipos de dados disponíveis {#sample-all-schemes-datatypes}
 
-Isso retornará todos os `types` para todos os esquemas disponíveis.
+Retorna todos `types` para todos os esquemas disponíveis.
 
 **Exemplo de consulta**
 
@@ -149,7 +147,7 @@ Isso retornará todos os `types` para todos os esquemas disponíveis.
 
 ### Exemplo de consulta - Todas as informações sobre todas as cidades {#sample-all-information-all-cities}
 
-Para recuperar todas as informações sobre todas as cidades, você pode usar essa consulta básica:
+Para recuperar todas as informações sobre todas as cidades, você pode usar a seguinte consulta básica:
 **Exemplo de consulta**
 
 ```graphql
@@ -160,7 +158,7 @@ Para recuperar todas as informações sobre todas as cidades, você pode usar es
 }
 ```
 
-Quando executada, o sistema expandirá automaticamente a consulta para incluir todos os campos:
+Quando executado, o sistema expande automaticamente a consulta para incluir todos os campos:
 
 ```graphql
 {
@@ -232,7 +230,7 @@ Quando executada, o sistema expandirá automaticamente a consulta para incluir t
 
 ### Exemplo de consulta - Nomes de todas as cidades {#sample-names-all-cities}
 
-Esta é uma consulta simples para retornar o `name`de todas as entradas no esquema`city`.
+Uma consulta simples para retornar o `name`de todas as entradas no `city`esquema.
 
 **Exemplo de consulta**
 
@@ -282,7 +280,7 @@ query {
 
 ### Exemplo de consulta - Um único fragmento de cidade específico {#sample-single-specific-city-fragment}
 
-Esta é uma consulta para retornar os detalhes de uma única entrada de fragmento em um local específico no repositório.
+Uma consulta para retornar os detalhes de uma única entrada de fragmento em um local específico no repositório.
 
 **Exemplo de consulta**
 
@@ -323,7 +321,7 @@ Esta é uma consulta para retornar os detalhes de uma única entrada de fragment
 
 ### Exemplo de consulta - Todas as cidades com uma variação nomeada {#sample-cities-named-variation}
 
-Se você criar uma nova variação chamada &quot;Centro de Berlim&quot; (`berlin_centre`), para a `city` Berlim, use uma consulta para retornar detalhes da variação.
+Se você criar uma variação chamada &quot;Centro de Berlim&quot; (`berlin_centre`), para o `city` Berlim, então você pode usar uma consulta para retornar detalhes da variação.
 
 **Exemplo de consulta**
 
@@ -368,7 +366,7 @@ Se você criar uma nova variação chamada &quot;Centro de Berlim&quot; (`berlin
 
 Se você:
 
-* crie uma variedade de tags, chamadas `Tourism` : `Business`, `City Break`, `Holiday`
+* criar várias tags, chamadas `Tourism` : `Business`, `City Break`, `Holiday`
 * e atribuí-los à variação Principal de vários `City` instâncias
 
 Em seguida, você pode usar uma consulta para retornar detalhes do `name` e `tags`de todas as entradas marcadas como Quebras de cidade na variável `city`esquema.
@@ -546,7 +544,7 @@ query {
 
 ### Exemplo de consulta - Todas as pessoas com o nome de &quot;Jobs&quot; ou &quot;Smith&quot; {#sample-all-persons-jobs-smith}
 
-Isso filtrará todas as `persons` para qualquer uma que tenha o nome `Jobs` ou `Smith`.
+Uma consulta que filtra tudo `persons` para qualquer uma que tenha o nome `Jobs`ou `Smith`.
 
 **Exemplo de consulta**
 
@@ -600,7 +598,7 @@ query {
 
 ### Exemplo de consulta - Todas as pessoas que não tenham o nome &quot;Jobs&quot; {#sample-all-persons-not-jobs}
 
-Isso filtrará todas as `persons` para qualquer uma que tenha o nome `Jobs` ou `Smith`.
+Uma consulta que filtra tudo `persons` para qualquer uma que tenha o nome `Jobs`ou `Smith`.
 
 **Exemplo de consulta**
 
@@ -710,7 +708,7 @@ query {
 }
 ```
 
-### Exemplo de consulta - todas as cidades localizadas na Alemanha ou na Suíça com população entre 400.000 e 999.999 {#sample-all-cities-d-ch-population}
+### Exemplo de consulta - todas as cidades na Alemanha ou na Suíça com população entre 400.000 e 999.999 {#sample-all-cities-d-ch-population}
 
 Aqui, uma combinação de campos é filtrada. Um `AND` (implícito) é usado para selecionar o intervalo `population`, enquanto um `OR` (explícito) é usado para selecionar as cidades necessárias.
 
@@ -1154,15 +1152,14 @@ query {
 
 ## Exemplo de consulta usando o projeto WKND {#sample-queries-using-wknd-project}
 
-Esses exemplos de consultas são baseadas no projeto WKND. Isso tem:
+Esses exemplos de consultas são baseadas no projeto WKND. Ele tem o seguinte:
 
 * Modelos de fragmentos de conteúdo disponíveis em:
-   `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
+  `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
 
 * Fragmentos de conteúdo (e outro conteúdo) disponíveis em:
-   `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
-
-   `http://<hostname>:<port>/assets.html/content/dam/wknd-shared/en`
+  `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
+  `http://<hostname>:<port>/assets.html/content/dam/wknd-shared/en`
 
 >[!NOTE]
 >
@@ -1259,7 +1256,7 @@ Esta consulta interroga:
 Este exemplo de consulta interroga:
 
 * por um único Fragmento de conteúdo do tipo `article` em um caminho específico
-   * dentro desse conteúdo, todos os formatos de conteúdo:
+   * nesse fragmento, todos os formatos de conteúdo:
       * HTML
       * Markdown
       * Texto sem formatação
@@ -1318,7 +1315,7 @@ Este exemplo de consulta interroga:
 Esta consulta interroga:
 
 * por um único Fragmento de conteúdo do tipo `article` em um caminho específico
-   * dentro disso, o caminho e o autor do fragmento referenciado (aninhado)
+   * nesse fragmento, o caminho e o autor do fragmento referenciado (aninhado)
 
 >[!NOTE]
 >
@@ -1449,7 +1446,7 @@ A consulta a seguir retorna todas as referências de conteúdo usando `_referenc
 
 #### Exemplo de consulta para vários Fragmentos de conteúdo com anexos {#sample-wknd-multiple-fragments-attachments}
 
-A consulta a seguir retorna todos os `attachments` - um campo específico (subgrupo) de tipo `content-reference`:
+A consulta a seguir retorna todas as `attachments` - um campo específico (subgrupo) de tipo `content-reference`:
 
 >[!NOTE]
 >
@@ -1541,7 +1538,7 @@ Esta consulta interroga:
 Esta consulta interroga:
 
 * por um único Fragmento de conteúdo do tipo `author` em um caminho específico
-   * dentro disso, os dados relativos à variação: `another`
+   * nesse fragmento, os dados relativos à variação: `another`
 
 **Exemplo de consulta**
 
@@ -1567,7 +1564,7 @@ Esta consulta interroga:
 
 >[!NOTE]
 >
->Isso demonstrará o fallback dos fragmentos de conteúdo que não têm uma [Variação](/help/headless/graphql-api/content-fragments.md#variations) do nome especificado.
+>Essa consulta demonstra o fallback para Fragmentos de conteúdo que não têm um [Variação](/help/headless/graphql-api/content-fragments.md#variations) do nome especificado.
 
 **Exemplo de consulta**
 
@@ -1808,7 +1805,7 @@ Os exemplos de consultas são baseados na seguinte estrutura, que usa:
 
 ### Exemplos de Modelos de fragmento de conteúdo (esquemas) {#sample-content-fragment-models-schemas}
 
-Para o exemplo de consultas, usaremos os seguintes Modelos de conteúdo e suas interrelações (referências ->):
+Para o exemplo de consultas, você usa os seguintes modelos de conteúdo e suas interrelações (referências ->):
 
 * [Empresa](#model-company)
 -> [Pessoa](#model-person)
@@ -1822,7 +1819,7 @@ Os campos básicos que definem a empresa são:
 
 | Nome do campo | Tipo de dados | Referência |
 |--- |--- |--- |
-| Nome da empresa | Texto em linha única |  |
+| Nome da empresa | Texto em linha única | |
 | CEO | Referência do fragmento (único) | [Pessoa](#model-person) |
 | Empregados | Referência do fragmento (vários campos) | [Pessoa](#model-person) |
 
@@ -1832,8 +1829,8 @@ Os campos que definem uma pessoa, que também pode ser um funcionário:
 
 | Nome do campo | Tipo de dados | Referência |
 |--- |--- |--- |
-| Nome | Texto em linha única |  |
-| Nome | Texto em linha única |  |
+| Nome | Texto em linha única | |
+| Nome | Texto em linha única | |
 | Prêmios | Referência do fragmento (vários campos) | [Prêmio](#model-award) |
 
 #### Prêmio {#model-award}
@@ -1842,8 +1839,8 @@ Os campos que definem um prêmio são:
 
 | Nome do campo | Tipo de dados | Referência |
 |--- |--- |--- |
-| Atalho/ID | Texto em linha única |  |
-| Título | Texto em linha única |  |
+| Atalho/ID | Texto em linha única | |
+| Título | Texto em linha única | |
 
 #### Cidade {#model-city}
 
@@ -1851,10 +1848,10 @@ Os campos para definir uma cidade são:
 
 | Nome do campo | Tipo de dados | Referência |
 |--- |--- |--- |
-| Nome | Texto em linha única |  |
-| País | Texto em linha única |  |
-| População | Número |  |
-| Categorias | Tags |  |
+| Nome | Texto em linha única | |
+| País | Texto em linha única | |
+| População | Número | |
+| Categorias | Tags | |
 
 ### Exemplos de Fragmentos de conteúdo {#sample-content-fragments}
 
@@ -1872,14 +1869,14 @@ Os fragmentos a seguir são usados para o modelo apropriado.
 
 | Nome | Nome | Prêmios |
 |--- |--- |--- |
-| Lincoln | Abe |  |
-| Smith | Adam |  |
+| Lincoln | Abe | |
+| Smith | Adam | |
 | Slade | Cutter | Gameblitz<br>Gamestar |
-| Marsh | Duke |  |
-| Smith | Joe |  |
+| Marsh | Duke | |
+| Smith | Joe | |
 | Croft | Lara | Gamestar |
 | Caulfield | Max | Gameblitz |
-| Tarefas | Steve |  |
+| Tarefas | Steve | |
 
 #### Prêmio {#fragment-award}
 

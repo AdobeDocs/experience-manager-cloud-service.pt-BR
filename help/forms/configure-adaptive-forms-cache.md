@@ -1,17 +1,15 @@
 ---
 title: Configurar cache adaptável do Forms
-seo-title: Configure Adaptive Forms cache
 description: O cache Adaptive Forms foi projetado especificamente para Forms adaptável e documentos. Ele armazena em cache documentos adaptáveis do Forms e do com o objetivo de reduzir o tempo necessário para renderizar um formulário ou documento adaptável no cliente.
-seo-description: The Adaptive Forms cache is designed specifically for Adaptive Forms and documents. It caches Adaptive Forms and adaptive documents with the objective of reducing the time required to render an Adaptive Form or document on the client.
 uuid: ba8f79fd-d8dc-4863-bc0d-7c642c45505c
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 9fa6f761-58ca-4cd0-8992-b9337dc1a279
 docset: aem65
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '962'
 ht-degree: 1%
 
 ---
@@ -25,7 +23,7 @@ Um cache é um mecanismo para reduzir os tempos de acesso aos dados, reduzir a l
 
 1. Vá para o gerenciador de configuração do console da Web do AEM em `https://[server]:[port]/system/console/configMgr`.
 1. Clique em **[!UICONTROL Configuração do canal da Web do formulário adaptável e da comunicação interativa]** para editar os valores de configuração.
-1. No [!UICONTROL editar valores de configuração] especificar o número máximo de formulários ou documentos que uma instância do AEM [!DNL Forms] o servidor pode armazenar em cache no **[!UICONTROL Número de Forms adaptáveis]** campo. O valor padrão é 100.
+1. No [!UICONTROL editar valores de configuração] especificar o número máximo de formulários ou documentos para uma instância do AEM [!DNL Forms Server] pode armazenar em cache no **[!UICONTROL Número de Forms adaptáveis]** campo. O valor padrão é 100.
 
    >[!NOTE]
    >
@@ -38,7 +36,7 @@ Um cache é um mecanismo para reduzir os tempos de acesso aos dados, reduzir a l
 Seu ambiente está configurado para usar o Forms adaptável em cache e ativos relacionados.
 
 
-## (Opcional) Configurar o cache do formulário adaptável no dispatcher {#configure-the-cache}
+## (Opcional) Configurar o cache do formulário adaptável no Dispatcher {#configure-the-cache}
 
 Você também pode configurar o armazenamento em cache do formulário adaptável no Dispatcher para aumentar ainda mais o desempenho.
 
@@ -47,22 +45,22 @@ Você também pode configurar o armazenamento em cache do formulário adaptável
 * Ativar o [mesclar ou preencher previamente os dados no cliente](prepopulate-adaptive-form-fields.md#prefill-at-client) opção. Ele ajuda a mesclar dados exclusivos para cada instância de um formulário pré-preenchido.
 * [Ativar agente de limpeza para cada instância de publicação](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=en#invalidating-dispatcher-cache-from-a-publishing-instance). Ele ajuda a obter melhor desempenho de cache do Adaptive Forms. O URL padrão dos agentes de limpeza é `http://[server]:[port]]/etc/replication/agents.publish/flush.html`.
 
-### Considerações para armazenamento em cache do Adaptive Forms em um dispatcher {#considerations}
+### Considerações para armazenamento em cache do Adaptive Forms em um Dispatcher {#considerations}
 
 * Ao usar o cache do Adaptive Forms, use o AEM [!DNL Dispatcher] para armazenar em cache bibliotecas de clientes (CSS e JavaScript) de um Formulário adaptável.
 * Ao desenvolver componentes personalizados, no servidor usado para desenvolvimento, mantenha o cache Adaptive Forms desativado.
-* Os URLs sem extensão não são armazenados em cache. Por exemplo, URL com padrão`/content/forms/[folder-structure]/[form-name].html` são armazenados em cache e o armazenamento em cache ignora URLs com padrão `/content/dam/formsanddocument/[folder-name]/<form-name>/jcr:content`. Portanto, use URLs com extensões para aproveitar os benefícios do armazenamento em cache.
+* Os URLs sem extensão não são armazenados em cache. Por exemplo, URL com padrão `/content/forms/[folder-structure]/[form-name].html` são armazenados em cache e o armazenamento em cache ignora URLs com padrão `/content/dam/formsanddocument/[folder-name]/<form-name>/jcr:content`. Portanto, use URLs com extensões para aproveitar os benefícios do armazenamento em cache.
 * Considerações para o Forms adaptável localizado:
    * Usar formato de URL `http://host:port/content/forms/af/<afName>.<locale>.html` para solicitar uma versão localizada de um Formulário adaptável em vez de `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`
    * Desativar usando localidade do navegador <!-- [Disable using browser locale](supporting-new-language-localization.md#how-localization-of-adaptive-form-works) -->para URLs com formato `http://host:port/content/forms/af/<adaptivefName>.html`.
-   * Quando você usa o formato de URL `http://host:port/content/forms/af/<adaptivefName>.html`, e **[!UICONTROL Usar localidade do navegador]** no gerenciador de configurações estiver desativado, a versão não localizada do Formulário adaptável será fornecida. O idioma não localizado é o idioma usado ao desenvolver o Formulário adaptável. A localidade configurada para seu navegador (localidade do navegador) não é levada em consideração e uma versão não localizada do Formulário adaptável é fornecida.
+   * Quando você usa o formato de URL `http://host:port/content/forms/af/<adaptivefName>.html`, e **[!UICONTROL Usar localidade do navegador]** no gerenciador de configurações estiver desativado, a versão não localizada do Formulário adaptável será fornecida. O idioma não localizado é o idioma usado ao desenvolver o Formulário adaptável. A localidade configurada para seu navegador (localidade do navegador) não é considerada e uma versão não localizada do Formulário adaptável é fornecida.
    * Quando você usa o formato de URL `http://host:port/content/forms/af/<adaptivefName>.html`, e **[!UICONTROL Usar localidade do navegador]** no gerenciador de configurações estiver ativado, uma versão localizada do Formulário adaptável será fornecida, se disponível. O idioma do Formulário adaptável localizado se baseia no local configurado para seu navegador (local do navegador). Pode levar a [armazenamento em cache somente da primeira instância de um Formulário adaptável]. Para evitar que o problema ocorra na sua instância, consulte [solução de problemas](#only-first-insatnce-of-adptive-forms-is-cached).
 
-### Ativar o armazenamento em cache no dispatcher
+### Ativar o cache no Dispatcher
 
-Execute as etapas listadas abaixo para ativar e configurar o armazenamento em cache do Adaptive Forms no dispatcher:
+Execute as etapas listadas abaixo para habilitar e configurar o armazenamento em cache do Adaptive Forms no Dispatcher:
 
-1. Abra o seguinte URL para cada instância de publicação de seu ambiente e configure o agente de replicação:
+1. Abra o seguinte URL para cada instância de publicação do seu ambiente e configure o agente de replicação:
    `http://[server]:[port]]/etc/replication/agents.publish/flush.html`
 
 1. [Adicione o seguinte ao arquivo dispatcher.any](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#automatically-invalidating-cached-files):
@@ -93,7 +91,7 @@ Execute as etapas listadas abaixo para ativar e configurar o armazenamento em ca
 
    * Um formulário adaptável permanece no cache até que uma versão atualizada do formulário não seja publicada.
 
-   * Quando uma versão mais recente do recurso referenciado em um Formulário adaptável é publicada, o Forms adaptável afetado é invalidado automaticamente. Há algumas exceções à invalidação automática de recursos referenciados. Para obter uma solução alternativa para exceções, consulte [solução de problemas](#troubleshooting) seção.
+   * Quando uma versão mais recente do recurso referenciado em um Formulário adaptável é publicada, o Formulário adaptável afetado é invalidado automaticamente. Há algumas exceções à invalidação automática de recursos referenciados. Para obter uma solução alternativa para exceções, consulte [solução de problemas](#troubleshooting) seção.
 1. [Adicione o arquivo de regras dispatcher.any abaixo ou um arquivo de regras personalizado](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-documents-to-cache). Ela exclui os URLs que não oferecem suporte ao armazenamento em cache. Por exemplo, Comunicação interativa.
 
    ```JSON
@@ -128,39 +126,37 @@ Execute as etapas listadas abaixo para ativar e configurar o armazenamento em ca
       }
    ```
 
-Seu ambiente AEM está configurado para armazenar em cache o Adaptive Forms. Ele armazena em cache todos os tipos de Forms adaptável. Se você tiver um requisito para verificar as permissões de acesso do usuário para uma página antes de entregar a página em cache, consulte [armazenamento em cache de conteúdo protegido](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=pt-BR).
+Seu ambiente AEM está configurado para armazenar em cache o Adaptive Forms. Ele armazena em cache todos os tipos de Forms adaptável. Se você precisar verificar as permissões de acesso do usuário para uma página antes de entregar a página em cache, consulte [armazenamento em cache de conteúdo protegido](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=pt-BR).
 
 ## Resolução de problemas {#troubleshooting}
 
-### Alguns Forms adaptáveis contendo imagens ou vídeos não são invalidados automaticamente do cache do dispatcher {#videos-or-images-not-auto-invalidated}
+### Alguns Forms adaptáveis contendo imagens ou vídeos não são invalidados automaticamente do cache do Dispatcher {#videos-or-images-not-auto-invalidated}
 
 #### Problema {#issue1}
 
-Ao selecionar e adicionar imagens ou vídeos por meio do navegador de ativos a um Formulário adaptável e essas imagens e vídeos forem editados no editor de ativos, o Forms adaptável que contém essas imagens não é invalidado do cache do dispatcher automaticamente.
+Ao selecionar e adicionar imagens ou vídeos por meio do navegador de ativos a um Formulário adaptável e eles forem editados no editor de ativos, esses ativos não são invalidados automaticamente do cache do Dispatcher.
 
 #### Solução {#Solution1}
 
 Após a publicação das imagens e do vídeo, cancele explicitamente a publicação e publique o Forms adaptável que faz referência a esses ativos.
 
-### Alguns Forms adaptáveis que contêm fragmento de conteúdo ou fragmentos de experiência não são invalidados automaticamente do cache do dispatcher {#content-or-experience-fragment-not-auto-invalidated}
+### Alguns Forms adaptáveis que contêm fragmento de conteúdo ou fragmentos de experiência não são invalidados automaticamente do cache do Dispatcher {#content-or-experience-fragment-not-auto-invalidated}
 
 #### Problema {#issue2}
 
-Quando você adiciona um fragmento de conteúdo ou um fragmento de experiência a um Formulário adaptável e esses ativos são editados e publicados de forma independente, o Forms adaptável que contém esses ativos não é invalidado do cache do Dispatcher automaticamente.
+Quando você adiciona um fragmento de conteúdo ou um Fragmento de experiência a um Formulário adaptável e esses ativos são editados e publicados de forma independente, o Forms adaptável que contém esses ativos não é invalidado do cache do Dispatcher automaticamente.
 
 #### Solução {#Solution2}
 
-Depois de publicar um fragmento de conteúdo ou fragmento de experiência atualizado, desfaça explicitamente a publicação e publique o Forms adaptável que usa esses ativos.
+Depois de publicar um fragmento de conteúdo ou fragmento de experiência atualizado, cancele explicitamente a publicação e publique o Forms adaptável que usa esses ativos.
 
 ### Somente a primeira instância de um formulário adaptável é armazenada em cache{#only-first-insatnce-of-adptive-forms-is-cached}
 
 #### Problema {#issue3}
 
-Quando a URL do formulário adaptável não tiver informações de localização e **[!UICONTROL Usar localidade do navegador]** no gerenciador de configurações estiver ativado, uma versão localizada do Formulário adaptável será fornecida e somente a primeira instância do Formulário adaptável será armazenada em cache e entregue a cada usuário subsequente.
+Quando a URL do formulário adaptável não tiver informações de localização e **[!UICONTROL Usar localidade do navegador]** no gerenciador de configurações está habilitado. Uma versão localizada do Formulário adaptável é fornecida e somente a primeira instância do Formulário adaptável é armazenada em cache e entregue a cada usuário subsequente.
 
 #### Solução {#Solution3}
-
-Execute as seguintes etapas para resolver o problema:
 
 1. Abra o arquivo conf.d/httpd-dispatcher.conf ou qualquer outro arquivo de configuração configurado para ser carregado no tempo de execução.
 
