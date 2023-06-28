@@ -2,10 +2,10 @@
 title: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: fd0b8ca281f35a92876f3c31baa4e17884f23948
+source-git-commit: f0dc0e0ccd196ab748e2bfcdb4ce404c1c91c213
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 41%
+source-wordcount: '604'
+ht-degree: 20%
 
 ---
 
@@ -22,6 +22,7 @@ A Ativação de recursos 2023.7.0 fornecerá o conjunto completo de recursos par
 ### Aprimoramentos {#enhancements-12441}
 
 - SITES-8769: Melhorar chamadas StyleImpl em ResponsiveGrid
+- FORMS-5054: adição de suporte para todos os [estátuas](https://opensource.adobe.com/acrobat-sign/acrobat_sign_events/webhookeventsagreements.html) com suporte da Adobe Sign.
 
 ### Problemas corrigidos {#fixed-issues-12441}
 
@@ -37,6 +38,21 @@ A Ativação de recursos 2023.7.0 fornecerá o conjunto completo de recursos par
 - SITES-13559: MSM: exceção &quot;Não é modificável&quot; lançada ao implantar o componente
 - SITES-11757: MSM: herdar a configuração de implantação do Pai não é revertido para páginas filhas
 - SITES-14073: Administrador de sites: o relatório CSV falha com 500 ao selecionar nenhuma propriedade para exportar
+- FORMS-7648: a validação do campo Número máximo de dígitos não funciona para o componente de Caixa numérica.
+- FORMS-8177: quando o serviço do Forms está ativo, o erro &quot;com.adobe.aem.formsndocuments.publish.AssetReferenceProvider falhou ao recuperar dependências de ativos&quot; encontra.
+- FORMS-8300: quando um usuário tenta delegar uma tarefa após abri-la, a resposta do delegado recarrega a tarefa, em vez de abrir a interface de entrada AEM do usuário.
+- FORMS-8500: No navegador Microsoft® Edge com a opção Modo IE ativada, o HTML5 Forms não abre.
+- FORMS-8541: Ao renderizar um Forms adaptável, ocorre uma exceção de ponteiro nulo.
+- FORMS-8964: quando um formulário é aberto em um dispositivo Android™ no Google Chrome ou Mozilla Firefox, o texto inserido no componente Caixa de texto não pode ser removido.
+- FORMS-9026: Quando um usuário cria um Formulário adaptável com base em um esquema JSON complexo e válido, arrasta os campos de esquema JSON relacionados para o Editor Forms adaptável para criar campos do Forms adaptável e atualiza a janela Editor Forms adaptável, todos os campos são excluídos e o editor Forms adaptável aparece em branco.
+- FORMS-9263: quando o texto de exibição de uma opção de caixa de seleção contém um caractere especial, os usuários não podem marcar essas caixas de seleção.
+- FORMS-8668: ao renderizar uma Visualização de PDF de um formulário, alguns despejos de pilha do Java™ não necessários são exibidos nos logs de erro. No entanto, não há problemas ao renderizar o formulário.
+- FORMS-8116: quando as regras são aplicadas ao componente de Contêiner adaptável do Forms, as regras aplicadas não são salvas.
+- FORMS-7906: quando um Formulário adaptável é adicionado a um componente de Contêiner do AEM Sites, o editor de regras não é aberto.
+- FORMS-8846: a propriedade de referência Vincular não funciona para o componente de anexos adaptáveis do Forms.
+- FORMS-9072: Ao pesquisar um Esquema ao criar um fragmento de formulário, o resultado da pesquisa não retorna nenhum esquema para seleção.
+- FORMS: correção de vários bugs relacionados à acessibilidade para melhorar a acessibilidade dos recursos do AEM Forms.
+
 
 ### Problemas conhecidos {#known-issues-12441}
 
