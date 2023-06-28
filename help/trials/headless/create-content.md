@@ -4,10 +4,10 @@ description: Use o modelo de fragmento de conteúdo criado anteriormente para cr
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 95%
+source-wordcount: '657'
+ht-degree: 83%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 95%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content"
 >title="Criar novo conteúdo"
->abstract="Usando o modelo que criou no módulo anterior, você aprenderá a criar conteúdo que pode ser usado para a criação de páginas ou como a base do seu conteúdo headless."
+>abstract="Usando o modelo criado no módulo anterior, você aprenderá a criar conteúdo que pode ser usado para criação de página ou como a base do seu conteúdo headless."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide"
@@ -33,7 +33,7 @@ ht-degree: 95%
 
 Os fragmentos de conteúdo representam o conteúdo headless e são baseados em estruturas predefinidas, chamadas de modelos de fragmento de conteúdo. Você já criou um modelo em um módulo anterior.
 
-Neste módulo, você criará um novo Fragmento de conteúdo com base nesse modelo, usando o console de Fragmentos de conteúdo. Pense no console de fragmentos de conteúdo como uma biblioteca de conteúdo headless. Use-o para criar novos fragmentos de conteúdo e gerenciar fragmentos existentes.
+Neste módulo, você cria um novo fragmento de conteúdo com base nesse modelo usando o console de Fragmentos de conteúdo. Pense no console de fragmentos de conteúdo como uma biblioteca de conteúdo headless. Use-o para criar novos fragmentos de conteúdo e gerenciar fragmentos existentes.
 
 1. Toque ou clique no botão **Criar** na parte superior direita do console.
 
@@ -49,11 +49,11 @@ Neste módulo, você criará um novo Fragmento de conteúdo com base nesse model
 
 >[!TIP]
 >
->Dependendo das configurações do seu navegador, a nova guia do navegador pode ser suprimida por um bloqueador de pop-up. Se o novo fragmento não abrir depois de clicar em **Criar e abrir**, verifique as configurações do seu navegador.
+>Dependendo das configurações do seu navegador, a nova guia do navegador pode ser suprimida por um bloqueador de pop-up. Se o novo fragmento não abrir depois de clicar em **Criar e abrir**, verifique as configurações do navegador.
 
 ## Adicionar conteúdo ao fragmento de conteúdo {#add-content}
 
-Depois de salvar e abrir o novo fragmento de conteúdo, o editor de fragmentos de conteúdo será aberto em uma nova guia. Aqui, é possível adicionar o conteúdo do novo fragmento.
+Depois de salvar e abrir o novo fragmento de conteúdo, o editor de fragmento de conteúdo é aberto em uma nova guia. Aqui, é possível adicionar o conteúdo do novo fragmento.
 
 1. O editor de fragmentos de conteúdo mostra os campos definidos no modelo selecionado. Aqui, é possível adicionar conteúdo a cada campo para concluir o fragmento de conteúdo. Seu progresso é salvo automaticamente.
 
