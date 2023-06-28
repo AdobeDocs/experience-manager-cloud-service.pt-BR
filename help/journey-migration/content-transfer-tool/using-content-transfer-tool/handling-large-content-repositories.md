@@ -2,9 +2,9 @@
 title: Lidar com grandes repositórios de conteúdo
 description: Esta seção descreve a manipulação de grandes repositórios de conteúdo
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1816'
+source-wordcount: '1813'
 ht-degree: 6%
 
 ---
@@ -117,7 +117,7 @@ Seu arquivo azcopy.config deve incluir as seguintes propriedades (certifique-se 
 
 >[!NOTE]
 >
-> Se você preferir não conceder acesso de gravação ao contêiner de armazenamento de blob existente, poderá gerar um novo URI SAS que tem somente permissões de Leitura e Lista.
+> Se você não quiser conceder acesso de gravação ao contêiner de armazenamento de blobs existente, poderá gerar um novo URI SAS que tenha somente permissões de Leitura e Lista.
 
 ```
 azCopyPath=/usr/bin/azcopy
@@ -209,7 +209,7 @@ Consulte a lista &quot;Tarefas de assimilação&quot; no Cloud Acceleration Mana
 *************** Beginning AzCopy pre-copy phase ***************
 INFO: Scanning...
 INFO: Failed to create one or more destination container(s). Your transfers may still succeed if the container already exists.
-INFO: Any empty folders will not be processed, because source and/or destination doesn't have full folder support
+INFO: Any empty folders will not be processed, because source and/or destination does not have full folder support
 INFO: azcopy: A newer version 10.11.0 is available to download
  
 Job 419d98da-fc05-2a45-70cc-797fee632031 has started

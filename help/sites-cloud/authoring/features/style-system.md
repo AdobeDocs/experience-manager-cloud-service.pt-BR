@@ -2,9 +2,9 @@
 title: Sistema de estilos
 description: O sistema de estilos permite ao autor do modelo definir classes de estilo na política de conteúdo de um componente para que autores de conteúdo possam selecioná-las ao editarem o componente em uma página. Esses estilos podem ser variações visuais alternativas de um componente, tornando-o mais flexível.
 exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1319'
+source-wordcount: '1320'
 ht-degree: 59%
 
 ---
@@ -26,7 +26,7 @@ O Sistema de estilos fornece uma solução unificada para os requisitos do autor
 * Os autores dos modelos podem definir classes de estilo na política de conteúdo dos componentes.
 * Os autores de conteúdo podem selecionar essas classes em uma lista suspensa ao editar o componente em uma página para que possam aplicar os estilos correspondentes.
 
-A classe de estilo é então inserida no elemento wrapper de decoração do componente para que o desenvolvedor do componente não precise se preocupar com a manipulação de estilos, além de fornecer suas regras de CSS.
+A classe de estilo é então inserida no elemento wrapper de decoração do componente para que o desenvolvedor do componente não precise se preocupar com a manipulação de estilos, além de fornecer suas regras CSS.
 
 ## Visão geral {#overview}
 
@@ -46,7 +46,7 @@ O uso do Sistema de estilos geralmente funciona da seguinte maneira.
 
 1. O autor da página do AEM pode escolher os estilos criados no editor de páginas no menu de estilo da barra de ferramentas do componente.
 
-Observe que apenas as três últimas etapas são realizadas no AEM. Isso significa que todo o desenvolvimento do CSS e do Javascript necessários pode ser feito sem AEM.
+Observe que apenas as três últimas etapas são realizadas no AEM. Isso significa que todo o desenvolvimento do CSS e do JavaScript necessários pode ser feito sem AEM.
 
 Na verdade, a implementação de estilos requer apenas a implantação no AEM e a seleção nos componentes dos modelos desejados.
 
@@ -104,7 +104,7 @@ Se você desejar usar o Sistema de estilos em seus próprios componentes, faça 
 
 >[!CAUTION]
 >
->As classes CSS - e qualquer Javascript necessário - configuradas como propriedades de estilo da política de um componente, devem ser implantadas como [Bibliotecas de clientes](/help/implementing/developing/introduction/clientlibs.md) para trabalhar.
+>As classes CSS - e qualquer JavaScript necessário - configuradas como propriedades de estilo da política de um componente, devem ser implantadas como [Bibliotecas de clientes](/help/implementing/developing/introduction/clientlibs.md) para trabalhar.
 
 ## Configurar {#setup}
 

@@ -4,10 +4,10 @@ description: Saiba como preparar conteúdo para tradução.
 feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '768'
-ht-degree: 100%
+source-wordcount: '765'
+ht-degree: 95%
 
 ---
 
@@ -17,7 +17,7 @@ Sites multilíngues geralmente fornecem alguma quantidade de conteúdo em vário
 
 >[!TIP]
 >
->Se você é novo na tradução de conteúdo, consulte nossa [Jornada de tradução de sites,](/help/journey-sites/translation/overview.md) que oferece um guia para a tradução de conteúdo do AEM Sites usando as ferramentas de tradução avançadas do AEM, ideais para aqueles sem experiência com o AEM ou tradução.
+>Se você é novo na tradução de conteúdo, consulte [Jornada de tradução de sites,](/help/journey-sites/translation/overview.md) que é um caminho guiado pela tradução de conteúdo do AEM Sites usando ferramentas de tradução poderosas do AEM, ideais para aqueles sem experiência com o AEM ou com tradução.
 
 O [site do tutorial do WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) inclui várias ramificações de idioma e usa a seguinte estrutura:
 
@@ -92,7 +92,7 @@ O AEM fornece um painel de **Referências** que mostra uma lista de raízes de i
 
 ![Raízes de idioma](../assets/language-roots.png)
 
-Use o procedimento a seguir para exibir as cópias de idioma de uma página usando o [seletor do painel.](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
+Use o procedimento a seguir para exibir as cópias de idioma de uma página usando o [seletor do painel](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
 
 1. No console de Sites, selecione uma página do site e clique ou toque em **Referências**.
 

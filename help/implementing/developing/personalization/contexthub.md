@@ -2,16 +2,16 @@
 title: ContextHub
 description: O ContextHub é uma estrutura para armazenar, manipular e apresentar dados de contexto
 exl-id: 604477c6-d96a-441f-b5fc-5def93832478
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '289'
 ht-degree: 1%
 
 ---
 
 # ContextHub {#contexthub}
 
-O ContextHub é uma estrutura para armazenar, manipular e apresentar dados de contexto. Seu recurso principal é oferecer a capacidade de [exibir dados de contexto ao simular e alternar entre várias personalidades.](/help/sites-cloud/authoring/personalization/contexthub.md)
+O ContextHub é uma estrutura para armazenar, manipular e apresentar dados de contexto. Seu recurso principal é oferecer a capacidade de [exibir dados de contexto ao simular e alternar entre várias personas](/help/sites-cloud/authoring/personalization/contexthub.md).
 
 O ContextHub permite:
 
@@ -35,15 +35,15 @@ Os desenvolvedores precisam [adicionar o componente ContextHub à página](confi
 
 ## Persistência {#persistence}
 
-O ContextHub armazena dados de contexto persistentes no cliente. A API do Javascript do ContextHub permite acessar armazenamentos para criar, atualizar e excluir dados conforme necessário. Dessa forma, o ContextHub representa uma camada de dados em suas páginas.
+O ContextHub armazena dados de contexto persistentes no cliente. A API do JavaScript do ContextHub permite acessar armazenamentos para criar, atualizar e excluir dados conforme necessário. Dessa forma, o ContextHub representa uma camada de dados em suas páginas.
 
 Cada armazenamento do ContextHub é uma instância de um tipo de armazenamento predefinido:
 
 * O ContextHub fornece vários [tipos de loja de amostra](sample-stores.md).
 * Use os consoles AEM para [criar lojas](configuring-contexthub.md#creating-a-contexthub-store).
 * Os desenvolvedores podem [criar tipos de loja personalizados](extending-contexthub.md#creating-custom-store-candidates).
-* Os desenvolvedores podem [acessar dados da loja](adding-contexthub.md#interacting-with-contexthub-stores) via JavaScript.
+* Os desenvolvedores podem [acessar dados da loja](adding-contexthub.md#interacting-with-contexthub-stores) por meio do JavaScript.
 
 ## Segmentação {#segmentation}
 
-O ContextHub inclui um mecanismo de segmentação que gerencia segmentos e determina quais segmentos são resolvidos para o contexto atual. Vários segmentos estão definidos. Você pode usar a API do Javascript para [determinar segmentos resolvidos](adding-contexthub.md#determining-resolved-contexthub-segments).
+O ContextHub inclui um mecanismo de segmentação que gerencia segmentos e determina quais segmentos são resolvidos para o contexto atual. Vários segmentos estão definidos. Você pode usar a API do JavaScript para [determinar segmentos resolvidos](adding-contexthub.md#determining-resolved-contexthub-segments).

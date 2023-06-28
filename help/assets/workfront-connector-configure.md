@@ -4,7 +4,7 @@ description: Configurar o [!DNL Workfront for Experience Manager enhanced connec
 role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: ff36f2dada09d8f46835dc0fbac8d0fe6707fa19
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1767'
 ht-degree: 0%
@@ -68,7 +68,7 @@ Para se inscrever nos eventos, siga estas etapas:
 1. Status do projeto: selecione o status para o qual o projeto deve ser definido para criar a pasta vinculada.
 1. Criar uma pasta vinculada em projetos com portfólio: lista de Portfolio aos quais o projeto deve pertencer para que você possa criar a pasta vinculada. Deixe essa lista vazia para criar a pasta vinculada para todos os portfólios de projetos.
 1. Criar uma pasta vinculada em projetos com campo de formulário personalizado: o campo de formulário personalizado e seu valor correspondente que o projeto deve ter para que você possa criar a pasta vinculada. Essa configuração será ignorada se for deixada vazia. Selecionar `CUSTOM FORMS: Create DAM Linked Folder` para o campo e a entrada `Yes` para o valor.
-1. Clique em Habilitar criação automática de pastas vinculadas. Volte para a guia Inscrições em eventos e você verá que agora há um evento de criação.
+1. Clique em Habilitar criação automática de pastas vinculadas. Volte para a guia Assinaturas de eventos e veja que agora há um evento de criação.
 
 ![configuração de pasta vinculada](/help/assets/assets/wf-linked-folder-config.png)
 

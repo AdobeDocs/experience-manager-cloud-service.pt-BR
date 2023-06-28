@@ -3,10 +3,10 @@ title: Notas de versão do Cloud Manager 2023.6.0 no Adobe Experience Manager as
 description: Estas são as notas de versão do Cloud Manager 2023.6.0 no AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: deef27dd90be22669b2328f6e394b8d3df99b4b9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 33%
+source-wordcount: '237'
+ht-degree: 35%
 
 ---
 
@@ -27,7 +27,7 @@ A data de lançamento do Cloud Manager versão 2023.6.0 no AEM as a Cloud Servic
 
 * Os clientes podem comprar regiões de publicação secundárias adicionais, além da região principal, resultando em benefícios relacionados à latência reduzida e à maior disponibilidade. Observação: certas restrições podem ser aplicadas.
 * Ao criar um novo [programa ou ambiente,](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) o nome agora está restrito a aceitar apenas caracteres alfanuméricos e um conjunto limitado de caracteres especiais.
-* Ao retomar uma [pipeline de produção,](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) uma caixa de diálogo de confirmação agora é exibida na etapa aprovar.
+* Ao retomar um [pipeline de produção,](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) uma caixa de diálogo de confirmação agora será exibida na etapa de aprovação.
 * Para o **[Testes funcionais do cliente](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)** e **[Testes de interface do usuário personalizados](/help/implementing/cloud-manager/ui-testing.md)** etapas do pipeline, um novo `INCOMPLETE` O status agora é possível, o que indica que esses testes não estavam presentes e, portanto, não foram executados.
    * Nesses casos, o pipeline não falha e avança para a próxima etapa.
 

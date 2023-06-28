@@ -2,9 +2,9 @@
 title: Fase de implementação no Cloud Acceleration Manager
 description: Esta página fornece uma visão geral sobre a fase de implementação no Cloud Acceleration Manager.
 exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '665'
+source-wordcount: '662'
 ht-degree: 4%
 
 ---
@@ -63,7 +63,7 @@ Siga esta seção para explorar o cartão de atividade de Refatoração de códi
 >[!NOTE]
 >Revise o conteúdo nessas guias para entender algumas áreas adicionais que não são cobertas pelo Analisador de práticas recomendadas.
 
-A variável **Dispatcher** A guia fornece informações sobre como estruturar as configurações do AEM as a Cloud Service Apache e Dispatcher, bem como validar e executá-lo localmente antes de implantar em ambientes da Nuvem. Também descreve a depuração em ambientes na nuvem.
+A variável **Dispatcher** A guia fornece informações sobre como estruturar as configurações do AEM as a Cloud Service Apache e Dispatcher e como validá-lo e executá-lo localmente antes de implantar em ambientes da nuvem. Também descreve a depuração em ambientes na nuvem.
 
 ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/coderefactoring-2.png)
 

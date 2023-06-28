@@ -2,10 +2,10 @@
 title: Caminho para sua primeira experiência usando o AEM Headless
 description: Nesta parte da jornada de desenvolvedor do AEM Headless, você entenderá as etapas para implementar sua primeira experiência headless no AEM, incluindo considerações de planejamento e práticas recomendadas para facilitar ao máximo o seu percurso.
 exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2013'
-ht-degree: 98%
+source-wordcount: '2012'
+ht-degree: 96%
 
 ---
 
@@ -76,7 +76,7 @@ Os autores de conteúdo criam conteúdo com base nos modelos de conteúdo que fo
 
 Antes de começar a usar o headless no AEM, você precisa garantir que todos os recursos necessários estejam habilitados. Esta seção descreve o que é necessário. As etapas serão mais detalhadas posteriormente na [Jornada do desenvolvedor do AEM Headless.](#overview.md)
 
-Também é possível consultar os [recursos adicionais](#additional-resources) para obter mais informações sobre tópicos individuais.
+Opcionalmente, também é possível visualizar [recursos adicionais](#additional-resources) para obter mais informações sobre tópicos individuais.
 
 ### Configuração {#configuration}
 
@@ -106,7 +106,7 @@ Um projeto headless não é bem-sucedido apenas devido à tecnologia implementad
 * Agrupe os conteúdos semelhantes em uma pasta.
    * É mais provável que um autor de conteúdo copie e cole um conteúdo já existente para criar novo conteúdo. Portanto, realizar esse processo na mesma pasta o torna mais eficiente.
    * O AEM possibilita que os modelos permitidos sejam definidos por pasta, para que o botão **Criar novo** só mostre os modelos compatíveis com esse local.
-* A criação de novos fragmentos de conteúdo no editor de fragmento de conteúdo em linha pode ser simplificada se a pasta raiz estiver definida no modelo. Então o profissional não precisa escolher um local, apenas fornecer um nome, para iniciar a edição da nova referência.
+* A criação de novos fragmentos de conteúdo no editor de fragmento de conteúdo em linha pode ser simplificada se a pasta raiz estiver definida no modelo. Em seguida, o profissional não precisa escolher um local, mas apenas fornecer um nome e pode começar a editar a nova referência.
 
 ### Criar conteúdo {#authoring}
 

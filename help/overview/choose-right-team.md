@@ -2,9 +2,9 @@
 title: Pessoas certas, funções certas
 description: Pessoas certas, funções certas
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '831'
 ht-degree: 80%
 
 ---
@@ -22,7 +22,7 @@ Há chances de que, em sua organização, vários departamentos sejam responsáv
 
 A governança digital começa com a verificação de quem é o responsável pelo que e quem está fazendo qual trabalho digitalmente focado. Talvez seja necessário fazer contratações estratégicas para adicionar as habilidades necessárias. Um desafio ainda maior é conduzir uma mudança de cultura — construir um amplo apoio para a nova tecnologia e ajudar as pessoas a se acostumarem com novas maneiras de fazer as coisas. Uma parte essencial desse esforço é criar uma comunidade digital que permita que as pessoas aprendam e se apoiem mutuamente.
 
-Por enquanto, nos concentraremos em colocar as pessoas certas nos trabalhos certos para ajudar a impulsionar sua implantação do Adobe Experience Manager. Para cada produto principal — Experience Manager Sites e Experience Manager Assets — fornecemos uma lista de funções que você precisará preencher, juntamente com as habilidades, níveis de conhecimento e atributos que tornam as pessoas eficazes nas várias funções.
+Por enquanto, o foco está em colocar as pessoas certas nos trabalhos certos para ajudar a impulsionar a implantação do Adobe Experience Manager. Para cada produto principal — Experience Manager Sites e Experience Manager Assets — o Adobe forneceu uma lista de funções que devem ser preenchidas, juntamente com as habilidades, níveis de conhecimento e atributos que tornam as pessoas eficazes nas várias funções.
 
 Sua atribuição desta semana é revisar ambas as listas com sua equipe de implementação e garantir que você tenha pessoas com qualificações relevantes em cada função.
 
@@ -54,7 +54,7 @@ Agora que você sabe que funções são necessárias, examine o gráfico abaixo 
 
 Do Arquiteto ao ScrumMaster, todas as funções desta equipe são indispensáveis — inclusive o bibliotecário do DAM.
 
-Talvez você já tenha maioria das pessoas necessárias para executar uma implementação bem-sucedida do Adobe Experience Manager Assets. Essa lista é semelhante à do Adobe Experience Manager Sites, com uma adição importante: você precisará de um bibliotecário para garantir que seus ativos digitais sejam organizados e rotulados de forma que sejam fáceis de encontrar.
+Talvez você já tenha maioria das pessoas necessárias para executar uma implementação bem-sucedida do Adobe Experience Manager Assets. Essa lista é semelhante à do Adobe Experience Manager Sites, com uma adição importante: você precisa de um bibliotecário para garantir que seus ativos digitais sejam organizados e rotulados de forma que sejam fáceis de encontrar.
 
 | Função | Habilidades | Nível de capacidade | Qualidades |
 |--- |--- |--- |--- |

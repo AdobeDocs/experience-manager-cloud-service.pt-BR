@@ -2,10 +2,10 @@
 title: Registro, logon e perfil do usuário
 description: Saiba mais sobre registro, logon, dados do usuário e sincronização de grupos no AEM as a Cloud Service
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1168'
-ht-degree: 90%
+source-wordcount: '1167'
+ht-degree: 88%
 
 ---
 
@@ -100,7 +100,7 @@ As informações do perfil do usuário podem ser escritas e lidas de duas maneir
 
 Os dados do usuário final podem ser enviados a fornecedores terceirizados, como CRMs, recuperados por meio de APIs após o logon do usuário no AEM, armazenados (ou atualizados) no nó de perfil do usuário e usados pelo AEM conforme necessário.
 
-É possível obter acesso em tempo real a serviços de terceiros para recuperar atributos de perfil. No entanto, é importante garantir que isso não afete diretamente o processamento de solicitações no AEM.
+É possível obter acesso em tempo real a serviços de terceiros para recuperar atributos de perfil. No entanto, é importante garantir que isso não afete significativamente o processamento de solicitações no AEM.
 
 ## Permissões (grupos de usuários fechados) {#permissions-closed-user-groups}
 

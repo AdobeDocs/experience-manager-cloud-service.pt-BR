@@ -11,9 +11,9 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: 73fe6ce5bbdf0ad437ae4b47b892ad05e016ab68
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2080'
+source-wordcount: '2079'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ Saiba mais sobre o [Coleta de dados Experience Platform](https://experienceleagu
 
 ## Enviar `addToCart` dados do evento para Experience Platform {#send-addtocart-to-aep}
 
-As etapas a seguir mostram como enviar a `addToCart` dados de evento de páginas de produto renderizadas pelo AEM para o Experience Platform usando o Conector CIF - Experience Platform. Usando a extensão de navegador do Adobe Experience Platform Debugger, você pode testar e revisar os dados enviados.
+As etapas a seguir mostram como enviar a `addToCart` dados de evento de páginas de produto renderizadas pelo AEM para o Experience Platform usando o Conector CIF - Experience Platform. Usando a extensão do navegador Adobe Experience Platform Debugger, você pode testar e revisar os dados enviados.
 
 ![Revisar dados do evento addToCart no Adobe Experience Platform Debugger](../assets/aep-integration/EventData-AEM-AEP.png)
 
@@ -382,7 +382,7 @@ Para armazenar os dados do evento, você deve criar um Conjunto de dados que est
 
 - Na nova página, __pesquisar e selecionar__ o schema criado na etapa anterior e clique em __Próxima__ botão.
 
-   ![Criar conjuntos de dados da AEP Selecionar esquema](../assets/aep-integration/AEP-Datasets-Select-Schema.png)
+  ![Criar conjuntos de dados da AEP Selecionar esquema](../assets/aep-integration/AEP-Datasets-Select-Schema.png)
 
 1. Nomeie seu conjunto de dados usando o __Configurar conjunto de dados > Nome__ e clique no botão __Concluir__ botão.
 
@@ -454,7 +454,7 @@ Para acionar o evento, você pode usar o autor de AEM ou o serviço de publicaç
 
 
 
-1. Na interface do produto Experience Platform, navegue até o __Conjuntos de dados > My Demo StoreFront__, no âmbito do __Atividade do conjunto de dados__ guia. Se a variável __Métricas e gráficos__ for ativado, as estatísticas de dados do evento serão exibidas.
+1. Na interface do produto Experience Platform, navegue até a __Conjuntos de dados > My Demo StoreFront__, no âmbito do __Atividade do conjunto de dados__ guia. Se a variável __Métricas e gráficos__ for ativado, as estatísticas de dados do evento serão exibidas.
 
    ![Estatísticas de dados do conjunto de dados Experience Platform](../assets/aep-integration/AEP-Dataset-AddToCart-EventData.png)
 

@@ -2,10 +2,10 @@
 title: Acesso a KPIs
 description: Acesso a KPIs
 exl-id: 8556e0e3-a557-4fd6-9b82-09cb1decff0a
-source-git-commit: 8bd001f6f70ce1aa9a63623b3ad68793fa355c9a
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '539'
-ht-degree: 100%
+source-wordcount: '536'
+ht-degree: 67%
 
 ---
 
@@ -34,21 +34,21 @@ Ao avaliar seus KPIs, verifique se:
 1. O KPI retorna especificamente à solução (Experience Manager).
 1. O KPI está intimamente ligado a uma meta que a equipe executiva considera extremamente importante.
 1. Essa meta oferece suporte direto a um objetivo comercial defendido por pelo menos um executivo do alto escalão.
-1. Você tem os dados da linha de base de que precisará para comparar a situação atual com os resultados que verá após a inicialização do Experience Manager.
+1. Você tem os dados da linha de base para comparar a situação atual com os resultados vistos após o lançamento do Experience Manager.
 1. O KPI rastreará algo que pode ser medido em intervalos regulares.
 
-Depois de confirmar que tem os KPIs certos, você precisará descobrir como e quando irá relatar cada KPI aos participantes relevantes.
+Depois de confirmar que tem os KPIs certos, você deve descobrir como e quando vai relatar cada KPI aos participantes relevantes.
 
 Ao definir seu processo de geração de relatórios, considere as seguintes perguntas:
 
-1. Quem é o público-alvo deste relatório de KPI? Para cada KPI, certifique-se de ter identificado um patrocinador executivo — alguém que irá responsabilizar você e o resto da equipe por essa métrica — bem como uma lista mais ampla de pessoas que devem receber relatórios regulares.
+1. Quem é o público-alvo deste relatório de KPI? Para cada KPI, certifique-se de ter identificado um patrocinador executivo — alguém que possa responsabilizar você e o resto da equipe por essa métrica — e uma lista mais ampla de pessoas que devem receber relatórios regulares.
 1. Com que frequência você informará sobre esse KPI?
 1. Como esse KPI será rastreado? Quem obterá os dados? Quais fontes de dados essa pessoa ou equipe usará? Há algo que você possa fazer agora para tornar esse processo mais fácil?
 1. Qual será o formato do relatório?
 1. Como o relatório será entregue?
 
-Após a inicialização do Experience Manager, um forte conjunto de KPIs rapidamente lhe dará uma ideia sobre se você está no caminho certo. Se você não estiver cumprindo um de seus KPIs, precisará fazer ajustes em como suas equipes estão usando o Experience Manager. Se você rapidamente exceder uma de suas metas de KPI, é algo para comemorar — mas seria interessante recalibrar sua meta para tentar obter um resultado ainda melhor.
+Após o lançamento do Experience Manager, um forte conjunto de KPIs rapidamente lhe dará uma ideia sobre se você está no caminho certo. Se você não estiver cumprindo um de seus KPIs, deverá fazer ajustes em como suas equipes estão usando o Experience Manager. Se você rapidamente exceder uma de suas metas de KPI, é algo para comemorar — mas você deve recalibrar sua meta para tentar obter um resultado ainda melhor.
 
 >[!TIP]
 >
-> Se quiser ajuda adicional com seus KPIs, entre em contato com os [Serviços do Adobe Consulting](https://business.adobe.com/br/customers/consulting-services/main.html) ou com seu parceiro de implementação.
+> Se precisar de ajuda adicional com seus KPIs, entre em contato [Serviços de consultoria Adobe](https://business.adobe.com/br/customers/consulting-services/main.html) ou seu parceiro de implementação.

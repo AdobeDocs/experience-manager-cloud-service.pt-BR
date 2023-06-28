@@ -2,10 +2,10 @@
 title: Jornada de criação rápida de site do AEM
 description: Comece aqui uma jornada guiada através da ferramenta fácil de usar de Criação rápida de sites do AEM para simplificar o desenvolvimento de front-end do seu site e personalizá-lo rapidamente sem nenhum conhecimento de back-end no AEM.
 exl-id: b8218232-0298-4b16-9dab-fa59be592a24
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1035'
-ht-degree: 91%
+source-wordcount: '1034'
+ht-degree: 87%
 
 ---
 
@@ -65,7 +65,7 @@ Muitos tópicos serão explorados nesta jornada. Os artigos a seguir fornecem co
 
 Agora você está pronto para começar a usar a jornada de Criação rápida de sites da Adobe.
 
-* Se você for um administrador do AEM ou do Cloud Manager; se ocupa ambas as funções de desenvolvedor de front-end e de administrador; ou se quiser apenas entender o processo do AEM de ponta a ponta, comece no início da jornada com [Entenda o Cloud Manager](cloud-manager.md), disponível abaixo.
+* Se você for um administrador do AEM ou do Cloud Manager; se ocupa ambas as funções de desenvolvedor de front-end e de administrador; ou se quiser apenas entender o processo do AEM de ponta a ponta, comece no início da jornada com [Entender o Cloud Manager](cloud-manager.md) conforme estabelecido a seguir.
 * Se você for responsável apenas pelo desenvolvimento de front-end e vai interagir com os administradores do AEM e do Cloud Manager, pule diretamente para [Recupere informações de acesso do repositório Git](retrieve-access.md) para obter acesso ao repositório Git do AEM e começar a personalizar.
 * Se você já entende que o AEM Sites e o Cloud Manager trabalham juntos e quer começar diretamente com a configuração, pode [pular diretamente para a criação de um novo site a partir de um modelo.](create-site.md)
 

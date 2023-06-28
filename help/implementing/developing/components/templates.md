@@ -2,7 +2,7 @@
 title: Modelos de páginas
 description: Os modelos de página são usados ao criar uma página que é usada como base para a nova página
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '3294'
 ht-degree: 6%
@@ -197,7 +197,7 @@ Para criar uma nova pasta, faça o seguinte:
 
 ### Usar o navegador de configuração {#using-the-configuration-browser}
 
-1. Ir para **Navegação global** -> **Ferramentas** > [**Navegador de configuração**.](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
+1. Ir para **Navegação global** -> **Ferramentas** > [**Navegador de configuração**](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
    As pastas existentes são listadas à esquerda, incluindo a `global` pasta.
 
@@ -304,7 +304,7 @@ Ao criar um novo modelo, você precisa especificar um tipo de modelo:
 
 * O AEM fornece uma pequena seleção de tipos de modelo prontos para uso, como Página HTML5 e Página de formulário adaptável.
 
-   * Exemplos adicionais são fornecidos como parte do [Tutorial WKND.](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
+   * Exemplos adicionais são fornecidos como parte do [Tutorial WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 * Os tipos de modelo normalmente são definidos pelos desenvolvedores.
 
@@ -328,7 +328,7 @@ As definições para seus tipos de modelos personalizados devem ser armazenadas 
 
 >[!CAUTION]
 >
->Os tipos de template devem respeitar a estrutura de pastas correta (ou seja, `/settings/wcm/...`), caso contrário, os tipos de template não serão encontrados.
+>Os tipos de template devem respeitar a estrutura de pasta correta (ou seja, `/settings/wcm/...`), caso contrário, os tipos de template não serão encontrados.
 
 <!--
 ### Template Type and Mobile Device Groups {#template-type-and-mobile-device-groups-br}
@@ -538,9 +538,9 @@ Ao processar uma página:
 * **Componentes**:
 
    * O componente da página mesclará as `structure/jcr:content` árvore do modelo com o `jcr:content` árvore da página.
-      * O componente de Página permitirá que o autor edite apenas os nós da estrutura do modelo que foram sinalizados como editáveis (bem como quaisquer secundários).
+      * O componente de Página permitirá que o autor edite apenas os nós da estrutura do modelo que foram sinalizados como editáveis (e quaisquer secundários).
       * Ao renderizar um componente em uma página, o caminho relativo desse componente é retirado do `jcr:content` nó; o mesmo caminho sob o `policies/jcr:content` do modelo será pesquisado.
-         * A variável `cq:policy` propriedade deste nó aponta para a política de conteúdo real (ou seja, ele retém a configuração de design desse componente).
+         * A variável `cq:policy` a propriedade desse nó aponta para a política de conteúdo real (ou seja, ele retém a configuração de design desse componente).
             * Isso permite ter vários modelos que reutilizam as mesmas configurações de política de conteúdo.
 
 ### Disponibilidade de modelo {#template-availability}

@@ -2,10 +2,10 @@
 title: Configuração da segmentação com o ContextHub
 description: Saiba como configurar a segmentação usando o ContextHub.
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1695'
-ht-degree: 94%
+source-wordcount: '1691'
+ht-degree: 88%
 
 ---
 
@@ -21,7 +21,7 @@ O AEM permite personalizar facilmente as experiências dos usuários. Também pe
 
 ## Acessar segmentos {#accessing-segments}
 
-O console [Públicos-alvo](audiences.md) é usado para gerenciar segmentos do ContextHub, bem como públicos-alvo da sua conta do Adobe Target. Esta documentação abrange o gerenciamento de segmentos para o ContextHub.
+A variável [Públicos-alvo](audiences.md) O console do é usado para gerenciar segmentos do ContextHub e públicos-alvo da sua conta do Adobe Target. Esta documentação abrange o gerenciamento de segmentos para o ContextHub.
 
 Para acessar seus segmentos, na navegação global, selecione **Navegação > Personalização > Públicos**. Selecione sua configuração (por exemplo, Site WKND) para ver os segmentos:
 
@@ -92,7 +92,7 @@ Para definir seu novo segmento:
 
    ![Adicionar segmento](../assets/contexthub-create-segment.png)
 
-1. No **Novo segmento do ContextHub**, insira um título para o segmento, bem como um valor de reforço, se necessário, e toque ou clique em **Criar**.
+1. No **Novo segmento do ContextHub**, insira um título para o segmento e um valor de reforço, se necessário, e toque ou clique **Criar**.
 
    ![Novo segmento](../assets/contexthub-new-segment.png)
 
@@ -200,7 +200,7 @@ Se você tiver muitos segmentos, eles podem se tornar difíceis de gerenciar com
 1. Forneça um **Título** e um **Nome** para sua pasta.
    * O **Título** deve ser descritivo.
    * A variável **Nome** torna-se o nome do nó no repositório.
-      * Ele é gerado automaticamente com base no título e ajustado de acordo com [Convenções de nomenclatura do AEM.](/help/implementing/developing/introduction/naming-conventions.md)
+      * Ele é gerado automaticamente com base no título e ajustado de acordo com [Convenções de nomenclatura do AEM](/help/implementing/developing/introduction/naming-conventions.md).
       * Ele pode ser ajustado, se necessário.
 
    ![Criar pasta](../assets/contexthub-create-folder.png)
@@ -279,7 +279,7 @@ Ou se não for resolvido:
 
 Esses testes também podem ser executados em páginas de conteúdo e em combinação com conteúdo direcionado e **Atividades** e **Experiências** relacionadas.
 
-Se você configurou uma atividade e uma experiência, é possível testar facilmente seu segmento com a atividade. Para obter detalhes sobre como configurar uma atividade, consulte a [documentação sobre a criação de conteúdo direcionado](targeted-content.md) relacionada.
+Se você configurou uma atividade e uma experiência, é possível testar facilmente seu segmento com a atividade. Para obter detalhes sobre como configurar uma atividade, consulte [documentação sobre criação de conteúdo direcionado](targeted-content.md).
 
 1. No modo de edição de uma página em que você configurou o conteúdo direcionado, é possível ver que o conteúdo é direcionado por meio do ícone de seta no conteúdo.
 1. Alterne para o modo de visualização e, usando o hub de contexto, alterne para um perfil que não corresponda à segmentação configurada para a experiência.

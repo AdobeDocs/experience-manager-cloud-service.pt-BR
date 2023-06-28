@@ -3,7 +3,7 @@ title: Implantação do AEM as a Cloud Service
 description: Implantação do AEM as a Cloud Service
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '3462'
 ht-degree: 40%
@@ -113,7 +113,7 @@ Após a mudança para a nova versão do aplicativo:
 É possível limitar a instalação de conteúdo mutável para criar ou publicar incorporando pacotes em uma pasta install.author ou install.publish sob `/apps`. A reestruturação para refletir esta separação foi efetuada no AEM 6.5 e os detalhes sobre a reestruturação de projetos recomendada podem ser encontrados na [documentação do AEM 6.5.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=pt-BR)
 
 >[!NOTE]
->Os pacotes de conteúdo são implantados em todos os tipos de ambiente (desenvolvimento, preparo, produção). Não é possível limitar a implantação a um ambiente específico. Esta limitação está em vigor para garantir a opção de uma execução de teste automatizada. O conteúdo específico de um ambiente requer instalação manual por meio de [Gerenciador de pacotes.](/help/implementing/developing/tools/package-manager.md)
+>Os pacotes de conteúdo são implantados em todos os tipos de ambiente (desenvolvimento, preparo, produção). Não é possível limitar a implantação a um ambiente específico. Esta limitação está em vigor para garantir a opção de uma execução de teste automatizada. O conteúdo específico de um ambiente requer instalação manual por meio de [Gerenciador de pacotes](/help/implementing/developing/tools/package-manager.md).
 
 Além disso, não há um mecanismo para reverter as alterações mutáveis no pacote de conteúdo após serem aplicadas. Se os clientes detectarem um problema, poderão optar por corrigi-lo na próxima versão do código ou, como último recurso, restaurar o sistema inteiro para um determinado estado antes da implantação.
 

@@ -2,10 +2,10 @@
 title: Introdução ao AEM Headless as a Cloud Service
 description: Nesta parte da Jornada do desenvolvedor headless do AEM, saiba mais sobre pré-requisitos do AEM headless.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3087'
-ht-degree: 94%
+source-wordcount: '3084'
+ht-degree: 93%
 
 ---
 
@@ -85,7 +85,7 @@ Para modificar o conteúdo de forma headless, o AEM oferece duas APIs robustas.
 * A API GraphQL permite criar solicitações para acessar e fornecer Fragmentos de conteúdo.
 * A API REST do Assets permite criar e modificar Fragmentos de conteúdo (e outros ativos).
 
-Você aprenderá sobre essas APIs e como usá-las em uma parte posterior da jornada headless do AEM. Ou consulte a seção [recursos adicionais](#additional-resources) para obter a documentação adicional.
+Você aprenderá sobre essas APIs e como usá-las em uma parte posterior da jornada headless do AEM. Ou consulte [recursos adicionais](#additional-resources) abaixo para obter a documentação adicional.
 
 ## Níveis de integração headless {#integration-levels}
 
@@ -190,7 +190,7 @@ Consulte a seção [recursos adicionais](#additional-resources) para obter a doc
 A hierarquia de pastas pode atender a duas principais preocupações com relação à gestão de conteúdo:
 
 * [Tradução](#translation): o AEM gerencia a tradução de conteúdo mantendo cópias do conteúdo em pastas específicas da localidade.
-* Organização: as pastas são usadas para definir uma hierarquia de conteúdo necessária para suportar as necessidades de tradução, bem como para gerenciar logicamente os Fragmentos de conteúdo.
+* Organização — as pastas são usadas para definir uma hierarquia de conteúdo necessária para atender às necessidades de tradução e gerenciar logicamente os fragmentos de conteúdo.
 
 O AEM permite uma estrutura de conteúdo flexível e uma hierarquia pode ser arbitrariamente grande. No entanto, é importante perceber que qualquer alteração na estrutura de pastas pode ter consequências não intencionais para consultas existentes que [dependem do caminho do conteúdo.](#developer) Portanto, uma hierarquia bem definida, claramente definida previamente, pode ser útil para os autores de conteúdo.
 

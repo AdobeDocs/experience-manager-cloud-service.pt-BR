@@ -2,10 +2,10 @@
 title: Publicar conteúdo headless traduzido
 description: Saiba como publicar seu conteúdo traduzido e atualizar as traduções como atualizações de conteúdo.
 exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1392'
-ht-degree: 98%
+source-wordcount: '1389'
+ht-degree: 96%
 
 ---
 
@@ -80,7 +80,7 @@ Seu conteúdo headless traduzido foi publicado. Agora ele pode ser acessado e co
 >
 >Você pode selecionar vários itens (ou seja, várias pastas de idioma) ao publicar para poder publicar várias traduções de uma vez.
 
-Há opções adicionais ao publicar seu conteúdo, como agendar um horário de publicação, que estão além do escopo desta jornada. Consulte a seção [Recursos adicionais](#additional-resources) no final do documento para obter mais informações.
+Há opções adicionais ao publicar seu conteúdo, como agendar um horário de publicação, que estão além do escopo desta jornada. Consulte a [Recursos adicionais](#additional-resources) no final do documento para obter mais informações.
 
 ## Atualizar o conteúdo traduzido {#updating-translations}
 
@@ -114,7 +114,7 @@ Você vê que um novo cartão de tarefa foi adicionado ao projeto. Neste exemplo
 
 ![Tarefa de tradução adicional adicionada](assets/additional-translation-job.png)
 
-Observe que as estatísticas listadas no novo cartão (número de ativos e fragmentos de conteúdo) são diferentes. Isso ocorre porque o AEM reconhece o que mudou desde a última tradução e inclui apenas o conteúdo que precisa ser traduzido. Isso inclui a nova tradução do conteúdo atualizado, bem como a primeira tradução do novo conteúdo.
+Observe que as estatísticas listadas no novo cartão (número de ativos e fragmentos de conteúdo) são diferentes. Isso ocorre porque o AEM reconhece o que mudou desde a última tradução e inclui apenas o conteúdo que precisa ser traduzido. Isso inclui a nova tradução do conteúdo atualizado e a primeira tradução do novo conteúdo.
 
 A partir deste ponto, você [inicia e gerencia seu trabalho de tradução da mesma forma que fazia com o original.](translate-content.md#using-translation-project)
 

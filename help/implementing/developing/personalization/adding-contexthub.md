@@ -1,17 +1,17 @@
 ---
 title: Adicionar o ContextHub a páginas e acessar lojas
-description: Adicione o ContextHub às suas páginas para ativar os recursos do ContextHub e vincular às bibliotecas JavaScript do ContextHub
+description: Adicione o ContextHub às suas páginas para ativar os recursos do ContextHub e para vincular às bibliotecas de JavaScript do ContextHub
 exl-id: 8bfe2cff-3944-4e86-a95c-ebf1cb13913c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '926'
 ht-degree: 0%
 
 ---
 
 # Adicionar o ContextHub a páginas e acessar lojas {#adding-contexthub-to-pages-and-accessing-stores}
 
-Adicione o ContextHub às suas páginas para ativar os recursos do ContextHub e para vincular às bibliotecas JavaScript do ContextHub.
+Adicione o ContextHub às suas páginas para ativar os recursos do ContextHub e para vincular às bibliotecas de JavaScript do ContextHub.
 
 A API JavaScript do ContextHub fornece acesso aos dados de contexto que o ContextHub gerencia. Esta página descreve brevemente os principais recursos da API para acessar e manipular dados de contexto. Siga os links para a documentação de referência da API para ver informações detalhadas e exemplos de código.
 
@@ -89,7 +89,7 @@ Além disso, a [`ContextHub.Utils.JSON`](contexthub-api.md#contexthub-utils-json
 
 ## Interagir com lojas ContextHub {#interacting-with-contexthub-stores}
 
-Use o [`ContextHub`](contexthub-api.md#ui-event-constants) Objeto JavaScript para obter um armazenamento como um objeto JavaScript. Depois de obter o objeto de armazenamento, você pode manipular os dados que ele contém. Use o [`getAllStores`](contexthub-api.md#getallstores) ou o [`getStore`](contexthub-api.md#getstore-name) função para obter o armazenamento.
+Use o [`ContextHub`](contexthub-api.md#ui-event-constants) JavaScript object para obter um armazenamento como um objeto JavaScript. Depois de obter o objeto de armazenamento, você pode manipular os dados que ele contém. Use o [`getAllStores`](contexthub-api.md#getallstores) ou o [`getStore`](contexthub-api.md#getstore-name) função para obter o armazenamento.
 
 ### Acessar dados da loja {#accessing-store-data}
 
@@ -117,7 +117,7 @@ O ContextHub inclui uma estrutura de eventos que permite que você reaja automat
 
 ## Utilização do Context Hub para manipular cookies {#using-context-hub-to-manipulate-cookies}
 
-A API Javascript do Context Hub oferece suporte entre navegadores para manipular cookies do navegador. A variável [`ContextHub.Utils.Cookie`](contexthub-api.md#contexthub-utils-cookie) O namespace define várias funções para criar, manipular e excluir cookies.
+A API JavaScript do Context Hub oferece suporte entre navegadores para manipular cookies do navegador. A variável [`ContextHub.Utils.Cookie`](contexthub-api.md#contexthub-utils-cookie) O namespace define várias funções para criar, manipular e excluir cookies.
 
 ## Determinar segmentos resolvidos do ContextHub {#determining-resolved-contexthub-segments}
 
@@ -127,7 +127,7 @@ O mecanismo de segmento do ContextHub permite determinar quais dos segmentos reg
 
 Os segmentos do ContextHub são instalados abaixo do `/conf/<site>/settings/wcm/segments` nó.
 
-Os seguintes segmentos são instalados com o [Site do tutorial do WKND.](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
+Os seguintes segmentos são instalados com o [Site tutorial do WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 * verão
 * inverno

@@ -2,10 +2,10 @@
 title: Variáveis de ambiente do Cloud Manager
 description: As variáveis de ambiente padrão podem ser configuradas e gerenciadas por meio do Cloud Manager e fornecidas para o ambiente de tempo de execução, a ser usado na configuração do OSGi.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1017'
-ht-degree: 93%
+source-wordcount: '1018'
+ht-degree: 92%
 
 ---
 
@@ -128,8 +128,8 @@ No entanto, as variáveis de ambiente não podem ser usadas em diretivas `IfDefi
 
 ### Configurações do OSGi {#osgi}
 
-As variáveis e os segredos comuns do ambiente podem ser usados nas [configurações do OSGi.](/help/implementing/deploying/configuring-osgi.md)
+As variáveis e os segredos comuns do ambiente podem ser usados nas [configurações do OSGi](/help/implementing/deploying/configuring-osgi.md).
 
 ### Variáveis de pipeline {#pipeline}
 
-Além das variáveis de ambiente, também há variáveis de pipeline, que são expostas durante a fase de criação. [Saiba mais sobre variáveis de pipeline aqui.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables)
+Além das variáveis de ambiente, também há variáveis de pipeline, que são expostas durante a fase de criação. [Saiba mais sobre variáveis de pipeline aqui](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables).

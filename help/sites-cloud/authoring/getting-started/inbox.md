@@ -2,10 +2,10 @@
 title: Sua caixa de entrada
 description: Gerenciamento de tarefas com a caixa de entrada
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 73%
+source-wordcount: '906'
+ht-degree: 70%
 
 ---
 
@@ -25,7 +25,7 @@ Você recebe essas notificações em sua própria Caixa de entrada, onde pode vi
 
 >[!NOTE]
 >
->Para obter mais informações sobre os tipos de item, consulte também:
+>Para obter mais informações sobre os tipos de item, consulte o seguinte:
 >
 >* [Projetos](/help/sites-cloud/authoring/projects/overview.md)
 >* [Projetos - trabalhar com tarefas](/help/sites-cloud/authoring/projects/tasks.md)
@@ -102,7 +102,7 @@ Para ambas as exibições (Lista e Calendário), é possível definir as configu
 
   ![Configurações de exibição da lista da caixa de entrada](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
 
-  Você também pode delegar o calendário a outros usuários, além de solicitar a delegação de outros usuários e gerenciar as delegações.
+  Você também pode delegar o calendário a outros usuários, solicitar a delegação de outros usuários e gerenciar as delegações.
 
   ![Configurações de delegação da exibição de lista da caixa de entrada](/help/sites-cloud/authoring/assets/inbox-delegation.png)
 
@@ -132,7 +132,7 @@ Para ambas as exibições (Lista e Calendário), é possível definir as configu
 
    >[!NOTE]
    >
-   >Para obter mais informações, consulte:
+   >Para obter mais informações, consulte o seguinte:
    >
    >* Itens de fluxo de trabalho - [participar de fluxos de trabalho](/help/sites-cloud/authoring/workflows/participating.md)
 

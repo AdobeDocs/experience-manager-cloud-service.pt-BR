@@ -2,10 +2,10 @@
 title: Arquitetura do Editor universal
 description: Saiba mais sobre a arquitetura do Editor universal e como os dados fluem entre seus serviços e camadas.
 exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '662'
-ht-degree: 88%
+source-wordcount: '649'
+ht-degree: 79%
 
 ---
 
@@ -28,16 +28,16 @@ Este documento descreve cada um desses blocos de construção e como eles trocam
 
 >[!TIP]
 >
->Se quiser ver o Editor universal e sua arquitetura em ação, consulte o documento [Introdução ao Editor universal no AEM](getting-started.md) para saber como obter acesso ao Editor universal e começar a instrumentar seu primeiro aplicativo do AEM para utilizá-lo.
+>Para ver o Universal Editor e sua arquitetura em ação, consulte [Introdução ao editor universal no AEM](getting-started.md) para saber como obter acesso ao Universal Editor e como começar a instrumentar seu primeiro aplicativo AEM para usá-lo.
 
 ### Editores {#editors}
 
-* **Editor universal**: o Editor universal usa um DOM instrumentado para permitir a edição local do conteúdo. Consulte o documento [Atributos e tipos](attributes-types.md) para obter detalhes sobre os metadados necessários. Consulte o documento [Introdução ao Editor universal no AEM](getting-started.md) para obter um exemplo da instrumentação no AEM.
+* **Editor universal**: o Editor universal usa um DOM instrumentado para permitir a edição local do conteúdo. Consulte [Atributos e Tipos](attributes-types.md) para obter detalhes sobre os metadados necessários. Consulte o documento [Introdução ao Editor universal no AEM](getting-started.md) para obter um exemplo da instrumentação no AEM.
 * **Painel Propriedades**: algumas propriedades dos componentes não podem ser editadas no contexto, por exemplo, o tempo de rotação de um carrossel ou qual guia de acordeão deve estar sempre aberta ou fechada. Para permitir a edição dessas informações de componente, um editor baseado em formulário é fornecido no painel lateral do editor.
 
 ### Aplicativo remoto {#remote-app}
 
-Para tornar um aplicativo editável no contexto do Editor universal, o DOM deve ser instrumentado. O aplicativo remoto deve renderizar determinados atributos no DOM. Consulte o documento [Atributos e tipos](attributes-types.md) para obter detalhes sobre os metadados necessários. Consulte o documento [Introdução ao Editor universal no AEM](getting-started.md) para obter um exemplo da instrumentação no AEM.
+Para tornar um aplicativo editável no contexto do Editor universal, o DOM deve ser instrumentado. O aplicativo remoto deve renderizar determinados atributos no DOM. Consulte [Atributos e Tipos](attributes-types.md) para obter detalhes sobre os metadados necessários. Consulte o documento [Introdução ao Editor universal no AEM](getting-started.md) para obter um exemplo da instrumentação no AEM.
 
 O Editor universal busca manter um SDK simples, portanto, a instrumentação é de responsabilidade da implementação remota do aplicativo.
 

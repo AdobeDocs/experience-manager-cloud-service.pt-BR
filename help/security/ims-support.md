@@ -2,10 +2,10 @@
 title: Suporte IMS do Adobe Experience Manager as a Cloud Service
 description: Suporte do Sistema de gerenciamento de imagens para o Adobe Experience Manager as a Cloud Service
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1997'
-ht-degree: 40%
+source-wordcount: '1993'
+ht-degree: 39%
 
 ---
 
@@ -106,7 +106,7 @@ Mais informações sobre os novos recursos do grupo podem ser encontradas [neste
 
 **Documentação da sincronização de usuários**
 
-Consulte a [documentação da UST](https://adobe-apiplatform.github.io/user-sync.py/bp/) para obter mais detalhes.
+Consulte [Documentação da UST](https://adobe-apiplatform.github.io/user-sync.py/bp/) para obter mais detalhes.
 
 A Ferramenta de sincronização de usuários deve se registrar como uma UMAPI de cliente Adobe Developer usando o procedimento [aqui](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).
 
@@ -217,7 +217,7 @@ Para acessar o Cloud Manager ou ambientes no AEM as a Cloud Service, você deve 
 Consulte Definições de função para saber mais sobre funções para usuários que controlam a disponibilidade de recursos específicos no Cloud Manager.
 
 >[!NOTE]
->O Cloud Manager tem funções pré-configuradas com permissões apropriadas. Para saber mais sobre cada função com permissões específicas, tarefas pré-configuradas ou permissões associadas a cada função, consulte [Permissões baseadas em função](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions.html?lang=en).
+>O Cloud Manager tem funções pré-configuradas com permissões apropriadas. Para saber mais sobre cada uma das funções com permissões específicas, tarefas pré-configuradas ou permissões associadas a cada função, consulte [Permissões baseadas em função](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions.html?lang=en).
 
 **Etapas para adicionar um usuário**
 

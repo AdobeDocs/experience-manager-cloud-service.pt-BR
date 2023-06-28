@@ -2,10 +2,10 @@
 title: Preparação para a integração
 description: Antes de começar o processo de integração, há várias etapas preparatórias que o administrador do sistema deve entender para fazer logon no sistema.
 exl-id: 86139b1a-c22a-4716-a0f9-cf142cbc6c53
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '766'
-ht-degree: 95%
+source-wordcount: '763'
+ht-degree: 91%
 
 ---
 
@@ -42,7 +42,7 @@ A integração do AEM as a Cloud Service começa com um contrato assinado entre 
 * Seu nível de suporte principal (se aplicável).
 * Seus contatos de integração.
 
-Se não tiver conhecimento desses detalhes, entre em contato com a equipe contratante da sua organização.
+Se não tiver conhecimento desses detalhes, entre em contato com a equipe contratante em sua organização.
 
 Uma vez assinado o contrato, a Adobe provisiona seus ambientes, envia um email de boas-vindas aos contatos de integração especificados no contrato e organiza uma chamada de integração. Isso geralmente acontece alguns dias após o fechamento do contrato, a menos que uma data futura de início do serviço seja acordada.
 
@@ -88,4 +88,4 @@ Agora você deve ter uma compreensão básica sobre:
 * Como esse contrato afeta o processo de integração.
 * Como se preparar para sua chamada de integração.
 
-Agora que está familiarizado com essas etapas de preparação, você está quase pronto para entrar no sistema por conta própria. Porém, primeiro você precisará ter de uma breve visão geral de como o AEM as a Cloud Service é estruturado do ponto de vista de um administrador de sistema, além de conhecer terminologias importantes. Continue com a próxima parte da jornada, a [Terminologia do AEM as a Cloud Service.](terminology.md)
+Agora que está familiarizado com essas etapas de preparação, você está quase pronto para entrar no sistema por conta própria. Porém, primeiro você precisará ter de uma breve visão geral de como o AEM as a Cloud Service é estruturado do ponto de vista de um administrador de sistema, além de conhecer terminologias importantes. Prossiga para a próxima parte da jornada, [Terminologia as a Cloud Service do AEM](terminology.md).

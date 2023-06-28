@@ -4,7 +4,7 @@ description: Saiba mais sobre as noções básicas do Console de visão geral da
 feature: Multi Site Manager
 role: Admin
 exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '731'
 ht-degree: 92%
@@ -32,7 +32,7 @@ Você pode abrir a visão geral da Live Copy em:
 
 A **Visão geral da Live Copy** pode ser aberta a partir do painel lateral **Referências** do console **Sites**:
 
-1. No console **Sites**, [navegue até a página do blueprint e selecione-a.](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
+1. No console **Sites**, [navegue até a página do blueprint e selecione-a](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Abra o painel **[Referências](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** e selecione **Live Copies**.
 
    ![Live Copy do painel de referências](../assets/live-copy-references.png)

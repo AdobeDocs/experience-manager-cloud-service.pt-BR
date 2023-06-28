@@ -4,10 +4,10 @@ description: Obtenha uma visão geral de como traduzir conteúdo para sites mult
 feature: Language Copy
 role: Admin
 exl-id: c3e89719-4d08-401b-b9dd-19d1db03d72c
-source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '292'
-ht-degree: 100%
+source-wordcount: '289'
+ht-degree: 87%
 
 ---
 
@@ -20,7 +20,7 @@ Automatize a tradução de conteúdo e ativos da página para criar e manter sit
 
 >[!TIP]
 >
->Se você é novo na tradução de conteúdo, consulte nossa [Jornada de tradução de sites,](/help/journey-sites/translation/overview.md) que é um caminho guiado pela tradução de conteúdo do AEM Sites usando as ferramentas de tradução avançadas do AEM, ideais para aqueles sem experiência no AEM ou em tradução.
+>Se você é novo na tradução de conteúdo, consulte [Jornada de tradução de sites,](/help/journey-sites/translation/overview.md) que é um caminho guiado pela tradução de conteúdo do AEM Sites usando as ferramentas de tradução avançadas do AEM, ideais para aqueles sem experiência com o AEM ou com tradução.
 
 A tradução de conteúdo envolve as seguintes etapas:
 

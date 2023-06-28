@@ -2,9 +2,9 @@
 title: Notas de versão do [!DNL Adobe Experience Manager]  as a Cloud Service 2020.10.0.
 description: "[!DNL Adobe Experience Manager] Notas de versão as a Cloud Service para 2020.10.0."
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1197'
+source-wordcount: '1194'
 ht-degree: 28%
 
 ---
@@ -90,7 +90,7 @@ A data de lançamento do Cloud Manager no Experience Manager as a Cloud Service 
 * O número de variáveis por ambiente aumentou para 200.
 
 * O cartão Ambiente na página Visão geral agora lista até três ambientes. Os usuários podem selecionar o botão **Mostrar tudo** para navegar até a página de resumo do ambiente a fim de exibir uma tabela com uma lista completa de ambientes.
-Consulte [Exibição de ambientes](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) para obter mais detalhes.
+Consulte [Exibição de ambiente](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) para obter mais detalhes.
 
 ### Correções de erros {#bug-fixes-cloud-manager}
 

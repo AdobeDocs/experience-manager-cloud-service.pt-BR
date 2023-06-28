@@ -2,10 +2,10 @@
 title: Editar conteúdo da página
 description: Depois que a página é criada, você pode editar o conteúdo para fazer as atualizações necessárias
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3002'
-ht-degree: 58%
+source-wordcount: '2990'
+ht-degree: 52%
 
 ---
 
@@ -291,7 +291,7 @@ As opções de edição exatas dependerão do componente. Para alguns componente
 
 * Componente de imagem - tela cheia
 
-  [Entrar no modo de tela cheia](#edit-content-full-screen-mode) para o componente de imagem permite mais espaço para editar a imagem, bem como mostrar opções de edição adicionais como **Inicializar mapa** e **Restaurar zoom**. Além disso, a tela cheia permite selecionar predefinições de corte.
+  [Entrando no modo de tela cheia](#edit-content-full-screen-mode) para o componente de imagem permite mais espaço para editar a imagem e mostrar opções de edição adicionais, como **Mapa de lançamento** e **Redefinir zoom**. Além disso, a tela cheia permite selecionar predefinições de corte.
 
   ![Modo de tela cheia do Componente de imagem](/help/sites-cloud/authoring/assets/editing-image-component-full-screen.png)
 
@@ -358,7 +358,7 @@ Em vez de repetidamente alternar entre os modos de edição e de [layout](/help/
 
 >[!TIP]
 >
->O escopo da ação Layout é limitada ao componente selecionado. Por exemplo, se você estiver editando o layout de um componente e, em seguida, clicar em outro componente, a barra de ferramentas de edição padrão (não a barra de ferramentas do layout) será exibida para o componente recentemente selecionado, e as alças de redimensionamento, bem como a barra de ferramentas do emulador desaparecerão.
+>O escopo da ação Layout é limitada ao componente selecionado. Por exemplo, se você estiver editando o layout de um componente e, em seguida, clicar em outro componente, a barra de ferramentas de edição padrão (não a barra de ferramentas do layout) será exibida para o componente recém-selecionado, as alças de redimensionamento e a barra de ferramentas do emulador desaparecerão.
 >
 >Se precisar editar o layout geral da página, afetando vários componentes, alterne para a guia [modo de layout](/help/sites-cloud/authoring/features/responsive-layout.md).
 
@@ -516,7 +516,7 @@ Os ícones a seguir permitem desfazer ou refazer uma ação. Os seguintes itens 
 
 ## Desfazer e refazer edições de página - a teoria {#undoing-and-redoing-page-edits-the-theory}
 
-O AEM armazena um histórico de ações que você executa e a sequência executada. Assim, você desfaz várias ações na ordem executada, bem como refazer para aplicar novamente uma ou mais ações.
+O AEM armazena um histórico de ações que você executa e a sequência executada. Assim, você desfaz várias ações na ordem executada e refaz para reaplicar uma ou mais ações, se necessário.
 
 Se um elemento na página de conteúdo estiver selecionado (po exemplo, como um componente de texto), o comando de desfazer e refazer será aplicado ao item selecionado.
 

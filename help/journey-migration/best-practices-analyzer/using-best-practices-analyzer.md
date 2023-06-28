@@ -2,10 +2,10 @@
 title: Utilização do Analisador de práticas recomendadas
 description: Utilização do Analisador de práticas recomendadas
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2479'
-ht-degree: 46%
+source-wordcount: '2474'
+ht-degree: 45%
 
 ---
 
@@ -192,7 +192,7 @@ A interface HTTP pode ser usada em diversos métodos.
 
 Uma maneira simples é abrir uma guia do navegador no mesmo navegador no qual você já fez logon no AEM como administrador. Você pode digitar o URL na guia do navegador e fazer com que os resultados sejam exibidos ou baixados pelo navegador.
 
-Você também pode usar uma ferramenta de linha de comando, como `curl` ou `wget`, além de qualquer aplicativo cliente HTTP. Quando não estiver usando uma guia do navegador com uma sessão autenticada, você deve fornecer um nome de usuário administrativo e uma senha como parte do comentário.
+Você também pode usar uma ferramenta de linha de comando, como `curl` ou `wget` e qualquer aplicativo cliente HTTP. Quando não estiver usando uma guia do navegador com uma sessão autenticada, você deve fornecer um nome de usuário administrativo e uma senha como parte do comentário.
 
 Este é um exemplo de como isso pode ser feito:
 `curl -u admin:admin 'http://localhost:4502/apps/best-practices-analyzer/analysis/report.csv' > report.csv`.

@@ -2,10 +2,10 @@
 title: Configurar o seu pipeline
 description: Crie um pipeline de front-end para gerenciar a personalização do tema do seu site.
 exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '975'
-ht-degree: 97%
+source-wordcount: '967'
+ht-degree: 89%
 
 ---
 
@@ -39,7 +39,7 @@ Essa parte da jornada se aplica ao administrador do Cloud Manager.
 * É necessário ter acesso ao Cloud Manager.
 * É necessário ser um membro da função **Gerenciador de implantação** no Cloud Manager.
 * Um repositório Git para o ambiente do AEM deve ser configurado no Cloud Manager.
-   * Geralmente, isso já acontece em qualquer projeto ativo. No entanto, se não estiver, consulte a documentação dos Repositórios do Cloud Manager, disponível na seção [Recursos adicionais](#additional-resources).
+   * Geralmente, isso já acontece em qualquer projeto ativo. No entanto, se não estiver, consulte a documentação dos Repositórios do Cloud Manager, disponível no [Recursos adicionais](#additional-resources) seção.
 
 ## O que é um pipeline de front-end {#front-end-pipeline}
 
@@ -102,7 +102,7 @@ O novo pipeline é criado e fica visível na seção **Pipelines** da janela do 
 
 >[!TIP]
 >
->Se você já estiver familiarizado com pipelines no AEMaaCS e quiser saber mais sobre as diferenças entre os tipos de pipelines, incluindo mais detalhes sobre o pipeline de front-end, consulte Configurar pipeline de CI/CD - Serviços em nuvem, cujo link encontra-se na seção [Recursos adicionais](#additional-resources) abaixo.
+>Se você já estiver familiarizado com pipelines no AEMaaCS e quiser saber mais sobre as diferenças entre os tipos de pipelines, incluindo mais detalhes sobre o pipeline de front-end, consulte Configurar pipeline de CI/CD - Cloud Services vinculado no menu [Recursos adicionais](#additional-resources) abaixo.
 
 ## O que vem a seguir {#what-is-next}
 

@@ -2,9 +2,9 @@
 title: Configuração do ContextHub
 description: Saiba como configurar o Context Hub.
 exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1683'
+source-wordcount: '1680'
 ht-degree: 1%
 
 ---
@@ -71,7 +71,7 @@ As propriedades do módulo de interface do usuário incluem uma configuração d
 | [contexthub.base](sample-modules.md#contexthub-base-ui-module-type) | Um tipo de módulo de UI genérico | Configurado nas propriedades do módulo de interface do usuário |
 | [contexthub.browserinfo](sample-modules.md#contexthub-browserinfo-ui-module-type) | Exibe informações sobre o navegador | `surferinfo` |
 | [contexthub.datetime](sample-modules.md#contexthub-datetime-ui-module-type) | Exibe informações de data e hora | `datetime` |
-| [contexthub.location](sample-modules.md#contexthub-location-ui-module-type) | Exibe a latitude e a longitude do cliente, bem como a localização em um mapa. Permite alterar o local. | `geolocation` |
+| [contexthub.location](sample-modules.md#contexthub-location-ui-module-type) | Exibe a latitude e a longitude do cliente e a localização em um mapa. Permite alterar o local. | `geolocation` |
 | [contexthub.screen-orientation](sample-modules.md#contexthub-screen-orientation-ui-module-type) | Exibe a orientação da tela do dispositivo (paisagem ou retrato) | `emulators` |
 | [contexthub.tagcloud](sample-modules.md#contexthub-tagcloud-ui-module-type) | Exibe estatísticas sobre tags de página | `tagcloud` |
 | [granite.profile](sample-modules.md#granite-profile-ui-module-type) | Exibe as informações de perfil do usuário atual, incluindo `authorizableID`, `displayName` e `familyName`. É possível alterar o valor de `displayName` e `familyName`. | `profile` |
@@ -149,7 +149,7 @@ Um armazenamento contexthub.generic-jsonp é configurado para que ele armazene d
 
 O candidato do armazenamento de amostra contexthub.generic-jsonp permite recuperar dados de um serviço JSONP ou um serviço da Web que retorna dados JSON. Para este candidato da loja, use a configuração da loja para fornecer detalhes sobre o serviço JSONP a ser usado.
 
-A variável [init](contexthub-api.md#init-name-config) função da `ContextHub.Store.JSONPStore` A classe Javascript define um `config` objeto que inicializa este candidato de armazenamento. A variável `config` objeto contém um `service` objeto que inclui detalhes sobre o serviço JSONP. Para configurar a loja, forneça o `service` no formato JSON como o valor da propriedade Configuração detalhada.
+A variável [init](contexthub-api.md#init-name-config) função da `ContextHub.Store.JSONPStore` A classe JavaScript define um `config` objeto que inicializa este candidato de armazenamento. A variável `config` objeto contém um `service` objeto que inclui detalhes sobre o serviço JSONP. Para configurar a loja, forneça o `service` no formato JSON como o valor da propriedade Configuração detalhada.
 
 Para salvar dados do serviço MD5 do site jsontest.com, use o procedimento em [Criação de um armazenamento do ContextHub](#creating-a-contexthub-store) usando as seguintes propriedades:
 
@@ -159,21 +159,21 @@ Para salvar dados do serviço MD5 do site jsontest.com, use o procedimento em [C
 * **Ativado:** Selecionar
 * **Configuração detalhada (JSON):**
 
-   ```javascript
-   {
-    "service": {
-    "jsonp": false,
-    "timeout": 1000,
-    "ttl": 1800000,
-    "secure": false,
-    "host": "md5.jsontest.com",
-    "port": 80,
-    "params":{
-    "text":"text to md5"
-        }
-      }
-    }
-   ```
+  ```javascript
+  {
+   "service": {
+   "jsonp": false,
+   "timeout": 1000,
+   "ttl": 1800000,
+   "secure": false,
+   "host": "md5.jsontest.com",
+   "port": 80,
+   "params":{
+   "text":"text to md5"
+       }
+     }
+   }
+  ```
 
 ### Adição de um módulo de interface do usuário para os dados md5 {#adding-a-ui-module-for-the-md-data}
 
@@ -187,15 +187,15 @@ Use o procedimento em [Adição de um módulo de interface](#adding-a-ui-module)
 * **Tipo de módulo:** contexthub.base
 * **Configuração detalhada (JSON):**
 
-   ```javascript
-   {
-    "icon": "coral-Icon--data",
-    "title": "MD5 Conversion",
-    "storeMapping": { "md5": "md5" },
-    "template": "<p> {{md5.original}}</p>;
-                 <p>{{md5.md5}}</p>"
-   }
-   ```
+  ```javascript
+  {
+   "icon": "coral-Icon--data",
+   "title": "MD5 Conversion",
+   "storeMapping": { "md5": "md5" },
+   "template": "<p> {{md5.original}}</p>;
+                <p>{{md5.md5}}</p>"
+  }
+  ```
 
 ## Depuração do ContextHub {#debugging-contexthub}
 

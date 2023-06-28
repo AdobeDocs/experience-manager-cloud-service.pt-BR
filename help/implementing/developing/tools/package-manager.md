@@ -4,9 +4,9 @@ description: Saiba mais sobre as noções básicas do gerenciamento de pacotes d
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3780'
+source-wordcount: '3775'
 ht-degree: 4%
 
 ---
@@ -33,7 +33,7 @@ Os pacotes de conteúdo criados para aplicativos do AEM as a Cloud Service devem
 
 >[!NOTE]
 >
->Os pacotes só podem conter conteúdo. Qualquer funcionalidade (por exemplo, conteúdo armazenado em `/apps`) deve ser [implantado usando seu pipeline de CI/CD no Cloud Manager.](/help/implementing/cloud-manager/deploy-code.md)
+>Os pacotes só podem conter conteúdo. Qualquer funcionalidade (por exemplo, conteúdo armazenado em `/apps`) deve ser [implantado usando seu pipeline de CI/CD no Cloud Manager](/help/implementing/cloud-manager/deploy-code.md).
 
 >[!IMPORTANT]
 >
@@ -43,7 +43,7 @@ Os pacotes de conteúdo criados para aplicativos do AEM as a Cloud Service devem
 >
 >Não repita a instalação se esse erro aparecer. A instalação está ocorrendo corretamente em segundo plano. Se você reiniciar a instalação, alguns conflitos poderão ser introduzidos por vários processos de importação simultâneos.
 
-Para obter mais detalhes sobre como gerenciar pacotes para AEMaaCS, consulte o documento [Implantação no AEM as a Cloud Service](/help/implementing/deploying/overview.md) no guia do usuário implantar.
+Para obter mais detalhes sobre como gerenciar pacotes para o AEMaaCS, consulte [Implantação no AEM as a Cloud Service](/help/implementing/deploying/overview.md) no guia do usuário implantar.
 
 ## Tamanho do pacote {#package-size}
 
@@ -110,7 +110,7 @@ O Gerenciador de pacotes está dividido em quatro áreas funcionais principais:
 * **Log de atividades** - Esse painel é minimizado no início e expande-se para detalhar a atividade do Gerenciador de pacotes, como quando um pacote é criado ou instalado. Há botões adicionais na guia Registro de atividades para:
    * **Limpar registro**
    * **Exibir / Ocultar**
-* **Barra de ferramentas** - A barra de ferramentas contém botões de atualização para o Painel de navegação esquerdo e a lista Pacote, bem como botões para pesquisar, criar e fazer upload de pacotes.
+* **Barra de ferramentas** - A barra de ferramentas contém botões de atualização para o Painel de navegação esquerdo e a lista Pacote e botões para pesquisar, criar e fazer upload de pacotes.
 
 ![Interface do usuário do Gerenciador de pacotes](assets/package-manager-ui.png)
 
@@ -195,7 +195,7 @@ Ao criar filtros, você pode definir um caminho ou usar uma expressão regular p
 | Tipo de regra | Descrição |
 |---|---|
 | include | A inclusão de um diretório incluirá esse diretório e todos os arquivos e pastas nele (ou seja, toda a subárvore), mas **não** incluir outros arquivos ou pastas de sob o caminho raiz especificado. |
-| excluir | Excluir um diretório excluirá esse diretório e todos os arquivos e pastas nele (ou seja, toda a subárvore). |
+| excluir | Excluir um diretório excluirá esse diretório e todos os arquivos e pastas nesse diretório (ou seja, toda a subárvore). |
 
 Os filtros de pacote são definidos com mais frequência quando você [crie o pacote.](#creating-a-new-package) No entanto, eles também podem ser editados posteriormente, após o que o pacote deve ser recriado para atualizar seu conteúdo com base nas novas definições de filtro.
 

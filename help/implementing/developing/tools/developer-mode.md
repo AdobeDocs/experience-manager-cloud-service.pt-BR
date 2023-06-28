@@ -4,7 +4,7 @@ seo-title: Developer Mode
 description: O Modo de desenvolvedor abre um painel lateral com várias guias que fornecem ao desenvolvedor informações sobre a página atual
 seo-description: Developer mode opens a side panel with several tabs that provide a developer with information about the current page
 exl-id: fbf11c0f-dc6e-43f3-bcf2-080eacc6ba99
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '528'
 ht-degree: 1%
@@ -76,7 +76,7 @@ Cada entrada de componente pode ter as seguintes opções:
 
 * **Editar script:** Um link que abre o script de componente no CRXDE Lite.
 
-* **Exibir detalhes do componente:** Abre os detalhes do componente na [Console de componentes.](/help/sites-cloud/authoring/features/components-console.md)
+* **Exibir detalhes do componente:** Abre os detalhes do componente na [Console de componentes](/help/sites-cloud/authoring/features/components-console.md).
 
 Expandir uma entrada de componente tocando ou clicando na divisa também pode mostrar:
 

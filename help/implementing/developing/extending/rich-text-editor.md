@@ -3,9 +3,9 @@ title: Configurar o editor de rich text para criar conteúdo [!DNL Adobe Experie
 description: Configurar o editor de rich text para criar conteúdo no [!DNL Adobe Experience Manager] as a Cloud Service.
 contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1875'
+source-wordcount: '1876'
 ht-degree: 0%
 
 ---
@@ -223,7 +223,7 @@ Os administradores podem controlar as opções de RTE usando políticas de conte
 As opções disponíveis no fluxo de RTE downstream das configurações da interface do usuário para as políticas de conteúdo.
 
 * As configurações da interface do usuário definem quais opções estão disponíveis para as políticas de conteúdo.
-* Se a configuração da interface do usuário do RTE tiver sido removida ou não tiver habilitado um item, a política de conteúdo não poderá configurá-lo.
+* Se a configuração da interface do usuário do RTE tiver sido removida ou não ativar um item, a política de conteúdo não poderá configurá-lo.
 * Um autor tem acesso somente a essas funcionalidades, conforme disponibilizado pelas configurações da interface do usuário e pelas políticas de conteúdo.
 
 Como exemplo, você pode ver a variável [Documentação do componente principal de Texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor).

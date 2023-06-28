@@ -2,7 +2,7 @@
 title: O componente RemotePage
 description: O componente RemotePage é um componente de página personalizado para editar o SPA React remoto dentro do AEM.
 exl-id: d3465592-0392-49b0-b49d-de93983c1d6e
-source-git-commit: d213dd0788e66015237d241caf0f3b5737ce725c
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 2%
@@ -32,13 +32,13 @@ Consulte o artigo [Edição de um AEM externo no SPA](editing-external-spa.md) p
    * https://github.com/shellscape/webpack-manifest-plugin
    * https://github.com/webdeveric/webpack-assets-manifest
    * https://github.com/mugi-uno/parcel-plugin-bundle-manifest
-      ![exemplo de propriedade de pontos de entrada](assets/asset-manifest-entrypoints.png)
+     ![exemplo de propriedade de pontos de entrada](assets/asset-manifest-entrypoints.png)
 * O aplicativo deve ser capaz de inicializar em um `<div id="root"></div>` abaixo do `body` elemento. Se uma marcação diferente for esperada para o aplicativo instanciar, ela deverá ser ajustada de acordo nos scripts HTL do componente proxy que tem um `sling:resourceSuperType="spa-project-core/components/remotepage`.
 
 ## Limitações {#limitations}
 
-* O componente RemotePage espera que a implementação forneça um manifesto de ativo como o [encontrado aqui.](https://github.com/shellscape/webpack-manifest-plugin) No entanto, o componente RemotePage só foi testado para funcionar com a estrutura React (e o Next.js por meio do componente remote-page-next) e, portanto, não oferece suporte ao carregamento remoto de aplicativos de outras estruturas, como o Angular.
-* O CSS interno definido no arquivo HTML raiz do aplicativo, bem como o CSS em linha no nó DOM raiz não estarão disponíveis ao fazer renderização remota no AEM.
+* O componente RemotePage espera que a implementação forneça um manifesto de ativo como o [encontrado aqui.](https://github.com/shellscape/webpack-manifest-plugin) O componente RemotePage, no entanto, só foi testado para funcionar com a estrutura React (e Next.js por meio do componente remote-page-next) e, portanto, não oferece suporte ao carregamento remoto de aplicativos de outras estruturas, como o Angular.
+* O CSS interno definido no arquivo de HTML raiz do aplicativo e o CSS em linha no nó DOM raiz não estarão disponíveis ao fazer renderização remota no AEM.
 
 ## Detalhes técnicos {#technical-details}
 

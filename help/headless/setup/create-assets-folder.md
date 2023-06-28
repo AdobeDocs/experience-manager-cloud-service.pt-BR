@@ -2,10 +2,10 @@
 title: Criação de uma pasta de ativos - Configuração do headless
 description: Use os modelos de fragmento de conteúdo do AEM para definir a estrutura dos fragmentos de conteúdo, a base do seu conteúdo headless.
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 93%
+source-wordcount: '381'
+ht-degree: 86%
 
 ---
 
@@ -19,7 +19,7 @@ Use os modelos de fragmento de conteúdo do AEM para definir a estrutura dos fra
 
 No entanto, primeiro será necessário criar uma pasta de ativos na qual você os armazenará.
 
-As pastas de ativos são usadas para [organizar ativos de conteúdo tradicionais](/help/assets/manage-digital-assets.md), como imagens e vídeos ou fragmentos de conteúdo.
+As pastas de ativos são usadas para [organizar ativos de conteúdo tradicionais](/help/assets/manage-digital-assets.md) como imagens, vídeos e fragmentos de conteúdo.
 
 ## Como criar uma pasta de ativos {#how-to-create-an-assets-folder}
 
@@ -30,11 +30,11 @@ Um administrador só precisaria criar pastas ocasionalmente para organizar o con
 1. Forneça um **Título** e um **Nome** para sua pasta.
    * O **Título** deve ser descritivo.
    * A variável **Nome** torna-se o nome do nó no repositório.
-      * Ele é gerado automaticamente com base no título e ajustado de acordo com [Convenções de nomenclatura do AEM.](/help/implementing/developing/introduction/naming-conventions.md)
+      * Ele é gerado automaticamente com base no título e ajustado de acordo com [Convenções de nomenclatura do AEM](/help/implementing/developing/introduction/naming-conventions.md).
       * Ele pode ser ajustado, se necessário.
 
    ![Criar pasta](../assets/assets-folder-create.png)
-1. Selecione a pasta que acabou de criar passando o mouse sobre ela e tocando na marca de seleção. Em seguida, selecione **Propriedades** na barra de ferramentas (ou use o [atalho de teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `p`.)
+1. Selecione a pasta que acabou de criar passando o mouse sobre ela e tocando na marca de seleção. Em seguida, selecione **Propriedades** na barra de ferramentas (ou use o `p` [atalho de teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)).
 1. Na janela **Propriedades**, selecione a guia **Serviços em nuvem**.
 1. Para a **Configuração na nuvem**, selecione a [configuração criada anteriormente.](create-configuration.md)
    ![Configurar pasta de ativos](../assets/assets-folder-configure.png)

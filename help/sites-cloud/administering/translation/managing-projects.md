@@ -4,10 +4,10 @@ description: Saiba como criar e gerenciar projetos de tradução automática e h
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '4085'
-ht-degree: 97%
+source-wordcount: '4078'
+ht-degree: 96%
 
 ---
 
@@ -17,7 +17,7 @@ Os projetos de tradução permitem gerenciar a tradução de conteúdo do AEM. U
 
 >[!TIP]
 >
->Se você é novo na tradução de conteúdo, consulte nossa [Jornada de tradução de sites,](/help/journey-sites/translation/overview.md) que é um caminho guiado pela tradução de conteúdo do AEM Sites usando ferramentas de tradução poderosas do AEM, ideais para aqueles sem experiência com o AEM ou com tradução.
+>Se você é novo na tradução de conteúdo, consulte [Jornada de tradução de sites,](/help/journey-sites/translation/overview.md) que é um caminho guiado pela tradução de conteúdo do AEM Sites usando ferramentas de tradução poderosas do AEM, ideais para aqueles sem experiência com o AEM ou com tradução.
 
 Quando os recursos são adicionados a um projeto de tradução, um trabalho de tradução é criado para eles. Os trabalhos fornecem comandos e informações de status que são usados para gerenciar os fluxos de trabalho de tradução humana e tradução automática que são executados nos recursos.
 
@@ -196,7 +196,7 @@ As atualizações da memória de tradução podem ser interceptadas e enviadas a
 
 Uma propriedade pode ser selecionada na exibição de lista do console de sites que mostra se uma página foi traduzida, está em tradução ou ainda não foi traduzida.
 
-1. No console do site, alterne para [exibição em lista.](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
+1. No console do site, alterne para [exibição em lista](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Toque ou clique em **Exibir configurações** no menu suspenso exibição.
 1. Na caixa de diálogo, marque a propriedade **Traduzido** e toque ou clique em **Atualizar**.
 
@@ -210,7 +210,7 @@ Muitas tarefas de tradução e opções avançadas podem ser acessadas no consol
 
 ### Noções básicas sobre o Console de projetos
 
-Os projetos de tradução no AEM usam o padrão [console de projetos AEM.](/help/sites-cloud/authoring/projects/overview.md) Se você não estiver familiarizado com os Projetos AEM, leia essa documentação.
+Os projetos de tradução no AEM usam o padrão [console de projetos AEM](/help/sites-cloud/authoring/projects/overview.md). Se você não estiver familiarizado com projetos AEM, consulte essa documentação.
 
 Como qualquer outro projeto, um projeto de tradução é composto de blocos que apresentam uma visão geral das tarefas do projeto.
 
@@ -277,7 +277,7 @@ Ao criar manualmente um projeto de tradução, você deve fornecer valores para 
 
 ### Adicionar tags a um trabalho de tradução {#adding-tags-to-a-translation-job}
 
-É possível adicionar tags a um projeto de tradução de maneira semelhante a [como você adiciona ativos e páginas a um projeto.](#adding-pages-assets-to-a-translation-job) Basta selecionar **Tags** no menu **Adicionar** e, em seguida, siga as mesmas etapas.
+É possível adicionar tags a um projeto de tradução de maneira semelhante a [como você adiciona ativos e páginas a um projeto](#adding-pages-assets-to-a-translation-job). Basta selecionar **Tags** no menu **Adicionar** e, em seguida, siga as mesmas etapas.
 
 ### Visualizar detalhes do projeto de tradução {#seeing-translation-project-details}
 
@@ -303,7 +303,7 @@ Quando um projeto é criado usando o painel de Referências de uma página, essa
 
 ### Monitorar o status de um trabalho de tradução {#monitoring-the-status-of-a-translation-job}
 
-O bloco do trabalho de tradução de um projeto fornece o status de um trabalho, bem como o número de páginas e ativos no trabalho.
+O bloco do trabalho de tradução de um projeto fornece o status de um trabalho e o número de páginas e ativos no trabalho.
 
 ![Trabalho de tradução](../assets/translation-job.png)
 
@@ -437,7 +437,7 @@ Quando o conteúdo for traduzido para uma cópia de idioma existente, revise as 
 Para comparar cópias de idioma ao idioma principal:
 
 1. No console de sites, navegue até a cópia de idioma que deseja comparar.
-1. Abra o [painel de Referências.](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)
+1. Abra o [painel de Referências](/help/sites-cloud/authoring/getting-started/basic-handling.md#references).
 1. No cabeçalho de **Cópias**, selecione **Cópias de idioma.**
 1. Selecione a cópia de idioma específica e, em seguida, clique em **Comparar ao principal** ou **Comparar com anterior**, se aplicável.
 

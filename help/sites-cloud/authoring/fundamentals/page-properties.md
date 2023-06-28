@@ -2,10 +2,10 @@
 title: Editar as propriedades da página
 description: Definir as propriedades obrigatórias de uma página
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2340'
-ht-degree: 82%
+source-wordcount: '2341'
+ht-degree: 81%
 
 ---
 
@@ -196,15 +196,15 @@ As propriedades são distribuídas por várias guias.
 
 ### Blueprint {#blueprint}
 
-Essa guia só fica visível para páginas que servem como blueprints. Os blueprints servem como base para as Live Copies que fazem parte do [Gerenciamento de vários sites.](/help/sites-cloud/administering/msm/overview.md)
+Essa guia só fica visível para páginas que servem como blueprints. Os blueprints servem como base para as Live Copies que fazem parte do [Gerenciamento de vários sites](/help/sites-cloud/administering/msm/overview.md).
 
-* **Live Copies atuais** - lista páginas que são baseadas nesta (ou seja, são Live Copies da) página do blueprint
+* **Live Copies atuais** - Lista páginas que são baseadas nesta (ou seja, são Live Copies da) página do blueprint
 
 * **Configurações de implantação** - Controla as circunstâncias sob as quais as modificações são propagadas no Live Copy
 
 ### Live Copy  {#live-copy}
 
-Essa guia só fica visível para páginas configuradas como Live Copies. Assim como os blueprints, as Live Copies fazem parte do [Gerenciamento de vários sites.](/help/sites-cloud/administering/msm/overview.md).
+Essa guia só fica visível para páginas configuradas como Live Copies. Assim como os blueprints, as Live Copies fazem parte do [Gerenciamento de vários sites](/help/sites-cloud/administering/msm/overview.md).
 
 * **Sincronizar** - sincronizar o Live Copy com o blueprint, mantendo as modificações locais
 * **Redefinir** - redefinir o Live Copy para o estado de blueprint, removendo as modificações locais

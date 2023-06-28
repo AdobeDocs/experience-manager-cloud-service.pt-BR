@@ -2,9 +2,9 @@
 title: Validar transferências de conteúdo
 description: Usar a ferramenta Transferência de conteúdo para validar as transferências de conteúdo
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1062'
+source-wordcount: '1055'
 ht-degree: 2%
 
 ---
@@ -38,7 +38,7 @@ Com a validação da migração ativada no ambiente AEM de origem, comece uma ex
 
 Se **Substituir container de preparo durante a extração** estiver ativado, todos os nós envolvidos na extração serão registrados no resumo do caminho de extração. Quando essa configuração for usada, é importante ativar o **Apagar conteúdo existente na instância da nuvem antes da assimilação** configuração durante a assimilação, caso contrário, pode parecer que faltam nós no resumo da assimilação. Esses são os nós que já estão presentes no target nas assimilações anteriores.
 
-Para obter uma ilustração gráfica, consulte os exemplos abaixo:
+Para obter uma ilustração gráfica, consulte os seguintes exemplos:
 
 ### Exemplo 1 {#example-1}
 
@@ -115,7 +115,7 @@ EXTRACTION: Number of nodes extracted: 4635
 INGESTION: Number of nodes ingested: 0
 ----------------------------------------------------------
 Validation failed. However, the following nodes may already be present in the target environment.
-Please refer to our Migration Validation FAQ (https://www.adobe.com/go/aem_cloud_ctt_validation_en) or open a ticket with Customer Care.
+See our Migration Validation FAQ (https://www.adobe.com/go/aem_cloud_ctt_validation_en) or open a ticket with Customer Care.
 There are 4635 entries present in the extraction digest that are missing from the ingestion digest.
 /content/dam/bruce
 /content/dam/bruce-assets

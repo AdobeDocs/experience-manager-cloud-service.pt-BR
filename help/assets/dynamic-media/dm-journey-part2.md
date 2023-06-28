@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2875'
+source-wordcount: '2872'
 ht-degree: 0%
 
 ---
@@ -141,7 +141,7 @@ Se você observar novamente a imagem do relógio abaixo, verá que há uma `Cart
 ![Predefinições de imagens estáticas e dinâmicas](/help/assets/dynamic-media/assets/dm-image-presets.png)
 _Predefinições de imagens estáticas e dinâmicas. A imagem do observador foi renderizada usando o `PDP-page` predefinição de imagem._
 
-Mas e se você tiver que mudar uma imagem no seu site? Por exemplo, suponha que você tenha feito alguns testes e descoberto que a imagem de 120 x 120 (a variável `Cart` predefinição de imagem) não está sendo recebida tão bem quanto você pensava. É necessário aumentar a imagem, aumentando a largura para 175 pixels e a altura para 175 pixels. Tradicionalmente, você teria que entrar no Adobe Photoshop e recriar todas essas imagens do carrinho. Porém, com o Dynamic Media, basta editar a predefinição de imagem, atualizando os valores de Largura e Altura para 175, e salvar a predefinição, como visto no exemplo abaixo.
+Mas e se você tiver que mudar uma imagem no seu site? Por exemplo, suponha que você tenha feito alguns testes e descoberto que a imagem de 120 x 120 (a variável `Cart` predefinição de imagem) não está sendo recebida como você pensava. É necessário aumentar a imagem, aumentando a largura para 175 pixels e a altura para 175 pixels. Tradicionalmente, você teria que entrar no Adobe Photoshop e recriar todas essas imagens do carrinho. Porém, com o Dynamic Media, basta editar a predefinição de imagem, atualizando os valores de Largura e Altura para 175, e salvar a predefinição, como visto no exemplo abaixo.
 
 ![Edição de uma predefinição de imagem](/help/assets/dynamic-media/assets/dm-edit-image-preset.png)
 _Editar a largura e a altura da `Cart` predefinição de imagem._

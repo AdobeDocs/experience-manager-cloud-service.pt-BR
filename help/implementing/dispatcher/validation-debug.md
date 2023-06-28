@@ -3,7 +3,7 @@ title: Validação e depuração usando ferramentas do Dispatcher
 description: Validação e depuração usando ferramentas do Dispatcher
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2847'
 ht-degree: 2%
@@ -15,7 +15,7 @@ ht-degree: 2%
 ## Introdução {#apache-and-dispatcher-configuration-and-testing}
 
 >[!NOTE]
->Para obter mais informações sobre o Dispatcher na nuvem e como baixar as Ferramentas do Dispatcher, consulte o [Dispatcher na nuvem](/help/implementing/dispatcher/disp-overview.md) página. Se a configuração do Dispatcher estiver no modo herdado, consulte a [documentação do modo herdado](/help/implementing/dispatcher/validation-debug-legacy.md).
+>Para obter mais informações sobre o Dispatcher na nuvem e como baixar as Ferramentas do Dispatcher, consulte o [Dispatcher na nuvem](/help/implementing/dispatcher/disp-overview.md) página. Se a configuração do Dispatcher estiver no modo herdado, consulte [documentação do modo herdado](/help/implementing/dispatcher/validation-debug-legacy.md).
 
 As seções a seguir descrevem a estrutura de arquivo do modo flexível, a validação local, a depuração e a migração do modo herdado para o modo flexível.
 

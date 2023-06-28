@@ -3,7 +3,7 @@ title: Suporte a miniaturas para vídeos no Screens as a Cloud Service
 description: Esta página descreve como adicionar suporte a miniaturas para vídeos no Screens as a Cloud Service.
 index: true
 exl-id: 7b15d7cc-f089-4008-9039-5f48343a0f20
-source-git-commit: f5af37bf39ecd5a964a8c94a731111c561c2934e
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '557'
 ht-degree: 1%
@@ -43,25 +43,25 @@ Siga as etapas abaixo para usar a miniatura em vídeos:
 1. Selecione o canal. Na barra de ações, clique em **Editar** para abrir o editor.
 
 
-   ![Botão Editar na barra de ações.](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png)
+   ![Botão Editar na barra de ações](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png).
 
 1. Adicione ou edite um componente de vídeo existente, como mostrado na figura abaixo.
 
-   ![Imagem realçada de um ativo de vídeo.](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png)
+   ![Imagem destacada de um ativo de vídeo](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png).
 
 1. Adicione ou edite um componente de vídeo existente, como mostrado na figura abaixo.
 
 1. Selecione o vídeo e clique no botão Configurar (*chave inglesa*) para abrir as propriedades do vídeo.
 
-   ![Imagem de ativo de vídeo selecionada com seta apontando para o ícone Configurar, retratado como uma chave inglesa. na barra de ferramentas.](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png)
+   ![Imagem de ativo de vídeo selecionada com seta apontando para o ícone Configurar, retratado como uma chave inglesa. na barra de ferramentas](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png).
 
 1. A variável **Vídeo** é aberta, onde você pode exibir a **Miniatura** área de lançamento.
 
-   ![Caixa de diálogo Vídeo mostrando a imagem do ativo de vídeo e a caixa de depósito Miniatura.](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png)
+   ![Caixa de diálogo Vídeo mostrando a imagem do ativo de vídeo e a caixa de depósito Miniatura](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png).
 
 1. Arraste e solte uma imagem do seletor de ativos para a **Miniatura** área designada e clique em **Concluído**.
 
-   ![O seletor de imagem de ativo é mostrado atrás da caixa de diálogo Vídeo com o ativo de imagem mostrado na caixa de depósito Miniatura.](/help/screens-cloud/using-core-product-features/assets/thumbnail-5.png)
+   ![O seletor de imagem de ativo é mostrado atrás da caixa de diálogo Vídeo com o ativo de imagem mostrado na caixa de depósito Miniatura](/help/screens-cloud/using-core-product-features/assets/thumbnail-5.png).
 
 1. Clique em **Visualizar**.
 

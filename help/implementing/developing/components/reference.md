@@ -2,9 +2,9 @@
 title: Guia de referência de componentes
 description: Um guia de referência do desenvolvedor para os detalhes dos componentes e sua estrutura
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3649'
+source-wordcount: '3650'
 ht-degree: 2%
 
 ---
@@ -122,7 +122,7 @@ O ícone ou a abreviação do componente é definido por meio das propriedades J
 1. `abbreviation` - Propriedade de string para personalizar a abreviação do nome do componente no navegador de componentes
    * A abreviação deve ser limitada a dois caracteres.
    * O fornecimento de uma cadeia de caracteres vazia criará a abreviação dos dois primeiros caracteres do `jcr:title` propriedade.
-      * Por exemplo &quot;Im&quot; para &quot;Image&quot;
+      * Por exemplo, &quot;Im&quot; para &quot;Image&quot;
       * O título localizado é usado para criar a abreviação.
    * A abreviação só é traduzida se o componente tiver uma `abbreviation_commentI18n` que é usada como dica de tradução.
 1. `cq:icon.png` ou `cq:icon.svg` - Ícone para este componente, que é mostrado no Navegador de componentes
@@ -166,7 +166,7 @@ Um componente é um nó do tipo `cq:Component` e tem as seguintes propriedades e
 | Nome | Tipo | Descrição |
 |---|---|---|
 | `.` | `cq:Component` | Representa o componente atual. Um componente é do tipo de nó `cq:Component`. |
-| `componentGroup` | `String` | Representa o grupo sob o qual o componente pode ser selecionado na [Navegador de componentes.](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) Um valor que começa com `.` é usado para componentes que não estão disponíveis para seleção na interface do usuário, como componentes básicos dos quais outros componentes herdam. |
+| `componentGroup` | `String` | Representa o grupo sob o qual o componente pode ser selecionado na [Navegador de componentes](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). Um valor que começa com `.` é usado para componentes que não estão disponíveis para seleção na interface do usuário, como componentes básicos dos quais outros componentes herdam. |
 | `cq:isContainer` | `Boolean` | Isso indica se o componente é um componente de contêiner e, portanto, pode conter outros componentes, como um sistema de parágrafo. |
 | `cq:dialog` | `nt:unstructured` | Essa é a definição da caixa de diálogo de edição do componente. |
 | `cq:design_dialog` | `nt:unstructured` | Esta é a definição da caixa de diálogo de design do componente. |
@@ -383,7 +383,7 @@ A configuração a seguir permite a edição no local do componente e define `pl
 
 ### Manipulação de eventos de campo - cq:listeners {#cq-listeners}
 
-O método de manipulação de eventos em campos de diálogo é feito com ouvintes em um [biblioteca do cliente.](/help/implementing/developing/introduction/clientlibs.md)
+O método de manipulação de eventos em campos de diálogo é feito com ouvintes em um [biblioteca do cliente](/help/implementing/developing/introduction/clientlibs.md).
 
 Para inserir lógica no campo, você deve:
 
@@ -416,7 +416,7 @@ A variável `cq:listeners` nó (tipo de nó `cq:EditListenersConfig`) define o q
 >* `aftermove`
 >* `aftercopy`
 
-O manipulador de eventos pode ser implementado com uma implementação personalizada. Por exemplo (onde `project.customerAction` é um método estático):
+O manipulador de eventos pode ser implementado com uma implementação personalizada. Por exemplo, (onde `project.customerAction` é um método estático):
 
 `afteredit = "project.customerAction"`
 
@@ -469,7 +469,7 @@ Tudo o que você precisa fazer é colocar um `README.md` na estrutura do compone
 
 ![README.md na estrutura do componente](assets/components-documentation.png)
 
-Essa marcação será exibida no campo [Console de componentes.](/help/sites-cloud/authoring/features/components-console.md)
+Essa marcação será exibida no campo [Console de componentes](/help/sites-cloud/authoring/features/components-console.md).
 
 ![README.md visível no console Componentes](assets/components-documentation-console.png)
 

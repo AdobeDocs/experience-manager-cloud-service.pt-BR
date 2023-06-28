@@ -4,9 +4,9 @@ description: Aproveite o Centro de ações para executar ações convenientement
 hidefromtoc: true
 hide: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '701'
 ht-degree: 27%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 27%
 >[!NOTE]
 >Este recurso não foi lançado.
 
-O AEM as Cloud Service envia notificações por email do Centro de Ações quando ocorrem incidentes críticos que exigem ação imediata, bem como recomendações proativas para otimizações. Os exemplos incluem uma fila bloqueada ou um conjunto de credenciais expirando; o conjunto completo de tipos de notificação da Central de Ações pode ser exibido na [tabela abaixo](#supported-notification-types), que se expandirá com o tempo.
+O AEM as Cloud Service envia notificações por email do Centro de Ações quando ocorrem incidentes críticos que exigem ação imediata e recomendações proativas para otimizações. Os exemplos incluem uma fila bloqueada ou um conjunto de credenciais expirando; o conjunto completo de tipos de notificação da Central de Ações pode ser exibido na [tabela abaixo](#supported-notification-types), que se expandirá com o tempo.
 
 Quando uma notificação por email do Centro de ações for recebida, é possível clicar nela para abrir o Centro de ações do AEM as a Cloud Service com um pop-up que exibe um contexto adicional explicando a ação que um cliente deve tomar.
 
-Além de exibir informações sobre a notificação por email recém-clicada, o Centro de Ações serve como um hub onde você pode visualizar e gerenciar o conjunto de notificações atuais e mais antigas. <!-- It can be accessed directly at the url TBD (Alexandru: I'm intentionally keeping it TBD for now so customers don't find it) -->
+Além de exibir informações sobre a notificação por email recém-clicada, o Centro de Ações serve como um hub onde você pode visualizar e gerenciar o conjunto de notificações atuais e mais antigas. <!-- It can be accessed directly at the url TBD (Alexandru: I'm intentionally keeping it TBD for now so customers do not find it) -->
 
 Há duas categorias de alto nível de notificações que aparecem no Centro de Ações:
 

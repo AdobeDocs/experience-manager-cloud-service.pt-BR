@@ -2,7 +2,7 @@
 title: Criação de tags em aplicativos do AEM
 description: Trabalhar programaticamente com tags ou estender tags em um aplicativo AEM personalizado
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '762'
 ht-degree: 1%
@@ -22,7 +22,7 @@ que interage com o
 Para obter informações relacionadas à marcação:
 
 * Consulte [Uso de tags](/help/sites-cloud/authoring/features/tags.md) para obter informações sobre como marcar conteúdo como autor de conteúdo.
-* Consulte Administração de tags para obter a perspectiva de um administrador sobre a criação e o gerenciamento de tags e sobre quais tags de conteúdo foram aplicadas.
+* Consulte Administração de tags para obter a perspectiva de um administrador sobre a criação e o gerenciamento de tags e a quais tags de conteúdo foram aplicadas.
 
 ## Visão geral da API de marcação {#overview-of-the-tagging-api}
 
@@ -168,4 +168,4 @@ O finlandês agora está disponível na caixa de diálogo de tag das propriedade
 
 >[!NOTE]
 >
->O novo idioma precisa ser um dos idiomas reconhecidos pelo AEM, ou seja, precisa estar disponível como um nó abaixo `/libs/wcm/core/resources/languages`.
+>A nova linguagem precisa ser uma das linguagens reconhecidas pelo AEM, ou seja, precisa estar disponível como um nó abaixo `/libs/wcm/core/resources/languages`.

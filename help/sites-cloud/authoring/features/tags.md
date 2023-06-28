@@ -2,10 +2,10 @@
 title: Uso de tags
 description: As tags são um método rápido e fácil de classificar conteúdo em um site
 exl-id: d2a9f578-fe0a-48ea-851c-2c84463661e0
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '567'
-ht-degree: 81%
+source-wordcount: '563'
+ht-degree: 75%
 
 ---
 
@@ -13,8 +13,8 @@ ht-degree: 81%
 
 As tags são um método rápido e fácil de classificar conteúdo em um site. As tags podem ser consideradas palavras-chave ou rótulos que podem ser anexados a uma página, um ativo ou outro conteúdo para permitir que as pesquisas localizem esse conteúdo e conteúdo relacionado.
 
-* Consulte Administração de tags para obter informações sobre como criar e gerenciar tags e sobre quais tags de conteúdo foram aplicadas. <!-- See [Administering Tags](/help/sites-administering/tags.md) for information about creating and managing tags, as well as to which content tags have been applied.-->
-* Consulte [Marcação para desenvolvedores](/help/implementing/developing/introduction/tagging-framework.md) para obter informações sobre a estrutura de marcação e sobre como incluir e estender tags em aplicativos personalizados.
+* Consulte Administração de tags para obter informações sobre como criar e gerenciar tags e sobre quais tags de conteúdo foram aplicadas. <!-- See [Administering Tags](/help/sites-administering/tags.md) for information about creating and managing tags, and to which content tags have been applied.-->
+* Consulte [Marcação para desenvolvedores](/help/implementing/developing/introduction/tagging-framework.md) para obter informações sobre a estrutura de marcação e incluir e estender tags em aplicativos personalizados.
 
 ## Dez razões para usar marcação {#ten-reasons-to-use-tagging}
 
@@ -47,7 +47,7 @@ Semelhante à forma como você pode publicar e desfazer a publicação de págin
 
 * Ativar tags individuais.
 
-   Assim como com as páginas, tags recém-criadas precisam ser ativadas antes de serem disponibilizadas no ambiente de publicação.
+  Assim como com as páginas, tags recém-criadas precisam ser ativadas antes de serem disponibilizadas no ambiente de publicação.
 
 >[!NOTE]
 >

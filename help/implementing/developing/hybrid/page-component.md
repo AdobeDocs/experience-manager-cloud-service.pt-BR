@@ -1,10 +1,10 @@
 ---
 title: Componente de página SPA
-description: Em um SPA, o componente página não fornece os elementos HTML de seus componentes filhos, mas delega isso à estrutura SPA. Este documento explica como isso torna o componente de página de um SPA exclusivo.
+description: Em um SPA, o componente de página não fornece os elementos de HTML de seus componentes filhos, mas delega isso à estrutura do SPA. Este documento explica como isso torna o componente de página de um SPA exclusivo.
 exl-id: 41b56a60-ebb8-499d-a0ab-a2e920f26227
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '602'
 ht-degree: 8%
 
 ---

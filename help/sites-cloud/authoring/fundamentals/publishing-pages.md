@@ -2,10 +2,10 @@
 title: Publicar páginas
 description: Como publicar e desfazer a publicação de páginas usando o AEM
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1804'
-ht-degree: 76%
+source-wordcount: '1802'
+ht-degree: 71%
 
 ---
 
@@ -81,7 +81,7 @@ Se você estiver editando uma página, ela poderá ser publicada diretamente do 
 
 >[!NOTE]
 >
->A publicação por meio do Editor é um processo superficial, ou seja, apenas as páginas selecionadas são publicadas, sem incluir páginas filhas.
+>A publicação por meio do editor é um processo superficial, ou seja, somente as páginas selecionadas são publicadas, sem incluir páginas filhas.
 
 >[!NOTE]
 >
@@ -112,11 +112,11 @@ Para publicar uma página com a Publicação rápida:
 
 >[!NOTE]
 >
->A Publicação rápida é uma publicação superficial, ou seja, apenas as páginas selecionadas são publicadas, sem incluir páginas secundárias.
+>A Publicação rápida é uma publicação superficial, ou seja, somente as páginas selecionadas são publicadas, sem incluir páginas secundárias.
 
 #### Gerenciar publicação    {#manage-publication}
 
-**Gerenciar publicação** oferece mais opções do que a **Publicação rápida**, permitindo a inclusão de páginas secundárias, a personalização das referências e o início de qualquer fluxo de trabalho aplicável, além de oferecer a opção de publicação em uma data posterior.
+**Gerenciar publicação** oferece mais opções do que **Publicação rápida**, permitindo a inclusão de páginas secundárias, a personalização das referências, o início de qualquer fluxo de trabalho aplicável e a oferta da opção de publicação em uma data posterior.
 
 Para publicar ou desfazer a publicação de uma página usando Gerenciar publicação:
 
@@ -203,7 +203,7 @@ Para publicar ou desfazer a publicação de uma página usando Gerenciar publica
 
    >[!NOTE]
    >
-   >A variável **Fluxos de trabalho** A etapa é mostrada com base em quais direitos seu usuário pode ou não ter. Para obter detalhes, consulte a observação anterior nesta página sobre privilégios de publicação, além dos tópicos Gerenciamento do acesso a fluxos de trabalho e [Aplicação de fluxos de trabalho a páginas](/help/sites-cloud/authoring/workflows/applying.md).
+   >A variável **Fluxos de trabalho** A etapa é mostrada com base em quais direitos seu usuário pode ou não ter. Consulte a observação anterior nesta página sobre privilégios de publicação e Gerenciamento de acesso a fluxos de trabalho e [Aplicação de fluxos de trabalho a páginas](/help/sites-cloud/authoring/workflows/applying.md) para obter detalhes.
 
    Os recursos são agrupados pelos workflows acionados e cada opção fornecida para:
 

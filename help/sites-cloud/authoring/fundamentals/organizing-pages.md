@@ -2,10 +2,10 @@
 title: Criar e organizar páginas
 description: Como criar e organizar páginas com o AEM
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2542'
-ht-degree: 71%
+source-wordcount: '2539'
+ht-degree: 69%
 
 ---
 
@@ -173,7 +173,7 @@ A menos que todas as páginas tenham sido criadas antecipadamente para você, é
 
 1. Abra o console Sites (por exemplo, `https://<host>:<port>/sites.html/content`.
 1. Navegue até o local onde deseja criar a nova página.
-1. Abra o seletor suspenso usando **Criar** na barra de ferramentas e, em seguida, selecione **Página** na lista:
+1. Abra o seletor suspenso usando **Criar** na barra de ferramentas, selecione **Página** na lista:
 
    ![Criação de uma página](/help/sites-cloud/authoring/assets/organizing-create-page.png)
 
@@ -384,7 +384,7 @@ O status de trabalhos assíncronos pode ser verificado no painel [**Status de tr
 
 >[!NOTE]
 >
->Para obter mais informações sobre o processamento assíncrono de trabalhos e como configurar o limite para ações de movimentação/renomeação de páginas, consulte o documento [Trabalhos assíncronos](/help/operations/asynchronous-jobs.md) no guia do usuário para Operações.
+>Para obter mais informações sobre o processamento assíncrono de trabalhos e como configurar o limite para ações de movimentação/renomeação de páginas, consulte [Trabalhos assíncronos](/help/operations/asynchronous-jobs.md) no guia do usuário Operações.
 
 ### Excluir uma página {#deleting-a-page}
 
@@ -402,7 +402,7 @@ O status de trabalhos assíncronos pode ser verificado no painel [**Status de tr
    ![Caixa de diálogo Excluir](/help/sites-cloud/authoring/assets/delete-page.png)
 
    * **Você deseja arquivar as páginas antes de excluir?** - Se marcada, as versões das páginas selecionadas para exclusão serão criadas ao excluir.
-      * [As versões podem ser restauradas em uma data posterior.](/help/sites-cloud/authoring/features/page-versions.md)
+      * [As versões podem ser restauradas em uma data posterior](/help/sites-cloud/authoring/features/page-versions.md).
       * As páginas excluídas sem versões anteriores não podem ser restauradas.
    * **Cancelar** para suspender a ação
    * **Excluir** para confirmar a ação:

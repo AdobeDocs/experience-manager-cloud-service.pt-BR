@@ -2,9 +2,9 @@
 title: Monitoramento de infraestrutura e serviços no AEM as a Cloud Service
 description: Monitoramento de infraestrutura e serviços no AEM as a Cloud Service
 exl-id: 82432c11-37ec-48ac-a52b-487abdc859fa
-source-git-commit: a95c914502fbb279bd44abd6d5d4d141707e9a59
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '588'
 ht-degree: 5%
 
 ---

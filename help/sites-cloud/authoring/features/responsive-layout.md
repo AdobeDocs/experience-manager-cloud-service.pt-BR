@@ -2,10 +2,10 @@
 title: Layout responsivo
 description: AEM permite que você realize um layout responsivo para suas páginas
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1745'
-ht-degree: 58%
+source-wordcount: '1748'
+ht-degree: 56%
 
 ---
 
@@ -18,7 +18,7 @@ Isso fornece um sistema de parágrafo que permite posicionar componentes em uma 
 O contêiner de layout:
 
 * Fornece ajuste horizontal à grade, juntamente com a capacidade de colocar componentes na grade lado a lado e definir quando eles devem ser recolhidos/refluir.
-* Usa pontos de interrupção predefinidos (por exemplo para telefone, tablet etc.) para permitir que você defina o comportamento necessário do conteúdo para dispositivos/orientação relacionados.
+* Usa pontos de interrupção predefinidos (por exemplo, para telefone, tablet e assim por diante) para permitir que você defina o comportamento necessário do conteúdo para dispositivos/orientações relacionadas.
    * Por exemplo, você pode personalizar o tamanho do componente ou se ele pode ser visualizado em dispositivos específicos.
 * Pode ser aninhado para permitir o controle de coluna.
 
@@ -68,7 +68,7 @@ O AEM permite definir layouts dependendo da largura do dispositivo:
    * O alcance do ponto de interrupção se estende da esquerda até o próximo ponto de interrupção.
    * Não é possível selecionar um ponto de interrupção específico, pois o ponto de interrupção apropriado é selecionado quando você seleciona um dispositivo e uma orientação.
 
-O dispositivo **Desktop** sem uma largura específica e que está relacionado ao ponto de interrupção padrão (isto é, todos os itens acima do último ponto de interrupção configurado).
+O dispositivo **Desktop**, que não tem uma largura específica, está relacionada ao ponto de interrupção padrão (ou seja, todos os itens acima do último ponto de interrupção configurado).
 
 >[!NOTE]
 >
@@ -181,7 +181,7 @@ O modo **Layout** pode ser iniciado de duas maneiras.
 * Ao usar o [modo de menu na barra de ferramentas](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) e escolher o modo **Layout**
    * Selecione o modo **Layout** da mesma maneira que você alternaria para o modo de **Edição** ou o modo de **Segmentação**.
    * O modo **Layout** permanece persistente e você não sai do modo **Layout** até que você selecione outro modo por meio do seletor de modo.
-* Quando [editar um componente individual.](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout)
+* Quando [editar um componente individual](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout).
    * Ao usar o **Layout** no menu de ação rápida do componente, é possível alternar para **Layout** modo.
    * **Layout** persiste ao editar o componente e reverte para **Editar** assim que o foco muda para outro componente.
 

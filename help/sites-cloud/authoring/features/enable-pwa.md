@@ -2,10 +2,10 @@
 title: Ativação de recursos do aplicativo web progressivo
 description: O AEM Sites permite que o autor de conteúdo ative recursos de aplicativo web progressivo para qualquer site por meio de uma configuração simples, sem necessidade de desenvolver código.
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1998'
-ht-degree: 93%
+source-wordcount: '1997'
+ht-degree: 92%
 
 ---
 
@@ -82,7 +82,7 @@ The developer will also need to add the following link to the `customfooterlibs.
 
 ### Ajustar seu Dispatcher {#adjust-dispatcher}
 
-O recurso PWA gera e usa arquivos `/content/<sitename>/manifest.webmanifest`. Por padrão, [o Dispatcher](/help/implementing/dispatcher/overview.md) não expõe esses arquivos. Para expor esses arquivos, o desenvolvedor deve adicionar a seguinte configuração ao projeto do site.
+O recurso PWA gera e usa arquivos `/content/<sitename>/manifest.webmanifest`. Por padrão, [o dispatcher](/help/implementing/dispatcher/overview.md) não expõe esses arquivos. Para expor esses arquivos, o desenvolvedor deve adicionar a seguinte configuração ao projeto do site.
 
 ```text
 File location: [project directory]/dispatcher/src/conf.dispatcher.d/filters/filters.any >
@@ -160,20 +160,20 @@ Essas configurações permitem que o site se comporte como um aplicativo nativo,
    * **Interface mínima** — o navegador é parcialmente escondido, como em um aplicativo nativo, mas os controles básicos de navegação ficam expostos.
    * **Tela cheia** — o navegador fica completamente oculto, como em um aplicativo nativo, mas é renderizado no modo de tela cheia.
       * Com essa opção, a navegação do aplicativo deve ser totalmente possível por meio do conteúdo, usando links e componentes nas páginas do site, sem usar os controles de navegação do navegador.
-* **Orientação da tela** — como um aplicativo local, o PWA precisa saber como lidar com as [orientações do dispositivo.](https://developer.mozilla.org/en-US/docs/Web/Manifest/orientation)
+* **Orientação da tela** — como um aplicativo local, o PWA precisa saber como lidar com as [orientações do dispositivo](https://developer.mozilla.org/en-US/docs/Web/Manifest/orientation).
    * **Qualquer** — o aplicativo se ajusta à orientação do dispositivo do usuário. Este é o valor padrão.
    * **Retrato** — isso força o aplicativo a ser aberto no layout de retrato, independentemente da orientação do dispositivo do usuário.
    * **Paisagem** — isso força o aplicativo a ser aberto no layout paisagem, independentemente da orientação do dispositivo do usuário.
 * **Cor do tema** — isso define a [cor do aplicativo](https://developer.mozilla.org/en-US/docs/Web/Manifest/theme_color) que afeta como o sistema operacional do usuário local exibe a barra de ferramentas da interface nativa e os controles de navegação. Dependendo do navegador, isso pode afetar outros elementos de apresentação do aplicativo.
    * Use o pop-up de roda de cores para selecionar uma cor.
    * A cor também pode ser definida por valor hexadecimal ou RGB.
-* **Cor do plano de fundo** — isso define a [cor do plano de fundo do aplicativo,](https://developer.mozilla.org/en-US/docs/Web/Manifest/background_color) mostrado quando o aplicativo é carregado.
+* **Cor do plano de fundo** - Isso define o [cor de fundo do aplicativo](https://developer.mozilla.org/en-US/docs/Web/Manifest/background_color), que é mostrado quando o aplicativo é carregado.
    * Use o pop-up de roda de cores para selecionar uma cor.
    * A cor também pode ser definida por valor hexadecimal ou RGB.
    * Certos navegadores [criam uma tela inicial automaticamente](https://developer.mozilla.org/pt-BR/docs/Web/Manifest#splash_screens) a partir do nome do aplicativo, cor do plano de fundo e ícone.
 * **Ícone** — isso define [o ícone](https://developer.mozilla.org/en-US/docs/Web/Manifest/icons) que representa o aplicativo no dispositivo do usuário.
    * O ícone deve ser um arquivo PNG com tamanho de 512x512 pixels.
-   * O ícone deve ser [armazenado no DAM.](/help/assets/overview.md)
+   * O ícone deve ser [armazenado no DAM](/help/assets/overview.md).
 
 ### Gerenciamento de cache (avançado) {#offline-configuration}
 

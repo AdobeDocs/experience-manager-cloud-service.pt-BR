@@ -2,10 +2,10 @@
 title: Solucionar problemas na ferramenta Transferência de conteúdo
 description: Solucionar problemas na ferramenta Transferência de conteúdo
 exl-id: 01bc9be7-a576-45eb-90a0-386ea951040d
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 100%
+source-wordcount: '179'
+ht-degree: 96%
 
 ---
 

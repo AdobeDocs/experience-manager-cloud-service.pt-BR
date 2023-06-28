@@ -2,7 +2,7 @@
 title: Alinhamento de KPIs
 description: Alinhamento de KPIs
 exl-id: d338a7bd-adfe-486a-badf-348acd6018d0
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 43%
@@ -36,7 +36,7 @@ Em um mundo digital, você pode medir quase tudo. Escolher três KPIs para sua i
 
 1. **Crie uma metodologia mensurável para cada KPI.** Depois de escolher os KPIs, baixe o modelo da Metodologia KPI do Adobe, que orienta você pelo resto do processo.
 
-1. **Defina o público-alvo para cada KPI.** O último passo desta semana é identificar o grupo de participantes que mais se preocupa com cada KPI. Na próxima semana, você trabalhará com cada grupo para confirmar o KPI, refinar a metodologia e concordar com o formato e o tempo dos seus relatórios.
+1. **Defina o público-alvo para cada KPI.** O último passo desta semana é identificar o grupo de participantes que mais se preocupa com cada KPI. Na próxima semana, você trabalhará com cada grupo para confirmar o KPI, refinar a metodologia e concordar com o formato e o tempo dos relatórios.
 
 >[!TIP]
 >

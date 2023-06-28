@@ -4,10 +4,10 @@ description: Depois que o administrador do sistema configurar os recursos de nuv
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 86700cce-139f-451e-9c21-b38b6332f773
-source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
-workflow-type: ht
-source-wordcount: '581'
-ht-degree: 100%
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+workflow-type: tm+mt
+source-wordcount: '579'
+ht-degree: 96%
 
 ---
 
@@ -71,7 +71,7 @@ Tendo lido este documento, agora você sabe como:
 * Acessar o Cloud Manager.
 * Fazer logon em uma instância do AEM as a Cloud Service.
 
-Parabéns! Agora você está pronto para criar e publicar conteúdo do AEM. Consulte a seção [Recursos adicionais](#additional-resources) para obter mais detalhes sobre como criar conteúdo no AEM e como administrá-lo.
+Parabéns! Agora você está pronto para criar e publicar conteúdo do AEM. Consulte [Recursos adicionais](#additional-resources) para obter mais detalhes sobre como criar conteúdo no AEM e como administrá-lo.
 
 Se você estiver interessado em como desenvolvedores e gerentes de implantação criam e gerenciam aplicativos personalizados para o AEM as a Cloud Service, continue com a segunda parte opcional da jornada de integração, [Tarefas do desenvolvedor no AEM.](developers.md)
 

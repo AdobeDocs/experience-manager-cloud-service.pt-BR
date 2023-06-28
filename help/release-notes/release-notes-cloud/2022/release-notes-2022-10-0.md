@@ -2,10 +2,10 @@
 title: Notas de versão do [!DNL Adobe Experience Manager]  as a Cloud Service 2022.10.0.
 description: Notas de versão do [!DNL Adobe Experience Manager]  as a Cloud Service 2022.10.0.
 exl-id: 8fce7c50-f322-4bcf-bd76-390faedfd5b7
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '842'
-ht-degree: 91%
+source-wordcount: '838'
+ht-degree: 84%
 
 ---
 
@@ -36,7 +36,7 @@ Assista ao vídeo de Visão geral da versão de outubro de 2022 que exibe um res
 
 ### Novos recursos no [!DNL Sites] {#sites-features}
 
-* O [Guia Personalização para Fragmentos de experiência](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) permite recursos de especificação de segmentação para o editor de Fragmento de experiência, bem como a flexibilidade para criar Fragmentos de experiência aninhados, nos quais as variações de cabeçalhos e rodapés podem ser criadas para vários segmentos. Antes do lançamento desse recurso, a personalização oferecida pelo AEM só está disponível para páginas do site, mas não para Fragmentos de experiência
+* A variável [Guia Personalização para Fragmentos de experiência](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) O permite recursos de especificação de segmentação para o Editor de fragmento de experiência e a flexibilidade para criar Fragmentos de experiência aninhados, nos quais as variações de cabeçalhos e rodapés podem ser criadas para vários segmentos. Antes do lançamento desse recurso, a personalização oferecida pelo AEM só está disponível para páginas do site, mas não para Fragmentos de experiência
 
 * O [Console do Fragmento do conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) agora permite que os usuários gerenciem com eficiência fragmentos de conteúdo traduzidos. Um acesso de 1 clique também foi fornecido para exibir todas as cópias de idioma. Os usuários também podem filtrar a exibição de tabela pela localidade de seu interesse.
 
@@ -85,7 +85,7 @@ Assista ao vídeo de Visão geral da versão de outubro de 2022 que exibe um res
 
 ### Novidades {#what-is-new-foundation}
 
-* O AEM as a Cloud Service (Serviços do autor) agora está integrado com o Unified Shell para melhorar a experiência dos usuários e unificá-lo com todos os outros aplicativos da Experience Cloud. Consulte AEM as a [Cloud Service no Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) para obter mais detalhes.
+* O AEM as a Cloud Service (Serviços do autor) agora está integrado com o Unified Shell para melhorar a experiência dos usuários e unificá-lo com todos os outros aplicativos da Experience Cloud. Ver AEM como um [Cloud Service no shell unificado](/help/overview/aem-cloud-service-on-unified-shell.md) para obter mais detalhes.
 
 * Conforme mencionado anteriormente nas notas de versão, o uso da tela de administrador do agente de replicação ou da API de replicação para distribuir pacotes de conteúdo maiores que 10 MB (nós com propriedades, sem incluir binários) agora está obsoleto e é aplicado. Consulte [Gerenciar publicação](/help/operations/replication.md#manage-publication) ou o [Fluxo de trabalho de publicação da árvore de conteúdo](/help/operations/replication.md#publish-content-tree-workflow) para obter abordagens sugeridas para replicar esses pacotes de conteúdo grandes.
 
@@ -93,7 +93,7 @@ Assista ao vídeo de Visão geral da versão de outubro de 2022 que exibe um res
 
 ## Cloud Manager {#cloud-manager}
 
-Você pode encontrar uma lista completa de versões mensais do Cloud Manager [aqui.](/help/implementing/cloud-manager/release-notes/current.md)
+Você pode encontrar uma lista completa de versões mensais do Cloud Manager [aqui](/help/implementing/cloud-manager/release-notes/current.md).
 
 ## Ferramentas de migração {#migration-tools}
 

@@ -1,17 +1,17 @@
 ---
-title: Opcional - Como criar aplicativos de página única (SPAs) com o AEM
+title: Opcional - Como criar aplicativos de página única (SPA) com Adobe Experience Manager (AEM)
 description: Nesta seção opcional da jornada de desenvolvedor headless do AEM, você aprenderá como o AEM pode combinar a entrega headless com os recursos tradicionais de CMS de pilha completa e como criar SPAs editáveis usando a estrutura do editor de SPA do AEM.
 exl-id: d74848f2-683e-49e1-9374-32596ca5d7d7
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1274'
-ht-degree: 93%
+source-wordcount: '1266'
+ht-degree: 48%
 
 ---
 
 # Como criar aplicativos de página única (SPAs) com o AEM {#create-spa}
 
-Nesta seção opcional da [jornada de desenvolvedor headless do AEM,](overview.md) saiba como o AEM pode combinar a entrega headless com os recursos tradicionais de CMS de pilha completa e como criar SPAs editáveis usando a estrutura do editor de SPA do AEM, bem como integrar SPAs externos, habilitando recursos de edição conforme necessário.
+Nesta continuação facultativa do [Jornada do desenvolvedor sem periféricos do AEM](overview.md), você aprenderá como o AEM pode combinar a entrega headless com os recursos tradicionais do CMS de pilha completa. Você também aprenderá como criar SPA editável usando a estrutura do Editor de AEM e integrar o SPA SPA externo, habilitando recursos de edição conforme necessário.
 
 ## A história até agora {#story-so-far}
 
@@ -24,11 +24,11 @@ A esta altura, você deve ter completado toda a [Jornada de desenvolvedor headle
 * Como recuperar e atualizar conteúdo headless no AEM.
 * Como ativar um projeto do AEM Headless.
 
-Então, atualmente você já ativou seu primeiro projeto do AEM Headless ou tem todo o conhecimento necessário para isso. Parabéns!
+Até agora, vocês ou ativaram seu primeiro projeto AEM Headless ou têm o conhecimento que fazer isso. Parabéns!
 
-Sendo assim, por que você está lendo essa seção adicional e opcional da jornada? Provavelmente você se lembra que na [Introdução](getting-started.md#integration-levels) discutimos brevemente sobre como o AEM não apenas é compatível com a entrega headless e os modelos de pilha completa tradicionais, mas também permite o uso de modelos híbridos que combinam as vantagens de ambos. Embora não sejam o modelo tradicional para headless, esses modelos híbridos podem oferecer uma flexibilidade sem precedentes a certos projetos.
+Então, por que você está lendo esta continuação adicional e opcional da jornada? Você se lembra disso no [Introdução](getting-started.md#integration-levels)No entanto, discutiu-se como o AEM não apenas suporta a entrega headless e modelos tradicionais de pilha completa, mas também suporta modelos híbridos que combinam as vantagens de ambos. Embora não sejam o modelo tradicional para headless, esses modelos híbridos podem oferecer uma flexibilidade sem precedentes a certos projetos.
 
-Este artigo baseia-se no seu conhecimento do AEM Headless, explorando detalhadamente como você pode criar seus próprios aplicativos de página única (SPAs) que são editáveis no AEM. Dessa forma, você pode criar conteúdo e enviá-lo através do método headless para um SPA, enquanto esse SPA permanece editável no AEM.
+Este artigo desenvolve seu conhecimento sobre AEM Headless, explorando em detalhes como você pode criar seus próprios aplicativos de página única (SPA) que são editáveis no AEM. Dessa forma, você pode criar conteúdo e distribuí-lo de forma headless para um SPA, mas esse SPA permanece editável no AEM.
 
 ## Objetivo {#objective}
 
@@ -37,11 +37,11 @@ Este documento ajuda você a entender como aplicativos de página única são de
 * Entender a função básica do editor de SPA.
 * Saber quais são os requisitos para criar uma SPA totalmente editável para o AEM.
 * Entender como SPAs externos podem ser integrados ao AEM.
-* Entender como a renderização no lado do servidor deve ou não deve ser implementada.
+* Entenda como a renderização do lado do servidor pode ou não ser implementada.
 
 ## Requisitos e pré-requisitos {#requirements-prerequisites}
 
-Há uma série de requisitos antes de começar a trabalhar com SPAs no AEM.
+Há vários requisitos antes de começar a trabalhar com o AEM no SPA.
 
 ### Conhecimento {#knowledge}
 
@@ -58,24 +58,24 @@ Há uma série de requisitos antes de começar a trabalhar com SPAs no AEM.
 
 ## O que é um SPA? {#what-is-a-spa}
 
-Um aplicativo de página única (SPA) é diferente de uma página convencional, no sentido de que ele é renderizado no lado do cliente e orientado principalmente por Javascript, dependendo das chamadas do Ajax para carregar dados e atualizar dinamicamente a página. A maior parte ou todo o conteúdo é recuperado uma vez em um único carregamento de página, com os recursos adicionais sendo carregados de forma assíncrona conforme necessário, com base na interação do usuário com a página.
+Um aplicativo de página única (SPA) difere de uma página convencional na medida em que é renderizado no lado do cliente e é principalmente orientado por JavaScript, dependendo de chamadas Ajax para carregar dados e atualizar dinamicamente a página. A maioria ou todos os conteúdos são recuperados uma vez em uma única página carregada com recursos adicionais carregados de forma assíncrona, conforme necessário, com base na interação do usuário com a página.
 
-Isso reduz a necessidade de atualizações de página e apresenta uma experiência ao usuário que é contínua, rápida e se parece mais com uma experiência de aplicativo nativo.
+Essa funcionalidade reduz a necessidade de atualizações de página e apresenta uma experiência ao usuário que é perfeita, rápida e se parece mais com uma experiência de aplicativo nativo.
 
 O editor de SPA do AEM permite que desenvolvedores de front-end criem SPAs que possam ser integrados a um site do AEM, possibilitando que os autores de conteúdo editem o conteúdo do SPA tão facilmente quanto qualquer outro conteúdo do AEM.
 
 ## Por que um SPA? {#why-spa}
 
-Devido a ser mais rápido, fluido e semelhante a um aplicativo nativo, um SPA apresenta uma experiência muito atrativa não apenas para o visitante da página da web, mas também para profissionais de marketing e desenvolvedores, devido à natureza do funcionamento dos SPAs.
+Por ser mais rápido, fluido e mais parecido com um aplicativo nativo, o SPA se torna uma experiência atraente. Isso é bom não apenas para o visitante da página da Web, mas também para profissionais de marketing e desenvolvedores devido à natureza de como o SPA funciona.
 
 Para obter uma descrição completa dos SPAs e por que usá-los, consulte a seção de [recursos adicionais](#additional-resources) que contém links para uma documentação mais detalhada.
 
 ## Como o AEM lida com SPAs
 
-O desenvolvimento de aplicativos de página única no AEM parte do princípio de que o desenvolvedor de front-end segue as práticas recomendadas padronizadas ao criar um SPA. Se, como desenvolvedor de front-end, você seguir essas práticas recomendadas gerais, bem como alguns princípios específicos do AEM, seu SPA se tornará funcional com o AEM e seus recursos de criação de conteúdo.
+O desenvolvimento de aplicativos de página única no AEM parte do princípio de que o desenvolvedor de front-end segue as práticas recomendadas padronizadas ao criar um SPA. Como desenvolvedor front-end, se seguir essas práticas recomendadas gerais e alguns princípios específicos do AEM, seu SPA se tornará funcional com o AEM e seus recursos de criação de conteúdo.
 
 * **Portabilidade** - Assim como com qualquer componente, os componentes do SPA devem ser desenvolvidos para serem tão portáteis quanto possível. O SPA deve ser desenvolvido com componentes portáteis e reutilizáveis.
-* **AEM controla a estrutura do site** - O desenvolvedor de front-end cria componentes e tem a propriedade de sua estrutura interna, mas depende do AEM para definir a estrutura de conteúdo do site.
+* **AEM direciona a estrutura do site** - O desenvolvedor de front-end cria componentes e tem sua estrutura interna, mas depende do AEM para definir a estrutura de conteúdo do site.
 * **Renderização dinâmica** - Todas as renderizações devem ser dinâmicas.
 * **Roteamento dinâmico** - O SPA é responsável pelo roteamento e o AEM o escuta e realiza buscas com base nele. Qualquer roteamento também deve ser dinâmico.
 
@@ -83,19 +83,19 @@ Para obter uma descrição completa de como o AEM lida com SPAs, consulte a seç
 
 ## O editor de SPA do AEM {#aem-spa-editor}
 
-Sites criados usando estruturas de SPA comuns, como React e Angular, carregam seu conteúdo dinamicamente via JSON e não fornecem a estrutura de HTML necessária para que o editor de página do AEM possa estabelecer controles de edição.
+Sites criados usando estruturas comuns de SPA, como o React e o Angular, carregam seu conteúdo por meio do JSON dinâmico. Eles não fornecem a estrutura de HTML necessária para que o Editor de páginas AEM possa colocar controles de edição.
 
-Para habilitar a edição de SPAs no AEM, é necessário um mapeamento entre a saída JSON do SPA e o modelo de conteúdo no repositório do AEM para salvar as alterações no conteúdo.
+Para permitir a edição do AEM no SPA, é necessário fazer um mapeamento entre a saída em JSON do SPA e o modelo de conteúdo no repositório do AEM para que você possa salvar as alterações no conteúdo.
 
-A compatibilidade com SPA no AEM apresenta uma camada de JS sutil que interage com o código JS do SPA quando ele é carregado no editor de página através do qual os eventos podem ser enviados, sendo assim, o local dos controles de edição pode ser ativado para permitir a edição de acordo com o contexto. Esse recurso tem como base o conceito do ponto de acesso da API de serviços de conteúdo, pois o conteúdo do SPA precisa ser carregado por meio dos serviços de conteúdo.
+O suporte ao SPA no AEM introduz uma camada fina de JavaScript que interage com o código JavaScript do SPA quando carregado no Editor de páginas com o qual os eventos podem ser enviados. O local dos controles de edição pode ser ativado para permitir a edição no contexto. Esse recurso se baseia no conceito de endpoint da API de serviços de conteúdo, pois o conteúdo do SPA deve ser carregado por meio dos serviços de conteúdo.
 
 Para obter uma descrição completa do editor de SPA do AEM, consulte a seção de [recursos adicionais](#additional-resources) que fornece links para uma documentação mais detalhada.
 
 ## Acomodando SPAs existentes {#existing-spas}
 
-Se você tiver um SPA existente, o AEM permite a sua integração para que ele seja disponibilizado aos autores de conteúdo no Editor AEM. Isso pode ser muito útil para visualizar o conteúdo que eles estão criando por meio dos Fragmentos de conteúdo no contexto do aplicativo final em que é consumido.
+Se você tiver um SPA existente, o AEM suporta a incorporação dele no AEM para que seja visível aos autores de conteúdo no Editor de AEM. Essa capacidade pode ser útil para visualizar o conteúdo que estão criando por meio dos Fragmentos de conteúdo no contexto do aplicativo final em que é consumido.
 
-Além disso, com algumas pequenas alterações, é possível conceder determinada capacidade de edição para o SPA externo no Editor AEM.
+Além disso, com apenas pequenas alterações, é possível habilitar determinados recursos de edição para o SPA externo no Editor de AEM.
 
 O componente RemotePage permite a renderização de um SPA externo no AEM.
 
@@ -109,7 +109,7 @@ Para começar a desenvolver seus próprios SPAs para o AEM, revise os seguintes 
 * [Introdução à utilização do React](/help/implementing/developing/hybrid/getting-started-react.md)
 * [Introdução à utilização do Angular](/help/implementing/developing/hybrid/getting-started-angular.md)
 
-Se precisar adaptar um SPA existente para usá-lo no AEM, revise os seguintes documentos:
+Se você precisar adaptar um SPA existente para usá-lo no AEM, revise os seguintes documentos:
 
 * [O componente RemotePage](/help/implementing/developing/hybrid/remote-page.md)
 * [Edição de um SPA externo no AEM](/help/implementing/developing/hybrid/editing-external-spa.md)
@@ -121,10 +121,10 @@ Veja abaixo os [recursos adicionais](#additional-resources) que abordam tópicos
 Veja a seguir alguns recursos adicionais que explicam melhor alguns conceitos mencionados neste documento.
 
 * [Headful e headless no AEM](/help/implementing/developing/headful-headless.md): uma descrição dos diferentes modelos de entrega disponíveis no AEM
-* [Introdução e passo a passo do SPA.](/help/implementing/developing/hybrid/introduction.md): uma boa introdução a SPAs no AEM
+* [Introdução e passo a passo do SPA](/help/implementing/developing/hybrid/introduction.md) - Uma boa introdução ao AEM no SPA.
 * [Desenvolvimento de SPAs para o AEM](/help/implementing/developing/hybrid/developing.md): diretrizes sobre como desenvolver SPAs para o AEM
 * [Visão geral do editor de SPA](/help/implementing/developing/hybrid/editor-overview.md): detalhes de como o editor de SPA funciona
-* [Renderização do lado do servidor](/help/implementing/developing/hybrid/ssr.md): como configurar o SSR para SPAs do AEM
-* [Documentos de referência de SPA](/help/implementing/developing/hybrid/reference-materials.md): referências da API JavaScript e links para projetos de código aberto do GitHub para SPAs do AEM
+* [Renderização do lado do servidor](/help/implementing/developing/hybrid/ssr.md) - Como configurar o SSR para SPA AEM
+* [Documentos de referência do SPA](/help/implementing/developing/hybrid/reference-materials.md) AEM - Referências de API JavaScript e links para os projetos de SPA GitHub de código aberto
 * [Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments.md): como criar fragmentos de conteúdo
 * [Arquétipo de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR): modelo do Maven que cria um projeto simples do Adobe Experience Manager (AEM) com base em práticas recomendadas para ser usado como o ponto de partida do seu site

@@ -2,10 +2,10 @@
 title: Tarefas de manutenção no AEM as a Cloud Service
 description: Tarefas de manutenção no AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1107'
-ht-degree: 60%
+ht-degree: 63%
 
 ---
 
@@ -44,7 +44,7 @@ A tabela a seguir ilustra as tarefas de manutenção disponíveis no momento do 
   <tr>
     <td>Remoção da versão</td>
     <td>Adobe</td>
-    <td>Para ambientes existentes (aqueles criados antes de 1° de junho de 2023), a limpeza está desativada e não será ativada no futuro, a menos que seja explicitamente ativada pelo cliente, momento em que ele também poderá configurá-la com valores personalizados.<br><br> <!--Alexandru: please leave the two line breaks in place, otherwise spacing won't render properly-->Os novos ambientes (criados a partir de 1 de junho de 2023) terão a limpeza ativada por padrão com os valores abaixo, com os clientes podendo configurar com valores personalizados.
+    <td>Para ambientes existentes (aqueles criados antes de 1° de junho de 2023), a limpeza está desativada e não será ativada no futuro, a menos que seja explicitamente ativada pelo cliente, momento em que ele também poderá configurá-la com valores personalizados.<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->Os novos ambientes (criados a partir de 1 de junho de 2023) terão a limpeza ativada por padrão com os valores abaixo, com os clientes podendo configurar com valores personalizados.
      <ol>
        <li>Versões com mais de 30 dias são removidas</li>
        <li>As 5 versões mais recentes nos últimos 30 dias são mantidas</li>

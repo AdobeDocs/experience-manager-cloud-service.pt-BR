@@ -2,9 +2,9 @@
 title: Uso de bibliotecas do lado do cliente no AEM as a Cloud Service
 description: O AEM fornece Pastas de bibliotecas do lado do cliente, que permitem armazenar o código do lado do cliente (clientlibs) no repositório, organizá-lo em categorias e definir quando e como cada categoria de código deve ser entregue ao cliente
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2562'
+source-wordcount: '2556'
 ht-degree: 1%
 
 ---
@@ -21,17 +21,17 @@ As vantagens de usar clientlibs no AEM incluem:
 * Exponha clientlibs por meio de um caminho acessível por meio do [dispatcher](/help/implementing/dispatcher/disp-overview.md)
 * Permite a regravação de caminhos para arquivos ou imagens referenciados
 
-As clientlibs são a solução integrada para fornecer CSS e Javascript pelo AEM.
+As clientlibs são a solução integrada para fornecer CSS e JavaScript do AEM.
 
 >[!TIP]
 >
->Desenvolvedores de front-end que estão criando projetos CSS e Javascript para AEM também devem se familiarizar com o [Arquétipo de projeto AEM e seu processo de build front-end automatizado.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)
+>Desenvolvedores de front-end que estão criando projetos CSS e JavaScript para AEM também devem se familiarizar com o [Arquétipo de projeto AEM e seu processo de build front-end automatizado.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)
 
 ## O que são bibliotecas do lado do cliente {#what-are-clientlibs}
 
-Os sites exigem JavaScript e CSS, bem como recursos estáticos, como ícones e fontes da Web, para serem processados no lado do cliente. Uma clientlib é um mecanismo AEM para fazer referência (por categoria, se necessário) e servir esses recursos.
+Os sites exigem JavaScript e CSS, e recursos estáticos, como ícones e fontes da Web, para serem processados no lado do cliente. Uma clientlib é um mecanismo AEM para fazer referência (por categoria, se necessário) e servir esses recursos.
 
-O AEM coleta o CSS e o Javascript do site em um único arquivo, em um local central, para garantir que apenas uma cópia de qualquer recurso seja incluída na saída do HTML. Isso maximiza a eficiência da entrega e permite que esses recursos sejam mantidos centralmente no repositório via proxy, mantendo o acesso seguro.
+O AEM coleta o CSS e o JavaScript do site em um único arquivo, em um local central, para garantir que apenas uma cópia de qualquer recurso seja incluída na saída do HTML. Isso maximiza a eficiência da entrega e permite que esses recursos sejam mantidos centralmente no repositório via proxy, mantendo o acesso seguro.
 
 ## Desenvolvimento front-end para AEM as a Cloud Service {#fed-for-aemaacs}
 
@@ -189,7 +189,7 @@ As propriedades adicionais da pasta incluem permitir controle de dependências e
 
 ### Vinculação a Dependências {#linking-to-dependencies}
 
-Quando o código na pasta da biblioteca do cliente fizer referência a outras bibliotecas, identifique as outras bibliotecas como dependências. A variável `ui:includeClientLib` A tag que faz referência à pasta da biblioteca do cliente faz com que o código HTML inclua um link para o arquivo de biblioteca gerado, bem como as dependências.
+Quando o código na pasta da biblioteca do cliente fizer referência a outras bibliotecas, identifique as outras bibliotecas como dependências. A variável `ui:includeClientLib` a tag que faz referência à pasta da biblioteca do cliente faz com que o código HTML inclua um link para o arquivo de biblioteca gerado e as dependências.
 
 As dependências devem ser outras `cq:ClientLibraryFolder`. Para identificar dependências, adicione uma propriedade à `cq:ClientLibraryFolder` com os seguintes atributos:
 

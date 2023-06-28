@@ -2,7 +2,7 @@
 title: Perguntas frequentes sobre o Cloud Manager
 description: Encontre respostas para as perguntas mais frequentes sobre o Cloud Manager no AEM as a Cloud Service.
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '987'
 ht-degree: 65%
@@ -58,11 +58,11 @@ Esse valor permite que a implantação subsequente ainda seja instalada quando a
 
 Você também pode definir a versão como `-SNAPSHOT` para compilações ou implantações de preparo ou de produção. O Cloud Manager define automaticamente um número de versão adequado e cria uma tag para você no Git. Se necessário, essa tag pode ser consultada posteriormente.
 
-Mais detalhes sobre o manuseio de versão estão [documentados aqui.](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
+Mais detalhes sobre o manuseio de versão estão [documentados aqui](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
 
 ## Como funciona o controle de versão dos pacotes para implantações de preparo e produção? {#snapshot-version}
 
-Em implantações de preparo e produção, uma versão automática é gerada como [documentado aqui.](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
+Em implantações de preparo e produção, uma versão automática é gerada como [documentado aqui](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
 
 Para o controle de versão personalizado em implantações de preparo e produção, defina uma versão maven adequada com três partes como `1.0.0`. Aumente a versão sempre que implantar na produção.
 

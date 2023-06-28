@@ -2,10 +2,10 @@
 title: Criação de modelos de páginas
 description: O modelo define a estrutura da página resultante e, com o editor de modelo, criar e manter modelos não é mais uma tarefa somente para desenvolvedores
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '4579'
-ht-degree: 58%
+source-wordcount: '4577'
+ht-degree: 57%
 
 ---
 
@@ -28,7 +28,7 @@ A variável **Editor de modelo** permite que os autores de modelo:
 
 Este documento explica como uma **autor do modelo** Você pode usar o console e o editor de modelos para criar e gerenciar modelos editáveis.
 
-Para obter informações detalhadas sobre como os modelos editáveis funcionam em nível técnico, consulte o documento do desenvolvedor [Modelos de página](/help/implementing/developing/components/templates.md).
+Para obter informações detalhadas sobre como os modelos editáveis funcionam em nível técnico, consulte o documento do desenvolvedor [Modelos de página](/help/implementing/developing/components/templates.md) para obter mais informações.
 
 >[!NOTE]
 >
@@ -266,7 +266,7 @@ Quando um componente tiver sido desbloqueado, você poderá definir a variável 
 
 >[!NOTE]
 >
->No modo de **conteúdo inicial**, bem como nas páginas resultantes, todos os componentes desbloqueados que tenham um pai acessível (isto é, componentes dentro de um contêiner de layout) podem ser excluídos.
+>Entrada **Conteúdo inicial** e nas páginas resultantes, todos os componentes desbloqueados que tenham um pai acessível (isto é, componentes dentro de um contêiner de layout) podem ser excluídos.
 
 #### Layout {#template-layout}
 

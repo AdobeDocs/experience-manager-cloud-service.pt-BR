@@ -4,10 +4,10 @@ description: Entenda como as variações permitem criar conteúdo para o fragmen
 feature: Content Fragments
 role: User
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2469'
-ht-degree: 86%
+source-wordcount: '2463'
+ht-degree: 84%
 
 ---
 
@@ -90,7 +90,7 @@ O editor de texto em tela cheia fornece:
 
 ### Ações {#actions}
 
-As seguintes ações também estão disponíveis (para todos os [formatos](#formats)) quando o editor de tela cheia (ou seja, texto multilinha) estiver aberto:
+As seguintes ações também estão disponíveis (para todas as [formatos](#formats)) quando o editor de tela cheia (ou seja, texto multilinha) estiver aberto:
 
 * Selecionar o [formato](#formats) ([Rich text](#rich-text), [Texto sem formatação](#plain-text) ou [Markdown](#markdown))
 
@@ -197,8 +197,8 @@ Será possível criar um novo fragmento ao:
 1. Especificar propriedades; por exemplo, **Título**.
 1. Selecionar **Criar**.
 1. Finalmente:
-   1. **Concluído** retornará para o fragmento original e referenciará o novo fragmento.
-   1. **Abrir** referenciará o novo fragmento e o abrirá para edição em uma nova guia do navegador.
+   1. **Concluído** retorna (para o fragmento original) e faz referência ao novo fragmento.
+   1. **Abertura** O faz referência ao novo fragmento e o abre para edição em uma nova guia do navegador.
 
 ### Visualizar as principais estatísticas {#viewing-key-statistics}
 
@@ -438,7 +438,7 @@ Para renomear uma variação existente:
 
 1. Abra o fragmento e selecione **Variações** no painel lateral.
 1. Selecione a variação necessária.
-1. Selecione **Renomear** no menu suspenso **Ações**.
+1. Selecionar **Renomear** do **Ações** menu suspenso.
 
 1. Digite o novo **Título** e/ou **Descrição** na caixa de diálogo resultante.
 
@@ -454,7 +454,7 @@ Para excluir uma variação existente:
 
 1. Abra o fragmento e selecione **Variações** no painel lateral.
 1. Selecione a variação necessária.
-1. Selecione **Excluir** no menu suspenso de **Ações**.
+1. Selecionar **Excluir** do **Ações** menu suspenso.
 
 1. Confirme a ação de **Exclusão** na caixa de diálogo.
 
@@ -482,7 +482,7 @@ A transferência de alterações *de uma variação para o **Principal*** não e
 
 1. Selecione uma variação específica e, em seguida, a ação de sincronização apropriada:
 
-   * no seletor suspenso de **Ações** — **Sincronizar elemento atual com o Principal**
+   * o **Ações** seletor suspenso - **Sincronizar elemento atual com o principal**
 
      ![sincronização com o Principal](assets/cfm-variations-11a.png)
 

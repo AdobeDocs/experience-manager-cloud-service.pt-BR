@@ -2,9 +2,9 @@
 title: Publicação
 description: Saiba como executar a migração depois que o código e o conteúdo estiverem prontos para nuvem
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1720'
+source-wordcount: '1710'
 ht-degree: 4%
 
 ---
@@ -28,11 +28,11 @@ Nas fases anteriores da jornada:
 
 ## Objetivo {#objective}
 
-Este documento ajudará você a entender como executar a migração para o AEM as a Cloud Service depois de conhecer as etapas anteriores da jornada. Você aprenderá a executar a migração de produção inicial, bem como as práticas recomendadas a serem seguidas ao migrar para o AEM as a Cloud Service.
+Este documento ajuda você a entender como executar a migração para o AEM as a Cloud Service depois de conhecer as etapas anteriores da jornada. Você aprenderá a executar a migração de produção inicial e as práticas recomendadas a serem seguidas ao migrar para o AEM as a Cloud Service.
 
 ## Migração de produção inicial {#initial-migration}
 
-Antes de executar a migração de produção, siga as etapas de instalação e prova de migração descritas na seção [Estratégia e cronograma de migração de conteúdo](/help/journey-migration/implementation.md##strategy-timeline) seção do [Fase de implementação](/help/journey-migration/implementation.md).
+Antes de executar a migração de produção, siga as etapas de ajuste e prova de migração descritas na seção [Estratégia e cronograma de migração de conteúdo](/help/journey-migration/implementation.md##strategy-timeline) seção do [Fase de implementação](/help/journey-migration/implementation.md).
 
 * Inicie a migração da produção com base na experiência adquirida durante a migração do estágio de AEM as a Cloud Service executada em clones:
    * Autor-Autor
@@ -95,7 +95,7 @@ Lembre-se, a carga na fonte AEM é maior durante a fase de extração. Você dev
 
 ## Limitações conhecidas {#known-limitations}
 
-Considere que toda a assimilação falhará se qualquer uma das seguintes limitações for encontrada como parte do conjunto de migração extraído:
+Leve em consideração que toda a assimilação falhará se qualquer uma das seguintes limitações for encontrada como parte do conjunto de migração extraído:
 
 * Um Nó JCR que tem um nome com mais de 150 caracteres
 * Um Nó JCR com mais de 16 MB
@@ -120,7 +120,7 @@ Revise esta lista de atividades para garantir que você execute uma migração t
    * [Teste funcional personalizado](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)
    * [Teste de interface](/help/implementing/cloud-manager/ui-testing.md)
 * Migre o conteúdo para produção e verifique se um subconjunto relevante está disponível no ambiente de preparo para testes.
-   * Observe que as práticas recomendadas de DevOps para AEM implicam que o código passa do desenvolvimento para o ambiente de produção, enquanto o conteúdo passa dos ambientes de produção.
+   * As práticas recomendadas de DevOps para AEM implicam que o código passa do desenvolvimento para o ambiente de produção, enquanto o conteúdo passa dos ambientes de produção.
 * Programar um período de congelamento do código e do conteúdo.
    * Consulte também a seção [Cronogramas de congelamento de código e conteúdo para a migração](#code-content-freeze)
 * Faça a complementação do conteúdo final.

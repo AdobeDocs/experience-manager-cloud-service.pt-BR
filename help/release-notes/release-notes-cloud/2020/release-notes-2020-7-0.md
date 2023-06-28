@@ -2,10 +2,10 @@
 title: Notas de versão do  [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0.
 description: "[!DNL Adobe Experience Manager] Notas de versão as a Cloud Service para 2020.7.0."
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1038'
-ht-degree: 82%
+source-wordcount: '1033'
+ht-degree: 78%
 
 ---
 
@@ -66,7 +66,7 @@ A versão 2.11.0 dos [Componentes principais do AEM](https://experienceleague.ad
 * Introdução de um novo [Visualizador de PDF](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/pdf-viewer.html).
 
 * O suporte para Accelerated Mobile Pages (AMP) dos Componentes principais já está disponível. As páginas AMP ajudam a produzir experiências mais rápidas para o cliente, fazendo a transição da página de maneira instantânea ao entrar no site a partir de um resultado de pesquisa do Google para dispositivos móveis, o que melhora a participação do usuário e o SEO.
-Consulte [Suporte AMP para os Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html) para obter mais detalhes
+Consulte [Suporte AMP para os Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html) para obter mais detalhes.
 
 * Compatibilidade com a versão 1.0.2 da [Camada de dados do cliente da Adobe](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=pt-BR).
 
@@ -88,12 +88,12 @@ A data de lançamento da versão 2020.7.0 do [!UICONTROL Cloud Manager] é 9 de 
 
 * Os pipelines do Cloud Manager agora oferecem suporte a variáveis e segredos definidos pelo cliente.
 
-  Consulte Variáveis de pipeline para saber mais.
+  Consulte Variáveis de pipeline para obter mais detalhes.
 
 * Agora há suporte aos Repositórios Maven privados vinculados à autenticação.
 
 * O container de build do Cloud Manager agora é compatível com Java 8 e Java 11.
-Consulte Como usar o suporte ao Java 11 para obter mais detalhes.
+Consulte Uso do suporte ao Java 11 para obter mais detalhes.
 
 ### Correções de erros {#bug-fixes-cm}
 

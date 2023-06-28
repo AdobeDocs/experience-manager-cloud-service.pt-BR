@@ -2,9 +2,9 @@
 title: Notas de versão do [!DNL Adobe Experience Manager]  as a Cloud Service 2021.3.0.
 description: "[!DNL Adobe Experience Manager] Notas de versão as a Cloud Service para 2021.3.0."
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1295'
+source-wordcount: '1290'
 ht-degree: 37%
 
 ---
@@ -161,7 +161,7 @@ A data de lançamento do Analisador de práticas recomendadas v2.1.8 é 22 de ma
 
 ### Novidades do Analisador de práticas recomendadas {#what-is-new-bpa}
 
-* Capacidade de filtrar conclusões do ACS Commons do relatório BPA na interface do usuário, bem como do relatório exportado como um arquivo CSV.
+* Capacidade de filtrar conclusões do ACS Commons do relatório BPA na interface do usuário e do relatório exportado como um arquivo CSV.
 
 ## Ferramentas de refatoração de código {#code-refactoring-tools}
 

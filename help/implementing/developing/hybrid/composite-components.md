@@ -2,7 +2,7 @@
 title: Composite Components em SPAs
 description: Saiba como criar seus próprios componentes compostos, componentes compostos por outros componentes que funcionam com o editor de aplicativo de página única (SPA) do AEM.
 exl-id: fa1ab1dd-9e8e-4e2c-aa9a-5b46ed8a02cb
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '782'
 ht-degree: 1%
@@ -19,7 +19,7 @@ Este artigo demonstra como você pode adicionar um componente composto ao seu ap
 
 ## Caso de uso  {#use-case}
 
-Este artigo usará o componente de cartão típico como exemplo de caso de uso. Os cartões são um elemento comum da interface do usuário para muitas experiências digitais e geralmente são compostos de uma imagem e texto ou legenda associados. Um autor deseja poder arrastar e soltar todo o cartão, mas pode editar individualmente a imagem do cartão, bem como personalizar o texto associado.
+Este artigo usará o componente de cartão típico como exemplo de caso de uso. Os cartões são um elemento comum da interface do usuário para muitas experiências digitais e geralmente são compostos de uma imagem e texto ou legenda associados. Um autor deseja poder arrastar e soltar todo o cartão, mas poder editar individualmente a imagem do cartão e personalizar o texto associado.
 
 ## Pré-requisitos {#prerequisites}
 
@@ -156,7 +156,7 @@ Você pode então adicioná-lo ao SPA e recuperar seu conteúdo.
     itemPath='root/responsivegrid' />
    ```
 
-1. Adicionar o criado `wknd-spa/components/imagecard` aos componentes permitidos para o componente de contêiner [no modelo de página.](/help/sites-cloud/authoring/features/templates.md)
+1. Adicionar o criado `wknd-spa/components/imagecard` aos componentes permitidos para o componente de contêiner [no modelo de página](/help/sites-cloud/authoring/features/templates.md).
 
 Agora a variável `imagecard` pode ser adicionado diretamente ao contêiner no editor de AEM.
 

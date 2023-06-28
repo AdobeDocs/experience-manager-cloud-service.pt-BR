@@ -2,10 +2,10 @@
 title: Notas de versão do [!DNL Adobe Experience Manager]  as a Cloud Service 2021.6.0.
 description: Notas de versão do [!DNL Adobe Experience Manager]  as a Cloud Service 2021.6.0.
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1441'
-ht-degree: 33%
+source-wordcount: '1437'
+ht-degree: 29%
 
 ---
 
@@ -66,7 +66,7 @@ A próxima versão está planejada para 15 de julho de 2021.
 
   ![Ambientes do Dispatcher](/help/implementing/cloud-manager/release-notes/assets/aem-dispatcher.png)
 
-* Uma nova regra de qualidade do código foi adicionada para validar a estrutura dos índices `damAssetLucene`. Consulte [Índices Oak Lucese Asset DAM personalizados](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check) para obter mais detalhes.
+* Uma nova regra de qualidade do código foi adicionada para validar a estrutura dos índices `damAssetLucene`. Consulte [Índices DAM Asset Lucene Oak personalizados](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check) para obter mais detalhes.
 
 * A página Detalhes do ambiente agora exibe vários nomes de domínio para os serviços de publicação e visualização (conforme aplicável). Consulte [Detalhes do ambiente](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) para obter mais detalhes.
 

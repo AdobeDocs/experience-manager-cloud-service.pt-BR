@@ -2,7 +2,7 @@
 title: Trabalhar com fluxos de trabalho de projeto
 description: Vários fluxos de trabalho de projeto estão disponíveis imediatamente.
 exl-id: a5c9a6df-7def-43f3-b41b-524a4f4211e9
-source-git-commit: 89972691dadb9573160ba16a220c5b7cb3ae9742
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 46%
@@ -21,18 +21,18 @@ Os fluxos de trabalho de projeto disponíveis prontos para uso incluem o seguint
 
 Dependendo do Modelo de projeto selecionado, há determinados fluxos de trabalho disponíveis:
 
-|  | **Projeto simples** | **Projeto de tradução** |
+|   | **Projeto simples** | **Projeto de tradução** |
 |---|:-:|:-:|
 | Fluxo de trabalho de aprovação de projeto | x |  |
 | Solicitar inicialização | x |  |
 | Solicitar página de aterrissagem | x |  |
-| Solicitar email | x |  |
+| Solicitar email | x | |
 | Criar cópia de idioma do DAM&amp;ast; |  | x |
-| Criar e traduzir cópia de idioma do DAM;&amp;ast; |  | x |
+| Criar e traduzir cópia de idioma do DAM;&amp;ast; |   | x |
 
 >[!NOTE]
 >
->&amp;ast; Esses fluxos de trabalho não são iniciados no bloco **Fluxo de trabalho** em Projetos. Consulte [Criação de cópias de idioma para ativos.](/help/sites-cloud/administering/translation/managing-projects.md)
+>&amp;ast; Esses fluxos de trabalho não são iniciados no bloco **Fluxo de trabalho** em Projetos. Consulte [Criação de cópias de idioma para ativos](/help/sites-cloud/administering/translation/managing-projects.md).
 
 As etapas para iniciar e concluir workflows são as mesmas, independentemente do workflow escolhido. Somente as etapas são alteradas.
 

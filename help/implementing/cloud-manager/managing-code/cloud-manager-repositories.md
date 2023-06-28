@@ -2,10 +2,10 @@
 title: Repositórios do Cloud Manager
 description: Saiba como criar, exibir e excluir repositórios Git no Cloud Manager.
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 96%
+source-wordcount: '575'
+ht-degree: 88%
 
 ---
 
@@ -18,7 +18,7 @@ Saiba como criar, exibir e excluir repositórios Git no Cloud Manager.
 >
 >Há um limite de 300 repositórios em todos os programas em uma determinada empresa ou organização IMS.
 
-## Adição e gerenciamento de repositórios {#add-manage-repos}
+## Adicionar e gerenciar repositórios {#add-manage-repos}
 
 Siga estas etapas para exibir e gerenciar repositórios no Cloud Manager.
 
@@ -38,7 +38,7 @@ Você pode selecionar o repositório na tabela, clicar no botão de reticências
 
 ![Opções do repositório](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
 
-Os repositórios criados no Cloud Manager também estarão disponíveis para seleção ao adicionar ou editar pipelines. Consulte o documento [Pipelines de CI-CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) para saber mais.
+Os repositórios criados no Cloud Manager também estarão disponíveis para seleção ao adicionar ou editar pipelines. Consulte [Pipelines de CI-CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) para saber mais.
 
 Há um único repositório principal ou uma ramificação para um determinado pipeline. Com o [suporte ao submódulo Git](#git-submodule-support), várias ramificações secundárias podem ser incluídas no momento da compilação.
 
@@ -76,7 +76,7 @@ $ git submodule update --init
 
 Essa técnica é uma possível alternativa à solução descrita no documento [Trabalho com vários repositórios Git de origem](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md) para organizações familiarizadas com o uso de submódulos Git e que não desejam gerenciar um processo de mesclagem externo.
 
-Por exemplo, digamos que existam três repositórios, cada um contendo uma única ramificação chamada `main`. No repositório principal, ou seja, aquele configurado nos pipelines, a ramificação `main` tem um arquivo `pom.xml` que declara os projetos contidos nos outros dois repositórios.
+Por exemplo, digamos que existam três repositórios, cada um contendo uma única ramificação chamada `main`. No repositório principal, ou seja, aquele configurado nos pipelines, a variável `main` a ramificação tem um `pom.xml` arquivo que declara os projetos contidos nos outros dois repositórios.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -121,7 +121,7 @@ Mais informações sobre os submódulos Git podem ser encontradas na seção [Ma
 
 ### Limitações e recomendações {#limitations-recommendations}
 
-Ao usar submódulos Git, esteja ciente das limitações a seguir.
+Ao usar submódulos do Git, esteja ciente das limitações a seguir.
 
 * A URL do Git deve seguir exatamente a sintaxe descrita na seção anterior.
 * Somente há suporte aos submódulos na raiz da ramificação.

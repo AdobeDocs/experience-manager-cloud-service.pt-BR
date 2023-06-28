@@ -1,10 +1,10 @@
 ---
 title: Processo de provisionamento - Visão geral
 description: Processo de provisionamento - Visão geral
-source-git-commit: ffeda76f9c661117ddba50588ebea01d151ee8c3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 100%
+source-wordcount: '330'
+ht-degree: 95%
 
 ---
 
@@ -34,7 +34,7 @@ Quando o provisionamento automático for concluído:
 ![processoverview.jpg](assets/processOverview.jpg)
 
 
-Para obter mais informações, acesse [Integração do Experience Manager as a Cloud Service na Experience League](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=pt-BR)
+Para obter mais informações, consulte [Integração com o Experience Manager as a Cloud Service no Experience League](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=pt-BR).
 
 ### Recursos e links
 

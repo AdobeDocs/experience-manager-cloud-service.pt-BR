@@ -2,9 +2,9 @@
 title: Gerenciamento de ambientes
 description: Saiba mais sobre os tipos de ambientes que você pode criar e como criá-los para o seu projeto do Cloud Manager.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2276'
+source-wordcount: '2274'
 ht-degree: 37%
 
 ---
@@ -163,7 +163,7 @@ Um usuário com as permissões necessárias deve concluir as etapas a seguir ant
 
    * Consulte [Aplicando e desaplicando Listas de permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) para obter mais detalhes.
 
-1. Use o fluxo de trabalho da **Lista de permissões de IP** para remover o IP padrão e adicionar IPs conforme apropriado. Consulte [Gerenciamento de listas de permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md) para saber mais.
+1. Use o fluxo de trabalho da **Lista de permissões de IP** para remover o IP padrão e adicionar IPs conforme apropriado. Consulte [Gerenciamento de Listas de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md) para saber mais.
 
 Depois que o acesso ao serviço de visualização é desbloqueado, o ícone de bloqueio na frente do nome do serviço de visualização não é mais exibido.
 

@@ -2,10 +2,10 @@
 title: Como executar o aplicativo headless
 description: Nesta parte da Jornada do desenvolvedor headless do AEM, saiba como implantar um aplicativo headless, colocando seu código local no Git e movendo-o para o Git do Cloud Manager para o pipeline de CI/CD.
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1065'
-ht-degree: 94%
+source-wordcount: '1066'
+ht-degree: 93%
 
 ---
 
@@ -124,7 +124,7 @@ Ou você já lançou seu primeiro projeto Headless do AEM ou agora tem todo o co
 
 ### Explore os Aplicativos de página única {#explore-spa}
 
-Armazenamento headless no AEM não precisa parar aqui. Você deve se lembrar que na [Parte de Introdução da jornada](getting-started.md#integration-levels) discutimos brevemente como o AEM não só é compatível com as entregas headless e os modelos de pilha completa tradicionais, como também é compatível com modelos híbridos que combinam as vantagens de ambos.
+No entanto, as lojas headless no AEM não precisam parar aqui. Você deve se lembrar que na [Parte de Introdução da jornada](getting-started.md#integration-levels) discutimos brevemente como o AEM não só é compatível com as entregas headless e os modelos de pilha completa tradicionais, como também é compatível com modelos híbridos que combinam as vantagens de ambos.
 
 Se esse tipo de flexibilidade é algo que você precisa para o seu projeto, continue para a parte adicional opcional da jornada, [Como criar Aplicativos de página única (SPAs) com o AEM.](create-spa.md)
 

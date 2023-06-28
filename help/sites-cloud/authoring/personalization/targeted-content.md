@@ -2,9 +2,9 @@
 title: Criação de conteúdo direcionado usando o modo Direcionar
 description: O modo Direcionar e o componente de Direcionamento fornecem ferramentas para criar conteúdo para experiências
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '5412'
+source-wordcount: '5410'
 ht-degree: 44%
 
 ---
@@ -445,7 +445,7 @@ Se você tiver uma atividade de teste A/B, os públicos-alvo estarão à esquerd
 
 ## Metas e configurações: configuração da atividade e definição de metas {#goals-settings-configuring-the-activity-and-setting-goals}
 
-A etapa Metas e configurações do [processo de direcionamento](#the-targeting-process-create-target-and-goals-settings) envolve a configuração do comportamento da atividade da marca. Especifique quando a atividade começa e termina, bem como a prioridade da atividade. Além disso, você também rastreia metas. Especificamente, você pode decidir o que deseja medir com suas atividades.
+A etapa Metas e configurações do [processo de direcionamento](#the-targeting-process-create-target-and-goals-settings) envolve a configuração do comportamento da atividade da marca. Especifique quando a atividade começa e termina e a prioridade da atividade. Além disso, você também rastreia metas. Especificamente, você pode decidir o que deseja medir com suas atividades.
 
 As Métricas de meta só estarão disponíveis se você usar o Adobe Target no mecanismo de direcionamento. Você deve definir pelo menos uma métrica de meta. Se o Adobe Analytics estiver configurado e tiver uma configuração de nuvem A4T do Analytics, você poderá selecionar se deseja que a fonte de relatórios seja o Adobe Target ou o Adobe Analytics.
 
@@ -549,7 +549,7 @@ Para definir metas e configurações se estiver usando o Adobe Target:
 1. Se quiser ter mais controle sobre como as métricas de sucesso são contadas, clique ou toque em **Configurações avançadas** para acessá-las.
 1. Clique em **Salvar**.
 
-Após a configuração, é possível [visualizar o desempenho de suas atividades](/help/sites-cloud/authoring/personalization/activities.md#viewing-performance-and-converting-winning-experiences-a-b-test) que usam Adobe Target (experiência ou direcionamento de teste A/B). Além disso, com o direcionamento de teste A/B, é possível [converta os vencedores.](/help/sites-cloud/authoring/personalization/activities.md#viewing-performance-and-converting-winning-experiences-a-b-test)
+Após a configuração, é possível [visualizar o desempenho de suas atividades](/help/sites-cloud/authoring/personalization/activities.md#viewing-performance-and-converting-winning-experiences-a-b-test) que usam Adobe Target (experiência ou direcionamento de teste A/B). Além disso, com o direcionamento de teste A/B, é possível [converter os vencedores](/help/sites-cloud/authoring/personalization/activities.md#viewing-performance-and-converting-winning-experiences-a-b-test).
 
 ## Simulação de uma experiência {#simulating-an-experience}
 
@@ -634,4 +634,4 @@ Se você selecionar Adobe Target como mecanismo:
 >
 >Selecione **ContextHub** como mecanismo se estiver usando o ContextHub para o direcionamento. Consulte Configurar o ContextHub para obter mais informações.
 <!--You select **Adobe Campaign** as the engine if you are integrating AEM with Adobe Campaign. See [Integrating AEM with Adobe Campaign](/help/sites-administering/campaign.md) for more information.-->
-<!--Select **ContextHub** as the engine if you are using ContextHub for targeting. See [Configuring ContextHub.](/help/sites-administering/contexthub-config.md)-->
+<!--Select **ContextHub** as the engine if you are using ContextHub for targeting. See [Configuring ContextHub](/help/sites-administering/contexthub-config.md).-->

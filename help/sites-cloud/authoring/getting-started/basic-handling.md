@@ -2,9 +2,9 @@
 title: Manuseio básico
 description: Familiarize-se com a navegação pelo AEM e seu uso básico
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2986'
+source-wordcount: '2978'
 ht-degree: 71%
 
 ---
@@ -42,7 +42,7 @@ A visão geral será reiniciada na próxima vez que você acessar um console a m
 
 ## Navegação global {#global-navigation}
 
-É possível navegar entre os consoles usando o painel de navegação global. É acionado como um menu suspenso de tela cheia quando você clica ou toca no link do Adobe Experience Manager na parte superior esquerda da tela.
+É possível navegar entre os consoles usando o painel de navegação global. É acionado como uma lista suspensa de tela cheia quando você clica ou toca no link do Adobe Experience Manager na parte superior esquerda da tela.
 
 Você pode fechar o painel de navegação global clicando ou tocando em **Fechar** para retornar ao seu local anterior.
 
@@ -71,7 +71,7 @@ Em Navegação, os consoles disponíveis são:
 | Sites | O console Sites permite [criar, exibir e gerenciar sites](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) em execução na sua instância do AEM. Por meio desse console, você pode criar, copiar, mover e excluir páginas, iniciar fluxos de trabalho e publicar páginas. |
 | Fragmentos de experiência | Um [Fragmento de experiência](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) é uma experiência independente que pode ser reutilizada em vários canais e que apresenta variações, evitando o trabalho de copiar e colar repetidamente as experiências ou partes das experiências. |
 | Ativos | O console de Ativos permite importar e gerenciar [ativos digitais como imagens, vídeos, documentos e arquivos de áudio. ](/help/assets/overview.md) Esses ativos podem ser usados por um site em execução na mesma instância do AEM. Também é possível criar e gerenciar [Fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md) no console de Ativos. |
-| Personalização | Esse console fornece uma estrutura de ferramentas para a [criação de conteúdo direcionado e a apresentação de experiências personalizadas.](/help/sites-cloud/authoring/personalization/overview.md) |
+| Personalização | Esse console fornece uma estrutura de ferramentas para a [criação de conteúdo direcionado e a apresentação de experiências personalizadas](/help/sites-cloud/authoring/personalization/overview.md). |
 | Fragmentos de conteúdo | [Os fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments.md) permitem projetar, criar, preparar e publicar conteúdo independente de página. Eles permitem preparar conteúdo estruturado pronto para uso em vários locais/canais e são ideais para a criação de páginas e entrega headless. |
 
 ## Painel Ferramentas {#tools-panel}
@@ -216,7 +216,7 @@ A ação disponível na barra de ferramentas muda para refletir as ações que v
 
 A forma como você [seleciona um recurso](#viewing-and-selecting-resources) depende da exibição.
 
-Devido às restrições de espaço em algumas janelas, a barra de ferramentas pode tornar-se rapidamente maior do que o espaço disponível. Quando isso acontecer, opções adicionais serão exibidas. Clicar ou tocar nas reticências (três pontos ou **...**) abre um seletor suspenso que contém todas as ações restantes. Por exemplo, após selecionar uma página no console **Sites**:
+Devido às restrições de espaço em algumas janelas, a barra de ferramentas pode tornar-se rapidamente maior do que o espaço disponível. Quando isso acontecer, opções adicionais serão exibidas. Ao clicar ou tocar nas reticências (os três pontos ou **..**) abre um seletor suspenso com todas as ações restantes. Por exemplo, após selecionar uma página no console **Sites**:
 
 ![Opções adicionais](/help/sites-cloud/authoring/assets/additional-options.png)
 
@@ -226,7 +226,7 @@ Devido às restrições de espaço em algumas janelas, a barra de ferramentas po
 
 ## Ações rápidas {#quick-actions}
 
-Entrada [Exibição de cartão](#card-view) certas ações estão disponíveis como ícones de ação rápida, bem como na barra de ferramentas. Os ícones de ação rápida estão disponíveis para um único item de cada vez e eliminam a necessidade de pré-seleção.
+Entrada [Exibição de cartão](#card-view) determinadas ações estão disponíveis como ícones de ação rápida e na barra de ferramentas. Os ícones de ação rápida estão disponíveis para um único item de cada vez e eliminam a necessidade de pré-seleção.
 
 As ações rápidas ficam visíveis quando você passa o mouse (dispositivo de desktop) sobre um cartão de recursos. As ações rápidas disponíveis podem depender do console e do contexto. Por exemplo, estas são as ações rápidas para uma página no **Sites** console:
 
@@ -402,7 +402,7 @@ Se somente conteúdo for selecionado, apenas o ícone do painel será exibido. S
 
 A árvore de conteúdo pode ser usada para navegar rapidamente pela hierarquia do site no painel lateral e exibir muitas informações sobre as páginas na pasta atual.
 
-Usando o painel lateral da árvore de conteúdo em conjunto com uma exibição de lista ou exibição de cartões, os usuários podem ver facilmente a estrutura hierárquica do projeto e navegar facilmente pela estrutura de conteúdo com o painel lateral da árvore de conteúdo, bem como visualizar informações de página detalhadas na exibição de lista.
+Usando o painel lateral da árvore de conteúdo em conjunto com uma exibição de lista ou exibição de cartões, os usuários podem ver facilmente a estrutura hierárquica do projeto e navegar facilmente pela estrutura de conteúdo com o painel lateral da árvore de conteúdo, e exibir informações de página detalhadas na exibição de lista.
 
 ![Árvore de conteúdo](/help/sites-cloud/authoring/assets/content-tree.png)
 
@@ -410,7 +410,7 @@ Usando o painel lateral da árvore de conteúdo em conjunto com uma exibição d
 >
 >Depois que uma entrada na exibição de hierarquia é selecionada, as teclas de seta podem ser usadas para navegar rapidamente pela hierarquia.
 >
->Consulte a [atalhos de teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) para obter mais informações.
+>Consulte [atalhos de teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) para obter mais informações.
 
 ### Linha do tempo {#timeline}
 
@@ -460,15 +460,15 @@ Essas opções podem ser acessadas por meio da divisa ao lado do campo **Coment�
 
 ### Site {#site}
 
-**Site** mostra detalhes de sites [criados usando um modelo de site.](/help/sites-cloud/administering/site-creation/create-site.md)
+**Site** mostra detalhes de sites [criados usando um modelo de site](/help/sites-cloud/administering/site-creation/create-site.md).
 
 ![Painel do site](../assets/site-rail.png)
 
-Consulte o documento [Usar o painel do site para gerenciar o tema do site](/help/sites-cloud/administering/site-creation/site-rail.md) para obter mais detalhes sobre como usar o painel para gerenciar o [tema do seu site.](/help/sites-cloud/administering/site-creation/site-themes.md)
+Consulte o documento [Usar o painel do site para gerenciar o tema do site](/help/sites-cloud/administering/site-creation/site-rail.md) para obter mais detalhes sobre como usar o painel para gerenciar o [tema do seu site](/help/sites-cloud/administering/site-creation/site-themes.md).
 
 >[!TIP]
 >
->Uma descrição completa do processo de criação de um novo site a partir de um modelo e personalização de seu tema pode ser encontrada na [Jornada rápida de criação de site.](/help/journey-sites/quick-site/overview.md)
+>Uma descrição completa do processo de criação de um novo site a partir de um modelo e personalização de seu tema pode ser encontrada na [Jornada rápida de criação de site](/help/journey-sites/quick-site/overview.md).
 
 ### Filtro {#filter}
 

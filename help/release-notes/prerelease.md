@@ -2,10 +2,10 @@
 title: Canal de pré-lançamento do Adobe Experience Manager as a Cloud Service
 description: Saiba como usar o canal de pré-lançamento para visualizar os recursos futuros do AEM as a Cloud Service.
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1305'
-ht-degree: 91%
+source-wordcount: '1304'
+ht-degree: 85%
 
 ---
 
@@ -18,9 +18,9 @@ Saiba como usar o canal de pré-lançamento para visualizar os recursos futuros 
 
 O Adobe Experience Manager as a Cloud Service fornece novos recursos regularmente, de acordo com o [Roteiro de versões do Experience Manager.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=pt-BR#aem-as-cloud-service)
 
-Para se familiarizar com os recursos programados para serem ativados na versão de recurso a seguir, é possível assinar o canal de pré-lançamento, que é acessível por meio da configuração de seus ambientes de desenvolvimento ou de qualquer ambiente de sandbox. Você pode visualizar as alterações acessíveis pela interface do AEM e programar usando as novas APIs de pré-lançamento.
+Para se familiarizar com os recursos programados para serem ativados na versão de recurso a seguir, é possível assinar o canal de pré-lançamento, que é acessível por meio da configuração de seus ambientes de desenvolvimento ou de qualquer ambiente de sandbox. É possível pré-visualizar alterações acessíveis por meio da interface do usuário do AEM e criar código em relação a quaisquer novas APIs de pré-lançamento.
 
-A lista de recursos de pré-lançamento de um determinado recurso é publicada nas [notas de versão.](/help/release-notes/release-notes-cloud/release-notes-current.md)
+A lista de recursos de pré-lançamento de um determinado recurso é publicada nas [notas de versão](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Versões do AEM as a Cloud Service {#releases}
 
@@ -33,11 +33,11 @@ Esse padrão garante uma atualização contínua de versões sem interrupção d
 
 O canal de pré-lançamento permite pré-visualizar recursos programados para a próxima versão de recursos, para que você possa avaliar a funcionalidade futura e planejar sua possível implementação para seus próprios projetos. Ele permite que você planeje com antecedência a próxima versão do recurso.
 
-Por exemplo, se for o mês de maio e você estiver inscrito no canal de pré-lançamento, será possível avaliar os recursos da versão de junho.
+Por exemplo, se for maio e você estiver inscrito no canal de pré-lançamento, será possível avaliar os recursos na próxima versão de junho.
 
 ![Gráfico de cronograma de pré-lançamento](assets/prerelease-cadence.png)
 
-O pré-lançamento oferece uma janela de um mês para você avaliar os próximos recursos do AEMaaCS, permitindo observar o impacto deles em seus projetos e personalizações, bem como planejar a implantação desses recursos, testes e treinamentos de usuário.
+O pré-lançamento oferece uma janela contínua de um mês para os recursos futuros do AEMaaCS, permitindo que você avalie o impacto de novos recursos em seus projetos e personalizações e planeje a implantação desses recursos, testes e treinamento de usuários.
 
 Aproveitar de forma eficaz o canal de pré-lançamento é um processo de quatro etapas.
 
@@ -122,7 +122,7 @@ Você pode ver novos recursos no console Sites no Quickstart do SDK local e prog
 
 #### Iniciar o Quickstart do SDK no modo de pré-lançamento {#prerelease-mode}
 
-1. Baixe o SDK no portal de distribuição de softwares e instale como descrito em [Acesso ao SDK do AEM as a Cloud Service.](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
+1. Baixe o SDK no portal de distribuição de softwares e instale como descrito em [Acesso ao SDK do AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
 1. Ao iniciar o Quickstart do SDK, inclua o argumento `-r prerelease`.
 
 O valor é aderente, assim, ele só pode ser selecionado na primeira inicialização. Reinstale o SDK para alterar a opção de linha de comando.

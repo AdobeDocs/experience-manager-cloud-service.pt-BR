@@ -4,10 +4,10 @@ description: Descubra como solucionar os problemas mais comuns relacionados ao M
 feature: Multi Site Manager
 role: Admin
 exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 87%
+source-wordcount: '761'
+ht-degree: 80%
 
 ---
 
@@ -67,7 +67,7 @@ Aqui estão algumas perguntas frequentes relacionadas ao MSM e Live Copy.
 
 As ações de sincronização do MSM são altamente configuráveis. Quais propriedades ou componentes são modificados durante as implantações dependem diretamente das propriedades dessas configurações.
 
-Consulte [este artigo](best-practices.md) para obter mais informações sobre este tópico.
+Consulte [este artigo](best-practices.md) para obter mais informações sobre esse tópico.
 
 ### Como posso remover as permissões de implantação de um grupo de autores? {#remove-rollout-permissions}
 
@@ -80,7 +80,7 @@ Como alternativa, você pode:
 
 ### Por que vejo páginas da Live Copy com o sufixo “_msm_moved”? {#moved-pages}
 
-Se uma página de blueprint for implantada, ela atualizará sua página da Live Copy ou criará uma nova página da Live Copy se ainda não existir (por exemplo, quando ela for implantada pela primeira vez ou a página da Live Copy for excluída manualmente).
+Se uma página de blueprint for implantada, ela atualizará sua página da Live Copy ou criará uma página da Live Copy se ainda não existir (por exemplo, quando ela for implantada pela primeira vez ou a página da Live Copy for excluída manualmente).
 
 Neste último caso, no entanto, se uma página sem `cq:LiveRelationship` existir com o mesmo nome, essa página será renomeada de acordo, antes que a página da Live Copy seja criada.
 

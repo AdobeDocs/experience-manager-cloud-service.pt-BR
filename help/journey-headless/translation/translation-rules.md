@@ -2,7 +2,7 @@
 title: Configurar regras de tradução para conteúdo headless
 description: Saiba como definir regras de tradução para identificar o conteúdo a ser traduzido.
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '942'
 ht-degree: 98%
@@ -27,7 +27,7 @@ Agora que seu conector está configurado, este artigo o conduzirá até a próxi
 >Essa etapa da jornada de documentação só é necessária se você não estiver utilizando o sinalizador **Traduzível** em fragmentos de conteúdo.
 >
 >* O sinalizador **Traduzível** cria regras de tradução automaticamente, sem necessidade de intervenção.
->* O sinalizador **Traduzível** é usado somente se a configuração da estrutura de integração de tradução estiver definida como **[Ativar campos do modelo de conteúdo para tradução.](/help/sites-cloud/administering/translation/integration-framework.md)**
+>* O sinalizador **Traduzível** é usado somente se a configuração da estrutura de integração de tradução estiver definida como **[Ativar campos do modelo de conteúdo para tradução](/help/sites-cloud/administering/translation/integration-framework.md)**.
 >* Habilitar essa opção na configuração de TIF substitui quaisquer regras de tradução criadas manualmente.|
 
 ## Objetivo {#objective}

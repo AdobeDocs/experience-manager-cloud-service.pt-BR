@@ -2,9 +2,9 @@
 title: Gerencie experiências de catálogo de produtos em estágios
 description: Saiba como gerenciar experiências de catálogo de produtos por etapas.
 exl-id: 1db18818-b8e0-4127-8a65-dc3dea1f2927
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '493'
 ht-degree: 10%
 
 ---
@@ -25,7 +25,7 @@ Este documento ajuda você a entender como gerenciar a experiência do catálogo
 
     >[!NOTE]
     >
-    >Esse recurso só está disponível com conectores do Adobe Commerce ou Cloud Edition e de terceiros que oferecem suporte à autenticação baseada em token. Consulte [Introdução](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html) para obter mais informações.
+    >Esse recurso só está disponível com o Adobe Commerce ou Cloud Edition e conectores de terceiros que oferecem suporte à autenticação baseada em token. Consulte [Introdução](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html) para obter mais informações.
 
 Primeiro, vejamos como os autores podem acessar dados de produtos preparados pela CIF.
 

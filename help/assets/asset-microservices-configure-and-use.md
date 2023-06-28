@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2933'
+source-wordcount: '2931'
 ht-degree: 3%
 
 ---
@@ -204,7 +204,7 @@ Para obter detalhes sobre qual etapa do fluxo de trabalho padrão pode ser usada
 
 Os modelos de fluxo de trabalho de pós-processamento são regulares [!DNL Experience Manager] modelos de fluxo de trabalho. Crie modelos diferentes se precisar de processamento diferente para locais de repositório ou tipos de ativos diferentes.
 
-As etapas de processamento são adicionadas conforme necessário. Você pode usar as etapas compatíveis que estão disponíveis, bem como qualquer etapa de fluxo de trabalho implementada de forma personalizada.
+As etapas de processamento são adicionadas conforme necessário. Você pode usar ambas as etapas, as etapas compatíveis que estão disponíveis e qualquer etapa de fluxo de trabalho personalizada implementada.
 
 Verifique se a última etapa de cada fluxo de trabalho de pós-processamento é `DAM Update Asset Workflow Completed Process`. A última etapa ajuda a garantir que o Experience Manager saiba quando o processamento de ativos foi concluído.
 

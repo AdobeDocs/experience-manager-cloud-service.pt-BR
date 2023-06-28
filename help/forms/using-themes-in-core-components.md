@@ -2,7 +2,7 @@
 title: Criação e uso de temas
 description: Você pode usar temas para estilizar e fornecer uma identidade visual a um Formulário adaptável usando componentes principais. Você pode compartilhar um tema em qualquer número do Adaptive Forms.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1664'
 ht-degree: 5%
@@ -17,7 +17,7 @@ Quando você [criar um Formulário adaptável](/help/forms/creating-adaptive-for
 
 >[!NOTE]
 >
->Um tema de formulário adaptável não deve ser confundido com [Modelos de formulário adaptável.](/help/forms/template-editor.md) Os temas do Formulário adaptável contêm apenas as informações de estilo de um Formulário adaptável. Os modelos de formulário adaptável definem a estrutura do formulário e o conteúdo inicial, além de conter um tema para permitir a criação de novos [Formulário adaptável.](/help/forms/creating-adaptive-form.md)
+>Um tema de formulário adaptável não deve ser confundido com [Modelos de formulário adaptável](/help/forms/template-editor.md). Os temas do Formulário adaptável contêm apenas as informações de estilo de um Formulário adaptável. Os modelos de formulário adaptável definem a estrutura do formulário e o conteúdo inicial, além de conter um tema para permitir a criação de novos [Formulário adaptável](/help/forms/creating-adaptive-form.md).
 
 ## Uso do tema da Tela no Adaptive Forms usando componentes principais {#using-theme-in-adaptive-form}
 

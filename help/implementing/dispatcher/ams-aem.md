@@ -3,9 +3,9 @@ title: Migração da configuração do Dispatcher do AMS para o AEM as a Cloud S
 description: Migração da configuração do Dispatcher do AMS para o AEM as a Cloud Service
 feature: Dispatcher
 exl-id: ff7397dd-b6e1-4d08-8e2d-d613af6b81b3
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1446'
+source-wordcount: '1451'
 ht-degree: 19%
 
 ---
@@ -35,7 +35,7 @@ Extraia o arquivo morto para uma pasta e verifique se as subpastas imediatas com
 
 ### Livrar-se de subpastas e arquivos não utilizados
 
-Remover subpastas `conf` e `conf.modules.d`, bem como arquivos correspondentes `conf.d/*.conf`.
+Remover subpastas `conf` e `conf.modules.d`e arquivos correspondentes `conf.d/*.conf`.
 
 ### Livrar-se de todos os hosts virtuais que não sejam de publicação
 

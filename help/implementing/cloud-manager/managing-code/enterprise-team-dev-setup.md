@@ -2,10 +2,10 @@
 title: Configuração da equipe de desenvolvimento corporativa
 description: Saiba como configurar e dimensionar sua equipe de desenvolvimento corporativo e veja como o AEM as a Cloud Service pode apoiar seu processo de desenvolvimento.
 exl-id: 85f8779b-12cb-441b-a34d-04641184497a
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1444'
-ht-degree: 85%
+source-wordcount: '1437'
+ht-degree: 83%
 
 ---
 
@@ -15,7 +15,7 @@ Saiba como configurar e dimensionar sua equipe de desenvolvimento corporativo e 
 
 ## Introdução {#introduction}
 
-Para oferecer suporte a clientes com configurações de desenvolvimento corporativo, o AEM as a Cloud Service integra-se totalmente ao Cloud Manager e a seus pipelines opinativos [de CI/CD criados com propósitos específicos.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) Esses pipelines e serviços são criados com base nas práticas recomendadas, garantindo [testes completos e código de maior qualidade.](/help/implementing/cloud-manager/code-quality-testing.md)
+Para oferecer suporte a clientes com configurações de desenvolvimento corporativo, o AEM as a Cloud Service integra-se totalmente ao Cloud Manager e a seus pipelines opinativos [de CI/CD criados com propósitos específicos](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md). Esses pipelines e serviços são criados com base nas práticas recomendadas, garantindo [testes completos e código de maior qualidade](/help/implementing/cloud-manager/code-quality-testing.md).
 
 ## Apoio do Cloud Manager à configuração de desenvolvimento de equipes corporativas {#cloud-manager}
 
@@ -70,7 +70,7 @@ A configuração no repositório Git do Cloud Manager tem duas ramificações.
 * Uma ramificação de liberação estável contendo o código de produção de todas as equipes.
 * Uma ramificação de desenvolvimento contendo o código de desenvolvimento de todas as equipes.
 
-Cada push para o repositório Git de uma equipe na ramificação estável ou de desenvolvimento aciona um [Ação do GitHub.](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md#managing-code)
+Cada push para o repositório Git de uma equipe na ramificação estável ou de desenvolvimento aciona um [Ação do GitHub](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md#managing-code).
 
 Todos os projetos seguem a mesma configuração para a ramificação estável. Um push para a ramificação estável de um projeto é enviado automaticamente para a ramificação estável no repositório Git do Cloud Manager. O pipeline de produção no Cloud Manager é configurado para ser acionado por um push para a ramificação estável. O pipeline de produção é, portanto, executado por cada push de qualquer equipe em uma ramificação estável e a implantação em produção é atualizada se for aprovada em todos os quality gates (portais de qualidade).
 
@@ -82,7 +82,7 @@ A execução do pipeline de produção inclui a verificação do código de toda
 
 Para o desenvolvimento local, é usado o [SDK do AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md#developing). O SDK permite a configuração de um autor, editor e dispatcher local. Assim, é possível realizar o desenvolvimento offline e obter tempos de resposta rápidos. Às vezes, somente o ambiente de autoria é usado para desenvolvimento, mas a configuração rápida de ambientes do dispatcher e de publicação permite testar tudo localmente antes de enviar para o repositório Git.
 
-Os membros de cada equipe geralmente verificam o código do Git compartilhado, bem como seu próprio código de projeto. Não há necessidade de realizar o checkout de outros projetos, pois eles são independentes.
+Os membros de cada equipe geralmente verificam o código do Git compartilhado para seu próprio código de projeto. Não há necessidade de realizar o checkout de outros projetos, pois eles são independentes.
 
 ![Checkout local e SDK](/help/implementing/cloud-manager/assets/team-setup3.png)
 
@@ -90,7 +90,7 @@ Essa configuração do mundo real pode ser usada como um blueprint e personaliza
 
 >[!TIP]
 >
->Consulte o documento [Trabalho com vários repositórios Git de origem](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=pt-BR#managing-code) para saber mais sobre essa configuração.
+>Consulte [Trabalhar com vários repositórios Git de origem](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=pt-BR#managing-code) para saber mais sobre esta configuração.
 
 ### Considerações para uma configuração de várias equipes {#considerations}
 

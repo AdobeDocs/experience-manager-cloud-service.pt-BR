@@ -4,10 +4,10 @@ description: Saiba como usar o console de Fragmentos de conteúdo para gerenciar
 feature: Content Fragments
 role: User
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2053'
-ht-degree: 81%
+source-wordcount: '2054'
+ht-degree: 76%
 
 ---
 
@@ -71,7 +71,7 @@ Para criar um fragmento de conteúdo:
 1. A caixa de diálogo **Novo fragmento de conteúdo** será aberta, onde é possível especificar:
 
    * **Localização** - preenchido automaticamente com o local atual, mas você pode selecionar um local diferente, se necessário
-   * **Modelo de fragmento de conteúdo** — selecione o modelo a ser usado como base do fragmento na lista suspensa
+   * **Modelo de fragmento de conteúdo** - selecione o modelo a ser usado como base do fragmento na lista suspensa
    * **Título**
    * **Nome** - preenchido automaticamente com base no **Título**, mas você pode editá-lo, se necessário
    * **Descrição**
@@ -196,11 +196,11 @@ O editor tem várias opções:
   >
   >Além de simplesmente salvar suas alterações, as ações também atualizam quaisquer referências e garantem que o Dispatcher seja liberado conforme necessário. Essas alterações podem levar tempo para serem processadas. Devido a isso, pode haver um impacto no desempenho de um sistema grande/complexo/com bastante conteúdo.
   >
-  >Lembre-se disso ao usar a opção **Salvar e fechar** e, logo em seguida, entrar novamente no editor de fragmentos para fazer mais alterações e salvá-las.
+  >Lembre-se desse tempo de processo ao usar **Salvar e fechar** e, em seguida, entre novamente no editor de fragmentos rapidamente para fazer mais alterações e salvá-las.
 
 * **Fechar**
 
-  Fechará o editor sem salvar as alterações mais recentes (ou seja, feitas desde o último **Salvamento**).
+  Fechará o editor sem salvar as alterações mais recentes (ou seja, feitas desde a última **Salvar**).
 
 Ao editar o fragmento de conteúdo, o AEM cria versões automaticamente para garantir que o conteúdo anterior possa ser restaurado se você cancelar as alterações (usando **Fechar** sem salvar):
 
@@ -231,7 +231,7 @@ Depois de criar o conteúdo Principal, é possível criar e gerenciar [Variaçõ
 
 ## Associar conteúdo ao fragmento {#associating-content-with-your-fragment}
 
-Você também pode [associar conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md) a um fragmento. Isso fornece uma conexão para que os ativos (por exemplo, imagens) possam ser usados (opcionalmente) com o fragmento quando ele é adicionado a uma página de conteúdo.
+Você também pode [associar conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md) a um fragmento. Isso fornece uma conexão para que os ativos (ou seja, imagens) possam ser usados (opcionalmente) com o fragmento quando ele é adicionado a uma página de conteúdo.
 
 ## Visualização e edição dos metadados (propriedades) do fragmento {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
@@ -251,7 +251,7 @@ Você pode publicar os fragmentos de conteúdo em:
 
   >[!NOTE]
   >
-  Para obter mais detalhes sobre os ambientes de visualização, consulte:
+  Para obter mais detalhes sobre os ambientes de Visualização, consulte o seguinte:
   >
   * [Gerenciar ambientes](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
   * [Configurações do OSGi para o nível de visualização](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)

@@ -2,10 +2,10 @@
 title: Ambiente de compilação
 description: Saiba mais sobre o ambiente de compilação do Cloud Manager e como ele cria e testa seu código.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '994'
-ht-degree: 95%
+source-wordcount: '991'
+ht-degree: 94%
 
 ---
 
@@ -229,4 +229,4 @@ Essa mesma técnica pode ser usada para instalar pacotes de linguagem específic
 
 >[!TIP]
 >
->Para obter detalhes sobre o ambiente de criação de front-end, consulte o documento [Desenvolvimento de sites com o pipeline de front-end.](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
+>Para obter detalhes sobre o ambiente de build de front-end, consulte [Desenvolvimento de sites com o pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md).

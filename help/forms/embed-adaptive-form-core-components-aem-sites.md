@@ -6,7 +6,7 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: 1046231f-787c-4e49-9ba0-e7dd59e41bce
-source-git-commit: 1d5641dd07cc68dade247fe30bb57663872e5560
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2135'
 ht-degree: 2%
@@ -112,12 +112,12 @@ No [!UICONTROL Editar contêiner adaptável do Forms] você pode especificar o s
    * **Preencher Serviço**: é possível usar o serviço de preenchimento prévio para preencher automaticamente os campos de um Formulário adaptável usando dados existentes. Quando um usuário abre um formulário, os valores desses campos são preenchidos previamente. Para obter informações sobre o serviço de preenchimento prévio, consulte [Preencher previamente os campos do formulário adaptável](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/prepopulate-adaptive-form-fields.html#configuring-prefill-service-using-configuration-manager)
    * **Categoria da biblioteca cliente**: especifique o [Funções JavaScript](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=en#custom-functions) que são usados em expressões e são compatíveis com o Adaptive Forms.
 * **Modelo de dados**: um modelo de dados permite integrar entidades e serviços de fontes de dados diferentes a um formulário adaptável. Escolher **[!UICONTROL Modelo de dados do formulário]** se o Formulário adaptável que você está criando envolver a busca e a gravação de dados de e para várias fontes de dados.
-   * **Modelo de dados do formulário**: um modelo de dados de formulário permite que um formulário adaptável se comunique com fontes de dados diferentes. Para obter informações sobre como configurar uma fonte de dados, consulte [Configurar fontes de dados.](/help/forms/configure-data-sources.md)
+   * **Modelo de dados do formulário**: um modelo de dados de formulário permite que um formulário adaptável se comunique com fontes de dados diferentes. Para obter informações sobre como configurar uma fonte de dados, consulte [Configurar fontes de dados](/help/forms/configure-data-sources.md).
    * **Esquema**: o esquema representa a estrutura em que os dados são produzidos ou consumidos pelo sistema de back-end em sua organização. Você pode [associar o esquema a um Formulário adaptável](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/adaptive-form-json-schema-form-model.html) e usar seus elementos para adicionar conteúdo dinâmico a um Formulário adaptável.
 
-      >[!NOTE]
-      >
-      > Após configurar o modelo de dados de formulário, você não pode alterar o Modelo de formulário associado. No entanto, é possível modificar o schema associado ao modelo de dados de formulário.
+     >[!NOTE]
+     >
+     > Após configurar o modelo de dados de formulário, você não pode alterar o Modelo de formulário associado. No entanto, é possível modificar o schema associado ao modelo de dados de formulário.
 
 * **Guia Enviar**
 
@@ -133,7 +133,7 @@ No [!UICONTROL Editar contêiner adaptável do Forms] você pode especificar o s
          * Enviar para o OneDrive
          * Enviar para o Armazenamento de blob do Azure
 
-   Também é possível [estender as ações enviar padrão](custom-submit-action-form.md) para criar sua própria Ação enviar personalizada.
+  Também é possível [estender as ações enviar padrão](custom-submit-action-form.md) para criar sua própria Ação enviar personalizada.
 
 * **Mostrar mensagem**
    * **Conteúdo da mensagem**: escreva uma mensagem usando o editor de rich text para mostrar no envio do formulário. Essa opção está disponível somente quando você opta por mostrar uma mensagem de agradecimento.

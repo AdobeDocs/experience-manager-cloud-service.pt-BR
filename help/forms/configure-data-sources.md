@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2195'
+source-wordcount: '2192'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ Antes de configurar bancos de dados relacionais usando [!DNL Experience Manager]
 
    >[!NOTE]
    >
-   > Consultar [Conexões SQL usando DataSourcePool do JDBC](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html) para obter informações mais detalhadas.
+   > Consulte [Conexões SQL usando DataSourcePool do JDBC](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html) para obter informações mais detalhadas.
 
 1. Toque **[!UICONTROL Salvar]** para salvar a configuração.
 
@@ -170,7 +170,7 @@ Algumas das operações não suportadas pela Especificação da API aberta dos s
 * Links
 * Diferentes corpos de solicitação para diferentes tipos MIME para uma única operação
 
-Você pode consultar [Especificação do OpenAPI 3.0](https://swagger.io/specification/v3/) para obter informações detalhadas.
+Consulte [Especificação do OpenAPI 3.0](https://swagger.io/specification/v3/) para obter informações detalhadas.
 
 ### Configuração do cliente HTTP do modelo de dados de formulário para otimizar o desempenho {#fdm-http-client-configuration}
 

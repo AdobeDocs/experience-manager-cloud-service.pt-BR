@@ -2,7 +2,7 @@
 title: Configurar serviço de transcrição
 seo-title: Configure transcription service
 description: O Adobe Experience Manager Assets está configurado com o [!DNL Azure Media Services] , que gera automaticamente uma transcrição de texto do idioma falado em um arquivo de áudio ou vídeo compatível no formato WebVTT (Vtt).
-seo-description: When an audio or video asset is processed in Experience Manager Assets, the AI-based transcription service automatically generates the text transcript rendition of the audio or video asset and stores it at the same location within your Assets repository where the original asset resides. The Experience Manager Assets transcription service allows marketers to effectively manage their audio and video content with added discoverability of the text content as well as increase the ROI of these assets by supporting accessibility and localization.
+seo-description: When an audio or video asset is processed in Experience Manager Assets, the AI-based transcription service automatically generates the text transcript rendition of the audio or video asset and stores it at the same location within your Assets repository where the original asset resides. The Experience Manager Assets transcription service allows marketers to effectively manage their audio and video content with added discoverability of the text content and increase the ROI of these assets by supporting accessibility and localization.
 products: SG_EXPERIENCEMANAGER/ASSETS and Experience Manager as a Cloud Service
 sub-product: assets
 content-type: reference
@@ -11,17 +11,17 @@ topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1696'
-ht-degree: 95%
+source-wordcount: '1694'
+ht-degree: 94%
 
 ---
 
 # Configurar transcrição no [!DNL Experience Manager Assets] {#configure-transcription-service}
 
 A transcrição é o processo de traduzir o áudio de um arquivo de áudio ou vídeo em texto (fala para texto) usando a tecnologia de reconhecimento de voz.
-O [!DNL Adobe Experience Manager Assets] está configurado com o [!DNL Azure Media Services], que gera automaticamente uma transcrição de texto do idioma falado em um arquivo de áudio ou vídeo compatível no formato WebVTT (.vtt). Quando um ativo de áudio ou vídeo é processado no [!DNL Experience Manager Assets], o serviço de transcrição gera automaticamente a representação da transcrição de texto do ativo de áudio ou vídeo e o armazena no mesmo local no repositório do Assets, onde o ativo original está. O serviço de transcrição do [!DNL Experience Manager Assets] permite que os profissionais de marketing gerenciem efetivamente o conteúdo de áudio e vídeo com mais capacidade de descoberta do conteúdo de texto, além de aumentar o ROI desses ativos ao oferecer suporte à acessibilidade e localização.
+O [!DNL Adobe Experience Manager Assets] está configurado com o [!DNL Azure Media Services], que gera automaticamente uma transcrição de texto do idioma falado em um arquivo de áudio ou vídeo compatível no formato WebVTT (.vtt). Quando um ativo de áudio ou vídeo é processado no [!DNL Experience Manager Assets], o serviço de transcrição gera automaticamente a representação da transcrição de texto do ativo de áudio ou vídeo e o armazena no mesmo local no repositório do Assets, onde o ativo original está. A variável [!DNL Experience Manager Assets] O serviço de transcrição do permite que os profissionais de marketing gerenciem efetivamente o conteúdo de áudio e vídeo com mais capacidade de descoberta do conteúdo de texto e aumentem o ROI desses ativos ao oferecer suporte à acessibilidade e localização.
 
 As transcrições são versões em texto do conteúdo falado; um exemplo é um filme que você está assistindo em qualquer plataforma OTT, que geralmente inclui legendas ou legendas ocultas para ajudar na acessibilidade ou no consumo do conteúdo em outros idiomas. Ou qualquer arquivo de áudio ou vídeo usado para fins de marketing, aprendizado ou entretenimento. Essas experiências começam com uma transcrição que é formatada ou traduzida conforme apropriado. A transcrição de áudio ou vídeo é um processo que exige muito tempo e pode causar erros quando executado manualmente. Também é um desafio escalar o processo manual, dada a necessidade cada vez maior de conteúdo de áudio e vídeo. [!DNL Experience Manager Assets] O usa a transcrição com IA do Azure, que permite o processamento em alta escala dos ativos de áudio e vídeo e gera as transcrições de texto (arquivos .vtt) junto com detalhes de carimbo de data e hora. Além do Assets, o recurso de transcrição também é compatível com o Dynamic Media.
 
@@ -88,7 +88,7 @@ Depois que o perfil de processamento for configurado para transcrição de arqui
 * Selecione uma definição de perfil de processamento em **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Perfis de processamento]** e use a ação **[!UICONTROL Aplicar perfil à(s) pasta(s)]**. O navegador de conteúdo permite navegar até uma pasta específica, selecioná-la e confirmar a aplicação do perfil.
 * Selecione uma pasta na interface do Assets e clique na ação **[!UICONTROL Propriedades]** para abrir as propriedades da pasta. Clique na guia **[!UICONTROL Processamento de ativos]** e selecione o perfil de processamento apropriado para a pasta na lista **[!UICONTROL Perfil de processamento]**. Para salvar as alterações, clique em **[!UICONTROL Salvar e fechar]**.
 
-   ![configure-transcription-service](assets/video-processing-profile3.png)
+  ![configure-transcription-service](assets/video-processing-profile3.png)
 
 * Os usuários podem selecionar pastas ou ativos específicos na interface do Assets para aplicar um perfil de processamento e, em seguida, selecionar **[!UICONTROL Reprocessar ativos]** nas opções disponíveis na parte superior.
 

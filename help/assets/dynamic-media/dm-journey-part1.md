@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3709'
+source-wordcount: '3708'
 ht-degree: 1%
 
 ---
@@ -79,7 +79,7 @@ Esse método de entrega exclusivo garante que experiências de qualidade consist
 
 <!-- As part of building and publishing assets with Dynamic Media, you visually configure the effects that you want to apply to assets. In so doing, you are literally building the URL that correctly tells the publish server how to deliver your primary asset to the screen.  -->
 
-![O Adobe Dynamic Media fornece a mesma imagem principal a mídias diferentes em tamanhos e formatos diferentes.](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
+![O Adobe Dynamic Media fornece a mesma imagem principal a mídias diferentes em tamanhos e formatos diferentes](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
 _O Adobe Dynamic Media garante experiências consistentes e de qualidade em qualquer tela, independentemente do tamanho ou da largura de banda._
 
 À medida que você lê, aprenderá mais sobre por que esse conceito de &quot;um arquivo de ativo principal, infinitas possibilidades&quot; é importante.
@@ -182,7 +182,7 @@ Outro caso de uso para o qual o Dynamic Media resolve é o vídeo. O vídeo é c
 
 Os clientes chegam à Dynamic Media com o seguinte problema que esperam resolver:
 
-&quot;_Nós recebemos o vídeo e gastamos uma grande quantia de dinheiro criando-o. Mas evitamos colocá-lo em páginas, ou entregá-lo, porque com nossos testes, nós realmente não podemos garantir a qualidade do vídeo, ou se ele vai realmente ser reproduzido. E, em última análise, isso afeta nossas marcas e, potencialmente, nossa função até mesmo na conversão._&quot;
+&quot;_Nós temos o vídeo, e gastamos uma grande quantia de dinheiro criando-o. Mas evitamos colocá-lo nas páginas, ou distribuí-lo, porque com nossos testes, não podemos garantir a qualidade do vídeo, ou se ele vai realmente ser reproduzido. E, em última análise, isso afeta nossas marcas e, potencialmente, nossa função até mesmo na conversão._&quot;
 
 A solução da Dynamic Media é pegar esse arquivo de vídeo principal e permitir que a Dynamic Media faça todos os tamanhos através de seu processo de transcodificação. Em seguida, combine-o com o player de vídeo inteligente do Dynamic Media. Esse fluxo de trabalho garante que você esteja usando esse vídeo na sua página de aterrissagem principal ou em uma categoria ou página de detalhes do produto, ele seja consistente e entregue com alta qualidade.
 
@@ -291,7 +291,7 @@ _Visualizadores do Dynamic Media_
 
 ## O que vem a seguir nesta Jornada do Dynamic Media {#whats-next}
 
-Na parte II desta jornada, você examinará os URLs do Dynamic Media um pouco mais perto para entender melhor o que está acontecendo quando um ativo é entregue. Você também aprenderá mais sobre os fundamentos da criação de predefinições de imagens para renderizar ativos e sobre conjuntos de imagens, conjuntos de rotação e conjuntos de mídia mista, e como eles são criados.
+Na parte II desta jornada, você examina os URLs do Dynamic Media um pouco mais perto para entender melhor o que está acontecendo quando um ativo é entregue. Você também aprenderá mais sobre os fundamentos da criação de predefinições de imagens para renderizar ativos e sobre conjuntos de imagens, conjuntos de rotação e conjuntos de mídia mista, e como eles são criados.
 
 Leve-me para [Jornada do Dynamic Media: Noções básicas, Parte II](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-d).
 

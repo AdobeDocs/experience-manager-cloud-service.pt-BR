@@ -2,9 +2,9 @@
 title: Diretrizes e práticas recomendadas para usar a ferramenta Transferência de conteúdo
 description: Diretrizes e práticas recomendadas para usar a ferramenta Transferência de conteúdo
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1547'
+source-wordcount: '1544'
 ht-degree: 19%
 
 ---
@@ -77,13 +77,13 @@ Siga a seção abaixo para entender as considerações importantes ao executar a
 
 * Durante a fase de extração, a ferramenta Transferência de conteúdo é executada em uma instância de origem do AEM ativa.
 
-* Após concluir o *Extração* fase do processo de transferência de conteúdo e antes de iniciar a *Fase de assimilação* para assimilar conteúdo no seu as a Cloud Service AEM *Estágio* ou *Produção* instâncias, será necessário registrar um tíquete de suporte para notificar o Adobe de sua intenção de executar o *Assimilação* para que o Adobe possa garantir que não ocorram interrupções durante o *Assimilação* processo. Você precisará registrar o tíquete de suporte 1 semana antes do planejado *Assimilação* data. Depois de enviar o tíquete de suporte, a equipe de suporte fornecerá orientação sobre as próximas etapas. Você pode registrar um tíquete de suporte com os seguintes detalhes:
+* Após concluir o *Extração* fase do processo de transferência de conteúdo e antes de iniciar a *Fase de assimilação* para assimilar conteúdo no seu as a Cloud Service AEM *Estágio* ou *Produção* instâncias, será necessário registrar um tíquete de suporte para notificar o Adobe de sua intenção de executar o *Assimilação* para que o Adobe possa garantir que não ocorram interrupções durante o *Assimilação* processo. Você precisará registrar o tíquete de suporte 1 semana antes do planejado *Assimilação* data. Após enviar o tíquete de suporte, a equipe de suporte fornecerá orientação sobre as próximas etapas. Você pode registrar um tíquete de suporte com os seguintes detalhes:
 
    * A data exata e o horário estimado (com seu fuso horário) em que você planeja iniciar o *Assimilação* fase.
    * Tipo de ambiente (Preparo ou Produção) no qual você planeja assimilar dados.
    * ID do programa.
 
-* A variável *Fase de assimilação* para o autor reduz a implantação do autor inteiro. Significa que o AEM do autor não está disponível durante todo o processo de ingestão. Certifique-se também de que nenhum pipeline do Cloud Manager seja executado enquanto você estiver executando o *Assimilação* fase.
+* A variável *Fase de assimilação* para o autor reduz a implantação do autor inteiro. Significa que o AEM do autor não está disponível durante todo o processo de ingestão. Além disso, certifique-se de que nenhum pipeline do Cloud Manager seja executado enquanto você estiver executando o *Assimilação* fase.
 
 * Ao usar `Amazon S3` ou `Azure` como o armazenamento de dados no sistema AEM de origem, o armazenamento de dados deve ser configurado para que os blobs armazenados não possam ser excluídos (coleta de lixo). Isso garante a integridade dos dados do índice, e a falha na configuração dessa maneira pode resultar em extrações com falha devido à falta de integridade desses dados de índice.
 
@@ -93,7 +93,7 @@ Siga a seção abaixo para entender as considerações importantes ao executar a
 
 * Se você pretende incluir versões como parte de um conjunto de migração e estiver executando atualizações com `wipe=false`, é necessário desativar a limpeza de versão devido a uma limitação atual na Ferramenta de transferência de conteúdo. Se preferir manter a limpeza de versão ativada e estiver executando atualizações complementares em um conjunto de migração, você deverá executar a assimilação como `wipe=true`.
 
-* Um conjunto de migração expirará após um período prolongado de inatividade, após o qual seus dados não estarão mais disponíveis. Revise [Expiração do conjunto de migração](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html#migration-set-expiry) para obter mais detalhes.
+* Um conjunto de migração expirará após um período prolongado de inatividade, após o qual seus dados não estarão mais disponíveis. Revisão [Expiração do conjunto de migração](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html#migration-set-expiry) para obter mais detalhes.
 
 ## O que vem a seguir {#whats-next}
 

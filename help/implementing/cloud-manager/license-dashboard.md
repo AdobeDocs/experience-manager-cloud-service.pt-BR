@@ -2,10 +2,10 @@
 title: Painel de licenças
 description: O Cloud Manager fornece um painel para facilitar a visualização dos direitos de produto do AEMaaCS disponíveis para sua organização ou locatário.
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 97%
+source-wordcount: '873'
+ht-degree: 92%
 
 ---
 
@@ -49,7 +49,7 @@ Cada seção resume o que está disponível e como é usado no momento, se for o
 
 >[!TIP]
 >
->Consulte [Visão geral do Admin Console](https://helpx.adobe.com/br/enterprise/using/admin-console.html) para saber como gerenciar seus direitos da Adobe para toda a organização no Admin Console.
+>Consulte [visão geral do Admin Console](https://helpx.adobe.com/br/enterprise/using/admin-console.html) para saber como gerenciar os direitos de Adobe em toda a organização usando o Admin Console.
 
 ## Perguntas frequentes {#faq}
 
@@ -85,7 +85,7 @@ As solicitações de conteúdo terão variações entre as ferramentas de relat�
 
 ### E se eu quiser saber mais sobre o volume de solicitação de conteúdo? {#current-request-volumes}
 
-Se você quiser obter insights adicionais sobre o volume de solicitação de conteúdo mostrado no Painel de licenças, a equipe da Adobe pode fornecer um relatório que mostra os principais responsáveis pelo volume das solicitações de conteúdo. Entre em contato com a equipe da Adobe ou com o Atendimento ao cliente da Adobe para solicitar um relatório de uso principal.
+Se você quiser obter insights adicionais sobre o volume de solicitação de conteúdo mostrado no Painel de licenças, a equipe da Adobe pode fornecer um relatório que mostra os principais responsáveis pelo volume das solicitações de conteúdo. Entre em contato com a equipe de Adobe ou com o Atendimento ao cliente do Adobe para solicitar um relatório de uso principal.
 
 ### E se eu estiver usando meu próprio CDN? {#using-own-cdn}
 

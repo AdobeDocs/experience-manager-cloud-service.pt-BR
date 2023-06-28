@@ -2,9 +2,9 @@
 title: Criação rápida de sites e personalização de front-end
 description: Saiba como a ferramenta de Criação rápida de sites usa modelos de site, temas e o pipeline de front-end para permitir a implantação rápida de novos sites e dissociar o desenvolvimento de front-end.
 exl-id: 9ec5126b-bee4-445a-a4bb-0c27c1a93d3f
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '325'
 ht-degree: 5%
 
 ---
@@ -19,13 +19,13 @@ A ferramenta de Criação rápida de sites é uma ferramenta fácil de usar que 
 
 Para fazer isso, a ferramenta de Criação rápida de sites usa vários recursos avançados do AEM as a Cloud Service:
 
-1. **Modelos de site do AEM** são usados para definir a estrutura e o conteúdo de base do site, bem como o estilo do site e são selecionados por um administrador ao criar um novo site.
+1. **Modelos de site do AEM** são usados para definir o conteúdo básico do site e a estrutura e o estilo do site, e são selecionados por um administrador ao criar um novo site.
 1. Um **Tema do site AEM** está incluído no modelo e contém o CSS, o JavaScript e os recursos estáticos que definem o estilo do site.
 1. A variável **Pipeline de front-end** O pode ser usado para implantar personalizações no tema do site independentemente do desenvolvimento de back-end.
 
 ## Jornada de Criação rápida de sites {#quick-site-creation-journey}
 
-Para obter uma visão geral completa de como a ferramenta de Criação rápida de sites funciona e começar a implantar e personalizar imediatamente seu próprio site usando essas ferramentas poderosas, revise a [Jornada de criação rápida de site.](/help/journey-sites/quick-site/overview.md)
+Para obter uma visão geral completa de como a ferramenta de Criação rápida de sites funciona e começar a implantar e personalizar imediatamente seu próprio site usando essa ferramenta avançada, revise a [Jornada de criação rápida de site](/help/journey-sites/quick-site/overview.md).
 
 ## Recursos adicionais {#additional-resources}
 

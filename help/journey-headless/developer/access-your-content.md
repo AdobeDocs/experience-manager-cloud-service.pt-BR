@@ -2,10 +2,10 @@
 title: Como acessar seu conteúdo por meio das APIs de entrega do AEM
 description: Nesta parte da Jornada do desenvolvedor headless do AEM, saiba como usar consultas GraphQL para acessar o conteúdo dos Fragmentos de conteúdo.
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1358'
-ht-degree: 99%
+source-wordcount: '1360'
+ht-degree: 97%
 
 ---
 
@@ -30,9 +30,9 @@ Este artigo se baseia nesses fundamentos para que você entenda como acessar o c
    * Aprenda os detalhes da API GraphQL do AEM.
    * Observe algumas consultas de amostra para ver como as coisas funcionam na prática.
 
-## Gostaria de acessar seu conteúdo? {#so-youd-like-to-access-your-content}
+## Deseja Acessar Seu Conteúdo? {#so-youd-like-to-access-your-content}
 
-Todo esse conteúdo perfeitamente estruturado (em Fragmentos de conteúdo) está disponível para alimentar seu novo aplicativo. A questão é: como fazer isso?
+Portanto... você tem todo esse conteúdo, perfeitamente estruturado (em fragmentos de conteúdo) e apenas aguardando para alimentar seu novo aplicativo. A questão é: como fazer isso?
 
 O que você precisa é de uma maneira de direcionar conteúdo específico, selecionar o que precisa e retorná-lo ao seu aplicativo para processamento adicional.
 

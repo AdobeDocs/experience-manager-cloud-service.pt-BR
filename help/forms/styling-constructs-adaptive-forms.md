@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2308'
+source-wordcount: '2310'
 ht-degree: 3%
 
 ---
@@ -270,7 +270,7 @@ Dependendo do tipo, os widgets também incluem classes. Geralmente, os widgets i
   </tr>
   <tr>
    <td><p><code>widget-height</code></p> </td>
-   <td>Altura do widget (Não funciona para a caixa de seleção e o botão de opção)</td>
+   <td>Altura do widget (não funciona para a caixa de seleção e o botão de opção)</td>
   </tr>
   <tr>
    <td><p><code>checkbutton-height</code></p> </td>
@@ -941,7 +941,7 @@ Um Painel inclui uma barra de ferramentas opcional e seu conteúdo.
  </tbody>
 </table>
 
-O nó do painel é dividido em navegadores e conteúdo. Há `` `` não é um componente de estilo separado para o conteúdo. As variáveis descritas são aplicadas no navegador, bem como no conteúdo.
+O nó do painel é dividido em navegadores e conteúdo. Há `` `` não é um componente de estilo separado para o conteúdo. As variáveis descritas são aplicadas no navegador e no conteúdo.
 
 O painel mais acima (RootPanel) não tem essa classe.
 

@@ -2,10 +2,10 @@
 title: Recuperar informações de acesso do repositório Git
 description: Saiba como o desenvolvedor de front-end usa o Cloud Manager para acessar informações do repositório Git.
 exl-id: 3ef1cf86-6da4-4c09-9cfc-acafc8f6dd5c
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '897'
-ht-degree: 100%
+source-wordcount: '891'
+ht-degree: 88%
 
 ---
 
@@ -17,7 +17,7 @@ Saiba como o desenvolvedor de front-end usa o Cloud Manager para acessar informa
 
 Se você for um desenvolvedor de front-end responsável apenas pela personalização do tema do site, não precisará de conhecimento sobre como o AEM foi configurado e poderá pular para a seção [Objetivo](#objective) deste documento.
 
-Se você também desempenha a função de administrador do Cloud Manager ou do AEM, bem como de desenvolvedor de front-end, aprendeu no documento anterior da jornada de Criação rápida de sites do AEM [Conceder acesso ao desenvolvedor de front-end](grant-access.md) como integrar o desenvolvedor de front-end para que ele tenha acesso ao repositório Git, e agora você deve saber:
+Se você também desempenha a função de administrador do Cloud Manager ou do AEM e desenvolvedor de front-end, aprendeu no documento anterior da jornada de Criação rápida de sites do AEM, [Conceder acesso ao desenvolvedor de front-end,](grant-access.md) como integrar o desenvolvedor de front-end para que ele tenha acesso ao repositório Git, e você agora deve saber:
 
 * Como adicionar um desenvolvedor front-end como usuário.
 * Como conceder as funções necessárias ao desenvolvedor front-end.
@@ -52,7 +52,7 @@ A ferramenta de Criação rápida de sites permite que desenvolvedores de front-
 
 Se você não tiver algum desses itens, entre em contato com o administrador do AEM ou com o administrador do Cloud Manager.
 
-Presume-se que o desenvolvedor de front-end tenha ampla experiência com fluxos de trabalho de desenvolvimento de front-end e com ferramentas comuns instaladas, incluindo:
+Presume-se que o desenvolvedor de front-end tenha ampla experiência com fluxos de trabalho de desenvolvimento de front-end e ferramentas comuns instaladas, incluindo:
 
 * Git
 * npm

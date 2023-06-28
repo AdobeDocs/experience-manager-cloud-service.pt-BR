@@ -2,9 +2,9 @@
 title: Ambientes de desenvolvimento rápido
 description: Saiba como usar Ambientes de desenvolvimento rápido para iterações de desenvolvimento rápido em um ambiente de nuvem.
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3318'
+source-wordcount: '3313'
 ht-degree: 5%
 
 ---
@@ -20,7 +20,7 @@ Depois que as alterações forem testadas em um RDE, elas poderão ser implantad
 >[!VIDEO](https://video.tv.adobe.com/v/3415582/?quality=12&learn=on)
 
 
-Você pode consultar vídeos adicionais que demonstram [como configurar](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html), [como usá-lo](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html), e o [ciclo de vida de desenvolvimento](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle.html) utilizando RDE.
+Você pode ver vídeos adicionais demonstrando [como configurar](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html), [como usá-lo](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html), e o [ciclo de vida de desenvolvimento](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle.html) utilizando RDE.
 
 ## Introdução {#introduction}
 
@@ -42,7 +42,7 @@ Siga estas etapas para usar o Cloud Manager para criar um RDE para seu programa.
 
 1. Clique no programa ao qual deseja adicionar um RDE para mostrar seus detalhes.
 
-   * Os RDEs podem ser adicionados a ambos [programas de sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) e [programas de produção.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
+   * Os RDEs podem ser adicionados a ambos [programas de sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) e [programas de produção](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md).
 
 1. Na página **Visão geral do programa**, clique em **Adicionar ambiente** no cartão **Ambientes** para adicionar um ambiente.
 
@@ -70,11 +70,11 @@ A tela **Visão geral** agora exibe seu novo ambiente no cartão **Ambientes.**
 
 Após a criação, os RDEs são definidos para a versão mais recente do AEM disponível. Uma redefinição de RDE, que também pode ser executada usando o Cloud Manager, desativará o RDE e o definirá para a versão do AEM mais recente.
 
-Para obter mais informações sobre como usar o Cloud Manager para criar ambientes, gerenciar quem tem acesso e atribuir domínios personalizados, consulte [a documentação do Cloud Manager.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
+Para obter mais informações sobre como usar o Cloud Manager para criar ambientes, gerenciar quem tem acesso a eles e atribuir domínios personalizados, consulte [a documentação do Cloud Manager](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
 
 ## Instalação das Ferramentas de Linha de Comando do RDE {#installing-the-rde-command-line-tools}
 
-Depois de adicionar um RDE para o programa usando o Cloud Manager, você pode interagir com ele configurando as ferramentas de linha de comando conforme descrito nas seguintes etapas:
+Depois de ter adicionado um RDE para seu programa usando o Cloud Manager, você pode interagir com ele configurando as ferramentas de linha de comando, conforme descrito nas seguintes etapas:
 
 >[!IMPORTANT]
 >
@@ -147,7 +147,7 @@ A Adobe recomenda o seguinte fluxo de trabalho para desenvolver um novo recurso:
 
 * Quando um marco intermediário é atingido e validado localmente com êxito com o SDK as a Cloud Service do AEM, o código deve ser comprometido com uma ramificação de recurso do Git que ainda não faz parte da linha principal, embora a confirmação no Git seja opcional. O que constitui um &quot;marco intermediário&quot; varia com base nos hábitos da equipe. Os exemplos incluem algumas novas linhas de código, meio dia de trabalho ou a conclusão de um sub-recurso.
 
-* Redefina o RDE se ele tiver sido usado por outro recurso e você quiser [redefinir para um estado padrão](#reset-rde). <!-- Alexandru: hiding for now, please don't delete This can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). -->A redefinição levará alguns minutos e todo o conteúdo e código existente será excluído. Você pode usar o comando RDE status para confirmar se o RDE está pronto. O RDE voltará com a versão mais recente do AEM.
+* Redefina o RDE se ele tiver sido usado por outro recurso e você quiser [redefinir para um estado padrão](#reset-rde). <!-- Alexandru: hiding for now, do not delete This can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). -->A redefinição levará alguns minutos e todo o conteúdo e código existente será excluído. Você pode usar o comando RDE status para confirmar se o RDE está pronto. O RDE voltará com a versão mais recente do AEM.
 
   >[!IMPORTANT]
   >
@@ -369,7 +369,7 @@ A redefinição do RDE remove todos os códigos personalizados, configurações 
 
 Uma redefinição definirá o RDE para a versão do AEM mais recente disponível.
 
-<!-- Alexandru: hiding for now, please don't delete
+<!-- Alexandru: hiding for now, do not delete
 
 Resetting can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). Resetting takes a few minutes and all existing content and code is deleted from the RDE.
 
@@ -417,7 +417,7 @@ Você pode usar o Cloud Manager para redefinir seu RDE seguindo as etapas abaixo
 
    ![Redefinir notificação de banner](/help/implementing/cloud-manager/assets/rde-reset-banner.png)
 
-Depois que o processo de redefinição do RDE é iniciado, ele geralmente leva alguns minutos para ser concluído e retorna o ambiente ao seu estado padrão. O status do processo de redefinição pode ser visualizado a qualquer momento no **Status** coluna da **Ambientes** ou no **Ambientes** janela.
+Depois que o processo de redefinição do RDE é iniciado, ele geralmente leva alguns minutos para ser concluído e retornar o ambiente ao seu estado padrão. O status do processo de redefinição pode ser visualizado a qualquer momento no **Status** coluna da **Ambientes** ou no **Ambientes** janela.
 
 ![Status de redefinição do RDE](/help/implementing/cloud-manager/assets/rde-reset-status-environments-card.png)
 
@@ -425,7 +425,7 @@ Também é possível redefinir o RDE usando o botão de reticências diretamente
 
 ![Redefinir RDE do cartão Ambientes](/help/implementing/cloud-manager/assets/rde-reset-environments-card.png)
 
-Para obter mais informações sobre como usar o Cloud Manager para gerenciar seus ambientes, consulte [a documentação do Cloud Manager.](/help/implementing/cloud-manager/manage-environments.md)
+Para obter mais informações sobre como usar o Cloud Manager para gerenciar seus ambientes, consulte [a documentação do Cloud Manager](/help/implementing/cloud-manager/manage-environments.md).
 
 ## Modos de execução {#runmodes}
 
@@ -500,4 +500,4 @@ Os desenvolvedores da Forms podem usar o Ambiente de desenvolvimento Cloud Servi
 
 ## Tutorial RDE
 
-Para saber mais sobre a RDE no AEM as a Cloud Service, consulte o [tutorial em vídeo que demonstra como configurá-lo, como usá-lo e o ciclo de vida do desenvolvimento](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html)
+Para saber mais sobre a RDE no AEM as a Cloud Service, consulte [tutorial em vídeo que demonstra como configurá-lo, como usá-lo e o ciclo de vida do desenvolvimento](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html)

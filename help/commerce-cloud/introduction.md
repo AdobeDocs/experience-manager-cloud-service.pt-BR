@@ -3,10 +3,10 @@ title: Introdução e visão geral
 description: Introdução e visão geral do Content and Commerce. A Estrutura de Integração do Commerce (CIF) do Experience Manager é o padrão recomendado da Adobe para integrar e estender os serviços comerciais do Adobe Commerce e outras soluções comerciais de terceiros com a Experience Cloud.
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '894'
-ht-degree: 92%
+source-wordcount: '891'
+ht-degree: 89%
 
 ---
 
@@ -18,7 +18,7 @@ Com o Adobe Experience Manager Content and Commerce, as marcas podem dimensionar
 
 Com as expectativas cada vez maiores dos clientes em experiências comerciais online, as marcas são pressionadas a oferecer experiências diferenciadas e mais conteúdo com mais rapidez. No entanto, a implementação de uma plataforma de gerenciamento de conteúdo geralmente requer investimentos em tempo e orçamento pesados no desenvolvimento de elementos fundamentais, como componentes personalizados e ferramentas de criação, e acumula custos em manutenção e atualizações. O Experience Manager Sites oferece o Content and Commerce como um módulo complementar para o Experience Manager as a Cloud Service que fornece componentes principais de comércio prontos para uso, ferramentas de criação e uma loja de referência para acelerar o lançamento, permitir colaboração perfeita entre equipes e impulsionar a conversão.
 
-As marcas podem integrar o Experience Manager com o Adobe Commerce, parte da Adobe Experience Cloud, bem como qualquer mecanismo de comércio preferido. Com o Experience Manager Content and Commerce, as marcas podem:
+As marcas podem integrar o Experience Manager com o Adobe Commerce, parte da Adobe Experience Cloud e qualquer mecanismo comercial de sua escolha. Com o Experience Manager Content and Commerce, as marcas podem:
 
 * Expandir e inovar mais rápido
 * Personalizar experiências para impulsionar a conversão
@@ -79,6 +79,6 @@ A CIF oferece suporte a clientes com esquemas de integração padronizados com b
 
 ## Jornada {#journey}
 
-Se você estiver seguindo uma Jornada do comércio, vá para a próxima etapa:
+Se você estiver seguindo uma Jornada do Commerce, vá para a próxima etapa:
 
 * A [Jornada do autor de conteúdo AEM](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/getting-started.md)

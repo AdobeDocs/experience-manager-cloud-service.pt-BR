@@ -2,10 +2,10 @@
 title: Criação de conteúdo com o Editor universal
 description: Saiba como é fácil e intuitivo para os autores criarem conteúdo utilizando o Editor universal.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1147'
-ht-degree: 84%
+source-wordcount: '1142'
+ht-degree: 80%
 
 ---
 
@@ -33,7 +33,7 @@ Para criar conteúdo para um aplicativo usando o Editor universal, o aplicativo 
 
 >[!TIP]
 >
->Consulte o documento [Introdução ao Editor universal no AEM](getting-started.md) para obter um exemplo de como configurar um aplicativo do AEM para funcionar com o Editor universal.
+>Consulte [Introdução ao editor universal no AEM](getting-started.md) para obter um exemplo de como configurar um aplicativo AEM para funcionar com o Editor universal.
 
 ## Fazer logon {#sign-in}
 
@@ -84,7 +84,7 @@ O ícone de ajuda fornece acesso rápido aos recursos de aprendizagem e suporte.
 
 #### Notificações {#notifications}
 
-Esse ícone contém o número de incompletos atribuídos no momento [notificações.](/help/implementing/cloud-manager/notifications.md)
+Esse ícone contém o número de incompletos atribuídos no momento [notificações](/help/implementing/cloud-manager/notifications.md).
 
 ![Notificações](assets/notifications.png)
 
@@ -96,7 +96,7 @@ Toque ou clique no ícone que representa seu usuário para acessar suas configur
 
 ### O cabeçalho do Editor universal {#universal-editor-header}
 
-O cabeçalho do Editor universal está sempre presente na parte superior da tela, logo abaixo [do cabeçalho da Experience Cloud.](#experience-cloud-header) Ele fornece acesso rápido para navegar para outra página a ser editada, bem como para publicar a página atual.
+O cabeçalho do Editor universal está sempre presente na parte superior da tela, logo abaixo [do cabeçalho da Experience Cloud.](#experience-cloud-header) Ele fornece acesso rápido para navegar para outra página para editar e publicar a página atual.
 
 ![O cabeçalho do Editor universal](assets/universal-editor-header.png)
 

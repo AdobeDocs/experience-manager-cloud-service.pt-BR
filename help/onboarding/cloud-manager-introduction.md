@@ -2,10 +2,10 @@
 title: Introdução ao Cloud Manager
 description: Saiba mais sobre como o Cloud Manager dá suporte ao seu projeto do AEM por meio de programas, ambientes e pipelines.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '851'
-ht-degree: 98%
+source-wordcount: '835'
+ht-degree: 82%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 98%
 
 O Cloud Manager é um componente essencial do AEM as a Cloud Service e serve como ponto de entrada único para a equipe. Seus pipelines de CI/CD criados com propósitos específicos estão equipados de forma a garantir testes completos e código da mais alta qualidade para fornecer experiências excepcionais. Para garantir que os clientes possam iniciar rapidamente seus projetos, o Cloud Manager fornece tudo o que é necessário de maneira automatizada, incluindo a capacidade de criar recursos e ambientes de nuvem e acessar repositórios Git. Esses recursos dão suporte a configurações de desenvolvimento empresarial para que as equipes possam trabalhar para confirmar alterações com frequência, fornecer experiências digitais excepcionais com rapidez e acelerar o tempo de retorno.
 
-O administrador do sistema é responsável pela configuração da equipe do Cloud Manager, que incluirá desenvolvedores e os indivíduos que criarão os recursos de nuvem. Para obter mais informações sobre como configurar e dimensionar sua equipe de desenvolvimento corporativo e ver como o AEM as a Cloud Service pode apoiar seu processo de desenvolvimento, consulte o documento [Configuração de desenvolvimento para equipes corporativas para o AEM as a Cloud Service.](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
+O administrador do sistema é responsável pela configuração da equipe do Cloud Manager, que incluirá desenvolvedores e os indivíduos que criarão os recursos de nuvem. Para obter mais informações sobre como configurar e dimensionar sua equipe de desenvolvimento corporativo e ver como o AEM as a Cloud Service pode apoiar seu processo de desenvolvimento, consulte [Configuração de desenvolvimento de equipes corporativas para AEM as a Cloud Service](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md).
 
 ## Acesso à página de Visão geral do Cloud Manager {#navigate-cloud-manager}
 
@@ -23,7 +23,7 @@ Siga estas etapas para acessar o Cloud Manager.
 
 1. Selecione o programa na página **Programas e produtos** do Cloud Manager para abrir a página **Visão geral**.
 
-Você também pode navegar para a página Programas e produtos do Cloud Manager a partir da página inicial da Adobe Experience Cloud seguindo estas etapas:
+Você também pode navegar para a página Programas e produtos do Cloud Manager a partir da página inicial do Adobe Experience Cloud seguindo estas etapas:
 
 1. Acesse a Adobe Experience Cloud em [`https://experience.adobe.com`](https://experience.adobe.com) e faça logon usando sua Adobe ID.
 
@@ -54,7 +54,7 @@ Você também pode navegar para a página Programas e produtos do Cloud Manager 
 
 >[!NOTE]
 >
->Um usuário pode ser atribuído a várias funções. Por exemplo, atribuir as funções **Proprietário da empresa** e **Gerente de implantação** a um usuário resultará na soma dessas permissões para o usuário.
+>Um usuário pode ser atribuído a várias funções. Por exemplo, atribuir ambos **Proprietário da empresa** e **Gerente de implantação** a um usuário fornece ao usuário a soma dessas permissões.
 
 ## Programas do Cloud Manager {#cloud-manager-programs}
 
@@ -66,12 +66,12 @@ Assista a este [vídeo](https://experienceleague.adobe.com/docs/experience-manag
 Um usuário pode criar um programa de **Sandbox** ou **Produção**.
 
 * Um **programa de produção** é criado para permitir o tráfego direto em um momento adequado no futuro.
-   * Consulte o documento [Introdução aos programas de produção](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) para obter mais detalhes.
+   * Consulte [Introdução aos programas de produção](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) para obter mais detalhes.
 
 * Um **programa de sandbox** é normalmente criado para fins de treinamento, execução de demonstrações, capacitação, criação de POCs ou documentação.
    * Não se destina a transportar tráfego direto e terá restrições que um programa de produção não terá.
    * Ele inclui Sites e Ativos e é fornecido preenchido automaticamente com uma ramificação Git que inclui código de amostra, um ambiente de desenvolvimento e um pipeline de não produção.
-   * Consulte o documento [Introdução aos programas de sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) para obter mais detalhes.
+   * Consulte [Introdução aos programas de sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) para obter mais detalhes.
 
 ## Ambientes do Cloud Manager {#cloud-manager-environments}
 
@@ -83,9 +83,9 @@ Seus ambientes de nuvem são criados, acessados e visualizados por meio do Cloud
 
 >[!TIP]
 >
-> Consulte o vídeo [Uso de ambientes do Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=pt-BR), uma visão geral dos ambientes disponíveis.
+> Assista ao vídeo [Utilização de ambientes do Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=pt-BR) uma visão geral dos ambientes disponíveis.
 >
->Consulte o documento [Gerenciar ambientes](/help/implementing/cloud-manager/manage-environments.md) para saber mais sobre os tipos de ambientes que um usuário pode criar e como criá-los.
+>Consulte [Gerenciar ambientes](/help/implementing/cloud-manager/manage-environments.md) para saber mais sobre os tipos de ambientes que um usuário pode criar e como criá-los.
 
 ### Serviço de autoria do AEM {#author-services}
 

@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1406'
-ht-degree: 94%
+source-wordcount: '1400'
+ht-degree: 88%
 
 ---
 
@@ -47,7 +47,7 @@ Há vários requisitos antes de começar a traduzir o conteúdo do AEM.
 
 >[!TIP]
 >
->Se você não estiver familiarizado com o uso de um CMS em larga escala como o AEM, considere revisar a documentação de [Manuseio básico](/help/sites-cloud/authoring/getting-started/basic-handling.md) antes de continuar. A documentação de manuseio básico não faz parte da jornada, portanto, retorne à esta página quando terminar.
+>Se você não estiver familiarizado com o uso de um CMS em larga escala como o AEM, considere revisar a documentação de [Manuseio básico](/help/sites-cloud/authoring/getting-started/basic-handling.md) antes de continuar. A documentação de Manuseio básico não faz parte da jornada. Assim, retorne a esta página quando terminar.
 
 ### Ferramentas {#tools}
 
@@ -61,7 +61,7 @@ Para o especialista em tradução, não é importante entender em detalhes como 
 
 ### Console de sites {#sites-console}
 
-O console Sites fornece uma visão geral da estrutura do seu conteúdo, facilitando sua navegação, além de gerenciá-lo criando novas páginas, movendo e copiando páginas, bem como publicando conteúdo.
+O console Sites fornece uma visão geral da estrutura do seu conteúdo, facilitando sua navegação e gerenciamento criando novas páginas, movendo e copiando páginas e publicando conteúdo.
 
 Para acessar o console Sites:
 
@@ -75,7 +75,7 @@ Para acessar o console Sites:
 
    ![Hierarquia de conteúdo](assets/sites-console-hierarchy.png)
 
-1. Ao tocar ou clicar na caixa de seleção de um item em uma coluna, ele seleciona esse item e mostra os detalhes do item selecionado na coluna à direita, bem como revela várias ações disponíveis para o item selecionado na barra de ferramentas acima.
+1. Ao tocar ou clicar na caixa de seleção de um item em uma coluna, ele seleciona esse item e mostra os detalhes do item selecionado na coluna à direita e revela várias ações disponíveis para o item selecionado na barra de ferramentas acima.
 
    ![Seleção de conteúdo](assets/sites-console-selection.png)
 

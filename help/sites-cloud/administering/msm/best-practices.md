@@ -4,10 +4,10 @@ description: Conheça as práticas recomendadas compiladas pelas equipes de enge
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1429'
-ht-degree: 95%
+source-wordcount: '1425'
+ht-degree: 92%
 
 ---
 
@@ -39,7 +39,7 @@ Ao criar um novo site com a Live Copy, é vantajoso criar configurações de blu
 
 >[!NOTE]
 >
-> Observe que os CUGs na guia Permissões não podem ser implantados em Live Copies de blueprints. Planeje isso ao configurar a Live Copy.
+>Os CUGs na guia Permissões não podem ser implantados em Live Copies de blueprints. Planeje essa regra ao configurar a Live Copy.
 
 ## Sincronização de componentes e contêineres {#components-and-container-synchronization}
 
@@ -81,13 +81,13 @@ O MSM pode ajudar na criação de sites multilíngues de duas maneiras:
 
 Ao criar matrizes de idioma, lembre-se do seguinte:
 
-* Embora o MSM em si **não forneça a tradução de conteúdo**, ele pode ser integrado a conectores de tradução de terceiros que o fazem. Observe que:
+* Embora o MSM em si **não forneça a tradução de conteúdo**, ele pode ser integrado a conectores de tradução de terceiros que o fazem. Observe o seguinte:
    * O MSM permite cancelar a herança no nível da página e/ou do componente. Isso ajuda a impedir a substituição do conteúdo traduzido (de uma Live Copy, com conteúdo ainda não traduzido de um blueprint) na próxima implantação.
       * Alguns conectores de tradução de terceiros automatizam esse gerenciamento de heranças do MSM.
       * Consulte seu provedor de serviços de tradução para obter mais informações.
       * Uma abordagem alternativa para criar e traduzir matrizes de idioma é usar cópias de idioma juntamente com a estrutura de integração de tradução pronta para uso do AEM.
 
-Para obter mais informações, consulte [Tradução de conteúdo para sites multilíngues](/help/sites-cloud/administering/translation/overview.md) e as [Práticas recomendadas de tradução.](/help/sites-cloud/administering/translation/best-practices.md)
+Para obter mais informações, consulte [Tradução de conteúdo para sites multilíngues](/help/sites-cloud/administering/translation/overview.md) e as [Práticas recomendadas de tradução](/help/sites-cloud/administering/translation/best-practices.md).
 
 ## Alterações de estrutura e implantações {#structure-changes-and-rollouts}
 
@@ -144,7 +144,7 @@ Além de personalizar as ações de implantação, o MSM também permite persona
 
 ## Informações adicionais {#further-information}
 
-Consulte os seguintes artigos para obter mais detalhes sobre MSM e Live Copies.
+Consulte os artigos a seguir para obter mais detalhes sobre MSM e Live Copy.
 
 * [Criação e sincronização de Live Copies](creating-live-copies.md)
 * [Visão geral do console da Live Copy](live-copy-overview.md)

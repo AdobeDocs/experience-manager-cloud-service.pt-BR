@@ -3,10 +3,10 @@ title: Configurar pipelines de não produção
 description: Saiba como configurar pipelines de não produção para testar a qualidade do código antes de implantar em ambientes de produção.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1362'
-ht-degree: 94%
+source-wordcount: '1356'
+ht-degree: 57%
 
 ---
 
@@ -50,13 +50,13 @@ Depois de configurar seu programa e ter pelo menos um ambiente usando a interfac
    * **Acionador da implantação** - Você tem as seguintes opções ao definir os acionadores de implantação para iniciar o pipeline.
 
       * **Manual** - Use essa opção para iniciar manualmente o pipeline.
-      * **Quando o Git é alterado** - Essas opções iniciam o pipeline de CI/CD sempre que confirmações são adicionadas à ramificação Git configurada. Com essa opção, ainda é possível iniciar o pipeline manualmente, conforme necessário.
+      * **Sobre alterações do Git** - Essa opção inicia o pipeline de CI/CD sempre que as confirmações são adicionadas à ramificação Git configurada. Com essa opção, ainda é possível iniciar o pipeline manualmente, conforme necessário.
 
-1. Se optar por criar um **Pipeline de implantação**, você também precisará definir a variável **Comportamento de falhas de métricas importantes**.
+1. Se você optar por criar um **Pipeline de implantação**, você também deve definir o **Comportamento de falhas de métricas importantes**.
 
-   * **Sempre perguntar** - Essa é a configuração padrão e requer intervenção manual em qualquer falha importante.
-   * **Falha imediata** - Se selecionado, o pipeline será cancelado sempre que ocorrer uma falha importante. É como emular um usuário que rejeita manualmente cada falha.
-   * **Continuar imediatamente** - Se selecionado, o pipeline continuará automaticamente sempre que ocorrer uma falha importante. É como emular um usuário que aprova manualmente cada falha.
+   * **Pergunte sempre** - Esse comportamento é a configuração padrão e requer intervenção manual em qualquer falha importante.
+   * **Falha imediata** - Se selecionado, o pipeline será cancelado sempre que ocorrer uma falha importante. É basicamente semelhante a um usuário que rejeita manualmente cada falha.
+   * **Continuar imediatamente** - Se selecionado, o pipeline continuará automaticamente sempre que ocorrer uma falha importante. É basicamente semelhante a um usuário que aprova manualmente cada falha.
 
 1. Clique em **Continuar**.
 
@@ -66,7 +66,7 @@ Depois de configurar seu programa e ter pelo menos um ambiente usando a interfac
    * **[Código de pilha completa](#full-stack-code)**
    * **[Configuração no nível da Web](#web-tier-config)**
 
-As etapas para concluir a criação do pipeline de não produção variam de acordo com a opção de **Código-fonte** que você selecionou. Siga os links acima para ir até a próxima seção deste documento para concluir a configuração do pipeline.
+As etapas para concluir a criação do pipeline de não produção variam de acordo com a opção de **Código-fonte** que você selecionou. Siga os links acima para ir até a próxima seção deste documento para que você possa concluir a configuração do pipeline.
 
 ### Código de front-end {#front-end-code}
 
@@ -81,10 +81,10 @@ Para concluir a configuração do pipeline de não produção do código de fron
 
    >[!TIP]
    > 
-   >Consulte o documento [Adição e gerenciamento de repositórios](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) para saber como adicionar e gerenciar repositórios no Cloud Manager.
+   >Consulte [Adicionar e gerenciar repositórios](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) para que você possa aprender a adicionar e gerenciar repositórios no Cloud Manager.
 
    * **Ramificação Git** - Essa opção define de qual ramificação o pipeline selecionado deve recuperar o código.
-      * Insira os primeiros caracteres do nome da ramificação e o recurso de preenchimento automático do campo localizará as ramificações correspondentes para ajudá-lo em sua seleção.
+      * Insira os primeiros caracteres do nome da ramificação e o recurso de preenchimento automático deste campo. Ele encontra as ramificações correspondentes que você pode selecionar.
    * **Localização do código** - Essa opção define o caminho na ramificação do repositório selecionado do qual o pipeline deve recuperar o código.
 
    ![Pipeline de front-end](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-front-end.png)
@@ -99,7 +99,7 @@ Um pipeline de código de pilha completa implanta simultaneamente compilações 
 
 >[!NOTE]
 >
->Se um pipeline de código de pilha completa já existir para o ambiente selecionado, essa seleção será desativada.
+>Se existir um pipeline de código de pilha completa para o ambiente selecionado, essa seleção será desativada.
 
 Para concluir a configuração do pipeline de não produção do código de pilha completa, siga estas etapas.
 
@@ -110,11 +110,11 @@ Para concluir a configuração do pipeline de não produção do código de pilh
 
    >[!TIP]
    > 
-   >Consulte o documento [Adição e gerenciamento de repositórios](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) para saber como adicionar e gerenciar repositórios no Cloud Manager.
+   >Consulte [Adicionar e gerenciar repositórios](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) para que você possa aprender a adicionar e gerenciar repositórios no Cloud Manager.
 
    * **Ramificação Git** - Essa opção define de qual ramificação o pipeline selecionado deve recuperar o código.
-      * Insira os primeiros caracteres do nome da ramificação e o recurso de preenchimento automático do campo localizará as ramificações correspondentes para ajudá-lo em sua seleção.
-   * **Ignorar configuração no nível da Web** - Quando marcado, o pipeline não implantará sua configuração no nível da Web.
+      * Insira os primeiros caracteres do nome da ramificação e o recurso de preenchimento automático deste campo. Isso ajuda a encontrar as ramificações correspondentes que você pode selecionar.
+   * **Ignorar configuração da camada da Web** - Quando marcado, o pipeline não implantará sua configuração no nível da Web.
 
    * **Pipeline**: se um pipeline de implantação for utilizado, você pode optar por executar uma fase de teste. Marque as opções que deseja habilitar nesta fase. Se nenhuma das opções for selecionada, a fase de teste não será exibida durante a execução do pipeline.
 
@@ -130,11 +130,11 @@ O pipeline é salvo e agora você pode [gerenciar seus pipelines](managing-pipel
 
 ### Configuração no nível da Web {#web-tier-config}
 
-Um pipeline de configuração no nível da Web implanta configurações HTTPD/Dispatcher. Consulte o documento [Pipelines de CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipeline) para obter mais informações sobre esse tipo de pipeline.
+Um pipeline de configuração no nível da Web implanta configurações HTTPD/Dispatcher. Consulte [Pipelines de CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipeline) para obter mais informações sobre esse tipo de pipeline.
 
 >[!NOTE]
 >
->Se um pipeline de código no nível da Web já existir para o ambiente selecionado, essa seleção será desativada.
+>Se existir um pipeline de código no nível da Web para o ambiente selecionado, essa seleção será desativada.
 
 Para concluir a configuração do pipeline de não produção no nível da Web, siga estas etapas.
 
@@ -145,11 +145,11 @@ Para concluir a configuração do pipeline de não produção no nível da Web, 
 
    >[!TIP]
    > 
-   >Consulte o documento [Adição e gerenciamento de repositórios](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) para saber como adicionar e gerenciar repositórios no Cloud Manager.
+   >Consulte [Adicionar e gerenciar repositórios](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) para que você possa aprender a adicionar e gerenciar repositórios no Cloud Manager.
 
    * **Ramificação Git** - Essa opção define de qual ramificação o pipeline selecionado deve recuperar o código.
    * **Localização do código** - Essa opção define o caminho na ramificação do repositório selecionado do qual o pipeline deve recuperar o código.
-      * Para pipelines de configuração no nível da Web, esse é geralmente o caminho que contém os diretórios `conf.d`, `conf.dispatcher.d` e `opt-in`.
+      * Para pipelines de configuração no nível da Web, esse caminho geralmente contém `conf.d`, `conf.dispatcher.d`, e `opt-in` diretórios.
       * Por exemplo, se a estrutura do projeto foi gerada a partir do [Arquétipo de projeto AEM,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR) o caminho seria `/dispatcher/src`.
 
    ![Pipeline no nível da Web](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-web-tier.png)
@@ -170,9 +170,9 @@ Consulte o documento [Desenvolvimento de sites com o pipeline front-end](/help/i
 
 ## Ignorar pacotes do Dispatcher {#skip-dispatcher-packages}
 
-Se quiser que os pacotes do dispatcher sejam compilados como parte do pipeline, mas não quiser que eles sejam publicados para criar armazenamento, desative a publicação, o que pode reduzir a duração da execução do pipeline.
+Se você quiser que os pacotes do Dispatcher sejam compilados como parte do pipeline, mas não quiser que eles sejam publicados para criar armazenamento, desative a publicação, o que pode reduzir a duração da execução do pipeline.
 
-A configuração a seguir para desativar a publicação de pacotes do dispatcher deve ser adicionada por meio do arquivo de projeto `pom.xml`. Ela se baseia em uma variável de ambiente, que serve como um sinalizador que pode ser definido no contêiner de compilação do Cloud Manager para especificar quando os pacotes do dispatcher devem ser ignorados.
+A configuração a seguir para desativar a publicação de pacotes do Dispatcher deve ser adicionada por meio do projeto `pom.xml` arquivo. Ela se baseia em uma variável de ambiente, que serve como um sinalizador que pode ser definido no contêiner de compilação do Cloud Manager para definir quando os pacotes do Dispatcher devem ser ignorados.
 
 ```xml
 <profile>

@@ -2,16 +2,16 @@
 title: Atribuição de canal a uma Exibição no Screens as a Cloud Service
 description: Esta página descreve como atribuir um canal a uma exibição no Screens as a Cloud Service.
 exl-id: ba001c18-7b05-4ae2-aa7f-9ebb320fedd0
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 1%
+source-wordcount: '442'
+ht-degree: 2%
 
 ---
 
 # Atribuição de canal a uma Exibição no Screens as a Cloud Service {#assign-channel-displays-screens-cloud}
 
-Quando a configuração do projeto for concluída, você deve atribuir o canal a uma exibição para visualizar o conteúdo.
+Após a conclusão da configuração do projeto, é necessário atribuir o canal a uma exibição para exibir o conteúdo.
 
 ## Objetivo {#objective}
 
@@ -42,7 +42,8 @@ Siga as etapas abaixo para atribuir um canal a uma exibição:
    1. Escolha a prioridade.
 
       >[!NOTE]
-      >A prioridade é usada para ordenar as atribuições caso várias correspondam aos critérios de reprodução. Aquele com o valor mais alto sempre terá precedência sobre os valores mais baixos. Por exemplo, se houver dois canais A e B. A tem uma prioridade 1 e B tem uma prioridade 2, então o canal B é exibido, pois tem uma prioridade mais alta que A.
+      >A prioridade é usada para ordenar as atribuições caso várias correspondam aos critérios de reprodução. Aquele com o valor mais alto sempre tem prioridade sobre valores mais baixos. Por exemplo, se houver dois canais A e B. A tem uma prioridade 1 e B tem uma prioridade 2, então o canal B é exibido, pois tem uma prioridade mais alta que A.
+
    1. Selecionar a data inicial e a data final de **Ativação**.
 
 1. Clique em **+ Adicionar recorrência** para adicionar um cronograma de recorrência para seu canal.
@@ -50,7 +51,7 @@ Siga as etapas abaixo para atribuir um canal a uma exibição:
    ![imagem](/help/screens-cloud/assets/create-content/recurrence-1.png)
 
    >[!NOTE]
-   >Você pode adicionar vários agendamentos recorrentes ao seu canal. Os cronogramas recorrentes introduzem o DayParting, que permite definir um cronograma global com vários canais em execução em horários específicos do dia e reutilizar essa configuração para todas as exibições de uma só vez.
+   >Você pode adicionar vários agendamentos recorrentes ao seu canal. Os cronogramas recorrentes introduzem o DayParting, que permite definir um cronograma global com vários canais em execução em horários específicos do dia e reutilizar o que está configurado para todas as exibições de uma só vez.
 
    É possível definir as seguintes opções:
 
@@ -58,10 +59,10 @@ Siga as etapas abaixo para atribuir um canal a uma exibição:
    * **Repetir**: escolha se a programação é executada Diariamente, Semanalmente, Mensalmente ou Anualmente.
    * **Início**: a hora de início da sua programação.
    * **Fim**: a hora de término do cronograma. Você pode defini-lo por tempo ou duração.
-   * **Hora**: A programação será encerrada em um horário especificado.
+   * **Hora**: A programação termina em um horário especificado.
    * **Duração**: A programação é executada por uma duração de tempo específica em horas ou minutos.
 
-1. Clique em **Criar** e agora você verá que um canal foi atribuído para essa exibição, como mostrado na figura abaixo.
+1. Clique em **Criar**. Você pode ver que um canal é atribuído para essa exibição, como mostrado na figura abaixo.
 
    ![imagem](/help/screens-cloud/assets/display/assignchannel-3.png)
 

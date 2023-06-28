@@ -2,9 +2,9 @@
 title: Introdução à Jornada de migração para o AEM as a Cloud Service
 description: Inicie sua jornada de migração ao familiarizar-se com as noções básicas da mudança para o AEM as a Cloud Service
 exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '583'
 ht-degree: 24%
 
 ---
@@ -15,7 +15,7 @@ Nesta parte da Jornada AEM de migração as a Cloud Service do AEM, você aprend
 
 ## Objetivo {#objective}
 
-Este documento ajuda você a entender por que deve usar uma versão nativa em nuvem do AEM, bem como as diferentes fases de migração para o AEM as a Cloud Service. Depois de ler, você deve:
+Este documento ajuda você a entender por que deve usar uma versão nativa em nuvem do AEM e as diferentes fases de migração para o AEM as a Cloud Service. Depois de ler, você deve:
 
 * Compreender os benefícios de mover o AEM as a Cloud Service
 * Familiarize-se com as etapas amplas que devem ser seguidas para fazer a transição para a nuvem

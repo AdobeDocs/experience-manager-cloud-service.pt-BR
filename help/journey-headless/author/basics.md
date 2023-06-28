@@ -2,10 +2,10 @@
 title: Saiba mais sobre as noções básicas de criação
 description: Saiba mais sobre os conceitos e os mecanismos de criação de conteúdo para seu CMS headless usando Fragmentos de conteúdo.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1709'
-ht-degree: 91%
+source-wordcount: '1712'
+ht-degree: 85%
 
 ---
 
@@ -121,7 +121,7 @@ You can view additional information about items using the Rail Selector. This al
 
 ## Criação de fragmentos de conteúdo {#authoring-content-fragments}
 
-Então, essa foi uma introdução bem rápida à interface do AEM, mas espero que você tenha tido uma chance de experimentá-la. Agora, chegamos ao seu verdadeiro interesse: Fragmentos de conteúdo para headless.
+Essa foi uma rápida introdução à interface do usuário (UI) do AEM, mas espero que você tenha tido a chance de experimentá-la. Agora, chegamos ao seu verdadeiro interesse: Fragmentos de conteúdo para headless.
 
 Teremos que passar pelas coisas do início ao fim, mas sua instância já pode ter pastas e/ou fragmentos criados, e eles podem estar em locais diferentes. Os princípios são os mesmos.
 
@@ -141,7 +141,7 @@ Uma caixa de diálogo será aberta em que você pode inserir os detalhes e, em s
 
 #### Uso de caminhos e tags para limitar os Modelos de fragmentos de conteúdo disponíveis na pasta {#tags-paths-for-models-in-folder}
 
-Esta seção é um pouco mais avançada. Você realmente não precisa se você está apenas começando e tentando coisas, mas é *muito* útil quando há muitos fragmentos. Portanto, é bom saber sobre o - mesmo que você ainda não o use.
+Esta seção é um pouco mais avançada. Você realmente não precisa se você está apenas começando e tentando coisas, mas é *muito* útil quando há muitos fragmentos. Por isso, é bom saber sobre - mesmo se você não usá-lo ainda.
 
 Seu Arquiteto de conteúdo terá criado todos os Modelos de fragmentos de conteúdo necessários para seu projeto atual e talvez alguns outros projetos também. Para ajudar a simplificar as coisas para você mesmo e para outros autores, você pode limitar a lista de modelos disponíveis para uma pasta específica.
 
@@ -203,7 +203,7 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
 É possível abrir um fragmento imediatamente depois de criá-lo ou selecionando-o no console Fragmentos de conteúdo (também no console Ativos).
 
-Quando o editor for aberto pela primeira vez, você verá:
+Quando o editor é aberto pela primeira vez, você vê:
 
 * Uma lista de ícones no lado esquerdo - isso lhe dá acesso a várias áreas de funcionalidade. O editor é aberto na guia **Variações**, em que ocorre a maioria das edições. Você também pode estar interessado nas guias **Anotações** e **Metadados**.
 
@@ -213,7 +213,7 @@ Quando o editor for aberto pela primeira vez, você verá:
 
 Como exemplos:
 
-* Um fragmento que apenas requer várias informações, algumas com um tipo específico. Para conteúdo headless, as referências são fundamentais. Você aprenderá sobre isso mais tarde na sua jornada.
+* Um fragmento que apenas requer várias informações, algumas com um tipo específico. Para conteúdo headless, as referências são importantes, você as aprenderá posteriormente em sua jornada.
 
   ![Editor de fragmento de conteúdo - Meu fragmento](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
 
@@ -235,7 +235,7 @@ Confirme suas atualizações com **Salvar** ou **Salvar e fechar**.
 
 #### Com o que você (provavelmente) não precisa se preocupar {#what-you-probably-do-not-need-to-worry-about}
 
-Essa seção pode parecer um pouco estranha, mas após abrir o Editor de Fragmento de conteúdo e começar a explorar, você verá várias opções que (provavelmente) não se aplicam à sua jornada headless como um Autor de conteúdo. Então, isto é apenas um rápido aviso do que você deve ser capaz de ignorar no contexto headless:
+OK, essa seção pode parecer um pouco estranha, mas depois de abrir o Editor de fragmento de conteúdo e começar a explorar, você pode ver várias opções que (provavelmente) não se aplicam à jornada headless como um autor de conteúdo. Então, isto é apenas um rápido aviso do que você deve ser capaz de ignorar no contexto headless:
 
 * **Modelos de fragmentos de conteúdo**
 
@@ -258,7 +258,7 @@ Os Modelos de fragmentos de conteúdo são essenciais para os Fragmentos de cont
 
 * **Atualizar referências de página**
 
-  Essa ação está disponível no menu suspenso **...** (reticências). Não é interessante para autores headless, pois se relaciona à criação de página.
+  Esta ação está disponível no **..** (reticências). Não é interessante para autores headless, pois se relaciona à criação de página.
 
 ### Publicação {#publishing}
 

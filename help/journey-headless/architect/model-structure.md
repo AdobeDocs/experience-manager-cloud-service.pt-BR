@@ -2,10 +2,10 @@
 title: Saiba mais sobre criação de Modelos de fragmento de conteúdo no AEM
 description: Saiba mais sobre os conceitos e os mecanismos de modelagem de conteúdo para seu Headless CMS usando Modelos de fragmentos de conteúdo.
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '686'
-ht-degree: 89%
+source-wordcount: '687'
+ht-degree: 84%
 
 ---
 
@@ -63,7 +63,7 @@ Então, o que deve ser feito?
 
 ![Definição de campos](/help/sites-cloud/administering/content-fragments/assets/cfm-models-04.png)
 
-Depois de adicionar um tipo de dados, você deve definir a variável **Propriedades** para esse campo. Eles dependem do tipo que está sendo usado. Por exemplo:
+Após adicionar um tipo de dados, é necessário definir o **Propriedades** para esse campo. Eles dependem do tipo que está sendo usado. Por exemplo:
 
 ![Propriedades de dados](/help/sites-cloud/administering/content-fragments/assets/cfm-models-05.png)
 
@@ -73,7 +73,7 @@ Adicione quantos campos precisar. Por exemplo:
 
 ### Autores de conteúdo {#your-content-authors}
 
-Seus autores de conteúdo não veem os tipos de dados e propriedades reais usados para criar seus modelos. Isso significa que talvez seja necessário fornecer ajuda e informações sobre como eles preenchem campos específicos. Para obter informações básicas, use o Rótulo do campo e o Valor padrão, mas em casos mais complexos talvez seja necessário considerar a documentação específica do projeto.
+Os autores de conteúdo não visualizam os Tipos de dados e as Propriedades reais que você usou para criar seus modelos. Isso significa que talvez seja necessário fornecer ajuda e informações sobre como eles preenchem campos específicos. Para obter informações básicas, use o Rótulo do campo e o Valor padrão, mas em casos mais complexos talvez seja necessário considerar a documentação específica do projeto.
 
 >[!NOTE]
 >

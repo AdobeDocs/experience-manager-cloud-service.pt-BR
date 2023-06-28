@@ -2,10 +2,10 @@
 title: Entenda o Cloud Manager e o fluxo de trabalho de Criação rápida de sites
 description: Saiba mais sobre o Cloud Manager e como ele se vincula ao novo processo de criação rápida de sites.
 exl-id: 5d264078-e552-48ca-8d82-294a646e6b1f
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1130'
-ht-degree: 100%
+source-wordcount: '1128'
+ht-degree: 96%
 
 ---
 
@@ -70,7 +70,7 @@ Para o desenvolvedor front-end, não é necessário usar o AEM.
 
 >[!TIP]
 >
->Se você não estiver familiarizado com as funções do Cloud Manager e o gerenciamento de funções, consulte o documento Permissões baseadas em funções na seção [Recursos adicionais](#additional-resources).
+>Se você não estiver familiarizado com as funções do Cloud Manager e o gerenciamento de funções, consulte o documento Permissões baseadas em funções no [Recursos adicionais](#additional-resources) seção.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -125,5 +125,5 @@ Embora seja recomendável seguir para a próxima parte da jornada de Criação r
 
 * [Documentação do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=pt_BR) - se quiser obter mais detalhes sobre os recursos do Cloud Manager, consulte diretamente os documentos técnicos detalhados.
 * [Permissões baseadas em função](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html?lang=pt_BR) - o Cloud Manager tem funções pré-configuradas com permissões apropriadas. Consulte este documento para obter detalhes sobre essas funções e sobre como administrá-las.
-* [npm](https://www.npmjs.com) - temas do AEM usados para criar rapidamente sites baseados em npm.
+* [npm](https://www.npmjs.com) - temas do AEM usados para criar sites rapidamente se baseiam em npm.
 * [webpack](https://webpack.js.org) - temas do AEM usados para criar sites rapidamente dependem do webpack.

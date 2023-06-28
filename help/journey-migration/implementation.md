@@ -2,7 +2,7 @@
 title: Fase de implementação
 description: Verificar se o código e o conteúdo estão prontos para a migração para a nuvem
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2337'
 ht-degree: 9%
@@ -15,7 +15,7 @@ Na fase de implementação da jornada, você explorará as ferramentas através 
 
 ## A história até agora {#story-so-far}
 
-Nas partes anteriores da jornada, você passou por [familiarizar-se com as mudanças no AEM as a Cloud Service](/help/journey-migration/getting-started.md)e determinar se a implantação está pronta para ser movida para a nuvem com o [fase de preparação](/help/journey-migration/readiness.md).
+Nas partes anteriores da jornada, você passou pelo [familiarizar-se com as mudanças no AEM as a Cloud Service](/help/journey-migration/getting-started.md)e determinado se a implantação está pronta para ser movida para a nuvem com o [fase de preparação](/help/journey-migration/readiness.md).
 
 Este artigo continua com conselhos sobre como usar as ferramentas fornecidas pelo Adobe para garantir que seu código e conteúdo estejam prontos para serem movidos para a nuvem.
 
@@ -256,4 +256,4 @@ A seção a seguir mostra as etapas importantes e as tarefas associadas que pode
 
 ## O que vem a seguir {#what-is-next}
 
-Uma vez que você tenha entendido completamente como avaliar se sua instalação do AEM está pronta para ser movida para a nuvem, à medida que aprendemos a usar as ferramentas necessárias para torná-la pronta, é hora de seguir para a [fase de ativação](/help/journey-migration/go-live.md).
+Depois de entender completamente como avaliar se a instalação do AEM está pronta para ser transferida para a nuvem, à medida que aprendemos a usar as ferramentas necessárias para torná-la pronta, é hora de seguir para a [fase de ativação](/help/journey-migration/go-live.md).

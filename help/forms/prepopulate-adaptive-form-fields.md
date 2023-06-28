@@ -6,7 +6,7 @@ seo-description: With Adaptive Forms, you users can prefill basic information in
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
-source-git-commit: 99a86fa88b0b98d732487b9e4b0b6de9fa3773ad
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1948'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Estrutura dos dados de preenchimento prévio {#the-prefill-structure}
 
-Um Formulário adaptável pode ter uma combinação de campos vinculados e não vinculados. Campos vinculados são campos que são arrastados da guia Localizador de conteúdo e contêm campos não vazios `bindRef` valor da propriedade na caixa de diálogo de edição do campo. Os campos não vinculados são arrastados diretamente do navegador de componentes do Sidekick e têm um vazio `bindRef` valor.
+Um Formulário adaptável pode ter uma combinação de campos vinculados e não vinculados. Campos vinculados são campos que são arrastados da guia Localizador de conteúdo e contêm campos não vazios `bindRef` valor da propriedade na caixa de diálogo de edição do campo. Os campos não vinculados são arrastados diretamente do navegador de componentes do Sidekick e têm um campo vazio `bindRef` valor.
 
 É possível preencher previamente os campos vinculados e não vinculados de um Formulário adaptável. Os dados de pré-preenchimento contêm as seções afBoundData e afUnBoundData para preencher previamente os campos vinculados e não vinculados de um Formulário adaptável. A variável `afBoundData` contém os dados de preenchimento prévio para campos e painéis vinculados. Esses dados devem ser compatíveis com o schema do modelo de formulário associado:
 
@@ -128,7 +128,7 @@ Para campos cujo modelo é o esquema XML, os dados são pré-preenchidos na vari
 
 >[!NOTE]
 >
->É recomendável não usar campos não vinculados em painéis vinculados (painéis com campos não vazios) `bindRef` que foi criado ao arrastar componentes do Sidekick ou da guia Fontes de dados). Isso pode causar perda de dados desses campos não vinculados. Além disso, é recomendável que os nomes dos campos sejam exclusivos em todo o formulário, especialmente para campos não vinculados.
+>É recomendável não usar campos não vinculados em painéis vinculados (painéis com campos não vazios) `bindRef` que foi criado ao arrastar componentes da guia Sidekick ou Fontes de dados). Isso pode causar perda de dados desses campos não vinculados. Além disso, é recomendável que os nomes dos campos sejam exclusivos em todo o formulário, especialmente para campos não vinculados.
 
 #### Um exemplo sem afData e afBoundData wrapper {#an-example-without-afdata-and-afbounddata-wrapper}
 
@@ -200,6 +200,7 @@ Veja abaixo um exemplo sem `afData/afBoundData` invólucro:
 >[!NOTE]
 >
 > O uso de campos não vinculados em painéis vinculados (painéis com bindRef não vazios que foram criados ao arrastar componentes da guia Sidekick ou Fontes de dados) é **não** recomendada, pois pode causar perda de dados dos campos não vinculados. É recomendável ter nomes de campo exclusivos em todo o formulário, especialmente para campos não vinculados.
+>
 
 ### Formulário adaptável sem modelo de formulário {#adaptive-form-with-no-form-model}
 
@@ -247,7 +248,6 @@ Para definir valores de uma configuração, [Gerar configurações de OSGi usand
 > - Por padrão, o preenchimento prévio é permitido por meio de arquivos crx para todos os tipos de Forms adaptável (XSD, XDP, JSON, FDM e sem modelo de formulário baseado). O preenchimento prévio é permitido somente com arquivos JSON e XML.
 > - O protocolo crx cuida da segurança de dados pré-preenchida e, portanto, é permitido por padrão. O preenchimento prévio por meio de outros protocolos usando regex genérico pode causar vulnerabilidade. Na configuração do, especifique uma configuração de URL segura para proteger seus dados.
 
-
 ## O caso curioso de painéis repetíveis {#the-curious-case-of-repeatable-panels}
 
 Geralmente, os campos vinculados (esquema de formulário) e não vinculados são criados no mesmo Formulário adaptável, mas as exceções a seguir são algumas caso os campos vinculados sejam repetíveis:
@@ -292,7 +292,7 @@ https://`servername`/content/forms/af/xml.html?wcmmode=disabled&dataRef=https://
 https://`servername`/content/forms/af/abc.html?wcmmode=disabled&dataRef=service://[SERVICE_NAME]/[IDENTIFIER]
 ```
 
-- SERVICE_NAME refere-se ao nome do serviço de preenchimento prévio OSGI. Consultar [Criar e executar um serviço de preenchimento prévio](prepopulate-adaptive-form-fields.md#create-and-run-a-prefill-service).
+- SERVICE_NAME refere-se ao nome do serviço de preenchimento prévio OSGI. Consulte [Criar e executar um serviço de preenchimento prévio](prepopulate-adaptive-form-fields.md#create-and-run-a-prefill-service).
 - IDENTIFIER refere-se a quaisquer metadados necessários pelo serviço de preenchimento prévio OSGI para buscar os dados de preenchimento prévio. Um identificador para o usuário conectado é um exemplo de metadados que podem ser usados.
 
 >[!NOTE]

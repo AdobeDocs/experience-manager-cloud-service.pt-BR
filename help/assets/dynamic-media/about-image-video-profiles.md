@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Video Profiles
 role: Admin,User
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
-source-git-commit: a641903bf47634cd969f23840c5e6e6fa5a3693b
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1377'
 ht-degree: 0%
@@ -75,13 +75,13 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 1. Próximo ao canto superior esquerdo da página, na lista suspensa, selecione **[!UICONTROL Linha do tempo]**.
 1. Próximo ao canto inferior esquerdo da página, à direita da [!UICONTROL Comentário] , selecione o ícone de quilate ( **^** ).
 
-   ![Captura de tela de Ativos no Experience Manager mostrando uma pasta selecionada de ativos, a lista suspensa Linha do tempo destacada, o botão Iniciar fluxo de trabalho destacado e o ícone de carrinho à direita do campo Comentário também destacado.](/help/assets/dynamic-media/assets/reprocess-assets1.png)
+   ![Captura de tela de Ativos no Experience Manager mostrando uma pasta selecionada de ativos, a lista suspensa Linha do tempo destacada, o botão Iniciar fluxo de trabalho destacado e o ícone de carrinho à direita do campo Comentário também destacado](/help/assets/dynamic-media/assets/reprocess-assets1.png).
 
 1. Selecionar **[!UICONTROL Iniciar fluxo de trabalho]**.
 1. No **[!UICONTROL Iniciar fluxo de trabalho]** selecione **[!UICONTROL Scene7: Reprocessar ativos]**.
 1. (Opcional) Na **Inserir título do fluxo de trabalho** digite um nome para o workflow. Você pode usar o nome para fazer referência à instância do workflow, se necessário.
 
-   ![Captura de tela da interface do usuário da Linha do tempo com a opção &quot;Scene7: Reprocessar ativos&quot; selecionada na lista suspensa Iniciar fluxo de trabalho, e o botão Iniciar realçado.](/help/assets/dynamic-media/assets/reprocess-assets2.png)
+   ![Captura de tela da interface do usuário da Linha do tempo com a opção &quot;Scene7: Reprocessar ativos&quot; selecionada na lista suspensa Iniciar fluxo de trabalho, e o botão Iniciar realçado](/help/assets/dynamic-media/assets/reprocess-assets2.png).
 
 1. Selecionar **[!UICONTROL Início]** e selecione **[!UICONTROL Confirmar o]**.
 
@@ -96,13 +96,13 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 1. Entrada [!DNL Experience Manager], selecione **[!UICONTROL Adobe Experience Manager]** para acessar o console de navegação global, selecione a guia **[!UICONTROL Ferramentas]** Ícone (martelo) > **[!UICONTROL Fluxo de trabalho > Modelos]**.
 1. Na página Modelos de fluxo de trabalho, na Exibição de cartão ou na Exibição de lista, selecione **[!UICONTROL Scene7: Reprocessar ativos]**.
 
-   ![Captura de tela da página Modelos de fluxo de trabalho com o fluxo de trabalho &quot;Scene7: Reprocessar ativos&quot; selecionado na exibição Cartão do Experience Manager.](/help/assets/dynamic-media/assets/reprocess-assets7.png)
+   ![Captura de tela da página Modelos de fluxo de trabalho com o fluxo de trabalho &quot;Scene7: Reprocessar ativos&quot; selecionado na exibição Cartão do Experience Manager](/help/assets/dynamic-media/assets/reprocess-assets7.png).
 
 1. Na barra de ferramentas, selecione **[!UICONTROL Editar]**. Uma nova guia do navegador abre a página Scene7: Reprocessar ativos do modelo de fluxo de trabalho.
 1. Na página de fluxo de trabalho Scene7: Reprocessar ativos, próximo ao canto superior direito, selecione **[!UICONTROL Editar]** para &quot;desbloquear&quot; o workflow.
 1. No fluxo de trabalho, selecione o componente Scene7 Batch Upload para abrir a barra de ferramentas e selecione **[!UICONTROL Configurar]** na barra de ferramentas.
 
-   ![Captura de tela do componente &quot;Upload em lote do Scene7&quot; na página &quot;Scene7: Reprocessamento de ativos&quot; com o ponteiro do mouse sobre o ícone &quot;Configurar&quot;.](/help/assets/dynamic-media/assets/reprocess-assets8.png)
+   ![Captura de tela do componente &quot;Upload em lote do Scene7&quot; na página &quot;Scene7: Reprocessamento de ativos&quot; com o ponteiro do mouse sobre o ícone &quot;Configurar&quot;](/help/assets/dynamic-media/assets/reprocess-assets8.png).
 
 1. No **[!UICONTROL Upload em lote para o Scene7 — Propriedades da etapa]** defina o seguinte:
    * No **[!UICONTROL Título]** e **[!UICONTROL Descrição]** campos de texto, insira um novo título e descrição para a tarefa, se desejado.
@@ -112,13 +112,13 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
    * No **[!UICONTROL Campo de lote]**, insira o número máximo de ativos (50-1000) a serem processados em um trabalho de upload de processamento em massa do servidor do Dynamic Media.
    * Selecionar **[!UICONTROL Avançar no tempo limite]** se desejar avançar quando o tempo limite for atingido. Desmarque se deseja continuar na caixa de entrada quando o tempo limite for atingido.
 
-   ![Captura de tela da página &quot;Upload em lote para o Scene7 - Propriedades da etapa&quot;.](/help/assets/dynamic-media/assets/reprocess-assets3.png)
+   ![Captura de tela da página &quot;Upload em lote para o Scene7 - Propriedades da etapa&quot;](/help/assets/dynamic-media/assets/reprocess-assets3.png).
 
 1. No canto superior direito da **[!UICONTROL Upload em lote para o Scene7 - Propriedades da etapa]** caixa de diálogo, selecione **[!UICONTROL Concluído]**.
 
 1. No canto superior direito da página do modelo de fluxo de trabalho Scene7: Reprocessar ativos, selecione **[!UICONTROL Sincronizar]**. Quando você vê **[!UICONTROL Sincronizado]**, o modelo de tempo de execução de fluxo de trabalho foi sincronizado com sucesso e está pronto para reprocessar ativos em uma pasta.
 
-   ![Captura de tela de Ativos no Experience Manager mostrando uma pasta selecionada de ativos, a lista suspensa Linha do tempo destacada, o botão Iniciar fluxo de trabalho destacado e o ícone de carrinho à direita do campo Comentário também destacado.](/help/assets/dynamic-media/assets/reprocess-assets1.png)
+   ![Captura de tela de Ativos no Experience Manager mostrando uma pasta selecionada de ativos, a lista suspensa Linha do tempo destacada, o botão Iniciar fluxo de trabalho destacado e o ícone de carrinho à direita do campo Comentário também destacado](/help/assets/dynamic-media/assets/reprocess-assets1.png).
 
 1. Feche a guia do navegador que mostra o modelo de fluxo de trabalho Scene7: Reprocessar ativos.
 

@@ -2,9 +2,9 @@
 title: Diretrizes de desenvolvimento do AEM as a Cloud Service
 description: Conheça as diretrizes para desenvolvimento no AEM as a Cloud Service e as principais diferenças em relação ao AEM local e ao AEM no AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2591'
+source-wordcount: '2586'
 ht-degree: 5%
 
 ---
@@ -65,11 +65,11 @@ Alternativas que são conhecidas por funcionar, mas podem exigir que você forne
 * [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/) (não recomendado, pois está desatualizado e foi substituído pela versão 4.x)
 * [OK Http](https://square.github.io/okhttp/) (Não fornecido pelo AEM)
 
-Além de fornecer tempos limite, também deve ser implementado um tratamento adequado desses tempos limite, bem como códigos de status HTTP inesperados.
+Além de fornecer tempos limite, também deve ser implementado um tratamento adequado desses tempos limite e códigos de status HTTP inesperados.
 
 ## Nenhuma personalização da interface clássica {#no-classic-ui-customizations}
 
-O AEM as a Cloud Service é compatível apenas com a interface para toque para código de cliente de terceiros. A interface clássica não está disponível para personalização.
+O AEM as a Cloud Service é compatível apenas com a interface para toque para código de clientes de terceiros. A interface clássica não está disponível para personalização.
 
 ## Não há binários nativos ou bibliotecas nativas {#avoid-native-binaries}
 
@@ -152,7 +152,7 @@ Os níveis de log são os seguintes:
 
 ### Despejos de encadeamento {#thread-dumps}
 
-Os despejos de thread em ambientes na nuvem são coletados de forma contínua, mas não podem ser baixados de forma automatizada no momento. Enquanto isso, entre em contato com o suporte ao AEM se os despejos de thread forem necessários para depurar um problema, especificando a janela de tempo exata.
+Os despejos de thread em ambientes na nuvem são coletados de forma contínua, mas não podem ser baixados de forma automatizada no momento. Enquanto isso, entre em contato com o suporte do AEM se os despejos de thread forem necessários para depurar um problema, especificando a janela de tempo exata.
 
 ## CRX/DE Lite e Console do desenvolvedor {#crxde-lite-and-developer-console}
 
@@ -286,4 +286,4 @@ Consulte a [Documentação do Apache Oak](https://jackrabbit.apache.org/oak/docs
 
 ## [!DNL Assets] diretrizes de desenvolvimento e casos de uso {#use-cases-assets}
 
-Para saber mais sobre os casos de uso de desenvolvimento, recomendações e materiais de referência para o Assets as a Cloud Service, consulte [Referências do desenvolvedor para Assets.](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis)
+Para saber mais sobre os casos de uso de desenvolvimento, recomendações e materiais de referência para o Assets as a Cloud Service, consulte [Referências do desenvolvedor para Assets](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis).

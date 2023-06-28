@@ -2,9 +2,9 @@
 title: Criação e gerenciamento de canais no Screens as a Cloud Service
 description: Esta página descreve como criar e gerenciar canais no Screens as a Cloud Service.
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1104'
+source-wordcount: '1087'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ Siga as etapas abaixo para criar um novo canal de sequência no Screens as a Clo
 
    ![](/help/screens-cloud/assets/create-content/channel-create2.png)
    >[!NOTE]
-   > A variável **Criar** O assistente fornece diferentes tipos de modelos ao criar um canal. Consulte a seção [Modelos disponíveis](#available-templates) em Criar assistente para obter mais detalhes.
+   > A variável **Criar** O assistente fornece diferentes tipos de modelos ao criar um canal. Consulte [Modelos disponíveis](#available-templates) em Criar assistente para obter mais detalhes.
 
 1. Insira o nome do canal de sequência, como, **LoopingChannelOne** e clique em **Criar**.
 
@@ -111,7 +111,7 @@ Esse recurso permite definir um agendamento de ativação padrão para um canal 
 Esse bloco exibe as seguintes informações:
 * Prioridade padrão do canal na exibição.
 * Datas de início e término da ativação quando o canal está agendado para reprodução.
-* Visualização sintética da recorrência (por hora, dia, semana, mês e ano, bem como o nome dado a essa recorrência).
+* Visualização sintética da recorrência (por hora/dia/semana/mês/ano e nome dado a essa recorrência).
 
 ### Usar os detalhes de atribuição padrão ao atribuir a uma exibição {#default-display}
 

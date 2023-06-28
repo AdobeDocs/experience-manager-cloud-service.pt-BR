@@ -2,9 +2,9 @@
 title: Páginas de erro personalizadas
 description: O AEM vem com um manipulador de erros padrão para lidar com erros HTTP, que pode ser personalizado.
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '573'
 ht-degree: 2%
 
 ---
@@ -77,6 +77,6 @@ Para tratar erros 500, o nome de arquivo do script do manipulador de erros deve 
 >
 >Em uma instância de autor, [Filtro de depuração CQ WCM](/help/implementing/deploying/configuring-osgi.md) é ativado por padrão. Isso sempre resulta no código de resposta 200. O manipulador de erros padrão responde gravando o rastreamento de pilha completa na resposta.
 >
->Para um manipulador de erros personalizado, são necessárias respostas com o código 500 - para que o [O Filtro de Depuração CQ WCM precisa ser desabilitado.](/help/implementing/deploying/configuring-osgi.md) Isso garante que o código de resposta 500 seja retornado, o que, por sua vez, aciona o manipulador de erros Sling correto.
+>Para um manipulador de erros personalizado, são necessárias respostas com o código 500 - para que o [O Filtro de Depuração CQ WCM precisa ser desabilitado](/help/implementing/deploying/configuring-osgi.md). Isso garante que o código de resposta 500 seja retornado, o que, por sua vez, aciona o manipulador de erros Sling correto.
 >
 >Em uma instância de publicação, o Filtro de depuração WCM do CQ é **sempre** desativado (mesmo se configurado como ativado).

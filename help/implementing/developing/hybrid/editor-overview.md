@@ -2,10 +2,10 @@
 title: Visão geral do editor de SPA
 description: Este artigo fornece uma visão geral abrangente do Editor de SPA e como ele funciona, incluindo fluxos de trabalho detalhados de interação do Editor de SPA no AEM.
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1630'
-ht-degree: 95%
+ht-degree: 91%
 
 ---
 
@@ -31,7 +31,7 @@ Para obter mais detalhes sobre SPAs no AEM, consulte os seguintes documentos:
 
 ## Design {#design}
 
-O componente de página para um SPA não fornece os elementos HTML de seus componentes filho por meio do arquivo JSP ou HTL. Esta operação é delegada na estrutura de SPA. A representação de componentes ou modelos filhos é buscada como uma estrutura de dados JSON do JCR. Os componentes do SPA são adicionados à página de acordo com essa estrutura. Esse comportamento diferencia a composição do corpo inicial do componente de página de contrapartes não SPA.
+O componente de página de um SPA não fornece os elementos de HTML de seus componentes filhos por meio do arquivo JSP ou HTL. Esta operação é delegada na estrutura de SPA. A representação de componentes ou modelos filhos é buscada como uma estrutura de dados JSON do JCR. Os componentes do SPA são adicionados à página de acordo com essa estrutura. Esse comportamento diferencia a composição do corpo inicial do componente de página de contrapartes não SPA.
 
 ### Gerenciamento do modelo de página {#page-model-management}
 
@@ -64,7 +64,7 @@ Você pode entender o fluxo da interação entre o SPA e o AEM pensando no edito
 * A comunicação entre o editor de páginas e o SPA é feita utilizando JSON em vez de HTML.
 * O editor de páginas fornece a versão mais recente do modelo de página para o SPA por meio do iframe e da API de mensagens.
 * O gerenciador de modelo de página notifica o editor de que está pronto para edição e passa o modelo de página como uma estrutura JSON.
-* O editor não altera ou nem acessa a estrutura DOM da página que está sendo criada, em vez de fornecer o modelo de página mais recente.
+* O editor não altera nem mesmo acessa a estrutura DOM da página que está sendo criada, em vez de fornecer o modelo de página mais recente.
 
 ![Fluxo de trabalho SPA](assets/workflow.png)
 
@@ -147,7 +147,7 @@ Lembrando os elementos principais do editor de SPA, o fluxo de trabalho de alto 
 
 ## Requisitos e limitações {#requirements-limitations}
 
-Para permitir que o autor use o editor de páginas para editar o conteúdo de um SPA, o aplicativo SPA deve ser implementado para interagir com o SDK do Editor de SPA do AEM. Consulte o documento [Introdução a SPAs no AEM usando o React](getting-started-react.md) para saber o mínimo necessário para executar o seu.
+Para permitir que o autor use o editor de páginas para editar o conteúdo de um SPA, o aplicativo SPA deve ser implementado para interagir com o SDK do Editor de SPA do AEM. Consulte a [Introdução ao SPA no AEM usando o React](getting-started-react.md) documento mínimo que você precisa saber para que o seu funcione.
 
 ### Estruturas compatíveis {#supported-frameworks}
 
@@ -173,7 +173,7 @@ Se você quiser usar o editor local de um componente de texto criado no SPA, há
 1. Defina um atributo (pode ser qualquer um), no elemento wrapper do container, que contém o HTML de texto. No caso do projeto SPA WKND, foi um elemento `<div>` e o seletor usado foi o `data-rte-editelement`.
 1. Defina a configuração `editElementQuery` no `cq:InplaceEditingConfig` do componente de texto AEM correspondente que aponta para esse seletor, por exemplo, `data-rte-editelement`. Isso permite que o editor saiba qual elemento HTML envolve o texto HTML.
 
-Para obter mais informações sobre a propriedade `editElementQuery` e a configuração do editor de rich text, consulte [Configurar o Editor de rich text.](/help/implementing/developing/extending/rich-text-editor.md)
+Para obter mais informações sobre a propriedade `editElementQuery` e a configuração do editor de rich text, consulte [Configurar o Editor de rich text](/help/implementing/developing/extending/rich-text-editor.md).
 
 ### Limitações {#limitations}
 

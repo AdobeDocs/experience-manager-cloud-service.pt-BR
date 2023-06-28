@@ -4,10 +4,10 @@ description: Saiba como usar fragmentos de conteúdo e a API GraphQL como um sis
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: a2064dcbec1c171b0a6de57b4197f4921d234428
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1114'
-ht-degree: 100%
+source-wordcount: '1116'
+ht-degree: 92%
 
 ---
 
@@ -66,11 +66,11 @@ O Explorer GraphQL é iniciado em uma nova guia. Aqui, é possível criar e vali
 
    ![Consulta de lista](assets/do-not-localize/list-query-1-3-4-5.png)
 
-Você acabou de validar uma consulta de lista que contém uma lista completa de todos os fragmentos de conteúdo. Esse processo ajuda a garantir que a resposta seja a que seu aplicativo espera, com resultados que ilustram como seus aplicativos e sites recuperarão o conteúdo criado no AEM.
+Você acabou de validar uma consulta de lista para obter uma lista completa de todos os fragmentos de conteúdo. Esse processo ajuda a garantir que a resposta seja a que seu aplicativo espera, com resultados que ilustram como seus aplicativos e sites recuperarão o conteúdo criado no AEM.
 
 >[!NOTE]
 >
->Se não conseguir selecionar o ponto de acesso **Ativos de demonstração do AEM** do menu suspenso, entre em contato com o Atendimento ao cliente da Adobe ou entre em contato com o [Canal Slack de avaliação do AEM.](https://adobe-dx-support.slack.com/)
+>Se não conseguir selecionar a variável **Ativos de demonstração do AEM** do menu suspenso, entre em contato com o Atendimento ao cliente do Adobe ou entre em contato com o [Canal de Slack de testes de AEM.](https://adobe-dx-support.slack.com/)
 
 ## Consultar uma parte específica do conteúdo de amostra {#bypath-query}
 
@@ -109,7 +109,7 @@ A execução de uma consulta byPath permite recuperar o conteúdo de um fragment
 
    ![Resultados da consulta byPath](assets/do-not-localize/bypath-query-2-3-4.png)
 
-Você acabou de validar uma consulta byPath para recuperar um fragmento de conteúdo específico identificado pelo caminho desse fragmento.
+Você acabou de validar uma consulta byPath para recuperar um Fragmento de conteúdo específico identificado pelo caminho desse fragmento.
 
 ## Consultar seu próprio conteúdo {#own-queries}
 

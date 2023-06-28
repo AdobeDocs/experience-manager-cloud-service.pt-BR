@@ -2,10 +2,10 @@
 title: Teste de qualidade do código
 description: Saiba como funciona o teste de qualidade do código dos pipelines e como ele pode melhorar a qualidade das suas implantações.
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1175'
-ht-degree: 97%
+source-wordcount: '1161'
+ht-degree: 86%
 
 ---
 
@@ -22,7 +22,7 @@ Saiba como funciona o teste de qualidade do código dos pipelines e como ele pod
 
 O teste de qualidade do código avalia o código do aplicativo com base em um conjunto de regras de qualidade. É o objetivo principal de um pipeline somente de qualidade do código e é executado imediatamente após a etapa de compilação em todos os pipelines de produção e não produção.
 
-Consulte o documento [Configuração do seu pipeline de CI-CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) para saber mais sobre os diferentes tipos de pipelines.
+Consulte [Configuração do seu pipeline de CI-CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) para saber mais sobre diferentes tipos de pipelines.
 
 ## Regras de qualidade do código {#understanding-code-quality-rules}
 
@@ -30,7 +30,7 @@ O teste de qualidade do código verifica o código-fonte para garantir que atend
 
 >[!NOTE]
 >
->Você pode baixar a lista completa de regras [neste link.](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)
+>Você pode baixar a lista completa de regras [neste link](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx).
 
 ### Classificações de três níveis {#three-tiered-gate}
 
@@ -60,7 +60,7 @@ A tabela a seguir resume as classificações e os limites de falha para cada uma
 | Abrangência | Definida por uma combinação de abrangências da linha de teste unitária e da condição utilizando a fórmula: <br/>`Coverage = (CT + CF + LC)/(2*B + EL)`  <ul><li>`CT` = Condições que foram avaliadas como `true` pelo menos uma vez durante a execução dos testes da unidade</li><li>`CF` = Condições que foram avaliadas como `false` pelo menos uma vez durante a execução dos testes da unidade</li><li>`LC` = Linhas abrangidas = lines_to_cover - uncovered_lines</li><li>`B` = número total de condições</li><li>`EL` = número total de linhas executáveis (lines_to_cover)</li></ul> | Importante | &lt; 50% |
 | Testes de unidade ignorados | Número de testes de unidade ignorados | Informações | > 1 |
 | Problemas em aberto | Tipos de problemas gerais - Vulnerabilidades, Erros e Code Smells | Informações | > 0 |
-| Linhas duplicadas | Definido como o número de linhas envolvidas em blocos duplicados. Um bloco de código é considerado duplicado nas condições a seguir.<br>Projetos não Java:<ul><li>Deve haver pelo menos 100 tokens sucessivos e duplicados.</li><li>Esses tokens devem estar distribuídos por pelo menos: </li><li>30 linhas de código para COBOL </li><li>20 linhas de código para ABAP </li><li>10 linhas de código para outras linguagens</li></ul>Projetos Java:<ul></li><li> Deve haver pelo menos 10 declarações sucessivas e duplicadas, independentemente do número de tokens e linhas.</li></ul>As diferenças de recuo, bem como nos literais de string são ignoradas ao detectar duplicidades. | Informações | > 1% |
+| Linhas duplicadas | Definido como o número de linhas envolvidas em blocos duplicados. Um bloco de código é considerado duplicado nas condições a seguir.<br>Projetos não Java:<ul><li>Deve haver pelo menos 100 tokens sucessivos e duplicados.</li><li>Esses tokens devem estar distribuídos por pelo menos: </li><li>30 linhas de código para COBOL </li><li>20 linhas de código para ABAP </li><li>10 linhas de código para outras linguagens</li></ul>Projetos Java:<ul></li><li> Deve haver pelo menos 10 declarações sucessivas e duplicadas, independentemente do número de tokens e linhas.</li></ul>As diferenças no recuo e nos literais de string são ignoradas ao detectar duplicatas. | Informações | > 1% |
 | Compatibilidade do Cloud Service | Número de problemas de compatibilidade do Cloud Service identificados | Informações | > 0 |
 
 >[!NOTE]
@@ -69,7 +69,7 @@ A tabela a seguir resume as classificações e os limites de falha para cada uma
 
 >[!NOTE]
 >
->Para saber mais sobre as regras de qualidade do código personalizado executadas pelo [!UICONTROL Cloud Manager], consulte o documento [Regras de qualidade do código personalizado](/help/implementing/cloud-manager/custom-code-quality-rules.md).
+>Para saber mais sobre as regras de qualidade do código personalizado executadas pelo [!UICONTROL Cloud Manager], consulte [Regras de qualidade do código personalizado](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
 ## Como lidar com falsos positivos {#dealing-with-false-positives}
 
@@ -103,10 +103,10 @@ Então, a solução correta seria remover a senha codificada.
 
 >[!NOTE]
 >
->Embora seja uma prática recomendada tornar a anotação `@SuppressWarnings` o mais específica possível — ou seja, anotar apenas a declaração ou o bloco específico que causa o problema —, é possível anotar em nível de classe.
+>Embora seja uma prática recomendada tornar `@SuppressWarnings` anotação o mais específica possível, ou seja, anotar apenas a declaração ou bloco específico que causa o problema, é possível anotar em nível de classe.
 
 >[!NOTE]
->Embora não haja uma etapa explícita de teste de segurança, há regras de qualidade do código relacionadas à segurança que são avaliadas durante a etapa de qualidade do código. Consulte o documento [Visão geral de segurança para o AEM as a Cloud Service](/help/security/cloud-service-security-overview.md) para saber mais sobre segurança no Cloud Service.
+>Embora não haja uma etapa explícita de teste de segurança, há regras de qualidade do código relacionadas à segurança que são avaliadas durante a etapa de qualidade do código. Consulte [Visão geral de segurança para o AEM as a Cloud Service](/help/security/cloud-service-security-overview.md) para saber mais sobre segurança no Cloud Service.
 
 ## Otimização da verificação do pacote de conteúdo {#content-package-scanning-optimization}
 
@@ -120,7 +120,7 @@ Se os únicos itens dentro de `myco-all-1.0.0-SNAPSHOT.zip` são os dois pacotes
 
 Para projetos que produzem dezenas de pacotes incorporados, essa otimização economiza mais de 10 minutos por execução de pipeline.
 
-Um caso especial pode ocorrer quando o pacote de conteúdo “all” contiver uma combinação de pacotes de conteúdo ignorados e pacotes OSGi. Por exemplo, se `myco-all-1.0.0-SNAPSHOT.zip` continha os dois pacotes incorporados mencionados anteriormente, bem como um ou mais pacotes OSGi, então um novo pacote de conteúdo mínimo é construído apenas com os pacotes OSGi. Esse pacote é sempre nomeado `cloudmanager-synthetic-jar-package` e os pacotes contidos são colocados em `/apps/cloudmanager-synthetic-installer/install`.
+Um caso especial pode ocorrer quando o pacote de conteúdo “all” contiver uma combinação de pacotes de conteúdo ignorados e pacotes OSGi. Por exemplo, se `myco-all-1.0.0-SNAPSHOT.zip` continha os dois pacotes incorporados mencionados anteriormente e um ou mais pacotes OSGi, então um novo pacote de conteúdo mínimo é construído apenas com os pacotes OSGi. Esse pacote é sempre nomeado `cloudmanager-synthetic-jar-package` e os pacotes contidos são colocados em `/apps/cloudmanager-synthetic-installer/install`.
 
 >[!NOTE]
 >

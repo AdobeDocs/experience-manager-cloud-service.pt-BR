@@ -4,10 +4,10 @@ description: Saiba como criar e sincronizar Live Copies para reutilizar seu cont
 feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 151ef672e847f793b37d220920081ac9fce94edf
 workflow-type: tm+mt
 source-wordcount: '4308'
-ht-degree: 94%
+ht-degree: 92%
 
 ---
 
@@ -45,7 +45,7 @@ Quando sua configuração de blueprint é usada, você pode associá-la a uma co
 
 As configurações de blueprint são consideradas dados imutáveis e, como tal, não são editáveis no tempo de execução. Por esse motivo, todas as alterações de configuração devem ser implantadas por meio do Git usando o pipeline de CI/CD.
 
-Mais informações podem ser encontradas no artigo [Alterações importantes no Adobe Experience Manager (AEM) as a Cloud Service.](/help/release-notes/aem-cloud-changes.md)
+Mais informações podem ser encontradas no artigo [Alterações importantes no Adobe Experience Manager (AEM) as a Cloud Service](/help/release-notes/aem-cloud-changes.md).
 
 As etapas a seguir estão disponíveis para um administrador em uma instância de desenvolvimento local somente para fins de teste e desenvolvimento. Estas opções não estão disponíveis em nenhuma instância da nuvem do AEMaaCS.
 
@@ -164,7 +164,7 @@ Ao criar o site, forneça valores para as seguintes propriedades:
 
 Para criar uma Live Copy de um site a partir de uma configuração de blueprint:
 
-1. No console do **Sites**, selecione **Criar** e, em seguida, selecione **Site** no seletor da lista suspensa.
+1. No **Sites** console, selecione **Criar**, depois **Site** no seletor suspenso.
 1. Selecione a configuração de blueprint a ser usada como origem da Live Copy e prossiga com **Próximo**:
 
    ![Criar site a partir de blueprint](../assets/create-site-from-blueprint.png)
@@ -245,7 +245,7 @@ Implemente uma página de blueprint para enviar alterações de conteúdo às Li
 
    ![Definir momento da implantação](../assets/rollout-now-later.png)
 
-As implantações são processadas como trabalhos assíncronos e podem ser verificadas na página [***Status dos trabalhos assíncronos**.](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)
+As implantações são processadas como trabalhos assíncronos e podem ser verificadas no [***Status de trabalhos assíncronos** página](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
 
 #### Implantar um blueprint a partir do painel de referência {#roll-out-a-blueprint-from-the-reference-rail}
 
@@ -270,7 +270,7 @@ As implantações são processadas como trabalhos assíncronos e podem ser verif
 
 1. Depois de confirmar esses detalhes, selecione **Implantação** para executar a ação.
 
-As implantações são processadas como trabalhos assíncronos e podem ser verificadas na página [**Status dos trabalhos assíncronos**.](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)
+As implantações são processadas como trabalhos assíncronos e podem ser verificadas no [**Status de trabalhos assíncronos** página](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
 
 #### Implantar um blueprint a partir de uma visão geral da Live Copy {#roll-out-a-blueprint-from-the-live-copy-overview}
 
@@ -289,7 +289,7 @@ A ação de [**Implantação** também está disponível a partir da visão gera
 
    ![Definir programação de implantação](../assets/rollout-now-later.png)
 
-As implantações são processadas como trabalhos assíncronos e podem ser verificadas na página [**Status dos trabalhos assíncronos**.](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)
+As implantações são processadas como trabalhos assíncronos e podem ser verificadas no [**Status de trabalhos assíncronos** página](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
 
 ### Sincronizar uma Live Copy {#synchronizing-a-live-copy}
 
@@ -575,7 +575,7 @@ A ação [**Redefinir** também está disponível na Visão geral da Live Copy](
 
 Para acompanhar as alterações feitas, é possível exibir a página do blueprint em **Referências** e compará-la com a página Live Copy:
 
-1. No console do **Sites**, [navegue até uma página de blueprint ou Live Copy e selecione-a.](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
+1. No console do **Sites**, [navegue até uma página de blueprint ou Live Copy e selecione-a](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Abra o painel **[Referências](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** e, dependendo do contexto, selecione:
 
    * **Blueprint**

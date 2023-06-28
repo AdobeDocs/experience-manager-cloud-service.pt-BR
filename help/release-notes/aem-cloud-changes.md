@@ -2,10 +2,10 @@
 title: Alterações importantes no Adobe Experience Manager (AEM) as a Cloud Service
 description: Alterações importantes no Adobe Experience Manager (AEM) as a Cloud Service
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '845'
-ht-degree: 96%
+source-wordcount: '846'
+ht-degree: 95%
 
 ---
 
@@ -21,7 +21,7 @@ O AEM Cloud Service oferece muitos novos recursos e possibilidades para gerencia
 
 
 >[!NOTE]
->Este documento destaca as alterações importantes no AEM como um todo. Para obter mais informações e conhecer as alterações específicas de cada solução, consulte:
+>Este documento destaca as alterações importantes no AEM como um todo. Para obter mais informações e conhecer as alterações específicas da solução, consulte:
 >
 >* [Introdução ao Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md)
 >* [Novidades e diferenças](/help/overview/what-is-new-and-different.md) entre o Adobe Experience Manager as a Cloud Service e as versões anteriores
@@ -49,7 +49,7 @@ As principais diferenças encontram-se nas seguintes áreas:
 
 ## /apps e /libs não mudam no tempo de execução {#apps-libs-immutable}
 
-O conteúdo e as subpastas em `/apps` e `/libs` são somente leitura. Não é possível fazer alterações nesses locais com recursos ou códigos personalizados. É retornado um erro de que esse conteúdo é somente leitura e não foi possível concluir a operação de gravação. Isso tem impacto em várias áreas do AEM:
+O conteúdo e as subpastas em `/apps` e `/libs` são somente leitura. Não é possível fazer alterações nesses locais com recursos ou códigos personalizados. É retornado um erro de que esse conteúdo é somente leitura e que não foi possível concluir a operação de gravação. Isso tem impacto em várias áreas do AEM:
 
 * Não são permitidas alterações em `/libs` de forma alguma.
    * Essa não é uma regra nova, no entanto, não foi aplicada nas versões anteriores do AEM no local.

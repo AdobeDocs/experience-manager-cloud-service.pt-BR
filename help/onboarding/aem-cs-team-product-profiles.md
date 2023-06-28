@@ -2,10 +2,10 @@
 title: Perfis de produto e de equipe do AEM as a Cloud Service
 description: Descubra como os perfis de produto e de equipe do AEM as a Cloud Service podem conceder e limitar o acesso às suas soluções licenciadas da Adobe.
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '776'
-ht-degree: 94%
+source-wordcount: '759'
+ht-degree: 83%
 
 ---
 
@@ -15,7 +15,7 @@ Descubra como os perfis de produto e de equipe do AEM as a Cloud Service podem c
 
 ## Perfis de produto {#profiles}
 
-Ao conceder ao usuário acesso a uma solução específica da Adobe, você pode não pretender conceder acesso total a ele. Os perfis de produto permitem que cada solução tenha seu próprio conjunto de permissões do usuário. Eles estão disponíveis e podem ser acessados por meio do [Admin Console.](/help/journey-onboarding/admin-console.md)
+Ao conceder ao usuário acesso a uma solução específica da Adobe, você pode não pretender conceder acesso total a ele. Os perfis de produto permitem que cada solução tenha seu próprio conjunto de permissões do usuário. Eles estão disponíveis e podem ser acessados por meio do [Admin Console](/help/journey-onboarding/admin-console.md).
 
 ## Perfis de produto e de equipe do AEM as a Cloud Service {#aem-product-profiles}
 
@@ -37,12 +37,12 @@ Os membros da equipe do AEM as a Cloud Service são adicionados e atribuídos a 
 
 >[!WARNING]
 >
->O nome do perfil do produto **Administradores do AEM** não deve ser alterado. A alteração do nome do perfil do produto **Administradores do AEM** removerá os direitos de administrador de todos os usuários atribuídos a esse perfil.
+>O nome do perfil do produto **Administradores do AEM** não deve ser alterado. A alteração do perfil do produto **Administradores do AEM** removerá os direitos de administrador de todos os usuários atribuídos a esse perfil.
 
 >[!TIP]
 >
->* Para saber mais sobre perfis de produtos do AEM, consulte o documento [Atribuição de perfis de produto AEM](/help/journey-onboarding/assign-profiles-aem.md).
->* Para obter mais informações sobre o processo de integração, consulte a [jornada de integração.](/help/journey-onboarding/overview.md)
+>* Para saber mais sobre perfis de produtos AEM, consulte [Atribuição de perfis de produto do AEM](/help/journey-onboarding/assign-profiles-aem.md).
+>* Para obter mais informações sobre o processo de integração, consulte [integração do jornada](/help/journey-onboarding/overview.md).
 
 ## Perfis de produto do Cloud Manager {#cloud-manager-product-profiles}
 
@@ -50,7 +50,7 @@ O Cloud Manager tem perfis de produto pré-configurados que podem ser considerad
 
 >[!TIP]
 >
->Consulte o documento [Permissões com base em função no Cloud Manager](/help/onboarding/cloud-manager-introduction.md#role-based-permissions) para obter mais detalhes.
+>Consulte [Permissões com base em funções no Cloud Manager](/help/onboarding/cloud-manager-introduction.md#role-based-permissions) para obter mais detalhes.
 
 Cada um dos perfis de produto tem permissões específicas associadas a eles.
 
@@ -73,5 +73,5 @@ A equipe do Cloud Manager incluirá pelo menos:
 
 >[!TIP]
 >
->* Para saber mais sobre os perfis de produtos do Cloud Manager, consulte o documento [Atribuição de membros de equipe aos perfis de produto do Cloud Manager.](/help/journey-onboarding/assign-profiles-cloud-manager.md)
->* Para obter mais informações sobre o processo de integração, consulte a [jornada de integração.](/help/journey-onboarding/overview.md)
+>* Para saber mais sobre os perfis de produto do Cloud Manager, consulte [Atribuir membros da equipe aos perfis de produto do Cloud Manager](/help/journey-onboarding/assign-profiles-cloud-manager.md).
+>* Para obter mais informações sobre o processo de integração, consulte [integração do jornada](/help/journey-onboarding/overview.md).

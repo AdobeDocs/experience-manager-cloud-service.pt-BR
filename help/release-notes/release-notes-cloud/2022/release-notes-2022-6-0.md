@@ -2,10 +2,10 @@
 title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2022.6.0.
 description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2022.6.0.
 exl-id: cf2133dc-56cd-4a07-ab11-72e16f015ff5
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 87%
+source-wordcount: '639'
+ht-degree: 79%
 
 ---
 
@@ -37,7 +37,7 @@ Assista ao vídeo de Visão geral da versão de junho de 2022 para ver um resumo
 
 ### Novos recursos no [!DNL Sites] {#sites-features}
 
-* Uma nova [interface](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) já está disponível para que administradores e autores de conteúdo possam gerenciar (executando ações como publicar, desfazer a publicação, copiar, mover etc.), pesquisar/filtrar e criar fragmentos de conteúdo para casos de uso headless com eficiência.
+* Um novo [interface do usuário](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) O agora está disponível para administradores de conteúdo e autores de conteúdo gerenciarem com eficiência (executar ações como publicar, desfazer a publicação, copiar, mover etc.), pesquisar/filtrar e criar fragmentos de conteúdo para casos de uso headless.
 
   ![Console de fragmentos de conteúdo](/help/release-notes/assets/cf-ui.png)
 
@@ -98,7 +98,7 @@ Agora, o Experience Manager Assets usa os recursos de IA do Adobe Sensei para [d
 
 ## Cloud Manager {#cloud-manager}
 
-Você pode encontrar uma lista completa de versões mensais do Cloud Manager [aqui.](/help/implementing/cloud-manager/release-notes/current.md)
+Você pode encontrar uma lista completa de versões mensais do Cloud Manager [aqui](/help/implementing/cloud-manager/release-notes/current.md).
 
 ## Ferramentas de migração {#migration-tools}
 

@@ -2,9 +2,9 @@
 title: Fase de preparação no Cloud Acceleration Manager
 description: Esta página fornece uma visão geral sobre a fase de Preparação no Cloud Acceleration Manager.
 exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1055'
+source-wordcount: '1049'
 ht-degree: 5%
 
 ---
@@ -62,7 +62,7 @@ Siga as etapas abaixo para usar o cartão de Análise de práticas recomendadas:
 
    ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
 
-1. Revise e explore o painel Análise de práticas recomendadas no CAM. Consulte a seção abaixo [Revisar o relatório de análise de práticas recomendadas](#analysis-report) para obter mais detalhes.
+1. Revise e explore o painel Análise de práticas recomendadas no CAM. Consulte [Revisar o relatório de análise de práticas recomendadas](#analysis-report) para obter mais detalhes.
 
    >[!NOTE]
    >Fazer upload de um novo relatório redefine todas as avaliações.

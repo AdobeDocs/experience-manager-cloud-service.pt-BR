@@ -2,9 +2,9 @@
 title: Gerenciamento de projetos
 description: O console de Projetos permite organizar o projeto, agrupando os recursos em uma única entidade que pode ser acessada e gerenciada no próprio console
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
-source-git-commit: 54a098d8986c8bbd740bed50f8625c1025d2f6f4
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '893'
 ht-degree: 49%
 
 ---
@@ -17,7 +17,7 @@ No **Projetos** console, você acessa e executa ações em seus projetos:
 
 ![O console de Projetos](/help/sites-cloud/authoring/assets/projects-console.png)
 
-Em Projetos, você pode criar um projeto, associar recursos ao projeto e também excluir um projeto ou links de Recursos. Talvez você queira abrir um bloco para exibir seu conteúdo, bem como adicionar itens a um bloco. Este tópico descreve esses procedimentos.
+Em Projetos, você pode criar um projeto, associar recursos ao projeto e também excluir um projeto ou links de Recursos. Talvez você queira abrir um bloco para exibir seu conteúdo e adicionar itens a um bloco. Este tópico descreve esses procedimentos.
 
 ## Criação de um projeto {#creating-a-project}
 
@@ -57,7 +57,7 @@ Para associar recursos ao projeto:
 
    >[!NOTE]
    >
-   >Os mosaicos que podem ser associados a um projeto são descritos mais detalhadamente em [Mosaicos do projeto.](/help/sites-cloud/authoring/projects/overview.md#project-tiles)
+   >Os mosaicos que podem ser associados a um projeto são descritos mais detalhadamente em [Mosaicos do projeto](/help/sites-cloud/authoring/projects/overview.md#project-tiles).
 
 1. Toque/clique em **Criar**. O recurso é vinculado ao seu projeto e a partir de agora é possível acessá-lo do próprio projeto.
 
@@ -127,13 +127,14 @@ Se o ícone tiver um X, estará exibindo os projetos inativos.
 
 ## Tornando projetos inativos ou ativos {#making-projects-inactive-or-active}
 
-Você pode querer tornar um projeto inativo se já o tiver concluído, mas ainda quiser manter as informações sobre o projeto.
+Você pode querer tornar um projeto inativo se o tiver concluído, mas ainda quiser manter as informações sobre o projeto.
 
 Para tornar um projeto inativo (ou ativo):
 
 1. No **Projetos** console, abra o projeto e localize o **Informações do projeto** bloco.
 
    >[!NOTE]
+   >
    Talvez seja necessário adicionar esse bloco se ele ainda não estiver em seu projeto. Consulte [Adição de Blocos](#adding-items-to-a-tile).
 
 1. Toque/clique em **Editar**.

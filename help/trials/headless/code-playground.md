@@ -4,10 +4,10 @@ description: Explore a busca de conteúdo JSON do seu ambiente de avaliação co
 hidefromtoc: true
 index: false
 exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '980'
-ht-degree: 57%
+source-wordcount: '981'
+ht-degree: 55%
 
 ---
 
@@ -120,4 +120,4 @@ Essa consulta produz uma resposta JSON que inclui imagens, e a variável `result
 
 ![Resultado da consulta adventures-all e da função de renderização resultToDom](assets/do-not-localize/adventures-all-query-result.png)
 
-Agora que você realizou o trabalho de criar os modelos e consultas, sua equipe de conteúdo pode assumir o controle com facilidade. No próximo módulo, você exibe o fluxo do autor de conteúdo.
+Agora que você concluiu o trabalho para criar os modelos e consultas, sua equipe de conteúdo pode assumir o controle com facilidade. No próximo módulo, você exibe o fluxo do autor de conteúdo.

@@ -2,7 +2,7 @@
 title: Uso de condições de ocultação
 description: As condições de ocultação podem ser usadas para determinar se um recurso de componente é renderizado ou não.
 exl-id: 2a96f246-fb0f-4298-899e-ebbf9fc1c96f
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '615'
 ht-degree: 2%
@@ -49,7 +49,7 @@ Ao definir a expressão ocultar, lembre-se:
 
 ## Exemplo {#example}
 
-Exemplos de condições de ocultação podem ser encontrados em todo o AEM e no [componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) em particular. Por exemplo, considere [listar componente principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html) conforme implementado na [Tutorial WKND.](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
+Exemplos de condições de ocultação podem ser encontrados em todo o AEM e no [componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) em particular. Por exemplo, considere [listar componente principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html) conforme implementado na [Tutorial WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 [Uso do editor de modelo](/help/sites-cloud/authoring/features/templates.md), o autor do modelo poderá definir na caixa de diálogo de design quais opções do componente de lista estão disponíveis para o autor da página. Essas opções são: permitir que a lista seja uma lista estática, uma lista de páginas secundárias, uma lista de páginas marcadas, etc. pode ser ativado ou desativado.
 

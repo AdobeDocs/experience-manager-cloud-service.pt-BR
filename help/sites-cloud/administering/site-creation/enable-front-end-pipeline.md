@@ -4,10 +4,10 @@ description: Saiba como você pode ativar o pipeline de front-end para sites exi
 feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '564'
-ht-degree: 87%
+source-wordcount: '562'
+ht-degree: 82%
 
 ---
 
@@ -25,7 +25,7 @@ Sites com base em modelos de site podem usar o pipeline de front-end por padrão
 
 >[!TIP]
 >
->Se você não estiver familiarizado com o pipeline de front-end e não souber como implantar sites rapidamente usando ele e os modelos de site, revise a [Jornada de criação rápida de sites](/help/journey-sites/quick-site/overview.md) para obter uma introdução.
+>Se você não estiver familiarizado com o pipeline de front-end e não souber como implantar sites rapidamente usando ele e os modelos de site, consulte [Jornada de criação rápida de site](/help/journey-sites/quick-site/overview.md) para uma introdução.
 
 Se você não tiver criado o site existente com base em modelos de site e temas, o AEM poderá configurar o site para carregar os temas que são implantados com o pipeline de front-end sobre as bibliotecas de clientes existentes.
 

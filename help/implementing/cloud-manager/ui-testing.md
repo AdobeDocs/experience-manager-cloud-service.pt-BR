@@ -2,10 +2,10 @@
 title: Teste de interface do usuário
 description: Os testes de interface do usuário personalizados são um recurso opcional que permite criar e executar automaticamente testes na interface do usuário para seus aplicativos personalizados.
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2401'
-ht-degree: 95%
+source-wordcount: '2389'
+ht-degree: 90%
 
 ---
 
@@ -35,7 +35,7 @@ Diferentemente dos testes funcionais personalizados, que são testes HTTP escrit
 >
 >A Adobe recomenda o uso do Cypress para testes de interface, seguindo o código fornecido no [repositório de Exemplos de teste do AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-cypress).
 > 
->A Adobe também fornece exemplos de módulo de teste de interface com base em JavaScript com WebdriverIO (consulte [Arquétipo de projeto do AEM](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)) e Java com WebDriver (consulte o [repositório de Exemplos de teste do AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)).
+>O Adobe também fornece exemplos de módulo de teste de IU com base no JavaScript com WebdriverIO (consulte [Arquétipo de projeto AEM](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)) e Java com WebDriver (consulte [Repositório de amostras de teste do AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)).
 
 ## Introdução aos testes de interface  {#get-started-ui-tests}
 
@@ -53,7 +53,7 @@ Esta seção descreve as etapas necessárias para a configuração dos testes de
 
    * Para Java e WebDriver, use o código de exemplo do [repositório de exemplos de teste do AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver).
 
-   * Para outras linguagens de programação, consulte a seção [Criação de testes de interface](#building-ui-tests) deste documento para configurar o projeto de teste.
+   * Para outras linguagens de programação, consulte a seção [Criação de testes de interface do usuário](#building-ui-tests) neste documento para configurar o projeto de teste.
 
 1. Garanta que o teste da interface esteja ativado de acordo com a seção [Adesão do cliente](#customer-opt-in) deste documento.
 
@@ -69,7 +69,7 @@ Esta seção descreve as etapas necessárias para adicionar um projeto de testes
 
 >[!TIP]
 >
->O [Arquétipo de projeto do AEM](https://github.com/adobe/aem-project-archetype) pode gerar um projeto de testes de interface, que é compatível com a descrição a seguir, caso você não tenha requisitos especiais para a linguagem de programação.
+>A variável [Arquétipo de projeto AEM](https://github.com/adobe/aem-project-archetype) O pode gerar um projeto de Testes de interface do usuário para você, que é compatível com a descrição a seguir, se você não tiver requisitos especiais para a linguagem de programação.
 
 ### Gerar um contexto de compilação do Docker {#generate-docker-build-context}
 
@@ -236,7 +236,7 @@ Se a imagem do Docker for implementada com outras linguagens de programação ou
 
 >[!NOTE]
 >
->O resultado da etapa de teste da interface é avaliado somente com base nos relatórios de teste. Certifique-se de que o relatório seja gerado adequadamente para a execução do teste.
+>O resultado da etapa de teste da interface é avaliado somente com base nos relatórios de teste. Certifique-se de gerar o relatório adequadamente para a execução do teste.
 >
 >Use asserções em vez de apenas registrar um erro no STDERR ou retornar um código de saída diferente de zero, caso contrário, o pipeline de implantação poderá continuar normalmente.
 
@@ -259,7 +259,7 @@ Se a imagem do Docker for implementada com outras linguagens de programação ou
 
 >[!NOTE]
 >
-> Caso precise de mais recursos, crie um caso de Atendimento ao cliente e descreva o caso de uso; a Adobe verificará sua solicitação e fornecerá a assistência apropriada.
+> Caso precise de mais recursos, crie um caso de Atendimento ao cliente e descreva seu caso de uso; o Adobe analisará sua solicitação e fornecerá a assistência apropriada.
 
 ## Detalhes específicos do Selenium
 
@@ -345,7 +345,7 @@ Antes de ativar os testes de interface em um pipeline do Cloud Manager, é recom
 >
 >Os arquivos de log são armazenados na pasta `target/` do repositório.
 >
->Para obter detalhes, consulte o [repositório de Exemplos de teste do AEM](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/README.md).
+>Para obter detalhes, consulte [Repositório de amostras de teste do AEM](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/README.md).
 
 ### Exemplo de teste do JavaScript WebdriverIO {#javascript-sample}
 
@@ -369,7 +369,7 @@ Antes de ativar os testes de interface em um pipeline do Cloud Manager, é recom
 >* Os arquivos de log são armazenados na pasta `target/reports` do repositório.
 >* Certifique-se de que sua máquina esteja executando a versão mais recente do Chrome, pois o teste baixa a versão mais recente do ChromeDriver automaticamente.
 >
->Para obter detalhes, consulte o [repositório do Arquétipo de Projetos do AEM](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/README.md).
+>Para obter detalhes, consulte [Repositório do Arquétipo de Projeto AEM](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/README.md).
 
 ### Exemplo de teste do Java Selenium WebDriver {#java-sample}
 
@@ -392,4 +392,4 @@ Antes de ativar os testes de interface em um pipeline do Cloud Manager, é recom
 >
 >Os arquivos de log são armazenados na pasta `target/reports` do repositório.
 >
->Para obter detalhes, consulte o [repositório de Exemplos de teste do AEM](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md).
+>Para obter detalhes, consulte [Repositório de amostras de teste do AEM](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md).

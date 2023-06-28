@@ -2,16 +2,16 @@
 title: Programas de edição
 description: Saiba como editar os programas de sandbox e produção para ajustar as opções depois de criá-las.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 94%
+source-wordcount: '520'
+ht-degree: 88%
 
 ---
 
 # Programas de edição {#editing-programs}
 
-Os usuários com as permissões necessárias podem editar tanto [programas de produção](creating-production-programs.md) quanto [programas de sandbox criados em sua organização.](creating-sandbox-programs.md) Ao editar um programa, você pode:
+Os usuários com as permissões necessárias podem editar [programas de produção criados em sua organização](creating-production-programs.md) e [programas de sandbox criados em sua organização.](creating-sandbox-programs.md) Ao editar um programa, você pode:
 
 * Adicionar a solução Sites a um programa existente com Ativos, e vice-versa.
 * Remover sites ou ativos de um programa existente usando o Sites e o Assets.
@@ -63,7 +63,7 @@ Se seu programa de produção tiver a segurança aprimorada ativada, uma solicit
 
 ![Segurança aprimorada ativa para um programa](assets/edit-program-enhanced.png)
 
-Esta configuração não pode ser modificada após a criação do programa. Para obter mais informações sobre a opção de segurança aprimorada, consulte o documento [Criação de programas de produção](creating-production-programs.md).
+Esta configuração não pode ser modificada após a criação do programa. Para obter mais informações sobre a opção de segurança aprimorada, consulte [Criação de programas de produção](creating-production-programs.md) documento.
 
 ## Exclusão de programas de sandbox {#delete-sandbox-program}
 

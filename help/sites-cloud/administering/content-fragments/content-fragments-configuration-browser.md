@@ -4,7 +4,7 @@ description: Saiba como ativar a funcionalidade de Fragmento de conteúdo e Grap
 feature: Content Fragments
 role: User
 exl-id: 55d442ae-ae06-4dfa-8e4e-b415385ccea5
-source-git-commit: 1fc57dacbf811070664d5f5aaa591dd705516fa8
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 34%
@@ -62,7 +62,7 @@ Para usar determinados [Funcionalidade Fragmento de conteúdo](#creating-a-conte
 
    1. Especifica um **Título**.
    1. A variável **Nome** torna-se o nome do nó no repositório.
-      * Ela é gerada automaticamente com base no título e ajustada de acordo com [Convenções de nomenclatura do AEM.](/help/implementing/developing/introduction/naming-conventions.md)
+      * Ela é gerada automaticamente com base no título e ajustada de acordo com [Convenções de nomenclatura do AEM](/help/implementing/developing/introduction/naming-conventions.md).
       * Você pode ajustá-lo se necessário.
    1. Para permitir seu uso, selecione
       * **Modelos de fragmentos do conteúdo**

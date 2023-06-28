@@ -2,10 +2,10 @@
 title: Teste de auditoria de experiência
 description: Saiba como a Auditoria de experiência valida seu processo de implantação e ajuda a garantir que as alterações implantadas atendam aos padrões básicos de desempenho, acessibilidade, práticas recomendadas e SEO.
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 96%
+source-wordcount: '549'
+ht-degree: 91%
 
 ---
 
@@ -35,11 +35,11 @@ A Auditoria de experiência é disponibilizada pelo Google Lighthouse, uma ferra
 
 >[!TIP]
 >
->Você configura quais páginas são incluídas na auditoria de experiência ao [configurar seu pipeline.](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code)
+>Você configura quais páginas são incluídas na auditoria de experiência ao [configurar seu pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code).
 
 ## Noções básicas sobre os resultados da auditoria de experiência {#understanding-experience-audit-results}
 
-A Auditoria de experiência fornece resultados de teste agregados e detalhados em nível de página por meio da [página de execução do pipeline de produção.](/help/implementing/cloud-manager/deploy-code.md)
+A Auditoria de experiência fornece resultados de teste agregados e detalhados em nível de página por meio da [página de execução do pipeline de produção](/help/implementing/cloud-manager/deploy-code.md).
 
 * Métricas agregadas medem as pontuações médias nas páginas que foram auditadas quanto a desempenho, acessibilidade, práticas recomendadas, SEO (otimização do mecanismo de pesquisa).
 * As pontuações em nível de página individual também estão disponíveis por meio de detalhamento.
@@ -68,6 +68,6 @@ A métrica de alteração pode ter um dos valores a seguir.
 
 Ao examinar qualquer um dos testes, uma pontuação em nível de página mais detalhada está disponível. Você pode ver as pontuações de páginas individuais para um teste específico, juntamente com a alteração em relação à execução anterior do teste.
 
-Clicar nos detalhes de qualquer página individual fornece informações sobre os elementos da página que foram avaliados, bem como orientação para corrigir problemas se forem detectadas oportunidades de melhoria.
+Clicar nos detalhes de qualquer página individual fornece informações sobre os elementos da página que foram avaliados e orientação para corrigir problemas se forem detectadas oportunidades de melhoria.
 
 ![Pontuações em nível de página](/help/implementing/cloud-manager/assets/exp-audit-2.png)

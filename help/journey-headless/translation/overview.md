@@ -2,7 +2,7 @@
 title: Jornada de tradução headless do AEM
 description: Comece aqui uma jornada guiada pela tradução de seu conteúdo headless usando as eficientes ferramentas de tradução do AEM.
 exl-id: b677f691-5257-43c3-a4b9-c34932577b31
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1029'
 ht-degree: 96%
@@ -53,7 +53,7 @@ A seguir estão os perfis que interagem nessa jornada.
 | Administrador | Gerencia as definições básicas e a configuração do AEM | O especialista em tradução trabalha com o administrador para fazer as alterações de configuração necessárias para a tradução, como a instalação de um conector de tradução. |
 | Arquiteto de conteúdo | Analisa os requisitos dos dados que devem ser entregues pelo método headless e define a estrutura desses dados | Os especialistas em tradução trabalham com o arquiteto de conteúdo para definir a organização do conteúdo, para que ele possa ser facilmente traduzido. |
 
-As informações nesta jornada podem ser úteis para todos os perfis, mas algumas informações podem ser supérfluas para determinadas funções. Fique atento para [jornadas futuras que abordarão funções adicionais.](/help/journey-documentation/documentation-journeys.md#journeys)
+As informações nesta jornada podem ser úteis para todos os perfis, mas algumas informações podem ser supérfluas para determinadas funções. Fique atento para [jornadas futuras que abordarão funções adicionais](/help/journey-documentation/documentation-journeys.md#journeys).
 
 ## A jornada de tradução headless {#the-journey}
 

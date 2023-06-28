@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
-source-git-commit: 948b671965cf438e2c93dea0371331cb3a02b6ca
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1408'
+source-wordcount: '1409'
 ht-degree: 20%
 
 ---
@@ -34,13 +34,13 @@ Edite as seguintes propriedades para o **[!UICONTROL Descrição]** componente:
    * **[!UICONTROL Rótulo do campo]** - O nome de exibição da propriedade de metadados. É somente para referência do usuário.
    * **[!UICONTROL Mapear para a propriedade]** - O valor dessa propriedade fornece o caminho/nome relativo para o nó do ativo onde ele é salvo no repositório. O valor deve sempre começar com `./` porque indica que o caminho está no nó do ativo.
 
-      O valor especificado para **[!UICONTROL Mapear para a propriedade]** O é armazenado como uma propriedade no nó de metadados do ativo. Por exemplo, se você especificar . `/jcr:content/metadata/dc:desc` como o nome de **[!UICONTROL Mapear para a propriedade]**, [!DNL Adobe Experience Manager Assets] armazena o valor `dc:desc` no nó de metadados do ativo.
+     O valor especificado para **[!UICONTROL Mapear para a propriedade]** O é armazenado como uma propriedade no nó de metadados do ativo. Por exemplo, se você especificar . `/jcr:content/metadata/dc:desc` como o nome de **[!UICONTROL Mapear para a propriedade]**, [!DNL Adobe Experience Manager Assets] armazena o valor `dc:desc` no nó de metadados do ativo.
 
    * **[!UICONTROL Valor padrão]** - Use essa propriedade para adicionar um valor padrão para o componente de metadados. Por exemplo, se você especificar &quot;Minha descrição&quot;, esse valor será atribuído à propriedade `dc:desc` no nó de metadados do ativo.
 
-      >[!NOTE]
-      >
-      >Adicionar um valor padrão a uma nova propriedade de metadados (que não existe em `/jcr:content/metadata` ) não exibe a propriedade e seu valor na página Propriedades do ativo por padrão. Para exibir a nova propriedade na variável [!UICONTROL Propriedades] modifique o formulário de esquema correspondente.
+     >[!NOTE]
+     >
+     >Adicionar um valor padrão a uma nova propriedade de metadados (que não existe em `/jcr:content/metadata` ) não exibe a propriedade e seu valor na página Propriedades do ativo por padrão. Para exibir a nova propriedade na variável [!UICONTROL Propriedades] modifique o formulário de esquema correspondente.
 
 1. (Opcional) Adicione mais componentes ao Formulário de edição na guia **[!UICONTROL Criar formulário]** e configure as propriedades na guia **[!UICONTROL Configurações]**. As seguintes propriedades estão disponíveis na guia **[!UICONTROL Criar formulário]**:
 

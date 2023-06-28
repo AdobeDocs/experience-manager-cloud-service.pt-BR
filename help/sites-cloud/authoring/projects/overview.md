@@ -2,10 +2,10 @@
 title: Projetos
 description: Os projetos permitem agrupar recursos em uma entidade cujo ambiente comum e compartilhado facilita o gerenciamento de projetos
 exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
-source-git-commit: 8ea043b4b6424d6922c41c143ca74fd25ac60cf8
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1259'
-ht-degree: 51%
+source-wordcount: '1255'
+ht-degree: 48%
 
 ---
 
@@ -95,7 +95,7 @@ O bloco Links permite associar links externos ao projeto.
 
 ![Links](/help/sites-cloud/authoring/assets/project-links.png)
 
-Você pode nomear o link com um nome fácil de reconhecer, além de alterar a miniatura.
+É possível nomear o link com um nome fácil de reconhecer e alterar a miniatura.
 
 ![Adicionar link](/help/sites-cloud/authoring/assets/projects-add-link.png)
 
@@ -105,7 +105,7 @@ O bloco Informações do Projeto fornece informações gerais sobre o projeto, i
 
 ![Informações do projeto](/help/sites-cloud/authoring/assets/project-info.png)
 
-Os membros da equipe podem ser atribuídos a esse bloco e excluídos dele (ou ter suas funções alteradas), bem como do bloco Equipe.
+Os membros da equipe podem ser atribuídos a este bloco e excluídos dele (ou ter suas funções alteradas) e do bloco Equipe.
 
 ![Adicionar membros da equipe ao projeto](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
@@ -137,11 +137,11 @@ Você pode atribuir seu projeto para seguir determinados fluxos de trabalho. Se 
 
 Você pode atribuir seu projeto para seguir determinados fluxos de trabalho. Dependendo do projeto escolhido, há fluxos de trabalho diferentes disponíveis.
 
-Elas são descritas em [Trabalhar com fluxos de trabalho de projeto.](/help/sites-cloud/authoring/projects/workflows.md)
+Elas são descritas em [Trabalhar com fluxos de trabalho de projeto](/help/sites-cloud/authoring/projects/workflows.md).
 
 ### Lançamentos {#launches}
 
-O bloco Inicializações mostra todas as inicializações que foram solicitadas com uma [Solicitar fluxo de trabalho do Launch.](/help/sites-cloud/authoring/projects/workflows.md)
+O bloco Inicializações mostra todas as inicializações que foram solicitadas com uma [Solicitar fluxo de trabalho de inicialização](/help/sites-cloud/authoring/projects/workflows.md).
 
 ![Lançamentos](/help/sites-cloud/authoring/assets/project-launches.png)
 

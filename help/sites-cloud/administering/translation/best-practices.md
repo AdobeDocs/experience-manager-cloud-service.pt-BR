@@ -4,10 +4,10 @@ description: Saiba mais sobre as práticas recomendadas compiladas pelas equipes
 feature: Language Copy
 role: Admin
 exl-id: 51b98c24-5566-4088-9010-bd39841a1633
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 92%
+source-wordcount: '872'
+ht-degree: 93%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 92%
 
 >[!TIP]
 >
->Se você é novo na tradução de conteúdo, consulte nossa [Jornada de tradução de sites,](/help/journey-sites/translation/overview.md) que é um caminho guiado pela tradução de conteúdo do AEM Sites usando ferramentas de tradução poderosas do AEM, ideais para aqueles sem experiência com o AEM ou com tradução.
+>Se você é novo na tradução de conteúdo, consulte [Jornada de tradução de sites,](/help/journey-sites/translation/overview.md) que é um caminho guiado pela tradução de conteúdo do AEM Sites usando ferramentas de tradução poderosas do AEM, ideais para aqueles sem experiência com o AEM ou com tradução.
 
 ## Geral {#general}
 
@@ -32,7 +32,7 @@ Criar ou expandir uma presença global na Web pode ser um processo complexo, mas
 
 * Ao projetar a estrutura do site, comece examinando o conteúdo e determine onde e em qual idioma o conteúdo será criado. Esse local deve ser o nível superior do site.
 * A prática recomendada é uma **estrutura baseada em idiomas** com até três níveis entre a criação de nível superior e os sites de países.
-* Use uma convenção de nomenclatura de site de idioma/país que siga os **[padrões W3C.](/help/sites-cloud/authoring/fundamentals/accessible-content.md)**
+* Use uma convenção de nomenclatura de site de idioma/país que siga os **[padrões W3C](/help/sites-cloud/authoring/fundamentals/accessible-content.md)**.
 * Determine como o conteúdo será distribuído por regiões e países. Considere quais países compartilham idiomas. É recomendável criar matrizes de idioma, uma camada de páginas não ativadas em que o conteúdo traduzido pode ser revisado, modificado e depois enviado ou extraído para um site de país que compartilha esse idioma.
 * Há duas abordagens para a criação de matrizes de idioma: usar cópias de idioma ou usar o MSM e as Live Copies.
    * A abordagem de cópia de idioma é a utilizada pela estrutura de integração de tradução pronta para uso do AEM e, portanto, é a maneira mais fácil de começar. A estrutura fornece uma interface que, inicialmente, facilita a propagação e tradução de alterações de conteúdo do idioma principal (por exemplo, inglês) para outros idiomas principais. No entanto, à medida que o projeto cresce, a automação do fluxo de trabalho torna-se cada vez mais necessária para gerenciar a tradução do crescente número de páginas e/ou idiomas.

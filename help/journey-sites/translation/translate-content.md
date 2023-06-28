@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: b8ab2525-3f15-4844-866c-da47bfc7518c
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2598'
-ht-degree: 100%
+source-wordcount: '2590'
+ht-degree: 97%
 
 ---
 
@@ -174,7 +174,7 @@ As traduções automáticas retornam automaticamente com um estado de **Aprovado
 >
 >Se você não desativou a opção de projeto **Excluir lançamento após promoção** como [descrito na seção anterior,](#using-translation-project) os itens traduzidos aparecerão com o estado **Excluído**. Isso é normal, pois o AEM descarta automaticamente os registros de tradução quando os itens traduzidos chegam. Os itens traduzidos foram importados como cópias de idioma. Somente os registros de tradução foram excluídos, pois não são mais necessários.
 >
->Não se preocupe se isso não está claro. Este é um detalhamento aprofundado de como o AEM funciona e não afeta sua compreensão da jornada. Se desejar se aprofundar em como o AEM processa as traduções, consulte a seção [recursos adicionais](#additional-resources) no final deste artigo.
+>Não se preocupe se isso não está claro. Este é um detalhamento aprofundado de como o AEM funciona e não afeta sua compreensão da jornada. Se quiser se aprofundar em como o AEM processa traduções, consulte [recursos adicionais](#additional-resources) no final deste artigo.
 
 ### Usar um projeto de tradução criado manualmente {#using-manual-project}
 
@@ -234,7 +234,7 @@ As traduções automáticas retornam automaticamente com um estado de **Aprovado
 >
 >Se você não desativou a opção de projeto **Excluir lançamento após promoção** como [descrito na seção anterior,](#using-translation-project) os itens traduzidos aparecerão com o estado **Excluído**. Isso é normal, pois o AEM descarta automaticamente os registros de tradução quando os itens traduzidos chegam. Os itens traduzidos foram importados como cópias de idioma. Somente os registros de tradução foram excluídos, pois não são mais necessários.
 >
->Não se preocupe se isso não está claro. Este é um detalhamento aprofundado de como o AEM funciona e não afeta sua compreensão da jornada. Se deseja se aprofundar em como o AEM processa traduções, consulte a seção [recursos adicionais](#additional-resources) no final deste artigo.
+>Não se preocupe se isso não está claro. Este é um detalhamento aprofundado de como o AEM funciona e não afeta sua compreensão da jornada. Se quiser se aprofundar em como o AEM processa traduções, consulte [recursos adicionais](#additional-resources) no final deste artigo.
 
 ## Revisar conteúdo traduzido {#reviewing}
 
@@ -248,7 +248,7 @@ Toque ou clique nesse ícone para abrir o conteúdo traduzido no console e poder
 
 ![Uma página traduzida](assets/translated-page.png)
 
-É possível modificar ainda mais o conteúdo traduzido necessário, desde que você tenha a permissão adequada; mas a edição de conteúdo está fora do escopo dessa jornada. Consulte a seção [Recursos adicionais](#additional-resources) no final deste documento para obter mais informações sobre este tópico.
+É possível modificar ainda mais o conteúdo traduzido necessário, desde que você tenha a permissão adequada; mas a edição de conteúdo está fora do escopo dessa jornada. Consulte a [Recursos adicionais](#additional-resources) no final deste documento para obter mais informações sobre este tópico.
 
 O objetivo do projeto é coletar todos os recursos relacionados a uma tradução em um único local para facilitar o acesso e obter uma visão geral clara. No entanto, como você pode ver ao visualizar os detalhes de um item traduzido, as próprias traduções fluem de volta para a pasta de sites do idioma de tradução. Neste exemplo, a pasta é
 
@@ -268,7 +268,7 @@ A estrutura de tradução do AEM recebe as traduções do conector de tradução
 
 Se o seu serviço de tradução fornecer tradução humana, o processo de revisão oferecerá mais opções. Por exemplo, as traduções retornam ao projeto com o status de **Rascunho** e devem ser revisadas e aprovadas ou rejeitadas manualmente.
 
-A tradução humana está fora do escopo dessa jornada de localização. Consulte a seção [Recursos adicionais](#additional-resources) no final deste documento para obter mais informações sobre este tópico. No entanto, além das opções de aprovação adicionais, o fluxo de trabalho para traduções humanas é o mesmo das traduções automáticas, conforme descrito nesta jornada.
+A tradução humana está fora do escopo dessa jornada de localização. Consulte a [Recursos adicionais](#additional-resources) no final deste documento para obter mais informações sobre este tópico. No entanto, além das opções de aprovação adicionais, o fluxo de trabalho para traduções humanas é o mesmo das traduções automáticas, conforme descrito nesta jornada.
 
 ## O que vem a seguir {#what-is-next}
 

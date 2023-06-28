@@ -2,10 +2,10 @@
 title: Notas de versão do Adobe Experience Manager as a Cloud Service 2020.6.0
 description: Notas de versão do Experience Manager para 2020.6.0
 exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1939'
-ht-degree: 92%
+source-wordcount: '1931'
+ht-degree: 90%
 
 ---
 
@@ -62,7 +62,7 @@ Consulte esta seção para saber mais sobre as novidades e atualizações do Clo
 
   Consulte [Exclusão de um programa de sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=pt-BR) para obter mais detalhes.
 
-* Os usuários de programas de sandbox que estiverem exercendo a função de *Proprietário comercial* ou *Gerente de implantação* no Cloud Manager agora podem excluir seu conjunto de ambientes de produção e preparo na interface do Cloud Manager. A opção de exclusão agora está disponível no cartão Ambiente da página **Visão geral de programas**, bem como na página **Ambientes**. Selecionar a opção de exclusão no ambiente de produção também exclui o ambiente de preparo no mesmo conjunto, e vice-versa.
+* Os usuários de programas de sandbox que estiverem exercendo a função de *Proprietário comercial* ou *Gerente de implantação* no Cloud Manager agora podem excluir seu conjunto de ambientes de produção e preparo na interface do Cloud Manager. A opção de exclusão agora está disponível no cartão Ambiente da **Visão geral dos programas** e a **Ambientes** página. Selecionar a opção de exclusão no ambiente de produção também exclui o ambiente de preparo no mesmo conjunto, e vice-versa.
 
   Consulte [Exclusão de um programa de sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=pt-BR) para obter mais detalhes.
 
@@ -72,15 +72,15 @@ Consulte esta seção para saber mais sobre as novidades e atualizações do Clo
 
 * Agora há uma página **Saiba mais** na área de navegação superior do Cloud Manager. Essa página inclui recursos para ajudar os usuários a saber mais sobre os fluxos de trabalho usados com mais frequência, conforme a relevância para as suas funções atribuídas no Cloud Manager.
 
-* Os programas de sandbox agora são identificados por meio de um **Sandbox** que é exibido no cartão do programa na página de aterrissagem, bem como ao lado do nome do programa no **Visão geral do programa** página.
+* Os programas de sandbox agora são identificados por meio de um **Sandbox** que é exibido no cartão do programa na página de aterrissagem e ao lado do nome do programa no **Visão geral do programa** página.
 
 * Os usuários que estiverem exercendo a função SysAdmin agora têm acesso com um só clique ao local do Admin Console onde podem gerenciar funções ou permissões de usuários para o Cloud Manager. Agora há um botão **Gerenciar acesso** na página de aterrissagem, ao lado do botão **Adicionar programa**.
 
-  Consulte [Tarefas de SysAdmin](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=pt-BR#sysadmin-tasks) para saber mais.
+  Consulte [Tarefas de SysAdmin](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=pt-BR#sysadmin-tasks) para obter mais detalhes.
 
 * Agora os usuários que estiverem exercendo a função SysAdmin têm acesso à instância do autor diretamente do Cloud Manager, com um só clique.
 
-  Consulte [Gerenciar o acesso à instância do autor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=pt-BR#manage-access-aem) para saber mais.
+  Consulte [Gerenciar o acesso à instância do autor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=pt-BR#manage-access-aem) para obter mais detalhes.
 
 * O log da etapa Criar agora inclui a lista de artefatos descobertos, incluindo pacotes de conteúdo ignorados.
 

@@ -2,10 +2,10 @@
 title: Pós-ativação
 description: Saiba como monitorar problemas e melhorar o desempenho
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 39%
+source-wordcount: '482'
+ht-degree: 28%
 
 ---
 
@@ -45,13 +45,13 @@ Como usuário, você pode acessar o CRXDE Lite no ambiente de desenvolvimento, m
 >[!IMPORTANT]
 >Gravação em repositórios imutáveis, como `/libs` e `/apps` no tempo de execução resulta em erros. Além disso, você não tem acesso a ferramentas de desenvolvedor para ambientes de preparo e produção.
 
-Consulte [Desenvolvimento com o CRXDE Lite](/help/implementing/developing/tools/crxde.md) para saber como desenvolver seu aplicativo do AEM usando o CRXDE Lite.
+Consulte [Desenvolvimento com o CRXDE Lite](/help/implementing/developing/tools/crxde.md) para saber como desenvolver seu aplicativo AEM usando o CRXDE Lite.
 
 ## Gerenciamento de logs {#managing-logs}
 
 Os usuários podem acessar uma lista de arquivos de log disponíveis para o ambiente selecionado.
 
-Consulte [Acessar e gerenciar logs](/help/implementing/cloud-manager/manage-logs.md) para saber como acessar e gerenciar logs por meio da interface do usuário ou da API via Cloud Manager.
+Consulte [Acesso e gerenciamento de registros](/help/implementing/cloud-manager/manage-logs.md) para saber como acessar e gerenciar logs por meio da interface ou da API via Cloud Manager.
 
 ## Entrando em contato com o suporte {#contacting-support}
 

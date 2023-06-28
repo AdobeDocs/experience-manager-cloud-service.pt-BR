@@ -2,9 +2,9 @@
 title: Registro para AEM as a Cloud Service
 description: Saiba como usar o Logging para AEM as a Cloud Service para configurar parâmetros globais para o serviço de log central, configurações específicas para os serviços individuais ou como solicitar o registro de dados.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2376'
+source-wordcount: '2375'
 ht-degree: 3%
 
 ---
@@ -52,7 +52,7 @@ Desenvolvimento</td>
 DEPURAR</td>
 <td>
 Descreve o que está acontecendo no aplicativo.<br>
-Quando o registro DEBUG está ativo, são registradas instruções que fornecem uma visão clara de quais atividades ocorrem, bem como quaisquer parâmetros-chave que afetam o processamento.</td>
+Quando o registro DEBUG está ativo, são registradas instruções que fornecem uma imagem clara de quais atividades ocorrem e quaisquer parâmetros-chave que afetam o processamento.</td>
 <td>
 <ul>
 <li> Desenvolvimento local</li>
@@ -570,7 +570,7 @@ As propriedades acima devem ser especificadas para cada combinação relevante d
 
 Você deve garantir que a solicitação inicial inclua todos os ambientes de desenvolvimento que devem ser ativados, além dos ambientes de preparo/produção. O Splunk deve ter um certificado SSL e ser voltado ao público.
 
-Se qualquer novo ambiente de desenvolvimento criado após a solicitação inicial tiver a intenção de ter o encaminhamento do Splunk, mas ele não estiver habilitado, uma solicitação adicional deverá ser feita.
+Se qualquer novo ambiente de desenvolvimento criado após a solicitação inicial tiver o encaminhamento do Splunk, mas não o tiver ativado, uma solicitação adicional deverá ser feita.
 
 Observe também que, se os ambientes de desenvolvimento tiverem sido solicitados, é possível que outros ambientes de desenvolvimento que não estejam na solicitação ou até mesmo ambientes de sandbox tenham o encaminhamento do Splunk ativado e compartilhem um índice do Splunk. Os clientes podem usar o `aem_env_id` para distinguir entre esses ambientes.
 

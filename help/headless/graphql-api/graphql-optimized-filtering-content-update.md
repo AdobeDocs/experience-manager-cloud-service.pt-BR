@@ -2,10 +2,10 @@
 title: Atualizar fragmentos de conteúdo para a filtragem otimizada de GraphQL
 description: Saiba como atualizar os fragmentos de conteúdo para uma filtragem otimizada de GraphQL no Adobe Experience Manager as a Cloud Service para entrega de conteúdo headless.
 exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '912'
-ht-degree: 97%
+source-wordcount: '908'
+ht-degree: 91%
 
 ---
 
@@ -99,7 +99,7 @@ Para executar o procedimento, siga as etapas abaixo:
       <td>Todos </td>
       <td> </td>
       <td>Variável </td>
-      <td>Intervalo (em segundos) para processar os fragmentos de conteúdo restantes até o próximo limite<br>Esse intervalo também é considerado como um tempo de espera antes de iniciar o processo, bem como um atraso entre o processamento de cada CF de CF_MIGRATION_LIMIT subsequente.<br>(*)</td>
+      <td>Intervalo (segundos) para processar os fragmentos de conteúdo restantes até o próximo limite<br>Esse intervalo também é considerado como um tempo de espera antes de iniciar o trabalho e um atraso entre o processamento de cada número de CFs CF_MIGRATION_LIMIT subsequente.<br>(*)</td>
      </tr>
     </tbody>
    </table>
@@ -146,7 +146,7 @@ Para executar o procedimento, siga as etapas abaixo:
         23.01.2023 12:40:45.180 *INFO* [sling-threadpool-8abcc1bb-cdcb-46d4-8565-942ad8a73209-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished content fragments upgrade in 5m, slingJobId: 2023/1/23/12/34/ad1b399e-77be-408e-bc3f-57097498fddb_0, status: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Upgrade to version '1' succeeded.', errors=[], successCount=3781, failedCount=0, skippedCount=0}
         ```
 
-   Os clientes que habilitaram o acesso aos logs do ambiente usando o Splunk podem usar a consulta de exemplo abaixo para monitorar o processo de atualização. Para obter detalhes sobre como ativar os registros do Splunk, consulte a página [Depurando Produção e Preparo](/help/implementing/developing/introduction/logging.md#debugging-production-and-stage).
+   Os clientes que habilitaram o acesso aos logs do ambiente usando o Splunk podem usar a consulta de exemplo abaixo para monitorar o processo de atualização. Para obter detalhes sobre como ativar o registro do Splunk, consulte [Depuração da produção e do preparo](/help/implementing/developing/introduction/logging.md#debugging-production-and-stage) página.
 
    ```splunk
    index=<indexName> sourcetype=aemerror aem_envId=<environmentId> msg="*com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished*" 

@@ -2,10 +2,10 @@
 title: Diferencial de páginas
 description: O recurso de comparação de página permite a comparação conveniente lado a lado de duas páginas com suas diferenças destacadas.
 exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '616'
-ht-degree: 26%
+source-wordcount: '612'
+ht-degree: 27%
 
 ---
 
@@ -98,4 +98,4 @@ Há algumas situações em que o recurso de diferencial da página pode não det
 
 >[!NOTE]
 >
->Para obter mais detalhes sobre a operação do mecanismo diff da página, bem como limitações que podem afetar o diff da página, consulte a [documentação do desenvolvedor](/help/implementing/developing/introduction/page-diff.md) deste recurso.
+>Para obter mais detalhes sobre a operação do mecanismo diff da página e as limitações que podem afetar o diff da página, consulte [documentação do desenvolvedor](/help/implementing/developing/introduction/page-diff.md) deste recurso.

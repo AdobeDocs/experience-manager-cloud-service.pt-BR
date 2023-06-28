@@ -2,10 +2,10 @@
 title: Configure o conector de tradução para conteúdo headless
 description: Saiba como conectar o AEM a um serviço de tradução.
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1233'
-ht-degree: 95%
+source-wordcount: '1231'
+ht-degree: 94%
 
 ---
 
@@ -78,7 +78,7 @@ Para criar uma nova configuração de tradução:
 
 1. Forneça as seguintes informações nos campos e, em seguida, clique ou toque em **Criar**.
    1. Selecione o **Tipo de configuração** no menu suspenso. Selecione **Integração de tradução** na lista.
-   1. Insira um **Título** para sua configuração. O **Título** identifica a configuração no console do **Cloud Services**, bem como nas listas suspensas de propriedade da página.
+   1. Insira um **Título** para sua configuração. A variável **Título** identifica a configuração na variável **Cloud Services** console e nas listas suspensas de propriedade da página.
    1. Opcionalmente, insira um **Nome** para o nó do repositório que armazena a configuração.
 
    ![Criar configuração de tradução](assets/create-translation-configuration.png)

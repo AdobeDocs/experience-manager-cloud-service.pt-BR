@@ -2,7 +2,7 @@
 title: Fragmentos de conteúdo - Navegador de configuração (Ativos - Fragmentos de conteúdo)
 description: Saiba como ativar a funcionalidade de Fragmento de conteúdo no Navegador de configuração.
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: 1fc57dacbf811070664d5f5aaa591dd705516fa8
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 27%
@@ -60,7 +60,7 @@ Para usar determinados [Funcionalidade Fragmento de conteúdo](#creating-a-conte
 
    1. Especifica um **Título**.
    1. A variável **Nome** torna-se o nome do nó no repositório.
-      * Ele é gerado automaticamente com base no título e ajustado de acordo com [Convenções de nomenclatura do AEM.](/help/implementing/developing/introduction/naming-conventions.md)
+      * Ele é gerado automaticamente com base no título e ajustado de acordo com [Convenções de nomenclatura do AEM](/help/implementing/developing/introduction/naming-conventions.md).
       * Você pode ajustá-lo se necessário.
    1. Para permitir seu uso, selecione
       * **Modelos de fragmentos do conteúdo**

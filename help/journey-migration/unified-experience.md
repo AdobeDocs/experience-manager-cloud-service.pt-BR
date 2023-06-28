@@ -2,9 +2,9 @@
 title: Experiência unificada para ferramentas de refatoração de código
 description: Experiência unificada para ferramentas de refatoração de código
 exl-id: daee0e2d-1e2b-41a3-acab-fc59142d0e05
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '263'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,7 @@ A variável `aio-cli-plugin-aem-cloud-service-migration` O plug-in do consiste e
 
 * **Conjunto de ferramentas de refatoração de código subjacente**
 
-   As ferramentas de refatoração de código executam suas funcionalidades ao:
+  As ferramentas de refatoração de código executam suas funcionalidades ao:
 
    * Digitalizar a respectiva seção do código do cliente e manipular o código (com base na implementação do código para práticas recomendadas) para produzir a saída que pode ser validada e implantada.
 

@@ -2,10 +2,10 @@
 title: Jornadas do AEM Sites
 description: Comece aqui para obter uma visão geral das jornadas guiadas disponíveis para compreender os recursos avançados de sites do AEM.
 exl-id: d18bc8b8-8d94-4296-a218-b21b59e6563d
-source-git-commit: fd663a98cc4b2924edb274baa452264a37641e0c
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 100%
+source-wordcount: '418'
+ht-degree: 89%
 
 ---
 
@@ -15,7 +15,7 @@ Comece aqui para obter uma visão geral das jornadas guiadas disponíveis para c
 
 ## Introdução {#introduction}
 
-O [AEM Sites](https://business.adobe.com/br/products/experience-manager/sites/aem-sites.html) é um conjunto unificado de ferramentas poderosas que permitem criar, gerenciar e publicar experiências digitais com facilidade em todos os canais. Desde a configuração da estrutura do conteúdo inicial, à criação fácil de conteúdo reutilizável, passando pela implantação em vários mercados e idiomas, além da criação de aplicativos personalizados que oferecem experiências personalizadas, o AEM Sites é uma solução abrangente e centralizada para criar experiências excelentes para os seus públicos, onde quer que estejam.
+O [AEM Sites](https://business.adobe.com/br/products/experience-manager/sites/aem-sites.html) é um conjunto unificado de ferramentas poderosas que permitem criar, gerenciar e publicar experiências digitais com facilidade em todos os canais. Desde a configuração da estrutura do conteúdo inicial, à criação fácil de conteúdo reutilizável, à implantação em vários mercados e idiomas e à criação de aplicativos personalizados que oferecem experiências personalizadas, o AEM Sites é uma solução abrangente e centralizada para criar experiências excelentes para seus públicos, onde quer que estejam.
 
 ## Jornadas de documentação do AEM {#documentation-journeys}
 
@@ -43,4 +43,4 @@ As seguintes Jornadas de documentação estão disponíveis para os tópicos do 
 | [Jornada do complemento de demonstrações de referência](/help/journey-sites/demos-add-on/overview.md) | Comece aqui para obter uma jornada guiada sobre como adicionar facilmente o complemento de demonstrações de referência do AEM a um ambiente de sandbox com configuração mínima do AEM e sobre poder testar os recursos avançados do AEM com exemplos completos com base nas práticas recomendadas. | Administrador do sistema |
 | [Jornada de tradução de sites](/help/journey-sites/translation/overview.md) | Saiba mais sobre as tecnologias do AEM Sites, como elas podem ser usadas em seu projeto e como criar e atualizar projetos de tradução no AEM de A a Z. | Especialistas em tradução |
 
-Fique ligado nas [jornadas futuras que abordarão funções adicionais.](/help/journey-documentation/documentation-journeys.md#journeys)
+Fique atento para [jornadas futuras que abordarão funções adicionais](/help/journey-documentation/documentation-journeys.md#journeys).
