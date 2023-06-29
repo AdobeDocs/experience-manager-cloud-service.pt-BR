@@ -7,9 +7,9 @@ keywords: Adicionar um manipulador de erros personalizado, adicionar um manipula
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: 66c7b30b8b66bc86d7b83e57e02ed61d426553a2
+source-git-commit: 09ed1ae61e7748da2cc182b005a9dd26853cb3f7
 workflow-type: tm+mt
-source-wordcount: '1979'
+source-wordcount: '1981'
 ht-degree: 1%
 
 ---
@@ -119,9 +119,7 @@ Em que:
 
 Algumas das opções para exibir as respostas de erro são:
 
-+++
-
-+++  Com base no fieldName do Formulário adaptável
++++  Com base na propriedade fieldName do Formulário adaptável
 
 
 * **`Header:`** `content-type:application/problem+json`
@@ -148,7 +146,7 @@ Algumas das opções para exibir as respostas de erro são:
 +++
 
 
-+++ Com base no dataRef do formulário adaptável
++++ Com base na propriedade dataRef do formulário adaptável
 
 * **`Header:`** `content-type:application/problem+json`
 * **`Response:`**
@@ -171,8 +169,8 @@ Algumas das opções para exibir as respostas de erro são:
 
 Você pode visualizar o valor de dataRef na variável **[!UICONTROL Propriedades]** janela de um componente de formulário.
 
-
 +++
+
 
 ## Adicionar manipulador de erros usando o Editor de regras {#add-error-handler-using-rule-editor}
 
