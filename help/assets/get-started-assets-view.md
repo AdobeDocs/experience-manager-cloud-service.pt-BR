@@ -3,14 +3,14 @@ title: Introdução ao uso do [!DNL Assets View]
 description: Como acessar, experiência de logon, casos de uso com suporte e problemas conhecidos do [!DNL Assets View].
 role: User, Leader
 exl-id: 7917b2a0-8340-4d94-aa6f-30ce986fa752
-source-git-commit: 5af7f9160b0028d0eff5358c3c1a43729b86883b
+source-git-commit: 5a7938d5e52388516f8b66bbcf8ffdee332a51a3
 workflow-type: tm+mt
-source-wordcount: '389'
-ht-degree: 94%
+source-wordcount: '345'
+ht-degree: 86%
 
 ---
 
-# Introdução ao uso do [!DNL Adobe Experience Manager Assets View] {#assets-view-get-started}
+# Introdução à visualização de Ativos {#assets-view-get-started}
 
 <!-- TBD: Make links for these steps. -->
 
@@ -25,11 +25,9 @@ Para usar o [!DNL Assets View], faça logon em [https://experience.adobe.com/#/a
 <!--In addition, more reference information that can be helpful is [understanding of the user interface](/help/assets/navigate-assets-view.md), [list of use cases](#use-cases), [supported file types](/help/assets/supported-file-formats-assets-view.md), and [known issues](/help/assets/release-notes.md#known-issues).
 -->
 
-## Receber acesso ao [!DNL Assets View] {#get-access}
+## Visualização Acessar ativos {#access-assets-view}
 
-A Adobe fornece a solução e adiciona a pessoa designada de sua organização como administrador. Os administradores podem fornecer acesso a vários usuários da organização usando o [[!DNL Admin Console]](https://helpx.adobe.com/br/enterprise/using/admin-console.html). Para solicitações relacionadas ao seu acesso, entre em contato com o administrador da organização.
-
-Ao fazer logon, depois de fornecer as credenciais, o [!DNL Assets View] solicita que você selecione uma conta. Nesse caso, selecione `Company or School Account` para continuar.
+Consulte [Como acessar a visualização de ativos](/help/assets/assets-view-introduction.md#how-to-access-assets-view) para obter as instruções detalhadas sobre como acessar a visualização de Ativos.
 
 ## Configurar o [!DNL Assets View] {#configuration}
 
