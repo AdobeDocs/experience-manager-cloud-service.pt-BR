@@ -2,9 +2,9 @@
 title: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: f0dc0e0ccd196ab748e2bfcdb4ce404c1c91c213
+source-git-commit: e8ea040ba3f8c73d7ed64c9669ac1d0a22d3a3c8
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '600'
 ht-degree: 20%
 
 ---
@@ -38,8 +38,8 @@ A Ativação de recursos 2023.7.0 fornecerá o conjunto completo de recursos par
 - SITES-13559: MSM: exceção &quot;Não é modificável&quot; lançada ao implantar o componente
 - SITES-11757: MSM: herdar a configuração de implantação do Pai não é revertido para páginas filhas
 - SITES-14073: Administrador de sites: o relatório CSV falha com 500 ao selecionar nenhuma propriedade para exportar
-- FORMS-7648: a validação do campo Número máximo de dígitos não funciona para o componente de Caixa numérica.
-- FORMS-8177: quando o serviço do Forms está ativo, o erro &quot;com.adobe.aem.formsndocuments.publish.AssetReferenceProvider falhou ao recuperar dependências de ativos&quot; encontra.
+- FORMS-7648: não é possível validar o número máximo de dígitos em um componente Caixa numérica. O script de validação não está funcionando.
+- FORMS-8177: Quando o serviço Forms está ativo, a variável `com.adobe.aem.formsndocuments.publish.AssetReferenceProvider Failed to retrieve asset dependencies` encontrados erros.
 - FORMS-8300: quando um usuário tenta delegar uma tarefa após abri-la, a resposta do delegado recarrega a tarefa, em vez de abrir a interface de entrada AEM do usuário.
 - FORMS-8500: No navegador Microsoft® Edge com a opção Modo IE ativada, o HTML5 Forms não abre.
 - FORMS-8541: Ao renderizar um Forms adaptável, ocorre uma exceção de ponteiro nulo.
@@ -52,7 +52,6 @@ A Ativação de recursos 2023.7.0 fornecerá o conjunto completo de recursos par
 - FORMS-8846: a propriedade de referência Vincular não funciona para o componente de anexos adaptáveis do Forms.
 - FORMS-9072: Ao pesquisar um Esquema ao criar um fragmento de formulário, o resultado da pesquisa não retorna nenhum esquema para seleção.
 - FORMS: correção de vários bugs relacionados à acessibilidade para melhorar a acessibilidade dos recursos do AEM Forms.
-
 
 ### Problemas conhecidos {#known-issues-12441}
 
