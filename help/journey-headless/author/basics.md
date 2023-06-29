@@ -2,9 +2,9 @@
 title: Saiba mais sobre as noções básicas de criação
 description: Saiba mais sobre os conceitos e os mecanismos de criação de conteúdo para seu CMS headless usando Fragmentos de conteúdo.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '1712'
+source-wordcount: '1715'
 ht-degree: 85%
 
 ---
@@ -213,7 +213,7 @@ Quando o editor é aberto pela primeira vez, você vê:
 
 Como exemplos:
 
-* Um fragmento que apenas requer várias informações, algumas com um tipo específico. Para conteúdo headless, as referências são importantes, você as aprenderá posteriormente em sua jornada.
+* Um fragmento que apenas requer várias informações, algumas com um tipo específico. Para conteúdo headless, as referências são fundamentais (você aprenderá sobre elas mais tarde na jornada).
 
   ![Editor de fragmento de conteúdo - Meu fragmento](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
 
@@ -235,7 +235,7 @@ Confirme suas atualizações com **Salvar** ou **Salvar e fechar**.
 
 #### Com o que você (provavelmente) não precisa se preocupar {#what-you-probably-do-not-need-to-worry-about}
 
-OK, essa seção pode parecer um pouco estranha, mas depois de abrir o Editor de fragmento de conteúdo e começar a explorar, você pode ver várias opções que (provavelmente) não se aplicam à jornada headless como um autor de conteúdo. Então, isto é apenas um rápido aviso do que você deve ser capaz de ignorar no contexto headless:
+OK, esta seção pode parecer um pouco estranha, mas assim que você abrir o Editor de fragmento de conteúdo e começar a explorar, poderá ver várias opções que (provavelmente) não se aplicam à sua jornada headless como um Autor de conteúdo. Então, isto é apenas um rápido aviso do que você deve ser capaz de ignorar no contexto headless:
 
 * **Modelos de fragmentos de conteúdo**
 

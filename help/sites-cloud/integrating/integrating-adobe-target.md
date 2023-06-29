@@ -4,7 +4,7 @@ description: Integração com o Adobe Target
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
 source-wordcount: '1018'
 ht-degree: 67%
@@ -50,7 +50,7 @@ Ao configurar os campos ID de locatário do Adobe Target e Código do cliente do
 Em ambos os casos:
 
 * Por padrão, o Código do cliente (se adicionado primeiro) também é copiado automaticamente para o campo ID do locatário.
-* Opcionalmente, é possível alterar o conjunto padrão de ID do locatário.
+* Se necessário, é possível alterar o conjunto padrão de ID do locatário.
 * As chamadas de back-end para o Target são baseadas na ID do locatário e as chamadas do lado do cliente para o Target são baseadas no Código do cliente.
 
 Como dito anteriormente, o primeiro caso é o mais comum para o AEM as a Cloud Service. De qualquer maneira, verifique se **ambos** os campos contêm as informações corretas, dependendo de suas necessidades.
@@ -156,4 +156,4 @@ Para saber como criar e publicar, consulte [página](https://experienceleague.ad
 
 >[!NOTE]
 >
->As configurações herdadas ainda são compatíveis com clientes existentes (sem a opção de editá-las ou criá-las). As configurações herdadas fazem parte dos pacotes de conteúdo carregados pelos clientes que usam o VSTS.
+>As configurações herdadas ainda são compatíveis com clientes existentes (sem a opção de editar ou criar). As configurações herdadas fazem parte dos pacotes de conteúdo carregados pelos clientes que usam o VSTS.

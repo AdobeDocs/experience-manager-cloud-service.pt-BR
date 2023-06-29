@@ -4,9 +4,9 @@ description: Entenda como as variações permitem criar conteúdo para o fragmen
 feature: Content Fragments
 role: User
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '2463'
+source-wordcount: '2461'
 ht-degree: 84%
 
 ---
@@ -197,8 +197,12 @@ Será possível criar um novo fragmento ao:
 1. Especificar propriedades; por exemplo, **Título**.
 1. Selecionar **Criar**.
 1. Finalmente:
-   1. **Concluído** retorna (para o fragmento original) e faz referência ao novo fragmento.
-   1. **Abertura** O faz referência ao novo fragmento e o abre para edição em uma nova guia do navegador.
+   1. **Concluído**:
+      * retorna (ao fragmento original)
+      * faz referência ao novo fragmento
+   1. **Abrir**:
+      * faz referência ao novo fragmento
+      * abre o novo fragmento para edição em uma nova guia do navegador
 
 ### Visualizar as principais estatísticas {#viewing-key-statistics}
 

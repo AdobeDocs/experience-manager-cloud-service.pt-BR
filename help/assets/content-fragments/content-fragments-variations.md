@@ -2,9 +2,9 @@
 title: Variações - Criação dos fragmentos de conteúdo (Ativos - Fragmentos de conteúdo)
 description: Entenda como as variações podem tornar o conteúdo headless no AEM ainda mais flexível, permitindo criar conteúdo para o fragmento e, em seguida, criar variações desse conteúdo de acordo com a finalidade.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '2440'
+source-wordcount: '2438'
 ht-degree: 83%
 
 ---
@@ -195,8 +195,12 @@ Será possível criar um novo fragmento ao:
 1. Especificar propriedades; por exemplo, **Título**.
 1. Selecionar **Criar**.
 1. Finalmente:
-   1. **Concluído** retorna (para o fragmento original) e faz referência ao novo fragmento.
-   1. **Abertura** O faz referência ao novo fragmento e o abre para edição em uma nova guia do navegador.
+   1. **Concluído**:
+      * retorna (ao fragmento original)
+      * faz referência ao novo fragmento
+   1. **Abrir**:
+      * faz referência ao novo fragmento
+      * abre o novo fragmento para edição em uma nova guia do navegador
 
 ### Visualizar as principais estatísticas {#viewing-key-statistics}
 
