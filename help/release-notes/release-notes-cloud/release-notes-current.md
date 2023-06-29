@@ -3,10 +3,10 @@ title: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud S
 description: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 32fb0942b8007aeee8afa6378a9293eecd7d7700
+source-git-commit: 25689621ab24b6e14e7e865451ae53947a67d8d1
 workflow-type: tm+mt
-source-wordcount: '1385'
-ht-degree: 16%
+source-wordcount: '1427'
+ht-degree: 15%
 
 ---
 
@@ -131,11 +131,13 @@ A visualização de ativos agora permite [adicionar componentes de propriedade d
 
 * [Métodos de autenticação aprimorados para o modelo de dados de formulário](/help/forms/configure-data-sources.md): Experimente maior segurança com a introdução da autenticação baseada em Credenciais do cliente para conectar o AEM Forms a fontes de dados compatíveis. Esse aprimoramento elimina a necessidade de representação ou logon de usuário, reforçando a proteção de seus dados.
 
-* Tornar as seções do Adaptive Forms repetíveis: agora é possível fazer [Acordeão](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [Assistente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html), [Painel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html), e [Guias Horizontais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) componentes de um Formulário adaptável repetível.
+* [Forms adaptável com seções que podem ser repetidas](/help/forms/create-forms-repeatable-sections.md): Agora você pode fazer [Acordeão](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [Assistente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html), [Painel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html), e [Guias Horizontais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) componentes em um formulário adaptável baseado em Componentes principais para criar seções repetíveis.
 
   >[!VIDEO](https://video.tv.adobe.com/v/3421052/adaptive-forms-repeatable-sections-repeat-sections/?quality=12&learn=on)
 
   Essas seções repetíveis permitem fornecer um número ilimitado de entradas sem uma contagem de campos fixa. É útil quando as instâncias de dados necessárias são desconhecidas antecipadamente. Os usuários do Forms podem adicionar ou remover seções facilmente, tornando os formulários adaptáveis a diferentes cenários de entrada de dados e simplificando a coleta de várias ocorrências dos mesmos dados.
+
+* **[Enviar Forms adaptável ao Microsoft® SharePoint e Microsoft® OneDrive](/help/forms/configuring-submit-actions.md)**: aumente a agilidade do usuário empresarial para que você possa iniciar novos formulários rapidamente e armazenar dados enviados em ferramentas diárias que eles usam, como o site do Microsoft® SharePoint ou a pasta do OneDrive.
 
 ### Programa de adoção antecipada de formulários adaptáveis headless {#forms-early-adopter}
 
