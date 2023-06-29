@@ -8,9 +8,9 @@ user-guide-description: Saiba como o Experience Manager as a Cloud Service funci
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 40393340131a72a86503c00a0a2e9e78a28b7e69
+source-git-commit: 9424bef8a9a2c7ab4afb06e2a08e15336f858b7b
 workflow-type: tm+mt
-source-wordcount: '4138'
+source-wordcount: '4139'
 ht-degree: 98%
 
 ---
@@ -501,23 +501,22 @@ ht-degree: 98%
       + [Perguntas frequentes sobre entrega de conteúdo HTTP2](/help/assets/dynamic-media/http2faq.md)
       + [Fim de vida útil de visualizadores Flash](/help/assets/dynamic-media/flash-viewers-eol.md)
       + [Fim de vida útil de visualizadores DHTML](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
-
-+ Trabalho com a exibição de Ativos {#assets-view}
-   + [Introdução](/help/assets/get-started-assets-view.md)
-   + [Meu espaço de trabalho](/help/assets/my-workspace-assets-view.md)
-   + [Tipos de arquivos compatíveis e casos de uso](/help/assets/supported-file-formats-assets-view.md)
-   + [Exibir ativos](/help/assets/navigate-assets-view.md)
-   + [Fazer upload e adicionar ativos](/help/assets/add-delete-assets-view.md)
-   + [Pesquisar e descobrir ativos](/help/assets/search-assets-view.md)
-   + [Tarefas de gerenciamento de ativos](/help/assets/manage-organize-assets-view.md)
-   + [Editar imagens](/help/assets/edit-images-assets-view.md)
-   + [Gerenciar metadados de ativos](/help/assets/metadata-assets-view.md)
-   + [Compartilhar ativos](/help/assets/share-links-for-assets-view.md)
-   + [Gerenciar coleções](/help/assets/manage-collections-assets-view.md)
-   + [Observar ativos, pastas e coleções](/help/assets/manage-notifications-assets-view.md)
-   + [Gerenciar relatórios](/help/assets/manage-reports-assets-view.md)
-   + [Gerenciar tags](/help/assets/tagging-management-assets-view.md)
-
+   + Trabalho com a exibição de Ativos {#assets-view}
+      + [Introdução](/help/assets/assets-view-introduction.md)
+      + [Introdução](/help/assets/get-started-assets-view.md)
+      + [Meu espaço de trabalho](/help/assets/my-workspace-assets-view.md)
+      + [Tipos de arquivos compatíveis e casos de uso](/help/assets/supported-file-formats-assets-view.md)
+      + [Exibir ativos](/help/assets/navigate-assets-view.md)
+      + [Fazer upload e adicionar ativos](/help/assets/add-delete-assets-view.md)
+      + [Pesquisar e descobrir ativos](/help/assets/search-assets-view.md)
+      + [Tarefas de gerenciamento de ativos](/help/assets/manage-organize-assets-view.md)
+      + [Editar imagens](/help/assets/edit-images-assets-view.md)
+      + [Gerenciar metadados de ativos](/help/assets/metadata-assets-view.md)
+      + [Compartilhar ativos](/help/assets/share-links-for-assets-view.md)
+      + [Gerenciar coleções](/help/assets/manage-collections-assets-view.md)
+      + [Observar ativos, pastas e coleções](/help/assets/manage-notifications-assets-view.md)
+      + [Gerenciar relatórios](/help/assets/manage-reports-assets-view.md)
+      + [Gerenciar tags](/help/assets/tagging-management-assets-view.md)
    + Integração com o Adobe Workfront {#integrations}
       + [Integrações com [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
       + [Configurar o mapeamento de metadados de ativos](/help/assets/configure-asset-metadata-mapping.md)
@@ -525,6 +524,7 @@ ht-degree: 98%
       + [Remover dependências externas de instalações existentes](/help/assets/remove-external-dependencies.md)
       + [Configurar o  [!DNL enhanced connector]  para o  [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
       + [Atualizar o [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
+
 + Forms {#forms}
    + Visão geral {#forms-overview}
       + [Introdução](/help/forms/home.md)
