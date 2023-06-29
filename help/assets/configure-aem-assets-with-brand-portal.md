@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5096cd6141e70f40b5145389ca4db3cc65ea1e66
 workflow-type: tm+mt
-source-wordcount: '2527'
+source-wordcount: '2558'
 ht-degree: 13%
 
 ---
@@ -101,11 +101,11 @@ Execute as seguintes etapas para validar a conexão entre seu Experience Manager
 
 1. No **Ferramentas** , navegue até **[!UICONTROL Implantação]** > **[!UICONTROL Distribuição]**.
 
-   ![](assets/test-bpconfig1.png)
+   ![Configurar o AEM Assets as a Cloud Service com o Brand Portal](assets/test-bpconfig1.png)
 
    Um agente de distribuição da Brand Portal (**[!UICONTROL bpdistributionagent0]**) é criado em **[!UICONTROL Publicar no Brand Portal]**.
 
-   ![](assets/test-bpconfig2.png)
+   ![Criar agente de distribuição](assets/test-bpconfig2.png)
 
 
 1. Clique em **[!UICONTROL Publicar no Brand Portal]** para abrir o agente de distribuição.
@@ -121,11 +121,11 @@ Execute as seguintes etapas para validar a conexão entre seu Experience Manager
    >
    >É recomendável analisar as falhas e limpar a **fila de erros** periodicamente.
 
-   ![](assets/test-bpconfig3.png)
+   ![Fila de processamento para distribuição de ativos](assets/test-bpconfig3.png)
 
 1. Para verificar a conexão entre o Experience Manager Assets as a [!DNL Cloud Service] e Brand Portal, clique no link **[!UICONTROL Testar conexão]** ícone.
 
-   ![](assets/test-bpconfig4.png)
+   ![Verificar a conexão entre o AEM e o Brand Portal](assets/test-bpconfig4.png)
 
    Será exibida uma mensagem informando que o *o pacote de teste foi entregue com sucesso*.
 
@@ -156,7 +156,7 @@ Vamos publicar um ativo do Experience Manager Assets no Brand Portal e ver os lo
 1. Siga as etapas (de 1 a 4) conforme mostrado na **Testar conexão** e navegue até a página do agente de distribuição.
 1. Clique em **[!UICONTROL Logs]** para visualizar os logs de processamento e de erros.
 
-   ![](assets/test-bpconfig5.png)
+   ![Processamento e logs de erros](assets/test-bpconfig5.png)
 
 O agente de distribuição gerou os seguintes registros:
 
