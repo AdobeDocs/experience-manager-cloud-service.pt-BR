@@ -5,7 +5,7 @@ exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 source-git-commit: f0edd0e3deeba89dcbd2dc1a07859138b24e2220
 workflow-type: tm+mt
 source-wordcount: '306'
-ht-degree: 18%
+ht-degree: 44%
 
 ---
 
@@ -14,10 +14,10 @@ ht-degree: 18%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_ipallowlist"
->title="Gerenciar listas de permissões IP"
->abstract="O AEM as a cloud service pode ser acessado pela Internet e é protegido por meio de autenticação e autorização do usuário. As listas de permissões IP do Cloud Manager podem ser usadas para limitar e controlar o acesso somente a endereços IP confiáveis. Lista de permissões Usuários do Cloud Manager com permissões apropriadas podem criar notificações de endereços IP confiáveis a partir dos quais os usuários do site podem acessar seus domínios de AEM."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/add-ip-allow-lists.html" text="Adicionar uma lista de permissões de IP"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/managing-ip-allow-lists.html" text="Exibir e atualizar uma lista de permissões de IP"
+>title="Gerenciar listas de permissões de IP"
+>abstract="O AEM as a Cloud Service pode ser acessado pela Internet e é protegido por meio da autenticação e da autorização do usuário. As listas de permissões de IP do Cloud Manager podem ser usadas para limitar e controlar o acesso apenas a endereços IP confiáveis. Usuários do Cloud Manager com as permissões apropriadas podem criar listas de permissões de endereços IP confiáveis a partir dos quais os usuários do site podem acessar seus domínios do AEM."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/add-ip-allow-lists.html?lang=pt-BR" text="Adicionar uma lista de permissões de IP"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/managing-ip-allow-lists.html?lang=pt-BR" text="Exibir e atualizar uma lista de permissões de IP"
 
 Por padrão, o AEM as a Cloud Service é acessível pela Internet. Embora a segurança seja tratada por meio da autenticação e autorização do usuário, a inclusão na lista de permissões de IP é uma maneira de limitar o acesso somente a endereços IP confiáveis.
 

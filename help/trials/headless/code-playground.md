@@ -7,7 +7,7 @@ exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '981'
-ht-degree: 55%
+ht-degree: 58%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 55%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide"
 >title="Inicie o aplicativo CodePen de exemplo"
->abstract="Este guia aborda a consulta de dados JSON do seu ambiente de avaliação em um aplicativo web JavaScript básico. Os fragmentos de conteúdo são modelados e criados nos módulos de aprendizado anteriores. Se necessário, analise primeiro esses guias antes de pular para esse."
+>abstract="Este guia aborda a consulta de dados JSON do seu ambiente de avaliação em um aplicativo web JavaScript básico. Você usa os Fragmentos de conteúdo modelados e criados nos módulos de aprendizado anteriores. Se necessário, analise primeiro esses guias antes de pular para este."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide_footer"

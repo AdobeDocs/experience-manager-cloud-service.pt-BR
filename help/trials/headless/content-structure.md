@@ -7,7 +7,7 @@ exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 source-git-commit: e507b409e4d2382b1eac54b11a9ad68fd965db4b
 workflow-type: tm+mt
 source-wordcount: '993'
-ht-degree: 34%
+ht-degree: 41%
 
 ---
 
@@ -17,12 +17,12 @@ ht-degree: 34%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview"
 >title="Criar a estrutura de conteúdo para seu aplicativo"
->abstract="Ao seguir essa série de guias interativos, você aprenderá a criar uma estrutura (conhecida como modelo de Fragmento de conteúdo) que serve como a estrutura fundamental para o seu conteúdo headless."
+>abstract="Ao acompanhar essa série de guias interativos, você aprenderá a criar uma estrutura (também conhecida como o modelo de Fragmento de conteúdo) que servirá como toda a base para o seu conteúdo headless."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide"
 >title="Iniciar o console de modelo"
->abstract="Vamos explorar como criar um esquema reutilizável, chamado de modelo de fragmento de conteúdo, para o seu conteúdo no Adobe Experience Manager as a Cloud Service. Assista ao vídeo para que você entenda por que essa etapa é importante. <br><br>Neste módulo de aprendizado, você usa um site de viagem como exemplo e aborda a criação de um modelo que representa uma viagem.<br><br>Inicie esse módulo em uma nova guia clicando no botão abaixo e, em seguida, siga este guia."
+>abstract="Vamos explorar como criar um esquema reutilizável, chamado de modelo de fragmento de conteúdo, para o seu conteúdo no Adobe Experience Manager as a Cloud Service. Assista ao vídeo para entender por que essa etapa é importante. <br><br>Neste módulo de aprendizagem, você usará um site de viagem como exemplo e criará um modelo que representa uma viagem.<br><br>Inicie esse módulo em uma nova guia clicando no botão abaixo e, em seguida, siga este guia."
 >additional-url="https://video.tv.adobe.com/v/3413261?captions=por_br" text="Vídeo de introdução à estrutura de conteúdo"
 
 >[!CONTEXTUALHELP]

@@ -5,7 +5,7 @@ exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1813'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 6%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_precopy"
 >title="Lidar com grandes repositórios de conteúdo"
->abstract="Para acelerar significativamente as fases de extração e assimilação da atividade de transferência de conteúdo para mover o conteúdo para o AEM as a Cloud Service, a Ferramenta de transferência de conteúdo (CTT) pode usar o AzCopy como uma etapa opcional de pré-cópia. Depois que essa etapa prévia for configurada, na fase de extração, o AzCopy copiará blobs do Amazon S3 ou do Armazenamento de blobs do Azure para o armazenamento de blobs do conjunto de migração. Na fase de ingestão, o AzCopy copia os blobs do armazenamento de blobs do conjunto de migração para o armazenamento de blobs do AEM as a Cloud Service de destino."
+>abstract="Para acelerar significativamente as fases de extração e assimilação da atividade de transferência de conteúdo e mover conteúdo para o AEM as a Cloud Service, a Ferramenta de Transferência de Conteúdo (CTT) pode usar o AzCopy como uma etapa opcional de pré-cópia. Depois que essa etapa prévia for configurada, na fase de extração, o AzCopy copiará blobs do Amazon S3 ou do Armazenamento de blobs do Azure para o armazenamento de blobs do conjunto de migração. Na fase de ingestão, o AzCopy copia os blobs do armazenamento de blobs do conjunto de migração para o armazenamento de blobs do AEM as a Cloud Service de destino."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html#setting-up-pre-copy-step" text="Introdução ao AzCopy como etapa de pré-cópia"
 
 A cópia de muitos blobs com a Ferramenta de transferência de conteúdo (CTT) pode levar vários dias.
