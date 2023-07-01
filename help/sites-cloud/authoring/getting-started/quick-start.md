@@ -2,10 +2,10 @@
 title: Guia de início rápido para a criação de páginas
 description: Um guia rápido de alto nível para começar a criar conteúdo de página
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1572'
-ht-degree: 64%
+source-wordcount: '1569'
+ht-degree: 62%
 
 ---
 
@@ -57,7 +57,7 @@ Antes de começar o guia de início rápido, veja uma pequena coleção de dicas
 
 Há vários aspectos para localizar uma página; você pode navegar e/ou pesquisar:
 
-1. Abra o console **Sites** (usando a opção **Sites** na [Navegação global](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) - isso é acionado (menu suspenso) ao selecionar o link do Adobe Experience Manager (parte superior esquerda).
+1. Abra o **Sites** console (usando o **Sites** opção no [Navegação global](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) - é acionado (lista suspensa) ao selecionar o link do Adobe Experience Manager (parte superior esquerda).
 
 1. Navegue para baixo na árvore, tocando/clicando na página apropriada. A forma como os recursos da página são apresentados depende da exibição usada ([Cartão, Lista ou Coluna](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)):
 
@@ -270,7 +270,7 @@ Todas essas ações podem ser acionadas por:
 [Bloquear uma página](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page) impede que outros autores trabalhem nela enquanto você estiver trabalhando. O ícone/botão Bloquear (e Desbloquear) pode ser encontrado:
 
 * A barra de ferramenta quando a sua [página é selecionada](#selecting-your-page-for-further-action).
-* O [menu suspenso Informações da página](#editing-the-page-properties) ao editar uma página.
+* A variável [Menu suspenso Informações da página](#editing-the-page-properties) ao editar uma página.
 * A barra de ferramentas da página ao editar uma página (quando a página estiver bloqueada)
 
 Por exemplo, o ícone de bloqueio tem a seguinte aparência:

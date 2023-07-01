@@ -1,17 +1,17 @@
 ---
-title: Referência da API Javascript do ContextHub
-description: A API Javascript do ContextHub estará disponível para seus scripts quando o componente ContextHub for adicionado à página
+title: Referência da API JavaScript do ContextHub
+description: A API JavaScript do ContextHub estará disponível para seus scripts quando o componente ContextHub for adicionado à página
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '4620'
 ht-degree: 2%
 
 ---
 
-# Referência da API Javascript do ContextHub {#contexthub-javascript-api-reference}
+# Referência da API JavaScript do ContextHub {#contexthub-javascript-api-reference}
 
-A API Javascript do ContextHub estará disponível para seus scripts quando a variável [O componente ContextHub foi adicionado à página](adding-contexthub.md).
+A API JavaScript do ContextHub está disponível para seus scripts quando a variável [O componente ContextHub foi adicionado à página](adding-contexthub.md).
 
 ## Constantes do ContextHub {#contexthub-constants}
 
@@ -62,7 +62,7 @@ A tabela a seguir lista os nomes dos eventos que ocorrem para a interface do usu
 | `ContextHub.Constants.EVENT_UI_INITIALIZED` | Acionado quando o contêiner da interface do usuário é inicializado | `ui-initialized` |
 | `ContextHub.Constants.ACTIVE_UI_MODE` | Indica o modo da interface do usuário ativa | `/_/active-ui-mode` |
 
-## Referência da API Javascript do ContextHub {#contexthub-javascript-api-reference-2}
+## Referência da API JavaScript do ContextHub {#contexthub-javascript-api-reference-2}
 
 O objeto ContextHub fornece acesso a todos os armazenamentos.
 
@@ -441,7 +441,7 @@ inicializa o `ContextHub.Store.JSONPStore` objeto.
 * **`config`:** (Objeto) Um objeto que contém a propriedade de serviço. O objeto JSONPStore usa as propriedades do `service` objeto para construir o URL do serviço JSONP:
    * `eventDeferring`: 32.
    * `eventing`: o objeto ContextHub.Utils.Eventing para esse armazenamento. O valor padrão é o `ContextHub.eventing` objeto.
-   * `persistence`: o objeto ContextHub.Utils.Persistence desse armazenamento. Por padrão, a persistência de memória é usada (objeto Javascript).
+   * `persistence`: o objeto ContextHub.Utils.Persistence desse armazenamento. Por padrão, a persistência de memória é usada (objeto JavaScript).
    * `service`: (Objeto)
       * `host`: (String) O nome ou endereço IP do servidor.
       * `jsonp`: (Booleano) Um valor true indica que o serviço é um serviço JSONP; caso contrário, false. Quando verdadeiro, a variável `{callback: "ContextHub.Callbacks.*Object.name*}`objeto é adicionado a `service.params`.
@@ -489,7 +489,7 @@ Resolve o parâmetro fornecido.
 
 ## ContextHub.Store.SessionStore {#contexthub-store-sessionstore}
 
-`ContextHub.Store.SessionStore` estende [ContextHub.Store.Core](#contexthub-store-core) então ele herda todas as funções dessa classe. Os dados neste armazenamento são mantidos usando a persistência na memória (objeto Javascript).
+`ContextHub.Store.SessionStore` estende [ContextHub.Store.Core](#contexthub-store-core) então ele herda todas as funções dessa classe. Os dados neste armazenamento são mantidos usando a persistência na memória (objeto JavaScript).
 
 ## ContextHub.UI {#contexthub-ui}
 
@@ -773,7 +773,7 @@ Analisa um valor de string como JSON e o converte em um objeto javascript.
 
 ##### Devoluções {#returns-parse}
 
-Um objeto Javascript.
+Um objeto JavaScript.
 
 ##### Exemplo {#example-parse}
 
@@ -795,7 +795,7 @@ Object {
 
 #### stringify(dados) {#stringify-data}
 
-Serializa valores e objetos Javascript em valores de string do formato JSON.
+Serializa valores e objetos JavaScript em valores de string do formato JSON.
 
 ##### Parâmetros {#parameters-stringify}
 
@@ -869,7 +869,7 @@ O valor que corresponde à chave. Quando a chave tem chaves filhas, essa funçã
 
 ##### Exemplo {#example-getitem-2}
 
-Considere o seguinte objeto Javascript:
+Considere o seguinte objeto JavaScript:
 
 ```javascript
 myObject {
@@ -1045,7 +1045,7 @@ Uma cópia do `tree` objeto que inclui o `key`/ `value` emparelhar.
 
 ##### Exemplo {#example-setitem-2}
 
-Considere o seguinte código Javascript:
+Considere o seguinte código JavaScript:
 
 ```javascript
 var myObject = {

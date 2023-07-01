@@ -2,9 +2,9 @@
 title: Diagnósticos do ContextHub
 description: O ContextHub fornece uma página de diagnóstico onde você pode ter uma visão geral da estrutura do ContextHub
 exl-id: c8d4e160-ea02-49f3-9e31-119445ef5a68
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '438'
 ht-degree: 1%
 
 ---
@@ -52,8 +52,8 @@ A seção Clientlibs lista todas as [pastas da biblioteca cliente](/help/impleme
 A seção URLs contém links para recursos do ContextHub:
 
 * **Editor de configuração:** Abre a [Página Configuração do ContextHub](configuring-contexthub.md) onde você pode configurar lojas, modos de interface e módulos de interface do usuário.
-* **Configuração de módulos do ContextHub:** Abre a `/etc/cloudsettings/default/contexthub.config.kernel.js` arquivo, que contém a representação do objeto JavaScript das configurações de armazenamento do ContextHub.
-* **Configuração da interface do ContextHub:** Abre a `/etc/cloudsettings/default/contexthub.config.ui.js` arquivo, que contém a representação do objeto Javascript das configurações de modo da interface do usuário do ContextHub.
+* **Configuração de módulos do ContextHub:** Abre a `/etc/cloudsettings/default/contexthub.config.kernel.js` que contém a representação do objeto JavaScript das configurações de armazenamento do ContextHub.
+* **Configuração da interface do ContextHub:** Abre a `/etc/cloudsettings/default/contexthub.config.ui.js` arquivo, que contém a representação do objeto JavaScript das configurações de modo da interface do usuário do ContextHub.
 * **kernel.js:** Abre a `/etc/cloudsettings/default/contexthub.kernel.js` arquivo, que contém o código-fonte das bibliotecas de clientes que implementam a estrutura do ContextHub, o mecanismo de segmento e os tipos de armazenamento.
 * **ui.js:** Abre a `/etc/cloudsettings/default/contexthub.ui.js` arquivo, que contém o código-fonte das bibliotecas de clientes que implementam os tipos de módulo da interface e da interface do usuário do ContextHub.
 * **style.css:** Abre a `/etc/cloudsettings/default/contexthub.styles.css` arquivo, que contém os estilos CSS para a interface do usuário do ContextHub e os módulos de interface do usuário.

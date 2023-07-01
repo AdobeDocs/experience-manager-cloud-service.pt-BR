@@ -2,9 +2,9 @@
 title: Edição de inicializações
 description: Depois de criar uma inicialização para sua página (ou conjunto de páginas), você pode editar o conteúdo na cópia de inicialização da(s) página(s).
 exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '553'
 ht-degree: 52%
 
 ---
@@ -72,7 +72,7 @@ A qualquer momento, você pode adicionar ou remover páginas ao/do intervalo de 
 
 >[!NOTE]
 >
->Para adicionar páginas a um lançamento, elas devem estar abaixo de uma raiz de idioma comum, ou seja, em um único site.
+>Para adicionar páginas a uma inicialização, elas devem estar abaixo de uma raiz de idioma comum, ou seja, em um único site.
 
 ## Editar uma configuração de inicialização {#editing-a-launch-configuration}
 

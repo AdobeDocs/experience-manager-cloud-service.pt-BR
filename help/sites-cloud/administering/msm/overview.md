@@ -4,9 +4,9 @@ description: 'Saiba mais sobre como reutilizar conteúdo com recursos avançados
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '2705'
+source-wordcount: '2706'
 ht-degree: 95%
 
 ---
@@ -155,7 +155,7 @@ Como introdução, a tabela a seguir fornece uma visão geral dos principais ter
 | Origem | As páginas originais usadas como base para Live Copies | Sinônimo de Blueprints e/ou páginas do Blueprint |
 | Live Copy  | A cópia (do original) mantida pelas ações de sincronização, conforme definido pelas configurações de implantação |  |
 | Configuração da Live Copy | Definição dos detalhes de configuração de uma Live Copy |  |
-| Relacionamento dinâmico | Definição efetiva da herança para um determinado recurso, ou seja, a(s) conexão(ões) entre a origem e as Live Copies | Garante que as alterações no conteúdo original possam ser sincronizadas com a Live Copy |
+| Relacionamento dinâmico | Definição efetiva da herança para um determinado recurso, ou seja, as conexões entre a origem e as Live Copies | Garante que as alterações no conteúdo original possam ser sincronizadas com a Live Copy |
 | Blueprint | Sinônimo de Origem | Pode ser definido por uma configuração do blueprint |
 | Configuração do blueprint | Configuração predefinida especificando um caminho de origem | Quando uma página do blueprint é referenciada em uma configuração do blueprint, o comando Implantação fica disponível |
 | Capítulo | As seções do blueprint a serem incluídas na Live Copy | Geralmente, essas são subpáginas da raiz |

@@ -2,10 +2,10 @@
 title: Ambiente e ferramentas de criação
 description: O ambiente de criação do AEM fornece vários mecanismos para organização e edição de conteúdo
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '2153'
-ht-degree: 56%
+ht-degree: 54%
 
 ---
 
@@ -85,7 +85,7 @@ A aparência e o manuseio real dependem do tipo de dispositivo usado:
   Na barra de ferramentas superior, no navegador **Componentes**, é possível:
 
    * Filtrar componentes por nome.
-   * Limitar a exibição para um grupo específico usando a seleção suspensa.
+   * Limite a exibição para um grupo específico usando a seleção suspensa.
 
   Para obter uma descrição mais detalhada do componente, clique ou toque no ícone de informações ao lado do componente no navegador **Componentes** (se disponível). Por exemplo, para o **Fragmento de conteúdo**:
 
@@ -152,7 +152,7 @@ A aparência e o manuseio real dependem do tipo de dispositivo usado:
 
 >[!NOTE]
 >
->Um dispositivo móvel é detectado quando a largura é menor do que 1024px; ou seja, também está em uma janela de desktop pequena.
+>Um dispositivo móvel é detectado quando a largura é menor que 1024px; ou seja, também está em uma janela de desktop pequena.
 
 Se você precisar fazer uma alteração rápida em um ativo, pode iniciar o [editor de ativos](/help/assets/manage-digital-assets.md) diretamente do navegador de ativos, clicando no ícone de edição mostrado ao lado do nome do ativo.
 

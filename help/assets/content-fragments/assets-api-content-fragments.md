@@ -3,9 +3,9 @@ title: Suporte a fragmentos de conteúdo do Adobe Experience Manager as a Cloud 
 description: Saiba mais sobre o suporte a Fragmentos de conteúdo na API HTTP do Assets, uma parte importante do recurso de entrega headless AEM.
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1783'
+source-wordcount: '1785'
 ht-degree: 18%
 
 ---
@@ -74,7 +74,6 @@ Por exemplo, para acessar `/content/dam/wknd/en/adventures/cycling-tuscany`, sol
 >
 >* `/api/assets` **não** precisa da utilização do seletor `.model`.
 >* `/content/path/to/page` **precisa** da utilização do seletor `.model`.
-
 
 O método HTTP determina a operação a ser executada:
 
@@ -154,7 +153,6 @@ Se a API REST do Assets for usada em um ambiente sem requisitos de autenticaçã
 >* [Vídeo - Desenvolvimento do CORS com o AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html?lang=pt-BR)
 >
 
-
 Em ambientes com requisitos de autenticação específicos, o OAuth é recomendado.
 
 ## Recursos disponíveis {#available-features}
@@ -230,7 +228,7 @@ Fragmentos de conteúdo:
 * Não exponha dados binários.
 * Estão completamente contidos na saída JSON (dentro do `properties` propriedade).
 
-* Também são considerados atômicos, ou seja, os elementos e as variações são expostos como parte das propriedades do fragmento e não como links ou entidades filhas. Isso permite acesso eficiente à carga útil de um fragmento.
+* Também são considerados atômicos, ou seja, os elementos e as variações são expostos como parte das propriedades do fragmento e não como links ou entidades secundárias. Isso permite acesso eficiente à carga útil de um fragmento.
 
 #### Modelos de conteúdo e fragmentos de conteúdo {#content-models-and-content-fragments}
 
@@ -275,68 +273,71 @@ Os seguintes códigos de status podem ser vistos nas circunstâncias relevantes:
 
 * **200** (OK)
 
-   Retornado quando:
+  Retornado quando:
 
    * solicitação de um fragmento de conteúdo via `GET`
    * atualização bem-sucedida de um fragmento de conteúdo via `PUT`
 
 * **201** (Criado)
 
-   Retornado quando:
+  Retornado quando:
 
    * criação de um fragmento de conteúdo com sucesso via `POST`
 
 * **404** (Não encontrado)
 
-   Retornado quando:
+  Retornado quando:
 
    * o fragmento de conteúdo solicitado não existe
 
 * **500** (Erro interno do servidor)
 
-   >[!NOTE]
-   >
-   >Esse erro é retornado:
-   >
-   >* quando ocorreu um erro que não pode ser identificado com um código específico
-   >* quando a carga fornecida não era válida
+  >[!NOTE]
+  >
+  >Esse erro é retornado:
+  >
+  >* quando ocorreu um erro que não pode ser identificado com um código específico
+  >* quando a carga fornecida não era válida
 
-
-   A seguir, há uma lista de cenários comuns em que esse status de erro é retornado, juntamente com a mensagem de erro (monospace) gerada:
+  A seguir, há uma lista de cenários comuns em que esse status de erro é retornado, juntamente com a mensagem de erro (monospace) gerada:
 
    * A pasta primária não existe (ao criar um fragmento de conteúdo via `POST`)
    * Nenhum modelo de fragmento de conteúdo foi fornecido (cq:model está ausente), não pode ser lido (devido a um caminho inválido ou um problema de permissão) ou não há um modelo de fragmento válido:
 
       * `No content fragment model specified`
       * `Cannot create a resource of given model '/foo/bar/qux'`
+
    * Não foi possível criar o fragmento de conteúdo (possivelmente um problema de permissão):
 
       * `Could not create content fragment`
+
    * Não foi possível atualizar o título e/ou a descrição:
 
       * `Could not set value on content fragment`
+
    * Não foi possível definir os metadados:
 
       * `Could not set metadata on content fragment`
+
    * O elemento de conteúdo não pôde ser encontrado ou atualizado
 
       * `Could not update content element`
       * `Could not update fragment data of element`
 
-   As mensagens de erro detalhadas geralmente são retornadas da seguinte maneira:
+  As mensagens de erro detalhadas geralmente são retornadas da seguinte maneira:
 
-   ```xml
-   {
-     "class": "core/response",
-     "properties": {
-       "path": "/api/assets/foo/bar/qux",
-       "location": "/api/assets/foo/bar/qux.json",
-       "parentLocation": "/api/assets/foo/bar.json",
-       "status.code": 500,
-       "status.message": "...{error message}.."
-     }
-   }
-   ```
+  ```xml
+  {
+    "class": "core/response",
+    "properties": {
+      "path": "/api/assets/foo/bar/qux",
+      "location": "/api/assets/foo/bar/qux.json",
+      "parentLocation": "/api/assets/foo/bar.json",
+      "status.code": 500,
+      "status.message": "...{error message}.."
+    }
+  }
+  ```
 
 ## Referência da API  {#api-reference}
 

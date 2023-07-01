@@ -2,7 +2,7 @@
 title: Criar e usar temas para estilizar um Formulário adaptável
 description: Você pode usar temas para estilizar e fornecer uma identidade visual a um formulário adaptável. Você pode compartilhar um tema em qualquer número do Adaptive Forms.
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
-source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '5499'
 ht-degree: 1%
@@ -50,7 +50,7 @@ Temas criados em uma instância Cloud Service:
 
 * Antes de carregar um tema criado em [!DNL Experience Manager Forms] 6.5 ou versões anteriores para uma instância do Cloud Service, verifique se o local da biblioteca do cliente está definido como `etc/clientlibs/fd/themes`. Se a biblioteca do cliente não existir no `etc` pasta, atualize manualmente o local para `etc/clientlibs/fd/themes`.  Você pode fazer a alteração em seu [!DNL Experience Manager Forms] Instância do 6.5 ou das versões anteriores. Depois de definir a localização da biblioteca do cliente, um administrador pode fazer upload de temas para a instância do Cloud Service ou usar a ferramenta Transferência de conteúdo para migrar os temas das instâncias da versão 6.5 ou anterior para a instância do Cloud Service.
 
-   Altere também o nome da categoria. Se o nome não for alterado, um erro `theme with same category name exists` pode ocorrer. Quando você altera o nome da categoria, ele não afeta o Forms adaptável que usa o tema.
+  Altere também o nome da categoria. Se o nome não for alterado, um erro `theme with same category name exists` pode ocorrer. Quando você altera o nome da categoria, ele não afeta o Forms adaptável que usa o tema.
 
 ### Download de um tema {#downloading-a-theme}
 
@@ -205,15 +205,15 @@ O Editor de temas é dividido em dois painéis:
 
    * **Seletor:** Mostra o componente selecionado para estilo e suas propriedades que podem ser estilizadas. O seletor representa todos os componentes de um tipo. Se você selecionar um componente Caixa de texto em um tema para estilo, todas as caixas de texto no formulário <!-- or interactive communication --> herdar o estilo. Os seletores permitem selecionar um componente genérico ou um componente específico para o estilo. Por exemplo, um componente de campo é um componente genérico e uma caixa de texto é um componente específico.
 
-      **Componente genérico de estilo:**
+     **Componente genérico de estilo:**
 Um campo pode ser um campo de caixa numérica, como idade, ou um campo de caixa de texto, como endereço.
 Ao estilizar um campo, todos os campos, como idade, nome, endereço, são estilizados.
 
-      **Componente específico do estilo**: um componente específico afeta objetos da categoria específica. Ao estilizar o componente caixa numérica no tema, somente o objeto caixa numérica em herdará o estilo.
+     **Componente específico do estilo**: um componente específico afeta objetos da categoria específica. Ao estilizar o componente caixa numérica no tema, somente o objeto caixa numérica em herdará o estilo.
 
-      Por exemplo, um campo de caixa de texto como endereço, que é maior, e um campo de caixa numérica como idade, que é menor. Você pode selecionar um campo de caixa numérica, reduzir seu comprimento e aplicar ao formulário. A largura de todos os campos de caixa numérica é reduzida no formulário.
+     Por exemplo, um campo de caixa de texto como endereço, que é maior, e um campo de caixa numérica como idade, que é menor. Você pode selecionar um campo de caixa numérica, reduzir seu comprimento e aplicar ao formulário. A largura de todos os campos de caixa numérica é reduzida no formulário.
 
-      Quando você personaliza todos os componentes do campo com uma cor de plano de fundo específica, todos os campos, como idade, nome e endereço, herdam a cor do plano de fundo. Quando você seleciona uma caixa numérica, como idade, e reduz sua largura, a largura de todas as caixas numéricas, como idade, número de pessoas em uma família é reduzida. A largura das caixas de texto não é alterada.
+     Quando você personaliza todos os componentes do campo com uma cor de plano de fundo específica, todos os campos, como idade, nome e endereço, herdam a cor do plano de fundo. Quando você seleciona uma caixa numérica, como idade, e reduz sua largura, a largura de todas as caixas numéricas, como idade, número de pessoas em uma família é reduzida. A largura das caixas de texto não é alterada.
 
    * **Estado:** Permite personalizar estilos de um objeto em um estado específico. Por exemplo, você pode especificar a aparência de um objeto quando ele estiver em estado padrão, de foco, desativado, ao passar o mouse ou erro.
    * **Categorias de propriedade:** As propriedades de estilo são divididas em várias categorias. Por exemplo, Dimension e Posição, Texto, Plano de fundo, Borda e Efeitos. Em cada categoria, você fornece informações de estilo. Por exemplo, em Plano de fundo, você pode fornecer Cor do plano de fundo e Imagem e gradiente.
@@ -221,9 +221,10 @@ Ao estilizar um campo, todos os campos, como idade, nome, endereço, são estili
    * **Avançado:** Permite adicionar CSS personalizado a um objeto, o que substitui as propriedades que os controles visuais definem se há uma sobreposição.
 
    * **Exibir CSS**: permite exibir o CSS do componente selecionado.
-   Além disso, na barra lateral, uma seta está presente na parte inferior. Ao clicar na seta, você terá mais duas opções: **Simular o sucesso** e **Simular Erro.** Essas opções, juntamente com as descritas acima, são discutidas em detalhes [abaixo](themes.md#using-rail).
 
-[ ![Editor de tema](assets/themes.png)](assets/themes-1.png) **A.** Barra lateral **B.** Tela
+  Além disso, na barra lateral, uma seta está presente na parte inferior. Ao clicar na seta, você terá mais duas opções: **Simular o sucesso** e **Simular Erro.** Essas opções, juntamente com as descritas acima, são discutidas em detalhes [abaixo](themes.md#using-rail).
+
+[![Editor de tema](assets/themes.png)](assets/themes-1.png) **A.** Barra lateral **B.** Tela
 
 ### Componentes de estilo {#styling-components}
 
@@ -620,7 +621,7 @@ Você pode ver o CSS gerado usando as seguintes opções:
 
 * **Evitar ativos de outro tema**
 
-   Ao editar um tema, você pode procurar e adicionar ativos (como imagens) de outros temas. Por exemplo, você está editando o fundo de uma página. Por exemplo, ao selecionar **[!UICONTROL Página]** ![botão editar](assets/edit-button.png)> **[!UICONTROL Histórico]** > **[!UICONTROL Adicionar]** > **[!UICONTROL Imagem]**, você verá uma caixa de diálogo que permite navegar e adicionar imagens em outro tema.
+  Ao editar um tema, você pode procurar e adicionar ativos (como imagens) de outros temas. Por exemplo, você está editando o fundo de uma página. Por exemplo, ao selecionar **[!UICONTROL Página]** ![botão editar](assets/edit-button.png)> **[!UICONTROL Histórico]** > **[!UICONTROL Adicionar]** > **[!UICONTROL Imagem]**, você verá uma caixa de diálogo que permite navegar e adicionar imagens em outro tema.
 
 * Você pode enfrentar problemas com seu tema atual se um ativo for adicionado de outro tema e o outro tema for movido ou excluído. É recomendável evitar a navegação e adicionar ativos de outros temas.
 
@@ -654,9 +655,9 @@ Você pode ver o CSS gerado usando as seguintes opções:
 
 * **Alteração da largura do layout do painel de contêiner**
 
-   Não é recomendável alterar a largura do layout do painel de contêiner. Quando você especifica a largura de um painel de contêiner, ele se torna estático e não se adapta a exibições diferentes.
+  Não é recomendável alterar a largura do layout do painel de contêiner. Quando você especifica a largura de um painel de contêiner, ele se torna estático e não se adapta a exibições diferentes.
 
 * **Quando usar o editor de formulários ou de temas para trabalhar com cabeçalho e rodapé**
 
-   Use o editor de temas se desejar estilizar o cabeçalho e o rodapé usando opções de estilo, como estilo da fonte, plano de fundo e transparência.
+  Use o editor de temas se desejar estilizar o cabeçalho e o rodapé usando opções de estilo, como estilo da fonte, plano de fundo e transparência.
 Se você quiser fornecer informações como uma imagem de logotipo, o nome da empresa no cabeçalho e informações de direitos autorais no rodapé, use as opções do editor de formulários.

@@ -2,9 +2,9 @@
 title: Criação de inicializações
 description: Você pode criar um lançamento para permitir a atualização de uma nova versão de páginas da Web existentes para ativação futura.
 exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1043'
 ht-degree: 59%
 
 ---
@@ -62,7 +62,7 @@ Você pode criar uma inicialização no console Sites ou Inicializações:
 
    >[!NOTE]
    >
-   >Para adicionar páginas e/ou ramificações a um lançamento, elas devem estar em um site; ou seja, abaixo de uma raiz de nível superior comum.
+   >Para adicionar páginas e/ou ramificações a um lançamento, elas devem estar em um site, ou seja, abaixo de uma raiz de nível superior comum.
    >
    >Se um site contiver raízes de idioma abaixo do nível superior, as páginas e ramificações para uma inicialização deverão estar abaixo de uma raiz de idioma comum.
 

@@ -2,10 +2,10 @@
 title: Fragmentos de experiência
 description: Use os Fragmentos de experiência do Adobe Experience Manager as a Cloud Service para tornar suas experiências reutilizáveis e flexíveis.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '2052'
-ht-degree: 79%
+source-wordcount: '2046'
+ht-degree: 76%
 
 ---
 
@@ -37,7 +37,7 @@ Use os Fragmentos de experiência:
 Sem Fragmentos de experiência, o autor precisaria copiar e colar esse fragmento. Criar e manter essa experiências de copiar/colar é um processo demorado e pode causar erros feitos pelo usuário.
 Os fragmentos de experiência eliminam a necessidade de copiar/colar.
 * Para dar suporte ao caso de uso de CMS sem periféricos.
-Os autores desejam usar o AEM somente para criação, não para entrega ao cliente. Um ponto de contato ou sistema de terceiros consumiria essa experiência e a entregaria para o usuário final.
+Os autores desejam usar o AEM somente para criação, não para entrega ao cliente. Um sistema/ponto de contato de terceiros consumiria essa experiência e a entregaria ao usuário final.
 
 >[!NOTE]
 >
@@ -47,7 +47,7 @@ Os autores desejam usar o AEM somente para criação, não para entrega ao cli
 >
 >Fragmentos de experiência podem incluir conteúdo na forma de Fragmentos de conteúdo, mas não o contrário.
 >
->Para obter mais informações, consulte também [Entender sobre os fragmentos de conteúdo e fragmentos de experiência do AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=pt-BR).
+>Para obter mais informações, consulte [Compreensão de fragmentos de conteúdo e fragmentos de experiência no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=pt-BR).
 
 >[!NOTE]
 >
@@ -65,7 +65,7 @@ Fragmentos de experiência devem ser usados:
    * Experiências reutilizadas com conteúdo igual ou semelhante.
 * Ao usar o AEM como uma plataforma de entrega de conteúdo para terceiros.
    * Qualquer solução que deseje usar AEM como a plataforma de entrega de conteúdo.
-   * Ao incorporar conteúdo em pontos de contato de terceiros.
+   * Incorporação de conteúdo em pontos de contato de terceiros.
 * Se você tiver uma experiência com diferentes variações ou representações.
    * Variações específicas de canal ou contexto.
    * Experiências que fazem sentido agrupar; por exemplo, uma campanha com diferentes experiências entre canais.
@@ -145,7 +145,7 @@ Para criar e configurar uma pasta para os Fragmentos de experiência, recomenda-
 >
 >Não é recomendável alterar os **Modelos permitidos** usando esse método, pois os modelos especificados podem ser substituídos na atualização.
 >
->Use esta caixa de diálogo apenas para fins informativos.
+>Use esta caixa de diálogo somente para fins informativos.
 
 1. Acesse o console **Fragmentos de experiência** necessário.
 
@@ -422,7 +422,7 @@ Usando o seletor `.plain.` no URL, você poderá acessar a representação HTML 
 
 >[!NOTE]
 >
-Embora isso esteja disponível diretamente no navegador, [o principal objetivo é permitir que outros aplicativos (por exemplo, aplicativos Web de terceiros, implementações personalizadas de publicações de conteúdo para dispositivos móveis) acessem o conteúdo do Fragmento de experiência diretamente, usando apenas o URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
+Embora isso esteja disponível diretamente no navegador, [o objetivo principal é permitir que outros aplicativos (por exemplo, aplicativos web de terceiros, implementações personalizadas de publicações de conteúdo para dispositivos móveis) acessem o conteúdo do Fragmento de experiência diretamente, usando apenas o URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
 
 ## Publicação de fragmentos de experiência {#publishing-experience-fragments}
 

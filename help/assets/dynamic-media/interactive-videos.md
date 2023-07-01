@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Interactive Videos
 role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '5966'
 ht-degree: 3%
@@ -242,6 +242,7 @@ Consulte [Criar uma predefinição do visualizador](/help/assets/dynamic-media/m
 Se você já tiver carregado os ativos de vídeo e miniatura, prossiga para [Adicionar interatividade ao vídeo](#adding-interactivity-to-your-video).
 
 >[!NOTE]
+>
 O formato de vídeo MXF ainda não é compatível com o uso de Vídeos interativos no Dynamic Media.
 
 Se você carregou os vídeos ou imagens incorretos, ou se deseja excluir os vídeos ou imagens carregados que não são mais necessários, consulte [Excluir ativos](/help/assets/manage-digital-assets.md#delete-assets).
@@ -264,9 +265,11 @@ Depois de adicionar segmentos de linha do tempo, você adiciona imagens em minia
 Consulte [Fragmentos de experiência](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
 
 >[!NOTE]
+>
 As ferramentas de compartilhamento de redes sociais em Vídeo interativo não são compatíveis quando você incorpora o visualizador em um Fragmento de experiência. Em vez disso, você pode usar ou criar predefinições do visualizador que não tenham ferramentas de compartilhamento de redes sociais. Essas predefinições do visualizador permitem incorporá-lo com sucesso aos Fragmentos de experiência.
 
 >[!NOTE]
+>
 O método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, principalmente links para páginas do Experience Manager Sites.
 
 As opções Desfazer e Refazer, próximas ao canto superior direito da página, são compatíveis durante a sessão de criação/edição atual.
@@ -288,11 +291,11 @@ Depois de salvar o vídeo interativo, ele é aberto imediatamente na Pré-visual
 
    * Para começar a reproduzir o vídeo, selecione a **[!UICONTROL Reproduzir]** botão. Quando um produto, serviço ou detalhe específico que você deseja destacar aparecer, selecione **[!UICONTROL Adicionar segmento]** na barra de ferramentas. Repita até chegar ao fim do vídeo.
 
-      Para cada segmento de tempo adicionado, é possível atribuir uma ou mais imagens em miniatura a ele. Em seguida, é possível vincular essas miniaturas às páginas de produto do Quickview para os clientes comprarem ou às páginas da Web para obter mais informações.
+     Para cada segmento de tempo adicionado, é possível atribuir uma ou mais imagens em miniatura a ele. Em seguida, é possível vincular essas miniaturas às páginas de produto do Quickview para os clientes comprarem ou às páginas da Web para obter mais informações.
 
    * Para começar a reproduzir o vídeo, selecione a **[!UICONTROL Reproduzir]** botão. Quando um produto, serviço ou detalhe específico que você deseja destacar aparecer, selecione **[!UICONTROL Pausar]**. Selecionar **[!UICONTROL Adicionar segmento]**.
 
-      Continue a reproduzir e pausar o vídeo em pontos ao longo da linha do tempo em que deseja adicionar um segmento até chegar ao fim do vídeo.
+     Continue a reproduzir e pausar o vídeo em pontos ao longo da linha do tempo em que deseja adicionar um segmento até chegar ao fim do vídeo.
 
 1. (Opcional) Arraste a barra no **[!UICONTROL Controle Deslizante de Escala da Linha do Tempo]** esquerda para aumentar ou diminuir o zoom. Essa ação permite controlar quantos detalhes você vê dos segmentos adicionados.
 
@@ -355,9 +358,9 @@ Depois de salvar o vídeo interativo, ele é aberto imediatamente na Pré-visual
 
    * Para ajustar a hora inicial e a hora final de um segmento.
 
-      Selecione um segmento e arraste o oval azul à esquerda ou à direita para ajustar a hora inicial ou final, respectivamente. O quadro do vídeo exibido se move para o momento apropriado no vídeo, com base nos ajustes. O movimento do segmento da linha do tempo é restrito com base em quaisquer segmentos adjacentes na linha do tempo. O tempo mínimo de segmento permitido é de um segundo.
+     Selecione um segmento e arraste o oval azul à esquerda ou à direita para ajustar a hora inicial ou final, respectivamente. O quadro do vídeo exibido se move para o momento apropriado no vídeo, com base nos ajustes. O movimento do segmento da linha do tempo é restrito com base em quaisquer segmentos adjacentes na linha do tempo. O tempo mínimo de segmento permitido é de um segundo.
 
-      Use os seguintes atalhos de navegação para verificar e ajustar rapidamente os segmentos de vídeo:
+     Use os seguintes atalhos de navegação para verificar e ajustar rapidamente os segmentos de vídeo:
 
       * Para buscar o vídeo diretamente no início desse segmento, selecione a oval azul à esquerda.
       * Para buscar o vídeo diretamente no final desse segmento, selecione o oval azul à direita.
@@ -369,10 +372,9 @@ Depois de salvar o vídeo interativo, ele é aberto imediatamente na Pré-visual
 
    * Para excluir um segmento
 
-      Selecione o último segmento na linha do tempo e, na barra de ferramentas, selecione **[!UICONTROL Excluir segmento]**. Se dois ou mais segmentos forem selecionados, o recurso Excluir segmento ficará desativado.
+     Selecione o último segmento na linha do tempo e, na barra de ferramentas, selecione **[!UICONTROL Excluir segmento]**. Se dois ou mais segmentos forem selecionados, o recurso Excluir segmento ficará desativado.
 
-      Você só pode excluir o último segmento. Por exemplo, se você deseja excluir todos os segmentos na linha do tempo, sempre é necessário selecionar o último e selecionar **[!UICONTROL Excluir segmento]**.
-
+     Você só pode excluir o último segmento. Por exemplo, se você deseja excluir todos os segmentos na linha do tempo, sempre é necessário selecionar o último e selecionar **[!UICONTROL Excluir segmento]**.
 
 1. Selecione um segmento de tempo ao qual você deseja associar uma ou mais imagens em miniatura.
 1. À direita do vídeo, selecione a **[!UICONTROL Conteúdo]** guia.
@@ -463,18 +465,20 @@ Depois de salvar o vídeo interativo, ele é aberto imediatamente na Pré-visual
 
    * **[!UICONTROL Mesclar segmento]** - É possível combinar dois segmentos adjacentes (com ou sem miniaturas de produto atribuídas a eles) em um segmento.
 
-      Na linha do tempo, selecione dois ou mais segmentos contíguos que você deseja mesclar em um. Não há alças de arrastar ovais azuis nos dois segmentos selecionados na imagem abaixo.
+     Na linha do tempo, selecione dois ou mais segmentos contíguos que você deseja mesclar em um. Não há alças de arrastar ovais azuis nos dois segmentos selecionados na imagem abaixo.
 
-      Selecionar **[!UICONTROL Mesclar segmento]** na barra de ferramentas.
+     Selecionar **[!UICONTROL Mesclar segmento]** na barra de ferramentas.
+
    ![chlimage_1-134](assets/chlimage_1-134.png)
 
    Mesclar dois segmentos de cinco segundos selecionados em um segmento de dez segundos.
 
    * **[!UICONTROL Dividir segmento]** - É possível dividir um único segmento em dois segmentos com tempo igual. Se houver miniaturas de produtos já atribuídas ao segmento, as miniaturas serão combinadas no segmento esquerdo.
 
-      Na linha do tempo, selecione um segmento que deseja dividir pela metade e selecione **[!UICONTROL Dividir segmento]** na barra de ferramentas.
+     Na linha do tempo, selecione um segmento que deseja dividir pela metade e selecione **[!UICONTROL Dividir segmento]** na barra de ferramentas.
 
-      Selecionar dois ou mais segmentos desativa o **[!UICONTROL Dividir segmento]** recurso.
+     Selecionar dois ou mais segmentos desativa o **[!UICONTROL Dividir segmento]** recurso.
+
    ![chlimage_1-135](assets/chlimage_1-135.png)
 
    Dividir um segmento de dez segundos selecionado em dois segmentos de cinco segundos cada.
@@ -488,6 +492,7 @@ Depois de salvar o vídeo interativo, ele é aberto imediatamente na Pré-visual
    Quando terminar, selecione **[!UICONTROL Salvar]**.
 
    >[!NOTE]
+   >
    Ao salvar o vídeo interativo, um arquivo associado é automaticamente salvo com ele. `.vtt` A variável `.vtt` o arquivo é salvo na `_VTT` pasta na raiz de **[!UICONTROL Assets]**. O arquivo e a pasta são necessários para que o vídeo interativo seja reproduzido corretamente no site. Sendo assim, não mova, edite ou exclua a pasta `_VTT` ou seu conteúdo.
 
 1. Publique o vídeo interativo. A publicação cria o código incorporado ou o URL que você eventualmente copia e cola nas experiências do site.
@@ -497,6 +502,7 @@ Depois de salvar o vídeo interativo, ele é aberto imediatamente na Pré-visual
    Consulte [Publicar ativos](publishing-dynamicmedia-assets.md).
 
    >[!NOTE]
+   >
    Para publicar um vídeo que pode ser comprado com as Visualizações rápidas, certifique-se de publicar separadamente cada um dos ativos de imagem relacionados ao vídeo na sua área de comércio.
 
    Depois de adicionar segmentos de linha do tempo e publicar o vídeo interativo, você está pronto para adicioná-lo à página de aterrissagem existente do site. Consulte [Integre um vídeo interativo ao seu site](#integrating-an-interactive-video-with-your-website).
@@ -522,7 +528,9 @@ Se você tiver adicionado interatividade com as Visualizações rápidas, use so
 O código incorporado copiado é definido para um ambiente responsivo, de modo que se ajuste automaticamente à área ocupada anteriormente pelo vídeo estático.
 
 >[!NOTE]
+>
 Nesse momento, se você tiver adicionado interatividade somente com páginas da Web com hiperlink, está concluído.
+>
 No entanto, se você adicionou qualquer interatividade para acionar uma Visualização rápida, as miniaturas ao lado do vídeo interativo serão somente para exibição; elas ainda não estão integradas às Visualizações rápidas existentes. Nesse caso, você deve integrar o vídeo interativo com as Exibições rápidas existentes no site.
 
 **Exemplo**
@@ -565,6 +573,7 @@ A integração é tão simples quanto remover o código de inserção do vídeo 
 ## Integrar um vídeo interativo a uma visualização rápida existente {#integrating-an-interactive-video-with-an-existing-quickview}
 
 >[!NOTE]
+>
 Essa tarefa só se aplica se você for um cliente independente do Experience Manager Assets.
 
 A última etapa desse processo é integrar seu vídeo interativo a uma implementação do Quickview existente usada em seu site. Não há solução para a integração que funcione para todos os casos. Cada implementação do Quickview é exclusiva. Dessa forma, é necessária uma abordagem específica que envolva a assistência de um profissional de TI de front-end.
@@ -622,7 +631,7 @@ O código incorporado retornado pelo Experience Manager já tem um manipulador d
      var sku=inData.sku; //SKU for product ID
     //To pass other parameter from the hotspot, you need to add custom parameter during the hotspot setup as parameterName=value
     loadQuickView(sku); //Replace this call with your quickview plugin
-    //Please refer to your quickviewer plugin for the quickview call
+    //See your quickviewer plugin for the quickview call
     },
 "initComplete":function() {
     //--- Attach quickview popup to viewer container so popup will work in fullscreen mode ---

@@ -2,10 +2,10 @@
 title: Fragmentos de conteúdo
 description: Os Fragmentos de conteúdo do Adobe Experience Manager as a Cloud Service permitem projetar, criar, selecionar e usar conteúdo independente da página
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1222'
-ht-degree: 92%
+source-wordcount: '1223'
+ht-degree: 86%
 
 ---
 
@@ -25,7 +25,7 @@ Juntamente com o exportador JSON atualizado, os fragmentos de conteúdo estrutur
 >
 >Fragmentos de experiência podem incluir conteúdo na forma de Fragmentos de conteúdo, mas não o contrário.
 >
->Para obter mais informações, consulte também [Entender sobre os fragmentos de conteúdo e fragmentos de experiência do AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=pt-BR).
+>Para obter mais informações, consulte [Compreensão de fragmentos de conteúdo e fragmentos de experiência no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=pt-BR).
 
 >[!CAUTION]
 >
@@ -115,7 +115,7 @@ Na caixa de diálogo de configuração apropriada, é possível selecionar os pa
 
 Quando um fragmento de conteúdo específico for adicionado à página, há um espaço reservado para **Arrastar os componentes aqui** entre cada parágrafo HTML (e na parte superior/inferior) do fragmento.
 
-Isso permite incluir um conteúdo [intermediário](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) adicional, isto é, entre o conteúdo do fragmento (em qualquer um dos pontos disponíveis), sem precisar alterar o fragmento raiz.
+Isso permite adicionar conteúdo extra [intermediário (ou seja, conteúdo intermediário)](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) o conteúdo do fragmento (em qualquer um dos pontos disponíveis), sem precisar alterar o fragmento raiz.
 
 Quanto ao conteúdo intermediário, é possível:
 
@@ -137,7 +137,7 @@ Quanto ao conteúdo intermediário, é possível:
 
 >[!CAUTION]
 >
->Depois de adicionar o conteúdo intermediário a um fragmento de conteúdo na página, a alteração da estrutura do fragmento de conteúdo subjacente (ou seja, no editor de fragmentos de conteúdo) pode causar resultados errôneos/inesperados.
+>Depois de adicionar o conteúdo intermediário a um fragmento de conteúdo na página, a alteração da estrutura do fragmento de conteúdo subjacente (ou seja, no editor de fragmentos de conteúdo) pode levar a resultados errôneos/inesperados.
 >
 >Quando isso ocorre, o conteúdo intermediário é mantido como está:
 >

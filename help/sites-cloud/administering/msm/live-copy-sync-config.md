@@ -4,7 +4,7 @@ description: Saiba mais sobre as poderosas opções de sincronização da Live C
 feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '2335'
 ht-degree: 87%
@@ -196,7 +196,7 @@ Observe que as páginas secundárias da página do blueprint herdam a configura�
 1. Use o console **Sites** para selecionar a página raiz do blueprint.
 1. Selecione **Propriedades** na barra de ferramentas.
 1. Abra a guia **Blueprint.**
-1. Selecione uma ou mais **configurações de implementação** usando o seletor suspenso.
+1. Selecione um ou mais **Configurações de implantação** usando o seletor suspenso.
 1. Mantenha suas atualizações com **Salvar**.
 
 ### Definir a configuração de implementação padrão do sistema {#setting-the-system-default-rollout-configuration}

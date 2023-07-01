@@ -4,10 +4,10 @@ description: Saiba como gerenciar e resolver conflitos de implementação do Mul
 feature: Multi Site Manager
 role: Admin
 exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 99%
+source-wordcount: '923'
+ht-degree: 96%
 
 ---
 
@@ -77,7 +77,7 @@ O AEM fornece:
 O manipulador de conflito padrão é o `ResourceNameRolloutConflictHandler`
 
 * Com esse manipulador, a página do blueprint recebe prioridade.
-* A classificação de serviço para esse manipulador é definida como baixa, ou seja, abaixo do valor padrão para a propriedade `service.ranking`, como se supõe que os manipuladores personalizados precisarão de uma classificação mais alta. No entanto, a classificação não é o mínimo absoluto para garantir flexibilidade quando necessária.
+* A classificação de serviço para esse manipulador é definida como baixa, ou seja, abaixo do valor padrão para `service.ranking` propriedade, pois se presume que os manipuladores personalizados precisarão de uma classificação mais alta. No entanto, a classificação não é o mínimo absoluto para garantir flexibilidade quando necessária.
 
 Esse manipulador de conflitos dá prioridade ao blueprint. Por exemplo, a página da Live Copy `/b` é movida dentro da ramificação da Live Copy para `/b_msm_moved`.
 

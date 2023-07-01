@@ -2,10 +2,10 @@
 title: Assistente de criação de projeto
 description: Saiba mais sobre o assistente de criação de projetos para ajudar você a configurar rapidamente seu projeto após criar seu programa de produção.
 exl-id: 03736ca7-1345-4faf-a61a-f9213ab5c89a
-source-git-commit: 93cb0ffa87f2338518c2a23de4e0a692031e1a71
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '316'
-ht-degree: 100%
+source-wordcount: '312'
+ht-degree: 96%
 
 ---
 
@@ -42,7 +42,7 @@ Uma vez concluída a criação do programa, o cartão **Adicionar ambiente** sub
 
 Agora, você tem um projeto AEM com base no arquétipo que foi adicionado ao seu repositório Git para servir como base para o desenvolvimento do seu próprio projeto. Em seguida, você pode criar seus ambientes, nos quais pode implantar o código do projeto.
 
-Consulte o documento [Gerenciamento de ambientes](/help/implementing/cloud-manager/manage-environments.md) para saber como adicionar ou gerenciar ambientes.
+Consulte [Gerenciamento de ambientes](/help/implementing/cloud-manager/manage-environments.md) para saber como adicionar ou gerenciar ambientes.
 
 >[!NOTE]
 >

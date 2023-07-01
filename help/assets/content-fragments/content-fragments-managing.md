@@ -2,10 +2,10 @@
 title: Gerenciamento de fragmentos de conteúdo (Ativos - Fragmentos de conteúdo)
 description: Saiba como usar o console de Ativos para gerenciar os fragmentos de conteúdo de AEM, a base do conteúdo headless.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1754'
-ht-degree: 76%
+source-wordcount: '1755'
+ht-degree: 71%
 
 ---
 
@@ -225,13 +225,13 @@ O editor tem várias opções:
 
   >[!CAUTION]
   >
-  >Além de simplesmente salvar suas alterações, as ações também atualizam quaisquer referências e garantem que o Dispatcher seja liberado conforme necessário. Essas alterações podem levar tempo para serem processadas. Devido a isso, pode haver um impacto no desempenho de um sistema grande/complexo/com bastante conteúdo.
+  >Além de simplesmente salvar suas alterações, as ações também atualizam quaisquer referências e garantem que o Dispatcher seja liberado conforme necessário. Essas alterações podem levar tempo para serem processadas. Devido a esse tempo, pode haver um impacto no desempenho de um sistema grande/complexo/com bastante conteúdo.
   >
-  >Lembre-se disso ao usar a opção **Salvar e fechar** e, logo em seguida, entrar novamente no editor de fragmentos para fazer mais alterações e salvá-las.
+  >Lembre-se desse processo ao usar **Salvar e fechar** em seguida, entre novamente no editor de fragmentos rapidamente para fazer e salvar mais alterações.
 
 * **Fechar**
 
-  Fechará o editor sem salvar as alterações mais recentes (ou seja, feitas desde o último **Salvamento**).
+  Fechará o editor sem salvar as alterações mais recentes (ou seja, feitas desde a última **Salvar**).
 
 Ao editar o fragmento de conteúdo, o AEM cria versões automaticamente para garantir que o conteúdo anterior possa ser restaurado se você cancelar as alterações (usando **Fechar** sem salvar):
 
@@ -262,7 +262,7 @@ Depois de criar o conteúdo Principal, é possível criar e gerenciar [Variaçõ
 
 ## Associar conteúdo ao fragmento {#associating-content-with-your-fragment}
 
-Você também pode [associar conteúdo](/help/assets/content-fragments/content-fragments-assoc-content.md) a um fragmento. Isso fornece uma conexão para que os ativos (por exemplo, imagens) possam ser usados (opcionalmente) com o fragmento quando ele é adicionado a uma página de conteúdo.
+Você também pode [associar conteúdo](/help/assets/content-fragments/content-fragments-assoc-content.md) a um fragmento. Isso fornece uma conexão para que os ativos (ou seja, imagens) possam ser usados (opcionalmente) com o fragmento quando ele é adicionado a uma página de conteúdo.
 
 ## Visualização e edição dos metadados (propriedades) do fragmento {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 

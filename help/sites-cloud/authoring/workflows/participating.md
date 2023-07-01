@@ -2,10 +2,10 @@
 title: Participar de fluxos de trabalho
 description: Os fluxos de trabalho normalmente incluem etapas que exigem que uma pessoa execute uma atividade em uma página ou ativo.
 exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1542'
-ht-degree: 40%
+source-wordcount: '1537'
+ht-degree: 36%
 
 ---
 
@@ -75,7 +75,7 @@ Use o procedimento a seguir para concluir o item de trabalho:
 1. Abra a **[Caixa de entrada do AEM](/help/sites-cloud/authoring/getting-started/inbox.md)**.
 1. Selecione o item do fluxo de trabalho que deseja executar a ação (toque/clique na miniatura).
 1. Selecione **Concluído** na barra de ferramentas.
-1. A caixa de diálogo **Item de trabalho concluído** será aberta. Selecione a **Próxima etapa** no seletor suspenso e adicione um **Comentário**, se necessário.
+1. A caixa de diálogo **Item de trabalho concluído** será aberta. Selecione o **Próxima etapa** no seletor suspenso e adicione um **Comentário** se necessário.
 1. Use **OK** para concluir a etapa (ou o botão **Cancelar** para cancelar a ação).
 
 #### Concluir uma etapa do participante - Editor de páginas {#completing-a-participant-step-page-editor}
@@ -84,7 +84,7 @@ Use o procedimento a seguir para concluir o item de trabalho:
 
 1. Abra o [página para edição](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
 1. Selecione **Concluído** na barra de status na parte superior.
-1. A caixa de diálogo **Item de trabalho concluído** será aberta. Selecione a **Próxima etapa** no seletor suspenso e adicione um **Comentário**, se necessário.
+1. A caixa de diálogo **Item de trabalho concluído** será aberta. Selecione o **Próxima etapa** no seletor suspenso e adicione um **Comentário** se necessário.
 1. Use **OK** para concluir a etapa (ou o botão **Cancelar** para cancelar a ação).
 
 #### Concluir uma etapa do participante - Linha do tempo {#completing-a-participant-step-timeline}
@@ -134,7 +134,7 @@ Use o procedimento a seguir para delegar um item de trabalho:
 1. Abra a **[Caixa de entrada do AEM](/help/sites-cloud/authoring/getting-started/inbox.md)**.
 1. Selecione o item do fluxo de trabalho que deseja executar a ação (toque/clique na miniatura).
 1. Selecione **Delegar** na barra de ferramentas.
-1. Uma caixa de diálogo será aberta. Especifique o **Usuário** no seletor suspenso (também pode ser um grupo) e adicione um **Comentário**, se necessário.
+1. Uma caixa de diálogo será aberta. Especifique a **Usuário** no seletor suspenso (também pode ser um grupo) e adicione um **Comentário** se necessário.
 1. Use **OK** para concluir a etapa (ou o botão **Cancelar** para cancelar a ação).
 
 #### Delegar uma etapa do participante - Editor de páginas {#delegating-a-participant-step-page-editor}
@@ -143,7 +143,7 @@ Use o procedimento a seguir para delegar um item de trabalho:
 
 1. Abra o [página para edição](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
 1. Selecione **Delegar** na barra de status na parte superior.
-1. Uma caixa de diálogo será aberta. Especifique o **Usuário** no seletor suspenso (também pode ser um grupo) e adicione um **Comentário**, se necessário.
+1. Uma caixa de diálogo será aberta. Especifique a **Usuário** no seletor suspenso (também pode ser um grupo) e adicione um **Comentário** se necessário.
 1. Use **OK** para concluir a etapa (ou o botão **Cancelar** para cancelar a ação).
 
 #### Delegar uma etapa do participante - Linha do tempo {#delegating-a-participant-step-timeline}

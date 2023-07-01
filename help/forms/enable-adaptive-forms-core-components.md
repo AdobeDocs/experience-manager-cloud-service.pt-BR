@@ -6,17 +6,17 @@ seo-description: Learn how to enable Adaptive Forms Core Components on AEM Forms
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin
-source-git-commit: f22554450d2eb1f4948f749ba00f78b568ee308f
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1017'
-ht-degree: 3%
+source-wordcount: '1016'
+ht-degree: 6%
 
 ---
 
 
 # Ativar os Componentes principais adaptáveis do Forms no ambiente de desenvolvimento as a Cloud Service e local do AEM Forms {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
 
-A ativação dos Componentes principais do Adaptive Forms no AEM Forms as a Cloud Service permite que você comece a criar, publicar e fornecer Componentes principais baseados no Adaptive Forms e no Headless Forms, usando as instâncias do Cloud Service da AEM Forms para vários canais. Você precisa do ambiente habilitado dos Componentes principais adaptáveis do Forms para usar o Forms adaptável headless.
+A ativação dos Componentes principais dos formulários adaptáveis no AEM Forms as a Cloud Service permite criar, publicar e fornecer os Componentes principais baseados em formulários, adaptáveis e headless, usando as instâncias do AEM Forms Cloud Service para vários canais. Você precisa do ambiente habilitado dos Componentes principais adaptáveis do Forms para usar o Forms adaptável headless.
 
 ## Considerações
 
@@ -193,8 +193,7 @@ Execute as seguintes etapas, na ordem listada, para ativar os Componentes princi
    >
    >  Para encontrar o `${appId}`, no `[AEM Repository Folder]/all/pom.xml` arquivo, pesquise o `-packages/application/install` termo. O texto antes da `-packages/application/install` o termo é seu `${appId}`. Por exemplo, o código a seguir, `myheadlessform` é `${appId}`.
    >
-   >   
-   ```
+   >   ```
    >             <embedded>
    >                     <groupId>com.myheadlessform</groupId>
    >                     <artifactId>myheadlessform.ui.apps<artifactId>

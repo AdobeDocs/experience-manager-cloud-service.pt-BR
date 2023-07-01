@@ -2,9 +2,9 @@
 title: Uso da Fusão de recursos do Sling no Adobe Experience Manager as a Cloud Service
 description: O Sling Resource Merger fornece serviços para acessar e mesclar recursos
 exl-id: 5b6e5cb5-4c6c-4246-ba67-6b9f752867f5
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1158'
+source-wordcount: '1160'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ O Sling Resource Merger fornece serviços para acessar e mesclar recursos. Ela f
 
 Com o Sling Resource Merger, os recursos e/ou propriedades de sobreposição/substituição são mesclados com os recursos/propriedades originais:
 
-* O conteúdo da definição personalizada tem uma prioridade mais alta que a do original (ou seja, ela *sobreposições* ou *sobreposições* it).
+* O conteúdo da definição personalizada tem uma prioridade mais alta do que a original (ou seja, ela *sobreposições* ou *sobreposições* it).
 
 * Se necessário, [propriedades](#properties) definido na personalização, indique como o conteúdo mesclado do original deve ser usado.
 

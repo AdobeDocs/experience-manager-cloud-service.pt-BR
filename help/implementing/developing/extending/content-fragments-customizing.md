@@ -2,10 +2,10 @@
 title: Personalização e extensão de fragmentos de conteúdo
 description: Um fragmento de conteúdo estende um ativo padrão.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1808'
-ht-degree: 3%
+source-wordcount: '1811'
+ht-degree: 2%
 
 ---
 
@@ -46,7 +46,7 @@ O Gerenciamento de fragmentos de conteúdo (CFM) faz parte do AEM Assets como:
 
 * Fragmentos de conteúdo são ativos.
 * Eles usam a funcionalidade existente do Assets.
-* Eles são totalmente integrados ao Assets (consoles de administração etc.).
+* Eles são totalmente integrados ao Assets (consoles de administração e assim por diante).
 
 Os fragmentos de conteúdo são considerados um recurso do Sites, pois:
 
@@ -106,7 +106,7 @@ Os fragmentos de conteúdo podem ser referenciados a partir de páginas AEM, com
 
 * O componente permite conteúdo intermediário:
 
-   * Aqui, o componente permite colocar outros ativos (imagens etc.) entre os parágrafos do fragmento referenciado.
+   * Aqui, o componente permite colocar outros ativos (imagens e assim por diante) entre os parágrafos do fragmento referenciado.
 
    * Para conteúdo intermediário, é necessário:
 
@@ -278,7 +278,7 @@ Consulte o link a seguir:
 
 >[!CAUTION]
 >
->Considere estas informações de referência. Você não deve alterar nada aqui (pois está marcado como um *área privada* no repositório), mas pode ajudar em alguns casos a entender como as coisas funcionam por baixo dos panos.
+>Considere essas informações de fundo. Você não deve alterar nada aqui (pois está marcado como um *área privada* no repositório), mas pode ajudar em alguns casos a entender como as coisas funcionam por baixo dos panos.
 
 A edição de um fragmento de conteúdo, que pode abranger várias visualizações (= páginas de HTML), é atômica. Como esses recursos atômicos de edição de várias visualizações não são um conceito típico de AEM, os fragmentos de conteúdo usam o que é chamado de *editando sessão*.
 

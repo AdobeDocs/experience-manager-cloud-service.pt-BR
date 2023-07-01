@@ -2,10 +2,10 @@
 title: Implantação de código
 description: Saiba como implantar seu código usando os pipelines do Cloud Manager no AEM as a Cloud Service.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1215'
-ht-degree: 94%
+source-wordcount: '1189'
+ht-degree: 89%
 
 ---
 
@@ -57,9 +57,9 @@ A fase de **Implantação em preparo** envolve estas etapas.
 
 * **Validação** - Essa etapa garante que o pipeline esteja configurado para usar os recursos disponíveis no momento. por exemplo, testar se a ramificação configurada existe e se os ambientes estão disponíveis.
 * **Teste de compilação e unidade** - Essa etapa executa um processo de compilação contido.
-   * Consulte o documento [Detalhes do ambiente de compilação](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) para obter detalhes sobre o ambiente de compilação.
+   * Consulte [Detalhes do ambiente de compilação](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) para obter detalhes sobre o ambiente de criação.
 * **Verificação do código Scanning** - Essa etapa avalia a qualidade do código do seu aplicativo.
-   * Consulte o documento [Teste de qualidade do código](/help/implementing/cloud-manager/code-quality-testing.md) para obter detalhes sobre o processo de teste.
+   * Consulte [Teste de qualidade do código](/help/implementing/cloud-manager/code-quality-testing.md) para obter detalhes sobre o processo de teste.
 * **Compilar imagens** - Esse processo é responsável por transformar os pacotes de conteúdo e dispatcher produzidos pela etapa de compilação em imagens do Docker e configurações Kubernetes.
 * **Implantar em preparo** - A imagem é implantada no ambiente de preparo, como forme de preparação para a [Fase de teste de preparo.](#stage-testing)
 
@@ -70,20 +70,20 @@ A fase de **Implantação em preparo** envolve estas etapas.
 O **Teste de preparo** envolve essas etapas.
 
 * **Teste funcional do produto** - O pipeline do Cloud Manager realiza testes que são executados no ambiente de preparo.
-   * Consulte o documento [Teste funcional do produto](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) para obter mais detalhes.
+   * Consulte [Teste funcional do produto](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) para obter mais detalhes.
 
 * **Teste funcional personalizado** - Essa etapa no pipeline é sempre executada e não pode ser ignorada. Se nenhum JAR de teste for produzido pela compilação, o teste será aprovado por padrão.
-   * Consulte o documento [Teste funcional do produto](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) para obter mais detalhes.
+   * Consulte [Teste funcional personalizado](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) para obter mais detalhes.
 
 * **Teste de interface do usuário personalizada** - Essa etapa é um recurso opcional que executa automaticamente testes de interface do usuário criados para aplicativos personalizados.
    * Os testes de interface do usuário são testes baseados em Selenium, compactados em uma imagem do Docker, para permitir uma variedade de opções de linguagens e estruturas (como Java e Maven, Node e WebDriver.io, ou qualquer outra estrutura e tecnologia criada no Selenium).
-   * Consulte o documento [Teste personalizado da interface do usuário](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) para obter mais detalhes.
+   * Consulte [Testes de interface do usuário personalizados](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) para obter mais detalhes.
 
 * **Auditoria de experiência** - Essa etapa no pipeline é sempre executada e não pode ser ignorada. Conforme um pipeline de produção é executado, uma etapa de auditoria de experiência é incluída após o teste funcional personalizado que realizará as verificações.
    * As páginas configuradas são enviadas ao serviço e avaliadas.
    * Os resultados são informativos e mostram as pontuações e as alterações entre as pontuações atual e anterior.
    * Esse insight é importante para determinar se há uma regressão introduzida com a implantação atual.
-   * Consulte o documento [Noções básicas sobre os resultados da auditoria de experiência](/help/implementing/cloud-manager/experience-audit-testing.md) para obter mais detalhes.
+   * Consulte [Noções básicas sobre os resultados da Auditoria de experiência](/help/implementing/cloud-manager/experience-audit-testing.md) para obter mais detalhes.
 
 ![Teste de preparo](assets/stage-testing.png)
 
@@ -120,7 +120,7 @@ As seguintes etapas atingirão o tempo limite se forem deixadas aguardando o fee
 
 ## Processo de implantação {#deployment-process}
 
-Todas as implantações do Cloud Service seguem um processo gradual para garantir tempo de inatividade zero. Consulte o documento [Como funcionam as implantações graduais](/help/implementing/deploying/overview.md#how-rolling-deployments-work) para saber mais.
+Todas as implantações do Cloud Service seguem um processo gradual para garantir tempo de inatividade zero. Consulte [Como funcionam as implantações graduais](/help/implementing/deploying/overview.md#how-rolling-deployments-work) para saber mais.
 
 >[!NOTE]
 >
@@ -155,7 +155,7 @@ Para identificar se uma execução foi reexecutada, analise o campo do acionador
 
 Para acionar uma reexecução, uma solicitação PUT precisa ser feita ao Link HAL &lt;(<https://ns.adobe.com/adobecloud/rel/pipeline/reExecute>)> o estado da etapa de implantação em produção. Se esse link estiver presente, a execução poderá ser reiniciada dessa etapa. Se estiver ausente, a execução não poderá ser reiniciada dessa etapa. Na versão inicial, esse link somente estará presente na etapa de implantação em produção, mas versões futuras poderão oferecer suporte para iniciar o pipeline a partir de outras etapas. Exemplo:
 
-```Javascript
+```JavaScript
  {
   "_links": {
     "https://ns.adobe.com/adobecloud/rel/pipeline/logs": {

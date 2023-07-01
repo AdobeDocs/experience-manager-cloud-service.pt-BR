@@ -2,10 +2,10 @@
 title: Personalização e direcionamento de conteúdo
 description: Saiba como criar conteúdo personalizado e direcionado com o AEM
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
-source-git-commit: 566cd449c536de4179e32c94df90b46d61e0103a
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1056'
-ht-degree: 96%
+source-wordcount: '1055'
+ht-degree: 95%
 
 ---
 

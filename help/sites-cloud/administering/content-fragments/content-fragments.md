@@ -4,10 +4,10 @@ description: Saiba como os fragmentos de conteúdo no Adobe Experience Manager (
 feature: Content Fragments
 role: User
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '2121'
-ht-degree: 96%
+source-wordcount: '2122'
+ht-degree: 94%
 
 ---
 
@@ -87,7 +87,7 @@ Esses fragmentos de conteúdo podem ser reunidos para proporcionar experiências
 >
 >Fragmentos de experiência podem incluir conteúdo na forma de Fragmentos de conteúdo, mas não o contrário.
 >
->Para obter mais informações, consulte também [Entender sobre os fragmentos de conteúdo e fragmentos de experiência do AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=pt-BR).
+>Para obter mais informações, consulte [Compreensão de fragmentos de conteúdo e fragmentos de experiência no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=pt-BR).
 
 ## Fragmentos de conteúdo e serviços de conteúdo {#content-fragments-and-content-services}
 
@@ -147,7 +147,7 @@ Fragmentos de conteúdo são uma estrutura de conteúdo que:
 * Podem [conter ou estar conectados a imagens](#fragments-with-visual-assets).
 * Podem usar [conteúdo intermediário](#in-between-content-when-page-authoring-with-content-fragments) quando referenciados em uma página.
 
-* São independentes do mecanismo de entrega (ou seja, a página ou canal).
+* São independentes do mecanismo de entrega (ou seja, página, canal).
 
 ### Fragmentos com ativos visuais {#fragments-with-visual-assets}
 

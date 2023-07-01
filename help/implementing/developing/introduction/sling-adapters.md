@@ -2,7 +2,7 @@
 title: Uso de adaptadores Sling
 description: O Sling oferece um padrão de adaptador para traduzir convenientemente objetos que implementam a interface adaptável
 exl-id: 8ffe3bbd-01fe-44c2-bf60-7a4d25a6ba2b
-source-git-commit: 5311ba7f001201fc94c73fa52bc7033716c1ba78
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '2214'
 ht-degree: 1%

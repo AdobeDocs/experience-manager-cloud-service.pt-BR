@@ -2,10 +2,10 @@
 title: Configuração do IMS para uso na integração com o Adobe Analytics
 description: Saiba mais sobre a configuração do IMS para uso na integração com o Adobe Analytics
 exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '887'
-ht-degree: 92%
+source-wordcount: '886'
+ht-degree: 91%
 
 ---
 
@@ -44,8 +44,8 @@ O primeiro estágio da configuração é criar uma configuração do IMS no AEM 
 
 1. No AEM, abra o menu **Ferramentas**.
 1. Na seção **Segurança**, selecione **Configurações do Adobe IMS**.
-1. Selecione **Criar** para abrir a **Configuração de conta técnica do Adobe IMS**.
-1. Usando a lista suspensa em **Configuração na nuvem**, selecione **Adobe Analytics**.
+1. Selecione **Criar** para abrir a **Configuração de contas técnicas do Adobe IMS**.
+1. Usando o menu suspenso em **Configuração na nuvem**, selecione **Adobe Analytics**.
 1. Ative **Criar novo certificado** e insira um novo alias.
 1. Confirme com **Criar certificado**.
 

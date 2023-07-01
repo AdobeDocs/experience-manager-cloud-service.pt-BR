@@ -2,7 +2,7 @@
 title: Desenvolvimento de um componente personalizado para o Screens as a Cloud Service
 description: O tutorial a seguir percorre as etapas para criar um componente personalizado para o AEM Screens. A AEM Screens reutiliza muitos padrões e tecnologias de design existentes de outros produtos AEM. O tutorial destaca as diferenças e considerações especiais ao desenvolver para o AEM Screens.
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '2108'
 ht-degree: 3%
@@ -122,10 +122,10 @@ O AEM Screens tem algumas restrições interessantes que não são necessariamen
    
    */-->
    
-   <!--/* production: preview authoring mode + unspecified mode (i.e. on publish) */-->
+   <!--/* production: preview authoring mode + unspecified mode (that is, on publish) */-->
    <sly data-sly-test.production="${wcmmode.preview || wcmmode.disabled}" data-sly-include="production.html" />
    
-   <!--/* edit: any other authoring mode, i.e. edit, design, scaffolding, etc. */-->
+   <!--/* edit: any other authoring mode, that is, edit, design, scaffolding, etc. */-->
    <sly data-sly-test="${!production}" data-sly-include="edit.html" />
    ```
 

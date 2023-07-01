@@ -2,9 +2,9 @@
 title: Fragmentos de conteúdo configuram componentes para renderização
 description: Fragmentos de conteúdo configuram componentes para renderização
 exl-id: 6606dc3b-f1b8-4941-8fd0-f69cbd414afa
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '524'
 ht-degree: 6%
 
 ---
@@ -36,7 +36,7 @@ Essas informações são necessárias quando:
 
 Os serviços que exigem o registro de um componente são:
 
-* Determinar as dependências corretamente durante a publicação (ou seja, verifique se os fragmentos e modelos podem ser publicados automaticamente com uma página se tiverem sido alterados desde a última publicação).
+* Determinar as dependências corretamente durante a publicação (ou seja, verifique se os fragmentos e modelos podem ser publicados automaticamente com uma página se foram alterados desde a última publicação).
 * Suporte para fragmentos de conteúdo na pesquisa de texto completo.
 * A gestão/gestão dos *conteúdo intermediário.*
 * A gestão/gestão dos *ativos de mídia mista.*
@@ -93,7 +93,7 @@ A configuração do OSGi é:
  </tbody>
 </table>
 
-Para algumas funcionalidades, seu componente terá que aderir a convenções predefinidas. A tabela a seguir detalha as propriedades que precisam ser definidas pelo componente para cada parágrafo (ou seja, `jcr:paragraph` para cada instância do componente) para que os serviços possam detectá-los e processá-los corretamente.
+Para algumas funcionalidades, seu componente terá que aderir a convenções predefinidas. A tabela a seguir detalha as propriedades que precisam ser definidas, pelo componente, para cada parágrafo (ou seja, `jcr:paragraph` para cada instância do componente) para que os serviços possam detectá-los e processá-los corretamente.
 
 <table>
  <thead>

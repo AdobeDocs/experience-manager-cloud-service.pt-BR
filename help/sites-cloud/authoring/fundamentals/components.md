@@ -2,10 +2,10 @@
 title: Componentes
 description: Os componentes são o bloco de construção fundamental de criação das páginas de conteúdo no AEM
 exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
-source-git-commit: 171aca87ff725a2f142f0336dca3491e213f55ab
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 63%
+source-wordcount: '347'
+ht-degree: 59%
 
 ---
 
@@ -31,7 +31,7 @@ Você pode selecionar um componente e arrastá-lo até o local desejado na pági
 * [Editar conteúdo](/help/sites-cloud/authoring/fundamentals/editing-content.md)
 * [Editar conteúdo - Modo de tela cheia](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-content-full-screen-mode)
 
-Para obter mais informações sobre como adicionar componentes a uma página, consulte o artigo [Editar Conteúdo da Página](/help/sites-cloud/authoring/fundamentals/editing-content.md).
+Para obter mais informações sobre como adicionar componentes a uma página, consulte [Editar conteúdo da página](/help/sites-cloud/authoring/fundamentals/editing-content.md).
 
 ## Visão geral de todos os componentes {#overview-of-all-components}
 

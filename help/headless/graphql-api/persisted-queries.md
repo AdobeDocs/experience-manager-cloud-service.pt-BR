@@ -1,12 +1,12 @@
 ---
 title: Consultas persistentes de GraphQL
-description: Saiba como criar consultas persistentes de GraphQL no Adobe Experience Manager as a Cloud Service para otimizar o desempenho. As consultas persistentes podem ser solicitadas por aplicativos clientes usando o método GET do HTTP e a resposta pode ser armazenada em cache nas camadas do Dispatcher e do CDN, melhorando, em última análise, o desempenho dos aplicativos clientes.
+description: Saiba como criar consultas persistentes do GraphQL no Adobe Experience Manager as a Cloud Service para otimizar o desempenho. As consultas persistentes podem ser solicitadas por aplicativos clientes usando o método GET do HTTP e a resposta pode ser armazenada em cache nas camadas do Dispatcher e do CDN, melhorando, em última análise, o desempenho dos aplicativos clientes.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '1681'
-ht-degree: 88%
+ht-degree: 83%
 
 ---
 
@@ -398,7 +398,7 @@ O campo `Respond with application/graphql-response+json` (`responseContentTypeGr
 
 ## Codificação do URL de consulta para uso por um aplicativo {#encoding-query-url}
 
-Para uso por um aplicativo, quaisquer caracteres especiais usados ao criar variáveis de consulta (ou seja, ponto e vírgula (`;`), sinal de igual (`=`), barras `/`) devem ser convertidos para usar a codificação UTF-8 correspondente.
+Para uso por um aplicativo, quaisquer caracteres especiais usados ao criar variáveis de consulta (ou seja, ponto e vírgula (`;`), sinal de igual (`=`), barras `/`) deve ser convertido para usar a codificação UTF-8 correspondente.
 
 Por exemplo:
 
