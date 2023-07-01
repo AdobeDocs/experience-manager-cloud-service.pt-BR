@@ -3,9 +3,9 @@ title: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud S
 description: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 5a37f237d04d19f3c4113c2ea3e37ab447bf3b0c
+source-git-commit: da5634dfa812268b81b2db783da772b6ecc1d7ce
 workflow-type: tm+mt
-source-wordcount: '1372'
+source-wordcount: '1365'
 ht-degree: 16%
 
 ---
@@ -115,8 +115,8 @@ A visualização de ativos agora permite [adicionar componentes de propriedade d
 
 * [Forms adaptável no editor de páginas AEM e no fragmento de experiência](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md): Agora você pode usar o Editor de páginas AEM e o Fragmento de experiência para criar e adicionar rapidamente vários formulários às suas páginas do AEM Sites. Esse recurso permite que os autores de conteúdo criem experiências de captura de dados perfeitas nas páginas do Sites, usando o potencial dos componentes do Adaptive Forms, incluindo comportamento dinâmico, validações, integração de dados e geração de documentos de registro e automação de processos de negócios.
 
-      >[!VÍDEO](https://video.tv.adobe.com/v/3419284?quality=12&amp;learn=on)
-  
+  >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
+
 * [Usar o Adobe Acrobat Sign Solutions para o governo (Reclamação HIPPA) com o AEM Forms](/help/forms/adobe-sign-integration-adaptive-forms.md): o AEM Forms agora se integra ao Adobe Acrobat Sign Solutions para o governo. Essa integração oferece um nível avançado de conformidade e segurança para assinaturas eletrônicas com envios de formulários adaptáveis para contas associadas ao governo (departamentos e agências governamentais).
 
   A integração com o Adobe Acrobat Sign Solutions para o governo permite que os parceiros do Adobe e os clientes do governo usem assinaturas eletrônicas no Adaptive Forms para algumas das linhas de negócios mais críticas e confidenciais. Essa camada adicional de segurança garante que todas as assinaturas eletrônicas sejam totalmente compatíveis com a conformidade Moderada do FedRAMP, proporcionando tranquilidade aos clientes governamentais Adobe.
