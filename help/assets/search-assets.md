@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 589ed1e1befa84c0caec0eed986c3e1a717ae602
 workflow-type: tm+mt
-source-wordcount: '5096'
+source-wordcount: '5162'
 ht-degree: 7%
 
 ---
@@ -37,7 +37,7 @@ A pesquisa de ativos no AEM é compatível com os seguintes casos de uso e este 
 | [Limitação](#limitations) e [Dicas](#tips) | | |
 | [Exemplos ilustrados](#samples) | | |
 
-Pesquise ativos usando o campo Omnisearch na parte superior do [!DNL Experience Manager] Web. Ir para **[!UICONTROL Assets]** > **[!UICONTROL Arquivos]** in [!DNL Experience Manager], clique em ![search_icon](assets/do-not-localize/search_icon.png) na barra superior, digite palavra-chave de pesquisa e selecione `Return`. Como alternativa, use o atalho de palavra-chave `/` (barra) para abrir o campo Omnisearch. `Location:Assets` O é pré-selecionado para limitar as pesquisas aos ativos DAM. [!DNL Experience Manager] O fornece sugestões conforme você começa a digitar uma palavra-chave de pesquisa.
+Pesquise ativos usando o campo Omnisearch na parte superior do [!DNL Experience Manager] Web. Ir para **[!UICONTROL Assets]** > **[!UICONTROL Arquivos]** in [!DNL Experience Manager], clique em ![search_icon](assets/do-not-localize/search_icon.png) na barra superior, digite palavra-chave de pesquisa e selecione `Return`. Como alternativa, use o atalho de palavra-chave `/` (barra) para abrir o campo Omnisearch. `Location:Assets` O é pré-selecionado para limitar as pesquisas aos ativos DAM. `Path:/content/dam` também é exibido quando você está realizando uma pesquisa no nível raiz dentro do **[!UICONTROL Arquivos]** pasta. Se você navegar para qualquer outra pasta, `Path:/content/dam/<folder name>` é exibido no campo Omnisearch para limitar o escopo de pesquisa à pasta atual. [!DNL Experience Manager] O fornece sugestões conforme você começa a digitar uma palavra-chave de pesquisa.
 
 Use o **[!UICONTROL Filtros]** painel para pesquisar ativos, pastas, tags e metadados. Você pode filtrar os resultados da pesquisa com base nas várias opções (predicados), como tipo de arquivo, tamanho do arquivo, data da última modificação, status do ativo, dados de insights e licenciamento do Adobe Stock. Você pode personalizar o painel Filtros e adicionar ou remover predicados de pesquisa usando [pesquisar aspectos](/help/assets/search-facets.md). A variável [!UICONTROL Tipo de arquivo] filtro no [!UICONTROL Filtros] tem caixas de seleção de estado misto. Portanto, a menos que você selecione todos os predicados (ou formatos) aninhados, as caixas de seleção de primeiro nível são parcialmente marcadas.
 
@@ -415,6 +415,7 @@ Você pode fazer o seguinte com os ativos pesquisados em [!DNL Experience Manage
 * Iniciar um fluxo de trabalho
 * Relacionar ou não relacionar ativos
 * Aplique filtros, usando o painel Filtros que é exibido automaticamente após a execução da pesquisa, para restringir os resultados da pesquisa.
+* Navegar até o local do ativo
 
 ### Classificar resultados da pesquisa {#sort}
 
@@ -466,6 +467,10 @@ Semelhante ao recurso de criação de versão, também é possível criar um flu
 ### Relacionar e não relacionar ativos {#relate-unrelate-assets}
 
 Relacione e não relacione ativos exibidos nos resultados da pesquisa. Selecione os ativos e clique em **[!UICONTROL Relacionar]** ou **[!UICONTROL Não Relacionado]**.
+
+### Navegar até o local da pasta de ativos {#navigate-asset-folder-location}
+
+Navegue até o local da pasta dos ativos exibidos nos resultados da pesquisa. Selecione o ativo e clique em **[!UICONTROL Mostrar Local do Arquivo]**.
 
 ## Resultados e problemas de pesquisa inesperados {#unexpected-results}
 

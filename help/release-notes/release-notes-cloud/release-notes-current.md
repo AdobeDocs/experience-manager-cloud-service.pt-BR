@@ -3,7 +3,7 @@ title: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud S
 description: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: da5634dfa812268b81b2db783da772b6ecc1d7ce
+source-git-commit: 45004db44af48301f0a9cbd9f574ac34c360275e
 workflow-type: tm+mt
 source-wordcount: '1365'
 ht-degree: 16%
@@ -56,9 +56,9 @@ A variável [nova visualização de Ativos](/help/assets/assets-view-introductio
 
 O Experience Manager Assets agora capacita você a fazer mais na interface do usuário de resultados de pesquisa: agora é possível:
 
-* Por padrão, faça a pesquisa no local do repositório atual, em vez de pesquisar pela palavra-chave no repositório inteiro.
+* [Executar pesquisa no local do repositório atual](/help/assets/search-assets.md) por padrão, em vez de pesquisar a palavra-chave no repositório inteiro.
 
-* Navegue até o local da pasta de ativos que são exibidos nos resultados da pesquisa.
+* [Navegar até o local da pasta](/help/assets/search-assets.md#aftersearch) para ativos exibidos nos resultados da pesquisa.
 
 **Visualizações de miniaturas para ativos 3D**
 

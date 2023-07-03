@@ -4,10 +4,10 @@ description: Gerenciar documentos do PDF no [!DNL Adobe Experience Manager] as a
 feature: Asset Management
 role: User,Admin
 exl-id: 29660869-6902-4093-845b-cd629be59d4d
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 589ed1e1befa84c0caec0eed986c3e1a717ae602
 workflow-type: tm+mt
-source-wordcount: '824'
-ht-degree: 3%
+source-wordcount: '853'
+ht-degree: 4%
 
 ---
 
@@ -22,6 +22,7 @@ O visualizador de PDF Document Cloud beneficia o AEM Assets das seguintes maneir
 
 > Dica
 > Se não conseguir obter a visualização de várias páginas de um documento PDF carregado anteriormente, selecione o PDF e clique em **![Reprocessar](/help/assets/assets/Reprocess.svg) Reprocessar ativos**.
+>
 
 ## Suporte para componentes do visualizador de Document Cloud do PDF {#pdf-doc-cloud}
 
@@ -55,6 +56,7 @@ Também é possível aplicar [anotações](#pdf-annotations) ao documento PDF em
 
 > OBSERVAÇÃO
 > O tamanho máximo de um Ativo que pode ser visualizado é de até 100 MB.
+>
 
 >[!VIDEO](https://video.tv.adobe.com/v/3409355)
 
@@ -110,6 +112,10 @@ Veja a seguir as Anotações que podem ser aplicadas a um documento PDF:
         </tr>
     </table>
 
+>[!NOTE]
+>
+>As anotações adicionadas ao documento PDF estão disponíveis no modo de visualização. No entanto, as anotações não são exibidas quando você baixa ou imprime o documento PDF.
+
 ## Suporte para Visualização de Várias Páginas para Documentos em Outros Formatos {#multi-format}
 
 Além dos documentos PDF, você também pode visualizar várias páginas de documentos em outros tipos de formato. Os tipos de formato de documento compatíveis são TXT, RTF, DOC, DOCX, PPT, PPTX, XLS e XLSX. O Experience Manager Assets converte automaticamente esses formatos de documento em um formato PDF e os disponibiliza para visualização.
@@ -126,7 +132,6 @@ Para a visualização de várias páginas de outros formatos de documento compat
 > * O tamanho máximo de um Ativo que pode ser visualizado é de até 100 MB.
 > * O tamanho máximo de arquivos XLS ou XLSX para visualizar é 20 MB.
 >
-
 
 **Consulte também**
 
