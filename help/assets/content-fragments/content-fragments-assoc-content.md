@@ -2,10 +2,10 @@
 title: Conteúdo associado (Ativos - Fragmentos de conteúdo)
 description: Entenda como o recurso de conteúdo associado ao AEM fornece a conexão para que os ativos possam ser usados opcionalmente com o fragmento.
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 5c59189abf809293a319d6bce4ef7389c2451f92
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 53%
+source-wordcount: '231'
+ht-degree: 52%
 
 ---
 
@@ -38,7 +38,7 @@ Para fazer a associação, primeiro é necessário [adicionar ativos de mídia a
 
 1. Confirmar (com **Selecionar**). A coleção é listada como associada.
 
-   ![cfm-6420-05](assets/cfm-assoc-content-03.png)
+   ![Associação confirmada](assets/cfm-assoc-content-03.png)
 
 ## Editar conteúdo associado {#editing-associated-content}
 
