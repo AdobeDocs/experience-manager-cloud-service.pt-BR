@@ -1,16 +1,16 @@
 ---
 title: Como migrar de um Forms AEM 6.5 para o [!DNL AEM Forms] as a Cloud Service ambiente?
 description: Migrar de um [!DNL AEM Forms] (Ambientes no local e AMS) para [!DNL AEM Forms] ambiente as a Cloud Service.
-keywords: 6.5 forms para o cloud service, 6.5 forms para cs, migrar 6.5 forms para CS, migrar 6.5 forms para o cloud service, atualizar 6.5 forms para CS, mover 6.5 forms para CS, atualizar AEM 6.5 para CS
+keywords: 6.5 formulários para o cloud service, 6.5 formulários para cs, migrar 6.5 formulários para CS, migrar 6.5 formulários para o cloud service, atualizar 6.5 formulários para CS, mover 6.5 formulários para CS, atualizar AEM 6.5 para CS, AEM Forms 6.5 para Cloud Service AEM, migração de formulário para o cloud service
 contentOwner: khsingh
 feature: Adaptive Forms
 role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: f6b8ef52ad551be70e665a14ce00c197d1470e84
+source-git-commit: 850b1cccb03ca05ea53b646c55fcb0d0c100494c
 workflow-type: tm+mt
-source-wordcount: '1566'
+source-wordcount: '1590'
 ht-degree: 4%
 
 ---
@@ -120,7 +120,7 @@ Execute as seguintes etapas para tornar seus [!DNL AEM Forms] ativos compatívei
 
    O Cloud Service não é compatível com scripts do editor de regras. A variável **[!UICONTROL Migração de script do editor de código]** a ferramenta converte todos os scripts de regras em seu ambiente em funções reutilizáveis e aplica as funções reutilizáveis ao editor visual no local apropriado. Essas funções reutilizáveis são salvas na forma de bibliotecas de clientes e ajudam a manter a funcionalidade existente intacta. A ferramenta aplica automaticamente as funções reutilizáveis geradas ao Forms adaptável correspondente.
 
-   Use o [Gerenciador de pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en#contentmanagement) para exportar as funções reutilizáveis (Bibliotecas de clientes) para um pacote.
+   Migração do formulário AEM para o Cloud Service, use o [Gerenciador de pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en#contentmanagement) para exportar as funções reutilizáveis (Bibliotecas de clientes) para um pacote.
 
 1. [Implantar](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#deploying-content-packages-via-cloud-manager-and-package-manager) o pacote de funções reutilizáveis (bibliotecas de clientes), [código personalizado, componentes, configurações](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html#cloud-manager), bibliotecas personalizadas específicas do local para o seu [!DNL AEM] ambiente as a Cloud Service.
 
@@ -152,7 +152,7 @@ Você pode adicionar os caminhos de pasta de nível superior listados abaixo ou 
 * `/content/forms/af`
 * `/etc/clientlibs/fd/theme`
 
-Para migrar modelos de fluxo de trabalho do AEM, especifique os seguintes caminhos:
+Ao migrar modelos de fluxo de trabalho do AEM do AEM Forms 6.5 para o Cloud Service, especifique os seguintes caminhos:
 
 * `/conf/global/settings/workflow/models/`
 * `/conf/global/settings/workflow/launcher`
