@@ -2,9 +2,9 @@
 title: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: e8ea040ba3f8c73d7ed64c9669ac1d0a22d3a3c8
+source-git-commit: c7143ce939ca8c06fc678fc30f90c71981e4f8d7
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '607'
 ht-degree: 20%
 
 ---
@@ -13,18 +13,18 @@ ht-degree: 20%
 
 A seção a seguir descreve as notas de versão técnicas para a versão de manutenção atual do Experience Manager as a Cloud Service.
 
-## Versão 12441 {#release-12441}
+## Versão 12549 {#release-12549}
 
-Veja abaixo um resumo das melhorias contínuas da versão de manutenção 12441, lançada publicamente em 27 de junho de 2023. Esta versão de manutenção é uma atualização da versão de manutenção anterior a 12255.
+Resumidos abaixo estão as melhorias contínuas da versão de manutenção 12549, que foi lançada publicamente em 4 de julho de 2023. Esta versão de manutenção é uma atualização da versão de manutenção anterior a 12255. A versão de manutenção 12549 substitui 12441 para corrigir dois problemas.
 
 A Ativação de recursos 2023.7.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte a [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=pt-BR) para obter mais informações.
 
-### Aprimoramentos {#enhancements-12441}
+### Aprimoramentos {#enhancements-12549}
 
 - SITES-8769: Melhorar chamadas StyleImpl em ResponsiveGrid
 - FORMS-5054: adição de suporte para todos os [estátuas](https://opensource.adobe.com/acrobat-sign/acrobat_sign_events/webhookeventsagreements.html) com suporte da Adobe Sign.
 
-### Problemas corrigidos {#fixed-issues-12441}
+### Problemas corrigidos {#fixed-issues-12549}
 
 - Várias atualizações relacionadas à acessibilidade
 - SITES-12688: Editor de páginas: operador lógico OU que não está funcionando corretamente na pesquisa do Localizador de ativos
@@ -53,11 +53,11 @@ A Ativação de recursos 2023.7.0 fornecerá o conjunto completo de recursos par
 - FORMS-9072: Ao pesquisar um Esquema ao criar um fragmento de formulário, o resultado da pesquisa não retorna nenhum esquema para seleção.
 - FORMS: correção de vários bugs relacionados à acessibilidade para melhorar a acessibilidade dos recursos do AEM Forms.
 
-### Problemas conhecidos {#known-issues-12441}
+### Problemas conhecidos {#known-issues-12549}
 
 Nenhum.
 
-### Tecnologias integradas {#embedded-tech-12441}
+### Tecnologias integradas {#embedded-tech-12549}
 
 | Tecnologia | Versão | Link |
 |---|---|---|
