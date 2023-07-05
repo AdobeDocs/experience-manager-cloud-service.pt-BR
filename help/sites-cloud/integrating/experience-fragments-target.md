@@ -2,7 +2,7 @@
 title: Exportar fragmentos de experiência para o Adobe Target
 description: Exportar fragmentos de experiência para o Adobe Target
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 7905f21e70f373150775fe90d5faf02db4a59c32
 workflow-type: tm+mt
 source-wordcount: '2245'
 ht-degree: 97%
@@ -242,7 +242,7 @@ Você pode criar várias estruturas para uma única configuração do Target. V�
 
    A página de estrutura é aberta. O Sidekick fornece componentes que representam informações do [ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md) que podem ser mapeadas.
 
-   <!-- ![chlimage_1-162](assets/chlimage_1-162.png) -->
+   <!-- ![Framework](assets/chlimage_1-162.png) -->
 
 1. Arraste o componente Contexto do cliente que representa os dados que você deseja usar para mapear até a zona de destino. Como alternativa, arraste o componente de **Armazenamento do ContextHub** para a estrutura.
 
@@ -252,11 +252,11 @@ Você pode criar várias estruturas para uma única configuração do Target. V�
 
    Por exemplo, para usar os **dados de perfil** dos visitantes do seu site para controlar sua campanha do Target, arraste o componente **Dados de perfil** para a página. As variáveis de dados de perfil disponíveis para mapeamento para parâmetros do Target são exibidas.
 
-   <!-- ![chlimage_1-163](assets/chlimage_1-163.png) -->
+   <!-- ![Profile Data](assets/chlimage_1-163.png) -->
 
 1. Selecione as variáveis que você deseja tornar visíveis para o sistema do Adobe Target marcando a caixa de seleção **Compartilhar** nas colunas apropriadas.
 
-   <!-- ![chlimage_1-164](assets/chlimage_1-164.png) -->
+   <!-- ![Share](assets/chlimage_1-164.png) -->
 
    >[!NOTE]
    >
@@ -293,7 +293,7 @@ When you associate a page with the framework, the child pages inherit the associ
 1. Tap/click **Edit**.
 1. Tap/click **Add Configuration** under **Cloud Service Configurations** and select **Adobe Target**.
 
-  ![chlimage_1-165](assets/chlimage_1-165.png)
+  ![Cloud Service Configuration](assets/chlimage_1-165.png)
 
 1. Select the framework you want under **Configuration Reference**.
 
