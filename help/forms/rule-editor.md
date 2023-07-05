@@ -601,7 +601,7 @@ Sintaxe: `@this currentComponent`
 
   >[!NOTE]
   >
-  >Os comentários antes da função personalizada são usados para o resumo. O resumo pode ser estendido para várias linhas até que uma tag seja encontrada. Limite o tamanho a um único para obter uma descrição concisa no construtor de regras.
+  >Comentários antes da função personalizada são usados para resumo. O resumo pode ser estendido para várias linhas até que uma tag seja encontrada. Limite o tamanho a um único para obter uma descrição concisa no construtor de regras.
 
 **Adição de uma função personalizada**
 
