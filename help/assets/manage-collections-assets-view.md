@@ -5,7 +5,7 @@ exl-id: 33c889f5-c989-4772-9591-db62f50e5c80
 source-git-commit: d198b3f0c7d8469a376ba7a3e95e57c84f835dbb
 workflow-type: tm+mt
 source-wordcount: '793'
-ht-degree: 86%
+ht-degree: 87%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 86%
 >[!CONTEXTUALHELP]
 >id="assets_collections"
 >title="Gerenciar coleções"
->abstract="Uma coleção é um conjunto de ativos, pastas ou outras coleções na exibição de Ativos. Use coleções para compartilhar ativos entre usuários. Diferente de pastas, uma coleção pode incluir ativos de locais diferentes. Você pode compartilhar várias coleções com um usuário. Cada coleção contém referências a ativos. A integridade referencial dos ativos é mantida entre as coleções."
+>abstract="Uma coleção é um conjunto de ativos, pastas ou outras coleções na visualização Ativos. Use coleções para compartilhar ativos entre usuários. Diferente de pastas, uma coleção pode incluir ativos de locais diferentes. Você pode compartilhar várias coleções com um usuário. Cada coleção contém referências a ativos. A integridade referencial dos ativos é mantida entre as coleções."
 
 Uma coleção é um conjunto de ativos, pastas ou outras coleções na exibição do Adobe Experience Manager Assets. Use coleções para compartilhar ativos entre usuários.
 
