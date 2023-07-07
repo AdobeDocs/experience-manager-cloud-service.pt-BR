@@ -2,9 +2,9 @@
 title: Atributos e tipos
 description: Saiba mais sobre os atributos e tipos de dados exigidos pelo Editor universal.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
 workflow-type: tm+mt
-source-wordcount: '662'
+source-wordcount: '663'
 ht-degree: 82%
 
 ---
@@ -41,7 +41,7 @@ Para que um aplicativo possa ser editado pelo Editor universal, ele deve ser ins
 | `richtext` | O texto é editável com recursos completos de Rich Text. O RTE é mostrado no painel direito | Opcional | Obrigatório | n/a | Opcional | n/a | Opcional |
 | `media` | O item editável é um ativo, por exemplo, uma imagem ou vídeo | Opcional | Obrigatório | Opcional<br>lista de critérios de filtro de imagem ou vídeo que é passada para o seletor de ativos | Opcional | n/a | Opcional |
 | `container` | O item editável atua como um container de componentes, o que também é conhecido como um Sistema de parágrafo. | Depende do <br>, veja abaixo | Depende do <br>, veja abaixo | Opcional<br>uma lista de componentes permitidos | Opcional | n/a | n/a |
-| `component` | O item editável é um componente. Não acrescenta funcionalidade adicional; é necessário para indicar partes móveis/excluíveis do DOM e para abrir o painel de propriedades e seus campos | Obrigatório | n/a | n/a | Opcional | Opcional | n/a |
+| `component` | O item editável é um componente. Ele não acrescenta funcionalidades adicionais. É obrigatório indicar partes móveis/excluíveis do DOM e para abrir o painel de propriedades e seus campos | Obrigatório | n/a | n/a | Opcional | Opcional | n/a |
 | `reference` | O item editável é uma referência, por exemplo, um fragmento de conteúdo, fragmento de experiência ou produto | Depende do <br>, veja abaixo | Depende do <br>, veja abaixo | Opcional<br>lista de critérios de filtro para fragmentos de conteúdo, produtos ou fragmentos de experiência que é passada para o seletor de referência | Opcional | Opcional | n/a |
 
 Dependendo do caso de uso, `itemprop` ou `itemid` podem ou não ser exigidos. Por exemplo:

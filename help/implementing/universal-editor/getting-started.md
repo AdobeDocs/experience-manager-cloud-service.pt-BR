@@ -2,10 +2,10 @@
 title: Introdução ao Editor universal no AEM
 description: Saiba como obter acesso ao Editor universal e começar a instrumentar seu primeiro aplicativo do AEM para utilizá-lo.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
 workflow-type: tm+mt
-source-wordcount: '805'
-ht-degree: 89%
+source-wordcount: '804'
+ht-degree: 90%
 
 ---
 
@@ -66,7 +66,7 @@ Se você não estiver implementando um aplicativo React e/ou precisar da renderi
 
 Para poder editar o conteúdo do AEM com seu aplicativo utilizando o Editor universal, as configurações de CORS e cookies devem ser definidas no AEM.
 
-As configurações [OSGi a seguir devem ser definidas na instância de criação do AEM](/help/implementing/deploying/configuring-osgi.md).
+As configurações [OSGi a seguir devem ser definidas na instância de criação do AEM.](/help/implementing/deploying/configuring-osgi.md)
 
 * `SameSite Cookies = None` em `com.day.crx.security.token.impl.impl.TokenAuthenticationHandler`
 * Remova o cabeçalho X-FRAME-OPTIONS: SAMEORIGIN em `org.apache.sling.engine.impl.SlingMainServlet`
@@ -161,7 +161,7 @@ itemid="urn:<referenceName>:<resource>"
 </html>
 ```
 
-## Você está pronto para usar o editor universal {#youre-ready}
+## Você está pronto para usar o Editor universal {#youre-ready}
 
 Seu aplicativo agora está pronto para utilizar o Editor universal.
 

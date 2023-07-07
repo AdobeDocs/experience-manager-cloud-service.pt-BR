@@ -2,10 +2,10 @@
 title: Criação de conteúdo com o Editor universal
 description: Saiba como é fácil e intuitivo para os autores criarem conteúdo utilizando o Editor universal.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: c6ab2d9b01a3f1abedb06d1d413e7eceb8b1c031
 workflow-type: tm+mt
-source-wordcount: '1142'
-ht-degree: 80%
+source-wordcount: '1557'
+ht-degree: 49%
 
 ---
 
@@ -17,7 +17,7 @@ Saiba como é fácil e intuitivo para os autores criarem conteúdo utilizando o 
 
 O Editor universal permite editar qualquer aspecto de qualquer conteúdo em qualquer implementação para que você possa fornecer experiências excepcionais, aumentar a velocidade do conteúdo e fornecer uma experiência do desenvolvedor de última geração.
 
-Para isso, ele fornece aos autores de conteúdo uma interface intuitiva que requer o mínimo de treinamento possível, permitindo simplesmente avançar e começar a editar o conteúdo.
+Para fazer isso, o Editor universal fornece aos autores de conteúdo uma interface intuitiva que requer treinamento mínimo para simplesmente serem capazes de começar a editar o conteúdo.
 
 >[!TIP]
 >
@@ -39,16 +39,17 @@ Para criar conteúdo para um aplicativo usando o Editor universal, o aplicativo 
 
 Após o aplicativo ser instrumentado para funcionar com o Editor universal, será necessário fazer logon no Editor universal. Você precisará de uma Adobe ID para fazer logon e [ter acesso ao Editor universal.](getting-started.md#request-access)
 
-Depois de fazer logon, insira o URL da página que deseja editar na [barra de endereços.](#address-bar) para que você possa começar [editar o conteúdo.](#edit-content)
+Depois de fazer logon, insira o URL da página que deseja editar na [barra de localização.](#location-bar) para que você possa começar a editar conteúdo como [conteúdo de texto](#text-mode) ou [conteúdo de mídia.](#media-mode)
 
 ## Entenda a interface {#ui}
 
-A interface é dividida em quatro áreas principais.
+A interface do usuário do é dividida em cinco áreas principais.
 
 * [O cabeçalho da Experience Cloud](#experience-cloud-header)
 * [O cabeçalho do Editor universal](#universal-editor-header)
-* [O painel](#rail)
+* [O painel de modo](#mode-rail)
 * [O editor](#editor)
+* [O painel de componentes](#component-rail)
 
 ![A interface do Editor universal](assets/ui.png)
 
@@ -84,7 +85,7 @@ O ícone de ajuda fornece acesso rápido aos recursos de aprendizagem e suporte.
 
 #### Notificações {#notifications}
 
-Esse ícone contém o número de incompletos atribuídos no momento [notificações](/help/implementing/cloud-manager/notifications.md).
+Esse ícone contém o número de incompletos atribuídos no momento [notificações.](/help/implementing/cloud-manager/notifications.md)
 
 ![Notificações](assets/notifications.png)
 
@@ -104,13 +105,13 @@ O cabeçalho do Editor universal está sempre presente na parte superior da tela
 
 O menu de opções ainda não foi implementado.
 
-![Menu de opções](assets/hamburger-menu.png)
+![Menu Hambúrguer](assets/hamburger-menu.png)
 
-#### Barra de localização {#Location-bar}
+#### Barra de localização {#location-bar}
 
 A barra de localização mostra o endereço da página que você está editando. Toque ou clique para inserir o endereço de outra página para editar.
 
-![Barra de localização](assets/address-bar.png)
+![Barra de localização](assets/location-bar.png)
 
 >[!TIP]
 >
@@ -120,6 +121,24 @@ A barra de localização mostra o endereço da página que você está editando.
 >
 >Qualquer página que você deseja editar com o Editor universal deve ser [instrumentada para oferecer suporte ao Editor universal.](getting-started.md)
 
+#### Configurações do emulador {#emulator}
+
+Toque ou clique no ícone de emulação para definir como o Editor universal renderiza a página.
+
+![Ícone de Emulador](assets/emulator.png)
+
+Tocar ou clicar no ícone de emulação revela as opções.
+
+![Opções de emulação](assets/emulation-options.png)
+
+Por padrão, o editor será aberto no layout do desktop, onde a altura e a largura são definidas automaticamente pelo navegador.
+
+Você também pode optar por emular um dispositivo móvel e, no Universal Editor:
+
+* Definir sua orientação
+* Definir largura e altura
+* Alterar a orientação
+
 #### Abrir visualização do aplicativo {#open-app-preview}
 
 Toque ou clique no ícone Abrir visualização do aplicativo para abrir a página que você está editando no próprio navegador (fora do editor) e visualizar as alterações.
@@ -128,7 +147,7 @@ Toque ou clique no ícone Abrir visualização do aplicativo para abrir a págin
 
 >[!TIP]
 >
->Use a tecla de atalho `O` para abrir a visualização do aplicativo.
+>Usar a tecla de atalho `O` (a letra O) para abrir a pré-visualização do aplicativo.
 
 #### Publicação {#publish}
 
@@ -140,11 +159,11 @@ Toque ou clique no botão Publicar para poder publicar as alterações no conte�
 >
 >Consulte o documento [Publicação de conteúdo com o Editor visual universal](publishing.md) para obter mais informações sobre a publicação com o Editor universal.
 
-### O painel {#rail}
+### O painel do modo {#rail}
 
-O painel está sempre presente no lado esquerdo do editor. Isso permite alternar facilmente o editor entre o modo de visualização e o modo de edição.
+O painel de modo está sempre presente no lado esquerdo do editor. Ele permite alternar facilmente o editor entre diferentes modos de edição.
 
-![O painel](assets/rail.png)
+![O painel de modo](assets/mode-rail.png)
 
 #### Modo de visualização {#preview-mode}
 
@@ -156,23 +175,87 @@ No modo de visualização, a página é renderizada no editor da maneira como se
 >
 >Use a tecla de atalho `P` para alternar para o modo de visualização.
 
-#### Modo de edição {#edit-mode}
+#### Modo de texto {#text-mode}
 
-No modo de edição, a página é renderizada no editor, mas o autor de conteúdo pode clicar e selecionar o conteúdo para editar. Esse é o modo padrão do editor quando uma página é carregada.
+No modo de texto, a página é renderizada no editor, mas o autor de conteúdo pode clicar em para selecionar o conteúdo do texto e editá-lo. Esse é o modo padrão do editor quando uma página é carregada.
 
-![Modo de edição](assets/edit-mode.png)
+![Modo de texto](assets/text-mode.png)
+
+>[!TIP]
+>
+>Usar a tecla de atalho `T` para alternar para o modo texto.
+
+#### Modo de mídia {#media-mode}
+
+No modo de mídia, a página é renderizada no editor, mas o autor de conteúdo pode clicar em para selecionar o conteúdo de mídia e editá-lo.
+
+![Modo de mídia](assets/media-mode.png)
+
+>[!TIP]
+>
+>Usar a tecla de atalho `M` para alternar para o modo de mídia.
+
+#### Modo de componente {#component-mode}
+
+No modo de componente, a página é renderizada no editor, mas o autor de conteúdo pode clicar em para selecionar componentes de página.
+
+![Modo de componente](assets/component-mode.png)
+
+>[!TIP]
+>
+>Usar a tecla de atalho `C` para alternar para o modo de componente.
+
+>[!NOTE]
+>
+>O modo de componente ainda está em desenvolvimento e está atualmente limitado à seleção de componentes.
 
 ### O editor {#editor}
 
-O editor ocupa a maior parte da janela e é renderizado na página especificada na [barra de endereços](#address-bar).
+O editor ocupa a maior parte da janela e é onde a página especificada em [a barra de localização](#location-bar) é renderizado.
 
-Dependendo de se o editor está em [modo de edição](#edit-mode) ou [modo de visualização,](#edit-mode) o conteúdo será editável ou navegável, respectivamente.
+* Se o editor estiver em um modo de edição como [modo texto](#text-mode) ou [modo mídia,](#media-mode) o conteúdo será editável e você não poderá seguir links.
+* Se o editor estiver em [modo de visualização,](#preview-mode) o conteúdo será navegável e você poderá seguir os links, mas não poderá editar o conteúdo.
 
 ![Editor](assets/editor.png)
 
+### Trilho do componente {#component-rail}
+
+O painel de componentes está sempre presente no lado esquerdo do editor. Dependendo do modo, ele pode mostrar detalhes de um componente selecionado no conteúdo ou na hierarquia do conteúdo da página.
+
+![O painel de componentes](assets/component-rail.png)
+
+#### Modo de propriedades {#properties-mode}
+
+No modo de propriedades, o painel mostra as propriedades do componente atualmente selecionado no editor. Este é o modo padrão do painel de componentes quando uma página é carregada.
+
+![Modo de propriedades](assets/properties-mode.png)
+
+Os detalhes do componente selecionado são mostrados no painel. Observe que nem todos os componentes precisam ser mostrados.
+
+![Detalhes do componente](assets/component-details.png)
+
+>[!TIP]
+>
+>Usar a tecla de atalho `D` para alternar para o modo de propriedades.
+
+#### Modo de árvore de conteúdo {#Content-tree-mode}
+
+No modo de árvore de conteúdo, o painel mostra a hierarquia do conteúdo da página.
+
+![Modo de árvore de conteúdo](assets/content-tree-mode.png)
+
+Ao selecionar um item na árvore de conteúdo, o editor rola até esse conteúdo e o seleciona.
+
+![Árvore de conteúdo](assets/content-tree.png)
+
+>[!TIP]
+>
+>Usar a tecla de atalho `F` para alternar para o modo de árvore de conteúdo.
+
+
 ## Editar o conteúdo {#editing-content}
 
-A edição de conteúdo é simples e intuitiva. Entrada [modo de edição,](#edit-mode) à medida que você passa o mouse sobre o conteúdo no editor, o conteúdo editável é realçado com uma caixa azul.
+A edição de conteúdo é simples e intuitiva. Nos modos de edição ([modo texto](#text-mode), [modo de mídia](#media-mode), e [modo do componente](#component-mode)), conforme você passa o mouse sobre o conteúdo no editor, o conteúdo editável é realçado com uma caixa azul.
 
 ![O conteúdo editável é destacado por uma caixa azul](assets/editable-content.png)
 
@@ -182,11 +265,13 @@ Basta tocar ou clicar no conteúdo na caixa azul para iniciar um editor local qu
 
 Observe que, no modo de edição, tocar ou clicar no conteúdo tenta selecioná-lo para edição. Se você deseja navegar pelo seu conteúdo utilizando os links, alterne para o [modo de visualização.](#preview-mode)
 
+Dependendo do modo em que estiver e do conteúdo selecionado, você pode ter opções de edição diferentes no local. Além disso, talvez seja possível revisar propriedades adicionais para o conteúdo usando o [painel de componentes.](#component-rail)
+
 ## Visualização de conteúdo {#previewing-content}
 
 Ao terminar de editar o conteúdo, você geralmente deseja navegar por ele e observar como ele é exibido em outras páginas. No [modo de visualização](#preview-mode), é possível clicar em links e navegar pelo conteúdo, como um leitor faria. O conteúdo é renderizado no editor como seria publicado.
 
-Note que, no modo de visualização, a ação de tocar ou clicar no conteúdo funciona da mesma forma que para um leitor do conteúdo. Se desejar selecionar o conteúdo para edição, alterne para o [modo de edição.](#edit-mode)
+Note que, no modo de visualização, a ação de tocar ou clicar no conteúdo funciona da mesma forma que para um leitor do conteúdo. Se desejar selecionar o conteúdo para edição, alterne para um modo de edição como [modo texto](#text-mode) ou [modo de mídia.](#media-mode)
 
 ## Recursos adicionais {#additional-resources}
 

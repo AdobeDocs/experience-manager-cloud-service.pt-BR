@@ -2,12 +2,13 @@
 title: Introdução ao Editor visual universal
 description: Saiba como o Editor visual universal (também conhecido como Editor universal) permite realizar a edição de experiências headless e headful no estilo “WYSIWYG” (“o que você vê é o formato final”). Entenda como ele pode ajudar criadores de conteúdo a entregar experiências excepcionais, aumentar a velocidade do conteúdo e como ele oferece uma experiência de desenvolvedor de última geração.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
 workflow-type: tm+mt
 source-wordcount: '933'
 ht-degree: 88%
 
 ---
+
 
 # Introdução ao Editor visual universal {#introduction}
 
@@ -29,7 +30,7 @@ O Editor universal pode ser utilizado em qualquer implementação, para qualquer
 
 Como as experiências podem ser criadas de várias maneiras diferentes, qualquer implementação pode usar o Editor universal para que os autores possam realizar edição no contexto.
 
-Os usuários geralmente pensam que uma implementação headless limita os autores à edição de todo o conteúdo em uma interface do usuário baseada em formulários, mas isso não é verdade com o Universal Editor
+Os usuários geralmente pensam que uma implementação headless limita os autores à edição de todo o conteúdo em uma interface do usuário baseada em formulários, mas não é o caso do Universal Editor
 
 Os requisitos para uma implementação usar o Editor universal são diretos e oferecem suporte para o seguinte:
 
