@@ -2,10 +2,10 @@
 title: Pessoas certas, funções certas
 description: Pessoas certas, funções certas
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
 workflow-type: tm+mt
-source-wordcount: '831'
-ht-degree: 80%
+source-wordcount: '847'
+ht-degree: 78%
 
 ---
 
@@ -73,7 +73,7 @@ Agora que você sabe que funções são necessárias, examine o gráfico abaixo 
 
 <br>
 
-![](/help/overview/assets/team_involvement2.png)
+![Gráfico de barras horizontal que mostra funções fictícias e seu nível de envolvimento na equipe do AEM Assets.](/help/overview/assets/team_involvement2.png)
 
 >[!TIP]
 >

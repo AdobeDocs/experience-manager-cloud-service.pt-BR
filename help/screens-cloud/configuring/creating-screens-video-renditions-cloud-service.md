@@ -2,9 +2,9 @@
 title: Criação de representações de vídeo no Screens as a Cloud Service
 description: Esta página descreve como criar representações de vídeo no Screens as a Cloud Service.
 exl-id: a9c46036-cd29-47fa-81d9-c865cf22c98a
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '367'
 ht-degree: 1%
 
 ---
@@ -37,15 +37,15 @@ Siga as etapas abaixo para criar representações de vídeo no Screens as a Clou
 
 1. Insira o **Nome**, como **ScreensProcessingProfile**.
 
-   ![](/help/screens-cloud/assets/configure/screens-video-3.png)
+   ![Processando a caixa de diálogo Perfil mostrando o campo Nome destacado.](/help/screens-cloud/assets/configure/screens-video-3.png)
 
 1. Navegue até **Vídeo** para adicionar uma codificação de vídeo e clique em **Adicionar novo**.
 
-   ![](/help/screens-cloud/assets/configure/screens-video-4a.png)
+   ![Processando a caixa de diálogo Perfil mostrando o botão Adicionar novo realçado.](/help/screens-cloud/assets/configure/screens-video-4a.png)
 
 1. Insira o **Nome da codificação** como , **screens-fullhd** e a variável **Taxa de bits** as **2500**.
 
-   ![](/help/screens-cloud/assets/configure/screens-video-4.png)
+   ![Processando a caixa de diálogo Perfil mostrando o botão Salvar destacado.](/help/screens-cloud/assets/configure/screens-video-4.png)
 
    >[!IMPORTANT]
    >Use o nome da codificação que começa com &quot;screens-&quot;. Somente essas representações de vídeo são consideradas para reproduzir a experiência de vídeo no Screens as a Cloud Service. Insira a taxa de bits que funciona em seus vídeos (2500 kbps para vídeo de 720 px e 5000 kbps para 1080 px).

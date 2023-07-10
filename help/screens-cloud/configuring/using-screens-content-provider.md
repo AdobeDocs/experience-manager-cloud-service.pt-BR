@@ -2,10 +2,10 @@
 title: Utilização do provedor de conteúdo do Screens
 description: Esta página descreve como usar o Provedor de conteúdo do Screens para criar conteúdo.
 exl-id: ed7de2c0-13cf-4ce0-8794-aef918cf8e71
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
 workflow-type: tm+mt
-source-wordcount: '353'
-ht-degree: 16%
+source-wordcount: '414'
+ht-degree: 14%
 
 ---
 
@@ -30,21 +30,21 @@ Siga as etapas abaixo para fazer logon no Provedor de conteúdo do Screens:
 1. Navegue até [Adobe Experience Cloud](https://experience.adobe.com) Home page.
 
 1. Selecione **Experience Manager**.
-   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page1.png)
+   ![Página de aterrissagem para Acesso rápido às áreas do Experience Manager.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page1.png)
 
 1. Clique em **Launch** do cartão do Cloud Manager. Depois de fazer logon no [!UICONTROL Cloud Manager], você estará pronto para usar a Interface do usuário (UI).
-   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page2.png)
+   ![Quatro áreas do Cloud Manager — Brand Portal, Cloud Manager, Cloud Acceleration Manager e Distribuição de software — cada uma mostrando seu próprio botão do Launch.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page2.png)
 
 1. Selecione o programa para o Screens as a Cloud Service e clique no ícone, como mostrado abaixo, para abrir o do Cloud Manager **Visão geral** para esse programa específico.
 
-   ![](/help/screens-cloud/assets/configure/screens-cp-1.png)
+   ![O ícone da página Visão geral do Cloud Manager é exibido na extremidade esquerda de uma barra de ferramentas.](/help/screens-cloud/assets/configure/screens-cp-1.png)
 
    >[!NOTE]
    >Se você não criou nenhum programa, consulte [Primeiro logon no Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/first-time-login-screens-cloud.html?lang=en). O tópico orienta você na adição de um programa para o Screens as a Cloud Service no Cloud Manager.
 
 1. Selecione o link na **Ambientes** para poder acessar o Provedor de conteúdo do Screens.
 
-   ![](/help/screens-cloud/assets/configure/screens-cp-2.png)
+   ![Link realçado no cartão Ambientes que permite acessar o Provedor de conteúdo do Screens.](/help/screens-cloud/assets/configure/screens-cp-2.png)
 
    Depois de fazer logon no Provedor de conteúdo do Screens, agora você está pronto para criar seu conteúdo na reprodução de conteúdo.
 
