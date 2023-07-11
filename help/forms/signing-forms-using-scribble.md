@@ -10,9 +10,9 @@ discoiquuid: 76d178d1-8e40-41b3-80d4-66b2f8d04211
 docset: aem65
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
-source-git-commit: 76f13cb4236b8c7eb515d647a1cede6fa2cf4799
+source-git-commit: fce6a3dff4136aa9ea94f5fdd03dd7a6341b8a9d
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '641'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Você pode usar o **Rabiscar a assinatura** componente e **Etapa de assinatura**
 
 Depois de tocar em Concluído ![aem_forms_save](assets/aem_forms_save.png) ícone na janela Assinatura, não é possível editar a assinatura. No caso, se você quiser editar a assinatura, desconsidere a assinatura atual e assine novamente usando a opção Pincel/Teclado acima.
 
-Você pode tocar no **Configurar** ![](assets/configure.png) ícone para definir a proporção da tela Assinatura Escrita.
+Você pode tocar no **Configurar** ![ícone de configuração](assets/configure.png) ícone para definir a proporção da tela Assinatura Escrita.
 * Quando a proporção da tela Assinatura Escrita for menor que 1, as informações de localização geográfica serão adicionadas na parte inferior da tela Assinatura Escrita.
 
 
@@ -46,6 +46,7 @@ Você pode tocar no **Configurar** ![](assets/configure.png) ícone para definir
 >[!NOTE]
 >
 >As assinaturas são sempre salvas em formato PNG.
+>
 
 ## Configurar um formulário adaptável para usar a assinatura à mão {#configure-an-adaptive-form-to-use-scribble-signature}
 

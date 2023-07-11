@@ -3,9 +3,9 @@ title: Diferenças entre o AEM 6.5 Forms e o AEM Cloud Services
 description: Você é um usuário do Experience Manager Forms e deseja atualizar para o Adobe Experience Manager Forms as a Cloud Service? Compare o AEM 6.5 Forms e o AEM Cloud Services e conheça as alterações mais importantes antes de atualizar ou migrar para o Cloud Service.
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: 1d16797f741fc9032356564061f2b6743d4c7936
+source-git-commit: fce6a3dff4136aa9ea94f5fdd03dd7a6341b8a9d
 workflow-type: tm+mt
-source-wordcount: '1405'
+source-wordcount: '1417'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ O Adobe Experience Manager Forms as a Cloud Service traz algumas alterações no
 
 * Os desenvolvedores mantêm o código para o Cloud Service e o ambiente de desenvolvimento local em um [repositório Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/cloud-manager-repositories.html). Um repositório Git, com base no Arquétipo AEM, é criado automaticamente na criação de um programa as a Cloud Service AEM.
 
-  ![](/help/forms/assets/git-repo-local-and-forms-cs.png)
+  ![criação automática de repositório git no programa AEM as a cloud service](/help/forms/assets/git-repo-local-and-forms-cs.png)
 
 * O fluxo de desenvolvimento do Forms as a Cloud Service está alinhado ao Arquétipo AEM do AEM Cloud Service. No entanto, há algumas alterações necessárias para que os projetos do Adobe Experience Manager Maven sejam compatíveis com o AEM Cloud Service. Em um alto nível, o AEM requer uma separação de conteúdo e código em subpacotes discretos para respeitar a divisão entre conteúdo mutável e imutável. Use o [Ferramenta Repository Modernizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/repo-modernizer.html) reestruturar pacotes de projetos existentes separando o conteúdo e o código em pacotes discretos para serem compatíveis com a estrutura do projeto definida para o Adobe Experience Manager as a Cloud Service.
 
