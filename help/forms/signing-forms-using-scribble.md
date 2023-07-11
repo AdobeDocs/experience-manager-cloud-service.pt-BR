@@ -10,9 +10,9 @@ discoiquuid: 76d178d1-8e40-41b3-80d4-66b2f8d04211
 docset: aem65
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
-source-git-commit: fce6a3dff4136aa9ea94f5fdd03dd7a6341b8a9d
+source-git-commit: 50f5b34fa9453fd6d8e85290f69194622afeb42c
 workflow-type: tm+mt
-source-wordcount: '641'
+source-wordcount: '643'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Você pode tocar no **Configurar** ![ícone de configuração](assets/configure.
    >
    >O componente Etapa de assinatura ocupa toda a largura disponível para o formulário. É recomendável não ter nenhum outro componente na seção que contém o componente Etapa de assinatura.
 
-1. No Navegador de conteúdo, toque em **Contêiner de formulário** e toque no **Configurar** ![](assets/configure.png) ícone. Ela abre as propriedades do navegador e exibe as propriedades do contêiner do Formulário adaptável. Navegue até **Contêiner de formulário adaptável** > **Assinatura eletrônica** e desmarque a opção **Ativar o Adobe Sign** opção. Toque no botão Concluído ![aem_forms_save](assets/aem_forms_save.png) ícone para salvar as alterações.
+1. No Navegador de conteúdo, toque em **Contêiner de formulário** e toque no **Configurar** ![ícone de configuração](assets/configure.png) ícone. Ela abre as propriedades do navegador e exibe as propriedades do contêiner do Formulário adaptável. Navegue até **Contêiner de formulário adaptável** > **Assinatura eletrônica** e desmarque a opção **Ativar o Adobe Sign** opção. Toque no botão Concluído ![aem_forms_save](assets/aem_forms_save.png) ícone para salvar as alterações.
 
    >[!NOTE]
    >
