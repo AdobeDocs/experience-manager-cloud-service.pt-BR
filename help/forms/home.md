@@ -3,12 +3,13 @@ title: Introdução ao  [!DNL AEM Forms]  as a Cloud Service
 description: Descubra o AEM Forms e saiba como ele ajuda você a produzir formulários e documentos prontos para os negócios. Saiba mais sobre a Plataforma como serviço (PaaS), como gerenciar formulários digitais e processos comerciais de nível corporativo, e a conectar o Forms ao Adobe Sign e a fontes de dados atuais.
 landing-page-description: Saiba como usar formulários no AEM as a Cloud Service.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: 87aeebad2576e91472530a2617b23bece4cd453f
+source-git-commit: 6f07493714c68cb7c6e96a252c4ef1ff9d6ba9ac
 workflow-type: tm+mt
-source-wordcount: '1117'
-ht-degree: 93%
+source-wordcount: '1137'
+ht-degree: 92%
 
 ---
+
 
 # Introdução ao AEM Forms as a Cloud Service {#introduction}
 
@@ -58,5 +59,12 @@ O serviço se integra ao Adobe Analytics, que permite capturar e rastrear as mé
 | Assinaturas eletrônicas | Integre-se às soluções Adobe Sign e Adobe Sign para o governo a fim de enviar facilmente Forms e documentos aos usuários para assinaturas eletrônicas: <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html?lang=pt-br">Assinar eletronicamente um formulário adaptável com o Adobe Sign </a></li><li></a> <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=en#sign-document-step">Assinar eletronicamente um documento com fluxos de trabalho do Adobe Sign e do AEM</a></li></ul> |
 | Analytics do Forms | Use o Adobe Analytics para obter insights valiosos sobre o comportamento e as preferências do usuário: <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/integrate-aem-forms-with-adobe-analytics.html?lang=pt-BR">Conectar um formulário adaptável ao Adobe Analytics</a></li></ul> |
 | Fontes de dados | Conecte facilmente seus formulários e documentos com fontes de dados externas para recuperar e enviar dados: <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html?lang=pt-BR">Conectar-se a um ponto de acesso RDBMS ou Rest</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=pt-BR">Conecte-se ao serviço de nuvem Microsoft® Dynamics 365 ou Salesforce</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html?lang=pt-BR">Conectar-se ao Microsoft® Azure Blob Storage</a></li></ul> |
+
+
+## Artigos relacionados
+
+* [Integrar a um ambiente Cloud Service](/help/forms/setup-forms-cloud-service.md)
+* [Configurar um ambiente de desenvolvimento local](/help/forms/setup-local-development-environment.md)
+* [Migração do AEM 6.5 Forms para o Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
 
 
