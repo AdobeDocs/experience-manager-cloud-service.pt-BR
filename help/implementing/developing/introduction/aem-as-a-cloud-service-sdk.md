@@ -2,10 +2,10 @@
 title: SDK do AEM as a Cloud Service
 description: Uma visão geral do Kit de Desenvolvimento de Software as a Cloud Service AEM
 exl-id: 06f3d5ee-440e-4cc5-877a-5038f9bd44c6
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 33ba3e88a4116674c70c44a29273a04544b6b39b
 workflow-type: tm+mt
-source-wordcount: '1167'
-ht-degree: 1%
+source-wordcount: '1239'
+ht-degree: 2%
 
 ---
 
@@ -33,6 +33,10 @@ O SDK as a Cloud Service do AEM é usado para criar e implantar código personal
 * **Implantar artefatos**. Os artefatos são implantados no servidor local.
 
 As mesmas etapas são executadas pelo Cloud Manager ao implantar em ambientes da nuvem. A execução de builds localmente permite o desenvolvimento e o teste locais. Os desenvolvedores podem descobrir problemas de código ou estruturais com eficiência antes de confirmar o controle de origem e acionar as implantações do Cloud Manager, que podem levar mais tempo.
+
+>[!NOTE]
+>
+>O SDK as a Cloud Service do AEM deve ser construído com uma distribuição e uma versão do Java compatíveis com o [Ambiente de compilação do Cloud Manager](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md). Os clientes do AEM as a Cloud Service podem baixar o JDK do Oracle no [Portal de distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) e terão suporte estendido para o Java 11 até setembro de 2026, devido ao licenciamento e aos termos de suporte da Adobe para a tecnologia Java do Oracle, quando usada em projetos Adobe Experience Manager.
 
 ## Acesso ao SDK do AEM as a Cloud Service {#accessing-the-aem-as-a-cloud-service-sdk}
 
