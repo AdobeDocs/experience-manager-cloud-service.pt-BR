@@ -2,10 +2,10 @@
 title: Criação de conteúdo com o Editor universal
 description: Saiba como é fácil e intuitivo para os autores criarem conteúdo utilizando o Editor universal.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: c6ab2d9b01a3f1abedb06d1d413e7eceb8b1c031
+source-git-commit: 05554f397a843ede5a723b206b6e0748e2d6ba96
 workflow-type: tm+mt
-source-wordcount: '1557'
-ht-degree: 49%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -17,7 +17,7 @@ Saiba como é fácil e intuitivo para os autores criarem conteúdo utilizando o 
 
 O Editor universal permite editar qualquer aspecto de qualquer conteúdo em qualquer implementação para que você possa fornecer experiências excepcionais, aumentar a velocidade do conteúdo e fornecer uma experiência do desenvolvedor de última geração.
 
-Para fazer isso, o Editor universal fornece aos autores de conteúdo uma interface intuitiva que requer treinamento mínimo para simplesmente serem capazes de começar a editar o conteúdo.
+Para fazer isso, o Editor universal fornece aos autores de conteúdo uma interface intuitiva que requer treinamento mínimo para simplesmente serem capazes de começar a editar o conteúdo. Este documento descreve a experiência de criação do Universal Editor.
 
 >[!TIP]
 >
@@ -25,7 +25,7 @@ Para fazer isso, o Editor universal fornece aos autores de conteúdo uma interfa
 
 >[!NOTE]
 >
->Atualmente, o Editor universal está em desenvolvimento e não pode editar todos os tipos de conteúdo.
+>O Editor Universal ainda está em desenvolvimento. No momento, não é possível editar todos os tipos de conteúdo.
 
 ## Preparação do aplicativo {#prepare-app}
 
@@ -201,13 +201,23 @@ No modo de componente, a página é renderizada no editor, mas o autor de conte�
 
 ![Modo de componente](assets/component-mode.png)
 
+Quando você seleciona um fragmento de conteúdo, os detalhes dele são exibidos no [painel de componentes.](#component-rail)
+
 >[!TIP]
 >
 >Usar a tecla de atalho `C` para alternar para o modo de componente.
 
->[!NOTE]
+#### Editar {#edit}
+
+Quando em [modo componente,](#component-mode) se você selecionar um Fragmento de conteúdo, a opção de edição aparecerá no painel de modo.
+
+![Ícone Editar](assets/edit.png)
+
+Tocar ou clicar no botão de edição abre o editor de Fragmento de conteúdo em uma nova guia, permitindo editar o conteúdo referenciado, bem como o texto e o conteúdo de mídia no Editor universal.
+
+>[!TIP]
 >
->O modo de componente ainda está em desenvolvimento e está atualmente limitado à seleção de componentes.
+>Usar a tecla de atalho `E` para editar um componente selecionado.
 
 ### O editor {#editor}
 
@@ -230,9 +240,11 @@ No modo de propriedades, o painel mostra as propriedades do componente atualment
 
 ![Modo de propriedades](assets/properties-mode.png)
 
-Os detalhes do componente selecionado são mostrados no painel. Observe que nem todos os componentes precisam ser mostrados.
+Os detalhes do componente selecionado são mostrados no painel. Se você selecionou um Fragmento de conteúdo usando [modo componente,](#component-mode) você pode modificar as configurações no painel de componentes. As alterações são salvas automaticamente pelo Universal Editor.
 
 ![Detalhes do componente](assets/component-details.png)
+
+Observe que nem todos os componentes têm detalhes que podem ser mostrados.
 
 >[!TIP]
 >
@@ -259,13 +271,17 @@ A edição de conteúdo é simples e intuitiva. Nos modos de edição ([modo tex
 
 ![O conteúdo editável é destacado por uma caixa azul](assets/editable-content.png)
 
-Basta tocar ou clicar no conteúdo na caixa azul para iniciar um editor local que permite fazer as alterações. Pressione Enter ou Return para salvar as alterações.
+Basta tocar ou clicar no conteúdo na caixa azul para iniciar um editor local que permite fazer as alterações. Suas alterações são salvas automaticamente.
 
 ![Editar o conteúdo](assets/editing-content.png)
 
 Observe que, no modo de edição, tocar ou clicar no conteúdo tenta selecioná-lo para edição. Se você deseja navegar pelo seu conteúdo utilizando os links, alterne para o [modo de visualização.](#preview-mode)
 
-Dependendo do modo em que estiver e do conteúdo selecionado, você pode ter opções de edição diferentes no local. Além disso, talvez seja possível revisar propriedades adicionais para o conteúdo usando o [painel de componentes.](#component-rail)
+Dependendo do [modo](#mode-rail) Se estiver no e o conteúdo selecionado, você pode ter opções de edição diferentes no local.
+
+Além disso, talvez seja possível revisar propriedades adicionais para o conteúdo usando o [painel de componentes.](#component-rail) Por exemplo, se você selecionar um componente de rich text, poderá editar as opções de formatação no painel de componentes.
+
+![Edição de um componente de rich text](assets/rich-text-editing.png)
 
 ## Visualização de conteúdo {#previewing-content}
 
