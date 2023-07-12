@@ -2,12 +2,13 @@
 title: Gerenciar certificados SSL
 description: Saiba como usar o Cloud Manager para verificar o status dos certificados SSL e como editá-los, substituí-los, atualizá-los e excluí-los.
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: aeb407f8971dabb4e86203b3cee82318330638b0
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 79%
+source-wordcount: '646'
+ht-degree: 76%
 
 ---
+
 
 # Gerenciar certificados SSL {#managing-ssl-certificates}
 
@@ -34,6 +35,7 @@ Quando um certificado expira, todos os domínios que usem o certificado expirado
 1. Navegue até a tela **Certificados SSL** da tela **Ambientes**.
 1. Você verá uma tabela com uma linha para cada certificado SSL que foi instalado com êxito em seu programa. Clique no botão de reticências na extremidade direita da linha do certificado que deseja atualizar e selecione **Exibir e atualizar**.
 1. Os detalhes do certificado são exibidos e podem ser atualizados.
+1. Execute o pipeline para implantar o certificado atualizado.
 
 >[!NOTE]
 >
@@ -56,6 +58,7 @@ Siga estas etapas para excluir um certificado SSL.
 1. Navegue até a tela **Certificados SSL** da tela **Ambientes**.
 1. Você verá uma tabela com uma linha para cada certificado SSL que foi instalado com êxito em seu programa. Clique no botão de reticências na extremidade direita da linha do certificado que deseja excluir e selecione **Excluir**.
 1. Confirme a exclusão na caixa de diálogo **Excluir certificado SSL**.
+1. Execute o pipeline para desimplantar o certificado excluído.
 
 >[!NOTE]
 >
