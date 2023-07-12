@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 53997540cc469f4cc2ad747ca4e52b531a7b193e
+source-git-commit: 8d40f259e70ef73285aafcb736e1f9d720380f7d
 workflow-type: tm+mt
-source-wordcount: '2246'
+source-wordcount: '2250'
 ht-degree: 5%
 
 ---
@@ -126,7 +126,7 @@ No envio de um formulário, você pode redirecionar o usuário para outra págin
 
    * Para configurar uma mensagem personalizada ou de agradecimento, para na opção Enviar, selecione o **[!UICONTROL Mostrar mensagem]** e forneça uma mensagem na caixa de diálogo **[!UICONTROL Conteúdo da mensagem]** caixa. É uma caixa de rich text, você pode usar a opção de tela cheia para exibir todos os itens de rich text disponíveis.
 
-## Configurar um esquema ou modelo de dados de formulário {#configure-schema-or-data-model-for-form}
+## Configurar um esquema ou modelo de dados de formulário para um formulário adaptável{#configure-schema-or-data-model-for-form}
 
 Você pode usar o Modelo de dados de formulário para conectar um formulário a uma Fonte de dados para enviar e receber dados com base nas ações do usuário. Você também pode conectar um formulário a um esquema JSON para receber os dados enviados em um formato predefinido. Com base no requisito, conecte seu formulário a um esquema JSON ou modelo de dados de formulário:
 
