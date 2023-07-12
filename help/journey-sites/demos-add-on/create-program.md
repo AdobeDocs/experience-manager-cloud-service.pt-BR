@@ -2,12 +2,13 @@
 title: Criar programa
 description: Saiba como configurar um novo programa e pipeline para implantar o complemento.
 exl-id: 06287618-0328-40b1-bba8-84002283f23f
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 7c33a618f474914ca80dff525552017c55a32517
 workflow-type: tm+mt
-source-wordcount: '713'
-ht-degree: 97%
+source-wordcount: '709'
+ht-degree: 68%
 
 ---
+
 
 # Criar programa {#creating-a-program}
 
@@ -47,48 +48,36 @@ Depois de fazer logon no Cloud Manager, você pode criar um novo programa de san
 
 1. Toque ou clique em **Adicionar programa** na parte superior direita da janela.
 
-1. Na caixa de diálogo **Vamos criar seu programa** verifique se **Adobe Experience Manager** está selecionado em **Produtos** e toque ou clique em **Continuar**.
+1. No **Vamos criar o seu programa** diálogo:
+
+   1. Forneça um **Nome de programa** para descrever o programa.
+   1. Toque ou clique em **Configurar uma sandbox** para o **Objetivo do programa**
+   1. Toque ou clique em **Continuar**.
 
    ![Caixa de diálogo Criar programa](assets/create-program.png)
 
-1. Na próxima caixa de diálogo:
+1. No **Configurar sua sandbox** no **Soluções e complementos** , expanda a **Sites** entrada na lista tocando ou clicando nela e, em seguida, marque **Demonstrações de referência**.
 
-   * Forneça um **Nome de programa** para descrever o programa.
-   * Toque ou clique em **Configurar uma sandbox** para o **Objetivo do programa**
+   * Se você também quiser criar demonstrações para o AEM Screens, marque a opção **Screens** na lista também. Toque ou clique em **Atualizar**.
 
-   Toque ou clique em **Criar**.
+   ![Seleção de complemento para demonstração de referência na configuração do programa](assets/select-reference-demo-add-on.png)
 
-   ![Nome do programa](assets/program-name.png)
 
-1. Você é levado para a tela de visão geral do programa, onde pode observar o processo de criação do programa. O Cloud Manager fornece estimativas do tempo restante. Você pode sair dessa tela enquanto o programa é criado e retornar posteriormente, se necessário.
+1. Toque ou clique **Criar** O e o Cloud Manager começam a configurar seu programa de sandbox. Você é levado à tela de visão geral do programa e uma breve notificação de banner indica que o processo foi iniciado. Um cartão foi adicionado à página de visão geral do novo programa. O processo de instalação levará alguns minutos para ser concluído.
 
-   ![Criação do programa](assets/program-creation.png)
+1. Quando a configuração for concluída, o cartão do ambiente na página de visão geral mostrará seu status como **Pronto**. Toque ou clique no cartão para abrir o ambiente.
 
-1. Após a conclusão, o Cloud Manager apresenta uma visão geral incluindo os ambientes e pipelines criados automaticamente.
+   ![Criação do programa concluída](assets/ready.png)
 
-   ![Criação do programa concluída](assets/creation-complete.png)
+1. Seu ambiente está pronto e o complemento agora está habilitado como uma opção, mas o conteúdo da demonstração deve ser implantado no AEM para estar disponível. Para fazer isso, toque ou clique no botão de reticências ao lado do pipeline Implantar no desenvolvimento na **Pipelines** e selecione **Executar**.
 
-1. Edite os detalhes do programa clicando no nome do programa no canto superior esquerdo da página e, na lista suspensa, selecione **Editar programa**.
-
-   ![Editar programa](assets/edit-program.png)
-
-1. Na caixa de diálogo **Editar programa**, alterne para a guia **Soluções &amp; Complementos**.
-
-   ![Caixa de diálogo Editar programa](assets/edit-program-dialog.png)
-
-1. Na guia **Soluções &amp; Complementos**, expanda a entrada **Sites** na lista e, em seguida, marque a opção **Demonstrações de referência**. Se você também quiser criar demonstrações para o AEM Screens, marque a opção **Screens** na lista também. Toque ou clique em **Atualizar**.
-
-   ![Opção Verificar demonstrações de referência](assets/edit-program-add-on.png)
-
-1. O complemento agora é ativado como uma opção, mas seu conteúdo deve ser implantado para o AEM estar disponível. De volta à página de visão geral do programa, toque ou clique em **Iniciar** para iniciar o pipeline para implantar o conteúdo complementar no AEM.
-
-   ![Início](assets/deploy.png)
+   ![Início](assets/run.png)
 
 1. O pipeline é iniciado e você é direcionado a uma página detalhando o progresso da implantação. Você pode sair dessa tela enquanto o programa é criado e retornar posteriormente, se necessário.
 
    ![Implantação](assets/deployment.png)
 
-Quando o pipeline estiver concluído, o complemento e seu conteúdo de demonstração estarão disponíveis para uso no ambiente de criação do AEM.
+O pipeline pode levar vários minutos para ser concluído. Uma vez concluído, o complemento e seu conteúdo de demonstração estarão disponíveis para uso no ambiente de criação do AEM.
 
 ## O que vem a seguir {#what-is-next}
 
