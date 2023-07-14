@@ -5,7 +5,7 @@ exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
 source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
 source-wordcount: '1715'
-ht-degree: 85%
+ht-degree: 89%
 
 ---
 
@@ -30,17 +30,17 @@ Antes de lidar com os Fragmentos de conteúdo, veja uma introdução (muito) rá
 
 ### Autor, visualização e publicação {#author-preview-publish}
 
-Uma instalação do AEM geralmente consiste em três ambientes:
+Uma instalação do AEM geralmente conta com três ambientes:
 
 * Autor
 * Publicação
-* Visualizar
+* Visualização
 
 Você faz logon e usa o ambiente de criação para gerar o seu conteúdo. Quando estiver pronto, publique seu conteúdo para que ele fique disponível. Para headless, isso seria para outros aplicativos, para páginas da Web, isso seria para os leitores na Web.
 
 Para obter mais detalhes, consulte os Conceitos de criação.
 
-No **Fragmentos de conteúdo** console, você também pode publicar na **Serviço de visualização**, para teste e visualização, antes de Publicar. Consulte Publicar e visualizar um fragmento.
+Usando o console de **fragmentos de conteúdo**, você também pode publicar no **serviço de visualização** para testar e visualizar antes de publicar. Consulte Publicar e visualizar um fragmento.
 
 ### Fazer logon {#signing-in}
 
@@ -155,7 +155,7 @@ Depois de criar a pasta, você pode abrir suas **Propriedades**. Aqui estão vá
 
 Em seguida, navegue por essas pastas para criar e editar os Fragmentos de conteúdo.
 
-#### Por segurança - Configuração dos serviços de pasta na nuvem  {#cloud-services-folder}
+#### Por segurança - Configuração dos serviços de pasta na nuvem {#cloud-services-folder}
 
 Por segurança...
 
@@ -272,7 +272,7 @@ As ações de publicação estão disponíveis no editor:
 
 >[!NOTE]
 >
->Você também pode publicar seu fragmento por meio da **Assets** ou **Fragmentos de conteúdo** console.
+>Você também pode publicar seu fragmento usando o console de **Ativos** ou **Fragmentos de conteúdo**.
 
 ## O que vem a seguir {#whats-next}
 
@@ -284,7 +284,7 @@ Agora que você aprendeu o básico, o próximo passo é [Saiba mais sobre refer�
 
 * [Manuseio básico](/help/sites-cloud/authoring/getting-started/basic-handling.md) - esta página se baseia principalmente no console **Sites**, mas muitos/a maioria dos recursos também são relevantes para a criação **Fragmentos de conteúdo** no console **Ativos**.
 
-   * [Painel Navegação  ](/help/sites-cloud/authoring/getting-started/basic-handling.md#navigation-panel)
+   * [Painel Navegação](/help/sites-cloud/authoring/getting-started/basic-handling.md#navigation-panel)
 
    * [O Cabeçalho](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header)
 
@@ -308,13 +308,13 @@ Agora que você aprendeu o básico, o próximo passo é [Saiba mais sobre refer�
 
    * Publicação
 
-      * No editor ou **Assets** console
+      * No editor ou no console de **Ativos**
 
-         * [Publicação rápida   ](/help/assets/manage-publication.md#quick-publish)
+         * [Publicação rápida](/help/assets/manage-publication.md#quick-publish)
 
          * [Gerenciar publicação](/help/assets/manage-publication.md#manage-publication)
 
-      * No **Fragmentos de conteúdo** Console
+      * No console de **Fragmentos de conteúdo**
 
          * [Publicar e visualizar um fragmento de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-previewing-a-fragment)
 

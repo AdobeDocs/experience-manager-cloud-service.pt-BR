@@ -11,7 +11,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: af26c42ddd1594e5622e9b32334ce5508d097582
 workflow-type: tm+mt
 source-wordcount: '4174'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -82,8 +82,8 @@ ht-degree: 97%
    + Notas de versão do Cloud Manager {#cloud-manager}
       + [Notas de versão atuais](/help/implementing/cloud-manager/release-notes/current.md)
       + 2023 {#2023}
-         + [Notas de versão 2023.6.0](/help/implementing/cloud-manager/release-notes/2023/2023-6-0.md)
-         + [Notas de versão 2023.5.0](/help/implementing/cloud-manager/release-notes/2023/2023-5-0.md)
+         + [Notas de versão para 2023.6.0](/help/implementing/cloud-manager/release-notes/2023/2023-6-0.md)
+         + [Notas da versão 2023.5.0](/help/implementing/cloud-manager/release-notes/2023/2023-5-0.md)
          + [Notas de versão 2023.4.0](/help/implementing/cloud-manager/release-notes/2023/2023-4-0.md)
          + [Notas de versão 2023.3.0](/help/implementing/cloud-manager/release-notes/2023/2023-3-0.md)
          + [Notas de versão 2023.2.0](/help/implementing/cloud-manager/release-notes/2023/2023-2-0.md)
@@ -380,7 +380,7 @@ ht-degree: 97%
 + Assets {#assets}
    + [[!DNL Assets] as a  [!DNL Cloud Service]](/help/assets/home.md)
    + [Visão geral e novidades](/help/assets/overview.md)
-   + [Alterações importantes no  [!DNL Assets]  as a  [!DNL Cloud Service]](/help/assets/assets-cloud-changes.md)
+   + [Alterações importantes no [!DNL Assets] as a [!DNL Cloud Service]](/help/assets/assets-cloud-changes.md)
    + [Arquitetura do [!DNL Assets]](/help/assets/architecture.md)
    + [Formatos de arquivo compatíveis](/help/assets/file-format-support.md)
    + [Visão geral dos microsserviços de ativos](/help/assets/asset-microservices-overview.md)
@@ -415,7 +415,7 @@ ht-degree: 97%
       + [Criar e compartilhar pastas privadas](/help/assets/private-folder.md)
       + [Digital Rights Management para ativos](/help/assets/drm.md)
       + [Inserir marca d&#39;água em ativos](/help/assets/watermark-assets.md)
-      + [Processar ativos usando APIs da  [!DNL Creative Cloud] ](/help/assets/cc-api-integration.md)
+      + [Processar ativos usando APIs da [!DNL Creative Cloud] ](/help/assets/cc-api-integration.md)
       + [Tags de cores para imagens](/help/assets/color-tag-images.md)
       + [Gerenciar documentos PDF](/help/assets/manage-pdf-documents.md)
    + Configurar, administrar e estender [!DNL Assets] {#admin}
@@ -436,9 +436,9 @@ ht-degree: 97%
       + [Importar e exportar metadados de ativos](/help/assets/metadata-import-export.md)
       + [Configurar restrições de upload de ativos](/help/assets/configure-asset-upload-restrictions.md)
    + Compartilhar e distribuir ativos {#brand-portal}
-      + [Configurar o  [!DNL Assets]  com o  [!DNL Brand Portal]](/help/assets/configure-aem-assets-with-brand-portal.md)
+      + [Configurar o [!DNL Assets] com o [!DNL Brand Portal]](/help/assets/configure-aem-assets-with-brand-portal.md)
       + [Publicar ativos no  [!DNL Brand Portal]](/help/assets/publish-to-brand-portal.md)
-      + [Publicar ativos do  [!DNL Brand Portal]  no  [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=pt-BR)
+      + [Publicar ativos do [!DNL Brand Portal] no [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=pt-BR)
    + Fragmentos de conteúdo {#content-fragments}
       + [Trabalho com fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md)
       + [Entrega headless com fragmentos de conteúdo e GraphQL](/help/assets/content-fragments/content-fragments-graphql.md)
@@ -497,7 +497,7 @@ ht-degree: 97%
       + [Visualizar ativos do Dynamic Media](/help/assets/dynamic-media/previewing-assets.md)
       + [Adição de ativos do Dynamic Media a páginas](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
       + [Incorporação do visualizador do Dynamic Video ou Image em uma página da Web](/help/assets/dynamic-media/embed-code.md)
-      + [Vincular URLs ao seu aplicativo web.](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
+      + [Vincular URLs ao seu aplicativo web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
       + [Usar conjuntos de regras para transformar URLs](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
       + [Publicar ativos do Dynamic Media](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
       + [Trabalhar com publicação seletiva no Dynamic Media](/help/assets/dynamic-media/selective-publishing.md)
@@ -524,9 +524,9 @@ ht-degree: 97%
    + Integração com o Adobe Workfront {#integrations}
       + [Integrações com [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
       + [Configurar o mapeamento de metadados de ativos](/help/assets/configure-asset-metadata-mapping.md)
-      + [Instalar o  [!DNL enhanced connector]  para o  [!DNL Workfront]](/help/assets/workfront-connector-install.md)
+      + [Instalar o [!DNL enhanced connector] para o [!DNL Workfront]](/help/assets/workfront-connector-install.md)
       + [Remover dependências externas de instalações existentes](/help/assets/remove-external-dependencies.md)
-      + [Configurar o  [!DNL enhanced connector]  para o  [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
+      + [Configurar o [!DNL enhanced connector] para o [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
       + [Atualizar o [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
 + Forms {#forms}
    + Visão geral {#forms-overview}
@@ -539,9 +539,9 @@ ht-degree: 97%
    + Configurar e migrar {#setup-configure-migrate}
       + [Integrar ao ambiente do Cloud Service](/help/forms/setup-forms-cloud-service.md)
       + [Configurar um ambiente de desenvolvimento local](/help/forms/setup-local-development-environment.md)
-      + [Ativar os Componentes principais adaptáveis do Forms no ambiente de desenvolvimento as a Cloud Service e local do AEM Forms](/help/forms/enable-adaptive-forms-core-components.md)
+      + [Habilitar os componentes principais de formulários adaptáveis no AEM Forms as a Cloud Service e no ambiente de desenvolvimento local](/help/forms/enable-adaptive-forms-core-components.md)
       + [Configurar o conector de armazenamento unificado](/help/forms/configure-unified-storage-connector.md)
-      + [Migrar do  [!DNL AEM 6.5 Forms]  ou anterior para o  [!DNL AEM Forms]  as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
+      + [Migrar do [!DNL AEM 6.5 Forms] ou anterior para o [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [Grupos e permissões](/help/forms/forms-groups-privileges-tasks.md)
       + [Importar, exportar e organizar formulários adaptáveis, formulários PDF e outros ativos](/help/forms/import-export-forms-templates.md)
    + Integrar {#integrate}
@@ -554,9 +554,9 @@ ht-degree: 97%
       + Modelo de dados do formulário {#use-form-data-model}
          + [Conectar suas fontes de dados ao Cloud Service](/help/forms/data-integration.md)
          + [Configurar fontes de dados](/help/forms/configure-data-sources.md)
-         + [Configurar OData do  [!DNL Microsoft Dynamics] ](/help/forms/ms-dynamics-odata-configuration.md)
-         + [Configurar armazenamento do  [!DNL Azure] ](/help/forms/configure-azure-storage.md)
-         + [Configurar os serviços em nuvem do  [!DNL Microsoft Dynamics 365]  e do  [!DNL Salesforce] ](/help/forms/configure-msdynamics-salesforce.md)
+         + [Configurar OData do [!DNL Microsoft Dynamics] ](/help/forms/ms-dynamics-odata-configuration.md)
+         + [Configurar armazenamento do [!DNL Azure] ](/help/forms/configure-azure-storage.md)
+         + [Configurar os serviços em nuvem do [!DNL Microsoft Dynamics 365] e do [!DNL Salesforce] ](/help/forms/configure-msdynamics-salesforce.md)
          + [Criar modelo de dados do formulário](/help/forms/create-form-data-models.md)
          + [Trabalhar com o modelo de dados de formulário](/help/forms/work-with-form-data-model.md)
          + [Utilizar modelo de dados do formulário](/help/forms/using-form-data-model.md)
@@ -569,8 +569,8 @@ ht-degree: 97%
             + [Criar temas para um Formulário adaptável - Componentes principais](/help/forms/using-themes-in-core-components.md)
             + [Gerar documento de registro para Formulários adaptáveis](/help/forms/generate-document-of-record-core-components.md)
             + [Criar um formulário adaptável - Componentes principais em uma página do Sites AEM](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
-            + [Usar tradução automática ou tradução humana para traduzir um Formulário adaptável](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
-            + [Configurando página de redirecionamento ou mensagem de agradecimento](/help/forms/configure-redirect-page-or-thank-you-message.md)
+            + [Usar tradução automática ou humana para traduzir um formulário adaptável](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
+            + [Configurar a página de redirecionamento ou mensagem de agradecimento](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [Criar formulários com seções que podem ser repetidas](/help/forms/create-forms-repeatable-sections.md)
       + Criação de Formulários adaptáveis - Componentes básicos {#authoring-adaptive-forms-foundation-components}
          + Converter formulários em PDF em Formulários adaptáveis {#afcs}
@@ -736,7 +736,7 @@ ht-degree: 97%
       + [API GraphQL para fragmentos de conteúdo](/help/headless/graphql-api/content-fragments.md)
       + [Gerenciar pontos de extremidade do GraphQL](/help/headless/graphql-api/graphql-endpoint.md)
       + [IDE GraphiQL](/help/headless/graphql-api/graphiql-ide.md)
-      + [Consultas persistentes de GraphQL ](/help/headless/graphql-api/persisted-queries.md)
+      + [Consultas persistentes de GraphQL](/help/headless/graphql-api/persisted-queries.md)
       + [Otimização de consultas de GraphQL](/help/headless/graphql-api/graphql-optimization.md)
       + [Atualizar fragmentos de conteúdo para a filtragem otimizada de GraphQL](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
       + [Exemplo de consultas GraphQL](/help/headless/graphql-api/sample-queries.md)
@@ -877,7 +877,7 @@ ht-degree: 97%
             + [Sistema de estilos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html?lang=pt-BR)
             + [Exportador JSON para serviços de conteúdo](/help/implementing/developing/components/json-exporter.md)
             + [Ativação de exportação em JSON para um componente](/help/implementing/developing/components/enabling-json-exporter.md)
-            + [Editor de imagem ](/help/implementing/developing/components/image-editor.md)
+            + [Editor de imagem](/help/implementing/developing/components/image-editor.md)
             + [Tags de decoração](/help/implementing/developing/components/decoration-tag.md)
             + [Uso de condições de ocultação](/help/implementing/developing/components/hide-conditions.md)
             + [Guia de referência de componentes](/help/implementing/developing/components/reference.md)

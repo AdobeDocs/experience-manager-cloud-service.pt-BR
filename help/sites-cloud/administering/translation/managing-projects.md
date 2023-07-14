@@ -311,9 +311,9 @@ A tabela a seguir descreve cada status que um trabalho ou um item no trabalho po
 
 | Status | Descrição |
 |---|---|
-| **Rascunho** | O trabalho de tradução não foi iniciado. Os trabalhos de tradução estão em **Rascunho** quando forem criadas. |
+| **Rascunho** | O trabalho de tradução não foi iniciado. Os processos de tradução terão o status **Rascunho** ao serem criados. |
 | **Enviado** | Os arquivos no trabalho de tradução têm esse status quando são enviados com sucesso para o serviço de tradução. Esse status pode ser ativado após os comandos **Escopo da solicitação** ou **Iniciar** serem executados. |
-| **Escopo solicitado** | Para o fluxo de trabalho de tradução humana, os arquivos no trabalho são enviados ao fornecedor de tradução para definição do escopo. Este status aparece após o comando **Solicitar escopo** ser executado.  |
+| **Escopo solicitado** | Para o fluxo de trabalho de tradução humana, os arquivos no trabalho são enviados ao fornecedor de tradução para definição do escopo. Este status aparece após o comando **Solicitar escopo** ser executado. |
 | **Escopo concluído** | O fornecedor definiu o escopo do trabalho de tradução. |
 | **Enviado para tradução** | O proprietário do projeto aceitou o escopo. Esse status indica que o fornecedor de tradução deve começar a traduzir os arquivos na tarefa. |
 | **Tradução em andamento** | Para uma tarefa, a tradução de um ou mais arquivos ainda não foi concluída. Para um item na tarefa, o item está sendo traduzido. |
@@ -444,7 +444,7 @@ Para comparar cópias de idioma ao idioma principal:
    ![Comparar cópias de idioma](../assets/language-copy-compare.png)
 
 1. As duas páginas (lançamento e origem) são abertas lado a lado.
-   * Para obter informações completas sobre como usar esse recurso, consulte [Diferença de página](/help/sites-cloud/authoring/features/page-diff.md).
+   * Para obter informações completas sobre como usar este recurso, consulte [Diferencial de página](/help/sites-cloud/authoring/features/page-diff.md).
 
 ## Mover ou renomear uma página de origem {#move-source}
 

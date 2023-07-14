@@ -7,7 +7,7 @@ exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '2122'
-ht-degree: 94%
+ht-degree: 97%
 
 ---
 
@@ -59,7 +59,7 @@ Para ajudar nisso, é possível visualizar a [Árvore de estrutura](/help/sites-
 >* [Fragmentos de conteúdo configuram componentes para renderização](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
 >* [Compatibilidade com os Fragmentos de conteúdo na API HTTP do AEM Assets](/help/assets/content-fragments/assets-api-content-fragments.md)
 >* [API GraphQL do AEM para uso com Fragmentos de conteúdo](/help/headless/graphql-api/content-fragments.md)
->* [Reutilizar fragmentos de conteúdo usando o MSM para ativos](/help/assets/reuse-assets-using-msm.md) (disponível somente por meio da **Assets** console)
+>* [Reutilizar fragmentos de conteúdo usando o MSM para ativos](/help/assets/reuse-assets-using-msm.md) (disponível somente por meio do console de **Ativos**)
 
 O número de canais de comunicação aumenta anualmente. Normalmente, os canais se referem ao mecanismo de entrega, como:
 
@@ -115,13 +115,13 @@ Juntamente com os recursos de exportação em JSON dos componentes principais do
 
 ## Publicar e visualizar {#publish-and-preview}
 
-Como em todo o conteúdo, você desejará publicar os fragmentos de conteúdo na **[Serviço de publicação](/help/overview/architecture.md#runtime-architecture)**.
+Como acontece com todo conteúdo, em algum momento você desejará publicar os fragmentos de conteúdo no **[serviço de publicação](/help/overview/architecture.md#runtime-architecture)**.
 
-Antes disso, também é possível visualizar uma experiência entregue usando Fragmentos de conteúdo, ao [publicar os fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md##publishing-and-previewing-a-fragment) ao AEM **[Serviço de visualização](/help/overview/architecture.md#runtime-architecture)**.
+Antes disso, também é possível visualizar uma experiência entregue por meio de fragmentos de conteúdo, [publicando os fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md##publishing-and-previewing-a-fragment) no **[serviço de visualização](/help/overview/architecture.md#runtime-architecture)** do AEM.
 
 >[!CAUTION]
 >
->Publicação no **Serviço de visualização** O só está disponível no **Fragmentos de conteúdo** console.
+>A publicação no **serviço de visualização** só está disponível no console de **Fragmentos de conteúdo**.
 
 ## Tipo de conteúdo {#content-type}
 

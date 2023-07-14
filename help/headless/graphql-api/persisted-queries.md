@@ -6,11 +6,11 @@ exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '1681'
-ht-degree: 83%
+ht-degree: 92%
 
 ---
 
-# Consultas persistentes de GraphQL  {#persisted-queries-caching}
+# Consultas persistentes de GraphQL {#persisted-queries-caching}
 
 As consultas persistentes são consultas de GraphQL criadas e armazenadas no servidor do Adobe Experience Manager (AEM) as a Cloud Service. Elas podem ser solicitadas com uma solicitação GET por aplicativos clientes. A resposta para uma solicitação GET pode ser armazenada em cache nas camadas do Dispatcher e do CDN, melhorando, em última análise, o desempenho do aplicativo cliente solicitante. Isso é diferente das consultas de GraphQL padrão, que são executadas usando solicitações POST, onde a resposta não pode ser facilmente armazenada em cache.
 
@@ -359,7 +359,7 @@ Para gerenciar o cache globalmente, você pode [definir as configurações do OS
 
 >[!NOTE]
 >
->A variável **Configuração do Serviço de Consulta Persistente** também é usado para [configuração do código de resposta da consulta](#configuring-query-response-code).
+>A **configuração do Serviço de consulta persistente** também é usada para [configurar o código de resposta da consulta](#configuring-query-response-code).
 
 A configuração padrão OSGi para instâncias de publicação:
 
@@ -378,23 +378,25 @@ A configuração padrão OSGi para instâncias de publicação:
 
 ## Configuração do código de resposta da consulta {#configuring-query-response-code}
 
-Por padrão, a variável `PersistedQueryServlet` envia um `200` quando executa uma consulta, independentemente do resultado real.
+Por padrão, a variável `PersistedQueryServlet` envia uma resposta `200` quando executa uma consulta, independentemente do resultado real.
 
-Você pode [definir as configurações de OSGi](/help/implementing/deploying/configuring-osgi.md) para o **Configuração do Serviço de Consulta Persistente** para controlar qual código de status é retornado pelo `/execute.json/persisted-query` endpoint, quando houver um erro na consulta persistente.
+Você pode [definir as configurações do OSGi](/help/implementing/deploying/configuring-osgi.md) para a **configuração do Serviço de consulta persistente** e controlar o código de status que será retornado pelo ponto de acesso `/execute.json/persisted-query` quando houver um erro na consulta persistente.
 
 >[!NOTE]
 >
->A variável **Configuração do Serviço de Consulta Persistente** também é usado para [gerenciamento de cache](#cache-osgi-configration).
+>A variável **configuração do Serviço de consulta persistente** também é usada para [gerenciamento de cache](#cache-osgi-configration).
 
-O campo `Respond with application/graphql-response+json` (`responseContentTypeGraphQLResponseJson`) pode ser definida conforme necessário:
+O campo `Respond with application/graphql-response+json` (`responseContentTypeGraphQLResponseJson`) pode ser definido conforme necessário:
 
-* `false` (valor padrão): não importa se a consulta persistente é bem-sucedida ou não. A variável `/execute.json/persisted-query` retorna o código de status `200` e a variável `Content-Type` o cabeçalho retornado é `application/json`.
+* `false` (valor padrão):
+não importa se a consulta persistente é bem-sucedida ou não. A variável `/execute.json/persisted-query` retorna o código de status `200` e a variável `Content-Type` o cabeçalho retornado é `application/json`.
 
-* `true`: o endpoint retornará `400` ou `500` conforme apropriado, quando houver qualquer forma de erro ao executar a consulta persistente. Além disso, o resultado `Content-Type` é `application/graphql-response+json`.
+* `true`:
+o ponto de acesso retornará como `400` ou `500` (dependendo do caso) quando houver qualquer forma de erro ao executar a consulta persistente. Além disso, o resultado `Content-Type` é `application/graphql-response+json`.
 
   >[!NOTE]
   >
-  >Para obter mais detalhes, consulte https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes
+  >Para mais detalhes, consulte https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes
 
 ## Codificação do URL de consulta para uso por um aplicativo {#encoding-query-url}
 

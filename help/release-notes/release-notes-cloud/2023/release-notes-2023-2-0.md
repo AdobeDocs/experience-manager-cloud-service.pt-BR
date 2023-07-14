@@ -1,17 +1,17 @@
 ---
-title: Notas de versão do [!DNL Adobe Experience Manager]  as a Cloud Service 2023.2.0.
-description: Notas de versão do [!DNL Adobe Experience Manager]  as a Cloud Service 2023.2.0.
+title: Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2023.2.0.
+description: Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2023.2.0.
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '732'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
 # Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2023.2.0 {#release-notes}
 
-A seção a seguir descreve as notas de versão de recursos do [!DNL Experience Manager] as a Cloud Service 2023.2.0.
+A seção a seguir descreve as notas da versão de recursos do [!DNL Experience Manager] as a Cloud Service 2023.2.0.
 
 >[!NOTE]
 >
@@ -25,7 +25,7 @@ A seção a seguir descreve as notas de versão de recursos do [!DNL Experience 
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento da versão atual (2023.2.0) do [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] é 12 de abril de 2023. A próxima versão (2023.4.0) está planejada para 7 de junho de 2023.
+A data de lançamento da versão atual (2023.2.0) do [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] é 12 de abril de 2023. A próxima versão de recursos (2023.4.0) está planejada para 7 de junho de 2023.
 
 ## Vídeo da versão {#release-video}
 
@@ -35,7 +35,7 @@ Assista ao vídeo de visão geral da versão de fevereiro de 2023 para obter um 
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### Novos recursos no [!DNL Experience Manager Sites] pré-lançamento {#prerelease-sites}
+### Novos recursos no pré-lançamento do [!DNL Experience Manager Sites] {#prerelease-sites}
 
 * Exporte fragmentos de conteúdo do AEM as a Cloud Service para o Adobe Target como ofertas JSON.
 * O suporte para os recursos de paginação e classificação de GraphQL, juntamente com aprimoramentos internos de armazenamento em cache, agora ajuda a melhorar o desempenho de aplicativos clientes dissociados ao buscar grandes conjuntos de conteúdo do AEM usando consultas e filtros de GraphQL complexos.
@@ -86,7 +86,7 @@ Use formulários adaptáveis hedless para permitir que seus desenvolvedores crie
 * criar formulários multicanal de alta qualidade na linguagem de programação de sua escolha
 * integrar formulários nativamente a seus aplicativos móveis e de desktop, sites e aplicativos de bate-papo
 * reutilizar os componentes de interface de sua propriedade com aplicativos de formulários
-* use o poder do Adobe Experience Manager Forms
+* aproveitar o potencial do Adobe Experience Manager Forms
 
 Você pode enviar um email para aem-forms-headless@adobe.com utilizando sua ID de email oficial para participar do programa de adoção antecipada.
 

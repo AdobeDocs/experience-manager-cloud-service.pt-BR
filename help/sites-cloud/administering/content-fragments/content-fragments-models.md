@@ -7,7 +7,7 @@ exl-id: 24b1806f-2e8c-49ec-8cb7-a66a3cbe91cd
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2919'
-ht-degree: 90%
+ht-degree: 91%
 
 ---
 
@@ -183,7 +183,7 @@ O conteúdo (para o campo específico) deve ser exclusivo em todos os fragmentos
 
   >[!CAUTION]
   >
-  >Se você quiser usar o MSM (que cria cópias de Fragmentos de conteúdo), qualquer **Exclusivo** as restrições devem ser removidas de qualquer tipo de dados usado nos respectivos modelos de fragmento de conteúdo. O MSM para fragmentos de conteúdo só está disponível no **Assets** console.
+  >Se desejar usar o MSM (que cria cópias de fragmentos de conteúdo), todas as restrições **exclusivas** devem ser removidas de qualquer tipo de dados usado nos respectivos modelos de fragmento de conteúdo. O MSM para fragmentos de conteúdo só está disponível no console de **Ativos**.
 
 * Consulte **[Referência de conteúdo](#content-reference)** para obter mais detalhes sobre esse tipo de dados específico e suas propriedades.
 

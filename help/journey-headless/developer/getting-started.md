@@ -5,7 +5,7 @@ exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '3084'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
 
@@ -48,7 +48,7 @@ Depois que o conteúdo é criado na instância do autor, ele deve ser publicado 
 
 ### Serviço de visualização {#preview}
 
-Antes de publicar na instância de publicação, você também pode publicar seu fragmento de conteúdo na **Serviço de visualização** para testes e revisão. Isso é feito a partir do **Fragmentos de conteúdo** console.
+Antes de publicar na instância de publicação, você também pode publicar seu fragmento de conteúdo no **serviço de visualização** para testes e revisão. Isso é feito a partir do console **Fragmentos de conteúdo**.
 
 ### Replicação {#replication}
 

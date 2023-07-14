@@ -163,7 +163,7 @@ Ao retornar para o AEM, é possível concluir a configuração do IMS adicionand
    * **Servidor de autorização**: Copiar/colar isso da `aud` linha da seção de **Carga** abaixo, por exemplo, `https://ims-na1.adobelogin.com` no exemplo abaixo
    * **Chave da API**: copie isso da seção [Visão geral](#details-stored-for-the-ims-integration-project) do projeto
    * **Segredo do cliente**: gere isso na seção [Visão geral](#details-stored-for-the-ims-integration-project) do projeto e copie
-   * **Carga**: copie isso da seção [Gerar JWT](#details-stored-for-the-ims-integration-project) 
+   * **Carga**: copie isso da seção [Gerar JWT](#details-stored-for-the-ims-integration-project)
 
    ![Configurações da conta técnica do Adobe IMS](assets/integrate-target-ims-10.png)
 

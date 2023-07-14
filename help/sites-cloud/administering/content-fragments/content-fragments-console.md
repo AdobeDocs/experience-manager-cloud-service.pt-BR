@@ -8,7 +8,7 @@ exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '1103'
-ht-degree: 89%
+ht-degree: 94%
 
 ---
 
@@ -125,9 +125,9 @@ Passar o mouse sobre o nome da pasta mostrará o caminho JCR.
    * Somente informações
 * **Visualização**
    * Somente informações:
-      * **Em sincronia**: o fragmento de conteúdo está em sincronia no **Autor** e **Visualizar** serviços.
-      * **Fora de sincronia**: o fragmento de conteúdo está fora de sincronia no **Autor** e **Visualizar** serviços. Você precisa **Publish** para **Visualizar** para garantir que as duas instâncias retornem para estar em sincronia.
-      * em branco: o fragmento de conteúdo não existe no **Visualizar** serviço.
+      * **Sincronizado**: o fragmento de conteúdo está sincronizado nos serviços de **Autor** e **Visualização**.
+      * **Não sincronizado**: o fragmento de conteúdo não está sincronizado nos serviços de **Autor** e **Visualização**. É necessário **publicar** no serviço de **Visualização** para garantir que as duas instâncias voltem a estar sincronizadas.
+      * Em branco: o fragmento de conteúdo não existe no serviço de **Visualização**.
 * **Modificado**
    * Somente informações
 * **Modificado por**

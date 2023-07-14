@@ -6,7 +6,7 @@ exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '1144'
-ht-degree: 83%
+ht-degree: 96%
 
 ---
 
@@ -30,7 +30,7 @@ A ferramenta **GraphiQL** permite testar e depurar as consultas de GraphQL, poss
 * executar as consultas para ver os resultados imediatamente
 * gerenciar **variáveis de consulta**
 * salvar e gerenciar **consultas persistentes**
-* publicar ou desfazer a publicação, **Consultas persistentes**, para o seu **Publish** ou **Visualizar** serviço; por exemplo, para/de `dev-publish`
+* publicar ou desfazer a publicação de **consultas persistentes** no serviço de **Publicação** ou **Visualização**; por exemplo, para/de `dev-publish`
 * consultar o **histórico** de consultas anteriores
 * usar o **Explorador de documentação** para acessar a documentação; ajudando você a conhecer e entender quais métodos estão disponíveis.
 
@@ -132,9 +132,9 @@ Os caches podem continuar a servir uma resposta em cache em caso de erro de orig
 
 ## Publicação e visualização de consultas persistentes {#publishing-previewing-persisted-queries}
 
-Depois de selecionar a consulta persistente na lista (painel esquerdo), você pode usar o **Publish** ação.
+Depois de selecionar a consulta persistente na lista (painel esquerdo), você pode usar a ação **Publicar**.
 
-Isso ativará o query no ambiente selecionado. Você pode escolher seu **Publish** ambiente (por exemplo, `dev-publish`), ou seu **Visualizar** para facilitar o acesso de seus aplicativos durante os testes.
+Essa ação ativa a consulta no ambiente selecionado. Você pode escolher o ambiente de **Publicação** (por exemplo, `dev-publish`) ou o ambiente de **Visualização** para facilitar o acesso através de seus aplicativos durante os testes.
 
 ![GraphiQL - Consulta persistente publicada](assets/cfm-graphiql-publish.png "GraphiQL - Publicar consulta persistente")
 
@@ -142,15 +142,15 @@ Isso ativará o query no ambiente selecionado. Você pode escolher seu **Publish
 >
 >A definição do cache da consulta persistente `Time To Live` {&quot;cache-control&quot;:&quot;parameter&quot;:value} tem um valor padrão de 2 horas (7200 segundos).
 
-## Cancelamento de publicação de consultas persistentes {#unpublishing-persisted-queries}
+## Desfazer a publicação de consultas persistentes {#unpublishing-persisted-queries}
 
-Como ocorre na publicação, depois de selecionar a consulta persistente na lista (painel esquerdo), você pode usar o **Cancelar publicação** ação.
+Assim como ocorre na publicação, depois de selecionar a consulta persistente na lista (painel esquerdo), você pode usar a ação **Desfazer publicação**.
 
-Isso desativará o query do ambiente selecionado; seu **Publish** ambiente ou seu **Visualizar** ambiente.
+Essa ação desativa a consulta no ambiente selecionado, seja o ambiente de **Publicação** ou de **Visualização**.
 
 >[!NOTE]
 >
->Você também deve garantir que fez as alterações necessárias no aplicativo cliente para evitar possíveis problemas.
+>Você também deve verificar se fez as alterações necessárias no aplicativo cliente para evitar possíveis problemas.
 
 ## Copiar o URL para acessar a consulta diretamente {#copy-url}
 

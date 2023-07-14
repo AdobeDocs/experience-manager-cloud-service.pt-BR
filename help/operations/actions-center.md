@@ -1,13 +1,13 @@
 ---
 title: Centro de ações
-description: Aproveite o Centro de ações para executar ações convenientemente em incidentes e outras informações importantes
+description: Use o Centro de ações para tomar as medidas apropriadas em caso de incidentes e obter outras informações importantes
 hidefromtoc: true
 hide: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '701'
-ht-degree: 27%
+ht-degree: 91%
 
 ---
 
@@ -16,41 +16,41 @@ ht-degree: 27%
 >[!NOTE]
 >Este recurso não foi lançado.
 
-O AEM as Cloud Service envia notificações por email do Centro de Ações quando ocorrem incidentes críticos que exigem ação imediata e recomendações proativas para otimizações. Os exemplos incluem uma fila bloqueada ou um conjunto de credenciais expirando; o conjunto completo de tipos de notificação da Central de Ações pode ser exibido na [tabela abaixo](#supported-notification-types), que se expandirá com o tempo.
+O AEM as Cloud Service envia notificações por email do Centro de Ações quando ocorrem incidentes críticos que exigem ação imediata e recomendações proativas para otimizações. Os exemplos incluem uma fila bloqueada ou um conjunto de credenciais que está expirando. O conjunto completo de tipos de notificação do Centro de ações pode ser visto na [tabela abaixo](#supported-notification-types), que será ampliada ao longo do tempo.
 
-Quando uma notificação por email do Centro de ações for recebida, é possível clicar nela para abrir o Centro de ações do AEM as a Cloud Service com um pop-up que exibe um contexto adicional explicando a ação que um cliente deve tomar.
+Ao receber uma notificação do Centro de ações, você pode clicar nela para abrir o Centro de ações do AEM as a Cloud Service na forma de um pop-up, que exibe um contexto adicional explicando a ação a ser realizada.
 
-Além de exibir informações sobre a notificação por email recém-clicada, o Centro de Ações serve como um hub onde você pode visualizar e gerenciar o conjunto de notificações atuais e mais antigas. <!-- It can be accessed directly at the url TBD (Alexandru: I'm intentionally keeping it TBD for now so customers do not find it) -->
+Além de exibir informações sobre a notificação em que você clicou, o Centro de ações serve como um hub onde você pode visualizar e gerenciar as notificações atuais e anteriores. <!-- It can be accessed directly at the url TBD (Alexandru: I'm intentionally keeping it TBD for now so customers do not find it) -->
 
-Há duas categorias de alto nível de notificações que aparecem no Centro de Ações:
+Há duas categorias de alto nível de notificações que aparecem no Centro de ações:
 
 1. Incidentes Operacionais: quando ocorre um evento que normalmente exige resolução imediata. Por exemplo, resolver o problema de uma fila bloqueada.
 1. Recomendações Proativas: a Adobe tem uma recomendação para uma ação que um cliente deve tomar em breve. Por exemplo, para interromper a referência a uma interface obsoleta.
 
-Consulte a [tabela abaixo](#supported-notification-types) para as notificações atualmente aceitas no Centro de Ações.
+Consulte a [tabela abaixo](#supported-notification-types) para ver as notificações atualmente compatíveis no Centro de ações.
 
-No Centro de Ações, é possível selecionar um programa e um ambiente específicos, o que tem o efeito de filtrar esse escopo.
+No Centro de ações, é possível selecionar um programa e ambiente específicos, que atuam como um filtro nesse escopo.
 
 ## Configuração {#configuration}
 
-Para configurar as notificações por email do Centro de ações de recebimento, crie os Perfis de produto descritos [neste artigo](/help/journey-onboarding/notification-profiles.md), a saber, Notificação de incidente - Cloud Service e Notificação proativa - Cloud Service. Também atribua as IDs de Adobe da organização apropriadas a esses perfis. Isso permite que um administrador determine quais usuários se qualificam para receber essas notificações por email.
+Para configurar o recebimento de notificações por email do Centro de ações, crie os perfis de produto descritos [neste artigo](/help/journey-onboarding/notification-profiles.md), mais especificamente a Notificação de incidente - Cloud Service e Notificação proativa - Cloud Service. Além disso, atribua a esses perfis as Adobe IDs adequadas da sua organização. Isso permite que um administrador determine quais usuários se qualificam para receber essas notificações por email.
 
 >[!NOTE]
->As notificações por email do Centro de Ações funcionam no nível da organização para que os assinantes recebam notificações para todos os programas e ambientes dentro desses programas.
+>As notificações por email do Centro de ações funcionam no nível da organização para que os assinantes recebam notificações de todos os programas e dos ambientes incluídos nesses programas.
 
 ## Fluxo detalhado do usuário {#detailed-user-flow}
 
-Ao clicar no e-mail, você será redirecionado para o Centro de Ações, com um pop-up mostrando o contexto da notificação clicada e, em alguns casos, links para informações adicionais descrevendo como executar uma ação corretiva.
+Ao clicar no email, você será redirecionado para o Centro de ações, onde um pop-up será exibido com o contexto da notificação em que você clicou e, em alguns casos, com links para informações adicionais que descrevem como realizar ações de correção.
 
 ![Detalhes do incidente](/help/operations/assets/incident-details.png)
 
-Clicar no **Saiba mais** navegue pelo usuário até este artigo, onde o tipo de notificação pode ser referenciado na variável [tabela de tipos de notificação compatíveis](#supported-notification-types) abaixo, que fornece orientações sobre as medidas a serem tomadas.
+O link **Saiba mais** direciona a este artigo, onde o tipo de notificação pode ser consultado abaixo na [tabela de tipos de notificação compatíveis](#supported-notification-types), que fornece orientação sobre a ação a ser realizada.
 
-No Centro de Ações, você pode ver uma lista de outras notificações recentes. Recomenda-se que, usando a lista Ações, você reconheça uma notificação para sinalizar ao Adobe que sua organização está ciente da tarefa e para resolver posteriormente a notificação quando uma ação corretiva tiver sido tomada.
+No Centro de ações, é possível ver uma lista de outras notificações recentes. Recomenda-se que, usando a lista Ações, você reconheça uma notificação para sinalizar ao Adobe que sua organização está ciente da tarefa e para resolver posteriormente a notificação quando uma ação corretiva tiver sido tomada.
 
 ![Lista de notificações](/help/operations/assets/notification-list.png)
 
-Na maioria dos casos, o pop-up deve fornecer todo o contexto necessário para resolver o problema. No entanto, se houver dúvidas sobre o Suporte para Adobe, clique no link **Entrar em contato com o suporte** no pop-up. Isso exibirá um formulário de onde você pode descrever a pergunta e enviá-lo para criar um tíquete de suporte, que também incluirá uma referência à notificação específica para que um engenheiro de suporte do Adobe tenha o contexto relevante.
+Na maioria dos casos, o pop-up deve fornecer todo o contexto necessário para resolver o problema. No entanto, se tiver perguntas para o suporte da Adobe, clique no link **Entrar em contato com o suporte** no pop-up. Isso exibirá um formulário, no qual é possível descrever a dúvida e enviá-la para criar um tíquete de suporte, que também incluirá uma referência à notificação específica para que um engenheiro de suporte da Adobe tenha o contexto relevante.
 
 ![Entrar em contato com o suporte 1](/help/operations/assets/contact-support1.png)
 
@@ -62,17 +62,17 @@ Assim como todos os tíquetes de suporte, ele aparecerá na guia [Casos de supor
 
 ## Que notificações aparecem? {#which-notification}
 
-O AEM as a Cloud Service tem vários tipos de notificações, mas apenas um subconjunto é exibido no Centro de Ações, conforme ilustrado na tabela abaixo.
+O AEM as a Cloud Service possui vários tipos de notificações, mas apenas um subconjunto deles é exibido no Centro de ações, conforme ilustrado na tabela abaixo.
 
-| Tipo de notificação | Descrição | Como configurar | Aparece na Central de Ações |
+| Tipo de notificação | Descrição | Como configurar | Aparece no Centro de ações |
 |---|---|---|---|
-| Incidentes operacionais | Incidentes críticos que exigem ação imediata | Usuário atribuído ao perfil de produto &quot;Notificação de incidente - Cloud Service&quot; | X |
-| Recomendações proativas | Otimizações que devem ser planejadas | Usuário atribuído ao perfil de produto &quot;Notificação proativa - Cloud Service&quot; | X |
-| Status do pipeline do Cloud Manager | Informações sobre o estado dos seus pipelines | Usuário com funções de Proprietário da empresa, Gerente de Programas ou Gerente de implantação, caixa de seleção &quot;Outros&quot; selecionada em [Preferências da Experience Cloud](https://experience.adobe.com/preferences), como [descrito aqui](/help/implementing/cloud-manager/notifications.md). |   |
+| Incidentes operacionais | Incidentes críticos que exigem ação imediata | Usuário atribuído ao perfil de produto “Notificação de incidente - Cloud Service” | X |
+| Recomendações proativas | Otimizações que devem ser planejadas | Usuário atribuído ao perfil de produto “Notificação proativa - Cloud Service” | X |
+| Status do pipeline do Cloud Manager | Informações sobre o estado dos seus pipelines | Usuário com funções de Proprietário da empresa, Gerente de Programas ou Gerente de implantação, caixa de seleção &quot;Outros&quot; selecionada em [Preferências da Experience Cloud](https://experience.adobe.com/preferences), conforme [descrito aqui](/help/implementing/cloud-manager/notifications.md). |   |
 
 ## Tipos de notificação compatíveis {#supported-notification-types}
 
-A tabela a seguir lista os tipos de notificação atualmente aceitos no Centro de Ações.
+A tabela a seguir lista os tipos de notificação atualmente compatíveis no Centro de ações.
 
 | Tipo de notificação | Perfil de produto relacionado | Ação de correção |
 |---|---|---|

@@ -5,7 +5,7 @@ exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1826'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -129,11 +129,11 @@ Há vários componentes principais dessa nova arquitetura:
 
       * Os nós podem operar independentemente uns dos outros.
 
-      * Cada nó consiste em um editor do AEM e um servidor da Web equipado com o módulo do AEM Dispatcher.
+      * Cada nó consiste em um editor do AEM e um servidor da Web equipado com o módulo de Dispatcher do AEM.
 
       * É dimensionado automaticamente de acordo com as necessidades de tráfego do site.
 
-      * Por padrão, há um único farm de publicação na região primária, no entanto [regiões de publicação adicionais](/help/operations/additional-publish-regions.md) pode ser licenciado.
+      * Por padrão, há um único farm de publicação na região principal. No entanto, é possível licenciar [regiões de publicação adicionais](/help/operations/additional-publish-regions.md).
 
       * Os usuários finais ou visitantes do site visitam o site por meio do AEM Publish Service.
 

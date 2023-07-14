@@ -5,7 +5,7 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '560'
-ht-degree: 79%
+ht-degree: 80%
 
 ---
 
@@ -86,7 +86,7 @@ Siga estas etapas para adicionar um nome de domínio personalizado na página **
 
 1. Verifique os valores selecionados na caixa de diálogo **Adicionar nome de domínio** e clique em **Continuar**.
 
-   ![Janela Nome do domínio](/help/implementing/cloud-manager/assets/cdn/cdn-create5.png)
+   ![Janela de nome de domínio](/help/implementing/cloud-manager/assets/cdn/cdn-create5.png)
 
    >[!NOTE]
    >

@@ -7,7 +7,7 @@ exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '2706'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -32,7 +32,7 @@ Esta página fornece uma visão geral da reutilização de conteúdo com o MSM. 
 
 >[!NOTE]
 >
->O MSM também pode ser usado para ativos, incluindo fragmentos de conteúdo. Para obter mais detalhes, consulte [Reutilizar fragmentos de conteúdo usando o MSM para ativos](/help/assets/reuse-assets-using-msm.md) (disponível somente por meio do console de Ativos ).
+>O MSM também pode ser usado para ativos, inclusive fragmentos de conteúdo. Para obter mais detalhes, consulte [Reutilizar fragmentos de conteúdo usando o MSM para ativos](/help/assets/reuse-assets-using-msm.md) (disponível somente por meio do console de ativos).
 
 ## Cenários possíveis {#possible-scenarios}
 
@@ -153,7 +153,7 @@ Como introdução, a tabela a seguir fornece uma visão geral dos principais ter
 | Termo | Definição | Mais detalhes |
 |---|---|---|
 | Origem | As páginas originais usadas como base para Live Copies | Sinônimo de Blueprints e/ou páginas do Blueprint |
-| Live Copy  | A cópia (do original) mantida pelas ações de sincronização, conforme definido pelas configurações de implantação |  |
+| Live Copy | A cópia (do original) mantida pelas ações de sincronização, conforme definido pelas configurações de implantação |  |
 | Configuração da Live Copy | Definição dos detalhes de configuração de uma Live Copy |  |
 | Relacionamento dinâmico | Definição efetiva da herança para um determinado recurso, ou seja, as conexões entre a origem e as Live Copies | Garante que as alterações no conteúdo original possam ser sincronizadas com a Live Copy |
 | Blueprint | Sinônimo de Origem | Pode ser definido por uma configuração do blueprint |
@@ -178,7 +178,7 @@ Como introdução, a tabela a seguir fornece uma visão geral dos principais ter
 
 ## Live Copies {#live-copies}
 
-Uma Live Copy do MSM é uma cópia do conteúdo específico do site para o qual é mantido um relacionamento dinâmico com o conteúdo original. 
+Uma Live Copy do MSM é uma cópia do conteúdo específico do site para o qual é mantido um relacionamento dinâmico com o conteúdo original.
 
 * A Live Copy herda conteúdo de sua origem.
 * A sincronização executa a transferência real do conteúdo quando alterações são feitas no conteúdo original.
@@ -340,6 +340,6 @@ O MSM fornece ferramentas para que sua implementação possa se adaptar às comp
 * **Custom Synchronization Actions** - [Create a custom synchronization action](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action) when the installed actions do not meet your specific application requirements. MSM provides a Java API for creating custom synchronization actions.
 -->
 
-## Práticas recomendadas     {#best-practices}
+## Práticas recomendadas {#best-practices}
 
 A página de [Práticas recomendadas do MSM](best-practices.md) contém informações importantes sobre a implementação.

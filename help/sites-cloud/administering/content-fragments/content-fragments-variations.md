@@ -7,7 +7,7 @@ exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
 source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
 source-wordcount: '2461'
-ht-degree: 84%
+ht-degree: 92%
 
 ---
 
@@ -20,7 +20,7 @@ Na guia **Variações**, é possível:
 * [Inserir o conteúdo](#authoring-your-content) para o fragmento,
 * [Criar e gerenciar variações](#managing-variations) do conteúdo **Principal**,
 
-Executar uma variedade de outras ações, dependendo do tipo de dados que está sendo editado; por exemplo:
+Executar uma série de outras ações, dependendo do tipo de dados que está sendo editado; por exemplo:
 
 * [Inserir ativos visuais no fragmento](#inserting-assets-into-your-fragment) (imagens)
 
@@ -48,7 +48,7 @@ Por exemplo:
 
 É possível:
 
-* Faça edições no seu conteúdo diretamente no **Variações** ; cada tipo de dados fornece opções de edição diferentes, por exemplo:
+* Fazer edições no conteúdo diretamente da guia **Variações**; cada tipo de dados fornece opções de edição diferentes, por exemplo:
 
    * para campos de **Texto multilinha**, também é possível abrir o [editor de tela cheia](#full-screen-editor) para:
 
@@ -58,20 +58,20 @@ Por exemplo:
 
    * Para campos de **Referência do fragmento**, a opção [Editar fragmento de conteúdo](#fragment-references-edit-content-fragment) pode estar disponível, dependendo da definição do modelo.
 
-* Atribuir **Tags** à variação atual; as tags podem ser adicionadas, atualizadas e removidas
+* Atribuir **tags** à variação atual; as tags podem ser adicionadas, atualizadas e removidas
 
-   * As [Tags](/help/sites-cloud/authoring/features/tags.md) são particularmente eficientes ao organizar os fragmentos, pois podem ser usadas para a classificação de conteúdo e taxonomia. As tags podem ser usadas para encontrar conteúdo (por tags) e aplicar operações em massa.
+   * As [tags](/help/sites-cloud/authoring/features/tags.md) são particularmente eficientes ao organizar os fragmentos, pois podem ser usadas para a classificação de conteúdo e taxonomia. As tags podem ser usadas para encontrar conteúdo (por tags) e aplicar operações em massa.
 
-      * As pesquisas por uma tag retornarão o fragmento, com a variação marcada destacada.
-      * As tags de variação também podem ser usadas para agrupar variações de um perfil específico da Rede de entrega de conteúdo (CDN) (para armazenamento em cache de CDN), em vez de usar o nome da variação.
+      * As pesquisas por uma tag retornarão o fragmento com a variação marcada em destaque.
+      * As tags de variação também podem ser usadas para agrupar variações de um perfil específico da rede de entrega de conteúdo (CDN) (para armazenamento em cache da CDN), em vez de usar o nome da variação.
 
-     Por exemplo, você pode marcar fragmentos relevantes como &quot;lançamento de Natal&quot; para permitir a navegação somente entre eles como um subconjunto ou copiá-los para uso com outro lançamento futuro em uma nova pasta.
+     Por exemplo, você pode marcar fragmentos relevantes como “Lançamento de Natal” para permitir a navegação somente entre eles como um subconjunto ou a cópia para uso com outro lançamento futuro em uma nova pasta.
 
   >[!NOTE]
   >
-  >**Tags** também podem ser adicionados (à lista **Principal** variação) como parte da [Metadados](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md)
+  >**Tags** também podem ser adicionadas (à variação **principal**) como parte dos [metadados](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md)
 
-* [Criar e gerenciar variações](#managing-variations) do conteúdo **Principal.**
+* [Criar e gerenciar variações](#managing-variations) do conteúdo **principal.**
 
 ### Editor de tela cheia {#full-screen-editor}
 
@@ -425,7 +425,7 @@ Para criar uma nova variação:
 
    >[!NOTE]
    >
-   Ao criar uma nova variação, todas as **Tags** atualmente atribuído à **Principal** são copiadas para a nova variação.
+   Ao criar uma nova variação, todas as **tags** atualmente atribuídas à variação **principal** são copiadas para a nova variação.
 
 ### Editar uma variação {#editing-a-variation}
 
@@ -478,7 +478,7 @@ A sincronização só está disponível para copiar alterações *do **Principal
 >
 Somente o elemento atual da variação é sincronizado.
 >
-A sincronização só funciona no **Texto multilinha** tipo de dados.
+A sincronização só funciona no tipo de dados **Texto de várias linhas**.
 >
 A transferência de alterações *de uma variação para o **Principal*** não está disponível como uma opção.
 

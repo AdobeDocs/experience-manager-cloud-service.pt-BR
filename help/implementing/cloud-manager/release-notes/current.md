@@ -6,7 +6,7 @@ exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: 1b46f763903a1b103837ed7e8cc498ad08ce64f1
 workflow-type: tm+mt
 source-wordcount: '237'
-ht-degree: 29%
+ht-degree: 42%
 
 ---
 
@@ -21,11 +21,11 @@ Esta página documenta as notas de versão do Cloud Manager 2023.7.0 no AEM as a
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento do Cloud Manager versão 2023.7.0 no AEM as a Cloud Service é 29 de junho de 2023. A próxima versão está planejada para 10 de agosto de 2023.
+A data de lançamento do Cloud Manager 2023.7.0 no AEM as a Cloud Service é 29 de junho de 2023. A próxima versão está planejada para 10 de agosto de 2023.
 
 ## Novidades {#what-is-new}
 
-* Os cartões na página de aterrissagem do Cloud Manager agora indicam se [segurança aprimorada](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) O está ativado para os programas.
+* Os cartões na página de destino do Cloud Manager agora indicam se a [segurança aprimorada](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) está habilitada para os programas.
 * Se um desenvolvimento [pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) não contém etapas de teste, os usuários agora têm a opção de incluir etapas de teste quando [inicie o pipeline.](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines)
    * Isso será implementado em fases.
 * Quando [cancelamento da execução,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) a etapa aprovação da execução do pipeline agora solicita que o usuário forneça um motivo para o cancelamento.

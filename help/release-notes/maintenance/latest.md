@@ -15,7 +15,7 @@ A seção a seguir descreve as notas de versão técnicas para a versão de manu
 
 ## Versão 12585 {#release-12585}
 
-Veja abaixo um resumo das melhorias contínuas da versão de manutenção 12585, lançada publicamente em 11 de julho de 2023. Esta versão de manutenção é uma atualização da versão de manutenção anterior a 12549.
+Veja abaixo um resumo das melhorias contínuas da versão de manutenção 12585, lançada publicamente em 11 de julho de 2023. Esta versão de manutenção é uma atualização da versão de manutenção anterior: versão 12549.
 
 A Ativação de recursos 2023.7.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte a [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=pt-BR) para obter mais informações.
 

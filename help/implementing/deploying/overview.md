@@ -6,7 +6,7 @@ exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '3462'
-ht-degree: 42%
+ht-degree: 45%
 
 ---
 
@@ -115,7 +115,7 @@ Após a mudança para a nova versão do aplicativo:
 >[!NOTE]
 >Os pacotes de conteúdo são implantados em todos os tipos de ambiente (desenvolvimento, preparo, produção). Não é possível limitar a implantação a um ambiente específico. Esta limitação está em vigor para garantir a opção de uma execução de teste automatizada. O conteúdo específico de um ambiente requer instalação manual por meio de [Gerenciador de pacotes](/help/implementing/developing/tools/package-manager.md).
 
-Além disso, não há um mecanismo para reverter as alterações mutáveis no pacote de conteúdo após serem aplicadas. Se os clientes detectarem um problema, poderão optar por corrigi-lo na próxima versão do código ou, como último recurso, restaurar o sistema inteiro para um determinado estado antes da implantação.
+Além disso, não há mecanismo para reverter as alterações no pacote de conteúdo mutável depois de terem sido aplicadas. Se os clientes detectarem um problema, poderão optar por corrigi-lo na próxima versão do código ou, como último recurso, restaurar o sistema inteiro para um determinado estado antes da implantação.
 
 Todos os pacotes de terceiros incluídos devem ser validados como compatíveis com o AEM as a Cloud Service, caso contrário, sua inclusão resultará em uma falha de implantação.
 
@@ -239,14 +239,14 @@ O seguinte Maven `POM.xml` O trecho mostra como os pacotes de terceiros podem se
 
 ## Como funcionam as implantações contínuas {#how-rolling-deployments-work}
 
-Assim como atualizações do AEM, as versões de clientes são implantadas usando uma estratégia de implantação contínua para eliminar o tempo de inatividade do cluster do autor nas circunstâncias certas. A sequência geral de eventos é descrita abaixo, onde os nós com as versões antiga e nova do código do cliente estão executando a mesma versão do código AEM.
+Assim como atualizações do AEM, as versões de clientes são implantadas usando uma estratégia de implantação contínua para eliminar o tempo de inatividade do cluster do autor nas circunstâncias certas. A sequência geral de eventos é descrita abaixo, onde os nós com as versões antiga e nova do código do cliente estão executando a mesma versão de código do AEM.
 
-* Os nós com a versão antiga estão ativos e um candidato a lançamento para a nova versão é criado e fica disponível.
+* Os nós com a versão antiga ficam ativos e um candidato a lançamento para a nova versão é criado e disponibilizado.
 * Se houver definições de índice novas ou atualizadas, os índices correspondentes serão processados. Os nós com a versão antiga sempre usam os índices antigos, enquanto os nós com a nova versão sempre usam os novos índices.
 * Os nós com a nova versão são inicializados, enquanto as versões antigas ainda fornecem tráfego.
 * Os nós com a versão antiga estão em execução e continuam sendo atendidos, enquanto os nós com a nova versão são verificados quanto à prontidão por meio de verificações de integridade.
 * Nós com a nova versão que estão prontos, aceitam o tráfego e substituem os nós pela versão antiga, que é desativada.
-* Com o tempo, os nós com a versão antiga são substituídos por nós com a nova versão até que apenas os nós com novas versões permaneçam, concluindo assim a implantação.
+* Com o tempo, os nós da versão antiga são substituídos por nós da nova versão até que apenas estes permaneçam, concluindo assim a implantação.
 * Qualquer conteúdo mutável novo ou modificado é então implantado.
 
 ## Índices {#indexes}
@@ -277,7 +277,7 @@ A alteração de usuários de serviço, ou ACLs que acessam conteúdo ou código
 
 ### Alterações de índice {#index-changes}
 
-Se forem feitas alterações nos índices, é importante que a nova versão continue a usar seus índices até que seja encerrada, enquanto a versão antiga usa seu próprio conjunto modificado de índices. O desenvolvedor deve seguir as técnicas de gerenciamento de índice descritas [neste artigo](/help/operations/indexing.md).
+Se forem feitas alterações nos índices, é importante que a nova versão continue a usar seus índices até que seja encerrada, enquanto a versão antiga use seu próprio conjunto modificado de índices. O desenvolvedor deve seguir as técnicas de gerenciamento de índice descritas [neste artigo](/help/operations/indexing.md).
 
 ### Codificação conservadora para reversões {#conservative-coding-for-rollbacks}
 

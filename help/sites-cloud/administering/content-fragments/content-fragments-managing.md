@@ -7,7 +7,7 @@ exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
 source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
 source-wordcount: '2052'
-ht-degree: 76%
+ht-degree: 84%
 
 ---
 
@@ -239,25 +239,25 @@ Você também pode [associar conteúdo](/help/sites-cloud/administering/content-
 
 ## Publicar e visualizar um fragmento {#publishing-and-previewing-a-fragment}
 
-Você pode publicar os fragmentos de conteúdo em:
+Você pode publicar os fragmentos de conteúdo nos seguintes serviços:
 
-* o **[Serviço de publicação](/help/overview/architecture.md#runtime-architecture)** - para um acesso pleno e público
+* **[serviço de Publicação](/help/overview/architecture.md#runtime-architecture)**: para obter um acesso público completo
 
-* o **[Serviço de visualização](/help/overview/architecture.md#runtime-architecture)** - para visualizar o conteúdo antes da disponibilidade completa
+* **[serviço de Visualização](/help/overview/architecture.md#runtime-architecture)**: para visualizar o conteúdo antes da disponibilidade completa
 
   >[!CAUTION]
   >
-  Publicar fragmentos de conteúdo na **Serviço de visualização** O só está disponível no [Console de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-console.md); utilizando o **Publish** ação.
+  A publicação de fragmentos de conteúdo no **serviço de Visualização** só está disponível no [Console de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-console.md), por meio da ação **Publicar**.
 
   >[!NOTE]
   >
   Para obter mais detalhes sobre os ambientes de visualização, consulte:
   >
-  * [Gerenciar ambientes](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
+  * [Gerenciamento de ambientes](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
   * [Configurações do OSGi para o nível de visualização](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
   * [Depuração da visualização usando o Developer Console](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)
 
-Para publicar os fragmentos de conteúdo usando o **Publish** na barra de ferramentas do [Console de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment):
+Para publicar os fragmentos de conteúdo usando a opção **Publicar** na barra de ferramentas do [Console de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment):
 
 >[!CAUTION]
 >
@@ -267,18 +267,18 @@ Se você publicar um fragmento de conteúdo cujo modelo ainda não foi publicado
 
 1. Selecione um ou mais fragmentos na lista.
 
-1. Na barra de ferramentas, selecione **Publish** e, em seguida, escolha uma das opções a seguir para abrir a caixa de diálogo apropriada:
+1. Na barra de ferramentas, selecione **Publicar** e escolha uma das opções a seguir para abrir a caixa de diálogo apropriada:
 
    * **Agora** - selecione a opção **Serviço de publicação** ou a variável **Serviço de visualização**; após a confirmação, o fragmento é publicado imediatamente
    * **Agendar** - além do serviço necessário, também é possível selecionar a data e a hora em que o fragmento é publicado
 
-   Quando necessário, você deve especificar as referências para publicar. Por padrão, as referências também são publicadas no serviço de Visualização para garantir que não haja interrupção no conteúdo.
+   Quando necessário, você deve especificar as referências para publicar. Por padrão, as referências também são publicadas no serviço de visualização para garantir que não haja interrupção no conteúdo.
 Por exemplo, para uma solicitação de publicação agendada:
    ![Caixa de diálogo Publicar](assets/cfm-publish-01.png)
 
 1. Confirme a ação de publicação.
 
-Você também pode publicar na **Serviço de publicação** do [Editor de fragmento de conteúdo](#toolbar-actions-in-the-content-fragment-editor) usando:
+Você também pode publicar no **serviço de publicação** do [Editor de fragmento de conteúdo](#toolbar-actions-in-the-content-fragment-editor) usando:
 * **Publicação rápida**
 * **Gerenciar publicação**
 
@@ -292,10 +292,10 @@ Depois que um fragmento é publicado, referenciado ou ambos, o AEM exibe um avis
 
 ## Desfazer a publicação de um fragmento {#unpublishing-a-fragment}
 
-Para desfazer a publicação de fragmentos de conteúdo, selecione um ou mais fragmentos e **Cancelar publicação** na barra de ferramentas do [Console de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment). É possível selecionar **Agora** ou **Agendado**.
+Para desfazer a publicação de fragmentos de conteúdo, selecione um ou mais fragmentos, depois selecione **Desfazer a publicação** na barra de ferramentas do [Console de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment). É possível selecionar as opções **Agora** ou **Agendado**.
 
-Quando a caixa de diálogo relevante for aberta, você poderá selecionar o serviço apropriado:
-![Caixa de diálogo Cancelar publicação](assets/cfm-unpublish-01.png)
+Quando a caixa de diálogo relevante for exibida, você poderá selecionar o serviço apropriado:
+![Caixa de diálogo Desfazer a publicação](assets/cfm-unpublish-01.png)
 
 >[!NOTE]
 >

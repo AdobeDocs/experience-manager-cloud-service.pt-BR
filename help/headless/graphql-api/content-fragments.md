@@ -6,7 +6,7 @@ exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
 source-wordcount: '4918'
-ht-degree: 90%
+ht-degree: 93%
 
 ---
 
@@ -132,7 +132,7 @@ Embora o GraphQL também seja compatível com solicitações GET, elas podem ati
 
 É possível testar e depurar consultas de GraphQL usando o [IDE GraphiQL](/help/headless/graphql-api/graphiql-ide.md).
 
-## Casos de uso para autor, visualização e publicação {#use-cases-author-preview-publish}
+## Casos de uso de autor, visualização e publicação {#use-cases-author-preview-publish}
 
 Os casos de uso podem depender do tipo de ambiente do AEM as a Cloud Service:
 
@@ -140,7 +140,7 @@ Os casos de uso podem depender do tipo de ambiente do AEM as a Cloud Service:
    * Consultar dados para o aplicativo JS (caso de uso padrão)
 
 * Ambiente de visualização; usado para:
-   * Visualizar consultas antes de implantar no ambiente de publicação
+   * Visualizar consultas antes de implantá-las no ambiente de publicação
       * Consultar dados para o aplicativo JS (caso de uso padrão)
 
 * Ambiente de autor; usado para:
@@ -261,7 +261,7 @@ Além dos tipos de dados para campos gerados pelo usuário, o GraphQL para AEM t
 
 Esses [campos auxiliares](#helper-fields) estão marcados com um `_` precedente, para distinguir entre o que foi definido pelo usuário e o que foi gerado automaticamente.
 
-#### Caminho  {#path}
+#### Caminho {#path}
 
 O campo de caminho é usado como um identificador no GraphQL do AEM. Ele representa o caminho do ativo Fragmento de conteúdo dentro do repositório do AEM. Escolhemos esse como o identificador de um fragmento de conteúdo, pois ele:
 
@@ -918,7 +918,7 @@ A operação básica de consultas com o GraphQL para AEM adere à especificaçã
    * adicione `List` ao nome do modelo; por exemplo, `cityList`
    * Consulte [Exemplo de consulta - Todas as informações sobre todas as cidades](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
 
-  É possível: 
+  É possível:
 
    * [Classificar os resultados](#sorting)
 
@@ -932,12 +932,12 @@ A operação básica de consultas com o GraphQL para AEM adere à especificaçã
 
    * Consulte [Exemplo de consulta - Todas as informações sobre todas as cidades](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
 
-* O filtro `includeVariations` está incluído na variável `List` e `Paginated` tipos de consulta.  Para recuperar as Variações do fragmento de conteúdo nos resultados da consulta, `includeVariations` o filtro deve ser definido como `true`.
+* O filtro `includeVariations` está incluído nos tipos de consulta `List` e `Paginated`.  Para recuperar as variações do fragmento de conteúdo nos resultados da consulta, o filtro `includeVariations` deve ser definido como `true`.
 
-   * Consulte [Exemplo de consulta para vários Fragmentos de conteúdo e suas Variações de um determinado modelo](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragment-variations-given-model)
+   * Consulte [Exemplo de consulta para vários fragmentos de conteúdo de um determinado modelo e suas variações](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragment-variations-given-model)
 
   >[!CAUTION]
-  >O filtro `includeVariations` e o campo gerado pelo sistema `_variation` não podem ser usados juntos na mesma definição de consulta.
+  >O filtro `includeVariations` e o campo `_variation` gerado pelo sistema não podem ser usados juntos na mesma definição de consulta.
 
 * Se quiser usar um operador OR lógico:
    * use ` _logOp: OR`
@@ -975,7 +975,7 @@ A operação básica de consultas com o GraphQL para AEM adere à especificaçã
 
         >[!CAUTION]
         >
-        >O campo gerado pelo sistema `_variation` não pode ser usado junto com o filtro `includeVariations`.
+        >O campo `_variation` gerado pelo sistema não pode ser usado junto com o filtro `includeVariations`.
 
          * Consulte [Exemplo de consulta - Todas as cidades com uma variação nomeada](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
 
@@ -991,12 +991,12 @@ A operação básica de consultas com o GraphQL para AEM adere à especificaçã
 
          * [Exemplo de consulta para entrega de imagem com um único parâmetro especificado](#image-delivery-single-specified-parameter)
 
-   * `_tags` : para revelar as IDs dos Fragmentos de conteúdo ou Variações que contêm tags; é uma matriz de `cq:tags` identificadores.
+   * `_tags`: para revelar as IDs dos fragmentos de conteúdo ou variações que contêm tags; essa é uma matriz de identificadores `cq:tags`.
 
-      * Consulte [Exemplo de consulta - Nomes de todas as cidades marcadas como Quebras de cidade](/help/headless/graphql-api/sample-queries.md#sample-names-all-cities-tagged-city-breaks)
+      * Consulte [Exemplo de consulta - Nomes de todas as cidades marcadas como Cidades para passeio](/help/headless/graphql-api/sample-queries.md#sample-names-all-cities-tagged-city-breaks)
       * Consulte [Exemplo de consulta para variações de fragmento de conteúdo de um determinado modelo que tem uma tag específica anexada](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-variations-given-model-specific-tag)
-      * Consulte [Exemplo de consulta com filtragem por ID de _tags e exclusão de variações](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-not-variations)
-      * Consulte [Exemplo de consulta com filtragem por ID de _tags e incluindo variações](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-with-variations)
+      * Consulte [Exemplo de consulta com filtragem por ID de _tags, excluindo variações](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-not-variations)
+      * Consulte [Exemplo de consulta com filtragem por ID de _tags, incluindo variações](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-with-variations)
 
      >[!NOTE]
      >

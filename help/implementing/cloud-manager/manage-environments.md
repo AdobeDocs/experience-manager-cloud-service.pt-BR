@@ -5,7 +5,7 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2274'
-ht-degree: 37%
+ht-degree: 47%
 
 ---
 
@@ -70,50 +70,50 @@ A tela **Visão geral** agora exibe seu novo ambiente no cartão **Ambientes**. 
 
 ## Várias regiões de publicação {#multiple-regions}
 
-Um usuário com a variável **Proprietário da empresa** a função pode configurar ambientes de produção e de preparo para incluir até três regiões de publicação adicionais, além da região principal. Regiões de publicação adicionais podem melhorar a disponibilidade. Consulte a [Documentação adicional das regiões de publicação](/help/operations/additional-publish-regions.md) para obter mais detalhes.
+Um usuário com a variável **Proprietário da empresa** a função pode configurar ambientes de produção e de preparo para incluir até três regiões de publicação adicionais, além da região principal. Regiões de publicação adicionais podem melhorar a disponibilidade. Consulte a [documentação Regiões de publicação adicionais](/help/operations/additional-publish-regions.md) para obter mais detalhes.
 
 >[!TIP]
 >
->Você pode usar o [API do Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) para consultar uma lista atual de regiões disponíveis.
+>Você pode usar a [API do Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) para consultar uma lista atualizada de regiões disponíveis.
 
-### Adicionando várias regiões de publicação a um novo ambiente {#add-regions}
+### Adicionar várias regiões de publicação a um novo ambiente {#add-regions}
 
 Ao adicionar um ambiente, você pode optar por configurar regiões adicionais, além da região principal.
 
-1. Selecione o **Região principal**.
+1. Selecione a **Região principal**.
    * A região primária não pode ser alterada após a criação do ambiente.
 1. Selecione a opção **Adicionar regiões de publicação adicionais** e um novo **Regiões de publicação adicionais** opção é exibida.
 1. No **Regiões de publicação adicionais** selecione uma região extra.
 1. A região selecionada é adicionada abaixo do menu suspenso para indicar sua seleção.
    * Toque ou clique no `X` ao lado da região selecionada, para que você possa desmarcá-la.
 1. Selecione outra região na **Regiões de publicação adicionais** para adicionar outra região.
-1. Toque ou clique **Salvar** quando estiver pronto para criar seu ambiente.
+1. Toque ou clique em **Salvar** quando estiver pronto para criar seu ambiente.
 
-![Seleção de várias regiões](assets/select-multiple-regions.png)
+![Selecionar várias regiões](assets/select-multiple-regions.png)
 
 As regiões selecionadas se aplicam aos ambientes de produção e de preparo.
 
-Se você não especificar regiões adicionais, [você pode fazer isso posteriormente após a criação dos ambientes.](#edit-regions)
+Se você não especificar nenhuma região adicional, [é possível fazer isso mais tarde, após a criação dos ambientes.](#edit-regions)
 
 Se desejar provisionar [rede avançada](/help/security/configuring-advanced-networking.md) para o programa, recomenda-se que esse provisionamento seja feito antes de adicionar outras regiões de publicação aos ambientes usando a API do Cloud Manager. Caso contrário, o tráfego das regiões de publicação adicionais passa pelo proxy da região primária.
 
 ### Editar várias regiões de publicação {#edit-regions}
 
-Inicialmente, se você não tiver especificado regiões adicionais, poderá fazer isso depois que os ambientes forem criados, se tiver os direitos necessários.
+Se não tiver especificado nenhuma região adicional previamente, é possível fazer isso após a criação dos ambientes, caso possua os direitos necessários.
 
-Você também pode remover regiões de publicação adicionais. No entanto, você só pode adicionar ou remover regiões em uma transação. Se você precisar adicionar uma região e remover uma região, primeiro adicione, salve a alteração e remova (ou vice-versa).
+Você também pode remover regiões de publicação adicionais. No entanto, só é possível adicionar ou remover regiões em uma transação. Se você precisar adicionar uma região e remover uma região, primeiro adicione, salve a alteração e remova (ou vice-versa).
 
 1. No console Visão geral do programa, clique no botão de reticências do ambiente de produção e selecione **Editar** no menu.
 
    ![Editar ambiente](assets/select-edit-environment.png)
 
-1. No **Editar ambiente de produção** faça as alterações necessárias nas regiões de publicação adicionais.
-   * Use o **Regiões de publicação adicionais** para selecionar regiões adicionais.
+1. Na caixa de diálogo **Editar ambiente de produção**, faça as alterações necessárias nas regiões de publicação adicionais.
+   * Use o menu suspenso **Regiões de publicação adicionais** para selecionar regiões adicionais.
    * Clique no X ao lado das regiões de publicação adicionais selecionadas para desmarcá-las.
 
    ![Editar ambiente](assets/edit-environment.png)
 
-1. Toque ou clique **Salvar** para salvar as alterações.
+1. Toque ou clique em **Salvar** para salvar as alterações.
 
 As alterações feitas no ambiente de produção se aplicam aos ambientes de produção e de preparo. As alterações em várias regiões de publicação podem ser editadas somente no ambiente de produção.
 

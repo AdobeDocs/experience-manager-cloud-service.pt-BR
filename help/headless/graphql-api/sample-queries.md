@@ -6,7 +6,7 @@ exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
 workflow-type: tm+mt
 source-wordcount: '1752'
-ht-degree: 74%
+ht-degree: 80%
 
 ---
 
@@ -362,14 +362,14 @@ Se você criar uma variação chamada &quot;Centro de Berlim&quot; (`berlin_cent
 }
 ```
 
-### Exemplo de consulta - Nomes de todas as cidades Marcado como Quebras de cidade {#sample-names-all-cities-tagged-city-breaks}
+### Exemplo de consulta - Nomes de todas as cidades marcadas como Cidades para passeio {#sample-names-all-cities-tagged-city-breaks}
 
 Se você:
 
 * criar várias tags, chamadas `Tourism` : `Business`, `City Break`, `Holiday`
 * e atribuí-los à variação Principal de vários `City` instâncias
 
-Em seguida, você pode usar uma consulta para retornar detalhes do `name` e `tags`de todas as entradas marcadas como Quebras de cidade na variável `city`esquema.
+É possível usar uma consulta para retornar detalhes de `name` e `tags` de todas as entradas marcadas como Cidades para passeio no esquema de `city`.
 
 **Exemplo de consulta**
 
@@ -1310,7 +1310,7 @@ Este exemplo de consulta interroga:
 }
 ```
 
-### Exemplo de consulta para um Fragmento de conteúdo aninhado - tipo de modelo único {#sample-wknd-nested-fragment-single-model}
+### Exemplo de consulta para um Fragmento de conteúdo aninhado - tipo de modelo único{#sample-wknd-nested-fragment-single-model}
 
 Esta consulta interroga:
 
@@ -1338,7 +1338,7 @@ Esta consulta interroga:
 }
 ```
 
-### Exemplo de consulta para um Fragmento de conteúdo aninhado - tipo de modelo múltiplo {#sample-wknd-nested-fragment-multiple-model}
+### Exemplo de consulta para um Fragmento de conteúdo aninhado - tipo de modelo múltiplo{#sample-wknd-nested-fragment-multiple-model}
 
 #### Tipo de modelo referenciado único
 
@@ -1394,7 +1394,7 @@ Esta consulta interroga:
 }
 ```
 
-### Exemplo de consulta para um Fragmento de conteúdo de um modelo específico com Referências de conteúdo {#sample-wknd-fragment-specific-model-content-reference}
+### Exemplo de consulta para um Fragmento de conteúdo de um modelo específico com Referências de conteúdo{#sample-wknd-fragment-specific-model-content-reference}
 
 Há duas opções desta consulta:
 
@@ -1582,11 +1582,11 @@ Esta consulta interroga:
 }
 ```
 
-### Exemplo de consulta para vários Fragmentos de conteúdo e suas Variações de um determinado modelo {#sample-wknd-multiple-fragment-variations-given-model}
+### Exemplo de consulta para vários fragmentos de conteúdo e suas variações em um determinado modelo {#sample-wknd-multiple-fragment-variations-given-model}
 
 Esta consulta interroga:
 
-* por Fragmentos de conteúdo do tipo `article` e todas as variações
+* fragmentos de conteúdo do tipo `article` e todas as variações
 
 **Exemplo de consulta**
 
@@ -1613,7 +1613,7 @@ query {
 
 Esta consulta interroga:
 
-* por Fragmentos de conteúdo do tipo `article` com uma ou mais variações com a tag `WKND : Activity / Hiking`
+* fragmentos de conteúdo do tipo `article` com uma ou mais variações que possuem a tag `WKND : Activity / Hiking`
 
 **Exemplo de consulta**
 
@@ -1721,8 +1721,8 @@ Esta consulta interroga:
 
 Esta consulta interroga:
 
-* por Fragmentos de conteúdo do tipo `vehicle` ter a tag `big-block`
-* exclusão de variações
+* fragmentos de conteúdo do tipo `vehicle` que possuem a tag `big-block`,
+* excluindo variações
 
 **Exemplo de consulta**
 
@@ -1756,7 +1756,7 @@ query {
 
 Esta consulta interroga:
 
-* por Fragmentos de conteúdo do tipo `vehicle` ter a tag `big-block`
+* fragmentos de conteúdo do tipo `vehicle` que possuem a tag `big-block`,
 * incluindo variações
 
 **Exemplo de consulta**

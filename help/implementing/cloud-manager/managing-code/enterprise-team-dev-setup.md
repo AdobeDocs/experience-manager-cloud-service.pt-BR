@@ -5,7 +5,7 @@ exl-id: 85f8779b-12cb-441b-a34d-04641184497a
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1437'
-ht-degree: 83%
+ht-degree: 85%
 
 ---
 
@@ -98,7 +98,7 @@ Com o repositório Git do Cloud Manager e o pipeline de produção, o código de
 
 Por outro lado, sem esse sistema em vigor, como cada equipe pode implantar separadamente, existe o risco de que uma atualização de uma única equipe possa levar a problemas de estabilidade na produção. Além disso, requer coordenação e tempo de inatividade planejado para lançar atualizações. Com um número crescente de equipes, o esforço de coordenação se torna muito mais complexo e rapidamente incontrolável.
 
-Se um problema for detectado nos quality gates (portais de qualidade), a produção não será afetada e o problema poderá ser detectado e corrigido sem a necessidade de envolver o pessoal da Adobe. Sem o Cloud Service e sem sempre testar toda a implantação, implantações parciais podem causar paralisações que exigem uma solicitação de reversão ou até mesmo uma restauração completa de um backup. Os ensaios parciais também podem levar a outros problemas que terão de ser resolvidos posteriormente, exigindo coordenação e apoio do pessoal da Adobe.
+Se um problema for detectado nos quality gates (portais de qualidade), a produção não será afetada e o problema poderá ser detectado e corrigido sem a necessidade de envolver o pessoal da Adobe. Sem o uso do Cloud Service ou a realização de testes frequentes em toda a implantação, as implantações parciais poderão causar paralisações que exigem uma solicitação de reversão ou até mesmo uma restauração completa a partir de um backup. Os ensaios parciais também podem levar a outros problemas que terão de ser resolvidos posteriormente, exigindo coordenação e apoio do pessoal da Adobe.
 
 >[!TIP]
 >
