@@ -3,7 +3,7 @@ title: Novidades?
 description: Novidades do Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: f854aaf8-e84d-4904-832f-f72433590920
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '183'
 ht-degree: 100%
 
