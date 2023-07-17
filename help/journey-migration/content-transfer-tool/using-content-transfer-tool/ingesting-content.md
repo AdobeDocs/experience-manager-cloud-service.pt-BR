@@ -2,10 +2,10 @@
 title: Assimilar conteúdo no Target
 description: Assimilar conteúdo no Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 3f526b8096125fbcf13b73fe82b2da0f611fa6ca
 workflow-type: tm+mt
-source-wordcount: '1707'
-ht-degree: 13%
+source-wordcount: '1925'
+ht-degree: 11%
 
 ---
 
@@ -155,7 +155,7 @@ Se o Release Orchestrator ainda estiver em execução quando uma assimilação e
 
 ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
 
-### Falha na assimilação complementar
+### Falha na assimilação complementar devido à violação de restrição de exclusividade
 
 Uma causa comum de [Assimilação complementar](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) a falha é um conflito nas ids do nó. Para identificar esse erro, baixe o log de assimilação usando a interface do Cloud Acceleration Manager e procure uma entrada como a seguinte:
 
@@ -166,6 +166,18 @@ Essa situação pode ocorrer se um nó for movido na origem entre uma extração
 Isso também pode acontecer se um nó no público-alvo for movido entre uma assimilação e uma assimilação complementar subsequente.
 
 Este conflito deve ser resolvido manualmente. Alguém familiarizado com o conteúdo deve decidir qual dos dois nós deve ser excluído, tendo em mente outro conteúdo que faça referência a ele. A solução pode exigir que a extração complementar seja feita novamente sem o nó ofensivo.
+
+### Falha na assimilação complementar devido à não exclusão do nó referenciado
+
+Outra causa comum de uma [Assimilação complementar](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) falha é um conflito de versão para um determinado nó na instância de destino. Para identificar esse erro, baixe o log de assimilação usando a interface do Cloud Acceleration Manager e procure uma entrada como a seguinte:
+>java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakIntegrity0001: não é possível excluir o nó referenciado: 8a2289f4-b904-4bd0-8410-15e41e0976a8
+
+Isso pode acontecer se um nó no destino for modificado entre uma assimilação e uma assimilação complementar subsequente, de modo que uma nova versão tenha sido criada. Se a assimilação tiver a opção &quot;incluir versões&quot; ativada, um conflito poderá ocorrer, pois o destino agora tem uma versão mais recente que está sendo referenciada pelo histórico de versões e outro conteúdo. O processo de assimilação não poderá excluir o nó de versão incorreto porque ele está sendo referenciado.
+
+A solução pode exigir que a extração complementar seja feita novamente sem o nó ofensivo. Ou criar um pequeno conjunto de migração do nó incorreto, mas com a opção &quot;incluir versões&quot; desativada.
+
+As práticas recomendadas indicam que, se uma assimilação precisar ser executada com wipe=false e &quot;include versions&quot;=true, é fundamental que o conteúdo no destino seja modificado o mínimo possível, até que a jornada de migração seja concluída. Caso contrário, esses conflitos poderão ocorrer.
+
 
 ## O que vem a seguir {#whats-next}
 
