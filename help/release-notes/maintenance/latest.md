@@ -2,10 +2,10 @@
 title: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 241dcc75e9f2c840be85c34800d8145457baa58d
+source-git-commit: eca0903050bb178f13d37073f8d65354f4bf36d3
 workflow-type: tm+mt
-source-wordcount: '272'
-ht-degree: 43%
+source-wordcount: '283'
+ht-degree: 41%
 
 ---
 
@@ -34,6 +34,7 @@ A Ativação de recursos 2023.7.0 fornecerá o conjunto completo de recursos par
 - Guias do AEM: Várias melhorias de PDF nativo e correções de estabilidade
 - SKYOPS-53130: Melhore o suporte à ferramenta CA no RDE
 - SKYOPS-57146: Corrigir bloqueio do Sling na inicialização do AEM
+- SKYOPS-61646: A data da última replicação não é atualizada após a atualização para a versão 12585
 
 ### Problemas conhecidos {#known-issues-12697}
 
