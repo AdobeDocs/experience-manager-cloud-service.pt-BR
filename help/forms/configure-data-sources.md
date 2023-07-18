@@ -5,14 +5,19 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '2192'
+source-wordcount: '2212'
 ht-degree: 0%
 
 ---
 
 # Configurar fontes de dados {#configure-data-sources}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/configure-data-sources.html) |
+| AEM as a Cloud Service | Este artigo |
 
 ![Integração de dados](do-not-localize/data-integeration.png)
 

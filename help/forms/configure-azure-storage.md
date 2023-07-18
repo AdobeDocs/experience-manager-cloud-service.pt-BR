@@ -2,14 +2,17 @@
 title: Como configurar o armazenamento do Azure?
 description: Saiba como integrar formulários ao servidor de armazenamento do Azure.
 exl-id: 606383b3-293c-43d2-9ba0-5843c4e0caa8
-source-git-commit: 10284b1ac6fbad2e7f6231603c3dd60b6e404299
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '582'
 ht-degree: 1%
 
 ---
 
-# Configurar armazenamento do [!DNL Azure] {#configure-azure-storage}
+# Configurar armazenamento do[!DNL Azure] {#configure-azure-storage}
+
+
+![integração de dados](assets/data-integeration.png)
 
 [[!DNL Experience Manager Forms] Integração de dados](data-integration.md) fornece um [!DNL Azure] configuração de armazenamento para integrar formulários com o [!DNL Azure] serviços de armazenamento. O modelo de dados de formulário pode ser usado para criar o Forms adaptável que interage com o [!DNL Azure] servidor para habilitar workflows de negócios. Por exemplo:
 

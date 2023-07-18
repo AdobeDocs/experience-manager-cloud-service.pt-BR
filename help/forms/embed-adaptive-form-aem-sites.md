@@ -4,14 +4,20 @@ seo-title: Hwo to add an Adaptive Form to an AEM Sites page?
 description: Você pode usar o componente Forms -Embed adaptável para adicionar ou incorporar o Forms adaptável a uma página do AEM Sites para preencher e enviar um formulário sem sair das páginas do AEM Sites.
 feature: Adaptive Forms
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: 2a487654c3af2d2ec3aa43481caed5e1d4fc77a2
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '1154'
-ht-degree: 0%
+source-wordcount: '1174'
+ht-degree: 1%
 
 ---
 
 # Incorporar um formulário adaptável à página de sites do AEM {#embed-an-adaptive-form-to-aem-sites-page}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-aem-sites.html) |
+| AEM as a Cloud Service | Este artigo |
+
 
 ## Visão geral {#overview}
 

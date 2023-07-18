@@ -5,14 +5,20 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '1228'
-ht-degree: 4%
+source-wordcount: '1248'
+ht-degree: 5%
 
 ---
 
 # Criar um esquema JSON para um Formulário adaptável {#creating-adaptive-forms-using-json-schema}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-json-schema-form-model.html) |
+| AEM as a Cloud Service | Este artigo |
+
 
 ## Pré-requisitos {#prerequisites}
 

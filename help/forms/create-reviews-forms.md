@@ -4,14 +4,20 @@ seo-title: Creating and managing reviews in forms
 description: Uma Revisão é um mecanismo que permite que um ou mais revisores comente em um formulário.
 seo-description: A Review is a mechanism that allows one or more reviewers to comment on a form.
 topic-tags: forms-manager
-source-git-commit: 3efd7d81424369ce6430802373129ab91b7356ab
+exl-id: 378049f8-bf21-4595-819d-ba5fba7023c0
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '652'
-ht-degree: 0%
+source-wordcount: '672'
+ht-degree: 1%
 
 ---
 
 # Criar e gerenciar revisões em formulários{#creating-and-managing-reviews-to-forms}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/create-reviews-forms.html) |
+| AEM as a Cloud Service | Este artigo |
 
 ## Análise {#review}
 
@@ -35,7 +41,6 @@ Uma revisão é um mecanismo que permite que um ou mais revisores comentem formu
    >* O administrador pode acessar qualquer grupo associado aos usuários do formulário.
    >* O grupo Usuários de Serviço não está disponível para seleção para revisão.
 
-
 ### Ações que ocorrem quando uma revisão é configurada {#actions-that-occur-when-a-review-is-set-up}
 
 Esta seção descreve o que acontece quando uma revisão é criada ou configurada.
@@ -55,7 +60,6 @@ Esta seção descreve o que acontece quando uma revisão é criada ou configurad
 >
 >* Somente as revisões em andamento podem ser modificadas.
 >* As revisões concluídas não podem ser modificadas.
-
 
 1. Navegue até a guia formulários e selecione um formulário.
 
@@ -107,4 +111,5 @@ Esta seção descreve o que acontece em **Atualização/Fim da Revisão**:
    1. **Revisores**: Para cada revisor, a tarefa incompleta relacionada à revisão é encerrada. A tarefa não aparece mais como &#39;Pendente&#39; na seção Notificações do revisor.
    1. **Iniciador**: a tarefa atribuída ao iniciador da revisão está marcada como concluída. A tarefa é removida da seção Notificação do iniciador da revisão.
    1. **Todos**: a revisão aparece na seção Análises anteriores. Nenhum comentário adicional pode ser adicionado.
+
    ![revisão concluída](assets/review-complete-imgg.png)

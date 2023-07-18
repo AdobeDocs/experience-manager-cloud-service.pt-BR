@@ -2,14 +2,19 @@
 title: Como criar um portal do Forms em uma página do Experience Manager Sites
 description: Saiba como criar um Portal do Forms e usar componentes principais prontos para uso em uma página do AEM Sites.
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f7f30545b76afa6abd4f49316d0fb2245f5470c2
 workflow-type: tm+mt
-source-wordcount: '1762'
+source-wordcount: '1782'
 ht-degree: 1%
 
 ---
 
 # Listar Forms adaptável em um portal {#publish-forms-on-portal}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/introduction-publishing-forms.html) |
+| AEM as a Cloud Service | Este artigo |
 
 Em um cenário típico de implantação de portal centrada em formulários, o desenvolvimento de formulários e o desenvolvimento de portal são duas atividades distintas. Enquanto os designers de formulários criam e armazenam formulários em um repositório, os desenvolvedores da Web criam um aplicativo da Web para listar formulários e manipular o envio de formulários. Os Forms são copiados para o nível da Web, pois não há comunicação entre o repositório de formulários e o aplicativo web.
 

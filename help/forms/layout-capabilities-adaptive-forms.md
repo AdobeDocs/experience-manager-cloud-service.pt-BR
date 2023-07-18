@@ -3,14 +3,19 @@ title: Recursos de layout do Adaptive Forms
 seo-title: Layout capabilities of Adaptive Forms
 description: O layout e as aparências do Adaptive Forms em vários dispositivos são regidos pelas configurações de layout. Entenda os vários layouts e como aplicá-los.
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '779'
-ht-degree: 0%
+source-wordcount: '799'
+ht-degree: 1%
 
 ---
 
 # Recursos de layout do Adaptive Forms {#layout-capabilities-of-adaptive-forms}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html) |
+| AEM as a Cloud Service | Este artigo |
 
 [!DNL Adobe Experience Manager] O permite criar Forms adaptável fácil de usar, que oferece experiências dinâmicas para usuários finais. O layout de formulário controla como os itens ou componentes são exibidos em um Formulário adaptável.
 
@@ -68,7 +73,7 @@ A expressão de resumo pode ser usada para mostrar os valores fornecidos pelo us
 
 ![Painéis repetíveis usando o layout Acordeão no Adaptive Forms](assets/accordion-layout.png)
 
-### [!UICONTROL Layout com guias - as guias são exibidas à esquerda ]{#tabbed-layout-tabs-appear-on-the-left}
+### [!UICONTROL Layout com guias - as guias são exibidas à esquerda]{#tabbed-layout-tabs-appear-on-the-left}
 
 Usando esse layout, você pode colocar o **[!UICONTROL Formulário adaptável do painel]** em um painel com navegação por guias. As guias são colocadas à esquerda do conteúdo do painel.
 
@@ -102,7 +107,7 @@ Esse layout, como o nome sugere, mostra títulos de painel junto com o menu de n
 
 ![Layouts móveis com títulos de painel nos cabeçalhos do formulário](assets/mobile-layout1.png)
 
-### [!UICONTROL Layout sem títulos de painel no cabeçalho do formulário ]{#layout-without-panel-titles-in-the-form-header}
+### [!UICONTROL Layout sem títulos de painel no cabeçalho do formulário]{#layout-without-panel-titles-in-the-form-header}
 
 Esse layout, como o nome sugere, mostra apenas o menu de navegação e a barra de navegação sem títulos de painel. Esse layout também fornece ícones Próximo e Anterior para navegação.
 

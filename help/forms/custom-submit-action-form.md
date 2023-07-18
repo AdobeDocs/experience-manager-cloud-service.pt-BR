@@ -5,14 +5,19 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '1747'
-ht-degree: 0%
+source-wordcount: '1767'
+ht-degree: 1%
 
 ---
 
 # Criar uma ação enviar personalizada para o Forms adaptável {#writing-custom-submit-action-for-adaptive-forms}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/customize-aem-forms/custom-submit-action-form.html) |
+| AEM as a Cloud Service | Este artigo |
 
 Um Formulário adaptável fornece várias Ações de envio prontas para uso (OOTB). Uma Ação de envio especifica detalhes das ações a serem executadas nos dados coletados por meio do Formulário adaptável. Por exemplo, enviar dados em um email.
 

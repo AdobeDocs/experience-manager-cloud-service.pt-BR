@@ -2,14 +2,20 @@
 title: Como configurar um [!DNL AEM Forms] as a Cloud Service ambiente?
 description: Saiba como instalar e configurar um [!DNL AEM Forms] ambiente as a Cloud Service
 exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '613'
-ht-degree: 16%
+source-wordcount: '634'
+ht-degree: 17%
 
 ---
 
 # Integrar para [!DNL AEM Forms] as a Cloud Service {#overview}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html) |
+| AEM as a Cloud Service | Este artigo |
+
 
 ## Decidir personas {#personas-aem-forms-project}
 
@@ -39,7 +45,7 @@ ht-degree: 16%
 
 * (Somente para sandboxes) Após a integração do serviço, [criar](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use) e [executar](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=pt-BR) produção e os gasodutos de não produção. Ele habilita e traz os recursos mais recentes da [!DNL AEM Forms] as a Cloud Service ao seu ambiente.
 
-Você pode usar o Forms as a Cloud Service para criar um formulário adaptável (Inscrição digital) ou gerar uma comunicação com o cliente. Após a conclusão [Integração](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html) para o [!DNL Adobe Experience Manager] as a Cloud Service, execute uma das seguintes ações para habilitar a Inscrição digital ou os recursos de Comunicação com o cliente. Você também pode ativar ambos os recursos:
+Você pode usar o Forms as a Cloud Service para criar um formulário adaptável (Inscrição digital) ou gerar uma comunicação com o cliente. Após a conclusão [Integração](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html) para o [!DNL Adobe Experience Manager] as a Cloud Service, execute uma das ações a seguir para habilitar os recursos de Inscrição Digital ou Comunicação com o Cliente. Você também pode ativar ambos os recursos:
 
 1. Faça logon no Cloud Manager e abra a instância do AEM Forms as a Cloud Service.
 

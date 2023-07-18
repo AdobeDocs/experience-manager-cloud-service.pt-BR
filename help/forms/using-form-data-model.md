@@ -5,14 +5,20 @@ feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '1010'
-ht-degree: 0%
+source-wordcount: '1030'
+ht-degree: 1%
 
 ---
 
 # Utilizar modelo de dados do formulário {#use-form-data-model}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/using-form-data-model.html) |
+| AEM as a Cloud Service | Este artigo |
+
 
 ![integração de dados](do-not-localize/data-integeration.png)
 
@@ -26,8 +32,7 @@ ht-degree: 0%
 Um modelo de dados de formulário é uma extensão do esquema JSON que você pode usar para:
 
 * [Criar Forms adaptável e fragmentos](#create-af)
-
-   <!--* [Create interactive communications and building blocks like text, list, and condition fragments](#create-ic)-->
+  <!--* [Create interactive communications and building blocks like text, list, and condition fragments](#create-ic)-->
 * [Visualizar com dados de amostra](#preview-ic)
 * [uso do serviço de modelo de dados de formulário](#prefill)
 * [Gravar dados do Formulário adaptável enviados de volta nas fontes de dados](#write-af)

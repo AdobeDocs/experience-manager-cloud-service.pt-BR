@@ -5,15 +5,21 @@ topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 6b38601e9bd29c71e5f70b46d2fa55a928851adc
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '3097'
-ht-degree: 0%
+source-wordcount: '3117'
+ht-degree: 1%
 
 ---
 
 
 # Usar [!DNL Adobe Sign] em um Formulário adaptável {#using-adobe-sign-in-an-adaptive-form}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html) |
+| AEM as a Cloud Service | Este artigo |
+
 
 [!DNL Adobe Sign] habilita fluxos de trabalho de assinatura eletrônica para o Adaptive Forms. As assinaturas eletrônicas melhoram os fluxos de trabalho para processar documentos para áreas jurídicas, de vendas, de folha de pagamento, de gerenciamento de recursos humanos e muito mais.
 
@@ -73,6 +79,7 @@ Para criar um Formulário adaptável habilitado para assinatura:
    1. Especifique a **[!UICONTROL Nome]** e **[!UICONTROL Título]** para o Formulário adaptável.
 
    1. Selecione o [contêiner de configuração](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) criado enquanto [integração [!DNL Adobe Sign] com [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md).
+
    O contêiner de configuração contém o [!DNL Adobe Sign] Cloud Services configurado para o seu ambiente. Esses serviços estão disponíveis para seleção no editor de Formulário adaptável.
 
 1. No **[!UICONTROL Modelo de formulário]** selecione uma das seguintes opções:
@@ -114,7 +121,6 @@ Para adicionar campos a um Formulário adaptável e personalizar várias opçõe
    >
    >  * Usar [!DNL Adobe Sign] o bloco não é obrigatório [!DNL Adobe Sign] em um Formulário adaptável. Se você não usar [!DNL Adobe Sign] bloquear e adicionar campos para os recipients, o campo de assinatura padrão será exibido na parte inferior dos documentos de assinatura.
    >  * Uso [!DNL Adobe Sign] bloquear somente para os Forms adaptáveis que geram automaticamente o Documento de registro. Se estiver usando um XDP personalizado para gerar um Documento de registro ou um modelo de formulário baseado no Formulário adaptável, [!DNL Adobe Sign] bloco não é suportado.
-
 
 
 1. Selecione o **[!UICONTROL Bloco do Adobe Sign]** e toque no botão **[!UICONTROL Editar]** ![Editar](assets/Smock_Edit_18_N.svg) ícone. Ele exibe opções para adicionar campos e a aparência do formato de um campo.
@@ -190,15 +196,16 @@ Você pode ter um ou vários destinatários para um contrato do Adobe Sign. Ao a
 
    * **[!UICONTROL Endereço de email do destinatário]:** Especificar o endereço de email do destinatário. O recipient recebe o contrato do Adobe Sign no endereço de email especificado. Você pode optar por usar um endereço de email fornecido em um campo de formulário, no perfil de usuário Experience Manager do usuário conectado ou inserir manualmente um endereço de email. É uma etapa obrigatória.
 
-      >[!NOTE]
-      >
-      >Certifique-se de que o endereço de email do primeiro ou do único recipient (se houver um único recipient) não seja idêntico a [!DNL Adobe Sign] conta usada para configurar o AEM Cloud Services.
+     >[!NOTE]
+     >
+     >Certifique-se de que o endereço de email do primeiro ou do único recipient (se houver um único recipient) não seja idêntico a [!DNL Adobe Sign] conta usada para configurar o AEM Cloud Services.
 
    * **[!UICONTROL Método de autenticação do recipient]:** Especifique o método para autenticar um recipient antes de abrir o contrato do Adobe Sign. Você pode escolher entre telefone, base de conhecimento, autenticação com base na identidade social e [ID do governo](https://helpx.adobe.com/sign/using/adobesign-authentication-government-id.html) para [!DNL Adobe Acrobat Sign]. Para [!DNL Adobe Acrobat Sign for Government] você pode escolher entre autenticação por telefone e autenticação baseada em conhecimento.
+
    >[!NOTE]
    >
    >    * Por padrão, a autenticação com base na identidade social fornece uma opção para autenticar usando o Facebook, o Google e o LinkedIn. Você pode entrar em contato [!DNL Adobe Sign] suporte para habilitar outros provedores de autenticação social.
-
+   >
 
    * **[!DNL Adobe Sign]campos a serem preenchidos ou assinados:** Selecionar [!DNL Adobe Sign] para o recipient. Um Formulário adaptável pode ter vários [!DNL Adobe Sign] campos. Você pode optar por ativar campos específicos para um recipient. O campo exibe todas as [!DNL Adobe Sign] Blocos. Ao selecionar um bloco, todos os campos do bloco são selecionados. Você pode usar o ícone X para desmarcar um campo.
 
@@ -310,16 +317,16 @@ Depois [edição de propriedades do Formulário adaptável para o Adobe Sign](wo
    * Assinaturas na nuvem: assine com um [ID digital](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) hospedado por um provedor de serviços de confiança.
    * Adobe Acrobat ou Reader: baixe e abra o documento com o Adobe Acrobat ou Reader para assinar usando um cartão inteligente, token USB ou ID digital baseada em arquivo.
 
-      >[!NOTE]
-      >
-      > A Assinatura digital também se aplica a [!DNL Adobe Acrobat Sign for Government] mas não é possível aplicá-lo usando Assinaturas em nuvem.
+     >[!NOTE]
+     >
+     > A Assinatura digital também se aplica a [!DNL Adobe Acrobat Sign for Government] mas não é possível aplicá-lo usando Assinaturas em nuvem.
+
    Depois de adicionar o campo de assinatura em nuvem ao Formulário adaptável, execute as seguintes etapas para concluir o processo de configuração:
 
    * [Ativar o Adobe Sign para um formulário adaptável](#enableadobsignforanadaptiveform)
    * [Selecione Adobe Sign Cloud Service para um formulário adaptável](#selectadobesigncloudserviceforanadaptiveform)
    * [Adicionar recipients a um formulário adaptável](#addsignerstoanadaptiveform)
    * [Selecione a ação enviar para um formulário adaptável](#selectsubmitactionforanadaptiveform)
-
 
 ### Configurar a página de agradecimento ou o componente da etapa de resumo {#configure-the-thank-you-page-or-summary-step-component}
 

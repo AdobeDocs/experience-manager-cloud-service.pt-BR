@@ -1,11 +1,11 @@
 ---
 title: Como adicionar um formulário adaptável à página do AEM Sites?
-description: Descubra como criar ou adicionar um formulário adaptável facilmente à sua página do AEM Sites. Conheça as técnicas passo a passo e as práticas recomendadas para integrar formulários ao seu site, otimizando suas experiências digitais para obter o máximo impacto.
+description: Descubra como criar ou adicionar um Formulário adaptável à sua página do AEM Sites. Conheça também os benefícios e várias maneiras de integrar formulários ao seu site.
 feature: Adaptive Forms, Page Editor, Authoring
-Keywords: adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
-source-git-commit: 53997540cc469f4cc2ad747ca4e52b531a7b193e
+Keywords: af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
+source-git-commit: 05401630484fa881da1304b6d0301670248b9889
 workflow-type: tm+mt
-source-wordcount: '3232'
+source-wordcount: '3224'
 ht-degree: 1%
 
 ---
@@ -181,7 +181,7 @@ Para converter um formulário adaptável na página AEM Sites em um fragmento de
 
 1. Abra a página do AEM Sites que contém o formulário adaptável (no componente Contêiner adaptável do Forms) no modo de edição.
 1. Abra a Árvore de conteúdo e selecione a **[!UICONTROL Contêiner adaptável do Forms]** que hospeda o formulário adaptável. Uma página do AEM Sites pode hospedar vários Forms adaptáveis. Portanto, selecione cuidadosamente o Contêiner adaptável correto do Forms.
-1. Na barra de menus, selecione a opção ![Ícone Converter para variação de fragmento de experiência](/help/forms/assets/Smock_FilingCabinet_18_N.svg) Ícone Converter para variação de Fragmento de experiência.
+1. Na barra de menus, selecione a opção ![Ícone Converter para fragmento de experiência](/help/forms/assets/Smock_FilingCabinet_18_N.svg) Ícone Converter para variação de Fragmento de experiência.
    ![Clique no logotipo do gabinete de arquivo para converter um formulário adaptável na página AEM Sites em um fragmento de experiência](/help/forms/assets/convert-form-in-sites-page-to-an-experience-fragment.png)
 
    Uma caixa de diálogo para converter o contêiner do Formulário adaptável em um novo Fragmento de experiência ou adicionar a um Fragmento de experiência existente é exibida
@@ -200,7 +200,7 @@ Uma ação enviar permite escolher o destino dos dados capturados por meio de um
 1. Abra o Editor de páginas AEM ou o Fragmento de experiência que contém o Formulário adaptável.
 1. Abra a Árvore de conteúdo e selecione a **[!UICONTROL Contêiner adaptável do Forms]** que hospeda o formulário adaptável. Uma página do AEM Sites pode hospedar vários Forms adaptáveis. Portanto, selecione cuidadosamente o Contêiner adaptável correto do Forms.
 1. Clique nas propriedades do Contêiner de formulário adaptável ![Propriedades do contêiner de formulário adaptável](/help/forms/assets/configure-icon.svg) ícone. A caixa de diálogo Contêiner de formulário adaptável para configurar ações de envio é aberta.
-   ![Clique no ícone de chave inglesa para abrir a caixa de diálogo Contêiner de formulário adaptável para configurar uma ação de envio](/help/forms/assets/adaptive-forms-container.png)
+   ![Clique no ícone de chave inglesa para abrir a caixa de diálogo Contêiner de formulário adaptável para configurar a ação enviar para um formulário adaptável](/help/forms/assets/adaptive-forms-container.png)
 1. Selecione e configure uma ação Enviar, com base em seus requisitos. Para obter informações detalhadas sobre Ações de Envio, consulte [Ação de envio do formulário adaptável](/help/forms/configuring-submit-actions.md)
 
 
@@ -216,7 +216,7 @@ Para configurar um Esquema JSON ou um Modelo de dados de formulário para seu fo
 1. Abra o Editor de páginas AEM ou o Fragmento de experiência que contém o Formulário adaptável.
 1. Abra a Árvore de conteúdo e selecione a **[!UICONTROL Contêiner adaptável do Forms]** que hospeda o formulário adaptável. Uma página do AEM Sites pode hospedar vários Forms adaptáveis. Portanto, selecione cuidadosamente o Contêiner adaptável correto do Forms.
 1. Clique nas propriedades do Contêiner de formulário adaptável ![Propriedades do contêiner de formulário adaptável](/help/forms/assets/configure-icon.svg) ícone. A caixa de diálogo Contêiner de formulário adaptável para configurar os Modelos de dados é aberta.
-   ![Clique no ícone de chave inglesa para abrir a caixa de diálogo Contêiner de formulário adaptável para configurar um Modelo de dados para o formulário adaptável](/help/forms/assets/form-data-model-adaptive-forms-container.png)
+   ![Clique no ícone Chave inglesa para configurar modelos de dados para o formulário adaptável](/help/forms/assets/form-data-model-adaptive-forms-container.png)
 1. Selecione e configure um Esquema JSON ou Modelo de dados de formulário, com base em seus requisitos. Para obter informações detalhadas sobre Ações de Envio, consulte [Ação de envio do formulário adaptável](/help/forms/configuring-submit-actions.md).
 
    * Ao selecionar a variável **[!UICONTROL Modelo de formulário]** , use o **[!UICONTROL Selecionar modelo de dados do formulário]** opção para selecionar um modelo de dados de formulário pré-configurado.
@@ -238,7 +238,7 @@ Você pode usar o serviço de Preenchimento do modelo de dados de formulário pa
 1. Abra o Editor de páginas AEM ou o Fragmento de experiência que contém o Formulário adaptável.
 1. Abra a Árvore de conteúdo e selecione a **[!UICONTROL Contêiner adaptável do Forms]** que hospeda o formulário adaptável. Uma página do AEM Sites pode hospedar vários Forms adaptáveis. Portanto, selecione cuidadosamente o Contêiner adaptável correto do Forms.
 1. Clique nas propriedades do Contêiner de formulário adaptável ![Propriedades do contêiner de formulário adaptável](/help/forms/assets/configure-icon.svg) ícone. A caixa de diálogo Contêiner de formulário adaptável para configurar os Modelos de dados é aberta.
-   ![Clique no ícone de chave inglesa para abrir a caixa de diálogo Contêiner de formulário adaptável para configurar o serviço de preenchimento prévio](/help/forms/assets/adaptive-forms-container.png)
+   ![Clique no ícone de chave inglesa para abrir a caixa de diálogo Contêiner de formulário adaptável para configurar o serviço de preenchimento prévio para o formulário adaptável](/help/forms/assets/adaptive-forms-container.png)
 1. Selecionar um modelo de dados do formulário. Abra o **[!UICONTROL Básico]** guia. No serviço de preenchimento, selecione **[!UICONTROL Serviço de preenchimento do modelo de dados de formulário]**.
 1. Clique em **[!UICONTROL Concluído]**. O formulário adaptável agora está configurado para usar o Preenchimento prévio do modelo de dados de formulário. Agora você pode, use o [editor de regras](rule-editor.md) para criar regras para preencher previamente os campos do formulário.
 

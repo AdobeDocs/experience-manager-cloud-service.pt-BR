@@ -2,14 +2,19 @@
 title: Como configurar uma ação enviar para um formulário adaptável
 description: Um Formulário adaptável fornece várias Ações de envio. Uma Ação de envio define como um Formulário adaptável é processado após o envio. Você pode usar as Ações de envio integradas ou criar as suas próprias ações.
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 921dc0f109b1faaa6d53086c4ca29627cb30bef8
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '3133'
+source-wordcount: '3153'
 ht-degree: 1%
 
 ---
 
 # Ação de envio do formulário adaptável {#configuring-the-submit-action}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
+| AEM as a Cloud Service | Este artigo |
 
 Uma ação enviar é acionada quando um usuário clica no **[!UICONTROL Enviar]** em um Formulário adaptável. O Adaptive Forms fornece algumas ações enviar prontas para uso. As Ações de envio disponíveis prontas para uso são:
 
@@ -93,7 +98,7 @@ Você pode usar o **[!UICONTROL Enviar e-mail]** Ação Enviar para enviar um em
 
     &quot;
     
-    Olá, ${customer_Name},
+    Olá ${customer_Name},
     
     O endereço a seguir é definido como o endereço de entrega padrão:
     ${customer_Name},
@@ -110,7 +115,6 @@ Você pode usar o **[!UICONTROL Enviar e-mail]** Ação Enviar para enviar um em
 >
 > * Todos os campos de formulário devem ter nomes de elementos diferentes, mesmo que os campos sejam colocados em painéis diferentes de um formulário adaptável.
 > * O AEM as a Cloud Service exige que os e-mails de saída sejam criptografados. Por padrão, o email de saída é desativado. Para ativá-lo, envie um tíquete de suporte para [Solicitando acesso](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email).
-
 
 Também é possível incluir anexos e um Documento de registro (DoR) no email. Para habilitar **[!UICONTROL Anexar documento de registro]** Configurar o formulário adaptável para gerar um Documento de registro (DoR). Você pode ativar a opção para gerar um Documento de registro a partir das propriedades do Formulário adaptável.
 
@@ -198,7 +202,6 @@ Para conectar o AEM Forms ao seu Microsoft® Sharepoint Storage:
    >* Por padrão, `forms-ootb-storage-adaptive-forms-submission` está presente no site do SharePoint selecionado.
    >* Criar uma pasta como `forms-ootb-storage-adaptive-forms-submission`, se ainda não estiver presente no `Documents` do site do SharePoint selecionado clicando em **Criar pasta**.
 
-
 Agora, você pode usar essa configuração do SharePoint Sites para a ação enviar em um Formulário adaptável.
 
 ### Usar a configuração do SharePoint em um formulário adaptável {#use-sharepoint-configuartion-in-af}
@@ -210,7 +213,6 @@ Você pode usar a configuração do SharePoint criada em um Formulário adaptáv
    >
    > * Selecionar o mesmo [!UICONTROL Contêiner de configuração] para um Formulário adaptável, em que você criou o armazenamento do SharePoint.
    > * Se não [!UICONTROL Contêiner de configuração] for selecionada, a variável global [!UICONTROL Configuração de armazenamento] pastas são exibidas na janela de propriedades Submeter Ação.
-
 
 1. Selecionar **Ação de envio** as **[!UICONTROL Enviar para o SharePoint]**.
    ![GIF do Sharepoint](/help/forms/assets/sharedrive-video.gif)
@@ -257,7 +259,6 @@ Para conectar o AEM Forms ao seu Microsoft® OneDrive Storage:
    >* Por padrão, `forms-ootb-storage-adaptive-forms-submission` está presente no OneDrive Container.
    > * Criar uma pasta como `forms-ootb-storage-adaptive-forms-submission`, se ainda não estiver presente clicando em **Criar pasta**.
 
-
 Agora, você pode usar esta configuração de armazenamento do OneDrive para a ação de envio em um Formulário adaptável.
 
 ### Usar a configuração do OneDrive em um formulário adaptável {#use-onedrive-configuartion-in-af}
@@ -269,7 +270,6 @@ Você pode usar a configuração de armazenamento do OneDrive criada em um Formu
    >
    > * Selecionar o mesmo [!UICONTROL Contêiner de configuração] para um Formulário adaptável, em que você criou seu armazenamento do OneDrive.
    > * Se não [!UICONTROL Contêiner de configuração] for selecionada, a variável global [!UICONTROL Configuração de armazenamento] pastas são exibidas na janela de propriedades Submeter Ação.
-
 
 1. Selecionar **Ação de envio** as **[!UICONTROL Enviar para o OneDrive]**.
    ![GIF do OneDrive](/help/forms/assets/onedrive-video.gif)
@@ -284,7 +284,7 @@ A estrutura de pastas para salvar os dados é `/folder_name/form_name/year/month
 A variável **[!UICONTROL Enviar para o Armazenamento Azure Blob]**  A ação enviar conecta um formulário adaptável a um portal do Microsoft® Azure. Você pode enviar os dados do formulário, o arquivo, os anexos ou o Documento de registro para os contêineres conectados do Armazenamento do Azure. Para usar a ação Enviar para o Armazenamento de blobs do Azure:
 
 1. [Criar um contêiner de armazenamento do Azure Blob](#create-a-azure-blob-storage-container-create-azure-configuration): conecta o AEM Forms aos contêineres de Armazenamento do Azure.
-2. [Usar a configuração de armazenamento do Azure em um formulário adaptável ](#use-azure-storage-configuration-in-an-adaptive-form-use-azure-storage-configuartion-in-af): ele conecta seu Formulário adaptável aos contêineres configurados do Armazenamento do Azure.
+2. [Usar a configuração de armazenamento do Azure em um formulário adaptável](#use-azure-storage-configuration-in-an-adaptive-form-use-azure-storage-configuartion-in-af): ele conecta seu Formulário adaptável aos contêineres configurados do Armazenamento do Azure.
 
 ### Criar um contêiner de armazenamento do Azure Blob {#create-azure-configuration}
 
@@ -313,7 +313,6 @@ Você pode usar a configuração do contêiner de Armazenamento do Azure criada 
    >
    > * Selecionar o mesmo [!UICONTROL Contêiner de configuração] para um Formulário adaptável, em que você criou seu armazenamento do OneDrive.
    > * Se não [!UICONTROL Contêiner de configuração] for selecionada, a variável global [!UICONTROL Configuração de armazenamento] pastas são exibidas na janela de propriedades Submeter Ação.
-
 
 1. Selecionar **Ação de envio** as **[!UICONTROL Enviar para o Armazenamento Azure Blob]**.
    ![GIF de armazenamento do Azure Blob](/help/forms/assets/azure-submit-video.gif)

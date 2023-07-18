@@ -2,14 +2,19 @@
 title: Como integrar o AEM Forms com o Adobe Analytics?
 seo-title: Learn how to integrate AEM Forms with Adobe Analytics.
 exl-id: 0730432e-75b8-4b35-a377-ae4a2bee6c9f
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '1687'
-ht-degree: 0%
+source-wordcount: '1707'
+ht-degree: 1%
 
 ---
 
 # Integrar com a [!DNL Adobe Analytics] {#integrate-aem-forms-with-adobe-analytics}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html) |
+| AEM as a Cloud Service | Este artigo |
 
 O AEM Forms integra-se com [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=en) para permitir que você capture e rastreie métricas de desempenho para seus formulários publicados. O objetivo por trás da análise dessas métricas é permitir que os usuários empresariais obtenham insights sobre o comportamento do usuário final e otimizem a experiência de captura de dados. Você pode capturar e rastrear o comportamento de usuários conectados e não conectados (anônimos) por meio do Adobe Analytics para Forms adaptável.
 
@@ -140,7 +145,7 @@ Execute as seguintes etapas para criar regras com base na **[!UICONTROL Adobe Ex
 
    * **[!UICONTROL Limpar variáveis]**: use esse tipo de ação para limpar a trilha de dados para que o evento seja registrado apenas uma vez em [!DNL Adobe Analytics].
 
-      A abordagem recomendada é utilizar a **[!UICONTROL Definir variáveis]** tipo de ação para configurar o evento e os elementos de dados, depois use **[!UICONTROL Enviar sinal]** para enviar dados e, em seguida, usar **[!UICONTROL Limpar variáveis]** para limpar a trilha de dados.
+     A abordagem recomendada é utilizar a **[!UICONTROL Definir variáveis]** tipo de ação para configurar o evento e os elementos de dados, depois use **[!UICONTROL Enviar sinal]** para enviar dados e, em seguida, usar **[!UICONTROL Limpar variáveis]** para limpar a trilha de dados.
 
 1. No **[!UICONTROL Props]** mapeie as opções do conjunto de relatórios disponíveis na lista suspensa com os elementos de dados definidos com o [Configurar elementos de dados](#configure-data-elements).
 

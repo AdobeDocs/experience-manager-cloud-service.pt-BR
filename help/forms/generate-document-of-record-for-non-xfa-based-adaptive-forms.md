@@ -2,14 +2,19 @@
 title: Gerar um documento de registro para o Adaptive Forms
 description: Explica como gerar um modelo para um Documento de registro (DoR) do Adaptive Forms.
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '4066'
+source-wordcount: '4086'
 ht-degree: 2%
 
 ---
 
 # Gerar documento de registro para Formulários adaptáveis
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) |
+| AEM as a Cloud Service | Este artigo |
 
 ## Visão geral {#overview}
 
@@ -359,6 +364,7 @@ Para localizar as informações de marca inseridas na guia Documento de registro
       * **Texto do aviso**: Texto do aviso de isenção de responsabilidade.
 
       ![Página principal  Propriedades](/help/forms/assets/masterpagepropertiesdor.png)
+
    >[!NOTE]
    >
    >Se você estiver usando um modelo de Formulário adaptável criado com uma versão do Designer anterior à 6.3, para que as propriedades de Cor de ênfase e Família de fontes funcionem, verifique se o seguinte está presente no modelo de Formulário adaptável no subformulário raiz:

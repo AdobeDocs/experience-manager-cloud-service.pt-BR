@@ -2,14 +2,19 @@
 title: Criar e usar temas para estilizar um Formulário adaptável
 description: Você pode usar temas para estilizar e fornecer uma identidade visual a um formulário adaptável. Você pode compartilhar um tema em qualquer número do Adaptive Forms.
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '5499'
+source-wordcount: '5519'
 ht-degree: 1%
 
 ---
 
 # Criação e uso de temas {#creating-and-using-themes}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html) |
+| AEM as a Cloud Service | Este artigo |
 
 É possível criar e aplicar temas para estilizar um Formulário adaptável<!-- or an interactive communication-->. Um tema contém detalhes de estilo para os componentes e painéis. Os estilos incluem propriedades como cores de fundo, cores de estado, transparência, alinhamento e tamanho. Quando você aplica um tema, o estilo especificado é refletido nos componentes correspondentes. O tema é gerenciado de forma independente sem uma referência a um Formulário adaptável<!-- or interactive communication -->.
 

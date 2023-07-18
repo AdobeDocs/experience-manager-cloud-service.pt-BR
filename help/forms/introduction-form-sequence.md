@@ -5,14 +5,19 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 6b3f9131-db6b-451b-a932-b57d809222eb
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '486'
-ht-degree: 100%
+source-wordcount: '506'
+ht-degree: 97%
 
 ---
 
 # Introdução à sequência de formulários em várias etapas {#introduction-to-multi-step-form-sequence}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/introduction-form-sequence.html) |
+| AEM as a Cloud Service | Este artigo |
 
 Os formulários adaptáveis permitem que os autores de formulários criem uma experiência de captura de dados em várias etapas com grande facilidade. Eles possuem suporte integrado para criar vários painéis e associar cada painel a diferentes padrões de navegação. Os autores do formulário podem agrupar campos de formulário em seções lógicas e representar um grupo como um painel. A navegação geral entre painéis é controlada com o layout do painel. Os autores podem optar por organizar painéis em diferentes layouts, por exemplo, posicionando sequencialmente com o layout do assistente ou de maneira ad hoc por meio do layout com guias. Para obter informações sobre layouts de painel, consulte [Recursos de layout dos formulários adaptáveis](layout-capabilities-adaptive-forms.md).
 
@@ -37,9 +42,8 @@ Tomemos como exemplo um caso de uso em que você deve criar uma sequência de fo
 
       * Serviços de assinatura eletrônica da Adobe Document Cloud
       * Assinatura escrita
+
    * **[!UICONTROL Confirmação]**: contém o componente **[!UICONTROL Resumo]** que exibe uma mensagem confirmando o envio do formulário depois que um usuário o assina e atinge a etapa de Confirmação (Resumo) da sequência. Os autores podem configurar o texto do componente [!UICONTROL Resumo]: mostrar uma mensagem de agradecimento, mostrar um link para o PDF gerado e assim por diante.
-
-
 
 1. Selecione o layout do painel raiz como **[!UICONTROL Assistente]**.
 1. Conclua as etapas restantes para criar o modelo de formulário. <!-- For more information, see [Creating a custom Adaptive Form template](custom-adaptive-forms-templates.md). -->

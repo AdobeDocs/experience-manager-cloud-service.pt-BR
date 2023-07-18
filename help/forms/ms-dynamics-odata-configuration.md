@@ -5,14 +5,19 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '982'
-ht-degree: 1%
+source-wordcount: '1002'
+ht-degree: 2%
 
 ---
 
 # [!DNL Microsoft Dynamics] Configuração OData {#microsoft-dynamics-odata-configuration}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/ms-dynamics-odata-configuration.html) |
+| AEM as a Cloud Service | Este artigo |
 
 ![integração de dados](assets/data-integeration.png)
 
@@ -91,17 +96,17 @@ Faça o seguinte para registrar um cliente OAuth em um computador do Ative Diret
 
    `Add-AdfsClient -ClientId “<Client-ID>” -Name "<name>" -RedirectUri "<redirect-uri>" -GenerateClientSecret`
 
-   Onde:
+   Em que:
 
    * `Client-ID` é uma ID de cliente que você pode gerar usando qualquer gerador de GUID.
    * `redirect-uri` é o URL para o [!DNL Microsoft Dynamics] Serviço de nuvem OData ativado [!DNL Experience Manager Forms]. O serviço de nuvem padrão instalado com o [!DNL Experience Manager Forms] é implantado no seguinte URL:
-      `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
+     `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
 1. Execute o seguinte comando para conceder acesso à máquina do AD FS:
 
    `Grant-AdfsApplicationPermission -ClientRoleIdentifier “<Client-ID>” -ServerRoleIdentifier <resource> -ScopeNames openid`
 
-   Onde:
+   Em que:
 
    * `resource` é o [!DNL Microsoft Dynamics] URL da organização.
 

@@ -5,14 +5,21 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 026f4920-f8f9-4b08-b1b0-af50229633d7
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '728'
-ht-degree: 0%
+source-wordcount: '748'
+ht-degree: 1%
 
 ---
 
 # Envio assíncrono do Adaptive Forms {#asynchronous-submission-of-adaptive-forms}
+
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/asynchronous-submissions-adaptive-forms.html) |
+| AEM as a Cloud Service | Este artigo |
+
 
 Tradicionalmente, os formulários web são configurados para enviar de forma síncrona. No envio síncrono, quando os usuários enviam um formulário, eles são redirecionados para uma página de confirmação, uma página de agradecimento ou, em caso de falha de envio, uma página de erro. No entanto, experiências da Web modernas, como aplicativos de página única, estão ganhando popularidade, onde a página da Web permanece estática enquanto a interação cliente-servidor acontece em segundo plano. É possível configurar o envio assíncrono para fornecer essa experiência com o Adaptive Forms.
 

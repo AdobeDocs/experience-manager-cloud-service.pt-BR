@@ -2,7 +2,7 @@
 title: Repetibilidade no formulário adaptável (componentes principais)
 description: Use o recurso de repetibilidade dos componentes do painel para repetir seções semelhantes em um formulário adaptável.
 role: Architect, Developer, Admin, User
-source-git-commit: bf45e7b935c3e57c2ecf77d9391abda80ee4a761
+source-git-commit: f7f30545b76afa6abd4f49316d0fb2245f5470c2
 workflow-type: tm+mt
 source-wordcount: '1410'
 ht-degree: 1%
@@ -97,6 +97,7 @@ O pai do painel deve conter um botão Excluir para excluir a instância dos pain
    * Para criar um botão de exclusão do painel, especifique `this.panel.instanceManager.removeInstance(this.panel.instanceIndex)`
 
    Clique em **Concluído**.
+>[!VIDEO](https://video.tv.adobe.com/v/3421620/adaptive-forms-repeatable-sections)
 
 >[!NOTE]
 >
