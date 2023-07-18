@@ -5,14 +5,14 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 8d40f259e70ef73285aafcb736e1f9d720380f7d
+source-git-commit: 8ac35abd1335b4e31a6dc0d8812cc9df333e69a4
 workflow-type: tm+mt
-source-wordcount: '2250'
+source-wordcount: '2246'
 ht-degree: 5%
 
 ---
 
-# Criar um formulário adaptável (componentes principais) {#creating-an-adaptive-form-core-components}
+# Criar um Formulário adaptável {#creating-an-adaptive-form-core-components}
 
 O Forms adaptável permite criar formulários envolventes, responsivos, dinâmicos e adaptáveis. O AEM Forms fornece um assistente prático para que as empresas possam criar rapidamente o Adaptive Forms. O assistente fornece uma navegação rápida por guias para selecionar facilmente o modelo pré-configurado, o estilo, os campos e as opções de envio para criar um Formulário adaptável.
 
@@ -44,7 +44,7 @@ Você precisa do seguinte para criar um Formulário adaptável:
 * **Permissões**: adicionar usuários ao [!DNL forms-users] grupo. Os membros da [!DNL forms-users] grupo tem permissões para criar um Formulário adaptável. Para obter uma lista detalhada de grupos de usuários específicos de formulários, consulte [Grupos e permissões](forms-groups-privileges-tasks.md).
 
 
-## Criar um formulário adaptável (componentes principais) {#create-an-adaptive-form-core-components}
+## Criar um Formulário adaptável  {#create-an-adaptive-form-core-components}
 
 1. Faça logon no [!DNL Experience Manager Forms] Instância do autor. Pode ser uma instância da nuvem ou uma instância de desenvolvimento local.
 

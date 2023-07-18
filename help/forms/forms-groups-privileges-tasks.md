@@ -2,10 +2,10 @@
 title: Integrado [!DNL AEM Forms] Grupos as a Cloud Service
 description: Lista de grupos de usuários prontos para uso e permissões atribuídas a cada grupo
 exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
-source-git-commit: d67e46e2f798e56e322d5c4aad536e718c7aae1a
+source-git-commit: 8ac35abd1335b4e31a6dc0d8812cc9df333e69a4
 workflow-type: tm+mt
-source-wordcount: '139'
-ht-degree: 5%
+source-wordcount: '155'
+ht-degree: 9%
 
 ---
 
@@ -31,19 +31,19 @@ Depois de configurar [!DNL AEM Forms] as a Cloud Service, os grupos listados na 
      <li>Criar temas</li> 
     </ul> </td> 
   </tr>
-  <tr>
+  <!-- <tr>
    <td>[!DNL forms-power-user]</td> 
    <td>
     <ul> 
-     <li>Criar, visualizar, publicar e enviar Forms adaptável</li> 
-     <!-- <li>Create, preview, and publish interactive communications and document fragments</li> 
-     <li>Create scripts for Adaptive Forms using code editor</li> -->
-     <li>Fazer upload de ativos, incluindo scripts</li> 
-     <li>Criar temas</li> 
-     <li>Importar pacotes que contêm XDP</li> 
+     <li>Create, preview, publish, and submit Adaptive Forms</li> 
+     <li>Create, preview, and publish interactive communications and document fragments</li> 
+     <li>Create scripts for Adaptive Forms using code editor</li> 
+     <li>Upload assets including scripts</li> 
+     <li>Create themes</li> 
+     <li>Import packages containing XDP</li> 
     </ul> </td> 
   </tr>
-  <!-- <tr>
+ <tr>
    <td>forms-submission-reviewers</td> 
    <td>
     <ul> 
@@ -100,3 +100,14 @@ Depois de configurar [!DNL AEM Forms] as a Cloud Service, os grupos listados na 
   </tr>
  </tbody>
 </table>
+
+## Consulte também:
+
+* [Integrar a um ambiente Cloud Service](/help/forms/setup-forms-cloud-service.md)
+* [Configurar um ambiente de desenvolvimento local](/help/forms/setup-local-development-environment.md)
+* [Migração do AEM 6.5 Forms para o Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
+* [Criar um formulário adaptável independente](/help/forms/creating-adaptive-form-core-components.md)
+* [Adicionar um formulário adaptável à página do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+
+
+
