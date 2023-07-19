@@ -3,7 +3,7 @@ title: Como configurar uma ação enviar para um formulário adaptável
 description: Um Formulário adaptável fornece várias Ações de envio. Uma Ação de envio define como um Formulário adaptável é processado após o envio. Você pode usar as Ações de envio integradas ou criar as suas próprias ações.
 hide: true
 hidefromtoc: true
-source-git-commit: 8ac35abd1335b4e31a6dc0d8812cc9df333e69a4
+source-git-commit: ac9689a911be119ae53d5e1134595c567370b7c4
 workflow-type: tm+mt
 source-wordcount: '3366'
 ht-degree: 1%
@@ -12,17 +12,17 @@ ht-degree: 1%
 
 # Ação de envio do formulário adaptável {#configuring-the-submit-action}
 
+<span class="preview"> O Adobe recomenda usar os Componentes principais para [adicionar o Adaptive Forms a uma página do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) ou para [criar Forms adaptável independente](/help/forms/creating-adaptive-form-core-components.md). </span>
+
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service | Este artigo |
+| Aplica-se a | Componentes Principais Do Formulário Adaptável, ❎ [Componentes de base do formulário adaptável](/help/forms/configuring-submit-actions.md) |
 
-**Aplicável a**: Componentes principais do formulário adaptável ✔️ [Componentes de base do formulário adaptável](/help/forms/configuring-submit-actions.md). O Adobe recomenda usar os Componentes principais para [adicionar o Adaptive Forms a uma página do AEM Sites](create-or-add-an-adaptive-form-to-aem-sites-page.md) ou para [criar Forms adaptável independente](creating-adaptive-form-core-components.md).
 
-Uma ação enviar permite escolher o destino dos dados capturados por meio de um formulário adaptável. É acionado quando um usuário clica na variável **[!UICONTROL Enviar]** em um Formulário adaptável.
-
-O Forms as a Cloud Service, para o Adaptive Forms criado em Componentes principais, oferece uma variedade de Ações de envio pré-criadas. Essas ações de envio prontas para uso permitem:
+Uma ação enviar permite escolher o destino dos dados capturados por meio de um formulário adaptável. É acionado quando um usuário clica na variável **[!UICONTROL Enviar]** em um Formulário adaptável. O Forms as a Cloud Service, para o Adaptive Forms com base em Componentes principais, oferece uma variedade de Ações de envio pré-criadas. Essas ações de envio prontas para uso permitem:
 
 * Envie dados de formulário por email sem esforço.
 * Iniciar fluxos do Microsoft Power Automate ou fluxos de trabalho do AEM ao transmitir os dados.
