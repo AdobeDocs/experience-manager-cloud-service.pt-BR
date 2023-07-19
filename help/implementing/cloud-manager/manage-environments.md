@@ -2,10 +2,10 @@
 title: Gerenciamento de ambientes
 description: Saiba mais sobre os tipos de ambientes que você pode criar e como criá-los para o seu projeto do Cloud Manager.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: e636a765cdc1be7cb0d385089e8ccc75b798844a
 workflow-type: tm+mt
-source-wordcount: '2274'
-ht-degree: 47%
+source-wordcount: '2558'
+ht-degree: 42%
 
 ---
 
@@ -172,6 +172,38 @@ Uma vez ativado, você poderá publicar conteúdo no serviço de visualização 
 >[!NOTE]
 >
 >Seu ambiente deve estar na versão `2021.05.5368.20210529T101701Z` do AEM, ou uma versão mais recente, para usar o serviço de visualização. Verifique se um pipeline de atualização foi executado com êxito em seu ambiente para que você possa usar o serviço de visualização.
+
+### Status de regiões de publicação adicionais {#additional-region-status}
+
+Se você tiver ativado regiões de publicação adicionais, será possível verificar o status dessas regiões na **Ambientes** cartão.
+
+1. No **Visão geral** localize a **Ambientes** cartão.
+
+1. No **Ambientes** , o **Status** A coluna refletirá se houver problemas com as regiões de publicação adicionais configuradas. Clique em **Informações** ícone para obter detalhes das regiões.
+
+   ![Informações adicionais de status de regiões de publicação no cartão Ambientes](assets/additional-publish-region-status-environments-card.png)
+
+Como alternativa, você pode acessar as mesmas informações no **Ambientes** guia.
+
+1. No **Visão geral** selecione a **Ambientes** guia.
+
+1. No **Ambientes** selecione o ambiente que deseja consultar no painel de navegação esquerdo.
+
+1. Depois que um ambiente é selecionado:
+
+   * A variável **Informações do ambiente** A tabela mostrará quais regiões estão configuradas para o ambiente selecionado.
+   * A variável **Status** coluna da **Segmentos de ambiente** A tabela refletirá se há problemas com as regiões de publicação adicionais configuradas. Passe o mouse sobre o status para obter detalhes sobre qualquer problema.
+
+   ![Informações adicionais de status de regiões de publicação na guia Ambientes](assets/additional-publish-region-status-environments-tab.png)
+
+Se houver problemas relatados com regiões de publicação adicionais:
+
+1. Por favor, seja paciente. O Cloud Manager tentará continuamente recuperar a região e ela poderá estar disponível a qualquer momento.
+1. Se o problema persistir após algumas horas, é possível remover a região de publicação adicional e adicioná-la novamente (na mesma região ou em outra) para acionar uma implantação completa.
+
+Quanto tempo você esperar até que o sistema se recupere por conta própria antes de tomar medidas adicionais depende do impacto que a falha dessa região tem em seus sistemas.
+
+Observe que, em qualquer caso, [o tráfego sempre será roteado para a outra região mais próxima que esteja online.](/help/operations/additional-publish-regions.md) Se o problema persistir, entre em contato com o Atendimento ao cliente do Adobe.
 
 ## Atualização de ambientes {#updating-dev-environment}
 
