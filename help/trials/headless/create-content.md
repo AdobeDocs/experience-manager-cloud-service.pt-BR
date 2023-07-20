@@ -4,10 +4,10 @@ description: Use o modelo de fragmento de conteúdo criado anteriormente para cr
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 91e9711e10a7aa8e3c7fa0b4cc25a098741e53b1
 workflow-type: tm+mt
-source-wordcount: '657'
-ht-degree: 87%
+source-wordcount: '702'
+ht-degree: 76%
 
 ---
 
@@ -16,17 +16,17 @@ ht-degree: 87%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content"
->title="Criar novo conteúdo"
+>title="Criar conteúdo headless"
 >abstract="Usando o modelo criado no módulo anterior, você aprenderá a criar conteúdo que pode ser usado para a criação de páginas ou como a base do seu conteúdo headless."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide"
 >title="Iniciar o console de fragmentos de conteúdo"
->abstract="Criar um conteúdo consistente, de alta qualidade e que funciona perfeitamente em seus aplicativos e sites oferece excelentes experiências ao cliente. Este módulo orienta você a criar o seu primeiro fragmento de conteúdo para mostrar como alcançar isso.<br><br>Inicie esse módulo em uma nova guia clicando no botão abaixo e, em seguida, siga este guia."
+>abstract="Criar um conteúdo consistente, de alta qualidade e que funciona perfeitamente em seus aplicativos e sites oferece excelentes experiências ao cliente. Esse módulo orienta você na criação do seu primeiro conteúdo headless usando o console de Fragmentos de conteúdo.<br><br>Inicie esse módulo em uma nova guia clicando no botão abaixo e, em seguida, siga este guia."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide_footer"
->title="Excelente trabalho. Nesse módulo, você aprendeu a criar um fragmento de conteúdo com base no modelo criado anteriormente. Agora você sabe como as equipes de conteúdo podem criar e gerenciar conteúdo para aplicativos e sites, independentemente dos ciclos de desenvolvimento."
+>title="Excelente trabalho. Neste módulo, você aprendeu a criar conteúdo headless como um fragmento de conteúdo com base no modelo criado anteriormente. Agora você sabe como as equipes de conteúdo podem criar e gerenciar conteúdo para aplicativos e sites, independentemente dos ciclos de desenvolvimento."
 >abstract=""
 
 ## Criar um fragmento de conteúdo {#create-fragment}
@@ -34,6 +34,8 @@ ht-degree: 87%
 Os fragmentos de conteúdo representam o conteúdo headless e são baseados em estruturas predefinidas, chamadas de modelos de fragmento de conteúdo. Você já criou um modelo em um módulo anterior.
 
 Neste módulo, você cria um novo fragmento de conteúdo com base nesse modelo usando o console de Fragmentos de conteúdo. Pense no console de fragmentos de conteúdo como uma biblioteca de conteúdo headless. Use-o para criar novos fragmentos de conteúdo e gerenciar fragmentos existentes.
+
+O console de Fragmentos de conteúdo é usado para criar e editar conteúdo headless em canais de entrega e independentemente do contexto, que pode ser o método mais eficaz em muitos casos de criação. Em um módulo posterior, exploraremos a edição de conteúdo headless no contexto e no local.
 
 1. Toque ou clique no botão **Criar** na parte superior direita do console.
 
