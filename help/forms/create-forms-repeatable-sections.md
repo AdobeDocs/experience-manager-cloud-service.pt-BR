@@ -2,9 +2,9 @@
 title: Repetibilidade no formulário adaptável (componentes principais)
 description: Use o recurso de repetibilidade dos componentes do painel para repetir seções semelhantes em um formulário adaptável.
 role: Architect, Developer, Admin, User
-source-git-commit: f7f30545b76afa6abd4f49316d0fb2245f5470c2
+source-git-commit: fcdb96a6bbe8ff8761293eedc0d38efaecb56037
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1391'
 ht-degree: 1%
 
 ---
@@ -131,7 +131,11 @@ O pai do painel deve conter um botão Excluir para excluir a instância dos pain
 >`Panel1.instanceManager.instances[1].textbox.value`
 >
 >
->Para obter mais informações, consulte: Classe: InstanceManager#instances em [Referência da API Java do AEM Forms](https://adobe.com/go/learn_aemforms_documentation_63).
+>
+
+<!-- 
+>For more information, see: Class: InstanceManager#instances in [AEM Forms Java API reference](https://adobe.com/go/learn_aemforms_documentation_63).      
+-->
 
 >[!NOTE]
 >
@@ -221,7 +225,7 @@ No código a seguir, a variável `SampleType`O painel usa a propriedade minOccou
 ```
 
 
-## artigos relacionados
+## Artigos relacionados
 
 * [Criar um Formulário adaptável](creating-adaptive-form-core-components.md)
 * [Criar estilo ou temas para seus formulários](using-themes-in-core-components.md)
