@@ -1,20 +1,20 @@
 ---
-title: Ativar os Componentes principais adaptáveis do Forms no ambiente de desenvolvimento as a Cloud Service e local do AEM Forms
+title: Habilitar os componentes principais de formulários adaptáveis no AEM Forms as a Cloud Service e no ambiente de desenvolvimento local
 seo-title: Step-by-Step Guide for enabling Adaptive Forms Core Components on AEM Forms as a Cloud Service and local development environment
 description: Saiba como ativar os Componentes principais do Adaptive Forms no AEM Forms as a Cloud Service com nosso guia passo a passo. Nosso tutorial o orienta pelo processo, facilitando a ativação desse recurso poderoso para seu ambiente AEM Forms.
 seo-description: Learn how to enable Adaptive Forms Core Components on AEM Forms as a Cloud Service with our step-by-step guide. Our tutorial walks you through the process, making it easy to enable this powerful feature for your AEM Forms environment.
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 8c125d834ebfff5601f56646d59ce00a80fcc0ba
 workflow-type: tm+mt
-source-wordcount: '1016'
-ht-degree: 6%
+source-wordcount: '1023'
+ht-degree: 10%
 
 ---
 
 
-# Ativar os Componentes principais adaptáveis do Forms no ambiente de desenvolvimento as a Cloud Service e local do AEM Forms {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
+# Habilitar os componentes principais de formulários adaptáveis no AEM Forms as a Cloud Service e no ambiente de desenvolvimento local {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
 
 A ativação dos Componentes principais dos formulários adaptáveis no AEM Forms as a Cloud Service permite criar, publicar e fornecer os Componentes principais baseados em formulários, adaptáveis e headless, usando as instâncias do AEM Forms Cloud Service para vários canais. Você precisa do ambiente habilitado dos Componentes principais adaptáveis do Forms para usar o Forms adaptável headless.
 
@@ -32,7 +32,7 @@ A ativação dos Componentes principais dos formulários adaptáveis no AEM Form
 Execute as seguintes etapas, na ordem listada, para ativar os Componentes principais adaptáveis do Forms e o Forms adaptável headless para um ambiente as a Cloud Service do AEM Forms
 
 
-![](/help/forms/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service.png)
+![Habilitar componentes principais e formulários adaptáveis headless](/help/forms/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service.png)
 
 
 ## 1. Clonar o repositório Git as a Cloud Service do AEM Forms {#clone-git-repository}

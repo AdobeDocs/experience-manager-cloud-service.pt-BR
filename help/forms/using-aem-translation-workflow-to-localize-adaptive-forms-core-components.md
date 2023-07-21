@@ -2,9 +2,9 @@
 title: Traduzir um formulário adaptável baseado nos Componentes principais
 description: Usar tradução automática ou tradução humana para traduzir um Formulário adaptável baseado em Componentes principais
 feature: Adaptive Forms
-source-git-commit: a33b380570210a32f4a4a1f26c9a2fe37c885bb1
+source-git-commit: 8c125d834ebfff5601f56646d59ce00a80fcc0ba
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '882'
 ht-degree: 3%
 
 ---
@@ -71,7 +71,7 @@ Execute as seguintes etapas para localizar um formulário e seu documento de reg
 1. Na parte inferior do **Resumo** lado a lado, clique no link **reticências**. A tela Propriedades do projeto de tradução é aberta.
 1. Abra o **[!UICONTROL Avançado]** na parte superior da **Propriedades do projeto de tradução** tela. Para o **[!UICONTROL Campo de tradução]**, selecione **[!UICONTROL Tradução humana]**. Clique em **Salvar e fechar** na parte superior da tela.
 1. No **Tarefa de tradução** lado a lado, clique no link ![aem62forms_downarrow](assets/aem62forms_downarrow.png) e clique em **Exportar**. Na caixa de diálogo Exportar, clique na opção Baixar arquivo exportado. Ele baixa um arquivo .zip.
-   ![](/help/forms/assets/adaptive-forms-core-components-start-translation-export.png)
+   ![Exportar arquivo de tradução](/help/forms/assets/adaptive-forms-core-components-start-translation-export.png)
 1. Extraia o arquivo .zip baixado. A pasta extraída tem dois arquivos:
    * Translation_export_summary.xml
    * [formulário-campos-arquivo].xml.
@@ -79,6 +79,6 @@ Execute as seguintes etapas para localizar um formulário e seu documento de reg
 1. Compactar os arquivos de Translation_export_summary.xml e [formulário-campos-arquivo].xml.
 1. No **Tarefa de tradução** lado a lado, clique no link ![aem62forms_downarrow](assets/aem62forms_downarrow.png) e clique em **Importar**. Selecione o arquivo contendo [formulário-campos-arquivo].xml. com strings e mensagens localizadas para campos de formulário.
 
-   ![](/help/forms/assets/adaptive-forms-core-components-start-translation-import.png)
+   ![Importar arquivo de tradução](/help/forms/assets/adaptive-forms-core-components-start-translation-import.png)
 
 1. Para visualizar o formulário localizado, na interface do usuário do AEM Forms, selecione o formulário localizado. Clique em **[!UICONTROL Visualizar]** >**[!UICONTROL Visualizar como HTML]**. Reabra o formulário depois de adicionar o `afAcceptLang=<locale code>` ao URL do formulário. Por exemplo, adicione `afAcceptLang=de`para abrir a versão em alemão do formulário.
