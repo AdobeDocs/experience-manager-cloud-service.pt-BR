@@ -1,16 +1,16 @@
 ---
-title: Como a exibição do Assets beneficia você?
-description: Saiba mais sobre os principais benefícios da visualização de Ativos
+title: Como a nova interface do AEM Assets ou o Assets visualizam no AEM beneficia você?
+description: Saiba mais sobre os principais benefícios da nova interface do usuário do AEM Assets ou a nova visualização de Ativos no AEM
 mini-toc-levels: 3
-source-git-commit: 97b6f66f2d19b85ec0a71eda756aaa334ea5da57
+source-git-commit: 9980064be3ba7e8a15b95ac8ef6e23ba0f258cb0
 workflow-type: tm+mt
-source-wordcount: '1064'
-ht-degree: 12%
+source-wordcount: '1117'
+ht-degree: 11%
 
 ---
 
 
-# Introdução à visualização de ativos {#assets-view}
+# Apresentação da nova interface do usuário do AEM Assets {#assets-view}
 
 ![Implantar o Assets Essentials](assets/banner-image.jpg)
 
@@ -18,9 +18,9 @@ No cenário atual de lançamento digital acelerado, onde a criação e a entrega
 
 Para saber mais sobre as experiências com base em persona disponíveis para o Assets as a Cloud Service, consulte [Apresentação do Assets as a Cloud Service](/help/assets/overview.md#persona-based-experiences).
 
-## Como acessar a visualização de Ativos? {#access-assets-view}
+## Como acessar a nova interface do AEM Assets? {#access-assets-view}
 
-É possível acessar a visualização de Ativos das seguintes maneiras:
+Você pode acessar a nova interface do usuário do AEM Assets ou a nova visualização do AEM Assets das seguintes maneiras:
 ![Visão geral do Meu espaço de trabalho](assets/assets-view.png)
 
 <!--
@@ -45,9 +45,9 @@ Para saber mais sobre as experiências com base em persona disponíveis para o A
 
     -->
 
-## Por que exibir o Assets?
+## Por que a nova visualização do AEM Assets?
 
-A exibição de Ativos fornece os seguintes benefícios principais que não estão disponíveis na exibição de Administrador:
+A nova interface do usuário do AEM Assets oferece os seguintes benefícios principais que não estão disponíveis na exibição de Administrador:
 
 * [Painel Meu espaço de trabalho para fornecer experiências otimizadas](#my-workspace-for-streamlined-experience)
 * [Abordagem de pesquisa para aumentar a eficiência](#search-first)
@@ -59,7 +59,7 @@ A exibição de Ativos fornece os seguintes benefícios principais que não est�
 
 ### Painel Meu espaço de trabalho para fornecer experiências otimizadas {#my-workspace-for-streamlined-experience}
 
-Dê as boas-vindas a uma solução de gerenciamento de ativos digitais que compreenda as diversas necessidades das diferentes funções organizacionais. A nova visualização elegante do Assets prioriza a facilidade de uso e a velocidade, atendendo à preferência dos profissionais de marketing por apelo visual e espaços de trabalho desorganizados. Com um painel personalizável específico do usuário do Meu espaço de trabalho, os profissionais de marketing podem encontrar, visualizar, editar, gerenciar e fornecer ativos com eficiência notável. Despeça-se das horas infinitas gastas procurando ativos específicos e receba com prazer uma experiência simplificada que coloque tudo o que você precisa ao seu alcance.
+Dê as boas-vindas a uma solução de gerenciamento de ativos digitais que compreenda as diversas necessidades das diferentes funções organizacionais. A nova e elegante visualização da interface do usuário do AEM Assets prioriza a facilidade de uso e a velocidade, atendendo à preferência dos profissionais de marketing por apelo visual e espaços de trabalho desorganizados. Com um painel personalizável específico do usuário do Meu espaço de trabalho, os profissionais de marketing podem encontrar, visualizar, editar, gerenciar e fornecer ativos com eficiência notável. Despeça-se das horas infinitas gastas procurando ativos específicos e receba com prazer uma experiência simplificada que coloque tudo o que você precisa ao seu alcance.
 
 ![Visão geral do Meu espaço de trabalho](assets/my-workspace-demo.gif)
 
@@ -67,7 +67,7 @@ Dê as boas-vindas a uma solução de gerenciamento de ativos digitais que compr
 
 ### Insights para tomar decisões orientadas por dados {#insights-data}
 
-Para acompanhar a velocidade do conteúdo, insights acionáveis são essenciais. A nova experiência de exibição do Assets oferece insights avançados no Meu espaço de trabalho, fornecendo dados valiosos sobre desempenho de ativos, uso de público-alvo e envolvimentos. Os profissionais de marketing podem tomar decisões orientadas por dados, otimizar estratégias de conteúdo e refinar a entrega downstream para alcançar resultados ideais. Com acesso a insights significativos, as empresas podem se manter à frente da concorrência e impulsionar resultados excepcionais.
+Para acompanhar a velocidade do conteúdo, insights acionáveis são essenciais. A nova experiência da interface do usuário do AEM Assets oferece insights avançados no Meu espaço de trabalho, fornecendo dados valiosos sobre desempenho de ativos, uso de público-alvo e envolvimentos. Os profissionais de marketing podem tomar decisões orientadas por dados, otimizar estratégias de conteúdo e refinar a entrega downstream para alcançar resultados ideais. Com acesso a insights significativos, as empresas podem se manter à frente da concorrência e impulsionar resultados excepcionais.
 
 ![Visão geral do Insights](assets/insights-overview.gif)
 
@@ -77,7 +77,7 @@ Para acompanhar a velocidade do conteúdo, insights acionáveis são essenciais.
 
 A nova experiência oferece um conjunto robusto de recursos de colaboração, incluindo edição em tempo real com recursos incorporados do Adobe Photoshop, controles de versão e ferramentas de anotação. Isso permite uma colaboração contínua entre equipes de design, criação, marca e marketing, permitindo que superem gargalos e agilizem o processo de operações de marketing. Os profissionais de marketing agora têm ferramentas eficientes à disposição para acelerar a entrega de projetos e aumentar sua produtividade geral.
 
-Assista a este vídeo para entender o poder do Assets visualizar a integração com o Adobe Photoshop Express:
+Assista a este vídeo para entender o poder da nova integração da interface do usuário do AEM Assets com o Adobe Photoshop Express:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420922)
 
@@ -87,7 +87,7 @@ As próximas versões do Assets as a Cloud Service também incluirão [integraç
 
 ### Uploads de pasta para configurar a estrutura hierárquica da organização {#folder-uploads}
 
-Configure rapidamente uma estrutura de pastas para sua organização usando a visualização Ativos carregando pastas existentes em seu sistema de arquivos local. Não é necessário criar pastas na pasta raiz e, em seguida, fazer o upload de ativos para essas pastas manualmente para manter a estrutura hierárquica lógica. Todas as pastas e ativos na pasta raiz são carregados automaticamente no Experience Manager Assets.
+Configure rapidamente uma estrutura de pastas para sua organização usando a nova interface do AEM Assets, fazendo upload das pastas existentes em seu sistema de arquivos local. Não é necessário criar pastas na pasta raiz e, em seguida, fazer o upload de ativos para essas pastas manualmente para manter a estrutura hierárquica lógica. Todas as pastas e ativos na pasta raiz são carregados automaticamente no Experience Manager Assets.
 
 ![Carregar pastas](assets/folder-uploads.gif)
 
@@ -101,7 +101,7 @@ Libere o potencial da biblioteca de ativos digitais da sua organização com o p
 
 ### Inscrever-se no conteúdo do repositório para um gerenciamento eficiente de ativos {#subscribe-content}
 
-A exibição de Ativos fornece a capacidade de monitorar as operações realizadas nos ativos, pastas ou coleções disponíveis no repositório. Você precisa selecionar e assinar o conteúdo sobre o qual deseja receber notificações. Você também pode configurar os tipos de evento, como exclusão do conteúdo que você assinou, modificações no conteúdo que você assinou etc. As notificações são enviadas a você somente para esses tipos de evento.
+A nova interface do usuário do AEM Assets oferece a capacidade de monitorar as operações realizadas nos ativos, pastas ou coleções disponíveis no repositório. Você precisa selecionar e assinar o conteúdo sobre o qual deseja receber notificações. Você também pode configurar os tipos de evento, como exclusão do conteúdo que você assinou, modificações no conteúdo que você assinou etc. As notificações são enviadas a você somente para esses tipos de evento.
 
 ![Receber notificações](assets/notifications.gif)
 
@@ -109,22 +109,22 @@ A exibição de Ativos fornece a capacidade de monitorar as operações realizad
 
 ### Excluir ativos de forma reversível para oferecer melhor controle aos administradores {#soft-delete-assets}
 
-A pasta Lixeira, disponível na visualização Ativos, lista os ativos excluídos da pasta raiz Ativos. Você pode selecionar um ativo da pasta Lixeira para restaurá-lo no local original ou excluí-lo permanentemente. Você também pode especificar uma palavra-chave ou aplicar filtros padrão ou personalizados para pesquisar ativos apropriados na pasta Lixeira.
+A pasta Lixeira, disponível na nova interface do AEM Assets, lista os ativos excluídos da pasta raiz Ativos. Você pode selecionar um ativo da pasta Lixeira para restaurá-lo no local original ou excluí-lo permanentemente. Você também pode especificar uma palavra-chave ou aplicar filtros padrão ou personalizados para pesquisar ativos apropriados na pasta Lixeira.
 
 ![Excluir reversível](assets/soft-delete.gif)
 
 [![Consulte o guia](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](navigate-assets-view.md)
 
-Além desses recursos, a exibição Ativos também permite executar os seguintes recursos que não estão disponíveis na exibição Administração:
+Além desses recursos, a nova interface do usuário do AEM Assets também permite executar os seguintes recursos que não estão disponíveis na exibição do administrador:
 
 * Faça upload de uma nova versão de um ativo, com um nome diferente, do sistema de arquivos local para o repositório de ativos. O ativo carregado está disponível como uma nova versão com o mesmo nome do ativo original.
 
 * Renomeie ativos e pastas disponíveis no repositório.
 
-A nova visualização do Adobe Experience Manager Assets é personalizada para simplificar fluxos de trabalho, promover colaboração e acelerar a entrega de ativos. Ao adotar a velocidade do conteúdo, os profissionais de marketing podem desbloquear todo o potencial de seus ativos digitais e liberar a criatividade como nunca antes.
+A nova interface do AEM Assets é personalizada para simplificar os fluxos de trabalho, promover a colaboração e acelerar a entrega de ativos. Ao adotar a velocidade do conteúdo, os profissionais de marketing podem desbloquear todo o potencial de seus ativos digitais e liberar a criatividade como nunca antes.
 
 
-Use estes links para começar a usar a exibição de Ativos rapidamente:
+Use estes links para começar rapidamente a usar a nova interface do usuário do AEM Assets:
 
 * [Meu espaço de trabalho](/help/assets/my-workspace-assets-view.md)
 * [Introdução ao uso da visualização de Ativos](/help/assets/get-started-assets-view.md)
