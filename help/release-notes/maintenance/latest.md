@@ -2,10 +2,10 @@
 title: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 39b2afda66e3bcb7db8ae63a2d0dcd27014ce377
+source-git-commit: 704f4e250975d8c0cbcfdc5e49b9c03d3a3e2939
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 66%
+source-wordcount: '190'
+ht-degree: 62%
 
 ---
 
@@ -29,7 +29,7 @@ Nenhum.
 
 ### Problemas conhecidos {#known-issues-12790}
 
-Nenhum.
+- GRANITE-46601 - O SDK de início rápido falha ao iniciar no jdk 11.0.20 sem `-Djdk.util.zip.disableZip64ExtraFieldValidation=true` opção java
 
 ### Tecnologias integradas {#embedded-tech-12790}
 
