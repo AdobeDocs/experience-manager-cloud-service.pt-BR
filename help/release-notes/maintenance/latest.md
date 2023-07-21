@@ -2,10 +2,10 @@
 title: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: eca0903050bb178f13d37073f8d65354f4bf36d3
+source-git-commit: 39b2afda66e3bcb7db8ae63a2d0dcd27014ce377
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 41%
+source-wordcount: '180'
+ht-degree: 66%
 
 ---
 
@@ -13,34 +13,25 @@ ht-degree: 41%
 
 A seção a seguir descreve as notas de versão técnicas para a versão de manutenção atual do Experience Manager as a Cloud Service.
 
-## Versão 12697 {#release-12697}
+## Versão 12790 {#release-12790}
 
-Resumidos abaixo estão as melhorias contínuas da versão de manutenção 12697, que foi lançada publicamente em 14 de julho de 2023. Esta versão de manutenção é uma atualização da versão de manutenção anterior: versão 12549. A versão de manutenção 12697 substitui 12585 para corrigir um problema.
+Resumidos abaixo estão as melhorias contínuas da versão de manutenção 12790, que foi lançada publicamente em 21 de julho de 2023. Esta versão de manutenção é uma atualização da versão de manutenção anterior: versão 12697.
 
 A Ativação de recursos 2023.7.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte a [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=pt-BR) para obter mais informações.
 
-### Aprimoramentos {#enhancements-12697}
-
-- Melhorias gerais na estabilidade RDE (SKYOPS-61133, SKYOPS-55281, SKYOPS-61216 e SKYOPS-61401)
-- DXML-12327: Guias AEM: Suporte para variáveis de idioma na publicação de PDF nativo
-- DXML-11518: Guias AEM: suporte aprimorado a metadados na publicação de PDF nativo
-- DXML-10093: Guias AEM: Suporte para conectar-se a fontes de dados externas e inserir dados em tópicos dita
-- DXML-10699: Guias AEM: suporte para o formato XLIFF na tradução
-- DXML-10141: Guias AEM: Opção para usar a publicação baseada em microsserviços para tipos de predefinição PDF (Nativo e DITA-OT), HTML e Personalizado
-- SKYOPS-61385 - Atualize o dispatcher para usar libpcre2 ao avaliar expressões regulares no Apache HTTPD
-
-### Problemas corrigidos {#fixed-issues-12697}
-
-- Guias do AEM: Várias melhorias de PDF nativo e correções de estabilidade
-- SKYOPS-53130: Melhore o suporte à ferramenta CA no RDE
-- SKYOPS-57146: Corrigir bloqueio do Sling na inicialização do AEM
-- SKYOPS-61646: A data da última replicação não é atualizada após a atualização para a versão 12585
-
-### Problemas conhecidos {#known-issues-12697}
+### Aprimoramentos {#enhancements-12790}
 
 Nenhum.
 
-### Tecnologias integradas {#embedded-tech-12697}
+### Problemas corrigidos {#fixed-issues-112790}
+
+- SLING-11974 - Correção de regressão em SlingHttpServletRequest#getUserPrincipal para solicitações não autenticadas. A correção garante que um principal seja retornado mesmo para solicitações não autenticadas.
+
+### Problemas conhecidos {#known-issues-12790}
+
+Nenhum.
+
+### Tecnologias integradas {#embedded-tech-12790}
 
 | Tecnologia | Versão | Link |
 |---|---|---|
