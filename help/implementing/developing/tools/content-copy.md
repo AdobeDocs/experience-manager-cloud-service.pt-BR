@@ -2,12 +2,13 @@
 title: A ferramenta de cópia de conteúdo
 description: A ferramenta de cópia de conteúdo permite que os usuários copiem conteúdo mutável sob demanda de seus ambientes de produção no AEM as a Cloud Service para ambientes inferiores para fins de teste.
 exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
-source-git-commit: f08048b2378b150210a3fd1168206f4efb0c4f8e
+source-git-commit: f579539d582e2059fca20f9f7e5e82f4ae24c833
 workflow-type: tm+mt
-source-wordcount: '1203'
-ht-degree: 41%
+source-wordcount: '1308'
+ht-degree: 37%
 
 ---
+
 
 # A ferramenta de cópia de conteúdo {#content-copy}
 
@@ -40,6 +41,8 @@ Para usar a ferramenta de cópia de conteúdo, determinadas permissões são nec
 |---|---|---|
 | Criar e modificar [conjuntos de conteúdo](#create-content-set) | Obrigatório | Não obrigatório |
 | Iniciar ou cancelar o [processo de cópia de conteúdo](#copy-content) | Obrigatório | Obrigatório |
+
+Para obter mais detalhes sobre permissões e como defini-las, consulte o documento [Equipe as a Cloud Service e perfis de produto do AEM.](/help/onboarding/aem-cs-team-product-profiles.md)
 
 ## Criação de um conjunto de conteúdo {#create-content-set}
 
@@ -174,6 +177,16 @@ Para isso, no **Atividade de cópia de conteúdo** selecione a **Cancelar** aç�
 >Ao cancelar uma operação de cópia de conteúdo, pode resultar em uma cópia parcial do conteúdo no ambiente de destino. Essa situação pode deixar o ambiente de destino em um estado inutilizável.
 >
 >Se o ambiente estiver em tal estado devido ao cancelamento, entre em contato com o Atendimento ao cliente da Adobe para obter assistência.
+
+### Acesso aos logs {#accessing-logs}
+
+Você pode verificar os logs dos ambientes de origem e de destino para qualquer processo de cópia de conteúdo concluído.
+
+Para isso, no **Atividade de cópia de conteúdo** selecione a **Logs** no menu de reticências do processo de cópia para o qual você deseja revisar os logs e escolher para qual ambiente.
+
+![Acessar logs para o processo de cópia de conteúdo](assets/copy-content-logs.png)
+
+Os logs são baixados no computador local. Se o download não começar, verifique as configurações do bloqueador de pop-ups.
 
 ## Limitações {#limitations}
 
