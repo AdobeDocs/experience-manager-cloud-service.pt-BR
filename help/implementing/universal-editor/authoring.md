@@ -2,12 +2,13 @@
 title: Criação de conteúdo com o Editor universal
 description: Saiba como é fácil e intuitivo para os autores criarem conteúdo utilizando o Editor universal.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 05554f397a843ede5a723b206b6e0748e2d6ba96
+source-git-commit: 481202760e0d22cde9c32e0b781dc99f67d463e4
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1939'
+ht-degree: 35%
 
 ---
+
 
 # Criação de conteúdo com o Editor universal {#authoring}
 
@@ -141,7 +142,7 @@ Você também pode optar por emular um dispositivo móvel e, no Universal Editor
 
 #### Abrir visualização do aplicativo {#open-app-preview}
 
-Toque ou clique no ícone Abrir visualização do aplicativo para abrir a página que você está editando no próprio navegador (fora do editor) e visualizar as alterações.
+Toque ou clique no ícone de visualização do aplicativo aberto para abrir a página que você está editando no momento em sua própria guia do navegador, livre do editor para visualizar seu conteúdo.
 
 ![Abrir visualização do aplicativo](assets/open-app-preview.png)
 
@@ -177,9 +178,12 @@ No modo de visualização, a página é renderizada no editor da maneira como se
 
 #### Modo de texto {#text-mode}
 
-No modo de texto, a página é renderizada no editor, mas o autor de conteúdo pode clicar em para selecionar o conteúdo do texto e editá-lo. Esse é o modo padrão do editor quando uma página é carregada.
+No modo de texto, o autor de conteúdo pode clicar em para selecionar o conteúdo do texto.
 
 ![Modo de texto](assets/text-mode.png)
+
+* Você pode [editar texto simples](#editing-content) em vigor.
+* Também é possível [editar rich text](#editing-rich-text) no local com opções de formatação adicionais exibidas no painel de componentes.
 
 >[!TIP]
 >
@@ -187,9 +191,11 @@ No modo de texto, a página é renderizada no editor, mas o autor de conteúdo p
 
 #### Modo de mídia {#media-mode}
 
-No modo de mídia, a página é renderizada no editor, mas o autor de conteúdo pode clicar em para selecionar o conteúdo de mídia e editá-lo.
+No modo de mídia, o autor de conteúdo pode clicar em para selecionar conteúdo de mídia.
 
 ![Modo de mídia](assets/media-mode.png)
+
+Detalhes do conteúdo são exibidos no painel de componentes e o autor também pode [editar o conteúdo de mídia.](#editing-media)
 
 >[!TIP]
 >
@@ -197,11 +203,11 @@ No modo de mídia, a página é renderizada no editor, mas o autor de conteúdo 
 
 #### Modo de componente {#component-mode}
 
-No modo de componente, a página é renderizada no editor, mas o autor de conteúdo pode clicar em para selecionar componentes de página.
+No modo de componente, o autor de conteúdo pode clicar para selecionar [Fragmentos de conteúdo.](/help/assets/content-fragments/content-fragments.md)
 
 ![Modo de componente](assets/component-mode.png)
 
-Quando você seleciona um fragmento de conteúdo, os detalhes dele são exibidos no [painel de componentes.](#component-rail)
+Ao selecionar um Fragmento de conteúdo, os detalhes dele são exibidos no painel de componentes, onde você pode [editar o fragmento de conteúdo.](#edit-content-fragment)
 
 >[!TIP]
 >
@@ -209,11 +215,13 @@ Quando você seleciona um fragmento de conteúdo, os detalhes dele são exibidos
 
 #### Editar {#edit}
 
-Quando em [modo componente,](#component-mode) se você selecionar um Fragmento de conteúdo, a opção de edição aparecerá no painel de modo.
+Quando em [modo componente,](#component-mode) se você selecionar um [Fragmento de conteúdo,](/help/assets/content-fragments/content-fragments.md) a opção editar é exibida no painel modo.
 
 ![Ícone Editar](assets/edit.png)
 
-Tocar ou clicar no botão de edição abre o editor de Fragmento de conteúdo em uma nova guia, permitindo editar o conteúdo referenciado, bem como o texto e o conteúdo de mídia no Editor universal.
+Tocar ou clicar no botão de edição abre o [Editor de fragmento de conteúdo](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) em uma nova guia, que permite acessar todo o potencial do Editor de fragmento de conteúdo.
+
+Também é possível editar detalhes do fragmento de conteúdo na [painel de componentes](#edit-content-fragment) dependendo das necessidades do seu fluxo de trabalho.
 
 >[!TIP]
 >
@@ -223,7 +231,7 @@ Tocar ou clicar no botão de edição abre o editor de Fragmento de conteúdo em
 
 O editor ocupa a maior parte da janela e é onde a página especificada em [a barra de localização](#location-bar) é renderizado.
 
-* Se o editor estiver em um modo de edição como [modo texto](#text-mode) ou [modo mídia,](#media-mode) o conteúdo será editável e você não poderá seguir links.
+* Se o editor estiver em um modo de edição como [modo texto](#text-mode) ou [modo mídia,](#media-mode) o conteúdo será editável, mas você não poderá seguir os links.
 * Se o editor estiver em [modo de visualização,](#preview-mode) o conteúdo será navegável e você poderá seguir os links, mas não poderá editar o conteúdo.
 
 ![Editor](assets/editor.png)
@@ -240,11 +248,11 @@ No modo de propriedades, o painel mostra as propriedades do componente atualment
 
 ![Modo de propriedades](assets/properties-mode.png)
 
-Os detalhes do componente selecionado são mostrados no painel. Se você selecionou um Fragmento de conteúdo usando [modo componente,](#component-mode) você pode modificar as configurações no painel de componentes. As alterações são salvas automaticamente pelo Universal Editor.
+Dependendo do tipo de componente selecionado, os detalhes podem ser exibidos e modificados no painel de propriedades.
 
 ![Detalhes do componente](assets/component-details.png)
 
-Observe que nem todos os componentes têm detalhes que podem ser mostrados.
+Observe que nem todos os componentes têm detalhes que podem ser mostrados e/ou editados.
 
 >[!TIP]
 >
@@ -271,17 +279,59 @@ A edição de conteúdo é simples e intuitiva. Nos modos de edição ([modo tex
 
 ![O conteúdo editável é destacado por uma caixa azul](assets/editable-content.png)
 
-Basta tocar ou clicar no conteúdo na caixa azul para iniciar um editor local que permite fazer as alterações. Suas alterações são salvas automaticamente.
+Observe que, no modo de edição, tocar ou clicar no conteúdo tenta selecioná-lo para edição. Se você deseja navegar pelo seu conteúdo utilizando os links, alterne para o [modo de visualização.](#preview-mode)
+
+Dependendo do [modo](#mode-rail) estiver no e o conteúdo selecionado, tiver opções de edição no local diferentes e poder revisar propriedades adicionais para o conteúdo usando o [painel de componentes.](#component-rail)
+
+### Edição de Texto sem Formatação {#edit-plain-text}
+
+Se você estiver em [modo texto](#text-mode) e selecionar um componente de texto simples, é possível editar o texto no local.
 
 ![Editar o conteúdo](assets/editing-content.png)
 
-Observe que, no modo de edição, tocar ou clicar no conteúdo tenta selecioná-lo para edição. Se você deseja navegar pelo seu conteúdo utilizando os links, alterne para o [modo de visualização.](#preview-mode)
+Basta digitar para atualizar o conteúdo. Pressione enter/return ou toque ou clique fora da caixa de texto para salvar as alterações.
 
-Dependendo do [modo](#mode-rail) Se estiver no e o conteúdo selecionado, você pode ter opções de edição diferentes no local.
+### Edição de Rich Text {#edit-rich-text}
 
-Além disso, talvez seja possível revisar propriedades adicionais para o conteúdo usando o [painel de componentes.](#component-rail) Por exemplo, se você selecionar um componente de rich text, poderá editar as opções de formatação no painel de componentes.
+Se você estiver em [modo texto](#text-mode) e selecionar um componente de rich text, é possível editar o texto no local.
+
+Basta digitar para atualizar o conteúdo. Pressione enter/return ou toque ou clique fora da caixa de texto para salvar as alterações.
+
+Além disso, as opções de formatação e os detalhes do texto estão disponíveis no painel de componentes.
 
 ![Edição de um componente de rich text](assets/rich-text-editing.png)
+
+As alterações de formatação são salvas automaticamente no conteúdo.
+
+### Editando mídia {#edit-media}
+
+Se você estiver em [modo de mídia](#media-mode) e selecionar uma imagem, você poderá ver seus detalhes no painel de componentes.
+
+![Edição de mídia](assets/ue-edit-media.png)
+
+Toque ou clique no **Substituir** botão abaixo da visualização da imagem selecionada no painel de componentes para substituir a imagem por outra da biblioteca de ativos.
+
+1. A variável [seletor de ativos](/help/assets/asset-selector.md#using-asset-selector) é aberta para permitir que você selecione um ativo.
+1. Toque ou clique para selecionar um novo ativo.
+1. Toque ou clique **Selecionar** para retornar ao painel de componentes onde o ativo foi substituído.
+
+As alterações são salvas no conteúdo automaticamente.
+
+>[!TIP]
+>
+>Usar a tecla de atalho `R` para abrir o seletor de ativos e substituir a imagem selecionada.
+
+### Edição de fragmentos de conteúdo {#edit-content-fragment}
+
+Se você estiver em [modo do componente](#component-mode) e você selecionar um [Fragmento de conteúdo,](/help/assets/content-fragments/content-fragments.md) é possível editar os detalhes no painel de componentes.
+
+![Edição de um fragmento de conteúdo](assets/ue-edit-cf.png)
+
+Os campos definidos no modelo de conteúdo do fragmento de conteúdo selecionado são exibidos e editáveis no painel de componentes.
+
+As alterações são salvas no conteúdo automaticamente.
+
+Se quiser editar o fragmento de conteúdo na caixa [Editor de fragmento de conteúdo](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) clique no link [botão editar](#edit) no painel de modos.
 
 ## Visualização de conteúdo {#previewing-content}
 
