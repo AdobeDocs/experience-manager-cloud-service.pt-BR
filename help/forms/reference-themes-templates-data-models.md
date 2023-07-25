@@ -4,14 +4,16 @@ seo-title: Reference Themes, Templates, and Form Data models
 description: O AEM Forms fornece temas de formulários adaptáveis, modelos e modelos de dados de formulário que você pode obter da Distribuição de software
 seo-description: AEM Forms provides adaptive forms themes, templates, and form data models that you can get from Software Distribution
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '836'
 ht-degree: 2%
 
 ---
 
 # Temas de referência, modelos e modelos de dados de formulário {#reference-themes-templates-and-data-models}
+
+<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-br) para [criação de um novo Forms adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 O AEM Forms as a Cloud Service fornece vários temas de referência, modelos de dados de formulário e modelos para ajudar você a começar rapidamente a criar o Adaptive Forms. Você pode baixar o [pacote de conteúdo de referência do portal de distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) e use o [Gerenciador de pacotes](/help/implementing/developing/tools/package-manager.md) para instalar o [pacote de conteúdo de referência](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) no ambiente de produção, desenvolvimento ou desenvolvimento local para obter esses ativos de referência para o ambiente.
 
@@ -22,11 +24,11 @@ Os temas, modelos e modelos de dados de formulário incluídos no pacote de cont
 ---------|----------|---------
 | Canvas 3.0 | Básico | Microsoft Dynamics 365 |
 | Tranquilo | Em branco | Salesforce |
-| Urbana |  |  |
+| Urbana |   |  |
 | Ultramarina |  |  |
 | Berilo |  |  |
-| Serviços de saúde |  |  |
-| FSI |  |  |
+| Serviços de saúde |  |   |
+| FSI |   |   |
 
 ## Temas de referência {#reference-themes}
 

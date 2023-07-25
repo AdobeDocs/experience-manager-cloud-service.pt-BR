@@ -2,14 +2,16 @@
 title: Criar e usar temas para estilizar um Formulário adaptável
 description: Você pode usar temas para estilizar e fornecer uma identidade visual a um formulário adaptável. Você pode compartilhar um tema em qualquer número do Adaptive Forms.
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
 workflow-type: tm+mt
-source-wordcount: '5519'
+source-wordcount: '5576'
 ht-degree: 1%
 
 ---
 
 # Criação e uso de temas {#creating-and-using-themes}
+
+<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-br) para [criação de um novo Forms adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |

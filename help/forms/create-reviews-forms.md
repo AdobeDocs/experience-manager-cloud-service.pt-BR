@@ -5,14 +5,17 @@ description: Uma Revisão é um mecanismo que permite que um ou mais revisores c
 seo-description: A Review is a mechanism that allows one or more reviewers to comment on a form.
 topic-tags: forms-manager
 exl-id: 378049f8-bf21-4595-819d-ba5fba7023c0
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
 workflow-type: tm+mt
-source-wordcount: '672'
-ht-degree: 1%
+source-wordcount: '729'
+ht-degree: 2%
 
 ---
 
 # Criar e gerenciar revisões em formulários{#creating-and-managing-reviews-to-forms}
+
+<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-br) para [criação de um novo Forms adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |

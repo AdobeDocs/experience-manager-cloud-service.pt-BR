@@ -10,14 +10,16 @@ topic-tags: adaptive_forms, author
 discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: 63f6e7c6df7404062aa0d209496506bdabcf564c
+source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
 workflow-type: tm+mt
-source-wordcount: '1436'
+source-wordcount: '1493'
 ht-degree: 0%
 
 ---
 
 # Usar CAPTCHA no Adaptive Forms{#using-captcha-in-adaptive-forms}
+
+<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-br) para [criação de um novo Forms adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart) é um programa comumente usado em transações on-line para distinguir entre humanos e programas ou bots automatizados. Ele representa um desafio e avalia a resposta do usuário para determinar se é um humano ou um bot interagindo com o site. Ele impede que o usuário continue se o teste falhar e ajuda a tornar as transações online seguras, impedindo que os bots publiquem spam ou fins mal-intencionados.
 

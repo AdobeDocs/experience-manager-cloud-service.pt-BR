@@ -2,14 +2,16 @@
 title: Suporte a notas de rodapé
 description: Suporte RTE para notas de rodapé.
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 0%
+source-wordcount: '426'
+ht-degree: 1%
 
 ---
 
 # Componente de nota de rodapé {#footnotecomponent}
+
+<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-br) para [criação de um novo Forms adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 **[!UICONTROL Nota de rodapé]** é o bit extra de informações ou notas que aparecem no final da página. [!UICONTROL Nota de rodapé] O compreende as notas indicadas no texto com números em sobrescrito.
 
@@ -44,13 +46,11 @@ Para adicionar uma nota de rodapé no Adaptive Forms, execute as seguintes etapa
    >* As notas de rodapé são numeradas automaticamente e aparecem da maneira que são criadas no Formulário adaptável.
    >* Se houver notas de rodapé duplicadas, a numeração será a mesma para todas as notas de rodapé duplicadas.
 
-
 1. No navegador de componentes, arraste e solte a **[!UICONTROL Espaço reservado para nota de rodapé]** no Formulário adaptável.
    >[!NOTE]
    >
    >* Na instância de publicação, as notas de rodapé são exibidas na posição em que **[!UICONTROL Espaço reservado para nota de rodapé]** componente é colocado no Formulário adaptável.
    >* Ao navegar entre painéis diferentes, somente as notas de rodapé visíveis aparecerão no **[!UICONTROL Espaço reservado para nota de rodapé]** presentes no painel navegado.
-
 
 1. Salve as propriedades.
 

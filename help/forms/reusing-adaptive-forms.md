@@ -4,14 +4,17 @@ seo-title: Reuse metadata properties of an Adaptive Form
 description: É possível reutilizar um Formulário adaptável existente para criar um novo Forms adaptável.
 seo-description: You can reuse an existing Adaptive Form to create new Adaptive Forms.
 exl-id: fb8cf3a9-fd19-46bf-b40e-2af76ca68b9f
-source-git-commit: f7f30545b76afa6abd4f49316d0fb2245f5470c2
+source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 4%
+source-wordcount: '611'
+ht-degree: 5%
 
 ---
 
 # Reutilizar propriedades de metadados de um Formulário adaptável {#reusing-adaptive-forms}
+
+<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-br) para [criação de um novo Forms adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
