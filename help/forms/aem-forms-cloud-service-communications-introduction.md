@@ -2,14 +2,19 @@
 title: Uma introdução às Comunicações do Forms as a Cloud Service
 description: Mesclar dados automaticamente com modelos XDP e PDF ou gerar saída nos formatos PCL, ZPL e PostScript
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 33e59ce272223e081710294a2e2508edb92eba52
+source-git-commit: 94b24e3fb1ce009fb31506a1b0a6d5159c4907eb
 workflow-type: tm+mt
-source-wordcount: '1136'
-ht-degree: 100%
+source-wordcount: '1156'
+ht-degree: 99%
 
 ---
 
 # Usar comunicações do AEM Forms as a Cloud Service {#frequently-asked-questions}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html) |
+| AEM as a Cloud Service | Este artigo |
 
 O recurso de comunicações ajuda você a criar documentos aprovados pela marca, personalizados e padronizados, como correspondências comerciais, demonstrativos, cartas de processamento de solicitações, avisos de benefícios, contas mensais ou kits de boas-vindas.
 
