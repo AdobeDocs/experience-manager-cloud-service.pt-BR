@@ -2,10 +2,10 @@
 title: Diretrizes de desenvolvimento do AEM as a Cloud Service
 description: Conheça as diretrizes para desenvolvimento no AEM as a Cloud Service e as principais diferenças em relação ao AEM local e ao AEM no AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: f69b348b7de6c6537a9945793e3397bf4fe30f98
 workflow-type: tm+mt
-source-wordcount: '2586'
-ht-degree: 5%
+source-wordcount: '2655'
+ht-degree: 4%
 
 ---
 
@@ -66,6 +66,13 @@ Alternativas que são conhecidas por funcionar, mas podem exigir que você forne
 * [OK Http](https://square.github.io/okhttp/) (Não fornecido pelo AEM)
 
 Além de fornecer tempos limite, também deve ser implementado um tratamento adequado desses tempos limite e códigos de status HTTP inesperados.
+
+## Lidar com limites de taxa de solicitação {#rate-limit-handling}
+
+>[!NOTE]
+>A resposta de erro HTTP será alterada de 503 para 429 durante a semana de 7 de agosto de 2023.
+>
+Quando a taxa de solicitações recebidas para o AEM excede os níveis íntegros, o AEM responde a novas solicitações com o código de erro HTTP 429. Os aplicativos que fazem chamadas programáticas para AEM podem considerar a codificação defensivamente, tentando novamente após alguns segundos com uma estratégia de retirada exponencial. Antes de meados de agosto de 2023, o AEM respondia à mesma condição com o código de erro HTTP 503.
 
 ## Nenhuma personalização da interface clássica {#no-classic-ui-customizations}
 
