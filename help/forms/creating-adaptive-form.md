@@ -5,22 +5,22 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 86da8e784e3e5ff034efdb9186cf134d4b1c6e9c
+source-git-commit: 59e27998820e3c877c5594b9284b43ce108394fa
 workflow-type: tm+mt
-source-wordcount: '1576'
+source-wordcount: '1575'
 ht-degree: 4%
 
 ---
 
 # Criar um formulário adaptável (componentes de base) {#creating-an-adaptive-form}
 
-<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-br) para [criação de um novo Forms adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
-
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/create-first-adaptive-form/create-your-first-adaptive-form.html) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-adaptive-form.html) |
 | AEM as a Cloud Service | Este artigo |
 
+
+<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-br) para [criação de um novo Forms adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 O Forms adaptável permite criar formulários envolventes, responsivos, dinâmicos e adaptáveis. O AEM Forms fornece um assistente prático para que o usuário empresarial possa criar rapidamente o Forms adaptável. O assistente fornece uma navegação rápida por guias para selecionar facilmente o modelo pré-configurado, o estilo, os campos e as opções de envio para criar um Formulário adaptável.
 
