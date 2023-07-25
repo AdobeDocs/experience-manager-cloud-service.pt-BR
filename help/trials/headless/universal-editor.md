@@ -1,22 +1,22 @@
 ---
-title: Edição do contexto interno
+title: Editar no contexto
 description: Explore como você pode usar o Editor universal para editar qualquer aspecto do conteúdo no local e no contexto em qualquer implementação.
 hidefromtoc: true
 index: false
-source-git-commit: 4dd0998862baf3e1d0c8ed2d42006acfcf5d0873
+source-git-commit: 9826041962a3a0065feb676b07304ba30d23d2e9
 workflow-type: tm+mt
-source-wordcount: '797'
-ht-degree: 6%
+source-wordcount: '961'
+ht-degree: 4%
 
 ---
 
 
-# Edição do contexto interno {#editing-in-context}
+# Editar no contexto {#editing-in-context}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor"
->title="Edição no contexto"
->abstract="Veja como seus aplicativos headless podem aproveitar o Universal Editor para colocar na ponta dos dedos a edição de baixa fricção e contexto."
+>title="Edição em contexto"
+>abstract="Veja como seus aplicativos headless podem aproveitar o Universal Editor para colocar em edição de contexto de baixa fricção na ponta dos dedos de seus autores."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide"
@@ -30,7 +30,11 @@ ht-degree: 6%
 
 ## Editar texto no contexto {#edit-text}
 
-A edição no local e no contexto geralmente pode ser vantajosa em relação à edição de conteúdo headless estruturada, como no editor de fragmentos de conteúdo, que você viu nos módulos anteriores.
+A edição no local e no contexto geralmente pode ser vantajosa em relação à edição de conteúdo headless estruturado, como no editor de fragmentos de conteúdo, que você viu nos módulos anteriores.
+
+>[!NOTE]
+>
+>Para usar o Editor universal nesta versão de avaliação, você deve usar o Chrome como navegador e não no modo incógnito. Essa é uma limitação da experiência de avaliação, não do Universal Editor.
 
 Com o Editor universal, você tem uma maneira ágil de editar seu texto no contexto e no local, permitindo a criação de conteúdo simples e intuitiva.
 
@@ -47,6 +51,26 @@ Com o Editor universal, você tem uma maneira ágil de editar seu texto no conte
 1. Pressione a tecla Enter/Return ou toque ou clique fora do componente de texto e suas alterações são salvas automaticamente.
 
 O Editor universal salva as alterações automaticamente no ambiente de criação. Você ainda precisa publicá-las para que seus leitores vejam, o que faremos em uma etapa posterior.
+
+## Editar mídia no contexto {#edit-media}
+
+Você também pode trocar imagens enquanto ainda permanece no contexto do conteúdo usando o Editor universal.
+
+1. Alterar o editor para **Mídia** tocando ou clicando no botão **Mídia** no painel de modo.
+
+1. Toque ou clique na imagem do surfer para selecioná-la.
+
+1. No painel de componentes, é possível ver os detalhes do ativo. Toque ou clique **Substituir**.
+
+   ![Seleção de uma imagem para edição](assets/do-not-localize/ue-edit-media.png)
+
+1. No **Selecionar ativos** , role para baixo e toque ou clique no ícone `surfer-wave-02.JPG` imagem para selecioná-la.
+
+1. Toque ou clique **Selecionar** no **Selecionar ativos** janela.
+
+   ![Uso da janela Selecionar ativo para selecionar uma imagem](assets/do-not-localize/ue-select-asset.png)
+
+A imagem é substituída pela que você selecionou.
 
 ## Experimente Seu Conteúdo Como Seus Reader {#emulators}
 
@@ -102,6 +126,5 @@ Para acelerar sua experiência de criação de conteúdo quando a edição estru
 1. Um novo **Editar** é exibido no painel de modo. Toque ou clique no **Editar** ícone para abrir o editor de Fragmento de conteúdo em uma nova guia.
 
 ![Seleção de fragmentos de conteúdo no editor universal](assets/do-not-localize/ue-content-fragments.png)
-
 
 Na nova guia, agora é possível editar o fragmento de conteúdo selecionado no Editor universal.
