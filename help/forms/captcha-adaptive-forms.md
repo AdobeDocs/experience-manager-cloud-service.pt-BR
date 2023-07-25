@@ -10,17 +10,19 @@ topic-tags: adaptive_forms, author
 discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: 115f8dfc8d3ba025f1e815bb8ae87cfb8a513e65
+source-git-commit: 07e0e7c14ac6bac04542a34d50e67b3b846281b8
 workflow-type: tm+mt
 source-wordcount: '1513'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # Usar CAPTCHA no Adaptive Forms{#using-captcha-in-adaptive-forms}
 
-| Versão Link do artigo | | | — | — | | AEM 6,5 |    [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/captcha-adaptive-forms.html)                  | | AEM AS A CLOUD SERVICE | Este artigo |
-=======
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/captcha-adaptive-forms.html) |
+| AEM as a Cloud Service | Este artigo |
 
 <span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-br) para [criação de um novo Forms adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
