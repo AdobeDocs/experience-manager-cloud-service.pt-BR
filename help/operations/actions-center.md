@@ -4,10 +4,10 @@ description: Use o Centro de ações para tomar as medidas apropriadas em caso d
 hidefromtoc: true
 hide: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 083aa4b893b58102b3a0bf68c4dd3b4c003b48f6
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 91%
+source-wordcount: '708'
+ht-degree: 90%
 
 ---
 
@@ -72,7 +72,7 @@ O AEM as a Cloud Service possui vários tipos de notificações, mas apenas um s
 
 ## Tipos de notificação compatíveis {#supported-notification-types}
 
-A tabela a seguir lista os tipos de notificação atualmente compatíveis no Centro de ações.
+A tabela a seguir lista os tipos de notificação atualmente compatíveis no Centro de ações. Atualmente, as notificações estão limitadas a ambientes de produção.
 
 | Tipo de notificação | Perfil de produto relacionado | Ação de correção |
 |---|---|---|
