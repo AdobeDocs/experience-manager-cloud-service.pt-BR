@@ -6,9 +6,9 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 62649d9aaa7c4307351cc83eefbab14806f91378
 workflow-type: tm+mt
-source-wordcount: '3830'
+source-wordcount: '3871'
 ht-degree: 16%
 
 ---
@@ -317,6 +317,8 @@ Sim, após configurar o Connected Assets, você pode executar as operações atu
 
 * Para obter insights sobre o uso do ativo, configure o [Assets Insight](/help/assets/assets-insights.md) funcionalidade no [!DNL Sites] instância.
 * O uso do navegador de caminho nos componentes de criação não é compatível com os ativos conectados.
+
+* Não é possível arrastar o ativo remoto para a [Caixa de diálogo Configurar componente de imagem](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=en#configure-dialog). No entanto, é possível arrastar o ativo remoto diretamente para o componente de imagem na página Sites sem clicar em **[!UICONTROL Configurar]**.
 
 ### Permissões e gerenciamento de ativos {#permissions-and-managing-assets}
 
