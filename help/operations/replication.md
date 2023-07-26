@@ -2,10 +2,10 @@
 title: Replicação
 description: Distribuição e solução de problemas de replicação.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: e545ff2bc3dc0c56cd6d3e1160b453551816f07f
 workflow-type: tm+mt
-source-wordcount: '1339'
-ht-degree: 46%
+source-wordcount: '1334'
+ht-degree: 44%
 
 ---
 
@@ -55,7 +55,7 @@ Você pode acionar uma replicação em árvore ao escolher **Ferramentas - Fluxo
 
 ![O cartão de Fluxo de trabalho de publicação da árvore de conteúdo](/help/operations/assets/publishcontenttreeworkflow.png)
 
-Não modifique ou chame o modelo original. Em vez disso, primeiro copie o modelo e depois modifique ou chame essa cópia.
+Não chame o modelo original. Em vez disso, primeiro copie o modelo e chame essa cópia.
 
 Como todos os fluxos de trabalho, também é possível chamá-lo por meio da API. Para obter mais informações, consulte [Interação programática com fluxos de trabalho](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html?lang=pt-BR).
 
