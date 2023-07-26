@@ -4,10 +4,10 @@ description: Use um aplicativo de exemplo do React para saber como personalizar 
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 3645918f6ce592b6c70cb4339ab6f0e5e9d71519
+source-git-commit: 3177832b32c98bf463c763dafe2d9e284dc2ac28
 workflow-type: tm+mt
-source-wordcount: '1036'
-ht-degree: 97%
+source-wordcount: '1044'
+ht-degree: 96%
 
 ---
 
@@ -79,7 +79,7 @@ Agora que você modificou um título no aplicativo, tente alterar uma imagem.
 
    ![Remover imagem do fragmento](assets/do-not-localize/swap-image-4.png)
 
-1. Toque ou clique em **Adicionar ativo**.
+1. Toque ou clique **Adicionar ativo** e depois **Procurar ativos** no menu pop-up.
 
 1. A caixa de diálogo **Selecionar ativo** é aberta e o caminho **sample-wknd-app** > **en** > **image-files** é automaticamente selecionado para você.
 
