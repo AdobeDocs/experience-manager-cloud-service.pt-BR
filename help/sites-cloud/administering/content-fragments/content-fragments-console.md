@@ -5,10 +5,10 @@ landing-page-description: Saiba como gerenciar Fragmentos de conteúdo no Consol
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: afe676b0972462ef2c9b52150d96560c71f7a0f6
 workflow-type: tm+mt
-source-wordcount: '1103'
-ht-degree: 94%
+source-wordcount: '1178'
+ht-degree: 85%
 
 ---
 
@@ -64,6 +64,7 @@ Aqui você pode ver três áreas principais:
             * Abrir o fragmento apropriado no editor
             * Mostrar informações sobre referências
             * Mostrar informações sobre versões de idioma do fragmento
+            * Filtrar rapidamente por uma tag selecionada
       * Ao passar o mouse sobre os cabeçalhos da coluna, um seletor de ação suspenso e controles deslizantes de largura são mostrados. Isso permite que você faça o seguinte:
          * Classificar: selecione a ação apropriada para classificar em ordem crescente ou decrescente 
 Isso classificará toda a tabela de acordo com essa coluna. A classificação só está disponível nas colunas apropriadas.
@@ -117,27 +118,34 @@ O painel principal/direito (exibição de tabela) do console fornece uma varieda
 * **Nome**
    * Fornece um link para abrir o fragmento no editor.
 * **Modelo**
-   * Fornece um link para abrir o fragmento no editor.
+   * Somente informações.
+   * Pode ser usado para [Filtragem rápida](#fast-filtering#fast-filtering)
 * **Pasta**
    * Fornece um link para abrir a pasta no console.
 Passar o mouse sobre o nome da pasta mostrará o caminho JCR.
 * **Status**
-   * Somente informações
+   * Somente informações.
+   * Pode ser usado para [Filtragem rápida](#fast-filtering#fast-filtering)
 * **Visualização**
    * Somente informações:
       * **Sincronizado**: o fragmento de conteúdo está sincronizado nos serviços de **Autor** e **Visualização**.
       * **Não sincronizado**: o fragmento de conteúdo não está sincronizado nos serviços de **Autor** e **Visualização**. É necessário **publicar** no serviço de **Visualização** para garantir que as duas instâncias voltem a estar sincronizadas.
       * Em branco: o fragmento de conteúdo não existe no serviço de **Visualização**.
 * **Modificado**
-   * Somente informações
+   * Somente informações.
 * **Modificado por**
-   * Somente informações
+   * Somente informações.
+   * Pode ser usado para [Filtragem rápida](#fast-filtering#fast-filtering).
+* **Tags**
+   * Somente informações.
+   * Mostra todas as tags relacionadas ao fragmento de conteúdo; tanto a Principal quanto qualquer variação.
+   * Pode ser usado para [Filtragem rápida](#fast-filtering#fast-filtering).
 * **Publicado em**
-   * Somente informações
+   * Somente informações.
 * **Publicado por**
-   * Somente informações
+   * Somente informações.
+   * Pode ser usado para [Filtragem rápida](#fast-filtering#fast-filtering).
 * **Referenciado por**
-
    * Fornece um link que abre uma caixa de diálogo listando todas as referências principais desse fragmento; incluindo as referências a Fragmentos de conteúdo, Fragmentos de experiência e páginas. Para abrir uma referência específica, clique no botão **Título** na caixa de diálogo.
 
      ![Console de Fragmentos de conteúdo - Caixa de diálogo Referências](assets/cfc-console-references-dialog.png)
@@ -166,9 +174,13 @@ Isso apresentará uma lista de colunas que você pode ocultar ou mostrar:
 
 O painel Filtro oferece:
 
-* uma seleção de predicados; um ou mais predicados podem ser selecionados e combinados para criar o filtro
+* uma seleção de predicados;
+   * incluindo modelos de fragmento de conteúdo, localização, tags, campos de status, entre outros
+   * um ou mais predicados podem ser selecionados e combinados para criar o filtro
 * a oportunidade de **Salvar** sua configuração
 * a opção de recuperar um filtro de pesquisa salvo para reutilização
+
+Uma vez selecionado, o **Filtrar por** são exibidas (na caixa Pesquisar ). Eles podem ser desmarcados a partir daí. Por exemplo:
 
 ![Console de fragmentos de conteúdo - Filtragem](assets/cfc-console-filter.png)
 
@@ -180,7 +192,7 @@ Por exemplo, selecione **Publicado** na coluna **Status**:
 
 >[!NOTE]
 >
->A filtragem rápida só é compatível com as colunas **Modelo**, **Status**, **Modificado por** e **Publicado por**.
+>A filtragem rápida é suportada somente para o **Modelo**, **Status**, **Modificado por**, **Tags**, e **Publicado por** colunas.
 
 ![Console de fragmentos de conteúdo - Filtragem](assets/cfc-console-fast-filter-01.png)
 

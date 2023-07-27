@@ -1,20 +1,15 @@
 ---
 title: Centro de ações
 description: Use o Centro de ações para tomar as medidas apropriadas em caso de incidentes e obter outras informações importantes
-hidefromtoc: true
-hide: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: 083aa4b893b58102b3a0bf68c4dd3b4c003b48f6
+source-git-commit: 4adae6ffe45dcd2b80d7d199fc29a806ce5e78c4
 workflow-type: tm+mt
-source-wordcount: '708'
-ht-degree: 90%
+source-wordcount: '727'
+ht-degree: 87%
 
 ---
 
 # Centro de ações {#actions-center}
-
->[!NOTE]
->Este recurso não foi lançado.
 
 O AEM as Cloud Service envia notificações por email do Centro de Ações quando ocorrem incidentes críticos que exigem ação imediata e recomendações proativas para otimizações. Os exemplos incluem uma fila bloqueada ou um conjunto de credenciais que está expirando. O conjunto completo de tipos de notificação do Centro de ações pode ser visto na [tabela abaixo](#supported-notification-types), que será ampliada ao longo do tempo.
 
@@ -40,7 +35,7 @@ Para configurar o recebimento de notificações por email do Centro de ações, 
 
 ## Fluxo detalhado do usuário {#detailed-user-flow}
 
-Ao clicar no email, você será redirecionado para o Centro de ações, onde um pop-up será exibido com o contexto da notificação em que você clicou e, em alguns casos, com links para informações adicionais que descrevem como realizar ações de correção.
+Ao clicar no email, você será redirecionado para o Centro de ações, onde um pop-up será exibido com o contexto da notificação em que você clicou e, em alguns casos, com links para informações adicionais que descrevem como realizar ações de correção. Você também pode acessar o Centro de ações diretamente em [https://experience.adobe.com/aem/actions-center](https://experience.adobe.com/aem/actions-center/), onde você pode selecionar o programa e o ambiente relevantes.
 
 ![Detalhes do incidente](/help/operations/assets/incident-details.png)
 
