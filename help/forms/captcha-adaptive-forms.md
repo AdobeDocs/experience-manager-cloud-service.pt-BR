@@ -1,10 +1,10 @@
 ---
 title: Utilização do reCAPTCHA no Adaptive Forms
-description: Saiba como configurar o serviço AEM CAPTCHA ou Google reCAPTCHA no Adaptive Forms.
+description: Saiba como configurar o serviço Google reCAPTCHA no Adaptive Forms.
 topic-tags: adaptive_forms, author
-source-git-commit: bc1c9736c36014b9a2e0df561e6808f28b1dd7b5
+source-git-commit: 4b6c22667bb79bb6cac22675fa22f741b0262210
 workflow-type: tm+mt
-source-wordcount: '1913'
+source-wordcount: '1911'
 ht-degree: 1%
 
 ---
@@ -106,104 +106,108 @@ Para usar o reCAPTCHA em formulários adaptáveis:
    >[!NOTE]
    >
    >* Não há suporte para o uso de mais de um componente Captcha em um formulário adaptável. Além disso, não é recomendável usar CAPTCHA em um painel marcado para carregamento lento ou em um fragmento.
-   >* O Captcha é sensível ao tempo e expira em cerca de um minuto. Portanto, é recomendável colocar o componente Captcha antes do botão Enviar no formulário adaptável.
+   >* O reCaptcha é sensível ao tempo e expira em cerca de um minuto. Portanto, é recomendável colocar o componente Captcha antes do botão Enviar no formulário adaptável.
 
 1. Selecione o componente Captcha que você adicionou e toque em ![cmppr](assets/cmppr.png) para editar suas propriedades.
 1. Especifique um título para o widget CAPTCHA. O valor padrão é **Captcha**. Selecionar **Ocultar título** se não quiser que o título seja exibido.
 1. No **Serviço de captcha** selecione **reCAPTCHA** para ativar o serviço reCAPTCHA se você o tiver configurado conforme descrito em [Serviço reCAPTCHA da Google](#google-reCAPTCHA).
 1. Selecione uma configuração na lista suspensa Configurações para **reCAPTCHA Enterprise** ou **reCAPTCHA v2**
-1. Se a configuração selecionada tiver a versão reCAPTCHA Enterprise, o tipo de chave poderá ser **caixa de seleção** ou **baseado em pontuação** com base em sua seleção ao configurar o reCAPTCHA enterprise:
-   1. Na configuração da nuvem, digite a chave como **caixa de seleção**, a mensagem de erro personalizada será exibida como uma mensagem em linha se a validação do captcha falhar. Você pode selecionar o tamanho como **[!UICONTROL Normal]** e **[!UICONTROL Compacto]**.
-   1. Na configuração da nuvem com **tipo de chave** as **baseado em pontuação**, a mensagem de erro personalizada será exibida como uma mensagem pop-up se a validação do captcha falhar.
-   1. É possível selecionar um **[!UICONTROL Referência de vinculação]** in [!DNL AEM Forms], Em **[!UICONTROL Referência de vinculação]** os dados enviados são dados vinculados, caso contrário, são dados desvinculados. Abaixo estão exemplos XML de dados não vinculados e dados vinculados (com referência de vinculação como SSN), respectivamente, quando um formulário é enviado.
+   1. Se você selecionar **reCAPTCHA Enterprise** versão, o tipo de chave pode ser de **caixa de seleção** ou **baseado em pontuação**, Baseia-se na sua seleção ao configurar [chave do site para sites](https://cloud.google.com/recaptcha-enterprise/docs/create-key#create-key):
 
-      ```xml
-          <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-          <afData>
-          <afUnboundData>
-              <data>
-                  <captcha16820607953761>
-                      <captchaType>reCaptchaEnterprise</captchaType>
-                      <captchaScore>0.9</captchaScore>
-                  </captcha16820607953761>
-              </data>
-          </afUnboundData>
-          <afBoundData>
-              <Root
-                  xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
-                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                  <PersonalDetails>
-                      <SSN>371237912</SSN>
-                      <FirstName>Sarah </FirstName>
-                      <LastName>Smith</LastName>
-                  </PersonalDetails>
-                  <OtherInfo>
-                      <City>California</City>
-                      <Address>54 Residency</Address>
-                      <State>USA</State>
-                      <Zip>123112</Zip>
-                  </OtherInfo>
-              </Root>
-          </afBoundData>
-          <afSubmissionInfo>
-              <stateOverrides/>
-              <signers/>
-              <afPath>/content/dam/formsanddocuments/captcha-form</afPath>
-              <afSubmissionTime>20230608034928</afSubmissionTime>
-          </afSubmissionInfo>
-          </afData>
-      ```
+   >[!NOTE]
+   >
+   >* Na configuração da nuvem com **tipo de chave** as **caixa de seleção**, a mensagem de erro personalizada será exibida como uma mensagem em linha se a validação do captcha falhar.
+   >* Na configuração da nuvem com **tipo de chave** as **baseado em pontuação**, a mensagem de erro personalizada será exibida como uma mensagem pop-up se a validação do captcha falhar.
 
+   1. Você pode selecionar o tamanho como **[!UICONTROL Normal]** e **[!UICONTROL Compacto]**.
+   1. É possível selecionar um **[!UICONTROL Referência de vinculação]**, Em **[!UICONTROL Referência de vinculação]** os dados enviados são dados vinculados, caso contrário, são dados desvinculados. Abaixo estão exemplos XML de dados não vinculados e dados vinculados (com referência de vinculação como SSN), respectivamente, quando um formulário é enviado.
 
-      ```xml
-          <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-          <afData>
-          <afUnboundData>
-              <data/>
-          </afUnboundData>
-          <afBoundData>
-              <Root
-                  xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
-                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                  <PersonalDetails>
-                      <SSN>
-                          <captchaType>reCaptchaEnterprise</captchaType>
-                          <captchaScore>0.9</captchaScore>
-                      </SSN>
-                      <FirstName>Sarah</FirstName>
-                      <LastName>Smith</LastName>
-                  </PersonalDetails>
-                  <OtherInfo>
-                      <City>California</City>
-                      <Address>54 Residency</Address>
-                      <State>USA</State>
-                      <Zip>123112</Zip>
-                  </OtherInfo>
-              </Root>
-          </afBoundData>
-          <afSubmissionInfo>
-              <stateOverrides/>
-              <signers/>
-              <afPath>/content/dam/formsanddocuments/captcha-form</afPath>
-              <afSubmissionTime>20230608035111</afSubmissionTime>
-          </afSubmissionInfo>
-          </afData>
-      ```
+   ```xml
+           <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+           <afData>
+           <afUnboundData>
+               <data>
+                   <captcha16820607953761>
+                       <captchaType>reCaptchaEnterprise</captchaType>
+                       <captchaScore>0.9</captchaScore>
+                   </captcha16820607953761>
+               </data>
+           </afUnboundData>
+           <afBoundData>
+               <Root
+                   xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                   <PersonalDetails>
+                       <SSN>371237912</SSN>
+                       <FirstName>Sarah </FirstName>
+                       <LastName>Smith</LastName>
+                   </PersonalDetails>
+                   <OtherInfo>
+                       <City>California</City>
+                       <Address>54 Residency</Address>
+                       <State>USA</State>
+                       <Zip>123112</Zip>
+                   </OtherInfo>
+               </Root>
+           </afBoundData>
+           <afSubmissionInfo>
+               <stateOverrides/>
+               <signers/>
+               <afPath>/content/dam/formsanddocuments/captcha-form</afPath>
+               <afSubmissionTime>20230608034928</afSubmissionTime>
+           </afSubmissionInfo>
+           </afData>
+   ```
 
+   ```xml
+           <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+           <afData>
+           <afUnboundData>
+               <data/>
+           </afUnboundData>
+           <afBoundData>
+               <Root
+                   xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                   <PersonalDetails>
+                       <SSN>
+                           <captchaType>reCaptchaEnterprise</captchaType>
+                           <captchaScore>0.9</captchaScore>
+                       </SSN>
+                       <FirstName>Sarah</FirstName>
+                       <LastName>Smith</LastName>
+                   </PersonalDetails>
+                   <OtherInfo>
+                       <City>California</City>
+                       <Address>54 Residency</Address>
+                       <State>USA</State>
+                       <Zip>123112</Zip>
+                   </OtherInfo>
+               </Root>
+           </afBoundData>
+           <afSubmissionInfo>
+               <stateOverrides/>
+               <signers/>
+               <afPath>/content/dam/formsanddocuments/captcha-form</afPath>
+               <afSubmissionTime>20230608035111</afSubmissionTime>
+           </afSubmissionInfo>
+           </afData>
+   ```
 
-   **Se a configuração selecionada tiver a versão reCAPTCHA v2**:
-   1. Você pode selecionar o tamanho como **[!UICONTROL Normal]** ou **[!UICONTROL Compacto]** para o widget reCAPTCHA ao configurar o reCAPTCHA, você também pode selecionar a variável **[!UICONTROL Invisível]** opção para mostrar o desafio de CAPTCHA somente no caso de uma atividade suspeita. A variável **protegido pelo reCAPTCHA** exibido abaixo, é exibido nos formulários protegidos.
+   Se você selecionar **reCAPTCHA v2** versão:
+   1. Você pode selecionar o tamanho como **[!UICONTROL Normal]** ou **[!UICONTROL Compacto]** para o widget reCAPTCHA.
+   1. É possível selecionar a variável **[!UICONTROL Invisível]** opção para mostrar o desafio de CAPTCHA somente no caso de uma atividade suspeita.
 
-      ![Google protegido pelo selo reCAPTCHA](/help/forms/assets/google-recaptcha-v2.png)
-
-
-   O serviço reCAPTCHA é ativado no formulário adaptável. Você pode visualizar o formulário e ver o CAPTCHA funcionando.
+   O serviço reCAPTCHA é ativado no formulário adaptável. Você pode visualizar o formulário e ver o CAPTCHA funcionando. A variável **protegido pelo reCAPTCHA** exibido abaixo, é exibido nos formulários protegidos.
+   ![Google protegido pelo selo reCAPTCHA](/help/forms/assets/google-recaptcha-v2.png)
 
 1. Salve as propriedades.
 
 >[!NOTE]
 > 
 > Não selecionar **[!UICONTROL Padrão]** no menu suspenso do serviço Captcha, quando o serviço AEM CAPTCHA padrão é descontinuado.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3422097/adaptive-forms-recaptcha-core-components-captcha/?quality=12&learn=on)
 
 ### Mostrar ou ocultar o componente CAPTCHA com base em regras {#show-hide-captcha}
 
