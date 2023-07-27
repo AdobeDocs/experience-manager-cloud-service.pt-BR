@@ -1,27 +1,381 @@
 ---
 title: Criação e uso de temas
 description: Você pode usar temas para estilizar e fornecer uma identidade visual a um Formulário adaptável usando componentes principais. Você pode compartilhar um tema em qualquer número do Adaptive Forms.
+seo-description: You can create a new theme by customizing the available theme. The themes are customized and deployed using frontend pipeline.
+keywords: criar novo tema, personalizar tema, carregar novo tema, usar tema em formulários, personalizar tema usando pipeline de front-end
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1cec6e01e72cb286949f64749e2386a2b652920e
 workflow-type: tm+mt
-source-wordcount: '1664'
-ht-degree: 5%
+source-wordcount: '2697'
+ht-degree: 2%
 
 ---
 
-# Temas no Forms adaptável (Componentes principais) {#themes-for-af-using-core-components}
+# Temas no Adaptive Forms {#themes-for-af-using-core-components}
 
-Você pode criar e aplicar temas para estilizar um Formulário adaptável usando os componentes principais. Um tema contém detalhes de estilo para os componentes e painéis. Os estilos incluem propriedades como cores de fundo, cores de estado, transparência, alinhamento e tamanho. Quando você aplica um tema, o estilo especificado é refletido nos componentes correspondentes. O tema é gerenciado de forma independente sem uma referência a um Formulário adaptável.
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-or-customize-themes-for-adaptive-forms-core-components.html) |
+| AEM as a Cloud Service | Este artigo |
 
-Quando você [criar um Formulário adaptável](/help/forms/creating-adaptive-form.md) usando os componentes principais, os temas prontos para uso aparecem no menu **Estilo** guia. Por padrão, somente a variável **Tela** tema está disponível.
+É possível criar e aplicar temas para estilizar um Formulário adaptável. Um tema contém detalhes de estilo para os componentes e painéis. Os estilos incluem propriedades como cores de fundo, cores de estado, transparência, alinhamento e tamanho. Quando você aplica um tema, o estilo especificado é refletido nos componentes correspondentes. Um tema é gerenciado de forma independente sem uma referência a um Formulário adaptável e pode ser reutilizado em vários Forms adaptáveis.
 
->[!NOTE]
->
->Um tema de formulário adaptável não deve ser confundido com [Modelos de formulário adaptável](/help/forms/template-editor.md). Os temas do Formulário adaptável contêm apenas as informações de estilo de um Formulário adaptável. Os modelos de formulário adaptável definem a estrutura do formulário e o conteúdo inicial, além de conter um tema para permitir a criação de novos [Formulário adaptável](/help/forms/creating-adaptive-form.md).
+## Temas disponíveis
 
-## Uso do tema da Tela no Adaptive Forms usando componentes principais {#using-theme-in-adaptive-form}
+O Forms as Cloud Service fornece os temas listados abaixo para o Adaptive Forms baseado em Componentes principais:
 
-As etapas para aplicar o tema a um Formulário adaptável são:
+* [Tema da tela de desenho](https://github.com/adobe/aem-forms-theme-canvas)
+* [Tema WKND](https://github.com/adobe/aem-forms-theme-wknd)
+* [Tema CAVALETE](https://github.com/adobe/aem-forms-theme-easel)
+
+## Compreender a estrutura dos temas
+
+Um tema é um pacote que abrange o arquivo CSS, arquivos JavaScript e recursos (como ícones) que definem o estilo do Forms adaptável. Um tema do Formulário adaptável segue uma organização específica, consistindo nos seguintes componentes:
+
+* `src/theme.scss`: essa pasta inclui o arquivo CSS que tem um amplo impacto sobre todo o tema. Ele serve como um local centralizado para definir e gerenciar o estilo e o comportamento do tema. Ao fazer edições nesse arquivo, você pode fazer alterações aplicadas universalmente no tema, influenciando a aparência e a funcionalidade das Páginas adaptáveis do Forms e do AEM Sites.
+
+* `src/site`: esta pasta contém arquivos CSS que são aplicados à página inteira de um site AEM. Esses arquivos consistem em códigos e estilos que afetam a funcionalidade geral e o layout da página do seu site AEM. Quaisquer modificações feitas aqui serão refletidas em todas as páginas do site. [Quando usá-lo?]
+
+* `src/components`: os arquivos CSS nesta pasta são projetados para componentes principais individuais do AEM. Cada pasta dedicada de um componente inclui uma `.scss` arquivo que estiliza esse componente específico em um Formulário adaptável. Por exemplo, o arquivo /src/components/accordion/_accordion.scss contém informações de estilo para o componente Adaptive Forms Accordion.
+
+  ![estrutura de tema baseada em formulário adaptável](/help/forms/assets/theme_structure.png)
+
+* `src/resources`: esta pasta contém arquivos estáticos, como ícones, logotipos e fontes. Esses recursos são usados para aprimorar os elementos visuais e o design geral do tema.
+
+## Criar um tema
+
+O Forms as Cloud Service fornece os temas listados abaixo para o Adaptive Forms baseado em Componentes principais.
+
+* [Tema da tela de desenho](https://github.com/adobe/aem-forms-theme-canvas)
+* [Tema WKND](https://github.com/adobe/aem-forms-theme-wknd)
+* [Tema CAVALETE](https://github.com/adobe/aem-forms-theme-easel)
+
+Você pode [personalizar qualquer um desses temas para criar um novo tema](#customize-a-theme-core-components).
+
+![Fluxo de trabalho de personalização de tema](/help/forms/assets/workflow-of-customization-of-theme.png)
+
+## Personalizar um tema {#customize-a-theme-core-components}
+
+A personalização de um tema refere-se ao processo de modificação e personalização da aparência de um tema. Ao personalizar um tema, você altera seus elementos de design, layout, cores, tipografia e, às vezes, o código subjacente. Ele permite criar uma aparência exclusiva e personalizada para seu site ou aplicativo, mantendo a estrutura básica e a funcionalidade fornecidas pelo tema.
+
+### Pré-requisitos {#prerequisites-to-customize}
+
+* Familiarize-se com [configuração de um pipeline no Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline) e ter conhecimento básico sobre como configurar um pipeline ajuda você a gerenciar e implantar com eficiência suas personalizações de tema.
+* Saiba como [configurar um usuário com a função de colaborador](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html). Entender como configurar um usuário com a função de colaborador permite conceder as permissões necessárias para personalização de temas.
+* Instale a versão mais recente do [Apache Maven.](https://maven.apache.org/download.cgi) O Apache Maven é uma ferramenta de automação de build comumente usada para projetos Java™. A instalação da versão mais recente garante que você tenha as dependências necessárias para a personalização de temas.
+* Instale um editor de texto simples. Por exemplo, Microsoft® Visual Studio Code. O uso de um editor de texto simples, como o Microsoft® Visual Studio Code, fornece um ambiente amigável para a edição e modificação de arquivos de tema.
+
+### Configurar o ambiente
+
+* [Ativar os Componentes principais adaptáveis do Forms](/help/forms/enable-adaptive-forms-core-components.md)  para seu ambiente de desenvolvimento e Cloud Service local.
+* Configurar [pipeline de implantação front-end](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html) para o ambiente de Cloud Service. Como alternativa, você pode configurar o pipeline posteriormente, fornecendo a flexibilidade para priorizar testes e refinar o tema antes de configurar o pipeline de implantação.
+
+<!-- 
+To deploy your themes to a Forms as a Cloud Service environment, first test theme on a local development environment to address any issues. Once the theme is tested, configure the front-end deployment pipeline, which is responsible for deploying the themes.
+
+These themes are deployed to a Forms as a Cloud Service environment via the front-end pipeline. You can configure the pipeline later also, after testing the theme on a local development environment. 
+
+-->
+
+Depois de conhecer os pré-requisitos e configurar o ambiente de desenvolvimento, você estará bem preparado para começar a personalizar seu tema de acordo com suas necessidades específicas.
+
+### Personalizar um tema {#steps-to-customize-a-theme-core-components}
+
+A personalização de um tema é um processo de várias etapas. Para personalizar o tema, execute as etapas na ordem listada:
+
+1. [Clonar um tema](#download-a-theme-core-components)
+1. [Definir nome de um tema](#set-name-of-theme)
+1. [Personalizar um tema](#customize-the-theme)
+1. [Testar um tema](#test-the-theme)
+1. [Implantar um tema](#deploy-the-theme)
+
+Os exemplos fornecidos no documento são baseados no **Tela** tema, mas é importante observar que você pode clonar qualquer tema e personalizá-lo usando as mesmas instruções. Essas instruções se aplicam a qualquer tema, permitindo modificar temas de acordo com suas necessidades específicas.
+
+#### 1. Clonar um tema {#download-a-theme-core-components}
+
+Para clonar um tema para os Componentes principais com base no Adaptive Forms, escolha um dos seguintes temas:
+
+* [Tema da tela de desenho](https://github.com/adobe/aem-forms-theme-canvas)
+* [Tema WKND](https://github.com/adobe/aem-forms-theme-wknd)
+* [Tema CAVALETE](https://github.com/adobe/aem-forms-theme-easel)
+
+Para clonar um tema, execute as seguintes instruções:
+
+1. Abra o prompt de comando ou a janela do terminal no ambiente de desenvolvimento local.
+
+1. Execute o `git clone` comando para clonar um tema.
+
+   ```
+      git clone [Path of Git Repository of the theme]
+   ```
+
+   Substitua o [Caminho do repositório Git do tema] com o URL real do Repositório Git correspondente do tema
+
+   Por exemplo, para clonar o tema da Tela de Pintura, execute o seguinte comando:
+
+   ```
+      git clone https://github.com/adobe/aem-forms-theme-canvas
+   ```
+
+   Depois de executar o comando com êxito, você terá uma cópia local do tema disponível em sua máquina na  `aem-forms-theme-canvas` pasta.
+
+
+#### 2. Definir nome de um tema {#set-name-of-theme}
+
+1. Abra a pasta de temas em um editor de texto simples. Por exemplo, para abrir a variável `aem-forms-theme-canvas` pasta no editor de código do Visual Studio.
+
+1. Navegue até a `aem-forms-theme-canvas` pasta.
+
+1. Execute o seguinte comando:
+
+   ```
+         code .
+   ```
+
+   ![Abrir a pasta de temas em um editor de texto simples](/help/forms/assets/aem-forms-theme-folder-in-vs-code.png)
+
+   A pasta é aberta no Visual Studio Code.
+
+1. Abra o `package.json` arquivo para edição.
+
+1. Defina os valores para o `name` e `description` atributos.
+
+   O atributo name é usado para identificar exclusivamente o tema, como &quot;aem-forms-wknd-theme&quot; e exibido no **Estilo** guia de **Assistente de criação de formulário**. O atributo de descrição fornece detalhes adicionais sobre o tema, incluindo a finalidade e os cenários para os quais ele foi projetado. Você também pode especificar a versão, a descrição e a licença do tema.
+
+1. Salvar e fechar o arquivo.
+
+![Imagem de alteração do nome do tema da tela de desenho](/help/forms/assets/changename_canvastheme.png)
+
+
+#### 3. Personalizar um tema {#customize-the-theme}
+
+Você pode personalizar componentes individuais ou fazer alterações no nível do tema usando variáveis globais de um tema. Quaisquer alterações feitas nas variáveis globais afetam todos os componentes individuais. Por exemplo, você pode usar variáveis Globais para alterar a cor da borda de todos os componentes de um Formulário adaptável e uma cor de preenchimento brilhante para definir CTA (Chamada para ação) usando o componente de botão:
+
+* [Definir estilos de nível de tema](#theme-customization-global-level)
+
+* [Definir estilos de nível de componente](#component-based-customization)
+
+##### Definir estilos de nível de tema{#theme-customization-global-level}
+
+A variável `variable.scss` arquivo contém as variáveis globais do tema. Ao atualizar essas variáveis, é possível fazer alterações relacionadas ao estilo no nível do tema. Para aplicar estilos de nível de tema, siga estas etapas:
+
+1. Abra o `<your-theme-sources>/src/site/_variables.scss` arquivo para edição.
+1. Altere o valor de qualquer propriedade. Por exemplo, a cor de erro padrão é `red`. Para alterar a cor do erro de `red` para `blue`, altere o código hexadecimal de cor do `$errorvariable`. Por exemplo, `$error: #196ee5`.
+1. Salvar e fechar o arquivo.
+
+   ![Editar tema](/help/forms/assets/edit_theme.png)
+
+Da mesma forma, você pode usar o `variable.scss` arquivo para definir a família e o tipo de fonte, as cores do tema e da fonte, o tamanho da fonte, o espaçamento do tema, o ícone de erro, os estilos de borda do tema e mais as variáveis que afetam vários componentes do Formulário adaptável.
+
+##### Definir estilos de nível de componente {#component-based-customization}
+
+Você também pode alterar a fonte, a cor, o tamanho e outras propriedades CSS de um componente principal do Formulário adaptável específico. Por exemplo, botão, caixa de seleção, container, rodapé e muito mais. Você pode criar um botão de estilo ou uma caixa de seleção editando o arquivo CSS do componente específico para alinhá-lo ao estilo de sua organização. Para personalizar o estilo de um componente:
+
+1. Abra o arquivo `<your-theme-sources>/src/components/<component>/<component.scss>` para edição. Por exemplo, para alterar a cor da fonte do componente de botão, abra a variável `<your-theme-sources>/src/components/button/button.scss`, arquivo .
+1. Altere o valor de qualquer de acordo com suas necessidades. Por exemplo, para alterar a cor do componente Botão ao passar o mouse para `green`, altere o valor de `color: $white` propriedade na `cmp-adaptiveform-button__widget:hover` classe para código hexadecimal `#12B453` ou qualquer outro tom de `green`. O código final é semelhante ao seguinte:
+
+   ```
+   .cmp-adaptiveform-button__widget:hover {
+   background: $dark-gray;
+   color: #12B453;
+   }
+   ```
+
+1. Salvar e fechar o arquivo.
+
+   ![Editar CSS da caixa de texto](/help/forms/assets/edit_color_textbox.png)
+
+   >
+   >
+   > Quando um estilo é definido no nível do tema e do componente, o estilo definido no nível do componente tem prioridade.
+
+#### 4. Testar um tema personalizado {#test-the-theme}
+
+Para visualizar e testar as alterações no ambiente local e personalizar o tema de acordo com os requisitos para diferentes componentes AEM, execute as seguintes etapas:
+
+* 4.1 [Configurar o ambiente local para testes](#rename-env-file-theme-folder)
+* 4.2 [Testar o tema usando o ambiente local](#start-a-local-proxy-server)
+
+##### 4.1. Configurar o ambiente local para testes {#rename-env-file-theme-folder}
+
+1. Abra a pasta de temas em um editor de texto simples. Por exemplo, abra `aem-forms-theme-canvas` pasta no editor de código do Visual Studio.
+1. Renomeie o `env_template` arquivo para `.env` na pasta de temas e adicione os seguintes parâmetros:
+
+   ```
+   * **AEM url**
+   AEM_URL=https://[author-instance] 
+   
+   * **AEM Adaptive form name**
+   AEM_ADAPTIVE_FORM=Form_name
+   
+   * **AEM proxy port**
+   AEM_PROXY_PORT=7000
+   ```
+
+   Por exemplo, a URL do formulário é `http://localhost:4502/editor.html/content/forms/af/contactusform.html`. Portanto, os valores de:
+
+   * AEM_URL = `http://localhost:4502/`
+   * AEM_ADAPTIVE_FORM = `contactusform`
+
+1. Salve o arquivo.
+
+   ![Estrutura do tema da tela de desenho](/help/forms/assets/env-file-canvas-theme.png)
+
+##### 4.2 Testar o tema usando o ambiente local {#start-a-local-proxy-server}
+
+1. Navegue até a raiz da pasta de temas. Nesse caso, o nome da pasta do tema é `aem-forms-theme-canvas`.
+1. Abra o prompt de comando ou o terminal.
+1. Executar `npm install` para instalar as dependências.
+1. Executar `npm run live` para visualizar o formulário com o tema atualizado no navegador local.
+
+   >[!NOTE]
+   >
+   > Se ocorrer um erro durante a execução do `npm run live` execute os seguintes comandos antes de `npm run live` comando:
+   >
+   > * `npm install parcel --save-dev`
+   > * `npm i @parcel/transformer-sass`
+
+Esta é uma implantação ativa. Assim, sempre que fizer alterações e salvar a variável `_variables.scss` e `button.scss` automaticamente as alterações e visualiza a saída mais recente. A linha `[Browsersync] File event [change]` significa que o servidor reconheceu as alterações mais recentes e está implantando as alterações no ambiente local.
+
+![Browsersync de proxy](/help/forms/assets/browser_sync.png)
+
+Após seguir os exemplos fornecidos no nível do tema e no nível do componente para personalizações de tema, as mensagens de erro de um Formulário adaptável são alteradas para a variável `blue` cor, enquanto a cor do rótulo para o componente de botão muda para `green` ao passar o cursor.
+
+**Visualização do estilo do nível do tema**
+
+![Exemplo: Cor de erro definida como azul](/help/forms/assets/theme-level-changes.png)
+
+**Visualização do estilo de nível do componente**
+
+![Exemplo: a cor de foco está definida como verde](/help/forms/assets/button-customization.png)
+
+###### Testar o tema para formulários hospedados em um ambiente de Cloud Service
+
+Você também pode testar o tema do Formulário adaptável hospedado em sua instância do AEM Forms as a Cloud Service. Para configurar e definir o ambiente local para o teste dos temas com o Forms adaptável hospedado na instância da nuvem, execute as seguintes etapas:
+
+1. Abra a pasta de temas em um editor de texto simples. Por exemplo, abra `aem-forms-theme-canvas` pasta no editor de código do Visual Studio.
+1. Renomeie o `env_template` arquivo para `.env` e adicione os seguintes parâmetros:
+
+   ```
+   * **AEM url**
+   AEM_URL=https://[author-instance] 
+   
+   * **AEM Adaptive form name**
+   AEM_ADAPTIVE_FORM=Form_name
+   
+   * **AEM proxy port**
+   AEM_PROXY_PORT=7000
+   ```
+
+   Por exemplo, a URL do formulário no ambiente de nuvem é `https://author-XXXX.adobeaemcloud.com/editor.html/content/forms/af/contactusform.html`. Portanto, os valores de:
+
+   * AEM_URL = `https://author-XXXX-cmstg.adobeaemcloud.com/`
+   * AEM_ADAPTIVE_FORM = `contactusform`
+1. Salve o arquivo.
+1. Crie um usuário local.
+
+   >[!NOTE]
+   >
+   > Para criar um usuário local:
+   >
+   > * Ir para **[!UICONTROL Página inicial do AEM]** > **[!UICONTROL Ferramentas]** > **[!UICONTROL Segurança]** > **[!UICONTROL Usuários]** .
+   > * Certifique-se de que o usuário é membro do `forms-users` grupo.
+
+1. Navegue até a raiz da pasta de temas. Nesse caso, o nome da pasta do tema é `aem-forms-theme-canvas`.
+1. Executar `npm run live` e você for redirecionado a um navegador local.
+1. Clique em `SIGN IN LOCALLY (ADMIN TASKS ONLY)` e faça logon usando as credenciais do usuário local.
+
+Você pode visualizar o Formulário adaptável com as alterações mais recentes. Quando estiver satisfeito com as modificações feitas em uma pasta de tema, implante o tema no ambiente do AEM Cloud Service usando o pipeline de front-end.
+
+#### 5. Implantar um tema {#deploy-the-theme}
+
+Para implantar o tema no ambiente Cloud Service usando o pipeline de front-end:
+
+* 5.1 [Criar um repositório para o tema](#create-a-new-theme-repo)
+* 5.2 [Enviar as alterações para o repositório](#committing-the-changes)
+* 5.3 [Executar o pipeline de front-end](#run-a-frontend-pipeline)
+
+##### 5.1 Criar um repositório para o tema{#create-a-new-theme-repo}
+
+Você precisa de um repositório para implantar o tema. Faça logon no [Repositório do AEM Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) e adicionar novo repositório para o tema.
+
+1. Crie um novo repositório para o tema clicando no link **[!UICONTROL Repositórios]** > **[!UICONTROL Adicionar repositório]**.
+
+   ![criar novo repositório de tema](/help/forms/assets/createrepo_canvastheme.png)
+
+
+1. Especifique a **Nome do repositório** no **Adicionar repositório** caixa de diálogo. Por exemplo, o nome fornecido é `custom-canvas-theme-repo`.
+1. Clique em **[!UICONTROL Salvar]**.
+
+   ![Adicionar tema da tela de desenho ao repositório](/help/forms/assets/addcanvasthemerepo.png)
+
+1. Clique em **[!UICONTROL Copiar URL de repositório]** para copiar o URL do repositório.
+
+   ![URL do tema da tela](/help/forms/assets/copyurl_canvastheme.png)
+
+   >[!NOTE]
+   > 
+   > * Você pode usar um único repositório para vários temas.
+   > * Para implantar temas diferentes, é necessário criar pipelines de front-end separados.
+   >* Por exemplo, você pode usar o mesmo repositório, como `custom-canvas-theme-repo`, para tema do Canvas, tema WKND e tema EASEL. No entanto, para implantar os temas, é necessário criar pipelines de front-end separados. Personalizações futuras para um tema específico são implantadas usando o pipeline de front-end correspondente.
+
+##### 5.2. Enviar as alterações para o repositório {#committing-the-changes}
+
+Agora, envie as alterações para o repositório de temas do seu Cloud Service AEM Forms. .
+
+1. Navegue até a raiz da pasta de temas.  Nesse caso, o nome da pasta do tema é `aem-forms-theme-canvas`.
+1. Abra o prompt de comando ou o terminal.
+1. Execute o seguinte comando na ordem listada:
+
+   ```
+   git remote add [alias-name-for-repository] [URL of repository]
+   git add .
+   git commit
+   git push [name-for-createdrepository]
+   ```
+
+   Por exemplo:
+
+   ```
+   git remote add canvascloudthemerepo https://git.cloudmanager.adobe.com/stage-aemformsdev/customcanvastheme/
+   git add .
+   git commit
+   git push canvascloudthemerepo 
+   ```
+
+   ![Alterações confirmadas](/help/forms/assets/cmd_git_push.png)
+
+
+
+##### 5.3 Executar o pipeline de front-end {#run-a-frontend-pipeline}
+
+O tema é implantado usando o [pipeline de front-end.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html). Para implantar o tema, execute as seguintes etapas:
+
+1. Faça logon no repositório do AEM Cloud Manager.
+1. Clique em **[!UICONTROL Adicionar]** botão no **[!UICONTROL Pipelines]** seção.
+1. Selecionar **[!UICONTROL Adicionar pipeline de não produção]** ou **[!UICONTROL Adicionar pipeline de produção]** com base no ambiente Cloud Service. Por exemplo, aqui a variável **[!UICONTROL Adicionar pipeline de produção]** for selecionada.
+1. No **[!UICONTROL Adicionar pipeline de produção]** como parte da **[!UICONTROL Configuração]** etapas, especifique o nome do seu pipeline. Por exemplo, o nome do pipeline é `customcanvastheme`.
+1. Clique em **[!UICONTROL Continuar]**.
+1. Selecione o **[!UICONTROL Implantação direcionada]** > o **[!UICONTROL Código de front-end]** opções, na caixa **[!UICONTROL Código-fonte]** etapas.
+1. Selecione o **[!UICONTROL Repositório]** e a variável **[!UICONTROL Ramificação Git]** que têm suas alterações mais recentes. Por exemplo, aqui o nome do repositório selecionado é `custom-canvas-theme-repo` e a ramificação Git é `main`.
+1. Selecione o **[!UICONTROL Localização do código]** as `/`, se as alterações estiverem presentes na pasta raiz.
+1. Clique em **[!UICONTROL Salvar]**.
+   ![criar pipeline de front-end](/help/forms/assets/canvas-theme-frontendpipeline.gif)
+
+   Após a conclusão da configuração do pipeline, o cartão de chamada para ação é atualizado.
+
+1. Clique com o botão direito do mouse no pipeline criado.
+1. Clique em **[!UICONTROL Executar]** .
+
+   ![run-a-pipeline](/help/forms/assets/canvas-theme-run-pipeline.png)
+
+Quando a criação for concluída, o tema ficará disponível na instância do autor para uso. Aparece sob o título **[!UICONTROL Estilo]** no assistente de criação do Formulário adaptável, ao criar um novo Formulário adaptável.
+
+![tema personalizado disponível na guia estilo](/help/forms/assets/custom-theme-style-tab.png)
+
+## Aplicar um tema a um formulário adaptável {#using-theme-in-adaptive-form}
+
+As etapas para aplicar um tema a um Formulário adaptável são:
 
 1. Faça logon na instância de autor do AEM Forms.
 
@@ -30,215 +384,10 @@ As etapas para aplicar o tema a um Formulário adaptável são:
 1. Clique em **Criar** > **Forms adaptável**. O assistente para criação do Formulário adaptável é aberto.
 
 1. Selecione o modelo do componente principal na **Origem** guia.
-
-   >[!NOTE]
-   >
-   > Ao criar um Formulário adaptável com componentes principais, você vê o tema Tela de desenho na guia Estilo. Esse é o único tema pronto para uso disponível no momento. Mas você pode alterar o tema de seu gosto e salvá-lo para uso futuro configurando um pipeline de front-end.
-
-1. Selecione o tema da Tela de Pintura na **Estilo** guia.
+1. Selecione o tema no campo **Estilo** guia.
 1. Clique em **Criar**.
 
 Os temas do formulário adaptável são usados como parte de um modelo de formulário adaptável para definir o estilo ao criar um formulário adaptável.
-
-## Personalizar o tema {#customizing-theme}
-
-Para personalizar um tema,
-
-* [configurar um pipeline no Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline)
-* Configurar um usuário com o [função do colaborador](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html).
-* Você deve ter um [conhecimento básico do Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git) e os repositórios Git do Cloud Service.
-
-Para personalizar um tema da Tela de Pintura:
-
-1. [Clonar o tema da tela de desenho](#1-download-canvas-theme-download-canvas-theme)
-1. [Entender a estrutura do tema](#2-understand-structure-of-the-canvas-theme-structure-of-canvas-theme)
-1. [Alterar nome em package.json e package_lock.json](#changename-packagelock-packagelockjson)
-1. [Crie o ](#3-create-the-env-file-in-a-theme-folder-creating-env-file-theme-folder)
-1. [Iniciar o servidor proxy local](#4-start-a-local-proxy-server-starting-a-local-proxy-server)
-1. [Personalizar o tema](#customize-the-theme-customizing-theme)
-1. [Confirmar as alterações](#6-committing-the-changes-committing-the-changes)
-1. [Implantar o pipeline](#7-deploying-the-customized-theme-deploy-customized-theme)
-
-### 1. Clone o tema da Tela de Pintura {#download-canvas-theme}
-
-Abra o prompt de comando e execute o seguinte comando para clonar o tema da tela:
-
-```
-git clone https://github.com/adobe/aem-forms-theme-canvas
-```
-
->[!NOTE]
->
-> A guia Estilo do Assistente de criação de formulário exibe o mesmo nome de tema do arquivo package.json.
-
-### 2. Compreender a estrutura do tema {#structure-of-canvas-theme}
-
-Um tema de formulário adaptável é um pacote que contém o CSS, o JavaScript e os recursos estáticos que definem o estilo do seu formulário e está em conformidade com a estrutura de um tema de formulário adaptável. Um tema do formulário adaptável tem a seguinte estrutura típica de um projeto front-end:
-
-* `src/components`: arquivos JavaScript e CSS específicos para componentes principais do AEM
-* `src/resources`: arquivos estáticos como ícones, logotipos e fontes
-* `src/site`: arquivos JavaScript e CSS que se aplicam a toda a página do AEM Sites
-* `src/theme.ts`: o principal ponto de entrada do seu JavaScript e tema CSS
-* `src\theme.scss`: arquivos JavaScript e CSS que se aplicam a todo o tema
-
-A variável `src/components` A pasta tem arquivos JavaScript e CSS específicos para todos os componentes principais do AEM, como botão, caixa de seleção, contêiner, rodapé etc. Você pode estilizar o botão ou a caixa de seleção editando o arquivo CSS específico ao componente AEM.
-
-![Edição do tema](/help/forms/assets/theme_structure.png)
-
-Para personalizar o tema, você pode iniciar o servidor proxy local para ver as personalizações do tema em tempo real com base no conteúdo real do AEM.
-
-### 3. Altere o nome em package.json e package_lock.json do tema da Tela {#changename-packagelock-packagelockjson}
-
-Atualize o nome e a versão do tema da Tela de Pintura no `package.json` e `package_lock.json` arquivos.
-
->[!NOTE]
->
-> Os nomes não devem ter `@aemforms` tag. Deve ser um texto simples como nome fornecido pelo usuário.
-
-![Imagem do tema da tela de desenho](/help/forms/assets/changename_canvastheme.png)
-
-### 4. Crie o arquivo .env em uma pasta de temas {#creating-env-file-theme-folder}
-
-Criar um `.env` na pasta de temas e adicione os seguintes parâmetros:
-
-* **URL do AEM**
-AEM_URL=https://[author-instance]
-
-* **Nome do site AEM**
-AEM_ADAPTIVE_FORM=Nome_do_formulário
-
-* **Porta de proxy AEM**
-AEM_PROXY_PORT=7000
-
-
-![Estrutura do tema da tela de desenho](/help/forms/assets/env-file-canvas-theme.png)
-
-### 5. Iniciar um servidor proxy local {#starting-a-local-proxy-server}
-
-1. Na linha de comando, navegue até a raiz do tema no computador local.
-1. Execute `npm install` e o npm recupera dependências e instala o projeto.
-1. Execute `npm run live` e o servidor proxy é iniciado.
-
-   ![npm run live](/help/forms/assets/theme_proxy.png)
-
-
-1. Toque ou clique **FAZER LOGON LOCALMENTE (SOMENTE TAREFAS DE ADMINISTRADOR)** e faça logon com as credenciais de usuário proxy fornecidas pelo administrador do AEM.
-
-   ![Fazer logon localmente](/help/forms/assets/local_signin.png)
-
-   >[!NOTE]
-   >
-   > * Crie um usuário local para fazer logon localmente. Forneça a função de colaborador para o designer de tema.
-   > * Se você especificar o URL do AEM como `http://localhost:[port]/` no `.env` arquivo do tema da Tela, você é redirecionado diretamente para o navegador.
-
-1. Depois de fazer logon, altere o URL no navegador de modo que aponte o caminho para o conteúdo de amostra que o administrador do AEM forneceu.
-
-   * Por exemplo, se o caminho fornecido foi `/content/formname.html?wcmmode=disabled`, altere o URL para `http://localhost:[port]/content/forms/af/formname.html?wcmmode=disabled`
-
-   ![Conteúdo de amostra proxy](/help/forms/assets/sample_af.png)
-
-Navegue até um Formulário adaptável para ver o tema da Tela de desenho aplicado a um Formulário adaptável.
-
-### 6. Personalizar o tema {#customize-theme}
-
-1. No editor, abra o arquivo `<your-theme-sources>/src/site/_variables.scss`.
-
-   >[!NOTE]
-   >
-   > É possível estilizar todos os componentes do Formulário adaptável em um Site diretamente ao editar o `site/_variables.scss` arquivo.
-
-1. Edite a variável para o `font colour` para `red`.
-
-   ![Editar tema](/help/forms/assets/edit_theme.png)
-
-   **Estilizar os diferentes componentes do AEM**
-
-   Você pode estilizar os diferentes componentes de um Formulário adaptável alterando seu arquivo CSS no editor. Há diferentes pastas CSS para cada componente principal do Formulário adaptável na pasta do Tema da Tela.
-
-   ![Componente principal](/help/forms/assets/theme-component.png)
-
-   Para especificar estilos para um componente específico no editor de temas, edite o CSS em uma pasta de temas. Por exemplo, se você quiser alterar a cor da borda de um campo de caixa de texto, abra o arquivo CSS no editor e altere sua cor de borda.
-
-   ![Editar CSS da caixa de texto](/help/forms/assets/edit_color_textbox.png)
-
-1. Ao salvar o arquivo, o servidor proxy reconhece a alteração através da linha `[Browsersync] File event [change]`.
-
-   ![Browsersync de proxy](/help/forms/assets/browser_sync.png)
-
-1. Ao retornar ao navegador do servidor proxy local, a alteração fica visível imediatamente.
-
-   ![alterar tema de AF](/help/forms/assets/edit_theme_af.png)
-
-O designer do tema visualiza as alterações no servidor proxy local e personaliza o tema de acordo com os requisitos para diferentes componentes do AEM.
-
-Antes de confirmar as alterações no repositório Git do AEM, é necessário acessar [Informações do repositório Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git).
-
-### 7. Confirmar as alterações {#committing-the-changes}
-
-Depois de fazer alterações no tema e testá-lo com um servidor proxy local, confirme as alterações no repositório Git do Cloud Service AEM Forms. Ele disponibiliza o tema personalizado em seu ambiente Forms Cloud Service para que os autores do Adaptive Forms usem o.
-
-Antes de confirmar as alterações no repositório Git do Cloud Service AEM Forms, é necessário um clone do repositório no computador local. Para clonar o repositório:
-
-1. Crie um novo repositório de temas clicando no ícone **[!UICONTROL Repositórios]** opção.
-
-   ![criar novo repositório de tema](/help/forms/assets/createrepo_canvastheme.png)
-
-1. Clique em **[!UICONTROL Adicionar repositório]** e especificar a **Nome do repositório** no **Adicionar repositório** caixa de diálogo. Clique em **[!UICONTROL Salvar]**.
-
-   ![Adicionar tema da tela de desenho ao repositório](/help/forms/assets/addcanvasthemerepo.png)
-
-1. Clique em **[!UICONTROL Copiar URL de repositório]** para copiar o URL do repositório criado.
-
-   ![URL do tema da tela](/help/forms/assets/copyurl_canvastheme.png)
-
-1. Abra o prompt de comando e clone o repositório na nuvem criado acima.
-
-   ```
-   git clone https://git.cloudmanager.adobe.com/aemforms/Canvasthemerepo/
-   ```
-
-1. Mova os arquivos do repositório de temas que você está editando para o repositório na nuvem com um comando semelhante a
-   `cp -r [source-theme-folder]/* [destination-cloud-repo]`
-Por exemplo, use este comando `cp -r [C:/cloned-git-canvas/*] [C:/cloned-repo]`
-1. No diretório do repositório da nuvem, confirme os arquivos de tema movidos para o com os seguintes comandos.
-
-   ```text
-   git add .
-   git commit -a -m "Adding theme files"
-   git push
-   ```
-
-1. As personalizações são enviadas para o repositório Git.
-
-   ![Alterações confirmadas](/help/forms/assets/cmd_git_push.png)
-
-Suas personalizações agora estão armazenadas com segurança no repositório Git.
-
-
-### 8. Executar o pipeline de front-end {#deploy-pipeline}
-
-1. Crie o pipeline de front-end para implantar o tema personalizado. Saiba mais [como configurar um pipeline de linha de frente para implantar um tema personalizado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline).
-1. Execute o pipeline de front-end criado para implantar a pasta de tema personalizada no **[!UICONTROL Estilo]** de um assistente de criação de Formulário adaptável.
-
->[!NOTE]
->
->No futuro, se fizer modificações na pasta de temas da Tela de Pintura, será necessário executar novamente o pipeline acima. Portanto, é necessário lembrar o nome do pipeline.
-
-## Exemplo para personalizar o tema {#example-to-customize-a-theme}
-
-1. Faça logon na instância de autor do AEM Forms.
-1. Abra um Formulário adaptável criado usando os componentes principais.
-1. Inicie o servidor proxy local usando o prompt de comando e clique em **FAZER LOGON LOCALMENTE (SOMENTE TAREFAS DE ADMINISTRADOR)**.
-1. Depois de fazer logon, você será redirecionado para o navegador e verá o tema aplicado.
-1. Baixe o [Tema da tela de desenho](https://github.com/adobe/aem-forms-theme-canvas) e extraia a pasta zip baixada.
-1. Abra a pasta zip extraída no editor de sua preferência.
-1. Criar um `.env` arquivo na pasta de temas e adicionar parâmetros: **URL do AEM**, **AEM_ADAPTIVE_FORM** e **AEM_PROXY_PORT**.
-1. Abra o arquivo CSS da caixa de texto na pasta de temas da Tela de Pintura e altere a cor da borda para `red` colorido e salve as alterações.
-1. Abra o navegador novamente e você verá que as alterações são refletidas imediatamente em um Formulário adaptável.
-1. Mova a pasta do tema da tela de desenho no repositório clonado.
-1. Confirme as alterações e execute o pipeline de front-end.
-
-Depois que o pipeline é executado, o tema fica disponível na guia Estilo.
 
 ## Práticas recomendadas {#best-practices}
 
@@ -256,3 +405,21 @@ Depois que o pipeline é executado, o tema fica disponível na guia Estilo.
 
   Use o editor de temas se desejar estilizar o cabeçalho e o rodapé usando opções de estilo, como estilo da fonte, plano de fundo e transparência.
 Se você quiser fornecer informações como uma imagem de logotipo, o nome da empresa no cabeçalho e informações de direitos autorais no rodapé, use as opções do editor de formulários.
+
+## Perguntas frequentes {#faq}
+
+**P:** Qual personalização tem prioridade ao fazer personalizações em uma pasta de tema no nível global e no nível do componente?
+
+**Ans:** Quando as personalizações são feitas no nível global e no nível do componente, a personalização no nível do componente tem prioridade.
+
+## Ver próximo
+
+* [Definir layout de formulários para diferentes tamanhos de tela e tipos de dispositivo](/help/sites-cloud/authoring/features/responsive-layout.md)
+* [Gerar documento de registro para o Forms adaptável (componentes principais)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
+* [Criar um Forms adaptável com seções repetíveis](/help/forms/create-forms-repeatable-sections.md)
+
+
+## Artigo relacionado {#related-article}
+
+* [Habilitar os componentes principais de formulários adaptáveis no AEM Forms as a Cloud Service e no ambiente de desenvolvimento local](/help/forms/enable-adaptive-forms-core-components.md)
+* [Criar um formulário adaptável independente baseado nos Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=pt-BR)
