@@ -3,9 +3,9 @@ title: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud S
 description: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 8efe5d66929d1e2ccd7af71a2de8ae02f2bbc290
+source-git-commit: 758960006bd1e58530fdf7b20cdd761853170366
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '981'
 ht-degree: 32%
 
 ---
@@ -77,10 +77,9 @@ Por padrão, o Assets Essentials agora classifica os resultados da pesquisa com 
 
 * [**Temas prontos para uso**](/help/forms/using-themes-in-core-components.md) **e modelos**: Inicie seu processo de criação de formulários com nossos temas e modelos OOTB prontos para uso, personalizados para capacitar profissionais experientes e novos autores de formulários. Construídos de maneira contínua usando os Componentes principais do Adaptive Forms, esses temas e modelos meticulosamente preparados permitem que você comece a criar formulários rapidamente para casos de uso comuns.
 
+!![Modelos prontos para uso](/help/forms/assets/form-templates-ootb.png)
 
 * **Componentes do React para o Forms headless**: agora você pode visualizar e personalizar representações do Formulário adaptável headless com os componentes do React fornecidos imediatamente. Esses componentes aproveitam as classes BEM dos Componentes principais do Adaptive Forms para estilizar, facilitando a personalização da aparência de acordo com suas necessidades específicas.
-
-  A integração com o Adobe Acrobat Sign Solutions para o governo permite que os parceiros do Adobe e os clientes do governo usem assinaturas eletrônicas no Adaptive Forms para algumas das linhas de negócios mais críticas e confidenciais. Essa camada adicional de segurança garante que todas as assinaturas eletrônicas sejam totalmente compatíveis com o nível moderado de conformidade do FedRAMP, proporcionando tranquilidade aos clientes governamentais da Adobe.
 
 * [**Criar Forms adaptável com seções que podem ser repetidas**](/help/forms/create-forms-repeatable-sections.md): Agora você pode fazer [Acordeão](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [Assistente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html), [Painel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html), e [Guias Horizontais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) formulários adaptáveis com base em componentes repetíveis para captura de vários registros de dados.  Essas seções repetíveis permitem fornecer várias entradas de dados facilmente. É útil quando as instâncias de dados necessárias são desconhecidas antecipadamente. Um preenchimento de formulário pode adicionar ou remover seções facilmente, tornando os formulários adaptáveis a diferentes cenários de entrada de dados e simplificando a coleta de várias ocorrências do mesmo registro de dados.
 
