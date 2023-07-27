@@ -3,7 +3,7 @@ title: Como adicionar um formulário adaptável à página do AEM Sites?
 description: Descubra como criar ou adicionar um Formulário adaptável à sua página do AEM Sites. Conheça também os benefícios e várias maneiras de integrar formulários ao seu site.
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
-source-git-commit: ecc881ac1a9f8dd98cd57bbeb44cc35deddcbb8e
+source-git-commit: c5a3b5a22283e0e14b8d0a8464b9bba460a80c71
 workflow-type: tm+mt
 source-wordcount: '3214'
 ht-degree: 0%
@@ -84,6 +84,7 @@ Para ativar a funcionalidade completa do componente de Contêiner adaptável do 
 
        &quot;
        //Customheaderlibs.html
+       
        &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
        &lt;sly data-sly-call=&quot;${clientlib.css @ categories=&amp;#39;core.forms.components.runtime.all&amp;#39;}&quot; />
        &lt;/sly>
