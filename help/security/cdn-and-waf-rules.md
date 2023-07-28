@@ -1,9 +1,9 @@
 ---
 title: Configuração de regras CDN e WAF para filtrar o tráfego
 description: Usar as regras de firewall do CDN e do aplicativo da Web para filtrar o tráfego mal-intencionado
-source-git-commit: 579f2842a72c7da1c9d24772bdae354a943de40c
+source-git-commit: a9b8b4d6029d0975428b9cff04dbbec993d56172
 workflow-type: tm+mt
-source-wordcount: '2360'
+source-wordcount: '2371'
 ht-degree: 2%
 
 ---
@@ -312,6 +312,7 @@ data:
 "ttfb": 19,
 "cip": "147.160.230.112",
 "rid": "974e67f6",
+"ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
 "host": "example.com",
 "url": "/block-me",
 "req_mthd": "GET",
@@ -329,11 +330,12 @@ data:
 "timestamp": "2023-05-26T09:20:01+0000",
 "ttfb": 19,
 "cip": "147.160.230.112",
+"ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
 "rid": "974e67f6",
 "host": "example.com",
 "url": "/?sqli=%27%29%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL--%20fAPK",
 "req_mthd": "GET",
-"res_type": "",
+"res_type": "image/png",
 "cache": "PASS",
 "res_status": 406,
 "res_bsize": 3362,
@@ -352,6 +354,7 @@ Veja abaixo uma lista dos nomes de campo usados em logs CDN, juntamente com uma 
 | *ttfb* | Abreviação de *Tempo até o Primeiro Byte*. O intervalo de tempo entre a solicitação iniciada até o ponto antes do corpo da resposta começar a ser transmitido. |
 | *cip* | O endereço IP do cliente. |
 | *rid* | O valor do cabeçalho da solicitação usado para identificar exclusivamente a solicitação. |
+| *ua* | O agente do usuário responsável por fazer uma determinada solicitação HTTP. |
 | *host* | A autoridade à qual a solicitação se destina. |
 | *url* | O caminho completo, incluindo parâmetros de consulta. |
 | *req_mthd* | Método HTTP enviado pelo cliente, como &quot;GET&quot; ou &quot;POST&quot;. |
