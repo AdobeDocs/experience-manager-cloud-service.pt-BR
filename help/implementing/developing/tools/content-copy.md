@@ -2,7 +2,7 @@
 title: A ferramenta de cópia de conteúdo
 description: A ferramenta de cópia de conteúdo permite que os usuários copiem conteúdo mutável sob demanda de seus ambientes de produção no AEM as a Cloud Service para ambientes inferiores para fins de teste.
 exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
-source-git-commit: f579539d582e2059fca20f9f7e5e82f4ae24c833
+source-git-commit: 639c49c69c87e7c408929f0d35a673a96a5cc5db
 workflow-type: tm+mt
 source-wordcount: '1308'
 ht-degree: 37%
@@ -39,7 +39,7 @@ Para usar a ferramenta de cópia de conteúdo, determinadas permissões são nec
 
 | Recurso de cópia de conteúdo | Grupo de administradores AEM | Função de gerente de implantação |
 |---|---|---|
-| Criar e modificar [conjuntos de conteúdo](#create-content-set) | Obrigatório | Não obrigatório |
+| Criar e modificar [conjuntos de conteúdo](#create-content-set) | Não obrigatório | Obrigatório |
 | Iniciar ou cancelar o [processo de cópia de conteúdo](#copy-content) | Obrigatório | Obrigatório |
 
 Para obter mais detalhes sobre permissões e como defini-las, consulte o documento [Equipe as a Cloud Service e perfis de produto do AEM.](/help/onboarding/aem-cs-team-product-profiles.md)
