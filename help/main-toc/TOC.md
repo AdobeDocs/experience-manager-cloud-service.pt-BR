@@ -8,10 +8,10 @@ user-guide-description: Saiba como o Experience Manager as a Cloud Service funci
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 0b79cc8ee956226e10cffdfec05c7c38caccaee0
+source-git-commit: 9c9e773d3ba69f5582bf75a30f50bd9c8aaa3272
 workflow-type: tm+mt
-source-wordcount: '4197'
-ht-degree: 98%
+source-wordcount: '4205'
+ht-degree: 97%
 
 ---
 
@@ -559,6 +559,7 @@ ht-degree: 98%
          + [Conectar suas fontes de dados ao Cloud Service](/help/forms/data-integration.md)
          + [Configurar fontes de dados](/help/forms/configure-data-sources.md)
          + [Configurar OData do [!DNL Microsoft Dynamics] ](/help/forms/ms-dynamics-odata-configuration.md)
+         + [Integração de aplicativos do Salesforce usando o fluxo de credenciais do cliente OAuth 2.0](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
          + [Configurar armazenamento do [!DNL Azure] ](/help/forms/configure-azure-storage.md)
          + [Configurar os serviços em nuvem do [!DNL Microsoft Dynamics 365] e do [!DNL Salesforce] ](/help/forms/configure-msdynamics-salesforce.md)
          + [Criar modelo de dados do formulário](/help/forms/create-form-data-models.md)
