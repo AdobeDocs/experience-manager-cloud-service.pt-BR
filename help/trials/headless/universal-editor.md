@@ -6,7 +6,7 @@ index: false
 source-git-commit: 9826041962a3a0065feb676b07304ba30d23d2e9
 workflow-type: tm+mt
 source-wordcount: '961'
-ht-degree: 4%
+ht-degree: 9%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 4%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor"
 >title="Edição em contexto"
->abstract="Veja como seus aplicativos headless podem aproveitar o Universal Editor para colocar em edição de contexto de baixa fricção na ponta dos dedos de seus autores."
+>abstract="Veja como seus aplicativos headless podem aproveitar o Universal Editor para trazer uma edição contextual e de baixo atrito ao alcance de seus autores."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide"
@@ -25,7 +25,7 @@ ht-degree: 4%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide_footer"
->title="Neste módulo, você aprendeu a personalizar o conteúdo no contexto e no local usando o Editor universal."
+>title="Neste módulo, você aprendeu a personalizar conteúdo para o contexto e local usando o Universal Editor."
 >abstract=""
 
 ## Editar texto no contexto {#edit-text}

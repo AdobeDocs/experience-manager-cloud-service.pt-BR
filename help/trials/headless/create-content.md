@@ -7,7 +7,7 @@ exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
 source-git-commit: 91e9711e10a7aa8e3c7fa0b4cc25a098741e53b1
 workflow-type: tm+mt
 source-wordcount: '702'
-ht-degree: 76%
+ht-degree: 82%
 
 ---
 
@@ -16,17 +16,17 @@ ht-degree: 76%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content"
->title="Criar conteúdo headless"
+>title="Criação de conteúdo headless"
 >abstract="Usando o modelo criado no módulo anterior, você aprenderá a criar conteúdo que pode ser usado para a criação de páginas ou como a base do seu conteúdo headless."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide"
 >title="Iniciar o console de fragmentos de conteúdo"
->abstract="Criar um conteúdo consistente, de alta qualidade e que funciona perfeitamente em seus aplicativos e sites oferece excelentes experiências ao cliente. Esse módulo orienta você na criação do seu primeiro conteúdo headless usando o console de Fragmentos de conteúdo.<br><br>Inicie esse módulo em uma nova guia clicando no botão abaixo e, em seguida, siga este guia."
+>abstract="Criar um conteúdo consistente, de alta qualidade e que funciona perfeitamente em seus aplicativos e sites oferece excelentes experiências ao cliente. Esse módulo orienta você na criação do seu primeiro conteúdo headless usando o console Fragmento de conteúdo.<br><br>Inicie esse módulo em uma nova guia clicando no botão abaixo e, em seguida, siga este guia."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide_footer"
->title="Excelente trabalho. Neste módulo, você aprendeu a criar conteúdo headless como um fragmento de conteúdo com base no modelo criado anteriormente. Agora você sabe como as equipes de conteúdo podem criar e gerenciar conteúdo para aplicativos e sites, independentemente dos ciclos de desenvolvimento."
+>title="Excelente trabalho. Nesse módulo, você aprendeu a criar conteúdo headless como um fragmento de conteúdo com base no modelo criado anteriormente. Agora você sabe como as equipes de conteúdo podem criar e gerenciar conteúdo para aplicativos e sites, independentemente dos ciclos de desenvolvimento."
 >abstract=""
 
 ## Criar um fragmento de conteúdo {#create-fragment}
