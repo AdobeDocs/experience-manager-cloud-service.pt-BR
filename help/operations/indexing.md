@@ -2,9 +2,9 @@
 title: Pesquisa e indexação de conteúdo
 description: Pesquisa e indexação de conteúdo
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: c19783ed4899772835a05856fc3a5601ef6a6df8
+source-git-commit: a16e627fc758c6aa8516b01aedd622da5b77318b
 workflow-type: tm+mt
-source-wordcount: '2309'
+source-wordcount: '2317'
 ht-degree: 35%
 
 ---
@@ -32,6 +32,7 @@ Limitações:
 * Atualmente, o gerenciamento de índice no AEM as a Cloud Service é compatível somente com índices do tipo `lucene`.
 * Somente os analisadores padrão são compatíveis (ou seja, os analisadores enviados com o produto). Não há compatibilidade com analisadores personalizados.
 * Internamente, outros índices podem ser configurados e usados para consultas. Por exemplo, consultas gravadas em relação ao índice `damAssetLucene` podem, no Skyline, ser executadas em uma versão Elasticsearch desse índice. Normalmente, essa diferença não é visível para o aplicativo e para o usuário. No entanto, certas ferramentas, como o `explain` relatório de recursos um índice diferente. Para ver as diferenças entre os índices Lucene e os índices Elastic, consulte [a documentação do Elastic no Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Os clientes não precisam e não podem configurar os índices de Elasticsearch diretamente.
+* Pesquisar por vetores de recursos semelhantes (`useInSimilarity = true`) não é compatível.
 
 ## Como usar {#how-to-use}
 
@@ -238,7 +239,7 @@ Depois de adicionar a nova definição de índice, implante o novo aplicativo us
 
 O gerenciamento de índice trata da adição, remoção e alteração de índices. Alterar a *definição* de um índice é uma tarefa rápida, mas aplicar essa alteração (o que geralmente é chamado de “criação de um índice” ou, para índices existentes, “reindexação”) requer tempo. Não é instantâneo: o repositório deve ser verificado para que os dados sejam indexados.
 
-### O que são implantações graduais {#what-are-rolling-deployments}
+### O que são Implantações Móveis {#what-are-rolling-deployments}
 
 Uma implantação contínua pode reduzir o tempo de inatividade. Ela também permite atualizações sem tempo de inatividade e reversões rápidas. A versão antiga do aplicativo é executada ao mesmo tempo que a nova versão do aplicativo.
 
