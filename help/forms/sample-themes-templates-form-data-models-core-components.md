@@ -7,9 +7,9 @@ role: Admin, User
 hide: true
 hidefromtoc: true
 level: Intermediate
-source-git-commit: 6abd681fbf0258029dd594d214a2480d73b21f57
+source-git-commit: 6cc7153c9754b6786a08c5fd378d72a8ab7c478d
 workflow-type: tm+mt
-source-wordcount: '1207'
+source-wordcount: '1200'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # Temas de amostra, modelos e modelos de dados de formulário nos Componentes principais {#sample-themes-templates-and-data-models}
 
-O AEM Forms as a Cloud Service fornece exemplos de temas de referência, modelos de dados de formulário e modelos para ajudar você a começar rapidamente a criar o Forms adaptável com componentes principais. Você pode [ativar os Componentes principais adaptáveis do Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html?lang=pt-BR) no ambiente de desenvolvimento as a Cloud Service e local do AEM Forms para obter modelos de OOTB de referência e para [usar e personalizar temas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) in [!DNL AEM Forms].
+O AEM Forms as a Cloud Service fornece exemplos de temas de referência, modelos de dados de formulário e modelos para ajudar você a começar rapidamente a criar o Forms adaptável com componentes principais. Você pode [ativar os Componentes principais adaptáveis do Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html?lang=pt-BR) no ambiente de desenvolvimento as a Cloud Service e local do AEM Forms para obter modelos de OOTB de amostra e [usar e personalizar temas de amostra](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) in [!DNL AEM Forms].
 
 Os exemplos de temas, modelos e modelos de dados de formulário incluídos no pacote de conteúdo de referência são:
 
@@ -26,14 +26,13 @@ Os exemplos de temas, modelos e modelos de dados de formulário incluídos no pa
 | Básico | Tela | Microsoft® Dynamics 365 |
 | Em branco | WKND | Salesforce |
 | Entre em contato | Cavalete |  |
+| Atualização dos detalhes de contato |   |   |
 | Formulário de consentimento | |  |
-| Gerar reclamação | | |
 | Registrar solicitação de serviço |  |  |
 | Fornecer feedback |  |  |
 | Inscrição em benefícios |  |   |
 | Resumo de benefícios do funcionário |   |   |
 | Solicitação de demonstrativo da conta |   |   |
-| Atualização dos detalhes de contato |   |   |
 | Formulário de inspeção de segurança |   |   |
 | Inspeção de controle de qualidade |   |   |
 | Solicitação de compra |  |  |
@@ -77,15 +76,15 @@ O modelo básico ajuda a criar rapidamente um formulário de experiência de ins
 
 >[!TAB Desktop]
 
-    ![Área de Trabalho Modelo Básica](assets/Basic-template-desktop-view.png)
+![Área de Trabalho de Modelo Básica](assets/Basic-template-desktop-view.png)
 
 >[!TAB Telefone]
 
-    ![Telefone do modelo básico](assets/Basic-template-phone-view.png)
+![Telefone do modelo básico](assets/Basic-temp-phone-view.png)
 
 >[!TAB Tablet]
 
-    ![Tablet de modelo básico](assets/Basic-template-tablet-view.png)
+![Tablet de modelo básico](assets/Basic-temp-tablet-view.png)
 
 >[!ENDTABS]
 
@@ -96,11 +95,9 @@ Um modelo de tela em branco é usado para criar uma estrutura de formulário ada
 
 ![Modelo em branco](assets/Blank-template.png)
 
-### Solicitação de Extrato de Conta {#Request-for-Account-Statement}
+### Entre em contato {#Contact-Us}
 
-O modelo de solicitação de demonstrativo de conta ajuda a criar um formulário que inicia o processo de obtenção de um demonstrativo preciso e atualizado dos clientes. O demonstrativo fornece um registro detalhado de transações financeiras, atividades ou outras informações relevantes sobre clientes que usam este formulário.
-
-![Solicitação de extrato de conta](assets/Request-for-account-statment.png)
+O modelo de formulário Fale conosco é usado para criar um formulário para facilitar a comunicação entre visitantes e administradores do site. Os usuários podem enviar consultas, feedback ou solicitações de suporte por meio do formulário.
 
 ### Atualização de detalhes de contato {#Contact-Details-Update}
 
@@ -108,38 +105,9 @@ Os autores do modelo de atualização de detalhes de contato ajudam a criar um f
 
 ![Contact-details-update](assets/Contact-details-update.png)
 
-### Inspeção de segurança {#Safety-Inspection}
-
-O modelo de formulário de inspeção de segurança ajuda a criar um formulário para inserir detalhes de um ambiente de trabalho seguro. Através da realização de inspeções regulares utilizando esta forma, podem ser identificados potenciais perigos. O formulário abrange vários aspectos, como saídas de emergência, segurança contra incêndio, segurança elétrica, materiais perigosos, equipamento de proteção individual, ergonomia de estação de trabalho para a segurança e o bem-estar de funcionários, visitantes e clientes.
-
-### Solicitação de compra {#Purchase-Request}
-
-O modelo de formulário de solicitação de compra ajuda a criar um formulário para iniciar o processo de aquisição e permite que os funcionários solicitem formalmente a compra de mercadorias ou serviços necessários para seu trabalho. O formulário captura detalhes essenciais como descrição do item, quantidade, fornecedor preferido (se aplicável), alocação de orçamento, justificativa para compra, informações de distribuição e aprovações necessárias.
-
-![solicitação-compra](assets/purchase-request.gif)
-
-### Resumo dos Benefícios do Funcionário {#Employee-Benefits-Summary}
-
-O modelo de formulário de resumo de benefícios do funcionário é usado para criar um formulário para reunir detalhes essenciais sobre os benefícios de um indivíduo. Ele ajuda a avaliar a cobertura de forma rápida e precisa, fornecendo uma visão geral abrangente para assistência e suporte eficientes.
-
-### Inscrição em Benefícios {#Benefits-Enrollment}
-
-O modelo de formulário de inscrição de benefícios é usado para criar um formulário para coletar informações essenciais de seus funcionários sobre seus benefícios preferidos e opções de cobertura. Normalmente, acompanha o período anual de inscrição de benefícios.
-
-
-### Inspeção de Controle de Qualidade {#Quality-Control-Inspection}
-
-O modelo de formulário de inspeção de controle de qualidade é usado para criar um formulário para avaliar e documentar a aparência visual, as dimensões, a funcionalidade, a documentação, os resultados de testes e a qualidade geral de um produto ou item. Ajuda a identificar defeitos, não-conformidades e ações corretivas necessárias para garantir a adesão aos padrões de qualidade.
-
-
 ### Formulário de consentimento {#Consent-Form}
 
 O modelo de formulário de consentimento é usado para criar um formulário para obter um documento legal dos participantes que participam de uma atividade específica, estudo de pesquisa, procedimento médico ou qualquer situação em que suas informações pessoais ou direitos possam estar envolvidos. O formulário garante a transparência, protege os direitos do participante e estabelece uma compreensão clara do que o indivíduo está concordando.
-
-
-### Entre em contato {#Contact-Us}
-
-O modelo de formulário Fale conosco é usado para criar um formulário para facilitar a comunicação entre visitantes e administradores do site. Os usuários podem enviar consultas, feedback ou solicitações de suporte por meio do formulário.
 
 ### Solicitação de serviço de log {#Log-Service-Request}
 
@@ -148,6 +116,34 @@ O modelo de solicitação de serviço de log ajuda a criar um formulário que so
 ### Fornecer Feedback {#Give-Feedback}
 
 Fornecer o modelo de formulário de feedback ajuda a criar um formulário para fornecer feedback construtivo a outra pessoa ou equipe. O formulário ajuda a garantir que o feedback seja claro, específico e acionável, promovendo a comunicação aberta e o aprimoramento.
+
+### Inscrição em Benefícios {#Benefits-Enrollment}
+
+O modelo de formulário de inscrição de benefícios é usado para criar um formulário para coletar informações essenciais de seus funcionários sobre seus benefícios preferidos e opções de cobertura. Normalmente, acompanha o período anual de inscrição de benefícios.
+
+### Resumo dos Benefícios do Funcionário {#Employee-Benefits-Summary}
+
+O modelo de formulário de resumo de benefícios do funcionário é usado para criar um formulário para reunir detalhes essenciais sobre os benefícios de um indivíduo. Ele ajuda a avaliar a cobertura de forma rápida e precisa, fornecendo uma visão geral abrangente para assistência e suporte eficientes.
+
+### Solicitação de Extrato de Conta {#Request-for-Account-Statement}
+
+O modelo de solicitação de demonstrativo de conta ajuda a criar um formulário que inicia o processo de obtenção de um demonstrativo preciso e atualizado dos clientes. O demonstrativo fornece um registro detalhado de transações financeiras, atividades ou outras informações relevantes sobre clientes que usam este formulário.
+
+![Solicitação de extrato de conta](assets/Request-for-account-statment.png)
+
+### Inspeção de segurança {#Safety-Inspection}
+
+O modelo de formulário de inspeção de segurança ajuda a criar um formulário para inserir detalhes de um ambiente de trabalho seguro. Através da realização de inspeções regulares utilizando esta forma, podem ser identificados potenciais perigos. O formulário abrange vários aspectos, como saídas de emergência, segurança contra incêndio, segurança elétrica, materiais perigosos, equipamento de proteção individual, ergonomia de estação de trabalho para a segurança e o bem-estar de funcionários, visitantes e clientes.
+
+### Inspeção de Controle de Qualidade {#Quality-Control-Inspection}
+
+O modelo de formulário de inspeção de controle de qualidade é usado para criar um formulário para avaliar e documentar a aparência visual, as dimensões, a funcionalidade, a documentação, os resultados de testes e a qualidade geral de um produto ou item. Ajuda a identificar defeitos, não-conformidades e ações corretivas necessárias para garantir a adesão aos padrões de qualidade.
+
+### Solicitação de compra {#Purchase-Request}
+
+O modelo de formulário de solicitação de compra ajuda a criar um formulário para iniciar o processo de aquisição e permite que os funcionários solicitem formalmente a compra de mercadorias ou serviços necessários para seu trabalho. O formulário captura detalhes essenciais como descrição do item, quantidade, fornecedor preferido (se aplicável), alocação de orçamento, justificativa para compra, informações de distribuição e aprovações necessárias.
+
+![solicitação-compra](assets/purchase-request.gif)
 
 ## Modelos de dados do formulário de referência {#reference-models}
 
