@@ -2,7 +2,7 @@
 title: Traduzir um formulário adaptável baseado nos Componentes principais
 description: Usar tradução automática ou tradução humana para traduzir um Formulário adaptável baseado em Componentes principais
 feature: Adaptive Forms
-source-git-commit: 8c125d834ebfff5601f56646d59ce00a80fcc0ba
+source-git-commit: 4f2a51502202fba3792cde370180d127f8e17418
 workflow-type: tm+mt
 source-wordcount: '882'
 ht-degree: 3%
