@@ -1,17 +1,17 @@
 ---
 title: Trabalho com fragmentos de conteúdo (Ativos - Fragmentos de conteúdo)
-description: Saiba como os fragmentos de conteúdo no Adobe Experience Manager (AEM) as a Cloud Service permitem projetar, criar, preparar e usar conteúdo independente de página, ideal para criação de páginas e entrega headless.
+description: Saiba como os fragmentos de conteúdo no Adobe Experience Manager (AEM) as a Cloud Service permitem projetar, criar, preparar e usar conteúdo independente de página, ideal para criação de páginas e entrega headless. Além disso, explica como eles podem ser usados junto com o MSM.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 0706c4a466db1d360b27868e3ab5c320a3ba24f8
 workflow-type: tm+mt
-source-wordcount: '2134'
-ht-degree: 89%
+source-wordcount: '2159'
+ht-degree: 88%
 
 ---
 
-# Trabalho com fragmentos de conteúdo {#working-with-content-fragments}
+# Trabalho com Fragmentos de conteúdo {#working-with-content-fragments}
 
-Com o Adobe Experience Manager (AEM) as a Cloud Service, os fragmentos de conteúdo permitem projetar, criar, preparar e [publicar conteúdo independente de página](/help/sites-cloud/authoring/fundamentals/content-fragments.md) Eles permitem preparar conteúdo pronto para uso em vários locais/canais, ideal para entrega headless.
+Com o Adobe Experience Manager (AEM) as a Cloud Service, os fragmentos de conteúdo permitem projetar, criar, preparar e [publicar conteúdo independente de página](/help/sites-cloud/authoring/fundamentals/content-fragments.md). Eles permitem preparar conteúdo pronto para uso em vários locais/canais, ideal para entrega headless. Eles também podem ser usados junto com [Gerenciamento de vários sites para permitir que você reutilize seu conteúdo](#reusing-content-fragments-with-msm-assets).
 
 Os fragmentos de conteúdo contêm conteúdo estruturado:
 
