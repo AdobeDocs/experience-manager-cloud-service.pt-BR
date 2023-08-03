@@ -7,9 +7,9 @@ role: Admin, User
 hide: true
 hidefromtoc: true
 level: Intermediate
-source-git-commit: 6cc7153c9754b6786a08c5fd378d72a8ab7c478d
+source-git-commit: b527e7499bfd995362b792ca1c57a2c92901739c
 workflow-type: tm+mt
-source-wordcount: '1200'
+source-wordcount: '1210'
 ht-degree: 3%
 
 ---
@@ -80,7 +80,7 @@ O modelo básico ajuda a criar rapidamente um formulário de experiência de ins
 
 >[!TAB Telefone]
 
-![Telefone do modelo básico](assets/Basic-temp-phone-view.png)
+![Telefone do modelo básico](assets/Basic-temp-phone-view.png){width:&quot;25%&quot;}
 
 >[!TAB Tablet]
 
@@ -93,7 +93,21 @@ O modelo básico ajuda a criar rapidamente um formulário de experiência de ins
 
 Um modelo de tela em branco é usado para criar uma estrutura de formulário adaptável, conteúdo e regras do zero. Nenhum componente de formulário é pré-incorporado no modelo em branco.
 
-![Modelo em branco](assets/Blank-template.png)
+>[!BEGINTABS]
+
+>[!TAB Desktop]
+
+![Área de Trabalho de Modelo em Branco](assets/Blank-temp-desktop-view.png)
+
+>[!TAB Telefone]
+
+![Telefone do modelo básico](assets/Blank-temp-phone-view.png){width:&quot;25%&quot;}
+
+>[!TAB Tablet]
+
+![Tablet de modelo básico](assets/Blank-temp-tablet-view.png)
+
+>[!ENDTABS]
 
 ### Entre em contato {#Contact-Us}
 
@@ -147,7 +161,7 @@ O modelo de formulário de solicitação de compra ajuda a criar um formulário 
 
 ## Modelos de dados do formulário de referência {#reference-models}
 
-Depois de criar uma [Formulário adaptável](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components) baseado em [Componente principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components), você pode conectar o back-end do seu formulário com os servidores de banco de dados Microsoft® Dynamics 365 e Salesforce para habilitar fluxos de trabalho de negócios. Por exemplo:
+Depois de criar uma [Formulário adaptável](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components) baseado em [Componente principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components), você pode conectar seu formulário ao banco de dados Microsoft® Dynamics 365 e servidores Salesforce para habilitar fluxos de trabalho de negócios. Por exemplo:
 
 * Grave dados no Microsoft® Dynamics 365 e Salesforce no envio do Formulário adaptável.
 * Grave dados no Microsoft® Dynamics 365 e Salesforce por meio de entidades personalizadas definidas no Modelo de dados de formulário e vice-versa.
