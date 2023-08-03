@@ -1,13 +1,13 @@
 ---
 title: Integração com o Adobe Target
-description: Integração com o Adobe Target
+description: Saiba como integrar o Adobe Target ao AEM as a Cloud Service.
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
+source-git-commit: f7ffe727ecc7f1331c1c72229a5d7f940070c011
 workflow-type: tm+mt
-source-wordcount: '1018'
-ht-degree: 67%
+source-wordcount: '1026'
+ht-degree: 66%
 
 ---
 

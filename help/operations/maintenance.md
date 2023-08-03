@@ -1,11 +1,11 @@
 ---
 title: Tarefas de manutenção no AEM as a Cloud Service
-description: Tarefas de manutenção no AEM as a Cloud Service
+description: Saiba mais sobre as tarefas de manutenção no AEM as a Cloud Service e como configurá-las.
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 19a3ebd981a7a62fe78a9ec909547b6a70c55121
+source-git-commit: f7ffe727ecc7f1331c1c72229a5d7f940070c011
 workflow-type: tm+mt
-source-wordcount: '1107'
-ht-degree: 63%
+source-wordcount: '1114'
+ht-degree: 62%
 
 ---
 

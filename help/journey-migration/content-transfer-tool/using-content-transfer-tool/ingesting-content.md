@@ -1,10 +1,10 @@
 ---
 title: Assimilar conteúdo no Target
-description: Assimilar conteúdo no Target
+description: Saiba como usar a ferramenta Transferência de conteúdo para assimilar conteúdo do seu conjunto de migração em uma instância Cloud Service.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 3f526b8096125fbcf13b73fe82b2da0f611fa6ca
+source-git-commit: f7ffe727ecc7f1331c1c72229a5d7f940070c011
 workflow-type: tm+mt
-source-wordcount: '1925'
+source-wordcount: '1941'
 ht-degree: 11%
 
 ---

@@ -1,13 +1,13 @@
 ---
 title: Integração com o Adobe Learning Manager
-description: Integração com o Adobe Learning Manager
+description: Saiba como integrar o Adobe Learning Manager aos sites do Adobe Experience Manager.
 feature: Administering
 role: Admin
 exl-id: 677c6d5a-0f8d-4012-96f3-e5491d66ef17
-source-git-commit: bdb7c8d6078d17d3ae54740fb564aa7145e8d623
+source-git-commit: f7ffe727ecc7f1331c1c72229a5d7f940070c011
 workflow-type: tm+mt
-source-wordcount: '78'
-ht-degree: 100%
+source-wordcount: '85'
+ht-degree: 85%
 
 ---
 
