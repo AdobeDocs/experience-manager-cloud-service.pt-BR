@@ -1,12 +1,12 @@
 ---
 title: Validação e depuração usando ferramentas do Dispatcher
-description: Validação e depuração usando ferramentas do Dispatcher
+description: Saiba mais sobre validação local, depuração, estrutura de arquivos do modo flexível e como migrar do modo herdado para o modo flexível.
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 127b79d766a4dfc33a2ed6016e191e771206d791
 workflow-type: tm+mt
-source-wordcount: '2847'
-ht-degree: 2%
+source-wordcount: '2861'
+ht-degree: 1%
 
 ---
 
