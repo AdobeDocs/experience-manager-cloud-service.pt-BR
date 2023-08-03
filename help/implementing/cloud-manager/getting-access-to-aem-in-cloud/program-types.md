@@ -2,10 +2,10 @@
 title: Programas e tipos de programas
 description: Saiba mais sobre a hierarquia do Cloud Manager e como os diferentes tipos de programas se encaixam em sua estrutura e a diferença entre eles.
 exl-id: 507df619-a5b5-419a-9e38-db77541425a2
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: fc14675e47e7a61bf36acb9a16756a593189b702
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 90%
+source-wordcount: '520'
+ht-degree: 88%
 
 ---
 
@@ -53,7 +53,7 @@ A única diferença é que o repositório Git remoto faz parte do Cloud Manager,
 
 ## Tipos de programas {#program-types}
 
-Um usuário pode criar um programa de **Sandbox** ou **Produção**.
+Um usuário pode criar um **produção** programa ou um **sandbox** programa.
 
 * Um **programa de produção** é criado para permitir o tráfego direto em seu site.
    * Consulte [Introdução aos programas de produção](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) para obter mais detalhes.
