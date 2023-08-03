@@ -7,7 +7,7 @@ role: Admin, User
 hide: true
 hidefromtoc: true
 level: Intermediate
-source-git-commit: b527e7499bfd995362b792ca1c57a2c92901739c
+source-git-commit: 2739b89da945cb96b35bfd33e683b5b5e98490d0
 workflow-type: tm+mt
 source-wordcount: '1210'
 ht-degree: 3%
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # Temas de amostra, modelos e modelos de dados de formulário nos Componentes principais {#sample-themes-templates-and-data-models}
 
-O AEM Forms as a Cloud Service fornece exemplos de temas de referência, modelos de dados de formulário e modelos para ajudar você a começar rapidamente a criar o Forms adaptável com componentes principais. Você pode [ativar os Componentes principais adaptáveis do Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html?lang=pt-BR) no ambiente de desenvolvimento as a Cloud Service e local do AEM Forms para obter modelos de OOTB de amostra e [usar e personalizar temas de amostra](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) in [!DNL AEM Forms].
+Os Componentes principais do AEM Forms fornecem exemplos de temas de referência, modelos e modelos de dados de formulário para ajudar você a começar rapidamente a criar o Forms adaptável com os Componentes principais. Você pode [ativar os Componentes principais adaptáveis do Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html?lang=pt-BR) no ambiente de desenvolvimento as a Cloud Service e local do AEM Forms para obter modelos de OOTB de amostra e [usar e personalizar temas de amostra](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) in [!DNL AEM Forms].
 
 Os exemplos de temas, modelos e modelos de dados de formulário incluídos no pacote de conteúdo de referência são:
 
@@ -47,20 +47,20 @@ Temas de amostra de referência ajudam os autores a definir e personalizar o est
 
 O tema da tela de desenho é o tema padrão para formulários e enfatiza o uso de cores básicas, transparência e ícones planos. Na captura de tela abaixo, você pode ver a aparência do tema da Tela.
 
-![Tema da tela de desenho](assets/canvas-theme.png)
+![Tema da tela de desenho](assets/Safety-Inspection-Theme-Canvas.png)
 
 ### WKND {#WKND}
 
 O tema da WKND incorpora um design animado, imaginativo e envolvente para mostrar uma aparência elegante para seus formulários. O tema é baseado na aparência e estilo de [Site da WKND](https://wknd.site/us/en.html) que é um site de viagem e aventura criado na [Componentes principais do Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction).
 
-![Tema WKND](assets/WKND-theme.png)
+![Tema WKND](assets/Safety-Inspection-Form-Theme.png)
 
 
 ### Cavalete {#Easel}
 
 O tema de cavalete ajuda a criar uma aparência de formulário atraente e fácil de configurar, ele é personalizado para simplicidade e facilidade de uso. O tema do cavalete é baseado no conceito em que um suporte portátil usado por artistas para suportar uma tela enquanto trabalham em suas pinturas.
 
-![Tema do cavalete](assets/Easel-theme.png)
+![Tema do cavalete](assets/Safety-Inspection-Theme-Easel.png)
 
 ## Modelos de amostra {#Sample-templates}
 
@@ -72,46 +72,19 @@ Os modelos definem a estrutura do formulário inicial, o conteúdo e as ações 
 
 O modelo básico ajuda a criar rapidamente um formulário de experiência de inscrição. Também é possível usá-lo para visualizar a funcionalidade do [Componentes principais adaptáveis do Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction). Ele fornece um layout de assistente para a apresentação de dados seção a seção.
 
->[!BEGINTABS]
-
->[!TAB Desktop]
-
-![Área de Trabalho de Modelo Básica](assets/Basic-template-desktop-view.png)
-
->[!TAB Telefone]
-
-![Telefone do modelo básico](assets/Basic-temp-phone-view.png){width:&quot;25%&quot;}
-
->[!TAB Tablet]
-
-![Tablet de modelo básico](assets/Basic-temp-tablet-view.png)
-
->[!ENDTABS]
-
+![Modelo básico](assets/Basic-template-desktop-view.png)
 
 ### Em branco {#Blank}
 
 Um modelo de tela em branco é usado para criar uma estrutura de formulário adaptável, conteúdo e regras do zero. Nenhum componente de formulário é pré-incorporado no modelo em branco.
 
->[!BEGINTABS]
-
->[!TAB Desktop]
-
-![Área de Trabalho de Modelo em Branco](assets/Blank-temp-desktop-view.png)
-
->[!TAB Telefone]
-
-![Telefone do modelo básico](assets/Blank-temp-phone-view.png){width:&quot;25%&quot;}
-
->[!TAB Tablet]
-
-![Tablet de modelo básico](assets/Blank-temp-tablet-view.png)
-
->[!ENDTABS]
+![Modelo em branco](assets/Blank-temp-desktop-view.png)
 
 ### Entre em contato {#Contact-Us}
 
 O modelo de formulário Fale conosco é usado para criar um formulário para facilitar a comunicação entre visitantes e administradores do site. Os usuários podem enviar consultas, feedback ou solicitações de suporte por meio do formulário.
+
+![Modelo Fale Conosco](assets/Contact-us-desktop-view.png)
 
 ### Atualização de detalhes de contato {#Contact-Details-Update}
 
@@ -123,21 +96,34 @@ Os autores do modelo de atualização de detalhes de contato ajudam a criar um f
 
 O modelo de formulário de consentimento é usado para criar um formulário para obter um documento legal dos participantes que participam de uma atividade específica, estudo de pesquisa, procedimento médico ou qualquer situação em que suas informações pessoais ou direitos possam estar envolvidos. O formulário garante a transparência, protege os direitos do participante e estabelece uma compreensão clara do que o indivíduo está concordando.
 
+![Formulário de consentimento](assets/Consent-form-desktop-view.png)
+
 ### Solicitação de serviço de log {#Log-Service-Request}
 
 O modelo de solicitação de serviço de log ajuda a criar um formulário que solicita serviços de log específicos de um provedor de serviços. O formulário serve como uma solicitação formal para criar um ticket para que determinados eventos, atividades ou dados sejam registrados para status de monitoramento ou rastreamento.
+
+![Modelo de Solicitação de Serviço de Log](assets/Log-service-request-desktop-view.png)
+
 
 ### Fornecer Feedback {#Give-Feedback}
 
 Fornecer o modelo de formulário de feedback ajuda a criar um formulário para fornecer feedback construtivo a outra pessoa ou equipe. O formulário ajuda a garantir que o feedback seja claro, específico e acionável, promovendo a comunicação aberta e o aprimoramento.
 
+![Fornecer Modelo de Feedback](assets/Give-feedback-desktop-view.png)
+
+
 ### Inscrição em Benefícios {#Benefits-Enrollment}
 
 O modelo de formulário de inscrição de benefícios é usado para criar um formulário para coletar informações essenciais de seus funcionários sobre seus benefícios preferidos e opções de cobertura. Normalmente, acompanha o período anual de inscrição de benefícios.
 
+![Modelo de Inscrição de Benefícios](assets/Benefits-enrollment-form-template.png)
+
+
 ### Resumo dos Benefícios do Funcionário {#Employee-Benefits-Summary}
 
 O modelo de formulário de resumo de benefícios do funcionário é usado para criar um formulário para reunir detalhes essenciais sobre os benefícios de um indivíduo. Ele ajuda a avaliar a cobertura de forma rápida e precisa, fornecendo uma visão geral abrangente para assistência e suporte eficientes.
+![Resumo dos Benefícios do Funcionário](assets/Employee-benefits-summary.png)
+
 
 ### Solicitação de Extrato de Conta {#Request-for-Account-Statement}
 
@@ -149,15 +135,20 @@ O modelo de solicitação de demonstrativo de conta ajuda a criar um formulário
 
 O modelo de formulário de inspeção de segurança ajuda a criar um formulário para inserir detalhes de um ambiente de trabalho seguro. Através da realização de inspeções regulares utilizando esta forma, podem ser identificados potenciais perigos. O formulário abrange vários aspectos, como saídas de emergência, segurança contra incêndio, segurança elétrica, materiais perigosos, equipamento de proteção individual, ergonomia de estação de trabalho para a segurança e o bem-estar de funcionários, visitantes e clientes.
 
+![Formulário de inspeção de segurança](assets/Safety-inspection-form.png)
+
 ### Inspeção de Controle de Qualidade {#Quality-Control-Inspection}
 
 O modelo de formulário de inspeção de controle de qualidade é usado para criar um formulário para avaliar e documentar a aparência visual, as dimensões, a funcionalidade, a documentação, os resultados de testes e a qualidade geral de um produto ou item. Ajuda a identificar defeitos, não-conformidades e ações corretivas necessárias para garantir a adesão aos padrões de qualidade.
+
+![Inspeção de Controle de Qualidade](assets/Quality-Control-Inspection.png)
+
 
 ### Solicitação de compra {#Purchase-Request}
 
 O modelo de formulário de solicitação de compra ajuda a criar um formulário para iniciar o processo de aquisição e permite que os funcionários solicitem formalmente a compra de mercadorias ou serviços necessários para seu trabalho. O formulário captura detalhes essenciais como descrição do item, quantidade, fornecedor preferido (se aplicável), alocação de orçamento, justificativa para compra, informações de distribuição e aprovações necessárias.
 
-![solicitação-compra](assets/purchase-request.gif)
+![purchase-request-form](assets/Purchase-request-form.png)
 
 ## Modelos de dados do formulário de referência {#reference-models}
 
