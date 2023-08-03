@@ -1,11 +1,11 @@
 ---
 title: Manutenção de um conector do AEM
-description: Saiba como atualizar o conector AEM após o envio inicial.
+description: Saiba como manter e atualizar o conector AEM após o envio inicial.
 exl-id: 8122a8c8-6577-4907-8f6e-52711eed3970
-source-git-commit: f7ffe727ecc7f1331c1c72229a5d7f940070c011
+source-git-commit: 5482e94bc1a2e7524eb699f2ae766ba40c138e91
 workflow-type: tm+mt
-source-wordcount: '169'
-ht-degree: 86%
+source-wordcount: '171'
+ht-degree: 85%
 
 ---
 

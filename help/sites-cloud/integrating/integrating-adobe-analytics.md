@@ -1,13 +1,13 @@
 ---
 title: Integração ao Adobe Analytics
-description: Saiba como integrar o Adobe Analytics ao AEM as a Cloud Service.
+description: Saiba como integrar o Adobe Analytics ao AEM as a Cloud Service usando a interface para toque e o Adobe Launch.
 feature: Administering
 role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
-source-git-commit: f7ffe727ecc7f1331c1c72229a5d7f940070c011
+source-git-commit: 5482e94bc1a2e7524eb699f2ae766ba40c138e91
 workflow-type: tm+mt
-source-wordcount: '566'
-ht-degree: 86%
+source-wordcount: '574'
+ht-degree: 85%
 
 ---
 
