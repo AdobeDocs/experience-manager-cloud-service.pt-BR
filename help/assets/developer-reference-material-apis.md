@@ -5,7 +5,7 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: a63a237e8da9260fa5f88060304b8cf9f508da7f
 workflow-type: tm+mt
 source-wordcount: '1899'
 ht-degree: 6%
@@ -75,6 +75,7 @@ Entrada [!DNL Experience Manager] as a [!DNL Cloud Service], você pode fazer up
 ![Visão geral do protocolo de upload binário direto](assets/add-assets-technical.png)
 
 >[!IMPORTANT]
+>
 Execute as etapas acima em um aplicativo externo e não dentro do [!DNL Experience Manager] JVM.
 
 A abordagem oferece uma manipulação escalável e mais eficiente de uploads de ativos. As diferenças em comparação com [!DNL Experience Manager] 6.5 são:
@@ -83,8 +84,11 @@ A abordagem oferece uma manipulação escalável e mais eficiente de uploads de 
 * O armazenamento na nuvem binário funciona com uma rede de entrega de conteúdo (CDN) ou uma rede de borda. Um CDN seleciona um endpoint de upload mais próximo de um cliente. Quando os dados percorrem uma distância menor até um terminal próximo, o desempenho do upload e a experiência do usuário melhoram, especialmente para equipes distribuídas geograficamente.
 
 >[!NOTE]
+>
 Consulte o código de cliente para implementar esta abordagem no código aberto [biblioteca aem-upload](https://github.com/adobe/aem-upload).
+>
 [!IMPORTANT]
+>
 Em determinadas circunstâncias, as alterações podem não se propagar totalmente entre as solicitações para o Experience Manager devido à natureza consistente do armazenamento no Cloud Service. Isso faz com que 404 respostas iniciem ou concluam chamadas de upload porque as criações de pasta necessárias não são propagadas. Os clientes devem esperar respostas 404 e lidar com elas implementando uma nova tentativa com uma estratégia de retirada.
 
 ### Iniciar upload {#initiate-upload}
@@ -154,6 +158,7 @@ Novamente, a maneira mais fácil e segura é simplesmente usar partes do tamanho
 Se o upload for bem-sucedido, o servidor responderá a cada solicitação com um `201` código de status.
 
 >[!NOTE]
+>
 Para obter mais informações sobre o algoritmo de upload, consulte [documentação oficial de recursos](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload) e [Documentação da API](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/api/binary/BinaryUpload.html) no projeto Apache Jackrabbit Oak.
 
 ### Carregamento completo {#complete-upload}
@@ -173,6 +178,7 @@ Depois que todas as partes de um arquivo binário forem carregadas, envie uma so
 | `fileSize` | Número | Opcional | O tamanho, em bytes, do arquivo. Se especificado, o tamanho do arquivo é incluído nos arquivos de log do sistema para análise de taxa de transferência. |
 
 >[!NOTE]
+>
 Se o ativo existir e não existir `createVersion` nem `replace` for especificado, então [!DNL Experience Manager] O atualiza a versão atual do ativo com o novo binário.
 
 Assim como no processo inicial, os dados completos da solicitação podem conter informações de mais de um arquivo.
@@ -187,6 +193,7 @@ Para saber mais sobre os algoritmos de upload ou criar seus próprios scripts e 
 * [Ferramenta de linha de comando de código aberto](https://github.com/adobe/aio-cli-plugin-aem).
 
 >[!NOTE]
+>
 A biblioteca de upload do aem e a ferramenta de linha de comando usam o [biblioteca node-httptransfer](https://github.com/adobe/node-httptransfer/)
 
 ### APIs de upload de ativos obsoletos {#deprecated-asset-upload-api}
@@ -196,13 +203,13 @@ A biblioteca de upload do aem e a ferramenta de linha de comando usam o [bibliot
 O novo método de upload é compatível somente com o [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]. As APIs do [!DNL Adobe Experience Manager] A versão 6.5 está obsoleta. Os métodos relacionados a fazer upload ou atualizar ativos ou representações (qualquer upload binário) foram descontinuados nas seguintes APIs:
 
 * [API HTTP do Experience Manager Assets](mac-api-assets.md)
-* `AssetManager` API Java, como `AssetManager.createAsset(..)`
+* `AssetManager` API Java, como `AssetManager.createAsset(..)`, `AssetManager.createAssetForBinary(..)`, `AssetManager.getAssetForBinary(..)`, `AssetManager.removeAssetForBinary(..)`, `AssetManager.createOrUpdateAsset(..)`, `AssetManager.createOrReplaceAsset(..)`
 
 >[!MORELIKETHIS]
+>
 * [Biblioteca de upload do aem de código aberto](https://github.com/adobe/aem-upload).
 * [Ferramenta de linha de comando de código aberto](https://github.com/adobe/aio-cli-plugin-aem).
 * [Documentação do Apache Jackrabbit Oak para upload direto](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload).
-
 
 ## Fluxos de trabalho de processamento e pós-processamento de ativos {#post-processing-workflows}
 
@@ -306,5 +313,5 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 * [Importação de metadados em massa](metadata-import-export.md)
 
 >[!MORELIKETHIS]
+>
 * [[!DNL Experience Cloud] as a [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
-
