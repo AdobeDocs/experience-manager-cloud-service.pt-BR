@@ -2,9 +2,9 @@
 title: Utilização do reCAPTCHA no Adaptive Forms
 description: Saiba como configurar o serviço Google reCAPTCHA no Adaptive Forms.
 topic-tags: adaptive_forms, author
-source-git-commit: 4b6c22667bb79bb6cac22675fa22f741b0262210
+source-git-commit: a1689c61715f01cb4eb62882dbcd6e202b74ffc9
 workflow-type: tm+mt
-source-wordcount: '1911'
+source-wordcount: '1913'
 ht-degree: 1%
 
 ---
@@ -106,7 +106,7 @@ Para usar o reCAPTCHA em formulários adaptáveis:
    >[!NOTE]
    >
    >* Não há suporte para o uso de mais de um componente Captcha em um formulário adaptável. Além disso, não é recomendável usar CAPTCHA em um painel marcado para carregamento lento ou em um fragmento.
-   >* O reCaptcha é sensível ao tempo e expira em cerca de um minuto. Portanto, é recomendável colocar o componente Captcha antes do botão Enviar no formulário adaptável.
+   >* O reCaptcha é sensível ao tempo e expira em cerca de dois minutos. Portanto, é recomendável colocar o componente Captcha antes do botão Enviar no formulário adaptável.
 
 1. Selecione o componente Captcha que você adicionou e toque em ![cmppr](assets/cmppr.png) para editar suas propriedades.
 1. Especifique um título para o widget CAPTCHA. O valor padrão é **Captcha**. Selecionar **Ocultar título** se não quiser que o título seja exibido.
