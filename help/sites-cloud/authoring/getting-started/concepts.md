@@ -1,11 +1,11 @@
 ---
 title: Conceitos de criação
-description: Conceitos de criação no AEM
+description: Saiba mais sobre os conceitos de criação no AEM, usando os ambientes de criação, visualização e publicação.
 exl-id: ee9e4952-e075-4398-b31f-d7886153efff
-source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
+source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
-source-wordcount: '385'
-ht-degree: 42%
+source-wordcount: '394'
+ht-degree: 40%
 
 ---
 

@@ -1,10 +1,10 @@
 ---
 title: Configuração do ContextHub
-description: Saiba como configurar o Context Hub.
+description: Saiba como configurar o Context Hub, uma estrutura para armazenar, manipular e apresentar dados de contexto.
 exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
-source-wordcount: '1680'
+source-wordcount: '1689'
 ht-degree: 1%
 
 ---

@@ -1,10 +1,10 @@
 ---
 title: Sua caixa de entrada
-description: Gerenciamento de tarefas com a caixa de entrada
+description: Saiba como usar as notificações que chegam em sua Caixa de entrada para gerenciar suas tarefas.
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
+source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '914'
 ht-degree: 70%
 
 ---

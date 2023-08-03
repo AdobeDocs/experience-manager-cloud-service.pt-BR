@@ -1,10 +1,10 @@
 ---
 title: Publicar páginas
-description: Como publicar e desfazer a publicação de páginas usando o AEM
+description: Saiba como publicar e desfazer a publicação de suas páginas usando vários mecanismos no AEM.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
-source-wordcount: '1802'
+source-wordcount: '1807'
 ht-degree: 71%
 
 ---

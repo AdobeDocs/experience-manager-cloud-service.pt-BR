@@ -1,11 +1,11 @@
 ---
 title: Pessoas certas, funções certas
-description: Pessoas certas, funções certas
+description: Saiba como escolher as pessoas certas e atribuí-las às funções certas para o seu projeto.
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
-source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
+source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
-source-wordcount: '847'
-ht-degree: 78%
+source-wordcount: '860'
+ht-degree: 76%
 
 ---
 

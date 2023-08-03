@@ -1,10 +1,10 @@
 ---
 title: Exportar fragmentos de experiência para o Adobe Target
-description: Exportar fragmentos de experiência para o Adobe Target
+description: Saiba como exportar fragmentos de experiência para o Adobe Target, testar e personalizar experiências.
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: 7905f21e70f373150775fe90d5faf02db4a59c32
+source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
-source-wordcount: '2245'
+source-wordcount: '2254'
 ht-degree: 97%
 
 ---

@@ -1,10 +1,10 @@
 ---
 title: Trabalhar com versões de páginas
-description: Criar, comparar e restaurar versões de uma página
+description: Saiba como criar, comparar e restaurar versões de suas páginas no AEM.
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
-source-wordcount: '1502'
+source-wordcount: '1507'
 ht-degree: 39%
 
 ---

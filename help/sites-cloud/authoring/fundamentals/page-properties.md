@@ -1,10 +1,10 @@
 ---
 title: Editar as propriedades da página
-description: Definir as propriedades obrigatórias de uma página
+description: Saiba como definir as propriedades necessárias para gerenciar uma página no AEM.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
-source-wordcount: '2341'
+source-wordcount: '2347'
 ht-degree: 81%
 
 ---
@@ -133,7 +133,7 @@ As propriedades são distribuídas por várias guias.
 
 * **SEO**
 
-   * **URL canônico** - pode ser usado para substituir o URL canônico da página; se deixado em branco, o URL da página será o seu URL canônico
+   * **URL canônico** - pode ser usado para substituir o URL canônico da página; se deixado em branco, o URL da página será seu URL canônico
 
    * **Tags de robôs**: seleciona as tags de robôs para controlar o comportamento dos rastreadores de mecanismos de pesquisa.
 
@@ -202,7 +202,7 @@ Essa guia só fica visível para páginas que servem como blueprints. Os bluepri
 
 * **Configurações de implantação** - Controla as circunstâncias sob as quais as modificações são propagadas no Live Copy
 
-### Live Copy  {#live-copy}
+### Live Copy {#live-copy}
 
 Essa guia só fica visível para páginas configuradas como Live Copies. Assim como os blueprints, as Live Copies fazem parte do [Gerenciamento de vários sites](/help/sites-cloud/administering/msm/overview.md).
 
