@@ -1,10 +1,10 @@
 ---
 title: Notas de versão do Adobe Experience Manager as a Cloud Service 2020.6.0
-description: Notas de versão do Experience Manager para 2020.6.0
+description: "[!DNL Adobe Experience Manager] Notas de versão as a Cloud Service para 2020.6.0."
 exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 9ceec0401b91bba2408bda89d4f2c486e2d51eec
 workflow-type: tm+mt
-source-wordcount: '1931'
+source-wordcount: '1933'
 ht-degree: 90%
 
 ---
@@ -62,7 +62,7 @@ Consulte esta seção para saber mais sobre as novidades e atualizações do Clo
 
   Consulte [Exclusão de um programa de sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=pt-BR) para obter mais detalhes.
 
-* Os usuários de programas de sandbox que estiverem exercendo a função de *Proprietário comercial* ou *Gerente de implantação* no Cloud Manager agora podem excluir seu conjunto de ambientes de produção e preparo na interface do Cloud Manager. A opção de exclusão agora está disponível no cartão Ambiente da **Visão geral dos programas** e a **Ambientes** página. Selecionar a opção de exclusão no ambiente de produção também exclui o ambiente de preparo no mesmo conjunto, e vice-versa.
+* Os usuários de programas de sandbox que estiverem exercendo a função de *Proprietário comercial* ou *Gerente de implantação* no Cloud Manager agora podem excluir seu conjunto de ambientes de produção e preparo na interface do Cloud Manager. A opção de exclusão agora está disponível no cartão Ambiente do **Visão geral dos programas** e a **Ambientes** página. Selecionar a opção de exclusão no ambiente de produção também exclui o ambiente de preparo no mesmo conjunto, e vice-versa.
 
   Consulte [Exclusão de um programa de sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=pt-BR) para obter mais detalhes.
 

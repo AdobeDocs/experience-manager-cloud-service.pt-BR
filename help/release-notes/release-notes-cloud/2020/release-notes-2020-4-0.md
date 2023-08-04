@@ -1,11 +1,11 @@
 ---
 title: Notas de versão do Adobe Experience Manager as a Cloud Service para 2020.4.0
-description: Notas de versão do Experience Manager para 2020.4.0
+description: "[!DNL Adobe Experience Manager] Notas de versão as a Cloud Service para 2020.4.0."
 exl-id: d98a3862-76fa-4b5b-b81a-333f5f532b67
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 9ceec0401b91bba2408bda89d4f2c486e2d51eec
 workflow-type: tm+mt
-source-wordcount: '646'
-ht-degree: 94%
+source-wordcount: '648'
+ht-degree: 93%
 
 ---
 
@@ -32,11 +32,11 @@ Saiba mais sobre novos recursos, melhorias e correções de erros do [!DNL Exper
 * Os usuários podem configurar [fluxos de trabalho pós-processamento](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) para início automático na interface do usuário [!UICONTROL Propriedades] da pasta para as hierarquias de pastas específicas.
    * A interface do usuário [!UICONTROL Propriedades] da pasta é simplificada, com a nova guia [!UICONTROL Processamento de ativos] que contém o perfil de metadados, o perfil de processamento e a nova configuração de fluxo de trabalho de início automático.
 
-      ![Os perfis de processamento podem ser facilmente aplicados a pastas e todos os ativos carregados nas pastas são processados usando esses perfis](/help/assets/assets/asset-processing-folder-properties.png)
+     ![Os perfis de processamento podem ser facilmente aplicados a pastas e todos os ativos carregados nas pastas são processados usando esses perfis](/help/assets/assets/asset-processing-folder-properties.png)
 
    * A opção de reprocessamento de ativos permite selecionar um perfil de processamento específico para reprocessar ativos selecionados pelo usuário nas subpastas.
 
-      ![Reprocessar ativos selecionados usando um perfil de processamento específico](/help/assets/assets/fpo-existing-asset-reprocess.gif)
+     ![Reprocessar ativos selecionados usando um perfil de processamento específico](/help/assets/assets/fpo-existing-asset-reprocess.gif)
 
    * [!DNL Dynamic Media]: adição da configuração de publicação seletiva para que os ativos sejam publicados automaticamente apenas para visualização segura. Além disso, os ativos podem ser publicados explicitamente no Experience Manager, sem publicação no DMS7 para entrega no domínio público.
 
@@ -51,7 +51,6 @@ Saiba mais sobre novos recursos, melhorias e correções de erros do [!DNL Exper
 >* [Configurar Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)
 >* [Configurar Experience Manager para funcionar com o Asset Link](https://helpx.adobe.com/br/enterprise/using/configure-aem-assets-for-asset-link.html)
 >* [Criar fluxo de trabalho no Experience Manager usando microsserviços de ativos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
-
 
 ## Novidades do Cloud Manager {#whats-new-cloud-manager}
 
