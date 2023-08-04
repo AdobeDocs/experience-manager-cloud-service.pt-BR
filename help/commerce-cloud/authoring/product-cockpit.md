@@ -1,10 +1,10 @@
 ---
 title: Cockpit do produto
-description: Trabalhar com a ferramenta Cockpit do produto
+description: Saiba como trabalhar com o Cockpit de produtos, que fornece uma visão geral unificada de catálogos de produtos vinculados e conteúdo associado.
 exl-id: 6dbf039c-e040-48f1-88f3-ebbd70cdf94d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: ba0c1e13f311f48ac138f2c3ca582835a4a83bf6
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '448'
 ht-degree: 1%
 
 ---

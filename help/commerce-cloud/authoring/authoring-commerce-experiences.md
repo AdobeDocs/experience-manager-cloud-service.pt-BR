@@ -1,10 +1,10 @@
 ---
 title: Criação de experiências de comércio
-description: Experiências comerciais de trabalho
+description: Saiba como criar e criar experiências relacionadas ao comércio com eficiência obtendo acesso aos dados e ao conteúdo do produto sem sair do contexto.
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: ba0c1e13f311f48ac138f2c3ca582835a4a83bf6
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '719'
 ht-degree: 1%
 
 ---

@@ -1,13 +1,13 @@
 ---
 title: Preparação de conteúdo para tradução
-description: Saiba como preparar conteúdo para tradução.
+description: Saiba como preparar conteúdo para tradução ao desenvolver sites multilíngues.
 feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a1a92f8767186ba9e93b6b30870ecfa9f3b3bc28
 workflow-type: tm+mt
-source-wordcount: '765'
-ht-degree: 95%
+source-wordcount: '769'
+ht-degree: 94%
 
 ---
 

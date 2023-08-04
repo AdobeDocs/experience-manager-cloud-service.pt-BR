@@ -1,11 +1,11 @@
 ---
 title: Ferramentas de desenvolvedor do AEM para Eclipse
-description: Ferramentas de desenvolvedor do AEM para Eclipse
+description: Saiba como usar as ferramentas de desenvolvedor do AEM para Eclipse, um plug-in Eclipse baseado no plug-in Eclipse para Apache Sling.
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a1a92f8767186ba9e93b6b30870ecfa9f3b3bc28
 workflow-type: tm+mt
-source-wordcount: '1183'
-ht-degree: 3%
+source-wordcount: '1199'
+ht-degree: 2%
 
 ---
 
