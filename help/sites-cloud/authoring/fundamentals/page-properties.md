@@ -2,10 +2,10 @@
 title: Editar as propriedades da página
 description: Saiba como definir as propriedades necessárias para gerenciar uma página no AEM.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+source-git-commit: 0183e14ad1653e98c06b19ea36c7e97dedccdb84
 workflow-type: tm+mt
-source-wordcount: '2347'
-ht-degree: 81%
+source-wordcount: '2281'
+ht-degree: 80%
 
 ---
 
@@ -294,18 +294,6 @@ Ao editar uma página, você pode usar as **Informações da página** para defi
 ### No console Sites - Várias páginas {#from-the-sites-console-multiple-pages}
 
 No console **Sites**, é possível selecionar várias páginas e usar **Propriedades de exibição** para exibir e/ou editar as propriedades da página. Isso é conhecido como edição em massa das propriedades da página.
-
->[!NOTE]
->
->A edição em massa de propriedades também está disponível no Assets. É muito semelhante, mas difere em alguns pontos. Consulte Editar propriedades de vários ativos para obter detalhes.
->
->Também existe o Editor de itens em massa, que permite que você pesquise o conteúdo de várias páginas usando o GQL (Google Query Language) e, em seguida, editar o conteúdo diretamente no editor de itens em massa antes de salvar as alterações para as páginas de origem.
-
-<!--
->Bulk editing of properties is also available for Assets. It is very similar, but differs in a few points. See [Editing Properties of Multiple Assets](/help/assets/managing-multiple-assets.md) for details.
->
->There is also the [Bulk Editor](/help/sites-administering/bulk-editor.md), which allows you to search for content from multiple pages using GQL (Google Query Language) and then edit the content directly in the bulk editor before saving your changes to the originating pages.
--->
 
 Você pode selecionar várias páginas para a edição em massa por meio de vários métodos, incluindo:
 
