@@ -1,10 +1,10 @@
 ---
 title: Referência de predicado do construtor de consultas
-description: Referência de predicado para a API do Construtor de consultas.
+description: Referência de predicado para a API do Construtor de consultas no AEM as a Cloud Service.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '2246'
+source-wordcount: '2252'
 ht-degree: 2%
 
 ---

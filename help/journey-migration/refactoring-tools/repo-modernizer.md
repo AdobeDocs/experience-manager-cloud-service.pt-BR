@@ -1,11 +1,11 @@
 ---
 title: Modernizador de repositório
-description: Modernizador de repositório
+description: Saiba como reestruturar pacotes de projetos existentes e torná-los compatíveis com a estrutura do projeto definida para o Adobe Experience Manager as a Cloud Service.
 exl-id: cd9d212e-e720-4209-8b5a-659883cc1d95
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 6%
+source-wordcount: '324'
+ht-degree: 5%
 
 ---
 

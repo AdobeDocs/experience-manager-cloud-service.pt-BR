@@ -1,11 +1,11 @@
 ---
 title: Extrair conteúdo da origem
-description: Extrair conteúdo da origem
+description: Saiba como extrair conteúdo de uma instância de AEM de origem para transferi-lo posteriormente para uma instância de Cloud Service AEM.
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 27%
+source-wordcount: '718'
+ht-degree: 26%
 
 ---
 

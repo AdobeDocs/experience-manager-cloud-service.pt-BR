@@ -1,10 +1,10 @@
 ---
 title: Exclusão de um conjunto de migração na ferramenta Transferência de conteúdo
-description: Exclusão de um conjunto de migração na ferramenta Transferência de conteúdo
+description: Saiba como excluir um conjunto de migração na Ferramenta de transferência de conteúdo.
 exl-id: 7ec1c5ca-bac7-4617-8068-78569d7cb503
-source-git-commit: c61407d70fb65a7fdc72174881b23db4deca556a
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '235'
 ht-degree: 8%
 
 ---

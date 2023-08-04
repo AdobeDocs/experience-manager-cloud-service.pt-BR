@@ -1,11 +1,11 @@
 ---
 title: Armazenamento em cache no AEM as a Cloud Service
-description: Armazenamento em cache no AEM as a Cloud Service
+description: Saiba mais sobre as noções básicas de armazenamento em cache no AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '2795'
+source-wordcount: '2800'
 ht-degree: 2%
 
 ---

@@ -1,11 +1,11 @@
 ---
 title: Implantação do AEM as a Cloud Service
-description: Implantação do AEM as a Cloud Service
+description: Saiba mais sobre os fundamentos e as práticas recomendadas da implantação no AEM as a Cloud Service
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '3462'
+source-wordcount: '3470'
 ht-degree: 45%
 
 ---

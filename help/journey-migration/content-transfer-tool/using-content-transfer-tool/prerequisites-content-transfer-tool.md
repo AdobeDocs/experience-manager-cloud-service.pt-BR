@@ -1,11 +1,11 @@
 ---
 title: Pré-requisitos para a ferramenta Transferência de conteúdo
-description: Pré-requisitos para a ferramenta Transferência de conteúdo
+description: Familiarize-se com os pré-requisitos da Ferramenta de transferência de conteúdo
 exl-id: 41a9cff1-4d89-480c-b9fc-5e8efc2a0705
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 18%
+source-wordcount: '553'
+ht-degree: 17%
 
 ---
 

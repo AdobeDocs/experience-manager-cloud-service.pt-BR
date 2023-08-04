@@ -1,9 +1,9 @@
 ---
 title: Visão geral do transformador de conteúdo
-description: Visão geral do transformador de conteúdo
-source-git-commit: 55eedd342f048e19bad5c6fbfdd16a468ff1f4f9
+description: Saiba como detectar e corrigir problemas relacionados ao conteúdo relatados pelo BPA usando o Transformador de conteúdo.
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '393'
 ht-degree: 2%
 
 ---
