@@ -7,9 +7,9 @@ role: Admin, User
 hide: true
 hidefromtoc: true
 level: Intermediate
-source-git-commit: 2739b89da945cb96b35bfd33e683b5b5e98490d0
+source-git-commit: 2b290be134be05bc15891082e8b54efef62076d0
 workflow-type: tm+mt
-source-wordcount: '1210'
+source-wordcount: '1277'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # Temas de amostra, modelos e modelos de dados de formulário nos Componentes principais {#sample-themes-templates-and-data-models}
 
-Os Componentes principais do AEM Forms fornecem exemplos de temas de referência, modelos e modelos de dados de formulário para ajudar você a começar rapidamente a criar o Forms adaptável com os Componentes principais. Você pode [ativar os Componentes principais adaptáveis do Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html?lang=pt-BR) no ambiente de desenvolvimento as a Cloud Service e local do AEM Forms para obter modelos de OOTB de amostra e [usar e personalizar temas de amostra](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) in [!DNL AEM Forms].
+[!DNL AEM Forms] Os Componentes principais fornecem exemplos de temas, modelos e modelos de dados de formulário prontos para uso para criar formulários adaptáveis versáteis rapidamente. Isso também ajuda os autores de formulários a aprender a extensibilidade, adaptabilidade e capacidade de resposta do [Componentes principais do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-br) criar formulários simples, rápidos e complexos facilmente enquanto se conecta ao banco de dados de maneira simples.
 
 Os exemplos de temas, modelos e modelos de dados de formulário incluídos no pacote de conteúdo de referência são:
 
@@ -39,7 +39,13 @@ Os exemplos de temas, modelos e modelos de dados de formulário incluídos no pa
 
 ## Temas de exemplo {#Sample-Themes}
 
-Temas de amostra de referência ajudam os autores a definir e personalizar o estilo para formulários, os autores com até mesmo um conhecimento básico de CSS podem personalizar o tema de acordo com os requisitos. Autores do formulário [ativar os Componentes principais adaptáveis do Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html?lang=pt-BR) no ambiente de desenvolvimento as a Cloud Service e local do AEM Forms para obter esses temas descritos da seguinte maneira:
+Temas de amostra de referência ajudam os autores a definir e personalizar o estilo para formulários, os autores com até mesmo um conhecimento básico de CSS podem personalizar o tema de acordo com os requisitos.
+
+**Como obter estes temas?**
+* Para ativar esses temas **Forms as a Cloud Service** ambiente, [ativar os Componentes principais adaptáveis do Forms](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html) e use o [pipeline de front-end](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) para implantar esses temas.
+* Para obter esses temas em uma **AEM 6.5 Forms** ambiente, [ativar os Componentes principais adaptáveis do Forms](https://experienceleague.corp.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html) e use o [gerenciador de pacotes](https://experienceleague.corp.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-or-customize-themes-for-adaptive-forms-core-components) para implantar esses temas.
+
+A variável **pronto para uso** [Componentes principais do formulário adaptável](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-br) os temas são descritos da seguinte forma:
 
 ![Temas OOTB](assets/OOTB-themes.png)
 
@@ -51,7 +57,7 @@ O tema da tela de desenho é o tema padrão para formulários e enfatiza o uso d
 
 ### WKND {#WKND}
 
-O tema da WKND incorpora um design animado, imaginativo e envolvente para mostrar uma aparência elegante para seus formulários. O tema é baseado na aparência e estilo de [Site da WKND](https://wknd.site/us/en.html) que é um site de viagem e aventura criado na [Componentes principais do Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction).
+O tema da WKND incorpora um design animado, imaginativo e envolvente para mostrar uma aparência elegante para seus formulários. O tema é baseado na aparência e estilo de [Site da WKND](https://wknd.site/us/en.html) que é um site de viagem e aventura criado na [Componentes principais do Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-br).
 
 ![Tema WKND](assets/Safety-Inspection-Form-Theme.png)
 
@@ -64,7 +70,12 @@ O tema de cavalete ajuda a criar uma aparência de formulário atraente e fácil
 
 ## Modelos de amostra {#Sample-templates}
 
-Os modelos definem a estrutura do formulário inicial, o conteúdo e as ações a serem replicadas no formulário ou usam uma estrutura de modelo semelhante ao formulário, por exemplo, o formulário de Consentimento, o formulário de inscrição em Benefícios e muito mais. Você pode obter os seguintes modelos ao [ativação dos Componentes principais adaptáveis do Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html?lang=pt-BR) no ambiente de desenvolvimento as a Cloud Service ou local do AEM Forms. Os modelos de amostra nos Componentes principais do Adaptive Forms são:
+Os modelos definem a estrutura do formulário inicial, o conteúdo e as ações a serem replicadas no formulário ou usam uma estrutura de modelo semelhante ao formulário, por exemplo, o formulário de Consentimento, o formulário de inscrição em Benefícios e muito mais.
+
+**Como obter esses modelos?**
+É possível obter os modelos implantando um [Arquétipo AEM 43 ou projeto posterior](https://github.com/adobe/aem-project-archetype) ao seu **AEM Forms as a Cloud Service** ou **AEM 6.5** ambiente do Forms.
+
+A variável **pronto para uso** [Componentes principais do formulário adaptável](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-br) os modelos são descritos da seguinte forma:
 
 ![Modelos de referência](assets/reference-templates-core-components.png)
 
@@ -82,7 +93,7 @@ Um modelo de tela em branco é usado para criar uma estrutura de formulário ada
 
 ### Entre em contato {#Contact-Us}
 
-O modelo de formulário Fale conosco é usado para criar um formulário para facilitar a comunicação entre visitantes e administradores do site. Os usuários podem enviar consultas, feedback ou solicitações de suporte por meio do formulário.
+O modelo de formulário Fale conosco é usado para criar um formulário para facilitar a comunicação entre os visitantes do site e os administradores do formulário. Os usuários podem enviar consultas, feedback ou solicitações de suporte por meio do formulário.
 
 ![Modelo Fale Conosco](assets/Contact-us-desktop-view.png)
 
@@ -100,7 +111,7 @@ O modelo de formulário de consentimento é usado para criar um formulário para
 
 ### Solicitação de serviço de log {#Log-Service-Request}
 
-O modelo de solicitação de serviço de log ajuda a criar um formulário que solicita serviços de log específicos de um provedor de serviços. O formulário serve como uma solicitação formal para criar um ticket para que determinados eventos, atividades ou dados sejam registrados para status de monitoramento ou rastreamento.
+O modelo de solicitação de serviço de log ajuda a criar um formulário que solicita serviços de log específicos de um provedor de serviços. O formulário serve como uma solicitação formal para criar um ticket para eventos, atividades ou dados registrados para status de monitoramento ou rastreamento.
 
 ![Modelo de Solicitação de Serviço de Log](assets/Log-service-request-desktop-view.png)
 
@@ -152,7 +163,7 @@ O modelo de formulário de solicitação de compra ajuda a criar um formulário 
 
 ## Modelos de dados do formulário de referência {#reference-models}
 
-Depois de criar uma [Formulário adaptável](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components) baseado em [Componente principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components), você pode conectar seu formulário ao banco de dados Microsoft® Dynamics 365 e servidores Salesforce para habilitar fluxos de trabalho de negócios. Por exemplo:
+Depois de criar uma [Formulário adaptável](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#adaptive-forms-core-components) baseado em [Componente principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction#adaptive-forms-core-components), você pode conectar seu formulário ao banco de dados Microsoft® Dynamics 365 e servidores Salesforce para habilitar fluxos de trabalho de negócios. Por exemplo:
 
 * Grave dados no Microsoft® Dynamics 365 e Salesforce no envio do Formulário adaptável.
 * Grave dados no Microsoft® Dynamics 365 e Salesforce por meio de entidades personalizadas definidas no Modelo de dados de formulário e vice-versa.
@@ -164,4 +175,4 @@ Você pode obter os seguintes Modelos de dados de formulário instalando o [Paco
 * Microsoft® Dynamics 365
 * Salesforce
 
-Para obter informações sobre como usar esses modelos, consulte [Configurar os serviços em nuvem do Microsoft® Dynamics 365 e Salesforce](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=en#configure-dynamics-cloud-service)
+Para obter informações sobre como usar esses modelos, consulte [Configurar os serviços em nuvem do Microsoft® Dynamics 365 e Salesforce](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html#configure-dynamics-cloud-service)
