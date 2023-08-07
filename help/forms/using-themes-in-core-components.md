@@ -4,9 +4,9 @@ description: Você pode usar temas para estilizar e fornecer uma identidade visu
 seo-description: You can create a new theme by customizing the available theme. The themes are customized and deployed using frontend pipeline.
 keywords: criar novo tema, personalizar tema, carregar novo tema, usar tema em formulários, personalizar tema usando pipeline de front-end
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 1cec6e01e72cb286949f64749e2386a2b652920e
+source-git-commit: fc0ff8cff8c616bc5576d834883aa0fe38ef593e
 workflow-type: tm+mt
-source-wordcount: '2697'
+source-wordcount: '2711'
 ht-degree: 2%
 
 ---
@@ -417,6 +417,7 @@ Se você quiser fornecer informações como uma imagem de logotipo, o nome da em
 * [Definir layout de formulários para diferentes tamanhos de tela e tipos de dispositivo](/help/sites-cloud/authoring/features/responsive-layout.md)
 * [Gerar documento de registro para o Forms adaptável (componentes principais)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Criar um Forms adaptável com seções repetíveis](/help/forms/create-forms-repeatable-sections.md)
+* [Modelos de temas de amostra e modelos de dados de formulário](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
 
 
 ## Artigo relacionado {#related-article}

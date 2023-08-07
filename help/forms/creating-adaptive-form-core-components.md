@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 57acac078805bc195cb10c1e94462d5aa077b1af
+source-git-commit: e6358044af395ee0fc785db3531465a3a6fbd5d5
 workflow-type: tm+mt
-source-wordcount: '2266'
+source-wordcount: '2280'
 ht-degree: 6%
 
 ---
@@ -188,6 +188,7 @@ Você pode usar o serviço de preenchimento do modelo de dados de formulário pa
 * [Criar estilo ou temas para seus formulários](using-themes-in-core-components.md)
 * [Adicionar comportamento dinâmico a formulários usando o editor de regras](rule-editor.md)
 * [Definir layout de formulários para diferentes tamanhos de tela e tipos de dispositivo](/help/sites-cloud/authoring/features/responsive-layout.md)
+* [Modelos de temas de amostra e modelos de dados de formulário](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
 
 
 ## Artigo relacionado {#related-article}
