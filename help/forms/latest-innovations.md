@@ -2,9 +2,9 @@
 title: Descubra as mais recentes inovações no Adobe Experience Manager Forms as a Cloud Service.
 description: "Descubra os recursos mais recentes da [!DNL AEM Forms] as a Cloud Service para criar, gerenciar e publicar formulários e processos de negócios de nível corporativo."
 exl-id: 3a90b0aa-369a-4350-9904-79ef656b0f9a
-source-git-commit: 8c125d834ebfff5601f56646d59ce00a80fcc0ba
+source-git-commit: 57acac078805bc195cb10c1e94462d5aa077b1af
 workflow-type: tm+mt
-source-wordcount: '1184'
+source-wordcount: '1164'
 ht-degree: 9%
 
 ---
@@ -21,11 +21,6 @@ An organization can sign up for [!DNL AEM Forms] as a Cloud Service and start us
 
 
 # Principais inovações do Adobe Experience Manager Forms {#latest-innovations}
-
-| Versão | Link do artigo |
-| -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/release-notes-new-features/whats-new.html) |
-| AEM as a Cloud Service | Este artigo |
 
 Algumas das principais inovações do Adobe Experience Manager Forms incluem:
 
