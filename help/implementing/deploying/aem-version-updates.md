@@ -3,10 +3,10 @@ title: Atualizações de versão do AEM
 description: Saiba como o AEM as a Cloud Service usa integração e entrega contínuas (CI/CD) para manter seus projetos na versão mais recente.
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: dd567c484d71e25de1808f784c455cfb9b124fbf
+source-git-commit: 635b4adeab8d93b7c7335453b04d8b78ef3a0496
 workflow-type: tm+mt
-source-wordcount: '622'
-ht-degree: 11%
+source-wordcount: '800'
+ht-degree: 9%
 
 ---
 
@@ -58,6 +58,37 @@ Da mesma forma, se uma atualização automatizada de um ambiente de desenvolvime
 >[!NOTE]
 >
 >Se o código personalizado foi enviado para preparo e não para produção, a próxima atualização do AEM removerá essas alterações para refletir a tag git da última versão bem-sucedida do cliente para produção. Portanto, o código personalizado que estava disponível somente no preparo terá que ser implantado novamente.
+
+## Práticas recomendadas {#best-practices}
+
+* 
+   * **Uso do ambiente de preparo**
+   * Use um ambiente diferente (não Preparo) para ciclos longos de QA/UAT.
+   * Após a conclusão do teste de sanidade no preparo, mova para verificar na produção.
+
+* 
+   * **Pipeline de produção**
+   * Pause antes de implantar na produção.
+   * Cancelar o pipeline depois que uma implantação de preparo indicar que o código é &quot;um descartável&quot; e não um candidato válido para produção, consulte [Configuração de um pipeline de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
+
+* 
+   * **Pipelines de não produção**
+* Configurar [Pipeline de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code).
+* 
+   * Acelerar a velocidade/frequência de entrega para falhas de pipeline de produção.  Identifique problemas em pipelines de não produção ativando o Teste funcional do produto, o Teste funcional personalizado e o Teste de interface do usuário personalizada.
+
+* 
+   * **Cópia de conteúdo**
+   * Uso [Cópia de conteúdo](/help/implementing/developing/tools/content-copy.md) para mover conjuntos de conteúdo semelhantes para um ambiente de não produção.
+
+* 
+   * **Teste funcional automatizado**
+* Inclua testes automatizados em seu pipeline para testar a funcionalidade crítica.
+* [Teste funcional do cliente](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) e [Testes de interface do usuário personalizados](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) estão bloqueando, se falharem, a liberação do AEM não será lançada.
+
+## Regressão {#regression}
+
+Se você encontrar um problema relacionado à regressão, gere um caso de suporte por meio do Admin Console.  Se o problema for um bloqueador e estiver afetando a Produção, um P1 deverá ser gerado.  Forneça todos os detalhes necessários para reproduzir o problema de regressão.
 
 ## Armazenamento de nó composto {#composite-node-store}
 
