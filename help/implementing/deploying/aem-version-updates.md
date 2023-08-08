@@ -3,9 +3,9 @@ title: Atualizações de versão do AEM
 description: Saiba como o AEM as a Cloud Service usa integração e entrega contínuas (CI/CD) para manter seus projetos na versão mais recente.
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: 635b4adeab8d93b7c7335453b04d8b78ef3a0496
+source-git-commit: ca91e969014415e872ecf8e42fe86ffc9ca41e10
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '801'
 ht-degree: 9%
 
 ---
@@ -19,9 +19,7 @@ Saiba como o AEM as a Cloud Service usa integração e entrega contínuas (CI/CD
 
 O AEM as a Cloud Service usa integração contínua e entrega contínua (CI/CD) para garantir que seus projetos estejam na versão AEM mais atual. Esse processo atualiza com facilidade suas instâncias de produção, preparo e desenvolvimento sem causar interrupções para os usuários.
 
-Antes que suas instâncias sejam atualizadas automaticamente, uma nova versão de manutenção do AEM é publicada com 3 a 5 dias de antecedência. Durante esse período, é possível optar por
-[acionar atualizações manuais para suas instâncias de desenvolvimento](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment).
-Depois que esse tempo transcorrer, as atualizações de versão serão aplicadas automaticamente aos ambientes de desenvolvimento primeiro. Se a atualização for bem-sucedida, o processo de atualização continuará nas instâncias de estágio e produção. As instâncias de desenvolvimento e preparo atuam como um quality gate (portal de qualidade) automatizado, em que seus testes personalizados são executados antes que a atualização seja aplicada em seu ambiente de produção.
+Antes que suas instâncias sejam atualizadas automaticamente, uma nova versão de manutenção do AEM é publicada com 3 a 5 dias de antecedência. Durante esse período, é possível optar por [acionar atualizações manuais para suas instâncias de desenvolvimento](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment). Após esse tempo, as atualizações de versão são aplicadas automaticamente aos ambientes de desenvolvimento primeiro. Se a atualização for bem-sucedida, o processo de atualização continuará nas instâncias de estágio e produção. As instâncias de desenvolvimento e de preparo atuam como um quality gate (portal de qualidade) automatizado, em que os testes personalizados são executados antes que a atualização seja aplicada ao ambiente de produção.
 
 >[!NOTE]
 >
@@ -44,13 +42,9 @@ Há dois tipos de atualizações de versão do AEM:
 
 ## Falha ao atualizar {#update-failure}
 
-As atualizações do AEM passam por um pipeline de validação de produto intenso e totalmente automatizado, envolvendo várias etapas, garantindo que não haja interrupção do serviço para nenhum sistema em produção.
-As verificações de integridade são usadas para monitorar a integridade do aplicativo.
-Se essas verificações falharem durante uma atualização as a Cloud Service do AEM, a liberação não continuará e o Adobe investigará por que a atualização causou esse comportamento inesperado.
+As atualizações do AEM passam por um pipeline de validação de produto intenso e totalmente automatizado, envolvendo várias etapas, garantindo que não haja interrupção do serviço para nenhum sistema em produção. As verificações de integridade são usadas para monitorar a integridade do aplicativo. Se essas verificações falharem durante uma atualização as a Cloud Service do AEM, a liberação não continuará e o Adobe investigará por que a atualização causou esse comportamento inesperado.
 
-Ao implantar uma nova versão de um código personalizado de em seus ambientes,
-[Testes funcionais de produto e personalizados](/help/implementing/cloud-manager/overview-test-results.md#functional-testing)
-desempenhar um papel crucial para assegurar que os sistemas de produção se mantêm estáveis e funcionais mesmo após a aplicação de uma alteração. Esses testes também são aproveitados no processo de atualização da versão do AEM.
+Ao implantar uma nova versão de um código personalizado de em seus ambientes, [Testes funcionais de produto e personalizados](/help/implementing/cloud-manager/overview-test-results.md#functional-testing) desempenhar um papel crucial para assegurar que os sistemas de produção se mantêm estáveis e funcionais mesmo após a aplicação de uma alteração. Esses testes também são aproveitados no processo de atualização da versão do AEM.
 
 Se a atualização para o ambiente de produção falhar, o Cloud Manager reverterá automaticamente o ambiente de preparo. Isso é feito automaticamente para garantir que, após a conclusão de uma atualização, os ambientes de preparo e de produção estejam na mesma versão do AEM.
 Da mesma forma, se uma atualização automatizada de um ambiente de desenvolvimento falhar, os ambientes de preparo e produção não serão atualizados.
