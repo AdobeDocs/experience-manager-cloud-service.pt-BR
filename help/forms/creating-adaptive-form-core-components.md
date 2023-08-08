@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: e6358044af395ee0fc785db3531465a3a6fbd5d5
+source-git-commit: 910c0dd53fa1890ac61b2f14fc4380a0dfbca76c
 workflow-type: tm+mt
-source-wordcount: '2280'
+source-wordcount: '2342'
 ht-degree: 6%
 
 ---
@@ -42,13 +42,21 @@ Você precisa do seguinte para criar um Formulário adaptável:
    * A variável `blank` O modelo de está incluído em todos os novos programas do AEM Forms as a Cloud Service.
    * É possível instalar o pacote de referência, por meio do Gerenciador de pacotes, para adicionar o `blank` para o seu programa AEM Forms as a Cloud Service.
    * Também é possível [criar um novo modelo do Forms adaptável (Componentes principais)](template-editor.md) do zero.
+   * Também é possível implantar a amostra [modelos](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components) ao seu ambiente. Isso o ajuda a começar a criar formulários rapidamente.
 
-* **Um tema de formulário adaptável**: um tema contém detalhes de estilo para os componentes e painéis. Os estilos incluem propriedades como cores de fundo, cores de estado, transparência, alinhamento e tamanho. Quando você aplica um tema, o estilo especificado é refletido nos componentes correspondentes.  A variável `Canvas` O modelo de está incluído em todos os novos programas do AEM Forms as a Cloud Service.
+* **Um tema de formulário adaptável**: um tema contém detalhes de estilo para os componentes e painéis. Os estilos incluem propriedades como cores de fundo, cores de estado, transparência, alinhamento e tamanho. Quando você aplica um tema, o estilo especificado é refletido nos componentes correspondentes.  A variável `Canvas` O modelo de está incluído em todos os novos programas do AEM Forms as a Cloud Service. Também é possível implantar a amostra [temas](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components) ao seu ambiente. Isso o ajuda a começar a estilizar seus formulários e a fornecer uma estrutura básica para criar ou personalizar um tema de acordo com os requisitos da empresa.
+
   <!-- * You can install the reference package, via package manager, to add the `Canvas` template to your AEM Forms as a Cloud Service program.
     * You can also [create a new Adaptive Forms theme (Core Components)](template-editor.md) and deploy it to your AEM Forms as a Cloud Service program. -->
 
 * **Permissões**: adicionar usuários ao [!DNL forms-users] grupo. Os membros da [!DNL forms-users] grupo tem permissões para criar um Formulário adaptável. Para obter uma lista detalhada de grupos de usuários específicos de formulários, consulte [Grupos e permissões](forms-groups-privileges-tasks.md).
 
+<!--
+>[!NOTE]
+>
+>
+> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) to your AEM environment for use in Core Components based Adaptive Forms.
+-->
 
 ## Criar um Formulário adaptável  {#create-an-adaptive-form-core-components}
 
