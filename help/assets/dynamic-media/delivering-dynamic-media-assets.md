@@ -1,14 +1,14 @@
 ---
 title: Entregar ativos do Dynamic Media
-description: Saiba como fornecer ativos do Dynamic Media.
+description: Saiba como fornecer ativos do Dynamic Media para suas páginas da Web por meio de vídeos e imagens incorporados ou vinculando URLs ao seu aplicativo da Web.
 contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 0e452bd94d75609ecc3c20ab6b56ded968ed0a70
 workflow-type: tm+mt
-source-wordcount: '319'
-ht-degree: 7%
+source-wordcount: '335'
+ht-degree: 9%
 
 ---
 
@@ -22,7 +22,7 @@ Com o Dynamic Media, você tem várias opções:
 * Se o site não estiver no Experience Manager, você terá a opção de:
 
    * Incorporar o vídeo ou a imagem no site.
-   * Vincule URLs ao aplicativo da Web. Use a vinculação quando quiser fornecer um reprodutor de vídeo como uma janela pop-up ou modal.
+   * Vincular URLs ao seu aplicativo web. Use a vinculação quando quiser fornecer um reprodutor de vídeo como uma janela pop-up ou modal.
    * Se o site for responsivo, você poderá [fornecer imagens otimizadas](/help/assets/dynamic-media/responsive-site.md).
 
 >[!NOTE]

@@ -1,14 +1,14 @@
 ---
 title: Publicar ativos do Dynamic Media
-description: Saiba como publicar ativos do Dynamic Media.
+description: Saiba como publicar vídeos e ativos de imagem do Dynamic Media para incluí-los em uma página da Web por meio de um URL ou código incorporado em uma página da Web.
 contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 8ee759dc-cb8f-4e80-8175-2c3ba06da862
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
+source-git-commit: 0e452bd94d75609ecc3c20ab6b56ded968ed0a70
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 5%
+source-wordcount: '486'
+ht-degree: 4%
 
 ---
 
@@ -22,7 +22,7 @@ No **[!UICONTROL Exibição de cartão]**, um pequeno ícone de globo aparece lo
 
 >[!NOTE]
 >
->Se um ativo já tiver sido publicado, você o move para outra pasta e republica do novo local, o local do ativo original publicado ainda estará disponível, junto com o ativo recém-republicado. No entanto, o ativo original publicado é &quot;perdido&quot; para o Experience Manager e não pode ter a publicação desfeita. Portanto, como prática recomendada, cancele a publicação de ativos antes de movê-los para uma pasta diferente.
+>Se um ativo já tiver sido publicado, você o move para outra pasta e republica de seu novo local, o local do ativo original publicado ainda estará disponível, junto com o ativo recém-republicado. No entanto, o ativo original publicado é &quot;perdido&quot; para o Experience Manager e não pode ter a publicação desfeita. Portanto, como prática recomendada, cancele a publicação de ativos antes de movê-los para uma pasta diferente.
 
 Se você pretende publicar ativos de vídeo imediatamente após codificá-los, certifique-se de que a codificação foi feita. Quando os vídeos estão sendo codificados, o sistema informa que um fluxo de trabalho de processamento de vídeo está em andamento. Quando a codificação do vídeo for concluída, você poderá pré-visualizar as representações do vídeo. Nesse ponto, é seguro publicar os vídeos sem incorrer em erros de publicação.
 
@@ -35,7 +35,6 @@ Consulte também [Incorporação do visualizador de vídeo do Dynamic Media ou d
 >* Os ativos devem ser publicados para usar o URL. Se os ativos não forem publicados, copiar e colar o URL em um navegador não funcionará.
 >* As predefinições de imagem e do visualizador devem ser ativadas e publicadas para entrega em tempo real.
 >
-
 
 Para obter informações detalhadas sobre a publicação de um conjunto ou ativo, consulte [Publicar ativos](/help/assets/manage-digital-assets.md).
 

@@ -1,6 +1,6 @@
 ---
 title: Configurar o Dynamic Media Publish para o servidor de imagens
-description: Saiba como configurar a publicação no Dynamic Media.
+description: Saiba como configurar a configuração de publicação do Dynamic Media para o Servidor de imagens, cobrindo, entre outras coisas, o gerenciamento de cores, a segurança e as imagens em miniatura.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
@@ -9,9 +9,9 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: b0891095-e4a9-4dd5-8dfd-a576bc47d082
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 0e452bd94d75609ecc3c20ab6b56ded968ed0a70
 workflow-type: tm+mt
-source-wordcount: '3481'
+source-wordcount: '3493'
 ht-degree: 3%
 
 ---
