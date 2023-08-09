@@ -2,10 +2,10 @@
 title: Criação de conteúdo com o Editor universal
 description: Saiba como é fácil e intuitivo para os autores criarem conteúdo utilizando o Editor universal.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 481202760e0d22cde9c32e0b781dc99f67d463e4
+source-git-commit: e03bf6437b72a4fe7e959a23f12f0baa892fa567
 workflow-type: tm+mt
-source-wordcount: '1939'
-ht-degree: 35%
+source-wordcount: '2271'
+ht-degree: 30%
 
 ---
 
@@ -213,20 +213,6 @@ Ao selecionar um Fragmento de conteúdo, os detalhes dele são exibidos no paine
 >
 >Usar a tecla de atalho `C` para alternar para o modo de componente.
 
-#### Editar {#edit}
-
-Quando em [modo componente,](#component-mode) se você selecionar um [Fragmento de conteúdo,](/help/assets/content-fragments/content-fragments.md) a opção editar é exibida no painel modo.
-
-![Ícone Editar](assets/edit.png)
-
-Tocar ou clicar no botão de edição abre o [Editor de fragmento de conteúdo](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) em uma nova guia, que permite acessar todo o potencial do Editor de fragmento de conteúdo.
-
-Também é possível editar detalhes do fragmento de conteúdo na [painel de componentes](#edit-content-fragment) dependendo das necessidades do seu fluxo de trabalho.
-
->[!TIP]
->
->Usar a tecla de atalho `E` para editar um componente selecionado.
-
 ### O editor {#editor}
 
 O editor ocupa a maior parte da janela e é onde a página especificada em [a barra de localização](#location-bar) é renderizado.
@@ -258,7 +244,7 @@ Observe que nem todos os componentes têm detalhes que podem ser mostrados e/ou 
 >
 >Usar a tecla de atalho `D` para alternar para o modo de propriedades.
 
-#### Modo de árvore de conteúdo {#Content-tree-mode}
+#### Modo de árvore de conteúdo {#content-tree-mode}
 
 No modo de árvore de conteúdo, o painel mostra a hierarquia do conteúdo da página.
 
@@ -272,6 +258,43 @@ Ao selecionar um item na árvore de conteúdo, o editor rola até esse conteúdo
 >
 >Usar a tecla de atalho `F` para alternar para o modo de árvore de conteúdo.
 
+#### Editar {#edit}
+
+Quando em [modo componente,](#component-mode) se você selecionar um [Fragmento de conteúdo,](/help/assets/content-fragments/content-fragments.md) a opção editar é exibida no painel de componentes.
+
+![Ícone Editar](assets/edit.png)
+
+Tocar ou clicar no botão de edição abre o [Editor de fragmento de conteúdo](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) em uma nova guia, que permite acessar todo o potencial do Editor de fragmento de conteúdo.
+
+Também é possível editar detalhes do Fragmento do conteúdo no painel de componentes, dependendo das necessidades do fluxo de trabalho.
+
+>[!TIP]
+>
+>Usar a tecla de atalho `E` para editar um componente selecionado.
+
+#### Adicionar {#add}
+
+Se você selecionar um componente de contêiner na árvore de conteúdo ou no editor, a opção adicionar aparecerá no painel de componentes.
+
+![Ícone Adicionar](assets/ue-add-component-icon.png)
+
+Tocar ou clicar no botão adicionar abre um menu suspenso de componentes disponíveis para [adicionar ao contêiner selecionado.](#adding-components)
+
+>[!TIP]
+>
+>Usar a tecla de atalho `A` para adicionar um componente a um componente de contêiner selecionado.
+
+#### Excluir {#delete}
+
+Se você selecionar um componente em um componente de contêiner na árvore de conteúdo ou no editor, a opção de exclusão aparecerá no painel de componentes.
+
+![Ícone Excluir](assets/ue-delete-component-icon.png)
+
+Tocar ou clicar no botão Excluir [exclui o componente.](#deleting-components)
+
+>[!TIP]
+>
+>Usar a tecla de atalho `Shift+Backspace` para excluir um componente selecionado de um container.
 
 ## Editar o conteúdo {#editing-content}
 
@@ -332,6 +355,38 @@ Os campos definidos no modelo de conteúdo do fragmento de conteúdo selecionado
 As alterações são salvas no conteúdo automaticamente.
 
 Se quiser editar o fragmento de conteúdo na caixa [Editor de fragmento de conteúdo](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) clique no link [botão editar](#edit) no painel de modos.
+
+### Adicionar componentes a contêineres {#adding-components}
+
+1. Selecione um componente de container na árvore de conteúdo ou no editor.
+1. Em seguida, toque ou clique no ícone adicionar no painel de componentes.
+
+   ![Selecionar um componente para adicionar a um contêiner](assets/ue-add-component.png)
+
+O componente é inserido no container e pode ser editado no editor.
+
+### Exclusão de componentes de contêineres {#deleting-components}
+
+1. Selecione um componente de container na árvore de conteúdo ou no editor.
+1. Toque ou clique no ícone de divisa do contêiner para expandir seu conteúdo na árvore de conteúdo.
+1. Em seguida, na árvore de conteúdo, selecione um componente no contêiner.
+1. Toque ou clique no ícone Excluir no painel de componentes.
+
+   ![Exclusão de um componente](assets/ue-delete-component.png)
+
+O componente selecionado foi excluído.
+
+### Reorganização de componentes em contêineres {#reordering-components}
+
+1. Selecione um componente de container na árvore de conteúdo ou no editor.
+1. Se ainda não estiver em [modo de árvore de conteúdo,](#content-tree-mode) mude para ele.
+1. Toque ou clique no ícone de divisa do contêiner para expandir seu conteúdo na árvore de conteúdo.
+1. Arraste os ícones de alça ao lado dos componentes dentro do contêiner para mostrar que você pode reorganizá-los. Arraste os componentes para reordená-los no contêiner.
+
+   ![Reorganização de componentes](assets/ue-reordering-components.png)
+1. O componente arrastado fica cinza na árvore de componentes, enquanto o ponto de inserção é representado por uma linha azul. Libere o componente para colocá-lo em seu novo local.
+
+Os componentes são reordenados na árvore de conteúdo e no editor
 
 ## Visualização de conteúdo {#previewing-content}
 
