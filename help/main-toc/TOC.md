@@ -8,9 +8,9 @@ user-guide-description: Saiba como o Experience Manager as a Cloud Service funci
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 5022e392a570ac28944824ab193a1cc8d390d757
+source-git-commit: ca3c4bae2e652d75190d68c76b1dd4e09239f16c
 workflow-type: tm+mt
-source-wordcount: '4226'
+source-wordcount: '4230'
 ht-degree: 97%
 
 ---
@@ -223,6 +223,7 @@ ht-degree: 97%
          + [Diretrizes e práticas recomendadas para usar a ferramenta Transferência de conteúdo](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
          + [Introdução à ferramenta Transferência de conteúdo](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
          + [Validar transferências de conteúdo](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md)
+         + [Migração de grupos de usuários fechados](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md)
          + [Lidar com grandes repositórios de conteúdo](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
          + [Mapeamento de usuários e migração principal](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)
          + [Extrair conteúdo da origem](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)

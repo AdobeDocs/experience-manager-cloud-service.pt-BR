@@ -2,9 +2,9 @@
 title: Mapeamento de usuários e migração principal
 description: Visão geral do mapeamento de usuários e da migração principal no AEM as a Cloud Service.
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: 83c6c3c8c069059e49b632f332e24946e1712cb7
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '855'
 ht-degree: 10%
 
 ---
@@ -57,6 +57,7 @@ Os seguintes casos específicos são registrados:
 * Se a configuração **Apagar conteúdo existente na instância da nuvem antes da assimilação** estiver definido, os usuários já transferidos na instância do Cloud Service serão excluídos juntamente com todo o repositório existente. E um novo repositório é criado para onde o conteúdo é assimilado. Esse processo também redefine todas as configurações, incluindo permissões na instância do Cloud Service de destino, e é verdadeiro para um usuário administrador adicionado à **administradores** grupo. O usuário administrador deve ser lido na caixa **administradores** grupo para recuperar o token de acesso para CTT.
 * Quando atualizações complementares de conteúdo são executadas, se o conteúdo não for transferido porque não foi alterado desde a transferência anterior, os usuários e grupos associados a esse conteúdo também não serão transferidos. Essa regra é verdadeira mesmo se os usuários e grupos tiverem sido alterados enquanto isso. Isso ocorre porque usuários e grupos são migrados junto com o conteúdo ao qual estão associados.
 * Se a instância de destino do AEM Cloud Service tiver um usuário com um nome de usuário diferente, mas com o mesmo endereço de email de um dos usuários na instância de origem do AEM e o Mapeamento de usuário estiver ativado, os logs registrarão uma mensagem de erro. Além disso, o usuário AEM de origem não é transferido, pois somente um usuário com determinado endereço de email é permitido no sistema de destino.
+* Consulte [Migração de grupos de usuários fechados](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) para considerações adicionais sobre grupos usados em uma política de Grupo fechado de usuários (CUG).
 
 ## Resumo final e relatório {#final-report}
 

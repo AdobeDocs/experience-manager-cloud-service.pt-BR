@@ -2,9 +2,9 @@
 title: Validar transferências de conteúdo
 description: Usar a ferramenta Transferência de conteúdo para validar as transferências de conteúdo
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 83c6c3c8c069059e49b632f332e24946e1712cb7
 workflow-type: tm+mt
-source-wordcount: '1055'
+source-wordcount: '1077'
 ht-degree: 2%
 
 ---
@@ -163,3 +163,7 @@ Para verificar, escolha um caminho no relatório de validação e verifique se e
 Alguns caminhos dos resumos de extração e assimilação são excluídos de propósito para manter o tamanho desses arquivos gerenciável, com o objetivo de poder calcular o resultado da validação de migração dentro de duas horas após a conclusão da assimilação.
 
 Os caminhos que atualmente excluímos dos resumos incluem: `cqdam.text.txt` representações, nós dentro `/home`e nós dentro de `/jcr:system`.
+
+### Grupos de usuários fechados não estão funcionando {#validating-cugs}
+
+Consulte [Migração de grupos de usuários fechados](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) para considerações extras ao usar uma política de Grupo de usuários fechado (CUG).

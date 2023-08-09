@@ -2,9 +2,9 @@
 title: Diretrizes e práticas recomendadas para usar a ferramenta Transferência de conteúdo
 description: Diretrizes e práticas recomendadas para usar a ferramenta Transferência de conteúdo
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 83c6c3c8c069059e49b632f332e24946e1712cb7
 workflow-type: tm+mt
-source-wordcount: '1544'
+source-wordcount: '1562'
 ht-degree: 19%
 
 ---
@@ -35,7 +35,7 @@ As versões anteriores à 2.0.0 não serão mais suportadas, e é aconselhável 
 
 As diretrizes e práticas recomendadas a seguir se aplicam à nova versão da ferramenta Transferência de conteúdo:
 
-* É aconselhável executar a [Limpeza de revisão](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html) e as [verificações de consistência do armazenamento de dados](https://helpx.adobe.com/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html) no repositório de **origem** para identificar possíveis problemas e reduzir o tamanho do repositório.
+* É aconselhável executar a [Limpeza de revisão](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=pt-BR) e as [verificações de consistência do armazenamento de dados](https://helpx.adobe.com/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html) no repositório de **origem** para identificar possíveis problemas e reduzir o tamanho do repositório.
 
 * Na fase de assimilação, é recomendável executar a assimilação usando o *varrer* modo ativado em que o repositório existente (autor ou publicação) no ambiente do AEM Cloud Service de destino é completamente excluído e depois atualizado com os dados do conjunto de migração. Esse modo é muito mais rápido que o modo sem limpeza, no qual o conjunto de migração é aplicado sobre o conteúdo atual.
 
@@ -73,7 +73,7 @@ Siga a seção abaixo para entender as considerações importantes ao executar a
 
 * A ferramenta Transferência de conteúdo (CTT) não executa nenhum tipo de análise de conteúdo antes de transferir o conteúdo da instância de origem para a instância de destino. Por exemplo, a CTT não diferencia entre conteúdo publicado e não publicado ao assimilar conteúdo em um ambiente de publicação. Qualquer conteúdo especificado no conjunto de migração é assimilado na instância de destino escolhida. O usuário pode assimilar um conjunto de migração em uma instância de Autor ou instância de Publicação, ou ambos. É recomendável que, ao mover o conteúdo para uma instância de Produção, a CTT seja instalada na instância do Autor de origem para mover o conteúdo para a instância do Autor de destino e, de forma semelhante, instale a CTT na instância de Publicação de origem para mover o conteúdo para a instância de Publicação de destino. Consulte [Execução da ferramenta Transferência de conteúdo em uma instância de publicação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#running-tool) para obter mais detalhes.
 
-* Os usuários e grupos transferidos pela ferramenta Transferência de conteúdo são apenas aqueles exigidos pelo conteúdo para atender às permissões. A variável _Extração_ o processo copia todo o `/home` no conjunto de migração e faz o Mapeamento de usuários, adicionando um campo criado a partir do endereço de email de cada usuário. Para obter mais informações, consulte [Mapeamento de usuários e migração de entidade de segurança](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md). A variável _Assimilação_ O processo copia todos os usuários e grupos referenciados nas ACLs de conteúdo migradas.
+* Os usuários e grupos transferidos pela ferramenta Transferência de conteúdo são apenas aqueles exigidos pelo conteúdo para atender às permissões. A variável _Extração_ o processo copia todo o `/home` no conjunto de migração e faz o Mapeamento de usuários, adicionando um campo criado a partir do endereço de email de cada usuário. Para obter mais informações, consulte [Mapeamento de usuários e migração de entidade de segurança](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md). A variável _Assimilação_ O processo copia todos os usuários e grupos referenciados nas ACLs de conteúdo migradas. Consulte [Migração de grupos de usuários fechados](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) para considerações adicionais sobre grupos usados em uma política de Grupo fechado de usuários (CUG).
 
 * Durante a fase de extração, a ferramenta Transferência de conteúdo é executada em uma instância de origem do AEM ativa.
 
