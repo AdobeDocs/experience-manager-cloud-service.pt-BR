@@ -2,10 +2,10 @@
 title: Implantação de código
 description: Saiba como implantar seu código usando os pipelines do Cloud Manager no AEM as a Cloud Service.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 2d1d3ac98f8fe40ba5f9ab1ccec946c8448ddc43
 workflow-type: tm+mt
-source-wordcount: '1189'
-ht-degree: 89%
+source-wordcount: '1193'
+ht-degree: 67%
 
 ---
 
@@ -126,34 +126,41 @@ Todas as implantações do Cloud Service seguem um processo gradual para garanti
 >
 >O cache do Dispatcher é limpo em cada implantação. Em seguida, ele é aquecido antes que os novos nós de publicação aceitem o tráfego.
 
-## Reexecutar uma implantação em produção {#Reexecute-Deployment}
+## Reexecução de uma implantação em produção {#reexecute-deployment}
 
-A reexecução da etapa de implantação em produção é compatível com execuções em que a etapa de implantação em produção foi concluída. O tipo de conclusão não é importante – a implantação pode ser cancelada ou malsucedida. Dito isso, espera-se que o principal caso de uso seja aquele em que a etapa de implantação em produção falhou por motivos transitórios. A reexecução cria uma nova execução usando o mesmo pipeline. Essa nova execução consiste em três etapas:
+Em casos raros, as etapas de implantação de produção podem falhar por motivos transitórios. Nesses casos, a reexecução da etapa de implantação de produção é compatível, desde que a etapa de implantação de produção tenha sido concluída, independentemente do tipo de conclusão (por exemplo, cancelada ou malsucedida). A reexecução cria uma nova execução usando o mesmo pipeline que consiste em três etapas.
 
-1. A etapa de validação – é essencialmente a mesma validação que ocorre durante uma execução normal do pipeline.
-1. A etapa de compilação – no contexto de uma reexecução, a etapa de compilação é a cópia dos artefatos, sem executar um novo processo de compilação.
-1. A etapa de implantação em produção – usa a mesma configuração e as mesmas opções da etapa de implantação em produção de uma execução normal do pipeline.
+1. A etapa de validação - É basicamente a mesma validação que ocorre durante uma execução normal do pipeline.
+1. A etapa de criação - No contexto de uma reexecução, a etapa de criação copia artefatos e não executa realmente um novo processo de criação.
+1. A etapa de implantação de produção - Usa as mesmas configurações e opções que a etapa de implantação de produção em uma execução normal de pipeline.
 
-A etapa de compilação pode ser rotulada de forma um pouco diferente na interface do usuário para refletir que está copiando artefatos, não os recompilando.
+Nessas circunstâncias, quando uma reexecução for possível, a página de status do pipeline de produção fornecerá a **Reexecutar** opção ao lado da usual **Baixar log de compilação** opção.
 
-![Reimplantar](assets/Re-deploy.png)
+![A opção Reexecutar na janela de visão geral do pipeline](assets/re-execute.png)
 
-Limitações:
+>[!NOTE]
+>
+>Em uma reexecução, a etapa de criação é rotulada na interface para refletir que está copiando artefatos, não os reconstruindo.
 
-* A reexecução da etapa de implantação em produção somente estará disponível na última execução.
-* A reexecução não estará disponível para execuções de atualização por push. Se a última execução for uma execução de atualização por push, não será possível iniciar uma reexecução.
-* Se a última execução for uma execução de atualização por push, não será possível iniciar uma reexecução.
+### Limitações {#limitations}
+
+* A reexecução da etapa de implantação de produção só estará disponível para a última execução.
+* A reexecução não estará disponível para execuções de atualização por push.
+   * Se a última execução for uma execução de atualização por push, não será possível iniciar uma reexecução.
 * Se a última execução falhar em qualquer ponto antes da etapa de implantação em produção, não será possível iniciar uma reexecução.
 
-### API de reexecução {#Reexecute-API}
+### API de reexecução {#reexecute-API}
 
-### Como identificar a se uma reexecução foi iniciada
+Além de estar disponível na interface do usuário do, você pode usar [a API do Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) para acionar reexecuções, bem como identificar execuções que foram acionadas como reexecuções.
 
-Para identificar se uma execução foi reexecutada, analise o campo do acionador. Seu valor é *RE_EXECUTAR*.
+#### Acionar uma reexecução {#reexecute-deployment-api}
 
-### Acionamento de uma nova execução
+Para acionar uma reexecução, faça uma solicitação PUT para o link HAL `https://ns.adobe.com/adobecloud/rel/pipeline/reExecute` no estado da etapa de implantação em produção.
 
-Para acionar uma reexecução, uma solicitação PUT precisa ser feita ao Link HAL &lt;(<https://ns.adobe.com/adobecloud/rel/pipeline/reExecute>)> o estado da etapa de implantação em produção. Se esse link estiver presente, a execução poderá ser reiniciada dessa etapa. Se estiver ausente, a execução não poderá ser reiniciada dessa etapa. Na versão inicial, esse link somente estará presente na etapa de implantação em produção, mas versões futuras poderão oferecer suporte para iniciar o pipeline a partir de outras etapas. Exemplo:
+* Se esse link estiver presente, a execução poderá ser reiniciada dessa etapa.
+* Se estiver ausente, a execução não poderá ser reiniciada dessa etapa.
+
+Esse link só está disponível para a etapa de implantação em produção.
 
 ```JavaScript
  {
@@ -190,7 +197,10 @@ Para acionar uma reexecução, uma solicitação PUT precisa ser feita ao Link H
   "status": "FINISHED"
 ```
 
+A sintaxe do valor href do link HAL é apenas um exemplo. O valor real sempre deve ser lido do link HAL, e não gerado.
 
-A sintaxe do valor _href_ do link HAL acima não deve ser usada como ponto de referência. O valor real sempre deve ser lido do link HAL, e não gerado.
+O envio de uma solicitação PUT para esse endpoint resulta em uma resposta 201, se bem-sucedido, e o corpo da resposta é a representação da nova execução. É semelhante a iniciar uma execução regular por meio da API.
 
-Envio de um *PUT* solicitação para esse endpoint resulta em uma *201* se for bem-sucedido, e o corpo da resposta for a representação da nova execução. É semelhante a iniciar uma execução regular por meio da API.
+#### Identificação de uma execução reexecutada {#identify-reexecution}
+
+As execuções reexecutadas podem ser identificadas pelo valor `RE_EXECUTE` no `trigger` campo.
