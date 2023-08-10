@@ -1,27 +1,30 @@
 ---
-title: Notas de versão [!DNL Workfront for Experience Manager enhanced connector]
-description: Notas de versão [!DNL Workfront for Experience Manager enhanced connector]
+title: Notas da versão [!DNL Workfront for Experience Manager enhanced connector]
+description: Notas da versão [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 87aeebad2576e91472530a2617b23bece4cd453f
+source-git-commit: 4b63c00847fa21967560a59c3bcd931433a3a73f
 workflow-type: tm+mt
-source-wordcount: '1158'
+source-wordcount: '1190'
 ht-degree: 1%
 
 ---
 
-# Notas de versão [!DNL Workfront for Experience Manager enhanced connector] {#release-notes-enhanced-connector-workfront}
+# Notas da versão [!DNL Workfront for Experience Manager enhanced connector] {#release-notes-enhanced-connector-workfront}
 
 A seção a seguir descreve as Notas de versão gerais do [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento da versão mais recente 1.9.11 do [!DNL Workfront for Experience Manager enhanced connector] O é em 19 de junho de 2023.
+A data de lançamento da versão mais recente 1.9.12 do [!DNL Workfront for Experience Manager enhanced connector] O é 9 de agosto de 2023.
 
 ## Destaques da versão {#release-highlights}
 
 A versão mais recente do [!DNL Workfront for Experience Manager enhanced connector] O inclui as seguintes atualizações:
 
-* Quando você tem uma rede avançada configurada, há problemas ao enviar conteúdo do Adobe Workfront para o AEM as a Cloud Service.
+* Não é possível criar pastas vinculadas no Experience Manager, pois não há conta de usuário associada à pasta vinculada.
+
+* Condições de corrida durante atualizações de metadados para um ativo no Experience Manager.
+
 
 >[!NOTE]
 >
@@ -30,7 +33,7 @@ A versão mais recente do [!DNL Workfront for Experience Manager enhanced connec
 
 >[!IMPORTANT]
 >
->Adobe recomenda que você [atualizar para a versão 1.9.11 mais recente](/help/assets/workfront-connector-install.md) do [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe recomenda que você [atualizar para a versão 1.9.12 mais recente](/help/assets/workfront-connector-install.md) do [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Problemas conhecidos {#known-issues}
 
@@ -39,6 +42,11 @@ A versão mais recente do [!DNL Workfront for Experience Manager enhanced connec
 * Ao usar a experiência clássica do Workfront, a variável **[!UICONTROL Enviar para]** opção disponível no **[!UICONTROL Mais]** a lista suspensa não permite selecionar o destino dentro do Experience Manager. A variável **[!UICONTROL Enviar para]** A opção funciona corretamente usando o **[!UICONTROL Ações do documento]** lista suspensa. A variável **[!UICONTROL Enviar para]** A opção funciona corretamente para **[!UICONTROL Mais]** lista suspensa e a variável **[!UICONTROL Ações do documento]** disponível na nova experiência do Workfront.
 
 ## Versões anteriores {#previous-releases}
+
+### Versão de junho de 2023 {#june-2023-release}
+
+* Quando você tem uma rede avançada configurada, há problemas ao enviar conteúdo do Adobe Workfront para o AEM as a Cloud Service.
+
 
 ### Versão de maio de 2023 {#may-2023-release}
 
