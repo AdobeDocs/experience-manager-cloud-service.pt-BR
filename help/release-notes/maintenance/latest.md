@@ -2,7 +2,7 @@
 title: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 4c38285f9e75618ad181a85034212c7c24030e99
+source-git-commit: b2c67687e2f3577b44929777a31b6ce85a5f1877
 workflow-type: tm+mt
 source-wordcount: '619'
 ht-degree: 18%
@@ -15,7 +15,7 @@ A seção a seguir descreve as notas de versão técnicas para a versão de manu
 
 ## Versão 13099 {#release-13099}
 
-Resumidos abaixo estão as melhorias contínuas da versão de manutenção 13099, que foi lançada publicamente em 16 de agosto de 2023. Esta versão de manutenção é uma atualização da versão de manutenção anterior: versão 12874.
+Resumidos abaixo estão as melhorias contínuas da versão de manutenção 13099, que foi lançada publicamente em 15 de agosto de 2023. Esta versão de manutenção é uma atualização da versão de manutenção anterior: versão 12874.
 
 A Ativação de recursos 2023.8.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte a [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=pt-BR) para obter mais informações.
 
