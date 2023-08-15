@@ -1,9 +1,9 @@
 ---
 title: Configuração da edição de itens em massa das propriedades da página
 description: Saiba como configurar a edição em massa para editar as propriedades de várias páginas de uma só vez.
-source-git-commit: 9563c24c2794f8209494891da1a4a5a3360781db
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '248'
 ht-degree: 1%
 
 ---

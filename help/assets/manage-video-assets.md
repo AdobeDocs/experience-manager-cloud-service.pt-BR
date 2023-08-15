@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Publishing,Collaboration,Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '4938'
+source-wordcount: '4937'
 ht-degree: 6%
 
 ---
@@ -150,7 +150,7 @@ A Google altera periodicamente a interface do usuário. Dessa forma, as etapas p
    ![6_5_googleaccount-apis-oauthclientcreated](/help/assets/dynamic-media/assets/6_5_googleaccount-apis-oauthclientcreated.png)
 
 1. No **[!UICONTROL Cliente OAuth criado]** caixa de diálogo, selecione **[!UICONTROL OK]**.
-1. Faça logout da sua conta do Google. Agora crie um canal do YouTube.
+1. Faça logout da sua conta da Google. Agora crie um canal do YouTube.
 
 ### Criar um canal do YouTube {#creating-a-youtube-channel}
 
@@ -204,7 +204,7 @@ A partir do Experience Manager 6.4, um novo método de interface do usuário de 
 #### Configurar o YouTube no Experience Manager 6.4 e mais recente {#setting-up-youtube-in-aem-and-later}
 
 1. Certifique-se de fazer logon na sua instância do Dynamic Media como Administrador.
-1. No canto superior esquerdo do Experience Manager, selecione o logotipo do Experience Manager e, no painel à esquerda, navegue até **[!UICONTROL Ferramentas]**(ícone de martelo) > **[!UICONTROL Cloud Services]** > **[!UICONTROL Configuração de publicação no YouTube]**.
+1. No canto superior esquerdo do Experience Manager, selecione o logotipo do Experience Manager e, no painel à esquerda, navegue até **[!UICONTROL Ferramentas]**(ícone de martelo) > **[!UICONTROL Cloud Service]** > **[!UICONTROL Configuração de publicação no YouTube]**.
 1. Selecionar **[!UICONTROL global]** (não o selecione).
 
 1. Próximo ao canto superior direito da página global, selecione **[!UICONTROL Criar]**.
@@ -238,7 +238,7 @@ Deixe a página Criar configuração do YouTube aberta; você voltará a ela em 
 
    Agora, configure tags para publicação.
 
-1. **[!UICONTROL Configuração de tags para publicação]** - Na página Cloud Services > YouTube, selecione o ícone de lápis para editar a lista de tags que deseja usar.
+1. **[!UICONTROL Configuração de tags para publicação]** - Na página Cloud Service > YouTube, selecione o ícone de lápis para editar a lista de tags que deseja usar.
 1. Para exibir a lista de tags disponíveis no Experience Manager, selecione o ícone da lista suspensa (sinal de seta invertido).
 1. Para adicioná-las, selecione uma ou mais tags.
 
@@ -252,7 +252,7 @@ Deixe a página Criar configuração do YouTube aberta; você voltará a ela em 
 
 1. Certifique-se de fazer logon na sua instância do Dynamic Media como Administrador.
 
-1. No canto superior esquerdo do Experience Manager, selecione o logotipo do Experience Manager e, no painel à esquerda, navegue até **[!UICONTROL Ferramentas]** (ícone de martelo) > **[!UICONTROL Implantação]** > **[!UICONTROL Cloud Services]**.
+1. No canto superior esquerdo do Experience Manager, selecione o logotipo do Experience Manager e, no painel à esquerda, navegue até **[!UICONTROL Ferramentas]** (ícone de martelo) > **[!UICONTROL Implantação]** > **[!UICONTROL Cloud Service]**.
 1. No cabeçalho Serviços de terceiros, em YouTube, selecione **[!UICONTROL Configurar agora]**.
 1. Na caixa de diálogo Criar configuração, insira um título (obrigatório) e nome (opcional) nos respectivos campos.
 1. Selecione **[!UICONTROL Criar]**.
@@ -284,7 +284,7 @@ Deixe aberta a caixa de diálogo Configuração de conta do YouTube; você volta
 
    Agora, configure tags para publicação.
 
-1. **[!UICONTROL Configuração de tags para publicação]** - Na página Cloud Services > YouTube, selecione o ícone de lápis para editar a lista de tags que deseja usar.
+1. **[!UICONTROL Configuração de tags para publicação]** - Na página Cloud Service > YouTube, selecione o ícone de lápis para editar a lista de tags que deseja usar.
 1. Para exibir a lista de tags disponíveis no Experience Manager, selecione o ícone da lista suspensa (sinal de seta invertido).
 1. Para adicioná-las, selecione uma ou mais tags.
 
@@ -368,8 +368,11 @@ Agora você associa as tags adicionadas anteriormente aos ativos de vídeo. Esse
 >**[!UICONTROL Publicar imediatamente]** significa que o ativo carregado, após ser sincronizado com o IPS, é publicado automaticamente no sistema de entrega. Embora isso seja verdade para o Dynamic Media, não é verdade para o YouTube. Para publicar no YouTube, você deve publicar por meio do Experience Manager Author.
 
 >[!NOTE]
+>
 Para publicar conteúdo do YouTube, o Experience Manager usa o **[!UICONTROL Publicar no YouTube]** fluxo de trabalho, que permite monitorar o progresso e visualizar as informações de falha.
+>
 Consulte [Monitorar o progresso da codificação de vídeo e da publicação no YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
+>
 Para obter informações mais detalhadas sobre o progresso, é possível monitorar o log do YouTube em replicação. No entanto, esteja ciente de que esse monitoramento requer acesso de administrador.
 
 **Para publicar vídeos no seu canal do YouTube:**
@@ -405,6 +408,7 @@ Após oito horas, se você ainda vir uma mensagem de status que diz **[!UICONTRO
 Você pode obter uma cadeia de caracteres de URL do YouTube gerada pelo Dynamic Media após a publicação do vídeo. Ao copiar o URL do YouTube, ele é colocado na Área de transferência para que você possa colá-lo conforme necessário nas páginas do seu site ou aplicativo.
 
 >[!NOTE]
+>
 O URL do YouTube não estará disponível para cópia até que você tenha publicado o ativo de vídeo no YouTube.
 
 Para vincular URLs do YouTube ao seu aplicativo web:
@@ -422,10 +426,13 @@ Para vincular URLs do YouTube ao seu aplicativo web:
 Ao cancelar a publicação de um ativo de vídeo no Experience Manager, o vídeo é removido do YouTube.
 
 >[!CAUTION]
+>
 Se você remover um vídeo diretamente do YouTube, o Experience Manager não estará ciente e continuará a se comportar como se o vídeo ainda estivesse publicado no YouTube. Sempre cancele a publicação de um ativo de vídeo do YouTube por meio do Experience Manager.
 
 >[!NOTE]
+>
 Para remover conteúdo do YouTube, o Experience Manager usa o **[!UICONTROL Cancelar publicação no YouTube]** fluxo de trabalho, que permite monitorar o progresso e visualizar as informações de falha.
+>
 Consulte [Monitorar o progresso da codificação de vídeo e da publicação no YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
 
 **Para desfazer a publicação de vídeos e removê-los do YouTube:**
@@ -466,16 +473,19 @@ Você pode monitorar o progresso, incluindo falha de codificação/publicação 
    Todas as informações do fluxo de trabalho, como codificação, são exibidas na linha do tempo. Para publicação no YouTube, a linha do tempo do Fluxo de trabalho também inclui o nome do canal do YouTube e o URL do vídeo do YouTube. Além disso, você verá todas as notificações de falha na linha do tempo do fluxo de trabalho depois que a publicação for concluída.
 
    >[!NOTE]
+   >
    Pode levar muito tempo para que as mensagens de erro/falha sejam gravadas devido a várias configurações de fluxo de trabalho no **[!UICONTROL tentativas]**, **[!UICONTROL atraso de repetição]**, e **[!UICONTROL timeout]** de [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), por exemplo:
+   >
    * Configuração da fila de trabalhos do Apache Sling
    * Manipulador de trabalho do processo externo do fluxo de trabalho do Adobe Granite
    * Fila de tempo limite de fluxo de trabalho do Granite
-
+   >
    Você pode ajustar a variável **[!UICONTROL tentativas]**, **[!UICONTROL atraso de repetição]**, e **[!UICONTROL timeout]** nessas configurações.
 
 1. Nos fluxos de trabalho em andamento, consulte Instâncias de fluxo de trabalho disponíveis em **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Instâncias]**.
 
    >[!NOTE]
+   >
    Você precisa de direitos administrativos para acessar o **[!UICONTROL Ferramentas]** menu.
 
    ![chlimage_1-433](/help/assets/dynamic-media/assets/chlimage_1-433.png)
@@ -489,21 +499,25 @@ Você pode monitorar o progresso, incluindo falha de codificação/publicação 
 1. Em tarefas com falha, consulte Falhas de fluxo de trabalho, disponível em **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Falhas]**. A **[!UICONTROL Falha do fluxo de trabalho]** lista todas as atividades do fluxo de trabalho com falha.
 
    >[!NOTE]
+   >
    Você precisa de direitos administrativos para acessar o **[!UICONTROL Ferramentas]** menu.
 
    ![chlimage_1-435](/help/assets/dynamic-media/assets/chlimage_1-435.png)
 
    >[!NOTE]
+   >
    Pode levar muito tempo para que a mensagem de erro seja gravada devido a várias configurações de fluxo de trabalho **[!UICONTROL tentativas]**, **[!UICONTROL atraso de repetição]**, e **[!UICONTROL timeout]** de [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), por exemplo:
+   >
    * Configuração da fila de trabalhos do Apache Sling
    * Manipulador de trabalho do processo externo do fluxo de trabalho do Adobe Granite
    * Fila de tempo limite de fluxo de trabalho do Granite
-
+   >
    Você pode ajustar a variável **[!UICONTROL tentativas]**, **[!UICONTROL atraso de repetição]**, e **[!UICONTROL timeout]** nessas configurações.
 
 1. Em fluxos de trabalho concluídos, consulte Arquivo de fluxo de trabalho disponível em **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Arquivar]**. O **[!UICONTROL Arquivo de fluxo de trabalho]** lista todas as atividades de fluxo de trabalho concluídas.
 
    >[!NOTE]
+   >
    Você precisa de direitos administrativos para acessar o **[!UICONTROL Ferramentas]** menu.
 
    ![chlimage_1-436](/help/assets/dynamic-media/assets/chlimage_1-436.png)
@@ -573,6 +587,7 @@ Para processar ativos usando um perfil de processamento, adicione um perfil a um
 É possível adicionar anotações a ativos de vídeo. Ao anotar vídeos, o reprodutor faz uma pausa para permitir que você faça anotações em um quadro. Para obter detalhes, consulte [gerenciamento de ativos de vídeo](manage-video-assets.md).
 
 >[!NOTE]
+>
 O formato de vídeo MXF ainda não é compatível com anotações de ativos de vídeo.
 
 1. No [!DNL Assets] console, selecione **[!UICONTROL Editar]** no cartão de ativos para exibir a página de detalhes do ativo.
@@ -593,9 +608,10 @@ O formato de vídeo MXF ainda não é compatível com anotações de ativos de v
       * 400 MB para transcodificação 4k.
       * 800 MB para transcodificação 1080p.
       * 8 GB para transcodificação 720p.
+
    * O tamanho máximo de arquivo que você pode transcodificar para resolução de 4k é um arquivo MP4 de 2,55 GB com resolução de 4k, taxa de bits de 12 Mbps e 23 fps.
 
-   **Consulte também**
+  **Consulte também**
 
 * [Traduzir ativos](translate-assets.md)
 * [API HTTP de ativos](mac-api-assets.md)
@@ -611,6 +627,6 @@ O formato de vídeo MXF ainda não é compatível com anotações de ativos de v
 * [Importação de metadados em massa](metadata-import-export.md)
 
 >[!MORELIKETHIS]
+>
 * [Documentação de vídeo do Dynamic Media](/help/assets/dynamic-media/video.md).
 * [Saiba mais sobre o uso, os tipos e a configuração de perfis de processamento](/help/assets/asset-microservices-configure-and-use.md).
-

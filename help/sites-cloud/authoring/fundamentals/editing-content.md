@@ -2,10 +2,10 @@
 title: Editar conteúdo da página
 description: Depois que a página é criada, você pode editar o conteúdo para fazer as atualizações necessárias
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2990'
-ht-degree: 52%
+source-wordcount: '2983'
+ht-degree: 51%
 
 ---
 
@@ -112,7 +112,7 @@ Se a página estiver sujeita a vários fluxos de trabalho, o número de fluxos d
 
 ## Espaço reservado do componente {#component-placeholder}
 
-O placeholder do componente é um indicador para mostrar onde um componente está posicionado ao soltá-lo, acima do componente sobre o qual você está passando no momento.
+O placeholder do componente é um indicador para mostrar onde um componente está posicionado ao soltá-lo, acima do componente sobre o qual você está passando o mouse no momento.
 
 * Ao adicionar um novo componente à página (arrastar do navegador de componentes):
 
@@ -246,19 +246,19 @@ As ações reais disponíveis para o usuário são mostradas conforme apropriado
 
 * **Pai**
 
-  Permite que você selecione o componente principal do componente selecionado.
+  Permite selecionar o componente principal do componente selecionado.
 
   ![Botão Pai](/help/sites-cloud/authoring/assets/editing-component-toolbar-parent.png)
 
 * **Layout**
 
-  Isso permite modificar a variável [layout](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout) do componente selecionado. Isso se aplica somente ao componente selecionado e não ativa o [Modo de layout](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) para a página inteira.
+  Isso permite modificar o [layout](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout) do componente selecionado. Isso se aplica somente ao componente selecionado e não ativa o [Modo de layout](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) para a página inteira.
 
   ![Botão Layout](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
 
 * **Converta em uma variação de fragmento de experiência**
 
-  Isso permite criar um novo [fragmento de experiência](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) do componente selecionado ou adicioná-lo a um fragmento de experiência existente.
+  Isso permite criar um novo [fragmento de experiência](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) do componente selecionado ou adicione-o a um fragmento de experiência existente.
 
   ![Botão Converter para fragmento de experiência](/help/sites-cloud/authoring/assets/editing-component-toolbar-xf.png)
 
@@ -492,7 +492,7 @@ O menu de Informações da página lista **Desbloquear** como uma opção, e o �
 >
 >Locking a page can be performed when impersonating a user. However a page locked in this way can only then be unlocked by the user who was impersonated, or by a user with admin rights (a member of AEM Administrator IMS profile).
 >
->Pages can not be unlocked by impersonating the user who locked the page.
+>Pages cannot be unlocked by impersonating the user who locked the page.
 -->
 
 <!--

@@ -1,13 +1,13 @@
 ---
 title: Como usar o editor de regras do Adaptive Forms?
-description: O editor de regras Forms adaptável permite adicionar comportamento dinâmico e criar lógica complexa em formulários sem codificação ou script. Comece a entender uma regra e as diretrizes para escolher uma construção de regra. Saiba mais sobre tipos de operadores e eventos disponíveis no editor de regras.
+description: O editor de regras do Forms adaptável permite adicionar comportamento dinâmico e criar lógica complexa em formulários sem codificação ou script. Comece a entender uma regra e as diretrizes para escolher uma construção de regra. Saiba mais sobre tipos de operadores e eventos disponíveis no editor de regras.
 feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '6401'
+source-wordcount: '6389'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 <span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-br) para [criação de um novo Forms adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
-| Versão | Link do artigo |
+| Versão | Artigo link |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html) |
 | AEM as a Cloud Service | Este artigo |
@@ -57,15 +57,15 @@ Os tipos de regras Mostrar, Ocultar, Ativar, Desativar, Definir valor de e Valid
 
 >[!NOTE]
 >
->Os tipos de regras disponíveis, incluindo condições e ações definidas no editor de regras, também dependem do tipo de objeto de formulário no qual você está criando uma regra. O editor de regras exibe somente tipos de regras válidos e opções para gravar instruções de condição e ação para um determinado tipo de objeto de formulário. Por exemplo, você não vê os tipos de regras Validar, Definir valor de, Ativar e Desativar para um objeto de painel.
+>Os tipos de regras disponíveis, incluindo condições e ações definidas no editor de regras, também dependem do tipo de objeto de formulário no qual você está criando uma regra. O editor de regras exibe somente tipos de regras válidos e opções para gravar instruções de condição e ação para um determinado tipo de objeto de formulário. Por exemplo, você não vê validar, definir Valor de, ativar e desativar tipos de regra para um objeto de painel.
 
-Para obter mais informações sobre tipos de regras disponíveis no editor de regras, consulte [Tipos de regras disponíveis no editor de regras](rule-editor.md#p-available-rule-types-in-rule-editor-p).
+Para obter mais informações sobre regra tipos disponíveis no regra editor, consulte [ tipos de regra disponíveis no ](rule-editor.md#p-available-rule-types-in-rule-editor-p) regra editor.
 
-### Diretrizes para a escolha de uma construção de regra {#guidelines-for-choosing-a-rule-construct}
+### Diretrizes para escolher uma construção de regra {#guidelines-for-choosing-a-rule-construct}
 
-Embora seja possível obter a maioria dos casos de uso usando qualquer construção de regra, veja a seguir algumas diretrizes para escolher uma construção em vez de outra. Para obter mais informações sobre as regras disponíveis no editor de regras, consulte [Tipos de regras disponíveis no editor de regras](rule-editor.md#p-available-rule-types-in-rule-editor-p).
+Embora você possa conseguir a maioria dos casos de uso usando qualquer regra Construtor, aqui estão algumas diretrizes para escolher uma construção sobre outra. Para obter mais informações sobre as regras disponíveis no regra editor, consulte [ tipos de regra disponíveis no regra editor ](rule-editor.md#p-available-rule-types-in-rule-editor-p) .
 
-* Uma regra prática comum ao criar uma regra é pensar nela no contexto do objeto no qual você está escrevendo uma regra. Considere que deseja ocultar ou mostrar o campo B com base no valor especificado por um usuário no campo A. Nesse caso, você está avaliando uma condição no campo A e, com base no valor retornado, aciona uma ação no campo B.
+* Um regra típico do Thumb ao criar uma regra é pensar sobre isso no contexto do objeto no qual você está escrevendo uma regra. Considere que você deseja ocultar ou mostrar o campo B com base no valor que uma usuário especifica no campo A. Nesse caso, você está avaliando uma condição no campo A e, com base no valor retornado, está acionando uma ação no campo B.
 
   Portanto, se estiver gravando uma regra no campo B (o objeto no qual você está avaliando uma condição), use a construção de condição-ação ou o tipo de regra When. Da mesma forma, use a construção action-condition ou o tipo de regra Mostrar ou Ocultar no campo A.
 
@@ -93,10 +93,10 @@ O editor de regras fornece os seguintes operadores lógicos e eventos com os qua
 * **Selecionou:** Retorna verdadeiro quando o usuário seleciona uma opção específica para uma caixa de seleção, botão de opção suspenso.
 * **Inicializado (evento):** Retorna verdadeiro quando um objeto de formulário é renderizado no navegador.
 * **Foi alterado (evento):** Retorna verdadeiro quando o usuário altera o valor inserido ou a opção selecionada para um objeto de formulário.
-* **Navegação (evento):** Retorna verdadeiro quando o usuário clica em um objeto de navegação. Os objetos de navegação são usados para se mover entre painéis.
-* **Conclusão da etapa (evento):** Retorna verdadeiro quando uma etapa de uma regra é concluída.
-* **Envio bem-sucedido (evento):** Retorna verdadeiro quando os dados são enviados com êxito para um modelo de dados de formulário.
-* **Erro no envio (evento):**  Retorna verdadeiro quando os dados não são enviados com êxito para um modelo de dados de formulário.
+* **Navegação (evento):** retorna true quando o usuário clica em um objeto navegação. Os objetos de navegação são usados para mover entre painéis.
+* **Conclusão da etapa (evento):** retorna true quando uma etapa de uma regra é concluída.
+* **Envio bem-sucedido (evento):** retorna true no envio bem-sucedido de dados para um modelo de dados de formulário.
+* **Erro em envio (evento):**  retorna true no envio de dados sem sucesso para um modelo de dados de formulário.
 
 ## Tipos de regras disponíveis no editor de regras {#available-rule-types-in-rule-editor}
 
@@ -148,7 +148,7 @@ Para obter mais informações sobre como configurar serviços no modelo de dados
 
 Para obter mais informações sobre como configurar serviços no modelo de dados de formulário, consulte [[!DNL Experience Manager Forms] Integração de dados](data-integration.md).
 
-A variável **[!UICONTROL Definir propriedade]** O tipo de regra permite definir o valor de uma propriedade do objeto especificado com base em uma ação de condição.
+A variável **[!UICONTROL Definir propriedade]** o tipo de regra permite definir o valor de uma propriedade do objeto especificado com base em uma ação de condição.
 
 Ela permite definir regras para adicionar caixas de seleção dinamicamente ao Formulário adaptável. Você pode usar uma função personalizada, um objeto de formulário ou uma propriedade de objeto para definir uma regra.
 
@@ -184,7 +184,7 @@ A figura a seguir mostra um exemplo de adição dinâmica de caixas de seleção
 
 ### [!UICONTROL Definir valor de] {#set-value-of}
 
-A variável **[!UICONTROL Definir valor de]** O tipo de regra permite definir o valor de um objeto de formulário dependendo se a condição especificada é atendida ou não. O valor pode ser definido como um valor de outro objeto, uma sequência literal, um valor derivado de uma expressão matemática ou de uma função, um valor de uma propriedade de outro objeto ou a saída de um serviço de modelo de dados de formulário. Da mesma forma, você pode verificar uma condição em um componente, string, propriedade ou valores derivados de uma função ou expressão matemática.
+A variável **[!UICONTROL Definir valor de]** o tipo de regra permite definir o valor de um objeto de formulário dependendo se a condição especificada é atendida ou não. O valor pode ser definido como um valor de outro objeto, uma sequência literal, um valor derivado de uma expressão matemática ou de uma função, um valor de uma propriedade de outro objeto ou a saída de um serviço de modelo de dados de formulário. Da mesma forma, você pode verificar uma condição em um componente, string, propriedade ou valores derivados de uma função ou expressão matemática.
 
 A variável **Definir Valor De** o tipo de regra não está disponível para todos os objetos de formulário, como painéis e botões da barra de ferramentas. Uma regra padrão Definir valor de tem a seguinte estrutura:
 
@@ -194,13 +194,13 @@ Defina o valor do Objeto A como:
 
 Quando (opcional):
 
-(Condição 1 E Condição 2 E Condição 3) é VERDADEIRO;
+(Condition 1 e Condition 2 e Condition 3) são TRUE;
 
-O exemplo a seguir usa o valor em `dependentid` como entrada e define o valor do campo `Relation` à saída do campo `Relation` argumento do `getDependent` Serviço de modelo de dados de formulário.
+O exemplo a seguir pega o valor no `dependentid` campo como entrada e define o valor do `Relation` campo como a saída do `Relation` argumento do serviço de modelo de dados de `getDependent` formulário.
 
-![Set-value-web-service](assets/set-value-web-service.png)
+![Set-Value-Web Service](assets/set-value-web-service.png)
 
-Exemplo de regra Definir valor usando o serviço de Modelo de dados de formulário
+Exemplo de conjunto de Valor regra usando o serviço de modelo de dados do formulário
 
 >[!NOTE]
 >
@@ -338,15 +338,15 @@ A guia Objetos de formulário mostra uma exibição hierárquica de todos os obj
 
 Os objetos de formulário que têm uma ou mais regras válidas aplicadas são marcados com um ponto verde. Se alguma das regras aplicadas a um objeto de formulário for inválida, o objeto de formulário será marcado com um ponto amarelo.
 
-A guia Funções inclui um conjunto de funções incorporadas, como Soma de, Mín de, Máx de, Média de, Número de e Validar formulário. Você pode usar essas funções para calcular valores em painéis e linhas de tabela repetíveis e usá-los em declarações de ação e condição ao escrever regras. No entanto, você pode criar [funções personalizadas](#custom-functions) também.
+A guia Funções inclui um conjunto de funções incorporadas, como Soma de, Mín de, Máx de, Média de, Número de e Validar formulário. Você pode usar essas funções para calcular valores em painéis e linhas de tabela repetíveis e usá-los em declarações de ação e condição ao escrever regras. No entanto, você pode criar [ funções ](#custom-functions) personalizadas também.
 
-![A guia Funções](assets/functions.png)
+![As funções guia](assets/functions.png)
 
 >[!NOTE]
 >
->Você pode executar a pesquisa de texto em nomes de objetos e funções e títulos nas guias Objetos e Funções do Forms.
+>Você pode executar texto pesquisa em nomes de objetos e funções e títulos em Forms objetos e nas guias de funções.
 
-Na árvore esquerda dos objetos de formulário, toque nos objetos de formulário para exibir as regras aplicadas a cada um deles. Você não só pode navegar pelas regras dos vários objetos de formulário, como também pode copiar e colar regras entre os objetos de formulário. Para obter mais informações, consulte [Copiar e colar regras](rule-editor.md#p-copy-paste-rules-p).
+Na árvore à esquerda dos objetos de formulário, você pode tocar nos objetos de formulário para exibir as regras aplicadas a cada um dos objetos. Não só é possível navegar pelas regras de vários objetos de formulário, também é possível copiar regras de colagem entre os objetos de formulário. Para obter mais informações, consulte [ copiar-colar regras ](rule-editor.md#p-copy-paste-rules-p) .
 
 ### C. Alternância entre objetos e funções de formulário {#c-form-objects-and-functions-toggle-br}
 
@@ -354,7 +354,7 @@ O botão de alternância, quando tocado, alterna o painel de funções e objetos
 
 ### D. Editor visual de regras {#visual-rule-editor}
 
-Editor visual de regras é a área no modo editor visual da interface do usuário do editor de regras em que você escreve regras. Ela permite selecionar um tipo de regra e definir adequadamente condições e ações. Ao definir condições e ações em uma regra, você pode arrastar e soltar objetos e funções de formulário do painel Objetos de formulário e Funções.
+Editor visual de regras é a área no modo editor visual da interface do usuário do editor de regras em que você escreve regras. Ele permite selecionar um tipo de regra e definir adequadamente condições e ações. Ao definir condições e ações em uma regra, você pode arrastar e soltar objetos e funções de formulário do painel Objetos de formulário e Funções.
 
 Para obter mais informações sobre como usar o editor visual de regras, consulte [Regras de gravação](rule-editor.md#p-write-rules-p).
 <!-- 

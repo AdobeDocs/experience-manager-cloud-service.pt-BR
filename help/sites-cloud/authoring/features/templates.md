@@ -2,10 +2,10 @@
 title: Criação de modelos de páginas
 description: O modelo define a estrutura da página resultante e, com o editor de modelo, criar e manter modelos não é mais uma tarefa somente para desenvolvedores
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '4577'
-ht-degree: 57%
+source-wordcount: '4570'
+ht-degree: 56%
 
 ---
 
@@ -230,7 +230,7 @@ Um modelo pode ser disponibilizado ou indisponibilizado para determinadas ramifi
 
 Ao criar ou editar um modelo, há vários aspectos que você pode definir. A edição de modelos é semelhante à criação de página.
 
-O seletor de **Modo** na barra de ferramentas permite selecionar e editar o aspecto apropriado do modelo:
+A variável **Modo** o seletor na barra de ferramentas permite selecionar e editar o aspecto apropriado do modelo:
 
 * [Estrutura](#editing-a-template-structure-template-author)
 * [Conteúdo inicial](#editing-a-template-initial-content-author)
@@ -238,7 +238,7 @@ O seletor de **Modo** na barra de ferramentas permite selecionar e editar o aspe
 
 ![Seletor de modo do editor de modelos](/help/sites-cloud/authoring/assets/templates-mode.png)
 
-Já a opção **Política de página** no menu **Informações de página** permite [selecionar as políticas de página necessárias](#page-policies):
+Embora a **Política da página** opção no **Informações da página** permite que você [selecionar as políticas de página necessárias](#page-policies):
 
 ![Informações da página do editor de modelos](/help/sites-cloud/authoring/assets/templates-page-information.png)
 
@@ -345,7 +345,7 @@ Crie uma política de conteúdo ou selecione uma existente para um componente.
 
 ![Botão Política de conteúdo](/help/sites-cloud/authoring/assets/templates-content-policy-button.png)
 
-Isso permite que definir os detalhes do design.
+Isso permite que você defina os detalhes do design.
 
 ![Política de conteúdo](/help/sites-cloud/authoring/assets/template-content-policy.png)
 

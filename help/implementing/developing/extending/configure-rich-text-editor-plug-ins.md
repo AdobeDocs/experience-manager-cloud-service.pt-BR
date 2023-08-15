@@ -4,10 +4,10 @@ description: Saiba como configurar o [!DNL Adobe Experience Manager] Plug-ins do
 contentOwner: AG
 mini-toc-levels: 1
 exl-id: 91619662-e865-47d1-8bec-0739f402353a
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '4301'
-ht-degree: 4%
+source-wordcount: '4299'
+ht-degree: 3%
 
 ---
 
@@ -39,13 +39,13 @@ Por padrão, `format`, `link`, `list`, `justify`, e `control` plug-ins e todos o
       * `config: .../text/cq:editConfig/cq:inplaceEditing/config`
       * um nó de configuração alternativo: `.../text/cq:editConfig/cq:inplaceEditing/inplaceEditingTextConfig`
       * `text: .../text/dialog/items/tab1/items/text`
+
    * São do tipo: **jcr:primaryType** `cq:Widget`
    * Ambos têm a seguinte propriedade:
 
       * **Nome** `name`
       * **Tipo** `String`
       * **Valor** `./text`
-
 
 1. Dependendo da interface que você está configurando para o, crie um nó `<rtePlugins-node>`, se não existir:
 
@@ -59,7 +59,7 @@ Por padrão, `format`, `link`, `list`, `justify`, e `control` plug-ins e todos o
 
 Depois de ativar um plug-in, siga estas diretrizes para configurar o `features` propriedade.
 
-|  | Habilitar todos os recursos | Habilite alguns recursos específicos. | Desative todos os recursos. |
+| | Habilitar todos os recursos | Habilite alguns recursos específicos. | Desative todos os recursos. |
 |---|---|---|---|
 | Nome | recursos | recursos | recursos |
 | Tipo | String | `String` (várias sequências de caracteres; defina Tipo como `String` e clique em `Multi` in CRXDE Lite) | String |
@@ -303,8 +303,7 @@ Para criar o estilo que os autores podem aplicar ao texto em japonês, siga esta
 
 1. Adicione o texto da propriedade ao mesmo nó. O valor é o nome do estilo que os autores veem ao selecionar o estilo.
    * Nome: `text`
-*Tipo: 
-`String`
+*Tipo: `String`
    * Valor: `Japanese word-wrap`
 
 1. Crie uma folha de estilos e especifique seu caminho. Consulte [especificar local da folha de estilos](#locationofstylesheet). Adicione o conteúdo a seguir à folha de estilos. Altere a cor do plano de fundo conforme desejado.
@@ -379,7 +378,7 @@ Os formatos de parágrafo são disponibilizados para seleção por:
    * **Tipo** `String`
    * **Valor** A tag de bloco do formato; por exemplo: p, h1, h2 etc.
 
-      Não é necessário inserir os colchetes angulares delimitadores.
+     Não é necessário inserir os colchetes angulares delimitadores.
 
 1. Para o mesmo nó, adicione outra propriedade para que o texto descritivo apareça na lista suspensa:
 
@@ -392,6 +391,7 @@ Os formatos de parágrafo são disponibilizados para seleção por:
    Repita as etapas para cada formato necessário.
 
 >[!CAUTION]
+>
 Se você definir formatos personalizados, os formatos padrão (`<p>`, `<h1>`, `<h2>`, e `<h3>`) são removidos. Recriar `<p>` formato, pois é o formato padrão.
 
 ## Configurar caracteres especiais {#spchar}
@@ -401,6 +401,7 @@ Em um padrão [!DNL Experience Manager] instalação, quando a variável `miscto
 É possível configurar o RTE para disponibilizar a seleção de caracteres; definindo caracteres distintos ou uma sequência inteira.
 
 >[!CAUTION]
+>
 A adição de caracteres especiais substitui a seleção padrão. Se necessário, redefina esses caracteres na sua seleção.
 
 ### Definir um caractere único {#definesinglechar}
@@ -412,7 +413,7 @@ A adição de caracteres especiais substitui a seleção padrão. Se necessário
    * **Tipo** `String[]`
    * **Valor** `specialchars`
 
-          (ou `String / *` se estiver aplicando todos os recursos deste plug-in)
+         (ou `String / *` se estiver aplicando todos os recursos deste plug-in)
 
 1. Em `misctools` crie um nó para manter as configurações de caracteres especiais:
 
@@ -452,14 +453,12 @@ No CRXDE, depois que a propriedade é salva, o caractere representado é exibido
 1. Nesse nó (nomeado de acordo com o intervalo de caracteres especiais), adicione as duas propriedades a seguir:
 
    * **Nome** `rangeStart`
-
-      **Tipo** `Long`
-      **Valor** o [Unicode](https://unicode.org/) representação (decimal) do primeiro caractere no intervalo
+     **Tipo** `Long`
+     **Valor** o [Unicode](https://unicode.org/) representação (decimal) do primeiro caractere no intervalo
 
    * **Nome** `rangeEnd`
-
-      **Tipo** `Long`
-      **Valor** o [Unicode](https://unicode.org/) representação (decimal) do último caractere no intervalo
+     **Tipo** `Long`
+     **Valor** o [Unicode](https://unicode.org/) representação (decimal) do último caractere no intervalo
 
 1. Salve as alterações.
 
@@ -476,9 +475,11 @@ No CRXDE, depois que a propriedade é salva, o caractere representado é exibido
 Normalmente, os estilos são aplicados em texto, mas um conjunto separado de estilos também pode ser aplicado a uma tabela ou a algumas células da tabela. Esses Estilos estão disponíveis para os autores na caixa do seletor de estilo na caixa de diálogo Propriedades da célula ou Propriedades da tabela. Os estilos estão disponíveis ao editar uma tabela em um componente de Texto (ou derivativo) e não no componente de Tabela padrão.
 
 >[!NOTE]
+>
 É possível definir estilos para tabelas e células somente para a interface clássica.
 
 >[!NOTE]
+>
 Copiar e colar tabelas no componente de RTE ou a partir dele depende do navegador. Ele não é compatível imediatamente com todos os navegadores. É possível obter resultados variados dependendo da estrutura da tabela e do navegador. Por exemplo, ao copiar e colar uma tabela em um componente do RTE no Mozilla Firefox na interface clássica e na interface para toque, o layout da tabela não é preservado.
 
 1. No componente, navegue até o nó `<rtePlugins-node>/table`. Crie os nós se eles não existirem. Para obter mais detalhes, consulte [ativar um plug-in](#activateplugin).
@@ -489,12 +490,14 @@ Copiar e colar tabelas no componente de RTE ou a partir dele depende do navegado
    * **Valor** `*`
 
    >[!NOTE]
+   >
    Se você não quiser ativar todos os recursos da tabela, crie o `features` propriedade como:
+   >
    * **Tipo** `String[]`
+   >
    * **Valor** s) Uma ou ambas as condições, conforme exigido:
-      * `table` para permitir a edição de propriedades de tabela, incluindo os estilos.
-      * `cellprops` para permitir a edição de propriedades da célula, incluindo os estilos.
-
+   * `table` para permitir a edição de propriedades de tabela, incluindo os estilos.
+   * `cellprops` para permitir a edição de propriedades da célula, incluindo os estilos.
 
 1. Defina o local das folhas de estilos CSS para referenciá-las. Consulte [Especificação da localização da sua folha de estilos](#locationofstylesheet) já que é o mesmo que ao definir [estilos de texto](#textstyles). O local pode ser definido se você tiver definido outros estilos.
 1. No `table` crie os seguintes nós conforme necessário:
@@ -503,11 +506,11 @@ Copiar e colar tabelas no componente de RTE ou a partir dele depende do navegado
 
       * **Nome** `tableStyles`
       * **Tipo** `cq:WidgetCollection`
+
    * Para definir estilos para as células individuais (disponível em **[!UICONTROL Propriedades da célula]**),
 
       * **Nome** `cellStyles`
       * **Tipo** `cq:WidgetCollection`
-
 
 1. Criar um nó (sob o `tableStyles` ou `cellStyles` conforme apropriado) para representar um estilo individual,
 
@@ -521,12 +524,12 @@ Copiar e colar tabelas no componente de RTE ou a partir dele depende do navegado
       * **Nome** `cssName`
       * **Tipo** `String`
       * **Valor** o nome da classe CSS (sem um precedente `.`, por exemplo, `cssClass` em vez de `.cssClass`)
+
    * Para definir um texto descritivo a ser exibido no seletor pop-up,
 
       * **Nome** `text`
       * **Tipo** `String`
       * **Valor** o texto a ser exibido na lista de seleção
-
 
 1. Salve todas as alterações.
 
@@ -555,6 +558,7 @@ Se você especificar o CSS e a string de estilo no código, a classe CSS terá p
 Quando o plug-in de verificação ortográfica é ativado, o RTE usa dicionários para cada idioma apropriado. Eles são selecionados de acordo com o idioma do site, pegando a propriedade language da subárvore ou extraindo o idioma do URL, por exemplo. o `/en/` for marcada como inglês, a variável `/de/` como alemão.
 
 >[!NOTE]
+>
 A mensagem &quot;Falha na verificação ortográfica.&quot; é visto se for tentada uma verificação para um idioma que não está instalado.
 
 Uma instalação de Experience Manager padrão inclui os dicionários para:
@@ -563,6 +567,7 @@ Uma instalação de Experience Manager padrão inclui os dicionários para:
 * Inglês Britânico (en_gb)
 
 >[!NOTE]
+>
 Os dicionários padrão estão localizados em `/libs/cq/spellchecker/dictionaries`, juntamente com os arquivos ReadMe apropriados. Não modifique os arquivos.
 
 Para adicionar mais dicionários, se necessário, siga estas etapas.
@@ -571,14 +576,18 @@ Para adicionar mais dicionários, se necessário, siga estas etapas.
 1. Selecione o idioma desejado e baixe o arquivo ZIP com as definições de ortografia. Extraia o conteúdo do arquivo morto em seu sistema de arquivos.
 
    >[!CAUTION]
+   >
    Somente dicionários na `MySpell` formato para OpenOffice.org v2.0.1 ou anterior, são compatíveis. Como os dicionários agora são arquivos mortos, é recomendável verificar o arquivo após baixá-lo.
 
 1. Localize os arquivos .aff e .dic. Mantenha o nome do arquivo em minúsculas. Por exemplo, `de_de.aff` e `de_de.dic`.
 1. Carregue os arquivos .aff e .dic no repositório em `/apps/cq/spellchecker/dictionaries`.
 
 >[!NOTE]
+>
 O verificador ortográfico RTE está disponível sob demanda. Ele não é executado automaticamente quando você começa a digitar o texto.
+>
 Para executar o verificador ortográfico, toque/clique no botão Verificador ortográfico na barra de ferramentas. O RTE verifica a ortografia das palavras e destaca palavras com erro de ortografia.
+>
 Se você incorporar qualquer alteração sugerida pelo verificador ortográfico, o estado do texto será alterado e as palavras com erro de ortografia não serão mais destacadas. Para executar o verificador ortográfico, toque/clique no botão Verificador ortográfico novamente.
 
 ## Configurar o tamanho do histórico das ações desfazer e refazer {#undohistory}
@@ -614,6 +623,7 @@ Para definir o tamanho da guia:
 Quando o recuo está habilitado (padrão), você pode definir o tamanho do recuo:
 
 >[!NOTE]
+>
 Este tamanho de recuo é aplicado somente a parágrafos (blocos) de texto; não afeta o recuo de listas reais.
 
 1. No componente, navegue até o nó `<rtePlugins-node>/lists`. Crie esses nós se eles não existirem. Para obter mais detalhes, consulte [ativar um plug-in](#activateplugin).
@@ -646,11 +656,13 @@ Ao adicionar links em [!DNL Experience Manager], você pode definir os estilos C
    * **Tipo** `nt:unstructured`
 
    >[!NOTE]
+   >
    A variável `../items/text` O nó tem a propriedade:
+   >
    * **Nome** `xtype`
    * **Tipo** `String`
    * **Valor** `richtext`
-
+   >
    A localização do `../items/text` pode variar, dependendo da estrutura da caixa de diálogo. Dois exemplos são `/apps/myProject>/components/text/dialog/items/text` e `/apps/<myProject>/components/text/dialog/items/panel/items/text`.
 
 1. Em `htmlRules`, crie um nó.
@@ -665,27 +677,31 @@ Ao adicionar links em [!DNL Experience Manager], você pode definir os estilos C
       * **Nome** `cssInternal`
       * **Tipo** `String`
       * **Valor** o nome da classe CSS (sem um &#39;.&#39; precedente; por exemplo, `cssClass` em vez de `.cssClass`)
+
    * Estilo CSS para links externos
 
       * **Nome** `cssExternal`
       * **Tipo** `String`
       * **Valor** o nome da classe CSS (sem um &#39;.&#39; precedente; por exemplo, `cssClass` em vez de `.cssClass`)
+
    * Matriz de válida **[!UICONTROL protocolos]** incluindo `https://`, `https://`, `file://`, `mailto:`, e outros,
 
       * **Nome** `protocols`
       * **Tipo** `String[]`
       * **Valor** s) um ou mais protocolos
+
    * **defaultProtocol** (propriedade do tipo **String**): Protocolo a ser usado se o usuário não tiver especificado um explicitamente.
 
       * **Nome** `defaultProtocol`
       * **Tipo** `String`
       * **Valor**(s) um ou mais protocolos padrão
+
    * Definição de como lidar com o atributo de direcionamento de um link. Criar um nó:
 
       * **Nome** `targetConfig`
       * **Tipo** `nt:unstructured`
 
-      No nó `targetConfig`: defina as propriedades necessárias:
+     No nó `targetConfig`: defina as propriedades necessárias:
 
       * Especifique o modo de destino:
 
@@ -695,26 +711,21 @@ Ao adicionar links em [!DNL Experience Manager], você pode definir os estilos C
 
             * `auto`: significa que um target automático foi escolhido
 
-               (especificado pelo `targetExternal` propriedade para links externos ou `targetInternal` para links internos).
+              (especificado pelo `targetExternal` propriedade para links externos ou `targetInternal` para links internos).
 
             * `manual`: não aplicável neste contexto
             * `blank`: não aplicável neste contexto
+
       * O target para links internos:
 
          * **Nome** `targetInternal`
          * **Tipo** `String`
          * **Valor** o target para links internos (usar somente quando o modo for `auto`)
+
       * O target para links externos:
 
          * **Nome** `targetExternal`
          * **Tipo** `String`
          * **Valor** o target para links externos (usado somente quando o modo é `auto`).
-
-
-
-
-
-
-
 
 1. Salve todas as alterações.

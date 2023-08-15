@@ -3,10 +3,10 @@ title: Jornada de Desenvolvedor do AEM CMS Headless
 description: Saiba mais sobre o desenvolvimento headless usando o Adobe Experience Manager (AEM) como um CMS Headless. Saiba como usar recursos como Modelos de conteúdo, Fragmentos de conteúdo e uma API GraphQL para potencializar a entrega de conteúdo headless.
 landing-page-description: Saiba mais sobre a entrega e implementação de conteúdo headless. Saiba mais sobre como desenvolver sua estratégia dentro do seu negócio.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1082'
-ht-degree: 94%
+ht-degree: 93%
 
 ---
 
@@ -55,7 +55,7 @@ A seguir estão os perfis que interagem nessa jornada.
 
 Abordaremos muitos tópicos nesta jornada, que lhe fornecerá o conhecimento fundamental de headless no AEM.
 
-Embora você possa ir diretamente para uma parte específica da jornada, muitos conceitos são construídos sobre os citados nos artigos anteriores. Recomendamos que você comece na origem e avance sequencialmente.
+Embora você possa ir diretamente para uma parte específica da jornada, muitos conceitos são construídos sobre os citados nos artigos anteriores. A Adobe recomenda que você comece no início e avance sequencialmente.
 
 | # | Artigo | Descrição |
 |---|---|---|

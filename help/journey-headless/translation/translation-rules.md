@@ -2,10 +2,10 @@
 title: Configurar regras de tradução para conteúdo headless
 description: Saiba como definir regras de tradução para identificar o conteúdo a ser traduzido.
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 98%
+source-wordcount: '941'
+ht-degree: 97%
 
 ---
 
@@ -69,7 +69,7 @@ Existe um console de **Configuração de tradução** disponível para configura
 
 Na interface da **Configuração de tradução**, há várias opções disponíveis para suas regras de tradução. Aqui destacamos as etapas mais necessárias e típicas de uma configuração básica de localização headless.
 
-1. Toque ou clique em **Adicionar contexto**, o que permite adicionar um caminho. Esse é o caminho do conteúdo que deve ser afetado pela regra.
+1. Toque ou clique **Adicionar contexto**, que permite adicionar um caminho. Esse é o caminho do conteúdo que deve ser afetado pela regra.
    ![Adicionar contexto](assets/add-translation-context.png)
 1. Use o navegador de caminho para selecionar o caminho necessário e toque ou clique no botão **Confirmar** para salvar. Lembre-se, os fragmentos de conteúdo, que possuem conteúdo headless, geralmente estão localizados em `/content/dam/<your-project>`.
    ![Selecione o caminho](assets/select-context.png)

@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 3db2ff19-dc24-47b6-aa56-2ee2305fe045
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '931'
-ht-degree: 92%
+ht-degree: 90%
 
 ---
 
@@ -53,7 +53,7 @@ As informações nesta jornada podem ser úteis para todos os perfis, mas alguma
 
 Muitos tópicos serão explorados nesta jornada. Os artigos a seguir fornecem conhecimento básico sobre a tradução de conteúdo de sites no AEM e oferecem links para a documentação técnica detalhada.
 
-Embora seja possível ir diretamente para uma parte específica da jornada, muitos conceitos baseiam-se em artigos anteriores. Portanto, se você for novo em tradução no AEM, recomendamos começar do início e avançar sequencialmente.
+Embora seja possível ir diretamente para uma parte específica da jornada, muitos conceitos baseiam-se em artigos anteriores. Portanto, se você é novo na tradução no AEM, a Adobe recomenda que você comece do início e avance sequencialmente.
 
 | # | Artigo | Descrição |
 |---|---|---|

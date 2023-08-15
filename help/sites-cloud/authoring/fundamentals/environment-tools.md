@@ -2,10 +2,10 @@
 title: Ambiente e ferramentas de criação
 description: O ambiente de criação do AEM fornece vários mecanismos para organização e edição de conteúdo
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2153'
-ht-degree: 54%
+source-wordcount: '2150'
+ht-degree: 52%
 
 ---
 
@@ -15,7 +15,7 @@ O ambiente de criação do AEM fornece vários mecanismos para organização e e
 
 ## Gerenciar o site {#managing-your-site}
 
-O console **Sites** permite navegar e gerenciar o site, usando a barra de cabeçalho, a barra de ferramentas, os ícones de ação (aplicáveis ao recurso selecionado), as navegações estruturais e, quando selecionados, os trilhos secundários (por exemplo, linha do tempo e referências).
+A variável **Sites** o console permite navegar e gerenciar o site, usando a barra de cabeçalho, a barra de ferramentas, os ícones de ação (aplicáveis ao recurso selecionado), as navegações estruturais e, quando selecionados, os painéis secundários (por exemplo, linha do tempo e referências).
 
 Por exemplo, exibição de coluna:
 
@@ -265,9 +265,9 @@ Além disso, **Informações da página** O pode fornecer acesso a análises e r
 Há vários modos ao editar uma página que permitem ações diferentes:
 
 * [Editar](/help/sites-cloud/authoring/fundamentals/editing-content.md) - o modo a ser usado ao editar o conteúdo da página.
-* [Layout](/help/sites-cloud/authoring/features/responsive-layout.md) - permite que você crie e edite seu layout responsivo dependente do dispositivo (se a página for baseada em um contêiner de layout)
+* [Layout](/help/sites-cloud/authoring/features/responsive-layout.md) - permite criar e editar o layout responsivo dependente do dispositivo (se a página for baseada em um contêiner de layout)
 * [Direcionamento](/help/sites-cloud/authoring/personalization/targeted-content.md) - aumentar a relevância do conteúdo por meio do direcionamento e da medição em todos os canais.
-* [Timewarp](/help/sites-cloud/authoring/features/page-versions.md#timewarp) - permite exibir um estado de páginas em um momento específico.
+* [Timewarp](/help/sites-cloud/authoring/features/page-versions.md#timewarp) - permite a exibição do estado das páginas em um momento específico.
 * [Status da Live Copy](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status) - permite uma visão geral rápida do status da live copy e de quais componentes não são herdados.
 * [Modo de desenvolvedor](/help/implementing/developing/tools/developer-mode.md)
 * [Visualizar](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages) - usado para exibir a página como ela é mostrada no ambiente de publicação; ou navegar usando links no conteúdo.

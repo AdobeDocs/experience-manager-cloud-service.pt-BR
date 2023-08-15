@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 59e27998820e3c877c5594b9284b43ce108394fa
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1575'
+source-wordcount: '1572'
 ht-degree: 4%
 
 ---
@@ -68,7 +68,7 @@ Você precisa do seguinte para criar um Formulário adaptável:
 
    * **Modelo editável**: é possível [criar um novo](template-editor.md) ou [importar um modelo editável existente](migrate-to-forms-as-a-cloud-service.md). Você também pode implantar o [arquétipo mais recente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.tests%3A%20are%20integration%20based%20Java.) para obter alguns modelos editáveis de amostra.
 
-   * **Modelo estático**: esses são modelos herdados e são recomendados apenas para clientes que estão migrando do Adobe Managed Services (AMS) e de instalações locais do AEM Forms (AEM 6.5 Forms ou anterior). Eles permitem que você continue a usar seu investimento existente em modelos estáticos. Ao criar um novo Formulário adaptável, é recomendável usar um Modelo editável.
+   * **Modelo estático**: esses são modelos herdados e são recomendados apenas para clientes que estão migrando do Adobe Managed Services (AMS) e de instalações locais do AEM Forms AEM (6.5 Forms ou anterior). Eles permitem que você continue a usar seu investimento existente em modelos estáticos. Ao criar um novo Formulário adaptável, é recomendável usar um Modelo editável.
 
 
 
@@ -196,7 +196,7 @@ Também é possível modificar as propriedades do modelo de formulário pelo edi
 1. Selecione o **[!UICONTROL Modelo de dados]** e siga um destes procedimentos:
 
    * Se o formulário adaptável não tiver um modelo de formulário, você poderá escolher um modelo de formulário e selecionar <!-- a form template, --> Esquema XML, JSON ou modelo de dados de formulário.
-   * Se o formulário adaptável for baseado em um modelo de formulário, você não poderá alterar o modelo de formulário. Você pode escolher outro <!-- form template, --> Esquema XML, JSON ou Modelo de dados de formulário para o mesmo modelo de formulário conforme aplicável.
+   * Se o formulário adaptável for baseado em um modelo de formulário, não será possível alterar o modelo de formulário. Você pode escolher outro <!-- form template, --> Esquema XML, JSON ou Modelo de dados de formulário para o mesmo modelo de formulário conforme aplicável.
 1. Toque ![Salvar](/help/forms/assets/check-button.png) para salvar as propriedades.
 
 ![FDM-Schema-Support](/help/forms/assets/fdmsupport.png)

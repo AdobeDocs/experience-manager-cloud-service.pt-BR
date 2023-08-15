@@ -4,9 +4,9 @@ description: Mover, excluir, copiar, renomear, atualizar e criar versões de seu
 role: User,Leader
 contentOwner: AG
 exl-id: b01e98b9-0cc2-47c5-9f5b-79b8e6bef39f
-source-git-commit: d198b3f0c7d8469a376ba7a3e95e57c84f835dbb
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1034'
 ht-degree: 92%
 
 ---
@@ -88,7 +88,7 @@ Você também pode criar versões na linha do tempo de versões. Selecione a ver
 
 **Permissões necessárias:** `Can Edit`, `Owner` ou permissões de administrador em um ativo.
 
-A exibição de Ativos permite definir o status em ativos disponíveis no repositório. Defina um status de ativo para melhor administrar e gerenciar o consumo downstream de ativos digitais.
+A visualização de ativos permite que você defina o status em ativos disponíveis no repositório. Defina um status de ativo para melhor administrar e gerenciar o consumo downstream de ativos digitais.
 
 Você pode definir o seguinte status em ativos:
 

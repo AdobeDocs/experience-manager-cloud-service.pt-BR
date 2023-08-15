@@ -2,10 +2,10 @@
 title: Saiba mais sobre como usar referências em Fragmentos de conteúdo
 description: Saiba mais sobre como usar referências em Fragmentos de conteúdo para conteúdo, outros fragmentos e outros ativos (mídia). Apresente a necessidade e a mecânica de fragmentos aninhados para a criação de CMS headless.
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 95%
+source-wordcount: '728'
+ht-degree: 87%
 
 ---
 
@@ -79,7 +79,7 @@ Como autor, você não é responsável por definir esses relacionamentos (isso �
 
 ### Como criar fragmentos aninhados {#author-nested-fragment}
 
-A criação de referências de fragmento é bastante direta (embora o campo geralmente não seja rotulado como **Referência de fragmento**). Você pode digitar a referência diretamente ou (provavelmente) selecionar o ícone de pasta para abrir um navegador que permite navegar e selecionar o fragmento necessário.
+A criação de referências de fragmento é bastante direta (embora o campo geralmente não seja rotulado como **Referência de fragmento**). Você pode digitar a referência diretamente ou (mais provavelmente) selecionar o ícone de pasta para abrir um navegador que permita navegar e selecionar o fragmento necessário.
 
 ![Fragmentos de conteúdo: referências](/help/journey-headless/author/assets/headless-journey-author-references-03.png)
 

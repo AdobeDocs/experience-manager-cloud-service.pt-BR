@@ -3,9 +3,9 @@ title: Importar e exportar ativos
 seo-title: Import and export assets to [!DNL AEM Forms]
 description: Você pode importar e exportar o Adaptive Forms e ativos relacionados para instâncias AEM. Isso ajuda a migrar formulários ou movê-los entre sistemas.
 seo-description: You can import and export Adaptive Forms and templates from and in to AEM instances. This helps in migrating forms or moving them across systems.
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1325'
+source-wordcount: '1323'
 ht-degree: 1%
 
 ---
@@ -53,7 +53,7 @@ Para fazer upload de ativos do Forms e do Documents:
 1. Faça logon no [!DNL AEM Forms] instância.
 1. Toque em Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) ícone > navegação ![bússola](assets/Smock_Compass_18_N.svg) ícone> **[!UICONTROL Forms]** > **[!UICONTROL Forms e documentos]**.
 1. Toque **Criar** >**Upload de arquivo**. Uma caixa de diálogo Carregar formulários ou pacote é exibida.
-1. Na caixa de diálogo, procure e selecione o pacote ou o arquivo a ser importado. Você também pode selecionar o documento PDF, XSDs, imagens, folhas de estilos e formulários XDP. Toque **[!UICONTROL Abertura]**. A pasta ou o nome de arquivo selecionado não deve incluir caracteres especiais.
+1. Na caixa de diálogo, navegue e selecione o pacote ou o arquivo a ser importado. Você também pode selecionar o documento PDF, XSDs, imagens, folhas de estilos e formulários XDP. Toque **[!UICONTROL Abertura]**. A pasta ou o nome de arquivo selecionado não deve incluir caracteres especiais.
 
    Na caixa de diálogo, verifique os detalhes dos ativos que estão sendo carregados e toque em **[!UICONTROL Carregar]**.
 
@@ -221,9 +221,9 @@ Complete the following steps to create copies of assets and letters:
 
 ## Search {#search-forms}
 
-[!DNL AEM Forms] UI allows you to search your content. Using the top bar, you can tap Search **[A]** to search your content for resources such as assets and documents.
+[!DNL AEM Forms] UI lets you search your content. Using the top bar, you can tap Search **[A]** to search your content for resources such as assets and documents.
 
-When you search for assets, [!DNL AEM Forms] displays the side panel. You can also tap ![assets-browser-content-only](assets/assets-browser-content-only.png) &gt; Filter **[B]** to invoke the side panel. Using the various filters in the side panel, you can narrow down your search. The side panel also allows you to save your searches.
+When you search for assets, [!DNL AEM Forms] displays the side panel. You can also tap ![assets-browser-content-only](assets/assets-browser-content-only.png) &gt; Filter **[B]** to invoke the side panel. Using the various filters in the side panel, you can narrow down your search. The side panel also lets you save your searches.
 
 ![search_topbar](assets/search_topbar.png)
 
@@ -239,7 +239,7 @@ On the side panel, you can use the following to narrow down your search results:
 * Tags
 * Search Criteria; for example, Modified Dates, Publish Status, LiveCopy Status.
 
-The side panel also allows you to save your search settings with names of your choice.
+The side panel also lets you save your search settings with names of your choice.
 
 For more information and instructions on using search, filters, saved search, and side panel, see [Search](/help/sites-authoring/search.md).
 

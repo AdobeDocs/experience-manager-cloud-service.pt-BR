@@ -2,10 +2,10 @@
 title: Fase de implementação
 description: Verificar se o código e o conteúdo estão prontos para a migração para a nuvem
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2337'
-ht-degree: 9%
+source-wordcount: '2339'
+ht-degree: 10%
 
 ---
 
@@ -59,13 +59,13 @@ Com essa ferramenta, você pode especificar o subconjunto de conteúdo desejado 
 
 A migração de conteúdo é um processo de várias etapas que requer planejamento, rastreamento e colaboração entre equipes diferentes.
 
-Para obter detalhes completos sobre como a ferramenta funciona e como recomendamos que você a use, consulte [Documentação da ferramenta Transferência de conteúdo](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md).
+Para obter detalhes completos sobre como a ferramenta funciona e como o Adobe recomenda usá-la, consulte o [Documentação da ferramenta Transferência de conteúdo](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md).
 
 ## Refatoração do código {#code-refactor}
 
 ### Configurar para desenvolvimento {#set-up-for-development}
 
-É hora de começar a refatorar os recursos existentes para serem compatíveis com o Cloud Services.
+É hora de começar a refatorar os recursos existentes para serem compatíveis com o Cloud Service.
 
 Primeiro, observe a documentação que detalha as ferramentas básicas e comece a refatorar seu código:
 
@@ -112,7 +112,7 @@ Depois de configurar o ambiente de desenvolvimento local, familiarize-se com o S
 
 ### Programar um congelamento do código {#schedule-a-code-freeze}
 
-Para gerenciar o desenvolvimento contínuo do código no AEM ativo, juntamente com as tarefas de refatoração de código como parte da jornada de transição, recomendamos que você programe um período de congelamento do código até concluir a reestruturação do projeto Maven para que seja compatível com o AEM as a Cloud Service.
+Para gerenciar o desenvolvimento contínuo do código no AEM ativo, juntamente com as tarefas de refatoração de código como parte da jornada de transição, a Adobe AEM recomenda que você programe um período de congelamento do código até concluir a reestruturação do projeto Maven para que ele seja compatível com o as a Cloud Service.
 
 Quando a reestruturação do projeto estiver concluída, você poderá retomar o desenvolvimento de novos códigos com base nessa nova estrutura. Isso reduz as falhas de pipeline do Cloud Manager durante os testes e a implantação do código.
 
@@ -130,7 +130,7 @@ Siga as práticas recomendadas nos documentos abaixo relacionados ao teste de qu
 
 ## Preparação para ativação {#preparing-for-go-live}
 
-A preparação do sistema de origem para migração envolve tarefas no nível do administrador do sistema e do AEM. Você pode começar verificando se o repositório de conteúdo está em um estado bem mantido, marcando a opção [limpeza de revisão](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html) e a variável [coleta de lixo do armazenamento de dados](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/data-store-garbage-collection.html) status da tarefa. Se você estiver executando a versão 6.3 do AEM (já que a ferramenta Transferência de conteúdo é compatível da versão 6.3 em diante), é recomendável executar a compactação offline, seguida da coleta de Lixo do Data Store.
+A preparação do sistema de origem para migração envolve tarefas no nível do administrador do sistema e do AEM. Você pode começar verificando se o repositório de conteúdo está em um estado bem mantido, marcando a opção [limpeza de revisão](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=pt-BR) e a variável [coleta de lixo do armazenamento de dados](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/data-store-garbage-collection.html?lang=pt-BR) status da tarefa. Se você estiver executando a versão 6.3 do AEM (já que a ferramenta Transferência de conteúdo é compatível da versão 6.3 em diante), é recomendável executar a compactação offline, seguida da coleta de Lixo do Data Store.
 
 [Verificação de consistência de dados](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/consistency-check.html) O é recomendado em todas as versões do AEM para garantir que o repositório de conteúdo esteja em bom estado para iniciar as atividades de migração.
 

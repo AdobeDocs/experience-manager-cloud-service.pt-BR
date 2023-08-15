@@ -2,9 +2,9 @@
 title: Externalizar URLs
 description: O Externalizador é um serviço OSGi que permite transformar programaticamente um caminho de recurso em um URL externo e absoluto.
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '653'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Para substituir o `preview` e `publish` valores, use as variáveis de ambiente d
 
 ## Configurar o serviço externalizador {#configuring-the-externalizer-service}
 
-O serviço Externalizador permite definir centralmente o domínio que pode ser usado para prefixar programaticamente caminhos de recursos. O serviço Externalizer só deve ser usado para aplicativos com um único domínio.
+O serviço Externalizer permite definir centralmente o domínio que pode ser usado para prefixar programaticamente caminhos de recursos. O serviço Externalizer só deve ser usado para aplicativos com um único domínio.
 
 >[!NOTE]
 >

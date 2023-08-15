@@ -4,9 +4,9 @@ description: Gerenciar documentos do PDF no [!DNL Adobe Experience Manager] as a
 feature: Asset Management
 role: User,Admin
 exl-id: 29660869-6902-4093-845b-cd629be59d4d
-source-git-commit: 589ed1e1befa84c0caec0eed986c3e1a717ae602
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '853'
+source-wordcount: '849'
 ht-degree: 4%
 
 ---
@@ -44,7 +44,7 @@ O visualizador nativo da PDF Doc Cloud tem os seguintes componentes no AEM Asset
 
 ## Suporte para visualização de várias páginas e anotações para o ativo PDF {#multi-page}
 
-O Adobe Experience Manager Assets permite visualizar o documento do PDF que consiste em várias páginas. Para visualizar várias páginas de um documento PDF, considere as seguintes etapas:
+O Adobe Experience Manager Assets permite pré-visualizar o documento do PDF que consiste em várias páginas. Para visualizar várias páginas de um documento PDF, considere as seguintes etapas:
 
 1. Siga as etapas para [fazer upload de ativos no AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=en).
 1. Navegue pelo documento PDF que você deseja carregar e visualizar.

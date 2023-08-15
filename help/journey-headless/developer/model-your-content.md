@@ -2,10 +2,10 @@
 title: Como modelar seu conteúdo
 description: Nesta parte da jornada do desenvolvedor do AEM Headless, saiba como modelar o conteúdo para a entrega do AEM Headless usando a modelagem de conteúdo com modelos de fragmento de conteúdo e fragmentos de conteúdo.
 exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1830'
-ht-degree: 97%
+source-wordcount: '1828'
+ht-degree: 95%
 
 ---
 
@@ -147,7 +147,7 @@ A estrutura do modelo de conteúdo é:
 >
 >Os Modelos de fragmento de conteúdo também são usados como a base dos Esquemas da GraphQL do AEM, usados para recuperar conteúdo. Falaremos mais sobre isso em uma próxima sessão.
 
-As solicitações de conteúdo são feitas usando a API GraphQL do AEM, uma implementação personalizada da API GraphQL padrão. A API GraphQL do AEM permite realizar consultas (complexas) nos Fragmentos de conteúdo; cada uma dessas consultas está de acordo com um tipo de modelo específico.
+As solicitações de conteúdo são feitas usando a API GraphQL do AEM, uma implementação personalizada da API GraphQL padrão. A API do GraphQL do AEM permite realizar consultas (complexas) nos fragmentos de conteúdo, com cada consulta de acordo com um tipo de modelo específico.
 
 O conteúdo retornado pode ser usado pelos seus aplicativos.
 
@@ -169,7 +169,7 @@ Dentro de um modelo:
 1. **Tipos de dados** permitem definir os atributos individuais.
 Por exemplo, defina o campo com o nome de um professor como **Texto** e seus anos de serviço como **Número**.
 1. Os tipos de dados **Referência de conteúdo** e **Referência de fragmento** permitem criar relações com outro conteúdo no AEM.
-1. O tipo de dados **Referência de fragmento** permite que você atinja vários níveis de estrutura aninhando seus Fragmentos de conteúdo (de acordo com o tipo de modelo). Isso é essencial para a modelagem de conteúdo.
+1. A variável **Referência do fragmento** O tipo de dados permite que você realize vários níveis de estrutura aninhando os fragmentos de conteúdo (de acordo com o tipo de modelo). Isso é essencial para a modelagem de conteúdo.
 
 Por exemplo:
 ![Modelagem de conteúdo com Fragmentos de conteúdo](assets/headless-modeling-01.png "Modelagem de conteúdo com Fragmentos de conteúdo")

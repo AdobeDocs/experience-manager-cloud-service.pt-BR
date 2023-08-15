@@ -2,10 +2,10 @@
 title: Saiba mais sobre como definir metadados e marcação para fragmentos de conteúdo
 description: Saiba mais sobre como definir metadados e marcação para fragmentos de conteúdo
 exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
-source-git-commit: 1486a330e7931ab679f37464c3e22a27ea0d5876
-workflow-type: ht
-source-wordcount: '263'
-ht-degree: 100%
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+workflow-type: tm+mt
+source-wordcount: '261'
+ht-degree: 85%
 
 ---
 
@@ -32,11 +32,11 @@ Há três métodos que você pode usar para adicionar metadados e tags:
 
   ![Criar fragmento de conteúdo: fornecer um nome](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
-* A guia **Variações** do editor de fragmento de conteúdo permite adicionar **tags** predefinidas do seu projeto:
+* A variável **Variações** do editor de Fragmento de conteúdo permite adicionar propriedades **Tags** do seu projeto:
 
   ![Editor de fragmentos de conteúdo - Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
 
-* A guia **Metadados** do editor de fragmento de conteúdo permite adicionar vários campos de metadados e **tags** predefinidas do seu projeto:
+* A variável **Metadados** permite adicionar vários campos de metadados e campos de dados predefinidos, **Tags** do seu projeto:
 
   ![Editor de fragmento de conteúdo: metadados](/help/journey-headless/author/assets/headless-journey-author-metadata-01.png)
 

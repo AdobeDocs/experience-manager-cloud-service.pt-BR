@@ -2,9 +2,9 @@
 title: Como adicionar variáveis nas etapas do fluxo de trabalho do AEM?
 description: Saiba como criar uma variável, definir um valor para a variável e usá-lo no [!DNL AEM Forms] Etapas do workflow.
 exl-id: d9139ea9-2f86-476c-8767-b36766790f2c
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2080'
+source-wordcount: '2079'
 ht-degree: 1%
 
 ---
@@ -167,7 +167,7 @@ Da mesma forma, selecione um caminho de script externo ou especifique o script E
 
 #### Etapa Ir para {#go-to-step}
 
-A variável **Etapa Ir para** permite especificar a próxima etapa no modelo de fluxo de trabalho a ser executada, dependendo do resultado de uma expressão de roteamento.
+A variável **Etapa Ir para** permite especificar a próxima etapa do modelo de fluxo de trabalho a ser executada, dependendo do resultado de uma expressão de roteamento.
 
 Semelhante à etapa OU Split, você pode definir a expressão de roteamento para a etapa Ir para usando uma definição de regra, um script ECMA ou um script externo.
 

@@ -5,9 +5,9 @@ topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3174'
+source-wordcount: '3173'
 ht-degree: 1%
 
 ---
@@ -83,7 +83,7 @@ Para criar um Formulário adaptável habilitado para assinatura:
 
    1. Selecione o [contêiner de configuração](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) criado enquanto [integração [!DNL Adobe Sign] com [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md).
 
-   O contêiner de configuração contém o [!DNL Adobe Sign] Cloud Services configurado para o seu ambiente. Esses serviços estão disponíveis para seleção no editor de Formulário adaptável.
+   O contêiner de configuração contém o [!DNL Adobe Sign] Cloud Service configurado para o seu ambiente. Esses serviços estão disponíveis para seleção no editor de Formulário adaptável.
 
 1. No **[!UICONTROL Modelo de formulário]** selecione uma das seguintes opções:
 
@@ -164,11 +164,11 @@ Para selecionar um Cloud Service e a ordem da assinatura:
 
 1. No Navegador de conteúdo, toque em **[!UICONTROL Contêiner de formulário]** e toque no **[!UICONTROL Configurar]** ![configurar](assets/Smock_Wrench_18_N.svg) ícone. Ela abre as propriedades do navegador e exibe as propriedades do contêiner do Formulário adaptável.
 1. No navegador de propriedades, expanda a variável **[!UICONTROL Assinatura eletrônica]** e selecione a opção **[!UICONTROL Ativar o Adobe Sign]** opção. Ele permite [!DNL Adobe Sign] para um Formulário adaptável.
-1. Selecione um Cloud Service na lista já configurada de [!DNL Adobe Sign] Cloud Services.
+1. Selecione um Cloud Service na lista já configurada de [!DNL Adobe Sign] Cloud Service.
 
    Se a variável **[!UICONTROL Adobe Sign Cloud Service]** estiver vazia, siga as instruções [Configurar [!DNL Adobe Sign] com [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md) artigo para configurar o serviço.
 
-   A lista suspensa lista os Cloud Services que existem na variável `global` pasta em Ferramentas > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Sign]**. Além disso, a lista suspensa também lista os Cloud Services que existem na pasta selecionada no **[!UICONTROL Contêiner de configuração]** ao criar um Formulário adaptável.
+   A lista suspensa lista os Cloud Service que existem na variável `global` pasta em Ferramentas > **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Sign]**. Além disso, a lista suspensa também lista os Cloud Service que existem na pasta selecionada no **[!UICONTROL Contêiner de configuração]** ao criar um Formulário adaptável.
 
 1. Selecione a ordem de assinatura na **[!UICONTROL Os recipients podem preencher]** caixa de diálogo. Os recipients podem assinar um Formulário adaptável **[!UICONTROL Sequencialmente]** - um após o outro destinatário, ou **[!UICONTROL Simultaneamente]** - em qualquer ordem.
 
@@ -201,7 +201,7 @@ Você pode ter um ou vários destinatários para um contrato do Adobe Sign. Ao a
 
      >[!NOTE]
      >
-     >Certifique-se de que o endereço de email do primeiro ou do único recipient (se houver um único recipient) não seja idêntico a [!DNL Adobe Sign] conta usada para configurar o AEM Cloud Services.
+     >Certifique-se de que o endereço de email do primeiro ou do único recipient (se houver um único recipient) não seja idêntico a [!DNL Adobe Sign] conta usada para configurar o AEM Cloud Service.
 
    * **[!UICONTROL Método de autenticação do recipient]:** Especifique o método para autenticar um recipient antes de abrir o contrato do Adobe Sign. Você pode escolher entre telefone, base de conhecimento, autenticação com base na identidade social e [ID do governo](https://helpx.adobe.com/sign/using/adobesign-authentication-government-id.html) para [!DNL Adobe Acrobat Sign]. Para [!DNL Adobe Acrobat Sign for Government] você pode escolher entre autenticação por telefone e autenticação baseada em conhecimento.
 
@@ -357,9 +357,9 @@ Quando [!DNL Adobe Sign] for configurado para um Formulário adaptável, o servi
 
 * Verifique a [configuração do Adobe Sign Cloud Service](adobe-sign-integration-adaptive-forms.md) usado no Formulário adaptável.
 * Verifique se o aplicativo da API está ativado [!DNL Adobe Sign] servidor usado para configurar [!DNL Adobe Sign] O Cloud Service tem as permissões necessárias.
-* Se você estiver usando vários [!DNL Adobe Sign] Cloud Services, aponte o **[!UICONTROL URL do OAuth]** de todos os serviços para a mesma **[!UICONTROL Fragmento do Adobe Sign]**.
+* Se você estiver usando vários [!DNL Adobe Sign] Cloud Service, aponte o **[!UICONTROL URL do OAuth]** de todos os serviços para a mesma **[!UICONTROL Fragmento do Adobe Sign]**.
 
-* Use endereços de email separados para configurar [!DNL Adobe Sign] conta e para o primeiro ou único destinatário. O endereço de email do primeiro recipient ou do único recipient (se houver um único recipient) não pode ser idêntico a [!DNL Adobe Sign] conta usada para configurar o AEM Cloud Services.
+* Use endereços de email separados para configurar [!DNL Adobe Sign] conta e para o primeiro ou único destinatário. O endereço de email do primeiro recipient ou do único recipient (se houver um único recipient) não pode ser idêntico a [!DNL Adobe Sign] conta usada para configurar o AEM Cloud Service.
 
 ## Artigos relacionados {#related-articles}
 

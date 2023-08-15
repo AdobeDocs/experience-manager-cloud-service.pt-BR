@@ -6,9 +6,9 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: 1046231f-787c-4e49-9ba0-e7dd59e41bce
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2135'
+source-wordcount: '2131'
 ht-degree: 2%
 
 ---
@@ -117,7 +117,7 @@ No [!UICONTROL Editar contêiner adaptável do Forms] você pode especificar o s
 
      >[!NOTE]
      >
-     > Após configurar o modelo de dados de formulário, você não pode alterar o Modelo de formulário associado. No entanto, é possível modificar o schema associado ao modelo de dados de formulário.
+     > Após configurar o modelo de dados de formulário, não é possível alterar o Modelo de formulário associado. No entanto, é possível modificar o schema associado ao modelo de dados de formulário.
 
 * **Guia Enviar**
 
@@ -163,7 +163,7 @@ Para habilitar [!UICONTROL Forms adaptável - incorporado(v2)] componente na pol
 
 +++ Incluir bibliotecas de clientes Forms adaptáveis na página AEM Sites
 
-Quando a variável **[!UICONTROL Quando o formulário cobre toda a largura de uma página]** estiver selecionada na caixa **[!UICONTROL Contêineres de formulário]** caixa de diálogo configurar e **Forms adaptável usando componentes principais** forem usadas, será necessário incluir as clientlibs na página do site correspondente.
+Quando a variável **[!UICONTROL Quando o formulário cobre toda a largura de uma página]** estiver selecionada na caixa **[!UICONTROL Contêineres de formulário]** caixa de diálogo configurar e **Forms adaptável usando componentes principais** forem usados, será necessário incluir as clientlibs na página do site correspondente.
 
 ![Sobrepor Gif](/help/forms/assets/overlaycorecomponent.gif)
 

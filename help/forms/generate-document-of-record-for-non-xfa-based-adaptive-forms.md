@@ -2,9 +2,9 @@
 title: Gerar um documento de registro para o Adaptive Forms
 description: Explica como gerar um modelo para um Documento de registro (DoR) do Adaptive Forms.
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '4143'
+source-wordcount: '4139'
 ht-degree: 2%
 
 ---
@@ -103,7 +103,7 @@ Vincule campos de formulário adaptável a campos de modelo para exibir dados de
 1. Clique em **[!UICONTROL Salvar]**.
 
 <!-- 
-In the following video Adaptive Form components are binded with corresponding Acroform template fields and the Document of Record is sent as an email attachment.
+In the following video, Adaptive Form components are bound with corresponding Acroform template fields and the Document of Record is sent as an email attachment.
 -->
 
 Você pode usar Enviar e-mail, ação enviar do Fluxo de trabalho do Experience Manager em conjunto com [Etapa Documento de registro e outras ações de envio](configuring-submit-actions.md) para receber um documento de registro.
@@ -286,19 +286,19 @@ Os componentes da tabela Adaptive Forms, como cabeçalho, rodapé e mapa de linh
 
 O modelo base fornece informações de estilo e aparência ao documento de registro. Ela permite personalizar a aparência padrão do documento de registro gerado automaticamente. Por exemplo, você pode usar o modelo base para adicionar o logotipo da sua empresa nas informações de cabeçalho e direitos autorais no rodapé do documento de registro.
 
-A página principal do modelo base é usada como uma página principal do modelo Documento de registro. A página principal pode ter informações como cabeçalho, rodapé e número de página que podem ser aplicadas ao documento de registro. É possível aplicar essas informações ao Documento de registro usando o modelo base para a geração automática do Documento de registro. O uso do template base permite alterar as propriedades padrão dos campos.
+A página mestra do modelo base é usada como uma página mestra do modelo de documento de registro. A página-mestre pode ter informações como cabeçalho, rodapé e número de página que podem ser aplicadas ao documento de registro. É possível aplicar essas informações ao Documento de registro usando o modelo base para a geração automática do Documento de registro. O uso do template base permite alterar as propriedades padrão dos campos.
 
 Sempre seguir [Convenções do modelo base](#base-template-conventions) ao criar o modelo base.
 
 ## Convenções do modelo base {#base-template-conventions}
 
-Um modelo base é usado para definir o cabeçalho, rodapé, estilo e aparência de um documento de registro. O cabeçalho e o rodapé podem incluir informações como o logotipo da empresa e o texto de direitos autorais. A primeira página principal no modelo base é copiada e usada como uma página principal para o documento de registro, que contém o cabeçalho, o rodapé, o número da página ou qualquer outra informação que deve aparecer em todas as páginas no documento de registro. Se você usar um modelo base que não esteja em conformidade com as convenções do modelo base, a primeira página principal do modelo base ainda será usada no modelo Documento de registro. É altamente recomendável que você projete seu modelo base de acordo com suas convenções e o use para a geração automática do Documento de registro.
+Um modelo base é usado para definir o cabeçalho, rodapé, estilo e aparência de um documento de registro. O cabeçalho e o rodapé podem incluir informações como o logotipo da empresa e o texto de direitos autorais. A primeira página mestra no modelo base é copiada e usada como página mestra do documento de registro, que contém o cabeçalho, o rodapé, o número da página ou qualquer outra informação que deve aparecer em todas as páginas do documento de registro. Se você usar um modelo base que não esteja em conformidade com as convenções do modelo base, a primeira página-mestre do modelo base ainda será usada no modelo Documento de registro. É altamente recomendável que você projete seu modelo base de acordo com suas convenções e o use para a geração automática do Documento de registro.
 
-**Convenções de página principal**
+**Convenções da página principal**
 
 * No template base, nomeie o subformulário raiz como `AF_METATEMPLATE` e a página principal como `AF_MASTERPAGE`.
 
-* A página principal com o nome `AF_MASTERPAGE` localizado abaixo de `AF_METATEMPLATE` o subformulário raiz é preferido para extrair informações de cabeçalho, rodapé e estilo.
+* A página mestra com o nome `AF_MASTERPAGE` localizado abaixo de `AF_METATEMPLATE` o subformulário raiz é preferido para extrair informações de cabeçalho, rodapé e estilo.
 
 * Se `AF_MASTERPAGE` estiver ausente, a primeira página principal presente no modelo base será usada.
 
@@ -444,7 +444,7 @@ A configuração do componente Documento de registro está disponível em suas p
 
 ## Usar um arquivo XCI personalizado
 
-Um arquivo XCI ajuda a definir várias propriedades de um documento. O Forms as a Cloud Service tem um arquivo XCI principal. Você pode usar um arquivo XCI personalizado para substituir uma ou mais propriedades padrão especificadas no arquivo XCI principal. Por exemplo, você pode optar por incorporar uma fonte em um documento ou ativar a propriedade marcada para todos os documentos. A tabela a seguir especifica as opções de XCI:
+Um arquivo XCI ajuda a definir várias propriedades de um documento. O Forms as a Cloud Service tem um arquivo XCI principal. Você pode usar um arquivo XCI personalizado para substituir uma ou mais propriedades padrão especificadas no arquivo XCI mestre. Por exemplo, você pode optar por incorporar uma fonte em um documento ou ativar a propriedade marcada para todos os documentos. A tabela a seguir especifica as opções de XCI:
 
 | Opção XCI | Descrição |
 |--- |--- |

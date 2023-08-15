@@ -2,10 +2,10 @@
 title: Configuração da segmentação com o ContextHub
 description: Saiba como configurar a segmentação usando o ContextHub.
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1691'
-ht-degree: 88%
+source-wordcount: '1687'
+ht-degree: 87%
 
 ---
 
@@ -17,7 +17,7 @@ Dependendo das informações que você já coletou sobre os visitantes do seu si
 
 Esses segmentos são usados para fornecer conteúdo direcionado especificamente a um visitante. As [atividades](activities.md) definidas aqui podem ser incluídas em qualquer página e definem para qual segmento de visitante o conteúdo especializado se aplica.
 
-O AEM permite personalizar facilmente as experiências dos usuários. Também permite verificar os resultados das definições de segmento.
+O AEM permite personalizar facilmente as experiências dos usuários. Ela também permite verificar os resultados das definições de segmento.
 
 ## Acessar segmentos {#accessing-segments}
 
@@ -29,8 +29,8 @@ Para acessar seus segmentos, na navegação global, selecione **Navegação > Pe
 
 ## Editor do segmento  {#segment-editor}
 
-<!--The **Segment Editor** allows you to easily modify a segment. To edit a segment, select a segment in the [list of segments](/help/sites-administering/segmentation.md#accessing-segments) and click the **Edit** button.-->
-O **Editor de segmentos** permite modificar facilmente um segmento. Para editar um segmento, selecione-o na lista de segmentos e clique no botão **Editar**.
+<!--The **Segment Editor** lets you easily modify a segment. To edit a segment, select a segment in the [list of segments](/help/sites-administering/segmentation.md#accessing-segments) and click the **Edit** button.-->
+A variável **Editor de segmentos** O permite modificar facilmente um segmento. Para editar um segmento, selecione-o na lista de segmentos e clique no botão **Editar**.
 
 ![Editor de segmento](../assets/contexthub-segment-editor.png)
 
@@ -101,7 +101,7 @@ Para definir seu novo segmento:
    * Valor mínimo: `0`
    * Valor máximo: `1000000`
 
-1. No console segmentos, edite o segmento recém-criado para abri-lo no editor de segmentos.
+1. No console segmentos, edite o segmento criado recentemente para abri-lo no editor de segmentos.
 1. Arraste uma comparação ou referência para o editor de segmentos e ela aparecerá no contêiner AND padrão.
 1. Clique duas vezes em ou toque na opção de configuração da nova referência ou segmento para editar os parâmetros específicos. Neste exemplo, estamos testando para pessoas na Basileia.
 

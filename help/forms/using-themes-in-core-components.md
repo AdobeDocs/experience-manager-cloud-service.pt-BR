@@ -4,9 +4,9 @@ description: Você pode usar temas para estilizar e fornecer uma identidade visu
 seo-description: You can create a new theme by customizing the available theme. The themes are customized and deployed using frontend pipeline.
 keywords: criar novo tema, personalizar tema, carregar novo tema, usar tema em formulários, personalizar tema usando pipeline de front-end
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: fc0ff8cff8c616bc5576d834883aa0fe38ef593e
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2711'
+source-wordcount: '2709'
 ht-degree: 2%
 
 ---
@@ -61,7 +61,7 @@ A personalização de um tema refere-se ao processo de modificação e personali
 ### Pré-requisitos {#prerequisites-to-customize}
 
 * Familiarize-se com [configuração de um pipeline no Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline) e ter conhecimento básico sobre como configurar um pipeline ajuda você a gerenciar e implantar com eficiência suas personalizações de tema.
-* Saiba como [configurar um usuário com a função de colaborador](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html). Entender como configurar um usuário com a função de colaborador permite conceder as permissões necessárias para personalização de temas.
+* Saiba como [configurar um usuário com a função de colaborador](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html). Entender como configurar um usuário com a função de colaborador permite que você conceda as permissões necessárias para personalização de temas.
 * Instale a versão mais recente do [Apache Maven.](https://maven.apache.org/download.cgi) O Apache Maven é uma ferramenta de automação de build comumente usada para projetos Java™. A instalação da versão mais recente garante que você tenha as dependências necessárias para a personalização de temas.
 * Instale um editor de texto simples. Por exemplo, Microsoft® Visual Studio Code. O uso de um editor de texto simples, como o Microsoft® Visual Studio Code, fornece um ambiente amigável para a edição e modificação de arquivos de tema.
 

@@ -4,9 +4,9 @@ description: Este artigo descreve como criar, modificar e usar os aspectos de pe
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2445'
+source-wordcount: '2444'
 ht-degree: 22%
 
 ---
@@ -134,7 +134,7 @@ A variável `Multi Value Property` o predicado permite pesquisar vários valores
 
 ## Adicionar um predicado de tags {#adding-a-tags-predicate}
 
-A variável `Tags` O predicado do permite realizar pesquisas por ativos com base em tags. Por padrão, [!DNL Assets] O pesquisa ativos para uma ou mais correspondências de tags com base nas tags especificadas. Em outras palavras, a consulta de pesquisa executa uma operação OR usando as tags especificadas. No entanto, você pode usar a opção Corresponder todas as tags para procurar ativos que incluem todas as tags especificadas.
+A variável `Tags` O predicado permite realizar pesquisas por ativos baseadas em tags. Por padrão, [!DNL Assets] O pesquisa ativos para uma ou mais correspondências de tags com base nas tags especificadas. Em outras palavras, a consulta de pesquisa executa uma operação OR usando as tags especificadas. No entanto, você pode usar a opção Corresponder todas as tags para procurar ativos que incluem todas as tags especificadas.
 
 1. Clique no logotipo do Experience Manager e vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > **[!UICONTROL Pesquisar no Forms]**.
 1. Na página Pesquisar Forms, selecione **[!UICONTROL Trilho de pesquisa do administrador de ativos]** e toque em **Editar** ![aemassets_edit](assets/aemassets_edit.png).
@@ -188,12 +188,12 @@ Semelhante à maneira como você adiciona um predicado de Propriedade ou um pred
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Caminho </p> </td>
+   <td><p>Caminho</p> </td>
    <td><p>Use-a para filtrar os resultados no local. Você pode especificar caminhos diferentes como opções.</p> </td>
    <td>
     <ul>
      <li>Etiqueta</li>
-     <li>Caminho </li>
+     <li>Caminho</li>
      <li>Descrição</li>
     </ul> </td>
   </tr>
@@ -257,7 +257,7 @@ Semelhante à maneira como você adiciona um predicado de Propriedade ou um pred
     <ul>
      <li>Etiqueta</li>
      <li>Nome da propriedade</li>
-     <li>Caminho </li>
+     <li>Caminho</li>
      <li>Descrição</li>
     </ul> </td>
   </tr>
@@ -326,7 +326,7 @@ Se você não recebeu uma função de administrador, esta é uma lista de permis
 |---|---|
 | Editar | Permissões de leitura e gravação no `/apps` no CRX. |
 | Excluir | Permissões de leitura, gravação e exclusão no `/apps` no CRX. |
-| Visualizar | Permissões de leitura, gravação e exclusão no `/var/dam/content` no CRX. Além disso, as permissões de leitura e gravação em `/apps` nó. |
+| Visualização | Permissões de leitura, gravação e exclusão no `/var/dam/content` no CRX. Além disso, as permissões de leitura e gravação em `/apps` nó. |
 
 **Consulte também**
 
@@ -345,4 +345,3 @@ Se você não recebeu uma função de administrador, esta é uma lista de permis
 >[!MORELIKETHIS]
 >
 >* [Pesquisar ativos digitais](search-assets.md).
-

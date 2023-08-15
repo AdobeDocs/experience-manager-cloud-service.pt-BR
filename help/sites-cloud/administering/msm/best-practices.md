@@ -4,10 +4,10 @@ description: Conheça as práticas recomendadas compiladas pelas equipes de enge
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1425'
-ht-degree: 92%
+source-wordcount: '1420'
+ht-degree: 87%
 
 ---
 
@@ -140,7 +140,7 @@ Portanto, recomenda-se apenas utilizar `onModify` acionadores se os benefícios 
 
 ### Tipos/propriedades de nós {#node-types-properties}
 
-Além de personalizar as ações de implantação, o MSM também permite personalizar as propriedades do nó que estão sendo implantadas. A [configuração OSGi do MGM permite excluir tipos de nó](live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) de serem copiados da origem para a Live Copy.
+Além de personalizar as ações de implantação, o MSM também permite personalizar as propriedades do nó que estão sendo implantadas. A variável [A configuração OSGi do MSM permite excluir tipos de nó](live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) de ser copiado da origem para a Live Copy.
 
 ## Informações adicionais {#further-information}
 

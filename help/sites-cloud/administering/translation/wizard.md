@@ -4,10 +4,10 @@ description: Saiba mais sobre como usar o Assistente de cópia de idioma no AEM.
 feature: Language Copy
 role: Admin
 exl-id: bf8bdc53-0248-47de-bb9d-c884a7179ab0
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '282'
-ht-degree: 82%
+source-wordcount: '280'
+ht-degree: 72%
 
 ---
 
@@ -29,11 +29,11 @@ Para acessar o assistente:
 
    ![Criar cópia de idioma a partir do assistente](../assets/language-copy-wizard.png)
 
-1. O assistente é aberto na etapa **Selecionar origem**, o que permite adicionar/remover páginas. Também há a opção de incluir ou excluir as subpáginas. Selecione as páginas que deseja incluir e toque ou clique em **Próximo**.
+1. O assistente é aberto na janela **Selecionar fonte** etapa que permite adicionar/remover páginas. Também há a opção de incluir ou excluir as subpáginas. Selecione as páginas que deseja incluir e toque ou clique em **Próximo**.
 
    ![Adicionar páginas com o assistente](../assets/language-copy-wizard-add-pages.png)
 
-1. A etapa **Configurar** do assistente permite adicionar/remover idiomas e selecionar o método de tradução. Toque ou clique em **Próximo**.
+1. A variável **Configurar** a etapa do assistente permite adicionar/remover idiomas e selecionar o método de tradução. Toque ou clique em **Próximo**.
 
    ![Configurar etapa do assistente](../assets/language-copy-wizard-configure.png)
 

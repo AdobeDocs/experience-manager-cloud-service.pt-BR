@@ -2,9 +2,9 @@
 title: Experience Manager [!DNL Forms] Processamento em lote de Comunicações as a Cloud Service
 description: Como criar comunicações personalizadas e orientadas à marca?
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: 6b546f551957212614e8b7a383c38797cc21fba1
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1693'
+source-wordcount: '1692'
 ht-degree: 2%
 
 ---
@@ -87,7 +87,7 @@ No Armazenamento do Microsoft Azure, crie [contêineres](https://docs.microsoft.
 
 A configuração da nuvem conecta sua instância do Experience Manager ao Armazenamento do Microsoft Azure. Para criar uma configuração na nuvem:
 
-1. Acesse Ferramentas > Cloud Services > Armazenamento do Azure
+1. Acesse Ferramentas > Cloud Service > Armazenamento do Azure
 1. Abra uma pasta para hospedar a configuração e clique em Criar. Você usa a pasta Global ou cria uma pasta.
 1. Especifique o nome da configuração e as credenciais para se conectar ao serviço. Você pode [recuperar essas credenciais do portal de armazenamento do Microsoft Azure](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal#view-account-access-keys).
 1. Clique em Criar.
@@ -157,7 +157,6 @@ A resposta da solicitação de status contém a seção de status. Ele fornece d
 >
 >* Quando você solicita vários formatos de IMPRESSÃO, o status contém várias entradas. Por exemplo, PRINT/ZPL, PRINT/IPL.
 >* Um processo em lote não lê todos os registros simultaneamente. Em vez disso, o processo continua lendo e incrementando o número de registros. Portanto, o status retorna -1 até que todos os registros tenham sido lidos.
-
 
 ### Visualizar documentos gerados {#view-generated-documents}
 

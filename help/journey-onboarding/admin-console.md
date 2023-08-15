@@ -2,10 +2,10 @@
 title: Acesso ao Admin Console
 description: Depois de entender a preparação necessária para realizar a integração e as noções básicas da estrutura do AEMaaCS, você estará pronto para fazer logon no Admin Console pela primeira vez.
 exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1107'
-ht-degree: 94%
+source-wordcount: '1104'
+ht-degree: 89%
 
 ---
 
@@ -26,7 +26,7 @@ Como administrador do sistema, você é responsável por gerenciar os usuários 
 
 ## O Admin Console {#admin-console}
 
-O Adobe Admin Console é um local central para administrar e gerenciar licenças e usuários da Adobe. Ele permite criar e gerenciar usuários em um só local, em vez de em várias soluções separadas.
+O Adobe Admin Console é um local central para administrar e gerenciar licenças e usuários da Adobe. O Admin Console permite criar e gerenciar usuários em um único local, em vez de em várias soluções individuais.
 
 ## Adobe ID {#adobe-id}
 

@@ -2,10 +2,10 @@
 title: Modelos de fragmentos do conteúdo (Ativos - Fragmentos de conteúdo)
 description: Saiba como os modelos de fragmento de conteúdo servem como base para o conteúdo headless no AEM e como criar fragmentos de conteúdo com conteúdo estruturado.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2901'
-ht-degree: 89%
+source-wordcount: '2898'
+ht-degree: 88%
 
 ---
 
@@ -180,7 +180,7 @@ O conteúdo (para o campo específico) deve ser exclusivo em todos os fragmentos
 
   >[!CAUTION]
   >
-  >Se você quiser usar o MSM (que cria cópias de Fragmentos de conteúdo), qualquer **Exclusivo** as restrições devem ser removidas de qualquer tipo de dados usado nos respectivos modelos de fragmento de conteúdo.
+  >Se desejar usar o MSM (que cria cópias de fragmentos de conteúdo), todas as restrições **exclusivas** devem ser removidas de qualquer tipo de dados usado nos respectivos modelos de fragmento de conteúdo.
 
 * Consulte **[Referência de conteúdo](#content-reference)** para obter mais detalhes sobre esse tipo de dados específico e suas propriedades.
 
@@ -236,7 +236,7 @@ Os fragmentos de conteúdo podem formar conteúdo aninhado, usando um dos seguin
 
 ### Referência de conteúdo {#content-reference}
 
-A referência de conteúdo permite renderizar o conteúdo de outra fonte; por exemplo, imagem ou fragmento de conteúdo.
+A Referência de conteúdo permite renderizar o conteúdo de outra fonte; por exemplo, imagem ou fragmento de conteúdo.
 
 Além das propriedades padrão, é possível especificar:
 

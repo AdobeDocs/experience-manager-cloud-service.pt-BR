@@ -2,10 +2,10 @@
 title: Gerenciar seus sites de demonstração
 description: Saiba mais sobre as ferramentas disponíveis para ajudá-lo a gerenciar seus sites de demonstração e como removê-los.
 exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '946'
-ht-degree: 98%
+source-wordcount: '943'
+ht-degree: 94%
 
 ---
 

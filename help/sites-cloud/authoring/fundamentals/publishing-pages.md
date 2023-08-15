@@ -2,10 +2,10 @@
 title: Publicar páginas
 description: Saiba como publicar e desfazer a publicação de suas páginas usando vários mecanismos no AEM.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1807'
-ht-degree: 71%
+source-wordcount: '1804'
+ht-degree: 69%
 
 ---
 
@@ -85,7 +85,7 @@ Se você estiver editando uma página, ela poderá ser publicada diretamente do 
 
 >[!NOTE]
 >
->Páginas acessadas por [pseudônimos](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) no editor não podem ser publicadas. As opções de publicação no editor só estão disponíveis para páginas acessadas por meio de seus caminhos reais.
+>Páginas acessadas por [aliases](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) no editor não pode ser publicado. As opções de publicação no editor só estão disponíveis para páginas acessadas por meio de seus caminhos reais.
 
 ### Publicação por meio do Console {#publishing-from-the-console}
 
@@ -124,7 +124,7 @@ Para publicar ou desfazer a publicação de uma página usando Gerenciar publica
 
    ![Seleção de páginas para publicação](/help/sites-cloud/authoring/assets/publishing-select-pages.png)
 
-1. O assistente para **Gerenciar publicação** é iniciado. A primeira etapa, **Opções**, permite fazer o seguinte:
+1. O assistente para **Gerenciar publicação** é iniciado. A primeira etapa, **Opções**, permite:
 
    * **Ação**
 
@@ -228,7 +228,7 @@ Ao editar uma página, se quiser desfazer a publicação, selecione **Desfazer a
 
 >[!NOTE]
 >
->Páginas acessadas por [pseudônimos](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) no editor não podem ter a publicação desfeita. As opções de publicação no editor só estão disponíveis para páginas acessadas por meio de seus caminhos reais.
+>Páginas acessadas por [aliases](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) no editor não pode ter a publicação desfeita. As opções de publicação no editor só estão disponíveis para páginas acessadas por meio de seus caminhos reais.
 
 ### Desfazer a publicação por meio do Console  {#unpublishing-from-the-console}
 

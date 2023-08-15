@@ -3,10 +3,10 @@ title: Uso do GraphiQL IDE no AEM
 description: Saiba como usar o GraphiQL IDE no Adobe Experience Manager.
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1144'
-ht-degree: 96%
+source-wordcount: '1141'
+ht-degree: 91%
 
 ---
 
@@ -23,7 +23,7 @@ Uma implementação do [GraphiQL](https://graphql.org/learn/serving-over-http/#g
 >[!NOTE]
 >Você deve [configurar os endpoints](/help/headless/graphql-api/graphql-endpoint.md) no [navegador de configuração](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md) antes de usar o GraphiQL IDE.
 
-A ferramenta **GraphiQL** permite testar e depurar as consultas de GraphQL, possibilitando:
+A variável **GraphiQL** A ferramenta permite testar e depurar as consultas do GraphQL, possibilitando:
 * selecionar o **endpoint** apropriado à configuração de Sites que deseja usar para as consultas
 * inserir diretamente novas consultas
 * criar e acessar **[consultas persistentes](/help/headless/graphql-api/persisted-queries.md)**
@@ -87,7 +87,7 @@ Em ambos os casos, a consulta exibida no painel do editor é a que é executada 
 
 ## Variáveis de consulta {#query-variables}
 
-O GraphiQL IDE também permite gerenciar as [Variáveis de consulta](/help/headless/graphql-api/content-fragments.md#graphql-variables).
+O GraphiQL IDE também permite gerenciar os [Variáveis de consulta](/help/headless/graphql-api/content-fragments.md#graphql-variables).
 
 Por exemplo:
 
@@ -154,7 +154,7 @@ Essa ação desativa a consulta no ambiente selecionado, seja o ambiente de **Pu
 
 ## Copiar o URL para acessar a consulta diretamente {#copy-url}
 
-A opção **Copiar URL** permite simular uma consulta copiando o URL usado para acessar diretamente a consulta persistente e ver os resultados. Essa opção pode ser usada para testes; por exemplo, acessando em um navegador:
+A variável **Copiar URL** permite simular uma consulta copiando o URL usado para acessar diretamente a consulta persistente e ver os resultados. Essa opção pode ser usada para testes; por exemplo, acessando em um navegador:
 
 <!--
   >[!NOTE]

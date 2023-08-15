@@ -3,10 +3,10 @@ title: Configuração de pipelines de produção
 description: Saiba como configurar pipelines de produção para compilar e implantar seu código em ambientes de produção.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1509'
-ht-degree: 90%
+source-wordcount: '1507'
+ht-degree: 88%
 
 ---
 
@@ -19,7 +19,7 @@ Um usuário deve ter a função **[Gerente de implantação](/help/onboarding/cl
 
 >[!NOTE]
 >
->Um pipeline de produção somente poderá ser configurado quando a criação do programa for concluída, quando exista um repositório Git com pelo menos uma ramificação e após a criação de um conjunto de ambientes de produção e de preparo.
+>Um pipeline de produção não pode ser configurado até que a criação do programa seja concluída, que um repositório Git tenha pelo menos uma ramificação e que um conjunto de ambientes de produção e de preparo seja criado.
 
 Antes de começar a implantar seu código, você deve definir as configurações de pipeline no [!UICONTROL Cloud Manager].
 

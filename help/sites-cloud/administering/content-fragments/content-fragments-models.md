@@ -4,10 +4,10 @@ description: Saiba como os modelos de fragmento de conteúdo servem como base pa
 feature: Content Fragments
 role: User
 exl-id: 24b1806f-2e8c-49ec-8cb7-a66a3cbe91cd
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2919'
-ht-degree: 91%
+source-wordcount: '2916'
+ht-degree: 90%
 
 ---
 
@@ -222,6 +222,7 @@ Os fragmentos de conteúdo podem formar conteúdo aninhado, usando um dos seguin
 * **[Referência de fragmento](#fragment-reference-nested-fragments)** (fragmentos aninhados)
    * Faz referência a outros fragmentos, dependendo dos modelos especificados.
    * Permite incluir/recuperar dados estruturados.
+
      >[!NOTE]
      >
      >Este método é especialmente interessante quando utilizado em conjunto com a [Entrega de conteúdo headless usando fragmentos de conteúdo com GraphQL](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md).
@@ -239,7 +240,7 @@ Os fragmentos de conteúdo podem formar conteúdo aninhado, usando um dos seguin
 
 ### Referência de conteúdo {#content-reference}
 
-A referência de conteúdo permite renderizar o conteúdo de outra fonte; por exemplo, imagem ou fragmento de conteúdo.
+A Referência de conteúdo permite renderizar o conteúdo de outra fonte; por exemplo, imagem ou fragmento de conteúdo.
 
 Além das propriedades padrão, é possível especificar:
 

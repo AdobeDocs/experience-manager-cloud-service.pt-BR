@@ -3,9 +3,9 @@ title: Editar no contexto
 description: Explore como você pode usar o Editor universal para editar qualquer aspecto do conteúdo no local e no contexto em qualquer implementação.
 hidefromtoc: true
 index: false
-source-git-commit: 9826041962a3a0065feb676b07304ba30d23d2e9
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '959'
 ht-degree: 9%
 
 ---
@@ -74,7 +74,7 @@ A imagem é substituída pela que você selecionou.
 
 ## Experimente Seu Conteúdo Como Seus Reader {#emulators}
 
-O Editor universal permite que você interaja com seu conteúdo dentro do contexto, vendo o conteúdo conforme ele é entregue aos dispositivos dos usuários.
+O Editor universal permite interagir com o conteúdo em seu contexto, vendo o conteúdo conforme é entregue aos dispositivos dos usuários.
 
 1. Por padrão, o editor renderiza a versão para desktop do seu conteúdo. Toque ou clique no botão Emulador na parte superior direita do editor para alterar o dispositivo de destino.
 

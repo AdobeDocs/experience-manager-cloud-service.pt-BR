@@ -5,9 +5,9 @@ mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: 8466595f988d3a10806d4654885c14a622d14057
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1630'
+source-wordcount: '1627'
 ht-degree: 6%
 
 ---
@@ -80,7 +80,7 @@ Para filtrar o conteúdo da pasta que deseja publicar, clique em **[!UICONTROL I
 
 * `Include folder contents` e `Include only immediate folder contents`
 
-   Se ambas as opções forem selecionadas, todos os ativos da pasta selecionada, as subpastas (vazias) e as referências serão publicadas. Os ativos das subpastas não são publicados.
+  Se ambas as opções forem selecionadas, todos os ativos da pasta selecionada, as subpastas (vazias) e as referências serão publicadas. Os ativos das subpastas não são publicados.
 
 <!--
 * [!UICONTROL Include only immediate folder contents]: Only the subfolders content and references are published. 
@@ -194,6 +194,7 @@ A opção Solicitar publicação está disponível para os seguintes usuários:
 >[!NOTE]
 >
 >Se [!DNL Dynamic Media] for selecionada como destino, a etapa do fluxo de trabalho será desativada para **usuário do fluxo de trabalho** e **administrador** usuários.
+>
 
 ## Limitações e dicas {#limitations-and-tips}
 

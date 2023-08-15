@@ -2,10 +2,10 @@
 title: Diferencial de páginas
 description: O recurso de comparação de página permite a comparação conveniente lado a lado de duas páginas com suas diferenças destacadas.
 exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 27%
+source-wordcount: '610'
+ht-degree: 25%
 
 ---
 
@@ -94,7 +94,7 @@ Há algumas situações em que o recurso de diferencial da página pode não det
 
 >[!NOTE]
 >
->Versões não podem ser comparadas entre si. Somente a versão atual pode ser comparada com outras versões da página. A versão atual é sempre a versão realçada com alterações.
+>As versões não podem ser comparadas entre si. Somente a versão atual pode ser comparada com outras versões da página. A versão atual é sempre a versão realçada com alterações.
 
 >[!NOTE]
 >

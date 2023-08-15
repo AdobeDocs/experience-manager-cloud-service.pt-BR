@@ -2,9 +2,9 @@
 title: Edição de um SPA externo no AEM
 description: Este documento descreve as etapas recomendadas para fazer upload de um SPA independente em uma instância AEM, adicionar seções editáveis de conteúdo e ativar a criação.
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2421'
+source-wordcount: '2418'
 ht-degree: 2%
 
 ---
@@ -111,7 +111,7 @@ A variável `initializationAsync` pode, opcionalmente, aceitar uma `options` obj
 
    ![Propriedades do componente de Texto](assets/external-spa-text-properties.png)
 
-   Esses valores são transmitidos como propriedades para o recém-criado `AEMText` O componente React e pode ser usado para renderizar o conteúdo.
+   Esses valores são transmitidos como propriedades para o `AEMText` O componente React e pode ser usado para renderizar o conteúdo.
 
    ```javascript
    import React from 'react';
@@ -237,7 +237,7 @@ A variável `TestPage` é semelhante ao seguinte depois de adicionar o component
 >
 >Assegure a `AEMText` o componente tem sua `resourceType` definido na configuração para que você possa habilitar esse recurso.
 
-Agora você pode implantar as alterações no AEM seguindo as etapas da seção [Verificar edição de conteúdo de texto no AEM](#verify-text-edit). Um espaço reservado é exibido para o item atualmente não existente `text_20` nó.
+Agora você pode implantar as alterações no AEM seguindo as etapas da seção [Verificar edição de conteúdo de texto no AEM](#verify-text-edit). Um espaço reservado é exibido para o item não existente no momento `text_20` nó.
 
 ![O nó text_20 no aem](assets/external-spa-text20-aem.png)
 

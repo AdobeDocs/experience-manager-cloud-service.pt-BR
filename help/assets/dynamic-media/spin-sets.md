@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1927'
+source-wordcount: '1926'
 ht-degree: 9%
 
 ---
@@ -96,7 +96,7 @@ Você pode fazer upload de imagens para os Conjuntos de rotação da mesma manei
 
 ### Diretrizes para captura de imagens para seu Spin Set {#guidelines-for-shooting-spin-set-images}
 
-Estas são algumas das práticas recomendadas para imagens do conjunto de rotação. Em geral, quanto mais imagens você tiver em um Conjunto de rotação, melhor será o efeito de rotação da imagem. No entanto, a inclusão de muitas imagens no conjunto também aumenta a quantidade de tempo que as imagens levam para serem carregadas. O Experience Manager recomenda estas diretrizes para fotografar imagens para uso em Conjuntos de rotação:
+Veja a seguir algumas práticas recomendadas para imagens do conjunto de rotação. Em geral, quanto mais imagens você tiver em um Conjunto de rotação, melhor será o efeito de rotação da imagem. No entanto, a inclusão de muitas imagens no conjunto também aumenta a quantidade de tempo que as imagens levam para serem carregadas. O Experience Manager recomenda estas diretrizes para fotografar imagens para uso em Conjuntos de rotação:
 
 * No mínimo, use 8 a 12 imagens em um conjunto de rotação unidimensional e 16 a 24 imagens em um Conjunto de rotação bidimensional. É necessário um mínimo de 8 imagens para girar 360°. Os Conjuntos de rotação unidimensionais são mais comuns, pois criar Conjuntos de rotação bidimensionais é uma tarefa trabalhosa.
 * Use um formato sem perdas; TIFF e PNG são recomendados.
@@ -145,6 +145,7 @@ Consulte também [Limitações do Dynamic Media](/help/assets/dynamic-media/limi
    * Próximo ao canto superior esquerdo da página Editor de conjunto de rotação, selecione **[!UICONTROL Adicionar ativo]**.
 
    * Próximo ao meio da página Editor do grupo de rotação, selecione **[!UICONTROL Toque para abrir o Seletor de ativos]**.
+
    Selecione os ativos que deseja incluir no Spin Set. Os ativos selecionados têm um ícone de marca de seleção sobre eles. Quando terminar, próximo ao canto superior direito da página, selecione **[!UICONTROL Selecionar]**.
 
    Com o Seletor de ativos, procure por ativos ao digitar uma palavra-chave e tocar em **[!UICONTROL Retornar]**. Aplique filtros para refinar os resultados da pesquisa. Filtre por caminho, coleção, tipo de arquivo e tag. Selecione o filtro e, em seguida, selecione a variável **[!UICONTROL Filtro]** na barra de ferramentas. Altere a exibição ao tocar no ícone Exibir e selecionar **[!UICONTROL Exibição em coluna]**, **[!UICONTROL Exibição de cartão]** ou **[!UICONTROL Exibição em lista]**.
@@ -221,7 +222,6 @@ Se você excluir a imagem que o Experience Manager usa para a miniatura substitu
    * Para excluir um ativo, selecione-o e **[!UICONTROL Excluir ativo]**.
    * Para aplicar uma predefinição, selecione o ícone Predefinição e selecione uma predefinição.
    * Para excluir um Conjunto de rotação inteiro, navegue até o Conjunto de rotação, selecione-o e **[!UICONTROL Excluir]**
-
    >[!NOTE]
    >
    >É possível editar as imagens em um Conjunto de imagens ao navegar até o conjunto e selecionar **[!UICONTROL Definir membros]** no painel à esquerda e selecione o ícone Lápis em um ativo individual para abrir a janela de edição.

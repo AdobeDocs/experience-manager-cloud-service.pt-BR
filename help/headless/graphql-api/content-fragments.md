@@ -3,10 +3,10 @@ title: API GraphQL do AEM para uso com Fragmentos de conteúdo
 description: Saiba como usar os Fragmentos de conteúdo no Adobe Experience Manager (AEM) as a Cloud Service com a API GraphQL do AEM, para entrega de conteúdo headless.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '4918'
-ht-degree: 93%
+source-wordcount: '4913'
+ht-degree: 92%
 
 ---
 
@@ -369,7 +369,7 @@ Consulte [Exemplo de consulta - todas as cidades com uma variável nomeada](/hel
 
 >[!NOTE]
 >
->Se a variação especificada não existir para um Fragmento de conteúdo, os dados originais (também conhecidos como variação principal) são retornados como padrão (substituta).
+>Se a variação especificada não existir para um Fragmento de conteúdo, os dados originais (também conhecidos como variação mestre) são retornados como padrão (substituta).
 
 <!--
 ## Security Considerations {#security-considerations}
@@ -707,7 +707,7 @@ query {
 
 ## Entrega de imagem otimizada para a Web em consultas de GraphQL {#web-optimized-image-delivery-in-graphql-queries}
 
-A entrega de imagem otimizada para a Web permite usar uma consulta de GraphQL para:
+A entrega de imagens otimizadas para a Web permite usar uma consulta Graphql para:
 
 * Solicitar um URL de uma imagem do AEM Assets
 
@@ -725,7 +725,7 @@ Você pode usar o AEM para:
 
 Isso significa que os comandos são aplicados durante a execução da consulta, da mesma forma que os parâmetros de URL nas solicitações GET dessas imagens.
 
-Permite criar dinamicamente as representações de imagem para entrega JSON, sem a necessidade de criar e armazenar manualmente essas representações no repositório.
+Isso permite criar representações de imagem dinamicamente para entrega JSON, o que evita a necessidade de criar e armazenar manualmente essas representações no repositório.
 
 A solução no GraphQL significa que você pode:
 
@@ -971,7 +971,7 @@ A operação básica de consultas com o GraphQL para AEM adere à especificaçã
 
         >[!NOTE]
         >
-        >Se a variação especificada não existir para um Fragmento de conteúdo, a variação principal será retornada como padrão (substituta).
+        >Se a variação especificada não existir para um Fragmento de conteúdo, a variação principal é retornada como padrão (substituta).
 
         >[!CAUTION]
         >

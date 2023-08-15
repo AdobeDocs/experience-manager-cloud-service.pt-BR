@@ -2,9 +2,9 @@
 title: Uso do CRXDE Lite
 description: o CRXDE Lite faz parte do AEM quickstart e está disponível para você acessar e modificar o repositório em seus ambientes de desenvolvimento locais no navegador.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1688'
+source-wordcount: '1685'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,7 @@ A interface de usuário do CRXDE Lite tem muitas partes e muitas funções.
 
 ### Barra do seletor superior {#top-switcher-bar}
 
-A barra superior do alternador permite alternar rapidamente entre o CRXDE Lite e o [Gerenciador de pacotes.](package-manager.md)
+A barra superior do alternador permite alternar rapidamente entre o CRXDE Lite e [Gerenciador de pacotes.](package-manager.md)
 
 ### Widget de caminho de nó {#node-path-widget}
 

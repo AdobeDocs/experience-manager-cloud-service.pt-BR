@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2212'
+source-wordcount: '2210'
 ht-degree: 0%
 
 ---
@@ -126,7 +126,7 @@ O serviço Web RESTful pode ser descrito usando [Especificações do Swagger](ht
 
 ### Configurar serviços RESTful para a especificação de API aberta versão 2.0 {#configure-restful-services-open-api-2.0}
 
-1. Ir para **[!UICONTROL Ferramentas > Cloud Services > Fontes de dados]**. Toque para selecionar a pasta na qual deseja criar uma configuração de nuvem.
+1. Ir para **[!UICONTROL Ferramentas > Cloud Service > Fontes de dados]**. Toque para selecionar a pasta na qual deseja criar uma configuração de nuvem.
 
    Consulte [Configurar pasta para configurações do serviço em nuvem](configure-data-sources.md#cloud-folder) para obter informações sobre como criar e configurar uma pasta para configurações do cloud service.
 
@@ -151,7 +151,7 @@ O serviço Web RESTful pode ser descrito usando [Especificações do Swagger](ht
 
 ### Configurar serviços RESTful para a especificação de API aberta versão 3.0 {#configure-restful-services-open-api-3.0}
 
-1. Ir para **[!UICONTROL Ferramentas > Cloud Services > Fontes de dados]**. Toque para selecionar a pasta na qual deseja criar uma configuração de nuvem.
+1. Ir para **[!UICONTROL Ferramentas > Cloud Service > Fontes de dados]**. Toque para selecionar a pasta na qual deseja criar uma configuração de nuvem.
 
    Consulte [Configurar pasta para configurações do serviço em nuvem](configure-data-sources.md#cloud-folder) para obter informações sobre como criar e configurar uma pasta para configurações do cloud service.
 
@@ -227,7 +227,7 @@ Os serviços da Web baseados em SOAP são descritos usando [Especificações da 
 
 Para configurar o serviço da Web com base em SOAP no [!DNL Experience Manager] as a Cloud Service, verifique se você tem o URL WSDL para o serviço Web e faça o seguinte:
 
-1. Ir para **[!UICONTROL Ferramentas > Cloud Services > Fontes de dados]**. Toque para selecionar a pasta na qual deseja criar uma configuração de nuvem.
+1. Ir para **[!UICONTROL Ferramentas > Cloud Service > Fontes de dados]**. Toque para selecionar a pasta na qual deseja criar uma configuração de nuvem.
 
    Consulte [Configurar pasta para configurações do serviço em nuvem](configure-data-sources.md#cloud-folder) para obter informações sobre como criar e configurar uma pasta para configurações do cloud service.
 
@@ -270,7 +270,7 @@ Um serviço OData é identificado por sua URL raiz de serviço. Para configurar 
 > Suporte ao modelo de dados de formulário [OData versão 4](https://www.odata.org/documentation/).
 >Para obter um guia passo a passo para configurar o [!DNL Microsoft® Dynamics 365]on-line ou no local, consulte [[!DNL Microsoft® Dynamics] Configuração OData](ms-dynamics-odata-configuration.md).
 
-1. Ir para **[!UICONTROL Ferramentas > Cloud Services > Fontes de dados]**. Toque para selecionar a pasta na qual deseja criar uma configuração de nuvem.
+1. Ir para **[!UICONTROL Ferramentas > Cloud Service > Fontes de dados]**. Toque para selecionar a pasta na qual deseja criar uma configuração de nuvem.
 
    Consulte [Configurar pasta para configurações do serviço em nuvem](#cloud-folder) para obter informações sobre como criar e configurar uma pasta para configurações do cloud service.
 

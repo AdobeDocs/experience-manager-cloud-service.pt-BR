@@ -2,10 +2,10 @@
 title: Jornada do autor de conteúdo headless do AEM
 description: Comece aqui uma jornada guiada pelos recursos headless eficientes e flexíveis do AEM, suas funcionalidades e como criar conteúdo para seu projeto.
 exl-id: fe124c6b-932a-44fc-a87b-12691aefea56
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '865'
-ht-degree: 92%
+ht-degree: 90%
 
 ---
 
@@ -49,7 +49,7 @@ As informações nesta jornada podem, é claro, ser úteis para outros perfis, m
 
 Muitos tópicos serão explorados nesta jornada. Os artigos a seguir fornecem conhecimento básico sobre headless no AEM e oferecem links para a documentação técnica detalhada.
 
-Embora seja possível ir diretamente para uma parte específica da jornada, muitos conceitos baseiam-se em artigos anteriores. Portanto, se o tema “headless no AEM” for novidade para você, recomendamos começar do início e avançar sequencialmente.
+Embora seja possível ir diretamente para uma parte específica da jornada, muitos conceitos baseiam-se em artigos anteriores. Portanto, se você é novo no headless no AEM, a Adobe recomenda que você comece do início e avance sequencialmente.
 
 | # | Artigo | Descrição |
 |---|---|---|

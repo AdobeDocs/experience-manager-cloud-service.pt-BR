@@ -4,10 +4,10 @@ description: Entenda como as variações permitem criar conteúdo para o fragmen
 feature: Content Fragments
 role: User
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
-source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2461'
-ht-degree: 92%
+source-wordcount: '2458'
+ht-degree: 90%
 
 ---
 
@@ -494,7 +494,7 @@ A transferência de alterações *de uma variação para o **Principal*** não e
 
      ![sincronização com o Principal](assets/cfm-variations-11b.png)
 
-1. Principal e a variação são mostradas lado a lado:
+1. O Principal e a variação são mostrados lado a lado:
 
    * verde indica conteúdo adicionado (à variação)
    * vermelho indica conteúdo removido (da variação)

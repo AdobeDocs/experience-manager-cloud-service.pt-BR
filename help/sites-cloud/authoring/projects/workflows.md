@@ -2,10 +2,10 @@
 title: Trabalhar com fluxos de trabalho de projeto
 description: Vários fluxos de trabalho de projeto estão disponíveis imediatamente.
 exl-id: a5c9a6df-7def-43f3-b41b-524a4f4211e9
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 46%
+source-wordcount: '451'
+ht-degree: 43%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 46%
 
 Os fluxos de trabalho de projeto disponíveis prontos para uso incluem o seguinte:
 
-* **Fluxo de trabalho para aprovação de projeto** - esse fluxo de trabalho permite atribuir conteúdo a um usuário, analisar esse conteúdo e depois aprová-lo.
+* **Fluxo de trabalho para aprovação de projeto** - Esse fluxo de trabalho permite atribuir conteúdo a um usuário, analisar esse conteúdo e depois aprová-lo.
 * **Solicitar inicialização** - um fluxo de trabalho que solicita uma inicialização.
 * **Solicitar página de aterrissagem** - esse fluxo de trabalho solicita uma página de aterrissagem.
 * **Solicitar email** - Fluxo de trabalho para solicitar um email.

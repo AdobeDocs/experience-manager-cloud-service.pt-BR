@@ -2,9 +2,9 @@
 title: Gerar documento de registro para Forms adaptável
 description: Explica como gerar um modelo para um Documento de registro (DoR) do Adaptive Forms.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3109'
+source-wordcount: '3105'
 ht-degree: 2%
 
 ---
@@ -94,7 +94,7 @@ Vincule campos de formulário adaptável a campos de modelo para exibir dados de
 1. Clique em **[!UICONTROL Salvar]**.
 
 <!-- 
-In the following video Adaptive Form components are binded with corresponding Acroform template fields and the Document of Record is sent as an email attachment.
+In the following video, Adaptive Form components are bound with corresponding Acroform template fields and the Document of Record is sent as an email attachment.
 -->
 
 Você pode usar ações de envio, como &quot;Enviar email&quot;, &quot;Chamar um fluxo de trabalho do AEM&quot;, &quot;Chamar um fluxo do Power Automate&quot; e outras [Ações de envio](configuring-submit-actions.md) para receber um documento de registro.
@@ -267,19 +267,19 @@ Os componentes da tabela Adaptive Forms, como cabeçalho, rodapé e mapa de linh
 
 O modelo base fornece informações de estilo e aparência ao documento de registro. Ela permite personalizar a aparência padrão do documento de registro gerado automaticamente. Por exemplo, você pode usar um modelo base para adicionar o logotipo da sua empresa nas informações de cabeçalho e copyright no rodapé do documento de registro.
 
-A página principal de um modelo base é usada como uma página principal para o modelo Documento de registro. A página-mestre pode ter informações como cabeçalho, rodapé e número de página que podem ser aplicadas ao documento de registro. É possível aplicar essas informações ao Documento de Registro usando o modelo-base para geração automática do Documento de Registro. O uso de um template base permite alterar as propriedades padrão dos campos.
+A página mestra de um modelo base é usada como uma página mestra do modelo Documento de registro. A página-mestre pode ter informações como cabeçalho, rodapé e número de página que podem ser aplicadas ao documento de registro. É possível aplicar essas informações ao Documento de Registro usando o modelo-base para geração automática do Documento de Registro. O uso de um template base permite alterar as propriedades padrão dos campos.
 
 Sempre seguir [Convenções do modelo base](#base-template-conventions) ao criar o modelo base.
 
 ## Convenções do modelo base {#base-template-conventions}
 
-Um modelo base é usado para definir o cabeçalho, rodapé, estilo e aparência de um documento de registro. O cabeçalho e o rodapé podem incluir informações como o logotipo da empresa e o texto de direitos autorais. A primeira página principal no modelo base é copiada e usada como uma página principal para o documento de registro, que contém um cabeçalho, rodapé, número de página ou qualquer outra informação que deve aparecer em todas as páginas no documento de registro. Se você usar um modelo base que não esteja em conformidade com as convenções do modelo base, a primeira página principal do modelo base ainda será usada no modelo Documento de registro. É altamente recomendável que você projete seu modelo base de acordo com suas convenções e o use para a geração automática do Documento de registro.
+Um modelo base é usado para definir o cabeçalho, rodapé, estilo e aparência de um documento de registro. O cabeçalho e o rodapé podem incluir informações como o logotipo da empresa e o texto de direitos autorais. A primeira página mestra no modelo base é copiada e usada como página mestra do documento de registro, que contém um cabeçalho, rodapé, número de página ou qualquer outra informação que deve aparecer em todas as páginas do documento de registro. Se você usar um modelo base que não esteja em conformidade com as convenções do modelo base, a primeira página-mestre do modelo base ainda será usada no modelo Documento de registro. É altamente recomendável que você projete seu modelo base de acordo com suas convenções e o use para a geração automática do Documento de registro.
 
-**Convenções de página principal**
+**Convenções da página principal**
 
 * No template base, nomeie o subformulário raiz como `AF_METATEMPLATE` e a página principal como `AF_MASTERPAGE`.
 
-* A página principal com o nome `AF_MASTERPAGE` localizado abaixo de `AF_METATEMPLATE` o subformulário raiz é preferido para extrair informações de cabeçalho, rodapé e estilo.
+* A página mestra com o nome `AF_MASTERPAGE` localizado abaixo de `AF_METATEMPLATE` o subformulário raiz é preferido para extrair informações de cabeçalho, rodapé e estilo.
 
 * Se `AF_MASTERPAGE` estiver ausente, a primeira página principal presente no modelo base será usada.
 
@@ -328,14 +328,21 @@ Para localizar as informações de marca inseridas na guia Documento de registro
       * **Família da fonte**: Família de fontes do texto no documento de PDF de registro.
 
       * **Incluir objetos de formulário que não estão vinculados ao modelo de dados**: a configuração da propriedade inclui campos não vinculados do Formulário adaptável baseado em esquema no Documento de registro.
+
       <!-- **Exclude hidden fields from the Document of Record**: Setting the property identifies the hidden fields for exclusion from Document of Record.-->
 
       * **Ocultar descrição de painéis**: a configuração da propriedade exclui a descrição do painel/tabela do documento de registro. Aplicável para painel e tabela.
+
+
+
    1. **Propriedades do campo de formulário**:
       * **Para os componentes Caixa de seleção e Botão de opções, mostrar apenas os valores selecionados**: a configuração da propriedade exibe somente os valores selecionados da caixa de seleção e do botão de opção no [!UICONTROL Documento do registro].
       * **Separador para vários valores**: é possível escolher qualquer separador, como vírgula ou quebra de linha, para exibir vários valores.
       * **Alinhamento de opções**: Você pode selecionar o alinhamento desejado (Horizontal, Vertical, Igual ao formulário adaptável) para definir o alinhamento dos campos, como caixa de seleção ou botão de opção a ser exibido em [!UICONTROL Documento do registro]. Por padrão, o alinhamento vertical é definido para os campos em [!UICONTROL Documento do registro]. Definir as propriedades do [!UICONTROL Propriedades do campo de formulário] de DoR substitui as propriedades definidas no [!UICONTROL Alinhamento do Item] para os campos em um Formulário adaptável. Caso, selecione [!UICONTROL O mesmo que Formulário adaptável] opção, o alinhamento conforme configurado em uma instância do autor do Formulário adaptável é usado para [!UICONTROL Documento do registro] campos.
       * **Número de opções de alinhamento horizontal**: Você pode definir o número de opções a serem exibidas no Documento de registro para o alinhamento horizontal.
+
+
+
    1. **Página principal  Propriedades**:
       * **Imagem de logotipo**: Você pode optar por usar a imagem de logotipo do Formulário adaptável, escolher um do DAM ou fazer upload de um do seu computador.
       * **Título do formulário**: Título do DoR.
@@ -343,7 +350,9 @@ Para localizar as informações de marca inseridas na guia Documento de registro
       * **Rótulo do aviso**: Rótulo do aviso.
       * **Isenção de responsabilidade**: texto que especifica o escopo dos direitos e obrigações no documento de registro.
       * **Texto do aviso**: Texto do aviso de isenção de responsabilidade.
+
       ![Página principal  Propriedades](/help/forms/assets/dorpropertiesimg.png)
+
    >[!NOTE]
    >
    >Se você estiver usando um modelo de Formulário adaptável criado com uma versão do Designer anterior à 6.3, para que as propriedades de Cor de ênfase e Família de fontes funcionem, verifique se o seguinte está presente no modelo de Formulário adaptável no subformulário raiz:

@@ -2,9 +2,9 @@
 title: Configurar um ambiente de desenvolvimento local para o Adobe Experience Manager Forms as a Cloud Service
 description: Configurar um ambiente de desenvolvimento local para o Adobe Experience Manager Forms as a Cloud Service
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2818'
+source-wordcount: '2816'
 ht-degree: 3%
 
 ---
@@ -182,7 +182,7 @@ Use this project to update configurations, create overlays, develop custom Adapt
 
 ## Configurar o ambiente de desenvolvimento local para o Documento de registro (DoR){#docker-microservices}
 
-O AEM Forms as a Cloud Services fornece um ambiente de SDK baseado em docker para facilitar o desenvolvimento do Documento de registro e o uso de outros microsserviços. Isso libera você da configuração manual de binários e adaptações específicos da plataforma. Para configurar o ambiente:
+O AEM Forms as a Cloud Service fornece um ambiente de SDK baseado em docker para facilitar o desenvolvimento do Documento de registro e o uso de outros microsserviços. Isso libera você da configuração manual de binários e adaptações específicos da plataforma. Para configurar o ambiente:
 
 1. Instalar e configurar o Docker:
 
@@ -194,7 +194,7 @@ O AEM Forms as a Cloud Services fornece um ambiente de SDK baseado em docker par
 
    >[!NOTE]
    >
-   > * Para o Apple macOS lista de permissões, procure pastas contendo instâncias locais do AEM Author.
+   > * Para o Apple macOS, o incluir na lista de permissões AEM pastas que contêm instâncias locais do Autor.
    >
    > * O Docker Desktop para Windows suporta dois back-ends, Hyper-V
    > (herdado) e WSL2 (moderno). O compartilhamento de arquivos é automaticamente
@@ -209,11 +209,11 @@ O AEM Forms as a Cloud Services fornece um ambiente de SDK baseado em docker par
 
 1. Crie uma variável de ambiente AEM_HOME e aponte para a instalação local do AEM Author. Por exemplo, C:\aem\author\.
 
-1. Abra sdk.bat ou sdk.sh para edição. Defina o AEM_HOME para apontar para a instalação local do AEM Author. Por exemplo, C:\aem\author\.
+1. Abra sdk.bat ou sdk.sh para edição. Defina AEM_HOME para apontar para a instalação local do AEM Author. Por exemplo, C:\aem\author\.
 
 1. Abra o prompt de comando e navegue até o `aem-forms-addon-native-<version>` pasta.
 
-1. Certifique-se de que a instância local do AEM Author esteja ativa e em execução. Execute o seguinte comando para iniciar o SDK:
+1. Certifique-se de que a instância local do autor do AEM esteja ativa e em execução. Execute o seguinte comando para iniciar o SDK:
 
    * (no Microsoft® Windows) `sdk.bat start`
    * (no Linux® ou Apple macOS) `AEM_HOME=[local AEM Author installation] ./sdk.sh start`
@@ -276,7 +276,7 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
 
 ## Configurar ferramentas locais do Dispatcher {#setup-local-dispatcher-tools}
 
-O Dispatcher é um módulo de servidor Web Apache HTTP que fornece uma camada de segurança e desempenho entre a camada do CDN e AEM Publish. O Dispatcher é parte integral da arquitetura Experience Manager geral e deve fazer parte do ambiente de desenvolvimento local.
+O Dispatcher é um módulo de servidor Web Apache HTTP que fornece uma camada de segurança e desempenho entre a camada de publicação CDN e AEM. O Dispatcher é parte integral da arquitetura Experience Manager geral e deve fazer parte do ambiente de desenvolvimento local.
 
 Execute as seguintes etapas para configurar o Dispatcher local e, em seguida, adicionar regras específicas do Forms a ele:
 
@@ -329,9 +329,9 @@ Execute as seguintes etapas para configurar o cache do Dispatcher para o Experie
 
 O ambiente de desenvolvimento local está pronto.
 
-## Ativar os Componentes principais adaptáveis do Forms no ambiente de desenvolvimento as a Cloud Service e local do AEM Forms
+## Habilitar os componentes principais de formulários adaptáveis no AEM Forms as a Cloud Service e no ambiente de desenvolvimento local
 
-A ativação dos Componentes principais dos formulários adaptáveis no AEM Forms as a Cloud Service permite criar, publicar e fornecer os Componentes principais baseados em formulários, adaptáveis e headless, usando as instâncias do AEM Forms Cloud Service para vários canais. Você precisa do ambiente habilitado dos Componentes principais adaptáveis do Forms para usar o Forms adaptável headless.
+A ativação dos componentes principais adaptáveis do Forms no AEM Forms as a Cloud Service permite que você comece a criar, publicar e fornecer componentes principais com base no Adaptive Forms e no Headless Forms, usando as instâncias do Cloud Service da AEM Forms para vários canais. Você precisa do ambiente habilitado dos Componentes principais adaptáveis do Forms para usar o Forms adaptável headless.
 
 Para obter instruções, consulte [Ativar os Componentes principais adaptáveis do Forms no ambiente de desenvolvimento as a Cloud Service e local do AEM Forms](/help/forms/enable-adaptive-forms-core-components.md)
 

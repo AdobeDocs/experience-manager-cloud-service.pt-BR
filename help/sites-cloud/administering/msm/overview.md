@@ -4,10 +4,10 @@ description: 'Saiba mais sobre como reutilizar conteúdo com recursos avançados
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: 4049d226ecedb917c2a72cb76bc2fcaa946163f2
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2719'
-ht-degree: 95%
+source-wordcount: '2714'
+ht-degree: 92%
 
 ---
 
@@ -121,7 +121,7 @@ O MSM é diretamente acessível por meio da interface usando várias opções do
 
 * **Criar Live Copy** (**Sites**)
 
-   * O MSM permite [criar uma Live Copy ad-hoc (única) de uma página individual ou sub-ramificação de um site.](creating-live-copies.md#creating-a-live-copy-of-a-page) Por exemplo, duplicar uma sub-ramificação para fornecer informações sobre uma versão nova/atualizada de um produto. Criar uma Live Copy dessa maneira:
+   * O MSM permite [crie uma Live Copy ad-hoc (única) de uma página individual ou sub-ramificação de um site.](creating-live-copies.md#creating-a-live-copy-of-a-page) Por exemplo, duplicar uma sub-ramificação para fornecer informações sobre uma versão nova/atualizada de um produto. Criar uma Live Copy dessa maneira:
       * Cria uma Live Copy ad-hoc (nenhuma configuração do blueprint é necessária).
       * Pode ser usado para criar (imediatamente) uma Live Copy de qualquer página/ramificação.
       * Requer **sincronização** (não fornece o botão **Implantação**).
@@ -245,7 +245,7 @@ Uma Live Copy é considerada uma Live Copy empilhada quando é criada como secun
 
 ### Origem, blueprints e configurações do blueprint {#source-blueprints-and-blueprint-configurations}
 
-Qualquer página ou ramificação de páginas pode ser usada como origem de uma Live Copy. No entanto, o MSM também permite definir uma configuração do blueprint que especifique um caminho de origem. Os benefícios de usar uma configuração do blueprint são:
+Qualquer página ou ramificação de páginas pode ser usada como origem de uma Live Copy. No entanto, o MSM também permite definir uma configuração de blueprint que especifique um caminho de origem. Os benefícios de usar uma configuração do blueprint são:
 
 * Permite que o autor use a opção **Implantação** em um blueprint. Isto é, para enviar modificações explicitamente para as Live Copies que herdam deste blueprint.
 * Permite que o autor use a função **Criar Site**. Isso permite que o usuário selecione idiomas facilmente e configure a estrutura da Live Copy.

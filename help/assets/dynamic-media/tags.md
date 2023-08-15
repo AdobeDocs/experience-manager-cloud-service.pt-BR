@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '6665'
+source-wordcount: '6663'
 ht-degree: 7%
 
 ---
@@ -257,7 +257,7 @@ O método mais simples para fazer isso é concluir o seguinte processo de duas e
 
 ![image2019-7-10_20-41-52](assets/image2019-7-10_20-41-52.png)
 
-No entanto, é possível usar uma abordagem alternativa e ignorar a criação do Elemento de dados. Você pode fazer referência diretamente a um argumento de um evento do Visualizador do Dynamic Media. Insira o nome totalmente qualificado do argumento de evento na **[!UICONTROL value]** campo de entrada da atribuição de variável do Analytics. Certifique-se de cercar por sinais de porcentagem (%). Por exemplo,
+No entanto, é possível usar uma abordagem alternativa e ignorar a criação do Elemento de dados. Você pode fazer referência diretamente a um argumento de um evento do Visualizador do Dynamic Media. Insira o nome totalmente qualificado do argumento de evento na variável **[!UICONTROL value]** campo de entrada da atribuição de variável do Analytics. Certifique-se de cercar por sinais de porcentagem (%). Por exemplo,
 
 `%event.detail.dm.LOAD.asset%`
 
@@ -785,7 +785,7 @@ Por exemplo, `https://ims-na1.adobelogin.com/`
 
 ## Configurar a nuvem de tags do Experience Platform para integração {#configuring-adobe-launch-cloud-for-the-integration}
 
-1. No autor do Experience Manager, próximo ao canto superior esquerdo, selecione o ícone Ferramentas (martelo) e vá para **[!UICONTROL Cloud Services]** > **[!UICONTROL Configurações de tags Experience Platform]**.
+1. No autor do Experience Manager, próximo ao canto superior esquerdo, selecione o ícone Ferramentas (martelo) e vá para **[!UICONTROL Cloud Service]** > **[!UICONTROL Configurações de tags Experience Platform]**.
 
    ![2019-07-26_12-10-38](assets/2019-07-26_12-10-38.png)
 

@@ -2,10 +2,10 @@
 title: Gerenciamento de fragmentos de conteúdo (Ativos - Fragmentos de conteúdo)
 description: Saiba como usar o console de Ativos para gerenciar os fragmentos de conteúdo de AEM, a base do conteúdo headless.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 5c59189abf809293a319d6bce4ef7389c2451f92
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1770'
-ht-degree: 70%
+source-wordcount: '1768'
+ht-degree: 69%
 
 ---
 
@@ -105,11 +105,11 @@ Selecione o fragmento para revelar a barra de ferramentas com ações aplicávei
 * **Check-out**
 * **Propriedades**
 
-   * Permite visualizar e/ou editar os metadados do fragmento.
+   * Permite visualizar ou editar os metadados do fragmento, ou ambos.
 
 * **Editar**
 
-   * Permite que você [abrir o fragmento para edição de conteúdo](/help/assets/content-fragments/content-fragments-variations.md) junto com seus elementos, variações, conteúdo associado e metadados.
+   * Permite [abrir o fragmento para edição de conteúdo](/help/assets/content-fragments/content-fragments-variations.md) junto com seus elementos, variações, conteúdo associado e metadados.
 
 * **Publicação rápida**
 * **Gerenciar publicação**
@@ -353,7 +353,7 @@ Se você publicar um fragmento de conteúdo cujo modelo ainda não foi publicado
 
 Os fragmentos de conteúdo devem ser publicados para uso no ambiente de publicação. Isso é feito usando a funcionalidade padrão do Assets:
 
-* [Publicação rápida   ](/help/assets/manage-publication.md#quick-publish)
+* [Publicação rápida](/help/assets/manage-publication.md#quick-publish)
 * [Gerenciar publicação](/help/assets/manage-publication.md#manage-publication)
 
 Esse pode ser acessado:

@@ -4,10 +4,10 @@ description: Saiba mais sobre as noções básicas do Console de visão geral da
 feature: Multi Site Manager
 role: Admin
 exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 92%
+source-wordcount: '729'
+ht-degree: 89%
 
 ---
 
@@ -94,7 +94,7 @@ Quando você seleciona uma página de Live Copy, as seguintes ações estão dis
 * **[Sincronizar](overview.md#rollout-and-synchronize)** — sincroniza uma Live Copy para extrair as alterações da origem para a Live Copy.
 * **[Redefinir](creating-live-copies.md#resetting-a-live-copy-page)** — redefine uma página de Live Copy para remover todos os cancelamentos de herança e retornar a página ao mesmo estado que a página de origem.
 * **[Suspender](overview.md#suspending-and-cancelling-inheritance-and-synchronization)** — desativa temporariamente a relação ativa entre uma Live Copy e sua página do blueprint.
-* **[Retomar](creating-live-copies.md#resuming-inheritance-for-a-page)** — permite que você restaure uma relação suspensa.
+* **[Retomar](creating-live-copies.md#resuming-inheritance-for-a-page)** - Resume permite que você restaure uma relação suspensa.
 * **[Destacar](overview.md#detaching-a-live-copy)** — remove permanentemente a relação ativa entre uma Live Copy e sua página de blueprint.
 
 ## Status do relacionamento {#relationship-status}
@@ -112,6 +112,6 @@ Esta guia fornece informações detalhadas sobre o status da relação entre o b
 
 ### Live Copy  {#live-copy-tab}
 
-Esta guia permite visualizar e editar a configuração da Live Copy.
+Essa guia permite visualizar e editar a configuração da Live Copy.
 
 ![Guia Live Copy](../assets/live-copy-relationship-status-live-copy.png)

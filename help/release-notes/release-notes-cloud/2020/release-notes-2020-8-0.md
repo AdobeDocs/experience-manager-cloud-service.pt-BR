@@ -1,11 +1,11 @@
 ---
-title: Notas de versão do [!DNL Adobe Experience Manager]  as a Cloud Service 2020.8.0.
+title: Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0.
 description: "[!DNL Adobe Experience Manager] Notas de versão as a Cloud Service para 2020.8.0."
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1039'
-ht-degree: 33%
+source-wordcount: '1038'
+ht-degree: 32%
 
 ---
 
@@ -84,7 +84,7 @@ A data de lançamento do [!UICONTROL Cloud Manager] A versão 2020.8.0 é 6 de a
 
   Consulte [Teste de auditoria de experiência](/help/implementing/cloud-manager/experience-audit-testing.md) para obter mais detalhes.
 
-* Os ambientes recém-criados nos programas do Assets agora serão configurados automaticamente com os Smart Content Services.
+* Os ambientes recém-criados nos programas do Assets agora serão configurados automaticamente com os Serviços de conteúdo inteligente.
 
 * Os ambientes hibernados podem ter a hibernação cancelada na página **Visão geral** do Cloud Manager.
 
@@ -140,6 +140,6 @@ Siga esta seção para saber mais sobre as novidades e atualizações das Ferram
 
 * Lançamento do plug-in AIO-CLI para unificar as ferramentas de refatoração de código para permitir que os desenvolvedores chamem e executem ferramentas de refatoração de código de um só lugar. Consulte [Recurso do Git: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) para obter mais detalhes.
 
-* O Conversor do Dispatcher do AEM foi estendido para aceitar conversões de configurações no local e do Dispatcher do Adobe Managed Services em configurações do Dispatcher compatíveis com AEM as a Cloud Service. Consulte [Recurso do Git: Conversor do Dispatcher do AEM Cloud Service](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) para obter mais detalhes.
+* O Conversor do Dispatcher do AEM foi estendido para aceitar conversões de configurações no local e do Managed Services AEM as a Cloud Service Dispatcher do Adobe em configurações do Dispatcher compatíveis com o. Consulte [Recurso do Git: Conversor do Dispatcher do AEM Cloud Service](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) para obter mais detalhes.
 
 * Conversor do Dispatcher do AEM regravado em ` node.js ` e integrado ao plug-in AIO-CLI.

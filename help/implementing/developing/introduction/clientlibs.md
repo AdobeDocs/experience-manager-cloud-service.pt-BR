@@ -2,9 +2,9 @@
 title: Uso de bibliotecas do lado do cliente no AEM as a Cloud Service
 description: O AEM fornece Pastas de bibliotecas do lado do cliente, que permitem armazenar o código do lado do cliente (clientlibs) no repositório, organizá-lo em categorias e definir quando e como cada categoria de código deve ser entregue ao cliente
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2556'
+source-wordcount: '2552'
 ht-degree: 1%
 
 ---
@@ -88,7 +88,7 @@ Para que as bibliotecas de clientes em `/apps` para ser acessível, um servlet p
    * Tipo: Booleano
    * Valor: `true`
 1. Se precisar gerenciar recursos estáticos, crie uma subpasta chamada `resources` abaixo da pasta da biblioteca do cliente.
-   * Se você armazenar recursos estáticos em qualquer lugar que não seja na pasta `resources`, elas não podem ser referenciadas em uma instância de publicação.
+   * Se você armazenar recursos estáticos em qualquer lugar que não seja na pasta `resources`, eles não podem ser referenciados em uma instância de publicação.
 1. Adicionar arquivos de origem à pasta da biblioteca.
    * Isso normalmente é feito pelo processo de build de front-end do [Arquétipo de projeto AEM.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)
    * Você pode organizar os arquivos de origem em subpastas, se desejar.

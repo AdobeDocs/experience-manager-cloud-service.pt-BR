@@ -2,10 +2,10 @@
 title: Uso de tags
 description: As tags são um método rápido e fácil de classificar conteúdo em um site
 exl-id: d2a9f578-fe0a-48ea-851c-2c84463661e0
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '563'
-ht-degree: 75%
+source-wordcount: '562'
+ht-degree: 71%
 
 ---
 

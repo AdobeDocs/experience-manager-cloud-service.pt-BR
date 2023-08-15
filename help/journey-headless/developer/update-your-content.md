@@ -2,10 +2,10 @@
 title: Como atualizar seu conteúdo por meio das APIs do AEM Assets
 description: Nesta parte da jornada do desenvolvedor headless do AEM, saiba como usar a API REST para acessar e atualizar o conteúdo dos seus fragmentos de conteúdo.
 exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1071'
-ht-degree: 100%
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+workflow-type: tm+mt
+source-wordcount: '1069'
+ht-degree: 94%
 
 ---
 
@@ -41,7 +41,7 @@ No estágio anterior da jornada headless, você aprendeu como usar a API GraphQL
 
 Então, por que é necessária outra API?
 
-A API HTTP de ativos permite **ler** seu conteúdo, mas também permite **criar**, **atualizar** e **excluir** conteúdo, ações que não são possíveis com a API GraphQL.
+A API HTTP do Assets não permite **Ler** seu conteúdo, mas também permite **Criar**, **Atualizar** e **Excluir** conteúdo - ações que não são possíveis com a API do GraphQL.
 
 A API REST de ativos está disponível em cada instalação pronta para uso de versões recentes do Adobe Experience Manager as a Cloud Service.
 
@@ -54,7 +54,7 @@ A API HTTP de ativos abrange:
 
 A implementação atual da API HTTP de ativos é baseada no estilo de arquitetura **REST** e permite que você acesse o conteúdo (armazenado no AEM) por meio de operações **CRUD** (criar, ler, atualizar, excluir).
 
-Com essas operações, a API permite utilizar o Adobe Experience Manager as a Cloud Service como um CMS (Content Management System) headless, pelo fornecimento de serviços de conteúdo a um aplicativo de front-end JavaScript. Ou qualquer outro aplicativo que possa executar solicitações HTTP e manipular respostas JSON. Por exemplo, aplicativos de página única (SPA) baseados em estrutura ou personalizados exigem conteúdo fornecido por meio de uma API, geralmente no formato JSON.
+Com essas operações, a API permite operar o Adobe Experience Manager as a Cloud Service como um CMS (Content Management System, Sistema de gerenciamento de conteúdo) headless, fornecendo Serviços de conteúdo a um aplicativo front-end JavaScript. Ou qualquer outro aplicativo que possa executar solicitações HTTP e manipular respostas JSON. Por exemplo, aplicativos de página única (SPA) baseados em estrutura ou personalizados exigem conteúdo fornecido por meio de uma API, geralmente no formato JSON.
 
 <!--
 >[!NOTE]

@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: dac4539b-804d-4420-9170-68000ebb2638
 docset: aem65
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1144'
+source-wordcount: '1143'
 ht-degree: 0%
 
 ---
@@ -133,7 +133,7 @@ O campo que foi excluído também é marcado com um ícone para indicar um erro 
 
 >[!NOTE]
 >
->Os campos no Formulário adaptável que têm uma associação incorreta (uma `bindRef` na caixa de diálogo de edição) também são considerados campos excluídos. Se o autor não corrigir esses erros e publicar o Formulário adaptável, o campo será tratado como um campo de Formulário adaptável normal não vinculado e será incluído na seção não vinculada do arquivo XML de saída.
+>Os campos no Formulário adaptável que têm uma associação incorreta (uma `bindRef` na caixa de diálogo de edição) também são considerados campos excluídos. Se o autor não corrigir esses erros e publicar o Formulário adaptável, o campo será tratado como um campo de Formulário adaptável desvinculado normal e será incluído na seção desvinculada do arquivo XML de saída.
 
 ## Downloads {#downloads}
 

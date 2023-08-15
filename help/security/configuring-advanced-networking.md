@@ -2,10 +2,10 @@
 title: Configuração de redes avançadas para o AEM as a Cloud Service
 description: Saiba como configurar recursos avançados de rede, como VPN ou um endereço IP de saída flexível ou dedicado para o AEM as a Cloud Service
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '3571'
-ht-degree: 89%
+ht-degree: 87%
 
 ---
 
@@ -555,7 +555,7 @@ Ao incluir uma região adicional em um ambiente que já tem uma rede avançada c
 
 Se uma configuração de rede avançada já estiver habilitada na região principal, siga estas etapas:
 
-1. Se tiver bloqueado sua infraestrutura de modo que o endereço IP dedicado do AEM seja incluído na lista de permissões, é recomendável desabilitar temporariamente todas as regras de bloqueio nessa infraestrutura. Se isso não for feito, há um curto período em que as solicitações dos endereços IP da nova região são negadas por sua própria infraestrutura. Observe que isso não é necessário se você tiver bloqueado sua infraestrutura por meio do FQDN (Fully Qualified Domain Name, Nome de domínio totalmente qualificado), (`p1234.external.adobeaemcloud.com`, por exemplo), porque todas as regiões AEM geram tráfego de rede avançado do mesmo FQDN
+1. Se tiver bloqueado sua infraestrutura de modo que o endereço IP dedicado do AEM seja incluído na lista de permissões, é recomendável desabilitar temporariamente todas as regras de bloqueio nessa infraestrutura. Se isso não for feito, há um curto período em que as solicitações dos endereços IP da nova região são negadas por sua própria infraestrutura. Observe que isso não será necessário se você tiver bloqueado sua infraestrutura por meio de um Nome de domínio totalmente qualificado (FQDN), (`p1234.external.adobeaemcloud.com`, por exemplo), porque todas as regiões AEM geram tráfego de rede avançado do mesmo FQDN
 1. Crie a infraestrutura de rede com escopo de programa para a região secundária por meio de uma chamada POST para a API de criação de infraestrutura de rede do Cloud Manager, conforme descrito na documentação de rede avançada. A única diferença na configuração JSON da carga em relação à região principal é a propriedade region
 1. Se sua infraestrutura precisar ser bloqueada por IP para permitir o tráfego do AEM, adicione os IPs que correspondem a `p1234.external.adobeaemcloud.com`. Deve haver um por região.
 

@@ -2,10 +2,10 @@
 title: Criação de modelos de fragmento de conteúdo - Configuração do headless
 description: Defina a estrutura do conteúdo que será criado e veiculado usando os recursos headless do AEM, através de modelos de fragmento de conteúdo.
 exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 91%
+source-wordcount: '489'
+ht-degree: 95%
 
 ---
 
@@ -44,7 +44,7 @@ Um arquiteto de informações executaria essas tarefas apenas esporadicamente, �
 
 1. Quando terminar de criar o modelo, toque ou clique em **Salvar**.
 
-1. O modo do modelo recém-criado depende de se você selecionou **Ativar modelo** ao criar o modelo:
+1. O modo do modelo recém-criado depende de se a opção **Ativar modelo** foi selecionada ao criar o modelo:
    * selecionada - o novo modelo já estará **Habilitado**
    * não selecionada - o novo modelo é criado em **Rascunho** modo
 

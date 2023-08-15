@@ -1,11 +1,11 @@
 ---
-title: Notas de versão do [!DNL Adobe Experience Manager]  as a Cloud Service 2022.8.0.
-description: Notas de versão do [!DNL Adobe Experience Manager]  as a Cloud Service 2022.8.0.
+title: Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2022.8.0.
+description: Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2022.8.0.
 exl-id: 0eff8100-5990-4553-8373-445fb7e6fb27
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 63%
+source-wordcount: '624'
+ht-degree: 59%
 
 ---
 
@@ -63,7 +63,7 @@ Assista ao vídeo Visão geral da versão de agosto de 2022 que exibe um resumo 
 
 * [Assistente de Formulários adaptáveis](/help/forms/creating-adaptive-form.md): o AEM Forms fornece um assistente para usuários empresariais para criar rapidamente Formulários adaptáveis. O assistente fornece uma navegação rápida por guias para selecionar facilmente o modelo pré-configurado, o estilo, os campos e as opções de envio para criar um formulário adaptável. Esta versão traz as seguintes melhorias ao assistente:
 
-   * Selecionar ou desmarcar campos: o assistente permite criar um Formulário adaptável com base em esquemas JSON e do Modelo de dados de formulário. Agora é possível selecionar um subconjunto de campos em um esquema para incluir em um Formulário adaptável. Os campos selecionados são convertidos em componentes de captura de dados correspondentes do Formulário adaptável para criar rapidamente os formulários adaptáveis desejados.
+   * Selecionar ou desmarcar campos: o assistente permite criar um Formulário adaptável com base em esquemas de modelo de dados de formulário e JSON. Agora é possível selecionar um subconjunto de campos em um esquema para incluir em um Formulário adaptável. Os campos selecionados são convertidos em componentes de captura de dados correspondentes do Formulário adaptável para criar rapidamente os formulários adaptáveis desejados.
 
    * Usar modelos estáticos: os clientes com investimentos existentes em modelos estáticos herdados podem continuar sua jornada de adoção da nuvem usando modelos estáticos no assistente para criar formulários adaptáveis. Isso oferece mais tempo para os clientes migrarem modelos estáticos antigos para modelos editáveis modernos.
 

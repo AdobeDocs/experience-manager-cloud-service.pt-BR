@@ -1,19 +1,19 @@
 ---
 title: Integração ao Adobe Analytics
-description: Saiba como integrar o Adobe Analytics ao AEM as a Cloud Service usando a interface do usuário sensível ao toque e o Adobe Launch.
+description: Saiba como integrar o Adobe Analytics ao AEM as a Cloud Service usando a interface do usuário de toque e o Adobe Launch.
 feature: Administering
 role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
-source-git-commit: 957758a8d3c16328e7638356e7ee6df3e561386d
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '574'
-ht-degree: 85%
+source-wordcount: '573'
+ht-degree: 82%
 
 ---
 
 # Integração ao Adobe Analytics{#integrating-with-adobe-analytics}
 
-Integrar o Adobe Analytics e o AEM as a Cloud Service permite monitorar a atividade da página da Web. A integração exige:
+Integrar o Adobe Analytics e o AEM as a Cloud Service permite rastrear a atividade da página da Web. A integração exige:
 
 * usar a interface de toque para criar uma configuração do Analytics no AEM as a Cloud Service. A autenticação IMS é necessária para integrar o Adobe Analytics com o AEM as a Cloud Service.
 * adicionar e configurar o Adobe Analytics como uma extensão no [Adobe Launch](#analytics-launch). Para obter mais detalhes sobre o Adobe Launch, consulte [esta página](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html?lang=pt_BR).

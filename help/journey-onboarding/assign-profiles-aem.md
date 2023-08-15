@@ -4,10 +4,10 @@ description: Após configurar os recursos de nuvem, é necessário conceder à e
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '898'
-ht-degree: 94%
+ht-degree: 91%
 
 ---
 
@@ -58,7 +58,7 @@ Antes de começar a ler esta seção, você deve ter as informações a seguir s
 
 >[!TIP]
 >
->Para fins de integração, recomendamos que você adicione inicialmente os usuários que participarão das tarefas imediatas, como administradores, desenvolvedores e autores de conteúdo. Você pode continuar o resto da integração sem adicionar todos os usuários. Depois de concluir a integração, você pode dimensionar para um número maior de usuários posteriormente.
+>Para fins de integração, a Adobe recomenda que você adicione inicialmente os usuários que participarão das tarefas imediatas, como administradores, desenvolvedores e autores de conteúdo. Você pode continuar o resto da integração sem adicionar todos os usuários. Depois de concluir a integração, você pode dimensionar para um número maior de usuários posteriormente.
 
 ## Exibir perfis de produto do AEM {#view-profiles}
 

@@ -2,9 +2,9 @@
 title: Práticas recomendadas de gerenciamento de SEO e URL do Adobe Experience Manager as a Cloud Service
 description: Práticas recomendadas de gerenciamento de SEO e URL do Adobe Experience Manager as a Cloud Service
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3706'
+source-wordcount: '3705'
 ht-degree: 95%
 
 ---
@@ -192,7 +192,7 @@ Talvez você queira exibir nomes de página localizados para usuários de conte�
 
 O desafio de localizar o nome da página é que muitas das ferramentas de localização disponíveis na plataforma AEM dependem que os nomes das páginas correspondam às localidades para manter o conteúdo sincronizado.
 
-A propriedade `sling:alias` permite ter os dois. `sling:alias` pode ser adicionado como uma propriedade a qualquer recurso para permitir um nome de alias para o recurso. No exemplo anterior, você teria:
+A variável `sling:alias` a propriedade permite ter o bolo e comê-lo também. `sling:alias` pode ser adicionado como uma propriedade a qualquer recurso para permitir um nome de alias para o recurso. No exemplo anterior, você teria:
 
 * Uma página no JCR em:
   `…/es/home`

@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2000'
+source-wordcount: '1999'
 ht-degree: 1%
 
 ---
@@ -29,23 +29,23 @@ Você pode criar um fragmento de formulário adaptável do zero ou salvar um pai
 ### Criar fragmento do zero {#create-fragment-from-scratch}
 
 1. Efetue logon no [!DNL AEM Forms] instância do autor em https://[*hostname*]:[*porta*]/aem/forms.html.
-1. Clique em **Criar > Fragmento de formulário adaptável**.
-1. Especifique título, nome, descrição e tags para o fragmento.
+1. Clique **criar fragmento** de formulário adaptável >.
+1. Especifique o título, o nome, a descrição e as tags do fragmento.
 
    >[!NOTE]
    >
-   >Certifique-se de especificar um nome exclusivo para o fragmento. Se já existir outro fragmento com o mesmo nome, o fragmento não será criado.
+   >Certifique-se de especificar um nome exclusivo para o fragmento. Se já houver outro fragmento com o mesmo nome, o fragmento não será criado.
 
-1. Clique para abrir a **Modelo de formulário** e na guia **Selecionar de** selecione um dos seguintes modelos para o fragmento:
+1. Clique para abrir o **modelo** de formulário guia e, no **menu suspenso selecionar de** , selecione um dos seguintes modelos para o fragmento:
 
-   * **Nenhum**: especifica criar o fragmento do zero sem usar nenhum modelo de formulário.
+   * **None** : especifica a criação do fragmento a partir do zero sem usar qualquer modelo de formulário.
    * **Modelo de formulário**: especifica criar o fragmento usando um modelo XDP carregado no [!DNL AEM Forms]. Selecione o modelo XDP apropriado como o modelo de formulário para o fragmento.
 
    ![Criação de um formulário adaptável usando o modelo de formulário como modelo](assets/form-template-model.png)
 
-   Os subformulários marcados como fragmentos no modelo de formulário selecionado também são exibidos. Você pode selecionar um subformulário para Fragmento de formulário adaptável na lista suspensa.
+   Os subformulários marcados como fragmentos no formulário selecionado modelo também são exibidos. É possível selecionar um subformulário para o fragmento de formulário adaptável na lista suspensa.
 
-   ![Selecionar subformulários do modelo de formulário especificado](assets/fragment-subform.png)
+   ![Selecione os subformulários do formulário especificado modelo](assets/fragment-subform.png)
 
    Além disso, você pode criar um Fragmento de formulário adaptável usando subformulários que não estão marcados como fragmentos no modelo de formulário especificando a expressão SOM para o subformulário na caixa suspensa.
 
@@ -125,10 +125,10 @@ Execute as seguintes etapas para mostrar fragmentos completos em formulários:
 
 Os fragmentos de formulário adaptáveis criados são exibidos na guia Fragmentos de formulário adaptáveis do localizador de conteúdo do AEM. Para inserir um fragmento de formulário adaptável em um formulário adaptável:
 
-1. Abra o Formulário adaptável, no modo de edição, no qual deseja inserir um Fragmento de formulário adaptável.
-1. Clique em **Assets** ![assets-browser](assets/assets-browser.png) na barra lateral. No navegador de ativos, selecione **Fragmentos do formulário adaptável** no menu suspenso.
+1. Abra o formulário adaptável, no modo de edição, no qual você deseja inserir um fragmento de formulário adaptável.
+1. Clique em **Assets** ![ ativos-navegador ](assets/assets-browser.png) na barra lateral. No navegador de ativos, selecione **fragmentos** de formulários adaptáveis no menu suspenso.
 
-   Você também pode optar por exibir todos os fragmentos de formulário adaptável ou filtrar com base em seu modelo de formulário - Modelo de formulário, Esquema XML ou Básico.
+   Você também pode optar por exibir todos os fragmentos de formulário adaptáveis ou filtrar com base em seu modelo de formulário, esquema XML ou básico.
 
 1. Arraste e solte um fragmento de formulário adaptável no formulário adaptável.
 
@@ -140,9 +140,9 @@ O fragmento de formulário adaptável é inserido por referência no formulário
 
 ### Incorporar um fragmento no Formulário adaptável {#embed-a-fragment-in-adaptive-form}
 
-Você pode optar por incorporar um fragmento de formulário adaptável em um formulário adaptável clicando em **Incorporar ativo: &lt;*fragmentName*>** na barra de ferramentas do painel do fragmento adicionado, conforme mostrado no exemplo de imagem a seguir.
+Você pode optar por incorporar um fragmento de formulário adaptável em um formulário adaptável clicando **em incorporar ativo: *FragmentName* >** botão na barra de ferramentas do painel do fragmento adicionado, conforme mostrado na imagem de exemplo a seguir.
 
-![Incorporar um fragmento de formulário no Formulário adaptável](assets/embed-fragment.png)
+![Incorporar um fragmento de formulário em um formulário adaptável](assets/embed-fragment.png)
 
 >[!NOTE]
 >
@@ -170,7 +170,7 @@ Ao criar um fragmento de formulário adaptável usando um modelo de formulário 
 
 É possível executar várias operações nos Fragmentos do formulário adaptável usando a [!DNL AEM Forms] IU.
 
-1. Ir para `https://[hostname]:'port'/aem/forms.html`.
+1. Acesse `https://[hostname]:'port'/aem/forms.html`.
 
 1. Clique em **Selecionar** no [!DNL AEM Forms] Barra de ferramentas da interface e selecione um fragmento de formulário adaptável. A barra de ferramentas exibe as seguintes operações que você pode executar no fragmento de formulário adaptável selecionado.
 
@@ -197,7 +197,7 @@ Ao criar um fragmento de formulário adaptável usando um modelo de formulário 
    <td><p>Baixa o fragmento selecionado.<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td><p>Visualizar</p> </td>
+   <td><p>Visualização</p> </td>
    <td><p>Fornece opções para visualizar o fragmento como um HTML ou uma visualização personalizada mesclando dados de um arquivo XML com o fragmento. <!-- For more information, see <a href="previewing-forms.md" target="_blank">Previewing a form</a>.<br /> <br /> --></p> </td>
   </tr>
   <tr>
@@ -237,10 +237,10 @@ Para localizar um Formulário adaptável que contenha Fragmentos de formulário 
 * Qualquer expressão, script ou estilo em um Fragmento de formulário adaptável independente é retido quando inserido por referência ou incorporado em um Formulário adaptável.
 * Não é possível editar um fragmento de formulário adaptável, que é inserido por referência, de um formulário adaptável. Para editar, edite o Fragmento de formulário adaptável independente ou incorpore o fragmento no Formulário adaptável.
 * Ao publicar um formulário adaptável, você precisa publicar os fragmentos de formulário adaptáveis independentes inseridos por referência no formulário adaptável.
-* Ao republicar um fragmento de formulário adaptável atualizado, as alterações são refletidas nas instâncias publicadas do formulário adaptável em que o fragmento é usado.
-* O formulário adaptável que contém o componente Verificar não é compatível com usuários anônimos. Além disso, não é recomendado usar o componente Verificar em um fragmento de formulário adaptável.
-* (**Somente Mac**) Para garantir que a funcionalidade dos fragmentos de formulário funcione perfeitamente em todos os cenários, adicione a seguinte entrada ao arquivo /private/etc/hosts:
-  `127.0.0.1 <Host machine>` **Máquina host**: a máquina do Apple Mac na qual [!DNL AEM Forms] é implantado.
+* Quando você republicar um fragmento de formulário adaptável atualizado, as alterações refletirão nas instâncias publicadas do formulário adaptável no qual o fragmento é usado.
+* O formulário adaptável que contém o componente de verificação não suporta usuários anônimos. Além disso, não é reommended usar o componente Verify em um fragmento de formulário adaptável.
+* ( **Somente** Mac) para garantir que os fragmentos de formulário funcionalidade funcionem perfeitamente em todos os cenários, adicione a seguinte entrada ao arquivo/Private/etc/hosts:
+  `127.0.0.1 <Host machine>`**Máquina** host: a máquina Apple Mac na qual [!DNL AEM Forms] o foi implantado.
 
 ## Fragmentos de referência {#reference-fragments}
 

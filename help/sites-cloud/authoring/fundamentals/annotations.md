@@ -2,10 +2,10 @@
 title: Adição de anotações de página
 description: Use o modo de anotação para deixar anotações e rascunhos nas páginas, como você usaria as notas adesivas para auxiliar no processo de revisão do conteúdo
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '698'
-ht-degree: 94%
+source-wordcount: '694'
+ht-degree: 85%
 
 ---
 
@@ -51,7 +51,7 @@ As anotações são visíveis apenas no modo Anotação.
 
 ## Adicionar e editar anotações {#annotating-a-component}
 
-Além de visualizar as anotações, o modo Anotação permite criar, editar, mover ou excluir anotações do seu conteúdo
+Além de visualizar as anotações, o modo Anotar permite criar, editar, mover ou excluir anotações do seu conteúdo
 
 1. [Iniciar modo Anotação](#annotate-mode) na página.
 

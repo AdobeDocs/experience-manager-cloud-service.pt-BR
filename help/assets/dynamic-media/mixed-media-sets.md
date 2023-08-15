@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Mixed Media Sets
 role: User
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1501'
+source-wordcount: '1500'
 ht-degree: 14%
 
 ---
@@ -148,12 +148,11 @@ Ao adicionar ativos ao conjunto, eles são automaticamente adicionados em ordem 
 
    * Para classificar ativos por seu nome em ordem crescente ou decrescente, no painel esquerdo, selecione **[!UICONTROL Assets]** (ícone de figura). À direita do **[!UICONTROL Assets]** selecione os ícones de circunflexo para cima ou para baixo.
 
-      >[!NOTE]
-      >
-      >* Para excluir um Conjunto de mídias mistas inteiro, a partir de qualquer modo de exibição (como **[!UICONTROL Exibição de cartão]** ou **[!UICONTROL Exibição de coluna]**) navegar até o Conjunto de mídias mistas. Passe o mouse sobre o ativo e selecione o ícone de marca de seleção para poder selecioná-lo. Pressione **[!UICONTROL Backspace]** no teclado ou selecione **[!UICONTROL Mais]** (três pontos) na barra de ferramentas, selecione **[!UICONTROL Excluir]**.
-      >
-      >* Edite os ativos em um Conjunto de mídias mistas ao navegar até o conjunto. No painel à esquerda, selecione **[!UICONTROL Definir membros]**, em seguida, selecione a **[!UICONTROL Lápis]** em um ativo individual para abrir a janela de edição.
-
+     >[!NOTE]
+     >
+     >* Para excluir um Conjunto de mídias mistas inteiro, a partir de qualquer modo de exibição (como **[!UICONTROL Exibição de cartão]** ou **[!UICONTROL Exibição de coluna]**) navegar até o Conjunto de mídias mistas. Passe o mouse sobre o ativo e selecione o ícone de marca de seleção para poder selecioná-lo. Pressione **[!UICONTROL Backspace]** no teclado ou selecione **[!UICONTROL Mais]** (três pontos) na barra de ferramentas, selecione **[!UICONTROL Excluir]**.
+     >
+     >* Edite os ativos em um Conjunto de mídias mistas ao navegar até o conjunto. No painel à esquerda, selecione **[!UICONTROL Definir membros]**, em seguida, selecione a **[!UICONTROL Lápis]** em um ativo individual para abrir a janela de edição.
 
 1. Selecionar **[!UICONTROL Salvar]** quando terminar de editar.
 
@@ -162,7 +161,6 @@ Ao adicionar ativos ao conjunto, eles são automaticamente adicionados em ordem 
    >* Para editar os ativos em um Conjunto de mídias mistas - Navegue até o Conjunto de mídias mistas. Toque (não selecione) no conjunto para abri-lo na página Visualização do conjunto de Experience Manager. No painel à esquerda, selecione o sinal de seta para baixo para abrir a lista suspensa e selecione **[!UICONTROL Definir membros]**. Na página Definir membros, passe o mouse sobre um ativo e selecione **[!UICONTROL Editar]** (ícone de lápis) para abrir a página de edição.
    >
    >* Para excluir um conjunto de mídia mista inteiro - A partir de qualquer modo de exibição (como a Exibição de cartão ou em Coluna), navegue até o conjunto de mídias mistas. Passe o mouse sobre o conjunto e selecione **[!UICONTROL Selecionar]** (ícone de marca de seleção). Pressione **[!UICONTROL Backspace]** no teclado ou selecione **[!UICONTROL Mais]** (linha de três pontos), selecione **[!UICONTROL Excluir]**.
-
 
 ## Visualizar conjuntos de mídia mista {#previewing-mixed-media-sets}
 

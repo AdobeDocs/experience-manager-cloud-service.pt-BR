@@ -2,10 +2,10 @@
 title: Editar as propriedades da página
 description: Saiba como definir as propriedades necessárias para gerenciar uma página no AEM.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 0183e14ad1653e98c06b19ea36c7e97dedccdb84
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2281'
-ht-degree: 80%
+source-wordcount: '2279'
+ht-degree: 79%
 
 ---
 
@@ -76,7 +76,7 @@ As propriedades são distribuídas por várias guias.
 
 * **URL personalizada**
 
-   * Permite inserir uma URL personalizada para esta página, o que permite utilizar uma URL mais curta e/ou expressiva.
+   * Permite inserir um URL personalizado para esta página, o que pode permitir que você tenha um URL mais curto e/ou mais expressivo.
    * Por exemplo, se o URL personalizado estiver definido como `welcome` para a página identificada pelo caminho`/v1.0/startpage` para o site `http://example.com`, em seguida, `http://example.com/welcome`será o URL personalizado de `http://example.com/content/v1.0/startpage`
 
   >[!CAUTION]
@@ -104,7 +104,7 @@ As propriedades são distribuídas por várias guias.
    * **Pseudônimo** - especifica um pseudônimo para ser usado com esta página
       * Por exemplo: se você definir um pseudônimo de `private` para a página `/content/wknd/us/en/magazine/members-only`, essa página poderá ser acessada por meio de `/content/wknd/us/en/magazine/private`
       * A criação de um pseudônimo define a propriedade de `sling:alias` no nó da página, que afeta apenas o recurso, não o caminho do repositório.
-      * As páginas acessadas por pseudônimos no editor não podem ser publicadas. As [Opções de publicação](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) no editor só estão disponíveis para páginas acessadas por meio de seus caminhos de fato.
+      * Páginas acessadas por pseudônimos no editor não podem ser publicadas. As [Opções de publicação](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) no editor só estão disponíveis para páginas acessadas por meio de seus caminhos de fato.
       * Para obter mais detalhes, consulte [Nomes de páginas localizados em Práticas recomendadas de gerenciamento de SEO e URL](/help/overview/seo-and-url-management.md#localized-page-names).
 
 * **Configuração**

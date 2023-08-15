@@ -4,9 +4,9 @@ description: Há diferentes tipos de usuários com habilidades variadas que trab
 feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '321'
 ht-degree: 5%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 5%
 
 Há diferentes tipos de usuários com habilidades variadas que trabalham com o Adaptive Forms. Embora os usuários especialistas possam ter o conhecimento certo para trabalhar com scripts e regras complexas, pode haver usuários de nível básico que precisam trabalhar somente com o layout e as propriedades básicas do Adaptive Forms.
 
-[!DNL Experience Manager Forms] O permite limitar o acesso do editor de regras aos usuários com base em sua função. Nas configurações do Serviço de configuração do Forms adaptável, você pode especificar a variável [grupos de usuários](forms-groups-privileges-tasks.md) que podem exibir e acessar o editor de regras.
+[!DNL Experience Manager Forms] permite limitar o acesso do editor de regras aos usuários com base em sua função. Nas configurações do Serviço de configuração do Forms adaptável, você pode especificar a variável [grupos de usuários](forms-groups-privileges-tasks.md) que podem exibir e acessar o editor de regras.
 
 ## Especificar grupos de usuários que podem acessar o editor de regras {#specify-user-groups-that-can-access-rule-editor}
 

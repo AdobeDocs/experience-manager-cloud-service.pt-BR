@@ -6,9 +6,9 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 1a1bb23c-d1d1-4e2b-811b-753e6a90a01b
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '545'
 ht-degree: 4%
 
 ---
@@ -48,7 +48,7 @@ Essas listas podem ser exibidas (juntamente com informações de configuração)
 
 * Configuração Mostra a configuração atual (conforme definido para a variável [Apache Sling Resource Resolver](/help/overview/seo-and-url-management.md#etc-map)).
 
-* Teste de configuração Permite inserir um URL ou um caminho de recurso. Clique em **Resolver** ou **Mapa** para confirmar como o sistema transforma a entrada.
+* Teste de configuração Isso permite que você insira um URL ou um caminho de recurso. Clique em **Resolver** ou **Mapa** para confirmar como o sistema transforma a entrada.
 
 * **Entradas do mapa do resolvedor**
 A lista de entradas usadas pelos métodos ResourceResolver.resolve para mapear URLs para Recursos.

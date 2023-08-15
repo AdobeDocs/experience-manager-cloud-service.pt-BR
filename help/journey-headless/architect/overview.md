@@ -2,10 +2,10 @@
 title: Jornada do arquiteto de conteúdo do AEM Headless
 description: Comece aqui para obter uma jornada guiada pelos recursos headless avançados e flexíveis do AEM, suas funcionalidades e aprenda a modelar o conteúdo em seu primeiro projeto headless.
 exl-id: ccfec100-8005-4f47-b5b6-ca188b35315c
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '786'
-ht-degree: 86%
+ht-degree: 84%
 
 ---
 
@@ -47,7 +47,7 @@ As informações nesta jornada podem, é claro, ser úteis para outros perfis, m
 
 Muitos tópicos serão explorados nesta jornada. Os artigos a seguir fornecem conhecimento básico sobre headless no AEM e oferecem links para a documentação técnica detalhada.
 
-Embora seja possível ir diretamente para uma parte específica da jornada, muitos conceitos baseiam-se em artigos anteriores. Portanto, se o tema “headless no AEM” for novidade para você, recomendamos começar do início e avançar sequencialmente.
+Embora seja possível ir diretamente para uma parte específica da jornada, muitos conceitos baseiam-se em artigos anteriores. Portanto, se você é novo no headless no AEM, a Adobe recomenda que você comece do início e avance sequencialmente.
 
 | # | Artigo | Descrição |
 |---|---|---|

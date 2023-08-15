@@ -2,10 +2,10 @@
 title: Saiba mais sobre as noções básicas de criação
 description: Saiba mais sobre os conceitos e os mecanismos de criação de conteúdo para seu CMS headless usando Fragmentos de conteúdo.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1715'
-ht-degree: 89%
+source-wordcount: '1714'
+ht-degree: 88%
 
 ---
 
@@ -50,7 +50,7 @@ Como na maioria dos sistemas, é necessário fazer logon. Como autor, você rece
 * Senha
 * Link para acessar a tela de logon
 
-Sua conta já terá sido configurada com os privilégios necessários. Em caso de problemas, recomendamos que você entre em contato com a equipe interna de suporte a projetos.
+Sua conta já terá sido configurada com os privilégios necessários. Se você tiver algum problema, a Adobe recomenda que você entre em contato com a equipe interna de suporte ao projeto.
 
 ### Navegação {#navigation}
 

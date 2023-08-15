@@ -2,9 +2,9 @@
 title: Diretrizes de desenvolvimento do AEM as a Cloud Service
 description: Conheça as diretrizes para desenvolvimento no AEM as a Cloud Service e as principais diferenças em relação ao AEM local e ao AEM no AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: f69b348b7de6c6537a9945793e3397bf4fe30f98
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2655'
+source-wordcount: '2653'
 ht-degree: 4%
 
 ---
@@ -96,7 +96,7 @@ A replicação reversa de Publicar para Autor não é compatível com o AEM as a
 
 ## Talvez seja necessário transferir os agentes de replicação direta {#forward-replication-agents}
 
-O conteúdo é replicado de Autor para Publicação por meio de um mecanismo pub-sub. Os agentes de replicação personalizados não são compatíveis.
+O conteúdo é replicado do Autor para a Publicação por meio de um mecanismo pub-sub. Os agentes de replicação personalizados não são compatíveis.
 
 ## Monitoramento e depuração {#monitoring-and-debugging}
 
@@ -205,7 +205,7 @@ Para programas de produção, o acesso ao Console do desenvolvedor é definido p
 
 ### Monitoramento de desempenho {#performance-monitoring}
 
-O Adobe monitora o desempenho do aplicativo e toma medidas para lidar com a deterioração observada. No momento, as métricas do aplicativo não podem ser observadas.
+O Adobe monitora o desempenho do aplicativo e toma medidas para lidar com a deterioração observada. No momento, as métricas de aplicação não podem ser observadas.
 
 ## Envio de email {#sending-email}
 

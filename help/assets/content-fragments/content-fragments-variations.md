@@ -2,10 +2,10 @@
 title: Variações - Criação dos fragmentos de conteúdo (Ativos - Fragmentos de conteúdo)
 description: Entenda como as variações podem tornar o conteúdo headless no AEM ainda mais flexível, permitindo criar conteúdo para o fragmento e, em seguida, criar variações desse conteúdo de acordo com a finalidade.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2438'
-ht-degree: 83%
+source-wordcount: '2435'
+ht-degree: 88%
 
 ---
 
@@ -46,7 +46,7 @@ Por exemplo:
 
 É possível:
 
-* Faça edições no seu conteúdo diretamente no **Variações** ; cada tipo de dados fornece opções de edição diferentes, por exemplo:
+* Fazer edições no conteúdo diretamente da guia **Variações**; cada tipo de dados fornece opções de edição diferentes, por exemplo:
 
    * para campos de **Texto multilinha**, também é possível abrir o [editor de tela cheia](#full-screen-editor) para:
 
@@ -56,20 +56,20 @@ Por exemplo:
 
    * Para campos de **Referência do fragmento**, a opção [Editar fragmento de conteúdo](#fragment-references-edit-content-fragment) pode estar disponível, dependendo da definição do modelo.
 
-* Atribuir **Tags** à variação atual; as tags podem ser adicionadas, atualizadas e removidas
+* Atribuir **tags** à variação atual; as tags podem ser adicionadas, atualizadas e removidas
 
-   * As [Tags](/help/sites-cloud/authoring/features/tags.md) são particularmente eficientes ao organizar os fragmentos, pois podem ser usadas para a classificação de conteúdo e taxonomia. As tags podem ser usadas para encontrar conteúdo (por tags) e aplicar operações em massa.
+   * As [tags](/help/sites-cloud/authoring/features/tags.md) são particularmente eficientes ao organizar os fragmentos, pois podem ser usadas para a classificação de conteúdo e taxonomia. As tags podem ser usadas para encontrar conteúdo (por tags) e aplicar operações em massa.
 
-      * As pesquisas por uma tag retornarão o fragmento, com a variação marcada destacada.
-      * As tags de variação também podem ser usadas para agrupar variações de um perfil específico da Rede de entrega de conteúdo (CDN) (para armazenamento em cache de CDN), em vez de usar o nome da variação.
+      * As pesquisas por uma tag retornarão o fragmento com a variação marcada em destaque.
+      * As tags de variação também podem ser usadas para agrupar variações de um perfil específico da rede de entrega de conteúdo (CDN) (para armazenamento em cache da CDN), em vez de usar o nome da variação.
 
-     Por exemplo, você pode marcar fragmentos relevantes como &quot;lançamento de Natal&quot; para permitir a navegação somente entre eles como um subconjunto ou copiá-los para uso com outro lançamento futuro em uma nova pasta.
+     Por exemplo, você pode marcar fragmentos relevantes como “Lançamento de Natal” para permitir a navegação somente entre eles como um subconjunto ou a cópia para uso com outro lançamento futuro em uma nova pasta.
 
   >[!NOTE]
   >
-  >**Tags** também podem ser adicionados (à lista **Principal** variação) como parte da [Metadados](/help/assets/content-fragments/content-fragments-metadata.md)
+  >**Tags** também podem ser adicionadas (à variação **principal**) como parte dos [metadados](/help/assets/content-fragments/content-fragments-metadata.md)
 
-* [Criar e gerenciar variações](#managing-variations) do conteúdo **Principal.**
+* [Criar e gerenciar variações](#managing-variations) do conteúdo **principal.**
 
 ### Editor de tela cheia {#full-screen-editor}
 
@@ -414,7 +414,7 @@ Para criar uma nova variação:
 
    >[!NOTE]
    >
-   Ao criar uma nova variação, todas as **Tags** atualmente atribuído à **Principal** são copiadas para a nova variação.
+   Ao criar uma nova variação, todas as **tags** atualmente atribuídas à variação **principal** são copiadas para a nova variação.
 
 ### Editar uma variação {#editing-a-variation}
 
@@ -483,7 +483,7 @@ A transferência de alterações *de uma variação para o **Principal*** não e
 
      ![sincronização com o Principal](assets/cfm-variations-11b.png)
 
-1. Principal e a variação é mostrada lado a lado:
+1. O Principal e a variação são mostrados lado a lado:
 
    * verde indica conteúdo adicionado (à variação)
    * vermelho indica conteúdo removido (da variação)

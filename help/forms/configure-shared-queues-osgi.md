@@ -6,9 +6,9 @@ seo-description: Learn how to use shared queues for Forms-centric workflows on [
 topic-tags: process
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '839'
+source-wordcount: '838'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ O usuário conectado deve ser membro do [!DNL `workflow-users`] grupo. O usuári
 
 ## Compartilhar um único item ou todos os itens da sua caixa de entrada com outro usuário
 
-A Caixa de entrada AEM permite compartilhar um único item ou todos os itens da caixa de entrada com outro usuário.
+A caixa de entrada AEM permite compartilhar um único item ou todos os itens da caixa de entrada com outro usuário.
 
 ### Compartilhar todos os itens da caixa de entrada
 

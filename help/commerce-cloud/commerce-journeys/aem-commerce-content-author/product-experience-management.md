@@ -2,9 +2,9 @@
 title: Criação de experiências de produto
 description: Saiba como criar conteúdo de produto que pode ser usado em vários canais para criar uma experiência de compra imersiva.
 exl-id: 4ae70e40-fdf1-4a37-b4dd-0c4882d77908
-source-git-commit: 412e206a66de470e2798aafc58bcac93dc7e3cad
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1168'
+source-wordcount: '1165'
 ht-degree: 4%
 
 ---

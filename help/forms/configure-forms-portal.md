@@ -2,9 +2,9 @@
 title: Como criar um portal do Forms em uma página do Experience Manager Sites
 description: Saiba como criar um Portal do Forms e usar componentes principais prontos para uso em uma página do AEM Sites.
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1839'
+source-wordcount: '1837'
 ht-degree: 1%
 
 ---
@@ -88,7 +88,7 @@ Para importar componentes prontos para uso do Forms Portal no AEM Forms as a Clo
 
 Antes de executar essas etapas, verifique se você tem uma conta de armazenamento do Azure e uma chave de acesso para autorizar o acesso ao [!DNL Azure] conta de armazenamento.
 
-1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Armazenamento do Azure]**.
+1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Armazenamento do Azure]**.
 1. Selecione uma pasta para criar a configuração e toque em **[!UICONTROL Criar]**.
 1. Especifique um título para a configuração no campo **[!UICONTROL Título]** campo.
 1. Especifique o nome do [!DNL Azure] conta de armazenamento na **[!UICONTROL Conta de armazenamento do Azure]** campo.

@@ -4,16 +4,16 @@ description: Saiba como configurar o Dynamic Media no Adobe Experience Manager a
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3795'
+source-wordcount: '3794'
 ht-degree: 3%
 
 ---
 
 # Sobre a configuração do Cloud Service Dynamic Media {#configuring-dynamic-media}
 
-Se você usar o Adobe Experience Manager para ambientes diferentes, como desenvolvimento, armazenamento temporário e produção em tempo real, configure o Dynamic Media Cloud Services para cada um desses ambientes.
+Se você usar o Adobe Experience Manager para ambientes diferentes, como desenvolvimento, armazenamento temporário e produção em tempo real, configure o Dynamic Media Cloud Service para cada um desses ambientes.
 
 Consulte também [Configurar uma conta de alias da empresa no Dynamic Media](/help/assets/dynamic-media/dm-alias-account.md)
 
@@ -40,7 +40,6 @@ Com a nova arquitetura, o Experience Manager é responsável pelos ativos de ori
 >* Redirecionamento de URL no nível da CDN
 >* Akamai ChinaCDN (para entrega ideal na China)
 
-
 <!-- OBSOLETE CONTENT
 
 ## (Optional) Migrating Dynamic Media presets and configurations from 6.3 to 6.5 Zero Downtime {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
@@ -61,12 +60,12 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 -->
 
-## Criar uma configuração do Dynamic Media no Cloud Services {#configuring-dynamic-media-cloud-services}
+## Criar uma configuração do Dynamic Media no Cloud Service {#configuring-dynamic-media-cloud-services}
 
 <!-- **Before you creating a Dynamic Media Configuration in Cloud Services**: After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials. -->
 
 1. Em Experience Manager as a Cloud Service, selecione o logotipo Experience Manager as a Cloud Service para acessar o console de navegação global.
-1. À esquerda do console, selecione o ícone Ferramentas e vá para **[!UICONTROL Cloud Services > Configuração do Dynamic Media]**.
+1. À esquerda do console, selecione o ícone Ferramentas e vá para **[!UICONTROL Cloud Service > Configuração do Dynamic Media]**.
 1. Na página Navegador de configuração do Dynamic Media, no painel esquerdo, selecione **[!UICONTROL global]** (não selecione o ícone de pasta à esquerda de **[!UICONTROL global]**). Em seguida, selecione **[!UICONTROL Criar]**.
 1. No **[!UICONTROL Criar configuração do Dynamic Media]** , digite o título, o endereço de email da conta da Dynamic Media e a senha do administrador da empresa da conta da Dynamic Media e selecione sua região. Essas informações são fornecidas pelo Adobe no e-mail de provisionamento. Entre em contato com o Suporte ao cliente do Adobe se não receber esse email.
 1. Selecionar **[!UICONTROL Conectar-se ao Dynamic Media]**.
@@ -93,7 +92,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    | Propriedade | Descrição |
    |---|---|
-   | Empresa | O nome da conta do Dynamic Media.<br>**Importante**: somente uma configuração Dynamic Media no Cloud Services é compatível em uma instância de Experience Manager; não adicione mais de uma configuração. Várias configurações do Dynamic Media em uma instância do Experience Manager são _não_ suportado ou recomendado pelo Adobe.<!-- CQDOC-19579 and CQDOC-19612 --><br>Consulte também [Configurar uma conta de alias da empresa no Dynamic Media](/help/assets/dynamic-media/dm-alias-account.md). |
+   | Empresa | O nome da conta do Dynamic Media.<br>**Importante**: somente uma configuração Dynamic Media no Cloud Service é compatível em uma instância de Experience Manager; não adicione mais de uma configuração. Várias configurações do Dynamic Media em uma instância do Experience Manager são _não_ suportado ou recomendado pelo Adobe.<!-- CQDOC-19579 and CQDOC-19612 --><br>Consulte também [Configurar uma conta de alias da empresa no Dynamic Media](/help/assets/dynamic-media/dm-alias-account.md). |
    | Caminho da pasta raiz da empresa | Caminho da pasta raiz da sua empresa. |
    | Publicar ativos | Você pode escolher entre as três opções a seguir:<br>**[!UICONTROL Imediatamente ]**- Quando os ativos são carregados, o sistema assimila os ativos e fornece o URL/Incorporar instantaneamente. Não há necessidade de intervenção do usuário para publicar ativos.<br>**[!UICONTROL Na ativação]** - Primeiro, publique explicitamente o ativo antes que um link de URL/Incorporação seja fornecido.<br>**[!UICONTROL Publicação seletiva ]**- Os ativos são publicados automaticamente apenas para visualização segura. Eles também podem ser publicados explicitamente no Experience Manager as a Cloud Service sem publicação no DMS7 para entrega no domínio público. No futuro, essa opção pretende publicar ativos no Experience Manager as a Cloud Service e publicar ativos na Dynamic Media, mutuamente exclusivos entre si. Ou seja, você pode publicar ativos no DMS7 para usar recursos como Recorte inteligente ou representações dinâmicas. Ou você pode publicar ativos exclusivamente no Experience Manager as a Cloud Service para visualização; esses mesmos ativos não são publicados no DMS7 para entrega no domínio público. |
    | Servidor de visualização seguro | Permite especificar o caminho do URL para o servidor de visualização de representações seguras. Ou seja, depois que as representações são geradas, o Experience Manager as a Cloud Service pode acessar e pré-visualizar com segurança as representações remotas do Dynamic Media (nenhum binário é enviado de volta para a instância as a Cloud Service do Experience Manager).<br>A menos que você tenha uma organização especial para usar o servidor de sua própria empresa ou um servidor especial, a Adobe recomenda que você deixe essa configuração conforme especificado. |
@@ -171,14 +170,14 @@ Se necessário, você pode verificar a ortografia de uma senha digitada ou digit
 A senha alterada é salva ao selecionar **[!UICONTROL Salvar]** no canto superior direito da **[!UICONTROL Editar configuração do Dynamic Media]** página.
 
 1. Em Experience Manager as a Cloud Service, selecione o logotipo Experience Manager as a Cloud Service para acessar o console de navegação global.
-1. À esquerda do console, selecione o ícone Ferramentas e vá para **[!UICONTROL Cloud Services > Configuração do Dynamic Media]**.
+1. À esquerda do console, selecione o ícone Ferramentas e vá para **[!UICONTROL Cloud Service > Configuração do Dynamic Media]**.
 1. Na página Navegador de configuração do Dynamic Media, no painel esquerdo, selecione **[!UICONTROL global]**. Não selecione o ícone de pasta à esquerda de **[!UICONTROL global]**. Em seguida, selecione **[!UICONTROL Editar]**.
 1. No **[!UICONTROL Editar configuração do Dynamic Media]** página, logo abaixo do **[!UICONTROL Senha]** selecione **[!UICONTROL Alterar senha]**.
 1. No **[!UICONTROL Alterar senha]** faça o seguinte:
 
    * No **[!UICONTROL Nova senha]** insira uma nova senha.
 
-      A variável **[!UICONTROL Senha atual]** O campo é intencionalmente pré-preenchido e ocultado da interação.
+     A variável **[!UICONTROL Senha atual]** O campo é intencionalmente pré-preenchido e ocultado da interação.
 
    * No **[!UICONTROL Repetir senha]** , digite novamente a nova senha e selecione **[!UICONTROL Concluído]**.
 
@@ -238,7 +237,6 @@ As tarefas de instalação e configuração incluem o seguinte:
 * [Configurar gerenciamento de cores](#configuring-color-management)
 * [Editar tipos MIME para formatos compatíveis](#editing-mime-types-for-supported-formats)
 * [Adicionar tipos MIME para formatos não suportados](#adding-mime-types-for-unsupported-formats)
-
 <!-- OBSOLETE BUT LEAVE FOR POSSIBLE FUTURE* [Creating batch set presets to auto-generate Image Sets and Spin Sets](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) -->
 
 #### Configurar o Dynamic Media Publish para o servidor de imagens {#publishing-setup-for-image-server}

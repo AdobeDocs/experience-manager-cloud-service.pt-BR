@@ -4,9 +4,9 @@ description: Saiba mais sobre as noções básicas do gerenciamento de pacotes d
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3775'
+source-wordcount: '3770'
 ht-degree: 4%
 
 ---

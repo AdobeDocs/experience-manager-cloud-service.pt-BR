@@ -4,10 +4,10 @@ description: Saiba como usar fragmentos de conteúdo e a API GraphQL como um sis
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: b9b9cf79173a0ae486bd5d8fcbc1fec48c0b2bc8
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1086'
-ht-degree: 96%
+source-wordcount: '1085'
+ht-degree: 95%
 
 ---
 
@@ -70,7 +70,7 @@ Você acabou de validar uma consulta de lista para obter uma lista completa de t
 
 ## Consultar uma parte específica do conteúdo de amostra {#bypath-query}
 
-A execução de uma consulta byPath permite recuperar o conteúdo de um fragmento de conteúdo específico. As páginas de detalhes do produto e as que se concentram em um conjunto específico de conteúdo normalmente exigem esse tipo de consulta.
+A execução de uma consulta byPath permite recuperar o conteúdo de um Fragmento de conteúdo específico. As páginas de detalhes do produto e as que se concentram em um conjunto específico de conteúdo normalmente exigem esse tipo de consulta.
 
 1. Copie o seguinte trecho de código para uma consulta byPath do ponto de acesso pré-carregado **Ativos de demonstração do AEM**.
 

@@ -2,10 +2,10 @@
 title: Visão geral dos testes do Cloud Manager
 description: Obtenha uma visão geral dos três tipos de testes que o Cloud Manager executa automaticamente para garantir a qualidade do seu código personalizado.
 exl-id: 5f5c97b1-4180-4f49-af8b-257d4744766e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 100%
+source-wordcount: '162'
+ht-degree: 91%
 
 ---
 

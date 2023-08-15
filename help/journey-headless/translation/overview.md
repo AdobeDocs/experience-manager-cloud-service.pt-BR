@@ -2,10 +2,10 @@
 title: Jornada de tradução headless do AEM
 description: Comece aqui uma jornada guiada pela tradução de seu conteúdo headless usando as eficientes ferramentas de tradução do AEM.
 exl-id: b677f691-5257-43c3-a4b9-c34932577b31
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1029'
-ht-degree: 96%
+ht-degree: 94%
 
 ---
 
@@ -59,7 +59,7 @@ As informações nesta jornada podem ser úteis para todos os perfis, mas alguma
 
 Muitos tópicos serão explorados nesta jornada. Os artigos a seguir fornecem conhecimento básico sobre a tradução de conteúdo headless no AEM e oferecem links para a documentação técnica detalhada.
 
-Embora seja possível ir diretamente para uma parte específica da jornada, muitos conceitos baseiam-se em artigos anteriores. Portanto, se você for novo em tradução headless no AEM, recomendamos começar do início e avançar sequencialmente.
+Embora seja possível ir diretamente para uma parte específica da jornada, muitos conceitos baseiam-se em artigos anteriores. Portanto, se você é novo na tradução headless no AEM, a Adobe recomenda que você comece do início e avance sequencialmente.
 
 | # | Artigo | Descrição |
 |---|---|---|

@@ -2,9 +2,9 @@
 title: AEM Forms as a Cloud Service - Comunicações
 description: Mesclar dados automaticamente com modelos XDP e PDF ou gerar saída nos formatos PCL, ZPL e PostScript
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: 33e59ce272223e081710294a2e2508edb92eba52
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '683'
 ht-degree: 7%
 
 ---
@@ -51,9 +51,9 @@ As operações de API de locatário único oferecem suporte a dois tipos de aute
    1. Execute a API de Experience Manager com o token de acesso como um token de autenticação de portador.
    1. [Defina as permissões apropriadas para o usuário da conta técnica no ambiente de Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem).
 
-   >[!NOTE]
-   >
-   >A Adobe recomenda usar a autenticação baseada em token em um ambiente de produção.
+  >[!NOTE]
+  >
+  >A Adobe recomenda usar a autenticação baseada em token em um ambiente de produção.
 
 <!-- 
 

@@ -2,9 +2,9 @@
 title: Adicionar um certificado SSL
 description: Saiba como adicionar seu próprio certificado SSL usando as ferramentas de autoatendimento do Cloud Manager.
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '571'
+source-wordcount: '570'
 ht-degree: 82%
 
 ---
@@ -153,7 +153,7 @@ openssl rsa -noout -modulus -in ssl.key | openssl md5
 
 >[!NOTE]
 >
->A saída desses dois comandos deve ser exatamente a mesma. Se não conseguir localizar uma chave privada correspondente para sua `main/server` , você precisará rechavear o certificado gerando uma nova CSR e/ou solicitando um certificado atualizado de seu fornecedor de SSL.
+>A saída desses dois comandos deve ser exatamente a mesma. Se não conseguir localizar uma chave privada correspondente para seu `main/server` , você precisará rechavear o certificado gerando uma nova CSR e/ou solicitando um certificado atualizado de seu fornecedor de SSL.
 
 ### Datas de validade do certificado {#certificate-validity-dates}
 

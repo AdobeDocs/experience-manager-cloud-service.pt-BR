@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Image Sets
 role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2135'
+source-wordcount: '2134'
 ht-degree: 5%
 
 ---
@@ -41,7 +41,7 @@ Consulte também [Limitações do Dynamic Media](/help/assets/dynamic-media/limi
 
 ## Início rápido: conjuntos de imagens {#quick-start-image-sets}
 
-Para começar a usar o rapidamente:
+Para começar a usar o com rapidez:
 
 1. Opcional. [Criar uma predefinição de conjunto de lotes](/help/assets/dynamic-media/batch-set-presets-dm.md) e aplique-a a uma nova pasta na qual as imagens do conjunto de rotação são carregadas.
 
@@ -121,7 +121,6 @@ Como os usuários podem ampliar imagens em Conjuntos de imagens, verifique se as
 >* Um tiro preto, marrom e verde do mesmo casaco.
 >* Uma miniatura de cor preta, marrom e verde.
 
-
 ## Criar conjuntos de imagens {#creating-image-sets}
 
 É possível criar Conjuntos de imagens por meio da interface do usuário ou da API.
@@ -164,6 +163,7 @@ Consulte também [Limitações do Dynamic Media](/help/assets/dynamic-media/limi
    * Próximo ao canto superior esquerdo da página Editor do conjunto de imagens, selecione **[!UICONTROL Adicionar ativo]**.
 
    * Próximo ao meio da página Editor do conjunto de imagens, selecione **[!UICONTROL Toque para abrir o Seletor de ativos]**.
+
    Toque para selecionar os ativos que deseja incluir no conjunto de imagens. Os ativos selecionados têm um ícone de marca de seleção sobre eles. Quando terminar, próximo ao canto superior direito da página, selecione **[!UICONTROL Selecionar]**.
 
    Com o Seletor de ativos, procure por ativos ao digitar uma palavra-chave e selecionar **[!UICONTROL Retornar]**. Aplique filtros para refinar os resultados da pesquisa. Filtre por caminho, coleção, tipo de arquivo e tag. Selecione o filtro e, em seguida, selecione a variável **[!UICONTROL Filtro]** na barra de ferramentas. Alterar a exibição ao clicar no ícone Exibir e selecionar **[!UICONTROL Exibição de coluna]**, **[!UICONTROL Exibição de cartão]** ou **[!UICONTROL Exibição de lista]**.
@@ -185,6 +185,7 @@ Consulte também [Limitações do Dynamic Media](/help/assets/dynamic-media/limi
    * Para excluir uma imagem, selecione-a e **[!UICONTROL Excluir ativo]**.
 
    * Para aplicar uma predefinição, próximo ao canto superior direito da página, selecione **[!UICONTROL Predefinição]**, em seguida, selecione uma predefinição para aplicar a todos os ativos de uma só vez.
+
    >[!NOTE]
    >
    >Ao criar o conjunto de imagens, você pode alterar a miniatura do conjunto de imagens. Ou você pode permitir que o Experience Manager selecione a miniatura automaticamente com base nos ativos no conjunto de imagens. Para selecionar uma miniatura, selecione **[!UICONTROL Alterar miniatura]** acima do campo Título na página Editor do conjunto de imagens. Em seguida, selecione qualquer imagem (você também pode navegar para outras pastas para localizar imagens). Experience Manager Se você selecionou uma miniatura e decidiu que deseja gerar uma do conjunto de imagens, selecione **[!UICONTROL Alternar para]** **[!UICONTROL Miniatura automática]**.
@@ -203,17 +204,17 @@ No entanto, os conjuntos criados usando predefinições de conjunto de lotes, *n
 
 * Abra as propriedades de um ativo. As propriedades indicam quais conjuntos o ativo selecionado é referenciado ou um membro de. Para ver o conjunto inteiro, selecione o nome do conjunto.
 
-   ![6_5_imageset-assetproperties](assets/6_5_imageset-assetproperties.png)
+  ![6_5_imageset-assetproperties](assets/6_5_imageset-assetproperties.png)
 
 * A partir de uma imagem de membro de qualquer conjunto. Selecione o **[!UICONTROL Conjuntos]** para exibir os conjuntos dos quais o ativo é membro.
 
-   ![6_5_imageset-setspulldownmenu](assets/6_5_imageset-setspulldownmenu.png)
+  ![6_5_imageset-setspulldownmenu](assets/6_5_imageset-setspulldownmenu.png)
 
 * Na pesquisa, é possível selecionar **[!UICONTROL Filtro]**, em seguida, expandir **[!UICONTROL Dynamic Media]** e selecione **[!UICONTROL Conjuntos]**.
 
-   A pesquisa retorna conjuntos correspondentes que foram criados manualmente na interface do usuário ou criados automaticamente por meio de predefinições de conjunto de lotes. Para conjuntos automatizados, a consulta de pesquisa é realizada usando &quot;Inicia com&quot;. Esse critério de pesquisa é diferente do Experience Manager que se baseia no uso de &quot;Contém&quot;. Definir o filtro como **[!UICONTROL Conjuntos]** O é a única maneira de pesquisar conjuntos automatizados.
+  A pesquisa retorna conjuntos correspondentes que foram criados manualmente na interface do usuário ou criados automaticamente por meio de predefinições de conjunto de lotes. Para conjuntos automatizados, a consulta de pesquisa é realizada usando &quot;Inicia com&quot;. Esse critério de pesquisa é diferente do Experience Manager que se baseia no uso de &quot;Contém&quot;. Definir o filtro como **[!UICONTROL Conjuntos]** O é a única maneira de pesquisar conjuntos automatizados.
 
-   ![chlimage_1-134](assets/chlimage_1-134.png)
+  ![chlimage_1-134](assets/chlimage_1-134.png)
 
 >[!NOTE]
 >
@@ -242,10 +243,9 @@ No entanto, os conjuntos criados usando predefinições de conjunto de lotes, *n
    * Para reordenar ativos, arraste uma imagem para um novo local (selecione o ícone reordenar para mover itens).
    * Para classificar itens em ordem crescente ou decrescente, clique no cabeçalho da coluna.
    * Para adicionar um ativo ou atualizar um ativo existente, clique no **[!UICONTROL Adicionar ativo]**. Navegue até um ativo, selecione-o e selecione **[!UICONTROL Selecionar]** próximo ao canto superior direito da página.
-
-      >[!NOTE]
-      >
-      >Se você excluir a imagem que o Experience Manager usa para a miniatura substituindo-a por outra imagem, o ativo original ainda será exibido.
+     >[!NOTE]
+     >
+     >Se você excluir a imagem que o Experience Manager usa para a miniatura substituindo-a por outra imagem, o ativo original ainda será exibido.
    * Para excluir um ativo, selecione-o e **[!UICONTROL Excluir ativo]**.
    * Para aplicar uma predefinição, próximo ao canto superior direito da página, selecione **[!UICONTROL Predefinição]**, em seguida, selecione uma predefinição do visualizador.
    * Para adicionar ou alterar uma miniatura, selecione o ícone de miniatura à direita do ativo. Navegue até a nova miniatura ou ativo de amostra, selecione-o e, em seguida, **[!UICONTROL Selecionar]**.

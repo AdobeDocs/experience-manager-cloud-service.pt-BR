@@ -2,9 +2,9 @@
 title: Participar de fluxos de trabalho
 description: Os fluxos de trabalho normalmente incluem etapas que exigem que uma pessoa execute uma atividade em uma página ou ativo.
 exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1537'
+source-wordcount: '1536'
 ht-degree: 36%
 
 ---
@@ -261,7 +261,7 @@ Para abrir um item do fluxo de trabalho e exibir os detalhes:
 
 Você pode exibir detalhes da carga associada à instância do fluxo de trabalho. Inicialmente, os recursos do pacote são mostrados e, em seguida, você pode fazer drill-down para mostrar as páginas individuais.
 
-Para exibir a carga e os recursos da instância de workflow:
+Para exibir a carga e os recursos da instância de fluxo de trabalho:
 
 1. Abra a **[Caixa de entrada do AEM](/help/sites-cloud/authoring/getting-started/inbox.md)**.
 1. Selecione o item do fluxo de trabalho que deseja executar a ação (toque/clique na miniatura).

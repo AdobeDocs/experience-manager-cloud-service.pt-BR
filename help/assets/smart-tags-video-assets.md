@@ -4,9 +4,9 @@ description: O Experience Manager adiciona automaticamente Tags inteligentes con
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: b59043c5-5df3-49a7-b4fc-da34c03649d7
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1212'
 ht-degree: 3%
 
 ---
@@ -67,7 +67,7 @@ Os resultados da pesquisa são uma combinação de ativos de vídeo com palavras
 
 ## Tags inteligentes de vídeo moderadas {#moderate-video-smart-tags}
 
-[!DNL Adobe Experience Manager] O permite preparar as tags inteligentes para:
+[!DNL Adobe Experience Manager] permite preparar as tags inteligentes para:
 
 * remova as tags imprecisas atribuídas aos vídeos da sua marca.
 

@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2563'
+source-wordcount: '2562'
 ht-degree: 13%
 
 ---
@@ -386,7 +386,7 @@ Execute as seguintes etapas para configurar o Brand Portal Cloud Service:
 
 1. Faça logon no Experience Manager Assets.
 
-1. No **Ferramentas** , navegue até **[!UICONTROL Cloud Services]** > **[!UICONTROL AEM Brand Portal]**.
+1. No **Ferramentas** , navegue até **[!UICONTROL Cloud Service]** > **[!UICONTROL AEM Brand Portal]**.
 
 1. Na página Configurações do Brand Portal, clique em **[!UICONTROL Criar]**.
 

@@ -2,9 +2,9 @@
 title: Adicionar listas de permissões de IP
 description: Saiba como adicionar seu próprio arquivo de inclui na lista de permissões de IP usando o Cloud Manager.
 exl-id: 769be71f-5c11-4f98-8906-7a5667a25aee
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '196'
 ht-degree: 40%
 
 ---
@@ -38,4 +38,4 @@ Um usuário no **Proprietário da empresa** ou **Gerente de implantação** A fu
 
 1. Clique em **Salvar** para confirmar o envio.
 
-Depois de salvar, a inclui na lista de permissões IP recém-criada aparece como uma linha na tabela no **LISTAS DE PERMISSÕES IP** página.
+Depois de salvar, a inclui na lista de permissões de IP recém-criada aparece como uma linha na tabela no **LISTAS DE PERMISSÕES IP** página.

@@ -2,10 +2,10 @@
 title: Criar uma solicitação de API - Configuração Headless
 description: Saiba como usar a API GraphQL para a entrega headless do conteúdo do Fragmento de conteúdo e a API REST do AEM Assets para gerenciar Fragmentos de conteúdo.
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '654'
-ht-degree: 63%
+source-wordcount: '651'
+ht-degree: 58%
 
 ---
 
@@ -19,7 +19,7 @@ Saiba como usar a API GraphQL para a entrega headless do conteúdo do Fragmento 
 
 * [A API do GraphQL](/help/headless/graphql-api/content-fragments.md) O permite criar solicitações para acessar e entregar Fragmentos de conteúdo. Essa API oferece o conjunto mais robusto de recursos para consultar e consumir conteúdo de Fragmento de conteúdo.
    * Para usar a API, [definir e habilitar endpoints no AEM](/help/headless/graphql-api/graphql-endpoint.md)e, se necessário, [Interface GraphiQL instalada](/help/headless/graphql-api/graphiql-ide.md).
-* [A API REST do Assets](/help/assets/content-fragments/assets-api-content-fragments.md) permite criar e modificar Fragmentos de conteúdo (e outros ativos).
+* [A API REST do Assets](/help/assets/content-fragments/assets-api-content-fragments.md) permite criar e modificar fragmentos de conteúdo (e outros ativos).
 
 O restante deste guia se concentra no acesso ao GraphQL e na entrega de fragmentos de conteúdo.
 
@@ -55,7 +55,7 @@ GraphiQL é um IDE, incluído no seu ambiente do AEM; ele se torna acessível/vi
    * diretamente; por exemplo, `http://localhost:4502/aem/graphiql.html`
 
 1. O GraphiQL IDE é um editor de consultas no navegador para GraphQL. Você pode usá-lo para criar consultas para recuperar fragmentos de conteúdo e entregá-los como JSON sem periféricos.
-   * A lista suspensa no canto superior direito permite selecionar o endpoint.
+   * O menu suspenso no canto superior direito permite selecionar o endpoint.
    * Um painel à esquerda lista as consultas persistentes (quando disponíveis)
    * O painel central esquerdo permite criar a consulta.
    * O painel central direito exibe os resultados.

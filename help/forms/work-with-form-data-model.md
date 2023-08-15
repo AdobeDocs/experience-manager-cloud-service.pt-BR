@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: c17c0443-d4dc-41f8-9315-6cc49e6c471f
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '4140'
+source-wordcount: '4137'
 ht-degree: 0%
 
 ---
@@ -96,7 +96,7 @@ Em seguida, você pode adicionar propriedades secundárias em objetos de modelo 
 
 ### Adicionar propriedades secundárias {#child-properties}
 
-O editor do modelo de dados de formulário permite criar propriedades secundárias em um objeto de modelo de dados. Quando criada, a propriedade não está associada a nenhuma propriedade em uma fonte de dados. Posteriormente, você pode vincular a propriedade secundária a outra propriedade no objeto de modelo de dados contentor.
+O editor de modelo de dados de formulário permite criar propriedades secundárias em um objeto de modelo de dados. Quando criada, a propriedade não está associada a nenhuma propriedade em uma fonte de dados. Posteriormente, você pode vincular a propriedade secundária a outra propriedade no objeto de modelo de dados contentor.
 
 Para criar uma propriedade secundária:
 

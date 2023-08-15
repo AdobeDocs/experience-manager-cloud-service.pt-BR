@@ -2,9 +2,9 @@
 title: Fase de implementação no Cloud Acceleration Manager
 description: Esta página fornece uma visão geral sobre a fase de implementação no Cloud Acceleration Manager.
 exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '662'
+source-wordcount: '661'
 ht-degree: 4%
 
 ---
@@ -107,9 +107,9 @@ Siga esta seção para explorar o cartão de atividade Transferência de conteú
    >[!NOTE]
    >Consulte [pré-requisitos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html) e a variável [práticas recomendadas e diretrizes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) antes de usar a ferramenta Transferência de conteúdo.
 
-1. Baixe e instale a ferramenta Transferência de conteúdo para preencher o conjunto de migração e concluir a fase de Extração da transferência de conteúdo. Revisão [Introdução à ferramenta Transferência de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html) para saber como usar a ferramenta Transferência de conteúdo.
+1. Baixe e instale a ferramenta Transferência de conteúdo para preencher o conjunto de migração e concluir a fase de Extração da transferência de conteúdo. Revisão [Introdução à ferramenta Transferência de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=pt-BR) para saber como usar a ferramenta Transferência de conteúdo.
 
-1. Para assimilar conteúdo do conjunto de migração em um ambiente no AEM as a Cloud Service, você deve iniciar uma assimilação. Navegue até **Tarefas de assimilação** e clique em **Nova assimilação**. Revisão [Assimilar conteúdo no Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html) para que você possa aprender a concluir a fase de assimilação da transferência de conteúdo.
+1. Para assimilar conteúdo do conjunto de migração em um ambiente no AEM as a Cloud Service, você deve iniciar uma assimilação. Navegue até **Tarefas de assimilação** e clique em **Nova assimilação**. Revisão [Assimilar conteúdo no Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html) assim, você pode aprender a concluir a fase de assimilação da transferência de conteúdo.
 
    ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-3.png)
 

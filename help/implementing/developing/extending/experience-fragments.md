@@ -2,9 +2,9 @@
 title: Visão geral dos fragmentos de experiência
 description: Estender fragmentos de experiência do Adobe Experience Manager as a Cloud Service.
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1641'
+source-wordcount: '1640'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 Um [Fragmento de experiência](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) é um grupo de um ou mais componentes, incluindo conteúdo e layout que podem ser referenciados nas páginas.
 
-Um Fragmento de experiência Principal, ou uma variante, ou ambos, usa:
+Um Fragmento de experiência principal, ou uma variante, ou ambos, usa:
 
 * `sling:resourceType` : `/libs/cq/experience-fragments/components/xfpage`
 
@@ -200,7 +200,7 @@ public interface ExperienceFragmentLinkRewriterProvider {
 
 Para usar a interface, primeiro você deve criar um pacote contendo um novo componente de serviço que implemente a interface do Provedor de reescrita de link.
 
-Esse serviço é usado para conectar a regravação da Exportação do fragmento de experiência para o Target, para que ele possa ter acesso aos vários links.
+Esse serviço é usado para conectar à regravação da Exportação do fragmento de experiência para o Target, para que ele possa ter acesso aos vários links.
 
 Por exemplo, `ComponentService`:
 

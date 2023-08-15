@@ -1,19 +1,19 @@
 ---
 title: Layout responsivo
-description: AEM permite que você realize um layout responsivo para suas páginas
+description: O AEM permite que você tenha um layout responsivo para suas páginas
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1748'
-ht-degree: 56%
+source-wordcount: '1739'
+ht-degree: 52%
 
 ---
 
-# Layout responsivo   {#responsive-layout}
+# Layout responsivo {#responsive-layout}
 
-O AEM permite ter um layout responsivo para suas páginas usando o **Contêiner de layout** componente.
+O AEM permite que você tenha um layout responsivo para suas páginas usando o **Contêiner de layout** componente.
 
-Isso fornece um sistema de parágrafo que permite posicionar componentes em uma grade responsiva. Essa grade pode reorganizar o layout de acordo com o tamanho e o formato do dispositivo/janela. O componente é utilizado em conjunto com o modo de [**Layout**,](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) que permite criar e editar o seu layout responsivo dependendo do dispositivo.
+Isso fornece um sistema de parágrafo que permite posicionar componentes em uma grade responsiva. Essa grade pode reorganizar o layout de acordo com o tamanho e o formato do dispositivo/janela. O componente é usado em conjunto com o [**Layout** modo](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes), que permite criar e editar o layout responsivo dependendo do dispositivo.
 
 O contêiner de layout:
 
@@ -96,7 +96,7 @@ Por exemplo, ao selecionar o dispositivo **iPhone 6 Plus** (definido com uma lar
 
    A barra de ferramentas do emulador exibe opções adicionais de layout:
 
-   * **Girar dispositivo** - permite que você gire um dispositivo de orientação vertical (retrato) para a orientação horizontal (paisagem) e vice-versa.
+   * **Girar dispositivo** - Permite girar um dispositivo de orientação vertical (retrato) para a orientação horizontal (paisagem) e vice-versa.
 
    ![Botão Girar paisagem do dispositivo](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-landscape-button.png)
    ![Botão Girar retrato do dispositivo](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-portrait-button.png)
@@ -195,8 +195,8 @@ Quando estiver no modo de layout, você poderá executar várias ações em uma 
   >
   >As proporções e as taxas são mantidas quando componentes como **Imagens** são redimensionadas.
 
-* Clique/toque em um componente de conteúdo, a barra de ferramenta permite que você:
-   * **Pai** - permite que você selecione o componente do contêiner de layout inteiro para executar uma ação em tudo.
+* Clique/toque em um componente de conteúdo, a barra de ferramentas permite:
+   * **Pai** - Permite selecionar o componente do contêiner de layout inteiro para executar uma ação em tudo.
    * **Flutuar para a nova linha** - O componente é movido para uma nova linha, dependendo do espaço disponível na grade.
    * **Ocultar componente** - O componente fica invisível (ele pode ser restaurado na barra de ferramentas do contêiner de layout).
 

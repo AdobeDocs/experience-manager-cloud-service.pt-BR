@@ -2,10 +2,10 @@
 title: Criação de conteúdo com o Editor universal
 description: Saiba como é fácil e intuitivo para os autores criarem conteúdo utilizando o Editor universal.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: e03bf6437b72a4fe7e959a23f12f0baa892fa567
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2271'
-ht-degree: 30%
+source-wordcount: '2266'
+ht-degree: 29%
 
 ---
 
@@ -74,7 +74,7 @@ Exibe a organização na qual você está conectado no momento. Toque ou clique 
 
 #### Soluções {#solutions}
 
-Tocar ou clicar no alternador de soluções permite acessar rapidamente as outras soluções da Experience Cloud.
+Tocar ou clicar no alternador de soluções permite que você vá rapidamente para outras soluções Experience Cloud.
 
 ![Alternador de soluções](assets/solutions.png)
 
@@ -217,7 +217,7 @@ Ao selecionar um Fragmento de conteúdo, os detalhes dele são exibidos no paine
 
 O editor ocupa a maior parte da janela e é onde a página especificada em [a barra de localização](#location-bar) é renderizado.
 
-* Se o editor estiver em um modo de edição como [modo texto](#text-mode) ou [modo mídia,](#media-mode) o conteúdo será editável, mas você não poderá seguir os links.
+* Se o editor estiver em um modo de edição como [modo texto](#text-mode) ou [modo mídia,](#media-mode) o conteúdo será editável, mas não será possível seguir os links.
 * Se o editor estiver em [modo de visualização,](#preview-mode) o conteúdo será navegável e você poderá seguir os links, mas não poderá editar o conteúdo.
 
 ![Editor](assets/editor.png)

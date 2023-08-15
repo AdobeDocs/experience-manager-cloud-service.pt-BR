@@ -2,10 +2,10 @@
 title: Guia de início rápido para a criação de páginas
 description: Um guia rápido de alto nível para começar a criar conteúdo de página
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1569'
-ht-degree: 62%
+source-wordcount: '1568'
+ht-degree: 61%
 
 ---
 
@@ -63,7 +63,7 @@ Há vários aspectos para localizar uma página; você pode navegar e/ou pesquis
 
    ![Exibir lista suspensa de seleção](/help/sites-cloud/authoring/assets/views.png)
 
-1. Navegue até a árvore usando a [navegação estrutural do cabeçalho](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header), o que permite retornar ao local selecionado:
+1. Navegue até a árvore usando [a navegação estrutural no cabeçalho](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header), que permite retornar ao local selecionado:
 
    ![Lista suspensa de navegação estrutural](/help/sites-cloud/authoring/assets/breadcrumb.png)
 

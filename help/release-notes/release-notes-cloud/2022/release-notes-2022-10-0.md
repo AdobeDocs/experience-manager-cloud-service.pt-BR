@@ -1,11 +1,11 @@
 ---
-title: Notas de versão do [!DNL Adobe Experience Manager]  as a Cloud Service 2022.10.0.
-description: Notas de versão do [!DNL Adobe Experience Manager]  as a Cloud Service 2022.10.0.
+title: Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2022.10.0.
+description: Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2022.10.0.
 exl-id: 8fce7c50-f322-4bcf-bd76-390faedfd5b7
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '838'
-ht-degree: 84%
+source-wordcount: '836'
+ht-degree: 79%
 
 ---
 
@@ -48,7 +48,7 @@ Assista ao vídeo de Visão geral da versão de outubro de 2022 que exibe um res
 
 ### Novos recursos no [!DNL Assets] {#assets-features}
 
-* O Experience Manager Assets agora permite fazer upload de documentos em outros tipos de formato compatíveis e [efetuar a pré-visualização usando o visualizador do Document Cloud incluído](/help/assets/manage-pdf-documents.md). Os tipos de formato compatíveis incluem TXT, RTF, DOC, DOCX, PPT, PPTX, XLS e XLSX.
+* O Experience Manager Assets agora permite fazer upload de documentos em outros tipos de formato compatíveis e[visualizá-los usando o visualizador de Document Cloud incluído](/help/assets/manage-pdf-documents.md). Os tipos de formato compatíveis incluem TXT, RTF, DOC, DOCX, PPT, PPTX, XLS e XLSX.
 
   ![Representação de PDF para outros formatos](/help/release-notes/assets/multi-page-other-formats.png)
 
@@ -65,7 +65,7 @@ Assista ao vídeo de Visão geral da versão de outubro de 2022 que exibe um res
 
 ### Novos recursos disponíveis no canal de pré-lançamento do [!DNL Forms] {#prerelease-features-forms}
 
-* **Editor de modelo de Formulários adaptáveis**: o editor de modelos permite que você predefina a estrutura básica e a aparência dos formulários adaptáveis de uma organização. Esta versão traz as seguintes melhorias para o editor de modelo:
+* **Editor de modelo adaptável do Forms**: o editor de modelos permite que você predefina a estrutura básica e a aparência do Forms adaptável de uma organização. Esta versão traz as seguintes melhorias para o editor de modelo:
    * **[Modelo de dados de formulário no editor de modelos](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model)**: você pode associar um esquema de Modelo de dados de formulário a um modelo de formulário adaptável no editor de modelos. Isso ajuda a reduzir o tempo gasto para criar um Formulário adaptável. A opção também é adicionada ao editor de Formulários adaptáveis para permitir que os usuários selecionem ou alterem o Modelo de Dados de Formulário para formulários existentes.
    * **[Documento de Registro no editor de modelo](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)**: Agora é possível padronizar a geração de Documento de Registro para todos os formulários criados usando um modelo. Isso ajuda a aprimorar a conformidade e a padronização dos requisitos da organização.
 

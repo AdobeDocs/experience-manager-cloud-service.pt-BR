@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
-source-git-commit: 86da8e784e3e5ff034efdb9186cf134d4b1c6e9c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2486'
-ht-degree: 94%
+source-wordcount: '2482'
+ht-degree: 93%
 
 ---
 
@@ -94,7 +94,7 @@ Mostra a hierarquia de objetos do formulário. O autor pode navegar até um comp
 
    * **Objetos do modelo de dados**
 Permite ver a hierarquia do modelo de formulário.
-Isso permite arrastar e soltar elementos do modelo de formulário no formulário adaptável. Os elementos adicionados são convertidos automaticamente em componentes de formulário, mantendo suas propriedades originais. É possível ver objetos de modelo de dados quando o formulário usa esquema XML, esquema JSON ou modelo XDP.
+Ela permite arrastar e soltar elementos do modelo de formulário no Formulário adaptável. Os elementos adicionados são convertidos automaticamente em componentes de formulário, mantendo suas propriedades originais. É possível ver objetos de modelo de dados quando o formulário usa esquema XML, esquema JSON ou modelo XDP.
 
 * **Navegador de propriedades**
 
@@ -234,7 +234,7 @@ Isso permite arrastar e soltar elementos do modelo de formulário no formulário
   </tr>
   <tr>
    <td>Texto</td>
-   <td>Permite especificar um texto estático.</td>
+   <td>Permite especificar texto estático.</td>
   </tr>
   <tr>
    <td>Botão Enviar</td>

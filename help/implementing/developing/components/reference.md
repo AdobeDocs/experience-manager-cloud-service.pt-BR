@@ -2,9 +2,9 @@
 title: Guia de referência de componentes
 description: Um guia de referência do desenvolvedor para os detalhes dos componentes e sua estrutura
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3650'
+source-wordcount: '3648'
 ht-degree: 2%
 
 ---
@@ -463,7 +463,7 @@ Como desenvolvedor, você deseja obter acesso fácil à documentação dos compo
 * APIs e pontos de extensão expostos
 * Etc.
 
-Por isso, é bastante fácil criar qualquer marcação de documentação existente que você tenha disponível no próprio componente.
+Por isso, é muito fácil criar qualquer marcação de documentação existente disponível no próprio componente.
 
 Tudo o que você precisa fazer é colocar um `README.md` na estrutura do componente.
 

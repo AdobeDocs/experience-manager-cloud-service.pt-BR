@@ -2,10 +2,10 @@
 title: "[!DNL AEM Forms] Notas de versão as a Cloud Service"
 description: "[!DNL AEM Forms] Notas de versão as a Cloud Service"
 exl-id: 35950b81-6e45-4a75-bd27-8c28fd68e42e
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2024'
-ht-degree: 19%
+source-wordcount: '2015'
+ht-degree: 16%
 
 ---
 
@@ -61,7 +61,7 @@ Você pode escrever para [!DNL formscsbeta@adobe.com] para se inscrever no progr
 ### Recursos beta do [!DNL Forms] {#sep-what-is-new-forms-prerelease}
 
 - **Conector de armazenamento unificado:** Use o Conector de armazenamento unificado para externalizar dados em processamento em repositórios gerenciados pelo cliente. Por exemplo, você pode armazenar dados de fluxos de trabalho de AEM em andamento (dados de variáveis de fluxo de trabalho de AEM) que contenham Dados pessoais confidenciais (SPD) em um repositório gerenciado pelo cliente.
-   <!--* Enable Forms Portal’s save and resume functionality and store adaptive forms drafts in a customer-managed data repository.-->
+  <!--* Enable Forms Portal’s save and resume functionality and store adaptive forms drafts in a customer-managed data repository.-->
 
 - **[!DNL AEM Forms as a Cloud Service - Communications]**: [APIs de comunicação](aem-forms-cloud-service-communications.md) Ajudar a combinar modelos XDP e dados XML para gerar documentos de impressão em vários formatos. O serviço permite gerar documentos em modo síncrono. As APIs permitem criar aplicativos que possibilitam a você:
    - Gerar documentos preenchendo arquivos de modelo com dados XML.
@@ -207,25 +207,25 @@ Você pode enviar um email a formscsbeta@adobe.com para se cadastrar no programa
 
 - **Usar o método de autenticação de ID do governo no Adaptive Forms habilitado para Adobe Sign**
 
-   Alimentado por algoritmos avançados de aprendizado de máquina, o processo de ID do governo da Adobe Sign oferece a empresas do mundo todo a capacidade de garantir uma autenticação de alta qualidade da identidade do recipient. Agora, você pode usar o método de autenticação de ID do governo no Adaptive Forms habilitado para Adobe Sign.
+  Alimentado por algoritmos avançados de aprendizado de máquina, o processo de ID do governo da Adobe Sign oferece a empresas do mundo todo a capacidade de garantir uma autenticação de alta qualidade da identidade do recipient. Agora, você pode usar o método de autenticação de ID do governo no Adaptive Forms habilitado para Adobe Sign.
 
-   ID do governo é um método de autenticação de identidade premium que instrui o recipient a [fazer upload da imagem de um documento de identidade emitido pelo governo (CNH, identificação nacional, passaporte)](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html)e avalia esse documento para garantir sua autenticidade.
+  ID do governo é um método de autenticação de identidade premium que instrui o recipient a [fazer upload da imagem de um documento de identidade emitido pelo governo (CNH, identificação nacional, passaporte)](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html)e avalia esse documento para garantir sua autenticidade.
 
 - **Suporte para usar a experiência de assinatura no formulário para envios assíncronos de formulários adaptáveis**
 
-   Agora você pode usar a experiência de assinatura no formulário para envios assíncronos de formulários adaptáveis. Também é possível incorporar um formulário adaptável em uma [!DNL Experience Manager Sites] e use a experiência de assinatura no formulário para envios de formulários adaptáveis.
+  Agora você pode usar a experiência de assinatura no formulário para envios assíncronos de formulários adaptáveis. Também é possível incorporar um formulário adaptável em uma [!DNL Experience Manager Sites] e use a experiência de assinatura no formulário para envios de formulários adaptáveis.
 
 - **Suporte para usar uma variável para especificar um anexo enquanto preenche um formulário adaptável para uma etapa Atribuir tarefa**
 
-   Ao preencher previamente um formulário adaptável para uma etapa Atribuir tarefa, agora é possível usar uma variável do tipo de documento para selecionar um anexo de entrada para o formulário adaptável.
+  Ao preencher previamente um formulário adaptável para uma etapa Atribuir tarefa, agora é possível usar uma variável do tipo de documento para selecionar um anexo de entrada para o formulário adaptável.
 
 - **Suporte para usar a opção literal para definir valor para uma variável do tipo JSON**
 
-   Você pode usar a opção literal para definir o valor de uma variável do tipo JSON na etapa Definir variável de um fluxo de trabalho AEM. A opção literal permite especificar um JSON no formato de uma string.
+  Você pode usar a opção literal para definir o valor de uma variável do tipo JSON na etapa Definir variável de um fluxo de trabalho AEM. A opção literal permite especificar um JSON no formato de uma string.
 
 - **Usar o ambiente de desenvolvimento local para criar um Documento de registro (DoR)**
 
-   Você pode usar um XDP como um modelo de Documento de registro em instâncias do Cloud Service e SDK as a Cloud Service do AEM Forms (Ambiente de desenvolvimento local). Anteriormente, o suporte estava limitado apenas a instâncias Cloud Service.
+  Você pode usar um XDP como um modelo de Documento de registro em instâncias do Cloud Service e SDK as a Cloud Service do AEM Forms (Ambiente de desenvolvimento local). Anteriormente, o suporte estava limitado apenas a instâncias Cloud Service.
 
 ### Correções de erros no [!DNL Forms] {#april-bug-fixes-forms}
 

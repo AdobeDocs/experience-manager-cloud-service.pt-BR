@@ -2,10 +2,10 @@
 title: New Relic One
 description: Saiba mais sobre o serviço de monitoramento de desempenho de aplicativo (APM) da New Relic One para o AEM as a Cloud Service e como você pode acessá-lo.
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1589'
-ht-degree: 82%
+source-wordcount: '1586'
+ht-degree: 79%
 
 ---
 
@@ -112,7 +112,7 @@ Para acessar a New Relic One diretamente:
 
 ### Verificação do seu email {#verify-email}
 
-Se for solicitado que você verifique seu email ao fazer logon na New Relic One, isso significa que seu email está associado a várias contas. Assim, você pode escolher qual conta acessar.
+Se for solicitado que você verifique seu email ao fazer logon na New Relic One, isso significa que seu email está associado a várias contas. Isso permite escolher qual conta acessar.
 
 Se você não verificar seu endereço de email, o New Relic tentará fazer logon com o registro de usuário criado mais recentemente e que está associado ao seu endereço de email. Para evitar a verificação do email em cada logon, clique na caixa de seleção **Lembrar-se de mim** na tela de logon.
 
@@ -120,7 +120,7 @@ Para obter mais ajuda, abra um tíquete de suporte por meio da [Portal de suport
 
 ## Solução de problemas de acesso à New Relic One {#troubleshooting}
 
-Se você foi adicionado como um usuário da New Relic One, conforme descrito na seção [Gerenciar usuários da New Relic One](#manage-users) e não puder localizar o email de confirmação da conta original, siga essas etapas.
+Se você foi adicionado como um usuário do New Relic One, conforme descrito na seção [Gerenciar usuários do New Relic One](#manage-users) e não puderem localizar o email de confirmação da conta original, siga essas etapas.
 
 1. Acesse a página de logon do New Relic em [`login.newrelic.com/login`](https://login.newrelic.com/login).
 

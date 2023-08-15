@@ -2,10 +2,10 @@
 title: Exportar para CSV
 description: Exportar informações sobre suas páginas para um arquivo CSV em seu sistema local
 exl-id: 818e927e-40b2-4ccb-bfb3-88284ad49829
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 85%
+source-wordcount: '197'
+ht-degree: 81%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 85%
 >
 >O recurso para download e o destino padrão do seu navegador são usados.
 
-O assistente **Criar exportação de arquivos CSV** permite selecionar:
+A variável **Criar exportação de arquivos CSV** permite selecionar:
 
 * Propriedades a serem exportadas
    * Metadados

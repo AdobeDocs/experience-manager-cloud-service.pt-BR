@@ -5,9 +5,9 @@ description: Deseja migrar o Forms adaptável e ativos de e para instâncias AEM
 seo-description: Looking to migrate Adaptive Forms and assets to and from an AEM instances? Learn here how to import and export Adaptive Forms, PDF forms, themes, and other supporting assets from an [!DNL AEM Forms] instance.
 topic-tags: forms-manager
 exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1211'
+source-wordcount: '1210'
 ht-degree: 2%
 
 ---
@@ -47,7 +47,7 @@ Para carregar um formulário ou um ativo relacionado:
 1. Faça logon no [!DNL AEM Forms] instância.
 1. Toque **[!UICONTROL Adobe Experience Manager]** ![adobeexperiencemanager](assets/adobeexperiencemanager.png) ícone > **[!UICONTROL Navegação]** ![bússola](assets/Smock_Compass_18_N.svg) ícone > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documentos]**.
 1. Toque **[!UICONTROL Criar]** > **[!UICONTROL Upload de arquivo]**. Uma caixa de diálogo é exibida.
-1. Na caixa de diálogo, procure e selecione o pacote ou o arquivo a ser importado. Você também pode selecionar outros tipos de arquivos compatíveis. Toque **[!UICONTROL Abertura]**. A pasta ou o nome de arquivo selecionado não deve incluir caracteres especiais.
+1. Na caixa de diálogo, navegue e selecione o pacote ou o arquivo a ser importado. Você também pode selecionar outros tipos de arquivos compatíveis. Toque **[!UICONTROL Abertura]**. A pasta ou o nome de arquivo selecionado não deve incluir caracteres especiais.
 
    Na caixa de diálogo, verifique os detalhes dos ativos que estão sendo carregados e toque em **[!UICONTROL Carregar]**.
 
@@ -57,7 +57,6 @@ Para carregar um formulário ou um ativo relacionado:
    >
    > * Quando um nome entra em conflito com tipos de recursos diferentes, o upload de um pacote não substitui a hierarquia de pastas existente. Por exemplo, se você tiver um formulário adaptável chamado &quot;Treinamento&quot; no local /content/dam/formsanddocuments em um servidor. Você baixou o Formulário adaptável e carregou o formulário em outro servidor. O segundo servidor também tem uma pasta com o nome &#39;Treinamento&#39; no mesmo local /content/dam/formsanddocuments. Falha no upload.
    > * Somente um membro do `form-power-user` grupo pode carregar arquivos XDP.
-
 
 
 ## Baixar um tema {#downloading-a-theme}
@@ -208,7 +207,7 @@ Complete the following steps to create copies of assets and letters:
 
 ## Search {#search-forms}
 
-You ca use the top bar **[A]** to search your content. When you search for assets, a side panel is displayed. You can also tap ![assets-browser-content-only](assets/assets-browser-content-only.png) &gt; Filter **[B]** to invoke the side panel. Using the various filters in the side panel, you can narrow down your search. The side panel also allows you to save your searches.
+You ca use the top bar **[A]** to search your content. When you search for assets, a side panel is displayed. You can also tap ![assets-browser-content-only](assets/assets-browser-content-only.png) &gt; Filter **[B]** to invoke the side panel. Using the various filters in the side panel, you can narrow down your search. The side panel also lets you save your searches.
 
 ![search_topbar](assets/search_topbar.png)
 
@@ -224,6 +223,6 @@ On the side panel, you can use the following to narrow down your search results:
 * Tags
 * Search Criteria; for example, Modified Dates, Publish Status, LiveCopy Status.
 
-The side panel also allows you to save your search settings with names of your choice.
+The side panel also lets you save your search settings with names of your choice.
 
 For more information and instructions on using search, filters, saved search, and side panel, see [Search](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html). -->

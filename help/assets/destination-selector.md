@@ -3,10 +3,10 @@ title: Seletor de destino para AEM as a Cloud Service
 description: Use o Seletor de destino do AEM para mostrar e selecionar ativos que você pode usar como uma cópia do ativo original.
 contentOwner: Adobe
 role: Admin,User
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1911'
-ht-degree: 35%
+source-wordcount: '1902'
+ht-degree: 36%
 
 ---
 
@@ -192,7 +192,7 @@ Você pode usar as propriedades do Seletor de destino para personalizar a forma 
 | *hasMore* | booleano | Não | | Quando o aplicativo tiver mais conteúdo para exibir, você poderá usar essa propriedade para adicionar um carregador que carregue o conteúdo e torná-lo visível no aplicativo. É um indicador que indica que o carregamento do conteúdo está em andamento. |
 | *orgName* | booleano | Não | | É o nome da organização (provavelmente orgID) associada ao AEM |
 | *initRepoID* | string | Não | | É o caminho do repositório de ativos que você deseja usar em uma visualização inicial padrão |
-| *onCreateFolder* | string | Não | | A variável `onCreateFolder` permite adicionar um ícone que adiciona uma nova pasta no aplicativo. |
+| *onCreateFolder* | string | Não | | A variável `onCreateFolder` A propriedade permite adicionar um ícone que adiciona uma nova pasta no aplicativo. |
 | *onConfirm* | string | Não | | É um retorno de chamada quando você clica no botão confirmar. |
 | *confirmDisabled* | string | Não | | Esta propriedade controla a alternância do botão de confirmação. |
 | *viewType* | string | Não | | A variável `viewType` A propriedade é usada para especificar as exibições usadas para exibir ativos. |
@@ -249,7 +249,7 @@ Você pode classificar ativos no Seletor de destino por nome, dimensão ou taman
 
 ### Repositório de ativos {#assets-repo}
 
-O Seletor de destino também permite visualizar os dados do repositório de sua escolha disponível no aplicativo AEM. Você pode usar `repositoryID` propriedade para inicializar o caminho da pasta de destino que você deseja visualizar na primeira instância do Seletor de destino.
+O Seletor de destino também permite exibir os dados do repositório de sua escolha disponíveis no aplicativo AEM. Você pode usar `repositoryID` propriedade para inicializar o caminho da pasta de destino que você deseja visualizar na primeira instância do Seletor de destino.
 
 ### Adicionar sufixo ou prefixo {#add-suffix-or-prefix}
 
@@ -257,7 +257,7 @@ O Seletor de destino também permite visualizar os dados do repositório de sua 
 
 ### Crie uma nova pasta {#create-new-folder}
 
-Ele permite criar uma nova pasta na pasta de destino do seu [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
+Ele permite criar uma nova pasta na pasta de destino do [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 
 ### Tipos de visualização {#types-of-view}
 

@@ -2,10 +2,10 @@
 title: Manuseio básico
 description: Familiarize-se com a navegação pelo AEM e seu uso básico
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2978'
-ht-degree: 71%
+source-wordcount: '2975'
+ht-degree: 70%
 
 ---
 
@@ -293,7 +293,7 @@ Em todas as visualizações, todos os itens podem ser desmarcados. Para isso, pr
 
 ![Exibição de coluna](/help/sites-cloud/authoring/assets/column-view.png)
 
-A exibição de coluna permite uma navegação visual de uma árvore de conteúdo por uma série de colunas em cascata. Essa visualização permite visualizar e percorrer a estrutura em árvore do site.
+A exibição de coluna permite uma navegação visual de uma árvore de conteúdo por uma série de colunas em cascata. Essa visualização permite visualizar e percorrer a estrutura de árvore do site.
 
 Selecionar um recurso na coluna mais à esquerda exibirá os recursos secundários em uma coluna à direita. Selecionar um recurso na coluna direita exibirá os recursos secundários em outra coluna à direita e assim por diante.
 

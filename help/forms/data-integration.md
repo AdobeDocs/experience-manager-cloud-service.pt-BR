@@ -3,9 +3,9 @@ title: Como conectar um banco de dados ao [!DNL AEM Forms] as a Cloud Service?
 seo-title: AEM Forms Data Integration
 description: Você pode recuperar e salvar dados em serviços Web RESTful, serviços Web baseados em SOAP e serviços OData de [!DNL AEM Forms] as a Cloud Service. O serviço fornece uma ferramenta dedicada para recuperar, testar, validar e enviar dados para vários tipos de fontes de dados.
 exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '577'
+source-wordcount: '575'
 ht-degree: 3%
 
 ---
@@ -48,7 +48,7 @@ Depois de criar um modelo de dados de formulário, você pode usá-lo em vários
 
 A primeira etapa para implementar a integração de dados é identificar e configurar as fontes de dados que armazenam as informações que você deseja usar nos casos de uso do Adaptive Forms e das comunicações interativas. Em seguida, você cria um Modelo de dados de formulário que usa objetos de modelo de dados, propriedades e serviços de uma ou mais fontes de dados. Você pode criar comunicações adaptáveis do Forms e interativas com base em um Modelo de dados de formulário em que os campos ou espaços reservados do Formulário adaptável em comunicações interativas são vinculados às respectivas propriedades da fonte de dados.
 
-[!DNL AEM Forms] O também permite criar um modelo de dados de formulário independente das fontes de dados e associar ou vincular objetos de modelo de dados e propriedades no modelo de dados de formulário à fonte de dados posteriormente. Ele elimina qualquer dependência em fontes de dados enquanto você trabalha em um modelo de dados de formulário.
+[!DNL AEM Forms] O também permite criar um modelo de dados de formulário independente das fontes de dados e associar ou vincular objetos de modelo de dados e propriedades no modelo de dados de formulário com a fonte de dados posteriormente. Ele elimina qualquer dependência em fontes de dados enquanto você trabalha em um modelo de dados de formulário.
 
 Analise o seguinte para começar, entender e implementar a integração de dados.
 

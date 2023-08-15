@@ -2,10 +2,10 @@
 title: Saiba mais sobre o desenvolvimento headless do CMS
 description: Nesta parte da Jornada de desenvolvedores headless do AEM, saiba mais sobre a tecnologia headless e por que usá-la.
 exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1621'
-ht-degree: 93%
+source-wordcount: '1620'
+ht-degree: 92%
 
 ---
 
@@ -76,7 +76,7 @@ Essa dissociação significa que cada serviço de consumo (o front-end) pode cri
 
 ## Base tecnológica {#technology}
 
-Uma abordagem headless permite construir uma pilha de tecnologia que se adapte fácil e rapidamente às futuras demandas de experiência digital.
+Uma abordagem headless permite criar uma pilha de tecnologia que pode se adaptar fácil e rapidamente às futuras demandas de experiência digital.
 
 No passado, as APIs para CMS normalmente eram baseadas em REST. A transferência de estado representacional (REST) fornece recursos no formato de texto “stateless” (sem salvamento de estado). Isso permite que os recursos sejam lidos e modificados com um conjunto predefinido de operações. O REST permitia uma grande interoperabilidade entre serviços na Web, garantindo a representação do conteúdo sem salvamento de estado.
 

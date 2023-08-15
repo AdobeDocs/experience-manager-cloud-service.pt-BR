@@ -1,17 +1,13 @@
 ---
 title: Gerenciar aplicativos e tarefas do Forms na Caixa de entrada AEM
-seo-title: Manage Forms applications and tasks in AEM Inbox
-description: A Caixa de entrada AEM permite iniciar fluxos de trabalho centrados no Forms enviando aplicativos e gerenciando tarefas.
-seo-description: AEM Inbox allows you to launch Forms-centric workflows through submitting applications and manage tasks.
-uuid: c6c0d8ea-743f-4852-99d1-69fd50a0994e
+description: A Caixa de entrada AEM permite iniciar fluxos de trabalho centrados no Forms por meio do envio de aplicativos e do gerenciamento de tarefas.
 contentOwner: vishgupt
 topic-tags: document_services, publish
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1147'
+source-wordcount: '1145'
 ht-degree: 3%
 
 ---
@@ -132,13 +128,13 @@ Um proprietário de modelo de fluxo de trabalho não pode exibir itens relaciona
 
    * Crie os seguintes nós em no CRX DE em `/oak:index/workflowDataLucene/indexRules/granite:InboxItem/properties` com as respectivas propriedades conforme especificado na tabela a seguir:
 
-      | Nó | Propriedade | Tipo |
-      |---|---|---|
-      | sharedWith | sharedWith | SEQÜÊNCIA DE CARACTERES |
-      | bloqueado | bloqueado | BOOLEANO |
-      | retornado | retornado | BOOLEANO |
-      | allowInboxSharing | allowInboxSharing | BOOLEANO |
-      | allowExplicitSharing | allowExplicitSharing | BOOLEANO |
+     | Nó | Propriedade | Tipo |
+     |---|---|---|
+     | sharedWith | sharedWith | SEQÜÊNCIA DE CARACTERES |
+     | bloqueado | bloqueado | BOOLEANO |
+     | retornado | retornado | BOOLEANO |
+     | allowInboxSharing | allowInboxSharing | BOOLEANO |
+     | allowExplicitSharing | allowExplicitSharing | BOOLEANO |
 
 
    * Implante os índices por meio de um pacote AEM. Você pode usar um [Arquétipo AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR) projeto para criar um pacote de AEM implantável. Use o seguinte código de amostra para adicionar índices a um projeto do Arquétipo AEM:

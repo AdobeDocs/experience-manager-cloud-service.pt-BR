@@ -2,9 +2,9 @@
 title: Modelos de páginas
 description: Os modelos de página são usados ao criar uma página que é usada como base para a nova página
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3294'
+source-wordcount: '3291'
 ht-degree: 6%
 
 ---
@@ -234,7 +234,7 @@ A tabela a seguir detalha as permissões necessárias para a edição de modelos
 <table>
  <tbody>
   <tr>
-   <th>Caminho </th>
+   <th>Caminho</th>
    <th>Função/Grupo</th>
    <th>Permissões<br /> </th>
    <th>Descrição</th>
@@ -541,7 +541,7 @@ Ao processar uma página:
       * O componente de Página permitirá que o autor edite apenas os nós da estrutura do modelo que foram sinalizados como editáveis (e quaisquer secundários).
       * Ao renderizar um componente em uma página, o caminho relativo desse componente é retirado do `jcr:content` nó; o mesmo caminho sob o `policies/jcr:content` do modelo será pesquisado.
          * A variável `cq:policy` a propriedade desse nó aponta para a política de conteúdo real (ou seja, ele retém a configuração de design desse componente).
-            * Isso permite ter vários modelos que reutilizam as mesmas configurações de política de conteúdo.
+            * Isso permite que você tenha vários modelos que reutilizam as mesmas configurações de política de conteúdo.
 
 ### Disponibilidade de modelo {#template-availability}
 

@@ -2,10 +2,10 @@
 title: Introdução ao AEM Headless as a Cloud Service
 description: Nesta parte da Jornada do desenvolvedor headless do AEM, saiba mais sobre pré-requisitos do AEM headless.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3084'
-ht-degree: 94%
+source-wordcount: '3080'
+ht-degree: 93%
 
 ---
 
@@ -82,8 +82,8 @@ Fragmentos de conteúdo contêm conteúdo estruturado e podem ser entregues no f
 
 Para modificar o conteúdo de forma headless, o AEM oferece duas APIs robustas.
 
-* A API GraphQL permite criar solicitações para acessar e fornecer Fragmentos de conteúdo.
-* A API REST do Assets permite criar e modificar Fragmentos de conteúdo (e outros ativos).
+* A API do GraphQL permite criar solicitações para acessar e entregar Fragmentos de conteúdo.
+* A API REST do Assets permite criar e modificar fragmentos de conteúdo (e outros ativos).
 
 Você aprenderá sobre essas APIs e como usá-las em uma parte posterior da jornada headless do AEM. Ou consulte [recursos adicionais](#additional-resources) abaixo para obter a documentação adicional.
 
@@ -259,7 +259,7 @@ Para entender tráfego e os padrões de tráfego, comece reunindo o que você sa
 
 #### Frequência das atualizações {#update-frequency}
 
-Frequentemente, diferentes seções de experiências têm frequências diferentes de atualizações de conteúdo. Entender isso é importante para ajustar as configurações de CDN e cache. Isso também é importante para o [Arquitetos de conteúdo](#content-architects) conforme criam modelos para representar seu conteúdo. Considere:
+Frequentemente, diferentes seções de experiências têm frequências diferentes de atualizações de conteúdo. Entender isso é importante para poder ajustar as configurações de CDN e cache. Isso também é importante para o [Arquitetos de conteúdo](#content-architects) conforme criam modelos para representar seu conteúdo. Considere:
 
 * Alguns tipos de conteúdo devem expirar após um determinado período?
 * Há elementos que são específicos do usuário e, portanto, não podem ser armazenados em cache?
