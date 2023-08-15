@@ -2,10 +2,10 @@
 title: Introdução a nomes de domínio personalizados
 description: A interface do usuário do Cloud Manager permite adicionar um domínio personalizado para identificar seu site com um nome exclusivo e de marca, de maneira automatizada.
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '766'
-ht-degree: 93%
+source-wordcount: '757'
+ht-degree: 74%
 
 ---
 
@@ -23,7 +23,7 @@ A interface do usuário do Cloud Manager permite adicionar um domínio personali
 
 ## O que são nomes de domínio personalizados? {#what-are-custom-domain-names}
 
-Cada site tem um endereço numérico exclusivo, legível por máquina, associado a ele, como `184.33.123.64`. O Sistema de nomes de domínio (DNS) é o que permite ter domínios personalizados e de marca anexados aos sites, traduzindo endereços numéricos em endereços possíveis de memorizar, como `wknd.com`.
+Cada site tem um endereço numérico exclusivo, legível por máquina, associado a ele, como `184.33.123.64`. O Domain Name System (DNS) é o que permite ter domínios personalizados e de marca anexados aos sites, traduzindo endereços numéricos em endereços possíveis de memorizar, como `wknd.com`.
 
 É recomendado ter um nome de domínio para seu site que possa ser memorizado pelos seus clientes e reflita a sua marca.
 
@@ -35,7 +35,7 @@ Você pode comprar um nome de domínio de um registrador de nomes de domínio, d
 
 ## Nomes de domínio personalizados e CDNs BYO {#byo-cdn}
 
-O AEM as a Cloud Service oferece um serviço de rede de entrega de conteúdo (CDN) integrado, mas também permite que você traga sua própria (BYO) CDN para usar com o AEM. Os domínios personalizados podem ser instalados ou na CDN gerenciada pelo AEM ou em uma CDN gerenciada por você.
+O AEM as a Cloud Service oferece um serviço de rede de entrega de conteúdo (CDN) integrado, mas também permite que você traga seu próprio CDN (BYO) para usar com o AEM. Os domínios personalizados podem ser instalados ou na CDN gerenciada pelo AEM ou em uma CDN gerenciada por você.
 
 * Os nomes de domínio personalizados (e certificados) que são instalados na CDN gerenciada pelo AEM são gerenciados através do Cloud Manager.
 * Os nomes de domínio personalizados (e certificados) que são instalados em sua própria CDN são gerenciados nessa CDN específica.
@@ -70,7 +70,7 @@ Existem várias limitações no uso de nomes de domínio personalizados com o AE
 
 * Os nomes de domínio personalizados são compatíveis com o Cloud Manager para serviços de publicação e de visualização para os programas do Sites. Não há suporte para domínios personalizados para serviços de autor.
 * Cada ambiente do Cloud Manager pode hospedar até 500 domínios personalizados por ambiente.
-* Os nomes de domínio não podem ser adicionados aos ambientes enquanto houver um pipeline em execução conectado a esses ambientes.
+* Os nomes de domínio não podem ser adicionados aos ambientes enquanto houver um pipeline em execução anexado a eles.
 * O mesmo nome de domínio não pode ser usado em mais de um ambiente.
 * Somente um nome de domínio pode ser adicionado por vez.
 * O AEM as a Cloud Service não oferece suporte a domínios curinga, como o `*.example.com`.
