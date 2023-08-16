@@ -3,9 +3,9 @@ title: Como adicionar um formulário adaptável à página do AEM Sites?
 description: Descubra como criar ou adicionar um Formulário adaptável à sua página do AEM Sites. Conheça também os benefícios e várias maneiras de integrar formulários ao seu site.
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bb2ee07f8750c15959ecdaa65f0932b05edfcd39
 workflow-type: tm+mt
-source-wordcount: '3301'
+source-wordcount: '3229'
 ht-degree: 0%
 
 ---
@@ -85,45 +85,41 @@ Para ativar a funcionalidade completa do componente de Contêiner adaptável do 
 1. Abra a pasta Repositório Git da AEM Cloud Service em um editor de texto de plano. Por exemplo, Microsoft Visual Code.
 1. Abra o `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customheaderlibs.html` e adicione o seguinte código ao arquivo:
 
-       &quot;
+   ```
        //Customheaderlibs.html
-       
-       &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
-       &lt;sly data-sly-call=&quot;${clientlib.css @ categories=&amp;#39;core.forms.components.runtime.all&amp;#39;}&quot; />
-       &lt;/sly>
-       
-       &quot;
    
+       <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+       <sly data-sly-call="${clientlib.css @ categories='core.forms.components.runtime.all'}"/>
+       </sly> 
+   ```
+
 1. Abra o `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customfooterlibs.html` e adicione o seguinte código ao arquivo:
 
-       &quot;
-       
+   ```
        //customfooterlibs.html
-       &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
-       &lt;sly data-sly-test=&quot;${!wcmmode.edit}&quot; data-sly-call=&quot;${clientlib.js @ categories=&amp;#39;core.forms.components.runtime.all&amp;#39;, async=true}&quot; />
-       &lt;/sly>
-       &quot;
-   
+       <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+       <sly data-sly-test="${!wcmmode.edit}" data-sly-call="${clientlib.js @ categories='core.forms.components.runtime.all', async=true}"/>
+       </sly> 
+   ```
+
 1. Abra o `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\xfpage\customheaderlibs.html` e adicione o seguinte código ao arquivo:
 
-       &quot;
+   ```
        //Customheaderlibs.html
-       &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
-       &lt;sly data-sly-call=&quot;${clientlib.css @ categories=&amp;#39;core.forms.components.runtime.all&amp;#39;}&quot; />
-       &lt;/sly>
-       
-       &quot;
-   
+       <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+       <sly data-sly-call="${clientlib.css @ categories='core.forms.components.runtime.all'}"/>
+       </sly> 
+   ```
+
 1. Abra o `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\xfpage\customfooterlibs.html` e adicione o seguinte código ao arquivo:
 
-       &quot;
-       
+   ```
        //customfooterlibs.html
-       &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
-       &lt;sly data-sly-test=&quot;${!wcmmode.edit}&quot; data-sly-call=&quot;${clientlib.js @ categories=&amp;#39;core.forms.components.runtime.all&amp;#39;, async=true}&quot; />
-       &lt;/sly>
-       &quot;
-   
+       <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+       <sly data-sly-test="${!wcmmode.edit}" data-sly-call="${clientlib.js @ categories='core.forms.components.runtime.all', async=true}"/>
+       </sly> 
+   ```
+
 1. [Executar o pipeline de implantação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html) para implantar as bibliotecas de clientes no ambiente as a Cloud Service AEM.
 
 +++
@@ -257,7 +253,6 @@ No envio de um formulário, você pode redirecionar o usuário para outra págin
 1. Abra o **[!UICONTROL Envio]** guia.
 
    * Para configurar um URL de redirecionamento, para na opção Enviar, selecione o **[!UICONTROL Redirecionar para URL]** e procure e selecione uma página do AEM Sites ou forneça o URL de uma página externa.
-
    * Para configurar uma mensagem personalizada ou de agradecimento, para na opção Enviar, selecione o **[!UICONTROL Mostrar mensagem]** e forneça uma mensagem na caixa de diálogo **[!UICONTROL Conteúdo da mensagem]** caixa. É uma caixa de rich text, você pode usar a opção de tela cheia para exibir todos os itens de rich text disponíveis.
 
 ## Ver próximo

@@ -1,13 +1,13 @@
 ---
 title: Adicionar um manipulador de erro personalizado no Forms adaptável para AEM Adaptive Forms
 seo-title: Error Handlers in Adaptive Forms for AEM Adaptive Forms
-description: O AEM Forms fornece manipuladores de sucesso e erro prontos para uso para um formulário usando o endpoint REST configurado para chamar um serviço externo. Você pode adicionar um manipulador de erros padrão, bem como um manipulador de erros personalizado, em um Formulário adaptável do AEM.
+description: O AEM Forms fornece manipuladores de sucesso e erro prontos para uso para um formulário usando o endpoint REST configurado para chamar um serviço externo. Você pode adicionar um manipulador de erros padrão, bem como um manipulador de erros personalizado, em um Formulário adaptável AEM.
 seo-description: Error handler function and Rule Editor in Adaptive Forms helps you to effectively manage and customize error handling. You can add a default error handler as well as custom error handler in an AEM Adaptive Form.
 keywords: Adicionar um manipulador de erros personalizado, adicionar um manipulador de erros padrão, adicionar um manipulador de erros no formulário, usar o serviço de chamada do editor de regras para adicionar um manipulador de erros personalizado, configurar o editor de regras para adicionar um manipulador de erros personalizado, adicionar manipulador de erros personalizado usando o editor de regras
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: bb2ee07f8750c15959ecdaa65f0932b05edfcd39
 workflow-type: tm+mt
 source-wordcount: '1983'
 ht-degree: 2%
