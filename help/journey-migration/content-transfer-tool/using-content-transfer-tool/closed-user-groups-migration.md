@@ -6,7 +6,7 @@ hidefromtoc: true
 source-git-commit: ca3c4bae2e652d75190d68c76b1dd4e09239f16c
 workflow-type: tm+mt
 source-wordcount: '465'
-ht-degree: 0%
+ht-degree: 7%
 
 ---
 
@@ -14,15 +14,15 @@ ht-degree: 0%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cug_migration"
->title="Migração de grupos de usuários próximos"
->abstract="Atualmente, a migração de Grupos de usuários fechados (CUG) requer algumas verificações e etapas para se tornar operacional após uma migração."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/closed-user-groups.html" text="Grupos de usuários fechados no AEM"
+>title="Migração de Grupos de Usuários Fechados"
+>abstract="Atualmente, a migração de Grupos de Usuários Fechados (CUG, sigla em inglês) requer algumas verificações e etapas para se tornar operacional após uma migração."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/closed-user-groups.html?lang=pt-BR" text="Grupos de Usuários Fechados no AEM"
 
 Atualmente, os Grupos de usuários fechados (CUG) precisam de algumas etapas adicionais para funcionarem no ambiente de destino de uma migração.  Este documento explica o cenário e as etapas necessárias para protegê-los da maneira desejada.
 
 ## Migração de grupos
 
-As principais (incluindo grupos) são incluídas automaticamente em uma migração para o Adobe Experience Manager as a Cloud Service se estiverem associadas ao conteúdo migrado por meio da ACL desse conteúdo.
+As entidades principais (incluindo grupos) são incluídas automaticamente em uma migração para o Adobe Experience Manager as a Cloud Service se estiverem associadas ao conteúdo migrado por meio da ACL desse conteúdo.
 
 ## Grupos de usuários fechados na migração
 
