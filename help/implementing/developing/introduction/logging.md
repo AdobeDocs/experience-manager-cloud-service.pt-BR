@@ -2,9 +2,9 @@
 title: Registro para AEM as a Cloud Service
 description: Saiba como usar o Logging para AEM as a Cloud Service para configurar parâmetros globais para o serviço de log central, configurações específicas para os serviços individuais ou como solicitar o registro de dados.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 2fcc33cfb8b0be89b4b9f91d687dc21ba456000c
 workflow-type: tm+mt
-source-wordcount: '2375'
+source-wordcount: '2683'
 ht-degree: 3%
 
 ---
@@ -17,6 +17,7 @@ As configurações de registro as a Cloud Service do AEM e os níveis de registr
 
 * Registro de AEM, que realiza o registro no nível do aplicativo AEM
 * Registro do Apache HTTPD Web Server/Dispatcher, que realiza o registro do servidor Web e do Dispatcher na camada de Publicação.
+* O registro em log da CDN, que, como seu nome indica, executa registros em log na CDN. Este recurso está atualmente disponível para os participantes antecipados; para participar do programa de adoção antecipada, envie um email para **aemcs-cdnlogs-adopter@adobe.com**, incluindo o nome da organização e o contexto sobre o interesse no recurso.
 
 ## Registro de AEM {#aem-logging}
 
@@ -498,6 +499,57 @@ Define DISP_LOG_LEVEL debug
 >[!NOTE]
 >
 >Para ambientes as a Cloud Service com AEM, depurar é o nível máximo de verbosidade. O nível de log de rastreamento não é compatível, portanto, evite configurá-lo ao trabalhar em ambientes de nuvem.
+
+## Log da CDN {#cdn-log}
+
+>[!NOTE]
+>
+>Esse recurso ainda não está disponível para o público geral. Para participar do programa de adoção antecipada em andamento, envie um email para **aemcs-cdnlogs-adopter@adobe.com**, incluindo o nome da organização e o contexto sobre o interesse no recurso.
+>
+
+O AEM as a Cloud Service fornece acesso a logs CDN, que são úteis para casos de uso, incluindo otimização da taxa de ocorrência do cache. O formato de log CDN não pode ser personalizado e não há conceito de configurá-lo para modos diferentes, como info, warn ou error.
+
+**Exemplo**
+
+```
+{
+"timestamp": "2023-05-26T09:20:01+0000",
+"ttfb": 19,
+"cli_ip": "147.160.230.112",
+"cli_country": "CH",
+"rid": "974e67f6",
+"req_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
+"host": "example.com",
+"url": "/content/hello.png",
+"method": "GET",
+"res_ctype": "image/png",
+"cache": "PASS",
+"status": 200,
+"res_age": 0,
+"pop": "PAR"
+}
+```
+
+**Formato do Log**
+
+Os logs CDN são distintos dos outros logs no sentido de que seguem um formato json.
+
+| **Nome do campo** | **Descrição** |
+|---|---|
+| *carimbo de data e hora* | A hora em que a solicitação foi iniciada, após o término do TLS |
+| *ttfb* | Abreviação de *Tempo até o Primeiro Byte*. O intervalo de tempo entre a solicitação iniciada até o ponto antes do corpo da resposta começar a ser transmitido. |
+| *cli_ip* | O endereço IP do cliente. |
+| *cli_country* | Duas letras [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) código alfa-2 do país do cliente. |
+| *rid* | O valor do cabeçalho da solicitação usado para identificar exclusivamente a solicitação. |
+| *req_ua* | O agente do usuário responsável por fazer uma determinada solicitação HTTP. |
+| *host* | A autoridade à qual a solicitação se destina. |
+| *url* | O caminho completo, incluindo parâmetros de consulta. |
+| *método* | Método HTTP enviado pelo cliente, como &quot;GET&quot; ou &quot;POST&quot;. |
+| *res_ctype* | O Content-Type usado para indicar o tipo de mídia original do recurso. |
+| *cache* | Estado do cache. Os valores possíveis são HIT, MISS ou PASS |
+| *status* | O código do status HTTP como um valor inteiro. |
+| *res_age* | A quantidade de tempo (em segundos) que uma resposta foi armazenada em cache (em todos os nós). |
+| *pop* | Centro de dados do servidor de cache CDN. |
 
 ## Como acessar logs {#how-to-access-logs}
 
