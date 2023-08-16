@@ -4,10 +4,10 @@ description: Saiba como criar perfis de usuários no Admin Console para gerencia
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 6764fe48068325dfb7ed84cf7834c7eb5f25fb48
 workflow-type: tm+mt
-source-wordcount: '933'
-ht-degree: 98%
+source-wordcount: '970'
+ht-degree: 97%
 
 ---
 
@@ -139,3 +139,9 @@ Siga estas etapas para adicionar usuários para os quais já existem IDs federad
 1. Clique em **Salvar** e um email de boas-vindas será enviado ao usuário adicionado.
 
 O usuário convidado agora receberá as notificações. Repita essas etapas para os usuários de sua equipe que você gostaria que recebesse notificações.
+
+## Recursos adicionais {#additional-resources}
+
+A seguir estão recursos adicionais e opcionais se quiser ir além do conteúdo da jornada de integração.
+
+* [Centro de ações](/help/operations/actions-center.md) - Aproveite o Centro de ações para tomar medidas convenientes em caso de incidentes e outras informações importantes.
