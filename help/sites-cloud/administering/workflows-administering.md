@@ -1,11 +1,11 @@
 ---
 title: Administração de instâncias do fluxo de trabalho
-description: Saiba como administrar instâncias de fluxo de trabalho
+description: Saiba como administrar instâncias de fluxo de trabalho uso do console de fluxo de trabalho
 feature: Administering
 role: Admin
-source-git-commit: 31cda6f7eb7ef1c32ba9d0ec7d198a5f2f38b1e6
+source-git-commit: d1da8559da856e028a5dcad1d0c0b2c00176af0c
 workflow-type: tm+mt
-source-wordcount: '1284'
+source-wordcount: '1288'
 ht-degree: 95%
 
 ---
