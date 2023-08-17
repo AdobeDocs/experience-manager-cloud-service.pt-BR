@@ -2,10 +2,10 @@
 title: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: cb963a233b5afd4497704233db7f51c37563d0f9
+source-git-commit: 25af1b0d99f7c5971245f99a95c74d04ca943936
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 18%
+source-wordcount: '661'
+ht-degree: 17%
 
 ---
 
@@ -24,7 +24,7 @@ A Ativação de recursos 2023.8.0 fornecerá o conjunto completo de recursos par
 - SITES-13906: GraphQL - Atualização para graphql-java 20.1.
 - SITES-8972: GraphQL - Adicione o rótulo de opção no JSON para o tipo de dados Enumeration.
 - SITES-9689: GraphQL - Adicione o título e a descrição no JSON para o tipo de dados Referência de conteúdo.
-- SITES-13052: Fragmentos de conteúdo - Exportar fragmentos de conteúdo para o Adobe Target
+- SITES-13052: Fragmentos de conteúdo - Exporte fragmentos de conteúdo para o Adobe Target.
 
 ### Problemas corrigidos {#fixed-issues-13099}
 
@@ -54,7 +54,9 @@ A Ativação de recursos 2023.8.0 fornecerá o conjunto completo de recursos par
 
 ### Problemas conhecidos {#known-issues-13099}
 
-- SITES-15359: o padrão de nome de variação não corresponde corretamente às variações que têm ```'_'``` em seus nomes de recursos.
+- SITES-15359: Fragmentos de conteúdo - O padrão de nome de variação não corresponde corretamente às variações que têm ```'_'``` em seus nomes de recursos.
+- SITES-15463: Modelos de sites - Os modelos não podem ser publicados (solução alternativa: use o console de distribuição).
+- CQ-4354191: workflows - O iniciador personalizado pode ser acionado muitas vezes devido a metadados de replicação presentes em nós nt:unstructured (solução alternativa: atualize os iniciadores para excluir propriedades de metadados de replicação para evitar sobreposição).
 
 ### Tecnologias integradas {#embedded-tech-13099}
 
