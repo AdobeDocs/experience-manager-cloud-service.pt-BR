@@ -1,11 +1,11 @@
 ---
-title: Diferenças entre o AEM 6.5 Forms e o AEM Cloud Services
-description: Você é um usuário do Experience Manager Forms e deseja atualizar para o Adobe Experience Manager Forms as a Cloud Service? Compare o AEM 6.5 Forms e o AEM Cloud Services e conheça as alterações mais importantes antes de atualizar ou migrar para o Cloud Service.
+title: Diferenças entre o AEM 6.5 Forms e o AEM Cloud Service
+description: Você é um usuário do Experience Manager Forms e deseja atualizar para o Adobe Experience Manager Forms as a Cloud Service? Compare o AEM 6.5 Forms e o AEM Cloud Services e saiba mais sobre as mudanças mais importantes antes de atualizar ou migrar para o Cloud Service.
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: 57acac078805bc195cb10c1e94462d5aa077b1af
+source-git-commit: fa71eb6317314dc8c3540cd0ebb8afaa75d55a59
 workflow-type: tm+mt
-source-wordcount: '1417'
+source-wordcount: '1343'
 ht-degree: 1%
 
 ---
@@ -60,11 +60,11 @@ O Adobe Experience Manager Forms as a Cloud Service traz algumas alterações no
 
 * **Forms adaptável baseado em XSD:** Você pode usar o modelo XDP para projetar um modelo para documento para registro. O serviço não é compatível com o Adaptive Forms baseado em XFA
 
-* **Componentes**: Você pode usar [Componentes principais adaptáveis do Forms](/help/forms/creating-adaptive-form-core-components.md) para criar seus formulários. Esses componentes são baseados nos Componentes principais do WCM, seguem os padrões do BEM e podem ser facilmente personalizados. O serviço não é compatível com a experiência de assinatura no formulário e não inclui os componentes Resumo e Verificação para o Formulário adaptável
+* **Componentes**: o serviço não oferece suporte à experiência de assinatura no formulário e não inclui os componentes Resumo e Verificar para o Formulário adaptável.
+
+* **Interface do assistente:** Você pode usar o [Interface do assistente](/help/forms/creating-adaptive-form-core-components.md) para configurar rapidamente as opções comuns e criar facilmente um Formulário adaptável.
 
 ## Portal do Forms
-
-* Você pode usar os componentes Pesquisa e Lister, Rascunhos e Envio e Link do Portal do Forms para listar formulários para usuários conectados. O suporte para uso anônimo do Forms Portal não está disponível imediatamente (OOTB). Você pode personalizar o Forms Portal para permitir a exibição de formulários para usuários não conectados.
 
 * O serviço não retém metadados para rascunhos e Forms adaptável enviado.
 
@@ -85,7 +85,7 @@ O Forms as a Cloud Service fornece APIs RESTful de geração e manipulação de 
 
 ## Integração de dados (modelo de dados de formulário)
 
-* O serviço também oferece suporte ao conector JDBC, Microsoft Dynamics, SalesForce, serviços da Web baseados em SOAP e serviços que oferecem suporte a OData.
+* O serviço também oferece suporte ao Microsoft Dynamics, SalesForce, serviços da Web baseados em SOAP e serviços que oferecem suporte a OData.
 
 * Você também pode conectar o perfil de usuário AEM para recuperar e atualizar as informações do usuário.
 
@@ -96,8 +96,6 @@ O Forms as a Cloud Service fornece APIs RESTful de geração e manipulação de 
 
 ## E-Sign
 
-* O serviço fornece uma integração OOTB com o Adobe Sign e oferece suporte ao DocuSign para assinaturas eletrônicas.
-
 * O serviço também oferece suporte a funções do Adobe Sign. É possível configurar as funções no editor do Adaptive Forms para usuários empresariais a fim de configurar facilmente fluxos de trabalho de assinatura.
 
 
@@ -105,7 +103,7 @@ O Forms as a Cloud Service fornece APIs RESTful de geração e manipulação de 
 
 * Você pode usar um ambiente de Forms AEM 6.5 para:
 
-   * renderize seus formulários baseados em XDP como HTML5 Forms. O serviço não oferece suporte ao HTML5 Forms (Mobile Forms).
+   * renderize seus formulários baseados em XDP como HTML5 Forms. O serviço não oferece suporte ao HTML5 Forms.
 
    * capturar dados offline e sincronizá-los na próxima vez que você voltar online com [Espaço de trabalho AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-aem-forms-workspace/introduction-html-workspace.html) aplicativo.
 
