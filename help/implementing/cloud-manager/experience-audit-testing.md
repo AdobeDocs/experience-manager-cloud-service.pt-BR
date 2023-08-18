@@ -2,7 +2,7 @@
 title: Teste de auditoria de experiência
 description: Saiba como a Auditoria de experiência valida seu processo de implantação e ajuda a garantir que as alterações implantadas atendam aos padrões básicos de desempenho, acessibilidade, práticas recomendadas e SEO.
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: e9f205a506fb2d2b7f5e634b353b112bf077058a
+source-git-commit: 9f305e1127957fdba6dae978da4ac5fce4d3a776
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 85%
@@ -35,7 +35,7 @@ A Auditoria de experiência é disponibilizada pelo Google Lighthouse, uma ferra
 
 >[!INFO]
 >
->A partir de 28 de agosto de 2023, a Auditoria de experiência fará a transição para mostrar resultados específicos da plataforma móvel. Observe que as métricas de desempenho móvel normalmente se registram abaixo do desktop, portanto, antecipe uma mudança no desempenho relatado após essa alteração.
+>A partir de 31 de agosto de 2023, a Auditoria de experiência fará a transição para mostrar resultados específicos da plataforma móvel. Observe que as métricas de desempenho móvel normalmente se registram abaixo do desktop, portanto, antecipe uma mudança no desempenho relatado após essa alteração.
 
 >[!TIP]
 >
