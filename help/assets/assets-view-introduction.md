@@ -1,10 +1,10 @@
 ---
 title: Como a nova interface do AEM Assets ou o Assets visualizam no AEM beneficia você?
-description: Saiba mais sobre os principais benefícios da nova interface do usuário do AEM Assets ou a nova visualização de Ativos no AEM
+description: Saiba mais sobre os principais benefícios da nova interface do usuário do AEM Assets ou da nova visualização de Ativos no AEM. A Adobe, utilizando sua experiência em capacitar profissionais de marketing e criação, apresenta uma nova experiência de usuário revolucionária.
 mini-toc-levels: 3
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 2c8bac8627ed660d2780f93f4018c8fa980e569a
 workflow-type: tm+mt
-source-wordcount: '1116'
+source-wordcount: '1132'
 ht-degree: 66%
 
 ---

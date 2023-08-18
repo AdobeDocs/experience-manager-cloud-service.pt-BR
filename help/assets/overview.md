@@ -1,14 +1,14 @@
 ---
 title: Introdução ao Assets as a [!DNL Cloud Service]
-description: Novidades do Assets as a [!DNL Cloud Service].
-contentOwner: AG
+description: Saiba mais sobre as novidades e os benefícios do Experience Manager Assets as a [!DNL Cloud Service]. Uma solução PaaS nativa em nuvem para empresas.
+contentOwner: AK
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: 5a7938d5e52388516f8b66bbcf8ffdee332a51a3
+source-git-commit: d663c258a83473ec8d3c68bc5683955003d889c7
 workflow-type: tm+mt
-source-wordcount: '740'
-ht-degree: 68%
+source-wordcount: '752'
+ht-degree: 66%
 
 ---
 
@@ -39,7 +39,7 @@ Estes são os principais benefícios do Assets as a [!DNL Cloud Service]. Para s
 
 ## Experiências disponíveis com base em persona {#persona-based-experiences}
 
-A Adobe oferece uma solução robusta de Gerenciamento de ativos digitais (DAM) para você aproveitar ao máximo seus ativos digitais. O Adobe Experience Manager Assets tem duas experiências separadas que usam o mesmo repositório de Cloud Services:
+A Adobe oferece uma solução robusta de Gerenciamento de ativos digitais (DAM) para você aproveitar ao máximo seus ativos digitais. O Adobe Experience Manager Assets tem duas experiências separadas que usam o mesmo repositório de Cloud Service:
 
 * **Exibição do administrador**: a interface do usuário as a Cloud Service do Assets. Use a Exibição de administrador para todos os recursos avançados de gerenciamento de ativos, incluindo integrações, fluxos de trabalho, automação de conteúdo, publicação e muito mais.
 

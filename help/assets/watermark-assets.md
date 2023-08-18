@@ -1,14 +1,14 @@
 ---
-title: Marca d'água nos ativos
-description: Adicione uma marca d'água aos seus ativos digitais.
+title: Como criar uma marca d'água em seus ativos no AEM?
+description: Saiba como adicionar uma marca d'água digital a seus ativos no AEM. As marcas d'água podem ajudar os usuários a verificar a autenticidade e a propriedade de direitos autorais dos ativos.
 contentOwner: AG
 feature: Asset Management,Publishing
 role: User,Admin
 exl-id: 210f8925-bd15-4b4a-8714-5a1486eeb49e
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: d663c258a83473ec8d3c68bc5683955003d889c7
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 14%
+source-wordcount: '318'
+ht-degree: 13%
 
 ---
 

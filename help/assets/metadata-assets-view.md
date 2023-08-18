@@ -1,17 +1,17 @@
 ---
-title: Gerenciar metadados
-description: Gerenciar metadados de ativos no  [!DNL Assets view]
+title: Como gerenciar metadados na visualização de Ativos?
+description: Saiba como gerenciar metadados na visualização de Ativos. Um melhor gerenciamento de metadados torna um ativo mais acessível, fácil de gerenciar e completo.
 role: User,Leader,Admin,Architect,Developer
 contentOwner: AG
 exl-id: cfc105d1-41fc-4418-9905-b2a28a348682
-source-git-commit: e2efffe0192f7914fd97178884b7938b84fd9a27
+source-git-commit: d663c258a83473ec8d3c68bc5683955003d889c7
 workflow-type: tm+mt
-source-wordcount: '1536'
-ht-degree: 64%
+source-wordcount: '1557'
+ht-degree: 87%
 
 ---
 
-# Metadados na visualização de ativos {#metadata}
+# Metadados na visualização do Assets {#metadata}
 
 Os metadados são dados ou descrições sobre os dados. Por exemplo, suas imagens como um ativo podem conter informações sobre a câmera com a qual ela foi fotografada ou quaisquer informações de direitos autorais. Essas informações são os metadados da imagem. Os metadados são essenciais para um gerenciamento eficiente de ativos. Os metadados são a coleção de todos os dados disponíveis para um ativo, mas que podem não estar necessariamente contidos nesse ativo.
 
@@ -31,13 +31,13 @@ Para visualizar os metadados de um ativo, navegue até o ativo ou pesquise por e
 
 ![Visualizar metadados de um ativo](assets/metadata-view1.png)
 
-*Figura: para visualizar um ativo e seus metadados, clique em **[!UICONTROL Detalhes]**na barra de ferramentas ou clique duas vezes no ativo.*
+*Figura: para visualizar um ativo e seus metadados, clique em **[!UICONTROL Detalhes]** na barra de ferramentas ou clique duas vezes no ativo.*
 
 Os metadados básicos, como título, descrição e data de upload estão disponíveis na guia [!UICONTROL Básico]. A guia [!UICONTROL Avançado] contém metadados mais avançados, como modelo de câmera, detalhes da lente e identificação geográfica. A guia [!UICONTROL Tags] contém tags aplicadas automaticamente com base no conteúdo da imagem.
 
 ## Atualizar metadados {#update-metadata}
 
-Depois que o administrador configura o formulário de metadados, outros campos podem ser atualizados manualmente. Talvez você queira alterar isso, pois ela só é lida com base no formulário de metadados pronto para uso.
+Depois que admins configuram o formulário de metadados, outros campos podem ser atualizados manualmente. Talvez você deseje alterar isso, pois a leitura só é realizada com base em formulários de metadados prontos para uso.
 
 ## Tags inteligentes {#smart-tags}
 
@@ -47,19 +47,19 @@ As tags inteligentes são aplicadas em tempo quase real e geradas com base no co
 
 ![Visualizar as Tags inteligentes de um ativo](assets/metadata-view-tags.png)
 
-*Figura: para visualizar as Tags inteligentes de um ativo, clique em **[!UICONTROL Detalhes]**na barra de ferramentas ou clique duas vezes no ativo.*
+*Figura: para visualizar as tags inteligentes de um ativo, clique em **[!UICONTROL Detalhes]** na barra de ferramentas ou clique duas vezes no ativo.*
 
 As Tags inteligentes também contêm uma pontuação de confiança como uma porcentagem. Ela indica a confiança associada à tag aplicada. Você pode moderar as tags inteligentes aplicadas automaticamente.
 
 ## Adicionar ou atualizar palavras-chave {#manually-tag}
 
-É possível adicionar mais tags aos seus ativos, além das Tags inteligentes que são adicionadas automaticamente usando o serviço inteligente do [!DNL Adobe Sensei]. Abra um ativo para pré-visualização, clique em [!UICONTROL Tags] e digite as palavras-chave desejadas no campo [!UICONTROL Palavras-chave]. Para adicionar a tag, pressione Return. O [!DNL Assets view] indexa a palavra-chave em tempo quase real, e sua equipe poderá pesquisar os ativos atualizados em breve usando as novas palavras-chave.
+É possível adicionar mais tags aos seus ativos, além das tags inteligentes que são adicionadas automaticamente usando o serviço inteligente do [!DNL Adobe Sensei]. Abra um ativo para pré-visualização, clique em [!UICONTROL Tags] e digite as palavras-chave desejadas no campo [!UICONTROL Palavras-chave]. Para adicionar a tag, pressione Return. O [!DNL Assets view] indexa a palavra-chave em tempo quase real, e sua equipe poderá pesquisar os ativos atualizados em breve usando as novas palavras-chave.
 
 Também é possível remover tags da seção [!UICONTROL Tags inteligentes] que são adicionadas automaticamente pelo [!DNL Assets view] em todos os ativos carregados.
 
 ## Gerenciamento de taxonomia {#taxonomy-management}
 
-As tags também podem ser aninhadas em uma hierarquia para suportar relacionamentos como categoria e subcategoria. Se você precisar inserir tags hierárquicas, elas serão facilmente gerenciadas pelo Administrador no [!UICONTROL Gerenciamento de taxonomia] seção de [!UICONTROL Configurações]. É possível criar um conjunto controlado de namespaces e tags que todos os usuários podem acessar para usar ao descrever o conteúdo. Somente os administradores podem configurar hierarquias de tags no [!UICONTROL Gerenciador de taxonomia] garantir que os valores sejam controlados e usados de forma consistente.
+As tags também podem ser aninhadas em uma hierarquia para permitir relacionamentos como o de categoria e subcategoria. Se você precisar inserir tags hierárquicas, elas podem ser gerenciadas facilmente por admins na seção [!UICONTROL Gerenciamento de taxonomia] das [!UICONTROL Configurações]. É possível criar um conjunto controlado de namespaces e tags que todos os usuários podem usar para descrever o conteúdo. Somente admins podem configurar hierarquias de tags no [!UICONTROL Gerenciador de taxonomia], garantindo que os valores sejam controlados e usados de forma consistente.
 
 ## Configurar formulários de metadados {#metadata-forms}
 
@@ -78,7 +78,7 @@ A exibição de Ativos usa a seguinte sequência para pesquisar nomes de formul�
 
 Subtipo MIME > Tipo MIME > Formulário `default` > Formulário pronto para uso
 
-Por exemplo, se um formulário de metadados chamado `PDF` ou `pdf` existir, os documentos PDF carregados contêm campos de metadados conforme definidos no formulário. Se for um formulário de metadados chamado `PDF` ou `pdf` não existir, a exibição Ativos corresponderá se houver um formulário de metadados chamado `application`. Se houver um formulário de metadados chamado `application`, os documentos PDF carregados contêm campos de metadados conforme definidos no formulário. Se a visualização de Ativos ainda não encontrar um formulário de metadados correspondente, ela pesquisará pelo `default` formulário de metadados para aplicar campos de metadados definidos no formulário aos documentos PDF carregados. Se nenhuma dessas etapas funcionar, a exibição Assets aplicará campos de metadados definidos no formulário pronto para uso a todos os documentos de PDF carregados.
+Por exemplo, se um formulário de metadados chamado `PDF` ou `pdf` existir, os documentos PDF carregados contêm campos de metadados conforme definidos no formulário. Se for um formulário de metadados chamado `PDF` ou `pdf` não existir, a exibição Ativos corresponderá se houver um formulário de metadados chamado `application`. Se houver um formulário de metadados chamado `application`, os documentos PDF carregados conterão campos de metadados conforme definido no formulário. Se a visualização de Ativos ainda não encontrar um formulário de metadados correspondente, ela pesquisará pelo `default` formulário de metadados para aplicar campos de metadados definidos no formulário aos documentos PDF carregados. Se nenhuma dessas etapas funcionar, a exibição Assets aplicará campos de metadados definidos no formulário pronto para uso a todos os documentos de PDF carregados.
 
 >[!IMPORTANT]
 >
@@ -99,7 +99,7 @@ Para criar um formulário de metadados, siga estas etapas:
 
    *Figura: a interface de criação do formulário de metadados com a opção de adicionar componentes e de pré-visualizar o formulário.*
 
-1. Para cada componente, forneça um nome no campo **[!UICONTROL Configurações]** no painel direito, forneça um mapeamento com as propriedades compatíveis.
+1. Para cada componente, forneça um nome nas **[!UICONTROL Configurações]** do painel direito e um mapeamento com as propriedades compatíveis.
 1. Opcionalmente, para um componente, selecione **[!UICONTROL Obrigatório]** para tornar o campo de metadados obrigatório e selecione **[!UICONTROL Somente leitura]** para transformá-lo em um campo não editável na página [!UICONTROL Detalhes] do ativo.
 1. Opcionalmente, clique em **[!UICONTROL Pré-visualização]** para pré-visualizar o formulário que está sendo criado.
 1. Como opção, adicione mais guias e os componentes necessários em cada guia.
@@ -116,23 +116,23 @@ Para reutilizar um formulário existente para criar um novo formulário, selecio
 ## Componentes de propriedade {#property-components}
 
 Você pode personalizar o formulário de metadados usando qualquer um dos seguintes componentes de propriedade. Basta arrastar e soltar o tipo de componente no formulário no local desejado e modificar as configurações do componente.
-Abaixo está uma visão geral de cada tipo de propriedade e como eles são armazenados.
+Veja abaixo uma visão geral de cada tipo de propriedade e como eles são armazenados.
 
 | Nome do componente | Descrição |
 |---|---|
-| Container de acordeão | Adicione um cabeçalho que pode ser recolhido para obter uma lista de componentes e propriedades comuns. Ele pode ser expandido ou recolhido por padrão. |
-| Texto em linha única | Adicione uma propriedade de texto de linha única. |
-| Texto multilinha | Adicionar várias linhas de texto ou um parágrafo. Ele é expandido como um tipo de usuário para conter todo o conteúdo. |
-| Texto de vários valores | Adicione uma propriedade de texto de vários valores. |
-| Número | Adicione um componente de número. |
-| Caixa de seleção | Adicione um valor booleano. Armazenado como TRUE ou FALSE depois que um valor é salvo. |
-| Data | Adicione um componente de data. |
-| Suspenso | Adicione uma lista suspensa. |
-| Estado | Adicionar a propriedade de estado do repositório (mapeada para repo:state) |
-| Status do ativo | Adicionar a propriedade Status do ativo padrão (mapeada para dam:assetStatus) |
-| Tags | Adicione uma tag a partir de valores armazenados no Gerenciamento de taxonomia (mapeado para xcm:tags). |
-| Palavras-chave | Adicionar palavras-chave de forma livre (mapeadas para dc:subject). |
-| Tags inteligentes | Adicione para aumentar os recursos de pesquisa adicionando tags de metadados automaticamente. |
+| Container de acordeão | Adiciona um cabeçalho recolhível que exibe uma lista de componentes e propriedades comuns. Ele pode ser expandido ou recolhido por padrão. |
+| Texto em linha única | Adiciona uma propriedade de texto em linha única. |
+| Texto multilinha | Adiciona várias linhas de texto ou um parágrafo. Ele é expandido à medida que o usuário digita para incluir todo o conteúdo. |
+| Texto multivalor | Adiciona uma propriedade de texto multivalor. |
+| Número | Adiciona um componente de número. |
+| Caixa de seleção | Adiciona um valor booleano. Este é armazenado como TRUE ou FALSE depois que um valor é salvo. |
+| Data | Adiciona um componente de data. |
+| Suspenso | Adiciona uma lista suspensa. |
+| Estado | Adiciona uma propriedade de estado do repositório (mapeada para repo:state) |
+| Status do ativo | Adiciona a propriedade de status do ativo padrão (mapeada para dam:assetStatus) |
+| Tags | Adiciona uma tag a partir de valores armazenados no Gerenciamento de taxonomia (mapeado para xcm:tags). |
+| Palavras-chave | Adiciona palavras-chave de forma livre (mapeadas para dc:subject). |
+| Tags inteligentes | Adicione para aumentar os recursos de pesquisa inserindo tags de metadados automaticamente. |
 
 ## Próximas etapas {#next-steps}
 
