@@ -2,7 +2,7 @@
 title: Tarefas de manutenção no AEM as a Cloud Service
 description: Saiba mais sobre as tarefas de manutenção no AEM as a Cloud Service e como configurá-las.
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: f7ffe727ecc7f1331c1c72229a5d7f940070c011
+source-git-commit: 1d20c42dd140e1bdadbf4e7e0abf899c824d3b34
 workflow-type: tm+mt
 source-wordcount: '1114'
 ht-degree: 62%
@@ -44,7 +44,7 @@ A tabela a seguir ilustra as tarefas de manutenção disponíveis no momento do 
   <tr>
     <td>Remoção da versão</td>
     <td>Adobe</td>
-    <td>Para ambientes existentes (aqueles criados antes de 1° de setembro de 2023), a limpeza está desativada e não será ativada no futuro, a menos que seja explicitamente ativada pelo cliente, momento em que ele também poderá configurá-la com valores personalizados.<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->Os novos ambientes (criados a partir de 1 de setembro de 2023) terão a limpeza ativada por padrão com os valores abaixo, com os clientes podendo configurar com valores personalizados.
+    <td>Para ambientes existentes (aqueles criados antes de 1° de novembro de 2023), a limpeza está desativada e não será ativada no futuro, a menos que seja explicitamente ativada pelo cliente, momento em que ele também poderá configurá-la com valores personalizados.<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->Os novos ambientes (criados a partir de 1 de novembro de 2023) terão a limpeza ativada por padrão com os valores abaixo, com os clientes podendo configurar com valores personalizados.
      <ol>
        <li>Versões com mais de 30 dias são removidas</li>
        <li>As 5 versões mais recentes nos últimos 30 dias são mantidas</li>
@@ -56,7 +56,7 @@ A tabela a seguir ilustra as tarefas de manutenção disponíveis no momento do 
   <tr>
     <td>Limpeza do log de auditoria</td>
     <td>Adobe</td>
-    <td>Para ambientes existentes (aqueles criados antes de 1° de setembro de 2023), a limpeza está desativada e não será ativada no futuro, a menos que seja explicitamente ativada pelo cliente, momento em que ele também poderá configurá-la com valores personalizados.<br><br> <!-- See above for the two line breaks -->Os novos ambientes (criados a partir de 1º de setembro de 2023) terão a limpeza ativada por padrão no <code>/content</code> do repositório de acordo com o seguinte comportamento:
+    <td>Para ambientes existentes (aqueles criados antes de 1° de novembro de 2023), a limpeza está desativada e não será ativada no futuro, a menos que seja explicitamente ativada pelo cliente, momento em que ele também poderá configurá-la com valores personalizados.<br><br> <!-- See above for the two line breaks -->Os novos ambientes (criados a partir de 1º de novembro de 2023) terão a limpeza ativada por padrão no <code>/content</code> do repositório de acordo com o seguinte comportamento:
      <ol>
        <li>Para auditoria de replicação, os logs de auditoria com mais de 3 dias são removidos</li>
        <li>Para auditoria do DAM (Assets), os logs de auditoria com mais de 30 dias são removidos</li>
