@@ -1,18 +1,17 @@
 ---
-title: Como configurar o envio assíncrono para o Adaptive Forms?
+title: Configurar envio assíncrono do AEM Adaptive Forms
 description: Saiba como configurar o envio assíncrono para o Adaptive Forms. Saiba mais sobre como o envio assíncrono funciona para o Adaptive Forms.
 feature: Adaptive Forms
 role: User
 level: Intermediate
-exl-id: 026f4920-f8f9-4b08-b1b0-af50229633d7
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '748'
+source-wordcount: '749'
 ht-degree: 1%
 
 ---
 
-# Envio assíncrono do Adaptive Forms {#asynchronous-submission-of-adaptive-forms}
+# Configurar envio assíncrono do AEM Adaptive Forms {#asynchronous-submission-of-adaptive-forms}
 
 
 | Versão | Link do artigo |

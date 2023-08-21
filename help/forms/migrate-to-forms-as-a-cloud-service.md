@@ -1,5 +1,5 @@
 ---
-title: Como migrar de um Forms AEM 6.5 para o [!DNL AEM Forms] as a Cloud Service ambiente?
+title: Migração do AEM 6.5 Forms para o AEM Forms as a Cloud Service
 description: Introdução à Jornada de migração para o AEM as a Cloud Service | ADOBE EXPERIENCE MANAGER Migrar de um [!DNL AEM Forms] (Ambientes no local e AMS) para [!DNL AEM Forms] ambiente as a Cloud Service.
 Keywords: 6.5 forms to cloud service, 6.5 forms to cs, migrate 6.5 forms to CS, migrate 6.5 forms to cloud service, upgrade 6.5 forms to CS, move 6.5 forms to CS, upgrade AEM 6.5 to CS, AEM Forms 6.5 to Cloud Service, AEM form migration to cloud service, Migration Journey to AEM as a Cloud Service | Adobe Experience Manager.
 contentOwner: khsingh
@@ -9,9 +9,9 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: d43e2d555a09f481900ec70e5e38bab42f4cc1d7
+source-git-commit: b2c8e739c4e1c5289ca263360f4f59b8a2c05f5b
 workflow-type: tm+mt
-source-wordcount: '1582'
+source-wordcount: '1580'
 ht-degree: 4%
 
 ---
@@ -109,9 +109,9 @@ Execute as seguintes etapas para tornar seus [!DNL AEM Forms] ativos compatívei
 
    1. Toque **[!UICONTROL Migração adaptável de componentes personalizados do Forms]** e na página Migração de componentes personalizados, toque em **[!UICONTROL Iniciar migração]**. Ele faz com que qualquer componente personalizado desenvolvido para Forms adaptável e sobreposições de componentes no seu [!DNL AEM Forms] ambiente compatível com [!DNL AEM] as a Cloud Service.
 
-   1. Toque **[!UICONTROL Migração de modelo adaptável do Forms]** e na página Migração de componentes personalizados, toque em **[!UICONTROL Iniciar migração]**. Ele coloca os modelos de Formulário adaptável em `/apps` ou `/conf` e criado usando o Editor de modelo AEM compatível com o [!DNL AEM] as a Cloud Service.
+   1. Toque **[!UICONTROL Migração de modelo adaptável do Forms]** e na página Migração de componentes personalizados, toque em **[!UICONTROL Iniciar migração]**. Ele coloca os modelos de Formulário adaptável em `/apps` ou `/conf` e criado usando o Editor de modelo AEM compatível com [!DNL AEM] as a Cloud Service.
 
-   1. Toque **[!UICONTROL Migração de configurações da AEM Forms Cloud]** e, na página Migração de configuração, toque em **[!UICONTROL Iniciar migração]**. Ele atualiza e move os seguintes Cloud Services para um novo local:
+   1. Toque **[!UICONTROL Migração de configurações da AEM Forms Cloud]** e, na página Migração de configuração, toque em **[!UICONTROL Iniciar migração]**. Ele atualiza e move os seguintes Cloud Service para um novo local:
 
       * Cloud Service do modelo de dados de formulário
       * Cloud Service Google reCAPTCHA
@@ -128,7 +128,7 @@ Execute as seguintes etapas para tornar seus [!DNL AEM Forms] ativos compatívei
 
    <!-- 1. Install the latest [Compatibility Package](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration) to your cloned [!DNL AEM Forms] environment. -->
 
-1. Execute o [Ferramenta Transferência de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration). Ao especificar parâmetros na variável **[!UICONTROL Criar conjunto de migração]** , especifique o caminho do Forms adaptável, temas, modelos, Modelos de dados de formulário, Cloud Services, Componentes personalizados e outros ativos específicos do AEM Forms para o **[!UICONTROL Caminhos a serem incluídos]** opção. Ele adiciona informações [!DNL AEM Forms] ativos para o conjunto de migração.
+1. Execute o [Ferramenta Transferência de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration). Ao especificar parâmetros na variável **[!UICONTROL Criar conjunto de migração]** , especifique o caminho do Forms adaptável, temas, modelos, Modelos de dados de formulário, Cloud Service, Componentes personalizados e outros ativos específicos do AEM Forms para o **[!UICONTROL Caminhos a serem incluídos]** opção. Ele adiciona informações [!DNL AEM Forms] ativos para o conjunto de migração.
 
 ## Caminhos de vários ativos específicos do AEM Forms
 

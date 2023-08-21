@@ -1,17 +1,17 @@
 ---
-title: Selecionar dinamicamente um usuário ou grupo para etapas de fluxo de trabalho centradas no AEM Forms
+title: Seleção dinâmica de usuários ou grupos no fluxo de trabalho do AEM
 description: Saiba como selecionar um usuário ou grupo para um [!DNL AEM Forms] fluxo de trabalho no tempo de execução.
 content-type: troubleshooting
 topic-tags: publish
-source-git-commit: 3c2a66ac13ccee9eef87ed3c97288a7475ac64d0
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '895'
 ht-degree: 0%
 
 ---
 
 
-# Selecionar dinamicamente um usuário ou grupo para etapas de fluxo de trabalho centradas no AEM Forms {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
+# Seleção dinâmica de usuários ou grupos no fluxo de trabalho do AEM {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
 
 Saiba como selecionar um usuário ou grupo para um [!DNL AEM Forms] fluxo de trabalho no tempo de execução.
 
@@ -221,7 +221,7 @@ Você precisa [[!DNL AEM Forms] Client SDK](https://experienceleague.adobe.com/d
    </project>
    ```
 
-1. Adicionar código-fonte que usa [RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Interface Java para escolher dinamicamente um usuário ou um grupo para a etapa Atribuir tarefa. Para obter o código de exemplo, consulte [Amostra para escolher dinamicamente um usuário ou grupo usando a interface Java](#-sample-scripts-for).
+1. Adicionar código-fonte que usa [RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Interface Java para escolher dinamicamente um usuário ou grupo para a etapa Atribuir tarefa. Para obter o código de exemplo, consulte [Amostra para escolher dinamicamente um usuário ou grupo usando a interface Java](#-sample-scripts-for).
 1. Abra um prompt de comando e navegue até o diretório que contém o projeto de pacote OSGi. Use o seguinte comando para criar o pacote OSGi:
 
    `mvn clean install`

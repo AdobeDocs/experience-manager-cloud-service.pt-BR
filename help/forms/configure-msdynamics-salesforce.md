@@ -1,15 +1,14 @@
 ---
-title: Como configurar modelos de dados de formulário prontos para uso do Microsoft Dynamics 365 e Salesforce para formulários adaptáveis?
+title: Configurar o Microsoft Dynamics 365 ou Salesforce para AEM Forms
 description: Saiba como integrar o Microsoft Dynamics 365 e Salesforce a formulários adaptáveis.
-exl-id: 2a43b2db-2dfb-4c79-88be-ea770b44dac1
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '952'
 ht-degree: 2%
 
 ---
 
-# Configurar os serviços em nuvem do[!DNL Microsoft Dynamics 365]e do[!DNL Salesforce] {#configure-azure-storage}
+# Configurar o Microsoft Dynamics 365 ou Salesforce para AEM Forms {#configure-azure-storage}
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
@@ -47,7 +46,7 @@ Antes de configurar o [!DNL Salesforce] serviços em nuvem, execute as seguintes
 
 Execute as seguintes etapas para configurar o [!DNL Salesforce] serviços na nuvem:
 
-1. Ligado [!DNL AEM Forms] instância do autor, navegue até **[!UICONTROL Ferramentas]** ![martelo](assets/hammer.png) > **[!UICONTROL Cloud Services]** > **[!UICONTROL Fontes de dados]**. A lista de pastas de wrapper disponíveis inclui uma pasta com o título especificado para `DappTitle`  enquanto [geração do projeto do arquétipo AEM](setup-local-development-environment.md##forms-cloud-service-local-development-environment).
+1. Ligado [!DNL AEM Forms] instância do autor, navegue até **[!UICONTROL Ferramentas]** ![martelo](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL Fontes de dados]**. A lista de pastas de wrapper disponíveis inclui uma pasta com o título especificado para `DappTitle`  enquanto [geração do projeto do arquétipo AEM](setup-local-development-environment.md##forms-cloud-service-local-development-environment).
 1. Toque no nome da pasta e selecione **[!UICONTROL Configuração de nuvem do Salesforce]** e toque em **[!UICONTROL Propriedades]**.
 1. No **[!UICONTROL Configurações de autenticação]** guia:
    1. Especifique a [!DNL Salesforce] URL do domínio no **[!UICONTROL Host]** campo. Por exemplo, [Nome do domínio].my.salesforce.com.
@@ -81,7 +80,7 @@ Antes de configurar o [!DNL Microsoft Dynamics 365] serviços em nuvem, certifiq
 
 Execute as seguintes etapas para configurar o [!DNL Microsoft Dynamics 365] serviços na nuvem:
 
-1. Ligado [!DNL AEM Forms] instância do autor, navegue até **[!UICONTROL Ferramentas]** ![martelo](assets/hammer.png) > **[!UICONTROL Cloud Services]** > **[!UICONTROL Fontes de dados]**. A lista de pastas de wrapper disponíveis inclui uma pasta com o título especificado para `DappTitle`  enquanto [geração do projeto do arquétipo AEM](setup-local-development-environment.md##forms-cloud-service-local-development-environment).
+1. Ligado [!DNL AEM Forms] instância do autor, navegue até **[!UICONTROL Ferramentas]** ![martelo](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL Fontes de dados]**. A lista de pastas de wrapper disponíveis inclui uma pasta com o título especificado para `DappTitle`  enquanto [geração do projeto do arquétipo AEM](setup-local-development-environment.md##forms-cloud-service-local-development-environment).
 1. Toque no nome da pasta e selecione **[!UICONTROL Configuração de nuvem do Microsoft Dynamics 365]** e toque em **[!UICONTROL Propriedades]**.
 1. No **[!UICONTROL Configurações de autenticação]** guia:
    1. Insira o valor para o **[!UICONTROL Raiz do serviço]** campo. Acesse a instância do Dynamics e navegue até [Recursos do desenvolvedor](https://docs.microsoft.com/en-us/powerapps/developer/data-platform/view-download-developer-resources) para exibir o valor do campo Raiz do Serviço. Por exemplo, `https://<tenant-name>.dynamics.com/api/data/v9.1/`

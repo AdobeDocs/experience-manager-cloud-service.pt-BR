@@ -1,14 +1,13 @@
 ---
-title: Como melhorar o desempenho de formulários grandes com carregamento lento?
+title: Melhorar o desempenho de formulários grandes com carregamento lento
 description: Saiba mais sobre como melhorar o desempenho de formulários grandes com carregamento lento. O carregamento lento melhora significativamente o desempenho de Forms adaptável grande e complexo, adiando a inicialização e o carregamento de fragmentos de formulário até que eles fiquem visíveis.
 feature: Adaptive Forms
 role: User
 level: Intermediate
-exl-id: 0cd38edb-2201-4ca6-8b84-6b5b7f76bd90
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b2c8e739c4e1c5289ca263360f4f59b8a2c05f5b
 workflow-type: tm+mt
-source-wordcount: '1073'
-ht-degree: 2%
+source-wordcount: '1071'
+ht-degree: 3%
 
 ---
 

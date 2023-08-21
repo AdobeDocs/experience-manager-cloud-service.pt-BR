@@ -1,8 +1,8 @@
 ---
-title: Experience Manager [!DNL AEM Forms] Arquitetura as a Cloud Service
+title: Arquitetura as a Cloud Service da AEM Forms
 description: Entender a arquitetura do [!DNL AEM Forms] as a Cloud Service para conhecer os aspectos de escalabilidade, resiliência e desempenho da plataforma.
 exl-id: 9d677bee-50ca-460e-b503-6b7799900735
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: b2c8e739c4e1c5289ca263360f4f59b8a2c05f5b
 workflow-type: tm+mt
 source-wordcount: '1065'
 ht-degree: 5%
@@ -34,7 +34,7 @@ O Forms as a Cloud Service inclui vários componentes:
 
 ### CDN (Content Delivery Network)
 
-Todos os programas as a Cloud Service do AEM Forms têm acesso a [serviço CDN incorporado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html). Está incluído na licença do Forms as a Cloud Services.
+Todos os programas as a Cloud Service do AEM Forms têm acesso a [serviço CDN incorporado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html). Está incluído na licença do Forms as a Cloud Service.
 
 ### Autor
 

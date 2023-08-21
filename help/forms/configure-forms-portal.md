@@ -1,15 +1,14 @@
 ---
-title: Como criar um portal do Forms em uma página do Experience Manager Sites
+title: Adicionar o Forms Portal a uma página do AEM Sites
 description: Saiba como criar um Portal do Forms e usar componentes principais prontos para uso em uma página do AEM Sites.
-exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '1837'
+source-wordcount: '1835'
 ht-degree: 1%
 
 ---
 
-# Listar Forms adaptável em um portal {#publish-forms-on-portal}
+# Adicionar o Forms Portal a uma página do AEM Sites {#publish-forms-on-portal}
 
 <span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-br) para [criação de um novo Forms adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 

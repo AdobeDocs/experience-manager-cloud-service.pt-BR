@@ -1,16 +1,9 @@
 ---
 title: Aplicar assinaturas eletrônicas a um formulário usando assinaturas escritas
-seo-title: Apply electronic signatures to a form using scribble signatures
 description: Assinatura de formulários usando o rabisco
 seo-description: Signing forms using scribble
-uuid: ffeba886-9b24-4ed1-95c0-e19356ff2f23
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: 76d178d1-8e40-41b3-80d4-66b2f8d04211
-docset: aem65
-google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: b2c8e739c4e1c5289ca263360f4f59b8a2c05f5b
 workflow-type: tm+mt
 source-wordcount: '720'
 ht-degree: 2%

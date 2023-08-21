@@ -1,18 +1,18 @@
 ---
-title: Usar o Google reCAPTCHA em um formulário adaptável com base nos componentes principais
+title: Usar o Google reCAPTCHA em um formulário adaptável AEM
 description: Melhore a segurança dos formulários com o serviço Google reCAPTCHA sem esforço. Guia passo a passo no interior!
 topic-tags: Adaptive Forms, author
 hide: true
 hidefromtoc: true
 Keywords: Google reCAPTCHA service, Adaptive Forms, CAPTCHA challenge, Bot prevention, Core Components, Form submission security, Form spam prevention
-source-git-commit: b81acc99b1d90b05b7c341253e7cbb46c6ea12ae
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '874'
 ht-degree: 0%
 
 ---
 
-# Usar reCAPTCHA no Forms adaptável com base nos componentes principais {#using-reCAPTCHA-in-adaptive-forms}
+# Usar o Google reCAPTCHA em um formulário adaptável AEM {#using-reCAPTCHA-in-adaptive-forms}
 
 CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart) é um programa comumente usado em transações on-line para distinguir entre humanos e programas ou bots automatizados. Ele representa um desafio e avalia a resposta do usuário para determinar se é um humano ou um bot interagindo com o site. Ele impede que o usuário continue se o teste falhar e ajuda a tornar as transações online seguras, impedindo que os bots publiquem spam ou fins mal-intencionados.
 
@@ -43,7 +43,7 @@ Para conectar seu ambiente do AEM Forms com o serviço reCAPTCHA da Google
          1. Toque **[!UICONTROL Salvar e fechar]** para salvar a configuração e sair do diálogo.
 
 1. Configure o Cloud Service:
-   1. Na instância do autor do AEM, acesse ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]** e toque em **[!UICONTROL reCAPTCHA]**.
+   1. Na instância do autor do AEM, acesse ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Service]** e toque em **[!UICONTROL reCAPTCHA]**.
    1. Selecione um Contêiner de configuração, criado ou atualizado na seção anterior. Toque **[!UICONTROL Criar]**.
    1. Especificar **[!UICONTROL Título]**, **[!UICONTROL Nome]**, **[!UICONTROL Chave do site]**, e **[!UICONTROL Chave secreta]** para o serviço reCAPTCHA (Obtido na Etapa 1). Toque **[!UICONTROL Criar]**.
 

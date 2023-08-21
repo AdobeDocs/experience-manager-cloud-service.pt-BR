@@ -1,18 +1,18 @@
 ---
-title: Como adicionar informações de dados do usuário aos metadados de envio do formulário?
+title: Adicionar informações de dados do usuário aos metadados de envio do formulário
 description: Saiba como adicionar informações aos metadados de um formulário enviado com dados fornecidos pelo usuário. Saiba mais sobre como visualizar os metadados de envio de formulário atualizados no repositório CRX.
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '689'
 ht-degree: 0%
 
 ---
 
 
-# Adição de informações de dados do usuário para metadados de envio de formulário {#adding-information-from-user-data-to-form-submission-metadata}
+# Adicionar informações de dados do usuário para metadados de envio de formulário {#adding-information-from-user-data-to-form-submission-metadata}
 
 Você pode usar os valores inseridos em um elemento do formulário para calcular campos de metadados de um rascunho ou envio de formulário. Os metadados permitem filtrar o conteúdo com base nos dados do usuário. Por exemplo, um usuário digita João da Silva no campo de nome do formulário. É possível usar essas informações para calcular metadados que podem categorizar esse envio no JD de iniciais.
 

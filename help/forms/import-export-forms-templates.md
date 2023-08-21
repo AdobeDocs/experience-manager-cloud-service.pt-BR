@@ -1,18 +1,16 @@
 ---
-title: Importar, exportar e organizar o Adaptive Forms, PDF forms e outros ativos
-seo-title: Learn to import, export, and organize Adaptive Forms, PDF forms, and other assets on an[!DNL AEM Forms] instance
+title: Importar ou exportar ativos adaptáveis do Forms e do AEM Forms
 description: Deseja migrar o Forms adaptável e ativos de e para instâncias AEM? Saiba aqui como importar e exportar Forms adaptável, PDF forms, temas e outros ativos de suporte de um [!DNL AEM Forms] instância.
 seo-description: Looking to migrate Adaptive Forms and assets to and from an AEM instances? Learn here how to import and export Adaptive Forms, PDF forms, themes, and other supporting assets from an [!DNL AEM Forms] instance.
 topic-tags: forms-manager
-exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '1210'
-ht-degree: 2%
+source-wordcount: '1206'
+ht-degree: 1%
 
 ---
 
-# Importar, exportar e organizar formulários adaptáveis, formulários PDF e outros ativos{#importing-and-exporting-assets-to-aem-forms}
+# Importar ou exportar ativos adaptáveis do Forms e do AEM Forms {#importing-and-exporting-assets-to-aem-forms}
 
 Você pode mover o Forms adaptável e ativos relacionados, como temas do Formulário adaptável, Modelos de dados de formulário, Modelos de formulários adaptáveis, fragmentos de documentos e PDF forms entre [!DNL AEM Forms] instâncias. Você pode importar e exportar ativos no pacote CRX ou em formatos de arquivo binário.
 
