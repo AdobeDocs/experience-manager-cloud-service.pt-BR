@@ -2,14 +2,17 @@
 title: Utilização do reCAPTCHA no Adaptive Forms
 description: Saiba como configurar o serviço Google reCAPTCHA no Adaptive Forms.
 topic-tags: adaptive_forms, author
-source-git-commit: b4665d0291ee1223e46c8ecf13ca13ea336107d3
+source-git-commit: ad63083016f0f8c51ea336e37461562e61c02a8f
 workflow-type: tm+mt
-source-wordcount: '1913'
+source-wordcount: '1932'
 ht-degree: 1%
 
 ---
 
 # Usar reCAPTCHA no Adaptive Forms{#using-reCAPTCHA-in-adaptive-forms}
+
+<span class="preview"> Esse é um recurso de pré-lançamento acessível por meio de nossa [canal de pré-lançamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
@@ -52,7 +55,7 @@ Os autores de formulários podem usar o serviço reCAPTCHA pelo Google para impl
 
 1. Configurar o serviço em nuvem para [!DNL reCAPTCHA Enterprise].
 
-   1. Na instância do autor do Experience Manager, acesse ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]**.
+   1. Na instância do autor do Experience Manager, acesse ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Service]**.
    1. Toque **[!UICONTROL reCAPTCHA]**. A página Configurações é aberta. Selecione o contêiner de configuração criado e toque em **[!UICONTROL Criar]**.
    1. Selecionar versão como [!DNL reCAPTCHA Enterprise] e especifique Nome, ID do projeto, Chave do site e Chave de API (Obtida na Etapa 2) para o serviço reCAPTCHA Enterprise.
    1. Selecione o tipo de chave, o tipo de chave deve ser o mesmo que a chave do site que você configurou no [Projeto do Google Cloud](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#before-you-begin), por exemplo, **Chave do site da caixa de seleção** ou **Chave do site com base em pontuação**.
@@ -81,7 +84,7 @@ Quando o serviço reCAPTCHA Enterprise estiver ativado, ele estará disponível 
 
 1. Configure o serviço de nuvem para o reCAPTCHA v2.
 
-   1. Na instância do autor do AEM, acesse ![tools-1](assets/tools-1.png) > **Cloud Services**.
+   1. Na instância do autor do AEM, acesse ![tools-1](assets/tools-1.png) > **Cloud Service**.
    1. Toque **[!UICONTROL reCAPTCHA]**. A página Configurações é aberta. Selecione o contêiner de configuração criado e toque em **[!UICONTROL Criar]**.
    1. Selecionar versão como [!DNL reCAPTCHA v2] , especifique Nome, Chave do site e Chave secreta para o serviço reCAPTCHA (Obtido na Etapa 1) e toque em **[!UICONTROL Criar]** para criar a configuração do cloud service.
    1. Na caixa de diálogo Editar componente, especifique o site e as chaves secretas obtidas na etapa 1. Toque **[!UICONTROL Salvar configurações]** e toque em **OK** para concluir a configuração.
