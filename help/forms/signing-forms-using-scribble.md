@@ -1,16 +1,16 @@
 ---
-title: Aplicar assinaturas eletrônicas a um formulário usando assinaturas escritas
+title: Assinatura eletrônica de um formulário usando assinaturas escritas
 description: Assinatura de formulários usando o rabisco
 seo-description: Signing forms using scribble
 topic-tags: author
-source-git-commit: b2c8e739c4e1c5289ca263360f4f59b8a2c05f5b
+source-git-commit: 755bab29e7b6c49540dee47d6bec13e9421bfc43
 workflow-type: tm+mt
-source-wordcount: '720'
+source-wordcount: '714'
 ht-degree: 2%
 
 ---
 
-# Aplicar assinaturas eletrônicas a um formulário usando assinaturas escritas{#apply-electronic-signatures-to-a-form-using-deprecated-scribble-signatures}
+# Assinatura eletrônica de um formulário usando assinaturas escritas{#apply-electronic-signatures-to-a-form-using-deprecated-scribble-signatures}
 
 <span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-br) para [criação de um novo Forms adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
