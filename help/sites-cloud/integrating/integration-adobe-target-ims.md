@@ -2,10 +2,10 @@
 title: Configuração do IMS para uso na integração com o Adobe Target
 description: Saiba mais sobre a configuração do IMS para uso na integração com o Adobe Target
 exl-id: b5474b70-bedc-4cc9-ad47-89dcb2415e3a
-source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
+source-git-commit: 155b24c4b46e8baebd6215c0717d9f2adde95017
 workflow-type: tm+mt
-source-wordcount: '855'
-ht-degree: 91%
+source-wordcount: '883'
+ht-degree: 88%
 
 ---
 
@@ -64,6 +64,12 @@ O projeto da integração do Adobe Developer Console com o Adobe Target que o AE
 ### Criação do projeto {#creating-the-project}
 
 Abra o Adobe Developer Console para criar um Projeto com o Adobe Target que o AEM usará:
+
+>[!CAUTION]
+>
+>Atualmente, só oferecemos suporte ao console do Adobe Developer **Conta de serviço (JWT)** tipo de credencial.
+>
+>Não use o **Servidor OAuth para servidor** tipo de credencial, que terá suporte no futuro.
 
 1. Abra os projetos do Adobe Developer Console:
 

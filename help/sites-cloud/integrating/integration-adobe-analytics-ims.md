@@ -2,10 +2,10 @@
 title: Configuração do IMS para uso na integração com o Adobe Analytics
 description: Saiba mais sobre a configuração do IMS para uso na integração com o Adobe Analytics
 exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: d59559d38eef182723a8791c6614d03930f64a85
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 91%
+source-wordcount: '914'
+ht-degree: 88%
 
 ---
 
@@ -66,6 +66,12 @@ Usando o Console do Desenvolvedor da Adobe, é necessário criar um Projeto (int
 ### Criação do projeto {#creating-the-project}
 
 Abra o Console do desenvolvedor da Adobe para criar um Projeto com o Adobe Analytics que o AEM usará:
+
+>[!CAUTION]
+>
+>Atualmente, só oferecemos suporte ao console do Adobe Developer **Conta de serviço (JWT)** tipo de credencial.
+>
+>Não use o **Servidor OAuth para servidor** tipo de credencial, que terá suporte no futuro.
 
 1. Abra os projetos do Adobe Developer Console:
 
