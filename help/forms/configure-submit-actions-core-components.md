@@ -3,9 +3,9 @@ title: Como configurar uma ação enviar para um formulário adaptável
 description: Um Formulário adaptável fornece várias Ações de envio. Uma Ação de envio define como um Formulário adaptável é processado após o envio. Você pode usar as Ações de envio integradas ou criar as suas próprias ações.
 hide: true
 hidefromtoc: true
-source-git-commit: be57fe6c54f2ee07378e16bae601500f71e7ce6b
+source-git-commit: 74fed5b2bcffac9d267b66aaa3d69b27cadd3417
 workflow-type: tm+mt
-source-wordcount: '3575'
+source-wordcount: '3573'
 ht-degree: 2%
 
 ---
@@ -357,7 +357,7 @@ Você pode configurar um Formulário adaptável para executar um fluxo da nuvem 
 * Realizar cálculos complexos em dados capturados
 * Salve os dados do Forms adaptável em sistemas de armazenamento em uma programação predefinida
 
-O editor Forms adaptável fornece a **Chamar um fluxo do Microsoft® Power Automate** a ação de envio para enviar dados de formulários adaptáveis, anexos e Documento de registro são enviados para o Fluxo da nuvem do Power Automate. Para usar a ação Enviar para enviar dados capturados para o Microsoft® Power Automate, [Conecte sua instância do Forms as a Cloud Service com o Microsoft® Power Automate](forms-microsoft-power-automate-integration.md)
+O editor Forms adaptável fornece a **Chamar um fluxo do Microsoft® Power Automate** envie uma ação para enviar dados de formulários adaptáveis, anexos e documentos de registro para o fluxo da nuvem do Power Automate. Para usar a ação Enviar para enviar dados capturados para o Microsoft® Power Automate, [Conecte sua instância do Forms as a Cloud Service com o Microsoft® Power Automate](forms-microsoft-power-automate-integration.md)
 
 Após uma configuração bem-sucedida, use o [Chamar um fluxo do Microsoft® Power Automate](forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) ação de envio para enviar dados a um Fluxo do Power Automate.
 

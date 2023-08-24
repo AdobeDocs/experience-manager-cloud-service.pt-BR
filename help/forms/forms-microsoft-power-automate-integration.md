@@ -3,9 +3,9 @@ title: Como conectar e enviar dados do formulário adaptável para o Microsoft&r
 description: Um guia passo a passo para conectar e enviar dados do Formulário adaptável para o Microsoft&reg; Power Automate.
 keywords: Forms Microsoft Power Automate adaptável, enviar dados do Forms adaptável para o Microsoft Power Automate
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
-source-git-commit: be57fe6c54f2ee07378e16bae601500f71e7ce6b
+source-git-commit: 74fed5b2bcffac9d267b66aaa3d69b27cadd3417
 workflow-type: tm+mt
-source-wordcount: '1205'
+source-wordcount: '1198'
 ht-degree: 4%
 
 ---
@@ -119,7 +119,7 @@ Depois que você [Conecte sua instância do Forms as a Cloud Service com o Micro
 1. Faça logon na instância do Autor, selecione o Formulário adaptável e clique em **[!UICONTROL Propriedades]**.
 1. No Contêiner de configuração, procure e selecione o contêiner criado na seção [Criar configuração de nuvem do Microsoft® Power Automate Dataverse](#microsoft-power-automate-dataverse-cloud-configuration)e toque em **[!UICONTROL Salvar e fechar]**.
 1. Abra o Formulário adaptável para edição e navegue até **[!UICONTROL Envio]** seção das propriedades do Contêiner de formulário adaptável.
-1. No contêiner de propriedades, para **[!UICONTROL Ações de envio]** selecione o **[!UICONTROL Chamar um fluxo do Power Automate]** opção. Uma lista de fluxos disponíveis do Power Automate fica disponível **[!UICONTROL Fluxo do Power Automate]** opção. Selecione o fluxo necessário e os dados do Adaptive Forms serão enviados a ele no envio.
+1. No contêiner de propriedades, para **[!UICONTROL Ações de envio]** selecione o **[!UICONTROL Chamar um fluxo do Power Automate]** e selecione uma **[!UICONTROL Fluxo do Power Automate]**. Selecione o fluxo necessário e os dados do Adaptive Forms serão enviados a ele no envio.
 
    ![Configurar ação de envio](assets/submission.png)
 
