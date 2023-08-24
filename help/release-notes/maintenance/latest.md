@@ -2,9 +2,9 @@
 title: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: c6186e549a9ef2aebddb4925cf84289aa7f7e662
+source-git-commit: 6b4fa2802b860c938f5085f047cc880f29698f3e
 workflow-type: tm+mt
-source-wordcount: '698'
+source-wordcount: '708'
 ht-degree: 15%
 
 ---
@@ -60,6 +60,7 @@ A Ativação de recursos 2023.8.0 fornecerá o conjunto completo de recursos par
 - FORMS-10444: Modelos adaptáveis do Forms - Os modelos não podem ser publicados (solução alternativa: use o Console de distribuição).
 - CQ-4354191: workflows - O iniciador personalizado pode ser acionado muitas vezes devido a metadados de replicação presentes em nós nt:unstructured (solução alternativa: atualize os iniciadores para excluir propriedades de metadados de replicação para evitar sobreposição).
 - SITES-15622: GraphQL - problema com consultas persistentes com parâmetros numéricos e booleanos.
+- SITES-15654: GraphQL - problemas com uniões e propriedades de mesmo nome.
 
 ### Tecnologias integradas {#embedded-tech-13206}
 
