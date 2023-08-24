@@ -1,10 +1,9 @@
 ---
 title: Usar fontes personalizadas
-description: Usar fontes personalizadas
-exl-id: 88214d36-fb97-4d46-a9fe-71dbc7826eb1
-source-git-commit: 6bca307dcf41b138b5b724a8eb198ac35e2d906e
+description: Saiba como adicionar fontes personalizadas a um ambiente as a Cloud Service do Forms.
+source-git-commit: 6dd34937a8aeb6c7ddfc0fb1180a112de534dd4b
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---

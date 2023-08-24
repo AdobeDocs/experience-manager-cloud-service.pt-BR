@@ -1,11 +1,10 @@
 ---
 title: Assinatura eletrônica de um formulário usando assinaturas escritas
-description: Assinatura de formulários usando o rabisco
-seo-description: Signing forms using scribble
+description: E-sign Adaptive Forms sem esforço usando a etapa de assinatura e assinatura escritas. Simplifique a assinatura digital para aumentar a eficiência.
 topic-tags: author
-source-git-commit: 755bab29e7b6c49540dee47d6bec13e9421bfc43
+source-git-commit: 6dd34937a8aeb6c7ddfc0fb1180a112de534dd4b
 workflow-type: tm+mt
-source-wordcount: '714'
+source-wordcount: '725'
 ht-degree: 2%
 
 ---
@@ -76,7 +75,7 @@ Você pode tocar no **Configurar** ![ícone de configuração](assets/configure.
 
    * **Classe CSS**: especifique a classe CSS da biblioteca do cliente, se houver. É recomendável usar [temas](themes.md) e [estilos em linha](inline-style-adaptive-forms.md) em vez da classe CSS.
 
-   Toque no botão Concluído ![aem_forms_save](assets/aem_forms_save.png) ícone para salvar as alterações. A Assinatura foi configurada com êxito.
+   Toque no botão Concluído ![aem_forms_save](assets/aem_forms_save.png) ícone para salvar as alterações. A Assinatura foi configurada com sucesso.
 
    Agora, quando você preenche um formulário, uma versão de PDF do formulário adaptável é exibida e as opções para assinar o documento de PDF são fornecidas. Para obter informações detalhadas, consulte [Assinar um formulário adaptável usando a assinatura escritas](signing-forms-using-scribble.md#sign-an-adaptive-form-using-scribble-signature).
 

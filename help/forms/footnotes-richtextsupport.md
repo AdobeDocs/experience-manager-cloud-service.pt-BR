@@ -1,10 +1,9 @@
 ---
-title: Suporte a notas de rodapé
-description: Suporte RTE para notas de rodapé.
-exl-id: f04dae84-daab-42f8-876f-02fe426f62be
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+title: Suporte a notas de rodapé para o Adaptive Forms
+description: Aprimore o Adaptive Forms com notas de rodapé informativas em rich text. Melhorar a experiência do usuário e o engajamento.
+source-git-commit: 6dd34937a8aeb6c7ddfc0fb1180a112de534dd4b
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '439'
 ht-degree: 1%
 
 ---

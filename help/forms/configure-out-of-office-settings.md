@@ -1,12 +1,9 @@
 ---
 title: Definir configurações de Ausência Temporária
-seo-title: Configure Out of Office settings
-description: Configurar configurações de Ausência Temporária
-seo-description: Configure Out of Office settings
-exl-id: c7e436f1-8e1c-4334-b3dc-ab9800695301
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+description: Delegue tarefas enquanto estiver fora do escritório ou fora dele para uma execução perfeita do fluxo de trabalho.
+source-git-commit: 6dd34937a8aeb6c7ddfc0fb1180a112de534dd4b
 workflow-type: tm+mt
-source-wordcount: '819'
+source-wordcount: '826'
 ht-degree: 1%
 
 ---
@@ -64,7 +61,7 @@ Agora, os itens atribuídos a você durante o período de Ausência Temporária 
 
 >[!NOTE]
 >
->(Somente para itens de fluxo de trabalho centrados no Forms) Ative a opção **[!UICONTROL Permitir que o destinatário delegue usando as configurações &quot;Ausente&quot;]** opção do **[!UICONTROL Atribuir tarefa]** etapa no fluxo de trabalho. Somente os itens que têm a opção acima ativada são delegados a outros usuários.
+>(Somente para itens de fluxo de trabalho centrados no Forms) Ative a opção **[!UICONTROL Permitir que o destinatário delegue usando as configurações &quot;Ausente&quot;]** opção do **[!UICONTROL Atribuir tarefa]** etapa no fluxo de trabalho. Somente os itens que têm a opção mencionada anteriormente ativada são delegados a outros usuários.
 
 ## Limitações {#limitations}
 

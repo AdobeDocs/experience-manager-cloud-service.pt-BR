@@ -1,14 +1,11 @@
 ---
-title: Solução de problemas de instalação e configuração
-seo-title: Troubleshooting installation and configuration
-description: Solução de problemas de instalação e configuração
-seo-description: Troubleshooting installation and configuration
+title: Solução de problemas de instalação e configuração do Cloud Service
+description: Como solucionar problemas relacionados à instalação e configuração do AEM Forms as a Cloud Service?
 contentOwner: khsingh
-exl-id: 249ec8f2-4176-428a-bfcf-80b381ec7263
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 6dd34937a8aeb6c7ddfc0fb1180a112de534dd4b
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 6%
+source-wordcount: '177'
+ht-degree: 5%
 
 ---
 
@@ -27,7 +24,7 @@ Para ativar o **[!UICONTROL Forms]** opção:
 1. Faça logon na [Cloud Manager](https://experience.adobe.com/)
 1. Localize seu programa e clique no link ![A opção Forms não está disponível](assets/Smock_Edit_18_N.svg) ícone. Ela abre a página Editar programa do seu programa.
 1. Abra o **[!UICONTROL Soluções e complementos]** guia.
-1. Selecione o **[!UICONTROL Forms]** e Clique em **[!UICONTROL Salvar]**.
+1. Selecione o **[!UICONTROL Forms]** e clique em **[!UICONTROL Salvar]**.
 
    ![Selecione a opção Forms](assets/installation-configuration-select-forms-option.png)
 1. [Criar](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use) e [executar](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=pt-BR) produção e os gasodutos de não produção.
