@@ -3,10 +3,10 @@ title: Como configurar uma ação enviar para um formulário adaptável
 description: Um Formulário adaptável fornece várias Ações de envio. Uma Ação de envio define como um Formulário adaptável é processado após o envio. Você pode usar as Ações de envio integradas ou criar as suas próprias ações.
 hide: true
 hidefromtoc: true
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: be57fe6c54f2ee07378e16bae601500f71e7ce6b
 workflow-type: tm+mt
-source-wordcount: '3365'
-ht-degree: 1%
+source-wordcount: '3575'
+ht-degree: 2%
 
 ---
 
@@ -52,6 +52,7 @@ Para selecionar e configurar uma Ação de envio para o formulário:
    * [Enviar para endpoint REST](#submit-to-rest-endpoint)
    * [Enviar para o OneDrive](#submit-to-onedrive)
    * [Chamar um fluxo de trabalho de AEM](#invoke-an-aem-workflow)
+   * [Enviar para o Power Automate](#microsoft-power-automate)
 
 ## Enviar e-mail {#send-email}
 
@@ -345,6 +346,20 @@ Ao enviar o formulário, os dados são salvos na configuração especificada do 
 A estrutura de pastas para salvar os dados é `/configuration_container/form_name/year/month/date/submission_id/data`.
 
 Para definir valores de uma configuração, [Gerar configurações de OSGi usando o SDK do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart), e [implantar a configuração](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) para a instância do Cloud Service.
+
+
+## Enviar para o Power Automate {#microsoft-power-automate}
+
+Você pode configurar um Formulário adaptável para executar um fluxo da nuvem do Microsoft® Power Automate no envio. O formulário adaptável configurado envia dados capturados, anexos e documentos de registro para processamento no fluxo da nuvem do Power Automate. Ele ajuda você a criar uma experiência personalizada de captura de dados, aproveitando o poder do Microsoft® Power Automate para criar lógicas de negócios sobre dados capturados e automatizar os fluxos de trabalho do cliente. Estes são alguns exemplos do que você pode fazer após integrar um formulário adaptável ao Microsoft® Power Automate:
+
+* Usar dados adaptáveis do Forms em processos de negócios do Power Automate
+* Use o Power Automate para enviar dados capturados para mais de 500 fontes de dados ou qualquer API disponível publicamente
+* Realizar cálculos complexos em dados capturados
+* Salve os dados do Forms adaptável em sistemas de armazenamento em uma programação predefinida
+
+O editor Forms adaptável fornece a **Chamar um fluxo do Microsoft® Power Automate** a ação de envio para enviar dados de formulários adaptáveis, anexos e Documento de registro são enviados para o Fluxo da nuvem do Power Automate. Para usar a ação Enviar para enviar dados capturados para o Microsoft® Power Automate, [Conecte sua instância do Forms as a Cloud Service com o Microsoft® Power Automate](forms-microsoft-power-automate-integration.md)
+
+Após uma configuração bem-sucedida, use o [Chamar um fluxo do Microsoft® Power Automate](forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) ação de envio para enviar dados a um Fluxo do Power Automate.
 
 ## Usar envio síncrono ou assíncrono {#use-synchronous-or-asynchronous-submission}
 
