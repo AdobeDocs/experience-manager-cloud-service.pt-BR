@@ -4,7 +4,7 @@ description: Use o Seletor de ativos para pesquisar, localizar e recuperar metad
 contentOwner: Adobe
 role: Admin,User
 exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: dd923ae9d63f1ca1379d8e177ff7b00648da052a
 workflow-type: tm+mt
 source-wordcount: '2373'
 ht-degree: 91%
@@ -44,6 +44,7 @@ Execute as seguintes tarefas para integrar e usar o Seletor de ativos com o seu 
 É possível integrar qualquer [!DNL Adobe] ou aplicativo fora da Adobe com o repositório [!DNL Experience Manager Assets] as a [!DNL Cloud Service] no aplicativo.
 
 A integração é feita importando o pacote do Seletor de ativos e conectando ao Assets as a Cloud Service usando a biblioteca JavaScript Vanilla. É necessário editar um `index.html` ou qualquer arquivo apropriado em seu aplicativo para:
+
 * Definir os detalhes de autenticação
 * Acessar o repositório do Assets as a Cloud Service
 * Configurar as propriedades de exibição do Seletor de ativos
@@ -73,6 +74,7 @@ You can use properties such as `imsScope` or `imsClientID` to retrieve `imsToken
 -->
 
 Defina os pré-requisitos no arquivo `index.html` ou em um arquivo semelhante na implementação do aplicativo para definir os detalhes de autenticação e acessar o repositório do [!DNL Experience Manager Assets] as a [!DNL Cloud Service]. Os pré-requisitos incluem:
+
 * imsOrg
 * imsToken
 * apikey
@@ -105,7 +107,7 @@ Os Seletores de ativos estão disponíveis por meio das versões CDN (por exempl
 Nos navegadores usando a **Versão UMD** (recomendado):
 
 ```
-<script src="https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/assets-selectors.js"></script>
+<script src="https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/assets-selectors.js"></script>
 
 <script>
   const { renderAssetSelector } = PureJSSelectors;
@@ -116,14 +118,14 @@ Em navegadores com suporte a `import maps` usando a **Versão CDN do ESM**:
 
 ```
 <script type="module">
-  import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/@assets/selectors/index.js'
+  import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/@assets/selectors/index.js'
 </script>
 ```
 
 No Deno/Webpack Module Federation usando a **Versão CDN do ESM**:
 
 ```
-import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/@assets/selectors/index.js'
+import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/@assets/selectors/index.js'
 ```
 
 ### Tipo de ativo selecionado {#selected-asset-type}
@@ -526,7 +528,7 @@ O Seletor de ativos também fornece opções de filtro prontas para uso para ref
 * `MIME type`: inclui JPG, GIF, PPTX, PNG, MP4, DOCX, TIFF, PDF, XLSX
 * `Image Size`: inclui largura mínima/máxima, altura mínima/máxima da imagem
 
-![rail-view-example](assets/filters-asset-selector.png)
+  ![rail-view-example](assets/filters-asset-selector.png)
 
 ### Pesquisa personalizada
 
