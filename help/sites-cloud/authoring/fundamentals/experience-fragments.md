@@ -2,10 +2,10 @@
 title: Fragmentos de experiência
 description: Use os Fragmentos de experiência do Adobe Experience Manager as a Cloud Service para tornar suas experiências reutilizáveis e flexíveis.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bad2225e7c5f2554ebd51c0e7e737296c3aa552b
 workflow-type: tm+mt
 source-wordcount: '2044'
-ht-degree: 75%
+ht-degree: 99%
 
 ---
 
@@ -20,7 +20,7 @@ No Adobe Experience Manager as a Cloud Service, um fragmento de experiência:
 
 Um fragmento de experiência:
 
-* O faz parte de uma experiência (página).
+* Faz parte de uma experiência (página).
 * Pode ser usado em várias páginas.
 * É baseado em um modelo (somente editável) para definir a estrutura e os componentes.
 * Esse modelo é usado para criar a *página raiz* do Fragmento de experiência.
@@ -37,7 +37,7 @@ Use os Fragmentos de experiência:
 Sem Fragmentos de experiência, o autor precisaria copiar e colar esse fragmento. Criar e manter essa experiências de copiar/colar é um processo demorado e pode causar erros feitos pelo usuário.
 Os fragmentos de experiência eliminam a necessidade de copiar/colar.
 * Para dar suporte ao caso de uso de CMS sem periféricos.
-Os autores desejam usar o AEM somente para criação, não para entrega ao cliente. Um sistema/ponto de contato de terceiros consumiria essa experiência e a entregaria ao usuário final.
+Os autores desejam usar o AEM somente para criação, não para entrega ao cliente. Um ponto de contato ou sistema de terceiros consumiria essa experiência e a entregaria para o usuário final.
 
 >[!NOTE]
 >
@@ -47,17 +47,17 @@ Os autores desejam usar o AEM somente para criação, não para entrega ao cli
 >
 >Fragmentos de experiência podem incluir conteúdo na forma de Fragmentos de conteúdo, mas não o contrário.
 >
->Para obter mais informações, consulte [Compreensão de fragmentos de conteúdo e fragmentos de experiência no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=pt-BR).
+>Para obter mais informações, consulte [Noções sobre os fragmentos de conteúdo e fragmentos de experiência do AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=pt-BR).
 
 >[!NOTE]
 >
->O acesso de gravação para fragmentos de experiência requer que a conta de usuário seja registrada no grupo:
+>O acesso de gravação para fragmentos de experiência exige que a conta de usuário seja registrada no grupo:
 >
 >* `experience-fragments-editors`
 >
 >Entre em contato com o administrador do sistema se tiver algum problema.
 
-## Quando você deve usar fragmentos de experiência?   {#when-should-you-use-experience-fragments}
+## Quando usar fragmentos de experiência?   {#when-should-you-use-experience-fragments}
 
 Fragmentos de experiência devem ser usados:
 
@@ -145,7 +145,7 @@ Para criar e configurar uma pasta para os Fragmentos de experiência, recomenda-
 >
 >Não é recomendável alterar os **Modelos permitidos** usando esse método, pois os modelos especificados podem ser substituídos na atualização.
 >
->Use esta caixa de diálogo somente para fins informativos.
+>Use esta caixa de diálogo apenas para fins informativos.
 
 1. Acesse o console **Fragmentos de experiência** necessário.
 
@@ -184,9 +184,9 @@ Para criar um fragmento de experiência:
 
 1. Insira as **Propriedades** do **Fragmento de experiência**.
 
-   É obrigatório ter um **título**. Se a variável **Nome** é deixada em branco e é derivada do **Título**.
+   É obrigatório ter um **título**. Se **Nome** for deixado em branco, ele será derivado do **Título**.
 
-   ![Propriedades do fragmento de experiência](/help/sites-cloud/authoring/assets/xf-04.png)
+   ![Propriedades de Fragmentos de experiência](/help/sites-cloud/authoring/assets/xf-04.png)
 
    >[!NOTE]
    >
@@ -196,7 +196,7 @@ Para criar um fragmento de experiência:
 
 1. Clique em **Criar**.
 
-   Uma mensagem é exibida. Selecionar:
+   Uma mensagem será exibida. Selecione:
 
    * **Concluído** para retornar ao console
    * **Abrir** para abrir o editor de fragmento
@@ -225,7 +225,7 @@ Por exemplo: `http://<host>:<port>/editor.html/content/experience-fragments/wknd
 
 ## Criação de uma variação de Fragmento de experiência {#creating-an-experience-fragment-variation}
 
-Você pode criar variações do Fragmento de experiência, dependendo das suas necessidades:
+É possível criar variações do Fragmento de experiência, dependendo das suas necessidades:
 
 1. Abra o fragmento para [edição](#editing-your-experience-fragment).
 1. Abra a guia **Variações**.
@@ -241,7 +241,7 @@ Você pode criar variações do Fragmento de experiência, dependendo das suas n
 
    * **Modelo**
    * **Título**
-   * **Nome** - se deixado em branco, é derivado do Título
+   * **Nome**: se deixado em branco, ele será derivado do Título
    * **Descrição**
    * **Tags de variação**
 
@@ -250,11 +250,11 @@ Você pode criar variações do Fragmento de experiência, dependendo das suas n
    ![Propriedades de variação](/help/sites-cloud/authoring/assets/xf-07.png)
 
 
-1. Confirmar com **Concluído**, a nova variação é mostrada no painel.
+1. Confirme com **Concluído**, a nova variação será mostrada no painel.
 
 ## Usar seu fragmento de experiência {#using-your-experience-fragment}
 
-Agora você pode usar seu fragmento de experiência ao criar suas páginas:
+Agora você poderá usar seu fragmento de experiência ao criar suas páginas:
 
 1. Abra qualquer página para edição.
 
@@ -279,7 +279,7 @@ Selecione um ou mais componentes para criar um bloco de construção para recicl
 
 ### Criar um bloco de construção {#creating-a-building-block}
 
-Para criar um novo Bloco de Construção:
+Para criar um novo Bloco de construção:
 
 1. No editor de Fragmento de experiência, selecione os componentes que deseja reutilizar:
 
@@ -293,13 +293,13 @@ Para criar um novo Bloco de Construção:
 
    ![Nomear bloco de construção](/help/sites-cloud/authoring/assets/xf-11.png)
 
-1. A variável **Bloco de construção** é exibido na guia à esquerda (**Local**) e pode ser selecionado para outras ações:
+1. O **Bloco de construção** será mostrado na guia esquerda (**Local**) e pode ser selecionado para mais ações:
 
    ![Bloco de construção no painel](/help/sites-cloud/authoring/assets/xf-12.png)
 
 #### Gerenciar um bloco de construção {#managing-a-building-block}
 
-O bloco de construção está visível na guia **Blocos de construção**. Para cada bloco, as seguintes ações estão disponíveis:
+O bloco de construção está visível na guia **Blocos de construção**. Para cada bloco, as seguintes ações estarão disponíveis:
 
 * **Acesse o mestre**: abra a variação da página raiz em uma nova guia
 * **Renomeie**
@@ -341,7 +341,7 @@ Para personalizar o fragmento:
 
    >[!NOTE]
    >
-   >As propriedades de personalização definidas em uma pasta são herdadas por todas as pastas secundárias por meio da subárvore e os Fragmentos de experiência (e variações) dentro dessa subárvore. Elas podem ser substituídas quebrando a herança.
+   >As propriedades de personalização definidas em uma pasta são herdadas por todas as pastas secundárias abaixo na subárvore e os Fragmentos de experiência (e variações) dentro dessa subárvore. Elas podem ser substituídas quebrando a herança.
 
 1. Abra a guia **Personalização** para definir e salvar suas configurações. Por exemplo, em uma pasta:
 
@@ -349,25 +349,29 @@ Para personalizar o fragmento:
 
    >[!CAUTION]
    >
-   >Quando um fragmento é incorporado em uma página do Sites e **Personalização** for configurada, então somente a versão de personalização da página será usada no tempo de renderização da página.
+   >Quando um fragmento é incorporado em uma página do Sites e a **Personalização** estiver configurada, então somente a versão da página com a personalização será usada na hora da renderização.
    >
    >Para que o direcionamento executado nos componentes de um fragmento funcione na renderização da página, as seguintes condições devem ser atendidas:
    >
    >O **Caminho do ContextHub** selecionado na guia **Personalização** deve ser:
    >
    >* o mesmo caminho que o configurado para a página em que o fragmento é renderizado
-   >Ou:
+   >
+   >  Ou:
+   >
    >* um caminho que contenha um subconjunto dos armazenamentos definidos no ContextHub configurado para a página
    >
-   > 
-O **Caminho dos segmentos** selecionado na guia **Personalização** deve ser:
+   >O **Caminho dos segmentos** selecionado na guia **Personalização** deve ser:
    >
-   * o mesmo caminho que o configurado para a página em que o fragmento é renderizado Ou
-   * um caminho que contenha um subconjunto dos segmentos configurados para a página
+   >* o mesmo caminho que o configurado para a página em que o fragmento é renderizado
+   >
+   >  Ou
+   >
+   >* um caminho que contenha um subconjunto dos segmentos configurados para a página
 
 ### Definição de direcionamento para seu Fragmento de experiência {#defining-targeting-experience-fragment}
 
-Depois que as propriedades de personalização são configuradas, o modo Direcionamento fica disponível quando o fragmento é aberto para edição.
+Após configurar as propriedades de personalização, o modo Direcionamento estará disponível quando o fragmento for aberto para edição.
 
 ![Editor de fragmento de experiência - Modo de direcionamento](/help/sites-cloud/authoring/assets/xf-targeting-mode.png)
 
@@ -390,9 +394,9 @@ Os detalhes são mostrados em todas as exibições do console **Fragmentos de ex
 
    >[!CAUTION]
    >
-   Essas guias são exibidas quando você abre **Propriedades** no console Fragmentos de experiência.
+   >Essas guias são exibidas quando você abre **Propriedades** no console Fragmentos de experiência.
    >
-   Se você clicar em **Abrir propriedades** ao editar um Fragmento de experiência, as [Propriedades da página](/help/sites-cloud/authoring/fundamentals/page-properties.md) apropriadas serão exibidas.
+   >Se você clicar em **Abrir propriedades** ao editar um Fragmento de experiência, as [Propriedades da página](/help/sites-cloud/authoring/fundamentals/page-properties.md) apropriadas serão exibidas.
 
    ![Propriedades do fragmento de experiência](/help/sites-cloud/authoring/assets/xf-17.png)
 
@@ -407,8 +411,8 @@ Os detalhes são mostrados em todas as exibições do console **Fragmentos de ex
    * **Cloud Services**
       * **Configuração na nuvem**
       * **Configurações do Cloud Service**
-      * **ID da Página do Facebook**
-      * **Pasta do Pinterest**
+      * **ID da página do Facebook**
+      * **Quadro do Pinterest**
    * **Referências**
       * Uma lista de referências
    * **Personalização**
@@ -418,11 +422,11 @@ Os detalhes são mostrados em todas as exibições do console **Fragmentos de ex
 
 ## A representação HTML simples {#the-plain-html-rendition}
 
-Usando o seletor `.plain.` no URL, você poderá acessar a representação HTML simples do navegador.
+Usando o seletor `.plain.` no URL, você poderá acessar a representação HTML simples a partir do navegador.
 
 >[!NOTE]
 >
-Embora isso esteja disponível diretamente no navegador, [o objetivo principal é permitir que outros aplicativos (por exemplo, aplicativos web de terceiros, implementações personalizadas de publicações de conteúdo para dispositivos móveis) acessem o conteúdo do Fragmento de experiência diretamente, usando apenas o URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
+>Embora isso esteja diretamente disponível no navegador, [o objetivo principal é permitir que outros aplicativos (por exemplo, aplicativos da Web de terceiros, implementações móveis personalizadas) acessem o conteúdo do fragmento de experiência diretamente, usando apenas o URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
 
 ## Publicação de fragmentos de experiência {#publishing-experience-fragments}
 
@@ -432,7 +436,7 @@ Como alternativa, também é possível [publicar para visualização](/help/site
 
 ## Exportar fragmentos de experiência {#exporting-experience-fragments}
 
-Por padrão, os Fragmentos de experiência são entregues no formato HTML. Isso pode ser usado por canais AEM e de terceiros.
+Por padrão, os fragmentos de experiência são entregues no formato HTML. Isso pode ser usado por canais do AEM e de terceiros.
 
 Para exportar para o Adobe Target, também é possível usar o JSON. Consulte:
 
