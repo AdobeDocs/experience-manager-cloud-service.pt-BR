@@ -1,9 +1,9 @@
 ---
 title: Configuração de regras CDN e WAF para filtrar o tráfego
 description: Usar as regras de firewall do CDN e do aplicativo da Web para filtrar o tráfego mal-intencionado
-source-git-commit: a9b8b4d6029d0975428b9cff04dbbec993d56172
+source-git-commit: 0f1ee0ec5fc2d084a6dfdc65d15a8497c23f11a2
 workflow-type: tm+mt
-source-wordcount: '2371'
+source-wordcount: '2391'
 ht-degree: 2%
 
 ---
@@ -310,17 +310,18 @@ data:
 {
 "timestamp": "2023-05-26T09:20:01+0000",
 "ttfb": 19,
-"cip": "147.160.230.112",
+"cli_ip": "147.160.230.112",
+"cli_country": "CH",
 "rid": "974e67f6",
-"ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
+"req_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
 "host": "example.com",
 "url": "/block-me",
-"req_mthd": "GET",
-"res_type": "",
+"method": "GET",
+"res_ctype": "",
 "cache": "PASS",
-"res_status": 406,
-"res_bsize": 3362,
-"server": "PAR",
+"status": 406,
+"res_age": 0,
+"pop": "PAR",
 "rules": "cdn=path-rule;waf=;action=blocked"
 }
 ```
@@ -329,17 +330,18 @@ data:
 {
 "timestamp": "2023-05-26T09:20:01+0000",
 "ttfb": 19,
-"cip": "147.160.230.112",
-"ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
+"cli_ip": "147.160.230.112",
+"cli_country": "CH",
+"req_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
 "rid": "974e67f6",
 "host": "example.com",
 "url": "/?sqli=%27%29%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL--%20fAPK",
-"req_mthd": "GET",
-"res_type": "image/png",
+"method": "GET",
+"res_ctype": "image/png",
 "cache": "PASS",
-"res_status": 406,
-"res_bsize": 3362,
-"server": "PAR",
+"status": 406,
+"res_age": 0,
+"pop": "PAR",
 "rules": "cdn=;waf=SQLI;action=blocked"
 }
 ```
@@ -352,15 +354,16 @@ Veja abaixo uma lista dos nomes de campo usados em logs CDN, juntamente com uma 
 |---|---|
 | *carimbo de data e hora* | A hora em que a solicitação foi iniciada, após o término do TLS |
 | *ttfb* | Abreviação de *Tempo até o Primeiro Byte*. O intervalo de tempo entre a solicitação iniciada até o ponto antes do corpo da resposta começar a ser transmitido. |
-| *cip* | O endereço IP do cliente. |
+| *cli_ip* | O endereço IP do cliente. |
+| *cli_country* | Duas letras [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) código alfa-2 do país do cliente. |
 | *rid* | O valor do cabeçalho da solicitação usado para identificar exclusivamente a solicitação. |
-| *ua* | O agente do usuário responsável por fazer uma determinada solicitação HTTP. |
+| *req_ua* | O agente do usuário responsável por fazer uma determinada solicitação HTTP. |
 | *host* | A autoridade à qual a solicitação se destina. |
 | *url* | O caminho completo, incluindo parâmetros de consulta. |
-| *req_mthd* | Método HTTP enviado pelo cliente, como &quot;GET&quot; ou &quot;POST&quot;. |
-| *res_type* | O Content-Type usado para indicar o tipo de mídia original do recurso |
+| *método* | Método HTTP enviado pelo cliente, como &quot;GET&quot; ou &quot;POST&quot;. |
+| *res_ctype* | O Content-Type usado para indicar o tipo de mídia original do recurso. |
 | *cache* | Estado do cache. Os valores possíveis são HIT, MISS ou PASS |
-| *res_status* | O código do status HTTP como um valor inteiro. |
-| *res_bsize* | Bytes de corpo enviados ao cliente na resposta. |
-| *servidor* | Centro de dados do servidor de cache CDN. |
+| *status* | O código do status HTTP como um valor inteiro. |
+| *res_age* | A quantidade de tempo (em segundos) que uma resposta foi armazenada em cache (em todos os nós). |
+| *pop* | Centro de dados do servidor de cache CDN. |
 | *regras* | O nome de qualquer regra correspondente, para regras CDN e regras waf.<br><br>As regras CDN correspondentes aparecem na entrada de log para todas as solicitações para o CDN, independentemente de ser uma ocorrência, transmissão ou erro de CDN.<br><br>Também indica se a correspondência resultou em um bloco. <br><br>Por exemplo, &quot;`cdn=;waf=SQLI;action=blocked`&quot;<br><br>Vazio se nenhuma regra for correspondente. |
