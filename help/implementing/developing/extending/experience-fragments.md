@@ -2,9 +2,9 @@
 title: Visão geral dos fragmentos de experiência
 description: Estender fragmentos de experiência do Adobe Experience Manager as a Cloud Service.
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 29d8d08899bb60b2bf3027ed32dbcdca3a73e671
 workflow-type: tm+mt
-source-wordcount: '1640'
+source-wordcount: '1646'
 ht-degree: 1%
 
 ---
@@ -42,6 +42,8 @@ Por exemplo:
 >[!NOTE]
 >
 >Os links sempre fazem referência à instância de publicação. Eles são destinados ao consumo por terceiros, de modo que o link é sempre chamado da instância de publicação, não da instância do autor.
+>
+>Para obter mais informações, consulte [Externalizar URLs](/help/implementing/developing/tools/externalizer.md).
 
 ![Representação de HTML simples](assets/xf-14.png)
 
