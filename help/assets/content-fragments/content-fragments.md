@@ -2,9 +2,9 @@
 title: Trabalho com fragmentos de conteúdo (Ativos - Fragmentos de conteúdo)
 description: Saiba como os fragmentos de conteúdo no Adobe Experience Manager (AEM) as a Cloud Service permitem projetar, criar, preparar e usar conteúdo independente de página, ideal para criação de páginas e entrega headless. Além disso, explica como eles podem ser usados junto com o MSM.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: 0706c4a466db1d360b27868e3ab5c320a3ba24f8
+source-git-commit: 9a7087979831ac08aed5f93df024f1c835a9fc08
 workflow-type: tm+mt
-source-wordcount: '2159'
+source-wordcount: '2171'
 ht-degree: 88%
 
 ---
@@ -114,7 +114,7 @@ Juntamente com os recursos de exportação em JSON dos componentes principais do
 
 Quando acessado por meio de **Assets** console, é possível usar o MSM e criar Live Copies para os fragmentos.
 
-Para obter mais detalhes, consulte [Reutilizar fragmentos de conteúdo usando o MSM para ativos](/help/assets/reuse-assets-using-msm.md).
+Para obter mais detalhes, consulte [Reutilizar fragmentos de conteúdo usando o MSM para ativos](/help/assets/reuse-assets-using-msm.md). Isso permite [herança](/help/assets/content-fragments/content-fragments-variations.md#inheritance) para variações e campos individuais dos fragmentos.
 
 >[!CAUTION]
 >
@@ -142,7 +142,7 @@ Fragmentos de conteúdo são uma estrutura de conteúdo que:
 * Podem [conter ou estar conectados a imagens](#fragments-with-visual-assets).
 * Podem usar [conteúdo intermediário](#in-between-content-when-page-authoring-with-content-fragments) quando referenciados em uma página.
 
-* São independentes do mecanismo de entrega (ou seja, página, canal).
+* São independentes do mecanismo de entrega (ou seja, a página ou canal).
 
 ### Fragmentos com ativos visuais {#fragments-with-visual-assets}
 
@@ -289,7 +289,7 @@ Para usar os Fragmentos de conteúdo para a criação de páginas, também é ne
 
    * Fundamental para entregar o fragmento no formato HTML e/ou JSON.
    * Obrigatório para [fazer referência ao fragmento em uma página](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
-   * Responsável pela disposição e entrega de um fragmento; ou seja, canais.
+   * Responsável pelo layout e entrega de um fragmento (ou seja, os canais).
    * Os fragmentos precisam de um ou mais componentes dedicados para definir o layout e fornecer alguns ou todos os elementos/variações e conteúdo associado.
    * Arrastar um fragmento para uma página na criação associará automaticamente o componente necessário.
 

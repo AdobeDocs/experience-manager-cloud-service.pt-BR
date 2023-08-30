@@ -2,10 +2,10 @@
 title: Variações - Criação dos fragmentos de conteúdo (Ativos - Fragmentos de conteúdo)
 description: Entenda como as variações podem tornar o conteúdo headless no AEM ainda mais flexível, permitindo criar conteúdo para o fragmento e, em seguida, criar variações desse conteúdo de acordo com a finalidade.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 9a7087979831ac08aed5f93df024f1c835a9fc08
 workflow-type: tm+mt
-source-wordcount: '2435'
-ht-degree: 88%
+source-wordcount: '2516'
+ht-degree: 92%
 
 ---
 
@@ -88,7 +88,7 @@ O editor de texto em tela cheia fornece:
 
 ### Ações {#actions}
 
-As seguintes ações também estão disponíveis (para todas as [formatos](#formats)) quando o editor de tela cheia (ou seja, texto multilinha) estiver aberto:
+As seguintes ações também estão disponíveis (para todos os [formatos](#formats)) quando o editor de tela cheia (ou seja, texto multilinha) está aberto:
 
 * Selecionar o [formato](#formats) ([Rich text](#rich-text), [Texto sem formatação](#plain-text) ou [Markdown](#markdown))
 
@@ -322,7 +322,7 @@ Anotações:
 
 Para facilitar o processo de criação de fragmentos de conteúdo, você pode adicionar [Ativos](/help/assets/manage-digital-assets.md) (imagens) diretamente no fragmento.
 
-Eles são adicionados à sequência de parágrafo do fragmento sem qualquer formatação; a formatação pode ser feita quando o [o fragmento é usado/referenciado em uma página](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+Eles serão adicionados à sequência de parágrafo do fragmento sem qualquer formatação; a formatação pode ser feita quando o [fragmento for usado/referenciado em uma página](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 
 >[!CAUTION]
 >
@@ -351,14 +351,14 @@ Existem vários métodos de adicionar [imagens](/help/assets/content-fragments/c
    >[!CAUTION]
    >
    Se, após adicionar um ativo, você alterar o formato para:
-   * **Texto sem formatação**: o ativo é completamente perdido do fragmento.
+   * **Texto simples:** o ativo será completamente removido do fragmento.
    * **Marcação**: o ativo não estará visível, mas ainda estará lá ao retornar para **Rich Text**.
 
 ### Inserir um fragmento de conteúdo no fragmento {#inserting-content-fragment-into-your-fragment}
 
 Para facilitar o processo de criação de fragmentos de conteúdo, também é possível adicionar outro fragmento de conteúdo ao seu fragmento.
 
-Eles são adicionados como referência, no local atual no fragmento.
+Eles serão adicionados como referência no local atual do fragmento.
 
 >[!NOTE]
 >
@@ -391,8 +391,33 @@ Existem vários métodos de adicionar [imagens](/help/assets/content-fragments/c
    >[!CAUTION]
    >
    Se, após adicionar uma referência a outro fragmento, você alterar o formato para:
-   * **Texto sem formatação**: a referência é completamente removida do fragmento.
+   >
+   * **Texto sem formatação**: a referência será completamente removida do fragmento.
    * **Markdown**: a referência permanecerá.
+
+## Herança {#inheritance}
+
+Herança é o mecanismo em que o conteúdo pode ser enviado automaticamente de um fragmento para outro. Campos herdados e variações podem ser o produto de [Gerenciamento de vários sites](/help/assets/content-fragments/content-fragments.md#reusing-content-fragments-with-msm-assets).
+
+Você pode cancelar (e depois reativar) a herança. Dependendo do contexto, isso pode estar disponível para uma variação ou um campo individual, se o fragmento fizer parte de uma live copy.
+
+![Um fragmento de conteúdo que mostra a relação de herança](/help/assets/content-fragments/assets/cfm-variations-inheritance.png)
+
+Por exemplo:
+
+* Cancelar herança
+
+  ![Botão Cancelar herança](/help/assets/content-fragments/assets/editing-cancel-inheritance.png)
+
+* Reativar herança (se a herança já estiver cancelada)
+
+  ![Botão Reativar herança](/help/assets/content-fragments/assets/editing-reenable-inheritance.png)
+
+<!--
+* Rollout action is also available in Live Copy source
+
+  ![Rollout button](/help/assets/content-fragments/assets/editing-rollout.png)
+-->
 
 ## Gerenciamento de variações {#managing-variations}
 
@@ -406,11 +431,11 @@ Para criar uma nova variação:
 1. Selecione **Variações** na barra de ícones, no painel lateral.
 1. Selecione **Criar variação**.
 1. Uma caixa de diálogo será aberta. Especifique o **Título** e a **Descrição** da nova variação.
-1. Selecionar **Adicionar**; o fragmento **Principal** é copiado para a nova variação, que agora está aberta para [edição](#editing-a-variation).
+1. Selecione **Adicionar**; o fragmento **principal** será copiado para a nova variação, que agora está aberta para [edição](#editing-a-variation).
 
    >[!NOTE]
    >
-   Ao criar uma nova variação, é sempre o **Principal** que é copiado, não a variação que está aberta no momento.
+   Ao criar uma nova variação, é sempre o **principal** que é copiado, não a variação que está aberta no momento.
 
    >[!NOTE]
    >
@@ -431,7 +456,7 @@ Para renomear uma variação existente:
 
 1. Abra o fragmento e selecione **Variações** no painel lateral.
 1. Selecione a variação necessária.
-1. Selecionar **Renomear** do **Ações** menu suspenso.
+1. Selecione **Renomear** no menu suspenso de **Ações**.
 
 1. Digite o novo **Título** e/ou **Descrição** na caixa de diálogo resultante.
 
@@ -447,7 +472,7 @@ Para excluir uma variação existente:
 
 1. Abra o fragmento e selecione **Variações** no painel lateral.
 1. Selecione a variação necessária.
-1. Selecionar **Excluir** do **Ações** menu suspenso.
+1. Selecione **Excluir** no menu suspenso de **Ações**.
 
 1. Confirme a ação de **Exclusão** na caixa de diálogo.
 
@@ -465,7 +490,7 @@ Ao editar uma variação, você tem acesso à ação para sincronizar o elemento
 >
 A sincronização só está disponível para copiar alterações *do **Principal**para a variação*.
 >
-Somente o elemento atual da variação é sincronizado.
+Somente o elemento atual da variação será sincronizado.
 >
 A sincronização só funciona no tipo de dados **Texto de várias linhas**.
 >
@@ -475,7 +500,7 @@ A transferência de alterações *de uma variação para o **Principal*** não e
 
 1. Selecione uma variação específica e, em seguida, a ação de sincronização apropriada:
 
-   * o **Ações** seletor suspenso - **Sincronizar elemento atual com o principal**
+   * no seletor suspenso de **Ações** - **Sincronizar elemento atual com o principal**
 
      ![sincronização com o Principal](assets/cfm-variations-11a.png)
 
@@ -491,4 +516,4 @@ A transferência de alterações *de uma variação para o **Principal*** não e
 
    ![sincronização com o Principal](assets/cfm-variations-11c.png)
 
-1. Selecionar **Sincronizar**, a variação é atualizada e mostrada.
+1. Selecione **Sincronizar**; a variação será atualizada e mostrada.
