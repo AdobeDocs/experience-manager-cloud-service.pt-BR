@@ -2,10 +2,10 @@
 title: Notificações
 description: Saiba como receber informações sobre implantações de pipeline usando o sistema de notificação da Adobe Experience Cloud.
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: d95b432f74a7b52efc9fd1cf0e380c3f5237503c
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 96%
+source-wordcount: '589'
+ht-degree: 89%
 
 ---
 
@@ -54,13 +54,13 @@ As assinaturas definem para quais produtos você recebe notificações e quais n
 
 ![Assinaturas de notificação](assets/notifications-subscriptions.png)
 
-Por padrão, você receberá todas as notificações para todos os produtos. Clique em **Personalizar** ao lado de um produto para definir os tipos de notificações que você recebe para esse produto.
+Por padrão, você receberá todas as notificações para todos os produtos, tanto no aplicativo quanto por email. Clique na divisa ao lado do nome de um produto para revelar as opções detalhadas e definir os tipos de notificações que você recebe para esse produto. Ou marque ou desmarque as opções no nível do produto para marcar/desmarcar todas as opções do produto.
 
 ![Personalização de assinatura de notificação](assets/notifications-subscriptions-customize.png)
 
 ### Prioridade {#priority}
 
-Os alertas de prioridade são marcados com um **ALTA** tag e podem ser configuradas para serem recebidas exclusivamente como alertas. Na seção **Prioridade**, você pode definir quais categorias se qualificam como notificações de prioridade.
+Os alertas de prioridade serão marcados com uma tag **ALTA** e podem ser configurados para serem recebidos exclusivamente como alertas. Na seção **Prioridade**, você pode definir quais categorias se qualificam como notificações de prioridade.
 
 ![Prioridade de notificação](assets/notifications-priority.png)
 
