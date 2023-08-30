@@ -2,10 +2,10 @@
 title: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 385b7708fab15b3f0e8740a0ca2c612b44381742
+source-git-commit: 22ed74b307b9eb4c6c2f72ac2a34e2ab6d30a85c
 workflow-type: tm+mt
-source-wordcount: '296'
-ht-degree: 43%
+source-wordcount: '284'
+ht-degree: 45%
 
 ---
 
@@ -23,7 +23,6 @@ A Ativação de recursos 2023.9.0 fornecerá o conjunto completo de recursos par
 
 - GRANITE-46784: adicione a opção para desativar BearerAuthenticationHandler
 - GRANITE-36205: atualize a versão interna de lançamento do oak para a mais recente
-- GRANITE-43908: Jackson-databind-2.13.4.jar incorpora o jackson-databind vulnerável
 - GRANITE-47059: Remover o pacote SSL do Granite Jetty
 - ASSETS-26713: link externo da interface para toque para o novo painel da interface da experiência - integração de shell unificado e interface otimizada para ui-touch atualizada
 - SKYOPS-63302: Atualização de com.adobe.granite:com.adobe.granite.auth.saml para v1.0.54
@@ -39,7 +38,6 @@ A Ativação de recursos 2023.9.0 fornecerá o conjunto completo de recursos par
 - SKYOPS-63290: Correção da evolução incorreta de compartimentos
 - SKYOPS-54607: Cálculo de carga de servidor Ratelimiter incorreto para a solicitação que falhou
 - ASSETS-27648: ContentModelIT falha ao ler arquivos de exclusão de outros pacotes
-- GRANITE-43160: manipulador de erros do Sling substitui o tipo de conteúdo
 - GRANITE-43744: o Sling Authenticator não funciona corretamente se houver uma configuração incorreta com requisito de autenticação e caminho personalizado
 - GRANITE-46419: problema de integração do AEM com Auth0 Idp
 - GRANITE-46292: A configuração SAML do Okta não está funcionando após a atualização do AEM Cloud
