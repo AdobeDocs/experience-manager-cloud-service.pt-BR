@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 589ed1e1befa84c0caec0eed986c3e1a717ae602
+source-git-commit: 069103e7a82123bff28b4aa6e9d718c12e8496e3
 workflow-type: tm+mt
-source-wordcount: '5162'
+source-wordcount: '5372'
 ht-degree: 7%
 
 ---
@@ -60,6 +60,20 @@ Você pode descobrir os ativos desejados mais rapidamente na página de resultad
 ![Veja o número aproximado de ativos sem filtrar os resultados da pesquisa nos aspectos de pesquisa.](assets/asset_search_results_in_facets_filters.png)
 
 *Figura: veja o número aproximado de ativos sem filtrar os resultados da pesquisa nos aspectos de pesquisa.*
+
+O Experience Manager Assets exibe contagens de facetas para duas propriedades por padrão:
+
+* Tipo de ativo (jcr:content/metadata/dc:format)
+
+* Status de aprovação (jcr:content/metadata/dam:status)
+
+A partir de agosto de 2023, o Experience Manager Assets inclui uma nova versão 9 do `damAssetLucene` índice. As versões anteriores, `damAssetLucene-8` e abaixo, use o `statistical` para verificar o controle de acesso em uma amostra dos itens para cada contagem de facetas de pesquisa.
+
+`damAssetLucene-9` altera o comportamento da contagem facetada da consulta do Oak para não avaliar mais o controle de acesso nas contagens facetadas retornadas pelo índice de pesquisa subjacente, o que resulta em tempos de resposta de pesquisa mais rápidos. Como resultado, os valores de contagem de facetas podem ser apresentados aos usuários, o que inclui ativos aos quais eles não têm acesso. Esses usuários não podem acessar, baixar ou ler nenhum outro detalhe desses ativos, incluindo seus caminhos, ou obter mais informações sobre eles.
+
+Se você precisar mudar para o comportamento anterior (`statistical` ), consulte [Pesquisa e indexação de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=pt-BR) para criar uma versão personalizada do `damAssetLucene-9` índice. O Adobe não recomenda a mudança para o `secure` devido ao impacto nos tempos de resposta de pesquisa com conjuntos de resultados grandes.
+
+Para obter mais informações sobre os recursos facetados do Oak, incluindo uma descrição detalhada desses modos, consulte [este artigo](https://jackrabbit.apache.org/oak/docs/query/lucene.html#facets).
 
 ## Pesquisar sugestões ao digitar {#searchsuggestions}
 
@@ -171,7 +185,7 @@ Você pode pesquisar ativos com base em valores exatos de campos de metadados, c
 | No prazo | AAAA-MM-DDTHH |
 | Tempo desligado | offtime:AAAA-MM-DDTHH |
 | Intervalo de tempo(expira dateontime,offtime) | campo de faceta : limite inferior.limite superior |
-| Caminho  | /content/dam/&lt;folder name=&quot;&quot;> |
+| Caminho | /content/dam/&lt;folder name=&quot;&quot;> |
 | Título do PDF | pdftitle:&quot;Documento Adobe&quot; |
 | Assunto | assunto: &quot;Treinamento&quot; |
 | Tags | tags: &quot;Localização E Viagem&quot; |
@@ -282,7 +296,7 @@ A funcionalidade de pesquisa pode ter limitações de desempenho nos seguintes c
 * A pesquisa de texto completo é compatível com operadores como `-` e `^`. Para pesquisar essas letras como literais de cadeia de caracteres, coloque a expressão de pesquisa entre aspas duplas. Por exemplo, use `"Notebook - Beauty"` em vez de `Notebook - Beauty`.
 * Se os resultados da pesquisa forem muitos, limite o [escopo da pesquisa](#scope) para zerar os ativos desejados. Funciona melhor quando você tem alguma ideia de como procurar melhor os ativos desejados, por exemplo, tipo de arquivo específico, local específico, metadados específicos e assim por diante.
 
-* **Marcação**: as tags ajudam a categorizar ativos que podem ser navegados e pesquisados com mais eficiência. A marcação ajuda a propagar a taxonomia apropriada para outros usuários e workflows. [!DNL Experience Manager] O oferece métodos para marcar ativos automaticamente usando os serviços artificialmente inteligentes da Adobe Sensei, que melhoram ainda mais a marcação de ativos com uso e treinamento. Ao pesquisar ativos, as tags inteligentes são fatoradas em. Funciona junto com a funcionalidade de pesquisa integrada. Consulte [comportamento de pesquisa](#searchbehavior). Para otimizar a ordem em que os resultados da pesquisa são exibidos, você pode [aumentar a classificação de pesquisa](#searchrank) de alguns ativos selecionados.
+* **Marcação**: as tags ajudam a categorizar ativos que podem ser navegados e pesquisados com mais eficiência. A marcação ajuda a propagar a taxonomia apropriada para outros usuários e fluxos de trabalho. [!DNL Experience Manager] O oferece métodos para marcar ativos automaticamente usando os serviços artificialmente inteligentes da Adobe Sensei, que melhoram ainda mais a marcação de ativos com uso e treinamento. Ao pesquisar ativos, as tags inteligentes são fatoradas em. Funciona junto com a funcionalidade de pesquisa integrada. Consulte [comportamento de pesquisa](#searchbehavior). Para otimizar a ordem em que os resultados da pesquisa são exibidos, você pode [aumentar a classificação de pesquisa](#searchrank) de alguns ativos selecionados.
 
 * **Indexação**: somente metadados e ativos indexados são retornados nos resultados da pesquisa. Para obter melhor cobertura e desempenho, garanta a indexação adequada e siga as práticas recomendadas. Consulte [indexação](#searchindex).
 
@@ -460,7 +474,7 @@ Você pode criar coleções inteligentes com base nos critérios de pesquisa. No
 
 Crie uma versão para os ativos exibidos nos resultados da pesquisa. Selecione o ativo e clique em **[!UICONTROL Criar]** > **[!UICONTROL Versão]**. Adicione um rótulo opcional ou um comentário e clique em **[!UICONTROL Criar]**. Você também pode selecionar vários ativos e criar versões para eles simultaneamente.
 
-### Criar um workflow {#create-workflow}
+### Criar um fluxo de trabalho {#create-workflow}
 
 Semelhante ao recurso de criação de versão, também é possível criar um fluxo de trabalho para os ativos exibidos nos resultados da pesquisa. Selecione os ativos e clique em **[!UICONTROL Criar]** > **[!UICONTROL Fluxo de trabalho]**. Selecione o modelo de fluxo de trabalho, especifique um título para o fluxo de trabalho e clique em **[!UICONTROL Início]**.
 
