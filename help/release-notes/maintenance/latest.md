@@ -2,9 +2,9 @@
 title: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 22ed74b307b9eb4c6c2f72ac2a34e2ab6d30a85c
+source-git-commit: bb7d8145eb954557d185b58f884532f8f08c5a54
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '286'
 ht-degree: 45%
 
 ---
@@ -23,12 +23,10 @@ A Ativação de recursos 2023.9.0 fornecerá o conjunto completo de recursos par
 
 - GRANITE-46784: adicione a opção para desativar BearerAuthenticationHandler
 - GRANITE-36205: atualize a versão interna de lançamento do oak para a mais recente
-- GRANITE-47059: Remover o pacote SSL do Granite Jetty
 - ASSETS-26713: link externo da interface para toque para o novo painel da interface da experiência - integração de shell unificado e interface otimizada para ui-touch atualizada
 - SKYOPS-63302: Atualização de com.adobe.granite:com.adobe.granite.auth.saml para v1.0.54
 - GRANITE-46634: atualização para cliente de eventos 1.4.0
-- GRANITE-46788: atualização das bibliotecas do Apache Commons
-- GRANITE-29211: Atualização da ferramenta para o modelo de recurso Sling 2.0
+- GRANITE-46788: Atualização de bibliotecas para Apache Commons IO 2.13.0, Commons Lang 3.13.0, Commons Code 1.16.0 e Commons Compress 1.23.0
 - GRANITE-46705: atualização para Apache Felix Http Jetty 4.1.14
 - GRANITE-46631: atualização da versão Jackrabbit para 2.20.11
 - SKYOPS-61895: Atualização para Jackrabbit Filevault 3.7.0
@@ -41,6 +39,7 @@ A Ativação de recursos 2023.9.0 fornecerá o conjunto completo de recursos par
 - GRANITE-43744: o Sling Authenticator não funciona corretamente se houver uma configuração incorreta com requisito de autenticação e caminho personalizado
 - GRANITE-46419: problema de integração do AEM com Auth0 Idp
 - GRANITE-46292: A configuração SAML do Okta não está funcionando após a atualização do AEM Cloud
+- GRANITE-47059: Remover o pacote SSL do Granite Jetty
 
 ### Problemas conhecidos {#known-issues-13239}
 
