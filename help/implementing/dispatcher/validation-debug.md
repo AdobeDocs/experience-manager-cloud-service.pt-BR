@@ -3,9 +3,9 @@ title: Validação e depuração usando ferramentas do Dispatcher
 description: Saiba mais sobre validação local, depuração, estrutura de arquivos do modo flexível e como migrar do modo herdado para o modo flexível.
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: fccce4fed057b9cf20825bce043b3ec95c3a5ab8
 workflow-type: tm+mt
-source-wordcount: '2860'
+source-wordcount: '2988'
 ht-degree: 1%
 
 ---
@@ -107,6 +107,28 @@ Se você deseja fazer a correspondência exata do host porque você tem vários 
 </VirtualHost>
 ```
 
+* `conf.d/enabled_vhosts/<CUSTOMER_CHOICE>.vhost`
+
+Essa pasta contém links simbólicos relativos para arquivos em conf.dispatcher.d/available_vhosts.
+
+Exemplo de comandos necessários para criar esses links simbólicos:
+
+Apple® macOS, Linux e WSL
+
+```
+ln -s ../available_vhosts/wknd.vhost wknd.vhost
+```
+
+Microsoft® Windows
+
+```
+mklink wknd.vhost ..\available_vhosts\wknd.vhost
+```
+
+>[!NOTE]
+>
+> Ao trabalhar com links simbólicos no Windows, você deve executar um prompt de comando elevado, no Subsistema do Windows para Linux ou ter o [Criar links simbólicos](https://learn.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/create-symbolic-links) Privilégio atribuído.
+
 * `conf.d/rewrites/rewrite.rules`
 
 O arquivo é incluído de dentro do `.vhost` arquivos. Ele tem um conjunto de regras de regravação para `mod_rewrite`.
@@ -122,6 +144,28 @@ O arquivo é incluído de dentro do `dispatcher_vhost.conf` arquivo. Você pode 
 * `conf.dispatcher.d/available_farms/<CUSTOMER_CHOICE>.farm`
 
 Você pode ter um ou mais desses arquivos, que contêm farms para corresponder a nomes de host e permitem que o módulo Dispatcher manipule cada farm com regras diferentes. Os arquivos são criados no `available_farms` e habilitado com um link simbólico na variável `enabled_farms` diretório. No `.farm` arquivos, outros arquivos como filtros, regras de cache e outros são incluídos.
+
+* `conf.dispatcher.d/enabled_farms/<CUSTOMER_CHOICE>.farm`
+
+Essa pasta contém links simbólicos relativos para arquivos em conf.dispatcher.d/available_farms.
+
+Exemplo de comandos necessários para criar esses links simbólicos:
+
+Apple® macOS, Linux e WSL
+
+```
+ln -s ../available_farms/wknd.farm wknd.farm
+```
+
+Microsoft® Windows
+
+```
+mklink wknd.farm ..\available_farms\wknd.farm
+```
+
+>[!NOTE]
+>
+> Ao trabalhar com links simbólicos no Windows, você deve executar um prompt de comando elevado, no Subsistema do Windows para Linux ou ter o [Criar links simbólicos](https://learn.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/create-symbolic-links) Privilégio atribuído.
 
 * `conf.dispatcher.d/cache/rules.any`
 
