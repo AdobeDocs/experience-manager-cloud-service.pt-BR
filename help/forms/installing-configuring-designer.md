@@ -1,9 +1,9 @@
 ---
 title: Baixe e instale o Forms Designer
 description: Você pode usar o Forms Designer para criar modelos de formulário XDP e PDF que servem como modelo para um Documento de registro. O Designer está disponível com o [!DNL AEM Forms] licença.
-source-git-commit: a635a727e431a73086a860249e4f42d297882298
+source-git-commit: 34d966f6550cb9e507c751b580b16a3043137255
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '343'
 ht-degree: 1%
 
 ---
@@ -17,17 +17,9 @@ O Designer é uma ferramenta de design gráfico do tipo apontar-e-clicar que sim
 
 Para instalar a versão mais recente do AEM Forms Designer de 64 ou 32 bits, você precisa do seguinte software e hardware mínimo para instalar e configurar o Designer:
 
->[!NOTE]
->
-> Se estiver usando o Designer de 32 bits, antes de instalar o Designer de 64 bits, desinstale o Designer de 32 bits para evitar problemas na instalação do Designer de 64 bits.
-
-<!--
->[!BEGINTABS]
-
->[!TAB 64-bit OS (Recommended)] -->
-
 +++ Designer de 64 bits (recomendado)
 
+* Antes de instalar a versão de 64 bits do Forms Designer, desinstale a versão de 32 bits do Designer.
 * [!DNL Microsoft® Windows® 2016 Server] ou [!DNL Microsoft® Windows® 2019 Server], e [!DNL Microsoft® Windows® 10]
 * Mínimo de 2 GB de RAM
 * 20 GB de espaço em disco
