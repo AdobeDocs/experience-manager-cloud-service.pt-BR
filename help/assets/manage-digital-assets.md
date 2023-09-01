@@ -6,9 +6,9 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 5b61b60a94b944a747232b238c3ce48195a5a212
+source-git-commit: c63f621f2526f05c8555acdac77a4c05a473c95d
 workflow-type: tm+mt
-source-wordcount: '4508'
+source-wordcount: '4481'
 ht-degree: 11%
 
 ---
@@ -121,19 +121,18 @@ Para visualizar um ativo, siga estas etapas.
 
 1. Para programar uma data/hora específica para a ativação do ativo, use o seletor de datas ao lado do campo **[!UICONTROL No horário]**.
 
-   ![chlimage_1-217](assets/chlimage_1-217.png)
+   ![Seletor de data](assets/date-picker.png)
 
 1. Para desativar o ativo após uma duração específica, escolha a data/hora de desativação no seletor de datas ao lado da variável **[!UICONTROL Tempo desligado]** campo. A data de desativação deve ser posterior à data de ativação de um ativo. Depois que a variável [!UICONTROL Tempo desligado], um ativo e suas representações não estão disponíveis na interface da Web do Assets ou por meio da API HTTP.
 
-   ![chlimage_1-218](assets/chlimage_1-218.png)
-
+   <!--![chlimage_1-218](assets/chlimage_1-218.png)
 1. No **[!UICONTROL Tags]** selecione uma ou mais tags. Para adicionar uma tag personalizada, digite o nome da tag na caixa e selecione o `Enter` chave. A nova tag é salva em [!DNL Experience Manager].
 
    O YouTube exige que as tags sejam publicadas e tenham um link para o YouTube (se um link adequado puder ser encontrado).
 
    >[!NOTE]
    >
-   >Para criar tags, você deve ter permissão de gravação em `/content/cq:tags/default` no repositório CRX.
+   > Para criar tags, você deve ter permissão de gravação em `/content/cq:tags/default` no repositório CRX.
 
 1. Toque/clique **[!UICONTROL Salvar e fechar]**.
 
@@ -181,7 +180,7 @@ As outras propriedades e informações de metadados são retidas. Uma cópia par
 
 1. Clique em **[!UICONTROL Colar]** ícone de ativo na barra de ferramentas. Os ativos são copiados para este local.
 
-   ![chlimage_1-219](assets/chlimage_1-219.png)
+   <!--![chlimage_1-219](assets/chlimage_1-219.png)-->
 
    >[!NOTE]
    >
@@ -229,7 +228,7 @@ As outras propriedades e informações de metadados são retidas. Uma cópia par
 
 1. Toque/clique no ativo para abrir a página do ativo.
 
-   ![chlimage_1-220](assets/chlimage_1-220.png)
+   <!--![chlimage_1-220](assets/chlimage_1-220.png)-->
 
 1. Toque/clique no ícone GlobalNav e selecione **[!UICONTROL Representações]** da lista.
 
@@ -255,7 +254,7 @@ As outras propriedades e informações de metadados são retidas. Uma cópia par
 
    Navegue até a página de detalhes do ativo e toque/clique no ícone **[!UICONTROL Adicionar representação]** na barra de ferramentas para fazer upload de uma nova representação do ativo.
 
-   ![chlimage_1-221](assets/chlimage_1-221.png)
+   <!--![chlimage_1-221](assets/chlimage_1-221.png)-->
 
    >[!NOTE]
    >
@@ -267,7 +266,7 @@ As outras propriedades e informações de metadados são retidas. Uma cópia par
 
    Da mesma forma, é possível personalizar a imagem da página Anotação ao sobrepor `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
 
-   ![chlimage_1-222](assets/chlimage_1-222.png)
+   <!--![chlimage_1-222](assets/chlimage_1-222.png)-->
 
    Para configurar as dimensões de representação para um ativo de vídeo, navegue até o `videopicker` no repositório CRX no local `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`, sobreponha o nó e edite a propriedade apropriada.
 
@@ -451,11 +450,11 @@ As anotações de vídeo são suportadas apenas em navegadores com formatos de v
    * [Ações rápidas](#quick-actions)
    * Na barra de ferramentas, depois de selecionar o ativo ou navegar até a página do ativo
 
-   ![chlimage_1-233](assets/chlimage_1-233.png)
+   <!--![chlimage_1-233](assets/chlimage_1-233.png)-->
 
 1. Adicione um comentário na caixa **[!UICONTROL Comentário]** na parte inferior da linha do tempo. Como alternativa, marque uma área na imagem e adicione uma anotação na caixa de diálogo **[!UICONTROL Adicionar anotação]**.
 
-   ![chlimage_1-234](assets/chlimage_1-234.png)
+<!-- ![chlimage_1-234](assets/chlimage_1-234.png)-->
 
 <!--
 1. To notify a user about an annotation, specify the email address of the user and add the comment. For example, to notify Aaron MacDonald about an annotation, enter @aa. Hints for all matching users is displayed in a list. Select Aaron's email address from the list to tag her with the comment. Similarly, you can tag more users anywhere within the annotation or before or after it.
@@ -465,11 +464,11 @@ As anotações de vídeo são suportadas apenas em navegadores com formatos de v
 >
 >Para um usuário não administrador, as sugestões serão exibidas somente se o usuário tiver permissões de Leitura em `/home` no CRXDE.
 
-![chlimage_1-235](assets/chlimage_1-235.png)
+<!--![chlimage_1-235](assets/chlimage_1-235.png)-->
 
 1. Depois de adicionar a anotação, clique em **[!UICONTROL Adicionar]** para salvá-lo. Uma notificação para a anotação é enviada a Aaron.
 
-   ![chlimage_1-236](assets/chlimage_1-236.png)
+   <!--![chlimage_1-236](assets/chlimage_1-236.png)-->
 
    >[!NOTE]
    >
@@ -484,11 +483,11 @@ As anotações de vídeo são suportadas apenas em navegadores com formatos de v
 
 1. Para escolher uma cor diferente e diferenciar os usuários, clique/toque no ícone Perfil e clique/toque em **[!UICONTROL Minhas preferências]**.
 
-   ![chlimage_1-237](assets/chlimage_1-237.png)
+   <!--![chlimage_1-237](assets/chlimage_1-237.png)-->
 
    Especifique a cor desejada na caixa **[!UICONTROL Cor da anotação]** e clique/toque em **[!UICONTROL Aceitar]**.
 
-   ![chlimage_1-238](assets/chlimage_1-238.png)
+<!-- ![chlimage_1-238](assets/chlimage_1-238.png)-->
 
 >[!NOTE]
 >
@@ -508,15 +507,15 @@ Você pode exibir somente uma anotação por vez.
 
 1. Toque/clique no ícone GlobalNav e escolha **[!UICONTROL Linha do tempo]** da lista.
 
-   ![chlimage_1-239](assets/chlimage_1-239.png)
+   <!--![chlimage_1-239](assets/chlimage_1-239.png)-->
 
 1. Na lista **[!UICONTROL Exibir todos]** na linha do tempo, selecione **[!UICONTROL Comentários]** para filtrar os resultados com base em anotações.
 
-   ![chlimage_1-240](assets/chlimage_1-240.png)
+   <!--![chlimage_1-240](assets/chlimage_1-240.png)-->
 
    Toque/clique em um comentário no **[!UICONTROL Linha do tempo]** para exibir a anotação correspondente na imagem.
 
-   ![chlimage_1-241](assets/chlimage_1-241.png)
+   <!--![chlimage_1-241](assets/chlimage_1-241.png)-->
 
    Toque/clique **[!UICONTROL Excluir]**, para excluir um comentário específico.
 
@@ -540,29 +539,29 @@ Para imprimir as anotações e o status da revisão, toque/clique no **[!UICONTR
 
 1. Para imprimir anotações específicas, selecione as anotações na linha do tempo.
 
-   ![chlimage_1-242](assets/chlimage_1-242.png)
+   <!--![chlimage_1-242](assets/chlimage_1-242.png)-->
 
    Para imprimir somente o status da revisão, selecione-o na linha do tempo.
 
-   ![chlimage_1-243](assets/chlimage_1-243.png)
+   <!--![chlimage_1-243](assets/chlimage_1-243.png)-->
 
 1. Toque/clique no **[!UICONTROL Imprimir]** ícone na barra de ferramentas.
 
-   ![chlimage_1-244](assets/chlimage_1-244.png)
+   <!--![chlimage_1-244](assets/chlimage_1-244.png)-->
 
 1. Na caixa de diálogo Imprimir, escolha a posição em que deseja que o status de anotações/revisão seja exibido no PDF. Por exemplo, se você quiser que as anotações/status sejam impressas na parte superior direita da página que contém a imagem impressa, use o **Superior esquerdo** configuração. Ela é selecionada por padrão.
 
-   ![chlimage_1-245](assets/chlimage_1-245.png)
+   <!--![chlimage_1-245](assets/chlimage_1-245.png)-->
 
    É possível escolher outras configurações, dependendo da posição em que deseja que as anotações/status apareçam no PDF impresso. Se desejar que as anotações/status apareçam em uma página separada do ativo impresso, escolha **[!UICONTROL Próxima página]**.
 
 1. Clique em **[!UICONTROL Imprimir]**. Dependendo da opção escolhida na etapa 2, o PDF gerado exibirá as anotações/os status na posição especificada. Por exemplo, se optar por imprimir as anotações e o status da revisão usando a configuração **Superior esquerdo**, o resultado será semelhante ao arquivo PDF mostrado aqui.
 
-   ![chlimage_1-246](assets/chlimage_1-246.png)
+   <!--![chlimage_1-246](assets/chlimage_1-246.png)-->
 
 1. Baixe ou imprima o PDF usando as opções no canto superior direito.
 
-   ![chlimage_1-247](assets/chlimage_1-247.png)
+   <!--![chlimage_1-247](assets/chlimage_1-247.png)-->
 
    Para modificar a aparência do arquivo de PDF renderizado, por exemplo, a cor da fonte, o tamanho e o estilo, a cor do plano de fundo dos comentários e status, abra a **[!UICONTROL Configuração de PDF de anotação]** no Configuration Manager e modifique as opções desejadas. Por exemplo, para alterar a cor de exibição do status de aprovado, modifique o código de cor no campo correspondente. Para obter informações sobre como alterar a cor da fonte das anotações, consulte [Anotação](/help/assets/manage-digital-assets.md#annotating).
 
@@ -594,15 +593,15 @@ A funcionalidade de controle de versão permite que você faça o seguinte:
 
 1. Toque/clique no **[!UICONTROL Ações]** (seta) ícone na parte inferior para exibir as ações disponíveis que você pode executar no ativo.
 
-   ![chlimage_1-249](assets/chlimage_1-249.png)
+   <!--![chlimage_1-249](assets/chlimage_1-249.png)-->
 
 1. Toque/clique **[!UICONTROL Salvar como versão]** para criar uma versão do ativo.
 
-   ![chlimage_1-250](assets/chlimage_1-250.png)
+<!--![chlimage_1-250](assets/chlimage_1-250.png)-->
 
 1. Adicione um rótulo e um comentário e clique em **[!UICONTROL Criar]** para criar uma versão. Como alternativa, toque/clique **Cancelar** para sair da operação.
 
-   ![chlimage_1-251](assets/chlimage_1-251.png)
+   <!--![chlimage_1-251](assets/chlimage_1-251.png)-->
 
 1. Para exibir a nova versão, abra a lista **[!UICONTROL Mostrar tudo]** na linha do tempo da página Detalhes do ativo ou na interface do usuário do Assets e escolha **[!UICONTROL Versões]**. Todas as versões criadas para um ativo são listadas na guia Linha do tempo. Filtre a lista para mostrar Versões ao clicar na seta suspensa e selecionar **[!UICONTROL Versões]** na lista.
 
@@ -635,23 +634,23 @@ A funcionalidade de controle de versão permite que você faça o seguinte:
 
 1. Toque/clique no **[!UICONTROL Ações]** (seta) ícone na parte inferior para abrir a lista de ações disponíveis para o ativo.
 
-   ![chlimage_1-252](assets/chlimage_1-252.png)
+   <!--![chlimage_1-252](assets/chlimage_1-252.png)-->
 
 1. Toque/clique **[!UICONTROL Iniciar fluxo de trabalho]** da lista.
 
-   ![chlimage_1-253](assets/chlimage_1-253.png)
+   <!--![chlimage_1-253](assets/chlimage_1-253.png)-->
 
 1. No **[!UICONTROL Iniciar fluxo de trabalho]** , selecione um modelo de fluxo de trabalho na lista.
 
-   ![chlimage_1-254](assets/chlimage_1-254.png)
+   <!--![chlimage_1-254](assets/chlimage_1-254.png)-->
 
 1. (Opcional) Especifique um título para o workflow, que pode ser usado para fazer referência à instância do workflow.
 
-   ![chlimage_1-255](assets/chlimage_1-255.png)
+   <!--![chlimage_1-255](assets/chlimage_1-255.png)-->
 
 1. Toque/clique em **[!UICONTROL Iniciar]** e em **[!UICONTROL Prosseguir]** na caixa de diálogo para confirmar. Cada etapa do fluxo de trabalho é exibida na linha do tempo como um evento.
 
-   ![chlimage_1-256](assets/chlimage_1-256.png)
+   <!--![chlimage_1-256](assets/chlimage_1-256.png)-->
 
 ## Coleções {#collections}
 
