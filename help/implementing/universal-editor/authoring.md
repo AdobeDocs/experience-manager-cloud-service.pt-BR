@@ -2,7 +2,7 @@
 title: Criação de conteúdo com o Editor universal
 description: Saiba como é fácil e intuitivo para os autores criarem conteúdo utilizando o Editor universal.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: f28b8a85de76a1658ef45c509cbf5600baa1bb3a
+source-git-commit: 4cf7d3692b53e5cb5baecd7d0ee93824d9186380
 workflow-type: tm+mt
 source-wordcount: '2267'
 ht-degree: 57%
@@ -346,7 +346,7 @@ As alterações são salvas no conteúdo automaticamente.
 
 ### Edição de fragmentos de conteúdo {#edit-content-fragment}
 
-Se você estiver em [modo do componente](#component-mode) e você selecionar um [Fragmento de conteúdo,](/help/assets/content-fragments/content-fragments.md) é possível editar os detalhes no painel de componentes.
+Se você estiver em [modo do componente](#component-mode) e você selecionar um [Fragmento de conteúdo,](/help/sites-cloud/administering/content-fragments/overview.md) é possível editar os detalhes no painel de componentes.
 
 ![Edição de um fragmento de conteúdo](assets/ue-edit-cf.png)
 
@@ -354,7 +354,7 @@ Os campos definidos no modelo de conteúdo do fragmento de conteúdo selecionado
 
 As alterações são salvas no conteúdo automaticamente.
 
-Se quiser editar o fragmento de conteúdo na caixa [Editor de fragmento de conteúdo](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) clique no link [botão editar](#edit) no painel de modos.
+Se quiser editar o fragmento de conteúdo na caixa [Editor de fragmento de conteúdo](/help/sites-cloud/administering/content-fragments/authoring.md) clique no link [botão editar](#edit) no painel de modos.
 
 ### Adicionar componentes a contêineres {#adding-components}
 
