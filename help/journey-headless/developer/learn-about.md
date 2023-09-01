@@ -2,10 +2,10 @@
 title: Saiba mais sobre o desenvolvimento headless do CMS
 description: Nesta parte da Jornada de desenvolvedores headless do AEM, saiba mais sobre a tecnologia headless e por que usá-la.
 exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
 workflow-type: tm+mt
-source-wordcount: '1620'
-ht-degree: 92%
+source-wordcount: '1638'
+ht-degree: 98%
 
 ---
 
@@ -23,7 +23,7 @@ Este documento ajuda você a entender a entrega de conteúdo headless e por que 
 
 ## Entregar conteúdo em pilha completa {#full-stack}
 
-Desde o surgimento de CMSs (Content Management Systems, sistemas de gerenciamento de conteúdo) de grande escala e fáceis de usar, as organizações os usam como um local central para gerenciar mensagens, marcas e comunicações. Usar o CMS como ponto central para administrar experiências melhorou a eficiência, eliminando a necessidade de duplicar tarefas em sistemas diferentes.
+Desde a ascensão dos sistemas de gerenciamento de conteúdo (CMS) de larga escala e fácil utilização, as organizações estão usando-os como um local central para gerenciar mensagens, comunicações e a identidade visual de sua marca. Usar o CMS como ponto central para administrar experiências melhorou a eficiência, eliminando a necessidade de duplicar tarefas em sistemas diferentes.
 
 ![O CMS clássico de pilha completa](assets/full-stack.png)
 
@@ -84,7 +84,7 @@ Ainda há necessidade de APIs REST robustas. No entanto, as solicitações REST 
 
 A entrega de conteúdo headless geralmente usa APIs GraphQL. O GraphQL permite uma transferência sem estado semelhante, mas possibilita consultas mais direcionadas, reduzindo o número total de consultas necessárias e melhorando o desempenho. É comum ver soluções que usam uma mistura de REST e GraphQL, escolhendo a melhor ferramenta de acordo com a tarefa.
 
-Seja qual for a API escolhida, definindo um sistema headless com base em APIs comuns, você pode usar o navegador mais recente e outras tecnologias da Web, como aplicativos web progressivos (PWA). As APIs criam uma interface padrão que é facilmente extensível e adaptável.
+Independentemente da API escolhida, ao definir um sistema headless com base em APIs comuns, você pode aproveitar o navegador mais recente e outras tecnologias da web, como aplicativos web progressivos (PWA). As APIs criam uma interface padrão que é facilmente extensível e adaptável.
 
 Normalmente, o conteúdo é renderizado no lado do cliente. Isso normalmente significa que alguém chama seu conteúdo em um dispositivo móvel, o CMS fornece o conteúdo e, em seguida, o dispositivo móvel (do cliente) é responsável pela renderização do conteúdo que você disponibilizou. Se o dispositivo for antigo ou estiver lento, sua experiência digital também será lenta.
 
@@ -96,7 +96,7 @@ O headless abre um mundo de flexibilidade para fornecer suas experiências digit
 
 Ter muitos canais diferentes pode significar que cada um tem seus próprios sistemas de apresentação. Mesmo que todos consumam o mesmo conteúdo por meio das mesmas APIs, a experiência pode não ser a mesma por causa das diferentes apresentações. Preocupação e cuidado devem ser dados para assegurar a consistência da experiência do cliente.
 
-Ao implementar sistemas de design cuidadosos, compartilhar bibliotecas de padrões e aproveitar componentes de design reutilizáveis e estruturas abertas e estabelecidas do lado do cliente, experiências consistentes podem ser garantidas, mas isso deve ser planejado.
+Ao implementar sistemas de design cuidadosos, compartilhar bibliotecas de padrões e aproveitar componentes de design reutilizáveis, bem como estruturas estabelecidas e abertas do lado do cliente, experiências consistentes podem ser garantidas, mas isso deve ser planejado.
 
 ## O futuro é headless e o futuro é agora {#future}
 
@@ -110,7 +110,7 @@ As experiências digitais continuarão a definir como as marcas interagem com os
 
 Como líder da indústria em gerenciamento de experiência digital, a Adobe percebe que a solução ideal para os desafios do mundo real que os criadores de experiências enfrentam raramente é uma escolha binária. É por isso que o AEM não apenas oferece suporte a ambos os modelos, mas também permite de forma única a combinação híbrida perfeita dos dois, misturando as vantagens da pilha completa e da tecnologia headless, para ajudá-lo a atender melhor os consumidores do seu conteúdo, onde quer que estejam.
 
-Essa jornada se concentra exclusivamente no modelo headless de entrega de conteúdo. No entanto, uma vez que você tenha esse conhecimento fundamental, poderá explorar ainda mais como usar o poder de ambos os modelos.
+Essa jornada se concentra exclusivamente no modelo headless de entrega de conteúdo. No entanto, uma vez que tenha esse conhecimento fundamental, você poderá explorar ainda mais como utilizar o potencial de ambos os modelos.
 
 ## O que vem a seguir {#what-is-next}
 
@@ -127,4 +127,6 @@ Aplicar esse conhecimento e prosseguir com a jornada headless do AEM revisando o
 Embora seja recomendado que você siga para a próxima parte da jornada de desenvolvimento headless revisando o documento [Introdução ao AEM Headless as a Cloud Service,](getting-started.md) veja a seguir alguns recursos adicionais que abordam certos conceitos mencionados neste documento em mais detalhes, mas que não são necessários para continuar a jornada headless.
 
 * [Uma introdução à arquitetura do Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) - Compreender a estrutura do AEM as a Cloud Service
-* [Tutoriais do AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR) - Use esses tutoriais práticos para descobrir como usar as várias opções para fornecer conteúdo a pontos de acesso headless com o AEM e escolher o que é certo para você.
+* Um [Introdução ao AEM as a Headless CMS](/help/headless/introduction.md)
+* A variável [Portal do desenvolvedor de AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
+* [Tutoriais AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR) - Use esses tutoriais práticos para explorar como utilizar as várias opções para fornecer conteúdo a endpoints headless com o AEM e escolha o que é certo para você.

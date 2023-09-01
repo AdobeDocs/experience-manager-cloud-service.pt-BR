@@ -2,10 +2,10 @@
 title: 'Modelagem de conteúdo para o AEM as a Headless CMS: uma introdução'
 description: Uma introdução ao uso dos recursos do Adobe Experience Manager as a Cloud Service as a Headless CMS para modelar o conteúdo do seu projeto.
 exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
 workflow-type: tm+mt
-source-wordcount: '722'
-ht-degree: 92%
+source-wordcount: '749'
+ht-degree: 97%
 
 ---
 
@@ -25,7 +25,7 @@ Este documento ajuda você a entender a entrega de conteúdo headless, como o AE
 
 ## Entregar conteúdo em pilha completa {#full-stack}
 
-Desde o surgimento de CMSs (Content Management Systems, sistemas de gerenciamento de conteúdo) de grande escala e fáceis de usar, as organizações os usam como um local central para gerenciar mensagens, marcas e comunicações. Usar o CMS como ponto central para administrar experiências melhorou a eficiência, eliminando a necessidade de duplicar tarefas em sistemas diferentes.
+Desde a ascensão dos sistemas de gerenciamento de conteúdo (CMS) de larga escala e fácil utilização, as organizações estão usando-os como um local central para gerenciar mensagens, comunicações e a identidade visual de sua marca. Usar o CMS como ponto central para administrar experiências melhorou a eficiência, eliminando a necessidade de duplicar tarefas em sistemas diferentes.
 
 ![O CMS clássico de pilha completa](/help/journey-headless/developer/assets/full-stack.png)
 
@@ -66,7 +66,7 @@ Para o AEM, você, como Arquiteto de conteúdo, executará a modelagem de conte�
 
 Isso é mais um detalhe de desenvolvimento, mas pode interessar a você, apenas para completar a história.
 
-Depois de criar os modelos de fragmento de conteúdo e de os autores os usarem para gerar o conteúdo, os aplicativos headless precisarão acessar esse conteúdo.
+Após criar os modelos de fragmento de conteúdo e depois que os(as) autores(as) os tiverem usado para gerar conteúdo, os aplicativos headless precisarão acessar esse conteúdo.
 
 O Adobe Experience Manager (AEM) as a Cloud Service pode acessar seletivamente seus Fragmentos de conteúdo usando a API GraphQL do AEM para retornar somente o conteúdo necessário. Usando a API, um desenvolvedor pode formular consultas que selecionam conteúdo específico. Esse processo de seleção se baseia em *seus* Modelos de fragmentos de conteúdo.
 
@@ -81,3 +81,6 @@ Agora que você aprendeu os conceitos e a terminologia, o próximo passo é [Sab
 * Jornada do desenvolvedor AEM headless
    * [Saiba mais sobre o desenvolvimento headless do CMS](/help/journey-headless/developer/learn-about.md)
    * [Saiba como modelar seu conteúdo](/help/journey-headless/developer/model-your-content.md)
+* [Introdução ao AEM as a Headless CMS](/help/headless/introduction.md)
+* [Portal do desenvolvedor de AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
+* [Tutorials para headless no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR)

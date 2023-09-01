@@ -2,10 +2,10 @@
 title: Introdução à criação no AEM como um CMS headless
 description: Uma introdução ao uso dos recursos do Adobe Experience Manager as a Cloud Service como um CMS headless para criar conteúdo para seu projeto.
 exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 96%
+source-wordcount: '691'
+ht-degree: 97%
 
 ---
 
@@ -55,7 +55,7 @@ Isso significa que o conteúdo pode atingir uma grande variedade de dispositivos
 (E como acréscimo, esses fragmentos também podem ser usados na criação de páginas da web do AEM, se assim desejar).
 
 * CMS “tradicional”
-   * O conteúdo é criado para páginas da Web, usando uma variedade de componentes que definem como o conteúdo é renderizado no seu site. Até mesmo nesse caso, o AEM é extremamente flexível, pois a equipe do projeto pode desenvolver componentes personalizados.
+   * O conteúdo é criado para páginas da Web usando uma série de componentes que definem como o conteúdo é renderizado em seu site. Até mesmo nesse caso, o AEM é extremamente flexível, pois a equipe do projeto pode desenvolver componentes personalizados.
 
 ## Modelagem de conteúdo {#content-modeling}
 
@@ -77,10 +77,16 @@ Agora que você aprendeu os conceitos e a terminologia, o próximo passo é [Sab
 
 ## Recursos adicionais {#additional-resources}
 
+* [Introdução ao AEM as a Headless CMS](/help/headless/introduction.md)
+
+* [Tutorials para headless no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR)
+
 * Jornada do desenvolvedor AEM headless
    * [Saiba mais sobre o desenvolvimento headless do CMS](/help/journey-headless/developer/learn-about.md)
    * [Saiba como modelar seu conteúdo](/help/journey-headless/developer/model-your-content.md)
 
-* Jornada do arquiteto de conteúdo do AEM Headless
+* [Portal do desenvolvedor de AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
 
-* Jornada de tradução de conteúdo do AEM Headless
+* [Jornada do arquiteto de conteúdo do AEM Headless](/help/journey-headless/architect/overview.md)
+
+* [Jornada de tradução de conteúdo do AEM Headless](/help/journey-headless/translation/overview.md)
