@@ -1,10 +1,10 @@
 ---
-title: Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2023.6.0.
-description: Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2023.6.0.
-source-git-commit: 2d10d03e478bff5a162c620c41ceac38a6d7911a
+title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2023.6.0.
+description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2023.6.0.
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
 source-wordcount: '1409'
-ht-degree: 42%
+ht-degree: 95%
 
 ---
 
@@ -25,11 +25,11 @@ A seção a seguir descreve as notas da versão de recursos do [!DNL Experience 
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento da versão atual (2023.6.0) do [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] é 29 de junho de 2023. A próxima versão do recurso (2023.7.0) está planejada para 27 de julho de 2023.
+A data de lançamento da versão atual (2023.6.0) do [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] é 29 de junho de 2023. O próximo lançamento de recursos (2023.7.0) está planejado para 27 de julho de 2023.
 
 ## Vídeo da versão {#release-video}
 
-Assista ao vídeo de Visão geral da versão de junho de 2023 para ver um resumo dos recursos adicionados na versão 2023.6.0:
+Assista ao vídeo de visão geral da versão de junho de 2023 para ver um resumo dos recursos adicionados na versão 2023.6.0:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420971/?quality=12)
 
@@ -37,78 +37,78 @@ Assista ao vídeo de Visão geral da versão de junho de 2023 para ver um resumo
 
 ### Novos recursos no [!DNL Experience Manager Sites] {#sites-features}
 
-* Os fragmentos de conteúdo e suas referências agora podem ser publicados no [Serviço de visualização do AEM](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) usando o [Console de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-console.md), permitindo a visualização da experiência final em um aplicativo separado antes da publicação.
+* Os fragmentos de conteúdo e suas referências agora podem ser publicados no [Serviço de visualização do AEM](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) usando o [Console de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console), permitindo a visualização da experiência final em um aplicativo separado antes da publicação.
 
 ![Visualizar no Console de fragmentos de conteúdo](/help/assets/content-fragments-console-preview.png)
 
-* As imagens agora podem ser otimizadas dinamicamente para entrega na Web em cenários headless usando o AEM GraphQL. [Variáveis de consulta](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html?lang=en#query-variables) O pode ser definido em queries do GraphQL para permitir que aplicativos clientes dissociados solicitem imagens otimizadas de AEM.
-* Tags ativadas [Variações do fragmento de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html?lang=en) agora pode ser enviado para JSON usando a API de entrega de conteúdo AEM GraphQL.
+* As imagens agora podem ser otimizadas dinamicamente para entrega na Web com cenários headless usando o AEM GraphQL. [Variáveis de consulta](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html?lang=pt-BR#query-variables) podem ser definidas em consultas de GraphQL para permitir que aplicativos clientes dissociados solicitem imagens otimizadas do AEM.
+* As tags das [variações de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html?lang=pt-BR) agora podem ser exportadas em JSON usando a API de entrega de conteúdo do AEM GraphQL.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Novos recursos no [!DNL Assets] {#assets-features}
 
-**Visualização Disponibilidade de novos ativos**
+**Disponibilidade da nova visualização de ativos**
 
-A variável [nova visualização de Ativos](/help/assets/assets-view-introduction.md) O agora está disponível no Experience Manager Assets. A Exibição de ativos fornece uma interface simplificada, o que facilita o gerenciamento, a descoberta e a distribuição de ativos digitais. A experiência é direcionada para criativos, consumidores de ativos somente leitura e usuários de DAM mais leves.
+Uma [nova visualização de ativos](/help/assets/assets-view-introduction.md) está disponível no Experience Manager Assets. Essa visualização de ativos fornece uma interface simplificada que facilita o gerenciamento, a descoberta e a distribuição de ativos digitais. A experiência é direcionada para consumidores de ativos criativos do tipo somente leitura e que não exigem muito do DAM.
 
 ![Gerenciamento de tags](/help/assets/assets/my-workspace.png)
 
 **Aprimoramentos na experiência de pesquisa**
 
-O Experience Manager Assets agora capacita você a fazer mais na interface do usuário de resultados de pesquisa: agora é possível:
+A interface de resultados de pesquisa do Experience Manager Assets agora fornece mais recursos, permitindo:
 
-* [Executar pesquisa no local do repositório atual](/help/assets/search-assets.md) por padrão, em vez de pesquisar a palavra-chave no repositório inteiro.
+* [Executar uma pesquisa no local do repositório atual](/help/assets/search-assets.md) por padrão, em vez de pesquisar a palavra-chave no repositório inteiro.
 
-* [Navegar até o local da pasta](/help/assets/search-assets.md#aftersearch) para ativos exibidos nos resultados da pesquisa.
+* [Navegar até o local da pasta](/help/assets/search-assets.md#aftersearch) em que estão contidos os ativos exibidos nos resultados da pesquisa.
 
 **Visualizações de miniaturas para ativos 3D**
 
-[!DNL Experience Manager Assets] agora gera [visualizações de miniaturas para formatos de arquivo 3D comuns](/help/assets/file-format-support.md) incluindo gLB, USDz, FBX, 3DS, OBJ e SBSAR. Quando esses arquivos são carregados, as miniaturas são geradas automaticamente por padrão.
+O [!DNL Experience Manager Assets] agora gera [visualizações de miniaturas para formatos de arquivo 3D comuns](/help/assets/file-format-support.md) incluindo gLB, USDz, FBX, 3DS, OBJ e SBSAR. Quando esses arquivos são carregados, as miniaturas são geradas automaticamente por padrão.
 
 **Configuração de compartilhamento de link**
 
-Uma nova experiência aprimorada do usuário para [criação de compartilhamentos de links](/help/assets/share-assets.md) junto com um novo conjunto de configurações que permite que os administradores personalizem o comportamento padrão desse recurso para seus usuários.
+Uma nova experiência de usuário aprimorada para [criar compartilhamentos de links](/help/assets/share-assets.md) e um novo conjunto de configurações que permite que admins personalizem o comportamento padrão desse recurso para seus usuários.
 
 ![Gerenciamento de tags](/help/assets/assets/config-email-service.png)
 
-**Dynamic Media: campos relacionados ao Corte inteligente atualizados no perfil de imagem**
+**Dynamic Media: atualização de campos relacionados ao Corte inteligente no perfil de imagem**
 
-A interface de alguns campos relacionados ao Corte inteligente em um Perfil de imagem agora é atualizada para refletir as diretrizes atuais para a definição de um Corte inteligente. Consulte [Opções de corte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=pt-BR#crop-options).
+A interface foi atualizada para que alguns campos relacionados ao Corte inteligente de um perfil de imagem reflitam as diretrizes atuais de definição de um Corte inteligente. Consulte [Opções de corte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=pt-BR#crop-options).
 
-### Novos recursos na exibição do Assets {#assets-view-features}
+### Novos recursos na visualização de ativos {#assets-view-features}
 
-**Marcação hierárquica de ativos para obter uma experiência de pesquisa mais rápida**
+**Marcação hierárquica de ativos para uma experiência de pesquisa mais rápida**
 
-Listas planas de vocabulários controlados tornam-se incontroláveis com o tempo. A exibição de ativos agora é compatível [estrutura hierárquica de marcação](/help/assets/tagging-management-assets-view.md), que facilita a aplicação de metadados relevantes, a categorização de ativos, o suporte a pesquisas, a reutilização de tags, a melhoria da descoberta e assim por diante.
+Listas planas de vocabulários controlados tornam-se incontroláveis com o tempo. A visualização de ativos agora possui uma [estrutura hierárquica de marcação](/help/assets/tagging-management-assets-view.md), que facilita a aplicação de metadados relevantes, a categorização de ativos, o suporte a pesquisas, a reutilização de tags, a melhoria da descoberta e assim por diante.
 
 ![Gerenciamento de tags](/help/assets/assets/tags-hierarchy.png)
 
 **Fixar arquivos, pastas e coleções para acesso rápido**
 
-Agora você pode [fixe arquivos, pastas e coleções para agilizar o acesso](/help/assets/my-workspace-assets-view.md) a esses itens quando você precisar deles mais tarde. Os itens fixados são exibidos na variável **Acesso rápido** seção do Meu espaço de trabalho. Você pode acessá-las usando Meu espaço de trabalho em vez de navegar até o local em que são salvas no repositório.
+Agora você pode [fixar arquivos, pastas e coleções para agilizar o acesso](/help/assets/my-workspace-assets-view.md) a esses itens quando precisar deles mais tarde. Os itens fixados são exibidos na seção **Acesso rápido** do Meu espaço de trabalho. Você pode acessá-los usando o Meu espaço de trabalho em vez de navegar até o local em que foram salvos no repositório.
 
-![Tarefas no Espaço de trabalho](/help/assets/assets/quick-access.png)
+![Tarefas no espaço de trabalho](/help/assets/assets/quick-access.png)
 
 **Filtrar ativos na pasta Lixeira**
 
-A visualização de ativos agora permite [filtrar ativos disponíveis na pasta Lixeira](/help/assets/navigate-assets-view.md). Você pode aplicar filtros padrão ou personalizados para pesquisar ativos apropriados na pasta Lixeira para restaurá-los ou excluí-los permanentemente.
+A visualização de ativos agora permite [filtrar ativos disponíveis na pasta Lixeira](/help/assets/navigate-assets-view.md). Você pode aplicar filtros padrão ou personalizados para pesquisar ativos apropriados na pasta Lixeira e restaurá-los ou excluí-los permanentemente.
 
 **Visualizações de miniaturas para ativos 3D**
 
-A visualização de ativos agora gera visualizações de miniaturas para formatos de arquivo 3D comuns, incluindo gLB, USDz, FBX, 3DS, OBJ e SBSAR. Quando esses arquivos são carregados para a visualização de Ativos, as miniaturas são geradas automaticamente pelo sistema, por padrão.
+A visualização de ativos agora gera visualizações de miniaturas para formatos de arquivo 3D comuns, incluindo gLB, USDz, FBX, 3DS, OBJ e SBSAR. Quando esses arquivos são carregados na visualização de ativos, as miniaturas são geradas automaticamente pelo sistema, por padrão.
 
 ![Tarefas no Espaço de trabalho](/help/assets/assets/3d-preview.png)
 
 **Exibir os principais termos pesquisados**
 
-A exibição de ativos agora é compatível [exibindo os principais termos pesquisados na implantação](/help/assets/my-workspace-assets-view.md) usando o **Insights** seção do Meu espaço de trabalho. Você também pode navegar até os Insights detalhados para exibir as principais pesquisas durante os últimos 30 dias ou 12 meses.
+A exibição de arquivos agora é compatível com a [visualização dos principais termos pesquisados na implantação](/help/assets/my-workspace-assets-view.md) usando a seção **Insights** do Meu espaço de trabalho. Também é possível navegar até os Insights detalhados para exibir as principais pesquisas durante os últimos 30 dias ou 12 meses.
 
 ![Tarefas no Espaço de trabalho](/help/assets/assets/insights-top-searches.png)
 
 **Aprimoramentos no formulário de metadados**
 
-A visualização de ativos agora permite [adicionar componentes de propriedade de texto de vários valores e lista suspensa](/help/assets/metadata-assets-view.md#property-components) aos formulários de metadados.
+A visualização de arquivos agora permite [adicionar componentes de propriedade de texto de vários valores e de lista suspensa](/help/assets/metadata-assets-view.md#property-components) aos formulários de metadados.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -122,27 +122,27 @@ A visualização de ativos agora permite [adicionar componentes de propriedade d
 
      >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
-* [Adobe Acrobat Sign Solutions para o governo](/help/forms/adobe-sign-integration-adaptive-forms.md): o AEM Forms agora se integra ao Adobe Acrobat Sign Solutions para o governo. Essa integração oferece um nível avançado de conformidade e segurança para assinaturas eletrônicas com envios de formulários adaptáveis para contas associadas a órgãos governamentais (departamentos e agências governamentais).
+* [Adobe Acrobat Sign Solutions para órgãos governamentais](/help/forms/adobe-sign-integration-adaptive-forms.md): o AEM Forms agora se integra ao Adobe Acrobat Sign Solutions para órgãos governamentais. Essa integração oferece um nível avançado de conformidade e segurança para assinaturas eletrônicas com envios de formulários adaptáveis para contas associadas a órgãos governamentais (departamentos e agências governamentais).
 
-  A integração com o Adobe Acrobat Sign Solutions para o governo permite que os parceiros do Adobe e os clientes do governo usem assinaturas eletrônicas no Adaptive Forms para algumas das linhas de negócios mais críticas e confidenciais. Essa camada adicional de segurança garante que todas as assinaturas eletrônicas sejam totalmente compatíveis com o nível moderado de conformidade do FedRAMP, proporcionando tranquilidade aos clientes governamentais da Adobe.
+  A integração com o Adobe Acrobat Sign Solutions para os órgãos governamentais permite que parceiros da Adobe e clientes governamentais usem assinaturas eletrônicas em formulários adaptáveis para alguns dos ramos de negócios mais críticos e sensíveis. Essa camada adicional de segurança garante que todas as assinaturas eletrônicas sejam totalmente compatíveis com o nível moderado de conformidade do FedRAMP, proporcionando tranquilidade aos clientes governamentais da Adobe.
 
-* [Tratamento de erros aprimorado com manipuladores de erros personalizados no editor de regras](/help/forms/add-custom-error-handler-adaptive-forms.md): agora você pode chamar uma função personalizada (usando a Biblioteca do cliente) em resposta a um erro retornado por um serviço externo e fornecer uma resposta personalizada aos usuários finais. Como alternativa, você pode realizar ações específicas para erros retornados por um serviço. Por exemplo, você pode acionar um fluxo de trabalho personalizado no back-end para códigos de erro específicos ou informar ao cliente que o serviço está inativo.
+* [Tratamento de erros aprimorado com manipuladores de erros personalizados no editor de regras](/help/forms/add-custom-error-handler-adaptive-forms.md): agora é possível chamar uma função personalizada (usando a Biblioteca do cliente) em resposta a um erro retornado por um serviço externo e fornecer uma resposta personalizada aos usuários finais. Como alternativa, você pode realizar ações específicas para erros retornados por um serviço. Por exemplo, você pode acionar um fluxo de trabalho personalizado no back-end para códigos de erro específicos ou informar ao cliente que o serviço está inativo.
 
   Essa funcionalidade ajuda a melhorar a capacidade geral de tratamento de erros, por meio da adição de respostas baseadas em padrões que são compatíveis com versões anteriores de manipuladores de erro prontos para uso, o que oferece maior flexibilidade e controle.
 
 * [Métodos de autenticação aprimorados para o modelo de dados de formulário](/help/forms/configure-data-sources.md): Experimente maior segurança com a introdução da autenticação baseada em Credenciais do cliente para conectar o AEM Forms a fontes de dados compatíveis. Esse aprimoramento elimina a necessidade de representação ou logon de usuário, reforçando a proteção de seus dados.
 
-* [Forms adaptável com seções que podem ser repetidas](/help/forms/create-forms-repeatable-sections.md): Agora você pode fazer [Acordeão](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [Assistente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html), [Painel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html), e [Guias Horizontais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) componentes em um formulário adaptável baseado em Componentes principais para criar seções repetíveis.
+* [Forms adaptável com seções que podem ser repetidas](/help/forms/create-forms-repeatable-sections.md): Agora você pode fazer [Acordeão](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=pt-BR), [Assistente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=pt-br), [Painel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html?lang=pt-br), e [Guias Horizontais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=pt-br) componentes em um formulário adaptável baseado em Componentes principais para criar seções repetíveis.
 
   >[!VIDEO](https://video.tv.adobe.com/v/3421052/adaptive-forms-repeatable-sections-repeat-sections/?quality=12&learn=on)
 
-  Essas seções repetíveis permitem fornecer um número ilimitado de entradas sem uma contagem de campos fixa. É útil quando as instâncias de dados necessárias são desconhecidas antecipadamente. Os usuários do Forms podem adicionar ou remover seções facilmente, tornando os formulários adaptáveis a diferentes cenários de entrada de dados e simplificando a coleta de várias ocorrências dos mesmos dados.
+  Essas seções repetíveis permitem fornecer um número ilimitado de entradas sem uma contagem de campo fixa. É útil quando as instâncias de dados necessárias são desconhecidas. Os usuários do Forms podem adicionar ou remover seções facilmente, tornando os formulários adaptáveis a diferentes cenários de entrada de dados e simplificando a coleta de várias ocorrências dos mesmos dados.
 
 * **[Enviar formulários adaptáveis para o Microsoft® SharePoint e Microsoft® OneDrive](/help/forms/configuring-submit-actions.md)**: agilize o processo do usuário empresarial para lançar novos formulários rapidamente e armazenar dados enviados em ferramentas usadas diariamente, como o site do Microsoft® SharePoint ou a pasta do OneDrive.
 
 ### Programa de adoção antecipada de formulários adaptáveis headless {#forms-early-adopter}
 
-Uso [Forms adaptável headless](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) para permitir que os desenvolvedores criem, publiquem e gerenciem formulários interativos que possam ser acessados e interagidos por meio de APIs, em vez de uma interface gráfica tradicional. Os formulários adaptáveis headless ajudam a:
+Use [Formulários adaptáveis Headless](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=pt-BR) para permitir que seus desenvolvedores criem, publiquem e gerenciem formulários interativos que podem ser acessados e manuseados por meio de APIs, em vez de utilizar uma interface gráfica tradicional. Os formulários adaptáveis headless ajudam a:
 
 * criar formulários multicanal de alta qualidade na linguagem de programação de sua escolha
 * integrar formulários nativamente a seus aplicativos móveis e de desktop, sites e aplicativos de bate-papo

@@ -2,10 +2,10 @@
 title: Modelos de fragmentos do conteúdo (Ativos - Fragmentos de conteúdo)
 description: Saiba como os modelos de fragmento de conteúdo servem como base para o conteúdo headless no AEM e como criar fragmentos de conteúdo com conteúdo estruturado.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: f499edbc05b71495c072564bb065a07c34a9e236
 workflow-type: tm+mt
-source-wordcount: '2898'
-ht-degree: 88%
+source-wordcount: '2937'
+ht-degree: 93%
 
 ---
 
@@ -30,7 +30,12 @@ Para usar modelos de fragmento de conteúdo, você pode:
    >
    >Se o [uso de modelos de fragmento de conteúdo não foi habilitado](/help/assets/content-fragments/content-fragments-configuration-browser.md), a opção **Criar** não estará disponível.
 
-1. Especifique o **título do modelo**. Você também pode adicionar **Tags**, uma **Descrição** e selecionar **Ativar modelo** para [ativar o modelo](#enabling-disabling-a-content-fragment-model) se necessário.
+1. Especifique o **título do modelo**.
+Também é possível definir várias propriedades; por exemplo, adicionar **Tags**, um **Descrição** e selecione **Ativar modelo** para [ativar o modelo](#enabling-disabling-a-content-fragment-model) se necessário.
+
+   >[!NOTE]
+   >
+   >Para obter detalhes sobre o **Padrão de URL de Visualização Padrão** consulte [Modelo de fragmento de conteúdo — Propriedades](#content-fragment-model-properties).
 
    ![título e descrição](assets/cfm-models-02.png)
 
@@ -56,7 +61,7 @@ O modelo de fragmento de conteúdo define efetivamente a estrutura dos fragmento
 
    >[!NOTE]
    >
-   >Quando um campo como **Obrigatório**, o **Rótulo** indicado no painel à esquerda é marcado com um asterisco (**&#42;**).
+   >Quando um campo é **obrigatório**, o **rótulo** indicado no painel à esquerda é marcado com um asterisco (**&#42;**).
 
 ![propriedades](assets/cfm-models-03.png)
 
@@ -83,7 +88,7 @@ O modelo de fragmento de conteúdo define efetivamente a estrutura dos fragmento
 
 1. **Para remover um campo**
 
-   Selecione o campo desejado e clique/toque no ícone da lixeira. Você deverá confirmar a ação.
+   Selecione o campo desejado e clique/toque no ícone da lixeira. Você receberá uma solicitação para confirmar a ação.
 
    ![remover](assets/cfm-models-06.png)
 
@@ -122,7 +127,7 @@ Uma variedade de tipos de dados está disponível para a definição do seu mode
 * **Objeto JSON**
    * Permite que o autor do fragmento de conteúdo insira a sintaxe JSON nos elementos correspondentes de um fragmento.
       * Para permitir que o AEM armazene o JSON direto que você tenha copiado/colado de outro serviço.
-      * O JSON é transmitido e emitido como JSON no GraphQL.
+      * O JSON será transmitido e emitido como JSON no GraphQL.
       * Inclui o realce da sintaxe JSON, o preenchimento automático e o realce de erros no editor de fragmentos de conteúdo.
 * **Espaço reservado da guia**
    * Permite a introdução de guias para uso ao editar o conteúdo do fragmento de conteúdo.
@@ -147,8 +152,8 @@ Muitas propriedades são autoexplicativas. Para certas propriedades, os detalhes
 * **Renderizar como**
 As várias opções para realizar/renderizar o campo em um fragmento. Geralmente, essa propriedade permite definir se o autor vê uma única instância do campo ou se tem permissão para criar várias instâncias.
 
-* **Rótulo do campo**
-Inserir um **Rótulo do campo** gerará automaticamente um **Nome da propriedade**, que pode ser atualizado manualmente, se necessário.
+* **Rótulo de Campo** 
+Inserir um **Rótulo de Campo** gerará automaticamente um **Nome de Propriedade**, que pode ser atualizado manualmente se necessário.
 
 * **Validação**
 A validação básica está disponível por meio de mecanismos como a propriedade **Obrigatório**. Alguns tipos de dados têm campos de validação de adição. Consulte [Validação](#validation) para obter mais detalhes.
@@ -168,7 +173,7 @@ O conteúdo (para o campo específico) deve ser exclusivo em todos os fragmentos
 
   Isso é usado para garantir que os autores de conteúdo não possam repetir o conteúdo já adicionado em outro fragmento do mesmo modelo.
 
-  Por exemplo, um campo **Texto de linha única** chamado de `Country` no modelo de fragmento de conteúdo não pode ter o valor `Japan` em dois fragmentos de conteúdo dependentes. Um aviso é emitido na tentativa da segunda instância.
+  Por exemplo, um campo **Texto de linha única** chamado de `Country` no modelo de fragmento de conteúdo não pode ter o valor `Japan` em dois fragmentos de conteúdo dependentes. Um aviso será emitido na tentativa da segunda instância.
 
   >[!NOTE]
   >
@@ -313,6 +318,12 @@ Especifica um caminho raiz para qualquer fragmento referenciado.
    * **Tags**
    * **Descrição**
    * **Fazer upload de imagem**
+   * **Padrão de URL de Visualização Padrão**
+
+     >[!NOTE]
+     >
+     >Isso só é usado pelo *novo* Editor de fragmento de conteúdo. Consulte [Modelos de fragmentos do conteúdo](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties) para obter mais informações.
+
 
 ## Ativar ou desativar um modelo de fragmento de conteúdo {#enabling-disabling-a-content-fragment-model}
 
@@ -418,11 +429,11 @@ Para publicar um modelo de fragmento de conteúdo:
 
 1. Navegue até a pasta que contém o modelo de fragmento de conteúdo.
 1. Selecione seu modelo e, em seguida, **Publicar** na barra de ferramentas.
-O status publicado é exibido no console.
+O status publicado é indicado no console.
 
    >[!NOTE]
    >
-   >Se você publicar um fragmento de conteúdo cujo modelo ainda não foi publicado, uma lista de seleção indicará isso e o modelo será publicado com o fragmento.
+   >Se você publicar um fragmento de conteúdo cujo modelo ainda não tenha sido publicado, uma lista de seleção indicará isso e o modelo será publicado junto com o fragmento.
 
 ## Desfazer a publicação de um modelo de fragmento de conteúdo {#unpublishing-a-content-fragment-model}
 
@@ -434,7 +445,7 @@ Para desfazer a publicação de um modelo de fragmento de conteúdo:
 
 1. Navegue até a pasta que contém o modelo de fragmento de conteúdo.
 1. Selecione seu modelo e, em seguida, **Desfazer publicação** na barra de ferramentas.
-O status publicado é exibido no console.
+O status publicado é indicado no console.
 
 Se você tentar desfazer a publicação de um modelo que é usado atualmente por um ou mais fragmentos, um aviso de erro informará sobre isso:
 
@@ -486,7 +497,7 @@ Quando o modelo está **bloqueado** (no modo SOMENTE LEITURA ), é possível vis
 
    * É possível **desbloquear** um modelo para permitir a edição.
 
-     Se você selecionar **Desbloquear**, um aviso será exibido e você deverá confirmar o **Desbloquear** ação:
+     Se você selecionar **Desbloquear**, um aviso será exibido, e você deverá confirmar a ação **Desbloquear**:
      ![Mensagem ao desbloquear o modelo de fragmento de conteúdo](assets/cfm-model-unlock-message.png)
 
      Em seguida, você pode abrir o modelo para edição.
@@ -496,7 +507,7 @@ Quando o modelo está **bloqueado** (no modo SOMENTE LEITURA ), é possível vis
 
 * Editor de modelos
 
-   * Ao abrir um modelo bloqueado, você é avisado e três ações são apresentadas: **Cancelar**, **Visualizar somente leitura**, **Editar**:
+   * Ao abrir um modelo bloqueado, você será avisado, e três ações serão apresentadas: **Cancelar**, **Visualizar no modo de somente leitura** e **Editar**:
 
      ![Mensagem ao visualizar um modelo de fragmento de conteúdo bloqueado](assets/cfm-model-editor-lock-message.png)
 

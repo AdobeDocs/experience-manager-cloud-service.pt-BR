@@ -2,10 +2,10 @@
 title: Gerenciamento de fragmentos de conteúdo (Ativos - Fragmentos de conteúdo)
 description: Saiba como usar o console de Ativos para gerenciar os fragmentos de conteúdo de AEM, a base do conteúdo headless.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
-source-wordcount: '1768'
-ht-degree: 69%
+source-wordcount: '1813'
+ht-degree: 71%
 
 ---
 
@@ -34,7 +34,11 @@ O [Editor de fragmentos de conteúdo](#opening-the-fragment-editor) fornece vár
 
 >[!NOTE]
 >
->Os fragmentos de conteúdo são armazenados como **Ativos**. Agora, eles são gerenciados principalmente com o **[Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)** console, embora ainda possam ser gerenciados no **Assets** console. Esta seção abrange o gerenciamento do **Assets** console.
+>Os fragmentos de conteúdo são um recurso do Sites, mas são armazenados como **Assets**.
+>
+>Agora, eles são gerenciados principalmente com o **[Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** console, embora ainda possam ser gerenciados no **Assets** console. Esta seção abrange o gerenciamento do **Assets** console.
+>
+>Existem dois editores para a criação de fragmentos de conteúdo. Esta seção aborda o editor original, acessado principalmente pelo **Assets** console. Consulte a documentação do Sites, [Fragmentos de conteúdo - Criação](/help/sites-cloud/administering/content-fragments/authoring.md), para obter detalhes sobre o novo editor (acessado principalmente pelo **Fragmentos de conteúdo** console).
 
 ## Criação de fragmentos de conteúdo {#creating-content-fragments}
 
@@ -129,7 +133,7 @@ Para abrir o fragmento para edição:
 
 >[!CAUTION]
 >
->Para editar um fragmento de conteúdo, você precisa [das permissões apropriadas](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Entre em contato com o administrador do sistema em caso de problemas.
+>Para editar um fragmento de conteúdo, você precisa [das permissões apropriadas](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Entre em contato com o(a) administrador(a) do sistema em caso de problemas.
 
 1. Use o **Assets** para navegar até o local do fragmento de conteúdo.
 1. Abra o fragmento para edição ao:
@@ -175,7 +179,7 @@ Alguns recursos na barra de ferramentas superior estão disponíveis em vários 
 
 ![Ações da barra de ferramentas disponíveis em vários modos](assets/cfm-managing-top-toolbar.png)
 
-* Uma mensagem é exibida quando o fragmento já é referenciado em uma página de conteúdo. Você pode **Fechar** a mensagem.
+* Uma mensagem será exibida quando o fragmento já tiver sido referenciado em uma página de conteúdo. Você pode **Fechar** a mensagem.
 
 * O painel lateral pode ser oculto/exibido usando o ícone **Ativar painel lateral**.
 
@@ -217,7 +221,7 @@ O editor tem várias opções:
 
   >[!CAUTION]
   >
-  >Para editar um fragmento de conteúdo, você precisa [das permissões apropriadas](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Entre em contato com o administrador do sistema em caso de problemas.
+  >Para editar um fragmento de conteúdo, você precisa [das permissões apropriadas](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Entre em contato com o(a) administrador(a) do sistema em caso de problemas.
 
   >[!NOTE]
   >
@@ -231,7 +235,7 @@ O editor tem várias opções:
 
 * **Fechar**
 
-  Fechará o editor sem salvar as alterações mais recentes (ou seja, feitas desde a última **Salvar**).
+  Fechará o editor sem salvar as alterações mais recentes (ou seja, feitas desde o último **Salvamento**).
 
 Ao editar o fragmento de conteúdo, o AEM cria versões automaticamente para garantir que o conteúdo anterior possa ser restaurado se você cancelar as alterações (usando **Fechar** sem salvar):
 

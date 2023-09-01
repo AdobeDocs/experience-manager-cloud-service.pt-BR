@@ -4,15 +4,24 @@ description: Saiba como gerenciar fragmentos de conteúdo no Console de fragment
 landing-page-description: Saiba como gerenciar Fragmentos de conteúdo no Console de fragmentos de conteúdo, que foca o alto volume de uso de fragmentos de conteúdo para casos de uso headless, mas que também pode ser usado para a criação de páginas.
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: afe676b0972462ef2c9b52150d96560c71f7a0f6
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
 workflow-type: tm+mt
 source-wordcount: '1178'
-ht-degree: 85%
+ht-degree: 90%
 
 ---
 
 # Console de fragmentos de conteúdo  {#content-fragments-console}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 Saiba como o Console de fragmentos de conteúdo otimiza o acesso aos fragmentos de conteúdo, ajudando você a criá-los, pesquisá-los e gerenciá-los realizando ações administrativas como publicar, desfazer a publicação e copiar.
 
@@ -58,14 +67,14 @@ Aqui você pode ver três áreas principais:
    * Ela pode ser redimensionada para mostrar pastas aninhadas
 * O painel principal/direito; aqui, você pode:
    * Consultar a lista de todos os fragmentos de conteúdo na ramificação selecionada da árvore:
-      * A localização é indicada pela navegação estrutural; elas também podem ser usadas para alterar a localização
+      * A localização é indicada pela navegação estrutura, que também pode ser usada para alterar a localização
       * Os fragmentos de conteúdo da pasta selecionada e de todas as pastas derivadas são mostrados:
          * [Vários campos de informação](#selectuse-available-columns) sobre um Fragmento do conteúdo fornecem links. Dependendo do campo, eles podem:
             * Abrir o fragmento apropriado no editor
             * Mostrar informações sobre referências
             * Mostrar informações sobre versões de idioma do fragmento
             * Filtrar rapidamente por uma tag selecionada
-      * Ao passar o mouse sobre os cabeçalhos da coluna, um seletor de ação suspenso e controles deslizantes de largura são mostrados. Isso permite que você faça o seguinte:
+      * Ao passar o mouse sobre os cabeçalhos das colunas, são exibidos um seletor de ação suspenso e controles deslizantes de largura. Isso permite que você faça o seguinte:
          * Classificar: selecione a ação apropriada para classificar em ordem crescente ou decrescente 
 Isso classificará toda a tabela de acordo com essa coluna. A classificação só está disponível nas colunas apropriadas.
          * Redimensionar a coluna: usando os controles deslizantes de ação ou largura
@@ -96,7 +105,7 @@ Algumas ações estão disponíveis no console, sem selecionar um fragmento de c
 
 ### Ações para um Fragmento de conteúdo (selecionado) {#actions-selected-content-fragment}
 
-Selecionar um fragmento específico abrirá uma barra de ferramentas focada nas ações disponíveis para esse fragmento. Também é possível selecionar vários fragmentos; a seleção de ações é ajustada de acordo.
+Selecionar um fragmento específico abrirá uma barra de ferramentas focada nas ações disponíveis para esse fragmento. Também é possível selecionar vários fragmentos, a seleção de ações será ajustada de acordo.
 
 ![Console de fragmentos de conteúdo - Barra de ferramentas de um fragmento selecionado](assets/cfc-fragment-toolbar.png)
 

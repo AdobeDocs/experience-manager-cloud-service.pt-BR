@@ -3,10 +3,10 @@ title: Uso do GraphiQL IDE no AEM
 description: Saiba como usar o GraphiQL IDE no Adobe Experience Manager.
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
 workflow-type: tm+mt
 source-wordcount: '1141'
-ht-degree: 91%
+ht-degree: 95%
 
 ---
 
@@ -21,7 +21,7 @@ Uma implementação do [GraphiQL](https://graphql.org/learn/serving-over-http/#g
 >Em versões anteriores, era necessário um pacote para instalar o GraphiQL IDE. Se você o instalou, agora é possível removê-lo.
 
 >[!NOTE]
->Você deve [configurar os endpoints](/help/headless/graphql-api/graphql-endpoint.md) no [navegador de configuração](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md) antes de usar o GraphiQL IDE.
+>Você deve [configurar os endpoints](/help/headless/graphql-api/graphql-endpoint.md) no [navegador de configuração](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) antes de usar o GraphiQL IDE.
 
 A variável **GraphiQL** A ferramenta permite testar e depurar as consultas do GraphQL, possibilitando:
 * selecionar o **endpoint** apropriado à configuração de Sites que deseja usar para as consultas
@@ -74,13 +74,13 @@ Use a opção **Salvar como** para criar uma consulta persistente.
 
 Selecione a consulta que deseja atualizar na lista do painel **Consultas persistentes** (lado esquerdo).
 
-A consulta é mostrada no painel do editor. Faça as alterações necessárias e use a opção **Salvar** para confirmar as atualizações da consulta persistente.
+A consulta será exibida no painel do editor. Faça as alterações necessárias e use a opção **Salvar** para confirmar as atualizações da consulta persistente.
 
 ## Execução de consultas {#running-queries}
 
-Você pode executar uma nova consulta imediatamente ou pode carregar e executar uma consulta persistente. Para carregar uma consulta persistente, selecione-a na lista; a consulta é exibida no painel do editor.
+Você pode executar uma nova consulta imediatamente ou pode carregar e executar uma consulta persistente. Para carregar uma consulta persistente, selecione-a na lista; a consulta será exibida no painel do editor.
 
-Em ambos os casos, a consulta exibida no painel do editor é a que é executada quando você:
+Em ambos os casos, a consulta exibida no painel do editor é a que será executada quando você:
 
 * clicar/tocar no ícone **Executar consulta**
 * usar a combinação de teclado `Control-Enter`

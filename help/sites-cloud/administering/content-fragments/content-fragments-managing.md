@@ -3,15 +3,24 @@ title: Gerenciamento dos fragmentos de conteúdo
 description: Saiba como usar o console de Fragmentos de conteúdo para gerenciar os fragmentos de conteúdo do AEM; para criação de páginas ou como base para o conteúdo headless.
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
 workflow-type: tm+mt
 source-wordcount: '2051'
-ht-degree: 83%
+ht-degree: 99%
 
 ---
 
 # Gerenciamento dos fragmentos de conteúdo {#managing-content-fragments}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 Saiba como usar o console de **Fragmentos de conteúdo** para gerenciar os fragmentos de conteúdo do AEM. Eles podem ser usados para criação de páginas ou como base para o conteúdo headless.
 
@@ -70,10 +79,10 @@ Para criar um fragmento de conteúdo:
 
 1. A caixa de diálogo **Novo fragmento de conteúdo** será aberta, onde é possível especificar:
 
-   * **Localização** - preenchido automaticamente com o local atual, mas você pode selecionar um local diferente, se necessário
-   * **Modelo de fragmento de conteúdo** - selecione o modelo a ser usado como base do fragmento na lista suspensa
+   * **Local**: será preenchido automaticamente com o local atual, mas você pode selecionar um local diferente se necessário
+   * **Modelo de fragmento de conteúdo**: selecione o modelo a ser usado como base do fragmento na lista suspensa
    * **Título**
-   * **Nome** - preenchido automaticamente com base no **Título**, mas você pode editá-lo, se necessário
+   * **Nome** : preenchido automaticamente com base no **Título**, mas pode ser editado se necessário
    * **Descrição**
 
    ![Caixa de diálogo Novo fragmento de conteúdo](assets/cfm-managing-new-cf-01.png)
@@ -101,7 +110,7 @@ Para abrir o fragmento para edição:
 
 >[!CAUTION]
 >
->Para editar um fragmento de conteúdo, você precisa [das permissões apropriadas](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Entre em contato com o administrador do sistema em caso de problemas.
+>Para editar um fragmento de conteúdo, você precisa [das permissões apropriadas](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Entre em contato com o(a) administrador(a) do sistema em caso de problemas.
 
 1. Use o console de **Fragmentos de conteúdo** para navegar até o local do fragmento de conteúdo.
 1. Abra o fragmento para edição, selecionando o fragmento e clicando em **Abrir** na barra de ferramentas.
@@ -144,7 +153,7 @@ Alguns recursos na barra de ferramentas superior estão disponíveis em vários 
 
 ![modos](assets/cfm-managing-top-toolbar.png)
 
-* Uma mensagem é exibida quando o fragmento já é referenciado em uma página de conteúdo. Você pode **Fechar** a mensagem.
+* Uma mensagem será exibida quando o fragmento já tiver sido referenciado em uma página de conteúdo. Você pode **Fechar** a mensagem.
 
 * O painel lateral pode ser oculto/exibido usando o ícone **Ativar painel lateral**.
 
@@ -186,7 +195,7 @@ O editor tem várias opções:
 
   >[!CAUTION]
   >
-  >Para editar um fragmento de conteúdo, você precisa [das permissões apropriadas](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Entre em contato com o administrador do sistema em caso de problemas.
+  >Para editar um fragmento de conteúdo, você precisa [das permissões apropriadas](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Entre em contato com o(a) administrador(a) do sistema em caso de problemas.
 
   >[!NOTE]
   >
@@ -196,11 +205,11 @@ O editor tem várias opções:
   >
   >Além de simplesmente salvar suas alterações, as ações também atualizam quaisquer referências e garantem que o Dispatcher seja liberado conforme necessário. Essas alterações podem levar tempo para serem processadas. Devido a isso, pode haver um impacto no desempenho de um sistema grande/complexo/com bastante conteúdo.
   >
-  >Lembre-se desse tempo de processo ao usar **Salvar e fechar** e, em seguida, entre novamente no editor de fragmentos rapidamente para fazer mais alterações e salvá-las.
+  >Lembre-se disso ao usar a opção **Salvar e fechar** e, logo em seguida, entrar novamente no editor de fragmentos para fazer mais alterações e salvá-las.
 
 * **Fechar**
 
-  Fechará o editor sem salvar as alterações mais recentes (ou seja, feitas desde a última **Salvar**).
+  Fechará o editor sem salvar as alterações mais recentes (ou seja, feitas desde o último **Salvamento**).
 
 Ao editar o fragmento de conteúdo, o AEM cria versões automaticamente para garantir que o conteúdo anterior possa ser restaurado se você cancelar as alterações (usando **Fechar** sem salvar):
 
@@ -263,16 +272,16 @@ Para publicar os fragmentos de conteúdo usando a opção **Publicar** na barra 
 >
 Se o fragmento for baseado em um modelo, é preciso certificar-se de que o [modelo foi publicado](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
 >
-Se você publicar um fragmento de conteúdo cujo modelo ainda não foi publicado, uma lista de seleção indicará isso e o modelo será publicado com o fragmento.
+Se você publicar um fragmento de conteúdo cujo modelo ainda não tenha sido publicado, uma lista de seleção indicará isso e o modelo será publicado junto com o fragmento.
 
 1. Selecione um ou mais fragmentos na lista.
 
 1. Na barra de ferramentas, selecione **Publicar** e escolha uma das opções a seguir para abrir a caixa de diálogo apropriada:
 
-   * **Agora** - selecione a opção **Serviço de publicação** ou a variável **Serviço de visualização**; após a confirmação, o fragmento é publicado imediatamente
-   * **Agendar** - além do serviço necessário, também é possível selecionar a data e a hora em que o fragmento é publicado
+   * **Agora**: selecione o **serviço de publicação** ou o **serviço de visualização**; após a confirmação, o fragmento será publicado imediatamente
+   * **Programar**: além do serviço necessário, também é possível selecionar a data e a hora em que o fragmento será publicado
 
-   Quando necessário, você deve especificar as referências para publicar. Por padrão, as referências também são publicadas no serviço de visualização para garantir que não haja interrupção no conteúdo.
+   Quando necessário, você deve especificar as referências a serem publicadas. Por padrão, as referências também são publicadas no serviço de visualização para garantir que não haja interrupção no conteúdo.
 Por exemplo, para uma solicitação de publicação agendada:
    ![Caixa de diálogo Publicar](assets/cfm-publish-01.png)
 
@@ -284,11 +293,11 @@ Você também pode publicar no **serviço de publicação** do [Editor de fragme
 
 >[!NOTE]
 >
-Depois que você [publicar uma página que use o fragmento](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing), o fragmento é listado nas referências da página.
+Após [publicar uma página que use o fragmento](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing), ele será listado nas referências da página.
 
 >[!CAUTION]
 >
-Depois que um fragmento é publicado, referenciado ou ambos, o AEM exibe um aviso quando um autor abre o fragmento para edição novamente. O autor é avisado de que as alterações no fragmento também afetarão as páginas referenciadas.
+Depois que um fragmento é publicado, referenciado ou ambos, o AEM exibe um aviso quando um(a) autor(a) abre o fragmento para edição novamente. Ele(a) é avisado(a) de que as alterações no fragmento também afetarão as páginas referenciadas.
 
 ## Desfazer a publicação de um fragmento {#unpublishing-a-fragment}
 
@@ -299,7 +308,7 @@ Quando a caixa de diálogo relevante for exibida, você poderá selecionar o ser
 
 >[!NOTE]
 >
-A variável **Cancelar publicação** A ação só estará visível quando os fragmentos publicados estiverem disponíveis.
+A ação **Desfazer a publicação** só estará visível quando os fragmentos publicados estiverem disponíveis.
 
 >[!CAUTION]
 >
@@ -321,7 +330,7 @@ Para excluir um fragmento:
 
    >[!CAUTION]
    >
-   Se o fragmento já tiver sido referenciado a partir de outro fragmento, ou de uma página, você verá uma mensagem de aviso e terá que confirmar se deseja continuar com uma **Exclusão forçada**. O fragmento, junto com seu componente de fragmento de conteúdo, são excluídos de qualquer página de conteúdo.
+   Se o fragmento já tiver sido referenciado a partir de outro fragmento, ou de uma página, você verá uma mensagem de aviso e terá que confirmar se deseja continuar com uma **Exclusão forçada**. O fragmento, junto com seu componente do fragmento de conteúdo, será excluído de qualquer página de conteúdo.
 
 ## Encontrar referências principais do fragmento {#parent-references-fragment}
 
@@ -386,7 +395,7 @@ Isso abrirá:
 
 * a versão selecionada **v&lt;*x.y*>** (à direita)
 
-Eles são mostrados lado a lado, onde:
+Elas serão mostradas lado a lado, onde:
 
 * Quaisquer diferenças serão destacadas
 

@@ -2,10 +2,10 @@
 title: Configurações e o navegador de configuração
 description: Entenda as configurações do AEM e como elas gerenciam as configurações do espaço de trabalho no AEM.
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
 source-wordcount: '1485'
-ht-degree: 4%
+ht-degree: 6%
 
 ---
 
@@ -34,7 +34,7 @@ O administrador e os autores do AEM podem considerar as configurações como esp
 Configurações podem ser criadas para vários recursos diferentes dentro do AEM.
 
 * [Segmentos do Context Hub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
-* [Modelos de fragmentos do conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+* [Modelos de fragmentos do conteúdo](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 * [Modelos editáveis](/help/sites-cloud/authoring/features/templates.md)
 * várias configurações de nuvem
 
@@ -75,12 +75,12 @@ O Navegador de configuração permite que um administrador crie, gerencie e conf
    ![Criar configuração](assets/configuration-create.png)
 
    * O **Título** deve ser descritivo.
-   * A variável **Nome** torna-se o nome do nó no repositório.
-      * Ele é gerado automaticamente com base no título e ajustado de acordo com [Convenções de nomenclatura do AEM.](naming-conventions.md)
+   * O **Nome** se tornará o nome do nó no repositório.
+      * Ele será gerado automaticamente com base no título e ajustado conforme as [convenções de nomenclatura do AEM.](naming-conventions.md)
       * Ele pode ser ajustado, se necessário.
 1. Verifique o tipo de configurações que deseja permitir.
    * [Segmentos do Context Hub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
-   * [Modelos de fragmentos do conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+   * [Modelos de fragmentos do conteúdo](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
    * [Modelos editáveis](/help/sites-cloud/authoring/features/templates.md)
    * várias configurações de nuvem
 1. Toque ou clique em **Criar**.

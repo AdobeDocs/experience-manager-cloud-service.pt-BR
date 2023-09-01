@@ -2,10 +2,10 @@
 title: Saiba mais sobre como definir metadados e marcação para fragmentos de conteúdo
 description: Saiba mais sobre como definir metadados e marcação para fragmentos de conteúdo
 exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 85%
+source-wordcount: '191'
+ht-degree: 92%
 
 ---
 
@@ -26,21 +26,9 @@ Este artigo se baseia nesses conceitos para que você entenda como usar metadado
 
 ## Adição de metadados e tags {#adding-metadata-and-tags}
 
-Há três métodos que você pode usar para adicionar metadados e tags:
+É possível adicionar metadados e tags no painel direito do Editor de fragmento de conteúdo:
 
-* Ao criar o fragmento pela primeira vez (no console **Ativos**):
-
-  ![Criar fragmento de conteúdo: fornecer um nome](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
-
-* A variável **Variações** do editor de Fragmento de conteúdo permite adicionar propriedades **Tags** do seu projeto:
-
-  ![Editor de fragmentos de conteúdo - Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
-
-* A variável **Metadados** permite adicionar vários campos de metadados e campos de dados predefinidos, **Tags** do seu projeto:
-
-  ![Editor de fragmento de conteúdo: metadados](/help/journey-headless/author/assets/headless-journey-author-metadata-01.png)
-
-   * Esse recurso também é diretamente acessível por meio da opção **Propriedades** na barra de ferramentas do console Ativos.
+![Editor de fragmentos de conteúdo - Alaska Spirits](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
 ## O que vem a seguir {#whats-next}
 
@@ -48,8 +36,8 @@ Agora é possível colocar todo esse conhecimento em prática e começar a criar
 
 ## Recursos adicionais {#additional-resources}
 
-* [Metadados - propriedades dos fragmentos](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md)
+* [Metadados - propriedades dos fragmentos](/help/sites-cloud/administering/content-fragments/authoring.md#view-properties-tags)
 
 * [Uso de tags](/help/sites-cloud/authoring/features/tags.md)
 
-* [Modelos de fragmentos de conteúdo: permitir modelos de fragmento de conteúdo na pasta Ativos](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+* [Modelos de fragmentos de conteúdo: permitir modelos de fragmento de conteúdo na pasta Ativos](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#allowing-content-fragment-models-assets-folder)

@@ -2,20 +2,31 @@
 title: Fragmentos de conteúdo
 description: Os Fragmentos de conteúdo do Adobe Experience Manager as a Cloud Service permitem projetar, criar, selecionar e usar conteúdo independente da página
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
 workflow-type: tm+mt
-source-wordcount: '1222'
-ht-degree: 86%
+source-wordcount: '1286'
+ht-degree: 92%
 
 ---
 
 # Fragmentos de conteúdo {#content-fragments}
 
-Os Fragmentos de conteúdo no Adobe Experience Manager (AEM) as a Cloud Service são [criados e gerenciados como ativos de página independentes](/help/sites-cloud/administering/content-fragments/content-fragments.md).
+Os Fragmentos de conteúdo no Adobe Experience Manager (AEM) as a Cloud Service são [criados e gerenciados como ativos de página independentes](/help/sites-cloud/administering/content-fragments/overview.md).
 
 Eles permitem criar conteúdo não vinculado a canais, juntamente com variações (podem ser específicas de cada canal). Em seguida, é possível usar estes fragmentos e suas variações ao criar suas páginas de conteúdo.
 
 Juntamente com o exportador JSON atualizado, os fragmentos de conteúdo estruturados também podem ser usados para fornecer o conteúdo do AEM através do Content Services a canais diferentes das páginas do AEM.
+
+>[!NOTE]
+>
+>Os fragmentos de conteúdo são um **Sites** recurso, mas são armazenados como **Assets**.
+>
+>Agora, eles são gerenciados principalmente com o **[Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** console, embora ainda possam ser gerenciados no **[Assets](/help/assets/content-fragments/content-fragments-managing.md)** console.
+>
+>Existem dois editores para a criação de fragmentos de conteúdo:
+>
+>* O novo editor para [Fragmentos de conteúdo - Criação](/help/sites-cloud/administering/content-fragments/authoring.md), é acessado principalmente pelo **Fragmentos de conteúdo** console.
+>* A variável [editor original](/help/assets/content-fragments/content-fragments-variations.md) é acessado principalmente pelo **Assets** console.
 
 >[!NOTE]
 >
@@ -25,11 +36,11 @@ Juntamente com o exportador JSON atualizado, os fragmentos de conteúdo estrutur
 >
 >Fragmentos de experiência podem incluir conteúdo na forma de Fragmentos de conteúdo, mas não o contrário.
 >
->Para obter mais informações, consulte [Compreensão de fragmentos de conteúdo e fragmentos de experiência no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=pt-BR).
+>Para obter mais informações, consulte [Noções sobre os fragmentos de conteúdo e fragmentos de experiência do AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=pt-BR).
 
 >[!CAUTION]
 >
->Esta página deve ser lida junto com a seção [Trabalhar com fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments.md) (e páginas relacionadas), pois apresenta a terminologia e os conceitos básicos, além dos processos de criação e de gerenciamento de fragmentos.
+>Esta página deve ser lida junto com a seção [Trabalhar com fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/overview.md) (e páginas relacionadas), pois apresenta a terminologia e os conceitos básicos, além dos processos de criação e de gerenciamento de fragmentos.
 
 Os fragmentos de conteúdo habilitam:
 
@@ -62,7 +73,7 @@ Os fragmentos de conteúdo habilitam:
    >
    >Um método alternativo é arrastar um fragmento de conteúdo específico diretamente para a página. Essa ação cria o componente associado (Fragmento de conteúdo) de maneira automática.
 
-4. Inicialmente, o conteúdo do **Principal** Elemento e **Principal** (variação) são mostrados. Você pode [selecionar outros elementos e/ou variações](#selecting-the-element-or-variation) conforme necessário.
+4. Inicialmente, o conteúdo do elemento **Principal** e do **Mestre** (variação) serão mostrados. Você pode [selecionar outros elementos e/ou variações](#selecting-the-element-or-variation) conforme necessário.
 
    ![Fragmentos de conteúdo no navegador de ativos](/help/sites-cloud/authoring/assets/content-fragments.png)
 
@@ -89,15 +100,15 @@ Na caixa de diálogo de configuração apropriada, é possível selecionar os pa
    * **Elemento de texto simples**
    * **Vários elementos**
 * **Elemento**
-   * Uma seleção está disponível dependendo do modelo usado.
+   * Haverá uma seleção disponível dependendo do modelo usado.
 
   >[!NOTE]
   >
   >Os elementos disponíveis dependem do modelo usado.
 
 * **Variação**
-   * O padrão **Principal** está sempre disponível.
-   * Uma seleção estará disponível se variações tiverem sido criadas para o fragmento.
+   * O **Mestre** padrão sempre estará disponível.
+   * Uma seleção está disponível se variações forem criadas para o fragmento.
 
 * **ID**
 
@@ -105,7 +116,7 @@ Na caixa de diálogo de configuração apropriada, é possível selecionar os pa
 
 ### Conexão rápida ao editor de fragmentos     {#quick-connection-to-fragment-editor}
 
-É possível abrir a origem do fragmento para edição (o ativo) usando o ícone **Editar** na barra de ferramentas do componente. Assim, você pode [editar e gerenciar o fragmento de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments.md).
+É possível abrir a origem do fragmento para edição (o ativo) usando o ícone **Editar** na barra de ferramentas do componente. Assim, você pode [editar e gerenciar o fragmento de conteúdo](/help/sites-cloud/administering/content-fragments/overview.md).
 
 >[!CAUTION]
 >
@@ -113,9 +124,9 @@ Na caixa de diálogo de configuração apropriada, é possível selecionar os pa
 
 ### Adicionar conteúdo intermediário     {#adding-in-between-content}
 
-Quando um fragmento de conteúdo específico for adicionado à página, há um espaço reservado para **Arrastar os componentes aqui** entre cada parágrafo HTML (e na parte superior/inferior) do fragmento.
+Quando um fragmento de conteúdo específico for adicionado à página, haverá um espaço reservado para **Arraste os componentes aqui** entre cada parágrafo HTML (e na parte superior/inferior) do fragmento.
 
-Isso permite adicionar conteúdo extra [intermediário (ou seja, conteúdo intermediário)](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) o conteúdo do fragmento (em qualquer um dos pontos disponíveis), sem precisar alterar o fragmento raiz.
+Isso permite adicionar conteúdo extra [intermediário (ou seja, conteúdo intermediário)](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) o conteúdo do fragmento (em qualquer um dos pontos disponíveis), sem precisar alterar o fragmento raiz.
 
 Quanto ao conteúdo intermediário, é possível:
 
@@ -131,13 +142,13 @@ Quanto ao conteúdo intermediário, é possível:
 
 >[!NOTE]
 >
->Também é possível [inserir ativos visuais (imagens) no próprio fragmento](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
+>Também é possível [inserir ativos visuais (imagens) no próprio fragmento](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
 >
->Os ativos visuais inseridos no próprio fragmento de conteúdo são anexados ao parágrafo anterior do fragmento. Isso significa que não é possível posicionar conteúdo intermediário entre um ativo visual e o parágrafo anterior. Se você precisar desse nível de conexão, pode adicionar a imagem ao fragmento (como [fragmento de mídia mista](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets)).
+>Os ativos visuais inseridos no próprio fragmento de conteúdo são anexados ao parágrafo anterior do fragmento. Isso significa que não é possível posicionar conteúdo intermediário entre um ativo visual e o parágrafo anterior. Se você precisar desse nível de conexão, pode adicionar a imagem ao fragmento (como [fragmento de mídia mista](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)).
 
 >[!CAUTION]
 >
->Depois de adicionar o conteúdo intermediário a um fragmento de conteúdo na página, a alteração da estrutura do fragmento de conteúdo subjacente (ou seja, no editor de fragmentos de conteúdo) pode levar a resultados errôneos/inesperados.
+>Após adicionar conteúdo intermediário a um fragmento de conteúdo em sua página, alterar a estrutura do fragmento de conteúdo subjacente (ou seja, no editor de fragmentos de conteúdo) pode levar a resultados errôneos/inesperados.
 >
 >Quando isso ocorre, o conteúdo intermediário é mantido como está:
 >
@@ -148,11 +159,11 @@ Quanto ao conteúdo intermediário, é possível:
 
 ### Usar conteúdo associado     {#using-associated-content}
 
-Se você tiver [conteúdo associado](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md) com o [fragmento de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments.md) esses ativos estão disponíveis no painel lateral (depois de colocar o fragmento na página de conteúdo). O conteúdo associado é uma fonte especial para [conteúdo intermediário](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
+Se tiver [conteúdo associado ](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md) ao [fragmento de conteúdo](/help/assets/content-fragments/content-fragments.md), esses arquivos estarão disponíveis no painel lateral (após colocar o fragmento na página de conteúdo). O conteúdo associado é essencialmente uma fonte especial de conteúdo para [conteúdo intermediário](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
 
 >[!NOTE]
 >
->Há vários métodos de adicionar [ativos visuais (por exemplo, imagens)](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) ao fragmento e/ou página.
+>Há vários métodos de adicionar [ativos visuais (por exemplo, imagens)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) ao fragmento e/ou página.
 
 >[!NOTE]
 >
@@ -160,13 +171,13 @@ Se você tiver [conteúdo associado](/help/sites-cloud/administering/content-fra
 
 Após adicionar um fragmento com conteúdo associado à página, uma nova guia (**Conteúdo associado**) é aberta no painel lateral.
 
-Aqui, é possível arrastar os ativos para o local desejado (para um componente existente ou para a posição desejada onde o componente adequado é criado):
+Aqui, é possível arrastar os arquivos para o local desejado (seja para um componente já existente ou para a posição desejada onde o componente adequado será criado): 
 
 ![Inserção de uma imagem](/help/sites-cloud/authoring/assets/content-fragments-image.png)
 
 ### Ativos inseridos no fragmento {#assets-inserted-into-the-fragment}
 
-Se os ativos (por exemplo, imagens) tiverem sido inseridos no próprio fragmento (como [fragmentos de mídia mista](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets)), as opções para editar esses ativos no editor de páginas serão limitadas.
+Se os ativos (por exemplo, imagens) tiverem sido inseridos no próprio fragmento (como [fragmentos de mídia mista](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)), as opções para editar esses ativos no editor de páginas serão limitadas.
 
 Por exemplo, para uma imagem, é possível
 
@@ -181,7 +192,7 @@ Outras alterações, como mover, copiar ou excluir, devem ser feitas no editor d
 
 Os fragmentos precisam ser publicados para que possam ser usados em suas páginas da Web publicadas:
 
-* Um fragmento pode ser publicado depois de [criado no console de Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-previewing-a-fragment).
+* Um fragmento pode ser publicado depois de [criado no console de Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment).
 * Se um *fragmento não publicado* for usado em uma página que está sendo publicada, ele também poderá ser publicado neste momento.
 
 ## Exportar fragmentos de conteúdo {#exporting-content-fragments}

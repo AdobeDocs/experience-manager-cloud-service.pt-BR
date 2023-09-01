@@ -1,8 +1,8 @@
 ---
-title: Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2022.10.0.
-description: Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2022.10.0.
+title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2022.10.0.
+description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2022.10.0.
 exl-id: 8fce7c50-f322-4bcf-bd76-390faedfd5b7
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
 source-wordcount: '836'
 ht-degree: 79%
@@ -38,7 +38,7 @@ Assista ao vídeo de Visão geral da versão de outubro de 2022 que exibe um res
 
 * A variável [Guia Personalização para Fragmentos de experiência](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) O permite recursos de especificação de segmentação para o Editor de fragmento de experiência e a flexibilidade para criar Fragmentos de experiência aninhados, nos quais as variações de cabeçalhos e rodapés podem ser criadas para vários segmentos. Antes do lançamento desse recurso, a personalização oferecida pelo AEM só está disponível para páginas do site, mas não para Fragmentos de experiência
 
-* O [Console do Fragmento do conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) agora permite que os usuários gerenciem com eficiência fragmentos de conteúdo traduzidos. Um acesso de 1 clique também foi fornecido para exibir todas as cópias de idioma. Os usuários também podem filtrar a exibição de tabela pela localidade de seu interesse.
+* O [Console do Fragmento do conteúdo](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) agora permite que os usuários gerenciem com eficiência fragmentos de conteúdo traduzidos. Um acesso de 1 clique também foi fornecido para exibir todas as cópias de idioma. Os usuários também podem filtrar a exibição de tabela pela localidade de seu interesse.
 
 ![Idiomas de Fragmentos de conteúdo](/help/release-notes/assets/cfconsole-languages.png)
 

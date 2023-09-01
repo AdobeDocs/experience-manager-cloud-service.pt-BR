@@ -2,7 +2,7 @@
 title: Guia de referência de componentes
 description: Um guia de referência do desenvolvedor para os detalhes dos componentes e sua estrutura
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
 source-wordcount: '3648'
 ht-degree: 2%
@@ -473,4 +473,4 @@ Essa marcação será exibida no campo [Console de componentes](/help/sites-clou
 
 ![README.md visível no console Componentes](assets/components-documentation-console.png)
 
-A marcação compatível é a mesma para [Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments.md).
+A marcação compatível é a mesma para [Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/overview.md).

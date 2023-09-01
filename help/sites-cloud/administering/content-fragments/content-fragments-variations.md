@@ -3,15 +3,24 @@ title: Variações - Criação dos fragmentos de conteúdo
 description: Entenda como as variações permitem criar conteúdo para o fragmento e, em seguida, crie variações desse conteúdo de acordo com a finalidade. Isso proporciona flexibilidade adicional para entregas headless e criação de páginas.
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
 workflow-type: tm+mt
 source-wordcount: '2458'
-ht-degree: 90%
+ht-degree: 98%
 
 ---
 
 # Variações - Criação dos fragmentos de conteúdo{#variations-authoring-fragment-content}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 As [Variações](/help/sites-cloud/administering/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) são um recurso importante dos fragmentos de conteúdo do AEM, pois permitem criar e editar cópias do conteúdo principal para uso em canais e/ou cenários específicos, tornando a criação de páginas e a entrega de conteúdo headless ainda mais flexíveis.
 
@@ -40,7 +49,7 @@ Executar uma série de outras ações, dependendo do tipo de dados que está sen
 
 ## Criação de conteúdo {#authoring-your-content}
 
-Ao abrir o fragmento de conteúdo para edição, a variável **Variações** é aberta por padrão. Aqui é possível criar conteúdo para o Principal ou quaisquer variações que você possua. O fragmento estruturado contém vários campos, de vários tipos de dados, que foram definidos no modelo de conteúdo.
+Ao abrir o fragmento de conteúdo para edição, a guia **Variações** é aberta por padrão. Aqui é possível criar conteúdo para o principal ou quaisquer variações que você possua. O fragmento estruturado contém vários campos, de vários tipos de dados, que foram definidos no modelo de conteúdo.
 
 Por exemplo:
 
@@ -90,7 +99,7 @@ O editor de texto em tela cheia fornece:
 
 ### Ações {#actions}
 
-As seguintes ações também estão disponíveis (para todas as [formatos](#formats)) quando o editor de tela cheia (ou seja, texto multilinha) estiver aberto:
+As seguintes ações também estão disponíveis (para todos os [formatos](#formats)) quando o editor de tela cheia (ou seja, texto multilinha) está aberto:
 
 * Selecionar o [formato](#formats) ([Rich text](#rich-text), [Texto sem formatação](#plain-text) ou [Markdown](#markdown))
 
@@ -324,7 +333,7 @@ Anotações:
 
 Para facilitar o processo de criação de fragmentos de conteúdo, você pode adicionar [Ativos](/help/assets/manage-digital-assets.md) (imagens) diretamente no fragmento.
 
-Eles são adicionados à sequência de parágrafo do fragmento sem qualquer formatação; a formatação pode ser feita quando o [o fragmento é usado/referenciado em uma página](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+Eles serão adicionados à sequência de parágrafo do fragmento sem qualquer formatação; a formatação pode ser feita quando o [fragmento for usado/referenciado em uma página](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 
 >[!CAUTION]
 >
@@ -354,14 +363,14 @@ Existem vários métodos de adicionar [imagens](/help/sites-cloud/administering/
    >
    Se, após adicionar um ativo, você alterar o formato para:
    >
-   * **Texto sem formatação**: o ativo é completamente perdido do fragmento.
-   * **Markdown**: o ativo não está visível, mas ainda está lá ao retornar para **Rich Text**.
+   * **Texto simples:** o ativo será completamente removido do fragmento.
+   * **Marcação**: o ativo não estará visível, mas ainda estará presente ao retornar para **Rich Text**.
 
 ### Inserir um fragmento de conteúdo no fragmento {#inserting-content-fragment-into-your-fragment}
 
 Para facilitar o processo de criação de fragmentos de conteúdo, também é possível adicionar outro fragmento de conteúdo ao seu fragmento.
 
-Eles são adicionados como referência, no local atual no fragmento.
+Eles serão adicionados como referência no local atual do fragmento.
 
 >[!NOTE]
 >
@@ -395,7 +404,7 @@ Existem vários métodos de adicionar [imagens](/help/sites-cloud/administering/
    >
    Se, após adicionar uma referência a outro fragmento, você alterar o formato para:
    >
-   * **Texto sem formatação**: a referência é completamente removida do fragmento.
+   * **Texto sem formatação**: a referência será completamente removida do fragmento.
    * **Markdown**: a referência permanecerá.
 
 ## Gerenciamento de variações {#managing-variations}
@@ -416,11 +425,11 @@ Para criar uma nova variação:
 1. Selecione **Variações** na barra de ícones, no painel lateral.
 1. Selecione **Criar variação**.
 1. Uma caixa de diálogo será aberta. Especifique o **Título** e a **Descrição** da nova variação.
-1. Selecionar **Adicionar**; o fragmento **Principal** é copiado para a nova variação, que agora está aberta para [edição](#editing-a-variation).
+1. Selecione **Adicionar**; o fragmento **principal** será copiado para a nova variação, que agora está aberta para [edição](#editing-a-variation).
 
    >[!NOTE]
    >
-   Ao criar uma nova variação, é sempre o **Principal** que é copiado, não a variação que está aberta no momento.
+   Ao criar uma nova variação, é sempre o **principal** que é copiado, não a variação que está aberta no momento.
 
 
    >[!NOTE]
@@ -442,7 +451,7 @@ Para renomear uma variação existente:
 
 1. Abra o fragmento e selecione **Variações** no painel lateral.
 1. Selecione a variação necessária.
-1. Selecionar **Renomear** do **Ações** menu suspenso.
+1. Selecione **Renomear** no menu suspenso de **Ações**.
 
 1. Digite o novo **Título** e/ou **Descrição** na caixa de diálogo resultante.
 
@@ -458,7 +467,7 @@ Para excluir uma variação existente:
 
 1. Abra o fragmento e selecione **Variações** no painel lateral.
 1. Selecione a variação necessária.
-1. Selecionar **Excluir** do **Ações** menu suspenso.
+1. Selecione **Excluir** no menu suspenso de **Ações**.
 
 1. Confirme a ação de **Exclusão** na caixa de diálogo.
 
@@ -476,7 +485,7 @@ Ao editar uma variação, você tem acesso à ação para sincronizar o elemento
 >
 A sincronização só está disponível para copiar alterações *do **Principal**para a variação*.
 >
-Somente o elemento atual da variação é sincronizado.
+Somente o elemento atual da variação será sincronizado.
 >
 A sincronização só funciona no tipo de dados **Texto de várias linhas**.
 >
@@ -486,7 +495,7 @@ A transferência de alterações *de uma variação para o **Principal*** não e
 
 1. Selecione uma variação específica e, em seguida, a ação de sincronização apropriada:
 
-   * o **Ações** seletor suspenso - **Sincronizar elemento atual com o principal**
+   * no seletor suspenso de **Ações** - **Sincronizar elemento atual com o principal**
 
      ![sincronização com o Principal](assets/cfm-variations-11a.png)
 
@@ -494,7 +503,7 @@ A transferência de alterações *de uma variação para o **Principal*** não e
 
      ![sincronização com o Principal](assets/cfm-variations-11b.png)
 
-1. O Principal e a variação são mostrados lado a lado:
+1. O principal e a variação serão mostrados lado a lado:
 
    * verde indica conteúdo adicionado (à variação)
    * vermelho indica conteúdo removido (da variação)
@@ -502,4 +511,4 @@ A transferência de alterações *de uma variação para o **Principal*** não e
 
    ![sincronização com o Principal](assets/cfm-variations-11c.png)
 
-1. Selecionar **Sincronizar**, a variação é atualizada e mostrada.
+1. Selecione **Sincronizar**; a variação será atualizada e mostrada.

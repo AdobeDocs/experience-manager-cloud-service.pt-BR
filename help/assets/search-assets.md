@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 069103e7a82123bff28b4aa6e9d718c12e8496e3
+source-git-commit: fb70abb2aa698303c462e38ad3bec10d028f804e
 workflow-type: tm+mt
-source-wordcount: '5372'
+source-wordcount: '5532'
 ht-degree: 7%
 
 ---
@@ -137,6 +137,20 @@ Você pode usar isso a seu favor aumentando a classificação de alguns ativos n
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
 *Vídeo: Entenda como os resultados de pesquisa são classificados e como a classificação pode ser influenciada.*
+
+## Configurar o tamanho do lote de ativos para exibir resultados de pesquisa {#configure-asset-batch-size}
+
+Agora, os administradores podem configurar o tamanho do lote de ativos que são exibidos ao realizar uma pesquisa. Os resultados da pesquisa de ativos são exibidos em múltiplos do número de tamanho de lote configurado ao rolar a tela para baixo para carregar os resultados. Você pode selecionar entre os tamanhos de lote disponíveis de 200, 500 e 1000 ativos. Definir um número de tamanho de lote mais baixo resulta em tempos de resposta de pesquisa mais rápidos.
+
+Por exemplo, se você definir o limite de contagem de resultados para um tamanho de lote de 200 ativos, o Experience Manager Assets exibirá um tamanho de lote de 200 ativos nos resultados da pesquisa quando você começar a executar a pesquisa. Ao rolar para baixo para navegar pelos resultados da pesquisa, o próximo lote de 200 ativos é exibido. O processo continua até que todos os ativos que correspondem à consulta de pesquisa sejam exibidos.
+
+Para configurar o tamanho do lote de ativos:
+
+1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Assets]** > **[!UICONTROL Configurações de ativos]** > **[!UICONTROL Configuração do Assets Omnisearch]**.
+
+1. Selecione o limite de contagem de resultados e clique em **[!UICONTROL Salvar]**.
+
+   ![Configuração do tamanho do lote de ativos](/help/release-notes/assets/assets-batch-size-configuration.png)
 
 ## Pesquisa avançada {#scope}
 

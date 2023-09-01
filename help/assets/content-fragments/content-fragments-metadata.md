@@ -2,16 +2,22 @@
 title: Metadados - Propriedades do fragmento (Ativos - Fragmentos de conteúdo)
 description: Veja como visualizar e editar as propriedades de metadados dos fragmentos de conteúdo do
 exl-id: bc67480d-a1e4-4ef9-b811-8bd110f70369
-source-git-commit: 5c59189abf809293a319d6bce4ef7389c2451f92
+source-git-commit: ceab75d3592a461478da3250a41ce00b6d4f31ef
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 77%
+source-wordcount: '274'
+ht-degree: 69%
 
 ---
 
 # Metadados - propriedades dos fragmentos {#metadata-fragment-properties}
 
 Veja como visualizar e editar as propriedades de metadados dos fragmentos de conteúdo no AEM para ajustar o conteúdo headless.
+
+>[!NOTE]
+>
+>Os fragmentos de conteúdo são um recurso do Sites, mas são armazenados como **Assets**.
+>
+>Existem dois editores para a criação de fragmentos de conteúdo. Esta seção aborda o editor original, acessado principalmente pelo **Assets** console. Consulte a documentação do Sites, [Fragmentos de conteúdo - Criação](/help/sites-cloud/administering/content-fragments/authoring.md), para obter detalhes sobre o novo editor (acessado principalmente pelo **Fragmentos de conteúdo** console).
 
 ## Edição de propriedades / metadados {#editing-properties-meta-data}
 
@@ -37,9 +43,9 @@ Por exemplo, você pode marcar fragmentos relevantes como “lançamento de Nata
 
         >[!NOTE]
         >
-        >**Tags** também pode ser adicionado quando [criação de conteúdo de variação](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content) e quando [criação de variações](/help/assets/content-fragments/content-fragments-variations.md#creating-a-variation).
+        >**Tags** também podem ser adicionadas ao [criar conteúdo de variação](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content) e ao [criar variações](/help/assets/content-fragments/content-fragments-variations.md#creating-a-variation).
 
-   * **Criado em** (somente exibição)
+   * **Criado** (somente exibição)
 
    Por exemplo:
    ![Exemplo de metadados](assets/cfm-metadata-02.png)

@@ -3,15 +3,24 @@ title: Trabalho com fragmentos de conteúdo
 description: Saiba como os fragmentos de conteúdo no Adobe Experience Manager (AEM) as a Cloud Service permitem projetar, criar, preparar e usar conteúdo independente de página, ideal para criação de páginas e entrega headless.
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
 workflow-type: tm+mt
 source-wordcount: '2122'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # Trabalho com fragmentos de conteúdo {#working-with-content-fragments}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 Com o Adobe Experience Manager (AEM) as a Cloud Service, os fragmentos de conteúdo permitem projetar, criar, preparar e [publicar conteúdo independente de página](/help/sites-cloud/authoring/fundamentals/content-fragments.md) Com eles é possível preparar conteúdo pronto para uso em vários locais/canais, ideal para a criação de páginas e entrega headless.
 
@@ -87,7 +96,7 @@ Esses fragmentos de conteúdo podem ser reunidos para proporcionar experiências
 >
 >Fragmentos de experiência podem incluir conteúdo na forma de Fragmentos de conteúdo, mas não o contrário.
 >
->Para obter mais informações, consulte [Compreensão de fragmentos de conteúdo e fragmentos de experiência no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=pt-BR).
+>Para obter mais informações, consulte [Entenda sobre os fragmentos de conteúdo e fragmentos de experiência do AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=pt-BR).
 
 ## Fragmentos de conteúdo e serviços de conteúdo {#content-fragments-and-content-services}
 
@@ -147,7 +156,7 @@ Fragmentos de conteúdo são uma estrutura de conteúdo que:
 * Podem [conter ou estar conectados a imagens](#fragments-with-visual-assets).
 * Podem usar [conteúdo intermediário](#in-between-content-when-page-authoring-with-content-fragments) quando referenciados em uma página.
 
-* São independentes do mecanismo de entrega (ou seja, página, canal).
+* São independentes do mecanismo de entrega (ou seja, a página ou canal).
 
 ### Fragmentos com ativos visuais {#fragments-with-visual-assets}
 
@@ -294,13 +303,13 @@ Para usar os Fragmentos de conteúdo para a criação de páginas, também é ne
 
    * Fundamental para entregar o fragmento no formato HTML e/ou JSON.
    * Obrigatório para [fazer referência ao fragmento em uma página](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
-   * Responsável pela disposição e entrega de um fragmento; ou seja, canais.
+   * Responsável pelo layout e entrega de um fragmento (ou seja, os canais).
    * Os fragmentos precisam de um ou mais componentes dedicados para definir o layout e fornecer alguns ou todos os elementos/variações e conteúdo associado.
    * Arrastar um fragmento para uma página na criação associará automaticamente o componente necessário.
 
 ## Exemplo de uso {#example-usage}
 
-Um fragmento, com seus elementos e variações, pode ser usado para criar conteúdo coerente para vários canais. Ao projetar o fragmento, considere o que usou e onde.
+Um fragmento, com seus elementos e variações, pode ser usado para criar conteúdo coerente para vários canais. Ao criar um fragmento, considere o que foi usado e onde.
 
 ### Amostra do WKND {#wknd-sample}
 

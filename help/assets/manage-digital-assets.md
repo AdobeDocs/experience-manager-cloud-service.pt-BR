@@ -6,9 +6,9 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5b61b60a94b944a747232b238c3ce48195a5a212
 workflow-type: tm+mt
-source-wordcount: '4376'
+source-wordcount: '4508'
 ht-degree: 11%
 
 ---
@@ -76,6 +76,21 @@ Depois de ativado, o Experience Manager envia notificações de ativos duplicado
 >[!NOTE]
 >
 >Ao fazer upload de ativos no repositório, o Experience Manager detecta a duplicação e notifica sobre os primeiros 100 ativos duplicados.
+
+## Extrair arquivos ZIP {#extract-zip-archives}
+
+Selecione arquivos ZIP que são gerenciados no Experience Manager e extraia os arquivos diretamente no Experience Manager sem baixá-los.
+
+Para extrair os arquivos ZIP, execute as seguintes etapas:
+
+1. Selecione o tipo de arquivo ZIP.
+1. Clique em **[!UICONTROL Extrair arquivo]** opção disponível na barra de ações.
+1. Selecione a pasta na qual você precisa salvar os ativos extraídos que estão disponíveis na pasta compactada.
+1. Clique em **[!UICONTROL Avançar]**.
+1. Selecione o comportamento apropriado para resolver conflitos de nome de arquivo durante a extração. É possível optar por criar uma nova versão de um ativo existente, substituir o ativo, manter ambos os ativos na pasta de destino ou ignorar a extração do novo ativo.
+1. Clique em **[!UICONTROL Extract]**. O processo de extração de zip é iniciado. Quando o processo estiver concluído, você poderá visualizar os ativos extraídos na pasta de destino.
+
+   ![extração do zip](assets/zip-extraction.png)
 
 ## Visualizar ativos {#previewing-assets}
 
@@ -273,7 +288,7 @@ Além disso, desative o botão Forçar exclusão usando uma sobreposição, para
 1. Na caixa de diálogo de confirmação, clique em:
 
    * **[!UICONTROL Cancelar]** para interromper a ação
-   * **[!UICONTROL Excluir]** para confirmar a ação:
+   * Clique em **[!UICONTROL Excluir]** para confirmar a ação:
 
       * Se o ativo não tiver referências, o ativo é excluído.
       * Se o ativo tiver referências, uma mensagem de erro informará que **[!UICONTROL Um ou mais ativos são mencionados]**. É possível selecionar **[!UICONTROL Forçar Exclusão]** ou **[!UICONTROL Cancelar]**.

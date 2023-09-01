@@ -4,10 +4,10 @@ description: Saiba como configurar a estrutura de integração de tradução par
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
 source-wordcount: '1518'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Para obter uma visão geral dos recursos de tradução de conteúdo do AEM, cons
 
 >[!TIP]
 >
->Se você é novo na tradução de conteúdo, consulte [Jornada de tradução de sites,](/help/journey-sites/translation/overview.md) que é um caminho guiado pela tradução de conteúdo do AEM Sites usando ferramentas de tradução poderosas do AEM, ideais para aqueles sem experiência com o AEM ou com tradução.
+>Caso seja novo na tradução de conteúdo, consulte a [Jornada de tradução do Sites](/help/journey-sites/translation/overview.md), que é um caminho guiado pela tradução do seu conteúdo do AEM Sites usando as ferramentas de tradução avançadas do AEM, ideais para quem não tem experiência no AEM ou em tradução.
 
 ## Conexão com um provedor de serviços de tradução {#connecting-to-a-translation-service-provider}
 
@@ -73,7 +73,7 @@ Uma única configuração da estrutura controla como o conteúdo e os ativos da 
 1. Navegue até o local em que deseja criar a configuração na estrutura do conteúdo. Isso é geralmente baseado em um site específico, mas pode ser global.
 1. Forneça as seguintes informações nos campos e clique ou toque em **Criar**.:
    1. Selecione o **Tipo de configuração** no menu suspenso.
-   1. Insira um **Título** para sua configuração. A variável **Título** identifica a configuração na variável **Cloud Services** console e nas listas suspensas de propriedade da página.
+   1. Insira um **Título** para sua configuração. O **Título** identifica a configuração no console dos **Cloud Services**, bem como nas listas suspensas de propriedades da página.
    1. Opcionalmente, digite um **Nome** para usar no nó do repositório que armazena a configuração.
 1. Na janela **Editar configuração**, configure as propriedades nas guias **Sites** e **Ativos** e, em seguida, clique ou toque em **Salvar e fechar**.
 
@@ -109,7 +109,7 @@ As propriedades de ativos controlam como configurar ativos. Para obter mais info
 | Traduzir tags | Ative essa propriedade para traduzir tags associadas ao ativo. |
 | Executar a tradução automaticamente | Selecione essa propriedade para executar trabalhos de tradução automaticamente após a criação de projetos de tradução. Você não terá a oportunidade de revisar ou analisar o trabalho de tradução ao selecionar essa opção. |
 | Desabilitar tradução somente de atualização | Quando essa opção estiver marcada, a atualização do projeto de tradução enviará todos os campos traduzíveis para tradução, e não apenas os alterados desde a última tradução. |
-| Habilitar campos do modelo de conteúdo para tradução | Habilitar essa opção fará com que o campo **Traduzível** nos [Modelos de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties) seja usado para determinar se o campo será traduzido e criará [regras de tradução](rules.md) apropriadas automaticamente. Essa opção substitui todas as regras de tradução criadas por você. |
+| Habilitar campos do modelo de conteúdo para tradução | Habilitar essa opção fará com que o campo **Traduzível** nos [Modelos de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties) seja usado para determinar se o campo será traduzido e criará [regras de tradução](rules.md) apropriadas automaticamente. Essa opção substitui todas as regras de tradução criadas por você. |
 
 ## Configuração de páginas para tradução {#configuring-pages-for-translation}
 

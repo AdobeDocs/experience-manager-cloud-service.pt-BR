@@ -3,10 +3,10 @@ title: Considerações de permissão para conteúdo headless
 description: Saiba mais sobre as diferentes permissões e considerações de ACL para uma implementação headless com o Adobe Experience Manager. Entenda os diferentes perfis e os possíveis níveis de permissão necessários para os ambientes do Autor e de Publicação.
 feature: Content Fragments,GraphQL API
 exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 526520a8d9d217d0861a7283b10f7b89dffaf9d5
 workflow-type: tm+mt
 source-wordcount: '841'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -52,9 +52,9 @@ Se estiver usando o IMS para associação de grupo, adicione os grupos IMS aprop
 
 É melhor não modificar diretamente as permissões de um grupo pronto para uso. Em vez disso, você também pode criar seu(s) próprio(s) grupo(s) modelado(s) a partir das permissões do grupo **Usuários DAM** e restringir ainda mais o acesso a diferentes **pastas** no AEM Assets.
 
-Para obter permissões mais granulares, use o **Permissões** no AEM e atualize o caminho de `/content/dam` para um caminho mais específico, ou seja, `/content/dam/mycontentfragments`.
+Para obter permissões mais específicas, use o console **Permissões** no AEM e atualize o caminho `/content/dam` para um caminho mais específico, ou seja, `/content/dam/mycontentfragments`.
 
-Pode ser desejável conceder permissões para criar e editar fragmentos de conteúdo, mas não excluir, a esse grupo de usuários. Para revisar e atribuir permissões para edição, mas não para exclusão, consulte [Fragmentos de conteúdo - excluir considerações](/help/sites-cloud/administering/content-fragments/content-fragments-delete.md).
+Pode ser desejável conceder permissões para criar e editar fragmentos de conteúdo, mas não excluir, a esse grupo de usuários. Para revisar e atribuir permissões para edição, mas não para exclusão, consulte [Fragmentos de conteúdo - excluir considerações](/help/sites-cloud/administering/content-fragments/delete-considerations.md).
 
 ### Editores de modelo
 

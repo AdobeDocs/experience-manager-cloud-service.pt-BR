@@ -2,10 +2,10 @@
 title: Como modelar seu conteúdo
 description: Nesta parte da jornada do desenvolvedor do AEM Headless, saiba como modelar o conteúdo para a entrega do AEM Headless usando a modelagem de conteúdo com modelos de fragmento de conteúdo e fragmentos de conteúdo.
 exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
 workflow-type: tm+mt
 source-wordcount: '1828'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -45,7 +45,7 @@ Este artigo se baseia nesses fundamentos para que você entenda como preparar se
 
 *O mundo é grande e complexo*.
 
-Talvez, mas talvez não. Trata-se certamente de uma ***complicado*** mundo lá fora e a modelagem de dados é usada para definir uma representação simplificada de uma subseção muito (muito) pequena, usando as informações específicas necessárias para um determinado propósito.
+Talvez, mas talvez não. É certamente um mundo ***complicado*** lá fora e a modelagem de dados é usada para definir uma representação simplificada de uma subseção muito (muito) pequena dele, utilizando as informações específicas que são necessárias para um determinado propósito.
 
 >[!NOTE]
 >
@@ -270,10 +270,10 @@ Agora que você aprendeu a modelar a estrutura e criar um conteúdo que é depen
 
 ## Recursos adicionais {#additional-resources}
 
-* [Trabalhar com fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments.md) - a página introdutória para fragmentos de conteúdo
-   * [Fragmentos de conteúdo no navegador de configuração](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md) - ativar a funcionalidade de fragmento de conteúdo no navegador de configuração
-   * [Modelos de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) - criação e edição dos modelos de fragmentos de conteúdo
-   * [Gerenciamento de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md) - geração e criação de fragmentos de conteúdo; esta página leva a outras seções detalhadas
+* [Trabalhar com fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/overview.md) - a página introdutória para fragmentos de conteúdo
+   * [Fragmentos de conteúdo no navegador de configuração](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) - ativar a funcionalidade de fragmento de conteúdo no navegador de configuração
+   * [Modelos de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) - criação e edição dos modelos de fragmentos de conteúdo
+   * [Gerenciamento de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/managing.md) - geração e criação de fragmentos de conteúdo; esta página leva a outras seções detalhadas
 * [Esquemas GraphQL do AEM](access-your-content.md) - como o GraphQL trabalha com modelos
 * [Amostra da estrutura do fragmento de conteúdo](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql)
 * [Introdução ao AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=pt-BR) - Uma breve série de tutoriais em vídeo que fornece uma visão geral do uso de recursos do AEM Headless, incluindo a modelagem de conteúdo e o GraphQL

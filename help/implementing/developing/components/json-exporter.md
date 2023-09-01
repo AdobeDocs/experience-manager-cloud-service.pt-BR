@@ -2,7 +2,7 @@
 title: Exportador JSON para serviços de conteúdo
 description: Os Serviços de conteúdo do AEM foram criados para generalizar a descrição e a entrega de conteúdo de e para o AEM para além do foco em páginas da Web. Eles realizam a entrega de conteúdo para canais que não são páginas da Web tradicionais do AEM, usando métodos padronizados que podem ser consumidos por qualquer cliente.
 exl-id: d3ddffb7-cef9-4c86-aa31-175f13f9b4a5
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 31%
@@ -49,21 +49,21 @@ Sua página pode conter um único fragmento de conteúdo ou vários componentes 
 
 * Por exemplo, um URL como:
 
-   ```shell
-   http://localhost:4502/content/wknd/language-masters/en/magazine/guide-la-skateparks/jcr:content/root/container/container/contentfragment.model.json
-   ```
+  ```shell
+  http://localhost:4502/content/wknd/language-masters/en/magazine/guide-la-skateparks/jcr:content/root/container/container/contentfragment.model.json
+  ```
 
 * Fornecerá conteúdo como:
 
-   ![Modelo JSON do fragmento de conteúdo do WKND](assets/json-model-wknd-content-fragment.png)
+  ![Modelo JSON do fragmento de conteúdo do WKND](assets/json-model-wknd-content-fragment.png)
 
-   >[!NOTE]
-   >
-   >Você pode [adapte seus próprios componentes](enabling-json-exporter.md) para acessar e usar esses dados.
+  >[!NOTE]
+  >
+  >Você pode [adapte seus próprios componentes](enabling-json-exporter.md) para acessar e usar esses dados.
 
-   >[!NOTE]
-   >
-   >Embora não seja uma implementação padrão, [vários seletores são compatíveis,](enabling-json-exporter.md#multiple-selectors) mas `model` deve ser o primeiro.
+  >[!NOTE]
+  >
+  >Embora não seja uma implementação padrão, [vários seletores são compatíveis,](enabling-json-exporter.md#multiple-selectors) mas `model` deve ser o primeiro.
 
 ### Informações adicionais {#further-information}
 
@@ -80,7 +80,7 @@ Consulte também:
 
 Para obter mais detalhes, consulte:
 
-* [Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments.md)
-* [Modelos de fragmentos do conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+* [Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/overview.md)
+* [Modelos de fragmentos do conteúdo](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 * [Criação com fragmentos de conteúdo](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
 * [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) e a variável [Componente Fragmento de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=pt-BR)

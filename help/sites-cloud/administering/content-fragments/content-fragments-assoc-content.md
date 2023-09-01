@@ -3,15 +3,25 @@ title: Conteúdo associado
 description: Entenda como o recurso de conteúdo associado para Fragmentos de conteúdo fornece a conexão para que os ativos sejam (opcionalmente) usados com o fragmento, adicionando flexibilidade adicional à criação de página e à entrega de conteúdo sem periféricos.
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: eb524872-1403-42d1-b735-eaab382cf313
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
 workflow-type: tm+mt
 source-wordcount: '239'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
+
 # Conteúdo associado{#associated-content}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 O recurso de conteúdo associado do AEM fornece a conexão para que os ativos possam ser usados opcionalmente com o fragmento quando ele for adicionado a uma página de conteúdo, [fornecendo uma gama de ativos para acessar ao usar o fragmento de conteúdo em uma página](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) e, ao mesmo tempo, ajudando a reduzir o tempo necessário para pesquisar o ativo apropriado. Isso também proporciona flexibilidade para a entrega de conteúdo headless.
 
@@ -29,8 +39,8 @@ Para fazer a associação, primeiro é necessário [adicionar ativos de mídia a
 
 1. Dependendo de alguma coleção já ter sido associada ou não, selecione:
 
-   * **Conteúdo associado** - a primeira coleção associada
-   * **Associar coleção** - as coleções associadas já estão configuradas
+   * **Conteúdo associado**: a primeira coleção associada
+   * **Associar Coleção**: as coleções associadas já estão configuradas
 
 1. Selecione a coleção necessária.
 

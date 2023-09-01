@@ -2,9 +2,9 @@
 title: Registro para AEM as a Cloud Service
 description: Saiba como usar o Logging para AEM as a Cloud Service para configurar parâmetros globais para o serviço de log central, configurações específicas para os serviços individuais ou como solicitar o registro de dados.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 2fcc33cfb8b0be89b4b9f91d687dc21ba456000c
+source-git-commit: 7d4e1acee54ebcb1398bcc6ab83491e3fa6a8801
 workflow-type: tm+mt
-source-wordcount: '2683'
+source-wordcount: '2669'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,7 @@ As configurações de registro as a Cloud Service do AEM e os níveis de registr
 
 * Registro de AEM, que realiza o registro no nível do aplicativo AEM
 * Registro do Apache HTTPD Web Server/Dispatcher, que realiza o registro do servidor Web e do Dispatcher na camada de Publicação.
-* O registro em log da CDN, que, como seu nome indica, executa registros em log na CDN. Este recurso está atualmente disponível para os participantes antecipados; para participar do programa de adoção antecipada, envie um email para **aemcs-cdnlogs-adopter@adobe.com**, incluindo o nome da organização e o contexto sobre o interesse no recurso.
+* O registro em log da CDN, que, como seu nome indica, executa registros em log na CDN. Esse recurso será lançado gradualmente para os clientes no início de setembro.
 
 ## Registro de AEM {#aem-logging}
 
@@ -504,10 +504,12 @@ Define DISP_LOG_LEVEL debug
 
 >[!NOTE]
 >
->Esse recurso ainda não está disponível para o público geral. Para participar do programa de adoção antecipada em andamento, envie um email para **aemcs-cdnlogs-adopter@adobe.com**, incluindo o nome da organização e o contexto sobre o interesse no recurso.
+>Esse recurso será lançado gradualmente para os clientes no início de setembro.
 >
 
 O AEM as a Cloud Service fornece acesso a logs CDN, que são úteis para casos de uso, incluindo otimização da taxa de ocorrência do cache. O formato de log CDN não pode ser personalizado e não há conceito de configurá-lo para modos diferentes, como info, warn ou error.
+
+Observe que o recurso de encaminhamento do Splunk ainda não oferece suporte a logs CDN.
 
 **Exemplo**
 
@@ -600,6 +602,8 @@ Dependendo do tráfego e da quantidade da instrução de log gravada pela Depura
 Os clientes que têm contas do Splunk podem solicitar por meio do tíquete de suporte ao cliente que seus logs do AEM Cloud Service sejam encaminhados para o índice apropriado. Os dados de registro são equivalentes aos disponíveis por meio dos downloads de log do Cloud Manager, mas os clientes podem achar conveniente usar os recursos de consulta disponíveis no produto Splunk.
 
 A largura de banda da rede associada aos logs enviados ao Splunk é considerada parte do uso de E/S da rede pelo cliente.
+
+Observe que o encaminhamento do Splunk ainda não oferece suporte a logs CDN.
 
 ### Ativando o encaminhamento do Splunk {#enabling-splunk-forwarding}
 

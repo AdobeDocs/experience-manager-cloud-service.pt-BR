@@ -2,10 +2,10 @@
 title: Saiba mais sobre como usar referências em Fragmentos de conteúdo
 description: Saiba mais sobre como usar referências em Fragmentos de conteúdo para conteúdo, outros fragmentos e outros ativos (mídia). Apresente a necessidade e a mecânica de fragmentos aninhados para a criação de CMS headless.
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
 workflow-type: tm+mt
-source-wordcount: '728'
-ht-degree: 87%
+source-wordcount: '712'
+ht-degree: 92%
 
 ---
 
@@ -35,7 +35,7 @@ As referências são simplesmente um mecanismo para conectar seus recursos, seja
 
 Algumas referências têm tipos de dados dedicados (por exemplo, Referências de conteúdo e Referências de fragmento), enquanto outras são simplesmente adicionadas como referência em um bloco de texto (referências de ativos e referências ad hoc).
 
-![Fragmentos de conteúdo: referências](/help/journey-headless/author/assets/headless-journey-author-references-01.png)
+![Fragmentos de conteúdo: referências](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
 ## Referências de conteúdo {#content-references}
 
@@ -71,7 +71,7 @@ E isso é só para começar. Dependendo da complexidade, um prêmio pode ser esp
 
 A representação dessas inter-relações pode ser alcançada com as Referências de fragmento, já que são entendidas por você (o autor) e pelos aplicativos headless.
 
-Como autor, você não é responsável por definir esses relacionamentos (isso é feito pelo Arquiteto de conteúdo ao criar o modelo de fragmento de conteúdo), mas precisa saber como reconhecer e editar as referências.
+Como autor(a), você não é responsável por definir esses relacionamentos (isso é feito por arquitetos(as) de conteúdo ao criar o modelo de fragmento de conteúdo), mas é preciso saber como reconhecer e editar as referências.
 
 <!--
 ![Content Modeling with Content Fragments](/help/journey-headless/developer/assets/headless-modeling-01.png "Content Modeling with Content Fragments")
@@ -92,11 +92,7 @@ A definição do Modelo de fragmento de conteúdo controla:
 
 Com a utilização da guia **Árvore da estrutura** do Editor de fragmento de conteúdo, é possível navegar pelos fragmentos referenciados pelo fragmento e, em seguida, por meio de quaisquer referências que eles possam conter. Selecionar uma referência abre esse fragmento para edição.
 
->[!NOTE]
->
->Com a utilização da navegação estrutural no painel principal, é possível navegar de volta ao ponto inicial.
-
-![Árvore de estrutura do fragmento de conteúdo](/help/sites-cloud/administering/content-fragments/assets/cfm-structuretree-02.png)
+![Árvore de estrutura do fragmento de conteúdo](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-structure-tree.png)
 
 ## Referências ad hoc {#adhoc-references}
 
@@ -110,21 +106,21 @@ Agora que você aprendeu sobre referências e estrutura nos Fragmentos de conte�
 
 ## Recursos adicionais {#additional-resources}
 
-* [Trabalho com Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+* [Trabalho com Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/overview.md)
 
-   * [Gerenciamento dos Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
+   * [Gerenciamento dos Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/managing.md)
 
-      * [Aplique a configuração à sua pasta de ativos](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+      * [Aplique a configuração à sua pasta de ativos](/help/sites-cloud/administering/content-fragments/setup.md#apply-the-configuration-to-your-folder)
 
-      * [Criação de um Fragmento de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+      * [Criação de um Fragmento de conteúdo](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment)
 
-   * [Variações: criação de Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
+   * [Criação de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/authoring.md)
 
-   * [Modelos de fragmentos do conteúdo](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+   * [Modelos de fragmentos do conteúdo](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 
-      * [Modelos de fragmento de conteúdo - Tipos de dados](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
+      * [Modelos de fragmento de conteúdo - Tipos de dados](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
 
-      * [Modelos de fragmento de conteúdo: propriedades](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
+      * [Modelos de fragmento de conteúdo: propriedades](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties)
 
 * Guias de introdução
    * [Criação de uma pasta de ativos - Configuração do headless](/help/headless/setup/create-assets-folder.md)

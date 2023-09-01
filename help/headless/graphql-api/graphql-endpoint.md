@@ -3,10 +3,10 @@ title: Gerenciar endpoints de GraphQL no AEM
 description: Saiba como gerenciar endpoints de GraphQL no Adobe Experience Manager as a Cloud Service para entrega de conteúdo headless.
 feature: Content Fragments,GraphQL API
 exl-id: f7164ae3-4074-4db7-8c43-a79cc2ef00b1
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
 workflow-type: tm+mt
 source-wordcount: '513'
-ht-degree: 87%
+ht-degree: 95%
 
 ---
 
@@ -22,10 +22,10 @@ Há dois tipos de endpoints no AEM:
 
 * Global
    * Disponível para uso por todos os sites.
-   * Esse endpoint pode usar todos os modelos de fragmento de conteúdo de todas as configurações do Sites (definidas no [Navegador de configuração](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)).
+   * Esse endpoint pode usar todos os modelos de fragmento de conteúdo de todas as configurações do Sites (definidas no [Navegador de configuração](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)).
    * Se houver modelos de fragmento de conteúdo que devem ser compartilhados entre as configurações do Sites, eles devem ser criados nas configurações globais do Sites.
 * Configurações do Sites:
-   * Corresponde a uma configuração do Sites, conforme definido no [Navegador de configuração](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser).
+   * Corresponde a uma configuração do Sites, conforme definido no [Navegador de configuração](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser).
    * Específico de um site/projeto especificado.
    * Um endpoint específico de uma configuração do Sites usará os modelos de fragmento de conteúdo dessa configuração, junto com aqueles da configuração global do Sites.
 
@@ -33,7 +33,7 @@ Há dois tipos de endpoints no AEM:
 >
 >O Editor de fragmento de conteúdo pode permitir que um fragmento de conteúdo de uma configuração do Sites faça referência a um fragmento de conteúdo de outra configuração do Sites (por meio de políticas).
 >
->Nesse caso, nem todo o conteúdo pode ser recuperado usando um endpoint específico de uma configuração do Sites.
+>Nesse caso, nem todo o conteúdo poderá ser recuperado usando um ponto de acesso específico de uma configuração do Sites.
 >
 >O autor de conteúdo deve controlar esse cenário; por exemplo, pode ser útil considerar colocar modelos de fragmento de conteúdo compartilhados na configuração global do Sites.
 
@@ -52,11 +52,11 @@ Para habilitar um endpoint para GraphQL no AEM, é necessário:
 
 ## Habilitação do seu endpoint de GraphQL {#enabling-graphql-endpoint}
 
-Para habilitar um endpoint de GraphQL, primeiro é necessário ter uma configuração apropriada. Consulte [Fragmentos de conteúdo - Navegador de configuração](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md).
+Para habilitar um endpoint de GraphQL, primeiro é necessário ter uma configuração apropriada. Consulte [Fragmentos de conteúdo - Navegador de configuração](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser).
 
 >[!CAUTION]
 >
->Se o [uso de modelos de fragmento de conteúdo não foi habilitado](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md), a opção **Criar** não estará disponível.
+>Se o [uso de modelos de fragmento de conteúdo não foi habilitado](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser), a opção **Criar** não estará disponível.
 
 Para habilitar o endpoint correspondente:
 
@@ -70,7 +70,7 @@ Para habilitar o endpoint correspondente:
    >
    >O seguinte aviso é mostrado na caixa de diálogo:
    >
-   >* *Os endpoints do GraphQL podem causar problemas de segurança e desempenho de dados se não forem gerenciados com cuidado. Verifique se as permissões apropriadas estão definidas após a criação de um endpoint.*
+   >* *Os endpoints do GraphQL podem apresentar problemas de desempenho e de segurança de dados se não forem gerenciados com cuidado. Certifique-se de que as permissões apropriadas estejam definidas após a criação de um ponto de acesso.*
 
 1. Confirme com **Criar**.
 1. A variável **Próximas etapas** A caixa de diálogo fornecerá um link direto para o console de Segurança, para que você possa garantir que o endpoint recém-criado tenha as permissões adequadas.

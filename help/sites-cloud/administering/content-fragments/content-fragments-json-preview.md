@@ -3,8 +3,11 @@ title: Visualização - Representação JSON
 description: Saiba como visualizar facilmente a representação em JSON dos fragmentos de conteúdo ao implementar sua solução AEM Headless.
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: bffc13e5-586b-4598-98fb-b1688d9716c5
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
 workflow-type: tm+mt
 source-wordcount: '114'
 ht-degree: 100%
@@ -12,6 +15,12 @@ ht-degree: 100%
 ---
 
 # Visualização - Representação JSON {#preview-json-representation}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 Ao desenvolver os modelos para fragmentos de conteúdo como parte de sua implementação do AEM Headless, você pode querer visualizar uma amostra da saída em JSON para um fragmento de conteúdo, conforme baseada em um modelo. Por exemplo, para ter uma ideia de como a saída final será. Isso pode ser útil ao validar a estrutura JSON do modelo, talvez com conteúdo de amostra padrão por tipo de dados.
 
