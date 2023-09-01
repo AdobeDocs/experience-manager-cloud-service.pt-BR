@@ -2,9 +2,9 @@
 title: Diretrizes de desenvolvimento do AEM as a Cloud Service
 description: Conheça as diretrizes para desenvolvimento no AEM as a Cloud Service e as principais diferenças em relação ao AEM local e ao AEM no AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 5a60c491db4a182529a2c4b6490b18b356c14fa7
 workflow-type: tm+mt
-source-wordcount: '2653'
+source-wordcount: '2746'
 ht-degree: 4%
 
 ---
@@ -99,6 +99,14 @@ A replicação reversa de Publicar para Autor não é compatível com o AEM as a
 O conteúdo é replicado do Autor para a Publicação por meio de um mecanismo pub-sub. Os agentes de replicação personalizados não são compatíveis.
 
 ## Monitoramento e depuração {#monitoring-and-debugging}
+
+## Sem sobrecarga nos ambientes de desenvolvimento {#overloading-dev-envs}
+
+Os ambientes de produção são dimensionados mais alto para garantir uma operação estável, enquanto os ambientes de preparo são dimensionados como ambientes de produção para garantir testes realistas em condições de produção.
+
+Os ambientes de desenvolvimento e os ambientes de desenvolvimento rápido devem se limitar ao desenvolvimento, à análise de erros e aos testes funcionais, e não foram projetados para processar altas cargas de trabalho nem grandes quantidades de conteúdo.
+
+Por exemplo, alterar uma definição de índice em um grande repositório de conteúdo em um ambiente de desenvolvimento pode resultar na reindexação, resultando em muito processamento. Os testes que exigem conteúdo substancial devem ser executados em ambientes de preparo.
 
 ### Logs {#logs}
 
