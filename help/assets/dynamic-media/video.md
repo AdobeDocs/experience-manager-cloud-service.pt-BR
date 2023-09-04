@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 3203e79d1dd083d13d9357b21040dfa88194c4db
+source-git-commit: 1df4f371fe4a98b910634b4742d9ff1a9448674f
 workflow-type: tm+mt
-source-wordcount: '9445'
+source-wordcount: '9442'
 ht-degree: 2%
 
 ---
@@ -576,7 +576,6 @@ Alguns dos casos de uso a serem considerados para adicionar múltiplas legendas 
 | **Legendas** | Suporte a vários idiomas |
 |  | Texto descritivo para acessibilidade |
 | **Faixas de áudio** | Suporte a vários idiomas |
-|  | Estéreo versus multicanal (som surround) |
 |  | Faixas de comentários |
 |  | Áudio descritivo |
 
@@ -669,7 +668,7 @@ No cenário em que você configurou o Dynamic Media para publicação imediata, 
 
 >[!CAUTION]
 >
->Ao fazer upload de arquivos de legenda ou de áudio para um vídeo já publicado, esses arquivos serão excluídos se você [*reprocessar*](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets) o vídeo. Somente o áudio original do vídeo permanece intacto. Nesses casos, você deve fazer upload novamente dos arquivos de legenda e de faixa de áudio para o vídeo.
+>Ao fazer upload de arquivos de legenda ou de áudio para um vídeo publicado ou não, os arquivos serão excluídos se você [*reprocessar*](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets) o vídeo. Somente o áudio original do vídeo permanece intacto. Nesses casos, você deve fazer upload novamente dos arquivos de legenda e de faixa de áudio para o vídeo.
 
 #### Adicione várias legendas a um vídeo que tenha um URL existente com modificador de legenda
 
