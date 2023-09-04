@@ -1,9 +1,9 @@
 ---
 title: Importar ativos em massa usando a exibição Ativos
 description: Saiba como importar ativos em massa usando a nova interface do usuário do Assets (exibição de Ativos). Ele fornece aos administradores a capacidade de importar um grande número de ativos de uma fonte de dados para o AEM Assets.
-source-git-commit: 49d1e002f22427d8ffc6c5bdecd054c10eac47b9
+source-git-commit: 5cc522db4bd86514c1093a0d6fee481f6604fc26
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '1177'
 ht-degree: 3%
 
 ---
@@ -11,6 +11,10 @@ ht-degree: 3%
 # Importar ativos em massa usando a exibição Ativos  {#bulk-import-assets-view}
 
 A Importação em massa na visualização do AEM Assets fornece aos administradores a capacidade de importar um grande número de ativos de uma fonte de dados para o AEM Assets. Os administradores não precisam mais fazer upload de ativos ou pastas individuais para o AEM Assets.
+
+>[!NOTE]
+>
+>O importador de itens em massa de exibição do Assets usa o mesmo back-end do importador em massa de exibição do administrador. No entanto, ele oferece mais fontes de dados para importar do e uma experiência do usuário mais simplificada.
 
 Você pode importar ativos das seguintes fontes de dados:
 
@@ -58,6 +62,14 @@ Execute as seguintes etapas para criar uma configuração de importação em mas
    ![Executar importação em massa](assets/bulk-import-run.png)
 
 1. Clique em **[!UICONTROL Salvar]** para executar a opção selecionada.
+
+### Manipulação de nomes de arquivo durante a importação em massa {#filename-handling-bulkimport-assets-view}
+
+Ao importar ativos ou pastas em massa, [!DNL Experience Manager Assets] importa toda a estrutura do que existe na fonte de importação. [!DNL Experience Manager] O segue as regras incorporadas para caracteres especiais nos nomes de ativos e pastas, portanto, esses nomes de arquivos precisam de limpeza. Tanto para o nome da pasta quanto para o nome do ativo, o título definido pelo usuário permanece inalterado e é armazenado em `jcr:title`.
+
+Durante a importação em massa, [!DNL Experience Manager] procure as pastas existentes para evitar a reimportação de ativos e pastas e também verifique as regras de limpeza aplicadas na pasta principal onde a importação ocorre. Se as regras de limpeza forem aplicadas na pasta principal, as mesmas regras serão aplicadas à origem de importação. Para novas importações, as seguintes regras de limpeza são aplicadas para gerenciar os nomes de arquivos de ativos e pastas.
+
+Para obter mais informações sobre nomes não permitidos, tratamento de nomes de ativos e tratamento de nomes de pastas durante a importação em massa, consulte [Manipulação de nomes de arquivo durante a importação em massa na exibição de Administração](add-assets.md##filename-handling-bulkimport).
 
 ## Exibir configurações de importação em massa existentes {#view-import-configuration}
 
