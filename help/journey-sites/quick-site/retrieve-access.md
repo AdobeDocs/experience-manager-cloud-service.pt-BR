@@ -3,9 +3,9 @@ title: Recuperar informações de acesso do repositório Git
 description: Saiba como o desenvolvedor de front-end usa o Cloud Manager para acessar informações do repositório Git.
 exl-id: 3ef1cf86-6da4-4c09-9cfc-acafc8f6dd5c
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '891'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ Saiba como o desenvolvedor de front-end usa o Cloud Manager para acessar informa
 
 Se você for um desenvolvedor de front-end responsável apenas pela personalização do tema do site, não precisará de conhecimento sobre como o AEM foi configurado e poderá pular para a seção [Objetivo](#objective) deste documento.
 
-Se você também desempenha a função de administrador do Cloud Manager ou do AEM e desenvolvedor de front-end, aprendeu no documento anterior da jornada de Criação rápida de sites do AEM, [Conceder acesso ao desenvolvedor de front-end,](grant-access.md) como integrar o desenvolvedor de front-end para que ele tenha acesso ao repositório Git, e você agora deve saber:
+Se também desempenha a função de administrador do Cloud Manager ou do AEM e de desenvolvedor de front-end, você aprendeu no documento anterior da jornada de criação rápida de site do AEM, [Concessão de acesso ao desenvolvedor de front-end](grant-access.md), a como integrar o desenvolvedor de front-end para que ele tenha acesso ao repositório git, e agora você deve saber:
 
 * Como adicionar um desenvolvedor front-end como usuário.
 * Como conceder as funções necessárias ao desenvolvedor front-end.
@@ -50,7 +50,7 @@ A ferramenta de Criação rápida de sites permite que desenvolvedores de front-
    * Um email de boas-vindas do Cloud Manager que o informa sobre o acesso
    * O nome do programa ou o URL que leva a ele dentro do Cloud Manager
 
-Se você não tiver algum desses itens, entre em contato com o administrador do AEM ou com o administrador do Cloud Manager.
+Se algum desses itens estiver faltando, entre em contato com o administrador do AEM ou do Cloud Manager.
 
 Presume-se que o desenvolvedor de front-end tenha ampla experiência com fluxos de trabalho de desenvolvimento de front-end e ferramentas comuns instaladas, incluindo:
 
@@ -72,7 +72,7 @@ O administrador do Cloud Manager terá integrado você como um usuário do Cloud
 
 ![Email de boas-vindas](assets/welcome-email.png)
 
-Se você não recebeu esse email, entre em contato com o administrador do Cloud Manager.
+Se não recebeu esse email, entre em contato com o administrador do Cloud Manager.
 
 ## Acessar o Cloud Manager {#access-cloud-manager}
 
