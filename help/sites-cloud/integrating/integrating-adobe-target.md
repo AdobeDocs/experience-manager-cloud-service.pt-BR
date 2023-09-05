@@ -1,13 +1,13 @@
 ---
 title: Integração com o Adobe Target
-description: Saiba como integrar o Adobe Target ao AEM as a Cloud Service usando a interface do usuário sensível ao toque e o Adobe Launch.
+description: Saiba como integrar o Adobe Target ao AEM as a Cloud Service usando a interface do usuário de toque e o Adobe Launch.
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
 source-git-commit: 957758a8d3c16328e7638356e7ee6df3e561386d
 workflow-type: tm+mt
 source-wordcount: '1034'
-ht-degree: 66%
+ht-degree: 98%
 
 ---
 
@@ -18,13 +18,13 @@ Como parte da Adobe Experience Cloud, o Adobe Target permite aumentar a relevân
 * usar a interface de toque para criar uma Configuração do Target no AEM as a Cloud Service (configuração IMS necessária).
 * adicionar e configurar o Adobe Target como uma extensão no [Adobe Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html?lang=pt-BR).
 
-O Adobe Launch é necessário para gerenciar propriedades do lado do cliente para o Analytics e o Target em páginas do AEM (bibliotecas/tags JS). Dito isso, a integração com o Launch é necessária para o &quot;Direcionamento de experiência&quot;.
+O Adobe Launch é necessário para gerenciar propriedades do lado do cliente para o Analytics e o Target em páginas do AEM (bibliotecas/tags JS). Dito isso, a integração com o Launch é necessária para o “direcionamento de experiência”.
 
 Para exportar fragmentos de experiência e/ou fragmentos de conteúdo para o Target, você só precisa da [configuração do Adobe Target e do IMS](/help/sites-cloud/integrating/integration-adobe-target-ims.md).
 
 >[!NOTE]
 >
->Os clientes que não têm uma conta do Target existente podem solicitar acesso ao Target Foundation Pack para Experience Cloud. O Foundation Pack fornece uso limitado por volume do Target.
+>Clientes que não têm uma conta do Target podem solicitar acesso ao Target Foundation Pack for Experience Cloud. O Foundation Pack fornece uso limitado por volume do Target.
 
 ## Criação da configuração do Adobe Target {#create-configuration}
 
@@ -38,20 +38,20 @@ Para exportar fragmentos de experiência e/ou fragmentos de conteúdo para o Tar
 
 ### Configuração IMS {#ims-configuration}
 
-Uma configuração IMS para o Launch e o Target é necessária para integrar corretamente o Target ao AEM e ao Launch. Embora a configuração do IMS para o Launch seja pré-configurada no AEM as a Cloud Service, a configuração do IMS do Target deve ser criada (após o provisionamento do Target). Consulte [Configuração do IMS para uso na integração com o Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md) e o vídeo [Integração de Experience Platform Launch e AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html) para saber como criar a configuração do IMS do Target.
+Uma configuração IMS para o Launch e o Target é necessária para integrar corretamente o Target ao AEM e ao Launch. Embora a configuração do IMS para o Launch seja pré-configurada no AEM as a Cloud Service, a configuração do IMS do Target deve ser criada (após o provisionamento do Target). Consulte [Configuração do IMS para uso na integração com o Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md) e assista ao vídeo [Integrar o Experience Platform Launch e o AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=pt-BR) para saber como criar a configuração do IMS do Target.
 
 ### ID de locatário do Adobe Target e código de cliente do Adobe Target {#tenant-client}
 
-Ao configurar os campos ID de locatário do Adobe Target e Código do cliente do Adobe Target, esteja ciente do seguinte:
+Ao configurar os campos ID de locatário do Adobe Target e Código de cliente do Adobe Target, observe que:
 
-1. Para a maioria dos clientes, a ID do locatário e o Código do cliente são iguais. Ou seja, ambos os campos contêm as mesmas informações e são idênticos. Insira a ID do locatário em ambos os campos.
+1. Para a maioria dos clientes, a ID de locatário e o código de cliente são iguais. Isso significa que ambos os campos contêm as mesmas informações e são idênticos. Insira a ID do locatário em ambos os campos.
 2. Para fins herdados, você também pode inserir valores diferentes nos campos ID do locatário e Código do cliente.
 
 Em ambos os casos:
 
-* Por padrão, o Código do cliente (se adicionado primeiro) também é copiado automaticamente para o campo ID do locatário.
-* Se necessário, é possível alterar o conjunto padrão de ID do locatário.
-* As chamadas de back-end para o Target são baseadas na ID do locatário e as chamadas do lado do cliente para o Target são baseadas no Código do cliente.
+* Por padrão, o código de cliente (se adicionado primeiro) também é copiado automaticamente para o campo ID de locatário.
+* Se necessário, é possível alterar o conjunto padrão da ID de locatário.
+* As chamadas de back-end para o Target são baseadas na ID de locatário e as chamadas do lado do cliente para o Target serão baseadas no código de cliente.
 
 Como dito anteriormente, o primeiro caso é o mais comum para o AEM as a Cloud Service. De qualquer maneira, verifique se **ambos** os campos contêm as informações corretas, dependendo de suas necessidades.
 
@@ -59,8 +59,8 @@ Como dito anteriormente, o primeiro caso é o mais comum para o AEM as a Cloud S
 >
 > Se quiser alterar uma Configuração do Target existente:
 >
-> 1. Insira novamente a ID do locatário.
-> 2. Reconectar-se ao Target.
+> 1. Digite novamente a ID de locatário.
+> 2. Reconecte-se ao Target.
 > 3. Salve a configuração.
 
 ### Editar a configuração do Target {#edit-target-configuration}
@@ -74,15 +74,15 @@ Para editar a configuração do Target, siga estas etapas:
 
 ### Adicionar uma configuração a um site {#add-configuration}
 
-Para aplicar uma configuração da interface para toque a um site, acesse: **Sites** > **Selecionar qualquer página do site** > **Propriedades** > **Avançado** > **Configuração** > Selecione o locatário de configuração.
+Para aplicar uma configuração da interface de toque a um site, acesse: **Sites** → **Selecionar qualquer página do site** → **Propriedades** → **Avançado** → **Configuração** → Selecione o locatário da configuração.
 
 ## Integração do Adobe Target no AEM Sites usando o Adobe Launch {#integrate-target-launch}
 
-O AEM oferece uma integração pronta para uso com o Experience Platform Launch. Ao adicionar a extensão do Adobe Target ao Experience Platform Launch, é possível usar os recursos do Adobe Target em páginas da web do AEM. As bibliotecas do Target só são renderizadas usando o Launch.
+O AEM oferece uma integração pronta para uso com o Experience Platform Launch. Ao adicionar a extensão do Adobe Target ao Experience Platform Launch, é possível usar os recursos do Adobe Target em páginas da web do AEM. As bibliotecas do Target só serão renderizadas usando o Launch.
 
 >[!NOTE]
 >
->As estruturas existentes (legadas) ainda funcionam, mas não podem ser configuradas na interface de toque. O Adobe recomenda recriar as configurações de mapeamento de variáveis no Launch.
+>As estruturas existentes (legadas) ainda funcionam, mas não podem ser configuradas na interface de toque. A Adobe recomenda recriar as configurações de mapeamento de variáveis no Launch.
 
 Como visão geral, as etapas de integração são:
 
@@ -104,7 +104,7 @@ Uma propriedade é um container preenchido com extensões, regras e elementos de
 
 ### Adicionar as extensões necessárias {#add-extension}
 
-**Extensões** são o container que gerencia as principais configurações da biblioteca. A extensão do Adobe Target aceita implementações do lado do cliente usando o SDK JavaScript do Target para a web moderna, a at.js. Adicione ambos **Adobe Target** e **Adobe ContextHub** extensões.
+As **Extensões** são o container que gerencia as principais configurações da biblioteca. A extensão do Adobe Target aceita implementações do lado do cliente usando o SDK JavaScript do Target para a web moderna, a at.js. Adicione as extensões do **Adobe Target** e do **Adobe ContextHub**.
 
 1. Selecione a opção Catálogo de extensões e procure pelo Target no filtro.
 2. Selecione at.js do **Adobe Target** e clique na opção Instalar.
@@ -112,7 +112,7 @@ Uma propriedade é um container preenchido com extensões, regras e elementos de
 3. Selecione o botão **Configurar**. Observe a janela de configuração com as credenciais de conta do Target importadas e a versão do at.js para essa extensão.
 4. Selecione **Salvar** para adicionar a extensão do Target à propriedade do Launch. Você pode ver a extensão do Target na lista **Extensões instaladas**.
    ![Salvar extensão](assets/configure_extension1.png "Salvar extensão")
-5. Repita as etapas acima para pesquisar a variável **Adobe ContextHub** e instale-a (esta extensão é necessária para a integração com parâmetros do contexthub, com base nos quais o direcionamento é feito).
+5. Repita as etapas acima para encontrar a extensão **Adobe ContextHub** e instale-a (isso é necessário para a integração com parâmetros do ContextHub, com base nos quais o direcionamento será feito).
 
 ### Criar um elemento de dados {#data-element}
 
@@ -126,11 +126,11 @@ Uma propriedade é um container preenchido com extensões, regras e elementos de
 
 ### Criar uma regra de página {#page-rule}
 
-Entrada **Regra**, ele define e ordena uma sequência de ações, que são executadas no site, para atingir o direcionamento.
+Em **Regra**, é possível definir e ordenar uma sequência de ações, que são executadas no local, para realizar o direcionamento.
 
 1. Adicione um conjunto de ações, como exemplificado na captura de tela.
    ![Ações](assets/rules1.png "Ações")
-2. Em Adicionar parâmetros a todas as mboxes, adicione o elemento de dados configurado anteriormente (consulte o elemento de dados acima) ao parâmetro enviado na chamada de mbox.
+2. Em Adicionar parâmetros a todas as mBoxes, adicione o elemento de dados configurado anteriormente (consulte o elemento de dados acima) ao parâmetro que será enviado na chamada de mBox.
    ![Mbox](assets/map_data1.png "Ações")
 
 ### Criar e publicar {#build-publish}
@@ -156,4 +156,4 @@ Para saber como criar e publicar, consulte [página](https://experienceleague.ad
 
 >[!NOTE]
 >
->As configurações herdadas ainda são compatíveis com clientes existentes (sem a opção de editar ou criar). As configurações herdadas fazem parte dos pacotes de conteúdo carregados pelos clientes que usam o VSTS.
+>As configurações herdadas ainda são permitidas para clientes existentes (sem a opção de editar ou criar). As configurações herdadas são parte dos pacotes de conteúdo carregados por clientes que usam o VSTS.

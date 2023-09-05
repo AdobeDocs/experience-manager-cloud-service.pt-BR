@@ -5,7 +5,7 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '757'
-ht-degree: 83%
+ht-degree: 89%
 
 ---
 
@@ -40,7 +40,7 @@ O AEM as a Cloud Service oferece um serviço de rede de entrega de conteúdo (CD
 * Os nomes de domínio personalizados (e certificados) que são instalados na CDN gerenciada pelo AEM são gerenciados através do Cloud Manager.
 * Os nomes de domínio personalizados (e certificados) que são instalados em sua própria CDN são gerenciados nessa CDN específica.
 
-Os domínios gerenciados na sua própria CDN não precisam ser instalados por meio do Cloud Manager. Eles são disponibilizados para o AEM por meio do X-Forwarded-Host e correspondem aos vhosts definidos no Dispatcher. Consulte a [Documentação da CDN](/help/implementing/dispatcher/cdn.md).
+Os domínios gerenciados em sua própria CDN não precisam ser instalados via Cloud Manager. Eles são disponibilizados no AEM por meio do X-Forwarded-Host e correspondem aos vhosts definidos no Dispatcher. Consulte a [documentação da CDN](/help/implementing/dispatcher/cdn.md).
 
 Em um ambiente, é possível ter ambos os domínios instalados na CDN gerenciada pela AEM e instalados em sua própria CDN.
 

@@ -7,7 +7,7 @@ exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1415'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
@@ -51,7 +51,7 @@ Dependendo das suas necessidades organizacionais, os mesmos usuários podem ter 
 Antes de começar as tarefas descritas neste documento como um desenvolvedor ou gerente de implantação, verifique se o administrador do sistema concluiu todas as etapas desta jornada de integração. Isso significa que:
 
 * O administrador do sistema atribuiu desenvolvedores e gerentes de implantação aos respectivos perfis de produto.
-* Os desenvolvedores também devem ser atribuídos a **Usuários do AEM** ou **Administradores de AEM** os perfis de produto na também usam AEM.
+* Além disso, desenvolvedores(as) devem ser atribuídos(as) aos perfis de produto **Usuários do AEM** ou **Admins do AEM** para usar o AEM.
 * Os recursos de nuvem foram configurados.
 
 ## Acesso ao Git {#accessing-git}

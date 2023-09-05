@@ -5,7 +5,7 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 source-git-commit: d3bc5dbb5a88aff7765beffc8282d99063dde99f
 workflow-type: tm+mt
 source-wordcount: '1005'
-ht-degree: 92%
+ht-degree: 98%
 
 ---
 
@@ -108,7 +108,7 @@ Esta tabela se refere aos números de versão do produto. Os números de compila
 
 >[!NOTE]
 >
->A partir de abril de 2022, o JDK do Oracle se tornará o JDK padrão para o desenvolvimento e a operação de aplicativos AEM. O processo de compilação do Cloud Manager muda automaticamente para o uso do JDK do Oracle, mesmo que uma opção alternativa seja explicitamente selecionada na cadeia de ferramentas Maven. Consulte as notas de versão de abril de 2022.
+>A partir de abril de 2022, o JDK do Oracle será o JDK padrão para o desenvolvimento e a operação de aplicativos do AEM. O processo de criação do Cloud Manager passa automaticamente a usar o JDK do Oracle, mesmo que uma opção alternativa esteja explicitamente selecionada na conjunto de ferramentas do Maven. Consulte as notas de versão de abril de 2022.
 
 #### Versão alternativa do JDK de execução do Maven {#alternate-maven-jdk-version}
 
@@ -243,4 +243,4 @@ Essa mesma técnica pode ser usada para instalar pacotes de linguagem específic
 
 >[!TIP]
 >
->Para obter detalhes sobre o ambiente de build de front-end, consulte [Desenvolvimento de sites com o pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md).
+>Para obter detalhes sobre o ambiente de criação de front-end, consulte o [Desenvolvimento de sites com o pipeline de front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md).

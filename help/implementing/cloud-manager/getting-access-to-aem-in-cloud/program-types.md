@@ -5,7 +5,7 @@ exl-id: 507df619-a5b5-419a-9e38-db77541425a2
 source-git-commit: fc14675e47e7a61bf36acb9a16756a593189b702
 workflow-type: tm+mt
 source-wordcount: '520'
-ht-degree: 88%
+ht-degree: 97%
 
 ---
 
@@ -35,7 +35,7 @@ Um programa do Cloud Manager será provisionado automaticamente com seu próprio
 
 Para acessar o repositório Git do Cloud Manager, os usuários precisarão usar um cliente Git com uma ferramenta de linha de comando, um cliente Git visual independente ou um IDE de escolha do usuário, como Eclipse, IntelliJ ou NetBeans.
 
-Depois que um cliente Git é configurado, você pode gerenciar seu repositório Git na interface do Cloud Manager. Para saber mais sobre como gerenciar o Git usando a interface do Cloud Manager, consulte [Acesso ao Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
+Após configurar o cliente Git, você pode gerenciar seu repositório Git na interface do Cloud Manager. Para saber mais sobre como gerenciar o Git usando a interface do Cloud Manager, consulte [Acesso ao Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
 
 Para começar a desenvolver o aplicativo do AEM Cloud, é necessário fazer uma cópia local do código do aplicativo movendo-o do repositório do Cloud Manager para um local no computador.
 
@@ -59,5 +59,5 @@ Um usuário pode criar um **produção** programa ou um **sandbox** programa.
    * Consulte [Introdução aos programas de produção](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) para obter mais detalhes.
 * Um **programa de sandbox** é normalmente criado para fins de treinamento, execução de demonstrações, capacitação, POCs ou documentação.
    * Um ambiente de sandbox não se destina a transportar tráfego direto e terá restrições que um programa de produção não terá.
-   * Ele inclui Sites e Ativos e é fornecido preenchido automaticamente com uma ramificação Git que inclui código de amostra, um ambiente de desenvolvimento e um pipeline de não produção.
+   * Ele inclui sites e ativos e é preenchido automaticamente com uma ramificação Git que inclui o código de amostra, um ambiente de desenvolvimento e um pipeline de não produção.
    * Consulte [Introdução aos programas de sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) para obter mais detalhes.

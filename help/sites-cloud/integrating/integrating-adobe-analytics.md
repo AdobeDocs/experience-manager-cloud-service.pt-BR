@@ -7,7 +7,7 @@ exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '573'
-ht-degree: 82%
+ht-degree: 93%
 
 ---
 
@@ -47,7 +47,7 @@ Os campos presentes na janela de configuração são os seguintes:
 
 ### Adobe Analytics com autenticação IMS {#configuration-parameters-ims}
 
-Uma configuração IMS é necessária para integrar corretamente o Adobe Analytics ao AEM as a Cloud Service. Essa configuração deve ser criada para que consulte [página](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md) para saber como criar a configuração IMS do Analytics.
+Uma configuração IMS é necessária para integrar corretamente o Adobe Analytics com o AEM as a Cloud Service. Essa configuração deve ser criada. Portanto, consulte esta [página](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md) para saber como criar a configuração IMS do Analytics.
 
 ### Adicionar uma configuração a um site {#add-configuration}
 

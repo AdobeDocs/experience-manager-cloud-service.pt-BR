@@ -5,7 +5,7 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '560'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Você pode adicionar um nome de domínio personalizado a partir de dois locais n
 
 >[!NOTE]
 >
->Um usuário deve ter o **Proprietário da empresa** ou **Gerente de implantação** Função para adicionar um nome de domínio personalizado no Cloud Manager
+>O usuário deve ter uma função de **Proprietário da empresa** ou **Gerente de implantação** para adicionar um nome de domínio personalizado no Cloud Manager
 
 ## Adição de um nome de domínio personalizado na página Configurações do domínio {#adding-cdn-settings}
 
@@ -42,7 +42,7 @@ Siga estas etapas para adicionar um nome de domínio personalizado na página **
    >
    >Não inclua `http://`, `https://` ou espaços ao inserir seu domínio.
 
-1. Selecione o **Ambiente** cujo serviço está associado ao nome de domínio.
+1. Selecione o **Ambiente** cujo serviço será associado ao nome de domínio.
 
 1. Selecione **Publicar** ou **Visualizar** serviço.
 
@@ -54,13 +54,13 @@ Siga estas etapas para adicionar um nome de domínio personalizado na página **
 
 A implantação do CDN requer um certificado SSL válido e uma verificação TXT bem-sucedida. Isso é indicado pelo status **Verificado e implantado**.
 
-Consulte [Verificação de status do nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) para saber mais sobre vários status e como resolver com possíveis problemas.
+Consulte [Verificar o status do nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) para saber mais sobre diferentes status e como resolver possíveis problemas.
 
 >[!NOTE]
 >
 >A verificação de DNS pode levar algumas horas para ser processada devido a atrasos de propagação de DNS.
 >
->O Cloud Manager verificará a propriedade e atualizará o status que pode ser visto na Tabela de configurações do domínio. Consulte [Verificação de status do nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) para obter mais detalhes.
+>O Cloud Manager verificará a propriedade e atualizará o status que pode ser visto na Tabela de configurações do domínio. Consulte [Verificar o status do nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) para obter mais detalhes.
 
 >[!TIP]
 >
@@ -98,13 +98,13 @@ Siga estas etapas para adicionar um nome de domínio personalizado na página **
 
 A implantação do CDN requer um certificado SSL válido e uma verificação TXT bem-sucedida. Isso é indicado pelo status **Verificado e implantado**.
 
-Consulte [Verificação de status do nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) para saber mais sobre vários status e como resolver com possíveis problemas.
+Consulte [Verificar o status do nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) para saber mais sobre diferentes status e como resolver possíveis problemas.
 
 >[!NOTE]
 >
 >A verificação de DNS pode levar algumas horas para ser processada devido a atrasos de propagação de DNS.
 >
->O Cloud Manager verificará a propriedade e atualizará o status que pode ser visto na Tabela de configurações do domínio. Consulte [Verificação de status do nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) para obter mais detalhes.
+>O Cloud Manager verificará a propriedade e atualizará o status que pode ser visto na Tabela de configurações do domínio. Consulte [Verificar o status do nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) para obter mais detalhes.
 
 >[!TIP]
 >

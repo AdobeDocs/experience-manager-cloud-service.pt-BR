@@ -5,7 +5,7 @@ exl-id: 6e294f0b-52cb-40dd-bc42-ddbcffdf5600
 source-git-commit: 9fd7c17fce8c11809eabcc6387cbace0ebdc64a2
 workflow-type: tm+mt
 source-wordcount: '338'
-ht-degree: 84%
+ht-degree: 96%
 
 ---
 
@@ -17,7 +17,7 @@ Uma vez verificado e implantado com sucesso seu nome de domínio personalizado, 
 
 Um `CNAME` ou um registro, uma vez provisionado, encaminhará todo o tráfego de Internet do domínio para onde quer que esteja apontando. Se esse local não for provisionado para veicular o tráfego, haverá uma interrupção. Se não for testado, poderá haver erros no conteúdo. É por isso que essa etapa é sempre realizada após a conclusão dos testes, quando você está pronto para entrar em produção.
 
-Para definir essas configurações, é necessário determinar se uma `CNAME` O registro apex deve ser configurado para apontar seu nome de domínio personalizado para o nome de domínio do Cloud Manager. As seções a seguir ajudarão você a determinar qual tipo de registro é apropriado para sua configuração de DNS.
+Para definir essas configurações, é necessário determinar se um registro `CNAME` ou Apex precisa ser configurado para apontar seu nome de domínio personalizado para o nome de domínio do Cloud Manager. As seções a seguir ajudarão você a determinar qual tipo de registro é apropriado para sua configuração de DNS.
 
 >[!NOTE]
 >

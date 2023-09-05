@@ -7,7 +7,7 @@ exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '2714'
-ht-degree: 92%
+ht-degree: 96%
 
 ---
 
@@ -148,7 +148,7 @@ O MSM é diretamente acessível por meio da interface usando várias opções do
 
 ### Termos usados {#terms-used}
 
-Como introdução, a tabela a seguir fornece uma visão geral dos principais termos usados com o MSM. Eles são abordados com mais detalhes nas seções e páginas subsequentes.
+Como introdução, a tabela a seguir fornece uma visão geral dos principais termos usados com o MSM. Eles serão abordados com mais detalhes nas seções e páginas subsequentes.
 
 | Termo | Definição | Mais detalhes |
 |---|---|---|
@@ -161,7 +161,7 @@ Como introdução, a tabela a seguir fornece uma visão geral dos principais ter
 | Capítulo | As seções do blueprint a serem incluídas na Live Copy | Geralmente, essas são subpáginas da raiz |
 | Sincronização | O termo genérico para a sincronização de conteúdo entre o conteúdo original e as Live Copies (através das opções de **Implantação** e **Sincronização**) |  |
 | Implantação | Sincroniza desde o original até a Live Copy | Pode ser acionado por um autor (em uma página de blueprint) ou por um evento do sistema (conforme definido pela configuração de implantação) |
-| Configuração de implantação | Regras que determinam quais propriedades são sincronizadas, como e quando |  |
+| Configuração de implantação | Regras que determinam como, quando e quais propriedades serão sincronizadas |  |
 | Sincronizar | Uma solicitação manual de sincronização, feita a partir das páginas da Live Copy |  |
 | Herança | Uma página/componente da Live Copy herda o conteúdo de sua página/componente original quando a sincronização ocorre |  |
 | Suspender | Remove temporariamente o relacionamento dinâmico entre uma Live Copy e sua página de blueprint |  |
@@ -229,15 +229,15 @@ Ao criar uma Live Copy no AEM, você pode visualizar e navegar pela ramificaçã
 Quando você (ou um processo) cria uma [nova página em uma Live Copy existente](#live-copy-with-non-live-copy-pages), esta nova página também pode ser configurada como uma Live Copy de um blueprint diferente. Isso é conhecido como Live Copy aninhada. Em Live Copies aninhadas, o comportamento da segunda Live Copy (ou Live Copy interna) é afetado pela primeira Live Copy (ou Live Copy externa) das seguintes maneiras:
 
 * Uma implantação profunda, que é acionada para a Live Copy de nível superior, pode continuar na Live Copy aninhada.
-* Quaisquer links entre as origens são regravados nas Live Copies.
+* Qualquer link entre as origens será reescrito dentro das Live Copies.
 
-Por exemplo, os links que apontam do segundo ao primeiro blueprint são reescritos como links que apontam da segunda Live Copy (aninhada) para a primeira Live Copy.
+Por exemplo, os links que apontam do segundo para o primeiro blueprint serão reescritos como links que apontam da segunda Live Copy/Live copy aninhada para a primeira.
 
 ![Live Copies aninhadas](../assets/live-copy-nested.png)
 
 >[!NOTE]
 >
->Se você mover ou renomear uma página na ramificação da Live Copy, ela será tratada como uma Live Copy aninhada para permitir que o AEM rastreie os relacionamentos.
+>Se você mover ou renomear uma página na ramificação da Live Copy, ela será tratada como uma Live Copy aninhada para permitir que o AEM rastreie as relações.
 
 #### Live Copies empilhadas {#stacked-live-copies}
 

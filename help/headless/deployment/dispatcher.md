@@ -6,7 +6,7 @@ exl-id: 78a20021-910f-4cf0-87bf-6e2223994f76
 source-git-commit: 316680823fe4bc85e1f4359305047c0d1f517dc7
 workflow-type: tm+mt
 source-wordcount: '232'
-ht-degree: 50%
+ht-degree: 94%
 
 ---
 
@@ -19,9 +19,9 @@ O [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispat
 >
 >Para obter a documentação detalhada sobre o Dispatcher, consulte o [Guia do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR).
 
-Como parte de um Projeto AEM, é incluído um módulo do Dispatcher que contém configurações para o Dispatcher. Projetos recém-gerados do [Arquétipo de projeto AEM](https://github.com/adobe/aem-project-archetype) incluir automaticamente [filtros](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=pt-BR#defining-a-filter) que ativam endpoints do GraphQL.
+Os projetos do AEM incluem um módulo de Dispatcher que contém as configurações do Dispatcher. Projetos recém-gerados do [arquétipo de projeto do AEM](https://github.com/adobe/aem-project-archetype) incluem automaticamente [filtros](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=pt-BR#defining-a-filter) que habilitam pontos de acesso GraphQL.
 
-## Endpoints do GraphQL
+## Pontos de acesso GraphQL
 
 Como parte dos filtros padrão, [endpoints GraphQL](/help/headless/graphql-api/graphql-endpoint.md) são abertos com a seguinte regra:
 
@@ -29,11 +29,11 @@ Como parte dos filtros padrão, [endpoints GraphQL](/help/headless/graphql-api/g
 /0060 { /type "allow" /method '(POST|OPTIONS)' /url "/content/_cq_graphql/*/endpoint.json" }
 ```
 
-O curinga `*` abre vários endpoints na instância do AEM. A consulta usando um endpoint do GraphQL é feita usando `POST` e a resposta é **não** em cache.
+O curinga `*` abre vários endpoints na instância do AEM. As consultas que utilizam um ponto de acesso GraphQL são feitas usando `POST`, e a resposta **não** é armazenada em cache.
 
-## Consultas GraphQL Persistidas
+## Consultas persistentes de GraphQL
 
-A solicitação de consultas persistidas é feita em um endpoint diferente. Como parte da configuração de filtro padrão, o URL de [Consultas persistentes](/help/headless/graphql-api/persisted-queries.md) é aberto com a seguinte regra:
+A solicitação de consultas persistentes é feita em um ponto de acesso diferente. Como parte da configuração de filtro padrão, o URL das [consultas persistentes](/help/headless/graphql-api/persisted-queries.md) é aberto com a seguinte regra:
 
 ```
 /0061 { /type "allow" /method '(GET|POST|OPTIONS)' /url "/graphql/execute.json*" }

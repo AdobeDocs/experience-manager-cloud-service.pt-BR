@@ -5,7 +5,7 @@ exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
 source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
 source-wordcount: '399'
-ht-degree: 76%
+ht-degree: 96%
 
 ---
 
@@ -19,7 +19,7 @@ O AEM as a Cloud Service (Serviço do autor) está integrado ao Unified Shell pa
 
 Os benefícios disso são:
 
-* Logon único em todos os aplicativos Experience Cloud
+* Logon único em todos os aplicativos da Experience Cloud
 * Fácil alternação entre organizações ou para um aplicativo diferente
 * Ajuda do produto aprimorada
 * Botão de feedback de fácil acesso no produto para reportar problemas ou compartilhar ideias com a Adobe
@@ -34,7 +34,7 @@ Por padrão, o AEM as a Cloud Service vem com o Unified Shell ativado. No entant
 
 1. Clique em **Ferramentas > Cloud Services**.
 
-   Um usuário administrador vê o cartão Configuração do Unified Shell, como mostrado abaixo:
+   Admins veem o cartão de configuração do Unified Shell como mostrado abaixo:
 
    ![imagem](/help/overview/assets/unifiedshell2.png)
 
@@ -44,7 +44,7 @@ Por padrão, o AEM as a Cloud Service vem com o Unified Shell ativado. No entant
 
 ## Alterar para o tema escuro {#changing-to-dark-theme}
 
-Para alterar para o tema escuro, clique no ícone do perfil. Essa ação exibe um popover como mostrado abaixo. Você pode usar o botão de alternância para alternar para um tema escuro do Unified Shell.
+Para alterar para o tema escuro, clique no ícone do seu perfil. Essa ação exibe um popover, conforme mostrado abaixo. Você pode usar o botão de alternância para alternar para um tema escuro do Unified Shell.
 
 >[!INFO]
 >
@@ -60,7 +60,7 @@ O AEM as a Cloud Service fornece três tipos de ambientes: produção, preparo e
 
 ## Acessar a Caixa de entrada AEM {#accessing-the-aem-inbox}
 
-A Caixa de entrada do AEM pode ser acessada clicando no ícone de sino no Unified Shell.
+A caixa de entrada do AEM pode ser acessada clicando no ícone de sino no Unified Shell.
 
 >[!INFO]
 >
@@ -68,6 +68,6 @@ A Caixa de entrada do AEM pode ser acessada clicando no ícone de sino no Unifie
 
 ![imagem](/help/overview/assets/unifiedshell5.png)
 
-Clique no botão Caixa de entrada no popover para que você possa ir para a Caixa de entrada AEM:
+Clique no botão da caixa de entrada no popover para acessar a caixa de entrada do AEM:
 
 ![imagem](/help/overview/assets/unifiedshell6.png)

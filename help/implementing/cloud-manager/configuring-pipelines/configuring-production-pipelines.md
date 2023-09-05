@@ -6,7 +6,7 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1507'
-ht-degree: 88%
+ht-degree: 98%
 
 ---
 
@@ -51,7 +51,7 @@ Depois de configurar seu programa e ter pelo menos um ambiente usando a interfac
    **Comportamento de falhas importantes da métrica** - Durante a configuração ou edição do pipeline, o **Gerente de implantação** tem a opção de definir o comportamento do pipeline quando uma falha importante é encontrada em qualquer um dos quality gates (portais de qualidade). As opções disponíveis são:
 
    * **Sempre perguntar** - Essa é a configuração padrão e requer intervenção manual em qualquer falha importante.
-   * **Falha imediata** - Se selecionado, o pipeline será cancelado sempre que ocorrer uma falha importante. É como emular um usuário que rejeita manualmente cada falha.
+   * **Falhar imediatamente** - Se selecionada, o pipeline é cancelado sempre que ocorrer uma falha importante. É como emular um usuário que rejeita manualmente cada falha.
    * **Continuar imediatamente** - Se selecionado, o pipeline continuará automaticamente sempre que ocorrer uma falha importante. É como emular um usuário que aprova manualmente cada falha.
 
    ![Configuração do pipeline de produção](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-configuration.png)
@@ -95,7 +95,7 @@ Um pipeline de código de pilha completa implanta simultaneamente compilações 
 
 >[!NOTE]
 >
->Se um pipeline de código de pilha completa já existir para o ambiente selecionado, essa seleção será desativada.
+>Se um pipeline de código de pilha completa já existir para o ambiente selecionado, essa seleção ficará desativada.
 
 Para concluir a configuração do pipeline de produção com código de pilha completa, siga estas etapas.
 
@@ -126,7 +126,7 @@ Para concluir a configuração do pipeline de produção com código de pilha co
 
    ![Definição de um caminho para a Auditoria de experiência](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit3.png)
 
-1. Clique em **Adicionar página** e o caminho é preenchido automaticamente com o endereço do ambiente e adicionado à tabela de caminhos.
+1. Clique em **Adicionar página** e o caminho será preenchido automaticamente com o endereço do ambiente e adicionado à tabela de caminhos.
 
    ![Caminho salvo na tabela](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit4.png)
 
@@ -137,7 +137,7 @@ Para concluir a configuração do pipeline de produção com código de pilha co
 
 1. Clique em **Salvar** para salvar o pipeline.
 
-Os caminhos configurados para a Auditoria de experiência são enviados ao serviço e avaliados de acordo com os testes de desempenho, acessibilidade, SEO (Otimização do mecanismo de pesquisa), práticas recomendadas e PWA (Aplicativo Web Progressivo) quando o pipeline é executado. Consulte [Noções básicas sobre os resultados da Auditoria de experiência](/help/implementing/cloud-manager/experience-audit-testing.md) para obter mais detalhes.
+Os caminhos configurados para a Auditoria de experiência serão enviados ao serviço e avaliados conforme os testes de desempenho, acessibilidade, Otimização do Mecanismo de Pesquisa (SEO), práticas recomendadas e Aplicativo Web Progressivo (PWA) quando o pipeline for executado. Consulte [Noções básicas sobre os resultados da Auditoria de experiência](/help/implementing/cloud-manager/experience-audit-testing.md) para obter mais detalhes.
 
 O pipeline é salvo e agora você pode [gerenciar seus pipelines](managing-pipelines.md) no cartão **Pipelines** na página **Visão geral do programa**.
 
@@ -177,7 +177,7 @@ O pipeline é salvo e agora você pode [gerenciar seus pipelines](managing-pipel
 
 Com os pipelines de front-end, é dada mais independência aos desenvolvedores de front-end e o processo de desenvolvimento pode ser acelerado.
 
-Consulte [Desenvolvimento de sites com o pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) para saber como esse processo funciona, além de algumas considerações a serem feitas para aproveitar ao máximo o potencial desse processo.
+Consulte [Desenvolvimento de sites com o pipeline de front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) para saber como esse processo funciona, além de algumas considerações a serem feitas para aproveitar ao máximo o potencial desse processo.
 
 ## Ignorar pacotes do Dispatcher {#skip-dispatcher-packages}
 

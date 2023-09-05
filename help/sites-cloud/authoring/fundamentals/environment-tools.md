@@ -5,7 +5,7 @@ exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '2150'
-ht-degree: 52%
+ht-degree: 96%
 
 ---
 
@@ -33,7 +33,7 @@ Por exemplo, exibição de coluna:
 >
 >Na primeira vez que você abrir uma página para edição, uma série de slides fornecerá um tour pelos recursos.
 >
->Você pode ignorar o tour, se desejar, e repeti-lo a qualquer momento, selecionando um dos **Informações da página** menu.
+>Se desejar, é possível ignorar o tour e repeti-lo a qualquer momento, selecionando-o no menu **Informações da página**.
 
 ## Acessar ajuda   {#accessing-help}
 
@@ -42,19 +42,19 @@ Ao editar uma página, a **Ajuda** pode ser acessada de:
 * O seletor [**Informações da página**](/help/sites-cloud/authoring/fundamentals/page-properties.md#page-properties) que mostra os slides de introdução (como na primeira vez que você acessa o editor)
 * A caixa de diálogo [Configuração](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) para componentes específicos (usando o ícone ? na barra de ferramentas da caixa de diálogo), que mostra a ajuda sensível ao contexto
 
-Mais [os recursos relacionados à ajuda estão disponíveis nos consoles](/help/sites-cloud/authoring/getting-started/basic-handling.md#accessing-help).
+Mais [recursos relacionados à ajuda estão disponíveis nos consoles](/help/sites-cloud/authoring/getting-started/basic-handling.md#accessing-help).
 
 ## Navegador de componentes   {#components-browser}
 
-Os componentes são os blocos de construção do conteúdo do AEM. Você coloca vários componentes em uma página e configura as opções deles para criar a página de conteúdo com AEM.
+Os componentes são os tijolos do conteúdo do AEM. Você coloca vários componentes em uma página e configura suas opções para criar sua página de conteúdo com o AEM.
 
-O navegador de componentes mostra todos os componentes disponíveis para uso na página atual. Elas podem ser arrastadas para o local apropriado e, em seguida, editadas para adicionar o conteúdo.
+O navegador de componentes mostra todos os componentes que estão disponíveis para uso em sua página atual. Elas podem ser arrastadas para o local apropriado e, em seguida, editadas para adicionar o conteúdo.
 
 O navegador de componentes é uma guia dentro do painel lateral (junto com o [navegador de ativos](#assets-browser) e a [árvore de conteúdo](#content-tree)). Para abrir (ou fechar) o painel lateral, use o ícone na parte superior esquerda da barra de ferramentas:
 
 ![Ativar/desativar painel lateral](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
 
-Ao abrir o painel lateral, ele deslizará do lado esquerdo (selecione a opção **Componentes** se necessário). Ao abrir o, você pode navegar por todos os componentes disponíveis para a sua página.
+Quando você abrir o painel lateral, ele deslizará pelo lado esquerdo (selecione a guia **Componentes**, se necessário). Quando aberto, é possível navegar por todos os componentes disponíveis para sua página.
 
 A aparência e o manuseio real dependem do tipo de dispositivo usado:
 
@@ -62,15 +62,15 @@ A aparência e o manuseio real dependem do tipo de dispositivo usado:
 
   O navegador de componentes cobre completamente a página que está sendo editada.
 
-  Para adicionar um componente à sua página, toque e segure o componente desejado e mova-o para a direita - o navegador de componentes será fechado para mostrar a página novamente - onde você pode posicionar o componente.
+  Para adicionar um componente à sua página, toque e segure no componente desejado e mova-o para a direita, o navegador de componentes será fechado para mostrar a página novamente, onde você pode posicionar o componente.
 
   ![Navegador de componentes em dispositivos móveis](/help/sites-cloud/authoring/assets/component-browser-mobile.png)
 
-* **Dispositivo de desktop**
+* **Desktop**
 
   O navegador de componentes é aberto no lado esquerdo da janela.
 
-  Para adicionar um componente à sua página, clique no componente desejado e arraste-o para o local desejado.
+  Para adicionar um componente à sua página, clique no componente e arraste-o para o local desejado.
 
   ![Navegador de componentes no desktop](/help/sites-cloud/authoring/assets/component-browser-desktop.png)
 
@@ -85,7 +85,7 @@ A aparência e o manuseio real dependem do tipo de dispositivo usado:
   Na barra de ferramentas superior, no navegador **Componentes**, é possível:
 
    * Filtrar componentes por nome.
-   * Limite a exibição para um grupo específico usando a seleção suspensa.
+   * Limitar a exibição para um grupo específico usando a seleção suspensa.
 
   Para obter uma descrição mais detalhada do componente, clique ou toque no ícone de informações ao lado do componente no navegador **Componentes** (se disponível). Por exemplo, para o **Fragmento de conteúdo**:
 
@@ -95,11 +95,11 @@ A aparência e o manuseio real dependem do tipo de dispositivo usado:
 
 >[!NOTE]
 >
->Um dispositivo móvel é detectado quando a largura é menor que 1024px. Esse também pode ser o caso de uma janela de desktop pequena.
+>Um dispositivo móvel é detectado quando a largura for menor que 1024px. Esse também pode ser o caso de uma janela de desktop pequena.
 
 ## Navegador de ativos {#assets-browser}
 
-O navegador de ativos mostra todas as [ativos](/help/assets/home.md) que estão disponíveis para uso direto na sua página atual.
+O navegador de ativos mostra todos os [ativos](/help/assets/home.md) disponíveis para uso direto em sua página atual.
 
 O navegador de ativos é um guia no painel lateral juntamente com o [navegador de componentes](#components-browser) e a [árvore de conteúdo](#content-tree). Para abrir ou fechar o painel lateral, use o ícone na parte superior esquerda da barra de ferramentas:
 
@@ -109,11 +109,11 @@ Ao abrir o painel lateral, ele deslizará do lado esquerdo. Selecione a guia **A
 
 ![Botão Navegador de ativos](/help/sites-cloud/authoring/assets/assets-browser-button.png)
 
-Quando o navegador de ativos está aberto, você pode navegar por todos os ativos disponíveis para sua página. A rolagem infinita é usada para expandir a lista quando necessário.
+Quando o navegador de ativos estiver aberto, você poderá navegar por todos os ativos disponíveis para sua página. A rolagem infinita é usada para expandir a lista quando necessário.
 
 ![Navegador de ativos](/help/sites-cloud/authoring/assets/assets-browser.png)
 
-Para adicionar um ativo à página, selecione e arraste para o local desejado. Pode ser:
+Para adicionar um ativo à sua página, selecione-o e arraste-o até o local desejado. Pode ser:
 
 * Um componente existente do tipo apropriado.
    * Por exemplo, você pode arrastar um ativo de imagem para um componente de imagem.
@@ -122,9 +122,9 @@ Para adicionar um ativo à página, selecione e arraste para o local desejado. P
 
 >[!NOTE]
 >
->Isso está disponível para ativos específicos e tipos de componentes. Consulte [Inserir um componente usando o Navegador de ativos](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component-using-the-assets-browser) para obter mais detalhes.
+>Isso está disponível para tipos específicos de ativos e componentes. Consulte [Inserção de um componente usando o Navegador de ativos](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component-using-the-assets-browser) para obter mais detalhes.
 
-Na barra de ferramentas superior do navegador de ativos, é possível filtrar os ativos ao:
+Na barra de ferramentas superior do navegador de ativos, é possível filtrar os ativos por:
 
 * Nome
 * Caminho
@@ -136,9 +136,9 @@ A aparência e o manuseio real dependem do tipo de dispositivo usado:
 
 * **Dispositivo móvel**
 
-  O navegador de ativos cobre completamente a página que está sendo editada.
+  O navegador de arquivos cobre completamente a página que está sendo editada.
 
-  Para adicionar um ativo à página, toque e segure o ativo necessário e mova-o para a direita: o navegador de ativos fechará para mostrar a página novamente, onde é possível adicionar o ativo ao componente necessário.
+  Para adicionar um ativo à sua página, toque e segure o ativo desejado e, em seguida, mova-o para a direita, o navegador de ativos será fechado para mostrar a página novamente, para que você possa adicionar o ativo ao componente necessário.
 
   ![Navegador de ativos em dispositivos móveis](/help/sites-cloud/authoring/assets/assets-browser-mobile.png)
 
@@ -146,13 +146,13 @@ A aparência e o manuseio real dependem do tipo de dispositivo usado:
 
   O navegador de ativos é aberto no lado esquerdo da janela.
 
-  Para adicionar um ativo à página, clique no ativo necessário e arraste-o para o componente ou local necessário.
+  Para adicionar um ativo à sua página, clique no ativo desejado e arraste-o para o componente ou local desejado.
 
   ![Navegador de ativos no desktop](/help/sites-cloud/authoring/assets/assets-browser-desktop.png)
 
 >[!NOTE]
 >
->Um dispositivo móvel é detectado quando a largura é menor que 1024px; ou seja, também está em uma janela de desktop pequena.
+>Um dispositivo móvel é detectado quando a largura é menor do que 1024px, ou seja, isso também inclui em uma janela de desktop pequena.
 
 Se você precisar fazer uma alteração rápida em um ativo, pode iniciar o [editor de ativos](/help/assets/manage-digital-assets.md) diretamente do navegador de ativos, clicando no ícone de edição mostrado ao lado do nome do ativo.
 
@@ -160,13 +160,13 @@ Se você precisar fazer uma alteração rápida em um ativo, pode iniciar o [edi
 
 ## Árvore de conteúdo {#content-tree}
 
-A variável **Árvore de conteúdo** fornece uma visão geral de todos os componentes na página em uma hierarquia para que você possa ver rapidamente como a página é composta.
+A **Árvore de conteúdo** fornece uma visão geral de todos os componentes na página em uma hierarquia para que você possa ver rapidamente como a página é composta.
 
-A Árvore de conteúdo é uma guia dentro do painel lateral (junto com o navegador de componentes e ativos). Para abrir (ou fechar) o painel lateral, use o ícone na parte superior esquerda da barra de ferramentas:
+A Árvore de conteúdo é uma guia dentro do painel lateral (junto com o navegador de componentes e de ativos). Para abrir (ou fechar) o painel lateral, use o ícone na parte superior esquerda da barra de ferramentas:
 
 ![Botão Árvore de conteúdo](/help/sites-cloud/authoring/assets/content-tree-button.png)
 
-Ao abrir o painel lateral, ele deslizará para ser aberto (a partir do lado esquerdo). Selecione a guia **Árvore de conteúdo**, se necessário. Ao abrir, é possível ver uma representação em exibição de árvore da página ou do modelo, para que seja mais fácil entender como o conteúdo é estruturado hierarquicamente. Além disso, em uma página complexa, facilita a alternância entre componentes da página.
+Ao abrir o painel lateral, ele deslizará para ser aberto (a partir do lado esquerdo). Selecione a guia **Árvore de conteúdo**, se necessário. Ao abrir, é possível ver uma representação em exibição de árvore da página ou do modelo, para que seja mais fácil entender como o conteúdo está estruturado hierarquicamente. Além disso, em uma página complexa, facilita a alternância entre componentes da página.
 
 ![Árvore de conteúdo](/help/sites-cloud/authoring/assets/content-tree-editor.png)
 
@@ -219,7 +219,7 @@ Abra o console e navegue até o recurso desejado, e abra **Referências** usando
 
 ![Detalhes de referências](/help/sites-cloud/authoring/assets/references-detail.png)
 
-Selecione o tipo de referência apropriado para obter mais informações. Em determinadas situações, outras ações estão disponíveis ao selecionar uma referência específica, incluindo:
+Selecione o tipo de referência apropriado para obter mais informações. Em determinadas situações, outras ações estarão disponíveis ao selecionar uma referência específica, incluindo:
 
 * **Links de entrada**, fornecem uma lista de páginas que fazem referência à página, junto com acesso direto a **Editar** uma dessas páginas ao selecionar um link específico
 * Instâncias de conteúdo emprestado e concedido usando o componente **Referência**, daqui você pode navegar até a página de referência/referenciada
@@ -258,19 +258,19 @@ As Informações da página (ícone de equalizador) abrem um menu que também fo
 * [Ajuda](/help/sites-cloud/authoring/getting-started/basic-handling.md#accessing-help)
 * [Promover lançamento](/help/sites-cloud/authoring/launches/promoting.md) (somente se a página for um lançamento)
 
-Além disso, **Informações da página** O pode fornecer acesso a análises e recomendações, quando apropriado.
+Além disso, as **Informações da página** podem fornecer acesso a análises e recomendações, quando apropriado.
 
 ## Modos de página   {#page-modes}
 
-Há vários modos ao editar uma página que permitem ações diferentes:
+Há vários modos ao editar uma página o que permite diversas ações:
 
-* [Editar](/help/sites-cloud/authoring/fundamentals/editing-content.md) - o modo a ser usado ao editar o conteúdo da página.
+* [Editar](/help/sites-cloud/authoring/fundamentals/editing-content.md): o modo a ser usado ao editar o conteúdo da página.
 * [Layout](/help/sites-cloud/authoring/features/responsive-layout.md) - permite criar e editar o layout responsivo dependente do dispositivo (se a página for baseada em um contêiner de layout)
-* [Direcionamento](/help/sites-cloud/authoring/personalization/targeted-content.md) - aumentar a relevância do conteúdo por meio do direcionamento e da medição em todos os canais.
+* [Direcionamento](/help/sites-cloud/authoring/personalization/targeted-content.md): aumente a relevância do conteúdo por meio do direcionamento e da medição em todos os canais.
 * [Timewarp](/help/sites-cloud/authoring/features/page-versions.md#timewarp) - permite a exibição do estado das páginas em um momento específico.
-* [Status da Live Copy](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status) - permite uma visão geral rápida do status da live copy e de quais componentes não são herdados.
+* [Status da Live Copy](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status): permite uma visão geral rápida do status da live copy e de quais componentes são, ou não, herdados.
 * [Modo de desenvolvedor](/help/implementing/developing/tools/developer-mode.md)
-* [Visualizar](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages) - usado para exibir a página como ela é mostrada no ambiente de publicação; ou navegar usando links no conteúdo.
+* [Visualização](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages): usado para visualizar a página da forma que será exibida no ambiente de publicação ou navegar usando os links no conteúdo.
 * [Anotar](/help/sites-cloud/authoring/fundamentals/annotations.md) - usado para adicionar ou exibir anotações na página.
 
 Você pode acessar esses itens usando os ícones no canto superior direito. O ícone real será alterado para refletir o modo usado no momento:
@@ -280,14 +280,14 @@ Você pode acessar esses itens usando os ícones no canto superior direito. O í
 >[!NOTE]
 >
 >* Dependendo das características da página, alguns modos podem não estar disponíveis.
->* O acesso a alguns modos requer as permissões/privilégios apropriados.
+>* O acesso a alguns modos exige as permissões/privilégios apropriados.
 >* O modo de desenvolvedor não está disponível em dispositivos móveis devido a restrições de espaço.
 >* Existe um [atalho de teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) ( `Ctrl-Shift-M`) para alternar entre o modo de **Visualização** e o atualmente selecionado (por exemplo, **Editar**, **Layout** etc.).
 >
 
 ## Seleção de caminho {#path-selection}
 
-Geralmente, durante a criação, é necessário selecionar outro recurso, como ao definir um link para outra página ou recurso ou selecionar uma imagem. Para selecionar facilmente um caminho, [campos de caminho](#path-fields) O preenchimento automático da oferta e o [navegador de caminho](#path-browser) permite uma seleção mais robusta.
+Geralmente, durante a criação, é necessário selecionar outro recurso, como ao definir um link para outra página ou recurso ou ao selecionar uma imagem. Para selecionar facilmente um caminho, os [campos de caminho](#path-fields) oferecem preenchimento automático e o [navegador de caminhos](#path-browser) permite uma seleção mais robusta.
 
 ### Campos de caminho   {#path-fields}
 
@@ -309,10 +309,10 @@ O navegador de caminho é organizado da mesma maneira que a [exibição de colun
 
 ![Navegador de caminhos](/help/sites-cloud/authoring/assets/path-browser.png)
 
-* Após selecionar um recurso, a variável **Selecionar** no canto superior direito da caixa de diálogo se torna ativo. Clique ou toque para confirmar a seleção ou **Cancelar** para suspender.
+* Após selecionar um recurso, o botão **Selecionar** no canto superior direito da caixa de diálogo se torna ativo. Clique ou toque para confirmar a seleção ou **Cancelar** para suspender.
 * Se o contexto permite a seleção de vários recursos, selecionar um recurso também ativa o botão **Selecionar**, mas, além disso, adiciona uma contagem do número de recursos selecionados no canto superior direito da janela. Clique no **X** ao lado do número para desmarcar tudo.
 * Ao navegar pela árvore, sua localização é refletida na navegação estrutural na parte superior da caixa de diálogo. Essas navegações estruturais também podem ser usadas para saltar rapidamente dentro da hierarquia de recursos.
-* A qualquer momento, você pode usar o campo de pesquisa na parte superior da caixa de diálogo. Clique em **X** no campo de pesquisa para limpar a pesquisa.
+* A qualquer momento, é possível usar o campo de pesquisa na parte superior da caixa de diálogo. Clique no **X** no campo de pesquisa para limpar a pesquisa.
 * Para limitar sua pesquisa, você pode revelar as opções de filtro e filtrar seus resultados com base em um determinado caminho.
 
   ![Opção Filtros](/help/sites-cloud/authoring/assets/filters-option.png)

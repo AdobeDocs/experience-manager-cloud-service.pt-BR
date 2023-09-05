@@ -7,7 +7,7 @@ exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
 source-git-commit: 1d5460c87aef10ae1adee7401cd462242e106f8c
 workflow-type: tm+mt
 source-wordcount: '2426'
-ht-degree: 84%
+ht-degree: 96%
 
 ---
 
@@ -22,7 +22,7 @@ O Adobe Experience Manager fornece várias configurações de sincronização pr
 
 ## Configurações de implantação instaladas e personalizadas {#installed-and-custom-rollout-configurations}
 
-Esta seção fornece informações sobre as configurações de implantação instaladas e as ações de sincronização que elas usam, e como criar configurações personalizadas, se necessário.
+Esta seção fornece informações sobre as configurações de implantação instaladas e as ações de sincronização que elas usam, bem sobre como criar configurações personalizadas se necessário.
 
 >[!CAUTION]
 >
@@ -54,7 +54,7 @@ Se as ações de configuração de implantação instaladas não atenderem aos s
 | Desligar com a desativação do blueprint | Desativa a Live Copy quando a origem é desativada | Ao desativar | `targetDeactivate` |
 | Forçar modificação | Força o conteúdo para a Live Copy quando a origem é modificada<br>Use essa configuração de implantação com moderação, pois ela usa o acionador Ao modificar. | Em modificação | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`referencesUpdate`<br>`orderChildren` |
 | Forçar modificação (superficial) | Envia o conteúdo para a Live Copy quando a página do blueprint é modificada, sem atualizar referências (por exemplo, para cópias superficiais)<br>Use essa configuração de implantação com moderação, pois ela usa o acionador Ao modificar. | Em modificação | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`orderChildren` |
-| Promover lançamento | Configuração de implementação padrão para a promoção de páginas de inicialização. | Na implantação | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`referencesUpdate`<br>`orderChildren`<br>`markLiveRelationship` |
+| Promover lançamento | Configuração de implantação padrão para a promoção de páginas de lançamento. | Na implantação | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`referencesUpdate`<br>`orderChildren`<br>`markLiveRelationship` |
 
 ### Ações de sincronização {#synchronization-actions}
 
@@ -68,7 +68,7 @@ Se as ações instaladas não atenderem aos seus requisitos, você poderá [Cria
 | `contentDelete` | Essa ação exclui nós da Live Copy que não existem na origem. [Configure o serviço de **Ação de exclusão de conteúdo MSM CQ**](#excluding-properties-and-node-types-from-synchronization) para especificar os tipos de nó, itens de parágrafo e propriedades de página a serem excluídos. |  |
 | `contentUpdate` | Essa ação atualiza o conteúdo da Live Copy com as alterações da origem. [Configure o serviço de **Ação de atualização de conteúdo MSM CQ**](#excluding-properties-and-node-types-from-synchronization) para especificar os tipos de nó, itens de parágrafo e propriedades de página a serem excluídos. |  |
 | `editProperties` | Essa ação edita as propriedades da Live Copy. A propriedade `editMap` determina quais propriedades são editadas e seus valores. O valor da propriedade `editMap` deve usar o seguinte formato:<br>`[property_name_n]#[current_value]#[new_value]`<br>`current_value` e `new_value` são expressões regulares e `n` é um número inteiro incrementado.<br>Por exemplo, considere o seguinte valor para `editMap`:<br>`sling:resourceType#/(contentpage`‖`homepage)#/mobilecontentpage,cq:template#/contentpage#/mobilecontentpage`<br>Esse valor edita as propriedades dos nós da Live Copy da seguinte maneira:<br>As propriedades `sling:resourceType` definidas como `contentpage` ou `homepage` são definidas como `mobilecontentpage`.<br>As propriedades `cq:template` definidas como `contentpage` são definidas como `mobilecontentpage`. | `editMap: (String)` identifica a propriedade, o valor atual e o novo valor. Consulte a descrição para obter informações. |
-| `notify` | Essa ação envia um evento de página de que a página foi distribuída. Para ser notificado, é necessário primeiro assinar eventos de implantação. |  |
+| `notify` | Essa ação envia um evento de página de que a página foi distribuída. Para ser notificado, é necessário primeiro assinar os eventos de implantação. |  |
 | `orderChildren` | Essa ação ordena os nós filhos com base na ordem no blueprint. |  |
 | `referencesUpdate` | Esta ação de sincronização atualiza referências na Live Copy.<br>Ela procura caminhos nas páginas da Live Copy que apontam para um recurso dentro do blueprint. Quando encontrado, ela atualiza o caminho para apontar para o recurso relacionado dentro da Live Copy. As referências que têm destinos fora do blueprint não são alteradas. <br>[Configure o serviço de **Ação de atualização de referências MSM CQ**](#excluding-properties-and-node-types-from-synchronization) para especificar os tipos de nó, itens de parágrafo e propriedades de página a serem excluídos. |  |
 | `targetVersion` | Essa ação cria uma versão da Live Copy.<br>Essa ação deve ser a única ação de sincronização incluída em uma configuração de implementação. |  |
@@ -97,7 +97,7 @@ Você pode configurar vários serviços OSGi que suportam ações de sincroniza�
 
 Ao trabalhar com o AEM há vários métodos de gerenciamento das definições de configuração desses serviços; consulte [Configurar OSGi](/help/implementing/deploying/configuring-osgi.md) para obter mais detalhes e as práticas recomendadas
 
-A tabela a seguir lista as ações de sincronização para as quais você pode especificar os nós a serem excluídos. A tabela fornece os nomes dos serviços a serem configurados usando o Console da Web e o PID para configurar usando um nó de repositório.
+A tabela a seguir lista as ações de sincronização para as quais você pode especificar os nós a serem excluídos. A tabela fornece os nomes dos serviços a serem configurados usando o console da Web e o PID para configurar usando um nó de repositório.
 
 | Ação de sincronização | Nome do serviço no Console da web | PID do serviço |
 |---|---|---|
@@ -116,11 +116,11 @@ A tabela a seguir descreve as propriedades que você pode configurar:
 | Propriedades da página excluída | `cq.wcm.msm.action.excludedprops` | Uma expressão regular que corresponde às propriedades de página que serão excluídas da ação de sincronização |
 | Tipos de nó Mixin ignorados | `cq.wcm.msm.action.ignoredMixin` | Uma expressão regular que corresponde aos nomes dos tipos de nó mixin que serão excluídos da ação de sincronização (disponível somente para a ação`contentUpdate`) |
 
-#### Ação de atualização de conteúdo MSM CQ - Exclusões {#cq-msm-content-update-action-exclusions}
+#### Ação de atualização de conteúdo do MSM CQ - Exclusões {#cq-msm-content-update-action-exclusions}
 
-Várias propriedades e tipos de nó são excluídos por padrão, eles são definidos na configuração OSGi de **Ação de atualização de conteúdo MSM CQ**, em **Propriedades da página excluída**.
+Várias propriedades e tipos de nó são excluídos por padrão. Eles são definidos na configuração OSGi da **Ação de atualização de conteúdo do MSM CQ**, em **Propriedades da página excluída**.
 
-Por padrão, as propriedades que correspondem às seguintes expressões regulares são excluídas (ou seja, não atualizadas) na implantação:
+Por padrão, as propriedades que correspondem às seguintes expressões regulares são excluídas (ou seja, não são atualizadas) na implantação:
 
 ![Regexes de exclusão da Live Copy](../assets/live-copy-exclude.png)
 
@@ -136,7 +136,7 @@ Você pode configurar vários serviços OSGi que oferecem suporte às ações de
 
 Ao trabalhar com o AEM, há vários métodos de gerenciamento das definições de configuração desses serviços; consulte [Configurar OSGi](/help/implementing/deploying/configuring-osgi.md) para obter mais detalhes e as práticas recomendadas
 
-A tabela a seguir lista as ações de sincronização para as quais você pode especificar a atualização de referência. A tabela fornece os nomes dos serviços a serem configurados usando o Console da Web e o PID para configurar usando um nó de repositório.
+A tabela a seguir lista as ações de sincronização para as quais você pode especificar a atualização de referência. A tabela fornece os nomes dos serviços a serem configurados usando o console da Web e o PID para configurar usando um nó de repositório.
 
 | Propriedade do Console da web | Propriedade OSGi | Descrição |
 |---|---|---|
@@ -176,7 +176,7 @@ Também é possível definir as configurações de implantação para uma págin
 
 1. Se necessário, ajuste o sinalizador de **Herança da Live Copy**. Se essa opção for marcada, a configuração da Live Copy terá efeito em todas as tarefas derivadas.
 
-1. Limpe a **Herdar configurações de implantação do primário** e selecione uma ou mais configurações de implantação na lista.
+1. Limpe a propriedade **Herdar configurações de implantação da página principal** e selecione uma ou mais configurações de implantação na lista.
 
    As configurações de implantação selecionadas aparecem abaixo da lista suspensa.
 
@@ -188,12 +188,12 @@ Também é possível definir as configurações de implantação para uma págin
 
 Configure uma página de blueprint com as configurações de implantação a serem usadas quando a página de blueprint for implantada.
 
-Observe que as páginas secundárias da página do blueprint herdam a configuração. Ao definir a configuração de implantação a ser usada, você pode substituir a configuração que a página herda da página principal.
+Observe que as páginas derivadas da página de blueprint herdam a configuração. Ao definir a configuração de implantação a ser usada, você pode estar substituindo a configuração que a página herdará da página principal.
 
 1. Use o console **Sites** para selecionar a página raiz do blueprint.
 1. Selecione **Propriedades** na barra de ferramentas.
 1. Abra a guia **Blueprint.**
-1. Selecione um ou mais **Configurações de implantação** usando o seletor suspenso.
+1. Selecione uma ou mais **configurações de implantação** usando o seletor suspenso.
 1. Mantenha suas atualizações com **Salvar**.
 
 ### Definir a configuração de implementação padrão do sistema {#setting-the-system-default-rollout-configuration}

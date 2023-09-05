@@ -7,7 +7,7 @@ exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1420'
-ht-degree: 87%
+ht-degree: 95%
 
 ---
 
@@ -29,8 +29,8 @@ Lembre-se de que uma Live Copy pode ser criada usando [páginas normais](creatin
 
 Os benefícios adicionais de usar configurações de blueprint são que elas:
 
-* Permitir que o autor use o **Implantação** opção em um blueprint para enviar modificações explicitamente para as Live Copies que herdam deste blueprint.
-* Permitir que o autor use **Criar site** para selecionar idiomas facilmente e configurar a estrutura da Live Copy.
+* Permitem que o autor use a opção de **Implantação** em um blueprint para enviar modificações explicitamente para as Live Copies que herdam desse blueprint.
+* Permitem que o autor use a funcionalidade **Criar Site** para selecionar idiomas facilmente e configurar a estrutura da Live Copy.
 * Definir uma configuração de implantação padrão para Live Copies que tenham uma relação com o blueprint.
 
 No caso de uma configuração de blueprint não ser mencionada, as implantações só podem ser iniciadas a partir das próprias Live Copies, essencialmente obtendo conteúdo na origem.
@@ -39,7 +39,7 @@ Ao criar um novo site com a Live Copy, é vantajoso criar configurações de blu
 
 >[!NOTE]
 >
->Os CUGs na guia Permissões não podem ser implantados em Live Copies de blueprints. Planeje essa regra ao configurar a Live Copy.
+>Observe que os CUGs na guia Permissões não podem ser implantados em Live Copies de blueprints. Leve isso em consideração ao configurar a Live Copy.
 
 ## Sincronização de componentes e contêineres {#components-and-container-synchronization}
 
@@ -144,7 +144,7 @@ Além de personalizar as ações de implantação, o MSM também permite persona
 
 ## Informações adicionais {#further-information}
 
-Consulte os artigos a seguir para obter mais detalhes sobre MSM e Live Copy.
+Consulte os seguintes artigos para obter mais detalhes sobre MSM e Live Copy.
 
 * [Criação e sincronização de Live Copies](creating-live-copies.md)
 * [Visão geral do console da Live Copy](live-copy-overview.md)

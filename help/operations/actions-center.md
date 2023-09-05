@@ -5,13 +5,13 @@ exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 source-git-commit: 4adae6ffe45dcd2b80d7d199fc29a806ce5e78c4
 workflow-type: tm+mt
 source-wordcount: '727'
-ht-degree: 87%
+ht-degree: 95%
 
 ---
 
 # Centro de ações {#actions-center}
 
-O AEM as Cloud Service envia notificações por email do Centro de Ações quando ocorrem incidentes críticos que exigem ação imediata e recomendações proativas para otimizações. Os exemplos incluem uma fila bloqueada ou um conjunto de credenciais que está expirando. O conjunto completo de tipos de notificação do Centro de ações pode ser visto na [tabela abaixo](#supported-notification-types), que será ampliada ao longo do tempo.
+O AEM as Cloud Service envia notificações por email do Centro de ações quando ocorrem incidentes críticos que exigem ação imediata, bem como recomendações de otimização proativas. Os exemplos incluem uma fila bloqueada ou um conjunto de credenciais que está expirando. O conjunto completo de tipos de notificação do Centro de ações pode ser visto na [tabela abaixo](#supported-notification-types), que será ampliada ao longo do tempo.
 
 Ao receber uma notificação do Centro de ações, você pode clicar nela para abrir o Centro de ações do AEM as a Cloud Service na forma de um pop-up, que exibe um contexto adicional explicando a ação a ser realizada.
 
@@ -41,7 +41,7 @@ Ao clicar no email, você será redirecionado para o Centro de ações, onde um 
 
 O link **Saiba mais** direciona a este artigo, onde o tipo de notificação pode ser consultado abaixo na [tabela de tipos de notificação compatíveis](#supported-notification-types), que fornece orientação sobre a ação a ser realizada.
 
-No Centro de ações, é possível ver uma lista de outras notificações recentes. Recomenda-se que, usando a lista Ações, você reconheça uma notificação para sinalizar ao Adobe que sua organização está ciente da tarefa e para resolver posteriormente a notificação quando uma ação corretiva tiver sido tomada.
+No Centro de ações, é possível ver uma lista de outras notificações recentes. É recomendado reconhecer a existência de uma notificação, utilizando a lista Ações, para informar à Adobe que sua organização está ciente da tarefa, bem como “concluir” a notificação posteriormente, quando uma ação corretiva for tomada.
 
 ![Lista de notificações](/help/operations/assets/notification-list.png)
 

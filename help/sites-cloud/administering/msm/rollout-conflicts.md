@@ -7,7 +7,7 @@ exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '920'
-ht-degree: 90%
+ht-degree: 94%
 
 ---
 
@@ -77,7 +77,7 @@ O AEM fornece:
 O manipulador de conflito padrão é o `ResourceNameRolloutConflictHandler`
 
 * Com esse manipulador, a página do blueprint recebe prioridade.
-* A classificação de serviço para esse manipulador é definida como baixa, ou seja, abaixo do valor padrão para `service.ranking` propriedade, pois se presume que os manipuladores personalizados precisarão de uma classificação mais alta. No entanto, a classificação não é o mínimo absoluto para garantir flexibilidade quando necessária.
+* A classificação de serviço desse manipulador é definida como baixa, ou seja, abaixo do valor padrão para a propriedade `service.ranking`, visto que se supõe que os manipuladores personalizados precisarão de uma classificação mais alta. No entanto, a classificação não é o mínimo absoluto para garantir flexibilidade quando necessária.
 
 Esse manipulador de conflitos dá prioridade ao blueprint. Por exemplo, a página da Live Copy `/b` é movida dentro da ramificação da Live Copy para `/b_msm_moved`.
 

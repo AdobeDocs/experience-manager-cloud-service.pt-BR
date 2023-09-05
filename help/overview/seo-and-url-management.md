@@ -5,11 +5,11 @@ exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '3705'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
-# Práticas recomendadas de gerenciamento de SEO e URL do Adobe Experience Manager as a Cloud Service {#seo-and-url-management-best-practices-for-aem}
+# Práticas recomendadas de gerenciamento de SEO e URL do Adobe Experience Manager as a Cloud Service{#seo-and-url-management-best-practices-for-aem}
 
 A Otimização do mecanismo de pesquisa (SEO) se tornou uma preocupação principal para muitos comerciantes. Como resultado, as preocupações com a SEO precisam ser abordadas em muitos projetos do Adobe Experience Manager (AEM) as a Cloud Service.
 
@@ -25,7 +25,7 @@ Existem algumas práticas recomendadas aceitas de URLs.
 
 No projeto do AEM, ao avaliar os URLs, pergunte-se o seguinte:
 
-*&quot;Se um usuário visualizar este URL, porém não houver conteúdo na página, ele poderia descrever sobre o que se trata essa página?&quot;*
+*“Se alguém visualizar este URL, mas não o conteúdo na página, seria possível descrever sobre do que se trata essa página?”*
 
 Se a resposta for sim, então é provável que o URL funcione bem em um mecanismo de pesquisa.
 
@@ -77,9 +77,9 @@ Estas são algumas dicas gerais sobre como criar os URLs para SEO:
 
 * Certifique-se de que cada página seja distribuída somente de um protocolo.
 
-   * Às vezes, os sites são distribuídos pelo `http` até que um usuário chegue a uma página com, por exemplo, um formulário de check-out ou logon, no qual ele é alternado para `https`. Ao acessar links a partir dessa página, se o usuário puder retornar às páginas `http` e acessá-las por meio de `https`, o mecanismo de pesquisa as rastreará como duas páginas separadas.
+   * Às vezes, os sites são exibidos em `http` até que o usuário chegue a uma página que contenha, por exemplo, um formulário de check-out ou de login, momento em que ele alterna para `https`. Ao acessar links a partir dessa página, se o usuário puder retornar às páginas `http` e acessá-las por meio de `https`, o mecanismo de pesquisa as rastreará como duas páginas separadas.
 
-   * Atualmente, o Google prefere páginas `https` às páginas `http`. Por isso, muitas vezes é mais fácil distribuir todo o site pelo `https`.
+   * Atualmente, o Google prefere páginas `https` às páginas `http`. Por esse motivo, muitas vezes é mais fácil atender a todo o site em `https`.
 
 ### Configuração de servidor {#server-configuration}
 
@@ -190,7 +190,7 @@ Talvez você queira exibir nomes de página localizados para usuários de conte�
 * Seria melhor que o URL fosse:
   `www.mydomain.com/es/casa.html`.
 
-O desafio de localizar o nome da página é que muitas das ferramentas de localização disponíveis na plataforma AEM dependem que os nomes das páginas correspondam às localidades para manter o conteúdo sincronizado.
+O desafio em traduzir o nome da página é que muitas das ferramentas de tradução disponíveis na plataforma do AEM dependem da correspondência dos nomes das páginas entre os locais para manter o conteúdo sincronizado.
 
 A variável `sling:alias` a propriedade permite ter o bolo e comê-lo também. `sling:alias` pode ser adicionado como uma propriedade a qualquer recurso para permitir um nome de alias para o recurso. No exemplo anterior, você teria:
 
@@ -286,7 +286,7 @@ No entanto, há também uma maneira mais simples de gerenciar isso:
 
 Até o momento, você implementou mapeamentos juntamente com a lógica nos componentes para usar esses mapeamentos ao enviar URLs para nossas páginas.
 
-A peça final do quebra-cabeça é lidar com estes URLs mais curtos quando eles chegam ao Dispatcher, que é onde o `mod_rewrite` entra em cena. O maior benefício de usar `mod_rewrite` é que os URLs são mapeados de volta à sua forma longa *antes* eles são enviados para o módulo Dispatcher. Isso significa que o Dispatcher solicitará o URL longo do servidor de publicação e o armazenará em cache de acordo. Portanto, todas as solicitações de liberação do Dispatcher que chegarem do servidor de publicação poderão invalidar esse conteúdo com sucesso.
+A peça final do quebra-cabeça é lidar com estes URLs mais curtos quando eles chegam ao Dispatcher, que é onde o `mod_rewrite` entra em cena. O maior benefício de usar `mod_rewrite` é que os URLs são mapeados de volta à sua forma longa *antes* de serem enviados ao módulo Dispatcher. Isso significa que o Dispatcher solicitará o URL longo do servidor de publicação e o armazenará em cache de acordo. Portanto, todas as solicitações de liberação do Dispatcher que chegarem do servidor de publicação poderão invalidar esse conteúdo com sucesso.
 
 Para implementar essas regras, você pode adicionar elementos `RewriteRule` no host virtual na configuração do Apache HTTP Server. Se quiser expandir os URLs encurtados do exemplo anterior, você pode implementar uma regra que se pareça com esta:
 
@@ -349,7 +349,7 @@ Disallow: /
 
 Como alternativa, em um ambiente em tempo real, você pode optar por não permitir determinados caminhos que não deseja indexar.
 
-A advertência ao colocar a variável `robots.txt` O arquivo na raiz do site é que as solicitações de liberação do Dispatcher podem apagar este arquivo, e os mapeamentos de URL provavelmente colocarão a raiz do site em um local diferente do `DOCROOT` conforme definido na configuração do Apache HTTP Server. Por isso, é comum colocar esse arquivo na instância do autor na raiz do site e replicá-lo na instância de publicação.
+O problema de colocar o arquivo `robots.txt` na raiz do site é que as solicitações de limpeza do Dispatcher podem limpar esse arquivo e os mapeamentos de URL provavelmente colocam a raiz do site em algum lugar diferente do `DOCROOT`, conforme definido na configuração do servidor HTTP do Apache. Por isso, é comum colocar esse arquivo na instância do autor na raiz do site e replicá-lo na instância de publicação.
 
 ### Criar um mapa de site XML no AEM {#building-an-xml-sitemap-on-aem}
 
@@ -371,7 +371,7 @@ Por exemplo, considere um site que define uma raiz de mapa de site de nível sup
 
 Na configuração padrão, a caixa de diálogo Propriedades da página fornece uma opção para marcar uma página como uma raiz do mapa de site e, portanto, conforme descrito acima, gerar um mapa de site próprio e seus descendentes. Esse comportamento é implementado pelas implementações da interface `SitemapGenerator` e pode ser estendido adicionando implementações alternativas. No entanto, como a frequência na qual os mapas de site XML são regenerados depende muito dos fluxos de trabalho e cargas de trabalho de criação de conteúdo, o produto não envia nenhuma configuração `SitemapScheduler`. Isso resulta na aceitação eficaz do recurso.
 
-Para habilitar o trabalho em segundo plano que gera os mapas de site XML, `SitemapScheduler` deve ser configurado. Para fazer isso, crie uma configuração OSGI para o PID `org.apache.sling.sitemap.impl.SitemapScheduler`. A expressão do scheduler `0 0 0 * * ?` pode ser usada como ponto de partida para regenerar todos os mapas de site XML uma vez por dia, à meia-noite.
+Para habilitar o processo em segundo plano que gera os mapas de site XML, um `SitemapScheduler` precisa ser configurado. Para fazer isso, crie uma configuração OSGI para o PID `org.apache.sling.sitemap.impl.SitemapScheduler`. A expressão do scheduler `0 0 0 * * ?` pode ser usada como ponto de partida para regenerar todos os mapas de site XML uma vez por dia, à meia-noite.
 
 ![Apache Sling Sitemap - Scheduler](assets/sling-sitemap-scheduler.png)
 
@@ -459,7 +459,7 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
 }
 ```
 
-Além disso, a funcionalidade implementada para mapas de site XML também pode ser usada em casos de uso diferentes, por exemplo, para adicionar o link canônico ou o idioma alternativo ao cabeçalho de uma página. Consulte a [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) para obter mais informações.
+Além disso, a funcionalidade implementada para mapas de site XML também pode ser usada em casos de uso diferentes, por exemplo, para adicionar o link canônico ou o idioma alternativo ao cabeçalho de uma página. Consulte a interface [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) para obter mais informações.
 
 ### Criar redirecionamentos 301 para URLs herdados {#creating-redirects-for-legacy-urls}
 

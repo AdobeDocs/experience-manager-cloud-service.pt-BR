@@ -5,7 +5,7 @@ exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '2231'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
@@ -69,7 +69,7 @@ Antes de exportar um fragmento, é necessário adicionar a **Configuração da n
 * selecionar um espaço de trabalho do Target como destino
 * selecionar um domínio externalizador para regravação de referências no Fragmento de conteúdo (opcional)
 
-As opções necessárias podem ser selecionadas em **Propriedades da página** da pasta, fragmento ou ambos necessários; a especificação é herdada conforme necessário.
+As opções necessárias podem ser selecionadas nas **Propriedades de página** da pasta e/ou fragmento necessários; a especificação será herdada conforme necessário.
 
 1. Navegue até o console **Ativos**.
 
@@ -338,9 +338,9 @@ Para exportar um Fragmento de conteúdo do AEM para o Target (depois de especifi
 
    >[!NOTE]
    >
-   >As ações reais mostradas dependem do status do fragmento e dos ativos relacionados.
+   >As ações reais mostradas dependerão do status do fragmento e dos ativos relacionados.
    >
-   >Se tudo já tiver sido publicado, e nada tiver sido modificado desde então, essa etapa será transferida.
+   >Se tudo já tiver sido publicado e nada tiver sido modificado desde então, essa etapa será ignorada.
 
    >[!NOTE]
    >
@@ -364,7 +364,7 @@ Para exportar um Fragmento de conteúdo do AEM para o Target (depois de especifi
 
 ## Utilização de Fragmentos de conteúdo no Adobe Target {#using-your-content-fragments-in-adobe-target}
 
-Depois de executar as tarefas anteriores, o Fragmento de conteúdo é exibido na página Ofertas, no Target. Consulte [documentação específica do Target](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html?lang=pt-BR#) para saber mais sobre o que você pode realizar lá.
+Depois de executar as tarefas anteriores, o Fragmento de conteúdo é exibido na página Ofertas, no Target. Consulte a [documentação específica do Target](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html?lang=pt-BR#) para saber mais sobre o que você pode realizar lá.
 
 >[!NOTE]
 >

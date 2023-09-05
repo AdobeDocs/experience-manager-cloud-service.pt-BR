@@ -5,7 +5,7 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '516'
-ht-degree: 85%
+ht-degree: 97%
 
 ---
 
@@ -59,11 +59,11 @@ Siga estas etapas para editar um programa.
 
 Sempre que um programa for editado, incluindo a adição ou remoção de uma solução ou complemento, essas alterações entrarão em vigor após a próxima implantação.
 
-Se seu programa de produção tiver a segurança aprimorada ativada, uma solicitação adicional **Segurança aprimorada** está disponível na guia **Editar programa** para confirmar se o recurso está ativo para o programa.
+Se o programa de produção estiver com a segurança aprimorada habilitada, a guia adicional **Segurança aprimorada** estará disponível na janela **Editar programa** para confirmar que o recurso está ativo para o programa.
 
 ![Segurança aprimorada ativa para um programa](assets/edit-program-enhanced.png)
 
-Esta configuração não pode ser modificada após a criação do programa. Para obter mais informações sobre a opção de segurança aprimorada, consulte [Criação de programas de produção](creating-production-programs.md) documento.
+Esta configuração não pode ser modificada após a criação do programa. Para obter mais informações sobre a opção de segurança aprimorada, consulte o documento [Criação de programas de produção](creating-production-programs.md).
 
 ## Exclusão de programas de sandbox {#delete-sandbox-program}
 

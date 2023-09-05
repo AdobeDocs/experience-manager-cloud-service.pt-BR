@@ -7,7 +7,7 @@ exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
 source-git-commit: 3177832b32c98bf463c763dafe2d9e284dc2ac28
 workflow-type: tm+mt
 source-wordcount: '1044'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -35,7 +35,7 @@ Você inicia no editor de fragmento de conteúdo com o aplicativo de exemplo for
 
 1. Toque ou clique no botão **Visualizar** na parte superior direita da tela do editor.
 
-1. O aplicativo de demonstração é aberto em uma nova guia. O aplicativo é para uma marca fictícia de estilo de vida ao ar livre: WKND. Role para baixo na página para navegar pelo conteúdo de amostra.
+1. O aplicativo de demonstração é aberto em uma nova guia. O aplicativo é para uma marca fictícia de estilo de vida ao ar livre: WKND. Role a página para baixo para navegar pelo conteúdo de amostra.
 
 1. Retorne à guia do navegador do editor de fragmento de conteúdo para continuar.
 
@@ -105,7 +105,7 @@ Agora que você atualizou a imagem do ciclista, vamos analisar como adicionar um
 
 1. Selecione a camada **Ciclismo de montanha - Comprável**.
 
-1. Para criar uma nova chamada neste painel, você deve criar um novo Fragmento de conteúdo do momento que pode ser comprado. Toque ou clique no botão **+ Criar novo fragmento**.
+1. Para criar uma nova chamada nesse painel, você deve criar um novo fragmento de conteúdo de momento de compra. Toque ou clique no botão **+ Criar novo fragmento**.
 
    ![Adicionar um momento de compra](assets/do-not-localize/add-reference-1-5.png)
 

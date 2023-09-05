@@ -6,7 +6,7 @@ role: Admin
 source-git-commit: d1da8559da856e028a5dcad1d0c0b2c00176af0c
 workflow-type: tm+mt
 source-wordcount: '1288'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
@@ -28,7 +28,7 @@ Há vários consoles disponíveis para administrar seus fluxos de trabalho. Use 
 1. Usando a navegação, selecione **Ferramentas** e, em seguida, **Fluxo de trabalho**.
 1. Selecione **Instâncias** para exibir a lista de instâncias de fluxo de trabalho em execução.
 1. No painel superior, no canto direito, as instâncias de fluxo de trabalho mostram os **fluxos de trabalho em execução**, o **status** e **detalhes**.
-1. **Fluxos de trabalho em execução** mostra o número de fluxos de trabalho em execução e o status deles. Por exemplo, nas imagens fornecidas, são mostrados o número de **fluxos de trabalho em execução** e o **status** da instância do AEM:
+1. **Fluxos de trabalho em execução** mostra o número de fluxos de trabalho em execução e o status deles. por exemplo, nas imagens fornecidas, são mostrados o número de **fluxos de trabalho em execução** e o **status** da instância do AEM:
 
    * **Status: íntegro**
      ![status-healthy](/help/sites-cloud/administering/assets/status-healthy.png)
@@ -36,7 +36,7 @@ Há vários consoles disponíveis para administrar seus fluxos de trabalho. Use 
    * **Status: não íntegro**
      ![status-unhealthy](/help/sites-cloud/administering/assets/status-unhealthy.png)
 
-1. Para obter os **detalhes do status** de instâncias de fluxo de trabalho, clique em **Detalhes** e as seguintes informações serão exibidas: **número de instâncias de fluxos de trabalho em execução**, **instâncias de fluxos de trabalho concluídos**, **instâncias de fluxos de trabalho interrompidos**, **instâncias de fluxos de trabalho com falha**, entre outros. por exemplo, abaixo estão as imagens fornecidas que mostram **Detalhes do status** com:
+1. Para obter os **detalhes do status** de instâncias de fluxo de trabalho, clique em **Detalhes** e as seguintes informações serão exibidas: **número de instâncias de fluxos de trabalho em execução**, **instâncias de fluxos de trabalho concluídos**, **instâncias de fluxos de trabalho interrompidos**, **instâncias de fluxos de trabalho com falha**, entre outros. por exemplo, abaixo estão as imagens fornecidas que mostram os **Detalhes do status** com:
 
    * **Detalhes do status: Íntegro**
      ![status-details-healthy](/help/sites-cloud/administering/assets/status-details-healthy.png)
@@ -198,7 +198,7 @@ Os dados processados por fluxos de trabalho são armazenados no armazenamento fo
 
 No nível do modelo de fluxo de trabalho, um sinalizador é fornecido para indicar que o modelo e suas instâncias de tempo de execução têm acesso ao armazenamento externo de metadados. As variáveis de fluxo de trabalho não serão mantidas no JCR para as instâncias de fluxo de trabalho cujos modelos foram marcados para armazenamento externo.
 
-A propriedade *userMetadataPersistenceEnabled* é armazenado no *jcr:nó de conteúdo* do modelo de workflow. Esse sinalizador é mantido nos metadados do fluxo de trabalho como *cq:userMetaDataCustomPersistenceEnabled*.
+A propriedade *userMetadataPersistenceEnabled* será armazenada no *nó jcr:content* do modelo de fluxo de trabalho. Esse sinalizador será mantido nos metadados do fluxo de trabalho como *cq:userMetaDataCustomPersistenceEnabled*.
 
 A ilustração abaixo mostra como definir o sinalizador em um fluxo de trabalho.
 

@@ -5,7 +5,7 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 source-git-commit: 2d1d3ac98f8fe40ba5f9ab1ccec946c8448ddc43
 workflow-type: tm+mt
 source-wordcount: '1193'
-ht-degree: 67%
+ht-degree: 92%
 
 ---
 
@@ -56,9 +56,9 @@ O processo de compilação implanta o código pelas três fases.
 A fase de **Implantação em preparo** envolve estas etapas.
 
 * **Validação** - Essa etapa garante que o pipeline esteja configurado para usar os recursos disponíveis no momento. por exemplo, testar se a ramificação configurada existe e se os ambientes estão disponíveis.
-* **Teste de compilação e unidade** - Essa etapa executa um processo de compilação contido.
-   * Consulte [Detalhes do ambiente de compilação](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) para obter detalhes sobre o ambiente de criação.
-* **Verificação do código Scanning** - Essa etapa avalia a qualidade do código do seu aplicativo.
+* **Teste de compilação e unidade**: essa etapa executa um processo de compilação contido.
+   * Consulte o documento [Detalhes do ambiente de compilação](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) para obter mais detalhes.
+* **Verificação do código**: essa etapa avalia a qualidade do código do seu aplicativo.
    * Consulte [Teste de qualidade do código](/help/implementing/cloud-manager/code-quality-testing.md) para obter detalhes sobre o processo de teste.
 * **Compilar imagens** - Esse processo é responsável por transformar os pacotes de conteúdo e dispatcher produzidos pela etapa de compilação em imagens do Docker e configurações Kubernetes.
 * **Implantar em preparo** - A imagem é implantada no ambiente de preparo, como forme de preparação para a [Fase de teste de preparo.](#stage-testing)
@@ -77,19 +77,19 @@ O **Teste de preparo** envolve essas etapas.
 
 * **Teste de interface do usuário personalizada** - Essa etapa é um recurso opcional que executa automaticamente testes de interface do usuário criados para aplicativos personalizados.
    * Os testes de interface do usuário são testes baseados em Selenium, compactados em uma imagem do Docker, para permitir uma variedade de opções de linguagens e estruturas (como Java e Maven, Node e WebDriver.io, ou qualquer outra estrutura e tecnologia criada no Selenium).
-   * Consulte [Testes de interface do usuário personalizados](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) para obter mais detalhes.
+   * Consulte [Testes de interface personalizados](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) para obter mais detalhes.
 
 * **Auditoria de experiência** - Essa etapa no pipeline é sempre executada e não pode ser ignorada. Conforme um pipeline de produção é executado, uma etapa de auditoria de experiência é incluída após o teste funcional personalizado que realizará as verificações.
    * As páginas configuradas são enviadas ao serviço e avaliadas.
    * Os resultados são informativos e mostram as pontuações e as alterações entre as pontuações atual e anterior.
-   * Esse insight é importante para determinar se há uma regressão introduzida com a implantação atual.
-   * Consulte [Noções básicas sobre os resultados da Auditoria de experiência](/help/implementing/cloud-manager/experience-audit-testing.md) para obter mais detalhes.
+   * Essa informação é valiosa para determinar se há uma regressão introduzida com a implantação atual.
+   * Consulte [Entender os resultados da auditoria de experiência](/help/implementing/cloud-manager/experience-audit-testing.md) para obter mais detalhes.
 
 ![Teste de preparo](assets/stage-testing.png)
 
 ## Fase de implantação em produção {#deployment-production}
 
-O processo de implantação nas topologias de produção é um pouco diferente para minimizar o impacto dos visitantes em um site AEM.
+O processo de implantação em topologias de produção é ligeiramente diferente para minimizar o impacto sobre os visitantes de um site do AEM.
 
 As implantações em produção geralmente seguem as mesmas etapas descritas anteriormente, mas de maneira gradual.
 
@@ -120,27 +120,27 @@ As seguintes etapas atingirão o tempo limite se forem deixadas aguardando o fee
 
 ## Processo de implantação {#deployment-process}
 
-Todas as implantações do Cloud Service seguem um processo gradual para garantir tempo de inatividade zero. Consulte [Como funcionam as implantações graduais](/help/implementing/deploying/overview.md#how-rolling-deployments-work) para saber mais.
+Todas as implantações do Cloud Service seguem um processo gradual para garantir tempo de inatividade zero. Consulte [Como funcionam as implantações contínuas](/help/implementing/deploying/overview.md#how-rolling-deployments-work) para saber mais.
 
 >[!NOTE]
 >
 >O cache do Dispatcher é limpo em cada implantação. Em seguida, ele é aquecido antes que os novos nós de publicação aceitem o tráfego.
 
-## Reexecução de uma implantação em produção {#reexecute-deployment}
+## Reexecutar uma implantação de produção {#reexecute-deployment}
 
-Em casos raros, as etapas de implantação de produção podem falhar por motivos transitórios. Nesses casos, a reexecução da etapa de implantação de produção é compatível, desde que a etapa de implantação de produção tenha sido concluída, independentemente do tipo de conclusão (por exemplo, cancelada ou malsucedida). A reexecução cria uma nova execução usando o mesmo pipeline que consiste em três etapas.
+Em casos raros, as etapas de implantação de produção podem falhar por motivos transitórios. Nesses casos, a reexecução da etapa de implantação de produção é compatível, desde que a etapa de implantação de produção tenha sido concluída, independentemente do tipo de conclusão (por exemplo, cancelada ou malsucedida). A reexecução cria uma nova execução usando o mesmo pipeline e consiste em três etapas.
 
-1. A etapa de validação - É basicamente a mesma validação que ocorre durante uma execução normal do pipeline.
-1. A etapa de criação - No contexto de uma reexecução, a etapa de criação copia artefatos e não executa realmente um novo processo de criação.
-1. A etapa de implantação de produção - Usa as mesmas configurações e opções que a etapa de implantação de produção em uma execução normal de pipeline.
+1. A etapa de validação: é basicamente a mesma validação que ocorre durante uma execução normal do pipeline.
+1. A etapa de compilação: no contexto de uma reexecução, a etapa de compilação copia artefatos, sem executar um novo processo de compilação real.
+1. A etapa de implantação de produção: usa as mesmas configurações e opções que a etapa de implantação de produção em uma execução normal de pipeline.
 
-Nessas circunstâncias, quando uma reexecução for possível, a página de status do pipeline de produção fornecerá a **Reexecutar** opção ao lado da usual **Baixar log de compilação** opção.
+Nessas circunstâncias, quando uma reexecução for possível, a página de status do pipeline de produção fornecerá a opção **Reexecutar** ao lado da opção tradicional **Baixar log de compilação**.
 
 ![A opção Reexecutar na janela de visão geral do pipeline](assets/re-execute.png)
 
 >[!NOTE]
 >
->Em uma reexecução, a etapa de criação é rotulada na interface para refletir que está copiando artefatos, não os reconstruindo.
+>Em uma reexecução, a etapa de compilação apresenta informações na interface que indicam que está copiando artefatos, não os recompilando.
 
 ### Limitações {#limitations}
 
@@ -151,7 +151,7 @@ Nessas circunstâncias, quando uma reexecução for possível, a página de stat
 
 ### API de reexecução {#reexecute-API}
 
-Além de estar disponível na interface do usuário do, você pode usar [a API do Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) para acionar reexecuções, bem como identificar execuções que foram acionadas como reexecuções.
+Além de estar disponível na interface, você pode usar [a API do Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-managerreference/api/#tag/pipeline-Execution) para acionar reexecuções, bem como identificar execuções que foram acionadas como reexecuções.
 
 #### Acionar uma reexecução {#reexecute-deployment-api}
 
@@ -199,8 +199,8 @@ Esse link só está disponível para a etapa de implantação em produção.
 
 A sintaxe do valor href do link HAL é apenas um exemplo. O valor real sempre deve ser lido do link HAL, e não gerado.
 
-O envio de uma solicitação PUT para esse endpoint resulta em uma resposta 201, se bem-sucedido, e o corpo da resposta é a representação da nova execução. É semelhante a iniciar uma execução regular por meio da API.
+O envio de uma solicitação PUT para esse ponto de acesso resulta em uma resposta 201 se bem-sucedida, e o corpo da resposta é a representação da nova execução. É semelhante a iniciar uma execução regular por meio da API.
 
 #### Identificação de uma execução reexecutada {#identify-reexecution}
 
-As execuções reexecutadas podem ser identificadas pelo valor `RE_EXECUTE` no `trigger` campo.
+As reexecuções podem ser identificadas pelo valor `RE_EXECUTE` no campo `trigger`.

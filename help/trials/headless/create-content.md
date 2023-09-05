@@ -7,7 +7,7 @@ exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
 source-git-commit: 91e9711e10a7aa8e3c7fa0b4cc25a098741e53b1
 workflow-type: tm+mt
 source-wordcount: '702'
-ht-degree: 82%
+ht-degree: 93%
 
 ---
 
@@ -33,13 +33,13 @@ ht-degree: 82%
 
 Os fragmentos de conteúdo representam o conteúdo headless e são baseados em estruturas predefinidas, chamadas de modelos de fragmento de conteúdo. Você já criou um modelo em um módulo anterior.
 
-Neste módulo, você cria um novo fragmento de conteúdo com base nesse modelo usando o console de Fragmentos de conteúdo. Pense no console de fragmentos de conteúdo como uma biblioteca de conteúdo headless. Use-o para criar novos fragmentos de conteúdo e gerenciar fragmentos existentes.
+Neste módulo, você criará um novo fragmento de conteúdo com base nesse modelo, usando o console de fragmentos de conteúdo. Pense no console de fragmentos de conteúdo como uma biblioteca de conteúdo headless. Use-o para criar novos fragmentos de conteúdo e gerenciar fragmentos existentes.
 
 O console de Fragmentos de conteúdo é usado para criar e editar conteúdo headless em canais de entrega e independentemente do contexto, que pode ser o método mais eficaz em muitos casos de criação. Em um módulo posterior, exploraremos a edição de conteúdo headless no contexto e no local.
 
 1. Toque ou clique no botão **Criar** na parte superior direita do console.
 
-1. A variável **Novo fragmento de conteúdo** é aberta, onde você pode começar a criar um novo Fragmento de conteúdo. **Localização** é automaticamente preenchido com onde o novo conteúdo é salvo.
+1. A caixa de diálogo **Novo fragmento de conteúdo** será aberta, na qual é possível começar a criar um novo fragmento de conteúdo. O **Local** é automaticamente preenchido com a seção na qual o novo conteúdo será salvo.
 
 1. No menu suspenso **Modelo de Fragmentos de conteúdo**, selecione o modelo de Fragmento de conteúdo **Aventura** criado anteriormente.
 
@@ -51,11 +51,11 @@ O console de Fragmentos de conteúdo é usado para criar e editar conteúdo head
 
 >[!TIP]
 >
->Dependendo das configurações do seu navegador, a nova guia do navegador pode ser suprimida por um bloqueador de pop-up. Se o novo fragmento não abrir depois de clicar em **Criar e abrir**, verifique as configurações do navegador.
+>Dependendo das configurações do seu navegador, a nova guia do navegador pode ser suprimida por um bloqueador de pop-up. Se o novo fragmento não abrir depois de clicar em **Criar e abrir**, verifique as configurações do seu navegador.
 
 ## Adicionar conteúdo ao fragmento de conteúdo {#add-content}
 
-Depois de salvar e abrir o novo fragmento de conteúdo, o editor de fragmento de conteúdo é aberto em uma nova guia. Aqui, é possível adicionar o conteúdo do novo fragmento.
+Depois de salvar e abrir o novo fragmento de conteúdo, o editor de fragmentos de conteúdo será aberto em uma nova guia. Aqui, é possível adicionar o conteúdo do novo fragmento.
 
 1. O editor de fragmentos de conteúdo mostra os campos definidos no modelo selecionado. Aqui, é possível adicionar conteúdo a cada campo para concluir o fragmento de conteúdo. Seu progresso é salvo automaticamente.
 

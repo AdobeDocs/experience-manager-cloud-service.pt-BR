@@ -5,7 +5,7 @@ exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
 source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
 source-wordcount: '914'
-ht-degree: 70%
+ht-degree: 98%
 
 ---
 
@@ -21,19 +21,19 @@ Você pode receber notificações de diversas áreas do AEM, incluindo fluxos de
       * Estes são o produto de etapas do fluxo de trabalho **Participante.**
    * Itens de falha, para permitir que os administradores tentem novamente a etapa que falhou
 
-Você recebe essas notificações em sua própria Caixa de entrada, onde pode visualizá-las e tomar medidas.
+Você recebe essas notificações em sua própria caixa de entrada, onde pode visualizá-las e executar ações.
 
 >[!NOTE]
 >
 >Para obter mais informações sobre os tipos de item, consulte o seguinte:
 >
 >* [Projetos](/help/sites-cloud/authoring/projects/overview.md)
->* [Projetos - trabalhar com tarefas](/help/sites-cloud/authoring/projects/tasks.md)
+>* [Projetos: trabalhar com tarefas](/help/sites-cloud/authoring/projects/tasks.md)
 >* [Fluxos de trabalhos](/help/sites-cloud/authoring/workflows/overview.md)
 
 ## Caixa de entrada no cabeçalho {#inbox-in-the-header}
 
-Em qualquer um dos consoles, o número atual de itens na sua caixa de entrada é mostrado no cabeçalho. O indicador também pode ser aberto para fornecer acesso rápido às páginas que exigem ação(ões) ou acesso à caixa de entrada:
+Em qualquer um dos consoles, o número atual de itens na sua caixa de entrada é mostrado no cabeçalho. O indicador também pode ser aberto para fornecer acesso rápido às páginas que necessitam de ações ou acesso à caixa de entrada:
 
 ![Visão geral da caixa de entrada no cabeçalho](/help/sites-cloud/authoring/assets/inbox-header.png)
 
@@ -81,11 +81,11 @@ Esta exibição apresenta itens de acordo com sua posição no calendário:
 
 ### Caixa de entrada - configurações de exibição {#inbox-view-settings}
 
-Para ambas as exibições (Lista e Calendário), é possível definir as configurações:
+Para ambas as visualizações (Lista e Calendário), é possível definir certas configurações:
 
 * **Exibição de calendário**
 
-  Para **Exibição de calendário** você pode configurar:
+  Para a **visualização de Calendário**, você pode configurar:
 
    * **Agrupar por**
    * **Agendamento** ou **Nenhum**
@@ -95,14 +95,14 @@ Para ambas as exibições (Lista e Calendário), é possível definir as configu
 
 * **Exibição de lista**
 
-  Para **Exibição de lista** você pode configurar o mecanismo de classificação:
+  Para a **visualização de Lista**, você pode configurar o mecanismo de classificação:
 
    * **Classificar por**
    * **Ordem de classificação**
 
   ![Configurações de exibição da lista da caixa de entrada](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
 
-  Você também pode delegar o calendário a outros usuários, solicitar a delegação de outros usuários e gerenciar as delegações.
+  Você também pode delegar o calendário, solicitar a delegação de outros usuários e gerenciar delegações.
 
   ![Configurações de delegação da exibição de lista da caixa de entrada](/help/sites-cloud/authoring/assets/inbox-delegation.png)
 
@@ -134,12 +134,12 @@ Para ambas as exibições (Lista e Calendário), é possível definir as configu
    >
    >Para obter mais informações, consulte o seguinte:
    >
-   >* Itens de fluxo de trabalho - [participar de fluxos de trabalho](/help/sites-cloud/authoring/workflows/participating.md)
+   >* Itens de fluxo de trabalho: [participar de fluxos de trabalho](/help/sites-cloud/authoring/workflows/participating.md)
 
 2. Dependendo do item selecionado, uma ação será iniciada, por exemplo:
 
    * Uma caixa de diálogo apropriada para a ação é aberta
-   * Um assistente de ação foi iniciado
+   * Um assistente de ação é iniciado
    * Uma página de documentação é aberta
 
    Por exemplo, **Delegar** abrirá uma caixa de diálogo:
@@ -156,7 +156,7 @@ Para ambas as exibições (Lista e Calendário), é possível definir as configu
 
 Na caixa de entrada, é possível criar tarefas:
 
-1. Selecionar **Criar**, depois **Tarefa**.
+1. Selecione **Criar**, depois **Tarefa**.
 1. Preencha os campos necessários nas guias **Básicas** e **Avançadas** (somente o **Título** é obrigatório, todos os demais são opcionais):
 
    * **Básico**:
@@ -174,7 +174,7 @@ Na caixa de entrada, é possível criar tarefas:
 
    * **Avançado**
 
-      * **Nome**: usado para formar o URL e, se estiver vazio, se baseia no **Título**.
+      * **Nome**: usado para formar o URL e, se estiver vazio, é criado com base no **Título**.
 
    ![Opções avançadas da tarefa Adicionar caixa de entrada](/help/sites-cloud/authoring/assets/inbox-add-task-advanced.png)
 
@@ -184,7 +184,7 @@ Na caixa de entrada, é possível criar tarefas:
 
 Para determinadas tarefas, você pode criar um [Projeto](/help/sites-cloud/authoring/projects/overview.md) com base nessa tarefa:
 
-1. Selecione a tarefa apropriada, tocando/clicando na miniatura.
+1. Selecione a tarefa apropriada tocando/clicando na miniatura.
 
    >[!NOTE]
    >
@@ -193,7 +193,7 @@ Para determinadas tarefas, você pode criar um [Projeto](/help/sites-cloud/autho
    >Itens de trabalho (de um fluxo de trabalho) não podem ser usados para criar um projeto.
 
 1. Selecione **Criar projeto** na barra de ferramentas para abrir o assistente.
-1. Selecione o modelo apropriado e, em seguida, **Próxima**.
+1. Selecione o modelo obrigatório e clique em **Próximo**.
 1. Especifique as propriedades necessárias:
 
    * **Básico**
@@ -210,9 +210,9 @@ Para determinadas tarefas, você pode criar um [Projeto](/help/sites-cloud/autho
 
    >[!NOTE]
    >
-   >Consulte [Criação de um projeto](/help/sites-cloud/authoring/projects/managing.md#creating-a-project) para obter informações completas.
+   >Consulte [Criar um projeto](/help/sites-cloud/authoring/projects/managing.md#creating-a-project) para obter todas as informações.
 
-1. Selecionar **Criar** para confirmar a ação
+1. Selecione **Criar** para confirmar a ação.
 
 ## Filtrar itens na Caixa de entrada do AEM {#filtering-items-in-the-aem-inbox}
 

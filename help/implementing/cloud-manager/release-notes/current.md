@@ -6,7 +6,7 @@ exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: 99772a1a3faa454a9b07dd92c9e7622ddb37ce2d
 workflow-type: tm+mt
 source-wordcount: '540'
-ht-degree: 21%
+ht-degree: 37%
 
 ---
 
@@ -26,7 +26,7 @@ A data de lançamento do Cloud Manager 2023.8.0 no AEM as a Cloud Service é 10 
 ## Novidades {#what-is-new}
 
 * Ao configurar um conjunto de conteúdo para [copiar conteúdo,](/help/implementing/developing/tools/content-copy.md) [configurações sensíveis ao contexto](/help/implementing/developing/introduction/configurations.md) agora são permitidos em conjuntos de conteúdo na interface do usuário.
-* Foram feitos aprimoramentos para melhorar a compreensão e a detecção de mensagens de erro na interface do usuário do Cloud Manager.
+* Aprimoramentos foram feitos para facilitar a compreensão e melhorar a exibição de mensagens de erro na interface do Cloud Manager.
 
 ## Programa de adoção antecipada {#early-adoption}
 
@@ -55,9 +55,9 @@ Interessado em testar o novo painel? Envie um email para `aem-lighthouse-pilot@a
 
 ## Correções de erros {#bug-fixes}
 
-* A variável **Ambientes** O menu agora fecha depois de acionar o **[Copiar conteúdo](/help/implementing/developing/tools/content-copy.md)** modal.
-* [Uma reexecução de pipeline](/help/implementing/cloud-manager/deploy-code.md#reexecute-deployment) não é mais permitida se a execução anterior não tiver uma `commitId` definido no estado da fase de compilação.
-* Uma mensagem mais compreensível agora é exibida para erros raros quando um usuário clica em um pipeline na **Atividade** ou **Pipeline** telas.
+* O menu **Ambientes** agora fecha depois de acionar o modal **[Copiar conteúdo](/help/implementing/developing/tools/content-copy.md)**.
+* [Uma reexecução de pipeline](/help/implementing/cloud-manager/deploy-code.md#reexecute-deployment) não é mais permitida se a execução anterior não tiver um `commitId` definido no estado da fase de compilação.
+* Uma mensagem mais compreensível agora é exibida para erros raros quando um usuário clica em um pipeline nas telas **Atividade** ou **Pipeline**.
 * A variável `contentSetName` não estiver mais ausente nos logs e agora for fornecido nas entradas ao iniciar um [cópia de conteúdo](/help/implementing/developing/tools/content-copy.md) operação.
 * Em determinadas circunstâncias raras, não é mais possível iniciar duas execuções a partir do mesmo pipeline, levando a um estado de &quot;paralisação&quot;.
 * Quando um certificado expirar, os nomes de domínio e as listas de permissões de IP associados ao certificado não serão mais removidos do CDN.

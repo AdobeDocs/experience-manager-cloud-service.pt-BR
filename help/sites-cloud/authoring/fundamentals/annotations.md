@@ -5,7 +5,7 @@ exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '694'
-ht-degree: 85%
+ht-degree: 91%
 
 ---
 
@@ -57,13 +57,13 @@ Além de visualizar as anotações, o modo Anotar permite criar, editar, mover o
 
 1. Clique ou toque no ícone Adicionar anotação (símbolo de mais à esquerda da barra de ferramentas) para começar a adicionar as anotações.
 
-1. Clique ou toque no componente desejado (os componentes que podem ser anotados são realçados com uma borda azul) para adicionar a anotação e abrir a caixa de diálogo:
+1. Clique ou toque no componente desejado (os componentes que permitem anotações estarão destacados com uma borda azul) para adicionar a anotação e abrir a caixa de diálogo:
 
    ![Adição de uma anotação](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
    Aqui você pode usar o campo e/ou ícone apropriado para:
 
-   * Insira o texto da anotação.
+   * Inserir o texto da anotação.
    * Criar um rascunho (linhas e formas) para realçar uma área do componente.
 
      ![Botão Rascunho de anotação](/help/sites-cloud/authoring/assets/annotation-sketch.png)

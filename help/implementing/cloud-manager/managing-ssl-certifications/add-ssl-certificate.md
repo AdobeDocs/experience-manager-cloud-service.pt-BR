@@ -5,7 +5,7 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '570'
-ht-degree: 82%
+ht-degree: 94%
 
 ---
 
@@ -49,7 +49,7 @@ Siga estas etapas para adicionar um certificado usando o Cloud Manager.
 
 1. Acesse a tela **Ambientes** a partir da página **Visão geral**.
 
-1. Clique em **Certificados SSL** no painel de navegação esquerdo. Uma tabela com detalhes sobre os certificados SSL existentes é exibida na tela principal.
+1. Clique em **Certificados SSL** no painel de navegação esquerdo. Uma tabela com detalhes de todos os certificados SSL existentes é exibida na tela principal.
 
    ![Adição de um certificado SSL](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
 
@@ -62,8 +62,8 @@ Siga estas etapas para adicionar um certificado usando o Cloud Manager.
    ![Caixa de diálogo Adicionar certificado SSL](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
 
    * Todos os erros detectados são exibidos.
-      * Você deve corrigir todos eles para poder salvar o certificado.
-      * Consulte [Erros de certificado](#certificate-errors) para saber mais sobre como resolver erros comuns.
+      * É necessário corrigir todos eles para salvar o certificado.
+      * Consulte a seção [Erros de certificado](#certificate-errors) para saber mais sobre como resolver erros comuns.
 
 1. Clique em **Salvar** para salvar o certificado.
 
@@ -73,7 +73,7 @@ Depois de salvo, o certificado será exibido como uma nova linha na tabela.
 
 >[!NOTE]
 >
->O usuário deve ser membro do **Proprietário da empresa** ou **Gerente de implantação** para instalar um certificado SSL no Cloud Manager.
+>É necessário ser um membro com a função **Proprietário da empresa** ou **Gerente de implantação** para instalar um certificado SSL no Cloud Manager.
 
 ## Erros de certificado {#certificate-errors}
 
@@ -81,7 +81,7 @@ Certos erros podem ocorrer se um certificado não for instalado corretamente ou 
 
 ### Política de certificado {#certificate-policy}
 
-Se você vir o erro a seguir, verifique a política do certificado.
+Se o seguinte erro for exibido, verifique a política do seu certificado.
 
 ```text
 Certificate policy must conform with EV or OV, and not DV policy.

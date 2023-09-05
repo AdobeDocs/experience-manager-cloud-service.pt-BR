@@ -5,7 +5,7 @@ exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
 source-git-commit: 5482e94bc1a2e7524eb699f2ae766ba40c138e91
 workflow-type: tm+mt
 source-wordcount: '980'
-ht-degree: 91%
+ht-degree: 98%
 
 ---
 
@@ -28,7 +28,7 @@ O AEM é uma solução de gerenciamento de experiência online de ponta e oferec
 * Configurar e renderizar um componente de interface personalizado. Por exemplo, permitir que um autor arraste e solte um componente de vídeo e configure um vídeo específico para ser reproduzido no site ativo.
 * Atuar em um ativo com um serviço de parceiro. Por exemplo, enviar um ativo para uma plataforma de vídeo quando uma página é publicada.
 * Analisar um site, página ou ativo no Admin Console do AEM. Por exemplo, fazer recomendações de SEO para uma página existente ou não publicada.
-* Acesso em nível de página a dados do usuário mantidos por um serviço externo. Por exemplo, use as informações demográficas para personalizar a experiência do site. Leia sobre o ContextHub, uma estrutura para armazenar, manipular e apresentar dados de contexto.
+* Acesso em nível de página a dados do usuário mantidos por um serviço externo. Por exemplo, o uso de informações demográficas para personalizar a experiência no site. Leia sobre o ContextHub, uma estrutura para armazenar, manipular e apresentar dados de contexto.
 * Traduzir uma cópia do site ou metadados de ativos. Consulte o [Conector de bootstrap da estrutura de tradução do AEM](https://github.com/Adobe-Marketing-Cloud/aem-translation-framework-bootstrap-connector) para obter códigos de exemplo usando a Estrutura de tradução do AEM, que é a implementação preferida dos conectores de tradução.
 
 
@@ -52,7 +52,7 @@ Além da documentação estática acima, a Adobe e a comunidade do AEM oferecem 
 Regras de estrutura do pacote
 -----------------------
 
-Para oferecer suporte a implantações móveis, os pacotes as a Cloud Service de AEM, dos quais os conectores são exemplos, têm uma separação estrita entre conteúdo &quot;imutável&quot; e &quot;mutável&quot;. Os pacotes devem ser claramente separados entre aqueles que incluem:
+Para dar suporte a implantações contínuas, os pacotes do AEM as a Cloud Service, dos quais os conectores são exemplos, têm uma separação rigorosa entre conteúdo “imutável” e “mutável”. Os pacotes devem ser claramente separados entre aqueles que incluem:
 
 * `/apps`
 * `/content` e `/conf`
@@ -74,7 +74,7 @@ Um aspecto da implementação do conector é o código que suporta a configuraç
 Configurações sensíveis ao contexto
 -----------------------------
 
-[Configurações sensíveis ao contexto](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html) permitem criar camadas de configuração em diferentes pastas, incluindo `/libs`, `/apps`, `/conf` e subpastas em `/conf`. Elas suportam herança, para que um cliente possa configurar a configuração global enquanto faz alterações específicas para cada microsite. Como é possível usar esse recurso para Configurações do Cloud Services, o código do conector deve fazer referência à configuração usando a API de configuração sensível ao contexto, em vez de fazer referência a um nó de configuração específico.
+[Configurações sensíveis ao contexto](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html) permitem criar camadas de configuração em diferentes pastas, incluindo `/libs`, `/apps`, `/conf` e subpastas em `/conf`. Elas suportam herança, para que um cliente possa configurar a configuração global enquanto faz alterações específicas para cada microsite. Como é possível usar esse recurso para configurações do Cloud Services, o código do conector deve fazer referência à configuração usando a API de configuração com reconhecimento de contexto em vez de fazer referência a um nó de configuração específico.
 
 Se as configurações modificadas forem usadas no conector, desenvolva-o para lidar com a inclusão/fusão de qualquer atualização futura nas configurações padrão fornecidas pelo conector com qualquer configuração de cliente. Lembre-se de que alterar o conteúdo personalizado (alterado pelo cliente) ou a configuração sem aviso e consentimento do cliente pode quebrar (ou criar um comportamento inesperado) com seu conector.
 

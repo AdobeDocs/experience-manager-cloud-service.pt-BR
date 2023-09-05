@@ -5,7 +5,7 @@ exl-id: fbc38611-dbee-426e-b823-df64b6730c45
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1687'
-ht-degree: 87%
+ht-degree: 98%
 
 ---
 
@@ -21,7 +21,7 @@ O AEM permite personalizar facilmente as experiências dos usuários. Ela també
 
 ## Acessar segmentos {#accessing-segments}
 
-A variável [Públicos-alvo](audiences.md) O console do é usado para gerenciar segmentos do ContextHub e públicos-alvo da sua conta do Adobe Target. Esta documentação abrange o gerenciamento de segmentos para o ContextHub.
+O console [Públicos-alvo](audiences.md) é usado para gerenciar segmentos do ContextHub, bem como públicos-alvo da sua conta do Adobe Target. Esta documentação abrange o gerenciamento de segmentos para o ContextHub.
 
 Para acessar seus segmentos, na navegação global, selecione **Navegação > Personalização > Públicos**. Selecione sua configuração (por exemplo, Site WKND) para ver os segmentos:
 
@@ -65,13 +65,13 @@ As comparações de segmentos a seguir estão disponíveis prontas para uso para
 
 >[!NOTE]
 >
->Ao comparar valores, se o tipo de dados da comparação não estiver definido (ou seja, definido para detecção automática), o mecanismo de segmentação do ContextHub simplesmente comparará os valores, como o javascript faria. Não converte valores em seus tipos esperados, o que pode levar a resultados enganosos. Por exemplo:
+>Ao comparar valores, se o tipo de dados da comparação não estiver definido (ou seja, configurado para detecção automática), o mecanismo de segmentação do ContextHub simplesmente comparará os valores, como o Javascript faria. Não converte valores em seus tipos esperados, o que pode levar a resultados enganosos. Por exemplo:
 >
 >`null < 30 // will return true`
 >
 >Portanto, ao [criar um segmento](#creating-a-new-segment), você deve selecionar um **tipo de dados** sempre que os tipos de valores comparados forem conhecidos. Por exemplo:
 >
->Ao comparar a propriedade `profile/age`, você já sabe que o tipo comparado é um **número**, mesmo que `profile/age` não estiver definido, uma comparação `profile/age` menos de 30 é retornado **false**, como você esperaria.
+>Ao comparar a propriedade `profile/age`, você já sabe que o tipo comparado é um **número**, portanto, mesmo que `profile/age` não esteja definido, uma comparação de `profile/age` menor que 30 retornará como **falso**, assim como se é esperado.
 
 ### Referências {#references}
 
@@ -92,11 +92,11 @@ Para definir seu novo segmento:
 
    ![Adicionar segmento](../assets/contexthub-create-segment.png)
 
-1. No **Novo segmento do ContextHub**, insira um título para o segmento e um valor de reforço, se necessário, e toque ou clique **Criar**.
+1. Em **Novo segmento do ContextHub**, insira um título para o segmento e um valor de reforço, se necessário, e toque ou clique em **Criar**.
 
    ![Novo segmento](../assets/contexthub-new-segment.png)
 
-   Cada segmento tem um parâmetro de reforço usado como fator de ponderação. Um número mais alto indica que o segmento é selecionado em detrimento de um segmento com um número menor em instâncias em que vários segmentos são válidos.
+   Cada segmento tem um parâmetro de reforço usado como fator de ponderação. Um número maior indica que o segmento é selecionado preferencialmente a um segmento com um número menor em instâncias em que vários segmentos são válidos.
 
    * Valor mínimo: `0`
    * Valor máximo: `1000000`
@@ -199,8 +199,8 @@ Se você tiver muitos segmentos, eles podem se tornar difíceis de gerenciar com
 
 1. Forneça um **Título** e um **Nome** para sua pasta.
    * O **Título** deve ser descritivo.
-   * A variável **Nome** torna-se o nome do nó no repositório.
-      * Ele é gerado automaticamente com base no título e ajustado de acordo com [Convenções de nomenclatura do AEM](/help/implementing/developing/introduction/naming-conventions.md).
+   * O **Nome** se tornará o nome do nó no repositório.
+      * Ele será gerado automaticamente com base no título e ajustado conforme as [convenções de nomenclatura do AEM](/help/implementing/developing/introduction/naming-conventions.md).
       * Ele pode ser ajustado, se necessário.
 
    ![Criar pasta](../assets/contexthub-create-folder.png)
@@ -279,7 +279,7 @@ Ou se não for resolvido:
 
 Esses testes também podem ser executados em páginas de conteúdo e em combinação com conteúdo direcionado e **Atividades** e **Experiências** relacionadas.
 
-Se você configurou uma atividade e uma experiência, é possível testar facilmente seu segmento com a atividade. Para obter detalhes sobre como configurar uma atividade, consulte [documentação sobre criação de conteúdo direcionado](targeted-content.md).
+Se você configurou uma atividade e uma experiência, é possível testar facilmente seu segmento com a atividade. Para obter detalhes sobre a configuração de uma atividade, consulte a [documentação sobre criação de conteúdo direcionado](targeted-content.md).
 
 1. No modo de edição de uma página em que você configurou o conteúdo direcionado, é possível ver que o conteúdo é direcionado por meio do ícone de seta no conteúdo.
 1. Alterne para o modo de visualização e, usando o hub de contexto, alterne para um perfil que não corresponda à segmentação configurada para a experiência.

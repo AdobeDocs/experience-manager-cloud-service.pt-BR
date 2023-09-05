@@ -1,34 +1,34 @@
 ---
 title: Criação de modelos de páginas
-description: O modelo define a estrutura da página resultante e, com o editor de modelo, criar e manter modelos não é mais uma tarefa somente para desenvolvedores
+description: O modelo define a estrutura da página resultante e, com o editor de modelos, criar e manter modelos não é mais uma tarefa somente para desenvolvedores
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '4570'
-ht-degree: 56%
+ht-degree: 97%
 
 ---
 
 # Criação de modelos de páginas   {#creating-page-templates}
 
-Ao criar uma página, você deve selecionar um modelo, que é usado como base para a criação da nova página. O modelo define a estrutura da página resultante, qualquer conteúdo inicial e os componentes que podem ser usados.
+Ao criar uma página, é necessário selecionar um modelo, que é usado como base para a criação da nova página. O modelo define a estrutura da página resultante, todo conteúdo inicial e os componentes que podem ser usados.
 
 Com o **Editor de modelos**, criar e manter modelos não é mais uma tarefa somente para desenvolvedores. Um tipo de usuário avançado, chamado de **autor de modelo**, também pode ser envolvido. Os desenvolvedores ainda são necessários para configurar o ambiente, criar bibliotecas de clientes e criar os componentes a serem usados, mas uma vez que essas noções básicas estejam em vigor, o **autor do modelo** terá a flexibilidade de criar e configurar modelos sem um projeto de desenvolvimento.
 
-A variável **Console de modelos** permite que os autores de modelo:
+O **Console de Modelos** permite que os autores de modelo:
 
 * Criem um novo modelo ou copiem um modelo existente.
 * Gerenciem o ciclo de vida do modelo.
 
-A variável **Editor de modelo** permite que os autores de modelo:
+O **Editor de Modelos** permite que os autores de modelo:
 
 * Adicione componentes ao modelo e posicione-os em uma grade responsiva.
 * Pré-configurar os componentes.
 * Defina quais componentes podem ser editados nas páginas criadas com o modelo.
 
-Este documento explica como uma **autor do modelo** Você pode usar o console e o editor de modelos para criar e gerenciar modelos editáveis.
+Este documento explica como um **autor do modelo** pode usar o console de modelos e o editor para criar e gerenciar modelos editáveis.
 
-Para obter informações detalhadas sobre como os modelos editáveis funcionam em nível técnico, consulte o documento do desenvolvedor [Modelos de página](/help/implementing/developing/components/templates.md) para obter mais informações.
+Para obter informações detalhadas sobre como os modelos editáveis funcionam em nível técnico, consulte o documento do desenvolvedor [Modelos de Página](/help/implementing/developing/components/templates.md).
 
 >[!NOTE]
 >
@@ -46,9 +46,9 @@ Antes de começar, é importante considerar que a criação de um novo modelo re
 
 A criação de um novo modelo usando o **Console de modelos** e o **Editor de modelos** exige a colaboração entre as seguintes funções:
 
-* **Admin**:
+* **Administrador**:
    * Cria uma nova pasta de modelos requer direitos de `admin`.
-   * Muitas vezes, essas tarefas também podem ser realizadas por um desenvolvedor
+   * Essas tarefas também podem ser realizadas por um desenvolvedor
 * **Desenvolvedor**:
    * Concentra-se nos detalhes técnicos/internos
    * Precisa de experiência com o ambiente de desenvolvimento.
@@ -69,7 +69,7 @@ As tarefas detalhadas neste documento são listadas com a função responsável 
 
 Ao criar um novo modelo editável, você:
 
-* Use o console **Modelo**. Isso está disponível no **Geral** seção do **Ferramentas** console.
+* Use o console **Modelo**. Isso está disponível na seção **Geral** do console **Ferramentas**.
    * Ou diretamente em: `https://<host>:<port>/libs/wcm/core/content/sites/templates.html/conf`
 * É possível [criar uma pasta para os modelos](#creating-a-template-folder-admin) se necessário
 * [Criar um novo modelo](#creating-a-new-template-template-author), inicialmente vazio 
@@ -79,7 +79,7 @@ Ao criar um novo modelo editável, você:
    * [Conteúdo inicial](#editing-a-template-initial-content-author) - conteúdo predefinido que pode ser alterado nas páginas criadas com o modelo.
    * [Layout](#editing-a-template-layout-template-author) - para um intervalo de dispositivos.
    * [Estilos](/help/sites-cloud/authoring/features/style-system.md) - defina os estilos a serem usados com o modelo e seus componentes.
-* [Ativar o modelo](#enabling-a-template-template-author) para uso ao criar uma página
+* [Habilitar o modelo](#enabling-a-template-template-author) para uso ao criar uma página
 * [Permitir o modelo](#allowing-a-template-author) para a página ou ramificação necessária do seu site
 * [Publicar o modelo](#publishing-a-template-template-author) para torná-lo disponível no ambiente de publicação
 
@@ -91,7 +91,7 @@ Ao criar um novo modelo editável, você:
 >
 >Nunca insira qualquer informação que precise ser internacionalizada em um modelo. <!-- Never enter any information that needs to be [internationalized](/help/sites-developing/i18n.md) into a template.-->
 >
->Para elementos de modelo, como cabeçalhos e rodapés que devem ser localizados, use o [recursos de localização dos componentes principais.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=pt-BR)
+>Para elementos de modelo, como cabeçalhos e rodapés que devem ser localizados, aproveite [os recursos de localização dos componentes principais.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=pt-BR)
 
 ### Criação de uma pasta de modelo - Administrador {#creating-a-template-folder-admin}
 
@@ -105,22 +105,22 @@ Uma pasta de modelo deve ser criada para que o projeto mantenha seus modelos esp
    >
    >Em uma instância padrão do AEM, a pasta **global** já existe no console modelo. Isso mantém modelos padrão e atua como um fallback se nenhuma política e/ou tipo de modelo for localizado na pasta atual.
    >
-   >É recomendável usar uma prática recomendada para [pasta de modelo criada para o seu projeto](/help/implementing/developing/components/templates.md#template-folders).
+   >É uma prática recomendada usar uma [pasta de modelo criada para o seu projeto](/help/implementing/developing/components/templates.md#template-folders).
 
 1. Selecione **Criar**, em seguida **Criar modelo** para abrir o assistente.
 
-1. Escolher um **Tipo de modelo** e selecione **Próxima**.
+1. Escolha um **Tipo de modelo** e clique em **Próximo**.
 
    >[!NOTE]
    >
-   >Os tipos de modelo são layouts predefinidos de modelo e podem ser considerados modelos para um modelo. Eles são predefinidos pelos desenvolvedores ou pelo administrador do sistema. Mais informações podem ser encontradas no documento do desenvolvedor [Modelos de página](/help/implementing/developing/components/templates.md#template-type).-->
+   >Os tipos de modelo são layouts predefinidos de modelos e podem ser considerados como modelos para um modelo. Eles são predefinidos pelos desenvolvedores ou pelo administrador do sistema. Mais informações podem ser encontradas no documento do desenvolvedor [Modelos de página](/help/implementing/developing/components/templates.md#template-type).-->
 
-1. Conclua o **Detalhes do modelo**:
+1. Conclua os **Detalhes do modelo**:
 
    * **Nome do modelo**
    * **Descrição**
 
-1. Selecione **Criar**. Uma confirmação for exibida, selecione **Abertura** para começar a editar o modelo ou **Concluído** para retornar ao console modelo.
+1. Selecione **Criar**. Uma confirmação será exibida, selecione **Abrir** para começar a editar o modelo ou **Concluído** para retornar ao console do modelo.
 
    >[!NOTE]
    >
@@ -134,14 +134,14 @@ Uma pasta de modelo deve ser criada para que o projeto mantenha seus modelos esp
 
 ### Definir propriedades do modelo - Autor do modelo   {#defining-template-properties-template-author}
 
-Um template pode ter as seguintes propriedades:
+Um modelo pode ter as seguintes propriedades:
 
 * Imagem
-   * Imagem a ser usada como [miniatura do modelo](#template-thumbnail-image) para auxiliar na seleção, como no assistente Criar página.
-      * Pode ser carregado
-      * Pode ser gerado com base no conteúdo do template
+   * Imagem a ser usada como [miniatura do modelo](#template-thumbnail-image) para auxiliar na seleção, como no assistente de Criar página.
+      * Pode ser enviado
+      * Pode ser gerado com base no conteúdo do modelo
 * Título
-   * Um título usado para identificar o modelo, como na variável **Criar página** assistente.
+   * Um título usado para identificar o modelo, como no assistente de **Criar página**.
 * Descrição
    * Uma descrição opcional para fornecer mais informações sobre o modelo e seu uso, que pode ser visualizada, por exemplo, no assistente **Criar página**.
 
@@ -159,13 +159,13 @@ Para exibir e/ou editar as propriedades:
 
 Para definir a miniatura do modelo:
 
-1. Edite as propriedades do template.
-1. Escolha se deseja fazer upload de uma miniatura ou gerá-la a partir do conteúdo do template.
-   * Se desejar carregar uma miniatura, clique ou toque em **Fazer upload de imagem**
+1. Edite as propriedades do modelo.
+1. Escolha se deseja fazer upload de uma miniatura ou gerá-la a partir do conteúdo do modelo.
+   * Se desejar fazer o upload de uma miniatura, clique ou toque em **Fazer upload de imagem**
    * Se quiser gerar uma miniatura, clique ou toque em **Gerar visualização**
-1. Para ambos os métodos, uma pré-visualização da miniatura é exibida.
-   * Se não for satisfatório, clique ou toque em **Limpar** para carregar outra imagem ou gerar novamente a miniatura.
-1. Quando estiver satisfeito com a miniatura, clique ou toque em **Salvar e fechar**.
+1. Para ambos os métodos, uma visualização da miniatura será exibida.
+   * Se não for satisfatória, clique ou toque em **Limpar** para fazer o upload de outra imagem ou gerar novamente a miniatura.
+1. Quando estiver satisfeito com a miniatura, clique ou toque em **Salvar e Fechar**.
 
 ### Ativar e permitir um modelo - Autor do modelo   {#enabling-and-allowing-a-template-template-author}
 
@@ -176,11 +176,11 @@ Para poder usar um modelo ao criar uma página é necessário:
 
 #### Habilitar um modelo - Autor do modelo {#enabling-a-template-template-author}
 
-Um modelo pode ser ativado ou desativado para torná-lo disponível ou indisponível no **Criar página** assistente.
+Um modelo pode ser habilitado ou desabilitado para torná-lo disponível ou indisponível no assistente de **Criar Página**.
 
 >[!CAUTION]
 >
->Depois que um modelo é ativado, um aviso é exibido quando um autor do modelo começa a atualizar mais o modelo. Isso é para informar ao usuário que o modelo pode ser referenciado, de modo que qualquer alteração possa afetar as páginas que fazem referência ao modelo.
+>Depois que um modelo é habilitado, um aviso será exibido quando um autor do modelo começar a atualizá-lo. Isso é para informar ao usuário que o modelo pode ter sido referenciado, de modo que qualquer alteração pode afetar as páginas que lhe fazem referência.
 
 1. No **console Modelos**, selecione o modelo.
 1. Selecione **Habilitar** ou **Desabilitar** da barra de ferramentas e depois na caixa de diálogo de confirmação.
@@ -206,7 +206,7 @@ Um modelo pode ser disponibilizado ou indisponibilizado para determinadas ramifi
 
    >[!NOTE]
    >
-   >Se a variável **Modelos permitidos** for deixada vazia, a árvore será ascendente até que um valor/lista seja encontrado.
+   >Se a lista **Modelos permitidos** for deixada vazia, a se subirá a árvore até que um valor/lista seja encontrado.
    >
    >
    >Consulte [Disponibilidade de modelos](/help/implementing/developing/components/templates.md#template-availability) - os princípios para modelos permitidos permanecem inalterados.
@@ -224,7 +224,7 @@ Um modelo pode ser disponibilizado ou indisponibilizado para determinadas ramifi
 1. No **console Modelos**, selecione o modelo.
 1. Selecione **Publicar** na barra de ferramentas para abrir o assistente.
 1. Selecione as **Políticas do conteúdo** para ser publicado em tandem.
-1. Selecionar **Publish** na barra de ferramentas para concluir a ação.
+1. Selecione **Publicar** na barra de ferramentas para concluir a ação.
 
 ## Editar modelos - Autores do modelo   {#editing-templates-template-authors}
 
@@ -244,7 +244,7 @@ Embora a **Política da página** opção no **Informações da página** permit
 
 >[!CAUTION]
 >
->Se um autor começar a editar um modelo que já foi ativado, um aviso será exibido. Isso é para informar ao usuário que o modelo pode ser referenciado, de modo que qualquer alteração possa afetar as páginas que fazem referência ao modelo.
+>Se um autor começar a editar um modelo que já foi habilitado, um aviso será exibido. Isso é para informar ao usuário que o modelo pode ter sido referenciado, de modo que qualquer alteração pode afetar as páginas que lhe fazem referência.
 
 ### Atributos do modelo {#template-attributes}
 
@@ -252,9 +252,9 @@ Os seguintes atributos de um modelo podem ser editados:
 
 #### Estrutura {#template-structure}
 
-Os componentes adicionados à [estrutura](#editing-a-template-structure-template-author) não podem ser movidos/removido das páginas resultantes pelos autores da página. Se você quiser que os autores de página possam adicionar e remover componentes de páginas resultantes, será necessário adicionar um sistema de parágrafo ao modelo.
+Os componentes adicionados à [estrutura](#editing-a-template-structure-template-author) não podem ser movidos/removido das páginas resultantes pelos autores da página. Se quiser que os autores de página possam adicionar e remover componentes de páginas resultantes, será necessário adicionar um sistema de parágrafo ao modelo.
 
-Quando os componentes estiverem bloqueados, é possível adicionar conteúdo, que não pode ser editado por autores da página. É possível desbloquear componentes para permitir definir [Conteúdo inicial](#editing-a-template-initial-content-author).
+Quando os componentes estiverem bloqueados, é possível adicionar conteúdo, que não pode ser editado por autores da página. É possível desbloquear componentes para permitir definir o [Conteúdo inicial](#editing-a-template-initial-content-author).
 
 >[!NOTE]
 >
@@ -262,11 +262,11 @@ Quando os componentes estiverem bloqueados, é possível adicionar conteúdo, qu
 
 #### Conteúdo inicial {#template-initial-content}
 
-Quando um componente tiver sido desbloqueado, você poderá definir a variável [conteúdo inicial](#editing-a-template-initial-content-author) que é copiado para página(s) resultante(s), criado a partir do modelo. Esses componentes desbloqueados podem ser editados nas páginas resultantes.
+Quando um componente tiver sido desbloqueado, é possível definir o [conteúdo inicial](#editing-a-template-initial-content-author) que é copiado para as páginas resultantes, criadas a partir do modelo. Esses componentes desbloqueados podem ser editados nas páginas resultantes.
 
 >[!NOTE]
 >
->Entrada **Conteúdo inicial** e nas páginas resultantes, todos os componentes desbloqueados que tenham um pai acessível (isto é, componentes dentro de um contêiner de layout) podem ser excluídos.
+>No modo de **conteúdo inicial**, e nas páginas resultantes, qualquer componente desbloqueado que tenha uma página principal acessível (ou seja, componentes dentro de um container de layout) pode ser excluído.
 
 #### Layout {#template-layout}
 
@@ -287,7 +287,7 @@ Consulte a [documentação do Style System](/help/sites-cloud/authoring/features
 No modo **Estrutura** você define os componentes e o conteúdo para o modelo, a política do modelo e seus componentes.
 
 * Os componentes definidos na estrutura do modelo não podem ser movidos em uma página resultante nem excluídos de qualquer página resultante.
-* Se você quiser que os autores de página possam adicionar e remover componentes, adicione um sistema de parágrafo ao modelo.
+* Se desejar que os autores de página possam adicionar e remover componentes, adicione um sistema de parágrafo ao modelo.
 * Os componentes podem ser desbloqueados e bloqueados novamente para permitir que você defina o [conteúdo inicial](#editing-a-template-initial-content-author).
 * As políticas de design dos componentes e página são definidas.
 
@@ -299,11 +299,11 @@ Existem várias ações que você pode realizar no modo **Estrutura** do editor 
 
 Existem vários mecanismos para adicionar componentes ao modelo:
 
-* No **Componentes** navegador no painel lateral.
+* No navegador de **Componentes** no painel lateral.
 * Ao usar a opção **Inserir componente**, disponível na barra de ferramentas dos componentes já no modelo ou na caixa **Arrastar componentes até aqui**.
 * Ao arrastar um ativo (no navegador de **Ativos** no painel lateral) diretamente no modelo para gerar o componente adequado no local.
 
-Depois de adicionado, cada componente é marcado com:
+Após adicionado, cada componente é marcado com:
 
 * Uma borda
 * Um marcador para mostrar o tipo de componente
@@ -335,11 +335,11 @@ Com essas duas ações você pode adicionar conteúdo aos seus componentes.
 
 #### Estrutura de Borda indicadora {#border-to-indicate-structure}
 
-Ao trabalhar no **Estrutura** uma borda laranja indica o componente selecionado no momento. Uma linha pontilhada também indica o componente principal.
+Ao trabalhar no modo **Estrutura** uma borda laranja indica o componente selecionado no momento. Uma linha pontilhada também indica o componente principal.
 
 #### Política e propriedades (Geral) {#policy-and-properties-general}
 
-As políticas de conteúdo (ou design) definem as propriedades de design de um componente. Por exemplo, os componentes disponíveis ou as dimensões mínima/máxima. Elas são aplicáveis ao modelo (e às páginas criadas com o modelo).
+As políticas de conteúdo (ou design) definem as propriedades de design de um componente. Por exemplo, os componentes disponíveis ou as dimensões mínima/máxima. Elas são aplicáveis ao modelo (e às páginas criadas com ele).
 
 Crie uma política de conteúdo ou selecione uma existente para um componente.
 
@@ -354,11 +354,11 @@ A janela de configuração é dividida em dois.
 * Do lado esquerdo da caixa de diálogo, em **Política**, você tem a capacidade de selecionar uma política existente.
 * Do lado direito da caixa de diálogo, em **Propriedades**, você pode definir as propriedades específicas ao tipo de componente.
 
-As propriedades disponíveis dependem do componente selecionado. Por exemplo, para um componente de texto, as propriedades definem as opções de copiar e colar, de formatação e de estilo de parágrafo, entre outras opções.
+As propriedades disponíveis dependem do componente selecionado. Por exemplo, para um componente de texto, as propriedades definem as opções de copiar e colar, de formatação e de estilo de parágrafo, entre outras.
 
 ##### Política {#policy}
 
-As políticas de conteúdo (ou design) definem as propriedades de design de um componente. Por exemplo, os componentes disponíveis ou as dimensões mínima/máxima. Elas são aplicáveis ao modelo (e às páginas criadas com o modelo).
+As políticas de conteúdo (ou design) definem as propriedades de design de um componente. Por exemplo, os componentes disponíveis ou as dimensões mínima/máxima. Elas são aplicáveis ao modelo (e às páginas criadas com ele).
 
 Em **Política** é possível selecionar uma política existente para aplicar ao componente por meio da lista suspensa.
 
@@ -368,7 +368,7 @@ Uma nova política pode ser adicionada ao selecionar o botão adicionar ao lado 
 
 ![Botão Adicionar política](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-A política existente selecionada na lista suspensa **Selecionar política** pode ser copiada como uma nova política usando o botão copiar ao lado do menu suspenso. Um novo título deve ser especificado no campo **Título da política**. Por padrão, a política copiada é denominada **Cópia de X**, onde X é o título da política copiada.
+A política existente selecionada na lista suspensa **Selecionar política** pode ser copiada como uma nova política usando o botão copiar ao lado do menu suspenso. Um novo título deve ser especificado no campo **Título da política**. Por padrão, a política copiada será denominada **Cópia de X**, onde X é o título da política copiada.
 
 ![Botão Copiar política](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
@@ -384,18 +384,18 @@ Na seção **Outros modelos que também utilizam a política selecionada**, voc�
 
 ##### Propriedades {#properties}
 
-No **Propriedades** cabeçalho, é possível definir as configurações do componente. O cabeçalho tem duas guias:
+No cabeçalho **Propriedades**, é possível definir as configurações do componente. O cabeçalho tem duas guias:
 
 * Principal
 * Recursos
 
 ###### Principal {#main}
 
-No **Principal** , as configurações mais importantes do componente serão definidas.
+Na guia **Principal**, as configurações mais importantes do componente são definidas.
 
 Por exemplo, para um componente de imagem, as larguras permitidas podem ser definidas juntamente com a ativação de carregamento lento.
 
-Se uma configuração permitir várias configurações, clique ou toque no **Adicionar** para adicionar outra configuração.
+Se uma configuração permitir várias configurações, clique ou toque no botão **Adicionar** para adicionar outra configuração.
 
 ![Botão Adicionar](/help/sites-cloud/authoring/assets/templates-add-button.png)
 
@@ -423,23 +423,23 @@ Por exemplo, para um componente de imagem, é possível definir as proporções 
 
 #### Política e propriedades (container de layout) {#policy-and-properties-layout-container}
 
-As configurações de política e propriedades de um contêiner de layout são semelhantes ao uso geral, mas com algumas diferenças.
+As configurações de política e propriedades de um container de layout são semelhantes ao uso geral, mas com algumas diferenças.
 
 >[!NOTE]
 >
->A configuração de uma política é obrigatória para componentes de contêiner, pois permite definir componentes que estejam disponíveis no contêiner.
+>A configuração de uma política é obrigatória para componentes de container, pois permite definir componentes que estejam disponíveis no container.
 
-A janela de configuração é dividida em dois, assim como no uso geral da janela.
+A janela de configuração é dividida em duas, assim como no uso geral da janela.
 
 ##### Política {#policy-layout}
 
-As políticas de conteúdo (ou design) definem as propriedades de design de um componente. Por exemplo, os componentes disponíveis ou as dimensões mínima/máxima. Elas são aplicáveis ao modelo (e às páginas criadas com o modelo).
+As políticas de conteúdo (ou design) definem as propriedades de design de um componente. Por exemplo, os componentes disponíveis ou as dimensões mínima/máxima. Elas são aplicáveis ao modelo (e às páginas criadas com ele).
 
 Em **Política** é possível selecionar uma política existente para aplicar ao componente por meio da lista suspensa. Isso funciona exatamente da mesma forma que a janela de uso geral.
 
 ##### Propriedades {#properties-layout}
 
-No **Propriedades** cabeçalho, você pode escolher quais componentes estão disponíveis para o contêiner de layout e definir suas configurações. O cabeçalho tem três guias:
+No cabeçalho **Propriedades**, é posível escolher quais componentes estão disponíveis para o container de layout e definir suas configurações. O cabeçalho tem três guias:
 
 * Componentes permitidos
 * Componentes padrão
@@ -447,11 +447,11 @@ No **Propriedades** cabeçalho, você pode escolher quais componentes estão dis
 
 ###### Componentes permitidos {#allowed-components}
 
-No **Componentes permitidos** defina quais componentes estarão disponíveis para o contêiner de layout.
+Na guia **Componentes permitidos**, você define quais componentes estão disponíveis para o container de layout.
 
 * Os componentes são agrupados por seus grupos de componentes, que podem ser expandidos e recolhidos.
-* Um grupo inteiro pode ser selecionado, marcando o nome do grupo, e todos podem ser desmarcados ao desmarcar.
-* Um sinal de menos representa pelo menos um, mas não todos os itens em um grupo são selecionados.
+* Um grupo inteiro pode ser selecionado ou desmarcados, marcando ou desmarcando o nome do grupo.
+* Um sinal de menos representa pelo menos um, mas não todos os itens em um grupo estão selecionados.
 * Há uma pesquisa disponível para filtrar um componente por nome.
 * As contagens listadas à direita do nome do grupo de componentes representam o número total de componentes selecionados nesses grupos, independentemente do filtro.
 
@@ -459,9 +459,9 @@ No **Componentes permitidos** defina quais componentes estarão disponíveis par
 
 ###### Componentes padrão {#default-components}
 
-No **Componentes padrão** , você define quais componentes são associados automaticamente a determinados tipos de mídia para que, quando um autor arrastar um ativo do navegador de ativos, o AEM saiba com qual componente associá-lo. Observe que somente os componentes com zonas de lançamento estão disponíveis para essa configuração.
+Na guia **Componentes padrão**, você define quais componentes são associados automaticamente a determinados tipos de mídia para que, quando um autor arrastar um ativo do navegador de ativos, o AEM saiba com qual componente associá-lo. Observe que somente os componentes com zonas para soltar estão disponíveis para essa configuração.
 
-Clique ou toque **Adicionar mapeamento** para adicionar um componente totalmente novo e mapeamento de tipo MIME.
+Clique ou toque em **Adicionar mapeamento** para adicionar um componente totalmente novo com mapeamento de tipo MIME.
 
 Selecione um componente na lista e clique ou toque em **Adicionar tipo** para adicionar outro tipo MIME a um componente já mapeado. Clique no ícone **Excluir** para remover a um tipo MIME.
 
@@ -473,19 +473,19 @@ Na guia **Configurações responsivas**, é possível configurar o número de co
 
 #### Desbloquear e bloquear componentes {#unlock-and-lock-components}
 
-Você desbloqueia/bloqueia componentes para definir se o conteúdo está disponível para alteração no **Conteúdo inicial** modo.
+Você desbloqueia/bloqueia componentes para definir se o conteúdo está disponível para alteração no modo **Conteúdo inicial**.
 
 Quando um componente tiver sido desbloqueado:
 
 * Um indicador de cadeado aberto é mostrado na borda.
 * A barra de ferramentas do componente é ajustada de acordo.
-* Qualquer conteúdo já inserido não será mais exibido em **Estrutura** modo.
+* Qualquer conteúdo já inserido não será mais exibido no modo **Estrutura**.
    * O conteúdo já inserido é considerado conteúdo inicial e é visível apenas no modo **Conteúdo inicial**.
 * Os pais do componente desbloqueado não podem ser movidos, recortados ou excluídos.
 
 ![Botão Bloquear componente](/help/sites-cloud/authoring/assets/templates-unlock-component.png)
 
-Isso inclui desbloquear componentes de contêiner para que outros componentes possam ser adicionados, no modo **Conteúdo inicial** ou nas páginas resultantes. Se você já tiver adicionado componentes/conteúdo ao contêiner antes de desbloqueá-lo, eles não serão mais exibidos quando em **Estrutura** , mas são mostrados na **Conteúdo inicial** modo. Entrada **Modo de estrutura**, somente o componente de contêiner será mostrado com sua lista de **Componentes permitidos**.
+Isso inclui desbloquear componentes de contêiner para que outros componentes possam ser adicionados, no modo **Conteúdo inicial** ou nas páginas resultantes. Se já tiver adicionado componentes/conteúdo ao container antes de desbloqueá-lo, eles não serão mais exibidos quando estiver no modo **Estrutura**, mas serão exibidos no modo **Conteúdo inicial**. No **modo Estrutura**, somente o componente de container será exibido com a lista de **Componentes permitidos**.
 
 ![Componentes permitidos](/help/sites-cloud/authoring/assets/templates-allowed-components.png)
 
@@ -493,7 +493,7 @@ Para economizar espaço, o contêiner de layout não é expandido para acomodar 
 
 Os componentes configuráveis são mostrados com um ícone de **Política**, no qual você pode tocar ou clicar para editar a política e as propriedades desse componente.
 
-![Ícone Componente configurável](/help/sites-cloud/authoring/assets/templates-configurable-component.png)
+![Ícone de Componente configurável](/help/sites-cloud/authoring/assets/templates-configurable-component.png)
 
 #### Relação com páginas existentes {#relationship-to-existing-pages}
 
@@ -503,7 +503,7 @@ Se a estrutura for atualizada depois de criar as páginas baseadas no modelo, en
 
 ### Editar um modelo - Conteúdo inicial - Criação {#editing-a-template-initial-content-author}
 
-**Conteúdo inicial** é usado para definir o conteúdo que aparecerá quando uma página for criada pela primeira vez com base no modelo. O conteúdo inicial pode ser editado pelos autores da página.
+O modo **Conteúdo inicial** é usado para definir o conteúdo que aparecerá quando uma página for criada pela primeira vez com base no modelo. O conteúdo inicial poderá ser posteriormente editado pelos autores de página.
 
 Embora todo o conteúdo criado no modo **Estrutura** seja visível no **Conteúdo inicial**, somente os componentes que foram desbloqueados podem ser selecionados e editados.
 
@@ -530,7 +530,7 @@ Embora todo o conteúdo criado no modo **Estrutura** seja visível no **Conteúd
 
 >[!NOTE]
 >
->O conteúdo inicial se destina à preparação de componentes e do layout da página que servem como ponto de partida para a criação do conteúdo. Não se destina a ser o conteúdo real que permaneceria como está. Por esse motivo, o conteúdo inicial não pode ser traduzido.
+>O conteúdo inicial se destina à preparação de componentes e do layout da página que servem como ponto de partida para a criação do conteúdo. Ele não se destina a ser o conteúdo real que permaneceria como está. Por esse motivo, o conteúdo inicial não pode ser traduzido.
 >
 >Se você precisar incluir texto traduzível no modelo, como em cabeçalhos ou rodapés, poderá usar os recursos de [localização dos componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=pt-BR).
 
@@ -540,9 +540,9 @@ Embora todo o conteúdo criado no modo **Estrutura** seja visível no **Conteúd
 
 >[!NOTE]
 >
->As alterações no layout são refletidas na **Conteúdo inicial** mas nenhuma alteração será vista no **Estrutura** modo.
+>As modificações no layout serão refletidas no modo **Conteúdo inicial**, mas nenhuma alteração será vista no modo **Estrutura**.
 
-![Layout Editar modelo](/help/sites-cloud/authoring/assets/templates-edit-layout.png)
+![Edição do modelo de layout](/help/sites-cloud/authoring/assets/templates-edit-layout.png)
 
 ### Editar um modelo - Política da página - Autor/desenvolvedor do modelo {#editing-a-template-page-policy-template-author-developer}
 
@@ -553,8 +553,8 @@ Para acessar a caixa de diálogo **Política da página**:
 1. No **Editor de modelo**, selecione **Informações da página** na barra de ferramentas, em seguida **Política da página** para abrir a caixa de diálogo.
 1. A caixa de diálogo **Política da página** é aberta e dividida em duas seções:
 
-   * A metade esquerda define o [políticas de página](#page-policies)
-   * A metade direita define o [propriedades da página](#page-properties)
+   * A metade esquerda define as [políticas da página](#page-policies)
+   * A metade direita define as [propriedades da página](#page-properties)
 
    ![Design da página](/help/sites-cloud/authoring/assets/templates-page-design.png)
 
@@ -572,7 +572,7 @@ Para acessar a caixa de diálogo **Política da página**:
 
   ![Botão Adicionar política](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-  A política existente selecionada na lista suspensa **Selecionar política** pode ser copiada como uma nova política usando o botão copiar ao lado do menu suspenso. Um novo título deve ser especificado no campo **Título da política**. Por padrão, a política copiada é denominada **Cópia de X**, onde X é o título da política copiada.
+  A política existente selecionada na lista suspensa **Selecionar política** pode ser copiada como uma nova política usando o botão copiar ao lado do menu suspenso. Um novo título deve ser especificado no campo **Título da política**. Por padrão, a política copiada será denominada **Cópia de X**, onde X é o título da política copiada.
 
   ![Botão Copiar política](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
@@ -591,7 +591,7 @@ Usando as propriedades de página, é possível definir as bibliotecas do lado d
 
 ![Propriedades da página](/help/sites-cloud/authoring/assets/templates-page-properties.png)
 
-* Especifique as bibliotecas do lado do cliente que você deseja aplicar às páginas criadas com este modelo. Inserção do nome de uma biblioteca no campo de texto na variável **Bibliotecas do cliente** seção.
+* Especifique as bibliotecas do lado do cliente que deseja aplicar às páginas criadas com este modelo. Inserção do nome de uma biblioteca no campo de texto na seção **Bibliotecas do lado do cliente**.
 
   ![Bibliotecas do lado do cliente](/help/sites-cloud/authoring/assets/templates-client-side-libraries.png)
 
@@ -625,14 +625,14 @@ Usando a opção **Propriedades da página inicial**, é possível definir as [p
 
 Ao criar modelos, você deve considerar:
 
-1. O impacto das alterações no modelo depois que as páginas são criadas a partir dele.
+1. O impacto das alterações no modelo depois que as páginas tiverem sido criadas a partir dele.
 
-   Esta é uma lista das diferentes operações possíveis nos modelos, juntamente com como elas afetam as páginas criadas a partir delas:
+   Esta é uma lista das diferentes operações possíveis nos modelos, juntamente com como elas afetam as páginas criadas a partir deles:
 
    * Alterações na estrutura:
 
       * Elas são aplicadas imediatamente às páginas resultantes.
-      * A publicação do template alterado ainda é necessária para que os visitantes vejam as alterações.
+      * A publicação do modelo alterado ainda é necessária para que os visitantes vejam as alterações.
 
    * Alterações nas políticas de conteúdo e configurações de design:
 
@@ -646,19 +646,19 @@ Ao criar modelos, você deve considerar:
    * As alterações no layout dependem se o componente modificado faz parte de:
 
       * Somente estrutura - aplicado imediatamente
-      * Ter conteúdo inicial - somente em páginas criadas após a alteração
+      * Possui conteúdo inicial - somente em páginas criadas após a alteração
 
-   Tenha especial cuidado quando:
+   Tenha muito cuidado quando:
 
-   * Bloquear ou desbloquear componentes em modelos ativados.
-   * Isso pode ter efeitos colaterais, pois as páginas existentes já podem usá-lo. Normalmente:
+   * Bloquear ou desbloquear componentes em modelos habilitados.
+   * Isso pode ter efeitos colaterais, pois as páginas podem já está usando-os. Normalmente:
 
-      * Os componentes de desbloqueio (que foram bloqueados) não estão presentes nas páginas existentes.
-      * Bloquear os componentes (que eram editáveis) ocultará que esse conteúdo seja exibido nas páginas.
+      * Os componentes desbloqueados (que estavam bloqueados) não estão presentes nas páginas existentes.
+      * Bloquear os componentes (que eram editáveis) ocultará esse conteúdo para que não seja exibido nas páginas.
 
    >[!NOTE]
    >
    >O AEM emite avisos explícitos ao alterar o status de bloqueio de componentes em modelos que não são mais rascunhos.
 
 1. [Criar suas próprias pastas](#creating-a-template-folder-admin) para modelos específicos do site.
-1. [Publicar seus modelos](#publishing-a-template-template-author) do **Modelos** console.
+1. [Publicar seus modelos](#publishing-a-template-template-author) a partir do console **Modelos**.

@@ -5,7 +5,7 @@ exl-id: 818e927e-40b2-4ccb-bfb3-88284ad49829
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '197'
-ht-degree: 81%
+ht-degree: 95%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 81%
 
 A variável **Criar exportação de arquivos CSV** permite selecionar:
 
-* Propriedades a serem exportadas
+* Propriedades para exportar
    * Metadados
       * Nome
       * Modificado
@@ -33,11 +33,11 @@ A variável **Criar exportação de arquivos CSV** permite selecionar:
    * Tradução
       * Traduzido
    * Analytics
-      * Exibições da página
+      * Visualizações de página
       * Visitantes únicos
       * Tempo na página
 * Profundidade
-   * Caminho pai
+   * Caminho principal
    * Apenas secundários diretos
    * Níveis adicionais de secundários
    * Níveis
@@ -48,7 +48,7 @@ Para criar uma exportação de arquivos CSV:
 
 1. Abra o console **Sites** e navegue até o local desejado, se necessário.
    * A opção Criar **relatório de CSV** está disponível ao navegar pelo console **Sites** (na exibição de Lista)
-   * É uma opção do **Criar** menu suspenso:
+   * É uma opção do menu suspenso **Criar**:
 
      ![Opção Criar CSV](/help/sites-cloud/authoring/assets/csv-create.png)
 

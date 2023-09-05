@@ -5,7 +5,7 @@ exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '941'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -27,7 +27,7 @@ Agora que seu conector está configurado, este artigo o conduzirá até a próxi
 >Essa etapa da jornada de documentação só é necessária se você não estiver utilizando o sinalizador **Traduzível** em fragmentos de conteúdo.
 >
 >* O sinalizador **Traduzível** cria regras de tradução automaticamente, sem necessidade de intervenção.
->* O sinalizador **Traduzível** é usado somente se a configuração da estrutura de integração de tradução estiver definida como **[Ativar campos do modelo de conteúdo para tradução](/help/sites-cloud/administering/translation/integration-framework.md)**.
+>* O sinalizador **Traduzível** é usado somente se a configuração da estrutura de integração de tradução estiver definida como **[Habilitar campos do modelo de conteúdo para tradução](/help/sites-cloud/administering/translation/integration-framework.md)**.
 >* Habilitar essa opção na configuração de TIF substitui quaisquer regras de tradução criadas manualmente.|
 
 ## Objetivo {#objective}
@@ -76,7 +76,7 @@ Na interface da **Configuração de tradução**, há várias opções disponív
 1. O AEM salva a configuração.
 1. Você deve selecionar o contexto que acabou de criar e tocar ou clicar em **Editar**. Isso abre o **editor de regras de tradução** para configurar as propriedades.
    ![Editor de regras de tradução](assets/translation-rules-editor.png)
-1. Por padrão, todas as configurações são herdadas do caminho principal, neste caso: `/content/dam`. Desmarque a opção **Herdar de`/content/dam`** para que você possa adicionar outros campos à configuração.
+1. Por padrão, todas as configurações são herdadas do caminho principal, neste caso: `/content/dam`. Desmarque a opção **Herdar de`/content/dam`** para adicionar novos campos à configuração.
 1. Depois de desmarcar a opção, na seção **Geral** da lista, adicione os nomes das propriedades do(s) modelo(s) de fragmento de conteúdo que você [anteriormente identificou como campos que devem ser traduzidos.](getting-started.md#content-models)
    1. Insira o nome da propriedade no campo **Nova propriedade**.
    1. As opções **Traduzir** e **Herdar** são marcadas automaticamente.

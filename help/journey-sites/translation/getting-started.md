@@ -8,7 +8,7 @@ exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1399'
-ht-degree: 86%
+ht-degree: 98%
 
 ---
 
@@ -57,11 +57,11 @@ Há vários requisitos antes de começar a traduzir o conteúdo do AEM.
 
 ## Como o AEM armazena conteúdo {#content-in-aem}
 
-Para o especialista em tradução, não é importante entender em detalhes como o AEM gerencia o conteúdo. No entanto, familiarizar-se com os conceitos e a terminologia básicos é útil, pois você poderá usar ferramentas de tradução do AEM posteriormente. O mais importante é que você precisa entender seu próprio conteúdo e como ele é estruturado para traduzi-lo efetivamente.
+Para o especialista em tradução, não é importante entender em detalhes como o AEM gerencia o conteúdo. No entanto, estar familiarizado com os conceitos básicos e a terminologia é útil quando você usar as ferramentas de tradução do AEM posteriormente. Mais importante ainda, você precisa entender seu próprio conteúdo e como ele está estruturado para traduzi-lo com eficácia.
 
-### Console de sites {#sites-console}
+### Console do Sites {#sites-console}
 
-O console Sites fornece uma visão geral da estrutura do seu conteúdo, facilitando sua navegação e gerenciamento criando novas páginas, movendo e copiando páginas e publicando conteúdo.
+O console do Sites oferece uma visão geral da estrutura do seu conteúdo, facilitando a navegação e o gerenciamento do conteúdo por meio da criação de novas páginas, da movimentação e cópia de páginas e da publicação de conteúdo.
 
 Para acessar o console Sites:
 
@@ -75,7 +75,7 @@ Para acessar o console Sites:
 
    ![Hierarquia de conteúdo](assets/sites-console-hierarchy.png)
 
-1. Ao tocar ou clicar na caixa de seleção de um item em uma coluna, ele seleciona esse item e mostra os detalhes do item selecionado na coluna à direita e revela várias ações disponíveis para o item selecionado na barra de ferramentas acima.
+1. Ao tocar ou clicar na caixa de seleção de um item em uma coluna, esse item será selecionado e mostrará os seus detalhes na coluna à direita, revelando várias ações disponíveis para o item selecionado na barra de ferramentas acima.
 
    ![Seleção de conteúdo](assets/sites-console-selection.png)
 
@@ -175,7 +175,7 @@ A estrutura final pode ficar parecida com a seguinte.
     |- ...
 ```
 
-Você deve anotar o caminho específico do conteúdo, pois ele é necessário posteriormente para configurar a tradução.
+Você deve tomar nota do caminho específico do seu conteúdo, pois ele será necessário posteriormente para configurar sua tradução.
 
 >[!NOTE]
 >

@@ -5,15 +5,15 @@ exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1804'
-ht-degree: 69%
+ht-degree: 97%
 
 ---
 
 # Publicar páginas {#publishing-pages}
 
-Depois de criar e revisar seu conteúdo no ambiente de criação, o objetivo é [disponibilizá-lo em seu site público](/help/sites-cloud/authoring/getting-started/concepts.md) (seu ambiente de publicação).
+Após criar e revisar seu conteúdo no ambiente do autor, o objetivo é [disponibilizá-lo em seu site público](/help/sites-cloud/authoring/getting-started/concepts.md) (seu ambiente de publicação).
 
-Isso é conhecido como publicação de uma página. Quando você deseja remover uma página do ambiente de publicação, este é o processo de desfazer a publicação. Ao publicar e desfazer a publicação, a página permanece disponível no ambiente do autor para mais alterações até que você a exclua.
+Isso é chamado de publicação de uma página. Quando você deseja remover uma página do ambiente de publicação, este é o processo de desfazer a publicação. Ao publicar ou desfazer a publicação, a página permanecerá disponível no ambiente do autor para mais alterações até ser excluída.
 
 Você pode publicar/desfazer a publicação de uma página imediatamente ou em uma data/hora predefinida posteriormente.
 
@@ -37,7 +37,7 @@ Você pode publicar/desfazer a publicação de uma página imediatamente ou em u
 
 ## Publicar páginas {#publishing-pages-1}
 
-Dependendo do local, você pode publicar:
+Dependendo do seu local, é possível publicar:
 
 * [No editor de páginas](#publishing-from-the-editor)
 * [No console do Sites](#publishing-from-the-console)
@@ -48,7 +48,7 @@ Dependendo do local, você pode publicar:
 >
 >* Um fluxo de trabalho é acionado para notificar a pessoa apropriada sobre sua solicitação de publicação.
 >* Esse fluxo de trabalho pode ter sido personalizado pela sua equipe de desenvolvimento.
->* Uma mensagem é exibida brevemente para notificar que o fluxo de trabalho foi acionado.
+>* Uma mensagem é exibida brevemente para notificá-lo de que o fluxo de trabalho foi acionado.
 
 >[!NOTE]
 >
@@ -64,14 +64,14 @@ Se você estiver editando uma página, ela poderá ser publicada diretamente do 
 
 1. Se a página tiver referências que precisam de publicação:
 
-   * A página será publicada diretamente se não houver referências a serem publicadas.
-   * Se a página tiver referências que precisam ser publicadas, elas serão listadas no **Publish** assistente, onde é possível:
+   * A página é publicada diretamente se não houver referências a serem publicadas.
+   * Se a página tiver referências que precisem ser publicadas, elas serão listadas no assistente de **Publicação**, onde você poderá:
       * Especificar qual dos ativos/tags/etc. você deseja publicar junto com a página. Em seguida, use **Publicar** para concluir o processo.
       * Usar a opção **Cancelar** para suspender a ação.
 
    ![Publicação de referências com a página](/help/sites-cloud/authoring/assets/publishing-references.png)
 
-1. Se você selecionar **Publicar**, replicará a página no ambiente de publicação. No editor de páginas, um banner de informações é mostrado confirmando a ação de publicação.
+1. Se você selecionar **Publicar**, replicará a página no ambiente de publicação. No editor de páginas, será mostrado um banner de informações confirmando a ação de publicação.
 
    ![Banner de informações do status de publicação](/help/sites-cloud/authoring/assets/publishing-info.png)
 
@@ -81,7 +81,7 @@ Se você estiver editando uma página, ela poderá ser publicada diretamente do 
 
 >[!NOTE]
 >
->A publicação por meio do editor é um processo superficial, ou seja, somente as páginas selecionadas são publicadas, sem incluir páginas filhas.
+>A publicação a partir do editor é uma publicação superficial, ou seja, somente a página(s) selecionada(s) é(são) publicada(s), mas qualquer página secundária que houver não será.
 
 >[!NOTE]
 >
@@ -89,14 +89,14 @@ Se você estiver editando uma página, ela poderá ser publicada diretamente do 
 
 ### Publicação por meio do Console {#publishing-from-the-console}
 
-No console Sites, há duas opções para publicação:
+No console do Sites, há duas opções para publicação:
 
 * [Publicação rápida   ](#quick-publish)
 * [Gerenciar publicação   ](#manage-publication)
 
 #### Publicação rápida    {#quick-publish}
 
-A **Publicação rápida** serve para casos simples e publica as páginas selecionadas imediatamente, sem qualquer outra interação. Por esse motivo, todas as referências não publicadas também serão publicadas automaticamente.
+A **Publicação rápida** serve para casos simples e publica as páginas selecionadas imediatamente, sem qualquer outra interação. Por esse motivo, qualquer referências que ainda não tiver sido publicada, será automaticamente.
 
 Para publicar uma página com a Publicação rápida:
 
@@ -112,11 +112,11 @@ Para publicar uma página com a Publicação rápida:
 
 >[!NOTE]
 >
->A Publicação rápida é uma publicação superficial, ou seja, somente as páginas selecionadas são publicadas, sem incluir páginas secundárias.
+>A Publicação rápida é uma publicação superficial, ou seja, somente a(s) página(s) selecionada(s) é(são) publicada(s), mas qualquer página secundária que houver não será.
 
 #### Gerenciar publicação    {#manage-publication}
 
-**Gerenciar publicação** oferece mais opções do que **Publicação rápida**, permitindo a inclusão de páginas secundárias, a personalização das referências, o início de qualquer fluxo de trabalho aplicável e a oferta da opção de publicação em uma data posterior.
+**Gerenciar Publicação** oferece mais opções do que a **Publicação Rápida**, permitindo a inclusão de páginas secundárias, a personalização das referências e o início de quaisquer fluxos de trabalho aplicáveis, além de oferecer a opção de publicar em uma data posterior.
 
 Para publicar ou desfazer a publicação de uma página usando Gerenciar publicação:
 
@@ -134,7 +134,7 @@ Para publicar ou desfazer a publicação de uma página usando Gerenciar publica
 
      Escolha executar essa ação agora ou em uma data posterior.
 
-     Publicar mais tarde inicia um fluxo de trabalho para publicar a(s) página(s) selecionada(s) no horário especificado. Por outro lado, desfazer a publicação mais tarde inicia um fluxo de trabalho para desfazer a publicação das páginas selecionadas em um momento específico.
+     Publicar mais tarde inicia um fluxo de trabalho para publicar a(s) página(s) selecionada(s) no horário especificado. Por outro lado, desfazer a publicação mais tarde inicia um fluxo de trabalho para desfazer a publicação da(s) página(s) selecionada(s) no horário especificado.
 
      >[!NOTE]
      >
@@ -168,13 +168,13 @@ Para publicar ou desfazer a publicação de uma página usando Gerenciar publica
 
    ![Gerenciar opções de publicação](/help/sites-cloud/authoring/assets/publishing-manage-publication-references.png)
 
-   A caixa de diálogo **Referências publicadas** exibe as referências para o conteúdo selecionado. Por padrão, todas elas são selecionadas e publicadas/não publicadas, mas você pode desmarcá-las para desmarcá-las e evitar que elas sejam incluídas na ação.
+   A caixa de diálogo **Referências publicadas** exibe as referências para o conteúdo selecionado. Por padrão, todas elas estarão selecionadas e serão publicadas/desfarão a publicação, mas é possível desmarcá-las para que não sejam incluídas na ação.
 
    Clique em **Concluído** para salvar suas alterações ou em **Cancelar** para cancelar a seleção e retornar ao assistente.
 
-   De volta ao assistente, o **Referências** A coluna é atualizada para refletir sua seleção de referências a serem publicadas ou não publicadas.
+   De volta ao assistente, a coluna **Referências** é atualizada para refletir sua seleção de referências que serão publicadas ou que terão a publicação desfeita.
 
-   ![Gerenciar páginas de seleção de publicação](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
+   ![Gerenciar publicação seleção de páginas](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
    **Incluir secundárias**
 
@@ -203,11 +203,11 @@ Para publicar ou desfazer a publicação de uma página usando Gerenciar publica
 
    >[!NOTE]
    >
-   >A variável **Fluxos de trabalho** A etapa é mostrada com base em quais direitos seu usuário pode ou não ter. Consulte a observação anterior nesta página sobre privilégios de publicação e Gerenciamento de acesso a fluxos de trabalho e [Aplicação de fluxos de trabalho a páginas](/help/sites-cloud/authoring/workflows/applying.md) para obter detalhes.
+   >A etapa **Fluxos de trabalho** é mostrada com base nos direitos que seu usuário pode ou não ter. Para obter detalhes, consulte a nota anterior nesta página sobre privilégios de publicação e Gerenciamento de acesso a fluxos de trabalho e [Aplicação de fluxos de trabalho a páginas](/help/sites-cloud/authoring/workflows/applying.md).
 
-   Os recursos são agrupados pelos workflows acionados e cada opção fornecida para:
+   Os recursos são agrupados pelos workflows acionados e cada um recebe opções para:
 
-   * Defina o título do workflow.
+   * Defina o título do fluxo de trabalho.
    * Manter o pacote de fluxo de trabalho, desde que o fluxo de trabalho tenha suporte para vários recursos.
    * Definir um título do pacote de fluxo de trabalho se a opção para manter esse pacote tiver sido escolhida.
 
@@ -254,13 +254,13 @@ Da mesma forma que você [usa a opção Gerenciar publicação para publicar](#m
 
 ## Publicar e desfazer a publicação de uma Árvore {#publishing-and-unpublishing-a-tree}
 
-Quando você tiver inserido ou atualizado um número considerável de páginas de conteúdo, todas as quais residem na mesma página raiz, pode ser mais fácil publicar a árvore inteira em uma ação.
+Quando você tiver inserido ou atualizado um número considerável de páginas de conteúdo, todas residentes na mesma página raiz, pode ser mais fácil publicar toda a árvore em uma única ação.
 
-Você pode usar o [Gerenciar publicação](#manage-publication) no console de sites para fazer isso.
+É possível usar a opção [Gerenciar publicação](#manage-publication) no console do Sites para fazer isso.
 
-1. No console Sites, selecione a página raiz da árvore que deseja publicar ou desfazer a publicação e selecione **Gerenciar publicação**.
-1. O assistente para **Gerenciar publicação** é iniciado. Opte por publicar ou desfazer a publicação e quando deveria ocorrer e selecione **Próxima** para continuar.
-1. No **Escopo** , selecione a página raiz e selecione **Incluir filhos**.
+1. No console do Sites, selecione a página raiz da árvore que deseja publicar ou desfazer a publicação e selecione **Gerenciar publicação**.
+1. O assistente para **Gerenciar publicação** é iniciado. Escolha publicar ou desfazer a publicação e quando isso deve ocorrer e selecione **Próximo** para continuar.
+1. Na etapa **Escopo**, selecione a página raiz e selecione **Incluir tarefas derivadas**.
 
    ![Gerenciar páginas de seleção de publicação](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 

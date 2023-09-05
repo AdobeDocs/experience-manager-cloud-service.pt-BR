@@ -5,7 +5,7 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 source-git-commit: e636a765cdc1be7cb0d385089e8ccc75b798844a
 workflow-type: tm+mt
 source-wordcount: '2558'
-ht-degree: 42%
+ht-degree: 88%
 
 ---
 
@@ -22,7 +22,7 @@ Um usuário com as permissões necessárias pode criar os tipos de ambientes des
 
 * **Desenvolvimento**: um ambiente de desenvolvimento pode ser criado para fins de desenvolvimento e testes e pode ser associado apenas a pipelines de não produção.
 
-* **Desenvolvimento rápido** - Um ambiente de desenvolvimento rápido (RDE) permite que um desenvolvedor implante e revise alterações rapidamente, minimizando o tempo necessário para testar recursos que comprovadamente funcionam em um ambiente de desenvolvimento local. Consulte [a documentação do ambiente de desenvolvimento rápido](/help/implementing/developing/introduction/rapid-development-environments.md) para obter detalhes sobre como usar um RDE.
+* **Desenvolvimento rápido**: um ambiente de desenvolvimento rápido (RDE) permite que um desenvolvedor implante e revise alterações rapidamente, minimizando o tempo necessário para testar recursos que comprovadamente funcionam em um ambiente de desenvolvimento local. Consulte [a documentação de ambientes de desenvolvimento rápido](/help/implementing/developing/introduction/rapid-development-environments.md) para obter detalhes sobre como usar um RDE.
 
 Os recursos de ambientes individuais dependem das soluções ativadas no [programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) do ambiente.
 
@@ -41,7 +41,7 @@ Os recursos de ambientes individuais dependem das soluções ativadas no [progra
 
 1. Clique no programa ao qual deseja adicionar um ambiente.
 
-1. No **Visão geral do programa** clique em **Adicionar ambiente** no **Ambientes** para adicionar um ambiente.
+1. Na página **Visão geral do Programa**, clique em **Adicionar Ambiente** no cartão **Ambientes** para adicionar um ambiente.
 
    ![Cartão Ambientes](assets/no-environments.png)
 
@@ -57,9 +57,9 @@ Os recursos de ambientes individuais dependem das soluções ativadas no [progra
       * O número de ambientes disponíveis/usados é exibido entre parênteses atrás do nome do tipo de ambiente.
    * Forneça um **nome** de ambiente.
    * Forneça uma **descrição** do ambiente.
-   * Se você estiver adicionando um **Produção + Preparo** ambiente, você deve fornecer um nome e uma descrição de ambiente para os ambientes de produção e de preparo.
+   * Se estiver adicionando um ambiente de **Produção + Preparo**, é necessário fornecer um nome e uma descrição tanto para o ambiente de produção quanto para o de preparo.
    * Selecione uma **região principal** no menu suspenso.
-      * A região primária não pode ser alterada após a criação.
+      * A região principal não pode ser alterada após a criação.
       * Dependendo dos direitos disponíveis, talvez seja possível configurar [várias regiões](#multiple-regions).
 
    ![Caixa de diálogo Adicionar ambiente](assets/add-environment2.png)
@@ -70,7 +70,7 @@ A tela **Visão geral** agora exibe seu novo ambiente no cartão **Ambientes**. 
 
 ## Várias regiões de publicação {#multiple-regions}
 
-Um usuário com a variável **Proprietário da empresa** a função pode configurar ambientes de produção e de preparo para incluir até três regiões de publicação adicionais, além da região principal. Regiões de publicação adicionais podem melhorar a disponibilidade. Consulte a [documentação Regiões de publicação adicionais](/help/operations/additional-publish-regions.md) para obter mais detalhes.
+Usuários com a função **Proprietário de empresa** podem configurar ambientes de produção e de preparo incluindo até três regiões de publicação adicionais, além da região principal. Regiões de publicação adicionais podem melhorar a disponibilidade. Consulte a [documentação Regiões de publicação adicionais](/help/operations/additional-publish-regions.md) para obter mais detalhes.
 
 >[!TIP]
 >
@@ -78,30 +78,30 @@ Um usuário com a variável **Proprietário da empresa** a função pode configu
 
 ### Adicionar várias regiões de publicação a um novo ambiente {#add-regions}
 
-Ao adicionar um ambiente, você pode optar por configurar regiões adicionais, além da região principal.
+Ao adicionar um novo ambiente, é possível optar por configurar regiões adicionais, além da região principal.
 
 1. Selecione a **Região principal**.
-   * A região primária não pode ser alterada após a criação do ambiente.
-1. Selecione a opção **Adicionar regiões de publicação adicionais** e um novo **Regiões de publicação adicionais** opção é exibida.
-1. No **Regiões de publicação adicionais** selecione uma região extra.
+   * A região principal não pode ser alterada após a criação do ambiente.
+1. Selecione a opção **Adicionar regiões de publicação adicionais** e será exibido um novo menu suspenso de **Regiões de publicação adicionais**.
+1. No menu suspenso **Regiões de publicação adicionais**, selecione uma região adicional.
 1. A região selecionada é adicionada abaixo do menu suspenso para indicar sua seleção.
-   * Toque ou clique no `X` ao lado da região selecionada, para que você possa desmarcá-la.
-1. Selecione outra região na **Regiões de publicação adicionais** para adicionar outra região.
+   * Toque ou clique em `X` ao lado da região selecionada para desmarcá-la.
+1. Para adicionar outra região, selecione-a no menu suspenso **Regiões de publicação adicionais**.
 1. Toque ou clique em **Salvar** quando estiver pronto para criar seu ambiente.
 
 ![Selecionar várias regiões](assets/select-multiple-regions.png)
 
-As regiões selecionadas se aplicam aos ambientes de produção e de preparo.
+As regiões selecionadas serão aplicadas a ambos os ambientes, de produção e de preparo.
 
-Se você não especificar nenhuma região adicional, [é possível fazer isso mais tarde, após a criação dos ambientes.](#edit-regions)
+Se não especificar nenhuma região adicional, [é possível fazê-lo mais tarde, após a criação dos ambientes.](#edit-regions)
 
-Se desejar provisionar [rede avançada](/help/security/configuring-advanced-networking.md) para o programa, recomenda-se que esse provisionamento seja feito antes de adicionar outras regiões de publicação aos ambientes usando a API do Cloud Manager. Caso contrário, o tráfego das regiões de publicação adicionais passa pelo proxy da região primária.
+Se quiser provisionar uma [rede avançada](/help/security/configuring-advanced-networking.md) para o programa, é recomendável fazê-lo antes de adicionar outras regiões de publicação aos ambientes usando a API do Cloud Manager. Caso contrário, o tráfego das regiões de publicação adicionais passará pelo proxy da região principal.
 
 ### Editar várias regiões de publicação {#edit-regions}
 
 Se não tiver especificado nenhuma região adicional previamente, é possível fazer isso após a criação dos ambientes, caso possua os direitos necessários.
 
-Você também pode remover regiões de publicação adicionais. No entanto, só é possível adicionar ou remover regiões em uma transação. Se você precisar adicionar uma região e remover uma região, primeiro adicione, salve a alteração e remova (ou vice-versa).
+Você também pode remover regiões de publicação adicionais. No entanto, só é possível adicionar ou remover regiões em uma transação. Se precisar adicionar uma região e remover outra, primeiro adicione, salve a alteração e depois remova (ou vice-versa).
 
 1. No console Visão geral do programa, clique no botão de reticências do ambiente de produção e selecione **Editar** no menu.
 
@@ -115,19 +115,19 @@ Você também pode remover regiões de publicação adicionais. No entanto, só 
 
 1. Toque ou clique em **Salvar** para salvar as alterações.
 
-As alterações feitas no ambiente de produção se aplicam aos ambientes de produção e de preparo. As alterações em várias regiões de publicação podem ser editadas somente no ambiente de produção.
+As alterações feitas no ambiente de produção também serão aplicadas no ambiente de preparo. As alterações em várias regiões de publicação podem ser editadas somente no ambiente de produção.
 
-Se desejar provisionar [rede avançada](/help/security/configuring-advanced-networking.md) para o programa, recomenda-se que esse provisionamento seja feito antes de adicionar outras regiões de publicação aos ambientes. Caso contrário, o tráfego das regiões de publicação adicionais passa pelo proxy da região primária.
+Se quiser provisionar uma [rede avançada](/help/security/configuring-advanced-networking.md) para o programa, é recomendável fazê-lo antes de adicionar outras regiões de publicação aos ambientes. Caso contrário, o tráfego das regiões de publicação adicionais passará pelo proxy da região principal.
 
 ## Detalhes do ambiente {#viewing-environment}
 
-Você pode usar o **Ambientes** na página de visão geral para acessar os detalhes de um ambiente de duas maneiras.
+É possível usar o cartão **Ambientes** na página de visão geral para acessar os detalhes de um ambiente de duas maneiras.
 
-1. No **Visão geral** clique no link **Ambientes** na parte superior da tela.
+1. Na página **Visão Geral**, clique na guia **Ambientes** na parte superior da tela.
 
    ![Guia Ambientes](assets/environments-tab2.png)
 
-   * Como alternativa, clique no link **Mostrar tudo** botão no **Ambientes** para ir diretamente para o **Ambientes** guia.
+   * Como alternativa, clique no botão **Mostrar Tudo** no cartão **Ambientes** para ir diretamente para a guia **Ambientes**.
 
      ![Mostrar todas as opções](assets/environment-showall.png)
 
@@ -135,7 +135,7 @@ Você pode usar o **Ambientes** na página de visão geral para acessar os detal
 
    ![Guia Ambientes](assets/environment-view-2.png)
 
-1. Clique em um ambiente na lista para que você possa revelar seus detalhes.
+1. Clique em um ambiente na lista para revelar seus detalhes.
 
    ![Detalhes do ambiente](assets/environ-preview1.png)
 
@@ -145,33 +145,33 @@ Como alternativa, clique no botão de reticências do ambiente desejado e seleci
 
 >[!NOTE]
 >
->O cartão **Ambientes** lista apenas três ambientes. Clique em **Mostrar tudo** conforme descrito anteriormente para ver todos os ambientes do programa.
+>O cartão **Ambientes** lista apenas três ambientes. Clique no botão **Mostrar Tudo** conforme descrito anteriormente para ver todos os ambientes do programa.
 
 ### Acesso ao serviço de visualização {#access-preview-service}
 
-O Cloud Manager fornece um serviço de visualização (fornecido como um serviço de publicação extra) para cada ambiente as a Cloud Service AEM.
+O Cloud Manager oferece um serviço de visualização (fornecido como um serviço de publicação adicional) para cada ambiente do AEM as a Cloud Service.
 
-Usando o serviço, você pode visualizar a experiência final de um site antes que ele atinja o ambiente de publicação real e esteja disponível publicamente.
+Usando o serviço, é possível visualizar a experiência final de um site antes que ele atinja o ambiente de publicação real e esteja disponível publicamente.
 
-Lista de permissões Na criação, o serviço de visualização tem um arquivo de IP de visualização padrão rotulado como, `Preview Default [<envId>]`, que bloqueia todo o tráfego para o serviço de visualização. Lista de permissões Desaplique a pesquisa de IP padrão do serviço de visualização para poder habilitar o acesso.
+Após a criação, será aplicada uma lista de permissões de IP padrão ao serviço de visualização, identificada como `Preview Default [<envId>]`, que bloqueará todo o tráfego para o serviço de visualização. Desative a lista de permissões de IP padrão do serviço de visualização para poder habilitar o acesso.
 
 ![Serviço de visualização e sua lista de permissões](assets/preview-ip-allow.png)
 
-Um usuário com as permissões necessárias deve concluir as etapas a seguir antes de compartilhar a URL do serviço de visualização para garantir o acesso a ela.
+Um usuário com as permissões necessárias deve concluir as etapas a seguir antes de compartilhar o URL do serviço de visualização para garantir o acesso a ele.
 
-1. Crie uma inclui na lista de permissões IP apropriada, aplique-a ao serviço de visualização e desaplique imediatamente a `Preview Default [<envId>]` incluir na lista de permissões.
+1. Crie uma lista de permissões IP apropriada, aplique-a ao serviço de visualização e desative imediatamente a lista de permissões `Preview Default [<envId>]`.
 
-   * Consulte [Aplicando e desaplicando Listas de permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) para obter mais detalhes.
+   * Consulte [Aplicação e desativação de listas de permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) para obter mais detalhes.
 
-1. Use o fluxo de trabalho da **Lista de permissões de IP** para remover o IP padrão e adicionar IPs conforme apropriado. Consulte [Gerenciamento de Listas de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md) para saber mais.
+1. Use o fluxo de trabalho **Lista de permissões de IP** para remover o IP padrão e adicionar IPs conforme necessário. Consulte [Gerenciamento de listas de permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md) para saber mais.
 
-Depois que o acesso ao serviço de visualização é desbloqueado, o ícone de bloqueio na frente do nome do serviço de visualização não é mais exibido.
+Quando o acesso ao serviço de visualização estiver desbloqueado, o ícone de cadeado na frente do nome do serviço de visualização não será mais exibido .
 
-Uma vez ativado, você poderá publicar conteúdo no serviço de visualização usando a interface do usuário Gerenciar publicação no AEM. Consulte [Visualização de conteúdo](/help/sites-cloud/authoring/fundamentals/previewing-content.md) para obter mais detalhes.
+Uma vez ativado, será possível publicar conteúdo para o serviço de visualização usando a interface Gerenciar publicação no AEM. Consulte [Visualização de Conteúdo](/help/sites-cloud/authoring/fundamentals/previewing-content.md) para obter mais detalhes.
 
 >[!NOTE]
 >
->Seu ambiente deve estar na versão `2021.05.5368.20210529T101701Z` do AEM, ou uma versão mais recente, para usar o serviço de visualização. Verifique se um pipeline de atualização foi executado com êxito em seu ambiente para que você possa usar o serviço de visualização.
+>Seu ambiente deve estar na versão `2021.05.5368.20210529T101701Z` do AEM, ou mais recente, para usar o serviço de visualização. Certifique-se de que um pipeline de atualização foi executado com sucesso em seu ambiente para poder usar o serviço de visualização.
 
 ### Status de regiões de publicação adicionais {#additional-region-status}
 
@@ -209,7 +209,7 @@ Observe que, em qualquer caso, [o tráfego sempre será roteado para a outra reg
 
 Como um serviço de nuvem nativo, as atualizações dos ambientes de preparo e produção nos programas de produção são gerenciadas automaticamente pela Adobe.
 
-No entanto, as atualizações para ambientes de desenvolvimento e de programas de sandbox são gerenciadas dentro dos programas. Quando o ambiente não estiver executando a versão mais recente do AEM disponível publicamente, o status na variável **Ambientes** no **Visão geral** A tela do programa mostra **Atualização disponível**.
+No entanto, as atualizações para ambientes de desenvolvimento e de programas de sandbox são gerenciadas dentro dos programas. Quando um ambiente não estiver executando a versão mais recente do AEM disponível publicamente, o status no cartão **Ambientes** na tela **Visão Geral** do programa mostrará **Atualização Disponível**.
 
 ![Status de atualização do ambiente](assets/environ-update.png)
 
@@ -217,7 +217,7 @@ No entanto, as atualizações para ambientes de desenvolvimento e de programas d
 
 Os pipelines são a única maneira de [implantar código nos ambientes do AEM as a Cloud Service.](deploy-code.md) Por esse motivo, cada pipeline está associado a uma versão específica do AEM.
 
-Se o Cloud Manager detectar que está disponível uma versão do AEM mais recente do que a implantada pela última vez no pipeline, ele mostrará a **Atualização disponível** status do ambiente.
+Se o Cloud Manager detectar que está disponível uma versão do AEM mais recente do que a implantada pela última vez no pipeline, ele mostrará o status **Atualização Disponível** para o ambiente.
 
 O processo de atualização é, portanto, um processo de duas etapas:
 
@@ -226,11 +226,11 @@ O processo de atualização é, portanto, um processo de duas etapas:
 
 ### Atualização dos ambientes {#updating-your-environments}
 
-A variável **Atualizar** está disponível na **Ambientes** para ambientes de desenvolvimento e de programas de sandbox clicando no botão de reticências do ambiente.
+A opção **Atualizar** estará disponível no cartão **Ambientes** para ambientes de desenvolvimento e de programas de sandbox, clicando no botão de reticências do ambiente.
 
 ![Opção Atualizar no cartão Ambientes](assets/environ-update2.png)
 
-Essa opção também está disponível clicando no link **Ambientes** do programa e selecionando o botão de reticências do ambiente.
+Essa opção também está disponível selecionando a guia **Ambientes** do programa e clicando no botão de reticências do ambiente.
 
 ![Opção Atualizar na guia Ambientes](assets/environ-update3.png)
 
@@ -250,7 +250,7 @@ O comportamento da opção **Atualizar** varia dependendo da configuração e do
 
 O usuário com a permissão necessária pode excluir um ambiente de desenvolvimento.
 
-No **Visão geral** tela do programa no **Ambientes** clique no botão de reticências do ambiente de desenvolvimento que deseja excluir.
+Na tela **Visão geral** do programa no cartão **Ambientes**, clique no botão de reticências do ambiente de desenvolvimento que deseja excluir.
 
 ![A opção de exclusão](assets/environ-delete.png)
 
@@ -271,27 +271,27 @@ Selecione **Gerenciar acesso** no menu de reticências do ambiente no cartão **
 
 >[!TIP]
 >
->Consulte [Equipe as a Cloud Service do AEM e perfis de produto](/help/onboarding/aem-cs-team-product-profiles.md) se quiser saber como os perfis de produto e de equipe as a Cloud Service do AEM podem conceder e limitar o acesso às soluções Adobe licenciadas.
+>Consulte [Perfis de produto e de equipe do AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md) se quiser saber como os perfis de produto e de equipe do AEM as a Cloud Service podem conceder e limitar o acesso às suas soluções licenciadas da Adobe.
 
 ## Acesso ao Developer Console {#accessing-developer-console}
 
-Selecione **Developer Console** no menu de reticências do ambiente no cartão **Ambientes**. Uma nova guia é aberta no navegador com a página de logon na **Console do desenvolvedor**.
+Selecione **Developer Console** no menu de reticências do ambiente no cartão **Ambientes**. Uma nova guia é aberta no seu navegador com a página de logon do **Developer Console**.
 
-![Faça logon no Console do desenvolvedor](assets/environ-devconsole.png)
+![Faça logon no Developer Console](assets/environ-devconsole.png)
 
-Somente um usuário com o **Desenvolvedor** A função tem acesso à **Console do desenvolvedor**. No entanto, para programas de sandbox, qualquer usuário com acesso ao programa de sandbox tem acesso a **Console do desenvolvedor**.
+Somente um usuário com a função **Desenvolvedor** terá acesso ao **Developer Console**. No entanto, para programas de sandbox, qualquer usuário com acesso ao programa de sandbox terá acesso ao **Developer Console**.
 
-Consulte [Hibernação e cancelamento da hibernação de ambientes de sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs.html#hibernation) para obter mais detalhes.
+Consulte [Hibernação e cancelamento da hibernação de ambientes de sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs.html?lang=pt-BR#hibernation) para obter mais detalhes.
 
 Essa opção também está disponível na guia **Ambiente** da janela **Visão geral** clicando no menu de reticências de um ambiente individual.
 
 ## Logon local {#login-locally}
 
-Selecionar **Logon local** no menu de reticências do ambiente no **Ambientes** para que você possa fazer logon localmente no Adobe Experience Manager.
+Selecione **Fazer logon local** no menu de reticências do ambiente no cartão **Ambientes** para fazer logon localmente no Adobe Experience Manager.
 
 ![Logon local](assets/environ-login-locally.png)
 
-Além disso, você pode fazer logon localmente na **Ambientes** guia do **Visão geral** página.
+Além disso, é possível fazer logon localmente na guia **Ambientes** da página **Visão geral**.
 
 ![Logon local na guia Ambientes](assets/environ-login-locally-2.png)
 
@@ -299,7 +299,7 @@ Além disso, você pode fazer logon localmente na **Ambientes** guia do **Visão
 
 Os nomes de domínio personalizados são suportados nos programas do Sites do Cloud Manager para serviços de publicação e visualização. Cada ambiente do Cloud Manager pode hospedar no máximo 250 domínios personalizados.
 
-Para configurar nomes de domínio personalizados, navegue até o **Ambientes** e clique em um ambiente para exibir os detalhes.
+Para configurar nomes de domínio personalizados, navegue até a guia **Ambientes** e clique em um ambiente para exibir os detalhes.
 
 ![Detalhes do ambiente](assets/domain-names.png)
 
@@ -316,29 +316,29 @@ As ações a seguir podem ser realizadas no serviço de publicação do seu ambi
 
 ## Gerenciamento de listas de permissões de IP {#manage-ip-allow-lists}
 
-As listas de permissões IP são compatíveis com os serviços de criação, publicação e visualização do Cloud Manager para programas do Sites.
+As listas de permissões de IP são compatíveis com o Cloud Manager para serviços de criação, publicação e visualização de programas do Sites.
 
-Para gerenciar listas de permissões de IP, navegue até a página **Ambientes** guia do **Visão geral** página do seu programa. Clique em um ambiente individual para gerenciar seus detalhes.
+Para gerenciar listas de permissões de IP, navegue até a guia **Ambientes** da página **Visão geral** do seu programa. Clique em um ambiente individual para gerenciar seus detalhes.
 
 ### Aplicação de uma lista de permissões de IP {#apply-ip-allow-list}
 
-A aplicação de uma incluir na lista de permissões lista de permissões de IP associa todos os intervalos IP incluídos na definição do arquivo a um serviço de autoria ou publicação em um ambiente. Um usuário no **Proprietário da empresa** ou **Gerente de implantação** A função deve estar conectada para poder aplicar uma inclui na lista de permissões IP.
+A aplicação de uma lista de permissões de IP associa todos os intervalos de IPs incluídos na definição da lista de permissões a um serviço de autoria ou publicação em um ambiente. Um usuário com a função **Proprietário da empresa** ou **Gerente de implantação** deve estar conectado para poder aplicar uma lista de permissões de IP.
 
-O arquivo de inclui na lista de permissões IP deve existir no Cloud Manager para ser aplicado a um ambiente. Para saber mais sobre as listas de permissões de IP no Cloud Manager, consulte [Introdução às Listas de permissões de IP no Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+A lista de permissões de IP deve existir no Cloud Manager para ser aplicada a um ambiente. Para saber mais sobre as listas de permissões de IP no Cloud Manager, consulte [Introdução às Listas de permissões de IP no Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
-**Para aplicar uma inclui na lista de permissões de IP:**
+**Para aplicar uma lista de permissões de IP:**
 
 1. Navegue até o ambiente específico na guia **Ambientes** da tela **Visão geral** do programa e acesse a tabela **Listas de permissões de IP**.
-1. Use os campos de entrada na parte superior da tabela de inclui na lista de permissões de IP para poder selecionar o arquivo de inclui na lista de permissões de IP e o serviço de autoria ou publicação ao qual deseja aplicá-lo.
+1. Use os campos de entrada na parte superior da tabela Lista de permissões de IP para selecionar a lista de permissões e o serviço de autoria ou publicação ao qual deseja aplicá-la.
 1. Clique em **Aplicar** e confirme o envio.
 
-### Cancelamento de aplicação de uma inclui na lista de permissões de IP {#unapply-ip-allow-list}
+### Cancelamento da aplicação de uma lista de permissões de IP {#unapply-ip-allow-list}
 
-O cancelamento da aplicação de uma inclui na lista de permissões de IP desassocia todos os intervalos de IP incluídos na definição do arquivo de inclui na lista de permissões de um serviço de autoria ou edição em um ambiente. Um usuário no **Proprietário da empresa** ou **Gerente de implantação** A função deve estar conectada para poder desaplicar um incluo na lista de permissões IP.
+O cancelamento da aplicação de uma lista de permissões de IP desassocia todos os intervalos de IPs incluídos na definição da lista de permissões de um serviço de autoria ou publicação em um ambiente. Um usuário com a função **Proprietário da empresa** ou **Gerente de implantação** deve estar conectado para poder cancelar a aplicação de uma lista de permissões de IP.
 
-**Para desaplicar uma inclui na lista de permissões de IP:**
+**Para cancelar a aplicação de uma lista de permissões de IP:**
 
 1. Navegue até o ambiente específico na guia **Ambientes** da tela **Visão geral** do programa e acesse a tabela **Listas de permissões de IP**.
-1. Identifique a linha na qual a regra de inclui na lista de permissões de IP que você deseja desaplicar está listada.
+1. Identifique a linha na qual a regra da lista de permissões de IP que deseja cancelar a aplicação está listada.
 1. Selecione o botão de reticências no final da linha.
 1. Clique em **Cancelar aplicação** e confirme o envio.

@@ -1,13 +1,13 @@
 ---
 title: Visão geral do console da Live Copy
-description: Saiba mais sobre as noções básicas do Console de visão geral da Live Copy para entender rapidamente o status das suas Live Copies para sincronizar conteúdo.
+description: Saiba mais sobre as noções básicas do console de visão geral da Live Copy para entender rapidamente o status de suas Live Copies e sincronizar o conteúdo.
 feature: Multi Site Manager
 role: Admin
 exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '729'
-ht-degree: 89%
+ht-degree: 97%
 
 ---
 
@@ -49,7 +49,7 @@ A **Visão geral da Live Copy** pode ser aberta a partir do painel lateral **Ref
 A **Visão geral da Live Copy** pode ser aberta ao visualizar propriedades de uma página do blueprint:
 
 1. Abra as **Propriedades** para a página do blueprint apropriada.
-1. Abra o **Blueprint** guia - a variável **Visão geral da Live Copy** é exibida na barra de ferramentas superior:
+1. Abra a guia **Blueprint** e verá a opção **Visão geral da Live Copy** exibida na barra de ferramentas superior:
 
    ![Guia Propriedades do blueprint](../assets/live-copy-blueprint-tab.png)
 
@@ -72,7 +72,7 @@ Por exemplo, uma configuração de implantação é definida como `targetActivat
 A **Visão geral da Live Copy** também pode ser usada para executar ações na Live Copy:
 
 1. Abra a **Visão geral da Live Copy**. 
-1. Selecione o blueprint necessário ou a página da Live Copy e a barra de ferramentas é atualizada para mostrar as ações disponíveis. As [ações](overview.md#terms-used) disponíveis variam dependendo se você seleciona um [blueprint](#actions-for-a-blueprint-page) ou uma página de [Live Copy](#actions-for-a-live-copy-page).
+1. Selecione o blueprint necessário ou a página da Live Copy e a barra de ferramentas será atualizada para mostrar as ações disponíveis. As [ações](overview.md#terms-used) disponíveis variam dependendo se você seleciona um [blueprint](#actions-for-a-blueprint-page) ou uma página de [Live Copy](#actions-for-a-live-copy-page).
 
 ### Ações para uma página do blueprint {#actions-for-a-blueprint-page}
 

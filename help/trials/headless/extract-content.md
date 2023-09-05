@@ -7,7 +7,7 @@ exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1085'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -66,7 +66,7 @@ O Explorer GraphQL é iniciado em uma nova guia. Aqui, é possível criar e vali
 
    ![Consulta de lista](assets/do-not-localize/list-query-1-3-4-5.png)
 
-Você acabou de validar uma consulta de lista para obter uma lista completa de todos os fragmentos de conteúdo. Esse processo ajuda a garantir que a resposta seja a que seu aplicativo espera, com resultados que ilustram como seus aplicativos e sites recuperarão o conteúdo criado no AEM.
+Você acabou de validar uma consulta de lista que contém uma lista completa de todos os fragmentos de conteúdo. Esse processo ajuda a garantir que a resposta seja a que seu aplicativo espera, com resultados que ilustram como seus aplicativos e sites recuperarão o conteúdo criado no AEM.
 
 ## Consultar uma parte específica do conteúdo de amostra {#bypath-query}
 
@@ -105,7 +105,7 @@ A execução de uma consulta byPath permite recuperar o conteúdo de um Fragment
 
    ![Resultados da consulta byPath](assets/do-not-localize/bypath-query-2-3-4.png)
 
-Você acabou de validar uma consulta byPath para recuperar um Fragmento de conteúdo específico identificado pelo caminho desse fragmento.
+Você acabou de validar uma consulta byPath para recuperar um fragmento de conteúdo específico identificado pelo caminho desse fragmento.
 
 ## Consultar seu próprio conteúdo {#own-queries}
 

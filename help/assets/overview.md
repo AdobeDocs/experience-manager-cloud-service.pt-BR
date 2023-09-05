@@ -8,7 +8,7 @@ exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
 source-git-commit: d663c258a83473ec8d3c68bc5683955003d889c7
 workflow-type: tm+mt
 source-wordcount: '752'
-ht-degree: 66%
+ht-degree: 97%
 
 ---
 
@@ -39,19 +39,19 @@ Estes são os principais benefícios do Assets as a [!DNL Cloud Service]. Para s
 
 ## Experiências disponíveis com base em persona {#persona-based-experiences}
 
-A Adobe oferece uma solução robusta de Gerenciamento de ativos digitais (DAM) para você aproveitar ao máximo seus ativos digitais. O Adobe Experience Manager Assets tem duas experiências separadas que usam o mesmo repositório de Cloud Service:
+A Adobe oferece uma solução robusta de gerenciamento de ativos digitais (DAM) para você aproveitar ao máximo seus ativos digitais. O Adobe Experience Manager Assets tem duas experiências separadas que usam o mesmo repositório do Cloud Services:
 
-* **Exibição do administrador**: a interface do usuário as a Cloud Service do Assets. Use a Exibição de administrador para todos os recursos avançados de gerenciamento de ativos, incluindo integrações, fluxos de trabalho, automação de conteúdo, publicação e muito mais.
+* **Visualização de admin**: a interface existente do Assets as a Cloud Service. Use a visualização de admin para todos os recursos avançados de gerenciamento de ativos, incluindo integrações, fluxos de trabalho, automação de conteúdo, publicação, entre outras.
 
-* **Exibição de ativos**: Adobe uma experiência leve de gerenciamento de ativos para armazenar, gerenciar, descobrir e usar ativos digitais. Interface do usuário simplificada com recursos essenciais de gerenciamento de ativos. Projetado para usuários leves de DAM, com foco em upload, gerenciamento de metadados, pesquisa, download e compartilhamento.
+* **Visualização de ativos**: a experiência leve de gerenciamento de ativos da Adobe para armazenar, gerenciar, descobrir e usar ativos digitais. Interface simplificada com recursos essenciais de gerenciamento de ativos. Desenvolvida para usuários leves de DAM, com foco no upload, gerenciamento de metadados, pesquisa, download e compartilhamento.
 
-Os usuários com acesso à visualização Administrador também podem acessar a visualização Ativos. A Exibição de ativos fornece uma interface simplificada que facilita o gerenciamento, a descoberta e a distribuição de ativos digitais. Um amplo conjunto de usuários de diferentes funções, incluindo equipes criativas, de marketing e de linha de negócios, pode colaborar em ativos e acessar os ativos corretos e aprovados quando e onde for necessário. Muitos usuários casuais do DAM preferem a exibição de Ativos, pois ela contém apenas um subconjunto de recursos. A experiência é direcionada para criativos, consumidores de ativos somente leitura e usuários de DAM mais leves.
+Usuários que possuem acesso à visualização de admin também podem acessar a visualização de ativos. A visualização de ativos oferece uma interface simplificada que facilita o gerenciamento, a descoberta e a distribuição de seus ativos digitais. Um extenso conjunto de usuários com diferentes funções, incluindo equipes criativas, de marketing e de linha de negócios, pode colaborar em ativos e acessar os ativos corretos e aprovados quando e onde for necessário. Muitos usuários casuais de DAM preferem a visualização de ativos, visto que ela contém apenas um subconjunto de recursos. A experiência é direcionada para consumidores de ativos criativos do tipo somente leitura e que não exigem muito do DAM.
 
-Bibliotecários, desenvolvedores e superusuários do DAM podem continuar a usar a visualização de Administrador ou alternar entre as interfaces do usuário, conforme necessário. Você pode selecionar a experiência que funciona melhor para sua função.
+Bibliotecários, desenvolvedores e superusuários do DAM podem continuar a usar a visualização de admin ou alternar entre as interfaces, conforme necessário. Você pode selecionar a experiência que funciona melhor para sua função.
 
-![adicionar-tags](assets/newui-overview.svg)
+![add-tags](assets/newui-overview.svg)
 
-Para obter informações sobre como acessar a exibição Assets e algumas das simplificações que ela oferece em relação à exibição Admin, consulte [Introdução à exibição de ativos](/help/assets/assets-view-introduction.md).
+Para obter informações sobre como acessar a visualização de ativos e alguns dos recursos simplificados que ela oferece em relação à visualização de admin, consulte [Introdução à visualização de ativos](/help/assets/assets-view-introduction.md).
 
 ## Novos recursos do Assets {#whats-new-assets}
 

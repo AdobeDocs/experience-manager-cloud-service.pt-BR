@@ -5,7 +5,7 @@ exl-id: 02795a31-244a-42b4-8297-2649125d7777
 source-git-commit: 9df57ce958bb8f7f9406b9fe342c9d2a4ccb0ae0
 workflow-type: tm+mt
 source-wordcount: '681'
-ht-degree: 77%
+ht-degree: 94%
 
 ---
 
@@ -29,8 +29,8 @@ Para que um aplicativo possa ser editado pelo Editor universal, ele deve ser ins
 | `itemprop` | Para saber mais sobre o atributo do recurso, consulte a seção [Instrumentar a página do documento Introdução ao Editor universal no AEM](getting-started.md#instrument-thepage) |
 | `itemtype` | Tipo do item editável (por exemplo, texto, imagem e referência) |
 | `data-editor-itemfilter` | Define quais referências podem ser usadas |
-| `data-editor-itemlabel` | Define um rótulo personalizado para um item selecionável que é exibido no editor <br>No caso `itemmodel` for definido, o rótulo será recuperado por meio do modelo |
-| `data-editor-itemmodel` | Define um modelo usado para edição baseada em formulário no painel de propriedades |
+| `data-editor-itemlabel` | Define um rótulo personalizado para um item selecionável que é exibido no editor. <br>Caso`itemmodel` seja definido, o rótulo será recuperado por meio do modelo |
+| `data-editor-itemmodel` | Define um modelo que será utilizado para a edição com base em formulários no painel de propriedades |
 | `data-editor-behavior` | Define o comportamento de uma instrumentação, por exemplo, textos ou imagens isoladas também podem atuar como um componente, para que possam ser movidos ou excluídos |
 
 ## Tipos de item {#item-types}
@@ -38,10 +38,10 @@ Para que um aplicativo possa ser editado pelo Editor universal, ele deve ser ins
 | `itemtype` | Descrição | `itemid` | `itemprop` | `data-editor-itemfilter` | `data-editor-itemlabel` | `data-editor-itemmodel` | `data-editor-behvior` |
 |---|---|---|---|---|---|---|---|
 | `text` | O texto é editável nas tags HTML, mas somente em um formato de texto simples; a formatação Rich Text não está disponível. Isso é bastante usado em componentes de título, por exemplo | Opcional | Obrigatório | n/a | Opcional | n/a | Opcional |
-| `richtext` | O texto é editável com recursos completos de Rich Text. O RTE é mostrado no painel direito | Opcional | Obrigatório | n/a | Opcional | n/a | Opcional |
+| `richtext` | O texto é editável com recursos completos de Rich Text. O RTE será exibido no painel direito | Opcional | Obrigatório | n/a | Opcional | n/a | Opcional |
 | `media` | O item editável é um ativo, por exemplo, uma imagem ou vídeo | Opcional | Obrigatório | Opcional<br>lista de critérios de filtro de imagem ou vídeo que é passada para o seletor de ativos | Opcional | n/a | Opcional |
 | `container` | O item editável atua como um container de componentes, o que também é conhecido como um Sistema de parágrafo. | Depende do <br>, veja abaixo | Depende do <br>, veja abaixo | Opcional<br>uma lista de componentes permitidos | Opcional | n/a | n/a |
-| `component` | O item editável é um componente. Ele não acrescenta funcionalidades adicionais. É obrigatório indicar partes móveis/excluíveis do DOM e para abrir o painel de propriedades e seus campos | Obrigatório | n/a | n/a | Opcional | Opcional | n/a |
+| `component` | O item editável é um componente. Ele não acrescenta nenhuma funcionalidade extra, mas é necessário para indicar partes do DOM que podem ser movidas/excluídas e para abrir o painel de propriedades e seus campos | Obrigatório | n/a | n/a | Opcional | Opcional | n/a |
 | `reference` | O item editável é uma referência, por exemplo, um fragmento de conteúdo, fragmento de experiência ou produto | Depende do <br>, veja abaixo | Depende do <br>, veja abaixo | Opcional<br>lista de critérios de filtro para fragmentos de conteúdo, produtos ou fragmentos de experiência que é passada para o seletor de referência | Opcional | Opcional | n/a |
 
 Dependendo do caso de uso, `itemprop` ou `itemid` podem ou não ser exigidos. Por exemplo:
@@ -60,7 +60,7 @@ Dependendo do caso de uso, `itemprop` ou `itemid` podem ou não ser exigidos. Po
 
 Para saber mais sobre o Editor universal, consulte estes documentos.
 
-* [Introdução ao Universal Editor](introduction.md) : saiba como o Editor universal permite editar qualquer aspecto de qualquer conteúdo em qualquer implementação para que você possa fornecer experiências excepcionais, aumentar a velocidade do conteúdo e fornecer uma experiência do desenvolvedor de última geração.
+* [Introdução ao Editor universal](introduction.md): saiba como o Editor universal permite editar qualquer aspecto do conteúdo das implementações, a fim de entregar experiências excepcionais, aumentar a velocidade do conteúdo e fornecer uma experiência de desenvolvimento de última geração.
 * [Criação de conteúdo com o Editor universal](authoring.md): saiba como é fácil e intuitivo para os autores criarem conteúdo usando o Editor universal.
 * [Publicação de conteúdo com o Editor universal](publishing.md): saiba como o Editor visual universal publica o conteúdo e como seus aplicativos podem lidar com esse conteúdo.
 * [Introdução ao Editor universal no AEM](getting-started.md): saiba como obter acesso ao Editor universal e começar a instrumentar seu primeiro aplicativo do AEM para utilizá-lo.

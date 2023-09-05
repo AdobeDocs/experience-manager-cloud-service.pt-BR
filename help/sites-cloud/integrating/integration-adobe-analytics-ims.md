@@ -5,7 +5,7 @@ exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
 source-git-commit: d59559d38eef182723a8791c6614d03930f64a85
 workflow-type: tm+mt
 source-wordcount: '914'
-ht-degree: 88%
+ht-degree: 96%
 
 ---
 
@@ -45,7 +45,7 @@ O primeiro estágio da configuração é criar uma configuração do IMS no AEM 
 1. No AEM, abra o menu **Ferramentas**.
 1. Na seção **Segurança**, selecione **Configurações do Adobe IMS**.
 1. Selecione **Criar** para abrir a **Configuração de contas técnicas do Adobe IMS**.
-1. Usando o menu suspenso em **Configuração na nuvem**, selecione **Adobe Analytics**.
+1. Usando a lista suspensa em **Configuração na nuvem**, selecione **Adobe Analytics**.
 1. Ative **Criar novo certificado** e insira um novo alias.
 1. Confirme com **Criar certificado**.
 
@@ -55,7 +55,7 @@ O primeiro estágio da configuração é criar uma configuração do IMS no AEM 
 
    >[!CAUTION]
    >
-   >Mantenha essa configuração aberta; ela será necessária novamente quando [Concluir a configuração do IMS no AEM](#completing-the-ims-configuration-in-aem).
+   >Mantenha essa configuração aberta, ela será necessária novamente ao [Concluir a configuração do IMS no AEM](#completing-the-ims-configuration-in-aem).
 
    ![Baixar certificado](assets/integrate-analytics-ims-02.png)
 
@@ -77,11 +77,11 @@ Abra o Console do desenvolvedor da Adobe para criar um Projeto com o Adobe Analy
 
    [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
-1. Todos os projetos que você tiver serão mostrados. Selecione **Criar novo projeto** - a localização e utilização dependerão:
+1. Quaisquer projetos que você tiver serão mostrados. Selecione **Criar novo projeto** - a localização e utilização dependerão:
 
-   * Se você ainda não tiver um projeto, **Criar novo projeto** está no centro, na parte inferior.
+   * Se você ainda não tiver um projeto, **Criar novo projeto** estará na parte inferior central.
      ![Criar novo projeto - Primeiro projeto](assets/integration-analytics-ims-02.png)
-   * Caso já tenha projetos existentes, eles são listados e **Criar novo projeto** está no canto superior direito.
+   * Caso já tenha projetos existentes, eles serão listados e **Criar novo projeto** estará no canto superior direito.
      ![Criar novo projeto - Vários projetos](assets/integration-analytics-ims-03.png)
 
 
@@ -166,7 +166,7 @@ Ao retornar para o AEM, é possível concluir a configuração do IMS adicionand
 
 1. Confirme com **Criar**.
 
-1. Sua configuração do Adobe Analytics é mostrada no console AEM.
+1. Sua configuração do Adobe Analytics será exibida no console do AEM.
 
    ![Configuração IMS](assets/integrate-analytics-ims-11.png)
 

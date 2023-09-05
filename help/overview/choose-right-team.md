@@ -5,7 +5,7 @@ exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
 source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
 source-wordcount: '860'
-ht-degree: 76%
+ht-degree: 98%
 
 ---
 
@@ -20,9 +20,9 @@ ht-degree: 76%
 
 Há chances de que, em sua organização, vários departamentos sejam responsáveis por diferentes aspectos da experiência digital. Sem governança, o palco está armado para discussões, lutas internas e confusão intermináveis.
 
-A governança digital começa com a verificação de quem é o responsável pelo que e quem está fazendo qual trabalho digitalmente focado. Talvez seja necessário fazer contratações estratégicas para adicionar as habilidades necessárias. Um desafio ainda maior é conduzir uma mudança de cultura — construir um amplo apoio para a nova tecnologia e ajudar as pessoas a se acostumarem com novas maneiras de fazer as coisas. Uma parte essencial desse esforço é criar uma comunidade digital que permita que as pessoas aprendam e se apoiem mutuamente.
+A governança digital começa com a definição de quem é o responsável pelo quê e quem está fazendo qual trabalho com foco digital. Talvez seja necessário fazer contratações estratégicas para adicionar as habilidades necessárias. Um desafio ainda maior é promover uma mudança cultural, criando um amplo apoio para a nova tecnologia e ajudando as pessoas a se acostumarem com novas formas de fazer as coisas. Uma parte essencial desse esforço é criar uma comunidade digital que permita que as pessoas aprendam e se apoiem mutuamente.
 
-Por enquanto, o foco está em colocar as pessoas certas nos trabalhos certos para ajudar a impulsionar a implantação do Adobe Experience Manager. Para cada produto principal — Experience Manager Sites e Experience Manager Assets — o Adobe forneceu uma lista de funções que devem ser preenchidas, juntamente com as habilidades, níveis de conhecimento e atributos que tornam as pessoas eficazes nas várias funções.
+Por enquanto, o foco está em colocar as pessoas certas nos cargos certos para ajudar a impulsionar a implantação do Adobe Experience Manager. Para cada produto principal (Experience Manager Sites e Experience Manager Assets) a Adobe forneceu uma lista de funções que deve ser preenchida, juntamente com as habilidades, os níveis de especialização e os atributos que tornam as pessoas eficazes nas diversas funções.
 
 Sua atribuição desta semana é revisar ambas as listas com sua equipe de implementação e garantir que você tenha pessoas com qualificações relevantes em cada função.
 
@@ -54,7 +54,7 @@ Agora que você sabe que funções são necessárias, examine o gráfico abaixo 
 
 Do Arquiteto ao ScrumMaster, todas as funções desta equipe são indispensáveis — inclusive o bibliotecário do DAM.
 
-Talvez você já tenha maioria das pessoas necessárias para executar uma implementação bem-sucedida do Adobe Experience Manager Assets. Essa lista é semelhante à do Adobe Experience Manager Sites, com uma adição importante: você precisa de um bibliotecário para garantir que seus ativos digitais sejam organizados e rotulados de forma que sejam fáceis de encontrar.
+Talvez você já tenha maioria das pessoas necessárias para executar uma implementação bem-sucedida do Adobe Experience Manager Assets. Essa lista é semelhante à do Adobe Experience Manager Sites, com uma inclusão importante: será necessário um bibliotecário para garantir que seus ativos digitais estejam organizados e rotulados de forma que sejam fáceis de encontrar.
 
 | Função | Habilidades | Nível de capacidade | Qualidades |
 |--- |--- |--- |--- |
@@ -73,8 +73,8 @@ Agora que você sabe que funções são necessárias, examine o gráfico abaixo 
 
 <br>
 
-![Gráfico de barras horizontal que mostra funções fictícias e seu nível de envolvimento na equipe do AEM Assets.](/help/overview/assets/team_involvement2.png)
+![Gráfico de barras horizontais que mostra funções fictícias e seu nível de envolvimento na equipe do AEM Assets.](/help/overview/assets/team_involvement2.png)
 
 >[!TIP]
 >
-> Saiba mais sobre o Adobe Experience Cloud e use os recursos no [Experience League](https://experienceleague.adobe.com/?lang=pt-BR#recommended/solutions/experience-manager) e obter certificação por meio do [Aprendizado digital Adobe](https://learning.adobe.com/certification.html).
+> Saiba mais sobre a Adobe Experience Cloud e use os recursos da [Experience League](https://experienceleague.adobe.com/?lang=pt-BR#recommended/solutions/experience-manager) e obtenha a certificação por meio da [Adobe Digital Learning](https://learning.adobe.com/certification.html).

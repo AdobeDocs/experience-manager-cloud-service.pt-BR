@@ -5,7 +5,7 @@ exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '2254'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -75,7 +75,7 @@ Antes de exportar um fragmento, é necessário adicionar a **Configuração da n
 * selecionar um espaço de trabalho do Target como destino
 * selecionar um domínio externalizador para regravação de referências no fragmento de experiência (opcional)
 
-As opções necessárias podem ser selecionadas em **Propriedades da página** da pasta, fragmento ou ambos necessários; a especificação é herdada conforme necessário.
+As opções necessárias podem ser selecionadas nas **Propriedades da página** da pasta e/ou fragmento necessários. A especificação será herdada conforme necessário.
 
 1. Navegue até o console **Fragmentos de experiência**.
 
@@ -356,7 +356,7 @@ Para exportar um fragmento de experiência do AEM para o Target (depois de espec
 
 ## Usar os fragmentos de experiência no Adobe Target {#using-your-experience-fragments-in-adobe-target}
 
-Depois de executar as tarefas anteriores, o fragmento de experiência é exibido na página Ofertas do Target. Consulte [documentação específica do Target](https://experiencecloud.adobe.com/resources/help/pt_BR/target/target/aem-experience-fragments.html) para saber mais sobre o que você pode realizar lá.
+Depois de executar as tarefas anteriores, o fragmento de experiência é exibido na página Ofertas do Target. Consulte a [documentação específica do Target](https://experiencecloud.adobe.com/resources/help/pt_BR/target/target/aem-experience-fragments.html) para saber mais sobre o que é possível realizar lá.
 
 >[!NOTE]
 >

@@ -5,7 +5,7 @@ exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '966'
-ht-degree: 87%
+ht-degree: 98%
 
 ---
 
@@ -39,7 +39,7 @@ Essa parte da jornada se aplica ao administrador do Cloud Manager.
 * É necessário ter acesso ao Cloud Manager.
 * É necessário ser um membro da função **Gerenciador de implantação** no Cloud Manager.
 * Um repositório Git para o ambiente do AEM deve ser configurado no Cloud Manager.
-   * Geralmente, isso já acontece em qualquer projeto ativo. No entanto, se não estiver, consulte a documentação dos Repositórios do Cloud Manager, disponível no [Recursos adicionais](#additional-resources) seção.
+   * Geralmente, isso já acontece em qualquer projeto ativo. No entanto, se não estiver, consulte a documentação dos repositórios do Cloud Manager, disponível na seção [Recursos adicionais](#additional-resources).
 
 ## O que é um pipeline de front-end {#front-end-pipeline}
 
@@ -90,7 +90,7 @@ Agora que você acessou o Cloud Manager, é possível criar um pipeline para imp
    * Verifique se o ambiente correto está selecionado em **Ambientes de implantação qualificados**.
    * Selecione o **Repositório** correto.
    * Defina a qual **Ramificação Git** o pipeline deve ser associado.
-   * Defina a **Localização do código** se o desenvolvimento de front-end estiver localizado em um caminho específico no repositório selecionado. O valor padrão é a raiz do repositório, mas com frequência o desenvolvimento de front-end e back-end estão em caminhos diferentes.
+   * Defina a **Localização do código** se o desenvolvimento de front-end estiver localizado em um caminho específico no repositório selecionado. O valor padrão é a raiz do repositório, mas muitas vezes o desenvolvimento do front-end e do back-end estão em caminhos diferentes.
 
    ![Informações do código-fonte para adicionar pipeline](assets/add-pipeline-source-code.png)
 
@@ -102,7 +102,7 @@ O novo pipeline é criado e fica visível na seção **Pipelines** da janela do 
 
 >[!TIP]
 >
->Se você já estiver familiarizado com pipelines no AEMaaCS e quiser saber mais sobre as diferenças entre os tipos de pipelines, incluindo mais detalhes sobre o pipeline de front-end, consulte Configurar pipeline de CI/CD - Cloud Service vinculado no menu [Recursos adicionais](#additional-resources) abaixo.
+>Caso já conheça sobre os pipelines no AEMaaCS e deseje saber mais sobre as diferenças entre os diferentes tipos de pipelines, incluindo mais detalhes sobre o pipeline de front-end, consulte Configurar pipeline de CI/CD - Cloud Services, na seção [Recursos adicionais](#additional-resources) abaixo.
 
 ## O que vem a seguir {#what-is-next}
 
@@ -118,5 +118,5 @@ Desenvolva esse conhecimento e prossiga na sua jornada de Criação rápida de s
 Embora seja recomendável seguir para a próxima parte da jornada de Criação rápida de sites revisando o documento [Personalizar o tema do site,](customize-theme.md) a seguir estão alguns recursos adicionais e opcionais que aprofundam alguns conceitos mencionados neste documento, mas não são necessários para continuar na jornada.
 
 * [Documentação do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=pt_BR) - Se quiser obter mais detalhes sobre os recursos do Cloud Manager, consulte diretamente os documentos técnicos detalhados.
-* [Repositórios do Cloud Manager](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) - Se precisar de mais informações sobre como configurar e gerenciar repositórios Git para seu projeto AEMaaCS, consulte este documento.
-* [Configurar pipeline de CI/CD - Serviçoes em nuvem](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) - Saiba mais detalhes sobre a configuração de pipelines, tanto pilha completa quanto front-end, neste documento.
+* [Repositórios do Cloud Manager](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md): se precisar de mais informações sobre como configurar e gerenciar repositórios Git para seu projeto do AEMaaCS, consulte este documento.
+* [Configurar pipeline de CI/CD - Cloud Services](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md): consulte este documento para saber mais detalhes sobre a configuração de pipelines, tanto de pilha completa quanto de front-end.

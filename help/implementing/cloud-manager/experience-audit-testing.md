@@ -5,7 +5,7 @@ exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
 source-git-commit: 9f305e1127957fdba6dae978da4ac5fce4d3a776
 workflow-type: tm+mt
 source-wordcount: '588'
-ht-degree: 85%
+ht-degree: 93%
 
 ---
 
@@ -29,9 +29,9 @@ A Auditoria de experiência é um recurso disponível nos pipelines de produçã
 
 A Auditoria de experiência no Cloud Manager garante que a experiência do usuário final no site seja do mais alto padrão.
 
-Os resultados da auditoria são informativos e permitem que o gerente de implantação veja as pontuações e as alterações entre as pontuações atual e anterior. Esse insight é importante para determinar se há uma regressão introduzida com a implantação atual.
+Os resultados da auditoria são informativos e permitem que o gerente de implantação veja as pontuações e as alterações entre as pontuações atual e anterior. Essa informação é valiosa para determinar se foi introduzida uma regressão com a implantação atual.
 
-A Auditoria de experiência é disponibilizada pelo Google Lighthouse, uma ferramenta de código aberto do Google, e é ativada em todos os pipelines de produção do Cloud Manager.
+A auditoria de experiência é disponibilizada pelo Google Lighthouse, uma ferramenta de código aberto do Google, e é habilitada em todos os pipelines de produção do Cloud Manager.
 
 >[!INFO]
 >
@@ -39,11 +39,11 @@ A Auditoria de experiência é disponibilizada pelo Google Lighthouse, uma ferra
 
 >[!TIP]
 >
->Você configura quais páginas são incluídas na auditoria de experiência ao [configurar seu pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code).
+>Você define quais páginas são incluídas na auditoria de experiência ao [configurar seu pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code).
 
 ## Noções básicas sobre os resultados da auditoria de experiência {#understanding-experience-audit-results}
 
-A Auditoria de experiência fornece resultados de teste agregados e detalhados em nível de página por meio da [página de execução do pipeline de produção](/help/implementing/cloud-manager/deploy-code.md).
+A auditoria de experiência fornece resultados de teste agregados e detalhados em nível de página por meio da [página de execução do pipeline de produção](/help/implementing/cloud-manager/deploy-code.md).
 
 * Métricas agregadas medem as pontuações médias nas páginas que foram auditadas quanto a desempenho, acessibilidade, práticas recomendadas, SEO (otimização do mecanismo de pesquisa).
 * As pontuações em nível de página individual também estão disponíveis por meio de detalhamento.
@@ -72,6 +72,6 @@ A métrica de alteração pode ter um dos valores a seguir.
 
 Ao examinar qualquer um dos testes, uma pontuação em nível de página mais detalhada está disponível. Você pode ver as pontuações de páginas individuais para um teste específico, juntamente com a alteração em relação à execução anterior do teste.
 
-Clicar nos detalhes de qualquer página individual fornece informações sobre os elementos da página que foram avaliados e orientação para corrigir problemas se forem detectadas oportunidades de melhoria.
+Clicar nos detalhes de qualquer página individual fornece informações sobre os elementos da página que foram avaliados, bem como orientação para corrigir problemas se forem detectadas oportunidades de melhoria.
 
 ![Pontuações em nível de página](/help/implementing/cloud-manager/assets/exp-audit-2.png)
