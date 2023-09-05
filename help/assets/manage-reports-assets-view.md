@@ -1,40 +1,40 @@
 ---
-title: Gerenciar relatórios na exibição de Ativos
-description: Acesse os dados na seção de relatórios da exibição Ativos para avaliar o uso de produtos e recursos e obter insights sobre as principais métricas de sucesso.
+title: Gerenciar relatórios na visualização do Assets
+description: Acesse os dados na seção de relatórios da visualização do Assets para avaliar o uso de produtos e recursos e obter insights sobre as principais métricas de sucesso.
 exl-id: c7155459-05d9-4a95-a91f-a1fa6ae9d9a4
 source-git-commit: df82681338f8ca1a34df6118cbddc6642aa8d4b5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '814'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
-# Gerenciar relatórios {#manage-reports}
+# Gerenciamento de relatórios {#manage-reports}
 
 >[!CONTEXTUALHELP]
 >id="assets_reports"
 >title="Relatórios"
 >abstract="Os relatórios de ativos fornecem à administração a visibilidade das atividades do ambiente de visualização do Adobe Experience Manager Assets. Esses dados fornecem informações úteis sobre como os usuários interagem com o conteúdo e o produto. Todos os usuários atribuídos ao perfil de produto de administradores podem acessar o painel Insights ou criar relatórios definidos pelo usuário."
 
-Os relatórios de ativos fornecem à administração a visibilidade das atividades do ambiente de visualização do Adobe Experience Manager Assets. Esses dados fornecem informações úteis sobre como os usuários interagem com o conteúdo e o produto.
+Os relatórios do Assets fornecem à administração a visibilidade das atividades do ambiente de visualização do Adobe Experience Manager Assets. Esses dados fornecem informações úteis sobre como os usuários interagem com o conteúdo e o produto.
 
 ## Acessar relatórios {#access-reports}
 
-Todos os usuários atribuídos ao perfil de produto de Administradores de visualização do Assets podem acessar o painel de Insights ou criar relatórios definidos pelo usuário na visualização do Assets.
+Todos os usuários atribuídos ao perfil de produto de administradores da visualização do Assets podem acessar o painel Insights e criar relatórios definidos pelo usuário na visualização do Assets.
 
 ## Exibir o Insights {#view-live-statistics}
 
-A exibição de Ativos permite que você visualize dados em tempo real do seu ambiente de exibição de Ativos com o painel Insights. Você pode visualizar métricas de evento em tempo real dos últimos 30 dias ou dos últimos 12 meses.
+A visualização do Assets permite visualizar dados do seu ambiente da visualização do Assets em tempo real, por meio do painel Insights. Você pode visualizar métricas de evento em tempo real dos últimos 30 dias ou dos últimos 12 meses.
 
 ![Opções da barra de ferramentas ao selecionar um ativo](assets/assets-essentials-live-statistics.png)
 
 Clique na opção **[!UICONTROL Insights]**, disponível no painel de navegação esquerdo, para exibir os seguintes gráficos gerados automaticamente:
 
-* **Downloads**: o número de ativos baixados do ambiente de exibição do Assets nos últimos 30 dias ou 12 meses representados usando um gráfico de linhas.
+* **Downloads**: o número de arquivos baixados do ambiente de visualização do Assets nos últimos 30 dias ou 12 meses representados por meio de um gráfico de linhas.
 
-* **Uploads**: o número de ativos carregados para o ambiente de exibição do Assets nos últimos 30 dias ou 12 meses representados usando um gráfico de linhas.
+* **Uploads**: o número de arquivos enviados para o ambiente de visualização do Assets nos últimos 30 dias ou 12 meses representados por meio de um gráfico de linhas.
 
-* **Principais Pesquisas**: visualize os principais termos pesquisados junto com o número de vezes que esses termos são pesquisados no ambiente de exibição do Assets nos últimos 30 dias ou 12 meses representados em formato de tabela.
+* **Principais Pesquisas**: visualize os principais termos pesquisados junto com o número de vezes que esses termos foram pesquisados no ambiente de visualização do Assets nos últimos 30 dias ou 12 meses representados em formato de tabela.
 
 <!--
 
@@ -58,7 +58,7 @@ Para criar um relatório de downloads:
 
    >[!NOTE]
    >
-   > A exibição de Ativos converte todos os fusos horários locais para o Tempo universal coordenado (UTC).
+   > A visualização do Assets converte todos os fusos horários locais para o Tempo Universal Coordenado (UTC).
 
 1. Na guia [!UICONTROL Colunas], selecione os nomes das colunas que devem ser exibidas no relatório.
 
@@ -80,7 +80,7 @@ A tabela a seguir explica o uso de todas as colunas que você pode adicionar ao 
      </tr>
      <tr>
       <td>Caminho </td>
-      <td>O caminho da pasta onde o ativo está disponível na visualização de Ativos.</td>
+      <td>O caminho da pasta onde o ativo está disponível na visualização do Assets.</td>
      </tr>
      <tr>
       <td>Tipo MIME</td>
@@ -104,7 +104,7 @@ A tabela a seguir explica o uso de todas as colunas que você pode adicionar ao 
      </tr>
      <tr>
       <td>Data de criação</td>
-      <td>A data em que o ativo foi carregado para a exibição Ativos.</td>
+      <td>A data em que o ativo foi enviado para a visualização do Assets.</td>
      </tr>
      <tr>
       <td>Data da modificação</td>
@@ -155,7 +155,7 @@ A tabela a seguir explica o uso de todas as colunas que você pode adicionar ao 
      </tr>
      <tr>
       <td>Caminho </td>
-      <td>O caminho da pasta onde o ativo está disponível na visualização de Ativos.</td>
+      <td>O caminho da pasta onde o ativo está disponível na visualização do Assets.</td>
      </tr>
      <tr>
       <td>Tipo MIME</td>
@@ -171,7 +171,7 @@ A tabela a seguir explica o uso de todas as colunas que você pode adicionar ao 
      </tr>
      <tr>
       <td>Data de criação</td>
-      <td>A data em que o ativo foi carregado para a exibição Ativos.</td>
+      <td>A data em que o ativo foi enviado para a visualização do Assets.</td>
      </tr>
      <tr>
       <td>Data da modificação</td>
