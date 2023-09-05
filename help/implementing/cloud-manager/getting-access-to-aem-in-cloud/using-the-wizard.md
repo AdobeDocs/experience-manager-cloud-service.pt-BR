@@ -3,9 +3,9 @@ title: Assistente de criação de projeto
 description: Saiba mais sobre o assistente de criação de projetos para ajudar você a configurar rapidamente seu projeto após criar seu programa de produção.
 exl-id: 03736ca7-1345-4faf-a61a-f9213ab5c89a
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '312'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
