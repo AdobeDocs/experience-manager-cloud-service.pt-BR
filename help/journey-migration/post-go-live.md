@@ -2,9 +2,9 @@
 title: Pós-ativação
 description: Saiba como monitorar problemas e melhorar o desempenho
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
-source-git-commit: 3784569086a786c6c25c0e3d6d0bb0ddbdd37e4b
+source-git-commit: 1b9d49ce1ef8ad4b0a11400b41d8c9b880cbf884
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '483'
 ht-degree: 28%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 28%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html?lang=pt-BR" text="Acesso e gerenciamento de registros"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=pt-BR#aem-as-a-cloud-service-development-tools" text="Ferramentas de desenvolvimento do AEM as a Cloud Service"
 
-Esta jornada é a última parte, portanto, você aprenderá a monitorar problemas e melhorar o desempenho quando a migração for concluída. Você deve garantir a limpeza de arquivos temporários, analisar práticas recomendadas para desenvolvimento contínuo e gerenciar logs.
+Esta jornada é a última parte, portanto, você aprenderá a monitorar problemas e melhorar o desempenho após a conclusão da migração. Você deve garantir a limpeza de arquivos temporários, analisar práticas recomendadas para desenvolvimento contínuo e gerenciar logs.
 
 ## A história até agora {#story-so-far}
 
@@ -51,7 +51,7 @@ Consulte [Desenvolvimento com o CRXDE Lite](/help/implementing/developing/tools/
 
 Os usuários podem acessar uma lista de arquivos de log disponíveis para o ambiente selecionado.
 
-Consulte [Acesso e gerenciamento de registros](/help/implementing/cloud-manager/manage-logs.md) para saber como acessar e gerenciar logs por meio da interface ou da API via Cloud Manager.
+Consulte [Acesso e gerenciamento de registros](/help/implementing/cloud-manager/manage-logs.md) para saber como acessar e gerenciar logs por meio da interface do usuário ou da API por meio do Cloud Manager.
 
 ## Entrando em contato com o suporte {#contacting-support}
 
