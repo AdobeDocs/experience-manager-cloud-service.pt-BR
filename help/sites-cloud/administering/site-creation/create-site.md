@@ -5,9 +5,9 @@ feature: Administering
 role: Admin
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '775'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -23,21 +23,21 @@ A ferramenta de Criação rápida de sites do AEM permite que não desenvolvedor
 
 Depois de criada, a ferramenta de Criação rápida de sites também permite a personalização rápida do tema e estilo do site do AEM (JavaScript, CSS e recursos estáticos). Isso permite que o desenvolvedor de front-end, que não precisa ter nenhum conhecimento sobre o AEM, funcione separadamente e em paralelo aos criadores de conteúdo. O administrador do AEM simplesmente baixa o tema do site e o fornece ao desenvolvedor de front-end, que o personaliza usando suas ferramentas favoritas e, em seguida, confirma as alterações no repositório de código do AEM, que é então implantado.
 
-Este documento se concentra na criação de sites usando a ferramenta de Criação rápida de sites. Se desejar ter uma visão geral do fluxo de trabalho de criação e personalização de sites, consulte [Jornada de criação rápida de site no AEM](/help/journey-sites/quick-site/overview.md)
+Este documento se concentra na criação de sites usando a ferramenta de Criação rápida de sites. Se deseja ter uma visão geral do fluxo de trabalho de criação e personalização de sites, consulte a [Jornada de criação rápida de sites do AEM](/help/journey-sites/quick-site/overview.md)
 
 ## Planejamento da estrutura do site {#structure}
 
-Reserve tempo para considerar a finalidade do site e o conteúdo planejado com bastante antecedência. Isso conduzirá a maneira como você desenha a estrutura do site. Uma boa estrutura de site permite uma fácil navegação e descoberta de conteúdo pelos visitantes do site, além de ser compatível com vários recursos de AEM, como [gerenciamento e tradução de vários sites](/help/sites-cloud/administering/msm-and-translation.md).
+Reserve tempo para considerar a finalidade do site e o conteúdo planejado com bastante antecedência. Isso conduzirá a maneira como você desenha a estrutura do site. Uma boa estrutura de site oferece aos visitantes uma fácil navegação e descoberta de conteúdo, além de permitir o uso de vários recursos do AEM, como [gerenciamento de vários sites e tradução](/help/sites-cloud/administering/msm-and-translation.md).
 
 >[!TIP]
 >
->[O site de referência WKND](https://wknd.site) O fornece uma implementação de práticas recomendadas para um site de marca de experiências externas totalmente funcional. Explore-o para ver como um site do AEM bem construído é estruturado.
+>[O site de referência do WKND](https://wknd.site) fornece um exemplo de implementação de práticas recomendadas em um site totalmente funcional para uma marca de experiências externas. Explore-o para ver como um site do AEM bem construído é estruturado.
 
 ## Modelos de site {#site-templates}
 
 Como a estrutura do site é muito importante para o sucesso dele, é conveniente ter estruturas predefinidas disponíveis para implantar rapidamente um novo site com base em um conjunto de padrões existentes. Os modelos de site são uma maneira de combinar conteúdos básicos de sites em um pacote conveniente e reutilizável.
 
-Os modelos de site geralmente contêm o conteúdo básico do site e informações sobre a estrutura e o estilo do site para iniciar o novo site rapidamente. Os modelos são eficientes porque são reutilizáveis e personalizáveis. E como é possível ter vários modelos disponíveis na sua instância do AEM, você tem a flexibilidade de criar sites diferentes para atender a várias necessidades comerciais.
+Os modelos de site geralmente contêm o conteúdo básico e a estrutura do site, bem como informações de estilo para iniciar o novo site rapidamente. Esses modelos são bastante eficientes pois podem ser reutilizados e personalizados. E como é possível ter vários modelos disponíveis na sua instância do AEM, você tem a flexibilidade de criar sites diferentes para atender a várias necessidades comerciais.
 
 >[!TIP]
 >
@@ -71,11 +71,11 @@ Os modelos de site geralmente contêm o conteúdo básico do site e informaçõe
 
    ![Selecione um modelo](../assets/select-site-template.png)
 
-1. Forneça um título para o site. Um nome de site pode ser fornecido ou gerado a partir do título, caso seja omitido.
+1. Forneça um título para o site. É possível fornecer um nome de site ou gerá-lo a partir do título (caso seja omitido).
 
    * O título do site aparece na barra de título dos navegadores.
    * O nome do site se torna parte do URL.
-   * O nome do site deve estar em conformidade com as [Convenções de nomenclatura de páginas do AEM](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices).
+   * O nome do site deve estar em conformidade com as [convenções de nomenclatura de páginas do AEM](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices).
 
 1. Toque ou clique em **Criar** e o site é criado a partir do modelo de site.
 
