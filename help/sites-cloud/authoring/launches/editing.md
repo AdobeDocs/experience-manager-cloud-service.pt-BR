@@ -1,11 +1,11 @@
 ---
 title: Edição de inicializações
-description: Depois de criar uma inicialização para sua página (ou conjunto de páginas), você pode editar o conteúdo na cópia de inicialização da(s) página(s).
+description: Após criar um lançamento para sua página (ou conjunto de páginas), você pode editar o conteúdo na cópia de lançamento da(s) página(s).
 exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '553'
-ht-degree: 52%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 52%
 
 ## Editar páginas de lançamento {#editing-launch-pages}
 
-Quando uma inicialização é criada para uma página (ou conjunto de páginas), é possível editar o conteúdo na cópia de inicialização da(s) página(s).
+Quando um lançamento é criado para uma página (ou conjunto de páginas), é possível editar o conteúdo na cópia de lançamento da(s) página(s).
 
 1. Acesse [Inicialização a partir de Referências (console Sites)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) para mostrar as ações disponíveis.
 1. Selecionar **Ir para a página** para abrir a página para edição.
@@ -37,26 +37,26 @@ Se o seu lançamento se basear em uma [Live Copy](/help/sites-cloud/administerin
 
 Uma livecopy é usada para sincronizar o conteúdo da *ramificação de origem* para a *ramificação de inicialização* (para manter a inicialização atualizada com as alterações feitas na origem).
 
-É possível fazer alterações da mesma maneira que editar uma live copy padrão; por exemplo:
+É possível fazer alterações da mesma maneira que você edita uma live copy padrão; por exemplo:
 
-* Clicar em um cadeado fechado interromperá essa sincronização e permitirá que você faça novas atualizações no conteúdo em sua inicialização. Uma vez desbloqueadas (cadeado aberto) suas alterações não serão substituídas por quaisquer alterações feitas no mesmo local dentro da ramificação de origem.
+* Clicar em um cadeado fechado interromperá essa sincronização e permitirá que você faça novas atualizações no conteúdo em seu lançamento. Uma vez desbloqueadas (cadeado aberto), suas alterações não serão substituídas por quaisquer alterações feitas no mesmo local dentro da ramificação de origem.
 * **Suspender** (e **Retomar**) herança de uma página específica.
 
-Consulte [Alterar conteúdo da Live Copy](/help/sites-cloud/administering/msm/creating-live-copies.md) para obter mais informações.
+Consulte [Alterar conteúdo da live copy](/help/sites-cloud/administering/msm/creating-live-copies.md) para obter mais informações.
 
 ## Comparação de uma página de lançamento à sua página de origem {#comparing-a-launch-page-to-its-source-page}
 
 Para rastrear as alterações feitas, é possível exibir a inicialização em **Referências** e comparar a página de inicialização com a página de origem:
 
 1. No console **Sites**, [navegue até a página de origem do seu lançamento e selecione-a](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. Abra o **[Referências](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** e selecione **Lançamentos**.
+1. Abra o painel de **[Referências](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** e selecione **Lançamentos**.
 1. Selecione o lançamento específico e **Comparar à origem**:
 
    ![Comparação do lançamento com a origem](/help/sites-cloud/authoring/assets/launches-compare.png)
 
 1. As duas páginas (lançamento e origem) são abertas lado a lado.
 
-   Para obter informações completas sobre como usar esse recurso, consulte [Diferença de página](/help/sites-cloud/authoring/features/page-diff.md).
+   Para obter informações completas sobre como usar este recurso, consulte [Diferencial de página](/help/sites-cloud/authoring/features/page-diff.md).
 
 ## Alteração das páginas de origem usadas {#changing-the-source-pages-used}
 
@@ -72,15 +72,15 @@ A qualquer momento, você pode adicionar ou remover páginas ao/do intervalo de 
 
 >[!NOTE]
 >
->Para adicionar páginas a uma inicialização, elas devem estar abaixo de uma raiz de idioma comum, ou seja, em um único site.
+>Para adicionar páginas a um lançamento, elas devem estar abaixo de uma raiz de idioma comum, ou seja, em um único site.
 
-## Editar uma configuração de inicialização {#editing-a-launch-configuration}
+## Editar uma configuração de lançamento {#editing-a-launch-configuration}
 
 A qualquer momento, você pode editar as propriedades de um lançamento:
 
 1. Acesse e selecione o lançamento a partir do seguinte:
-   * o [Iniciar console](/help/sites-cloud/authoring/launches/overview.md#the-launches-console):
-      * Selecionar **Propriedades**.
+   * o [console Lançamentos](/help/sites-cloud/authoring/launches/overview.md#the-launches-console):
+      * Selecione **Propriedades**.
    * [Referências (console Sites)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) para mostrar as ações disponíveis:
       * Selecione **Editar propriedades**.
       * Os detalhes são mostrados.
@@ -89,6 +89,6 @@ A qualquer momento, você pode editar as propriedades de um lançamento:
 
 ## Descobrir o status de lançamento de uma página {#discovering-the-launch-status-of-a-page}
 
-O status é exibido ao selecionar uma inicialização específica na guia Referências (consulte [Lançamentos em referências (console Sites)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)).
+O status é exibido ao selecionar um lançamento específico na guia Referências (consulte [Inicialização a partir de Referências (console Sites)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)).
 
 ![Descobrindo o status de lançamento](/help/sites-cloud/authoring/assets/launches-status.png)
