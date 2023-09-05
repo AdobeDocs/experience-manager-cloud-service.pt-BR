@@ -3,9 +3,9 @@ title: Introdução ao Adobe Experience Manager as a Cloud Service
 description: Introdução ao Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: d81b85bb-a69d-49a4-9e75-76f1c6bbcd67
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '632'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ O AEM as a Cloud Service possibilita que você capitalize os aplicativos AEM de 
 
 * garanta o máximo de resiliência e eficiência com base em topologias de desempenho otimizadas.
 
-* Aproveite a profunda integração do AEM as a Cloud Service com o Adobe Experience Cloud para fornecer melhores experiências aos clientes com marketing online e produtos de análise da Web.
+* Aproveite as vantagens de uma integração profunda do AEM as a Cloud Service com a Adobe Experience Cloud para fornecer as melhores experiências aos clientes com marketing online e produtos de análise da web.
 
 * utilizar ferramentas que ajudam a acelerar as tarefas de migração, como a refatoração de códigos, transferência de conteúdos e muito mais.
 
@@ -78,6 +78,6 @@ O AEM atinge esses objetivos adotando as principais características dos serviç
 
 >[!TIP]
 >
->Depois de receber uma visão geral do AEM as a Cloud Service, você poderá integrar-se rapidamente revisando a [Jornada de integração](/help/journey-onboarding/overview.md).
+>Depois de ver uma visão geral do AEM as a Cloud Service, será possível integrar-se rapidamente revisando a [Jornada de integração](/help/journey-onboarding/overview.md).
 >
 >Já integrado ou pronto para mergulhar nos recursos de AEM de teste? Instale o [Complemento de demonstrações de referência do AEM](/help/journey-sites/demos-add-on/overview.md) para explorar recursos avançados do AEM usando exemplos bem colocados.
