@@ -5,15 +5,15 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 source-git-commit: 151ef672e847f793b37d220920081ac9fce94edf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4308'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 # Criação e sincronização de Live Copies {#creating-and-synchronizing-live-copies}
 
-Você pode criar uma Live Copy a partir de uma página ou configuração de blueprint para reutilizar esse conteúdo em seu site. Gerencie a herança e a sincronização, onde é possível controlar como as alterações no conteúdo são propagadas.
+E possível criar uma Live Copy a partir de uma página ou configuração de blueprint para reutilizar esse conteúdo em seu site. Gerencie a herança e a sincronização, onde é possível controlar como as alterações no conteúdo são propagadas.
 
 ## Gerenciando configurações de blueprint {#managing-blueprint-configurations}
 
@@ -77,7 +77,7 @@ Para criar uma configuração de blueprint:
 
    ![Configurações de blueprint](../assets/blueprint-configurations.png)
 
-1. Selecione a configuração necessária para o blueprint; as ações apropriadas ficam disponíveis na barra de ferramentas:
+1. Selecione a configuração necessária para o blueprint - as ações apropriadas ficarão disponíveis na barra de ferramentas:
 
    * **Propriedades**; é possível usar essa opção para visualizar e editar as propriedades da configuração.
    * **Excluir**
@@ -101,7 +101,7 @@ Há diversas maneiras de criar uma Live Copy.
 
 A única diferença é que a disponibilidade do comando **Implantação** nas páginas de origem/blueprint depende da origem ser ou não referenciada por uma configuração de blueprint:
 
-* Se você criar a Live Copy a partir de uma página de origem que **é** referenciado em uma configuração de blueprint, o comando Implantação está disponível nas páginas de origem/blueprint.
+* Se você criar a Live Copy a partir de uma página de origem que **é** referenciada em uma configuração de blueprint, o comando Implantação estará disponível nas páginas de origem/blueprint.
 * Se você criar a Live Copy a partir de uma página de origem que **não é** referenciada em uma configuração de blueprint, o comando Implantação não estará disponível nas páginas de origem/blueprint.
 
 Para criar uma Live Copy:
@@ -134,8 +134,8 @@ Para criar uma Live Copy:
    * Selecionado: cria uma Live Copy somente da página selecionada (Live Copy superficial)
    * Não selecionado: cria uma Live Copy que inclui todos os descendentes da página selecionada (Live Copy profunda)
 
-1. (Opcional) Para especificar uma ou mais configurações de implantação a serem usadas na Live Copy, use a lista suspensa **Configurações de implantação** para selecioná-las. As configurações selecionadas são mostradas abaixo do seletor da lista suspensa.
-1. Clique ou toque em **Criar**. Uma mensagem de confirmação é exibida e aqui é possível selecionar **Abertura** ou **Concluído**.
+1. (Opcional) Para especificar uma ou mais configurações de implantação a serem usadas na Live Copy, use a lista suspensa **Configurações de implantação** para selecioná-las. As configurações selecionadas serão exibidas abaixo do seletor da lista suspensa.
+1. Clique ou toque em **Criar**. Uma mensagem de confirmação será exibida, e daqui será possível selecionar **Abrir** ou **Concluído**.
 
    >[!NOTE]
    >
@@ -164,7 +164,7 @@ Ao criar o site, forneça valores para as seguintes propriedades:
 
 Para criar uma Live Copy de um site a partir de uma configuração de blueprint:
 
-1. No **Sites** console, selecione **Criar**, depois **Site** no seletor suspenso.
+1. No console dos **Sites**, selecione **Criar** e, em seguida, **Site** no seletor da lista suspensa.
 1. Selecione a configuração de blueprint a ser usada como origem da Live Copy e prossiga com **Próximo**:
 
    ![Criar site a partir de blueprint](../assets/create-site-from-blueprint.png)
@@ -245,7 +245,7 @@ Implemente uma página de blueprint para enviar alterações de conteúdo às Li
 
    ![Definir momento da implantação](../assets/rollout-now-later.png)
 
-As implantações são processadas como trabalhos assíncronos e podem ser verificadas no [***Status de trabalhos assíncronos** página](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
+As implantações são processadas como processos assíncronos e podem ser verificadas na página [***Status dos processos assíncronos**](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
 
 #### Implantar um blueprint a partir do painel de referência {#roll-out-a-blueprint-from-the-reference-rail}
 
@@ -256,7 +256,7 @@ As implantações são processadas como trabalhos assíncronos e podem ser verif
 
    ![Implantação do blueprint a partir do painel de referências](../assets/rollout-blueprint-from-references.png)
 
-1. Você será solicitado a confirmar os detalhes da implantação:
+1. Você receberá uma solicitação para confirmar os detalhes da implantação:
 
    * **Escopo da implantação**:
 
@@ -270,7 +270,7 @@ As implantações são processadas como trabalhos assíncronos e podem ser verif
 
 1. Depois de confirmar esses detalhes, selecione **Implantação** para executar a ação.
 
-As implantações são processadas como trabalhos assíncronos e podem ser verificadas no [**Status de trabalhos assíncronos** página](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
+As implantações são processadas como processos assíncronos e podem ser verificadas na página [**Status dos processos assíncronos**](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
 
 #### Implantar um blueprint a partir de uma visão geral da Live Copy {#roll-out-a-blueprint-from-the-live-copy-overview}
 
@@ -289,7 +289,7 @@ A ação de [**Implantação** também está disponível a partir da visão gera
 
    ![Definir programação de implantação](../assets/rollout-now-later.png)
 
-As implantações são processadas como trabalhos assíncronos e podem ser verificadas no [**Status de trabalhos assíncronos** página](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
+As implantações são processadas como processos assíncronos e podem ser verificadas na página [**Status dos processos assíncronos**](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
 
 ### Sincronizar uma Live Copy {#synchronizing-a-live-copy}
 
@@ -309,7 +309,7 @@ Sincronize uma Live Copy para extrair as alterações da origem para a Live Copy
 
    ![Botão Sincronizar](../assets/synchronize.png)
 
-   A confirmação é solicitada, use **Sincronizar** para continuar.
+   Confirmação solicitada, use **Sincronizar** para continuar.
 
 #### Sincronizar uma Live Copy a partir da visão geral da Live Copy {#synchronize-a-live-copy-from-the-live-copy-overview}
 
@@ -335,7 +335,7 @@ Para alterar o conteúdo da Live Copy, você pode:
 >
 >Se você criar manualmente uma nova página na Live Copy, a nova página será local para a Live Copy, o que significa que ela não terá uma página de origem correspondente à qual está anexada.
 >
->Como prática recomendada, para que você possa criar uma página local que faça parte do relacionamento, crie a página local na origem e execute uma implantação profunda. Isso criará a página localmente como Live Copies.
+>Como prática recomendada, para criar uma página local que faça parte da relação, crie a página local na origem e execute uma implantação profunda. Isso criará a página localmente como Live Copies.
 
 >[!NOTE]
 >
@@ -423,13 +423,13 @@ Quando selecionada, a caixa de diálogo é exibida. É possível selecionar uma 
 
 A [ação Retomar também está disponível na visão geral da Live Copy](live-copy-overview.md#using-the-live-copy-overview), quando uma página de Live Copy é selecionada.
 
-1. Abra o [Visão geral da Live Copy](live-copy-overview.md#using-the-live-copy-overview) e selecione uma página de Live Copy suspensa. A página é exibida como **HERANÇA CANCELADA**.
+1. Abra a [Visão geral da Live Copy](live-copy-overview.md#using-the-live-copy-overview) e selecione uma página suspensa de Live Copy. A página será exibida como **HERANÇA CANCELADA**.
 1. Selecione **Retomar** na barra de ferramentas.
 1. Indique se você deseja sincronizar a página após reverter a herança e, em seguida, confirme a ação **Retomar** na caixa de diálogo **Retomar Live Copy**.
 
 ### Alterar a profundidade da herança (superficial/profunda) {#changing-inheritance-depth-shallow-deep}
 
-Em uma Live Copy existente, é possível alterar a profundidade de uma página, ou seja, se as páginas secundárias serão incluídas.
+Em uma Live Copy já existente, é possível alterar a profundidade de uma página, ou seja, se as páginas secundárias serão incluídas.
 
 * Alternar para uma Live Copy superficial:
 
@@ -498,7 +498,7 @@ Para habilitar a herança de um componente, clique ou toque no ícone **Reativar
 Se uma Live Copy contiver componentes que fazem parte de um sistema de parágrafo, a herança desse sistema de parágrafo observará as seguintes regras:
 
 * A ordem dos componentes em um sistema de parágrafo herdado pode ser modificada, mesmo com a herança estabelecida.
-* Na implantação, a ordem dos componentes é restaurada a partir do blueprint. Se novos componentes tiverem sido adicionados à Live Copy antes da implantação, eles serão reorganizados junto com os componentes acima dos quais foram adicionados.
+* Na implantação, a ordem dos componentes será restaurada a partir do blueprint. Se novos componentes forem adicionados à Live Copy antes da implantação, eles serão reorganizados junto com os componentes acima dos quais foram adicionados.
 * Se a herança do sistema de parágrafo for cancelada, a ordem dos componentes não será restaurada na implantação e permanecerá como está na Live Copy.
 
 >[!NOTE]
@@ -544,7 +544,7 @@ Para habilitar a herança de uma propriedade, clique ou toque no ícone **Revert
 
 ### Redefinir uma página Live Copy {#resetting-a-live-copy-page}
 
-Você pode redefinir uma página de Live Copy para fazer o seguinte:
+É possível redefinir uma página de Live Copy para fazer o seguinte:
 
 * Remover todos os cancelamentos de herança e
 * Retornar a página ao mesmo estado da página de origem.
@@ -575,7 +575,7 @@ A ação [**Redefinir** também está disponível na Visão geral da Live Copy](
 
 Para acompanhar as alterações feitas, é possível exibir a página do blueprint em **Referências** e compará-la com a página Live Copy:
 
-1. No console do **Sites**, [navegue até uma página de blueprint ou Live Copy e selecione-a](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
+1. No console do **Sites**, [navegue até uma página de blueprint ou do Live Copy e selecione-a](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Abra o painel **[Referências](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** e, dependendo do contexto, selecione:
 
    * **Blueprint**
@@ -590,7 +590,7 @@ Para acompanhar as alterações feitas, é possível exibir a página do bluepri
 
    ![Comparação de Live Copies](../assets/compare-live-copy.png)
 
-1. As páginas Live Copy e de blueprint são abertas lado a lado.
+1. As páginas do Live Copy e de blueprint serão abertas lado a lado.
 
    Para obter informações completas sobre como usar o recurso de comparação, consulte [Diferencial de página](/help/sites-cloud/authoring/features/page-diff.md).
 
@@ -641,7 +641,7 @@ Para desanexar uma Live Copy:
 
    ![Botão Desconectar](../assets/detach-button.png)
 
-1. Uma caixa de diálogo de confirmação é exibida, selecione **Desanexar** para concluir a ação.
+1. Uma caixa de diálogo de confirmação será exibida, selecione **Desconectar** para concluir a ação.
 
 ### Desconectar uma página de Live Copy da visão geral da Live Copy {#detach-a-live-copy-page-from-the-live-copy-overview}
 
