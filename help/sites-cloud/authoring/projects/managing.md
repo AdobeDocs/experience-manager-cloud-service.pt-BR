@@ -3,25 +3,25 @@ title: Gerenciamento de projetos
 description: O console de Projetos permite organizar o projeto, agrupando os recursos em uma única entidade que pode ser acessada e gerenciada no próprio console
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '893'
-ht-degree: 49%
+ht-degree: 100%
 
 ---
 
 # Gerenciamento de projetos {#managing-projects}
 
-Projects permite organizar o projeto agrupando recursos em uma entidade.
+O console de projetos permite organizar o projeto agrupando recursos em uma única entidade.
 
-No **Projetos** console, você acessa e executa ações em seus projetos:
+No console **Projetos**, é possível acessar e executar ações em seus projetos:
 
 ![O console de Projetos](/help/sites-cloud/authoring/assets/projects-console.png)
 
-Em Projetos, você pode criar um projeto, associar recursos ao projeto e também excluir um projeto ou links de Recursos. Talvez você queira abrir um bloco para exibir seu conteúdo e adicionar itens a um bloco. Este tópico descreve esses procedimentos.
+No console Projetos, você pode criar um projeto, associar recursos ao seu projeto e também excluir um projeto ou links de recursos. Talvez você queira abrir um bloco para exibir seu conteúdo e adicionar itens a um bloco. Este tópico descreve esses procedimentos.
 
 ## Criação de um projeto {#creating-a-project}
 
-Imediatamente, o AEM fornece esses modelos para escolher quando você cria um projeto:
+O AEM fornece esses modelos desde o início para você escolher ao criar um projeto:
 
 * Projeto simples
 * Projeto de mídia
@@ -38,26 +38,26 @@ O procedimento de criação de um projeto é o mesmo em todos os projetos. A dif
 
    ![Criação de um projeto](/help/sites-cloud/authoring/assets/projects-create.png)
 
-1. Defina o **Título** e a **Descrição** e adicione uma imagem de **Miniatura** se necessário. Também é possível adicionar ou excluir usuários e a qual grupo eles pertencem. Além disso, **Avançado** para adicionar um nome usado no URL.
+1. Defina o **Título** e a **Descrição** e adicione uma imagem de **Miniatura** se necessário. Também é possível adicionar ou excluir usuários, bem como sua associação com um grupo. Além disso, você pode clicar em **Avançado** para adicionar um nome usado no URL.
 
    ![Adicionar detalhes do projeto](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
-1. Toque/clique em **Criar**. A confirmação pergunta se você deseja abrir seu novo projeto ou retornar ao console.
+1. Toque/clique em **Criar**. Você é solicitado(a) a confirmar se deseja abrir o novo projeto ou retornar ao console.
 
-### Associar recursos ao seu projeto {#associating-resources-with-your-project}
+### Associar recursos ao projeto {#associating-resources-with-your-project}
 
-Como os projetos permitem agrupar recursos em uma entidade, você deseja associar recursos ao projeto. Esses recursos são chamados de **Ladrilhos**. Os tipos de recursos que você pode adicionar estão descritos em [Mosaico do projeto](/help/sites-cloud/authoring/projects/overview.md#project-tiles).
+Visto que os projetos permitem agrupar recursos em uma única entidade, você deve associar recursos ao seu projeto. Esses recursos são chamados de **Blocos**. Os tipos de recursos que você pode adicionar estão descritos em [Blocos de projeto](/help/sites-cloud/authoring/projects/overview.md#project-tiles).
 
 Para associar recursos ao projeto:
 
-1. Abra o projeto na **Projetos** console.
-1. Toque/clique **Adicionar mosaico** e selecione o bloco que deseja vincular ao projeto. É possível selecionar vários tipos de mosaicos.
+1. Abra o projeto no console **Projetos**.
+1. Toque/clique em **Adicionar bloco** e selecione o bloco que deseja vincular ao seu projeto. É possível selecionar vários tipos de mosaicos.
 
    ![Adicionar um bloco a um projeto](/help/sites-cloud/authoring/assets/projects-add-tile.png)
 
    >[!NOTE]
    >
-   >Os mosaicos que podem ser associados a um projeto são descritos mais detalhadamente em [Mosaicos do projeto](/help/sites-cloud/authoring/projects/overview.md#project-tiles).
+   >Os blocos que podem ser associados a um projeto são descritos mais detalhadamente em [Blocos de projeto](/help/sites-cloud/authoring/projects/overview.md#project-tiles).
 
 1. Toque/clique em **Criar**. O recurso é vinculado ao seu projeto e a partir de agora é possível acessá-lo do próprio projeto.
 
@@ -67,13 +67,13 @@ O mesmo método é usado para excluir um projeto do console ou um recurso vincul
 
 1. Navegue até o local apropriado:
 
-   * Para excluir um projeto, vá para o nível superior da **Projetos** console.
+   * Para excluir um projeto, acesse o nível superior do console **Projetos**.
    * Para excluir um vínculo de recurso em um projeto, abra o projeto no console **Projetos**.
 
 1. Entre no modo de seleção clicando em **Selecionar** e selecionando o vínculo do projeto ou do recurso.
 1. Toque/clique em **Excluir**.
 
-1. Você precisa confirmar a exclusão em uma caixa de diálogo. Se confirmado, o link do projeto ou do recurso será excluído. Toque/clique em **Desmarcar** para sair do modo de seleção.
+1. Você precisa confirmar a exclusão na caixa de diálogo. Se confirmado, o link do projeto ou do recurso será excluído. Toque/clique em **Desmarcar** para sair do modo de seleção.
 
 >[!NOTE]
 >
@@ -81,21 +81,21 @@ O mesmo método é usado para excluir um projeto do console ou um recurso vincul
 
 ### Adicionar itens a um bloco {#adding-items-to-a-tile}
 
-Em alguns blocos, talvez você queira adicionar mais de um item. Por exemplo, é possível ter mais de um workflow em execução de uma vez ou mais de uma experiência.
+Talvez você queira adicionar mais de um item em alguns blocos. Por exemplo, você pode ter mais de um fluxo de trabalho em execução ao mesmo tempo ou mais de uma experiência.
 
-Para adicionar itens a um Bloco:
+Para adicionar itens a um bloco:
 
 1. Em **Projetos**, navegue até o projeto e toque ou clique na divisa para baixo no bloco ao qual deseja adicionar um item.
 
    ![Adicionar item a um bloco](/help/sites-cloud/authoring/assets/project-workflows.png)
 
-1. Adicione um item ao bloco da mesma maneira que você faria ao criar um novo bloco. Os mosaicos do projeto estão descritos [aqui](/help/sites-cloud/authoring/projects/overview.md#project-tiles). Neste exemplo, outro workflow foi adicionado.
+1. Adicione um item ao bloco como você faria ao criar um novo bloco. Os blocos do projeto estão descritos [aqui](/help/sites-cloud/authoring/projects/overview.md#project-tiles). Neste exemplo, outro fluxo de trabalho foi adicionado.
 
-### Abrir um mosaico {#opening-a-tile}
+### Abrir um bloco {#opening-a-tile}
 
-Talvez você queira ver quais itens estão incluídos em um bloco atual ou modificar ou excluir itens no bloco.
+Você pode querer ver quais itens estão incluídos no bloco atual, ou modificar e excluir itens no bloco.
 
-Para abrir um bloco para exibir ou modificar itens:
+Para abrir um bloco e visualizar ou modificar itens:
 
 1. No console Projetos, toque/clique no ícone de reticências (...) na parte inferior do cartão.
 
@@ -125,17 +125,17 @@ Se o ícone tiver um X, estará exibindo os projetos inativos.
 
 ![Botão Alternar projetos inativos](/help/sites-cloud/authoring/assets/projects-inactive.png)
 
-## Tornando projetos inativos ou ativos {#making-projects-inactive-or-active}
+## Ativar ou inativar projetos {#making-projects-inactive-or-active}
 
-Você pode querer tornar um projeto inativo se o tiver concluído, mas ainda quiser manter as informações sobre o projeto.
+Talvez você queira inativar um projeto se já o tiver concluído, mas ainda assim manter as informações do projeto.
 
-Para tornar um projeto inativo (ou ativo):
+Para inativar (ou ativar) um projeto:
 
-1. No **Projetos** console, abra o projeto e localize o **Informações do projeto** bloco.
+1. No console **Projetos**, abra o projeto e localize o bloco de **Informações do projeto**.
 
    >[!NOTE]
    >
-   Talvez seja necessário adicionar esse bloco se ele ainda não estiver em seu projeto. Consulte [Adição de Blocos](#adding-items-to-a-tile).
+   Talvez seja necessário adicionar esse bloco se ele ainda não estiver no projeto. Consulte [Adicionar blocos](#adding-items-to-a-tile).
 
 1. Toque/clique em **Editar**.
 1. Altere o seletor de **Ativo** para **Inativo** (ou vice-versa).
