@@ -3,9 +3,9 @@ title: Configurar o ambiente da sua conta
 description: O AEM fornece a capacidade de configurar a sua conta e determinados aspectos do ambiente de criação
 exl-id: 1b948f0b-85b9-478a-8b7e-61495c1d57b6
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '488'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Comece acessando a opção [Usuário](#user-settings) no cabeçalho.
 
 ## Configurações de usuário {#user-settings}
 
-A variável **Usuário** a caixa de diálogo configurações dá acesso a:
+A caixa de diálogo de configurações do **usuário** concede acesso a:
 
 * Representar como
    * Com a funcionalidade Representar como, um usuário pode trabalhar em nome de outro usuário. <!--With the [Impersonate as](/help/sites-administering/security.md#impersonating-another-user) functionality, a user can work on behalf of another user.-->
@@ -40,13 +40,13 @@ Cada usuário pode definir certas propriedades para si mesmo.
 
 * **Idioma**
 
-  Isso define o idioma a ser usado para a interface do usuário do ambiente de criação. Selecione o idioma desejado na lista disponível.
+  Isso define o idioma a ser usado na interface do ambiente de criação. Selecione o idioma apropriado na lista.
 
 * **Gerenciamento de janelas**
 
   Isso define o comportamento ou a abertura de janelas. Selecione um dos seguintes:
 
-   * **Várias janelas** (Padrão)
+   * **Várias janelas** (padrão)
 
       * As páginas são abertas em uma nova janela.
 
@@ -85,7 +85,7 @@ Cada usuário pode definir certas propriedades para si mesmo.
    * [Atalhos de teclado para editar páginas](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
    * [Atalhos de teclado para os consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
-  Essa opção ativa os atalhos de teclado. Por padrão, eles estão ativados, mas podem ser desativados se um usuário tiver determinados requisitos de acessibilidade.
+  Essa opção habilita os atalhos de teclado. Por padrão, eles estão habilitados, mas podem ser desabilitados se um usuário tiver determinados requisitos de acessibilidade.
 
 * **Ativar a Página inicial dos ativos**
 
@@ -93,4 +93,4 @@ Cada usuário pode definir certas propriedades para si mesmo.
 
 * **Configuração do Stock**
 
-  Essa opção permite especificar a configuração preferencial do Adobe Stock e só estará disponível se o administrador do sistema tiver ativado [Integração do Adobe Stock](/help/assets/aem-assets-adobe-stock.md).
+  Essa opção permite especificar a configuração preferencial do Adobe Stock e só estará disponível se o(a) administrador(a) do sistema tiver habilitado a [integração com o Adobe Stock](/help/assets/aem-assets-adobe-stock.md).
