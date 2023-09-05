@@ -3,9 +3,9 @@ title: Criar site de demonstração
 description: Crie um site de demonstração no AEM com base em uma biblioteca de modelos pré-configurados.
 exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '841'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ Depois que o pipeline tiver implantado o complemento de demonstração de refer�
 
    ![Assistente de criação de site](assets/site-creation-wizard.png)
 
-1. Na próxima tela, forneça um título para o site ou projeto do Screens. Um nome de site pode ser fornecido ou gerado a partir do título, caso seja omitido. Toque ou clique em **Criar**.
+1. Na próxima tela, forneça um título para o site ou projeto do Screens. É possível fornecer um nome de site ou gerá-lo a partir do título, se omitido. Toque ou clique em **Criar**.
 
    * O título do site aparece na barra de título dos navegadores.
    * O nome do site se torna parte do URL.
@@ -110,5 +110,5 @@ Agora, é possível testar os recursos do AEM usando conteúdo complementar. Voc
 
 * [Documentação do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=pt_BR) - se quiser obter mais detalhes sobre os recursos do Cloud Manager, consulte diretamente os documentos técnicos detalhados.
 * [Criar Site](/help/sites-cloud/administering/site-creation/create-site.md) - saiba como usar o AEM para criar um site usando modelos de site para definir o estilo e a estrutura do site.
-* [Convenções de nomenclatura de página do AEM](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices). - Veja esta página para entender as convenções de organização das páginas de AEM.
-* [Manuseio básico do AEM](/help/sites-cloud/authoring/getting-started/basic-handling.md) - explore este documento se você é novo no AEM para entender conceitos básicos, como navegação e organização do console.
+* [Convenções de nomenclatura de página do AEM](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices). - Consulte esta página para entender as convenções de organização das páginas do AEM.
+* [Manuseio básico do AEM](/help/sites-cloud/authoring/getting-started/basic-handling.md): consulte este documento se você for novo no AEM para entender os conceitos básicos, como navegação e organização do console.
