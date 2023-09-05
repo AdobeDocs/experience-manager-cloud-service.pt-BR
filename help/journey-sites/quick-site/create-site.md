@@ -3,9 +3,9 @@ title: Criar site a partir de modelo
 description: Saiba como criar rapidamente um novo site do AEM usando um modelo de site.
 exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1506'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Essa parte da jornada se aplica ao administrador do AEM.
 
 ## Modelos de site {#site-templates}
 
-Os modelos de site são uma maneira de combinar conteúdo básico do site em um pacote conveniente e reutilizável. Os modelos de site geralmente contêm o conteúdo básico do site e informações sobre a estrutura e o estilo do site para iniciar o novo site rapidamente. A estrutura real é a seguinte:
+Os modelos de site são uma maneira de combinar conteúdo básico do site em um pacote conveniente e reutilizável. Os modelos de site geralmente contêm o conteúdo básico e a estrutura do site, bem como informações de estilo para iniciar o novo site rapidamente. A estrutura real é a seguinte:
 
 * `files`: pasta com o kit de interface, arquivo XD e possivelmente outros arquivos
 * `previews`: pasta com capturas de tela do modelo de site
@@ -57,11 +57,11 @@ Após o download, você pode carregá-lo no ambiente do AEM como faria com qualq
 
 >[!TIP]
 >
->O modelo de site padrão do AEM pode ser personalizado para atender às necessidades do seu projeto e evitar a necessidade de mais personalizações. No entanto, esse tópico está fora do escopo desta jornada. Consulte a documentação do GitHub do modelo de site padrão para obter mais informações.
+>O modelo de site padrão do AEM pode ser personalizado para atender às necessidades do seu projeto e evitar a necessidade de mais personalizações. No entanto, esse tópico está fora do escopo desta jornada. Consulte a documentação do GitHub sobre o modelo de site padrão para obter mais informações.
 
 >[!TIP]
 >
->Você também pode optar por criar o modelo a partir da origem como parte do fluxo de trabalho do projeto. No entanto, esse tópico está fora do escopo desta jornada. Consulte a documentação do GitHub do modelo de site padrão para obter mais informações.
+>Você também pode optar por criar o modelo a partir da origem como parte do fluxo de trabalho do projeto. No entanto, esse tópico está fora do escopo desta jornada. Consulte a documentação do GitHub sobre o modelo de site padrão para obter mais informações.
 
 ## Instalar um modelo de site {#installing-template}
 
@@ -85,7 +85,7 @@ Usar um modelo para criar um novo site é muito fácil.
 
    ![Selecione um modelo](assets/select-site-template.png)
 
-1. Forneça um título para o site. Um nome de site pode ser fornecido ou gerado a partir do título, caso seja omitido.
+1. Forneça um título para o site. É possível fornecer um nome de site ou gerá-lo a partir do título, se omitido.
 
    * O título do site aparece na barra de título dos navegadores.
    * O nome do site se torna parte do URL.
@@ -109,7 +109,7 @@ Os autores de conteúdo agora podem começar a criar.
 Os modelos de site são muito eficientes e flexíveis, e vários podem ser criados para um projeto, permitindo variações de site de fácil criação. Dependendo do nível de personalização já executado no modelo de site utilizado, talvez você nem precise de mais personalizações do front-end.
 
 * Se o site não requer mais personalizações, parabéns. Sua jornada termina aqui.
-* Se ainda precisar personalizar mais front-end ou se simplesmente quiser entender o processo completo caso precise personalizar futuramente, continue lendo.
+* Se ainda precisar personalizar mais detalhes do front-end ou se quiser apenas entender o processo completo caso precise personalizar futuramente, continue lendo.
 
 ## Página de exemplo {#example-page}
 
@@ -184,4 +184,4 @@ Embora seja recomendável seguir para a próxima parte da jornada de Criação r
 * [Criar e organizar páginas](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) - Este guia detalha como gerenciar páginas do seu site do AEM, caso deseje personalizá-lo ainda mais após criá-lo a partir do modelo.
 * [Como trabalhar com pacotes](/help/implementing/developing/tools/package-manager.md) - Os pacotes permitem a importação e exportação de conteúdo do repositório. Este documento explica como trabalhar com pacotes no AEM 6.5, o que também se aplica ao AEMaaCS.
 * [Documentação de administração do site](/help/sites-cloud/administering/site-creation/create-site.md) - Consulte os documentos técnicos sobre criação de sites para obter mais detalhes sobre os recursos da ferramenta de Criação rápida de sites.
-* [Criar ou adicionar formulários a uma página do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) - Conheça as técnicas passo a passo e as práticas recomendadas para integrar formulários ao seu site, otimizando suas experiências digitais para obter o máximo impacto.
+* [Criar ou adicionar formulários a uma página do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) - Conheça as técnicas passo a passo e as práticas recomendadas para integrar formulários no seu site, otimizando suas experiências digitais para obter o máximo impacto.
