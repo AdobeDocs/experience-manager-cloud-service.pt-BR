@@ -3,9 +3,9 @@ title: Canal de pré-lançamento do Adobe Experience Manager as a Cloud Service
 description: Saiba como usar o canal de pré-lançamento para visualizar os recursos futuros do AEM as a Cloud Service.
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1304'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Saiba como usar o canal de pré-lançamento para visualizar os recursos futuros 
 
 O Adobe Experience Manager as a Cloud Service fornece novos recursos regularmente, de acordo com o [Roteiro de versões do Experience Manager.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=pt-BR#aem-as-cloud-service)
 
-Para se familiarizar com os recursos programados para serem ativados na versão de recurso a seguir, é possível assinar o canal de pré-lançamento, que é acessível por meio da configuração de seus ambientes de desenvolvimento ou de qualquer ambiente de sandbox. É possível pré-visualizar alterações acessíveis por meio da interface do usuário do AEM e criar código em relação a quaisquer novas APIs de pré-lançamento.
+Para se familiarizar com os recursos que estão programados para entrar em operação na versão seguinte, você pode se inscrever no canal de pré-lançamento, que pode ser acessado pela configuração de seus ambientes de desenvolvimento ou de qualquer ambiente de sandbox. Você pode visualizar as alterações acessíveis por meio da interface do AEM e desenvolver o código com base nas novas APIs de pré-lançamento.
 
 A lista de recursos de pré-lançamento de um determinado recurso é publicada nas [notas de versão](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
@@ -31,13 +31,13 @@ O AEM as a Cloud Service tem dois tipos de versões.
 
 Esse padrão garante uma atualização contínua de versões sem interrupção do serviço.
 
-O canal de pré-lançamento permite pré-visualizar recursos programados para a próxima versão de recursos, para que você possa avaliar a funcionalidade futura e planejar sua possível implementação para seus próprios projetos. Ele permite que você planeje com antecedência a próxima versão do recurso.
+O canal de pré-lançamento permite visualizar os recursos programados para a próxima versão de recursos, a fim de avaliar a funcionalidade futura e planejar sua possível implementação em projetos. Ele permite que você planeje com antecedência a próxima versão do recurso.
 
-Por exemplo, se for maio e você estiver inscrito no canal de pré-lançamento, será possível avaliar os recursos na próxima versão de junho.
+Por exemplo, se for o mês de maio e você estiver inscrito no canal de pré-lançamento, será possível avaliar os recursos da próxima versão de junho.
 
 ![Gráfico de cronograma de pré-lançamento](assets/prerelease-cadence.png)
 
-O pré-lançamento oferece uma janela contínua de um mês para os recursos futuros do AEMaaCS, permitindo que você avalie o impacto de novos recursos em seus projetos e personalizações e planeje a implantação desses recursos, testes e treinamento de usuários.
+O pré-lançamento oferece uma visão antecipada do próximo mês de lançamento de recursos do AEMaaCS, permitindo avaliar o impacto dos novos recursos em seus projetos e personalizações e planejar a implementação de tais recursos, testes e treinamento de usuários.
 
 Aproveitar de forma eficaz o canal de pré-lançamento é um processo de quatro etapas.
 
@@ -157,7 +157,7 @@ Javadocs são publicados no Maven Central.
      </dependency>
    ```
 
-   Para alterar para o SDK de pré-lançamento, basta alterar a dependência de `com.adobe.aem:aem-sdk-api` para `com.adobe.aem:aem-prerelease-sdk-api` conforme observado abaixo:
+   Para alterar para o SDK de pré-lançamento, basta alterar a dependência de `com.adobe.aem:aem-sdk-api` para `com.adobe.aem:aem-prerelease-sdk-api`, conforme observado abaixo:
 
    ```
    <dependencyManagement>
@@ -189,7 +189,7 @@ O [plug-in Maven Build Analyzer do SDK do AEM CS v1.0 e superior](https://experi
 
 ## Treinar seus usuários {#train-users}
 
-Depois de testar os novos recursos no canal de pré-lançamento e decidir usá-los em seus projetos, é necessário treinar os usuários.
+Após testar os novos recursos no canal de pré-lançamento e decidir usá-los em seus projetos, é necessário treinar os usuários.
 
 A Adobe Experience League oferece muitos recursos de aprendizado para o AEMaaCS.
 
