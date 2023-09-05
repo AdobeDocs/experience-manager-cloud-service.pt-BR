@@ -3,10 +3,10 @@ title: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud S
 description: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: a635a727e431a73086a860249e4f42d297882298
+source-git-commit: 325769d4a3b93502b0c6857e20911b05df34a24a
 workflow-type: tm+mt
-source-wordcount: '1750'
-ht-degree: 17%
+source-wordcount: '1861'
+ht-degree: 14%
 
 ---
 
@@ -112,12 +112,9 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### Novos recursos disponíveis em [!DNL Forms] {#new-features-available-in-forms-channel}
-
-* [**Suporte corporativo ao Google reCAPTCHA**](/help/forms/captcha-adaptive-forms.md): use o Google reCAPTCHA Enterprise em um formulário adaptável para fornecer proteção aprimorada contra atividades fraudulentas e spam, proporcionando uma experiência mais segura ao usuário. Com a análise de risco avançada e a integração perfeita, os usuários genuínos podem enviar formulários facilmente, enquanto os bots são bloqueados de maneira eficaz.
-
-
 ### Recursos de pré-lançamento disponíveis em [!DNL Forms] {#pre-release-features-available-in-forms-channel}
+
+* [**Suporte corporativo ao Google reCAPTCHA**](/help/forms/captcha-adaptive-forms-core-components.md): use o Google reCAPTCHA Enterprise em um formulário adaptável para fornecer proteção aprimorada contra atividades fraudulentas e spam, proporcionando uma experiência mais segura ao usuário. Com a análise de risco avançada e a integração perfeita, os usuários genuínos podem enviar formulários facilmente, enquanto os bots são bloqueados de maneira eficaz.
 
 * **Adobe Analytics com automação de configuração do Experience Cloud para Forms**: Agora você pode ativar o Adobe Analytics com a Automação de configuração do Experience Cloud girando alguns botões. Ele permite conectar o AEM Forms as a Cloud Service com tags Experience Platform e o Adobe Analytics para capturar e rastrear métricas de desempenho para seus formulários publicados.
 
@@ -141,9 +138,13 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 * **[Tratamento de erros com manipuladores de erros personalizados no editor de regras](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)**: agora você pode chamar uma função personalizada em resposta a um erro retornado por um serviço externo e fornecer uma resposta personalizada para os usuários finais. Por exemplo, você pode acionar um fluxo de trabalho personalizado no back-end para códigos de erro específicos ou informar ao cliente que o serviço está inativo.
 
 
-### Programa de adoção antecipada de formulários adaptáveis headless {#forms-early-adopter}
+### Programa de adoção antecipada {#forms-early-adopter}
 
-Use [Formulários adaptáveis Headless](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=pt-BR) para permitir que seus desenvolvedores criem, publiquem e gerenciem formulários interativos que podem ser acessados e manuseados por meio de APIs, em vez de utilizar uma interface gráfica tradicional. Os formulários adaptáveis headless ajudam a:
+* **[Protect seus documentos com as APIs DocAssurance (Parte das APIs de comunicação)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: As APIs do DocAssurance permitem proteger informações confidenciais, assinando e criptografando os documentos. Por meio da criptografia, o conteúdo de um documento é transformado em um formato ilegível, garantindo que somente usuários autorizados possam ter acesso. Essa camada fortificada de proteção não apenas protege dados valiosos de olhos não autorizados, mas também proporciona tranquilidade. As APIs de assinatura permitem que sua organização proteja a segurança e a privacidade dos documentos do Adobe PDF que distribui e recebe. Esse serviço usa assinaturas digitais e certificação para garantir que somente os recipients desejados possam alterar os documentos.
+
+Você pode conectar o Suporte ao Adobe para participar do programa de adoção antecipada das APIs DocAssurance.
+
+**Forms adaptável headless**: Uso [Forms adaptável headless](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=pt-BR) para permitir que os desenvolvedores criem, publiquem e gerenciem formulários interativos que possam ser acessados e interagidos por meio de APIs, em vez de uma interface gráfica tradicional. Os formulários adaptáveis headless ajudam a:
 
 * criar formulários multicanal de alta qualidade na linguagem de programação de sua escolha
 * integrar formulários nativamente a seus aplicativos móveis e de desktop, sites e aplicativos de bate-papo
