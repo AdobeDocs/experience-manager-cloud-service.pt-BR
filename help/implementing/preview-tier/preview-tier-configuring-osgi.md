@@ -3,9 +3,9 @@ title: Configurações do OSGi para o nível de visualização
 description: Saiba como configurar o serviço de visualização do AEM para visualizar o conteúdo antes de ele ser publicado.
 exl-id: 1200bb17-8a3c-4e41-85f4-ed2334b61f69
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '219'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Os valores da propriedade OSGi do nível de visualização são herdados do nív
 
 >[!NOTE]
 >
->Para obter mais detalhes sobre os ambientes de visualização, consulte [Gerenciar ambientes](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+>Para obter mais detalhes sobre os ambientes de visualização, consulte o documento [Gerenciar ambientes](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
 ## Configurações do OSGi para o nível de visualização {#configuring-osgi-settings-for-the-preview-tier}
 
@@ -40,7 +40,7 @@ Para obter mais informações, consulte [esta seção](/help/implementing/deploy
 
 ## Depuração da visualização usando o Console do desenvolvedor {#debugging-preview-using-the-developer-console}
 
-Siga estas etapas para depurar o nível de visualização usando o Console do Desenvolvedor:
+Siga estas etapas para depurar o nível de visualização usando o Developer Console:
 
 * No [Console do Desenvolvedor](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools), selecione **-- Todas as visualizações --** ou um ambiente de produção que inclua **prev** no nome
 * Gere as informações relevantes para a instância de visualização 
