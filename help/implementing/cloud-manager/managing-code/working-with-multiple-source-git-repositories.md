@@ -3,9 +3,9 @@ title: Uso de vários repositórios
 description: Saiba como gerenciar vários repositórios Git ao trabalhar com o Cloud Manager.
 exl-id: 1b9cca36-c2d7-4f9e-9733-3f1f4f8b2c7a
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '752'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Embora essa automação para um único repositório Git de propriedade do client
 
 Veja a seguir um exemplo do arquivo `pom.xml` para dois repositórios Git de propriedade do cliente.
 
-* O primeiro projeto é colocado no diretório chamado `project-a`.
+* O primeiro projeto será colocado no diretório chamado `project-a`.
 * O segundo projeto será colocado no diretório chamado `project-b`.
 
 ```xml
@@ -122,7 +122,7 @@ jobs:
           git -C ${MAIN_BRANCH} push
 ```
 
-O uso de uma ação do GitHub é muito flexível. Qualquer mapeamento entre ramificações dos repositórios Git pode ser executado e qualquer mapeamento dos projetos Git separados no layout de diretório do projeto principal.
+O uso de uma ação do GitHub é muito flexível. É possível executar qualquer mapeamento entre ramificações de repositórios Git, bem como qualquer mapeamento de projetos Git separados no layout de diretório do projeto principal.
 
 >[!NOTE]
 >
@@ -191,7 +191,7 @@ git commit -F ../commit.txt
 git push
 ```
 
-O uso de uma tarefa do Jenkins é muito flexível. Qualquer mapeamento entre ramificações dos repositórios Git pode ser executado e qualquer mapeamento dos projetos Git separados no layout de diretório do projeto principal.
+O uso de uma tarefa do Jenkins é muito flexível. É possível executar qualquer mapeamento entre ramificações de repositórios Git, bem como qualquer mapeamento de projetos Git separados no layout de diretório do projeto principal.
 
 >[!NOTE]
 >
