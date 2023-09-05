@@ -2,9 +2,9 @@
 title: Regiões de publicação adicionais
 description: Saiba como o AEM as a Cloud Service permite regiões de publicação adicionais para aumentar a disponibilidade e reduzir a latência.
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '542'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ As organizações podem licenciar até três regiões de publicação adicionais
 
 >[!NOTE]
 >
->No momento, esse recurso está disponível apenas para o AEM Sites. Ele também não pode ser aplicado a programas de sandbox. Além disso, esteja ciente de que o recurso de regiões de publicação adicionais exige que seu programa seja atualizado para o AEM versão 12142 ou superior.
+>No momento, esse recurso está disponível apenas para o AEM Sites. Ele também não pode ser aplicado a programas de sandbox. Além disso, observe que o recurso de regiões de publicação adicionais exige que seu programa esteja atualizado com a versão 12142 (ou superior) do AEM.
 
 ## Casos de uso {#use-cases}
 
@@ -40,7 +40,7 @@ Regiões de publicação adicionais são aplicadas a ambientes de preparo e prod
 
 Quando uma região de publicação adicional é habilitada em um programa com uma rede avançada já configurada, o tráfego na região de publicação adicional que corresponde às regras de redes avançadas será roteado por padrão pela região principal. Para aproveitar o aumento da disponibilidade, é recomendável habilitar a rede avançada nas regiões adicionais.
 
-Consulte a [Configuração avançada de rede para regiões de publicação adicionais](/help/security/configuring-advanced-networking.md#advanced-networking-configuration-for-additional-publish-regions) seção na documentação de Rede avançada para obter detalhes, incluindo como adicionar configurações avançadas de rede a regiões adicionais sem incorrer em perda de conectividade.
+Consulte a seção [Configuração de rede avançada para regiões de publicação adicionais](/help/security/configuring-advanced-networking.md#advanced-networking-configuration-for-additional-publish-regions) na documentação de Redes avançadas para obter mais detalhes, incluindo como adicionar configurações de rede avançada a regiões adicionais sem incorrer em perda de conectividade.
 
 ## Limitações {#limitations}
 
