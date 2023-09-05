@@ -5,9 +5,9 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: 86700cce-139f-451e-9c21-b38b6332f773
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '579'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -71,7 +71,7 @@ Tendo lido este documento, agora você sabe como:
 * Acessar o Cloud Manager.
 * Fazer logon em uma instância do AEM as a Cloud Service.
 
-Parabéns! Agora você está pronto para criar e publicar conteúdo do AEM. Consulte [Recursos adicionais](#additional-resources) para obter mais detalhes sobre como criar conteúdo no AEM e como administrá-lo.
+Parabéns! Agora você está pronto para criar e publicar conteúdo do AEM. Consulte a seção [Recursos adicionais](#additional-resources) para obter mais detalhes sobre como criar conteúdo no AEM e como administrá-lo.
 
 Se você estiver interessado em como desenvolvedores e gerentes de implantação criam e gerenciam aplicativos personalizados para o AEM as a Cloud Service, continue com a segunda parte opcional da jornada de integração, [Tarefas do desenvolvedor no AEM.](developers.md)
 
