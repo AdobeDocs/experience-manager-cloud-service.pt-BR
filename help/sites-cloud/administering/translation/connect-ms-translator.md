@@ -5,9 +5,9 @@ feature: Language Copy
 role: Admin
 exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '512'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ Crie uma configuração para o serviço em nuvem [Microsoft Translator](https://
 
 >[!TIP]
 >
->Se você é novo na tradução de conteúdo, consulte [Jornada de tradução de sites,](/help/journey-sites/translation/overview.md) que é um caminho guiado pela tradução de conteúdo do AEM Sites usando ferramentas de tradução poderosas do AEM, ideais para aqueles sem experiência com o AEM ou com tradução.
+>Caso seja novo na tradução de conteúdo, consulte a [Jornada de tradução do Sites](/help/journey-sites/translation/overview.md), que é um caminho guiado pela tradução do seu conteúdo do AEM Sites usando as ferramentas de tradução avançadas do AEM, ideais para quem não tem experiência no AEM ou em tradução.
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ O procedimento a seguir cria uma configuração do Microsoft Translator.
 1. Toque ou clique no botão **Criar**.
 1. Defina sua configuração.
    1. Selecione **Microsoft Translator** no menu suspenso.
-   1. Digite um título para sua configuração. O título identifica a configuração no console do Cloud Services e nas listas suspensas de propriedade da página.
+   1. Digite um título para sua configuração. O título identifica a configuração no console do Cloud Services bem como nas listas suspensas de propriedades da página.
    1. Opcionalmente, digite um nome a ser usado para o nó do repositório que armazena a configuração.
 
    ![Criar configuração de tradução](../assets/create-translation-config.png)
