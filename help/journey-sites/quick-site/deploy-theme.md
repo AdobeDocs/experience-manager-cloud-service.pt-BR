@@ -3,9 +3,9 @@ title: Implantar um tema personalizado
 description: Saiba como implantar o tema do site usando o pipeline.
 exl-id: fe065972-39db-4074-a802-85895c701efd
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1023'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -91,7 +91,7 @@ Parabéns. Você concluiu a jornada de criação rápida de site do AEM. Agora v
 * Como personalizar e testar um tema usando conteúdo de proxy do AEM e confirmar essas alterações no Git do AEM.
 * Como implantar a personalização de front-end usando o pipeline.
 
-Agora você está pronto para personalizar os temas de seu próprio site do AEM. No entanto, antes de começar a criar fluxos de trabalho diferentes usando vários pipelines de front-end, revise o documento [Desenvolvimento de sites com o pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md). Ele pode ajudar você a aproveitar ao máximo o seu desenvolvimento de front-end:
+Agora você está pronto para personalizar os temas de seu próprio site do AEM. No entanto, antes de começar a criar fluxos de trabalho diferentes usando vários pipelines de front-end, consulte o documento [Desenvolvimento de sites com o pipeline de front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md). Ele pode ajudar a obter o máximo de seu desenvolvimento em front-end:
 
 * Mantendo uma única fonte de verdade.
 * Separando as preocupações.
@@ -105,8 +105,8 @@ Veja a seguir alguns recursos adicionais que explicam melhor alguns conceitos me
 * [Usar o painel Site para gerenciar o tema do site](/help/sites-cloud/administering/site-creation/site-rail.md) - conheça os recursos avançados do painel Site que ajudarão você a personalizar e gerenciar facilmente o tema do seu site, incluindo o download de fontes de temas e o gerenciamento de versões de temas.
 * [Documentação técnica do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=pt-BR) - se você já conhece bem o AEM, poderá consultar diretamente os documentos técnicos detalhados.
 * [Documentação do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=pt_BR) - se desejar obter mais detalhes sobre os recursos do Cloud Manager, consulte diretamente os documentos técnicos detalhados.
-* [Permissões baseadas em função](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html?lang=pt_BR) - o Cloud Manager tem funções pré-configuradas com permissões apropriadas. Consulte este documento para obter detalhes sobre essas funções e sobre como administrá-las.
-* [Repositórios do Cloud Manager](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) - Se precisar de mais informações sobre como configurar e gerenciar repositórios Git para seu projeto AEMaaCS, consulte este documento.
+* [Permissões baseadas em função](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html?lang=pt_BR) - o Cloud Manager tem funções pré-configuradas com permissões apropriadas. Consulte este documento para obter detalhes sobre estas funções e sobre como administrá-las.
+* [Repositórios do Cloud Manager](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md): se precisar de mais informações sobre como configurar e gerenciar repositórios Git para seu projeto do AEMaaCS, consulte este documento.
 * [Configurar pipeline de CI/CD - Cloud Services](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) - obtenha mais detalhes sobre a configuração de pipelines, de pilha completa ou de front-end, neste documento.
 * [Modelo de site padrão do AEM](https://github.com/adobe/aem-site-template-standard) - este é o repositório GitHub do modelo de site padrão do AEM.
 * [Tema de site do AEM](https://github.com/adobe/aem-site-template-standard-theme-e2e) - este é o repositório GitHub do tema de site do AEM.
@@ -117,4 +117,4 @@ Veja a seguir alguns recursos adicionais que explicam melhor alguns conceitos me
 * [Jornada de integração](/help/journey-onboarding/overview.md) - este guia serve como ponto de partida para garantir que suas equipes estejam preparadas e tenham acesso ao AEM as a Cloud Service.
 * [Documentação do Adobe Experience Manager Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=pt-BR) - explore a documentação do Cloud Manager para obter detalhes completos sobre seus recursos.
 * [Documentação de administração do site](/help/sites-cloud/administering/site-creation/create-site.md) - consulte os documentos técnicos sobre criação de sites para obter mais detalhes sobre os recursos da ferramenta Criação rápida de sites.
-* [Desenvolvimento de sites com o pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) - Este documento descreve algumas considerações que devem ser levadas em conta para que você possa obter todo o potencial do processo de desenvolvimento front-end usando o pipeline de front-end.
+* [Desenvolvimento de sites com o pipeline de front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md): este documento descreve algumas considerações que devem ser levadas em conta para aproveitar todo o potencial do processo de desenvolvimento do pipeline de front-end.
