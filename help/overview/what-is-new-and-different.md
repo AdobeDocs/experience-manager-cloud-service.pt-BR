@@ -3,9 +3,9 @@ title: O que é diferente e quais são as novidades - Adobe Experience Manager a
 description: O que é diferente e quais são as novidades - Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1896'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -115,7 +115,7 @@ O Cloud Manager evoluiu como um portal de autoatendimento, em que os principais 
 
 * Criação e gerenciamento de novos programas. Consulte [Noções básicas sobre programas e tipos de programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) para obter mais detalhes.
 
-* Criação e gerenciamento dos ambientes AEM nesses programas. Consulte [Gerenciamento de ambientes](/help/implementing/cloud-manager/manage-environments.md) para obter mais detalhes.
+* Criação e gerenciamento dos ambientes do AEM nesses programas. Consulte [Gerenciamento de ambientes](/help/implementing/cloud-manager/manage-environments.md) para obter mais detalhes.
 
 * Criação e gerenciamento de pipelines para implantação do código do cliente e da configuração relacionada a um ambiente específico. Consulte [Configuração do pipeline de CI-CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) para obter mais detalhes.
 
@@ -192,7 +192,7 @@ Devido à clara separação de código e conteúdo, os desenvolvedores podem usa
 
 ### Desenvolvimento local {#aem-as-a-cloud-service-developing-local-development}
 
-Para suportar iterações e desenvolvimento rápidos, também é possível desenvolver aplicações do AEM fora do contexto as a Cloud Service do AEM. Para essa finalidade, os seguintes artefatos são disponibilizados aos desenvolvedores:
+Para apoiar iterações e desenvolvimento rápidos, também é possível desenvolver aplicativos do AEM fora do contexto do AEM as a Cloud Service. Para essa finalidade, os seguintes artefatos são disponibilizados aos desenvolvedores:
 
 * O QuickStart do AEM as a Cloud Service: um instalador independente e com base em `.jar` da base de código do AEM mais recente, com a mesma superfície funcional e de API.
 
@@ -242,7 +242,7 @@ Isso combina os benefícios de:
 >
 >Para obter mais detalhes, o [Manuseio básico](/help/sites-cloud/authoring/getting-started/basic-handling.md) é um bom ponto de partida.
 
-Os princípios básicos da interface do usuário (UI) de criação, para Sites e Assets, serão familiares a qualquer pessoa que tenha usado AEM no passado.
+Os princípios básicos da interface (UI) de criação, tanto para o Sites quanto para o Assets, serão reconhecíveis a qualquer pessoa que já tenha usado o AEM no passado.
 
 A principal diferença é que a interface é habilitada para toque; a interface clássica não está mais disponível. No mais, as funcionalidades básicas permanecem inalteradas, verificando-se apenas pequenas alterações.
 
@@ -274,6 +274,6 @@ Para obter mais informações, consulte:
 
 >[!TIP]
 >
->Depois de receber uma visão geral do AEM as a Cloud Service, você poderá integrar-se rapidamente revisando a [Jornada de integração](/help/journey-onboarding/overview.md).
+>Depois de ver uma visão geral do AEM as a Cloud Service, será possível integrar-se rapidamente revisando a [Jornada de integração](/help/journey-onboarding/overview.md).
 >
 >Já integrado ou pronto para mergulhar nos recursos de AEM de teste? Instale o [Complemento de demonstrações de referência do AEM](/help/journey-sites/demos-add-on/overview.md) para explorar recursos avançados do AEM usando exemplos bem colocados.
