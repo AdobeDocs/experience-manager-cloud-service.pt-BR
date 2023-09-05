@@ -3,9 +3,9 @@ title: Criação de programas do sandbox
 description: Saiba como usar o Cloud Manager para criar seu próprio programa de sandbox para treinamentos, demonstrações, POCs ou outros fins de não produção.
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '444'
-ht-degree: 51%
+ht-degree: 100%
 
 ---
 
@@ -21,9 +21,9 @@ Saiba mais sobre os tipos de programas no documento [Noções sobre programas e 
 
 1. Na página de destino do Cloud Manager, próximo ao canto superior direito da tela, clique em **Adicionar programa**.
 
-   ![Página de aterrissagem do Cloud Manager](assets/cloud-manager-my-programs.png)
+   ![Página de destino do Cloud Manager](assets/cloud-manager-my-programs.png)
 
-1. No assistente de criação de programas, selecione **Configurar uma sandbox** e forneça um nome de programa.
+1. No assistente criar programa, selecione **Configurar uma sandbox** e forneça um nome de programa.
 
    ![Criação de tipo de programa](assets/create-sandbox.png)
 
@@ -31,29 +31,29 @@ Saiba mais sobre os tipos de programas no documento [Noções sobre programas e 
 
    * A imagem serve apenas como o bloco na janela de visão geral do programa e ajuda a identificar o programa.
 
-1. No **Configurar sua sandbox** escolha quais soluções você deseja ativar no programa de sandbox, marcando as opções na caixa **Soluções e complementos** tabela.
+1. Na caixa de diálogo **Configurar sua sandbox**, escolha quais soluções deseja habilitar no programa da sua sandbox, marcando as opções na tabela **Soluções e Complementos**.
 
-   * Use as divisas ao lado dos nomes das soluções para que você possa ver complementos adicionais e opcionais das soluções.
+   * Use as divisas ao lado dos nomes das soluções para ver complementos adicionais e opcionais para as soluções.
 
-   * A variável **Sites** e **Assets** as soluções são sempre incluídas em programas de sandbox e não podem ser desselecionadas.
+   * As soluções **Sites** e **Assets** estão sempre incluídas em programas de sandbox e não podem ser desmarcadas.
 
    ![Selecionar soluções e complementos para uma sandbox](assets/sandbox-solutions-add-ons.png)
 
-1. Depois de selecionar as soluções e os complementos para seu programa de sandbox, clique em **Criar**.
+1. Depois de selecionar as soluções e complementos para o programa da sua sandbox, clique em **Criar**.
 
-Você vê um cartão de novo programa de sandbox na página de aterrissagem com um indicador de status à medida que o processo de configuração avança.
+Você verá um cartão de novo programa de sandbox na página de destino com um indicador de status, conforme o processo de configuração avança.
 
 ![Criação de sandbox a partir da página de visão geral](assets/sandbox-setup.png)
 
 ## Acesso à sandbox {#access}
 
-Você pode visualizar os detalhes da configuração da sandbox e acessar o ambiente (quando disponível), visualizando a página de visão geral do programa.
+Você pode visualizar os detalhes da configuração da sandbox, bem como acessar o ambiente (quando disponível), visualizando a página de visão geral do programa.
 
 1. Na página de aterrissagem do Cloud Manager, clique no botão de reticências no programa recém-criado.
 
-   ![Visão geral do acesso ao programa](assets/program-overview-sandbox.png)
+   ![Acesso à visão geral do programa](assets/program-overview-sandbox.png)
 
-1. Depois que a etapa de criação do projeto for concluída, você poderá acessar a **Acessar informações do repositório** para poder usar seu repositório Git.
+1. Depois que a etapa de criação do projeto for concluída, será possível acessar o link **Acessar Informações do Repositório** para poder usar seu repositório Git.
 
    ![Configuração do programa](assets/create-program4.png)
 
@@ -69,6 +69,6 @@ Você pode visualizar os detalhes da configuração da sandbox e acessar o ambie
 
    ![Implantar a sandbox](assets/create-program-setup-deploy.png)
 
-Se precisar alternar para outro programa ou retornar à página de visão geral para criar outro programa, clique no nome do programa no canto superior esquerdo da tela para exibir a **Navegue até** opção.
+Se precisar alternar para outro programa ou retornar à página de visão geral para criar outro programa, clique no nome do seu programa no canto superior esquerdo da tela para exibir a opção **Navegar para**.
 
-![Vá até](assets/create-program-a1.png)
+![Navegar para](assets/create-program-a1.png)
