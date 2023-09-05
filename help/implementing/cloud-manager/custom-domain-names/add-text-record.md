@@ -3,9 +3,9 @@ title: Adicionar um registro TXT
 description: Saiba como adicionar um registro TXT para adicionar um nome de domínio personalizado no Cloud Manager.
 exl-id: d441de29-af41-4d3e-9155-531af9702841
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '329'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
