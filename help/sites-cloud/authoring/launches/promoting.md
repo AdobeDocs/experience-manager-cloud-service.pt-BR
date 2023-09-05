@@ -1,26 +1,26 @@
 ---
 title: Promoção de inicializações
-description: É necessário promover as páginas de inicialização para mover o conteúdo de volta para a origem (produção) antes de publicar.
+description: É necessário promover as páginas de lançamento para mover o conteúdo de volta para a origem (produção) antes de publicar.
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
 source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '814'
-ht-degree: 38%
+ht-degree: 100%
 
 ---
 
 # Promoção de inicializações {#promoting-launches}
 
-É necessário promover as páginas de inicialização para mover o conteúdo de volta para a origem (produção) antes de publicar. Quando uma página de inicialização é promovida, a página correspondente das páginas de origem é substituída pelo conteúdo da página promovida. As seguintes opções estão disponíveis ao promover uma página de inicialização:
+É necessário promover as páginas de lançamento para mover o conteúdo de volta para a origem (produção) antes de publicar. Quando uma página de lançamento é promovida, a página de origem correspondente é substituída pelo conteúdo da página promovida. As seguintes opções estão disponíveis ao promover uma página de lançamento:
 
-* Se deve promover somente a página atual ou toda a inicialização.
-* Se as páginas secundárias da página atual devem ser promovidas.
-* Se deve promover a inicialização completa ou somente as páginas que foram alteradas.
-* Se o lançamento deve ser excluído após ser promovido.
+* Promover somente a página atual ou todo o lançamento.
+* Promover as páginas secundárias da página atual.
+* Promover o lançamento completo ou somente as páginas alteradas.
+* Excluir o lançamento após promovê-lo.
 
 >[!NOTE]
 >
->Depois de promover as páginas de inicialização ao target (**Produção**), você pode ativar a variável **Produção** páginas como uma entidade (para tornar o processo mais rápido). Adicione as páginas a um pacote de fluxo de trabalho e use-o como a carga de um fluxo de trabalho que ativa um pacote de páginas. É necessário criar o pacote de workflow antes de promover a inicialização. Consulte [Processamento de páginas promovidas usando o fluxo de trabalho do AEM](#processing-promoted-pages-using-aem-workflow).
+>Após promover as páginas de lançamento para o destino (**Produção**), você pode ativar as páginas de **produção** como uma entidade (para tornar o processo mais rápido). Adicione as páginas a um pacote de fluxo de trabalho e use-o como o conteúdo de um fluxo de trabalho que ativa um pacote de páginas. É necessário criar o pacote de fluxo de trabalho antes de promover o lançamento. Consulte [Processamento de páginas promovidas usando o fluxo de trabalho do AEM](#processing-promoted-pages-using-aem-workflow).
 
 >[!CAUTION]
 >
@@ -28,41 +28,41 @@ ht-degree: 38%
 
 >[!CAUTION]
 >
->Ao promover inicializações para *modificado* páginas, modificações nas ramificações de origem e de inicialização são consideradas.
+>Ao promover lançamentos para páginas *modificadas*, as modificações nas ramificações de origem e de lançamento são consideradas.
 
 ## Promover páginas de lançamento {#promoting-launch-pages}
 
 >[!NOTE]
 >
->Isso abrange a ação manual de promover páginas de inicialização quando há apenas um nível de inicialização. Consulte:
+>Isso abrange a ação manual de promover páginas de lançamento quando há apenas um nível de lançamento. Consulte:
 >
->* [Promover uma inicialização aninhada](#promoting-a-nested-launch) quando houver mais de uma inicialização na estrutura.
->* [Inicializações - a ordem dos eventos](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events) para obter mais detalhes sobre promoção e publicação automáticas.
+>* [Promover um lançamento aninhado](#promoting-a-nested-launch), quando houver mais de um lançamento na estrutura.
+>* [Lançamentos - a ordem dos eventos](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events) para obter mais detalhes sobre promoção e publicação automáticas.
 >
 
-É possível promover inicializações a partir do **Sites** console ou o **Lançamentos** console:
+É possível promover lançamentos a partir do console **Sites** ou do console **Lançamentos**:
 
 1. Abrir:
    * O console do **Sites** ao navegar pelas páginas de origem:
       1. Abra o [painel de referências](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) e selecione a página de origem desejada usando o [modo de seleção](/help/sites-cloud/authoring/getting-started/basic-handling.md) (ou selecione e abra o painel de referências; a ordem não é importante). Todas as referências são mostradas.
       1. Selecione **Lançamentos** (por exemplo, Lançamentos [1]) para exibir uma lista de lançamentos específica.
-      1. Selecione a inicialização específica para mostrar as ações disponíveis.
+      1. Selecione um lançamento específico para mostrar as ações disponíveis.
       1. Selecione **Promover lançamento** para abrir o assistente.
    * O console do **Sites** ao navegar pelas páginas de inicialização:
       1. Selecione a página de inicialização necessária usando o [modo de seleção](/help/sites-cloud/authoring/getting-started/basic-handling.md).
-      1. A variável **Promover** ação está disponível na barra de ferramentas.
+      1. A ação **Promover** estará disponível na barra de ferramentas.
    * O console de **Inicializações**:
-      1. Selecione o seu lançamento (toque/clique na miniatura).
-      1. Selecionar **Promover**.
+      1. Selecione o lançamento (toque/clique na miniatura).
+      1. Selecione **Promover**.
 1. Na primeira etapa, é possível especificar:
    * **Target**
-      * **Excluir inicialização após promoção**
+      * **Excluir lançamento após a promoção**
    * **Escopo**
       * **Promover lançamento completo**
-      * **Divulgar as páginas modificadas**
+      * **Promover as páginas modificadas**
       * **Promover páginas aprovadas** - Dependente do fluxo de trabalho de aprovação da inicialização
-      * **Divulgar a página atual**
-      * **Divulgar página atual e subpáginas**
+      * **Promover a página atual**
+      * **Promover página atual e subpáginas**
 
      Por exemplo, ao selecionar para promover somente as páginas modificadas:
 
@@ -70,27 +70,27 @@ ht-degree: 38%
 
      >[!NOTE]
      >
-     >Isso abrange uma única inicialização, se você tiver inicializações aninhadas, consulte [Promover uma inicialização aninhada](#promoting-a-nested-launch).
-1. Selecionar **Próxima** para continuar.
+     >Isso abrange um único lançamento, se você tiver lançamentos aninhados, consulte [Promover um lançamento aninhado](#promoting-a-nested-launch).
+1. Selecione **Próximo** para continuar.
 1. É possível analisar as páginas a serem promovidas; isso dependerá do intervalo de páginas escolhido:
 
    ![Analisar promoção](/help/sites-cloud/authoring/assets/launches-promote-review.png)
 
-1. Selecionar **Promover**.
+1. Selecione **Promover**.
 
 ## Promover páginas de lançamento ao editar {#promoting-launch-pages-when-editing}
 
-Ao editar uma página de inicialização, a variável **Promover lançamento** a ação também está disponível em **Informações da página**. Isso abrirá o assistente para coletar as informações necessárias.
+Ao editar uma página de lançamento, a ação **Promover lançamento** também está disponível em **Informações da página**. Isso abrirá o assistente para coletar as informações necessárias.
 
 ![Promover inicialização a partir das informações do site](/help/sites-cloud/authoring/assets/launches-promote-page-info.png)
 
 >[!NOTE]
 >
->Ele está disponível para single e [inicializações aninhadas](#promoting-a-nested-launch).
+>Está disponível para [lançamentos aninhados](#promoting-a-nested-launch) e individuais.
 
-## Promover uma inicialização aninhada {#promoting-a-nested-launch}
+## Promover um lançamento aninhado {#promoting-a-nested-launch}
 
-Depois de criar uma inicialização aninhada, você pode promovê-la de volta para qualquer uma das origens, incluindo a origem raiz (produção).
+Após criar um lançamento aninhado, você pode promovê-lo de volta para qualquer uma das origens, incluindo a raiz (produção).
 
 ![Uma inicialização aninhada](/help/sites-cloud/authoring/assets/launches-promoting-nested.png)
 
@@ -99,13 +99,13 @@ Depois de criar uma inicialização aninhada, você pode promovê-la de volta pa
 1. Insira os detalhes necessários:
    * **Target**
       * **Destino da promoção** - É possível promover para qualquer uma das origens.
-      * **Excluir inicialização após promoção** - Após a promoção, a inicialização selecionada e qualquer inicialização aninhada dentro dela será excluída.
-   * **Escopo** - Aqui é possível promover toda a inicialização ou somente as páginas que foram editadas. No último caso, você pode optar por incluir/excluir subpáginas. A configuração padrão é promover alterações de página somente para a página atual:
+      * **Excluir o lançamento após a promoção**: após a promoção, o lançamento selecionado e qualquer lançamento aninhado nele será excluído.
+   * **Escopo** - Aqui é possível promover toda a inicialização ou somente as páginas que foram editadas. Neste último caso, você pode optar por incluir/excluir subpáginas. A configuração padrão é promover alterações de página somente para a página atual:
       * **Promover lançamento completo**
-      * **Divulgar as páginas modificadas**
+      * **Promover as páginas modificadas**
       * **Promover páginas aprovadas** - Dependente do fluxo de trabalho de aprovação da inicialização
-      * **Divulgar a página atual**
-      * **Divulgar página atual e subpáginas**
+      * **Promover a página atual**
+      * **Promover página atual e subpáginas**
 
    ![Promover configurações de inicialização](/help/sites-cloud/authoring/assets/launches-promote-settings.png)
 
@@ -116,22 +116,22 @@ Depois de criar uma inicialização aninhada, você pode promovê-la de volta pa
 
    >[!NOTE]
    >
-   >As páginas listadas dependerão do tipo de **Escopo** e possivelmente as páginas que foram editadas.
+   >As páginas listadas dependerão do tipo de **escopo** definido e, possivelmente, das páginas editadas.
 
-1. Suas alterações são promovidas e refletidas no **Lançamentos** console:
+1. Suas alterações são promovidas e refletidas no console **Lançamentos**:
 
    ![No console de inicializações](/help/sites-cloud/authoring/assets/launches-console.png)
 
 ## Processamento de Páginas promovidas usando o fluxo de trabalho do AEM {#processing-promoted-pages-using-aem-workflow}
 
-Usar modelos de fluxo de trabalho para executar o processamento em massa das páginas de inicializações promovidas:
+Use modelos de fluxo de trabalho para executar o processamento em massa das páginas de lançamento promovidas:
 
 1. Crie um pacote de fluxo de trabalho.
-1. Quando os autores promovem as páginas do Launch, eles as armazenam no pacote de fluxo de trabalho.
-1. Inicie um modelo de fluxo de trabalho usando o pacote como a carga.
+1. Quando autores(as) promovem as páginas de lançamento, elas são armazenadas no pacote de fluxo de trabalho.
+1. Inicie um modelo de fluxo de trabalho usando o pacote como o conteúdo.
 
 Para iniciar um fluxo de trabalho automaticamente quando as páginas forem promovidas, configure um ativador de fluxo de trabalho para o nó do pacote. <!--To start a workflow automatically when pages are promoted, [configure a workflow launcher](/help/sites-administering/workflows-starting.md#workflows-launchers) for the package node.-->
 
-Por exemplo, você pode gerar automaticamente solicitações de ativação de página quando os autores promovem páginas de Lançamentos. Configure um iniciador de fluxo de trabalho para iniciar o fluxo de trabalho Ativação de solicitação quando o nó do pacote for modificado.
+Por exemplo, você pode gerar solicitações de ativação de página automaticamente quando autores(as) promoverem páginas de lançamento. Configure um iniciador de fluxo de trabalho para iniciar o fluxo de trabalho Solicitar ativação quando o nó do pacote for modificado.
 
 ![Fluxo de trabalho de promoção](/help/sites-cloud/authoring/assets/launches-create-workflow.png)
