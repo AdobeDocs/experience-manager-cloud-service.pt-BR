@@ -3,9 +3,9 @@ title: Repositórios do Cloud Manager
 description: Saiba como criar, exibir e excluir repositórios Git no Cloud Manager.
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '575'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Saiba como criar, exibir e excluir repositórios Git no Cloud Manager.
 >
 >Há um limite de 300 repositórios em todos os programas em uma determinada empresa ou organização IMS.
 
-## Adicionar e gerenciar repositórios {#add-manage-repos}
+## Adição e gerenciamento de repositórios {#add-manage-repos}
 
 Siga estas etapas para exibir e gerenciar repositórios no Cloud Manager.
 
@@ -51,7 +51,7 @@ Há um único repositório principal ou uma ramificação para um determinado pi
 A exclusão de um repositório:
 
 * Tornará o nome do repositório excluído inutilizável para novos repositórios que podem ser criados no futuro.
-   * A mensagem de erro `Repository name should be unique within organization.` nesses casos.
+   * A mensagem de erro `Repository name should be unique within organization.` será mostrada nesses casos.
 * Tornará o repositório excluído indisponível no Cloud Manager e indisponível para vinculação a um pipeline.
 
 Siga estas instruções para excluir um repositório no Cloud Manager.
@@ -76,7 +76,7 @@ $ git submodule update --init
 
 Essa técnica é uma possível alternativa à solução descrita no documento [Trabalho com vários repositórios Git de origem](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md) para organizações familiarizadas com o uso de submódulos Git e que não desejam gerenciar um processo de mesclagem externo.
 
-Por exemplo, digamos que existam três repositórios, cada um contendo uma única ramificação chamada `main`. No repositório principal, ou seja, aquele configurado nos pipelines, a variável `main` a ramificação tem um `pom.xml` arquivo que declara os projetos contidos nos outros dois repositórios.
+Por exemplo, digamos que existam três repositórios, cada um contendo uma única ramificação chamada `main`. No repositório principal, ou seja, aquele configurado nos pipelines, a ramificação `main` tem um arquivo `pom.xml` que declara os projetos contidos nos outros dois repositórios.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
