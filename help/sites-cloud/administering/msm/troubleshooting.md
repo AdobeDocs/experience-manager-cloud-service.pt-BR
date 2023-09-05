@@ -5,9 +5,9 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '761'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ Os servlets anteriores retornavam informações computadas com base nos nós e m
 
 As informações presentes nessas propriedades devem ser refletidas na interface, no entanto, ao solucionar problemas, pode ser útil observar o comportamento do MSM diretamente no repositório, à medida que as ações do MSM ocorrem.
 
-Conhecer essas propriedades também pode ser útil para que você possa consultar seu repositório e descobrir conjuntos de páginas que estão em estados específicos. Por exemplo:
+Conhecer essas propriedades também pode ser útil para consultar seu repositório e descobrir conjuntos de páginas que estão em estados específicos. Por exemplo:
 
 * `select * from cq:LiveSync` retorna todas as páginas raiz da Live Copy.
 
@@ -67,7 +67,7 @@ Aqui estão algumas perguntas frequentes relacionadas ao MSM e Live Copy.
 
 As ações de sincronização do MSM são altamente configuráveis. Quais propriedades ou componentes são modificados durante as implantações dependem diretamente das propriedades dessas configurações.
 
-Consulte [este artigo](best-practices.md) para obter mais informações sobre esse tópico.
+Consulte [este artigo](best-practices.md) para obter mais informações sobre este tópico.
 
 ### Como posso remover as permissões de implantação de um grupo de autores? {#remove-rollout-permissions}
 
@@ -80,11 +80,11 @@ Como alternativa, você pode:
 
 ### Por que vejo páginas da Live Copy com o sufixo “_msm_moved”? {#moved-pages}
 
-Se uma página de blueprint for implantada, ela atualizará sua página da Live Copy ou criará uma página da Live Copy se ainda não existir (por exemplo, quando ela for implantada pela primeira vez ou a página da Live Copy for excluída manualmente).
+Se uma página de blueprint for implantada, ela atualizará a página da Live Copy ou criará uma nova página da Live Copy se ela ainda não existir (por exemplo, quando for implantada pela primeira vez ou a página da Live Copy for excluída manualmente).
 
-Neste último caso, no entanto, se uma página sem `cq:LiveRelationship` existir com o mesmo nome, essa página será renomeada de acordo, antes que a página da Live Copy seja criada.
+Nesse último caso, no entanto, se uma página sem uma propriedade `cq:LiveRelationship` existir com o mesmo nome, ela será renomeada de acordo antes que a página da Live Copy seja criada.
 
-Por padrão, a implantação espera uma página vinculada da Live Copy, para a qual as atualizações dos blueprints são implantadas ou nenhuma página, quando uma página da Live Copy é criada.
+Por padrão, a implantação espera ou uma página vinculada de Live Copy, para a qual as atualizações dos blueprints serão implantadas, ou nenhuma página, quando uma página da Live Copy é criada.
 
 Se uma página “independente” for encontrada, o MSM optará por renomear esta página e criar uma página separada e vinculada da Live Copy.
 
