@@ -3,9 +3,9 @@ title: Teste de interface do usuário
 description: Os testes de interface do usuário personalizados são um recurso opcional que permite criar e executar automaticamente testes na interface do usuário para seus aplicativos personalizados.
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2389'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 90%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_uitesting"
 >title="Teste de interface do usuário"
->abstract="Os testes de interface do usuário personalizados são um recurso opcional que permite criar e executar automaticamente testes na interface do usuário para seus aplicativos. Os testes de interface do usuário são testes baseados em Selenium, compactados em uma imagem do Docker, para permitir uma variedade de opções de linguagens e estruturas (como Java e Maven, Node e WebDriver.io, ou qualquer outra estrutura e tecnologia criada no Selenium)."
+>abstract="Os testes de interface do usuário personalizados são um recurso opcional que permite criar e executar automaticamente testes na interface do usuário para seus aplicativos. Os testes de interface são baseados no Selenium, compactados em uma imagem do Docker, para permitir uma variedade de opções de idiomas e estruturas (como Java e Maven, Node e WebDriver.io, ou qualquer outra estrutura e tecnologia criada a partir do Selenium)."
 
 Os testes de interface do usuário personalizados são um recurso opcional que permite criar e executar automaticamente testes na interface do usuário para seus aplicativos.
 
@@ -23,7 +23,7 @@ Os testes de interface do usuário personalizados são um recurso opcional que p
 
 O AEM fornece um conjunto integrado de [quality gates (portais de qualidade) do Cloud Manager](/help/implementing/cloud-manager/custom-code-quality-rules.md) para garantir atualizações tranquilas para aplicativos personalizados. Em especial, os portais de teste de TI já promovem a criação e a automação de testes personalizados usando as APIs do AEM.
 
-Os testes de interface do usuário são compactados em uma imagem de Docker para permitir uma grande variedade de opções de linguagens e estruturas (como Cypress, Selenium, Java e Maven, além de JavaScript). Além disso, um projeto de testes de interface pode ser facilmente gerado usando o [Arquétipo de projeto do AEM.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR)
+Os testes de interface são compactados em uma imagem do Docker para permitir uma variedade de opções de idiomas e estruturas (como Cypress, Selenium, Java e Maven, além do JavaScript). Além disso, um projeto de testes de interface pode ser facilmente gerado usando o [Arquétipo de projeto do AEM.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR)
 
 A Adobe incentiva o uso do Cypress, pois oferece recarregamento em tempo real e espera automática, o que ajuda a economizar tempo e melhorar a produtividade durante os testes. O Cypress também fornece uma sintaxe simples e intuitiva, facilitando a aprendizagem e o uso, até mesmo para aqueles que são novos em testes.
 
@@ -35,7 +35,7 @@ Diferentemente dos testes funcionais personalizados, que são testes HTTP escrit
 >
 >A Adobe recomenda o uso do Cypress para testes de interface, seguindo o código fornecido no [repositório de Exemplos de teste do AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-cypress).
 > 
->O Adobe também fornece exemplos de módulo de teste de IU com base no JavaScript com WebdriverIO (consulte [Arquétipo de projeto AEM](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)) e Java com WebDriver (consulte [Repositório de amostras de teste do AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)).
+>A Adobe também fornece exemplos de módulos de teste de interface com base em JavaScript com WebdriverIO (consulte [Arquétipo de projeto do AEM](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)) e Java com WebDriver (consulte o [repositório de Amostras de testes do AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)).
 
 ## Introdução aos testes de interface  {#get-started-ui-tests}
 
@@ -53,9 +53,9 @@ Esta seção descreve as etapas necessárias para a configuração dos testes de
 
    * Para Java e WebDriver, use o código de exemplo do [repositório de exemplos de teste do AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver).
 
-   * Para outras linguagens de programação, consulte a seção [Criação de testes de interface do usuário](#building-ui-tests) neste documento para configurar o projeto de teste.
+   * Para outras linguagens de programação, consulte a seção [Criação de testes de interface](#building-ui-tests) deste documento para configurar o projeto de teste.
 
-1. Garanta que o teste da interface esteja ativado de acordo com a seção [Adesão do cliente](#customer-opt-in) deste documento.
+1. Certifique-se de que o teste da interface esteja ativado de acordo com a seção [Adesão do cliente](#customer-opt-in) deste documento.
 
 1. Desenvolva seus casos de teste e [execute-os localmente](#run-ui-tests-locally).
 
@@ -69,7 +69,7 @@ Esta seção descreve as etapas necessárias para adicionar um projeto de testes
 
 >[!TIP]
 >
->A variável [Arquétipo de projeto AEM](https://github.com/adobe/aem-project-archetype) O pode gerar um projeto de Testes de interface do usuário para você, que é compatível com a descrição a seguir, se você não tiver requisitos especiais para a linguagem de programação.
+>O [Arquétipo de projeto do AEM](https://github.com/adobe/aem-project-archetype) pode gerar um projeto de testes de interface para você, que está em conformidade com a descrição a seguir, caso você não tenha requisitos especiais para a linguagem de programação.
 
 ### Gerar um contexto de compilação do Docker {#generate-docker-build-context}
 
@@ -167,7 +167,7 @@ Para que o Cloud Manager compile e execute seus testes de interface, é necessá
 * O arquivo deve estar no submódulo Maven para testes de interface, próximo do arquivo `pom.xml` do submódulo de testes de interface.
 * O arquivo deve estar na raiz do arquivo de compilação `tar.gz`.
 
-A compilação dos testes de interface do usuário é ignorada se esse arquivo não estiver presente.
+A compilação e a execução dos testes de interface será ignorada se esse arquivo não estiver presente.
 
 Para incluir um arquivo `testing.properties` no artefato de compilação, adicione a instrução `include` no arquivo `assembly-ui-test-docker-context.xml`.
 
@@ -207,7 +207,7 @@ Esta seção descreve as convenções que a imagem do Docker que contém seus te
 
 ### Variáveis de ambiente {#environment-variables}
 
-As variáveis de ambiente a seguir são passadas para a imagem do Docker no tempo de execução, dependendo da estrutura.
+As seguintes variáveis de ambiente são passadas para a imagem do Docker em tempo de execução, dependendo da estrutura.
 
 | Variável | Exemplos | Descrição | Estrutura de testes |
 |---|---|---|---|
@@ -220,7 +220,7 @@ As variáveis de ambiente a seguir são passadas para a imagem do Docker no temp
 | `AEM_PUBLISH_USERNAME` | `admin` | O nome de usuário para fazer logon na instância de publicação do AEM | Todos |
 | `AEM_PUBLISH_PASSWORD` | `admin` | A senha para fazer logon na instância de publicação do AEM | Todos |
 | `REPORTS_PATH` | `/usr/src/app/reports` | O caminho onde o relatório XML dos resultados do teste deve ser salvo | Todos |
-| `UPLOAD_URL` | `http://upload-host:9090/upload` | O URL no qual o arquivo deve ser carregado para torná-lo acessível à estrutura de teste | Todos |
+| `UPLOAD_URL` | `http://upload-host:9090/upload` | O URL no qual o arquivo deve ser enviado para torná-lo acessível à estrutura de teste | Todos |
 
 Os exemplos de teste da Adobe fornecem funções auxiliares para acessar os parâmetros de configuração:
 
@@ -236,7 +236,7 @@ Se a imagem do Docker for implementada com outras linguagens de programação ou
 
 >[!NOTE]
 >
->O resultado da etapa de teste da interface é avaliado somente com base nos relatórios de teste. Certifique-se de gerar o relatório adequadamente para a execução do teste.
+>O resultado da etapa de teste da interface é avaliado somente com base nos relatórios de teste. Certifique-se de que o relatório seja gerado adequadamente para a execução do teste.
 >
 >Use asserções em vez de apenas registrar um erro no STDERR ou retornar um código de saída diferente de zero, caso contrário, o pipeline de implantação poderá continuar normalmente.
 
@@ -259,7 +259,7 @@ Se a imagem do Docker for implementada com outras linguagens de programação ou
 
 >[!NOTE]
 >
-> Caso precise de mais recursos, crie um caso de Atendimento ao cliente e descreva seu caso de uso; o Adobe analisará sua solicitação e fornecerá a assistência apropriada.
+> Caso precise de mais recursos, crie um chamado no Atendimento ao cliente e descreva o caso de uso. A Adobe verificará sua solicitação e fornecerá a assistência adequada.
 
 ## Detalhes específicos do Selenium
 
@@ -369,7 +369,7 @@ Antes de ativar os testes de interface em um pipeline do Cloud Manager, é recom
 >* Os arquivos de log são armazenados na pasta `target/reports` do repositório.
 >* Certifique-se de que sua máquina esteja executando a versão mais recente do Chrome, pois o teste baixa a versão mais recente do ChromeDriver automaticamente.
 >
->Para obter detalhes, consulte [Repositório do Arquétipo de Projeto AEM](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/README.md).
+>Para obter detalhes, consulte [Repositório de arquétipos de projetos do AEM](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/README.md).
 
 ### Exemplo de teste do Java Selenium WebDriver {#java-sample}
 
