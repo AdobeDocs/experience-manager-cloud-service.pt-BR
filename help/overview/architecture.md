@@ -3,9 +3,9 @@ title: Introdução à arquitetura do Adobe Experience Manager as a Cloud Servic
 description: Introdução à arquitetura do Adobe Experience Manager as a Cloud Service.
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1826'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -65,7 +65,7 @@ O dimensionamento de instâncias por locatário do serviço se aplica aos dois e
 ## Ambientes {#environments}
 
 >[!NOTE]
->Para obter mais informações, consulte [Implantação - modos de execução](/help/implementing/deploying/overview.md#runmodes)
+>Para obter mais informações, consulte [Implantação - Modos de execução](/help/implementing/deploying/overview.md#runmodes)
 
 O AEM as a Cloud Service é disponibilizado como instâncias individuais e cada instância representa um ambiente completo do AEM.
 
