@@ -3,9 +3,9 @@ title: Personalização e direcionamento de conteúdo
 description: Saiba como criar conteúdo personalizado e direcionado com o AEM
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1055'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -88,7 +88,7 @@ Você pode [Criar conteúdo direcionado](/help/sites-cloud/authoring/personaliza
 
 Um conjunto agrupado de componentes que compõem uma experiência.
 
-[Fragmentos de experiência](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) são feitos de conteúdo e informações (estilo etc.) para criar uma experiência; eles podem ser usados diretamente durante a criação da página. Eles podem ser considerados um subconjunto de uma página do AEM. Eles permitem que autores de conteúdo reutilizem conteúdo em canais, incluindo páginas de sites e sistemas de terceiros.
+[Fragmentos de experiência](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) são feitos de conteúdo e informações (estilo etc.) para criar uma experiência; eles podem ser usados diretamente durante a criação da página. Eles podem ser considerados um subconjunto de uma página do AEM. Eles permitem que autores de conteúdo reutilizem conteúdo entre vários canais, incluindo páginas do Sites e sistemas de terceiros.
 
 Para um exemplo de personalização, um Título, Imagem, Descrição e Botão de frases de chamariz podem ser combinados para formar uma experiência de teaser. O uso de Fragmentos de experiência é uma parte essencial do uso da personalização do Adobe Target.
 
@@ -117,8 +117,8 @@ O AEM fornece um mecanismo de direcionamento [ContextHub](/help/implementing/dev
 
 O mecanismo de direcionamento do [Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md) faz com que as informações coletadas das visitas às páginas sejam rastreadas no Adobe Target.
 
-* Ao usar esse mecanismo de direcionamento, use os segmentos importados da Adobe Target para definir os públicos das suas experiências.
-* As atividades que usam o mecanismo do Adobe Target são [sincronizado com o Target](/help/sites-cloud/authoring/personalization/activities.md#synchronizing-activities-with-adobe-target).
+* Ao usar esse mecanismo de direcionamento, você utilizará os segmentos importados do Adobe Target para definir os públicos-alvo das suas experiências.
+* As atividades que usam o mecanismo do Adobe Target são [sincronizadas com o Target](/help/sites-cloud/authoring/personalization/activities.md#synchronizing-activities-with-adobe-target).
 
 Você pode usar esse mecanismo quando tiver [integrado com o Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
 
