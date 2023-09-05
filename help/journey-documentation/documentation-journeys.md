@@ -1,24 +1,24 @@
 ---
 title: Jornadas de documentação do AEM
-description: As Jornadas de documentação fornecem uma estrutura narrativa dentro da documentação do AEM, unindo recursos complexos e diferentes para que você possa resolver uma meta empresarial da maneira recomendada. As jornadas foram desenvolvidas para auxiliar os iniciantes no AEM, apresentando os conceitos e recursos que permitem atingir uma meta de A a Z.
+description: As jornadas de documentação fornecem uma estrutura narrativa dentro da documentação do AEM, unindo recursos complexos e diferentes para que você possa resolver uma meta empresarial utilizando práticas recomendadas. As jornadas foram desenvolvidas para auxiliar os iniciantes no AEM, apresentando os conceitos e recursos que permitem atingir uma meta de A a Z.
 exl-id: aab346b8-26dc-4d5b-88bb-720cf634e0a2
 hidefromtoc: true
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1349'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
 # Jornadas de documentação do AEM {#aem-documentation-journeys}
 
-As Jornadas de documentação fornecem uma estrutura narrativa dentro da documentação do AEM, unindo recursos complexos e diferentes para que você possa resolver uma meta empresarial da maneira recomendada. As jornadas foram desenvolvidas para auxiliar os iniciantes no AEM, apresentando os conceitos e recursos que permitem atingir uma meta de A a Z.
+As jornadas de documentação fornecem uma estrutura narrativa dentro da documentação do AEM, unindo recursos complexos e diferentes para que você possa resolver uma meta empresarial utilizando práticas recomendadas. As jornadas foram desenvolvidas para auxiliar os iniciantes no AEM, apresentando os conceitos e recursos que permitem atingir uma meta de A a Z.
 
 ## O que é uma jornada de documentação? {#what-is}
 
 Uma jornada de documentação une vários tópicos e recursos diferentes e talvez complicados, fornecendo uma narrativa que ajuda o leitor, que pode ser novo no AEM, a entender e resolver um problema empresarial do começo ao fim, mesmo que ele tenha o mínimo de conhecimento prévio sobre o tópico ou o AEM.
 
-As jornadas de documentação contrastam com os documentos técnicos existentes do AEM, que se concentram principalmente em um único recurso e documentação de tarefas e que são destinados àqueles que já estão familiarizados com o AEM. Ao se concentrar nos conceitos e deixar os detalhes minuciosos para a documentação técnica existente, as Jornadas de documentação oferecem aos leitores novos no AEM um lugar para começar a entender como a plataforma pode ser usada usando as práticas recomendadas que atendem às necessidades e fluxos de trabalho empresariais comuns. Por esse motivo, as jornadas de documentação servem como um complemento e não como substitutas da [documentação técnica existente do AEM.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=pt-BR)
+As jornadas de documentação contrastam com os documentos técnicos existentes do AEM, que se concentram principalmente em um único recurso e documentação de tarefas e que são destinados àqueles que já estão familiarizados com o AEM. Ao se concentrar nos conceitos e deixar os detalhes minuciosos para a documentação técnica existente, as jornadas de documentação oferecem aos leitores novos no AEM um lugar para começar a entender como a plataforma pode ser aproveitada utilizando as práticas recomendadas que atendem às necessidades e fluxos de trabalho empresariais comuns. Por esse motivo, as jornadas de documentação servem como um complemento e não como substitutas da [documentação técnica existente do AEM.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=pt-BR)
 
 ### Aprendizagem por narrativa {#narrative}
 
@@ -40,7 +40,7 @@ Se quiser saber como a Adobe recomenda resolver casos empresariais com o AEM, as
 
 ## Como uma jornada de documentação é estruturada? {#structure}
 
-Uma jornada de documentação serve como uma introdução baseada em práticas recomendadas sobre como o AEM soluciona problemas empresariais comuns. Por isso, cada jornada é projetada para auxiliar leitores que são novos no AEM, apresentando o problema, descrevendo a teoria necessária e fornecendo uma visão passo a passo de como o AEM resolve o problema. Devido à natureza abrangente de uma jornada, ela pode ser útil para leitores novos no AEM e usuários experientes.
+Uma jornada de documentação serve como uma introdução baseada em práticas recomendadas sobre como o AEM soluciona problemas empresariais comuns. Por isso, cada jornada é projetada para auxiliar leitores que são novos no AEM, apresentando o problema, descrevendo a teoria necessária e fornecendo uma visão passo a passo de como o AEM resolve o problema. Devido à natureza abrangente de uma jornada, ela pode ser útil tanto para leitores novos no AEM como para usuários experientes.
 
 Uma jornada de documentação típica tem as seguintes partes.
 
@@ -82,7 +82,7 @@ As jornadas de documentação são um complemento da documentação técnica e d
 
 ## Quais são as jornadas existentes? {#journeys}
 
-Há várias jornadas de documentação disponíveis para você. Como cada jornada é projetada como uma narrativa, comece com a introdução e leia tudo para obter um entendimento completo do tópico no contexto do AEM.
+Há várias jornadas de documentação disponíveis para você. Como cada jornada é desenvolvida com uma narrativa, comece com a introdução e leia todo o conteúdo para obter um entendimento completo do tópico no contexto do AEM.
 
 | Jornada | Descrição |
 |---|---|
