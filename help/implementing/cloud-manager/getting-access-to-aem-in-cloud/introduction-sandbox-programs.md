@@ -3,9 +3,9 @@ title: Introdução aos programas de sandbox
 description: Saiba o que são programas de sandbox e como se diferem dos programas de produção.
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '475'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ Domínios personalizados e listas de permissões IP não estão disponíveis em 
 
 ### Sem rede avançada {#advanced-networking}
 
-[Recursos avançados de rede](/help/security/configuring-advanced-networking.md) (por exemplo, provisionamento de VPNs via autoatendimento, portas não padrão, endereços IP de saída dedicados e assim por diante) não estão disponíveis em programas de sandbox.
+[Recursos avançados de rede](/help/security/configuring-advanced-networking.md) (por exemplo, provisionamento de VPNs por autoatendimento, portas não padrão, endereços IP de saída dedicados e assim por diante) não estão disponíveis em programas de sandbox.
 
 ### Atualizações manuais do AEM {#updates}
 
@@ -66,7 +66,7 @@ Consulte [Atualização do ambiente](/help/implementing/cloud-manager/manage-env
 
 Os ambientes em um programa de sandbox são hibernados automaticamente após oito horas de inatividade. Os ambientes de sandbox são excluídos após seis meses contínuos de hibernação.
 
-Consulte [Hibernação e cancelamento da hibernação de ambientes de sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md) para obter mais detalhes sobre como cancelar a hibernação de ambientes e exclusão automática da sandbox.
+Consulte [Habilitar e desabilitar a hibernação de ambientes de sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md) para obter mais detalhes sobre como desabilitar a hibernação de ambientes e excluir uma sandbox automaticamente.
 
 ### Sem suporte técnico {#no-support}
 
