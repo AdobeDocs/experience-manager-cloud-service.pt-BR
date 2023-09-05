@@ -3,9 +3,9 @@ title: Acesso e gerenciamento de registros
 description: Saiba como acessar e gerenciar logs para auxiliar seu processo de desenvolvimento no AEM as a Cloud Service.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '267'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Você também pode acessar os logs na página **Ambientes**.
 
 ## Logs por meio da API {#logs-through-api}
 
-Além de baixar logs por meio da interface do usuário, os logs também estão disponíveis por meio da API e da interface de linha de comando.
+Além de fazer download dos logs por meio da interface, eles também estão disponíveis por meio da API e da interface de linha de comando.
 
 Para baixar os arquivos de log de um ambiente específico, o comando seria semelhante ao descrito a seguir.
 
@@ -48,7 +48,7 @@ Para baixar os arquivos de log de um ambiente específico, o comando seria semel
 $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
 ```
 
-Além disso, é possível rastrear logs por meio da interface de linha de comando.
+Além disso, é possível rastrear os logs por meio da interface de linha de comando.
 
 ```shell
 $ aio cloudmanager:tail-log --programId 5 1884 author aemerror
@@ -81,5 +81,5 @@ Environment Id Service    Name
 
 Consulte os seguintes recursos adicionais para saber mais sobre a API do Cloud Manager e a CLI do Adobe I/O:
 
-* [Documentação da API do Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/)
+* [Documentação da API do Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager)
 * [CLI do Adobe I/O](https://github.com/adobe/aio-cli-plugin-cloudmanager)
