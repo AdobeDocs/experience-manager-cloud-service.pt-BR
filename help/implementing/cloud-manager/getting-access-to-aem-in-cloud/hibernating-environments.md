@@ -3,9 +3,9 @@ title: Hibernação cancelamento da hibernação em ambientes de sandbox
 description: Saiba como os ambientes de um programa de sandbox entram automaticamente em um modo de hibernação e como você pode removê-los.
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '685'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Siga estas etapas para hibernar manualmente os ambientes dos programas de sandbo
 
 1. No cartão **Ambientes**, clique no botão de reticências e selecione **Console do desenvolvedor**.
 
-   * Consulte [Acesso ao Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) para obter detalhes adicionais sobre o Console do desenvolvedor.
+   * Consulte [Acesso ao Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) para obter detalhes adicionais sobre o Developer Console.
 
    ![Opção de menu do Console do desenvolvedor](assets/developer-console-menu-option.png)
 
@@ -69,7 +69,7 @@ Você pode hibernar manualmente seu programa de sandbox no Console do desenvolve
 
 1. No cartão **Ambientes**, clique no botão de reticências e selecione **Console do desenvolvedor**.
 
-   * Consulte [Acesso ao Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) para obter detalhes adicionais sobre o Console do desenvolvedor.
+   * Consulte [Acesso ao Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) para obter detalhes adicionais sobre o Developer Console.
 
 1. Clique em **Cancelar hibernação**.
 
