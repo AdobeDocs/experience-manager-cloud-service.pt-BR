@@ -5,16 +5,23 @@ topic-tags: Adaptive Forms, author
 hide: true
 hidefromtoc: true
 Keywords: Google reCAPTCHA service, Adaptive Forms, CAPTCHA challenge, Bot prevention, Core Components, Form submission security, Form spam prevention
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: 496705937a01d99f988ba83f6d8984fc86dc8bfa
 workflow-type: tm+mt
-source-wordcount: '874'
-ht-degree: 0%
+source-wordcount: '947'
+ht-degree: 12%
 
 ---
 
-# Usar o Google reCAPTCHA em um formulário adaptável AEM {#using-reCAPTCHA-in-adaptive-forms}
+# Usar o Google reCAPTCHA em um formulário adaptável AEM com base em componentes principais {#using-reCAPTCHA-in-adaptive-forms}
 
-CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart) é um programa comumente usado em transações on-line para distinguir entre humanos e programas ou bots automatizados. Ele representa um desafio e avalia a resposta do usuário para determinar se é um humano ou um bot interagindo com o site. Ele impede que o usuário continue se o teste falhar e ajuda a tornar as transações online seguras, impedindo que os bots publiquem spam ou fins mal-intencionados.
+<span class="preview"> Esse é um recurso de pré-lançamento acessível por meio de nossa [canal de pré-lançamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+
+| Aplica-se a | Link do artigo |
+| -------- | ---------------------------- |
+| Formulário adaptável com base nos Componentes principais | Este artigo |
+| Formulário adaptável baseado em componentes de base | [Clique aqui](/help/forms/captcha-adaptive-forms.md) |
+
+O CAPTCHA (um teste de Turing público e completamente automatizado para diferenciar computadores e humanos) é um programa comumente usado em transações online para distinguir entre humanos e programas ou bots automatizados. O recurso apresenta um desafio e avalia a resposta do usuário para determinar se é um humano ou um bot interagindo com o site. O CAPTCHA impede que o usuário prossiga se o teste falhar e ajuda a tornar as transações online seguras, evitando que bots publiquem spam ou outro conteúdo mal-intencionado.
 
 [!DNL AEM Forms] as a [!DNL Cloud Service] O é compatível com o Google reCAPTCHA v2 no Adaptive Forms. Você pode usá-lo para apresentar um desafio de CAPTCHA no envio do formulário. Para usar o reCAPTCHA em um formulário adaptável:
 
@@ -44,8 +51,8 @@ Para conectar seu ambiente do AEM Forms com o serviço reCAPTCHA da Google
 
 1. Configure o Cloud Service:
    1. Na instância do autor do AEM, acesse ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Service]** e toque em **[!UICONTROL reCAPTCHA]**.
-   1. Selecione um Contêiner de configuração, criado ou atualizado na seção anterior. Toque **[!UICONTROL Criar]**.
-   1. Especificar **[!UICONTROL Título]**, **[!UICONTROL Nome]**, **[!UICONTROL Chave do site]**, e **[!UICONTROL Chave secreta]** para o serviço reCAPTCHA (Obtido na Etapa 1). Toque **[!UICONTROL Criar]**.
+   1. Selecione um Contêiner de configuração, criado ou atualizado na seção anterior. Toque em **[!UICONTROL Criar]**.
+   1. Especificar **[!UICONTROL Título]**, **[!UICONTROL Nome]**, **[!UICONTROL Chave do site]**, e **[!UICONTROL Chave secreta]** para o serviço reCAPTCHA (Obtido na Etapa 1). Toque em **[!UICONTROL Criar]**.
 
 
    ![Configure o Cloud Service para conectar seu ambiente AEM Forms com o serviço reCAPTCHA da Google](/help/forms/assets/captcha-configuration.gif)
@@ -106,3 +113,9 @@ Tap the **[!UICONTROL Currency Value]** field in the form and create the followi
 **P: Posso usar mais de um componente Captcha em um formulário adaptável?**
 **Ans:** Não há suporte para o uso de mais de um componente Captcha em um Formulário adaptável. Além disso, não é recomendável usar o componente Captcha em um fragmento ou painel marcado para carregamento lento.
 
+## Consulte também:
+
+* [Criação de um Formulário adaptável](/help/forms/creating-adaptive-form-core-components.md)
+* [Criar um fragmento de formulário adaptável](/help/forms/adaptive-form-fragments-core-components.md)
+* [Adição de um formulário adaptável a uma página do AEM Sites ou a um fragmento de experiência](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Usar o Google reCAPTCHA em um formulário adaptável](/help/forms/captcha-adaptive-forms-core-components.md)

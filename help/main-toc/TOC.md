@@ -8,10 +8,10 @@ user-guide-description: Saiba como o Experience Manager as a Cloud Service funci
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: bb15e840071279dbdf8bd2bfe89d59c067898aca
+source-git-commit: 496705937a01d99f988ba83f6d8984fc86dc8bfa
 workflow-type: tm+mt
-source-wordcount: '4258'
-ht-degree: 96%
+source-wordcount: '4253'
+ht-degree: 95%
 
 ---
 
@@ -570,6 +570,7 @@ ht-degree: 96%
          + [Integrar o AEM Forms as a Cloud Service com o Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
          + [Integrar um Formulário adaptável ao Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
          + [Incorporar um Formulário adaptável em uma página do AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)
+         + [Incorporar formulários adaptáveis com base nos componentes principais a uma página externa da Web](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
       + Modelo de dados do formulário {#use-form-data-model}
          + [Conectar suas fontes de dados ao Cloud Service](/help/forms/data-integration.md)
          + [Configurar fontes de dados](/help/forms/configure-data-sources.md)
@@ -583,20 +584,19 @@ ht-degree: 96%
    + Adaptive Forms {#adaptive-forms-authoring}
       + [Criação de um Formulário adaptável](/help/forms/create-an-adaptive-form.md)
       + [Adição de um formulário adaptável a uma página do AEM Sites ou a um fragmento de experiência](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-      + Criação de Formulários adaptáveis - Componentes principais {#authoring-adaptive-forms-core-components}
+      + Componentes principais {#authoring-adaptive-forms-core-components}
          + Criar um formulário adaptável {#create-an-adaptive-form-on-forms-cs}
             + [Criação de um Formulário adaptável](/help/forms/creating-adaptive-form-core-components.md)
             + [Criar um fragmento de formulário adaptável](/help/forms/adaptive-form-fragments-core-components.md)
             + [Criar temas para um Formulário adaptável - Componentes principais](/help/forms/using-themes-in-core-components.md)
             + [Gerar documento de registro para Formulários adaptáveis](/help/forms/generate-document-of-record-core-components.md)
-            + [Criar um formulário adaptável - Componentes principais em uma página do Sites AEM](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
             + [Usar tradução automática ou humana para traduzir um formulário adaptável](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [Configurar a página de redirecionamento ou mensagem de agradecimento](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [Criação de formulários com seções repetidas](/help/forms/create-forms-repeatable-sections.md)
             + [Configurar a ação enviar para um formulário adaptável](/help/forms/configure-submit-actions-core-components.md)
             + [Usar o Google reCAPTCHA em um formulário adaptável](/help/forms/captcha-adaptive-forms-core-components.md)
             + [Adicionar manipulador de erros personalizado em um formulário adaptável](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
-      + Criação de Formulários adaptáveis - Componentes básicos {#authoring-adaptive-forms-foundation-components}
+      + Componentes de base {#authoring-adaptive-forms-foundation-components}
          + Converter formulários em PDF em Formulários adaptáveis {#afcs}
             + [Introdução ao serviço de conversão automática de formulários](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=pt-BR)
             + [Converter um Formulário PDF existente em um Formulário adaptável](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=pt-BR)
