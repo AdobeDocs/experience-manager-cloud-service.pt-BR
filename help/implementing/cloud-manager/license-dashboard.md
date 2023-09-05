@@ -3,9 +3,9 @@ title: Painel de licenças
 description: O Cloud Manager fornece um painel para facilitar a visualização dos direitos de produto do AEMaaCS disponíveis para sua organização ou locatário.
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '873'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ Cada seção resume o que está disponível e como é usado no momento, se for o
 
 >[!TIP]
 >
->Consulte [visão geral do Admin Console](https://helpx.adobe.com/br/enterprise/using/admin-console.html) para saber como gerenciar os direitos de Adobe em toda a organização usando o Admin Console.
+>Consulte [Visão geral do Admin Console](https://helpx.adobe.com/br/enterprise/using/admin-console.html) para saber como gerenciar seus direitos da Adobe para toda a organização no Admin Console.
 
 ## Perguntas frequentes {#faq}
 
@@ -79,13 +79,13 @@ As solicitações de conteúdo terão variações entre as ferramentas de relat�
 | Report Suites | As páginas que fazem parte de uma mesma instância e domínio do AEM podem enviar dados para diferentes conjuntos de relatórios de Analytics. |
 | Ferramentas de segurança e monitoramento de terceiros | Ferramentas de verificação para monitoramento e segurança podem gerar solicitações de conteúdo para o AEM que não são rastreadas nos relatórios de Analytics. |
 | Solicitações de pré-busca | Usar um serviço de pré-busca para pré-carregar páginas a fim de aumentar a velocidade pode causar um aumento significativo no tráfego de solicitações de conteúdo. |
-| DDOS | Embora o Adobe se esforce ao máximo para detectar e filtrar automaticamente o tráfego de ataques de DDOS, não há garantia de que todos os possíveis ataques de DDOS sejam detectados |
+| DDOS | Embora a Adobe faça todos os esforços para detectar e filtrar automaticamente o tráfego de ataques DDOS, não há garantia de que todos os possíveis ataques DDOS sejam detectados |
 | Bloqueadores de tráfego | O uso de um bloqueador de rastreadores em um navegador pode impedir o rastreamento de algumas solicitações. |
 | Firewalls | Os firewalls podem bloquear o rastreamento do Analytics. Isso é mais frequente com firewalls corporativos. |
 
 ### E se eu quiser saber mais sobre o volume de solicitação de conteúdo? {#current-request-volumes}
 
-Se você quiser obter insights adicionais sobre o volume de solicitação de conteúdo mostrado no Painel de licenças, a equipe da Adobe pode fornecer um relatório que mostra os principais responsáveis pelo volume das solicitações de conteúdo. Entre em contato com a equipe de Adobe ou com o Atendimento ao cliente do Adobe para solicitar um relatório de uso principal.
+Se você quiser obter insights adicionais sobre o volume de solicitação de conteúdo mostrado no Painel de licenças, a equipe da Adobe pode fornecer um relatório que mostra os principais responsáveis pelo volume das solicitações de conteúdo. Entre em contato com a equipe da Adobe ou com o atendimento ao cliente da Adobe para solicitar um relatório de uso principal.
 
 ### E se eu estiver usando meu próprio CDN? {#using-own-cdn}
 
