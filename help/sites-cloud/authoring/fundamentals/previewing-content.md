@@ -3,9 +3,9 @@ title: Visualização de conteúdo
 description: Saiba como usar o serviço de visualização do AEM para visualizar o conteúdo antes de ele ser publicado.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '274'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ O AEM oferece um serviço de visualização do Sites que permite que desenvolved
 
 Ele facilita a visualização de experiências de página que de outra forma não estariam visíveis no ambiente do autor, como transições de página e demais conteúdos disponíveis somente do lado da publicação.
 
-Para obter mais detalhes sobre os ambientes de visualização, consulte [Gerenciar ambientes](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+Para obter mais detalhes sobre os ambientes de visualização, consulte [Gerenciamento de ambientes](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
 ## Publicar conteúdo na visualização {#publishing-content-to-preview}
 
