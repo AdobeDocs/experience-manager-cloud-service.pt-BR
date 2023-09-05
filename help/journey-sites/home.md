@@ -3,9 +3,9 @@ title: Jornadas do AEM Sites
 description: Comece aqui para obter uma visão geral das jornadas guiadas disponíveis para compreender os recursos avançados de sites do AEM.
 exl-id: d18bc8b8-8d94-4296-a218-b21b59e6563d
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '418'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ Comece aqui para obter uma visão geral das jornadas guiadas disponíveis para c
 
 ## Introdução {#introduction}
 
-O [AEM Sites](https://business.adobe.com/br/products/experience-manager/sites/aem-sites.html) é um conjunto unificado de ferramentas poderosas que permitem criar, gerenciar e publicar experiências digitais com facilidade em todos os canais. Desde a configuração da estrutura do conteúdo inicial, à criação fácil de conteúdo reutilizável, à implantação em vários mercados e idiomas e à criação de aplicativos personalizados que oferecem experiências personalizadas, o AEM Sites é uma solução abrangente e centralizada para criar experiências excelentes para seus públicos, onde quer que estejam.
+O [AEM Sites](https://business.adobe.com/br/products/experience-manager/sites/aem-sites.html) é um conjunto unificado de ferramentas poderosas que permitem criar, gerenciar e publicar experiências digitais com facilidade em todos os canais. Desde a configuração da estrutura inicial à fácil criação de conteúdo reutilizável, bem como a implantação em vários mercados e idiomas e a criação de aplicativos personalizados que oferecem experiências individuais, o AEM Sites é uma solução abrangente e centralizada para a criação de experiências incríveis para seus públicos-alvo, onde quer que estejam.
 
 ## Jornadas de documentação do AEM {#documentation-journeys}
 
