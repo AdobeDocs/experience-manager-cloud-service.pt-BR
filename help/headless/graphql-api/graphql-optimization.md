@@ -3,9 +3,9 @@ title: Otimização de consultas de GraphQL
 description: Saiba como otimizar consultas de GraphQL ao filtrar, paginar e classificar os fragmentos de conteúdo no Adobe Experience Manager as a Cloud Service para entrega de conteúdo headless.
 exl-id: 67aec373-4e1c-4afb-9c3f-a70e463118de
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1193'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Ela aplica um filtro do JCR (na forma de uma restrição de consulta) antes de c
 
 >[!NOTE]
 >
->Por motivos técnicos (por exemplo, flexibilidade, aninhamento de fragmentos), o AEM não pode delegar toda a filtragem ao JCR.
+>Por motivos técnicos (por exemplo, flexibilidade e aninhamento de fragmentos), o AEM não pode delegar toda a filtragem ao JCR.
 
 Essa técnica mantém a flexibilidade que os filtros de GraphQL oferecem e delega o máximo possível da filtragem para o JCR.
 
@@ -129,7 +129,7 @@ Se você estiver interessado principalmente em recuperar apenas as primeiras pá
 
 ### Operações lógicas em expressões de filtro {#logical-operations-in-filter-expressions}
 
-Se você estiver filtrando em fragmentos aninhados, ainda será possível aplicar a filtragem JCR fornecendo um filtro de acompanhamento em um campo de nível superior combinado usando o `AND` operador.
+Se estiver filtrando em fragmentos aninhados, você ainda poderá aplicar a filtragem do JCR fornecendo um filtro de acompanhamento em um campo de nível superior, o qual é combinado usando o operador `AND`.
 
 Um caso de uso típico seria restringir o escopo da consulta usando um filtro no campo `_path` do fragmento de nível superior e, em seguida, filtrar por campos adicionais que podem estar no nível superior ou em um fragmento aninhado.
 
