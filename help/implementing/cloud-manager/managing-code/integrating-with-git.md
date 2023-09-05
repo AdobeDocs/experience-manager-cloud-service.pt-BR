@@ -3,9 +3,9 @@ title: Uso do Git com o Cloud Manager
 description: Saiba como usar os repositórios Git do Cloud Manager e como integrar seu próprio repositório Git local gerenciado pelo cliente com o Cloud Manager.
 exl-id: 57e71b8a-4546-4d7f-825c-a1637d08e608
 source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '316'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -45,11 +45,11 @@ Neste vídeo, conheça as estratégias básicas de ramificação.
 
 ## Desenvolvimento de ramificação de recursos {#feature-development}
 
-Use uma ramificação de recursos para isolar alterações de código em um repositório Git gerenciado pelo cliente e sincronizar com o repositório Git do Cloud Manager, a fim de usar um pipeline de não produção para testes de qualidade e validação de código.
+Use uma ramificação de recursos para isolar alterações de código em um repositório Git gerenciado pelo cliente e sincronizar com o repositório Git do Cloud Manager, a fim de usar um pipeline de não produção para testes de validação e qualidade de código.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28723/?quality=12)
 
-## Implantação em produção {#production-deployment}
+## Implantação da produção {#production-deployment}
 
 Prepare o código para uma versão de produção em um repositório Git gerenciado pelo cliente e sincronize com o repositório Git do Cloud Manager para implantar em ambientes de preparo e produção.
 
@@ -57,7 +57,7 @@ Prepare o código para uma versão de produção em um repositório Git gerencia
 
 ## Sincronização das tags de versão {#sync-tags}
 
-Sincronize as tags de versão de um repositório Git do Cloud Manager com um repositório Git gerenciado pelo cliente para fornecer visibilidade de qual código foi implantado nos ambientes de preparo e produção.
+Sincronize as tags de versão de um repositório git do Cloud Manager em um repositório git gerenciado pelo cliente para fornecer visibilidade do código que foi implementado nos ambientes de preparo e produção.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28725/?quality=12)
 
