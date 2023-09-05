@@ -1,19 +1,19 @@
 ---
 title: Ativação do pipeline de front-end
-description: Saiba como você pode ativar o pipeline de front-end para sites existentes a fim de usar temas de site para personalizar seu site mais rapidamente.
+description: Saiba como habilitar o pipeline de front-end para que os sites existentes usem temas de site para uma personalização mais rápida.
 feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '562'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
-# Ativação do pipeline de front-end {#enable-front-end-pipeline}
+# Habilitar o pipeline de front-end {#enable-front-end-pipeline}
 
-Saiba como você pode ativar o pipeline de front-end para sites existentes a fim de usar temas de site para personalizar seu site mais rapidamente.
+Saiba como habilitar o pipeline de front-end para que os sites existentes usem temas de site para uma personalização mais rápida.
 
 ## Visão geral {#overview}
 
@@ -21,11 +21,11 @@ O pipeline de front-end é um mecanismo que pode implantar rapidamente apenas o 
 
 Em vez de implantar a pilha completa, somente o código front-end é manipulado por esse pipeline, agilizando o processo e permitindo que os desenvolvedores de front-end personalizem seu site de maneira fácil e rápida, sem necessidade de ter conhecimento sobre o AEM.
 
-Sites com base em modelos de site podem usar o pipeline de front-end por padrão. Este documento descreve como você pode adaptar seus sites existentes para aproveitar o pipeline de front-end.
+Sites baseados em modelos de site podem usar o pipeline de front-end por padrão. Este documento descreve como você pode adaptar seus sites existentes para aproveitar o pipeline de front-end.
 
 >[!TIP]
 >
->Se você não estiver familiarizado com o pipeline de front-end e não souber como implantar sites rapidamente usando ele e os modelos de site, consulte [Jornada de criação rápida de site](/help/journey-sites/quick-site/overview.md) para uma introdução.
+>Se não conhece o funcionamento do pipeline de front-end e como implantar sites rapidamente usando esse pipeline e os modelos de site, consulte [Jornada de criação rápida de sites](/help/journey-sites/quick-site/overview.md) para obter uma introdução.
 
 Se você não tiver criado o site existente com base em modelos de site e temas, o AEM poderá configurar o site para carregar os temas que são implantados com o pipeline de front-end sobre as bibliotecas de clientes existentes.
 
