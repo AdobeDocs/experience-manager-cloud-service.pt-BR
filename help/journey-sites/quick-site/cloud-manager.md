@@ -3,9 +3,9 @@ title: Entenda o Cloud Manager e o fluxo de trabalho de Criação rápida de sit
 description: Saiba mais sobre o Cloud Manager e como ele se vincula ao novo processo de criação rápida de sites.
 exl-id: 5d264078-e552-48ca-8d82-294a646e6b1f
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1128'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -70,7 +70,7 @@ Para o desenvolvedor front-end, não é necessário usar o AEM.
 
 >[!TIP]
 >
->Se você não estiver familiarizado com as funções do Cloud Manager e o gerenciamento de funções, consulte o documento Permissões baseadas em funções no [Recursos adicionais](#additional-resources) seção.
+>Se não estiver familiarizado com as funções do Cloud Manager e o gerenciamento de funções, consulte o documento Permissões baseadas em funções na seção [Recursos Adicionais](#additional-resources).
 
 ## Cloud Manager {#cloud-manager}
 
@@ -124,6 +124,6 @@ Aplicar esse conhecimento e prosseguir com sua jornada de Criação rápida de s
 Embora seja recomendável seguir para a próxima parte da jornada de Criação rápida de sites revisando o documento [Criar site a partir de modelo,](create-site.md) os recursos opcionais a seguir fornecerão uma melhor explicação dos conceitos mencionados neste documento. Porém, eles não são obrigatórios para continuar na jornada.
 
 * [Documentação do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=pt_BR) - se quiser obter mais detalhes sobre os recursos do Cloud Manager, consulte diretamente os documentos técnicos detalhados.
-* [Permissões baseadas em função](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html?lang=pt_BR) - o Cloud Manager tem funções pré-configuradas com permissões apropriadas. Consulte este documento para obter detalhes sobre essas funções e sobre como administrá-las.
+* [Permissões baseadas em função](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html?lang=pt_BR) - o Cloud Manager tem funções pré-configuradas com permissões apropriadas. Consulte este documento para obter detalhes sobre estas funções e sobre como administrá-las.
 * [npm](https://www.npmjs.com) - temas do AEM usados para criar sites rapidamente se baseiam em npm.
 * [webpack](https://webpack.js.org) - temas do AEM usados para criar sites rapidamente dependem do webpack.
