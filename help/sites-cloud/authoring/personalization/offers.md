@@ -3,9 +3,9 @@ title: Criação e gerenciamento de ofertas (console Ofertas)
 description: Use o console Ofertas para criar ofertas que você possa usar em experiências de atividades
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1391'
-ht-degree: 47%
+ht-degree: 100%
 
 ---
 
@@ -101,7 +101,7 @@ Adicione tags, se necessário.
 >
 >Portanto, a opção recomendada é usar Fragmentos de experiência, não esta opção.
 
-Para clientes com ofertas herdadas pré-existentes, a variável **Usar modelo de oferta** opções estão visíveis ao direcionar componentes que são **não** Fragmentos de experiência:
+Para clientes com ofertas herdadas pré-existentes, as opções **Usar modelo de oferta** estarão visíveis ao direcionar componentes que **não** são Fragmentos de experiência:
 
 ![Converter em diálogo de variação de Fragmento de experiência](/help/sites-cloud/authoring/assets/offers-legacy-target-non-experience-fragment.png)
 
@@ -113,34 +113,34 @@ Para clientes com ofertas herdadas pré-existentes, a variável **Usar modelo de
 >
 >Você tem tempo para se preparar. Veja como [converter as ofertas legadas existentes em uma oferta de fragmento de experiência](#convert-legacy-offer-to-experience-fragment).
 
-Use o console Ofertas para criar ofertas que você possa [uso em experiências de atividade](/help/sites-cloud/authoring/personalization/targeted-content.md). A criação de ofertas no console Ofertas economiza tempo quando várias experiências exigem a mesma oferta:
+Use o console Ofertas para criar ofertas que você possa [usar em experiências de atividades](/help/sites-cloud/authoring/personalization/targeted-content.md). A criação de ofertas no console Ofertas economiza tempo quando várias experiências exigem a mesma oferta:
 
 * Crie a oferta uma única vez na biblioteca e use-a em várias experiências das suas atividades de marca.
 * Altere a oferta na biblioteca e a alteração afetará todas as experiências que a utilizam.
 
-O console de Ofertas organiza as ofertas por marca. Cada marca contém uma biblioteca de ofertas que podem ser usadas nas experiências de uma marca. Use pastas para definir uma estrutura hierárquica para organizar ofertas em cada biblioteca. Uma estrutura de pastas lógica permite que os autores encontrem ofertas facilmente navegando. As ferramentas de marcação e pesquisa também permitem que os autores encontrem ofertas.
+O console Ofertas organiza as ofertas por marca. Cada marca contém uma biblioteca de ofertas que podem ser usadas nas experiências dela. Use pastas para definir uma estrutura hierárquica para organizar ofertas em cada biblioteca. Uma estrutura de pastas lógica permite que os autores encontrem ofertas facilmente navegando. As ferramentas de marcação e pesquisa também permitem que os autores encontrem ofertas.
 
-### Adicionar uma marca usando o console Ofertas {#add-a-brand-using-the-offers-console}
+### Adição de uma marca usando o console Ofertas {#add-a-brand-using-the-offers-console}
 
-Crie uma marca à qual suas ofertas estão associadas. Abra uma marca no console Ofertas para acessar sua biblioteca de ofertas, onde você pode criar pastas e ofertas.
+Crie uma marca à qual suas ofertas serão associadas. Abra uma marca no console Ofertas para acessar sua biblioteca de ofertas, onde você pode criar pastas e ofertas.
 
-Ao criar uma marca usando o console Ofertas, ela também aparece no [Console de atividades](/help/sites-cloud/authoring/personalization/activities.md) onde é possível adicionar e administrar atividades da marca.
+Ao criar uma marca usando o console Ofertas, ela também aparece no [Console Atividades](/help/sites-cloud/authoring/personalization/activities.md) onde é possível adicionar e administrar as atividades da marca.
 
 1. No console Navegação, clique ou toque em **Personalização** > **Ofertas**.
 
    ![Navegação até o console Ofertas](/help/sites-cloud/authoring/assets/offers-navigation.png)
 
 1. Clique ou toque em **Criar** e depois em **Criar** **marca**.
-1. Selecione o modelo da marca e clique ou toque em **Próxima**.
-1. Digite um título para a marca conforme você quer que ele seja exibido nos consoles Ofertas e Atividades. Opcionalmente, digite ou selecione uma ou mais tags para associar à marca.
+1. Selecione o modelo da marca e toque ou clique em **Próximo**.
+1. Digite um título para a marca conforme você queira que ele seja exibido nos consoles de Ofertas e Atividades. Também é possível digitar ou selecionar uma ou mais tags para associar à marca.
 1. Clique ou toque em **Criar**.
 
-### Adicionar uma pasta a uma biblioteca de ofertas {#add-a-folder-to-an-offer-library}
+### Adição de uma pasta a uma biblioteca de ofertas {#add-a-folder-to-an-offer-library}
 
-Adicione uma pasta à biblioteca de ofertas de uma marca para organizar e armazenar ofertas. Você pode criar uma pasta abaixo da marca ou abaixo de outras pastas.
+Adicione uma pasta à biblioteca de ofertas de uma marca para organizar e armazenar ofertas. É possível criar uma pasta abaixo da marca ou abaixo de outras pastas.
 
-1. No console Ofertas, abra o local em que deseja criar a pasta. Por exemplo, abra a marca para criar uma pasta de nível superior ou abra outra pasta na biblioteca.
-1. Clique ou toque **Criar** > **Criar pasta ou oferta**.
+1. No console de Ofertas, abra o local em que deseja criar a pasta. Por exemplo, abra a marca para criar uma pasta de nível superior ou abra outra pasta na biblioteca.
+1. Clique ou toque em **Criar** > **Criar pasta ou oferta**.
 
    ![Criação da pasta de ofertas](/help/sites-cloud/authoring/assets/offers-create-folder.png)
 
@@ -151,49 +151,49 @@ Adicione uma pasta à biblioteca de ofertas de uma marca para organizar e armaze
 
 1. Clique ou toque em **Criar**.
 
-### Adicionar uma oferta a uma biblioteca de ofertas {#add-an-offer-to-an-offer-library}
+### Adição de uma oferta a uma biblioteca de ofertas {#add-an-offer-to-an-offer-library}
 
-Adicione uma oferta à biblioteca de ofertas de uma marca para que ela possa ser adicionada às experiências da marca. Ao adicionar uma oferta, você fornece um título. Você também pode associar a oferta a uma ou mais tags para aprimorar a pesquisa.
+Adicione uma oferta à biblioteca de ofertas de uma marca para que ela possa ser adicionada às experiências da marca. Ao adicionar uma oferta, um título deve ser fornecido. Também é possível associar a oferta a uma ou mais tags para aprimorar a pesquisa.
 
-Depois de criar a oferta, você pode abri-la para criar o conteúdo.
+Após criar a oferta, você pode abri-la para criar o conteúdo.
 
 1. No console Ofertas, abra o local em que deseja criar a oferta. Por exemplo, abra a marca para criar uma oferta de nível superior ou abra uma pasta na biblioteca.
-1. Clique ou toque **Criar** > **Criar pasta ou oferta**.
+1. Clique ou toque em **Criar** > **Criar pasta ou oferta**.
 
    ![Criação da pasta de ofertas](/help/sites-cloud/authoring/assets/offers-create-folder.png)
 
-1. Selecione o **Página de oferta** e clique ou toque em **Próxima**.
-1. Digite um título para a oferta e, opcionalmente, selecione ou digite uma ou mais tags para associar à oferta e clique ou toque em **Criar**.
+1. Selecione o modelo de **página de oferta** e clique ou toque em **Próximo**.
+1. Digite um título para a oferta, também é possível selecionar ou digitar uma ou mais tags para associar à oferta, em seguida, clique ou toque em **Criar**.
 1. Na caixa de diálogo de confirmação, para abrir a oferta para edição, clique ou toque em **Abrir página**.
 
 ### Edição de uma oferta {#editing-an-offer}
 
-Abra uma oferta e edite o conteúdo conforme deseja que ele seja exibido nas experiências que a utilizam. Ao editar uma oferta usada em qualquer experiência, suas alterações aparecem nas experiências.
+Abra uma oferta e edite o conteúdo conforme deseja que ele seja exibido nas experiências que a utilizam. Ao editar uma oferta usada em alguma experiência, suas alterações aparecerão nessas experiências.
 
-É possível abrir uma oferta de uma pasta em uma biblioteca de ofertas ou dos resultados da pesquisa. Você também pode abrir uma oferta de uma experiência que usa a oferta.
+É possível abrir uma oferta a partir de uma pasta em uma biblioteca de ofertas ou a partir dos resultados da pesquisa. Também é possível abrir uma oferta a partir de uma experiência que a usa.
 
-1. No console Ofertas, toque ou clique no ícone ao lado da oferta e clique ou toque **Editar**.
-1. Adicione componentes à oferta e edite o conteúdo do componente como de costume.
+1. No console Ofertas, toque ou clique no ícone ao lado da oferta e clique ou toque em **Editar**.
+1. Adicione componentes à oferta e edite seu conteúdo como de costume.
 
 ### Exclusão de uma oferta {#deleting-an-offer}
 
-Exclua uma oferta quando ela não for mais necessária. Ao tentar excluir uma oferta usada em uma experiência do, você será solicitado a confirmar a exclusão. A confirmação exclui a oferta e a remove das experiências.
+Exclua uma oferta quando ela não for mais necessária. Ao tentar excluir uma oferta usada em uma experiência, será necessário confirmar a exclusão. A confirmação exclui a oferta e a remove das experiências.
 
 É possível excluir uma oferta ao visualizar o conteúdo da pasta em uma biblioteca de ofertas ou em resultados de pesquisa.
 
-1. No console Ofertas, toque ou clique no ícone ao lado da oferta e clique ou toque **Excluir**.
+1. No console Ofertas, toque ou clique no ícone ao lado da oferta e clique ou toque em **Excluir**.
 
    Selecione a oferta e clique ou toque em **Excluir**.
 
-1. Na caixa de diálogo exibida, clique ou toque em **Excluir** para confirmar a exclusão.
+1. Na caixa de diálogo que será exibida, clique ou toque em **Excluir** para confirmar a exclusão.
 1. Se a oferta for usada em uma ou mais experiências, uma caixa de diálogo será exibida para indicar que a oferta é referenciada:
 
-   * Para excluir a oferta e removê-la das experiências, clique ou toque **Forçar Exclusão**.
+   * Para excluir a oferta e removê-la das experiências, clique ou toque **Forçar exclusão**.
    * Para manter a oferta, clique ou toque em **Cancelar**.
 
-### Procurando Ofertas {#searching-for-offers}
+### Pesquisando Ofertas {#searching-for-offers}
 
-Procure ofertas de qualquer marca usando palavras-chave para corresponder ao título.
+Pesquise ofertas de qualquer marca usando palavras-chave para corresponder ao título.
 
 ![Procurar por uma oferta](/help/sites-cloud/authoring/assets/offers-search.png)
 
@@ -202,4 +202,4 @@ Os critérios de pesquisa atuais aparecem ao lado dos resultados da pesquisa. Vo
 Para pesquisar ofertas:
 
 1. Na parte superior do console Ofertas, clique ou toque no ícone de lupa. Por padrão, a pesquisa é limitada a ofertas.
-1. Digite sua palavra-chave para procurar ofertas. Selecione nos resultados.
+1. Digite sua palavra-chave para pesquisar por ofertas. Selecione uma nos resultados.
