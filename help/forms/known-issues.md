@@ -1,39 +1,39 @@
 ---
 title: Problemas conhecidos e limitações
-description: Problemas conhecidos e limitações do  [!DNL AEM Forms] ambiente as a Cloud Service
+description: Problemas conhecidos e limitações do ambiente do  [!DNL AEM Forms]  as a Cloud Service
 contentOwner: khsingh
 role: User, Developer
 level: Intermediate
 topic: Administration
 exl-id: 871f294d-f251-4966-a021-39df65b613f0
 source-git-commit: 63f6e7c6df7404062aa0d209496506bdabcf564c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '358'
-ht-degree: 10%
+ht-degree: 100%
 
 ---
 
 # Problemas conhecidos e limitações {#known-issues-and-limitations}
 
-Antes de começar a usar [!DNL AEM Forms] as a Cloud Service, analise os seguintes problemas e limitações conhecidos:
+Antes de começar a usar o [!DNL AEM Forms] as a Cloud Service, analise os seguintes problemas e limitações conhecidos:
 
 ## Problemas conhecidos {#known-issues}
 
-* Não adicione e execute um teste que envie um formulário adaptável de uma instância de publicação para um fluxo de trabalho AEM em execução em uma instância de autor até aviso adicional.
+* Até novo aviso, não adicione e execute um teste que envie um formulário adaptável de uma instância de publicação para um fluxo de trabalho do AEM em execução em uma instância de criação.
 
-* Ao importar um Formulário adaptável que use um modelo contendo a variável **[!UICONTROL Salvar]** botão, o botão **[!UICONTROL Salvar]** continua a aparecer no Formulário adaptável mesmo depois de ser removido do modelo correspondente. Remova o **[!UICONTROL Salvar]** do Adaptive Forms antes de publicá-lo. Fique de olho nas notas de versão referentes à disponibilidade do Portal do Forms e ao recurso Salvar como rascunho para restaurar e usar o botão.
+* Ao importar um formulário adaptável que use um modelo contendo o botão **[!UICONTROL Salvar]**, o botão **[!UICONTROL Salvar]** continua a aparecer no formulário adaptável mesmo após ser removido do modelo correspondente. Remova o botão **[!UICONTROL Salvar]** de seus formulários adaptáveis antes de publicá-los. Acompanhe as notas de versão para saber se o Portal do Forms e o recurso Salvar como rascunho estão disponíveis para restaurar e usar o botão.
 
-* A variável **[!UICONTROL Definir variável]** A etapa de fluxos de trabalho do AEM não é compatível com variáveis do tipo lista de matriz. Você pode usar a etapa do processo para definir variáveis do tipo lista de matriz.
+* A etapa **[!UICONTROL Definir variável]** dos fluxos de trabalho do AEM não é compatível com variáveis do tipo lista de matriz. Você pode usar a etapa do processo para definir variáveis do tipo lista de matriz.
 
-* Ao enviar um formulário adaptável contendo um campo de upload de HTML padrão de um dispositivo Apple iOS, o conteúdo do arquivo não é enviado e um arquivo de 0 byte é recebido na outra extremidade. O problema ocorre intermitentemente e somente ao usar o envio síncrono. Este é um [problema conhecido](https://feedbackassistant.apple.com/feedback/9117687) no Apple iOS.
+* Ao enviar um formulário adaptável que contém um campo de upload HTML padrão de um dispositivo Apple iOS, o conteúdo do arquivo não é enviado e um arquivo de 0 byte é recebido do outro lado. O problema ocorre de forma intermitente e somente ao usar o envio síncrono. Este é um [problema conhecido](https://feedbackassistant.apple.com/feedback/9117687) no Apple iOS.
 
-* Quando você envia um formulário contendo um campo de upload de HTML padrão de um dispositivo Apple iOS, às vezes, o conteúdo do arquivo não é enviado e um arquivo de 0 byte é recebido na outra extremidade. Esse é um problema conhecido no Apple iOS. [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
+* Ao enviar um formulário contendo um campo de upload HTML padrão de um dispositivo Apple iOS, às vezes o conteúdo do arquivo não é enviado e um arquivo de 0 byte é recebido do outro lado. Esse é um problema conhecido no Apple iOS. [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
 
 * O AEM Forms as a Cloud Service não gera miniaturas para arquivos de esquema XDP e JSON. O serviço exibe ícones padrão no lugar de miniaturas.
 
   ![Problema conhecido na miniatura do Forms](/help/forms/assets/forms-tumbnail-known-issue.png)
 
-* Quando você usa um esquema com elementos repetíveis para criar um Formulário adaptável com base nos Componentes principais, a opção de arrastar e soltar elementos repetíveis da árvore do modelo de dados no Editor Forms adaptável não funciona.
+* Ao usar um esquema com elementos repetíveis para criar um formulário adaptável baseado em componentes principais, a opção de arrastar e soltar elementos repetíveis da árvore do modelo de dados no editor de formulários adaptáveis não funciona.
 
 ## Limitações {#limitations}
 
