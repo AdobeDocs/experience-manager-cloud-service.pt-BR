@@ -3,9 +3,9 @@ title: APIs obsoletas
 description: Notas de versão específicas a APIs obsoletas e removidas do  [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service].
 exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1116'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -158,7 +158,7 @@ Veja abaixo uma extensa lista de APIs obsoletas do AEM e a data esperada da remo
   </tr>
   <tr>
     <td>org.apache.felix.http.whiteboard</td>
-    <td>O quadro de permissões Apache Felix Http não é mais suportado. Migre seu código para o OSGi Http Whiteboard.</td>
+    <td>O quadro de permissões Apache Felix Http não é mais suportado. Migre o seu código para o OSGi HTTP Whiteboard.</td>
     <td>27/01/2022</td>
     <td>24/03/2022</td>
   </tr>
