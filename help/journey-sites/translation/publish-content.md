@@ -6,9 +6,9 @@ hide: false
 hidefromtoc: false
 exl-id: 081167dd-da4c-48d2-a6d3-f95e873be3e9
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1358'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -81,9 +81,9 @@ Seu conteúdo traduzido foi publicado! Agora ele pode ser acessado e consumido.
 
 >[!TIP]
 >
->Você pode selecionar vários itens (ou seja, várias pastas de idioma) ao publicar para publicar várias traduções de uma vez.
+>É possível selecionar vários itens (ou seja, várias pastas de idioma) durante a publicação para publicar várias traduções de uma vez.
 
-Há opções adicionais ao publicar seu conteúdo, como agendar um horário de publicação, que estão além do escopo desta jornada. Consulte a [Recursos adicionais](#additional-resources) no final do documento para obter mais informações.
+Há opções adicionais ao publicar seu conteúdo, como agendar um horário de publicação, mas isso está além do escopo desta jornada. Consulte a seção [Recursos adicionais](#additional-resources) ao final do documento para obter mais informações.
 
 ## Atualizar o conteúdo traduzido {#updating-translations}
 
@@ -117,7 +117,7 @@ Você vê que um novo cartão de tarefa foi adicionado ao projeto. Neste exemplo
 
 ![Tarefa de tradução adicional adicionada](assets/additional-translation-job.png)
 
-É possível notar que as estatísticas listadas no novo cartão são diferentes. Isso ocorre porque o AEM reconhece o que mudou desde a última tradução e inclui apenas o conteúdo que precisa ser traduzido. Isso inclui a nova tradução do conteúdo atualizado e a primeira tradução do novo conteúdo.
+É possível notar que as estatísticas listadas no novo cartão são diferentes. Isso ocorre porque o AEM reconhece o que mudou desde a última tradução e inclui apenas o conteúdo que precisa ser traduzido. Isso inclui a nova tradução de conteúdo atualizado e a primeira tradução de conteúdo novo.
 
 A partir deste ponto, você [inicia e gerencia seu trabalho de tradução da mesma forma que fazia com o original.](translate-content.md#using-translation-project)
 
