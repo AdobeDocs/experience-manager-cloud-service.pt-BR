@@ -4,7 +4,7 @@ description: Saiba mais sobre as diferentes permissões e considerações de ACL
 feature: Content Fragments,GraphQL API
 exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
 source-git-commit: 526520a8d9d217d0861a7283b10f7b89dffaf9d5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '841'
 ht-degree: 100%
 
