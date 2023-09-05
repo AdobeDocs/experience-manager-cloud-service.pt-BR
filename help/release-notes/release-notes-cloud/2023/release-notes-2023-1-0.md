@@ -3,9 +3,9 @@ title: Notas de versão do [!DNL Adobe Experience Manager]  as a Cloud Service 2
 description: Notas de versão do [!DNL Adobe Experience Manager]  as a Cloud Service 2023.1.0.
 exl-id: f134fdbc-224b-404c-b20f-44cae8bad681
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '976'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ Assista ao vídeo de Visão geral da versão de janeiro de 2023 que exibe um res
 
 ### Novos recursos no [!DNL Assets] {#assets-features}
 
-* Os relatórios de ativos agora permitem que os administradores [gerem relatórios de download de ativos](/help/assets/asset-reports.md) por meio da implantação do Experience Manager Assets as a Cloud Service. Esses dados capacitam ainda mais os administradores a obter insights das principais métricas de sucesso para medir a adoção de ativos na sua empresa e por clientes.
+* Os relatórios de ativos agora permitem que os administradores [gerem relatórios de download de ativos](/help/assets/asset-reports.md) por meio da implantação do Experience Manager Assets as a Cloud Service. Esses dados capacitam ainda mais os(as) admins a obter insights sobre as principais métricas de sucesso e medir a adoção de ativos em sua empresa e pelos clientes.
 
   ![Representação de PDF para outros formatos](/help/release-notes/assets/choose_report.png)
 
