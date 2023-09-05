@@ -6,15 +6,15 @@ feature: Asset Compute Microservices,Workflow,Release Information,Asset Processi
 role: Architect,Admin
 exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '850'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # Visão geral da assimilação e processamento de ativos com microsserviços de ativos {#asset-microservices-overview}
 
-Adobe Experience Manager as a [!DNL Cloud Service] O fornece um método nativo em nuvem para usar aplicativos e recursos do Experience Manager. Um dos principais elementos dessa nova arquitetura é a assimilação e processamento de ativos, possibilitadas por microsserviços de ativos. Os microsserviços de ativos fornecem um processamento escalável e resiliente de ativos usando serviços em nuvem. A Adobe gerencia os serviços em nuvem para obter o tratamento ideal de diferentes tipos de ativos e opções de processamento. Os principais benefícios dos microsserviços de ativos nativos da nuvem são:
+O Adobe Experience Manager as a [!DNL Cloud Service] fornece um método nativo da nuvem para usar os aplicativos e os recursos do Experience Manager. Um dos principais elementos dessa nova arquitetura é a assimilação e processamento de ativos, possibilitadas por microsserviços de ativos. Os microsserviços de ativos fornecem um processamento escalável e resiliente de ativos usando serviços em nuvem. A Adobe gerencia os serviços em nuvem para obter o tratamento ideal de diferentes tipos de ativos e opções de processamento. Os principais benefícios dos microsserviços de ativos nativos da nuvem são:
 
 * Arquitetura escalável que permite um processamento contínuo de operações com uso intenso de recursos.
 * Indexação e extrações de texto eficientes que não afetam o desempenho de seus ambientes do Experience Manager.
