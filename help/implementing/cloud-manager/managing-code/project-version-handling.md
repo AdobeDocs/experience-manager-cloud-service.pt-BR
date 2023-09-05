@@ -3,9 +3,9 @@ title: Manuseio da versão do projeto Maven
 description: Para implantações de preparo e produção do AEM as a Cloud Service, o Cloud Manager gera uma versão exclusiva com incremento numérico.
 exl-id: 658bcbed-0733-45da-a3e3-9a5f817099c5
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '264'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 85%
 
 Para implantações de preparo e produção do AEM as a Cloud Service, o Cloud Manager gera uma versão exclusiva com incremento numérico
 
-Esta versão é vista no [página de detalhes de execução do pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) e a página de atividade. Quando uma compilação é executada, o projeto Maven é atualizado para usar a versão e uma tag é criada no repositório Git levando essa versão em seu nome.
+Essa versão é exibida na [página de detalhes de execução do pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) e na página de atividades. Quando uma compilação é executada, o projeto Maven é atualizado para usar a versão e uma tag é criada no repositório Git levando essa versão em seu nome.
 
 Se a versão original do projeto atender a determinados critérios, a versão atualizada do projeto Maven mesclará a versão original do projeto e a versão gerada pelo Cloud Manager. No entanto, a tag sempre usará a versão gerada. Para que essa mesclagem ocorra, a versão original do projeto deve ser formada com exatamente três segmentos de versão, por exemplo, `1.0.0` ou `1.2.3`, mas não `1.0` ou `1`, e a versão original não deve terminar em `-SNAPSHOT`.
 
