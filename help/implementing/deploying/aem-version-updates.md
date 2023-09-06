@@ -3,7 +3,7 @@ title: Atualizações de versão do AEM
 description: Saiba como o AEM as a Cloud Service usa integração e entrega contínuas (CI/CD) para manter seus projetos na versão mais recente.
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: ca91e969014415e872ecf8e42fe86ffc9ca41e10
+source-git-commit: 7cdbda468221c42325a957131c6817c9f85a574a
 workflow-type: tm+mt
 source-wordcount: '801'
 ht-degree: 9%
@@ -55,28 +55,22 @@ Da mesma forma, se uma atualização automatizada de um ambiente de desenvolvime
 
 ## Práticas recomendadas {#best-practices}
 
-* 
-   * **Uso do ambiente de preparo**
-   * Use um ambiente diferente (não Preparo) para ciclos longos de QA/UAT.
-   * Após a conclusão do teste de sanidade no preparo, mova para verificar na produção.
+* **Uso do ambiente de preparo**
+* Use um ambiente diferente (não Preparo) para ciclos longos de QA/UAT.
+* Após a conclusão do teste de sanidade no preparo, mova para verificar na produção.
 
-* 
-   * **Pipeline de produção**
-   * Pause antes de implantar na produção.
-   * Cancelar o pipeline depois que uma implantação de preparo indicar que o código é &quot;um descartável&quot; e não um candidato válido para produção, consulte [Configuração de um pipeline de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
+* **Pipeline de produção**
+* Pause antes de implantar na produção.
+* Cancelar o pipeline depois que uma implantação de preparo indicar que o código é &quot;um descartável&quot; e não um candidato válido para produção, consulte [Configuração de um pipeline de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
 
-* 
-   * **Pipelines de não produção**
+* **Pipelines de não produção**
 * Configurar [Pipeline de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code).
-* 
-   * Acelerar a velocidade/frequência de entrega para falhas de pipeline de produção.  Identifique problemas em pipelines de não produção ativando o Teste funcional do produto, o Teste funcional personalizado e o Teste de interface do usuário personalizada.
+* Acelerar a velocidade/frequência de entrega para falhas de pipeline de produção.  Identifique problemas em pipelines de não produção ativando o Teste funcional do produto, o Teste funcional personalizado e o Teste de interface do usuário personalizada.
 
-* 
-   * **Cópia de conteúdo**
-   * Uso [Cópia de conteúdo](/help/implementing/developing/tools/content-copy.md) para mover conjuntos de conteúdo semelhantes para um ambiente de não produção.
+* **Cópia de conteúdo**
+* Uso [Cópia de conteúdo](/help/implementing/developing/tools/content-copy.md) para mover conjuntos de conteúdo semelhantes para um ambiente de não produção.
 
-* 
-   * **Teste funcional automatizado**
+* **Teste funcional automatizado**
 * Inclua testes automatizados em seu pipeline para testar a funcionalidade crítica.
 * [Teste funcional do cliente](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) e [Testes de interface do usuário personalizados](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) estão bloqueando, se falharem, a liberação do AEM não será lançada.
 
