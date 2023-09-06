@@ -3,10 +3,10 @@ title: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud S
 description: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 325769d4a3b93502b0c6857e20911b05df34a24a
+source-git-commit: 6d0e3ee08862030e9eb7d068b251d13bc3e8e08f
 workflow-type: tm+mt
-source-wordcount: '1861'
-ht-degree: 14%
+source-wordcount: '1926'
+ht-degree: 13%
 
 ---
 
@@ -137,21 +137,23 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 * **[Tratamento de erros com manipuladores de erros personalizados no editor de regras](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)**: agora você pode chamar uma função personalizada em resposta a um erro retornado por um serviço externo e fornecer uma resposta personalizada para os usuários finais. Por exemplo, você pode acionar um fluxo de trabalho personalizado no back-end para códigos de erro específicos ou informar ao cliente que o serviço está inativo.
 
+* **[Versão de 64 bits do AEM Forms Designer](/help/forms/installing-configuring-designer.md)**: A versão de 64 bits do AEM Forms Designer oferece desempenho, escalabilidade e gerenciamento de memória aprimorados para potencializar a experiência de criação de formulários. Com a arquitetura de 64 bits, você pode executar projetos ainda maiores e mais complexos com facilidade, garantindo fluxos de trabalho de design ininterruptos e eficiência otimizada. Aumente os recursos de design de formulário e abrace o futuro do AEM Forms Designer com esta versão de última geração.
+
 
 ### Programa de adoção antecipada {#forms-early-adopter}
 
 * **[Protect seus documentos com as APIs DocAssurance (Parte das APIs de comunicação)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: As APIs do DocAssurance permitem proteger informações confidenciais, assinando e criptografando os documentos. Por meio da criptografia, o conteúdo de um documento é transformado em um formato ilegível, garantindo que somente usuários autorizados possam ter acesso. Essa camada fortificada de proteção não apenas protege dados valiosos de olhos não autorizados, mas também proporciona tranquilidade. As APIs de assinatura permitem que sua organização proteja a segurança e a privacidade dos documentos do Adobe PDF que distribui e recebe. Esse serviço usa assinaturas digitais e certificação para garantir que somente os recipients desejados possam alterar os documentos.
 
-Você pode conectar o Suporte ao Adobe para participar do programa de adoção antecipada das APIs DocAssurance.
+  Você pode conectar o Suporte ao Adobe para participar do programa de adoção antecipada das APIs DocAssurance.
 
-**Forms adaptável headless**: Uso [Forms adaptável headless](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=pt-BR) para permitir que os desenvolvedores criem, publiquem e gerenciem formulários interativos que possam ser acessados e interagidos por meio de APIs, em vez de uma interface gráfica tradicional. Os formulários adaptáveis headless ajudam a:
+* **[Forms adaptável headless](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=pt-BR)**: use o Headless Adaptive Forms para permitir que os desenvolvedores criem, publiquem e gerenciem formulários interativos que podem ser acessados e interagidos por meio de APIs, em vez de uma interface gráfica tradicional. Os formulários adaptáveis headless ajudam a:
 
-* criar formulários multicanal de alta qualidade na linguagem de programação de sua escolha
-* integrar formulários nativamente a seus aplicativos móveis e de desktop, sites e aplicativos de bate-papo
-* reutilizar os componentes de interface de sua propriedade com aplicativos de formulários
-* aproveitar o potencial do Adobe Experience Manager Forms
+   * criar formulários multicanal de alta qualidade na linguagem de programação de sua escolha
+   * integrar formulários nativamente a seus aplicativos móveis e de desktop, sites e aplicativos de bate-papo
+   * reutilizar os componentes de interface de sua propriedade com aplicativos de formulários
+   * aproveitar o potencial do Adobe Experience Manager Forms
 
-Você pode enviar um email para `aem-forms-headless@adobe.com` utilizando sua ID de email oficial para participar do programa de adoção antecipada.
+  Você pode enviar um email para `aem-forms-headless@adobe.com` utilizando sua ID de email oficial para participar do programa de adoção antecipada.
 
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}

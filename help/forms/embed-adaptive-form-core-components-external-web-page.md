@@ -4,9 +4,9 @@ description: Saiba como incorporar um formulário adaptável em uma página exte
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Developer
-source-git-commit: 496705937a01d99f988ba83f6d8984fc86dc8bfa
+source-git-commit: 6d0e3ee08862030e9eb7d068b251d13bc3e8e08f
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '979'
 ht-degree: 2%
 
 ---
@@ -99,14 +99,12 @@ Para incorporar o formulário adaptável:
 
 O formulário adaptável é incorporado na página da Web. Observe o seguinte no formulário adaptável incorporado:
 
-* O cabeçalho e o rodapé no formulário adaptável original não estão incluídos no formulário incorporado.
 * Rascunhos e formulários enviados estão disponíveis na guia Rascunhos e envios no Portal do Forms.
 * A ação de envio configurada no formulário adaptável original é retida no formulário incorporado.
 * As regras de formulário adaptáveis são mantidas e totalmente funcionais no formulário incorporado.
 * O direcionamento de experiência e os testes A/B configurados no formulário adaptável original não funcionam no formulário incorporado.
 * Se o Adobe Analytics estiver configurado no formulário original, os dados de análise serão capturados no servidor do Adobe Analytics. No entanto, não está disponível no relatório de análise do Forms.
-
-No Forms adaptável baseado em Componentes principais, as bibliotecas de clientes (ClientLibs) são incluídas e carregadas junto com os componentes Cabeçalho e Rodapé de um formulário. Assim, quando você incorpora um Forms adaptável baseado em Componentes principais a uma página da Web, ele sempre inclui o Cabeçalho e o Rodapé do formulário.
+* No Forms adaptável baseado em Componentes principais, as bibliotecas de clientes (ClientLibs) são incluídas e carregadas junto com os componentes Cabeçalho e Rodapé de um formulário. Assim, quando você incorpora um Forms adaptável baseado em Componentes principais a uma página da Web, ele sempre inclui o Cabeçalho e o Rodapé do formulário.
 
 ## Topologia de exemplo {#sample-topology}
 

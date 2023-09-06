@@ -2,9 +2,9 @@
 title: Utilização do reCAPTCHA no Adaptive Forms
 description: Saiba como configurar o serviço Google reCAPTCHA no Adaptive Forms.
 topic-tags: adaptive_forms, author
-source-git-commit: 58451648b120991a5e204044f8dd6aeeaf655d81
+source-git-commit: 6d0e3ee08862030e9eb7d068b251d13bc3e8e08f
 workflow-type: tm+mt
-source-wordcount: '1933'
+source-wordcount: '1930'
 ht-degree: 5%
 
 ---
@@ -13,15 +13,13 @@ ht-degree: 5%
 
 <span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
-| Aplica-se a | Link do artigo |
-| -------- | ---------------------------- |
-| Formulário adaptável baseado em componentes de base | Este artigo |
-| Formulário adaptável com base nos Componentes principais | [Clique aqui](/help/forms/captcha-adaptive-forms-core-components.md) |
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/captcha-adaptive-forms.html) |
 | AEM as a Cloud Service | Este artigo |
+| Aplica-se a | Formulário adaptável baseado em Componentes de base. <br> Para formulários adaptáveis com base nos Componentes principais, [Clique aqui](/help/forms/captcha-adaptive-forms-core-components.md). |
+
 
 O CAPTCHA (um teste de Turing público e completamente automatizado para diferenciar computadores e humanos) é um programa comumente usado em transações online para distinguir entre humanos e programas ou bots automatizados. O recurso apresenta um desafio e avalia a resposta do usuário para determinar se é um humano ou um bot interagindo com o site. O CAPTCHA impede que o usuário prossiga se o teste falhar e ajuda a tornar as transações online seguras, evitando que bots publiquem spam ou outro conteúdo mal-intencionado.
 
