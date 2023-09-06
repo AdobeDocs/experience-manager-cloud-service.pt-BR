@@ -2,26 +2,28 @@
 title: Utilização do reCAPTCHA no Adaptive Forms
 description: Saiba como configurar o serviço Google reCAPTCHA no Adaptive Forms.
 topic-tags: adaptive_forms, author
-source-git-commit: ad63083016f0f8c51ea336e37461562e61c02a8f
+source-git-commit: 58451648b120991a5e204044f8dd6aeeaf655d81
 workflow-type: tm+mt
-source-wordcount: '1932'
-ht-degree: 1%
+source-wordcount: '1933'
+ht-degree: 5%
 
 ---
 
-# Usar reCAPTCHA no Adaptive Forms{#using-reCAPTCHA-in-adaptive-forms}
+# Usar reCAPTCHA no Adaptive Forms {#using-reCAPTCHA-in-adaptive-forms}
 
-<span class="preview"> Esse é um recurso de pré-lançamento acessível por meio de nossa [canal de pré-lançamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
+| Aplica-se a | Link do artigo |
+| -------- | ---------------------------- |
+| Formulário adaptável baseado em componentes de base | Este artigo |
+| Formulário adaptável com base nos Componentes principais | [Clique aqui](/help/forms/captcha-adaptive-forms-core-components.md) |
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/captcha-adaptive-forms.html) |
 | AEM as a Cloud Service | Este artigo |
 
-<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-br) para [criação de um novo Forms adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
-
-CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart) é um programa comumente usado em transações on-line para distinguir entre humanos e programas ou bots automatizados. Ele representa um desafio e avalia a resposta do usuário para determinar se é um humano ou um bot interagindo com o site. Ele impede que o usuário continue se o teste falhar e ajuda a tornar as transações online seguras, impedindo que os bots publiquem spam ou fins mal-intencionados.
+O CAPTCHA (um teste de Turing público e completamente automatizado para diferenciar computadores e humanos) é um programa comumente usado em transações online para distinguir entre humanos e programas ou bots automatizados. O recurso apresenta um desafio e avalia a resposta do usuário para determinar se é um humano ou um bot interagindo com o site. O CAPTCHA impede que o usuário prossiga se o teste falhar e ajuda a tornar as transações online seguras, evitando que bots publiquem spam ou outro conteúdo mal-intencionado.
 
 [!DNL AEM Forms] suporte a reCAPTCHA no Adaptive Forms. Você pode usar o serviço reCAPTCHA pelo Google para implementar o CAPTCHA.
 
