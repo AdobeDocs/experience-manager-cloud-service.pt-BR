@@ -2,9 +2,9 @@
 title: Renderização do SPA e do servidor
 description: Usar a renderização do lado do servidor (SSR) no SPA pode acelerar o carregamento inicial da página e, em seguida, passar a renderização adicional para o cliente.
 exl-id: be409559-c7ce-4bc2-87cf-77132d7c2da1
-source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
+source-git-commit: 66c9e95f96c8ce181722488a34a175c80f6f917c
 workflow-type: tm+mt
-source-wordcount: '1486'
+source-wordcount: '1518'
 ht-degree: 0%
 
 ---
@@ -48,6 +48,10 @@ As seções a seguir detalham como o Adobe I/O Runtime pode ser usado para imple
 >A Adobe recomenda um espaço de trabalho do Adobe I/O Runtime separado por ambiente (preparo, produção, teste e assim por diante). Isso permite padrões típicos de SDLC (Systems Development Life Cycle, ciclo de vida de desenvolvimento de sistemas) com diferentes versões de um único aplicativo implantado em diferentes ambientes. Consulte [CI/CD para aplicativos do App Builder](https://developer.adobe.com/app-builder/docs/guides/deployment/ci_cd_for_firefly_apps/) para obter mais informações.
 >
 >Um espaço de trabalho separado não é necessário por instância (autor, publicação), a menos que haja diferenças na implementação em tempo de execução por tipo de instância.
+
+>[!NOTE]
+>
+>O Cloud Manager não oferece suporte à implantação no Adobe I/O Runtime. Como resultado, sua própria infraestrutura precisa ser configurada para implantar o código SSR na Adobe I/O Runtime.
 
 ## Configuração do renderizador remoto {#remote-content-renderer-configuration}
 
