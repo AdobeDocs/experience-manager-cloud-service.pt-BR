@@ -3,9 +3,9 @@ title: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud S
 description: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 6d0e3ee08862030e9eb7d068b251d13bc3e8e08f
+source-git-commit: 9da87302369331fb55c1c8036c5b22fa686b1be8
 workflow-type: tm+mt
-source-wordcount: '1926'
+source-wordcount: '1938'
 ht-degree: 13%
 
 ---
@@ -144,7 +144,9 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 * **[Protect seus documentos com as APIs DocAssurance (Parte das APIs de comunicação)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: As APIs do DocAssurance permitem proteger informações confidenciais, assinando e criptografando os documentos. Por meio da criptografia, o conteúdo de um documento é transformado em um formato ilegível, garantindo que somente usuários autorizados possam ter acesso. Essa camada fortificada de proteção não apenas protege dados valiosos de olhos não autorizados, mas também proporciona tranquilidade. As APIs de assinatura permitem que sua organização proteja a segurança e a privacidade dos documentos do Adobe PDF que distribui e recebe. Esse serviço usa assinaturas digitais e certificação para garantir que somente os recipients desejados possam alterar os documentos.
 
-  Você pode conectar o Suporte ao Adobe para participar do programa de adoção antecipada das APIs DocAssurance.
+
+  <br> Você pode enviar um email para `aem-forms-early-adopter-program@adobe.com` da sua ID de email oficial para participar do programa de adoção antecipada e solicitar acesso ao recurso para o seu ambiente.  <br>  <br>
+
 
 * **[Forms adaptável headless](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=pt-BR)**: use o Headless Adaptive Forms para permitir que os desenvolvedores criem, publiquem e gerenciem formulários interativos que podem ser acessados e interagidos por meio de APIs, em vez de uma interface gráfica tradicional. Os formulários adaptáveis headless ajudam a:
 
