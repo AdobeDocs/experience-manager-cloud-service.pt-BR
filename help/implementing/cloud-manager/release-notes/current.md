@@ -1,18 +1,19 @@
 ---
-title: Notas de versão do Cloud Manager 2023.9.0 no Adobe Experience Manager as a Cloud Service
-description: Estas são as notas de versão do Cloud Manager 2023.9.0 no AEM as a Cloud Service.
+title: Notas de versão do Cloud Manager 2023.8.0 no Adobe Experience Manager as a Cloud Service
+description: Estas são as notas de versão do Cloud Manager 2023.8.0 no AEM as a Cloud Service.
 feature: Release Information
-source-git-commit: dd52aef2f88cf64e8d9a32b1c8cafe4fcfbcb812
+exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
+source-git-commit: 3eee8a88b9945bb16be992d7157f9f7f3e816246
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 24%
+source-wordcount: '540'
+ht-degree: 37%
 
 ---
 
 
-# Notas de versão do Cloud Manager 2023.9.0 no Adobe Experience Manager as a Cloud Service {#release-notes}
+# Notas de versão do Cloud Manager 2023.8.0 no Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Esta página documenta as notas de versão do Cloud Manager 2023.9.0 no AEM as a Cloud Service.
+Esta página documenta as notas de versão do Cloud Manager 2023.8.0 no AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -20,11 +21,12 @@ Esta página documenta as notas de versão do Cloud Manager 2023.9.0 no AEM as a
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento do Cloud Manager versão 2023.9.0 no AEM as a Cloud Service é 7 de setembro de 2023. A próxima versão está planejada para 5 de outubro de 2023.
+A data de lançamento do Cloud Manager 2023.8.0 no AEM as a Cloud Service é 10 de agosto de 2023. A próxima versão está planejada para 14 de setembro de 2023.
 
 ## Novidades {#what-is-new}
 
-Esta versão é focada em correções de erros.
+* Ao configurar um conjunto de conteúdo para [copiar conteúdo,](/help/implementing/developing/tools/content-copy.md) [configurações sensíveis ao contexto](/help/implementing/developing/introduction/configurations.md) agora são permitidos em conjuntos de conteúdo na interface do usuário.
+* Aprimoramentos foram feitos para facilitar a compreensão e melhorar a exibição de mensagens de erro na interface do Cloud Manager.
 
 ## Programa de adoção antecipada {#early-adoption}
 
@@ -53,6 +55,12 @@ Interessado em testar o novo painel? Envie um email para `aem-lighthouse-pilot@a
 
 ## Correções de erros {#bug-fixes}
 
-* Quando um programa é excluído, qualquer pipeline associado em execução também é excluído, garantindo que o pipeline não seja designado incorretamente como status de falha.
-* Ocasionalmente, quando todas as etapas de uma execução de pipeline são &#39;concluídas&#39;, o status do pipeline é visto como &quot;em execução&quot;, fazendo parecer que está em um estado travado. Agora é visto como &#39;Concluído&#39;.
-* Para ramificações de repositório geradas usando o arquétipo do gerador de código, ocorre falha no pipeline de CI/CD.
+* O menu **Ambientes** agora fecha depois de acionar o modal **[Copiar conteúdo](/help/implementing/developing/tools/content-copy.md)**.
+* [Uma reexecução de pipeline](/help/implementing/cloud-manager/deploy-code.md#reexecute-deployment) não é mais permitida se a execução anterior não tiver um `commitId` definido no estado da fase de compilação.
+* Uma mensagem mais compreensível agora é exibida para erros raros quando um usuário clica em um pipeline nas telas **Atividade** ou **Pipeline**.
+* A variável `contentSetName` não estiver mais ausente nos logs e agora for fornecido nas entradas ao iniciar um [cópia de conteúdo](/help/implementing/developing/tools/content-copy.md) operação.
+* Em determinadas circunstâncias raras, não é mais possível iniciar duas execuções a partir do mesmo pipeline, levando a um estado de &quot;paralisação&quot;.
+* Quando um certificado expirar, os nomes de domínio e as listas de permissões de IP associados ao certificado não serão mais removidos do CDN.
+   * Nesses casos, o site continuará acessível.
+   * [](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)A interface do Cloud Manager fornecerá avisos antecipados mais visíveis de que o certificado SSL está prestes a expirar.
+* Um problema com o AEM perdendo o acesso a um endpoint de publicação foi corrigido em situações em que o Sites é adicionado como uma solução para um programa somente Assets.
