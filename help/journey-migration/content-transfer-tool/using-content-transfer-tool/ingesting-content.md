@@ -1,25 +1,25 @@
 ---
-title: Assimilar conteúdo no Target
-description: Saiba como usar a ferramenta Transferência de conteúdo para assimilar conteúdo do seu conjunto de migração em uma instância Cloud Service.
+title: Assimilar conteúdo no Cloud Service
+description: Saiba como usar o Cloud Acceleration Manager para assimilar conteúdo do seu conjunto de migração em uma instância do Cloud Service de destino.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: f7ffe727ecc7f1331c1c72229a5d7f940070c011
+source-git-commit: 382d1ed93e9545127ebb54641657db365886503d
 workflow-type: tm+mt
-source-wordcount: '1941'
-ht-degree: 11%
+source-wordcount: '1954'
+ht-degree: 8%
 
 ---
 
-# Assimilar conteúdo no Target {#ingesting-content}
+# Assimilar conteúdo no Cloud Service {#ingesting-content}
 
 ## Processo de assimilação na ferramenta Transferência de conteúdo {#ingestion-process}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion"
 >title="Ingestão de conteúdo"
->abstract="Ingestão refere-se à ingestão de conteúdo do conjunto de migração na instância de destino do Cloud Service. A ferramenta Transferência de conteúdo tem um recurso que oferece suporte a atualizações complementares de conteúdo diferencial, com o qual é possível transferir somente as alterações feitas desde a atividade de transferência de conteúdo anterior."
+>abstract="Assimilação refere-se à assimilação de conteúdo do conjunto de migração na instância do Cloud Service de destino. A ferramenta Transferência de conteúdo tem um recurso que oferece suporte a atualizações complementares de conteúdo diferencial, com o qual é possível transferir somente as alterações feitas desde a atividade de transferência de conteúdo anterior."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=pt-BR" text="Ingestão complementar"
 
-Siga as etapas abaixo para assimilar seu conjunto de migração da ferramenta Transferência de conteúdo:
+Siga as etapas abaixo para assimilar seu conjunto de migração usando o Cloud Acceleration Manager:
 
 >[!NOTE]
 >Você se lembrou de registrar um tíquete de suporte para esta assimilação? Consulte [Considerações importantes antes de usar a ferramenta Transferência de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#important-considerations) por essa e outras considerações para ajudar a tornar a assimilação bem-sucedida.
@@ -80,7 +80,7 @@ Siga as etapas abaixo para assimilar seu conjunto de migração da ferramenta Tr
    Additionally, click on **Customer Care** to log a ticket, as shown in the figure below. 
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-04.png)
-   
+
    Also, see [Important Considerations for Using Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#important-considerations) to learn more.
 
 1. Once the ingestion is complete, the status under **Author ingestion** updates to **FINISHED**.
@@ -181,4 +181,7 @@ As práticas recomendadas indicam que, se uma assimilação precisar ser executa
 
 ## O que vem a seguir {#whats-next}
 
-Depois de concluir a assimilação de conteúdo no Target, você poderá visualizar os logs de cada etapa (extração e assimilação) e procurar erros. Consulte [Visualização de logs para um conjunto de migração](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html) para saber mais.
+Quando a assimilação for bem-sucedida, a indexação do AEM será iniciada automaticamente. Consulte [Indexação após a migração do conteúdo](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/indexing-content.md) para obter mais informações.
+
+Depois de concluir a assimilação de conteúdo no Cloud Service, você pode visualizar os registros de cada etapa (extração e assimilação) e procurar erros. Consulte [Visualização de logs para um conjunto de migração](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md) para saber mais.
+
