@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: a635a727e431a73086a860249e4f42d297882298
+source-git-commit: 21db924a8d925f9964cc7af6743764c119208159
 workflow-type: tm+mt
-source-wordcount: '6436'
+source-wordcount: '6446'
 ht-degree: 0%
 
 ---
@@ -634,7 +634,7 @@ Por exemplo, você deseja adicionar uma função personalizada que calcula a ár
 
 Para criar uma biblioteca do cliente e adicioná-la ao repositório CRX, execute as seguintes etapas:
 
-1. Criar um clienteExecute as seguintes etapas na biblioteca. Para obter mais informações, consulte [Uso de bibliotecas do lado do cliente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
+1. Crie uma biblioteca do cliente. Para obter mais informações, consulte [Uso de bibliotecas do lado do cliente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
 1. No CRXDE, adicione uma propriedade `categories`com valor de tipo de string como `customfunction` para o `clientlib` pasta.
 
    >[!NOTE]
@@ -656,6 +656,10 @@ Para abrir um formulário no modo de edição, selecione um formulário e toque 
    [![Utilização de funções personalizadas para criar uma regra](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)
 
 1. Toque **[!UICONTROL Concluído]**. Sua função personalizada é adicionada.
+
+   >[!NOTE]
+   >
+   > Para chamar um modelo de dados de formulário do editor de regras usando funções personalizadas, [veja aqui](/help/forms/using-form-data-model.md#invoke-services-in-adaptive-forms-using-rules-invoke-services).
 
 #### Tipos suportados de declaração de função {#function-declaration-supported-types}
 

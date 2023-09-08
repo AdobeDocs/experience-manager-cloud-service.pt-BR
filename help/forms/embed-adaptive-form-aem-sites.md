@@ -5,9 +5,9 @@ description: Você pode usar o componente Forms - Incorporar para incorporar o A
 feature: Adaptive Forms
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: bb2ee07f8750c15959ecdaa65f0932b05edfcd39
+source-git-commit: d9dee0b5a070da6a19004c749f69c724fff9d967
 workflow-type: tm+mt
-source-wordcount: '3158'
+source-wordcount: '3177'
 ht-degree: 0%
 
 ---
@@ -259,6 +259,11 @@ Para converter um formulário adaptável na página AEM Sites em um fragmento de
 * **Usar idioma da página**: Use o local da página do AEM Sites em vez do local do Formulário adaptável. Essa opção só é aplicável para o Formulário adaptável (Foundation).
 * **Definir Foco no formulário**: selecione para definir o foco no primeiro campo do Formulário adaptável. Essa opção só é aplicável para o Formulário adaptável (Foundation).
 * **Tema**: selecione um tema que defina o estilo dos componentes do seu Formulário adaptável. O estilo inclui propriedades de aparência, como estilo da fonte, cor do plano de fundo, dimensões e alinhamento. Essa opção só é aplicável para o Formulário adaptável (Foundation).
+
+  >[!NOTE]
+  >
+  > Você pode usar o **Usar idioma da página**, **Definir Foco no formulário** e **Tema** opções somente para Formulário adaptável (Foundation).
+
 * **O formulário cobre toda a largura do quadro**: um quadro em linha (iframe) é um elemento de HTML que carrega um formulário adaptável para uma página do AEM Sites.
 
    * Se a variável **[!UICONTROL O formulário cobre toda a largura do quadro]** estiver marcada, um Formulário adaptável ocupará toda a largura do container no qual ele é colocado. Nesse caso, um iframe não é usado para renderizar o formulário. O layout e o design de um Formulário adaptável se adaptam para abranger toda a largura do contêiner, tornando-o responsivo e capaz de se ajustar a diferentes tamanhos de tela. Essa opção permite incorporar vários Forms adaptáveis em uma página do AEM Sites.
