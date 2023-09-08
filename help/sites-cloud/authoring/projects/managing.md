@@ -135,7 +135,7 @@ Para inativar (ou ativar) um projeto:
 
    >[!NOTE]
    >
-   Talvez seja necessário adicionar esse bloco se ele ainda não estiver no projeto. Consulte [Adicionar blocos](#adding-items-to-a-tile).
+   >Talvez seja necessário adicionar esse bloco se ele ainda não estiver no projeto. Consulte [Adicionar blocos](#adding-items-to-a-tile).
 
 1. Toque/clique em **Editar**.
 1. Altere o seletor de **Ativo** para **Inativo** (ou vice-versa).

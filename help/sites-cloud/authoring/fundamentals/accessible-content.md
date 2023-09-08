@@ -73,7 +73,7 @@ Para gráficos estáticos, o requisito básico é o de proporcionar uma alternat
 >
 >Alguns componentes principais prontos para uso, como o **[Carrossel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html?lang=pt-BR)**, não fornecem um campo de **Texto alternativo** para adicionar descrições de texto alternativo a imagens individuais, embora exista o campo **Rótulo** (guia **[Acessibilidade](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html?lang=pt-BR#accessibility-tab)**) para o componente inteiro.
 >
-Ao implementar versões desses componentes para a instância do AEM, a equipe de desenvolvimento precisará configurá-los para oferecer compatibilidade com o atributo `alt`. Isso garante que os autores possam adicioná-lo ao conteúdo (consulte [Adicionar compatibilidade com elementos e atributos de HTML adicionais](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+>Ao implementar versões desses componentes para a instância do AEM, a equipe de desenvolvimento precisará configurá-los para oferecer compatibilidade com o atributo `alt`. Isso garante que os autores possam adicioná-lo ao conteúdo (consulte [Adicionar compatibilidade com elementos e atributos de HTML adicionais](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
 Por padrão, o AEM requer que o campo **Texto alternativo** seja preenchido. Se a imagem for meramente decorativa e um texto alternativo não for necessário, será possível marcar a opção **A imagem é decorativa**.
 
@@ -110,7 +110,7 @@ Tipos específicos de conteúdo não textual que necessitam de alternativas em t
 
 >[!NOTE]
 >
-Deve haver um nível adequado de contraste entre o plano de fundo e o texto de primeiro plano; isso é abordado com mais detalhes na seção [Contraste (Mínimo) (1.4.3)](#contrast-minimum).
+>Deve haver um nível adequado de contraste entre o plano de fundo e o texto de primeiro plano; isso é abordado com mais detalhes na seção [Contraste (Mínimo) (1.4.3)](#contrast-minimum).
 
 #### Mais informações - Conteúdo não contextual (1.1.1) {#more-information-non-text-content}
 
@@ -158,15 +158,15 @@ Fornecer essas informações em um formato diferente, como texto (ou áudio para
 
 >[!NOTE]
 >
-Se o conteúdo de áudio ou vídeo for fornecido como uma alternativa para um conteúdo que já existe em outro formato na mesma página da web, uma alternativa adicional pode não ser necessária.
+>Se o conteúdo de áudio ou vídeo for fornecido como uma alternativa para um conteúdo que já existe em outro formato na mesma página da web, uma alternativa adicional pode não ser necessária.
 >
-As orientações em [Entenda a WCAG 1.2.1](https://www.w3.org/WAI/WCAG21/Understanding/audio-only-and-video-only-prerecorded.html) fornecem mais informações.
+>As orientações em [Entenda a WCAG 1.2.1](https://www.w3.org/WAI/WCAG21/Understanding/audio-only-and-video-only-prerecorded.html) fornecem mais informações.
 
 Inserir multimídia em suas páginas da Web do AEM é semelhante à inserção de uma imagem. No entanto, como um conteúdo multimídia envolve muito mais do que uma imagem estática, há diversas configurações e opções para se controlar a maneira como essas mídias são reproduzidas.
 
 >[!NOTE]
 >
-Ao usar multimídia com um conteúdo informativo, é necessário criar também links para as alternativas. Por exemplo, para incluir uma transcrição de texto, crie uma página HTML para exibir a transcrição e, em seguida, adicione um link ao lado ou abaixo do conteúdo de áudio.
+>Ao usar multimídia com um conteúdo informativo, é necessário criar também links para as alternativas. Por exemplo, para incluir uma transcrição de texto, crie uma página HTML para exibir a transcrição e, em seguida, adicione um link ao lado ou abaixo do conteúdo de áudio.
 
 #### Mais informações - Apenas áudio e apenas vídeo (pré-gravado) (1.2.1) {#more-information-audio-only-and-video-only-prerecorded}
 
@@ -335,7 +335,7 @@ O AEM facilita a criação de um conteúdo da web semanticamente significativo u
 
   >[!NOTE]
   >
-  Por padrão, esses elementos e atributos não estão diretamente disponíveis, embora o administrador do sistema possa adicionar o suporte para esses valores na caixa de diálogo **Propriedades da tabela** (consulte [Adicionar suporte para outros elementos e atributos de HTML](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+  >Por padrão, esses elementos e atributos não estão diretamente disponíveis, embora o administrador do sistema possa adicionar o suporte para esses valores na caixa de diálogo **Propriedades da tabela** (consulte [Adicionar suporte para outros elementos e atributos de HTML](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
   Para abrir a caixa de diálogo **Tabela** onde é possível selecionar a guia **Propriedades da tabela**:
 
@@ -350,18 +350,18 @@ O AEM facilita a criação de um conteúdo da web semanticamente significativo u
 
      >[!NOTE]
      >
-     O RTE em uma instalação padrão do AEM está configurado para usar:
+     >O RTE em uma instalação padrão do AEM está configurado para usar:
      >
-     * `<b>` para `<strong>`
-     * `<i>` para `<em>`
+     >* `<b>` para `<strong>`
+     >* `<i>` para `<em>`
      >
-     Eles são efetivamente os mesmos, mas `<strong>` e `<em>` são preferíveis, pois são html semanticamente corretos. Sua equipe de desenvolvimento pode configurar o RTE para usar `<strong>` e `<em>` (em vez de `<b>` e `<i>`), ao desenvolver a instância do projeto.
+     >Eles são efetivamente os mesmos, mas `<strong>` e `<em>` são preferíveis, pois são html semanticamente corretos. Sua equipe de desenvolvimento pode configurar o RTE para usar `<strong>` e `<em>` (em vez de `<b>` e `<i>`), ao desenvolver a instância do projeto.
 
 * **Tabelas de dados complexos**: em alguns casos, quando há tabelas complexas com dois ou mais níveis de cabeçalhos, as propriedades básicas da tabela podem não ser suficientes para fornecer todas as informações estruturais necessárias. Para esses tipos de tabelas complexas, relações diretas precisam ser criadas entre os cabeçalhos e as suas células relacionadas usando os atributos **cabeçalho** e **id**.
 
   >[!NOTE]
   >
-  O atributo de ID não está disponível em uma instalação predefinida. Ele pode ser ativado configurando regras de HTML e o serializador no RTE.
+  >O atributo de ID não está disponível em uma instalação predefinida. Ele pode ser ativado configurando regras de HTML e o serializador no RTE.
 
   Por exemplo, na tabela abaixo os cabeçalhos e IDs são combinados para fazer uma associação programática para usuários de tecnologia assistiva.
 
@@ -396,7 +396,7 @@ O AEM facilita a criação de um conteúdo da web semanticamente significativo u
 
   >[!NOTE]
   >
-  Essa funcionalidade não está imediatamente disponível em uma instalação padrão. Ela requer a configuração do RTE, das regras de HTML e do serializador.
+  >Essa funcionalidade não está imediatamente disponível em uma instalação padrão. Ela requer a configuração do RTE, das regras de HTML e do serializador.
 
 #### Mais informações - Informações e Relações (1.3.1) {#more-information-info-and-relationships}
 
@@ -436,7 +436,7 @@ Da mesma maneira, informações que exigem a distinção entre sons diferentes (
 
 >[!NOTE]
 >
-Para os requisitos relacionados às alternativas de cor, consulte [Uso de cor](#use-of-color).
+>Para os requisitos relacionados às alternativas de cor, consulte [Uso de cor](#use-of-color).
 
 #### Como cumprir - Características sensoriais (1.3.3)       {#how-to-meet-sensory-characteristics}
 
@@ -447,7 +447,7 @@ Certifique-se de que todas as informações que dependem das características vi
 
 >[!NOTE]
 >
-A utilização de termos descritivos será aceitável se estes forem entendidos como relevantes em um contexto não visual. Por exemplo, usar as palavras *acima* e *abaixo* geralmente é aceitável, uma vez que implicam, respectivamente, em um conteúdo antes e depois de um determinado item do conteúdo. Isso ainda faria sentido se o conteúdo fosse falado em voz alta.
+>A utilização de termos descritivos será aceitável se estes forem entendidos como relevantes em um contexto não visual. Por exemplo, usar as palavras *acima* e *abaixo* geralmente é aceitável, uma vez que implicam, respectivamente, em um conteúdo antes e depois de um determinado item do conteúdo. Isso ainda faria sentido se o conteúdo fosse falado em voz alta.
 
 #### Mais informações - Características sensoriais (1.3.3)       {#more-information-sensory-characteristics}
 
@@ -466,7 +466,7 @@ A utilização de termos descritivos será aceitável se estes forem entendidos 
 
 >[!NOTE]
 >
-Esse critério de sucesso aborda especificamente a percepção da cor. Outras formas de percepção são abordadas na [Adaptável (1.3)](#adaptable), incluindo o acesso programático a cores e outras codificações de apresentação visual.
+>Esse critério de sucesso aborda especificamente a percepção da cor. Outras formas de percepção são abordadas na [Adaptável (1.3)](#adaptable), incluindo o acesso programático a cores e outras codificações de apresentação visual.
 
 #### Propósito - Utilização de cor (1.4.1)       {#purpose-use-of-color}
 
@@ -505,7 +505,7 @@ Portanto, é importante que o usuário possa desligar o som de fundo.
 
 >[!NOTE]
 >
-Ter controle do volume inclui a capacidade de reduzir seu volume para zero.
+>Ter controle do volume inclui a capacidade de reduzir seu volume para zero.
 
 #### Como cumprir - Controle de áudio (1.4.2) {#how-to-meet-audio-control}
 
@@ -527,7 +527,7 @@ Siga as orientações em [Como cumprir o Critério de sucesso 1.4.2](https://www
 
   >[!NOTE]
   >
-  Consulte [Compreensão do contraste não textual](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html) para obter mais informações e ajudar a garantir que os autores de conteúdo entendam os requisitos adicionais sobre elementos não textuais (incluindo ícones, elementos de interface, entre outros).
+  >Consulte [Compreensão do contraste não textual](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html) para obter mais informações e ajudar a garantir que os autores de conteúdo entendam os requisitos adicionais sobre elementos não textuais (incluindo ícones, elementos de interface, entre outros).
 
 #### Propósito - Contraste (Mínimo) (1.4.3)       {#purpose-contrast-minimum}
 
@@ -538,7 +538,7 @@ Indivíduos com certas deficiências visuais podem não conseguir distinguir ent
 
 >[!NOTE]
 >
-Textos usados exclusivamente para fins decorativos estão excluídos desse critério de sucesso.
+>Textos usados exclusivamente para fins decorativos estão excluídos desse critério de sucesso.
 
 #### Como cumprir - Contraste (Mínimo) (1.4.3)       {#how-to-meet-contrast-minimum}
 
@@ -550,17 +550,17 @@ Verifique se o texto está suficientemente contrastado com o plano de fundo. As 
 
 >[!NOTE]
 >
-Lembre-se de que as fontes podem divergir na forma como renderizam o tamanho equivalente de PT/PX/EM.
+>Lembre-se de que as fontes podem divergir na forma como renderizam o tamanho equivalente de PT/PX/EM.
 >
-Use o bom senso e prefira a legibilidade e a usabilidade ao selecionar as fontes e o tamanho apropriados para o conteúdo da Web.
+>Use o bom senso e prefira a legibilidade e a usabilidade ao selecionar as fontes e o tamanho apropriados para o conteúdo da Web.
 
 >[!NOTE]
 >
-Realize uma pesquisa na Web usando as seguintes frases para encontrar ferramentas que possam ajudá-lo a converter esses valores para outras unidades:
+>Realize uma pesquisa na Web usando as seguintes frases para encontrar ferramentas que possam ajudá-lo a converter esses valores para outras unidades:
 >
-* Calculadora de pixel para EM <!--  (https://www.omnicalculator.com/conversion/px-to-em) -->
-* Conversão de tamanho da fonte: porcentagem-em-rem-ponto-pixel <!-- CAUSES 404 ERROR DESPITE URL BEING CORRECT https://www.websemantics.uk/tools/ -->
-* Conversor de pixel para EM <!-- (https://www.w3schools.com/tags/ref_pxtoemconversion.asp) -->
+>* Calculadora de pixel para EM <!--  (https://www.omnicalculator.com/conversion/px-to-em) -->
+>* Conversão de tamanho da fonte: porcentagem-em-rem-ponto-pixel <!-- CAUSES 404 ERROR DESPITE URL BEING CORRECT https://www.websemantics.uk/tools/ -->
+>* Conversor de pixel para EM <!-- (https://www.w3schools.com/tags/ref_pxtoemconversion.asp) -->
 
 Para verificar as relações de contraste, use uma ferramenta de contraste de cores, como o [Color Contrast Analyzer do Paciello Group](https://www.tpgi.com/resources/contrast-analyser.html) ou o [Color Contrast Checker do WebAIM](https://webaim.org/resources/contrastchecker/). Essas ferramentas permitem verificar pares de cores e relatar quaisquer problemas de contraste.
 
@@ -602,7 +602,7 @@ Além de seguir as diretrizes em [Como atender aos critérios de sucesso 1.4.4](
 
 >[!NOTE]
 >
-Os logotipos (texto que faz parte de um logotipo ou nome de marca) são considerados essenciais.
+>Os logotipos (texto que faz parte de um logotipo ou nome de marca) são considerados essenciais.
 
 #### Propósito - Imagens de texto (1.4.5)       {#purpose-images-of-text}
 
@@ -738,7 +738,7 @@ Dependendo da natureza do conteúdo, você pode aplicar uma ou mais das seguinte
 
 >[!NOTE]
 >
-Como qualquer conteúdo que não cumpre este critério de sucesso pode interferir na capacidade de um usuário em utilizar a página inteira, todo o conteúdo da página da Web (quer seja ou não utilizado para cumprir outros critérios de sucesso) tem de cumprir este critério. Consulte o [Requisito de conformidade 5: não interferência](https://www.w3.org/TR/WCAG/#cc5).
+>Como qualquer conteúdo que não cumpre este critério de sucesso pode interferir na capacidade de um usuário em utilizar a página inteira, todo o conteúdo da página da Web (quer seja ou não utilizado para cumprir outros critérios de sucesso) tem de cumprir este critério. Consulte o [Requisito de conformidade 5: não interferência](https://www.w3.org/TR/WCAG/#cc5).
 
 #### Finalidade - Três flashes ou Abaixo do limite (2.3.1) {#purpose-three-flashes-or-below-threshold}
 
@@ -865,7 +865,7 @@ John Smith's publications
 
 >[!NOTE]
 >
-O trecho acima é uma ilustração; é recomendável usar o componente de **Imagem**.
+>O trecho acima é uma ilustração; é recomendável usar o componente de **Imagem**.
 
 Embora seja recomendado fornecer um texto de link que identifique a sua finalidade sem a necessidade de contexto adicional, nem sempre isso é possível. Link sem contexto podem ser usados nos casos a seguir e exemplos de HTML que podem ser encontrados em [Como atender ao critério de sucesso 2.4.4](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context).
 
@@ -983,7 +983,7 @@ No AEM, o idioma padrão da sua página é definido ao criar página, mas també
 
 >[!NOTE]
 >
-O AEM fornece mais ajustes para variações de um idioma raiz; por exemplo, inglês americano - en-us, inglês britânico - en-gb e inglês canadense - en-ca. Esse nível de detalhes é geralmente supérfluo para a tecnologia de assistência, embora possa ser usado para variações regionais no conteúdo da página.
+>O AEM fornece mais ajustes para variações de um idioma raiz; por exemplo, inglês americano - en-us, inglês britânico - en-gb e inglês canadense - en-ca. Esse nível de detalhes é geralmente supérfluo para a tecnologia de assistência, embora possa ser usado para variações regionais no conteúdo da página.
 
 #### Mais Informações - Idioma da Página (3.1.1) {#more-information-language-of-page}
 
@@ -1019,7 +1019,7 @@ O atributo `lang` pode ser utilizado para identificar alterações no idioma do 
 
 >[!NOTE]
 >
-Blocos de citação não são suportados em uma instância predefinida. Um componente personalizado pode ser desenvolvido para oferecer suporte ao recurso.
+>Blocos de citação não são suportados em uma instância predefinida. Um componente personalizado pode ser desenvolvido para oferecer suporte ao recurso.
 
 Da mesma forma, o navegador poderá processar uma palavra incomum ou frase corretamente se o elemento `span` for usado da seguinte maneira:
 
@@ -1029,7 +1029,7 @@ Da mesma forma, o navegador poderá processar uma palavra incomum ou frase corre
 
 >[!NOTE]
 >
-Não é necessário seguir este critério de sucesso ao incluir nomes ou cidades em diferentes idiomas, ou ao usar palavras de empréstimo ou frases que se tornaram comuns no idioma padrão (como *schadenfreude* em inglês).
+>Não é necessário seguir este critério de sucesso ao incluir nomes ou cidades em diferentes idiomas, ou ao usar palavras de empréstimo ou frases que se tornaram comuns no idioma padrão (como *schadenfreude* em inglês).
 
 Para adicionar o elemento span, com um idioma apropriado, você pode editar manualmente a sua marcação HTML no modo de edição de fonte da RTE para ser exibido como acima. Como alternativa, o atributo `lang` pode ser incluído na RTE pelo administrador do sistema (consulte [Adicionar suporte para elementos e atributos HTML adicionais](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 

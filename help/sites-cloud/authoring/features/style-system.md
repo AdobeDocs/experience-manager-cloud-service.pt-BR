@@ -120,7 +120,7 @@ Para que um componente funcione com o sistema de estilos do AEM e mostre a guia 
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
-Essa configuração aplica [sobreposições](/help/implementing/developing/introduction/overlays.md) por meio do [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md).
+>Essa configuração aplica [sobreposições](/help/implementing/developing/introduction/overlays.md) por meio do [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md).
 
 Com o componente configurado, os estilos configurados pelos(as) autores(as) da página são inseridos automaticamente pelo AEM no elemento de decoração que o AEM envolve automaticamente em torno de cada componente editável. O componente em si não precisa fazer mais nada para que isso aconteça.
 
@@ -134,11 +134,11 @@ A guia Editar pode ser incluída de maneira semelhante na guia Design:
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
-Essa configuração aplica [sobreposições](/help/implementing/developing/introduction/overlays.md) por meio do [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md).
+>Essa configuração aplica [sobreposições](/help/implementing/developing/introduction/overlays.md) por meio do [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md).
 
 >[!NOTE]
 >
-A guia Estilos na caixa de diálogo Editar não está habilitada por padrão.
+>A guia Estilos na caixa de diálogo Editar não está habilitada por padrão.
 
 ### Estilos com nomes de elemento  {#styles-with-element-names}
 
@@ -150,11 +150,11 @@ Essa propriedade é definida no nó `cq:Component`. Por exemplo:
 
 >[!CAUTION]
 >
-Evite definir nomes de elementos para estilos que podem ser combinados. Quando vários nomes de elemento são definidos, a ordem de prioridade é:
+>Evite definir nomes de elementos para estilos que podem ser combinados. Quando vários nomes de elemento são definidos, a ordem de prioridade é:
 >
-1. HTL tem precedência sobre tudo: `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
-1. Entre os vários estilos ativos, o primeiro estilo na lista de estilos configurados na política do componente é aplicado.
-1. Por fim, o `cq:htmlTag`/`cq:tagName` do componente é considerado um valor de fallback.
+>1. HTL tem precedência sobre tudo: `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
+>1. Entre os vários estilos ativos, o primeiro estilo na lista de estilos configurados na política do componente é aplicado.
+>1. Por fim, o `cq:htmlTag`/`cq:tagName` do componente é considerado um valor de fallback.
 >
 
 Essa capacidade de definir nomes de estilo é útil para componentes genéricos, como o container de layout ou o componente de fragmento de conteúdo, pois concede um significado adicional a eles.
