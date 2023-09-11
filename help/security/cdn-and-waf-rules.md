@@ -1,31 +1,30 @@
 ---
-title: Configuração de regras CDN e WAF para filtrar o tráfego
-description: Usar as regras de firewall do CDN e do aplicativo da Web para filtrar o tráfego mal-intencionado
-source-git-commit: 27165ce7d6259f5b5fc9915349d87f551076389e
+title: Configurar regras de filtro de tráfego (com regras do WAF)
+description: Usar regras de filtro de tráfego (com regras WAF) para filtrar o tráfego
+source-git-commit: dc0c7e77bb4bc5423040364202ecac3c59adced0
 workflow-type: tm+mt
-source-wordcount: '2391'
+source-wordcount: '2690'
 ht-degree: 2%
 
 ---
 
 
-# Configuração de regras CDN e WAF para filtrar o tráfego {#configuring-cdn-and-waf-rules-to-filter-traffic}
+# Configuração de regras de filtro de tráfego (com regras do WAF) para filtrar o tráfego {#configuring-cdn-and-waf-rules-to-filter-traffic}
 
 >[!NOTE]
 >
 >Esse recurso ainda não está disponível para o público geral. Para participar do programa de adoção antecipada em andamento, envie um email para **aemcs-waf-adopter@adobe.com**, incluindo o nome da organização e o contexto sobre o interesse no recurso.
 
-O Adobe tenta mitigar os ataques contra sites do cliente, mas pode ser útil filtrar proativamente as solicitações que correspondem a determinados padrões para que o tráfego mal-intencionado não chegue ao seu aplicativo. As possíveis abordagens incluem:
+O Adobe tenta mitigar os ataques contra sites do cliente, mas pode ser útil filtrar proativamente o tráfego que corresponde a determinados padrões, de modo que o tráfego mal-intencionado não chegue ao seu aplicativo. As possíveis abordagens incluem:
 
 * Módulos de camada do Apache, como `mod_security`
-* Configuração de regras que são implantadas na CDN por meio do pipeline de configuração do Cloud Manager.
+* Configuração das regras de filtro de tráfego implantadas na CDN por meio do pipeline de configuração do Cloud Manager
 
-Este artigo descreve a última abordagem, que oferece duas categorias de regras:
+Este artigo descreve a abordagem das regras de filtro de tráfego. A maioria dessas regras bloqueia ou permite solicitações com base nas propriedades da solicitação e nos cabeçalhos da solicitação, incluindo IP, caminhos e agente do usuário. Essas regras podem ser configuradas por todos os clientes do AEM as a Cloud Service Sites e do Forms.
 
-1. **Regras CDN**: bloqueia ou permite solicitações com base nas propriedades de solicitação e nos cabeçalhos de solicitação, incluindo IP, caminhos e agente do usuário. Essas regras podem ser configuradas por todos os clientes do AEM as a Cloud Service
-1. **WAF** Regras do (Web Application Firewall): bloqueiam solicitações que correspondem a vários padrões conhecidos por estarem associados ao tráfego mal-intencionado. Essas regras podem ser configuradas por clientes que licenciam o complemento WAF; entre em contato com a equipe de conta do Adobe para obter detalhes. Observe que nenhuma licença adicional é necessária durante o programa de adoção antecipada.
+Os clientes que licenciam o complemento WAF (Web Application Firewall) também podem configurar uma categoria adicional de regras chamada &quot;WAF traffic filter rules&quot; (ou regras WAF de filtro de tráfego). Essas regras do WAF bloqueiam solicitações que correspondem a vários padrões associados ao tráfego mal-intencionado. Entre em contato com a equipe de conta do Adobe para obter detalhes sobre como licenciar esse recurso futuro. Observe que nenhuma licença adicional é necessária durante o programa de adoção antecipada.
 
-Essas regras podem ser implantadas nos tipos de ambiente de nuvem de desenvolvimento, preparo e produção para programas de produção (não sandbox). O suporte a ambientes RDE estará disponível no futuro.
+As regras de filtro de tráfego podem ser implantadas em todos os tipos de ambiente de nuvem (RDE, desenvolvimento, preparo, produção) em programas de produção (que não sejam de sandbox).
 
 ## Configurar {#setup}
 
@@ -35,20 +34,26 @@ Essas regras podem ser implantadas nos tipos de ambiente de nuvem de desenvolvim
    config/
         cdn/
            cdn.yaml
-           _config.yaml
    ```
 
-1. `_config.yaml` A descreve alguns metadados sobre a configuração. O parâmetro &quot;kind&quot; deve ser definido como &quot;CDN&quot; e a versão deve ser definida como a versão do schema, que atualmente é &quot;1&quot;. Consulte o trecho abaixo:
+1. `cdn.yaml` deve conter metadados, bem como uma lista de regras de filtros de tráfego e regras do WAF.
 
    ```
    kind: "CDN"
    version: "1"
+   envType: "dev"
+   data:
+     trafficFilters:
+       rules:
+         ...
    ```
 
-   <!-- Two properties -- `envType` and `envId` -- may be included to limit the scope of the rules. The envType property may have values "dev", "stage", or "prod", while the envId property is the environment (e.g., "53245"). This approach is useful if it is desired to have a single configuration pipeline, even if some environments have different rules. However, a different approach could be to have multiple configuration pipelines, each pointing to different repositories or git branches. -->
+O parâmetro &quot;kind&quot; deve ser definido como &quot;CDN&quot; e a versão deve ser definida como a versão do schema, que atualmente é &quot;1&quot;. Veja mais exemplos abaixo.
 
-1. `cdn.yaml` deve incluir uma lista de regras CDN e regras WAF, conforme descrito nas seções abaixo
-1. Para corresponder às regras do WAF, o WAF deve ser ativado no Cloud Manager, conforme descrito abaixo, para os cenários de programa novos e existentes. Observe que uma licença separada deve ser adquirida para o WAF.
+
+<!-- Two properties -- `envType` and `envId` -- may be included to limit the scope of the rules. The envType property may have values "dev", "stage", or "prod", while the envId property is the environment (e.g., "53245"). This approach is useful if it is desired to have a single configuration pipeline, even if some environments have different rules. However, a different approach could be to have multiple configuration pipelines, each pointing to different repositories or git branches. -->
+
+1. Para configurar as regras do WAF, o WAF deve estar ativado no Cloud Manager, conforme descrito abaixo, para os cenários de programa novos e existentes. Observe que uma licença separada deve ser adquirida para o WAF.
 
    1. Para configurar o WAF em um novo programa, marque a opção **Proteção WAF-DDOS** caixa de seleção na **Segurança** conforme mostrado abaixo. Continue seguindo as etapas descritas em [Adicionar programa de produção](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) para criar seu programa
 
@@ -72,22 +77,47 @@ Essas regras podem ser implantadas nos tipos de ambiente de nuvem de desenvolvim
 
       >[!NOTE]
       >
-      >Você pode configurar e executar apenas um pipeline de configuração por ambiente.
+      > Os usuários devem estar conectados como Gerente de implantação para configurar ou executar esses pipelines.
+      > Além disso, você pode configurar e executar apenas um pipeline de configuração por ambiente.
 
    1. Selecione **Salvar**. Seu novo pipeline aparecerá no cartão de pipeline e poderá ser executado quando estiver pronto.
-   1. Para RDE, a linha de comando será usada, mas RDE não é compatível no momento.
+   1. Para RDEs, a linha de comando será usada, mas RDE não é compatível no momento.
 
-## Sintaxe de regras {#rules-syntax}
+## Sintaxe das regras de filtro de tráfego {#rules-syntax}
 
-O formato das regras é descrito abaixo, seguido por alguns exemplos em uma seção subsequente.
+Você pode configurar `traffic filter rules` para corresponder a padrões como IPs, agente de usuário, cabeçalhos de solicitação, nome do host, localização geográfica e url.
 
-| **Propriedade** | **Regras CDN** | **Regras do WAF** | **Tipo** | **Valor padrão** | **Descrição** |
+Os clientes que licenciam a oferta do WAF também podem configurar uma categoria especial de regras de filtro de tráfego chamada `WAF traffic filter rules` (ou regras WAF para abreviar) que fazem referência a um ou mais sinalizadores WAF, que estão listados em sua própria seção abaixo.
+
+Este é um exemplo de um conjunto de regras de filtro de tráfego, que também inclui uma regra do WAF.
+
+```
+kind: "CDN"
+version: "1"
+envType: "dev"
+data:
+  trafficFilters:
+    rules:
+      - name: "path-rule"
+        when: { reqProperty: path, equals: /block-me }
+        action: 
+          type: block
+      - name: "Enable-SQL-Injection-and-XSS-waf-rules-globally"
+        when: { reqProperty: path, like: "*" }
+        action:
+          type: block
+          wafFlags: [ SQLI, XSS]
+```
+
+O formato das regras de filtro de tráfego no arquivo cdn.yaml é descrito abaixo. Veja alguns exemplos em uma seção posterior.
+
+
+| **Propriedade** | **Maioria das regras de filtro de tráfego** | **Regras de filtro de tráfego do WAF** | **Tipo** | **Valor padrão** | **Descrição** |
 |---|---|---|---|---|---|
 | name | X | X | `string` | - | Nome da regra (64 caracteres de comprimento, pode conter apenas alfanuméricos e - ) |
 | quando | X | X | `Condition` | - | A estrutura básica é:<br><br>`{ <getter>: <value>, <predicate>: <value> }`<br><br>Consulte Sintaxe de estrutura de condição abaixo, que descreve os getters, predicados e como combinar várias condições. |
-| ação | X | X | `Enum` | log (regras CDN) | Para regras CDN: permitir, bloquear, registrar. O padrão é log.<br><br>Para regras WAF: `enableWafRules`, `disableWafRules`, log. Nenhum padrão. |
+| ação | X | X | `Action` | log | log, permitir, bloquear, log ou objeto de ação O padrão é log |
 | rateLimit | X |   | `RateLimit` | não definido | Configuração de limitação de taxa. A limitação de taxa está desabilitada se não estiver definida.<br><br>Há uma seção separada mais abaixo que descreve a sintaxe rateLimit, juntamente com exemplos. |
-| wafRules |   | X | `array[Enum]` | - | Lista de regras do WAF que devem ser ativadas ou desativadas.<br><br>Os exemplos incluem SQLI e XSS. Consulte a lista de regras waf abaixo para obter uma lista completa. |
 
 ### Estrutura de condição {#condition-structure}
 
@@ -113,7 +143,7 @@ Um Grupo de condições é composto por várias Condições simples e/ou de grup
     - { <getter>: <value>, <predicate>: <value> }
 ```
 
-| **Propriedade** | **Tipo** | **Descrição** |
+| **Propriedade** | **Tipo** | **Significado** |
 |---|---|---|
 | **allOf** | `array[Condition]` | **e** operação. true se todas as condições listadas retornarem true |
 | **anyOf** | `array[Condition]` | **ou** operação. true se qualquer uma das condições listadas retornar true |
@@ -129,7 +159,7 @@ Um Grupo de condições é composto por várias Condições simples e/ou de grup
 
 **Predicado**
 
-| **Propriedade** | **Tipo** | **Descrição** |
+| **Propriedade** | **Tipo** | **Significado** |
 |---|---|---|
 | **igual** | `string` | true se o resultado de getter for igual ao valor fornecido |
 | **doesNotEqual** | `string` | true se o resultado de getter não for igual ao valor fornecido |
@@ -140,11 +170,25 @@ Um Grupo de condições é composto por várias Condições simples e/ou de grup
 | **em** | `array[string]` | true se a lista fornecida contiver o resultado getter |
 | **notIn** | `array[string]` | true se a lista fornecida não contiver o resultado getter |
 
-**Lista de regras waf**
+### Estrutura de ação {#action-structure}
 
-A variável `wafRules` propriedade pode incluir as seguintes regras:
+Especificado por `action` que pode ser uma string especificando o tipo de ação (permitir, bloquear, log) e assumindo valores padrão para todas as outras opções ou um objeto no qual o tipo de regra é definido por meio de `type` campo obrigatório junto com outras opções aplicáveis a esse tipo.
 
-| **ID da regra** | **Nome da regra** | **Descrição** |
+**Tipos de ação**
+
+As ações são priorizadas de acordo com seus tipos na tabela a seguir, que é ordenada para refletir a ordem em que as ações são executadas:
+
+| **Nome** | **Propriedades permitidas** | **Significado** |
+|---|---|---|
+| **permitir** | `wafFlags` (opcional) | se wafFlags não estiver presente, o interromperá o processamento de regras e continuará a fornecer a resposta. Se wafFlags estiver presente, ele desativará as proteções WAF especificadas e continuará o processamento de regras. |
+| **bloco** | `status, wafFlags` (opcional e mutuamente exclusivo) | se wafFlags não estiver presente, retorna o erro HTTP ignorando todas as outras propriedades, o código de erro é definido pela propriedade de status ou o padrão é 406. Se wafFlags estiver presente, ele ativa as proteções WAF especificadas e continua para o processamento de regras. |
+| **log** | `wafFlags` (opcional) | registra o fato de que a regra foi acionada, caso contrário, não afeta o processamento. wafFlags não tem efeito |
+
+### Lista de Sinalizadores do WAF {#waf-flags-list}
+
+A variável `wafFlag` propriedade pode incluir o seguinte:
+
+| **ID do sinalizador** | **Nome do sinalizador** | **Descrição** |
 |---|---|---|
 | SQLI | Injeção de SQL | A Injeção de SQL é a tentativa de obter acesso a um aplicativo ou obter informações privilegiadas executando consultas arbitrárias ao banco de dados. |
 | BACKDOOR | Backdoor | Um sinal backdoor é uma solicitação que tenta determinar se um arquivo backdoor comum está presente no sistema. |
@@ -181,7 +225,9 @@ A variável `wafRules` propriedade pode incluir as seguintes regras:
 
 * Se uma regra for correspondente e bloqueada, a CDN responderá com uma `406` código de retorno.
 
-## Exemplos {#examples}
+* Os arquivos de configuração não devem conter segredos, pois podem ser lidos por qualquer pessoa com acesso ao repositório Git
+
+## Exemplos de regras {#examples}
 
 Alguns exemplos de regras se seguem. Consulte a [seção limite de taxa](#rules-with-rate-limits) mais abaixo para exemplos de limitação de taxa.
 
@@ -190,11 +236,16 @@ Alguns exemplos de regras se seguem. Consulte a [seção limite de taxa](#rules-
 Esta regra bloqueia solicitações provenientes do IP 192.168.1.1:
 
 ```
+kind: "CDN"
+version: "1"
+envType: "dev"
 data:
-  rules:
-    - name: "block-request-from-ip"
-      when: { reqProperty: clientIp, equals: "192.168.1.1" }
-      action: block
+  trafficFilters:
+     rules:
+       - name: "block-request-from-ip"
+         when: { reqProperty: clientIp, equals: "192.168.1.1" }
+         action: 
+           type: block
 ```
 
 **Exemplo 2**
@@ -202,15 +253,20 @@ data:
 Essa regra bloqueia solicitações no caminho `/helloworld` ao publicar com um usuário-agente que contenha o Chrome:
 
 ```
+kind: "CDN"
+version: "1"
+envType: "dev"
 data:
-  rules:
-    - name: "block-request-from-chrome-on-path-helloworld-for-publish-tier"
-      when:
-        allOf:
-          - { reqProperty: path, equals: /helloworld }
-          - { reqProperty: tier, equals: publish }
-          - { reqHeader: user-agent, matches: '.*Chrome.*'  }
-      action: block
+  trafficFilters:
+     rules:
+       - name: "block-request-from-chrome-on-path-helloworld-for-publish-tier"
+         when: { reqProperty: clientIp, equals: "192.168.1.1" }
+           allOf:
+            - { reqProperty: path, equals: /helloworld }
+            - { reqProperty: tier, equals: publish }
+            - { reqHeader: user-agent, matches: '.*Chrome.*'  }
+           action: 
+             type: block
 ```
 
 **Exemplo 3**
@@ -218,14 +274,20 @@ data:
 Essa regra bloqueia solicitações que contêm o parâmetro de consulta `foo`, mas permite todas as solicitações provenientes do IP 192.168.1.1:
 
 ```
+kind: "CDN"
+version: "1"
+envType: "dev"
 data:
-  rules:
-    - name: "block-request-that-contains-query-parameter-foo"
-      when: { queryParam: url-param, equals: foo }
-      action: block
-    - name: "allow-all-requests-from-ip"
-      when: { reqProperty: clientIp, equals: 192.168.1.1 }
-      action: allow
+  trafficFilters:
+    rules:
+      - name: "block-request-that-contains-query-parameter-foo"
+        when: { queryParam: url-param, equals: foo }
+        action: 
+          type: block
+      - name: "allow-all-requests-from-ip"
+        when: { reqProperty: clientIp, equals: 192.168.1.1 }
+        action: 
+          type: allow
 ```
 
 **Exemplo 4**
@@ -233,18 +295,53 @@ data:
 Essa regra bloqueia solicitações para o caminho /block-me e bloqueia todas as solicitações que correspondam a um padrão SQLI ou XSS:
 
 ```
+kind: "CDN"
+version: "1"
+envType: "dev"
 data:
-  rules:
-    - name: "path-rule"
-      when: { reqProperty: path, equals: /block-me }
-      action: block
+  trafficFilters:
+    rules:
+      - name: "path-rule"
+        when: { reqProperty: path, equals: /block-me }
+        action: 
+          type: block
+      - name: "Enable-SQL-Injection-and-XSS-waf-rules-globally"
+        when: { reqProperty: path, like: "*" }
+        action:
+          type: block
+          wafFlags: [ SQLI, XSS]
+```
 
-    - name: "Enable-SQL-Injection-and-XSS-waf-rules-globally"
-      when: { reqProperty: path, like: "*" }
-      action: enableWafRules
-      wafRules:
-        - SQLI
-        - XSS
+**Exemplo 4**
+
+Essa regra bloqueia o acesso a países OFAC:
+
+```
+kind: "CDN"
+version: "1"
+envType: "dev"
+data:
+  trafficFilters:
+    rules:
+      - name: block-ofac-countries
+        when:
+          allOf:
+            - { reqProperty: tier, equals: publish }
+            - reqProperty: clientCountry
+              in:
+                - SY
+                - BY
+                - MM
+                - KP
+                - IQ
+                - CD
+                - SD
+                - IR
+                - LR
+                - ZW
+                - CU
+                - CI
+        action: block
 ```
 
 ## Regras com Limites de Taxa {#rules-with-rate-limits}
@@ -253,7 +350,7 @@ data:
 
 ### Estrutura rateLimit {#ratelimit-structure}
 
-| **Propriedade** | **Tipo** | **Valor padrão** | **Descrição** |
+| **Propriedade** | **Tipo** | **Padrão** | **SIGNIFICADO** |
 |---|---|---|---|
 | limite | número inteiro de 10 a 10000 | obrigatório | Taxa de solicitações em solicitações por segundo para as quais a regra é acionada |
 | janela | enumeração de inteiros: 1, 10 ou 60 | 10 | Janela de amostragem em segundos para a qual a taxa de solicitação é calculada |
@@ -261,49 +358,90 @@ data:
 
 ### Exemplos {#ratelimiting-examples}
 
-Exemplo 1: quando a taxa de solicitação exceder 100 solicitações por segundo nos últimos 60 segundos, bloquear `/critical/resource` por 60 segundos
+**Exemplo 1**
+
+Essa regra bloqueia um cliente para 5m quando ele excede 100 req/s nos últimos 60 segundos
 
 ```
-- name: rate-limit-example
-  when: { reqProperty: path, equals: /critical/resource }
-  action: block
-  rateLimit: { limit: 100, window: 60, penalty: 60 }
+kind: "CDN"
+version: "1"
+envType: "dev"
+data:
+  trafficFilters:
+    - name: limit-requests-client-ip
+      when:
+        reqProperty: path
+        like: '*'
+      rateLimit:
+        limit: 60
+        window: 10
+        penalty: 300
+        groupBy:
+          - reqProperty: clientIp
+      action: block
 ```
 
-Exemplo 2: quando a taxa de solicitação exceder 10 solicitações por segundo em 10 segundos, bloquear o recurso por 300 segundos:
+**Exemplo 2**
+
+Bloquear solicitações para 60s no caminho /crítico/recurso quando ele exceder 100 req/s nos últimos 60 segundos
 
 ```
-- name: rate-limit-using-defaults
-  when: { reqProperty: path, equals: /critical/resource }
-  action: block
-  rateLimit:
-    limit: 10
+kind: "CDN"
+version: "1"
+envType: "dev"
+data:
+  trafficFilters:
+    rules:
+      - name: rate-limit-example
+        when: { reqProperty: path, equals: /critical/resource }
+        action: 
+          type: block
+        rateLimit: { limit: 100, window: 60, penalty: 60 }
 ```
 
 ## Logs CDN {#cdn-logs}
 
 O AEM as a Cloud Service fornece acesso a logs de CDN, que são úteis para casos de uso, incluindo otimização da taxa de ocorrência do cache e configuração de regras de CDN e WAF. Os logs do CDN aparecem no Cloud Manager **Baixar logs** , ao selecionar o serviço Autor ou Publicar.
 
-O nome da regra é mostrado na propriedade rules se a solicitação corresponder à regra, mesmo se a ação for &quot;permitir&quot; e, portanto, o tráfego não for bloqueado.
+A propriedade &quot;rules&quot; descreve quais regras de filtro de tráfego são correspondidas e tem o seguinte padrão:
 
-As regras CDN correspondentes aparecem na entrada de log para todas as solicitações para o CDN, independentemente de ser uma ocorrência, transmissão ou erro de CDN. No entanto, as regras do WAF aparecem na entrada do log somente para solicitações ao CDN que são consideradas perdidas ou transmitidas pelo CDN, mas não para ocorrências de CDN.
+```
+"rules": "match=<matching-customer-named-rules-that-are-matched>,waf=<matching-WAF-rules>,action=<action_type>"
+```
 
-O exemplo abaixo mostra uma amostra `cdn.yaml` e duas entradas de log CDN, com valores não vazios na propriedade rules devido a solicitações bloqueadas que correspondem à regra CDN e à regra WAF, respectivamente.
+Por exemplo:
+
+```
+"rules": "match=Block-Traffic-under-private-folder,Enable-SQL-injection-everywhere,waf="SQLI,SANS",action=block"
+```
+
+As regras se comportam da seguinte maneira:
+
+* o nome de regra declarado pelo cliente de qualquer regra correspondente será listado no atributo matches.
+* o atributo action detalha se as regras tiveram o efeito de bloquear, permitir ou registrar
+* se o WAF estiver licenciado e ativado, o atributo waf listará quaisquer regras waf (por exemplo, SQLI; observe que isso é independente do nome declarado pelo cliente) que foram detectadas, independentemente das regras waf terem sido listadas na configuração.
+* se nenhuma regra declarada pelo cliente for correspondente e nenhuma regra waf for correspondente, a propriedade de atributo de regras ficará em branco.
+
+Em geral, as regras correspondentes aparecem na entrada de log para todas as solicitações para o CDN, independentemente de ser uma ocorrência, transmissão ou erro do CDN. No entanto, as regras do WAF aparecem na entrada do log somente para solicitações ao CDN que são consideradas perdidas ou transmitidas pelo CDN, mas não para ocorrências de CDN.
+
+O exemplo abaixo mostra um cdn.yaml de amostra e duas entradas de log CDN:
 
 
 ```
+kind: "CDN"
+version: "1"
+envType: "dev"
 data:
-  rules:
-    - name: "path-rule"
-      when: { reqProperty: path, equals: /block-me }
-      action: block
-
-    - name: "Enable-SQL-Injection-and-XSS-waf-rules-globally"
-      when: { reqProperty: path, like: "*" }
-      action: enableWafRules
-      wafRules:
-        - SQLI
-        - XSS
+  trafficFilters:
+    rules:
+      - name: "path-rule"
+        when: { reqProperty: path, equals: /block-me }
+        action: block
+      - name: "Enable-SQL-Injection-and-XSS-waf-rules-globally"
+        when: { reqProperty: path, like: "*" }
+        action:
+          type: block
+          wafFlags: [ SQLI, XSS ]
 ```
 
 ```
@@ -322,7 +460,7 @@ data:
 "status": 406,
 "res_age": 0,
 "pop": "PAR",
-"rules": "cdn=path-rule;waf=;action=blocked"
+"rules": "match=path-rule,action=blocked"
 }
 ```
 
@@ -342,7 +480,7 @@ data:
 "status": 406,
 "res_age": 0,
 "pop": "PAR",
-"rules": "cdn=;waf=SQLI;action=blocked"
+"rules": "match=Enable-SQL-Injection-and-XSS-waf-rules-globally,waf=SQLI,action=blocked"
 }
 ```
 
@@ -366,4 +504,4 @@ Veja abaixo uma lista dos nomes de campo usados em logs CDN, juntamente com uma 
 | *status* | O código do status HTTP como um valor inteiro. |
 | *res_age* | A quantidade de tempo (em segundos) que uma resposta foi armazenada em cache (em todos os nós). |
 | *pop* | Centro de dados do servidor de cache CDN. |
-| *regras* | O nome de qualquer regra correspondente, para regras CDN e regras waf.<br><br>As regras CDN correspondentes aparecem na entrada de log para todas as solicitações para o CDN, independentemente de ser uma ocorrência, transmissão ou erro de CDN.<br><br>Também indica se a correspondência resultou em um bloco. <br><br>Por exemplo, &quot;`cdn=;waf=SQLI;action=blocked`&quot;<br><br>Vazio se nenhuma regra for correspondente. |
+| *regras* | O nome de todas as regras correspondentes.<br><br>Também indica se a correspondência resultou em um bloco. <br><br>Por exemplo, &quot;`match=Enable-SQL-Injection-and-XSS-waf-rules-globally,waf=SQLI,action=blocked`&quot;<br><br>Vazio se nenhuma regra for correspondente. |
