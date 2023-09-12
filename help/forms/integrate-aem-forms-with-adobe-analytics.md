@@ -2,19 +2,22 @@
 title: Como integrar o AEM Forms com o Adobe Analytics?
 seo-title: Learn how to integrate AEM Forms with Adobe Analytics.
 exl-id: 0730432e-75b8-4b35-a377-ae4a2bee6c9f
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+hidefromtoc: true
+source-git-commit: d97b17981e82323317e34185e47ee3f4224795b3
 workflow-type: tm+mt
-source-wordcount: '1707'
+source-wordcount: '1743'
 ht-degree: 1%
 
 ---
 
-# Integrar com a [!DNL Adobe Analytics] {#integrate-aem-forms-with-adobe-analytics}
+# Integrar o AEM Forms com o [!DNL Adobe Analytics] {#integrate-aem-forms-with-adobe-analytics}
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html) |
 | AEM as a Cloud Service | Este artigo |
+
+<span class="preview"> Para obter uma integração perfeita e mais rápida dos Formulários adaptáveis com o Adobe Analytics, visite [Ativar o Adobe Analytics para um formulário adaptável usando a automação de configuração do Experience Cloud](/help/forms/forms-experience-cloud-setup-automation.md). </span>
 
 O AEM Forms integra-se com [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=en) para permitir que você capture e rastreie métricas de desempenho para seus formulários publicados. O objetivo por trás da análise dessas métricas é permitir que os usuários empresariais obtenham insights sobre o comportamento do usuário final e otimizem a experiência de captura de dados. Você pode capturar e rastrear o comportamento de usuários conectados e não conectados (anônimos) por meio do Adobe Analytics para Forms adaptável.
 
@@ -38,7 +41,7 @@ Você pode usar [!DNL Adobe Analytics] para descobrir padrões de interação e 
 
 * **Salvar**: Número de vezes que os usuários salvam um formulário no Portal do Forms.
 
-Além desses eventos prontos para uso, você pode definir eventos personalizados em formulários adaptáveis usando o editor de regras e mapear esses eventos para eventos no [!DNL Adobe Analytics]
+Além desses eventos prontos para uso, você pode definir eventos personalizados em formulários adaptáveis usando um editor de regras e mapear esses eventos para eventos no [!DNL Adobe Analytics]
 
 A figura a seguir ilustra as ações que devem ser executadas antes de exibir relatórios no [!DNL Adobe Analytics]:
 
@@ -75,7 +78,7 @@ Execute as seguintes etapas para configurar o AEM Forms e o [Adobe Analytics](ht
 
 ### Configurar elementos de dados {#configure-data-elements}
 
-Você pode selecionar qualquer um dos elementos de dados configurados em uma regra criada para um evento. Quando um evento ocorre em um formulário adaptável, o AEM Forms envia esses elementos de dados para o [!DNL Adobe Analytics].
+Você pode selecionar qualquer um dos elementos de dados configurados em uma regra criada para um evento. Quando um evento ocorre em um formulário adaptável, o AEM Forms envia esses elementos de dados para [!DNL Adobe Analytics].
 
 Após instalar o **[!UICONTROL Adobe Experience Manager Forms]** você poderá criar os seguintes elementos de dados:
 
@@ -167,7 +170,7 @@ Execute as seguintes etapas para criar regras com base na **[!UICONTROL Adobe Ex
 1. Selecionar **[!UICONTROL Limpar variáveis]** como o Tipo de ação. Toque **[!UICONTROL Manter alterações]**. Após executar essas etapas, a variável **[!UICONTROL Ações]** é exibida como:
    ![Configuração de ações](assets/actions-config.png)
 
-   Personalize o **[!UICONTROL Ações]** seção de acordo com suas necessidades. Por exemplo, você pode definir dois **Enviar sinal** etapas em um fluxo de Ações para enviar dados para o [!DNL Adobe Analytics] e trate-a como uma exibição de página em uma etapa e envie dados para [!DNL Adobe Analytics] e não a trate como uma exibição de página na segunda etapa.
+   Personalize o **[!UICONTROL Ações]** seção de acordo com suas necessidades. Por exemplo, você pode definir dois **Enviar sinal** etapas em um Fluxo de ação para enviar dados para [!DNL Adobe Analytics] e trate-a como uma exibição de página em uma etapa e envie dados para [!DNL Adobe Analytics] e não a trate como uma exibição de página na segunda etapa.
 
    ![Configuração de ações](assets/actions-config-2.png)
 
@@ -192,19 +195,19 @@ Execute as seguintes etapas para publicar a configuração:
 
 1. No **[!UICONTROL Desenvolvimento]** seção, toque em ![Mais opções](assets/more-options-icon.svg) e toque em **[!UICONTROL Aprovar e publicar na produção]**.
 
-1. Confirme as alterações e o fluxo de publicação será exibido em breve na **[!UICONTROL Publicado]** seção.
+1. Confirme se as alterações e o fluxo de publicação serão exibidos em breve no **[!UICONTROL Publicado]** seção.
 
 ![Fluxo de publicação](assets/publish-flow.png)
 
 ## 2. Configurar o AEM Forms {#configure-aem-forms}
 
-Antes de criar a configuração do Adobe Launch, crie um [Configuração do Adobe IMS usando o Adobe Launch como a solução em nuvem](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html).
+Antes de criar uma configuração do Adobe Launch, crie uma [Configuração do Adobe IMS usando o Adobe Launch como a solução em nuvem](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html).
 
 ### Criar configuração do Adobe Launch {#create-adobe-launch-configuration}
 
 Execute as seguintes etapas para criar uma configuração do Adobe Launch:
 
-1. Na instância do autor do AEM Forms, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Configurações do Adobe Launch]**.
+1. Na instância do autor do AEM Forms, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Configurações do Adobe Launch]**.
 
 1. Selecione uma pasta para criar a configuração e toque em **[!UICONTROL Criar]**.
 
@@ -222,7 +225,7 @@ Execute as seguintes etapas para criar uma configuração do Adobe Launch:
 
 ### Ativar [!DNL Adobe Analytics] para um formulário adaptável {#enable-analytics-adaptive-form}
 
-Para usar [!DNL Adobe Launch] em um Formulário adaptável existente:
+Para usar o [!DNL Adobe Launch] em um Formulário adaptável existente:
 
 1. Na instância do autor do AEM Forms, navegue até **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documentos]**.
 1. Selecione o Formulário adaptável e toque em **[!UICONTROL Propriedades]**.
@@ -234,11 +237,11 @@ Depois de habilitar [!DNL Adobe Analytics] para um formulário adaptável, é po
 
 ### Criar regras para capturar eventos personalizados (Opcional) {#capture-custom-events}
 
-Crie regras em campos específicos de um formulário adaptável usando o editor de regras para enviar dados do Analytics de um formulário adaptável para o [!DNL Adobe Analytics].
+Crie regras em campos específicos de um formulário adaptável usando um editor de regras para enviar dados do Analytics de um formulário adaptável para o [!DNL Adobe Analytics].
 
 Em um processo de dois estágios, você define uma regra em um campo em um formulário adaptável. A regra despacha um evento. O nome do evento é mapeado para um evento de captura personalizado no Adobe Launch.
 
-Para criar regras usando o editor de regras em um formulário adaptável:
+Para criar regras usando um editor de regras em um formulário adaptável:
 
 1. Toque no campo e selecione ![Editor de regras](assets/rule-editor-icon.svg) para abrir a página do editor de regras.
 1. Defina uma condição no campo [!UICONTROL Quando] seção da regra.
@@ -281,7 +284,7 @@ Depois de configurar um formulário adaptável para enviar dados do evento para 
 
 1. Toque ![Visualizações](assets/visualization-icon.svg) e solte um tipo de gráfico na seção Forma livre. Da mesma forma, você pode adicionar vários tipos de gráfico à seção Forma livre.
 
-1. Toque em Ctrl + S chaves e especifique um nome para salvar o projeto.
+1. Toque nas teclas Ctrl + S e especifique um nome para salvar o projeto.
 
 <!--
 

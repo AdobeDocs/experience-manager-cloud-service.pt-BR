@@ -1,9 +1,9 @@
 ---
 title: Ativar o Adobe Analytics para um formulário adaptável usando a automação de configuração do Experience Cloud
 description: A Automação de configuração do Experience Cloud ajuda a conectar o Adobe Analytics a um Formulário adaptável. Ele ajuda a rastrear e analisar a interação do usuário com um Formulário adaptável, oferecendo insights sobre as interações e o envolvimento do visitante.
-source-git-commit: 96b3986f73ab71bad02b00ddc699aeecd498aebd
+source-git-commit: c88f8f61cf54059b1d141d08b77983dd45edfaa6
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '1011'
 ht-degree: 0%
 
 ---
@@ -117,3 +117,5 @@ Execute as etapas listadas abaixo para ativar e configurar o Adobe Analytics par
 
 1. Clique em **Adobe Analytics** para exibir seu relatório e analisar dados de desempenho.
 
+
+Para conectar um formulário adaptável ao Adobe Analytics usando um método mais antigo, visite [Integrar o AEM Forms com o Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md).
