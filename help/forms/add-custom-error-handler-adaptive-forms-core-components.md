@@ -7,10 +7,10 @@ keywords: Adicionar um manipulador de erros personalizado, adicionar um manipula
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: a635a727e431a73086a860249e4f42d297882298
+source-git-commit: 1f6fd90b2a5772951c78275b395653bbd14bbd7b
 workflow-type: tm+mt
-source-wordcount: '2378'
-ht-degree: 1%
+source-wordcount: '2425'
+ht-degree: 2%
 
 ---
 
@@ -18,6 +18,11 @@ ht-degree: 1%
 # Manipuladores de erros no Adaptive Forms (Componentes principais) {#error-handlers-in-adaptive-form}
 
 <span class="preview"> Esse é um recurso de pré-lançamento acessível por meio de nossa [canal de pré-lançamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | Este artigo |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/add-custom-error-handler-adaptive-forms-core-components.html) |
 
 O AEM Forms fornece manipuladores de sucesso e erro prontos para uso para envios de formulários. Ele também fornece recursos para personalizar funções do manipulador de erros. Por exemplo, você pode acionar um fluxo de trabalho personalizado no back-end para códigos de erro específicos ou informar ao cliente que o serviço está inativo. Os manipuladores são funções do lado do cliente executadas com base na resposta do servidor. Quando um serviço externo é chamado usando APIs, os dados são transmitidos ao servidor para validação, o que retorna uma resposta ao cliente com informações sobre o evento bem-sucedido ou com erro para o envio. As informações são passadas como parâmetros para o manipulador relevante para executar a função. Um manipulador de erros ajuda a gerenciar e exibir erros ou problemas de validação encontrados.
 
@@ -400,3 +405,9 @@ The `var som_map` lists the SOM expression of the Adaptive Form fields that you 
 Using this custom error handler, the adaptive form converts the fields listed in `var som_map` to standard error message format. As a result, the validation error messages display at field-level in the adaptive form.
 
  -->
+
+## Informações adicionais {#additional-information}
+
+* [Criar um formulário adaptável independente baseado nos Componentes principais](/help/forms/creating-adaptive-form-core-components.md)
+* [Criar estilo ou temas para seus formulários](/help/forms/using-themes-in-core-components.md)
+* [Criar ou adicionar um formulário adaptável à página do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
