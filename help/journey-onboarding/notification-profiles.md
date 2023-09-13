@@ -4,10 +4,10 @@ description: Saiba como criar perfis de usuários no Admin Console para gerencia
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
-source-git-commit: 6764fe48068325dfb7ed84cf7834c7eb5f25fb48
+source-git-commit: afb20efe8ed078a508f828c5df4e079f99dfab21
 workflow-type: tm+mt
-source-wordcount: '970'
-ht-degree: 98%
+source-wordcount: '989'
+ht-degree: 96%
 
 ---
 
@@ -22,6 +22,10 @@ Periodicamente, a Adobe precisa entrar em contato com os usuários com relação
 
 * **Notificação de Incidente** - Estas notificações são enviadas durante um incidente ou quando a Adobe identificou um problema potencial de disponibilidade com seu ambiente do AEM as a Cloud Service.
 * **Notificação proativa** - Estas notificações são enviadas quando um membro da equipe de suporte da Adobe deseja fornecer orientação sobre uma possível otimização ou recomendação que pode beneficiar seu ambiente do AEM as a Cloud Service.
+
+>[!NOTE]
+>
+>Não há suporte para a atribuição de grupos à notificação proativa. Em vez disso, é necessário atribuir usuários aos perfis de produtos diretamente.
 
 Para que os usuários corretos recebam essas notificações, é necessário configurar e atribuir perfis de usuários conforme é descrito neste documento.
 
