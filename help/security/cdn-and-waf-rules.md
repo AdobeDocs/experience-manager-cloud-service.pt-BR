@@ -1,9 +1,9 @@
 ---
 title: Configurar regras de filtro de tráfego (com regras do WAF)
 description: Usar regras de filtro de tráfego (com regras WAF) para filtrar o tráfego
-source-git-commit: dc0c7e77bb4bc5423040364202ecac3c59adced0
+source-git-commit: b1b184b63ab6cdeb8a4e0019c31a34db59438a3d
 workflow-type: tm+mt
-source-wordcount: '2690'
+source-wordcount: '2709'
 ht-degree: 2%
 
 ---
@@ -41,7 +41,8 @@ As regras de filtro de tráfego podem ser implantadas em todos os tipos de ambie
    ```
    kind: "CDN"
    version: "1"
-   envType: "dev"
+   metadata:
+     envTypes: ["dev"]
    data:
      trafficFilters:
        rules:
@@ -94,13 +95,14 @@ Este é um exemplo de um conjunto de regras de filtro de tráfego, que também i
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
       - name: "path-rule"
         when: { reqProperty: path, equals: /block-me }
-        action: 
+        action:
           type: block
       - name: "Enable-SQL-Injection-and-XSS-waf-rules-globally"
         when: { reqProperty: path, like: "*" }
@@ -225,7 +227,7 @@ A variável `wafFlag` propriedade pode incluir o seguinte:
 
 * Se uma regra for correspondente e bloqueada, a CDN responderá com uma `406` código de retorno.
 
-* Os arquivos de configuração não devem conter segredos, pois podem ser lidos por qualquer pessoa com acesso ao repositório Git
+* Os arquivos de configuração não devem conter segredos, pois eles podem ser lidos por qualquer pessoa com acesso ao repositório Git.
 
 ## Exemplos de regras {#examples}
 
@@ -238,13 +240,14 @@ Esta regra bloqueia solicitações provenientes do IP 192.168.1.1:
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
      rules:
        - name: "block-request-from-ip"
          when: { reqProperty: clientIp, equals: "192.168.1.1" }
-         action: 
+         action:
            type: block
 ```
 
@@ -255,7 +258,8 @@ Essa regra bloqueia solicitações no caminho `/helloworld` ao publicar com um u
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
      rules:
@@ -265,7 +269,7 @@ data:
             - { reqProperty: path, equals: /helloworld }
             - { reqProperty: tier, equals: publish }
             - { reqHeader: user-agent, matches: '.*Chrome.*'  }
-           action: 
+           action:
              type: block
 ```
 
@@ -276,17 +280,18 @@ Essa regra bloqueia solicitações que contêm o parâmetro de consulta `foo`, m
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
       - name: "block-request-that-contains-query-parameter-foo"
         when: { queryParam: url-param, equals: foo }
-        action: 
+        action:
           type: block
       - name: "allow-all-requests-from-ip"
         when: { reqProperty: clientIp, equals: 192.168.1.1 }
-        action: 
+        action:
           type: allow
 ```
 
@@ -297,13 +302,14 @@ Essa regra bloqueia solicitações para o caminho /block-me e bloqueia todas as 
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
       - name: "path-rule"
         when: { reqProperty: path, equals: /block-me }
-        action: 
+        action:
           type: block
       - name: "Enable-SQL-Injection-and-XSS-waf-rules-globally"
         when: { reqProperty: path, like: "*" }
@@ -319,7 +325,8 @@ Essa regra bloqueia o acesso a países OFAC:
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -352,20 +359,22 @@ data:
 
 | **Propriedade** | **Tipo** | **Padrão** | **SIGNIFICADO** |
 |---|---|---|---|
-| limite | número inteiro de 10 a 10000 | obrigatório | Taxa de solicitações em solicitações por segundo para as quais a regra é acionada |
-| janela | enumeração de inteiros: 1, 10 ou 60 | 10 | Janela de amostragem em segundos para a qual a taxa de solicitação é calculada |
-| penalidade | número inteiro de 60 a 3600 | 300 (5 minutos) | Um período em segundos para o qual as solicitações correspondentes são bloqueadas (arredondado para o minuto mais próximo) |
+| limite | número inteiro de 10 a 10000 | obrigatório | Taxa de solicitações em solicitações por segundo para as quais a regra é acionada. |
+| janela | enumeração de inteiros: 1, 10 ou 60 | 10 | Janela de amostragem em segundos para a qual a taxa de solicitação é calculada. |
+| penalidade | número inteiro de 60 a 3600 | 300 (5 minutos) | Um período em segundos para o qual as solicitações correspondentes são bloqueadas (arredondado para o minuto mais próximo). |
+| groupBy | matriz[Getter] | nenhuma | o contador do limitador de taxa será agregado por um conjunto de propriedades de solicitação (por exemplo, clientIp). |
 
 ### Exemplos {#ratelimiting-examples}
 
 **Exemplo 1**
 
-Essa regra bloqueia um cliente para 5m quando ele excede 100 req/s nos últimos 60 segundos
+Essa regra bloqueia um cliente para 5m quando ele excede 100 req/s nos últimos 60 segundos:
 
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
     - name: limit-requests-client-ip
@@ -383,18 +392,19 @@ data:
 
 **Exemplo 2**
 
-Bloquear solicitações para 60s no caminho /crítico/recurso quando ele exceder 100 req/s nos últimos 60 segundos
+Bloquear solicitações para 60s no caminho /crítico/recurso quando ele exceder 100 req/s nos últimos 60 segundos:
 
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
       - name: rate-limit-example
         when: { reqProperty: path, equals: /critical/resource }
-        action: 
+        action:
           type: block
         rateLimit: { limit: 100, window: 60, penalty: 60 }
 ```
@@ -418,7 +428,7 @@ Por exemplo:
 As regras se comportam da seguinte maneira:
 
 * o nome de regra declarado pelo cliente de qualquer regra correspondente será listado no atributo matches.
-* o atributo action detalha se as regras tiveram o efeito de bloquear, permitir ou registrar
+* o atributo action detalha se as regras tiveram o efeito de bloquear, permitir ou registrar.
 * se o WAF estiver licenciado e ativado, o atributo waf listará quaisquer regras waf (por exemplo, SQLI; observe que isso é independente do nome declarado pelo cliente) que foram detectadas, independentemente das regras waf terem sido listadas na configuração.
 * se nenhuma regra declarada pelo cliente for correspondente e nenhuma regra waf for correspondente, a propriedade de atributo de regras ficará em branco.
 
@@ -430,7 +440,8 @@ O exemplo abaixo mostra um cdn.yaml de amostra e duas entradas de log CDN:
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -490,7 +501,7 @@ Veja abaixo uma lista dos nomes de campo usados em logs CDN, juntamente com uma 
 
 | **Nome do campo** | **Descrição** |
 |---|---|
-| *carimbo de data e hora* | A hora em que a solicitação foi iniciada, após o término do TLS |
+| *carimbo de data e hora* | A hora em que a solicitação foi iniciada, após o término do TLS. |
 | *ttfb* | Abreviação de *Tempo até o Primeiro Byte*. O intervalo de tempo entre a solicitação iniciada até o ponto antes do corpo da resposta começar a ser transmitido. |
 | *cli_ip* | O endereço IP do cliente. |
 | *cli_country* | Duas letras [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) código alfa-2 do país do cliente. |
