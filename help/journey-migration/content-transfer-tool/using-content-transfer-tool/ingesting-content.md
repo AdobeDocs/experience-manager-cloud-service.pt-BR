@@ -2,22 +2,22 @@
 title: Assimilar conteúdo no Cloud Service
 description: Saiba como usar o Cloud Acceleration Manager para assimilar conteúdo do seu conjunto de migração em uma instância do Cloud Service de destino.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 382d1ed93e9545127ebb54641657db365886503d
+source-git-commit: 5c482e5f883633c04d70252788b01f878156bac8
 workflow-type: tm+mt
-source-wordcount: '1954'
-ht-degree: 8%
+source-wordcount: '2142'
+ht-degree: 6%
 
 ---
 
 # Assimilar conteúdo no Cloud Service {#ingesting-content}
 
-## Processo de assimilação na ferramenta Transferência de conteúdo {#ingestion-process}
+## Processo de assimilação no Cloud Acceleration Manager {#ingestion-process}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion"
 >title="Ingestão de conteúdo"
 >abstract="Assimilação refere-se à assimilação de conteúdo do conjunto de migração na instância do Cloud Service de destino. A ferramenta Transferência de conteúdo tem um recurso que oferece suporte a atualizações complementares de conteúdo diferencial, com o qual é possível transferir somente as alterações feitas desde a atividade de transferência de conteúdo anterior."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=pt-BR" text="Ingestão complementar"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html#top-up-extraction-process" text="Extração complementar"
 
 Siga as etapas abaixo para assimilar seu conjunto de migração usando o Cloud Acceleration Manager:
 
@@ -42,50 +42,31 @@ Siga as etapas abaixo para assimilar seu conjunto de migração usando o Cloud A
    >As seguintes observações se aplicam à assimilação de conteúdo:
    > Se a origem foi do Autor, é recomendável assimilá-la no nível do Autor no destino. Da mesma forma, se a origem foi Publicar, o destino também deve ser Publicar.
    > Se a camada de destino for `Author`, a instância do autor é encerrada durante a duração da assimilação e fica indisponível para os usuários (por exemplo, autores ou qualquer pessoa que esteja executando a manutenção). O motivo é proteger o sistema e evitar quaisquer alterações que possam ser perdidas ou causar um conflito de assimilação. Confirme se sua equipe está ciente desse fato. Observe também que o ambiente parece hibernado durante a assimilação do autor.
-   > Você pode executar a etapa opcional de pré-cópia para acelerar significativamente a fase de assimilação. Consulte [Assimilar com AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) para obter mais detalhes.
+   > Você pode executar a etapa opcional de pré-cópia para acelerar significativamente a assimilação. Consulte [Assimilar com AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) para obter mais detalhes.
    > Se a assimilação com pré-cópia for usada (para S3 ou Azure Data Store), é recomendável executar a assimilação do autor primeiro sozinha. Isso acelera a Assimilação de publicação quando executada posteriormente.
    > As assimilações não são compatíveis com um destino de RDE (Rapid Development Environment, ambiente de desenvolvimento rápido) e não aparecem como uma possível opção de destino, mesmo que o usuário tenha acesso a ele.
 
    >[!IMPORTANT]
-   > Os seguintes avisos importantes se aplicam à assimilação de conteúdo:
    > Você pode iniciar uma assimilação no ambiente de destino somente se pertencer ao local **Administradores do AEM** grupo no serviço de autor do Cloud Service de destino. Se não conseguir iniciar uma assimilação, consulte [Não foi possível iniciar a assimilação](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) para obter mais detalhes.
-   > Se a configuração **Limpar** estiver ativada antes da assimilação, ela excluirá todo o repositório existente e criará um repositório no qual você poderá assimilar conteúdo. Esse workflow significa que redefine todas as configurações, incluindo permissões na instância do Cloud Service de destino. Essa redefinição também é verdadeira para um usuário administrador adicionado à variável **administradores** grupo. Você deve ser lido no grupo de administradores para iniciar uma assimilação.
+
+   * Escolha o `Wipe` value
+      * A variável **Limpar** define o ponto inicial do destino da assimilação. Se **Limpar** estiver ativado, o destino, incluindo todo o conteúdo, será redefinido para a versão do AEM especificada no Cloud Manager. Se não estiver ativado, o destino mantém o conteúdo atual como ponto de partida.
+      * Observe que essa opção não **NOT** afetam como a assimilação do conteúdo será realizada. A assimilação sempre usa uma estratégia de substituição de conteúdo e _não_ uma estratégia de mesclagem de conteúdo para que, em ambos **Limpar** e **Não-apagamento** nos casos, a assimilação de um conjunto de migração substituirá o conteúdo no mesmo caminho no destino. Por exemplo, se o conjunto de migração contiver `/content/page1` e o destino já contém `/content/page1/product1`, a assimilação removerá toda a `page1` caminho e suas subpáginas, incluindo `product1`e substitua-o pelo conteúdo no conjunto de migração. Isso significa que é necessário fazer um planejamento cuidadoso ao executar um **Não-apagamento** assimilação para um destino que contém qualquer conteúdo que deve ser mantido.
+
+   >[!IMPORTANT]
+   > Se a configuração **Limpar** estiver ativado para a assimilação, ele redefinirá todo o repositório existente, incluindo as permissões do usuário na instância do Cloud Service de destino. Essa redefinição também é verdadeira para um usuário administrador adicionado à variável **administradores** e esse usuário deverá ser adicionado ao grupo de administradores novamente para iniciar uma assimilação.
 
 1. Clique em **Assimilar**.
 
    ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam22.png)
 
-1. Em seguida, é possível monitorar a fase de assimilação na exibição de lista dos trabalhos de assimilação e usar o menu de ação da assimilação para exibir o log à medida que a assimilação avança.
+1. Em seguida, é possível monitorar a assimilação na exibição de lista dos Trabalhos de assimilação e usar o menu de ação da assimilação para exibir as durações e registrar o progresso da assimilação.
 
    ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23.png)
 
 1. Clique em **i)** botão na linha para obter mais informações sobre o trabalho de assimilação. É possível ver a duração de cada etapa da assimilação quando ela está em execução ou concluída clicando em **..** e clicando em **Exibir durações**. As informações da extração também são mostradas para perceber o que está sendo assimilado.
 
    ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23b.png)
-
-<!-- Alexandru: hiding temporarily, until it's reviewed 
-
-1. The **Migration Set ingestion** dialog box displays. Content can be ingested to either Author instance or Publish instance at a time. Select the instance to ingest content to. Click on **Ingest** to start the ingestion phase. 
-
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-02.png)
-
-   >[!IMPORTANT]
-   >If ingesting with pre-copy is used (for S3 or Azure Data Store), it is recommended to run Author ingestion first alone. This will speed up the Publish ingestion when it is run later. 
-
-   >[!IMPORTANT]
-   >When the **Wipe existing content on Cloud instance before ingestion** option is enabled, it deletes the entire existing repository and creates a new repository to ingest content into. This means that it resets all settings including permissions on the target Cloud Service instance. This is also true for an admin user added to the **administrators** group.
-
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-03.png)
-
-   Additionally, click on **Customer Care** to log a ticket, as shown in the figure below. 
-
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-04.png)
-
-   Also, see [Important Considerations for Using Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#important-considerations) to learn more.
-
-1. Once the ingestion is complete, the status under **Author ingestion** updates to **FINISHED**.
-
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-05.png) -->
 
 ## Ingestão complementar {#top-up-ingestion-process}
 
@@ -95,14 +76,14 @@ Siga as etapas abaixo para assimilar seu conjunto de migração usando o Cloud A
 >abstract="Use o recurso completar para mover o conteúdo modificado desde a atividade de transferência de conteúdo anterior. Após a conclusão da ingestão, verifique os logs em busca de erros/avisos. Todos os erros devem ser resolvidos imediatamente, seja resolvendo os problemas relatados ou entrando em contato com o Atendimento ao cliente da Adobe."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html" text="Exibir logs"
 
-A ferramenta Transferência de conteúdo tem um recurso que oferece suporte a *atualizações complementares* de conteúdo diferencial, com o qual é possível transferir somente as alterações feitas desde a atividade de transferência de conteúdo anterior.
+A ferramenta Transferência de conteúdo tem um recurso que permite a extração de conteúdo diferencial executando uma *complementar* do conjunto de migração. Isso permite que o conjunto de migração seja modificado para incluir somente o conteúdo que foi alterado desde a extração anterior, sem precisar extrair todo o conteúdo novamente.
 
 >[!NOTE]
->Após a transferência inicial do conteúdo, é recomendável fazer atualizações complementares frequentes de conteúdo diferencial para reduzir o período de congelamento de conteúdo para a transferência final de conteúdo diferencial antes de entrar online no Cloud Service. Se você tiver usado a etapa de pré-cópia para a primeira assimilação completa, poderá ignorar a pré-cópia para assimilações complementares subsequentes (se o tamanho do conjunto de migração complementar for menor que 200 GB). O motivo é que isso pode adicionar tempo a todo o processo.
+>Após a transferência inicial do conteúdo, é recomendável fazer atualizações complementares frequentes de conteúdo diferencial para reduzir o período de congelamento de conteúdo para a transferência final de conteúdo diferencial antes de entrar online no Cloud Service. Se você tiver usado a etapa de pré-cópia para a primeira assimilação, poderá ignorar a pré-cópia para assimilações complementares subsequentes (se o tamanho do conjunto de migração complementar for menor que 200 GB). O motivo é que isso pode adicionar tempo a todo o processo.
 
-Após concluir o processo de assimilação, para assimilar o conteúdo delta, você deve executar um [Extração complementar](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process)e, em seguida, use o método de assimilação complementar.
+Para assimilar conteúdo diferencial depois que algumas assimilações forem concluídas, execute um [Extração complementar](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process)e, em seguida, use o método de assimilação com a variável **Limpar** opção **desabilitado**. Leia as **Limpar** acima para evitar a perda de conteúdo que já está no destino.
 
-Comece criando uma tarefa de assimilação e verifique se **Limpar** O está desativado durante a fase de assimilação, conforme mostrado abaixo:
+Comece criando uma tarefa de assimilação e verifique se **Limpar** está desativado durante a assimilação, conforme mostrado abaixo:
 
 ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam24.png)
 
@@ -163,7 +144,7 @@ Uma causa comum de [Assimilação complementar](/help/journey-migration/content-
 
 Cada nó no AEM deve ter um uuid exclusivo. Esse erro indica que um nó que está sendo assimilado tem a mesma uuid que existe em outro lugar em um caminho diferente na instância de destino.
 Essa situação pode ocorrer se um nó for movido na origem entre uma extração e uma extração subsequente [Extração complementar](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process).
-Isso também pode acontecer se um nó no público-alvo for movido entre uma assimilação e uma assimilação complementar subsequente.
+Também pode acontecer se um nó no destino for movido entre uma assimilação e uma assimilação complementar subsequente.
 
 Este conflito deve ser resolvido manualmente. Alguém familiarizado com o conteúdo deve decidir qual dos dois nós deve ser excluído, tendo em mente outro conteúdo que faça referência a ele. A solução pode exigir que a extração complementar seja feita novamente sem o nó ofensivo.
 
@@ -172,11 +153,11 @@ Este conflito deve ser resolvido manualmente. Alguém familiarizado com o conte�
 Outra causa comum de uma [Assimilação complementar](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) falha é um conflito de versão para um determinado nó na instância de destino. Para identificar esse erro, baixe o log de assimilação usando a interface do Cloud Acceleration Manager e procure uma entrada como a seguinte:
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakIntegrity0001: não é possível excluir o nó referenciado: 8a2289f4-b904-4bd0-8410-15e41e0976a8
 
-Isso pode acontecer se um nó no destino for modificado entre uma assimilação e uma assimilação complementar subsequente, de modo que uma nova versão tenha sido criada. Se a assimilação tiver a opção &quot;incluir versões&quot; ativada, um conflito poderá ocorrer, pois o destino agora tem uma versão mais recente que está sendo referenciada pelo histórico de versões e outro conteúdo. O processo de assimilação não poderá excluir o nó de versão incorreto porque ele está sendo referenciado.
+Isso pode acontecer se um nó no destino for modificado entre uma assimilação e uma subsequente **Não-apagamento** assimilação, de modo que uma nova versão tenha sido criada. Se o conjunto de migração foi extraído com a opção &quot;incluir versões&quot; ativada, pode ocorrer um conflito, pois o destino agora tem uma versão mais recente que está sendo referenciada pelo histórico de versões e outro conteúdo. O processo de assimilação não poderá excluir o nó de versão incorreto porque ele está sendo referenciado.
 
 A solução pode exigir que a extração complementar seja feita novamente sem o nó ofensivo. Ou criar um pequeno conjunto de migração do nó incorreto, mas com a opção &quot;incluir versões&quot; desativada.
 
-As práticas recomendadas indicam que, se uma assimilação precisar ser executada com wipe=false e &quot;include versions&quot;=true, é fundamental que o conteúdo no destino seja modificado o mínimo possível, até que a jornada de migração seja concluída. Caso contrário, esses conflitos poderão ocorrer.
+As práticas recomendadas indicam que, se uma **Não-apagamento** a assimilação deve ser executada usando um conjunto de migração que inclua versões (ou seja, extraído com &quot;incluir versões&quot;=true). é fundamental que o conteúdo no destino seja modificado o mínimo possível, até que a jornada de migração seja concluída. Caso contrário, esses conflitos poderão ocorrer.
 
 
 ## O que vem a seguir {#whats-next}
@@ -184,4 +165,3 @@ As práticas recomendadas indicam que, se uma assimilação precisar ser executa
 Quando a assimilação for bem-sucedida, a indexação do AEM será iniciada automaticamente. Consulte [Indexação após a migração do conteúdo](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/indexing-content.md) para obter mais informações.
 
 Depois de concluir a assimilação de conteúdo no Cloud Service, você pode visualizar os registros de cada etapa (extração e assimilação) e procurar erros. Consulte [Visualização de logs para um conjunto de migração](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md) para saber mais.
-
