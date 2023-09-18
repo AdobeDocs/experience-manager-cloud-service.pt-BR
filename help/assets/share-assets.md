@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 49abc947db97de5ceb248383b556e77d4fc68060
 workflow-type: tm+mt
-source-wordcount: '1630'
-ht-degree: 4%
+source-wordcount: '1344'
+ht-degree: 5%
 
 ---
 
@@ -27,34 +27,6 @@ ht-degree: 4%
 * Compartilhar usando [[!DNL Adobe Asset Link]](https://www.adobe.com/br/creativecloud/business/enterprise/adobe-asset-link.html).
 * Compartilhar usando [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html).
 
-## Pré-requisitos {#prerequisites}
-
-Você precisa de privilégios de Administrador para [definir configurações para compartilhar ativos como um Link](#config-link-share-settings).
-
-## Definir configurações de compartilhamento de link {#config-link-share-settings}
-
-[!DNL Experience Manager Assets] permite definir as configurações padrão de compartilhamento de link.
-
-1. Clique em [!DNL Experience Manager] e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Assets]** > **[!UICONTROL Configuração de ativos]** > **[!UICONTROL Compartilhamento de link]**.
-1. Configurações iniciais:
-
-   * **Incluir originais:**
-
-      * Selecionar `Select Include Originals` para selecionar o `Include Originals` opção por padrão na caixa de diálogo compartilhamento de links.
-      * Especifique o comportamento escolhendo a opção apropriada para tornar o `Include Originals` opção editável, somente leitura ou oculta.
-   * **Incluir representações:**
-      * Selecionar `Select Include Renditions` opção para selecionar a variável `Include Renditions` opção por padrão na caixa de diálogo compartilhamento de links.
-      * Selecione o comportamento escolhendo a opção apropriada para tornar o `Include Renditions` opção editável, somente leitura ou oculta.
-
-1. Especifique o período de validade padrão para o link na `Validity Period` no campo `Expiration date` seção.
-
-1. **[!UICONTROL Compartilhamento de link]** botão na barra de ações:
-   * Todos os usuários com `jcr:modifyAccessControl` as permissões podem exibir a [!UICONTROL Compartilhamento de link] opção. É visível para todos os administradores por padrão. A variável [!UICONTROL Compartilhamento de link] fica visível para todos, por padrão. Você pode configurar o para exibir essa opção somente para os grupos definidos ou também pode negar essa opção para grupos específicos. Selecionar `Allow only for groups` se quiser permitir que grupos específicos exibam a variável `Share Link` opção. Selecionar `Deny from groups` para negar o `Share Link` de grupos específicos. Depois de selecionar qualquer uma dessas opções, especifique os nomes dos grupos usando `Select Groups` para adicionar os nomes de grupo que você precisa permitir ou negar.
-
-Para configurações relacionadas à Configuração de email, visite [Documentação do serviço de e-mail](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html)
-
-![Configurar serviço de e-mail](config-email-service.png)
-
 ## Compartilhar ativos como um link {#sharelink}
 
 O compartilhamento de ativos por meio de um link é uma maneira conveniente de disponibilizar os recursos para terceiros, profissionais de marketing e outros [!DNL Experience Manager] usuários. A funcionalidade permite que usuários anônimos acessem e baixem os ativos compartilhados com eles. Ao baixar ativos de um link compartilhado, [!DNL Experience Manager Assets] O usa um serviço assíncrono que oferece download mais rápido e ininterrupto. Os ativos a serem baixados são enfileirados em segundo plano em arquivos ZIP de tamanho de arquivo gerenciável. Para downloads grandes, o download é agrupado em vários arquivos de 100 GB por tamanho de arquivo.
@@ -70,12 +42,11 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 
 Há duas maneiras de compartilhar os ativos usando a funcionalidade de compartilhamento de link:
 
-1. Gerar um link compartilhado, [copiar e compartilhar o link do ativo](#copy-and-share-assets-link) com outros usuários.
-1. Gerar um link compartilhado e [compartilhar o link do ativo por email](#share-assets-link-through-email). Você pode modificar os valores padrão, como data e hora de expiração, e permitir o download dos ativos originais e suas representações. Você pode enviar emails para vários usuários adicionando seus endereços de email.
+1. Gerar um link compartilhado, [copiar e compartilhar o link do ativo](#copy-and-share-assets-link) com outros usuários. A hora de expiração padrão do link é de um dia. Não é possível alterar a hora de expiração ao compartilhar o link copiado com outros usuários.
 
-![Caixa de diálogo Compartilhamento de link](assets/share-link.png)
+1. Gerar um link compartilhado e [compartilhar o link do ativo por email](#share-assets-link-through-email). Nesse caso, você pode modificar os valores padrão, como data e hora de expiração, e permitir o download dos ativos originais e suas representações. Você pode enviar emails para vários usuários adicionando seus endereços de email.
 
-Em ambos os casos, você pode modificar os valores padrão, como data e hora de expiração, e permitir o download dos ativos originais e suas representações.
+   ![Caixa de diálogo Compartilhamento de link](assets/link-sharing-dialog.png)
 
 ### Copiar e compartilhar o link do ativo{#copy-and-share-asset-link}
 
@@ -84,9 +55,6 @@ Para compartilhar ativos como um URL público:
 1. Efetue logon no [!DNL Experience Manager Assets] e navegue até **[!UICONTROL Arquivos]**.
 1. Selecione os ativos ou a pasta que contém os ativos. Na barra de ferramentas, clique em **[!UICONTROL Compartilhar link]**.
 1. A variável **[!UICONTROL Compartilhamento de link]** aparece uma caixa de diálogo que contém um link de ativo gerado automaticamente na **[!UICONTROL Compartilhar link]** campo.
-1. Defina a data de expiração do link compartilhado conforme necessário.
-1. Em **[!UICONTROL Configurações de link]**, marcar ou desmarcar `Include Originals` ou `Include Renditions` para incluir ou excluir qualquer um dos dois. É obrigatório escolher pelo menos uma opção.
-1. Os nomes dos ativos selecionados aparecem na coluna direita do [!DNL Share Link] caixa de diálogo.
 1. Copie o link do ativo e compartilhe-o com os usuários.
 
 ### Compartilhar link de ativo por meio de notificação por email {#share-assets-link-through-email}
@@ -96,7 +64,7 @@ Para compartilhar ativos por email:
 1. Selecione os ativos ou a pasta que contém os ativos. Na barra de ferramentas, clique em **[!UICONTROL Compartilhar link]**.
 1. A variável **[!UICONTROL Compartilhamento de link]** aparece uma caixa de diálogo que contém um link de ativo gerado automaticamente na **[!UICONTROL Compartilhar link]** campo.
 
-   * Na caixa de endereço de email, digite o endereço de email do usuário com quem deseja compartilhar o link. Você pode compartilhar o link com vários usuários. Se o usuário for membro da organização, selecione o endereço de email nas sugestões exibidas na lista suspensa. No campo de texto endereço de email, digite o endereço de email do usuário com quem deseja compartilhar o link e clique em [!UICONTROL Enter]. Você pode compartilhar o link com vários usuários.
+   * Na caixa de endereço de email, digite a ID de email do usuário com quem deseja compartilhar o link. Você pode compartilhar o link com vários usuários. Se o usuário for membro da organização, selecione a ID de email dele nas sugestões exibidas na lista suspensa. Se o usuário for externo, digite a ID de email completa e pressione **[!UICONTROL Enter]**; a ID de e-mail é adicionada à lista de usuários.
 
    * No **[!UICONTROL Assunto]** digite um assunto para especificar a finalidade dos ativos compartilhados.
    * No **[!UICONTROL Mensagem]** digite uma mensagem, se necessário.
@@ -105,7 +73,7 @@ Para compartilhar ativos por email:
 
 1. Clique em **[!UICONTROL Compartilhar]**. Uma mensagem confirma que o link é compartilhado com os usuários. Os usuários recebem um email contendo o link compartilhado.
 
-![Email de compartilhamento de link](assets/link-sharing-email-notification.png)
+   ![Email de compartilhamento de link](assets/link-sharing-email-notification.png)
 
 ### Baixar ativos usando o link do ativo
 
@@ -125,7 +93,7 @@ Qualquer usuário com acesso ao link de ativo compartilhado pode baixar os ativo
 
   ![Baixar caixa de entrada](assets/link-sharing-download-inbox.png)
 
-* Quando o processamento estiver concluído, clique no link **[!UICONTROL Baixar]** botão para baixar o arquivo zip.
+* Quando o processamento for concluído, clique no link **[!UICONTROL Baixar]** botão para baixar o arquivo zip.
 
 <!--
 You can also copy the auto-generated link and share it with the users. The default expiration time for the link is one day.
@@ -223,7 +191,7 @@ As diferentes opções para compartilhar os ativos exigem configuração especí
 
 <!-- TBD: Web Console is not there so how to configure Day CQ email service? Or is it not required now? -->
 
-Para gerar o URL para ativos que você deseja compartilhar com os usuários, use a caixa de diálogo Compartilhamento de link. Usuários com privilégios de administrador ou com permissões de leitura em `/var/dam/share` Os locais podem exibir os links compartilhados com eles. O compartilhamento de ativos por meio de um link é uma maneira conveniente de disponibilizar recursos para terceiros sem que eles precisem primeiro fazer logon no [!DNL Assets].
+Para gerar o URL dos ativos que você deseja compartilhar com os usuários, use a caixa de diálogo Compartilhamento de link. Usuários com privilégios de administrador ou com permissões de leitura em `/var/dam/share` Os locais podem exibir os links compartilhados com eles. O compartilhamento de ativos por meio de um link é uma maneira conveniente de disponibilizar recursos para terceiros sem que eles precisem primeiro fazer logon no [!DNL Assets].
 
 >[!NOTE]
 >
@@ -234,13 +202,20 @@ Para gerar o URL para ativos que você deseja compartilhar com os usuários, use
 >* `[aem_server]:[port]/linkexpired.html`
 
 <!--
+## Configure Day CQ mail service {#configmailservice}
+
+Before you can share assets as links, configure the email service.
+
+1. Click or tap the Experience Manager logo, and then navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
 1. From the list of services, locate **[!UICONTROL Day CQ Mail Service]**.
-1. Click the **[!UICONTROL Edit]** icon beside the service, and configure the following parameters for **Day CQ Mail Service** with the details mentioned against their names:
+1. Click the **[!UICONTROL Edit]** icon beside the service, and configure the following parameters for **Day CQ Mail Service]** with the details mentioned against their names:
 
     * SMTP server host name: email server host name
     * SMTP server port: email server port
     * SMTP user: email server user name
     * SMTP password: email server password
+
+1. Click/tap **[!UICONTROL Save]**.
 -->
 
 <!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
