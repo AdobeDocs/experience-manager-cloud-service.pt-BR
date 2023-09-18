@@ -5,7 +5,7 @@ exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 source-git-commit: 5c482e5f883633c04d70252788b01f878156bac8
 workflow-type: tm+mt
 source-wordcount: '2142'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 6%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion"
->title="Ingestão de conteúdo"
->abstract="Assimilação refere-se à assimilação de conteúdo do conjunto de migração na instância do Cloud Service de destino. A ferramenta Transferência de conteúdo tem um recurso que oferece suporte a atualizações complementares de conteúdo diferencial, com o qual é possível transferir somente as alterações feitas desde a atividade de transferência de conteúdo anterior."
+>title="Assimilação de conteúdo"
+>abstract="Assimilação refere-se à assimilação de conteúdo do conjunto de migração na instância de destino do Cloud Service. A Ferramenta de Transferência de Conteúdo tem um recurso que permite conteúdo diferencial complementar, com o qual é possível transferir somente as alterações feitas desde a atividade de transferência de conteúdo anterior."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html#top-up-extraction-process" text="Extração complementar"
 
 Siga as etapas abaixo para assimilar seu conjunto de migração usando o Cloud Acceleration Manager:
