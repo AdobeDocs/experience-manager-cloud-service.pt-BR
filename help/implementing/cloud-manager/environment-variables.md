@@ -2,10 +2,10 @@
 title: Variáveis de ambiente do Cloud Manager
 description: As variáveis de ambiente padrão podem ser configuradas e gerenciadas por meio do Cloud Manager e fornecidas para o ambiente de tempo de execução, a ser usado na configuração do OSGi.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 15a53778e0934a1940efa5cc88467c20b4b67fe4
 workflow-type: tm+mt
-source-wordcount: '1014'
-ht-degree: 99%
+source-wordcount: '1016'
+ht-degree: 98%
 
 ---
 
@@ -118,7 +118,7 @@ As variáveis e os segredos comuns do ambiente podem ser usados nos ambientes de
 
 ### Dispatcher {#dispatcher}
 
-Somente variáveis de ambiente comuns podem ser usadas com o [Dispatcher.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR) Secretsnão podem ser usados.
+Somente variáveis de ambiente comuns podem ser usadas com o [Dispatcher.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR) Segredos não podem ser usados.
 
 No entanto, as variáveis de ambiente não podem ser usadas no `IfDefine` diretivas.
 
