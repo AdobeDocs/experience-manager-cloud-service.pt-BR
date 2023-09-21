@@ -1,10 +1,9 @@
 ---
-title: Adicionar compatibilidade a novas localidades a um Formulário adaptável
-description: O AEM Forms permite adicionar novas localidades para localizar formulários adaptáveis. Locais de inglês (en), espanhol (es), francês (fr), italiano (it), alemão (de), japonês (ja), português-brasileiro (pt-BR), chinês (zh-CN), chinês-Taiwan (zh-TW) e coreano (ko-KR).
-exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: 9a1bb716256b5e820723911f4e78a6a4c69d940c
+title: Como adicionar suporte para novas localidades a um formulário adaptável com base em componentes principais?
+description: O AEM Forms permite adicionar novas localidades para localizar formulários adaptáveis.
+source-git-commit: 23f915f0e2e33b9cf1313d15cb98a0a4f8243746
 workflow-type: tm+mt
-source-wordcount: '1352'
+source-wordcount: '1336'
 ht-degree: 1%
 
 ---
