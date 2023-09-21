@@ -3,9 +3,9 @@ title: Notas de versão do Cloud Manager 2023.9.0 no Adobe Experience Manager as
 description: Estas são as notas de versão do Cloud Manager 2023.9.0 no AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 8bf2ffe8b1d3780f4ad3f6972fea4f8281945abb
+source-git-commit: a5e8c11340ab5eacdefb22da302f9e35d9429bc7
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '443'
 ht-degree: 23%
 
 ---
@@ -55,6 +55,6 @@ Interessado em testar o novo painel? Envie um email para `aem-lighthouse-pilot@a
 
 ## Correções de erros {#bug-fixes}
 
-* Quando um programa é excluído, qualquer pipeline associado em execução também é excluído, garantindo que o pipeline não seja designado incorretamente como status de falha.
-* O botão Ativação concluída está desativado e informa ao usuário o motivo pelo qual um pipeline está em andamento.
-* Ocasionalmente, quando todas as etapas de uma execução de pipeline são &#39;concluídas&#39;, o status do pipeline é visto como &quot;em execução&quot;, fazendo parecer que está em um estado travado. Agora é visto como &#39;Concluído&#39;.
+* Quando um programa é excluído, qualquer pipeline associado em execução agora também é excluído.
+* Se um pipeline estiver em andamento, a variável **Enviar** botão do **Ativação concluída** agora a caixa de diálogo está desativada e informa ao usuário que a data de ativação não pode ser definida devido ao pipeline em execução.
+* Correção de um erro ocasional em que todas as etapas de execução de um pipeline eram marcadas como concluídas, mas o status do pipeline ainda estava em execução, dando a impressão de um estado travado.

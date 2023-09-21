@@ -2,19 +2,19 @@
 title: Uso de tags
 description: As tags são um método rápido e fácil de classificar conteúdo em um site
 exl-id: d2a9f578-fe0a-48ea-851c-2c84463661e0
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a7774ff75fb6bac55d5e931b13597d90bf8d721b
 workflow-type: tm+mt
 source-wordcount: '562'
-ht-degree: 71%
+ht-degree: 93%
 
 ---
 
 # Uso de tags   {#using-tags}
 
-As tags são um método rápido e fácil de classificar conteúdo em um site. As tags podem ser consideradas palavras-chave ou rótulos que podem ser anexados a uma página, um ativo ou outro conteúdo para permitir que as pesquisas localizem esse conteúdo e conteúdo relacionado.
+As tags são um método rápido e fácil de classificar conteúdo em um site. As tags podem ser consideradas palavras-chave ou rótulos que podem ser anexados a uma página, um ativo ou outro conteúdo para permitir que as pesquisas localizem esse conteúdo e outros relacionados.
 
-* Consulte Administração de tags para obter informações sobre como criar e gerenciar tags e sobre quais tags de conteúdo foram aplicadas. <!-- See [Administering Tags](/help/sites-administering/tags.md) for information about creating and managing tags, and to which content tags have been applied.-->
-* Consulte [Marcação para desenvolvedores](/help/implementing/developing/introduction/tagging-framework.md) para obter informações sobre a estrutura de marcação e incluir e estender tags em aplicativos personalizados.
+* Consulte [Administração de tags](/help/sites-cloud/administering/tags.md) para obter informações sobre como criar e gerenciar tags e às quais tags de conteúdo foram aplicadas.
+* Consulte [Marcação para desenvolvedores](/help/implementing/developing/introduction/tagging-framework.md) para obter informações sobre a estrutura de marcação e sobre como incluir e estender tags em aplicativos personalizados.
 
 ## Dez razões para usar marcação {#ten-reasons-to-use-tagging}
 
@@ -29,7 +29,7 @@ As tags são um método rápido e fácil de classificar conteúdo em um site. As
 1. **Consistência básica** - o sistema de marcação é um componente central do AEM e é usado por todos os recursos do AEM para categorizar o conteúdo. Além disso, a API de marcação está disponível para os desenvolvedores criarem aplicativos ativados para marcação com acesso às mesmas taxonomias.
 1. **Combina estrutura e flexibilidade** - AEM é ideal para trabalhar com informações estruturadas, devido ao aninhamento de páginas e caminhos. Ela é igualmente eficiente ao trabalhar com informações não estruturadas, devido à pesquisa integrada de texto completo. A marcação combina os pontos fortes da estrutura e da flexibilidade.
 
-Ao projetar a estrutura de conteúdo para um site e o esquema de metadados para ativos, considere a abordagem mais leve e acessível que a marcação oferece.
+Ao projetar a estrutura de conteúdo para um site e o esquema de metadados para ativos, considere a abordagem mais leve e acessível oferecida pela marcação.
 
 ## Aplicação de tags   {#applying-tags}
 
