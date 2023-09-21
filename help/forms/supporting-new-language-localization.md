@@ -2,22 +2,21 @@
 title: Adicionar compatibilidade a novas localidades a um Formulário adaptável
 description: O AEM Forms permite adicionar novas localidades para localizar formulários adaptáveis. Locais de inglês (en), espanhol (es), francês (fr), italiano (it), alemão (de), japonês (ja), português-brasileiro (pt-BR), chinês (zh-CN), chinês-Taiwan (zh-TW) e coreano (ko-KR).
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 9a1bb716256b5e820723911f4e78a6a4c69d940c
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: '1251'
 ht-degree: 1%
 
 ---
 
 # Suporte a novos locais para a localização adaptável do Forms {#supporting-new-locales-for-adaptive-forms-localization}
 
-<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-br) para [criação de um novo Forms adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html) |
-| AEM as a Cloud Service | Este artigo |
 
 O AEM Forms oferece suporte imediato para as localidades de inglês (en), espanhol (es), francês (fr), italiano (it), alemão (de), japonês (ja), português-brasileiro (pt-BR), chinês (zh-CN), chinês-Taiwan (zh-TW) e coreano (ko-KR). Você também pode adicionar suporte para mais locais, como Hindi(hi_IN).
 
@@ -31,7 +30,7 @@ A localização de formulários adaptáveis depende de dois tipos de dicionário
 
 ## Adicionar suporte para novas localidades {#add-support-for-new-locales}
 
-Execute o seguinte para adicionar suporte a uma nova localidade:
+Execute o seguinte para adicionar suporte a uma localidade:
 
 1. [Adicionar suporte de localização para localidades sem suporte](#add-localization-support-for-non-supported-locales)
 1. [Usar localidades adicionadas no Adaptive Forms](#use-added-locale-in-af)
@@ -40,7 +39,7 @@ Execute o seguinte para adicionar suporte a uma nova localidade:
 
 Atualmente, o AEM Forms oferece suporte à localização de conteúdo do Adaptive Forms em inglês (en), espanhol (es), francês (fr), italiano (it), alemão (de), japonês (ja), português-brasileiro (pt-BR), chinês (zh-CN), chinês-Taiwan (zh-TW) e coreano (ko-KR).
 
-Para adicionar suporte para um novo local no tempo de execução do Adaptive Forms:
+Para adicionar suporte a um local:
 
 1. [Clonar seu repositório](#clone-the-repository)
 1. [Adicionar uma localidade ao serviço GuideLocalizationService](#add-a-locale-to-the-guide-localization-service)
@@ -112,12 +111,12 @@ Antes de confirmar as alterações no repositório Git do AEM, é necessário ac
 
 #### 5. Confirme as alterações no repositório e implante o pipeline {#commit-changes-in-repo-deploy-pipeline}
 
-Confirme as alterações no repositório GIT após adicionar um novo suporte de localidade. Implante seu código usando o pipeline de pilha completa. Saiba mais [como configurar um pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) para adicionar novo suporte de local.
+Confirme as alterações no repositório GIT após adicionar um suporte de localidade. Implante seu código usando o pipeline de pilha completa. Saiba mais [como configurar um pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) para adicionar novo suporte de local.
 Quando o pipeline estiver concluído, o local recém-adicionado aparecerá no ambiente AEM.
 
 ### Usar local adicionado no Adaptive Forms {#use-added-locale-in-af}
 
-Execute as seguintes etapas para usar e renderizar um Formulário adaptável usando um local recém-adicionado:
+Execute as seguintes etapas para usar e renderizar um Formulário adaptável usando a localidade recém-adicionada:
 
 1. Faça logon na instância de autor do AEM.
 1. Ir para **Forms** >  **Forms e documentos**.
