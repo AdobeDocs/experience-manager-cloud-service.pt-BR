@@ -2,10 +2,10 @@
 title: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 8a1ed1e44db0154854af73a96339d8e416afd3b4
+source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
 workflow-type: tm+mt
-source-wordcount: '296'
-ht-degree: 43%
+source-wordcount: '295'
+ht-degree: 39%
 
 ---
 
@@ -17,7 +17,7 @@ A seção a seguir descreve as notas de versão técnicas para a versão de manu
 
 Veja abaixo um resumo das melhorias contínuas da versão de manutenção 13420, lançada publicamente em 12 de setembro de 2023. Esta versão de manutenção substitui a versão 13323.
 
-A Ativação de recursos 2023.9.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=pt-BR) para obter mais informações.
+A Ativação de Recurso 2023.9.0 fornece o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=pt-BR) para obter mais informações.
 
 ### Aprimoramentos {#enhancements-13420}
 
@@ -37,7 +37,7 @@ A Ativação de recursos 2023.9.0 fornecerá o conjunto completo de recursos par
 - ASSETS-25740: Correção de leitores de tela que não narravam o Nome e a função para controles de Edição/Corte na página &quot;Editar cortes inteligentes&quot; usando teclas de seta para baixo.
 - CQ-4354266: não é possível abrir itens da caixa de entrada.
 - CQ-4354347: atualizações das traduções do AEM.
-- DISP-1009: O usuário-agente como não primeiro cabeçalho elimina X-Forwarded-Host.
+- DISP-1009: O usuário-agente como cabeçalho não é removido pelo X-Forwarded-Host.
 - Várias correções relacionadas a acessibilidade e segurança.
 
 ### Problemas conhecidos {#known-issues-13420}
@@ -48,7 +48,7 @@ Nenhum.
 
 | Tecnologia | Versão | Link |
 |---|---|---|
-| AEM OAK | 1.54-T20230817132355-3800a65 | [API Oak API 1.54.0](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.54.0/index.html) |
+| AEM Oak | 1.54-T20230817132355-3800a65 | [API Oak API 1.54.0](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.54.0/index.html) |
 | API DO SLING DO AEM | Versão 2.27.2 | [API Apache Sling API 2.27.2](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | HTL do AEM | Versão 1.4.20-1.4.0 | [Especificação da linguagem de modelo HTML](https://github.com/adobe/htl-spec) |
 | Componentes principais do AEM | Versão 2.23.2 | [Componentes principais de WCM do AEM](https://github.com/adobe/aem-core-wcm-components) |

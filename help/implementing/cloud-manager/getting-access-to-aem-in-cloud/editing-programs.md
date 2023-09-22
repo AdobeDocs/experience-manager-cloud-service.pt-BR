@@ -2,10 +2,10 @@
 title: Programas de edição
 description: Saiba como editar os programas de sandbox e produção para ajustar as opções depois de criá-las.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 97%
+source-wordcount: '502'
+ht-degree: 50%
 
 ---
 
@@ -13,9 +13,9 @@ ht-degree: 97%
 
 Os usuários com as permissões necessárias podem editar [programas de produção criados em sua organização](creating-production-programs.md) e [programas de sandbox criados em sua organização.](creating-sandbox-programs.md) Ao editar um programa, você pode:
 
-* Adicionar a solução Sites a um programa existente com Ativos, e vice-versa.
+* Adicionar a solução Sites a um programa existente com Assets e vice-versa.
 * Remover sites ou ativos de um programa existente usando o Sites e o Assets.
-* Adicionar o segundo direito de solução não utilizado a um programa existente ou como um novo programa.
+* Adicionar um segundo direito de solução não utilizado a um programa existente ou como um novo programa.
 * Excluir programas de sandbox.
 
 ## Permissões {#permissions}
@@ -23,8 +23,6 @@ Os usuários com as permissões necessárias podem editar [programas de produç�
 Você deve ser um membro com a função **Proprietário da empresa** para editar ou excluir programas de sandbox.
 
 ## Edição de um programa {#editing}
-
-Siga estas etapas para editar um programa.
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
@@ -44,7 +42,7 @@ Siga estas etapas para editar um programa.
 
    ![Selecionar soluções](assets/edit-prg.png)
 
-1. Clique na divisa antes dos nomes de solução para exibir os complementos opcionais, por exemplo, como selecionar a opção de complemento **Commerce** no **Sites**.
+1. Clique na divisa antes do nome da solução para exibir os complementos opcionais, como selecionar o **Commerce** opção complementar em **Sites**.
 
    ![Editar complementos](assets/edit-program-add-on.png)
 
@@ -52,7 +50,7 @@ Siga estas etapas para editar um programa.
 
    ![Editar configurações de publicação](assets/edit-program-go-live.png)
 
-   * Essa data é somente para fins informativos e aciona o widget de publicação na página de visão geral do programa para fornecer links no produto para a documentação de práticas recomendadas do AEM as a Cloud Service em tempo hábil, a fim de se alinhar com a sua jornada, resultando em uma experiência de publicação bem-sucedida e tranquila.
+   * Esta data é apenas para fins informativos. Ele aciona o widget de publicação na página de visão geral do programa. Por sua vez, ele fornece links para a documentação de práticas as a Cloud Service do Adobe Experience Manager (AEM) para alinhar-se à sua jornada, resultando em uma experiência de ativação bem-sucedida.
    * Esta guia não está disponível para programas de sandbox.
 
 1. Clique em **Atualizar** para salvar as alterações no programa.
@@ -63,17 +61,17 @@ Se o programa de produção estiver com a segurança aprimorada habilitada, a gu
 
 ![Segurança aprimorada ativa para um programa](assets/edit-program-enhanced.png)
 
-Esta configuração não pode ser modificada após a criação do programa. Para obter mais informações sobre a opção de segurança aprimorada, consulte o documento [Criação de programas de produção](creating-production-programs.md).
+Não é possível editar essa configuração após a criação do programa. Para obter mais informações sobre a opção de segurança aprimorada, consulte [Criação de programas de produção](creating-production-programs.md).
 
 ## Exclusão de programas de sandbox {#delete-sandbox-program}
 
-A exclusão de um programa de sandbox removerá todos os ambientes e pipelines associados a ele.
+A exclusão de um programa de sandbox remove todos os ambientes e pipelines associados a ele.
 
 >[!TIP]
 >
 >Usuários com as funções **Proprietário da empresa** ou **Gerente de implantação** podem, como alternativa, excluir os ambientes de produção e preparo em vez de todo o programa de sandbox.
 
-Siga estas etapas para excluir um programa de sandbox.
+Para excluir um programa de sandbox, faça o seguinte.
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 

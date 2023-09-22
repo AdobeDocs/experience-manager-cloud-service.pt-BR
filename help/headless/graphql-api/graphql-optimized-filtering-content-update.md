@@ -2,20 +2,20 @@
 title: Atualizar fragmentos de conteúdo para a filtragem otimizada de GraphQL
 description: Saiba como atualizar os fragmentos de conteúdo para uma filtragem otimizada de GraphQL no Adobe Experience Manager as a Cloud Service para entrega de conteúdo headless.
 exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
-source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
-workflow-type: ht
-source-wordcount: '909'
-ht-degree: 100%
+source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
+workflow-type: tm+mt
+source-wordcount: '890'
+ht-degree: 60%
 
 ---
 
 # Atualizar fragmentos de conteúdo para a filtragem otimizada de GraphQL {#updating-content-fragments-for-optimized-graphql-filtering}
 
-Para otimizar o desempenho dos filtros de GraphQL, é necessário executar um procedimento para atualizar os seus fragmentos de conteúdo.
+Para otimizar o desempenho dos filtros do GraphQL, execute um procedimento para atualizar os Fragmentos de conteúdo.
 
 >[!NOTE]
 >
->Depois de atualizar os fragmentos de conteúdo, você pode seguir as recomendações para [otimizar consultas de GraphQL](/help/headless/graphql-api/graphql-optimization.md).
+>Depois de atualizar os fragmentos de conteúdo, você pode seguir as recomendações para [Otimização de consultas do GraphQL](/help/headless/graphql-api/graphql-optimization.md).
 
 
 ## Pré-requisitos {#prerequisites}
@@ -26,11 +26,9 @@ Existem pré-requisitos para esta tarefa:
 
 1. Certifique-se de que o usuário que executa a tarefa tenha as permissões necessárias:
 
-   * no mínimo a função `Deployment Manager` no Cloud Manager é necessária.
+   * no mínimo, a variável `Deployment Manager` no Cloud Manager é necessária.
 
 ## Atualização dos fragmentos de conteúdo {#updating-content-fragments}
-
-Para executar o procedimento, siga as etapas abaixo:
 
 1. Ative a atualização definindo as seguintes variáveis na sua instância usando a interface do Cloud Manager:
 
@@ -69,7 +67,7 @@ Para executar o procedimento, siga as etapas abaixo:
       <td>Todos </td>
       <td> </td>
       <td>Variável </td>
-      <td>Força (!=0) a remigração de fragmentos de conteúdo.<br>Definir esse sinalizador como 0 fará uma migração incremental de CFs. Isso significa que, se o processo for encerrado por algum motivo, a próxima execução do processo iniciará a migração a partir do ponto em que foi encerrada. Observe que, é recomendável forçar a primeira migração (value=1). </td>
+      <td>Força (!=0) remigração de fragmentos de conteúdo.<br>Definir esse sinalizador como 0 faz uma migração incremental de CFs. Isso significa que, se o trabalho for encerrado por qualquer motivo, a próxima execução do trabalho iniciará a migração a partir do ponto em que foi encerrado. A primeira migração é recomendada para imposição (valor=1). </td>
      </tr>
      <tr>
       <td>3</td>
@@ -79,7 +77,7 @@ Para executar o procedimento, siga as etapas abaixo:
       <td>Todos </td>
       <td> </td>
       <td>Variável </td>
-      <td>Tamanho do lote para salvar o número de fragmentos de conteúdo após a migração.<br>Isso é relevante para saber quantos fragmentos de conteúdo são salvos no repositório em um lote e pode ser usado para otimizar o número de gravações no repositório. </td>
+      <td>Tamanho do lote para salvar o número de Fragmentos de conteúdo após a migração.<br>Isso é relevante para quantos CFs são salvos no repositório em um lote e pode ser usado para otimizar o número de gravações no repositório. </td>
      </tr>
      <tr>
       <td>4</td>
@@ -99,7 +97,7 @@ Para executar o procedimento, siga as etapas abaixo:
       <td>Todos </td>
       <td> </td>
       <td>Variável </td>
-      <td>Intervalo (em segundos) para o processamento dos fragmentos de conteúdo restantes até o próximo limite<br>Esse intervalo também é considerado como um tempo de espera antes de iniciar o trabalho e um atraso entre o processamento de cada número subsequente de CF_MIGRATION_LIMIT para fragmentos de conteúdo.<br>(*)</td>
+      <td>Intervalo (segundos) para processar os fragmentos de conteúdo restantes até o próximo limite<br>Esse intervalo também é considerado como um tempo de espera antes de iniciar o processo e um atraso entre o processamento de cada número de CFs CF_MIGRATION_LIMIT subsequente.<br>(*)</td>
      </tr>
     </tbody>
    </table>
@@ -118,7 +116,7 @@ Para executar o procedimento, siga as etapas abaixo:
    >* Tempo aproximado necessário para concluir a migração = 60 + (20.000/1.000 * 60) = 1.260 Segundos = 21 Minutos
    >  Os “60” segundos adicionais no início se devem ao atraso inicial ao iniciar o processo.
    >
-   >Você também deve estar ciente de que este é apenas o tempo *mínimo* necessário para concluir o processo e não inclui o tempo de E/S. O tempo efetivamente gasto pode ser significativamente maior do que esta estimativa.
+   >Esta é apenas a *mínimo* tempo necessário para concluir o trabalho, e não inclui o tempo de E/S. O tempo real gasto pode ser maior do que essa estimativa.
 
 1. Monitore o progresso e a conclusão da atualização.
 
@@ -146,7 +144,7 @@ Para executar o procedimento, siga as etapas abaixo:
         23.01.2023 12:40:45.180 *INFO* [sling-threadpool-8abcc1bb-cdcb-46d4-8565-942ad8a73209-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished content fragments upgrade in 5m, slingJobId: 2023/1/23/12/34/ad1b399e-77be-408e-bc3f-57097498fddb_0, status: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Upgrade to version '1' succeeded.', errors=[], successCount=3781, failedCount=0, skippedCount=0}
         ```
 
-   Os clientes que habilitaram o acesso aos logs do ambiente usando o Splunk podem usar a consulta de exemplo abaixo para monitorar o processo de atualização. Para obter detalhes sobre como habilitar os registros do Splunk, consulte a página [Depuração da produção e preparo](/help/implementing/developing/introduction/logging.md#debugging-production-and-stage).
+   Os clientes que habilitaram o acesso aos logs do ambiente usando o Splunk podem usar a consulta de exemplo abaixo para monitorar o processo de atualização. Para obter detalhes sobre como ativar o registro do Splunk, consulte [Depuração da produção e do preparo](/help/implementing/developing/introduction/logging.md#debugging-production-and-stage).
 
    ```splunk
    index=<indexName> sourcetype=aemerror aem_envId=<environmentId> msg="*com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished*" 
@@ -220,13 +218,13 @@ Para executar o procedimento, siga as etapas abaixo:
 
    >[!NOTE]
    >
-   >Isso é especialmente importante para o nível de publicação, pois a atualização de conteúdo é feita apenas na publicação ouro e, ao reciclar pods, todos os pods de publicação normais se baseiam na publicação ouro.
+   >Isso é importante para o nível de publicação, pois a atualização de conteúdo é feita apenas na publicação golden e, durante a reciclagem de pods, todos os pods de publicação normais se baseiam na publicação golden.
 
 1. Verifique a conclusão do procedimento de atualização.
 
    Você pode verificar se a atualização foi concluída com sucesso usando o navegador do repositório no console do desenvolvedor do Cloud Manager para verificar os dados do fragmento de conteúdo.
 
-   * Antes da primeira migração ser concluída, a propriedade `cfGlobalVersion` não existirá.
+   * Antes da primeira migração completa, a variável `cfGlobalVersion` a propriedade não existe.
 Portanto, a presença dessa propriedade no nó `/content/dam` do JCR, com um valor de `1`, confirma a conclusão da migração.
 
    * Você também pode verificar as seguintes propriedades nos fragmentos de conteúdo individuais:
@@ -236,14 +234,14 @@ Portanto, a presença dessa propriedade no nó `/content/dam` do JCR, com um val
 
      >[!NOTE]
      >
-     >O procedimento atualizará os fragmentos de conteúdo nas instâncias de autor e publicação.
+     >O procedimento atualiza os Fragmentos de conteúdo nas instâncias Autor e Publicar.
      >
-     >Portanto, é recomendável executar a verificação por meio do navegador do repositório para *ao menos* um autor *e* uma instância de publicação.
+     >Portanto, a Adobe recomenda que você execute a verificação por meio do navegador de repositório para *pelo menos* um autor *e* uma instância Publish.
 
 ## Limitações {#limitations}
 
 Observe as seguintes limitações:
 
-* A otimização do desempenho dos filtros de GraphQL só será possível após uma atualização completa de todos os fragmentos de conteúdo (indicada pela presença da propriedade `cfGlobalVersion` no nó `/content/dam` do JCR)
+* A otimização do desempenho dos filtros do GraphQL só é possível após uma atualização completa de todos os fragmentos de conteúdo (indicada pela presença da variável `cfGlobalVersion` propriedade para o nó JCR `/content/dam`)
 
-* Se os fragmentos de conteúdo forem importados de um pacote de conteúdo (usando `crx/de`) depois que o procedimento de atualização for executado, esses fragmentos de conteúdo não serão considerados nos resultados da consulta de GraphQL até que o procedimento de atualização seja executado novamente.
+* Se os fragmentos de conteúdo forem importados de um pacote de conteúdo (usando `crx/de`) depois que o procedimento de atualização for executado, esses fragmentos de conteúdo não serão considerados nos resultados da consulta do GraphQL até que o procedimento de atualização seja executado novamente.
