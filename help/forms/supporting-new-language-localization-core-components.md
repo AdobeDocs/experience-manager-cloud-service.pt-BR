@@ -1,9 +1,9 @@
 ---
 title: Como adicionar suporte para novas localidades a um formulário adaptável com base em componentes principais?
 description: O AEM Forms permite adicionar novas localidades para localizar formulários adaptáveis.
-source-git-commit: b643cdc9ebf57e164088e0dc3598e4e0d3ded267
+source-git-commit: 0a1310290c25a94ffe6f95ea6403105475ef5dda
 workflow-type: tm+mt
-source-wordcount: '1336'
+source-wordcount: '1079'
 ht-degree: 1%
 
 ---
@@ -16,15 +16,20 @@ ht-degree: 1%
 | Componentes de base | [Clique aqui](supporting-new-language-localization.md) |
 | Componentes principais | Este artigo |
 
-O AEM Forms oferece suporte imediato para as localidades de inglês (en), espanhol (es), francês (fr), italiano (it), alemão (de), japonês (ja), português-brasileiro (pt-BR), chinês (zh-CN), chinês-Taiwan (zh-TW) e coreano (ko-KR). Você também pode adicionar suporte para mais locais, como Hindi(hi_IN).
+O AEM Forms oferece suporte imediato para as localidades de inglês (en), espanhol (es), francês (fr), italiano (it), alemão (de), japonês (ja), português-brasileiro (pt-BR), chinês (zh-CN), chinês-Taiwan (zh-TW) e coreano (ko-KR).
 
-## Compreender dicionários de localidade {#about-locale-dictionaries}
+Você também pode adicionar suporte para mais locais, como Hindi(hi_IN).
 
-A localização de formulários adaptáveis depende de dois tipos de dicionários de localidade:
+<!-- 
+## Understanding locale dictionaries {#about-locale-dictionaries}
 
-* **Dicionário específico de formulário** Contém strings usadas em formulários adaptáveis. Por exemplo, rótulos, nomes de campos, mensagens de erro, descrições da ajuda. Ele é gerenciado como um conjunto de arquivos XLIFF para cada local e você pode acessá-lo em `[author-instance]/libs/cq/i18n/gui/translator.html`.
+The localization of adaptive forms relies on two types of locale dictionaries:
 
-* **Dicionários globais** Há dois dicionários globais, gerenciados como objetos JSON, na biblioteca do cliente AEM. Esses dicionários contêm mensagens de erro padrão, nomes de meses, símbolos de moeda, padrões de data e hora e assim por diante. Você pode encontrar esses dicionários em `[author-instance]/libs/fd/xfaforms/clientlibs/I18N`. Esses locais contêm pastas separadas para cada local. Como os dicionários globais não são atualizados com frequência, manter arquivos JavaScript separados para cada localidade permite que os navegadores os armazenem em cache e reduzam o uso da largura de banda da rede ao acessar diferentes formulários adaptáveis no mesmo servidor.
+*   **Form-specific dictionary** Contains strings used in adaptive forms. For example, labels, field names, error messages, help descriptions. It is managed as a set of XLIFF files for each locale and you can access it at `[AEM Forms as a Cloud Service Author instance]/libs/cq/i18n/gui/translator.html`.
+
+*   **Global dictionaries** There are two global dictionaries, managed as JSON objects, in AEM client library. These dictionaries contain default error messages, month names, currency symbols, date and time patterns, and so on.  These locations contain separate folders for each locale. Because global dictionaries are not updated frequently, keeping separate JavaScript files for each locale enables browsers to cache them and reduce network bandwidth usage when accessing different adaptive forms on same server.
+
+-->
 
 ## Pré-requisitos {#prerequistes}
 
@@ -44,7 +49,7 @@ Antes de começar a adicionar suporte para um novo local,
 
 ## Adicionar uma localidade {#add-localization-support-for-non-supported-locales}
 
-Atualmente, o AEM Forms oferece suporte à localização de conteúdo do Adaptive Forms em inglês (en), espanhol (es), francês (fr), italiano (it), alemão (de), japonês (ja), português-brasileiro (pt-BR), chinês (zh-CN), chinês-Taiwan (zh-TW) e coreano (ko-KR). Para adicionar suporte para um novo local no tempo de execução do Adaptive Forms, siga estas etapas:
+Para adicionar suporte para um novo local, siga estas etapas:
 
 ![Adicionar um local a um repositório](add-a-locale-adaptive-form-core-components.png)
 
@@ -136,13 +141,14 @@ Execute esta etapa somente se a variável `<locale>` você está adicionando nã
 ### Confirmar as alterações e implantar o pipeline {#commit-changes-in-repo-deploy-pipeline}
 
 Confirme as alterações no repositório GIT após adicionar um novo suporte de localidade. Implante seu código usando o pipeline de pilha completa. Saiba mais [como configurar um pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) para adicionar novo suporte de local.
-Quando o pipeline estiver concluído, o local recém-adicionado aparecerá no ambiente AEM.
 
-## Usar local adicionado no Adaptive Forms {#use-added-locale-in-af}
+Depois que a execução do pipeline for bem-sucedida, a localidade recém-adicionada estará pronta para uso.
 
-Execute as seguintes etapas para usar e renderizar um Formulário adaptável usando um local recém-adicionado:
+## Visualizar um formulário adaptável com a localidade recém-adicionada {#use-added-locale-in-af}
 
-1. Faça logon na instância de autor do AEM.
+Execute as seguintes etapas para visualizar um Adaptável com um local recém-adicionado:
+
+1. Faça logon na sua instância do AEM Forms as a Cloud Service.
 1. Ir para **Forms** >  **Forms e documentos**.
 1. Selecione um Formulário adaptável e clique em **Adicionar dicionário** e **Adicionar Dicionário Ao Projeto De Tradução** é exibido.
 1. Especifique a **Título do projeto** e selecione o **Idiomas de destino** no menu suspenso da caixa **Adicionar Dicionário Ao Projeto De Tradução** assistente.
@@ -153,7 +159,7 @@ Execute as seguintes etapas para usar e renderizar um Formulário adaptável usa
 
 Há dois métodos para identificar o local de um Formulário adaptável. Quando um formulário adaptável é renderizado, ele identifica o local solicitado por:
 
-* Recuperação de `[local]` no URL do formulário adaptável. O formato do URL é `http://host:[port]/content/forms/af/[afName].[locale].html?wcmmode=disabled`. Usar `[local]` O seletor permite armazenar em cache um Formulário adaptável.
+* Recuperação de `[local]` no URL do formulário adaptável. O formato do URL é `http:/[AEM Forms Server URL]/content/forms/af/[afName].[locale].html?wcmmode=disabled`. Usar `[local]` O seletor permite armazenar em cache um Formulário adaptável.
 
 * Recuperação dos seguintes parâmetros na ordem listada:
 
@@ -165,17 +171,18 @@ Para substituir a localidade do navegador dos usuários, você pode transmitir a
 
 Se não existir uma biblioteca do cliente para a localidade solicitada, ela verificará se há uma biblioteca do cliente para o código de idioma presente na localidade. Por exemplo, se o local solicitado for `en_ZA` (inglês da África do Sul) e a biblioteca do cliente para `en_ZA` não existir, o formulário adaptável usará a biblioteca do cliente para `en` Idioma (inglês), se existir. No entanto, se nenhum deles existir, o Formulário adaptável usará o dicionário para `en` localidade.
 
-
 Depois que a localidade é identificada, o Formulário adaptável escolhe o dicionário específico do formulário. Se o dicionário específico do formulário para a localidade solicitada não for encontrado, ele usará o dicionário para o idioma no qual o Formulário adaptável foi criado.
 
-Se não houver informações de local disponíveis, o Formulário adaptável será exibido em seu idioma original, que é o idioma usado durante seu desenvolvimento.
+Se não houver informações de local disponíveis, o Formulário adaptável será exibido em seu idioma original, o idioma usado durante o desenvolvimento dos formulários.
 
-Obter [biblioteca cliente de exemplo](/help/forms/assets/locale-support-sample.zip) para adicionar suporte ao novo local. É necessário alterar o conteúdo da pasta no local necessário.
+<!--
+Get [sample client library](/help/forms/assets/locale-support-sample.zip) to add support for new locale. You need to change the content of the folder in the required locale.
 
-## Práticas recomendadas para oferecer suporte à nova localização {#best-practices}
+## Best Practices to support for new localization {#best-practices}
 
-* O Adobe recomenda criar um projeto de tradução após criar um Formulário adaptável.
+*   Adobe recommends creating a translation project after creating an Adaptive Form.
 
-* Quando novos campos são adicionados em um Formulário adaptável existente:
-   * **Para tradução automática**: recrie o dicionário e execute o projeto de tradução. Os campos adicionados a um Formulário adaptável após a criação de um projeto de tradução permanecem não traduzidos.
-   * **Para tradução humana**: Exportar o dicionário através do `[server:port]/libs/cq/i18n/gui/translator.html`. Atualize o dicionário para os campos recém-adicionados e faça upload dele.
+*   When new fields are added in an existing Adaptive Form:
+    * **For machine translation**: Re-create the dictionary and run the translation project. Fields added to an Adaptive Form after creating a translation project remain untranslated. 
+    * **For human translation**: Export the dictionary through `[server:port]/libs/cq/i18n/gui/translator.html`. Update the dictionary for the newly added fields and upload it.
+-->
