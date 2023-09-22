@@ -1,10 +1,10 @@
 ---
 title: Como adicionar suporte para novas localidades a um formulário adaptável com base em componentes principais?
 description: Saiba como adicionar novas localidades para um Formulário adaptável.
-source-git-commit: 056aecd0ea1fd9ec1e4c05299d2c50bca161615f
+source-git-commit: 2a738d17b1e2f46c06828512ee07c1c20f35596c
 workflow-type: tm+mt
-source-wordcount: '1413'
-ht-degree: 0%
+source-wordcount: '1449'
+ht-degree: 1%
 
 ---
 
@@ -18,7 +18,8 @@ ht-degree: 0%
 
 O AEM Forms oferece suporte imediato para as localidades de inglês (en), espanhol (es), francês (fr), italiano (it), alemão (de), japonês (ja), português-brasileiro (pt-BR), chinês (zh-CN), chinês-Taiwan (zh-TW) e coreano (ko-KR).
 
-## Como a localidade é selecionada para um formulário adaptável?
+## Como a localidade é selecionada para um Formulário adaptável?
+
 
 Há dois métodos para identificar e selecionar o local de um formulário adaptável quando ele é renderizado:
 
@@ -26,11 +27,11 @@ Há dois métodos para identificar e selecionar o local de um formulário adapt�
 
 * Recuperar os parâmetros na ordem listada abaixo:
 
-   * Parâmetro de solicitação `afAcceptLang`: para substituir o local do navegador do usuário, você pode passar o parâmetro de solicitação afAcceptLang. Por exemplo, essa URL impõe a renderização do formulário na localidade em francês canadense: `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ca-fr`.
+   * **Parâmetro de solicitação`afAcceptLang`**: para substituir o local do navegador do usuário, você pode passar o parâmetro de solicitação afAcceptLang. Por exemplo, essa URL impõe a renderização do formulário na localidade em francês canadense: `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ca-fr`.
 
-   * Local do navegador (Cabeçalho de idioma aceito): o sistema também considera o local do navegador do usuário, que é especificado na solicitação usando o `Accept-Language` cabeçalho.
+   * **Localidade do navegador (Cabeçalho Aceitar idioma)**: O sistema também considera a localidade do navegador do usuário, que é especificada na solicitação usando o `Accept-Language` cabeçalho.
 
-  Se uma biblioteca do cliente para o local solicitado não estiver disponível, o sistema verificará se existe uma biblioteca do cliente para o código do idioma no local. Por exemplo, se o local solicitado for `en_ZA` (Inglês da África do Sul) e não há biblioteca de clientes para `en_ZA`, o Formulário adaptável usará a biblioteca do cliente para en (inglês), se disponível. Se nenhuma for encontrada, o Formulário adaptável recorrerá ao dicionário para o `en` localidade.
+  Se uma biblioteca do cliente para o local solicitado não estiver disponível, o sistema verificará se existe uma biblioteca do cliente para o código do idioma no local. Por exemplo, se o local solicitado for `en_ZA` (Inglês da África do Sul) e não há biblioteca de clientes para `en_ZA`, o Formulário adaptável usa a biblioteca do cliente para en (inglês), se disponível. Se nenhuma for encontrada, o Formulário adaptável recorrerá ao dicionário para o `en` localidade.
 
   Depois que a localidade é identificada, o Formulário adaptável seleciona o dicionário correspondente específico do formulário. Se o dicionário da localidade solicitada não for encontrado, ele assumirá como padrão o uso do dicionário no idioma em que o Formulário adaptável foi criado.
 
@@ -42,7 +43,8 @@ Há dois métodos para identificar e selecionar o local de um formulário adapt�
 Antes de começar a adicionar suporte para um novo local,
 
 * Instale um editor de texto simples (IDE) para facilitar a edição. Os exemplos neste documento são baseados no Microsoft® Visual Studio Code.
-* Clonar o repositório dos Componentes principais adaptáveis do Forms. Para clonar o repositório:
+* Instalar uma versão de [Git](https://git-scm.com), se não estiver disponível no computador.
+* Clonar o [Componentes principais adaptáveis do Forms](https://github.com/adobe/aem-core-forms-components) repositório. Para clonar o repositório:
    1. Abra a linha de comando ou a janela do terminal e navegue até um local para armazenar o repositório. Por exemplo `/adaptive-forms-core-components`
    1. Execute o seguinte comando para clonar o repositório:
 
@@ -50,7 +52,7 @@ Antes de começar a adicionar suporte para um novo local,
           git clone https://github.com/adobe/aem-core-forms-components.git
       ```
 
-  O repositório inclui uma biblioteca do cliente necessária para adicionar um local.
+  O repositório inclui uma biblioteca do cliente necessária para adicionar um local. No restante do artigo, a pasta é chamada de, [Repositório adaptável dos Componentes principais do Forms].
 
 
 ## Adicionar uma localidade {#add-localization-support-for-non-supported-locales}
@@ -59,9 +61,9 @@ Para adicionar suporte para um novo local, siga estas etapas:
 
 ![Adicionar um local a um repositório](add-a-locale-adaptive-form-core-components.png)
 
-### Clonar o repositório Git as a Cloud Service do AEM {#clone-the-repository}
+### 1. Clonar o repositório Git as a Cloud Service do AEM {#clone-the-repository}
 
-1. Abra a linha de comando e escolha um diretório para armazenar o repositório, como `/cloud-service-repository/`.
+1. Abra a linha de comando e escolha um diretório para armazenar o repositório as a Cloud Service do AEM Forms, como `/cloud-service-repository/`.
 
 1. Execute o seguinte comando para clonar o repositório:
 
@@ -74,7 +76,7 @@ Para adicionar suporte para um novo local, siga estas etapas:
    Após a conclusão bem-sucedida do comando, uma pasta `<my-program>` é criado. Ele contém o conteúdo clonado do repositório Git. No restante do artigo, a pasta é chamada de, `[AEM Forms as a Cloud Service Git repository]`.
 
 
-### Adicionar a nova localidade ao Serviço de localização do guia {#add-a-locale-to-the-guide-localization-service}
+### 2. Adicione o novo local ao Serviço de localização do guia {#add-a-locale-to-the-guide-localization-service}
 
 1. Abra a pasta do repositório, clonada na seção anterior, em um editor de texto simples.
 1. Navegue até a `[AEM Forms as a Cloud Service Git repository]/ui.config/src/main/content/jcr_root/apps/<appid>/osgiconfig/config` pasta. Você pode encontrar o `<appid>` no `archetype.properties` arquivos do projeto.
@@ -85,17 +87,17 @@ Para adicionar suporte para um novo local, siga estas etapas:
 1. Adicione o [código de localidade do idioma](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) que você deseja adicionar, por exemplo, adicione &quot;hi&quot; para hindi.
 1. Salvar e fechar o arquivo.
 
-### Criar uma biblioteca do cliente para adicionar um local
+### 3. Crie uma Biblioteca do cliente para adicionar um local
 
-O AEM Forms fornece um exemplo de biblioteca de cliente para ajudá-lo a adicionar novas localidades facilmente. Você pode baixar e adicionar o `clientlib-it-custom-locale` biblioteca do cliente do repositório dos Componentes principais do Forms adaptável no GitHub para o repositório as a Cloud Service do Forms. Para adicionar a biblioteca do cliente, siga estas etapas:
+O AEM Forms fornece um exemplo de biblioteca de cliente para ajudá-lo a adicionar novas localidades facilmente. Você pode baixar e adicionar o `clientlib-it-custom-locale` biblioteca do cliente do [Repositório adaptável dos Componentes principais do Forms] no GitHub para o repositório as a Cloud Service do Forms. Para adicionar a biblioteca do cliente, siga estas etapas:
 
-1. Abra o repositório dos Componentes principais do Forms adaptável no editor de texto simples. Se você não tiver o repositório clonado, consulte [Pré-requisitos](#prerequistes) para obter instruções sobre como clonar o repositório.
+1. Abra o [Repositório adaptável dos Componentes principais do Forms] no editor de texto simples. Se você não tiver o repositório clonado, consulte [Pré-requisitos](#prerequistes) para obter instruções sobre como clonar o repositório.
 1. Navegue até a `/aem-core-forms-components/it/apps/src/main/content/jcr_root/apps/forms-core-components-it/clientlibs` diretório.
 1. Copie o `clientlib-it-custom-locale` diretório.
 1. Navegue até `[AEM Forms as a Cloud Service Git repository]/ui.apps/src/main/content/jcr_root/apps/moonlightprodprogram/clientlibs` e cole a variável `clientlib-it-custom-locale` diretório.
 
 
-### Criar um arquivo específico de local {#locale-specific-file}
+### 4. Criar um arquivo específico de local {#locale-specific-file}
 
 1. Vá até `[AEM Forms as a Cloud Service Git repository]/ui.apps/src/main/content/jcr_root/apps/<program-id>/clientlibs/clientlib-it-custom-locale/resources/i18n/`
 1. Localize o [Inglês locale .json file on GitHub](https://github.com/adobe/aem-core-forms-components/blob/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/af-clientlibs/core-forms-components-runtime-all/resources/i18n/en.json), que contém o conjunto mais recente de strings padrão incluídas no produto.
@@ -105,7 +107,7 @@ O AEM Forms fornece um exemplo de biblioteca de cliente para ajudá-lo a adicion
 1. Salve e feche o arquivo.
 
 
-### Adicionar suporte de localidade ao dicionário {#add-locale-support-for-the-dictionary}
+### 5. Adicionar suporte local ao dicionário {#add-locale-support-for-the-dictionary}
 
 Execute esta etapa somente se a variável `<locale>` você está adicionando não está entre `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`.
 
@@ -144,9 +146,9 @@ Execute esta etapa somente se a variável `<locale>` você está adicionando nã
 
    ![Adicione as pastas recém-criadas na `filter.xml` em `/ui.content/src/main/content/meta-inf/vault/filter.xml`](langauge-filter.png)
 
-### Confirmar as alterações e implantar o pipeline {#commit-changes-in-repo-deploy-pipeline}
+### 6. Confirme as alterações e implante o pipeline {#commit-changes-in-repo-deploy-pipeline}
 
-Confirme as alterações no repositório GIT após adicionar um novo suporte de localidade. Implante seu código usando o pipeline de pilha completa. Saiba mais [como configurar um pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) para adicionar novo suporte de local.
+Confirme as alterações no repositório GIT após adicionar a nova localidade. Implante seu código usando o pipeline de pilha completa. Saiba mais [como configurar um pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) para adicionar novo suporte de local.
 
 Depois que a execução do pipeline for bem-sucedida, o local recém-adicionado estará pronto para uso.
 
