@@ -1,9 +1,9 @@
 ---
 title: Como adicionar suporte para novas localidades a um formulário adaptável com base em componentes principais?
 description: Saiba como adicionar novas localidades para um Formulário adaptável.
-source-git-commit: 2a738d17b1e2f46c06828512ee07c1c20f35596c
+source-git-commit: 4e48e49fea66fa24052632138a1b305208690d06
 workflow-type: tm+mt
-source-wordcount: '1449'
+source-wordcount: '1484'
 ht-degree: 1%
 
 ---
@@ -16,12 +16,11 @@ ht-degree: 1%
 | Componentes de base | [Clique aqui](supporting-new-language-localization.md) |
 | Componentes principais | Este artigo |
 
-O AEM Forms oferece suporte imediato para as localidades de inglês (en), espanhol (es), francês (fr), italiano (it), alemão (de), japonês (ja), português-brasileiro (pt-BR), chinês (zh-CN), chinês-Taiwan (zh-TW) e coreano (ko-KR).
+O AEM Forms oferece suporte imediato para as localidades de inglês (en), espanhol (es), francês (fr), italiano (it), alemão (de), japonês (ja), português-brasileiro (pt-BR), chinês (zh-CN), chinês-Taiwan (zh-TW) e coreano (ko-KR). Você também pode adicionar suporte para mais locais, como Hindi(hi_IN).
 
 ## Como a localidade é selecionada para um Formulário adaptável?
 
-
-Há dois métodos para identificar e selecionar o local de um formulário adaptável quando ele é renderizado:
+Antes de começar a adicionar uma nova localidade para o Adaptive Forms, crie uma compreensão sobre como uma localidade é selecionada para um Formulário adaptável. Há dois métodos para identificar e selecionar o local de um formulário adaptável quando ele é renderizado:
 
 * **Usar o [localidade] Seletor no URL**: ao renderizar um Formulário adaptável, o sistema identifica o local solicitado inspecionando o [localidade] no URL do formulário adaptável. O URL segue este formato: http:/[URL do servidor do AEM Forms]/content/forms/af/[afName].[localidade].html?wcmmode=disabled. A utilização dos [localidade] O seletor permite o armazenamento em cache do Formulário adaptável.
 
