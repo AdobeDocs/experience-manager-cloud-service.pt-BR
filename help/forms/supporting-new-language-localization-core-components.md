@@ -1,10 +1,10 @@
 ---
 title: Como adicionar suporte para novas localidades a um formulário adaptável com base nos Componentes principais?
 description: Saiba como adicionar novas localidades para um Formulário adaptável.
-source-git-commit: 911b377edd4eb0c8793d500c26ca44a44c69e167
+source-git-commit: 0d2e353208e4e59296d551ca5270be06e574f7df
 workflow-type: tm+mt
-source-wordcount: '1254'
-ht-degree: 1%
+source-wordcount: '1339'
+ht-degree: 2%
 
 ---
 
@@ -20,17 +20,17 @@ O AEM Forms oferece suporte imediato para as localidades de inglês (en), espanh
 
 ## Como a localidade é selecionada para um Formulário adaptável?
 
-Antes de começar a adicionar uma nova localidade para o Adaptive Forms, crie uma compreensão sobre como uma localidade é selecionada para um Formulário adaptável. Há dois métodos para identificar e selecionar o local de um formulário adaptável quando ele é renderizado:
+Antes de começar a adicionar uma localidade para o Adaptive Forms, crie uma compreensão sobre como uma localidade é selecionada para um Formulário adaptável. Há dois métodos para identificar e selecionar o local de um Formulário adaptável quando ele é renderizado:
 
-* **Usar o [localidade] Seletor no URL**: ao renderizar um Formulário adaptável, o sistema identifica o local solicitado inspecionando o [localidade] no URL do formulário adaptável. O URL segue este formato: http:/[URL do servidor do AEM Forms]/content/forms/af/[afName].[localidade].html?wcmmode=disabled. A utilização dos [localidade] O seletor permite o armazenamento em cache do Formulário adaptável.
+* **Usar o `locale` Seletor no URL**: ao renderizar um Formulário adaptável, o sistema identifica o local solicitado inspecionando o [localidade] no URL do formulário adaptável. O URL segue este formato: http:/[URL do servidor do AEM Forms]/content/forms/af/[afName].[localidade].html?wcmmode=disabled. A utilização dos [localidade] O seletor permite o armazenamento em cache do Formulário adaptável. Por exemplo, o URL `www.example.com/content/forms/af/contact-us.hi.html?wcmmmode=disabled` renderiza o formulário no idioma hindi.
 
 * Recuperar os parâmetros na ordem listada abaixo:
 
-   * **Parâmetro de solicitação`afAcceptLang`**: para substituir o local do navegador do usuário, você pode passar o parâmetro de solicitação afAcceptLang. Por exemplo, essa URL impõe a renderização do formulário na localidade em francês canadense: `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ca-fr`.
+   * **Usar o `afAcceptLang`parâmetro de solicitação**: para substituir o local do navegador do usuário, você pode passar o parâmetro de solicitação afAcceptLang. Por exemplo, a variável `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ca-fr` O URL força o AEM Forms Server a renderizar o formulário no código do idioma francês canadense.
 
-   * **Localidade do navegador (Cabeçalho Aceitar idioma)**: O sistema também considera a localidade do navegador do usuário, que é especificada na solicitação usando o `Accept-Language` cabeçalho.
+   * **Usar o local do navegador (Cabeçalho Aceitar idioma)**: O sistema também considera a localidade do navegador do usuário, que é especificada na solicitação usando o `Accept-Language` cabeçalho.
 
-  Se uma biblioteca do cliente para o local solicitado não estiver disponível, o sistema verificará se existe uma biblioteca do cliente para o código do idioma no local. Por exemplo, se o local solicitado for `en_ZA` (Inglês da África do Sul) e não há biblioteca de clientes para `en_ZA`, o Formulário adaptável usa a biblioteca do cliente para en (inglês), se disponível. Se nenhuma for encontrada, o Formulário adaptável recorrerá ao dicionário para o `en` localidade.
+  Se uma biblioteca do cliente (o processo para criar e usar a biblioteca é abordado posteriormente neste artigo) para o local solicitado não estiver disponível, o sistema verificará se existe uma biblioteca do cliente para o código do idioma no local. Por exemplo, se o local solicitado for `en_ZA` (Inglês da África do Sul) e não há biblioteca de clientes para `en_ZA`, o Formulário adaptável usa a biblioteca do cliente para en (inglês), se disponível. Se nenhuma for encontrada, o Formulário adaptável recorrerá ao dicionário para o `en` localidade.
 
   Depois que a localidade é identificada, o Formulário adaptável seleciona o dicionário correspondente específico do formulário. Se o dicionário da localidade solicitada não for encontrado, ele assumirá como padrão o uso do dicionário no idioma em que o Formulário adaptável foi criado.
 
@@ -39,19 +39,21 @@ Antes de começar a adicionar uma nova localidade para o Adaptive Forms, crie um
 
 ## Pré-requisitos {#prerequistes}
 
-Antes de começar a adicionar suporte para um novo local,
+Antes de começar a adicionar um local:
 
-* Instale um editor de texto simples (IDE) para facilitar a edição. Os exemplos neste documento são baseados no Microsoft® Visual Studio Code.
+* Instale um editor de texto simples (IDE) para facilitar a edição. Os exemplos neste documento são baseados em [Código do Microsoft® Visual Studio](https://code.visualstudio.com/download).
 * Instalar uma versão de [Git](https://git-scm.com), se não estiver disponível no computador.
 * Clonar o [Componentes principais adaptáveis do Forms](https://github.com/adobe/aem-core-forms-components) repositório. Para clonar o repositório:
-   1. Abra a linha de comando ou a janela do terminal e navegue até um local para armazenar o repositório. Por exemplo `/adaptive-forms-core-components`
+   1. Abra a linha de comando ou a janela do terminal e navegue até um local para armazenar o repositório. Por exemplo, `/adaptive-forms-core-components`
    1. Execute o seguinte comando para clonar o repositório:
 
       ```SHELL
           git clone https://github.com/adobe/aem-core-forms-components.git
       ```
 
-  O repositório inclui uma biblioteca do cliente necessária para adicionar um local. No restante do artigo, a pasta é chamada de, [Repositório adaptável dos Componentes principais do Forms].
+  O repositório inclui uma biblioteca do cliente necessária para adicionar um local.
+
+  Na execução bem-sucedida do comando, o repositório é clonado para a variável `aem-core-forms-components` na sua máquina. No restante do artigo, a pasta é chamada de, [Repositório adaptável dos Componentes principais do Forms].
 
 
 ## Adicionar uma localidade {#add-localization-support-for-non-supported-locales}
@@ -169,7 +171,13 @@ Execute as seguintes etapas para visualizar um Adaptável com um local recém-ad
 * O Adobe recomenda criar um projeto de tradução após criar um Formulário adaptável.
 
 * Quando novos campos são adicionados em um Formulário adaptável existente:
-   * **Para tradução automática**: recrie o dicionário e execute o projeto de tradução. Os campos adicionados a um Formulário adaptável após a criação de um projeto de tradução permanecem não traduzidos.
-   * **Para tradução humana**: Exportar o dicionário através do `[server:port]/libs/cq/i18n/gui/translator.html`. Atualize o dicionário para os campos recém-adicionados e faça upload dele.
+   * **Para tradução automática**: recrie o dicionário e [executar o projeto de tradução](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md). Os campos adicionados a um Formulário adaptável após a criação de um projeto de tradução permanecem não traduzidos.
+   * **Para tradução humana**: exporte o dicionário usando a interface do usuário em `[AEM Forms Server]/libs/cq/i18n/gui/translator.html`. Atualize o dicionário para os campos recém-adicionados e faça upload dele.
+
+## Veja mais
+
+* [Usar tradução automática ou tradução humana para traduzir um Formulário adaptável baseado em Componentes principais](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
+* [Gerar documento de registro para Forms adaptável](/help/forms/generate-document-of-record-core-components.md)
+* [Adição de um formulário adaptável a uma página do AEM Sites ou a um fragmento de experiência](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 
 
