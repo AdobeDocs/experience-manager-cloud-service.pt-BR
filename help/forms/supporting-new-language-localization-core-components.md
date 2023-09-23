@@ -1,9 +1,9 @@
 ---
-title: Como adicionar suporte para novas localidades a um formulário adaptável com base em componentes principais?
+title: Como adicionar suporte para novas localidades a um formulário adaptável com base nos Componentes principais?
 description: Saiba como adicionar novas localidades para um Formulário adaptável.
-source-git-commit: 4e48e49fea66fa24052632138a1b305208690d06
+source-git-commit: 911b377edd4eb0c8793d500c26ca44a44c69e167
 workflow-type: tm+mt
-source-wordcount: '1484'
+source-wordcount: '1254'
 ht-degree: 1%
 
 ---
@@ -163,25 +163,6 @@ Execute as seguintes etapas para visualizar um Adaptável com um local recém-ad
 1. Selecione um Formulário adaptável e clique em **Visualizar como HTML**.
 1. Adicionar `&afAcceptLang=<locale-name>` no URL de um Formulário adaptável.
 1. Atualizar a página e o Formulário adaptável é renderizado em um local especificado.
-
-Há dois métodos para identificar o local de um Formulário adaptável. Quando um formulário adaptável é renderizado, ele identifica o local solicitado por:
-
-* Recuperação de `[local]` no URL do formulário adaptável. O formato do URL é `http:/[AEM Forms Server URL]/content/forms/af/[afName].[locale].html?wcmmode=disabled`. Usar `[local]` O seletor permite armazenar em cache um Formulário adaptável.
-
-* Recuperação dos seguintes parâmetros na ordem listada:
-
-   * Parâmetro de solicitação `afAcceptLang`
-Para substituir a localidade do navegador dos usuários, você pode transmitir a `afAcceptLang` parâmetro de solicitação para forçar a localidade. Por exemplo, a URL a seguir força a renderização do formulário na localidade canadense-francesa:
-     `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ca-fr`
-
-   * A localidade do navegador definida para o usuário, que é especificada na solicitação usando o `Accept-Language` cabeçalho.
-
-Se não existir uma biblioteca do cliente para a localidade solicitada, ela verificará se há uma biblioteca do cliente para o código de idioma presente na localidade. Por exemplo, se o local solicitado for `en_ZA` (inglês da África do Sul) e a biblioteca do cliente para `en_ZA` não existir, o formulário adaptável usará a biblioteca do cliente para `en` Idioma (inglês), se existir. No entanto, se nenhum deles existir, o Formulário adaptável usará o dicionário para `en` localidade.
-
-Depois que a localidade é identificada, o Formulário adaptável escolhe o dicionário específico do formulário. Se o dicionário específico do formulário para a localidade solicitada não for encontrado, ele usará o dicionário para o idioma no qual o Formulário adaptável foi criado.
-
-Se não houver informações de local disponíveis, o Formulário adaptável será exibido em seu idioma original, o idioma usado durante o desenvolvimento dos formulários.
-
 
 ## Práticas recomendadas para oferecer suporte à nova localização {#best-practices}
 
