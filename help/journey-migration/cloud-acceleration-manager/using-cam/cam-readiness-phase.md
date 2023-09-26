@@ -2,16 +2,16 @@
 title: Fase de preparação no Cloud Acceleration Manager
 description: Esta página fornece uma visão geral sobre a fase de Preparação no Cloud Acceleration Manager.
 exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
 workflow-type: tm+mt
-source-wordcount: '1049'
-ht-degree: 5%
+source-wordcount: '981'
+ht-degree: 6%
 
 ---
 
 # Fase de preparação no Cloud Acceleration Manager {#readiness-phase-cam}
 
-Depois de criar um projeto no Cloud Acceleration Manager, você pode iniciar a avaliação de sua implementação atual do AEM na fase de preparação.
+Depois de criar um projeto no Cloud Acceleration Manager, você pode iniciar a avaliação de sua implementação atual do Adobe Experience Manager (AEM) na fase de Preparação.
 
 A Fase de preparação inclui:
 
@@ -20,11 +20,11 @@ A Fase de preparação inclui:
 
 Siga as etapas abaixo para acessar a Fase de preparação:
 
-1. Clique no cartão do projeto para abrir a landing page do projeto.
+1. Clique no cartão do projeto.
 
    ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/cam-landing1.png)
 
-1. Navegue até a **Disponibilidade** conforme mostrado na figura abaixo.
+1. Na landing page do projeto, navegue até a **Disponibilidade** conforme mostrado na figura abaixo.
 
    ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/readiness-1.png)
 
@@ -33,32 +33,30 @@ Siga as etapas abaixo para acessar a Fase de preparação:
 
 ## Usando o cartão de análise de práticas recomendadas {#best-practices-analysis}
 
-Siga as etapas abaixo para usar o cartão de Análise de práticas recomendadas:
-
-1. Clique no link **Revisão** botão no **Análise de práticas recomendadas** cartão.
+1. Clique em **Revisão** do **Análise de práticas recomendadas** cartão.
 
    ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/readiness-2.png)
 
-1. Siga estas etapas para baixar o Analisador de práticas recomendadas (BPA).
+1. Baixe o Analisador de práticas recomendadas (BPA).
 
    >[!NOTE]
-   >Para evitar um impacto em instâncias críticas para os negócios, é recomendável executar o BPA em um ambiente de Autor o mais próximo possível do ambiente de Produção nas áreas de personalizações, configurações, conteúdo e aplicativos de usuários. Como alternativa, ele pode ser executado em um clone do ambiente de Autor de produção.
+   >Para evitar um impacto em instâncias críticas para os negócios, a Adobe recomenda executar o BPA em um ambiente de autor. O ambiente deve estar o mais próximo possível do ambiente de produção nas áreas de personalizações, configurações, conteúdo e aplicativos do usuário. Como alternativa, ele pode ser executado em um clone do ambiente de Autor de produção.
 
-   1. Navegue até [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) e baixe o Analisador de práticas recomendadas como um arquivo zip.
+   1. Navegue até a [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) e baixe o Analisador de práticas recomendadas como um arquivo zip.
 
       >[!NOTE]
-      >Revisão [Uso do Analisador de práticas recomendadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en#imp-considerations) para saber como executar o BPA.
+      >Revisão [Uso do Analisador de práticas recomendadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en#imp-considerations) para saber como executar o BPA.
 
    1. Exportar o relatório em um formato CSV
 
-1. Clique em **Carregar novo relatório** para carregar o relatório BPA no CAM.
+1. Clique em **Carregar novo relatório** para que você possa fazer upload do relatório do BPA no CAM.
 
    ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/readiness-3.png)
 
    >[!IMPORTANT]
    >O relatório não pode ser carregado se você estiver no modo Incógnito do navegador.
 
-1. Depois de carregar um novo relatório, você verá o relatório Análise de práticas recomendadas.
+1. Depois de carregar um novo relatório, você pode ver o relatório Análise de práticas recomendadas.
 
    ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
 
@@ -73,13 +71,14 @@ Siga as etapas abaixo para usar o cartão de Análise de práticas recomendadas:
 
 Siga as etapas abaixo:
 
-1. Clique em **Visualizar impressão** como mostrado abaixo.
+1. Clique em **Visualizar impressão** ícone.
 
    ![imagem](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview1.png)
 
-1. Clicando em **Visualizar impressão** abre uma nova guia com o relatório exibido em uma visualização imprimível. Clique em **Imprimir** para imprimir o relatório no formato PDF.
+1. Na nova guia com o relatório exibido em uma visualização imprimível, clique em **Imprimir** para imprimir o relatório no formato PDF.
 
    >[!IMPORTANT]
+   >
    >* A opção **Salvar como PDF** O é recomendado e compatível com a funcionalidade acima.
    >* Se o botão de impressão do navegador for usado, ele imprimirá apenas uma página.
 
@@ -98,18 +97,18 @@ Siga as etapas abaixo para exibir relatórios da opção de linha de tendência:
 
    ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
 
-1. Clique no link **..** ícone para exibir o menu suspenso.
+1. Clique em **...**.
 
    ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
 
    >[!IMPORTANT]
    >O relatório exibido é sempre o relatório com a data mais recente.
 
-1. Clique em **Exibir linha de tendência**, conforme mostrado na figura abaixo.
+1. Na lista suspensa, clique em **Exibir linha de tendência**, conforme mostrado na figura abaixo.
 
    ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view2.png)
 
-1. Clicando em **Exibir linha de tendência** abre a exibição de linha de tendência do relatório, como mostrado na figura abaixo.
+1. Clicando **Exibir linha de tendência** abre a exibição de linha de tendência do relatório.
 
    ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view3a.png)
 
@@ -118,6 +117,7 @@ Siga as etapas abaixo para exibir relatórios da opção de linha de tendência:
    >O Relatório de linha de tendência exibe os resultados dos relatórios históricos do BPA em uma representação gráfica.
    >
    >Você verá dois gráficos que exibem a tendência do:
+   > 
    >1. **Informar tendência de Achados**
    >1. **Tendência de Componentes e Modelos Personalizados**
    >
@@ -132,8 +132,9 @@ Explore os seguintes cartões disponíveis na página Relatório de análise de 
 ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
 
 >[!NOTE]
-> Com cada cartão, você tem a capacidade de:
->* clique em cada cartão para abrir a guia associada
+> Com cada cartão, você pode:
+>
+>* abrir a guia associada
 >* marcar todas as guias de relatório (incluindo filtragem) para compartilhamento ou recuperação futura
 >* use o ícone details para exibir os detalhes de cada descoberta de relatório
 
@@ -158,7 +159,7 @@ Você pode filtrar o relatório com base na importância, no subtipo ou na conta
 ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/report-overview3.png)
 
 >[!NOTE]
->Consulte [Interpretação do relatório do Analisador de práticas recomendadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en) para saber mais sobre categorias de descobertas e níveis de importância.
+>Consulte [Interpretação do relatório do Analisador de práticas recomendadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en) para saber mais sobre categorias de descobertas e níveis de importância.
 
 #### Avaliação de práticas recomendadas {#best-practices-assessment}
 
@@ -184,9 +185,7 @@ A opção Avaliação da complexidade da migração fornece uma avaliação da c
 
 ## Usando o Cartão de Planejamento e Configuração {#planning-setup}
 
-Siga esta seção para explorar o cartão de atividade Planejamento e Configuração.
-
-1. Clique no link **Exibir** botão no **Planejamento e configuração** cartão. Esse cartão fornece todo o conteúdo relevante que ajudará você a planejar e configurar a migração do AEM.
+1. Clique em **Exibir** do **Planejamento e configuração** cartão. Esse cartão fornece todo o conteúdo relevante que ajuda a planejar e configurar a migração do AEM.
 
    ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/readiness-view.png)
 
@@ -194,9 +193,7 @@ Siga esta seção para explorar o cartão de atividade Planejamento e Configura�
 
    ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/readiness-5-planning.png)
 
-### Excluindo um relatório de análise de práticas recomendadas {#delete-trendline}
-
-Siga as etapas abaixo para excluir um relatório da exibição Linha de tendência:
+### Exclusão de um relatório de análise de práticas recomendadas da exibição de linha de tendência {#delete-trendline}
 
 >[!IMPORTANT]
 >Um relatório só pode ser excluído quando mais de um relatório foi carregado em um projeto.
@@ -205,11 +202,11 @@ Siga as etapas abaixo para excluir um relatório da exibição Linha de tendênc
 
    ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
 
-1. Clique no link **..** ícone para exibir o menu suspenso.
+1. Clique em **...**.
 
    ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
 
-1. Clique em **Exibir linha de tendência**, conforme mostrado na figura abaixo.
+1. Na lista suspensa, clique em **Exibir linha de tendência**, conforme mostrado na figura abaixo.
 
    ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view2.png)
 
@@ -223,4 +220,4 @@ Siga as etapas abaixo para excluir um relatório da exibição Linha de tendênc
 
 ## O que vem a seguir {#whats-next}
 
-Depois de saber como fazer logon no Cloud Acceleration Manager e criar um projeto, você está pronto para passar a revisar a próxima etapa do [Fase de implementação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=en).
+Depois de saber como fazer logon no Cloud Acceleration Manager e criar um projeto, você está pronto para passar a revisar a próxima etapa do [Fase de implementação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=en).

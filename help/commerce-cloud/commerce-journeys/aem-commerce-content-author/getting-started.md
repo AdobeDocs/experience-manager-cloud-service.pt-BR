@@ -1,35 +1,35 @@
 ---
 title: Introdução à criação da CIF
-description: Introdução à criação da CIF
+description: Introdução à criação da CIF.
 exl-id: 0bef4d8c-0ad3-4ec8-ab08-8c83203b3b68
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
 workflow-type: tm+mt
-source-wordcount: '804'
-ht-degree: 2%
+source-wordcount: '777'
+ht-degree: 3%
 
 ---
 
-# Introdução à criação da CIF do AEM {#getting-started}
+# AEM Introdução à criação do CIF {#getting-started}
 
-Conheça a criação da CIF de AEM.
+Saiba mais sobre a criação do CIF no Adobe Experience Manager (AEM).
 
 ## A história até agora {#story-so-far}
 
-No documento anterior desta jornada de Conteúdo e Comércio do AEM, [Saiba mais sobre o conteúdo e o comércio do AEM](/help/commerce-cloud/introduction.md)No entanto, você aprendeu a teoria básica do que é um CMS headless e agora deve entender os conceitos básicos de Conteúdo e Comércio AEM.
+No documento anterior desta jornada de Conteúdo e Comércio do AEM, [Saiba mais sobre o conteúdo e o comércio do AEM](/help/commerce-cloud/introduction.md)No entanto, você aprendeu a teoria básica e os conceitos de CMS headless e AEM Content and Commerce.
 
 Este artigo se baseia nesses fundamentos.
 
 ## Objetivo {#objective}
 
-Este documento ajuda você a entender como usar a CIF para criação específica de conteúdo e comércio. Depois de ler, você deve:
+Este documento ajuda você a entender como usar o CIF para criação específica de conteúdo e comércio. Depois de ler, você deverá:
 
-* Entenda os conceitos de criação da CIF usando o editor universal
+* Entenda os conceitos de criação de CIF usando o Editor universal
 * Como acessar dados do catálogo de produtos no AEM usando seletores de produto e categoria
 * Como acessar dados de conteúdo e comércio usando o cockpit do produto e o AEM Omnisearch
 
-## Criação da CIF no editor universal {#cif-authoring}
+## Criação de CIF no editor universal {#cif-authoring}
 
-A CIF estende o Editor universal com recursos para acessar os dados do produto em tempo real sem sair do contexto:
+O CIF estende o Editor universal com recursos para acessar os dados do produto em tempo real sem sair do contexto:
 
 Abra o painel lateral e selecione &quot;Produtos&quot; na lista suspensa.
 ![Selecionar tipo de produto](assets/asset-finder-overview.png)
@@ -45,10 +45,10 @@ Se os dados de produto e categoria forem necessários em componentes de comérci
 
 ### Seletor de produtos
 
-Clicar no ícone de pasta abrirá a interface modal do seletor (por exemplo, teaser do produto)
+Clicar no ícone de pasta abre a interface modal do seletor (por exemplo, teaser de produto)
 ![seletor de produto](assets/product-picker-open.png)
 
-Os produtos podem ser encontrados navegando pela estrutura do catálogo à esquerda ou pesquisando. A pesquisa de texto completo respeitará a categoria selecionada e limitará os resultados da pesquisa a essa categoria.
+Os produtos podem ser encontrados navegando pela estrutura do catálogo à esquerda ou pesquisando. A pesquisa de texto completo respeita a categoria selecionada e limita os resultados da pesquisa a essa categoria.
 ![pasta do seletor de produtos](assets/product-picker-folders.png)
 
 Os produtos com variações são marcados com um ícone de pasta que pode ser clicado para mostrar todas as variações.
@@ -57,7 +57,7 @@ Os produtos com variações são marcados com um ícone de pasta que pode ser cl
 
 ### Seletor de Categoria
 
-Funciona como um seletor de produtos. Clicar no ícone de pasta abrirá a interface modal do seletor (por exemplo, carrossel de categorias)
+Funciona como um seletor de produtos. Clicar no ícone de pasta abre a interface modal do seletor (por exemplo, carrossel de categorias)
 ![seletor de categoria](assets/category-picker-open.png)
 
 Navegue pela estrutura do catálogo à esquerda e selecione a categoria.
@@ -65,44 +65,44 @@ Navegue pela estrutura do catálogo à esquerda e selecione a categoria.
 
 ## Cockpit do produto {#cockpit}
 
-O cockpit de produtos é um local central para acessar rapidamente o catálogo de produtos com todo o seu conteúdo enriquecido. Você aprenderá em um dos próximos módulos a enriquecer dados do produto com conteúdo. Por enquanto, vamos nos concentrar no acesso aos dados do produto.
+O cockpit do produto é um local central para acessar rapidamente o catálogo de produtos com todo o conteúdo enriquecido. Você aprenderá em um dos próximos módulos a enriquecer dados do produto com conteúdo. Por enquanto, vamos nos concentrar no acesso aos dados do produto.
 
 No menu principal, clique em commerce para ver uma lista de todos os catálogos de produtos anexados.
 ![item de menu comércio](assets/commerce-menu-item.png)
 
-Isso mostra uma lista de todos os catálogos de produtos do Connect.
+Isso mostra uma lista de todos os catálogos de produtos conectados.
 ![catálogos integrados do cockpit](assets/cockpit-Integrated-catalogs.png)
 
-O catálogo de produtos mostra, por padrão, todas as categorias de primeiro nível com todos os produtos. Clicar em uma categoria abrirá essa categoria com todos os produtos e subcategorias relacionados, incluindo seus produtos.
+O catálogo de produtos mostra, por padrão, todas as categorias de primeiro nível com todos os produtos. Clicar em uma categoria abre essa categoria com todos os produtos e subcategorias relacionados, incluindo seus produtos.
 ![catálogo de produtos cockpit](assets/cockpit-product-catalog.png)
 
 Você pode abrir as propriedades do produto clicando no ícone de propriedade. O ícone é exibido ao passar o mouse sobre um bloco de produto.
 ![propriedades do produto cockpit](assets/cockpit-properties.png)
 
-Todas as propriedades do produto são somente leitura porque os dados são carregados em tempo real do back-end conectado. A alteração das propriedades do produto deve ser feita no sistema de back-end, que é o sistema de registro. A guia **Variantes** só aparecerão se o produto tiver variações. Clicar na guia exibirá todas as variações com seus atributos.
+Todas as propriedades do produto são somente leitura porque os dados são carregados em tempo real do back-end conectado. A alteração das propriedades do produto deve ser feita no sistema de back-end, que é o sistema de registro. A guia **Variantes** só aparecem se o produto tiver variações. Clicar na guia exibe todas as variações com seus atributos.
 ![variantes de produto do cockpit](assets/cockpit-properties-variants.png)
 
-As guias restantes mostram todo o conteúdo de AEM associado ao produto. Abordaremos essas guias em um dos próximos módulos.
+As guias restantes mostram todo o conteúdo de AEM associado ao produto. Essas guias são discutidas em um dos módulos a seguir.
 
 ## AEM Omnisearch {#omnisearch}
 
-Usar o Omnisearch é uma maneira fácil de encontrar conteúdo AEM usando a pesquisa de texto completo. A CIF estende o Omnisearch com pesquisa em texto completo de catálogos de produtos com seu conteúdo AEM associado.
+Usar o Omnisearch é uma maneira fácil de encontrar conteúdo AEM usando a pesquisa de texto completo. O CIF amplia o Omnisearch com a pesquisa em texto completo de catálogos de produtos com seu conteúdo AEM associado.
 ![item de menu comércio](assets/omnisearch.png)
 
-O Omnisearch executará uma pesquisa de texto completo no back-end de comércio para encontrar todos os produtos relacionados. O resultado está listado em **Ver todos os produtos**. O Omnisearch também pesquisará o conteúdo do AEM associado ao produto pesquisado. Os resultados estão listados nas respectivas categorias de AEM. Neste exemplo, um fragmento de conteúdo está relacionado ao produto.
+O Omnisearch executa uma pesquisa de texto completo no back-end de comércio para encontrar todos os produtos relacionados. O resultado está listado em **Ver todos os produtos**. O Omnisearch também pesquisa no AEM o conteúdo associado ao produto pesquisado. Os resultados estão listados nas respectivas categorias de AEM. Neste exemplo, um fragmento de conteúdo está relacionado ao produto.
 
 ## O que vem a seguir {#what-is-next}
 
-Agora que concluiu esta parte do jornada, você deve:
+Agora que concluiu esta parte da jornada, você deve:
 
-* Entenda os conceitos de criação da CIF usando o editor universal
+* Entenda os conceitos de criação de CIF usando o Editor universal
 * Como acessar o catálogo de produtos no AEM usando seletores de produto e categoria
 * Como acessar dados de conteúdo e comércio usando o cockpit do produto e o AEM Omnisearch
 
-Desenvolva esse conhecimento e continue sua jornada revisando o documento a seguir [Gerenciar páginas e modelos do catálogo de produtos](catalog-templates.md), onde você aprenderá a criar e personalizar sua primeira experiência de catálogo de produtos.
+Desenvolva esse conhecimento e continue sua jornada revisando o documento a seguir [Gerenciar páginas e modelos do catálogo de produtos](catalog-templates.md), onde você aprende a criar e personalizar sua primeira experiência de catálogo de produtos.
 
 ## Recursos adicionais {#additional-resources}
 
-Embora seja recomendável seguir para a próxima parte da jornada revisando o documento [Gerenciar páginas e modelos do catálogo de produtos](catalog-templates.md), a seguir estão alguns recursos adicionais e opcionais que aprofundam alguns conceitos mencionados neste documento, mas não são necessários para continuar na jornada.
+Embora seja recomendável seguir para a próxima parte da jornada-[Gerenciar páginas e modelos do catálogo de produtos](catalog-templates.md)-a seguir estão alguns recursos opcionais que aprofundam alguns conceitos mencionados aqui. No entanto, esses recursos opcionais não são necessários para continuar na jornada.
 
 * [Configurando lojas e catálogos](/help/commerce-cloud/getting-started.md#catalog)
