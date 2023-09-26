@@ -4,16 +4,19 @@ description: Saiba como os administradores usam o AEM para criar um novo site us
 feature: Administering
 role: Admin
 exl-id: 50105d03-9d94-4aec-b0a7-0b88e3fe50e0
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
+source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
+workflow-type: tm+mt
 source-wordcount: '127'
 ht-degree: 100%
 
 ---
 
+
 # Criação de um novo site {#new-site}
 
 Saiba como os administradores usam o AEM para criar um novo site usando modelos de site para definir o estilo e a estrutura de seu site.
+
+{{edge-delivery-authoring}}
 
 ## Visão geral {#overview}
 

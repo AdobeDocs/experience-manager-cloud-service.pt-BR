@@ -2,12 +2,13 @@
 title: Manuseio básico
 description: Acostume-se com a navegação pelo AEM e seu uso básico
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
+source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
 workflow-type: tm+mt
 source-wordcount: '2975'
 ht-degree: 98%
 
 ---
+
 
 # Manuseio básico {#basic-handling}
 
@@ -17,6 +18,8 @@ Este documento foi criado para apresentar uma visão geral do manuseio básico a
 >
 >* Algumas funcionalidades podem ou não estar disponíveis dependendo do console. Informações específicas sobre os consoles individuais e suas funcionalidades relacionadas são abordadas com mais detalhes em outras páginas.
 >* Os atalhos de teclado estão disponíveis em todo o AEM, principalmente ao [usar páginas de console](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) e [de edição](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
+
+{{edge-delivery-authoring}}
 
 ## Uma interface de usuário habilitada para toque {#a-touch-enabled-ui}
 

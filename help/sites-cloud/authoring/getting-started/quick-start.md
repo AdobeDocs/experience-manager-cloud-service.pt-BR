@@ -2,12 +2,13 @@
 title: Guia de início rápido para a criação de páginas
 description: Um guia rápido de alto nível para começar a criar conteúdo de página
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
 workflow-type: tm+mt
 source-wordcount: '1568'
 ht-degree: 98%
 
 ---
+
 
 # Guia de início rápido para a criação de páginas {#quick-guide-to-authoring-pages}
 
@@ -20,6 +21,8 @@ Para obter os detalhes completos sobre a criação com o AEM, consulte:
 
 * [Conceitos de criação](/help/sites-cloud/authoring/getting-started/concepts.md)
 * [Manuseio básico](/help/sites-cloud/authoring/getting-started/basic-handling.md)
+
+{{edge-delivery-authoring}}
 
 ## Algumas dicas rápidas {#a-few-quick-hints}
 

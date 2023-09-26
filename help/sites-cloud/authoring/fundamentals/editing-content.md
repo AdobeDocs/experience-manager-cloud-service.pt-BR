@@ -2,12 +2,13 @@
 title: Editar conteúdo da página
 description: Depois que a página é criada, é possível editar o conteúdo para fazer as atualizações necessárias
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
 workflow-type: tm+mt
 source-wordcount: '2983'
 ht-degree: 97%
 
 ---
+
 
 # Editar conteúdo da página{#editing-page-content}
 
@@ -31,6 +32,8 @@ O conteúdo é adicionado usando [componentes](/help/sites-cloud/authoring/featu
 >[!TIP]
 >
 >Quando estiver no modo de **Edição**, os links em seu conteúdo ficam visíveis, mas **não ficam acessíveis**. Use o [modo de Visualização](#previewing-pages) se você deseja navegar usando os links no seu conteúdo.
+
+{{edge-delivery-authoring}}
 
 ## Barra de ferramentas da página {#page-toolbar}
 

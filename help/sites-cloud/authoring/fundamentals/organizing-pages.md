@@ -2,12 +2,13 @@
 title: Criar e organizar páginas
 description: Saiba como organizar seu site criando e gerenciando páginas com AEM.
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
 workflow-type: tm+mt
 source-wordcount: '2543'
 ht-degree: 99%
 
 ---
+
 
 # Criar e organizar páginas {#creating-and-organizing-pages}
 
@@ -26,6 +27,8 @@ Este documento descreve como criar e gerenciar páginas com o Adobe Experience M
 >[!TIP]
 >
 >Há vários [atalhos de teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) que você pode usar no console Sites que tornam a organização das suas páginas mais eficiente.
+
+{{edge-delivery-authoring}}
 
 ## Organizar seu site {#organizing-your-website}
 
