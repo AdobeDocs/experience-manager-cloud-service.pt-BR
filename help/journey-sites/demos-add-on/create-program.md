@@ -2,10 +2,10 @@
 title: Criar programa
 description: Saiba como configurar um novo programa e pipeline para implantar o complemento.
 exl-id: 06287618-0328-40b1-bba8-84002283f23f
-source-git-commit: 7c33a618f474914ca80dff525552017c55a32517
-workflow-type: ht
-source-wordcount: '709'
-ht-degree: 100%
+source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
+workflow-type: tm+mt
+source-wordcount: '710'
+ht-degree: 58%
 
 ---
 
@@ -16,7 +16,7 @@ Saiba como configurar um novo programa e pipeline para implantar o complemento.
 
 ## A história até agora {#story-so-far}
 
-No documento anterior da jornada do Complemento de demonstrações de referência do AEM, [Entender a instalação do complemento de demonstração de referência,](installation.md) você aprendeu como funciona o processo de instalação do Complemento de demonstrações de referência, ilustrando como as diferentes partes funcionam juntas. Agora você deve:
+No documento anterior da jornada do complemento de demonstrações de referência do Adobe Experience Manager (AEM), [Entender a instalação do complemento de demonstração de referência,](installation.md) você aprendeu como funciona o processo de instalação do Complemento de demonstrações de referência, ilustrando como as diferentes partes funcionam juntas. Agora você deve:
 
 * Ter uma compreensão básica do Cloud Manager.
 * Entender como os pipelines entregam conteúdo e configuração ao AEM.
@@ -26,15 +26,15 @@ Este artigo se baseia nesses fundamentos e aborda a primeira etapa de configura�
 
 ## Objetivo {#objective}
 
-Este documento ajuda você a entender como configurar um novo programa e um pipeline para implantar o complemento. Depois de ler esse documento, você deverá:
+Este documento ajuda você a entender como configurar um novo programa e um pipeline para implantar o complemento. Depois de ler, você poderá fazer o seguinte:
 
-* Entender como usar o Cloud Manager para criar um novo programa.
-* Saber como ativar o complemento de demonstrações de referência para o novo programa.
-* Poder executar um pipeline para implantar o conteúdo complementar.
+* Entenda e explique como usar o Cloud Manager para criar um programa.
+* Ative o Complemento de demonstrações de referência para o novo programa.
+* Execute um pipeline para poder implantar o conteúdo complementar.
 
 ## Criar um programa {#create-program}
 
-Depois de fazer logon no Cloud Manager, você pode criar um novo programa de sandbox para fins de teste e demonstração.
+Depois de fazer logon no Cloud Manager, você pode criar um programa de sandbox para fins de teste e demonstração.
 
 >[!NOTE]
 >
@@ -56,20 +56,20 @@ Depois de fazer logon no Cloud Manager, você pode criar um novo programa de san
 
    ![Caixa de diálogo Criar programa](assets/create-program.png)
 
-1. Na caixa de diálogo **Configurar sua sandbox** da tabela **Soluções e complementos**, expanda o item **Sites** na lista tocando ou clicando nele e, em seguida, marque a opção **Demonstrações de referência**.
+1. No **Configurar sua sandbox** no **Soluções e complementos** , expanda a **Sites** entrada na lista tocando ou clicando nela e, em seguida, marque **Demonstrações de referência**.
 
-   * Se você também quiser criar demonstrações para o AEM Screens, marque a opção **Screens** na lista também. Toque ou clique em **Atualizar**.
+   * Se você também quiser criar demonstrações para o AEM Screens, verifique a **Screens** opção na lista. Toque ou clique em **Atualizar**.
 
    ![Seleção de complemento para demonstração de referência na configuração do programa](assets/select-reference-demo-add-on.png)
 
 
-1. Toque ou clique em **Criar** e o Cloud Manager começará a configurar seu programa de sandbox. A tela de visão geral do programa é exibida e um breve banner de notificação indica que o processo foi iniciado. Um cartão foi adicionado à página de visão geral do novo programa. O processo de configuração levará alguns minutos para ser concluído.
+1. Toque ou clique em **Criar** e o Cloud Manager começará a configurar seu programa de sandbox. A tela de visão geral do programa é exibida e um breve banner de notificação indica que o processo foi iniciado. Um cartão foi adicionado à página de visão geral do novo programa. O processo de instalação leva alguns minutos para ser concluído.
 
 1. Quando a configuração for concluída, o cartão do ambiente na página de visão geral mostrará seu status como **Pronto**. Toque ou clique no cartão para abrir o ambiente.
 
    ![Criação do programa concluída](assets/ready.png)
 
-1. Seu ambiente está pronto e o complemento agora está habilitado como uma opção, mas é necessário implantar o conteúdo da demonstração no AEM para que esteja disponível. Para fazer isso, toque ou clique no botão de reticências ao lado do pipeline Implantar no desenvolvimento no cartão **Pipelines** e selecione **Executar**.
+1. Seu ambiente está pronto e o complemento agora está habilitado como uma opção, mas é necessário implantar o conteúdo da demonstração no AEM para que esteja disponível. Para fazer isso, toque ou clique no botão de reticências ao lado do pipeline Implantar no desenvolvimento na **Pipelines** e selecione **Executar**.
 
    ![Início](assets/run.png)
 
@@ -77,18 +77,18 @@ Depois de fazer logon no Cloud Manager, você pode criar um novo programa de san
 
    ![Implantação](assets/deployment.png)
 
-O pipeline pode levar vários minutos para ser concluído. Após a conclusão, o complemento e seu conteúdo de demonstração estarão disponíveis para uso no ambiente de criação do AEM.
+O pipeline pode levar vários minutos para ser concluído. Uma vez concluído, o complemento e seu conteúdo de demonstração estarão disponíveis para uso no ambiente de criação do AEM.
 
 ## O que vem a seguir {#what-is-next}
 
 Agora que concluiu esta parte da jornada do complemento de demonstração de referência do AEM, você deve:
 
-* Entender como usar o Cloud Manager para criar um novo programa.
-* Saber como ativar o complemento de demonstrações de referência para o novo programa.
+* Saiba como usar o Cloud Manager para criar um programa.
+* Saber como ativar o Complemento de demonstrações de referência para o programa.
 * Poder executar um pipeline para implantar o conteúdo complementar.
 
-Aproveite esse conhecimento e prossiga com sua jornada de Complementos de demonstração de referência do AEM revendo o documento [Criar um site de demonstração,](create-site.md) em que você aprenderá a criar um site de demonstração no AEM com base em uma biblioteca de modelos pré-configurados que foram implantados pelo pipeline.
+Aproveite esse conhecimento e prossiga com sua jornada de complemento de demonstração de referência de AEM revisando a seguir [Criar um site de demonstração](create-site.md). Lá, você aprende a criar um site de demonstração no AEM com base em uma biblioteca de modelos pré-configurados que foram implantados pelo pipeline.
 
 ## Recursos adicionais {#additional-resources}
 
-* [Documentação do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=pt_BR) - Se quiser obter mais detalhes sobre os recursos do Cloud Manager, consulte diretamente os documentos técnicos detalhados.
+* [Documentação do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=pt_BR) - Se quiser obter mais detalhes sobre os recursos do Cloud Manager, consulte diretamente os documentos técnicos detalhados.
