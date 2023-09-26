@@ -3,9 +3,9 @@ title: Criação de fragmentos de conteúdo
 description: Entenda como criar conteúdo para os fragmentos de conteúdo e, em seguida, crie variações desse conteúdo de acordo com a finalidade. Isso proporciona flexibilidade adicional para entregas headless e criação de páginas.
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
+source-git-commit: 2fa22bf2feb6b8697877b345bc29821e30b1c6a1
 workflow-type: tm+mt
-source-wordcount: '2208'
+source-wordcount: '2227'
 ht-degree: 4%
 
 ---
@@ -484,7 +484,7 @@ A variável **Campos** O painel lista todos os campos no Fragmento de conteúdo.
    <td><p> <img src="assets/cf-authoring-json-icon.png"> </p></td>
   </tr>
   <tr>
-   <td><p><b>Espaço reservado da guia</b></p><p>Embora não seja representado por um ícone real, um <b>Espaço reservado da guia</b> O é representado no painel esquerdo, bem como no painel central.</p> </td>
+   <td><p><b>Espaço reservado da guia</b></p><p>Embora não seja representado por um ícone real, um <b>Espaço reservado da guia</b> é representado no painel esquerdo. <br>Ele também é representado no painel central, horizontalmente como mostrado ou em uma lista suspensa (quando houver muitos para mostrar horizontalmente).</p> </td>
    <td><p> <img src="assets/cf-authoring-tab-icon.png"> </p></td>
   </tr>
  </tbody>
