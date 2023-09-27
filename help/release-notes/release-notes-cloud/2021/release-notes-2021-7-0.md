@@ -1,11 +1,11 @@
 ---
-title: Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2021.7.0.
-description: Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2021.7.0.
+title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2021.7.0.
+description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2021.7.0.
 exl-id: 848f6a29-2e0f-4976-8ed7-6b7f69408c1b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: f956b8379b5b93bc00e25f0eec641430c5565e34
 workflow-type: tm+mt
-source-wordcount: '1314'
-ht-degree: 36%
+source-wordcount: '1319'
+ht-degree: 22%
 
 ---
 
@@ -15,7 +15,7 @@ A seção a seguir descreve as Notas de versão gerais da versão atual (mais re
 
 >[!NOTE]
 >
->A partir daqui, você pode navegar até as notas de versão das versões anteriores; por exemplo, para aquelas em 2020, 2021 e assim por diante.
+>Aqui, você pode navegar até as notas de versão das versões anteriores; por exemplo, para aquelas em 2020 e 2021.
 
 >[!NOTE]
 >
@@ -34,8 +34,8 @@ Dê uma olhada no [Visão geral da versão de julho de 2021](https://video.tv.ad
 
 ### Novidades {#what-is-new-foundation}
 
-* Configuração mais flexível do dispatcher: os projetos podem ser organizados mais facilmente. Por exemplo, agora você pode incluir vários arquivos de regras de regravação que refletem a estrutura do site. [Saiba mais sobre](/help/implementing/dispatcher/disp-overview.md#validation-debug) esse modo flexível, incluindo como estruturar a configuração do dispatcher para que você possa aproveitar ao máximo.
-* A interface de replicação de árvore na guia &quot;Distribuir&quot; do agente de replicação deve ser considerada obsoleta e deve ser removida após 30 de setembro. [Saiba mais sobre](/help/operations/replication.md#tree-activation) estratégias alternativas de replicação.
+* Configuração mais flexível do Dispatcher: os projetos podem ser organizados mais facilmente. Por exemplo, agora você pode incluir vários arquivos de regras de regravação que refletem a estrutura do site. [Saiba mais sobre](/help/implementing/dispatcher/disp-overview.md#validation-debug) esse modo flexível, incluindo como estruturar sua configuração do Dispatcher para que você possa aproveitar ao máximo.
+* A interface de replicação de árvore na guia &quot;Distribuir&quot; do agente de replicação deve ser considerada obsoleta e foi removida após 30 de setembro de 2021. [Saiba mais sobre](/help/operations/replication.md#tree-activation) estratégias alternativas de replicação.
 * Pacote `org.apache.sling.datasource-1.0.4.jar` O suporte à fonte de dados do Sling foi removido, pois tem funcionalidades desatualizadas e não está em uso pelos clientes.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
@@ -44,11 +44,11 @@ Dê uma olhada no [Visão geral da versão de julho de 2021](https://video.tv.ad
 
 * A funcionalidade de Automatização de conteúdo permite [!DNL Experience Manager Assets] use o [!DNL Adobe Creative Cloud] APIs para automatizar a produção de ativos em escala. Isso melhora a velocidade do conteúdo diminuindo drasticamente o tempo gasto e as iterações necessárias para criar variações do mesmo ativo. A funcionalidade não requer programação e funciona no DAM. Consulte [gerar variações de ativos usando a integração com o Creative Cloud](/help/assets/cc-api-integration.md).
 
-* [!DNL Experience Manager Assets] inclui o [!DNL Document Cloud] Visualizador de PDF para visualizar documentos PDF nativamente. Esse recurso permite que os usuários visualizem arquivos PDF de várias páginas sem processamento ou conversão de arquivos. Este recurso melhora a paridade com o [!DNL Experience Manager] 6.5. Os controles disponíveis no visualizador incluem zoom, navegar até páginas, desencaixar controles e visualizar em tela inteira. O caso dos usuários também pode ser visualizado e ir para páginas e marcadores. Comentários no próprio arquivo são aceitos. Comentários e anotações sobre o conteúdo no arquivo PDF serão adicionados em uma versão futura.
+* [!DNL Experience Manager Assets] inclui o [!DNL Document Cloud] Visualizador de PDF para visualizar documentos PDF nativamente. Esse recurso permite que os usuários visualizem arquivos PDF de várias páginas sem processamento ou conversão de arquivos. Este recurso melhora a paridade com o [!DNL Experience Manager] 6.5. Os controles disponíveis no visualizador incluem zoom, navegar até páginas, desencaixar controles e visualizar em tela inteira. Os usuários também podem visualizar e ir para páginas e marcadores. Comentários no próprio arquivo são aceitos. Comentários e anotações sobre o conteúdo no arquivo PDF estão planejados para uma versão futura.
 
   ![Visualizar arquivos PDF em [!DNL Experience Manager] uso do Visualizador de PDF](/help/assets/assets/preview-pdf-file-viewer.png)
 
-* A funcionalidade de download do Linkshare usa downloads assíncronos que aumentam a velocidade de download. Consulte [Baixar ativos compartilhados usando o compartilhamento de link](/help/assets/download-assets-from-aem.md#link-share-download).
+* A funcionalidade de download Compartilhamento de link usa downloads assíncronos que aumentam a velocidade de download. Para obter mais informações, consulte [Baixar ativos compartilhados usando o compartilhamento de link](/help/assets/download-assets-from-aem.md#link-share-download).
 
   ![Baixar caixa de entrada](/help/assets/assets/download-inbox.png)
 
@@ -95,15 +95,15 @@ A API `com.day.cq.dam.api.collection.SmartCollection` não está disponível em 
 
 * **Externalizador de dados variáveis**: é possível salvar dados de variáveis de fluxo de trabalho do AEM em um sistema de armazenamento externo gerenciado por sua organização.
 
-* **Documento de registro baseado em acroforma**: também é possível [usar o PDF do Adobe Acrobat Form (Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) como um modelo para o Documento de registro além do modelo de formulário baseado em XFA.
+* **Documento de registro baseado em acroforma**: também é possível [usar o PDF do Adobe Acrobat Form (Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=pt-br) como um modelo para o Documento de registro além do modelo de formulário baseado em XFA.
 
-* **Conector do armazenamento de dados do Microsoft Azure**: Agora você pode [conectar o Modelo de dados do formulário ao Armazenamento do Microsoft Azure](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html). Ele permite recuperar e armazenar dados de formulário adaptáveis para o Armazenamento do Microsoft Azure como um BLOB.
+* **Conector do armazenamento de dados do Microsoft® Azure**: Agora você pode [conectar o Modelo de dados do formulário ao Armazenamento do Microsoft® Azure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html). Ele permite recuperar e armazenar dados de formulário adaptáveis para o Armazenamento do Microsoft® Azure como um BLOB.
 
 ## Complemento CIF {#cloud-services-cif}
 
 ### Novidades {#what-is-new-cif}
 
-* Componentes principais da CIF v2
+* Componentes principais do CIF v2
    * Configurações simplificadas e aprimoradas para URL e SEO de PDP/PLP
    * Indicador visual para dados de produtos preparados no modo de criação para melhor visibilidade de alterações futuras
    * Novo componente de mapa de site para páginas de conteúdo e comércio
@@ -116,7 +116,7 @@ A API `com.day.cq.dam.api.collection.SmartCollection` não está disponível em 
 
 * As configurações do Provedor de conteúdo agora são validadas durante a criação ou atualização.
 
-* Todas as exibições têm colunas de pastas.
+* Todas as exibições de exibição têm colunas de pastas.
 
 * Você pode expandir a Estrutura de conteúdo do Screens.
 
@@ -124,9 +124,9 @@ A API `com.day.cq.dam.api.collection.SmartCollection` não está disponível em 
 
 * Foi atualizado o link da Ajuda para corresponder à nova documentação da nuvem do Screens.
 
-* Desatribuir listas de reprodução e não permitir a remoção de listas de reprodução com reprodutores atribuídos, agora funciona.
+* Cancela a atribuição de listas de reprodução e proíbe a remoção de listas de reprodução com reprodutores atribuídos, agora funciona.
 
-* O player agora baixa novamente os ativos quando o cache &quot;ALL&quot; é limpo.
+* Agora o reprodutor baixa novamente os Ativos quando o Cache &quot;ALL&quot; é limpo.
 
 * O Agendamento repetido agora funciona, se a variável *Hora de término* está definido para o dia seguinte.
 
@@ -138,7 +138,7 @@ A API `com.day.cq.dam.api.collection.SmartCollection` não está disponível em 
 
 ### Novidades {#what-is-new-xml-documentation}
 
-O XML Documentation para o Experience Manager as a Cloud Service está disponível no geral. Ele permite que os clientes as a Cloud Service do Experience Manager addon da XML Documentation importem, criem, gerenciem e entreguem conteúdo técnico em vários canais, incluindo o Experience Manager Sites.
+O XML Documentation para o Experience Manager as a Cloud Service está disponível no geral. Ele permite que os clientes do Experience Manager as a Cloud Service adquiram um complemento do XML Documentation para importar, criar, gerenciar e fornecer conteúdo técnico em vários canais, incluindo o Experience Manager Sites.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -151,23 +151,23 @@ A próxima versão está planejada para 12 de agosto de 2021.
 
 ### Novidades {#what-is-new-cm-july}
 
-* Os clientes agora podem usar os JDKs Azul 8 e 11 para seus processos de compilação do Cloud Manager e podem optar por usar um desses JDKs para os plug-ins Maven compatíveis com cadeias de ferramentas *ou* para toda a execução do processo Maven.
+* Os clientes agora podem usar os JDKs Azul 8 e 11 para seus processos de compilação do Cloud Manager e podem optar por usar um desses JDKs para os plug-ins Maven compatíveis com cadeias de ferramentas *ou* toda a execução do processo Maven.
 
-* O IP de saída agora será registrado no arquivo de log da etapa de compilação.
+* O IP de saída agora está registrado no arquivo de log da etapa de compilação.
 
-* Ambientes de Preparo e Produção que executam versões antigas do AEM agora informarão o status **Atualização disponível**.
+* Ambientes de preparo e produção que executam versões antigas do AEM agora relatam o status de **Atualização disponível**.
 
 * O número máximo de certificados SSL suportados aumentou para 20 por programa.
 
 * O número máximo de domínios que podem ser configurados aumentou para 500 por ambiente.
 
-* O botão **Gerenciar Git** foi redefinido para **Acessar informações do Git** e a caixa de diálogo foi atualizada visualmente.
+* A variável **Gerenciar Git** O botão foi renomeado para **Acessar informações do Git** e a caixa de diálogo foi atualizada visualmente.
 
 * A versão do Arquétipo de Projetos AEM usada pelo Cloud Manager foi atualizada para a versão 28.
 
 ### Correções de erros {#bug-fixes-cm-july}
 
-* Em algumas situações, a opção para visualizar não estava disponível ao associar uma Lista de permissões de IP a um ambiente.
+* Em algumas situações, a opção Visualizar não estava disponível ao vincular uma inclui na lista de permissões IP a um ambiente.
 
 * Ao navegar manualmente para a página de detalhes de uma execução não existente, nenhum erro era exibido, apenas uma tela de carregamento infinita.
 
@@ -179,7 +179,7 @@ A próxima versão está planejada para 12 de agosto de 2021.
 
 ### Problemas conhecidos {#known-issues-cm-july}
 
-Os clientes que alternam para usar os JDKs Azul devem estar cientes de que nem todos os aplicativos existentes serão compilados sem erro no JDK Azul. É altamente recomendável testar localmente antes de trocar.
+Os clientes que alternam para usar os JDKs Azul devem saber que nem todos os aplicativos existentes são compilados sem erro no JDK Azul. O Adobe recomenda que você teste localmente antes de alternar.
 
 ## Cloud Acceleration Manager {#cam}
 
@@ -189,8 +189,8 @@ A data de lançamento do Cloud Acceleration Manager é 15 de julho de 2021.
 
 ### Novidades {#what-is-new-cam}
 
-O Cloud Acceleration Manager é um aplicativo baseado em nuvem projetado para orientar suas equipes de TI durante toda a jornada de transição, começando pelo planejamento até a ativação do Cloud Service. Configure suas equipes para uma migração bem-sucedida com práticas, dicas, documentação e ferramentas recomendadas pela Adobe, para ajudar em cada fase da jornada para o AEM as a Cloud Service. Saiba mais [aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en).
+O Cloud Acceleration Manager é um aplicativo baseado em nuvem projetado para orientar suas equipes de TI durante toda a jornada de transição, começando pelo planejamento até a ativação do Cloud Service. Prepare sua equipe para a migração bem-sucedida com práticas recomendadas, dicas, documentação e ferramentas do Adobe para ajudar em cada fase da jornada a AEM como Cloud Service. Saiba mais [aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en).
 
 >[!NOTE]
 >
-> Marque isto [Vídeo de demonstração do Cloud Acceleration Manager](https://video.tv.adobe.com/v/335547).
+> Confira isto [Vídeo de demonstração do Cloud Acceleration Manager](https://video.tv.adobe.com/v/335547).
