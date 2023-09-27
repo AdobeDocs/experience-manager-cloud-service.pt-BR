@@ -2,10 +2,10 @@
 title: Introdução à jornada de integração do AEM as a Cloud Service
 description: Comece aqui para obter uma visão geral da jornada guiada por meio do processo de integração para o AEM as a Cloud Service.
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
-source-git-commit: d76a0782c72045698e8a595574f9e4c64c3ebaff
+source-git-commit: 7553d3c9f82c8b675af5f704a48bc316ba0d4885
 workflow-type: tm+mt
-source-wordcount: '1220'
-ht-degree: 96%
+source-wordcount: '1221'
+ht-degree: 95%
 
 ---
 
@@ -86,7 +86,7 @@ Os artigos a seguir descrevem em detalhes os principais conceitos de integraçã
 
 >[!NOTE]
 >
->O Edge Delivery Services é um novo conjunto de serviços combináveis que permite um ambiente de desenvolvimento rápido, em que os autores podem atualizar e publicar rapidamente e novos sites são lançados rapidamente. Para saber mais sobre os serviços Edge Delivery, consulte [Página de introdução](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html).
+>O Edge Delivery Services é um novo conjunto de serviços de composição que permitem um ambiente de desenvolvimento rápido e flexível, em que os autores podem atualizar e publicar rapidamente e novos sites são lançados rapidamente. Para saber mais sobre os serviços Edge Delivery, consulte [Página de introdução](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html).
 
 ## O que vem a seguir {#what-is-next}
 
