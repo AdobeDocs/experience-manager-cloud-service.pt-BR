@@ -2,10 +2,10 @@
 title: Visualização de conteúdo
 description: Saiba como usar o serviço de visualização do AEM para visualizar o conteúdo antes de ele ser publicado.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '274'
-ht-degree: 100%
+source-git-commit: 1804eacb5399dc38c97ff953031666711b9a0e4f
+workflow-type: tm+mt
+source-wordcount: '316'
+ht-degree: 86%
 
 ---
 
@@ -15,6 +15,10 @@ ht-degree: 100%
 O AEM oferece um serviço de visualização do Sites que permite que desenvolvedores e autores de conteúdo visualizem a experiência final de um site antes que ele chegue ao ambiente de publicação e esteja disponível publicamente.
 
 Ele facilita a visualização de experiências de página que de outra forma não estariam visíveis no ambiente do autor, como transições de página e demais conteúdos disponíveis somente do lado da publicação.
+
+>[!NOTE]
+>
+>Como o conteúdo é *publicado* no ambiente de pré-visualização, ele é acessível por URL (portanto, o não precisa de acesso ao AEM).
 
 Para obter mais detalhes sobre os ambientes de visualização, consulte [Gerenciamento de ambientes](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
@@ -31,6 +35,9 @@ Para obter mais detalhes sobre os ambientes de visualização, consulte [Gerenci
 
 1. Uma caixa de diálogo exibirá os URLs para acessar o conteúdo no ambiente de visualização.
 
+   >[!NOTE]
+   >
+   >Como o conteúdo é *publicado* no ambiente de pré-visualização, ele é acessível por URL (portanto, o não precisa de acesso ao AEM).
 
 Como alternativa ao uso dos URLs exibidos no assistente para ver o conteúdo da visualização, você também pode anexar `preview-` ao URL de publicação da sua instância de produção.
 
