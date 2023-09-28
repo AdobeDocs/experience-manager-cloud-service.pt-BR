@@ -2,7 +2,7 @@
 title: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: b147c80581bcb554ae0b4ac971c5f98e7160d1df
+source-git-commit: c62ae58240298604e6cd7737678603eb734434b3
 workflow-type: tm+mt
 source-wordcount: '1363'
 ht-degree: 8%
@@ -94,15 +94,9 @@ A Ativação de recursos 2023.10.0 fornece o conjunto completo de recursos para 
 * FORMS-10248: No Adaptive Forms com base em Componentes principais, definir o valor de um botão de opção ou caixa de seleção quando o tipo de valor de dados for Booleano não está funcionando como esperado.
 * FORMS-8114: o seletor de datas e o padrão não são lidos corretamente pelo leitor de tela NVDA. Especificamente, ao usar o leitor de tela NVDA, o seletor de datas sem um padrão é lido corretamente. No entanto, quando um padrão é aplicado ao seletor de datas, ele é lido como uma tabela em vez de ser interpretado corretamente.
 
-
-
-
-
-
-
 ### Problemas conhecidos {#known-issues-13665}
 
-Nenhum
+Nenhum.
 
 ### Tecnologias integradas {#embedded-tech-13665}
 
