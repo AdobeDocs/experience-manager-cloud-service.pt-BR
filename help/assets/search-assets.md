@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: fb70abb2aa698303c462e38ad3bec10d028f804e
+source-git-commit: c1e115e0fcf7e168c26f810f0803950df50b2c6f
 workflow-type: tm+mt
-source-wordcount: '5532'
-ht-degree: 7%
+source-wordcount: '5561'
+ht-degree: 6%
 
 ---
 
@@ -46,12 +46,26 @@ Use o **[!UICONTROL Filtros]** painel para pesquisar ativos, pastas, tags e meta
 ## Entender a interface de pesquisa de ativos {#searchui}
 
 Familiarize-se com a interface de pesquisa de ativos e as ações disponíveis.
-
-![Entender a interface de resultados de pesquisa do Experience Manager Assets](assets/aem_search_results.png)
-
+<!--
+![Understand Experience Manager Assets search results interface](assets/aem_search_results.png)
+-->
+![Entender a interface de resultados de pesquisa do Experience Manager Assets](assets/aem-search-interface.png)
 *Figura: Entenda [!DNL Experience Manager Assets] interface de resultados da pesquisa.*
 
-**A.** Salve a pesquisa como uma coleção inteligente. **B.** Filtros ou predicados para limitar os resultados da pesquisa. **C** Exibir arquivos, pastas ou ambos. **D.** Clique em Filtros para abrir ou fechar o painel à esquerda. **E.** O local de pesquisa é DAM. **F** Campo Omnisearch com palavra-chave de pesquisa fornecida pelo usuário. **G.** Selecione os resultados da pesquisa carregada. **H.** Número de resultados da pesquisa exibidos do total de resultados da pesquisa. **I.** Fechar pesquisa. **J.** Alterne entre a exibição de cartão e a exibição de lista.
+**A.** Salve a pesquisa como uma coleção inteligente.
+**B.** Filtros ou predicados para limitar os resultados da pesquisa.
+**C** Exibir arquivos, pastas ou ambos.
+**D.** O local de pesquisa é DAM.
+**E** Acessar pesquisas salvas.
+**F** Clique em Filtros para abrir ou fechar o painel à esquerda.
+**G.** Mostra Ativos como pesquisa padrão.
+**H.** O local de pesquisa é DAM.
+**I.** Campo Omnisearch com palavra-chave de pesquisa fornecida pelo usuário.
+**J.** Selecione os resultados da pesquisa carregada.
+**K.** Classificar por Criado, Modificado, Nome, Nenhum.
+**L.** Classifique por ordem crescente ou decrescente.
+**M** Número de resultados da pesquisa exibidos do total de resultados da pesquisa. **N.** Fechar pesquisa.
+**O** Alterne entre a exibição de cartão e a exibição de lista.
 
 ### Aspectos da pesquisa dinâmica {#dynamicfacets}
 
@@ -160,7 +174,10 @@ Para configurar o tamanho do lote de ativos:
 
 **Pesquisar ativos em uma pasta**: é possível limitar a pesquisa a uma pasta específica. No **[!UICONTROL Filtros]** adicionar o caminho de uma pasta. Você pode selecionar apenas uma pasta por vez.
 
-![Limitar os resultados da pesquisa a uma pasta adicionando um caminho de pasta no painel Filtros](assets/search_folder_select.gif)
+![Limitar os resultados da pesquisa a uma pasta adicionando um caminho de pasta no painel Filtros](assets/limiting-search.gif)
+<!--
+![Limit search results to a folder by adding a folder path in Filters panel](assets/search_folder_select.gif)
+-->
 
 *Figura: limite os resultados da pesquisa a uma pasta adicionando um caminho de pasta no painel Filtros.*
 
@@ -277,7 +294,9 @@ Passe os seguintes parâmetros de solicitação em um URL para iniciar o seletor
 
 Para acessar a interface do seletor de ativos, acesse `https://[aem_server]:[port]/aem/assetpicker`. Navegue até a pasta desejada e selecione um ou mais ativos. Como alternativa, pesquise o ativo desejado na caixa Omnisearch, aplique o filtro conforme necessário e selecione-o.
 
-![Procurar e selecionar ativo no seletor de ativos](assets/assetpicker.png)
+![Procurar e selecionar ativo no seletor de ativos](assets/select-asset.png)
+
+<!--![Browse and select asset in the asset selector](assets/assetpicker.png)-->
 
 *Figura: Procure e selecione um ativo no seletor de ativos.*
 
