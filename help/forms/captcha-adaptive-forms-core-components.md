@@ -2,19 +2,16 @@
 title: Usar o Google reCAPTCHA em um formulário adaptável AEM
 description: Melhore a segurança dos formulários com o serviço Google reCAPTCHA sem esforço. Guia passo a passo no interior!
 topic-tags: Adaptive Forms, author
-hide: true
-hidefromtoc: true
-Keywords: Google reCAPTCHA service, Adaptive Forms, CAPTCHA challenge, Bot prevention, Core Components, Form submission security, Form spam prevention
-source-git-commit: 496705937a01d99f988ba83f6d8984fc86dc8bfa
+keywords: Serviço Google reCAPTCHA, Forms adaptável, Desafio de CAPTCHA, Prevenção de bot, Componentes principais, Segurança de envio de formulário, Prevenção de spam de formulário
+source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '945'
 ht-degree: 12%
 
 ---
 
-# Usar o Google reCAPTCHA em um formulário adaptável AEM com base em componentes principais {#using-reCAPTCHA-in-adaptive-forms}
 
-<span class="preview"> Esse é um recurso de pré-lançamento acessível por meio de nossa [canal de pré-lançamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+# Usar o Google reCAPTCHA em um formulário adaptável AEM com base em componentes principais {#using-reCAPTCHA-in-adaptive-forms}
 
 | Aplica-se a | Link do artigo |
 | -------- | ---------------------------- |
@@ -54,13 +51,9 @@ Para conectar seu ambiente do AEM Forms com o serviço reCAPTCHA da Google
    1. Selecione um Contêiner de configuração, criado ou atualizado na seção anterior. Toque em **[!UICONTROL Criar]**.
    1. Especificar **[!UICONTROL Título]**, **[!UICONTROL Nome]**, **[!UICONTROL Chave do site]**, e **[!UICONTROL Chave secreta]** para o serviço reCAPTCHA (Obtido na Etapa 1). Toque em **[!UICONTROL Criar]**.
 
-
    ![Configure o Cloud Service para conectar seu ambiente AEM Forms com o serviço reCAPTCHA da Google](/help/forms/assets/captcha-configuration.gif)
 
-
-
    Depois que o serviço reCAPTCHA é configurado, ele é disponibilizado para uso em um Formulário adaptável. Para obter mais informações, consulte [uso do Google reCAPTCHA em um formulário adaptável](#using-reCAPTCHA).
-
 
 ## Usar o Google reCAPTCHA em um formulário adaptável {#using-reCAPTCHA}
 

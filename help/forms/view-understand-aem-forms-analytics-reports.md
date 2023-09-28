@@ -1,21 +1,25 @@
 ---
 title: Exibição e noções básicas dos relatórios de análise do Adaptive Forms
 description: O Forms adaptável integra-se perfeitamente ao Adobe Analytics para capturar e rastrear métricas de desempenho para seus formulários e documentos publicados.
+keywords: Exibição e noções básicas dos relatórios do Adaptive Forms Analytics, relatório do Adobe Analytics, relatório do Forms Analytics
 topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 4fc6d29cd008b04ad97ceb17201c1f8d0e72439e
+source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 0%
+source-wordcount: '988'
+ht-degree: 2%
 
 ---
 
 
 # Exibição e noções básicas dos relatórios de análise do Adaptive Forms {#viewing-and-understanding-aem-forms-analytics-reports}
 
-<span class="preview"> Esse é um recurso de pré-lançamento acessível por meio de nossa [canal de pré-lançamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | Este artigo |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html) |
 
 No cenário de rápida evolução da análise digital, manter-se atualizado com as tendências globais é fundamental para tomar decisões informadas e otimizar as experiências digitais. Para resolver isso, o Adaptive Forms integra-se perfeitamente ao Adobe Analytics para capturar e rastrear métricas de desempenho para seus formulários e documentos publicados. O objetivo por trás da análise dessas métricas é tomar decisões orientadas por dados, usando métricas e análises para melhorar a usabilidade e a eficácia dos formulários.
 
@@ -102,3 +106,9 @@ Métricas como exibições de ajuda, erros de validação e visitas de campo rev
 Ele ajuda a analisar os campos de formulário nos quais os usuários passaram tempo antes de abandonar o formulário. Por exemplo, na imagem apresentada abaixo, de 5 formulários abandonados, 2 foram deixados no campo **Nome completo**, 2 à esquerda no campo **Número de telefone**, e 1 esquerda no campo **Entrada de texto**.
 
 ![Visitantes de campo](assets/field-visitors.png){width="100%"}
+
+## Consulte também {#see-also}
+
+* [Ativar o Adobe Analytics para um formulário adaptável usando a automação de configuração do Experience Cloud](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
+* [Adição de um formulário adaptável a uma página do AEM Sites ou a um fragmento de experiência](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Integrar o AEM Forms com o Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)

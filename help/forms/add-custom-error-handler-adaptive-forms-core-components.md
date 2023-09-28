@@ -7,9 +7,9 @@ keywords: Adicionar um manipulador de erros personalizado, adicionar um manipula
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: 963fcbe1e333dd6e0540e29ea150881826a1323c
+source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
 workflow-type: tm+mt
-source-wordcount: '2425'
+source-wordcount: '2406'
 ht-degree: 2%
 
 ---
@@ -17,7 +17,6 @@ ht-degree: 2%
 
 # Manipuladores de erros no Adaptive Forms (Componentes principais) {#error-handlers-in-adaptive-form}
 
-<span class="preview"> Esse é um recurso de pré-lançamento acessível por meio de nossa [canal de pré-lançamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |

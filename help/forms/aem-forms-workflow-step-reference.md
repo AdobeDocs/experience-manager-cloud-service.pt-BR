@@ -3,21 +3,21 @@ title: Use fluxos de trabalho de AEM centrados em formulários para automatizar 
 description: Fluxos de trabalho centrados no Forms permitem criar rapidamente fluxos de trabalho adaptáveis baseados no Forms. Você pode usar o Adobe Sign para assinar documentos eletronicamente, criar processos de negócios baseados em formulários, recuperar e enviar dados para várias fontes de dados e enviar notificações por email
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: a635a727e431a73086a860249e4f42d297882298
+keywords: Usar fluxos de trabalho de AEM, usando etapas atribuir tarefa, converter em PDF/A etapa, Gerar documento da etapa gravada, usar fluxos de trabalho, etapa Assinar documento, etapa Gerar saída impressa, Gerar saída de PDF não interativa
+source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
 workflow-type: tm+mt
-source-wordcount: '7452'
+source-wordcount: '7433'
 ht-degree: 1%
 
 ---
 
-# Usar workflows AEM centrados na Forms - referência de etapa para automatizar processos de negócios{#forms-centric-workflow-on-osgi-step-reference}
+
+# Usar workflows AEM centrados na Forms - referência de etapa para automatizar processos de negócios {#forms-centric-workflow-on-osgi-step-reference}
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html) |
 | AEM as a Cloud Service | Este artigo |
-
-<span class="preview"> Funções individuais, Trilha de auditoria e opções de autenticação com base em ID do governo na [Etapa Assinar documento](#sign-document-step) são recursos de pré-lançamento e podem ser acessados por meio de [canal de pré-lançamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 Você usa modelos de fluxo de trabalho. Um modelo ajuda a definir e executar uma série de etapas. Você também pode definir propriedades do modelo, como se o fluxo de trabalho é transitório ou usa vários recursos. Você pode [incluir várias etapas do fluxo de trabalho do AEM em um modelo para atingir a lógica de negócios](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem).
 
@@ -40,7 +40,6 @@ As etapas de fluxo de trabalho centradas no Forms executam operações específi
 >[!NOTE]
 >
 >Se o modelo de fluxo de trabalho estiver marcado para um armazenamento externo, para todas as etapas de Forms Workflow, será possível selecionar apenas a opção de variável para armazenar ou recuperar arquivos de dados e anexos.
-
 
 ## Atribuir etapa de tarefa {#assign-task-step}
 
@@ -379,8 +378,6 @@ A etapa Chamar serviço do modelo de dados de formulário tem os campos listados
 
 ## Etapa Assinar documento {#sign-document-step}
 
-<span class="preview"> Funções individuais, trilha de auditoria e opção de autenticação baseada em ID do governo na etapa do Adobe Sign são recursos de pré-lançamento e podem ser acessados por meio de [canal de pré-lançamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
-
 A etapa Assinar documento permite usar [!DNL Adobe Sign] para assinar documentos. Quando você usa o [!DNL Adobe Sign] Etapa do fluxo de trabalho para Assinar um Formulário adaptável, o formulário pode ser passado pelos destinatários um após o outro ou pode ser enviado para todos os destinatários simultaneamente, dependendo da configuração da etapa do fluxo de trabalho. [!DNL Adobe Sign] Os Forms adaptáveis ativados são enviados ao Experience Manager Forms Server somente depois que todos os destinatários concluírem o processo de assinatura.
 
 Por padrão, a variável [!DNL Adobe Sign] O serviço Scheduler verifica (pesquisa) a resposta do recipient a cada 24 horas. Você pode [alterar o intervalo padrão do seu ambiente](adobe-sign-integration-adaptive-forms.md#for-aem-workflows-only-configure-dnl-adobe-acrobat-sign-scheduler-to-sync-the-signing-status-configure-adobe-sign-scheduler-to-sync-the-signing-status).
@@ -589,3 +586,9 @@ A etapa Gerar Saída Impressa tem as seguintes propriedades:
 * **PDF linearizado**: especifica se o PDF gerado deve ser otimizado para visualização na web.
 * **PDF marcado**: especifica se o PDF gerado deve ficar acessível.
 * **Documento XCI**: especifica o caminho para o arquivo XCI.
+
+## Consulte também {#see-also}
+
+* [Variáveis em fluxos de trabalho AEM centrados no Forms](/help/forms/variable-in-aem-workflows.md)
+* [Definir configuração de Ausência Temporária](/help/forms/configure-out-of-office-settings.md)
+

@@ -2,16 +2,17 @@
 title: Introdução às Comunicações as a Cloud Service do Forms
 description: Mesclar dados automaticamente com modelos XDP e PDF ou gerar saída nos formatos PCL, ZPL e PostScript
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: a635a727e431a73086a860249e4f42d297882298
+Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs
+source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
 workflow-type: tm+mt
-source-wordcount: '1475'
-ht-degree: 75%
+source-wordcount: '1426'
+ht-degree: 78%
 
 ---
 
+
 # Introdução às Comunicações as a Cloud Service do AEM Forms {#frequently-asked-questions}
 
-<span class="preview"> [Serviço DocAssurance](#doc-assurance) O é um recurso de pré-lançamento acessível por meio de nossa [canal de pré-lançamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). A documentação do recurso está sujeita a alterações.</span>
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
@@ -159,9 +160,6 @@ You can [query a PDF document](https://developer.adobe.com/experience-manager-fo
 
 The [PDF to XDP API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/pdf-utility-sync/#tag/Document-Conversion) converts a PDF document to an XDP file. For a PDF document to be successfully converted to an XDP file, the PDF document must contain an XFA stream in the dictionary. -->
 
-
-<span class="preview"> O serviço de garantia de documentos é um recurso de pré-lançamento acessível por meio de [canal de pré-lançamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). A documentação do recurso está sujeita a alterações.</span>
-
 ## Document Assurance {#doc-assurance}
 
 O serviço DocAssurance inclui as APIs de Assinatura e Criptografia:
@@ -302,3 +300,9 @@ If you attempt to flatten a non-interactive PDF document, an exception occurs.
 An interactive PDF document contains various elements that constitute a form. These elements may include fields (to accept or display data), buttons (to trigger events), and scripts (commands to perform a specific action). Clicking a button may trigger an event that changes the state of a field. For example, choosing a gender option may change the color of a field or the appearance of the form. This is an example of a manual event causing the form state to change.
 
 When such an interactive PDF document is flattened using the Communications APIs, the state of the form is not retained. To ensure that the state of the form is retained even after the form is flattened, set the Boolean value _retainFormState_ to True to save and retain the state of the form.  -->
+
+## Consulte também {#see-also}
+
+
+* [Processamento de comunicação - APIs síncronas](/help/forms/aem-forms-cloud-service-communications.md)
+* [Processamento de comunicação - APIs em lote](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
