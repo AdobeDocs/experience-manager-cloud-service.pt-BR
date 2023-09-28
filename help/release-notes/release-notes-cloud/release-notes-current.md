@@ -3,9 +3,9 @@ title: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud S
 description: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 39284210e6639c4ed2a80cf86dbf0ea32d889986
+source-git-commit: ed67bb95a82f083ed3b6eea4fe5f5d150359c539
 workflow-type: tm+mt
-source-wordcount: '1421'
+source-wordcount: '1419'
 ht-degree: 17%
 
 ---
@@ -50,7 +50,7 @@ Saiba mais sobre os Edge Delivery Services no artigo [aqui](/help/edge/overview.
 
 **Atribuir formulário de metadados a uma pasta**
 
-Agora é possível atribuir o formulário de metadados a uma pasta específica na implantação do Assets Essentials. Todos os ativos na pasta, incluindo ativos nas subpastas, em seguida, exibem as propriedades definidas no formulário de metadados atribuído.
+Agora você pode atribuir o formulário de metadados a uma pasta específica na implantação. Todos os ativos na pasta, incluindo ativos nas subpastas, em seguida, exibem as propriedades definidas no formulário de metadados atribuído.
 
 ![atribuir formulário de metadados a uma pasta](/help/release-notes/assets/assign-to-folder.png)
 
