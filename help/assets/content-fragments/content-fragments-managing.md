@@ -2,10 +2,10 @@
 title: Gerenciamento de fragmentos de conteúdo (Ativos - Fragmentos de conteúdo)
 description: Saiba como usar o console de Ativos para gerenciar os fragmentos de conteúdo de AEM, a base do conteúdo headless.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
+source-git-commit: cc752e540fd08c2db5145316f57071c991d264b3
 workflow-type: tm+mt
-source-wordcount: '1813'
-ht-degree: 71%
+source-wordcount: '1855'
+ht-degree: 70%
 
 ---
 
@@ -38,7 +38,7 @@ O [Editor de fragmentos de conteúdo](#opening-the-fragment-editor) fornece vár
 >
 >Agora, eles são gerenciados principalmente com o **[Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** console, embora ainda possam ser gerenciados no **Assets** console. Esta seção abrange o gerenciamento do **Assets** console.
 >
->Existem dois editores para a criação de fragmentos de conteúdo. Esta seção aborda o editor original, acessado principalmente pelo **Assets** console. Consulte a documentação do Sites, [Fragmentos de conteúdo - Criação](/help/sites-cloud/administering/content-fragments/authoring.md), para obter detalhes sobre o novo editor (acessado principalmente pelo **Fragmentos de conteúdo** console).
+>Existem dois editores para a criação de fragmentos de conteúdo. Esta seção aborda o editor original, acessado principalmente pelo **Assets** console. Consulte a documentação do Sites, [Fragmentos de conteúdo - Criação](/help/sites-cloud/administering/content-fragments/authoring.md), para obter detalhes sobre o novo editor (acessado principalmente pelo **Fragmentos de conteúdo** console). Ambos os editores têm um botão de alternância na barra de ferramentas superior para fornecer acesso rápido ao outro editor.
 
 ## Criação de fragmentos de conteúdo {#creating-content-fragments}
 
@@ -194,6 +194,8 @@ Alguns recursos na barra de ferramentas superior estão disponíveis em vários 
    * **Publicado**: verde
    * **Modificado**: laranja
    * **Desativado**: vermelho
+
+* Um botão permite que você **Experimentar novo editor**, abrindo diretamente o *novo* [Editor de fragmento de conteúdo](/help/sites-cloud/administering/content-fragments/authoring.md) que é acessível por meio do [Console de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console).
 
 * **Salvar** fornece acesso à opção **Salvar e fechar**.
 
