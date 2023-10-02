@@ -2,10 +2,10 @@
 title: Gerenciamento de fragmentos de conteúdo (Ativos - Fragmentos de conteúdo)
 description: Saiba como usar o console de Ativos para gerenciar os fragmentos de conteúdo de AEM, a base do conteúdo headless.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: cc752e540fd08c2db5145316f57071c991d264b3
+source-git-commit: 2a4538ad8b52615ffdee110393bfbc01f57694f4
 workflow-type: tm+mt
-source-wordcount: '1855'
-ht-degree: 70%
+source-wordcount: '1877'
+ht-degree: 69%
 
 ---
 
@@ -196,6 +196,10 @@ Alguns recursos na barra de ferramentas superior estão disponíveis em vários 
    * **Desativado**: vermelho
 
 * Um botão permite que você **Experimentar novo editor**, abrindo diretamente o *novo* [Editor de fragmento de conteúdo](/help/sites-cloud/administering/content-fragments/authoring.md) que é acessível por meio do [Console de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console).
+
+  >[!WARNING]
+  >
+  >O novo editor será aberto na mesma guia. Não é recomendável ter ambos os editores abertos ao mesmo tempo.
 
 * **Salvar** fornece acesso à opção **Salvar e fechar**.
 
