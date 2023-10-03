@@ -2,9 +2,9 @@
 title: Ambiente e ferramentas de criação
 description: O ambiente de criação do AEM fornece vários mecanismos para organização e edição de conteúdo
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
+source-git-commit: ccd4206f029ac77b90f731891ac300c5d3849ef8
 workflow-type: tm+mt
-source-wordcount: '2150'
+source-wordcount: '2166'
 ht-degree: 96%
 
 ---
@@ -224,7 +224,10 @@ Abra o console e navegue até o recurso desejado, e abra **Referências** usando
 
 Selecione o tipo de referência apropriado para obter mais informações. Em determinadas situações, outras ações estarão disponíveis ao selecionar uma referência específica, incluindo:
 
-* **Links de entrada**, fornecem uma lista de páginas que fazem referência à página, junto com acesso direto a **Editar** uma dessas páginas ao selecionar um link específico
+* **Links de entrada**, fornecem uma lista de páginas que fazem referência à página, junto com acesso direto a **Editar** uma dessas páginas ao selecionar um link específico.
+
+   * Isso só pode mostrar links estáticos, não links gerados dinamicamente; por exemplo, do componente List.
+
 * Instâncias de conteúdo emprestado e concedido usando o componente **Referência**, daqui você pode navegar até a página de referência/referenciada
 * [Lançamentos](/help/sites-cloud/authoring/launches/overview.md), fornecem acesso a lançamentos relacionados
 * As [Live Copies](/help/sites-cloud/administering/msm/overview.md) exibem os caminhos de todas as live copies que são baseadas no recurso selecionado.
