@@ -1,11 +1,11 @@
 ---
-title: Integrar o DocuSign a um formulário adaptável
+title: Como integrar o DocuSign a um Formulário adaptável?
 description: Saiba como usar o DocuSign com um formulário adaptável para coletar assinaturas eletrônicas.
 exl-id: fb2e75d6-e454-4999-a079-f663af79051f
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '1557'
-ht-degree: 0%
+source-wordcount: '1559'
+ht-degree: 1%
 
 ---
 
@@ -124,7 +124,7 @@ Execute as seguintes etapas para configurar a ação de envio personalizada pron
 
 Depois que os pré-requisitos estiverem em vigor, execute as seguintes etapas para integrar [!DNL DocuSign] com [!DNL AEM Forms] nas instâncias do Autor.
 
-1. Navegue até **[!UICONTROL Ferramentas]** ![martelo](assets/hammer.png) > **[!UICONTROL Cloud Services]** > **[!UICONTROL DocuSign]** e selecione uma pasta para hospedar a configuração.
+1. Navegue até **[!UICONTROL Ferramentas]** ![martelo](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL DocuSign]** e selecione uma pasta para hospedar a configuração.
 
 1. Na página de configurações, toque em **[!UICONTROL Criar]** para criar [!DNL DocuSign] configuração no AEM Forms.
 1. No **[!UICONTROL Geral]** guia do **[!UICONTROL Criar configuração do DocuSign]** página, especifique um **[!UICONTROL Nome]** para a configuração e toque em **[!UICONTROL Próxima]**. Opcionalmente, é possível especificar um **[!UICONTROL Título]**.
@@ -174,7 +174,8 @@ Para criar um Formulário adaptável habilitado para assinatura:
    1. Especifique a **[!UICONTROL Nome]** e **[!UICONTROL Título]** para o Formulário adaptável.
 
    1. Selecione o [contêiner de configuração](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) criado enquanto [integração [!DNL DocuSign] com [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md).
-   O contêiner de configuração contém o [!DNL DocuSign] Cloud Services configurado para o seu ambiente. Esses serviços estão disponíveis para seleção no editor de Formulário adaptável.
+
+   O contêiner de configuração contém o [!DNL DocuSign] Cloud Service configurado para o seu ambiente. Esses serviços estão disponíveis para seleção no editor de Formulário adaptável.
 
 1. No **[!UICONTROL Modelo de formulário]** selecione uma das seguintes opções:
 
@@ -182,7 +183,7 @@ Para criar um Formulário adaptável habilitado para assinatura:
 
    - Se você não tiver um modelo de formulário personalizado, selecione o **[!UICONTROL Gerar documento de registro]** opção. Quando você usa a opção, o documento enviado para assinatura exibe todos os campos do Formulário adaptável.
 
-1. Toque **[!UICONTROL Criar.]** Um Formulário adaptável habilitado para assinatura é criado. Você pode adicionar seu [!DNL DocuSign] ao formulário e envie-o para assinatura.
+1. Toque em **[!UICONTROL Criar.]** Um Formulário adaptável habilitado para assinatura é criado. Você pode adicionar seu [!DNL DocuSign] ao formulário e envie-o para assinatura.
 1. Abra o formulário adaptável no modo de edição. No **[!UICONTROL Conteúdo]** toque na guia **[!UICONTROL Contêiner de formulário]** e toque em ![Configurar](assets/configure-icon.svg).
 
 1. No **[!UICONTROL Envio]** , selecione **[!UICONTROL Enviar com assinaturas eletrônicas do DocuSign]** do **[!UICONTROL Ação de envio]** lista suspensa.
@@ -191,7 +192,7 @@ Para criar um Formulário adaptável habilitado para assinatura:
 
 1. Especifique o assunto da mensagem de email no campo **[!UICONTROL Assunto do email]** campo. Selecionar **Incluir anexos** para incluir anexos na mensagem de email.
 
-1. Toque ![Salvar](assets/save_icon.svg) para salvar as propriedades.
+1. Toque em ![Salvar](assets/save_icon.svg) para salvar as propriedades.
 
 #### Ativar [!DNL DocuSign] para um Formulário adaptável {#editafsign}
 
@@ -216,4 +217,4 @@ Para usar [!DNL DocuSign] em um Formulário adaptável existente:
 
 1. Especifique o assunto da mensagem de email no campo **[!UICONTROL Assunto do email]** campo. Selecionar **Incluir anexos** para incluir anexos na mensagem de email.
 
-1. Toque ![Salvar](assets/save_icon.svg) para salvar as propriedades.
+1. Toque em ![Salvar](assets/save_icon.svg) para salvar as propriedades.

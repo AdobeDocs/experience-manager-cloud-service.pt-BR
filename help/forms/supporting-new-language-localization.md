@@ -1,11 +1,11 @@
 ---
-title: Adicionar compatibilidade a novas localidades a um Formulário adaptável
-description: O AEM Forms permite adicionar novas localidades para localizar formulários adaptáveis. Locais de inglês (en), espanhol (es), francês (fr), italiano (it), alemão (de), japonês (ja), português-brasileiro (pt-BR), chinês (zh-CN), chinês-Taiwan (zh-TW) e coreano (ko-KR).
+title: Como adicionar suporte para novas localidades a um formulário adaptável?
+description: Para o Adaptive Forms, você pode adicionar localidades para mais idiomas, além do fornecido imediatamente.
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: 23f915f0e2e33b9cf1313d15cb98a0a4f8243746
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
 source-wordcount: '1259'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -32,7 +32,7 @@ A localização de formulários adaptáveis depende de dois tipos de dicionário
 
 ## Adicionar suporte para novas localidades {#add-support-for-new-locales}
 
-Execute o seguinte para adicionar suporte a uma localidade:
+Execute as seguintes etapas para adicionar suporte a um novo local:
 
 1. [Adicionar suporte de localização para localidades sem suporte](#add-localization-support-for-non-supported-locales)
 1. [Usar localidades adicionadas no Adaptive Forms](#use-added-locale-in-af)
@@ -41,7 +41,7 @@ Execute o seguinte para adicionar suporte a uma localidade:
 
 Atualmente, o AEM Forms oferece suporte à localização de conteúdo do Adaptive Forms em inglês (en), espanhol (es), francês (fr), italiano (it), alemão (de), japonês (ja), português-brasileiro (pt-BR), chinês (zh-CN), chinês-Taiwan (zh-TW) e coreano (ko-KR).
 
-Para adicionar suporte a um local:
+Para adicionar suporte para um novo local no tempo de execução do Adaptive Forms:
 
 1. [Clonar seu repositório](#clone-the-repository)
 1. [Adicionar uma localidade ao serviço GuideLocalizationService](#add-a-locale-to-the-guide-localization-service)
@@ -69,7 +69,7 @@ Para adicionar suporte a um local:
 1. Na pasta UI.content, crie `etc/clientlibs` pasta.
 1. Além disso, crie uma pasta chamada como `locale-name` em `etc/clientlibs` para servir como contêiner de clientlibs xfa e af.
 
-##### 3.1 Adicionar biblioteca do cliente XFA para um local na pasta de nome do local
+##### 3.1 Adicionar biblioteca do cliente XFA para um local em uma pasta de nome de local
 
 Criar um nó chamado como `[locale-name]_xfa` e digite como `cq:ClientLibraryFolder` em `etc/clientlibs/locale_name`, com categoria `xfaforms.I18N.<locale>`e adicione os seguintes arquivos:
 
@@ -144,11 +144,11 @@ Para substituir a localidade do navegador dos usuários, você pode transmitir a
 Se não existir uma biblioteca do cliente para a localidade solicitada, ela verificará se há uma biblioteca do cliente para o código de idioma presente na localidade. Por exemplo, se o local solicitado for `en_ZA` (inglês da África do Sul) e a biblioteca do cliente para `en_ZA` não existir, o formulário adaptável usará a biblioteca do cliente para `en` Idioma (inglês), se existir. No entanto, se nenhum deles existir, o Formulário adaptável usará o dicionário para `en` localidade.
 
 
-Depois que a localidade é identificada, o Formulário adaptável escolhe o dicionário específico do formulário. Se o dicionário específico do formulário para a localidade solicitada não for encontrado, ele usará o dicionário do idioma no qual o Formulário adaptável foi criado.
+Depois que a localidade é identificada, o Formulário adaptável escolhe o dicionário específico do formulário. Se o dicionário específico do formulário para a localidade solicitada não for encontrado, ele usará o dicionário para o idioma no qual o Formulário adaptável foi criado.
 
 Se nenhuma informação de local estiver presente, o Formulário adaptável será fornecido no idioma original do formulário. O idioma original é o idioma usado ao desenvolver o Formulário adaptável.
 
-Obter [biblioteca cliente de exemplo](/help/forms/assets/locale-support-sample.zip) para adicionar suporte ao novo local. É necessário alterar o conteúdo da pasta no local necessário.
+Obtenha um [biblioteca cliente de exemplo](/help/forms/assets/locale-support-sample.zip) para adicionar suporte ao novo local. É necessário alterar o conteúdo da pasta no local necessário.
 
 ## Práticas recomendadas para oferecer suporte à nova localização {#best-practices}
 

@@ -1,9 +1,9 @@
 ---
 title: Visão geral do Adobe Experience Manager (AEM) Forms as a Cloud Service
-description: “O [!DNL AEM Forms] as a Cloud Service é uma plataforma para criar, gerenciar e publicar formulários de nível empresarial e processos de negócios.”
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+description: O AEM Forms as a Cloud Service é uma plataforma para criar, gerenciar e publicar formulários de nível empresarial e processos de negócios.
+source-git-commit: 8fbbdd8b22eaa34e21507a497e388f671be701c7
 workflow-type: tm+mt
-source-wordcount: '82'
+source-wordcount: '84'
 ht-degree: 100%
 
 ---

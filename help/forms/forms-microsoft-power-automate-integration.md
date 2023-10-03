@@ -1,12 +1,12 @@
 ---
-title: Integrar um formulário adaptável ao Microsoft&reg; Power Automate
-description: Integrar um formulário adaptável ao Microsoft&reg; Power Automate.
+title: Como integrar um formulário adaptável com o Microsoft® Power Automate
+description: Integrar um formulário adaptável ao Microsoft® Power Automate.
 hide: true
 hidefromtoc: true
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
-source-git-commit: a635a727e431a73086a860249e4f42d297882298
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '1173'
+source-wordcount: '1171'
 ht-degree: 4%
 
 ---

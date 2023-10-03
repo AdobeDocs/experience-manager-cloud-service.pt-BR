@@ -1,17 +1,15 @@
 ---
-title: Criação de Forms adaptável acessível
-seo-title: Creating accessible Adaptive Forms
-description: O AEM Forms fornece ferramentas e ferramentas para criar Forms adaptável acessível, além de ajudar a cumprir os padrões de acessibilidade.
-seo-description: AEM Forms provides you tools and to create accessible Adaptive Forms and helps comply with accessibility standards.
+title: Como criar Forms adaptável acessível?
+description: O AEM Forms fornece ferramentas para criar Forms adaptável acessível e ajuda a cumprir os padrões de acessibilidade.
 uuid: 6472bc2d-47ca-4883-88b7-5de0b758fd00
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1e95c66b-d132-4c44-a1dc-31fd09af8113
 docset: aem65
 exl-id: 3b5247fa-decb-40eb-a629-6d834976d33c
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '2024'
+source-wordcount: '2025'
 ht-degree: 0%
 
 ---
@@ -154,7 +152,7 @@ Os seguintes atalhos de teclado estão disponíveis em [!DNL AEM Forms].
 
 | Ação | Atalho de teclado |
 |---|---|
-| Mover o cursor para frente em um formulário | Guia |
+| Mover o cursor adiante através de um formulário | Guia |
 | Mover o cursor para trás em um formulário | Shift+Tab |
 | Mover para o próximo painel | Alt+Seta para a Direita |
 | Mover para o painel anterior | Alt+Seta para a esquerda |

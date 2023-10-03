@@ -1,13 +1,13 @@
 ---
 title: Criar esquema XML para um formulário adaptável
-description: Saiba como usar o esquema XML como modelo de formulário em um Formulário adaptável. Saiba mais com uma amostra de um esquema XML, adicione propriedades especiais a campos usando o esquema XML e limite valores aceitáveis para um componente de Formulário adaptável.
+description: Saiba como criar um esquema XML para um Formulário adaptável e criar um Formulário adaptável com base no esquema para produzir dados de reclamação de esquema.
 feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 5b8ad9a8-77d4-4234-a4d7-c8964b975e96
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '950'
 ht-degree: 6%
 
 ---

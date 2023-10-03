@@ -1,13 +1,11 @@
 ---
-title: Criação e uso de temas
+title: Como criar e usar temas no Adaptive Forms?
 description: Você pode usar temas para estilizar e fornecer uma identidade visual a um Formulário adaptável usando componentes principais. Você pode compartilhar um tema em qualquer número do Adaptive Forms.
-seo-description: You can create a new theme by customizing the available theme. The themes are customized and deployed using frontend pipeline.
-keywords: criar novo tema, personalizar tema, carregar novo tema, usar tema em formulários, personalizar tema usando pipeline de front-end
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '2709'
-ht-degree: 2%
+source-wordcount: '2697'
+ht-degree: 4%
 
 ---
 
@@ -18,13 +16,13 @@ ht-degree: 2%
 | AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-or-customize-themes-for-adaptive-forms-core-components.html) |
 | AEM as a Cloud Service | Este artigo |
 
-É possível criar e aplicar temas para estilizar um Formulário adaptável. Um tema contém detalhes de estilo para os componentes e painéis. Os estilos incluem propriedades como cores de fundo, cores de estado, transparência, alinhamento e tamanho. Quando você aplica um tema, o estilo especificado é refletido nos componentes correspondentes. Um tema é gerenciado de forma independente sem uma referência a um Formulário adaptável e pode ser reutilizado em vários Forms adaptáveis.
+É possível criar e aplicar temas para estilizar um Formulário adaptável. Um tema contém detalhes de estilo para os componentes e painéis. Os estilos incluem propriedades como cores de fundo, cores de estado, transparência, alinhamento e tamanho. Ao aplicar um tema, o estilo especificado é refletido nos componentes correspondentes. Um tema é gerenciado de forma independente sem uma referência a um Formulário adaptável e pode ser reutilizado em vários Forms adaptáveis.
 
 ## Temas disponíveis
 
 O Forms as Cloud Service fornece os temas listados abaixo para o Adaptive Forms baseado em Componentes principais:
 
-* [Tema da tela de desenho](https://github.com/adobe/aem-forms-theme-canvas)
+* [Tema Tela de desenho](https://github.com/adobe/aem-forms-theme-canvas)
 * [Tema WKND](https://github.com/adobe/aem-forms-theme-wknd)
 * [Tema CAVALETE](https://github.com/adobe/aem-forms-theme-easel)
 
@@ -46,7 +44,7 @@ Um tema é um pacote que abrange o arquivo CSS, arquivos JavaScript e recursos (
 
 O Forms as Cloud Service fornece os temas listados abaixo para o Adaptive Forms baseado em Componentes principais.
 
-* [Tema da tela de desenho](https://github.com/adobe/aem-forms-theme-canvas)
+* [Tema Tela de desenho](https://github.com/adobe/aem-forms-theme-canvas)
 * [Tema WKND](https://github.com/adobe/aem-forms-theme-wknd)
 * [Tema CAVALETE](https://github.com/adobe/aem-forms-theme-easel)
 
@@ -95,7 +93,7 @@ Os exemplos fornecidos no documento são baseados no **Tela** tema, mas é impor
 
 Para clonar um tema para os Componentes principais com base no Adaptive Forms, escolha um dos seguintes temas:
 
-* [Tema da tela de desenho](https://github.com/adobe/aem-forms-theme-canvas)
+* [Tema Tela de desenho](https://github.com/adobe/aem-forms-theme-canvas)
 * [Tema WKND](https://github.com/adobe/aem-forms-theme-wknd)
 * [Tema CAVALETE](https://github.com/adobe/aem-forms-theme-easel)
 

@@ -1,13 +1,13 @@
 ---
-title: Gerenciar aplicativos e tarefas do Forms na Caixa de entrada AEM
-description: A Caixa de entrada AEM permite iniciar fluxos de trabalho centrados no Forms por meio do envio de aplicativos e do gerenciamento de tarefas.
+title: Como gerenciar aplicativos e tarefas de formulários na Caixa de entrada do AEM?
+description: A Caixa de entrada AEM permite iniciar fluxos de trabalho centrados no Forms enviando aplicativos e gerenciando tarefas.
+uuid: c6c0d8ea-743f-4852-99d1-69fd50a0994e
 contentOwner: vishgupt
 topic-tags: document_services, publish
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-docset: aem65
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '1145'
+source-wordcount: '1149'
 ht-degree: 3%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 3%
 
 # Gerenciar aplicativos e tarefas do Forms na Caixa de entrada AEM{#manage-forms-applications-and-tasks-in-aem-inbox}
 
-Uma das muitas maneiras de iniciar ou acionar um fluxo de trabalho centrado no Forms é por meio de aplicativos na Caixa de entrada AEM. É necessário criar um aplicativo de fluxo de trabalho para disponibilizar um fluxo de trabalho do Forms como aplicativo na Caixa de entrada. Para obter mais informações sobre o aplicativo de workflow e outras maneiras de iniciar workflows do Forms, consulte [Inicie um fluxo de trabalho centrado no Forms no OSGi](aem-forms-workflow.md#launch).
+Uma das muitas maneiras de iniciar ou acionar um fluxo de trabalho centrado no Forms é por meio de aplicativos na Caixa de entrada AEM. É necessário criar um aplicativo de fluxo de trabalho para disponibilizar um Forms Workflow como um aplicativo na Caixa de entrada. Para obter mais informações sobre o aplicativo de workflow e outras maneiras de iniciar workflows do Forms, consulte [Inicie um fluxo de trabalho centrado no Forms no OSGi](aem-forms-workflow.md#launch).
 
-Além disso, a Caixa de entrada do AEM consolida notificações e tarefas de vários componentes do AEM, incluindo workflows da Forms. Quando um fluxo de trabalho de formulários contendo uma etapa Atribuir tarefa é acionado, o aplicativo associado é listado como uma tarefa na Caixa de entrada do destinatário. Se o destinatário for um grupo, a tarefa aparecerá na Caixa de entrada de todos os membros do grupo até que um indivíduo reclame ou delegue a tarefa.
+Além disso, a Caixa de entrada do AEM consolida notificações e tarefas de vários componentes do AEM, incluindo workflows da Forms. Quando um Forms Workflow contendo uma etapa Atribuir tarefa é acionado, o aplicativo associado é listado como uma tarefa na Caixa de entrada do destinatário. Se o destinatário for um grupo, a tarefa aparecerá na Caixa de entrada de todos os membros do grupo até que um indivíduo reclame ou delegue a tarefa.
 
 A interface do usuário da Caixa de entrada fornece exibições de lista e calendário para exibir tarefas. Você também pode definir as configurações de exibição. Você pode filtrar tarefas com base em vários parâmetros. Para obter mais informações sobre visualização e filtros, consulte [Sua Caixa de entrada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html#inbox-in-the-header).
 
-Em resumo, a Caixa de entrada permite criar um novo aplicativo e gerenciar tarefas atribuídas.
+Em resumo, a Caixa de entrada permite criar um aplicativo e gerenciar tarefas atribuídas.
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ Em resumo, a Caixa de entrada permite criar um novo aplicativo e gerenciar taref
 
 ## Gerencie tarefas {#manage-tasks}
 
-Quando um fluxo de trabalho do Forms é acionado e você é um destinatário ou parte do grupo de destinatários, uma tarefa é exibida em sua Caixa de entrada. Você pode exibir os detalhes da tarefa e executar as ações disponíveis na tarefa de dentro da Caixa de entrada.
+Quando um fluxo de trabalho do Forms é acionado e você é um destinatário ou parte do grupo de destinatários, uma tarefa é exibida na Caixa de entrada. Você pode exibir os detalhes da tarefa e executar as ações disponíveis na tarefa de dentro da Caixa de entrada.
 
 ### Reclamar ou delegar tarefas {#claim-or-delegate-tasks}
 
@@ -57,7 +57,7 @@ As tarefas atribuídas a um grupo aparecem na Caixa de Entrada de todos os membr
 
 ### Exibir detalhes e executar ações em tarefas {#view-details-and-perform-actions-on-tasks}
 
-Ao abrir uma tarefa, você pode exibir os detalhes da tarefa e executar as ações disponíveis. As ações disponíveis para uma tarefa são definidas na etapa Atribuir tarefa do fluxo de trabalho associado do Forms.
+Ao abrir uma tarefa, você pode exibir os detalhes da tarefa e executar as ações disponíveis. As ações disponíveis para uma tarefa são definidas na etapa Atribuir tarefa do Forms Workflow associado.
 
 1. Toque para selecionar a miniatura da tarefa. As opções para abrir ou delegar a tarefa selecionada aparecem na parte superior.
 1. Toque **Abertura** para exibir detalhes da tarefa e realizar ações. A visualização detalhada da tarefa é aberta. Nesta exibição, é possível exibir detalhes da tarefa e realizar ações na tarefa.
@@ -87,19 +87,19 @@ A guia Form na área de conteúdo principal exibe o formulário enviado e os ane
 
 A guia Detalhes do fluxo de trabalho na parte superior mostra o progresso da tarefa em vários estágios no fluxo de trabalho. Ela mostra os estágios concluídos, atuais e pendentes da tarefa. Os estágios de um fluxo de trabalho são definidos no [Atribuir etapa de tarefa](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem) do fluxo de trabalho associado.
 
-Além disso, a guia exibe o histórico da tarefa para cada estágio concluído no workflow. Você pode tocar em **[!UICONTROL Exibir detalhes]** para que um estágio concluído saiba detalhes sobre esse estágio. Ele exibe comentários, anexos de formulário e tarefa, status, datas de início e término e assim por diante sobre a tarefa.
+Além disso, a guia exibe o histórico da tarefa para cada estágio concluído no workflow. Você pode tocar em **[!UICONTROL Exibir detalhes]** para que um estágio concluído saiba detalhes sobre esse estágio. Ele exibe comentários, anexos de formulário e tarefa, status, datas de início e término e assim por diante, sobre a tarefa.
 
 ![workflow-details](assets/workflow-details.png)
 
 #### Barra de ferramentas Ações {#actions-toolbar}
 
-A barra de ferramentas Ações mostra todas as opções disponíveis para a tarefa. Embora Save, Reset e Delegate sejam ações padrão, outras ações disponíveis são configuradas em [Atribuir etapa de tarefa](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem). No exemplo acima, Aprovar e Rejeitar são configurados no workflow.
+A barra de ferramentas Ações mostra todas as opções disponíveis para a tarefa. Embora Save, Reset e Delegate sejam ações padrão, outras ações disponíveis são configuradas no [Atribuir etapa de tarefa](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem). No exemplo acima, Aprovar e Rejeitar são configurados no workflow.
 
 À medida que você executa uma ação na tarefa, ela prossegue no fluxo de trabalho.
 
 ### Exibir tarefas concluídas {#view-completed-tasks}
 
-A Caixa de entrada do AEM exibe somente tarefas ativas. Tarefas concluídas não aparecem na lista. No entanto, você pode usar os filtros da Caixa de entrada para filtrar tarefas com base em vários parâmetros, como tipo de tarefa, status, datas de início e término etc. Para exibir tarefas concluídas:
+A Caixa de entrada do AEM exibe somente tarefas ativas. Tarefas concluídas não aparecem na lista. No entanto, você pode usar filtros da Caixa de entrada para filtrar tarefas com base em vários parâmetros, como tipo de tarefa, status, datas de início e término. Para exibir tarefas concluídas:
 
 1. Na Caixa de entrada do AEM, toque em ![ativar/desativar painel lateral1](assets/toggle-side-panel1.png) para abrir o seletor de filtros.
 1. Toque **[!UICONTROL Status da tarefa]** e selecione **[!UICONTROL Concluído]**. Todas as tarefas concluídas são exibidas.
@@ -120,9 +120,9 @@ A variável **[!UICONTROL Detalhes do fluxo de trabalho]** mostra cada etapa do 
 
 ## Resolução de problemas {#troubleshooting-workflows}
 
-### Não é possível exibir itens relacionados ao fluxo de trabalho do AEM na caixa de entrada AEM {#unable-to-see-aem-worklow-items}
+### Não é possível exibir itens relacionados ao fluxo de trabalho do AEM na Caixa de entrada AEM {#unable-to-see-aem-worklow-items}
 
-Um proprietário de modelo de fluxo de trabalho não pode exibir itens relacionados ao Fluxo de trabalho do AEM na caixa de entrada AEM. Para resolver o problema, adicione os índices listados abaixo ao repositório AEM e recrie o índice.
+Um proprietário de modelo de fluxo de trabalho não pode exibir itens relacionados ao Fluxo de trabalho do AEM na Caixa de Entrada do AEM. Para resolver o problema, adicione os índices listados abaixo ao repositório AEM e recrie o índice.
 
 1. Use um dos métodos a seguir para adicionar índices:
 

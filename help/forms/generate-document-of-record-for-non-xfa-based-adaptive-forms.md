@@ -1,17 +1,17 @@
 ---
-title: Gerar um documento de registro para o Adaptive Forms
-description: Explica como gerar um modelo para um Documento de registro (DoR) do Adaptive Forms.
+title: Como gerar um documento de registro para o Adaptive Forms
+description: Saiba como gerar um modelo para um Documento de registro (DoR) do Adaptive Forms.
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
 source-wordcount: '4139'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 # Gerar documento de registro para Formulários adaptáveis
 
-<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-br) para [criação de um novo Forms adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 
 | Versão | Link do artigo |
@@ -131,7 +131,7 @@ O desenvolvedor do formulário vincula os campos do Adaptive Forms ao documento 
 
 Agora, quando o formulário adaptável for enviado, um documento de registro atualizado será criado.
 
-![Atualização dos pacotes-](assets/we-retail-new-invoice-sent-to-customer.png)
+![Atualizado-](assets/we-retail-new-invoice-sent-to-customer.png)
 
 ## Considerações principais ao trabalhar com o Documento de registro {#key-considerations-when-working-with-document-of-record}
 
@@ -392,8 +392,8 @@ Você pode configurar o [!UICONTROL Documento do registro] modelo diretamente do
 
 Execute as seguintes etapas a partir da instância de autor do editor de Formulário adaptável:
 
-1. Selecione o **[!UICONTROL Contêiner de formulário adaptável (raiz)]** componente.
-1. Clique em ![Ícone Configurar](/help/forms/assets/configure-icon.svg) ícone para abrir o **[!UICONTROL Propriedades]** do contêiner do Formulário adaptável.
+1. Selecione o componente **[!UICONTROL Container de Formulário Adaptável (raiz)]**.
+1. Clique no ![Ícone de Configurar](/help/forms/assets/configure-icon.svg) para abrir as **[!UICONTROL Propriedades]** do container do formulário adaptável.
 1. Abra o **[!UICONTROL Documento do modelo de registro]** e selecione uma das seguintes opções:
    * **[!UICONTROL Nenhum]**: Quando essa opção é selecionada, não [!UICONTROL Documento do registro] modelo criado para o formulário adaptável.
 
@@ -401,7 +401,7 @@ Execute as seguintes etapas a partir da instância de autor do editor de Formul�
 
    * **[!UICONTROL Gerar documento de registro]**: Quando essa opção é selecionada, a variável [!UICONTROL Documento do registro] O modelo é gerado automaticamente para o Formulário adaptável.
 
-1. Toque ![Salvar](/help/forms/assets/check-button.png) para salvar as propriedades.
+1. Toque em ![Salvar](/help/forms/assets/check-button.png) para salvar as propriedades.
 
 ![Documento de suporte ao modelo de registro](/help/forms/assets/dor-templatesupport.png)
 

@@ -1,15 +1,15 @@
 ---
-title: Localizar o Forms adaptável e o documento de registro
-description: Saiba como usar fluxos de trabalho de tradução do AEM para localizar Forms adaptável e Documento de registro.
+title: Como usar o fluxo de trabalho de tradução do AEM para localizar o Forms adaptável e o Documento de registro?
+description: O fluxo de trabalho de tradução do AEM ajuda a localizar o Adaptive Forms e seus documentos de registro usando tradução automática ou humana.
 seo-description: Learn to use AEM translation workflows to localize Adaptive Forms and Document of Record.
 uuid: 6c87a283-0203-4cf7-989a-3770ddbbbd6e
 content-type: reference
 topic-tags: develop
 discoiquuid: f5642571-9657-4ca1-93c5-4ae2eb91e967
 noindex: true
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '538'
 ht-degree: 1%
 
 ---

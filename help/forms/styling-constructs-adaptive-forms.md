@@ -1,16 +1,14 @@
 ---
-title: Construtores de estilo para o Adaptive Forms
-seo-title: Styling constructs for Adaptive Forms
-description: Use a estrutura LESS para personalizar a aparência do Adaptive Forms.
-seo-description: Use LESS framework to customize appearance of Adaptive Forms.
+title: Como criar estilos de construções para o Adaptive Forms?
+description: Use a estrutura LESS para o Adaptive Forms para personalizar a aparência do Adaptive Forms.
 uuid: d2e45ad9-7322-43ce-a1dd-ad97e2eea742
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '2310'
+source-wordcount: '2315'
 ht-degree: 3%
 
 ---
@@ -357,7 +355,7 @@ Os botões também são widgets. No entanto, seu estilo é um pouco diferente do
 * botão
 * elemento com class .button
 
-Código HTML para o botão:
+Código HTML do botão:
 
 `<button type="button" >`
 
@@ -1021,7 +1019,7 @@ Essas variáveis influenciam o indicador de rolagem, que é uma seta laranja exi
 
 ## Variáveis específicas do layout da barra de ferramentas fixa para dispositivos móveis {#mobile-fixed-toolbar-layout-specific-variables}
 
-Essas variáveis na tabela a seguir influenciam o layout da barra de ferramentas móvel fixa.
+Essas variáveis na tabela a seguir influenciam o layout da barra de ferramentas fixa móvel.
 
 <table>
  <tbody>

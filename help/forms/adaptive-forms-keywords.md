@@ -1,15 +1,13 @@
 ---
-title: Palavras-chave adaptáveis do Forms
-seo-title: Adaptive Forms keywords
-description: Não é possível usar essas palavras reservadas como identificadores no Forms adaptável.
-seo-description: You cannnot use these reserved words as identifiers in your Adaptive Forms.
+title: Palavras-chave reservadas do Forms adaptável
+description: Palavras-chave reservadas que não podem ser usadas como identificadores no Adaptive Forms.
 uuid: 79e77692-2f0c-493b-8c2c-c408ff3dcece
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 678e9dfc-2c46-430a-8da9-0329dda80090
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '208'
+source-wordcount: '209'
 ht-degree: 4%
 
 ---
@@ -139,7 +137,7 @@ As palavras-chave do Forms adaptável são identificadores predefinidos e reserv
   <tr>
    <td><p>cssClassName</p> </td>
    <td><p>fileSizeLimit</p> </td>
-   <td><p>ativado</p> </td>
+   <td><p>habilitado</p> </td>
   </tr>
   <tr>
    <td><p>clickExp</p> </td>

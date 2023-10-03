@@ -1,15 +1,14 @@
 ---
 title: Configurar cache adaptável do Forms
-description: O cache Adaptive Forms foi projetado especificamente para Forms adaptável e documentos. Ele armazena em cache documentos adaptáveis do Forms e do com o objetivo de reduzir o tempo necessário para renderizar um formulário ou documento adaptável no cliente.
+description: O cache do Adaptive Forms foi projetado para o Adaptive Forms e documentos com o objetivo de reduzir o tempo necessário para renderizar um Formulário ou documento adaptável.
 uuid: ba8f79fd-d8dc-4863-bc0d-7c642c45505c
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 9fa6f761-58ca-4cd0-8992-b9337dc1a279
-docset: aem65
-source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
+source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
 workflow-type: tm+mt
-source-wordcount: '962'
+source-wordcount: '965'
 ht-degree: 1%
 
 ---
@@ -43,7 +42,7 @@ Você também pode configurar o armazenamento em cache do formulário adaptável
 ### Pré-requisitos {#pre-requisites}
 
 * Ativar o [mesclar ou preencher previamente os dados no cliente](prepopulate-adaptive-form-fields.md#prefill-at-client) opção. Ele ajuda a mesclar dados exclusivos para cada instância de um formulário pré-preenchido.
-* [Ativar agente de limpeza para cada instância de publicação](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=en#invalidating-dispatcher-cache-from-a-publishing-instance). Ele ajuda a obter melhor desempenho de cache do Adaptive Forms. O URL padrão dos agentes de limpeza é `http://[server]:[port]]/etc/replication/agents.publish/flush.html`.
+* [Ativar um agente de limpeza para cada instância de publicação](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=en#invalidating-dispatcher-cache-from-a-publishing-instance). Ele ajuda a obter melhor desempenho de cache do Adaptive Forms. O URL padrão dos agentes de limpeza é `http://[server]:[port]]/etc/replication/agents.publish/flush.html`.
 
 ### Considerações para armazenamento em cache do Adaptive Forms em um Dispatcher {#considerations}
 
@@ -91,7 +90,7 @@ Execute as etapas listadas abaixo para habilitar e configurar o armazenamento em
 
    * Um formulário adaptável permanece no cache até que uma versão atualizada do formulário não seja publicada.
 
-   * Quando uma versão mais recente do recurso referenciado em um Formulário adaptável é publicada, o Formulário adaptável afetado é invalidado automaticamente. Há algumas exceções à invalidação automática de recursos referenciados. Para obter uma solução alternativa para exceções, consulte [solução de problemas](#troubleshooting) seção.
+   * Quando uma versão mais recente de um recurso referenciado em um Formulário adaptável é publicada, o Formulário adaptável afetado é invalidado automaticamente. Há algumas exceções à invalidação automática de recursos referenciados. Para obter uma solução alternativa para as exceções, consulte [solução de problemas](#troubleshooting) seção.
 1. [Adicione o arquivo de regras dispatcher.any abaixo ou um arquivo de regras personalizado](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-documents-to-cache). Ela exclui os URLs que não oferecem suporte ao armazenamento em cache. Por exemplo, Comunicação interativa.
 
    ```JSON

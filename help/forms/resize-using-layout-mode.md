@@ -1,20 +1,20 @@
 ---
-title: Usar o modo de layout para redimensionar componentes para o Forms adaptável
-description: Defina a posição dos componentes usando a grade responsiva disponível no modo Layout. Saiba como acessar o modo Layout, redimensionar componentes, redimensionar painéis, definir o layout de várias colunas para um painel, ativar a nova grade responsiva para layouts responsivos antigos e desativar o modo Layout para formulários com layout responsivo antigo.
+title: Como usar o modo de layout para redimensionar componentes para o Forms adaptável?
+description: Defina a posição dos componentes do AEM Forms, aprenda a acessar o modo de layout, redimensionar componentes, redimensionar painéis e definir o layout de várias colunas para um painel.
 feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '1157'
-ht-degree: 1%
+source-wordcount: '1134'
+ht-degree: 2%
 
 ---
 
 # Usar o modo de layout para redimensionar componentes para o Adaptive Forms {#use-layout-mode-to-resize-components}
 
-<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-br) para [criação de um novo Forms adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
@@ -87,7 +87,7 @@ Execute as seguintes etapas para definir o número de colunas para um painel:
 
 1. Entrada **[!UICONTROL Editar]** , toque no painel e selecione ![Configurar](assets/configure-icon.svg)e selecione **[!UICONTROL Responsivo - tudo na página sem navegação]** opção no **[!UICONTROL Layout do painel]** lista suspensa.
 
-1. Toque ![Salvar](assets/save_icon.svg) para salvar as propriedades.
+1. Toque em ![Salvar](assets/save_icon.svg) para salvar as propriedades.
 
 1. No **[!UICONTROL Layout]** , toque em qualquer um dos componentes no painel, selecione ![Selecionar pai](assets/select_parent_icon.svg)e selecione o painel.
 

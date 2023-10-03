@@ -1,10 +1,10 @@
 ---
-title: Usar o AEM Forms Designer
-description: Uso [!DNL Adobe Experience Manager (AEM) Forms] Designer para criar modelos de documento de registro.
+title: Como usar o Forms Designer para criar modelos de Documento de registro (DoR) e fragmentos de formulário?
+description: Uso [!DNL AEM Forms] designer para criar modelos de documento de registro e fragmentos de formulário.
 exl-id: 88a95374-620c-45a9-ae94-2043b542fd62
-source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '167'
 ht-degree: 0%
 
 ---

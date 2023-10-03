@@ -1,11 +1,9 @@
 ---
-title: Importar e exportar ativos
-seo-title: Import and export assets to [!DNL AEM Forms]
-description: Você pode importar e exportar o Adaptive Forms e ativos relacionados para instâncias AEM. Isso ajuda a migrar formulários ou movê-los entre sistemas.
-seo-description: You can import and export Adaptive Forms and templates from and in to AEM instances. This helps in migrating forms or moving them across systems.
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+title: Como importar e exportar ativos para o [!DNL AEM Forms]?
+description: Saiba como usar o DocuSign com um formulário adaptável para coletar assinaturas eletrônicas.
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '1323'
+source-wordcount: '1314'
 ht-degree: 1%
 
 ---

@@ -1,15 +1,13 @@
 ---
-title: Criação de formulários com seções repetíveis
-seo-title: Creating forms with repeatable sections
-description: Seções repetíveis são painéis que podem ser dinamicamente adicionados ou removidos de um formulário.
-seo-description: Repeatable sections are panels that can be dynamically added or removed to a form.
+title: Como criar formulários com seções repetíveis?
+description: Saiba como criar seções repetíveis em um formulário que podem ser adicionadas ou removidas dinamicamente em um formulário.
 uuid: c3fa2aa4-a6b4-458e-8534-138e075290b1
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 01724ca0-6901-45e7-b045-f44814ed574e
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '1117'
+source-wordcount: '1130'
 ht-degree: 0%
 
 ---
@@ -63,7 +61,7 @@ Você pode usar um dos seguintes métodos para criar painéis repetíveis:
       >`<panelName>.instanceManager.instances[<instanceNumber>].<fieldname>`
       >
       >
-      >Por exemplo, você cria um Formulário adaptável com um painel repetível com uma caixa de texto. Ao preencher previamente o formulário com três caixas de texto repetíveis, é necessário o xml abaixo:
+      >Por exemplo, você pode criar um Formulário adaptável com um painel repetível que tenha uma caixa de texto. Ao preencher previamente o formulário com três caixas de texto repetíveis, é necessário o xml abaixo:
       >
       >
       >`<panel1><textbox1>AA1</panel1></textbox1>`
@@ -93,14 +91,12 @@ Você pode usar um dos seguintes métodos para criar painéis repetíveis:
       >
       >Quando todas as instâncias de um painel forem removidas de um formulário adaptável, para adicionar uma instância do painel removido, use a sintaxe _panelName para capturar o gerenciador de instâncias do painel e use a API addInstance do gerenciador de instâncias para adicionar a instância excluída. Por exemplo, _panelName.addInstance(). Ele adiciona uma instância do painel removido.
 
-
-
 ## Uso do layout do acordeão no painel principal   {#using-the-accordion-layout-for-the-parent-panel-nbsp}
 
-Um painel tem várias opções de layout. A opção Layout para design do acordian tem suporte imediato para painéis repetíveis. Execute as seguintes etapas para o painel repetível com a opção Layout para design do acordian:
+Um painel tem várias opções de layout. A opção Layout para design do Accordion tem suporte pronto para uso para painéis repetíveis. Execute as seguintes etapas para repetir o painel com a opção Layout para design de acordeão:
 
 1. No pai do painel a ser repetido, toque em ![cmppr](assets/cmppr.png). Você pode ver as propriedades na barra lateral. No **Layout** selecione **Acordeão**.
-1. Em um painel a ser repetido, toque em ![cmppr](assets/cmppr.png). Você pode ver as propriedades do painel na barra lateral. Ativar o **Tornar o painel repetível** e especifique o valor para a variável **Máximo** e **Mínimo** campos.
+1. Em um painel a ser repetido, toque em ![cmppr](assets/cmppr.png). Você pode ver as propriedades do painel na barra lateral. Ativar o **Tornar o painel repetível** e especifique os valores para a variável **Máximo** e **Mínimo** campos.
 
    Agora, você pode usar o sinal de mais (+) e excluir ( ![delete-panel](assets/delete-panel.png)) para adicionar e remover os painéis.
 
@@ -116,7 +112,7 @@ O subformulário repetível é semelhante aos painéis repetíveis no Adaptive F
 1. Para especificar o número mínimo de repetições, selecione Contagem Mínima e digite um número na caixa associada. Se essa opção estiver definida como 0 e nenhum dado for fornecido para os objetos no subformulário no momento da mesclagem de dados, o subformulário não será colocado quando o formulário for renderizado.
 1. Para especificar o número máximo de repetições do subformulário, selecione Máximo e digite um número na caixa associada. Se você não especificar um valor na caixa Máx., o número de repetições de subformulário será ilimitado.
 1. Para especificar um número definido de repetições de subformulário, independentemente da quantidade de dados, selecione Contagem inicial e digite um número na caixa associada. Se você selecionar essa opção e não houver dados disponíveis ou houver menos entradas de dados do que o valor de Contagem inicial especificado, instâncias vazias do subformulário ainda serão colocadas no formulário.
-1. Adicione dois botões no subformulário pai — um para adicionar a instância e outro para excluir a instância do subformulário repetível. Para obter etapas detalhadas, consulte [Criar uma ação](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c74572b5612a87ca2b56-8000.2.html#WS107c29ade9134a2c-1f74d86012a87d4fe55-8000.2).
+1. Adicione dois botões no subformulário pai — um para adicionar instância e outro para excluir a instância de um subformulário repetível. Para obter etapas detalhadas, consulte [Criar uma ação](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c74572b5612a87ca2b56-8000.2.html#WS107c29ade9134a2c-1f74d86012a87d4fe55-8000.2).
 1. Agora, vincule o Modelo de formulário ao Formulário adaptável. Para obter etapas detalhadas, consulte [Criar um formulário adaptável com base em um modelo](creating-adaptive-form.md#create-an-adaptive-form-based-on-a-template).
 1. Use os botões criados na etapa 9 para adicionar e remover subformulários.
 
@@ -172,4 +168,4 @@ No código a seguir, a variável `SampleType`O painel usa a propriedade minOccou
 
 >[!NOTE]
 >
->Para layout que não seja do acordeão, use os componentes do botão Formulário adaptável para adicionar e remover instâncias.
+>Para layout sem acordeão, use os componentes do botão Formulário adaptável para adicionar e remover instâncias.

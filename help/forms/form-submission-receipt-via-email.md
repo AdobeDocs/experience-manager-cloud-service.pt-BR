@@ -1,13 +1,14 @@
 ---
-title: Envio de uma confirmação de envio de formulário por email
-description: O AEM Forms permite configurar a Ação enviar de email que envia uma confirmação para um usuário sobre o envio do formulário.
+title: Como enviar uma confirmação de envio de formulário por email no AEM Forms?
+description: O AEM Forms permite configurar a Ação enviar de email que envia uma confirmação para um usuário no envio do formulário.
+uuid: c80b1ef4-8fe3-48e0-8fc6-3032dc022a38
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '371'
 ht-degree: 0%
 
 ---

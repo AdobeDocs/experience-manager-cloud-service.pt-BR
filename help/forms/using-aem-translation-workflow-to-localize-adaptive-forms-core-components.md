@@ -1,10 +1,11 @@
 ---
-title: Traduzir um formulário adaptável baseado nos Componentes principais
-description: Usar tradução automática ou tradução humana para traduzir um Formulário adaptável baseado em Componentes principais
+title: Como traduzir um formulário adaptável baseado em Componentes principais?
+description: Saiba como criar um Modelo de dados de formulário no AEM Forms, testar o modelo com dados e serviços de amostra e configurar várias opções para um modelo.
 feature: Adaptive Forms
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '893'
 ht-degree: 3%
 
 ---

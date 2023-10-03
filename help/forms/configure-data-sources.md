@@ -1,14 +1,14 @@
 ---
 title: Como configurar fontes de dados?
-description: A Integração de dados do Experience Manager Forms permite configurar e conectar-se a diferentes fontes de dados. Saiba como configurar serviços Web RESTful, serviços Web baseados em SOAP e serviços OData como fontes de dados e usá-los para criar modelos de dados de formulário.
+description: Saiba como configurar serviços Web RESTful, serviços Web baseados em SOAP e serviços OData como fontes de dados para um modelo de dados de formulário.
 feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '2210'
-ht-degree: 0%
+source-wordcount: '2193'
+ht-degree: 1%
 
 ---
 

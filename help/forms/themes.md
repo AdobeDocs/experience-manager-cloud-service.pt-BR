@@ -1,24 +1,24 @@
 ---
-title: Criar e usar temas para estilizar um Formulário adaptável
-description: Você pode usar temas para estilizar e fornecer uma identidade visual a um formulário adaptável. Você pode compartilhar um tema em qualquer número do Adaptive Forms.
+title: Como criar e usar temas para estilizar um Formulário adaptável?
+description: Use temas de formulário adaptável para estilizar e fornecer uma identidade visual a um formulário adaptável. Você pode compartilhar um tema em qualquer número do Adaptive Forms.
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '5576'
-ht-degree: 1%
+source-wordcount: '5578'
+ht-degree: 2%
 
 ---
 
 # Criação e uso de temas {#creating-and-using-themes}
 
-<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-br) para [criação de um novo Forms adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html) |
 | AEM as a Cloud Service | Este artigo |
 
-É possível criar e aplicar temas para estilizar um Formulário adaptável<!-- or an interactive communication-->. Um tema contém detalhes de estilo para os componentes e painéis. Os estilos incluem propriedades como cores de fundo, cores de estado, transparência, alinhamento e tamanho. Quando você aplica um tema, o estilo especificado é refletido nos componentes correspondentes. O tema é gerenciado de forma independente sem uma referência a um Formulário adaptável<!-- or interactive communication -->.
+É possível criar e aplicar temas para estilizar um Formulário adaptável<!-- or an interactive communication-->. Um tema contém detalhes de estilo para os componentes e painéis. Os estilos incluem propriedades como cores de fundo, cores de estado, transparência, alinhamento e tamanho. Ao aplicar um tema, o estilo especificado é refletido nos componentes correspondentes. O tema é gerenciado de forma independente sem uma referência a um Formulário adaptável<!-- or interactive communication -->.
 
 Você pode baixar e instalar o [!DNL AEM Forms] pacote de conteúdo de referência de [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) portal para importar temas de referência e modelos para o seu ambiente.
 
@@ -408,7 +408,7 @@ As opções para personalizar estilos de estado variam para diferentes component
   </tr>
   <tr>
    <td><p>Borda</p> </td>
-   <td><p>Permite escolher a aparência da borda do componente. Por exemplo, você deseja que a caixa de texto tenha uma borda grossa e vermelha profunda com uma linha pontilhada. </p> <p>Suas opções são largura, estilo, raio e cor da borda.</p> </td>
+   <td><p>Permite escolher a aparência da borda do componente. Por exemplo, você deseja que a caixa de texto tenha uma borda espessa vermelha profunda com uma linha pontilhada. </p> <p>Suas opções são largura, estilo, raio e cor da borda.</p> </td>
   </tr>
   <tr>
    <td><p>Efeitos</p> </td>
@@ -488,8 +488,8 @@ Agora é possível usar fontes disponíveis em um serviço da Web em um Formulá
 
 Para configurar o Adobe Fonts no Experience Manager, execute as seguintes etapas:
 
-1. Na instância do autor, clique em ![Adobe Experience Manager](assets/adobeexperiencemanager.png)**[!UICONTROL Adobe Experience Manager ]**>**[!UICONTROL  Ferramentas ]**![martelo](assets/hammer.png) >**[!UICONTROL  Implantação ]**>**[!UICONTROL  Cloud Services ]**.
-1. No **[!UICONTROL Cloud Services]** , navegue até e abra a **[!UICONTROL Adobe Fonts]** opção. Abra a pasta de configuração e clique em **[!UICONTROL Criar]**.
+1. Na instância do autor, clique em ![Adobe Experience Manager](assets/adobeexperiencemanager.png)**[!UICONTROL Adobe Experience Manager ]**>**[!UICONTROL  Ferramentas ]**![martelo](assets/hammer.png) >**[!UICONTROL  Implantação ]**>**[!UICONTROL  Cloud Service ]**.
+1. No **[!UICONTROL Cloud Service]** , navegue até e abra a **[!UICONTROL Adobe Fonts]** opção. Abra a pasta de configuração e clique em **[!UICONTROL Criar]**.
 1. No **[!UICONTROL Criar configuração]** , especifique um título para a configuração e clique em **[!UICONTROL Criar]**.
 
    Você é redirecionado para a página de configuração.
@@ -617,11 +617,11 @@ Por exemplo, a cor de fundo de uma caixa de texto é azul<!-- in the base client
 
 ## Depuração de estilos {#debugging-styles}
 
-Quando você especifica estilos para componentes no Editor de temas, um CSS é gerado. Ao estilizar um componente genérico, vários componentes incluídos nele também são estilizados. Por exemplo, ao estilizar um campo, a caixa de texto e o rótulo nele também são estilizados. Quando você estiliza a caixa de texto dentro do campo, ela recebe seu próprio CSS. Se você quiser depurar o CSS gerado para o campo e o componente, o Editor de temas fornece opções que permitem exibir CSS.
+Quando você especifica estilos para componentes no Editor de temas, um CSS é gerado. Ao estilizar um componente genérico, vários componentes incluídos nele também são estilizados. Por exemplo, ao estilizar um campo, a caixa de texto e o rótulo nele também são estilizados. Quando você estiliza a caixa de texto dentro do campo, ele obtém seu próprio CSS. Se você quiser depurar o CSS gerado para o campo e o componente, o Editor de temas fornece opções que permitem exibir CSS.
 
 Você pode ver o CSS gerado usando as seguintes opções:
 
-* **Exibir CSS** opção na barra lateral: Ao selecionar um componente no Tema, você pode ver a opção VISUALIZAR CSS na barra lateral. Ela mostra o CSS gerado, incluindo o CSS de `::before` e `::after` pseudo elementos.
+* **Exibir CSS** opção na barra lateral: Ao selecionar um componente no Tema, você pode ver a opção VISUALIZAR CSS na barra lateral. Ela mostra o CSS gerado, incluindo o CSS de `::before` e `::after` pseudoelementos.
 * **Exibir tema CSS** opção na barra de ferramentas da tela de desenho: na barra de ferramentas da tela de desenho, clique em ![theme-options](assets/theme-options.png) > **[!UICONTROL Exibir tema CSS]**. Você pode ver todo o tema CSS gerado pelas propriedades definidas no Editor de temas.
 
 ## Resolução de problemas, recomendações e práticas recomendadas {#troubleshooting-recommendations-and-best-practices}

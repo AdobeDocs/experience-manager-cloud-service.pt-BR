@@ -1,13 +1,13 @@
 ---
-title: Como usar o editor de regras do Adaptive Forms?
-description: O editor de regras do Forms adaptável permite adicionar comportamento dinâmico e criar lógica complexa em formulários sem codificação ou script. Comece a entender uma regra e as diretrizes para escolher uma construção de regra. Saiba mais sobre tipos de operadores e eventos disponíveis no editor de regras.
+title: O que é o editor de regras do Adaptive Forms?
+description: O editor de regras Forms adaptável permite adicionar comportamento dinâmico e criar lógica complexa em formulários sem codificação ou script.
 feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 21db924a8d925f9964cc7af6743764c119208159
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '6446'
+source-wordcount: '6422'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ O editor de regras fornece uma interface de usuário intuitiva e simplificada pa
 * Validar o valor de um objeto
 * Executar funções para calcular o valor de um objeto
 * Chame um serviço de modelo de dados de formulário e execute uma operação
-* Definir a propriedade de um objeto
+* Definir propriedade de um objeto
 
 <!-- Rule editor replaces the scripting capabilities in [!DNL Experience Manager 6.1 Forms] and earlier releases. However, your existing scripts are preserved in the new rule editor. For more information about working with existing scripts in the rule editor, see [Impact of rule editor on existing scripts](rule-editor.md#p-impact-of-rule-editor-on-existing-scripts-p). -->
 
@@ -49,7 +49,7 @@ Uma regra normalmente segue uma das seguintes construções:
 
 **Condição-Ação** Nesta construção, uma regra primeiro define uma condição seguida por uma ação para acionar. A construção é comparável à instrução if-then em linguagens de programação.
 
-No regra editor, o **tipo Quando** regra aplica a construção de ação de condição.
+No editor de regras, a variável **Quando** o tipo de regra impõe a construção condição-ação.
 
 **Condição** de ação Nesta construção, uma regra primeiro define uma ação a ser acionada seguida de condições para avaliação. Outra variação dessa construção é a ação alternativa de condição de ação, que também define uma ação alternativa a ser acionada se a condição retornar False.
 
@@ -57,7 +57,7 @@ A Exibir, Ocultar, Ativar, Desativar, Definir Valor e Validar regra tipos em reg
 
 >[!NOTE]
 >
->Os tipos de regras disponíveis, incluindo condições e ações definidas no editor de regras, também dependem do tipo de objeto de formulário no qual você está criando uma regra. O editor de regras exibe somente tipos de regras válidos e opções para gravar instruções de condição e ação para um determinado tipo de objeto de formulário. Por exemplo, você não vê os tipos de regras Validar, Definir valor de, Ativar e Desativar para um objeto de painel.
+>Os tipos de regra disponíveis, incluindo condições e ações que você define em regra editor, também dependem do tipo de objeto de formulário no qual você está criando uma regra. A regra editor exibe somente tipos e opções válidas de regra para instruções de condição de escrita e ação para um determinado tipo de objeto de formulário. Por exemplo, você não vê Validar, Definir Valor de, Ativar e Desativar regra tipos para um objeto de painel.
 
 Para obter mais informações sobre tipos de regras disponíveis no editor de regras, consulte [Tipos de regras disponíveis no editor de regras](rule-editor.md#p-available-rule-types-in-rule-editor-p).
 
@@ -104,9 +104,9 @@ O editor de regras fornece um conjunto de tipos de regras predefinidos que você
 
 ### [!UICONTROL Quando] {#whenruletype}
 
-A variável **[!UICONTROL Quando]** o tipo de regra segue a variável **condição-ação-ação alternativa** regra construir, ou às vezes, apenas a variável **condição-ação** construir. Nesse tipo de regra, primeiro especifique uma condição para avaliação seguida por uma ação para acionar se a condição for atendida ( `True`). Ao usar o tipo Quando regra, você pode usar vários operadores AND e OR para criar [expressões](#nestedexpressions) aninhadas.
+A variável **[!UICONTROL Quando]** o tipo de regra segue a variável **condição-ação-ação alternativa** regra construir, ou às vezes, apenas a variável **condição-ação** construir. Nesse tipo de regra, primeiro especifique uma condição para avaliação seguida por uma ação para acionar se a condição for atendida ( `True`). Ao usar o tipo de regra Quando, é possível usar vários operadores E e OU para criar [expressões aninhadas](#nestedexpressions).
 
-Ao usar o tipo Quando regra, é possível avaliar uma condição em um objeto de formulário e executar ações em um ou mais objetos.
+Usando o tipo de regra Quando, é possível avaliar uma condição em um objeto de formulário e executar ações em um ou mais objetos.
 
 Em palavras simples, um típico de Quando regra está estruturado da seguinte maneira:
 
@@ -140,7 +140,7 @@ Ao escrever uma regra Quando, é possível acionar a ação Limpar valor de. Lim
 
 **[!UICONTROL Desativar]** Desabilita o objeto especificado.
 
-**[!UICONTROL Chamar serviço]** Invoca um serviço configurado em um modelo de dados de formulário. Quando você escolher a operação Invoke Service, um campo será exibido. Ao tocar no campo, ele exibe todos os serviços configurados em todos os modelos de dados de formulário no instância [!DNL Experience Manager] . Ao escolher um serviço de modelo de dados de formulário, mais campos são exibidos onde você pode mapear objetos de formulário com parâmetros de entrada e saída para o serviço especificado. Consulte exemplo de regra para chamar serviços de Modelo de dados de formulário.
+**[!UICONTROL Chamar serviço]** Invoca um serviço configurado em um modelo de dados de formulário. Quando você escolhe a operação Chamar Serviço, um campo é exibido. Ao tocar no campo, ele exibe todos os serviços configurados em todos os modelos de dados de formulário no [!DNL Experience Manager] instância. Ao escolher um serviço de Modelo de dados de formulário, mais campos aparecem onde é possível mapear objetos de formulário com parâmetros de entrada e saída para o serviço especificado. Consulte o exemplo regra para invocar serviços do modelo de dados de formulário.
 
 Além do serviço de modelo de dados de formulário, você pode especificar um URL WSDL direto para chamar um serviço Web. No entanto, um serviço de modelo de dados de formulário tem muitos benefícios e a abordagem recomendada para chamar um serviço.
 
@@ -204,11 +204,7 @@ A variável **Definir Valor De** o tipo de regra não está disponível para tod
 
 Defina o valor do Objeto A como:
 
-(sequência de caracteres ABC) OU
-(objeto propriedade X do objeto C) OU
-(valor de uma função) OU
-(valor de uma expressão matemática) OU
-(valor de saída de um serviço de modelo de dados ou de um serviço da Web);
+(cadeia de caracteres ABC) OR (propriedade do objeto X do objeto C) OR (valor de uma função) OR (valor de uma expressão matemática) OR (valor de saída de um serviço de modelo de dados ou serviço Web);
 
 Quando (opcional):
 
@@ -218,7 +214,7 @@ O exemplo a seguir usa o valor em `dependentid` campo como entrada e define o va
 
 ![Definir valor-serviço da Web](assets/set-value-web-service.png)
 
-Exemplo de regra Definir valor usando o serviço de Modelo de dados de formulário
+Exemplo de Definir Valor regra usando o serviço de modelo de dados de formulário
 
 >[!NOTE]
 >

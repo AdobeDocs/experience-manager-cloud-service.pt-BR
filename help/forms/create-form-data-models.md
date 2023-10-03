@@ -1,13 +1,13 @@
 ---
-title: Como criar um modelo de dados de formulário?
-description: A integração de dados do Experience Manager Forms fornece uma interface de usuário intuitiva para criar e trabalhar com modelos de dados de formulário. Saiba como criar modelos de dados de formulário com ou sem fontes de dados configuradas.
+title: Como criar o modelo de dados de formulário?
+description: Saiba como criar um modelo de dados de formulário (FDM) e enviar ou recuperar dados para uma fonte de dados usando um Formulário adaptável ou um Fluxo de trabalho do AEM.
 feature: Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
 workflow-type: tm+mt
-source-wordcount: '1551'
+source-wordcount: '1544'
 ht-degree: 1%
 
 ---

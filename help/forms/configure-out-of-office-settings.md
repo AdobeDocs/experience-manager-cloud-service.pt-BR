@@ -1,12 +1,14 @@
 ---
 title: Definir configurações de Ausência Temporária
 description: Delegue tarefas enquanto estiver fora do escritório ou fora dele para uma execução perfeita do fluxo de trabalho.
-source-git-commit: 6dd34937a8aeb6c7ddfc0fb1180a112de534dd4b
+exl-id: c7e436f1-8e1c-4334-b3dc-ab9800695301
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '873'
 ht-degree: 1%
 
 ---
+
 
 # Definir configuração de Ausência Temporária {#configure-out-of-office-settings}
 
@@ -54,6 +56,7 @@ Execute as seguintes etapas para Ativar a configuração Ausência Temporária p
    >
    >A ordem dos designados é importante. Quando um item é atribuído a um usuário que ativou a configuração de ausência temporária, o item é avaliado em relação à lista de responsáveis especificada na ordem em que os responsáveis são adicionados. Quando um item corresponde aos critérios, ele é atribuído ao destinatário e o próximo destinatário não é verificado.
 
+
 1. Toque **[!UICONTROL Salvar]**. A configuração entra em vigor na data e hora de início especificadas. Se você fizer logon enquanto estiver fora do escritório, não será considerado como estando no escritório até que altere suas configurações.
 
 Agora, os itens atribuídos a você durante o período de Ausência Temporária são automaticamente atribuídos ao destinatário especificado.
@@ -61,6 +64,7 @@ Agora, os itens atribuídos a você durante o período de Ausência Temporária 
 
 >[!NOTE]
 >
+>(Somente para itens de fluxo de trabalho centrados no Forms) Ative a opção **[!UICONTROL Permitir que o destinatário delegue usando as configurações &quot;Ausente&quot;]** opção do **[!UICONTROL Atribuir tarefa]** etapa no fluxo de trabalho. Somente os itens que têm a opção acima ativada são delegados a outros usuários.
 >(Somente para itens de fluxo de trabalho centrados no Forms) Ative a opção **[!UICONTROL Permitir que o destinatário delegue usando as configurações &quot;Ausente&quot;]** opção do **[!UICONTROL Atribuir tarefa]** etapa no fluxo de trabalho. Somente os itens que têm a opção mencionada anteriormente ativada são delegados a outros usuários.
 
 ## Limitações {#limitations}

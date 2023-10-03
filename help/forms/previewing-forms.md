@@ -1,15 +1,13 @@
 ---
-title: Pré-visualização de um formulário
-seo-title: Previewing a form
-description: Você pode visualizar seus formulários antes de publicá-los ou ativá-los para garantir que atendam às expectativas. As opções de visualização podem variar entre os tipos de formulário compatíveis.
-seo-description: You can preview your forms before publishing or activating to ensure it meets the expectations. Preview options may vary across the supported form types.
+title: Como visualizar um formulário adaptável
+description: Os usuários podem visualizar formulários antes de publicá-los ou ativá-los, para garantir que atendam às expectativas. As opções de visualização podem variar entre os tipos de formulário compatíveis.
 uuid: 9ec359ea-f518-441c-9c3d-e3c1ea07a532
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 377d804d-4a75-4c93-8125-d2660cf56418
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '365'
 ht-degree: 3%
 
 ---

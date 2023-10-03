@@ -1,16 +1,14 @@
 ---
-title: Referenciar fragmentos de formulário adaptável
-seo-title: Reference Adaptive Form Fragments
-description: O AEM Forms fornece fragmentos de formulário adaptáveis que você pode usar como ativos para criar um formulário rapidamente.
-seo-description: AEM Forms provides Adaptive Form Fragments that you can use as assets to create a form quickly.
+title: O que são fragmentos de formulário adaptável de referência?
+description: O AEM Forms fornece fragmentos de formulário adaptáveis que você pode usar como ativos para criar formulários rapidamente.
 uuid: 85401274-6691-4726-8b70-b93fd46de053
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '423'
 ht-degree: 2%
 
 ---
@@ -39,7 +37,7 @@ Quando você instala o pacote, uma pasta Fragmentos de referência contendo frag
 
 ## Endereço {#address}
 
-Inclui campos para especificar o endereço para correspondência. Os campos disponíveis são endereço, CEP, cidade, estado e país. Ele também inclui um serviço Web pré-configurado que preenche a cidade e o estado de um CEP específico dos EUA.
+Inclui campos para especificar um endereço para correspondência. Os campos disponíveis são endereço, CEP, cidade, estado e país. Ele também inclui um serviço Web pré-configurado que preenche a cidade e o estado de um CEP específico dos EUA.
 
 ![Fragmento do endereço](assets/address.png)
 
@@ -49,7 +47,7 @@ Inclui campos para especificar o endereço para correspondência. Os campos disp
 
 ## Informações de contato {#contact-information}
 
-Inclui campos para capturar número de telefone e endereço de email.
+Inclui campos para capturar um número de telefone e endereço de email.
 
 ![Fragmento de informações de contato](assets/contact-info.png)
 
@@ -60,7 +58,7 @@ Inclui campos para capturar número de telefone e endereço de email.
 ## Informações de cartão de crédito {#credit-card-information}
 
 Inclui campos para registrar informações de cartão de crédito que podem ser usadas para processar pagamentos.
-[ ![Fragmento de informações do cartão de crédito](assets/cc-info.png)](assets/cc-info-1.png)
+[![Fragmento de informações do cartão de crédito](assets/cc-info.png)](assets/cc-info-1.png)
 
 ## Emprego Atual {#current-employment}
 

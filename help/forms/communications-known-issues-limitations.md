@@ -1,10 +1,10 @@
 ---
-title: Considerações sobre problemas conhecidos e práticas recomendadas
-description: Práticas recomendadas de comunicação, problemas conhecidos e limitações
+title: Considerações sobre problemas conhecidos e práticas recomendadas do AEM Forms
+description: Considerações sobre problemas conhecidos e práticas recomendadas para APIs de comunicação do AEM Forms.
 exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
 workflow-type: tm+mt
-source-wordcount: '1709'
+source-wordcount: '1716'
 ht-degree: 0%
 
 ---
@@ -169,7 +169,7 @@ A tabela a seguir especifica as opções de XCI.
 
 
 
-## Práticas recomendadas    
+## Práticas recomendadas
 
 * A Adobe recomenda hospedar arquivos de dados no armazenamento de contêiner de blob na região da nuvem usada pelo AEM Cloud Service.
 

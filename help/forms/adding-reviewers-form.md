@@ -1,16 +1,15 @@
 ---
 title: Associar revisores de envio a um formulário
 seo-title: Associating submission reviewers with a form
-description: Saiba como associar revisores de envio a um formulário no [!DNL AEM Forms]. Os revisores associados revisam um formulário enviado por meio do portal de formulários.
-seo-description: Learn how to associate submission reviewers with a form in [!DNL AEM Forms]. Associated reviewers review a form submitted via forms portal.
+description: Compartilhe um Formulário adaptável para revisão com um ou mais revisores.
 uuid: 58c8c8fb-9262-4c37-b9b2-e46fe21b77d9
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 71d1aa10-d191-49bc-a50f-1098324f1cfe
 docset: aem65
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '483'
 ht-degree: 1%
 
 ---

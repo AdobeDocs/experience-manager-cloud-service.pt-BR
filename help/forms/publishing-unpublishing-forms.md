@@ -1,18 +1,13 @@
 ---
-title: Publicação e cancelamento de publicação de formulários e documentos
-seo-title: Publishing and unpublishing forms and documents
-description: É possível agendar a publicação e o cancelamento da publicação de formulários. Os formulários publicados são replicados na instância de publicação.
-seo-description: You can schedule publishing and unpublishing of forms. Published forms are replicated on the publish instance.
-uuid: 0bad5608-b7a8-4599-81cc-2cd0a3dc7dd5
+title: Como publicar e desfazer a publicação de formulários e documentos?
+description: Agende a publicação e o cancelamento da publicação do Adaptive Forms. Os formulários publicados são replicados na instância de publicação.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-content-strategy: max-2018
 discoiquuid: 32a7a50c-74f4-49bc-a0bd-a9ec142527cb
-docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+docset: aem65s
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '1333'
+source-wordcount: '1335'
 ht-degree: 0%
 
 ---
@@ -78,7 +73,6 @@ Um ativo pode ter os seguintes estados:
       >[!NOTE]
       >
       >Não selecione vários ativos. Não é possível publicar vários ativos de uma só vez.
-
 
 1. Quando o processo de publicação é iniciado, uma caixa de diálogo de confirmação é exibida listando todos os ativos e recursos relacionados. Na caixa de diálogo que contém ativos relacionados, toque em **[!UICONTROL Publish]**. O ativo é publicado e a caixa de diálogo Publicar sucesso de ativos é exibida.
 

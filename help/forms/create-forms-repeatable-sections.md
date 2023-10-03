@@ -1,14 +1,14 @@
 ---
-title: Repetibilidade no formulário adaptável (componentes principais)
-description: Use o recurso de repetibilidade dos componentes do painel para repetir seções semelhantes em um formulário adaptável.
+title: Como criar painéis repetíveis nos Componentes principais do formulário adaptável
+description: Saiba como criar seções ou campos repetíveis em um Formulário adaptável.
 role: Architect, Developer, Admin, User
-source-git-commit: fcdb96a6bbe8ff8761293eedc0d38efaecb56037
+exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '1391'
-ht-degree: 1%
+source-wordcount: '1390'
+ht-degree: 6%
 
 ---
-
 
 # Criar formulários com seções repetíveis (Componentes principais) {#repeat-panel}
 
@@ -30,10 +30,10 @@ No final deste artigo, você aprenderá a:
 * Definir o número mínimo ou máximo de repetições para um componente de Formulário adaptável
 * Usar o editor de regras para configurar ações de adição ou exclusão para seções repetíveis
 
-Você pode usar o [Painel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html), [Acordeão](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [Guias Horizontais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html)ou [Assistente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html) componentes para tornar as seções de um Formulário adaptável repetíveis. Você pode adicionar componentes filhos aos componentes painel, acordeão, guias horizontais ou assistente para criar seção repetível em um formulário.
+Você pode usar o [Painel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html?lang=pt-br), [Acordeão](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=pt-BR), [Guias Horizontais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=pt-br)ou [Assistente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=pt-br) componentes para tornar as seções de um Formulário adaptável repetíveis. Você pode adicionar componentes filhos aos componentes painel, acordeão, guias horizontais ou assistente para criar seção repetível em um formulário.
 
 
-Os exemplos neste documento são baseados no [Painel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html) componente. Você pode executar as etapas idênticas para tornar o [Acordeão](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [Guias horizontais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html), e [Assistente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html) componentes repetíveis.
+Os exemplos neste documento são baseados no [Painel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html?lang=pt-br) componente. Você pode executar as etapas idênticas para tornar o [Acordeão](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=pt-BR), [Guias horizontais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=pt-br), e [Assistente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=pt-br) componentes repetíveis.
 
 ## Adicionar ou excluir seções que podem ser repetidas em um formulário {#add-or-delete-repeatable-section-in-panel-container}
 
@@ -227,7 +227,7 @@ No código a seguir, a variável `SampleType`O painel usa a propriedade minOccou
 
 ## Artigos relacionados
 
-* [Criar um Formulário adaptável](creating-adaptive-form-core-components.md)
+* [Criação de um Formulário adaptável](creating-adaptive-form-core-components.md)
 * [Criar estilo ou temas para seus formulários](using-themes-in-core-components.md)
 * [Adicionar comportamento dinâmico a formulários usando o editor de regras](rule-editor.md)
 * [Definir layout de formulários para diferentes tamanhos de tela e tipos de dispositivo](/help/sites-cloud/authoring/features/responsive-layout.md)
