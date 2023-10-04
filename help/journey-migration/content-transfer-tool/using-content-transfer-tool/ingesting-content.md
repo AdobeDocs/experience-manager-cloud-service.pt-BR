@@ -2,9 +2,9 @@
 title: Assimilar conteúdo no Cloud Service
 description: Saiba como usar o Cloud Acceleration Manager para assimilar conteúdo do seu conjunto de migração em uma instância do Cloud Service de destino.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 5c482e5f883633c04d70252788b01f878156bac8
+source-git-commit: a6d19de48f114982942b0b8a6f6cbdc38b0d4dfa
 workflow-type: tm+mt
-source-wordcount: '2142'
+source-wordcount: '2191'
 ht-degree: 7%
 
 ---
@@ -16,13 +16,10 @@ ht-degree: 7%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion"
 >title="Assimilação de conteúdo"
->abstract="Assimilação refere-se à assimilação de conteúdo do conjunto de migração na instância de destino do Cloud Service. A Ferramenta de Transferência de Conteúdo tem um recurso que permite conteúdo diferencial complementar, com o qual é possível transferir somente as alterações feitas desde a atividade de transferência de conteúdo anterior."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html#top-up-extraction-process" text="Extração complementar"
+>abstract="Assimilação refere-se à assimilação de conteúdo do conjunto de migração na instância de destino do Cloud Service. A ferramenta Transferência de conteúdo tem um recurso que oferece suporte a atualizações complementares de conteúdo diferencial, com o qual é possível transferir somente as alterações feitas desde a atividade de transferência de conteúdo anterior."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html?lang=pt-BR#top-up-extraction-process" text="Extração complementar"
 
 Siga as etapas abaixo para assimilar seu conjunto de migração usando o Cloud Acceleration Manager:
-
->[!NOTE]
->Você se lembrou de registrar um tíquete de suporte para esta assimilação? Consulte [Considerações importantes antes de usar a ferramenta Transferência de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#important-considerations) por essa e outras considerações para ajudar a tornar a assimilação bem-sucedida.
 
 1. Acesse o Cloud Acceleration Manager. Clique no cartão do projeto e no cartão Transferência de conteúdo. Navegue até **Tarefas de assimilação** e clique em **Nova assimilação**
 
@@ -120,21 +117,27 @@ Esta mensagem indica que o Cloud Acceleration Manager não conseguiu acessar o s
 > O campo &quot;Token de migração&quot; é exibido porque, em alguns casos, a recuperação desse token é o que realmente não é permitido. Ao permitir que seja fornecido manualmente, ele pode permitir que o usuário inicie a assimilação rapidamente, sem nenhuma ajuda adicional. Se o token for fornecido e a mensagem ainda for exibida, a recuperação do token não foi o problema.
 
 * O AEM as a Cloud Service mantém o estado do ambiente e, ocasionalmente, deve reiniciar o serviço de migração por vários motivos normais. Se esse serviço estiver sendo reiniciado, ele não poderá ser acessado, mas estará disponível no futuro.
-* É possível que outro processo esteja sendo executado na instância. Por exemplo, se o Release Orchestrator estiver aplicando uma atualização, o sistema pode estar ocupado e o serviço de migração pode ficar indisponível regularmente. Isso e a possibilidade de corromper o estágio ou a instância de produção é o motivo pelo qual é altamente recomendável pausar as atualizações durante uma assimilação.
+* É possível que outro processo esteja sendo executado na instância. Por exemplo, se [Atualizações de versão do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html) estiver aplicando uma atualização, o sistema poderá estar ocupado e o serviço de migração poderá ficar indisponível regularmente. Quando esse processo estiver concluído, o início da assimilação poderá ser tentado novamente.
 * Se um [A Inclui na lista de permissões IP foi aplicada](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) Por meio do Cloud Manager, ele impede que o Cloud Acceleration Manager chegue ao serviço de migração. Um endereço IP não pode ser adicionado para assimilações porque seu endereço é dinâmico. Atualmente, a única solução é desativar a lista de permissões IP enquanto a assimilação está em execução.
 * Pode haver outros motivos que precisem de investigação. Se a assimilação continuar a falhar, entre em contato com o Atendimento ao cliente da Adobe.
 
-### As Atualizações Automáticas através do Release Orchestrator ainda estão habilitadas
+### Atualizações e assimilações de versão do AEM
 
-O Release Orchestrator mantém os ambientes atualizados automaticamente ao aplicar atualizações automaticamente. Se a atualização for acionada quando uma assimilação for executada, poderá causar resultados imprevisíveis, incluindo a corrupção do ambiente. Um bom motivo para registrar um tíquete de suporte ao cliente antes de iniciar uma assimilação (consulte a &quot;Observação&quot; acima), para que a desativação temporária do Release Orchestrator possa ser programada.
+[Atualizações de versão do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html) são automaticamente aplicados a ambientes para mantê-los atualizados com a versão mais recente do AEM as a Cloud Service. Se a atualização for acionada quando uma assimilação for executada, poderá causar resultados imprevisíveis, incluindo a corrupção do ambiente.
 
-Se o Release Orchestrator ainda estiver em execução quando uma assimilação estiver sendo iniciada, a interface do usuário apresentará essa mensagem. Você pode optar por continuar mesmo assim, aceitando o risco, marcando o campo e pressionando o botão novamente.
+Se as &quot;Atualizações de versão do AEM&quot; estiverem integradas no programa de destino, o processo de assimilação tentará desativar sua fila antes de ser iniciado. Quando a assimilação for concluída, o estado do atualizador da versão retornará para como estava antes de as assimilações serem iniciadas.
 
 >[!NOTE]
 >
-> O Release Orchestrator agora está sendo implantado em ambientes de desenvolvimento, portanto, as atualizações pausadas nesses ambientes também devem ser feitas.
+> Não é mais necessário registrar um tíquete de suporte para desativar a opção &quot;Atualizações de versão do AEM&quot;.
 
-![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
+Se &quot;Atualizações de versão do AEM&quot; estiver ativo (ou seja, as atualizações estão em execução ou estão na fila para serem executadas), a assimilação não será iniciada e a interface do usuário apresentará a seguinte mensagem. Quando as atualizações estiverem concluídas, a assimilação poderá ser iniciada. O Cloud Manager pode ser usado para ver o estado atual dos pipelines do programa.
+
+>[!NOTE]
+>
+> &quot;Atualizações de versão do AEM&quot; é executado no pipeline do ambiente e aguardará até que o pipeline esteja limpo. Se as atualizações forem enfileiradas por mais tempo do que o esperado, verifique se um fluxo de trabalho personalizado não tem o pipeline bloqueado involuntariamente.
+
+![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_active.png)
 
 ### Falha na assimilação complementar devido à violação de restrição de exclusividade
 

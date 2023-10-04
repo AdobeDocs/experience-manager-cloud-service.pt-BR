@@ -2,10 +2,10 @@
 title: Diretrizes e práticas recomendadas para usar a ferramenta Transferência de conteúdo
 description: Saiba mais sobre as diretrizes e práticas recomendadas para usar a ferramenta Transferência de conteúdo.
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
+source-git-commit: 5f805122fb52d7f5268075bd7a6a0232e7e8d2ff
 workflow-type: tm+mt
-source-wordcount: '1554'
-ht-degree: 14%
+source-wordcount: '1432'
+ht-degree: 16%
 
 ---
 
@@ -78,12 +78,6 @@ Siga a seção abaixo para entender as considerações importantes ao executar a
 * Os usuários e grupos transferidos pela ferramenta Transferência de conteúdo são apenas aqueles exigidos pelo conteúdo para atender às permissões. A variável _Extração_ o processo copia todo o `/home` no conjunto de migração e faz o Mapeamento de usuários, adicionando um campo criado a partir do endereço de email de cada usuário. Para obter mais informações, consulte [Mapeamento de usuários e migração de entidade de segurança](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md). A variável _Assimilação_ O processo copia todos os usuários e grupos referenciados nas ACLs de conteúdo migradas. Consulte [Migração de grupos de usuários fechados](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) para considerações adicionais sobre grupos usados em uma política de Grupo fechado de usuários (CUG).
 
 * Durante a fase de extração, a ferramenta Transferência de conteúdo é executada em uma instância de origem do AEM ativa.
-
-* Após concluir o *Extração* fase do processo de transferência de conteúdo e antes de iniciar a *Fase de assimilação* para assimilar conteúdo no seu as a Cloud Service AEM *Estágio* ou *Produção* registrará um tíquete de suporte. Notifique o Adobe da sua intenção de executar o *Assimilação* para que o Adobe possa garantir que não ocorram interrupções durante o *Assimilação* processo. Registre o tíquete de suporte uma semana antes do planejado *Assimilação* data. Após enviar o tíquete de suporte, a equipe de suporte fornecerá orientação sobre as próximas etapas. Você pode enviar um tíquete de suporte com os seguintes detalhes:
-
-   * A data exata e o horário estimado (com seu fuso horário) em que você planeja iniciar o *Assimilação* fase.
-   * Tipo de ambiente (Preparo ou Produção) no qual você planeja assimilar dados.
-   * ID do programa.
 
 * A variável *Fase de assimilação* para o autor reduz a implantação do autor inteiro. Significa que o AEM do autor não está disponível durante todo o processo de ingestão. Além disso, certifique-se de que nenhum pipeline do Cloud Manager seja executado enquanto você estiver executando o *Assimilação* fase.
 
