@@ -3,13 +3,13 @@ title: Criação de fragmentos de conteúdo
 description: Entenda como criar conteúdo para os fragmentos de conteúdo e, em seguida, crie variações desse conteúdo de acordo com a finalidade. Isso proporciona flexibilidade adicional para entregas headless e criação de páginas.
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 2a4538ad8b52615ffdee110393bfbc01f57694f4
+exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
+source-git-commit: e92e0d76ed5aa904c3e16bcfda13650fb6a8b5b6
 workflow-type: tm+mt
-source-wordcount: '2249'
+source-wordcount: '2253'
 ht-degree: 4%
 
 ---
-
 
 # Criação de fragmentos de conteúdo {#authoring-content-fragments}
 
@@ -32,23 +32,9 @@ Esse editor fornece:
 * Capacidade para [exibir e abrir referências principais](#view-parent-references).
 * Uma visualização hierárquica do fragmento de conteúdo e suas referências, usando o [Árvore de estrutura](#structure-tree).
 
->[!CAUTION]
+>[!WARNING]
 >
 >O editor descrito nesta seção é *somente* disponível no *online* Adobe Experience Manager (AEM) as a Cloud Service.
-
->[!CAUTION]
->
->Para editar um fragmento de conteúdo, é necessário [as permissões apropriadas](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Entre em contato com o(a) administrador(a) do sistema em caso de problemas.
-> 
->Por exemplo, se você não tiver `edit` permissões que o editor será somente leitura.
-
->[!NOTE]
->
->Consulte a documentação do Assets para obter informações completas sobre o [editor de fragmento de conteúdo original](/help/assets/content-fragments/content-fragments-variations.md) - estiver disponível a partir de ambos os **Assets** e o **Fragmentos de conteúdo** console.
-
->[!NOTE]
->
->A equipe do projeto pode personalizar o editor, se necessário. Consulte [Personalização do console e do editor de fragmentos de conteúdo](/help/implementing/developing/extending/content-fragments-console-and-editor.md) para obter mais detalhes.
 
 ## Editor de fragmento de conteúdo {#content-fragment-editor}
 
@@ -76,12 +62,6 @@ Ao abrir o Editor de fragmento de conteúdo pela primeira vez, você vê quatro 
    * se **Espaço reservado da guia** os campos são definidos no modelo mostrado aqui e podem ser usados para navegação; eles serão apresentados horizontalmente ou como uma lista suspensa
 
 ![Editor de fragmento de conteúdo — Visão geral](assets/cf-authoring-overview.png)
-
->[!CAUTION]
->
->Um modelo de fragmento de conteúdo pode definir campos de dados chamados **Título** e **Descrição**. Se esses campos existirem, eles serão definidos pelo usuário e poderão ser atualizados na *painel central* ao editar o fragmento.
->
->O fragmento de conteúdo e suas variações também têm campos de metadados (propriedades de variação) chamados **Título** e **Descrição**. Esses campos são parte integral de qualquer fragmento de conteúdo e são definidos inicialmente quando o fragmento é criado. Elas podem ser atualizadas no *painel direito* ao editar o fragmento.
 
 ## Navegar pela estrutura do fragmento de conteúdo {#navigate-structure}
 
@@ -494,3 +474,19 @@ A variável **Campos** O painel lista todos os campos no Fragmento de conteúdo.
   </tr>
  </tbody>
 </table>
+
+## É bom saber {#good-to-know}
+
+Além disso:
+
+* Para editar um fragmento de conteúdo, é necessário [as permissões apropriadas](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Entre em contato com o(a) administrador(a) do sistema em caso de problemas.
+
+  Por exemplo, se você não tiver `edit` permissões que o editor será somente leitura.
+
+* Um modelo de fragmento de conteúdo pode definir campos de dados chamados **Título** e **Descrição**. Se esses campos existirem, eles serão definidos pelo usuário e poderão ser atualizados na *painel central* ao editar o fragmento.
+
+  O fragmento de conteúdo e suas variações também têm campos de metadados (propriedades de variação) chamados **Título** e **Descrição**. Esses campos são parte integral de qualquer fragmento de conteúdo e são definidos inicialmente quando o fragmento é criado. Elas podem ser atualizadas no *painel direito* ao editar o fragmento.
+
+* Consulte a documentação do Assets para obter informações completas sobre o [editor de fragmento de conteúdo original](/help/assets/content-fragments/content-fragments-variations.md) - estiver disponível a partir de ambos os **Assets** e o **Fragmentos de conteúdo** console.
+
+* A equipe do projeto pode personalizar o editor, se necessário. Consulte [Personalização do console e do editor de fragmentos de conteúdo](/help/implementing/developing/extending/content-fragments-console-and-editor.md) para obter mais detalhes.
