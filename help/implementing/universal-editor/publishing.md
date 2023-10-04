@@ -1,26 +1,26 @@
 ---
-title: Publicação de conteúdo com o Editor visual universal
-description: Saiba como o Editor visual universal publica o conteúdo e como seus aplicativos podem lidar com esse conteúdo.
+title: Publicação de conteúdo com o Editor universal
+description: Saiba como o Editor universal publica o conteúdo e como seus aplicativos podem lidar com esse conteúdo.
 exl-id: aee34469-37c2-4571-806b-06c439a7524a
-source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
-workflow-type: ht
-source-wordcount: '367'
+source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
+workflow-type: tm+mt
+source-wordcount: '361'
 ht-degree: 100%
 
 ---
 
 
-# Publicação de conteúdo com o Editor visual universal {#publishing}
+# Publicação de conteúdo com o Editor universal {#publishing}
 
-Saiba como o Editor visual universal publica o conteúdo e como seus aplicativos podem lidar com esse conteúdo.
+Saiba como o Editor universal publica o conteúdo e como seus aplicativos podem lidar com esse conteúdo.
 
 ## Semelhanças com o AEM {#similarities}
 
-Para usuários do AEM, o processo de publicação de conteúdo do Editor visual universal funciona como de costume: ao publicar no AEM, o conteúdo é replicado da camada do autor para a camada de publicação.
+Para usuários do AEM, o processo de publicação de conteúdo do Editor universal funciona como de costume: ao publicar no AEM, o conteúdo é replicado da camada do autor para a camada de publicação.
 
 ## Diferenças {#differences}
 
-O que torna a publicação com o Editor visual universal um pouco diferente não é tanto o próprio editor, mas sim a hospedagem externa do aplicativo que o Editor universal possibilita.
+O que torna a publicação com o Editor universal um pouco diferente não é tanto o próprio editor, mas sim a hospedagem externa do aplicativo que o Editor universal possibilita.
 
 Quando hospedado externamente, o objetivo do aplicativo web é garantir que o conteúdo seja carregado da camada do autor quando o aplicativo for aberto por autores no editor e carregado da camada de publicação quando o aplicativo for acessado por visitantes.
 

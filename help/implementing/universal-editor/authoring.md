@@ -2,9 +2,9 @@
 title: Criação de conteúdo com o Editor universal
 description: Saiba como é fácil e intuitivo para os autores criarem conteúdo utilizando o Editor universal.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: b3ba87c1fa2f0578f93c7c3bd2671fbc75178b4e
+source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
 workflow-type: tm+mt
-source-wordcount: '2412'
+source-wordcount: '2410'
 ht-degree: 50%
 
 ---
@@ -158,7 +158,7 @@ Toque ou clique no botão Publicar para que as alterações sejam publicadas no 
 
 >[!TIP]
 >
->Consulte o documento [Publicação de conteúdo com o Editor visual universal](publishing.md) para obter mais informações sobre a publicação com o Editor universal.
+>Consulte o documento [Publicação de conteúdo com o Editor universal](publishing.md) para obter mais informações sobre a publicação com o Editor universal.
 
 ### O painel de modo {#rail}
 
@@ -408,8 +408,8 @@ Note que, no modo de visualização, a ação de tocar ou clicar no conteúdo fu
 
 Para saber mais sobre o Editor universal, consulte estes documentos.
 
-* [Introdução ao Editor universal](introduction.md): saiba como o Editor universal permite editar aspectos do conteúdo em qualquer implementação, para que você possa oferecer experiências excepcionais, aumentar a velocidade do conteúdo e fornecer uma experiência de desenvolvimento de última geração.
-* [Publicação de conteúdo com o Editor universal](publishing.md): saiba como o Editor visual universal publica o conteúdo e como seus aplicativos podem lidar com esse conteúdo.
+* [Introdução ao Editor universal](introduction.md): saiba como o Editor universal permite editar qualquer aspecto do conteúdo das implementações, a fim de entregar experiências excepcionais, aumentar a velocidade do conteúdo e fornecer uma experiência de desenvolvimento de última geração.
+* [Publicação de conteúdo com o Editor universal](publishing.md): saiba como o Editor universal publica o conteúdo e como seus aplicativos podem lidar com esse conteúdo.
 * [Introdução ao Editor universal no AEM](getting-started.md): saiba como obter acesso ao Editor universal e começar a instrumentar seu primeiro aplicativo do AEM para utilizá-lo.
 * [Arquitetura do Editor universal](architecture.md): saiba mais sobre a arquitetura do Editor universal e como os dados fluem entre seus serviços e camadas.
 * [Atributos e tipos](attributes-types.md): saiba mais sobre os atributos e tipos de dados exigidos pelo Editor universal.

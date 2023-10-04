@@ -1,18 +1,18 @@
 ---
-title: Introdução ao Editor visual universal
-description: Saiba como o Editor visual universal (também conhecido como Editor universal) permite realizar a edição de experiências headless e headful no estilo “WYSIWYG” (“o que você vê é o formato final”). Entenda como ele pode ajudar criadores de conteúdo a entregar experiências excepcionais, aumentar a velocidade do conteúdo e como ele oferece uma experiência de desenvolvedor de última geração.
+title: Introdução ao Editor universal
+description: Saiba como o Editor universal habilita a edição "o que você vê é o que você obtém" (WYSIWYG) de qualquer experiência headless e headful. Entenda como ele pode ajudar criadores de conteúdo a entregar experiências excepcionais, aumentar a velocidade do conteúdo e como ele oferece uma experiência de desenvolvedor de última geração.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
-workflow-type: ht
-source-wordcount: '933'
-ht-degree: 100%
+source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
+workflow-type: tm+mt
+source-wordcount: '919'
+ht-degree: 96%
 
 ---
 
 
-# Introdução ao Editor visual universal {#introduction}
+# Introdução ao Editor universal {#introduction}
 
-Saiba como o Editor visual universal (também conhecido como Editor universal) permite realizar a edição de experiências headless e headful no estilo “WYSIWYG” (“o que você vê é o formato final”). Entenda como ele pode ajudar criadores de conteúdo a entregar experiências excepcionais, aumentar a velocidade do conteúdo e como ele oferece uma experiência de desenvolvedor de última geração.
+Saiba como o Editor universal habilita a edição &quot;o que você vê é o que você obtém&quot; (WYSIWYG) de qualquer experiência headless e headful. Entenda como ele pode ajudar criadores de conteúdo a entregar experiências excepcionais, aumentar a velocidade do conteúdo e como ele oferece uma experiência de desenvolvedor de última geração.
 
 ## Segundo plano {#background}
 
@@ -62,9 +62,9 @@ Ao separar a experiência de edição de conteúdo de qualquer sistema de entreg
 * **Aumento da velocidade do conteúdo**: para simplificar a administração do fluxo de trabalho, o Editor universal permite editar o conteúdo da visualização a fim de orientar os profissionais, mostrando apenas as opções que são relevantes para o contexto e tornando o fluxo de trabalho independente das fontes de conteúdo.
 * **Experiência de desenvolvedor de última geração**: para se adequar ao atual cenário heterogêneo dos aplicativos, o Editor universal é completamente independente e não favorece tecnologias específicas, permitindo que os desenvolvedores utilizem sua tecnologia preferida para implementar a experiência.
 
-## Editor visual universal e o Editor de fragmento de conteúdo {#universal-editor-content-fragment-editor}
+## Editor universal e o Editor de fragmento de conteúdo {#universal-editor-content-fragment-editor}
 
-Em uma primeira análise, pode parecer que o Editor visual universal e o Editor de fragmento de conteúdo fornecem recursos de edição semelhantes. No entanto, esses editores oferecem recursos muito diferentes e cuidam de tarefas distintas do profissional de marketing.
+Em uma primeira análise, pode parecer que o Editor universal e o Editor de fragmento de conteúdo fornecem recursos de edição semelhantes. No entanto, esses editores oferecem recursos muito diferentes e cuidam de tarefas distintas do profissional de marketing.
 
 ### Editor de fragmento de conteúdo {#content-fragment-editor}
 
@@ -72,7 +72,7 @@ Para um profissional de marketing que deseja criar conteúdo sem precisar se pre
 
 * O foco é dimensionar a estratégia de conteúdo.
 
-### Editor visual universal {#universal-editor}
+### Editor universal {#universal-editor}
 
 Para um profissional de marketing que deseja criar um conteúdo adaptado ao layout de um contexto específico, a fim de fornecer uma experiência excepcional.
 
@@ -89,7 +89,7 @@ Fale com seu contato da Adobe para obter detalhes sobre os próximos recursos pl
 Para saber mais sobre o Editor universal, consulte estes documentos.
 
 * [Criação de conteúdo com o Editor universal](authoring.md): saiba como é fácil e intuitivo para os autores criarem conteúdo utilizando o Editor universal.
-* [Publicação de conteúdo com o Editor universal](publishing.md): saiba como o Editor visual universal publica o conteúdo e como seus aplicativos podem lidar com esse conteúdo.
+* [Publicação de conteúdo com o Editor universal](publishing.md): saiba como o Editor universal publica o conteúdo e como seus aplicativos podem lidar com esse conteúdo.
 * [Introdução ao Editor universal no AEM](getting-started.md): saiba como obter acesso ao Editor universal e começar a instrumentar seu primeiro aplicativo do AEM para utilizá-lo.
 * [Arquitetura do Editor universal](architecture.md): saiba mais sobre a arquitetura do Editor universal e como os dados fluem entre seus serviços e camadas.
 * [Atributos e tipos](attributes-types.md): saiba mais sobre os atributos e tipos de dados exigidos pelo Editor universal.
