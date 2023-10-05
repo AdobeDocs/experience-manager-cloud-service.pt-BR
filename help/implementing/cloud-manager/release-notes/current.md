@@ -1,19 +1,19 @@
 ---
-title: Notas de versão do Cloud Manager 2023.9.0 no Adobe Experience Manager as a Cloud Service
-description: Estas são as notas de versão do Cloud Manager 2023.9.0 no AEM as a Cloud Service.
+title: Notas de versão do Cloud Manager 2023.10.0 no Adobe Experience Manager as a Cloud Service
+description: Estas são as notas de versão do Cloud Manager 2023.10.0 no AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: a5e8c11340ab5eacdefb22da302f9e35d9429bc7
+source-git-commit: b760b3a65d89b0b4f924379fc460015a58e2ed3e
 workflow-type: tm+mt
-source-wordcount: '443'
-ht-degree: 23%
+source-wordcount: '521'
+ht-degree: 19%
 
 ---
 
 
-# Notas de versão do Cloud Manager 2023.9.0 no Adobe Experience Manager as a Cloud Service {#release-notes}
+# Notas de versão do Cloud Manager 2023.10.0 no Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Esta página documenta as notas de versão do Cloud Manager 2023.9.0 no AEM as a Cloud Service.
+Esta página documenta as notas de versão do Cloud Manager 2023.10.0 no AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -21,16 +21,30 @@ Esta página documenta as notas de versão do Cloud Manager 2023.9.0 no AEM as a
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento do Cloud Manager versão 2023.9.0 no AEM as a Cloud Service é 14 de setembro de 2023. A próxima versão está planejada para 5 de outubro de 2023.
+A data de lançamento do Cloud Manager versão 2023.10.0 no AEM as a Cloud Service é 5 de outubro de 2023. A próxima versão está planejada para 2 de novembro de 2023.
 
 ## Novidades {#what-is-new}
 
-* Os logs CDN, quando disponíveis, podem ser baixados por meio da interface do usuário do Cloud Manager.
-* Os usuários agora podem optar por incluir o teste de Auditoria de experiência viabilizado pelo Google LightHouse em pipelines de pilha completa e não produção.
+* Melhorias no [indexação](/help/operations/indexing.md) reduziram a duração do pipeline ao implantar novos índices.
+   * As melhorias variam dependendo do perfil do conteúdo.
+* Automático [atualizações para ambientes de desenvolvimento](/help/implementing/cloud-manager/manage-environments.md#updating-environments) são ativados por padrão para novos programas, economizando tempo para executar atualizações manualmente.
+   * Essa atualização será implementada em fases.
+* Com a versão de outubro de 2023 do Cloud Manager, as versões do Java estão sendo atualizadas por meio de uma implantação em fases.
+   * As versões secundárias do Java 8 e 11 e do Maven foram atualizadas e serão lançadas em fases nos próximos 2 meses. A nova versão tem várias correções de segurança e bugs. As novas versões são:
+   * *Maven: 3.8.8*
+   * *Versão do Java 8: /usr/lib/jvm/jdk1.8.0_371*
+   * *Versão do Java 11: /usr/lib/jvm/jdk-11.0.20*
+   * [Consulte a supervisão do OpenJDK](https://openjdk.org/groups/vulnerability/advisories/) para obter detalhes sobre a segurança e correções de erros nessas atualizações do JDK.
 
 ## Programa de adoção antecipada {#early-adoption}
 
 Faça parte do nosso programa de adoção antecipada e tenha a chance de testar alguns recursos futuros.
+
+### Permissões personalizadas {#custom-permissions}
+
+[Permissões personalizadas do Cloud Manager](/help/implementing/cloud-manager/custom-permissions.md) O permite criar novos perfis de permissão personalizados com permissões configuráveis para restringir o acesso a programas, pipelines e ambientes para usuários do Cloud Manager.
+
+se você estiver interessado em testar esse novo recurso e compartilhar seu feedback, envie e envie um email `Grp-CloudManager-custom-permissions@adobe.com` do endereço de email associado à Adobe ID.
 
 ### Restauração de conteúdo de autoatendimento {#content-restore}
 
@@ -52,9 +66,3 @@ Se você estiver interessado em testar esse novo recurso e compartilhar seu feed
 O painel usa o Google Lighthouse, uma ferramenta de código aberto e automatizada para melhorar a qualidade dos seus aplicativos Web. Você pode executá-la em qualquer página da Web, pública ou que exija autenticação. Ele tem auditorias de desempenho, acessibilidade, aplicativos web progressivos, SEO e muito mais.
 
 Interessado em testar o novo painel? Envie um email para `aem-lighthouse-pilot@adobe.com` do email associado à sua Adobe ID e podemos começar.
-
-## Correções de erros {#bug-fixes}
-
-* Quando um programa é excluído, qualquer pipeline associado em execução agora também é excluído.
-* Se um pipeline estiver em andamento, a variável **Enviar** botão do **Ativação concluída** agora a caixa de diálogo está desativada e informa ao usuário que a data de ativação não pode ser definida devido ao pipeline em execução.
-* Correção de um erro ocasional em que todas as etapas de execução de um pipeline eram marcadas como concluídas, mas o status do pipeline ainda estava em execução, dando a impressão de um estado travado.
