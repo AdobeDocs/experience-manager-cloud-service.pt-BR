@@ -8,9 +8,9 @@ user-guide-description: Saiba como o Experience Manager as a Cloud Service funci
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 2d4a81aa0d6755270d4d6efb8649782f4bde4537
+source-git-commit: 2a1bb951c9da5ea0fdcafd1bb82eda3f55d0a16a
 workflow-type: tm+mt
-source-wordcount: '4308'
+source-wordcount: '4316'
 ht-degree: 93%
 
 ---
@@ -87,6 +87,7 @@ ht-degree: 93%
    + Notas de versão do Cloud Manager {#cloud-manager}
       + [Notas de versão atuais](/help/implementing/cloud-manager/release-notes/current.md)
       + 2023 {#2023}
+         + [Notas da versão 2023.9.0](/help/implementing/cloud-manager/release-notes/2023/2023-9-0.md)
          + [Notas da versão 2023.8.0](/help/implementing/cloud-manager/release-notes/2023/2023-8-0.md)
          + [Notas da versão 2023.7.0](/help/implementing/cloud-manager/release-notes/2023/2023-7-0.md)
          + [Notas de versão para 2023.6.0](/help/implementing/cloud-manager/release-notes/2023/2023-6-0.md)
@@ -136,6 +137,7 @@ ht-degree: 93%
    + Notas de versão das ferramentas de migração {#migration-tools}
       + [Notas de versão atuais](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
       + 2023 {#2023}
+         + [Notas da versão 2023.9.0](/help/journey-migration/release-notes/release-notes-migration-tools-2023-09-0.md)
          + [Notas da versão 2023.8.0](/help/journey-migration/release-notes/release-notes-migration-tools-2023-08-0.md)
          + [Notas da versão 2023.7.0](/help/journey-migration/release-notes/release-notes-migration-tools-2023-07-0.md)
          + [Notas de versão para 2023.6.0](/help/journey-migration/release-notes/release-notes-migration-tools-2023-06-0.md)
@@ -847,6 +849,7 @@ ht-degree: 93%
          + [Teste de auditoria de experiência](/help/implementing/cloud-manager/experience-audit-testing.md)
          + [Painel de auditoria de experiência](/help/implementing/cloud-manager/experience-audit-dashboard.md)
       + [Acesso e gerenciamento de registros](/help/implementing/cloud-manager/manage-logs.md)
+      + [Permissões personalizadas](/help/implementing/cloud-manager/custom-permissions.md)
       + [Relatórios de SLA](/help/implementing/cloud-manager/sla-reporting.md)
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
       + [Notificações](/help/implementing/cloud-manager/notifications.md)
