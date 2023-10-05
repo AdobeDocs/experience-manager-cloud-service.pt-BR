@@ -4,9 +4,9 @@ description: Use os Componentes principais do formulário adaptável em uma pág
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 2d4a81aa0d6755270d4d6efb8649782f4bde4537
 workflow-type: tm+mt
-source-wordcount: '2131'
+source-wordcount: '2150'
 ht-degree: 2%
 
 ---
@@ -267,3 +267,8 @@ A página de sites AEM mantém uma referência ao Formulário adaptável. Quando
 
 * O cabeçalho e o rodapé no formulário original não estão incluídos no formulário incorporado.
 * Os rascunhos e envios de formulários incorporados pelo usuário são suportados e ficam visíveis nas guias Rascunhos e Forms enviados no Portal do Forms.
+
+>[!MORELIKETHIS]
+>
+>* [Incorporar formulários adaptáveis com base nos componentes principais a uma página externa da Web](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
+>* [Incorporar formulário adaptável na página externa da Web](/help/forms/embed-adaptive-form-external-web-page.md)

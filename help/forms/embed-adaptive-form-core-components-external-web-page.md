@@ -1,16 +1,16 @@
 ---
-title: Incorporar formulário adaptável na página externa da Web
-description: Saiba como incorporar um formulário adaptável em uma página externa da Web
+title: Como incorporar um formulário adaptável baseado em Componentes principais a uma página da Web externa?
+description: Saiba como incorporar uma Forms adaptável a um site.
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Developer
-source-git-commit: 6d0e3ee08862030e9eb7d068b251d13bc3e8e08f
+exl-id: 198f6f76-1134-4818-89a0-6ddc84ff956c
+source-git-commit: 2d4a81aa0d6755270d4d6efb8649782f4bde4537
 workflow-type: tm+mt
-source-wordcount: '979'
-ht-degree: 2%
+source-wordcount: '984'
+ht-degree: 1%
 
 ---
-
 
 # Incorporar formulários adaptáveis com base nos componentes principais a uma página externa da Web {#embed-adaptive-form-in-external-web-page}
 
@@ -162,6 +162,3 @@ Ao incorporar um formulário adaptável em uma página da Web, considere as segu
 1. Na instância de publicação do AEM, acesse o Gerenciador de configuração do console da Web AEM em `https://'[server]:[port]'/system/console/configMgr`.
 1. Localize e abra o **Filtro referenciador do Apache Sling** configuração.
 1. No campo Hosts permitidos, especifique o domínio em que reside a página da Web. Ela permite que o host faça solicitações de POST para o servidor AEM. Você também pode usar expressões regulares para especificar uma série de domínios de aplicativos externos.
-
-
-
