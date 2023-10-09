@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 00cd62aa64c183a0560326feaacda1db70627858
+source-git-commit: 51b048f753fe2e548d0ffdd9e3a903b21032aed7
 workflow-type: tm+mt
-source-wordcount: '9448'
+source-wordcount: '9463'
 ht-degree: 2%
 
 ---
@@ -521,7 +521,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
 
 
 
-### Habilite o suporte a DASH, legendas múltiplas e faixas de áudio múltiplas na sua conta Dynamic Media {#enable-dash}
+## Habilite o suporte a DASH, legendas múltiplas e faixas de áudio múltiplas na sua conta Dynamic Media {#enable-dash}
 
 **Sobre a ativação do suporte a DASH na sua conta**
 DASH (Digital Adaptive Streaming over HTTP) é o padrão internacional para streaming de vídeo e é amplamente adotado em diferentes visualizadores de vídeo. Quando o DASH está ativado em sua conta, você tem a opção de escolher entre DASH ou HLS para o streaming de vídeo adaptável. Ou você pode optar por ambos com alternância automática entre players quando **[!UICONTROL automático]** é selecionado como o tipo de reprodução na predefinição do Visualizador.
@@ -539,7 +539,7 @@ A habilitação do suporte DASH na sua conta é feita por meio de um caso de Sup
 
 **Sobre como ativar o suporte a faixas de várias legendas e áudio na sua conta**
 
-Ao mesmo tempo que cria um caso de suporte para Adobe para ter o DASH ativado na sua conta, você também pode se beneficiar de ter suporte para faixas de multi-legendas e multi-áudio ativado automaticamente, também. Após a ativação, todos os vídeos subsequentes que você carregar serão processados com uma nova arquitetura de back-end que inclui suporte para adicionar faixas de várias legendas e áudio aos seus vídeos.
+Ao mesmo tempo que cria um caso de suporte para Adobe para ter o DASH ativado na sua conta, você também pode se beneficiar de ter suporte para faixas de multi-legendas e multi-áudio ativado automaticamente. Após a ativação, todos os vídeos subsequentes que você carregar serão processados com uma nova arquitetura de back-end que inclui suporte para adicionar faixas de várias legendas e áudio aos seus vídeos.
 
 >[!IMPORTANT]
 >
@@ -551,8 +551,9 @@ Ao mesmo tempo que cria um caso de suporte para Adobe para ter o DASH ativado na
 1. Para criar um caso de suporte, siga as instruções enquanto garante que você forneça as seguintes informações:
 
    * Nome do contato principal, email, telefone.
-   * A ID do programa e a ID do ambiente.
-   * Nome da sua conta do Dynamic Media.
+   * Seu ambiente do Cloud Service (ID do programa e ID do ambiente).
+   * O nome da conta da sua empresa Dynamic Media.
+   * Sua região do Dynamic Media: América do Norte (NA), Ásia-Pacífico (APAC) ou Europa-Oriente Médio-Ásia (EMEA).
    * Especifique se deseja que o DASH, as legendas múltiplas e o suporte para faixas de áudio múltiplo estejam habilitados na sua conta do Dynamic Media, no Experience Manager 6.5.
 
 1. O Suporte ao cliente do Adobe adiciona você à Lista de espera do cliente com base na ordem em que as solicitações são enviadas.
@@ -887,7 +888,7 @@ Consulte [Veiculação de conteúdo estático (não imagem)](https://experiencel
 
 ## Adicionar marcadores de capítulo ao vídeo {#adding-chapter-markers-to-video}
 
-Você pode tornar os vídeos de formulário longos mais fáceis de assistir e navegar adicionando marcadores de capítulo a vídeos únicos ou a Conjuntos de vídeos adaptáveis. Quando um usuário reproduz o vídeo, ele pode selecionar os marcadores de capítulo na linha do tempo do vídeo (também conhecido como depurador do vídeo). Eles podem navegar com facilidade até o ponto de interesse ou saltar imediatamente para novos conteúdos, treinamentos e demonstrações.
+Você pode facilitar a visualização e a navegação dos vídeos de formulário longo adicionando marcadores de capítulo a vídeos únicos ou aos Conjuntos de vídeos adaptados. Quando um usuário reproduz o vídeo, ele pode selecionar os marcadores de capítulo na linha do tempo do vídeo (também conhecido como depurador do vídeo). Eles podem navegar com facilidade até o ponto de interesse ou saltar imediatamente para novos conteúdos, treinamentos e demonstrações.
 
 >[!NOTE]
 >
