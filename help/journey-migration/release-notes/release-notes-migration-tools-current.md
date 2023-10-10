@@ -2,9 +2,10 @@
 title: Notas de versão das Ferramentas de migração no AEM as a Cloud Service versão 2023.10.0
 description: Notas de versão das Ferramentas de migração no AEM as a Cloud Service versão 2022.10.0
 feature: Release Information
-source-git-commit: 2ff6aeeb0145695aa44c79f42aefd53c7c545fea
+exl-id: 52709511-eab2-47a7-8bea-1b707cd568a1
+source-git-commit: c0a28f7183c2f29f54e9fcfa641839a257661e5c
 workflow-type: tm+mt
-source-wordcount: '124'
+source-wordcount: '135'
 ht-degree: 5%
 
 ---
@@ -17,8 +18,9 @@ Esta página descreve as notas de versão das ferramentas de migração no AEM a
 
 ### Data de lançamento {#release-date-ctt}
 
-A data de lançamento da ferramenta de Transferência de conteúdo v3.0.0 é 7 de setembro de 2023.
+A data de lançamento da ferramenta de transferência de conteúdo v3.0.4 é 6 de outubro de 2023.
 
 ### Novidades {#what-is-new-ctt}
 
-Foram feitas alterações no processo de assimilação de conteúdo — não é mais necessário enviar um tíquete de Atendimento ao cliente/Suporte para desativar as Atualizações de versão do AEM no ambiente de destino. Esse processo agora é automatizado. Para obter mais detalhes, consulte [Atualizações e assimilações de versão do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#aem-version-updates-and-ingestions)
+* Foram feitas alterações no processo de assimilação de conteúdo — não é mais necessário enviar um tíquete de Atendimento ao cliente/Suporte para desativar as Atualizações de versão do AEM no ambiente de destino. Esse processo agora é automatizado. Para obter mais detalhes, consulte [Atualizações e assimilações de versão do AEM](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#aem-version-updates-and-ingestions)
+* A simultaneidade dinâmica será usada durante o [pré-cópia](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) etapa nas fases de extração e assimilação, reduzindo significativamente o tempo de migração do conteúdo.
