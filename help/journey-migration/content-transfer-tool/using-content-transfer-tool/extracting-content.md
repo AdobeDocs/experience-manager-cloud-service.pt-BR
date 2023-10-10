@@ -5,7 +5,7 @@ exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
 source-git-commit: 44a3f3c4ca08cffa06056ea85adc58e3cf1f2f1c
 workflow-type: tm+mt
 source-wordcount: '713'
-ht-degree: 25%
+ht-degree: 28%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 25%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_extraction"
 >title="Extração de conteúdo"
->abstract="Extração refere-se à extração de conteúdo da instância do Adobe Experience Manager de origem (AEM) em uma área temporária chamada de conjunto de migração. Um conjunto de migração é uma área de armazenamento em nuvem fornecida pela Adobe para armazenar temporariamente o conteúdo transferido entre a instância do AEM de origem e a instância do AEM Cloud Service."
+>abstract="Extração refere-se ao processo de extrair conteúdo da instância do Adobe Experience Manager (AEM) de origem para uma área temporária chamada de “conjunto de migração”. Um conjunto de migração é uma área de armazenamento em nuvem fornecida pela Adobe para armazenar temporariamente o conteúdo transferido entre a instância do AEM de origem e a instância do AEM Cloud Service."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html#top-up-extraction-process" text="Extração complementar"
 
 
