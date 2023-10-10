@@ -2,9 +2,9 @@
 title: Como configurar uma ação enviar para um formulário adaptável
 description: Um Formulário adaptável fornece várias Ações de envio. Uma Ação de envio define como um Formulário adaptável é processado após o envio. Você pode usar as Ações de envio integradas ou criar as suas próprias ações.
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: a635a727e431a73086a860249e4f42d297882298
+source-git-commit: ba83b35f411ffd51e0032e7c7f12c7c82cd982ad
 workflow-type: tm+mt
-source-wordcount: '3388'
+source-wordcount: '3395'
 ht-degree: 3%
 
 ---
@@ -184,8 +184,9 @@ Para conectar o AEM Forms ao seu Microsoft® Sharepoint Storage:
 1. Vá para o **Autor do AEM Forms** instância > **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Service]** >  **[!UICONTROL Microsoft® SharePoint]**.
 1. Depois de selecionar a variável **[!UICONTROL Microsoft® SharePoint]**, você será redirecionado para **[!UICONTROL Navegador SharePoint]**.
 1. Selecione um **Contêiner de configuração**. A configuração é armazenada no Contêiner de configuração selecionado.
-1. Clique em **[!UICONTROL Criar]**. O assistente de configuração do SharePoint é exibido.
-   ![Configuração do Sharepoint](/help/forms/assets/sharepoint_configuration.png)
+1. Clique em **[!UICONTROL Criar]** > **[!UICONTROL Biblioteca de documentos da SharePoint]** na lista suspensa. O assistente de configuração do SharePoint é exibido.
+
+![Configuração do Sharepoint](/help/forms/assets/sharepoint_configuration.png)
 1. Especifique a **[!UICONTROL Título]**, **[!UICONTROL ID do cliente]**, **[!UICONTROL Segredo do cliente]** e **[!UICONTROL URL do OAuth]**. Para obter informações sobre como recuperar a ID do cliente, o Segredo do cliente e a ID do locatário para o URL do OAuth, consulte [Documentação Microsoft®](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
    * Você pode recuperar a variável `Client ID` e `Client Secret` do seu aplicativo no portal do Microsoft® Azure.
    * No portal do Microsoft® Azure, adicione o URI de redirecionamento como `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`. Substituir `[author-instance]` com o URL da sua instância do Author.
@@ -210,6 +211,7 @@ Agora, você pode usar essa configuração do SharePoint Sites para a ação env
 ### Usar a configuração do SharePoint em um formulário adaptável {#use-sharepoint-configuartion-in-af}
 
 Você pode usar a configuração do SharePoint criada em um Formulário adaptável para salvar dados ou o Documento de registro gerado em uma pasta do SharePoint. Execute as seguintes etapas para usar uma configuração de armazenamento do SharePoint em um Formulário adaptável como:
+
 1. Criar um [Formulário adaptável](/help/forms/creating-adaptive-form.md).
 
    >[!NOTE]
