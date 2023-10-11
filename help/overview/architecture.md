@@ -2,10 +2,10 @@
 title: Introdução à arquitetura do Adobe Experience Manager as a Cloud Service
 description: Introdução à arquitetura do Adobe Experience Manager as a Cloud Service.
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1826'
-ht-degree: 100%
+source-git-commit: 13c67c35238c5138120f6d0d4845c759221d65ad
+workflow-type: tm+mt
+source-wordcount: '2015'
+ht-degree: 91%
 
 ---
 
@@ -198,3 +198,26 @@ A nova arquitetura do AEM as a Cloud Service apresenta algumas mudanças e inova
 * O conceito de um golden master foi introduzido para automatizar o ciclo de vida dos nós de publicação. O golden master é um nó de publicação especializado, nunca acessado por um usuário final, e a partir do qual todos os nós do serviço de publicação são criados. As operações de manutenção, como compactação, são executadas no repositório de conteúdo anexado ao golden master. Os nós de publicação são reciclados diariamente e não exigem qualquer tipo de manutenção de rotina. Anteriormente, essa manutenção exigia algum tempo de inatividade, especialmente para a instância de criação.
 
 * A arquitetura separa completamente o conteúdo do aplicativo do código e da configuração do aplicativo. Todos os códigos e configurações são praticamente não mudam e são enviados para a imagem de linha de base usada para criar os vários nós dos serviços de criação e publicação. Como resultado, existe uma garantia absoluta de que cada nó é idêntico, e as alterações no código e na configuração só podem ser realizadas globalmente ao executar um pipeline do Cloud Manager.
+
+## AEM com Edge Delivery Services {#aem-with-edge-delivery-services}
+
+Com a adição do Edge Delivery Services, o AEM oferece experiências excepcionais que impulsionam o engajamento e as conversões. O AEM faz isso fornecendo experiências de alto impacto que são rápidas de serem criadas e desenvolvidas. Edge Delivery Services são um conjunto combinável de serviços que permitem um ambiente de desenvolvimento rápido, em que os autores podem atualizar e publicar rapidamente e novos sites são lançados rapidamente. Dessa forma, com os Edge Delivery Services você pode melhorar a conversão, reduzir custos e fornecer velocidade de conteúdo extrema.
+
+A arquitetura atualizada inclui:
+
+* Gestão de conteúdo, agora incluindo uma seleção de editores:
+   * Editor visual universal
+   * Editor de fragmento de conteúdo
+   * Editor de página
+   * Criação baseada em documentos; do SharePoint ou do Google Drive
+* Entrega de experiência, agora incluindo:
+   * Edge Delivery Services
+* Serviços auxiliares para entrega rápida e eficiente de conteúdo e código
+
+![Visão geral as a Cloud Service do AEM - com Edge Delivery Services](assets/AEMaaCS-Edge-Architecture.png "Visão geral as a Cloud Service do AEM - com Edge Delivery Services")
+
+Consulte também:
+
+* [Visão geral as a Cloud Service do AEM - com Edge Delivery Services](/help/edge/overview.md)
+* [Utilização de Edge Delivery Services](/help/edge/using.md)
+* [Explore a arquitetura subjacente e as partes importantes do AEM as a Cloud Service com Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html)
