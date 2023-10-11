@@ -1,12 +1,12 @@
 ---
-title: Perguntas frequentes as a Cloud Service sobre o Forms
+title: Perguntas frequentes sobre o AEM Forms as a Cloud Service
 description: Perguntas frequentes as a Cloud Service sobre o Forms
 contentOwner: khsingh
 exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
 index: false
-source-git-commit: 93e7c4b31ea3037c98b64790ffdee11f94cc6134
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '993'
+source-wordcount: '995'
 ht-degree: 3%
 
 ---
@@ -30,7 +30,7 @@ Sim, você pode migrar seu código personalizado, conteúdo e ativos do no local
 
 * **Onde posso obter AEM? [!DNL Forms] as a Cloud Service [!DNL Java™] Documentação de referência da API?**
 Você pode baixar a documentação de referência da API Java™ em [!DNL Maven Central Repository]. Para baixar:
-   1. Ir para [[!DNL Maven Central Repository]](https://mvnrepository.com/artifact/com.adobe.aem/aem-forms-sdk-api).
+   1. Acesse [[!DNL Maven Central Repository]](https://mvnrepository.com/artifact/com.adobe.aem/aem-forms-sdk-api).
    1. Localizar e abrir uma página contendo a versão mais recente do [!DNL Experience Manager Forms] SDK.
    1. Clique na opção Exibir tudo para exibir todos os arquivos.
    1. Baixe e extraia o `aem-forms-sdk-api-<version>-javadocs`.jar
@@ -47,7 +47,7 @@ Você pode baixar [!DNL JavaScript™] Documentação de referência da API de[!
 * **Posso continuar usando temas e modelos existentes?**
 Sim, você pode continuar usando os temas criados com o AEM 6.4 Forms e o AEM 6.5 Forms depois de usar o [Utilitário de migração](migrate-to-forms-as-a-cloud-service.md) para movê-los para [!DNL AEM Forms] as a Cloud Service.
 
-   Você também pode criar um projeto com base em [!DNL AEM Forms] as a Cloud Service [Arquétipo](setup-local-development-environment.md#forms-cloud-service-local-development-environment) e use temas de amostra e modelos incluídos.
+  Você também pode criar um projeto com base em [!DNL AEM Forms] as a Cloud Service [Arquétipo](setup-local-development-environment.md#forms-cloud-service-local-development-environment) e use temas de amostra e modelos incluídos.
 
 * **Posso produzir dados compatíveis com o esquema?**
 Sim, você pode criar o Adaptive Forms para produzir dados compatíveis com o esquema.
@@ -60,7 +60,7 @@ O armazenamento em cache de recursos de conteúdo protegido está desativado, po
 
 * **Eu tenho um Formulário adaptável localizado; ele não está renderizando a versão localizada? Qual pode ser a causa e como resolvê-la?**
 
-   A convenção de URL do Adaptive Forms localizado agora permite especificar um local no URL. A nova convenção de URL permite o armazenamento em cache de formulários localizados em um Dispatcher ou CDN. No ambiente Cloud Service, use o formato de URL `http://host:port/content/forms/af/<afName>.<locale>.html` para solicitar uma versão localizada de um Formulário adaptável em vez de `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`. O Adobe recomenda usar o armazenamento em cache do Dispatcher ou CDN. Isso ajuda a melhorar a velocidade de renderização de formulários pré-preenchidos.
+  A convenção de URL do Adaptive Forms localizado agora permite especificar um local no URL. A nova convenção de URL permite o armazenamento em cache de formulários localizados em um Dispatcher ou CDN. No ambiente Cloud Service, use o formato de URL `http://host:port/content/forms/af/<afName>.<locale>.html` para solicitar uma versão localizada de um Formulário adaptável em vez de `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`. O Adobe recomenda usar o armazenamento em cache do Dispatcher ou CDN. Isso ajuda a melhorar a velocidade de renderização de formulários pré-preenchidos.
 
 * **Atualizei um Formulário adaptável; a versão atualizada não está disponível para uso pelos clientes?**
 Por padrão, a CDN atualiza o cache a cada 5 minutos, aguarda 5 minutos e verifica a versão atualizada.
@@ -82,11 +82,11 @@ O modelo de dados de formulário não fornece um método para usar certificados 
 
 * **Posso usar a ação enviar do Forms Portal no Adaptive Forms?**
 
-   Você pode modificar seu Forms adaptável existente para usar [Enviar para endpoint REST](configuring-submit-actions.md#submit-to-rest-endpoint), [Enviar e-mail](configuring-submit-actions.md#send-email), [Enviar usando modelo de dados do formulário](configuring-submit-actions.md#submit-using-form-data-model), e [Chamar um fluxo de trabalho de AEM](configuring-submit-actions.md#invoke-an-aem-workflow) Enviar ações. As ações de envio do Portal do Forms e do Portal do Forms ainda não estão disponíveis. Fique de olho nas notas de versão mensais quanto à disponibilidade dos recursos.
+  Você pode modificar seu Forms adaptável existente para usar [Enviar para endpoint REST](configuring-submit-actions.md#submit-to-rest-endpoint), [Enviar e-mail](configuring-submit-actions.md#send-email), [Enviar usando modelo de dados do formulário](configuring-submit-actions.md#submit-using-form-data-model), e [Chamar um fluxo de trabalho de AEM](configuring-submit-actions.md#invoke-an-aem-workflow) Enviar ações. As ações de envio do Portal do Forms e do Portal do Forms ainda não estão disponíveis. Fique de olho nas notas de versão mensais para a disponibilidade dos recursos.
 
 * **Posso usar [!DNL AEM Forms] aplicativo com [!DNL AEM Forms] as a Cloud Service?**
 
-   Os formulários adaptáveis oferecem um design responsivo. Esses formulários alteram a aparência, o design e a interatividade com base no dispositivo subjacente. Você pode continuar usando o Adaptive Forms no dispositivo móvel enquanto acompanha as notas de versão mensais da disponibilidade dos recursos.
+  Os formulários adaptáveis oferecem um design responsivo. Esses formulários alteram a aparência, o design e a interatividade com base no dispositivo subjacente. Você pode continuar usando o Adaptive Forms no dispositivo móvel enquanto acompanha as notas de versão mensais da disponibilidade dos recursos.
 
 * **Quais recursos não fazem parte da versão inicial do GA?**
 Forms Portal, [!DNL AEM Forms] aplicativo, integração com o Adobe Analytics e integração com o Adobe Target não fazem parte da versão inicial do GA. Verifique as notas de versão mensais para obter informações sobre novos recursos.

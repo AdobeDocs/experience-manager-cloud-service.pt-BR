@@ -1,17 +1,17 @@
 ---
-title: Como criar um modelo de formulário adaptável?
+title: Como podemos criar um modelo de formulário adaptável?
 description: Crie modelos de Formulário adaptável para definir a estrutura básica e o conteúdo inicial usando o Editor de modelos.
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '2095'
-ht-degree: 1%
+source-wordcount: '2096'
+ht-degree: 2%
 
 ---
 
 # Criar um modelo de formulário adaptável {#adaptive-form-templates}
 
-<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-br) para [criação de um novo Forms adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
@@ -156,7 +156,7 @@ Ao criar um Formulário adaptável, você pode ver o modelo listado quando é so
 
 ## Importação ou exportação de um template {#importing-or-exporting-a-template}
 
-Um formulário funciona com seu modelo. Ao baixar um Formulário adaptável criado usando um modelo personalizado, o modelo não é baixado. Ao importar o formulário para um [!DNL AEM Forms] instância, ela é importada sem seu template. Se um formulário for importado, mas seu template não estiver disponível, o formulário não será renderizado. É possível empacotar o modelo personalizado de `/conf` nó em `https://<server>:<port>/crx/packmgr`e conecte-o à porta no [!DNL AEM Forms] instância na qual você deseja carregar o formulário. Também é possível [Crie um modelo usando o Arquétipo AEM e implante-o na instância do Cloud Services](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html#prerequisites).
+Um formulário funciona com seu modelo. Ao baixar um Formulário adaptável criado usando um modelo personalizado, o modelo não é baixado. Ao importar o formulário para um [!DNL AEM Forms] instância, ela é importada sem seu template. Se um formulário for importado, mas seu template não estiver disponível, o formulário não será renderizado. É possível empacotar o modelo personalizado de `/conf` nó em `https://<server>:<port>/crx/packmgr`e conecte-o à porta no [!DNL AEM Forms] instância na qual você deseja carregar o formulário. Também é possível [Crie um modelo usando o Arquétipo AEM e implante-o na instância do Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html#prerequisites).
 
 >[!NOTE]
 >

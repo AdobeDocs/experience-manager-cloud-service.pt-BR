@@ -1,14 +1,14 @@
 ---
-title: Como usar [!DNL Adobe Sign] em um Formulário adaptável?
+title: Como podemos usar o Adobe Sign em um formulário adaptável?
 description: Use o Adobe Sign em um formulário adaptável para permitir que os destinatários do formulário assinem um formulário eletronicamente a partir do dispositivo e do local de sua escolha.
 topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '3169'
+source-wordcount: '3172'
 ht-degree: 1%
 
 ---

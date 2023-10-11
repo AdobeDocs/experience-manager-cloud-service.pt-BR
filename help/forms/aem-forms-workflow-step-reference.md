@@ -1,12 +1,12 @@
 ---
-title: Use fluxos de trabalho de AEM centrados em formulários para automatizar os processos de negócios
+title: Quais etapas de fluxo de trabalho estão disponíveis para o AEM Forms Cloud Service criar um fluxo de trabalho ou para a automação de processos de negócios (BPM)?
 description: Fluxos de trabalho centrados no Forms permitem criar rapidamente fluxos de trabalho adaptáveis baseados no Forms. Você pode usar o Adobe Sign para assinar documentos eletronicamente, criar processos de negócios baseados em formulários, recuperar e enviar dados para várias fontes de dados e enviar notificações por email
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: Usar fluxos de trabalho de AEM, usando etapas atribuir tarefa, converter em PDF/A etapa, Gerar documento da etapa gravada, usar fluxos de trabalho, etapa Assinar documento, etapa Gerar saída impressa, Gerar saída de PDF não interativa
-source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '7433'
+source-wordcount: '7446'
 ht-degree: 1%
 
 ---

@@ -1,9 +1,9 @@
 ---
-title: Texto do espaço reservado em [!DNL AEM Forms]
+title: Como adicionar texto de espaço reservado a campos de formulário?
 description: O texto para espaço reservado tem como objetivo ajudar o usuário com a entrada de dados quando o controle não tem valor. Pode ser um exemplo de valor ou uma breve descrição do formato esperado.
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '206'
+source-wordcount: '211'
 ht-degree: 0%
 
 ---

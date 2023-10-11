@@ -1,14 +1,14 @@
 ---
-title: Fragmentos do formulário adaptável
+title: Como criar e usar fragmentos de formulário adaptáveis?
 description: O fragmento de formulário é um componente modular e reutilizável de um formulário. Saiba como criar fragmentos de formulário e reutilizá-los em formulários para uma montagem de formulário eficiente.
 uuid: bb4830b5-82a0-4026-9dae-542daed10e6f
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '2018'
+source-wordcount: '2023'
 ht-degree: 1%
 
 ---
@@ -132,7 +132,7 @@ Os fragmentos de formulário adaptáveis criados são exibidos na guia Fragmento
 1. Abra o Formulário adaptável, no modo de edição, no qual deseja inserir um Fragmento de formulário adaptável.
 1. Clique em **Assets** ![assets-browser](assets/assets-browser.png) na barra lateral. No navegador de ativos, selecione **Fragmentos do formulário adaptável** no menu suspenso.
 
-   Você também pode optar por exibir todos os fragmentos de formulário adaptável ou filtrar com base em seu modelo de formulário - Modelo de formulário, Esquema XML ou Básico.
+   Também é possível optar por exibir todos os Fragmentos de formulário adaptável ou filtrar com base em seu modelo de formulário - Modelo de formulário, Esquema XML ou Básico.
 
 1. Arraste e solte um fragmento de formulário adaptável no formulário adaptável.
 

@@ -1,10 +1,10 @@
 ---
-title: Como criar e usar temas no Adaptive Forms?
+title: Como podemos criar e usar temas no Adaptive Forms?
 description: Você pode usar temas para estilizar e fornecer uma identidade visual a um Formulário adaptável usando componentes principais. Você pode compartilhar um tema em qualquer número do Adaptive Forms.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '2697'
+source-wordcount: '2698'
 ht-degree: 4%
 
 ---

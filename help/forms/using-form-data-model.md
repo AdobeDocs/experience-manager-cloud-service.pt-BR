@@ -1,13 +1,13 @@
 ---
-title: Como usar o modelo de dados de formulário?
+title: Como podemos criar um modelo de dados de formulário para um formulário adaptável?
 description: Saiba como criar Forms adaptável e fragmentos com base em um modelo de dados de formulário (FDM). Gere e edite dados de amostra para objetos de modelo de dados no FDM.
 feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '1226'
+source-wordcount: '1231'
 ht-degree: 2%
 
 ---

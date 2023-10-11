@@ -1,14 +1,14 @@
 ---
-title: Ativar o Adobe Analytics para um formulário adaptável
+title: Como habilitar o Adobe Analytics para um Formulário adaptável?
 description: A Automação de configuração do Experience Cloud ajuda a conectar o Adobe Analytics a um Formulário adaptável para rastrear insights sobre as interações e o envolvimento do visitante.
 keywords: Ativar o Adobe Analytics para um formulário adaptável usando a Automação de configuração do Experience Cloud, Ativar o Adobe Analytics no Forms, Adobe Analytics no Adaptive Forms, integração do Forms Analytics, Forms e Adobe Analytics
-source-git-commit: 4daba42c9d8a7eff5d3ef6f9581c52c787666ed1
+exl-id: 0e1aa040-08b4-4c1a-b247-ad6fff410187
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '1591'
+source-wordcount: '1593'
 ht-degree: 2%
 
 ---
-
 
 # Ativar o Adobe Analytics para um formulário adaptável usando a automação de configuração do Experience Cloud {#integrate-adobe-analytics-to-aem-forms-with-experience-cloud-setup-automation}
 

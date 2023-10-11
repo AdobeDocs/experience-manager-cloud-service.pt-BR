@@ -1,13 +1,13 @@
 ---
-title: O que é o editor de regras do Adaptive Forms?
+title: Como usar o editor de regras para adicionar regras a campos de formulário para adicionar comportamento dinâmico e criar lógica complexa a um formulário adaptável?
 description: O editor de regras Forms adaptável permite adicionar comportamento dinâmico e criar lógica complexa em formulários sem codificação ou script.
 feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '6422'
+source-wordcount: '6440'
 ht-degree: 0%
 
 ---

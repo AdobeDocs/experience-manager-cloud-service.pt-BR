@@ -1,12 +1,12 @@
 ---
-title: Como criar e gerenciar revisões do Forms adaptável incorporadas ou criadas na página Sites?
+title: Como enviar um formulário adaptável para revisão? Como gerenciar revisões para um formulário adaptável do aem?
 description: A revisão é um mecanismo que permite ao revisor executar tarefas diferentes para formulários adaptáveis usando a etapa Atribuir tarefa.
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '360'
 ht-degree: 4%
 
 ---

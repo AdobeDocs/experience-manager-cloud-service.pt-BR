@@ -1,13 +1,13 @@
 ---
-title: Como usar o modo de layout para redimensionar componentes para o Forms adaptável?
+title: Como faço para usar o modo de layout para redimensionar componentes para formulários adaptáveis?
 description: Defina a posição dos componentes do AEM Forms, aprenda a acessar o modo de layout, redimensionar componentes, redimensionar painéis e definir o layout de várias colunas para um painel.
 feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '1134'
+source-wordcount: '1135'
 ht-degree: 2%
 
 ---

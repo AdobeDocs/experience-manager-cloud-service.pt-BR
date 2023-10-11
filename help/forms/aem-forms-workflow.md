@@ -1,12 +1,12 @@
 ---
-title: Fluxo de trabalho centrado no Forms no OSGi
+title: Como usar o AEM Forms para BPM (Business Process Automation, automação de processos de negócios)?
 seo-title: Rapidly build Adaptive Forms-based processes, automate document services operations, and use Adobe Sign with AEM workflows
 description: Use o AEM Forms Workflow para automatizar e criar rapidamente workflows de processos de negócios. Por exemplo, análise e aprovação, geração de PDF, fluxos de trabalho de Adobe Sign.
 uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
 topic-tags: publish, document_services
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '2369'
+source-wordcount: '2375'
 ht-degree: 2%
 
 ---

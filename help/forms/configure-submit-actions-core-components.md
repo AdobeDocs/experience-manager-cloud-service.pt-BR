@@ -1,12 +1,13 @@
 ---
-title: Como configurar uma ação enviar para um formulário adaptável
+title: Como configurar uma ação enviar para um formulário adaptável?
 description: Um Formulário adaptável fornece várias Ações de envio. Uma Ação de envio define como um Formulário adaptável é processado após o envio. Você pode usar as Ações de envio integradas ou criar as suas próprias ações.
 hide: true
 hidefromtoc: true
-source-git-commit: 74fed5b2bcffac9d267b66aaa3d69b27cadd3417
+exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
 source-wordcount: '3573'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 

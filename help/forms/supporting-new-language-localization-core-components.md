@@ -1,13 +1,13 @@
 ---
-title: Como adicionar suporte para novas localidades a um formulário adaptável com base nos Componentes principais?
+title: Como adicionar suporte para novas localidades a um formulário adaptável baseado em componentes principais?
 description: Saiba como adicionar novas localidades para um Formulário adaptável.
-source-git-commit: 0d2e353208e4e59296d551ca5270be06e574f7df
+exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '1340'
 ht-degree: 2%
 
 ---
-
 
 # Adicione uma localidade para o Forms adaptável com base nos Componentes principais {#supporting-new-locales-for-adaptive-forms-localization}
 
@@ -179,5 +179,3 @@ Execute as seguintes etapas para visualizar um Adaptável com um local recém-ad
 * [Usar tradução automática ou tradução humana para traduzir um Formulário adaptável baseado em Componentes principais](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
 * [Gerar documento de registro para Forms adaptável](/help/forms/generate-document-of-record-core-components.md)
 * [Adição de um formulário adaptável a uma página do AEM Sites ou a um fragmento de experiência](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-
-

@@ -1,10 +1,10 @@
 ---
-title: Arquitetura as a Cloud Service da AEM Forms
+title: Arquitetura as a Cloud Service do AEM Forms para APIs de Forms adaptável e comunicação
 description: Entender a arquitetura do [!DNL AEM Forms] as a Cloud Service para conhecer os aspectos de escalabilidade, resiliência e desempenho da plataforma.
 exl-id: 9d677bee-50ca-460e-b503-6b7799900735
-source-git-commit: b2c8e739c4e1c5289ca263360f4f59b8a2c05f5b
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '1065'
+source-wordcount: '1071'
 ht-degree: 5%
 
 ---

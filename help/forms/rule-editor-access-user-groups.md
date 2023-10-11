@@ -1,12 +1,12 @@
 ---
-title: Como conceder acesso ao editor de regras para grupos de usuários selecionados?
+title: Como fornecer acesso ao editor de regras dos formulários adaptáveis do aem para grupos de usuários selecionados?
 description: Há diferentes tipos de usuários com habilidades variadas que trabalham com o Adaptive Forms. Saiba como limitar o acesso do editor de regras aos usuários com base em sua função.
 feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '325'
 ht-degree: 5%
 
 ---

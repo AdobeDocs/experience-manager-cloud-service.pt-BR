@@ -1,15 +1,15 @@
 ---
-title: Problemas conhecidos e limitações de [!DNL AEM Forms] ambiente as a Cloud Service
+title: Quais são os problemas conhecidos e as limitações do ambiente as a Cloud Service do AEM Forms?
 description: Problemas conhecidos e limitações do ambiente do  [!DNL AEM Forms]  as a Cloud Service.
 contentOwner: khsingh
 role: User, Developer
 level: Intermediate
 topic: Administration
 exl-id: 871f294d-f251-4966-a021-39df65b613f0
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 98%
+source-wordcount: '369'
+ht-degree: 95%
 
 ---
 

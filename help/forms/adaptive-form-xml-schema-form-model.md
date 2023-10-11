@@ -1,13 +1,13 @@
 ---
-title: Criar esquema XML para um formulário adaptável
+title: Como projetar o esquema XML para um formulário adaptável?
 description: Saiba como criar um esquema XML para um Formulário adaptável e criar um Formulário adaptável com base no esquema para produzir dados de reclamação de esquema.
 feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 5b8ad9a8-77d4-4234-a4d7-c8964b975e96
-source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '950'
+source-wordcount: '952'
 ht-degree: 6%
 
 ---

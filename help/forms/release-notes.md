@@ -1,10 +1,10 @@
 ---
-title: "[!DNL AEM Forms] Notas de versão as a Cloud Service"
-description: "[!DNL AEM Forms] Notas de versão as a Cloud Service"
+title: Notas de versão as a Cloud Service do AEM Forms
+description: Saiba mais sobre novos recursos, versões beta, informações de pré-lançamento e muito mais sobre o AEM Forms as a Cloud Service.
 exl-id: 35950b81-6e45-4a75-bd27-8c28fd68e42e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8074c0e9566b679830a56094bc9b47cb22f4bb4a
 workflow-type: tm+mt
-source-wordcount: '2015'
+source-wordcount: '2028'
 ht-degree: 16%
 
 ---

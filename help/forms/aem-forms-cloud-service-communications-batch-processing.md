@@ -1,17 +1,17 @@
 ---
-title: Processamento em lote das Comunicações as a Cloud Service do AEM Forms
+title: Criação de PDF sem esforço - Domine a arte com processamento em lote - Seu guia de autoajuda para gerar milhões de documentos de PDF!
 description: Como criar comunicações personalizadas e orientadas à marca?
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '1698'
+source-wordcount: '1705'
 ht-degree: 2%
 
 ---
 
 # Processamento em lote das Comunicações as a Cloud Service do AEM Forms
 
-As comunicações permitem criar, montar e fornecer comunicações personalizadas e orientadas à marca, como correspondências comerciais, documentos, declarações, cartas de processamento de solicitações, avisos de benefícios, cartas de processamento de solicitações, faturas mensais e kits de boas-vindas. Você pode usar APIs de comunicações para combinar um modelo (XFA ou PDF) com os dados do cliente para gerar documentos nos formatos PDF, PS, PCL, DPL, IPL e ZPL.
+As comunicações permitem criar, montar e fornecer comunicações personalizadas e orientadas à marca, como correspondências comerciais, documentos, declarações, cartas de processamento de solicitações, avisos de benefícios, faturas mensais e kits de boas-vindas. Você pode usar APIs de comunicações para combinar um modelo (XFA ou PDF) com os dados do cliente para gerar documentos nos formatos PDF, PS, PCL, DPL, IPL e ZPL.
 
 As comunicações fornecem APIs para geração de documentos sob demanda e programada. Você pode usar APIs síncronas para APIs sob demanda e em lote (APIs assíncronas) para a geração agendada de documentos:
 

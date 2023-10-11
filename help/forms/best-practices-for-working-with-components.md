@@ -1,11 +1,9 @@
 ---
-title: Práticas recomendadas para trabalhar com componentes
-seo-title: Best practices for working with components
-description: Algumas práticas recomendadas e pontos principais a serem lembrados ao trabalhar com componentes de formulário adaptável
-seo-description: Some best practices and key points to remember when working with Adaptive Form components
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+title: Práticas recomendadas e pontos principais a serem lembrados ao trabalhar com formulários adaptáveis para AEM.
+description: Algumas práticas recomendadas e pontos principais a serem lembrados ao trabalhar com componentes de Formulário adaptável.
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '641'
 ht-degree: 1%
 
 ---

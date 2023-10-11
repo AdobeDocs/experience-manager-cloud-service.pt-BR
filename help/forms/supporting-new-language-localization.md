@@ -1,10 +1,10 @@
 ---
-title: Como adicionar suporte para novas localidades a um formulário adaptável?
+title: Como adicionar suporte para novos locais a um formulário adaptável baseado em componentes de base?
 description: Para o Adaptive Forms, você pode adicionar localidades para mais idiomas, além do fornecido imediatamente.
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '1259'
+source-wordcount: '1264'
 ht-degree: 1%
 
 ---

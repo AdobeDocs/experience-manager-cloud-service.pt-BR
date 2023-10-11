@@ -1,19 +1,20 @@
 ---
-title: Melhorar o desempenho de formulários grandes com carregamento lento
+title: Como podemos melhorar o desempenho de formulários grandes com carregamento lento?
 description: Saiba mais sobre como melhorar o desempenho de formulários grandes com carregamento lento. O carregamento lento melhora significativamente o desempenho de Forms adaptável grande e complexo, adiando a inicialização e o carregamento de fragmentos de formulário até que eles fiquem visíveis.
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: b2c8e739c4e1c5289ca263360f4f59b8a2c05f5b
+exl-id: 0cd38edb-2201-4ca6-8b84-6b5b7f76bd90
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '1071'
-ht-degree: 3%
+source-wordcount: '1075'
+ht-degree: 2%
 
 ---
 
 # Melhorar o desempenho de formulários grandes com carregamento lento{#improve-performance-of-large-forms-with-lazy-loading}
 
-<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-br) para [criação de um novo Forms adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
