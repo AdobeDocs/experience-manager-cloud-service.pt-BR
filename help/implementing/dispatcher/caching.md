@@ -3,9 +3,9 @@ title: Armazenamento em cache no AEM as a Cloud Service
 description: Saiba mais sobre as noções básicas de armazenamento em cache no AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: a6714e79396f006f2948c34514e5454fef84b5d8
+source-git-commit: 469c5f0e115cc57cf7624aecf5b9f45645f2e99a
 workflow-type: tm+mt
-source-wordcount: '2803'
+source-wordcount: '2878'
 ht-degree: 2%
 
 ---
@@ -87,7 +87,7 @@ Esse método é útil, por exemplo, quando a lógica de negócios exige o ajuste
 
 ### Imagens e qualquer conteúdo grande o suficiente para ser armazenado no armazenamento de blobs {#images}
 
-O comportamento padrão para programas criados após meados de maio de 2022 (especificamente para ids de programa superiores a 65000) é armazenar em cache por padrão, respeitando ao mesmo tempo o contexto de autenticação da solicitação. Programas mais antigos (ids de programa iguais ou inferiores a 65000) não armazenam em cache conteúdo de blob por padrão.
+O comportamento padrão para programas criados após meados de maio de 2022 (especificamente para ids de programa maiores que 65000) é armazenar em cache por padrão, respeitando também o contexto de autenticação da solicitação. Programas mais antigos (ids de programa iguais ou inferiores a 65000) não armazenam em cache conteúdo de blob por padrão.
 
 Em ambos os casos, os cabeçalhos de cache podem ser substituídos em um nível mais fino na camada do Apache/Dispatcher usando o Apache `mod_headers` diretivas, por exemplo:
 
@@ -99,6 +99,33 @@ Em ambos os casos, os cabeçalhos de cache podem ser substituídos em um nível 
 ```
 
 Ao modificar os cabeçalhos de cache na camada do Dispatcher, tenha cuidado para não armazenar em cache muito. Consulte a discussão na seção HTML/texto [acima](#html-text). Além disso, verifique se os ativos que devem ser mantidos privados (em vez de em cache) não fazem parte do `LocationMatch` filtros de diretiva.
+
+Os recursos JCR (maiores que 16 KB) armazenados no armazenamento de blob normalmente são servidos como redirecionamentos 302 pelo AEM. Esses redirecionamentos são interceptados e seguidos pelo CDN e o conteúdo é entregue diretamente do armazenamento de blob. Somente um conjunto limitado de cabeçalhos pode ser personalizado nessas respostas. Por exemplo, para personalizar `Content-Disposition` você deve usar as diretivas do dispatcher da seguinte maneira:
+
+```
+<LocationMatch "\.(?i:pdf)$">
+  ForceType application/pdf
+  Header set Content-Disposition inline
+  </LocationMatch>
+```
+
+A lista de cabeçalhos que podem ser personalizados em respostas de blob é:
+
+```
+content-security-policy
+x-frame-options
+x-xss-protection
+x-content-type-options
+x-robots-tag
+access-control-allow-origin
+content-disposition
+permissions-policy
+referrer-policy
+x-vhost
+content-disposition
+cache-control
+vary
+```
 
 #### Novo comportamento de cache padrão {#new-caching-behavior}
 
