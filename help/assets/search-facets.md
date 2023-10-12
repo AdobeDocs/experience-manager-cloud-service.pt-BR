@@ -4,9 +4,9 @@ description: Este artigo descreve como criar, modificar e usar os aspectos de pe
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 220350e6669c38ea602c2796ec1d5559992338ec
 workflow-type: tm+mt
-source-wordcount: '2444'
+source-wordcount: '2503'
 ht-degree: 22%
 
 ---
@@ -152,7 +152,7 @@ A variável `Tags` O predicado permite realizar pesquisas por ativos baseadas em
 
 Você pode classificar a estrutura de tags em ordem crescente ou decrescente com base na variável **[!UICONTROL Nome]** (ordem alfabética), **[!UICONTROL Criado em]** data ou **[!UICONTROL Modificado]** data. Na ilustração a seguir, a estrutura de tags é classificada em ordem alfabética com base no **[!UICONTROL Nome]**.
 
-![adicionar-tags](assets/add-tags-to-asset.png)
+![add-tags](assets/add-tags-to-asset.png)
 
 
 ## Adicionar outros predicados {#adding-other-predicates}
@@ -303,6 +303,18 @@ Semelhante à maneira como você adiciona um predicado de Propriedade ou um pred
   </tr>
  </tbody>
 </table>
+
+## Remover aspectos de pesquisa padrão {#removing-default-search-facets}
+
+O Adobe recomenda ter cuidado ao remover aspectos de pesquisa padrão para evitar problemas de desempenho. A remoção de aspectos de pesquisa padrão também pode afetar o comportamento do recurso padrão.
+
+Não remova os seguintes campos ocultos, pois isso causa um problema de desempenho de consulta com o OmniSearch e coleções inteligentes:
+
+* group.2_group.type=dam:Asset
+
+* group.1_group.type=nt:folder
+
+* group.p.or=true
 
 ## Redefinir aspectos de pesquisa padrão {#restoring-default-search-facets}
 
