@@ -2,9 +2,9 @@
 title: Notas da versão [!DNL Workfront for Experience Manager enhanced connector]
 description: Notas da versão [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 9981fb1ac5ddf5d918cf76476fa185c524749c70
+source-git-commit: f5f2c460815d273fe445c6f415dee7776cc18fce
 workflow-type: tm+mt
-source-wordcount: '1252'
+source-wordcount: '1355'
 ht-degree: 1%
 
 ---
@@ -15,17 +15,20 @@ A seção a seguir descreve as Notas de versão gerais do [!DNL Workfront for Ex
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento da versão mais recente 1.9.13 do [!DNL Workfront for Experience Manager enhanced connector] O é em 11 de setembro de 2023.
+A data de lançamento da versão mais recente 1.9.14 do [!DNL Workfront for Experience Manager enhanced connector] O é em 13 de outubro de 2023.
 
 ## Destaques da versão {#release-highlights}
 
-A versão mais recente do [!DNL Workfront for Experience Manager enhanced connector] O inclui as seguintes atualizações:
+A versão mais recente do [!DNL Workfront for Experience Manager enhanced connector] O inclui as seguintes correções de erros:
 
-* O conector aprimorado do Experience Manager busca todas as assinaturas de evento do Workfront enquanto exclui uma assinatura de evento para um projeto, o que resulta em um impacto no desempenho do aplicativo.
+* Quando assinaturas de evento estiverem desativadas em Configurações avançadas, ainda será possível selecionar as opções para **Inscrever-se em eventos de atualização de documento para atualizar metadados de ativos AEM**, **Publicar todos os ativos do projeto no Brand Portal após a conclusão do projeto**, e **Ativar a sincronização de comentários**.
 
-* Quando um ativo é enviado do Workfront para o Experience Manager, o tipo MIME do ativo não é definido como `dc:format` atributo no Experience Manager.
+* Alguns dos ativos armazenados no Experience Manager não são renderizados adequadamente ao visualizá-los no Workfront.
 
-* As IDs de projeto do Workfront armazenadas no conector aprimorado do Experience Manager incluem duplicatas.
+* Ao reconfigurar a conexão Experience Manager com o Workfront, assinaturas de evento, como atualização de sincronização de comentários, exclusão, atualização de documentos, não são criadas com sucesso.
+
+* Principais melhorias de desempenho da API para criação de pastas vinculadas, atualização, habilitação de pastas vinculadas, sincronização de comentários, habilitação e desabilitação, salvamento de configurações avançadas no conector.
+
 
 >[!NOTE]
 >
@@ -34,7 +37,7 @@ A versão mais recente do [!DNL Workfront for Experience Manager enhanced connec
 
 >[!IMPORTANT]
 >
->Adobe recomenda que você [atualizar para a versão 1.9.13 mais recente](/help/assets/workfront-connector-install.md) do [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe recomenda que você [atualização para a versão 1.9.14 mais recente](/help/assets/workfront-connector-install.md) do [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Problemas conhecidos {#known-issues}
 
@@ -43,6 +46,14 @@ A versão mais recente do [!DNL Workfront for Experience Manager enhanced connec
 * Ao usar a experiência clássica do Workfront, a variável **[!UICONTROL Enviar para]** opção disponível no **[!UICONTROL Mais]** a lista suspensa não permite selecionar o destino dentro do Experience Manager. A variável **[!UICONTROL Enviar para]** A opção funciona corretamente usando o **[!UICONTROL Ações do documento]** lista suspensa. A variável **[!UICONTROL Enviar para]** A opção funciona corretamente para **[!UICONTROL Mais]** lista suspensa e a variável **[!UICONTROL Ações do documento]** disponível na nova experiência do Workfront.
 
 ## Versões anteriores {#previous-releases}
+
+### Versão de setembro de 2023 {#september-2023-release}
+
+* O conector aprimorado do Experience Manager busca todas as assinaturas de evento do Workfront enquanto exclui uma assinatura de evento para um projeto, o que resulta em um impacto no desempenho do aplicativo.
+
+* Quando um ativo é enviado do Workfront para o Experience Manager, o tipo MIME do ativo não é definido como `dc:format` atributo no Experience Manager.
+
+* As IDs de projeto do Workfront armazenadas no conector aprimorado do Experience Manager incluem duplicatas.
 
 ### Versão de agosto de 2023 {#august-2023-release}
 
