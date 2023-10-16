@@ -3,9 +3,9 @@ title: Práticas recomendadas de consulta e indexação
 description: Saiba como otimizar seus índices e consultas com base nas diretrizes de práticas recomendadas da Adobe.
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: 1cdda5f793d853493f1f61eefebbf2af8cdeb6cb
+source-git-commit: ddd67a69bea2e2109ce93a91f42e8f365424f80f
 workflow-type: tm+mt
-source-wordcount: '3141'
+source-wordcount: '3144'
 ht-degree: 46%
 
 ---
@@ -315,4 +315,15 @@ Isso pode ocorrer por vários motivos:
    * Nesse caso, todos os resultados retornados pelo índice devem ser lidos pelo mecanismo de consulta e classificados na memória.
    * Isso é muitas vezes mais lento do que aplicar a classificação na consulta de índice subjacente.
 1. O executor da consulta está tentando iterar um conjunto de resultados grande.
-   * Essa situação pode ocorrer por várias razões: | Causa | Atenuação | |—|—| | A Comissão de `p.guessTotal` (ou o uso de um guessTotal muito grande) fazendo com que o QueryBuilder iterasse um grande número de resultados de contagem |Fornecer `p.guessTotal` com um valor apropriado | | O uso de um limite grande ou não vinculado no Construtor de consultas (ou seja, `p.limit=-1`) |Utilizar um valor adequado para `p.limit` (idealmente 1000 ou inferior) | | O uso de um predicado de filtragem no Construtor de consultas que está filtrando um grande número de resultados da consulta JCR subjacente | Substituir predicados de filtragem por restrições que podem ser aplicadas na consulta JCR subjacente | | O uso de uma classificação baseada em Comparador no QueryBuilder |Substituir pela ordenação baseada em propriedades na consulta JCR subjacente (usando propriedades indexadas como ordenadas) | | Filtragem de um grande número de resultados devido ao controle de acesso |Aplicar propriedade indexada adicional ou restrição de caminho à consulta para espelhar o Controle de acesso | | O uso de &quot;paginação de deslocamento&quot; com um deslocamento grande |Considere usar [Paginação do conjunto de chaves](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination)| | Iteração de um número grande ou ilimitado de resultados |Considere usar [Paginação do conjunto de chaves](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination)| | Índice incorreto escolhido |Use tags na definição de consulta e índice para garantir que o índice esperado seja usado|
+   * Essa situação pode ocorrer por vários motivos, conforme listado abaixo:
+
+| Causa | Mitigação |
+|----------|--------------|
+| A Comissão de `p.guessTotal` (ou o uso de um guessTotal muito grande) fazendo com que o QueryBuilder iterasse um grande número de resultados de contagem | Fornecer `p.guessTotal` com um valor apropriado |
+| O uso de um limite grande ou não vinculado no Construtor de consultas (ou seja, `p.limit=-1`) | Use um valor apropriado para `p.limit` (idealmente 1000 ou inferior) |
+| O uso de um predicado de filtragem no Construtor de consultas, que está filtrando um grande número de resultados da consulta JCR subjacente | Substituir os predicados de filtragem por restrições que podem ser aplicadas na consulta JCR subjacente |
+| O uso de uma classificação baseada em Comparador no QueryBuilder | Substituir pela ordenação baseada em propriedades na consulta JCR subjacente (usando propriedades indexadas conforme ordenadas) |
+| Filtragem de um grande número de resultados devido ao Controle de acesso | Aplicar propriedade indexada adicional ou restrição de caminho à consulta para espelhar o Controle de acesso |
+| O uso de &#39;paginação de deslocamento&#39; com um deslocamento grande | Considere usar [Paginação do conjunto de chaves](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination) |
+| Iteração de um número grande ou ilimitado de resultados | Considere usar [Paginação do conjunto de chaves](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination) |
+| Índice incorreto escolhido | Use Tags na definição de consulta e índice para garantir que o índice esperado seja usado |
