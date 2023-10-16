@@ -2,7 +2,7 @@
 title: Extrair conteúdo da origem
 description: Saiba como extrair conteúdo de uma instância do Adobe Experience Manager (AEM) de origem para transferi-lo posteriormente para uma instância do Cloud Service AEM.
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: 44a3f3c4ca08cffa06056ea85adc58e3cf1f2f1c
+source-git-commit: 031ddfa2da0fc5ecc92267eae1f9dcaac394573d
 workflow-type: tm+mt
 source-wordcount: '713'
 ht-degree: 28%
@@ -36,7 +36,7 @@ Siga as etapas abaixo para extrair seu conjunto de migração da ferramenta Tran
 
 1. Isso exibe a caixa de diálogo Extração. Clique em **Extract** para iniciar a fase de extração.
 
-   ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14.png)
+   ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14b.png)
 
    >[!NOTE]
    >Opcionalmente, é possível substituir o container de preparo durante a fase de extração. Se **Substituir container de preparo** estiver desativado, poderá acelerar as extrações para migrações subsequentes em que os caminhos de conteúdo ou as configurações de inclusão de versões não tenham sido alterados. No entanto, se os caminhos de conteúdo ou as configurações de inclusão de versões tiverem sido alterados, **Substituir container de preparo** deve ser ativado.
