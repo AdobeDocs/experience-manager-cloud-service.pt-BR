@@ -3,10 +3,10 @@ title: Práticas recomendadas de consulta e indexação
 description: Saiba como otimizar seus índices e consultas com base nas diretrizes de práticas recomendadas da Adobe.
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1cdda5f793d853493f1f61eefebbf2af8cdeb6cb
 workflow-type: tm+mt
-source-wordcount: '1556'
-ht-degree: 94%
+source-wordcount: '3141'
+ht-degree: 46%
 
 ---
 
@@ -62,7 +62,7 @@ Uma estratégia semelhante pode ser usada para manter o resultado em uma memóri
 
 A documentação do Oak fornece uma [visão geral de alto nível de como as consultas são executadas.](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-processing) Isso forma a base de todas as atividades de otimização descritas neste documento.
 
-O AEM as a Cloud Service fornece a Ferramenta de desempenho de consulta, desenvolvida para ajudar na implementação de consultas eficientes.
+O AEM as a Cloud Service fornece a [Ferramenta de desempenho da consulta](#query-performance-tool), que foi projetado para suportar a implementação de consultas eficientes.
 
 * Ela exibe consultas já executadas com suas características de desempenho relevantes e o plano de consulta.
 * Ela permite executar consultas ad-hoc em vários níveis, desde a exibição do plano de consulta até a execução da consulta completa.
@@ -105,13 +105,177 @@ Isso também significa que o tamanho do conjunto de resultados só poderá ser d
 
 Esse limite também impede que o mecanismo de consulta atinja o **limite de passagem** de 100.000 nós, o que resulta em uma interrupção forçada da consulta.
 
-Consulte a seção [Consultas com muitos resultados](#queries-with-large-result-sets) deste documento se um conjunto de resultados potencialmente grande tiver de ser processado por completo.
+Consulte a seção [Consultas com conjuntos de resultados grandes](#queries-with-large-result-sets) deste documento se um conjunto de resultados potencialmente grande tiver de ser processado por completo.
+
+## Ferramenta de desempenho da consulta {#query-performance-tool}
+
+A Ferramenta de desempenho de consulta (localizada em `/libs/granite/operations/content/diagnosistools/queryPerformance.html` e disponível por meio da [Console do desenvolvedor no Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=pt-BR#queries)) fornece -
+* Uma lista de quaisquer &quot;Consultas lentas&quot;; atualmente definidas como aquelas lendo/digitalizando mais de 5000 linhas.
+* Uma lista de &quot;Consultas populares&quot;
+* A ferramenta &quot;Explicar consulta&quot; para entender como uma consulta específica será executada pelo Oak.
+
+![Ferramenta de desempenho da consulta](assets/query-performance-tool.png)
+
+As tabelas &quot;Consultas lentas&quot; e &quot;Consultas populares&quot; incluem -
+* A própria instrução de consulta.
+* Detalhes da última thread que executou a consulta, permitindo que a página ou o recurso do aplicativo que executa a consulta seja identificado.
+* Uma pontuação de &quot;Otimização de leitura&quot; para a consulta.
+   * Isso é calculado como a proporção entre o número de linhas/nós examinados para executar a consulta e o número de resultados correspondentes lidos.
+   * Uma consulta para a qual cada restrição (e qualquer ordenação) pode ser tratada no índice normalmente terá uma pontuação de 90% ou superior.
+* Detalhes do número máximo de linhas -
+   * Lido - indicando que uma linha foi incluída como parte de um conjunto de resultados.
+   * Verificado - indicando que uma linha foi incluída nos resultados da consulta de índice subjacente (no caso de uma consulta indexada) ou lida no nodestore (no caso de um percurso de repositório).
+
+Essas tabelas ajudam a identificar consultas que não estão totalmente indexadas (consulte [Usar um índice](#use-an-index) ou estão lendo muitos nós (consulte também [Percurso do repositório](#repository-traversal) e [Travessia de índice](#index-traversal)). Esses queries serão destacados - com as áreas de preocupação apropriadas marcadas em vermelho.
+
+A variável `Reset Statistics` é fornecida a opção para remover todas as estatísticas existentes coletadas nas tabelas. Isso permite a execução de uma consulta específica (por meio do próprio aplicativo ou da ferramenta Explain Query ) e a análise das estatísticas de execução.
+
+### Explicar consulta
+
+A Ferramenta Explicar consulta permite que os desenvolvedores entendam o Plano de execução da consulta (consulte [Lendo o Plano de Execução da Consulta](#reading-query-execution-plan)), incluindo detalhes de quaisquer índices usados ao executar a query. Isso pode ser usado para entender com que eficiência uma consulta é indexada para prever ou analisar retrospectivamente seu desempenho.
+
+#### Explicação de uma consulta
+
+Para explicar uma consulta, faça o seguinte:
+* Selecione o idioma de consulta apropriado usando o `Language` lista suspensa.
+* Insira a instrução de consulta na caixa `Query` campo.
+* Se necessário, selecione como a consulta será executada usando as caixas de seleção fornecidas.
+   * Por padrão, consultas JCR não precisam ser executadas para identificar o Plano de Execução de Consulta (esse não é o caso para consultas QueryBuilder).
+   * Três opções são fornecidas para executar o query -
+      * `Include Execution Time` - executar a consulta, mas não tentar ler os resultados.
+      * `Read first page of results` - executar a consulta e ler a primeira &quot;página&quot; de 20 resultados (replicação das práticas recomendadas para executar consultas).
+      * `Include Node Count` - executar a consulta e ler todo o conjunto de resultados (geralmente isso não é recomendável - consulte [Travessia de índice](#index-traversal)).
+
+#### Pop-up Explicação da consulta {#query-explanation-popup}
+
+![Pop-up Explicação da consulta](./assets/query-explanation-popup.png)
+
+Depois de selecionar `Explain`, o usuário recebe um pop-up que descreve o resultado da explicação da consulta (e execução, se selecionada).
+Este pop-up inclui detalhes de -
+* Os Índices Usados ao executar a consulta (ou nenhum índice se a consulta for executada usando [Percurso do repositório](#repository-traversal)).
+* O tempo de execução (se `Include Execution Time` foi marcada) e a contagem de resultados lidos (se `Read first page of results` ou `Include Node Count` foram marcadas).
+* O plano de execução, que permite a análise detalhada de como a consulta é executada - consulte [Lendo o Plano de Execução da Consulta](#reading-query-execution-plan) para saber como interpretar isso.
+* Os caminhos dos primeiros 20 resultados da consulta (se `Read first page of results` foi marcada)
+* Os logs completos do planejamento de consulta, mostrando os custos relativos dos índices que foram considerados para a execução desta consulta (o índice com o menor custo será o escolhido).
+
+#### Lendo o Plano de Execução da Consulta {#reading-query-execution-plan}
+
+O Plano de Execução de Consulta contém tudo o que é necessário para prever (ou explicar) o desempenho de uma determinada consulta. Entenda com que eficiência a consulta será executada comparando as restrições e a ordenação na consulta JCR original (ou Construtor de consultas) com a consulta executada no índice subjacente (Lucene, Elastic ou Property).
+
+Considere a seguinte consulta -
+
+```
+/jcr:root/content/dam//element(*, dam:Asset) [jcr:content/metadata/dc:title = "My Title"] order by jcr:created
+```
+
+...que contém -
+* 3 restrições
+   * Nodetype (`dam:Asset`)
+   * Caminho (descendentes de `/content/dam`)
+   * Propriedade (`jcr:content/metadata/dc:title = "My Title"`)
+* Ordenação pelo `jcr:created` propriedade
+
+A explicação desta consulta resulta no seguinte plano -
+
+```
+[dam:Asset] as [a] /* lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) +:ancestors:/content/dam +jcr:content/metadata/dc:title:My Title ordering:[{ propertyName : jcr:created, propertyType : UNDEFINED, order : ASCENDING }] where ([a].[jcr:content/metadata/dc:title] = 'My Title') and (isdescendantnode([a], [/content/dam])) */
+```
+
+Neste plano, a seção que descreve a consulta executada no índice subjacente é -
+
+```
+lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) +:ancestors:/content/dam +jcr:content/metadata/dc:title:My Title ordering:[{ propertyName : jcr:created, propertyType : UNDEFINED, order : ASCENDING }]
+```
+
+Esta seção do plano indica que:
+* Um índice é usado para executar esta consulta -
+   * Neste caso, o índice Lucene `/oak:index/damAssetLucene-9` serão usadas, portanto, as informações restantes estarão na Sintaxe de consulta Lucene.
+* Todas as 3 restrições são tratadas pelo índice -
+   * A restrição nodetype
+      * implícito, porque `damAssetLucene-9` indexa somente nós do tipo dam:Asset.
+   * A restrição de caminho
+      * porque `+:ancestors:/content/dam` aparece na query Lucene.
+   * A restrição de propriedade
+      * porque `+jcr:content/metadata/dc:title:My Title` aparece na query Lucene.
+* A ordenação é feita pelo índice
+   * porque `ordering:[{ propertyName : jcr:created, propertyType : UNDEFINED, order : ASCENDING }]`  aparece na query Lucene.
+
+Essa consulta provavelmente terá um bom desempenho, já que os resultados retornados da consulta de índice não serão filtrados ainda mais no mecanismo de consulta (além da filtragem de Controle de acesso). No entanto, esse query ainda poderá ser executado lentamente se as práticas recomendadas não forem seguidas - consulte [Travessia de índice](#index-traversal) abaixo.
+
+Considerando uma consulta diferente -
+
+```
+/jcr:root/content/dam//element(*, dam:Asset) [jcr:content/metadata/myProperty = "My Property Value"] order by jcr:created
+```
+
+...que contém -
+* 3 restrições
+   * Nodetype (`dam:Asset`)
+   * Caminho (descendentes de `/content/dam`)
+   * Propriedade (`jcr:content/metadata/myProperty = "My Property Value"`)
+* Ordenação pelo `jcr:created` propriedade**
+
+A explicação desta consulta resulta no seguinte plano -
+
+```
+[dam:Asset] as [a] /* lucene:damAssetLucene-9-custom-1(/oak:index/damAssetLucene-9-custom-1) :ancestors:/content/dam ordering:[{ propertyName : jcr:created, propertyType : UNDEFINED, order : ASCENDING }] where ([a].[jcr:content/metadata/myProperty] = 'My Property Value') and (isdescendantnode([a], [/content/dam])) */
+```
+
+Neste plano, a seção que descreve a consulta executada no índice subjacente é -
+
+```
+lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) :ancestors:/content/dam ordering:[{ propertyName : jcr:created, propertyType : UNDEFINED, order : ASCENDING }]
+```
+
+Esta seção do plano indica que:
+* Somente 2 (das 3) restrições são tratadas pelo índice -
+   * A restrição nodetype
+      * implícito, porque `damAssetLucene-9` indexa somente nós do tipo dam:Asset.
+   * A restrição de caminho
+      * porque `+:ancestors:/content/dam` aparece na query Lucene.
+* A restrição de propriedade `jcr:content/metadata/myProperty = "My Property Value"` não é executado no índice, mas será aplicado como filtragem do Mecanismo de consulta nos resultados da consulta Lucene subjacente.
+   * Isso ocorre porque `+jcr:content/metadata/myProperty:My Property Value` não aparece na consulta Lucene, pois essa propriedade não está indexada na variável `damAssetLucene-9` índice usado para esta consulta.
+
+Este plano de execução de consulta resultará em cada ativo abaixo de `/content/dam` sendo lidos a partir do índice e filtrados ainda mais pelo mecanismo de consulta (que incluirá somente aqueles que correspondem à restrição de propriedade não indexada no conjunto de resultados).
+
+Mesmo que apenas uma pequena porcentagem de ativos corresponda à restrição `jcr:content/metadata/myProperty = "My Property Value"`, a consulta precisará ler um grande número de nós para (tentar) preencher a &quot;página&quot; de resultados solicitada. Isso pode resultar em uma consulta com baixo desempenho, que será mostrada como tendo um baixo `Read Optimization` na ferramenta Desempenho da consulta) e pode levar a mensagens de AVISO indicando que um grande número de nós está sendo percorrido (consulte [Travessia de índice](#index-traversal)).
+
+Para otimizar o desempenho desta segunda query, crie uma versão personalizada do `damAssetLucene-9` índice (`damAssetLucene-9-custom-1`) e adicione a seguinte definição de propriedade -
+
+```
+"myProperty": {
+  "jcr:primaryType": "nt:unstructured",
+  "propertyIndex": true,
+  "name": "jcr:content/metadata/myProperty"
+}
+```
 
 ## Folha de características de consulta JCR {#jcr-query-cheatsheet}
 
 Para auxiliar na criação de consultas JCR e definições de índice eficientes, a [Folha de características de consulta JCR](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=pt-BR#jcrquerycheatsheet) está disponível para download e uso como referência durante o desenvolvimento.
 
 Ela contém exemplos de consulta para o QueryBuilder, XPath e SQL-2, e abrange vários cenários que se comportam de maneira diferente em termos de desempenho de consulta. Ela também fornece recomendações sobre como criar ou personalizar índices do Oak. O conteúdo desta Folha de características se aplica ao AEM as a Cloud Service e ao AEM 6.5.
+
+## Práticas recomendadas de definição de índice {#index-definition-best-practices}
+
+Abaixo estão algumas práticas recomendadas a serem consideradas ao definir ou estender índices.
+
+* Para tipos de nós que têm índices existentes (como `dam:Asset` ou `cq:Page`) prefira a extensão de índices OOTB à adição de novos índices.
+   * Adicionar novos índices - principalmente índices de texto completo - no `dam:Asset` nodetype é altamente desencorajado (consulte [esta observação](/help/operations/indexing.md##index-names-index-names)).
+* Ao adicionar novos índices
+   * Sempre defina índices do tipo &#39;lucene&#39;.
+   * Usar uma tag de índice na definição do índice (e na consulta associada) e `selectionPolicy = tag` para garantir que o índice seja usado apenas para as consultas desejadas.
+   * Assegurar `queryPaths` e `includedPaths` ambos são fornecidos (normalmente com os mesmos valores).
+   * Uso `excludedPaths` para excluir caminhos que não conterão resultados úteis.
+   * Uso `analyzed` propriedades somente quando necessário, por exemplo, quando é necessário usar uma restrição de consulta de texto completo somente nessa propriedade.
+   * Sempre especificar `async = [ async, nrt ] `, `compatVersion = 2` e `evaluatePathRestrictions = true`.
+   * Somente especificar `nodeScopeIndex = true` se você precisar de um índice de texto completo do nodescope.
+
+>[!NOTE]
+>
+>Para obter mais informações, consulte [Documentação do índice Oak Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
+
+As verificações de pipeline do Automated Cloud Manager aplicarão algumas das práticas recomendadas descritas acima.
 
 ## Consultas com conjuntos de resultados grandes {#queries-with-large-result-sets}
 
@@ -134,3 +298,21 @@ Com este trecho de log, você pode determinar:
 * O código Java que executou esta consulta: `com.adobe.granite.queries.impl.explain.query.ExplainQueryServlet::getHeuristics` para ajudar a identificar o criador da consulta.
 
 Com essas informações, é possível otimizar a consulta usando os métodos descritos na seção [Otimização de consultas](#optimizing-queries) deste documento.
+
+### Travessia de índice {#index-traversal}
+
+As consultas que usam um índice, mas ainda leem um grande número de nós, são registradas com uma mensagem semelhante à seguinte (observe o termo `Index-Traversed` em vez de `Traversed`).
+
+```text
+05.10.2023 10:56:10.498 *WARN* [127.0.0.1 [1696502982443] POST /libs/settings/granite/operations/diagnosis/granite_queryperformance.explain.json HTTP/1.1] org.apache.jackrabbit.oak.plugins.index.search.spi.query.FulltextIndex$FulltextPathCursor Index-Traversed 60000 nodes with filter Filter(query=select [jcr:path], [jcr:score], * from [dam:Asset] as a where isdescendantnode(a, '/content/dam') order by [jcr:content/metadata/unindexedProperty] /* xpath: /jcr:root/content/dam//element(*, dam:Asset) order by jcr:content/metadata/unindexedProperty */, path=/content/dam//*)
+```
+
+Isso pode ocorrer por vários motivos:
+1. Nem todas as restrições na consulta podem ser tratadas no índice.
+   * Nesse caso, um superconjunto do conjunto de resultados final está sendo lido do índice e filtrado subsequentemente no mecanismo de consulta.
+   * Isso é muitas vezes mais lento do que aplicar restrições na consulta de índice subjacente.
+1. A consulta é classificada por uma propriedade que não está marcada como &#39;ordenada&#39; no índice.
+   * Nesse caso, todos os resultados retornados pelo índice devem ser lidos pelo mecanismo de consulta e classificados na memória.
+   * Isso é muitas vezes mais lento do que aplicar a classificação na consulta de índice subjacente.
+1. O executor da consulta está tentando iterar um conjunto de resultados grande.
+   * Essa situação pode ocorrer por várias razões: | Causa | Atenuação | |—|—| | A Comissão de `p.guessTotal` (ou o uso de um guessTotal muito grande) fazendo com que o QueryBuilder iterasse um grande número de resultados de contagem |Fornecer `p.guessTotal` com um valor apropriado | | O uso de um limite grande ou não vinculado no Construtor de consultas (ou seja, `p.limit=-1`) |Utilizar um valor adequado para `p.limit` (idealmente 1000 ou inferior) | | O uso de um predicado de filtragem no Construtor de consultas que está filtrando um grande número de resultados da consulta JCR subjacente | Substituir predicados de filtragem por restrições que podem ser aplicadas na consulta JCR subjacente | | O uso de uma classificação baseada em Comparador no QueryBuilder |Substituir pela ordenação baseada em propriedades na consulta JCR subjacente (usando propriedades indexadas como ordenadas) | | Filtragem de um grande número de resultados devido ao controle de acesso |Aplicar propriedade indexada adicional ou restrição de caminho à consulta para espelhar o Controle de acesso | | O uso de &quot;paginação de deslocamento&quot; com um deslocamento grande |Considere usar [Paginação do conjunto de chaves](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination)| | Iteração de um número grande ou ilimitado de resultados |Considere usar [Paginação do conjunto de chaves](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination)| | Índice incorreto escolhido |Use tags na definição de consulta e índice para garantir que o índice esperado seja usado|

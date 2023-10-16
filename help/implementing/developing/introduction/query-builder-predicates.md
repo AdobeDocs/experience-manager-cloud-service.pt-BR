@@ -2,9 +2,9 @@
 title: Referência de predicado do construtor de consultas
 description: Referência de predicado para a API do Construtor de consultas no AEM as a Cloud Service.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: e10c39c1d7fa05b738dd8f25662617a3a9568f83
 workflow-type: tm+mt
-source-wordcount: '2252'
+source-wordcount: '2295'
 ht-degree: 2%
 
 ---
@@ -25,6 +25,8 @@ O nome &quot;raiz&quot; nunca é usado em uma consulta; ele está implícito.
 * **`p.limit`** - número que indica o tamanho da página.
 * **`p.guessTotal`** - recomendado: evite calcular o total do resultado completo, que pode ser caro. Um número que indica o total máximo para contar até (por exemplo, 1000, um número que fornece aos usuários feedback suficiente sobre o tamanho bruto e números exatos para resultados menores). Ou, `true` para contar somente até o mínimo necessário `p.offset` + `p.limit`.
 * **`p.excerpt`** - se definido como `true`, incluir trecho de texto completo no resultado.
+* **`p.indexTag`** - se definido, incluirá uma opção de tag de índice na consulta (consulte [Tag de Índice de Opção de Consulta](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-option-index-tag)).
+* **`p.facetStrategy`** - se definido como `oak`, o Query Builder delegará a extração de facetas ao Oak (consulte [Facetas](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#facets)).
 * **`p.hits`** - (somente para o servlet JSON) selecione a forma como as ocorrências são gravadas como JSON, com essas padrão (extensível por meio do serviço ResultHitWriter).
    * **`simple`** - mínimo de itens como `path`, `title`, `lastmodified`, `excerpt` (se definido).
    * **`full`** - renderização Sling JSON do nó, com `jcr:path` indicando o caminho da ocorrência. Por padrão, o apenas lista as propriedades diretas do nó, inclui uma árvore mais profunda com `p.nodedepth=N`, com 0 significando a subárvore inteira e infinita. Adicionar `p.acls=true` para incluir as permissões JCR da sessão atual no item de resultado fornecido (mapeamentos: `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`).
