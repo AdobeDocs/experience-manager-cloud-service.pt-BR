@@ -3,15 +3,15 @@ title: Como adicionar um formulário adaptável à página do AEM Sites?
 description: Descubra como criar ou adicionar um Formulário adaptável à sua página do AEM Sites. Conheça também os benefícios e várias maneiras de integrar formulários ao seu site.
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
-source-git-commit: bb2ee07f8750c15959ecdaa65f0932b05edfcd39
+exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
+source-git-commit: a1b63508ed7040c719778bd1c422728bc0e2e4f2
 workflow-type: tm+mt
 source-wordcount: '3229'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-
-# Adicionar um formulário adaptável a uma página do AEM Sites ou a um fragmento de experiência {#create-or-add-an-adaptive-form-to-aem-sites-page}
+# Adição de um formulário adaptável a uma página do AEM Sites ou a um fragmento de experiência {#create-or-add-an-adaptive-form-to-aem-sites-page}
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
@@ -137,7 +137,7 @@ Para habilitar [!UICONTROL Contêiner adaptável do Forms] componente na políti
 
 +++
 
-## Criar um Formulário adaptável {#create-an-adaptive-form-in-sites-editor-or-experience-fragment}
+## Criação de um Formulário adaptável {#create-an-adaptive-form-in-sites-editor-or-experience-fragment}
 
 Você pode criar um formulário totalmente novo do zero, ajustando-o especificamente às suas necessidades e preferências de design, diretamente em uma página do AEM Sites ou no Fragmento de experiência. Para formulários de uso único, recomenda-se a criação direta em uma página do AEM Sites, enquanto os Fragmentos de experiência são ideais para formulários que precisam ser reutilizados em várias páginas do site.
 
