@@ -6,14 +6,14 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 867b87e0b22fdc4f0466b517e8a04c18fb2dc860
 workflow-type: tm+mt
 source-wordcount: '3172'
 ht-degree: 1%
 
 ---
 
-# Usar [!DNL Adobe Sign] em um Formulário adaptável {#using-adobe-sign-in-an-adaptive-form}
+# Uso [!DNL Adobe Sign] em um Formulário adaptável {#using-adobe-sign-in-an-adaptive-form}
 
 <span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
@@ -361,7 +361,12 @@ Quando [!DNL Adobe Sign] for configurado para um Formulário adaptável, o servi
 
 * Use endereços de email separados para configurar [!DNL Adobe Sign] conta e para o primeiro ou único destinatário. O endereço de email do primeiro recipient ou do único recipient (se houver um único recipient) não pode ser idêntico a [!DNL Adobe Sign] conta usada para configurar o AEM Cloud Service.
 
-## Artigos relacionados {#related-articles}
+>[!MORELIKETHIS]
+>
+>* [ [!DNL Adobe Sign] Integrar com a  [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md)
+>* [Práticas recomendadas para usar o [!DNL Adobe Sign] com Forms adaptável](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684)
 
-* [Integrar [!DNL Adobe Sign] com [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md)
-* [Práticas recomendadas para usar o [!DNL Adobe Sign] com Forms adaptável](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684)
+
+## Consulte também {#see-also}
+
+{{see-also}}

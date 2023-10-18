@@ -3,7 +3,7 @@ title: Como preencher previamente os campos do formulário adaptável?
 description: Com os dados existentes para preencher previamente os campos de um formulário adaptável, os usuários podem preencher previamente as informações básicas em um formulário fazendo logon com seus perfis sociais.
 topic-tags: develop
 exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: ebb77adfc97c805383de660d238e04a2173122b7
 workflow-type: tm+mt
 source-wordcount: '2042'
 ht-degree: 1%

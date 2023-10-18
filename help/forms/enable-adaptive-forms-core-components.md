@@ -5,10 +5,10 @@ contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin
 exl-id: 32a574e2-faa9-4724-a833-1e4c584582cf
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '1009'
-ht-degree: 5%
+source-wordcount: '1013'
+ht-degree: 6%
 
 ---
 
@@ -355,3 +355,7 @@ Para verificar se os Componentes principais do Adaptive Forms estão ativados pa
    ![localize o artefato core-forms-components-af-core em all/pom.xml](/help/forms/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service-locate-core-af-artifact.png)
 
    Se as dependências existirem, os Componentes principais adaptáveis do Forms serão ativados para o seu ambiente.
+
+>[!MORELIKETHIS]
+>
+>* [Criar um formulário adaptável](/help/forms/creating-adaptive-form-core-components.md)

@@ -4,9 +4,9 @@ description: Integrar um formulário adaptável ao Microsoft® Power Automate.
 hide: true
 hidefromtoc: true
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1178'
 ht-degree: 4%
 
 ---
@@ -196,3 +196,6 @@ Antes de enviar o formulário adaptável, verifique se `When an HTTP Request is 
 * [Configurar uma ação de envio](configure-submit-actions-core-components.md)
 * [Conector Adobe Experience Manager para Microsoft® Power Automate](https://learn.microsoft.com/en-us/connectors/adobeexperiencemanag/)
 
+>[!MORELIKETHIS]
+>
+* [Conectar o formulário adaptável ao Microsoft Power Automate](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate)

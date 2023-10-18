@@ -2,9 +2,9 @@
 title: O que são considerações, problemas conhecidos e práticas recomendadas no AEM Forms?
 description: Considerações sobre problemas conhecidos e práticas recomendadas para APIs de comunicação do AEM Forms.
 exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '1718'
+source-wordcount: '1748'
 ht-degree: 0%
 
 ---
@@ -203,3 +203,11 @@ Em comparação com o ambiente local, o Cloud Service oferece benefícios adicio
 
 **Posso executar várias operações em lote simultaneamente?**
 Sim, você pode executar várias operações em lote simultaneamente. Sempre use pastas de origem e destino diferentes para cada operação para evitar conflitos.
+
+>[!MORELIKETHIS]
+>
+>* [Introdução às Comunicações as a Cloud Service do AEM Forms](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [Arquitetura as a Cloud Service do AEM Forms para APIs de Forms adaptável e comunicação](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [Processamento de comunicação - APIs síncronas](/help/forms/aem-forms-cloud-service-communications.md)
+>* [Processamento de comunicação - APIs em lote](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+

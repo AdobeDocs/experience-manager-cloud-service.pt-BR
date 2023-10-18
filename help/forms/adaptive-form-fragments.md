@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '2023'
+source-wordcount: '2029'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,7 @@ Embora cada formulário seja projetado para um propósito específico, existem a
 
    >[!NOTE]
    >
-   >Certifique-se de especificar um nome exclusivo para o fragmento. Se já existir outro fragmento com o mesmo nome, o fragmento não será criado.
+   >Certifique-se de especificar um nome exclusivo para o fragmento. Se já existir outro fragmento com o mesmo nome, o fragmento falhará na criação.
 
 1. Clique para abrir a **guia de Modelo** de formulário e, no **menu suspenso Selecionar** entre, selecione um dos seguintes modelos para o fragmento:
 
@@ -239,7 +239,7 @@ Para localizar um Formulário adaptável que contenha Fragmentos de formulário 
 * Não há suporte para um fragmento em um formulário adaptável que use um modelo de dados de formulário diferente. Por exemplo, um fragmento baseado em XDP não é suportado em um formulário adaptável baseado em XSD e vice-versa.
 * Fragmentos de formulário adaptável estão disponíveis para uso por meio dos Fragmentos de formulário adaptável guia em AEM conteúdo localizador.
 * Qualquer expressão, script ou estilo em um fragmento de formulário adaptável independente é retido quando é inserido por referência ou incorporado em um formulário adaptável.
-* Não é possível editar um fragmento de formulário adaptável, que é inserido por referência, a partir de um Formulário adaptável. Para editar, edite o fragmento de formulário adaptável independente ou incorpore o fragmento no formulário adaptável.
+* Não é possível editar um fragmento de formulário adaptável, que é inserido por referência, de um formulário adaptável. Para editar, edite o fragmento de formulário adaptável independente ou incorpore o fragmento no formulário adaptável.
 * Ao publicar um formulário adaptável, você precisa publicar os fragmentos de formulário adaptáveis independentes inseridos por referência no formulário adaptável.
 * Ao republicar um fragmento de formulário adaptável atualizado, as alterações são refletidas nas instâncias publicadas do formulário adaptável em que o fragmento é usado.
 * O formulário adaptável que contém o componente Verificar não é compatível com usuários anônimos. Além disso, não é recomendado usar o componente Verificar em um fragmento de formulário adaptável.
@@ -249,3 +249,7 @@ Para localizar um Formulário adaptável que contenha Fragmentos de formulário 
 ## Fragmentos de referência {#reference-fragments}
 
 Os fragmentos de formulário de referência adaptável que você pode usar para criar seu formulário estão disponíveis. Para obter mais informações, consulte [Fragmentos de referência](reference-adaptive-form-fragments.md).
+
+>[!MORELIKETHIS]
+>
+>* [Fragmentos de formulário adaptável nos Componentes principais](/help/forms/adaptive-form-fragments-core-components.md)

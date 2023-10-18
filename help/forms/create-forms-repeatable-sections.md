@@ -3,7 +3,7 @@ title: Como criar painéis repetíveis nos Componentes principais do formulário
 description: Saiba como criar seções ou campos repetíveis em um Formulário adaptável.
 role: Architect, Developer, Admin, User
 exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: d0e5a63896ccbeb32b565680276b461fbbf19e9c
 workflow-type: tm+mt
 source-wordcount: '1390'
 ht-degree: 6%
@@ -225,9 +225,14 @@ No código a seguir, a variável `SampleType`O painel usa a propriedade minOccou
 ```
 
 
-## Artigos relacionados
+## Consulte também {#see-also}
 
-* [Criação de um Formulário adaptável](creating-adaptive-form-core-components.md)
-* [Criar estilo ou temas para seus formulários](using-themes-in-core-components.md)
-* [Adicionar comportamento dinâmico a formulários usando o editor de regras](rule-editor.md)
-* [Definir layout de formulários para diferentes tamanhos de tela e tipos de dispositivo](/help/sites-cloud/authoring/features/responsive-layout.md)
+{{see-also}}
+
+
+>[!MORELIKETHIS]
+>
+>* [Criar um formulário adaptável](creating-adaptive-form-core-components.md)
+>* [Criar estilo ou temas para seus formulários](using-themes-in-core-components.md)
+>* [Adicionar comportamento dinâmico a formulários usando o editor de regras](rule-editor.md)
+>* [Definir layout de formulários para diferentes tamanhos de tela e tipos de dispositivo](/help/sites-cloud/authoring/features/responsive-layout.md)

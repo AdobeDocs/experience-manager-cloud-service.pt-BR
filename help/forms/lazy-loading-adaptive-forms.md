@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 0cd38edb-2201-4ca6-8b84-6b5b7f76bd90
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1075'
-ht-degree: 2%
+source-wordcount: '1077'
+ht-degree: 3%
 
 ---
 
@@ -90,3 +90,8 @@ Os pontos importantes que você deve ter em mente ao desenvolver scripts para pa
 * Não encaminhe o valor de referência de um campo dentro de um painel lento independentemente de o campo estar marcado globalmente entre fragmentos ou não.
 * Use o recurso de redefinição de painel para redefinir tudo o que está visível no painel usando a seguinte expressão de clique.\
   guideBridge.resolveNode(guideBridge.getFocus({&quot;focusOption&quot;: &quot;navigablePanel&quot;})).resetData()
+
+
+## Consulte também {#see-also}
+
+{{see-also}}

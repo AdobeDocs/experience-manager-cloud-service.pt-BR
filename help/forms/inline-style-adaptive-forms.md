@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 25adabfb-ff19-4cb2-aef5-0a8086d2e552
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: e48272f4d36c608d516c7a947fc16cff3a3b408e
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '778'
 ht-degree: 4%
 
 ---
@@ -132,3 +132,12 @@ Para definir o estilo para o estado de um componente:
 Também é possível simular os estados de sucesso e erro. Toque no ícone Expandir para exibir a **[!UICONTROL Simular o sucesso]** e **[!UICONTROL Simular Erro]** opções.
 
 ![Simular estados](assets/simulate-states.png)
+
+
+## Consulte também {#see-also}
+
+{{see-also}}
+
+>[!MORELIKETHIS]
+>
+>* [Usar temas nos Componentes principais do formulário adaptável](/help/forms/using-themes-in-core-components.md)

@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1135'
+source-wordcount: '1137'
 ht-degree: 2%
 
 ---
@@ -131,3 +131,7 @@ Execute as seguintes etapas para desativar o modo Layout:
 
 1. Toque no **[!UICONTROL Configurações de layout]** e selecione **[!UICONTROL Desativar modo de layout]**.
 1. Toque ![Salvar alterações](assets/save_icon.svg) para salvar as propriedades do template.
+
+## Consulte também {#see-also}
+
+{{see-also}}

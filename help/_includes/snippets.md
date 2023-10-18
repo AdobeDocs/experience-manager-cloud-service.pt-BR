@@ -1,8 +1,8 @@
 ---
-source-git-commit: cada650e940aa941538a43ffb1f9a16d1f0b8a61
+source-git-commit: 867b87e0b22fdc4f0466b517e8a04c18fb2dc860
 workflow-type: tm+mt
-source-wordcount: '83'
-ht-degree: 62%
+source-wordcount: '244'
+ht-degree: 25%
 
 ---
 # Trechos {#snippets}
@@ -20,3 +20,28 @@ ht-degree: 62%
 >[!NOTE]
 >
 >No momento, o AEM não oferece suporte à atribuição de grupos a perfis. Em vez disso, os usuários devem ser adicionados individualmente.
+
+## Consulte também {#see-also}
+
+* [Criar um formulário adaptável de AEM](/help/forms/creating-adaptive-form-core-components.md)
+* [Adicionar um formulário adaptável de AEM à página do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Aplicar temas a um formulário adaptável de AEM](/help/forms/using-themes-in-core-components.md)
+* [Adicionar componentes a um formulário adaptável de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR#components)
+* [Usar CAPTCHA em um formulário adaptável de AEM](/help/forms/captcha-adaptive-forms-core-components.md)
+* [Gerar versão do PDF (DoR) de um formulário adaptável AEM](/help/forms/generate-document-of-record-core-components.md)
+* [Traduzir um formulário adaptável de AEM](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
+* [Ativar o Adobe Analytics para um formulário adaptável para rastrear o uso do formulário](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
+* [Conectar o formulário adaptável ao Microsoft SharePoint](/help/forms/configure-submit-actions-core-components.md#submit-to-sharedrive)
+* [Conectar o formulário adaptável ao Microsoft Power Automate](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate)
+* [Conectar o formulário adaptável ao Microsoft OneDrive](/help/forms/configure-submit-actions-core-components.md#create-a-onedrive-configuration)
+* [Conectar o formulário adaptável ao armazenamento de blobs do Microsoft Azure](/help/forms/configure-submit-actions-core-components.md#azure-blob-storage)
+* [Conectar o formulário adaptável ao Salesforce](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+* [Usar o Adobe Sign em um formulário adaptável AEM](/help/forms/working-with-adobe-sign.md)
+* [Adicionar uma nova localidade para um Formulário adaptável](/help/forms/supporting-new-language-localization-core-components.md)
+* [Enviar dados do formulário adaptável para um banco de dados](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration.html)
+* [Enviar dados do formulário adaptável para um endpoint REST](/help/forms/configure-submit-actions-core-components.md#submit-to-rest-endpoint)
+* [Enviar dados do formulário adaptável para o fluxo de trabalho do AEM](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
+* [Usar o Forms Portal para listar AEM Adaptive Forms em um site de AEM](/help/forms/configure-forms-portal.md)
+
+
+

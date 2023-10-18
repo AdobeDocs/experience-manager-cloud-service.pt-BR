@@ -7,13 +7,13 @@ role: User, Developer
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+exl-id: 6f1c3fe7-b61e-47ce-b565-15b4904db092
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '2780'
+source-wordcount: '2748'
 ht-degree: 97%
 
 ---
-
 
 # Criação de um Formulário adaptável {#creating-an-adaptive-form}
 
@@ -271,7 +271,4 @@ Você pode alterar o modelo de formulário para um formulário adaptável (com b
 
 >[!MORELIKETHIS]
 >
->* [Criação de um formulário adaptável em uma página do AEM Sites ou Fragmento de experiência](create-or-add-an-adaptive-form-to-aem-sites-page.md)
->* [Criação de um tema de formulário adaptável personalizado](using-themes-in-core-components.md)
->* [Configuração de ações de envio para um formulário](configuring-submit-actions.md)
->* [Componentes principais dos formulários adaptáveis disponíveis](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR#components)
+>* [Criar um formulário adaptável](/help/forms/creating-adaptive-form-core-components.md)

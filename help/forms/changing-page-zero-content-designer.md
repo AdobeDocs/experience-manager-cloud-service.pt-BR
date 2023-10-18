@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 56b6a573-8aba-43e7-acb7-c2da45869d95
 docset: aem65
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '248'
 ht-degree: 1%
 
 ---
@@ -45,3 +45,8 @@ O conteúdo da Página zero é exibido por padrão quando um visualizador que n�
 >[!NOTE]
 >
 >A propriedade personalizada que você acabou de criar pode não aparecer corretamente na caixa de diálogo Propriedades do formulário quando você reabrir o formulário. No entanto, funciona bem e o formulário exibe a mensagem Página zero atualizada.
+
+>[!MORELIKETHIS]
+>
+>* [Baixe e instale o Forms Designer para criar modelos de documento de registro](/help/forms/installing-configuring-designer.md)
+>* [Usar o Forms Designer para criar modelos de Documento de registro (DoR) e fragmentos de formulário?](/help/forms/use-forms-designer.md)

@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
+source-git-commit: a942e87a33775851631a1fe123fa3e8d2686bb30
 workflow-type: tm+mt
-source-wordcount: '1544'
-ht-degree: 1%
+source-wordcount: '1548'
+ht-degree: 2%
 
 ---
 
@@ -139,3 +139,8 @@ Quando esse projeto de arquétipo é implantado por meio do pipeline CM, a subst
 Agora você tem um modelo de dados de formulário com fontes de dados adicionadas a ele. Em seguida, você pode editar o Modelo de dados de formulário para adicionar e configurar objetos e serviços de modelo de dados, adicionar associações entre objetos de modelo de dados, editar propriedades, adicionar objetos e propriedades de modelo de dados personalizados, gerar dados de amostra e assim por diante.
 
 Para obter mais informações, consulte [Trabalhar com o modelo de dados de formulário](work-with-form-data-model.md).
+
+
+>[!MORELIKETHIS]
+>
+>* [Utilizar modelo de dados do formulário](/help/forms/using-form-data-model.md)

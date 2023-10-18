@@ -2,10 +2,10 @@
 title: Como usar o Forms as a Cloud Service para unir dados com modelos XDP e PDF ou gerar saída nos formatos PCL, ZPL e PostScript?
 description: Mesclar dados automaticamente com modelos XDP e PDF ou gerar saída nos formatos PCL, ZPL e PostScript
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 7%
+source-wordcount: '731'
+ht-degree: 6%
 
 ---
 
@@ -142,3 +142,10 @@ A variável [Documentação de referência da API](https://developer.adobe.com/e
 >[!NOTE]
 >
 >Somente membros do grupo de usuários de formulários podem acessar APIs de comunicações.
+
+>[!MORELIKETHIS]
+>
+>* [Introdução às Comunicações as a Cloud Service do AEM Forms](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [Arquitetura as a Cloud Service do AEM Forms para APIs de Forms adaptável e comunicação](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [Processamento de comunicação - APIs síncronas](/help/forms/aem-forms-cloud-service-communications.md)
+>* [Processamento de comunicação - APIs em lote](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)

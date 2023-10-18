@@ -2,9 +2,9 @@
 title: Como adicionar suporte para novos locais a um formulário adaptável baseado em componentes de base?
 description: Para o Adaptive Forms, você pode adicionar localidades para mais idiomas, além do fornecido imediatamente.
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1264'
+source-wordcount: '1266'
 ht-degree: 1%
 
 ---
@@ -157,3 +157,8 @@ Obtenha um [biblioteca cliente de exemplo](/help/forms/assets/locale-support-sam
 * Quando novos campos são adicionados em um Formulário adaptável existente:
    * **Para tradução automática**: recrie o dicionário e execute o projeto de tradução. Os campos adicionados a um Formulário adaptável após a criação de um projeto de tradução permanecem não traduzidos.
    * **Para tradução humana**: Exportar o dicionário através do `[server:port]/libs/cq/i18n/gui/translator.html`. Atualize o dicionário para os campos recém-adicionados e faça upload dele.
+
+
+## Consulte também {#see-also}
+
+{{see-also}}

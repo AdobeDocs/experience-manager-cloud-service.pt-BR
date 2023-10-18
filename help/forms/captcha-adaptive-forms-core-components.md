@@ -4,10 +4,10 @@ description: Melhore a segurança dos formulários com o serviço Google reCAPTC
 topic-tags: Adaptive Forms, author
 keywords: Serviço Google reCAPTCHA, Forms adaptável, Desafio de CAPTCHA, Prevenção de bot, Componentes principais, Segurança de envio de formulário, Prevenção de spam de formulário
 exl-id: d116f979-efb6-4fac-8202-89afd1037b2c
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '947'
-ht-degree: 12%
+source-wordcount: '919'
+ht-degree: 11%
 
 ---
 
@@ -106,9 +106,6 @@ Tap the **[!UICONTROL Currency Value]** field in the form and create the followi
 **P: Posso usar mais de um componente Captcha em um formulário adaptável?**
 **Ans:** Não há suporte para o uso de mais de um componente Captcha em um Formulário adaptável. Além disso, não é recomendável usar o componente Captcha em um fragmento ou painel marcado para carregamento lento.
 
-## Consulte também:
+## Consulte também {#see-also}
 
-* [Criação de um Formulário adaptável](/help/forms/creating-adaptive-form-core-components.md)
-* [Criar um fragmento de formulário adaptável](/help/forms/adaptive-form-fragments-core-components.md)
-* [Adição de um formulário adaptável a uma página do AEM Sites ou a um fragmento de experiência](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [Usar o Google reCAPTCHA em um formulário adaptável](/help/forms/captcha-adaptive-forms-core-components.md)
+{{see-also}}

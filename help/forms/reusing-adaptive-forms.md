@@ -3,9 +3,9 @@ title: Como reutilizar as propriedades de metadados de um formulário adaptável
 description: Descubra a redefinição de objetivo de um Formulário adaptável existente para criar um novo.
 seo-description: You can reuse an existing Adaptive Form to create new Adaptive Forms.
 exl-id: fb8cf3a9-fd19-46bf-b40e-2af76ca68b9f
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '615'
+source-wordcount: '617'
 ht-degree: 4%
 
 ---
@@ -71,3 +71,8 @@ O conteúdo de um Forms adaptável colado pode ser alterado usando as seguintes 
 1. **Publicar novamente:**
 
    O ativo colado é diferente do copiado. Você pode publicá-lo como um novo ativo para disponibilizá-lo para os usuários finais. Para saber como publicar um ativo, <!-- see [Publishing and unpublishing forms](publishing-unpublishing-forms.md) -->
+
+
+## Consulte também {#see-also}
+
+{{see-also}}

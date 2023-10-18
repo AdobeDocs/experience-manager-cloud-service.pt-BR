@@ -2,9 +2,9 @@
 title: Como obter temas de referência e modelos para formulários AEM?
 description: O AEM Forms fornece exemplos de temas, modelos e modelos de dados de formulário de formulários adaptáveis para ajudá-lo a criar formulários rapidamente.
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '839'
+source-wordcount: '841'
 ht-degree: 17%
 
 ---
@@ -120,3 +120,8 @@ O Forms adaptável pode interagir com os servidores do Microsoft Dynamics 365 e 
 * Salesforce
 
 Para obter informações sobre como usar esses modelos, consulte [Configurar os serviços em nuvem do Microsoft Dynamics 365 e Salesforce](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=en#configure-dynamics-cloud-service)
+
+
+## Consulte também {#see-also}
+
+{{see-also}}

@@ -5,9 +5,9 @@ uuid: c3fa2aa4-a6b4-458e-8534-138e075290b1
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 01724ca0-6901-45e7-b045-f44814ed574e
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '1130'
+source-wordcount: '1140'
 ht-degree: 0%
 
 ---
@@ -169,3 +169,8 @@ No código a seguir, a variável `SampleType`O painel usa a propriedade minOccou
 >[!NOTE]
 >
 >Para layout sem acordeão, use os componentes do botão Formulário adaptável para adicionar e remover instâncias.
+
+
+>[!MORELIKETHIS]
+>
+>* [Criar formulários com seções repetíveis nos Componentes principais do formulário adaptável](/help/forms/create-forms-repeatable-sections.md)

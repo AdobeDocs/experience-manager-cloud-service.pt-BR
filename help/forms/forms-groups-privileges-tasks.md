@@ -2,7 +2,7 @@
 title: Quais grupos de usuários estão disponíveis imediatamente no AEM Forms as a Cloud Service?
 description: Lista de grupos de usuários prontos para uso e permissões atribuídas a cada grupo
 exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: a942e87a33775851631a1fe123fa3e8d2686bb30
 workflow-type: tm+mt
 source-wordcount: '185'
 ht-degree: 24%
@@ -114,5 +114,10 @@ Depois de configurar [!DNL AEM Forms] as a Cloud Service, os grupos listados na 
 * [Criar um formulário adaptável independente](/help/forms/creating-adaptive-form-core-components.md)
 * [Adicionar um formulário adaptável à página do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 
+<!--
 
+>[!MORELIKETHIS]
+>
+>* [Use AEM Forms workflow for business process automation](/help/forms/aem-forms-workflow.md)
 
+-->

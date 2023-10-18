@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: e4dc01d2-7c89-4bd8-af0a-1d2df4676a9a
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 4%
+source-wordcount: '214'
+ht-degree: 6%
 
 ---
 
@@ -35,3 +35,7 @@ Os autores de formulários podem configurar uma página para cada formulário, p
 Os autores de formulário podem usar os seguintes parâmetros que são passados para a página Thank you. Para todas as ações enviar disponíveis, `status` e `owner` parâmetros são transmitidos. Além desses dois parâmetros, alguns parâmetros adicionais são transmitidos para as seguintes Ações de envio:
 
 * **[!UICONTROL Enviar para endpoint REST]**: os parâmetros adicionados para o mapeamento no campo para o parâmetro são transmitidos. `status` e `owner` Os parâmetros do não são transmitidos nesta Ação de envio. Para obter mais informações, consulte [Configuração da ação enviar Enviar para endpoint REST](configuring-submit-actions.md).
+
+>[!MORELIKETHIS]
+>
+>* [Configurar uma página de redirecionamento ou uma mensagem de agradecimento](/help/forms/configure-redirect-page-or-thank-you-message.md)

@@ -2,9 +2,9 @@
 title: Como podemos criar um modelo de formulário adaptável?
 description: Crie modelos de Formulário adaptável para definir a estrutura básica e o conteúdo inicial usando o Editor de modelos.
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '2096'
+source-wordcount: '2098'
 ht-degree: 2%
 
 ---
@@ -223,3 +223,8 @@ Você também pode salvar um Formulário adaptável como um modelo para uso futu
 * Ao modificar as propriedades do formulário no editor de modelo, não use a propriedade BindReference.
 * Caso queira adicionar um ponto de interrupção, crie-o ao criar um modelo de formulário adaptável.
 Para obter mais informações sobre pontos de interrupção, consulte [Layout responsivo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/responsive-layout.html#authoring).
+
+
+## Consulte também {#see-also}
+
+{{see-also}}

@@ -2,9 +2,9 @@
 title: Arquitetura as a Cloud Service do AEM Forms para APIs de Forms adaptável e comunicação
 description: Entender a arquitetura do [!DNL AEM Forms] as a Cloud Service para conhecer os aspectos de escalabilidade, resiliência e desempenho da plataforma.
 exl-id: 9d677bee-50ca-460e-b503-6b7799900735
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1071'
+source-wordcount: '1093'
 ht-degree: 5%
 
 ---
@@ -193,3 +193,10 @@ Ao instalar e configurar um [!DNL AEM Forms] Ambiente as a Cloud Service, você 
 ## Depuração {#debugging}
 
 O AEM as a Cloud Service é executado em uma infraestrutura de nuvem escalável e de autoatendimento. Exige que os desenvolvedores do AEM entendam e depurem várias facetas do AEM as a Cloud Service, desde a criação e implantação até a obtenção de detalhes da execução dos aplicativos do AEM. Para obter informações detalhadas, consulte [Depuração do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/overview.html).
+
+
+>[!MORELIKETHIS]
+>
+>* [Introdução às Comunicações as a Cloud Service do AEM Forms](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [Processamento em lote das Comunicações as a Cloud Service do AEM Forms](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [Processamento de comunicação - APIs síncronas](/help/forms/aem-forms-cloud-service-communications.md)

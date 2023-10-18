@@ -2,9 +2,9 @@
 title: Como podemos gerenciar metadados para o AEM Forms?
 description: Os metadados facilitam a categorização e a organização de ativos e ajudam os usuários que procuram um ativo específico.
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1741'
+source-wordcount: '1743'
 ht-degree: 3%
 
 ---
@@ -307,3 +307,8 @@ Uma ferramenta (Editor de esquema de metadados) é fornecida para definir o esqu
    Você adicionou uma propriedade de metadados personalizada com êxito.
 
 Todo o Forms adaptável em [!DNL AEM Forms] agora contêm essa propriedade de metadados adicional. Você pode editá-lo na página de propriedades.
+
+
+## Consulte também {#see-also}
+
+{{see-also}}

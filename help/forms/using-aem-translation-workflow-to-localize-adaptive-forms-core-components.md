@@ -3,9 +3,9 @@ title: Como podemos traduzir um Formulário adaptável baseado em Componentes pr
 description: Saiba como criar um Modelo de dados de formulário no AEM Forms, testar o modelo com dados e serviços de amostra e configurar várias opções para um modelo.
 feature: Adaptive Forms
 exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '896'
 ht-degree: 3%
 
 ---
@@ -83,3 +83,7 @@ Execute as seguintes etapas para localizar um formulário e seu documento de reg
    ![Importar arquivo de tradução](/help/forms/assets/adaptive-forms-core-components-start-translation-import.png)
 
 1. Para visualizar o formulário localizado, na interface do usuário do AEM Forms, selecione o formulário localizado. Clique em **[!UICONTROL Visualizar]** >**[!UICONTROL Visualizar como HTML]**. Reabra o formulário depois de adicionar o `afAcceptLang=<locale code>` ao URL do formulário. Por exemplo, adicione `afAcceptLang=de`para abrir a versão em alemão do formulário.
+
+## Consulte também {#see-also}
+
+{{see-also}}
