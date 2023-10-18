@@ -4,9 +4,9 @@ description: Este artigo descreve como criar, modificar e usar os aspectos de pe
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 220350e6669c38ea602c2796ec1d5559992338ec
+source-git-commit: 35d70cd3843b5e0857a24a17746e05072aed7e1b
 workflow-type: tm+mt
-source-wordcount: '2503'
+source-wordcount: '2506'
 ht-degree: 22%
 
 ---
@@ -342,6 +342,7 @@ Se você não recebeu uma função de administrador, esta é uma lista de permis
 
 **Consulte também**
 
+* [Pesquisar práticas recomendadas](search-best-practices.md)
 * [Traduzir ativos](translate-assets.md)
 * [API HTTP de ativos](mac-api-assets.md)
 * [Formatos de arquivo compatíveis com os ativos](file-format-support.md)
