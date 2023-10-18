@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 3a14f3b6f75f6021a7843a5a8a3439d6ea7f886d
 workflow-type: tm+mt
-source-wordcount: '1238'
-ht-degree: 7%
+source-wordcount: '1387'
+ht-degree: 6%
 
 ---
 
@@ -88,7 +88,7 @@ Para baixar ativos, siga estas etapas:
 
 1. Na caixa de diálogo, clique em **[!UICONTROL Baixar]**.
 
-   Se a notificação por email estiver ativada para downloads grandes, um email contendo um URL de download da pasta zip arquivada será exibido em sua caixa de entrada. Clique no link de download do email para baixar o arquivo zip.
+   Se a notificação por email estiver ativada para downloads grandes, um email contendo um URL de download da pasta zip arquivada será exibido em sua caixa de entrada. Clique no link de download no email para baixar o arquivo zip.
 
    ![email-notifications-for-large-downloads](/help/assets/assets/email-for-large-notification.png)
 
@@ -98,7 +98,7 @@ Para baixar ativos, siga estas etapas:
 
 ## Baixar ativos compartilhados usando o compartilhamento de link {#link-share-download}
 
-O compartilhamento de ativos usando um link é uma maneira conveniente de disponibilizá-lo para as pessoas interessadas sem que elas precisem fazer logon no [!DNL Assets]. Consulte [Funcionalidade Compartilhamento de link](/help/assets/share-assets.md#sharelink).
+O compartilhamento de ativos usando um link é uma maneira conveniente de disponibilizá-lo para as pessoas interessadas sem que elas precisem fazer logon no [!DNL Assets]. Consulte [Funcionalidade de Compartilhamento de links](/help/assets/share-assets.md#sharelink).
 
 Quando os usuários baixam ativos de links compartilhados, [!DNL Assets] O usa um serviço assíncrono que oferece downloads mais rápidos e ininterruptos. Os ativos a serem baixados são enfileirados em segundo plano em uma caixa de entrada em arquivos ZIP de tamanho de arquivo gerenciável. Para downloads maiores, o download é dividido em arquivos de 100 GB.
 
@@ -131,6 +131,15 @@ Se você não precisar da funcionalidade de download, desative o servlet para ev
 1. Para bloquear solicitações de download de ativos por meio de uma configuração do Dispatcher, edite o `dispatcher.any` e adicionar uma nova regra à variável [seção de filtro](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring).
 
    `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
+
+## Representação OnTime/OffTime {#on-off-time-rendition}
+
+Para ativar o `OnOffTimeAssetAccessFilter` precisa criar uma configuração OSGi. Esse serviço permite o bloqueio de acesso a representações e metadados, além do próprio ativo, com base em configurações de tempo de ativação/desativação. A configuração do OSGi deve ser para `com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter`. Siga as etapas abaixo:
+
+1. No código do seu projeto no Git, crie um arquivo de configuração em `/apps/system/config/com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter.cfg.json`. O arquivo deve conter `{}` como seu conteúdo, o que significa uma configuração OSGi vazia para o componente OSGi correspondente. Essa ação ativa o serviço.
+1. Implante seu código, incluindo essa nova configuração, por meio do [!DNL Cloud Manager].
+1. Depois de implantados, as representações e os metadados ficam acessíveis de acordo com as configurações de tempo de ativação/desativação dos ativos. Se a data ou a hora atual for anterior à hora de ativação ou posterior à hora de desativação, uma mensagem de erro será exibida.
+Para obter mais detalhes sobre como adicionar uma configuração OSGi vazia, consulte esta [guia](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=en).
 
 ## Dicas e limitações {#tips-limitations}
 
