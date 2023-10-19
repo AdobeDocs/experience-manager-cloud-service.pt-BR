@@ -1,13 +1,13 @@
 ---
 title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2023.4.0.
 description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2023.4.0.
-source-git-commit: 104065f208adf9bcc8e6a090b224517a7904f5f9
+exl-id: c34aedee-e45a-4e2a-ae7f-930bc0cc026f
+source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
 workflow-type: ht
 source-wordcount: '1171'
 ht-degree: 100%
 
 ---
-
 
 # Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2023.4.0 {#release-notes}
 
@@ -44,7 +44,7 @@ Assista ao vídeo Visão geral da versão de abril de 2023 que exibe um resumo d
 
 * Os fragmentos de conteúdo e suas referências agora podem ser publicados no [Serviço de visualização do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=pt-BR#access-preview-service) usando o [Console de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=pt-BR), permitindo a visualização da experiência final em um aplicativo separado antes da publicação.
 * As imagens agora podem ser otimizadas dinamicamente para entrega na Web com cenários headless usando o AEM GraphQL. [Variáveis de consulta](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html?lang=pt-BR#query-variables) podem ser definidas em consultas de GraphQL para permitir que aplicativos clientes dissociados solicitem imagens otimizadas do AEM.
-* As tags em [variações de fragmento de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html?lang=pt-BR) agora podem ser exprotadas em JSON usando a API de entrega de conteúdo do AEM GraphQL.
+* As tags das [variações de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html?lang=pt-BR) agora podem ser exportadas em JSON usando a API de entrega de conteúdo do AEM GraphQL.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
