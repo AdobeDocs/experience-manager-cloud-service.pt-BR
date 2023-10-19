@@ -3,7 +3,7 @@ title: Saiba mais sobre criação de Modelos de fragmento de conteúdo no AEM
 description: Saiba mais sobre os conceitos e os mecanismos de modelagem de conteúdo para seu Headless CMS usando Modelos de fragmentos de conteúdo.
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
 source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '687'
 ht-degree: 100%
 
