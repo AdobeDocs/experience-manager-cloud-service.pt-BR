@@ -2,9 +2,9 @@
 title: Configurando regras de filtro de tráfego com regras do WAF
 description: Usar regras de filtro de tráfego com regras do WAF para filtrar o tráfego
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 550ef9a969dc184fccbfd3b79716744cd80ce463
+source-git-commit: 218bf89a21f6b5e7f2027a88c488838b3e72b80e
 workflow-type: tm+mt
-source-wordcount: '3826'
+source-wordcount: '3810'
 ht-degree: 1%
 
 ---
@@ -532,7 +532,7 @@ Veja abaixo uma lista dos nomes de campo usados em logs CDN, juntamente com uma 
 
 O Adobe fornece um mecanismo para baixar ferramentas de painel no computador a fim de assimilar logs CDN baixados pelo Cloud Manager. Com essa ferramenta, você pode analisar o tráfego para ajudar a criar as regras de filtro de tráfego apropriadas a serem declaradas, incluindo regras WAF. Esta seção primeiro fornece algumas instruções para se familiarizar com as ferramentas do painel em um ambiente de desenvolvimento, seguidas de orientação sobre como aproveitar esse conhecimento para criar regras em um ambiente de produção.
 
-Os clientes que adotam regras de filtro de tráfego antecipadamente devem solicitar um zip da ferramenta de painel, que inclui um arquivo README descrevendo como carregar o contêiner Docker e assimilar os logs CDN.
+As ferramentas do painel de controle podem ser clonadas diretamente do [AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) Repositório Github.
 
 
 ### Conhecimento das ferramentas de painel de controle {#dashboard-getting-familiar}
