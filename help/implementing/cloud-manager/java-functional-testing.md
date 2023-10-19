@@ -1,8 +1,8 @@
 ---
 title: Testes funcionais do Java&trade
 description: Saiba como preparar testes funcionais do Java&trade para o AEM as a Cloud Service
-exl-id: e449a62a-c8ad-4d39-a170-abacdda3f1b1
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
+source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
 workflow-type: ht
 source-wordcount: '844'
 ht-degree: 100%
