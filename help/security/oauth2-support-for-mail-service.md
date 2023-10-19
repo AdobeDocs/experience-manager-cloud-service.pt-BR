@@ -2,7 +2,7 @@
 title: Suporte OAuth2 para o serviço de email
 description: Suporte do Oauth2 para o serviço de email no Adobe Experience Manager as a Cloud Service
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 417efad485226464b396c3ac3ef5ca8968309792
 workflow-type: tm+mt
 source-wordcount: '679'
 ht-degree: 98%
@@ -56,9 +56,15 @@ Resumindo, você precisará das seguintes informações para configurar o OAuth2
 
 Em seguida, gere o token de atualização, que faz parte da configuração OSGi em uma etapa subsequente, seguindo este método:
 
-1. Abra o seguinte URL no navegador após substituir `clientID` e `tenantID` pelos valores específicos da sua conta: `https://login.microsoftonline.com/%3ctenantID%3e/oauth2/v2.0/authorize?client_id=%3cclientId%3e&response_type=code&redirect_uri=http://localhost&response_mode=query&scope=https://outlook.office.com/SMTP.Send%20email%20openid%20profile%20offline_access&state=12345`.
+1. Abra o seguinte URL no navegador após substituir `clientID` e `tenantID` pelos valores específicos da sua conta:
+
+   `https://login.microsoftonline.com/%3ctenantID%3e/oauth2/v2.0/authorize?client_id=%3cclientId%3e&response_type=code&redirect_uri=http://localhost&response_mode=query&scope=https://outlook.office.com/SMTP.Send%20email%20openid%20profile%20offline_access&state=12345`
+
 1. Quando solicitado, conceda a permissão.
-1. O URL será redirecionado para um novo local, gerado neste formato: `http://localhost/?code=<code>&state=12345&session_state=4f984c6b-cc1f-47b9-81b2-66522ea83f81#`.
+1. O URL será redirecionado para um novo local, gerado neste formato:
+
+   `http://localhost/?code=<code>&state=12345&session_state=4f984c6b-cc1f-47b9-81b2-66522ea83f81#`
+
 1. Copie o valor de `<code>` no exemplo acima.
 1. Use o seguinte comando cURL para obter o refreshToken. Substitua tenantID, clientID e clientSecret pelos valores da sua conta e o valor por `<code>`:
 
