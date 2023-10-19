@@ -2,7 +2,7 @@
 title: Configurando regras de filtro de tráfego com regras do WAF
 description: Usar regras de filtro de tráfego com regras do WAF para filtrar o tráfego
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 9345ec974c9fbd525b12b53d20d98809cd72cb04
+source-git-commit: 146b85093331fe26da891252c398fc24d4f7c0d6
 workflow-type: tm+mt
 source-wordcount: '3810'
 ht-degree: 1%
@@ -165,7 +165,7 @@ Um Grupo de condições é composto por várias Condições simples e/ou de grup
 | reqProperty | `string` | Propriedade de solicitação.<br><br>Um de: `path` , `queryString`, `method`, `tier`, `domain`, `clientIp`, `clientCountry`<br><br>A propriedade do domínio é uma transformação em minúsculas do cabeçalho do host da solicitação. É útil para comparações de cadeias de caracteres, para que as correspondências não sejam perdidas devido à diferenciação entre maiúsculas e minúsculas.<br><br>A variável `clientCountry` usa códigos de duas letras exibidos em [https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol) |
 | reqHeader | `string` | Retorna o cabeçalho da solicitação com o nome especificado |
 | queryParam | `string` | Retorna o parâmetro de consulta com o nome especificado |
-| cookie | `string` | Retorna o cookie com o nome especificado |
+| reqCookie | `string` | Retorna o cookie com o nome especificado |
 
 **Predicado**
 
