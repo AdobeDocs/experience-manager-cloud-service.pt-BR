@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 3a14f3b6f75f6021a7843a5a8a3439d6ea7f886d
+source-git-commit: d25d433203b8ec6787dec87a9ec35092a247096e
 workflow-type: tm+mt
-source-wordcount: '1387'
+source-wordcount: '1388'
 ht-degree: 6%
 
 ---
@@ -132,7 +132,7 @@ Se você não precisar da funcionalidade de download, desative o servlet para ev
 
    `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
-## Representação OnTime/OffTime {#on-off-time-rendition}
+## Representação OnTime ou OffTime {#on-off-time-rendition}
 
 Para ativar o `OnOffTimeAssetAccessFilter` precisa criar uma configuração OSGi. Esse serviço permite o bloqueio de acesso a representações e metadados, além do próprio ativo, com base em configurações de tempo de ativação/desativação. A configuração do OSGi deve ser para `com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter`. Siga as etapas abaixo:
 
