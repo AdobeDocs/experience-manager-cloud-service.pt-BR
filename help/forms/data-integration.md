@@ -2,9 +2,9 @@
 title: Como conectar um banco de dados ao [!DNL AEM Forms] as a Cloud Service?
 description: Recupere e salve dados em serviços Web RESTful, serviços Web baseados em SOAP e serviços OData de um formulário adaptável ou de um fluxo de trabalho AEM.
 exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: 596cd08a98b1d9d47825438e1d64b6db3f847271
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '542'
 ht-degree: 2%
 
 ---
@@ -17,11 +17,12 @@ ht-degree: 2%
 | AEM as a Cloud Service | Este artigo |
 
 
+
 ![Integração de dados](do-not-localize/data-integeration.png)
 
 As infraestruturas corporativas incluem sistemas back-end distintos ou fontes de dados como bancos de dados, serviços da Web, serviços REST, serviços OData e soluções de CRM. Juntas, elas fazem um sistema de informações que serve dados para aplicativos corporativos para realizar negócios diários. Por outro lado, os aplicativos capturam os dados e os enviam de volta para atualizar as fontes de dados.
 
-[!DNL AEM Forms] aplicativos como o Adaptive Forms e as comunicações interativas exigem integração com fontes de dados para buscar dados do cliente e, ao mesmo tempo, renderizar formulários e criar comunicações interativas. Há casos de uso em que os dados são obtidos de fontes de dados com base nas entradas do usuário no Adaptive Forms. Além disso, os dados do Formulário adaptável enviado podem ser regravados para atualizar as respectivas fontes de dados.
+Quando você conecta o Formulário adaptável a um Banco de dados, ele requer integração com fontes de dados para buscar dados do cliente ao renderizar formulários. Há casos de uso em que os dados são obtidos de fontes de dados com base nas entradas do usuário no Adaptive Forms. Além disso, ao enviar um Formulário adaptável para um banco de dados, os dados do Formulário adaptável enviado podem ser gravados de volta para atualizar as respectivas fontes de dados.
 
 Embora um sistema modular e distribuído tenha seus próprios benefícios, o desafio está na integração e criação de associações de dados entre as fontes de dados. A integração de dados é a chave para uma infraestrutura empresarial funcional e eficiente, com diferentes fontes de dados conectadas a aplicativos para troca de dados de negócios.
 
@@ -36,20 +37,20 @@ Embora um sistema modular e distribuído tenha seus próprios benefícios, o des
 * Crie associações entre objetos de modelo de dados em e entre fontes de dados.
 * Invoque serviços de objeto de modelo de dados para consultar ou gravar dados de e para fontes de dados.
 
-Depois de criar um modelo de dados de formulário, você pode usá-lo em vários formulários adaptáveis e workflows de comunicações interativas, como:
+Depois de criar um modelo de dados de formulário, você pode usá-lo para:
 
-* Crie comunicações interativas e Forms adaptáveis com base no modelo de dados de formulário
-* Preencher previamente o Forms adaptável e as comunicações interativas de fontes de dados configuradas
+* Criar Forms adaptável com base em um modelo de dados de formulário
+* Preencher previamente o Forms adaptável a partir de fontes de dados configuradas
 * Chamar serviços/operações de fonte de dados usando regras do Formulário adaptável
 * Gravar dados do Formulário adaptável enviados nas fontes de dados
 
 ## Introdução à integração de dados {#get-started-with-data-integration}
 
-A primeira etapa para implementar a integração de dados é identificar e configurar as fontes de dados que armazenam as informações que você deseja usar nos casos de uso do Adaptive Forms e das comunicações interativas. Em seguida, você cria um Modelo de dados de formulário que usa objetos de modelo de dados, propriedades e serviços de uma ou mais fontes de dados. Você pode criar comunicações adaptáveis do Forms e interativas com base em um Modelo de dados de formulário em que os campos ou espaços reservados do Formulário adaptável em comunicações interativas são vinculados às respectivas propriedades da fonte de dados.
+A primeira etapa para implementar a integração de dados para enviar o Formulário adaptável a um banco de dados é identificar e configurar fontes de dados que armazenam informações que você deseja usar no Adaptive Forms. Em seguida, você cria um Modelo de dados de formulário que usa objetos de modelo de dados, propriedades e serviços de uma ou mais fontes de dados. Você pode criar Forms adaptável com base em um Modelo de dados de formulário em que os campos de Formulário adaptável estão vinculados às respectivas propriedades da fonte de dados.
 
 [!DNL AEM Forms] O também permite criar um modelo de dados de formulário independente das fontes de dados e associar ou vincular objetos de modelo de dados e propriedades no modelo de dados de formulário com a fonte de dados posteriormente. Ele elimina qualquer dependência em fontes de dados enquanto você trabalha em um modelo de dados de formulário.
 
-Analise o seguinte para começar, entender e implementar a integração de dados.
+Revise o seguinte para começar, entender e implementar a integração de dados:
 
 * [Configurar fontes de dados](configure-data-sources.md)
 * [Criar modelo de dados de formulário](create-form-data-models.md)
