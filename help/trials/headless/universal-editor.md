@@ -1,5 +1,5 @@
 ---
-title: Editar em Contexto com o Editor Universal
+title: Edição com contexto no Editor universal
 description: Explore como você pode usar o Editor universal para editar qualquer aspecto do conteúdo no local e no contexto em qualquer implementação.
 hidefromtoc: true
 index: false
@@ -7,15 +7,15 @@ exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
 source-git-commit: 226df8999d1344ffe8acb2a9ce75b58634300a11
 workflow-type: tm+mt
 source-wordcount: '971'
-ht-degree: 9%
+ht-degree: 11%
 
 ---
 
-# Editar em Contexto com o Editor Universal {#editing-in-context}
+# Edição com contexto no Editor universal {#editing-in-context}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor"
->title="Editar em Contexto com o Editor Universal"
+>title="Edição com contexto no Editor universal"
 >abstract="Veja como seus aplicativos headless podem aproveitar o Universal Editor para trazer uma edição contextual e de baixo atrito ao alcance de seus autores."
 
 >[!CONTEXTUALHELP]
