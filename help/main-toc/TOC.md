@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: bb7bbe5e31d75a72b3c81939ce560e3ff3979a86
+source-git-commit: 5e6d209729809952b2478fd0a71b32668ba41230
 workflow-type: tm+mt
-source-wordcount: '4331'
+source-wordcount: '4336'
 ht-degree: 93%
 
 ---
@@ -525,7 +525,7 @@ ht-degree: 93%
       + [Tipos de arquivos compatíveis e casos de uso](/help/assets/supported-file-formats-assets-view.md)
       + [Exibir ativos](/help/assets/navigate-assets-view.md)
       + [Fazer upload e adicionar ativos](/help/assets/add-delete-assets-view.md)
-      + [Importar ativos em massa](/help/assets/bulk-import-assets-view.md)
+      + [Importação em massa de ativos](/help/assets/bulk-import-assets-view.md)
       + [Pesquisar e descobrir ativos](/help/assets/search-assets-view.md)
       + [Tarefas de gerenciamento de ativos](/help/assets/manage-organize-assets-view.md)
       + [Editar imagens](/help/assets/edit-images-assets-view.md)
@@ -873,6 +873,7 @@ ht-degree: 93%
          + [Aplicar e cancelar a aplicação de Listas de permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
          + [Gerenciamento de listas de permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
       + [Painel de licenças](/help/implementing/cloud-manager/license-dashboard.md)
+      + [Noções básicas sobre solicitações de conteúdo Cloud Service](/help/implementing/cloud-manager/content-requests.md)
       + [Perguntas frequentes sobre o Cloud Manager](/help/implementing/cloud-manager/faqs.md)
    + Desenvolvimento do AEM as a Cloud Service {#developing}
       + [Estrutura de projetos do AEM](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
