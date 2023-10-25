@@ -1,13 +1,13 @@
 ---
 title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2023.8.0.
 description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2023.8.0.
-source-git-commit: 2b242cb10fb5d1da725c1396633d2db779a78639
+exl-id: a0ffa6cf-64ae-468c-93f4-ac6805ef907e
+source-git-commit: 8870e090d13504421c8056315918e13f4a50ee28
 workflow-type: tm+mt
 source-wordcount: '1686'
-ht-degree: 14%
+ht-degree: 18%
 
 ---
-
 
 # Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2023.8.0 {#release-notes}
 
@@ -66,17 +66,17 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 -->
 
-* **Importar ativos em massa de fontes de dados**: os administradores agora têm o [capacidade de importar um grande número de ativos](/help/assets/bulk-import-assets-view.md) de uma fonte de dados para o AEM Assets. Os administradores não precisam mais fazer upload de ativos ou pastas individuais para o AEM Assets. As fontes de dados compatíveis com a importação em massa incluem o Azure, o AWS, a Google Cloud e o Dropbox.
+* **Importar ativos em massa de fontes de dados**: os administradores agora têm o [capacidade de importar um grande número de ativos](/help/assets/bulk-import-assets-view.md) de uma fonte de dados para o AEM Assets. Não é mais necessário fazer upload de ativos ou pastas individuais para o AEM Assets. As fontes de dados compatíveis com a importação em massa incluem Azure, AWS, Google Cloud e Dropbox.
 
-  ![Importar ativos em massa de uma fonte de dados](/help/release-notes/assets/bulk-import.png)
+  ![Importação em massa de ativos de uma fonte de dados](/help/release-notes/assets/bulk-import.png)
 
-* **Ferramentas de edição de imagens possibilitadas pelo Adobe Express**: fácil e intuitivo [ferramentas de edição de imagens viabilizadas pelo Adobe Express](/help/assets/edit-images-assets-view.md) disponível diretamente no AEM Assets para aumentar a reutilização de conteúdo e acelerar a velocidade do conteúdo.
+* **Ferramentas de edição de imagem viabilizadas pelo Adobe Express**: fácil e intuitivo [ferramentas de edição de imagens viabilizadas pelo Adobe Express](/help/assets/edit-images-assets-view.md) disponível diretamente no AEM Assets para aumentar a reutilização de conteúdo e acelerar a velocidade do conteúdo.
 
   ![Edição de imagens com o Adobe Express](/help/release-notes/assets/edit-adobe-express.png)
 
-* **Flexibilidade ao fixar itens para o Acesso rápido ao My Workspace**: capacidade de selecionar e fixar itens para você, para toda a organização ou para uma lista de grupos para que sejam exibidos no [Seção Acesso rápido do Meu Espaço de Trabalho](/help/assets/my-workspace-assets-view.md) com base na sua seleção.
+* **Flexibilidade ao fixar itens no Acesso rápido do Meu espaço de trabalho**: capacidade de selecionar e fixar itens para você, para toda a organização ou para uma lista de grupos para que sejam exibidos no [Seção Acesso rápido do Meu Espaço de Trabalho](/help/assets/my-workspace-assets-view.md) com base na sua seleção.
 
-  ![Fixar itens para grupos](/help/release-notes/assets/pin-items-for-groups.png)
+  ![Fixação de itens para grupos](/help/release-notes/assets/pin-items-for-groups.png)
 
 ### Novos recursos na exibição do Administrador {#admin-view-features}
 
@@ -96,7 +96,7 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 * **Assets**: Capacidade de selecionar arquivos ZIP gerenciados no Experience Manager e [extração de arquivos diretamente no Experience Manager](/help/assets/manage-digital-assets.md#extract-zip-archives) sem baixá-los.
 
-  ![Fixar itens para grupos](/help/release-notes/assets/extract-archive.png)
+  ![Fixação de itens para grupos](/help/release-notes/assets/extract-archive.png)
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -156,7 +156,7 @@ Filtrar o tráfego na CDN com base em:
 
 Interessado em experimentar o recurso e compartilhar feedback? Enviar um email para **aemcs-waf-adopter@adobe.com** da sua ID de e-mail oficial para saber mais sobre o programa dos participantes antecipados. O espaço é limitado.
 
-Saiba mais sobre o recurso no artigo [aqui](/help/security/cdn-and-waf-rules.md).
+Saiba mais sobre o recurso no artigo [aqui](/help/security/traffic-filter-rules-including-waf.md).
 
 
 ## Notas da versão de manutenção {#maintenance}
