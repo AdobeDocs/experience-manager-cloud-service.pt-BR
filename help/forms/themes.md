@@ -2,9 +2,9 @@
 title: Como podemos criar e usar temas para estilizar um formulário adaptável?
 description: Use temas de formulário adaptável para estilizar e fornecer uma identidade visual a um formulário adaptável. Você pode compartilhar um tema em qualquer número do Adaptive Forms.
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: f70e18b1c21fd530587694f91c3969e831cfc640
 workflow-type: tm+mt
-source-wordcount: '5581'
+source-wordcount: '5578'
 ht-degree: 2%
 
 ---
@@ -650,7 +650,7 @@ Você pode ver o CSS gerado usando as seguintes opções:
     
     * **Editor de temas:**
     
-    O Editor de temas permite que você crie temas para estilizar seu formulário &lt;!>— ou comunicação interativa —>. Você pode especificar o estilo dos componentes em um tema, que permitem consistência na aparência entre vários formulários &lt;!>— ou comunicações interativas —> você desenvolve. É recomendável especificar informações de estilo em um tema e, em seguida, aplicar o tema a um formulário.
+    O Editor de temas permite que você crie temas para estilizar seu formulário &lt;!>— ou comunicação interativa —>. Você pode especificar o estilo dos componentes em um tema, que permitem consistência na aparência entre vários formulários desenvolvidos. É recomendável especificar informações de estilo em um tema e, em seguida, aplicar o tema a um formulário.
     
     * **Estilo em linha:**
     

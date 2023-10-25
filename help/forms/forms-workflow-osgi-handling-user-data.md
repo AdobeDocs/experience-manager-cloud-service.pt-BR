@@ -5,9 +5,9 @@ uuid: 6eefbe84-6496-4bf8-b065-212aa50cd074
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: f70e18b1c21fd530587694f91c3969e831cfc640
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1030'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ Você pode acessar e excluir dados do usuário de uma instância do fluxo de tra
 No entanto, não é possível identificar ou os resultados podem ser ambíguos ao identificar workflows associados a um iniciador nos seguintes cenários:
 
 * **Fluxo de trabalho acionado por meio de uma pasta monitorada**: uma instância de fluxo de trabalho não poderá ser identificada com o iniciador se o fluxo de trabalho for acionado por uma pasta monitorada. Nesse caso, as informações do usuário são codificadas nos dados armazenados.
-* **Fluxo de trabalho iniciado a partir da instância de publicação do AEM**: todas as instâncias de fluxo de trabalho são criadas usando um usuário de serviço quando o Adaptive Forms, as comunicações interativas ou as cartas são enviadas da instância de publicação AEM. Nesses casos, o nome do usuário conectado não é capturado nos dados da instância do fluxo de trabalho.
+* **Fluxo de trabalho iniciado a partir da instância de publicação do AEM**: todas as instâncias de fluxo de trabalho são criadas usando um usuário de serviço quando o Adaptive Forms ou as cartas são enviadas da instância de publicação AEM. Nesses casos, o nome do usuário conectado não é capturado nos dados da instância do fluxo de trabalho.
 
 ### Acessar dados do usuário {#access}
 
