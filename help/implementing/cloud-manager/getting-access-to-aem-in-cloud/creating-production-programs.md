@@ -2,10 +2,10 @@
 title: Criação de programas de produção
 description: Saiba como usar o Cloud Manager para criar seu próprio programa de produção para hospedar o tráfego direto.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
-source-wordcount: '581'
-ht-degree: 100%
+source-git-commit: ecb168e9261b3e3ed89e4cbe430b3da9f777a795
+workflow-type: tm+mt
+source-wordcount: '604'
+ht-degree: 88%
 
 ---
 
@@ -32,12 +32,15 @@ Siga estas etapas para criar um programa de produção.
 
 1. Ou é possível adicionar uma imagem ao programa arrastando e soltando um arquivo de imagem no público alvo **Adicionar uma imagem de programa** ou clicando nela para selecionar uma imagem de um navegador de arquivos. Toque ou clique em **Continuar**.
 
-1. Se você tiver direitos de segurança aprimorados, a guia **Segurança aprimorada** fornecerá a opção de **Ativar segurança aprimorada** para o seu programa de produção. Caso necessário, marque a opção para ativar a segurança aprimorada e toque ou clique em **Continuar**.
+1. Se você tiver os direitos necessários, a variável **Segurança** será exibida e fornecerá a opção para ativar **HIPAA** e/ou **Proteção WAF-DDOS** para seu programa de produção. Se necessário para o programa que você está criando, marque as opções aplicáveis e toque ou clique em **Continuar**.
 
-   * A segurança aprimorada não pode ser ativada ou desativada após a criação do programa.
-   * [Saiba mais](https://www.adobe.com/go/hipaa-ready) sobre a solução de implementação pronta para HIPAA da Adobe.
+   * O HIPAA não pode ser habilitado ou desabilitado após a criação do programa.
+      * [Saiba mais](https://www.adobe.com/go/hipaa-ready) sobre a solução de implementação pronta para HIPAA da Adobe.
+   * Uma vez ativada, a proteção WAF-DDOS pode ser configurada configurando um [pipeline de não produção.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
 
-   ![Opção de segurança aprimorada](assets/create-production-program-enhanced.png)
+   {{waf-limited-release}}
+
+   ![Opções de segurança](assets/create-production-program-security.png)
 
 1. Na guia **Soluções e complementos**, selecione as soluções a serem incluídas no programa.
 
@@ -65,7 +68,7 @@ Seu programa é criado pelo Cloud Manager e é exibido e pode ser selecionado na
 
 ![Visão geral do Cloud Manager](assets/navigate-cm.png)
 
-## Acessar o programa {#acessing}
+## Acessar o programa {#accessing}
 
 1. Depois de ver o cartão do programa na página de aterrissagem, selecione o botão de reticências para ver as opções de menu disponíveis.
 

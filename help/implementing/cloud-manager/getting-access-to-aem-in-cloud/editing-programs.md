@@ -2,10 +2,10 @@
 title: Programas de edição
 description: Saiba como editar os programas de sandbox e produção para ajustar as opções depois de criá-las.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
+source-git-commit: ecb168e9261b3e3ed89e4cbe430b3da9f777a795
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 50%
+source-wordcount: '507'
+ht-degree: 44%
 
 ---
 
@@ -53,15 +53,19 @@ Você deve ser um membro com a função **Proprietário da empresa** para editar
    * Esta data é apenas para fins informativos. Ele aciona o widget de publicação na página de visão geral do programa. Por sua vez, ele fornece links para a documentação de práticas as a Cloud Service do Adobe Experience Manager (AEM) para alinhar-se à sua jornada, resultando em uma experiência de ativação bem-sucedida.
    * Esta guia não está disponível para programas de sandbox.
 
+1. Se os direitos necessários estiverem disponíveis para o programa, a **Segurança** mostrará onde você pode modificar as opções de segurança do programa.
+
+   ![Editar configurações de segurança](assets/edit-program-security.png)
+
+   * O HIPAA não pode ser habilitado ou desabilitado após [criação do programa.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+      * [Saiba mais](https://www.adobe.com/go/hipaa-ready) sobre a solução de implementação pronta para HIPAA da Adobe.
+   * Uma vez ativada, a proteção WAF-DDOS pode ser configurada configurando um [pipeline de não produção.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+
+   {{waf-limited-release}}
+
 1. Clique em **Atualizar** para salvar as alterações no programa.
 
 Sempre que um programa for editado, incluindo a adição ou remoção de uma solução ou complemento, essas alterações entrarão em vigor após a próxima implantação.
-
-Se o programa de produção estiver com a segurança aprimorada habilitada, a guia adicional **Segurança aprimorada** estará disponível na janela **Editar programa** para confirmar que o recurso está ativo para o programa.
-
-![Segurança aprimorada ativa para um programa](assets/edit-program-enhanced.png)
-
-Não é possível editar essa configuração após a criação do programa. Para obter mais informações sobre a opção de segurança aprimorada, consulte [Criação de programas de produção](creating-production-programs.md).
 
 ## Exclusão de programas de sandbox {#delete-sandbox-program}
 

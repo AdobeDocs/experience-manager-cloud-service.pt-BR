@@ -3,10 +3,10 @@ title: Pipelines de CI/CD
 description: Saiba mais sobre os pipelines de CI/CD do Cloud Manager e como eles podem ser usados para implantar seu código com eficiência.
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: ecb168e9261b3e3ed89e4cbe430b3da9f777a795
 workflow-type: tm+mt
-source-wordcount: '1337'
-ht-degree: 98%
+source-wordcount: '1448'
+ht-degree: 92%
 
 ---
 
@@ -32,12 +32,6 @@ O Cloud Manager oferece dois tipos de pipelines:
 
 ![Tipos de pipelines](/help/implementing/cloud-manager/assets/configure-pipeline/ci-cd-config1.png)
 
-## Visão geral do vídeo {#video}
-
-Para obter uma visão geral rápida dos tipos de pipelines, assista a este vídeo curto.
-
->[!VIDEO](https://video.tv.adobe.com/v/342363)
-
 ## Pipelines de produção {#prod-pipeline}
 
 Um pipeline de produção é um pipeline criado para fins específicos que inclui uma série de etapas orquestradas para implantar código-fonte para uso de produção. As etapas incluem a primeira compilação, empacotamento, teste, validação e implantação em todos os ambientes de preparo. Portanto, um pipeline de produção somente pode ser adicionado após a criação de um conjunto de ambientes de produção e de preparo.
@@ -59,6 +53,7 @@ Um pipeline de não produção serve principalmente para executar verificações
 Além de produção e não produção, os pipelines podem ser diferenciados pelo tipo de código que implantam.
 
 * **[Pipelines de pilha completa](#full-stack-pipeline)** - Implanta simultaneamente compilações de código de back-end e front-end contendo um ou mais aplicativos de servidor do AEM, juntamente com configurações HTTPD/Dispatcher.
+* **[Configuração de pipelines de implantação](#config-deployment-pipeline)** - Defina as configurações no ambiente AEM, tarefas de manutenção, regras CDN e muito mais.
 * **[Pipelines de front-end](#front-end)** - Implantam compilações de código de front-end contendo um ou mais aplicativos de interface do usuário do lado do cliente.
 * **[Pipelines de configuração no nível da Web](#web-tier-config-pipelines)** - Implanta configurações HTTPD/Dispatcher.
 
@@ -73,9 +68,11 @@ A tabela a seguir resume todos os pipelines disponíveis no Cloud Manager e seus
 | Produção ou não produção | Implantação | Pilha completa | Implanta simultaneamente compilações de código back-end e front-end, juntamente com configurações HTTPD/Dispatcher | Quando o código de front-end deve ser implantado simultaneamente com o código de servidor do AEM.<br>Quando os pipelines de front-end ou de configuração no nível da Web ainda não tiverem sido adotados. |
 | Produção ou não produção | Implantação | Front-end | Implanta a compilação do código de front-end contendo um ou mais aplicativos de interface do usuário do lado do cliente | Suporta vários pipelines de front-end simultâneos <br>com muito mais rapidez do que implantações de pilha completa |
 | Produção ou não produção | Implantação | Configuração no nível da Web | Implanta configurações HTTPD/Dispatcher | Implantações em minutos |
+| Produção ou não produção | Implantação | Configuração | Implanta regras de filtragem de tráfego | Implantações em minutos |
 | Não produção | Qualidade do código | Pilha completa | Executa verificações de qualidade do código de pilha completa sem uma implantação | Oferece suporte a vários pipelines |
 | Não produção | Qualidade do código | Front-end | Executa verificações de qualidade do código de front-end sem uma implantação | Oferece suporte a vários pipelines |
 | Não produção | Qualidade do código | Configuração no nível da Web | Executa verificações de qualidade do código em configurações de dispatcher sem uma implantação | Oferece suporte a vários pipelines |
+| Não produção | Qualidade do código | Configuração | Implanta regras de filtragem de tráfego |  |
 
 O diagrama a seguir ilustra as configurações de pipeline do Cloud Manager com o repositório de front-end único tradicional ou configurações de repositório de front-end independente.
 
@@ -106,6 +103,26 @@ Além disso, esteja ciente de como o pipeline de pilha completa se comporta se o
 * Se não existir um pipeline de configuração no nível da Web correspondente para o ambiente, o usuário poderá configurar o pipeline de pilha completa para incluir ou ignorar a configuração do Dispatcher.
 
 Os pipelines de pilha completa podem ser pipelines de qualidade do código ou de implantação.
+
+### Configuração de pipelines de pilha completa {#configure-full-stack}
+
+Para saber como configurar pipelines de pilha completa, consulte os documentos a seguir:
+
+* [Adição de um pipeline de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code)
+* [Configuração de um pipeline de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code)
+
+## Configuração de pipelines de implantação {#config-deployment-pipeline}
+
+Com um pipeline de implantação de configuração, você pode implantar configurações no ambiente AEM para tarefas de manutenção, regras CDN e muito mais.
+
+Consulte o documento [Regras de filtro de tráfego incluindo regras WAF](/help/security/traffic-filter-rules-including-waf.md) para saber como gerenciar as configurações no repositório para que sejam implantadas corretamente.
+
+### Configuração de pipelines de implantação {#configure-config-deployment}
+
+Para saber como configurar pipelines de implantação de configuração, consulte os seguintes documentos:
+
+* [Adição de um pipeline de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment)
+* [Configuração de um pipeline de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#targeted-deployment)
 
 ## Pipelines de front-end {#front-end}
 
@@ -140,15 +157,7 @@ Para saber como configurar pipelines de front-end, consulte o seguinte:
 
 Com os pipelines de front-end, é dada mais independência aos desenvolvedores de front-end e o processo de desenvolvimento pode ser acelerado.
 
-Consulte [Desenvolvimento de sites com o pipeline de front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) para saber como esse processo funciona, além de algumas considerações a serem feitas a fim de aproveitar ao máximo o potencial desse processo.
-
-### Configuração de pipelines de pilha completa {#configure-full-stack}
-
-Para saber como configurar pipelines de pilha completa, consulte os documentos a seguir:
-
-* [Adição de um pipeline de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
-* [Configuração de um pipeline de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
-
+Consulte [Desenvolvimento de sites com o pipeline de front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) para saber como esse processo funciona, além de algumas considerações a serem feitas para aproveitar ao máximo o potencial desse processo.
 
 ## Pipelines de configuração no nível da Web {#web-tier-config-pipelines}
 
@@ -164,7 +173,7 @@ As restrições a seguir se aplicam.
 * Você deve [aceitar o modo flexível das ferramentas do dispatcher](/help/implementing/dispatcher/disp-overview.md#validation-debug) para aproveitar os pipelines de configuração no nível da Web.
 * É necessário estar conectado na função **Gerente de implantação** para configurar ou executar pipelines.
 * Em um dado momento, somente pode haver um pipeline de configuração no nível da Web por ambiente.
-* O usuário não pode configurar um pipeline de configuração no nível da Web quando seu pipeline de pilha completa correspondente está em execução.
+* O usuário não pode definir um pipeline de configuração no nível da Web quando um pipeline de pilha completa correspondente está em execução.
 * A estrutura de nível da Web deve seguir a estrutura do modo flexível, conforme definido no documento [Dispatcher na nuvem](/help/implementing/dispatcher/disp-overview.md#validation-debug).
 
 Além disso, esteja ciente de como o [pipeline de pilha completa](#full-stack-pipeline) se comporta ao introduzir um pipeline no nível da Web.
@@ -175,9 +184,15 @@ Além disso, esteja ciente de como o [pipeline de pilha completa](#full-stack-pi
 
 Os pipelines de configuração no nível da Web podem ser do tipo qualidade do código ou de implantação.
 
-### Definição de pipelines de configuração no nível da Web {#configure-web-tier-config-pipelines}
+### Configuração de pipelines no nível da Web {#configure-web-tier}
 
-Para saber como definir pipelines de configuração no nível da Web, consulte os documentos a seguir:
+Para saber como configurar pipelines no nível da Web, consulte os seguintes documentos:
 
-* [Adição de um pipeline de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
-* [Configuração de um pipeline de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
+* [Adição de um pipeline de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment)
+* [Configuração de um pipeline de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#targeted-deployment)
+
+## Visão geral em vídeo dos tipos de pipeline {#video}
+
+Para obter uma visão geral rápida dos tipos de pipelines, assista a este vídeo curto.
+
+>[!VIDEO](https://video.tv.adobe.com/v/342363)
