@@ -3,7 +3,9 @@ title: Como conectar o formulário adaptável AEM à lista do Microsoft® ShareP
 description: Conecte um formulário adaptável à lista Microsoft® SharePoint. Saiba como configurar a lista Microsoft® SharePoint e criar um Modelo de dados de formulário usando a configuração. Além disso, você aprenderá a integrar o FDM ao seu Formulário adaptável.
 role: User, Developer
 keywords: conectar o Formulário adaptável do AEM à Lista do Microsoft SharePoint, conectar o Formulário adaptável à Lista do Microsoft SharePoint, integrar o Formulário adaptável à Lista do Microsoft SharePoint, integrar o Formulário adaptável à Lista do AEM, enviar dados de um Formulário adaptável à Lista do Microsoft, enviar fluxo de trabalho para a Lista do SharePoint SharePoint AEM SharePoint.
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+hide: true
+hidefromToC: true
+source-git-commit: f79ed400ac2c1956dd7946cec2881f4e77d4bd41
 workflow-type: tm+mt
 source-wordcount: '552'
 ht-degree: 3%
