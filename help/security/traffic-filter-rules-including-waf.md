@@ -2,9 +2,9 @@
 title: Regras de filtro de tráfego incluindo regras WAF
 description: Configuração das regras de filtro de tráfego incluindo as regras do WAF (Web Application Firewall)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 1683819d4f11d4503aa0d218ecff6375fc5c54d1
+source-git-commit: 00d3323be28fe12729204ef00e336c7a4c63cda7
 workflow-type: tm+mt
-source-wordcount: '3312'
+source-wordcount: '3480'
 ht-degree: 1%
 
 ---
@@ -118,6 +118,10 @@ A variável `kind` O parâmetro deve ser definido como `CDN` e a versão deve se
 
 Para RDEs, a linha de comando será usada, mas RDE não é compatível no momento.
 
+**Notas**
+
+* Você pode usar `yq` para validar localmente a formatação YAML do arquivo de configuração (por exemplo, `yq cdn.yaml`).
+
 ## Sintaxe das regras de filtro de tráfego {#rules-syntax}
 
 Você pode configurar `traffic filter rules` para corresponder a padrões como IPs, agente de usuário, cabeçalhos de solicitação, nome do host, localização geográfica e url.
@@ -152,7 +156,7 @@ O formato das regras de filtro de tráfego na variável `cdn.yaml` arquivo está
 |---|---|---|---|---|---|
 | name | X | X | `string` | - | Nome da regra (64 caracteres de comprimento, pode conter apenas alfanuméricos e - ) |
 | quando | X | X | `Condition` | - | A estrutura básica é:<br><br>`{ <getter>: <value>, <predicate>: <value> }`<br><br>[Consulte Sintaxe da estrutura de condição](#condition-structure) abaixo, que descreve os getters, predicados e como combinar várias condições. |
-| ação | X | X | `Action` | log | log, permitir, bloquear, log ou objeto de ação O padrão é log |
+| ação | X | X | `Action` | log | objeto log, allow, block ou Action. O padrão é log |
 | rateLimit | X |   | `RateLimit` | não definido | Configuração de limitação de taxa. A limitação de taxa está desabilitada se não estiver definida.<br><br>Há uma seção separada mais abaixo que descreve a sintaxe rateLimit, juntamente com exemplos. |
 
 ### Estrutura de condição {#condition-structure}
@@ -188,11 +192,11 @@ Um Grupo de condições é composto por várias Condições simples e/ou de grup
 
 | **Propriedade** | **Tipo** | **Descrição** |
 |---|---|---|
-| reqProperty | `string` | Propriedade de solicitação.<br><br>Um de: `path` , `queryString`, `method`, `tier`, `domain`, `clientIp`, `clientCountry`<br><br>A propriedade do domínio é uma transformação em minúsculas do cabeçalho do host da solicitação. É útil para comparações de cadeias de caracteres, para que as correspondências não sejam perdidas devido à diferenciação entre maiúsculas e minúsculas.<br><br>A variável `clientCountry` usa códigos de duas letras exibidos em [https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol) |
+| reqProperty | `string` | Propriedade de solicitação.<br><br>Um de:<br><ul><li>`path`: retorna o caminho completo de um URL sem os parâmetros de consulta.</li><li>`queryString`: retorna a parte da consulta de um URL</li><li>`method`: retorna o método HTTP usado na solicitação.</li><li>`tier`: retorna um de `author`, `preview` ou `publish`.</li><li>`domain`: retorna a propriedade do domínio (conforme definido na variável `Host` cabeçalho) em minúsculas</li><li>`clientIp`: retorna o IP do cliente.</li><li>`clientCountry`: retorna um código de duas letras ([https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol) que identificam o país em que o cliente está localizado.</li></ul> |
 | reqHeader | `string` | Retorna o cabeçalho da solicitação com o nome especificado |
 | queryParam | `string` | Retorna o parâmetro de consulta com o nome especificado |
 | reqCookie | `string` | Retorna o cookie com o nome especificado |
-| postParam | `string` | Retorna o parâmetro com o nome especificado do corpo. Funciona somente quando o corpo é do tipo de conteúdo `application/x-www-form-urlencoded` |
+| postParam | `string` | Retorna o parâmetro Post com o nome especificado do corpo da Solicitação. Funciona somente quando o corpo é do tipo de conteúdo `application/x-www-form-urlencoded` |
 
 **Predicado**
 
@@ -207,6 +211,19 @@ Um Grupo de condições é composto por várias Condições simples e/ou de grup
 | **em** | `array[string]` | true se a lista fornecida contiver o resultado getter |
 | **notIn** | `array[string]` | true se a lista fornecida não contiver o resultado getter |
 | **existe** | `boolean` | verdadeiro quando definido como verdadeiro e a propriedade existe ou quando definido como falso e a propriedade não existe |
+
+**Notas**
+
+* A propriedade da solicitação `clientIp` só pode ser usado com os seguintes predicados: `equals`, `doesNotEqual`, `in`, `notIn`. `clientIp` também podem ser comparados com intervalos IP ao usar `in` e `notIn` predicados. O exemplo a seguir implementa uma condição para avaliar se um IP de cliente está no intervalo IP de 192.168.0.0/24 (portanto, de 192.168.0.0 a 192.168.0.255):
+
+```
+when:
+  reqProperty: clientIp
+  in: [ "192.168.0.0/24" ]
+```
+
+* Recomendamos o uso de [regex101](https://regex101.com/) e [Fastly Fiddle](https://fiddle.fastly.dev/) ao trabalhar com regex. Você também pode saber mais sobre como o Fastly lida com regex neste [artigo](https://developer.fastly.com/reference/vcl/regex/#best-practices-and-common-mistakes).
+
 
 ### Estrutura de ação {#action-structure}
 
@@ -259,6 +276,8 @@ A variável `wafFlags` que pode ser usada nas regras de filtro de tráfego WAF l
 * Se uma regra for correspondente e bloqueada, a CDN responderá com uma `406` código de retorno.
 
 * Os arquivos de configuração não devem conter segredos, pois eles podem ser lidos por qualquer pessoa com acesso ao repositório Git.
+
+* As Listas de permissões IP definidas no Cloud Manager têm prioridade sobre as Regras de filtros de tráfego.
 
 ## Exemplos de regras {#examples}
 
@@ -396,9 +415,10 @@ Os limites de taxa são calculados por CDN POP. Como exemplo, suponha que os POP
 | **Propriedade** | **Tipo** | **Padrão** | **SIGNIFICADO** |
 |---|---|---|---|
 | limite | número inteiro de 10 a 10000 | obrigatório | Taxa de solicitações (por CDN POP) em solicitações por segundo para as quais a regra é acionada. |
-| janela | enumeração de inteiros: 1, 10 ou 60 | 10 | Janela de amostragem em segundos para a qual a taxa de solicitação é calculada. |
+| janela | enumeração de inteiros: 1, 10 ou 60 | 10 | Janela de amostragem em segundos para a qual a taxa de solicitação é calculada. A precisão dos contadores dependerá do tamanho da janela (maior precisão da janela). Por exemplo, é possível esperar uma precisão de 50% para a janela de 1 segundo e uma precisão de 90% para a janela de 60 segundos. |
 | penalidade | número inteiro de 60 a 3600 | 300 (5 minutos) | Um período em segundos para o qual as solicitações correspondentes são bloqueadas (arredondado para o minuto mais próximo). |
 | groupBy | matriz[Getter] | nenhuma | o contador do limitador de taxa será agregado por um conjunto de propriedades de solicitação (por exemplo, clientIp). |
+
 
 ### Exemplos {#ratelimiting-examples}
 
