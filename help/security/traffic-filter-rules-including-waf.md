@@ -2,9 +2,9 @@
 title: Regras de filtro de tráfego incluindo regras WAF
 description: Configuração das regras de filtro de tráfego incluindo as regras do WAF (Web Application Firewall)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 00d3323be28fe12729204ef00e336c7a4c63cda7
+source-git-commit: aca385ff9a44733a6529c7e78e73fc1b138c1177
 workflow-type: tm+mt
-source-wordcount: '3480'
+source-wordcount: '3453'
 ht-degree: 1%
 
 ---
@@ -227,7 +227,7 @@ when:
 
 ### Estrutura de ação {#action-structure}
 
-Especificado por `action` que pode ser uma string especificando o tipo de ação (permitir, bloquear, log) e assumindo valores padrão para todas as outras opções ou um objeto no qual o tipo de regra é definido por meio de `type` campo obrigatório junto com outras opções aplicáveis a esse tipo.
+Um `action` pode ser uma string que especifica a ação (permitir, bloquear ou registrar) ou um objeto composto pelo tipo de ação (permitir, bloquear ou registrar) e opções como wafFlags e/ou status.
 
 **Tipos de ação**
 
@@ -278,6 +278,8 @@ A variável `wafFlags` que pode ser usada nas regras de filtro de tráfego WAF l
 * Os arquivos de configuração não devem conter segredos, pois eles podem ser lidos por qualquer pessoa com acesso ao repositório Git.
 
 * As Listas de permissões IP definidas no Cloud Manager têm prioridade sobre as Regras de filtros de tráfego.
+
+* As correspondências de regras do WAF aparecem somente nos logs CDN para erros e passagens de CDN, não para ocorrências.
 
 ## Exemplos de regras {#examples}
 
@@ -491,7 +493,7 @@ As regras se comportam da seguinte maneira:
 * Se o WAF estiver licenciado e ativado, a variável `waf` O atributo listará todos os sinalizadores WAF (por exemplo, SQLI) que foram detectados, independentemente de os sinalizadores WAF terem sido listados em alguma regra. Isso é para fornecer insight sobre novas regras em potencial a serem declaradas.
 * Se nenhuma regra declarada pelo cliente for correspondente e nenhuma regra waf for correspondente, a variável `rules` A propriedade estará em branco.
 
-Em geral, as regras correspondentes aparecem na entrada de log para todas as solicitações para o CDN, independentemente de ser uma ocorrência, transmissão ou erro do CDN. No entanto, as regras do WAF aparecem na entrada do log somente para solicitações ao CDN que são consideradas perdidas ou transmitidas pelo CDN, mas não para ocorrências de CDN.
+Como observado anteriormente, as correspondências de regras do WAF só aparecem nos registros CDN para erros e passagens de CDN, não para ocorrências.
 
 O exemplo abaixo mostra uma amostra `cdn.yaml` e duas entradas de log CDN:
 
