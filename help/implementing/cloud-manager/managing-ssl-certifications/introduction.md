@@ -3,7 +3,7 @@ title: Introdução ao gerenciamento de certificados SSL
 description: Saiba como o Cloud Manager fornece ferramentas de autoatendimento para instalar certificados SSL.
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 100%
 

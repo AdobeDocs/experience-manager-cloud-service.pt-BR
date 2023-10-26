@@ -63,7 +63,7 @@ Para responder à primeira pergunta, considere o tempo necessário para executar
 
 Além disso, você precisa planejar um congelamento de conteúdo quando a atualização final do conteúdo for agendada.
 
-## Práticas recomendadas     {#best-practices}
+## Práticas recomendadas {#best-practices}
 
 Ao planejar ou executar a migração, você deve considerar as seguintes diretrizes:
 

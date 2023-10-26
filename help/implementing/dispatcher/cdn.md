@@ -34,7 +34,7 @@ Siga as seções abaixo para usar a interface de autoatendimento do Cloud Manage
 
 Por padrão, para uma configuração de CDN gerenciada pelo AEM, todo o tráfego público pode chegar ao serviço de publicação para ambientes de produção e não produção (desenvolvimento e preparo). É possível limitar o tráfego para o serviço de publicação de um determinado ambiente (por exemplo, limitando o preparo por um intervalo de endereços IP) por meio da interface do Cloud Manager.
 
-Consulte [Gerenciamento de Listas de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) para saber mais.
+Consulte [Gerenciamento de listas de permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) para saber mais.
 
 >[!CAUTION]
 >
@@ -131,7 +131,7 @@ O CDN gerenciado pelo AEM adiciona cabeçalhos a cada solicitação com:
 >
 >Se houver uma CDN gerenciada pelo cliente, esses cabeçalhos refletirão a localização do servidor proxy CDN do cliente em vez do cliente real. Portanto, para CDN gerenciada pelo cliente, os cabeçalhos de geolocalização devem ser gerenciados pela CDN do cliente.
 
-Os valores para os códigos de países são os códigos alfa-2 descritos [aqui](https://en.wikipedia.org/wiki/ISO_3166-1).
+Os valores para os códigos de países são os códigos Alpha-2 descritos [aqui](https://en.wikipedia.org/wiki/ISO_3166-1).
 
 Os valores para os códigos de continente são:
 

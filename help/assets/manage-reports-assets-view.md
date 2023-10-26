@@ -3,7 +3,7 @@ title: Gerenciar relatórios na visualização do Assets
 description: Acesse os dados na seção de relatórios da visualização do Assets para avaliar o uso de produtos e recursos e obter insights sobre as principais métricas de sucesso.
 exl-id: c7155459-05d9-4a95-a91f-a1fa6ae9d9a4
 source-git-commit: df82681338f8ca1a34df6118cbddc6642aa8d4b5
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 100%
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="assets_reports"
 >title="Relatórios"
->abstract="Os relatórios de ativos fornecem à administração a visibilidade das atividades do ambiente de visualização do Adobe Experience Manager Assets. Esses dados fornecem informações úteis sobre como os usuários interagem com o conteúdo e o produto. Todos os usuários atribuídos ao perfil de produto de administradores podem acessar o painel Insights ou criar relatórios definidos pelo usuário."
+>abstract="Os relatórios do Assets fornecem à administração a visibilidade das atividades do ambiente de visualização do Adobe Experience Manager Assets. Esses dados fornecem informações úteis sobre como os usuários interagem com o conteúdo e o produto. Todos os usuários atribuídos ao perfil de produto de administradores podem acessar o painel Insights ou criar relatórios definidos pelo usuário."
 
 Os relatórios do Assets fornecem à administração a visibilidade das atividades do ambiente de visualização do Adobe Experience Manager Assets. Esses dados fornecem informações úteis sobre como os usuários interagem com o conteúdo e o produto.
 

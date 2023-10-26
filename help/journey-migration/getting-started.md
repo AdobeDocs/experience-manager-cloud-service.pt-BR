@@ -11,11 +11,11 @@ ht-degree: 24%
 
 # Introdução à Jornada de migração para o AEM as a Cloud Service {#getting-started}
 
-Nesta parte da Jornada AEM de migração as a Cloud Service do AEM, você aprenderá sobre as noções básicas para mover sua instalação local ou do Adobe Managed Services do para a nuvem.
+Nesta parte da Jornada de migração as a Cloud Service do AEM, você aprenderá sobre as noções básicas para mover sua instalação do no local ou do Adobe Managed Services AEM para a nuvem.
 
 ## Objetivo {#objective}
 
-Este documento ajuda você a entender por que deve usar uma versão nativa em nuvem do AEM e as diferentes fases de migração para o AEM as a Cloud Service. Depois de ler, você deve:
+Este documento ajuda você a entender por que deve usar uma versão nativa em nuvem do AEM e as diferentes fases de migração para o AEM as a Cloud Service. Depois de ler, você deverá:
 
 * Compreender os benefícios de mover o AEM as a Cloud Service
 * Familiarize-se com as etapas amplas que devem ser seguidas para fazer a transição para a nuvem

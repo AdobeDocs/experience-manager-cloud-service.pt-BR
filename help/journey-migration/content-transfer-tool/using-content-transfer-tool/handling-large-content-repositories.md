@@ -106,7 +106,7 @@ Observe que somente as versões 2.0.0 e posteriores são compatíveis, e é acon
 
 ### 3. Configurar um arquivo azcopy.config {#configure-azcopy-config-file}
 
-Na instância do AEM de origem, em `crx-quickstart/cloud-migration`, crie um arquivo chamado `azcopy.config`.
+No caso do AEM de origem, em `crx-quickstart/cloud-migration`, crie um arquivo chamado `azcopy.config`.
 
 >[!NOTE]
 >O conteúdo desse arquivo de configuração é diferente dependendo se a instância do AEM de origem usa um armazenamento de dados do Azure ou do Amazon S3 ou um armazenamento de dados do arquivo.

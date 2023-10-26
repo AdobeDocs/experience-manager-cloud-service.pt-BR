@@ -5,7 +5,7 @@ exl-id: 402dd3a6-44e5-4d13-97d8-1d7fa26a99e4
 source-git-commit: 701a7610780553731a6ac4c85fe3221ee3d98ae2
 workflow-type: tm+mt
 source-wordcount: '740'
-ht-degree: 83%
+ht-degree: 93%
 
 ---
 
@@ -42,14 +42,14 @@ Fixe arquivos, pastas e coleções para ter acesso mais rápido a esses itens qu
 
 Para fixar um ativo, uma pasta ou uma coleção:
 
-1. Selecione o item e clique em **[!UICONTROL Fixar no Acesso Rápido]**.
+1. Selecione o item e clique em **[!UICONTROL Fixar no Acesso rápido]**.
 
-1. Selecione se você precisa fixar o item apenas para você, para toda a organização ou para grupos selecionados. Se você selecionar **[!UICONTROL Para grupos]**, defina os nomes dos grupos na **[!UICONTROL Fixar para grupos]** campo.
+1. Selecione se precisa fixar o item apenas para você, para toda a organização ou para grupos selecionados. Se você selecionar **[!UICONTROL Para grupos]**, defina os nomes dos grupos no campo **[!UICONTROL Fixar para grupos]**.
 
-   ![Fixar itens para grupos](assets/pin-items-for-groups.png)
+   ![Fixação de itens para grupos](assets/pin-items-for-groups.png)
 1. Clique em **[!UICONTROL Fixar]**.
 
-   O item selecionado é exibido no campo **[!UICONTROL Acesso rápido]** seção do Meu espaço de trabalho.
+   Os itens selecionados serão exibidos na seção **[!UICONTROL Acesso rápido]** do Meu espaço de trabalho.
    ![Tarefas no espaço de trabalho](assets/quick-access.png)
 
 **Insights**

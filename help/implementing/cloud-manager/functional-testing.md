@@ -3,7 +3,7 @@ title: Teste funcional
 description: Saiba mais sobre os três diferentes tipos de testes funcionais integrados ao processo de implantação do AEM as a Cloud Service para garantir a qualidade e a confiabilidade do seu código.
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '539'
 ht-degree: 100%
 

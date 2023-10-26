@@ -96,7 +96,7 @@ Consulte recursos de autoajuda sobre como configurar e implantar em ambientes as
 >[!NOTE]
 > Para obter ajuda adicional, talvez você queira:
 >1. [Entre em contato com a equipe de suporte do Experience Manager](https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=en)
->2. Explorar [Comunidades e fóruns do Experience Manager](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
+>2. Explorar [Comunidades e fóruns do Experience Manager](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=pt)
 
 <br>
 
@@ -201,4 +201,4 @@ Na fase Pós-ativação, você deve garantir a limpeza de arquivos temporários,
 >[!NOTE]
 > Para obter ajuda adicional, talvez você queira:
 >1. [Entre em contato com a equipe de suporte do Experience Manager](https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=en)
->2. Explorar [Comunidades e fóruns do Experience Manager](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
+>2. Explorar [Comunidades e fóruns do Experience Manager](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=pt)

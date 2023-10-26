@@ -5,7 +5,7 @@ exl-id: 33c889f5-c989-4772-9591-db62f50e5c80
 source-git-commit: d198b3f0c7d8469a376ba7a3e95e57c84f835dbb
 workflow-type: tm+mt
 source-wordcount: '793'
-ht-degree: 87%
+ht-degree: 89%
 
 ---
 
@@ -188,7 +188,7 @@ Para excluir uma coleção:
 
 ## Próximas etapas {#next-steps}
 
-* Forneça feedback sobre o produto usando o [!UICONTROL Feedback] opção disponível na interface de exibição do Assets
+* Forneça feedback sobre o produto usando a opção [!UICONTROL Feedback] disponível na interface de visualização do Assets
 
 * Forneça feedback sobre a documentação usando as opções [!UICONTROL Editar esta página] ![editar a página](assets/do-not-localize/edit-page.png) ou [!UICONTROL Registrar um problema] ![criar um problema do GitHub](assets/do-not-localize/github-issue.png) disponíveis na barra lateral direita
 

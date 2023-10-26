@@ -46,6 +46,6 @@ Após uma restauração, a versão do AEM é atualizada para a mais recente.
 
 ## Backup externo {#offsite-backup}
 
-Embora os backups regulares cubram o risco de exclusões acidentais ou falhas técnicas nos serviços em nuvem do AEM, os riscos que podem surgir da falha de uma região também devem ser cobertos. Além da disponibilidade, o maior risco em interrupções nessa região de dados é principalmente a perda de dados.
+Embora os backups regulares cubram o risco de exclusões acidentais ou falhas técnicas nos Cloud Service AEM, os riscos que podem surgir da falha de uma região também devem ser cobertos. Além da disponibilidade, o maior risco em interrupções nessa região de dados é principalmente a perda de dados.
 O AEM as a Cloud Service cobre esse risco como padrão para todos os ambientes de produção do AEM. Ele copia continuamente todo o conteúdo do AEM para uma região remota e o disponibiliza para recuperação por três meses. O Adobe chama esse recurso de Backup Externo.
-A restauração dos serviços em nuvem do AEM para ambientes de preparo e produção é realizada pelo Serviço de engenharia de confiabilidade do AEM se houver interrupções da região de dados.
+A restauração dos Cloud Service de AEM para ambientes de preparo e produção é realizada pelo Serviço de Engenharia de Confiabilidade do AEM se houver interrupções na região de dados.

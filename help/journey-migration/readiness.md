@@ -5,7 +5,7 @@ exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
 source-git-commit: a9aa82c8258e6a5f43680069c65518093c0baf8d
 workflow-type: tm+mt
 source-wordcount: '2066'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -34,7 +34,7 @@ Este documento ajuda você a entender quais fatores devem ser considerados para 
 
 O AEM as a Cloud Service traz muitos novos recursos e possibilidades para gerenciar seus projetos do AEM.
 
-Juntamente com essas melhorias, foram introduzidas várias diferenças entre as instalações locais do AEM e do Adobe Managed Services, em comparação com o AEM as a Cloud Service.
+Juntamente com essas melhorias, foram introduzidas várias diferenças entre as instalações locais de AEM e Adobe Managed Services, em comparação com o AEM as a Cloud Service.
 
 A lista de itens na tabela abaixo é o subconjunto das alterações mais relevantes para uma migração para o AEM as a Cloud Service. Você pode consultar a lista completa de alterações importantes [aqui](/help/release-notes/aem-cloud-changes.md).
 
@@ -75,7 +75,7 @@ A lista de itens na tabela abaixo é o subconjunto das alterações mais relevan
   <tr>
     <td>CRX/DE e Gerenciador de pacotes</td>
     <td></td>
-    <td>O CRX/DE é permitido somente no ambiente de desenvolvimento.<br>O Gerenciador de pacotes pode ser acessado em todas as instâncias do autor, mas os pacotes que serão implantados devem conter somente conteúdo mutável ( por exemplo: /content ou /conf)</td>
+    <td>O CRX/DE é permitido somente no ambiente de desenvolvimento.<br>O Gerenciador de pacotes pode ser acessado em todas as instâncias de autor, mas os pacotes que serão implantados devem conter somente conteúdo mutável ( por exemplo: /content ou /conf)</td>
   </tr>
   <tr>
     <td>CDN integrada e Obter seu próprio CDN</td>
@@ -150,7 +150,7 @@ A lista de itens na tabela abaixo é o subconjunto das alterações mais relevan
   <tr>
     <td>Alterações na autenticação</td>
     <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=pt-BR">Suporte IMS do AEM as a Cloud Service</td>
-    <td>Se você já estava usando a integração SAML 2.0 na criação e na publicação antes de migrar para o Cloud Service, a principal alteração é que o AEM as a Cloud Service Author só se integra ao Adobe IMS. No entanto, o nível de publicação as a Cloud Service do AEM ainda pode usar SAML ou outras integrações de autenticação. O AEM as a Cloud Service oferece suporte à autenticação IMS somente para usuários Autor, Administrador e Desenvolvimento. A autenticação IMS não oferece suporte para usuários finais externos de sites do cliente, como visitantes do site.</td>
+    <td>Se você já estava usando a integração SAML 2.0 na criação e na publicação antes de migrar para o Cloud Service, a principal alteração é que o AEM as a Cloud Service Author só se integra ao Adobe IMS. No entanto, o nível de publicação as a Cloud Service do AEM ainda pode usar SAML ou outras integrações de autenticação. O AEM as a Cloud Service oferece suporte à autenticação IMS somente para os usuários Autor, Administrador e Desenvolvedor. A autenticação IMS não oferece suporte para usuários finais externos de sites do cliente, como visitantes do site.</td>
   </tr>
 </tbody>
 </table>

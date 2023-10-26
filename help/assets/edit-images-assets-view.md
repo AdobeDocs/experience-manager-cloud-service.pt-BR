@@ -6,23 +6,23 @@ exl-id: fc21a6ee-bf23-4dbf-86b0-74695a315b2a
 source-git-commit: 30b8c9b8eaee6292323dde4b436c29fe8290c910
 workflow-type: tm+mt
 source-wordcount: '896'
-ht-degree: 54%
+ht-degree: 94%
 
 ---
 
 # Editar imagens no [!DNL Assets view] {#edit-images}
 
-[!DNL Assets view] O fornece opções de edição intuitivas viabilizadas pelo [!DNL Adobe Express] e [!DNL Adobe Photoshop Express]. As ações de edição disponíveis usando [!DNL Adobe Express] são Redimensionar imagem, Remover plano de fundo, Cortar imagem e Converter JPEG em PNG.
+O [!DNL Assets view] fornece opções de edição fáceis de usar viabilizadas pelo [!DNL Adobe Express] e [!DNL Adobe Photoshop Express] As ações de edição disponíveis usando o [!DNL Adobe Express] são: Redimensionar imagem, Remover fundo, Cortar imagem e Converter JPEG em PNG.
 
-Após editar uma imagem, você pode salvar a nova imagem como uma nova versão. O controle de versão ajuda você a reverter para o ativo original posteriormente, se necessário. Para editar uma imagem, [abrir sua visualização](/help/assets/navigate-assets-view.md) e clique em **[!UICONTROL Editar imagem]**.
+Após editar uma imagem, você pode salvar a nova imagem como uma nova versão. O controle de versão ajuda você a reverter para o ativo original posteriormente, se necessário. Para editar uma imagem, [abra sua visualização](/help/assets/navigate-assets-view.md) e clique em **[!UICONTROL Editar imagem]**.
 
 >[!NOTE]
 >
->É possível editar imagens de tipos de arquivos PNG e JPEG usando [!DNL Adobe Express].
+>É possível editar imagens de arquivos PNG e JPEG usando o [!DNL Adobe Express].
 
 <!--The editing actions that are available are Spot healing, Crop and straighten, Resize image, and Adjust image.-->
 
-## Editar imagens usando o Adobe Express {#edit-using-express}
+## Edição de imagens usando o Adobe Express {#edit-using-express}
 
 >[!CONTEXTUALHELP]
 >id="assets_express_integration"
@@ -31,56 +31,56 @@ Após editar uma imagem, você pode salvar a nova imagem como uma nova versão. 
 
 ### Redimensionar imagem {#resize-image-using-express}
 
-Redimensionar uma imagem para um tamanho específico é um caso de uso comum. O [!DNL Assets view] permite redimensionar rapidamente a imagem para ajustá-la aos tamanhos de foto comuns, fornecendo novas resoluções pré-calculadas para tamanhos de foto específicos. Para redimensionar a imagem usando [!DNL Assets view], siga as etapas abaixo:
+Redimensionar uma imagem para um tamanho específico é um caso de uso comum. O [!DNL Assets view] permite redimensionar rapidamente a imagem para ajustá-la aos tamanhos de foto comuns, fornecendo novas resoluções pré-calculadas para tamanhos de foto específicos. Para redimensionar a imagem usando o [!DNL Assets view], siga as etapas abaixo:
 
 1. Selecione uma imagem e clique em **Editar**.
 2. Clique em **[!DNL Resize Image]** nas ações rápidas disponíveis no painel esquerdo.
-3. Selecione a plataforma de mídia social apropriada na **[!UICONTROL Redimensionar para]** e selecione o tamanho da imagem nas opções exibidas.
-4. Dimensione a imagem, se necessário, usando o **[!UICONTROL Escala de imagem]** campo.
+3. Selecione a plataforma de rede social apropriada na lista suspensa **[!UICONTROL Redimensionar para]** e escolha o tamanho da imagem nas opções exibidas.
+4. Dimensione a imagem, se necessário, usando o campo **[!UICONTROL Dimensionamento de imagem]**.
 5. Clique em **[!DNL Apply]** para aplicar as alterações.
    ![Edição de imagens com o Adobe Express](assets/adobe-express-resize-image.png)
 
-   A imagem editada está disponível para download. Você pode salvar o ativo editado como uma nova versão do mesmo ativo ou salvá-lo como um novo ativo.
-   ![Salvar imagem com o Adobe Express](assets/adobe-express-resize-save.png)
+   A imagem editada estará disponível para download. É possível salvar o ativo editado como uma nova versão do mesmo ativo ou como um novo ativo.
+   ![Salvamento de imagens com o Adobe Express](assets/adobe-express-resize-save.png)
 
-### Remover plano de fundo {#remove-background-using-express}
+### Remover fundo {#remove-background-using-express}
 
-Você pode remover o plano de fundo de uma imagem em algumas etapas simples, como mencionado abaixo:
+Você pode remover o fundo de uma imagem em algumas etapas simples, como mencionado abaixo:
 
 1. Selecione uma imagem e clique em **Editar**.
-2. Clique em **[!DNL Remove Background]** nas ações rápidas disponíveis no painel esquerdo. O Experience Manager Assets exibe a imagem sem plano de fundo.
+2. Clique em **[!DNL Remove Background]** nas ações rápidas disponíveis no painel esquerdo. O Experience Manager Assets exibirá a imagem sem o fundo.
 3. Clique em **[!DNL Apply]** para aplicar as alterações.
-   ![Salvar imagem com o Adobe Express](assets/adobe-express-remove-background.png)
+   ![Salvamento de imagens com o Adobe Express](assets/adobe-express-remove-background.png)
 
-   A imagem editada está disponível para download. Você pode salvar o ativo editado como uma nova versão do mesmo ativo ou salvá-lo como um novo ativo.
+   A imagem editada estará disponível para download. É possível salvar o ativo editado como uma nova versão do mesmo ativo ou como um novo ativo.
 
 ### Cortar imagem {#crop-image-using-express}
 
-Transformar uma imagem em um tamanho perfeito é fácil usando incorporado [!DNL Adobe Express] ações rápidas.
+É fácil transformar uma imagem em um tamanho perfeito usando as ações rápidas do [!DNL Adobe Express] incorporadas.
 
 1. Selecione uma imagem e clique em **Editar**.
 2. Clique em **[!DNL Crop Image]** nas ações rápidas disponíveis no painel esquerdo.
 3. Arraste as alças nos cantos da imagem para criar o corte desejado.
 4. Clique em **[!DNL Apply]**.
    ![Salvar imagem com o Adobe Express](assets/adobe-express-crop-image.png)
-A imagem cortada está disponível para download. Você pode salvar o ativo editado como uma nova versão do mesmo ativo ou salvá-lo como um novo ativo.
+A imagem cortada estará disponível para download. É possível salvar o ativo editado como uma nova versão do mesmo ativo ou como um novo ativo.
 
 ### Converter JPEG em PNG {#convert-jpeg-to-png-using-express}
 
-Você pode converter rapidamente uma imagem de JPEG em um formato PNG usando Adobe Express. Execute as seguintes etapas:
+É possível converter rapidamente uma imagem JPEG em PNG usando o Adobe Express. Execute as seguintes etapas:
 
 1. Selecione uma imagem e clique em **Editar**.
 2. Clique em **[!DNL JPEG to PNG]** nas ações rápidas disponíveis no painel esquerdo.
-   ![Converter em PNG com Adobe Express](assets/adobe-express-convert-image.png)
+   ![Conversão para PNG com o Adobe Express](assets/adobe-express-convert-image.png)
 3. Clique em **[!UICONTROL Baixar]**.
 
 ### Limitações {#limitations-adobe-express}
 
-* Resolução de imagem suportada: Mínimo - 50 pixels, Máximo - 6000 pixels por dimensão
+* Resolução de imagem compatível: mínimo de 50 pixels e máximo de 6000 pixels por dimensão
 
-* Tamanho máximo de arquivo aceito: 17 MB
+* Tamanho de arquivo máximo aceito: 17 MB
 
-## Editar imagens usando [!DNL Adobe Photoshop Express] {#edit-using-photoshop-express}
+## Edição de imagens usando o [!DNL Adobe Photoshop Express] {#edit-using-photoshop-express}
 
 <!--
 After editing an image, you can save the new image as a new version. Versioning helps you to revert to the original asset later, if needed. To edit an image, [open its preview](//help/navigate-assets-view.md#preview-assets) and click **[!UICONTROL Edit Image]** ![edit icon](assets/do-not-localize/edit-icon.png) from the rail on the right.
@@ -105,7 +105,7 @@ For more information about how Spot Healing works in Photoshop, see [retouching 
 
 ### Recortar e endireitar imagens {#crop-straighten-images-using-photoshop-express}
 
-Usando a opção cortar e endireitar, você pode fazer cortes básicos, girar a imagem, invertê-la na horizontal ou vertical e recortá-la em dimensões adequadas para sites de redes sociais populares.
+Usando a opção cortar e endireitar, é possível fazer cortes básicos, girar a imagem, invertê-la na horizontal ou na vertical e recortá-la em dimensões adequadas para sites de redes sociais populares.
 
 Para salvar suas edições, clique em **[!UICONTROL Cortar imagem]**. Após a edição, você pode salvar a nova imagem como uma versão.
 

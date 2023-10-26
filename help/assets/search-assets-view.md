@@ -6,7 +6,7 @@ exl-id: be9597a3-056c-436c-a09e-15a03567c85a
 source-git-commit: d663c258a83473ec8d3c68bc5683955003d889c7
 workflow-type: tm+mt
 source-wordcount: '924'
-ht-degree: 92%
+ht-degree: 93%
 
 ---
 
@@ -146,7 +146,7 @@ When userA is searching and userB add an asset that matches search results, will
 
 * [Assista a um vídeo sobre pesquisa de ativos na visualização de Ativos](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/using.html?lang=pt-BR)
 
-* Forneça feedback sobre o produto usando o [!UICONTROL Feedback] opção disponível na interface de exibição do Assets
+* Forneça feedback sobre o produto usando a opção [!UICONTROL Feedback] disponível na interface de visualização do Assets
 
 * Forneça feedback sobre a documentação usando as opções [!UICONTROL Editar esta página] ![editar a página](assets/do-not-localize/edit-page.png) ou [!UICONTROL Registrar um problema] ![criar um problema do GitHub](assets/do-not-localize/github-issue.png) disponíveis na barra lateral direita
 
