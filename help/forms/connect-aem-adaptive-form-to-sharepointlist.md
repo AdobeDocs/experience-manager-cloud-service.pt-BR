@@ -5,9 +5,9 @@ role: User, Developer
 keywords: conectar o Formulário adaptável do AEM à Lista do Microsoft SharePoint, conectar o Formulário adaptável à Lista do Microsoft SharePoint, integrar o Formulário adaptável à Lista do Microsoft SharePoint, integrar o Formulário adaptável à Lista do AEM, enviar dados de um Formulário adaptável à Lista do Microsoft, enviar fluxo de trabalho para a Lista do SharePoint SharePoint AEM SharePoint.
 hide: true
 hidefromToC: true
-source-git-commit: f79ed400ac2c1956dd7946cec2881f4e77d4bd41
+source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '550'
 ht-degree: 3%
 
 ---
@@ -86,16 +86,12 @@ Saiba como [usar o fluxo de trabalho do AEM](https://experienceleague.adobe.com/
 * [Configurar fontes de dados](/help/forms/configuring-submit-actions.md)
 * [Criar modelo de dados de formulário](/help/forms/create-form-data-models.md)
 * [Usar workflows AEM centrados na Forms - referência de etapa para automatizar processos de negócios](/help/forms/aem-forms-workflow-step-reference.md)
-
-## Informações adicionais
-
+* [Criar uma ação enviar personalizada para o Forms adaptável](/help/forms/custom-submit-action-form.md)
 * [Criar ou adicionar um formulário adaptável a uma página do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [Incorporar um formulário adaptável a uma página do AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)
 * [Criar, usar e personalizar temas em um Formulário adaptável](/help/forms/using-themes-in-core-components.md)
 
->[!MORELIKETHIS]
->
->* [Criar uma ação enviar personalizada para o Forms adaptável](/help/forms/custom-submit-action-form.md)
+
 
 
 

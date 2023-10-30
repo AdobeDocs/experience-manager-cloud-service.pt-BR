@@ -3,7 +3,7 @@ title: Como baixar e instalar o Forms Designer para criar modelos de Documento d
 description: Use o Forms Designer para criar modelos de formulário XDP e PDF que servem como modelo para um Documento de registro.
 keywords: Instalação do Designer, Instalação do Forms Designer, Requisitos para instalação do Forms Designer
 exl-id: d6f1cb21-c48b-406d-8d47-482d7a1b4cc3
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 7%
@@ -74,8 +74,13 @@ Para instalar o Designer, execute as seguintes etapas:
 * [Usar fontes personalizadas](/help/forms/use-custom-fonts.md)
 * [Criar um formulário adaptável independente baseado nos Componentes principais](/help/forms/creating-adaptive-form-core-components.md)
 * [Criar ou adicionar um formulário adaptável à página do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Usar o Forms Designer para criar modelos de Documento de registro (DoR) e fragmentos de formulário](/help/forms/use-forms-designer.md)
 
+
+<!--
 
 >[!MORELIKETHIS]
 >
->* [Usar o Forms Designer para criar modelos de Documento de registro (DoR) e fragmentos de formulário](/help/forms/use-forms-designer.md)
+>* [Use Forms Designer to create Document of Record (DoR) templates and form fragments](/help/forms/use-forms-designer.md)
+
+-->

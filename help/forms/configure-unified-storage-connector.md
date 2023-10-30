@@ -1,23 +1,23 @@
 ---
-title: Como configurar o Conector de armazenamento unificado para AEM Forms?
-description: Saiba como gerenciar o Conector de armazenamento unificado do AEM Forms. Use o Conector de armazenamento unificado para conectar o AEM Forms a armazenamentos de dados externos.
+title: Como configurar o Conector de armazenamento unificado (USC) para AEM Forms?
+description: Saiba como gerenciar o Conector de armazenamento unificado (USC) para AEM Forms. Use o Conector de armazenamento unificado (USC) para conectar o AEM Forms a armazenamentos de dados externos.
 exl-id: c93d0242-0c15-4d69-82a1-d6fcc7da4bae
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: c33f59cb56decf1e5bbbe0b5bb084e906585e702
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '641'
 ht-degree: 0%
 
 ---
 
-# Gerenciar o Conector de armazenamento unificado do AEM Forms {#manage-unified-storage-connector}
+# Gerenciar o Conector de armazenamento unificado (USC) para AEM Forms {#manage-unified-storage-connector}
 
-Você pode usar o Conector de armazenamento unificado para conectar o AEM Forms a armazenamentos de dados externos.
+Você pode usar o Conector de armazenamento unificado (USC) para conectar o AEM Forms a armazenamentos de dados externos.
 
-Por exemplo, é possível preencher valores para campos em um formulário adaptável e enviá-lo para um fluxo de trabalho do AEM. Você pode configurar ainda mais os fluxos de trabalho do AEM para armazenar dados em um armazenamento externo, como o servidor de armazenamento do Microsoft Azure. Use o Conector de armazenamento unificado para criar uma conexão entre os fluxos de trabalho do AEM e o armazenamento externo.
+Por exemplo, é possível preencher valores para campos em um formulário adaptável e enviá-lo para um fluxo de trabalho do AEM. Você pode configurar ainda mais os fluxos de trabalho do AEM para armazenar dados em um armazenamento externo, como o servidor de armazenamento do Microsoft Azure. Use o Conector de armazenamento unificado (USC) para criar uma conexão entre os fluxos de trabalho do AEM e o armazenamento externo.
 
 ## Conectar fluxos de trabalho do AEM a um servidor de armazenamento do Microsoft Azure {#connect-workflows-with-azure}
 
-Crie uma configuração de armazenamento do Azure e consulte essa configuração usando o Conector de armazenamento unificado. Em seguida, você pode configurar modelos de Fluxo de Trabalho do AEM para externalizar o armazenamento de dados e conectá-los a um servidor de armazenamento do Azure.
+Crie uma configuração de armazenamento do Azure e consulte essa configuração usando o Conector de armazenamento unificado (USC). Em seguida, você pode configurar modelos de Fluxo de Trabalho do AEM para externalizar o armazenamento de dados e conectá-los a um servidor de armazenamento do Azure.
 
 ### Criar [!DNL Azure] configuração de armazenamento {#create-azure-storage-configuration}
 
@@ -31,9 +31,9 @@ Execute as seguintes etapas para criar um [!DNL Azure] configuração de armazen
 1. Especifique o nome do [!DNL Azure] conta de armazenamento na **[!UICONTROL Conta de armazenamento do Azure]** campo.
 1. Especifique a chave para acessar a conta de armazenamento do Azure no **[!UICONTROL Chave de Acesso do Azure]** e toque em **[!UICONTROL Salvar]**.
 
-### Configurar o Conector de armazenamento unificado para fluxos de trabalho do AEM {#configure-unified-storage-connector-workflows}
+### Configurar o Conector de armazenamento unificado (USC) para fluxos de trabalho do AEM {#configure-unified-storage-connector-workflows}
 
-Execute as seguintes etapas para configurar o Conector de armazenamento unificado para fluxos de trabalho AEM:
+Execute as seguintes etapas para configurar o Unified Storage Connector (USC) para fluxos de trabalho de AEM:
 
 1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Forms]** > **[!UICONTROL Conector de armazenamento unificado]**.
 
