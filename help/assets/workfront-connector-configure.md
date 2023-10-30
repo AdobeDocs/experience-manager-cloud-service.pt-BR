@@ -4,10 +4,10 @@ description: Configurar o [!DNL Workfront for Experience Manager enhanced connec
 role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bb80414989aa5ceb624550d0ea41283c7d5da4c6
 workflow-type: tm+mt
-source-wordcount: '1767'
-ht-degree: 0%
+source-wordcount: '1772'
+ht-degree: 1%
 
 ---
 
@@ -44,7 +44,7 @@ Assinaturas de eventos são usadas para notificar o AEM sobre eventos que ocorre
 
 Para usar esses recursos, habilite as assinaturas de evento.
 
-* Editar [!UICONTROL Ferramentas do Workfront] configuração do Cloud Services que você criou na etapa 5 e selecione a variável [!UICONTROL Inscrições em eventos] guia.
+* Editar [!UICONTROL Ferramentas do Workfront] configuração do Cloud Service que você criou na etapa 5 e selecione a variável [!UICONTROL Inscrições em eventos] guia.
 * Selecione o [!UICONTROL Integração personalizada do Workfront] você criou na seção 6.
 * Clique em [!UICONTROL Ativar assinaturas de evento do Workfront].
 
@@ -80,6 +80,7 @@ O mapeamento de metadados entre Projetos Workfront e Pastas AEM é definido nos 
 
 Para configurar os mapeamentos, siga estas etapas:
 
+1. Adicionar `jcr:read` permissões para `/conf/global/settings/dam/adminui-extension/foldermetadataschema` para `wf-workfront-users` grupo.
 1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Assets]** > **[!UICONTROL Esquemas de metadados de pasta]**.
 1. Selecione o formulário de esquema de metadados da pasta que deseja editar e clique em Editar.
 1. Selecione o campo de formulário de esquema de metadados da pasta que deseja editar e selecione a guia Configurações no painel direito.
@@ -151,7 +152,7 @@ No editor de workflow, edite as propriedades de **[!UICONTROL Workfront - Defini
 
 ## Sincronização de comentários {#comments-sync}
 
-1. Entrada [!DNL Experience Manager], acesso **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Configuração de ferramentas do Workfront]**, selecione a configuração e selecione **[!UICONTROL Propriedades]**.
+1. Entrada [!DNL Experience Manager], acesso **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Configuração de ferramentas do Workfront]**, selecione a configuração e selecione **[!UICONTROL Propriedades]**.
 
    ![sincronização de comentários](/help/assets/assets/comments-sync1.png)
 
@@ -171,7 +172,7 @@ Para testar a sincronização de comentários do Workfront com o AEM, siga estas
 
 Para manter o histórico de versões de ativos no AEM, configure o controle de versão de ativos no AEM.
 
-1. No Experience Manager, acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Configuração de ferramentas do Workfront]** e abra a variável **[!UICONTROL Avançado]** guia.
+1. No Experience Manager, acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Configuração de ferramentas do Workfront]** e abra a variável **[!UICONTROL Avançado]** guia.
 
 1. Selecionar opção **[!UICONTROL Armazenar ativos com o mesmo nome que as versões do ativo existente]**. Quando marcada, essa opção permite armazenar ativos carregados com o mesmo nome e no mesmo local que a versão do ativo existente. Se permanecer desmarcada, um novo ativo será criado com um nome diferente (por exemplo, `asset-name.pdf` e `asset-name-1.pdf`).
 
@@ -193,7 +194,7 @@ No editor de workflow do Experience Manager, edite as propriedades da variável 
 
 ## Publicar ativos automaticamente {#auto-publish-assets}
 
-1. No Experience Manager, acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Configuração de ferramentas do Workfront]** e abra a variável **[!UICONTROL Avançado]** guia.
+1. No Experience Manager, acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Configuração de ferramentas do Workfront]** e abra a variável **[!UICONTROL Avançado]** guia.
 
 1. Selecionar **[!UICONTROL Publicar ativos automaticamente quando enviados do Workfront]**. Essa opção permite a publicação automática de ativos quando eles são enviados do Workfront para o AEM. Esse recurso pode ser ativado condicionalmente especificando um campo de formulário personalizado do Workfront e o valor para o qual ele deve ser definido. Sempre que um documento for enviado ao AEM, se ele atender à condição, o ativo será publicado automaticamente.
 
