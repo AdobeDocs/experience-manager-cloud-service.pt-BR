@@ -4,13 +4,15 @@ description: Saiba como solicitar um relatório de erros para o Dynamic Media en
 contentOwner: Rick Brough
 feature: Asset Management
 role: User
-source-git-commit: 7ce15cc755c9db589001d543c16312096d88bcf0
+hide: true
+hidefromtoc: true
+exl-id: 2488f813-df15-4dbb-8747-f827ee5925e1
+source-git-commit: aa7429d9ca9f67979303c0b85c9dbd5b8c74c05c
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 4%
 
 ---
-
 
 # Solicitar um relatório de erros para URLs de entrega do Dynamic Media que falharam
 
@@ -31,7 +33,3 @@ Você pode solicitar um relatório de erros uma vez por mês para uma determinad
    Se você não souber o nome da empresa, consulte [Configuração do Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html?lang=pt-BR#configuring-dynamic-media-cloud-services) página em **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Configuração do Dynamic Media]**. Na página Navegador de configuração do Dynamic Media, clique em **[!UICONTROL global]**, selecione o *[Dynamic_Media_folder_icon]* e selecione **[!UICONTROL Editar]**. Você deve ter direitos de Administrador no AEM para acessar a página Configuração do Dynamic Media.
 
    ![Acessando a página Configuração do Dynamic Media.](/help/assets/dynamic-media/assets/reporting-accessdmconfig.png)
-
-
-
-
