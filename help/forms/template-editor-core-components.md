@@ -3,7 +3,7 @@ title: Como criar um modelo de formulário adaptável com base no componente pri
 description: Crie modelos de Formulário adaptável com base no componente principal para definir a estrutura básica e o conteúdo inicial usando o Editor de modelos.
 Keywords: create adaptive form template, create adaptive form template based on core components, Use template to create adpative form.
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
-source-git-commit: 25a1504e2655e414f32dfea20e416889cea06dcc
+source-git-commit: f562d082520037fa1b15272c763d35e93dab137f
 workflow-type: tm+mt
 source-wordcount: '1991'
 ht-degree: 1%
@@ -293,7 +293,6 @@ You can also save an Adaptive Form as a template for future use. To save a Adapt
 ## Consulte também {#see-also}
 
 {{see-also}}
-
 * [Criar estilo ou temas para seus formulários](using-themes-in-core-components.md)
 * [Criar um formulário adaptável (componentes principais)](/help/forms/creating-adaptive-form-core-components.md)
 
