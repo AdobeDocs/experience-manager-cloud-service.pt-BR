@@ -2,10 +2,10 @@
 title: Criar e organizar páginas
 description: Saiba como organizar seu site criando e gerenciando páginas com AEM.
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
+source-git-commit: b658f303d25cca958c08a95ead12fa3b987bcb3b
 workflow-type: tm+mt
-source-wordcount: '2543'
-ht-degree: 99%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -370,18 +370,15 @@ O AEM oferece a funcionalidade de atualizar todos os links internos que se refer
 
 #### Ações assíncronas {#asynchronous-actions}
 
-Normalmente, uma ação de mover ou renomear página é executada imediatamente. Essa ação é considerada um processamento síncrono e outras ações na interface do usuário são bloqueadas até que a ação seja concluída.
+As ações de movimentação de página são sempre processadas de forma assíncrona, permitindo que o usuário continue a criação na interface do usuário desimpedida.
 
-No entanto, se o número de páginas afetadas estiver acima de um limite definido, a ação será processada de modo assíncrono, permitindo que o usuário continue o processo de criação na interface sem ser impedido pela ação de mover ou renomear a página.
+* O usuário deve definir quando a operação assíncrona deve ser executada
+   * **Agora** a execução do trabalho assíncrono começa imediatamente.
+   * **Mais tarde** permite que o usuário defina quando o trabalho assíncrono será iniciado.
 
-* Ao clicar em **Mover** na última etapa acima, o AEM verifica o limite configurado.
-* Se o número de páginas afetadas estiver abaixo do limite, ele executará uma operação síncrona.
-* Se o número de páginas afetadas estiver acima do limite, ele executará uma operação assíncrona.
-   * O usuário deve definir quando a operação assíncrona deve ser executada
-      * **Agora** a execução do trabalho assíncrono começa imediatamente.
-      * **Mais tarde** permite que o usuário defina quando o trabalho assíncrono será iniciado.
-
-        ![Mover página assíncrona](/help/sites-cloud/authoring/assets/asynchronous-page-move.png)
+<!--
+  ![Asynchronous page move](assets/asynchronous-page-move.png)
+-->
 
 O status de trabalhos assíncronos pode ser verificado no painel [**Status de trabalhos assíncronos** ](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) em **Navegação global** -> **Ferramentas** -> **Operações** -> **Trabalhos**
 

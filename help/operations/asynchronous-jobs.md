@@ -2,10 +2,10 @@
 title: Trabalhos assíncronos
 description: O Adobe Experience Manager otimiza o desempenho ao concluir de forma assíncrona algumas tarefas que consomem muitos recursos como operações em segundo plano.
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
-source-git-commit: 26ca2addb14f62588035323ce886ae890919b759
+source-git-commit: b658f303d25cca958c08a95ead12fa3b987bcb3b
 workflow-type: tm+mt
-source-wordcount: '971'
-ht-degree: 70%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +19,6 @@ Essas operações incluem:
 * Movimentação de muitos ativos ou ativos com muitas referências
 * Exportação/importação de metadados de ativos em massa
 * Busca de ativos acima do limite definido a partir de uma implantação remota do Experience Manager
-* Mover páginas
 * Implantação de Live Copy
 
 Você pode visualizar o status de trabalhos assíncronos na **[!UICONTROL Operações em segundo plano]** painel em **Navegação global** -> **Ferramentas** -> **Geral** -> **Tarefas**.
@@ -124,20 +123,6 @@ Se o número de ativos/pastas ou referências que serão movidos exceder o limit
 1. Marque a opção **Habilitar notificação por email** para receber notificações por email sobre o status do trabalho. Por exemplo, sucesso, falha.
 1. Salve as alterações.
 
-### Configurar operações assíncronas de movimentação de página {#configuring-asynchronous-page-move-operations}
-
-Se o número de referências às páginas que serão movidas exceder o número limite, a operação de movimentação será executada de modo assíncrono.
-
-1. Faça logon no console da Web AEM do AEM do SDK do em `https://<host>:<port>/system/console` como o usuário administrador.
-1. Navegue até **OSGi** > **Configuração**
-1. No console da Web, abra a **[!UICONTROL Configuração do processamento assíncrono da operação de movimentação de página.]**
-1. No campo **[!UICONTROL Limite de referências]**, especifique o número de referências para o processamento assíncrono de operações de movimentação de página.
-
-   ![Limite da movimentação da página](assets/async-page-move.png)
-
-1. Marque a opção **Habilitar notificação por email** para receber notificações por email sobre o status do trabalho. Por exemplo, sucesso, falha.
-1. Salve as alterações.
-
 ### Configurar operações assíncronas do MSM {#configuring-asynchronous-msm-operations}
 
 1. Faça logon no console da Web AEM do AEM do SDK do em `https://<host>:<port>/system/console` como o usuário administrador.
@@ -154,4 +139,3 @@ Se o número de referências às páginas que serão movidas exceder o número l
 >* [Criar e organizar páginas](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)
 >* [Importar e exportar metadados de ativos em massa](/help/assets/metadata-import-export.md).
 >* [Usar ativos conectados para compartilhar ativos DAM de implantações remotas](/help/assets/use-assets-across-connected-assets-instances.md).
-
