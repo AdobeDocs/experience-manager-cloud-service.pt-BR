@@ -4,10 +4,10 @@ description: Saiba como usar os modelos de fragmento de conteúdo do AEM para cr
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: e507b409e4d2382b1eac54b11a9ad68fd965db4b
+source-git-commit: 07f61a3f6a794e18bc2e02e966392cdce3103a81
 workflow-type: tm+mt
-source-wordcount: '993'
-ht-degree: 100%
+source-wordcount: '1009'
+ht-degree: 98%
 
 ---
 
@@ -98,6 +98,7 @@ Siga as mesmas etapas descritas acima para acrescentar esses campos adicionais. 
 
    * **Renderizar como:** **Referência de conteúdo** - Ao criar uma aventura, esse campo aponta para o ativo de imagem que representa essa viagem.
    * **Rótulo do campo:** `Image` - O rótulo que é exibido para esse campo ao criar uma aventura.
+   * **Caminho raiz:** `/content/dam/aem-demo-assets/en` - Especifica um caminho de ponto inicial ao procurar ativos com o Seletor de ativos.
 
 1. Após adicionar os campos necessários para o modelo de fragmento de conteúdo, clique em **Salvar** na parte superior direita da janela.
 
