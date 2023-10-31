@@ -2,17 +2,17 @@
 title: Traduzir conteúdo headless
 description: Use o conector de tradução para traduzir conteúdo headless.
 exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
-workflow-type: ht
+source-git-commit: f4e28d89023e8f326e6816ebd8168e1e31e772ce
+workflow-type: tm+mt
 source-wordcount: '2175'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
 
 # Traduzir conteúdo headless {#translate-content}
 
-Use o conector de tradução para traduzir conteúdo headless.
+Use a integração de tradução para traduzir o conteúdo headless.
 
 ## A história até agora {#story-so-far}
 
@@ -232,7 +232,7 @@ A estrutura de tradução do AEM recebe as traduções do conector de tradução
 
 Se o seu serviço de tradução fornecer tradução humana, o processo de revisão oferecerá mais opções. Por exemplo, as traduções retornam ao projeto com o status de **Rascunho** e devem ser revisadas e aprovadas ou rejeitadas manualmente.
 
-A tradução humana está fora do escopo dessa jornada de localização. Consulte a seção [Recursos Adicionais](#additional-resources) no final deste documento para obter mais informações sobre este tópico. No entanto, além das opções de aprovação adicionais, o fluxo de trabalho para traduções humanas é o mesmo das traduções automáticas, conforme descrito nesta jornada.
+A tradução humana está fora do escopo dessa jornada de localização. Consulte a seção [Recursos adicionais](#additional-resources) no final deste documento para obter mais informações sobre este tópico. No entanto, além das opções de aprovação adicionais, o fluxo de trabalho para traduções humanas é o mesmo das traduções automáticas, conforme descrito nesta jornada.
 
 ## O que vem a seguir {#what-is-next}
 

@@ -6,8 +6,8 @@ Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites p
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
 source-git-commit: 4cebcd58a0d6fd429cde3d739095c131cc76d9e5
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3212'
+ht-degree: 1%
 
 ---
 

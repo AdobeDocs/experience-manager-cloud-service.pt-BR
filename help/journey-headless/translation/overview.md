@@ -2,10 +2,10 @@
 title: Jornada de tradução headless do AEM
 description: Comece aqui uma jornada guiada pela tradução de seu conteúdo headless usando as eficientes ferramentas de tradução do AEM.
 exl-id: b677f691-5257-43c3-a4b9-c34932577b31
-source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
+source-git-commit: f4e28d89023e8f326e6816ebd8168e1e31e772ce
 workflow-type: tm+mt
 source-wordcount: '1045'
-ht-degree: 97%
+ht-degree: 95%
 
 ---
 
@@ -66,8 +66,8 @@ Embora seja possível ir diretamente para uma parte específica da jornada, muit
 | 0 | Jornada de tradução headless do AEM | Este documento |
 | 1 | [Saiba mais sobre conteúdo headless e como traduzi-lo no AEM](learn-about.md) | Aprenda conceitos headless, como eles são mapeados no AEM e a teoria de tradução do AEM. |
 | 2 | [Introdução à tradução do AEM headless](getting-started.md) | Saiba como organizar seu conteúdo headless e como funcionam as ferramentas de tradução do AEM. |
-| 3 | [Configurar o conector de tradução](configure-connector.md) | Saiba como conectar o AEM a um serviço de tradução. |
-| 4 | [Traduzir conteúdo](translate-content.md) | Use o conector e as regras de tradução para traduzir o seu conteúdo headless. |
+| 3 | [Configurar a integração da tradução](configure-connector.md) | Saiba como conectar o AEM a um serviço de tradução. |
+| 4 | [Traduzir conteúdo](translate-content.md) | Use a integração e as regras de tradução para traduzir o conteúdo headless. |
 | 5 | [Publicar conteúdo traduzido](publish-content.md) | Saiba como publicar seu conteúdo traduzido e atualizar a tradução quando o conteúdo subjacente for atualizado. |
 
 ## O que vem a seguir {#what-is-next}

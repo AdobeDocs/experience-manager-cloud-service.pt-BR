@@ -4,8 +4,8 @@ description: O Adobe Experience Manager otimiza o desempenho ao concluir de form
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
 source-git-commit: b658f303d25cca958c08a95ead12fa3b987bcb3b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '865'
+ht-degree: 70%
 
 ---
 
