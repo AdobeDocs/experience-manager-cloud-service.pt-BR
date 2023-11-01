@@ -2,10 +2,10 @@
 title: Gerenciamento de ambientes
 description: Saiba mais sobre os tipos de ambientes que você pode criar e como criá-los para o seu projeto do Cloud Manager.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: e636a765cdc1be7cb0d385089e8ccc75b798844a
+source-git-commit: 532f3ac9450d34f3e2a168c04695bafde5a44c9f
 workflow-type: tm+mt
-source-wordcount: '2558'
-ht-degree: 88%
+source-wordcount: '2601'
+ht-degree: 85%
 
 ---
 
@@ -36,6 +36,8 @@ Os recursos de ambientes individuais dependem das soluções ativadas no [progra
 >Ambientes de produção e de preparo são criados apenas em pares. Não é possível criar apenas um ambiente de preparo ou de produção.
 
 ## Adição de um ambiente {#adding-environments}
+
+Para adicionar ou editar um ambiente, o usuário deve ser membro do **Proprietário da empresa** função.
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
@@ -234,7 +236,7 @@ Essa opção também está disponível selecionando a guia **Ambientes** do prog
 
 ![Opção Atualizar na guia Ambientes](assets/environ-update3.png)
 
-Um usuário com a função **Gerente de implantação** pode usar essa opção para atualizar o pipeline associado a esse ambiente para a versão mais recente do AEM.
+Um usuário com a variável **Gerente de implantação** ou **Proprietário da empresa** A função pode usar essa opção para atualizar o pipeline associado a esse ambiente para a versão mais recente do AEM.
 
 Quando a versão do pipeline é atualizada para a versão mais recente do AEM disponível publicamente, o usuário é solicitado a executar o pipeline associado para implantar a nova versão no ambiente.
 
@@ -248,7 +250,7 @@ O comportamento da opção **Atualizar** varia dependendo da configuração e do
 
 ## Exclusão de ambientes de desenvolvimento {#deleting-environment}
 
-O usuário com a permissão necessária pode excluir um ambiente de desenvolvimento.
+Um usuário com a variável **Gerente de implantação** ou **Proprietário da empresa** a função pode excluir um ambiente de desenvolvimento.
 
 Na tela **Visão geral** do programa no cartão **Ambientes**, clique no botão de reticências do ambiente de desenvolvimento que deseja excluir.
 
@@ -287,7 +289,7 @@ Essa opção também está disponível na guia **Ambiente** da janela **Visão g
 
 ## Logon local {#login-locally}
 
-Selecione **Fazer logon local** no menu de reticências do ambiente no cartão **Ambientes** para fazer logon localmente no Adobe Experience Manager.
+Selecionar **Logon local** no menu de reticências do ambiente no **Ambientes** para fazer logon localmente no Adobe Experience Manager.
 
 ![Logon local](assets/environ-login-locally.png)
 
@@ -300,6 +302,8 @@ Além disso, é possível fazer logon localmente na guia **Ambientes** da págin
 Os nomes de domínio personalizados são suportados nos programas do Sites do Cloud Manager para serviços de publicação e visualização. Cada ambiente do Cloud Manager pode hospedar no máximo 250 domínios personalizados.
 
 Para configurar nomes de domínio personalizados, navegue até a guia **Ambientes** e clique em um ambiente para exibir os detalhes.
+
+O usuário deve ter uma função de **Proprietário da empresa** ou **Gerente de implantação** para adicionar um nome de domínio personalizado no Cloud Manager
 
 ![Detalhes do ambiente](assets/domain-names.png)
 
