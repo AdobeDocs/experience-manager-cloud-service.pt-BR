@@ -2,9 +2,9 @@
 title: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 6e82bbcc1b83fa9216831f6f746665507a46eec7
+source-git-commit: 01f148dbe885c96b27f88a88e7020a1008f4c1d3
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '595'
 ht-degree: 23%
 
 ---
@@ -71,7 +71,7 @@ A Ativação de recursos 2023.11.0 fornecerá o conjunto completo de recursos pa
 
 ### Problemas conhecidos {#known-issues-14029}
 
-Nenhum.
+* ASSETS-31015: não é possível carregar arquivos para Assets com extensões de arquivo desconhecidas.
 
 ### Tecnologias integradas {#embedded-tech-14029}
 
