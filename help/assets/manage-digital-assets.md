@@ -6,9 +6,9 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 2f3845495b545f88a1bc5a5feef1a6312f679a26
+source-git-commit: 22cfb23784544947b6a38be0453959913c9e8ccd
 workflow-type: tm+mt
-source-wordcount: '4501'
+source-wordcount: '4519'
 ht-degree: 11%
 
 ---
@@ -266,6 +266,14 @@ As outras propriedades e informações de metadados são retidas. Uma cópia par
    >Se você selecionar uma representação no painel **[!UICONTROL Representações]**, a barra de ferramentas alterará o contexto e exibirá somente as ações relevantes para a representação. As opções, como o ícone Fazer upload da representação, não são exibidas. Para exibir essas opções na barra de ferramentas, navegue até a página de detalhes do ativo.
 
    É possível configurar as dimensões da representação que deseja exibir na página de detalhes de um ativo de imagem ou vídeo. Com base nas dimensões especificadas, o Assets exibe a representação com as dimensões exatas ou mais próximas.
+
+   Não é possível criar representações com os seguintes prefixos, pois eles são internos ao Adobe:
+
+   * cq5
+
+   * cqdam
+
+   * cq5dam
 
    Para configurar as dimensões de representação de uma imagem no nível de detalhes do ativo, sobreponha o nó `renditionpicker` (`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`) e configure o valor da propriedade largura. Configure o **[!UICONTROL tamanho (Longo) em KB]** da propriedade no lugar da largura para personalizar a representação na página Detalhes do ativo com base no tamanho da imagem. Para personalização baseada em tamanho, a propriedade `preferOriginal` atribui preferência ao original se o tamanho da representação correspondente for maior que o original.
 
