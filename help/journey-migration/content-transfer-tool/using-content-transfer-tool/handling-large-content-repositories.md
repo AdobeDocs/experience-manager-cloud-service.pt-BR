@@ -2,9 +2,9 @@
 title: Lidar com grandes repositórios de conteúdo
 description: Esta seção descreve a manipulação de grandes repositórios de conteúdo
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 858e10f99e2015a1488bb9e1d0990a553c5f6d04
 workflow-type: tm+mt
-source-wordcount: '1813'
+source-wordcount: '1835'
 ht-degree: 8%
 
 ---
@@ -191,6 +191,9 @@ Se houver um problema com o AzCopy, a extração falhará imediatamente e os log
 
 Todos os blobs copiados antes do erro são ignorados automaticamente pelo AzCopy nas execuções subsequentes e não precisam ser copiados novamente.
 
+>[!TIP]
+>Uma assimilação agora pode ser agendada para iniciar automaticamente imediatamente após uma extração ser bem-sucedida. Consulte [Assimilar conteúdo no Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) para obter mais informações.
+
 #### Para Armazenamento de Dados de Arquivo {#file-data-store-extract}
 
 Quando o AzCopy estiver em execução para o arquivo de origem dataStore, você deverá ver mensagens como essas nos registros, indicando que as pastas estão sendo processadas:
@@ -198,8 +201,7 @@ Quando o AzCopy estiver em execução para o arquivo de origem dataStore, você 
 
 ### 5. Assimilar com AzCopy {#ingesting-azcopy}
 
-Consulte [Assimilar conteúdo no Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
-para obter informações gerais sobre como assimilar conteúdo no destino a partir do Cloud Acceleration Manager (CAM), incluindo instruções sobre como usar ou não o AzCopy (pré-cópia) na caixa de diálogo &quot;Nova assimilação&quot;.
+Consulte [Assimilar conteúdo no Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) para obter informações gerais sobre como assimilar conteúdo no destino a partir do Cloud Acceleration Manager (CAM), incluindo instruções sobre como usar ou não o AzCopy (pré-cópia) na caixa de diálogo &quot;Nova assimilação&quot;.
 
 Para aproveitar o AzCopy durante a assimilação, o Adobe exige que você esteja em uma versão as a Cloud Service do AEM que seja pelo menos a versão 2021.6.5561.
 
