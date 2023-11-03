@@ -13,7 +13,7 @@ ht-degree: 17%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_prereqs"
->title="Considerações importantes sobre o uso do Content Transfer Tool"
+>title="Considerações importantes sobre o uso da ferramenta de transferência de conteúdo"
 >abstract="Revise considerações importantes para usar a Ferramenta de Transferência de Conteúdo, incluindo versões do Java™ e AEM, tipos compatíveis de armazenamento de dados, considerações sobre grupos de usuários e mais."
 additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=pt-BR" text="Considerações importantes sobre o uso da ferramenta Transferência de conteúdo"
 additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=pt-BR#best-practices" text="Práticas recomendadas e diretrizes"

@@ -6,7 +6,7 @@ exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 source-git-commit: 127b79d766a4dfc33a2ed6016e191e771206d791
 workflow-type: tm+mt
 source-wordcount: '1033'
-ht-degree: 24%
+ht-degree: 25%
 
 ---
 
@@ -40,7 +40,7 @@ Consulte [Gerenciamento de listas de permissões de IP](/help/implementing/cloud
 >
 >Somente as solicitações dos IPs permitidos são atendidas pelo CDN gerenciado pelo AEM. Se você apontar seu próprio CDN para o CDN gerenciado por AEM, verifique se os IPs do seu CDN estão incluídos no incluo na lista de permissões.
 
-## O CDN do cliente aponta para o CDN gerenciado pelo AEM {#point-to-point-CDN}
+## CDN do cliente apontando para a CDN gerenciada pelo AEM {#point-to-point-CDN}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"

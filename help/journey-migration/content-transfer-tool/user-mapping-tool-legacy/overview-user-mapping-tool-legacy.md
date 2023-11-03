@@ -1,17 +1,17 @@
 ---
-title: Visão geral da ferramenta Mapeamento de usuários (herdado)
-description: Visão geral da ferramenta Mapeamento de usuários (herdado)
+title: Visão geral da ferramenta de mapeamento de usuários (herdada)
+description: Visão geral da ferramenta de mapeamento de usuários (herdada)
 exl-id: 17ed5721-093e-4491-b8c4-3dadcaa6598b
 hide: true
 hidefromtoc: true
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '305'
-ht-degree: 22%
+ht-degree: 28%
 
 ---
 
-# Visão geral da ferramenta Mapeamento de usuários (herdado) {#overview-user-mapping-tool}
+# Visão geral da ferramenta de mapeamento de usuários (herdada) {#overview-user-mapping-tool}
 
 >[!INFO]
 >

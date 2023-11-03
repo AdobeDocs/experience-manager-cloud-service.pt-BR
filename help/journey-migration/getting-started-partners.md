@@ -5,11 +5,11 @@ exl-id: 9d5a72b8-06af-4b82-ab20-e65aea7903b3
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2120'
-ht-degree: 21%
+ht-degree: 22%
 
 ---
 
-# Guia de migração para o Adobe Experience Manager as a Cloud Service para parceiros {#Overview}
+# Manual de migração do Adobe Experience Manager as a Cloud Service para parceiros {#Overview}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_migration_overview"
