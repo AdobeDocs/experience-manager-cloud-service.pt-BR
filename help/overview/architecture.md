@@ -2,9 +2,9 @@
 title: Introdução à arquitetura do Adobe Experience Manager as a Cloud Service
 description: Introdução à arquitetura do Adobe Experience Manager as a Cloud Service.
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: 689b672e75c4e4d2fa8f716d93c65418f332a266
+source-git-commit: b610de53d1bd1b120a2642336aac1713444bfd3e
 workflow-type: tm+mt
-source-wordcount: '2656'
+source-wordcount: '2665'
 ht-degree: 10%
 
 ---
@@ -66,7 +66,7 @@ Existem quatro tipos de [ambiente](/help/implementing/cloud-manager/manage-envir
 
 Um programa AEM pode ser configurado com o [Edge Delivery Services](/help/edge/overview.md) também.
 
-Depois de configurado, o AEM pode fazer referência aos repositórios de código do GitHub usados para criar as experiências com o Edge Delivery Services. Como resultado, novas opções de configuração ficam disponíveis para as experiências associadas. Isso inclui a configuração da CDN gerenciada por Adobe, o acesso amd a métricas de licenciamento ou relatórios de SLA.
+Depois de configurado, o AEM pode fazer referência aos repositórios de código do GitHub usados para criar as experiências com o Edge Delivery Services. Como resultado, novas opções de configuração ficam disponíveis para as experiências associadas. Isso inclui a configuração da CDN gerenciada por Adobe e o acesso a métricas de licenciamento ou relatórios de SLA.
 
 ## Arquitetura do serviço {#service-architecture}
 
@@ -198,7 +198,7 @@ Em ambos os casos, o mesmo conjunto de testes automatizados é executado. Ele é
 
 * contribuição da Adobe para garantir a integridade do produto
 * testes contribuídos pelo cliente
-   * Testes funcionais: http
+   * Testes funcionais: por meio de solicitações http para o nível de autor ou publicação do AEM
    * Testes de interface do usuário: com base na tecnologia Selenium ou Cypress
 
 Esses testes automatizados são executados no ambiente de preparo, por isso é importante manter o conteúdo do ambiente de preparo o mais próximo possível do conteúdo na instância de produção.
