@@ -2,10 +2,10 @@
 title: Regiões de publicação adicionais
 description: Saiba como o AEM as a Cloud Service permite regiões de publicação adicionais para aumentar a disponibilidade e reduzir a latência.
 exl-id: b9ac3c6a-eb8b-461d-8f1d-a0356046a3f9
-source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
-workflow-type: ht
-source-wordcount: '542'
-ht-degree: 100%
+source-git-commit: 4f11d1958cbfb252f29a7815af8800426d945ebd
+workflow-type: tm+mt
+source-wordcount: '606'
+ht-degree: 89%
 
 ---
 
@@ -35,6 +35,11 @@ Veja a seguir alguns casos de uso em que as organizações podem se beneficiar d
 Depois de licenciar uma região de publicação adicional, as regiões são configuradas usando o Cloud Manager. Consulte a [Documentação do Cloud Manager](/help/implementing/cloud-manager/manage-environments.md#multiple-regions) para obter instruções detalhadas.
 
 Regiões de publicação adicionais são aplicadas a ambientes de preparo e produção, mas não a ambientes de RDE ou desenvolvimento.
+
+Caso uma região se torne indisponível, os clientes não precisarão gerenciar o roteamento de tráfego para regiões disponíveis, pois ele é gerenciado pela CDN do Adobe.
+
+Conforme descrito abaixo na seção Considerações avançadas sobre rede, é recomendável que os clientes que usam rede avançada a configurem para cada região de publicação adicional para que a disponibilidade seja mantida se uma região ficar indisponível.
+
 
 ## Considerações sobre redes avançadas {#advanced-networking-considerations}
 

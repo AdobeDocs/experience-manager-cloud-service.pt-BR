@@ -2,9 +2,9 @@
 title: Mapeamento de usuários e migração principal
 description: Visão geral do mapeamento de usuários e da migração principal no AEM as a Cloud Service.
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 2fdfb65543fa2942e809aa5d379f4000e40bd517
+source-git-commit: 2f5eeb0333cee13b12edefd0f95541a891e30960
 workflow-type: tm+mt
-source-wordcount: '952'
+source-wordcount: '1003'
 ht-degree: 9%
 
 ---
@@ -27,7 +27,7 @@ Uma mudança importante do AEM as a Cloud Service é o uso totalmente integrado 
 
 ## Detalhes da migração principal {#principal-migration-detail}
 
-A ferramenta Transferência de conteúdo e o Cloud Acceleration Manager migrarão para o sistema de nuvem quaisquer entidades principais associadas ao conteúdo que está sendo migrado.  A ferramenta Transferência de conteúdo faz isso copiando todas as entidades principais do sistema AEM de origem durante o processo de extração.  A assimilação de CAM seleciona e migra somente as entidades principais associadas ao conteúdo que está sendo assimilado.
+A ferramenta Transferência de conteúdo e o Cloud Acceleration Manager migrarão para o sistema de nuvem quaisquer entidades principais associadas ao conteúdo que está sendo migrado.  A ferramenta Transferência de conteúdo faz isso copiando todas as entidades principais do sistema AEM de origem durante o processo de extração.  A assimilação de CAM seleciona e migra somente as entidades principais associadas ao conteúdo que está sendo assimilado. Se um principal estiver em uma política de ACL ou CUG de conteúdo migrado, esse principal e todos os grupos em que estiver e seus grupos ancestrais (principais) serão migrados. Além disso, se um principal no conteúdo for um grupo, todos os seus grupos descendentes (filhos) e usuários também serão migrados.
 
 ## Detalhes de Mapeamento de Usuário {#user-mapping-detail}
 
