@@ -3,10 +3,10 @@ title: Notas de versão do Cloud Manager 2023.10.0 no Adobe Experience Manager a
 description: Estas são as notas de versão do Cloud Manager 2023.10.0 no AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: b760b3a65d89b0b4f924379fc460015a58e2ed3e
+source-git-commit: 36f7ece65c1312ff3ac463cd8c6abb2882b99043
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 19%
+source-wordcount: '599'
+ht-degree: 29%
 
 ---
 
@@ -31,9 +31,9 @@ A data de lançamento do Cloud Manager versão 2023.10.0 no AEM as a Cloud Servi
    * Essa atualização será implementada em fases.
 * Com a versão de outubro de 2023 do Cloud Manager, as versões do Java estão sendo atualizadas por meio de uma implantação em fases.
    * As versões secundárias do Java 8 e 11 e do Maven foram atualizadas e serão lançadas em fases nos próximos 2 meses. A nova versão tem várias correções de segurança e bugs. As novas versões são:
-   * *Maven: 3.8.8*
-   * *Versão do Java 8: /usr/lib/jvm/jdk1.8.0_371*
-   * *Versão do Java 11: /usr/lib/jvm/jdk-11.0.20*
+      * **Maven:** `3.8.8`
+      * **Versão do Java 8:** `/usr/lib/jvm/jdk1.8.0_371`
+      * **Versão do Java 11:** `/usr/lib/jvm/jdk-11.0.20`
    * [Consulte a supervisão do OpenJDK](https://openjdk.org/groups/vulnerability/advisories/) para obter detalhes sobre a segurança e correções de erros nessas atualizações do JDK.
 
 ## Programa de adoção antecipada {#early-adoption}
@@ -66,3 +66,15 @@ Se você estiver interessado em testar esse novo recurso e compartilhar seu feed
 O painel usa o Google Lighthouse, uma ferramenta de código aberto e automatizada para melhorar a qualidade dos seus aplicativos Web. Você pode executá-la em qualquer página da Web, pública ou que exija autenticação. Ele tem auditorias de desempenho, acessibilidade, aplicativos web progressivos, SEO e muito mais.
 
 Interessado em testar o novo painel? Envie um email para `aem-lighthouse-pilot@adobe.com` do email associado à sua Adobe ID e podemos começar.
+
+## Problemas conhecidos {#known-issues}
+
+Há um erro conhecido impedindo [configuração de pipelines de implantação](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md##config-deployment-pipeline) de ser encaminhado para produção.
+
+Se a variável **Pausar antes de implantar na produção** é necessária uma opção para um pipeline de implantação de configuração. Veja a seguir a solução alternativa sugerida até que o erro seja resolvido.
+
+1. Executar o pipeline.
+1. Teste o código no ambiente de preparo.
+1. Quando a implantação e a aprovação estiverem disponíveis, clique em **Rejeitar**.
+1. Edite o pipeline para desativar o **Pausar antes de implantar na produção** opção.
+1. Execute o pipeline novamente. Ele será executado novamente no preparo e depois na produção.
