@@ -2,10 +2,10 @@
 title: Noções básicas sobre solicitações de conteúdo Cloud Service
 description: Se você adquiriu licenças de solicitação de conteúdo do Adobe, saiba mais sobre os tipos de solicitações de conteúdo que o Adobe Experience Cloud as a Service mede e as variações com as ferramentas de relatório de análise de uma organização.
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: 25a4a6b9ae09cb71f50317990af1718db1e14355
+source-git-commit: dc01da4c85b37f21deb169b941c0cf2a958298b8
 workflow-type: tm+mt
-source-wordcount: '1171'
-ht-degree: 12%
+source-wordcount: '1164'
+ht-degree: 9%
 
 ---
 
@@ -25,7 +25,7 @@ As solicitações de conteúdo podem ter variações entre as ferramentas de rel
 | Ferramentas de segurança e monitoramento de terceiros | Ferramentas de verificação para monitoramento e segurança podem gerar solicitações de conteúdo para o AEM que não são rastreadas nos relatórios de Analytics. |
 | Acesso à API | O acesso programático a páginas ou APIs do Adobe Experience Manager pode gerar solicitações de conteúdo para AEM que não são rastreadas nos relatórios do Analytics. |
 | Solicitações de pré-busca | Usar um serviço de pré-busca para pré-carregar páginas a fim de aumentar a velocidade pode causar um aumento significativo no tráfego de solicitações de conteúdo. |
-| DDOS | Embora a Adobe faça todos os esforços para detectar e filtrar automaticamente o tráfego de ataques DDOS, não há garantia de que todos os possíveis ataques DDOS sejam detectados |
+| DDOS | Enquanto o Adobe faz tentativas de detectar e filtrar automaticamente o tráfego de ataques de DDOS, não há garantia de que todos os possíveis ataques de DDOS sejam detectados. |
 | Bloqueadores de tráfego | O uso de um bloqueador de rastreadores em um navegador pode impedir o rastreamento de algumas solicitações. |
 | Firewalls | Os firewalls podem bloquear o rastreamento do Analytics. Esse cenário é mais frequente com firewalls corporativos. |
 
@@ -59,7 +59,7 @@ Consulte também [Painel de licenças](/help/implementing/cloud-manager/license-
 | Código HTTP 400-499 | Excluído | Erros retornados ao visitante quando o conteúdo não existe (404) ou há outros problemas relacionados ao conteúdo ou à solicitação. |
 | Código HTTP 300-399 | Excluído | Essas são boas solicitações que verificam se algo foi alterado no servidor ou redirecionam a solicitação para outro recurso. Elas não têm conteúdo em si, portanto, não são faturáveis. |
 | Solicitações em /libs/* | Excluído | Solicitações JSON internas de AEM, como o token CSRF que não é faturável. |
-| Tráfego de ataques de DDOS | Excluído | Proteção DDOS. O AEM detecta automaticamente alguns dos ataques de DDOS e os bloqueia. Ataques de DDOS, se detectados, não são faturáveis.<br><br>Tipos DDOS detectados automaticamente:<br>· DDOSBlockedCiphersSHA<br>· DDOSBlockedPattern<br>· DDOSSuspiciousRequest |
+| Tráfego de ataques de DDOS | Excluído | Proteção DDOS. O AEM detecta automaticamente alguns dos ataques de DDOS e os bloqueia. Ataques de DDOS, se detectados, não são faturáveis. |
 | Monitoramento as a Cloud Service do AEM na NewRelic | Excluído | Monitoramento global as a Cloud Service do AEM. |
 | URL para clientes monitorarem o programa Cloud Service | Excluído | URL recomendado para monitorar externamente a disponibilidade.<br><br>`/system/probes/health` |
 | Serviço de aquecimento de pod as a Cloud Service AEM | Excluído | Agente do usuário: skyline-service-warmup/1.* |

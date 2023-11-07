@@ -3,9 +3,9 @@ title: Pesquisar práticas recomendadas para [!DNL Adobe Experience Manager] as 
 description: Práticas recomendadas para pesquisar, localizar e recuperar metadados de ativos no aplicativo.
 contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
-source-git-commit: 25a4a6b9ae09cb71f50317990af1718db1e14355
+source-git-commit: 8fc09f11127b29a6cd0f56f4e9d217b9756bbb8f
 workflow-type: tm+mt
-source-wordcount: '2544'
+source-wordcount: '2603'
 ht-degree: 3%
 
 ---
@@ -46,7 +46,7 @@ Você pode tornar a pesquisa mais específica adicionando sua palavra-chave de p
 
 A pesquisa exibirá resultados semelhantes se você estiver trabalhando na **[!UICONTROL Exibição de ativos]** também.
 
-<!--[Watch a video to perform a simple search in AEM Assets] ()-->
+[Assista a um vídeo sobre pesquisa básica no AEM Assets](https://video.tv.adobe.com/v/3425489)
 
 ## Arquivos e pastas {#files-folders}
 
@@ -67,7 +67,7 @@ Selecione a pasta no caminho e navegue até a pasta desejada se desejar pesquisa
 
 ![Pesquisar usando arquivos e pastas](assets/files-folders.png)
 
-<!--[Watch a video to perform search in AEM Assets using Files and Folders] ()-->
+[Assista a um vídeo para realizar pesquisas no AEM Assets usando arquivos e pastas](https://video.tv.adobe.com/v/3425487)
 
 ## Operadores {#operators}
 
@@ -119,7 +119,7 @@ O asterisco é um operador curinga usado para ampliar sua pesquisa digitando men
 * `car*` retorna ativos com lavagem de carro, transportadora, transporte e assim por diante.
 * `*car` retorna ativos com carro moderno, carro esportivo e assim por diante.
 
-<!--[Watch a video to perform a search in AEM Assets using wildcards] ()-->
+[Assista a um vídeo para realizar uma pesquisa no AEM Assets usando curingas](https://video.tv.adobe.com/v/3425488)
 
 **[!UICONTROL Exibição de ativos]** não aceita o uso de curingas.
 
@@ -172,8 +172,6 @@ Execute as seguintes etapas no **[!UICONTROL Exibição de ativos]**:
 1. Vá para Filtros. Em [!UICONTROL Tipo MIME], selecione [!UICONTROL PDF].
 1. Ir para [!UICONTROL Status do ativo], selecione [!UICONTROL Todos] para incluir todos os ativos publicados e não publicados.
 
-<!--[Watch a video to perform search in AEM Assets using various filters] ()-->
-
 **Cenário 5: pesquisar todas as imagens, exceto PNG**
 
 Quando não tiver certeza sobre o título ou a metadescrição de um ativo, você pode usar vários filtros de pesquisa para tornar sua pesquisa mais relevante. Por exemplo, para pesquisar ativos no **[!UICONTROL Exibição do administrador]**, siga as etapas abaixo:
@@ -188,6 +186,8 @@ Para pesquisar ativos usando o cenário mencionado no **[!UICONTROL Exibição d
 
 1. Ir para filtros de pesquisa.
 1. Vá para Filtros. Em [!UICONTROL Tipo MIME], selecionar todos os tipos MIME fornecidos, mas Desmarcar PNG.
+
+[Assista a um vídeo para realizar a pesquisa no AEM Assets usando filtros](https://video.tv.adobe.com/v/3425486)
 
 ## Pesquisa avançada {#advanced-search}
 
@@ -240,6 +240,8 @@ Você pode capturar um critério específico usando vários filtros de pesquisa.
 ![Pesquisar usando tags](assets/search-tags.png)
 
 A pesquisa exibirá resultados semelhantes se você estiver trabalhando na **[!UICONTROL Exibição de ativos]** também.
+
+[Assista a um vídeo sobre pesquisa no AEM Assets usando a Pesquisa avançada](https://video.tv.adobe.com/v/3425490)
 
 **Cenário 9: encontrar correspondência semelhante para carro de cor vermelha**
 
