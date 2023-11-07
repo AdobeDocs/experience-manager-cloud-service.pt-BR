@@ -2,9 +2,9 @@
 title: Navegar até o provedor de serviços do Screens
 description: Esta página descreve como navegar até o provedor de serviços do Screens.
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: ad5a8656b200ba35a0a6f58afd4be03202138f47
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '292'
 ht-degree: 6%
 
 ---
@@ -38,6 +38,9 @@ Siga as etapas abaixo para configurar o Provedor de serviços do Screens:
 3. Insira os seguintes detalhes na caixa de diálogo Editar configurações.
    * **URL de publicação** - URL de publicação no AEM (por exemplo, `https://publish-p12345-e12345.adobeaemcloud.com`)
    * **URL do autor** - URL do autor no AEM (por exemplo, `https://author-p12345-e12345.adobeaemcloud.com`)
+
+   >[!NOTE]
+   >Crie e publique pelo menos um Canal de tela AEM antes de configurar o AEM no Provedor de serviços do Screens. Para criar um canal, navegue até /screens.html em seu provedor de conteúdo.
 
    ![imagem](/help/screens-cloud/assets/configure/configure-screens4.png)
 
