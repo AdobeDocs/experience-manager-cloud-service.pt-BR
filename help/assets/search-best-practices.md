@@ -3,9 +3,9 @@ title: Pesquisar práticas recomendadas para [!DNL Adobe Experience Manager] as 
 description: Práticas recomendadas para pesquisar, localizar e recuperar metadados de ativos no aplicativo.
 contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
-source-git-commit: 8fc09f11127b29a6cd0f56f4e9d217b9756bbb8f
+source-git-commit: 780f0dee9a2a0fd7fa63b93bdd8be6bc23eef04f
 workflow-type: tm+mt
-source-wordcount: '2603'
+source-wordcount: '2544'
 ht-degree: 3%
 
 ---
@@ -46,7 +46,7 @@ Você pode tornar a pesquisa mais específica adicionando sua palavra-chave de p
 
 A pesquisa exibirá resultados semelhantes se você estiver trabalhando na **[!UICONTROL Exibição de ativos]** também.
 
-[Assista a um vídeo sobre pesquisa básica no AEM Assets](https://video.tv.adobe.com/v/3425489)
+>[!VIDEO](https://video.tv.adobe.com/v/3425489)
 
 ## Arquivos e pastas {#files-folders}
 
@@ -67,7 +67,7 @@ Selecione a pasta no caminho e navegue até a pasta desejada se desejar pesquisa
 
 ![Pesquisar usando arquivos e pastas](assets/files-folders.png)
 
-[Assista a um vídeo para realizar pesquisas no AEM Assets usando arquivos e pastas](https://video.tv.adobe.com/v/3425487)
+>[!VIDEO](https://video.tv.adobe.com/v/3425487)
 
 ## Operadores {#operators}
 
@@ -119,7 +119,7 @@ O asterisco é um operador curinga usado para ampliar sua pesquisa digitando men
 * `car*` retorna ativos com lavagem de carro, transportadora, transporte e assim por diante.
 * `*car` retorna ativos com carro moderno, carro esportivo e assim por diante.
 
-[Assista a um vídeo para realizar uma pesquisa no AEM Assets usando curingas](https://video.tv.adobe.com/v/3425488)
+>[!VIDEO](https://video.tv.adobe.com/v/3425488)
 
 **[!UICONTROL Exibição de ativos]** não aceita o uso de curingas.
 
@@ -187,7 +187,7 @@ Para pesquisar ativos usando o cenário mencionado no **[!UICONTROL Exibição d
 1. Ir para filtros de pesquisa.
 1. Vá para Filtros. Em [!UICONTROL Tipo MIME], selecionar todos os tipos MIME fornecidos, mas Desmarcar PNG.
 
-[Assista a um vídeo para realizar a pesquisa no AEM Assets usando filtros](https://video.tv.adobe.com/v/3425486)
+>[!VIDEO](https://video.tv.adobe.com/v/3425486)
 
 ## Pesquisa avançada {#advanced-search}
 
@@ -241,7 +241,7 @@ Você pode capturar um critério específico usando vários filtros de pesquisa.
 
 A pesquisa exibirá resultados semelhantes se você estiver trabalhando na **[!UICONTROL Exibição de ativos]** também.
 
-[Assista a um vídeo sobre pesquisa no AEM Assets usando a Pesquisa avançada](https://video.tv.adobe.com/v/3425490)
+>[!VIDEO](https://video.tv.adobe.com/v/3425490)
 
 **Cenário 9: encontrar correspondência semelhante para carro de cor vermelha**
 
