@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 8de3189495c374fad156e7e6cb23c96c84ece482
 workflow-type: tm+mt
-source-wordcount: '2029'
+source-wordcount: '2167'
 ht-degree: 1%
 
 ---
@@ -22,12 +22,12 @@ ht-degree: 1%
 | AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=en) |
 | AEM as a Cloud Service | Este artigo |
 
-Embora cada formulário seja projetado para um propósito específico, existem alguns segmentos comuns na maioria dos formulários, como fornecer detalhes pessoais curtir nome e endereço, detalhes da família, detalhes de renda, entre outros. Os desenvolvedores de formulários são obrigados a criar esses segmentos comuns sempre que um novo formulário é criado. A Forms adaptativa fornece um mecanismo conveniente para criar formulário segmento curtir um painel ou uma grupo de campos apenas uma vez e reutilizá-los em Forms adaptativos. Esses segmentos reutilizáveis e independentes são chamados de Fragmentos de formulário adaptável.
+Embora cada formulário seja projetado para um propósito específico, há alguns segmentos comuns na maioria dos formulários, como o de fornecer detalhes pessoais, como nome e endereço, detalhes da família, detalhes de renda etc. Os desenvolvedores de formulários são necessários para criar esses segmentos comuns sempre que um novo formulário for criado. O Forms adaptável fornece um mecanismo conveniente para criar segmentos de formulário, como um painel ou um grupo de campos, somente uma vez e reutilizá-los no Forms adaptável. Esses segmentos reutilizáveis e independentes são chamados de Fragmentos de formulário adaptáveis.
 
 
 ## Criar um fragmento {#create-a-fragment}
 
-É possível criar um fragmento de formulário adaptável do zero ou salvar um painel em um Formulário adaptável existente como fragmento.
+Você pode criar um fragmento de formulário adaptável do zero ou salvar um painel em um formulário adaptável existente como fragmento.
 
 ### Criar fragmento do zero {#create-fragment-from-scratch}
 
@@ -37,24 +37,29 @@ Embora cada formulário seja projetado para um propósito específico, existem a
 
    >[!NOTE]
    >
-   >Certifique-se de especificar um nome exclusivo para o fragmento. Se já existir outro fragmento com o mesmo nome, o fragmento falhará na criação.
+   >Certifique-se de especificar um nome exclusivo para o fragmento. Se já existir outro fragmento com o mesmo nome, o fragmento não será criado.
 
-1. Clique para abrir a **guia de Modelo** de formulário e, no **menu suspenso Selecionar** entre, selecione um dos seguintes modelos para o fragmento:
+1. Clique para abrir a **Modelo de formulário** e na guia **Selecionar de** selecione um dos seguintes modelos para o fragmento:
 
    * **Nenhum**: especifica criar o fragmento do zero sem usar nenhum modelo de formulário.
+
+     >[!NOTE]
+     >
+     > Em Forms adaptáveis baseados em Componentes principais, é possível usar um único fragmento de formulário várias vezes em um formulário. Ele oferece suporte a fragmentos de formulário baseados em nenhum e em esquema.
+
    * **Modelo de formulário**: especifica criar o fragmento usando um modelo XDP carregado no [!DNL AEM Forms]. Selecione o modelo XDP apropriado como o modelo de formulário para o fragmento.
 
    ![Criação de um formulário adaptável usando o modelo de formulário como modelo](assets/form-template-model.png)
 
-   Os subformulários marcados como fragmentos no modelo de formulário selecionado também são exibidos. Você pode selecionar um subformulário para Fragmento de formulário adaptável na lista suspensa.
+   Os subformulários marcados como fragmentos no formulário selecionado modelo também são exibidos. É possível selecionar um subformulário para o Fragmento de formulário adaptável no lista suspenso.
 
-   ![Selecionar subformulários do modelo de formulário especificado](assets/fragment-subform.png)
+   ![Selecione os subformulários no formulário especificado modelo](assets/fragment-subform.png)
 
-   Além disso, você pode criar um Fragmento de formulário adaptável usando subformulários que não estão marcados como fragmentos no modelo de formulário especificando a expressão SOM para o subformulário na caixa suspensa.
+   Além disso, é possível criar um Fragmento de formulário adaptável usando subformulários que não são marcados como fragmentos no formulário modelo especificando o expressão SOM para o subformulário na caixa suspensa.
 
-   * **Esquema XML**: Especifica como criar o fragmento usando um esquema XML carregado no [!DNL AEM Forms]. Você pode fazer upload ou selecionar dentre os esquemas XML disponíveis como o modelo de formulário do fragmento.
+   * **Esquema** XML: especifica a criação do fragmento usando uma schema XML enviada para [!DNL AEM Forms]. É possível upload ou selecionar nos esquemas XML disponíveis como o modelo de formulário do fragmento.
 
-   ![Criar um fragmento de formulário adaptável com base em um esquema XML como modelo](assets/xml-schema-model.png)
+   ![Criar um fragmento de formulário adaptável baseado em um schema XML como modelo](assets/xml-schema-model.png)
 
    Você também pode criar um fragmento de formulário adaptável selecionando um complexType presente no esquema selecionado na caixa suspensa.
 
@@ -118,14 +123,14 @@ Se você escolher **/** como a raiz do modelo de fragmento, a árvore XSD comple
 
 Qualquer fragmento inserido no Adaptive Forms é exibido como uma imagem de espaço reservado. O espaço reservado exibe títulos de até dez painéis secundários no fragmento. Você pode configurar [!DNL AEM Forms] para mostrar o fragmento completo em vez da imagem de espaço reservado.
 
-Execute as etapas a seguir para mostrar fragmentos completos nos formulários:
+Execute as seguintes etapas para mostrar fragmentos completos em formulários:
 
-1. Vá para AEM página de configuração do console da Web em https:[*host*]:[*porta*]/system/console/configMgr.
+1. Vá para a página de configuração do console da Web do AEM em https:[*host*]:[*porta*]/system/console/configMgr
 
-1. Search e clique **[!UICONTROL em Serviço]** de configuração do formulário adaptável para abri-lo no modo de edição.
-1. Desative **[!UICONTROL Ativar Espaço reservado no lugar da caixa de seleção Fragmento]** para mostrar fragmentos completos em vez da imagem de espaço reservado.
+1. Pesquisar e clicar **[!UICONTROL Serviço de configuração de formulário adaptável]** para abri-lo no modo de edição.
+1. Desativar **[!UICONTROL Ativar espaço reservado no lugar do fragmento]** para mostrar fragmentos completos em vez da imagem de espaço reservado.
 
-### Inserir um fragmento em um formulário adaptável {#insert-a-fragment-in-an-adaptive-form}
+### Inserir um fragmento em um Formulário adaptável {#insert-a-fragment-in-an-adaptive-form}
 
 Os fragmentos de formulário adaptáveis criados são exibidos na guia Fragmentos de formulário adaptáveis do localizador de conteúdo do AEM. Para inserir um fragmento de formulário adaptável em um formulário adaptável:
 
@@ -144,21 +149,31 @@ O fragmento de formulário adaptável é inserido por referência no formulário
 
 ### Incorporar um fragmento no Formulário adaptável {#embed-a-fragment-in-adaptive-form}
 
-Você pode optar por incorporar um fragmento de formulário adaptável em um formulário adaptável clicando em **Incorporar ativo: &lt;*fragmentName*>** na barra de ferramentas do painel do fragmento adicionado, conforme mostrado no exemplo de imagem a seguir.
+É possível optar por incorporar um fragmento de formulário adaptável em um formulário adaptável clicando **em Incorporar ativo: *fragmentName*>** botão na barra de ferramentas do painel do fragmento adicionado, como mostrado na imagem de exemplo a seguir.
 
-![Incorporar um fragmento de formulário no Formulário adaptável](assets/embed-fragment.png)
+![Incorpore um fragmento de formulário no formulário adaptável](assets/embed-fragment.png)
 
 >[!NOTE]
 >
->O fragmento incorporado não está mais vinculado ao fragmento independente. Você pode editar os componentes no fragmento incorporado a partir do Formulário adaptável.
+>O fragmento incorporado não está mais vinculado ao fragmento independente. É possível editar os componentes no fragmento incorporado a partir do formulário adaptável.
 
-### Uso de fragmentos dentro de fragmentos {#using-fragments-within-fragments}
+### Uso de fragmentos em fragmentos {#using-fragments-within-fragments}
 
-É possível criar fragmentos de formulário adaptável aninhados, o que significa que você pode arrastar e soltar um fragmento em outro fragmento e ter uma estrutura de fragmento aninhada.
+É possível criar Fragmentos de formulário adaptáveis aninhados, o que significa que é possível arrastar e soltar um fragmento em outro fragmento e ter uma estrutura de fragmento aninhada.
 
 ### Alterar fragmentos {#change-fragments}
 
 É possível substituir ou alterar um fragmento de formulário adaptável por outro fragmento usando o **Selecionar ativo do fragmento** na caixa de diálogo Editar componente de um painel Fragmento de formulário adaptável.
+
+### Uso de um fragmento de formulário várias vezes em um Formulário adaptável {#using-form-fragment-mutiple-times-in-af}
+
+Você pode usar um fragmento de formulário baseado em esquema várias vezes em um Formulário adaptável para salvar dados exclusivamente para cada campo de fragmento de formulário. Por exemplo, você pode usar um fragmento de formulário de endereço para coletar detalhes de endereço para endereços permanentes, de comunicação e vivos presentes em um formulário de aplicativo de empréstimo.
+
+![uso de vários fragmentos no formulário adaptável](/help/forms/assets/using-multiple-fragment-af.gif)
+
+>[!NOTE]
+>
+> * Se você usar fragmentos de formulário com base em nenhum várias vezes em um formulário adaptável, ocorre a sincronização de dados entre os campos dos fragmentos. Você pode usar um único [fragmento de formulário (com base nos componentes principais)](/help/forms/adaptive-form-fragments-core-components.md)  várias vezes em um formulário. Suporta fragmentos de formulário baseados em nenhuma base e em schema sem problemas de sincronização de dados.
 
 ## Mapeamento automático de fragmentos para associação de dados {#auto-mapping-of-fragments-for-data-binding}
 
@@ -172,11 +187,11 @@ Ao criar um fragmento de formulário adaptável usando um modelo de formulário 
 
 ## Gerenciar fragmentos {#manage-fragments}
 
-É possível executar várias operações nos Fragmentos do formulário adaptável usando a [!DNL AEM Forms] IU.
+É possível executar várias operações em Fragmentos de formulário adaptável usando o [!DNL AEM Forms] interface.
 
 1. Acesse `https://[hostname]:'port'/aem/forms.html`.
 
-1. Clique em **Selecionar** no [!DNL AEM Forms] Barra de ferramentas da interface e selecione um fragmento de formulário adaptável. A barra de ferramentas exibe as seguintes operações que você pode executar no fragmento de formulário adaptável selecionado.
+1. Clique **em Selecionar** na barra de ferramentas interface [!DNL AEM Forms] e selecione um fragmento de formulário adaptável. A barra de ferramentas exibe as seguintes operações que você pode executar no fragmento de formulário adaptável selecionado.
 
 <table>
  <tbody>
@@ -235,11 +250,11 @@ Para localizar um Formulário adaptável que contenha Fragmentos de formulário 
 
 * Certifique-se de que o nome do fragmento seja exclusivo. O fragmento não é criado se houver um fragmento existente com o mesmo nome.
 * Em um Formulário adaptável baseado em XDP, se você salvar um painel como fragmento que inclui outro fragmento XDP, o fragmento resultante será vinculado automaticamente ao fragmento XDP filho. No caso de um Formulário adaptável baseado em XSD, o fragmento resultante é vinculado à raiz do esquema.
-* Ao criar um Fragmento de formulário adaptável, um fragmento nó é criado, semelhante ao nó guideContainer para um formulário adaptável, no CRXDe Lite.
-* Não há suporte para um fragmento em um formulário adaptável que use um modelo de dados de formulário diferente. Por exemplo, um fragmento baseado em XDP não é suportado em um formulário adaptável baseado em XSD e vice-versa.
-* Fragmentos de formulário adaptável estão disponíveis para uso por meio dos Fragmentos de formulário adaptável guia em AEM conteúdo localizador.
-* Qualquer expressão, script ou estilo em um fragmento de formulário adaptável independente é retido quando é inserido por referência ou incorporado em um formulário adaptável.
-* Não é possível editar um fragmento de formulário adaptável, que é inserido por referência, de um formulário adaptável. Para editar, edite o fragmento de formulário adaptável independente ou incorpore o fragmento no formulário adaptável.
+* Ao criar um fragmento de formulário adaptável, um nó de fragmento é criado, o que é semelhante ao nó guideContainer de um formulário adaptável, no CRXDe Lite.
+* Um fragmento em um Formulário adaptável que usa um Modelo de dados de formulário diferente não é compatível. Por exemplo, um fragmento baseado em XDP não é compatível com um Formulário adaptável baseado em XSD e vice-versa.
+* Os fragmentos de formulário adaptáveis estão disponíveis para uso por meio da guia Fragmentos de formulário adaptáveis no localizador de conteúdo do AEM.
+* Qualquer expressão, script ou estilo em um Fragmento de formulário adaptável independente é retido quando inserido por referência ou incorporado em um Formulário adaptável.
+* Não é possível editar um fragmento de formulário adaptável, que é inserido por referência, a partir de um Formulário adaptável. Para editar, edite o Fragmento de formulário adaptável independente ou incorpore o fragmento no Formulário adaptável.
 * Ao publicar um formulário adaptável, você precisa publicar os fragmentos de formulário adaptáveis independentes inseridos por referência no formulário adaptável.
 * Ao republicar um fragmento de formulário adaptável atualizado, as alterações são refletidas nas instâncias publicadas do formulário adaptável em que o fragmento é usado.
 * O formulário adaptável que contém o componente Verificar não é compatível com usuários anônimos. Além disso, não é recomendado usar o componente Verificar em um fragmento de formulário adaptável.
