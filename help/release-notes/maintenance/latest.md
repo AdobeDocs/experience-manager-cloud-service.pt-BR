@@ -2,10 +2,10 @@
 title: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: e7e565556b382a662fb8afc5aadaa26d2357e294
+source-git-commit: 2f0a7171f93bb5bc947dba5edb59a8e0e538e052
 workflow-type: tm+mt
-source-wordcount: '1193'
-ht-degree: 11%
+source-wordcount: '1130'
+ht-degree: 12%
 
 ---
 
@@ -101,9 +101,6 @@ A Ativação de recursos 2023.11.0 fornecerá o conjunto completo de recursos pa
 * FORMS-11206: quando um usuário tenta agendar um fluxo de trabalho de Publicação para um Formulário adaptável, ele não funciona conforme esperado.
 * FORMS-11546: o Lighthouse detectou um rótulo ARIA ausente para painéis repetidos em um Formulário adaptável, afetando a acessibilidade.
 * FORMS-11095: o atributo ARIA é definido incorretamente para campos de número de telefone, endereço de email e número, resultando em problemas de acessibilidade.
-* FORMS-9894: A API do Serviço de saída gera um código de erro incorreto quando um usuário fornece um caminho de repositório inválido, gerando confusão para os usuários que encontram esse problema.
-* FORMS-11404: o serviço ImportData exibe um comportamento inconsistente ao mesclar vários dados XML com um PDF de leitura estendida. Especificamente, ele retém com êxito as propriedades de extensão do leitor para um documento de PDF de saída, mas falha ao fazê-lo para outros PDF de saída.
-
 
 ### Problemas conhecidos {#known-issues-14157}
 
