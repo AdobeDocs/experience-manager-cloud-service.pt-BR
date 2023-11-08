@@ -5,9 +5,9 @@ topic-tags: author
 keywords: Adicionar fragmentos de formulário adaptável, Fragmentos de formulário adaptável, Criar um fragmento de formulário, Adicionar um fragmento a um formulário adaptável, Gerenciar fragmentos
 feature: Adaptive Forms
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
-source-git-commit: 8de3189495c374fad156e7e6cb23c96c84ece482
+source-git-commit: 1bdd9e323e74a3f2bb06bff52235742e9e22a136
 workflow-type: tm+mt
-source-wordcount: '1780'
+source-wordcount: '1776'
 ht-degree: 1%
 
 ---
@@ -49,7 +49,7 @@ Você pode criar um fragmento de formulário adaptável do zero ou salvar um pai
 
      >[!NOTE]
      >
-     > No Forms adaptável baseado em Componentes principais, é possível usar um único fragmento de formulário várias vezes em um formulário. Suporta fragmentos de formulário baseados em nenhum e schema.
+     > No Forms adaptável, é possível usar um único fragmento de formulário (com base nos Componentes principais) várias vezes. Suporta fragmentos de formulário baseados em nenhum e schema.
 
    * **** Esquema: especifica a criação do fragmento usando um schema XML ou JSON carregado para AEM Forms. É possível upload ou selecionar nos esquemas XML ou JSON disponíveis como o modelo de formulário do fragmento. Ao selecionar um schema XML, também é possível criar um fragmento de Formulário adaptável selecionando um complexType presente no schema selecionado na **[!UICONTROL caixa suspensa Tipo]** complexo de esquema XML. Ao selecionar um schema JSON, também é possível criar um fragmento do Formulário adaptável selecionando uma definição schema presente na schema selecionada na **[!UICONTROL caixa suspensa Definições]** do esquema JSON.
    * **Modelo** de dados de formulário: especifica a criação do fragmento usando um modelo de dados de formulário. É possível criar um fragmento do formulário adaptável com base em apenas um objeto de modelo de dados em um modelo de dados de formulário. Expanda a lista suspensa Definições do modelo de dados de formulário. Ele lista todos os objetos do modelo de dados no modelo de dados de formulário especificado. Selecione um objeto de modelo de dados na lista.

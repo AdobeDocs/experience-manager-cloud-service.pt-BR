@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 84529a8016cd05577ae481f2801904a37d58d6cc
+source-git-commit: 92e7e64f25fdb2b4d8fbfe0da6da4bc81b9c96a1
 workflow-type: tm+mt
-source-wordcount: '4367'
+source-wordcount: '4372'
 ht-degree: 92%
 
 ---
@@ -593,6 +593,7 @@ ht-degree: 92%
          + [Utilizar modelo de dados do formulário](/help/forms/using-form-data-model.md)
    + Adaptive Forms {#adaptive-forms-authoring}
       + [Criação de um Formulário adaptável](/help/forms/create-an-adaptive-form.md)
+      + [Criar um fragmento de formulário adaptável](/help/forms/adaptive-form-fragments.md)
       + [Adição de um formulário adaptável a uma página do AEM Sites ou a um fragmento de experiência](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
       + Componentes principais {#authoring-adaptive-forms-core-components}
          + Criar um formulário adaptável {#create-an-adaptive-form-on-forms-cs}
