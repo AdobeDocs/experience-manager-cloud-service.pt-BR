@@ -4,10 +4,10 @@ description: Adicione seus ativos digitais ao [!DNL Adobe Experience Manager] as
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 4305b334afd3337b849d80e79ca4669802cd4be8
 workflow-type: tm+mt
-source-wordcount: '3156'
-ht-degree: 2%
+source-wordcount: '3188'
+ht-degree: 7%
 
 ---
 
@@ -58,7 +58,7 @@ Você também pode optar por concluir o processamento adicional nos ativos carre
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
 -->
 
-Para fazer upload de um arquivo (ou de vários arquivos), você pode selecioná-los na área de trabalho e arrastar a interface do usuário (navegador da Web) para a pasta de destino. Como alternativa, você pode iniciar o upload a partir da interface.
+Para fazer upload de um arquivo (ou de vários arquivos), você pode selecioná-los na área de trabalho e arrastar a interface do usuário (navegador da Web) para a pasta de destino. Como alternativa, você pode iniciar o upload a partir da interface. [!DNL Experience Manager] O pode acomodar pastas com mais de 1000 ativos. Se você quiser fazer upload de mais itens nessa pasta com mais de 1000 itens existentes, poderá resultar em atraso no upload ou na criação da nova pasta.
 
 >[!IMPORTANT]
 >
@@ -181,11 +181,11 @@ Para configurar a ferramenta Importação em massa, siga estas etapas:
 
 1. Selecione o modo de autenticação necessário na lista suspensa. **Chave de Acesso do Azure** fornece acesso total à conta de armazenamento do Azure, enquanto **Token SAS do Azure** permite que o administrador limite os recursos do token usando permissões e políticas de expiração.
 
-1. Forneça o nome da pasta raiz que contém ativos na fonte de dados na **[!UICONTROL Pasta de origem]** campo.
+1. Forneça o nome da pasta raiz que contém ativos na fonte de dados no campo **[!UICONTROL Pasta de origem]**.
 
 1. (Opcional) Forneça o tamanho mínimo de arquivo dos ativos em MB para incluí-los no processo de assimilação na **[!UICONTROL Filtrar por tamanho mínimo]** campo.
 
-1. (Opcional) Forneça o tamanho máximo de arquivo dos ativos em MB para incluí-los no processo de assimilação na **[!UICONTROL Filtrar por tamanho máximo]** campo.
+1. (Opcional) Forneça o tamanho máximo de arquivo dos ativos em MB para incluí-los no processo de assimilação no campo **[!UICONTROL Filtrar por tamanho máximo]**.
 
 1. (Opcional) Especifique a lista separada por vírgulas de tipos MIME a serem excluídos da assimilação na **[!UICONTROL Excluir tipos MIME]** campo. Por exemplo, `image/jpeg, image/.*, video/mp4`. Consulte [todos os formatos de arquivo compatíveis](/help/assets/file-format-support.md).
 
@@ -193,9 +193,9 @@ Para configurar a ferramenta Importação em massa, siga estas etapas:
 
 1. Selecione o **[!UICONTROL Excluir arquivo de origem após a importação]** opção para excluir os arquivos originais do armazenamento de dados de origem após os arquivos serem importados para o [!DNL Experience Manager].
 
-1. Selecione o **[!UICONTROL Modo de importação]**. Selecionar **Ignorar**, **Substituir** ou **Criar versão**. O modo Ignorar é o padrão e, nesse modo, o assimilador ignora para importar um ativo, se ele já existir. Veja o significado de [substituir e criar opções de versão](#handling-upload-existing-file).
+1. Selecione o **[!UICONTROL Modo de importação]**. Selecione **Ignorar**, **Substituir** ou **Criar versão**. O modo Ignorar é o padrão e nesse modo, o assimilador ignora a importação de um ativo, caso já exista. Veja o significado de [substituir e criar opções de versão](#handling-upload-existing-file).
 
-1. Para definir um local no DAM em que os ativos devem ser importados usando o **[!UICONTROL Pasta de destino do Assets]** especifique um caminho. Por exemplo, `/content/dam/imported_assets`.
+1. Defina um local no DAM onde os ativos devem ser importados usando o campo **[!UICONTROL Pasta de destino do Assets]**. Por exemplo, `/content/dam/imported_assets`.
 
 1. (Opcional) Especifique o arquivo de metadados a ser importado, fornecido no formato CSV na **[!UICONTROL Arquivo de metadados]** campo. Especifique o arquivo CSV no local do blob de origem e consulte o caminho ao configurar a ferramenta Importação em massa. O formato de arquivo CSV referenciado nesse campo é igual ao formato de arquivo CSV quando você [Importar e exportar metadados de ativos em massa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/metadata-import-export.html). Se você selecionar a variável **Excluir arquivo de origem após a importação** opção, filtre arquivos CSV usando a variável **Excluir** ou **Incluir tipo de MIME** ou **Filtrar por caminho/arquivo** campos. Você pode usar uma expressão regular para filtrar arquivos CSV nesses campos.
 
@@ -207,7 +207,7 @@ Depois de criar a configuração da ferramenta Importação em massa, você pode
 
 ### Editar a configuração {#edit-configuration}
 
-Para editar os detalhes da configuração, selecione-a e clique em **[!UICONTROL Editar]**. Não é possível editar o título da configuração e da fonte de dados de importação ao executar a operação de edição.
+Para editar os detalhes da configuração, selecione-a e clique em **[!UICONTROL Editar]**. Não é possível editar o título da configuração e a fonte de dados de importação.
 
 ### Excluir a configuração {#delete-configuration}
 
@@ -221,7 +221,7 @@ Para validar a conexão com a fonte de dados, selecione a configuração e cliqu
 
 ### Chamar uma execução de teste para o trabalho de Importação em Massa {#invoke-test-run-bulk-import}
 
-Selecione a configuração e clique em **[!UICONTROL Dry Run]** para chamar uma execução de teste para o trabalho de Importação em massa. O Experience Manager exibe os seguintes detalhes sobre o trabalho de Importação em massa:
+Selecione a configuração e clique em **[!UICONTROL Dry Run]** para chamar uma execução de teste para o trabalho de Importação em massa. O Experience Manager exibe os seguintes detalhes sobre a tarefa de importação em massa:
 
 ![Resultado do teste](assets/dry-assets-result.png)
 
@@ -313,11 +313,11 @@ Following are the file naming conventions that are applied while uploading asset
 
 #### Agendar uma importação única ou recorrente em massa {#schedule-bulk-import}
 
-Para agendar uma importação única ou recorrente em massa, execute as seguintes etapas:
+Para agendar uma importação em massa única ou recorrente, execute as seguintes etapas:
 
 1. Criar uma configuração de importação em massa.
 1. Selecione a configuração e selecione **[!UICONTROL Agendar]** na barra de ferramentas.
-1. Defina uma assimilação única ou programe uma programação por hora, dia ou semana. Clique em **[!UICONTROL Enviar]**.
+1. Defina uma assimilação única ou agende uma programação por hora, dia ou semana. Clique em **[!UICONTROL Enviar]**.
 
    ![Agendar trabalho de assimilação em massa](assets/bulk-ingest-schedule1.png)
 
