@@ -2,9 +2,9 @@
 title: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 2f0a7171f93bb5bc947dba5edb59a8e0e538e052
+source-git-commit: a8651a44300772b5c9706a5fd85e7fefef72e47d
 workflow-type: tm+mt
-source-wordcount: '1130'
+source-wordcount: '1124'
 ht-degree: 12%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 12%
 
 A seção a seguir descreve as notas de versão técnicas para a versão de manutenção atual do Experience Manager as a Cloud Service.
 
-## Versão 14157 {#release-14157}
+## Versão 14227 {#release-14227}
 
-Resumidos abaixo estão as melhorias contínuas da versão de manutenção 14157, que foi lançada publicamente em 7 de novembro de 2023. Esta versão de manutenção é uma atualização da versão de manutenção anterior: versão 14029.
+Veja abaixo um resumo das melhorias contínuas da versão de manutenção 14227, lançada publicamente em 9 de novembro de 2023. Esta versão de manutenção é uma atualização da versão de manutenção anterior: versão 14029. A versão de manutenção 14227 substitui 14157 para corrigir um problema.
 
 A Ativação de recursos 2023.11.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=pt-BR) para obter mais informações.
 
-### Aprimoramentos {#enhancements-14157}
+### Aprimoramentos {#enhancements-14227}
 
 * ASSETS-29631: Assets Cloud: use dam:roles para entrega/pesquisa segura.
 * CQ-4354515: Translations: opção para suprimir a tradução de recursos referenciados.
@@ -40,7 +40,7 @@ A Ativação de recursos 2023.11.0 fornecerá o conjunto completo de recursos pa
 * SITES-16545: fragmentos de conteúdo: adicione um endpoint para recuperar as referências da variação de um fragmento de conteúdo.
 * SITES-16853: Fragmentos de conteúdo: Remover /adobe/sites/cf/fragments/{fragmentId}/variation/{name}Ponto de extremidade /tags.
 
-### Problemas corrigidos {#fixed-issues-14157}
+### Problemas corrigidos {#fixed-issues-14227}
 
 * Correção de vários problemas de acessibilidade
 * ASSETS-31015: não é possível carregar arquivos para Assets com extensões de arquivo desconhecidas.
@@ -85,7 +85,6 @@ A Ativação de recursos 2023.11.0 fornecerá o conjunto completo de recursos pa
 * SITES-16243: Fragmentos de conteúdo: localizar e substituir não funciona com campos que tenham Renderizar como: Vários.
 * SITES-16250: Fragmentos de conteúdo: corrigir um CF às vezes retorna um cabeçalho etag incorreto.
 * SITES-16686: Fragmentos de conteúdo: as referências sem fragmento do fragmento de conteúdo são serializadas quando a referência principal está na profundidade máxima.
-* SITES-16234: ContextHub: O nome correto da atividade da marca selecionada não é exibido ao iniciar o direcionamento.
 * SITES-12880: Rastreamento rápido: corrigir a localização de Sites > Configurar o Analytics.
 * SITES-16103: Fragmentos de experiência: as opções do Target não são exibidas em Cloud Service devido a um erro no console.
 * SITES-16001: MSM: capacidade de excluir componentes de vários campos da configuração de implantação ao criar a Live Copy.
@@ -102,11 +101,11 @@ A Ativação de recursos 2023.11.0 fornecerá o conjunto completo de recursos pa
 * FORMS-11546: o Lighthouse detectou um rótulo ARIA ausente para painéis repetidos em um Formulário adaptável, afetando a acessibilidade.
 * FORMS-11095: o atributo ARIA é definido incorretamente para campos de número de telefone, endereço de email e número, resultando em problemas de acessibilidade.
 
-### Problemas conhecidos {#known-issues-14157}
+### Problemas conhecidos {#known-issues-14227}
 
 Nenhum.
 
-### Tecnologias integradas {#embedded-tech-14157}
+### Tecnologias integradas {#embedded-tech-14227}
 
 | Tecnologia | Versão | Link |
 |---|---|---|
