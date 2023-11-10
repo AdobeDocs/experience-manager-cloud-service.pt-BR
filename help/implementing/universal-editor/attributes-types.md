@@ -2,12 +2,13 @@
 title: Atributos e tipos
 description: Saiba mais sobre os atributos e tipos de dados exigidos pelo Editor universal.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
+source-git-commit: 3b98543098f4125a7d7e5896e5aa46e441a40f32
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 94%
 
 ---
+
 
 # Atributos e tipos {#attributes-types}
 

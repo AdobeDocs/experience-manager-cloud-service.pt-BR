@@ -2,12 +2,13 @@
 title: Introdução ao Editor universal no AEM
 description: Saiba como obter acesso ao Editor universal e começar a instrumentar seu primeiro aplicativo do AEM para utilizá-lo.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
+source-git-commit: 6c3b286182ae33cafadf51e653c2076d1911e444
 workflow-type: tm+mt
-source-wordcount: '803'
-ht-degree: 100%
+source-wordcount: '924'
+ht-degree: 87%
 
 ---
+
 
 # Introdução ao Editor universal no AEM {#getting-started}
 
@@ -109,14 +110,17 @@ Os atributos de instrumentação adicionados à página consistem principalmente
 As conexões usadas no aplicativo são armazenadas como tags de `<meta>` no `<head>` da página.
 
 ```html
-<meta name="urn:adobe:aem:editor:<referenceName>" content="<protocol>:<url>">
+<meta name="urn:adobe:aue:<category>:<referenceName>" content="<protocol>:<url>">
 ```
 
+* `<category>` - Esta é uma classificação da conexão com duas opções.
+   * `system` - Para pontos de extremidade de conexão
+   * `config` - Para [definição de definições de configuração opcionais](#configuration-settings)
 * `<referenceName>`: este é um nome curto que é reutilizado no documento para identificar a conexão. Por exemplo: `aemconnection`
 * `<protocol>`: isso indica qual plug-in do serviço de persistência do Editor universal deve ser utilizado. Por exemplo: `aem`
 * `<url>`: esta é a URL do sistema no qual as alterações devem ser mantidas. Por exemplo: `http://localhost:4502`
 
-O identificador `adobe:aem:editor` representa a conexão do Editor universal da Adobe.
+O identificador `urn:adobe:aue:system` representa a conexão do Editor universal da Adobe.
 
 `itemid`s usarão o prefixo `urn` para encurtar o identificador.
 
@@ -134,10 +138,12 @@ itemid="urn:<referenceName>:<resource>"
 ### Exemplo de conexão {#example}
 
 ```html
+<meta name="urn:adobe:aue:system:<referenceName>" content="<protocol>:<url>">
+
 <html>
 <head>
-    <meta name="urn:adobe:aem:editor:aemconnection" content="aem:https://localhost:4502">
-    <meta name="urn:adobe:aem:editor:fcsconnection" content="fcs:https://example.franklin.adobe.com/345fcdd">
+    <meta name="urn:adobe:aue:system:aemconnection" content="aem:https://localhost:4502">
+    <meta name="urn:adobe:aue:system:fcsconnection" content="fcs:https://example.franklin.adobe.com/345fcdd">
 </head>
 <body>
         <aside>
@@ -147,9 +153,9 @@ itemid="urn:<referenceName>:<resource>"
               <p itemprop="title" itemtype="text">Journalist</p>
               <img itemprop="avatar" src="https://www.adobe.com/content/dam/cc/icons/Adobe_Corporate_Horizontal_Red_HEX.svg" itemtype="image" alt="avatar"/>
             </li>
- 
+
 ...
- 
+
             <li itemscope itemid="urn:fcsconnection:/documents/mytext" itemtype="component">
               <p itemprop="name" itemtype="text">John Smith</p>
               <p itemid="urn:aemconnection/content/example/another-source" itemprop="title" itemtype="text">Photographer</p>
@@ -159,6 +165,28 @@ itemid="urn:<referenceName>:<resource>"
         </aside>
 </body>
 </html>
+```
+
+### Definições de configuração {#configuration-settings}
+
+Você pode usar o `config` prefixo na URN da conexão para definir pontos de extremidade de serviço e extensão, se necessário.
+
+Se você não quiser usar o Universal Editor Service, que é hospedado pelo Adobe, mas sua própria versão hospedada, poderá defini-lo em uma meta tag. Para substituir o ponto de extremidade de serviço padrão fornecido pelo Editor Universal, defina seu próprio ponto de extremidade de serviço:
+
+* Meta name - `urn:adobe:aue:config:service`
+* Conteúdo meta - `content="https://adobe.com"` (exemplo)
+
+```html
+<meta name="urn:adobe:aue:config:service" content="<url>">
+```
+
+Se você quiser que apenas determinadas extensões sejam ativadas para uma página, poderá definir isso em uma meta tag. Para buscar extensões, defina os pontos de extremidade da extensão:
+
+* Nome meta: `urn:adobe:aue:config:extensions`
+* Conteúdo meta: `content="https://adobe.com,https://anotherone.com,https://onemore.com"` (exemplo)
+
+```html
+<meta name="urn:adobe:aue:config:extensions" content="<url>,<url>,<url>">
 ```
 
 ## Você está pronto para usar o Editor universal {#youre-ready}

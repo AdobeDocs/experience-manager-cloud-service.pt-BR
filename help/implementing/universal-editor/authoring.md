@@ -2,10 +2,10 @@
 title: Criação de conteúdo com o Editor universal
 description: Saiba como é fácil e intuitivo para os autores criarem conteúdo utilizando o Editor universal.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
+source-git-commit: c6d4300e6e031a4958277fa3bce251ac6aa5dbc9
 workflow-type: tm+mt
-source-wordcount: '2410'
-ht-degree: 50%
+source-wordcount: '2442'
+ht-degree: 47%
 
 ---
 
@@ -50,7 +50,7 @@ A interface é dividida em cinco áreas principais.
 * [O cabeçalho do Editor universal](#universal-editor-header)
 * [O painel de modo](#mode-rail)
 * [O editor](#editor)
-* [O painel de componentes](#component-rail)
+* [O painel de propriedades](#properties-rail)
 
 ![A interface do Editor universal](assets/ui.png)
 
@@ -102,11 +102,19 @@ O cabeçalho do Editor universal está sempre presente na parte superior da tela
 
 ![O cabeçalho do Editor universal](assets/universal-editor-header.png)
 
-#### O menu de opções {#hamburger-menu}
+#### O Botão Início {#home-button}
 
-O menu de opções ainda não foi implementado.
+O botão Home retorna à página inicial do Universal Editor
 
-![Menu de opções](assets/hamburger-menu.png)
+![Menu de opções](assets/home-button.png)
+
+Na página inicial, você pode inserir o URL do site que deseja editar com o Editor universal.
+
+![Página inicial](assets/start-page.png)
+
+>[!NOTE]
+>
+>Qualquer página que você deseja editar com o Editor universal deve ser [instrumentada para oferecer suporte ao Editor universal.](getting-started.md)
 
 #### Barra de localização {#location-bar}
 
@@ -121,6 +129,12 @@ A barra de localização mostra o endereço da página que você está editando.
 >[!NOTE]
 >
 >Qualquer página que você deseja editar com o Editor universal deve ser [instrumentada para oferecer suporte ao Editor universal.](getting-started.md)
+
+#### Configurações do cabeçalho de autenticação {#authentication-settings}
+
+Toque ou clique no ícone de configurações do cabeçalho de autenticação se precisar definir um segredo de autenticação.
+
+![Botão Configurações do cabeçalho de autenticação](assets/authentication-header-settings.png)
 
 #### Configurações do emulador {#emulator}
 
@@ -162,7 +176,7 @@ Toque ou clique no botão Publicar para que as alterações sejam publicadas no 
 
 ### O painel de modo {#rail}
 
-O painel de modo está sempre presente no lado esquerdo do editor. Ele permite alternar facilmente o editor entre diferentes modos de edição.
+O painel de modo está logo abaixo do botão inicial e está sempre presente no lado esquerdo do editor. Ele permite alternar facilmente o editor entre diferentes modos de uso.
 
 ![O painel de modo](assets/mode-rail.png)
 
@@ -176,52 +190,41 @@ No modo de visualização, a página é renderizada no editor da maneira como se
 >
 >Use a tecla de atalho `P` para alternar para o modo de visualização.
 
-#### Modo de mídia {#media-mode}
-
-No modo de mídia, o autor de conteúdo pode clicar em para selecionar conteúdo de mídia.
-
-![Modo de mídia](assets/media-mode.png)
-
-Detalhes do conteúdo são exibidos no painel de componentes e o autor também pode [editar o conteúdo de mídia.](#editing-media)
-
->[!TIP]
->
->Use a tecla de atalho `M` para alternar para o modo de mídia.
-
-#### Modo de componente {#component-mode}
+#### Modo de componentes {#component-mode}
 
 No modo de componentes, o autor de conteúdo pode clicar em para selecionar componentes e editá-los, incluindo:
 
 * [Edição de texto simples](#editing-content) em vigor.
-* [Edição de rich text](#editing-rich-text) no local com opções de formatação adicionais exibidas no painel de componentes.
+* [Edição de rich text](#editing-rich-text) no local com opções adicionais de formatação exibidas no painel de propriedades.
+* [Edição de conteúdo de mídia](#editing-media)
 * [Edição de fragmentos de conteúdo](#edit-content-fragment)
 
-![Modo de componente](assets/component-mode.png)
+![Modo Componentes](assets/component-mode.png)
 
-Quando você seleciona um [Fragmento do conteúdo](/help/assets/content-fragments/content-fragments.md), os detalhes são exibidos no painel de componentes, onde você pode editar o fragmento de conteúdo.
+Quando você seleciona um componente, os detalhes do seu conteúdo são exibidos no [painel de propriedades.](#properties-rail) Dependendo do tipo de conteúdo, você pode editar no local ou no painel de propriedades.
 
 >[!TIP]
 >
->Use a tecla de atalho `C` para alternar para o modo de componentes.
+>Usar a tecla de atalho `C` para alternar para o modo de componentes.
 
 ### O editor {#editor}
 
 O editor ocupa a maior parte da janela e é onde a página especificada na [barra de localização](#location-bar) é renderizada.
 
-* Se o editor estiver em [modo componente,](#component-mode) o conteúdo será editável, mas não será possível seguir os links.
+* Se o editor estiver em [modo componentes,](#component-mode) o conteúdo será editável, mas não será possível seguir os links.
 * Se o editor estiver em [modo de visualização,](#preview-mode) o conteúdo será navegável e você poderá seguir os links, mas não poderá editar o conteúdo.
 
 ![Editor](assets/editor.png)
 
-### Painel do componente {#component-rail}
+### Painel Propriedades {#properties-rail}
 
-O painel de componentes está sempre presente no lado direito do editor. Dependendo do modo, podem ser exibidos detalhes de um componente selecionado no conteúdo ou na hierarquia do conteúdo da página.
+O painel de propriedades está sempre presente no lado direito do editor. Dependendo do modo, podem ser exibidos detalhes de um componente selecionado no conteúdo ou na hierarquia do conteúdo da página.
 
-![O painel de componentes](assets/component-rail.png)
+![O painel de propriedades](assets/component-rail.png)
 
 #### Modo de propriedades {#properties-mode}
 
-No modo de propriedades, o painel mostra as propriedades do componente atualmente selecionado no editor. Esse é o modo padrão do painel de componentes quando uma página é carregada.
+No modo de propriedades, o painel mostra as propriedades do componente atualmente selecionado no editor. Esse é o modo padrão do painel de propriedades quando uma página é carregada.
 
 ![Modo de propriedades](assets/properties-mode.png)
 
@@ -234,20 +237,6 @@ Observe que nem todos os componentes têm detalhes que podem ser mostrados e/ou 
 >[!TIP]
 >
 >Use a tecla de atalho `D` para alternar para o modo de propriedades.
-
-##### Editar {#edit}
-
-Quando em [modo componente,](#component-mode) as opções de edição do componente selecionado são exibidas no painel de componentes. No painel de componentes, é possível editar o componente selecionado. No entanto, também é possível tocar ou clicar no botão Editar.
-
-![Ícone de edição](assets/edit.png)
-
-Tocar ou clicar no botão de edição abre o [Editor de fragmento de conteúdo](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) em uma nova guia. Isso permite acessar todo o potencial do Editor de fragmento de conteúdo para editar o fragmento de conteúdo associado.
-
-Dependendo das necessidades do fluxo de trabalho, talvez você queira editar o Fragmento de conteúdo no Editor universal ou diretamente no editor de Fragmento de conteúdo.
-
->[!TIP]
->
->Use a tecla de atalho `E` para editar um componente selecionado.
 
 #### Modo de árvore de conteúdo {#content-tree-mode}
 
@@ -263,13 +252,29 @@ Ao selecionar um item na árvore de conteúdo, o editor rola até esse conteúdo
 >
 >Use a tecla de atalho `F` para alternar para o modo de árvore de conteúdo.
 
+##### Editar {#edit}
+
+Quando em [modo componentes,](#component-mode) as opções de edição do componente selecionado são exibidas no painel de propriedades. No painel de propriedades, é possível editar o componente selecionado. Se o componente selecionado for um Fragmento de conteúdo, você também poderá tocar ou clicar no botão Editar.
+
+![Ícone de edição](assets/edit.png)
+
+Tocar ou clicar no botão de edição abre o [Editor de fragmento de conteúdo](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) em uma nova guia. Isso permite acessar todo o potencial do Editor de fragmento de conteúdo para editar o fragmento de conteúdo associado.
+
+Dependendo das necessidades do fluxo de trabalho, talvez você queira editar o Fragmento de conteúdo no Editor universal ou diretamente no editor de Fragmento de conteúdo.
+
+>[!TIP]
+>
+>Use a tecla de atalho `E` para editar um componente selecionado.
+
 ##### Adicionar {#add}
 
-Se você selecionar um componente de contêiner na árvore de conteúdo ou no editor, a opção adicionar aparecerá no painel de componentes.
+Se você selecionar um componente de contêiner na árvore de conteúdo ou no editor, a opção adicionar aparecerá no painel de propriedades.
 
 ![Ícone Adicionar](assets/ue-add-component-icon.png)
 
 Tocar ou clicar no botão adicionar abre um menu suspenso de componentes disponíveis para [adicionar ao contêiner selecionado.](#adding-components)
+
+![Adicionar menu de contexto](assets/add-context-menu.png)
 
 >[!TIP]
 >
@@ -277,7 +282,7 @@ Tocar ou clicar no botão adicionar abre um menu suspenso de componentes dispon�
 
 ##### Excluir {#delete}
 
-Se você selecionar um componente em um componente de contêiner na árvore de conteúdo ou no editor, a opção de exclusão aparecerá no painel de componentes.
+Se você selecionar um componente em um componente de contêiner na árvore de conteúdo ou no editor, a opção de exclusão aparecerá no painel de propriedades.
 
 ![Ícone Excluir](assets/ue-delete-component-icon.png)
 
@@ -289,51 +294,51 @@ Tocar ou clicar no botão Excluir [exclui o componente.](#deleting-components)
 
 ## Editar o conteúdo {#editing-content}
 
-A edição de conteúdo é simples e intuitiva. Nos modos de edição ([modo de mídia](#media-mode) e [modo do componente](#component-mode)), conforme você passa o mouse sobre o conteúdo no editor, o conteúdo editável é realçado com uma caixa azul.
+A edição de conteúdo é simples e intuitiva. Entrada [modo componentes](#component-mode), à medida que você passa o mouse sobre o conteúdo no editor, o conteúdo editável é realçado com uma caixa azul.
 
 ![O conteúdo editável é destacado por uma caixa azul](assets/editable-content.png)
 
 >[!TIP]
 >
->Observe que, no modo de edição, tocar ou clicar em um conteúdo o seleciona para edição. Se você deseja navegar pelo seu conteúdo utilizando os links, alterne para o [modo de visualização.](#preview-mode)
+>Observe que no modo de componentes, tocar ou clicar em um conteúdo o seleciona para edição. Se você deseja navegar pelo seu conteúdo utilizando os links, alterne para o [modo de visualização.](#preview-mode)
 
-Dependendo do [modo](#mode-rail) estiver no e o conteúdo selecionado, tiver opções de edição no local diferentes e poder revisar propriedades adicionais para o conteúdo usando o [painel de componentes.](#component-rail)
+Dependendo do conteúdo selecionado, você pode ter diferentes opções de edição no local e outras informações e opções para o conteúdo na [painel de propriedades.](#properties-rail)
 
 ### Edição de Texto sem Formatação {#edit-plain-text}
 
-Se você estiver em [modo do componente](#component-mode) e selecionar um componente de texto simples, você pode editar o texto no local clicando duas vezes ou tocando duas vezes no componente.
+Se você estiver em [modo componentes](#component-mode) e selecionar um componente de texto simples, você pode editar o texto no local clicando duas vezes ou tocando duas vezes no componente.
 
 ![Editar o conteúdo](assets/editing-content.png)
 
 Pressione enter/return ou toque ou clique fora da caixa de texto para salvar as alterações.
 
-Ao tocar ou clicar para selecionar o componente de texto, seus detalhes são mostrados no painel de componentes. Também é possível editar o texto no painel.
+Ao tocar ou clicar para selecionar o componente de texto, os detalhes são mostrados no painel de propriedades. Também é possível editar o texto no painel.
 
-![Edição de texto no painel de componentes](assets/ue-editing-text-component-rail.png)
+![Edição de texto no painel de propriedades](assets/ue-editing-text-component-rail.png)
 
-Além disso, os detalhes do seu texto estão disponíveis no painel de componentes. As alterações são salvas automaticamente quando o foco sai do campo editado no painel de componentes.
+Além disso, os detalhes do seu texto estão disponíveis no painel de propriedades. As alterações são salvas automaticamente quando o foco sai do campo editado no painel de propriedades.
 
 ### Edição de Rich Text {#edit-rich-text}
 
-Se você estiver em [modo do componente](#component-mode) e selecionar um componente de rich text, é possível editar o texto no local clicando duas vezes ou tocando duas vezes no componente.
+Se você estiver em [modo componentes](#component-mode) e selecionar um componente de rich text, é possível editar o texto no local clicando duas vezes ou tocando duas vezes no componente.
 
 Pressione enter/return ou toque ou clique fora da caixa de texto para salvar as alterações.
 
 ![Edição de um componente de rich text](assets/rich-text-editing.png)
 
-Além disso, as opções de formatação e os detalhes do texto estão disponíveis no painel de componentes. As alterações são salvas automaticamente quando o foco sai do campo editado no painel de componentes.
+Além disso, as opções de formatação e os detalhes do texto estão disponíveis no painel de propriedades. As alterações são salvas automaticamente quando o foco sai do campo editado no painel de propriedades.
 
 ### Editando mídia {#edit-media}
 
-Se você estiver em [modo de mídia](#media-mode) e selecionar uma imagem, você poderá ver seus detalhes no painel de componentes.
+Se você estiver em [modo componentes](#component-mode) e selecionar uma imagem, você poderá exibir seus detalhes no painel de propriedades.
 
 ![Edição de mídia](assets/ue-edit-media.png)
 
-Toque ou clique no **Substituir** botão abaixo da visualização da imagem selecionada no painel de componentes para substituir a imagem por outra da biblioteca de ativos.
+Toque ou clique no **Substituir** botão abaixo da visualização da imagem selecionada no painel de propriedades para substituir a imagem por outra de sua biblioteca de ativos.
 
 1. A variável [seletor de ativos](/help/assets/asset-selector.md#using-asset-selector) é aberta para permitir que você selecione um ativo.
 1. Toque ou clique para selecionar um novo ativo.
-1. Toque ou clique **Selecionar** para retornar ao painel de componentes onde o ativo foi substituído.
+1. Toque ou clique **Selecionar** para retornar ao painel de propriedades onde o ativo foi substituído.
 
 As alterações são salvas no conteúdo automaticamente.
 
@@ -343,15 +348,15 @@ As alterações são salvas no conteúdo automaticamente.
 
 ### Edição de fragmentos de conteúdo {#edit-content-fragment}
 
-Se você estiver em [modo do componente](#component-mode) e você selecionar um [Fragmento de conteúdo,](/help/sites-cloud/administering/content-fragments/overview.md) é possível editar os detalhes no painel de componentes.
+Se você estiver em [modo componentes](#component-mode) e você selecionar um [Fragmento de conteúdo,](/help/sites-cloud/administering/content-fragments/overview.md) você pode editar os detalhes no painel propriedades.
 
 ![Edição de um fragmento de conteúdo](assets/ue-edit-cf.png)
 
-Os campos definidos no modelo de conteúdo do fragmento de conteúdo selecionado são exibidos e editáveis no painel de componentes.
+Os campos definidos no modelo de conteúdo do fragmento de conteúdo selecionado são exibidos e editáveis no painel de propriedades.
 
 Se você selecionar um campo relacionado a um Fragmento de conteúdo, ele será carregado no painel Componentes e o campo será rolado automaticamente para o.
 
-As alterações são salvas automaticamente quando o foco sai do campo editado no painel de componentes.
+As alterações são salvas automaticamente quando o foco sai do campo editado no painel de propriedades.
 
 Se quiser editar o fragmento de conteúdo na caixa [Editor de fragmento de conteúdo](/help/sites-cloud/administering/content-fragments/authoring.md) clique no link [botão editar](#edit) no painel de modos.
 
@@ -360,7 +365,7 @@ Dependendo das necessidades do fluxo de trabalho, talvez você queira editar o F
 ### Adicionar componentes a contêineres {#adding-components}
 
 1. Selecione um componente de container na árvore de conteúdo ou no editor.
-1. Em seguida, toque ou clique no ícone adicionar no painel de componentes.
+1. Em seguida, toque ou clique no ícone adicionar no painel de propriedades.
 
    ![Selecionar um componente para adicionar a um contêiner](assets/ue-add-component.png)
 
@@ -375,7 +380,7 @@ O componente é inserido no container e pode ser editado no editor.
 1. Selecione um componente de container na árvore de conteúdo ou no editor.
 1. Toque ou clique no ícone de divisa do contêiner para expandir seu conteúdo na árvore de conteúdo.
 1. Em seguida, na árvore de conteúdo, selecione um componente no contêiner.
-1. Toque ou clique no ícone Excluir no painel de componentes.
+1. Toque ou clique no ícone excluir no painel de propriedades.
 
    ![Exclusão de um componente](assets/ue-delete-component.png)
 
@@ -402,7 +407,7 @@ Os componentes são reordenados na árvore de conteúdo e no editor
 
 Ao terminar de editar o conteúdo, você geralmente deseja navegar por ele e observar como ele é exibido em outras páginas. No [modo de visualização](#preview-mode), é possível clicar em links e navegar pelo conteúdo, como um leitor faria. O conteúdo é renderizado no editor como seria publicado.
 
-Note que, no modo de visualização, a ação de tocar ou clicar no conteúdo funciona da mesma forma que para um leitor do conteúdo. Se desejar selecionar o conteúdo para edição, alterne para um modo de edição como [modo do componente](#component-mode) ou [modo de mídia.](#media-mode)
+Note que, no modo de visualização, a ação de tocar ou clicar no conteúdo funciona da mesma forma que para um leitor do conteúdo. Se desejar selecionar o conteúdo para edição, alterne para [modo de componentes.](#component-mode)
 
 ## Recursos adicionais {#additional-resources}
 
