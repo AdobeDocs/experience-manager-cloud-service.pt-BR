@@ -4,9 +4,9 @@ description: Adicione seus ativos digitais ao [!DNL Adobe Experience Manager] as
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 4305b334afd3337b849d80e79ca4669802cd4be8
+source-git-commit: 408fdf3cac2943fc6c8abfa8d3e94b212a1e455f
 workflow-type: tm+mt
-source-wordcount: '3188'
+source-wordcount: '3211'
 ht-degree: 7%
 
 ---
@@ -384,7 +384,7 @@ Os detalhes técnicos das APIs e do protocolo de upload, bem como os links para 
 
 * O upload binário direto é um novo método para fazer upload de ativos. Por padrão, ela é aceita pelos recursos e clientes do produto, como [!DNL Experience Manager] interface do usuário, [!DNL Adobe Asset Link], e [!DNL Experience Manager] aplicativo de desktop. Qualquer código personalizado personalizado personalizado ou estendido pelas equipes técnicas dos clientes deve usar as novas APIs de upload e os protocolos.
 
-* A Adobe recomenda adicionar até 1000 ativos em cada pasta em [!DNL Experience Manager Assets]. Embora seja possível adicionar mais ativos a uma pasta, é possível que você tenha problemas de desempenho, como navegação mais lenta para essas pastas.
+* A Adobe recomenda adicionar até 1000 ativos em cada pasta em [!DNL Experience Manager Assets]. Se você tentar fazer isso, poderá receber uma mensagem de alerta dizendo: &quot;Este diretório contém mais de 1000 itens. Os uploads e as novas criações de pasta podem ser adiadas.&quot; Embora ainda seja possível adicionar mais ativos a uma pasta, você pode enfrentar problemas de desempenho, como a navegação mais lenta para essas pastas.
 
 * Ao selecionar **[!UICONTROL Substituir]** no [!UICONTROL Conflito de nome] , a ID do ativo é gerada novamente para o novo ativo. Essa ID é diferente da ID do ativo anterior. Se [Insights de ativos](/help/assets/assets-insights.md) está habilitado para rastrear impressões ou cliques com [!DNL Adobe Analytics], a ID de ativo regenerada invalida os dados capturados para o ativo no [!DNL Analytics].
 
