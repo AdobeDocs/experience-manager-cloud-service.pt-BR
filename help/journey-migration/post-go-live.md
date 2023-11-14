@@ -53,7 +53,7 @@ Os usuários podem acessar uma lista de arquivos de log disponíveis para o ambi
 
 Consulte [Acesso e gerenciamento de registros](/help/implementing/cloud-manager/manage-logs.md) para saber como acessar e gerenciar logs por meio da interface do usuário ou da API por meio do Cloud Manager.
 
-## Contato com o suporte  {#contacting-support}
+## Contato com o suporte {#contacting-support}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_support"

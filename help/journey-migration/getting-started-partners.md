@@ -22,7 +22,7 @@ O Adobe Experience Manager (AEM) as a Cloud Service oferece uma base reformulada
 
 O Cloud Service reúne recursos avançados prontos para uso e extensibilidade do Adobe Experience Manager com a agilidade da arquitetura moderna nativa em nuvem, permitindo que as marcas atendam à demanda cada vez maior do consumidor.
 
-Este resumo descreve a abordagem em fases recomendada para fazer a transição de clientes de várias implantações do Experience Manager para o Experience Manager as a Cloud Service e ajudar os clientes existentes a fornecer experiências conectadas e contínuas nesta plataforma moderna e específica para gerenciamento de experiências.
+Este resumo descreve a abordagem em fases recomendada para fazer a transição de clientes de várias implantações do Experience Manager para o Experience Manager as a Cloud Service e ajudar os clientes existentes a fornecer experiências conectadas e contínuas nesta plataforma moderna e específica para gerenciamento de experiências
 
 <!-- It primarily focuses on:
 * Getting Started with Adobe Experience Manager as a Cloud Service
@@ -105,7 +105,7 @@ Consulte recursos de autoajuda sobre como configurar e implantar em ambientes as
 >[!CONTEXTUALHELP]
 >id="aemcloud_move_to_cloud"
 >title="Migração para o Adobe Experience Manager as a Cloud Service"
->abstract="Este resumo descreve a abordagem em fases recomendada para fazer a transição de clientes de várias implantações do Experience Manager para o Experience Manager as a Cloud Service e ajudar os clientes existentes a fornecer experiências conectadas e contínuas nesta plataforma moderna e específica para gerenciamento de experiências."
+>abstract="Este resumo descreve a abordagem em fases recomendada para fazer a transição de clientes de várias implantações do Experience Manager para o Experience Manager as a Cloud Service e ajudar os clientes existentes a fornecer experiências conectadas e contínuas nesta plataforma moderna e específica para gerenciamento de experiências"
 
 **O Experience Manager as a Cloud Service fornece uma base de tecnologia escalável, segura e ágil para o Experience Manager Sites e o Assets, permitindo que os profissionais de marketing e TI se concentrem em fornecer experiências de impacto em grande escala.**
 
