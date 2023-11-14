@@ -2,10 +2,10 @@
 title: Ambiente de compilação
 description: Saiba mais sobre o ambiente de compilação do Cloud Manager e como ele cria e testa seu código.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 08cb1b4fc74e03a931551042814afb2d722005a5
+source-git-commit: 7945d67fe7d258af7131076d2416cbe121354a62
 workflow-type: tm+mt
-source-wordcount: '1039'
-ht-degree: 91%
+source-wordcount: '1006'
+ht-degree: 97%
 
 ---
 
@@ -19,25 +19,21 @@ Saiba mais sobre o ambiente de compilação do Cloud Manager e como ele cria e t
 O Cloud Manager compila e testa seu código usando um ambiente de compilação especializado.
 
 * O ambiente de compilação se baseia em Linux, derivado do Ubuntu 18.04.
-* Com o [Versão de outubro de 2023 do Cloud Manager,](/help/implementing/cloud-manager/release-notes/current.md) As versões do Java e do Maven estão sendo atualizadas continuamente.
-   * O Apache Maven 3.6.0 ou 3.8.8 está instalado.
-   * As versões do Java instaladas são Oracle JDK 8u202 e Oracle JDK 11.0.2. ou Oracle JDK 8u371 e Oracle JDK 11.0.20.
-   * Por padrão, a variável `JAVA_HOME` a variável de ambiente está definida como `/usr/lib/jvm/jdk1.8.0_202` que contém o JDK 8u202 do Oracle ou `/usr/lib/jvm/jdk1.8.0_371` que contém o JDK 8u371 do Oracle. Consulte a [Versão alternativa do JDK de execução do Maven](#alternate-maven-jdk-version) para obter mais detalhes.
+* O Apache Maven 3.8.8 está instalado.
+* As versões do Java instaladas são Oracle JDK 8u371 e Oracle JDK 11.0.20.
+* Por padrão, a variável de ambiente `JAVA_HOME` está definida como `/usr/lib/jvm/jdk1.8.0_371`, que contém o Oracle JDK 8u371. Consulte a [Versão alternativa do JDK de execução do Maven](#alternate-maven-jdk-version) para obter mais detalhes.
 * Há alguns pacotes de sistema adicionais instalados que são necessários.
-
    * `bzip2`
    * `unzip`
    * `libpng`
    * `imagemagick`
    * `graphicsmagick`
-
 * Outros pacotes podem ser instalados no momento da compilação, conforme descrito na seção [Instalação de pacotes de sistema adicionais.](#installing-additional-system-packages)
 * Cada compilação é feita em um ambiente primitivo; o contêiner de compilação não mantém nenhum estado entre as execuções.
 * O Maven é sempre executado com os três comandos a seguir.
-
-* `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
-* `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
-* `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
+   * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
+   * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
+   * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 * O Maven é configurado em nível de sistema com um arquivo `settings.xml`, que inclui automaticamente o repositório público de artefatos da Adobe usando um perfil chamado `adobe-public`. (Consulte [Repositório público Maven da Adobe](https://repo1.maven.org/) para obter mais detalhes).
 
 >[!NOTE]
