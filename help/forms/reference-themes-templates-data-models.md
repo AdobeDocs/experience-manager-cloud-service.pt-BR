@@ -2,14 +2,20 @@
 title: Como obter temas de referência e modelos para formulários AEM?
 description: O AEM Forms fornece exemplos de temas, modelos e modelos de dados de formulário de formulários adaptáveis para ajudá-lo a criar formulários rapidamente.
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: dd0c45352ea402065c7c6fced1394849ed9c316c
 workflow-type: tm+mt
-source-wordcount: '841'
-ht-degree: 17%
+source-wordcount: '864'
+ht-degree: 18%
 
 ---
 
 # Temas de referência, modelos e modelos de dados de formulário {#reference-themes-templates-and-data-models}
+
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| Componentes principais dos formulários adaptáveis | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) |
+| AEM as a Cloud Service | Este artigo |
 
 <span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
