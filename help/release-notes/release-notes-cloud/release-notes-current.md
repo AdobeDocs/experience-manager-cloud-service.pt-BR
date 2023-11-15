@@ -3,7 +3,7 @@ title: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud S
 description: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: f1af229fa0fb75a6181eae545ac7e51b31f212f7
+source-git-commit: afb3de515336d3d13b392f8fcc4d263f4f063689
 workflow-type: tm+mt
 source-wordcount: '920'
 ht-degree: 20%
