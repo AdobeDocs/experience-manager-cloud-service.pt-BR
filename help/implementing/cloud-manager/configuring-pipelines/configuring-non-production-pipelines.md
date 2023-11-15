@@ -3,9 +3,9 @@ title: Configurar pipelines de não produção
 description: Saiba como configurar pipelines de não produção para testar a qualidade do código antes de implantar em ambientes de produção.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: ecb168e9261b3e3ed89e4cbe430b3da9f777a795
+source-git-commit: b47b1998fe716a8409d8d3cf0102e25c48828819
 workflow-type: tm+mt
-source-wordcount: '1290'
+source-wordcount: '1288'
 ht-degree: 80%
 
 ---
@@ -121,7 +121,7 @@ Uma implantação direcionada implanta o código somente em partes selecionadas 
 >
 >* Se existir um pipeline de código da Web para o ambiente selecionado, essa seleção será desabilitada.
 >* Se você tiver um pipeline de pilha completa existente implantando em um ambiente, a criação de um pipeline de configuração no nível da Web para o mesmo ambiente fará com que a configuração existente no pipeline de pilha completa seja ignorada.
-> * Em um dado momento, somente pode haver um pipeline de implantação de configuração por ambiente.
+> * Em um dado momento, somente pode haver um pipeline de configuração por ambiente.
 
 As etapas para concluir a criação do pipeline de implantação de destino e não produção são as mesmas depois de escolher um tipo de implantação.
 
@@ -145,7 +145,7 @@ As etapas para concluir a criação do pipeline de implantação de destino e n�
       * Insira os primeiros caracteres do nome da ramificação e utilize o preenchimento automático deste campo. O recurso encontra as ramificações correspondentes que você pode selecionar.
    * **Localização do código**: essa opção define o caminho na ramificação do repositório selecionado do qual o pipeline deve recuperar o código.
 
-   ![Pipeline de implantação de configuração](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment.png)
+   ![Configurar pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment.png)
 
 1. Clique em **Salvar**.
 

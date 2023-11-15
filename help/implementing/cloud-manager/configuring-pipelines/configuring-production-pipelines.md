@@ -3,9 +3,9 @@ title: Configuração de pipelines de produção
 description: Saiba como configurar pipelines de produção para compilar e implantar seu código em ambientes de produção.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: edc5d88b4ffc4e13299d21f6579f5f52c40e0773
+source-git-commit: b47b1998fe716a8409d8d3cf0102e25c48828819
 workflow-type: tm+mt
-source-wordcount: '1420'
+source-wordcount: '1418'
 ht-degree: 80%
 
 ---
@@ -132,7 +132,7 @@ Uma implantação direcionada implanta o código somente em partes selecionadas 
 >
 >* Se existir um pipeline de código da Web para o ambiente selecionado, essa seleção será desabilitada.
 >* Se você tiver um pipeline de pilha completa existente implantando em um ambiente, a criação de um pipeline de configuração no nível da Web para o mesmo ambiente fará com que a configuração existente no pipeline de pilha completa seja ignorada.
-> * Em um dado momento, somente pode haver um pipeline de implantação de configuração por ambiente.
+> * Em um dado momento, somente pode haver um pipeline de configuração por ambiente.
 
 As etapas para concluir a criação do pipeline de implantação de produção direcionada são as mesmas depois de escolher um tipo de implantação.
 
@@ -158,7 +158,7 @@ As etapas para concluir a criação do pipeline de implantação de produção d
    * **Pausar antes de implantar na produção** - Essa opção pausa o pipeline antes de implantar na produção.
    * **Agendado** - Essa opção permite que o usuário habilite a implantação de produção agendada. Disponível somente para implantações direcionadas no nível da Web.
 
-   ![Pipeline de implantação de configuração](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-config-deployment.png)
+   ![Configurar pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-config-deployment.png)
 
 1. Clique em **Salvar**.
 

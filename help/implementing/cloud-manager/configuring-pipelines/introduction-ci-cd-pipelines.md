@@ -3,9 +3,9 @@ title: Pipelines de CI/CD
 description: Saiba mais sobre os pipelines de CI/CD do Cloud Manager e como eles podem ser usados para implantar seu código com eficiência.
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: ecb168e9261b3e3ed89e4cbe430b3da9f777a795
+source-git-commit: b47b1998fe716a8409d8d3cf0102e25c48828819
 workflow-type: tm+mt
-source-wordcount: '1448'
+source-wordcount: '1443'
 ht-degree: 92%
 
 ---
@@ -53,7 +53,7 @@ Um pipeline de não produção serve principalmente para executar verificações
 Além de produção e não produção, os pipelines podem ser diferenciados pelo tipo de código que implantam.
 
 * **[Pipelines de pilha completa](#full-stack-pipeline)** - Implanta simultaneamente compilações de código de back-end e front-end contendo um ou mais aplicativos de servidor do AEM, juntamente com configurações HTTPD/Dispatcher.
-* **[Configuração de pipelines de implantação](#config-deployment-pipeline)** - Defina as configurações no ambiente AEM, tarefas de manutenção, regras CDN e muito mais.
+* **[Configuração de pipelines](#config-deployment-pipeline)** - Defina as configurações no ambiente AEM, tarefas de manutenção, regras CDN e muito mais.
 * **[Pipelines de front-end](#front-end)** - Implantam compilações de código de front-end contendo um ou mais aplicativos de interface do usuário do lado do cliente.
 * **[Pipelines de configuração no nível da Web](#web-tier-config-pipelines)** - Implanta configurações HTTPD/Dispatcher.
 
@@ -111,15 +111,15 @@ Para saber como configurar pipelines de pilha completa, consulte os documentos a
 * [Adição de um pipeline de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code)
 * [Configuração de um pipeline de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code)
 
-## Configuração de pipelines de implantação {#config-deployment-pipeline}
+## Configuração de pipelines {#config-deployment-pipeline}
 
-Com um pipeline de implantação de configuração, você pode implantar configurações no ambiente AEM para tarefas de manutenção, regras CDN e muito mais.
+Com um pipeline de configuração, você pode implantar configurações no ambiente AEM para tarefas de manutenção, regras CDN e muito mais.
 
 Consulte o documento [Regras de filtro de tráfego incluindo regras WAF](/help/security/traffic-filter-rules-including-waf.md) para saber como gerenciar as configurações no repositório para que sejam implantadas corretamente.
 
-### Configuração de pipelines de implantação {#configure-config-deployment}
+### Configuração de pipelines de configuração {#configure-config-deployment}
 
-Para saber como configurar pipelines de implantação de configuração, consulte os seguintes documentos:
+Para saber como configurar pipelines de configuração, consulte os seguintes documentos:
 
 * [Adição de um pipeline de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment)
 * [Configuração de um pipeline de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#targeted-deployment)
