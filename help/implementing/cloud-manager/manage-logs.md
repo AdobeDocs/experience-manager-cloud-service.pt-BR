@@ -2,10 +2,10 @@
 title: Acesso e gerenciamento de registros
 description: Saiba como acessar e gerenciar logs para auxiliar seu processo de desenvolvimento no AEM as a Cloud Service.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '267'
-ht-degree: 100%
+source-git-commit: c4bd0390fc67b3d8e985c0cd2b1f436ae13420ee
+workflow-type: tm+mt
+source-wordcount: '313'
+ht-degree: 87%
 
 ---
 
@@ -83,3 +83,8 @@ Consulte os seguintes recursos adicionais para saber mais sobre a API do Cloud M
 
 * [Documentação da API do Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager)
 * [CLI do Adobe I/O](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+
+Consulte os seguintes recursos adicionais para saber mais sobre arquivos de log no AEM as a Cloud Service:
+
+* [Arquivos de registro AEM da nuvem 5](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files.html)
+* [Depuração do AEM as a Cloud Service usando logs](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html?lang=pt-BR)
