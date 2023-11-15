@@ -3,7 +3,7 @@ title: Pesquisar práticas recomendadas para [!DNL Adobe Experience Manager] as 
 description: Práticas recomendadas para pesquisar, localizar e recuperar metadados de ativos no aplicativo.
 contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
-source-git-commit: a3f7564932e7f9318841623376f62dad91ceca18
+source-git-commit: 6638298056f2dae027db4df8c31c3fd59812a56b
 workflow-type: tm+mt
 source-wordcount: '2544'
 ht-degree: 3%
@@ -46,9 +46,7 @@ Você pode tornar a pesquisa mais específica adicionando sua palavra-chave de p
 
 A pesquisa exibirá resultados semelhantes se você estiver trabalhando na **[!UICONTROL Exibição de ativos]** também.
 
-<!--
 >[!VIDEO](https://video.tv.adobe.com/v/3425489)
--->
 
 ## Arquivos e pastas {#files-folders}
 
@@ -69,9 +67,7 @@ Selecione a pasta no caminho e navegue até a pasta desejada se desejar pesquisa
 
 ![Pesquisar usando arquivos e pastas](assets/files-folders.png)
 
-<!--
 >[!VIDEO](https://video.tv.adobe.com/v/3425487)
--->
 
 ## Operadores {#operators}
 
@@ -123,9 +119,7 @@ O asterisco é um operador curinga usado para ampliar sua pesquisa digitando men
 * `car*` retorna ativos com lavagem de carro, transportadora, transporte e assim por diante.
 * `*car` retorna ativos com carro moderno, carro esportivo e assim por diante.
 
-<!--
 >[!VIDEO](https://video.tv.adobe.com/v/3425488)
--->
 
 **[!UICONTROL Exibição de ativos]** não aceita o uso de curingas.
 
@@ -193,9 +187,7 @@ Para pesquisar ativos usando o cenário mencionado no **[!UICONTROL Exibição d
 1. Ir para filtros de pesquisa.
 1. Vá para Filtros. Em [!UICONTROL Tipo MIME], selecionar todos os tipos MIME fornecidos, mas Desmarcar PNG.
 
-<!--
 >[!VIDEO](https://video.tv.adobe.com/v/3425486)
--->
 
 ## Pesquisa avançada {#advanced-search}
 
@@ -249,9 +241,7 @@ Você pode capturar um critério específico usando vários filtros de pesquisa.
 
 A pesquisa exibirá resultados semelhantes se você estiver trabalhando na **[!UICONTROL Exibição de ativos]** também.
 
-<!--
->[!VIDEO](https://video.tv.adobe.com/v/3425490)  
--->
+>[!VIDEO](https://video.tv.adobe.com/v/3425490)
 
 **Cenário 9: encontrar correspondência semelhante para carro de cor vermelha**
 
