@@ -3,9 +3,9 @@ title: Pipelines de CI/CD
 description: Saiba mais sobre os pipelines de CI/CD do Cloud Manager e como eles podem ser usados para implantar seu código com eficiência.
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: b47b1998fe716a8409d8d3cf0102e25c48828819
+source-git-commit: 8b8f10bfaad2d8d7d409384e01a2c65a588d77e0
 workflow-type: tm+mt
-source-wordcount: '1443'
+source-wordcount: '1423'
 ht-degree: 92%
 
 ---
@@ -53,7 +53,7 @@ Um pipeline de não produção serve principalmente para executar verificações
 Além de produção e não produção, os pipelines podem ser diferenciados pelo tipo de código que implantam.
 
 * **[Pipelines de pilha completa](#full-stack-pipeline)** - Implanta simultaneamente compilações de código de back-end e front-end contendo um ou mais aplicativos de servidor do AEM, juntamente com configurações HTTPD/Dispatcher.
-* **[Configuração de pipelines](#config-deployment-pipeline)** - Defina as configurações no ambiente AEM, tarefas de manutenção, regras CDN e muito mais.
+* **[Configuração de pipelines](#config-deployment-pipeline)** - Configurar e implantar regras de filtro de tráfego, incluindo regras WAF, em minutos
 * **[Pipelines de front-end](#front-end)** - Implantam compilações de código de front-end contendo um ou mais aplicativos de interface do usuário do lado do cliente.
 * **[Pipelines de configuração no nível da Web](#web-tier-config-pipelines)** - Implanta configurações HTTPD/Dispatcher.
 
@@ -113,7 +113,7 @@ Para saber como configurar pipelines de pilha completa, consulte os documentos a
 
 ## Configuração de pipelines {#config-deployment-pipeline}
 
-Com um pipeline de configuração, você pode implantar configurações no ambiente AEM para tarefas de manutenção, regras CDN e muito mais.
+Com um pipeline de configuração, você pode configurar e implantar regras de filtro de tráfego, incluindo regras WAF, em minutos.
 
 Consulte o documento [Regras de filtro de tráfego incluindo regras WAF](/help/security/traffic-filter-rules-including-waf.md) para saber como gerenciar as configurações no repositório para que sejam implantadas corretamente.
 
@@ -129,10 +129,6 @@ Para saber como configurar pipelines de configuração, consulte os seguintes do
 O código de front-end é qualquer código que é servido como arquivos estáticos. Ele é separado do código de interface fornecido pelo AEM e pode incluir temas de site, SPAs definidos pelo cliente, SPAs comuns e outras soluções.
 
 Os pipelines de front-end ajudam as equipes a agilizar o processo de design e desenvolvimento, permitindo uma implantação mais rápida do código de front-end de forma assíncrona ao desenvolvimento de back-end. Esse pipeline dedicado implanta JavaScript e CSS na camada de distribuição do AEM como um tema, resultando em uma nova versão de tema que pode ser referenciada a partir de páginas entregues pelo AEM.
-
->[!IMPORTANT]
->
->É necessário o AEM versão `2021.10.5933.20211012T154732Z ` ou superior com o AEM Sites habilitado para usar pipelines de front-end.
 
 >[!NOTE]
 >
