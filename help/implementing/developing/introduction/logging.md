@@ -2,9 +2,9 @@
 title: Registro para AEM as a Cloud Service
 description: Saiba como usar o Logging para AEM as a Cloud Service para configurar parâmetros globais para o serviço de log central, configurações específicas para os serviços individuais ou como solicitar o registro de dados.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 8f20876be6b01e1994fb8f91d4a1b4a113588a3e
+source-git-commit: 12bdd43b870e30984e2812baea956e06ca7c879c
 workflow-type: tm+mt
-source-wordcount: '2657'
+source-wordcount: '2683'
 ht-degree: 3%
 
 ---
@@ -523,7 +523,8 @@ Observe que o recurso de encaminhamento do Splunk ainda não oferece suporte a l
 "cache": "PASS",
 "status": 200,
 "res_age": 0,
-"pop": "PAR"
+"pop": "PAR",
+"rules": "match=Enable-SQL-Injection-and-XSS-waf-rules-globally,waf=SQLI,action=blocked"
 }
 ```
 
@@ -547,6 +548,8 @@ Os logs CDN são distintos dos outros logs no sentido de que seguem um formato j
 | *status* | O código do status HTTP como um valor inteiro. |
 | *res_age* | A quantidade de tempo (em segundos) que uma resposta foi armazenada em cache (em todos os nós). |
 | *pop* | Centro de dados do servidor de cache CDN. |
+| *regras* | Os nomes de qualquer correspondência [regras de filtro de tráfego](/help/security/traffic-filter-rules-including-waf.md) e sinalizadores WAF, também indicando se a correspondência resultou em um bloqueio. Vazio se nenhuma regra for correspondente. |
+
 
 ## Como acessar logs {#how-to-access-logs}
 
