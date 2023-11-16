@@ -3,9 +3,9 @@ title: Pesquisar práticas recomendadas para [!DNL Adobe Experience Manager] as 
 description: Práticas recomendadas para pesquisar, localizar e recuperar metadados de ativos no aplicativo.
 contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
-source-git-commit: 6638298056f2dae027db4df8c31c3fd59812a56b
+source-git-commit: b3b2cc516743243fbfdcf6189bfd851a1272bf78
 workflow-type: tm+mt
-source-wordcount: '2544'
+source-wordcount: '2520'
 ht-degree: 3%
 
 ---
@@ -38,11 +38,11 @@ Os resultados da pesquisa que correspondem a todos os termos de pesquisa em camp
 
 Especificar `classic car` como a palavra-chave de pesquisa e clique em Pesquisar. É possível exibir as sugestões de pesquisa em uma lista suspensa à medida que você digita a palavra-chave. As sugestões de pesquisa se baseiam no conteúdo do índice de pesquisa na implantação do Experience Manager. Se não conseguir exibir os ativos apropriados no menu suspenso, pressione a tecla Enter para exibir a lista de resultados. Os resultados são classificados por relevância, a partir das correspondências mais próximas.
 
-![Executando método de pesquisa básica 1](assets/simple-search-1.png)
+<!--![Performing basic search method 1](assets/simple-search-1.png)-->
 
 Você pode tornar a pesquisa mais específica adicionando sua palavra-chave de pesquisa entre aspas duplas (&quot; &quot;). Essa pesquisa inclui somente ativos que contêm os termos especificados juntos. Os critérios de pesquisa se parecem com - `"classic car"`. Portanto, os resultados da pesquisa com ambos os termos `classic` e `car` são exibidas.
 
-![Localizando correspondência exata](assets/simple-search-2.png)
+<!--![Finding exact match](assets/simple-search-2.png)-->
 
 A pesquisa exibirá resultados semelhantes se você estiver trabalhando na **[!UICONTROL Exibição de ativos]** também.
 
@@ -65,7 +65,7 @@ Para chegar a esse cenário, execute as etapas abaixo:
 Selecione a pasta no caminho e navegue até a pasta desejada se desejar pesquisar na pasta específica.
 3. Selecione Arquivos na lista suspensa para exibir todos os arquivos com a palavra-chave `classic car`.
 
-![Pesquisar usando arquivos e pastas](assets/files-folders.png)
+<!--![Search using files and folders](assets/files-folders.png)-->
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425487)
 
@@ -164,7 +164,7 @@ Execute as seguintes etapas no **[!UICONTROL Exibição do administrador]**:
 1. Selecionar [!UICONTROL PDF].
 1. Ir para [!UICONTROL Status] > [!UICONTROL Publish] > [!UICONTROL Não publicado].
 
-![Exemplo de filtro 2](assets/filter-2.png)
+<!--![Filter example 2](assets/filter-2.png)-->
 
 Execute as seguintes etapas no **[!UICONTROL Exibição de ativos]**:
 
@@ -180,7 +180,7 @@ Quando não tiver certeza sobre o título ou a metadescrição de um ativo, voc�
 1. Vá para Filtros. Em [!UICONTROL Tipo de arquivo], expandir [!UICONTROL Imagens] e selecione [!UICONTROL Habilitado para Web]
 1. Desmarque PNG.
 
-![Pesquisar todas as imagens, exceto jeep](assets/images-png.png)
+<!--![Search all images except jeep](assets/images-png.png)-->
 
 Para pesquisar ativos usando o cenário mencionado no **[!UICONTROL Exibição de ativos]**, siga as etapas abaixo:
 
@@ -203,7 +203,7 @@ Para executar uma pesquisa para o cenário 6:
 2. Navegue até o painel Filtros e selecione Documentos em Tipo de arquivo.
 3. Refine sua pesquisa usando o curinga asterisco. Tipo `"classic car"` para pesquisar todos os ativos que contêm a variável `classic car` palavra-chave.
 
-![Cenário 6](assets/scenario-6.png)
+<!--![Scenario 6](assets/scenario-6.png)-->
 
 O cenário 6 não é possível executar no **[!UICONTROL Exibição de ativos]** como não suporta o uso de curingas.
 
@@ -213,7 +213,7 @@ Para executar uma pesquisa para o cenário 7:
 
 Digite o `car - classic` palavra-chave na barra de pesquisa. Navegue até o painel Filtros e selecione Documentos em Tipo de arquivo. A ordem de prioridade da pesquisa se baseia no seguinte: Prioridade 1: Prioridade de metadados 2: Tags inteligentes
 
-![Cenário 7](assets/scenario-7.png)
+<!--![Scenario 7](assets/scenario-7.png)-->
 
 O cenário 7 não pode ser executado no **[!UICONTROL Exibição de ativos]** como não suporta o uso de curingas.
 
@@ -237,7 +237,7 @@ When you are unsure about the title or meta description of an asset, you can use
 
 Você pode capturar um critério específico usando vários filtros de pesquisa. Tag é uma palavra-chave atribuída a um ativo para torná-lo identificável entre um grande número de ativos. Por exemplo, neste cenário, pesquise por ativos com *jipe* nela. Para fazer isso, digite `tags:jeep` na barra de pesquisa. Somente os ativos que atendem a esse critério são listados nos resultados da pesquisa.
 
-![Pesquisar usando tags](assets/search-tags.png)
+<!--![Search using tags](assets/search-tags.png)-->
 
 A pesquisa exibirá resultados semelhantes se você estiver trabalhando na **[!UICONTROL Exibição de ativos]** também.
 
