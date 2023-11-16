@@ -2,10 +2,10 @@
 title: Acesso e gerenciamento de registros
 description: Saiba como acessar e gerenciar logs para auxiliar seu processo de desenvolvimento no AEM as a Cloud Service.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: c4bd0390fc67b3d8e985c0cd2b1f436ae13420ee
+source-git-commit: 7272f6ebd1b9c4e67985cba0221d8cafbeb1560a
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 87%
+source-wordcount: '345'
+ht-degree: 79%
 
 ---
 
@@ -18,7 +18,7 @@ Você pode acessar uma lista de arquivos de log disponíveis para o ambiente sel
 
 ## Download de logs {#download-logs}
 
-Para baixar os logs, faça o seguinte.
+Para baixar os logs, faça o seguinte:
 
 1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização e o programa apropriado.
 
@@ -32,11 +32,17 @@ Para baixar os logs, faça o seguinte.
 
    ![Caixa de diálogo Baixar logs](assets/download-preview.png)
 
+   No caso [Regiões de publicação adicionais](/help/operations/additional-publish-regions.md) estiverem habilitados para o seu ambiente, você poderá selecionar cada região e baixar os registros separadamente, conforme mostrado abaixo:
+
+   ![Baixar logs para regiões de publicação adicionais](assets/download-publish-region-logs.png)
+
 1. Após selecionar o serviço, clique no ícone de download ao lado do log que deseja recuperar.
 
 Você também pode acessar os logs na página **Ambientes**.
 
 ![Logs na tela Ambientes](assets/download-logs.png)
+
+
 
 ## Logs por meio da API {#logs-through-api}
 

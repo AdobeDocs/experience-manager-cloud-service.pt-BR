@@ -2,10 +2,10 @@
 title: Regiões de publicação adicionais
 description: Saiba como o AEM as a Cloud Service permite regiões de publicação adicionais para aumentar a disponibilidade e reduzir a latência.
 exl-id: b9ac3c6a-eb8b-461d-8f1d-a0356046a3f9
-source-git-commit: 4f11d1958cbfb252f29a7815af8800426d945ebd
+source-git-commit: c0c669f847c9ef64b1fa22cfc24ac693c3c8ad90
 workflow-type: tm+mt
-source-wordcount: '606'
-ht-degree: 89%
+source-wordcount: '639'
+ht-degree: 84%
 
 ---
 
@@ -46,6 +46,10 @@ Conforme descrito abaixo na seção Considerações avançadas sobre rede, é re
 Quando uma região de publicação adicional é habilitada em um programa com uma rede avançada já configurada, o tráfego na região de publicação adicional que corresponde às regras de redes avançadas será roteado por padrão pela região principal. Para aproveitar o aumento da disponibilidade, é recomendável habilitar a rede avançada nas regiões adicionais.
 
 Consulte a seção [Configuração de rede avançada para regiões de publicação adicionais](/help/security/configuring-advanced-networking.md#advanced-networking-configuration-for-additional-publish-regions) na documentação de Redes avançadas para obter mais detalhes, incluindo como adicionar configurações de rede avançada a regiões adicionais sem incorrer em perda de conectividade.
+
+## Logs {#logging}
+
+Se regiões de publicação adicionais estiverem ativadas, logs separados para cada região serão disponibilizados por meio do Cloud Manager. Para obter mais informações, consulte [Acesso e gerenciamento de registros](/help/implementing/cloud-manager/manage-logs.md) e [Logs para regiões de publicação adicionais](/help/implementing/developing/introduction/logging.md#logs-for-additional-publish-regions).
 
 ## Limitações {#limitations}
 

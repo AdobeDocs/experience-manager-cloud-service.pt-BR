@@ -2,9 +2,9 @@
 title: Registro para AEM as a Cloud Service
 description: Saiba como usar o Logging para AEM as a Cloud Service para configurar parâmetros globais para o serviço de log central, configurações específicas para os serviços individuais ou como solicitar o registro de dados.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 12bdd43b870e30984e2812baea956e06ca7c879c
+source-git-commit: 9d1aab8f615f9e6aa9751fe978a56c915c9a8797
 workflow-type: tm+mt
-source-wordcount: '2683'
+source-wordcount: '2757'
 ht-degree: 3%
 
 ---
@@ -556,6 +556,16 @@ Os logs CDN são distintos dos outros logs no sentido de que seguem um formato j
 ### Ambientes em nuvem {#cloud-environments}
 
 Os logs as a Cloud Service do AEM para serviços em nuvem podem ser acessados por meio de download na interface do Cloud Manager ou acompanhando os logs na linha de comando usando a interface de linha de comando Adobe I/O. Para obter mais informações, consulte [Documentação de registro do Cloud Manager](/help/implementing/cloud-manager/manage-logs.md).
+
+### Logs para regiões de publicação adicionais {#logs-for-additional-publish-regions}
+
+Se Regiões de publicação adicionais estiverem ativadas para um ambiente específico, os logs de cada região estarão disponíveis para download no Cloud Manager, conforme mencionado acima.
+
+Os logs do AEM e os logs do Dispatcher para as Regiões de publicação adicionais especificarão a região nas primeiras 3 letras após a ID do ambiente, como exemplificado por **nld2** na amostra abaixo, que se refere a uma instância de publicação adicional do AEM localizada nos Países Baixos:
+
+```
+cm-p7613-e12700-nld2-aem-publish-bcbb77549-5qmmt 127.0.0.1 - 07/Nov/2023:23:57:11 +0000 "HEAD /libs/granite/security/currentuser.json HTTP/1.1" 200 - "-" "Java/11.0.19"
+```
 
 ### SDK local {#local-sdk}
 
