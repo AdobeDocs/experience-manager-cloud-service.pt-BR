@@ -4,10 +4,10 @@ description: A Automação de configuração da Experience Cloud oferece uma man
 feature: Administering
 role: Admin
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
-workflow-type: ht
-source-wordcount: '754'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '751'
+ht-degree: 96%
 
 ---
 
@@ -46,7 +46,7 @@ O ambiente agora deve estar pronto para a automação de configuração da Exper
 1. Navegue até **Sites** e selecione a raiz do site a ser integrado ao Adobe Analytics.
 1. Expanda o menu do painel lateral e toque em **Configurar o Analytics**.
 
-   Esta é uma nova opção no painel lateral que abrirá um painel e fornecerá controles e status para a Automação de configuração do Experience Cloud.
+   Esta é uma nova opção no painel lateral que abre um painel e fornece controles e status para a Automação de configuração do Experience Cloud.
 1. Toque no botão **Integrar o Analytics**.
 1. Na caixa de diálogo resultante, forneça um nome para a **ID do conjunto de relatórios**.
 

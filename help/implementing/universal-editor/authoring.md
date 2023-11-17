@@ -2,10 +2,10 @@
 title: Criação de conteúdo com o Editor universal
 description: Saiba como é fácil e intuitivo para os autores criarem conteúdo utilizando o Editor universal.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: c6d4300e6e031a4958277fa3bce251ac6aa5dbc9
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2442'
-ht-degree: 47%
+source-wordcount: '2432'
+ht-degree: 45%
 
 ---
 
@@ -38,7 +38,7 @@ Para criar conteúdo para um aplicativo usando o editor universal, o aplicativo 
 
 ## Fazer logon {#sign-in}
 
-Após o aplicativo ser instrumentado para funcionar com o Editor universal, será necessário fazer logon no Editor universal. Você precisará de uma Adobe ID para fazer logon e [ter acesso ao Editor universal.](getting-started.md#request-access)
+Depois que o aplicativo é instrumentado para funcionar com o Editor universal, entre no Editor universal. Você precisa de uma Adobe ID para entrar e [ter acesso ao Universal Editor.](getting-started.md#request-access)
 
 Após fazer logon, digite o URL da página que deseja editar na [barra de localização.](#location-bar) para poder começar a editar conteúdo como [conteúdo de texto](#text-mode) ou [conteúdo de mídia.](#media-mode)
 
@@ -146,7 +146,7 @@ Tocar ou clicar no ícone de emulação revelará as opções.
 
 ![Opções de emulação](assets/emulation-options.png)
 
-Por padrão, o editor será aberto no layout do desktop, onde a altura e a largura são definidas automaticamente pelo navegador.
+Por padrão, o editor é aberto no layout de desktop, onde a altura e a largura são definidas automaticamente pelo navegador.
 
 Também é possível optar por emular um dispositivo móvel e, no editor universal:
 
@@ -192,7 +192,7 @@ No modo de visualização, a página é renderizada no editor da maneira como se
 
 #### Modo de componentes {#component-mode}
 
-No modo de componentes, o autor de conteúdo pode clicar em para selecionar componentes e editá-los, incluindo:
+No modo de componentes, o autor de conteúdo pode selecionar componentes para editá-los, incluindo:
 
 * [Edição de texto simples](#editing-content) em vigor.
 * [Edição de rich text](#editing-rich-text) no local com opções adicionais de formatação exibidas no painel de propriedades.

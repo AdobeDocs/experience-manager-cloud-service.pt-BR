@@ -2,9 +2,9 @@
 title: Registro de players no Screens as a Cloud Service
 description: Esta página descreve como registrar players no Screens as a Cloud Service.
 exl-id: 1a0d6b22-71b1-4f3c-acaa-82d8d9c0f81a
-source-git-commit: fb82970154fa37e3b3d1591a2e25989853ec6b90
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '499'
 ht-degree: 1%
 
 ---
@@ -44,18 +44,18 @@ Siga as etapas abaixo para registrar seu reprodutor:
    1. **Limitar uso**: Alterne o botão para desativar o limite de uso do código de registro. Por padrão, a opção Limitar uso está desativada.
    1. **Limite de uso**: escolha o número para o seu limite de uso
 
-1. Clique em **Criar** para criar o código de registro. Você verá seu reprodutor com o código de registro na lista.
+1. Clique em **Criar** para criar o código de registro. Você pode ver seu reprodutor com o código de registro na lista.
 
    ![imagem](/help/screens-cloud/assets/player/register-player3.png)
 
 1. Clique no valor abaixo da coluna **CÓDIGO DE REGISTRO**  para copiar o valor para a área de transferência.
 
-1. Cole esse valor no **Inserir código** no campo **Registro do reprodutor** da interface do Administrador do reprodutor do AEM Screens e clique em **Registrar**.
+1. Cole esse valor no **Inserir código** no campo **Registro do reprodutor** na interface de usuário do Administrador do reprodutor do AEM Screens e clique em **Registrar**.
 
    ![imagem](/help/screens-cloud/assets/player/register-player4.png)
 
 
-1. Depois de adicionar o código, você verá que o reprodutor agora está registrado na interface do administrador do reprodutor.
+1. Ao adicionar o código, você pode ver que o reprodutor agora está registrado na interface do usuário de administração do reprodutor.
 
    ![imagem](/help/screens-cloud/assets/player/register-player5.png)
 

@@ -2,10 +2,10 @@
 title: Teste de interface do usuário
 description: Os testes de interface do usuário personalizados são um recurso opcional que permite criar e executar automaticamente testes na interface do usuário para seus aplicativos personalizados.
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2389'
-ht-degree: 100%
+source-wordcount: '2385'
+ht-degree: 99%
 
 ---
 
@@ -183,7 +183,7 @@ Para incluir um arquivo `testing.properties` no artefato de compilação, adicio
 
 >[!NOTE]
 >
->Se o seu projeto não incluir essa linha, será necessário editar o arquivo para aderir ao teste de interface do usuário.
+>Se o projeto não incluir essa linha, edite o arquivo para aderir ao teste de interface do usuário.
 >
 >O arquivo pode conter uma linha aconselhando a não editá-la. Isso se deve ao fato de ele ter sido introduzido em seu projeto antes da adesão ao teste de interface e não havia a intenção de que os clientes editassem o arquivo. Pode ser ignorado com segurança.
 

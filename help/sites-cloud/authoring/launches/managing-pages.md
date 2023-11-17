@@ -2,10 +2,10 @@
 title: Gerenciar páginas no seu lançamento
 description: Você pode criar novas páginas no lançamento. Também é possível excluir páginas indesejadas.
 exl-id: 214c8c2f-d09a-4ce9-b474-9505b76084f7
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '290'
-ht-degree: 100%
+source-wordcount: '289'
+ht-degree: 94%
 
 ---
 
@@ -25,34 +25,32 @@ Com os lançamentos, você pode:
 * Editor de páginas:
 
    * Selecione **Navegar** para abrir a estrutura do lançamento no console:
-      ![Navegar no lançamento a partir do editor de páginas](/help/sites-cloud/authoring/assets/launches-navigate-page-editor.png)
+     ![Navegar no lançamento a partir do editor de páginas](/help/sites-cloud/authoring/assets/launches-navigate-page-editor.png)
 
-      >[!NOTE]
-      >
-      >Também é possível:
-      >
-      >* **Sair** do lançamento e retornar à edição da página de origem
-
+     >[!NOTE]
+     >
+     >Também é possível:
+     >
+     >* **Sair** do lançamento e retornar à edição da página de origem
 
 * Console **Lançamentos**: se você selecionar um lançamento específico, poderá selecionar **Gerenciar conteúdo**:
-   ![Console Lançamento — Gerenciar conteúdo](/help/sites-cloud/authoring/assets/launches-navigate-launches-console.png)
+  ![Console Lançamento — Gerenciar conteúdo](/help/sites-cloud/authoring/assets/launches-navigate-launches-console.png)
 
 * Console **Sites**: se você selecionar uma página de origem específica e abrir as **Referências**, você pode selecionar **Lançamentos**, seguido de **Gerenciar conteúdo**:
-   ![Console Lançamento — Gerenciar conteúdo](/help/sites-cloud/authoring/assets/launches-navigate-sites-console.png)
+  ![Console Lançamento — Gerenciar conteúdo](/help/sites-cloud/authoring/assets/launches-navigate-sites-console.png)
 
-   >[!NOTE]
-   >
-   >Você também pode selecionar o **Console Lançamentos** para acessar **Gerenciar conteúdo** (e outras ações).
+  >[!NOTE]
+  >
+  >Você também pode selecionar o **Console Lançamentos** para acessar **Gerenciar conteúdo** (e outras ações).
 
-Todos esses pontos de entrada abrirão o lançamento no console Sites, onde é possível:
+Todos esses pontos de entrada abrem a inicialização no console Sites, onde é possível:
 
 * Navegar,
 * **Criar** novas páginas,
 * Selecionar páginas existentes e executar ações; por exemplo, **Editar**, abrir as **Propriedades**, **Bloquear**, **Copiar**, **Colar** e **Excluir**
-
-   ![Navegar pelo lançamento no console Sites a partir de Gerenciar conteúdo](/help/sites-cloud/authoring/assets/launches-navigate-manage-content.png)
+  ![Navegar pelo lançamento no console Sites a partir de Gerenciar conteúdo](/help/sites-cloud/authoring/assets/launches-navigate-manage-content.png)
 * Usar o painel **Referências** para retornar às páginas de **Origem do lançamento**:
-   ![Console Sites — Origem de lançamento](/help/sites-cloud/authoring/assets/launches-navigate-launch-source.png)
+  ![Console Sites — Origem de lançamento](/help/sites-cloud/authoring/assets/launches-navigate-launch-source.png)
 
 ## Adicionar páginas ao lançamento {#add-pages-to-launch}
 

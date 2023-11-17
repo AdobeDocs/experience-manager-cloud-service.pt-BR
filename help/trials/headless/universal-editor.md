@@ -4,9 +4,9 @@ description: Explore como você pode usar o Editor universal para editar qualque
 hidefromtoc: true
 index: false
 exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
-source-git-commit: 2c7ad41ec44ed2627bfcfe206c1b7ba660cef9c0
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '977'
+source-wordcount: '969'
 ht-degree: 11%
 
 ---
@@ -87,7 +87,7 @@ O Editor universal permite interagir com o conteúdo em seu contexto, vendo o co
 
 1. Retorne o emulador ao modo desktop.
 
-Você também pode especificar dimensões exatas para o emulador e girar o dispositivo emulado para exibir o conteúdo em qualquer dispositivo de destino em potencial.
+Você também pode especificar dimensões exatas para o emulador e girar o dispositivo emulado para exibir seu conteúdo em qualquer dispositivo de destino em potencial.
 
 ## Pré-visualização e publicação {#preview}
 

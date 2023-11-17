@@ -2,10 +2,10 @@
 title: Gerenciamento de fragmentos de conteúdo (Ativos - Fragmentos de conteúdo)
 description: Saiba como usar o console de Ativos para gerenciar os fragmentos de conteúdo de AEM, a base do conteúdo headless.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 2a4538ad8b52615ffdee110393bfbc01f57694f4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1877'
-ht-degree: 69%
+source-wordcount: '1873'
+ht-degree: 68%
 
 ---
 
@@ -141,7 +141,7 @@ Para abrir o fragmento para edição:
    * Clicar/tocar no link do fragmento ou fragmento (depende da exibição do console).
    * Selecionar o fragmento e **Editar** na barra de ferramentas.
 
-1. O editor de fragmentos será aberto. Faça as alterações necessárias:
+1. O editor de fragmento é aberto. Faça as alterações necessárias:
 
    ![Editor de fragmento](assets/cfm-managing-03.png)
 
@@ -185,7 +185,7 @@ Alguns recursos na barra de ferramentas superior estão disponíveis em vários 
 
 * Abaixo do nome do fragmento, você pode ver o nome do [Modelo de fragmento de conteúdo](/help/assets/content-fragments/content-fragments-models.md) usado para criar o fragmento atual:
 
-   * O nome também é um link que abrirá o editor de modelo.
+   * O nome também é um link que abre o editor de modelo.
 
 * Veja o status do fragmento; por exemplo, informações sobre quando ele foi criado, modificado ou publicado. O status também é codificado por cores:
 
@@ -199,7 +199,7 @@ Alguns recursos na barra de ferramentas superior estão disponíveis em vários 
 
   >[!WARNING]
   >
-  >O novo editor será aberto na mesma guia. Não é recomendável ter ambos os editores abertos ao mesmo tempo.
+  >O novo editor é aberto na mesma guia. Não é recomendável ter ambos os editores abertos ao mesmo tempo.
 
 * **Salvar** fornece acesso à opção **Salvar e fechar**.
 
@@ -319,7 +319,7 @@ Por exemplo:
 
 A ação **Comparar com atual** fica disponível na [Linha de tempo](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) após selecionar uma versão específica.
 
-Isso abrirá:
+Isso abre:
 
 * a versão (à esquerda) **Atual** (mais recente)
 

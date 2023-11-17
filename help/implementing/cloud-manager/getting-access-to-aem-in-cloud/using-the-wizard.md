@@ -2,10 +2,10 @@
 title: Assistente de criação de projeto
 description: Saiba mais sobre o assistente de criação de projetos para ajudar você a configurar rapidamente seu projeto após criar seu programa de produção.
 exl-id: 03736ca7-1345-4faf-a61a-f9213ab5c89a
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
-workflow-type: ht
-source-wordcount: '312'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '311'
+ht-degree: 96%
 
 ---
 
@@ -25,7 +25,7 @@ Siga estas etapas para criar um projeto de aplicativo AEM no Cloud Manager usand
 
    ![Criar ramificação e projeto](assets/create-wizard2.png)
 
-1. Como opção, clique no divisor para revelar os parâmetros adicionais do seu projeto. Os valores padrão são fornecidos pelo Arquétipo de projeto AEM e geralmente não precisam ser alterados.
+1. Opcionalmente, clique no divisor para revelar os parâmetros adicionais do seu projeto. Os valores padrão são fornecidos pelo Arquétipo de projeto AEM e geralmente não precisam ser alterados.
 
    ![Parâmetros adicionais do projeto](assets/create-wizard5.png)
 

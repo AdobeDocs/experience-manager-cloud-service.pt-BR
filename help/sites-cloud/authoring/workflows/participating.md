@@ -2,10 +2,10 @@
 title: Participar de fluxos de trabalho
 description: Os fluxos de trabalho normalmente incluem etapas que exigem que uma pessoa execute uma atividade em uma página ou ativo.
 exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1536'
-ht-degree: 99%
+source-wordcount: '1527'
+ht-degree: 93%
 
 ---
 
@@ -73,9 +73,9 @@ Nesta ação, você pode indicar:
 Use o procedimento a seguir para concluir o item de trabalho:
 
 1. Abra a **[Caixa de entrada do AEM](/help/sites-cloud/authoring/getting-started/inbox.md)**.
-1. Selecione o item do fluxo do trabalho no qual deseja executar a ação (toque/clique na miniatura).
+1. Selecione o item do fluxo de trabalho que deseja executar a ação (toque/clique na miniatura).
 1. Selecione **Concluído** na barra de ferramentas.
-1. A caixa de diálogo **Item de trabalho concluído** será aberta. Selecione a **Próxima etapa** no seletor suspenso e adicione um **Comentário**, se necessário.
+1. A variável **Item de trabalho concluído** será aberta. Selecione a **Próxima etapa** no seletor suspenso e adicione um **Comentário**, se necessário.
 1. Use **OK** para concluir a etapa (ou o botão **Cancelar** para cancelar a ação).
 
 #### Conclusão de uma etapa do participante - Editor de páginas {#completing-a-participant-step-page-editor}
@@ -84,7 +84,7 @@ Use o procedimento a seguir para concluir o item de trabalho:
 
 1. Abra a [página para edição](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
 1. Selecione **Concluído** na barra de status na parte superior.
-1. A caixa de diálogo **Item de trabalho concluído** será aberta. Selecione a **Próxima etapa** no seletor suspenso e adicione um **Comentário**, se necessário.
+1. A variável **Item de trabalho concluído** será aberta. Selecione a **Próxima etapa** no seletor suspenso e adicione um **Comentário**, se necessário.
 1. Use **OK** para concluir a etapa (ou o botão **Cancelar** para cancelar a ação).
 
 #### Conclusão de uma etapa do participante - Linha do tempo {#completing-a-participant-step-timeline}
@@ -132,9 +132,9 @@ Nesta ação, você pode indicar:
 Use o procedimento a seguir para delegar um item de trabalho:
 
 1. Abra a **[Caixa de entrada do AEM](/help/sites-cloud/authoring/getting-started/inbox.md)**.
-1. Selecione o item do fluxo do trabalho no qual deseja executar a ação (toque/clique na miniatura).
+1. Selecione o item do fluxo de trabalho que deseja executar a ação (toque/clique na miniatura).
 1. Selecione **Delegar** na barra de ferramentas.
-1. Uma caixa de diálogo será aberta. Especifique o **Usuário** no seletor suspenso (também pode ser um grupo) e adicione um **Comentário**, se necessário.
+1. A caixa de diálogo se abre. Especifique o **Usuário** no seletor suspenso (também pode ser um grupo) e adicione um **Comentário**, se necessário.
 1. Use **OK** para concluir a etapa (ou o botão **Cancelar** para cancelar a ação).
 
 #### Delegação de uma etapa do participante - Editor de páginas {#delegating-a-participant-step-page-editor}
@@ -143,7 +143,7 @@ Use o procedimento a seguir para delegar um item de trabalho:
 
 1. Abra a [página para edição](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
 1. Selecione **Delegar** na barra de status na parte superior.
-1. Uma caixa de diálogo será aberta. Especifique o **Usuário** no seletor suspenso (também pode ser um grupo) e adicione um **Comentário**, se necessário.
+1. A caixa de diálogo se abre. Especifique o **Usuário** no seletor suspenso (também pode ser um grupo) e adicione um **Comentário**, se necessário.
 1. Use **OK** para concluir a etapa (ou o botão **Cancelar** para cancelar a ação).
 
 #### Delegação de uma etapa do participante - Linha do tempo {#delegating-a-participant-step-timeline}
@@ -182,7 +182,7 @@ Nesta ação, você pode indicar:
 Use o procedimento a seguir para retroceder:
 
 1. Abra a **[Caixa de entrada do AEM](/help/sites-cloud/authoring/getting-started/inbox.md)**.
-1. Selecione o item do fluxo do trabalho no qual deseja executar a ação (toque/clique na miniatura).
+1. Selecione o item do fluxo de trabalho que deseja executar a ação (toque/clique na miniatura).
 1. Selecione **Retroceder** para abrir a caixa de diálogo.
 1. Especifique a **Etapa anterior** e adicione um **Comentário**, se necessário.
 1. Use **OK** para concluir a etapa (ou o botão **Cancelar** para cancelar a ação).
@@ -243,7 +243,7 @@ Você pode abrir os detalhes do item de trabalho nos seguintes locais:
 Para abrir um item do fluxo de trabalho e exibir os detalhes:
 
 1. Abra a **[Caixa de entrada do AEM](/help/sites-cloud/authoring/getting-started/inbox.md)**.
-1. Selecione o item do fluxo do trabalho no qual deseja executar a ação (toque/clique na miniatura).
+1. Selecione o item do fluxo de trabalho que deseja executar a ação (toque/clique na miniatura).
 1. Selecione **Abrir** para abrir as guias de informações.
 1. Se necessário, selecione a ação apropriada, forneça os detalhes e confirme com **OK** (ou **Cancelar**).
 1. Use **Salvar** ou **Cancelar** para sair.
@@ -264,7 +264,7 @@ Para abrir um item do fluxo de trabalho e exibir os detalhes:
 Para exibir o conteúdo e os recursos da instância de fluxo de trabalho:
 
 1. Abra a **[Caixa de entrada do AEM](/help/sites-cloud/authoring/getting-started/inbox.md)**.
-1. Selecione o item do fluxo do trabalho no qual deseja executar a ação (toque/clique na miniatura).
+1. Selecione o item do fluxo de trabalho que deseja executar a ação (toque/clique na miniatura).
 1. Selecione **Exibir carga** na barra de ferramentas para abrir a caixa de diálogo.
    * Como um pacote de fluxo de trabalho é simplesmente uma coleção de setas para os caminhos no repositório, é possível adicionar/remover/modificar as entradas aqui para ajustar o que é referenciado pelo pacote de fluxo de trabalho. Use o componente **Definição de recurso** para adicionar novas entradas.
 1. Os links podem ser usados para abrir páginas individuais.

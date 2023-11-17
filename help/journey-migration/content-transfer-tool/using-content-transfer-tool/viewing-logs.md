@@ -2,10 +2,10 @@
 title: Visualização de logs para um conjunto de migração na ferramenta Transferência de conteúdo
 description: Visualização de logs para um conjunto de migração na ferramenta Transferência de conteúdo
 exl-id: aed1ac83-a2fb-425e-aca4-39cd0bb42fd3
-source-git-commit: 9d236e459f13fec6f0aaf80f588d20760636b9bb
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 39%
+source-wordcount: '244'
+ht-degree: 40%
 
 ---
 
@@ -38,6 +38,6 @@ Em seguida, siga as etapas abaixo:
 
 ### Logs de assimilação
 
-Para visualizar os logs de assimilação, acesse a lista de Trabalhos de assimilação no Cloud Acceleration Manager, localize o trabalho de migração desejado e clique nos três pontos (**..**) do trabalho. É possível clicar em **Baixar log** para baixar logs.
+Para visualizar os logs de assimilação, acesse a lista Trabalhos de assimilação no Cloud Acceleration Manager, localize o trabalho de migração desejado e clique nos três pontos (**..**) do trabalho. É possível clicar em **Baixar log** para baixar logs.
 
 ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam28.png)

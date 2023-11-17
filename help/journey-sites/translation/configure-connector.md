@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: d1a3eb42-e9e4-4118-9ff7-7aab5519cf0d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1164'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '1163'
+ht-degree: 97%
 
 ---
 
@@ -82,7 +82,7 @@ Para criar uma nova configuração de tradução:
 1. Clique ou toque em **Criar** na barra de ferramentas para criar a nova configuração.
 1. Forneça as seguintes informações nos campos e, em seguida, clique ou toque em **Criar**.
    1. Selecione o **Tipo de configuração** no menu suspenso. Selecione **Integração de tradução** na lista.
-   1. Insira um **Título** para sua configuração. O **Título** identifica a configuração no console do **Cloud Services**, bem como nas listas suspensas de propriedade da página.
+   1. Insira um **Título** para sua configuração. O **Título** identifica a configuração no console dos **Cloud Services**, bem como nas listas suspensas de propriedades da página.
    1. Opcionalmente, insira um **Nome** para o nó do repositório que armazena a configuração.
 
    ![Criar configuração de tradução](assets/create-translation-configuration.png)
@@ -133,7 +133,7 @@ Agora que concluiu esta parte da jornada de tradução do AEM Sites, você deve:
 * Compreender os parâmetros fundamentais da estrutura de integração de tradução no AEM.
 * Ser capaz de configurar sua própria conexão com o serviço de tradução.
 
-Aplicar esse conhecimento e prosseguir com sua jornada de tradução no AEM Sites, revisando a seguir o documento [Configurar regras de tradução,](translation-rules.md) onde você aprenderá a definir qual conteúdo traduzir.
+Desenvolva esse conhecimento e continue sua jornada de tradução do AEM Sites revisando o documento a seguir [Configurar regras de tradução,](translation-rules.md) onde você aprende a definir qual conteúdo traduzir.
 
 ## Recursos adicionais {#additional-resources}
 

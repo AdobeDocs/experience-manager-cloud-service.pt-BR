@@ -3,9 +3,9 @@ title: Armazenamento em cache no AEM as a Cloud Service
 description: Saiba mais sobre as noções básicas de armazenamento em cache no AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 469c5f0e115cc57cf7624aecf5b9f45645f2e99a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2878'
+source-wordcount: '2874'
 ht-degree: 2%
 
 ---
@@ -232,7 +232,7 @@ Quando uma solicitação HEAD é recebida na CDN Adobe para um recurso que é **
 
 Os URLs do site frequentemente incluem parâmetros de campanha de marketing que são usados para rastrear o sucesso de uma campanha.
 
-Para ambientes criados em outubro de 2023 ou posteriormente, para melhorar as solicitações de cache, a CDN removerá parâmetros de consulta comuns relacionados a marketing, especificamente aqueles que correspondem ao seguinte padrão regex:
+Para ambientes criados em outubro de 2023 ou posteriormente, para melhores solicitações de cache, a CDN removerá parâmetros de consulta comuns relacionados a marketing, especificamente aqueles que correspondem ao seguinte padrão regex:
 
 ```
 ^(utm_.*|gclid|gdftrk|_ga|mc_.*|trk_.*|dm_i|_ke|sc_.*|fbclid)$

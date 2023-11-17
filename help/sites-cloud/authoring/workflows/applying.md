@@ -2,10 +2,10 @@
 title: Aplicação de fluxos de trabalho a páginas
 description: Ao criar, é possível invocar fluxos de trabalho para realizar ações em suas páginas. Também é possível aplicar mais de um fluxo de trabalho..
 exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
-workflow-type: ht
-source-wordcount: '660'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '657'
+ht-degree: 93%
 
 ---
 
@@ -52,9 +52,7 @@ Você pode iniciar um fluxo de trabalho usando:
 * [a opção Criar da barra de ferramentas Sites](#starting-a-workflow-from-the-sites-toolbar).
 * [o painel Linha do tempo do console Sites](#starting-a-workflow-from-the-timeline).
 
-Em ambos os casos, será necessário:
-
-* [Especificar os detalhes do fluxo de trabalho no assistente de criação de fluxo de trabalho](#specifying-workflow-details-in-the-create-workflow-wizard).
+Em ambos os casos, você deve [Especificar os Detalhes do Fluxo de Trabalho no Assistente de Criação de Fluxo de Trabalho](#specifying-workflow-details-in-the-create-workflow-wizard).
 
 ### Iniciar um fluxo de trabalho a partir da barra de ferramentas Sites {#starting-a-workflow-from-the-sites-toolbar}
 
@@ -123,7 +121,7 @@ Você pode especificar detalhes:
    * Um recurso existente para ver ações adicionais:
 
       * A opção **Incluir tarefas derivadas** especifica que as tarefas derivadas desse recurso sejam incluídas no fluxo de trabalho.
-Uma caixa de diálogo será aberta, permitindo que você refine a seleção de acordo com:
+Uma caixa de diálogo é aberta para permitir que você refine a seleção de acordo com:
 
          * Incluir somente tarefas derivadas imediatas.
          * Incluir somente as páginas modificadas.
@@ -143,6 +141,6 @@ Uma caixa de diálogo será aberta, permitindo que você refine a seleção de a
 
 ## Iniciar um fluxo de trabalho a partir do editor de páginas {#starting-a-workflow-from-the-page-editor}
 
-Ao editar uma página, você pode selecionar **Informações da página** na barra de ferramentas. O menu suspenso tem a opção **Iniciar no fluxo de trabalho**. Isso abrirá uma caixa de diálogo na qual você pode especificar o fluxo de trabalho necessário, juntamente com um título, se necessário:
+Ao editar uma página, você pode selecionar **Informações da página** na barra de ferramentas. O menu suspenso tem a opção **Iniciar no fluxo de trabalho**. Isso abre uma caixa de diálogo na qual é possível especificar o fluxo de trabalho necessário, juntamente com um título, se necessário:
 
 ![Iniciar um fluxo de trabalho a partir do editor de páginas](/help/sites-cloud/authoring/assets/workflows-create-page-editor.png)

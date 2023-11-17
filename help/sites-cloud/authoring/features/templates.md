@@ -2,9 +2,9 @@
 title: Criação de modelos de páginas
 description: O modelo define a estrutura da página resultante e, com o editor de modelos, criar e manter modelos não é mais uma tarefa somente para desenvolvedores
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '4570'
+source-wordcount: '4567'
 ht-degree: 97%
 
 ---
@@ -607,7 +607,7 @@ Usando as propriedades de página, é possível definir as bibliotecas do lado d
 
 >[!NOTE]
 >
->Como o autor do modelo pode especificar a política de página no modelo, ele precisará obter detalhes das bibliotecas do lado do cliente apropriadas do desenvolvedor.
+>Embora o autor do modelo possa especificar a política de página no modelo, ele precisa obter detalhes das bibliotecas do lado do cliente apropriadas do desenvolvedor.
 
 ### Editar um modelo - Propriedades da página inicial - Criação {#editing-a-template-initial-page-properties-author}
 

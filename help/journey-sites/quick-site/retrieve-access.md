@@ -2,10 +2,10 @@
 title: Recuperar informações de acesso do repositório Git
 description: Saiba como o desenvolvedor de front-end usa o Cloud Manager para acessar informações do repositório Git.
 exl-id: 3ef1cf86-6da4-4c09-9cfc-acafc8f6dd5c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '891'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '889'
+ht-degree: 93%
 
 ---
 
@@ -111,7 +111,7 @@ Agora que concluiu esta parte da jornada de Criação rápida de sites do AEM, v
 * Entender, em nível superior, o que é o Cloud Manager.
 * Recuperar suas credenciais para acessar o Git do AEM e poder confirmar as personalizações.
 
-Desenvolva esse conhecimento e prossiga sua jornada de Criação rápida de sites do AEM revisando a seguir o documento [Personalizar o tema do site,](customize-theme.md) onde você aprenderá como o tema do site é criado, como personalizá-lo e como testá-lo usando conteúdo dinâmico do AEM.
+Desenvolva esse conhecimento e prossiga com sua jornada de Criação rápida de sites de AEM revisando o documento a seguir [Personalizar o tema do site,](customize-theme.md) onde você aprende como o tema do site é criado, como personalizá-lo e como testá-lo usando conteúdo dinâmico de AEM.
 
 ## Recursos adicionais {#additional-resources}
 

@@ -2,10 +2,10 @@
 title: Trabalhar com conteúdo direcionado em vários sites
 description: Se precisar gerenciar conteúdo direcionado, como atividades, experiências e ofertas entre seus sites, você poderá aproveitar o suporte integrado a vários sites do AEM para conteúdo direcionado
 exl-id: 03d2d640-8de8-4c4c-8a1d-756bb2dc8457
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2890'
-ht-degree: 99%
+source-wordcount: '2889'
+ht-degree: 98%
 
 ---
 
@@ -144,7 +144,7 @@ As áreas podem abranger atividades e ofertas. Depois de criar uma área em qual
 
 >[!NOTE]
 >
->A área padrão chamada Área mestre é recolhida por padrão ao tocar ou clicar no nome de uma marca **até** criar outra área. Em seguida, ao selecionar uma marca no console **Atividade** ou **Ofertas**, você verá o console **Área**.
+>A área padrão chamada Área mestre é recolhida por padrão ao tocar ou clicar no nome de uma marca **até** você cria outra área. Em seguida, ao selecionar uma marca no console **Atividade** ou **Ofertas**, você verá o console **Área**.
 
 Para criar uma nova área:
 

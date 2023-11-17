@@ -3,10 +3,10 @@ title: Gerenciar pipelines
 description: Saiba como gerenciar os pipelines existentes, incluindo edição, execução e exclusão.
 index: true
 exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
-source-git-commit: 01a89f779689733fb82a556291e091026def63e0
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '957'
-ht-degree: 59%
+source-wordcount: '952'
+ht-degree: 46%
 
 ---
 
@@ -41,7 +41,7 @@ A variável **Pipelines** A janela mostra uma lista completa de todos os pipelin
 
 1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização e o programa apropriado.
 
-1. No **Visão geral do programa** toque ou clique em **Pipelines** para alternar para a guia **Pipelines** janela.
+1. No **Visão geral do programa** toque ou clique no link **Pipelines** para alternar para a guia **Pipelines** janela.
 
 1. Aqui você pode ver uma lista de todos os pipelines para o programa, bem como iniciar e parar a execução do pipeline, como faria na variável **Cartão Pipelines**.
 
@@ -57,7 +57,7 @@ A variável **Atividades** A janela mostra uma lista completa de todas as execu�
 
 1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização e o programa apropriado.
 
-1. No **Visão geral do programa** toque ou clique em **Atividade** para alternar para a guia **Atividade** janela.
+1. No **Visão geral do programa** toque ou clique no link **Atividade** para alternar para a guia **Atividade** janela.
 
 1. Aqui você pode ver uma lista de todas as execuções de pipeline do programa, incluindo as execuções atuais e históricas.
 
@@ -71,7 +71,7 @@ Tocar ou clicar **Exibir detalhes** levará você ao [detalhes da execução do 
 
 1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização e o programa apropriado.
 
-1. Navegue até o cartão **Pipelines** na página **Visão geral do programa** e clique no botão de reticências ao lado do pipeline que deseja executar e selecione **Executar** no menu.
+1. Navegue até a **Pipelines** do **Visão geral do programa** e clique no botão de reticências ao lado do pipeline executado e selecione **Executar** no menu.
 
 1. A execução do pipeline começa e é indicada pela coluna **Status**.
 
@@ -83,7 +83,7 @@ Dependendo do tipo de pipeline, talvez seja possível cancelar a execução clic
 
 1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização e o programa apropriado.
 
-1. Navegue até o cartão **Pipelines** na página **Visão geral do programa** e clique no botão de reticências ao lado do pipeline que deseja editar e selecione **Editar** no menu.
+1. Navegue até a **Pipelines** do **Visão geral do programa** e clique no botão de reticências ao lado do pipeline que deseja editar e selecione **Editar** no menu.
 
 1. A caixa de diálogo **Editar pipeline de produção** ou **Editar pipeline de não produção** é exibida, permitindo editar os mesmos detalhes inseridos ao criar o pipeline.
 
@@ -91,7 +91,7 @@ Dependendo do tipo de pipeline, talvez seja possível cancelar a execução clic
       * [Configuração de pipelines de produção](configuring-production-pipelines.md)
       * [Configurar pipelines de não produção](configuring-non-production-pipelines.md)
 
-1. Clique em **Atualizar** depois de concluir a edição do pipeline.
+1. Clique em **Atualizar** quando terminar de editar o pipeline.
 
 >[!NOTE]
 >
@@ -101,7 +101,7 @@ Dependendo do tipo de pipeline, talvez seja possível cancelar a execução clic
 
 1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização e o programa apropriado.
 
-1. Navegue até o cartão **Pipelines** na página **Visão geral do programa** e clique no botão de reticências ao lado do pipeline executado e selecione **Excluir** no menu.
+1. Navegue até a **Pipelines** do **Visão geral do programa** e clique no botão de reticências ao lado do pipeline executado e selecione **Excluir** no menu.
 
 >[!NOTE]
 >
@@ -113,7 +113,7 @@ Você pode visualizar os detalhes de um pipeline para ver o status e os logs da 
 
 1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização e o programa apropriado.
 
-1. Navegue até o cartão **Pipelines** na página **Visão geral do programa** e clique no botão de reticências ao lado do pipeline executado e selecione **Exibir detalhes** no menu.
+1. Navegue até a **Pipelines** do **Visão geral do programa** e clique no botão de reticências ao lado do pipeline executado e selecione **Exibir detalhes** no menu.
 
 1. Você será levado à página de detalhes do pipeline em execução.
 

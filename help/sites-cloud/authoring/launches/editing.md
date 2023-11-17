@@ -2,10 +2,10 @@
 title: Edição de inicializações
 description: Após criar um lançamento para sua página (ou conjunto de páginas), você pode editar o conteúdo na cópia de lançamento da(s) página(s).
 exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
-workflow-type: ht
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
 source-wordcount: '553'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -18,7 +18,7 @@ Quando um lançamento é criado para uma página (ou conjunto de páginas), é p
 1. Acesse [Inicialização a partir de Referências (console Sites)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) para mostrar as ações disponíveis.
 1. Selecionar **Ir para a página** para abrir a página para edição.
 
-Ao editar a página, você verá uma indicação na barra de ferramentas superior, juntamente com as opções **Sair** e **Navegar**:
+Ao editar a página, você pode ver uma indicação na barra de ferramentas superior, junto com o **Sair** e **Navegar** opções:
 
 ![Sair e navegar lançamento no editor de páginas](/help/sites-cloud/authoring/assets/launches-edit-01.png)
 

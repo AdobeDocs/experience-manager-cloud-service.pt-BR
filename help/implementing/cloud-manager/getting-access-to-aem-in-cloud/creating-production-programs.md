@@ -2,10 +2,10 @@
 title: Criação de programas de produção
 description: Saiba como usar o Cloud Manager para criar seu próprio programa de produção para hospedar o tráfego direto.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: ecb168e9261b3e3ed89e4cbe430b3da9f777a795
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 88%
+source-wordcount: '601'
+ht-degree: 73%
 
 ---
 
@@ -49,7 +49,7 @@ Siga estas etapas para criar um programa de produção.
 
    ![Selecionar soluções](assets/setup-prod-select.png)
 
-1. Clique na divisa antes dos nomes de solução para exibir os complementos opcionais, por exemplo, como selecionar a opção de complemento **Comércio** no **Sites**.
+1. Clique na divisa antes dos nomes de solução para exibir os complementos opcionais, como selecionar o **Commerce** opção complementar em **Sites**.
 
    ![Selecionar complementos](assets/setup-prod-commerce.png)
 
@@ -70,7 +70,7 @@ Seu programa é criado pelo Cloud Manager e é exibido e pode ser selecionado na
 
 ## Acessar o programa {#accessing}
 
-1. Depois de ver o cartão do programa na página de aterrissagem, selecione o botão de reticências para ver as opções de menu disponíveis.
+1. Ao ver o cartão do programa na página de aterrissagem, selecione o botão de reticências para exibir as opções de menu disponíveis.
 
    ![Visão geral do programa](assets/program-overview.png)
 
@@ -80,7 +80,7 @@ Seu programa é criado pelo Cloud Manager e é exibido e pode ser selecionado na
 
    ![Visão geral do programa](assets/set-up-prod5.png)
 
-Se, a qualquer momento, você precisar alternar para outro programa ou retornar à página de visão geral para criar outro programa, clique no nome do programa no canto superior esquerdo da tela para exibir a opção **Navegar para**.
+Se, a qualquer momento, você precisar alternar para outro programa ou retornar à página de visão geral para criar outro programa, clique no nome do programa no canto superior esquerdo da tela para revelar a **Navegue até** opção.
 
 ![Vá até](assets/create-program-a1.png)
 

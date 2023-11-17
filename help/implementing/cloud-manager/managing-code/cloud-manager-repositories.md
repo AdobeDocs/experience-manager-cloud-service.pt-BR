@@ -2,10 +2,10 @@
 title: Repositórios do Cloud Manager
 description: Saiba como criar, exibir e excluir repositórios Git no Cloud Manager.
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
-source-git-commit: af8ab1f741c658dcb47bdf0d37e403fcb180631a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '588'
-ht-degree: 96%
+source-wordcount: '585'
+ht-degree: 87%
 
 ---
 
@@ -24,7 +24,7 @@ Siga estas etapas para exibir e gerenciar repositórios no Cloud Manager.
 
 1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização e o programa apropriado.
 
-1. No **Visão geral do programa** toque ou clique em **Repositórios** para alternar para a guia **Repositórios** página.
+1. No **Visão geral do programa** toque ou clique no link **Repositórios** para alternar para a guia **Repositórios** página.
 
 1. Clique em **Adicionar repositório**.
 
@@ -36,7 +36,7 @@ Siga estas etapas para exibir e gerenciar repositórios no Cloud Manager.
 
 Quando o assistente for fechado, o novo repositório será exibido na tabela.
 
-Você pode selecionar o repositório na tabela, clicar no botão de reticências e selecionar **Copiar URL do repositório**, **Exibir e atualizar** ou **Excluir**.
+Você pode selecionar o repositório na tabela, clicar no botão de reticências e selecionar **Copiar URL de repositório**, **Exibir e atualizar** ou **Excluir**.
 
 ![Opções do repositório](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
 
@@ -58,7 +58,7 @@ A exclusão de um repositório:
 
 Siga estas instruções para excluir um repositório no Cloud Manager.
 
-1. Na página **Visão geral do programa**, clique na guia **Repositórios** e navegue até a página **Repositórios**.
+1. No **Visão geral do programa** clique no link **Repositórios** e navegue até a guia **Repositórios** página.
 
 1. Selecione o repositório, clique no botão de reticências e selecione **Excluir** para excluir o repositório.
 

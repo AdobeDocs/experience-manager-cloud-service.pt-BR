@@ -2,10 +2,10 @@
 title: Personalização e direcionamento de conteúdo
 description: Saiba como criar conteúdo personalizado e direcionado com o AEM
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
-workflow-type: ht
-source-wordcount: '1055'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '1053'
+ht-degree: 93%
 
 ---
 
@@ -40,7 +40,7 @@ Ao criar páginas, você define várias experiências, com cada experiência res
 
 Uma oferta é uma experiência personalizada, geralmente disponível por um período de tempo limitado.
 
-Por exemplo, a página de um site de amostra pode usar ofertas como a imagem do teaser que aparece na parte superior da página. Uma pessoa acima de 30 anos e uma pessoa abaixo de 30 anos verão diferentes ofertas como teaser de experiência.
+Por exemplo, uma página de um site de amostra pode usar ofertas como a imagem do teaser que aparece na parte superior da página. Uma pessoa acima de 30 anos e uma pessoa abaixo de 30 anos podem ver diferentes ofertas como teaser de experiência.
 
 ## Público {#audience}
 

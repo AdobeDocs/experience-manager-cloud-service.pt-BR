@@ -1,13 +1,13 @@
 ---
-title: Como conectar o formulário adaptável AEM à lista do Microsoft® SharePoint?
-description: Conecte um formulário adaptável à lista Microsoft® SharePoint. Saiba como configurar a lista Microsoft® SharePoint e criar um Modelo de dados de formulário usando a configuração. Além disso, você aprenderá a integrar o FDM ao seu Formulário adaptável.
+title: Como conectar o formulário adaptável do AEM à lista de SharePoint do Microsoft&reg;?
+description: Conectar um Formulário adaptável à Lista de SharePoint do Microsoft&reg;. Saiba como configurar a lista de SharePoint do Microsoft&reg; e criar um Modelo de dados de formulário usando a configuração. Além disso, você aprenderá a integrar o FDM ao seu Formulário adaptável.
 role: User, Developer
 keywords: conectar o Formulário adaptável do AEM à Lista do Microsoft SharePoint, conectar o Formulário adaptável à Lista do Microsoft SharePoint, integrar o Formulário adaptável à Lista do Microsoft SharePoint, integrar o Formulário adaptável à Lista do AEM, enviar dados de um Formulário adaptável à Lista do Microsoft, enviar fluxo de trabalho para a Lista do SharePoint SharePoint AEM SharePoint.
 hide: true
 hidefromToC: true
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '539'
 ht-degree: 3%
 
 ---
@@ -30,15 +30,15 @@ Para obter instruções sobre como integrar uma **Biblioteca de documentos Micro
 
 Antes de conectar um formulário adaptável à lista Microsoft® SharePoint, execute as seguintes etapas:
 
-1. [Configurar a lista Microsoft® SharePoint](/help/forms/configure-data-sources.md#configure-microsoft-sharepoint-list)
-1. [Criar um modelo de dados de formulário usando a configuração da lista do Microsoft® SharePoint](/help/forms/create-form-data-models.md)
+1. [Configurar Microsoft](/help/forms/configure-data-sources.md#configure-microsoft-sharepoint-list)
+1. [Criar um modelo de dados de formulário usando o Microsoft](/help/forms/create-form-data-models.md)
 1. [Configurar o modelo de dados do formulário para recuperar e enviar dados](/help/forms/work-with-form-data-model.md#configure-services)
 1. [Criação de um Formulário adaptável](/help/forms/creating-adaptive-form-core-components.md)
 
 Agora é possível:
 
-* [Conectar a lista Microsoft® SharePoint a um formulário adaptável](#connect-an-adaptive-form-to-microsoft-sharepoint-list-connect-af-sharepoint-list)
-* [Conectar a lista do Microsoft® SharePoint a um fluxo de trabalho do AEM](#connect-sharepoint-list-workflow)
+* [Conectar o Microsoft](#connect-an-adaptive-form-to-microsoft-sharepoint-list-connect-af-sharepoint-list)
+* [Conectar o Microsoft](#connect-sharepoint-list-workflow)
 
 ## Conectar um formulário adaptável à lista Microsoft® SharePoint {#connect-af-sharepoint-list}
 
@@ -73,7 +73,7 @@ Saiba como [usar o fluxo de trabalho do AEM](https://experienceleague.adobe.com/
 
 ## Práticas recomendadas {#best-practices}
 
-<!-- * For storing data in a tabular format or implementing data permissions, it is advisable to use Microsoft® SharePoint List rather than Microsoft® SharePoint Document Library. -->
+<!-- * For storing data in a tabular format or implementing data permissions, it is advisable to use Microsoft&reg; SharePoint List rather than Microsoft&reg; SharePoint Document Library. -->
 * Na Lista do Microsoft® SharePoint, os seguintes tipos de coluna não são suportados:
    * coluna de imagem
    * coluna de metadados

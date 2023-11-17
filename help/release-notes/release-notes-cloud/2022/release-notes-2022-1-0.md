@@ -2,10 +2,10 @@
 title: Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2022.1.0.
 description: Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2022.1.0.
 exl-id: 1c40ab67-8fd7-4f29-b8c9-dd98b6d5b490
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1079'
-ht-degree: 95%
+source-wordcount: '1074'
+ht-degree: 93%
 
 ---
 
@@ -104,7 +104,7 @@ A data de lançamento do Cloud Manager no AEM as a Cloud Service 2022.01.0 é 20
 ### Novidades {#what-is-new-cm}
 
 * O Cloud Manager [evitará reconstruir a base de código quando detectar que a mesma Git Commit é usada](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) em várias execuções de pipeline de pilha completa.
-* Acessar o log de ambiente AEM agora requer o perfil de produto **Gerente de implantação**. Os usuários sem esse perfil verão um botão desativado na interface do usuário.
+* Acessar o log de ambiente AEM agora requer o perfil de produto **Gerente de implantação**. Os usuários sem esse perfil veem um botão desativado na interface.
 * A interface não permitirá a configuração de pipeline de front-end para um programa em que o Sites não está habilitado como uma solução.
 * Ao gerar uma senha Git, a data de expiração é exibida.
 
@@ -123,7 +123,7 @@ A data de lançamento da ferramenta de Transferência de conteúdo v1.8.6 é 3 d
 
 ### Novidades {#what-is-new-ctt}
 
-* Validação de conteúdo - os usuários podem determinar com garantia se todo o conteúdo que foi extraído pela ferramenta Transferência de conteúdo foi assimilado com sucesso na instância de destino. Para usar esse recurso, será necessário ativá-lo no `System Console` do ambiente do AEM de origem. Consulte [Validação de transferências de conteúdo - Introdução](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=pt-BR#getting-started) para obter mais detalhes.
+* Validação de conteúdo - os usuários podem determinar com garantia se todo o conteúdo que foi extraído pela ferramenta Transferência de conteúdo foi assimilado com sucesso na instância de destino. Para usar esse recurso, ative-o na `System Console` do ambiente AEM de origem. Consulte [Validação de transferências de conteúdo - Introdução](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=pt-BR#getting-started) para obter mais detalhes.
 
 ### Correções de erros {#bug-fixes-ctt}
 

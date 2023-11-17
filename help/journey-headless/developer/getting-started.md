@@ -2,10 +2,10 @@
 title: Introdução ao AEM Headless as a Cloud Service
 description: Nesta parte da Jornada do desenvolvedor headless do AEM, saiba mais sobre pré-requisitos do AEM headless.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: b302aa1140fc14044e85fd61ed2d361b71e6be34
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '3098'
-ht-degree: 97%
+source-wordcount: '3096'
+ht-degree: 95%
 
 ---
 
@@ -85,7 +85,7 @@ Para modificar o conteúdo de forma headless, o AEM oferece duas APIs robustas.
 * A API GraphQL permite criar solicitações para acessar e fornecer Fragmentos de conteúdo.
 * A API REST do Assets permite criar e modificar fragmentos de conteúdo (e outros ativos).
 
-Você aprenderá sobre essas APIs e como usá-las em uma parte posterior da jornada headless do AEM. Ou consulte a seção [recursos adicionais](#additional-resources) abaixo para obter a documentação adicional.
+Você aprenderá sobre essas APIs e como usá-las em uma parte posterior da jornada AEM headless. Ou consulte [recursos adicionais](#additional-resources) abaixo para obter mais documentação.
 
 ## Níveis de integração headless {#integration-levels}
 
@@ -273,7 +273,7 @@ Agora que concluiu esta parte da jornada de desenvolvedores headless do AEM, voc
 * Entender os níveis de integração headless do AEM.
 * Poder definir seu projeto em termos de escopo.
 
-Você deve continuar sua jornada headless no AEM revisando o documento a seguir: [Caminho para Sua Primeira Experiência Usando AEM Headless](path-to-first-experience.md) onde aprenderá a configurar as ferramentas necessárias e como começar a pensar em modelar seus dados no AEM.
+Você deve continuar sua jornada AEM headless revisando em seguida o documento [Caminho para sua primeira experiência usando AEM headless](path-to-first-experience.md) onde você aprende a configurar as ferramentas necessárias e como começar a pensar em modelar seus dados no AEM.
 
 ## Recursos adicionais {#additional-resources}
 

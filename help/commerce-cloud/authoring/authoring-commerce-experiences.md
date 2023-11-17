@@ -2,9 +2,9 @@
 title: Criação de experiências de comércio
 description: Saiba como criar e criar experiências relacionadas ao comércio com eficiência obtendo acesso aos dados e ao conteúdo do produto sem sair do contexto.
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
-source-git-commit: ba0c1e13f311f48ac138f2c3ca582835a4a83bf6
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '717'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ Clicar na categoria principal levará o autor de volta ao nível do produto.
 
 ![Componente de teaser sem seleção](../assets/authoring/teaser_component_without_selection.png)
 
-A caixa de diálogo de configuração deste componente requer um produto. A CIF usa o SKU como o identificador do produto. Os autores podem inserir o SKU manualmente ou clicar no ícone de pasta para abrir o seletor de produtos. Após selecionar e fechar o seletor, a caixa de diálogo de componentes mostra o nome do produto selecionado
+A caixa de diálogo de configuração deste componente requer um produto. O CIF usa o SKU como o identificador do produto. Os autores podem inserir o SKU manualmente ou clicar no ícone de pasta para abrir o seletor de produtos. Após selecionar e fechar o seletor, a caixa de diálogo de componentes mostra o nome do produto selecionado
 
 ![Componente de teaser com seleção](../assets/authoring/teaser_component_with_selection.png)
 
@@ -47,7 +47,7 @@ Esse seletor oferece navegação pela estrutura do catálogo para localizar a ca
 
 ![Componente Carrossel sem seleção](../assets/authoring/carousel_component_without_selection.png)
 
-A caixa de diálogo de configuração deste componente requer categorias 1 : n. A CIF usa UID/ID como o identificador da categoria. Os autores podem inserir o UID manualmente ou clicar no ícone de pasta para abrir o seletor de categorias. Depois de selecionar e fechar o seletor, a caixa de diálogo de componentes mostra o nome da categoria selecionada.
+A caixa de diálogo de configuração deste componente requer categorias 1 : n. O CIF usa a UID/ID como o identificador da categoria. Os autores podem inserir o UID manualmente ou clicar no ícone de pasta para abrir o seletor de categorias. Depois de selecionar e fechar o seletor, a caixa de diálogo de componentes mostra o nome da categoria selecionada.
 
 ![Componente Carrossel com seleção](../assets/authoring/carousel_component_with_selection.png)
 
@@ -65,7 +65,7 @@ Analogamente aos ativos, os produtos podem ser colocados em uma página (o que c
 
 ### Adição de links em campos de texto usando o RTE {#rte}
 
-As páginas do catálogo de produtos da CIF são páginas virtuais que são renderizadas em tempo real. Assim, não é possível incorporar hiperlinks como para páginas AEM comuns. A CIF adiciona uma nova ação &quot;Links de comércio&quot; ao RTE (editor de rich text). Essa ação funciona exatamente como a ação normal de &quot;Hiperlink&quot;, mas permite que os autores selecionem um produto ou categoria usando os seletores.
+Páginas de catálogo de produtos CIF são páginas virtuais que são renderizadas em tempo real. Assim, não é possível incorporar hiperlinks como para páginas AEM comuns. O CIF adiciona uma nova ação &quot;Links de comércio&quot; ao RTE (Rich Text Editor, Editor de Rich Text). Essa ação funciona exatamente como a ação normal de &quot;Hiperlink&quot;, mas permite que os autores selecionem um produto ou categoria usando os seletores.
 
 ![RTE](../assets/authoring/RTE.png)
 

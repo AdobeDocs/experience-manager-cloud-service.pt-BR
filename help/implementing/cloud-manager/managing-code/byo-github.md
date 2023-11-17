@@ -2,9 +2,9 @@
 title: Trabalhar com seus próprios repositórios GitHub no Cloud Manager
 description: Saiba como configurar o Cloud Manager para funcionar com seus próprios repositórios GitHub.
 feature: Release Information
-source-git-commit: 8d689ea08ab7caf9cb0fa84df23d7e0fd906f379
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '745'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ A configuração consiste em duas etapas principais:
 
 ### Adicionar repositório {#add-repo}
 
-1. No Cloud Manager, no **Visão geral do programa** toque ou clique em **Repositórios** para alternar para a guia **Repositórios** e clique em **Adicionar repositório**.
+1. No Cloud Manager, no **Visão geral do programa** toque ou clique no link **Repositórios** para alternar para a guia **Repositórios** e clique em **Adicionar repositório**.
 
 1. No **Adicionar repositório** , selecione **Repositório privado** como o tipo de repositório.
 
@@ -65,7 +65,7 @@ O Cloud Manager agora sabe sobre o repositório GitHub, mas ainda precisa acess�
 
 1. De volta ao **Validação de propriedade de repositório privado** Cloud Manager gerou o conteúdo do arquivo privado na janela **Conteúdo do arquivo secreto** campo. Copie o conteúdo desse campo.
 
-   * O conteúdo do arquivo secreto será mostrado apenas uma vez. Se você não copiar o conteúdo antes de fechar esta janela, precisará gerar o segredo novamente.
+   * O conteúdo do arquivo secreto será mostrado apenas uma vez. Se você não copiar o conteúdo antes de fechar esta janela, gere novamente o segredo.
 
    ![Copiar conteúdo do arquivo secreto](/help/implementing/cloud-manager/assets/repos/new-secret.png)
 
@@ -81,7 +81,7 @@ Até a validação, o repositório será listado com um ícone vermelho, indican
 
 Observe que **Tipo** A coluna identifica facilmente repositórios fornecidos por Adobe (**Adobe**) e seus próprios repositórios GitHub (**GitHub**).
 
-Se precisar retornar ao repositório em uma data posterior para concluir a validação, no **Repositórios** toque ou clique no botão de reticências na linha que representa o repositório GitHub recém-adicionado e selecione **Validação de propriedade** no menu suspenso.
+Se precisar retornar ao repositório posteriormente para concluir a validação, no **Repositórios** toque ou clique no botão de reticências na linha que representa o repositório GitHub recém-adicionado e selecione **Validação de propriedade** no menu suspenso.
 
 ## Usar seus próprios repositórios GitHub com o Cloud Manager {#using}
 

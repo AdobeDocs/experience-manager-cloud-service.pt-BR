@@ -4,17 +4,17 @@ description: Siga esta página para saber como atribuir membros da equipe a perf
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 555688e5-f937-462c-9fcc-b90685f1882b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
-source-wordcount: '1532'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '1528'
+ht-degree: 94%
 
 ---
 
 
 # Atribuir membros da equipe aos perfis de produto do Cloud Manager {#assign-team-members}
 
-Nesta parte da [jornada de integração,](overview.md) você aprenderá a atribuir membros da equipe aos perfis de produto do Cloud Manager.
+Nesta parte do [integração do jornada,](overview.md) você aprende a atribuir membros da equipe aos perfis de produto do Cloud Manager.
 
 ## Objetivo {#objective}
 
@@ -33,7 +33,7 @@ Depois de ler este documento, você deverá:
 
 ## Pré-requisitos {#prerequisites}
 
-Para atribuir membros da equipe a perfis de produto, você precisará ter detalhes sobre os membros da equipe que precisarão acessar o AEM as a Cloud Service, incluindo:
+Para atribuir membros da equipe a perfis de produtos, você precisa ter detalhes sobre os membros da equipe que precisam acessar o AEM as a Cloud Service, incluindo:
 
 * Nomes
 * Endereços de email
@@ -73,7 +73,7 @@ Usando o Admin Console, você pode ver a lista de perfis do Cloud Manager.
 
    ![Cloud Manager](/help/journey-onboarding/assets/assign-team2.png)
 
-1. Você verá a lista de perfis de produto pré-configurados do Cloud Manager.
+1. Você pode ver a lista de perfis de produto pré-configurados do Cloud Manager.
 
    ![Perfis de produto](/help/journey-onboarding/assets/assign-team3.png)
 
@@ -177,7 +177,7 @@ Nesta parte da jornada de integração você aprendeu a atribuir perfis aos memb
 * Conhecer os três importantes perfis de produto do Cloud Manager: **Proprietário da empresa**, **Gerente de implantação** e **Desenvolvedor**.
 * Poder atribuir membros da equipe aos perfis de produto do Cloud Manager.
 
-Agora você está pronto para continuar sua jornada de integração revisando em seguida o documento [Acessar o Cloud Manager,](cloud-manager.md) no qual você aprenderá a acessar o Cloud Manager e criar os recursos do projeto.
+Agora você está pronto para continuar sua jornada de integração revisando em seguida o documento [Acessar o Cloud Manager,](cloud-manager.md) onde você aprende a acessar o Cloud Manager e criar os recursos do projeto.
 
 ## Recursos adicionais {#additional-resources}
 

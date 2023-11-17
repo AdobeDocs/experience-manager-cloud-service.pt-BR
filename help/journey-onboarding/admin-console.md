@@ -2,16 +2,16 @@
 title: Acesso ao Admin Console
 description: Depois de entender a preparação necessária para realizar a integração e as noções básicas da estrutura do AEMaaCS, você estará pronto para fazer logon no Admin Console pela primeira vez.
 exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1104'
-ht-degree: 95%
+source-wordcount: '1098'
+ht-degree: 85%
 
 ---
 
 # Acesso ao Admin Console {#accessing-admin-console}
 
-Nesta parte da [jornada de integração,](overview.md) você aprenderá sobre a preparação necessária antes de fazer logon no sistema pela primeira vez.
+Nesta parte do [integração do jornada,](overview.md) saiba mais sobre a preparação necessária antes de fazer logon no sistema pela primeira vez.
 
 ## Objetivo {#objective}
 
@@ -30,7 +30,7 @@ O Adobe Admin Console é um local central para administrar e gerenciar licenças
 
 ## Adobe ID {#adobe-id}
 
-Para entrar no Admin Console, você precisará de uma Adobe ID. A Adobe ID é uma conta vinculada a um endereço de email específico que é necessária para fazer logon e acessar o AEM as a Cloud Service ou qualquer solução da Adobe. Ao usar a Adobe ID, você mantém todos os seus planos e produtos da Adobe associados a uma só conta.
+Para entrar no Admin Console, você precisa de uma Adobe ID. A Adobe ID é uma conta vinculada a um endereço de email específico que é necessária para fazer logon e acessar o AEM as a Cloud Service ou qualquer solução da Adobe. Ao usar a Adobe ID, você mantém todos os seus planos e produtos da Adobe associados a uma só conta.
 
 Ao configurar uma equipe no Admin Console, admins devem especificar o endereço de email que será usado como a Adobe ID.
 
@@ -50,11 +50,11 @@ Antes de usar o Admin Console para administrar os usuários da sua equipe, você
 
 1. Como administrador do sistema, você receberá vários emails da Adobe como parte do processo de integração. Procure o email de boas-vindas que fornece informações sobre o nome da organização à qual você recebeu acesso.
 
-1. Clique no link **Introdução** no email de boas-vindas para acessar o Admin Console. Se não conseguir encontrar o email, abra um navegador diretamente no Admin Console em [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
+1. Clique em **Comece já** clique no email de boas-vindas para acessar o Admin Console. Se não conseguir encontrar o email, abra um navegador diretamente no Admin Console em [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
 
    ![Email de boas-vindas](/help/journey-onboarding/assets/get-started-email.png)
 
-1. Faça logon usando sua Adobe ID. Depois de fazer logon, você verá a página **Visão geral** do Adobe Admin Console.
+1. Faça logon usando sua Adobe ID. Após o logon bem-sucedido, você verá a **Visão geral** página da Adobe Admin Console.
 
    ![O Admin Console](/help/journey-onboarding/assets/get-started1.png)
 
@@ -66,7 +66,7 @@ Antes de usar o Admin Console para administrar os usuários da sua equipe, você
 
    ![Revisar administradores](/help/journey-onboarding/assets/get-started2.png)
 
-1. Depois de clicar em **Administradores** no cartão **Usuários**, você poderá pesquisar inserindo seu email (Adobe ID), nome de usuário, nome ou sobrenome.
+1. Depois de clicar em **Administradores** do **Usuários** , você pode pesquisar inserindo seu email, nome de usuário, nome ou sobrenome do Adobe ID.
 
    ![Pesquisar usuários](/help/journey-onboarding/assets/get-started3.png)
 
@@ -82,7 +82,7 @@ O AEM as a Cloud Service vem pré-configurado com o Adobe Identity Management Sy
 
 Ao usar o IMS, o AEM as a Cloud Service consolida a experiência de logon entre o AEM e o restante da Adobe Experience Cloud. Organizações com vários produtos da Adobe se beneficiam ainda mais ao criar grupos com base em funções no Admin Console e atribuir acesso a vários produtos, incluindo o AEM as a Cloud Service por meio de IMS.
 
-Você saberá mais sobre perfis de produto e atribuirá usuários na próxima parte desta jornada de integração.
+Você aprenderá mais sobre perfis de produto e atribuirá usuários na próxima parte desta jornada de integração.
 
 ## Contato com o suporte da Adobe {#support}
 

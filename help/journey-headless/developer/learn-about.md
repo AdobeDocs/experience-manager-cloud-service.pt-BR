@@ -2,10 +2,10 @@
 title: Saiba mais sobre o desenvolvimento headless do CMS
 description: Nesta parte da Jornada de desenvolvedores headless do AEM, saiba mais sobre a tecnologia headless e por que usá-la.
 exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
-source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1638'
-ht-degree: 98%
+source-wordcount: '1636'
+ht-degree: 93%
 
 ---
 
@@ -106,7 +106,7 @@ As experiências digitais continuarão a definir como as marcas interagem com os
 
 ## AEM e Headless {#aem-and-headless}
 
-À medida que continua nessa jornada de desenvolvedor, você aprenderá como o AEM fornece suporte à entrega headless junto com seus recursos de entrega de pilha completa.
+À medida que você avança nesta jornada de desenvolvedor, aprenderá como o AEM suporta entrega headless junto com seus recursos de entrega de pilha completa.
 
 Como líder da indústria em gerenciamento de experiência digital, a Adobe percebe que a solução ideal para os desafios do mundo real que os criadores de experiências enfrentam raramente é uma escolha binária. É por isso que o AEM não apenas oferece suporte a ambos os modelos, mas também permite de forma única a combinação híbrida perfeita dos dois, misturando as vantagens da pilha completa e da tecnologia headless, para ajudá-lo a atender melhor os consumidores do seu conteúdo, onde quer que estejam.
 
@@ -120,7 +120,7 @@ Obrigado por começar a sua jornada headless do AEM. Agora que leu este document
 * Entender por que e quando o headless é necessário.
 * Possuir um conhecimento de alto nível sobre o uso dos conceitos headless e como eles se relacionam.
 
-Aplicar esse conhecimento e prosseguir com a jornada headless do AEM revisando o documento [Introdução ao AEM Headless as a Cloud Service](getting-started.md), onde você aprenderá a configurar as ferramentas necessárias e descobrirá como o AEM aborda a entrega de conteúdo headless e quais são os pré-requisitos.
+Aproveite esse conhecimento e continue sua jornada AEM headless revisando o documento a seguir [Introdução ao AEM Headless as a Cloud Service](getting-started.md) onde você aprende a configurar as ferramentas necessárias e como começar a pensar sobre como o AEM se aproxima da entrega de conteúdo headless e seus pré-requisitos.
 
 ## Recursos adicionais {#additional-resources}
 

@@ -2,10 +2,10 @@
 title: Configuração do IMS para uso na integração com o Adobe Analytics
 description: Saiba mais sobre a configuração do IMS para uso na integração com o Adobe Analytics
 exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
-source-git-commit: d59559d38eef182723a8791c6614d03930f64a85
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '914'
-ht-degree: 96%
+source-wordcount: '911'
+ht-degree: 94%
 
 ---
 
@@ -145,7 +145,7 @@ Selecione uma entrada de projeto específica para mostrar mais detalhes sobre a 
 * APIS
    * Por exemplo, Adobe Analytics
 
-Você precisará de algumas delas para concluir a integração do Adobe Analytics no AEM com base no IMS.
+Em alguns desses, você deve concluir a integração do Adobe Analytics no AEM com base no IMS.
 
 ## Concluir a configuração do IMS no AEM {#completing-the-ims-configuration-in-aem}
 
@@ -187,7 +187,7 @@ Para confirmar que a configuração está funcionando como esperado:
 
    ![Configuração do IMS — Verificar integridade](assets/integrate-analytics-ims-12.png)
 
-1. Se for bem-sucedido, você verá uma mensagem de confirmação.
+1. Se tiver êxito, você verá uma mensagem de confirmação.
 
 ## Concluir a integração com o Adobe Analytics {#complete-the-integration-with-adobe-analytics}
 
@@ -201,7 +201,7 @@ The configuration can now be referenced for a Cloud Service to use the Analytics
 1. Open the **Tools** menu. Then, within the **Cloud Services** section, select **Legacy Cloud Services**.
 1. Scroll down to **Adobe Analytics** and select **Configure now**.
 
-   The **Create Configuration** dialog will open.
+   The **Create Configuration** dialog opens.
 
 1. Enter a **Title** and, if you want, a **Name** (if left blank, it is generated from the title).
 
@@ -209,7 +209,7 @@ The configuration can now be referenced for a Cloud Service to use the Analytics
 
 1. Confirm with **Create**.
 
-   The **Edit Component** dialog will open.
+   The **Edit Component** dialog opens.
 
 1. Enter the details in the **Analytics Settings** tab:
 

@@ -2,10 +2,10 @@
 title: Traduzir conteúdo headless
 description: Use o conector de tradução para traduzir conteúdo headless.
 exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
-source-git-commit: f4e28d89023e8f326e6816ebd8168e1e31e772ce
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2175'
-ht-degree: 99%
+source-wordcount: '2170'
+ht-degree: 95%
 
 ---
 
@@ -56,7 +56,7 @@ Para proprietários de conteúdo que também são responsáveis pela tradução,
 1. Navegue até **Navegação** -> **Ativos** -> **Arquivos**. Lembre-se de que o conteúdo headless no AEM é armazenado como ativos conhecidos como Fragmentos de conteúdo.
 1. Selecione a raiz do idioma do projeto. Nesse caso, selecionamos `/content/dam/wknd/en`.
 1. Toque ou clique no seletor do painel e exiba o painel **Referências**.
-1. Toque ou clique em **Cópias de idioma**.
+1. Toque ou clique **Cópias de idioma**.
 1. Marque a caixa de seleção **Cópias de idioma**.
 1. Expanda a seção **Atualizar cópias de Idioma** na parte inferior do painel de referências.
 1. Na lista suspensa **Projeto**, selecione **Criar projeto(s) de tradução**.
@@ -130,7 +130,7 @@ Ao criar automaticamente o projeto de tradução, AEM avalia o conteúdo headles
 
 Para ver os detalhes do conteúdo headless incluído neste projeto:
 
-1. Toque ou clique no botão de reticências na parte inferior do cartão de **Tarefa de tradução**.
+1. Toque ou clique no botão de reticências, na parte inferior da **Tarefa de tradução** cartão.
 1. A janela **Tarefa de tradução** lista todos os itens na tarefa.
    ![Detalhes do trabalho de tradução](assets/translation-job-detail.png)
 1. Toque ou clique em uma linha para ver os detalhes dela, tendo em mente que uma linha pode representar vários itens de conteúdo a serem traduzidos.
@@ -226,7 +226,7 @@ Se navegar até esta pasta por meio de **Navegação** -> **Arquivos** -> **Ativ
 
 A estrutura de tradução do AEM recebe as traduções do conector de tradução e cria automaticamente a estrutura de conteúdo, com base na raiz de idioma e usando as traduções fornecidas pelo conector.
 
-É importante entender que esse conteúdo não foi publicado e, portanto, não está disponível para serviços headless. Aprenderemos sobre essa estrutura de criação-publicação e veremos como publicar nosso conteúdo traduzido na próxima etapa da jornada de tradução.
+É importante entender que esse conteúdo não foi publicado e, portanto, não está disponível para serviços headless. Você aprende sobre essa estrutura de criação-publicação e vê como publicar conteúdo traduzido na próxima etapa da jornada de tradução.
 
 ## Tradução humana {#human-translation}
 
@@ -242,7 +242,7 @@ Agora que você concluiu esta parte da jornada de tradução headless, você dev
 * Ser capaz de criar novos projetos de tradução.
 * Usar os projetos de tradução para traduzir o conteúdo headless.
 
-Desenvolva esse conhecimento e continue sua jornada de tradução do AEM headless revisando o documento [Publicar conteúdo traduzido](publish-content.md), por meio do qual você aprende a publicar seu conteúdo traduzido e como atualizar essas traduções conforme o conteúdo raiz do idioma se altera.
+Desenvolva esse conhecimento e continue sua jornada de tradução AEM headless revisando o documento a seguir [Publicar conteúdo traduzido](publish-content.md) onde você aprende a publicar seu conteúdo traduzido e como atualizar essas traduções conforme o conteúdo da raiz do idioma mudar.
 
 ## Recursos adicionais {#additional-resources}
 

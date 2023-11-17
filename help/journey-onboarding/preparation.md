@@ -2,10 +2,10 @@
 title: Preparação para a integração
 description: Antes de começar o processo de integração, há várias etapas preparatórias que o administrador do sistema deve entender para fazer logon no sistema.
 exl-id: 86139b1a-c22a-4716-a0f9-cf142cbc6c53
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '763'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '762'
+ht-degree: 96%
 
 ---
 
@@ -88,4 +88,4 @@ Agora você deve ter uma compreensão básica sobre:
 * Como esse contrato afeta o processo de integração.
 * Como se preparar para sua chamada de integração.
 
-Agora que está familiarizado com essas etapas de preparação, você está quase pronto para entrar no sistema por conta própria. Porém, primeiro você precisará ter de uma breve visão geral de como o AEM as a Cloud Service é estruturado do ponto de vista de um administrador de sistema, além de conhecer terminologias importantes. Avance para a próxima parte da jornada, a [Terminologia do AEM as a Cloud Service](terminology.md).
+Agora que está familiarizado com essas etapas de preparação, você está quase pronto para entrar no sistema por conta própria. Mas primeiro você precisa de uma breve visão geral de como o AEM as a Cloud Service é estruturado do ponto de vista de um administrador de sistema e conhecer terminologias importantes. Avance para a próxima parte da jornada, a [Terminologia do AEM as a Cloud Service](terminology.md).

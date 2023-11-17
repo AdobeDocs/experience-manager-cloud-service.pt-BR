@@ -4,10 +4,10 @@ description: Saiba como criar perfis de usuários no Admin Console para gerencia
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
-source-git-commit: afb20efe8ed078a508f828c5df4e079f99dfab21
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 96%
+source-wordcount: '985'
+ht-degree: 93%
 
 ---
 
@@ -38,7 +38,7 @@ Visto que os perfis de usuários são criados e mantidos no Admin Console, antes
 
 ## Criar novos perfis de produto do Cloud Manager {#create-profiles}
 
-Para configurar corretamente o recebimento de notificações, será necessário criar dois perfis de usuários. Estas etapas só devem ser feitas uma vez.
+Para configurar corretamente o recebimento de notificações, crie dois perfis de usuário. Essas etapas são executadas apenas uma vez.
 
 1. Faça logon no Admin Console em [`https://adminconsole.adobe.com`.](https://adminconsole.adobe.com)
 
@@ -52,7 +52,7 @@ Para configurar corretamente o recebimento de notificações, será necessário 
 
    ![Lista de instâncias no Admin Console](assets/cloud_manager_instance.png)
 
-1. Você verá a lista de todos os perfis de produto pré-configurados do Cloud Manager.
+1. Você pode ver a lista de todos os perfis de produto configurados do Cloud Manager.
 
    ![Perfis de produto no Admin Console](assets/cloud_manager_profiles.png)
 

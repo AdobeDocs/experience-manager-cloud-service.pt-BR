@@ -2,10 +2,10 @@
 title: Saiba mais sobre conteúdo headless e sua tradução no AEM
 description: Aprenda conceitos headless, como eles são mapeados no AEM e a teoria de tradução do AEM.
 exl-id: 72bb6646-e573-4576-8d17-49787d8c8c7f
-source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '743'
-ht-degree: 98%
+source-wordcount: '742'
+ht-degree: 95%
 
 ---
 
@@ -57,7 +57,7 @@ Além de oferecer ferramentas robustas para criar, gerenciar e fornecer páginas
 
 O poder do AEM permite que ele forneça conteúdo headless, em pilha completa ou em ambos os modelos ao mesmo tempo. Para o especialista em tradução, o mesmo conjunto de ferramentas de tradução pode ser aplicado a ambos os tipos de conteúdo, fornecendo uma abordagem unificada para a tradução do conteúdo.
 
-Além disso, na jornada, você conhecerá os detalhes sobre como o AEM traduz o conteúdo, mas em alto nível. O conceito é simples:
+Mais adiante na jornada você aprenderá os detalhes de como o AEM traduz conteúdo, mas em um alto nível, o conceito é simples:
 
 1. Definir uma conexão com um serviço de tradução, configurando a estrutura de integração de tradução.
 1. Definir qual conteúdo deve ser traduzido usando as regras de tradução.

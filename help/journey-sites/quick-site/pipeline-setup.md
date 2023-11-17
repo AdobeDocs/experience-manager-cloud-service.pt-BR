@@ -2,10 +2,10 @@
 title: Configurar o seu pipeline
 description: Crie um pipeline de front-end para gerenciar a personalização do tema do seu site.
 exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '966'
-ht-degree: 98%
+source-wordcount: '965'
+ht-degree: 97%
 
 ---
 
@@ -65,7 +65,7 @@ Você está vendo uma visão geral do seu programa. Sua página será diferente,
 
 ![Visão geral do Cloud Manager](assets/cloud-manager-overview.png)
 
-Observe o nome do programa que você acessou ou copie o URL. Você precisará fornecê-lo ao desenvolvedor de front-end posteriormente.
+Observe o nome do programa que você acessou ou copie o URL. Você precisa fornecê-lo ao desenvolvedor de front-end posteriormente.
 
 ## Criar um pipeline de front-end {#create-front-end-pipeline}
 

@@ -2,10 +2,10 @@
 title: Lançamentos
 description: Os lançamentos permitem desenvolver conteúdo com eficiência para uma versão futura. Eles permitem fazer alterações prontas para publicação futura, enquanto mantém suas páginas atuais
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '902'
-ht-degree: 98%
+source-wordcount: '901'
+ht-degree: 96%
 
 ---
 
@@ -96,7 +96,7 @@ Eles permitem:
 
    ![Referências de lançamentos no console do Sites](/help/sites-cloud/authoring/assets/launches-references.png)
 
-1. Toque/clique no lançamento apropriado. A lista de ações possíveis será exibida:
+1. Toque/clique no lançamento apropriado. A lista de ações possíveis é exibida:
 
    ![Ações para executar em lançamentos no console do Sites](/help/sites-cloud/authoring/assets/launches-references-actions.png)
 

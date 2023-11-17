@@ -2,10 +2,10 @@
 title: Criar site a partir de modelo
 description: Saiba como criar rapidamente um novo site do AEM usando um modelo de site.
 exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1506'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '1504'
+ht-degree: 98%
 
 ---
 
@@ -81,7 +81,7 @@ Usar um modelo para criar um novo site é muito fácil.
 
 1. No navegador de arquivos, localize o modelo que [você baixou anteriormente](#obtaining-template) e toque ou clique **Fazer upload**.
 
-1. Depois de carregado, ele aparece na lista de modelos disponíveis. Toque ou clique nele para selecioná-lo (o que também revela informações sobre o modelo na coluna direita) e toque ou clique em **Próximo**.
+1. Depois de carregado, ele aparece na lista de modelos disponíveis. Toque ou clique para selecioná-lo (o que também revela informações sobre o modelo na coluna direita) e toque ou clique **Próxima**.
 
    ![Selecione um modelo](assets/select-site-template.png)
 

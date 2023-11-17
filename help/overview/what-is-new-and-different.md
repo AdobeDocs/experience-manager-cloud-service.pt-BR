@@ -2,10 +2,10 @@
 title: O que é diferente e quais são as novidades - Adobe Experience Manager as a Cloud Service
 description: O que é diferente e quais são as novidades - Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: 83b5d9a3ff0e9a3c69e36a97a3f733b05f827d3b
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1897'
-ht-degree: 99%
+source-wordcount: '1895'
+ht-degree: 98%
 
 ---
 
@@ -144,7 +144,7 @@ Também é significativamente diferente, pois agora há:
 
 * Requisitos de implantação:
 
-   * Atualizações de código: todos os aplicativos de clientes desenvolvidos para uma versão anterior do AEM precisarão ser revisados e possivelmente atualizados.
+   * Atualizações de código: todos os aplicativos de clientes desenvolvidos para uma versão anterior do AEM devem ser revisados e possivelmente atualizados.
 
    * Migração de conteúdo
 

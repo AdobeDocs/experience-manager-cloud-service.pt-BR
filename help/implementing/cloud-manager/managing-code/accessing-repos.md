@@ -2,10 +2,10 @@
 title: Acesso a repositórios
 description: Saiba como acessar e gerenciar o repositório Git usando o gerenciamento de conta Git por autoatendimento do Cloud Manager.
 exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
-source-git-commit: 9ec45753f56d0576e75f148ca0165c0ccd621f23
-workflow-type: ht
-source-wordcount: '232'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '231'
+ht-degree: 94%
 
 ---
 
@@ -23,7 +23,7 @@ O Cloud Manager facilita a recuperação das informações do seu repositório u
 
    ![Botão Acessar informações do repositório no cartão Ambientes](/help/implementing/cloud-manager/assets/repos/access-repo1.png)
 
-1. Clique no botão **Exibir informações do repositório** para abrir uma caixa de diálogo para exibir:
+1. Clique em **Exibir informações do repositório** botão para abrir uma caixa de diálogo para exibir:
 
    * A URL do repositório Git do Cloud Manager.
    * O nome de usuário do Git.

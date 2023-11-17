@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management, Search
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '929'
 ht-degree: 5%
 
 ---
@@ -87,12 +87,12 @@ Veja a seguir as etapas para adicionar tags a um ativo:
 
 1. Efetue logon no [!DNL Experience Manager Assets].
 1. Clique em **[!UICONTROL Assets]** > **[!UICONTROL Arquivos]**, selecione o ativo e clique em **[!UICONTROL Propriedades]** para abrir as propriedades do ativo.
-1. No **[!UICONTROL Básico]** clique no ícone de pasta no **[!UICONTROL Tags]** metadados. Uma janela pop-up é aberta.
+1. No **[!UICONTROL Básico]** clique no ícone de pasta em **[!UICONTROL Tags]** metadados. Uma janela pop-up é aberta.
 1. Pesquise ou selecione as tags apropriadas nas tags existentes em `cq-tags`. É possível atribuir várias tags ao ativo.
 
    Você pode classificar a estrutura de tags em ordem crescente ou decrescente com base na variável **[!UICONTROL Nome]** (ordem alfabética), **[!UICONTROL Criado em]** data ou **[!UICONTROL Modificado]** data. Na ilustração a seguir, a estrutura de tags é classificada em ordem alfabética com base no **[!UICONTROL Nome]**.
 
-   ![adicionar-tags](assets/add-tags-to-asset.png)
+   ![add-tags](assets/add-tags-to-asset.png)
 
 1. Clique em **Salvar** para atualizar as alterações nos metadados do ativo.
 

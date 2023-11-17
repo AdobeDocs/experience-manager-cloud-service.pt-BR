@@ -2,9 +2,9 @@
 title: Introdução à ferramenta Transferência de conteúdo
 description: Saiba como começar a usar a ferramenta Transferência de conteúdo
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 9c45a46bc50625301529d5433c78fc9c706f8071
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1439'
+source-wordcount: '1427'
 ht-degree: 21%
 
 ---
@@ -78,7 +78,7 @@ A seção a seguir se aplica à nova versão da ferramenta Transferência de con
 
 1. Faça logon no Cloud Acceleration Manager (CAM) e clique no projeto CAM criado anteriormente para avaliar sua prontidão para migrar para o AEM as a Cloud Service. Se você ainda não criou um projeto CAM, consulte Criação e gerenciamento de um projeto no CAM.
 
-1. Clique no link **Transferência de conteúdo** cartão. Você será direcionado para a exibição da Lista de conjuntos de migração.
+1. Clique em **Transferência de conteúdo** cartão. Você será direcionado para a exibição da Lista de conjuntos de migração.
 
    ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam1.png)
 
@@ -98,7 +98,7 @@ A seção a seguir se aplica à nova versão da ferramenta Transferência de con
    >
    >O nome deve seguir as mesmas convenções de um nó AEM, portanto, não pode conter nenhum destes caracteres: . / : [ ] | *
 
-1. Agora você deve ver sua lista de migração na exibição de lista. Clique no símbolo de três pontos (**..**) para abrir a lista suspensa e clicar em **Copiar chave de extração**. Essa chave será necessária durante a fase de Extração. Copie essa chave de Extração.
+1. Agora você deve ver sua lista de migração na exibição de lista. Selecione o símbolo de três pontos (**..**) para abrir o menu suspenso e selecionar **Copiar chave de extração**. Essa chave é necessária durante a fase de Extração. Copie essa chave de Extração.
 
    >[!NOTE]
    >
@@ -161,7 +161,7 @@ Para preencher o conjunto de migração criado no Cloud Acceleration Manager, é
    * A *green cloud* indicates that you can complete the extraction process.
    * A *yellow icon* indicates that you did not create the existing migration set and the specific one is created by some other user in the same instance.
 
-1. Select a migration set and click on **Properties** to view or edit the migration set properties. While editing properties, it is not possible to change the **Migration Set name** or the **Service URL**. 
+1. Select a migration set and click **Properties** to view or edit the migration set properties. While editing properties, it is not possible to change the **Migration Set name** or the **Service URL**. 
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt06.png) -->
 
@@ -179,7 +179,7 @@ Siga as etapas abaixo para executar uma verificação de tamanho:
 
    ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam8.png)
 
-1. Isso abrirá o **Verificar tamanho** diálogo.
+1. Isso abre o **Verificar tamanho** diálogo.
 
    ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam9.png)
 

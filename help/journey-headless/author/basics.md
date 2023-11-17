@@ -2,10 +2,10 @@
 title: Saiba mais sobre as noções básicas de criação
 description: Saiba mais sobre os conceitos e os mecanismos de criação de conteúdo para seu CMS headless usando Fragmentos de conteúdo.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1729'
-ht-degree: 84%
+source-wordcount: '1727'
+ht-degree: 83%
 
 ---
 
@@ -135,7 +135,7 @@ Você pode fazer isso criando uma série de pastas na seção **Arquivos** do co
 
 ![Opção Criar pasta](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
-Uma caixa de diálogo será aberta em que você pode inserir os detalhes e, em seguida, confirmar clicando em **Criar**:
+Uma caixa de diálogo é aberta, onde você pode inserir os detalhes e confirmar com **Criar**:
 
 ![Caixa de diálogo Criar pasta](/help/journey-headless/author/assets/headless-journey-author-folder-02.png)
 
@@ -216,7 +216,7 @@ Quando o editor for aberto pela primeira vez, você verá:
 
 Por exemplo, um fragmento pode:
 
-* Exigir várias informações, algumas com um tipo específico. Para conteúdo headless, as referências são fundamentais (você aprenderá sobre isso mais tarde na sua jornada).
+* Exigir várias informações, algumas com um tipo específico. Para conteúdo headless, as referências são fundamentais (você aprenderá sobre elas mais tarde na jornada).
 
 * Permite escrever uma longa seção de texto. Aqui há opções adicionais para gerenciar e formatar o texto. Você pode até mesmo abrir os campos de texto individuais em um editor de tela cheia (usando o ícone de tela pequena à direita)
 
@@ -240,7 +240,7 @@ Essa seção pode parecer um pouco estranha, mas após abrir o Editor de Fragmen
 
 * **Modelos de fragmentos de conteúdo**
 
-  Você verá o nome do Modelo de fragmento de conteúdo no painel direito do editor. Este também é um link que leva você ao editor de modelo.
+  Você pode ver o nome do Modelo de fragmento de conteúdo no painel direito do editor. Este também é um link que leva você ao editor de modelo.
 Os Modelos de fragmentos de conteúdo são essenciais para os Fragmentos de conteúdo, pois definem a estrutura usada. No entanto, criá-los e editá-los é (geralmente) responsabilidade de outro perfil, o Arquiteto de conteúdo.
 
   >[!NOTE]

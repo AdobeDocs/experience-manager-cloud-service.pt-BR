@@ -2,10 +2,10 @@
 title: Variáveis de ambiente do Cloud Manager
 description: As variáveis de ambiente padrão podem ser configuradas e gerenciadas por meio do Cloud Manager e fornecidas para o ambiente de tempo de execução, a ser usado na configuração do OSGi.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: 15a53778e0934a1940efa5cc88467c20b4b67fe4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
 source-wordcount: '1016'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
@@ -40,7 +40,7 @@ Casos de uso típicos para as variáveis de ambiente incluem:
 1. O Cloud Manager lista os vários programas disponíveis. Selecione aquele que deseja gerenciar.
 1. Selecione a guia **Ambientes** do programa escolhido e o ambiente para o qual deseja criar uma variável de ambiente no painel de navegação esquerdo.
 1. Nos detalhes do ambiente, selecione a guia **Configuração** e clique em **Adicionar** para abrir a caixa de diálogo **Configuração do ambiente**.
-   * Se estiver adicionando uma variável de ambiente pela primeira vez, você verá o botão **Adicionar configuração** no centro da página. Você pode usar esse botão ou **Adicionar** para abrir a caixa de diálogo **Configuração do ambiente**.
+   * Se estiver adicionando uma variável de ambiente pela primeira vez, você poderá ver uma **Adicionar configuração** no centro da página. Você pode usar esse botão ou **Adicionar** para abrir a caixa de diálogo **Configuração do ambiente**.
 
    ![Guia Configuração](assets/configuration-tab.png)
 

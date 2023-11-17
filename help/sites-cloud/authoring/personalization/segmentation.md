@@ -2,16 +2,16 @@
 title: Noções sobre segmentação
 description: A segmentação é uma consideração importante ao criar uma campanha
 exl-id: 36a9623a-bb19-498a-a0e9-ef80582b1fcf
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '538'
 ht-degree: 74%
 
 ---
 
 # Noções sobre segmentação {#understanding-segmentation}
 
-A segmentação é uma consideração importante ao criar uma campanha. Na maioria dos casos, será necessário ter segmentos já definidos antes de iniciar a campanha.
+A segmentação é uma consideração importante ao criar uma campanha. Na maioria dos casos, é necessário ter segmentos já definidos antes de iniciar a campanha.
 
 Os visitantes do site têm interesses e objetivos diferentes quando chegam a um site. Entender essas metas e atender às expectativas é um fator de sucesso importante para o marketing online.
 

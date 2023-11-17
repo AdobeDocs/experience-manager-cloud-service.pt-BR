@@ -3,10 +3,10 @@ title: Introdução ao uso do [!DNL Assets view]
 description: Como acessar, experiência de logon, casos de uso com suporte e problemas conhecidos do [!DNL Assets view].
 role: User, Leader
 exl-id: 7917b2a0-8340-4d94-aa6f-30ce986fa752
-source-git-commit: 88cbaae2ad8b610b8cd14b3ba0a92e7238ae8e9f
-workflow-type: ht
-source-wordcount: '390'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '389'
+ht-degree: 96%
 
 ---
 

@@ -3,10 +3,10 @@ title: Práticas recomendadas de consulta e indexação
 description: Saiba como otimizar seus índices e consultas com base nas diretrizes de práticas recomendadas da Adobe.
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: ddd67a69bea2e2109ce93a91f42e8f365424f80f
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '3144'
-ht-degree: 46%
+source-wordcount: '3133'
+ht-degree: 47%
 
 ---
 
@@ -137,6 +137,7 @@ A Ferramenta Explicar consulta permite que os desenvolvedores entendam o Plano d
 #### Explicação de uma consulta
 
 Para explicar uma consulta, faça o seguinte:
+
 * Selecione o idioma de consulta apropriado usando o `Language` lista suspensa.
 * Insira a instrução de consulta na caixa `Query` campo.
 * Se necessário, selecione como a consulta será executada usando as caixas de seleção fornecidas.
@@ -238,7 +239,7 @@ Esta seção do plano indica que:
 
 Este plano de execução de consulta resultará em cada ativo abaixo de `/content/dam` sendo lidos a partir do índice e filtrados ainda mais pelo mecanismo de consulta (que incluirá somente aqueles que correspondem à restrição de propriedade não indexada no conjunto de resultados).
 
-Mesmo que apenas uma pequena porcentagem de ativos corresponda à restrição `jcr:content/metadata/myProperty = "My Property Value"`, a consulta precisará ler um grande número de nós para (tentar) preencher a &quot;página&quot; de resultados solicitada. Isso pode resultar em uma consulta com baixo desempenho, que será mostrada como tendo um baixo `Read Optimization` na ferramenta Desempenho da consulta) e pode levar a mensagens de AVISO indicando que um grande número de nós está sendo percorrido (consulte [Travessia de índice](#index-traversal)).
+Mesmo que apenas uma pequena porcentagem de ativos corresponda à restrição `jcr:content/metadata/myProperty = "My Property Value"`, a consulta precisa ler um grande número de nós para (tentar) preencher a &quot;página&quot; de resultados solicitada. Isso pode resultar em uma consulta com baixo desempenho, que será mostrada como tendo um baixo `Read Optimization` na ferramenta Desempenho da consulta) e pode levar a mensagens de AVISO indicando que um grande número de nós está sendo percorrido (consulte [Travessia de índice](#index-traversal)).
 
 Para otimizar o desempenho desta segunda query, crie uma versão personalizada do `damAssetLucene-9` índice (`damAssetLucene-9-custom-1`) e adicione a seguinte definição de propriedade -
 

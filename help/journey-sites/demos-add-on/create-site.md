@@ -2,10 +2,10 @@
 title: Criar site de demonstração
 description: Crie um site de demonstração no AEM com base em uma biblioteca de modelos pré-configurados.
 exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '841'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '838'
+ht-degree: 92%
 
 ---
 
@@ -35,11 +35,11 @@ Este documento ajuda você a entender como criar um novo site com base nos model
 
 Depois que o pipeline tiver implantado o complemento de demonstração de referência, você poderá acessar o ambiente de criação do AEM para criar sites de demonstração com base no conteúdo complementar.
 
-1. Na página de visão geral do programa no Cloud Manager, toque ou clique no link do ambiente de criação do AEM.
+1. Na página de visão geral do programa no Cloud Manager, toque ou clique no link para o ambiente de criação do AEM.
 
    ![Acesso ao ambiente de criação](assets/access-author.png)
 
-1. No menu principal do AEM, toque ou clique em **Sites**.
+1. No menu principal do AEM, toque ou clique **Sites**.
 
    ![Acessar sites](assets/access-sites.png)
 
@@ -104,7 +104,7 @@ Agora que concluiu esta parte da jornada do complemento de demonstração de ref
 Agora, é possível testar os recursos do AEM usando conteúdo complementar. Você tem duas opções para continuar sua jornada:
 
 * Se deseja ver uma demonstração completa e testar o conteúdo do AEM Screens, certifique-se de implantar um site com base no **Modelo de site We.Cafe**, conforme descrito anteriormente, e continue em [Ativar o AEM Screens no seu site de demonstração.](screens.md)
-* Se você deseja apenas ver uma demonstração do conteúdo dos sites, continue em [Gerenciar seus sites de demonstração,](manage.md) onde você aprenderá sobre as ferramentas disponíveis para ajudá-lo a gerenciar seus sites de demonstração e como removê-los.
+* Se você deseja apenas ver uma demonstração do conteúdo dos sites, continue para [Gerencie Seus Sites De Demonstração,](manage.md) onde você aprende sobre as ferramentas disponíveis para ajudá-lo a gerenciar seus sites de demonstração e como removê-los.
 
 ## Recursos adicionais {#additional-resources}
 

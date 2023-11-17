@@ -2,10 +2,10 @@
 title: Perfis de produto e de equipe do AEM as a Cloud Service
 description: Descubra como os perfis de produto e de equipe do AEM as a Cloud Service podem conceder e limitar o acesso às suas soluções licenciadas da Adobe.
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
-source-git-commit: 928a3f0d8ee98e211aa03ad3d0fd83b780e98bbc
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '853'
-ht-degree: 89%
+source-wordcount: '849'
+ht-degree: 85%
 
 ---
 
@@ -24,9 +24,9 @@ O AEM as a Cloud Service é uma oferta em nuvem totalmente nativa que fornece o 
 
 Os membros da sua equipe do AEM as a Cloud Service são adicionados e atribuídos a um ou mais dos seguintes perfis de produto por meio do Admin Console durante a integração.
 
-* **Admins do AEM**: normalmente, a função de admin do AEM é atribuída a desenvolvedores(as), especialmente aos que precisarão ter acesso, por exemplo, aos ambientes de desenvolvimento. O perfil de produto de admin do AEM será usado para conceder privilégios de administração na instância associada do AEM.
+* **Administradores de AEM**: um administrador de AEM normalmente é atribuído aos desenvolvedores, especialmente a desenvolvedores que precisam de acesso, por exemplo, aos ambientes de desenvolvimento. O perfil de produto de admin do AEM será usado para conceder privilégios de administração na instância associada do AEM.
 
-* **Usuários do AEM**: são os usuários em sua organização que geralmente usam o AEM as a Cloud Service para criar conteúdo. Esses usuários precisarão acessar o AEM para realizar suas tarefas. O perfil de produto dos usuários do AEM normalmente é atribuído a um autor de conteúdo do AEM que cria e revisa conteúdo. Esse conteúdo pode ser de vários tipos, como páginas, ativos, publicações etc. O perfil de produto dos usuários do AEM mostrado abaixo é atribuído a esses membros.
+* **Usuários do AEM**: são os usuários em sua organização que geralmente usam o AEM as a Cloud Service para criar conteúdo. Esses usuários precisam acessar o AEM para realizar suas tarefas. O perfil de produto dos usuários do AEM normalmente é atribuído a um autor de conteúdo do AEM que cria e revisa conteúdo. Esse conteúdo pode ser de vários tipos, como páginas, ativos, publicações etc. O perfil de produto dos usuários do AEM mostrado abaixo é atribuído a esses membros.
 
 ![Perfis de produto](/help/onboarding/assets/admin-console-profiles.png)
 

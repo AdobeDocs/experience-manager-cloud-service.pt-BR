@@ -2,10 +2,10 @@
 title: Promoção de inicializações
 description: É necessário promover as páginas de lançamento para mover o conteúdo de volta para a origem (produção) antes de publicar.
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
-workflow-type: ht
-source-wordcount: '814'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '812'
+ht-degree: 98%
 
 ---
 
@@ -80,7 +80,7 @@ ht-degree: 100%
 
 ## Promover páginas de lançamento ao editar {#promoting-launch-pages-when-editing}
 
-Ao editar uma página de lançamento, a ação **Promover lançamento** também está disponível em **Informações da página**. Isso abrirá o assistente para coletar as informações necessárias.
+Ao editar uma página de lançamento, a ação **Promover lançamento** também está disponível em **Informações da página**. Isso abre o assistente para coletar as informações necessárias.
 
 ![Promover inicialização a partir das informações do site](/help/sites-cloud/authoring/assets/launches-promote-page-info.png)
 

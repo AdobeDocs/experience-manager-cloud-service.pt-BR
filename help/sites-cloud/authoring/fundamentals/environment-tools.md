@@ -2,10 +2,10 @@
 title: Ambiente e ferramentas de criação
 description: O ambiente de criação do AEM fornece vários mecanismos para organização e edição de conteúdo
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: ccd4206f029ac77b90f731891ac300c5d3849ef8
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2166'
-ht-degree: 96%
+source-wordcount: '2164'
+ht-degree: 94%
 
 ---
 
@@ -73,7 +73,7 @@ A aparência e o manuseio real dependem do tipo de dispositivo usado:
 
   O navegador de componentes é aberto no lado esquerdo da janela.
 
-  Para adicionar um componente à sua página, clique no componente e arraste-o para o local desejado.
+  Para adicionar um componente à página, clique no componente desejado e arraste-o para o local desejado.
 
   ![Navegador de componentes no desktop](/help/sites-cloud/authoring/assets/component-browser-desktop.png)
 
@@ -149,7 +149,7 @@ A aparência e o manuseio real dependem do tipo de dispositivo usado:
 
   O navegador de ativos é aberto no lado esquerdo da janela.
 
-  Para adicionar um ativo à sua página, clique no ativo desejado e arraste-o para o componente ou local desejado.
+  Para adicionar um ativo à página, clique no ativo necessário e arraste-o para o componente ou local necessário.
 
   ![Navegador de ativos no desktop](/help/sites-cloud/authoring/assets/assets-browser-desktop.png)
 

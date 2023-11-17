@@ -2,9 +2,9 @@
 title: Páginas de erro personalizadas
 description: O AEM vem com um manipulador de erros padrão para lidar com erros HTTP, que pode ser personalizado.
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '572'
 ht-degree: 2%
 
 ---
@@ -36,7 +36,7 @@ Você pode desenvolver seus próprios scripts para personalizar as páginas most
    * de `/libs/sling/servlet/errorhandler/`
    * para `/apps/sling/servlet/errorhandler/`
 
-   O caminho de destino não existe por padrão, portanto, será necessário criá-lo ao fazer isso pela primeira vez.
+   O caminho de destino não existe por padrão, portanto, é necessário criá-lo ao fazer isso pela primeira vez.
 
 1. Vá até `/apps/sling/servlet/errorhandler`. Aqui é possível:
 

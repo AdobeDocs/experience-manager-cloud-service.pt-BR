@@ -2,10 +2,10 @@
 title: Adicionar um nome de domínio personalizado
 description: Saiba como adicionar um nome de domínio personalizado usando o Cloud Manager.
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: d3021a4dd78a0ca86352a81965ce92868e94664a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 87%
+source-wordcount: '632'
+ht-degree: 83%
 
 ---
 
@@ -34,7 +34,7 @@ Siga estas etapas para adicionar um nome de domínio personalizado na página **
 
    ![A janela Configurações do domínio](/help/implementing/cloud-manager/assets/cdn/cdn-create.png)
 
-1. Clique no botão **Adicionar domínio** no canto superior direito para abrir a caixa de diálogo **Adicionar nome de domínio**.
+1. Clique em **Adicionar domínio** botão na parte superior direita para abrir a **Adicionar nome de domínio** diálogo.
 
    ![Caixa de diálogo Adicionar domínio](/help/implementing/cloud-manager/assets/cdn/add-cdn1.png)
 

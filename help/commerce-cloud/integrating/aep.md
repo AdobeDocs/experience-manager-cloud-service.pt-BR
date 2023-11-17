@@ -11,16 +11,16 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 43220614f567bdfad17c6ac9c8b3adcc856ff044
 workflow-type: tm+mt
-source-wordcount: '2076'
+source-wordcount: '2068'
 ht-degree: 1%
 
 ---
 
 # Componentes principais do AEM-CIF e integração com o Adobe Experience Platform {#aem-cif-aep-integration}
 
-A variável [Commerce Integration Framework (CIF)](https://github.com/adobe/aem-core-cif-components) Os componentes principais fornecem integração perfeita com [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-overview.html?lang=en) para encaminhar eventos da loja e seus dados de interações do lado do cliente, como __adicionar ao carrinho__.
+A variável [Commerce integration framework (CIF)](https://github.com/adobe/aem-core-cif-components) Os componentes principais fornecem integração perfeita com [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-overview.html?lang=en) para encaminhar eventos da loja e seus dados de interações do lado do cliente, como __adicionar ao carrinho__.
 
 A variável [Componentes principais da CIF do AEM](https://github.com/adobe/aem-core-cif-components) O projeto fornece uma biblioteca JavaScript chamada [Conector do Adobe Experience Platform para Adobe Commerce](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) para coletar dados do evento na sua loja do Commerce. Esses dados de evento são enviados para o Experience Platform onde são usados em outros produtos da Adobe Experience Cloud, como Adobe Analytics e Adobe Target, para criar um perfil de 360 graus que cobre uma jornada do cliente. Conectando os dados do Commerce a outros produtos na Adobe Experience Cloud, você pode executar tarefas como analisar o comportamento do usuário no seu site, executar testes AB e criar campanhas personalizadas.
 
@@ -28,7 +28,7 @@ Saiba mais sobre o [Coleta de dados Experience Platform](https://experienceleagu
 
 ## Enviar `addToCart` dados do evento para Experience Platform {#send-addtocart-to-aep}
 
-As etapas a seguir mostram como enviar a `addToCart` dados de evento de páginas de produto renderizadas pelo AEM para o Experience Platform usando o Conector CIF - Experience Platform. Usando a extensão do navegador Adobe Experience Platform Debugger, você pode testar e revisar os dados enviados.
+As etapas a seguir mostram como enviar a `addToCart` dados de evento de páginas de produto renderizadas por AEM para o Experience Platform usando o Conector CIF - Experience Platform. Usando a extensão do navegador Adobe Experience Platform Debugger, você pode testar e revisar os dados enviados.
 
 ![Revisar dados do evento addToCart no Adobe Experience Platform Debugger](../assets/aep-integration/EventData-AEM-AEP.png)
 
@@ -67,7 +67,7 @@ A implantação local `My Demo StoreFront` o site de comércio eletrônico com c
 
 ![Site padrão de comércio AEM](../assets/aep-integration/demo-aem-storefront.png)
 
-### Instalar dependências de conectores Peregrine e CIF-AEP
+### Instalar dependências de conector Peregrine e CIF-AEP
 
 Para coletar e enviar os dados do evento das páginas de categoria e produto deste site do AEM Commerce, é necessário instalar a chave `npm` pacotes na `ui.frontend` módulo do projeto AEM Commerce.
 
@@ -172,7 +172,7 @@ Para [`InMemoryCache`](https://www.apollographql.com/docs/react/caching/cache-co
 
 ### Inicializar os componentes principais de Peregrine e CIF
 
-Para inicializar os componentes principais do Peregrine e da CIF baseados no React, crie a configuração necessária e os arquivos JavaScript.
+Para inicializar os componentes principais do Peregrine e do CIF baseados no React, crie a configuração necessária e os arquivos JavaScript.
 
 1. Navegue até a `ui.frontend` e crie a seguinte pasta: `src/main/webpack/components/commerce/App`
 
@@ -462,7 +462,7 @@ Para acionar o evento, você pode usar o autor de AEM ou o serviço de publicaç
 
 ## Detalhes da implementação {#implementation-details}
 
-A variável [Conector de Experience Platform da CIF](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) O é criado sobre o [Conector Experience Platform para Adobe Commerce](https://marketplace.magento.com/magento-experience-platform-connector.html), que faz parte da [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) projeto.
+A variável [Conector de Experience Platform CIF](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) O é criado sobre o [Conector Experience Platform para Adobe Commerce](https://marketplace.magento.com/magento-experience-platform-connector.html), que faz parte da [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) projeto.
 
 O projeto PWA Studio permite criar vitrines de Progressive Web Application (PWA) alimentadas por Adobe Commerce ou Magento Open Source. O projeto também contém uma biblioteca de componentes chamada [Peregrin](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) para adicionar lógica aos componentes visuais. A variável [Biblioteca Peregrin](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) também fornece os ganchos personalizados do React usados pelo [Conector Experience Platform](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) para integrar com o Experience Platform sem interrupções.
 
@@ -502,6 +502,6 @@ __Eventos XDM do perfil:__
 Para obter mais informações, consulte os seguintes recursos:
 
 - [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/)
-- [Visão geral do conector Experience Platform](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/overview.html)
-- [Eventos do conector Experience Platform](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/event-forwarding/events.html)
+- [[!DNL Data Connection] visão geral](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html)
+- [[!DNL Data Connection] Eventos](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/event-forwarding/events.html)
 - [Visão geral do Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html)

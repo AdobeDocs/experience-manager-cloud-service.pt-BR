@@ -2,10 +2,10 @@
 title: Editar as propriedades da página
 description: Saiba como definir as propriedades necessárias para gerenciar uma página no AEM.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2279'
-ht-degree: 79%
+source-wordcount: '2280'
+ht-degree: 96%
 
 ---
 
@@ -39,8 +39,8 @@ As propriedades são distribuídas por várias guias.
 
    * **Descrição da marca**
 
-      * **Substituir** - marque essa opção para definir a descrição da marca nesta página.
-         * O valor é herdado por qualquer página secundária, a menos que também tenha suas **Substituir** valores definidos.
+      * **Sobrepor**: marque essa opção para definir a descrição da marca nesta página.
+         * O valor é herdado por todas as páginas secundárias, a menos que elas também tenham seus valores de **Sobreposição** definidos.
       * **Substituir valor** - o texto da descrição da marca a ser anexado ao título da página.
          * O valor é anexado ao título da página após um caractere de barra vertical, como &quot;Cycling Tuscany | Sempre pronto para a WKND&quot;
 
@@ -51,7 +51,7 @@ As propriedades são distribuídas por várias guias.
 * **Mais títulos e descrições**
 
    * **Título da página** - um título a ser usado na página. Normalmente é usado pelos componentes de título. Se estiver vazio, a variável **Título** é usada.
-   * **Título de navegação** - Você pode especificar um título separado para usar na navegação (por exemplo, se desejar algo mais conciso). Se estiver vazio, a variável **Título** é usada.
+   * **Título de navegação**: você pode especificar um título separado para uso na navegação (por exemplo, se desejar algo mais conciso). Se estiver vazio, o **Título** é usado.
    * **Subtítulo** - um subtítulo para usar na página.
    * **Descrição** - a sua descrição da página, a finalidade dela ou qualquer outro detalhe que desejar adicionar.
 
@@ -62,15 +62,15 @@ As propriedades são distribuídas por várias guias.
   > Consulte [Momento da ativação e da desativação - Configuração do acionador](/help/operations/replication.md#on-and-off-times-trigger-configuration) para obter detalhes sobre como configurar a replicação automática relacionada.
 
   >[!NOTE]
-  >Se uma das opções for **No Prazo** ou **Tempo desligado** estiver no passado e a replicação automática estiver configurada, a ação relevante será acionada imediatamente.
+  >Se o **Momento da ativação** ou **Momento da desativação** estiverem no passado e a replicação automática estiver configurada, então a ação relevante será acionada imediatamente.
 
-   * **No Prazo** - A data e a hora em que a página publicada fica visível (renderizada) no ambiente de publicação. A página deve ser publicada manualmente ou por replicação automática pré-configurada.
+   * **Momento da ativação**: a data e a hora em que a página publicada ficará visível (renderizada) no ambiente de publicação. A página deve estar publicada, seja manualmente ou por replicação automática pré-configurada.
 
-      * Se já [publicado (manualmente)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) essa página é mantida inativa (oculta) até a renderização no horário especificado.
-      * Se não for publicada e configurada para replicação automática, a página será publicada automaticamente e, em seguida, renderizada no horário especificado.
-      * Se não for publicada e não estiver configurada para replicação automática, a página não será publicada automaticamente. Um 404 é exibido quando é feita uma tentativa de acessar a página.
+      * Se já [publicada (manualmente)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) essa página será mantida inativa (oculta) até a renderização no horário especificado.
+      * Se não estiver publicada, mas estiver configurada para replicação automática, a página será publicada automaticamente e, em seguida, renderizada no horário especificado.
+      * Se não estiver publicada e não estiver configurada para replicação automática, a página não será publicada automaticamente, portanto, um erro 404 será exibido quando houver uma tentativa de acessar a página.
 
-   * **Tempo desligado** - Semelhante a e frequentemente utilizado em combinação com **No Prazo**, isso define a hora em que a página publicada fica oculta no ambiente de publicação.
+   * **Momento da desativação**: semelhante e frequentemente usado em combinação com o **Momento da ativação**, define o momento em que a página publicada fica oculta no ambiente de publicação.
 
    * Deixe esses campos (**Momento de ligar** e **Hora de desligar**) vazios para páginas que deseja publicar imediatamente e que estão disponíveis no ambiente de publicação até que sejam desativadas (o cenário normal).
 
@@ -115,7 +115,7 @@ As propriedades são distribuídas por várias guias.
 
 * **Configurações de modelos**
 
-   * **Modelos permitidos** - [Define a lista de modelos que estão disponíveis](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author) nesta sub-ramificação
+   * **Modelos permitidos**: [define a lista de modelos que estão disponíveis](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author) dentro desta sub-ramificação
 
 * **Requisitos de autenticação**
 
@@ -133,7 +133,7 @@ As propriedades são distribuídas por várias guias.
 
 * **SEO**
 
-   * **URL canônico** - pode ser usado para substituir o URL canônico da página; se deixado em branco, o URL da página será seu URL canônico
+   * **URL canônica**: pode ser usada para substituir a URL canônica da página. Se deixada em branco, a URL da página será sua URL canônica
 
    * **Tags de robôs**: seleciona as tags de robôs para controlar o comportamento dos rastreadores de mecanismos de pesquisa.
 
@@ -141,7 +141,7 @@ As propriedades são distribuídas por várias guias.
      >
      >Algumas das opções entram em conflito entre si. Em caso de conflito, a opção mais permissiva tem prioridade.
 
-   * **Gerar mapa do site** - quando selecionado, um sitemap.xml é gerado para esta página e seus descendentes
+   * **Gerar mapa do site**: quando selecionado, um arquivo sitemap.xml é gerado para esta página e suas descendentes
 
 ### Imagens {#images}
 
@@ -196,11 +196,11 @@ As propriedades são distribuídas por várias guias.
 
 ### Blueprint {#blueprint}
 
-Essa guia só fica visível para páginas que servem como blueprints. Os blueprints servem como base para as Live Copies que fazem parte do [Gerenciamento de vários sites](/help/sites-cloud/administering/msm/overview.md).
+Essa guia só fica visível para páginas que servem como blueprints. Os blueprints servem como base para as Live Copies e fazem parte do [Gerenciamento de vários sites](/help/sites-cloud/administering/msm/overview.md).
 
-* **Live Copies atuais** - Lista páginas que são baseadas nesta (ou seja, são Live Copies da) página do blueprint
+* **Live Copies atuais**: lista as páginas que são baseadas (ou seja, são Live Copies) nesta página de blueprint
 
-* **Configurações de implantação** - Controla as circunstâncias sob as quais as modificações são propagadas no Live Copy
+* **Configurações de implantação**: controla as circunstâncias sob as quais as modificações serão propagadas na Live Copy
 
 ### Live Copy {#live-copy}
 
@@ -223,11 +223,11 @@ Essa guia só fica visível para páginas configuradas como Live Copies. Assim c
 
    * **Herança da Live Copy** - quando marcado, a configuração da Live Copy terá efeito em todas as páginas secundárias
    * **Herdar configurações de implantação da principal** - se marcado, a configuração de implantação é herdada da página principal
-   * **Escolha a configuração de implantação** - Define as circunstâncias sob as quais as modificações são propagadas a partir do Blueprint e só ficam disponíveis quando **Herdar configurações de implantação do primário** não está selecionado
+   * **Escolher configuração de implantação**: define as circunstâncias em que as modificações são propagadas a partir do Blueprint e só estão disponíveis quando **Herdar configurações de implantação da página principal** não está selecionado
 
-### Visualizar {#preview}
+### Visualização {#preview}
 
-Quando um ambiente de Visualização estiver habilitado, você verá:
+Quando um ambiente de Visualização está ativado, você vê o seguinte:
 
 * URL de visualização - o URL usado para acessar o conteúdo no ambiente de Visualização
 
@@ -253,7 +253,7 @@ Por meio de uma configuração simples, um autor de conteúdo agora pode ativar 
 
    * **Estratégia de armazenamento em cache e frequência de atualização de conteúdo**: define o modelo de armazenamento em cache do seu PWA
    * **Arquivos para armazenar em cache para uso offline**
-      * **Pré-armazenamento em cache de arquivos (visualização técnica)** - os arquivos hospedados no AEM são salvos no cache do navegador local quando o service worker está sendo instalado e antes de ser usado
+      * **Pré-armazenamento em cache de arquivos (visualização técnica)**: os arquivos hospedados no AEM serão salvos no cache do navegador local quando o serviço secundário estiver sendo instalado e antes de ser usado
       * **Bibliotecas do lado do cliente**: bibliotecas do lado do cliente para armazenar em cache e oferecer a experiência offline
       * **Inclusões de caminhos**: as solicitações de rede para os caminhos definidos são interceptadas e o conteúdo em cache é retornado de acordo com a estratégia de armazenamento em cache e a frequência de atualização de conteúdo configuradas
       * **Exclusões de caminhos**: esses arquivos nunca serão armazenados em cache, independentemente das configurações definidas em Pré-armazenamento em cache de arquivos e Inclusões de caminhos
@@ -276,7 +276,7 @@ Ao clicar ou tocar em **Propriedades** para definir as propriedades da página:
 1. Selecione a opção **Propriedades da exibição** para a página desejada usando uma das seguintes opções:
    * [Ações rápidas](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [Modo de seleção](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources)
-   * As propriedades da página são exibidas usando as guias apropriadas.
+   * As propriedades da página são exibidas usando as guias adequadas.
 1. Exiba ou edite as propriedades conforme necessário.
 1. Em seguida, clique em **Salvar** para salvar as atualizações, e em **Fechar** para retornar ao console.
 
@@ -286,7 +286,7 @@ Ao editar uma página, você pode usar as **Informações da página** para defi
 
 1. Abra a página na qual deseja editar as propriedades.
 1. Selecione o ícone **Informações da página** para abrir o menu de seleção:
-1. Selecione a opção **Abrir propriedades** e será exibida uma caixa de diálogo para você editar as propriedades classificadas por guia. Os seguintes botões também estão disponíveis à direita da barra de ferramentas:
+1. Selecionar **Abrir propriedades** e uma caixa de diálogo é aberta, permitindo que você edite as propriedades, classificadas pela guia apropriada. Os seguintes botões também estão disponíveis à direita da barra de ferramentas:
    * **Cancelar**
    * **Salvar e fechar**
 1. Use o botão **Salvar e fechar** para salvar as alterações.
@@ -300,7 +300,7 @@ Você pode selecionar várias páginas para a edição em massa por meio de vár
 * Ao navegar pelos consoles dos **Sites**
 * Depois de usar a função **Pesquisar** para localizar um conjunto de páginas
 
-Depois de selecionar as páginas e clicar ou tocar no **Opção Propriedades**, as propriedades em massa são mostradas:
+Após selecionar as páginas e clicar ou tocar na **opção Propriedades**, as propriedades em massa serão exibidas:
 
 ![Propriedades da página de edição em massa](/help/sites-cloud/authoring/assets/page-properties-bulk-edit.png)
 
@@ -308,7 +308,7 @@ Só é possível editar em massa as páginas que:
 
 * Compartilham o mesmo tipo de recurso
 * Não fazem parte de uma live copy
-   * Se qualquer uma das páginas estiver em uma live copy, uma mensagem será exibida quando as propriedades forem abertas.
+   * Se alguma das páginas estiver em uma live copy, uma mensagem será exibida quando as propriedades forem abertas.
 
 Depois de entrar na edição de itens em massa é possível:
 
@@ -329,6 +329,6 @@ Depois de entrar na edição de itens em massa é possível:
 * **Editar**
 
    * Você pode atualizar os valores nos campos disponíveis.
-      * Os novos valores são aplicados a todas as páginas selecionadas ao selecionar **Concluído**.
-      * Quando o campo tem vários valores (por exemplo, tags), você pode anexar um novo valor ou remover um valor comum.
-   * Os campos que são comuns, mas têm valores diferentes em várias páginas, são indicados com um valor especial; como o texto `<Mixed Entries>`.
+      * Os novos valores são aplicados a todas as páginas selecionadas ao clicar em **Concluído**.
+      * Quando o campo tem vários valores (por exemplo, tags), é possível anexar um novo valor ou remover um valor comum.
+   * Os campos que são comuns, mas têm valores diferentes em várias páginas, são indicados com um valor especial, como o texto `<Mixed Entries>`.

@@ -2,10 +2,10 @@
 title: Introdução à Tradução do AEM Headless
 description: Saiba como organizar seu conteúdo headless e como funcionam as ferramentas de tradução do AEM.
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
-source-git-commit: f4e28d89023e8f326e6816ebd8168e1e31e772ce
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1425'
-ht-degree: 96%
+source-wordcount: '1422'
+ht-degree: 95%
 
 ---
 
@@ -79,7 +79,7 @@ O arquiteto de conteúdo funciona no início do projeto para definir essa estrut
 Como os Modelos de conteúdo definem a estrutura do seu conteúdo, é necessário saber quais campos de seus modelos devem ser traduzidos. Geralmente, você trabalha com o arquiteto de conteúdo para definir isso. Para navegar pelos campos de seus modelos de conteúdo, siga as etapas abaixo.
 
 1. Navegue até **Ferramentas** -> **Geral** -> **Modelos de fragmentos de conteúdo**.
-1. Os Modelos de fragmentos de conteúdo geralmente são armazenados em uma estrutura de pastas. Toque ou clique na pasta do seu projeto.
+1. Os Modelos de fragmentos de conteúdo geralmente são armazenados em uma estrutura de pastas. Toque ou clique na pasta do projeto.
 1. Os modelos estão listados. Toque ou clique no modelo para ver os detalhes.
    ![Modelos de fragmentos do conteúdo](assets/content-fragment-models.png)
 1. O **Editor do modelo de fragmento de conteúdo** abre.
@@ -178,7 +178,7 @@ Agora que você concluiu esta parte da jornada de tradução headless, você dev
 * Entenda como o AEM armazena conteúdo headless.
 * Se familiarizar com as ferramentas de tradução do AEM.
 
-Desenvolva esse conhecimento e continue sua jornada de tradução AEM headless revisando o documento a seguir [Configurar a integração da tradução](configure-connector.md) onde você aprenderá a conectar o AEM a um serviço de tradução.|
+Desenvolva esse conhecimento e continue sua jornada de tradução AEM headless revisando o documento a seguir [Configurar a integração da tradução](configure-connector.md) onde você aprende a conectar o AEM a um serviço de tradução.|
 
 ## Recursos adicionais {#additional-resources}
 

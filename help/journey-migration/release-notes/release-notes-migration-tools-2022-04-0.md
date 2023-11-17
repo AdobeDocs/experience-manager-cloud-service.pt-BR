@@ -3,9 +3,9 @@ title: Notas de versão das Ferramentas de migração no AEM as a Cloud Service 
 description: Notas de versão das Ferramentas de migração no AEM as a Cloud Service versão 2022.4.0
 feature: Release Information
 exl-id: 4941736b-82cd-4050-b3e9-aef250d5c4c7
-source-git-commit: 717b2c851a18ef5171d64a462509ce08fb87a59c
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '231'
 ht-degree: 5%
 
 ---
@@ -24,7 +24,7 @@ A data de lançamento do Analisador de práticas recomendadas v2.1.28 é 22 de a
 
 * Capacidade de detectar e relatar o uso de APIs incompatíveis do Asset Manager. Há quatro APIs que não são mais compatíveis com o AEM as a Cloud Service. Os clientes devem garantir que não estejam mais usando essas APIs e devem usar o novo método para fazer upload de ativos.
 
-* Capacidade de detectar o uso de modelos de Fragmento de conteúdo. Os modelos de Fragmento de conteúdo não são mais compatíveis com a criação de novos fragmentos de conteúdo no AEM as a Cloud Service. Os clientes precisarão criar modelos de fragmento de conteúdo para substituir os modelos de fragmento de conteúdo.
+* Capacidade de detectar o uso de modelos de Fragmento de conteúdo. Os modelos de Fragmento de conteúdo não são mais compatíveis com a criação de novos fragmentos de conteúdo no AEM as a Cloud Service. Os clientes precisam criar modelos de fragmento de conteúdo para substituir os modelos de fragmento de conteúdo.
 
 * Capacidade de detectar ativos com mais de 100 descendentes no nó de metadados do ativo no repositório. É recomendável remover nós de metadados que não são necessários para melhorar o desempenho ao carregar pastas que consistem nesses ativos.
 

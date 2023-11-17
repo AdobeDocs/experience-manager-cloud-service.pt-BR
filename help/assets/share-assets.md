@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 177021106fc67e67a8cd6645a6684185331dd6f4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1344'
+source-wordcount: '1340'
 ht-degree: 5%
 
 ---
@@ -93,7 +93,7 @@ Qualquer usuário com acesso ao link de ativo compartilhado pode baixar os ativo
 
   ![Baixar caixa de entrada](assets/link-sharing-download-inbox.png)
 
-* Quando o processamento for concluído, clique no link **[!UICONTROL Baixar]** botão para baixar o arquivo zip.
+* Quando o processamento estiver concluído, clique no link **[!UICONTROL Baixar]** botão para baixar o arquivo zip.
 
 <!--
 You can also copy the auto-generated link and share it with the users. The default expiration time for the link is one day.

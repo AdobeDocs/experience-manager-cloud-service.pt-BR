@@ -2,10 +2,10 @@
 title: Hibernação cancelamento da hibernação em ambientes de sandbox
 description: Saiba como os ambientes de um programa de sandbox entram automaticamente em um modo de hibernação e como você pode removê-los.
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '685'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '681'
+ht-degree: 93%
 
 ---
 
@@ -47,7 +47,7 @@ Siga estas etapas para hibernar manualmente os ambientes dos programas de sandbo
 
    ![Confirmar hibernação](assets/hibernate-2.png)
 
-Quando a hibernação for bem-sucedida, você verá a notificação de conclusão do processo de hibernação para o seu ambiente na tela do **Console do desenvolvedor**.
+Quando a hibernação for bem-sucedida, você verá a notificação de conclusão do processo de hibernação para o seu ambiente na **Console do desenvolvedor** tela.
 
 ![Confirmação de hibernação](assets/hibernate-4.png)
 

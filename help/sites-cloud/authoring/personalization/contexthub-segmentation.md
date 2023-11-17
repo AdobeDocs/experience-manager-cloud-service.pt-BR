@@ -2,10 +2,10 @@
 title: Configuração da segmentação com o ContextHub
 description: Saiba como configurar a segmentação usando o ContextHub.
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1687'
-ht-degree: 98%
+source-wordcount: '1682'
+ht-degree: 95%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 98%
 
 A segmentação é uma consideração importante ao criar uma campanha. Consulte [Noções sobre segmentação](segmentation.md) para obter informações sobre como a segmentação funciona e os termos principais.
 
-Dependendo das informações que você já coletou sobre os visitantes do seu site e das metas que deseja alcançar, será necessário definir os segmentos e as estratégias necessárias para o seu conteúdo direcionado.
+Dependendo das informações que você já coletou sobre os visitantes do seu site e das metas que deseja alcançar, defina os segmentos e as estratégias necessárias para o seu conteúdo direcionado.
 
 Esses segmentos são usados para fornecer conteúdo direcionado especificamente a um visitante. As [atividades](activities.md) definidas aqui podem ser incluídas em qualquer página e definem para qual segmento de visitante o conteúdo especializado se aplica.
 
@@ -103,7 +103,7 @@ Para definir seu novo segmento:
 
 1. No console segmentos, edite o segmento criado recentemente para abri-lo no editor de segmentos.
 1. Arraste uma comparação ou referência para o editor de segmentos e ela aparecerá no contêiner AND padrão.
-1. Clique duas vezes em ou toque na opção de configuração da nova referência ou segmento para editar os parâmetros específicos. Neste exemplo, estamos testando para pessoas na Basileia.
+1. Clique duas vezes ou toque na opção de configuração da nova referência ou segmento para editar os parâmetros específicos. Neste exemplo, estamos testando para pessoas na Basileia.
 
    ![Teste para pessoas na Basileia](../assets/contexthub-comparing-property-value.png)
 

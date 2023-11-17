@@ -2,10 +2,10 @@
 title: Notificações
 description: Saiba como receber informações sobre implantações de pipeline usando o sistema de notificação da Adobe Experience Cloud.
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
-source-git-commit: d95b432f74a7b52efc9fd1cf0e380c3f5237503c
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 89%
+source-wordcount: '584'
+ht-degree: 79%
 
 ---
 
@@ -32,17 +32,17 @@ A guia **Avisos** inclui avisos de produto da Adobe. Os avisos dizem respeito ao
 
 ![Barra lateral de notificações](assets/notificaitons-announcements.png)
 
-Clique em uma notificação ou anúncio para exibir os detalhes. As notificações vinculadas a atividades como implantações de pipeline levam você aos detalhes dessa atividade, como a janela de execução do pipeline.
+Clique em uma notificação ou anúncio para exibir seus detalhes. As notificações vinculadas a atividades como implantações de pipeline levam você aos detalhes dessa atividade, como a janela de execução do pipeline.
 
-Clique na opção **Exibir tudo** na parte inferior do painel para exibir todos os avisos na caixa de entrada.
+Clique em **Exibir todos** opção na parte inferior do painel para exibir todos os anúncios na caixa de entrada.
 
-Clique na opção **Marcar tudo como lido** na parte inferior do painel para marcar todas as notificações não lidas como lidas e limpar o símbolo do ícone de sino.
+Clique em **Marcar tudo como lido** opção na parte inferior do painel para marcar todas as notificações não lidas como lidas e limpar o símbolo do ícone de sino.
 
 ## Configuração de notificação {#configuration}
 
 Você pode personalizar como recebe notificações e quais notificações recebe.
 
-Clique no ícone de engrenagem na parte inferior da barra lateral de notificações.
+Clique no ícone de engrenagem na parte superior da barra lateral de notificações.
 
 ![Ícone Configurações de notificação](assets/notifications-configuration.png)
 
@@ -54,7 +54,7 @@ As assinaturas definem para quais produtos você recebe notificações e quais n
 
 ![Assinaturas de notificação](assets/notifications-subscriptions.png)
 
-Por padrão, você receberá todas as notificações para todos os produtos, tanto no aplicativo quanto por email. Clique na divisa ao lado do nome de um produto para revelar as opções detalhadas e definir os tipos de notificações que você recebe para esse produto. Ou marque ou desmarque as opções no nível do produto para marcar/desmarcar todas as opções do produto.
+Por padrão, você receberá todas as notificações para todos os produtos, tanto no aplicativo quanto por email. Clique na divisa ao lado de um nome de produto para revelar as opções detalhadas e definir os tipos de notificações que você recebe para esse produto. Ou marque ou desmarque as opções no nível do produto para marcar/desmarcar todas as opções do produto.
 
 ![Personalização de assinatura de notificação](assets/notifications-subscriptions-customize.png)
 

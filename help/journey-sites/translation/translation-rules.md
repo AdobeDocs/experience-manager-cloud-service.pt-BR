@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 831009b8-8e09-4b0f-b0fd-4e21221c1455
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
-source-wordcount: '789'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '788'
+ht-degree: 96%
 
 ---
 
@@ -97,7 +97,7 @@ Agora que concluiu esta parte da jornada de tradução do AEM Sites, você deve:
 * Entenda o que as regras de tradução fazem.
 * Ser capaz de definir suas próprias regras de tradução.
 
-Aproveite esse conhecimento e continue sua jornada de tradução do AEM Sites revisando o documento [Traduzir conteúdo](translate-content.md), onde você aprenderá como o conector e as regras funcionam juntos para traduzir conteúdo.
+Desenvolva esse conhecimento e continue sua jornada de tradução do AEM Sites revisando o documento a seguir [Traduzir conteúdo](translate-content.md) onde você aprende como o conector e as regras funcionam juntos para traduzir conteúdo.
 
 ## Recursos adicionais {#additional-resources}
 

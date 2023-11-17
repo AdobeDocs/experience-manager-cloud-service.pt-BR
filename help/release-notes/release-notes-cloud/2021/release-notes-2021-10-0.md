@@ -1,11 +1,11 @@
 ---
-title: Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2021.10.0.
-description: Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2021.10.0.
+title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2021.10.0.
+description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2021.10.0.
 exl-id: ab584923-5f06-4b54-941b-e00bc1158b81
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1437'
-ht-degree: 67%
+source-wordcount: '1436'
+ht-degree: 69%
 
 ---
 
@@ -79,11 +79,11 @@ Você pode escrever para [!DNL formscsbeta@adobe.com] para se inscrever no progr
 
 * O complemento CIF é compatível com a versão mais recente do Commerce v2.4.3 com novas APIs e esquemas do GraphQL
 
-* Os autores podem adicionar links para páginas de produtos e catálogos em campos de texto usando o editor de rich text (RTE). Foi adicionado um ícone da CIF à barra de ferramentas do RTE, que abrirá os seletores para pesquisar e selecionar rapidamente o produto ou categoria sem sair do contexto.
+* Os autores podem adicionar links para páginas de produtos e catálogos em campos de texto usando o editor de rich text (RTE). Um ícone CIF foi adicionado à barra de ferramentas do RTE, que abre os seletores para pesquisar e selecionar rapidamente o produto ou categoria sem sair do contexto.
 
 * O carrinho de compras pop-up e o check-out foram substituídos por páginas dedicadas de carrinho de compras e check-out para AEM. Os componentes nessas páginas são criados usando os componentes Peregrine extensíveis do Adobe Commerce
 
-* Os comerciantes podem ocultar determinadas categorias de catálogo de produtos na navegação usando o back-end do Commerce. O componente principal de Navegação da CIF respeita a configuração de backend de comércio &quot;incluir no menu&quot; para mostrar/ocultar categorias na navegação
+* Os comerciantes podem ocultar determinadas categorias de catálogo de produtos na navegação usando o back-end do Commerce. O componente principal de Navegação do CIF respeita a configuração de backend de comércio &quot;incluir no menu&quot; para mostrar/ocultar categorias na navegação
 
 * AEM Storefront Venia retorna o erro HTTP 404 se a página de categoria ou produto não for encontrada
 
@@ -98,10 +98,10 @@ A próxima versão está planejada para 9 de dezembro de 2021.
 
 ### Novidades {#what-is-new-cm-nov}
 
-* Os usuários agora podem usar os novos pipelines de front-end para implantar exclusivamente o código de front-end de maneira acelerada. Consulte [Pipelines de front-end do Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) para saber mais.
+* Os usuários agora podem aproveitar os novos pipelines de front-end para implantar exclusivamente o código de front-end de forma acelerada. Consulte [Pipelines de front-end do Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) para saber mais.
 
   >[!IMPORTANT]
-  >Você deve estar usando a versão AEM `2021.10.5933.20211012T154732Z` para usar novos pipelines de front-end.
+  >É necessário usar o AEM versão `2021.10.5933.20211012T154732Z` para aproveitar os novos pipelines de Front-End.
 
 * A duração do pipeline de qualidade de código é significativamente reduzida ao executar a análise de código de uma maneira mais eficiente, sem a necessidade de criar uma imagem completa do AEM. Esta alteração será gradual durante as semanas que se seguem ao lançamento.
 

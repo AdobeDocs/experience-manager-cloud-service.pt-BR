@@ -2,10 +2,10 @@
 title: Criar e organizar páginas
 description: Saiba como organizar seu site criando e gerenciando páginas com AEM.
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: b658f303d25cca958c08a95ead12fa3b987bcb3b
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2451'
-ht-degree: 98%
+source-wordcount: '2449'
+ht-degree: 97%
 
 ---
 
@@ -32,7 +32,7 @@ Este documento descreve como criar e gerenciar páginas com o Adobe Experience M
 
 ## Organizar seu site {#organizing-your-website}
 
-Como autor, será necessário organizar seu site dentro do AEM. Isso envolve criar e nomear suas páginas de conteúdo de modo que:
+Como autor, você precisa organizar seu site dentro do AEM. Isso envolve criar e nomear suas páginas de conteúdo de modo que:
 
 * Você pode encontrá-las facilmente no ambiente de criação
 * Os visitantes do seu site possam navegar facilmente por elas no ambiente de publicação
@@ -222,7 +222,7 @@ A menos que todas as páginas tenham sido criadas antecipadamente para você, é
    >
    >Caso crie uma página usando um nome que já existe no local, o sistema vai gerar automaticamente uma variação do nome, ao anexar um número. Por exemplo, se `beach` já existir, uma nova página se tornará `beach1`.
 
-1. Caso volte ao console, você verá em sua nova página:
+1. Se você retornar ao console, poderá ver sua nova página:
 
    ![Nova página resultante](/help/sites-cloud/authoring/assets/organizing-create-page-result.png)
 
@@ -306,7 +306,7 @@ O AEM oferece a funcionalidade de atualizar todos os links internos que se refer
 
    ![Botão Mover](/help/sites-cloud/authoring/assets/move.png)
 
-   Isso abrirá o assistente para mover a página.
+   Isso abre o assistente para mover página.
 
 1. No estágio **Renomear** do assistente, é possível:
 

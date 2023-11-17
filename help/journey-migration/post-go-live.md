@@ -2,9 +2,9 @@
 title: Pós-ativação
 description: Saiba como monitorar problemas e melhorar o desempenho
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
-source-git-commit: 1b9d49ce1ef8ad4b0a11400b41d8c9b880cbf884
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '482'
 ht-degree: 29%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 29%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html?lang=pt-BR" text="Acesso e gerenciamento de registros"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=pt-BR#aem-as-a-cloud-service-development-tools" text="Ferramentas de desenvolvimento do AEM as a Cloud Service"
 
-Esta jornada é a última parte, portanto, você aprenderá a monitorar problemas e melhorar o desempenho após a conclusão da migração. Você deve garantir a limpeza de arquivos temporários, analisar práticas recomendadas para desenvolvimento contínuo e gerenciar logs.
+Esta jornada é a última parte, para que você aprenda a monitorar problemas e melhorar o desempenho após a conclusão da migração. Você deve garantir a limpeza de arquivos temporários, analisar práticas recomendadas para desenvolvimento contínuo e gerenciar logs.
 
 ## A história até agora {#story-so-far}
 

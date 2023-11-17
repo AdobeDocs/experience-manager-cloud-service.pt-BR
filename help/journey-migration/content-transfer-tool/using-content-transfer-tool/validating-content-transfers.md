@@ -2,9 +2,9 @@
 title: Validar transferências de conteúdo
 description: Usar a ferramenta Transferência de conteúdo para validar as transferências de conteúdo
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: c8739388ac21dd40d6757815af6f2732991d216b
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1077'
 ht-degree: 2%
 
 ---
@@ -138,7 +138,7 @@ Consulte [Mapeamento de usuários e migração de entidade de segurança](/help/
 
 Depois que a extração e a assimilação forem concluídas com êxito, um resumo e um relatório da migração principal estarão disponíveis. Essas informações podem ser usadas para validar quais usuários e grupos foram migrados com êxito e, talvez, para determinar por que alguns não foram migrados.
 
-Para exibir essas informações, acesse Cloud Acceleration Manager. Clique no cartão do projeto e clique no cartão Transferência de conteúdo. Navegue até **Tarefas de assimilação** e localize a assimilação que deseja verificar. Clique nos três pontos (**..**) para essa assimilação, em seguida, clique em **Exibir resumo principal** no menu suspenso.
+Para exibir essas informações, acesse Cloud Acceleration Manager. Clique no cartão do projeto e no cartão Transferência de conteúdo. Navegue até **Tarefas de assimilação** e localize a assimilação que deseja verificar. Clique nos três pontos (**..**) para essa assimilação, em seguida clique em **Exibir resumo principal** no menu suspenso.
 
 ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
 

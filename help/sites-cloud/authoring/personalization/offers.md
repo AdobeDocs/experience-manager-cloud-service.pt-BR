@@ -2,10 +2,10 @@
 title: Criação e gerenciamento de ofertas (console Ofertas)
 description: Use o console Ofertas para criar ofertas que você possa usar em experiências de atividades
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
-workflow-type: ht
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
 source-wordcount: '1391'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -86,7 +86,7 @@ Adicione tags, se necessário.
 
 1. Confirme com **Concluído**.
 
-   Agora, ao navegar até o console **Ofertas de Fragmento de experiência**, você verá seu novo fragmento de experiência, juntamente com suas variações associadas.
+   Agora, se você navegar até a janela **Ofertas de fragmento de experiência** console, você pode ver seu novo fragmento de experiência, juntamente com suas variações associadas.
 
 ### Direcionamento com o modelo de ofertas {#targeting-offers-template}
 

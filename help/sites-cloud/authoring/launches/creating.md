@@ -2,10 +2,10 @@
 title: Criação de inicializações
 description: É possível criar um lançamento para permitir a atualização de uma nova versão de páginas da Web para ativação futura.
 exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
-workflow-type: ht
-source-wordcount: '1043'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '1042'
+ht-degree: 99%
 
 ---
 

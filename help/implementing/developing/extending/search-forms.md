@@ -2,9 +2,9 @@
 title: Configuração de formulários de pesquisa
 description: Configuração do Search Forms para Adobe Experience Manager as a Cloud Service.
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2037'
+source-wordcount: '2035'
 ht-degree: 17%
 
 ---
@@ -292,7 +292,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
     </ul> </td>
   </tr>
   <tr>
-   <td>Caminho </td>
+   <td>Caminho</td>
    <td>Filtrar de acordo com o caminho específico. Você pode especificar vários caminhos como opções.</td>
    <td>
     <ul>
@@ -575,7 +575,7 @@ Os rótulos das caixas de seleção Publicar e Live Copy para o predicado espec�
 
    * Você está adicionando um novo campo:
 
-     Depois de adicionar o predicado, a variável **Configurações** será aberta e mostrará as propriedades que podem ser definidas.
+     Depois de adicionar o predicado, a variável **Configurações** é aberta e mostra as propriedades que podem ser definidas.
 
    * Você deseja atualizar um predicado existente:
 
@@ -634,7 +634,7 @@ O exemplo a seguir (para pesquisar de acordo com o modelo usado para criar uma p
 
 1. Crie o nó que define a propriedade na qual será pesquisada.
 
-   Você precisará de um nó raiz que contenha definições das opções individuais para estar disponível ao usuário.
+   Você precisa de um nó raiz que contenha definições das opções individuais para estar disponível ao usuário.
 
    Os nós das opções individuais precisam das propriedades:
 
@@ -651,7 +651,7 @@ O exemplo a seguir (para pesquisar de acordo com o modelo usado para criar uma p
    >
    >O método recomendado para configuração e outras alterações é:
    >
-   >1. Recrie o item necessário, como ele existe em `/libs`, em `/apps`. Nesse caso, de:
+   >1. Recriar o item necessário, como ele existe em `/libs`, em `/apps`. Nesse caso, de:
    >1. `/libs/cq/gui/content/common/options/predicates`
    >1. Fazer alterações em `/apps.`
 
@@ -701,7 +701,7 @@ A tabela a seguir lista as permissões necessárias para executar ações de edi
    <td>Permissões de Leitura, Gravação e Exclusão no <code>/apps</code> nó</td>
   </tr>
   <tr>
-   <td>Visualizar</td>
+   <td>Visualização</td>
    <td>Permissões de Leitura, Gravação e Exclusão no <code>/var/dam/content</code> nó.<br /> Permissões de Leitura e Gravação no <code>/apps</code> nó.</td>
   </tr>
  </tbody>

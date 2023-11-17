@@ -3,13 +3,13 @@ title: Gerenciamento dos Fragmentos de conteúdo
 description: Saiba como gerenciar os fragmentos de conteúdo do AEM no console e no editor, como base para o conteúdo headless ou para a criação de páginas.
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: d381cc80e2c15ea35f9fd23baa78806ce15ec1af
+exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2540'
-ht-degree: 59%
+source-wordcount: '2532'
+ht-degree: 56%
 
 ---
-
 
 # Gerenciamento dos Fragmentos de conteúdo {#managing-content-fragments}
 
@@ -70,7 +70,7 @@ Para mais informações, consulte:
 
 ### Estrutura básica e manuseio do console {#basic-structure-handling-content-fragments-console}
 
-Selecionar **Fragmentos de conteúdo** abrirá o console em uma nova guia.
+Selecionar **Fragmentos de conteúdo** abre o console em uma nova guia.
 
 ![Console de fragmentos de conteúdo - Visão geral](assets/cf-managing-console-overview.png)
 
@@ -131,7 +131,7 @@ Algumas ações estão disponíveis no console, sem selecionar um fragmento de c
 
 #### Ações para um Fragmento de conteúdo (selecionado) {#actions-selected-content-fragment}
 
-Selecionar um fragmento específico abrirá uma barra de ferramentas focada nas ações disponíveis para esse fragmento. Também é possível selecionar vários fragmentos; a seleção de ações será ajustada de acordo.
+Selecionar um fragmento específico abre uma barra de ferramentas focada nas ações disponíveis para esse fragmento. Também é possível selecionar vários fragmentos; a seleção de ações será ajustada de acordo.
 
 ![Console de fragmentos de conteúdo - Barra de ferramentas de um fragmento selecionado](assets/cf-managing-console-fragment-toolbar.png)
 
@@ -191,7 +191,7 @@ Passar o mouse sobre o nome da pasta mostrará o caminho JCR.
    * Somente informações.
    * Pode ser usado para [Filtragem rápida](#fast-filtering).
 * **Referenciado por**:
-   * Fornece um link que abre uma caixa de diálogo listando todas [referências principais](#parent-references-fragment)  desse fragmento; incluindo a referência a Fragmentos de conteúdo, Fragmentos de experiência e páginas. Para abrir uma referência específica, clique no botão **Título** na caixa de diálogo.
+   * Fornece um link que abre uma caixa de diálogo listando todas [referências principais](#parent-references-fragment)  desse fragmento; incluindo a referência a Fragmentos de conteúdo, Fragmentos de experiência e páginas. Para abrir uma referência específica, clique no link **Título** na caixa de diálogo.
 
      ![Console de Fragmentos de conteúdo - Caixa de diálogo Referências](assets/cf-managing-console-references-dialog.png)
 
@@ -201,7 +201,7 @@ Passar o mouse sobre o nome da pasta mostrará o caminho JCR.
 
      ![Console de Fragmentos de conteúdo - Indicador de idioma](assets/cf-managing-console-language-indicator.png)
 
-   * Clique/toque na contagem para abrir uma caixa de diálogo que exibe todas as cópias de idioma. Para abrir uma cópia de idioma específica, clique no botão **Título** na caixa de diálogo.
+   * Clique/toque na contagem para abrir uma caixa de diálogo que exibe todas as cópias de idioma. Para abrir uma cópia de idioma específica, clique no link **Título** na caixa de diálogo.
 
      ![Console de Fragmentos de conteúdo - Caixa de diálogo Idioma](assets/cf-managing-console-languages-dialog.png)
 
@@ -224,7 +224,7 @@ Para criar um fragmento de conteúdo:
    >
    >Para predefinir o local do novo fragmento, você pode navegar até a pasta onde deseja criar o fragmento ou especificar o local durante o processo de criação.
 
-1. A caixa de diálogo **Novo fragmento de conteúdo** será aberta, onde é possível especificar:
+1. A variável **Novo fragmento de conteúdo** será aberta, aqui será possível especificar:
 
    * **Local** — será preenchido automaticamente com o local atual, mas você pode selecionar um local diferente, se necessário
    * **Modelo de fragmento de conteúdo** — selecione o modelo a ser usado como base do fragmento na lista suspensa
@@ -257,7 +257,7 @@ Para abrir o fragmento para edição:
 1. Use o console de **Fragmentos de conteúdo** para navegar até o local do fragmento de conteúdo.
 1. Abra o fragmento para edição, selecionando o fragmento e **Abrir em novo Editor** na barra de ferramentas.
 
-1. O editor de fragmentos será aberto. Selecione o que for necessário **Variação** O amd fará as alterações necessárias (elas serão salvas automaticamente):
+1. O editor de fragmento é aberto. Selecione o que for necessário **Variação** O amd fará as alterações necessárias (elas serão salvas automaticamente):
 
    ![Editor de fragmento](assets/cf-managing-editor.png)
 
@@ -414,7 +414,7 @@ O ícone indica a localidade do fragmento de conteúdo, juntamente com o número
 
 ![Console de Fragmentos de conteúdo - Indicador de idioma](assets/cfc-console-language-indicator.png)
 
-Clique/toque na contagem para abrir uma caixa de diálogo que exibe todas as cópias de idioma. Para abrir uma cópia de idioma específica, clique no botão **Título** na caixa de diálogo.
+Clique/toque na contagem para abrir uma caixa de diálogo que exibe todas as cópias de idioma. Para abrir uma cópia de idioma específica, clique no link **Título** na caixa de diálogo.
 
 ![Console de Fragmentos de conteúdo - Caixa de diálogo Idioma](assets/cf-managing-console-languages-dialog.png)
 

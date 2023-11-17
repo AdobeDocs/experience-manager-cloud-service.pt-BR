@@ -4,9 +4,9 @@ description: Entenda como criar conteúdo para os fragmentos de conteúdo e, em 
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: b8206ffc0947de4fed085a03a6f90b5ac0f85aab
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2253'
+source-wordcount: '2252'
 ht-degree: 4%
 
 ---
@@ -50,7 +50,7 @@ Ao abrir o Editor de fragmento de conteúdo pela primeira vez, você vê quatro 
 
      >[!WARNING]
      >
-     >O editor original será aberto na mesma guia. Não é recomendável ter ambos os editores abertos ao mesmo tempo.
+     >O editor original é aberto na mesma guia. Não é recomendável ter ambos os editores abertos ao mesmo tempo.
 
 * painel esquerdo: mostra o **[Variações](#variations)** para o Fragmento de conteúdo e suas **Campos**:
    * esses links podem ser usados para [navegar pela estrutura do fragmento de conteúdo](#navigate-structure)
@@ -88,7 +88,7 @@ No painel esquerdo, você pode ver:
 
 ### Seguir links {#follow-links}
 
-Em várias partes do editor, você verá o ícone de link. Isso pode ser usado para abrir o item exibido; por exemplo, um Modelo de fragmento de conteúdo, uma Referência principal ou um fragmento que está sendo referenciado:
+Em várias partes do editor, é possível ver o ícone de link. Isso pode ser usado para abrir o item exibido; por exemplo, um Modelo de fragmento de conteúdo, uma Referência principal ou um fragmento que está sendo referenciado:
 
 ![Editor de fragmento de conteúdo — Ícone de link](assets/cf-authoring-link-icon.png)
 

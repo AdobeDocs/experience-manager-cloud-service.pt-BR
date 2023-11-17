@@ -2,10 +2,10 @@
 title: Sua caixa de entrada
 description: Saiba como usar as notificações que chegam em sua Caixa de entrada para gerenciar suas tarefas.
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '914'
-ht-degree: 98%
+source-wordcount: '912'
+ht-degree: 97%
 
 ---
 
@@ -47,7 +47,7 @@ Para abrir a caixa de entrada de notificação do AEM:
 
 1. Clique/toque no indicador na barra de ferramentas.
 
-1. Selecione **Exibir todos**. A **Caixa de entrada do AEM** será aberta. A caixa de entrada mostra itens de fluxos de trabalho, projetos e tarefas.
+1. Selecione **Exibir todos**. A variável **Caixa de entrada AEM** é aberto. A caixa de entrada mostra itens de fluxos de trabalho, projetos e tarefas.
 1. A exibição padrão é [Exibição em lista](#inbox-list-view), mas você também pode alternar para [Exibição de calendário](#inbox-calendar-view). Isso é feito com o seletor de visualização (barra de ferramentas, parte superior direita).
 
    Para ambas as exibições você também pode definir [Configurações de exibição](#inbox-view-settings). As opções disponíveis dependem da exibição atual.
@@ -142,7 +142,7 @@ Para ambas as visualizações (Lista e Calendário), é possível definir certas
    * Um assistente de ação é iniciado
    * Uma página de documentação é aberta
 
-   Por exemplo, **Delegar** abrirá uma caixa de diálogo:
+   Por exemplo, **Delegar** abre uma caixa de diálogo:
 
    ![Delegar tarefa da caixa de entrada](/help/sites-cloud/authoring/assets/inbox-assign-task.png)
 

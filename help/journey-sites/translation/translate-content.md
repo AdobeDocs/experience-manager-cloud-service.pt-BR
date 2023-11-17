@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: b8ab2525-3f15-4844-866c-da47bfc7518c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '2590'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '2586'
+ht-degree: 96%
 
 ---
 
@@ -60,7 +60,7 @@ Para proprietários de conteúdo que também são responsáveis pela tradução,
    * Observe que antes da primeira tradução, as outras pastas de idioma são espaços reservados vazios. Normalmente, estes são criados pelo arquiteto de conteúdo.
 1. Localize a raiz do idioma do projeto.
 1. Toque ou clique no seletor do painel e exiba o painel **Referências**.
-1. Toque ou clique em **Cópias de idioma**.
+1. Toque ou clique **Cópias de idioma**.
 1. Marque a caixa de seleção **Cópias de idioma**.
 1. Expanda a seção **Atualizar cópias de Idioma** na parte inferior do painel de referências.
 1. Na lista suspensa **Projeto**, selecione **Criar projeto(s) de tradução**.
@@ -144,7 +144,7 @@ Ao criar automaticamente o projeto de tradução, o AEM avalia o conteúdo no ca
 
 Para ver os detalhes do conteúdo incluído neste projeto:
 
-1. Toque ou clique no botão de reticências na parte inferior do cartão de **Tarefa de tradução**.
+1. Toque ou clique no botão de reticências, na parte inferior da **Tarefa de tradução** cartão.
 1. A janela **Tarefa de tradução** lista todos os itens na tarefa.
 
    ![Detalhes do trabalho de tradução](assets/translation-job-detail.png)
@@ -250,7 +250,7 @@ Toque ou clique nesse ícone para abrir o conteúdo traduzido no console e poder
 
 É possível modificar ainda mais o conteúdo traduzido necessário, desde que você tenha a permissão adequada; mas a edição de conteúdo está fora do escopo dessa jornada. Consulte a seção [Recursos adicionais](#additional-resources) no final deste documento para obter mais informações sobre este tópico.
 
-O objetivo do projeto é coletar todos os recursos relacionados a uma tradução em um único local para facilitar o acesso e obter uma visão geral clara. No entanto, como você pode ver ao visualizar os detalhes de um item traduzido, as próprias traduções fluem de volta para a pasta de sites do idioma de tradução. Neste exemplo, a pasta é
+O objetivo do projeto é coletar todos os recursos relacionados a uma tradução em um único local para facilitar o acesso e dar uma visão geral clara. No entanto, como você pode ver ao visualizar os detalhes de um item traduzido, as próprias traduções fluem de volta para a pasta de sites do idioma de tradução. Neste exemplo, a pasta é
 
 ```text
 /content/<your-project>/es
@@ -262,7 +262,7 @@ Se você navegar até esta pasta por meio da **Navegação** -> **Sites**, verá
 
 A estrutura de tradução do AEM recebe as traduções do conector de tradução e cria automaticamente a estrutura de conteúdo, com base na raiz de idioma e usando as traduções fornecidas pelo conector.
 
-É importante entender que esse conteúdo não foi publicado e, portanto, não está disponível para consumo. Aprenderemos sobre essa estrutura de criação-publicação e veremos como publicar nosso conteúdo traduzido na próxima etapa da jornada de tradução.
+É importante entender que esse conteúdo não foi publicado e, portanto, não está disponível para consumo. Você aprende sobre essa estrutura de criação-publicação e vê como publicar nosso conteúdo traduzido na próxima etapa da jornada de tradução.
 
 ## Tradução humana {#human-translation}
 
@@ -278,7 +278,7 @@ Agora que concluiu esta parte da jornada de tradução do AEM Sites, você deve:
 * Ser capaz de criar novos projetos de tradução.
 * Use projetos de tradução para traduzir o conteúdo.
 
-Desenvolva esse conhecimento e continue sua jornada de tradução do AEM Sites revisando a seguir o documento [Publicar conteúdo traduzido](publish-content.md), onde você aprenderá a publicar seu conteúdo traduzido e como atualizar essas traduções conforme o conteúdo da raiz do idioma mudar.
+Desenvolva esse conhecimento e continue sua jornada de tradução do AEM Sites revisando o documento a seguir [Publicar conteúdo traduzido](publish-content.md) onde você aprende a publicar seu conteúdo traduzido e como atualizar essas traduções conforme o conteúdo da raiz do idioma mudar.
 
 ## Recursos adicionais {#additional-resources}
 

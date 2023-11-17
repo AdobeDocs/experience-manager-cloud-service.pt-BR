@@ -2,9 +2,9 @@
 title: Gerenciar páginas e modelos do catálogo de produtos
 description: Saiba como gerenciar páginas e modelos do catálogo de produtos
 exl-id: 0d795d85-c865-40d5-941e-e02ee96fdd11
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '719'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ Saiba como gerenciar páginas e modelos do catálogo de produtos.
 
 ## A história até agora {#story-so-far}
 
-No documento anterior da jornada de criação de conteúdo e comércio do AEM, [Noções básicas de criação na CIF do AEM](getting-started.md), você aprendeu o básico sobre a criação na CIF.
+No documento anterior da jornada de criação de conteúdo e comércio do AEM, [AEM Introdução às noções básicas de criação do CIF](getting-started.md), você aprendeu o básico da criação de CIF.
 
 Este artigo se baseia nesses fundamentos.
 
@@ -31,17 +31,17 @@ Este documento ajuda você a entender como gerenciar páginas e modelos do catá
 
 A loja Venia vem com uma experiência típica de catálogo de produtos com navegação, aterrissagem, categoria (PLP) e páginas de detalhes do produto (PDP).
 
-Páginas de catálogo são criadas dinamicamente usando um modelo de catálogo CIF AEM e dados de produto em tempo real que são buscados no endpoint de comércio, quando necessário. Cada catálogo tem um modelo genérico para páginas de produto e categoria.
+AEM Páginas de catálogo são criadas dinamicamente usando um modelo de catálogo CIF e dados de produto em tempo real que são buscados no endpoint de comércio, quando necessário. Cada catálogo tem um modelo genérico para páginas de produto e categoria.
 ![estrutura do catálogo](assets/catalog-structure.png)
 
 O componente de navegação mostra as páginas de conteúdo e catálogo. É possível mostrar a landing page do catálogo ou as categorias de primeiro nível na navegação. Passar o mouse sobre uma categoria mostrará categorias de segundo nível como uma segunda linha.
 ![navegação do catálogo](assets/catalog-navigation.png)
 
-Clicar em uma categoria abrirá a página de categoria (ou a página da lista de produtos).
+Clicar em uma categoria abre a página de categoria (ou a página de lista de produtos).
 
 ![PLP](assets/catalog-plp.png)
 
-Clicar em um produto abrirá a página de detalhes do produto.
+Clicar em um produto abre a página de detalhes do produto.
 
 ![PLP](assets/catalog-pdp.png)
 
@@ -61,7 +61,7 @@ Os modelos podem ser editados abrindo diretamente a página de modelo ou alterna
 
 ### Modelos de Categoria ou Produto Específicos {#specific}
 
-A CIF aceita vários modelos com apenas alguns cliques. Para criar outro modelo, selecione o modelo genérico na respectiva categoria e crie uma nova página usando o **Criar** ação.
+O CIF é compatível com vários modelos com apenas alguns cliques. Para criar outro modelo, selecione o modelo genérico na respectiva categoria e crie uma nova página usando o **Criar** ação.
 
 ![criar página de modelo](assets/create-template-page.png)
 
@@ -107,11 +107,11 @@ Agora que concluiu esta parte da jornada, você deve:
 * como os modelos genéricos funcionam
 * criou um modelo individual
 
-Desenvolva esse conhecimento e continue sua jornada revisando o documento a seguir [Gerenciar experiências de catálogo de produtos por etapas](staged-catalog.md), onde você aprenderá a trabalhar com dados de produtos preparados e lançamentos de AEM.
+Desenvolva esse conhecimento e continue sua jornada revisando o documento a seguir [Gerenciar experiências de catálogo de produtos por etapas](staged-catalog.md), onde você aprende a trabalhar com dados de produtos preparados e lançamentos de AEM.
 
 ## Recursos adicionais {#additional-resources}
 
 Embora seja recomendável seguir para a próxima parte da jornada revisando o documento [Gerenciar experiências de catálogo de produtos por etapas](staged-catalog.md), a seguir estão alguns recursos adicionais e opcionais que aprofundam alguns conceitos mencionados neste documento, mas não são necessários para continuar na jornada headless:
 
 * [Criação de várias categorias e páginas de produto](/help/commerce-cloud/authoring/multi-template-usage.md)
-* [Guia de migração para o Experience Manager Cloud Service](/help/commerce-cloud/migration.md) - Como migrar de uma versão antiga para o complemento Estrutura de integração de comércio (CIF) do AEM
+* [Guia de migração para o Experience Manager Cloud Service](/help/commerce-cloud/migration.md) - Como migrar de uma versão antiga para o complemento AEM Commerce integration framework (CIF)

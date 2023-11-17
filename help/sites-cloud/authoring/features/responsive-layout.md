@@ -2,10 +2,10 @@
 title: Layout responsivo
 description: O AEM permite que você tenha um layout responsivo para suas páginas
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1739'
-ht-degree: 92%
+source-wordcount: '1734'
+ht-degree: 86%
 
 ---
 
@@ -90,7 +90,7 @@ Por exemplo, ao selecionar o dispositivo **iPhone 6 Plus** (definido com uma lar
 
    ![Tecla Emulador](/help/sites-cloud/authoring/assets/emulator.png)
 
-1. A barra de ferramentas do emulador abre.
+1. A barra de ferramentas do emulador se abre.
 
    ![Barra de ferramentas do emulador](/help/sites-cloud/authoring/assets/responsive-layout-emulator-toolbar.png)
 
@@ -120,8 +120,8 @@ Por exemplo, ao selecionar o dispositivo **iPhone 6 Plus** (definido com uma lar
 
    ![A dobra](/help/sites-cloud/authoring/assets/responsive-layout-fold.png)
 
-   * A dobra também pode ser considerada a quebra de linha da página (não deve ser confundida com os [pontos de interrupção](#layout-definitions-device-emulation-and-breakpoints)) do conteúdo. Isso é exibido para maior comodidade, a fim de mostrar qual parte do conteúdo o usuário verá no dispositivo antes de rolar a tela.
-   * A linha da dobra não será mostrada se a altura do dispositivo que está sendo emulado for maior que o tamanho da tela.
+   * A dobra também pode ser considerada a quebra de linha da página (não deve ser confundida com os [pontos de interrupção](#layout-definitions-device-emulation-and-breakpoints)) do conteúdo. Isso é exibido para maior comodidade, para mostrar qual parte do conteúdo o usuário vê no dispositivo antes de rolar a tela.
+   * A linha para a dobra não será mostrada se a altura do dispositivo que está sendo emulado for maior que o tamanho da tela.
    * A dobra é mostrada para a conveniência do autor e não é mostrada na página publicada.
 
 ## Adicionar um contêiner de layout e seu conteúdo (Modo de edição) {#adding-a-layout-container-and-its-content-edit-mode}
@@ -136,7 +136,7 @@ Um **Contêiner de layout** é um sistema de parágrafos que:
 >
 >Se ainda não estiver disponível, o **Contêiner de layout** deve ser ativado explicitamente para um sistema/página de parágrafo. <!-- If not already available, the **Layout Container** must be explicitly [activated for a paragraph system/page](/help/sites-administering/configuring-responsive-layout.md).-->
 
-1. O **Contêiner de layout** está disponível como um componente padrão no [Navegador de componentes](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). Aqui, você pode arrastá-lo até o local desejado na página, onde verá o espaço reservado **Arrastar componentes aqui**.
+1. O **Contêiner de layout** está disponível como um componente padrão no [Navegador de componentes](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). Aqui, você pode arrastá-lo até o local desejado na página, onde poderá ver o **Arraste componentes aqui** espaço reservado.
 1. Em seguida, você pode adicionar componentes ao container de layout. Esses componentes conterão o conteúdo real:
 
    ![Contêiner de layout](/help/sites-cloud/authoring/assets/responsive-layout-add-to-layout-container.png)
@@ -202,7 +202,7 @@ Quando estiver no modo de layout, você poderá executar várias ações em uma 
 
   ![Ocultar componente](/help/sites-cloud/authoring/assets/responsive-layout-hide.png)
 
-* No modo **Layout**, você pode tocar/clicar em **Arrastar componentes aqui** para selecionar o componente inteiro. A barra de ferramentas é exibida para esse modo.
+* Entrada **Layout** modo, você pode tocar/clicar no **Arraste os componentes para cá** para selecionar o componente inteiro. A barra de ferramentas é exibida para esse modo.
 
   A barra de ferramentas tem opções diferentes dependendo do estado do componente de layout e dos componentes que pertencem a ele. Por exemplo:
 

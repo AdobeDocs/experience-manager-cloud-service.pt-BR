@@ -2,9 +2,9 @@
 title: Configuração de redes avançadas para o AEM as a Cloud Service
 description: Saiba como configurar recursos avançados de rede, como VPN ou um endereço IP de saída flexível ou dedicado para o AEM as a Cloud Service
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 46ff33808e710b511db7cfcdad931c14846d8cfe
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '3600'
+source-wordcount: '3598'
 ht-degree: 96%
 
 ---
@@ -54,7 +54,7 @@ Uma vez chamada, normalmente leva aproximadamente 15 minutos para a infraestrutu
 
 Se a configuração de saída de porta flexível com escopo de programa estiver pronta, o endpoint `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` deve ser chamado por ambiente para permitir a operação em rede no nível do ambiente e declarar, opcionalmente, quaisquer regras de encaminhamento de portas. Os parâmetros são configuráveis por ambiente para oferecer flexibilidade.
 
-As regras de encaminhamento de porta devem ser declaradas para qualquer porta de destino além da 80/443, mas somente se não estiverem usando o protocolo http ou https por especificar o conjunto de hosts de destino (nomes ou IP, com portas). A conexão do cliente usando a porta 80/443 em http/https ainda deve usar configurações de proxy em sua conexão para que as propriedades de rede avançada sejam aplicadas à conexão. Para cada host de destino, os clientes devem mapear a porta de destino pretendida para uma porta de 30000 a 30999.
+As regras de encaminhamento de porta devem ser declaradas para qualquer porta de destino além da 80/443, mas somente se não estiverem usando o protocolo http ou https por especificar o conjunto de hosts de destino (nomes ou IP, com portas). A conexão do cliente usando a porta 80/443 sobre http/https ainda deve usar configurações de proxy em sua conexão para que as propriedades de rede avançada sejam aplicadas à conexão. Para cada host de destino, os clientes devem mapear a porta de destino pretendida para uma porta de 30000 a 30999.
 
 A API deve responder em apenas alguns segundos, indicando um status de atualização e, após cerca de 10 minutos, o método `GET` do endpoint deve indicar que a rede avançada está ativada.
 

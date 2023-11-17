@@ -2,9 +2,9 @@
 title: Utilização do Analisador de práticas recomendadas
 description: Saiba como usar o Analisador de práticas recomendadas para entender a disponibilidade da atualização.
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2484'
+source-wordcount: '2478'
 ht-degree: 45%
 
 ---
@@ -69,7 +69,7 @@ Siga esta seção para saber como exibir o relatório do Analisador de práticas
 
    ![imagem](/help/journey-migration/best-practices-analyzer/assets/BPA_pic3.png)
 
-1. Depois que o relatório do BPA é gerado, ele exibe um resumo e o número das conclusões em um formato tabular organizado pelo tipo de descoberta e o nível de importância. Para obter mais detalhes sobre uma descoberta específica, clique no número que corresponde ao tipo de descoberta na tabela.
+1. Depois que o relatório do BPA é gerado, ele exibe um resumo e o número de conclusões em um formato tabular organizado pelo tipo de descoberta e o nível de importância. Para obter mais detalhes sobre uma descoberta específica, você pode clicar no número que corresponde ao tipo de descoberta na tabela.
 
    ![imagem](/help/journey-migration/best-practices-analyzer/assets/BPA_pic4.png)
 
@@ -95,7 +95,7 @@ Siga esta seção para saber como exibir o relatório do Analisador de práticas
 
 Para filtrar descobertas relacionadas a [ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/), siga as etapas abaixo:
 
-1. Clique no ícone do painel à esquerda no lado esquerdo da página. Isso exibirá a **Filtro ACS Commons**. Clique no link **Filtro ACS Commons** para exibir a caixa de seleção interativa como mostrado na imagem abaixo.
+1. Clique no ícone do painel à esquerda no lado esquerdo da página. Isso exibirá a **Filtro ACS Commons**. Clique em **Filtro ACS Commons** para exibir a caixa de seleção interativa como mostrado na imagem abaixo.
 
    ![imagem](/help/journey-migration/best-practices-analyzer/assets/report_filter_1.png)
 

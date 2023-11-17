@@ -2,10 +2,10 @@
 title: Manuseio básico
 description: Acostume-se com a navegação pelo AEM e seu uso básico
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2975'
-ht-degree: 98%
+source-wordcount: '2970'
+ht-degree: 95%
 
 ---
 
@@ -133,7 +133,7 @@ O cabeçalho está sempre presente na parte superior da tela. Embora a maioria d
 
   Situadas no meio do painel e sempre mostrando a descrição do item atualmente selecionado, as navegações estruturais permitem que você navegue dentro de um console específico. No console **Sites**, você pode navegar pelos níveis do seu site.
 
-  Basta clicar no texto da navegação estrutural para exibir uma lista suspensa com os níveis da hierarquia do item selecionado no momento. Clique em uma entrada para ir para esse local.
+  Basta clicar no texto da navegação estrutural para exibir uma lista suspensa que lista os níveis da hierarquia do item selecionado no momento. Clique em uma entrada para ir para esse local.
 
   ![Exemplo de navegação estrutural expandida](/help/sites-cloud/authoring/assets/breadcrumbs-example.png)
 
@@ -171,7 +171,7 @@ Há vários recursos de ajuda disponíveis:
 
 * **Barra de ferramentas do console**
 
-  Dependendo da sua localização, o ícone de **Ajuda** abrirá os recursos apropriados:
+  Dependendo da sua localização, a variável **Ajuda** ícone abre os recursos apropriados:
 
   ![Ícone da ajuda](/help/sites-cloud/authoring/assets/help-console.png)
 
@@ -304,7 +304,7 @@ Selecionar um recurso na coluna mais à esquerda exibirá os recursos secundári
 
    * O nome e a divisa do recurso são realçados quando tocados ou clicados.
    * Os secundários do recurso clicado/tocado são exibidos na coluna à direita do recurso clicado/tocado.
-   * Se você tocar ou clicar em um nome de recurso que não tenha secundários, seus detalhes serão exibidos na coluna final.
+   * Se você tocar ou clicar em um nome de recurso que não tenha filhos, seus detalhes serão exibidos na coluna final.
 
 * Tocar ou clicar na miniatura seleciona o recurso.
 
@@ -475,6 +475,6 @@ Consulte o documento [Usar o painel do site para gerenciar o tema do site](/help
 
 ### Filtro {#filter}
 
-Isso abrirá um painel semelhante para [pesquisar](/help/sites-cloud/authoring/getting-started/search.md) usando os filtros de localização apropriados já definidos, que permitem filtrar ainda mais o conteúdo que você deseja exibir.
+Isso abre um painel semelhante a [pesquisa](/help/sites-cloud/authoring/getting-started/search.md) com os filtros de localização apropriados já definidos, permitindo filtrar ainda mais o conteúdo que deseja exibir.
 
 ![Exemplo de filtro](/help/sites-cloud/authoring/assets/filter.png)

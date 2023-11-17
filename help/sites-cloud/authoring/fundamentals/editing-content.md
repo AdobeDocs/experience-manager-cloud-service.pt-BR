@@ -2,10 +2,10 @@
 title: Editar conteúdo da página
 description: Depois que a página é criada, é possível editar o conteúdo para fazer as atualizações necessárias
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2983'
-ht-degree: 97%
+source-wordcount: '2978'
+ht-degree: 94%
 
 ---
 
@@ -151,9 +151,9 @@ O espaço reservado do componente é um indicador para mostrar onde um component
 
      ![Inserir um componente](/help/sites-cloud/authoring/assets/editing-insert-component.png)
 
-   * Se você estiver em um dispositivo de desktop, clique duas vezes na caixa **Arraste componentes aqui**.
+   * Se você estiver em um dispositivo de desktop, clique duas vezes na guia **Arraste os componentes para cá** caixa.
 
-   * A caixa de diálogo **Inserir novo componente** será aberta para permitir que você selecione o componente desejado: 
+   * A variável **Inserir novo componente** caixa de diálogo aberta para permitir selecionar o componente desejado:
 
      ![Caixa de diálogo Inserir novo componente](/help/sites-cloud/authoring/assets/editing-insert-component-selection.png)
 
@@ -185,7 +185,7 @@ Se, durante a navegação pelos ativos, você perceber que precisa fazer uma alt
 
 ## Component Toolbar {#component-toolbar}
 
-Selecionar um componente abrirá a barra de ferramentas. Isto proporciona acesso a várias ações que podem ser executadas no componente.
+Selecionar um componente abre a barra de ferramentas. Isso fornece acesso a várias ações que podem ser executadas no componente.
 
 As ações de fato disponíveis para o usuário serão mostradas conforme apropriado e nem todas elas estarão descritas aqui.
 
@@ -361,7 +361,7 @@ Em vez de repetidamente alternar entre os modos de edição e de [layout](/help/
 
 >[!TIP]
 >
->O escopo da ação Layout é limitada ao componente selecionado. Por exemplo, se estiver editando o layout de um componente e, em seguida, clicar em outro componente, a barra de ferramentas de edição padrão (não a barra de ferramentas do layout) será exibida para o componente recém-selecionado, e as alças de redimensionamento, bem como a barra de ferramentas do emulador desaparecerão.
+>O escopo da ação Layout é limitada ao componente selecionado. Por exemplo, se você estiver editando o layout de um componente e, em seguida, clicar em outro componente, a barra de ferramentas de edição padrão (não a barra de ferramentas do layout) será exibida para o componente recém-selecionado, as alças de redimensionamento e a barra de ferramentas do emulador desaparecerão.
 >
 >Se precisar editar o layout geral da página, afetando vários componentes, alterne para o [modo de layout](/help/sites-cloud/authoring/features/responsive-layout.md).
 

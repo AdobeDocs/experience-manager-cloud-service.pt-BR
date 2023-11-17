@@ -2,10 +2,10 @@
 title: Visualização de conteúdo
 description: Saiba como usar o serviço de visualização do AEM para visualizar o conteúdo antes de ele ser publicado.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: 1804eacb5399dc38c97ff953031666711b9a0e4f
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '316'
-ht-degree: 86%
+source-wordcount: '315'
+ht-degree: 80%
 
 ---
 
@@ -26,8 +26,8 @@ Para obter mais detalhes sobre os ambientes de visualização, consulte [Gerenci
 
 É possível publicar conteúdo no serviço de visualização usando a interface de **Publicação gerenciada**.
 
-1. No console do Sites, selecione a(s) página(s) que deseja enviar para visualização e clique no botão **Gerenciar publicação** 
-1. No assistente a seguir, selecione **Visualizar** como destino
+1. No console do Sites, selecione a(s) página(s) que deseja enviar para visualização e clique no link **Gerenciar publicação** botão.
+1. No assistente a seguir, selecione **Visualizar** como destino.
 
    ![publicação gerenciada](/help/sites-cloud/authoring/assets/previewmanagedpublication.png)
 

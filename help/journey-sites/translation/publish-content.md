@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 081167dd-da4c-48d2-a6d3-f95e873be3e9
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1358'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '1356'
+ht-degree: 97%
 
 ---
 
@@ -98,7 +98,7 @@ No entanto, assim como antes, o processo é um pouco diferente se você opta por
 1. Navegue até **Navegação** -> **Ativos** -> **Arquivos**. Lembre-se de que o conteúdo no AEM é armazenado em `/content`.
 1. Selecione a raiz do idioma do projeto. Nesse caso, selecionamos `/content/wknd/en`.
 1. Toque ou clique no seletor do painel e exiba o painel **Referências**.
-1. Toque ou clique em **Cópias de idioma**.
+1. Toque ou clique **Cópias de idioma**.
 1. Marque a caixa de seleção **Cópias de idioma**.
 1. Expanda a seção **Atualizar cópias de idioma** na parte inferior do painel de referências.
 1. Na lista suspensa **Projeto**, selecione **Adicionar a um projeto de tradução existente**.
@@ -140,7 +140,7 @@ Para atualizar uma tradução, é possível adicionar um novo trabalho ao projet
 
    ![Selecionar idioma de destino](assets/select-target-language.png)
 
-1. Depois que o idioma de destino do novo trabalho de tradução for definido, toque ou clique no botão de reticências, na parte inferior do cartão de tarefa, para exibir os detalhes da tarefa.
+1. Depois que o idioma de destino do novo trabalho de tradução for definido, toque ou clique no botão de reticências na parte inferior do cartão de tarefa para exibir os detalhes da tarefa.
 1. A tarefa fica vazia quando é criada pela primeira vez. Adicione conteúdo à tarefa tocando ou clicando no botão **Adicionar** e usando o navegador de caminho [como você fez antes ao criar originalmente o projeto de tradução.](translate-content.md##manually-creating)
 
 >[!TIP]

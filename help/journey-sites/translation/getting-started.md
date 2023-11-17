@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1399'
-ht-degree: 98%
+source-wordcount: '1398'
+ht-degree: 95%
 
 ---
 
@@ -107,7 +107,7 @@ Para editar uma página:
 
    ![Editar uma página](assets/sites-editor-title.png)
 
-É possível retornar ao console do Sites a qualquer momento, alternando de volta para essa guia no navegador. Usando o editor de sites, é possível visualizar rapidamente o conteúdo da página da maneira que os autores de conteúdo e seu público-alvo a verão.
+É possível retornar ao console do Sites a qualquer momento, alternando de volta para essa guia no navegador. Usando o editor de sites, é possível visualizar rapidamente o conteúdo da página da maneira que os autores de conteúdo e seu público-alvo podem visualizá-lo.
 
 >[!NOTE]
 >
@@ -201,7 +201,7 @@ Agora que concluiu esta parte da jornada de tradução do AEM Sites, você deve:
 * Compreender como o AEM armazena conteúdo.
 * Se familiarizar com as ferramentas de tradução do AEM.
 
-Desenvolva esse conhecimento e continue sua jornada de tradução do AEM Sites revisando o documento [Configurar o conector de tradução](configure-connector.md), onde você aprenderá como conectar o AEM a um serviço de tradução.|
+Desenvolva esse conhecimento e continue sua jornada de tradução do AEM Sites revisando o documento a seguir [Configurar o conector de tradução](configure-connector.md) onde você aprende a conectar o AEM a um serviço de tradução.|
 
 ## Recursos adicionais {#additional-resources}
 

@@ -3,13 +3,13 @@ title: Modelos de fragmentos do conteúdo
 description: Saiba como os modelos de fragmento de conteúdo servem como base para os fragmentos de conteúdo no AEM. Esses fragmentos permitem criar conteúdo estruturado para uso em entrega headless ou criação de página.
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
+exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '3064'
-ht-degree: 61%
+source-wordcount: '3061'
+ht-degree: 60%
 
 ---
-
 
 # Modelos de fragmentos do conteúdo {#content-fragment-models}
 
@@ -181,6 +181,7 @@ Uma variedade de tipos de dados está disponível para a definição do seu mode
    * Permite a introdução de guias para uso ao editar o conteúdo do fragmento de conteúdo.
       * Eles são mostrados como divisores no editor de modelo, separando seções da lista de tipos de dados de conteúdo. Cada instância representa o início de uma nova guia.
       * No editor de fragmentos, cada instância aparece como uma guia.
+
      >[!NOTE]
      >
      >Esse tipo de dados é usado apenas para formatação e é ignorado pelo esquema GraphQL do AEM.
@@ -198,9 +199,9 @@ Muitas propriedades são autoexplicativas. Para certas propriedades, os detalhes
   >Se os modelos criados em versões anteriores do AEM contiverem caracteres ilegais, remova ou atualize esses caracteres.
 
 * **Renderizar como**
-As várias opções para realizar/renderizar o campo em um fragmento. Geralmente, isso permite definir se o autor verá uma única instância do campo ou se poderá criar várias instâncias.
+As várias opções para realizar/renderizar o campo em um fragmento. Geralmente, isso permite definir se o autor vê uma única instância do campo ou se tem permissão para criar várias instâncias.
 
-* **Rótulo de campo**
+* **Rótulo do campo**
 Inserir um **Rótulo do campo** gera automaticamente um **Nome da propriedade**, que pode ser atualizado manualmente, se necessário.
 
 * **Validação**

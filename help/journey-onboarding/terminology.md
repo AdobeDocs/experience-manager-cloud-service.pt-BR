@@ -2,16 +2,16 @@
 title: Terminologia do AEM as a Cloud Service
 description: Antes de fazer logon no AEMaaCS, é útil compreender a terminologia do sistema e sua estrutura básica.
 exl-id: d02776a7-836a-4894-a5d5-ae88cc7e4e76
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '463'
-ht-degree: 100%
+source-wordcount: '461'
+ht-degree: 87%
 
 ---
 
 # Terminologia do AEM as a Cloud Service {#terminology}
 
-Nesta parte da [jornada de integração,](overview.md) você aprenderá a terminologia do AEM as a Cloud Service e sua estrutura básica.
+Nesta parte do [integração do jornada,](overview.md) você aprende a terminologia do AEM as a Cloud Service e sua estrutura básica.
 
 ## Objetivo {#objective}
 
@@ -53,4 +53,4 @@ Agora que concluiu esta parte da jornada de integração do AEM, você deve comp
 * As diferentes camadas que compõem o AEMaaCS.
 * As funções básicas de cada camada.
 
-Aproveite esse conhecimento e continue sua jornada de integração do AEM lendo o documento [Acesso ao Admin Console](admin-console.md), onde você aprenderá como acessar o console e verificar seu status como administrador do sistema.
+Desenvolva esse conhecimento e continue sua jornada de integração de AEM lendo o documento a seguir [Acessar o Admin Console](admin-console.md), onde você aprenderá a acessar o console e verificar seu status como administrador do sistema.

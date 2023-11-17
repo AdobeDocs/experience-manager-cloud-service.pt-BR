@@ -2,10 +2,10 @@
 title: Sistema de estilos
 description: O sistema de estilos permite ao autor do modelo definir classes de estilo na política de conteúdo de um componente para que autores de conteúdo possam selecioná-las ao editarem o componente em uma página. Esses estilos podem ser variações visuais alternativas de um componente, tornando-o mais flexível.
 exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1320'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '1319'
+ht-degree: 98%
 
 ---
 
@@ -95,7 +95,7 @@ Se você desejar usar o Sistema de estilos em seus próprios componentes, faça 
 
    ![Editar propriedades](/help/sites-cloud/authoring/assets/style-system-properties.png)
 
-   * **Nome do grupo:** os estilos podem ser agrupados no menu de estilo que o(a) autor(a) do conteúdo verá ao configurar o estilo do componente.
+   * **Nome do grupo:** Os estilos podem ser agrupados no menu de estilo que o autor do conteúdo vê ao configurar o estilo do componente.
    * **Estilos podem ser combinados:** permite que vários estilos dentro desse grupo sejam selecionados ao mesmo tempo.
    * **Nome do estilo:** a descrição do estilo que será exibida para o(a) autor(a) do conteúdo ao configurar o estilo do componente.
    * **Classes CSS:** o nome real da classe CSS associada ao estilo.
@@ -120,7 +120,7 @@ Para que um componente funcione com o sistema de estilos do AEM e mostre a guia 
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->Essa configuração aplica [sobreposições](/help/implementing/developing/introduction/overlays.md) por meio do [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md).
+Essa configuração aplica [sobreposições](/help/implementing/developing/introduction/overlays.md) por meio do [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md).
 
 Com o componente configurado, os estilos configurados pelos(as) autores(as) da página são inseridos automaticamente pelo AEM no elemento de decoração que o AEM envolve automaticamente em torno de cada componente editável. O componente em si não precisa fazer mais nada para que isso aconteça.
 
@@ -134,11 +134,11 @@ A guia Editar pode ser incluída de maneira semelhante na guia Design:
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->Essa configuração aplica [sobreposições](/help/implementing/developing/introduction/overlays.md) por meio do [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md).
+Essa configuração aplica [sobreposições](/help/implementing/developing/introduction/overlays.md) por meio do [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md).
 
 >[!NOTE]
 >
->A guia Estilos na caixa de diálogo Editar não está habilitada por padrão.
+A guia Estilos na caixa de diálogo Editar não está habilitada por padrão.
 
 ### Estilos com nomes de elemento  {#styles-with-element-names}
 
@@ -150,11 +150,11 @@ Essa propriedade é definida no nó `cq:Component`. Por exemplo:
 
 >[!CAUTION]
 >
->Evite definir nomes de elementos para estilos que podem ser combinados. Quando vários nomes de elemento são definidos, a ordem de prioridade é:
+Evite definir nomes de elementos para estilos que podem ser combinados. Quando vários nomes de elemento são definidos, a ordem de prioridade é:
 >
->1. HTL tem precedência sobre tudo: `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
->1. Entre os vários estilos ativos, o primeiro estilo na lista de estilos configurados na política do componente é aplicado.
->1. Por fim, o `cq:htmlTag`/`cq:tagName` do componente é considerado um valor de fallback.
+1. HTL tem precedência sobre tudo: `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
+1. Entre os vários estilos ativos, o primeiro estilo na lista de estilos configurados na política do componente é aplicado.
+1. Por fim, o `cq:htmlTag`/`cq:tagName` do componente é considerado um valor de fallback.
 >
 
 Essa capacidade de definir nomes de estilo é útil para componentes genéricos, como o container de layout ou o componente de fragmento de conteúdo, pois concede um significado adicional a eles.

@@ -2,10 +2,10 @@
 title: Publicar páginas
 description: Saiba como publicar e desfazer a publicação de suas páginas usando vários mecanismos no AEM.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1804'
-ht-degree: 97%
+source-wordcount: '1801'
+ht-degree: 95%
 
 ---
 
@@ -100,7 +100,7 @@ A **Publicação rápida** serve para casos simples e publica as páginas seleci
 
 Para publicar uma página com a Publicação rápida:
 
-1. Selecione as páginas no console de sites e clique no botão **Publicação rápida**.
+1. Selecione as páginas no console de sites e clique no link **Publicação rápida** botão.
 
    ![Seleção de páginas para publicação](/help/sites-cloud/authoring/assets/publishing-select-pages.png)
 
@@ -120,7 +120,7 @@ Para publicar uma página com a Publicação rápida:
 
 Para publicar ou desfazer a publicação de uma página usando Gerenciar publicação:
 
-1. Selecione as páginas no console Sites e clique no botão **Gerenciar publicação**.
+1. Selecione as páginas no console de sites e clique no link **Gerenciar publicação** botão.
 
    ![Seleção de páginas para publicação](/help/sites-cloud/authoring/assets/publishing-select-pages.png)
 
@@ -234,7 +234,7 @@ Ao editar uma página, se quiser desfazer a publicação, selecione **Desfazer a
 
 Da mesma forma que você [usa a opção Gerenciar publicação para publicar](#manage-publication), também pode usá-la para desfazer a publicação.
 
-1. Selecione as páginas no console Sites e clique no botão **Gerenciar publicação**.
+1. Selecione as páginas no console de sites e clique no link **Gerenciar publicação** botão.
 1. O assistente para **Gerenciar publicação** é iniciado. Na primeira etapa, **Opções**, selecione **Desfazer a publicação** em vez da opção padrão **Publicar**.
 
    ![Desfazer publicação - Opções](/help/sites-cloud/authoring/assets/publishing-unpublish.png)

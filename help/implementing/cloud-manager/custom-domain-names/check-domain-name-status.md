@@ -2,10 +2,10 @@
 title: Verificação de status do nome de domínio
 description: Saiba como determinar se o nome de domínio personalizado foi verificado com sucesso pelo Cloud Manager.
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '649'
-ht-degree: 82%
+source-wordcount: '647'
+ht-degree: 92%
 
 ---
 
@@ -56,11 +56,11 @@ A seguir estão alguns erros comuns de nome de domínio e suas resoluções típ
 
 ### Erro de domínio não Instalado {#domain-not-installed}
 
-Esse erro pode ocorrer durante a validação do domínio do registro TXT, mesmo após a verificação de que o registro foi devidamente atualizado.
+Esse erro pode ocorrer durante a validação do domínio do registro TXT, mesmo após confirmar que o registro foi atualizado adequadamente.
 
 #### Causa do erro {#cause}
 
-O Fastly bloqueia um domínio para a conta inicial que o registrou e nenhuma outra conta pode registrar um subdomínio sem solicitar permissão. Além disso, o Fastly permite atribuir somente um domínio apex e subdomínios associados a um serviço e a uma conta do Fastly. Você verá esse erro se tiver uma conta existente do Fastly vinculada ao mesmo apex e subdomínios usados para os domínios do AEM Cloud Service.
+O Fastly bloqueia um domínio para a conta inicial que o registrou e nenhuma outra conta pode registrar um subdomínio sem solicitar permissão. Além disso, o Fastly permite atribuir somente um domínio apex e subdomínios associados a um serviço e a uma conta do Fastly. Se você tiver uma conta existente do Fastly que vincula o mesmo ápice e subdomínios usados para seus domínios do AEM Cloud Service, esse erro será exibido.
 
 #### Resolução de erro {#resolution}
 
@@ -82,7 +82,7 @@ O erro é corrigido da seguinte maneira:
 
 ## Configurações de CDNs pré-existentes para nomes de domínio personalizados {#pre-existing-cdn}
 
-Se você tiver uma configuração de CDN pré-existente para seus nomes de domínio personalizados, há uma mensagem informativa no **Nomes de domínio personalizados** e **Ambiente** , incentivando você a adicionar essas configurações por meio da interface do usuário, para que fiquem visíveis e possam ser definidas no Cloud Manager.
+Se você tiver uma configuração de CDN pré-existente para seus nomes de domínio personalizados, haverá uma mensagem informativa nas páginas **Nomes de domínio personalizados** e **Ambiente** recomendando a adição dessas configurações por meio da interface para que se tornem visíveis e configuráveis no Cloud Manager.
 
 A mensagem desaparece assim que todas as configurações de ambiente pré-existentes são migradas usando a interface do usuário. Pode levar de 1 a 2 dias úteis para a mensagem desaparecer.
 

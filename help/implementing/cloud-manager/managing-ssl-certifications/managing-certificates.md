@@ -2,10 +2,10 @@
 title: Gerenciar certificados SSL
 description: Saiba como usar o Cloud Manager para verificar o status dos certificados SSL e como editá-los, substituí-los, atualizá-los e excluí-los.
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 98%
+source-wordcount: '637'
+ht-degree: 82%
 
 ---
 
@@ -33,7 +33,7 @@ Quando um certificado expira, todos os domínios que usem o certificado expirado
 1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização e o programa apropriado.
 1. Acesse a tela **Ambientes** a partir da página **Visão geral**.
 1. Navegue até a tela **Certificados SSL** da tela **Ambientes**.
-1. Você verá uma tabela com uma linha para cada certificado SSL que foi instalado com êxito em seu programa. Clique no botão de reticências na extremidade direita da linha do certificado que deseja atualizar e selecione **Exibir e atualizar**.
+1. Você pode ver uma tabela com uma linha para cada certificado SSL que foi instalado com êxito em seu programa. Clique no botão de reticências na extremidade direita da linha do certificado que deseja atualizar e selecione **Exibir e atualizar**.
 1. Os detalhes do certificado são exibidos e podem ser atualizados.
 1. Execute o pipeline para implantar o certificado atualizado.
 
@@ -56,9 +56,9 @@ Siga estas etapas para excluir um certificado SSL.
 1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização e o programa apropriado.
 1. Acesse a tela **Ambientes** a partir da página **Visão geral**.
 1. Navegue até a tela **Certificados SSL** da tela **Ambientes**.
-1. Você verá uma tabela com uma linha para cada certificado SSL que foi instalado com êxito em seu programa. Clique no botão de reticências na extremidade direita da linha do certificado que deseja excluir e selecione **Excluir**.
+1. Você pode ver uma tabela com uma linha para cada certificado SSL que foi instalado com êxito em seu programa. Clique nas reticências na extremidade direita da linha do certificado que deseja excluir e selecione **Excluir**.
 1. Confirme a exclusão na caixa de diálogo **Excluir certificado SSL**.
-1. Execute o pipeline para desfazer a implantação do certificado excluído.
+1. Execute o pipeline para desimplantar o certificado excluído.
 
 >[!NOTE]
 >

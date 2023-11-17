@@ -2,9 +2,9 @@
 title: Ferramentas de desenvolvedor do AEM para Eclipse
 description: Saiba como usar as ferramentas de desenvolvedor do AEM para Eclipse, um plug-in Eclipse baseado no plug-in Eclipse para Apache Sling.
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: a1a92f8767186ba9e93b6b30870ecfa9f3b3bc28
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1192'
 ht-degree: 2%
 
 ---
@@ -34,7 +34,7 @@ Antes de usar as ferramentas de desenvolvedor do AEM, é necessário:
 
 >[!NOTE]
 >
->No macOS, é necessário clicar com o botão direito do mouse em **Eclipse.app** e selecione **Mostrar conteúdo do pacote** para encontrar o seu `eclipse.ini`**.**
+>No macOS, é necessário clicar com o botão direito do mouse **Eclipse.app** e selecione **Mostrar conteúdo do pacote** para encontrar o seu `eclipse.ini`**.**
 
 ## Como instalar as ferramentas de desenvolvedor do AEM para Eclipse {#how-to-install-the-aem-developer-tools-for-eclipse}
 
@@ -190,11 +190,11 @@ Você pode usar o **Novo projeto** recurso para criar a estrutura certa para voc
 1. Certifique-se de salvar todas as alterações. Agora você pode sincronizar esse novo conteúdo para sua instância do AEM.
 
 1. No painel Servidores, verifique se a conexão foi iniciada e, se não, inicie-a.
-1. Clique no link **Limpar e publicar** ícone.
+1. Clique em **Limpar e publicar** ícone.
 
 Depois de concluído, o pacote deve estar em execução na instância e, ao salvar, qualquer alteração é sincronizada automaticamente com a instância.
 
-Se quiser reconstruir um pacote a partir do seu projeto, clique com o botão direito do mouse na `PROJECT.ui.apps` ou `PROJECT.ui.content` e escolha **Executar como** -> **Instalação do Maven**.
+Se quiser reconstruir um pacote a partir do seu projeto, clique com o botão direito do mouse no `PROJECT.ui.apps` ou `PROJECT.ui.content` e escolha **Executar como** -> **Instalação do Maven**.
 
 Agora você tem uma pasta de destino criada com seu pacote (chamada, por exemplo, `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`).
 

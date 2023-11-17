@@ -2,10 +2,10 @@
 title: Guia de início rápido para a criação de páginas
 description: Um guia rápido de alto nível para começar a criar conteúdo de página
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1568'
-ht-degree: 98%
+source-wordcount: '1561'
+ht-degree: 90%
 
 ---
 
@@ -93,11 +93,11 @@ Como selecionar uma página depende da exibição usada no console:
 
 1. Exibição de coluna:
 
-   * Toque/clique na miniatura do recurso desejado - a miniatura será sobreposta com uma marca de verificação para mostrar que foi selecionada.
+   * Toque/clique na miniatura do recurso desejado: a miniatura é sobreposta com uma marca de verificação para mostrar que foi selecionada.
 
 1. Exibição de lista:
 
-   * Toque/clique na miniatura do recurso desejado - a miniatura será sobreposta com uma marca de verificação para mostrar que foi selecionada.
+   * Toque/clique na miniatura do recurso desejado: a miniatura é sobreposta com uma marca de verificação para mostrar que foi selecionada.
 
 1. Exibição de cartão:
 
@@ -168,7 +168,7 @@ Para editar sua página:
 
    >[!NOTE]
    >
-   >Você pode **Colar** os componentes na mesma página ou em uma diferente. Ao colar em uma página diferente que já foi aberta antes da operação de cortar/copiar, essa página precisará de uma atualização. 
+   >Você pode **Colar** os componentes na mesma página ou em uma diferente. Ao colar em uma página diferente que já foi aberta antes da operação de cortar/copiar, essa página precisa ser atualizada.
 
    * [Excluir](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) um componente:
 
@@ -258,7 +258,7 @@ Essas ações podem ser acionadas por:
 
    * [Mover](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page):
 
-      * Isso abrirá o assistente para coletar as informações necessárias para mover a página. Siga as instruções na tela.
+      * O assistente é aberto para coletar as informações necessárias para mover a página. Siga as instruções na tela.
 
    * [Excluir](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page):
 
@@ -302,7 +302,7 @@ Para criar uma [versão](/help/sites-cloud/authoring/features/page-versions.md) 
 
    ![Opção Exibir linha do tempo](/help/sites-cloud/authoring/assets/timeline.png)
 
-1. Toque/clique no elipse na parte inferior direita da coluna Linha do tempo para exibir os botões extras; incluindo **Salvar como versão**.
+1. Toque/clique nas reticências na parte inferior direita da coluna Linha do tempo para exibir os botões extras, incluindo **Salvar como versão**.
 
    ![Exibir linha do tempo](/help/sites-cloud/authoring/assets/timeline-view.png)
 

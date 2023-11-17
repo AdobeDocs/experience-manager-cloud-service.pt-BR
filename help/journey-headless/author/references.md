@@ -2,9 +2,9 @@
 title: Saiba mais sobre como usar referências em Fragmentos de conteúdo
 description: Saiba mais sobre como usar referências em Fragmentos de conteúdo para conteúdo, outros fragmentos e outros ativos (mídia). Apresente a necessidade e a mecânica de fragmentos aninhados para a criação de CMS headless.
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '710'
 ht-degree: 92%
 
 ---
@@ -39,11 +39,11 @@ Algumas referências têm tipos de dados dedicados (por exemplo, Referências de
 
 ## Referências de conteúdo {#content-references}
 
-As Referências de conteúdo fazem exatamente isso: permitem que você faça referência a qualquer outro conteúdo. Isso abrirá um navegador que permite selecionar o item de conteúdo.
+As Referências de conteúdo fazem exatamente isso: permitem que você faça referência a qualquer outro conteúdo. Isso abre um navegador que permite selecionar o item de conteúdo.
 
 ## Referências de ativo/mídia {#assets-media-references}
 
-Os ativos (por exemplo, imagens ou mídia) podem ser referenciados em um bloco de texto usando a opção **Inserir ativo**. Isso abrirá um navegador que permite selecionar o ativo.
+Os ativos (por exemplo, imagens ou mídia) podem ser referenciados em um bloco de texto usando a opção **Inserir ativo**. Isso abre um navegador que permite selecionar o ativo.
 
 ![Fragmentos de conteúdo: inserir ativo](/help/journey-headless/author/assets/headless-journey-author-references-02.png)
 

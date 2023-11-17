@@ -4,17 +4,17 @@ description: Depois que o administrador do sistema configurar os recursos de nuv
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 86700cce-139f-451e-9c21-b38b6332f773
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '579'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '577'
+ht-degree: 93%
 
 ---
 
 
 # Tarefas do usuário do AEM {#aem-user-tasks}
 
-Nesta parte opcional da [jornada de integração,](overview.md) você descobrirá como os usuários do AEM podem acessar o AEM as a Cloud Service para criar conteúdo.
+Nesta parte opcional do [integração do jornada,](overview.md) você aprende como usuários de AEM podem acessar AEM as a Cloud Service para criar conteúdo.
 
 ## A história até agora {#story-so-far}
 
@@ -52,7 +52,7 @@ Como um autor, é necessário fazer logon no AEM para começar a criar conteúdo
 
 1. Selecione o programa apropriado na página **Programas e produtos** para abrir a página **Visão geral**. Se não tiver certeza de qual programa acessar, pergunte ao administrador do sistema.
 
-1. Na página **Visão geral** do Cloud Manager, clique no link do autor no cartão **Ambientes**.
+1. No **Visão geral** no Cloud Manager, clique no link do autor na **Ambientes** cartão.
 
    ![Cartão Ambientes](/help/journey-onboarding/assets/author-environ.png)
 

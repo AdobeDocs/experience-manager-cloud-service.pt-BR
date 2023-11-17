@@ -2,9 +2,9 @@
 title: Publicação
 description: Saiba como executar a migração depois que o código e o conteúdo estiverem prontos para nuvem
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1710'
+source-wordcount: '1704'
 ht-degree: 4%
 
 ---
@@ -138,7 +138,7 @@ Revise esta lista de atividades para garantir que você execute uma migração t
 * Configure CDN, SSL e DNS.
    * Se você estiver usando seu próprio CDN, insira um tíquete de suporte para configurar o roteamento apropriado.
       * Consulte a seção [O CDN do cliente aponta para o CDN gerenciado pelo AEM](/help/implementing/dispatcher/cdn.md#point-to-point-cdn) na documentação da CDN para obter detalhes.
-      * Você precisará configurar o SSL e o DNS de acordo com a documentação do fornecedor do CDN.
+      * Configure o SSL e o DNS de acordo com a documentação do fornecedor do CDN.
    * Se você não estiver usando um CDN adicional, gerencie o SSL e o DNS de acordo com a seguinte documentação:
       * Gerenciar certificados SSL
          * [Introdução ao gerenciamento de certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)

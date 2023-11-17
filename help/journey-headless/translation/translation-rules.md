@@ -2,9 +2,9 @@
 title: Configurar regras de tradução para conteúdo headless
 description: Saiba como definir regras de tradução para identificar o conteúdo a ser traduzido.
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: f4e28d89023e8f326e6816ebd8168e1e31e772ce
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '941'
+source-wordcount: '940'
 ht-degree: 90%
 
 ---
@@ -100,7 +100,7 @@ Agora que você concluiu esta parte da jornada de tradução headless, você dev
 * Entenda o que as regras de tradução fazem.
 * Ser capaz de definir suas próprias regras de tradução.
 
-Desenvolva esse conhecimento e continue sua jornada de tradução AEM headless revisando o documento a seguir [Traduzir conteúdo](translate-content.md) onde você aprenderá como sua integração e regras funcionam juntas para traduzir conteúdo headless.
+Desenvolva esse conhecimento e continue sua jornada de tradução AEM headless revisando o documento a seguir [Traduzir conteúdo](translate-content.md) onde você aprende como a integração e as regras funcionam juntas para traduzir conteúdo headless.
 
 ## Recursos adicionais {#additional-resources}
 
