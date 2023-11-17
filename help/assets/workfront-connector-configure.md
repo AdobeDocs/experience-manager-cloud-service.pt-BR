@@ -4,9 +4,9 @@ description: Configurar o [!DNL Workfront for Experience Manager enhanced connec
 role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1771'
+source-wordcount: '1770'
 ht-degree: 1%
 
 ---
@@ -98,7 +98,7 @@ O mapeamento de metadados entre documentos e ativos do Adobe Workfront é defini
 Para configurar os mapeamentos, siga estas etapas:
 
 1. Navegue até **Ferramentas** > **Assets** > **Esquemas de metadados**.
-1. Selecione o formulário de esquema de metadados que deseja editar e clique em **Editar** ou crie um novo esquema de metadados do zero.
+1. Selecione o formulário de esquema de metadados que deseja editar e clique em **Editar** ou crie um esquema de metadados do zero.
 1. Selecione o campo de formulário de esquema de metadados que deseja editar e selecione **Configurações** no painel direito.
 1. Entrada [!DNL Workfront] Campo de formulário personalizado selecione o nome do [!DNL Workfront] que você deseja mapear para a propriedade AEM selecionada. As opções disponíveis são:
 

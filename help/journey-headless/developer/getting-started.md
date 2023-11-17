@@ -2,10 +2,10 @@
 title: Introdução ao AEM Headless as a Cloud Service
 description: Nesta parte da Jornada do desenvolvedor headless do AEM, saiba mais sobre pré-requisitos do AEM headless.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '3096'
-ht-degree: 95%
+source-wordcount: '3095'
+ht-degree: 94%
 
 ---
 
@@ -117,7 +117,7 @@ Esse nível de integração baseia-se no nível dois, permitindo que a maioria d
 
 ### Você ainda não tem um consumidor externo do conteúdo headless, como um aplicativo de página única (SPA). {#do-not-have-a-spa}
 
-Se o objetivo for criar um novo SPA que consuma de forma headless conteúdo do AEM, você pode usar recursos como os Fragmentos de conteúdo para gerenciar seu conteúdo headless e também criar um SPA com estrutura de edição de SPA do AEM.
+Se o objetivo for criar um SPA que consuma conteúdo sem periféricos do AEM, você poderá usar recursos como Fragmentos de conteúdo para gerenciar seu conteúdo sem periféricos e também criar um SPA AEM SPA com Editor de estrutura.
 
 Usando o Editor de SPA, o SPA não apenas consome conteúdo do AEM, como também é totalmente editável dentro do AEM pelos autores de conteúdo, proporcionando a flexibilidade da entrega headless e da edição no contexto dentro do AEM.
 

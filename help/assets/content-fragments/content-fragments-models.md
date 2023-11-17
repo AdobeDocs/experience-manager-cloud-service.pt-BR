@@ -2,9 +2,9 @@
 title: Modelos de fragmentos do conteúdo (Ativos - Fragmentos de conteúdo)
 description: Saiba como os modelos de fragmento de conteúdo servem como base para o conteúdo headless no AEM e como criar fragmentos de conteúdo com conteúdo estruturado.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: f499edbc05b71495c072564bb065a07c34a9e236
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2937'
+source-wordcount: '2935'
 ht-degree: 93%
 
 ---
@@ -297,7 +297,7 @@ Especifica um caminho raiz para qualquer fragmento referenciado.
 
 * **Permitir criação de fragmentos**
 
-  Isso permitirá que o autor do fragmento crie um novo fragmento com base no modelo apropriado.
+  Isso permite que o autor do fragmento crie um fragmento com base no modelo apropriado.
 
    * **fragmentreferencecomposite** — permite que o autor do fragmento crie uma composição ao selecionar vários fragmentos
 

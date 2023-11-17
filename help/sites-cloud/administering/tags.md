@@ -2,9 +2,9 @@
 title: Administração de tags
 description: Saiba como administrar tags no AEM para organizar seu conteúdo.
 exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2268'
+source-wordcount: '2265'
 ht-degree: 1%
 
 ---
@@ -79,7 +79,7 @@ Há várias etapas para criar e usar tags para organizar seu conteúdo.
 
 Um namespace é usado para organizar outras tags. Ela pode ser considerada a tag de nível mais baixo e geralmente é usada para agrupar outras tags.
 
-1. Para criar um novo namespace, abra a variável [console de marcação](#tagging-console) e toque ou clique no botão **Criar** na barra de ferramentas e, em seguida, **Criar namespace**.
+1. Para criar um namespace, abra a variável [console de marcação](#tagging-console) e toque ou clique no botão **Criar** na barra de ferramentas e, em seguida, **Criar namespace**.
 
    ![Caixa de diálogo Adicionar namespace](/help/sites-cloud/administering/assets/add-namespace.png)
 
@@ -101,7 +101,7 @@ Um namespace não precisa conter subtags. Como o namespace é, em si, uma tag, e
 
 As tags geralmente são adicionadas a namespaces.
 
-1. Para criar uma nova tag, abra o [console de marcação.](#tagging-console)
+1. Para criar uma tag, abra o [console de marcação.](#tagging-console)
 
 1. Selecione o namespace em que deseja criar a tag. Ou selecione outra tag para criar uma subtag abaixo dela.
 
@@ -123,11 +123,11 @@ A tag é criada e o console é atualizado para mostrar a nova tag.
 As tags permitem a criação flexível de sua própria taxonomia com base nas necessidades organizacionais.
 
 * Você pode criar tags secundárias de tags existentes selecionando a tag principal no console antes de criar a nova tag.
-* Se você criar uma tag sem selecionar um namespace ou outra tag, você efetivamente cria um novo namespace.
+* Se você criar uma tag sem selecionar um namespace ou outra tag, você efetivamente cria um namespace.
 
 ### Publicação de tags {#publishing-tags}
 
-Assim como ocorre com a criação de qualquer outro conteúdo no AEM, uma vez criada uma tag (ou namespace), ela só existe no ambiente de criação. Para que suas tags estejam disponíveis para os usuários, você deve publicá-las.
+Assim como ocorre com a criação de qualquer outro conteúdo no AEM, depois de criar uma tag (ou namespace), ela só existe no ambiente de criação. Para que suas tags estejam disponíveis para os usuários, você deve publicá-las.
 
 1. Para publicar uma tag, abra o [console de marcação.](#tagging-console)
 

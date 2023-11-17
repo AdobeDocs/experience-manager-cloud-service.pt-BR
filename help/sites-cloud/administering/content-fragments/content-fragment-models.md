@@ -4,9 +4,9 @@ description: Saiba como os modelos de fragmento de conteúdo servem como base pa
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '3061'
+source-wordcount: '3060'
 ht-degree: 60%
 
 ---
@@ -354,7 +354,7 @@ Especifica um caminho raiz para qualquer fragmento referenciado.
 
 * **Permitir criação de fragmentos**
 
-  Isso permite que o autor do fragmento crie um novo fragmento com base no modelo apropriado.
+  Isso permite que o autor do fragmento crie um fragmento com base no modelo apropriado.
 
    * **fragmentreferencecomposite** — permite que o autor do fragmento crie uma composição ao selecionar vários fragmentos
 

@@ -2,10 +2,10 @@
 title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2022.10.0.
 description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2022.10.0.
 exl-id: 8fce7c50-f322-4bcf-bd76-390faedfd5b7
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '836'
-ht-degree: 79%
+source-wordcount: '835'
+ht-degree: 77%
 
 ---
 
@@ -69,7 +69,7 @@ Assista ao vídeo de Visão geral da versão de outubro de 2022 que exibe um res
    * **[Modelo de dados de formulário no editor de modelos](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model)**: você pode associar um esquema de Modelo de dados de formulário a um modelo de formulário adaptável no editor de modelos. Isso ajuda a reduzir o tempo gasto para criar um Formulário adaptável. A opção também é adicionada ao editor de Formulários adaptáveis para permitir que os usuários selecionem ou alterem o Modelo de Dados de Formulário para formulários existentes.
    * **[Documento de Registro no editor de modelo](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)**: Agora é possível padronizar a geração de Documento de Registro para todos os formulários criados usando um modelo. Isso ajuda a aprimorar a conformidade e a padronização dos requisitos da organização.
 
-* **[Iniciar o assistente de Formulário Adaptável em uma página do AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)**: A página AEM Sites tem suporte estendido para o Formulários Adaptáveis. Agora é possível criar um novo Formulário Adaptável ou incorporar um Formulário Adaptável existente, permanecendo na página do AEM Sites.
+* **[Iniciar o assistente de Formulário Adaptável em uma página do AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)**: A página AEM Sites tem suporte estendido para o Formulários Adaptáveis. Agora é possível criar um formulário adaptável ou incorporar um formulário adaptável existente, permanecendo na página do AEM Sites.
 * **[Alterar o alinhamento de exibição para caixas de seleção e botões de rádio no DoR](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record-customize-the-branding-information-in-document-of-record)**: Agora é possível definir o alinhamento desejado (Horizontal, Vertical, Igual ao Adaptive Forms) para as caixas de seleção e os botões de rádio no Documento de Registro. Essa opção determina o posicionamento das opções de caixa de seleção e botão de opção no Documento de registro.
 
 ## Complemento CIF {#cloud-services-cif}

@@ -3,13 +3,13 @@ title: Seletor de destino para AEM as a Cloud Service
 description: Use o Seletor de destino do AEM para mostrar e selecionar ativos que você pode usar como uma cópia do ativo original.
 contentOwner: Adobe
 role: Admin,User
-source-git-commit: cf783a91d33bc7a42e177ace3ca49844f14a6a79
+exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1908'
+source-wordcount: '1906'
 ht-degree: 36%
 
 ---
-
 
 # Seletor de destino de micro front-end {#Overview}
 
@@ -212,7 +212,7 @@ Você pode usar as propriedades do Seletor de destino para personalizar a forma 
 
 ### Exemplo 1: criar uma pasta no Seletor de destino
 
-O Seletor de destino permite criar uma nova pasta para fazer upload, mover ou copiar ativos no local específico.
+O Seletor de destino permite criar uma pasta para fazer upload, mover ou copiar ativos no local específico.
 
 ![create-folder-destination-seletor](assets/create-folder-destination-selector.png)
 
@@ -261,7 +261,7 @@ O Seletor de destino também permite exibir os dados do repositório de sua esco
 
 ### Crie uma nova pasta {#create-new-folder}
 
-Ele permite criar uma nova pasta na pasta de destino do [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
+Ele permite criar uma pasta na pasta de destino do seu [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 
 ### Tipos de visualização {#types-of-view}
 

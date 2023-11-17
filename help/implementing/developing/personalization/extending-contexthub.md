@@ -2,9 +2,9 @@
 title: Extensão do ContextHub
 description: Definir novos tipos de armazenamentos e módulos do ContextHub quando os fornecidos não atenderem aos requisitos da solução
 exl-id: ba817c18-f8bd-485d-b043-87593a6a93b5
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '628'
+source-wordcount: '627'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ Na maioria dos casos, é necessário apenas um candidato e a prioridade pode ser
 
 ## Criação de tipos de módulo da interface do usuário do ContextHub {#creating-contexthub-ui-module-types}
 
-Criar tipos de módulo de interface personalizada quando os que estão [instalado com o ContextHub](sample-modules.md) não atendem aos seus requisitos. Para criar um tipo de módulo de interface do usuário, crie um novo renderizador de módulo de interface do usuário estendendo o `ContextHub.UI.BaseModuleRenderer` e, em seguida, registrando-a com `ContextHub.UI`.
+Criar tipos de módulo de interface personalizada quando os que estão [instalado com o ContextHub](sample-modules.md) não atendem aos seus requisitos. Para criar um tipo de módulo de interface do usuário, crie um renderizador de módulo de interface do usuário estendendo o `ContextHub.UI.BaseModuleRenderer` e, em seguida, registrando-a com `ContextHub.UI`.
 
 Para criar um renderizador de módulo de interface do usuário, crie um `Class` objeto que contém a lógica que renderiza o módulo da interface do usuário. No mínimo, sua classe deve executar as seguintes ações:
 

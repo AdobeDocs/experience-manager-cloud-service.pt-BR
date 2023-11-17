@@ -2,10 +2,10 @@
 title: Criação e gerenciamento de ofertas (console Ofertas)
 description: Use o console Ofertas para criar ofertas que você possa usar em experiências de atividades
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1391'
-ht-degree: 98%
+source-wordcount: '1390'
+ht-degree: 96%
 
 ---
 
@@ -37,7 +37,7 @@ A opção **Converter em variação de fragmento de experiência** e o fluxo de 
 
 >[!NOTE]
 >
->Você mesmo também pode criar um novo Fragmento de experiência, transferir manualmente o conteúdo da oferta herdada para o fragmento e, em seguida, excluir a oferta herdada.
+>Você mesmo também pode criar um Fragmento de experiência, transferir manualmente o conteúdo da oferta herdada para o fragmento e, em seguida, excluir a oferta herdada.
 
 >[!CAUTION]
 >

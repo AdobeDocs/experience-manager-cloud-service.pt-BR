@@ -2,10 +2,10 @@
 title: Configurar o mapeamento de metadados de ativos entre o Workfront e o Experience Manager Assets
 description: Mapeie os campos de metadados de ativos entre os aplicativos Adobe Workfront e Experience Manager as a Cloud Service. Como resultado do mapeamento de campos de metadados, ao enviar um ativo do Workfront para o Experience Manager Assets, você pode visualizar os metadados do ativo mapeados no Experience Manager Assets.
 exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1025'
-ht-degree: 3%
+source-wordcount: '1023'
+ht-degree: 4%
 
 ---
 
@@ -56,7 +56,7 @@ Para enviar a imagem do Workfront para o Experience Manager Assets:
 
 1. Clique no ícone Menu principal ![Mostrar Menu](assets/show-menu.svg) disponível no canto superior direito do aplicativo do Adobe Workfront e, em seguida, clique em **[!UICONTROL Projetos]**.
 
-1. Clique em **[!UICONTROL Novo projeto]** para criar um novo projeto.
+1. Clique em **[!UICONTROL Novo projeto]** para criar um projeto.
 
 1. Clique em **[!UICONTROL Documentos]** opção disponível no painel esquerdo, arraste e selecione a imagem que precisa enviar para o Experience Manager Assets.
 
@@ -82,7 +82,7 @@ Para configurar o mapeamento de metadados usando um novo formulário de metadado
 
 1. Selecione o formulário de esquema e clique em **[!UICONTROL Editar]**.
 
-1. (Opcional) No Editor de formulário de esquema de metadados, clique em `+` para criar uma nova guia para os campos do Workfront.
+1. (Opcional) No Editor de formulário de esquema de metadados, clique em `+` para criar uma guia para os campos do Workfront.
 
 1. Clique em **[!UICONTROL Formulário de criação]** e arraste a **[!UICONTROL Texto em linha única]** componente ao formulário. Clique no componente no formulário. No **[!UICONTROL Formulário de criação]** guia:
 

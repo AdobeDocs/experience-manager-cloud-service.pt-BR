@@ -1,16 +1,14 @@
 ---
 title: Introdução à criação de formulários adaptáveis
 description: O AEM Forms fornece uma interface fácil de usar, mas eficiente, para a criação de formulários adaptáveis. Ele fornece vários componentes e ferramentas que podem ser usadas para criar formulários.
-uuid: 3b150507-41b9-47c2-a94c-f85b903b2274
 content-type: reference
 topic-tags: author, introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2484'
+source-wordcount: '2482'
 ht-degree: 96%
 
 ---
@@ -54,7 +52,7 @@ A interface otimizada para toque da criação de formulários adaptáveis é int
 * Componentes de formulário padrão
 * Repositório integrado de ativos
 
-Ao criar um novo formulário adaptável ou editar um existente, você usa os seguintes elementos da interface:
+Ao criar ou editar um Formulário adaptável existente, você usa os seguintes elementos da interface do usuário:
 
 * [Barra lateral](#sidebar)
 * [Barra de ferramentas da página](#page-toolbar)

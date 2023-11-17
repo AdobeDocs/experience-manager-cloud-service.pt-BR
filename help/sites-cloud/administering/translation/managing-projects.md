@@ -4,10 +4,10 @@ description: Saiba como criar e gerenciar projetos de tradução automática e h
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '4077'
-ht-degree: 96%
+source-wordcount: '4075'
+ht-degree: 99%
 
 ---
 
@@ -17,7 +17,7 @@ Os projetos de tradução permitem gerenciar a tradução de conteúdo do AEM. U
 
 >[!TIP]
 >
->Se você é novo na tradução de conteúdo, consulte [Jornada de tradução de sites,](/help/journey-sites/translation/overview.md) que é um caminho guiado pela tradução de conteúdo do AEM Sites usando ferramentas de tradução poderosas do AEM, ideais para aqueles sem experiência com o AEM ou com tradução.
+>Se você for novo na tradução de conteúdo, consulte [Jornada de tradução de sites,](/help/journey-sites/translation/overview.md) que é um tutorial guiado pela tradução de conteúdo do AEM Sites usando as ferramentas de tradução avançadas do AEM, ideal para quem não tem experiência no AEM ou em tradução.
 
 Quando os recursos são adicionados a um projeto de tradução, um trabalho de tradução é criado para eles. Os trabalhos fornecem comandos e informações de status que são usados para gerenciar os fluxos de trabalho de tradução humana e tradução automática que são executados nos recursos.
 
@@ -210,7 +210,7 @@ Muitas tarefas de tradução e opções avançadas podem ser acessadas no consol
 
 ### Noções básicas sobre o Console de projetos
 
-Os projetos de tradução no AEM usam o padrão [console de projetos AEM](/help/sites-cloud/authoring/projects/overview.md). Se você não estiver familiarizado com projetos AEM, consulte essa documentação.
+Os projetos de tradução no AEM usam o [console de projetos tradicional do AEM](/help/sites-cloud/authoring/projects/overview.md). Se não estiver familiarizado(a) com os projetos do AEM, revise a documentação.
 
 Como qualquer outro projeto, um projeto de tradução é composto de blocos que apresentam uma visão geral das tarefas do projeto.
 
@@ -277,7 +277,7 @@ Ao criar manualmente um projeto de tradução, você deve fornecer valores para 
 
 ### Adicionar tags a um trabalho de tradução {#adding-tags-to-a-translation-job}
 
-É possível adicionar tags a um projeto de tradução de maneira semelhante a [como você adiciona ativos e páginas a um projeto](#adding-pages-assets-to-a-translation-job). Basta selecionar **Tags** no menu **Adicionar** e, em seguida, siga as mesmas etapas.
+É possível adicionar tags a um projeto de tradução de maneira semelhante a [como você adiciona ativos e páginas a um projeto](#adding-pages-assets-to-a-translation-job). Selecione **Tags** no menu **Adicionar** e, em seguida, siga as mesmas etapas.
 
 ### Visualizar detalhes do projeto de tradução {#seeing-translation-project-details}
 
@@ -303,7 +303,7 @@ Quando um projeto é criado usando o painel de Referências de uma página, essa
 
 ### Monitorar o status de um trabalho de tradução {#monitoring-the-status-of-a-translation-job}
 
-O bloco do trabalho de tradução de um projeto fornece o status de um trabalho e o número de páginas e ativos no trabalho.
+O bloco do trabalho de tradução de um projeto fornece o status desse trabalho e o número de páginas e ativos contidos nele.
 
 ![Trabalho de tradução](../assets/translation-job.png)
 
@@ -374,7 +374,7 @@ Você também pode iniciar todos os trabalhos de tradução de um projeto.
 
 1. No console de projetos, selecione o projeto de tradução.
 1. Na barra de ferramentas, toque ou clique em **Iniciar trabalho de tradução**.
-1. Na caixa de diálogo, revise a lista de tarefas iniciadas e confirme com **Início** ou abortar com **Cancelar**.
+1. Na caixa de diálogo, revise a lista de trabalhos iniciados e, em seguida, confirme clicando em **Iniciar** ou interrompa clicando em **Cancelar**.
 
 ### Cancelar um trabalho de tradução {#canceling-a-translation-job}
 
@@ -390,7 +390,7 @@ Quando o conteúdo retorna após a tradução e está com o status **Pronto para
 
 Ao selecionar **Rejeitar tradução**, você terá a opção de adicionar um comentário.
 
-Rejeitar o conteúdo o envia de volta ao fornecedor de tradução, onde ele pode ver o comentário.
+Se o conteúdo for rejeitado, ele será enviado de volta ao fornecedor da tradução, onde poderá ver o comentário.
 
 ### Concluir e arquivar trabalhos de tradução {#completing-and-archiving-translation-jobs}
 
@@ -448,9 +448,10 @@ Para comparar cópias de idioma ao idioma principal:
 
 ## Mover ou renomear uma página de origem {#move-source}
 
-Se uma página de origem já traduzida precisar ser [renomeada ou movida](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page), traduzir a página novamente após a movimentação criará uma nova cópia de idioma com base no novo nome/local da página. A cópia de idioma antiga baseada no nome/local anterior ainda estará lá.
+Se uma página de origem já traduzida precisar ser [renomeado ou movido](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page), traduzindo a página novamente após a movimentação, crie uma cópia de idioma com base no novo nome/local da página. A cópia de idioma antiga baseada no nome/local anterior ainda estará lá.
 
 A prática recomendada neste cenário é seguir este procedimento:
+
 1. Cancele a publicação das cópias de idioma associadas à página de origem que você deseja mover.
 1. Exclua essas cópias.
 1. Crie novas cópias de idioma a partir da página de origem recém-movida.

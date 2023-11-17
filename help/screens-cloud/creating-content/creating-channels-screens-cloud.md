@@ -2,9 +2,9 @@
 title: Criação e gerenciamento de canais no Screens as a Cloud Service
 description: Esta página descreve como criar e gerenciar canais no Screens as a Cloud Service.
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1087'
+source-wordcount: '1086'
 ht-degree: 2%
 
 ---
@@ -28,7 +28,7 @@ Este documento ajuda você a entender a criação e o gerenciamento de canais pa
 >**Pré-requisitos**
 >Antes de iniciar esta seção do Guia, revise [Criação e gerenciamento de projetos no Screens as a Cloud Service](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md).
 
-Siga as etapas abaixo para criar um novo canal de sequência no Screens as a Cloud Service:
+Siga as etapas abaixo para criar um canal de sequência no Screens as a Cloud Service:
 
 1. Navegue até Provedor de conteúdo do Screens.
 

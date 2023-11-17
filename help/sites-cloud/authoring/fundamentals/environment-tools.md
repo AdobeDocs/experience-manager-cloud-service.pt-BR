@@ -2,10 +2,10 @@
 title: Ambiente e ferramentas de criação
 description: O ambiente de criação do AEM fornece vários mecanismos para organização e edição de conteúdo
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2164'
-ht-degree: 94%
+source-wordcount: '2163'
+ht-degree: 93%
 
 ---
 
@@ -120,7 +120,7 @@ Para adicionar um ativo à sua página, selecione-o e arraste-o até o local des
 
 * Um componente existente do tipo apropriado.
    * Por exemplo, você pode arrastar um ativo de imagem para um componente de imagem.
-* Um [espaço reservado](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-placeholder) no sistema de parágrafo para criar um novo componente do tipo adequado.
+* A [espaço reservado](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-placeholder) no sistema de parágrafo para criar um componente do tipo apropriado.
    * Por exemplo, você pode arrastar um ativo de imagem para o sistema de parágrafo para criar um componente de imagem.
 
 >[!NOTE]

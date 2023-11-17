@@ -1,20 +1,20 @@
 ---
 title: Criação de um novo site
-description: Saiba como os administradores usam o AEM para criar um novo site usando modelos de site para definir o estilo e a estrutura de seu site.
+description: Saiba como os administradores usam o AEM para criar um site usando modelos de site para definir o estilo e a estrutura de seu site.
 feature: Administering
 role: Admin
 exl-id: 50105d03-9d94-4aec-b0a7-0b88e3fe50e0
-source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
-workflow-type: ht
-source-wordcount: '127'
-ht-degree: 100%
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+workflow-type: tm+mt
+source-wordcount: '125'
+ht-degree: 67%
 
 ---
 
 
 # Criação de um novo site {#new-site}
 
-Saiba como os administradores usam o AEM para criar um novo site usando modelos de site para definir o estilo e a estrutura de seu site.
+Saiba como os administradores usam o AEM para criar um site usando modelos de site para definir o estilo e a estrutura de seu site.
 
 {{edge-delivery-authoring}}
 

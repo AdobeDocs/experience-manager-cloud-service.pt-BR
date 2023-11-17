@@ -2,10 +2,10 @@
 title: Editar conteúdo da página
 description: Depois que a página é criada, é possível editar o conteúdo para fazer as atualizações necessárias
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2978'
-ht-degree: 94%
+source-wordcount: '2975'
+ht-degree: 93%
 
 ---
 
@@ -161,7 +161,7 @@ O espaço reservado do componente é um indicador para mostrar onde um component
 
 ### Inserir um componente usando o Navegador de ativos   {#inserting-a-component-using-the-assets-browser}
 
-Também é possível adicionar um novo componente à página arrastando um ativo do [navegador de ativos](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser). Isso criará automaticamente um novo componente do tipo apropriado (e que contém o ativo).
+Também é possível adicionar um novo componente à página arrastando um ativo do [navegador de ativos](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser). Isso cria automaticamente um componente do tipo apropriado (e que contém o ativo).
 
 Esse comportamento pode ser configurado para a instalação. Consulte Configuração de um sistema de parágrafo para que a arrastar um ativo crie uma instância de componente para obter mais detalhes. <!--This behavior can be configured for your installation. See [Configuring a Paragraph System so that Dragging an Asset Creates a Component Instance](/help/sites-developing/developing-components.md#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance) for further details.-->
 
@@ -261,7 +261,7 @@ As ações de fato disponíveis para o usuário serão mostradas conforme apropr
 
 * **Converta em uma variação de fragmento de experiência**
 
-  Isso permite criar um novo [fragmento de experiência](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) do componente selecionado ou adicione-o a um fragmento de experiência existente.
+  Isso permite criar um [fragmento de experiência](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) do componente selecionado ou adicione-o a um fragmento de experiência existente.
 
   ![Botão Converter para fragmento de experiência](/help/sites-cloud/authoring/assets/editing-component-toolbar-xf.png)
 

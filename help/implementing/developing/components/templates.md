@@ -2,10 +2,10 @@
 title: Modelos de páginas
 description: Os modelos de página são usados ao criar uma página que é usada como base para a nova página
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '3291'
-ht-degree: 6%
+source-wordcount: '3287'
+ht-degree: 8%
 
 ---
 
@@ -55,7 +55,7 @@ Ao criar um novo modelo editável, você:
 
    * A estrutura permite definir os componentes e o conteúdo para o modelo.
    * Os componentes definidos na estrutura do modelo não podem ser movidos em uma página resultante nem excluídos de qualquer página resultante.
-   * Se você quiser que os autores de página possam adicionar e remover componentes, adicione um sistema de parágrafo ao modelo.
+   * Se desejar que os autores de página possam adicionar e remover componentes, adicione um sistema de parágrafo ao modelo.
    * Os componentes podem ser desbloqueados e bloqueados novamente para permitir que você defina o conteúdo inicial.
 
    Para obter detalhes sobre como um autor de modelo define a estrutura, consulte [Criação de modelos de página](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author).
@@ -68,7 +68,7 @@ Ao criar um novo modelo editável, você:
 
       * Por exemplo, os componentes disponíveis ou as dimensões mínima/máxima.
 
-   * Elas são aplicáveis ao modelo (e às páginas criadas com o modelo).
+   * Elas são aplicáveis ao modelo (e às páginas criadas com ele).
 
    Para obter detalhes sobre como um autor de modelo define políticas, consulte [Criação de modelos de página](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author).
 
@@ -103,7 +103,7 @@ Ao criar um novo modelo editável, você:
 
 1. Use-a para criar páginas de conteúdo.
 
-   * Ao usar um modelo para criar uma nova página, não há diferença visível e nenhuma indicação entre modelos estáticos e editáveis.
+   * Ao usar um modelo para criar uma página, não há diferença visível e nenhuma indicação entre modelos estáticos e editáveis.
    * Para o autor da página, o processo é transparente.
 
    Para obter detalhes sobre como um autor de página usa modelos para criar uma página, consulte [Criar e organizar páginas](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#templates).
@@ -141,11 +141,11 @@ Para organizar seus templates, você pode usar as seguintes pastas:
 >
 >Mesmo que você possa aninhar suas pastas, quando o usuário as visualizar no **Modelos** console, eles são apresentados como uma estrutura plana.
 
-Em uma instância padrão do AEM, a pasta `global` já existe no console modelo. Isso mantém modelos padrão e atua como um fallback se nenhuma política e/ou tipo de modelo for localizado na pasta atual. Você pode adicionar seus modelos padrão a esta pasta ou criar uma nova pasta (recomendado).
+Em uma instância padrão do AEM, a pasta `global` já existe no console modelo. Isso mantém modelos padrão e atua como um fallback se nenhuma política e/ou tipo de modelo for localizado na pasta atual. Você pode adicionar seus modelos padrão a esta pasta ou criar uma pasta (recomendado).
 
 >[!NOTE]
 >
->A prática recomendada é criar uma nova pasta para manter seus modelos personalizados e não usar o `global` pasta.
+>É uma prática recomendada criar uma pasta para armazenar seus modelos personalizados e não usar o `global` pasta.
 
 >[!CAUTION]
 >
@@ -161,7 +161,7 @@ Os tipos de modelo e as políticas são herdados em todas as pastas de acordo co
 
 Uma lista de todas as entradas permitidas é criada. Se alguma configuração se sobrepor ( `path`/ `label`), somente a instância mais próxima à pasta atual é apresentada ao usuário.
 
-Para criar uma nova pasta, faça o seguinte:
+Para criar uma pasta, faça o seguinte:
 
 * Programaticamente ou com CRXDE Lite
 * Usar o [Navegador de configuração](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
@@ -425,7 +425,7 @@ Este nó retém propriedades para o modelo:
 
 * **Nome**: `jcr:title`
 * **Nome**: `status`
-   * &quot;**Tipo**: `String`
+   * ``**Tipo**: `String`
    * **Valor**: `draft`, `enabled` ou `disabled`
 
 ### Estrutura {#structure}
@@ -459,7 +459,7 @@ Quando [editando um modelo, é possível definir o layout](/help/sites-cloud/aut
 
 ### Políticas de conteúdo {#content-policies}
 
-As políticas de conteúdo definem as propriedades de design de um componente. Por exemplo, os componentes disponíveis ou as dimensões mínima/máxima. Elas são aplicáveis ao modelo (e às páginas criadas com o modelo). As políticas de conteúdo podem ser criadas e selecionadas no editor de modelo.
+As políticas de conteúdo definem as propriedades de design de um componente. Por exemplo, os componentes disponíveis ou as dimensões mínima/máxima. Elas são aplicáveis ao modelo (e às páginas criadas com ele). As políticas de conteúdo podem ser criadas e selecionadas no editor de modelo.
 
 * A propriedade `cq:policy`, no `root` nó
   `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`

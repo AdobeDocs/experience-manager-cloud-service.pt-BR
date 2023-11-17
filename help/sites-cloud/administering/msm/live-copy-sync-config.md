@@ -4,9 +4,9 @@ description: Saiba mais sobre as poderosas opções de sincronização da Live C
 feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
-source-git-commit: 1d5460c87aef10ae1adee7401cd462242e106f8c
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2426'
+source-wordcount: '2425'
 ht-degree: 96%
 
 ---
@@ -45,7 +45,7 @@ Cada configuração de implantação usa um acionador de implantação que ocasi
 
 A tabela a seguir lista as configurações de implantação que vêm prontas para uso com o AEM. A tabela inclui as ações de acionador e de sincronização de cada configuração de implementação.
 
-Se as ações de configuração de implantação instaladas não atenderem aos seus requisitos, você poderá [crie uma nova configuração de implantação.](#creating-a-rollout-configuration)
+Se as ações de configuração de implantação instaladas não atenderem aos seus requisitos, você poderá [criar uma configuração de implantação.](#creating-a-rollout-configuration)
 
 | Nome | Descrição | Acionar | [Ações de sincronização](#synchronization-actions) |
 |---|---|---|---|

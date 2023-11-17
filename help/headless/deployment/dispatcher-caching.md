@@ -2,13 +2,13 @@
 title: Consultas persistentes do GraphQL - ativação do armazenamento em cache no Dispatcher
 description: O Dispatcher é uma camada de segurança e cache na frente dos ambientes de publicação do Adobe Experience Manager. Você pode ativar o armazenamento em cache de consultas persistentes no AEM Headless.
 feature: Dispatcher, GraphQL API
-source-git-commit: 0066bfba3a403791c6a35b1280ae04b576315566
+exl-id: 30a97e56-6699-41c4-a4eb-fc6236667f8f
+source-git-commit: ea5b404e83c11f0057342bff22ba45e6b0ead124
 workflow-type: tm+mt
-source-wordcount: '317'
-ht-degree: 6%
+source-wordcount: '391'
+ht-degree: 8%
 
 ---
-
 
 # Consultas persistentes do GraphQL - ativação do armazenamento em cache no Dispatcher {#graphql-persisted-queries-enabling-caching-dispatcher}
 
@@ -37,6 +37,27 @@ Para habilitar o armazenamento em cache de consultas persistentes, defina a vari
    ```xml
    Define CACHE_GRAPHQL_PERSISTED_QUERIES
    ```
+
+>[!NOTE]
+>
+>Quando o armazenamento em cache do Dispatcher está ativado para consultas persistentes usando `Define CACHE_GRAPHQL_PERSISTED_QUERIES` um `ETag` é adicionado à resposta pelo Dispatcher.
+>
+>Por padrão, a variável `ETag` O cabeçalho do está configurado com a seguinte diretiva:
+>
+>```
+>FileETag MTime Size 
+>```
+>
+>No entanto, essa configuração pode causar problemas quando usada nas respostas de consultas persistentes, pois não leva em conta pequenas alterações na resposta.
+>
+>Para atingir objetivos `ETag` cálculos em *cada* resposta que é exclusiva do `FileETag Digest` deve ser usada na configuração do dispatcher:
+>
+>```xml
+><Directory />    
+>   ...    
+>   FileETag Digest
+></Directory> 
+>```
 
 >[!NOTE]
 >

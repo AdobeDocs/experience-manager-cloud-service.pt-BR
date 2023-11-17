@@ -2,9 +2,9 @@
 title: Gerenciar páginas e modelos do catálogo de produtos
 description: Saiba como gerenciar páginas e modelos do catálogo de produtos
 exl-id: 0d795d85-c865-40d5-941e-e02ee96fdd11
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '718'
 ht-degree: 2%
 
 ---
@@ -61,7 +61,7 @@ Os modelos podem ser editados abrindo diretamente a página de modelo ou alterna
 
 ### Modelos de Categoria ou Produto Específicos {#specific}
 
-O CIF é compatível com vários modelos com apenas alguns cliques. Para criar outro modelo, selecione o modelo genérico na respectiva categoria e crie uma nova página usando o **Criar** ação.
+O CIF é compatível com vários modelos com apenas alguns cliques. Para criar outro modelo, selecione o modelo genérico na respectiva categoria e crie uma página usando o **Criar** ação.
 
 ![criar página de modelo](assets/create-template-page.png)
 

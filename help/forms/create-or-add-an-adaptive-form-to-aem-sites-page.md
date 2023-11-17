@@ -4,9 +4,9 @@ description: Descubra como criar ou adicionar um Formulário adaptável à sua p
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
-source-git-commit: 4cebcd58a0d6fd429cde3d739095c131cc76d9e5
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '3212'
+source-wordcount: '3209'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ Com o AEM Forms, você pode adicionar um formulário facilmente à sua página d
 
 Você pode usar o Editor de páginas AEM para criar e adicionar rapidamente vários formulários às suas páginas do AEM Sites. Usar o Editor de páginas AEM permite que os autores de conteúdo criem experiências de captura de dados perfeitas em uma página do Sites, usando o potencial dos componentes de formulários adaptáveis, incluindo comportamento dinâmico, validações, integração de dados, geração de documentos de registro e automação de processos comerciais. Ele também permite usar vários recursos de páginas do AEM Sites, como controle de versão, direcionamento, tradução e gerenciador de vários sites.
 
-O Cloud Service AEM Forms fornece Contêiner de formulário adaptável e Forms adaptável - Componentes incorporados. Você pode usar o Contêiner de formulário adaptável para criar um novo formulário em uma página do AEM Sites ou Fragmento de experiência, enquanto o componente Adaptive Forms - Incorporar permite adicionar um formulário adaptável existente ou criar um novo formulário usando o Editor Adaptive Forms.
+O Cloud Service AEM Forms fornece Contêiner de formulário adaptável e Forms adaptável - Componentes incorporados. Você pode usar o Contêiner de formulário adaptável para criar um formulário em uma página do AEM Sites ou Fragmento de experiência, enquanto o componente Adaptive Forms - Incorporar permite adicionar um formulário adaptável existente ou criar um formulário usando o Editor Adaptive Forms.
 
 ![Um exemplo de um formulário adaptável em uma página do AEM Sites](/help/forms/assets/adaptive-form-in-sites-page.png)
 
@@ -187,7 +187,7 @@ Para converter um formulário adaptável na página AEM Sites em um fragmento de
    Uma caixa de diálogo para converter o contêiner do Formulário adaptável em um novo Fragmento de experiência ou adicionar a um Fragmento de experiência existente é exibida
 1. Na caixa de diálogo Converter em variação de Fragmento de experiência, defina valores para as seguintes opções:
 
-   * **Ação:** Selecione para criar um novo fragmento de experiência ou Adicionar a um fragmento de experiência existente.
+   * **Ação:** Selecione para criar um fragmento de experiência ou Adicionar a um fragmento de experiência existente.
    * **Caminho principal:** Especifique o caminho da pasta na qual hospedar o fragmento de experiência. A opção está disponível somente para criar um novo Fragmento de experiência.
    * **Modelo:** Especifique o caminho do modelo do Fragmento de experiência. Se você não tiver um modelo de Fragmento de experiência, [criar](/help/implementing/developing/extending/experience-fragments.md). A opção está disponível somente para adicionar o Formulário adaptável a um Fragmento de experiência existente.
    * **Título do fragmento:** Especifique o título do Fragmento de experiência. O título identifica exclusivamente um Fragmento de experiência

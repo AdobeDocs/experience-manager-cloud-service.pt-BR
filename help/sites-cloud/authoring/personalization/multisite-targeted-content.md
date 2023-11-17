@@ -2,10 +2,10 @@
 title: Trabalhar com conteúdo direcionado em vários sites
 description: Se precisar gerenciar conteúdo direcionado, como atividades, experiências e ofertas entre seus sites, você poderá aproveitar o suporte integrado a vários sites do AEM para conteúdo direcionado
 exl-id: 03d2d640-8de8-4c4c-8a1d-756bb2dc8457
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2889'
-ht-degree: 98%
+source-wordcount: '2885'
+ht-degree: 96%
 
 ---
 
@@ -26,7 +26,7 @@ Este documento descreve o seguinte:
 
 Para configurar como seus sites compartilham conteúdo personalizado, é necessário executar as seguintes etapas:
 
-1. [Criar uma nova área](#creating-new-areas) ou [criar uma nova área como live copy](#creating-new-areas). Uma área inclui todas as atividades disponíveis para uma *área* da página, ou seja, o local na página onde o componente é direcionado. A criação de uma nova área cria uma área vazia, enquanto a criação de uma nova área como uma live copy permite herdar o conteúdo das estruturas do site.
+1. [Criar uma nova área](#creating-new-areas) ou [criar uma área como live copy](#creating-new-areas). Uma área inclui todas as atividades disponíveis para uma *área* da página, ou seja, o local na página onde o componente é direcionado. A criação de uma nova área cria uma área vazia, enquanto a criação de uma nova área como uma live copy permite herdar o conteúdo das estruturas do site.
 
 1. [Vincule seu site ou página](#linking-sites-to-an-area) a uma área.
 
@@ -119,9 +119,9 @@ A qualquer momento, é possível suspender a herança ou desanexá-la completame
 
 ### Criação de uma nova área em vez da criação de uma nova área como live copy {#creating-a-new-area-versus-creating-a-new-area-as-livecopy}
 
-No AEM, existe a opção de criar uma nova área ou de criar uma nova área como live copy. A criação de uma nova área agrupa atividades e qualquer coisa que pertença a essas atividades, como ofertas, experiências e assim por diante. Você deverá criar uma nova área quando quiser criar um conjunto completamente distinto de conteúdo direcionado ou compartilhar um conjunto de conteúdo direcionado.
+No AEM, existe a opção de criar uma nova área ou de criar uma nova área como live copy. A criação de uma nova área agrupa atividades e qualquer coisa que pertença a essas atividades, como ofertas, experiências e assim por diante. Uma área é criada quando você deseja criar um conjunto completamente distinto de conteúdo direcionado ou compartilhar um conjunto de conteúdo direcionado.
 
-No entanto, se você tiver a herança configurada através do MSM entre os dois sites, convém herdar as atividades. Nesse caso, você cria uma nova área como uma live copy, onde Y é uma live copy de X e, portanto, herda todas as suas atividades também.
+No entanto, se você tiver a herança configurada através do MSM entre os dois sites, convém herdar as atividades. Nesse caso, você cria uma área como uma live copy, onde Y é uma live copy de X e, portanto, herda todas as atividades também.
 
 >[!NOTE]
 >
@@ -146,7 +146,7 @@ As áreas podem abranger atividades e ofertas. Depois de criar uma área em qual
 >
 >A área padrão chamada Área mestre é recolhida por padrão ao tocar ou clicar no nome de uma marca **até** você cria outra área. Em seguida, ao selecionar uma marca no console **Atividade** ou **Ofertas**, você verá o console **Área**.
 
-Para criar uma nova área:
+Para criar uma área:
 
 1. Navegue até **Personalização** > **Atividades** ou **Ofertas** e, em seguida, acesse sua marca.
 1. Toque ou clique em **Criar área**.

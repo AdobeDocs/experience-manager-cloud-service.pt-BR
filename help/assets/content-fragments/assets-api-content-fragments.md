@@ -3,9 +3,9 @@ title: Suporte a fragmentos de conteúdo do Adobe Experience Manager as a Cloud 
 description: Saiba mais sobre o suporte a fragmentos de conteúdo na API HTTP de ativos, uma parte importante do recurso de entrega headless do Adobe Experience Manager.
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1793'
+source-wordcount: '1791'
 ht-degree: 13%
 
 ---
@@ -263,7 +263,7 @@ O uso pode variar dependendo se você está usando um ambiente de Autor ou Publi
 
 Existem algumas limitações:
 
-* **Os modelos de fragmento de conteúdo não são compatíveis no momento**: elas não podem ser lidas ou criadas. Para criar um fragmento de conteúdo novo ou atualizar um existente, os desenvolvedores precisam saber o caminho correto para o modelo do fragmento de conteúdo. Atualmente, o único método para obter uma visão geral é por meio da interface de administração.
+* **Os modelos de fragmento de conteúdo não são compatíveis no momento**: elas não podem ser lidas ou criadas. Para criar ou atualizar um fragmento de conteúdo existente, os desenvolvedores precisam saber o caminho correto para o modelo do fragmento de conteúdo. Atualmente, o único método para obter uma visão geral é por meio da interface de administração.
 * **As referências são ignoradas**. Atualmente, não há verificações sobre se um fragmento de conteúdo existente é referenciado. Portanto, por exemplo, excluir um fragmento de conteúdo pode resultar em problemas em uma página que contém uma referência ao fragmento de conteúdo excluído.
 * **Tipo de dados JSON** A saída da API REST do *Tipo de dados JSON* é *saída baseada em sequência*.
 

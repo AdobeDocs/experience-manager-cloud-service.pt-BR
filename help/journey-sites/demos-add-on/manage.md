@@ -2,10 +2,10 @@
 title: Gerenciar seus sites de demonstração
 description: Saiba mais sobre as ferramentas disponíveis para ajudá-lo a gerenciar seus sites de demonstração e como removê-los.
 exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '943'
-ht-degree: 95%
+source-wordcount: '942'
+ht-degree: 94%
 
 ---
 
@@ -93,7 +93,7 @@ O site foi excluído.
 Parabéns! Você concluiu a jornada do complemento Demonstrações de referência do AEM. Agora você deve:
 
 * Tenha uma compreensão básica do Cloud Manager e entenda como os pipelines fornecem conteúdo e configuração ao AEM.
-* Entender como usar o Cloud Manager para criar um novo programa.
+* Saiba como usar o Cloud Manager para criar um programa.
 * Saiba como ativar o Complemento de demonstrações de referência para o novo programa e executar um pipeline para implantar o conteúdo complementar.
 * Entenda como acessar o ambiente de criação do AEM para criar um site com base em um modelo.
 * Entenda como acessar os Utilitários de demonstração de autoatendimento.

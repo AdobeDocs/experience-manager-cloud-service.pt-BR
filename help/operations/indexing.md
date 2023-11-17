@@ -2,10 +2,10 @@
 title: Pesquisa e indexação de conteúdo
 description: Saiba mais sobre Pesquisa e indexação de conteúdo no AEM as a Cloud Service.
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: d567115445c0a068380e991452d9b976535e3a1d
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2433'
-ht-degree: 32%
+source-wordcount: '2432'
+ht-degree: 31%
 
 ---
 
@@ -47,7 +47,7 @@ As definições de índice podem ser categorizadas em três casos de uso princip
 2. **Atualizar** uma definição de índice existente adicionando uma nova versão.
 3. **Remover** uma definição de índice que não é mais necessária.
 
-Para ambos os itens 1 e 2 acima, é necessário criar uma nova definição de índice como parte da base de código personalizada no cronograma de lançamento respectivo do Cloud Manager. Para obter mais informações, consulte [Implantação no AEM as a Cloud Service](/help/implementing/deploying/overview.md) documentação.
+Para ambos os itens 1 e 2 acima, é necessário criar uma definição de índice como parte da base de código personalizada no cronograma de lançamento respectivo do Cloud Manager. Para obter mais informações, consulte [Implantação no AEM as a Cloud Service](/help/implementing/deploying/overview.md) documentação.
 
 ## Nomes de índice {#index-names}
 

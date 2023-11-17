@@ -6,9 +6,9 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: bd0981b262f645653723f1b35d871808506d47ba
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '4346'
+source-wordcount: '4344'
 ht-degree: 11%
 
 ---
@@ -31,7 +31,7 @@ Ao organizar uma coleção de ativos, por exemplo, todas as `Nature` imagens, é
 >* Compartilhamento de uma pasta de ativos do tipo `sling:OrderedFolder`, não é compatível ao compartilhar no Experience Cloud. Se quiser compartilhar uma pasta, não selecione [!UICONTROL Encomendado] ao criar uma pasta.
 >* O Experience Manager não permite usar `subassets` palavra como o nome de uma pasta. É uma palavra-chave reservada para o nó que contém subativos para ativos compostos
 
-1. Navegue até o local na pasta de ativos digitais em que deseja criar uma nova pasta. No menu, clique em **[!UICONTROL Criar]**. Selecionar **[!UICONTROL Nova pasta]**.
+1. Navegue até o local na pasta de ativos digitais em que deseja criar uma pasta. No menu, clique em **[!UICONTROL Criar]**. Selecionar **[!UICONTROL Nova pasta]**.
 1. No **[!UICONTROL Título]** , forneça um nome de pasta. Por padrão, o DAM usa o título fornecido como o nome da pasta. Depois que a pasta for criada, você poderá substituir o padrão e especificar outro nome de pasta.
 1. Clique em **[!UICONTROL Criar]**. Sua pasta é exibida na pasta de ativos digitais.
 
@@ -54,7 +54,7 @@ Para extrair os arquivos ZIP, execute as seguintes etapas:
 1. Clique em **[!UICONTROL Extrair arquivo]** opção disponível na barra de ações.
 1. Selecione a pasta na qual você precisa salvar os ativos extraídos que estão disponíveis na pasta compactada.
 1. Clique em **[!UICONTROL Avançar]**.
-1. Selecione o comportamento apropriado para resolver conflitos de nome de arquivo durante a extração. É possível optar por criar uma nova versão de um ativo existente, substituir o ativo, manter ambos os ativos na pasta de destino ou ignorar a extração do novo ativo.
+1. Selecione o comportamento apropriado para resolver conflitos de nome de arquivo durante a extração. É possível optar por criar uma versão de um ativo existente, substituir o ativo, manter ambos os ativos na pasta de destino ou ignorar a extração do novo ativo.
 1. Clique em **[!UICONTROL Extract]**. O processo de extração de zip é iniciado. Quando o processo estiver concluído, você poderá visualizar os ativos extraídos na pasta de destino.
 
    ![extração do zip](assets/zip-extraction.png)

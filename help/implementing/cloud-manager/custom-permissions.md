@@ -2,9 +2,9 @@
 title: Permissões personalizadas
 description: Saiba como você pode usar permissões personalizadas para criar novos perfis de permissão personalizados com permissões configuráveis para restringir o acesso a programas, pipelines e ambientes para usuários do Cloud Managers.
 exl-id: 167da985-7f19-45b3-90a3-884817907da2
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1506'
+source-wordcount: '1501'
 ht-degree: 2%
 
 ---
@@ -48,7 +48,7 @@ Esta seção detalhará essas etapas. Talvez seja útil consultar a seção [Ter
 
 ### Criar um novo perfil de produto {#create}
 
-Você primeiro deve criar um novo perfil de produto antes de atribuir permissões personalizadas.
+Você primeiro deve criar um perfil de produto antes de atribuir permissões personalizadas.
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)
 
@@ -123,10 +123,10 @@ As seguintes permissões estão disponíveis para criar perfis personalizados.
 
 | Permissão | Descrição |
 |---|---|
-| Criação de programa | Permitir que os usuários criem um novo programa |
+| Criação de programa | Permitir que os usuários criem um programa |
 | Acesso ao programa | Permitir que os usuários acessem programas |
 | Editar programa | Permitir que os usuários editem programas |
-| Criação de ambiente | Permitir que os usuários criem um novo ambiente |
+| Criação de ambiente | Permitir que os usuários criem um ambiente |
 | Edição de ambiente | Permitir que os usuários atualizem e editem ambientes |
 | Leitura de logs de ambiente | Permitir que os usuários leiam os logs de ambiente |
 | Criação de pipeline | Permitir que os usuários criem novos pipelines |
@@ -145,7 +145,7 @@ As permissões no nível da organização se referem às permissões que são se
 
 As seguintes permissões são no nível da organização:
 
-* **Criação de programa** - Essa permissão possibilita que os usuários criem um novo programa na organização.
+* **Criação de programa** - Essa permissão permite que os usuários criem um programa na organização.
 * **Acesso às informações do repositório** Essa permissão de nível de locatário/organização permite que os usuários gerem nome de usuário, senha e URL do repositório para acessar e contribuir com o projeto do cliente.
    * O nome de usuário e a senha para acesso ao repositório serão comuns em todos os repositórios na organização, no entanto, o URL do repositório será exclusivo para cada programa.
    * Consulte o documento [Acessar repositórios](/help/implementing/cloud-manager/managing-code/accessing-repos.md) para obter mais informações.

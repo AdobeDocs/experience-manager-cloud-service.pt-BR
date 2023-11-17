@@ -2,10 +2,10 @@
 title: Criar site de demonstração
 description: Crie um site de demonstração no AEM com base em uma biblioteca de modelos pré-configurados.
 exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '838'
-ht-degree: 92%
+source-wordcount: '836'
+ht-degree: 89%
 
 ---
 
@@ -17,7 +17,7 @@ Crie um site de demonstração no AEM com base em uma biblioteca de modelos pré
 
 No documento anterior da jornada do complemento de demonstrações de referência do AEM, [Criar programa,](create-program.md) você concluiu a primeira etapa de configuração para criar um programa para fins de teste e usou um pipeline para implantar o conteúdo complementar. Agora você deve:
 
-* Entender como usar o Cloud Manager para criar um novo programa.
+* Saiba como usar o Cloud Manager para criar um programa.
 * Saber como ativar o complemento de demonstrações de referência para o novo programa.
 * Poder executar um pipeline para implantar o conteúdo complementar.
 
@@ -25,7 +25,7 @@ Este artigo descreve a próxima etapa do processo, criando um novo site ou proje
 
 ## Objetivo {#objective}
 
-Este documento ajuda você a entender como criar um novo site com base nos modelos do complemento de demonstração de referência. Depois de ler esse documento, você deverá:
+Este documento ajuda você a entender como criar um site com base nos modelos do complemento de demonstração de referência. Depois de ler esse documento, você deverá:
 
 * Entender como acessar o ambiente de criação do AEM.
 * Saber como criar um site com base em um modelo.
