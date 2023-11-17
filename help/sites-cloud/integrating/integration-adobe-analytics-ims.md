@@ -2,9 +2,9 @@
 title: Configuração do IMS para uso na integração com o Adobe Analytics
 description: Saiba mais sobre a configuração do IMS para uso na integração com o Adobe Analytics
 exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: '908'
 ht-degree: 94%
 
 ---
@@ -35,7 +35,7 @@ Antes de iniciar este procedimento:
 * O administrador de sistemas da sua organização deve usar o Admin Console para adicionar os desenvolvedores necessários em sua organização aos perfis de produto relevantes.
 
    * Isso fornece aos desenvolvedores específicos permissões para ativar integrações usando o Adobe Developer Console.
-   * Para obter mais detalhes, consulte [Gerenciar desenvolvedores](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html).
+   * Consulte [Gerenciar desenvolvedores](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html).
 
 
 ## Configuração de IMS - Geração de uma Chave pública {#configuring-ims-generating-a-public-key}

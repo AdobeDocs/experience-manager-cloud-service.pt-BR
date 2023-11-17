@@ -2,10 +2,10 @@
 title: 'Modelagem de conteúdo para o AEM as a Headless CMS: uma introdução'
 description: Uma introdução ao uso dos recursos do Adobe Experience Manager as a Cloud Service as a Headless CMS para modelar o conteúdo do seu projeto.
 exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '748'
-ht-degree: 94%
+source-wordcount: '745'
+ht-degree: 78%
 
 ---
 
@@ -29,14 +29,14 @@ Desde a ascensão dos sistemas de gerenciamento de conteúdo (CMS) de larga esca
 
 ![O CMS clássico de pilha completa](/help/journey-headless/developer/assets/full-stack.png)
 
-Em um CMS de pilha completa, toda a funcionalidade de manipulação de conteúdo está no CMS. Os recursos do sistema constituem componentes diferentes da pilha do CMS. A solução de pilha completa tem muitas vantagens.
+Em um CMS de pilha completa, a funcionalidade para manipular conteúdo está no CMS. Os recursos do sistema constituem componentes diferentes da pilha do CMS. A solução de pilha completa tem muitas vantagens.
 
 * Há um sistema para manter.
 * O conteúdo é gerenciado centralmente.
 * Todos os serviços do sistema estão integrados.
 * A criação de conteúdo é contínua.
 
-Portanto, se um novo canal precisar ser adicionado ou se o suporte para novos tipos de experiências for necessário, um novo componente (ou mais) poderá ser inserido na pilha e as alterações são feitas em um único lugar.
+Portanto, se for necessário adicionar um novo canal ou oferecer suporte a novos tipos de experiências, um (ou mais) novos componentes poderão ser inseridos na pilha e só haverá um local para fazer alterações.
 
 ![Adicionar um novo canal à pilha](/help/journey-headless/developer/assets/adding-channel.png)
 
@@ -50,15 +50,15 @@ Quando falamos de um CMS headless, o CMS gerencia o conteúdo e continua a entre
 
 ![CMS headless](/help/journey-headless/developer/assets/headless-cms.png)
 
-Os serviços que consomem, sejam experiências de AR, um webshop, experiências móveis, aplicativos web progressivos (PWAs) etc., absorvem conteúdo do CMS headless e fornecem sua própria renderização. Eles fornecem suas próprias interfaces para o conteúdo.
+Os serviços de consumo, sejam experiências de RA, uma loja na Web, experiências móveis, aplicativos web progressivos (PWA) e assim por diante, recebem conteúdo do CMS headless e fornecem sua própria renderização. Eles fornecem suas próprias interfaces para o conteúdo.
 
 Omitir a interface simplifica o CMS ao remover a complexidade. Isso também altera a responsabilidade de renderizar o conteúdo para os serviços que realmente precisam do conteúdo e que geralmente são mais adequados para essa renderização.
 
 ## Modelagem de conteúdo {#content-modeling}
 
-A modelagem de conteúdo (também conhecida como modelagem de dados) é sua especialidade. Portanto, o que precisa ser considerado ao modelar para headless?
+A modelagem de conteúdo (também conhecida como modelagem de dados) é sua especialidade, então o que deve ser considerado na modelagem para headless?
 
-Para que os aplicativos headless possam acessar seu conteúdo e fazer algo com ele, o conteúdo precisa realmente ter uma estrutura predefinida. Seria possível ter seu conteúdo de forma livre, mas isso complicaria *muito* a vida dos aplicativos.
+Para que os aplicativos headless possam acessar seu conteúdo e fazer algo com ele, o conteúdo realmente deve ter uma estrutura predefinida. Seria possível ter seu conteúdo de forma livre, mas isso complicaria *muito* a vida dos aplicativos.
 
 Para o AEM, você, como Arquiteto de conteúdo, executará a modelagem de conteúdo para projetar uma variedade de **Modelos de fragmentos de conteúdo**. Eles definem a estrutura usada quando os autores de conteúdo criam os **Fragmentos de conteúdo** que contêm o conteúdo.
 

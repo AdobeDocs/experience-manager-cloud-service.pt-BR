@@ -2,10 +2,10 @@
 title: Layout responsivo
 description: O AEM permite que você tenha um layout responsivo para suas páginas
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1734'
-ht-degree: 86%
+source-wordcount: '1731'
+ht-degree: 83%
 
 ---
 
@@ -45,7 +45,7 @@ Com esses mecanismos de grade responsivos, você pode:
 * Ocultar componentes de layouts específicos de dispositivos.
 * Executar o controle da coluna.
 
-Dependendo do projeto, o Contêiner de layout pode ser usado como o sistema de parágrafo padrão para suas páginas, ou como um componente disponível para ser adicionado à sua página por meio do navegador componente (ou ambos).
+Dependendo do projeto, o Contêiner de layout pode ser usado como o sistema de parágrafo padrão para suas páginas ou como um componente disponível para ser adicionado à sua página por meio do navegador de componentes (ou ambos).
 
 >[!TIP]
 >
@@ -108,7 +108,7 @@ Por exemplo, ao selecionar o dispositivo **iPhone 6 Plus** (definido com uma lar
 1. Para selecionar um dispositivo específico para emular, você pode:
 
    * Usar o ícone Selecionar dispositivo e escolher um na lista suspensa.
-   * Toque/clique no indicador do dispositivo na barra de ferramentas do emulador.
+   * Selecione o indicador do dispositivo na barra de ferramentas do emulador.
 
    ![Lista suspensa Selecionar dispositivo](/help/sites-cloud/authoring/assets/responsive-layout-select-device-dropdown.png)
 
@@ -143,7 +143,7 @@ Um **Contêiner de layout** é um sistema de parágrafos que:
 
 ## Selecionar e executar ações em um contêiner de layout (modo Editar) {#selecting-and-taking-action-on-a-layout-container-edit-mode}
 
-Assim como em outros componentes, você pode selecionar e executar ações (recortar, copiar ou excluir) em um Contêiner de layout (no modo **Editar**):
+Assim como em outros componentes, você pode selecionar e atuar em (recortar, copiar ou excluir) um Contêiner de layout (quando estiver no **Editar** modo):
 
 >[!CAUTION]
 >
@@ -195,14 +195,14 @@ Quando estiver no modo de layout, você poderá executar várias ações em uma 
   >
   >As proporções e as taxas são mantidas quando os componentes como **Imagens** são redimensionados.
 
-* Clique/toque em um componente de conteúdo, a barra de ferramentas permite:
+* Selecione um componente de conteúdo, a barra de ferramentas permite:
    * **Pai** - Permite selecionar o componente do contêiner de layout inteiro para executar uma ação em tudo.
    * **Flutuar para a nova linha** - o componente será movido para uma nova linha, dependendo do espaço disponível na grade.
    * **Ocultar componente** - o componente ficará invisível (ele pode ser restaurado na barra de ferramentas do container de layout).
 
   ![Ocultar componente](/help/sites-cloud/authoring/assets/responsive-layout-hide.png)
 
-* Entrada **Layout** modo, você pode tocar/clicar no **Arraste os componentes para cá** para selecionar o componente inteiro. A barra de ferramentas é exibida para esse modo.
+* Entrada **Layout** você pode selecionar o modo **Arraste os componentes para cá** para selecionar o componente inteiro. A barra de ferramentas é exibida para esse modo.
 
   A barra de ferramentas tem opções diferentes dependendo do estado do componente de layout e dos componentes que pertencem a ele. Por exemplo:
 

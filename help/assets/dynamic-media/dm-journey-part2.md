@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2872'
+source-wordcount: '2870'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ Agora, tente adicionar um parâmetro de rotação à imagem observada. E o fim d
 
 O relógio ainda está ligeiramente inclinado para a esquerda. Alterar o valor de rotação de `90` para `92`e pressione **[!UICONTROL Enter]**. [Experimente](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=9){target="_blank"}.
 
-Novamente, no momento em que você pressionar **[!UICONTROL Enter]**, uma nova representação do relógio é gerada quase instantaneamente. Você pode ver o tipo de desempenho obtido, o que explica por que o Dynamic Media pode fornecer mais de 800.000 solicitações de imagem, _por segundo_, em um fim de semana movimentado ou feriado importante.
+Novamente, no momento em que você pressionar **[!UICONTROL Enter]**, uma nova representação do relógio é gerada quase instantaneamente. Você pode ver o tipo de desempenho que obtém, o que explica por que o Dynamic Media pode fornecer mais de 800.000 solicitações de imagem, _por segundo_, em um fim de semana movimentado ou feriado importante.
 
 Embora seja possível alterar os parâmetros de processamento de imagem em um URL imagem por imagem, não é um método eficiente, especialmente se você tiver dezenas de milhares de imagens que compõem seu site. Uma abordagem muito melhor é usar predefinições de imagem.
 
@@ -83,7 +83,7 @@ Agora imagine a Creative Director olhando as imagens e dizendo:
 
 _&quot;Eu realmente queria essa tomada para que a mão grande apontasse para os quatro, e a mão pequena apontasse para o 1 para facilitar a visualização do mostrador do relógio.&quot;_
 
-O criativo teria que refilmar todas essas novas imagens estáticas novamente.
+O criativo teria que refilmar todas as novas imagens estáticas novamente.
 
 Mas, com o Dynamic Media, se você tiver predefinições de imagens diferentes, poderá usá-las sempre que precisar delas. As predefinições de imagens impõem padrões.
 

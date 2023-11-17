@@ -2,9 +2,9 @@
 title: Regras de filtro de tráfego incluindo regras WAF
 description: Configuração das regras de filtro de tráfego incluindo as regras do WAF (Web Application Firewall)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: a129c188e9ec6871c86245acb5f0bf0333fdc340
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3441'
+source-wordcount: '3435'
 ht-degree: 1%
 
 ---
@@ -112,8 +112,8 @@ A variável `kind` O parâmetro deve ser definido como `CDN` e a versão deve se
 
 1. Para tipos de ambiente diferentes do RDE, crie um pipeline de configuração de implantação direcionada no Cloud Manager.
 
-   * [Consulte este documento para ver os pipelines de produção.](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
-   * [Consulte este documento para ver se há pipelines de não produção.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+   * [Consulte configuração de pipelines de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
+   * [Consulte configuração de pipelines de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
 
 Para RDEs, a linha de comando será usada, mas RDE não é compatível no momento.
 

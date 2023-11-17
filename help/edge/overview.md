@@ -3,9 +3,9 @@ title: Introdução aos serviços de entrega de borda
 description: Introdução aos Serviços de entrega de borda (EDS).
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
-source-git-commit: 34965338015df868778a95582524df08a7c5f136
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '870'
 ht-degree: 2%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 Com o Edge Delivery Services, o AEM oferece experiências excepcionais que impulsionam o engajamento e as conversões. O AEM faz isso fornecendo experiências de alto impacto que são rápidas de serem criadas e desenvolvidas. É um conjunto combinável de serviços que permite um ambiente de desenvolvimento rápido, em que os autores podem atualizar e publicar rapidamente e novos sites são lançados rapidamente. Dessa forma, com os Edge Delivery Services você pode melhorar a conversão, reduzir custos e fornecer velocidade de conteúdo extrema.
 
-Ao aproveitar o Edge Delivery, você pode:
+Ao usar o Edge Delivery, você pode:
 
 * Crie sites rápidos com uma pontuação Lighthouse perfeita e monitore continuamente o desempenho do site por meio do monitoramento de usuários reais (RUM).
 * Aumente a eficiência da criação desvinculando as fontes de conteúdo. Pronto para uso, você pode usar a criação de AEM e a criação baseada em documentos. Dessa forma, você pode trabalhar com várias fontes de conteúdo no mesmo site.
@@ -50,7 +50,7 @@ Também é possível usar os Edge Delivery Services em combinação com o Adobe 
 
 ## Obtendo ajuda do Adobe {#adobe-gethelp}
 
-É possível entrar em contato com as equipes de produtos Adobe por meio do canal de colaboração provisionado com produtos (veja abaixo os detalhes de acesso) para responder às perguntas sobre o uso de produtos ou práticas recomendadas. Observe que não há Termos de Nível de Serviço (SLT) associados às conversas pelo canal de colaboração do produto. Se um problema do produto exigir investigação e solução de problemas adicionais e precisar atender aos SLTs de resposta, você poderá enviar um tíquete de suporte seguindo o [processo de suporte](https://experienceleague.adobe.com/?lang=en&amp;support-tab=home#support).
+É possível entrar em contato com as equipes de produtos Adobe por meio do canal de colaboração provisionado com produtos (veja abaixo os detalhes de acesso) para responder às perguntas sobre o uso de produtos ou práticas recomendadas. Não há Termos de Nível de Serviço (SLT) associados às conversas pelo canal de colaboração do produto. Se um problema do produto exigir investigação e solução de problemas adicionais e precisar atender aos SLTs de resposta, você poderá enviar um tíquete de suporte seguindo o [processo de suporte](https://experienceleague.adobe.com/?lang=en&amp;support-tab=home#support).
 
 O Adobe fornece três canais para ajudá-lo com Edge Delivery Services:
 
@@ -80,7 +80,7 @@ Etapas para registrar um tíquete de suporte pela Admin Console:
 
 ## O que vem a seguir {#whats-next}
 
-Comece revisando o próximo artigo: [Utilização de Edge Delivery Services](/help/edge/using.md).
+Introdução à revisão [Utilização de Edge Delivery Services](/help/edge/using.md).
 
 ## Recursos úteis {#useful-resources}
 

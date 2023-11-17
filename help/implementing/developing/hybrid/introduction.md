@@ -2,10 +2,10 @@
 title: Introdução e passo a passo do SPA
 description: Este artigo apresenta os conceitos de um SPA e aborda o uso de um SPA básico para criação, mostrando como ele está relacionado ao editor de SPA integrado do AEM.
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
-workflow-type: ht
-source-wordcount: '2068'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '2066'
+ht-degree: 94%
 
 ---
 
@@ -167,7 +167,7 @@ A próxima seção, [Carregar um SPA](#loading-a-spa-application), aprofunda-se 
    ![Visualização do Projeto SPA WKND](assets/wknd-preview.png)
 
 1. Use a ferramenta incorporada do seu navegador para visualizar a fonte da página.
-1. Observe que o conteúdo da fonte é limitado.
+1. O conteúdo da fonte é limitado.
    * A página não possui conteúdo em seu corpo. Ele é composto principalmente de folhas de estilo e uma chamada para vários scripts, como `clientlib-react.min.js`.
    * Esses scripts são os principais acionadores desse aplicativo e são responsáveis por renderizar todo o conteúdo.
 
@@ -207,9 +207,9 @@ A próxima seção, [Carregar um SPA](#loading-a-spa-application), aprofunda-se 
 
 ### Interação com o editor de SPA {#interaction-with-the-spa-editor}
 
-Usando o aplicativo de exemplo Projeto SPA WKND, fica claro como o aplicativo se comporta e como ele é carregado quando publicado, aproveitando os serviços de conteúdo para a entrega de conteúdo JSON, bem como o carregamento assíncrono de recursos.
+Usando o aplicativo de amostra Projeto SPA WKND, fica claro como o aplicativo se comporta e é carregado quando publicado, usando serviços de conteúdo para entrega de conteúdo JSON e carregamento assíncrono de recursos.
 
-Além disso, para o autor de conteúdo, a criação de conteúdo no editor de SPA é realizada sem interrupções no AEM.
+Além disso, para o autor de conteúdo, a criação de conteúdo usando um editor de SPA é perfeita dentro do AEM.
 
 Na seção a seguir, exploraremos o contrato que permite que o editor de SPA relacione componentes dentro do SPA aos componentes do AEM, o que garante essa experiência de edição contínua.
 
@@ -219,7 +219,7 @@ Na seção a seguir, exploraremos o contrato que permite que o editor de SPA rel
 
 1. Usando as ferramentas de desenvolvedor incorporadas do seu navegador, inspecione o conteúdo da página. Usando a ferramenta de seleção, selecione um componente editável na página e visualize os detalhes do elemento.
 
-   Observe que o componente tem um novo atributo de dados `data-cq-data-path`.
+   O componente tem um novo atributo de dados `data-cq-data-path`.
 
    ![Inspecionar os elementos do Projeto SPA WKND](assets/wknd-inspector.png)
 
@@ -229,7 +229,7 @@ Na seção a seguir, exploraremos o contrato que permite que o editor de SPA rel
 
    Esse caminho permite a recuperação e a associação do objeto de configuração de contexto de edição de cada componente.
 
-   Esse é o único atributo de marcação necessário para que o editor reconheça esse componente como editável no SPA. Com base nesse atributo, o editor de SPA determinará qual configuração editável está associada ao componente, para que os elementos (quadro, barra de ferramentas etc.) corretos sejam carregados.
+   Esse é o único atributo de marcação necessário para que o editor reconheça esse componente como editável no SPA. Com base nesse atributo, o Editor de SPA determinará qual configuração editável está associada ao componente, para que o quadro, a barra de ferramentas e assim por diante corretos sejam carregados.
 
    Alguns nomes de classe específicos também são adicionados para marcar espaços reservados e para a funcionalidade de arrastar e soltar ativos.
 
@@ -241,7 +241,7 @@ Na seção a seguir, exploraremos o contrato que permite que o editor de SPA rel
 
 ## Headful e Headless no AEM {#headful-headless}
 
-SPAs podem ser ativados com níveis flexíveis de integração no AEM, incluindo SPAs desenvolvidos e mantidos fora do AEM. Além disso, é possível utilizar SPAs no AEM ao mesmo tempo que utiliza o AEM para fornecer conteúdo a pontos de acesso adicionais de forma headless.
+SPAs podem ser ativados com níveis flexíveis de integração no AEM, incluindo SPAs desenvolvidos e mantidos fora do AEM. Além disso, o SPA pode ser usado no AEM, ao mesmo tempo que usa o AEM para fornecer conteúdo a endpoints adicionais de maneira headless.
 
 >[!TIP]
 >

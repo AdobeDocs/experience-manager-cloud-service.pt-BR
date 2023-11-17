@@ -2,7 +2,7 @@
 title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2023.8.0.
 description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2023.8.0.
 exl-id: a0ffa6cf-64ae-468c-93f4-ac6805ef907e
-source-git-commit: 8870e090d13504421c8056315918e13f4a50ee28
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1686'
 ht-degree: 18%
@@ -117,7 +117,7 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 * **[Fragmento de formulário no Forms adaptável com base nos Componentes principais](/help/forms/adaptive-form-fragments-core-components.md)**: diga adeus à duplicação, otimize seu inventário digital e melhore a colaboração à medida que você eleva sua experiência de criação de formulários com Fragmentos de formulário. Esses componentes reutilizáveis se integram perfeitamente em vários formulários, simplificando a criação de formulários consistentes e com aparência profissional. Os fragmentos de formulário garantem a reutilização, a padronização e a consistência da marca por meio da funcionalidade &quot;alterar uma vez e refletir em todos os lugares&quot;. Experimente maior capacidade de manutenção e eficiência, já que as atualizações feitas em um local são propagadas automaticamente em todos os formulários que utilizam esses fragmentos.
 
 * **[Etapa de fluxo de trabalho aprimorada do Adobe Sign](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step)**: a etapa Fluxo de trabalho do Adobe Sign foi aprimorada para incluir o seguinte:
-   * **Autenticação com base em ID do governo para o Adobe Sign**: a autenticação baseada em ID do governo da Adobe Acrobat Sign oferece uma camada adicional de verificação, permitindo que os usuários autentiquem sua identidade usando IDs emitidas pelo governo (CNH, identificação nacional, passaporte). Ao utilizar documentos de identificação confiáveis, esse aprimoramento adiciona um nível extra de confiança ao processo de assinatura, tornando-o ideal para cenários que exigem maior segurança, conformidade e validação do usuário.
+   * **Autenticação com base em ID do governo para o Adobe Sign**: a autenticação baseada em ID do governo da Adobe Acrobat Sign oferece uma camada adicional de verificação, permitindo que os usuários autentiquem sua identidade usando IDs emitidas pelo governo (CNH, identificação nacional, passaporte). Ao usar documentos de identificação confiáveis, esse aprimoramento adiciona um nível extra de confiança ao processo de assinatura, tornando-o ideal para cenários que exigem maior segurança, conformidade e validação do usuário.
 
    * **Trilha de auditoria para documentos do Adobe Sign**: use o recurso Trilha de auditoria para obter insights detalhados sobre o ciclo de vida dos documentos do Adobe Sign. Com a Trilha de auditoria, agora é possível manter um registro abrangente de todas as ações e interações relacionadas aos documentos. Isso inclui detalhes como quem visualizou, editou ou assinou o documento, além de carimbos de data e hora para cada evento. Esse aprimoramento é fundamental para manter a conformidade, resolver disputas e garantir a integridade de seus contratos digitais.
 

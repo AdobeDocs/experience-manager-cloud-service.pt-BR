@@ -2,9 +2,9 @@
 title: Indexação após a migração do conteúdo
 description: Saiba como o processo de migração indexará o conteúdo assimilado na instância do Cloud Service de destino.
 exl-id: a13d5df4-b351-410a-9336-1b34a8af21b6
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '505'
 ht-degree: 6%
 
 ---
@@ -29,7 +29,7 @@ Para começar, acesse o Cloud Acceleration Manager. Clique no cartão do projeto
 e consulte os trabalhos listados.
 
 >[!NOTE]
->Você pode visualizar ou baixar os logs de indexação usando as ações do trabalho de assimilação com o menu suspenso ... . Os logs estarão disponíveis no
+>Você pode visualizar ou baixar os logs de indexação usando as ações do trabalho de assimilação com a lista suspensa .... Os logs estarão disponíveis no
 > Seção de ações &quot;Log de indexação&quot;, após a conclusão do trabalho de indexação
 
 ### Pendente
@@ -52,7 +52,7 @@ Quando o trabalho de indexação for bem-sucedido, a instância estará pronta p
 
 ### Erros
 
-A indexação da instância de Cloud Service de destino provavelmente terá êxito. Em alguns casos, pode falhar e a linha do trabalho de assimilação aparecerá da seguinte maneira. Em todos os casos, você pode encontrar alguns detalhes da falha ao passar o cursor do mouse sobre o status da falha, e isso pode fornecer mais informações para ajudá-lo a determinar as próximas etapas. Nesse ponto, os logs do trabalho de indexação estão disponíveis para visualização ou download para ajudar a descobrir a origem da falha. Se a próxima etapa não estiver clara, entre em contato com o Suporte do Adobe com detalhes sobre a assimilação e o log de indexação.
+A indexação da instância de Cloud Service de destino provavelmente terá êxito. Em alguns casos, pode falhar e a linha do trabalho de assimilação aparecerá da seguinte maneira. Em todos os casos, você pode encontrar alguns detalhes da falha ao passar o cursor do mouse sobre o status da falha, e isso pode fornecer mais informações para ajudá-lo a determinar as próximas etapas. Nesse ponto, os logs do trabalho de indexação estão disponíveis para visualização ou download para ajudar a descobrir a origem da falha. Se a próxima etapa não estiver clara, entre em contato com o Suporte do Adobe com detalhes da assimilação e do log de indexação.
 
 ![imagem](/help/journey-migration/content-transfer-tool/assets-indexing/failed.png)
 

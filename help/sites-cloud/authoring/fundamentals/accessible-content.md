@@ -2,9 +2,9 @@
 title: Criar conteúdo acessível para o Adobe Experience Manager as a Cloud Service (Conformidade com WCAG 2.1)
 description: Usar o AEM as a Cloud Service para ajuda a tornar o conteúdo da Web acessível e utilizável por pessoas com deficiência
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '13861'
+source-wordcount: '13859'
 ht-degree: 99%
 
 ---
@@ -476,7 +476,7 @@ Por exemplo, um indivíduo com daltonismo vermelho-verde não conseguirá distin
 
 Além disso, a cor pode não ser observada por indivíduos que usam navegadores somente de texto, dispositivos com visor monocromático ou que utilizam uma impressão em preto e branco da página.
 
-Outra consideração é o estado *selecionado* de um elemento de interface (por exemplo, guias, botões de alternância, entre outros), que precisa ser transmitido de uma maneira independente de cores e que vá além de apenas uma apresentação visual. Para esses elementos, o uso adicional de padrões, formas e informações programáticas é útil ao criar uma experiência do usuário totalmente inclusiva que não depende de um sentido específico.
+Uma outra consideração é a *selecionado* estado de um elemento de interface (por exemplo, guias, botões de alternância, entre outros), que deve ser transmitido de alguma forma que não seja apenas com cor e além de apenas uma apresentação visual. Para esses elementos, o uso adicional de padrões, formas e informações programáticas é útil ao criar uma experiência do usuário totalmente inclusiva que não depende de um sentido específico.
 
 #### Como cumprir - Utilização de cor (1.4.1)       {#how-to-meet-use-of-color}
 

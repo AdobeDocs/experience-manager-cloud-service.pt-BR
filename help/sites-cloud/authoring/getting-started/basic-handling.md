@@ -2,10 +2,10 @@
 title: Manuseio básico
 description: Acostume-se com a navegação pelo AEM e seu uso básico
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2970'
-ht-degree: 95%
+source-wordcount: '2943'
+ht-degree: 91%
 
 ---
 
@@ -31,21 +31,21 @@ Logo após o logon, você acessa o [painel de Navegação](#navigation-panel). S
 
 ![Painel Navegação](/help/sites-cloud/authoring/assets/navigation.png)
 
-Para obter uma boa compreensão do uso básico do AEM, este documento se baseia no console de **Sites.** Clique ou toque em **Sites** para começar.
+Para obter uma boa compreensão do uso básico do AEM, este documento se baseia no console de **Sites.** Selecionar em **Sites** para começar.
 
 ## Navegação do produto   {#product-navigation}
 
-Sempre que um usuário acessa um console pela primeira vez, um tutorial de navegação de produto é iniciado. Reserve um minuto para mexer no programa para obter uma boa visão geral do manuseio básico do AEM.
+Sempre que um usuário acessa um console pela primeira vez, um tutorial de navegação de produto é iniciado. Reserve um minuto para fazer uma seleção e obter uma boa visão geral do tratamento básico do AEM.
 
 ![Tutorial de navegação](/help/sites-cloud/authoring/assets/tutorial.png)
 
-Clique ou toque em **Avançar** para avançar para a próxima página da visão geral. Clique ou toque em **Fechar** ou fora da caixa de diálogo de visão geral para fechar.
+Selecionar **Próxima** para avançar para a próxima página da visão geral. Selecionar **Fechar** ou selecione fora da caixa de diálogo de visão geral para fechar.
 
 A visão geral será reiniciada na próxima vez que você acessar um console a menos que visualize todos os slides ou marque a opção **Não mostrar esta mensagem novamente**.
 
 ## Navegação global {#global-navigation}
 
-É possível navegar entre os consoles usando o painel de navegação global. Ele acionado como uma lista suspensa de tela cheia ao clicar ou tocar no link do Adobe Experience Manager na parte superior esquerda da tela.
+É possível navegar entre os consoles usando o painel de navegação global. É acionado como uma lista suspensa de tela cheia ao selecionar o link do Adobe Experience Manager na parte superior esquerda da tela.
 
 Você pode fechar o painel de navegação global clicando ou tocando em **Fechar** para retornar ao seu local anterior.
 
@@ -79,7 +79,7 @@ Em Navegação, os consoles disponíveis são:
 
 ## Painel Ferramentas {#tools-panel}
 
-No painel Ferramentas, há um painel lateral que contém um intervalo de categorias que agrupa consoles de Ferramentas semelhantes. Os consoles Ferramentas fornecem acesso a uma série de ferramentas e consoles especializados que ajudam a administrar seus sites, ativos digitais e outros aspectos do seu repositório de conteúdo. <!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to a number of specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
+No painel Ferramentas, há um painel lateral que contém um intervalo de categorias que agrupa consoles de Ferramentas semelhantes. Os consoles Ferramentas fornecem acesso a várias ferramentas e consoles especializados que ajudam a administrar seus sites, ativos digitais e outros aspectos do seu repositório de conteúdo. <!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to several specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
 
 ![Painel Ferramentas](/help/sites-cloud/authoring/assets/tools-panel.png)
 
@@ -304,7 +304,7 @@ Selecionar um recurso na coluna mais à esquerda exibirá os recursos secundári
 
    * O nome e a divisa do recurso são realçados quando tocados ou clicados.
    * Os secundários do recurso clicado/tocado são exibidos na coluna à direita do recurso clicado/tocado.
-   * Se você tocar ou clicar em um nome de recurso que não tenha filhos, seus detalhes serão exibidos na coluna final.
+   * Se você selecionar um nome de recurso que não tenha filhos, seus detalhes serão exibidos na coluna final.
 
 * Tocar ou clicar na miniatura seleciona o recurso.
 
@@ -331,7 +331,7 @@ Selecionar um recurso na coluna mais à esquerda exibirá os recursos secundári
    * O título da página
    * Datas importantes (como a última edição/publicação)
    * Se a página estiver bloqueada, oculta ou fizer parte de uma live copy
-   * Se for o caso, quando for necessário tomar medidas como parte de um fluxo de trabalho
+   * Se apropriado, quando você é solicitado a agir como parte de um workflow
       * Marcadores que indicam ações necessárias podem estar relacionados a itens em sua [caixa de entrada](/help/sites-cloud/authoring/getting-started/inbox.md).
 
 * [Ações rápidas](#quick-actions) também estão disponíveis nessa visualização, como recursos de seleção e ações comuns, como “Editar”.
@@ -352,12 +352,12 @@ Selecionar um recurso na coluna mais à esquerda exibirá os recursos secundári
 
    * Quando todos os itens da lista forem selecionados, essa caixa de seleção aparecerá marcada.
 
-      * Clique ou toque na caixa de seleção para desmarcar tudo.
+      * Marque a caixa de seleção para desmarcar tudo.
 
    * Quando apenas alguns itens são selecionados, ela aparece com um sinal de menos.
 
-      * Clique ou toque na caixa de seleção para selecionar tudo.
-      * Clique ou toque novamente na caixa de seleção para desmarcar tudo.
+      * Marque a caixa de seleção para selecionar tudo.
+      * Marque a caixa de seleção novamente para desmarcar tudo.
 
 * Selecione as colunas a serem mostradas usando a opção **Configurações de exibição**, localizada abaixo do botão Visualizações. As seguintes colunas estão disponíveis para exibição:
 
@@ -383,7 +383,7 @@ Selecionar um recurso na coluna mais à esquerda exibirá os recursos secundári
 
   ![Ordem das colunas](/help/sites-cloud/authoring/assets/column-order.png)
 
-  Clique ou toque na barra de seleção vertical e arraste o item até uma nova posição na lista.
+  Selecione a barra de seleção vertical e arraste o item para uma nova posição na lista.
 
   ![Lista de pedidos](/help/sites-cloud/authoring/assets/order-list.png)
 
@@ -471,7 +471,7 @@ Consulte o documento [Usar o painel do site para gerenciar o tema do site](/help
 
 >[!TIP]
 >
->Uma descrição completa do processo de criação de um novo site a partir de um modelo e personalização de seu tema pode ser encontrada na [Jornada de criação rápida de sites](/help/journey-sites/quick-site/overview.md).
+>Uma descrição completa do processo de criação de um site a partir de um modelo e personalização de seu tema pode ser encontrada na [Jornada de criação rápida de sites](/help/journey-sites/quick-site/overview.md).
 
 ### Filtro {#filter}
 

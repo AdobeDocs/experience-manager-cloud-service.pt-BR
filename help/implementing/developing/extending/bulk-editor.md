@@ -1,13 +1,13 @@
 ---
 title: Configuração da edição de itens em massa das propriedades da página
 description: Saiba como configurar a edição em massa para editar as propriedades de várias páginas de uma só vez.
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+exl-id: 0d10c6b9-8643-479d-adc1-4066d227e83d
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 1%
+source-wordcount: '250'
+ht-degree: 2%
 
 ---
-
 
 # Configuração da edição de itens em massa das propriedades da página {#configuring-bulk-editing-of-page-properties}
 
@@ -20,7 +20,7 @@ As propriedades da página não estão ativadas para edição em massa como padr
 * Determinados campos geralmente são únicos. Você deve decidir se é significativo ativar esses campos para edição de itens em massa, quando um valor será aplicado.
    * Por exemplo, títulos de página são quase sempre exclusivos.
 * Determinados campos podem ter vários valores que precisam de representação significativa ao renderizar.
-   * Por exemplo, uma lista suspensa de status chamada **Pronto para publicação**. Isso pode ter vários valores antes da edição em massa, como **pronto**, **em revisão**, **em andamento**, etc.
+   * Por exemplo, uma lista suspensa de status chamada **Pronto para publicação**. Isso pode ter vários valores antes da edição em massa, como **pronto**, **em revisão**, **em andamento** e assim por diante.
 
 Devido à possibilidade de vários valores, é recomendável habilitar apenas os seguintes tipos de campo para edição em massa.
 

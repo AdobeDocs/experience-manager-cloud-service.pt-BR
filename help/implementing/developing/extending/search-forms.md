@@ -2,7 +2,7 @@
 title: Configuração de formulários de pesquisa
 description: Configuração do Search Forms para Adobe Experience Manager as a Cloud Service.
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '2035'
 ht-degree: 17%
@@ -64,7 +64,7 @@ As configurações padrão (listadas alfabeticamente) disponíveis são:
 
 >[!NOTE]
 >
->Para obter mais detalhes sobre formulários de pesquisa relacionados ao ativo, consulte [Ativos - Pesquisar aspectos](/help/assets/search-facets.md)
+>Para obter mais detalhes sobre formulários de pesquisa relacionados ao ativo, consulte [Ativos - Pesquisar aspectos](/help/assets/search-facets.md).
 
 
 ## Predicados e suas configurações {#predicates-and-their-settings}

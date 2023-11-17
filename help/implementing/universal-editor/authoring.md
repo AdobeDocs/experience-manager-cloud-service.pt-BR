@@ -2,10 +2,10 @@
 title: Criação de conteúdo com o Editor universal
 description: Saiba como é fácil e intuitivo para os autores criarem conteúdo utilizando o Editor universal.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2432'
-ht-degree: 45%
+source-wordcount: '2398'
+ht-degree: 39%
 
 ---
 
@@ -68,7 +68,7 @@ Clique no link da Adobe Experience Cloud à esquerda do cabeçalho para navegar 
 
 #### Organização {#organization}
 
-Exibe a organização na qual você está conectado no momento. Toque ou clique para alternar para outra organização se a Adobe ID estiver associada a mais do que uma.
+Exibe a organização na qual você está conectado no momento. Selecione para alternar para outra organização se sua Adobe ID estiver associada a várias.
 
 ![Indicador da organização](assets/organization.png)
 
@@ -92,7 +92,7 @@ Esse ícone é marcado com o número de [notificações](/help/implementing/clou
 
 #### Propriedades do usuário {#user-properties}
 
-Toque ou clique no ícone que representa seu usuário para acessar suas configurações de usuário. Se você não tiver uma imagem do usuário configurada, um ícone é atribuído aleatoriamente.
+Selecione o ícone que representa seu usuário para acessar as configurações do usuário. Se você não tiver uma imagem do usuário configurada, um ícone é atribuído aleatoriamente.
 
 ![Propriedades do usuário](assets/user-properties.png)
 
@@ -114,11 +114,11 @@ Na página inicial, você pode inserir o URL do site que deseja editar com o Edi
 
 >[!NOTE]
 >
->Qualquer página que você deseja editar com o Editor universal deve ser [instrumentada para oferecer suporte ao Editor universal.](getting-started.md)
+>Qualquer página que você deseja editar com o Editor universal deve ser [instrumentado para suportar o Editor universal.](getting-started.md)
 
 #### Barra de localização {#location-bar}
 
-A barra de localização mostra o endereço da página que você está editando. Toque ou clique para inserir o endereço de outra página para editar.
+A barra de localização mostra o endereço da página que você está editando. Selecione para inserir o endereço de outra página a ser editada.
 
 ![Barra de localização](assets/location-bar.png)
 
@@ -128,17 +128,17 @@ A barra de localização mostra o endereço da página que você está editando.
 
 >[!NOTE]
 >
->Qualquer página que você deseja editar com o Editor universal deve ser [instrumentada para oferecer suporte ao Editor universal.](getting-started.md)
+>Qualquer página que você deseja editar com o Editor universal deve ser [instrumentado para suportar o Editor universal.](getting-started.md)
 
 #### Configurações do cabeçalho de autenticação {#authentication-settings}
 
-Toque ou clique no ícone de configurações do cabeçalho de autenticação se precisar definir um segredo de autenticação.
+Selecione o ícone de configurações do cabeçalho de autenticação se precisar definir um segredo de autenticação.
 
 ![Botão Configurações do cabeçalho de autenticação](assets/authentication-header-settings.png)
 
 #### Configurações do emulador {#emulator}
 
-Toque ou clique no ícone de emulação para definir como o Editor universal renderiza a página.
+Selecione o ícone de emulação para definir como o Editor universal renderiza a página.
 
 ![Ícone de Emulador](assets/emulator.png)
 
@@ -156,7 +156,7 @@ Também é possível optar por emular um dispositivo móvel e, no editor univers
 
 #### Abrir visualização do aplicativo {#open-app-preview}
 
-Toque ou clique no ícone de visualização do aplicativo aberto para abrir a página que você está editando no momento em sua própria guia do navegador, livre do editor para visualizar seu conteúdo.
+Selecione o ícone abrir visualização do aplicativo para abrir a página que você está editando atualmente em sua própria guia do navegador, livre do editor para visualizar seu conteúdo.
 
 ![Abrir visualização do aplicativo](assets/open-app-preview.png)
 
@@ -166,7 +166,7 @@ Toque ou clique no ícone de visualização do aplicativo aberto para abrir a p�
 
 #### Publicação {#publish}
 
-Toque ou clique no botão Publicar para que as alterações sejam publicadas no conteúdo ativo para consumo de seus leitores.
+Selecione o botão publicar para poder publicar as alterações no conteúdo em tempo real para consumo pelos leitores.
 
 ![Botão de publicação](assets/publish.png)
 
@@ -182,7 +182,7 @@ O painel de modo está logo abaixo do botão inicial e está sempre presente no 
 
 #### Modo de visualização {#preview-mode}
 
-No modo de visualização, a página é renderizada no editor da maneira como seria vista em seu serviço publicado. Isso permite que o autor de conteúdo navegue pelo conteúdo clicando em links etc.
+No modo de visualização, a página é renderizada no editor da maneira como seria vista em seu serviço publicado. Isso permite que o autor de conteúdo navegue pelo conteúdo clicando em links e assim por diante.
 
 ![Modo de visualização](assets/preview-mode.png)
 
@@ -254,7 +254,7 @@ Ao selecionar um item na árvore de conteúdo, o editor rola até esse conteúdo
 
 ##### Editar {#edit}
 
-Quando em [modo componentes,](#component-mode) as opções de edição do componente selecionado são exibidas no painel de propriedades. No painel de propriedades, é possível editar o componente selecionado. Se o componente selecionado for um Fragmento de conteúdo, você também poderá tocar ou clicar no botão Editar.
+Quando em [modo componentes,](#component-mode) as opções de edição do componente selecionado são exibidas no painel de propriedades. No painel de propriedades, é possível editar o componente selecionado. Se o componente selecionado for um Fragmento de conteúdo, você também poderá selecionar o botão Editar.
 
 ![Ícone de edição](assets/edit.png)
 
@@ -300,7 +300,7 @@ A edição de conteúdo é simples e intuitiva. Entrada [modo componentes](#comp
 
 >[!TIP]
 >
->Observe que no modo de componentes, tocar ou clicar em um conteúdo o seleciona para edição. Se você deseja navegar pelo seu conteúdo utilizando os links, alterne para o [modo de visualização.](#preview-mode)
+>Observe que no modo de componentes, tocar ou clicar em um conteúdo o seleciona para edição. Se você quiser navegar pelo seu conteúdo seguindo os links, alterne para [modo de visualização.](#preview-mode)
 
 Dependendo do conteúdo selecionado, você pode ter diferentes opções de edição no local e outras informações e opções para o conteúdo na [painel de propriedades.](#properties-rail)
 
@@ -310,19 +310,19 @@ Se você estiver em [modo componentes](#component-mode) e selecionar um componen
 
 ![Editar o conteúdo](assets/editing-content.png)
 
-Pressione enter/return ou toque ou clique fora da caixa de texto para salvar as alterações.
+Pressione enter/return ou selecione fora da caixa de texto para salvar as alterações.
 
-Ao tocar ou clicar para selecionar o componente de texto, os detalhes são mostrados no painel de propriedades. Também é possível editar o texto no painel.
+Quando você seleciona selecionar o componente de texto, os detalhes são mostrados no painel de propriedades. Também é possível editar o texto no painel.
 
 ![Edição de texto no painel de propriedades](assets/ue-editing-text-component-rail.png)
 
-Além disso, os detalhes do seu texto estão disponíveis no painel de propriedades. As alterações são salvas automaticamente quando o foco sai do campo editado no painel de propriedades.
+Além disso, os detalhes do texto estão disponíveis no painel de propriedades. As alterações são salvas automaticamente quando o foco sai do campo editado no painel de propriedades.
 
 ### Edição de Rich Text {#edit-rich-text}
 
 Se você estiver em [modo componentes](#component-mode) e selecionar um componente de rich text, é possível editar o texto no local clicando duas vezes ou tocando duas vezes no componente.
 
-Pressione enter/return ou toque ou clique fora da caixa de texto para salvar as alterações.
+Pressione enter/return ou selecione fora da caixa de texto para salvar as alterações.
 
 ![Edição de um componente de rich text](assets/rich-text-editing.png)
 
@@ -334,11 +334,11 @@ Se você estiver em [modo componentes](#component-mode) e selecionar uma imagem,
 
 ![Edição de mídia](assets/ue-edit-media.png)
 
-Toque ou clique no **Substituir** botão abaixo da visualização da imagem selecionada no painel de propriedades para substituir a imagem por outra de sua biblioteca de ativos.
+Selecione o **Substituir** botão abaixo da visualização da imagem selecionada no painel de propriedades para substituir a imagem por outra de sua biblioteca de ativos.
 
 1. A variável [seletor de ativos](/help/assets/asset-selector.md#using-asset-selector) é aberta para permitir que você selecione um ativo.
-1. Toque ou clique para selecionar um novo ativo.
-1. Toque ou clique **Selecionar** para retornar ao painel de propriedades onde o ativo foi substituído.
+1. Selecione para selecionar um novo ativo.
+1. Selecionar **Selecionar** para retornar ao painel de propriedades onde o ativo foi substituído.
 
 As alterações são salvas no conteúdo automaticamente.
 
@@ -365,7 +365,7 @@ Dependendo das necessidades do fluxo de trabalho, talvez você queira editar o F
 ### Adicionar componentes a contêineres {#adding-components}
 
 1. Selecione um componente de container na árvore de conteúdo ou no editor.
-1. Em seguida, toque ou clique no ícone adicionar no painel de propriedades.
+1. Em seguida, selecione o ícone adicionar no painel de propriedades.
 
    ![Selecionar um componente para adicionar a um contêiner](assets/ue-add-component.png)
 
@@ -378,9 +378,9 @@ O componente é inserido no container e pode ser editado no editor.
 ### Exclusão de componentes de contêineres {#deleting-components}
 
 1. Selecione um componente de container na árvore de conteúdo ou no editor.
-1. Toque ou clique no ícone de divisa do contêiner para expandir seu conteúdo na árvore de conteúdo.
+1. Selecione o ícone de divisa do container para expandir seu conteúdo na árvore de conteúdo.
 1. Em seguida, na árvore de conteúdo, selecione um componente no contêiner.
-1. Toque ou clique no ícone excluir no painel de propriedades.
+1. Selecione o ícone excluir no painel de propriedades.
 
    ![Exclusão de um componente](assets/ue-delete-component.png)
 
@@ -394,7 +394,7 @@ O componente selecionado foi excluído.
 
 1. Selecione um componente de container na árvore de conteúdo ou no editor.
 1. Se ainda não estiver em [modo de árvore de conteúdo,](#content-tree-mode) mude para ele.
-1. Toque ou clique no ícone de divisa do contêiner para expandir seu conteúdo na árvore de conteúdo.
+1. Selecione o ícone de divisa do container para expandir seu conteúdo na árvore de conteúdo.
 1. Arraste os ícones de alça ao lado dos componentes dentro do contêiner para mostrar que você pode reorganizá-los. Arraste os componentes para reordená-los no contêiner.
 
    ![Reorganização de componentes](assets/ue-reordering-components.png)
@@ -407,7 +407,7 @@ Os componentes são reordenados na árvore de conteúdo e no editor
 
 Ao terminar de editar o conteúdo, você geralmente deseja navegar por ele e observar como ele é exibido em outras páginas. No [modo de visualização](#preview-mode), é possível clicar em links e navegar pelo conteúdo, como um leitor faria. O conteúdo é renderizado no editor como seria publicado.
 
-Note que, no modo de visualização, a ação de tocar ou clicar no conteúdo funciona da mesma forma que para um leitor do conteúdo. Se desejar selecionar o conteúdo para edição, alterne para [modo de componentes.](#component-mode)
+Note que, no modo de visualização, a ação de tocar ou clicar no conteúdo funciona da mesma forma que para um leitor do conteúdo. Se quiser selecionar o conteúdo para edição, alterne para [modo de componentes.](#component-mode)
 
 ## Recursos adicionais {#additional-resources}
 

@@ -2,9 +2,9 @@
 title: Mapeamento de usuários e migração principal
 description: Visão geral do mapeamento de usuários e da migração principal no AEM as a Cloud Service.
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 2f5eeb0333cee13b12edefd0f95541a891e30960
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '1004'
 ht-degree: 9%
 
 ---

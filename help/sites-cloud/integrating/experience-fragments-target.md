@@ -2,10 +2,10 @@
 title: Exportar fragmentos de experiência para o Adobe Target
 description: Saiba como exportar fragmentos de experiência para o Adobe Target, testar e personalizar experiências.
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2254'
-ht-degree: 99%
+source-wordcount: '2246'
+ht-degree: 96%
 
 ---
 
@@ -165,7 +165,7 @@ Agora é possível selecionar a nova configuração para edição.
    >1. Navigate to **Tools** &gt; **General** &gt; **CRXDE Lite**.
    >1. Navigate to **/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig**
    >1. Set the property **disable** to **false**.
-   >1. Tap or click **Save All**.
+   >1. Select **Save All**.
 
    -->
 
@@ -189,7 +189,7 @@ Agora é possível selecionar a nova configuração para edição.
 
    * **Usar direcionamento preciso:** por padrão, essa caixa de seleção está marcada. Se selecionada, a configuração do Cloud Service aguardará o carregamento do contexto antes de carregar o conteúdo. Veja a observação a seguir.
 
-   * **Sincronizar segmentos do Adobe Target:** selecione essa opção para baixar segmentos definidos no Target e usá-los no AEM. Você deve selecionar essa opção quando a propriedade Tipo de API for REST, pois os segmentos em linha não são compatíveis e você sempre precisa usar segmentos do Target. (Observe que o termo “segmento” do AEM equivale ao termo “público-alvo” do Target.)
+   * **Sincronizar segmentos do Adobe Target:** selecione essa opção para baixar segmentos definidos no Target e usá-los no AEM. Selecione essa opção quando a propriedade Tipo de API for REST, pois os segmentos em linha não são compatíveis e você sempre precisa usar segmentos do Target. (O termo AEM de &quot;segmento&quot; é equivalente ao termo &quot;público-alvo&quot; do Target.)
 
    * **Biblioteca do cliente:** o padrão é a AT.js (a mbox.js foi descontinuada)
 
@@ -290,8 +290,8 @@ When you associate a page with the framework, the child pages inherit the associ
 1. In the **Sites** console, navigate to the site that you want to configure.
 1. Using either [quick actions](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) or [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources), select **View Properties.**
 1. Select the **Cloud Services** tab.
-1. Tap/click **Edit**.
-1. Tap/click **Add Configuration** under **Cloud Service Configurations** and select **Adobe Target**.
+1. Select **Edit**.
+1. Select **Add Configuration** under **Cloud Service Configurations** and select **Adobe Target**.
 
   ![Cloud Service Configuration](assets/chlimage_1-165.png)
 
@@ -301,7 +301,7 @@ When you associate a page with the framework, the child pages inherit the associ
    >
    >Make sure that you select the specific **framework** that you created and not the Target cloud configuration under which it was created.
 
-1. Tap/click **Done**.
+1. Select **Done**.
 1. Activate the root page of the website to replicate it to the publish server. (See [How To Publish Pages](/help/sites-cloud/authoring/fundamentals/publishing-pages.md).)
 
    >[!NOTE]
@@ -315,7 +315,7 @@ When you associate a page with the framework, the child pages inherit the associ
 >
 >Para ativos de mídia, como imagens, somente uma referência é exportada para o Target. O ativo em si permanece armazenado no AEM Assets e é entregue a partir da instância de publicação do AEM.
 >
->Devido a isso, o fragmento de experiência, com todos os ativos relacionados, precisa ser publicado antes da exportação para o Target.
+>Devido a isso, o fragmento de experiência, com todos os ativos relacionados, deve ser publicado antes da exportação para o Target.
 
 Para exportar um fragmento de experiência do AEM para o Target (depois de especificar a configuração da nuvem):
 
@@ -326,19 +326,19 @@ Para exportar um fragmento de experiência do AEM para o Target (depois de espec
    >
    >Ele deve ser uma variação web do fragmento de experiência.
 
-1. Toque/clique em **Exportar para o Adobe Target**.
+1. Selecionar **Exportar para o Adobe Target**.
 
    >[!NOTE]
    >
    >Se o fragmento de experiência já tiver sido exportado, selecione **Atualizar no Adobe Target**.
 
-1. Toque/clique em **Exportar sem publicar** ou em **Publicar**, conforme necessário.
+1. Selecionar **Exportar sem publicar** ou **Publish** conforme necessário.
 
    >[!NOTE]
    >
    >Selecionar **Publicar** publicará o fragmento de experiência imediatamente e o enviará para o Target.
 
-1. Toque ou clique em **OK** na caixa de diálogo de confirmação.
+1. Selecionar **OK** no diálogo de confirmação.
 
    Seu fragmento de experiência agora deve estar no Target.
 

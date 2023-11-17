@@ -2,10 +2,10 @@
 title: Jornada de criação rápida de site do AEM
 description: Comece aqui uma jornada guiada através da ferramenta fácil de usar de Criação rápida de sites do AEM para simplificar o desenvolvimento de front-end do seu site e personalizá-lo rapidamente sem nenhum conhecimento de back-end no AEM.
 exl-id: b8218232-0298-4b16-9dab-fa59be592a24
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1032'
-ht-degree: 96%
+source-wordcount: '1029'
+ht-degree: 89%
 
 ---
 
@@ -29,7 +29,7 @@ Essa jornada de documentação o conduzirá através de todos os recursos no ví
 
 ## Jornadas de documentação do AEM {#documentation-journeys}
 
-[Uma Jornada de documentação](/help/journey-documentation/documentation-journeys.md) une vários tópicos e recursos diferentes e talvez complicados, fornecendo uma narrativa que ajuda o leitor, que pode ser novo no AEM, a entender e resolver um problema da empresa do começo ao fim, assumindo o mínimo de conhecimento prévio do tópico ou do AEM.
+[Uma Jornada de documentação](/help/journey-documentation/documentation-journeys.md) une vários tópicos e recursos diferentes e complicados, fornecendo uma narrativa que ajuda o leitor, que pode ser novo no AEM, a entender e resolver um problema empresarial do começo ao fim, assumindo o mínimo de conhecimento prévio sobre o tópico ou AEM.
 
 As jornadas de documentação foram projetadas com base nas práticas recomendadas, informadas pela última pesquisa da Adobe, na experiência comprovada de implementação dos consultores da Adobe e no feedback de projetos de clientes.
 
@@ -67,7 +67,7 @@ Agora você está pronto para começar a usar a jornada de Criação rápida de 
 
 * Se você for um(a) admin do AEM ou do Cloud Manager, se ocupa ambas as funções de desenvolvedor(a) de front-end e admin ou se quiser apenas entender o processo do AEM de ponta a ponta, inicie a jornada desde a seção [Entenda o Cloud Manager](cloud-manager.md), disponível abaixo.
 * Se você for responsável apenas pelo desenvolvimento de front-end e vai interagir com os administradores do AEM e do Cloud Manager, pule diretamente para [Recupere informações de acesso do repositório Git](retrieve-access.md) para obter acesso ao repositório Git do AEM e começar a personalizar.
-* Se você já entende que o AEM Sites e o Cloud Manager trabalham juntos e quer começar diretamente com a configuração, pode [pular diretamente para a criação de um novo site a partir de um modelo.](create-site.md)
+* Se você já entende que o AEM Sites e o Cloud Manager trabalham juntos e quer começar diretamente com a configuração, é possível [pule diretamente para a criação de um site a partir de um modelo.](create-site.md)
 
 ## Recursos adicionais {#additional-resources}
 

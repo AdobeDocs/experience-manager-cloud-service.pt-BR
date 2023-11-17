@@ -2,10 +2,10 @@
 title: Gerenciamento de fragmentos de conteúdo (Ativos - Fragmentos de conteúdo)
 description: Saiba como usar o console de Ativos para gerenciar os fragmentos de conteúdo de AEM, a base do conteúdo headless.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1873'
-ht-degree: 68%
+source-wordcount: '1876'
+ht-degree: 67%
 
 ---
 
@@ -149,7 +149,7 @@ Para abrir o fragmento para edição:
 
    >[!NOTE]
    >
-   >**Salvar e fechar** está disponível por meio da lista suspensa **Salvar**.
+   >**Salvar e fechar** está disponível por meio da **Salvar** lista suspensa.
 
    >[!NOTE]
    >

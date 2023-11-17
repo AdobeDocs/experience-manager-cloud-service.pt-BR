@@ -2,10 +2,10 @@
 title: Ambiente e ferramentas de criação
 description: O ambiente de criação do AEM fornece vários mecanismos para organização e edição de conteúdo
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2163'
-ht-degree: 93%
+source-wordcount: '2158'
+ht-degree: 90%
 
 ---
 
@@ -90,7 +90,7 @@ A aparência e o manuseio real dependem do tipo de dispositivo usado:
    * Filtrar componentes por nome.
    * Limitar a exibição para um grupo específico usando a seleção suspensa.
 
-  Para obter uma descrição mais detalhada do componente, clique ou toque no ícone de informações ao lado do componente no navegador **Componentes** (se disponível). Por exemplo, para o **Fragmento de conteúdo**:
+  Para obter uma descrição mais detalhada do componente, selecione o ícone de informações ao lado do componente na **Componentes** navegador (se disponível). Por exemplo, para o **Fragmento de conteúdo**:
 
   ![Informações do navegador de componentes](/help/sites-cloud/authoring/assets/component-browser-information.png)
 
@@ -163,7 +163,7 @@ Se você precisar fazer uma alteração rápida em um ativo, pode iniciar o [edi
 
 ## Árvore de conteúdo {#content-tree}
 
-A **Árvore de conteúdo** fornece uma visão geral de todos os componentes na página em uma hierarquia para que você possa ver rapidamente como a página é composta.
+A variável **Árvore de conteúdo** fornece uma visão geral de todos os componentes na página em uma hierarquia para que você possa ver rapidamente como a página é composta.
 
 A Árvore de conteúdo é uma guia dentro do painel lateral (junto com o navegador de componentes e de ativos). Para abrir (ou fechar) o painel lateral, use o ícone na parte superior esquerda da barra de ferramentas:
 
@@ -315,7 +315,7 @@ O navegador de caminho é organizado da mesma maneira que a [exibição de colun
 
 ![Navegador de caminhos](/help/sites-cloud/authoring/assets/path-browser.png)
 
-* Após selecionar um recurso, o botão **Selecionar** no canto superior direito da caixa de diálogo se torna ativo. Clique ou toque para confirmar a seleção ou **Cancelar** para suspender.
+* Após selecionar um recurso, o botão **Selecionar** no canto superior direito da caixa de diálogo se torna ativo. Selecione para confirmar a seleção ou **Cancelar** para suspender.
 * Se o contexto permite a seleção de vários recursos, selecionar um recurso também ativa o botão **Selecionar**, mas, além disso, adiciona uma contagem do número de recursos selecionados no canto superior direito da janela. Clique no **X** ao lado do número para desmarcar tudo.
 * Ao navegar pela árvore, sua localização é refletida na navegação estrutural na parte superior da caixa de diálogo. Essas navegações estruturais também podem ser usadas para saltar rapidamente dentro da hierarquia de recursos.
 * A qualquer momento, é possível usar o campo de pesquisa na parte superior da caixa de diálogo. Clique no **X** no campo de pesquisa para limpar a pesquisa.

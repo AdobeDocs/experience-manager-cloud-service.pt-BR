@@ -2,10 +2,10 @@
 title: Atalhos de teclado para Consoles
 description: Economize tempo ao criar usando estes atalhos de teclado
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
-source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 70%
+source-wordcount: '378'
+ht-degree: 64%
 
 ---
 
@@ -65,7 +65,7 @@ Além disso, os atalhos de teclado são os mesmos para todos os locais e layouts
 
 ## Desativar atalhos de teclado {#deactivating-keyboard-shortcuts}
 
-O AEM fornece atalhos de teclado para alguns dos recursos de uso geral (editar, propriedades, copiar/colar, mostrar vários menus do painel lateral etc.).
+O AEM fornece atalhos de teclado para alguns dos recursos usados com frequência (editar, propriedades, copiar/colar, mostrar vários menus do painel lateral e assim por diante).
 
 Para usuários que não usam atalhos de teclado ou que têm determinados requisitos de acessibilidade, todos os atalhos de teclado podem ser desativados.
 

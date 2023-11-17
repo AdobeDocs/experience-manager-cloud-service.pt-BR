@@ -2,10 +2,10 @@
 title: Criação de uma pasta de ativos - Configuração do headless
 description: Use os modelos de fragmento de conteúdo do AEM para definir a estrutura dos fragmentos de conteúdo, a base do seu conteúdo headless.
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
-workflow-type: ht
-source-wordcount: '383'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '377'
+ht-degree: 88%
 
 ---
 
@@ -25,8 +25,8 @@ As pastas de ativos são usadas para [organizar ativos de conteúdo tradicionais
 
 Um administrador só precisaria criar pastas ocasionalmente para organizar o conteúdo, conforme ele fosse criado. Para os propósitos deste guia de introdução, precisamos criar apenas uma pasta.
 
-1. Faça logon no AEM as a Cloud Service e, no menu principal, selecione **Navegação -> Ativos -> Arquivos**.
-1. Toque ou clique em **Criar -> Pasta**. 
+1. Faça logon no AEM as a Cloud Service e, no menu principal, selecione **Navegação > Ativos > Arquivos**.
+1. Selecionar **Criar > Pasta**.
 1. Forneça um **Título** e um **Nome** para sua pasta.
    * O **Título** deve ser descritivo.
    * O **Nome** se tornará o nome do nó no repositório.
@@ -38,8 +38,8 @@ Um administrador só precisaria criar pastas ocasionalmente para organizar o con
 1. Na janela **Propriedades**, selecione a guia **Serviços em nuvem**.
 1. Para a **Configuração na nuvem**, selecione a [configuração criada anteriormente.](create-configuration.md)
    ![Configurar pasta de ativos](../assets/assets-folder-configure.png)
-1. Toque ou clique em **Salvar e fechar**.
-1. Toque ou clique em **OK** na janela de confirmação.
+1. Selecionar **Salvar e fechar**.
+1. Selecionar **OK** na janela de confirmação.
 
    ![Janela de confirmação](../assets/assets-folder-confirmation.png)
 

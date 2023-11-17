@@ -2,10 +2,10 @@
 title: Regulamentos de Proteção e Privacidade de Dados - Disponibilidade do Adobe Experience Manager as a Cloud Service Sites
 description: Saiba mais sobre o suporte do Adobe Experience Manager as a Cloud Service Sites a vários Regulamentos de Proteção e Privacidade de Dados, incluindo o Regulamento Geral sobre a Proteção de Dados da UE (GDPR), a Lei de Privacidade do Consumidor da Califórnia e como estar em conformidade ao implementar um novo projeto AEM as a Cloud Service.
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1024'
-ht-degree: 98%
+source-wordcount: '1023'
+ht-degree: 96%
 
 ---
 
@@ -96,7 +96,7 @@ Por padrão, esses dados do visitante não são armazenados no AEM; o AEM envia 
 
 ### Implementação do Opt-in/Opt-out (Aceitar/Recusar) {#implementing-opt-in-opt-out}
 
-O proprietário do site precisa implementar um componente de opção de recusa, de acordo com as diretrizes a seguir.
+O proprietário do site deve implementar um componente de opção de não participação, de acordo com as diretrizes a seguir.
 
 Essas diretrizes implementam a opção de aceitação como padrão. Assim, um visitante do site deve concordar claramente, antes que quaisquer dados pessoais sejam armazenados na persistência do navegador (lado do cliente).
 

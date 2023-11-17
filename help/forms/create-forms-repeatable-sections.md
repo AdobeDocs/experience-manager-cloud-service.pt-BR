@@ -3,9 +3,9 @@ title: Como criar painéis repetíveis nos Componentes principais do formulário
 description: Saiba como criar seções ou campos repetíveis em um Formulário adaptável.
 role: Architect, Developer, Admin, User
 exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1359'
+source-wordcount: '1357'
 ht-degree: 6%
 
 ---
@@ -139,7 +139,7 @@ O pai do painel deve conter um botão Excluir para excluir a instância dos pain
 
 >[!NOTE]
 >
-> Quando todas as instâncias de um painel forem removidas de um formulário adaptável, para adicionar uma instância do painel removido, use a sintaxe _panelName para capturar o gerenciador de instâncias do painel e use a API addInstance do gerenciador de instâncias para adicionar a instância excluída. Por exemplo, _panelName.addInstance(). Ele adiciona uma instância do painel removido.
+> Quando todas as instâncias de um painel forem removidas de um formulário adaptável, para adicionar uma instância do painel removido, use a sintaxe _panelName para capturar o gerenciador de instâncias do painel e a API addInstance do gerenciador de instâncias para adicionar a instância excluída. Por exemplo, _panelName.addInstance(). Ele adiciona uma instância do painel removido.
 
 <!--
 ![panel-repeatability-video](/help/adaptive-forms/assets/panel-repeatability-video.mp4)

@@ -2,10 +2,10 @@
 title: Gerenciar seus sites de demonstração
 description: Saiba mais sobre as ferramentas disponíveis para ajudá-lo a gerenciar seus sites de demonstração e como removê-los.
 exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 94%
+source-wordcount: '936'
+ht-degree: 89%
 
 ---
 
@@ -41,7 +41,7 @@ Este documento ajuda você a entender como gerenciar os sites de demonstração 
 
 Agora que tem seus próprios sites de demonstração, você provavelmente gostaria de saber como gerenciá-los. O pipeline não só implantou os modelos do site para fornecer conteúdo aos sites de demonstração, como também implantou um conjunto de utilitários para gerenciar esses sites.
 
-1. Na barra de navegação global do AEM, selecione **Ferramentas** -> **Demonstrações de referência** -> **Utilitários de demonstração de referência**.
+1. Na barra de navegação global do AEM, selecione **Ferramentas** > **Demonstrações de referência** > **Utilitários de demonstração de referência**.
 
    ![Utilitários de demonstração de autoatendimento](assets/demo-utilities.png)
 
@@ -62,11 +62,11 @@ Os Utilitários de demonstração de autoatendimento fornecem várias ferramenta
 
 Depois de testar um conjunto de funcionalidades do AEM, talvez você não precise mais do seu site de demonstração ou mesmo do modelo no qual ele se baseia. É fácil excluir sites de demonstração e modelos de site.
 
-1. Acesse o **Utilitários de demonstração de referência** e toque ou clique em **Excluir sites**.
+1. Acesse o **Utilitários de demonstração de referência** e selecione **Excluir Sites**.
 
    ![Excluir sites](assets/delete-sites.png)
 
-1. Os sites disponíveis são apresentados em uma lista. Verifique o site ou sites que deseja excluir e toque ou clique em **Excluir**.
+1. Os sites disponíveis são apresentados em uma lista. Verifique o site ou sites que deseja excluir e selecione **Excluir**.
 
    >[!CAUTION]
    >

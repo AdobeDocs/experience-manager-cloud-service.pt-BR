@@ -2,9 +2,9 @@
 title: Materiais de referência de API
 description: O AEM tem APIs abrangentes e poderosas que você pode usar para o seu projeto de experiência digital.
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '664'
+source-wordcount: '662'
 ht-degree: 9%
 
 ---
@@ -19,8 +19,8 @@ As seguintes APIs são fundamentais para o AEM.
 
 | API | Descrição |
 |---|---|
-| [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | Abstrações de produto, como páginas, ativos, fluxos de trabalho etc. |
-| [Interface do Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html#) | Pilha da Web aberta do Adobe, fornecendo vários componentes essenciais (Observe que os materiais do Granite 6.5 se aplicam ao AEMaaCS) |
+| [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | Abstrações de produto, como páginas, ativos, fluxos de trabalho e assim por diante. |
+| [Interface do Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html#) | Pilha da Web aberta do Adobe, fornecendo vários componentes essenciais (os materiais do Granite 6.5 se aplicam ao AEMaaCS) |
 | [Coral UI](https://opensource.adobe.com/coral-spectrum/documentation/) | Estilo visual do Adobe para interfaces do usuário em nuvem, projetado para fornecer consistência à experiência do usuário |
 
 <!---
@@ -44,7 +44,7 @@ O AEM é criado nos quatro conjuntos principais de APIs do Java a seguir, em ord
 
 | Prioridade | API | Descrição |
 |---|---|---|
-| 1 | [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | Abstrações de produto, como páginas, ativos, fluxos de trabalho etc. |
+| 1 | [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | Abstrações de produto, como páginas, ativos, fluxos de trabalho e assim por diante. |
 | 2 | [Apache Sling](https://sling.apache.org/apidocs/sling11/) | REST e abstrações baseadas em recursos, como recursos, mapas de valores e solicitações HTTP. |
 | 3 | [Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | Dados e abstrações de conteúdo, como nó, propriedades e sessões. |
 | 4 | [Apache Felix](https://felix.apache.org/) | Abstrações do contêiner de aplicativo OSGi, como serviços e componentes (OSGi). |

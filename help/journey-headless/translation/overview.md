@@ -2,10 +2,10 @@
 title: Jornada de tradução headless do AEM
 description: Comece aqui uma jornada guiada pela tradução de seu conteúdo headless usando as eficientes ferramentas de tradução do AEM.
 exl-id: b677f691-5257-43c3-a4b9-c34932577b31
-source-git-commit: f4e28d89023e8f326e6816ebd8168e1e31e772ce
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1045'
-ht-degree: 95%
+source-wordcount: '1040'
+ht-degree: 88%
 
 ---
 
@@ -32,9 +32,9 @@ Se você já está familiarizado com o AEM, headless e tradução, talvez já te
 
 ## Jornadas de documentação do AEM {#documentation-journeys}
 
-[Uma Jornada de documentação](/help/journey-documentation/documentation-journeys.md) une vários tópicos e recursos diferentes e talvez complicados, fornecendo uma narrativa que ajuda o leitor, que pode ser novo no AEM, a entender e resolver um problema da empresa do começo ao fim, assumindo o mínimo de conhecimento prévio do tópico ou do AEM.
+[Uma Jornada de documentação](/help/journey-documentation/documentation-journeys.md) une vários tópicos e recursos diferentes e complicados, fornecendo uma narrativa que ajuda o leitor, que pode ser novo no AEM, a entender e resolver um problema empresarial do começo ao fim, assumindo o mínimo de conhecimento prévio sobre o tópico ou AEM.
 
-As Jornadas de documentação foram projetadas com princípios de práticas recomendadas, informadas pela última pesquisa da Adobe, experiência comprovada de implementação dos consultores da Adobe e feedback de projetos de clientes.
+As jornadas de documentação foram projetadas com base nas práticas recomendadas, informadas pela última pesquisa da Adobe, na experiência comprovada de implementação dos consultores da Adobe e no feedback de projetos de clientes.
 
 Se quiser saber como a Adobe recomenda resolver casos de negócios headless com o AEM, inicie com as [Jornadas headless do AEM](/help/journey-documentation/documentation-journeys.md).
 
@@ -78,7 +78,7 @@ Agora você está pronto para começar sua jornada de tradução headless da Ado
 
 As jornadas de documentação mostram como o AEM soluciona um problema empresarial fornecendo uma narrativa que o orienta por processos e recursos complexos e inter-relacionados. Uma jornada ilustra como vários recursos trabalham juntos para atender a uma única necessidade empresarial.
 
-Como tal, as jornadas são projetadas para se sustentarem sozinhas. No entanto, algumas delas podem estar relacionadas entre si. Confira essas jornadas adicionais para obter mais informações sobre como os eficientes recursos do AEM funcionam juntos.
+Como tal, as jornadas são projetadas para se sustentarem sozinhas. No entanto, vários deles podem estar relacionados entre si. Confira essas jornadas adicionais para obter mais informações sobre como os eficientes recursos do AEM funcionam juntos.
 
 * [Jornada de criação headless](/help/journey-headless/author/overview.md) - comece aqui para obter uma jornada guiada pelos recursos headless avançados e flexíveis do AEM, suas funcionalidades e aprenda a modelar o conteúdo em seu primeiro projeto headless.
 * [Jornada do arquiteto headless](/help/journey-headless/architect/overview.md) - comece aqui para obter uma introdução aos recursos headless avançados e flexíveis do Adobe Experience Manager as a Cloud Service e aprender como modelar o conteúdo para seu projeto.

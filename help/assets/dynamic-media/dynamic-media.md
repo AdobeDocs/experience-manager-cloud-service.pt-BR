@@ -4,9 +4,9 @@ description: Saiba como usar o Dynamic Media para fornecer ativos para consumo n
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '397'
 ht-degree: 6%
 
 ---
@@ -81,7 +81,7 @@ Os ativos habilitados para o Dynamic Media incluem `pyramid.tiffs`.
 
 ### Exibições de ativos alteradas {#asset-views-change}
 
-Com o Dynamic Media ativado, é possível ampliar e reduzir clicando no `+` e `-` botões. Você também pode clicar/tocar para aplicar zoom em determinada área. Reverter leva à versão original e você pode tornar a imagem em tela cheia clicando nas setas diagonais. Dynamic Media ativado aparece da seguinte forma:
+Com o Dynamic Media ativado, é possível ampliar e reduzir clicando no `+` e `-` botões. Você também pode optar por ampliar para uma determinada área. Reverter leva à versão original e você pode tornar a imagem em tela cheia clicando nas setas diagonais. Dynamic Media ativado aparece da seguinte forma:
 
 ![chlimage_1-361](assets/chlimage_1-361.png)
 

@@ -2,10 +2,10 @@
 title: Introdução a SPAs no AEM usando o React
 description: Este artigo apresenta uma amostra de aplicativo SPA, explica como ele é montado e permite que você comece a usar seu próprio SPA rapidamente usando a estrutura do React.
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1141'
-ht-degree: 8%
+source-wordcount: '1139'
+ht-degree: 10%
 
 ---
 
@@ -105,7 +105,7 @@ Depois de criado, o pacote pode ser carregado para uma instância AEM.
 
 ### Arquétipo de projeto do AEM {#aem-project-archetype}
 
-Qualquer projeto AEM deve usar o [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR), que oferece suporte a projetos SPA usando o React ou o Angular e usa o SDK do SPA.
+Qualquer projeto do AEM deve utilizar o [Arquétipo de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR), que aceita projetos SPA que usam o React ou o Angular e utiliza o SDK de SPA.
 
 ## Estrutura do aplicativo {#application-structure}
 
@@ -117,7 +117,7 @@ Um componente de imagem simplificado é usado como exemplo, mas todos os compone
 
 ### index.js {#index-js}
 
-O ponto de entrada no SPA é, naturalmente, o `index.js` O arquivo mostrado aqui foi simplificado para se concentrar no conteúdo importante.
+O ponto de entrada no SPA é o `index.js` O arquivo mostrado aqui foi simplificado para se concentrar no conteúdo importante.
 
 ```
 import ReactDOM from 'react-dom';
@@ -266,4 +266,4 @@ Para obter mais informações, consulte a [Documento do blueprint do SPA](bluepr
 * A [Visão geral do editor de SPA](editor-overview.md) aborda em detalhes o modelo de comunicação do AEM e do SPA.
 * [Projeto SPA WKND](wknd-tutorial.md) O é um tutorial passo a passo para a implementação de um projeto simples de SPA no AEM.
 * [Modelo dinâmico para mapeamento de componentes para SPA](model-to-component-mapping.md) SPA explica o modelo dinâmico para o mapeamento de componentes e como ele funciona dentro do AEM.
-* [Blueprint SPA](blueprint.md) O oferece um aprofundamento em como o SDK do SPA para AEM funciona caso você deseje implementar o SPA no AEM para uma estrutura diferente do React ou do Angular ou simplesmente deseje um entendimento mais profundo.
+* [Blueprint SPA](blueprint.md) O oferece um aprofundamento em como o SDK do SPA para AEM funciona caso você queira implementar o SPA no AEM para uma estrutura diferente do React ou do Angular ou simplesmente deseja um entendimento mais profundo.

@@ -4,10 +4,10 @@ description: 'Saiba mais sobre como reutilizar conteúdo com recursos avançados
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2714'
-ht-degree: 96%
+source-wordcount: '2702'
+ht-degree: 94%
 
 ---
 
@@ -32,7 +32,7 @@ Esta página fornece uma visão geral da reutilização de conteúdo com o MSM. 
 
 >[!NOTE]
 >
->O MSM também pode ser usado para ativos, inclusive fragmentos de conteúdo. Para obter mais detalhes, consulte [Reutilizar fragmentos de conteúdo usando o MSM para ativos](/help/assets/reuse-assets-using-msm.md) (disponível somente por meio do console de ativos).
+>O MSM também pode ser usado para ativos, inclusive fragmentos de conteúdo. Consulte [Reutilizar fragmentos de conteúdo usando o MSM para ativos](/help/assets/reuse-assets-using-msm.md) (disponível somente por meio do console de Ativos ).
 
 ## Cenários possíveis {#possible-scenarios}
 
@@ -106,7 +106,7 @@ Há muitos casos de uso para o MSM e as Live Copies. Alguns cenários incluem:
   >
   >Contra:
   >
-  >* Quantas cópias individuais precisam ser ajustadas.
+  >* Quantas cópias individuais devem ser ajustadas.
 
 ## MSM a partir da interface {#msm-from-the-ui}
 
@@ -172,7 +172,7 @@ Como introdução, a tabela a seguir fornece uma visão geral dos principais ter
 
 >[!TIP]
 >
->Consulte o documento [Extensão do gerenciador de vários sites](/help/implementing/developing/extending/msm.md#overview-of-the-java-api) para os nomes dos objetos.
+>Consulte [Extensão do gerenciador de vários sites](/help/implementing/developing/extending/msm.md#overview-of-the-java-api) para os nomes dos objetos.
 
 ## Live Copies {#live-copies}
 
@@ -296,7 +296,7 @@ Cada página e componente em uma Live Copy é associado à página/componente de
 
 É possível **suspender** a herança da Live Copy para uma página de Live Copy, de modo que seja possível alterar as propriedades e os componentes da página. Ao suspender a herança, as propriedades e os componentes da página não são mais sincronizados com a origem.
 
-Ao editar uma página individual, os autores podem **cancelar a herança** de um componente. Quando a herança é cancelada, o relacionamento dinâmico é suspenso e a sincronização não ocorre para esse componente. Cancelar a herança e a sincronização são opções úteis quando subseções do conteúdo precisam ser personalizadas.
+Ao editar uma página individual, os autores podem **cancelar a herança** de um componente. Quando a herança é cancelada, o relacionamento dinâmico é suspenso e a sincronização não ocorre para esse componente. Cancelar a herança e a sincronização são opções úteis quando subseções do conteúdo devem ser personalizadas.
 
 ### Desconectar uma Live Copy {#detaching-a-live-copy}
 
@@ -319,7 +319,7 @@ As etapas a seguir descrevem o procedimento padrão de uso do MSM para reutiliza
 1. Desenvolva o conteúdo do site de origem.
 1. Determine a configuração de implantação a ser usada.
 
-   1. O MSM [instala várias configurações de implantação](live-copy-sync-config.md#installed-rollout-configurations) que satisfazem vários casos de uso.
+   1. MSM [instala várias configurações de implantação](live-copy-sync-config.md#installed-rollout-configurations) que podem atender a vários casos de uso.
    1. Opcionalmente, é possível [criar uma configuração de implantação](live-copy-sync-config.md#creating-a-rollout-configuration), se necessário.
 
 1. Determine onde você precisa [especificar as configurações de implantação a serem usadas](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use) e configure conforme necessário.

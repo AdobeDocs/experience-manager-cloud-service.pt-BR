@@ -2,10 +2,10 @@
 title: Publicar páginas
 description: Saiba como publicar e desfazer a publicação de suas páginas usando vários mecanismos no AEM.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1801'
-ht-degree: 95%
+ht-degree: 92%
 
 ---
 
@@ -224,7 +224,7 @@ De uma [maneira semelhante à publicação](#publishing-pages), uma ou mais pág
 
 ### Desfazer a publicação por meio do editor    {#unpublishing-from-the-editor}
 
-Ao editar uma página, se quiser desfazer a publicação, selecione **Desfazer a publicação da página** no menu **Informações da página**, da mesma maneira que faria para [publicar essa página](#publishing-from-the-editor).
+Ao editar uma página, se quiser desfazer a publicação, selecione **Cancelar publicação da página** no **Informações da página** menu, da mesma maneira que você [publicar a página](#publishing-from-the-editor).
 
 >[!NOTE]
 >
@@ -258,7 +258,7 @@ Quando você tiver inserido ou atualizado um número considerável de páginas d
 
 É possível usar a opção [Gerenciar publicação](#manage-publication) no console do Sites para fazer isso.
 
-1. No console do Sites, selecione a página raiz da árvore que deseja publicar ou desfazer a publicação e selecione **Gerenciar publicação**.
+1. No console Sites, selecione a página raiz da árvore que deseja publicar ou cancelar a publicação e selecione **Gerenciar publicação**.
 1. O assistente para **Gerenciar publicação** é iniciado. Escolha publicar ou desfazer a publicação e quando isso deve ocorrer e selecione **Próximo** para continuar.
 1. Na etapa **Escopo**, selecione a página raiz e selecione **Incluir tarefas derivadas**.
 

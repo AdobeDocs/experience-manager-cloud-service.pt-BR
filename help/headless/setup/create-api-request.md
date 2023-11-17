@@ -2,10 +2,10 @@
 title: Criar uma solicitação de API - Configuração Headless
 description: Saiba como usar a API GraphQL para a entrega headless do conteúdo do Fragmento de conteúdo e a API REST do AEM Assets para gerenciar Fragmentos de conteúdo.
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '651'
-ht-degree: 95%
+source-wordcount: '652'
+ht-degree: 93%
 
 ---
 
@@ -31,7 +31,7 @@ Para que as APIs GraphQL possam ser usadas, é necessário criar um endpoint Gra
 1. Selecione **Criar**.
 1. A caixa de diálogo **Criar novo ponto de acesso de GraphQL** será aberta. Aqui, é possível especificar:
    * **Nome**: nome do endpoint; é possível inserir qualquer texto.
-   * **Usar esquema GraphQL fornecido por**: use a lista suspensa para selecionar a configuração necessária.
+   * **Usar esquema do GraphQL fornecido por**: use a lista suspensa para selecionar a configuração necessária.
 1. Confirme com **Criar**.
 1. No console, um **Caminho** será exibido com base na configuração criada anteriormente. Esse caminho é usado para executar consultas do GraphQL.
 

@@ -4,9 +4,9 @@ description: Saiba como adicionar informações aos metadados de um formulário 
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '686'
 ht-degree: 0%
 
 ---

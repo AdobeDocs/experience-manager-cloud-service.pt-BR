@@ -2,10 +2,10 @@
 title: Criar programa
 description: Saiba como configurar um novo programa e pipeline para implantar o complemento.
 exl-id: 06287618-0328-40b1-bba8-84002283f23f
-source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '710'
-ht-degree: 58%
+source-wordcount: '696'
+ht-degree: 53%
 
 ---
 
@@ -46,30 +46,30 @@ Depois de fazer logon no Cloud Manager, você pode criar um programa de sandbox 
 
    ![Visão geral do Cloud Manager](assets/cloud-manager.png)
 
-1. Toque ou clique em **Adicionar programa** na parte superior direita da janela.
+1. Selecionar **Adicionar programa** na parte superior direita da janela.
 
 1. Na caixa de diálogo **Vamos criar o seu programa**:
 
    1. Forneça um **Nome de programa** para descrever o programa.
-   1. Toque ou clique em **Configurar uma sandbox** para o **Objetivo do programa**
-   1. Toque ou clique em **Continuar**.
+   1. Selecionar **Configurar uma sandbox** para seu **Objetivo do programa**
+   1. Selecionar **Continuar**.
 
    ![Caixa de diálogo Criar programa](assets/create-program.png)
 
 1. No **Configurar sua sandbox** no **Soluções e complementos** , expanda a **Sites** entrada na lista tocando ou clicando nela e, em seguida, marque **Demonstrações de referência**.
 
-   * Se você também quiser criar demonstrações para o AEM Screens, verifique a **Screens** opção na lista. Toque ou clique em **Atualizar**.
+   * Se você também quiser criar demonstrações para o AEM Screens, verifique a **Screens** opção na lista. Selecionar **Atualizar**.
 
    ![Seleção de complemento para demonstração de referência na configuração do programa](assets/select-reference-demo-add-on.png)
 
 
-1. Toque ou clique em **Criar** e o Cloud Manager começará a configurar seu programa de sandbox. A tela de visão geral do programa é exibida e um breve banner de notificação indica que o processo foi iniciado. Um cartão foi adicionado à página de visão geral do novo programa. O processo de instalação leva alguns minutos para ser concluído.
+1. Selecionar **Criar** O e o Cloud Manager começam a configurar seu programa de sandbox. A tela de visão geral do programa é exibida e um breve banner de notificação indica que o processo foi iniciado. Um cartão foi adicionado à página de visão geral do novo programa. O processo de instalação leva alguns minutos para ser concluído.
 
-1. Quando a configuração for concluída, o cartão do ambiente na página de visão geral mostrará seu status como **Pronto**. Toque ou clique no cartão para abrir o ambiente.
+1. Quando a configuração for concluída, o cartão do ambiente na página de visão geral mostrará seu status como **Pronto**. Selecione o cartão para poder abrir o ambiente.
 
    ![Criação do programa concluída](assets/ready.png)
 
-1. Seu ambiente está pronto e o complemento agora está habilitado como uma opção, mas é necessário implantar o conteúdo da demonstração no AEM para que esteja disponível. Para fazer isso, toque ou clique no botão de reticências ao lado do pipeline Implantar no desenvolvimento na **Pipelines** e selecione **Executar**.
+1. Seu ambiente está pronto e o complemento agora está habilitado como uma opção, mas é necessário implantar o conteúdo da demonstração no AEM para que esteja disponível. Para fazer isso, selecione o botão de reticências ao lado do pipeline Implantar no desenvolvimento na **Pipelines** e selecione **Executar**.
 
    ![Início](assets/run.png)
 

@@ -4,9 +4,9 @@ description: Este artigo descreve como criar, modificar e usar os aspectos de pe
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 35d70cd3843b5e0857a24a17746e05072aed7e1b
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2506'
+source-wordcount: '2504'
 ht-degree: 22%
 
 ---
@@ -108,7 +108,7 @@ Se quiser usar um nó existente, especifique-o usando a caixa de diálogo de sel
 1. Siga uma das seguintes opções:
 
    * No **[!UICONTROL Nome da propriedade]** mencione o caminho do arquivo JSON onde você define os nós das opções e especifica os pares de valores chave correspondentes.
-   * Toque ![Ícone de adição de ativos](assets/do-not-localize/aem_assets_add_icon.png) ao lado do campo Opções para especificar o texto de exibição e o valor das opções que você deseja fornecer no painel Filtros. Para adicionar outra opção, toque/clique ![Ícone de adição de ativos](assets/do-not-localize/aem_assets_add_icon.png) e repita a etapa.
+   * Toque ![Ícone de adição de ativos](assets/do-not-localize/aem_assets_add_icon.png) ao lado do campo Opções para especificar o texto de exibição e o valor das opções que você deseja fornecer no painel Filtros. Para adicionar outra opção, selecione ![Ícone de adição de ativos](assets/do-not-localize/aem_assets_add_icon.png) e repita a etapa.
 
 1. Certifique-se de que **[!UICONTROL Seleção única]** esteja desmarcada para permitir que o usuário selecione várias opções para tipos de arquivos de cada vez (por exemplo, Imagens, Documentos, Multimídia e Arquivos). Se você marcar **[!UICONTROL Seleção única]**, o usuário poderá selecionar apenas uma opção para tipos de arquivo por vez.
 
@@ -145,7 +145,7 @@ A variável `Tags` O predicado permite realizar pesquisas por ativos baseadas em
 
    ![Configurações típicas do predicado de tags](assets/tags_predicate.png)
 
-1. No **[!UICONTROL Descrição]** insira uma descrição opcional e clique/toque em **[!UICONTROL Concluído]**.
+1. No **[!UICONTROL Descrição]** insira uma descrição opcional e selecione **[!UICONTROL Concluído]**.
 1. Navegue até o painel Pesquisa. A variável **[!UICONTROL Tags]** O predicado é adicionado ao painel Pesquisar.
 1. Especifique as tags com base nas quais deseja pesquisar ativos ou selecione na lista de sugestões.
 1. Selecionar **[!UICONTROL Corresponder a todos]** para procurar correspondências que incluem todas as tags especificadas.

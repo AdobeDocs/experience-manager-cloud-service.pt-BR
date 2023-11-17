@@ -1,20 +1,20 @@
 ---
 title: Como o Assets visualiza o AEM beneficia você?
-description: Saiba mais sobre os principais benefícios da visualização de Ativos no AEM. A Adobe, utilizando sua experiência em capacitar profissionais de marketing e criação, apresenta uma nova experiência de usuário revolucionária.
+description: Saiba mais sobre os principais benefícios da visualização de Ativos no AEM. O Adobe, usando sua experiência em capacitar profissionais de marketing e criativos, apresenta uma nova experiência de usuário que muda o jogo.
 mini-toc-levels: 3
-source-git-commit: 20e0527ebecb6720f39c0a4b2957dc899117d96f
+exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1079'
-ht-degree: 79%
+ht-degree: 76%
 
 ---
-
 
 # Apresentação da visualização de Ativos {#assets-view}
 
 ![Implantar o Assets Essentials](assets/banner-image.jpg)
 
-No atual cenário digital de ritmo acelerado, onde a criação e a entrega de conteúdo em tempo real são essenciais, uma experiência de Gerenciamento de ativos digitais (DAM) desenvolvida para oferecer velocidade de marketing downstream é fundamental. A Adobe, utilizando sua experiência em capacitar profissionais de marketing e criação, apresenta uma nova experiência de usuário revolucionária. Essa abordagem de fluxo de trabalho revoluciona a maneira como as empresas lidam com seus ativos digitais dinâmicos, capacitando profissionais de marketing a maximizar a eficiência de localização, colaboração, personalização e entrega de ativos. Esses fluxos de trabalho simplificados aumentam a velocidade do conteúdo e impulsionam suas iniciativas de marketing para novos patamares.
+No atual cenário digital de ritmo acelerado, onde a criação e a entrega de conteúdo em tempo real são essenciais, uma experiência de Gerenciamento de ativos digitais (DAM) desenvolvida para oferecer velocidade de marketing downstream é fundamental. O Adobe, usando sua experiência em capacitar profissionais de marketing e criativos, apresenta uma nova experiência de usuário que muda o jogo. Essa abordagem de fluxo de trabalho revoluciona a maneira como as empresas lidam com seus ativos digitais dinâmicos, capacitando profissionais de marketing a maximizar a eficiência de localização, colaboração, personalização e entrega de ativos. Esses fluxos de trabalho simplificados aumentam a velocidade do conteúdo e impulsionam suas iniciativas de marketing para novos patamares.
 
 Para saber mais sobre as experiências com base em persona disponíveis para o Assets as a Cloud Service, consulte [Apresentação do Assets as a Cloud Service](/help/assets/overview.md#persona-based-experiences).
 
@@ -128,9 +128,3 @@ Use estes links para começar a usar a exibição de Ativos rapidamente:
 
 * [Meu espaço de trabalho](/help/assets/my-workspace-assets-view.md)
 * [Introdução ao uso da visualização de Ativos](/help/assets/get-started-assets-view.md)
-
-
-
-
-
-

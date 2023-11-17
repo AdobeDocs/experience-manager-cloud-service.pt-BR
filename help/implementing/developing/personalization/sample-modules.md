@@ -2,9 +2,9 @@
 title: Exemplos de tipos de módulo da interface do usuário do ContextHub
 description: O ContextHub fornece vários módulos de interface do usuário de amostra que você pode usar em suas soluções
 exl-id: 31ff4444-8d96-4817-9676-ea5ad36dcda5
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1126'
+source-wordcount: '1124'
 ht-degree: 0%
 
 ---
@@ -170,7 +170,7 @@ A origem do módulo de interface do usuário está localizada em `/libs/granite/
 
 ### Configuração {#configuration-5}
 
-Instâncias do `contexthub.screen-orientation` O módulo da interface do usuário não requer um valor para a Configuração detalhada. O texto JSON a seguir representa a configuração padrão do módulo. Observe que `clickable` propriedade é `false` por padrão. Se você substituir a configuração padrão para definir `clickable` para `true`, clicar no módulo revela um pop-up no qual você pode selecionar a orientação.
+Instâncias do `contexthub.screen-orientation` O módulo da interface do usuário não requer um valor para a Configuração detalhada. O texto JSON a seguir representa a configuração padrão do módulo. A variável `clickable` propriedade é `false` por padrão. Se você substituir a configuração padrão para definir `clickable` para `true`, clicar no módulo revela um pop-up no qual você pode selecionar a orientação.
 
 ```javascript
 {

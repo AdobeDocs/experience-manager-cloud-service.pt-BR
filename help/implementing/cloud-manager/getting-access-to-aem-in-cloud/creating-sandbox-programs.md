@@ -2,10 +2,10 @@
 title: Criação de programas do sandbox
 description: Saiba como usar o Cloud Manager para criar seu próprio programa de sandbox para treinamentos, demonstrações, POCs ou outros fins de não produção.
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '444'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '442'
+ht-degree: 93%
 
 ---
 
@@ -27,11 +27,11 @@ Saiba mais sobre os tipos de programas no documento [Noções sobre programas e 
 
    ![Criação de tipo de programa](assets/create-sandbox.png)
 
-1. Opcionalmente, é possível adicionar uma imagem ao programa arrastando e soltando um arquivo de imagem no destino **Adicionar uma imagem de programa** ou clicando para selecionar uma imagem de um navegador de arquivos. Toque ou clique em **Continuar**.
+1. Opcionalmente, é possível adicionar uma imagem ao programa arrastando e soltando um arquivo de imagem no destino **Adicionar uma imagem de programa** ou clicando para selecionar uma imagem de um navegador de arquivos. Selecionar **Continuar**.
 
    * A imagem serve apenas como o bloco na janela de visão geral do programa e ajuda a identificar o programa.
 
-1. Na caixa de diálogo **Configurar sua sandbox**, escolha quais soluções deseja habilitar no programa da sua sandbox, marcando as opções na tabela **Soluções e Complementos**.
+1. No **Configurar sua sandbox** escolha quais soluções você deseja ativar no programa de sandbox, marcando as opções na caixa de diálogo **Soluções e complementos** tabela.
 
    * Use as divisas ao lado dos nomes das soluções para ver complementos adicionais e opcionais para as soluções.
 

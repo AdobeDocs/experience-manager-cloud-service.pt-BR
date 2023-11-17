@@ -4,9 +4,9 @@ description: Descubra como criar ou adicionar um Formulário adaptável à sua p
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3209'
+source-wordcount: '3208'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ O Cloud Service AEM Forms fornece Contêiner de formulário adaptável e Forms a
 Se você já tiver criado o componente Adaptive Forms Foundation ou formulários baseados em HTML simples para seus Sites, o Adobe recomenda usar os Componentes principais do Adaptive Forms para criar um Formulário adaptável na página do AEM Sites ou Fragmento de experiência. Ele permite usar vários recursos de páginas do AEM Sites, como controle de versão, direcionamento, tradução e gerenciador de vários sites, aprimorando a experiência geral de criação e gerenciamento de formulários para o Adaptive Forms. Vamos explorar alguns destes recursos:
 
 * **Controle de versão:** Oferta de páginas do AEM Sites [recursos robustos de controle de versão](/help/sites-cloud/authoring/features/page-versions.md), permitindo rastrear e gerenciar diferentes versões dos formulários. Isso permite fazer alterações e aprimoramentos nos formulários, mantendo a capacidade de reverter para versões anteriores, se necessário. O controle de versão garante uma abordagem controlada e organizada para o desenvolvimento e evolução da forma.
-* **Direcionamento (integração com o Adobe Target):** Com os recursos de direcionamento de páginas do AEM Sites, você também pode [personalizar a experiência do formulário para públicos diferentes](/help/sites-cloud/integrating/integration-adobe-target-ims.md). Ao utilizar segmentos de usuários e critérios de direcionamento, você pode adaptar o conteúdo, o design ou o comportamento do formulário a grupos específicos de usuários. Isso permite fornecer uma experiência de formulário personalizada e relevante, aumentando as taxas de engajamento e conversão.
+* **Direcionamento (integração com o Adobe Target):** Com os recursos de direcionamento de páginas do AEM Sites, você também pode [personalizar a experiência do formulário para públicos diferentes](/help/sites-cloud/integrating/integration-adobe-target-ims.md). Usando segmentos de usuários e critérios de direcionamento, você pode adaptar o conteúdo, o design ou o comportamento do formulário a grupos específicos de usuários. Isso permite fornecer uma experiência de formulário personalizada e relevante, aumentando as taxas de engajamento e conversão.
 * **Tradução:** AEM Sites [integração perfeita com serviços de tradução](/help/sites-cloud/administering/translation/overview.md), permitindo que você traduza formulários em vários idiomas facilmente. Esse recurso simplifica o processo de localização, garantindo que seus formulários estejam acessíveis para um público-alvo global. Você pode gerenciar traduções com eficiência em projetos de tradução AEM, reduzindo o tempo e o esforço necessários para o suporte a formulários multilíngues. Consulte a seção considerações para obter mais informações sobre tradução.
 * **Gerenciamento de vários sites e Live Copy:** O AEM Sites oferece [Recursos de gerenciamento de vários sites e Live Copy](/help/sites-cloud/administering/msm/overview.md), permitindo criar e gerenciar vários sites em um único ambiente. Esse recurso agora permite reutilizar formulários em sites diferentes, garantindo a consistência e reduzindo os esforços de duplicação. Com controle e gerenciamento centralizados, você pode manter e atualizar formulários de maneira eficiente em vários sites.
 * **Temas:** As páginas do AEM Sites fornecem uma estrutura para projetar e manter estilos visuais consistentes em várias páginas da Web. Eles definem cores, fontes, folhas de estilos e outros elementos visuais que contribuem para a aparência geral do site. [Você pode usar os temas criados para uma página do AEM Sites para um Formulário adaptável, economizando tempo e esforço](/help/sites-cloud/administering/site-creation/site-themes.md#using-site-themes-using-themes).
@@ -188,7 +188,7 @@ Para converter um formulário adaptável na página AEM Sites em um fragmento de
 1. Na caixa de diálogo Converter em variação de Fragmento de experiência, defina valores para as seguintes opções:
 
    * **Ação:** Selecione para criar um fragmento de experiência ou Adicionar a um fragmento de experiência existente.
-   * **Caminho principal:** Especifique o caminho da pasta na qual hospedar o fragmento de experiência. A opção está disponível somente para criar um novo Fragmento de experiência.
+   * **Caminho principal:** Especifique o caminho da pasta na qual hospedar o fragmento de experiência. A opção está disponível somente para criar um fragmento de experiência.
    * **Modelo:** Especifique o caminho do modelo do Fragmento de experiência. Se você não tiver um modelo de Fragmento de experiência, [criar](/help/implementing/developing/extending/experience-fragments.md). A opção está disponível somente para adicionar o Formulário adaptável a um Fragmento de experiência existente.
    * **Título do fragmento:** Especifique o título do Fragmento de experiência. O título identifica exclusivamente um Fragmento de experiência
 

@@ -2,10 +2,10 @@
 title: Jornada de autor de conteúdo do AEM Commerce
 description: Comece aqui uma jornada guiada pela criação do AEM Commerce
 exl-id: 155a2534-746d-4237-b7e2-9212c36fac7f
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '457'
-ht-degree: 91%
+source-wordcount: '453'
+ht-degree: 81%
 
 ---
 
@@ -25,9 +25,9 @@ Este guia aborda os tópicos mais importantes de criação do AEM Content and Co
 
 ## Jornadas de documentação do AEM {#documentation-journeys}
 
-[Uma Jornada de documentação](/help/journey-documentation/documentation-journeys.md) une vários tópicos e recursos diferentes e talvez complicados, fornecendo uma narrativa que ajuda o leitor, que pode ser novo no AEM, a entender e resolver um problema da empresa do começo ao fim, assumindo o mínimo de conhecimento prévio do tópico ou do AEM.
+[Uma Jornada de documentação](/help/journey-documentation/documentation-journeys.md) une vários tópicos e recursos diferentes e complicados, fornecendo uma narrativa que ajuda o leitor, que pode ser novo no AEM, a entender e resolver um problema empresarial do começo ao fim, assumindo o mínimo de conhecimento prévio sobre o tópico ou AEM.
 
-As Jornadas de documentação foram projetadas com princípios de práticas recomendadas, informadas pela última pesquisa da Adobe, experiência comprovada de implementação dos consultores da Adobe e feedback de projetos de clientes.
+As jornadas de documentação foram projetadas com base nas práticas recomendadas, informadas pela última pesquisa da Adobe, na experiência comprovada de implementação dos consultores da Adobe e no feedback de projetos de clientes.
 
 Se quiser saber como a Adobe recomenda resolver casos de negócios de sites com o AEM, as jornadas do AEM Sites são um ótimo ponto de partida.
 
@@ -35,7 +35,7 @@ Se quiser saber como a Adobe recomenda resolver casos de negócios de sites com 
 
 Esta jornada foi projetada para o autor de conteúdo do AEM Commerce. Esta jornada apresenta os requisitos, as etapas e a abordagem para começar e gerenciar páginas de catálogo, modelos e experiências completas do produto.
 
-As informações nesta jornada podem, é claro, ser úteis para outros perfis, mas algumas informações são supérfluas para determinadas funções. Fique atento para jornadas futuras que abordarão funções adicionais.
+As informações nesta jornada podem ser úteis para outros perfis, mas algumas informações são supérfluas para determinadas funções. Fique atento para jornadas futuras que abordarão funções adicionais.
 
 ## A jornada {#the-journey}
 

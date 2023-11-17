@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 9e94afeb-1c54-4653-bf52-b0910c0cb6c1
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2642'
-ht-degree: 9%
+source-wordcount: '2638'
+ht-degree: 11%
 
 ---
 
@@ -41,18 +41,18 @@ Para exibir uma lista de formulários ou modelos, em [!DNL Experience Manager] i
 
 [!DNL Experience Manager] O fornece os seguintes modelos de formulário de esquema de metadados.
 
-| Modelos |  | Descrição |
+| Modelos | | Descrição |
 |---|---|---|
-| [!UICONTROL default] |  | O formulário básico de esquema de metadados para ativos. |
-|  | Os seguintes formulários secundários herdam as propriedades da [!UICONTROL padrão] formulário: |  |
-|  | <ul><li>[!UICONTROL dm_video]</li></ul> | Formulário de esquema para vídeos do Dynamic Media. |
-|  | <ul><li>[!UICONTROL imagem]</li></ul> | Formulário de esquema para imagens com o tipo MIME, como `image/jpeg` e `image/png`. <br> A variável [!UICONTROL imagem] O formulário tem os seguintes modelos de formulário filho: <ul><li> [!UICONTROL jpeg]: formulário de esquema para ativos com subtipo [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff]: formulário do esquema para os ativos com TIFF de subtipo.</li></ul> |
-|  | <ul><li>[!UICONTROL aplicativo]</li></ul> | Formulário de esquema para ativos com tipo MIME, como `application/pdf` e `application/zip`. <br>[!UICONTROL pdf]: formulário de esquema para ativos com PDF de subtipo. |
-|  | <ul><li>[!UICONTROL vídeo]</li></ul> | Formulário de esquema para ativos de vídeo com tipo MIME, como `video/avi` e `video/mp4`. |
-| [!UICONTROL coleção] |  | Formulário de esquema para coleções. |
-| [!UICONTROL contentfragment] |  | Formulário de esquema dos Fragmentos de conteúdo. |
-| [!UICONTROL formulários] |  | Este formulário de esquema está relacionado a [!DNL Adobe Experience Manager Forms]. |
-| [!UICONTROL ugc_contentfragment] |  | Formulário de esquema para partes de conteúdo gerado pelo usuário e ativos integrados no Experience Manager de redes sociais. |
+| [!UICONTROL default] | | O formulário básico de esquema de metadados para ativos. |
+| | Os seguintes formulários secundários herdam as propriedades da [!UICONTROL padrão] formulário: | |
+| | <ul><li>[!UICONTROL dm_video]</li></ul> | Formulário de esquema para vídeos do Dynamic Media. |
+| | <ul><li>[!UICONTROL imagem]</li></ul> | Formulário de esquema para imagens com o tipo MIME, como `image/jpeg` e `image/png`. <br> A variável [!UICONTROL imagem] O formulário tem os seguintes modelos de formulário filho: <ul><li> [!UICONTROL jpeg]: formulário de esquema para ativos com subtipo [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff]: formulário do esquema para os ativos com TIFF de subtipo.</li></ul> |
+| | <ul><li>[!UICONTROL aplicativo]</li></ul> | Formulário de esquema para ativos com tipo MIME, como `application/pdf` e `application/zip`. <br>[!UICONTROL pdf]: formulário de esquema para ativos com PDF de subtipo. |
+| | <ul><li>[!UICONTROL vídeo]</li></ul> | Formulário de esquema para ativos de vídeo com tipo MIME, como `video/avi` e `video/mp4`. |
+| [!UICONTROL coleção] | | Formulário de esquema para coleções. |
+| [!UICONTROL contentfragment] | | Formulário de esquema dos Fragmentos de conteúdo. |
+| [!UICONTROL formulários] | | Este formulário de esquema está relacionado a [!DNL Adobe Experience Manager Forms]. |
+| [!UICONTROL ugc_contentfragment] | | Formulário de esquema para partes de conteúdo gerado pelo usuário e ativos integrados no Experience Manager de redes sociais. |
 
 >[!NOTE]
 >
@@ -92,12 +92,12 @@ A variável **[!UICONTROL Formulário de criação]** A guia lista itens de form
 | -------------------------------- | ----------------------------------------------------------------------------------- |
 | [!UICONTROL Cabeçalho da seção] | Adicione um cabeçalho de seção para obter uma lista de componentes comuns. |
 | [!UICONTROL Texto em linha única] | Adicione uma propriedade de texto de linha única. Ele é armazenado como uma string. |
-| [!UICONTROL Texto multivalor] | Adicione uma propriedade de texto de vários valores. Ele é armazenado como uma matriz de sequência. |
-| [!UICONTROL Número] | Adicione um componente de número. |
-| [!UICONTROL Data] | Adicione um componente de data. |
-| [!UICONTROL Lista suspensa] | Adicione uma lista suspensa. |
+| [!UICONTROL Texto multivalor] | Adiciona uma propriedade de texto multivalor. Ele é armazenado como uma matriz de sequência. |
+| [!UICONTROL Número] | Adiciona um componente de número. |
+| [!UICONTROL Data] | Adiciona um componente de data. |
+| [!UICONTROL Lista suspensa] | Adiciona uma lista suspensa. |
 | [!UICONTROL Tags padrão] | Adicionar uma tag. |
-| [!UICONTROL Tags inteligentes] | Adicione para aumentar os recursos de pesquisa adicionando tags de metadados automaticamente. |
+| [!UICONTROL Tags inteligentes] | Adicione para aumentar os recursos de pesquisa inserindo tags de metadados automaticamente. |
 | [!UICONTROL Campo oculto] | Adicione um campo oculto. Ele é enviado como um parâmetro POST quando o ativo é salvo. |
 | [!UICONTROL Ativo referenciado por] | Adicione este componente para visualizar a lista de ativos referenciados pelo ativo. |
 | [!UICONTROL Fazer referência ao ativo] | Adicionar para exibir uma lista de ativos que fazem referência ao ativo. |
@@ -173,7 +173,6 @@ Para excluir um formulário, selecione-o e clique no ícone excluir.
 >* Após excluir as alterações personalizadas em um formulário padrão, o bloqueio ![bloqueio fechado](assets/do-not-localize/lock_closed_icon.svg) reaparece antes do formulário. Indica que o formulário é revertido para seu estado padrão.
 >* Não é possível excluir os formulários de esquema de metadados padrão no [!DNL Assets].
 
-
 ## Formulários de esquema para tipos MIME {#schema-forms-for-mime-types}
 
 [!DNL Experience Manager] O fornece formulários padrão para vários tipos MIME prontos para uso. No entanto, é possível adicionar formulários personalizados para ativos de vários tipos MIME.
@@ -229,8 +228,8 @@ A herança de metadados por ativos tem como base o esquema aplicado à pasta de 
 1. No **[!UICONTROL Forms do esquema de metadados]** selecione a `my_default` e clique em **[!UICONTROL Editar]**.
 1. No **[!UICONTROL Editor de esquema de metadados]** adicione um campo de texto ao formulário de esquema. Por exemplo, adicionar um campo com o rótulo **[!UICONTROL Categoria]**.
 1. Clique em **[!UICONTROL Salvar]**. O formulário modificado está listado no **[!UICONTROL Forms do esquema de metadados]** página.
-1. Clique/toque **[!UICONTROL Aplicar às pastas]** na barra de ferramentas para aplicar os metadados personalizados a uma pasta.
-1. Selecione a pasta na qual aplicar o esquema modificado e clique/toque **[!UICONTROL Aplicar]**.
+1. Selecionar **[!UICONTROL Aplicar às pastas]** na barra de ferramentas para aplicar os metadados personalizados a uma pasta.
+1. Selecione a pasta na qual aplicar o esquema modificado e selecione **[!UICONTROL Aplicar]**.
 1. Se a pasta tiver o outro esquema de metadados aplicado, uma mensagem será exibida avisando que você está prestes a substituir o esquema de metadados existente. Clique em **Substituir**.
 1. Clique em **OK** para fechar a mensagem de sucesso.
 1. Navegue até a pasta à qual você aplicou o esquema de metadados modificado.
@@ -246,7 +245,7 @@ Você pode definir campos obrigatórios no nível da pasta, que é aplicado aos 
 1. Clique no logotipo do Experience Manager e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Assets]** > **[!UICONTROL Esquemas de metadados]**. A página **[!UICONTROL Formulários de esquema de metadados]** é exibida.
 1. Salve o formulário de metadados padrão como um formulário personalizado. Por exemplo, salve como `my_default`.
 1. Edite o formulário personalizado. Adicione um campo obrigatório. Por exemplo, adicione um **[!UICONTROL Categoria]** e torne o campo obrigatório.
-1. Clique em **[!UICONTROL Salvar]**. O formulário modificado está listado no **[!UICONTROL Forms do esquema de metadados]** página. Selecione o formulário e clique ou toque em **[!UICONTROL Aplicar às pastas]** na barra de ferramentas para aplicar os metadados personalizados a uma pasta.
+1. Clique em **[!UICONTROL Salvar]**. O formulário modificado está listado no **[!UICONTROL Forms do esquema de metadados]** página. Selecione o formulário e **[!UICONTROL Aplicar às pastas]** na barra de ferramentas para aplicar os metadados personalizados a uma pasta.
 1. Navegue até a pasta e faça upload de alguns ativos com metadados ausentes para o campo obrigatório adicionado ao formulário personalizado. Uma mensagem para os metadados ausentes do campo obrigatório é exibida na exibição Cartão do ativo.
 1. (Opcional) Acesso `https://[server]:[port]/system/console/components/`. Configurar e habilitar `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` componente desativado por padrão. Defina uma frequência na qual o Experience Manager verifica a validade dos metadados nos ativos.
 

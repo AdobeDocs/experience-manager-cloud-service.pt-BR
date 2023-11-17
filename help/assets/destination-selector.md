@@ -4,9 +4,9 @@ description: Use o Seletor de destino do AEM para mostrar e selecionar ativos qu
 contentOwner: Adobe
 role: Admin,User
 exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: 96a82439c51c22125c206b4e912e85e0bf603498
 workflow-type: tm+mt
-source-wordcount: '1906'
+source-wordcount: '1904'
 ht-degree: 36%
 
 ---
@@ -259,7 +259,7 @@ O Seletor de destino também permite exibir os dados do repositório de sua esco
 
 É um exemplo da `optionsFormSetup` propriedade. Você pode usar isso para confirmar a seleção, ela será transmitida ao `onConfirm` evento.
 
-### Crie uma nova pasta {#create-new-folder}
+### Crie uma pasta  {#create-new-folder}
 
 Ele permite criar uma pasta na pasta de destino do seu [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 
@@ -274,7 +274,7 @@ O Seletor de destino permite exibir o ativo em quatro exibições diferentes:
 
 ### Informações {#info}
 
-O ícone de informações ou informações permite visualizar metadados do ativo selecionado. Ele inclui vários detalhes, como dimensões, tamanho, descrição, caminho, data de modificação e data de criação. As informações de metadados são fornecidas ao fazer upload, copiar ou criar um novo ativo.
+O ícone de informações ou informações permite visualizar metadados do ativo selecionado. Ele inclui vários detalhes, como dimensões, tamanho, descrição, caminho, data de modificação e data de criação. As informações de metadados são fornecidas ao fazer upload, copiar ou criar um ativo.
 
 ### Selecionar pasta {#select-folder}
 

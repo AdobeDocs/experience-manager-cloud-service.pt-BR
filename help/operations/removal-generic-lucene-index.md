@@ -2,9 +2,9 @@
 title: Remoção do índice Lucene genérico
 description: Saiba mais sobre a remoção planejada de índices Lucene genéricos e como você pode ser afetado.
 exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '1335'
 ht-degree: 0%
 
 ---

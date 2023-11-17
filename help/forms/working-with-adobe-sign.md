@@ -6,7 +6,7 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: 867b87e0b22fdc4f0466b517e8a04c18fb2dc860
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '3172'
 ht-degree: 1%
@@ -174,7 +174,7 @@ Para selecionar um Cloud Service e a ordem da assinatura:
 
    Em ordem sequencial, um recipient recebe o contrato do Adobe Sign de cada vez. Depois que o recipient concluir a ação atribuída, o contrato será enviado para o próximo recipient e assim por diante.
 
-   Em ordem simultânea, todos os recipients recebem o contrato do Adobe Sign e podem agir em paralelo.
+   Em ordem simultânea, todos os recipients recebem o contrato do Adobe Sign e podem agir em paralelo entre si.
 
 1. Use o Campo ID do contrato para associar um vínculo à ID do contrato (agreementId). Ele adiciona a ID do contrato à seção afBoundData de envio de dados para formulários baseados em esquema. A ID do contrato também é adicionada à seção afSubmissionInfo nos dados enviados para todos os formulários habilitados para Adobe Sign. Você pode usar a ID do contrato para rastrear o status do contrato usando o código personalizado (requer implementação personalizada).
 
@@ -286,7 +286,7 @@ Como opção, também é possível associar um vínculo à ID do Contrato (agree
 <!-- Remove when forms portal goes live
 >[!NOTE]
 >
->Data of the Adaptive Form is stored temporarily on Forms Portal. It is recommended to use [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. 
+>Data of the Adaptive Form is stored temporarily on Forms Portal. Adobe recommends using [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. 
 -->
 
 Sua experiência de assinatura de formulário está pronta. Você pode visualizar o formulário para verificar a experiência de assinatura. No formulário publicado, [!DNL Adobe Sign] Os campos de bloco são exibidos quando um recipient recebe o formulário para assinar por meio de um email. Quando a variável **[!UICONTROL Quando o recipient e a pessoa que preenche o formulário são a mesma pessoa?]** estiver marcada como sim e a condição for atendida, o usuário será redirecionado para o contrato do Adobe Sign após os envios e poderá Assinar o documento imediatamente, em vez de aguardar que o contrato seja exibido no email.

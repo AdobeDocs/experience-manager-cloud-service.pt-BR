@@ -2,9 +2,9 @@
 title: Editar conteúdo da página
 description: Depois que a página é criada, é possível editar o conteúdo para fazer as atualizações necessárias
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2975'
+source-wordcount: '2973'
 ht-degree: 93%
 
 ---
@@ -341,7 +341,7 @@ Em vez de repetidamente alternar entre os modos de edição e de [layout](/help/
 
    ![A barra de ferramentas do componente de um componente de página](/help/sites-cloud/authoring/assets/editing-layout-toolbar.png)
 
-   Clique ou toque na ação **Layout** para definir o layout do componente.
+   Selecione o **Layout** ação para ajustar o layout do componente.
 
    ![O botão Layout da barra de ferramentas do componente](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
 

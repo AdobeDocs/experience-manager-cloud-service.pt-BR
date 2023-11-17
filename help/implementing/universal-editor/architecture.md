@@ -2,10 +2,10 @@
 title: Arquitetura do Editor universal
 description: Saiba mais sobre a arquitetura do Editor universal e como os dados fluem entre seus serviços e camadas.
 exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
-source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '651'
-ht-degree: 100%
+source-wordcount: '650'
+ht-degree: 91%
 
 ---
 
@@ -29,7 +29,7 @@ Este documento descreve cada um desses blocos de construção e como eles trocam
 
 >[!TIP]
 >
->Se quiser ver o Editor universal e sua arquitetura em ação, consulte o documento [Introdução ao Editor universal no AEM](getting-started.md) para saber como obter acesso a esse recurso e começar a instrumentar seu primeiro aplicativo do AEM para utilizá-lo.
+>Para ver o Universal Editor e sua arquitetura em ação, consulte [Introdução ao editor universal no AEM](getting-started.md) para saber como obter acesso ao Universal Editor e como começar a instrumentar seu primeiro aplicativo AEM para usá-lo.
 
 ### Editores {#editors}
 
@@ -50,7 +50,7 @@ O Editor universal busca manter um SDK simples, portanto, a instrumentação é 
 ### Camada de persistência {#persistence-layer}
 
 * **Modelo de fragmento de conteúdo**: para que o painel permita a edição das propriedades de fragmentos de conteúdo, do Editor de fragmento de conteúdo e dos editores baseados em formulário, são necessários modelos por componente e fragmento de conteúdo.
-* **Conteúdo**: o conteúdo pode ser armazenado em qualquer lugar, como no AEM, Magento etc.
+* **Conteúdo** - O conteúdo pode ser armazenado em qualquer lugar, como em AEM, Magento e assim por diante.
 
 ![Camada de persistência](assets/persistence-layer.png)
 

@@ -2,10 +2,10 @@
 title: Recuperar informações de acesso do repositório Git
 description: Saiba como o desenvolvedor de front-end usa o Cloud Manager para acessar informações do repositório Git.
 exl-id: 3ef1cf86-6da4-4c09-9cfc-acafc8f6dd5c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '889'
-ht-degree: 93%
+source-wordcount: '880'
+ht-degree: 83%
 
 ---
 
@@ -78,7 +78,7 @@ Se não recebeu esse email, entre em contato com o administrador do Cloud Manage
 
 1. Faça logon no Adobe Experience Cloud em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) ou clique no link fornecido no email de boas-vindas.
 
-1. O Cloud Manager lista os vários programas disponíveis. Toque ou clique naquele que você precisa acessar, conforme fornecido pelo administrador do Cloud Manager. Se esse for seu primeiro projeto de front-end para AEMaaCS, você provavelmente terá apenas um programa disponível.
+1. O Cloud Manager lista os vários programas disponíveis. Selecione aquele que você precisa acessar, conforme fornecido pelo administrador do Cloud Manager. Se esse for seu primeiro projeto de front-end para AEMaaCS, você provavelmente terá apenas um programa disponível.
 
    ![Seleção de um programa no Cloud Manager](assets/cloud-manager-select-program.png)
 
@@ -88,7 +88,7 @@ Você está vendo uma visão geral do seu programa. Sua página será diferente,
 
 ## Recuperar informações de acesso do repositório  {#repo-access}
 
-1. Na seção **Pipelines** da página do Cloud Manager, toque ou clique no botão **Acessar informações do repositório**.
+1. No **Pipelines** da página do Cloud Manager, selecione a variável **Acessar informações do repositório** botão.
 
    ![Pipelines](assets/pipelines-repo-info.png)
 
@@ -96,13 +96,13 @@ Você está vendo uma visão geral do seu programa. Sua página será diferente,
 
    ![Informações do repositório](assets/repo-info.png)
 
-1. Toque ou clique no botão **Gerar senha** e crie uma senha para você mesmo.
+1. Selecione o **Gerar senha** botão para criar uma senha para você mesmo.
 
 1. Salve a senha gerada em um gerenciador de senhas seguro. A senha nunca será exibida novamente.
 
 1. Copie também os campos **username** e **linha de comando Git**. Você usará essas informações posteriormente para acessar o repositório.
 
-1. Toque ou clique em **Fechar**.
+1. Selecionar **Fechar**.
 
 ## O que vem a seguir {#what-is-next}
 

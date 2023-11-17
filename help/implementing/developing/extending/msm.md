@@ -2,9 +2,9 @@
 title: Extensão do gerenciador de vários sites
 description: Saiba como estender a funcionalidade do Gerenciador de vários sites.
 exl-id: 4b7a23c3-65d1-4784-9dea-32fcceca37d1
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2435'
+source-wordcount: '2425'
 ht-degree: 1%
 
 ---
@@ -106,11 +106,11 @@ A variável `LiveActionFactory` cria instâncias do `LiveAction` classe para uma
 
 Use o `LiveAction` no repositório para armazenar informações que afetam o comportamento do tempo de execução do `LiveAction` instância. O nó no repositório que armazena a variável `LiveAction` está disponível para a variável `LiveActionFactory` objeto no tempo de execução. Portanto, você pode adicionar propriedades ao nó de configuração a e usá-las no `LiveActionFactory` conforme necessário.
 
-Por exemplo, uma variável `LiveAction` precisa armazenar o nome do autor do blueprint. Uma propriedade do nó de configuração inclui o nome da propriedade da página do blueprint que armazena as informações. No tempo de execução, a variável `LiveAction` recupera o nome da propriedade da configuração e obtém o valor da propriedade.
+Por exemplo, uma variável `LiveAction` deve armazenar o nome do autor do blueprint. Uma propriedade do nó de configuração inclui o nome da propriedade da página do blueprint que armazena as informações. No tempo de execução, a variável `LiveAction` recupera o nome da propriedade da configuração e obtém o valor da propriedade.
 
 O parâmetro do [`LiveActionFactory.createAction`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) é um método `Resource` objeto. Este `Resource` o objeto representa o `cq:LiveSyncAction` para esta ação ativa na configuração de implantação.
 
-Consulte o documento [Criação de uma configuração de implantação](/help/sites-cloud/administering/msm/live-copy-sync-config.md#creating-a-rollout-configuration) para obter mais informações.
+Consulte [Criação de uma configuração de implantação](/help/sites-cloud/administering/msm/live-copy-sync-config.md#creating-a-rollout-configuration) para obter mais informações.
 
 Como de costume, ao usar um nó de configuração, você deve adaptá-lo a um `ValueMap` objeto:
 
@@ -136,7 +136,7 @@ Os seguintes objetos são fornecidos como parâmetros da variável `execute` mé
    * A variável `autoSave` indica se o `LiveAction` deve salvar as alterações feitas no repositório
    * A variável `reset` indica o modo de redefinição de implantação.
 
-A partir desses objetos, você pode obter todas as informações sobre o `LiveCopy`. Você também pode usar a variável `Resource` objetos a serem obtidos `ResourceResolver`, `Session`, e `Node` objetos. Esses objetos são úteis para manipular o conteúdo do repositório:
+A partir desses objetos, você pode obter informações sobre o `LiveCopy`. Você também pode usar a variável `Resource` objetos a serem obtidos `ResourceResolver`, `Session`, e `Node` objetos. Esses objetos são úteis para manipular o conteúdo do repositório:
 
 Na primeira linha do código a seguir, a origem é o `Resource` objeto da página de origem:
 
@@ -349,7 +349,7 @@ Adicione dependências para que o compilador Eclipse possa referenciar as classe
 
 As seguintes `LiveActionFactory` a classe implementa uma `LiveAction` que registra mensagens sobre as páginas de origem e de destino e copia a variável `cq:lastModifiedBy` do nó de origem para o nó de destino. O nome da ação dinâmica é `exampleLiveAction`.
 
-1. No Eclipse Project Explorer, clique com o botão direito do mouse no `MyLiveActionFactory-bundle/src/main/java/com.adobe.example.msm` e clique em **Novo** -> **Classe**.
+1. No Eclipse Project Explorer, clique com o botão direito do mouse no `MyLiveActionFactory-bundle/src/main/java/com.adobe.example.msm` e clique em **Novo** > **Classe**.
 
 1. Para o **Nome**, insira `ExampleLiveActionFactory` e clique em **Concluir**.
 
@@ -617,7 +617,7 @@ Em seguida, é necessário garantir que:
 * Email de contato:
 
    * É excluído das propriedades implantadas.
-   * Consulte o documento [Configurar a sincronização da Live Copy](/help/sites-cloud/administering/msm/live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) para obter mais informações.
+   * Consulte [Configurar a sincronização da Live Copy](/help/sites-cloud/administering/msm/live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) para obter mais informações.
 
 * Estilo visual da chave:
 

@@ -2,10 +2,10 @@
 title: Fragmentos de conteúdo - Excluir considerações (Ativos - Fragmentos de conteúdo)
 description: Analise essas considerações importantes antes de definir as políticas de exclusão de fragmentos de conteúdo no AEM. Os fragmentos de conteúdo são uma ferramenta eficiente para fornecer conteúdo headless, e as implicações de excluí-los devem ser cuidadosamente consideradas.
 exl-id: 69c08f2f-4d51-4aea-957e-ee81c4604377
-source-git-commit: 5c59189abf809293a319d6bce4ef7389c2451f92
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '472'
-ht-degree: 94%
+source-wordcount: '470'
+ht-degree: 91%
 
 ---
 
@@ -21,14 +21,14 @@ Com relação às permissões de exclusão, os fragmentos de conteúdo devem ser
 
 1. **O fragmento do conteúdo como uma única entidade.**
 
-   * **Caso de uso**: um usuário que precisa editar/atualizar um fragmento de conteúdo **e excluir um fragmento inteiro**.
+   * **Caso de uso**: um usuário que deve editar/atualizar um fragmento de conteúdo - **e excluir um fragmento inteiro**.
    * **Permissões**: a permissão de exclusão pode ser atribuída por meio do gerenciamento de usuários e/ou de grupos. <!-- The [Delete](/help/sites-administering/security.md#actions) permission can be [assigned through User and/or Group Management](/help/sites-administering/security.md#managing-permissions). -->
 
 2. **As várias entidades secundárias que compõem um fragmento de conteúdo; por exemplo, variações, nós secundários.**
 
    A operação básica do editor de fragmentos de conteúdo requer que esses elementos transitórios secundários possam ser excluídos. Por exemplo, ao manipular variações; também ao editar metadados ou gerenciar conteúdo associado.
 
-   * **Caso de uso**: um usuário que precisa editar/atualizar um fragmento de conteúdo, mas **sem ter permissão para excluir um fragmento inteiro**.
+   * **Caso de uso**: um usuário que deve editar/atualizar um fragmento de conteúdo - **sem ter permissão para excluir um fragmento inteiro**.
    * **Permissões**: consulte [Permissões necessárias somente para funcionalidade de edição](#permissions-required-for-editor-functionality-only).
 
 >[!NOTE]

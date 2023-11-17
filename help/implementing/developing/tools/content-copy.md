@@ -2,10 +2,10 @@
 title: A ferramenta de cópia de conteúdo
 description: A ferramenta de cópia de conteúdo permite que os usuários copiem conteúdo mutável sob demanda de seus ambientes de produção no AEM as a Cloud Service para ambientes inferiores para fins de teste.
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
-source-git-commit: 361881807e8704dfcb27075365cb73a7f659c82d
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1306'
-ht-degree: 38%
+source-wordcount: '1292'
+ht-degree: 35%
 
 ---
 
@@ -41,7 +41,7 @@ Para usar a ferramenta de cópia de conteúdo, determinadas permissões são nec
 | Criar e modificar [conjuntos de conteúdo](#create-content-set) | Não obrigatório | Obrigatório |
 | Iniciar ou cancelar o [processo de cópia de conteúdo](#copy-content) | Obrigatório | Obrigatório |
 
-Para obter mais detalhes sobre permissões e como defini-las, consulte o documento [Equipe as a Cloud Service e perfis de produto do AEM.](/help/onboarding/aem-cs-team-product-profiles.md)
+Para obter mais detalhes sobre permissões e como defini-las, consulte [Equipe as a Cloud Service do AEM e perfis de produto](/help/onboarding/aem-cs-team-product-profiles.md).
 
 ## Criação de um conjunto de conteúdo {#create-content-set}
 
@@ -57,7 +57,7 @@ Antes que qualquer conteúdo possa ser copiado, um conjunto de conteúdo deve se
 
    ![Conjuntos de conteúdo](assets/content-sets.png)
 
-1. Na guia **Detalhes** do assistente, forneça um nome e uma descrição para o conjunto de conteúdo e toque ou clique em **Continuar**.
+1. No **Detalhes** do assistente, forneça um nome e uma descrição para o conjunto de conteúdo e selecione **Continuar**.
 
    ![Detalhes do conjunto de conteúdo](assets/add-content-set-details.png)
 
@@ -74,8 +74,8 @@ Antes que qualquer conteúdo possa ser copiado, um conjunto de conteúdo deve se
 
    1. Na lista de caminhos incluídos, clique em **Adicionar subcaminhos de exclusão** ao lado do caminho que deseja restringir.
    1. Insira o subcaminho a ser excluído abaixo do caminho selecionado.
-   1. Toque ou clique em **Excluir caminho**.
-   1. Toque ou clique em **Adicionar subcaminhos de exclusão** novamente para adicionar caminhos adicionais a serem excluídos, se necessário.
+   1. Selecionar **Excluir caminho**.
+   1. Selecionar **Adicionar subcaminhos de exclusão** novamente para adicionar outros caminhos a serem excluídos, conforme necessário.
       * Os caminhos excluídos devem ser relativos ao caminho incluído.
       * Não há limite para o número de caminhos excluídos.
 
@@ -88,7 +88,7 @@ Antes que qualquer conteúdo possa ser copiado, um conjunto de conteúdo deve se
 
    ![Editar lista de caminhos](assets/add-content-set-excluded-paths.png)
 
-1. Toque ou clique em **Criar** para criar o conjunto de conteúdo.
+1. Selecionar **Criar** para criar o conjunto de conteúdo.
 
 O conjunto de conteúdo agora pode ser usado para copiar conteúdo entre ambientes.
 
@@ -136,7 +136,7 @@ Após criar um conjunto de conteúdo, você pode usá-lo para copiar o conteúdo
 
 1. Se necessário, também é possível optar por **Incluir listas de controle de acesso** no processo de cópia.
 
-1. Toque ou clique em **Copiar**.
+1. Selecionar **Copiar**.
 
 O processo de cópia será iniciado. O status do processo de cópia é exibido no console do conjunto de conteúdo selecionado.
 

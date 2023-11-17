@@ -2,7 +2,7 @@
 title: Criação e gerenciamento de exibições no Screens as a Cloud Service
 description: Esta página descreve como criar e gerenciar exibições no Screens as a Cloud Service.
 exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '657'
 ht-degree: 3%

@@ -2,7 +2,7 @@
 title: Gerenciamento de listas de permissões de IP
 description: Saiba como exibir, editar, excluir e verificar o status das listas de permissões de IP no Cloud Manager.
 exl-id: 6efabe53-3f45-47d4-ac1f-979cae0ab33e
-source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '784'
 ht-degree: 52%

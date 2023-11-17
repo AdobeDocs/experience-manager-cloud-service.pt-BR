@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 831009b8-8e09-4b0f-b0fd-4e21221c1455
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '788'
-ht-degree: 96%
+source-wordcount: '776'
+ht-degree: 86%
 
 ---
 
@@ -27,7 +27,7 @@ Agora que seu conector está configurado, este artigo o conduzirá até a próxi
 
 ## Objetivo {#objective}
 
-Este documento ajuda você a entender como usar as regras de tradução do AEM para identificar o conteúdo da tradução. Após ler este documento, você deve:
+Este documento ajuda você a entender como usar as regras de tradução do AEM para identificar o conteúdo da tradução. Depois de ler este documento, você deverá:
 
 * Entenda o que as regras de tradução fazem.
 * Ser capaz de definir suas próprias regras de tradução.
@@ -57,22 +57,22 @@ Existe um console **Configuração de tradução** disponível para configurar r
 
 Para acessá-lo:
 
-1. Navegue até **Ferramentas** -> **Geral**.
-1. Toque ou clique em **Configuração de tradução**.
+1. Navegue até **Ferramentas** > **Geral**.
+1. Selecione **Configurações de tradução**.
 
 O AEM cria automaticamente regras de tradução para todo o conteúdo. Para visualizar essas regras:
 
-1. Selecione o contexto `/content` e, em seguida, a opção **Editar** na barra de ferramentas.
+1. Selecione o `/content` contexto.
+1. Na barra de ferramentas, selecione o **Editar**.
 1. O Editor de regras de tradução é aberto com as regras que o AEM criou automaticamente para o caminho `/content`.
 
    ![Editor de regras de tradução](assets/translation-rules-editor.png)
 
 1. As propriedades das páginas que serão traduzidas estão localizadas na seção **Geral** da lista. Você pode adicionar ou atualizar nomes de propriedades existentes que deseja incluir explicitamente na tradução.
-   1. Insira o nome da propriedade no campo **Nova propriedade**.
-   1. As opções **Traduzir** e **Herdar** são marcadas automaticamente.
-   1. Toque ou clique em **Adicionar**.
+   1. No **Nova propriedade** insira o nome da propriedade. As opções **Traduzir** e **Herdar** são marcadas automaticamente.
+   1. Selecionar **Adicionar**.
    1. Repita essas etapas para todos os campos que devem ser traduzidos.
-   1. Toque ou clique em **Salvar**.
+   1. Selecione **Salvar**.
 
 Agora, você configurou as regras de tradução.
 

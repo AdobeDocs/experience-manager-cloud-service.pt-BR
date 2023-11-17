@@ -4,7 +4,7 @@ description: Mover, excluir, copiar, renomear, atualizar e criar versões de seu
 role: User,Leader
 contentOwner: AG
 exl-id: b01e98b9-0cc2-47c5-9f5b-79b8e6bef39f
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1034'
 ht-degree: 92%
@@ -104,7 +104,7 @@ Para definir o status do ativo:
 
 1. Selecione o ativo e clique em **[!UICONTROL Detalhes]** na barra de ferramentas.
 
-1. Na guia **[!UICONTROL Básico]** selecione o status do ativo na lista suspensa de **[!UICONTROL Status]**. Os valores possíveis incluem Aprovado, Rejeitado e Sem status (padrão).
+1. No **[!UICONTROL Básico]** selecione o status do ativo na guia **[!UICONTROL Status]** lista suspensa. Os valores possíveis incluem Aprovado, Rejeitado e Sem status (padrão).
 
    >[!VIDEO](https://video.tv.adobe.com/v/342495)
 
@@ -143,7 +143,7 @@ Para adicionar o campo de metadados Data de expiração ao formulário, arraste 
 
 * [Assista a um vídeo sobre gerenciamento de ativos na visualização de Ativos](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/managing.html?lang=pt-BR)
 
-* Forneça feedback sobre o produto usando o [!UICONTROL Feedback] opção disponível na interface de exibição do Assets
+* Forneça feedback sobre o produto usando a opção [!UICONTROL Feedback] disponível na interface de visualização do Assets
 
 * Forneça feedback sobre a documentação usando as opções [!UICONTROL Editar esta página] ![editar a página](assets/do-not-localize/edit-page.png) ou [!UICONTROL Registrar um problema] ![criar um problema do GitHub](assets/do-not-localize/github-issue.png) disponíveis na barra lateral direita
 

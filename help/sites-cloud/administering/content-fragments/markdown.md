@@ -3,13 +3,13 @@ title: Markdown
 description: Entenda como o editor de Fragmento de conteúdo usa a sintaxe de Markdown para permitir que você crie conteúdo facilmente para a criação de páginas e entrega headless.
 feature: Content Fragments
 role: User
-source-git-commit: af97fec754edae6216551763fd20cad5ee07179c
+exl-id: 6fbf8128-3b7f-4eda-bbbd-3336578d2586
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '557'
-ht-degree: 91%
+source-wordcount: '559'
+ht-degree: 88%
 
 ---
-
 
 # Markdown {#markdown}
 

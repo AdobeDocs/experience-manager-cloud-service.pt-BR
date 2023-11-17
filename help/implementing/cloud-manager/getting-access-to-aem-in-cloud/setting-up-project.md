@@ -2,10 +2,10 @@
 title: Configuração do projeto
 description: Saiba como os projetos do AEM são compilados no Maven e os padrões que você deve observar ao criar seu próprio projeto.
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1404'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '1399'
+ht-degree: 97%
 
 ---
 
@@ -110,7 +110,7 @@ Além disso, se você quiser gerar uma mensagem simples apenas quando a compila�
 
 >[!NOTE]
 >
->Os artefatos de um repositório Maven protegido por senha devem ser usados com muito cuidado, pois o código implantado por meio desse mecanismo não é executado atualmente em todas as [regras de qualidade do código](/help/implementing/cloud-manager/custom-code-quality-rules.md) implementadas nos quality gates (portais de qualidade) do Cloud Manager. Por isso, somente devem ser usados em casos raros e para código não vinculado ao AEM. É aconselhável implantar também as fonte Java e todo o código-fonte do projeto junto com o binário.
+>Os artefatos de um repositório Maven protegido por senha devem ser usados com cuidado, pois o código implantado por meio desse mecanismo não é executado no momento [regras de qualidade do código](/help/implementing/cloud-manager/custom-code-quality-rules.md) implementado nos quality gates (portais de qualidade) do Cloud Manager. Por isso, somente devem ser usados em casos raros e para código não vinculado ao AEM. É aconselhável implantar também as fonte Java e todo o código-fonte do projeto junto com o binário.
 
 Para usar um repositório do Maven protegido por senha no Cloud Manager:
 

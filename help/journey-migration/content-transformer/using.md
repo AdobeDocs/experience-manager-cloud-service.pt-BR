@@ -1,9 +1,10 @@
 ---
 title: Usar o transformador de conteúdo
 description: Saiba como transformar sua estrutura de conteúdo em preparação para migrar para o AEM as a Cloud Service.
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+exl-id: 40516ff7-5686-42e6-bdd1-c9c6de432b09
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '642'
 ht-degree: 2%
 
 ---
@@ -62,7 +63,7 @@ O transformador de conteúdo é fornecido com o [Ferramenta Transferência de co
    >[!NOTE]
    > Qualquer operação que possa alterar o conteúdo de origem (`move`/`remove`/`rename`) criará por padrão um pacote de backup dos caminhos de origem em `/etc/packages/content-transformation` antes da transformação. Embora cada caixa de diálogo de operação tenha uma opção para desabilitar/habilitar a criação de pacote de backup, é estritamente recomendável ter sempre a opção habilitar criação de pacote selecionada.
 
-1. Um exemplo de pacote de backup criado para a operação de movimentação dos caminhos é mostrado abaixo. Clique em Instalar para trazer de volta os caminhos de origem. Observe que a instalação só trará os caminhos de origem de volta ao local original e não excluirá os caminhos para onde foram movidos durante a transformação. Para excluir os caminhos no local movido, clique em **Adicionar caminhos** botão para adicionar a localização (por exemplo, `/etc/packages/content-transformation/paths`), selecione o local e clique em **Remover**.
+1. Um exemplo de pacote de backup criado para a operação de movimentação dos caminhos é mostrado abaixo. Clique em Instalar para trazer de volta os caminhos de origem. A instalação traz apenas os caminhos de origem de volta ao local original e não exclui os caminhos para onde foram movidos durante a transformação. Para excluir os caminhos no local movido, clique em **Adicionar caminhos** botão para adicionar a localização (por exemplo, `/etc/packages/content-transformation/paths`), selecione o local e clique em **Remover**.
 
    >[!CAUTION]
    > Não excluir `/etc/packages/content-transformation` pois esse é o local onde residem os pacotes de backup. Somente quando tiver certeza de que não precisa mais desses pacotes, poderá excluir esse local para reduzir o tamanho do repositório.

@@ -3,10 +3,10 @@ title: Práticas recomendadas de consulta e indexação
 description: Saiba como otimizar seus índices e consultas com base nas diretrizes de práticas recomendadas da Adobe.
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3133'
-ht-degree: 47%
+source-wordcount: '3128'
+ht-degree: 44%
 
 ---
 
@@ -85,7 +85,7 @@ A restrição primária em qualquer consulta deve ser uma correspondência de pr
 
 O mecanismo de consulta considera apenas um único índice. Isso significa que um índice existente pode e deve ser personalizado adicionando mais propriedades de índice personalizadas a ele.
 
-A seção [Folha de características de consulta JCR](#jcr-query-cheatsheet) deste documento lista as restrições disponíveis e também descreve como criar uma definição de índice adequada para uso. Use a [Ferramenta de desempenho da consulta](#query-performance-tool) para testar a consulta e garantir que o índice correto esteja sendo usado e que o mecanismo de consulta não precise avaliar restrições fora do índice.
+A variável [Folha de características de consulta JCR](#jcr-query-cheatsheet) A seção deste documento lista as restrições disponíveis e também descreve como deve ser uma definição de índice para que seja escolhida. Use a [Ferramenta de desempenho da consulta](#query-performance-tool) para testar a consulta e garantir que o índice correto esteja sendo usado e que o mecanismo de consulta não precise avaliar restrições fora do índice.
 
 ### Ordenação {#ordering}
 
@@ -239,7 +239,7 @@ Esta seção do plano indica que:
 
 Este plano de execução de consulta resultará em cada ativo abaixo de `/content/dam` sendo lidos a partir do índice e filtrados ainda mais pelo mecanismo de consulta (que incluirá somente aqueles que correspondem à restrição de propriedade não indexada no conjunto de resultados).
 
-Mesmo que apenas uma pequena porcentagem de ativos corresponda à restrição `jcr:content/metadata/myProperty = "My Property Value"`, a consulta precisa ler um grande número de nós para (tentar) preencher a &quot;página&quot; de resultados solicitada. Isso pode resultar em uma consulta com baixo desempenho, que será mostrada como tendo um baixo `Read Optimization` na ferramenta Desempenho da consulta) e pode levar a mensagens de AVISO indicando que um grande número de nós está sendo percorrido (consulte [Travessia de índice](#index-traversal)).
+Mesmo que apenas uma pequena porcentagem de ativos corresponda à restrição `jcr:content/metadata/myProperty = "My Property Value"`, a consulta deve ler um grande número de nós para (tentar) preencher a &quot;página&quot; de resultados solicitada. Isso pode resultar em uma consulta com baixo desempenho, que será mostrada como tendo um baixo `Read Optimization` na ferramenta Desempenho da consulta) e pode levar a mensagens de AVISO indicando que um grande número de nós está sendo percorrido (consulte [Travessia de índice](#index-traversal)).
 
 Para otimizar o desempenho desta segunda query, crie uma versão personalizada do `damAssetLucene-9` índice (`damAssetLucene-9-custom-1`) e adicione a seguinte definição de propriedade -
 
@@ -309,6 +309,7 @@ As consultas que usam um índice, mas ainda leem um grande número de nós, são
 ```
 
 Isso pode ocorrer por vários motivos:
+
 1. Nem todas as restrições na consulta podem ser tratadas no índice.
    * Nesse caso, um superconjunto do conjunto de resultados final está sendo lido do índice e filtrado subsequentemente no mecanismo de consulta.
    * Isso é muitas vezes mais lento do que aplicar restrições na consulta de índice subjacente.

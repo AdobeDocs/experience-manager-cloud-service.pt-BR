@@ -2,17 +2,17 @@
 title: Alterações importantes do AEM Sites no AEM Cloud Service
 description: Saiba mais sobre alterações importantes no AEM Sites no AEM Cloud Service
 exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
-source-git-commit: d1da8559da856e028a5dcad1d0c0b2c00176af0c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 97%
+source-wordcount: '535'
+ht-degree: 91%
 
 ---
 
 
 # Alterações importantes no AEM Sites as a Cloud Service {#notable-changes}
 
-O AEM Sites as a Cloud Service oferece recursos de gerenciamento de experiência como parte da plataforma AEM as a Cloud Service nativa na nuvem. Além dos benefícios principais do AEM as a Cloud Service, como escalabilidade nativa em nuvem, tempo de atividade e estar sempre atualizado, o AEM Sites as a Cloud Service também fornece diversas alterações e adições específicas do Sites.
+O AEM Sites as a Cloud Service oferece recursos de gerenciamento de experiência como parte da plataforma AEM as a Cloud Service nativa na nuvem. Além dos principais benefícios do AEM as a Cloud Service, como escalabilidade nativa em nuvem, tempo de atividade e estar sempre atualizado, o AEM Sites as a Cloud Service também fornece várias alterações e adições específicas do Sites.
 
 >[!NOTE]
 >Este documento destaca as alterações importantes no AEM Sites. Para conhecer as alterações gerais no AEM as a Cloud Service e em outros módulos, consulte:

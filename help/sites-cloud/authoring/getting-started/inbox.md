@@ -2,10 +2,10 @@
 title: Sua caixa de entrada
 description: Saiba como usar as notificações que chegam em sua Caixa de entrada para gerenciar suas tarefas.
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '912'
-ht-degree: 97%
+source-wordcount: '910'
+ht-degree: 94%
 
 ---
 
@@ -21,7 +21,7 @@ Você pode receber notificações de diversas áreas do AEM, incluindo fluxos de
       * Estes são o produto de etapas do fluxo de trabalho **Participante.**
    * Itens de falha, para permitir que os administradores tentem novamente a etapa que falhou
 
-Você recebe essas notificações em sua própria caixa de entrada, onde pode visualizá-las e executar ações.
+Você recebe essas notificações em sua própria Caixa de entrada, onde pode visualizá-las e interagir com elas.
 
 >[!NOTE]
 >
@@ -45,7 +45,7 @@ Em qualquer um dos consoles, o número atual de itens na sua caixa de entrada é
 
 Para abrir a caixa de entrada de notificação do AEM:
 
-1. Clique/toque no indicador na barra de ferramentas.
+1. Selecione o indicador na barra de ferramentas.
 
 1. Selecione **Exibir todos**. A variável **Caixa de entrada AEM** é aberto. A caixa de entrada mostra itens de fluxos de trabalho, projetos e tarefas.
 1. A exibição padrão é [Exibição em lista](#inbox-list-view), mas você também pode alternar para [Exibição de calendário](#inbox-calendar-view). Isso é feito com o seletor de visualização (barra de ferramentas, parte superior direita).

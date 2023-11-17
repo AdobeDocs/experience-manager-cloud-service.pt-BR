@@ -3,10 +3,10 @@ title: API GraphQL do AEM para uso com Fragmentos de conteúdo
 description: Saiba como usar os Fragmentos de conteúdo no Adobe Experience Manager (AEM) as a Cloud Service com a API GraphQL do AEM, para entrega de conteúdo headless.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: f58581f6f81e60edafd79dd1d305bd479b65eed5
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '4922'
-ht-degree: 98%
+source-wordcount: '4921'
+ht-degree: 94%
 
 ---
 
@@ -47,7 +47,7 @@ O GraphQL é:
   Consulte [Fundação GraphQL](https://foundation.graphql.org/).
 
 <!--
-"*Explore GraphQL is maintained by the Apollo team. Our goal is to give developers and technical leaders around the world all of the tools they need to understand and adopt GraphQL.*". 
+"*Explore GraphQL is maintained by the Apollo team. Our goal is to give developers and technical leaders around the world the tools they need to understand and adopt GraphQL.*". 
 -->
 
 Para obter mais informações sobre a API GraphQL, consulte as seguintes seções (entre muitos outros recursos):
@@ -156,13 +156,13 @@ As permissões são as necessárias para acessar o Assets.
 
 As consultas GraphQL são executadas com a permissão do usuário do AEM da solicitação subjacente. Se o usuário não tiver acesso de leitura a alguns fragmentos (armazenados como ativos), eles não farão parte do conjunto de resultados.
 
-Além disso, o usuário precisa ter acesso a um ponto de acesso GraphQL para poder executar consultas GraphQL.
+Além disso, o usuário deve ter acesso a um terminal GraphQL para poder executar queries do GraphQL.
 
 ## Geração de esquemas {#schema-generation}
 
 O GraphQL é uma API altamente tipificada, o que significa que os dados devem ser estruturados e organizados claramente por tipo.
 
-A especificação GraphQL fornece uma série de diretrizes sobre como criar uma API robusta para interrogar dados em uma determinada instância. Para fazer isso, um cliente precisa buscar o [Esquema](#schema-generation), que contém todos os tipos necessários para uma consulta.
+A especificação GraphQL fornece uma série de diretrizes sobre como criar uma API robusta para interrogar dados em uma determinada instância. Para fazer isso, um cliente deve buscar o [Esquema](#schema-generation), que contém todos os tipos necessários para uma query.
 
 Para fragmentos de conteúdo, os esquemas de GraphQL (estrutura e tipos) são baseados em [modelos de fragmento de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) **habilitados** e seus tipos de dados.
 
@@ -235,9 +235,9 @@ Dentro do esquema há campos individuais de duas categorias básicas:
 
   Uma seleção de [Tipos de dados](#Data-types) é usada para criar campos com base em como você configura o modelo de fragmento de conteúdo. Os nomes de campo são retirados do campo **Nome da propriedade** da guia **Tipo de dados**.
 
-   * Também é necessário considerar a configuração **Renderizar como**, já que os usuários podem configurar determinados tipos de dados. Por exemplo, um campo de texto de linha única pode ser configurado para conter vários textos de linha única escolhendo `multifield` na lista suspensa.
+   * Também é necessário considerar a configuração **Renderizar como**, já que os usuários podem configurar determinados tipos de dados. Por exemplo, um campo de texto de linha única pode ser configurado para conter vários textos de linha única, escolhendo `multifield` na lista suspensa.
 
-* O GraphQL do AEM também gera vários [campos auxiliares](#helper-fields).
+* O GraphQL para AEM também gera vários [campos auxiliares](#helper-fields).
 
 ### Tipos de dados {#data-types}
 
@@ -245,7 +245,7 @@ O GraphQL do AEM oferece suporte a uma lista de tipos. Todos os tipos de dados d
 
 | Modelo de fragmento de conteúdo - Tipo de dados | Tipo de GraphQL | Descrição |
 |--- |--- |--- |
-| Texto em linha única | `String`, `[String]` | Usado para sequências de caracteres simples, como nomes de autor, nomes de localização etc. |
+| Texto em linha única | `String`, `[String]` | Usado para sequências de caracteres simples, como nomes de autor, nomes de localização e assim por diante. |
 | Texto multilinha | `String`, `[String]` | Usado para saída de texto, como o corpo de um artigo |
 | Número | `Float`, `[Float]` | Usado para exibir números de ponto flutuantes e números regulares |
 | Booleano | `Boolean` | Usado para exibir caixas de seleção → declarações simples de verdadeiro/falso |
@@ -259,7 +259,7 @@ O GraphQL do AEM oferece suporte a uma lista de tipos. Todos os tipos de dados d
 
 ### Campos auxiliares {#helper-fields}
 
-Além dos tipos de dados para campos gerados pelo usuário, o GraphQL para o AEM também gera vários campos *auxiliares* para ajudar a identificar um Fragmento de conteúdo ou fornecer informações adicionais sobre um Fragmento de conteúdo.
+Além dos tipos de dados para campos gerados pelo usuário, o GraphQL para AEM também gera vários *auxiliar* campos para ajudar a identificar um fragmento de conteúdo ou para fornecer informações adicionais sobre um fragmento de conteúdo.
 
 Esses [campos auxiliares](#helper-fields) estão marcados com um `_` precedente, para distinguir entre o que foi definido pelo usuário e o que foi gerado automaticamente.
 
@@ -365,7 +365,7 @@ O campo `_variations` foi implementado para simplificar a consulta das variaçõ
 
 >[!NOTE]
 >
->Observe que o campo `_variations` não contém uma variável `master`, pois tecnicamente os dados originais (identificados como *Principal* na interface) não são considerados uma variável explícita.
+>A variável `_variations` o campo não contém um `master` variação, uma vez que tecnicamente os dados originais (referenciados *Principal* na interface) não é considerada uma variação explícita.
 
 Consulte [Exemplo de consulta - todas as cidades com uma variável nomeada](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation).
 
@@ -571,8 +571,8 @@ Esse recurso permite classificar os resultados da consulta de acordo com um camp
 Os critérios de classificação são:
 
 * uma lista de valores separada por vírgulas que representa o caminho do campo
-   * o primeiro campo na lista definirá a ordem de classificação principal, o segundo campo será usado se dois valores do critério de classificação principal forem iguais, o terceiro se os dois primeiros critérios forem iguais, etc.
-   * notação pontilhada, ou seja, campo1.subcampo.subcampo etc...
+   * o primeiro campo na lista definirá a ordem de classificação principal, o segundo campo será usado se dois valores do critério de classificação principal forem iguais, o terceiro se os dois primeiros critérios forem iguais e assim por diante.
+   * notação pontilhada, ou seja, campo1.subcampo.subcampo e assim por diante...
 * com uma direção de ordem opcional
    * ASC (crescente) ou DESC (decrescente); como padrão, ASC é aplicado
    * a direção pode ser especificada por campo; isso significa que é possível classificar um campo em ordem crescente e outro em ordem decrescente (name, firstName DESC)

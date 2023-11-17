@@ -2,9 +2,9 @@
 title: Promoção de inicializações
 description: É necessário promover as páginas de lançamento para mover o conteúdo de volta para a origem (produção) antes de publicar.
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '811'
 ht-degree: 98%
 
 ---
@@ -52,7 +52,7 @@ ht-degree: 98%
       1. Selecione a página de inicialização necessária usando o [modo de seleção](/help/sites-cloud/authoring/getting-started/basic-handling.md).
       1. A ação **Promover** estará disponível na barra de ferramentas.
    * O console de **Inicializações**:
-      1. Selecione o lançamento (toque/clique na miniatura).
+      1. Selecione o seu lançamento (selecione a miniatura).
       1. Selecione **Promover**.
 1. Na primeira etapa, é possível especificar:
    * **Target**

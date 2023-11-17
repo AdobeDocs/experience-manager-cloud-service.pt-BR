@@ -2,10 +2,10 @@
 title: Jornadas do AEM Sites
 description: Comece aqui para obter uma visão geral das jornadas guiadas disponíveis para compreender os recursos avançados de sites do AEM.
 exl-id: d18bc8b8-8d94-4296-a218-b21b59e6563d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '418'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '414'
+ht-degree: 82%
 
 ---
 
@@ -19,9 +19,9 @@ O [AEM Sites](https://business.adobe.com/br/products/experience-manager/sites/ae
 
 ## Jornadas de documentação do AEM {#documentation-journeys}
 
-[Uma Jornada de documentação](/help/journey-documentation/documentation-journeys.md) une vários tópicos e recursos diferentes e talvez complicados, fornecendo uma narrativa que ajuda o leitor, que pode ser novo no AEM, a entender e resolver um problema da empresa do começo ao fim, assumindo o mínimo de conhecimento prévio do tópico ou do AEM.
+[Uma Jornada de documentação](/help/journey-documentation/documentation-journeys.md) une vários tópicos e recursos diferentes e complicados, fornecendo uma narrativa que ajuda o leitor, que pode ser novo no AEM, a entender e resolver um problema empresarial do começo ao fim, assumindo o mínimo de conhecimento prévio sobre o tópico ou AEM.
 
-As Jornadas de documentação foram projetadas com princípios de práticas recomendadas, informadas pela última pesquisa da Adobe, experiência comprovada de implementação dos consultores da Adobe e feedback de projetos de clientes.
+As jornadas de documentação foram projetadas com base nas práticas recomendadas, informadas pela última pesquisa da Adobe, na experiência comprovada de implementação dos consultores da Adobe e no feedback de projetos de clientes.
 
 Se quiser saber como a Adobe recomenda resolver casos de negócios com o AEM Sites, as Jornadas do AEM Sites são o ponto de partida.
 
@@ -31,7 +31,7 @@ As Jornadas do Sites são projetadas para diversos perfis, apresentando os requi
 
 A jornada individual é definida para um perfil ou público específico, mas também define perfis adicionais com os quais o leitor interage.
 
-As informações nas jornadas podem, é claro, ser úteis para vários perfis, mas uma jornada é direcionada a um perfil específico e algumas informações podem ser supérfluas para determinadas funções.
+As informações nas jornadas podem ser úteis para vários perfis, mas uma jornada é direcionada a um perfil específico e algumas informações podem ser supérfluas para determinadas funções.
 
 ## Jornadas do Sites {#sites-journeys}
 

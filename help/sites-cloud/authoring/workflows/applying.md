@@ -1,17 +1,17 @@
 ---
 title: Aplicação de fluxos de trabalho a páginas
-description: Ao criar, é possível invocar fluxos de trabalho para realizar ações em suas páginas. Também é possível aplicar mais de um fluxo de trabalho..
+description: Ao criar, é possível invocar fluxos de trabalho para atuar em suas páginas. Também é possível aplicar mais de um fluxo de trabalho.
 exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '657'
-ht-degree: 93%
+source-wordcount: '654'
+ht-degree: 83%
 
 ---
 
 # Aplicação de fluxos de trabalho a páginas {#applying-workflows-to-pages}
 
-Ao criar, é possível invocar fluxos de trabalho para realizar ações em suas páginas. Também é possível aplicar mais de um fluxo de trabalho.
+Ao criar, é possível chamar fluxos de trabalho para atuar em suas páginas. Também é possível aplicar mais de um fluxo de trabalho.
 
 Ao aplicar o fluxo de trabalho, especifique as seguintes informações:
 
@@ -116,7 +116,7 @@ Você pode especificar detalhes:
 
 1. Na etapa **Escopo**, você pode selecionar:
 
-   * **Adicione conteúdo** para abrir o [navegador de caminhos](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) e selecionar recursos adicionais. Quando estiver no navegador, clique/toque em **Selecionar** para adicionar o conteúdo à instância do fluxo de trabalho.
+   * **Adicionar conteúdo** para abrir o [navegador de caminho](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) e selecione recursos adicionais; quando estiver no navegador, selecione **Selecionar** para adicionar o conteúdo à instância do workflow.
 
    * Um recurso existente para ver ações adicionais:
 

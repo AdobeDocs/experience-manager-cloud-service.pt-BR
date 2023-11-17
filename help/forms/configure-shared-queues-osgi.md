@@ -4,9 +4,9 @@ description: Saiba como usar filas compartilhadas para fluxos de trabalho centra
 topic-tags: process
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '839'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # Compartilhar e solicitar acesso aos itens da Caixa de entrada de um usuário {#share-and-request-access}
 
-Uma fila é uma lista de itens na Caixa de entrada AEM de um usuário. Eles podem ser itens atribuídos a um usuário ou itens compartilhados com o grupo do qual um usuário é membro. Você pode acessar sua Caixa de entrada para exibir e executar ações no item Caixa de entrada. Por exemplo, compartilhe um item com outro usuário.
+Uma fila é uma lista de itens na Caixa de entrada AEM de um usuário. Eles podem ser itens atribuídos a um usuário ou itens compartilhados com o grupo do qual um usuário é membro. Você pode acessar sua Caixa de entrada para visualizar e agir no item da Caixa de entrada. Por exemplo, compartilhe um item com outro usuário.
 
 Você também pode compartilhar os itens da Caixa de entrada com outro usuário. Depois que outro usuário tiver acesso aos itens da Caixa de entrada, ele poderá solicitar e tomar as medidas apropriadas nos itens compartilhados. Da mesma forma, você pode solicitar acesso aos itens da Caixa de entrada de outros usuários.
 

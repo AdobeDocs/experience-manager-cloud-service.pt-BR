@@ -2,9 +2,9 @@
 title: Práticas recomendadas para a configuração e uso do AEM GraphQL com fragmentos de conteúdo
 description: Conheça as Práticas recomendadas para a configuração e uso do AEM GraphQL com Fragmentos de conteúdo.
 exl-id: 4d6a5aaa-c8be-4858-ad07-085dc4fb77e7
-source-git-commit: 25a4a6b9ae09cb71f50317990af1718db1e14355
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '739'
 ht-degree: 34%
 
 ---
@@ -201,7 +201,7 @@ Para:
 
 ### Recursos adicionais
 
-Para obter mais detalhes sobre o AEM GraphQL e os fragmentos de conteúdo, consulte:
+Para obter mais detalhes sobre o AEM GraphQL e os fragmentos de conteúdo, consulte o seguinte:
 
 * [API GraphQL do AEM para uso com Fragmentos de conteúdo](/help/headless/graphql-api/content-fragments.md)
 * [Uso do GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md)

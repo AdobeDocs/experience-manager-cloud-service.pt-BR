@@ -2,10 +2,10 @@
 title: Gerenciar páginas no seu lançamento
 description: Você pode criar novas páginas no lançamento. Também é possível excluir páginas indesejadas.
 exl-id: 214c8c2f-d09a-4ce9-b474-9505b76084f7
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 94%
+source-wordcount: '288'
+ht-degree: 89%
 
 ---
 
@@ -47,7 +47,7 @@ Todos esses pontos de entrada abrem a inicialização no console Sites, onde é 
 
 * Navegar,
 * **Criar** novas páginas,
-* Selecionar páginas existentes e executar ações; por exemplo, **Editar**, abrir as **Propriedades**, **Bloquear**, **Copiar**, **Colar** e **Excluir**
+* Selecione páginas e atos existentes; por exemplo, **Editar**, abrir **Propriedades**, **Bloquear**, **Copiar**, **Colar** e **Excluir**
   ![Navegar pelo lançamento no console Sites a partir de Gerenciar conteúdo](/help/sites-cloud/authoring/assets/launches-navigate-manage-content.png)
 * Usar o painel **Referências** para retornar às páginas de **Origem do lançamento**:
   ![Console Sites — Origem de lançamento](/help/sites-cloud/authoring/assets/launches-navigate-launch-source.png)

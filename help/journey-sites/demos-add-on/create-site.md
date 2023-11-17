@@ -2,10 +2,10 @@
 title: Criar site de demonstração
 description: Crie um site de demonstração no AEM com base em uma biblioteca de modelos pré-configurados.
 exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '836'
-ht-degree: 89%
+source-wordcount: '815'
+ht-degree: 72%
 
 ---
 
@@ -21,7 +21,7 @@ No documento anterior da jornada do complemento de demonstrações de referênci
 * Saber como ativar o complemento de demonstrações de referência para o novo programa.
 * Poder executar um pipeline para implantar o conteúdo complementar.
 
-Este artigo descreve a próxima etapa do processo, criando um novo site ou projeto do AEM Screens no AEM com base nos modelos do complemento de demonstração de referência.
+Este artigo descreve a próxima etapa do processo, criando um site ou projeto do AEM Screens no AEM com base nos modelos do complemento de demonstração de referência.
 
 ## Objetivo {#objective}
 
@@ -35,23 +35,23 @@ Este documento ajuda você a entender como criar um site com base nos modelos do
 
 Depois que o pipeline tiver implantado o complemento de demonstração de referência, você poderá acessar o ambiente de criação do AEM para criar sites de demonstração com base no conteúdo complementar.
 
-1. Na página de visão geral do programa no Cloud Manager, toque ou clique no link para o ambiente de criação do AEM.
+1. Na página de visão geral do programa no Cloud Manager, selecione o link para o ambiente de criação do AEM.
 
    ![Acesso ao ambiente de criação](assets/access-author.png)
 
-1. No menu principal do AEM, toque ou clique **Sites**.
+1. No menu principal do AEM, selecione **Sites**.
 
    ![Acessar sites](assets/access-sites.png)
 
-1. No console Sites, toque ou clique em **Criar** no canto superior direito da tela e selecione **Site a partir de modelo** no menu suspenso.
+1. No console Sites, selecione **Criar** no canto superior direito da tela e selecione **Site do modelo** no menu suspenso.
 
    ![Criar site a partir de modelo](assets/create-site-from-template.png)
 
-1. O assistente de criação de sites é iniciado. Na coluna da esquerda, é possível ver os modelos de demonstração que o pipeline implantou na instância de criação. Toque ou clique em um para selecioná-lo e exibir detalhes na coluna direita. Se desejar testar ou ver uma demonstração do AEM Screens, certifique-se de escolher o **Modelo de site We.Cafe**. Toque ou clique em **Próximo**.
+1. O assistente de criação de sites é iniciado. Na coluna da esquerda, é possível ver os modelos de demonstração que o pipeline implantou na instância de criação. Selecione um para selecioná-lo e mostrar detalhes na coluna direita. Se quiser testar ou ver uma demonstração do AEM Screens, certifique-se de escolher a **Modelo de site da We.Cafe**. Selecione **Próximo**.
 
    ![Assistente de criação de site](assets/site-creation-wizard.png)
 
-1. Na próxima tela, forneça um título para o site ou projeto do Screens. É possível fornecer um nome de site ou gerá-lo a partir do título, se omitido. Toque ou clique em **Criar**.
+1. Na próxima tela, forneça um título para o site ou projeto do Screens. É possível fornecer um nome de site ou gerá-lo a partir do título, se omitido. Selecione **Criar**.
 
    * O título do site aparece na barra de título dos navegadores.
    * O nome do site se torna parte do URL.
@@ -59,7 +59,7 @@ Depois que o pipeline tiver implantado o complemento de demonstração de refer�
 
    ![Detalhes do site](assets/site-details.png)
 
-1. A criação do site é confirmada com uma caixa de diálogo. Toque ou clique em **Concluído**.
+1. A criação do site é confirmada com uma caixa de diálogo. Selecionar **Concluído**.
 
    ![Criação do site concluída](assets/site-creation-complete.png)
 
@@ -77,11 +77,11 @@ Agora que o site de demonstração foi criado, você pode navegar e usá-lo como
 
    ![Exibição de coluna](assets/column-view.png)
 
-1. Toque ou clique no site para explorar sua estrutura e conteúdo. A exibição de coluna é expandida continuamente à medida que você navega pela árvore de conteúdo do site de demonstração.
+1. Selecione o site para explorar sua estrutura e conteúdo. A exibição de coluna é expandida continuamente à medida que você navega pela árvore de conteúdo do site de demonstração.
 
    ![Estrutura do site](assets/site-structure.png)
 
-1. Toque ou clique em uma página para selecioná-la e, em seguida, toque ou clique em **Editar** na barra de ferramentas.
+1. Selecione uma página para selecioná-la e **Editar** na barra de ferramentas.
 
    ![Selecionar página](assets/select-page.png)
 
@@ -103,7 +103,7 @@ Agora que concluiu esta parte da jornada do complemento de demonstração de ref
 
 Agora, é possível testar os recursos do AEM usando conteúdo complementar. Você tem duas opções para continuar sua jornada:
 
-* Se deseja ver uma demonstração completa e testar o conteúdo do AEM Screens, certifique-se de implantar um site com base no **Modelo de site We.Cafe**, conforme descrito anteriormente, e continue em [Ativar o AEM Screens no seu site de demonstração.](screens.md)
+* Se quiser ver uma demonstração completa e testar o conteúdo do AEM Screens, certifique-se de implantar um site com base no **Modelo de site da We.Cafe** conforme descrito anteriormente e continuar a [Ative o AEM Screens para seu site de demonstração.](screens.md)
 * Se você deseja apenas ver uma demonstração do conteúdo dos sites, continue para [Gerencie Seus Sites De Demonstração,](manage.md) onde você aprende sobre as ferramentas disponíveis para ajudá-lo a gerenciar seus sites de demonstração e como removê-los.
 
 ## Recursos adicionais {#additional-resources}

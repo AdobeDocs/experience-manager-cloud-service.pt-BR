@@ -4,9 +4,9 @@ description: Saiba mais sobre as considerações especiais necessárias para hab
 hide: true
 hidefromtoc: true
 exl-id: f62ed751-d5e2-4a01-8910-c844afab5733
-source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '461'
 ht-degree: 9%
 
 ---
@@ -45,5 +45,5 @@ Em resumo, estas são as etapas para habilitar o CUG após uma migração:
 1. Verifique se cada grupo usado nas políticas CUG existe em Publicar após a migração.
    - Um grupo pode existir se for incluído na ACL de um conteúdo migrado.
    - Caso contrário, use Pacotes para instalá-lo na instância de destino (ou criá-lo manualmente) e ativá-lo e seus membros. Em seguida, verifique se ele existe em Publicar.
-1. Republicar todas as páginas associadas a uma política CUG, garantindo que ela seja publicada, por exemplo, editando a página primeiro. É importante republicar todas elas.
+1. Republicar todas as páginas associadas a uma política CUG, garantindo que ela seja publicada, por exemplo, editando a página primeiro. É importante republicar todos eles.
    - Depois que todas as páginas forem republicadas, verifique a funcionalidade de cada página protegida por CUG.

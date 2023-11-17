@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1387'
+source-wordcount: '1385'
 ht-degree: 6%
 
 ---
@@ -79,7 +79,7 @@ Para baixar ativos, siga estas etapas:
 
    | Opção de download | Descrição |
    |---|---|
-   | **[!UICONTROL Criar uma pasta separada para cada ativo]** | Selecione essa opção para criar uma pasta para cada ativo contendo todas as representações baixadas do ativo. Se não estiver selecionada, cada ativo (e suas representações, se selecionado para download) estará contido na pasta principal do arquivo gerado. |
+   | **[!UICONTROL Criar uma pasta separada para cada ativo]** | Selecione essa opção para criar uma pasta para cada ativo que contenha todas as representações baixadas do ativo. Se não estiver selecionada, cada ativo (e suas representações, se selecionado para download) estará contido na pasta principal do arquivo gerado. |
    | **[!UICONTROL Email]** | Selecione essa opção para enviar uma notificação por email (contendo um link para o download) para outro usuário. O usuário destinatário deve ser membro do `dam-users` grupo. Os modelos padrão de email estão disponíveis nos seguintes locais:<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> Os modelos que você personaliza durante a implantação estão disponíveis nos seguintes locais: <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul>Você pode armazenar modelos personalizados específicos do locatário nos seguintes locais:<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> |
    | **[!UICONTROL Ativo(s)]** | Selecione essa opção para baixar o ativo em sua forma original.<br>A opção subativos estará disponível se o ativo original tiver subativos. |
    | **[!UICONTROL Representações]** | Uma representação é a representação binária de um ativo. Os ativos têm uma representação principal - a do arquivo carregado. Eles podem ter qualquer número de representações. <br> Com essa opção, é possível selecionar as representações que deseja baixar. As representações disponíveis dependem do ativo selecionado. |

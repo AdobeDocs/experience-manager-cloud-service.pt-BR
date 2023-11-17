@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 1d3ad496-a964-476e-b1da-4aa6d8ad53b7
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '984'
-ht-degree: 15%
+source-wordcount: '971'
+ht-degree: 7%
 
 ---
 
@@ -36,14 +36,14 @@ Considere um cenário em que você deseja exibir metadados em cascata com base n
 
 Independentemente do tipo de ativo escolhido, exiba as informações de direitos autorais como um campo obrigatório.
 
-1. Toque/clique no [!DNL Experience Manager] e vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Assets]** > **[!UICONTROL Esquemas de metadados]**.
-1. Na página **[!UICONTROL Formulários de esquema]**, selecione um formulário de esquema e toque/clique em **[!UICONTROL Editar]** na barra de ferramentas para editar o esquema.
+1. Selecione o [!DNL Experience Manager] e vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Assets]** > **[!UICONTROL Esquemas de metadados]**.
+1. No **[!UICONTROL Schema Forms]** , selecione um formulário de esquema e, em seguida, **[!UICONTROL Editar]** na barra de ferramentas para editar o esquema.
 
    ![select_form](assets/select_form.png)
 
 1. (Opcional) No editor de esquema de metadados, crie um campo para condicionar. Especifique um nome e um caminho de propriedade na variável **[!UICONTROL Configurações]** guia.
 
-   Para criar uma guia, toque/clique `+` para adicionar uma guia e depois adicionar um campo de metadados.
+   Para criar uma guia, selecione `+` para adicionar uma guia e depois adicionar um campo de metadados.
 
    ![add_tab](assets/add_tab.png)
 
@@ -53,7 +53,7 @@ Independentemente do tipo de ativo escolhido, exiba as informações de direitos
 
 1. Pares de valores-chave são as opções fornecidas a um usuário de formulário. Você pode fornecer os pares de valor-chave manualmente ou a partir de um arquivo JSON.
 
-   * Para especificar os valores manualmente, selecione **[!UICONTROL Adicionar manualmente]** e toque/clique **[!UICONTROL Adicionar seleção]** e especifique a opção text e value. Por exemplo, especifique os tipos de ativos de Vídeo, PDF, Word e Imagem.
+   * Para especificar os valores manualmente, selecione **[!UICONTROL Adicionar manualmente]** e selecione **[!UICONTROL Adicionar seleção]** e especifique a opção text e value. Por exemplo, especifique os tipos de ativos de Vídeo, PDF, Word e Imagem.
 
    * Para buscar os valores de um arquivo JSON dinamicamente, selecione **[!UICONTROL Adicionar por meio do caminho JSON]** e fornecem o caminho do arquivo JSON. [!DNL Experience Manager] O busca os pares chave-valor em tempo real quando o formulário é apresentado ao usuário.
 
@@ -80,7 +80,7 @@ Independentemente do tipo de ativo escolhido, exiba as informações de direitos
    ![select_dependentfield](assets/select_dependentfield.png)
 
 1. Em **[!UICONTROL Requisito]**, escolha o **[!UICONTROL Obrigatório, com base na nova regra]** opção.
-1. Toque/clique em **[!UICONTROL Adicionar regra]** e escolha o campo **[!UICONTROL Tipo de ativo]** para criar uma dependência. Também escolha o valor do campo no qual criar a dependência. Nesse caso, escolha **[!UICONTROL Vídeo]**. Toque/clique em **[!UICONTROL Concluído]** para salvar as alterações.
+1. Selecionar **[!UICONTROL Adicionar regra]** e escolha o **[!UICONTROL Tipo de ativo]** para criar uma dependência. Também escolha o valor do campo no qual criar a dependência. Nesse caso, escolha **[!UICONTROL Vídeo]**. Selecionar **[!UICONTROL Concluído]** para salvar as alterações.
 
    ![define_rule](assets/define_rule.png)
 
@@ -90,13 +90,13 @@ Independentemente do tipo de ativo escolhido, exiba as informações de direitos
 
 1. Em **[!UICONTROL Visibilidade]**, escolha **[!UICONTROL Visível, com base na nova opção de regra]**.
 
-1. Toque/clique em **[!UICONTROL Adicionar regra]** e escolha o campo **[!UICONTROL Tipo de ativo]** para criar uma dependência. Também escolha o valor do campo no qual criar a dependência. Nesse caso, escolha **[!UICONTROL Vídeo]**. Toque/clique em **[!UICONTROL Concluído]** para salvar as alterações.
+1. Selecionar **[!UICONTROL Adicionar regra]** e escolha o **[!UICONTROL Tipo de ativo]** para criar uma dependência. Também escolha o valor do campo no qual criar a dependência. Nesse caso, escolha **[!UICONTROL Vídeo]**. Selecionar **[!UICONTROL Concluído]** para salvar as alterações.
 
    ![define_visibilityrule](assets/define_visibilityrule.png)
 
    >[!CAUTION]
    >
-   >Para redefinir os valores, clique ou toque em um espaço em branco ou em qualquer lugar na interface que não seja os valores. Se os valores forem redefinidos, selecione-os novamente.
+   >Para redefinir os valores, selecione qualquer lugar na interface que não seja o valor. Se os valores forem redefinidos, selecione-os novamente.
 
    >[!NOTE]
    >

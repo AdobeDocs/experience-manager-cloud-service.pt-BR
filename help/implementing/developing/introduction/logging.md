@@ -2,9 +2,9 @@
 title: Registro para AEM as a Cloud Service
 description: Saiba como usar o Logging para AEM as a Cloud Service para configurar parâmetros globais para o serviço de log central, configurações específicas para os serviços individuais ou como solicitar o registro de dados.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 9d1aab8f615f9e6aa9751fe978a56c915c9a8797
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2757'
+source-wordcount: '2753'
 ht-degree: 3%
 
 ---
@@ -279,7 +279,7 @@ O AEM as a Cloud Service fornece três logs para os servidores Web Apache e a ca
 * Log de erros do servidor Web Apache HTTPD
 * Log do Dispatcher
 
-Observe que esses logs só estão disponíveis para a camada Publicar.
+Esses logs só estão disponíveis para o nível de Publicação.
 
 Esse conjunto de logs fornece insights sobre solicitações HTTP para o nível de publicação as a Cloud Service do AEM antes de essas solicitações atingirem o aplicativo AEM. Isso é importante para entender como, idealmente, a maioria das solicitações HTTP para os servidores da camada Publicar é atendida pelo conteúdo que é armazenado em cache pelo Apache HTTPD Web Server e pelo AEM Dispatcher, e nunca atinge o próprio aplicativo AEM. Portanto, não há instruções de registro para essas solicitações nos registros AEM Java, Request ou Access.
 
@@ -504,7 +504,7 @@ Define DISP_LOG_LEVEL debug
 
 O AEM as a Cloud Service fornece acesso a logs CDN, que são úteis para casos de uso, incluindo otimização da taxa de ocorrência do cache. O formato de log CDN não pode ser personalizado e não há conceito de configurá-lo para modos diferentes, como info, warn ou error.
 
-Observe que o recurso de encaminhamento do Splunk ainda não oferece suporte a logs CDN.
+O recurso de encaminhamento do Splunk ainda não oferece suporte a logs CDN.
 
 **Exemplo**
 
@@ -643,7 +643,7 @@ Abaixo, você encontrará um exemplo de solicitação de suporte ao cliente:
 Programa 123, Ambiente de produção
 
 * Endereço do ponto de extremidade HEC do Splunk: `splunk-hec-ext.acme.com`
-* Índice do Splunk: acme_123prod (o cliente pode escolher a convenção de nomenclatura que desejar)
+* Índice do Splunk: acme_123prod (o cliente pode escolher a convenção de nomenclatura desejada)
 * Porta do Splunk: 443
 * Token HEC do Splunk: ABC123
 

@@ -2,10 +2,10 @@
 title: Pesquisa e indexação de conteúdo
 description: Saiba mais sobre Pesquisa e indexação de conteúdo no AEM as a Cloud Service.
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2432'
-ht-degree: 31%
+source-wordcount: '2428'
+ht-degree: 29%
 
 ---
 
@@ -67,7 +67,7 @@ Uma definição de índice pode se enquadrar em uma das seguintes categorias:
 
 >[!NOTE]
 >
->Se estiver personalizando um índice pronto para uso (por exemplo, `damAssetLucene-8`), copie a definição mais recente do índice pronto para uso de um *ambiente do Cloud Service* usando o gerenciador de pacotes CRX DE (`/crx/packmgr/`). Renomear para `damAssetLucene-8-custom-1` (ou superior) e adicione suas personalizações dentro do arquivo XML. Isso garante que as configurações necessárias não sejam removidas inadvertidamente. Por exemplo, a variável `tika` nó em `/oak:index/damAssetLucene-8/tika` é obrigatório no índice personalizado implantado em um ambiente AEM Cloud Service, mas não existe no SDK AEM local.
+>Se estiver personalizando um índice pronto para uso (por exemplo, `damAssetLucene-8`, copie a definição mais recente do índice pronto para uso de uma *ambiente do Cloud Service* utilizando o gerenciador de pacotes CRX DE (`/crx/packmgr/`). Renomear para `damAssetLucene-8-custom-1` (ou superior) e adicione suas personalizações dentro do arquivo XML. Isso garante que as configurações necessárias não sejam removidas inadvertidamente. Por exemplo, a variável `tika` nó em `/oak:index/damAssetLucene-8/tika` é obrigatório no índice personalizado implantado em um ambiente AEM Cloud Service, mas não existe no SDK AEM local.
 
 Para personalizações de um índice OOTB, prepare um novo pacote que contenha a definição de índice real que siga esse padrão de nomenclatura:
 
@@ -240,7 +240,7 @@ Depois de adicionar a nova definição de índice, implante o novo aplicativo us
 
 >[!TIP]
 >
->Para obter mais detalhes sobre a estrutura do pacote necessária para o AEM as a Cloud Service, consulte o documento [Estrutura de projeto do AEM](/help/implementing/developing/introduction/aem-project-content-package-structure.md).
+>Para obter mais detalhes sobre a estrutura do pacote necessária para o AEM as a Cloud Service, consulte [Estrutura de projeto do AEM](/help/implementing/developing/introduction/aem-project-content-package-structure.md).
 
 ## Gerenciamento de Índice usando Implantações Móveis {#index-management-using-rolling-deployments}
 

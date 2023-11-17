@@ -2,10 +2,11 @@
 title: Notas de versão das Ferramentas de migração no AEM as a Cloud Service versão 2023.06.0
 description: Notas de versão das Ferramentas de migração no AEM as a Cloud Service versão 2022.06.0
 feature: Release Information
-source-git-commit: 88227693b7dfc3cbd30751718dc85e55ee67bb96
+exl-id: 021b7472-d1e4-4ef6-a040-c612fed8d3c3
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 2%
+source-wordcount: '233'
+ht-degree: 3%
 
 ---
 
@@ -25,4 +26,4 @@ A data de lançamento da ferramenta de Transferência de conteúdo v2.0.20 é 8 
 Os benefícios fornecidos pelo transformador de conteúdo são:
    * À prova de falhas: um pacote é criado pelo Transformador de conteúdo sempre que ele faz qualquer modificação no repositório para corrigir problemas. Se necessário, é possível reverter para o estado anterior instalando o pacote.
    * Fácil de usar: o transformador de conteúdo foi integrado à ferramenta de transferência de conteúdo e vem com uma interface de usuário simples e intuitiva.
-   * Economiza tempo: quando você tem um alto número de problemas de conteúdo que se enquadram em uma categoria de padrão, é possível resolver todos eles com apenas alguns cliques usando o Transformador de conteúdo, o que reduz significativamente o tempo e a complexidade da migração.
+   * Economiza tempo: quando você tem um alto número de problemas de conteúdo que se enquadram em uma categoria de padrão, é possível resolver todos com vários cliques usando o Transformador de conteúdo, o que reduz significativamente o tempo e a complexidade da migração.

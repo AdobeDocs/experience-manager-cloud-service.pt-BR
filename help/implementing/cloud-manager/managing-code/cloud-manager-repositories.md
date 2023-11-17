@@ -2,10 +2,10 @@
 title: Repositórios do Cloud Manager
 description: Saiba como criar, exibir e excluir repositórios Git no Cloud Manager.
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '585'
-ht-degree: 87%
+source-wordcount: '582'
+ht-degree: 85%
 
 ---
 
@@ -24,7 +24,7 @@ Siga estas etapas para exibir e gerenciar repositórios no Cloud Manager.
 
 1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização e o programa apropriado.
 
-1. No **Visão geral do programa** toque ou clique no link **Repositórios** para alternar para a guia **Repositórios** página.
+1. No **Visão geral do programa** selecione a **Repositórios** para alternar para a guia **Repositórios** página.
 
 1. Clique em **Adicionar repositório**.
 
@@ -130,5 +130,5 @@ Ao usar submódulos do Git, esteja ciente das limitações a seguir.
 * Por motivos de segurança, não incorpore credenciais nas URLs do Git.
 * A menos que seja necessário, é altamente recomendado usar submódulos superficiais.
    * Para fazer isso, execute `git config -f .gitmodules submodule.<submodule path>.shallow true` para cada submódulo.
-* As referências do submódulo Git são armazenadas em confirmações Git específicas. Como resultado, quando são feitas alterações no repositório do submódulo, a confirmação referenciada precisa ser atualizada.
+* As referências do submódulo Git são armazenadas em confirmações Git específicas. Como resultado, quando alterações no repositório do submódulo são feitas, a confirmação referenciada deve ser atualizada.
    * Por exemplo, usando `git submodule update --remote`

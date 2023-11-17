@@ -1,9 +1,9 @@
 ---
 title: Como importar e exportar ativos para o [!DNL AEM Forms]?
 description: Saiba como usar o DocuSign com um formulário adaptável para coletar assinaturas eletrônicas.
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1325'
+source-wordcount: '1322'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,7 @@ Para baixar os ativos do Forms e do Documents:
 1. Selecione os ativos de formulários e toque no **[!UICONTROL Baixar]** ícone.
 1. Em Baixar ativo(s), escolha uma das seguintes opções e toque em **[!UICONTROL Baixar]**.
 
-   * **Baixar como Pacote CRX:** Use a opção para baixar e mover todos os ativos selecionados e as dependências relacionadas de um [!DNL AEM Forms] instância para outra. Ele baixa todos os ativos e pastas como pacote crx. Qualquer ativo de formulário, incluindo os formulários criados em AEM (Fragmentos adaptáveis de Forms e formulário adaptável), documentos PDF e recursos (XSDs, XFS, imagens) podem ser baixados como pacote em [!DNL AEM Forms] IU.
+   * **Baixar como Pacote CRX:** Use a opção para baixar e mover todos os ativos selecionados e as dependências relacionadas de uma [!DNL AEM Forms] instância para outra. Ele baixa todos os ativos e pastas como pacote crx. Todos os ativos de formulário, incluindo os formulários criados em AEM (Fragmentos adaptáveis do Forms e do formulário adaptável), documentos PDF e recursos (XSDs, XFS, imagens) podem ser baixados como pacotes em [!DNL AEM Forms] IU.
 A vantagem de baixar ativos como pacote é que ele também baixa ativos que foram usados pelo ativo selecionado para download. Por exemplo, se você tiver um formulário adaptável que usa um modelo de formulário, XSD e uma imagem. Ao selecionar esse Formulário adaptável e baixá-lo como pacote, o pacote baixado também conterá o modelo de formulário, o XSD e a imagem. Todas as propriedades de metadados (incluindo propriedades personalizadas) associadas ao ativo também são baixadas.
 
    * **Baixar ativos como arquivos binários:** Use a opção para baixar somente os modelos de formulário (XDP), PDF forms (PDF), documento (PDF) e recursos (imagens, esquemas, folhas de estilos). É possível editar esses ativos com aplicativos externos. Ele baixa os ativos de formulários que têm binários, como XSDs, XDPs, imagens, PDF e XDPs como um arquivo .zip.

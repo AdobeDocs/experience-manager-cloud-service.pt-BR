@@ -2,10 +2,10 @@
 title: Como executar o aplicativo headless
 description: Nesta parte da Jornada do desenvolvedor headless do AEM, saiba como implantar um aplicativo headless, colocando seu código local no Git e movendo-o para o Git do Cloud Manager para o pipeline de CI/CD.
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
-source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1093'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
@@ -67,7 +67,7 @@ Depois de verificar se tudo foi testado e está funcionando corretamente, você 
 
 Depois que as atualizações forem carregadas no Cloud Manager, elas poderão ser implantadas no AEM as a Cloud Service usando o [pipeline de CI/CD do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=pt-BR).
 
-Você pode começar a implantar seu código aproveitando o pipeline de CI/CD do Cloud Manager, que é abordado extensivamente [aqui](/help/implementing/deploying/overview.md).
+Você pode começar a implantar seu código usando o pipeline CI/CD do Cloud Manager, que é amplamente coberto [aqui](/help/implementing/deploying/overview.md).
 
 ## Monitoramento de desempenho {#performance-monitoring}
 

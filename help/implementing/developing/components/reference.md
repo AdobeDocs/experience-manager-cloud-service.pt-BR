@@ -2,9 +2,9 @@
 title: Guia de referência de componentes
 description: Um guia de referência do desenvolvedor para os detalhes dos componentes e sua estrutura
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3646'
+source-wordcount: '3642'
 ht-degree: 2%
 
 ---
@@ -55,7 +55,7 @@ Isso significa que você só precisa redefinir as diferenças necessárias, em v
 
 ### Lógica de conteúdo e marcação de renderização  {#content-logic-and-rendering-markup}
 
-Seu componente é renderizado com [HTML](https://www.w3schools.com/htmL/html_intro.asp). Seu componente precisa definir o HTML necessário para obter o conteúdo necessário e, em seguida, renderizá-lo conforme necessário nos ambientes do autor e de publicação.
+Seu componente é renderizado com [HTML](https://www.w3schools.com/htmL/html_intro.asp). Seu componente deve definir o HTML necessário para obter o conteúdo necessário e, em seguida, renderizá-lo conforme necessário nos ambientes do autor e de publicação.
 
 É recomendável manter o código responsável pela marcação e renderização separado do código que controla a lógica usada para selecionar o conteúdo do componente.
 
@@ -181,7 +181,7 @@ Um componente é um nó do tipo `cq:Component` e tem as seguintes propriedades e
 | `component.html` | `nt:file` | Esse é o arquivo de script HTL do componente. |
 | `cq:icon` | `String` | Esse valor aponta para a variável [ícone do componente](#component-icon) e aparece no Navegador de componentes. |
 
-Se olharmos para o **Texto** é possível ver vários destes elementos:
+Se você observar o **Texto** é possível ver vários destes elementos:
 
 ![Estrutura do componente de Texto](assets/components-text.png)
 
@@ -250,7 +250,7 @@ Content not found
 
 Para criar um widget para uso em uma caixa de diálogo de componente, é necessário criar um componente de campo da interface do Granite.
 
-Se você considerar sua caixa de diálogo como um contêiner simples para um elemento de formulário, também poderá ver o conteúdo principal do seu conteúdo da caixa de diálogo como campos de formulário. A criação de um novo campo de formulário requer a criação de um tipo de recurso; isso é equivalente à criação de um novo componente. Para ajudá-lo nessa tarefa, a interface do usuário do Granite oferece um componente de campo genérico do qual herdar (usando `sling:resourceSuperType`):
+Se você considerar sua caixa de diálogo como um contêiner simples para um elemento de formulário, também poderá ver o conteúdo principal do seu conteúdo da caixa de diálogo como campos de formulário. A criação de um novo campo de formulário requer a criação de um tipo de recurso; isso é equivalente à criação de um componente. Para ajudá-lo nessa tarefa, a interface do usuário do Granite oferece um componente de campo genérico do qual herdar (usando `sling:resourceSuperType`):
 
 `/libs/granite/ui/components/coral/foundation/form/field`
 
@@ -441,7 +441,7 @@ A validação de campo na interface do Granite e nos widgets da interface do Gra
 
 ### Detectando Disponibilidade da Caixa de Diálogo {#dialog-ready}
 
-Se você tiver um JavaScript personalizado que precisa ser executado somente quando a caixa de diálogo estiver disponível e pronta, você deve ouvir o `dialog-ready` evento.
+Se você tiver um JavaScript personalizado que deve ser executado somente quando a caixa de diálogo estiver disponível e pronta, você deve ouvir o `dialog-ready` evento.
 
 Esse evento é acionado sempre que a caixa de diálogo é carregada (ou recarregada) e está pronta para uso, o que significa que sempre que há uma alteração (criar/atualizar) no DOM da caixa de diálogo.
 

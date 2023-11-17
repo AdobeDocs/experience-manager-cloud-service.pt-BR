@@ -2,10 +2,10 @@
 title: Como atualizar seu conteúdo por meio das APIs do AEM Assets
 description: Nesta parte da jornada do desenvolvedor headless do AEM, saiba como usar a API REST para acessar e atualizar o conteúdo dos seus fragmentos de conteúdo.
 exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1096'
-ht-degree: 92%
+source-wordcount: '1093'
+ht-degree: 90%
 
 ---
 
@@ -106,7 +106,7 @@ This means that subsequent (`write`) requests cannot be combined into a single t
 
 ### Security {#security}
 
-If the Assets REST API is used within an environment without specific authentication requirements, AEM's CORS filter needs to be configured correctly.
+If the Assets REST API is used within an environment without specific authentication requirements, AEM's CORS filter must be configured correctly.
 
 >[!NOTE]
 >
@@ -163,7 +163,7 @@ The response will contain paging information as part of the `properties` section
 
 Folders act as containers for assets and other folders. They reflect the structure of the AEM content repository.
 
-The Assets REST API exposes access to the properties of a folder; for example its name, title, etc. Assets are exposed as child entities of folders, and sub-folders.
+The Assets REST API exposes access to the properties of a folder; for example its name, title, and so on Assets are exposed as child entities of folders, and sub-folders.
 
 >[!NOTE]
 >
@@ -196,7 +196,7 @@ Content fragments:
 
 ### Content Models and Content Fragments {#content-models-and-content-fragments}
 
-Currently the models that define the structure of a content fragment are not exposed through an HTTP API. Therefore the *consumer* needs to know about the model of a fragment (at least a minimum) - although most information can be inferred from the payload; as data types, etc. are part of the definition.
+Currently the models that define the structure of a content fragment are not exposed through an HTTP API. Therefore, the *consumer* needs to know about the model of a fragment (at least a minimum) - although most information can be inferred from the payload; as data types, and so on, are part of the definition.
 
 To create a content fragment, the (internal repository) path of the model has to be provided.
 
@@ -254,7 +254,7 @@ O uso pode ser diferente dependendo se você está usando um ambiente de autor o
 
 >[!NOTE]
 >
->Para obter mais detalhes, consulte a Referência da API. Em especial, a seção [API do Adobe Experience Manager Assets - Fragmentos de conteúdo](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
+>Consulte a referência da API [API do Adobe Experience Manager Assets - Fragmentos de conteúdo](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
 
 ### Leitura/entrega {#read-delivery}
 
@@ -293,11 +293,11 @@ Isso pode ser simplesmente o título ou a descrição de um fragmento de conteú
 
 ### Excluir {#delete}
 
-O uso é feito via:
+O uso é por meio de:
 
 `DELETE /{cfParentPath}/{cfName}`
 
-Para obter mais detalhes sobre o uso da API REST do AEM Assets, consulte:
+Para obter mais detalhes sobre como usar a API REST do AEM Assets, consulte o seguinte:
 
 * API HTTP do Adobe Experience Manager Assets (recursos adicionais)
 * Compatibilidade com fragmentos de conteúdo na API HTTP do AEM Assets (recursos adicionais)

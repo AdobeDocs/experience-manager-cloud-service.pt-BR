@@ -2,9 +2,9 @@
 title: Como compartilhar links com ativos?
 description: Gere um link e compartilhe ativos com outras pessoas que não têm acesso ao aplicativo  [!DNL Assets view] .
 exl-id: 6e05b06c-7436-40e3-acee-c8b1ed218f9e
-source-git-commit: e2efffe0192f7914fd97178884b7938b84fd9a27
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '406'
 ht-degree: 93%
 
 ---
@@ -17,7 +17,7 @@ O [!DNL Assets view] permite gerar um link e compartilhar ativos com participant
 
 Para gerar um link para um ativo ou uma pasta contendo ativos:
 
-1. Selecione o(s) ativo(s) e/ou a(s) pasta(s) contendo os ativos e clique em **[!UICONTROL Compartilhar link]**.
+1. Selecione os ativos, as pastas ou ambos que contêm ativos e clique em **[!UICONTROL Compartilhar link]**.
 
 1. Se desejar ajustá-lo, clique no ícone Calendário para definir uma data de expiração para o link usando o campo **[!UICONTROL Data de vencimento]**. Também é possível especificar uma data diretamente no formato `yyyy-mm-dd`. Por padrão, a data de expiração de um link é definida como 2 semanas a partir da data de compartilhamento.
 
@@ -45,7 +45,7 @@ Para baixar todos os ativos de uma só vez, alterne para a **[!UICONTROL Exibiç
 
 * [Assista a um vídeo sobre compartilhamento de links de ativos na visualização de Ativos](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/link-sharing.html?lang=pt-BR)
 
-* Forneça feedback sobre o produto usando o [!UICONTROL Feedback] opção disponível na interface de exibição do Assets
+* Forneça feedback sobre o produto usando a opção [!UICONTROL Feedback] disponível na interface de visualização do Assets
 
 * Forneça feedback sobre a documentação usando as opções [!UICONTROL Editar esta página] ![editar a página](assets/do-not-localize/edit-page.png) ou [!UICONTROL Registrar um problema] ![criar um problema do GitHub](assets/do-not-localize/github-issue.png) disponíveis na barra lateral direita
 

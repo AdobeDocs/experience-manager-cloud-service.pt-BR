@@ -2,7 +2,7 @@
 title: Edição de um SPA externo no AEM
 description: Este documento descreve as etapas recomendadas para fazer upload de um SPA independente em uma instância AEM, adicionar seções editáveis de conteúdo e ativar a criação.
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '2418'
 ht-degree: 2%
@@ -25,7 +25,7 @@ Os pré-requisitos são simples.
 * AEM Criar um projeto base de SPA usando [o Arquétipo do Projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?#available-properties).
    * Forms é a base do projeto AEM, que é atualizado para incluir o SPA externo.
    * Para as amostras neste documento, o Adobe está usando o ponto de partida de [o projeto WKND SPA](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html#spa-editor).
-* Tenha em mãos o SPA React externo e funcional que deseja integrar.
+* Tenha em mãos o SPA React externo e funcional que você deseja integrar.
 
 ## Fazer upload do AEM para o projeto SPA {#upload-spa-to-aem-project}
 

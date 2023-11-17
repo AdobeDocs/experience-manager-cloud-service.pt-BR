@@ -2,9 +2,9 @@
 title: Como podemos criar e usar temas no Adaptive Forms?
 description: Você pode usar temas para estilizar e fornecer uma identidade visual a um Formulário adaptável usando componentes principais. Você pode compartilhar um tema em qualquer número do Adaptive Forms.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2677'
+source-wordcount: '2676'
 ht-degree: 3%
 
 ---
@@ -367,7 +367,7 @@ O tema é implantado usando o [pipeline de front-end.](https://experienceleague.
 
    ![run-a-pipeline](/help/forms/assets/canvas-theme-run-pipeline.png)
 
-Quando a criação for concluída, o tema ficará disponível na instância do autor para uso. Aparece sob o título **[!UICONTROL Estilo]** no assistente de criação do Formulário adaptável, ao criar um novo Formulário adaptável.
+Quando a criação for concluída, o tema ficará disponível na instância do autor para uso. Aparece sob o título **[!UICONTROL Estilo]** no assistente de criação do Formulário adaptável, ao criar um Formulário adaptável.
 
 ![tema personalizado disponível na guia estilo](/help/forms/assets/custom-theme-style-tab.png)
 

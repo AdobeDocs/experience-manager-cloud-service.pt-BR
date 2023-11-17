@@ -2,7 +2,7 @@
 title: Diagnósticos do ContextHub
 description: O ContextHub fornece uma página de diagnóstico onde você pode ter uma visão geral da estrutura do ContextHub
 exl-id: c8d4e160-ea02-49f3-9e31-119445ef5a68
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 1%
@@ -41,7 +41,7 @@ A seção Módulos lista todos os módulos de interface do usuário do ContextHu
 
 ## Clientlibs {#clientlibs}
 
-A seção Clientlibs lista todas as [pastas da biblioteca cliente](/help/implementing/developing/introduction/clientlibs.md) que o ContextHub carregou. As bibliotecas de clientes são categorizadas da seguinte maneira:
+A seção Clientlibs lista todas as[pastas da biblioteca cliente](/help/implementing/developing/introduction/clientlibs.md) que o ContextHub carregou. As bibliotecas de clientes são categorizadas da seguinte maneira:
 
 * **kernel.js:** Bibliotecas de clientes que implementam a estrutura do ContextHub, o mecanismo de segmento e os tipos de armazenamento.
 * **ui.js:** Bibliotecas de clientes que implementam a interface do usuário do ContextHub e os tipos de módulo de interface do usuário.

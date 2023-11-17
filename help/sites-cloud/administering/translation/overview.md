@@ -4,10 +4,10 @@ description: Obtenha uma visão geral de como traduzir conteúdo para sites mult
 feature: Language Copy
 role: Admin
 exl-id: c3e89719-4d08-401b-b9dd-19d1db03d72c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '289'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '288'
+ht-degree: 94%
 
 ---
 
@@ -35,7 +35,7 @@ Se o seu provedor de serviços de tradução não fornecer um conector para inte
 
 >[!NOTE]
 >
->Seu usuário precisa ser membro do grupo `project-administrators` para usar os recursos de Cópia de idioma.
+>Seu usuário deve ser membro do `project-administrators` grupo para usar os recursos de Cópia de idioma.
 
 ## Práticas recomendadas     {#best-practices}
 

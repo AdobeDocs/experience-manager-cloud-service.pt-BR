@@ -2,10 +2,10 @@
 title: Guia de início rápido para a criação de páginas
 description: Um guia rápido de alto nível para começar a criar conteúdo de página
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1560'
-ht-degree: 90%
+source-wordcount: '1541'
+ht-degree: 84%
 
 ---
 
@@ -51,7 +51,7 @@ Antes de começar o guia de início rápido, veja uma pequena coleção de dicas
 
 >[!NOTE]
 >
->Existem vários atalhos de teclado que podem facilitar a experiência de criação.
+>Há vários atalhos de teclado que podem facilitar a experiência de criação.
 >
 >* [Atalhos de teclado ao editar páginas](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
 >* [Atalhos de teclado para Consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
@@ -87,17 +87,17 @@ Para [criar uma página](/help/sites-cloud/authoring/fundamentals/organizing-pag
 
 ### Selecionar sua página para mais ações   {#selecting-your-page-for-further-action}
 
-Você pode selecionar uma página para poder executar ações nela. Selecionar uma página atualizará automaticamente a barra de ferramentas para que as ações relevantes para esse recurso sejam exibidas.
+Você pode selecionar uma página para poder agir nela. Selecionar uma página atualizará automaticamente a barra de ferramentas para que as ações relevantes para esse recurso sejam exibidas.
 
 Como selecionar uma página depende da exibição usada no console:
 
 1. Exibição de coluna:
 
-   * Toque/clique na miniatura do recurso desejado: a miniatura é sobreposta com uma marca de verificação para mostrar que foi selecionada.
+   * Selecione a miniatura do recurso desejado - a miniatura é sobreposta com uma marca de verificação para mostrar que ela foi selecionada.
 
 1. Exibição de lista:
 
-   * Toque/clique na miniatura do recurso desejado: a miniatura é sobreposta com uma marca de verificação para mostrar que foi selecionada.
+   * Selecione a miniatura do recurso desejado - a miniatura é sobreposta com uma marca de verificação para mostrar que ela foi selecionada.
 
 1. Exibição de cartão:
 
@@ -114,7 +114,7 @@ Como selecionar uma página depende da exibição usada no console:
 
 As [ações rápidas](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) estão disponíveis:
 
-1. [Navegue até a página](#finding-your-page) que deseja realizar a ação.
+1. [Navegue até a página](#finding-your-page) você deseja agir.
 1. Passe o mouse sobre o cartão que representa o recurso desejado. As ações rápidas serão exibidas:
 
    ![Ações do cartão](/help/sites-cloud/authoring/assets/card-actions.png)
@@ -147,7 +147,7 @@ Para editar sua página:
 
    * [Editar o conteúdo de um componente existente](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) na página:
 
-      * Abra a barra de ferramentas do componente com um toque ou clique. Use o ícone de **Editar** (lápis) para abrir a caixa de diálogo.
+      * Abra a barra de ferramentas do componente com os botões Selecionar. Use o ícone de **Editar** (lápis) para abrir a caixa de diálogo.
       * Abra o editor local do componente clicando e segurando ou com um clique duplo e lento. As ações disponíveis serão exibidas (para alguns componentes, será uma seleção limitada).
       * Para ver todas as ações disponíveis, entre no modo de tela cheia utilizando:
 
@@ -155,16 +155,16 @@ Para editar sua página:
 
    * [Configurar as propriedades de um componente existente](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-edit-dialog)
 
-      * Abra a barra de ferramentas do componente com um toque ou clique. Use o ícone de **Configurar** (chave inglesa) para abrir a caixa de diálogo.
+      * Abra a barra de ferramentas do componente com os botões Selecionar. Use o ícone de **Configurar** (chave inglesa) para abrir a caixa de diálogo.
 
    * [Mover um componente](/help/sites-cloud/authoring/fundamentals/editing-content.md#moving-a-component):
 
       * Arrastando o componente desejado para o novo local.
-      * Abra a barra de ferramentas do componente com um toque ou clique. Use os ícones **Cortar** e **Colar** conforme necessário.
+      * Abra a barra de ferramentas do componente com os botões Selecionar. Use o **Recortar** depois **Colar** ícones, quando necessário.
 
    * [Copiar (e Colar)](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) um componente:
 
-      * Abra a barra de ferramentas do componente com um toque ou clique. Use os ícones **Copiar** e **Colar** conforme necessário.
+      * Abra a barra de ferramentas do componente com os botões Selecionar. Use o **Copiar** depois **Colar** ícones, conforme necessário.
 
    >[!NOTE]
    >
@@ -172,7 +172,7 @@ Para editar sua página:
 
    * [Excluir](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) um componente:
 
-      * Abra a barra de ferramentas do componente com um toque ou clique, em seguida, use o ícone **Excluir**.
+      * Abra a barra de ferramentas do componente com selecione e, em seguida, use o **Excluir** ícone.
 
    * [Adicionar anotações](/help/sites-cloud/authoring/fundamentals/annotations.md#annotations) à página:
 
@@ -292,7 +292,7 @@ Por exemplo, o ícone de bloqueio tem a seguinte aparência:
 
    ![Exibir referências](/help/sites-cloud/authoring/assets/references-list.png)
 
-1. Toque/clique no tipo de referência necessário para mostrar mais detalhes e (quando apropriado) executar outras ações.
+1. Selecione o tipo de referência necessário para mostrar mais detalhes e (quando apropriado) executar outras ações.
 
 ### Criar uma versão da sua página   {#creating-a-version-of-your-page}
 
@@ -302,7 +302,7 @@ Para criar uma [versão](/help/sites-cloud/authoring/features/page-versions.md) 
 
    ![Opção Exibir linha do tempo](/help/sites-cloud/authoring/assets/timeline.png)
 
-1. Toque/clique nas reticências na parte inferior direita da coluna Linha do tempo para exibir os botões extras, incluindo **Salvar como versão**.
+1. Selecione as reticências na parte inferior direita da coluna Linha do tempo para exibir os botões extras, incluindo **Salvar como versão**.
 
    ![Exibir linha do tempo](/help/sites-cloud/authoring/assets/timeline-view.png)
 
@@ -318,7 +318,7 @@ O mesmo mecanismo básico é usado ao restaurar e/ou comparar as versões da sua
 
    Se uma versão da sua página já foi salva, ela será listada na Linha do tempo.
 
-1. Toque/clique na versão que deseja restaurar - isso revelará botões de ação adicionais:
+1. Selecione a versão que deseja restaurar - isso revelará botões de ação adicionais:
 
    * **Reverter para essa versão**
 

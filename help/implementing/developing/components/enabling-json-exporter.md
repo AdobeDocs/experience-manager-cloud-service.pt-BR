@@ -2,9 +2,9 @@
 title: Ativação de exportação em JSON para um componente
 description: Os componentes podem ser adaptados para gerar a exportação JSON de seu conteúdo com base em uma estrutura de modelador.
 exl-id: e9be5c0c-618e-4b56-a365-fcdd185ae808
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '462'
 ht-degree: 12%
 
 ---
@@ -66,7 +66,7 @@ Para ser considerada pela estrutura do Exportador JSON, a interface do Modelo de
 
 A interface do modelo Sling correspondente (`MyComponent`) seria então anotado usando [Anotações Jackson](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations) para definir como ele deve ser exportado (serializado).
 
-A interface do modelo precisa ser anotada corretamente para definir quais métodos devem ser serializados. Por padrão, todos os métodos que respeitam a convenção de nomenclatura usual para getters são serializados e derivarão seus nomes de propriedade JSON naturalmente dos nomes de getter. Isso pode ser evitado ou substituído usando `@JsonIgnore` ou `@JsonProperty` para renomear a propriedade JSON.
+A interface do modelo deve ser anotada corretamente para definir quais métodos devem ser serializados. Por padrão, todos os métodos que respeitam a convenção de nomenclatura usual para getters são serializados e derivarão seus nomes de propriedade JSON naturalmente dos nomes de getter. Isso pode ser evitado ou substituído usando `@JsonIgnore` ou `@JsonProperty` para renomear a propriedade JSON.
 
 ## Exemplo {#example}
 
@@ -75,8 +75,6 @@ A interface do modelo precisa ser anotada corretamente para definir quais métod
 Para obter um exemplo, consulte a implementação do Modelo Sling do Componente principal de imagem e sua interface anotada.
 
 ## Documentação relacionada {#related-documentation}
-
-Para obter mais detalhes, consulte:
 
 * [Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/overview.md)
 * [Modelos de fragmentos do conteúdo](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)

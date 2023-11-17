@@ -2,9 +2,9 @@
 title: Otimização de consultas de GraphQL
 description: Saiba como otimizar consultas de GraphQL ao filtrar, paginar e classificar os fragmentos de conteúdo no Adobe Experience Manager as a Cloud Service para entrega de conteúdo headless.
 exl-id: 67aec373-4e1c-4afb-9c3f-a70e463118de
-source-git-commit: 2ac93fbe0075cc2c88def444daba613e8b40c018
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1877'
+source-wordcount: '1876'
 ht-degree: 65%
 
 ---

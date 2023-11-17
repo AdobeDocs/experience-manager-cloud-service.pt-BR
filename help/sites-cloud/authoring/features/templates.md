@@ -2,10 +2,10 @@
 title: Criação de modelos de páginas
 description: O modelo define a estrutura da página resultante e, com o editor de modelos, criar e manter modelos não é mais uma tarefa somente para desenvolvedores
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '4567'
-ht-degree: 97%
+source-wordcount: '4538'
+ht-degree: 87%
 
 ---
 
@@ -40,7 +40,7 @@ Para obter informações detalhadas sobre como os modelos editáveis funcionam e
 >
 >Um administrador precisa configurar uma pasta de modelo no **Navegador de configurações** e aplicar permissões apropriadas antes que um autor de modelo possa criar um modelo nessa pasta.
 
-Antes de começar, é importante considerar que a criação de um novo modelo requer colaboração. Por esse motivo, a [Função](#roles) é indicada para cada tarefa. Isso não afetará a maneira como você usa um modelo para criar uma página, mas afeta a maneira como uma página se relaciona com o modelo.
+Antes de começar, é importante considerar que a criação de um modelo requer colaboração. Por esse motivo, a [Função](#roles) é indicada para cada tarefa. Isso não afetará a maneira como você usa um modelo para criar uma página, mas afeta a maneira como uma página se relaciona com o modelo.
 
 ### Funções {#roles}
 
@@ -67,7 +67,7 @@ As tarefas detalhadas neste documento são listadas com a função responsável 
 
 ## Criação e gerenciamento de modelos {#creating-and-managing-templates}
 
-Ao criar um novo modelo editável, você:
+Ao criar um modelo editável, você:
 
 * Use o console **Modelo**. Isso está disponível na seção **Geral** do console **Ferramentas**.
    * Ou diretamente em: `https://<host>:<port>/libs/wcm/core/content/sites/templates.html/conf`
@@ -89,7 +89,7 @@ Ao criar um novo modelo editável, você:
 
 >[!TIP]
 >
->Nunca insira qualquer informação que precise ser internacionalizada em um modelo. <!-- Never enter any information that needs to be [internationalized](/help/sites-developing/i18n.md) into a template.-->
+>Nunca insira qualquer informação que deve ser internacionalizada em um modelo. <!-- Never enter any information that must be [internationalized](/help/sites-developing/i18n.md) into a template.-->
 >
 >Para elementos de modelo, como cabeçalhos e rodapés que devem ser localizados, aproveite [os recursos de localização dos componentes principais.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=pt-BR)
 
@@ -161,11 +161,11 @@ Para definir a miniatura do modelo:
 
 1. Edite as propriedades do modelo.
 1. Escolha se deseja fazer upload de uma miniatura ou gerá-la a partir do conteúdo do modelo.
-   * Se desejar fazer o upload de uma miniatura, clique ou toque em **Fazer upload de imagem**
-   * Se quiser gerar uma miniatura, clique ou toque em **Gerar visualização**
+   * Para fazer upload de uma miniatura, selecione **Fazer upload de imagem**
+   * Se quiser gerar uma miniatura, selecione **Gerar visualização**
 1. Para ambos os métodos, uma visualização da miniatura será exibida.
-   * Se não for satisfatória, clique ou toque em **Limpar** para fazer o upload de outra imagem ou gerar novamente a miniatura.
-1. Quando estiver satisfeito com a miniatura, clique ou toque em **Salvar e Fechar**.
+   * Se não for satisfatório, selecione **Limpar** para carregar outra imagem ou gerar novamente a miniatura.
+1. Quando estiver satisfeito com a miniatura, selecione **Salvar e fechar**.
 
 ### Ativar e permitir um modelo - Autor do modelo   {#enabling-and-allowing-a-template-template-author}
 
@@ -184,7 +184,7 @@ Um modelo pode ser habilitado ou desabilitado para torná-lo disponível ou indi
 
 1. No **console Modelos**, selecione o modelo.
 1. Selecione **Habilitar** ou **Desabilitar** da barra de ferramentas e depois na caixa de diálogo de confirmação.
-1. Agora é possível usar o modelo ao [criar uma nova página](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page), embora você provavelmente queira [editar o modelo](#editing-templates-template-authors) de acordo com seus requisitos.
+1. Agora você pode usar seu modelo quando [criação de uma página](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page), embora você provavelmente queira [editar o modelo](#editing-templates-template-authors) de acordo com suas necessidades.
 
 >[!NOTE]
 >
@@ -219,7 +219,7 @@ Um modelo pode ser disponibilizado ou indisponibilizado para determinadas ramifi
 
 ### Publicar um modelo - Autor do modelo {#publishing-a-template-template-author}
 
-À medida que o modelo for referenciado quando a página for renderizada, o modelo totalmente configurado precisará ser publicado, para estar disponível no ambiente de publicação.
+À medida que o modelo for referenciado quando a página for renderizada, o modelo totalmente configurado deverá ser publicado, para estar disponível no ambiente de publicação.
 
 1. No **console Modelos**, selecione o modelo.
 1. Selecione **Publicar** na barra de ferramentas para abrir o assistente.
@@ -293,7 +293,7 @@ No modo **Estrutura** você define os componentes e o conteúdo para o modelo, a
 
 ![Estrutura da página do editor de modelos](/help/sites-cloud/authoring/assets/templates-page-structure.png)
 
-Existem várias ações que você pode realizar no modo **Estrutura** do editor de modelo e vários recursos para ajudá-lo a:
+Há várias ações que você pode realizar no **Estrutura** do editor de modelos e vários recursos para ajudá-lo a:
 
 #### Adicionar componentes {#add-components}
 
@@ -360,21 +360,21 @@ As propriedades disponíveis dependem do componente selecionado. Por exemplo, pa
 
 As políticas de conteúdo (ou design) definem as propriedades de design de um componente. Por exemplo, os componentes disponíveis ou as dimensões mínima/máxima. Elas são aplicáveis ao modelo (e às páginas criadas com ele).
 
-Em **Política** é possível selecionar uma política existente para aplicar ao componente por meio da lista suspensa.
+Em **Política** você pode selecionar uma política existente para aplicar ao componente por meio da lista suspensa.
 
 ![Selecionar política](/help/sites-cloud/authoring/assets/templates-policy-selector.png)
 
-Uma nova política pode ser adicionada ao selecionar o botão adicionar ao lado da lista suspensa **Selecionar política**. Um novo título deve ser especificado no campo **Título da política**.
+Uma nova política pode ser adicionada ao selecionar o botão adicionar ao lado da **Selecionar política** menu suspenso. Atribua um novo título na variável **Título da política** campo.
 
 ![Botão Adicionar política](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-A política existente selecionada na lista suspensa **Selecionar política** pode ser copiada como uma nova política usando o botão copiar ao lado do menu suspenso. Um novo título deve ser especificado no campo **Título da política**. Por padrão, a política copiada será denominada **Cópia de X**, onde X é o título da política copiada.
+A política existente selecionada no **Selecionar política** a lista suspensa pode ser copiada como uma nova política usando o botão copiar ao lado da lista suspensa. Atribua um novo título na variável **Título da política** campo. Por padrão, a política copiada será denominada **Cópia de X**, onde X é o título da política copiada.
 
 ![Botão Copiar política](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
 É opcional uma descrição da política no campo **Descrição da política**.
 
-Na seção **Outros modelos que também utilizam a política selecionada**, você pode ver qual modelo utiliza a política selecionada na lista suspensa **Selecionar política**.
+No **Outros modelos que também usam a política selecionada** seção, é possível ver quais outros modelos usam a política selecionada na **Selecionar política** lista suspensa.
 
 ![Utilização da política atual](/help/sites-cloud/authoring/assets/templates-policy-use.png)
 
@@ -395,13 +395,13 @@ Na guia **Principal**, as configurações mais importantes do componente são de
 
 Por exemplo, para um componente de imagem, as larguras permitidas podem ser definidas juntamente com a ativação de carregamento lento.
 
-Se uma configuração permitir várias configurações, clique ou toque no botão **Adicionar** para adicionar outra configuração.
+Se uma configuração permitir várias configurações, selecione a variável **Adicionar** para adicionar outra configuração.
 
 ![Botão Adicionar](/help/sites-cloud/authoring/assets/templates-add-button.png)
 
-Para remover uma configuração, clique ou toque no botão **Excluir** localizado à direita da configuração.
+Para remover uma configuração, selecione a variável **Excluir** localizado à direita da configuração.
 
-Para remover uma configuração, clique ou toque no botão **Excluir**.
+Para remover uma configuração, selecione a variável **Excluir** botão.
 
 ![Botão Excluir](/help/sites-cloud/authoring/assets/templates-delete-button.png)
 
@@ -461,9 +461,9 @@ Na guia **Componentes permitidos**, você define quais componentes estão dispon
 
 Na guia **Componentes padrão**, você define quais componentes são associados automaticamente a determinados tipos de mídia para que, quando um autor arrastar um ativo do navegador de ativos, o AEM saiba com qual componente associá-lo. Observe que somente os componentes com zonas para soltar estão disponíveis para essa configuração.
 
-Clique ou toque em **Adicionar mapeamento** para adicionar um componente totalmente novo com mapeamento de tipo MIME.
+Selecionar **Adicionar mapeamento** para adicionar um componente totalmente novo e mapeamento de tipo MIME.
 
-Selecione um componente na lista e clique ou toque em **Adicionar tipo** para adicionar outro tipo MIME a um componente já mapeado. Clique no ícone **Excluir** para remover a um tipo MIME.
+Selecione um componente na lista e selecione **Adicionar tipo** para adicionar outro tipo MIME a um componente já mapeado. Clique no ícone **Excluir** para remover a um tipo MIME.
 
 ![Guia Componentes padrão](/help/sites-cloud/authoring/assets/templates-default-components-tab.png)
 
@@ -568,20 +568,20 @@ Para acessar a caixa de diálogo **Política da página**:
 
   ![Seletor de políticas](/help/sites-cloud/authoring/assets/templates-policy-selector.png)
 
-  Uma nova política pode ser adicionada ao selecionar o botão adicionar ao lado da lista suspensa **Selecionar política**. Um novo título deve ser especificado no campo **Título da política**.
+  Uma nova política pode ser adicionada ao selecionar o botão adicionar ao lado da **Selecionar política** lista suspensa. Atribua um novo título na variável **Título da política** campo.
 
   ![Botão Adicionar política](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-  A política existente selecionada na lista suspensa **Selecionar política** pode ser copiada como uma nova política usando o botão copiar ao lado do menu suspenso. Um novo título deve ser especificado no campo **Título da política**. Por padrão, a política copiada será denominada **Cópia de X**, onde X é o título da política copiada.
+  A política existente selecionada no **Selecionar política** a lista suspensa pode ser copiada como uma nova política usando o botão copiar ao lado da lista suspensa. Atribua um novo título na variável **Título da política** campo. Por padrão, a política copiada será denominada **Cópia de X**, onde X é o título da política copiada.
 
   ![Botão Copiar política](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
-* Defina um título para a política no campo **Título da política**. É necessário que a política tenha um título para que possa ser facilmente selecionada na lista suspensa **Selecionar política**.
+* Defina um título para a política no campo **Título da política**. É necessário que a política tenha um título para que possa ser facilmente selecionada na variável **Selecionar política** lista suspensa.
 
   ![Título da política](/help/sites-cloud/authoring/assets/templates-policy-title.png)
 
 * É opcional uma descrição da política no campo **Descrição da política**.
-* Na seção **Outros modelos que também utilizam a política selecionada**, você pode ver qual modelo utiliza a política selecionada na lista suspensa **Selecionar política**.
+* No **Outros modelos que também usam a política selecionada** seção, é possível ver quais outros modelos usam a política selecionada na **Selecionar política** lista suspensa.
 
   ![Uso de políticas](/help/sites-cloud/authoring/assets/templates-policy-use.png)
 

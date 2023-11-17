@@ -2,7 +2,7 @@
 title: Publicação
 description: Saiba como executar a migração depois que o código e o conteúdo estiverem prontos para nuvem
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1704'
 ht-degree: 4%
@@ -61,7 +61,7 @@ Como mencionado anteriormente, será necessário agendar um código e um períod
 
 Para responder à primeira pergunta, considere o tempo necessário para executar execuções de avaliação em ambientes não relacionados à produção. Para responder à segunda pergunta, você precisa de uma colaboração estreita entre a equipe que está adicionando novos recursos e a equipe que está refatorando o código. O objetivo é garantir que todo o código adicionado à implantação existente também seja adicionado, testado e implantado na ramificação dos serviços em nuvem. Geralmente, significa que a quantidade de congelamento do código é menor.
 
-Além disso, você precisa planejar um congelamento de conteúdo quando a atualização final do conteúdo for agendada.
+Além disso, é necessário planejar um congelamento do conteúdo quando a atualização final do conteúdo for agendada.
 
 ## Práticas recomendadas {#best-practices}
 

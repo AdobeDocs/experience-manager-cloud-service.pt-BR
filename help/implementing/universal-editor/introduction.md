@@ -2,10 +2,10 @@
 title: Introdução ao Editor universal
 description: Saiba como o Editor universal habilita a edição "o que você vê é o que você obtém" (WYSIWYG) de qualquer experiência headless e headful. Entenda como ele pode ajudar criadores de conteúdo a entregar experiências excepcionais, aumentar a velocidade do conteúdo e como ele oferece uma experiência de desenvolvedor de última geração.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '919'
-ht-degree: 96%
+source-wordcount: '925'
+ht-degree: 89%
 
 ---
 
@@ -34,8 +34,8 @@ Muitos usuários acreditam que uma implementação headless limita a edição de
 
 Os requisitos para uma implementação utilizar o Editor Universal são bastante simples e são compatíveis com:
 
-* **Qualquer arquitetura**: renderização do lado do servidor, do lado da borda, do lado do cliente etc.
-* **Qualquer estrutura**: AEM básico ou qualquer estrutura de terceiros, como React, Next.js, Angular etc.
+* **Qualquer arquitetura** - Renderização do lado do servidor, renderização da borda, renderização do lado do cliente e assim por diante.
+* **Qualquer estrutura** - AEM Baunilla, ou qualquer estrutura de terceiros como React, Next.js, Angular e assim por diante.
 * **Qualquer hospedagem**: é possível hospedar localmente no AEM ou em um domínio remoto
 
 ### Qualquer conteúdo {#any-content}
@@ -50,7 +50,7 @@ Um autor de conteúdo deve ter a mesma experiência avançada oferecida no edito
 
 Para um autor, o conteúdo não envolve apenas as informações contidas, mas também a forma como elas são apresentadas e recebidas. O conteúdo vem com metadados e regras de instrumentação adicionais, que o Editor universal pode entender e editar, incluindo:
 
-* **Aplicação de layout e estilo**: utilizando um sistema de estilos, o profissional de marketing e o autor de conteúdo podem aplicar estilos diferentes ao conteúdo e criar layouts distintos, como colunas, carrosséis, guias, acordeões etc.
+* **Aplicar layout e estilo** - Ao usar um sistema de estilos, o profissional de marketing e o autor de conteúdo podem aplicar estilos diferentes ao conteúdo e criar layouts diferentes para o conteúdo, como colunas, carrosséis, guias, acordeões e assim por diante.
 
 ## Valor {#value}
 

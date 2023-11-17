@@ -2,10 +2,10 @@
 title: Trabalhar com tarefas
 description: As tarefas representam itens de trabalho a serem realizados no conteúdo e são usadas nos projetos para determinar a percentagem de conclusão das tarefas atuais
 exl-id: 66f95a1f-34d0-4e2e-aa8c-addc2029a1d9
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '576'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '573'
+ht-degree: 95%
 
 ---
 
@@ -47,7 +47,7 @@ Clique nas reticências (...) no bloco de Tarefas para exibir a lista das tarefa
 
 #### Detalhes da tarefa {#task-details}
 
-Para obter mais informações sobre uma tarefa específica, na Lista de tarefas, toque/clique na tarefa e em **Abrir**.
+Para obter mais informações sobre uma tarefa específica, na Lista de Tarefas, selecione a tarefa e **Abertura**.
 
 ![Detalhes da tarefa](/help/sites-cloud/authoring/assets/projects-task-details.png)
 
@@ -63,12 +63,12 @@ Em Detalhes da tarefa, é possível editar ou adicionar comentários. Além diss
 
 Para adicionar uma tarefa:
 
-1. No projeto, no bloco **Tarefas**, toque/clique no ícone +. A janela **Adicionar tarefa** é aberta.
+1. No projeto, no **Tarefas** selecione o ícone +. A janela **Adicionar tarefa** é aberta.
 1. Insira informações sobre a tarefa. O título da tarefa e o grupo ao qual está atribuída são obrigatórios. Informações adicionais como caminho de conteúdo, descrição, prioridade da tarefa e prazo são opcionais. Além disso, você pode selecionar a guia **Avançado** para inserir o nome da tarefa, que é usado para nomear o URL.
 
    ![Adicionar uma tarefa](/help/sites-cloud/authoring/assets/projects-add-task.png)
 
-1. Toque/clique em **Criar**.
+1. Selecione **Criar**.
 
 ## Trabalhando com tarefas na caixa de entrada {#working-with-tasks-in-the-inbox}
 

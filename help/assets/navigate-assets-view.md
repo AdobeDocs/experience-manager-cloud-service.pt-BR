@@ -3,10 +3,10 @@ title: "Interface do [!DNL Assets view] "
 description: Entenda a interface e a navegação no [!DNL Assets view].
 role: User
 exl-id: 534a8084-88f7-410e-b872-719e47e62b10
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '894'
-ht-degree: 90%
+ht-degree: 89%
 
 ---
 
@@ -41,7 +41,7 @@ Ao fazer logon no [!DNL Assets view], você verá a seguinte interface.
 Você pode navegar pelas pastas da interface do usuário principal ou da barra lateral esquerda. Ao navegar, você pode usar a interface para exibir miniaturas de ativos para navegar visualmente pelo repositório ou exibir detalhes do ativo para encontrar rapidamente o ativo que deseja. As opções disponíveis na barra lateral esquerda são:
 
 * [Meu espaço de trabalho](/help/assets/my-workspace-assets-view.md): o Assets agora inclui um espaço de trabalho personalizável, que fornece widgets para acesso conveniente às principais áreas da interface do Assets, bem como as informações mais relevantes para você. Esta página serve como uma solução única para fornecer uma visão geral dos itens de trabalho e fornecer acesso rápido aos principais fluxos de trabalho. Um acesso mais conveniente a essas opções aumenta a eficiência e a velocidade do conteúdo.
-* [Tarefas](/help/assets/my-workspace-assets-view.md): você pode visualizar as tarefas atribuídas a você na guia **Minhas tarefas**. Ao passo que as tarefas criadas por você podem ser visualizadas na guia **Tarefas atribuídas**. Além disso, as tarefas concluídas estão localizadas na guia **Tarefas concluídas**.
+* [Tarefas](/help/assets/my-workspace-assets-view.md): você pode visualizar as tarefas atribuídas a você na guia **Minhas tarefas**. Ao passo que as tarefas criadas por você podem ser visualizadas na guia **Tarefas atribuídas**. Além disso, as tarefas que você conclui estão localizadas em **Tarefas concluídas** guia.
 * [Ativos](/help/assets/manage-organize-assets-view.md): lista de todas as pastas em uma exibição em árvore, à qual você tem acesso.
 * **Visualizados recentemente**: lista de ativos que você visualizou recentemente. [!DNL Assets view] exibe somente os ativos que você visualiza. Ele não exibe os ativos que você percorre ao navegar pelos arquivos ou pastas do repositório.
 * [Coleções](/help/assets/manage-collections-assets-view.md): uma coleção é um conjunto de ativos, pastas ou outras coleções na exibição do Adobe Experience Manager Assets. Use coleções para compartilhar ativos entre usuários. Diferente de pastas, uma coleção pode incluir ativos de locais diferentes. Você pode compartilhar várias coleções com um usuário. Cada coleção contém referências a ativos. A integridade referencial dos ativos é mantida entre as coleções.

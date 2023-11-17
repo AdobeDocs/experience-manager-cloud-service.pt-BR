@@ -4,10 +4,10 @@ description: Saiba como os modelos de site do AEM podem ser usados para predefin
 feature: Administering
 role: Admin
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '568'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '566'
+ht-degree: 84%
 
 ---
 
@@ -37,15 +37,15 @@ Esses modelos são bastante eficientes pois podem ser reutilizados e personaliza
 
    * `https://<your-author-environment>.adobeaemcloud.com/sites.html/content`
 
-1. Toque ou clique em **Criar** no canto superior direito da tela e, no menu suspenso, selecione **Site a partir de modelo**.
+1. Selecionar **Criar** no canto superior direito da tela e no menu suspenso, selecione **Site do modelo**.
 
-   ![Criar um site a partir de um modelo](../assets/create-site-from-template.png)
+   ![Criação de um site a partir de um modelo](../assets/create-site-from-template.png)
 
-1. No assistente Criar site, toque ou clique em **Importar** na parte superior da coluna à esquerda.
+1. No assistente Criar site, selecione **Importar** na parte superior da coluna à esquerda.
 
    ![Assistente de criação de site](../assets/site-creation-wizard.png)
 
-1. No navegador de arquivos, localize o modelo que deseja usar e toque ou clique em **Fazer upload**.
+1. No navegador de arquivos, localize o modelo que deseja usar e selecione **Carregar**.
 
 1. Depois que o upload for concluído, ele aparece na lista de modelos disponíveis.
 
@@ -61,8 +61,8 @@ Os modelos de site são pacotes com uma estrutura lógica que reflete claramente
 
 * `files`: pasta com o kit de interface, arquivo XD e, possivelmente, outros arquivos
 * `previews`: pasta com capturas de tela do modelo de site
-* `site`: pacote do conteúdo que é copiado para cada site criado a partir deste modelo, como modelos de página, páginas, etc.
-* `theme`: fontes do [tema do site](site-themes.md) para modificar a aparência do site, incluindo CSS, JavaScript, etc.
+* `site`: pacote do conteúdo que é copiado para cada site criado a partir deste modelo, como modelos de página, páginas e assim por diante.
+* `theme`: Fontes do [tema do site](site-themes.md) para modificar a aparência do site, incluindo CSS, JavaScript e assim por diante.
 
 ## Modelo de site padrão {#standard-site-template}
 

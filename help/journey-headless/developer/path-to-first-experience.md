@@ -2,10 +2,10 @@
 title: Caminho para sua primeira experiência usando o AEM Headless
 description: Nesta parte da jornada de desenvolvedor do AEM Headless, você entenderá as etapas para implementar sua primeira experiência headless no AEM, incluindo considerações de planejamento e práticas recomendadas para facilitar ao máximo o seu percurso.
 exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1999'
-ht-degree: 97%
+source-wordcount: '1995'
+ht-degree: 91%
 
 ---
 
@@ -52,7 +52,7 @@ Você deseja oferecer uma experiência consistente e gerenciar campanhas persona
 
 Em vez disso, você deve considerar como o conteúdo em diferentes superfícies está relacionado com base no princípio de organização, como hierarquias de marca e produto, categorias de mercadorias ou superfícies, ou etapas na jornada do cliente. Por exemplo, se você tiver um conjunto de superfícies compatíveis com uma marca específica de carros que você fabrica, talvez queira começar com um modelo de conteúdo para informações gerais que sejam relevantes para o carro inteiro, e então utilizar alguns elementos mais específicos, como o conteúdo necessário para quando o carro estiver dando partida ou quando houver problemas de manutenção. Tal modelo imporá a herança do conteúdo geral da marca de carro e permitirá mudanças com base no contexto específico necessário. Isso também ajuda na gestão de futuras atualizações desse conteúdo, pois é possível impor o controle com base em funções, como o profissional de marketing geral ou o gerente de produto da marca de carro, em comparação com um autor responsável pela experiência de “dar a partida no carro”.
 
-Depois de ter o modelo de conteúdo e uma visão nítida dos vários clientes aos quais o conteúdo precisa ser exibido, é necessário garantir que as APIs GraphQL que permitem o acesso a vários modelos de conteúdo sejam publicadas para todos os clientes que precisam desse conteúdo. Há diferentes opções para se acessar um determinado conteúdo. Você pode solicitar um conteúdo específico que seja estático, o que permite o armazenamento em cache do conteúdo e melhor desempenho. Você também pode solicitar um conteúdo gerado dinamicamente, o que exigirá mais processamento. Certifique-se de que os clientes estejam utilizando as APIs que sejam mais eficientes para suas necessidades empresariais.
+Depois de ter o modelo de conteúdo e uma visualização clara dos vários clientes aos quais o conteúdo deve ser exibido, é necessário garantir que as GraphQL/APIs associadas ao acesso a vários do modelo de conteúdo sejam publicadas para todos os clientes que precisam desse conteúdo. Há diferentes opções para se acessar um determinado conteúdo. Você pode solicitar um conteúdo específico que seja estático, o que permite o armazenamento em cache do conteúdo e melhor desempenho. Você também pode solicitar um conteúdo gerado dinamicamente, o que exigirá mais processamento. Certifique-se de que os clientes estejam usando as APIs mais eficientes para suas necessidades comerciais.
 
 ## Entender os ambientes {#understanding-environments}
 
@@ -68,7 +68,7 @@ Durante o estágio de desenvolvimento, é recomendável trabalhar com um ambient
 
 ### Cooperação de desenvolvedores e autores de conteúdo {#cooperation}
 
-Os desenvolvedores precisam de um ambiente de desenvolvimento do AEM configurado com os modelos de conteúdo preenchidos. O desenvolvedor cria o cliente que consumirá conteúdo do AEM Headless enquanto os autores de conteúdo ainda estão criando o conteúdo. É por isso que as definições de API são realmente importantes. Ao utilizar o SDK do AEM, o desenvolvedor pode criar um gancho de teste para que os testes de unidade e do cliente possam ser gerados, permitindo que o cliente renderize corretamente o conteúdo.
+Os desenvolvedores precisam de um ambiente de desenvolvimento do AEM configurado com os modelos de conteúdo preenchidos. O desenvolvedor cria o cliente que consumirá conteúdo do AEM Headless enquanto os autores de conteúdo ainda estão criando o conteúdo. É por isso que as definições de API são realmente importantes. Ao usar o SDK do AEM, o desenvolvedor pode criar um gancho de teste para que testes de cliente e unidade possam ser criados para garantir que o cliente possa renderizar o conteúdo corretamente.
 
 Os autores de conteúdo criam conteúdo com base nos modelos de conteúdo que foram definidos no ambiente de preparo. Usando a ferramenta de criação de fragmento de conteúdo, o autor criaria um fragmento de conteúdo ou editaria um fragmento de conteúdo existente. Antes de publicá-lo, o autor pode visualizar como será a aparência no cliente, trabalhando com o desenvolvedor para mover o modelo de conteúdo para o desenvolvimento ou configurar um ambiente de desenvolvedor apenas para que os autores visualizem a aparência dele no cliente.
 
@@ -94,7 +94,7 @@ Esta é uma visão geral do que é necessário para implementar seu primeiro apl
 
 ## Práticas recomendadas     {#best-practices}
 
-Um projeto headless não é bem-sucedido apenas devido à tecnologia implementada, mas também por conta do bom planejamento e governança do projeto. Veja a seguir uma série de práticas recomendadas que autores de conteúdo e desenvolvedores devem manter em mente ao planejar seu projeto.
+Um projeto headless não é bem-sucedido apenas devido à tecnologia implementada, mas também por conta do bom planejamento e governança do projeto. A seguir estão várias práticas recomendadas para que os autores e desenvolvedores de conteúdo se lembrem ao planejar o projeto.
 
 ### Organizar seu conteúdo {#organizing-content}
 
@@ -106,7 +106,7 @@ Um projeto headless não é bem-sucedido apenas devido à tecnologia implementad
 * Agrupe os conteúdos semelhantes em uma pasta.
    * É mais provável que um autor de conteúdo copie e cole um conteúdo já existente para criar novo conteúdo. Portanto, realizar esse processo na mesma pasta o torna mais eficiente.
    * O AEM possibilita que os modelos permitidos sejam definidos por pasta, para que o botão **Criar novo** só mostre os modelos compatíveis com esse local.
-* A criação de novos fragmentos de conteúdo no editor de fragmento de conteúdo em linha pode ser simplificada se a pasta raiz estiver definida no modelo. Assim, profissionais não precisam escolher um local, somente fornecer um nome e começar a editar a nova referência.
+* A criação de novos fragmentos de conteúdo no editor de fragmento de conteúdo em linha pode ser simplificada se a pasta raiz estiver definida no modelo. Em seguida, o profissional não precisa escolher um local, mas apenas fornecer um nome e pode começar a editar a nova referência.
 
 ### Criar conteúdo {#authoring}
 

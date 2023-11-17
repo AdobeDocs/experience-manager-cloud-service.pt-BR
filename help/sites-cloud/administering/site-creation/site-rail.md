@@ -4,10 +4,10 @@ description: Conheça os recursos avançados do painel Site para ajudá-lo a per
 feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '595'
-ht-degree: 95%
+source-wordcount: '583'
+ht-degree: 81%
 
 ---
 
@@ -38,7 +38,7 @@ Com o painel Site sendo exibido no console de sites, selecione a raiz do site pa
 
 ![Baixar fontes de tema](/help/sites-cloud/administering/assets/download-theme-wireframe.png)
 
-Toque ou clique em **Baixar fontes de tema** para fazer o download de uma cópia local do tema do site no formato `.zip` para fins de personalização.
+Selecionar **Baixar fontes de tema** para baixar uma cópia local do tema do site como `.zip` arquivo para fins de personalização.
 
 ## Baixar recursos do modelo {#downloading-template-resources}
 
@@ -48,7 +48,7 @@ Se o site for baseado em um modelo de site, com o painel Site sendo exibido no c
 
 ![Baixar fontes de tema](/help/sites-cloud/administering/assets/download-theme-wireframe.png)
 
-Toque ou clique no botão ou nos botões abaixo do cabeçalho **Baixar recursos de modelo adicionais** para fazer download de uma cópia local dos arquivos disponíveis.
+Selecione o botão ou botões abaixo do cabeçalho **Baixar recursos de modelo adicionais** para baixar uma cópia local dos arquivos disponíveis.
 
 ## Exibir e alterar versões do tema {#them-versions}
 
@@ -60,11 +60,11 @@ Com o painel Site sendo exibido no console de sites, selecione a raiz do site pa
 
 A versão atual do tema é exibida com seu hash de confirmação junto com o carimbo de data e hora da última atualização.
 
-Toque ou clique **Selecionar versão** para exibir versões anteriores do tema.
+Selecionar **Selecionar versão** para exibir versões anteriores do tema.
 
 ![Selecionar versão do tema](/help/sites-cloud/administering/assets/select-theme-versions.png)
 
-Toque ou clique na versão para a qual deseja alterar e, em seguida, em **Aplicar** para fazer a alteração.
+Selecione a versão para a qual deseja alterar e selecione **Aplicar** para fazer a alteração.
 
 Se o AEM detectar que uma versão mais recente do tema foi implantada por meio do pipeline de front-end, mas não aplicada ao site, um ícone de notificação será exibido.
 
@@ -78,7 +78,7 @@ Se o site não foi criado usando um modelo de site, não é possível usar o pip
 
 No entanto, você pode ativar o pipeline de front-end para o site usando o painel Site.
 
-Com o painel Site sendo exibido no console de sites, selecione a raiz do site para revelar informações de tema sobre ele e toque ou clique em **Ativar pipeline de front-end**.
+Com o painel Site sendo exibido no console de sites, selecione a raiz do site para revelar informações de tema sobre ele e selecione **Ativar pipeline de front-end**.
 
 ![Ativação do pipeline de front-end](/help/sites-cloud/administering/assets/enable-fep.png)
 

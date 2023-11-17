@@ -2,9 +2,9 @@
 title: Assimilar conteúdo no Cloud Service
 description: Saiba como usar o Cloud Acceleration Manager para assimilar conteúdo do seu conjunto de migração em uma instância do Cloud Service de destino.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 28cbdff5756b0b25916f8d9a523ab4745873b5fa
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2324'
+source-wordcount: '2326'
 ht-degree: 7%
 
 ---
@@ -139,7 +139,7 @@ Se as &quot;Atualizações de versão do AEM&quot; estiverem integradas no progr
 >
 > Não é mais necessário registrar um tíquete de suporte para desativar a opção &quot;Atualizações de versão do AEM&quot;.
 
-Se &quot;Atualizações de versão do AEM&quot; estiver ativo (ou seja, as atualizações estão em execução ou estão na fila para serem executadas), a assimilação não será iniciada e a interface do usuário apresentará a seguinte mensagem. Quando as atualizações estiverem concluídas, a assimilação poderá ser iniciada. O Cloud Manager pode ser usado para ver o estado atual dos pipelines do programa.
+Se &quot;Atualizações de versão do AEM&quot; estiver ativo (ou seja, as atualizações estão em execução ou estão na fila para execução), a assimilação não será iniciada e a interface do usuário apresentará a seguinte mensagem. Quando as atualizações estiverem concluídas, a assimilação poderá ser iniciada. O Cloud Manager pode ser usado para ver o estado atual dos pipelines do programa.
 
 >[!NOTE]
 >
@@ -162,6 +162,7 @@ Este conflito deve ser resolvido manualmente. Alguém familiarizado com o conte�
 ### Falha na assimilação complementar devido à não exclusão do nó referenciado
 
 Outra causa comum de uma [Assimilação complementar](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) falha é um conflito de versão para um determinado nó na instância de destino. Para identificar esse erro, baixe o log de assimilação usando a interface do Cloud Acceleration Manager e procure uma entrada como a seguinte:
+
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakIntegrity0001: não é possível excluir o nó referenciado: 8a2289f4-b904-4bd0-8410-15e41e0976a8
 
 Isso pode acontecer se um nó no destino for modificado entre uma assimilação e uma subsequente **Não-apagamento** assimilação, de modo que uma nova versão tenha sido criada. Se o conjunto de migração foi extraído com a opção &quot;incluir versões&quot; ativada, pode ocorrer um conflito, pois o destino agora tem uma versão mais recente que está sendo referenciada pelo histórico de versões e outro conteúdo. O processo de assimilação não poderá excluir o nó de versão incorreto porque ele está sendo referenciado.

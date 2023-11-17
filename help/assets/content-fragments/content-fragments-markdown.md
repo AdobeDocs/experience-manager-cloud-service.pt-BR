@@ -4,10 +4,10 @@ description: Entenda como o editor de Fragmento de conteúdo usa a sintaxe de Ma
 feature: Content Fragments
 role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
-source-git-commit: ceab75d3592a461478da3250a41ce00b6d4f31ef
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '576'
-ht-degree: 83%
+source-wordcount: '578'
+ht-degree: 79%
 
 ---
 
@@ -105,7 +105,7 @@ Uma imagem de estilo de referência tem a seguinte sintaxe:
 
     `![Alt text][id]`
 
-Onde “id” é o nome de uma referência de imagem definida. As referências de imagem são definidas usando a sintaxe idêntica às referências de link:
+Onde &quot;id&quot; é o nome de uma referência de imagem definida. As referências de imagem são definidas usando a sintaxe idêntica às referências de link:
 
     `[id]: url/to/image "Optional title attribute"`
 

@@ -2,9 +2,9 @@
 title: Trabalhos assíncronos
 description: O Adobe Experience Manager otimiza o desempenho ao concluir de forma assíncrona algumas tarefas que consomem muitos recursos como operações em segundo plano.
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
-source-git-commit: b658f303d25cca958c08a95ead12fa3b987bcb3b
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '865'
+source-wordcount: '863'
 ht-degree: 70%
 
 ---
@@ -21,7 +21,7 @@ Essas operações incluem:
 * Busca de ativos acima do limite definido a partir de uma implantação remota do Experience Manager
 * Implantação de Live Copy
 
-Você pode visualizar o status de trabalhos assíncronos na **[!UICONTROL Operações em segundo plano]** painel em **Navegação global** -> **Ferramentas** -> **Geral** -> **Tarefas**.
+Você pode visualizar o status de trabalhos assíncronos na **[!UICONTROL Operações em segundo plano]** painel em **Navegação global** > **Ferramentas** > **Geral** > **Tarefas**.
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ Sempre que o AEM processar uma operação de modo assíncrono, você receberá u
 
 Para visualizar o status das operações assíncronas em detalhes, navegue até o **[!UICONTROL Operações em segundo plano]** página.
 
-1. Na interface do Experience Manager, selecione **Navegação global** -> **Ferramentas** -> **Geral** -> **Tarefas**.
+1. Na interface do Experience Manager, selecione **Navegação global** > **Ferramentas** > **Geral** > **Tarefas**.
 
 1. No **[!UICONTROL Operações em segundo plano]** verifique os detalhes das operações.
 

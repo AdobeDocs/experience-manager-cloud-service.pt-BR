@@ -2,9 +2,9 @@
 title: Console de componentes
 description: O console Componentes permite navegar por todos os componentes definidos para a instância
 exl-id: f4949331-5302-46d3-a004-b813bb95ec2f
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '271'
 ht-degree: 69%
 
 ---
@@ -29,7 +29,7 @@ Com o ícone **Apenas conteúdo** (na parte superior esquerda), você pode abrir
 
 ### Detalhes do componente {#component-details}
 
-Para exibir detalhes sobre um componente específico, toque/clique no recurso desejado. Três guias fornecem:
+Para exibir detalhes sobre um componente específico, selecione o recurso desejado. Três guias fornecem:
 
 * **Propriedades**
 

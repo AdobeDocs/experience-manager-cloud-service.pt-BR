@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1398'
-ht-degree: 95%
+source-wordcount: '1390'
+ht-degree: 89%
 
 ---
 
@@ -65,7 +65,7 @@ O console do Sites oferece uma visão geral da estrutura do seu conteúdo, facil
 
 Para acessar o console Sites:
 
-1. No menu de navegação global, clique ou toque em **Navegação** -> **Sites**.
+1. No menu de navegação global, selecione **Navegação** > **Sites**.
 1. O console Sites é aberto no nível superior do seu conteúdo.
 1. Certifique-se de que a **Exibição de coluna** esteja selecionada, usando o seletor de exibições na parte superior direita da janela.
 
@@ -75,7 +75,7 @@ Para acessar o console Sites:
 
    ![Hierarquia de conteúdo](assets/sites-console-hierarchy.png)
 
-1. Ao tocar ou clicar na caixa de seleção de um item em uma coluna, esse item será selecionado e mostrará os seus detalhes na coluna à direita, revelando várias ações disponíveis para o item selecionado na barra de ferramentas acima.
+1. Ao tocar ou clicar na caixa de seleção de um item em uma coluna, ele seleciona esse item e mostra os detalhes do item selecionado na coluna à direita e revela várias ações disponíveis para o item selecionado na barra de ferramentas acima.
 
    ![Seleção de conteúdo](assets/sites-console-selection.png)
 
@@ -97,7 +97,7 @@ O console Sites permite navegar pelo conteúdo e fornece uma visão geral de sua
 
 Para editar uma página:
 
-1. Use o console Sites para localizar e selecionar uma página. Lembre-se de que é necessário tocar ou clicar na caixa de seleção de uma página individual para selecioná-la.
+1. Use o console Sites para localizar e selecionar uma página. Lembre-se de que é necessário marcar a caixa de seleção de uma página individual para selecioná-la.
 
    ![Selecionar uma página para editar](assets/sites-editor-select-page.png)
 

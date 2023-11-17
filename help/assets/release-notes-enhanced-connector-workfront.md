@@ -2,9 +2,9 @@
 title: Notas da versão [!DNL Workfront for Experience Manager enhanced connector]
 description: Notas da versão [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: f5f2c460815d273fe445c6f415dee7776cc18fce
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1355'
+source-wordcount: '1352'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,7 @@ A versão mais recente do [!DNL Workfront for Experience Manager enhanced connec
 
 >[!NOTE]
 >
->O AEM 6.4 chegou ao fim do suporte estendido. Para obter mais detalhes, consulte nossa [períodos de suporte técnico](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontrar as versões compatíveis [aqui](https://experienceleague.adobe.com/docs/?lang=en).
+>O AEM 6.4 chegou ao fim do suporte estendido. Consulte nossa [períodos de suporte técnico](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontrar as versões compatíveis [aqui](https://experienceleague.adobe.com/docs/?lang=en).
 
 
 >[!IMPORTANT]
@@ -43,7 +43,7 @@ A versão mais recente do [!DNL Workfront for Experience Manager enhanced connec
 
 * Ao configurar pastas vinculadas ao projeto com AEM 6.4, o Experience Manager não salva os valores para **[!UICONTROL subpastas]** e **[!UICONTROL Criar pasta vinculada em projetos com portfólio]** campos. O valor para a variável **[!UICONTROL subpastas]** atualizações de campo para **[!UICONTROL indefinido]** e o valor para o **[!UICONTROL Criar pasta vinculada em projetos com portfólio]** atualizações de campo para **[!UICONTROL Portfolio padrão]** automaticamente após salvar a configuração.
 
-* Ao usar a experiência clássica do Workfront, a variável **[!UICONTROL Enviar para]** opção disponível no **[!UICONTROL Mais]** a lista suspensa não permite selecionar o destino dentro do Experience Manager. A variável **[!UICONTROL Enviar para]** A opção funciona corretamente usando o **[!UICONTROL Ações do documento]** lista suspensa. A variável **[!UICONTROL Enviar para]** A opção funciona corretamente para **[!UICONTROL Mais]** lista suspensa e a variável **[!UICONTROL Ações do documento]** disponível na nova experiência do Workfront.
+* Ao usar a experiência clássica do Workfront, a variável **[!UICONTROL Enviar para]** opção disponível no **[!UICONTROL Mais]** lista suspensa não permite selecionar o destino dentro do Experience Manager. A variável **[!UICONTROL Enviar para]** A opção funciona corretamente usando o **[!UICONTROL Ações do documento]** lista suspensa. A variável **[!UICONTROL Enviar para]** A opção funciona corretamente para **[!UICONTROL Mais]** lista suspensa e a variável **[!UICONTROL Ações do documento]** disponível na nova experiência do Workfront.
 
 ## Versões anteriores {#previous-releases}
 

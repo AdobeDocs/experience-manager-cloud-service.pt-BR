@@ -2,10 +2,10 @@
 title: Trabalhar com conteúdo direcionado em vários sites
 description: Se precisar gerenciar conteúdo direcionado, como atividades, experiências e ofertas entre seus sites, você poderá aproveitar o suporte integrado a vários sites do AEM para conteúdo direcionado
 exl-id: 03d2d640-8de8-4c4c-8a1d-756bb2dc8457
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2885'
-ht-degree: 96%
+source-wordcount: '2844'
+ht-degree: 89%
 
 ---
 
@@ -26,7 +26,7 @@ Este documento descreve o seguinte:
 
 Para configurar como seus sites compartilham conteúdo personalizado, é necessário executar as seguintes etapas:
 
-1. [Criar uma nova área](#creating-new-areas) ou [criar uma área como live copy](#creating-new-areas). Uma área inclui todas as atividades disponíveis para uma *área* da página, ou seja, o local na página onde o componente é direcionado. A criação de uma nova área cria uma área vazia, enquanto a criação de uma nova área como uma live copy permite herdar o conteúdo das estruturas do site.
+1. [Criar uma nova área](#creating-new-areas) ou [criar uma área como live copy](#creating-new-areas). Uma área inclui todas as atividades disponíveis para uma *área* da página, ou seja, o local na página onde o componente é direcionado. A criação de uma nova área cria uma área vazia, enquanto a criação de uma área como uma live copy permite herdar o conteúdo nas estruturas do site.
 
 1. [Vincule seu site ou página](#linking-sites-to-an-area) a uma área.
 
@@ -52,7 +52,7 @@ Um site ou uma live copy é vinculado a uma área que contém as atividades que 
 
 ## Casos de uso {#use-cases}
 
-É possível configurar o suporte a vários sites para conteúdo direcionado de várias maneiras, dependendo do seu caso de uso. Esta seção descreve como isso funcionaria teoricamente com uma marca. Além disso, em [Exemplo: direcionamento de conteúdo com base na região](#example-targeting-content-based-on-geography), você pode ver uma aplicação real do direcionamento de conteúdo em vários sites.
+Você pode configurar o suporte multissite para conteúdo direcionado de várias maneiras, dependendo do seu caso de uso. Esta seção descreve como isso funcionaria teoricamente com uma marca. Além disso, em [Exemplo: direcionamento de conteúdo com base na região](#example-targeting-content-based-on-geography), você pode ver uma aplicação real do direcionamento de conteúdo em vários sites.
 
 O conteúdo direcionado é envolvido nas chamadas áreas, que definem o escopo de sites ou páginas. Essas áreas são definidas no nível da marca. Uma marca pode conter várias áreas. As áreas podem ser distintas entre marcas. Enquanto uma marca pode conter apenas a área principal e, portanto, ser compartilhada por todas as marcas, outra marca pode conter várias marcas (por exemplo, por região). As marcas, portanto, não precisam refletir o conjunto de áreas entre elas.
 
@@ -144,18 +144,18 @@ As áreas podem abranger atividades e ofertas. Depois de criar uma área em qual
 
 >[!NOTE]
 >
->A área padrão chamada Área mestre é recolhida por padrão ao tocar ou clicar no nome de uma marca **até** você cria outra área. Em seguida, ao selecionar uma marca no console **Atividade** ou **Ofertas**, você verá o console **Área**.
+>A área padrão chamada Área mestre é recolhida por padrão ao selecionar o nome de uma marca **até** você cria outra área. Em seguida, ao selecionar uma marca no console **Atividade** ou **Ofertas**, você verá o console **Área**.
 
 Para criar uma área:
 
 1. Navegue até **Personalização** > **Atividades** ou **Ofertas** e, em seguida, acesse sua marca.
-1. Toque ou clique em **Criar área**.
+1. Selecionar **Criar área**.
 
    ![Criar área](/help/sites-cloud/authoring/assets/multisite-create-area.png)
 
 1. Clique no ícone de **Área** e clique em **Próximo**.
 1. No campo **Título**, insira um nome para a nova área. Também é possível selecione tags.
-1. Toque ou clique em **Criar**.
+1. Selecione **Criar**.
 
    O AEM redireciona para a janela da marca, a qual lista todas as áreas criadas. Se houver outra área além da Área principal, você poderá criar áreas diretamente no console Marca.
 
@@ -168,7 +168,7 @@ Você cria uma área como uma live copy para herdar o conteúdo direcionado nas 
 Para criar uma área como uma live copy:
 
 1. Navegue até **Personalização** > **Atividades** ou **ofertas** e, em seguida, acesse sua marca.
-1. Toque ou clique em **Criar área como Live Copy**.
+1. Selecionar **Criar área como Live Copy**.
 
    ![Criar área como Live Copy](/help/sites-cloud/authoring/assets/multisite-area-as-livecopy.png)
 
@@ -190,7 +190,7 @@ Para criar uma área como uma live copy:
    >
    >Quando uma página é implantada em uma Live Copy e a área configurada para a página Blueprint também é o Blueprint da área configurada para a Live copy da Página, a ação dinâmica **personalizationContentRollout** aciona uma subRollout síncrona, que faz parte da **Configuração de implantação padrão**.
 
-1. Toque ou clique em **Criar**.
+1. Selecione **Criar**.
 
    O AEM redireciona para a janela da marca, a qual lista todas as áreas criadas. Se houver outra área além da Área Principal, você poderá criar áreas diretamente na janela da marca.
 
@@ -209,13 +209,13 @@ Ao vincular, somente as atividades, experiências e ofertas da área selecionada
 Para vincular um site a uma área:
 
 1. Navegue até o site (ou página) que deseja vincular a uma área.
-1. Selecione o site ou página e toque ou clique em **Propriedades da exibição**.
-1. Toque ou clique na guia **Personalização.**
+1. Selecione o site ou a página e selecione **Propriedades da exibição**.
+1. Selecione o **Personalização** guia.
 1. No menu **Marca**, selecione a marca à qual deseja vincular sua área. Após selecionar a marca, as áreas disponíveis estarão no menu **Referência da área**.
 
    ![Vincular sites](/help/sites-cloud/authoring/assets/multisite-english.png)
 
-1. Selecione a área no menu suspenso **Referência da área** e toque ou clique em **Salvar**.
+1. Selecione a área na **Referência da área** e selecione **Salvar**.
 
    ![Referência da área](/help/sites-cloud/authoring/assets/multisite-area-reference.png)
 
@@ -239,8 +239,8 @@ Uma atividade que está herdando de outro site é marcada em verde ao lado do no
 
 Para suspender ou desconectar a herança do conteúdo direcionado em uma atividade:
 
-1. Navegue até a página em que deseja desconectar ou suspender a herança e toque ou clique em **Direcionamento** no menu suspenso do modo.
-1. Se a página estiver vinculada a uma área que seja uma live copy, o status da herança será exibido. Toque ou clique em **Iniciar o direcionamento**.
+1. Navegue até a página em que deseja desanexar ou suspender a herança e selecione **Direcionamento** no menu suspenso do modo.
+1. Se a página estiver vinculada a uma área que seja uma live copy, o status da herança será exibido. Selecione **Iniciar o direcionamento**.
 1. Para suspender uma atividade, siga um destes procedimentos:
 
    1. Selecione um elemento da atividade, como o público-alvo. O AEM exibe automaticamente uma caixa de confirmação Suspender Live Copy. (É possível suspender a live copy tocando ou clicando em qualquer elemento no processo de direcionamento).
@@ -248,7 +248,7 @@ Para suspender ou desconectar a herança do conteúdo direcionado em uma ativida
 
    ![Suspender Live Copy](/help/sites-cloud/authoring/assets/multisite-suspend-livecopy.png)
 
-1. Toque ou clique em **Suspender** para suspender a atividade. Atividades suspensas são marcadas em vermelho.
+1. Selecionar **Suspender** para suspender a atividade. Atividades suspensas são marcadas em vermelho.
 
    ![Live Copy suspensa](/help/sites-cloud/authoring/assets/multisite-suspended.png)
 
@@ -256,10 +256,10 @@ Para suspender ou desconectar a herança do conteúdo direcionado em uma ativida
 
 Para interromper a herança do conteúdo direcionado em uma atividade:
 
-1. Navegue até a página na qual deseja desconectar a live copy do principal e toque ou clique em **Direcionamento** no menu suspenso do modo.
-1. Se a página estiver vinculada a uma área que seja uma live copy, o status da herança será exibido. Toque ou clique em **Iniciar o direcionamento**.
+1. Navegue até a página onde deseja desanexar a live copy da página-mestre e selecione **Direcionamento** no menu suspenso do modo.
+1. Se a página estiver vinculada a uma área que seja uma live copy, o status da herança será exibido. Selecione **Iniciar o direcionamento**.
 1. Selecione **Desanexar Live Copy** no menu suspenso na barra de ferramentas. O AEM confirma que você deseja desanexar a live copy.
-1. Toque ou clique **Desconectar** para desconectar a live copy da atividade. Após a desconexão, o menu suspenso relativo à herança não será mais exibido. A atividade agora passará a ser uma atividade local.
+1. Selecionar **Desanexar** para desanexar a live copy da atividade. Após a desconexão, o menu suspenso relativo à herança não será mais exibido. A atividade agora passará a ser uma atividade local.
 
    ![Atividade local](/help/sites-cloud/authoring/assets/multisite-winter.png)
 
@@ -269,13 +269,13 @@ Caso tenha suspendido a herança do conteúdo direcionado em uma atividade, é p
 
 Para restaurar a herança do conteúdo direcionado em uma atividade:
 
-1. Navegue até a página em que deseja restaurar a herança e toque ou clique em **Direcionamento** no menu suspenso de modo.
-1. Toque ou clique em **Iniciar o direcionamento**.
+1. Navegue até a página em que deseja restaurar a herança e selecione **Direcionamento** no menu suspenso do modo.
+1. Selecione **Iniciar o direcionamento**.
 1. Selecione **Retomar Live Copy** no menu suspenso da barra de ferramentas.
 
    ![Retomar a Live Copy](/help/sites-cloud/authoring/assets/multisite-resume.png)
 
-1. Toque ou clique **Retomar** para confirmar se deseja retomar a herança da live copy. Quaisquer modificações feitas na atividade atual serão perdidas se você retomar a herança.
+1. Selecionar **Retomar** para confirmar se deseja retomar a herança da live copy. Quaisquer modificações feitas na atividade atual serão perdidas se você retomar a herança.
 
 ## Excluindo áreas {#deleting-areas}
 
@@ -284,5 +284,5 @@ Ao excluir uma área, todas as atividades nessa área são excluídas. O AEM avi
 Para excluir uma área:
 
 1. Navegue até **Personalização** > **Atividades** ou **Ofertas** e, em seguida, acesse sua marca.
-1. Toque ou clique no ícone próximo à área que deseja excluir.
-1. Toque ou clique em **Excluir** e confirme que deseja excluir a área.
+1. Selecione o ícone ao lado da área que você deseja excluir.
+1. Selecionar **Excluir** e confirme se deseja excluir a área.

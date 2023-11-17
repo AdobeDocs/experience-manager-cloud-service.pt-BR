@@ -3,9 +3,9 @@ title: Notas de versão das Ferramentas de migração no AEM as a Cloud Service 
 description: Notas de versão das Ferramentas de migração no AEM as a Cloud Service versão 2022.7.0
 feature: Release Information
 exl-id: bc8f1a80-867e-423a-9c03-4a53b1ebc57c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '429'
 ht-degree: 9%
 
 ---
@@ -23,7 +23,7 @@ A data de lançamento do Analisador de práticas recomendadas v2.1.30 é 27 de j
 ### Novidades {#what-is-new-bpa}
 
 * O BPA agora pode detectar e relatar o tamanho total do Índice Lucene migrável, que é o Índice Lucene total excluindo `/oak:index/lucene` e `/oak:index/damAssetLucene`.
-* Novo padrão adicionado no BPA para detectar e relatar o uso do dicionário i18n personalizado. O Translator.html não está disponível no AEM as a Cloud Service e o dicionário i18n personalizado precisa ser implantado do Git por meio do pipeline CI/CD do Cloud Manager.
+* Novo padrão adicionado no BPA para detectar e relatar o uso do dicionário i18n personalizado. O Translator.html não está disponível no AEM as a Cloud Service e o dicionário i18n personalizado deve ser implantado no Git por meio do pipeline de CI/CD do Cloud Manager.
 
 ### Correções de erros {#bug-fixes-bpa}
 

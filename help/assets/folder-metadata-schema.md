@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: c86760ed-169d-40f7-91a4-8aee449b286c
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1090'
-ht-degree: 9%
+source-wordcount: '1069'
+ht-degree: 10%
 
 ---
 
@@ -20,9 +20,9 @@ ht-degree: 9%
 
 Use o editor do Forms de Esquema de metadados de pasta para criar e editar esquemas de metadados para pastas.
 
-1. Toque/clique no [!DNL Experience Manager] e vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Assets]** > **[!UICONTROL Esquemas de metadados de pasta]**.
-1. Na página Forms do esquema de metadados de pasta, toque/clique **[!UICONTROL Criar]**.
-1. Especifique um nome para o formulário e toque/clique **[!UICONTROL Criar]**. O novo formulário de esquema é listado na página Schema Forms.
+1. Selecione o [!DNL Experience Manager] e vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Assets]** > **[!UICONTROL Esquemas de metadados de pasta]**.
+1. Na página Forms do Esquema de metadados de pasta, selecione **[!UICONTROL Criar]**.
+1. Especifique um nome para o formulário e selecione **[!UICONTROL Criar]**. O novo formulário de esquema é listado na página Schema Forms.
 
 ## Editar formulários de esquema de metadados de pasta {#edit-folder-metadata-schema-forms}
 
@@ -33,18 +33,18 @@ Use o editor do Forms de Esquema de metadados de pasta para criar e editar esque
 
 Você pode mapear/configurar esses itens de formulário para um campo em um nó de metadados no repositório CRX. Você pode adicionar novas guias ou itens de formulário ao formulário de esquema de metadados.
 
-1. Na página Forms de esquema, selecione o formulário criado e toque/clique no **[!UICONTROL Editar]** ícone na barra de ferramentas.
-1. Na página Editor de esquema de metadados de pasta, toque/clique no **[!UICONTROL +]** ícone para adicionar uma guia ao formulário. Para renomear a guia, toque/clique no nome padrão e especifique o novo nome em **[!UICONTROL Configurações]**.
+1. Na página Schema Forms, selecione o formulário criado e selecione o **[!UICONTROL Editar]** ícone na barra de ferramentas.
+1. Na página Editor de esquema de metadados de pasta, selecione o **[!UICONTROL +]** ícone para adicionar uma guia ao formulário. Para renomear a guia, selecione o nome padrão e especifique o novo nome em **[!UICONTROL Configurações]**.
 
    ![custom_tab](assets/custom_tab.png)
 
-   Para adicionar mais guias, toque/clique no **[!UICONTROL +]** ícone. Toque/clique **[!UICONTROL X]** para excluir uma guia.
+   Para adicionar mais guias, selecione o **[!UICONTROL +]** ícone. Selecionar **[!UICONTROL X]** para excluir uma guia.
 
 1. Na guia ativa, adicione um ou mais componentes da **[!UICONTROL Formulário de criação]** guia.
 
    ![add_components](assets/adding_components.png)
 
-   Se criar várias guias, toque/clique em uma guia específica para adicionar componentes.
+   Se você criar várias guias, selecione uma guia específica para adicionar componentes.
 
 1. Para configurar um componente, selecione-o e modifique suas propriedades na **[!UICONTROL Configurações]** guia.
 
@@ -52,7 +52,7 @@ Você pode mapear/configurar esses itens de formulário para um campo em um nó 
 
    ![configure_properties](assets/configure_properties.png)
 
-1. Toque/clique **[!UICONTROL Salvar]** na barra de ferramentas para salvar as alterações.
+1. Selecionar **[!UICONTROL Salvar]** na barra de ferramentas para salvar as alterações.
 
 ### Componentes para criar formulários {#components-to-build-forms}
 
@@ -70,23 +70,23 @@ A variável **[!UICONTROL Formulário de criação]** A guia lista os itens de f
   </tr>
   <tr>
    <td><p>Texto em linha única</p> </td>
-   <td><p> Adicione uma propriedade de texto de linha única. Ele é armazenado como uma string.</p> </td>
+   <td><p> Adiciona uma propriedade de texto em linha única. Ele é armazenado como uma string.</p> </td>
   </tr>
   <tr>
    <td><p>Texto multivalor</p> </td>
-   <td><p> Adicione uma propriedade de texto de vários valores. Ele é armazenado como uma matriz de sequência.</p> </td>
+   <td><p> Adiciona uma propriedade de texto multivalor. Ele é armazenado como uma matriz de sequência.</p> </td>
   </tr>
   <tr>
    <td><p>Número</p> </td>
-   <td><p> Adicione um componente de número.</p> </td>
+   <td><p> Adiciona um componente de número.</p> </td>
   </tr>
   <tr>
    <td><p>Data</p> </td>
-   <td><p> Adicione um componente de data.</p> </td>
+   <td><p> Adiciona um componente de data.</p> </td>
   </tr>
   <tr>
    <td><p>Lista suspensa</p> </td>
-   <td><p> Adicione uma lista suspensa.</p> </td>
+   <td><p> Adiciona uma lista suspensa.</p> </td>
   </tr>
   <tr>
    <td><p>Tags padrão</p> </td>
@@ -101,7 +101,7 @@ A variável **[!UICONTROL Formulário de criação]** A guia lista os itens de f
 
 ### Edição de itens de formulário {#editing-form-items}
 
-Para editar as propriedades dos itens de formulário, toque/clique no componente e edite todas ou um subconjunto das seguintes propriedades na **[!UICONTROL Configurações]** guia. É recomendável mapear apenas um campo para uma determinada propriedade no esquema de metadados. Caso contrário, o campo adicionado mais recente mapeado para a propriedade será escolhido pelo sistema.
+Para editar as propriedades dos itens de formulário, selecione o componente e edite todas ou um subconjunto das seguintes propriedades na **[!UICONTROL Configurações]** guia. É recomendável mapear apenas um campo para uma determinada propriedade no esquema de metadados. Caso contrário, o campo adicionado mais recente mapeado para a propriedade será escolhido pelo sistema.
 
 **[!UICONTROL Rótulo do campo]**: o nome da propriedade de metadados que é exibida na página de propriedades da pasta.
 
@@ -127,7 +127,7 @@ Para garantir que o componente seja exibido corretamente no formulário de esque
 
 ## Excluir formulários de esquema de metadados de pasta {#delete-folder-metadata-schema-forms}
 
-Você pode deletar formulários de esquema de metadados de pasta da página Forms de Esquema de Metadados de Pasta. Para excluir um formulário, selecione-o e toque/clique no ícone Excluir na barra de ferramentas.
+Você pode deletar formulários de esquema de metadados de pasta da página Forms de Esquema de Metadados de Pasta. Para excluir um formulário, selecione-o e, em seguida, o ícone Excluir na barra de ferramentas.
 
 ![delete_form](assets/delete_form.png)
 
@@ -139,16 +139,16 @@ Se você configurar um esquema de metadados para uma pasta, o caminho para o for
 
 ### Atribuir a um esquema a partir da página Esquema de metadados de pasta {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
-1. Toque/clique no [!DNL Experience Manager] e vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Assets]**> **[!UICONTROL Esquemas de metadados de pasta]**.
+1. Selecione o [!DNL Experience Manager] e vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Assets]**> **[!UICONTROL Esquemas de metadados de pasta]**.
 1. Na página Forms do Esquema de Metadados da Pasta, selecione o formulário de esquema que deseja aplicar a uma pasta.
-1. Na barra de ferramentas, toque/clique **[!UICONTROL Aplicar às pastas]**.
+1. Na barra de ferramentas, selecione **[!UICONTROL Aplicar às pastas]**.
 
-1. Selecione a pasta na qual aplicar o esquema e clique/toque em **[!UICONTROL Aplicar]**. Se um esquema de metadados já estiver aplicado à pasta, uma mensagem de aviso informará que você está prestes a substituir o esquema de metadados existente. Toque/clique **[!UICONTROL Substituir]**.
+1. Selecione a pasta na qual aplicar o esquema e selecione **[!UICONTROL Aplicar]**. Se um esquema de metadados já estiver aplicado à pasta, uma mensagem de aviso informará que você está prestes a substituir o esquema de metadados existente. Selecionar **[!UICONTROL Substituir]**.
 1. Abra as propriedades de metadados da pasta à qual você aplicou o esquema de metadados.
 
    ![folder_properties](assets/folder_properties.png)
 
-   Para exibir os campos de metadados da pasta, toque/clique na guia **[!UICONTROL Metadados da pasta]**.
+   Para exibir os campos de metadados da pasta, selecione o **[!UICONTROL Metadados da pasta]** guia.
 
    ![folder_metadata_properties](assets/folder_metadata_properties.png)
 
@@ -156,20 +156,20 @@ Se você configurar um esquema de metadados para uma pasta, o caminho para o for
 
 Você pode atribuir um esquema de metadados de pasta ao criar uma pasta. Se pelo menos um esquema de metadados de pasta existir no sistema, uma lista extra será exibida no **[!UICONTROL Criar pasta]** diálogo. Você pode selecionar o esquema desejado. Por padrão, nenhum schema está selecionado.
 
-1. No [!DNL Experience Manager Assets] interface do usuário, toque/clique **[!UICONTROL Criar]** na barra de ferramentas.
+1. No [!DNL Experience Manager Assets] interface do usuário, selecione **[!UICONTROL Criar]** na barra de ferramentas.
 1. Especifique um título e nome para a pasta.
-1. Na lista Esquema de metadados de pasta, selecione o esquema desejado. Em seguida, toque/clique **[!UICONTROL Criar]**.
+1. Na lista Esquema de metadados de pasta, selecione o esquema desejado. Em seguida, selecione **[!UICONTROL Criar]**.
 
    ![select_schema](assets/select_schema.png)
 
 1. Abra as propriedades de metadados da pasta à qual você aplicou o esquema de metadados.
-1. Para exibir os campos de metadados da pasta, toque/clique na guia **[!UICONTROL Metadados da pasta]**.
+1. Para exibir os campos de metadados da pasta, selecione o **[!UICONTROL Metadados da pasta]** guia.
 
 ## Usar o esquema de metadados da pasta {#use-the-folder-metadata-schema}
 
 Abra as propriedades de uma pasta configurada com um esquema de metadados de pasta. Uma guia **[!UICONTROL Metadados da pasta]** é exibida na página Propriedades da pasta. Para exibir o formulário de esquema de metadados da pasta, selecione essa guia.
 
-Insira valores de metadados nos vários campos e toque/clique **[!UICONTROL Salvar]** para armazenar os valores. Os valores especificados são armazenados no nó da pasta no repositório CRX.
+Insira valores de metadados nos vários campos e selecione **[!UICONTROL Salvar]** para armazenar os valores. Os valores especificados são armazenados no nó da pasta no repositório CRX.
 
 ![folder_metadata_properties-1](assets/folder_metadata_properties-1.png)
 

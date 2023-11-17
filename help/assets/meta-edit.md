@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 464a97ce-da3e-47b5-9879-fafaf2f2378c
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '455'
-ht-degree: 15%
+source-wordcount: '443'
+ht-degree: 7%
 
 ---
 
@@ -24,13 +24,13 @@ Para editar metadados:
 
 1. Siga uma das seguintes opções:
 
-   * Na interface do usuário do Assets, selecione o ativo e clique/toque na **[!UICONTROL Propriedades da exibição]** ícone na barra de ferramentas.
+   * Na interface do usuário do Assets, selecione o ativo e selecione a variável **[!UICONTROL Propriedades da exibição]** ícone na barra de ferramentas.
    * Na miniatura do ativo, selecione o **[!UICONTROL Propriedades da exibição]** ação rápida.
-   * Na página do ativo, clique/toque em **[!UICONTROL Propriedades da exibição]** na barra de ferramentas.
+   * Na página do ativo, selecione **[!UICONTROL Propriedades da exibição]** na barra de ferramentas.
 
-   A página do ativo exibe todos os metadados do ativo. Esses metadados eram extraídos automaticamente quando eram carregados (assimilados) no Experience Manager Assets.
+   A página do ativo exibe os metadados do ativo. Esses metadados eram extraídos automaticamente quando eram carregados (assimilados) no Experience Manager Assets.
 
-1. Faça edições nos metadados em várias guias, conforme necessário, e quando concluído, clique/toque em **[!UICONTROL Salvar]** na barra de ferramentas para salvar as alterações. Clique/toque em **[!UICONTROL Fechar]** para retornar à interface da Web do Assets.
+1. Faça edições nos metadados em várias guias, conforme necessário, e quando concluído, selecione **[!UICONTROL Salvar]** na barra de ferramentas para salvar as alterações. Selecionar **[!UICONTROL Fechar]** para retornar à interface da Web do Assets.
 
    >[!NOTE]
    >
@@ -49,10 +49,10 @@ Para obter detalhes sobre como editar o esquema de metadados, consulte [Edição
 Você pode adicionar seus próprios namespaces no Experience Manager. Da mesma forma que há namespaces predefinidos como cq, jcr e sling, você pode ter um namespace para os metadados do repositório e o processamento xml.
 
 1. Vá para a página de administração do tipo de nó *https://&lt;host>:&lt;port>/crx/explorer/nodetypes/index.jsp*.
-1. Clique ou toque **[!UICONTROL Namespaces]** na parte superior da página. A página de administração do namespace é exibida em uma janela.
+1. Selecionar **[!UICONTROL Namespaces]** na parte superior da página. A página de administração do namespace é exibida em uma janela.
 
-1. Para adicionar um namespace, clique ou toque em **[!UICONTROL Novo]** na parte inferior.
-1. Especifique um namespace personalizado na convenção de namespace XML (especifique a ID no formato de um URI e um prefixo associado para a ID) e clique ou toque **[!UICONTROL Salvar]**.
+1. Para adicionar um namespace, selecione **[!UICONTROL Novo]** na parte inferior.
+1. Especifique um namespace personalizado na convenção de namespace XML (especifique a ID no formato de um URI e um prefixo associado para a ID) e selecione **[!UICONTROL Salvar]**.
 
 **Consulte também**
 

@@ -2,10 +2,10 @@
 title: Visualização de páginas usando dados do ContextHub
 description: A barra de ferramentas do ContextHub exibe os dados dos armazenamentos do ContextHub, permite alterar esses dados e é útil para visualizar o conteúdo
 exl-id: 9c0536c5-900e-4814-9e31-f9fee5adc17c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '368'
-ht-degree: 37%
+source-wordcount: '360'
+ht-degree: 31%
 
 ---
 
@@ -15,7 +15,7 @@ A barra de ferramentas do ContextHub exibe os dados dos armazenamentos do Contex
 
 A barra de ferramentas consiste em uma série de modos de interface que contêm um ou mais módulos de interface.
 
-* Os modos da interface são ícones exibidos no lado esquerdo da barra de ferramentas. Ao clicar ou tocar em um ícone, a barra de ferramentas revela os módulos de interface do usuário que ele contém.
+* Os modos da interface são ícones exibidos no lado esquerdo da barra de ferramentas. Ao selecionar um ícone, a barra de ferramentas revela os módulos de interface do usuário que ele contém.
 * Os módulos de interface exibem dados de um ou mais armazenamentos do ContextHub. Alguns módulos de interface também permitem manipular dados de armazenamento.
 
 O ContextHub instala vários modos de interface e módulos de interface do usuário. Seu administrador pode ter [ContextHub configurado](/help/implementing/developing/personalization/configuring-contexthub.md) para exibir diferentes.
@@ -26,11 +26,11 @@ A barra de ferramentas do ContextHub está disponível no modo Visualização. A
 
 ![A barra de ferramentas do ContextHub](/help/sites-cloud/authoring/assets/contexthub-toolbar.png)
 
-1. Com a página aberta para edição, clique ou toque em Visualizar na barra de ferramentas.
+1. Com a página aberta para edição, selecione Visualizar na barra de ferramentas.
 
    ![O botão Visualizar](/help/sites-cloud/authoring/assets/contexthub-preview-button.png)
 
-1. Para exibir a barra de ferramentas, clique ou toque no ícone ContextHub.
+1. Para exibir a barra de ferramentas, selecione o ícone do ContextHub.
 
    ![O botão ContextHub](/help/sites-cloud/authoring/assets/contexthub-button.png)
 
@@ -56,6 +56,6 @@ A sobreposição pop-up de um módulo pode incluir elementos de formulário que 
 
 ### Modo de tela inteira {#fullscreen-mode}
 
-As sobreposições de pop-up podem incluir um ícone no qual você clica ou toca para expandir o conteúdo do pop-up para cobrir toda a janela ou tela do navegador.
+As sobreposições de pop-up podem incluir um ícone que você seleciona para expandir o conteúdo de pop-up para cobrir toda a janela ou tela do navegador.
 
 ![Botão de tela cheia](/help/sites-cloud/authoring/assets/contexthub-fullscreen.png)

@@ -4,10 +4,10 @@ description: Após configurar os recursos de nuvem, conceda à sua equipe acesso
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 79%
+source-wordcount: '885'
+ht-degree: 77%
 
 ---
 
@@ -24,7 +24,7 @@ Nesta parte do [integração do jornada,](overview.md) você aprende a conceder 
 
 Depois de ler o documento anterior nesta jornada de integração, [Criar ambientes,](create-environments.md) e configurar os recursos de nuvem, conceda à sua equipe acesso ao AEM usando perfis de produto AEM. Como administrador do sistema, faça isso atribuindo perfis de produto do AEM.
 
-Depois de ler este documento, você deverá entender:
+Depois de ler este documento, você compreenderá:
 
 * O que são perfis de produto do AEM.
 * Como adicionar membros da equipe ao perfil de produto Usuário do AEM.
@@ -88,7 +88,7 @@ Essas tarefas exigem que você seja um administrador do sistema com o perfil de 
 
    ![Gerenciar acesso](/help/journey-onboarding/assets/add-team1.png)
 
-1. Uma nova guia direciona você para o Admin Console para acessar a instância do autor do ambiente. Selecione **Administradores do AEM** ou **Usuários do AEM** com base nas permissões que esse indivíduo precisa receber.
+1. Uma nova guia direciona você para o Admin Console para acessar a instância do autor do ambiente. Selecionar **Administradores de AEM** ou **Usuários do AEM** com base nas permissões que esse indivíduo deve receber.
 
    ![Atribuir acesso](/help/journey-onboarding/assets/add-team2.png)
 

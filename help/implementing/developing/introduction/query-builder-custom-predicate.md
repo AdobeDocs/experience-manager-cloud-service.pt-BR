@@ -2,9 +2,9 @@
 title: Implementação de um avaliador de predicado personalizado no Construtor de consultas
 description: O Query Builder do AEM oferece uma maneira fácil e personalizável de consultar o repositório de conteúdo
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '667'
 ht-degree: 0%
 
 ---
@@ -101,7 +101,7 @@ O agrupamento de predicados de metadados de replicação com um avaliador de pre
 >
 >A criação de novos projetos AEM, incluindo o uso do maven, é explicada em detalhes por [o tutorial do WKND.](develop-wknd-tutorial.md)
 
-Primeiro, é necessário atualizar as dependências do Maven do seu projeto. A variável `PredicateEvaluator` faz parte da `cq-search` artefato, portanto, ele precisa ser adicionado ao seu arquivo pom Maven.
+Primeiro, é necessário atualizar as dependências do Maven do seu projeto. A variável `PredicateEvaluator` faz parte da `cq-search` artefato, portanto, ele deve ser adicionado ao seu arquivo pom Maven.
 
 >[!NOTE]
 >

@@ -2,10 +2,10 @@
 title: Gerenciamento de públicos
 description: O console de Públicos permite criar, organizar e gerenciar públicos da sua conta do Adobe Target ou gerenciar segmentos do ContextHub
 exl-id: dff72c15-afcd-4b16-a711-e9ca3010e3ec
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 97%
+source-wordcount: '932'
+ht-degree: 87%
 
 ---
 
@@ -33,8 +33,8 @@ Os públicos-alvo são exibidos com um rótulo que descreve que tipo de público
 
 Para criar um segmento do ContextHub no console Públicos-alvo:
 
-1. No console Navegação, clique ou toque em **Personalização**. Clique ou toque em **Públicos**.
-1. Toque ou clique em **Criar segmento do ContextHub**.
+1. No console Navegação, selecione **Personalização**. Selecionar **Públicos-alvo**.
+1. Selecionar **Criar segmento do ContextHub**.
 
    ![Criação de um segmento](/help/sites-cloud/authoring/assets/audiences-create-segment.png)
 
@@ -60,20 +60,20 @@ Quando você usa mais de uma regra, elas são combinadas pelo operador boolean A
 
 Para criar um público-alvo do Adobe Target:
 
-1. No console Navegação, clique ou toque em **Personalização**. Clique ou toque em **Públicos**.
+1. No console Navegação, selecione **Personalização**. Selecionar **Públicos-alvo**.
 
    ![Navegação até públicos](/help/sites-cloud/authoring/assets/audiences-navigation.png)
 
-1. No console Públicos-alvo, toque ou clique em **Criar** e, em seguida, em **Criar público-alvo**.
+1. No console Públicos-alvo, selecione **Criar** e depois **Criar público-alvo**.
 
    ![Criação de um público do Target](/help/sites-cloud/authoring/assets/audiences-create-target.png)
 
-1. Na caixa de diálogo **Configuração do Adobe Target**, selecione a configuração de direcionamento e toque ou clique em **OK**.
-1. Na área da Regra nº 1, toque ou clique no tipo de atributo e insira quaisquer informações de atributo nos campos disponíveis. Ao terminar, selecione a marca de seleção à direita do atributo para salvá-lo. Consulte [Atributos e suas opções](#attributes-and-their-options) para obter informações sobre todos os atributos.
+1. No **Configuração do Adobe Target** , selecione a configuração de destino e selecione **OK**.
+1. Na área Regra nº 1, selecione o tipo de atributo e insira quaisquer informações de atributo nos campos disponíveis. Ao terminar, selecione a marca de seleção à direita do atributo para salvá-lo. Consulte [Atributos e suas opções](#attributes-and-their-options) para obter informações sobre todos os atributos.
 1. Clique em **Adicionar regra** para adicionar outra regra. Insira quantas regras forem necessárias. As regras são combinadas com o operador boolean AND, o que significa que o público-alvo deve atender a todos os requisitos de cada regra para ser elegível para uma atividade.
-1. Toque ou clique em **Próximo**.
-1. Insira um nome para o público-alvo e toque ou clique em **Salvar**.
-1. Toque ou clique em **Salvar**. Seu público-alvo estará na lista de Públicos-alvo.
+1. Selecione **Próximo**.
+1. Insira um nome para o público e selecione **Salvar**.
+1. Selecione **Salvar**. Seu público-alvo estará na lista de Públicos-alvo.
 
 ### Atributos e suas opções {#attributes-and-their-options}
 
@@ -97,6 +97,6 @@ Para criar um público-alvo do Adobe Target:
 
 É possível editar qualquer público do ContextHub no console de Públicos. Você pode editar os públicos do Adobe Target, mas somente aqueles que foram criados no AEM:
 
-1. No console Navegação, clique ou toque em **Personalização**. Clique ou toque em **Públicos**.
-1. Toque ou clique no ícone ao lado do segmento do ContextHub que você deseja editar e toque ou clique em **Editar**.
+1. No console Navegação, selecione **Personalização**. Selecionar **Públicos-alvo**.
+1. Selecione o ícone ao lado do segmento do ContextHub que você deseja editar e selecione **Editar**.
 1. Faça edições no editor de segmentos. Consulte a documentação do ContextHub para obter mais informações. <!--See the [ContextHub](/help/sites-administering/contexthub-config.md) documentation for more information.-->

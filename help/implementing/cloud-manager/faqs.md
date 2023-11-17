@@ -2,10 +2,10 @@
 title: Perguntas frequentes sobre o Cloud Manager
 description: Encontre respostas para as perguntas mais frequentes sobre o Cloud Manager no AEM as a Cloud Service.
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
 source-wordcount: '987'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -108,7 +108,7 @@ Se [adicionar uma configuração OSGi de RepositoryInitializer](#cloud-manager-d
    * Siga estas etapas para simular o problema em uma configuração local.
       1. Instale uma instância de criação e publicação localmente usando os jars mais recentes do SDK do AEM.
       1. Faça logon na instância de criação.
-      1. Acesse **Ferramentas** -> **Implantação** -> **Distribuição**.
+      1. Ir para **Ferramentas** > **Implantação** > **Distribuição**.
       1. Distribua os pacotes de conteúdo que fazem parte da base de código e veja se a fila é bloqueada com um erro.
 
 ## Não consigo definir uma variável usando um comando aio. O que posso fazer? {#set-variable}

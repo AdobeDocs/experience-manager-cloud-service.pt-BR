@@ -2,7 +2,7 @@
 title: Como integrar o DocuSign a um Formulário adaptável?
 description: Saiba como usar o DocuSign com um formulário adaptável para coletar assinaturas eletrônicas.
 exl-id: fb2e75d6-e454-4999-a079-f663af79051f
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1559'
 ht-degree: 1%

@@ -2,10 +2,10 @@
 title: Configurar regras de tradução para conteúdo headless
 description: Saiba como definir regras de tradução para identificar o conteúdo a ser traduzido.
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '940'
-ht-degree: 90%
+source-wordcount: '913'
+ht-degree: 73%
 
 ---
 
@@ -32,14 +32,14 @@ Agora que sua integração está configurada, este artigo o orienta pela próxim
 
 ## Objetivo {#objective}
 
-Este documento ajuda você a entender como usar as regras de tradução do AEM para identificar o conteúdo da tradução. Após ler este documento, você deve:
+Este documento ajuda você a entender como usar as regras de tradução do AEM para identificar o conteúdo da tradução. Depois de ler este documento, você deverá:
 
 * Entenda o que as regras de tradução fazem.
 * Ser capaz de definir suas próprias regras de tradução.
 
 ## Regras de tradução {#translation-rules}
 
-Os fragmentos de conteúdo, que representam o conteúdo headless, podem conter muitas informações organizadas por campos estruturados. Dependendo das necessidades do projeto, é provável que nem todos os campos de um fragmento de conteúdo precisem ser traduzidos.
+Os fragmentos de conteúdo, que representam o conteúdo headless, podem conter muitas informações organizadas por campos estruturados. Dependendo das necessidades do projeto, é provável que nem todos os campos em um Fragmento de conteúdo precisem ser traduzidos.
 
 As regras de tradução identificam o conteúdo que faz parte, ou não, dos projetos de tradução. Quando o conteúdo é traduzido, o AEM extrai ou obtém o conteúdo com base nessas regras. Dessa forma, somente o conteúdo que deve ser traduzido é enviado para o serviço de tradução.
 
@@ -54,7 +54,7 @@ Visto que os modelos de fragmentos de conteúdo, que definem a estrutura dos fra
 
 >[!TIP]
 >
->Geralmente, o arquiteto de conteúdo fornece ao especialista em tradução os **Nomes de propriedade** de todos os campos que precisam ser traduzidos. Esses nomes são necessários para configurar as regras de tradução. Como especialista em tradução, você [pode encontrar esses **Nomes de propriedade** por conta própria](getting-started.md#content-modlels), conforme descrito anteriormente nesta jornada.
+>Geralmente, o arquiteto de conteúdo fornece ao especialista em tradução a **Nome da propriedade** s de todos os campos necessários para tradução. Esses nomes são necessários para configurar as regras de tradução. Como especialista em tradução, você [pode encontrar esses **Nomes de propriedade** por conta própria](getting-started.md#content-modlels), conforme descrito anteriormente nesta jornada.
 
 ## Criar regras de tradução {#creating-rules}
 
@@ -64,25 +64,23 @@ As regras de tradução são projetadas para lidar com tais cenários. No entant
 
 Existe um console de **Configuração de tradução** disponível para configurar regras de tradução. Para acessá-lo:
 
-1. Navegue até **Ferramentas** -> **Geral**.
-1. Toque ou clique em **Configuração de tradução**.
+1. Navegue até **Ferramentas** > **Geral**.
+1. Selecione **Configurações de tradução**.
 
-Na interface da **Configuração de tradução**, há várias opções disponíveis para suas regras de tradução. Aqui destacamos as etapas mais necessárias e típicas de uma configuração básica de localização headless.
+No **Configuração de tradução** Há várias opções disponíveis para suas regras de tradução. Aqui destacamos as etapas mais necessárias e típicas de uma configuração básica de localização headless.
 
-1. Toque ou clique **Adicionar contexto**, que permite adicionar um caminho. Esse é o caminho do conteúdo que deve ser afetado pela regra.
+1. Selecionar **Adicionar contexto** para adicionar um caminho. Esse é o caminho do conteúdo que deve ser afetado pela regra.
    ![Adicionar contexto](assets/add-translation-context.png)
-1. Use o navegador de caminho para selecionar o caminho necessário e toque ou clique no botão **Confirmar** para salvar. Lembre-se, os fragmentos de conteúdo, que possuem conteúdo headless, geralmente estão localizados em `/content/dam/<your-project>`.
+1. Use o navegador de caminho para selecionar o caminho necessário e selecione **Confirmar o** para salvar. Lembre-se, os fragmentos de conteúdo, que possuem conteúdo headless, geralmente estão localizados em `/content/dam/<your-project>`.
    ![Selecione o caminho](assets/select-context.png)
-1. O AEM salva a configuração.
-1. Você deve selecionar o contexto que acabou de criar e tocar ou clicar em **Editar**. Isso abre o **editor de regras de tradução** para configurar as propriedades.
+1. Selecione o contexto que acabou de criar e selecione **Editar**. Isso abre o **editor de regras de tradução** para configurar as propriedades.
    ![Editor de regras de tradução](assets/translation-rules-editor.png)
 1. Por padrão, todas as configurações são herdadas do caminho principal, neste caso: `/content/dam`. Desmarque a opção **Herdar de`/content/dam`** para adicionar novos campos à configuração.
-1. Depois de desmarcar a opção, na seção **Geral** da lista, adicione os nomes das propriedades do(s) modelo(s) de fragmento de conteúdo que você [anteriormente identificou como campos que devem ser traduzidos.](getting-started.md#content-models)
-   1. Insira o nome da propriedade no campo **Nova propriedade**.
-   1. As opções **Traduzir** e **Herdar** são marcadas automaticamente.
-   1. Toque ou clique em **Adicionar**.
+1. Quando desmarcada, em **Geral** adicionar os nomes das propriedades dos Modelos de fragmento de conteúdo que você [anteriormente identificados como campos para tradução.](getting-started.md#content-models)
+   1. No **Nova propriedade** insira o nome da propriedade. Observe que as **Traduza** e **Herdar** são verificadas automaticamente.
+   1. Selecionar **Adicionar**.
    1. Repita essas etapas para todos os campos que devem ser traduzidos.
-   1. Toque ou clique em **Salvar**.
+   1. Selecione **Salvar**.
       ![Adicionar propriedade](assets/add-property.png)
 
 Agora, você configurou as regras de tradução.

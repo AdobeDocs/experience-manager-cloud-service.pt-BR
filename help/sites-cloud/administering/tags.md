@@ -2,9 +2,9 @@
 title: Administração de tags
 description: Saiba como administrar tags no AEM para organizar seu conteúdo.
 exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2265'
+source-wordcount: '2210'
 ht-degree: 1%
 
 ---
@@ -49,7 +49,7 @@ Existem alguns detalhes técnicos que devem ser considerados ao criar e gerencia
    * Uma tag que não é uma tag container é chamada de tag folha.
    * Um namespace de tag pode ser uma tag folha ou container.
 
-Para obter mais detalhes técnicos sobre como as tags funcionam, consulte o documento [Estrutura de marcação AEM.](/help/implementing/developing/introduction/tagging-framework.md)
+Para obter mais detalhes técnicos sobre como as tags funcionam, consulte [Estrutura de marcação AEM](/help/implementing/developing/introduction/tagging-framework.md).
 
 ## Console de marcação {#tagging-console}
 
@@ -62,7 +62,7 @@ O console de marcação é usado para criar e gerenciar tags e suas taxonomias. 
 Para acessar o console de marcação:
 
 1. Faça logon em um ambiente de criação com privilégios administrativos.
-1. No menu de navegação global, selecione **`Tools`** -> **`General`** ->
+1. No menu de navegação global, selecione **`Tools`** > **`General`** ->
    **`Tagging`**.
 
 ![O console de marcação no AEM](/help/sites-cloud/administering/assets/tagging-console.png)
@@ -79,7 +79,7 @@ Há várias etapas para criar e usar tags para organizar seu conteúdo.
 
 Um namespace é usado para organizar outras tags. Ela pode ser considerada a tag de nível mais baixo e geralmente é usada para agrupar outras tags.
 
-1. Para criar um namespace, abra a variável [console de marcação](#tagging-console) e toque ou clique no botão **Criar** na barra de ferramentas e, em seguida, **Criar namespace**.
+1. Para criar um namespace, abra a variável [console de marcação](#tagging-console) e selecione o **Criar** na barra de ferramentas e, em seguida, **Criar namespace**.
 
    ![Caixa de diálogo Adicionar namespace](/help/sites-cloud/administering/assets/add-namespace.png)
 
@@ -89,7 +89,7 @@ Um namespace é usado para organizar outras tags. Ela pode ser considerada a tag
    * **Nome** - Se um nome não for especificado, um nome de nó válido será criado a partir da variável **Título**. Consulte o documento [Estrutura de marcação AEM](/help/implementing/developing/introduction/tagging-framework.md#tagid) para obter mais informações.
    * **Descrição** - Uma descrição do namespace (opcional)
 
-1. Depois que as informações necessárias forem inseridas, toque ou clique **Criar**.
+1. Depois que as informações necessárias forem inseridas, selecione **Criar**.
 
 O namespace é criado. Observe que no console de marcação os namespaces estão no nível mais baixo (na extremidade esquerda do console) e são representados por ícones de pasta, refletindo sua natureza como um &quot;contêiner&quot; ou agrupamento de outras tags.
 
@@ -105,7 +105,7 @@ As tags geralmente são adicionadas a namespaces.
 
 1. Selecione o namespace em que deseja criar a tag. Ou selecione outra tag para criar uma subtag abaixo dela.
 
-1. Toque ou clique no **Criar** na barra de ferramentas e, em seguida, **Criar tag**.
+1. Selecione o **Criar** na barra de ferramentas e, em seguida, **Criar tag**.
 
 1. A variável **Criar tag** será aberta. Forneça as informações necessárias para a nova tag.
 
@@ -116,7 +116,7 @@ As tags geralmente são adicionadas a namespaces.
 
    ![Caixa de diálogo Criar tag](assets/create-tag.png)
 
-1. Toque ou clique **Enviar**.
+1. Selecione **Enviar**.
 
 A tag é criada e o console é atualizado para mostrar a nova tag.
 
@@ -135,7 +135,7 @@ Assim como ocorre com a criação de qualquer outro conteúdo no AEM, depois de 
 
    ![Seleção de tags no console](assets/select-tags.png)
 
-1. A variável **Publicar tag** A caixa de diálogo solicita uma confirmação para publicar as tags selecionadas. Toque ou clique em **Publicar**.
+1. A variável **Publicar tag** A caixa de diálogo solicita uma confirmação para publicar as tags selecionadas. Selecionar **Publish**.
 
    ![O modal de confirmação Publicar tag](assets/publish-tag.png)
 
@@ -153,7 +153,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 ## Gerenciamento de tags {#managing-tags}
 
-É possível realizar várias ações em tags e namespaces existentes para gerenciá-las e organizá-las. Basta selecionar uma tag ou namespace na variável [console de marcação](#tagging-console) para revelar as ações disponíveis na barra de ferramentas.
+Há várias ações que você pode realizar nas tags e nos namespaces existentes para gerenciá-los e organizá-los. Basta selecionar uma tag ou namespace na variável [console de marcação](#tagging-console) para revelar as ações disponíveis na barra de ferramentas.
 
 * [Propriedades da exibição](#viewing-tag-properties)
 * [Editar](#editing-tags)
@@ -183,7 +183,7 @@ Você pode ver mais detalhes sobre a tag, incluindo quem a publicou pela última
 
    ![Exibição das propriedades da tag](assets/tag-properties.png)
 
-Para obter mais detalhes sobre a seleção dos modos de exibição e do painel, consulte o documento [Manuseio básico.](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
+Para obter mais detalhes sobre a seleção dos modos de exibição e do painel, consulte [Manuseio básico](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
 
 ### Edição de tags {#editing-tags}
 
@@ -199,7 +199,7 @@ Tags e namespaces podem ser editados após a criação.
    * **Descrição**
    * [**Localização**](#managing-tags-in-different-languages)
 
-1. Depois de fazer as edições, toque ou clique **Enviar**.
+1. Depois que as edições forem feitas, selecione **Enviar**.
 
 Para obter detalhes sobre como adicionar traduções de idioma, consulte a seção sobre [Gerenciamento de tags em diferentes idiomas](#managing-tags-in-different-languages).
 
@@ -215,7 +215,7 @@ Para desativar a tag na instância do autor e removê-la da instância de public
 
    ![Seleção de tags no console](assets/select-tags.png)
 
-1. A variável **Cancelar publicação da tag** A caixa de diálogo solicita uma confirmação para publicar as tags selecionadas. Toque ou clique em **Publicar**.
+1. A variável **Cancelar publicação da tag** A caixa de diálogo solicita uma confirmação para publicar as tags selecionadas. Selecionar **Publish**.
 
    ![O modal de confirmação Publicar tag](assets/unpublish-tag.png)
 
@@ -231,7 +231,7 @@ Pode ser útil ver a qual conteúdo uma tag específica é aplicada. Você pode 
 
 1. Para exibir as referências de uma tag, abra o [console de marcação.](#tagging-console)
 
-1. Selecione a tag cujas referências você deseja exibir e, no painel esquerdo, selecione **Referências**.
+1. Selecione a tag cujas referências deseja exibir e, no painel esquerdo, selecione **Referências**.
 
    ![Selecionar visualização de propriedades](assets/view-tag-references.png)
 
@@ -239,13 +239,13 @@ Pode ser útil ver a qual conteúdo uma tag específica é aplicada. Você pode 
 
    ![Exibição de referências de tag](assets/tag-references.png)
 
-1. Toque ou clique no número de referências de tag para exibir a lista detalhada do conteúdo atribuído à tag.
+1. Selecione o número de referências à tag para exibir a lista detalhada do conteúdo atribuído à tag.
 
    ![Exibição detalhada das referências da tag](assets/tag-references-detail.png)
 
 Passe o mouse ou toque em um conteúdo de referência na lista para revelar o caminho completo do conteúdo.
 
-Para obter mais detalhes sobre a seleção dos modos de exibição e do painel, consulte o documento [Manuseio básico.](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
+Para obter mais detalhes sobre a seleção dos modos de exibição e do painel, consulte [Manuseio básico](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
 
 ### Mover tags {#moving-tags}
 
@@ -257,20 +257,20 @@ Pode ser necessário limpar ou reorganizar sua taxonomia de tags movendo uma tag
 
 1. Para mover ou renomear uma tag, abra [console de marcação.](#tagging-console)
 
-1. Selecione a tag que deseja mover ou renomear e toque ou clique **Mover** na barra de ferramentas.
+1. Selecione a tag que deseja mover ou renomear e selecione **Mover** na barra de ferramentas.
 
-1. No **Mover tag** especifique qual propriedade você deseja alterar.
+1. No **Mover tag** , especifique qual propriedade deseja alterar.
 
    * **Renomear para** - O novo nome que você deseja dar à tag
       * Este campo é pré-preenchido com o nome atual da tag.
-      * Deixe inalterado se desejar mover apenas a tag e não renomeá-la.
+      * Deixe inalterado se desejar mover somente a tag e não renomeá-la.
    * **Mover para** - Para onde deseja mover a tag
       * Este campo é pré-preenchido com o local atual da tag.
-      * Deixe inalterado se desejar apenas renomear a tag e não movê-la.
+      * Deixe inalterado se quiser apenas renomear a tag e não movê-la.
 
    ![Mover tag](assets/move-tag.png)
 
-1. Toque ou clique **Enviar**.
+1. Selecione **Enviar**.
 
 A tag é renomeada e/ou movida para seu novo local. Quando a tag selecionada for uma tag container, movê-la também moverá todas as tags secundárias.
 
@@ -280,15 +280,15 @@ Se sua taxonomia de tags tiver duplicatas ou tags semelhantes, pode ser útil me
 
 1. Para mesclar duas tags, abra o [console de marcação.](#tagging-console)
 
-1. Selecione a tag que deseja mesclar com outra tag e toque ou clique **Mesclar** na barra de ferramentas.
+1. Selecione a tag que deseja mesclar com outra tag e selecione **Mesclar** na barra de ferramentas.
 
-1. No **Mesclar tag** toque ou clique no botão **Procurar** ícone do **Mesclar para** para especificar em qual tag você deseja mesclar a tag selecionada.
+1. No **Mesclar tag** , selecione a **Procurar** ícone do **Mesclar para** para especificar em qual tag você deseja mesclar a tag selecionada.
 
    ![Caixa de diálogo Mesclar tag](assets/merge-tag.png)
 
-1. Toque ou clique **Enviar**.
+1. Selecione **Enviar**.
 
-A tag selecionada no console é mesclada à tag especificada na caixa de diálogo. Quando uma tag referenciada é movida ou mesclada, a tag não é fisicamente excluída, de modo que é possível manter referências. Consulte o documento [Estrutura de marcação AEM](/help/implementing/developing/introduction/tagging-framework.md#moving-and-merging-tags) para obter mais informações.
+A tag selecionada no console é mesclada à tag especificada na caixa de diálogo. Quando uma tag referenciada é movida ou mesclada, a tag não é fisicamente excluída, de modo que é possível manter referências. Consulte [Estrutura de marcação AEM](/help/implementing/developing/introduction/tagging-framework.md#moving-and-merging-tags) para obter mais informações.
 
 ### Exclusão de tags {#deleting-tags}
 
@@ -296,15 +296,15 @@ Se a taxonomia de marcação for alterada e uma tag ou um namespace for desneces
 
 1. Para excluir uma tag, abra o [console de marcação.](#tagging-console)
 
-1. Selecione a tag que deseja excluir e toque ou clique **Excluir** na barra de ferramentas.
+1. Selecione a tag que deseja excluir e selecione **Excluir** na barra de ferramentas.
 
-1. A variável **Excluir tag** A caixa de diálogo solicita uma confirmação para excluir as tags selecionadas. Toque ou clique **Excluir**.
+1. A variável **Excluir tag** A caixa de diálogo solicita uma confirmação para excluir as tags selecionadas. Selecione **Excluir**.
 
    ![O modal de confirmação Excluir tag](assets/delete-tag.png)
 
 1. O AEM verifica se a tag não está sendo referenciada.
 
-   1. Se nenhuma referência for encontrada, o AEM solicitará a confirmação final para excluir. Toque ou clique **Excluir**
+   1. Se nenhuma referência for encontrada, o AEM solicitará a confirmação final para excluir. Selecione **Excluir**
 
       ![Nenhuma referência encontrada](assets/no-references-found.png)
 
@@ -357,7 +357,7 @@ Vamos supor que temos uma tag chamada `Animals` que queremos traduzir para o ale
 
 1. Abra o [console de marcação.](#tagging-console)
 
-1. Selecione a tag que deseja traduzir e toque ou clique **Editar** na barra de ferramentas.
+1. Selecione a tag que deseja traduzir e selecione **Editar** na barra de ferramentas.
 
 1. No **Editar tag** , no campo **Localização** selecione o idioma de destino, por exemplo, alemão.
 
@@ -367,7 +367,7 @@ Vamos supor que temos uma tag chamada `Animals` que queremos traduzir para o ale
 
    ![Tradução de títulos de tags](assets/translate-tag.png)
 
-1. Toque ou clique **Enviar**.
+1. Selecione **Enviar**.
 
 Para páginas de conteúdo, o idioma escolhido para a tag é obtido do idioma da página, quando disponível.
 
@@ -377,4 +377,4 @@ Para adicionar um novo idioma ao diálogo, consulte o documento [Criação de ta
 
 >[!TIP]
 >
->Se quiser saber mais sobre os recursos de localização do AEM, consulte o documento [Tradução De Conteúdo Para Sites Multilíngues.](/help/sites-cloud/administering/translation/overview.md)
+>Se quiser saber mais sobre os recursos de localização do AEM, consulte [Tradução De Conteúdo Para Sites Multilíngues](/help/sites-cloud/administering/translation/overview.md).

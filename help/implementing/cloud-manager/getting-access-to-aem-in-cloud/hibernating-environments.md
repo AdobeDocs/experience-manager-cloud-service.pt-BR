@@ -2,10 +2,10 @@
 title: Hibernação cancelamento da hibernação em ambientes de sandbox
 description: Saiba como os ambientes de um programa de sandbox entram automaticamente em um modo de hibernação e como você pode removê-los.
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '681'
-ht-degree: 93%
+source-wordcount: '683'
+ht-degree: 85%
 
 ---
 
@@ -51,7 +51,7 @@ Quando a hibernação for bem-sucedida, você verá a notificação de conclusã
 
 ![Confirmação de hibernação](assets/hibernate-4.png)
 
-No Console do desenvolvedor, também é possível clicar no link **Ambientes** na navegação estrutural acima da lista suspensa **Pod** para obter uma lista dos ambientes que devem ser hibernados.
+No Console do desenvolvedor, também é possível clicar no link **Ambientes** na navegação estrutural acima do **Pod** lista suspensa para obter uma lista dos ambientes que devem ser hibernados.
 
 ![Lista de ambientes que devem ser hibernados](assets/hibernate-1b.png)
 
@@ -88,7 +88,7 @@ Você pode hibernar manualmente seu programa de sandbox no Console do desenvolve
    ![Cancelamento da hibernação concluído](assets/de-hibernation-img4.png)
 
 
-No Console do desenvolvedor, também é possível clicar no link **Ambientes** na navegação estrutural acima da lista suspensa **Pod** para obter uma lista dos ambientes que devem ter a hibernação cancelada.
+No Console do desenvolvedor, também é possível clicar no link **Ambientes** na navegação estrutural acima do **Pod** lista suspensa para obter uma lista dos ambientes que devem ter a hibernação cancelada.
 
 ![Lista de pods hibernados](assets/de-hibernate-1b.png)
 

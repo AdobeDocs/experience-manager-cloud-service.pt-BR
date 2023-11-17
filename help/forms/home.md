@@ -3,10 +3,10 @@ title: Introdução ao  [!DNL AEM Forms]  as a Cloud Service
 description: Utilize o AEM Forms para produzir formulários prontos para os negócios, criar fluxos de trabalho de processo empresarial e usar serviços de documento para criar e proteger documentos.
 landing-page-description: Saiba como usar formulários no AEM as a Cloud Service.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: d0e5a63896ccbeb32b565680276b461fbbf19e9c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1151'
-ht-degree: 96%
+source-wordcount: '1149'
+ht-degree: 94%
 
 ---
 
@@ -28,7 +28,7 @@ O Adobe [!DNL Experience Manager Forms as a Cloud Service] é uma solução cent
 
 ## Digitalize e simplifique a experiência de inscrição e integração
 
-Você pode usar o serviço para criar e implantar formulários digitais interativos e envolventes. Por exemplo, considere uma organização que está procurando digitalizar sua jornada de inscrição de clientes. Eles possuem várias fontes de dados com dados existentes do cliente. Eles procuram preencher formulários previamente, adicionar assinaturas eletrônicas e arquivar formulários preenchidos como arquivos PDF. Além disso, a organização tem vários formulários impressos (em formato PDF), os quais ela busca converter em formulários digitais.
+Você pode usar o serviço para criar e implantar formulários digitais interativos e envolventes. Por exemplo, considere uma organização que está procurando digitalizar sua jornada de inscrição de clientes. Eles possuem várias fontes de dados com dados existentes do cliente. Eles procuram preencher formulários previamente, adicionar assinaturas eletrônicas e arquivar formulários preenchidos como arquivos PDF. Além disso, a organização tem vários formulários impressos (PDF forms), eles também estão procurando converter seus formulários impressos em formulários digitais.
 
 A organização pode usar o [!DNL AEM Forms] as a Cloud Service para criar formulários digitais, conectar formulários a fontes de dados existentes, integrar formulários ao [!DNL Adobe Sign] para adicionar assinaturas eletrônicas e gerar o Documento de registro (DoR), a fim de arquivar formulários enviados como arquivos PDF. A organização também poderá usar o serviço para converter os formulários de PDF existentes em formulários digitais.
 

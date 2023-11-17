@@ -2,9 +2,9 @@
 title: Fragmentos de conteúdo configuram componentes para renderização
 description: Fragmentos de conteúdo configuram componentes para renderização
 exl-id: 6606dc3b-f1b8-4941-8fd0-f69cbd414afa
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '521'
 ht-degree: 6%
 
 ---
@@ -20,7 +20,7 @@ Essas informações são necessárias quando:
 * Você precisa implementar seu próprio componente baseado em Fragmento de conteúdo,
 * E precisa usar os serviços avançados.
 
-É recomendável usar os Componentes principais.
+O Adobe recomenda usar os Componentes principais.
 
 >[!CAUTION]
 >
@@ -47,7 +47,7 @@ Se você precisar de um ou mais desses recursos, (normalmente) é mais fácil us
 
 ## Serviço OSGi - Configuração do componente de fragmento de conteúdo {#osgi-service-content-fragment-component-configuration}
 
-A configuração precisa ser vinculada ao serviço OSGi **Configuração do componente de fragmento de conteúdo**:
+A configuração deve ser associada ao serviço OSGi **Configuração do componente de fragmento de conteúdo**:
 
 `com.adobe.cq.dam.cfm.impl.component.ComponentConfigImpl`
 

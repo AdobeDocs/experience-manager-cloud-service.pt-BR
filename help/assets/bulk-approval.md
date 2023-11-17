@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Collections,Collaboration
 role: User
 exl-id: 1e5bdd66-2707-4584-87ed-a0ff1bde3718
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '845'
-ht-degree: 24%
+source-wordcount: '827'
+ht-degree: 8%
 
 ---
 
@@ -28,7 +28,7 @@ Depois que o revisor concluir a revisão (aprovar ou rejeitar ativos), você rec
 ## Criando uma tarefa de revisão para pastas {#creating-a-review-task-for-folders}
 
 1. Na interface do usuário do Assets, selecione a pasta para a qual deseja criar uma tarefa de revisão.
-1. Na barra de ferramentas, toque/clique no ícone **[!UICONTROL Criar tarefa de revisão]** para abrir a página **[!UICONTROL Verificar tarefa]**. Se não conseguir ver o ícone na barra de ferramentas, toque/clique em **[!UICONTROL Mais]** e selecione o ícone.
+1. Na barra de ferramentas, selecione o **[!UICONTROL Criar tarefa de análise]** ícone para abrir o **[!UICONTROL Tarefa de análise]** página. Se não conseguir ver o ícone na barra de ferramentas, selecione **[!UICONTROL Mais]** e, em seguida, selecione o ícone.
 
    ![chlimage_1-403](assets/chlimage_1-403.png)
 
@@ -52,17 +52,17 @@ Depois que o revisor concluir a revisão (aprovar ou rejeitar ativos), você rec
 
    ![review_name](assets/review_name.png)
 
-1. Toque/clique em **[!UICONTROL Enviar]** e em **[!UICONTROL Concluído]** para fechar a mensagem de confirmação. Uma notificação para a nova tarefa é enviada ao aprovador.
-1. Efetue logon no [!DNL Experience Manager Assets] como Aprovador e navegue até a interface do usuário do Assets. Para aprovar ativos, clique/toque no **[!UICONTROL Notificação]** e selecione a tarefa de revisão na lista.
+1. Selecionar **[!UICONTROL Enviar]** e selecione **[!UICONTROL Concluído]** para fechar a mensagem de confirmação. Uma notificação para a nova tarefa é enviada ao aprovador.
+1. Efetue logon no [!DNL Experience Manager Assets] como Aprovador e navegue até a interface do usuário do Assets. Para aprovar ativos, selecione o **[!UICONTROL Notificação]** e selecione a tarefa de revisão na lista.
 
    ![notificação](assets/notification.png)
 
-1. Na página **[!UICONTROL Tarefa de revisão]**, examine os detalhes da tarefa de revisão e toque/clique em **[!UICONTROL Revisar]**.
-1. Na página **[!UICONTROL Revisar tarefa]**, selecione os ativos e toque/clique no ícone **[!UICONTROL Aprovar/Rejeitar]** para aprovar ou rejeitar, conforme apropriado.
+1. No **[!UICONTROL Tarefa de análise]** página, examine os detalhes da tarefa de revisão e selecione **[!UICONTROL Revisão]**.
+1. No **[!UICONTROL Tarefa de análise]** selecione ativos e selecione a variável **[!UICONTROL Aprovar/Rejeitar]** ícone para aprovar ou rejeitar, conforme apropriado.
 
    ![review_task](assets/review_task.png)
 
-1. Toque/clique no **[!UICONTROL Concluído]** ícone na barra de ferramentas. Na caixa de diálogo, insira um comentário e toque/clique  **[!UICONTROL Concluído]** para confirmar.
+1. Selecione o **[!UICONTROL Concluído]** ícone na barra de ferramentas. Na caixa de diálogo, insira um comentário e selecione  **[!UICONTROL Concluído]** para confirmar.
 1. Navegue até a interface do usuário do Assets e abra a pasta. Os ícones de status de aprovação dos ativos aparecem nas exibições Cartão e Lista.
 
    **Exibição de cartão**
@@ -76,7 +76,7 @@ Depois que o revisor concluir a revisão (aprovar ou rejeitar ativos), você rec
 ## Criação de uma tarefa de revisão para coleções {#creating-a-review-task-for-collections}
 
 1. Na página Coleções, selecione a coleção para a qual deseja criar uma tarefa de revisão.
-1. Na barra de ferramentas, toque/clique no ícone **[!UICONTROL Criar tarefa de revisão]** para abrir a página **[!UICONTROL Verificar tarefa]**. Se não conseguir ver o ícone na barra de ferramentas, toque/clique em **[!UICONTROL Mais]** e selecione o ícone.
+1. Na barra de ferramentas, selecione o **[!UICONTROL Criar tarefa de análise]** ícone para abrir o **[!UICONTROL Tarefa de análise]** página. Se não conseguir ver o ícone na barra de ferramentas, selecione **[!UICONTROL Mais]** e, em seguida, selecione o ícone.
 
    ![chlimage_1-405](assets/chlimage_1-405.png)
 
@@ -96,14 +96,14 @@ Depois que o revisor concluir a revisão (aprovar ou rejeitar ativos), você rec
 
    ![task_details-collection](assets/task_details-collection.png)
 
-1. Toque/clique em **[!UICONTROL Enviar]** e em **[!UICONTROL Concluído]** para fechar a mensagem de confirmação. Uma notificação para a nova tarefa é enviada ao aprovador.
-1. Efetue logon no [!DNL Experience Manager Assets] como Aprovador e navegue até o console de Ativos. Para aprovar ativos, toque/clique no **[!UICONTROL Notificação]** e selecione a tarefa de revisão na lista.
-1. Na página **[!UICONTROL Tarefa de revisão]**, examine os detalhes da tarefa de revisão e toque/clique em **[!UICONTROL Revisar]**.
-1. Todos os ativos na coleção estão visíveis na página de revisão. Selecione os ativos e toque/clique no **[!UICONTROL Aprovar/Rejeitar]** ícone para aprovar ou rejeitar ativos, conforme apropriado.
+1. Selecionar **[!UICONTROL Enviar]** e selecione **[!UICONTROL Concluído]** para fechar a mensagem de confirmação. Uma notificação para a nova tarefa é enviada ao aprovador.
+1. Efetue logon no [!DNL Experience Manager Assets] como Aprovador e navegue até o console de Ativos. Para aprovar ativos, selecione o **[!UICONTROL Notificação]** e selecione a tarefa de revisão na lista.
+1. No **[!UICONTROL Tarefa de análise]** página, examine os detalhes da tarefa de revisão e selecione **[!UICONTROL Revisão]**.
+1. Todos os ativos na coleção estão visíveis na página de revisão. Selecione os ativos e selecione a variável **[!UICONTROL Aprovar/Rejeitar]** ícone para aprovar ou rejeitar ativos, conforme apropriado.
 
    ![review_task_collection](assets/review_task_collection.png)
 
-1. Toque/clique no **[!UICONTROL Concluído]** ícone na barra de ferramentas. Na caixa de diálogo, insira um comentário e toque/clique **[!UICONTROL Concluído]** para confirmar.
+1. Selecione o **[!UICONTROL Concluído]** ícone na barra de ferramentas. Na caixa de diálogo, insira um comentário e selecione **[!UICONTROL Concluído]** para confirmar.
 1. Navegue até o console Coleções e abra a coleção. Os ícones de status de aprovação dos ativos aparecem nas exibições Cartão e Lista.
 
    **Exibição de cartão**

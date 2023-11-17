@@ -2,10 +2,10 @@
 title: Criação de uma configuração - Configuração do headless
 description: Crie uma configuração como uma primeira etapa para começar a usar o headless no AEM as a Cloud Service.
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '327'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '325'
+ht-degree: 94%
 
 ---
 
@@ -25,7 +25,7 @@ Se você estiver familiarizado com os [modelos de página em uma implementação
 
 Um administrador só precisaria criar uma configuração uma vez ou, muito raramente, quando um novo espaço de trabalho fosse necessário para organizar seus modelos de conteúdo. Para os propósitos deste guia de introdução, precisamos criar apenas uma configuração.
 
-1. Faça logon no AEM as a Cloud Service e, no menu principal, selecione **Ferramentas -> Geral -> Navegador de configuração**.
+1. Faça logon no AEM as a Cloud Service e, no menu principal, selecione **Ferramentas > Geral > Navegador de configuração**.
 1. Forneça um **Título** e um **Nome** para sua configuração.
    * O **Título** deve ser descritivo.
    * O **Nome** se tornará o nome do nó no repositório.
@@ -37,7 +37,7 @@ Um administrador só precisaria criar uma configuração uma vez ou, muito raram
 
    ![Criar configuração](../assets/create-configuration.png)
 
-1. Toque ou clique em **Criar**
+1. Selecione **Criar**
 
 É possível criar várias configurações, se necessário. As configurações também podem ser aninhadas.
 

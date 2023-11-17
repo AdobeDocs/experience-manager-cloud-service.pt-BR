@@ -2,9 +2,9 @@
 title: Externalizar URLs
 description: O Externalizador é um serviço OSGi que permite transformar programaticamente um caminho de recurso em um URL externo e absoluto.
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '651'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ Para definir um mapeamento de domínio para o serviço Externalizador:
 
    * **`scheme`** geralmente é http ou https, mas pode ser outro protocolo.
 
-      * É recomendável usar https para aplicar links https.
+      * A Adobe recomenda o uso de https para aplicar links https.
       * Ele é usado se o código do cliente não substituir o esquema ao solicitar a externalização de um URL.
 
    * **`server`** é o nome do host (um nome de domínio ou endereço ip).

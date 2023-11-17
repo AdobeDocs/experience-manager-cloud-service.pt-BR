@@ -2,10 +2,10 @@
 title: Entender a instalação do complemento de demonstração de referência
 description: Saiba mais sobre o Cloud Manager e como ele é usado para instalar o complemento.
 exl-id: 9418aac6-a8c4-43f7-b329-b02149fe2d53
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
 source-wordcount: '956'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -55,7 +55,7 @@ O Cloud Manager é usado para administrar os recursos de nuvem que dão suporte 
 
 >[!TIP]
 >
->Se quiser conhecer o Cloud Manager em detalhes, consulte a seção [Recursos adicionais](#additional-resources) deste artigo e encontre links para mais informações.
+>Se quiser conhecer o Cloud Manager em detalhes, consulte [Recursos adicionais](#additional-resources) deste artigo para obter links para mais informações.
 
 ### Programas {#programs}
 

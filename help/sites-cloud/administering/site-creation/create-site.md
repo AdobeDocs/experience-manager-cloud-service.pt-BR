@@ -4,10 +4,10 @@ description: Saiba como usar o AEM para criar um site usando modelos de site par
 feature: Administering
 role: Admin
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '773'
-ht-degree: 93%
+source-wordcount: '756'
+ht-degree: 77%
 
 ---
 
@@ -55,19 +55,19 @@ Os modelos de site geralmente contêm o conteúdo básico e a estrutura do site,
 
    * `https://<your-author-environment>.adobeaemcloud.com/sites.html/content`
 
-1. Toque ou clique em **Criar** no canto superior direito da tela e, no menu suspenso, selecione **Site a partir de modelo**.
+1. Selecionar **Criar** no canto superior direito da tela e no menu suspenso, selecione **Site do modelo**.
 
    ![Criação de um site a partir de um modelo](../assets/create-site-from-template.png)
 
-1. No assistente Criar site, toque ou clique em um modelo existente no painel esquerdo ou no **Importar** na parte superior da coluna à esquerda para importar um novo template.
+1. No assistente Criar site, selecione um modelo existente no painel esquerdo ou no **Importar** na parte superior da coluna à esquerda para importar um novo template.
 
    ![Assistente de criação de site](../assets/site-creation-wizard.png)
 
-   1. Se optar por importar, no navegador de arquivos, localize o modelo que deseja usar e toque ou clique em **Fazer upload**.
+   1. Se optar por importar, no navegador de arquivos, localize o modelo que deseja usar e selecione **Carregar**.
 
    1. Depois que o upload for concluído, ele aparece na lista de modelos disponíveis.
 
-1. Ao selecionar um modelo, informações sobre ele são reveladas na coluna da direita. Com o modelo desejado selecionado, toque ou clique em **Próximo**.
+1. Ao selecionar um modelo, informações sobre ele são reveladas na coluna da direita. Com o modelo desejado selecionado, selecione **Próxima**.
 
    ![Selecione um modelo](../assets/select-site-template.png)
 
@@ -77,11 +77,11 @@ Os modelos de site geralmente contêm o conteúdo básico e a estrutura do site,
    * O nome do site se torna parte do URL.
    * O nome do site deve estar em conformidade com as [convenções de nomenclatura de páginas do AEM](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices).
 
-1. Toque ou clique em **Criar** e o site é criado a partir do modelo de site.
+1. Selecionar **Criar** e o site é criado a partir do modelo de site.
 
    ![Detalhes do novo site](../assets/create-site-details.png)
 
-1. Na caixa de diálogo de confirmação exibida, toque ou clique em **Concluído**.
+1. Na caixa de diálogo de confirmação exibida, selecione **Concluído**.
 
    ![Caixa de diálogo de sucesso](../assets/success.png)
 
@@ -93,7 +93,7 @@ Os autores de conteúdo agora podem começar a criar!
 
 ## Personalização do site {#site-customization}
 
-Se o site requer personalização para além dos modelos disponíveis, existem várias opções.
+Se o site exigir personalização além dos modelos disponíveis, você terá várias opções.
 
 * Se a estrutura do site ou o conteúdo inicial precisar ser ajustado, [o modelo de site pode ser personalizado para atender às suas necessidades](site-templates.md).
 * Se o estilo do site precisar ser ajustado, [o tema do site pode ser baixado e personalizado](/help/journey-sites/quick-site/overview.md).

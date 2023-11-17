@@ -2,10 +2,10 @@
 title: Lançamentos
 description: Os lançamentos permitem desenvolver conteúdo com eficiência para uma versão futura. Eles permitem fazer alterações prontas para publicação futura, enquanto mantém suas páginas atuais
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 96%
+source-wordcount: '899'
+ht-degree: 93%
 
 ---
 
@@ -29,7 +29,7 @@ Quando o próximo trimestre chegar, você promoverá as páginas de lançamento 
 
 Os lançamentos também podem ser:
 
-* Criados para várias ramificações raiz. Embora você possa criar o lançamento para todo o site (e fazer as alterações lá), isso pode ser inviável, pois todo o site precisaria ser copiado. Quando centenas ou até milhares de páginas estão envolvidas, os requisitos e o desempenho do sistema seriam afetados pela ação de cópia e, posteriormente, pelas comparações necessárias para as tarefas de promoção.
+* Criados para várias ramificações raiz. Embora você possa criar o lançamento para todo o site (e fazer as alterações lá), isso pode ser impraticável, pois todo o site deve ser copiado. Quando centenas ou até milhares de páginas estão envolvidas, os requisitos e o desempenho do sistema seriam afetados pela ação de cópia e, posteriormente, pelas comparações necessárias para as tarefas de promoção.
 * Aninhados (um lançamento dentro de outro) para oferecer a capacidade de criar um lançamento a partir de outro já existente, de modo que os autores possam aproveitar as alterações já feitas em vez de precisar fazer as mesmas alterações várias vezes para cada lançamento.
 
 Esta seção descreve como criar, editar e promover (e, se necessário, [excluir](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch)) as páginas de lançamento de dentro do console do Sites ou [do console de Lançamentos](#the-launches-console):
@@ -96,7 +96,7 @@ Eles permitem:
 
    ![Referências de lançamentos no console do Sites](/help/sites-cloud/authoring/assets/launches-references.png)
 
-1. Toque/clique no lançamento apropriado. A lista de ações possíveis é exibida:
+1. Selecione a inicialização apropriada. A lista de ações possíveis será exibida:
 
    ![Ações para executar em lançamentos no console do Sites](/help/sites-cloud/authoring/assets/launches-references-actions.png)
 

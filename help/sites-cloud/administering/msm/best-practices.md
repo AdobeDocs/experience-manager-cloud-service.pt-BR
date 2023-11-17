@@ -4,10 +4,10 @@ description: Conheça as práticas recomendadas compiladas pelas equipes de enge
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1419'
-ht-degree: 94%
+source-wordcount: '1418'
+ht-degree: 92%
 
 ---
 
@@ -35,7 +35,7 @@ Os benefícios adicionais de usar configurações de blueprint são que elas:
 
 No caso de uma configuração de blueprint não ser mencionada, as implantações só podem ser iniciadas a partir das próprias Live Copies, essencialmente obtendo conteúdo na origem.
 
-Ao criar um novo site com a Live Copy, é vantajoso criar configurações de blueprint para garantir a disponibilidade do conjunto completo de recursos do MSM.
+Ao criar um site com a Live Copy, é vantajoso criar configurações de blueprint para garantir a disponibilidade do conjunto completo de recursos do MSM.
 
 >[!NOTE]
 >

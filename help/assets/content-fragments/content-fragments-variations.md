@@ -2,10 +2,10 @@
 title: Variações - Criação dos fragmentos de conteúdo (Ativos - Fragmentos de conteúdo)
 description: Entenda como as variações podem tornar o conteúdo headless no AEM ainda mais flexível, permitindo criar conteúdo para o fragmento e, em seguida, criar variações desse conteúdo de acordo com a finalidade.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2532'
-ht-degree: 55%
+source-wordcount: '2530'
+ht-degree: 54%
 
 ---
 
@@ -79,7 +79,7 @@ Por exemplo:
 
 ### Editor de tela cheia {#full-screen-editor}
 
-Ao editar um campo de texto multilinha, você pode abrir o editor de tela cheia; toque ou clique no texto e selecione o seguinte ícone de ação:
+Ao editar um campo de texto multilinha, é possível abrir o editor de tela cheia; selecione no texto real e selecione o seguinte ícone de ação:
 
 ![ícone do editor de tela cheia](assets/cfm-variations-03.png)
 

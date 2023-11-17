@@ -3,10 +3,10 @@ title: AEM Content and Commerce
 description: Entenda como usar e administrar o Experience Manager Content and Commerce as a Cloud Service.
 landing-page-description: Entenda como usar e administrar o Experience Manager Content and Commerce as a Cloud Service.
 exl-id: 7f7ece35-f78b-4c66-8a0b-38d248430d85
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 88%
+source-wordcount: '369'
+ht-degree: 82%
 
 ---
 
@@ -16,7 +16,8 @@ Entenda como usar e administrar o Experience Manager Content and Commerce as a C
 
 >[!NOTE]
 >
->Para Conteúdo e Comércio de AEM com AEM 6.5 e CIF clássica, consulte [AEM 6.5 Comércio e conteúdo](https://experienceleague.adobe.com/docs/experience-manager-65/commerce/home.html).
+>Para Conteúdo e Comércio de AEM com AEM 6.5 e CIF clássico, consulte [AEM 6.5 Comércio e conteúdo](https://experienceleague.adobe.com/docs/experience-manager-65/commerce/home.html).
+>
 
 ## Principais artigos sobre conteúdo e comércio {#key-articles}
 
@@ -28,7 +29,7 @@ Entenda como usar e administrar o Experience Manager Content and Commerce as a C
 
 | Guia do usuário | Descrição |
 |---|---|
-| [Visão geral](/help/overview/home.md) | Este guia fornece uma visão geral do Experience Manager as a Cloud Service, incluindo uma introdução, terminologia, arquitetura, etc. |
+| [Visão geral](/help/overview/home.md) | Este guia fornece uma visão geral do Experience Manager as a Cloud Service, incluindo uma introdução, terminologia, arquitetura e assim por diante. |
 | [Notas de versão](/help/release-notes/home.md) | Este guia fornece informações importantes sobre a versão mais recente do Experience Manager as a Cloud Service, incluindo as novidades dos recursos descontinuados e removidos e problemas conhecidos. |
 | [Guia do usuário de segurança](/help/security/home.md) | Saiba mais sobre tópicos importantes de segurança relacionados ao Experience Manager as a Cloud Service. |
 | [Jornada de integração](/help/journey-onboarding/overview.md) | Este guia fornece um resumo de como começar a usar o Experience Manager as a Cloud Service, incluindo como obter acesso e informações importantes sobre proteção de dados. |

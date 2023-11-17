@@ -3,10 +3,10 @@ title: Jornadas de documentação do AEM
 description: As jornadas de documentação fornecem uma estrutura narrativa dentro da documentação do AEM, unindo recursos complexos e diferentes para que você possa resolver uma meta empresarial utilizando práticas recomendadas. As jornadas foram desenvolvidas para auxiliar os iniciantes no AEM, apresentando os conceitos e recursos que permitem atingir uma meta de A a Z.
 exl-id: aab346b8-26dc-4d5b-88bb-720cf634e0a2
 hidefromtoc: true
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1349'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '1347'
+ht-degree: 96%
 
 ---
 
@@ -77,12 +77,12 @@ As jornadas de documentação são um complemento da documentação técnica e d
 |---|---|---|---|---|---|---|
 | Jornada de documentação | Uma jornada define como o AEM pode resolver um problema geral de negócios por meio de uma narrativa que orienta os leitores por processos e recursos complexos e inter-relacionados. Ela ilustra como vários recursos trabalham juntos para resolver uma necessidade empresarial de acordo com as práticas recomendadas. | Leitores novos no AEM | Familiaridade geral do CMS | Opções e configurações detalhadas | Texto | Ca. 1 hora |
 | Documentação técnica | A documentação técnica se concentra em recursos individuais, detalhando o funcionamento técnico do recurso e cada opção disponível para o usuário. | Usuários experientes do AEM | Experiência do AEM | Contexto e histórico | Texto | Varia |
-| Tutorial | Um tutorial oferece informações detalhadas sobre um tópico e apresenta um passo a passo de como um desenvolvedor ou administrador pode atingir um objetivo técnico (geralmente relacionado à programação ou configuração do sistema). São fornecidos exemplos específicos e amostras de código, geralmente utilizando um conjunto limitado de recursos. | Desenvolvedores ou administradores do AEM | Experiência do AEM | Histórico e teoria | Vídeo | >1 hora |
+| Tutorial | Um tutorial oferece informações detalhadas sobre um tópico e apresenta um passo a passo de como um desenvolvedor ou administrador pode atingir um objetivo técnico (geralmente relacionado à programação ou configuração do sistema). São fornecidos exemplos específicos e código de exemplo, geralmente usando um conjunto limitado de recursos. | Desenvolvedores ou administradores do AEM | Experiência do AEM | Histórico e teoria | Vídeo | >1 hora |
 | Guia de introdução | Um guia de introdução é uma apresentação rápida de um novo recurso específico do AEM. Ele fornece uma visão geral rápida de um recurso individual, apresentando ao usuário as etapas importantes (mas não todas) para configurar e utilizar um caso de uso simples. | Administradores do AEM | Experiência do AEM | Histórico, teoria, opções detalhadas | Texto | &lt;1 hora |
 
 ## Quais são as jornadas existentes? {#journeys}
 
-Há várias jornadas de documentação disponíveis para você. Como cada jornada é desenvolvida com uma narrativa, comece com a introdução e leia todo o conteúdo para obter um entendimento completo do tópico no contexto do AEM.
+Há várias Jornadas de documentação disponíveis para você. Como cada jornada é desenvolvida com uma narrativa, comece com a introdução e leia todo o conteúdo para obter um entendimento completo do tópico no contexto do AEM.
 
 | Jornada | Descrição |
 |---|---|

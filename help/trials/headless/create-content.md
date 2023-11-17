@@ -4,10 +4,10 @@ description: Use o modelo de fragmento de conteúdo criado anteriormente para cr
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 91%
+source-wordcount: '688'
+ht-degree: 81%
 
 ---
 
@@ -37,15 +37,15 @@ Neste módulo, você cria um Fragmento de conteúdo com base nesse modelo usando
 
 O console de Fragmentos de conteúdo é usado para criar e editar conteúdo headless em canais de entrega e independentemente do contexto, que pode ser o método mais eficaz em muitos casos de criação. Em um módulo posterior, exploraremos a edição de conteúdo headless no contexto e no local.
 
-1. Toque ou clique no botão **Criar** na parte superior direita do console.
+1. Selecione o **Criar** na parte superior direita do console.
 
-1. A caixa de diálogo **Novo fragmento de conteúdo** será aberta, na qual é possível começar a criar um novo fragmento de conteúdo. O **Local** é automaticamente preenchido com a seção na qual o novo conteúdo será salvo.
+1. A variável **Novo fragmento de conteúdo** é aberta, onde você pode começar a criar um fragmento de conteúdo. O **Local** é automaticamente preenchido com a seção na qual o novo conteúdo será salvo.
 
 1. No menu suspenso **Modelo de Fragmentos de conteúdo**, selecione o modelo de Fragmento de conteúdo **Aventura** criado anteriormente.
 
 1. Adicione `Tuscany` como um **Título** descritivo para o fragmento de conteúdo. Isso é para identificar o seu fragmento no console.
 
-1. Toque ou clique em **Criar e abrir**.
+1. Selecionar **Criar e abrir**.
 
 ![Criar um novo fragmento de conteúdo](assets/do-not-localize/create-content.png)
 
@@ -71,7 +71,7 @@ Depois de salvar e abrir o novo fragmento de conteúdo, o editor de fragmentos d
 
 1. Forneça uma **Imagem** que seja representativa da viagem tocando ou clicando em **Adicionar ativo** no campo **Imagem**.
 
-1. Na janela pop-up do ativo, toque ou clique em **Procurar ativos** para selecionar um ativo existente na biblioteca de ativos.
+1. Na janela pop-up de ativos, selecione **Procurar ativos** para selecionar de um ativo existente na biblioteca de ativos.
 
    ![Adicionar ativo](assets/do-not-localize/add-asset.png)
 
@@ -79,17 +79,17 @@ Depois de salvar e abrir o novo fragmento de conteúdo, o editor de fragmentos d
 
 1. O conteúdo da pasta **cycling-tuscany** será exibido à direita. Selecione a imagem `ADOBESTOCK_141786166.JPEG`.
 
-1. Toque ou clique em **Selecionar**.
+1. Selecionar **Selecionar**.
 
    ![Selecionar ativo](assets/do-not-localize/select-asset.png)
 
 1. A imagem selecionada será mostrada no fragmento de conteúdo. O editor salvará as alterações automaticamente.
 
-1. Quando terminar de adicionar conteúdo, toque ou clique no botão **Publicar** na parte superior direita do editor. Isso disponibiliza o fragmento de conteúdo para ser consumido por aplicativos externos. Em seguida, selecione **Agora** no menu suspenso. Também é possível agendar sua publicação para um momento posterior.
+1. Quando terminar de adicionar o conteúdo, selecione o **Publish** na parte superior direita do editor. Isso disponibiliza o fragmento de conteúdo para ser consumido por aplicativos externos. Em seguida, selecione **Agora** no menu suspenso. Também é possível agendar sua publicação para um momento posterior.
 
    ![Publicar conteúdo](assets/do-not-localize/publish.png)
 
-1. A caixa de diálogo **Publicar fragmentos de conteúdo** será exibida. O AEM executa automaticamente uma verificação de referência para garantir que todos os recursos necessários sejam publicados para o fragmento de conteúdo. Nesse caso, também será necessário publicar o modelo criado. Toque ou clique em **Publicar**.
+1. A caixa de diálogo **Publicar fragmentos de conteúdo** será exibida. O AEM executa automaticamente uma verificação de referência para garantir que todos os recursos necessários sejam publicados para o fragmento de conteúdo. Nesse caso, também será necessário publicar o modelo criado. Selecionar **Publish**.
 
    ![Publicação e verificação de referência](assets/do-not-localize/publish-confirm.png)
 

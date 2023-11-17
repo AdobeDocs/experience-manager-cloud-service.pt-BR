@@ -2,10 +2,10 @@
 title: Introdução à criação no AEM como um CMS headless
 description: Uma introdução ao uso dos recursos do Adobe Experience Manager as a Cloud Service como um CMS headless para criar conteúdo para seu projeto.
 exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
-source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 97%
+source-wordcount: '690'
+ht-degree: 94%
 
 ---
 
@@ -61,7 +61,7 @@ Isso significa que o conteúdo pode atingir uma grande variedade de dispositivos
 
 Portanto, a modelagem de conteúdo (também conhecida como modelagem de dados) é outro termo técnico. Por que ela deve interessar a você como autor?
 
-Para que os aplicativos headless possam acessar seu conteúdo e fazer algo com ele, o conteúdo precisa realmente ter uma estrutura predefinida. Seria possível ter seu conteúdo em forma livre, mas isso complicaria *muito* o processo dos aplicativos.
+Para que os aplicativos headless possam acessar seu conteúdo e fazer algo com ele, seu conteúdo realmente deve ter uma estrutura predefinida. Seria possível ter seu conteúdo em forma livre, mas isso complicaria *muito* o processo dos aplicativos.
 
 Basicamente, o processo de definir a estrutura com a qual o seu conteúdo deve ser compatível envolve criar um modelo, e isso é chamado de modelagem de dados.
 

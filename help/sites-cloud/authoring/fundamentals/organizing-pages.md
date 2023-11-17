@@ -2,10 +2,10 @@
 title: Criar e organizar páginas
 description: Saiba como organizar seu site criando e gerenciando páginas com AEM.
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2448'
-ht-degree: 96%
+source-wordcount: '2429'
+ht-degree: 86%
 
 ---
 
@@ -16,17 +16,17 @@ Este documento descreve como criar e gerenciar páginas com o Adobe Experience M
 
 >[!NOTE]
 >
->Sua conta precisa de direitos de acesso apropriados e permissões para realizar ações nas páginas, como criar, copiar, mover, editar e excluir.
+>Sua conta precisa de direitos de acesso apropriados e permissões para atuar em páginas como criar, copiar, mover, editar, excluir.
 >
 >Caso encontre algum problema, sugerimos que você entre em contato com o administrador do sistema.
 
 <!--
->Your account needs the [appropriate access rights](/help/sites-administering/security.md) and [permissions](/help/sites-administering/security.md#permissions) to take action on pages such as create, copy, move, edit, and delete.
+>Your account needs the [appropriate access rights](/help/sites-administering/security.md) and [permissions](/help/sites-administering/security.md#permissions) to act on pages such as create, copy, move, edit, and delete.
 -->
 
 >[!TIP]
 >
->Há vários [atalhos de teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) que você pode usar no console Sites que tornam a organização das suas páginas mais eficiente.
+>Há vários [atalhos de teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) que você pode usar no console sites, que torna a organização das suas páginas mais eficiente.
 
 {{edge-delivery-authoring}}
 
@@ -70,7 +70,7 @@ De qualquer ponto, você pode visualizar a ramificação ascendente da navegaç�
 
 ### Convenções de nomenclatura da página {#page-naming-conventions}
 
-Ao criar uma nova página, existem dois campos principais:
+Ao criar uma página, há dois campos principais:
 
 * **[Título](#title)**:
 
@@ -95,7 +95,7 @@ O **Título** da página e o **Nome** podem ser criados separadamente, mas estã
 >
 >Lembre-se também de que alguns navegadores (por exemplo, versões mais antigas do IE) só podem aceitar URLs com um limite de comprimento, por isso também há um motivo técnico para manter os nomes de página curtos.
 
-Ao criar uma nova página, o AEM [validará o nome da página de acordo com as convenções](/help/implementing/developing/introduction/naming-conventions.md) impostas pelo AEM e JCR.
+Ao criar uma página, AEM [valida o nome da página de acordo com as convenções](/help/implementing/developing/introduction/naming-conventions.md) impostos pelo AEM e pelo JCR.
 
 Os caracteres mínimos permitidos são:
 
@@ -113,7 +113,7 @@ Detalhes completos sobre todos os caracteres permitidos podem ser encontrados na
 
 #### Título {#title}
 
-Quando você fornece apenas um **Título** de página ao criar uma nova página, o AEM deriva o **Nome** de página desta cadeia de caracteres e o valida[ de acordo com as convenções](/help/implementing/developing/introduction/naming-conventions.md) impostas pelo AEM e JCR.
+Se você fornecer apenas uma página **Título** ao criar uma página, o AEM deriva a página **Nome** desta cadeia de caracteres e [validar o nome de acordo com as convenções](/help/implementing/developing/introduction/naming-conventions.md) impostos pelo AEM e pelo JCR.
 
 Um campo de **Título** contendo caracteres inválidos é aceito, mas o nome derivado terá os caracteres inválidos substituídos. Por exemplo:
 
@@ -124,7 +124,7 @@ Um campo de **Título** contendo caracteres inválidos é aceito, mas o nome der
 
 #### Nome {#name}
 
-Quando você fornece um **Nome** de página ao criar uma nova página, o AEM valida[ o nome de acordo com as convenções](/help/implementing/developing/introduction/naming-conventions.md) impostas pelo AEM e JCR. Não é possível inserir caracteres inválidos no campo **Nome**. Quando o AEM detecta caracteres inválidos, o campo é destacado com uma mensagem explicativa.
+Quando você fornece uma página **Nome** ao criar uma página, AEM [valida o nome de acordo com as convenções](/help/implementing/developing/introduction/naming-conventions.md) impostos pelo AEM e pelo JCR. Não é possível inserir caracteres inválidos no campo **Nome**. Quando o AEM detecta caracteres inválidos, o campo é destacado com uma mensagem explicativa.
 
 ![Exemplo de inserção de um nome de página inválido](/help/sites-cloud/authoring/assets/organizing-invalid-name.png)
 
@@ -182,7 +182,7 @@ A menos que todas as páginas tenham sido criadas antecipadamente para você, é
 
 1. A partir do primeiro estágio do assistente, você pode:
 
-   * Selecionar o modelo que deseja usar para criar a nova página, em seguida, clicar/tocar em **Próximo** para prosseguir.
+   * Selecione o modelo que deseja usar para criar a nova página e selecione **Próxima** para continuar.
 
    * **Cancelar** para suspender o processo.
 
@@ -190,7 +190,7 @@ A menos que todas as páginas tenham sido criadas antecipadamente para você, é
 
 1. A partir do último estágio do assistente, você pode:
 
-   * Usar as três guias para inserir as [propriedades de página](/help/sites-cloud/authoring/fundamentals/page-properties.md) que deseja atribuir à nova página, em seguida, clicar/tocar em **Criar** para realmente criar a página.
+   * Use as três guias para inserir a variável [propriedades da página](/help/sites-cloud/authoring/fundamentals/page-properties.md) que deseja atribuir à nova página, selecione **Criar** para realmente criar a página.
 
    * Use **Voltar** para retornar à seleção do modelo.
 
@@ -203,7 +203,7 @@ A menos que todas as páginas tenham sido criadas antecipadamente para você, é
    * **Nome**:
 
       * Usado para gerar o URI. Se não especificado, o nome é derivado do título.
-      * Quando você fornece um **Nome** de página ao criar uma nova página, o AEM valida[ esse nome de acordo com as convenções](/help/implementing/developing/introduction/naming-conventions.md) impostas pelo AEM e JCR.
+      * Se você fornecer uma página **Nome** ao criar uma página, AEM [valida o nome de acordo com as convenções](/help/implementing/developing/introduction/naming-conventions.md) impostos pelo AEM e pelo JCR.
       * **Não é possível inserir caracteres inválidos** no campo **Nome**. Quando o AEM detecta caracteres inválidos, o campo é destacado e uma mensagem explicativa é exibida para indicar os caracteres que precisam ser removidos/substituídos.
 
    >[!TIP]
@@ -266,7 +266,7 @@ Após criar uma página ou navegar para uma página existente (no console), voc�
    ![Copiar](/help/sites-cloud/authoring/assets/copy.png)
 
 1. Navegue até o local para a nova cópia da página.
-1. Toque ou clique no ícone **Colar** que ficou disponível.
+1. Selecione o **Colar** ícone que ficou disponível.
 
    ![Colar](/help/sites-cloud/authoring/assets/paste.png)
 
@@ -276,7 +276,7 @@ Após criar uma página ou navegar para uma página existente (no console), voc�
 
    ![Caixa de diálogo Colar](/help/sites-cloud/authoring/assets/paste-dialog.png)
 
-1. Toque ou clique no botão **Colar** para confirmar a transação de colagem e criar a(s) nova(s) página(s).
+1. Selecione o **Colar** botão para confirmar a transação de colagem e criar a(s) nova(s) página(s).
 
 >[!NOTE]
 >
@@ -310,7 +310,7 @@ O AEM oferece a funcionalidade de atualizar todos os links internos que se refer
 
 1. No estágio **Renomear** do assistente, é possível:
 
-   * Especifique o nome que deseja para a página após movê-la, em seguida, clique/toque em **Próximo** para prosseguir.
+   * Especifique o nome que deseja para a página após movê-la, depois selecione **Próxima** para continuar.
    * **Cancelar** para suspender o processo.
 
    ![Mover e renomear página](/help/sites-cloud/authoring/assets/move-page-rename.png)
@@ -380,7 +380,7 @@ As ações de movimentação de página são sempre processadas de forma assínc
   ![Asynchronous page move](assets/asynchronous-page-move.png)
 -->
 
-O status de trabalhos assíncronos pode ser verificado no painel [**Status de trabalhos assíncronos** ](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) em **Navegação global** -> **Ferramentas** -> **Operações** -> **Trabalhos**
+O status de trabalhos assíncronos pode ser verificado no campo [**Status de trabalhos assíncronos** painel](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) em **Navegação global** > **Ferramentas** > **Operações** > **Tarefas**
 
 >[!NOTE]
 >

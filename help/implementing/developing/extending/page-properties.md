@@ -1,13 +1,13 @@
 ---
 title: Personalização de exibições das propriedades da página
 description: Saiba como as propriedades de página são visualizadas e editadas pelos autores.
-source-git-commit: f159f0ef86c2b82da4e7308a0892b4947b6e43fb
+exl-id: 363b3c2d-f965-485f-bdae-2ea5b4cecb83
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '361'
 ht-degree: 2%
 
 ---
-
 
 # Personalização de exibições das propriedades da página{#customizing-views-of-page-properties}
 
@@ -70,10 +70,10 @@ Por exemplo, por padrão, a variável [**Criar página** assistente](/help/sites
 
 >[!NOTE]
 >
->Ao configurar propriedades de página para uso com live copies, consulte o documento [Extensão do gerenciador de vários sites](/help/implementing/developing/extending/msm.md#configuring-msm-locks-on-page-properties) para obter mais detalhes.
+>Ao configurar propriedades de página para uso com live copies, consulte [Extensão do gerenciador de vários sites](/help/implementing/developing/extending/msm.md#configuring-msm-locks-on-page-properties) para obter mais detalhes.
 
 ## Exemplo de configuração das propriedades da página {#sample-configuration-of-page-properties}
 
 Esta amostra demonstra a técnica de diálogo diff do [Fusão de recursos do Sling](/help/implementing/developing/introduction/sling-resource-merger.md) incluindo a utilização de [`sling:orderBefore`](/help/implementing/developing/introduction/sling-resource-merger.md#properties). Ilustra igualmente a utilização de `cq:showOnCreate` e `cq:hideOnEdit`.
 
-Você pode encontrar o código desta página em [GitHub.](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog)
+Você pode encontrar o código desta página em [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog).

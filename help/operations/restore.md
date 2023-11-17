@@ -2,10 +2,10 @@
 title: Restauração de conteúdo no AEM as a Cloud Service
 description: Saiba como restaurar conteúdo do backup no AEM as a Cloud Service usando o Cloud Manager.
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1162'
-ht-degree: 71%
+source-wordcount: '1158'
+ht-degree: 60%
 
 ---
 
@@ -21,7 +21,7 @@ Saiba como restaurar conteúdo do backup no AEM as a Cloud Service usando o Clou
 >* O recurso só está disponível em ambientes de desenvolvimento.
 >* As restaurações de conteúdo são limitadas a duas por mês por programa.
 >
->Para obter detalhes sobre o sistema de backup e restauração existente para AEM as a Cloud Service, consulte o documento [Backup e restauração no AEM as a Cloud Service](/help/operations/backup.md)
+>Para obter detalhes sobre o sistema de backup e restauração existente para AEM as a Cloud Service, consulte [Backup e restauração no AEM as a Cloud Service](/help/operations/backup.md).
 
 ## Visão geral {#overview}
 
@@ -58,7 +58,7 @@ Primeiro, determine o intervalo de tempo do conteúdo que você deseja restaurar
 
    * Como alternativa, você pode navegar diretamente para a guia **Restaurar conteúdo** da página de detalhes de um ambiente específico.
 
-1. Na guia **Restaurar conteúdo** da página de detalhes do ambiente, selecione primeiro o intervalo de tempo da restauração na lista suspensa **Tempo para restaurar**.
+1. No **Restaurar conteúdo** da página detalhes do ambiente, selecione primeiro o intervalo de tempo da restauração na **Tempo de restauração** lista suspensa.
 
    1. Se você selecionar **Últimas 24 horas** o vizinho **Hora** permite especificar a hora exata a ser restaurada dentre as últimas 24 horas.
 
@@ -72,13 +72,13 @@ Primeiro, determine o intervalo de tempo do conteúdo que você deseja restaurar
 
    ![Backups disponíveis](assets/backup-available.png)
 
-1. Encontre o backup que deseja restaurar usando o ícone de informações para visualizar informações sobre a versão do código e do AEM incluídas nesse backup e considere as implicações de uma restauração ao [selecionar o backup.](#choosing-the-right-backup)
+1. Encontre o backup que deseja restaurar usando o ícone de informações para exibir informações sobre a versão do código e do AEM incluídas nesse backup e considere as implicações de uma restauração quando [escolhendo o backup.](#choosing-the-right-backup)
 
    ![Informações de backup](assets/backup-info.png)
 
-   * Observe que o carimbo de data e hora exibido nas opções de restauração é baseado no fuso horário do computador do usuário.
+   * O carimbo de data e hora exibido nas opções de restauração é baseado no fuso horário do computador do usuário.
 
-1. Clique no ícone **Restaurar** na extremidade direita da linha que representa o backup que você deseja restaurar para iniciar o processo de restauração.
+1. Clique em **Restaurar** ícone na extremidade direita da linha que representa o backup que você deseja restaurar para iniciar o processo de restauração.
 
 1. Revise os detalhes na caixa de diálogo **Restaurar conteúdo** antes de confirmar sua solicitação clicando em **Restaurar**.
 

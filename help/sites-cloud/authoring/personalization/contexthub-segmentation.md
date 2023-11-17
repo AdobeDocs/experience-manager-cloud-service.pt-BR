@@ -2,10 +2,10 @@
 title: Configuração da segmentação com o ContextHub
 description: Saiba como configurar a segmentação usando o ContextHub.
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1682'
-ht-degree: 95%
+source-wordcount: '1652'
+ht-degree: 88%
 
 ---
 
@@ -88,11 +88,11 @@ Para definir seu novo segmento:
 
 1. Depois de [acessar os segmentos](#accessing-segments), [navegue até a pasta](#organizing-segments) onde deseja criar o segmento.
 
-1. Toque ou clique no botão **Criar** e selecione **Criar segmento do ContextHub**.
+1. Selecione o **Criar** e selecione **Criar segmento do ContextHub**.
 
    ![Adicionar segmento](../assets/contexthub-create-segment.png)
 
-1. Em **Novo segmento do ContextHub**, insira um título para o segmento e um valor de reforço, se necessário, e toque ou clique em **Criar**.
+1. No **Novo segmento do ContextHub**, insira um título para o segmento e um valor de reforço, se necessário, e selecione **Criar**.
 
    ![Novo segmento](../assets/contexthub-new-segment.png)
 
@@ -103,7 +103,7 @@ Para definir seu novo segmento:
 
 1. No console segmentos, edite o segmento criado recentemente para abri-lo no editor de segmentos.
 1. Arraste uma comparação ou referência para o editor de segmentos e ela aparecerá no contêiner AND padrão.
-1. Clique duas vezes ou toque na opção de configuração da nova referência ou segmento para editar os parâmetros específicos. Neste exemplo, estamos testando para pessoas na Basileia.
+1. Selecione duas vezes a opção de configuração da nova referência ou segmento para editar os parâmetros específicos. Neste exemplo, estamos testando para pessoas na Basileia.
 
    ![Teste para pessoas na Basileia](../assets/contexthub-comparing-property-value.png)
 
@@ -193,7 +193,7 @@ Se você tiver muitos segmentos, eles podem se tornar difíceis de gerenciar com
 
 ### Criar uma nova pasta {#create-folder}
 
-1. Após [acessar os segmentos](#accessing-segments), clique ou toque no botão **Criar** e selecione **Pasta**.
+1. Depois [acesso aos segmentos](#accessing-segments), selecione o **Criar** e selecione **Pasta**.
 
    ![Adicionar pasta](../assets/contexthub-create-segment.png)
 
@@ -205,24 +205,24 @@ Se você tiver muitos segmentos, eles podem se tornar difíceis de gerenciar com
 
    ![Criar pasta](../assets/contexthub-create-folder.png)
 
-1. Toque ou clique em **Criar**.
+1. Selecione **Criar**.
 
    ![Confirmar pasta](../assets/contexthub-confirm-folder.png)
 
 1. A pasta aparecerá na lista de segmentos.
    * A forma como você classifica as colunas afetará onde a nova pasta aparece na lista.
-   * Toque ou clique nos cabeçalhos da coluna para ajustar sua classificação.
+   * Você pode selecionar os cabeçalhos de coluna para ajustar sua classificação.
      ![A nova pasta](../assets/contexthub-folder.png)
 
 ### Modificar pastas existentes {#modify-folders}
 
-1. Após [acessar os segmentos](#accessing-segments), clique ou toque na pasta que deseja modificar para selecioná-la.
+1. Depois [acesso aos segmentos](#accessing-segments), selecione a pasta que deseja modificar para selecioná-la.
 
    ![Selecionar pasta](../assets/contexthub-select-folder.png)
 
-1. Toque ou clique em **Renomear**, na barra de ferramentas, para renomear a pasta.
+1. Selecionar **Renomear** na barra de ferramentas para renomear a pasta.
 
-1. Forneça um novo **Título da pasta** e toque ou clique em **Salvar**.
+1. Forneça um novo **Título da pasta** e selecione **Salvar**.
 
    ![Renomear pasta](../assets/contexthub-rename-folder.png)
 
@@ -232,25 +232,25 @@ Se você tiver muitos segmentos, eles podem se tornar difíceis de gerenciar com
 
 ### Excluir uma pasta
 
-1. Após [acessar os segmentos](#accessing-segments), clique ou toque na pasta que deseja modificar para selecioná-la.
+1. Depois [acesso aos segmentos](#accessing-segments), selecione a pasta que deseja modificar para selecioná-la.
 
    ![Selecionar pasta](../assets/contexthub-select-folder.png)
 
-1. Toque ou clique em **Excluir**, na barra de ferramentas, para excluir a pasta.
+1. Selecionar **Excluir** na barra de ferramentas para excluir a pasta.
 
 1. Uma caixa de diálogo apresenta uma lista de pastas selecionadas para exclusão.
 
    ![Confirmar exclusão](../assets/contexthub-confirm-segment-delete.png)
 
-   * Toque ou clique em **Excluir** para confirmar.
-   * Toque ou clique em **Cancelar** para suspender.
+   * Selecionar **Excluir** para confirmar.
+   * Selecionar **Cancelar** para suspender.
 
 1. Se qualquer uma das pastas selecionadas contiver subpastas ou segmentos, sua exclusão deverá ser confirmada.
 
    ![Confirmar exclusão de filhos](../assets/contexthub-confirm-segment-child-delete.png)
 
-   * Toque ou clique em **Forçar exclusão** para confirmar.
-   * Toque ou clique em **Cancelar** para suspender.
+   * Selecionar **Forçar Exclusão** para confirmar.
+   * Selecionar **Cancelar** para suspender.
 
 >[!NOTE]
 >

@@ -5,9 +5,9 @@ uuid: ffeba886-9b24-4ed1-95c0-e19356ff2f23
 products: SG_EXPERIENCEMANAGER/FORMS
 topic-tags: author
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '726'
 ht-degree: 3%
 
 ---
@@ -76,7 +76,7 @@ Você pode tocar no **Configurar** ![ícone de configuração](assets/configure.
    * **Mensagem do modelo:** Especifique a mensagem a ser exibida enquanto o PDF de assinatura estiver sendo carregado. Os serviços da Adobe Sign demoram algum tempo para preparar e carregar o PDF de assinatura.
    * **Serviço de assinatura:** Selecione o **Rabiscar a assinatura** opção.
 
-   * **Classe CSS**: especifique a classe CSS da biblioteca do cliente, se houver. É recomendável usar [temas](themes.md) e [estilos em linha](inline-style-adaptive-forms.md) em vez da classe CSS.
+   * **Classe CSS**: especifique a classe CSS da biblioteca do cliente, se houver. O Adobe recomenda usar [temas](themes.md) e [estilos em linha](inline-style-adaptive-forms.md) em vez da classe CSS.
 
    Toque no botão Concluído ![aem_forms_save](assets/aem_forms_save.png) ícone para salvar as alterações. A Assinatura foi configurada com sucesso.
 

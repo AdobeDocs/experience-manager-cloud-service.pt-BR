@@ -2,10 +2,10 @@
 title: Saiba mais sobre o desenvolvimento headless do CMS
 description: Nesta parte da Jornada de desenvolvedores headless do AEM, saiba mais sobre a tecnologia headless e por que usá-la.
 exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1636'
-ht-degree: 93%
+ht-degree: 89%
 
 ---
 
@@ -27,7 +27,7 @@ Desde a ascensão dos sistemas de gerenciamento de conteúdo (CMS) de larga esca
 
 ![O CMS clássico de pilha completa](assets/full-stack.png)
 
-Em um CMS de pilha completa, toda a funcionalidade de manipulação de conteúdo está no CMS. Os recursos do sistema constituem componentes diferentes da pilha do CMS. A solução de pilha completa tem muitas vantagens.
+Em um CMS de pilha completa, a funcionalidade para manipular o conteúdo está no CMS. Os recursos do sistema constituem componentes diferentes da pilha do CMS. A solução de pilha completa tem muitas vantagens.
 
 * Você tem um sistema para manter.
 * O conteúdo é gerenciado centralmente.
@@ -62,7 +62,7 @@ Quando falamos de um CMS headless, o CMS gerencia o conteúdo e continua a entre
 
 ![CMS headless](assets/headless-cms.png)
 
-Os serviços que consomem, sejam experiências de AR, um webshop, experiências móveis, aplicativos web progressivos (PWAs) etc., absorvem conteúdo do CMS headless e fornecem sua própria renderização. Eles fornecem suas próprias interfaces para o conteúdo.
+Os serviços de consumo, sejam experiências de RA, uma loja na Web, experiências móveis, aplicativos web progressivos (PWA) e assim por diante, recebem conteúdo do CMS headless e fornecem sua própria renderização. Eles fornecem suas próprias interfaces para o conteúdo.
 
 Omitir a interface simplifica o CMS ao remover a complexidade. Isso também altera a responsabilidade de renderizar o conteúdo para os serviços que realmente precisam do conteúdo e que geralmente são mais adequados para essa renderização.
 
@@ -96,7 +96,7 @@ O headless abre um mundo de flexibilidade para fornecer suas experiências digit
 
 Ter muitos canais diferentes pode significar que cada um tem seus próprios sistemas de apresentação. Mesmo que todos consumam o mesmo conteúdo por meio das mesmas APIs, a experiência pode não ser a mesma por causa das diferentes apresentações. Preocupação e cuidado devem ser dados para assegurar a consistência da experiência do cliente.
 
-Ao implementar sistemas de design cuidadosos, compartilhar bibliotecas de padrões e aproveitar componentes de design reutilizáveis, bem como estruturas estabelecidas e abertas do lado do cliente, experiências consistentes podem ser garantidas, mas isso deve ser planejado.
+Ao implementar sistemas de design cuidadosos, compartilhar bibliotecas de padrões e usar componentes de design reutilizáveis e estruturas estabelecidas e abertas do lado do cliente, experiências consistentes podem ser garantidas, mas isso deve ser planejado.
 
 ## O futuro é headless e o futuro é agora {#future}
 

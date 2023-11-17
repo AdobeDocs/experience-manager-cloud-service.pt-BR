@@ -2,10 +2,10 @@
 title: Jornada do autor de conteúdo headless do AEM
 description: Comece aqui uma jornada guiada pelos recursos headless eficientes e flexíveis do AEM, suas funcionalidades e como criar conteúdo para seu projeto.
 exl-id: fe124c6b-932a-44fc-a87b-12691aefea56
-source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '881'
-ht-degree: 96%
+source-wordcount: '876'
+ht-degree: 88%
 
 ---
 
@@ -31,9 +31,9 @@ Este manual aborda os tópicos mais importantes para que, ao concluí-lo, você:
 
 ## Jornadas de documentação do AEM {#documentation-journeys}
 
-[Uma Jornada de documentação](/help/journey-documentation/documentation-journeys.md) une vários tópicos e recursos diferentes e talvez complicados, fornecendo uma narrativa que ajuda o leitor, que pode ser novo no AEM, a entender e resolver um problema da empresa do começo ao fim, assumindo o mínimo de conhecimento prévio do tópico ou do AEM.
+[Uma Jornada de documentação](/help/journey-documentation/documentation-journeys.md) une vários tópicos e recursos diferentes e complicados, fornecendo uma narrativa que ajuda o leitor, que pode ser novo no AEM, a entender e resolver um problema empresarial do começo ao fim, assumindo o mínimo de conhecimento prévio sobre o tópico ou AEM.
 
-As Jornadas de documentação foram projetadas com princípios de práticas recomendadas, informadas pela última pesquisa da Adobe, experiência comprovada de implementação dos consultores da Adobe e feedback de projetos de clientes.
+As jornadas de documentação foram projetadas com base nas práticas recomendadas, informadas pela última pesquisa da Adobe, na experiência comprovada de implementação dos consultores da Adobe e no feedback de projetos de clientes.
 
 Se quiser saber como a Adobe recomenda resolver casos de negócios headless com o AEM, inicie com as [Jornadas headless do AEM](/help/journey-documentation/documentation-journeys.md).
 
@@ -43,7 +43,7 @@ Essa jornada foi projetada para o perfil do autor de conteúdo. Como um autor de
 
 A jornada apresenta os requisitos, as etapas e a abordagem para a criação de conteúdo para um projeto headless do AEM. A jornada definirá perfis adicionais com as quais o autor deverá interagir para ter um projeto bem-sucedido, mas o ponto de vista da jornada é o do autor de conteúdo.
 
-É claro que as informações dessa jornada podem ser úteis para outros indivíduos, mas algumas informações são desnecessárias para determinadas funções. Fique atento para jornadas futuras que abordarão funções adicionais.
+As informações nesta jornada podem ser úteis para outros perfis, mas algumas informações são supérfluas para determinadas funções. Fique atento para jornadas futuras que abordarão funções adicionais.
 
 ## A Jornada do autor de conteúdo headless {#the-journey}
 
@@ -76,7 +76,7 @@ However, Adobe wants you to succeed as you get started with your AEM Headless pr
 
 As jornadas de documentação mostram como o AEM soluciona um problema empresarial fornecendo uma narrativa que o orienta por processos e recursos complexos e inter-relacionados. Uma jornada ilustra como vários recursos trabalham juntos para atender a uma única necessidade empresarial.
 
-Como tal, as jornadas são projetadas para se sustentarem sozinhas. No entanto, algumas delas podem estar relacionadas entre si. Confira essas jornadas adicionais para obter mais informações sobre como os eficientes recursos do AEM funcionam juntos.
+Como tal, as jornadas são projetadas para se sustentarem sozinhas. No entanto, vários deles podem estar relacionados entre si. Confira essas jornadas adicionais para obter mais informações sobre como os eficientes recursos do AEM funcionam juntos.
 
 * [Jornada de tradução do AEM headless](/help/journey-headless/translation/overview.md) - essa jornada de documentação oferece uma ampla compreensão sobre a tecnologia headless, como o AEM fornece conteúdo headless e como você pode traduzi-lo.
 * [Jornada de desenvolvedores headless do AEM](/help/journey-headless/developer/overview.md): comece aqui para uma jornada guiada pelos recursos headless avançados e flexíveis do AEM, suas funções e como usá-las em seu primeiro projeto de desenvolvimento.

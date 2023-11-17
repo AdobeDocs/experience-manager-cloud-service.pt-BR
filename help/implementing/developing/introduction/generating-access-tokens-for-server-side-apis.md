@@ -2,9 +2,9 @@
 title: Geração de tokens de acesso para APIs do lado do servidor
 description: Saiba como facilitar a comunicação entre um servidor de terceiros e o AEM as a Cloud Service gerando um token JWT seguro
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2090'
+source-wordcount: '2089'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ O fluxo de servidor para servidor é descrito abaixo, juntamente com um fluxo si
 
 ## O fluxo de servidor para servidor {#the-server-to-server-flow}
 
-Usuários com uma função de administrador da organização IMS e que são membros do Perfil de produto Usuários do AEM ou Administradores do AEM no AEM Author podem gerar um conjunto de credenciais do AEM as a Cloud Service. Cada credencial é uma carga JSON que inclui um certificado (a chave pública), uma chave privada e uma conta técnica que consiste em uma `clientId` e `clientSecret`. Essas credenciais podem ser recuperadas posteriormente por um usuário com a função de administrador do Ambiente as a Cloud Service AEM e devem ser instaladas em um servidor sem AEM e tratadas cuidadosamente como uma chave secreta. Esse arquivo de formato JSON contém todos os dados necessários para integrar com uma API AEM as a Cloud Service. Os dados são usados para criar um token JWT assinado, que é substituído pelo Adobe Identity Management Services (IMS) por um token de acesso IMS. Esse token de acesso pode ser usado como um token de autenticação de portador para fazer solicitações ao AEM as a Cloud Service. O certificado nas credenciais expira após um ano por padrão, mas elas podem ser atualizadas quando necessário, conforme descrito [aqui](#refresh-credentials).
+Usuários com uma função de administrador da organização IMS e que são membros do Perfil de produto Usuários do AEM ou Administradores do AEM no autor do AEM AEM podem gerar um conjunto de credenciais do as a Cloud Service. Cada credencial é uma carga JSON que inclui um certificado (a chave pública), uma chave privada e uma conta técnica que consiste em uma `clientId` e `clientSecret`. Essas credenciais podem ser recuperadas posteriormente por um usuário com a função de administrador do Ambiente as a Cloud Service AEM e devem ser instaladas em um servidor sem AEM e tratadas cuidadosamente como uma chave secreta. Esse arquivo de formato JSON contém todos os dados necessários para integrar com uma API AEM as a Cloud Service. Os dados são usados para criar um token JWT assinado, que é substituído pelo Adobe Identity Management Services (IMS) por um token de acesso IMS. Esse token de acesso pode ser usado como um token de autenticação de portador para fazer solicitações ao AEM as a Cloud Service. O certificado nas credenciais expira após um ano por padrão, mas elas podem ser atualizadas quando necessário, conforme descrito [aqui](#refresh-credentials).
 
 O fluxo de servidor para servidor envolve as seguintes etapas:
 
@@ -49,7 +49,7 @@ Depois que as credenciais forem criadas, elas aparecerão sob o **Contas técnic
 
 ![Exibir credenciais](/help/implementing/developing/introduction/assets/s2s-viewcredentials.png)
 
-Os usuários podem exibir as credenciais posteriormente usando a ação Exibir. Além disso, conforme descrito posteriormente neste artigo, os usuários podem editar as credenciais para a mesma conta técnica. Eles fazem essa edição criando uma nova chave privada ou certificado, para os casos em que o certificado deve ser renovado ou revogado.
+Os usuários podem exibir as credenciais posteriormente usando a ação Exibir. Além disso, conforme descrito posteriormente neste artigo, os usuários podem editar as credenciais para a mesma conta técnica. Eles fazem essa edição criando uma chave privada ou certificado, para casos em que o certificado deve ser renovado ou revogado.
 
 Usuários com a função de Administrador de ambiente as a Cloud Service do AEM podem criar credenciais posteriormente para contas técnicas adicionais. Essa capacidade é útil quando APIs diferentes têm requisitos de acesso diferentes. Por exemplo, leitura versus leitura-gravação.
 
@@ -137,7 +137,7 @@ Depois de fazer a chamada de API, o perfil de produto aparece como um grupo de u
 
 Para verificar essas informações, faça o seguinte:
 
-1. Faça logon na instância de autoria.
+1. Faça logon na instância de criação.
 1. Ir para **Ferramentas** > **Segurança** e, em seguida, clique na guia **Grupos** cartão.
 1. Localize o nome do perfil criado na lista de grupos e clique nele:
 
@@ -158,7 +158,7 @@ Como alternativa, você também pode verificar se a conta técnica aparece na li
 
 >[!NOTE]
 >
->Antes de meados de 2023, antes que fosse possível criar várias credenciais, os clientes não eram orientados a criar um perfil de produto no Adobe Admin Console. Dessa forma, a conta técnica não estava associada a um grupo diferente de &quot;Contribuidores&quot; na instância as a Cloud Service do AEM. Por uma questão de consistência, recomenda-se que, para essa conta técnica, você crie um perfil de produto no Adobe Admin Console conforme descrito acima e adicione a conta técnica existente a esse grupo.
+>Antes de meados de 2023, antes que fosse possível criar várias credenciais, os clientes não eram orientados a criar um perfil de produto no Adobe Admin Console. Dessa forma, a conta técnica não estava associada a um grupo diferente de &quot;Contribuidores&quot; na instância as a Cloud Service do AEM. Por uma questão de consistência, é recomendável que, para essa conta técnica, você crie um perfil de produto no Adobe Admin Console conforme descrito acima e adicione a conta técnica existente a esse grupo.
 
 <u>**Definir as permissões de grupo apropriadas**</u>
 

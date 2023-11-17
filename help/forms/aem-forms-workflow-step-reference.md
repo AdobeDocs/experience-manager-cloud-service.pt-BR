@@ -4,9 +4,9 @@ description: Fluxos de trabalho centrados no Forms permitem criar rapidamente fl
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: Usar fluxos de trabalho de AEM, usando etapas atribuir tarefa, converter em PDF/A etapa, Gerar documento da etapa gravada, usar fluxos de trabalho, etapa Assinar documento, etapa Gerar saída impressa, Gerar saída de PDF não interativa
-source-git-commit: a942e87a33775851631a1fe123fa3e8d2686bb30
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '7446'
+source-wordcount: '7444'
 ht-degree: 1%
 
 ---
@@ -396,7 +396,7 @@ A etapa Assinar documento tem as seguintes propriedades:
 * **[!UICONTROL Processo de assinatura]**: é possível optar por assinar um documento em uma ordem sequencial ou paralela. Em ordem sequencial, um signatário recebe o documento de cada vez para assinar. Depois que o primeiro signatário terminar de assinar o documento, ele será enviado ao segundo signatário e assim por diante. Em ordem paralela, vários signatários podem assinar um documento de cada vez.
 * **[!UICONTROL URL de redirecionamento]**: especifique um URL de redirecionamento. Depois que o documento for assinado, você poderá redirecionar o destinatário para um URL. Normalmente, este URL contém uma mensagem de agradecimento ou mais instruções.
 * **[!UICONTROL Estágio do fluxo de trabalho]**: um fluxo de trabalho pode ter vários estágios. Esses estágios são exibidos na Caixa de entrada do AEM. É possível definir esses estágios nas propriedades do modelo ( **[!UICONTROL Sidekick]** > **[!UICONTROL Página]** > **[!UICONTROL Propriedades da página]** > **[!UICONTROL Estágios]**).
-* **[!UICONTROL Selecionar destinatários]**: especifique o método para escolher os destinatários do documento. Você pode atribuir o fluxo de trabalho de maneira dinâmica a um usuário ou grupo ou adicionar manualmente os detalhes de um recipient. Ao selecionar Manualmente na lista suspensa, você adiciona detalhes do recipient, como Email, Função e Método de autenticação.
+* **[!UICONTROL Selecionar destinatários]**: especifique o método para escolher os destinatários do documento. Você pode atribuir o fluxo de trabalho de maneira dinâmica a um usuário ou grupo ou adicionar manualmente os detalhes de um recipient. Ao selecionar Manually na lista suspensa, você adiciona detalhes do recipient, como email, função e método de autenticação.
 
   >[!NOTE]
   >
@@ -572,7 +572,7 @@ A etapa Gerar Saída Impressa tem as seguintes propriedades:
 
 * **Arquivo modelo**: especifica o local do modelo XDP. É um campo obrigatório.
 
-* **Documento de dados**: especifica o local do xml de dados que precisa ser mesclado com o modelo.
+* **Documento de dados**: especifica o local do xml de dados que deve ser mesclado com o modelo.
 
 ### Documento de saída {#output-document}
 

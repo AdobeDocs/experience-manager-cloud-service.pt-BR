@@ -4,10 +4,10 @@ description: Saiba como configurar o [!DNL Adobe Experience Manager] Plug-ins do
 contentOwner: AG
 mini-toc-levels: 1
 exl-id: 91619662-e865-47d1-8bec-0739f402353a
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '4299'
-ht-degree: 3%
+source-wordcount: '4298'
+ht-degree: 4%
 
 ---
 
@@ -233,7 +233,7 @@ Em seguida, especifique o(s) local(is) da(s) folha(s) de estilos que deseja refe
 
    * **Nome** `externalStyleSheets`
    * **Tipo** `String[]` (várias cadeias de caracteres; clique em **Multi** no CRXDE)
-   * **Valor(es)** O caminho e o nome de arquivo de cada folha de estilos que você deseja incluir. Usar caminhos do repositório.
+   * **Valores** O caminho e o nome de arquivo de cada folha de estilos que você deseja incluir. Usar caminhos do repositório.
 
    >[!NOTE]
    >
@@ -376,7 +376,7 @@ Os formatos de parágrafo são disponibilizados para seleção por:
 
    * **Nome** `tag`
    * **Tipo** `String`
-   * **Valor** A tag de bloco do formato; por exemplo: p, h1, h2 etc.
+   * **Valor** A tag de bloco para o formato; por exemplo: p, h1, h2 e assim por diante.
 
      Não é necessário inserir os colchetes angulares delimitadores.
 
@@ -586,9 +586,9 @@ Para adicionar mais dicionários, se necessário, siga estas etapas.
 >
 O verificador ortográfico RTE está disponível sob demanda. Ele não é executado automaticamente quando você começa a digitar o texto.
 >
-Para executar o verificador ortográfico, toque/clique no botão Verificador ortográfico na barra de ferramentas. O RTE verifica a ortografia das palavras e destaca palavras com erro de ortografia.
+Para executar o verificador ortográfico, selecione o botão Verificador ortográfico na barra de ferramentas. O RTE verifica a ortografia das palavras e destaca palavras com erro de ortografia.
 >
-Se você incorporar qualquer alteração sugerida pelo verificador ortográfico, o estado do texto será alterado e as palavras com erro de ortografia não serão mais destacadas. Para executar o verificador ortográfico, toque/clique no botão Verificador ortográfico novamente.
+Se você incorporar qualquer alteração sugerida pelo verificador ortográfico, o estado do texto será alterado e as palavras com erro de ortografia não serão mais destacadas. Para executar o verificador ortográfico, selecione o botão Verificador ortográfico novamente.
 
 ## Configurar o tamanho do histórico das ações desfazer e refazer {#undohistory}
 

@@ -2,10 +2,10 @@
 title: Saiba mais sobre conteúdo headless e sua tradução no AEM
 description: Aprenda conceitos headless, como eles são mapeados no AEM e a teoria de tradução do AEM.
 exl-id: 72bb6646-e573-4576-8d17-49787d8c8c7f
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '742'
-ht-degree: 95%
+ht-degree: 89%
 
 ---
 
@@ -26,7 +26,7 @@ Desde a ascensão dos sistemas de gerenciamento de conteúdo (CMS) de larga esca
 
 ![O CMS clássico de pilha completa](/help/journey-headless/developer/assets/full-stack.png)
 
-Em um CMS de pilha completa, toda a funcionalidade de manipulação de conteúdo está no CMS. Os recursos do sistema constituem componentes diferentes da pilha do CMS. A solução de pilha completa tem muitas vantagens.
+Em um CMS de pilha completa, a funcionalidade para manipular conteúdo está no CMS. Os recursos do sistema constituem componentes diferentes da pilha do CMS. A solução de pilha completa tem muitas vantagens.
 
 * Há um sistema para manter.
 * O conteúdo é gerenciado centralmente.
@@ -47,7 +47,7 @@ Quando falamos de um CMS headless, o CMS gerencia o conteúdo e continua a entre
 
 ![CMS headless](/help/journey-headless/developer/assets/headless-cms.png)
 
-Os serviços que consomem, sejam experiências de AR, uma loja virtual, experiências móveis, aplicativos Web progressivos (PWAs) etc., absorvem conteúdo do CMS headless e fornecem sua própria renderização. Eles fornecem suas próprias interfaces para o conteúdo.
+Os serviços de consumo, sejam experiências de RA, uma loja na Web, experiências móveis, aplicativos web progressivos (PWA) e assim por diante, recebem conteúdo do CMS headless e fornecem sua própria renderização. Eles fornecem suas próprias interfaces para o conteúdo.
 
 Omitir a interface simplifica o CMS ao remover a complexidade. Isso também altera a responsabilidade de renderizar o conteúdo para os serviços que realmente precisam do conteúdo e que geralmente são mais adequados para essa renderização.
 

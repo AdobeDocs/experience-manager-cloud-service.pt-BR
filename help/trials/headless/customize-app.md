@@ -4,10 +4,10 @@ description: Use um aplicativo de exemplo do React para saber como personalizar 
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1040'
-ht-degree: 97%
+source-wordcount: '1018'
+ht-degree: 88%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 97%
 
 Você inicia no editor de fragmento de conteúdo com o aplicativo de exemplo fornecido com a avaliação do AEM Headless já carregado. O aplicativo de exemplo é viabilizado por fragmentos de conteúdo fornecidos por meio do GraphQL. Use o editor de fragmento de conteúdo para se familiarizar com o editor, visualizando o aplicativo de exemplo.
 
-1. Toque ou clique no botão **Visualizar** na parte superior direita da tela do editor.
+1. Selecione o **Visualizar** no canto superior direito da tela do editor.
 
 1. O aplicativo de demonstração é aberto em uma nova guia. O aplicativo é para uma marca fictícia de estilo de vida ao ar livre: WKND. Role a página para baixo para navegar pelo conteúdo de amostra.
 
@@ -45,7 +45,7 @@ Você inicia no editor de fragmento de conteúdo com o aplicativo de exemplo for
 
 O editor de fragmento de conteúdo exibe o layout básico do aplicativo como um fragmento de conteúdo da página. Os **Painéis** representam páginas diferentes do aplicativo, cada uma com seu próprio fragmento de conteúdo. Ao modificar esses fragmentos, você pode alterar o conteúdo do aplicativo.
 
-1. Toque ou clique em **Ciclista de montanha no cânion** na seção **Painéis**.
+1. Selecionar **Mtn Biker no Canyon** no **Painéis** seção.
 
    ![Selecionar painel de texto](assets/do-not-localize/edit-header-1.png)
 
@@ -57,7 +57,7 @@ O editor de fragmento de conteúdo exibe o layout básico do aplicativo como um 
 
 1. Altere o texto de `Your next great adventure is calling` para `Choose your own adventure`. A alteração é salva automaticamente pelo editor.
 
-1. Toque ou clique em **Visualizar** na parte superior direita da janela para ver as alterações. A visualização do aplicativo de demonstração é aberta em uma nova guia.
+1. Selecionar **Visualizar** no canto superior direito da janela para ver as alterações. A visualização do aplicativo de demonstração é aberta em uma nova guia.
 
    ![Visualização do aplicativo de demonstração](assets/do-not-localize/edit-header-5-6.png)
 
@@ -75,19 +75,19 @@ Agora que você modificou um título no aplicativo, tente alterar uma imagem.
 
 1. Selecione a camada de imagem **Ciclismo de montanha - Ciclista**. Isso abre o editor de fragmento de conteúdo
 
-1. Toque ou clique no **X** para remover a imagem do ciclista. A imagem desaparece e o editor mostra um erro, pois a imagem é um dado obrigatório para este modelo de fragmento de conteúdo.
+1. Selecione o **X** para remover a imagem do motociclista. A imagem desaparece e o editor mostra um erro, pois a imagem é um dado obrigatório para este modelo de fragmento de conteúdo.
 
    ![Remover imagem do fragmento](assets/do-not-localize/swap-image-4.png)
 
-1. Toque ou clique **Adicionar ativo** e depois **Procurar ativos** no menu pop-up.
+1. Selecionar **Adicionar ativo** e depois **Procurar ativos** no menu pop-up.
 
 1. A caixa de diálogo **Selecionar ativo** é aberta e o caminho **sample-wknd-app** > **en** > **image-files** é automaticamente selecionado para você.
 
-1. Selecione a imagem `biker-yellow.png` e toque ou clique em **Selecionar**.
+1. Selecione a imagem `biker-yellow.png` e selecione **Selecionar**.
 
 1. A imagem do ciclista é substituída pela imagem selecionada. O editor salva as alterações automaticamente.
 
-1. Toque ou clique em **Visualizar** na parte superior direita da janela para ver as alterações. A visualização do aplicativo de demonstração é aberta em uma nova guia. Clique em atualizar no navegador e você deverá ver uma nova imagem de um ciclista com shorts amarelos no aplicativo.
+1. Selecionar **Visualizar** no canto superior direito da janela para ver as alterações. A visualização do aplicativo de demonstração é aberta em uma nova guia. Clique em atualizar no navegador e você deverá ver uma nova imagem de um ciclista com shorts amarelos no aplicativo.
 
 Atualizar imagens e ativos em seus aplicativos com o CMS do AEM Headless é simples assim.
 
@@ -99,13 +99,13 @@ Agora que você atualizou a imagem do ciclista, vamos analisar como adicionar um
 
 1. Da guia de visualização, retorne à guia do navegador do editor de fragmento de conteúdo.
 
-1. Você precisa retornar ao local correto no editor de fragmento de conteúdo. A barra de navegação estrutural no canto superior esquerdo do editor mostra onde você está na hierarquia de conteúdo. Toque ou clique em **Página inicial WKND** na navegação estrutural para retornar a essa página.
+1. Você precisa retornar ao local correto no editor de fragmento de conteúdo. A barra de navegação estrutural no canto superior esquerdo do editor mostra onde você está na hierarquia de conteúdo. Selecionar **Início: WKND** na navegação estrutural para retornar a essa página.
 
 1. Selecione o painel **Ciclista de montanha em WKND Amarelo**.
 
 1. Selecione a camada **Ciclismo de montanha - Comprável**.
 
-1. Para criar uma chamada neste painel, crie um Fragmento de conteúdo de momento que pode ser comprado. Toque ou clique no botão **+ Criar novo fragmento**.
+1. Para criar uma chamada neste painel, crie um Fragmento de conteúdo de momento que pode ser comprado. Selecione o **+ Criar novo fragmento** botão.
 
    ![Adicionar um momento de compra](assets/do-not-localize/add-reference-1-5.png)
 
@@ -113,7 +113,7 @@ Agora que você atualizou a imagem do ciclista, vamos analisar como adicionar um
 
 1. Nomeie o fragmento de conteúdo. Por exemplo, insira `Shorts` no campo **Nome**.
 
-1. Toque ou clique em **Criar e abrir**.
+1. Selecionar **Criar e abrir**.
 
    ![Nomeie o momento de compra](assets/do-not-localize/add-reference-6-7-8.png)
 
@@ -126,7 +126,7 @@ Agora que você atualizou a imagem do ciclista, vamos analisar como adicionar um
    * **X**: `-5`
    * **Y**: `-10`
 
-1. Toque ou clique em **Visualizar** na parte superior direita da janela para ver as alterações. A visualização do aplicativo de demonstração é aberta em uma nova guia. Clique em atualizar no navegador para testar o posicionamento e fazer ajustes no editor, conforme necessário.
+1. Selecionar **Visualizar** no canto superior direito da janela para ver as alterações. A visualização do aplicativo de demonstração é aberta em uma nova guia. Clique em atualizar no navegador para testar o posicionamento e fazer ajustes no editor, conforme necessário.
 
    ![Visualizar](assets/do-not-localize/add-reference-10-11-12.png)
 

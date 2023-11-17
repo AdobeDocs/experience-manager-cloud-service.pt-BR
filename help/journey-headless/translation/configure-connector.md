@@ -2,10 +2,10 @@
 title: Configurar a integração de tradução para o conteúdo headless
 description: Saiba como conectar o AEM a um serviço de tradução.
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1229'
-ht-degree: 93%
+source-wordcount: '1216'
+ht-degree: 82%
 
 ---
 
@@ -70,22 +70,22 @@ Depois que o pacote do conector do seu serviço de tradução de preferência fo
 
 Para criar uma configuração de tradução:
 
-1. No menu de navegação global, clique ou toque em **Ferramentas** > **Cloud Service** > **Cloud Service de tradução**.
-1. Navegue até o local em que deseja criar a configuração na estrutura do conteúdo. Geralmente, ela é baseada em um projeto específico, mas também pode ser global.
+1. No menu de navegação global, selecione **Ferramentas** > **Cloud Service** > **Cloud Service de tradução**.
+1. Navegue até o local em que deseja criar a configuração na estrutura de conteúdo. Geralmente, ela é baseada em um projeto específico, mas também pode ser global.
    * Por exemplo, nesse caso, pode-se criar uma configuração global que se aplique a todo o conteúdo ou uma configuração específica para o projeto WKND.
 
    ![Local da configuração de tradução](assets/translation-configuration-location.png)
 
-1. Forneça as seguintes informações nos campos e, em seguida, clique ou toque em **Criar**.
+1. Forneça as seguintes informações nos campos e selecione **Criar**.
    1. Selecione o **Tipo de configuração** no menu suspenso. Selecione **Integração de tradução** na lista.
    1. Insira um **Título** para sua configuração. O **Título** identifica a configuração no console dos **Cloud Services**, bem como nas listas suspensas de propriedades da página.
    1. Opcionalmente, insira um **Nome** para o nó do repositório que armazena a configuração.
 
    ![Criar configuração de tradução](assets/create-translation-configuration.png)
 
-1. Toque ou clique em **Criar** e a janela **Editar configuração** será exibida, onde você poderá definir as propriedades de configuração.
+1. Selecionar **Criar** e a variável **Editar configuração** é exibida, onde você pode definir as propriedades de configuração.
 
-1. Lembre-se de que os Fragmentos de conteúdo são armazenados como ativos no AEM. Toque ou clique na guia **Ativos**.
+1. Lembre-se de que os Fragmentos de conteúdo são armazenados como ativos no AEM. Selecione o **Assets** guia.
 
 ![Propriedades de configuração de tradução](assets/translation-configuration.png)
 
@@ -102,7 +102,7 @@ Para criar uma configuração de tradução:
    1. **Desativar tradução somente de atualização**: quando essa opção estiver marcada, a atualização do projeto de tradução enviará todos os campos traduzíveis para tradução, e não apenas os alterados desde a última tradução. A atualização do projeto de tradução será abordada posteriormente na jornada.
    1. **Ativar campos do modelo de conteúdo para tradução**: marque essa opção para que a configuração de tradução reconheça automaticamente os campos nos Modelos de conteúdo com base no sinalizador **Traduzível**.
 
-1. Toque ou clique em **Salvar e fechar**.
+1. Selecionar **Salvar e fechar**.
 
 Você concluiu a configuração do conector para o serviço de tradução.
 
@@ -116,12 +116,12 @@ Para fazer isso, navegue até a raiz do idioma do conteúdo. Para os fins do nos
 /content/dam/<your-project>/en
 ```
 
-1. Vá até a navegação global e acesse **Navegação** -> **Ativos** -> **Arquivos**.
-1. No console de ativos, selecione a raiz do idioma a ser configurada e clique ou toque em **Propriedades**.
-1. Toque ou clique na guia **Cloud Services**.
-1. Em **Configurações do Cloud Service**, na lista suspensa **Adicionar configuração**, selecione o conector. Ele deve aparecer na lista suspensa quando você tiver instalado o pacote, conforme [descrito anteriormente.](#connect-translation-provider)
-1. Em **Configurações do Cloud Service**, na lista suspensa **Adicionar configuração**, selecione também a configuração.
-1. Toque ou clique em **Salvar e fechar**.
+1. Vá para a navegação global e acesse **Navegação** > **Assets** > **Arquivos**.
+1. No console de ativos, selecione a raiz do idioma a ser configurada e selecione **Propriedades**.
+1. Selecione a guia **Cloud Services**.
+1. Em **Configurações do Cloud Service** no **Adicionar configuração** selecione seu conector. Ele deve aparecer na lista suspensa quando você tiver instalado o pacote como [descrito anteriormente.](#connect-translation-provider)
+1. Em **Configurações do Cloud Service** no **Adicionar configuração** também selecione sua configuração.
+1. Selecionar **Salvar e fechar**.
 
 ![Selecionar configurações do Cloud Service](assets/select-cloud-service-configurations.png)
 

@@ -6,10 +6,10 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '4344'
-ht-degree: 11%
+source-wordcount: '4301'
+ht-degree: 10%
 
 ---
 
@@ -73,7 +73,7 @@ Para visualizar um ativo, siga estas etapas.
 
 1. No modo de visualização, as opções de zoom estão disponíveis para [tipos de imagem compatíveis](/help/assets/file-format-support.md) (com edição interativa).
 
-   Para ampliar um ativo, toque/clique `+` (ou toque/clique na lupa no ativo). Para reduzir, toque/clique `-`. Ao ampliar, você pode observar de perto qualquer área da imagem com um movimento panorâmico. A seta para redefinir zoom leva você de volta à exibição original.
+   Para ampliar um ativo, selecione `+` (ou selecione a lupa no ativo). Para reduzir, selecione `-`. Ao ampliar, você pode observar de perto qualquer área da imagem com um movimento panorâmico. A seta para redefinir zoom leva você de volta à exibição original.
 
    Toque **[!UICONTROL Redefinir]** para redefinir a exibição para o tamanho original.
 
@@ -81,7 +81,7 @@ Para visualizar um ativo, siga estas etapas.
 
 1. Navegue até o local do ativo cujos metadados você deseja editar.
 
-1. Selecione o ativo e toque/clique **[!UICONTROL Propriedades]** na barra de ferramentas para exibir as propriedades do ativo. Como alternativa, escolha o **[!UICONTROL Propriedades]** ação rápida no cartão de ativos.
+1. Selecione o ativo e **[!UICONTROL Propriedades]** na barra de ferramentas para exibir as propriedades do ativo. Como alternativa, escolha o **[!UICONTROL Propriedades]** ação rápida no cartão de ativos.
 
    ![properties_quickaction](assets/properties_quickaction.png)
 
@@ -106,7 +106,7 @@ Para visualizar um ativo, siga estas etapas.
    >
    > Para criar tags, você deve ter permissão de gravação em `/content/cq:tags/default` no repositório CRX.
 
-1. Toque/clique **[!UICONTROL Salvar e fechar]**.
+1. Selecionar **[!UICONTROL Salvar e fechar]**.
 
 1. Navegue até a interface do usuário do Assets. As propriedades de metadados editadas, incluindo título, descrição e tags, são exibidas no cartão de ativos na exibição Cartão e em colunas relevantes na exibição em Lista.
 
@@ -138,7 +138,7 @@ Alguns atributos exclusivos de uma cópia específica de um ativo não são tran
 
 As outras propriedades e informações de metadados são retidas. Uma cópia parcial não é criada ao copiar um ativo.
 
-1. Na interface do usuário do Assets, selecione um ou mais ativos e toque/clique no **[!UICONTROL Copiar]** ícone na barra de ferramentas. Como alternativa, selecione o **[!UICONTROL Copiar]** ![copy_icon](assets/copy_icon.png) ação rápida do cartão de ativos.
+1. Na interface do usuário do Assets, selecione um ou mais ativos e selecione o **[!UICONTROL Copiar]** ícone na barra de ferramentas. Como alternativa, selecione o **[!UICONTROL Copiar]** ![copy_icon](assets/copy_icon.png) ação rápida do cartão de ativos.
 
    >[!NOTE]
    >
@@ -162,13 +162,13 @@ As outras propriedades e informações de metadados são retidas. Uma cópia par
 
 1. Navegue até o local do ativo que deseja mover.
 
-1. Selecione o ativo e toque/clique no **[!UICONTROL Mover]** ícone ![move_icon](assets/move_icon.png) na barra de ferramentas.
+1. Selecione o ativo e selecione a variável **[!UICONTROL Mover]** ícone ![move_icon](assets/move_icon.png) na barra de ferramentas.
 
 1. No assistente Mover ativos, siga um destes procedimentos:
 
-   * Especifique o nome do ativo depois que ele for movido. Toque/clique **[!UICONTROL Próxima]** para continuar.
+   * Especifique o nome do ativo depois que ele for movido. Em seguida, selecione **[!UICONTROL Próxima]** para continuar.
 
-   * Toque/clique **[!UICONTROL Cancelar]** para interromper o processo.
+   * Selecionar **[!UICONTROL Cancelar]** para interromper o processo.
 
    >[!NOTE]
    >
@@ -177,20 +177,20 @@ As outras propriedades e informações de metadados são retidas. Uma cópia par
 
 1. No **[!UICONTROL Selecionar destino]** , siga um destes procedimentos:
 
-   * Navegue até o novo local dos ativos e toque/clique **[!UICONTROL Próxima]** para continuar.
+   * Navegue até o novo local dos ativos e selecione **[!UICONTROL Próxima]** para continuar.
 
-   * Toque/clique **[!UICONTROL Voltar]** para retornar ao **[!UICONTROL Renomear]** tela.
+   * Selecionar **[!UICONTROL Voltar]** para retornar ao **[!UICONTROL Renomear]** tela.
 
 1. Se os ativos que estão sendo movidos tiverem páginas de referência, ativos ou coleções, a variável **[!UICONTROL Ajustar referências]** é exibida ao lado da guia **[!UICONTROL Selecionar destino]** guia.
 
    Siga um destes procedimentos na **[!UICONTROL Ajustar referências]** tela:
 
-   * Especifique as referências a serem ajustadas com base nos novos detalhes e toque/clique **[!UICONTROL Mover]** para continuar.
+   * Especifique as referências a serem ajustadas com base nos novos detalhes e selecione **[!UICONTROL Mover]** para continuar.
 
    * No **[!UICONTROL Ajustar]** selecione/desmarque referências aos ativos.
-   * Toque/clique **[!UICONTROL Voltar]** para retornar ao **[!UICONTROL Selecionar destino]** tela.
+   * Selecionar **[!UICONTROL Voltar]** para retornar ao **[!UICONTROL Selecionar destino]** tela.
 
-   * Toque/clique **[!UICONTROL Cancelar]** para interromper a operação de movimentação.
+   * Selecionar **[!UICONTROL Cancelar]** para interromper a operação de movimentação.
 
    Se você não atualizar as referências, elas continuarão apontando para o caminho anterior do ativo. Se você ajustar as referências, elas serão atualizadas para o novo caminho do ativo.
 
@@ -198,11 +198,11 @@ As outras propriedades e informações de metadados são retidas. Uma cópia par
 
 1. É possível adicionar ou remover representações de um ativo, exceto o original. Navegue até o local do ativo ao qual deseja adicionar ou remover representações.
 
-1. Toque/clique no ativo para abrir a página do ativo.
+1. Selecione o ativo para abrir sua página de ativos.
 
    <!--![chlimage_1-220](assets/chlimage_1-220.png)-->
 
-1. Toque/clique no ícone GlobalNav e selecione **[!UICONTROL Representações]** da lista.
+1. Selecione o ícone GlobalNav e selecione **[!UICONTROL Representações]** da lista.
 
    ![renditions_menu](assets/renditions_menu.png)
 
@@ -218,13 +218,13 @@ As outras propriedades e informações de metadados são retidas. Uma cópia par
 
    **Exclusão de uma representação**
 
-   Selecione uma representação na lista **[!UICONTROL Representações]** e toque/clique no botão **[!UICONTROL Excluir representação]** ícone na barra de ferramentas. As representações não podem ser excluídas em massa após a conclusão do processamento de ativos. Para ativos individuais, é possível remover representações manualmente da interface do usuário. Para vários ativos, é possível personalizar [!DNL Experience Manager] para excluir representações específicas ou excluir os ativos e fazer upload novamente dos ativos excluídos.
+   Selecione uma representação na lista **[!UICONTROL Representações]** e, em seguida, selecione a **[!UICONTROL Excluir representação]** ícone na barra de ferramentas. As representações não podem ser excluídas em massa após a conclusão do processamento de ativos. Para ativos individuais, é possível remover representações manualmente da interface do usuário. Para vários ativos, é possível personalizar [!DNL Experience Manager] para excluir representações específicas ou excluir os ativos e fazer upload novamente dos ativos excluídos.
 
    ![delete_renditionicon](assets/delete_renditionicon.png)
 
    **Fazer upload de uma nova representação**
 
-   Navegue até a página de detalhes do ativo e toque/clique no ícone **[!UICONTROL Adicionar representação]** na barra de ferramentas para fazer upload de uma nova representação do ativo.
+   Navegue até a página de detalhes do ativo e selecione a **[!UICONTROL Adicionar representação]** ícone na barra de ferramentas para fazer upload de uma nova representação do ativo.
 
    <!--![chlimage_1-221](assets/chlimage_1-221.png)-->
 
@@ -260,7 +260,7 @@ Para resolver ou remover as referências recebidas de outras páginas, atualize 
 
 Além disso, desative o botão Forçar exclusão usando uma sobreposição, para impedir que os usuários excluam os ativos referenciados e deixem links desfeitos.
 
-1. Navegue até o local do(s) ativo(s) que deseja excluir.
+1. Navegue até o local dos ativos que deseja excluir.
 
 1. Selecione o ativo e clique em **[!UICONTROL Excluir]** ![delete_icon](assets/do-not-localize/delete-icon.png) na barra de ferramentas.
 
@@ -314,7 +314,7 @@ Um grupo de usuários fechado (CUG) é usado para limitar o acesso a pastas de a
 
 Os CUGs são uma maneira extra de restringir o acesso aos seus ativos. Você também pode configurar uma página de logon para a pasta.
 
-1. Selecione uma pasta na interface do usuário do Assets e toque/clique no ícone Propriedades, na barra de ferramentas, para exibir a página de propriedades.
+1. Selecione uma pasta na interface do usuário do Assets e selecione o ícone Propriedades na barra de ferramentas para exibir a página de propriedades.
 1. No **[!UICONTROL Permissões]** adicionar membros ou grupos em **[!UICONTROL Grupo de usuários fechado]**.
 
    ![add_user](assets/add_user.png)
@@ -355,13 +355,13 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 1. Do one of the following to open an asset in edit mode:
 
-    * Select the asset and then click/tap the **[!UICONTROL Edit]** icon in the toolbar.
-    * Tap/click the **[!UICONTROL Edit]** icon that appears on an asset in the Card view.
-    * In the asset page, tap/click the **[!UICONTROL Edit]** icon in the toolbar.
+    * Select the asset and then select the **[!UICONTROL Edit]** icon in the toolbar.
+    * Select the **[!UICONTROL Edit]** icon that appears on an asset in the Card view.
+    * In the asset page, select the **[!UICONTROL Edit]** icon in the toolbar.
 
    ![edit_icon](assets/edit_icon.png)
 
-1. To crop the image, tap/click the **Crop** icon.
+1. To crop the image, select the **Crop** icon.
 
    ![chlimage_1-226](assets/chlimage_1-226.png)
 
@@ -378,15 +378,15 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
    ![chlimage_1-229](assets/chlimage_1-229.png)
 
-1. Tap/click the appropriate Rotate icon to rotate the image clockwise or anti-clockwise.
+1. Select the appropriate Rotate icon to rotate the image clockwise or anti-clockwise.
 
    ![chlimage_1-230](assets/chlimage_1-230.png)
 
-1. Tap/click the appropriate Flip icon to flip the image horizontally or vertically.
+1. Select the appropriate Flip icon to flip the image horizontally or vertically.
 
    ![chlimage_1-231](assets/chlimage_1-231.png)
 
-1. Tap/click the **Finish** icon to save the changes.
+1. Select the **Finish** icon to save the changes.
 
    ![chlimage_1-232](assets/chlimage_1-232.png)
 
@@ -425,7 +425,7 @@ As anotações de vídeo são suportadas apenas em navegadores com formatos de v
 >Para Fragmentos De Conteúdo, [as anotações são criadas no editor de fragmento](content-fragments/content-fragments.md).
 
 1. Navegue até o local do ativo ao qual deseja adicionar anotações.
-1. Toque/clique no **[!UICONTROL Anotar]** ícone de um dos seguintes:
+1. Selecione o **[!UICONTROL Anotar]** ícone de um dos seguintes:
 
    * [Ações rápidas](#quick-actions)
    * Na barra de ferramentas, depois de selecionar o ativo ou navegar até a página do ativo
@@ -454,18 +454,18 @@ As anotações de vídeo são suportadas apenas em navegadores com formatos de v
    >
    >É possível adicionar várias anotações antes de salvá-las.
 
-1. Toque/clique **[!UICONTROL Fechar]** para sair do modo de Anotação.
+1. Selecionar **[!UICONTROL Fechar]** para sair do modo de Anotação.
 1. Para exibir a notificação, faça logon no Assets com as credenciais de Aaron MacDonald e clique na guia **[!UICONTROL Notificação]** ícone para exibir a notificação.
 
    >[!NOTE]
    >
    >As anotações também podem ser adicionadas a ativos de vídeo. Ao anotar vídeos, o reprodutor faz uma pausa para permitir que você faça anotações em um quadro. Para obter detalhes, consulte [gerenciamento de ativos de vídeo](manage-video-assets.md). No entanto, o formato de vídeo MXF ainda não é compatível com anotações de vídeo.
 
-1. Para escolher uma cor diferente e diferenciar os usuários, clique/toque no ícone Perfil e clique/toque em **[!UICONTROL Minhas preferências]**.
+1. Para escolher uma cor diferente para diferenciar os usuários, selecione o ícone Perfil e **[!UICONTROL Minhas preferências]**.
 
    <!--![chlimage_1-237](assets/chlimage_1-237.png)-->
 
-   Especifique a cor desejada na caixa **[!UICONTROL Cor da anotação]** e clique/toque em **[!UICONTROL Aceitar]**.
+   Especifique a cor desejada no campo **[!UICONTROL Cor da anotação]** e selecione **[!UICONTROL Aceitar]**.
 
 <!-- ![chlimage_1-238](assets/chlimage_1-238.png)-->
 
@@ -485,7 +485,7 @@ Você pode exibir somente uma anotação por vez.
 
 1. Para visualizar as anotações salvas de um ativo, navegue até o local do ativo e abra a página do ativo.
 
-1. Toque/clique no ícone GlobalNav e escolha **[!UICONTROL Linha do tempo]** da lista.
+1. Selecione o ícone GlobalNav e escolha **[!UICONTROL Linha do tempo]** da lista.
 
    <!--![chlimage_1-239](assets/chlimage_1-239.png)-->
 
@@ -493,11 +493,11 @@ Você pode exibir somente uma anotação por vez.
 
    <!--![chlimage_1-240](assets/chlimage_1-240.png)-->
 
-   Toque/clique em um comentário no **[!UICONTROL Linha do tempo]** para exibir a anotação correspondente na imagem.
+   Selecione um comentário na **[!UICONTROL Linha do tempo]** para exibir a anotação correspondente na imagem.
 
    <!--![chlimage_1-241](assets/chlimage_1-241.png)-->
 
-   Toque/clique **[!UICONTROL Excluir]**, para excluir um comentário específico.
+   Selecionar **[!UICONTROL Excluir]**, para excluir um comentário específico.
 
 ### Imprimir anotações {#printing-annotations}
 
@@ -509,7 +509,7 @@ Também é possível optar por imprimir somente as anotações ou o status da re
 >
 >É possível selecionar várias anotações ao imprimir o ativo anotado como PDF.
 
-Para imprimir as anotações e o status da revisão, toque/clique no **[!UICONTROL Imprimir]** e siga as instruções do assistente. A variável **[!UICONTROL Imprimir]** O ícone é exibido na barra de ferramentas somente quando o ativo tem pelo menos uma anotação ou status de revisão atribuído a ele.
+Para imprimir as anotações e revisar o status, selecione o **[!UICONTROL Imprimir]** e siga as instruções do assistente. A variável **[!UICONTROL Imprimir]** O ícone é exibido na barra de ferramentas somente quando o ativo tem pelo menos uma anotação ou status de revisão atribuído a ele.
 
 1. Na interface do usuário do Assets, abra a página de visualização de um ativo.
 1. Siga uma das seguintes opções:
@@ -525,7 +525,7 @@ Para imprimir as anotações e o status da revisão, toque/clique no **[!UICONTR
 
    <!--![chlimage_1-243](assets/chlimage_1-243.png)-->
 
-1. Toque/clique no **[!UICONTROL Imprimir]** ícone na barra de ferramentas.
+1. Selecione o **[!UICONTROL Imprimir]** ícone na barra de ferramentas.
 
    <!--![chlimage_1-244](assets/chlimage_1-244.png)-->
 
@@ -565,21 +565,21 @@ A funcionalidade de controle de versão permite que você faça o seguinte:
 * Exibir a revisão atual de um ativo.
 * Restaurar o ativo para uma versão anterior.
 
-1. Navegue até o local do ativo para o qual deseja criar uma versão e toque/clique nele para abrir a página de ativo.
+1. Navegue até o local do ativo para o qual deseja criar uma versão e selecione-o para abrir sua página de ativo.
 
-1. Toque/clique no ícone GlobalNav e escolha **[!UICONTROL Linha do tempo]** no menu.
+1. Selecione o ícone GlobalNav e escolha **[!UICONTROL Linha do tempo]** no menu.
 
    ![linha de tempo](assets/timeline.png)
 
-1. Toque/clique no **[!UICONTROL Ações]** (seta) ícone na parte inferior para exibir as ações disponíveis que você pode executar no ativo.
+1. Selecione o **[!UICONTROL Ações]** (seta) ícone na parte inferior para exibir as ações disponíveis que você pode executar no ativo.
 
    <!--![chlimage_1-249](assets/chlimage_1-249.png)-->
 
-1. Toque/clique **[!UICONTROL Salvar como versão]** para criar uma versão do ativo.
+1. Selecionar **[!UICONTROL Salvar como versão]** para criar uma versão do ativo.
 
 <!--![chlimage_1-250](assets/chlimage_1-250.png)-->
 
-1. Adicione um rótulo e um comentário e clique em **[!UICONTROL Criar]** para criar uma versão. Como alternativa, toque/clique **Cancelar** para sair da operação.
+1. Adicione um rótulo e um comentário e clique em **[!UICONTROL Criar]** para criar uma versão. Como alternativa, selecione **Cancelar** para sair da operação.
 
    <!--![chlimage_1-251](assets/chlimage_1-251.png)-->
 
@@ -595,9 +595,9 @@ A funcionalidade de controle de versão permite que você faça o seguinte:
 
    ![save_version](assets/save_version.png)
 
-1. Para gerar uma visualização da versão, toque/clique em **[!UICONTROL Visualizar versão]**.
+1. Para gerar uma visualização da versão, selecione **[!UICONTROL Versão de visualização]**.
 1. Para exibir essa versão na interface do usuário do Assets, selecione **[!UICONTROL Reverter para esta versão]**.
-1. Para comparar entre duas versões, vá para a página de ativos do ativo e toque/clique na versão a ser comparada com a versão atual.
+1. Para comparar entre duas versões, vá para a página do ativo e selecione a versão a ser comparada com a versão atual.
 
    ![select_version_to compare](assets/select_version_tocompare.png)
 
@@ -607,16 +607,16 @@ A funcionalidade de controle de versão permite que você faça o seguinte:
 
 ### Iniciar um fluxo de trabalho em um ativo {#starting-a-workflow-on-an-asset}
 
-1. Navegue até o local do ativo para o qual deseja iniciar um fluxo de trabalho e toque/clique no ativo para abrir a página do ativo.
-1. Toque/clique no ícone GlobalNav e escolha **[!UICONTROL Linha do tempo]** no menu para exibir a linha do tempo.
+1. Navegue até o local do ativo para o qual deseja iniciar um fluxo de trabalho e selecione o ativo para abrir a página do ativo.
+1. Selecione o ícone GlobalNav e escolha **[!UICONTROL Linha do tempo]** no menu para exibir a linha do tempo.
 
    ![linha do tempo-1](assets/timeline-1.png)
 
-1. Toque/clique no **[!UICONTROL Ações]** (seta) ícone na parte inferior para abrir a lista de ações disponíveis para o ativo.
+1. Selecione o **[!UICONTROL Ações]** (seta) ícone na parte inferior para abrir a lista de ações disponíveis para o ativo.
 
    <!--![chlimage_1-252](assets/chlimage_1-252.png)-->
 
-1. Toque/clique **[!UICONTROL Iniciar fluxo de trabalho]** da lista.
+1. Selecionar **[!UICONTROL Iniciar fluxo de trabalho]** da lista.
 
    <!--![chlimage_1-253](assets/chlimage_1-253.png)-->
 
@@ -628,7 +628,7 @@ A funcionalidade de controle de versão permite que você faça o seguinte:
 
    <!--![chlimage_1-255](assets/chlimage_1-255.png)-->
 
-1. Toque/clique em **[!UICONTROL Iniciar]** e em **[!UICONTROL Prosseguir]** na caixa de diálogo para confirmar. Cada etapa do fluxo de trabalho é exibida na linha do tempo como um evento.
+1. Selecionar **[!UICONTROL Início]** e selecione **[!UICONTROL Continuar]** na caixa de diálogo para confirmar. Cada etapa do fluxo de trabalho é exibida na linha do tempo como um evento.
 
    <!--![chlimage_1-256](assets/chlimage_1-256.png)-->
 

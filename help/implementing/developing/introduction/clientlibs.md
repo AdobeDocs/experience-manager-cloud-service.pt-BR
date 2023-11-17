@@ -2,9 +2,9 @@
 title: Uso de bibliotecas do lado do cliente no AEM as a Cloud Service
 description: O AEM fornece Pastas de bibliotecas do lado do cliente, que permitem armazenar o código do lado do cliente (clientlibs) no repositório, organizá-lo em categorias e definir quando e como cada categoria de código deve ser entregue ao cliente
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2552'
+source-wordcount: '2551'
 ht-degree: 1%
 
 ---
@@ -64,7 +64,7 @@ Se a pasta da biblioteca do cliente contiver um ou mais arquivos de código-font
 As pastas da biblioteca do cliente contêm os seguintes itens:
 
 * Os arquivos de origem JS e/ou CSS
-* Recursos estáticos que oferecem suporte a estilos CSS, como ícones, fontes da Web etc.
+* Recursos estáticos que oferecem suporte a estilos CSS, como ícones, fontes da Web e assim por diante.
 * Um `js.txt` arquivo e/ou um `css.txt` arquivo que identifica os arquivos de origem a serem mesclados nos arquivos JS e/ou CSS gerados
 
 ![Arquitetura do Clientlib](assets/clientlib-architecture.drawio.png)
@@ -339,7 +339,7 @@ languageOut (defaults to "ECMASCRIPT5")
 compilationLevel (defaults to "simple") (can be "whitespace", "simple", "advanced")
 ```
 
-Para obter mais detalhes sobre as opções do GCC, consulte a [Documentação do GCC](https://developers.google.com/closure/compiler/docs/compilation_levels).
+Para obter mais detalhes sobre as opções de GCC, consulte [Documentação do GCC](https://developers.google.com/closure/compiler/docs/compilation_levels).
 
 #### Definir Minificador Padrão do Sistema {#set-system-default-minifier}
 

@@ -2,9 +2,9 @@
 title: Uso do CRXDE Lite
 description: o CRXDE Lite faz parte do AEM quickstart e está disponível para você acessar e modificar o repositório em seus ambientes de desenvolvimento locais no navegador.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1683'
+source-wordcount: '1685'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,7 @@ A interface do usuário do CRXDE Lite é exibida da seguinte maneira no seu nave
 
 >[!TIP]
 >
->Você também pode acessar o CRXDE Lite no menu AEM. No menu principal, selecione **Ferramentas** -> **Geral** -> **CRXDE Lite**.
+>Você também pode acessar o CRXDE Lite no menu AEM. No menu principal, selecione **Ferramentas** > **Geral** > **CRXDE Lite**.
 
 ## Visão geral da interface do usuário {#overview-of-the-user-interface}
 
@@ -163,7 +163,7 @@ A variável **Widget de login** exibe o usuário conectado no momento.
 
 Clique nele para fazer logon ou refazer logon como outro usuário. A variável `@crx.default` representa que você está no espaço de trabalho padrão (e somente) no repositório.
 
-A variável **Preferências** A opção pode ser usada para definir o idioma da interface do usuário e para exibir e personalizar as teclas de atalho para várias ações, como salvar, pesquisar, criar notas etc.
+A variável **Preferências** A opção pode ser usada para definir o idioma da interface do usuário e para exibir e personalizar as teclas de atalho para várias ações, como salvar, pesquisar, criar uma observação etc.
 
 ## Criação de pastas {#creating-a-folder}
 

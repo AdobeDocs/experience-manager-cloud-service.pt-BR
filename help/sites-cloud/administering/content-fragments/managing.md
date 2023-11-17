@@ -4,10 +4,10 @@ description: Saiba como gerenciar os fragmentos de conteúdo do AEM no console e
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2532'
-ht-degree: 56%
+source-wordcount: '2531'
+ht-degree: 54%
 
 ---
 
@@ -124,7 +124,7 @@ Algumas ações estão disponíveis no console, sem selecionar um fragmento de c
 
   >[!NOTE]
   >
-  >O console de **Ativos** é usado para acessar ativos, como imagens, vídeos etc.  Esse console pode ser acessado:
+  >A variável **Assets** O console do é usado para acessar ativos, como imagens, vídeos e assim por diante.  Esse console pode ser acessado:
   >
   >* usando o link **Abrir no Assets** (no Console de fragmentos de conteúdo)
   >* diretamente do global **Navegação** painel
@@ -201,7 +201,7 @@ Passar o mouse sobre o nome da pasta mostrará o caminho JCR.
 
      ![Console de Fragmentos de conteúdo - Indicador de idioma](assets/cf-managing-console-language-indicator.png)
 
-   * Clique/toque na contagem para abrir uma caixa de diálogo que exibe todas as cópias de idioma. Para abrir uma cópia de idioma específica, clique no link **Título** na caixa de diálogo.
+   * Selecione a contagem para abrir uma caixa de diálogo que exibe todas as cópias de idioma. Para abrir uma cópia de idioma específica, clique no link **Título** na caixa de diálogo.
 
      ![Console de Fragmentos de conteúdo - Caixa de diálogo Idioma](assets/cf-managing-console-languages-dialog.png)
 
@@ -300,7 +300,7 @@ Você pode publicar os fragmentos de conteúdo nos seguintes serviços:
 
   >[!NOTE]
   >
-  >Para obter mais detalhes sobre os ambientes de visualização, consulte:
+  >Para obter mais detalhes sobre os ambientes de Visualização, consulte o seguinte:
   >
   >* [Gerenciamento de ambientes](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
   >* [Configurações do OSGi para o nível de visualização](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
@@ -414,7 +414,7 @@ O ícone indica a localidade do fragmento de conteúdo, juntamente com o número
 
 ![Console de Fragmentos de conteúdo - Indicador de idioma](assets/cfc-console-language-indicator.png)
 
-Clique/toque na contagem para abrir uma caixa de diálogo que exibe todas as cópias de idioma. Para abrir uma cópia de idioma específica, clique no link **Título** na caixa de diálogo.
+Selecione a contagem para abrir uma caixa de diálogo que exibe todas as cópias de idioma. Para abrir uma cópia de idioma específica, clique no link **Título** na caixa de diálogo.
 
 ![Console de Fragmentos de conteúdo - Caixa de diálogo Idioma](assets/cf-managing-console-languages-dialog.png)
 

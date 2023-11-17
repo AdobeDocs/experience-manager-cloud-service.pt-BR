@@ -4,10 +4,10 @@ description: Saiba como criar perfis de usuários no Admin Console para gerencia
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '985'
-ht-degree: 93%
+source-wordcount: '982'
+ht-degree: 92%
 
 ---
 
@@ -18,7 +18,7 @@ Saiba como criar perfis de usuários no Admin Console para gerenciar o recebimen
 
 ## Visão geral {#overview}
 
-Periodicamente, a Adobe precisa entrar em contato com os usuários com relação aos ambientes do AEM as a Cloud Service. Além das notificações no produto, a Adobe também usa ocasionalmente emails para notificações. Há dois tipos de notificações por email:
+Periodicamente, o Adobe entra em contato com os usuários sobre seus ambientes as a Cloud Service com AEM. Além das notificações no produto, a Adobe também usa ocasionalmente emails para notificações. Há dois tipos de notificações por email:
 
 * **Notificação de Incidente** - Estas notificações são enviadas durante um incidente ou quando a Adobe identificou um problema potencial de disponibilidade com seu ambiente do AEM as a Cloud Service.
 * **Notificação proativa** - Estas notificações são enviadas quando um membro da equipe de suporte da Adobe deseja fornecer orientação sobre uma possível otimização ou recomendação que pode beneficiar seu ambiente do AEM as a Cloud Service.
@@ -148,4 +148,4 @@ O usuário convidado agora receberá as notificações. Repita essas etapas para
 
 A seguir estão recursos adicionais e opcionais se quiser ir além do conteúdo da jornada de integração.
 
-* [Centro de ações](/help/operations/actions-center.md) - Aproveite o Centro de ações para tomar medidas convenientes em caso de incidentes e outras informações importantes.
+* [Centro de ações](/help/operations/actions-center.md) - Aproveite o Centro de ações para agir de forma conveniente em incidentes e outras informações importantes.

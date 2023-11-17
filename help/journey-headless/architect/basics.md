@@ -2,10 +2,10 @@
 title: Conheça as noções básicas da modelagem de conteúdo
 description: Conheça as noções básicas da modelagem de conteúdo do seu CMS headless usando fragmentos de conteúdo.
 exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '903'
-ht-degree: 95%
+source-wordcount: '901'
+ht-degree: 94%
 
 ---
 
@@ -130,7 +130,7 @@ Por exemplo, você pode ter os seguintes modelos de fragmento de conteúdo defin
 * Pessoa
 * Prêmios
 
-Parece muito simples, porém é claro que uma empresa conta com um CEO, mas também com funcionários....e todos são definidos como uma Pessoa.
+Parece muito simples, mas uma empresa tem um CEO e funcionários...e todos são definidos como uma Pessoa.
 
 E uma pessoa pode ter um prêmio (ou talvez dois).
 

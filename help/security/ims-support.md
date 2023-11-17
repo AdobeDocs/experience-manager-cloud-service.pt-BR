@@ -2,7 +2,7 @@
 title: Suporte IMS do Adobe Experience Manager as a Cloud Service
 description: Suporte do sistema de gestão de imagens para o Adobe Experience Manager as a Cloud Service
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: 361881807e8704dfcb27075365cb73a7f659c82d
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1978'
 ht-degree: 100%
@@ -158,7 +158,7 @@ O AEM pode continuar a oferecer suporte a logons locais para usuários Admin. A 
 
 ![Logon local](/help/security/assets/ims9.png)
 
-<!-- the above image needs to be updated for skyline -->
+<!-- the above image must be updated for skyline -->
 
 **Logon baseado no IMS**
 

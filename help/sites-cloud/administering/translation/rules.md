@@ -4,10 +4,10 @@ description: Saiba como as regras de tradução identificam o conteúdo que prec
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1290'
-ht-degree: 99%
+source-wordcount: '1288'
+ht-degree: 95%
 
 ---
 
@@ -25,7 +25,7 @@ As regras de tradução descritas neste documento se aplicam aos fragmentos de c
 
 Se a opção **Habilitar campos do modelo de conteúdo para tradução** estiver ativa, o AEM usará o campo **Traduzível** nos [Modelos de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties) para determinar se o campo deve ser traduzido e criará as devidas regras de tradução automaticamente. Essa opção substitui qualquer regra de tradução criada e não requer nenhuma intervenção ou etapas adicionais.
 
-Se você quiser usar regras de tradução para traduzir os fragmentos de conteúdo, a opção **Habilitar campos do modelo de conteúdo para tradução** na configuração da estrutura de integração de tradução deve estar desativada, e você precisa seguir as etapas descritas abaixo para criar suas regras.
+Se você quiser usar regras de tradução para traduzir os fragmentos de conteúdo, a variável **Ativar campos do modelo de conteúdo para tradução** a opção na configuração da estrutura de integração de tradução deve estar desativada, e você precisa seguir as etapas descritas abaixo para criar suas regras.
 
 ## Visão geral {#overview}
 
@@ -167,7 +167,7 @@ Na interface das regras de tradução, é possível:
 
    ![Adicionar contexto de tradução](../assets/add-translation-context.png)
 
-1. Use o navegador de caminho para selecionar o contexto necessário e toque ou clique no botão **Confirmar** para salvar.
+1. Use o navegador de caminho para selecionar o contexto necessário e selecione a variável **Confirmar o** botão para salvar.
 
    ![Selecionar contexto](../assets/select-context.png)
 

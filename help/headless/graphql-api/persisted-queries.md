@@ -3,9 +3,9 @@ title: Consultas persistentes de GraphQL
 description: Saiba como criar consultas persistentes de GraphQL no Adobe Experience Manager as a Cloud Service para otimizar o desempenho. As consultas persistentes podem ser solicitadas por aplicativos clientes usando o método GET do HTTP e a resposta pode ser armazenada em cache nas camadas do Dispatcher e do CDN, melhorando, em última análise, o desempenho dos aplicativos clientes.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1679'
+source-wordcount: '1676'
 ht-degree: 98%
 
 ---
@@ -396,7 +396,7 @@ o ponto de acesso retornará como `400` ou `500` (dependendo do caso) quando hou
 
   >[!NOTE]
   >
-  >Para mais detalhes, consulte https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes
+  >Consulte https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes
 
 ## Codificação do URL da consulta para uso por um aplicativo {#encoding-query-url}
 

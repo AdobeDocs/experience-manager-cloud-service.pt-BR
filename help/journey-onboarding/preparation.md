@@ -2,10 +2,10 @@
 title: Preparação para a integração
 description: Antes de começar o processo de integração, há várias etapas preparatórias que o administrador do sistema deve entender para fazer logon no sistema.
 exl-id: 86139b1a-c22a-4716-a0f9-cf142cbc6c53
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 96%
+source-wordcount: '760'
+ht-degree: 88%
 
 ---
 
@@ -17,7 +17,7 @@ Depois de ler o artigo [Introdução à jornada de integração do AEM as a Clou
 
 O AEM as a Cloud Service é uma ferramenta poderosa e flexível com várias soluções, complementos e modelos de implantação disponíveis. A solução que sua organização está autorizada a usar é especificada no contrato com a Adobe, que orienta o início do processo de integração.
 
-Depois de ler este documento, você compreenderá:
+Depois de ler este documento, você deverá entender
 
 * O que o seu contrato com a Adobe estabelece.
 * O que é provisionado pela Adobe.
@@ -34,7 +34,7 @@ Este vídeo resume o processo de integração definido nesta jornada e serve com
 
 ## Seu contrato {#contract}
 
-A integração do AEM as a Cloud Service começa com um contrato assinado entre a sua organização e a Adobe. Isso ocorre porque o contrato especifica uma série de acordos importantes entre a Adobe e a sua organização, como:
+A integração do AEM as a Cloud Service começa com um contrato assinado entre a sua organização e a Adobe. O motivo é porque o contrato especifica vários acordos importantes entre o Adobe e sua organização, como:
 
 * Quais soluções e complementos sua organização pode usar.
 * O número e os tipos de ambientes que você pode acessar.

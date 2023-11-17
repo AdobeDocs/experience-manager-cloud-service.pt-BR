@@ -2,10 +2,10 @@
 title: Trabalhar com versões de páginas
 description: Saiba como criar, comparar e restaurar versões de suas páginas no AEM.
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1507'
-ht-degree: 99%
+source-wordcount: '1505'
+ht-degree: 97%
 
 ---
 
@@ -35,7 +35,7 @@ O controle de versão cria um “instantâneo” de uma página em um momento es
 1. Navegue para mostrar a página para a qual você deseja criar uma versão.
 1. Selecione a página no [modo de seleção](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Abra o painel **Linha do tempo**.
-1. Clique/toque no elipse do campo de comentário para revelar as opções:
+1. Selecione as reticências do campo de comentário para revelar as opções:
 
    ![Versões no painel da linha do tempo](/help/sites-cloud/authoring/assets/versions-timeline-rail.png)
 
@@ -209,7 +209,7 @@ Para usar este recurso:
 
 O Timewarp é um [modo](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) do editor de páginas. Para iniciá-lo, basta ativá-lo como faria com qualquer outro modo.
 
-1. Inicie o editor da página em que deseja iniciar o Timewarp e selecione o modo **Timewarp**.
+1. Inicie o editor da página em que deseja iniciar o Timewarp e selecione **Timewarp** na seleção de modo.
 
    ![Modo Timewarp](/help/sites-cloud/authoring/assets/versions-timewarp-mode.png)
 

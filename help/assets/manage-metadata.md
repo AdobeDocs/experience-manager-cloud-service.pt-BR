@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Asset Management,Metadata
 role: User,Architect,Admin
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2003'
-ht-degree: 8%
+source-wordcount: '2000'
+ht-degree: 9%
 
 ---
 
@@ -135,7 +135,7 @@ O Enterprise Manager Assets permite editar os metadados de vários ativos simult
 
 1. Navegue até o local dos ativos que deseja editar.
 1. Selecione os ativos para os quais deseja editar propriedades comuns.
-1. Na barra de ferramentas, toque/clique **[!UICONTROL Propriedades]** para abrir o [!UICONTROL Propriedades] página dos ativos selecionados.
+1. Na barra de ferramentas, selecione **[!UICONTROL Propriedades]** para abrir o [!UICONTROL Propriedades] página dos ativos selecionados.
 
    >[!NOTE]
    >
@@ -149,9 +149,8 @@ O Enterprise Manager Assets permite editar os metadados de vários ativos simult
    >* No [!UICONTROL Propriedades] você pode remover ativos da lista de ativos cancelando a seleção. A lista de ativos tem todos os ativos selecionados por padrão. Os metadados dos ativos removidos da lista não são atualizados.
    >* Na parte superior da lista de ativos, marque a caixa de seleção ao lado de **[!UICONTROL Título]** para alternar entre a seleção dos ativos e a limpeza da lista.
 
-
-1. Para selecionar um esquema de metadados diferente para os ativos, toque/clique **[!UICONTROL Configurações]** na barra de ferramentas e selecione o schema desejado. Salve as alterações.
-1. Para anexar os novos metadados aos existentes em campos que contêm vários valores, selecione o **[!UICONTROL Modo anexar]**. Se você não selecionar essa opção, os novos metadados substituirão os existentes nos campos. Toque/clique em **[!UICONTROL Enviar]**.
+1. Para selecionar um esquema de metadados diferente para os ativos, selecione **[!UICONTROL Configurações]** na barra de ferramentas e selecione o schema desejado. Salve as alterações.
+1. Para anexar os novos metadados aos existentes em campos que contêm vários valores, selecione o **[!UICONTROL Modo anexar]**. Se você não selecionar essa opção, os novos metadados substituirão os existentes nos campos. Selecione **[!UICONTROL Enviar]**.
 
    >[!CAUTION]
    >
@@ -266,4 +265,3 @@ A criação de workflows orientados por metadados ajuda você a automatizar algu
 >
 >* [Metadados XMP](xmp-metadata.md)
 >* [Como editar ou adicionar metadados](meta-edit.md)
-

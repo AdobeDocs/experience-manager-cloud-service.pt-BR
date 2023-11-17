@@ -2,9 +2,9 @@
 title: Plug-in Maven do pacote de conteúdo do Adobe
 description: Usar o plug-in Maven do pacote de conteúdo para implantar aplicativos AEM
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1838'
+source-wordcount: '1832'
 ht-degree: 6%
 
 ---
@@ -26,6 +26,7 @@ Este documento detalha como usar o Maven para gerenciar essas tarefas. No entant
 >[!NOTE]
 >
 >Pacote **criação** agora é de propriedade da [Plug-in Apache Jackrabbit FileVault Package Maven.](https://jackrabbit.apache.org/filevault-package-maven-plugin/)
+>
 >* A variável `content-package-maven-plugin` O não é mais compatível com pacotes da versão 1.0.2.
 >* Este artigo descreve as **implantação** dos pacotes construídos para o AEM é executado pelo plug-in Adobe Content Package Maven.
 
@@ -35,7 +36,7 @@ O AEM as a Cloud Service segue as práticas recomendadas mais recentes para o ge
 
 >[!TIP]
 >
->Para obter mais detalhes, consulte [Estrutura de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=pt-BR) artigo na documentação do AEM as a Cloud Service e na [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR) documentação. Ambos são totalmente compatíveis com AEM 6.5.
+>Consulte a [Estrutura de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=pt-BR) artigo na documentação do AEM as a Cloud Service e na [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR) documentação. Ambos são totalmente compatíveis com AEM 6.5.
 
 ## Obter o plug-in Maven do pacote de conteúdo {#obtaining-the-content-package-maven-plugin}
 
@@ -43,7 +44,7 @@ O plug-in está disponível no [Repositório central Maven.](https://mvnreposito
 
 ## Metas e parâmetros do plug-in Maven do pacote de conteúdo
 
-Para usar o Plug-in Maven do pacote de conteúdo, adicione o seguinte elemento de plug-in dentro do elemento de build do arquivo POM:
+Para usar o Plug-in Maven do pacote de conteúdo, adicione o seguinte elemento de plug-in dentro do elemento de build do seu arquivo POM:
 
 ```xml
 <plugin>
@@ -267,4 +268,4 @@ O Arquétipo de projeto AEM mais recente implementa a estrutura do pacote de pr�
 
 >[!TIP]
 >
->Para obter mais detalhes, consulte [Estrutura de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=pt-BR) artigo na documentação do AEM as a Cloud Service e na [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR) documentação. Ambos são totalmente compatíveis com AEM 6.5.
+>Consulte a [Estrutura de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=pt-BR) artigo na documentação do AEM as a Cloud Service e na [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR) documentação. Ambos são totalmente compatíveis com AEM 6.5.

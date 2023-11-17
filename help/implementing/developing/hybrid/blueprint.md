@@ -2,9 +2,9 @@
 title: Blueprint do SPA
 description: Este documento descreve o contrato geral e independente de estrutura que qualquer estrutura SPA deve cumprir para que você possa implementar componentes SPA editáveis dentro do AEM.
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2056'
+source-wordcount: '2055'
 ht-degree: 2%
 
 ---
@@ -63,7 +63,7 @@ O restante deste documento descreve os requisitos desta camada específica da es
 
 A estrutura de conteúdo da página é armazenada no AEM. O modelo da página é usado para mapear e instanciar componentes do SPA. Os desenvolvedores do SPA criam componentes do SPA que são mapeados para componentes do AEM. Para fazer isso, eles usam o tipo de recurso (ou caminho para o componente AEM) como uma chave exclusiva.
 
-Os componentes do SPA devem estar sincronizados com o modelo de página e ser atualizados de acordo com quaisquer alterações em seu conteúdo. Um padrão que utiliza componentes dinâmicos deve ser usado para instanciar componentes em tempo real, seguindo a estrutura do modelo de página fornecida.
+Os componentes do SPA devem estar sincronizados com o modelo de página e ser atualizados de acordo com quaisquer alterações em seu conteúdo. Um padrão que usa componentes dinâmicos deve ser usado para instanciar componentes em tempo real, seguindo a estrutura do modelo de página fornecido.
 
 ### Metacampos {#meta-fields}
 
@@ -259,7 +259,7 @@ O fragmento a seguir ilustra a representação em HTML típica de uma estrutura 
 
 ## Navegação e Roteamento {#navigation-and-routing}
 
-O aplicativo é o proprietário do roteamento. Primeiro, o desenvolvedor de front-end precisa implementar um componente de Navegação (mapeado para um componente de navegação AEM). Esse componente renderizaria links de URL a serem usados junto com uma série de rotas que exibirão ou ocultarão fragmentos de conteúdo.
+O aplicativo é o proprietário do roteamento. Primeiro, o desenvolvedor de front-end deve implementar um componente de Navegação (mapeado para um componente de navegação AEM). Esse componente renderizaria links de URL a serem usados junto com uma série de rotas que exibirão ou ocultarão fragmentos de conteúdo.
 
 A base subjacente [`PageModelManager`](#pagemodelmanager) biblioteca e seus [`ModelRouter`](routing.md) Os módulos do (ativados por padrão) são responsáveis por buscar previamente e fornecer acesso ao modelo associado a um determinado caminho de recurso.
 

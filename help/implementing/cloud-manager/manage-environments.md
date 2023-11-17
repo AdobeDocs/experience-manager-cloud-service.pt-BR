@@ -2,10 +2,10 @@
 title: Gerenciamento de ambientes
 description: Saiba mais sobre os tipos de ambientes que você pode criar e como criá-los para o seu projeto do Cloud Manager.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 532f3ac9450d34f3e2a168c04695bafde5a44c9f
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2601'
-ht-degree: 85%
+source-wordcount: '2585'
+ht-degree: 83%
 
 ---
 
@@ -87,9 +87,9 @@ Ao adicionar um novo ambiente, é possível optar por configurar regiões adicio
 1. Selecione a opção **Adicionar regiões de publicação adicionais** e será exibido um novo menu suspenso de **Regiões de publicação adicionais**.
 1. No menu suspenso **Regiões de publicação adicionais**, selecione uma região adicional.
 1. A região selecionada é adicionada abaixo do menu suspenso para indicar sua seleção.
-   * Toque ou clique em `X` ao lado da região selecionada para desmarcá-la.
+   * Selecione o `X` ao lado da região selecionada, para que você possa desmarcá-la.
 1. Para adicionar outra região, selecione-a no menu suspenso **Regiões de publicação adicionais**.
-1. Toque ou clique em **Salvar** quando estiver pronto para criar seu ambiente.
+1. Selecionar **Salvar** quando estiver pronto para criar seu ambiente.
 
 ![Selecionar várias regiões](assets/select-multiple-regions.png)
 
@@ -115,7 +115,7 @@ Você também pode remover regiões de publicação adicionais. No entanto, só 
 
    ![Editar ambiente](assets/edit-environment.png)
 
-1. Toque ou clique em **Salvar** para salvar as alterações.
+1. Selecionar **Salvar** para salvar as alterações.
 
 As alterações feitas no ambiente de produção também serão aplicadas no ambiente de preparo. As alterações em várias regiões de publicação podem ser editadas somente no ambiente de produção.
 
@@ -200,12 +200,12 @@ Como alternativa, você pode acessar as mesmas informações no **Ambientes** gu
 
 Se houver problemas relatados com regiões de publicação adicionais:
 
-1. Por favor, seja paciente. O Cloud Manager tentará continuamente recuperar a região e ela poderá estar disponível a qualquer momento.
-1. Se o problema persistir após algumas horas, é possível remover a região de publicação adicional e adicioná-la novamente (na mesma região ou em outra) para acionar uma implantação completa.
+1. Seja paciente. O Cloud Manager tenta continuamente recuperar a região e ela pode ficar disponível a qualquer momento.
+1. Se o problema persistir após várias horas, é possível remover a região de publicação adicional e adicioná-la novamente (na mesma região ou em outra) para acionar uma implantação completa.
 
 Quanto tempo você esperar até que o sistema se recupere por conta própria antes de tomar medidas adicionais depende do impacto que a falha dessa região tem em seus sistemas.
 
-Observe que, em qualquer caso, [o tráfego sempre será roteado para a outra região mais próxima que esteja online.](/help/operations/additional-publish-regions.md) Se o problema persistir, entre em contato com o Atendimento ao cliente do Adobe.
+Em qualquer caso, [o tráfego é sempre roteado para a outra região mais próxima que esteja online.](/help/operations/additional-publish-regions.md) Se o problema persistir, entre em contato com o Atendimento ao cliente da Adobe.
 
 ## Atualização de ambientes {#updating-dev-environment}
 
@@ -333,7 +333,7 @@ A lista de permissões de IP deve existir no Cloud Manager para ser aplicada a u
 **Para aplicar uma lista de permissões de IP:**
 
 1. Navegue até o ambiente específico na guia **Ambientes** da tela **Visão geral** do programa e acesse a tabela **Listas de permissões de IP**.
-1. Use os campos de entrada na parte superior da tabela Lista de permissões de IP para selecionar a lista de permissões e o serviço de autoria ou publicação ao qual deseja aplicá-la.
+1. Use os campos de entrada na parte superior da tabela de inclui na lista de permissões de IP para poder selecionar o arquivo de inclui na lista de permissões de IP e o serviço de autoria ou publicação ao qual deseja aplicá-lo.
 1. Clique em **Aplicar** e confirme o envio.
 
 ### Cancelamento da aplicação de uma lista de permissões de IP {#unapply-ip-allow-list}

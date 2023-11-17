@@ -4,9 +4,9 @@ description: Entenda como criar conteúdo para os fragmentos de conteúdo e, em 
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2252'
+source-wordcount: '2251'
 ht-degree: 4%
 
 ---
@@ -58,7 +58,7 @@ Ao abrir o Editor de fragmento de conteúdo pela primeira vez, você vê quatro 
    * no **Propriedades** guia, é possível atualizar a guia **Título** e **Descrição** para o fragmento ou **Variação**
 * painel central: mostra os campos reais e o conteúdo da variação selecionada
    * permite editar o conteúdo
-   * se **Espaço reservado da guia** os campos são definidos no modelo mostrado aqui e podem ser usados para navegação; eles serão apresentados horizontalmente ou como uma lista suspensa
+   * se **Espaço reservado da guia** os campos são definidos no modelo mostrado aqui e podem ser usados para navegação; eles serão apresentados horizontalmente ou como uma lista suspensa.
 
 ![Editor de fragmento de conteúdo — Visão geral](assets/cf-authoring-overview.png)
 
@@ -399,7 +399,7 @@ O editor de fragmento de conteúdo fornece aos autores a opção de visualizar s
 Para usar esse recurso, primeiro é necessário:
 
 * Trabalhe com sua equipe de TI para configurar o aplicativo de front-end externo que renderizará o fragmento de conteúdo consumindo sua saída JSON.
-* Quando o aplicativo de front-end externo estiver configurado, a variável **Padrão de URL de Visualização Padrão** precisa ser definido como um [propriedade do modelo de fragmento de conteúdo apropriado](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties).
+* Quando o aplicativo front-end externo estiver configurado, a variável **Padrão de URL de Visualização Padrão** deve ser definido como um [propriedade do modelo de fragmento de conteúdo apropriado](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties).
 
 Quando o URL tiver sido definido, a variável **Visualizar** O botão está ativo. Você pode selecionar esse botão para iniciar o aplicativo externo (em uma guia separada) para renderizar o fragmento de conteúdo.
 
@@ -475,8 +475,6 @@ A variável **Campos** O painel lista todos os campos no Fragmento de conteúdo.
 </table>
 
 ## É bom saber {#good-to-know}
-
-Além disso:
 
 * Para editar um fragmento de conteúdo, é necessário [as permissões apropriadas](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Entre em contato com o(a) administrador(a) do sistema em caso de problemas.
 

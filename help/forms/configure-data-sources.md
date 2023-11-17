@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: b9fb484135fb2d16758548c525b59f5ba011afb5
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2203'
+source-wordcount: '2201'
 ht-degree: 1%
 
 ---
@@ -283,7 +283,7 @@ Um serviço OData é identificado por sua URL raiz de serviço. Para configurar 
 
    >[!NOTE]
    >
-   Você deve selecionar o tipo de autenticação do OAuth 2.0 para se conectar [!DNL Microsoft®® Dynamics] serviços usando o ponto de extremidade OData como a raiz do serviço.
+   Selecione o tipo de autenticação do OAuth 2.0 com o qual se conectar [!DNL Microsoft®® Dynamics] serviços usando o ponto de extremidade OData como a raiz do serviço.
 
 1. Toque **[!UICONTROL Criar]** para criar a configuração de nuvem para o serviço OData.
 

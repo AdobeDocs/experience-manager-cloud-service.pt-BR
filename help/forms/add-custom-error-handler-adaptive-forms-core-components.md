@@ -1,14 +1,12 @@
 ---
 title: Adicionar um manipulador de erros personalizado no Adaptive Forms com base nos Componentes principais para AEM Adaptive Forms
-seo-title: Error Handlers in Adaptive Forms for AEM Adaptive Forms core components
 description: O AEM Forms fornece manipuladores de sucesso e erro prontos para uso para um formulário usando o endpoint REST configurado para chamar um serviço externo. Você pode adicionar um manipulador de erros padrão e um manipulador de erros personalizado em um formulário adaptável AEM.
-seo-description: Error handler function and Rule Editor in Adaptive Forms core components helps you to effectively manage and customize error handling. You can add a default error handler as well as custom error handler in an AEM Adaptive Form.
 keywords: Adicionar um manipulador de erros personalizado, adicionar um manipulador de erros padrão, adicionar um manipulador de erros no formulário, usar o serviço de chamada do editor de regras para adicionar um manipulador de erros personalizado, configurar o editor de regras para adicionar um manipulador de erros personalizado, adicionar manipulador de erros personalizado usando o editor de regras
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
 exl-id: 4496c4cc-a5d7-4f34-91f9-13eded77b362
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '2410'
 ht-degree: 2%
@@ -252,7 +250,7 @@ Vamos adicionar o seguinte código ao arquivo JavaScript para exibir a resposta 
            console.log("Custom Error Handler processing start...");
            console.log("response:"+JSON.stringify(response));
            console.log("headers:"+JSON.stringify(headers));
-           alert("CustomErrorHandler - Please enter valid PetId.")
+           alert("CustomErrorHandler - Enter valid PetId.")
            globals.invoke('defaultErrorHandler',response, headers)
            console.log("Custom Error Handler processing end...");
        }

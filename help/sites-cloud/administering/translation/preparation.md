@@ -4,10 +4,10 @@ description: Saiba como preparar conteúdo para tradução ao desenvolver sites 
 feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: a1a92f8767186ba9e93b6b30870ecfa9f3b3bc28
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '769'
-ht-degree: 98%
+source-wordcount: '751'
+ht-degree: 86%
 
 ---
 
@@ -71,20 +71,20 @@ Para criar a raiz do idioma, crie uma página e use um código de idioma ISO com
 * `<language-code>` - O código de idioma compatível é um código de duas letras, conforme definido pela ISO-639-1, como por exemplo `en`.
 * `<language-code>_<country-code>` ou `<language-code>-<country-code>` - O código do país compatível é um código de duas letras em minúsculas ou maiúsculas, conforme definido pela norma ISO 3166, como por exemplo `en_US`, `en_us`, `en_GB`, `en-gb`.
 
-É possível usar qualquer um dos formatos, de acordo com a estrutura escolhida para o site global. Por exemplo, a página raiz da cópia em francês do site do WKND tem `fr` como a propriedade **Nome**. Observe que a propriedade **Nome** é usada como o nome do nó da página no repositório e, portanto, determina o caminho da página (`http://<host>:<4502>/content/wknd/language-masters/fr.html`).
+É possível usar qualquer um dos formatos, de acordo com a estrutura escolhida para o site global. Por exemplo, a página raiz da cópia em francês do site do WKND tem `fr` como a propriedade **Nome**. A variável **Nome** é usada como o nome do nó da página no repositório e, portanto, determina o caminho da página (`http://<host>:<4502>/content/wknd/language-masters/fr.html`).
 
 1. Navegue até Sites.
-1. Clique ou toque no site para o qual deseja criar uma cópia de idioma.
-1. Clique ou toque em **Criar** e, em seguida, clique ou toque em **Página**.
+1. Selecione o site para o qual deseja criar uma cópia de idioma.
+1. Selecionar **Criar** e selecione **Página**.
 
    ![Criar página](../assets/create-page.png)
 
-1. Selecione o modelo de página e clique ou toque em **Próximo**.
+1. Selecione o modelo de página e, em seguida, **Próxima**.
 1. No campo **Nome**, digite o código do país no formato de `<language-code>` ou `<language-code>_<country-code>`, como por exemplo `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Digite um título para a página.
 
    ![Criar página da raiz de idioma](../assets/create-language-root.png)
 
-1. Clique ou toque em **Criar**. Na caixa de diálogo de confirmação, clique ou toque em **Concluído** para retornar ao console de Sites ou **Abrir** para abrir a cópia de idioma.
+1. Selecione **Criar**. Na caixa de diálogo de confirmação, selecione **Concluído** para retornar ao console Sites ou **Abertura** para abrir a cópia de idioma.
 
 ## Ver o status das raízes de idioma {#seeing-the-status-of-language-roots}
 
@@ -94,11 +94,11 @@ O AEM fornece um painel de **Referências** que mostra uma lista de raízes de i
 
 Use o procedimento a seguir para exibir as cópias de idioma de uma página usando o [seletor do painel](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
 
-1. No console de Sites, selecione uma página do site e clique ou toque em **Referências**.
+1. No console Sites, selecione uma página do site e selecione **Referências**.
 
    ![Abrir painel de referências](../assets/opening-references-rail.png)
 
-1. No painel de referências, clique ou toque em **Cópias de idioma**. O painel mostra as cópias de idioma do site.
+1. No painel de referências, selecione **Cópias de idioma**. O painel mostra as cópias de idioma do site.
 
 ## Cópias de idioma em vários níveis {#multiple-levels}
 

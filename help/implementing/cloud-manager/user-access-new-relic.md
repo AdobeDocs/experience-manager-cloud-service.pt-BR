@@ -2,10 +2,10 @@
 title: New Relic One
 description: Saiba mais sobre o serviço de monitoramento de desempenho de aplicativo (APM) da New Relic One para o AEM as a Cloud Service e como você pode acessá-lo.
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1730'
-ht-degree: 90%
+source-wordcount: '1728'
+ht-degree: 88%
 
 ---
 
@@ -52,7 +52,7 @@ Siga estas etapas para definir os usuários da sua subconta da New Relic One ass
 
    * Também é possível acessar a opção **Gerenciar usuários** usando do botão de reticências na parte superior da tela **Ambientes** do seu programa.
 
-1. Na caixa de diálogo **Gerenciar usuários da New Relic**, digite o nome e o sobrenome do usuário que deseja adicionar e clique no botão **Adicionar**. Repita essa etapa para todos os usuários que deseja adicionar.
+1. No **Gerenciar usuários do New Relic** digite o nome e o sobrenome do usuário que deseja adicionar e clique no link **Adicionar** botão. Repita essa etapa para todos os usuários que deseja adicionar.
 
    ![Adicionar usuários](assets/newrelic-add-users.png)
 

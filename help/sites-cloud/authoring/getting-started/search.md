@@ -2,10 +2,10 @@
 title: Pesquisar
 description: Encontre seu conteúdo mais rapidamente com a pesquisa abrangente
 exl-id: 8a799e9a-1461-4e79-ae90-1978af6cf0ed
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 98%
+source-wordcount: '492'
+ht-degree: 95%
 
 ---
 
@@ -22,7 +22,7 @@ A pesquisa está disponível na barra de ferramentas superior:
 Com o painel de pesquisa, você pode:
 
 * Pesquise por uma palavra-chave, um caminho ou uma tag específica
-* Filtre de acordo com os critérios específicos dos recursos, como datas modificadas, status da página, tamanho do arquivo, etc.
+* Filtre de acordo com os critérios específicos dos recursos, como datas modificadas, status da página, tamanho do arquivo e assim por diante.
 * Defina e use uma [pesquisa salva](#saved-searches) - com base nos critérios acima
 
 >[!NOTE]

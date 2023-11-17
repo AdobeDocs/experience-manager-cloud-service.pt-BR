@@ -2,9 +2,9 @@
 title: Criação de tags em aplicativos do AEM
 description: Trabalhar programaticamente com tags ou estender tags em um aplicativo AEM personalizado
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '758'
 ht-degree: 1%
 
 ---
@@ -51,7 +51,7 @@ TagManager tagManager = resourceResolver.adaptTo(TagManager.class);
 
 ### Recuperação de um objeto de tag {#retrieving-a-tag-object}
 
-A `Tag` pode ser recuperado por meio da variável `TagManager`, resolvendo uma tag existente ou criando uma nova:
+A `Tag` pode ser recuperado por meio da variável `TagManager`, resolvendo uma tag existente ou criando uma:
 
 ```java
 Tag tag = tagManager.resolve("my/tag"); // for existing tags
@@ -168,4 +168,4 @@ O finlandês agora está disponível na caixa de diálogo de tag das propriedade
 
 >[!NOTE]
 >
->A nova linguagem precisa ser uma das linguagens reconhecidas pelo AEM, ou seja, precisa estar disponível como um nó abaixo `/libs/wcm/core/resources/languages`.
+>A nova língua deve ser uma das línguas reconhecidas pelo AEM. Ou seja, ele deve estar disponível como um nó abaixo `/libs/wcm/core/resources/languages`.

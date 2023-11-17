@@ -1,13 +1,13 @@
 ---
 title: Painel de auditoria de experiência
 description: Saiba como a Auditoria de experiência valida seu processo de implantação e ajuda a garantir que as alterações implantadas atendam aos padrões básicos de desempenho, acessibilidade, práticas recomendadas e SEO, por meio de uma interface de painel clara e informativa.
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '844'
-ht-degree: 17%
+source-wordcount: '831'
+ht-degree: 23%
 
 ---
-
 
 # Painel de auditoria de experiência {#experience-audit-dashboard}
 
@@ -18,7 +18,7 @@ Saiba como a Auditoria de experiência valida seu processo de implantação e aj
 >
 >Este recurso só está disponível para [programa de adoção antecipada.](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)
 >
->Para obter detalhes sobre o recurso Auditoria de experiência existente para o AEM as a Cloud Service, consulte o documento [Teste de auditoria de experiência.](/help/implementing/cloud-manager/experience-audit-testing.md)
+>Para obter detalhes sobre o recurso Auditoria de experiência existente para o AEM as a Cloud Service, consulte [Teste de auditoria de experiência](/help/implementing/cloud-manager/experience-audit-testing.md).
 
 ## Visão geral {#overview}
 
@@ -30,17 +30,17 @@ A Auditoria de experiência é um recurso disponível nos pipelines de produçã
 
 A Auditoria de experiência no Cloud Manager garante que a experiência do usuário final no site seja do mais alto padrão.
 
-Os resultados da auditoria são informativos e permitem que o gerente de implantação veja as pontuações e as alterações entre as pontuações atual e anterior. Esse insight é importante para determinar se há uma regressão introduzida com a implantação atual.
+Os resultados da auditoria são informativos e permitem que o gerente de implantação veja as pontuações e as alterações entre as pontuações atual e anterior. Essa informação é valiosa para determinar se foi introduzida uma regressão com a implantação atual.
 
-A Auditoria de experiência é viabilizada pelo [Google Lighthouse,](https://developer.chrome.com/docs/lighthouse/overview/) uma ferramenta de código aberto do Google e está ativada em todos os pipelines de produção do Cloud Manager.
+A Auditoria de experiência é viabilizada pelo [Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/), uma ferramenta de código aberto do Google, que é ativada em todos os pipelines de produção do Cloud Manager.
 
 >[!TIP]
 >
->Você configura quais páginas são incluídas na auditoria de experiência ao [configurar seu pipeline.](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code)
+>Você define quais páginas são incluídas na auditoria de experiência ao [configurar seu pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code).
 
 ## O painel de auditoria de experiência {#dashboard}
 
-Os resultados da Auditoria de experiência são apresentados na **Teste de preparo** fase do pipeline de produção através da [página de execução do pipeline de produção.](/help/implementing/cloud-manager/deploy-code.md)
+Os resultados da Auditoria de experiência são apresentados na **Teste de preparo** fase do pipeline de produção através da [página de execução do pipeline de produção](/help/implementing/cloud-manager/deploy-code.md).
 
 ![Painel no pipeline](assets/dashboard.png)
 
@@ -57,7 +57,7 @@ A variável **Insights** A guia fornece uma breve descrição de recomendações
 
 ![Insights](assets/insights.png)
 
-Toque ou clique no **Mostrar mais** para abrir o painel completo.
+Selecione o **Mostrar mais** para abrir o painel completo.
 
 No **Insights e recomendações** Você encontrará uma lista detalhada de recomendações acionáveis com um indicador de valor claro vinculado aos ganhos que podem ser esperados no desempenho, juntamente com a porcentagem de páginas afetadas. Isso permite priorizar facilmente essas recomendações para suas equipes.
 
@@ -71,7 +71,7 @@ A variável **Pontuações do farol** A guia é um resumo das pontuações do Li
 
 ![Pontuações do farol](assets/lighthouse.png)
 
-Toque ou clique no **Mostrar mais** para abrir o painel completo.
+Selecione o **Mostrar mais** para abrir o painel completo.
 
 No **Pontuações do farol** você encontrará uma exibição de tendências das várias pontuações. Selecionar **Desempenho**, **Acessibilidade**, **PWA** ou **SEO** para ver a exibição de tendência mensal desses valores.
 
@@ -87,13 +87,13 @@ A variável **Páginas** é um resumo do desempenho das páginas configuradas es
 
 ![Guia Páginas](assets/pages.png)
 
-Toque ou clique no **Mostrar mais** para abrir o painel completo.
+Selecione o **Mostrar mais** para abrir o painel completo.
 
 A variável **Páginas** A seção fornece uma lista de páginas que foram testadas e suas pontuações de desempenho mais recentes do Lighthouse e o detalhamento.
 
 ![Exibição de páginas](assets/pages-view.png)
 
-Você configura quais páginas são incluídas na auditoria de experiência ao [configurar seu pipeline.](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code)
+Você define quais páginas são incluídas na auditoria de experiência ao [configurar seu pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code).
 
 Para voltar para a página de execução do pipeline de produção, basta selecionar a seta para trás no navegador.
 
@@ -103,7 +103,7 @@ A variável **Problemas** A guia resume todos os problemas de desempenho detecta
 
 ![Guia Problemas](assets/issues.png)
 
-Toque ou clique no **Mostrar mais** para abrir o painel completo.
+Selecione o **Mostrar mais** para abrir o painel completo.
 
 No **Insights e recomendações** você encontrará uma lista mais detalhada de recomendações acionáveis com um indicador de valor claro vinculado aos ganhos que podem ser esperados no desempenho, juntamente com a porcentagem de páginas afetadas. Isso permite priorizar facilmente essas recomendações para suas equipes.
 
@@ -113,12 +113,12 @@ Para voltar para a página de execução do pipeline de produção, basta seleci
 
 ### Detalhes da página {#page-detail}
 
-Se tocar ou clicar no link de uma página em uma guia do **Auditoria de experiência** seção da guia da página de execução do pipeline ou na guia **Páginas** do painel Auditoria de experiência completa, é possível exibir os detalhes de uma página específica.
+Se você selecionar o link de uma página em uma guia do **Auditoria de experiência** seção da guia da página de execução do pipeline ou na guia **Páginas** do painel Auditoria de experiência completa, é possível exibir os detalhes de uma página específica.
 
 ![Dados da página ](assets/page-data.png)
 
 Você pode ver as pontuações de páginas individuais para um teste específico, juntamente com a alteração em relação à execução anterior do teste.
 
-Clicar nos detalhes de qualquer página individual fornece informações sobre os elementos da página que foram avaliados e orientação para corrigir problemas se forem detectadas oportunidades de melhoria.
+Clicar nos detalhes de qualquer página individual fornece informações sobre os elementos da página que foram avaliados, bem como orientação para corrigir problemas se forem detectadas oportunidades de melhoria.
 
 Para voltar para a página de execução do pipeline de produção, basta selecionar a seta para trás no navegador.

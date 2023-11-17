@@ -2,10 +2,10 @@
 title: Atributos e tipos
 description: Saiba mais sobre os atributos e tipos de dados exigidos pelo Editor universal.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 3b98543098f4125a7d7e5896e5aa46e441a40f32
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '680'
-ht-degree: 94%
+source-wordcount: '679'
+ht-degree: 92%
 
 ---
 
@@ -20,7 +20,7 @@ Para que um aplicativo possa ser editado pelo Editor universal, ele deve ser ins
 
 >[!NOTE]
 >
->A validação do conteúdo é executada no lado do servidor. O Editor universal funciona apenas com os atributos de dados. A validação para se adequar ao modelo/estrutura precisa ser abordada no nível da API.
+>A validação do conteúdo é executada no lado do servidor. O Editor universal funciona apenas com os atributos de dados. A validação de que eles se encaixam no modelo/estrutura deve ser abordada no nível da API.
 
 ## Propriedades de dados {#data-properties}
 

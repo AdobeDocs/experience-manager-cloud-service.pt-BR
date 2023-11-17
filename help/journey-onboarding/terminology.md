@@ -2,10 +2,10 @@
 title: Terminologia do AEM as a Cloud Service
 description: Antes de fazer logon no AEMaaCS, é útil compreender a terminologia do sistema e sua estrutura básica.
 exl-id: d02776a7-836a-4894-a5d5-ae88cc7e4e76
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 87%
+source-wordcount: '463'
+ht-degree: 81%
 
 ---
 
@@ -19,7 +19,7 @@ Agora que você entende o que precede o processo de integração lendo o documen
 
 O AEM as a Cloud Service é uma ferramenta poderosa e flexível e, para usá-la, você precisa se familiarizar com a forma como ela está organizada, bem como com a terminologia e a linguagem usadas para descrevê-la. Este documento resume alguns termos-chave que você precisa compreender para começar a usar o sistema.
 
-Depois de ler este documento, você compreenderá:
+Depois de ler este documento, você deverá entender
 
 * As diferentes camadas que compõem o AEMaaCS.
 * As funções básicas de cada camada.
@@ -44,7 +44,7 @@ Geralmente, um exemplo é útil na contextualização dessa hierarquia.
    * Um programa do Assets para a divisão WKND Media
 * Os programas da WKND Magazine e WKND Media teriam **ambientes** de desenvolvimento, preparo e produção.
 * **Repositórios** são usados para manter o código personalizado e os aplicativos da WKND Magazine e da WKND Media.
-* Várias **ferramentas e fluxos de trabalho** utilizam os repositórios para implantar código usando pipelines de CI/CD, registros de acesso, acesso ao AEM etc.
+* Vários **ferramentas e fluxos de trabalho** trabalhe nos repositórios para implantar código usando pipelines de CI/CD, registros de acesso, acesso ao AEM e assim por diante.
 
 ## O que vem a seguir {#what-is-next}
 

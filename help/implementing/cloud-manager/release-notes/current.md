@@ -3,10 +3,10 @@ title: Notas de versão do Cloud Manager 2023.11.0 no Adobe Experience Manager a
 description: Estas são as notas de versão do Cloud Manager 2023.11.0 no AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '745'
-ht-degree: 13%
+source-wordcount: '740'
+ht-degree: 12%
 
 ---
 
@@ -44,13 +44,13 @@ Faça parte do nosso programa de adoção antecipada e tenha a chance de testar 
 
 Se você usar o GitHub para gerenciar os repositórios, [agora você pode validar o código diretamente nos repositórios GitHub por meio do Cloud Manager.](/help/implementing/cloud-manager/managing-code/byo-github.md) Essa integração elimina a necessidade de sincronizar consistentemente o código com o repositório Adobe e permite verificar solicitações de pull antes de mesclá-las às ramificações principais.
 
-Se você estiver interessado em testar esse novo recurso e compartilhar seu feedback, envie um email para `Grp-CloudManager_BYOG@adobe.com` do endereço de email associado à Adobe ID.
+Se você estiver interessado em testar esse novo recurso e compartilhar seus comentários, envie um email para `Grp-CloudManager_BYOG@adobe.com` do endereço de email associado à Adobe ID.
 
 ### Permissões personalizadas {#custom-permissions}
 
 [Permissões personalizadas do Cloud Manager](/help/implementing/cloud-manager/custom-permissions.md) O permite criar novos perfis de permissão personalizados com permissões configuráveis para restringir o acesso a programas, pipelines e ambientes para usuários do Cloud Manager.
 
-se você estiver interessado em testar esse novo recurso e compartilhar seu feedback, envie e envie um email `Grp-CloudManager-custom-permissions@adobe.com` do endereço de email associado à Adobe ID.
+se você estiver interessado em testar esse novo recurso e compartilhar seu feedback, envie um email para `Grp-CloudManager-custom-permissions@adobe.com` do endereço de email associado à Adobe ID.
 
 ### Restauração de conteúdo de autoatendimento {#content-restore}
 
@@ -59,7 +59,7 @@ se você estiver interessado em testar esse novo recurso e compartilhar seu feed
 * Restauração de backup point-in-time nas últimas 24 horas
 * Restaurações por tempo fixo de até sete dias
 
-Se você estiver interessado em testar esse novo recurso e compartilhar seu feedback, envie um email para `aemcs-restorefrombackup-adopter@adobe.com` do email associado à Adobe ID. Observação:
+Se você estiver interessado em testar esse novo recurso e compartilhar seus comentários, envie um email para `aemcs-restorefrombackup-adopter@adobe.com` do email associado à Adobe ID.
 
 * O programa de adoção antecipada está limitado apenas a ambientes de desenvolvimento.
 * A disponibilidade do programa de adoção antecipada deste recurso é limitada.
@@ -71,7 +71,7 @@ Se você estiver interessado em testar esse novo recurso e compartilhar seu feed
 
 O painel usa o Google Lighthouse, uma ferramenta de código aberto e automatizada para melhorar a qualidade dos seus aplicativos Web. Você pode executá-la em qualquer página da Web, pública ou que exija autenticação. Ele tem auditorias de desempenho, acessibilidade, aplicativos web progressivos, SEO e muito mais.
 
-Interessado em testar o novo painel? Envie um email para `aem-lighthouse-pilot@adobe.com` do email associado à sua Adobe ID e podemos começar.
+Interessado em testar o novo painel? Enviar um email para `aem-lighthouse-pilot@adobe.com` do email associado à sua Adobe ID e podemos começar.
 
 ## Problemas conhecidos {#known-issues}
 

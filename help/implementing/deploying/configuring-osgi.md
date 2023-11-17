@@ -3,9 +3,9 @@ title: Configuração do OSGi para o Adobe Experience Manager as a Cloud Service
 description: Configuração OSGi com valores secretos e valores específicos do ambiente
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3318'
+source-wordcount: '3317'
 ht-degree: 1%
 
 ---
@@ -78,7 +78,7 @@ Os modos de execução as a Cloud Service do AEM são bem definidos com base no 
 
 Os valores de configuração OSGi especificados pelo modo de execução podem ser verificados por:
 
-1. Abrir o AEM como um ambiente Cloud Services [Console do desenvolvedor](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=pt-BR)
+1. Abrir o AEM como um ambiente Cloud Service [Console do desenvolvedor](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=pt-BR)
 1. Selecionar a(s) camada(s) de serviço a serem inspecionadas, usando o __Pod__ lista suspensa
 1. Selecionar o __Status__ guia
 1. Selecionar __Configurações__ do __Status do despejo__ lista suspensa
@@ -157,7 +157,7 @@ Sempre que definir um valor de configuração OSGi, comece com valores em linha 
 Usar somente configurações específicas do ambiente (`$[env:ENV_VAR_NAME]`) para valores de configuração não secretos quando os valores variam para o nível de visualização ou entre ambientes de desenvolvimento. Isso inclui instâncias de desenvolvimento locais e quaisquer ambientes de desenvolvimento do Adobe Experience Manager as a Cloud Service. Exceto para definir valores exclusivos para o nível de visualização, evite usar configurações específicas de ambiente não secreto para ambientes de Preparo ou Produção do Adobe Experience Manager as a Cloud Service.
 
 * Use apenas configurações específicas do ambiente não secreto para valores de configuração que diferem entre o nível de publicação e visualização, ou para valores que diferem entre ambientes de desenvolvimento, incluindo instâncias de desenvolvimento locais.
-* Além do cenário em que o nível de visualização precisa variar do nível de publicação, use os valores embutidos padrão nas configurações do OSGi para valores não secretos de Preparo e Produção. Em relação a isso, não é recomendável usar configurações específicas do ambiente para facilitar a realização de alterações de configuração no tempo de execução em ambientes de Preparo e Produção; essas alterações devem ser introduzidas por meio do gerenciamento do código-fonte.
+* Além do cenário em que o nível de visualização deve variar do nível de publicação, use os valores embutidos padrão nas configurações de OSGi para valores não secretos de Preparo e Produção. Em relação a isso, não é recomendável usar configurações específicas do ambiente para facilitar a realização de alterações de configuração no tempo de execução em ambientes de Preparo e Produção; essas alterações devem ser introduzidas por meio do gerenciamento do código-fonte.
 
 ### Quando usar valores de configuração específicos do ambiente secreto {#when-to-use-secret-environment-specific-configuration-values}
 
@@ -558,7 +558,7 @@ $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_
 
 Como os valores de configuração secretos e específicos do ambiente residem fora do Git e, portanto, não fazem parte dos mecanismos formais de implantação do Adobe Experience Manager as a Cloud Service, o cliente deve gerenciar, administrar e integrar ao processo de implantação do Adobe Experience Manager as a Cloud Service.
 
-Como mencionado acima, chamar a API implanta as novas variáveis e valores em ambientes de nuvem, de modo semelhante a um pipeline típico de implantação de código do cliente. Os serviços de criação e publicação são reiniciados e fazem referência aos novos valores, normalmente levando alguns minutos. Observe que os quality gates (portais de qualidade) e os testes que são executados pelo Cloud Manager durante uma implantação de código regular não são executados durante esse processo.
+Como mencionado acima, chamar a API implanta as novas variáveis e valores em ambientes de nuvem, de modo semelhante a um pipeline típico de implantação de código do cliente. Os serviços de criação e publicação são reiniciados e fazem referência aos novos valores, normalmente levando alguns minutos. Os quality gates (portais de qualidade) e os testes que são executados pelo Cloud Manager durante uma implantação de código regular não são executados durante esse processo.
 
 Normalmente, os clientes chamariam a API para definir variáveis de ambiente antes de implantar o código que depende delas no Cloud Manager. Em algumas situações, pode ser necessário modificar uma variável existente depois que o código já tiver sido implantado.
 

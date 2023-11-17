@@ -2,9 +2,9 @@
 title: Modernizador de repositório
 description: Saiba como reestruturar pacotes de projetos existentes e torná-los compatíveis com a estrutura do projeto definida para o Adobe Experience Manager as a Cloud Service.
 exl-id: cd9d212e-e720-4209-8b5a-659883cc1d95
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '322'
 ht-degree: 5%
 
 ---
@@ -32,7 +32,7 @@ O Repository Modernizer cria uma estrutura de projeto do AEM Cloud Service compa
 
 >[!VIDEO](https://video.tv.adobe.com/v/333057/?quality=12&learn=on)
 
-* Por meio da CLI do Adobe I/O : é recomendável usar o Repository Modernizer via `aio-cli-plugin-aem-cloud-service-migration` (Plug-in de refatoração de código as a Cloud Service AEM para a CLI do Adobe I/O).
+* Por meio da CLI do Adobe I/O : o Adobe recomenda o uso do Repository Modernizer via `aio-cli-plugin-aem-cloud-service-migration` (Plug-in de refatoração de código as a Cloud Service AEM para a CLI do Adobe I/O).
 
   Consulte **[Recurso do Git: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** para que você possa aprender a instalar e usar o plug-in.
 

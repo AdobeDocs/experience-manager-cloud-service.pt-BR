@@ -2,10 +2,10 @@
 title: Conceder acesso ao desenvolvedor de front-end
 description: Integre os desenvolvedores de front-end no Cloud Manager para que eles tenham acesso ao repositório do Git e pipeline de site do AEM.
 exl-id: 58e95c92-b859-4bb9-aa62-7766510486fd
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '784'
-ht-degree: 97%
+source-wordcount: '778'
+ht-degree: 91%
 
 ---
 
@@ -65,7 +65,7 @@ Primeiro, é necessário adicionar o desenvolvedor de front-end como usuário, u
 
    ![Perfis de produto](assets/product-profiles.png)
 
-1. Para atribuir o desenvolvedor de front-end aos perfis corretos, toque ou clique no **Usuários** e depois a guia **Adicionar usuário** botão.
+1. Para atribuir o desenvolvedor de front-end aos perfis corretos, selecione o **Usuários** e depois a guia **Adicionar usuário** botão.
 
    ![Adicionar usuário](assets/add-user.png)
 
@@ -73,11 +73,11 @@ Primeiro, é necessário adicionar o desenvolvedor de front-end como usuário, u
 
    ![Adicionar usuário à equipe](assets/add-to-team.png)
 
-1. Na seleção de **Produto**, toque ou clique no sinal de adição (+) e, em seguida, selecione **Adobe Experience Manager as a Cloud Service** e atribua os perfis de produto **Gerenciador de implantação** e **Desenvolvedor** ao usuário.
+1. No **Produto** selecione o sinal de mais e selecione **Adobe Experience Manager as a Cloud Service** e atribua a **Gerente de implantação** e **Desenvolvedor** perfis de produto para o usuário.
 
    ![Atribuir perfis de equipe](assets/assign-team.png)
 
-1. Toque ou clique em **Salvar**, e um email de boas-vindas será enviado ao desenvolvedor front-end que você adicionou como usuário.
+1. Selecionar **Salvar** e um email de boas-vindas será enviado ao desenvolvedor front-end que você adicionou como usuário.
 
 O desenvolvedor de front-end convidado pode acessar o Cloud Manager clicando no link do email de boas-vindas e fazendo logon usando sua Adobe ID.
 

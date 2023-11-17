@@ -2,9 +2,9 @@
 title: Modelos de páginas
 description: Os modelos de página são usados ao criar uma página que é usada como base para a nova página
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3287'
+source-wordcount: '3279'
 ht-degree: 8%
 
 ---
@@ -40,7 +40,7 @@ Este documento:
 
 A criação de modelos de página é feita principalmente com o [console de modelos e editor de modelos](/help/sites-cloud/authoring/features/templates.md) por um autor de modelo. Esta seção fornece uma visão geral desse processo e segue com uma descrição do que ocorre em nível técnico.
 
-Ao criar um novo modelo editável, você:
+Ao criar um modelo editável, você:
 
 1. Criar um [pasta dos modelos](#template-folders). Isso não é obrigatório, mas é uma prática recomendada.
 1. Selecione um [tipo de modelo](#template-type). Isso é copiado para criar o [definição do modelo](#template-definitions).
@@ -112,7 +112,7 @@ Ao criar um novo modelo editável, você:
 
 >[!TIP]
 >
->Nunca insira qualquer informação que precise ser internacionalizada em um modelo. Para efeitos de internalização, a [recursos de localização dos Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=pt-BR) são recomendadas.
+>Nunca insira qualquer informação que deve ser internacionalizada em um modelo. Para efeitos de internalização, a [recursos de localização dos Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=pt-BR) são recomendadas.
 
 >[!NOTE]
 >
@@ -191,13 +191,13 @@ Para criar uma pasta, faça o seguinte:
 
 1. Além das permissões e privilégios de criação padrão (por exemplo, `content-authors`) agora é necessário atribuir grupos e definir os direitos de acesso (ACLs) necessários para que os autores possam criar modelos na nova pasta.
 
-   A variável `template-authors` grupo é o grupo padrão que precisa ser atribuído. Consulte a seção [ACLs e grupos](#acls-and-groups) para obter detalhes.
+   A variável `template-authors` grupo é o grupo padrão que deve ser atribuído. Consulte a seção [ACLs e grupos](#acls-and-groups) para obter detalhes.
 
    <!--See [Access Right Management](/help/sites-administering/user-group-ac-admin.md#access-right-management) for full details on managing and assigning access rights.-->
 
 ### Usar o navegador de configuração {#using-the-configuration-browser}
 
-1. Ir para **Navegação global** -> **Ferramentas** > [**Navegador de configuração**](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
+1. Ir para **Navegação global** > **Ferramentas** > [**Navegador de configuração**](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
    As pastas existentes são listadas à esquerda, incluindo a `global` pasta.
 
@@ -211,7 +211,7 @@ Para criar uma pasta, faça o seguinte:
 
 >[!NOTE]
 >
->No [Navegador de configuração,](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) é possível editar a pasta global e ativar a variável **Modelos editáveis** opção se desejar criar templates dentro dessa pasta, no entanto, essa não é a prática recomendada.
+>No [Navegador de configuração,](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) é possível editar a pasta global e ativar a variável **Modelos editáveis** opção se quiser criar modelos dentro dessa pasta, no entanto, essa não é a prática recomendada.
 
 ### ACLs e grupos {#acls-and-groups}
 
@@ -289,9 +289,9 @@ Este padrão `template-authors` grupo abrange apenas as configurações do proje
 
 ## Tipo de modelo {#template-type}
 
-Ao criar um novo modelo, você precisa especificar um tipo de modelo:
+Ao criar um template, você precisa especificar um tipo de template:
 
-* Os tipos de modelo fornecem modelos para um modelo de maneira eficaz. Ao criar um novo modelo, a estrutura e o conteúdo inicial do tipo de modelo selecionado são usados para criar para o novo modelo.
+* Os tipos de modelo fornecem modelos para um modelo de maneira eficaz. Ao criar um modelo, a estrutura e o conteúdo inicial do tipo de modelo selecionado são usados para criar para o novo modelo.
 
    * O tipo de modelo é copiado para criar o modelo.
    * Depois que a cópia ocorre, a única conexão entre o modelo e o tipo de modelo é uma referência estática para fins de informação.
@@ -338,7 +338,7 @@ The [device groups](/help/sites-developing/mobile.md#device-groups) used for an 
 * On the editable template type
 * On the editable template
 
-When creating a new editable template, the value is copied from the template type to the individual template. If the value is not set on the type, it can be set on the template. Once a template is created, there is no inheritance from the type to the template.
+When creating an editable template, the value is copied from the template type to the individual template. If the value is not set on the type, it can be set on the template. Once a template is created, there is no inheritance from the type to the template.
 
 >[!CAUTION]
 >
@@ -432,7 +432,7 @@ Este nó retém propriedades para o modelo:
 
 Define a estrutura da página resultante:
 
-* É mesclado com o conteúdo inicial ( `/initial`) ao criar uma nova página.
+* É mesclado com o conteúdo inicial ( `/initial`) ao criar uma página.
 * As alterações feitas na estrutura são refletidas em qualquer página criada com o modelo.
 * A variável `root` ( `structure/jcr:content/root`) define a lista de componentes que estão disponíveis na página resultante.
    * Os componentes definidos na estrutura do modelo não podem ser movidos para ou excluído de qualquer página resultante.
@@ -446,7 +446,7 @@ Define a estrutura da página resultante:
 Define o conteúdo inicial que uma nova página terá após a criação:
 
 * Contém um `jcr:content` que é copiado para qualquer página nova.
-* É mesclado com a estrutura ( `/structure`) ao criar uma nova página.
+* É mesclado com a estrutura ( `/structure`) ao criar uma página.
 * Nenhuma página existente será atualizada se o conteúdo inicial for alterado após a criação.
 * A variável `root` O nó contém uma lista de componentes para definir o que está disponível na página resultante.
 * Se o conteúdo for adicionado a um componente no modo de estrutura e esse componente for subsequentemente desbloqueado (ou vice-versa), esse conteúdo será usado como conteúdo inicial.
@@ -545,7 +545,7 @@ Ao processar uma página:
 
 ### Disponibilidade de modelo {#template-availability}
 
-Ao criar uma nova página na interface de administração do site, a lista de modelos disponíveis depende do local da nova página e das restrições de posicionamento especificadas em cada modelo.
+Ao criar uma página na interface do administrador do site, a lista de modelos disponíveis depende do local da nova página e das restrições de posicionamento especificadas em cada modelo.
 
 As propriedades a seguir determinam se um modelo `T` pode ser usado para que uma nova página seja colocada como secundária da página `P`. Cada uma dessas propriedades é uma string de vários valores que contém zero ou mais expressões regulares usadas para correspondência com caminhos:
 

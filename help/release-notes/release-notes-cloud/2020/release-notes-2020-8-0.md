@@ -1,11 +1,11 @@
 ---
-title: Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0.
+title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2020.8.0.
 description: "[!DNL Adobe Experience Manager] Notas de versão as a Cloud Service para 2020.8.0."
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1038'
-ht-degree: 32%
+source-wordcount: '1036'
+ht-degree: 35%
 
 ---
 
@@ -116,7 +116,7 @@ A data de lançamento do [!UICONTROL Cloud Manager] A versão 2020.8.0 é 6 de a
 
 * A guia Auditoria de conteúdo exibia incorretamente a URL de base usando o domínio do autor em vez de o domínio de publicação.
 
-* Para ativar a etapa Auditoria de conteúdo, os usuários devem editar o pipeline e, opcionalmente, adicionar páginas. Se nenhuma página for adicionada, a página inicial será auditada.
+* Para ativar a etapa Auditoria de conteúdo, os usuários precisam editar o pipeline e também podem adicionar páginas. Se nenhuma página for adicionada, a página inicial será auditada.
 
 ## Ferramenta Transferência de conteúdo {#content-transfer-tool}
 

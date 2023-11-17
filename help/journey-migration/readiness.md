@@ -2,7 +2,7 @@
 title: Fase de preparação
 description: Saiba mais sobre as etapas necessárias para garantir que a instalação do AEM esteja pronta para ser movida para a nuvem.
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
-source-git-commit: a9aa82c8258e6a5f43680069c65518093c0baf8d
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '2066'
 ht-degree: 7%
@@ -80,7 +80,7 @@ A lista de itens na tabela abaixo é o subconjunto das alterações mais relevan
   <tr>
     <td>CDN integrada e Obter seu próprio CDN</td>
     <td></td>
-    <td>O AEM as a Cloud Service inclui a CDN para todos os ambientes, que é otimizada para a maioria dos casos de uso.<br>Se quiser configurar seu próprio CDN, você deve enviar uma solicitação ao Suporte do Adobe para que ele seja aprovado.<br>Se for aprovado, o CDN aponta para o Fastly e não para instâncias do AEM em nenhum ambiente.</td>
+    <td>O AEM as a Cloud Service inclui a CDN para todos os ambientes, que é otimizada para a maioria dos casos de uso.<br>Se quiser configurar seu próprio CDN, envie uma solicitação ao Suporte do Adobe para que ele seja aprovado.<br>Se for aprovado, o CDN aponta para o Fastly e não para instâncias do AEM em nenhum ambiente.</td>
   </tr>
   <tr>
     <td>Trabalhos de Longa Execução</td>

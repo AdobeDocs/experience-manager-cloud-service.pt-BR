@@ -2,10 +2,10 @@
 title: Variáveis de ambiente do Cloud Manager
 description: As variáveis de ambiente padrão podem ser configuradas e gerenciadas por meio do Cloud Manager e fornecidas para o ambiente de tempo de execução, a ser usado na configuração do OSGi.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1016'
-ht-degree: 96%
+source-wordcount: '1010'
+ht-degree: 85%
 
 ---
 
@@ -65,7 +65,7 @@ Um indicador com o status **Atualizando** é mostrado na parte superior da tabel
 
 >[!TIP]
 >
->Se quiser adicionar várias variáveis, é recomendado adicionar a primeira variável e usar o botão **Adicionar** na caixa de diálogo **Configuração do ambiente** para adicionar as variáveis adicionais. Dessa forma, você pode adicioná-las com uma atualização ao ambiente.
+>Se quiser adicionar várias variáveis, é recomendável adicionar a primeira variável e usar o **Adicionar** botão na caixa **Configuração do ambiente** para adicionar as variáveis adicionais. Dessa forma, você pode adicioná-las com uma atualização ao ambiente.
 
 ## Atualização de variáveis de ambiente {#update-variables}
 
@@ -88,13 +88,13 @@ Depois de criar as variáveis de ambiente, você pode atualizá-las usando o bot
 
    ![Editar variável](assets/edit-variable.png)
 
-1. Após fazer todas as alterações necessárias na configuração, selecione **Salvar**.
+1. Depois de fazer as alterações necessárias na configuração, selecione **Salvar**.
 
 [Como ocorre ao adicionar variáveis,](#add-variables) um indicador com o status **Atualizando** é mostrado na parte superior da tabela e ao lado da variável recém-atualizada para indicar que o ambiente está sendo atualizado com a configuração. Após a conclusão, as variáveis de ambiente atualizadas estarão visíveis na tabela.
 
 >[!TIP]
 >
->Se quiser atualizar várias variáveis, é recomendado usar a caixa de diálogo **Configuração do ambiente** para atualizar todas as variáveis necessárias de uma vez antes de tocar ou clicar em **Salvar**. Dessa forma, você pode adicioná-las com uma atualização ao ambiente.
+>Se você quiser atualizar várias variáveis, é recomendável usar o **Configuração do ambiente** para atualizar todas as variáveis necessárias de uma só vez antes de tocar ou clicar **Salvar**. Dessa forma, você pode adicioná-las com uma atualização ao ambiente.
 
 ## Uso de variáveis de ambiente {#using}
 

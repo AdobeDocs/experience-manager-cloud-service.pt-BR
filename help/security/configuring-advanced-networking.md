@@ -2,10 +2,10 @@
 title: Configuração de redes avançadas para o AEM as a Cloud Service
 description: Saiba como configurar recursos avançados de rede, como VPN ou um endereço IP de saída flexível ou dedicado para o AEM as a Cloud Service
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3598'
-ht-degree: 96%
+source-wordcount: '3594'
+ht-degree: 93%
 
 ---
 
@@ -195,7 +195,7 @@ Sem o recurso de endereço IP dedicado habilitado, o tráfego proveniente do AEM
 
 A configuração do endereço IP de saída dedicado é idêntica à [saída de porta flexível](#configuring-flexible-port-egress-provision).
 
-A principal diferença é que o tráfego sempre sairá de um IP dedicado e único. Para localizar esse IP, use um resolvedor de DNS para identificar o endereço IP associado a `p{PROGRAM_ID}.external.adobeaemcloud.com`. Não se espera que o endereço IP seja alterado, mas se for necessário alterá-lo no futuro, será fornecida uma notificação com antecedência.
+A principal diferença é que o tráfego sempre sairá de um IP dedicado e único. Para localizar esse IP, use um resolvedor de DNS para identificar o endereço IP associado a `p{PROGRAM_ID}.external.adobeaemcloud.com`. Não é esperado que o endereço IP mude, mas se precisar mudar no futuro, é fornecida uma notificação com antecedência.
 
 Além das regras de roteamento compatíveis com egressos flexíveis da porta no endpoint `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking`, o endereço IP de saída dedicado suporta um parâmetro `nonProxyHosts`. Isso permite declarar um conjunto de hosts que devem rotear por um intervalo de endereços IPs compartilhados em vez do IP dedicado, o que pode ser útil, pois a criação de tráfego por meio de IPs compartilhados pode ser otimizada ainda mais. Os URLs `nonProxyHost` podem seguir os padrões `example.com` ou `*.example.com`, em que o curinga é compatível somente no início do domínio.
 
@@ -336,7 +336,7 @@ Para validar se o tráfego está realmente saindo do endereço IP dedicado, como
 ## Clientes de endereço de saída dedicado herdado {#legacy-dedicated-egress-address-customers}
 
 Se você tiver sido provisionado com um IP de saída dedicado antes de 30/09/2021, seu recurso de IP de saída dedicado só será compatível com portas HTTP e HTTPS.
-Isso inclui HTTP/1.1 e HTTP/2 quando há criptografia. Além disso, um endpoint de saída dedicado pode conversar com qualquer público-alvo somente por HTTP/HTTPS nas portas 80/443, respectivamente.
+Isso inclui HTTP/1.1 e HTTP/2 quando há criptografia. Além disso, um endpoint de saída dedicado pode se comunicar com qualquer público-alvo somente por HTTP/HTTPS nas portas 80/443, respectivamente.
 
 ## VPN (Virtual Private Network) {#vpn}
 
@@ -371,7 +371,7 @@ Observe que mesmo se não houver regras de roteamento de tráfego de ambiente (h
 
 A configuração de VPN no nível do programa pode ser atualizada chamando o endpoint `PUT /api/program/<program_id>/network/<network_id>`.
 
-Observe que o espaço de endereço não pode ser alterado após o provisionamento de VPN inicial. Se isso for necessário, entre em contato com o suporte ao cliente. Além disso, o parâmetro `kind` (`flexiblePortEgress`, `dedicatedEgressIP` ou `VPN`) não pode ser modificado. Entre em contato com o suporte ao cliente para obter assistência, descrevendo o que já foi criado e o motivo da alteração.
+O espaço de endereço não pode ser alterado após o provisionamento de VPN inicial. Se isso for necessário, entre em contato com o suporte ao cliente. Além disso, o parâmetro `kind` (`flexiblePortEgress`, `dedicatedEgressIP` ou `VPN`) não pode ser modificado. Entre em contato com o suporte ao cliente para obter assistência, descrevendo o que já foi criado e o motivo da alteração.
 
 As regras de roteamento por ambiente podem ser atualizadas chamando novamente o endpoint `PUT /program/{programId}/environment/{environmentId}/advancedNetworking`, certificando-se de incluir o conjunto completo de parâmetros de configuração, em vez de um subconjunto. As atualizações de ambiente normalmente levam de 5 a 10 minutos para serem aplicadas.
 
@@ -543,7 +543,7 @@ Se o tempo de inatividade causar um impacto significativo nos negócios, entre e
 
 ## Configuração de rede avançada para regiões de publicação adicionais {#advanced-networking-configuration-for-additional-publish-regions}
 
-Ao incluir uma região adicional em um ambiente que já tem uma rede avançada configurada, o tráfego da região de publicação adicional que corresponde às regras da rede avançada será roteado por padrão pela região principal. No entanto, se a região primária ficar indisponível, o tráfego de rede avançada será interrompido se a rede avançada não tiver sido habilitada na região adicional. Se desejar otimizar a latência e aumentar a disponibilidade caso uma das regiões sofra uma interrupção, será necessário habilitar a rede avançada para as regiões de publicação adicionais. Dois cenários diferentes são descritos nas seções a seguir.
+Ao incluir uma região adicional em um ambiente que já tem uma rede avançada configurada, o tráfego da região de publicação adicional que corresponde às regras da rede avançada será roteado por padrão pela região principal. No entanto, se a região primária ficar indisponível, o tráfego de rede avançada será interrompido se a rede avançada não tiver sido habilitada na região adicional. Se você quiser otimizar a latência e aumentar a disponibilidade caso uma das regiões sofra uma interrupção, será necessário ativar a rede avançada para a(s) região(ões) de publicação adicional(is). Dois cenários diferentes são descritos nas seções a seguir.
 
 >[!NOTE]
 >
@@ -557,7 +557,7 @@ Se uma configuração de rede avançada já estiver habilitada na região princi
 
 1. Se tiver bloqueado sua infraestrutura de modo que o endereço IP dedicado do AEM seja incluído na lista de permissões, é recomendável desabilitar temporariamente todas as regras de bloqueio nessa infraestrutura. Se isso não for feito, haverá um curto período no qual as solicitações dos endereços IP da nova região serão bloqueadas por sua própria infraestrutura. Observe que isso não será necessário se você tiver bloqueado sua infraestrutura por meio de um Nome de domínio totalmente qualificado (FQDN), (`p1234.external.adobeaemcloud.com`, por exemplo), porque todas as regiões AEM geram tráfego de rede avançado do mesmo FQDN
 1. Crie a infraestrutura de rede com escopo de programa para a região secundária por meio de uma chamada POST para a API de criação de infraestrutura de rede do Cloud Manager, conforme descrito na documentação de rede avançada. A única diferença na configuração JSON do conteúdo em relação à região principal será a propriedade de região
-1. Se sua infraestrutura precisar ser bloqueada por IP para permitir o tráfego do AEM, adicione os IPs que correspondem a `p1234.external.adobeaemcloud.com`. Deve haver um por região.
+1. Se sua infraestrutura precisar ser bloqueada por IP para permitir o tráfego de AEM, adicione os IPs correspondentes `p1234.external.adobeaemcloud.com`. Deve haver um por região.
 
 #### Rede avançada ainda não configurada em nenhuma região {#not-yet-configured}
 

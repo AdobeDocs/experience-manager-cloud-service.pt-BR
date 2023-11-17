@@ -4,10 +4,10 @@ description: Saiba como criar e sincronizar Live Copies para reutilizar seu cont
 feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '4307'
-ht-degree: 99%
+source-wordcount: '4270'
+ht-degree: 95%
 
 ---
 
@@ -84,7 +84,7 @@ Para criar uma configuração de blueprint:
 
 ## Criação de uma Live Copy {#creating-a-live-copy}
 
-Há diversas maneiras de criar uma Live Copy.
+Há várias maneiras de criar uma Live Copy.
 
 ### Criação de uma Live Copy de uma página {#creating-a-live-copy-of-a-page}
 
@@ -110,11 +110,11 @@ Para criar uma Live Copy:
 
    ![Criar Live Copy](../assets/create-live-copy.png)
 
-1. Selecione a página de origem e clique ou toque em **Próximo**. Por exemplo:
+1. Selecione a página de origem e **Próxima**. Por exemplo:
 
    ![Selecionar a origem da Live Copy](../assets/live-copy-from.png)
 
-1. Especifique o caminho de destino da Live Copy (abra a pasta/página principal da Live Copy) e clique ou toque em **Próximo**.
+1. Especifique o caminho de destino da Live Copy (abra a pasta/página principal da Live Copy) e selecione **Próxima**.
 
    ![Selecionar destino da Live Copy](../assets/live-copy-to.png)
 
@@ -135,7 +135,7 @@ Para criar uma Live Copy:
    * Não selecionado: cria uma Live Copy que inclui todos os descendentes da página selecionada (Live Copy profunda)
 
 1. (Opcional) Para especificar uma ou mais configurações de implantação a serem usadas na Live Copy, use a lista suspensa **Configurações de implantação** para selecioná-las. As configurações selecionadas serão exibidas abaixo do seletor da lista suspensa.
-1. Clique ou toque em **Criar**. Uma mensagem de confirmação será exibida, e daqui será possível selecionar **Abrir** ou **Concluído**.
+1. Selecione **Criar**. Uma mensagem de confirmação será exibida, e daqui será possível selecionar **Abrir** ou **Concluído**.
 
    >[!NOTE]
    >
@@ -169,9 +169,9 @@ Para criar uma Live Copy de um site a partir de uma configuração de blueprint:
 
    ![Criar site a partir de blueprint](../assets/create-site-from-blueprint.png)
 
-1. Use o seletor de **Idiomas iniciais** para especificar o(s) idioma(s) do site do blueprint a serem usados na Live Copy.
+1. Use o **Idiomas iniciais** seletor para especificar os idiomas do site do blueprint a serem usados na Live Copy.
 
-   Todos os idiomas disponíveis estão selecionados por padrão. Para remover um idioma, clique ou toque no botão **X** que aparece ao lado do idioma.
+   Todos os idiomas disponíveis estão selecionados por padrão. Para remover um idioma, selecione a **X** que aparece ao lado do idioma.
 
    Por exemplo:
 
@@ -217,7 +217,7 @@ As páginas de blueprint (referenciadas em uma configuração de blueprint) forn
 
 ## Sincronização da Live Copy {#synchronizing-your-live-copy}
 
-Há diversas maneiras de sincronizar a Live Copy.
+Há várias maneiras de sincronizar a Live Copy.
 
 ### Implantação de um blueprint {#rolling-out-a-blueprint}
 
@@ -252,7 +252,7 @@ As implantações são processadas como processos assíncronos e podem ser verif
 1. No console do **Sites**, selecione a página na Live Copy e abra o painel **[Referências](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** (na barra de ferramentas).
 1. Selecione a opção **Blueprint** na lista para mostrar os blueprints associados a esta página.
 1. Selecione o blueprint desejado na lista.
-1. Clique ou toque em **Implantação**.
+1. Selecione **Implantação**.
 
    ![Implantação do blueprint a partir do painel de referências](../assets/rollout-blueprint-from-references.png)
 
@@ -305,7 +305,7 @@ Sincronize uma Live Copy para extrair as alterações da origem para a Live Copy
 
 1. No console **Sites**, selecione a página da Live Copy e abra as propriedades.
 1. Abra a guia **Live Copy**.
-1. Clique ou toque em **Sincronizar**.
+1. Selecionar **Sincronizar**.
 
    ![Botão Sincronizar](../assets/synchronize.png)
 
@@ -368,7 +368,7 @@ Você pode suspender a herança da Live Copy de uma página de Live Copy para po
 Para suspender a herança em uma página:
 
 1. Abra as propriedades da página de Live Copy usando o comando **Propriedades de exibição** do console **Sites** ou usando **Informações da página** na barra de ferramentas da página.
-1. Clique ou toque na guia **Live Copy**.
+1. Selecione a guia **Live Copy**.
 1. Selecione **Suspender** na barra de ferramentas. Em seguida, é possível selecionar:
 
    * **Suspender**: para suspender somente a página atual.
@@ -451,7 +451,7 @@ Em uma Live Copy já existente, é possível alterar a profundidade de uma pági
 Para especificar ou alterar a profundidade:
 
 1. Abra as propriedades da página de Live Copy usando o comando **Propriedades da exibição** do console **Sites** ou usando **Informações da página** na barra de ferramentas da página.
-1. Clique ou toque na guia **Live Copy**.
+1. Selecione a guia **Live Copy**.
 1. Na seção **Configuração**, defina ou limpe a opção **Herança da Live Copy** dependendo se as páginas filhas estão incluídas:
 
    * Marcado — uma Live Copy profunda (as páginas secundárias estão incluídas)
@@ -463,7 +463,7 @@ Para especificar ou alterar a profundidade:
    >
    >Consulte [Live Copies — Composição](overview.md#live-copies-composition) para obter mais informações.
 
-1. Clique ou toque em **Salvar** para manter suas atualizações.
+1. Selecionar **Salvar** para continuar com suas atualizações.
 
 ### Cancelar herança de um Componente {#cancelling-inheritance-for-a-component}
 
@@ -475,11 +475,11 @@ Cancele a herança da Live Copy de um componente para que ele não seja mais sin
 
 Cancelar a herança para alterar o conteúdo do componente ou excluir o componente:
 
-1. Clique ou toque no componente para o qual deseja cancelar a herança.
+1. Selecione o componente para o qual deseja cancelar a herança.
 
    ![Herança na barra de ferramentas do componente](../assets/inheritance-toolbar.png)
 
-1. Na barra de ferramentas do componente, clique ou toque no ícone **Cancelar herança**.
+1. Na barra de ferramentas do componente, selecione a **Cancelar herança** ícone.
 
    ![Ícone Cancelar herança](../assets/cancel-inheritance-icon.png)
 
@@ -489,7 +489,7 @@ Cancelar a herança para alterar o conteúdo do componente ou excluir o componen
 
 ### Ativar novamente a herança de um componente {#re-enabling-inheritance-for-a-component}
 
-Para habilitar a herança de um componente, clique ou toque no ícone **Reativar herança** na barra de ferramentas do componente.
+Para habilitar a herança de um componente, selecione o **Reativar herança** ícone na barra de ferramentas do componente.
 
 ![Ícone Reativar herança](../assets/re-enable-inheritance-icon.png)
 
@@ -530,15 +530,15 @@ Posteriormente, você pode reativar a herança de uma propriedade, se necessári
 >Quando você reativa a herança, a propriedade da página de Live Copy não é sincronizada automaticamente com a propriedade de origem. Você pode solicitar manualmente uma sincronização, se necessário.
 
 1. Abra as propriedades da página de Live Copy usando a opção **Propriedades de exibição** do console **Sites** ou do ícone **Informações da página** na barra de ferramentas da página.
-1. Para cancelar a herança de uma propriedade, clique ou toque no ícone de link exibido à direita da propriedade.
+1. Para cancelar a herança de uma propriedade, selecione o ícone de link que aparece à direita da propriedade.
 
    ![Botão Cancelar herança](../assets/cancel-inheritance-button.png)
 
-1. No caixa de diálogo de confirmação **Cancelar herança**, clique ou toque em **Sim**.
+1. No **Cancelar herança** caixa de diálogo de confirmação, selecione **Sim**.
 
 ### Reverter propriedades de uma página Live Copy {#revert-properties-of-a-live-copy-page}
 
-Para habilitar a herança de uma propriedade, clique ou toque no ícone **Reverter herança** que aparece ao lado da propriedade.
+Para habilitar a herança de uma propriedade, selecione a variável **Reverter herança** ícone que aparece ao lado da propriedade.
 
 ![Botão Reverter herança](../assets/revert-inheritance-button.png)
 
@@ -635,7 +635,7 @@ Há implicações com relação ao local na árvore em que você usa **Desanexar
 
 Para desanexar uma Live Copy:
 
-1. No console do **Sites**, selecione a página Live Copy e clique ou toque em **Propriedades de exibição**.
+1. No console do **Sites**, selecione a página Live Copy e selecione **Propriedades de exibição**.
 1. Abra a guia **Live Copy**.
 1. Na barra de ferramentas, selecione **Desanexar**.
 

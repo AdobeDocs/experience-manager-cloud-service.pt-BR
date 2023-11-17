@@ -2,10 +2,10 @@
 title: Saiba mais sobre como usar referências em Fragmentos de conteúdo
 description: Saiba mais sobre como usar referências em Fragmentos de conteúdo para conteúdo, outros fragmentos e outros ativos (mídia). Apresente a necessidade e a mecânica de fragmentos aninhados para a criação de CMS headless.
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '710'
-ht-degree: 92%
+source-wordcount: '708'
+ht-degree: 91%
 
 ---
 
@@ -58,7 +58,7 @@ Por exemplo, você pode ter os seguintes modelos de fragmento de conteúdo defin
 * Pessoa
 * Prêmios
 
-Parece muito simples, porém é claro que uma empresa conta com um CEO, mas também com funcionários....e todos são definidos como uma Pessoa.
+Parece muito simples, mas uma empresa tem um CEO e funcionários...e todos são definidos como uma Pessoa.
 
 E uma pessoa pode ter um prêmio (ou talvez dois).
 

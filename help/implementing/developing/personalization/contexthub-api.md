@@ -2,9 +2,9 @@
 title: Referência da API JavaScript do ContextHub
 description: A API JavaScript do ContextHub estará disponível para seus scripts quando o componente ContextHub for adicionado à página
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '4620'
+source-wordcount: '4612'
 ht-degree: 2%
 
 ---
@@ -403,7 +403,7 @@ Um objeto que representa a resposta bruta.
 
 #### getServiceDetails() {#getservicedetails}
 
-Recupera o objeto de serviço para este objeto ContextHub.Store.JSONPStore. O objeto de serviço contém todas as informações necessárias para criar o URL do serviço.
+Recupera o objeto de serviço para este objeto ContextHub.Store.JSONPStore. O objeto de serviço contém as informações necessárias para criar a URL do serviço.
 
 ##### Devoluções {#returns-getservicedetails}
 

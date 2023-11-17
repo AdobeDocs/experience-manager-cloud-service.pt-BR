@@ -2,10 +2,10 @@
 title: O que é diferente e quais são as novidades - Adobe Experience Manager as a Cloud Service
 description: O que é diferente e quais são as novidades - Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1895'
-ht-degree: 98%
+source-wordcount: '1889'
+ht-degree: 94%
 
 ---
 
@@ -36,13 +36,13 @@ Existem diferenças intrínsecas entre estas abordagens anteriores e o AEM as a 
 
 >[!NOTE]
 >
->Para obter mais detalhes sobre as versões no local e o Managed Service, consulte o conjunto de documentações para o [AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=pt-BR).
+>Para obter mais detalhes sobre as versões no local e o Managed Service, consulte a [Documentação do AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=pt-BR) .
 
 ## Arquitetura {#architecture}
 
 >[!NOTE]
 >
->Para mais detalhes, consulte [Arquitetura](/help/overview/architecture.md).
+>Para obter mais detalhes, consulte [Arquitetura](/help/overview/architecture.md).
 
 O AEM as a Cloud Service agora tem:
 
@@ -87,7 +87,7 @@ Há dois tipos de atualizações de versão do AEM:
 
 >[!TIP]
 >
->Para mais detalhes, consulte as [Atualizações de versão do AEM](/help/implementing/deploying/aem-version-updates.md).
+>Para obter mais detalhes, consulte [Atualizações de versão do AEM](/help/implementing/deploying/aem-version-updates.md).
 
 ## Cloud Manager {#cloud-manager}
 
@@ -224,7 +224,7 @@ As operações para o AEM as a Cloud Service também são suportadas por uma nov
 
 >[!NOTE]
 >
->Para obter mais detalhes, consulte [Segurança - Suporte IMS](/help/security/ims-support.md).
+>Consulte [Segurança - Suporte IMS](/help/security/ims-support.md).
 
 Uma mudança importante do AEM as a Cloud Service é o uso totalmente integrado de Adobe IDs para acessar o nível do autor.
 
@@ -240,7 +240,7 @@ Isso combina os benefícios de:
 
 >[!NOTE]
 >
->Para obter mais detalhes, o [Manuseio básico](/help/sites-cloud/authoring/getting-started/basic-handling.md) é um bom ponto de partida.
+>Para obter mais detalhes, a [Manuseio básico](/help/sites-cloud/authoring/getting-started/basic-handling.md) é um bom ponto de partida.
 
 Os princípios básicos da interface (UI) de criação, tanto para o Sites quanto para o Assets, serão reconhecíveis a qualquer pessoa que já tenha usado o AEM no passado.
 
@@ -274,6 +274,6 @@ Para obter mais informações, consulte:
 
 >[!TIP]
 >
->Depois de ver uma visão geral do AEM as a Cloud Service, será possível integrar-se rapidamente revisando a [Jornada de integração](/help/journey-onboarding/overview.md).
+>Quando você tiver uma visão geral do AEM as a Cloud Service, poderá integrar-se rapidamente revisando o [Jornada integrada](/help/journey-onboarding/overview.md).
 >
 >Já integrado ou pronto para mergulhar nos recursos de AEM de teste? Instale o [Complemento de demonstrações de referência do AEM](/help/journey-sites/demos-add-on/overview.md) para explorar recursos avançados do AEM usando exemplos bem colocados.

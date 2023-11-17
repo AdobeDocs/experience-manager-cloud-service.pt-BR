@@ -2,10 +2,10 @@
 title: Gerenciamento de projetos
 description: O console de Projetos permite organizar o projeto, agrupando os recursos em uma única entidade que pode ser acessada e gerenciada no próprio console
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '892'
-ht-degree: 99%
+source-wordcount: '876'
+ht-degree: 84%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 99%
 
 O console de projetos permite organizar o projeto agrupando recursos em uma única entidade.
 
-No console **Projetos**, é possível acessar e executar ações em seus projetos:
+No **Projetos** console, você acessa e age em seus projetos:
 
 ![O console de Projetos](/help/sites-cloud/authoring/assets/projects-console.png)
 
@@ -33,7 +33,7 @@ O AEM fornece esses modelos desde o início para você escolher ao criar um proj
 
 O procedimento de criação de um projeto é o mesmo em todos os projetos. A diferença entre os tipos de projetos inclui [funções de usuário](/help/sites-cloud/authoring/projects/overview.md) e [fluxos de trabalho](/help/sites-cloud/authoring/projects/workflows.md) disponíveis.  Para criar um projeto:
 
-1. Em **Projetos**, toque/clique em **Criar** para abrir o assistente **Criar projeto**:
+1. Entrada **Projetos**, selecione **Criar** para abrir o **Criar projeto** assistente:
 1. Selecione um modelo e clique em **Próximo**.
 
    ![Criação de um projeto](/help/sites-cloud/authoring/assets/projects-create.png)
@@ -42,7 +42,7 @@ O procedimento de criação de um projeto é o mesmo em todos os projetos. A dif
 
    ![Adicionar detalhes do projeto](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
-1. Toque/clique em **Criar**. Você é solicitado(a) a confirmar se deseja abrir o novo projeto ou retornar ao console.
+1. Selecione **Criar**. Você é solicitado(a) a confirmar se deseja abrir o novo projeto ou retornar ao console.
 
 ### Associar recursos ao projeto {#associating-resources-with-your-project}
 
@@ -51,7 +51,7 @@ Visto que os projetos permitem agrupar recursos em uma única entidade, você de
 Para associar recursos ao projeto:
 
 1. Abra o projeto no console **Projetos**.
-1. Toque/clique em **Adicionar bloco** e selecione o bloco que deseja vincular ao seu projeto. É possível selecionar vários tipos de mosaicos.
+1. Selecionar **Adicionar mosaico** e selecione o bloco que deseja vincular ao projeto. É possível selecionar vários tipos de mosaicos.
 
    ![Adicionar um bloco a um projeto](/help/sites-cloud/authoring/assets/projects-add-tile.png)
 
@@ -59,7 +59,7 @@ Para associar recursos ao projeto:
    >
    >Os blocos que podem ser associados a um projeto são descritos mais detalhadamente em [Blocos de projeto](/help/sites-cloud/authoring/projects/overview.md#project-tiles).
 
-1. Toque/clique em **Criar**. O recurso é vinculado ao seu projeto e a partir de agora é possível acessá-lo do próprio projeto.
+1. Selecione **Criar**. O recurso é vinculado ao seu projeto e a partir de agora é possível acessá-lo do próprio projeto.
 
 ### Excluir um vínculo de projeto ou recurso {#deleting-a-project-or-resource-link}
 
@@ -71,13 +71,13 @@ O mesmo método é usado para excluir um projeto do console ou um recurso vincul
    * Para excluir um vínculo de recurso em um projeto, abra o projeto no console **Projetos**.
 
 1. Entre no modo de seleção clicando em **Selecionar** e selecionando o vínculo do projeto ou do recurso.
-1. Toque/clique em **Excluir**.
+1. Selecione **Excluir**.
 
-1. Você precisa confirmar a exclusão na caixa de diálogo. Se confirmado, o link do projeto ou do recurso será excluído. Toque/clique em **Desmarcar** para sair do modo de seleção.
+1. Você precisa confirmar a exclusão na caixa de diálogo. Se confirmado, o link do projeto ou do recurso será excluído. Selecionar **Desmarcar** para sair do modo de seleção.
 
 >[!NOTE]
 >
->Ao criar o projeto e adicionar usuários às várias funções, os grupos associados ao projeto são criados automaticamente para gerenciar as permissões associadas. Por exemplo, um projeto chamado Myproject teria três grupos: **Proprietários do Myproject**, **Editores do Myproject**, **Observadores do Myproject**. No entanto, se o projeto for excluído, esses grupos não serão excluídos automaticamente. Um administrador precisa excluir manualmente os grupos em **Ferramentas** > **Segurança** > **Grupos**.
+>Ao criar o projeto e adicionar usuários às várias funções, os grupos associados ao projeto são criados automaticamente para gerenciar as permissões associadas. Por exemplo, um projeto chamado Myproject teria três grupos: **Proprietários do Myproject**, **Editores do Myproject**, **Observadores do Myproject**. No entanto, se o projeto for excluído, esses grupos não serão excluídos automaticamente. Um administrador deve excluir manualmente os grupos em **Ferramentas** > **Segurança** > **Grupos**.
 
 ### Adicionar itens a um bloco {#adding-items-to-a-tile}
 
@@ -85,11 +85,11 @@ Talvez você queira adicionar mais de um item em alguns blocos. Por exemplo, voc
 
 Para adicionar itens a um bloco:
 
-1. Em **Projetos**, navegue até o projeto e toque ou clique na divisa para baixo no bloco ao qual deseja adicionar um item.
+1. Entrada **Projetos**, navegue até o projeto e selecione a divisa para baixo no bloco ao qual deseja adicionar um item.
 
    ![Adicionar item a um bloco](/help/sites-cloud/authoring/assets/project-workflows.png)
 
-1. Adicione um item ao bloco como você faria ao criar um novo bloco. Os blocos do projeto estão descritos [aqui](/help/sites-cloud/authoring/projects/overview.md#project-tiles). Neste exemplo, outro fluxo de trabalho foi adicionado.
+1. Adicione um item ao bloco da mesma maneira que você faria ao criar um bloco. Os blocos do projeto estão descritos [aqui](/help/sites-cloud/authoring/projects/overview.md#project-tiles). Neste exemplo, outro fluxo de trabalho foi adicionado.
 
 ### Abrir um bloco {#opening-a-tile}
 
@@ -97,7 +97,7 @@ Você pode querer ver quais itens estão incluídos no bloco atual, ou modificar
 
 Para abrir um bloco e visualizar ou modificar itens:
 
-1. No console Projetos, toque/clique no ícone de reticências (...) na parte inferior do cartão.
+1. No console Projetos, selecione o ícone de reticências (...) na parte inferior do cartão.
 
    ![Abrir um bloco](/help/sites-cloud/authoring/assets/project-links.png)
 
@@ -111,7 +111,7 @@ Você pode exibir as estatísticas do projeto no console de **Projetos**.
 
 ### Visualizar uma linha do tempo do projeto {#viewing-a-project-timeline}
 
-A linha do tempo do projeto fornece informações sobre quando os ativos do projeto foram usados pela última vez. Para exibir a linha do tempo do projeto, clique/toque em **Linha do tempo**, entre no modo de seleção e selecione o projeto. Os ativos são exibidos no painel esquerdo. Toque/clique em **Linha do tempo** para voltar ao console de **Projetos**.
+A linha do tempo do projeto fornece informações sobre quando os ativos do projeto foram usados pela última vez. Para exibir a linha do tempo do projeto, selecione **Linha do tempo**, entre no modo de seleção e selecione o projeto. Os ativos são exibidos no painel esquerdo. Selecionar **Linha do tempo** para retornar ao **Projetos** console.
 
 ![Linha do tempo do projeto](/help/sites-cloud/authoring/assets/projects-timeline.png)
 
@@ -137,9 +137,9 @@ Para inativar (ou ativar) um projeto:
    >
    Talvez seja necessário adicionar esse bloco se ele ainda não estiver no projeto. Consulte [Adicionar blocos](#adding-items-to-a-tile).
 
-1. Toque/clique em **Editar**.
+1. Selecione **Editar**.
 1. Altere o seletor de **Ativo** para **Inativo** (ou vice-versa).
 
    ![Ativar um projeto](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
-1. Toque/clique em **Concluído** para salvar as alterações.
+1. Selecionar **Concluído** para salvar as alterações.

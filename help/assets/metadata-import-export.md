@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '688'
-ht-degree: 13%
+source-wordcount: '686'
+ht-degree: 12%
 
 ---
 
@@ -70,8 +70,8 @@ Alguns casos de uso para exportar metadados em massa são:
 
 1. No **[!UICONTROL Propriedades a serem exportadas]** especifique se deseja exportar todas as propriedades ou propriedades específicas. Se você escolher Propriedades seletivas para serem exportadas, adicione as propriedades desejadas.
 
-1. Na barra de ferramentas, toque/clique **[!UICONTROL Exportar]**. Uma mensagem confirma que os metadados foram exportados. Feche a mensagem.
-1. Abra a notificação da caixa de entrada do trabalho de exportação. Selecione o trabalho e clique em **[!UICONTROL Abrir]** na barra de ferramentas. Para baixar o arquivo CSV com os metadados, toque/clique em **[!UICONTROL Download de CSV]** na barra de ferramentas. Clique em **[!UICONTROL Fechar]**.
+1. Na barra de ferramentas, selecione **[!UICONTROL Exportar]**. Uma mensagem confirma que os metadados foram exportados. Feche a mensagem.
+1. Abra a notificação da caixa de entrada do trabalho de exportação. Selecione o trabalho e clique em **[!UICONTROL Abrir]** na barra de ferramentas. Para baixar o arquivo CSV com os metadados, selecione **[!UICONTROL Download do CSV]** na barra de ferramentas. Clique em **[!UICONTROL Fechar]**.
 
    ![Caixa de diálogo para baixar o arquivo CSV que contém metadados exportados em massa](assets/csv_download.png)
 
@@ -94,4 +94,3 @@ Alguns casos de uso para exportar metadados em massa são:
 >[!MORELIKETHIS]
 >
 >* [Importar metadados ao importar ativos em massa](/help/assets/add-assets.md#asset-bulk-ingestor)
-

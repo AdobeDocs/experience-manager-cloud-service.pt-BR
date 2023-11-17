@@ -3,13 +3,13 @@ title: Fragmentos de conteúdo - Considerações sobre a exclusão
 description: Analise essas considerações importantes antes de definir as políticas de exclusão de fragmentos de conteúdo no AEM. Os fragmentos de conteúdo são uma ferramenta eficiente para fornecer conteúdo headless, e as implicações de excluí-los devem ser cuidadosamente consideradas.
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
+exl-id: d1726bff-3aa8-4758-bee7-0cacea1f660a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '450'
 ht-degree: 57%
 
 ---
-
 
 # Excluir considerações para fragmentos de conteúdo {#delete-considerations-content-fragments}
 
@@ -23,14 +23,14 @@ Com relação às permissões de exclusão, os fragmentos de conteúdo devem ser
 
 1. **O fragmento do conteúdo como uma única entidade.**
 
-   * **Caso de uso**: um usuário que precisa editar/atualizar um fragmento de conteúdo - **e excluir um fragmento inteiro**.
+   * **Caso de uso**: um usuário que deve editar/atualizar um fragmento de conteúdo - **e excluir um fragmento inteiro**.
    * **Permissões**: a permissão de exclusão pode ser atribuída por meio do gerenciamento de usuários e/ou de grupos.
 
 2. **As várias subentidades que compõem um fragmento de conteúdo; por exemplo, variações, nós secundários.**
 
    A operação básica do editor de Fragmento de conteúdo requer que esses subelementos transitórios possam ser excluídos. Por exemplo, ao manipular variações; também ao editar metadados ou gerenciar conteúdo associado.
 
-   * **Caso de uso**: um usuário que precisa editar/atualizar um fragmento de conteúdo - **sem ter permissão para excluir um fragmento inteiro**.
+   * **Caso de uso**: um usuário que deve editar/atualizar um fragmento de conteúdo - **sem ter permissão para excluir um fragmento inteiro**.
    * **Permissões**: consulte [Permissões necessárias somente para funcionalidade de edição](#permissions-required-for-editor-functionality-only).
 
 >[!NOTE]
@@ -76,4 +76,3 @@ Os pré-requisitos de permissões para permitir que um usuário e/ou grupo espec
 * Para todos os nós abaixo de `jcr:content` de todos os fragmentos de conteúdo:
 
    * `jcr:addChildNodes`, `jcr:modifyProperties`, e `jcr:removeChildNodes`, `jcr:removeNode`
-

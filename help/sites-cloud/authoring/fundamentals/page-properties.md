@@ -2,10 +2,10 @@
 title: Editar as propriedades da página
 description: Saiba como definir as propriedades necessárias para gerenciar uma página no AEM.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2280'
-ht-degree: 96%
+source-wordcount: '2270'
+ht-degree: 94%
 
 ---
 
@@ -87,9 +87,9 @@ As propriedades são distribuídas por várias guias.
   >* Não é compatível com padrões de regex.
   >* Não deve ser definido como uma página existente.
 
-   * **Adicionar** - toque ou clique para mostrar um campo e definir uma URL personalizada para a página.
-      * Toque ou clique novamente para adicionar vários.
-      * Toque ou clique no ícone **Remover** para excluir o URL personalizado.
+   * **Adicionar** - Selecione para mostrar um campo e definir uma URL personalizada para a página.
+      * Selecione novamente para adicionar vários.
+      * Selecione o **Remover** ícone para excluir o URL personalizado.
    * **Redirecionar URL personalizado** - indica se você deseja que a página use o URL personalizado.
 
 ### Avançado  {#advanced}
@@ -105,7 +105,7 @@ As propriedades são distribuídas por várias guias.
       * Por exemplo: se você definir um pseudônimo de `private` para a página `/content/wknd/us/en/magazine/members-only`, essa página poderá ser acessada por meio de `/content/wknd/us/en/magazine/private`
       * A criação de um pseudônimo define a propriedade de `sling:alias` no nó da página, que afeta apenas o recurso, não o caminho do repositório.
       * Páginas acessadas por pseudônimos no editor não podem ser publicadas. As [Opções de publicação](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) no editor só estão disponíveis para páginas acessadas por meio de seus caminhos de fato.
-      * Para obter mais detalhes, consulte [Nomes de páginas localizados em Práticas recomendadas de gerenciamento de SEO e URL](/help/overview/seo-and-url-management.md#localized-page-names).
+      * Consulte [Nomes de página localizados em SEO e Práticas recomendadas de gerenciamento de URL](/help/overview/seo-and-url-management.md#localized-page-names).
 
 * **Configuração**
 
@@ -147,7 +147,7 @@ As propriedades são distribuídas por várias guias.
 
 * **Imagem em destaque**
 
-  Selecione e configure a imagem a ser colocada em destaque. Isso é usado em componentes que fazem referência à página; por exemplo, teasers, listas de páginas etc.
+  Selecione e configure a imagem a ser colocada em destaque. Isso é usado em componentes que fazem referência à página; por exemplo, teasers, listas de páginas e assim por diante.
 
    * **Imagem**
 
@@ -237,7 +237,7 @@ Por meio de uma configuração simples, um autor de conteúdo agora pode ativar 
 
 >[!NOTE]
 >
->Para obter mais detalhes, consulte [Ativação de recursos do aplicativo web progressivo](/help/sites-cloud/authoring/features/enable-pwa.md).
+>Consulte [Habilitar Recursos Progressivos do Aplicativo Web](/help/sites-cloud/authoring/features/enable-pwa.md).
 
 * **Configurar experiência instalável**
 

@@ -2,10 +2,10 @@
 title: Sistema de estilos
 description: O sistema de estilos permite ao autor do modelo definir classes de estilo na política de conteúdo de um componente para que autores de conteúdo possam selecioná-las ao editarem o componente em uma página. Esses estilos podem ser variações visuais alternativas de um componente, tornando-o mais flexível.
 exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1319'
-ht-degree: 98%
+source-wordcount: '1317'
+ht-degree: 88%
 
 ---
 
@@ -17,7 +17,7 @@ Isso elimina a necessidade de desenvolver um componente personalizado para cada 
 
 ## Caso de uso  {#use-case}
 
-Autores(as) de modelos não precisam apenas configurar como os componentes funcionam para autores(as) de conteúdo, mas também configurar diversas variações visuais de um componente.
+Os autores de modelo não precisam apenas da capacidade de configurar como os componentes funcionam para os autores de conteúdo, mas também de configurar várias variações visuais alternativas de um componente.
 
 Da mesma forma, autores(as) de conteúdo precisam não apenas da capacidade de estruturar e organizar seu conteúdo, mas também de escolher como ele será apresentado visualmente.
 
@@ -60,10 +60,10 @@ Para demonstrar o recurso, usaremos como exemplo a implementação da [WKND](htt
 
 As seções a seguir, [Como um autor de conteúdo](#as-a-content-author) e [Como um autor de modelo](#as-a-template-author) descrevem como testar a funcionalidade do Sistema de estilos usando o Sistema de estilos da WKND.
 
-Se você desejar usar o Sistema de estilos em seus próprios componentes, faça o seguinte:
+Se você quiser usar o Sistema de estilos em seus próprios componentes, faça o seguinte:
 
 1. Instale o CSS como bibliotecas de clientes, conforme discutido na seção [Visão geral](#overview).
-1. Configure as classes CSS que deseja disponibilizar para autores(as) de conteúdo, conforme descrito na seção [Como autor(a) de modelo](#as-a-template-author).
+1. Configure as classes CSS que você deseja disponibilizar para os autores de conteúdo, conforme descrito na seção [Como autor de modelo](#as-a-template-author).
 1. Autores(as) de conteúdo podem usar os estilos conforme descrito na seção [Como autor(a) de conteúdo](#as-a-content-author).
 
 ### Como autor de conteúdo  {#as-a-content-author}
@@ -73,7 +73,7 @@ Se você desejar usar o Sistema de estilos em seus próprios componentes, faça 
 
    ![Sistema de estilos do autor](/help/sites-cloud/authoring/assets/style-system-author1.png)
 
-1. Toque ou clique no botão **Estilos** na barra de ferramentas do componente **Lista** para abrir o menu de estilos e alterar a aparência do componente.
+1. Selecione o **Estilos** na barra de ferramentas do **Lista** para abrir o menu estilo e alterar a aparência do componente.
 
    ![Seleção de estilos](/help/sites-cloud/authoring/assets/style-system-author2.png)
 
@@ -83,7 +83,7 @@ Se você desejar usar o Sistema de estilos em seus próprios componentes, faça 
 
 ### Como autor de modelo  {#as-a-template-author}
 
-1. Ao editar a página inicial mestre em inglês do WKND em `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, edite o modelo da página em **Informações da página -> Editar modelo**.
+1. Ao editar a página inicial principal no idioma inglês da WKND em `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, edite o modelo da página pelo **Informações da página > Editar modelo**.
 
    ![Editar modelo](/help/sites-cloud/authoring/assets/style-system-edit-template.png)
 
@@ -159,4 +159,4 @@ Evite definir nomes de elementos para estilos que podem ser combinados. Quando v
 
 Essa capacidade de definir nomes de estilo é útil para componentes genéricos, como o container de layout ou o componente de fragmento de conteúdo, pois concede um significado adicional a eles.
 
-Por exemplo, isso permite que um container de layout receba uma semântica como `<main>`, `<aside>`, `<nav>` etc.
+Por exemplo, permite que um Contêiner de layout receba uma semântica como `<main>`, `<aside>`, `<nav>`e assim por diante.

@@ -2,10 +2,10 @@
 title: Publicação de conteúdo com o Editor universal
 description: Saiba como o Editor universal publica o conteúdo e como seus aplicativos podem lidar com esse conteúdo.
 exl-id: aee34469-37c2-4571-806b-06c439a7524a
-source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 100%
+source-wordcount: '359'
+ht-degree: 94%
 
 ---
 
@@ -34,4 +34,4 @@ Outra opção é implantar o aplicativo em dois ambientes configurados de forma 
 
 O Editor universal não impõe nenhum padrão específico, de modo que a implementação possa alcançar melhor os seus objetivos de uma forma totalmente dissociada, mantendo um processo simples e direto para a implementação.
 
-Da mesma forma, o Editor universal não estabelece nenhum requisito sobre como um projeto específico deve se comportar ao determinar de qual camada fornecer o conteúdo. Em vez disso, ele proporciona várias possibilidades e permite que o projeto determine qual solução é a melhor para seus próprios requisitos.
+Da mesma forma, o Editor universal não estabelece nenhum requisito sobre como um projeto específico deve se comportar ao determinar de qual camada fornecer o conteúdo. Em vez disso, permite várias possibilidades e que o projeto determine qual solução é a melhor para suas próprias necessidades.

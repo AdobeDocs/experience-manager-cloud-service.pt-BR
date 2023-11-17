@@ -2,10 +2,10 @@
 title: Ambiente de compilação
 description: Saiba mais sobre o ambiente de compilação do Cloud Manager e como ele cria e testa seu código.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1005'
-ht-degree: 95%
+source-wordcount: '1004'
+ht-degree: 94%
 
 ---
 
@@ -179,7 +179,7 @@ Quando usado em um arquivo `pom.xml` do Maven, normalmente é útil mapear essas
 
 ## Instalação de pacotes de sistema adicionais {#installing-additional-system-packages}
 
-Algumas compilações exigem a instalação de pacotes de sistema adicionais para funcionarem plenamente. Por exemplo, uma build pode invocar um script Python ou Ruby e precisa ter um interpretador de linguagem apropriado instalado. Faça isso chamando [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/) em seu `pom.xml` para invocar o APT. Essa execução geralmente deve ser encapsulada em um perfil Maven específico do Cloud Manager. Este exemplo instala o Python.
+Algumas compilações exigem a instalação de pacotes de sistema adicionais para funcionarem plenamente. Por exemplo, uma compilação pode invocar um script Python ou Ruby e deve ter um interpretador de linguagem apropriado instalado. Faça isso chamando [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/) em seu `pom.xml` para invocar o APT. Essa execução geralmente deve ser encapsulada em um perfil Maven específico do Cloud Manager. Este exemplo instala o Python.
 
 ```xml
         <profile>

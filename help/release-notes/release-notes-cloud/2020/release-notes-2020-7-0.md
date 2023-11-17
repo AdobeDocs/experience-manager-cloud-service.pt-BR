@@ -2,10 +2,10 @@
 title: Notas de versão do  [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0.
 description: "[!DNL Adobe Experience Manager] Notas de versão as a Cloud Service para 2020.7.0."
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1033'
-ht-degree: 78%
+source-wordcount: '1032'
+ht-degree: 76%
 
 ---
 
@@ -39,7 +39,7 @@ Os conectores do [!DNL Experience Manager] as a Cloud Service para o [!DNL Adobe
 
 * A publicação de ativos no [!DNL Dynamic Media] está mais simples e robusta e agora faz parte do pipeline de processamento de ativos global usando microsserviços de ativos e melhorando o back-end de publicação em lote.
 
-* As etapas de fluxo de trabalho que não são compatíveis com uma implantação do Cloud Service agora são marcadas com um aviso no editor de [!UICONTROL modelo de fluxo de trabalho]. Além disso, ao executar os fluxos de trabalho existentes no ambiente do Cloud Service, as etapas do fluxo de trabalho incompatíveis são ignoradas.
+* As etapas de fluxo de trabalho que não são compatíveis com uma implantação do Cloud Service agora são marcadas com um aviso no editor de [!UICONTROL modelo de fluxo de trabalho]. Além disso, ao executar os workflows existentes no ambiente do Cloud Service, as etapas do workflow incompatíveis são ignoradas.
 
 * Os modelos de fluxo de trabalho criados pelos clientes implantados em `/conf/global`[!DNL Cloud Manager] no projeto Git associado ao ambiente no são implantados automaticamente em `/var` e, portanto, disponibilizados no [!DNL Experience Manager]. Os modelos de fluxo de trabalho do produto em `/libs` que foram alterados pelo cliente não são implantados automaticamente em `/var`.
 
@@ -88,12 +88,12 @@ A data de lançamento da versão 2020.7.0 do [!UICONTROL Cloud Manager] é 9 de 
 
 * Os pipelines do Cloud Manager agora oferecem suporte a variáveis e segredos definidos pelo cliente.
 
-  Consulte Variáveis de pipeline para obter mais detalhes.
+  Consulte as variáveis de pipeline para obter mais detalhes.
 
 * Agora há suporte aos Repositórios Maven privados vinculados à autenticação.
 
 * O container de build do Cloud Manager agora é compatível com Java 8 e Java 11.
-Consulte Uso do suporte ao Java 11 para obter mais detalhes.
+Consulte Como utilizar o suporte do Java 11 para obter mais detalhes.
 
 ### Correções de erros {#bug-fixes-cm}
 
@@ -105,7 +105,7 @@ Consulte Uso do suporte ao Java 11 para obter mais detalhes.
 
 * Certas falhas no processo de qualidade do código podiam resultar na geração incorreta do arquivo de log.
 
-* Às vezes, o nome sugerido na criação de um novo programa retornava um duplicado de um nome de programa existente.
+* Às vezes, o nome sugerido na criação de um programa retornava uma duplicata de um nome de programa existente.
 
 * Grandes logs de etapas de pipeline não podiam ser baixados consistentemente pela interface do usuário.
 

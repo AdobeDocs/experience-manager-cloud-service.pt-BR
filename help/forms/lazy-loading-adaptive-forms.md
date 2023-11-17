@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 0cd38edb-2201-4ca6-8b84-6b5b7f76bd90
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1074'
 ht-degree: 3%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 3%
 
 ## Introdução ao carregamento lento {#introduction-to-lazy-loading}
 
-Quando os formulários se tornam grandes e complexos, com centenas e milhares de campos, os usuários finais têm um longo tempo de resposta ao renderizar formulários no tempo de execução. Para minimizar o tempo de resposta, o Adaptive Forms permite dividir formulários em fragmentos lógicos e configurar para adiar a inicialização ou o carregamento de fragmentos até que o fragmento precise estar visível. É chamado de carregamento lento. Além disso, os fragmentos configurados para carregamento lento são descarregados assim que o usuário navega para outras seções no formulário e os fragmentos não ficam mais visíveis.
+Quando os formulários se tornam grandes e complexos, com centenas e milhares de campos, os usuários finais têm um longo tempo de resposta ao renderizar formulários no tempo de execução. Para minimizar o tempo de resposta, o Adaptive Forms permite dividir formulários em fragmentos lógicos e configurar para adiar a inicialização ou o carregamento de fragmentos até que o fragmento esteja visível. É chamado de carregamento lento. Além disso, os fragmentos configurados para carregamento lento são descarregados assim que o usuário navega para outras seções no formulário e os fragmentos não ficam mais visíveis.
 
 Vamos primeiro entender os requisitos e etapas preparatórias antes de configurar o carregamento lento.
 
@@ -73,7 +73,7 @@ Você pode marcar os valores de objetos no fragmento carregado lentamente como g
 
 Algumas limitações, recomendações e pontos importantes a serem considerados ao trabalhar com carregamento lento são os seguintes:
 
-* É recomendável usar o Adaptive Forms baseado em esquema XSD em vez do Adaptive Forms baseado em XFA para configurar o carregamento lento em formulários grandes. O ganho de desempenho devido à implementação de carregamento lento no Adaptive Forms baseado em XFA é relativamente menor do que o ganho no Adaptive Forms baseado em XSD.
+* A Adobe recomenda usar o Adaptive Forms baseado em esquema XSD em vez do Adaptive Forms baseado em XFA para configurar o carregamento lento em formulários grandes. O ganho de desempenho devido à implementação de carregamento lento no Adaptive Forms baseado em XFA é relativamente menor do que o ganho no Adaptive Forms baseado em XSD.
 * Não configurar o carregamento lento em fragmentos em um Formulário adaptável que usam **[!UICONTROL Responsivo - tudo em uma página sem navegação]** para o painel raiz. Como resultado da configuração de Layout responsivo, todos os fragmentos são carregados simultaneamente em um Formulário adaptável. Isso também pode resultar em redução do desempenho.
 * É recomendável não configurar o carregamento lento em fragmentos no primeiro painel que é renderizado ao carregar o Formulário adaptável.
 * O carregamento lento é compatível com até dois níveis na hierarquia do fragmento.

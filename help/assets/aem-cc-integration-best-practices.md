@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3491'
+source-wordcount: '3489'
 ht-degree: 15%
 
 ---
@@ -210,7 +210,7 @@ O Adobe Asset Link oferece um bom suporte para este caso de uso:
 
 o aplicativo de desktop do Experience Manager fornece um compartilhamento de rede para ativos abertos no aplicativo nativo. Por padrão, todas as alterações feitas localmente são carregadas no Experience Manager automaticamente após um breve período. Com essa configuração, salvamentos frequentes durante a fase de trabalho em andamento seriam carregados no Experience Manager e teriam suas versões alteradas, criando uma grande quantidade de tráfego de rede e possíveis desafios de escalabilidade, sem mencionar as versões desnecessárias no Experience Manager.
 
-A abordagem recomendada aqui é usar uma opção no aplicativo de desktop Experience Manager para desativar atualizações automatizadas e fazer upload de alterações em ativos para o Experience Manager manualmente, aproveitando a ação fazer upload de alterações na interface do usuário de status do ativo do aplicativo.
+A abordagem recomendada aqui é usar uma opção no aplicativo de desktop Experience Manager para desativar atualizações automatizadas e fazer upload de alterações em ativos para o Experience Manager manualmente, usando a ação fazer upload de alterações na interface do usuário de status do ativo do aplicativo.
 
 #### Upload em massa para DAM {#bulk-upload-to-dam}
 

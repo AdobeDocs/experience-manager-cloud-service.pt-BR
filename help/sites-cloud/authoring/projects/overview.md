@@ -2,10 +2,10 @@
 title: Projetos
 description: Os projetos permitem agrupar recursos em uma entidade cujo ambiente comum e compartilhado facilita o gerenciamento de projetos
 exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1255'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '1253'
+ht-degree: 98%
 
 ---
 
@@ -37,7 +37,7 @@ O console de projetos é onde você acessa e gerencia os projetos no AEM.
 ![O console de projetos](/help/sites-cloud/authoring/assets/projects-console.png)
 
 * Selecione **Linha do tempo** e, em seguida, um projeto para exibir sua linha do tempo.
-* Clique/toque em **Selecionar** para entrar no modo de seleção.
+* Selecionar **Selecionar** para entrar no modo de seleção.
 * Clique em **Criar** para adicionar projetos.
 * **O botão projetos ativos** permite alternar entre todos os projetos e somente aqueles que estão ativos.
 * **Exibir visualização de estatísticas** permite ver estatísticas do projeto relacionadas às conclusões de tarefas.
@@ -178,4 +178,4 @@ Todos os projetos oferecem suporte às seguintes funções padrão para permitir
 
 >[!NOTE]
 >
->Ao criar o projeto e adicionar usuários às várias funções, os grupos associados ao projeto são criados automaticamente para gerenciar as permissões associadas. Por exemplo, um projeto chamado Myproject teria três grupos: **Proprietários do Myproject**, **Editores do Myproject**, **Observadores do Myproject**. No entanto, se o projeto for excluído, esses grupos não serão excluídos automaticamente. Um administrador precisa excluir manualmente os grupos em **Ferramentas** > **Segurança** > **Grupos**.
+>Ao criar o projeto e adicionar usuários às várias funções, os grupos associados ao projeto são criados automaticamente para gerenciar as permissões associadas. Por exemplo, um projeto chamado Myproject teria três grupos: **Proprietários do Myproject**, **Editores do Myproject**, **Observadores do Myproject**. No entanto, se o projeto for excluído, esses grupos não serão excluídos automaticamente. Um administrador deve excluir manualmente os grupos em **Ferramentas** > **Segurança** > **Grupos**.

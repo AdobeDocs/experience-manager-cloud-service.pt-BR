@@ -5,7 +5,7 @@ mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1627'
 ht-degree: 6%
@@ -134,7 +134,6 @@ Vamos agora mudar o **[!UICONTROL Destino]** no caso de uso acima para **[!UICON
 >
 >No entanto, é possível remover a personalização existente para usar o novo [!DNL Manager Publication] recursos.
 
-
 ## Publicar ativos mais tarde {#publish-assets-later}
 
 Para agendar o fluxo de trabalho de publicação de ativos para uma data ou hora posterior:
@@ -182,6 +181,7 @@ Você pode publicar ativos, pastas e coleções na [!DNL Experience Manager Asse
 A variável `Request Publication` ajuda na autenticação do fluxo de trabalho dos Assets antes de publicá-los no [!DNL AEM] Ambiente de ativos. [!DNL AEM] O fornece diferentes níveis de permissões para vários usuários. Você pode ser um *colaborador* que está fazendo upload de ativos, mas não pode publicá-los até que os uploads sejam verificados. Além disso, por ser um *Admin* é possível gerenciar para ler e gravar fluxos de trabalho dos Ativos.
 
 A opção Solicitar publicação está disponível para os seguintes usuários:
+
 * **Colaborador:** Se você for um usuário que pode contribuir com [!DNL AEM] ativos, você terá acesso limitado à [!DNL AEM] Fluxo de trabalho dos ativos. `Manage publication` está oculto para você. Como colaborador, você só pode contribuir adicionando Ativos, mas não pode publicá-los ou ter acesso de leitura ao fluxo de trabalho.
 
 * **Usuário do fluxo de trabalho:** Esse usuário não pode publicar ativos, mas tem acesso de leitura ao fluxo de trabalho. Como usuário de workflow, você pode:

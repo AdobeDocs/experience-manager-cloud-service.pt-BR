@@ -2,9 +2,9 @@
 title: Desenvolvimento local do AEM com o editor universal
 description: Saiba como o Editor universal oferece suporte à edição em instâncias locais do AEM para fins de desenvolvimento.
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
-source-git-commit: 3b98543098f4125a7d7e5896e5aa46e441a40f32
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '580'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ O Universal Editor Service é o que vincula o Universal Editor e o sistema de ba
 
 [NodeJS versão 16](https://nodejs.org/en/download/releases) é necessário para executar uma cópia local do Universal Editor Service
 
-O Universal Editor Service é distribuído diretamente pela Engenharia de AEM. entre em contato com o contato de engenharia no programa VIP para obter uma cópia local.
+O Universal Editor Service é distribuído diretamente pela Engenharia de AEM. Entre em contato com seu engenheiro no programa VIP para obter uma cópia local.
 
 A engenharia fornecerá a você uma `universal-editor-service.cjs` arquivo. Salve no ambiente de desenvolvimento local.
 

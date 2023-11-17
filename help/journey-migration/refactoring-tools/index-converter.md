@@ -2,9 +2,9 @@
 title: Conversor de índice
 description: Saiba como migrar as Definições de índice em preparação para a mudança para o AEM as a Cloud Service.
 exl-id: ac02ca41-eb35-4f24-bf17-d00ce318423d
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: '288'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,7 @@ Se [Garantir índice do Oak](https://adobe-consulting-services.github.io/acs-aem
 
 ## Uso do Conversor de índice {#using-index-converter}
 
-* Por meio da CLI do Adobe I/O : é recomendável usar o Conversor de Índice por meio de `aio-cli-plugin-aem-cloud-service-migration` (Plug-in de refatoração de código as a Cloud Service AEM para a CLI do Adobe I/O).
+* Por meio da CLI do Adobe I/O : o Adobe recomenda usar o Conversor de Índice por meio de `aio-cli-plugin-aem-cloud-service-migration` (Plug-in de refatoração de código as a Cloud Service AEM para a CLI do Adobe I/O).
 
   Consulte **[Recurso do Git: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** para saber como instalar e usar o plug-in.
 

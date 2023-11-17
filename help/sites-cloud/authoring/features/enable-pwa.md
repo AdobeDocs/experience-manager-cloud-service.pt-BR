@@ -2,10 +2,10 @@
 title: Ativação de recursos do aplicativo web progressivo
 description: O AEM Sites permite que o autor de conteúdo ative recursos de aplicativo web progressivo para qualquer site por meio de uma configuração simples, sem necessidade de desenvolver código.
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
-source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2004'
-ht-degree: 67%
+source-wordcount: '1998'
+ht-degree: 66%
 
 ---
 
@@ -102,8 +102,8 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 Com [os pré-requisitos](#prerequisites) satisfeito, é fácil para um autor de conteúdo habilitar os recursos do PWA em um site. Veja a seguir um esboço básico de como fazer isso. As opções individuais são detalhadas na seção [Opções detalhadas.](#detailed-options)
 
 1. Faça logon no AEM.
-1. No menu principal, toque ou clique em **Navegação** -> **Sites**.
-1. Selecione o projeto do site e toque ou clique em [**Propriedades**](/help/sites-cloud/authoring/fundamentals/page-properties.md) ou use a tecla de atalho `p`.
+1. No menu principal, selecione **Navegação** > **Sites**.
+1. Selecione o projeto do site e selecione [**Propriedades**](/help/sites-cloud/authoring/fundamentals/page-properties.md) ou use a tecla de atalho `p`.
 1. Selecione a guia **Aplicativo web progressivo** e configure as propriedades aplicáveis. No mínimo, você deseja:
    1. Selecionar a opção **Ativar o PWA**.
    1. Definir o **URL de inicialização**.
@@ -123,7 +123,7 @@ Com [os pré-requisitos](#prerequisites) satisfeito, é fácil para um autor de 
 
       ![Definir caminhos offline do PWA](../assets/pwa-offline.png)
 
-1. Toque ou clique em **Salvar e fechar**.
+1. Selecionar **Salvar e fechar**.
 
 Seu site agora está configurado e você pode [instalá-lo como um aplicativo local.](#using-pwa-enabled-site)
 

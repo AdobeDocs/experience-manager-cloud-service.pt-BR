@@ -2,9 +2,9 @@
 title: Personalização de Consoles
 description: Saiba mais sobre as diferentes opções que o AEM fornece para personalizar os consoles da sua instância de criação.
 exl-id: 832f9a86-07c4-4229-a0dc-8ad50a8195b0
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ O AEM fornece opções para personalizar os consoles (e o [funcionalidade de cri
 
 As clientlibs permitem estender a implementação padrão para oferecer uma nova funcionalidade, ao mesmo tempo em que reutiliza funções, objetos e métodos padrão. Ao personalizar com clientlibs, você pode criar sua própria clientlib em `/apps.` Por exemplo, ele pode conter o código necessário para o componente personalizado.
 
-Para mais detalhes sobre clientlibs, consulte o documento [Uso de bibliotecas do lado do cliente no AEM as a Cloud Service.](/help/implementing/developing/introduction/clientlibs.md)
+Consulte [Uso de bibliotecas do lado do cliente no AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md).
 
 ## Sobreposições {#overlays}
 
@@ -25,11 +25,11 @@ As sobreposições se baseiam nas definições de nó e permitem sobrepor a func
 
 As sobreposições podem ser usadas de várias maneiras para estender os consoles AEM. Vários exemplos são fornecidos nas seções a seguir.
 
-Para obter mais informações sobre sobreposições, consulte o documento [Sobreposições para o Adobe Experience Manager as a Cloud Service.](/help/implementing/developing/introduction/overlays.md)
+Consulte também [Sobreposições para o Adobe Experience Manager as a Cloud Service](/help/implementing/developing/introduction/overlays.md).
 
 >[!TIP]
 >
->Se você estiver interessado em opções para personalizar a experiência de criação, consulte o documento [Personalização da criação de página.](/help/implementing/developing/extending/page-authoring.md)
+>Se estiver interessado em opções para personalizar a experiência de criação, consulte [Personalização da criação de página](/help/implementing/developing/extending/page-authoring.md).
 
 ## Personalizando a View Default para uma Console {#customizing-the-default-view-for-a-console}
 
@@ -117,4 +117,4 @@ Se quiser inserir dados adicionais, é necessário escrever um [PageInfoProvider
 
 Ao usar um console, o usuário geralmente precisa selecionar entre recursos como páginas, componentes ou ativos. Isso pode tomar a forma de uma lista na qual o autor deve escolher um item.
 
-Para manter a lista em um tamanho razoável e também relevante para o caso de uso, um filtro pode ser implementado no formato de um predicado personalizado. Consulte o documento[Personalização da criação de página](/help/implementing/developing/extending/page-authoring.md#filtering-resources) para obter detalhes.
+Para manter a lista em um tamanho razoável e também relevante para o caso de uso, um filtro pode ser implementado no formato de um predicado personalizado. Consulte [Personalização da criação de página](/help/implementing/developing/extending/page-authoring.md#filtering-resources) para obter detalhes.

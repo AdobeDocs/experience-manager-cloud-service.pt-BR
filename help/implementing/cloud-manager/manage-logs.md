@@ -2,10 +2,10 @@
 title: Acesso e gerenciamento de registros
 description: Saiba como acessar e gerenciar logs para auxiliar seu processo de desenvolvimento no AEM as a Cloud Service.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: 7272f6ebd1b9c4e67985cba0221d8cafbeb1560a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '345'
-ht-degree: 79%
+ht-degree: 74%
 
 ---
 
@@ -36,7 +36,7 @@ Para baixar os logs, faça o seguinte:
 
    ![Baixar logs para regiões de publicação adicionais](assets/download-publish-region-logs.png)
 
-1. Após selecionar o serviço, clique no ícone de download ao lado do log que deseja recuperar.
+1. Depois de selecionar o serviço, clique no ícone de download ao lado do log que deseja recuperar.
 
 Você também pode acessar os logs na página **Ambientes**.
 

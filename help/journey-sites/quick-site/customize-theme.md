@@ -2,10 +2,10 @@
 title: Personalizar o tema do site
 description: Saiba como o tema do site é criado, como personalizar e como testar usando conteúdo dinâmico do AEM.
 exl-id: b561bee0-3a64-4dd3-acb8-996f0ca5bfab
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 96%
+source-wordcount: '960'
+ht-degree: 94%
 
 ---
 
@@ -64,7 +64,7 @@ Quando estiver confortável com a estrutura do projeto de tema, inicie o proxy l
 
    ![npm run live](assets/npm-run-live.png)
 
-1. Quando o servidor proxy é iniciado, ele abre automaticamente um navegador para `http://localhost:7001/`. Toque ou clique em **FAZER LOGON LOCALMENTE (SOMENTE TAREFAS DE ADMINISTRADOR)** e entre com as credenciais de usuário proxy fornecidas pelo administrador do AEM.
+1. Quando o servidor proxy é iniciado, ele abre automaticamente um navegador para `http://localhost:7001/`. Selecionar **FAZER LOGON LOCALMENTE (SOMENTE TAREFAS DE ADMINISTRADOR)** e faça logon com as credenciais de usuário proxy fornecidas pelo administrador do AEM.
 
    ![Fazer logon localmente](assets/sign-in-locally.png)
 

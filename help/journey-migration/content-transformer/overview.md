@@ -1,9 +1,10 @@
 ---
 title: Visão geral do transformador de conteúdo
 description: Saiba como detectar e corrigir problemas relacionados ao conteúdo relatados pelo BPA usando o Transformador de conteúdo.
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+exl-id: aa3397ff-3dd6-4c67-9064-cb9b19bf1c73
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '388'
 ht-degree: 2%
 
 ---
@@ -33,4 +34,4 @@ O transformador de conteúdo oferece os seguintes benefícios:
 
 * À prova de falhas: um pacote é criado pelo Transformador de conteúdo sempre que ele faz qualquer modificação no repositório para corrigir problemas. Se necessário, é possível reverter para o estado anterior instalando o pacote.
 * Fácil de usar: o transformador de conteúdo foi integrado à ferramenta de transferência de conteúdo e vem com uma interface de usuário simples e intuitiva.
-* Economiza tempo: quando você tem um alto número de problemas de conteúdo que se enquadram em uma categoria de padrão, é possível resolver todos eles com apenas alguns cliques usando o Transformador de conteúdo.
+* Economiza tempo: quando você tem um alto número de problemas de conteúdo que se enquadram em uma categoria de padrão, é possível resolver todos com vários cliques usando o Transformador de conteúdo.

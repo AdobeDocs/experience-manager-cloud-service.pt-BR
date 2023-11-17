@@ -1,10 +1,10 @@
 ---
-title: Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0.
-description: Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0.
+title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2021.4.0.
+description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2021.4.0.
 exl-id: 775332b5-24ce-430e-97a2-6eeb80877c64
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1531'
+source-wordcount: '1533'
 ht-degree: 25%
 
 ---
@@ -83,7 +83,7 @@ A versão seguinte (2021.5.0) será lançada em 27 de maio de 2021.
 
 * Quando é feita uma seleção na página Propriedades para atualizar metadados, a interface fica lenta para responder quando há muitas opções fornecidas pelo esquema. (CQ-4318538)
 
-* Ao atualizar e salvar o valor de metadados em um campo de texto de linha única, os valores no menu suspenso são excluídos, mesmo que as edições estejam desativadas no menu suspenso. (CQ-4317077)
+* Ao atualizar e salvar o valor de metadados em um campo de texto de linha única, os valores no menu da lista suspensa são excluídos, mesmo que as edições estejam desativadas no menu da lista suspensa. (CQ-4317077)
 
 * É possível usar reticências como uma anotação para revisar ativos. Quando uma pequena elipse é usada, ela se sobrepõe ao número da anotação na versão impressa. (CQ-4316792)
 
@@ -132,7 +132,7 @@ A versão seguinte (2021.5.0) será lançada em 27 de maio de 2021.
 
 * Extensão AEM para PWA Studio incl. exemplo de integração
 
-* Novo componente principal de navegação da CIF que estende o componente principal de navegação do WCM
+* Novo componente principal de navegação do CIF que estende o componente principal de navegação do WCM
 
 * Indicador visual para dados de catálogo preparados na loja AEM
 

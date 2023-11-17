@@ -2,7 +2,7 @@
 title: Tags de cores para imagens
 description: O Adobe Experience Manager Assets permite distinguir cores em uma imagem e aplicá-las automaticamente como tags. Em seguida, você pode usar essas tags para pesquisar e filtrar imagens.
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
-source-git-commit: 57d6b50ef5256bf6e8fce84100eed4690b77cb87
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1220'
 ht-degree: 6%

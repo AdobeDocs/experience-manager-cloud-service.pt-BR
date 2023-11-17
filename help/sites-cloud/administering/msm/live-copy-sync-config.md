@@ -4,10 +4,10 @@ description: Saiba mais sobre as poderosas opções de sincronização da Live C
 feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2425'
-ht-degree: 96%
+source-wordcount: '2414'
+ht-degree: 94%
 
 ---
 
@@ -68,7 +68,7 @@ Se as ações instaladas não atenderem aos seus requisitos, você poderá [Cria
 | `contentDelete` | Essa ação exclui nós da Live Copy que não existem na origem. [Configure o serviço de **Ação de exclusão de conteúdo MSM CQ**](#excluding-properties-and-node-types-from-synchronization) para especificar os tipos de nó, itens de parágrafo e propriedades de página a serem excluídos. |  |
 | `contentUpdate` | Essa ação atualiza o conteúdo da Live Copy com as alterações da origem. [Configure o serviço de **Ação de atualização de conteúdo MSM CQ**](#excluding-properties-and-node-types-from-synchronization) para especificar os tipos de nó, itens de parágrafo e propriedades de página a serem excluídos. |  |
 | `editProperties` | Essa ação edita as propriedades da Live Copy. A propriedade `editMap` determina quais propriedades são editadas e seus valores. O valor da propriedade `editMap` deve usar o seguinte formato:<br>`[property_name_n]#[current_value]#[new_value]`<br>`current_value` e `new_value` são expressões regulares e `n` é um número inteiro incrementado.<br>Por exemplo, considere o seguinte valor para `editMap`:<br>`sling:resourceType#/(contentpage`‖`homepage)#/mobilecontentpage,cq:template#/contentpage#/mobilecontentpage`<br>Esse valor edita as propriedades dos nós da Live Copy da seguinte maneira:<br>As propriedades `sling:resourceType` definidas como `contentpage` ou `homepage` são definidas como `mobilecontentpage`.<br>As propriedades `cq:template` definidas como `contentpage` são definidas como `mobilecontentpage`. | `editMap: (String)` identifica a propriedade, o valor atual e o novo valor. Consulte a descrição para obter informações. |
-| `notify` | Essa ação envia um evento de página de que a página foi distribuída. Para ser notificado, é necessário primeiro assinar os eventos de implantação. |  |
+| `notify` | Essa ação envia um evento de página de que a página foi distribuída. Para ser notificado, primeiro é necessário assinar eventos de implantação. |  |
 | `orderChildren` | Essa ação ordena os nós filhos com base na ordem no blueprint. |  |
 | `referencesUpdate` | Esta ação de sincronização atualiza referências na Live Copy.<br>Ela procura caminhos nas páginas da Live Copy que apontam para um recurso dentro do blueprint. Quando encontrado, ela atualiza o caminho para apontar para o recurso relacionado dentro da Live Copy. As referências que têm destinos fora do blueprint não são alteradas. <br>[Configure o serviço de **Ação de atualização de referências MSM CQ**](#excluding-properties-and-node-types-from-synchronization) para especificar os tipos de nó, itens de parágrafo e propriedades de página a serem excluídos. |  |
 | `targetVersion` | Essa ação cria uma versão da Live Copy.<br>Essa ação deve ser a única ação de sincronização incluída em uma configuração de implementação. |  |
@@ -182,13 +182,13 @@ Também é possível definir as configurações de implantação para uma págin
 
    ![Substituição da herança de configuração da Live Copy](../assets/live-copy-inherit-override.png)
 
-1. Clique ou toque em **Salvar &amp; Fechar**.
+1. Selecionar **Salvar e fechar**.
 
 ### Definir a configuração de implantação de uma página do blueprint {#setting-the-rollout-configuration-for-a-blueprint-page}
 
 Configure uma página de blueprint com as configurações de implantação a serem usadas quando a página de blueprint for implantada.
 
-Observe que as páginas derivadas da página de blueprint herdam a configuração. Ao definir a configuração de implantação a ser usada, você pode estar substituindo a configuração que a página herdará da página principal.
+As páginas secundárias da página do blueprint herdam a configuração. Ao definir a configuração de implantação a ser usada, você pode estar substituindo a configuração que a página herdará da página principal.
 
 1. Use o console **Sites** para selecionar a página raiz do blueprint.
 1. Selecione **Propriedades** na barra de ferramentas.

@@ -4,9 +4,9 @@ description: Saiba mais sobre as noções básicas do gerenciamento de pacotes d
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3769'
+source-wordcount: '3771'
 ht-degree: 4%
 
 ---
@@ -97,7 +97,7 @@ Para criar, modificar, fazer upload e instalar pacotes, os usuários devem ter a
 
 Você pode acessar o Gerenciador de pacotes de três maneiras:
 
-1. No menu principal do AEM -> **Ferramentas** -> **Implantação** -> **Pacotes**
+1. No menu principal do AEM > **Ferramentas** > **Implantação** > **Pacotes**
 1. De [CRXDE Lite](crxde.md) usando a barra superior do alternador
 1. Diretamente ao acessar `http://<host>:<port>/crx/packmgr/`
 
@@ -304,7 +304,7 @@ Talvez seja necessário [recriar o pacote](#building-a-package) para atualizar s
 
 ### Reencapsulamento de um pacote {#rewrapping-a-package}
 
-Depois que um pacote é criado, ele pode ser empacotado novamente. O reempacotamento altera as informações do pacote sem, como miniatura, descrição etc., sem alterar o conteúdo do pacote.
+Depois que um pacote é criado, ele pode ser empacotado novamente. Reajustar altera as informações do pacote sem alterar a miniatura, a descrição etc., sem alterar o conteúdo do pacote.
 
 1. [Acesse o Gerenciador de pacotes.](#accessing)
 
@@ -314,7 +314,7 @@ Depois que um pacote é criado, ele pode ser empacotado novamente. O reempacotam
 
 1. Clique em **Salvar** para salvar.
 
-1. Clique em **Mais** -> **Reajustar** e uma caixa de diálogo solicitará confirmação.
+1. Clique em **Mais** > **Reajustar** e uma caixa de diálogo solicitará confirmação.
 
 ### Exibindo Outras Versões do Pacote {#other-versions}
 
@@ -324,7 +324,7 @@ Como cada versão de um pacote aparece na lista como qualquer outro pacote, o Ge
 
 1. Abra os detalhes do pacote na lista de pacotes clicando no nome do pacote.
 
-1. Clique em **Mais** -> **Outras versões** e uma caixa de diálogo é aberta com uma lista de outras versões do mesmo pacote com informações de status.
+1. Clique em **Mais** > **Outras versões** e uma caixa de diálogo é aberta com uma lista de outras versões do mesmo pacote com informações de status.
 
 ### Visualizando o conteúdo do pacote e testando a instalação {#viewing-package-contents-and-testing-installation}
 
@@ -334,11 +334,11 @@ Depois que um pacote for criado, é possível visualizar o conteúdo.
 
 1. Abra os detalhes do pacote na lista de pacotes clicando no nome do pacote.
 
-1. Para exibir o conteúdo, clique em **Mais** -> **Conteúdo**, e o Gerenciador de pacotes lista todo o conteúdo do pacote no log de atividades.
+1. Para exibir o conteúdo, clique em **Mais** > **Conteúdo**, e o Gerenciador de pacotes lista todo o conteúdo do pacote no log de atividades.
 
    ![Conteúdo do pacote](assets/package-contents.png)
 
-1. Para executar uma simulação da instalação, clique em **Mais** -> **Testar instalação** O e o Gerenciador de pacotes relatam no registro de atividades os resultados como se a instalação tivesse sido executada.
+1. Para executar uma simulação da instalação, clique em **Mais** > **Testar instalação** O e o Gerenciador de pacotes relatam no registro de atividades os resultados como se a instalação tivesse sido executada.
 
    ![Testar instalação](assets/test-install.png)
 
@@ -478,7 +478,7 @@ A validação sempre deve ocorrer após o upload do pacote, mas antes de instal�
 
 1. Abra os detalhes do pacote na lista de pacotes clicando no nome do pacote.
 
-1. Para validar o pacote, clique em **Mais** -> **Validar**,
+1. Para validar o pacote, clique em **Mais** > **Validar**,
 
 1. Na caixa de diálogo modal exibida, use as caixas de seleção para selecionar o(s) tipo(s) de validação e começar a validação clicando em **Validar**.
 
@@ -516,7 +516,7 @@ Os pacotes são definidos por seus filtros. O Gerenciador de pacotes pode aplica
 
 1. Abra os detalhes do pacote na lista de pacotes clicando no nome do pacote.
 
-1. Clique em **Mais** -> **Cobertura**.
+1. Clique em **Mais** > **Cobertura**.
 
 1. Os detalhes da cobertura estão listados no Log de atividades.
 
@@ -576,7 +576,7 @@ A desinstalação do pacote reverte o conteúdo do repositório para o instantâ
 
 1. Abra os detalhes do pacote que deseja desinstalar na lista de pacotes clicando no nome do pacote.
 
-1. Clique em **Mais** -> **Desinstalar**, para remover o conteúdo deste pacote do repositório.
+1. Clique em **Mais** > **Desinstalar**, para remover o conteúdo deste pacote do repositório.
 
 1. Uma caixa de diálogo solicitará confirmação e listará todas as alterações que estão sendo feitas.
 
@@ -602,7 +602,7 @@ Replicar o conteúdo de um pacote para instalá-lo na instância de publicação
 
 1. Abra os detalhes do pacote que deseja replicar na lista de pacotes clicando no nome do pacote.
 
-1. Clique em **Mais** -> **Replicar**.
+1. Clique em **Mais** > **Replicar**.
 
 1. O pacote é replicado e os detalhes são relatados no Registro de atividades.
 

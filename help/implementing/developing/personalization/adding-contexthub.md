@@ -2,9 +2,9 @@
 title: Adicionar o ContextHub a páginas e acessar lojas
 description: Adicione o ContextHub às suas páginas para ativar os recursos do ContextHub e para vincular às bibliotecas de JavaScript do ContextHub
 exl-id: 8bfe2cff-3944-4e86-a95c-ebf1cb13913c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '923'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Use os armazenamentos do ContextHub para manter os dados de contexto. O ContextH
 * [Armazenamento JSON](contexthub-api.md#contexthub-store-persistedjsonpstore)
 * [JSONPStorePersistente](contexthub-api.md#contexthub-store-persistedstore)
 
-Todos os tipos de lojas são extensões da [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core) classe. Para obter informações sobre como criar um novo tipo de loja, consulte [Criar lojas personalizadas](extending-contexthub.md#creating-custom-store-candidates). Para obter informações sobre tipos de armazenamento de exemplo, consulte [Amostra de candidatos da loja do ContextHub](sample-stores.md).
+Todos os tipos de lojas são extensões da [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core) classe. Para obter informações sobre como criar um tipo de armazenamento, consulte [Criar lojas personalizadas](extending-contexthub.md#creating-custom-store-candidates). Para obter informações sobre tipos de armazenamento de exemplo, consulte [Amostra de candidatos da loja do ContextHub](sample-stores.md).
 
 ### Modos de persistência {#persistence-modes}
 
@@ -85,7 +85,7 @@ A estrutura de árvore define itens de dados no armazenamento como pares de chav
 
 O ContextHub fornece o [`ContextHub.Utils.JSON.tree`](contexthub-api.md#contexthub-utils-json-tree) para manipular objetos JavaScript. Use as funções dessa classe para manipular objetos JavaScript antes de adicioná-los a um armazenamento ou depois de obtê-los de um armazenamento.
 
-Além disso, a [`ContextHub.Utils.JSON`](contexthub-api.md#contexthub-utils-json) A classe fornece funções para serializar objetos para sequências e desserializar sequências para objetos. Use essa classe para manipular dados JSON para suportar navegadores que não incluem nativamente o `JSON.parse` e `JSON.stringify` funções.
+Além disso, a variável [`ContextHub.Utils.JSON`](contexthub-api.md#contexthub-utils-json) A classe fornece funções para serializar objetos para sequências e desserializar sequências para objetos. Use essa classe para manipular dados JSON para suportar navegadores que não incluem nativamente o `JSON.parse` e `JSON.stringify` funções.
 
 ## Interagir com lojas ContextHub {#interacting-with-contexthub-stores}
 

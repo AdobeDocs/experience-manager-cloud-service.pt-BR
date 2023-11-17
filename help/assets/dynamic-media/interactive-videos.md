@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Interactive Videos
 role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '5966'
 ht-degree: 3%
@@ -32,7 +32,7 @@ Consulte também [Usar vídeo interativo com o Dynamic Media](https://experience
 
 <!-- 
 
-There was a link here that showed the video frame of an interactive video and when the reader selected the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html. This now needs to call a new interactive video
+There was a link here that showed the video frame of an interactive video and when the reader selected the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html. This now must call a new interactive video
 
 -->
 
@@ -439,7 +439,7 @@ Depois de salvar o vídeo interativo, ele é aberto imediatamente na Pré-visual
        </ul><strong>Nota</strong>: as ferramentas de compartilhamento de redes sociais no Vídeo interativo não são compatíveis quando você incorpora o visualizador em um Fragmento de experiência. Em vez disso, você pode usar ou criar predefinições do visualizador que não tenham ferramentas de compartilhamento de redes sociais. Essas predefinições do visualizador permitem incorporá-lo com sucesso aos Fragmentos de experiência.</p></tr>&lt; 
       <tr> 
       <td>Para editar uma ação já atribuída a uma imagem em miniatura</td> 
-      <td>Em um segmento de linha do tempo, selecione uma imagem em miniatura que tenha um vínculo em cadeia à direita de seu rótulo de texto. O vínculo de cadeia indica que uma ação está atribuída a ela. Para fazer as alterações, selecione o <strong>Ações</strong> guia.</td> 
+      <td>Em um segmento de linha do tempo, selecione uma imagem em miniatura que tenha um link em cadeia à direita do rótulo de texto. O vínculo de cadeia indica que uma ação está atribuída a ela. Para fazer as alterações, selecione o <strong>Ações</strong> guia.</td> 
       </tr> 
       <tr> 
       <td>Para alterar o rótulo do texto de uma imagem em miniatura</td> 
