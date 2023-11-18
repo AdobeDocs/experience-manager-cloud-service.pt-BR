@@ -2,9 +2,9 @@
 title: Notas da versão [!DNL Workfront for Experience Manager enhanced connector]
 description: Notas da versão [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 681d4b9f300280e5a6723bd00a9ccfde0545f401
 workflow-type: tm+mt
-source-wordcount: '1352'
+source-wordcount: '1378'
 ht-degree: 1%
 
 ---
@@ -15,20 +15,14 @@ A seção a seguir descreve as Notas de versão gerais do [!DNL Workfront for Ex
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento da versão mais recente 1.9.14 do [!DNL Workfront for Experience Manager enhanced connector] O é em 13 de outubro de 2023.
+A data de lançamento da versão mais recente 1.9.15 do [!DNL Workfront for Experience Manager enhanced connector] O é em 17 de novembro de 2023.
 
 ## Destaques da versão {#release-highlights}
 
 A versão mais recente do [!DNL Workfront for Experience Manager enhanced connector] O inclui as seguintes correções de erros:
 
-* Quando assinaturas de evento estiverem desativadas em Configurações avançadas, ainda será possível selecionar as opções para **Inscrever-se em eventos de atualização de documento para atualizar metadados de ativos AEM**, **Publicar todos os ativos do projeto no Brand Portal após a conclusão do projeto**, e **Ativar a sincronização de comentários**.
-
-* Alguns dos ativos armazenados no Experience Manager não são renderizados adequadamente ao visualizá-los no Workfront.
-
-* Ao reconfigurar a conexão Experience Manager com o Workfront, assinaturas de evento, como atualização de sincronização de comentários, exclusão, atualização de documentos, não são criadas com sucesso.
-
-* Principais melhorias de desempenho da API para criação de pastas vinculadas, atualização, habilitação de pastas vinculadas, sincronização de comentários, habilitação e desabilitação, salvamento de configurações avançadas no conector.
-
+* Ao visualizar a lista de pastas AEM, a caixa de diálogo demora mais de um minuto para carregar.
+* Autorizado [!DNL Workfront] os usuários do recebem consistentemente logs de erro de falha de autenticação.
 
 >[!NOTE]
 >
@@ -37,7 +31,7 @@ A versão mais recente do [!DNL Workfront for Experience Manager enhanced connec
 
 >[!IMPORTANT]
 >
->Adobe recomenda que você [atualização para a versão 1.9.14 mais recente](/help/assets/workfront-connector-install.md) do [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe recomenda que você [atualização para a versão 1.9.15 mais recente](/help/assets/workfront-connector-install.md) do [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Problemas conhecidos {#known-issues}
 
@@ -46,6 +40,16 @@ A versão mais recente do [!DNL Workfront for Experience Manager enhanced connec
 * Ao usar a experiência clássica do Workfront, a variável **[!UICONTROL Enviar para]** opção disponível no **[!UICONTROL Mais]** lista suspensa não permite selecionar o destino dentro do Experience Manager. A variável **[!UICONTROL Enviar para]** A opção funciona corretamente usando o **[!UICONTROL Ações do documento]** lista suspensa. A variável **[!UICONTROL Enviar para]** A opção funciona corretamente para **[!UICONTROL Mais]** lista suspensa e a variável **[!UICONTROL Ações do documento]** disponível na nova experiência do Workfront.
 
 ## Versões anteriores {#previous-releases}
+
+### Versão de outubro de 2023 {#october-2023-release}
+
+* Quando assinaturas de evento estiverem desativadas em Configurações avançadas, ainda será possível selecionar as opções para **Inscrever-se em eventos de atualização de documento para atualizar metadados de ativos AEM**, **Publicar todos os ativos do projeto no Brand Portal após a conclusão do projeto**, e **Ativar a sincronização de comentários**.
+
+* Alguns dos ativos armazenados no Experience Manager não são renderizados adequadamente ao visualizá-los no Workfront.
+
+* Ao reconfigurar a conexão Experience Manager com o Workfront, assinaturas de evento, como atualização de sincronização de comentários, exclusão, atualização de documentos, não são criadas com sucesso.
+
+* Principais melhorias de desempenho da API para criação de pastas vinculadas, atualização, habilitação de pastas vinculadas, sincronização de comentários, habilitação e desabilitação, salvamento de configurações avançadas no conector.
 
 ### Versão de setembro de 2023 {#september-2023-release}
 
