@@ -2,10 +2,10 @@
 title: Jornada do autor de conteúdo headless do AEM
 description: Comece aqui uma jornada guiada pelos recursos headless eficientes e flexíveis do AEM, suas funcionalidades e como criar conteúdo para seu projeto.
 exl-id: fe124c6b-932a-44fc-a87b-12691aefea56
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '876'
-ht-degree: 88%
+source-wordcount: '873'
+ht-degree: 87%
 
 ---
 
@@ -27,7 +27,7 @@ Este manual aborda os tópicos mais importantes para que, ao concluí-lo, você:
 
 * Tenha uma compreensão básica do que é entrega de conteúdo headless e de seus benefícios.
 * Entenda os recursos headless do AEM e como eles trabalham juntos para proporcionar uma experiência headless.
-* Tenha a capacidade de criar conteúdo para seu projeto headless do AEM.
+* Podem criar conteúdo para seu projeto AEM headless.
 
 ## Jornadas de documentação do AEM {#documentation-journeys}
 

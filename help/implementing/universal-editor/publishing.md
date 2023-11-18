@@ -2,10 +2,10 @@
 title: Publicação de conteúdo com o Editor universal
 description: Saiba como o Editor universal publica o conteúdo e como seus aplicativos podem lidar com esse conteúdo.
 exl-id: aee34469-37c2-4571-806b-06c439a7524a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '359'
-ht-degree: 94%
+source-wordcount: '360'
+ht-degree: 82%
 
 ---
 
@@ -28,7 +28,7 @@ Quando hospedado externamente, o objetivo do aplicativo web é garantir que o co
 
 Para determinar se a camada do autor ou de publicação deve ser acessada, uma simples declaração condicional pode ser utilizada no aplicativo ao detectar que seu conteúdo está sendo aberto no editor, a fim de escolher o ponto de acesso apropriado do autor ou da publicação.
 
-Outra opção é implantar o aplicativo em dois ambientes configurados de forma diferente, para que um recupere o conteúdo da camada do autor e o outro o recupere da camada de publicação. Para permitir que autores(as) abram a URL publicada no Editor universal, um pequeno script pode ser criado para “converter” a URL do lado da publicação para seu equivalente no ambiente de criação (por exemplo, anexando um subdomínio `author`), a fim de que eles(as) sejam redirecionados automaticamente.
+Outra opção é implantar o aplicativo em dois ambientes configurados de forma diferente, para que um recupere o conteúdo da camada do autor e o outro o recupere da camada de publicação. Para permitir que os autores abram o URL publicado no Editor universal, um pequeno script pode ser criado para &quot;converter&quot; o URL do lado da publicação para seu equivalente no ambiente do autor (por exemplo, anexando um `author` subdomínio), para que os autores sejam automaticamente redirecionados.
 
 ## Resumo {#summary}
 

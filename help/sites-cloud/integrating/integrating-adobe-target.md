@@ -4,10 +4,10 @@ description: Saiba como integrar o Adobe Target ao AEM as a Cloud Service usando
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1034'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -50,7 +50,7 @@ Ao configurar os campos ID de locatário do Adobe Target e Código de cliente do
 Em ambos os casos:
 
 * Por padrão, o código de cliente (se adicionado primeiro) também é copiado automaticamente para o campo ID de locatário.
-* Se necessário, é possível alterar o conjunto padrão da ID de locatário.
+* Se necessário, é possível alterar o conjunto padrão de ID do locatário.
 * As chamadas de back-end para o Target são baseadas na ID de locatário e as chamadas do lado do cliente para o Target serão baseadas no código de cliente.
 
 Como dito anteriormente, o primeiro caso é o mais comum para o AEM as a Cloud Service. De qualquer maneira, verifique se **ambos** os campos contêm as informações corretas, dependendo de suas necessidades.

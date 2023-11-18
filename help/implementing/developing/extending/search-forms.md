@@ -2,9 +2,9 @@
 title: Configuração de formulários de pesquisa
 description: Configuração do Search Forms para Adobe Experience Manager as a Cloud Service.
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '2035'
+source-wordcount: '2033'
 ht-degree: 17%
 
 ---
@@ -480,7 +480,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
 >Os predicados de pesquisa comuns são definidos em:
 >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
->Essas informações são somente para referência. Você não deve fazer alterações no `/libs`.
+>Essas informações são somente para referência. Você não deve alterar `/libs`.
 
 <!--
 >* Search predicates related only to siteadmin (classic UI) are located under:

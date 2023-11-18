@@ -1,11 +1,11 @@
 ---
-title: Notas de versão do [!DNL Adobe Experience Manager]  as a Cloud Service 2020.11.0.
+title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2020.11.0.
 description: "[!DNL Adobe Experience Manager] Notas de versão as a Cloud Service para 2020.11.0."
 exl-id: 8066c0fb-c2f5-4625-9448-b0c74ff4e192
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1261'
-ht-degree: 17%
+source-wordcount: '1262'
+ht-degree: 19%
 
 ---
 
@@ -62,7 +62,7 @@ A versão seguinte (2020.12.0) será lançada em 17 de dezembro de 2020
    * Os usuários podem navegar pela caixa de diálogo Link de email usando o `Tab` chave.
    * O fluxo de trabalho para criar perfis de codificação de vídeo é mais fácil de usar, considerando os aprimoramentos do leitor de tela.
    * Ao navegar usando `Tab` , o foco é movido para os elementos apropriados da interface do usuário no fluxo de trabalho para criar um vídeo interativo.
-   * As páginas Publicar, Editar ativo, Editar cortes inteligentes e Editor de conjunto de imagens foram aprimoradas para cumprir os padrões da Web. Os usuários da tecnologia de assistência (AT) agora podem navegar facilmente nessas páginas e realizar ações, como recortar imagens.
+   * As páginas Publicar, Editar ativo, Editar cortes inteligentes e Editor de conjunto de imagens foram aprimoradas para cumprir os padrões da Web. Os usuários da tecnologia de assistência (AT) agora podem navegar facilmente nessas páginas e agir nelas, como recortar imagens.
    * Os visualizadores são aprimorados para permitir que os usuários naveguem usando o teclado.
    * Os usuários de teclado e leitor de tela podem usar a funcionalidade de corte.
    * Os usuários de teclado podem gerenciar melhor os pontos de conexão.
@@ -73,9 +73,9 @@ A versão seguinte (2020.12.0) será lançada em 17 de dezembro de 2020
 
 ### Novidades {#what-is-new-commerce}
 
-* Lançamento do site de referência CIF Venia em 2020.11.05 que inclui a versão mais recente dos componentes principais CIF v1.5.0. Consulte [Site de referência CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.27) para obter mais detalhes.
+* Lançamento do site de referência CIF Venia - 2020.11.05 que inclui a versão mais recente dos componentes principais CIF v1.5.0. Consulte [Site de referência CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.27) para obter mais detalhes.
 
-* Lançamento de componentes principais CIF v1.5.0. Consulte [Componentes principais da CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0) para obter mais detalhes.
+* Lançamento de componentes principais de CIF v1.5.0. Consulte [Componentes principais da CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0) para obter mais detalhes.
 
 ### Correções de erros {#bug-fixes-commerce}
 
@@ -99,7 +99,7 @@ Consulte [Gerenciamento de ambientes](/help/implementing/cloud-manager/manage-en
 * O carregamento de dependências realizado antes da execução da compilação exigia o download de um plug-in Maven.
 * O link do rodapé do Cloud Manager para selecionar um idioma agora direcionará para o local correto.
 * Às vezes, durante a verificação do código, o processo SonarQube não era iniciado. O processo agora será detectado automaticamente e haverá uma tentativa de reinicialização.
-* Todos os pipelines de produção existentes são habilitados automaticamente na etapa Auditoria de experiência.
+* Todos os pipelines de produção já existentes serão habilitados automaticamente na etapa Auditoria de experiência.
 
 ## Adobe Experience Manager as a Cloud Service Foundation {#cloud-service-foundation}
 

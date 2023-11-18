@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Interactive Images,Interactive Videos,Carousel Banners
 role: Admin,User
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1002'
 ht-degree: 1%
@@ -144,9 +144,10 @@ O manipulador também requer uma chamada de função para que o Quickview funcio
    * Mapeie quaisquer variáveis adicionais contidas na Quickview.
 
       * Atualize o `loadQuickView(sku,*var1*,*var2*)` chame se você adicionar mais variáveis.
+
    * Criar uma `loadQuickView` () na página, fora do visualizador.
 
-      Por exemplo, o código a seguir grava o valor do SKU no console do navegador:
+     Por exemplo, o código a seguir grava o valor do SKU no console do navegador:
 
    ```xml {.line-numbers}
    function loadQuickView(sku){
@@ -156,9 +157,7 @@ O manipulador também requer uma chamada de função para que o Quickview funcio
 
    * Carregue uma página de HTML de teste em um servidor da Web e abra.
 
-      As variáveis do Quickview são mapeadas. A chamada de função está em vigor. E o console do navegador grava o valor da variável no console do navegador. Ele faz isso usando a função de amostra fornecida.
-
-
+     As variáveis do Quickview são mapeadas. A chamada de função está em vigor. E o console do navegador grava o valor da variável no console do navegador. Ele faz isso usando a função de amostra fornecida.
 
 1. Agora você pode usar uma função para chamar um pop-up simples no Quickview. O exemplo a seguir usa um `DIV` para um pop-up.
 1. Estilo do pop-up `DIV` da seguinte forma. Adicione um estilo extra, conforme desejado.
@@ -192,7 +191,7 @@ O manipulador também requer uma chamada de função para que o Quickview funcio
    <script type="text/javascript">
        function loadQuickView(sku){
            document.getElementById("txtSku").setAttribute("value",sku); // write sku value
-           document.getElementById("quickview_div").style.display="block"; // show popup
+           document.getElementById("quickview_div").style.display="block"; // show pop-up
        }
    </script>
    ```

@@ -2,9 +2,9 @@
 title: Composite Components em SPAs
 description: Saiba como criar seus próprios componentes compostos, componentes compostos por outros componentes que funcionam com o editor de aplicativo de página única (SPA) do AEM.
 exl-id: fa1ab1dd-9e8e-4e2c-aa9a-5b46ed8a02cb
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '781'
 ht-degree: 1%
 
 ---
@@ -13,11 +13,11 @@ ht-degree: 1%
 
 Os componentes compostos usam a natureza modular dos componentes AEM ao combinar vários componentes básicos em um único componente. Um caso de uso comum de componente composto é o componente de cartão, composto por uma combinação dos componentes de imagem e texto.
 
-Quando os componentes compostos são implementados corretamente na estrutura do Editor de aplicativo de página única (SPA) do AEM, os autores de conteúdo podem arrastar e soltar esses componentes da mesma forma que fariam com qualquer outro componente, mas ainda têm a capacidade de editar individualmente cada componente que compõe o componente composto.
+Quando os componentes compostos são implementados corretamente na estrutura do Editor de aplicativo de página única (SPA) do AEM, os autores de conteúdo podem arrastar e soltar esses componentes da mesma maneira que fazem com qualquer outro componente, mas ainda podem editar individualmente cada componente que compõe o componente composto.
 
 Este artigo demonstra como você pode adicionar um componente composto ao seu aplicativo de página única para funcionar perfeitamente com o Editor de SPA AEM.
 
-## Caso de uso  {#use-case}
+## Caso de uso {#use-case}
 
 Este artigo usará o componente de cartão típico como exemplo de caso de uso. Os cartões são um elemento comum da interface do usuário para muitas experiências digitais e geralmente são compostos de uma imagem e texto ou legenda associados. Um autor deseja poder arrastar e soltar todo o cartão, mas poder editar individualmente a imagem do cartão e personalizar o texto associado.
 

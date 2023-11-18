@@ -3,9 +3,9 @@ title: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud S
 description: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: afb3de515336d3d13b392f8fcc4d263f4f063689
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '917'
 ht-degree: 20%
 
 ---
@@ -52,7 +52,7 @@ Assista ao vídeo de Visão geral da versão de outubro de 2023 que exibe um res
 
 ### Novos recursos na visualização de ativos {#assets-view-features}
 
-* **Importar ativos em massa da fonte de dados do OneDrive**: os administradores agora têm a capacidade de [importar um grande número de ativos do OneDrive para o AEM Assets](/help/assets/bulk-import-assets-view.md#onedrive-developer-application). A lista atualizada das fontes de dados com suporte para importação em massa inclui Azure, AWS, Google Cloud, Dropbox e OneDrive.
+* **Importar ativos em massa da fonte de dados do OneDrive**: agora os administradores podem [importar um grande número de ativos do OneDrive para o AEM Assets](/help/assets/bulk-import-assets-view.md#onedrive-developer-application). A lista atualizada das fontes de dados com suporte para importação em massa inclui Azure, AWS, Google Cloud, Dropbox e OneDrive.
 
   ![atribuir formulário de metadados a uma pasta](/help/assets/assets/bulk-import-source-details-onedrive.png)
 

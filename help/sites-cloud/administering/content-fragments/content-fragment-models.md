@@ -4,7 +4,7 @@ description: Saiba como os modelos de fragmento de conteúdo servem como base pa
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '3058'
 ht-degree: 59%
@@ -202,7 +202,7 @@ Muitas propriedades são autoexplicativas. Para certas propriedades, os detalhes
 As várias opções para realizar/renderizar o campo em um fragmento. Geralmente, isso permite definir se o autor vê uma única instância do campo ou se tem permissão para criar várias instâncias.
 
 * **Rótulo do campo**
-Inserir um **Rótulo do campo** gera automaticamente um **Nome da propriedade**, que pode ser atualizado manualmente, se necessário.
+Inserir um **Rótulo do campo** gera automaticamente um **Nome da propriedade**, que pode ser atualizado manualmente se necessário.
 
 * **Validação**
 A validação básica está disponível por meio de mecanismos como a propriedade **Obrigatório**. Alguns tipos de dados têm campos de validação de adição. Consulte [Validação](#validation) para obter mais detalhes.

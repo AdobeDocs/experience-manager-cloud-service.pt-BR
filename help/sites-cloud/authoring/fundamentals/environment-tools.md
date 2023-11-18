@@ -2,10 +2,10 @@
 title: Ambiente e ferramentas de criação
 description: O ambiente de criação do AEM fornece vários mecanismos para organização e edição de conteúdo
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '2158'
-ht-degree: 90%
+source-wordcount: '2161'
+ht-degree: 87%
 
 ---
 
@@ -189,7 +189,7 @@ Clicar no componente destacará o componente no editor de páginas. As ações d
 
   Os componentes de uma página básica terão as opções normais.
 
-  Se o componente que você clicar na árvore for editável, um ícone de chave inglesa aparecerá à direita do nome. Clicar nesse ícone iniciará diretamente a caixa de diálogo de edição do componente.
+  Se o componente que você clicar na árvore for editável, um ícone de chave inglesa aparecerá à direita do nome. Clicar nesse ícone inicia a caixa de diálogo de edição do componente.
 
   ![Botão Editar árvore de conteúdo](/help/sites-cloud/authoring/assets/content-tree-edit.png)
 
@@ -288,7 +288,7 @@ Você pode acessar esses itens usando os ícones no canto superior direito. O í
 >* Dependendo das características da página, alguns modos podem não estar disponíveis.
 >* O acesso a alguns modos exige as permissões/privilégios apropriados.
 >* O modo de desenvolvedor não está disponível em dispositivos móveis devido a restrições de espaço.
->* Existe um [atalho de teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) ( `Ctrl-Shift-M`) para alternar entre o modo de **Visualização** e o atualmente selecionado (por exemplo, **Editar**, **Layout** etc.).
+>* Existe uma [atalho de teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) ( `Ctrl-Shift-M`) para alternar entre **Visualizar** e o modo selecionado no momento (por exemplo, **Editar**, **Layout** e assim por diante).
 >
 
 ## Seleção de caminho {#path-selection}
@@ -315,10 +315,10 @@ O navegador de caminho é organizado da mesma maneira que a [exibição de colun
 
 ![Navegador de caminhos](/help/sites-cloud/authoring/assets/path-browser.png)
 
-* Após selecionar um recurso, o botão **Selecionar** no canto superior direito da caixa de diálogo se torna ativo. Selecione para confirmar a seleção ou **Cancelar** para suspender.
+* Após selecionar um recurso, a variável **Selecionar** no canto superior direito da caixa de diálogo se torna ativo. Selecione para confirmar a seleção ou **Cancelar** para suspender.
 * Se o contexto permite a seleção de vários recursos, selecionar um recurso também ativa o botão **Selecionar**, mas, além disso, adiciona uma contagem do número de recursos selecionados no canto superior direito da janela. Clique no **X** ao lado do número para desmarcar tudo.
 * Ao navegar pela árvore, sua localização é refletida na navegação estrutural na parte superior da caixa de diálogo. Essas navegações estruturais também podem ser usadas para saltar rapidamente dentro da hierarquia de recursos.
-* A qualquer momento, é possível usar o campo de pesquisa na parte superior da caixa de diálogo. Clique no **X** no campo de pesquisa para limpar a pesquisa.
+* A qualquer momento, você pode usar o campo de pesquisa na parte superior da caixa de diálogo. Clique no **X** no campo de pesquisa para limpar a pesquisa.
 * Para limitar sua pesquisa, você pode revelar as opções de filtro e filtrar seus resultados com base em um determinado caminho.
 
   ![Opção Filtros](/help/sites-cloud/authoring/assets/filters-option.png)

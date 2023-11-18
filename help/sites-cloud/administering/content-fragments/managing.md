@@ -4,10 +4,10 @@ description: Saiba como gerenciar os fragmentos de conteúdo do AEM no console e
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '2531'
-ht-degree: 54%
+ht-degree: 53%
 
 ---
 
@@ -226,10 +226,10 @@ Para criar um fragmento de conteúdo:
 
 1. A variável **Novo fragmento de conteúdo** será aberta, aqui será possível especificar:
 
-   * **Local** — será preenchido automaticamente com o local atual, mas você pode selecionar um local diferente, se necessário
+   * **Localização** - será preenchido automaticamente com o local atual, mas você pode selecionar um local diferente, se necessário
    * **Modelo de fragmento de conteúdo** — selecione o modelo a ser usado como base do fragmento na lista suspensa
    * **Título**
-   * **Nome** — será preenchido automaticamente com base no **Título**, mas você pode editá-lo, se necessário
+   * **Nome** - será preenchido automaticamente com base no **Título**, mas você pode editá-lo se necessário
    * **Descrição**
 
    ![Caixa de diálogo Novo fragmento de conteúdo](assets/cf-managing-new-cf-dialog.png)

@@ -2,10 +2,10 @@
 title: Conheça as noções básicas da modelagem de conteúdo
 description: Conheça as noções básicas da modelagem de conteúdo do seu CMS headless usando fragmentos de conteúdo.
 exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 94%
+source-wordcount: '900'
+ht-degree: 93%
 
 ---
 
@@ -109,7 +109,7 @@ O tipo de dados pode ser configurado para permitir que os autores de fragmento:
 
 >[!NOTE]
 >
->Você também pode criar referências ad hoc usando links dentro de blocos de texto.
+>Também é possível criar referências improvisadas usando links dentro de Blocos de texto.
 
 ## Níveis de estrutura (fragmentos aninhados) {#levels-of-structure-nested-fragments}
 

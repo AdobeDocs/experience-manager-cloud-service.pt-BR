@@ -4,10 +4,10 @@ description: Saiba mais sobre as poderosas opções de sincronização da Live C
 feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '2414'
-ht-degree: 94%
+ht-degree: 92%
 
 ---
 
@@ -22,7 +22,7 @@ O Adobe Experience Manager fornece várias configurações de sincronização pr
 
 ## Configurações de implantação instaladas e personalizadas {#installed-and-custom-rollout-configurations}
 
-Esta seção fornece informações sobre as configurações de implantação instaladas e as ações de sincronização que elas usam, bem sobre como criar configurações personalizadas se necessário.
+Esta seção fornece informações sobre as configurações de implantação instaladas e as ações de sincronização que elas usam, e como criar configurações personalizadas, se necessário.
 
 >[!CAUTION]
 >
@@ -174,7 +174,7 @@ Também é possível definir as configurações de implantação para uma págin
 
    ![Herança da Live Copy da página principal](../assets/live-copy-inherit.png)
 
-1. Se necessário, ajuste o sinalizador de **Herança da Live Copy**. Se essa opção for marcada, a configuração da Live Copy terá efeito em todas as tarefas derivadas.
+1. Se necessário, ajuste a variável **Herança da Live Copy** sinalizador. Se essa opção for marcada, a configuração da Live Copy terá efeito em todas as tarefas derivadas.
 
 1. Limpe a propriedade **Herdar configurações de implantação da página principal** e selecione uma ou mais configurações de implantação na lista.
 

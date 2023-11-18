@@ -2,10 +2,10 @@
 title: Atributos e tipos
 description: Saiba mais sobre os atributos e tipos de dados exigidos pelo Editor universal.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '679'
-ht-degree: 92%
+source-wordcount: '682'
+ht-degree: 85%
 
 ---
 
@@ -32,7 +32,7 @@ Para que um aplicativo possa ser editado pelo Editor universal, ele deve ser ins
 | `data-editor-itemfilter` | Define quais referências podem ser usadas |
 | `data-editor-itemlabel` | Define um rótulo personalizado para um item selecionável que é exibido no editor. <br>Caso`itemmodel` seja definido, o rótulo será recuperado por meio do modelo |
 | `data-editor-itemmodel` | Define um modelo que será utilizado para a edição com base em formulários no painel de propriedades |
-| `data-editor-behavior` | Define o comportamento de uma instrumentação, por exemplo, textos ou imagens isoladas também podem atuar como um componente, para que possam ser movidos ou excluídos |
+| `data-editor-behavior` | Define o comportamento de uma instrumentação; por exemplo, texto ou imagem independentes também podem imitar um componente para torná-lo móvel ou excluível |
 
 ## Tipos de item {#item-types}
 
@@ -40,10 +40,10 @@ Para que um aplicativo possa ser editado pelo Editor universal, ele deve ser ins
 |---|---|---|---|---|---|---|---|
 | `text` | O texto é editável nas tags HTML, mas somente em um formato de texto simples; a formatação Rich Text não está disponível. Isso é bastante usado em componentes de título, por exemplo | Opcional | Obrigatório | n/a | Opcional | n/a | Opcional |
 | `richtext` | O texto é editável com recursos completos de Rich Text. O RTE será exibido no painel direito | Opcional | Obrigatório | n/a | Opcional | n/a | Opcional |
-| `media` | O item editável é um ativo, por exemplo, uma imagem ou vídeo | Opcional | Obrigatório | Opcional<br>lista de critérios de filtro de imagem ou vídeo que é passada para o seletor de ativos | Opcional | n/a | Opcional |
+| `media` | O editável é um ativo, por exemplo, imagem ou vídeo | Opcional | Obrigatório | Opcional<br>lista de critérios de filtro de imagem ou vídeo que é passada para o seletor de ativos | Opcional | n/a | Opcional |
 | `container` | O item editável atua como um container de componentes, o que também é conhecido como um Sistema de parágrafo. | Depende do <br>, veja abaixo | Depende do <br>, veja abaixo | Opcional<br>uma lista de componentes permitidos | Opcional | n/a | n/a |
 | `component` | O item editável é um componente. Ele não acrescenta nenhuma funcionalidade extra, mas é necessário para indicar partes do DOM que podem ser movidas/excluídas e para abrir o painel de propriedades e seus campos | Obrigatório | n/a | n/a | Opcional | Opcional | n/a |
-| `reference` | O item editável é uma referência, por exemplo, um fragmento de conteúdo, fragmento de experiência ou produto | Depende do <br>, veja abaixo | Depende do <br>, veja abaixo | Opcional<br>lista de critérios de filtro para fragmentos de conteúdo, produtos ou fragmentos de experiência que é passada para o seletor de referência | Opcional | Opcional | n/a |
+| `reference` | O editável é uma referência, por exemplo, Fragmento de conteúdo, Fragmento de experiência ou Produto | Depende do <br>, veja abaixo | Depende do <br>, veja abaixo | Opcional<br>lista de critérios de filtro para fragmentos de conteúdo, produtos ou fragmentos de experiência que é passada para o seletor de referência | Opcional | Opcional | n/a |
 
 Dependendo do caso de uso, `itemprop` ou `itemid` podem ou não ser exigidos. Por exemplo:
 

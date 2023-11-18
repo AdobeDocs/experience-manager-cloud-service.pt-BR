@@ -5,9 +5,9 @@ uuid: c6c0d8ea-743f-4852-99d1-69fd50a0994e
 contentOwner: vishgupt
 topic-tags: document_services, publish
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1149'
+source-wordcount: '1148'
 ht-degree: 3%
 
 ---
@@ -60,7 +60,7 @@ As tarefas atribuídas a um grupo aparecem na Caixa de Entrada de todos os membr
 Ao abrir uma tarefa, você pode exibir os detalhes da tarefa e executar as ações disponíveis. As ações disponíveis para uma tarefa são definidas na etapa Atribuir tarefa do Forms Workflow associado.
 
 1. Toque para selecionar a miniatura da tarefa. As opções para abrir ou delegar a tarefa selecionada aparecem na parte superior.
-1. Toque **Abertura** para exibir detalhes da tarefa e realizar ações. A visualização detalhada da tarefa é aberta. Nesta exibição, é possível exibir detalhes da tarefa e realizar ações na tarefa.
+1. Selecionar **Abertura** para exibir detalhes da tarefa e as ações disponíveis. A visualização detalhada da tarefa é aberta. Nesta exibição, é possível exibir detalhes da tarefa e agir em uma tarefa.
 
    >[!NOTE]
    >

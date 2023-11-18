@@ -2,10 +2,10 @@
 title: Visualização de páginas usando dados do ContextHub
 description: A barra de ferramentas do ContextHub exibe os dados dos armazenamentos do ContextHub, permite alterar esses dados e é útil para visualizar o conteúdo
 exl-id: 9c0536c5-900e-4814-9e31-f9fee5adc17c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '360'
-ht-degree: 31%
+ht-degree: 25%
 
 ---
 
@@ -56,6 +56,6 @@ A sobreposição pop-up de um módulo pode incluir elementos de formulário que 
 
 ### Modo de tela inteira {#fullscreen-mode}
 
-As sobreposições de pop-up podem incluir um ícone que você seleciona para expandir o conteúdo de pop-up para cobrir toda a janela ou tela do navegador.
+As sobreposições de pop-up podem incluir um ícone selecionado para expandir o conteúdo pop-up de forma a abranger toda a janela ou tela do navegador.
 
 ![Botão de tela cheia](/help/sites-cloud/authoring/assets/contexthub-fullscreen.png)

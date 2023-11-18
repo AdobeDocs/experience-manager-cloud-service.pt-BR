@@ -2,9 +2,9 @@
 title: Modelos de páginas
 description: Os modelos de página são usados ao criar uma página que é usada como base para a nova página
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '3279'
+source-wordcount: '3278'
 ht-degree: 8%
 
 ---
@@ -449,7 +449,7 @@ Define o conteúdo inicial que uma nova página terá após a criação:
 * É mesclado com a estrutura ( `/structure`) ao criar uma página.
 * Nenhuma página existente será atualizada se o conteúdo inicial for alterado após a criação.
 * A variável `root` O nó contém uma lista de componentes para definir o que está disponível na página resultante.
-* Se o conteúdo for adicionado a um componente no modo de estrutura e esse componente for subsequentemente desbloqueado (ou vice-versa), esse conteúdo será usado como conteúdo inicial.
+* Se o conteúdo for adicionado a um componente no modo estrutura e esse componente for posteriormente desbloqueado (ou vice-versa), esse conteúdo será usado como conteúdo inicial.
 
 ### Layout {#layout}
 

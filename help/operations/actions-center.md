@@ -2,10 +2,10 @@
 title: Centro de ações
 description: Aproveite o Centro de ações para agir de forma conveniente em incidentes e outras informações importantes
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '726'
-ht-degree: 93%
+ht-degree: 79%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 93%
 
 O AEM as Cloud Service envia notificações por email do Centro de ações quando ocorrem incidentes críticos que exigem ação imediata, bem como recomendações de otimização proativas. Os exemplos incluem uma fila bloqueada ou um conjunto de credenciais que está expirando. O conjunto completo de tipos de notificação do Centro de ações pode ser visto na [tabela abaixo](#supported-notification-types), que será ampliada ao longo do tempo.
 
-Ao receber uma notificação do Centro de ações, você pode clicar nela para abrir o Centro de ações do AEM as a Cloud Service na forma de um pop-up, que exibe um contexto adicional explicando a ação a ser realizada.
+Quando uma notificação por email do Centro de Ações for recebida, é possível clicar nela para abrir o Centro de Ações do AEM as a Cloud Service com um pop-up que exibe um contexto adicional explicando a ação que um cliente deve tomar.
 
 Além de exibir informações sobre a notificação em que você clicou, o Centro de ações serve como um hub onde você pode visualizar e gerenciar as notificações atuais e anteriores. <!-- It can be accessed directly at the url TBD (Alexandru: I'm intentionally keeping it TBD for now so customers do not find it) -->
 
@@ -35,7 +35,7 @@ Para configurar o recebimento de notificações por email do Centro de ações, 
 
 ## Fluxo detalhado do usuário {#detailed-user-flow}
 
-Ao clicar no email, você será redirecionado para o Centro de ações, onde um pop-up será exibido com o contexto da notificação em que você clicou e, em alguns casos, com links para informações adicionais que descrevem como realizar ações de correção. Você também pode acessar o Centro de ações diretamente em [https://experience.adobe.com/aem/actions-center](https://experience.adobe.com/aem/actions-center/), onde você pode selecionar o programa e o ambiente relevantes.
+Ao clicar no e-mail, você será redirecionado para o Centro de Ações, com um pop-up mostrando o contexto da notificação clicada e, em alguns casos, links para informações adicionais descrevendo como executar uma ação corretiva. Você também pode acessar o Centro de ações diretamente em [https://experience.adobe.com/aem/actions-center](https://experience.adobe.com/aem/actions-center/), onde você pode selecionar o programa e o ambiente relevantes.
 
 ![Detalhes do incidente](/help/operations/assets/incident-details.png)
 
@@ -45,7 +45,7 @@ No Centro de ações, é possível ver uma lista de outras notificações recent
 
 ![Lista de notificações](/help/operations/assets/notification-list.png)
 
-Na maioria dos casos, o pop-up deve fornecer todo o contexto necessário para resolver o problema. No entanto, se tiver perguntas para o suporte da Adobe, clique no link **Entrar em contato com o suporte** no pop-up. Isso exibirá um formulário, no qual é possível descrever a dúvida e enviá-la para criar um tíquete de suporte, que também incluirá uma referência à notificação específica para que um engenheiro de suporte da Adobe tenha o contexto relevante.
+Na maioria dos casos, a janela pop-up deve fornecer todo o contexto necessário para resolver o problema. No entanto, se houver dúvidas sobre o Suporte para Adobe, clique no link **Entrar em contato com o suporte** no pop-up. Isso exibirá um formulário, no qual é possível descrever a dúvida e enviá-la para criar um tíquete de suporte, que também incluirá uma referência à notificação específica para que um engenheiro de suporte da Adobe tenha o contexto relevante.
 
 ![Entrar em contato com o suporte 1](/help/operations/assets/contact-support1.png)
 

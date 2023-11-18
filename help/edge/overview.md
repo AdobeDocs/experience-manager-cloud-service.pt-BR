@@ -3,9 +3,9 @@ title: Introdução aos serviços de entrega de borda
 description: Introdução aos Serviços de entrega de borda (EDS).
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '862'
 ht-degree: 2%
 
 ---
@@ -22,15 +22,15 @@ Ao usar o Edge Delivery, você pode:
 
 ## Como funciona o Edge Delivery {#edge-works}
 
-O diagrama a seguir ilustra como você pode editar conteúdo no Microsoft Word (edição baseada em documentos) e publicar no Edge Delivery. Ele também mostra o método tradicional de publicação do AEM usando os vários editores.
+O diagrama a seguir ilustra como você pode editar conteúdo no Microsoft® Word (edição baseada em documentos) e publicar no Edge Delivery. Ele também mostra o método tradicional de publicação do AEM usando os vários editores.
 
 ![Arquitetura de entrega de borda](assets/edgedelivery.png)
 
 O Edge Delivery é um conjunto combinável de serviços que permite um alto grau de flexibilidade na maneira como você cria conteúdo no seu site. Como mencionado anteriormente, você pode usar ambos [Criação no AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html) e [criação baseada em documento](https://www.hlx.live/docs/authoring).
 
-Por exemplo, você pode usar o conteúdo diretamente do Microsoft Word ou do Google Docs. Isso significa que os documentos dessas fontes podem se tornar páginas do site. Além disso, cabeçalhos, listas, imagens e elementos de fonte podem ser transferidos da fonte inicial para o site. O novo conteúdo será adicionado instantaneamente, sem um processo de reconstrução.
+Por exemplo, você pode usar o conteúdo diretamente do Microsoft® Word ou do Google Docs. Isso significa que os documentos dessas fontes podem se tornar páginas do site. Além disso, cabeçalhos, listas, imagens e elementos de fonte podem ser transferidos da fonte inicial para o site. O novo conteúdo é adicionado instantaneamente, sem um processo de reconstrução.
 
-O Edge Delivery aproveita o GitHub para que os clientes possam gerenciar e implantar código diretamente de seu repositório GitHub. Por exemplo, você pode gravar conteúdo no Google Docs ou no Microsoft Word e a funcionalidade do site pode ser desenvolvida usando CSS e JavaScript no GitHub. Quando estiver pronto, você poderá usar a extensão do navegador Sidekick para visualizar e publicar atualizações de conteúdo.
+O Edge Delivery usa o GitHub para que os clientes possam gerenciar e implantar o código diretamente do repositório do GitHub. Por exemplo, você pode gravar conteúdo no Google Docs ou no Microsoft® Word e a funcionalidade do site pode ser desenvolvida usando CSS e JavaScript no GitHub. Quando estiver pronto, você poderá usar a extensão do navegador Sidekick para visualizar e publicar atualizações de conteúdo.
 
 Leitura adicional:
 
@@ -42,7 +42,7 @@ Leitura adicional:
 
 Os Edge Delivery Services fazem parte do Adobe Experience Manager e, como tal, os sites de Entrega de borda e AEM podem coexistir no mesmo domínio. Este é um caso de uso comum para sites maiores. Além disso, o conteúdo do Edge Delivery pode ser facilmente consumido em suas páginas do AEM Sites e vice-versa.
 
-Também é possível usar os Edge Delivery Services em combinação com o Adobe Target, o Analytics e o Launch.
+Você também pode usar Edge Delivery Services com o Adobe Target, o Analytics e o Launch.
 
 ## Acesso ao Edge Delivery Services {#getting-access}
 
@@ -64,7 +64,7 @@ O Adobe tem o compromisso de capacitá-lo com o melhor envolvimento e suporte da
 
 ### Como acessar o canal de colaboração do produto {#collab-channel}
 
-Dado o valor do canal de comunicação direta com os clientes, todos os clientes de AEM no lançamento estabelecerão um canal de Slack para fins de velocidade, atualizações críticas e relatórios dimensionados sobre a qualidade da experiência. Você receberá um convite do Adobe para se associar a um canal de Slack específico da sua organização.
+Dado o valor do canal de comunicação direta com os clientes, todos os clientes de AEM no lançamento estabelecerão um canal Slack para velocidade, atualizações críticas e relatórios dimensionados sobre a qualidade da experiência. Você recebe um convite do Adobe para se associar a um canal de Slack específico da sua organização.
 
 Para obter mais informações, consulte [Uso do Slack Bot](https://www.hlx.live/docs/slack) para obter mais detalhes.
 

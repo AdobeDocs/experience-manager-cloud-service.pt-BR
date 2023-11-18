@@ -3,7 +3,7 @@ title: Práticas recomendadas de consulta e indexação
 description: Saiba como otimizar seus índices e consultas com base nas diretrizes de práticas recomendadas da Adobe.
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '3128'
 ht-degree: 44%
@@ -151,8 +151,8 @@ Para explicar uma consulta, faça o seguinte:
 
 ![Pop-up Explicação da consulta](./assets/query-explanation-popup.png)
 
-Depois de selecionar `Explain`, o usuário recebe um pop-up que descreve o resultado da explicação da consulta (e execução, se selecionada).
-Este pop-up inclui detalhes de -
+Depois de selecionar `Explain`, o usuário verá um pop-up descrevendo o resultado da explicação da consulta (e a execução, se selecionada).
+Esse pop-up inclui detalhes de -
 * Os Índices Usados ao executar a consulta (ou nenhum índice se a consulta for executada usando [Percurso do repositório](#repository-traversal)).
 * O tempo de execução (se `Include Execution Time` foi marcada) e a contagem de resultados lidos (se `Read first page of results` ou `Include Node Count` foram marcadas).
 * O plano de execução, que permite a análise detalhada de como a consulta é executada - consulte [Lendo o Plano de Execução da Consulta](#reading-query-execution-plan) para saber como interpretar isso.

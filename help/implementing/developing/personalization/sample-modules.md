@@ -2,7 +2,7 @@
 title: Exemplos de tipos de módulo da interface do usuário do ContextHub
 description: O ContextHub fornece vários módulos de interface do usuário de amostra que você pode usar em suas soluções
 exl-id: 31ff4444-8d96-4817-9676-ea5ad36dcda5
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1124'
 ht-degree: 0%
@@ -210,7 +210,7 @@ Instâncias do `contexthub.tagcloud` O módulo da interface do usuário não req
 
 ## Tipo de módulo de interface do usuário do granite.profile {#granite-profile-ui-module-type}
 
-A variável `granite.profile` O módulo da interface do usuário do ContextHub exibe o nome de exibição do usuário atual. O pop-up revela o nome de logon do usuário e permite alterar o valor do nome de exibição. O módulo de interface do usuário obtém informações de um armazenamento do ContextHub chamado perfil, que é baseado no [granite.profile](sample-stores.md#granite-profile-sample-store-candidate) candidato ao armazenamento.
+A variável `granite.profile` O módulo da interface do usuário do ContextHub exibe o nome de exibição do usuário atual. A janela pop-up revela o nome de logon do usuário e permite alterar o valor do nome de exibição. O módulo de interface do usuário obtém informações de um armazenamento do ContextHub chamado perfil, que é baseado no [granite.profile](sample-stores.md#granite-profile-sample-store-candidate) candidato ao armazenamento.
 
 ![módulo granite.profile](assets/profile-module.png)
 

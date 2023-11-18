@@ -2,7 +2,7 @@
 title: Uso de condições de ocultação
 description: As condições de ocultação podem ser usadas para determinar se um recurso de componente é renderizado ou não.
 exl-id: 2a96f246-fb0f-4298-899e-ebbf9fc1c96f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '617'
 ht-degree: 2%
@@ -45,7 +45,7 @@ Ao definir a expressão ocultar, lembre-se:
 
 * Para ser válido, o escopo no qual a propriedade é encontrada deve ser expresso (por exemplo, `cqDesign.myProperty`).
 * Os valores são somente leitura.
-* As funções (se necessárias) devem ser limitadas a um determinado conjunto fornecido pelo serviço.
+* As funções (se necessário) devem ser limitadas a um determinado conjunto fornecido pelo serviço.
 
 ## Exemplo {#example}
 

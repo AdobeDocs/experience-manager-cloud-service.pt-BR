@@ -2,10 +2,10 @@
 title: Jornada do arquiteto de conteúdo do AEM Headless
 description: Comece aqui para obter uma jornada guiada pelos recursos headless avançados e flexíveis do AEM, suas funcionalidades e aprenda a modelar o conteúdo em seu primeiro projeto headless.
 exl-id: ccfec100-8005-4f47-b5b6-ca188b35315c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '797'
-ht-degree: 87%
+source-wordcount: '793'
+ht-degree: 85%
 
 ---
 
@@ -25,7 +25,7 @@ Este manual aborda os tópicos mais importantes para que, ao concluí-lo, você:
 
 * Entenda o que é a entrega de conteúdo headless e seus benefícios.
 * Entenda como modelar o conteúdo para recursos headless do AEM.
-* Tenha a capacidade de realizar os primeiros passos de modelagem do conteúdo no seu primeiro projeto headless do AEM.
+* Dê os primeiros passos modelando seu conteúdo para seu primeiro projeto AEM headless.
 
 ## Jornadas de documentação do AEM {#documentation-journeys}
 

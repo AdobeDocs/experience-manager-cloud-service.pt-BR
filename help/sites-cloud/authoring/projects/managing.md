@@ -2,10 +2,10 @@
 title: Gerenciamento de projetos
 description: O console de Projetos permite organizar o projeto, agrupando os recursos em uma única entidade que pode ser acessada e gerenciada no próprio console
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '876'
-ht-degree: 84%
+source-wordcount: '875'
+ht-degree: 82%
 
 ---
 
@@ -38,7 +38,7 @@ O procedimento de criação de um projeto é o mesmo em todos os projetos. A dif
 
    ![Criação de um projeto](/help/sites-cloud/authoring/assets/projects-create.png)
 
-1. Defina o **Título** e a **Descrição** e adicione uma imagem de **Miniatura** se necessário. Também é possível adicionar ou excluir usuários, bem como sua associação com um grupo. Além disso, você pode clicar em **Avançado** para adicionar um nome usado no URL.
+1. Defina o **Título** e **Descrição** e adicionar um **Miniatura** imagem, se necessário. Também é possível adicionar ou excluir usuários, bem como sua associação com um grupo. Além disso, você pode clicar em **Avançado** para adicionar um nome usado no URL.
 
    ![Adicionar detalhes do projeto](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
@@ -138,7 +138,7 @@ Para inativar (ou ativar) um projeto:
    Talvez seja necessário adicionar esse bloco se ele ainda não estiver no projeto. Consulte [Adicionar blocos](#adding-items-to-a-tile).
 
 1. Selecione **Editar**.
-1. Altere o seletor de **Ativo** para **Inativo** (ou vice-versa).
+1. Alterar o seletor de **Ativo** para **Inativo** (ou inversamente).
 
    ![Ativar um projeto](/help/sites-cloud/authoring/assets/projects-add-team.png)
 

@@ -2,10 +2,10 @@
 title: Editar as propriedades da página
 description: Saiba como definir as propriedades necessárias para gerenciar uma página no AEM.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '2270'
-ht-degree: 94%
+ht-degree: 93%
 
 ---
 
@@ -315,7 +315,7 @@ Depois de entrar na edição de itens em massa é possível:
 * **Exibir**
 
    * Uma lista das páginas afetadas
-      * Você pode selecionar/desmarcar, se necessário
+      * Você pode marcar/desmarcar se necessário
       * Guias
          * Assim como ao visualizar propriedades de uma única página, as propriedades são ordenadas em guias.
    * Um subconjunto de propriedades

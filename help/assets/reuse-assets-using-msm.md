@@ -6,7 +6,7 @@ mini-toc-levels: 1
 role: User, Admin, Architect
 feature: Asset Management,Multi Site Manager
 exl-id: a71aebdf-8e46-4c2d-8960-d188b14aaae9
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '3403'
 ht-degree: 12%
@@ -194,7 +194,7 @@ Selecione um ativo ou uma pasta de live copy, abra o painel à esquerda e clique
 
 ## Propagar modificações da origem para as live copies {#rollout-sync}
 
-Depois que uma origem é modificada, as alterações podem ser propagadas para as live copies usando uma ação de sincronização ou de implantação. Para entender a diferença entre as duas ações, consulte [glossário](#glossary).
+Depois que uma origem é modificada, as alterações podem ser propagadas para as live copies usando uma ação de sincronização ou de implantação. Para compreender a diferença entre as duas ações, consulte [glossário](#glossary).
 
 ### Ação de implantação {#rollout}
 
@@ -344,7 +344,7 @@ Live copies e origens são ativos ou pastas que podem ser gerenciados, até cert
 
 * Copiar uma live copy cria um ativo de live copy com a mesma origem da primeira live copy.
 * Quando você move uma origem ou sua live copy, o relacionamento dinâmico é mantido.
-* A ação de edição não funciona para ativos de live copy. Se a origem de uma live copy for uma live copy em si, a ação de edição não funcionará para ela.
+* A ação de edição não funciona para ativos de live copy. Se a origem de uma live copy for uma live copy propriamente dita, a ação de edição não funcionará para ela.
 * A ação de check-out não está disponível para ativos de live copy.
 * Para a pasta de origem, a opção para criar tarefas de revisão está disponível.
 * Ao visualizar a lista de ativos na exibição em lista e na exibição em coluna, um ativo ou pasta de live copy exibe uma &quot;live copy&quot; em relação a ele. Ele ajuda a identificar facilmente as live copies em uma pasta.

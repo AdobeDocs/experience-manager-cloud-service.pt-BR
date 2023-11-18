@@ -2,10 +2,10 @@
 title: Criação de modelos de páginas
 description: O modelo define a estrutura da página resultante e, com o editor de modelos, criar e manter modelos não é mais uma tarefa somente para desenvolvedores
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '4538'
-ht-degree: 87%
+source-wordcount: '4535'
+ht-degree: 86%
 
 ---
 
@@ -351,8 +351,8 @@ Isso permite que você defina os detalhes do design.
 
 A janela de configuração é dividida em dois.
 
-* Do lado esquerdo da caixa de diálogo, em **Política**, você tem a capacidade de selecionar uma política existente.
-* Do lado direito da caixa de diálogo, em **Propriedades**, você pode definir as propriedades específicas ao tipo de componente.
+* No lado esquerdo do diálogo, em **Política**, você pode selecionar uma política existente ou selecionar uma existente.
+* No lado direito do diálogo, em **Propriedades**, você pode definir as propriedades específicas ao tipo de componente.
 
 As propriedades disponíveis dependem do componente selecionado. Por exemplo, para um componente de texto, as propriedades definem as opções de copiar e colar, de formatação e de estilo de parágrafo, entre outras.
 

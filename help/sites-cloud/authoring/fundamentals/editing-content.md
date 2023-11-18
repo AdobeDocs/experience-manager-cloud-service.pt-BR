@@ -2,7 +2,7 @@
 title: Editar conteúdo da página
 description: Depois que a página é criada, é possível editar o conteúdo para fazer as atualizações necessárias
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '2973'
 ht-degree: 93%
@@ -173,7 +173,7 @@ Para criar um componente arrastando um dos tipos de ativos acima:
 
    Um componente, apropriado para o tipo de ativo, será criado nesse local e conterá o ativo selecionado.
 
-1. [Edite](#edit-content) o componente, se necessário.
+1. [Editar](#edit-content) o componente, se necessário.
 
 >[!NOTE]
 >

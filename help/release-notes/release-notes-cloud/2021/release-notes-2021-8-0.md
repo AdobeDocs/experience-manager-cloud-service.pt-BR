@@ -2,7 +2,7 @@
 title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2021.8.0.
 description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2021.8.0.
 exl-id: 8b041934-1c4a-4670-9b03-d38f683b99e5
-source-git-commit: f956b8379b5b93bc00e25f0eec641430c5565e34
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1024'
 ht-degree: 25%
@@ -54,7 +54,7 @@ Dê uma olhada no [Visão geral da versão de agosto de 2021](https://video.tv.a
 ### Bugs corrigidos em [!DNL Assets] {#assets-bugs-fixed}
 
 * Quando um membro do grupo de colaboradores navega até a [!DNL Assets] Console, um extra `POST` é gerada para criar uma coleção. Essa solicitação não é necessária; ela falha devido a problemas de permissão e cria muitos erros nos logs. (CQ-4328856)
-* Quando os usuários visualizam um ativo e selecionam o [!UICONTROL Linha do tempo] no menu pop-up do painel esquerdo, um erro é exibido. Nos logs, muitos avisos são registrados devido a uma consulta inválida. (CQ-4328919)
+* Quando os usuários visualizam um ativo e selecionam o [!UICONTROL Linha do tempo] no menu pop-up no painel esquerdo, um erro é exibido. Nos logs, muitos avisos são registrados devido a uma consulta inválida. (CQ-4328919)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 

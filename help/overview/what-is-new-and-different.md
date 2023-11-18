@@ -2,10 +2,10 @@
 title: O que é diferente e quais são as novidades - Adobe Experience Manager as a Cloud Service
 description: O que é diferente e quais são as novidades - Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1889'
-ht-degree: 94%
+source-wordcount: '1891'
+ht-degree: 93%
 
 ---
 
@@ -182,7 +182,7 @@ Outro requisito comum para desenvolvedores é o acesso rápido aos arquivos de l
 
 Devido à clara separação de código e conteúdo, os desenvolvedores podem usar um processo específico para atualizar o conteúdo como parte de uma implantação. Os casos de uso típicos de conteúdo mutável são:
 
-* Conteúdo *padrão* que faz parte do projeto do cliente (por exemplo, pastas, modelos, fluxos de trabalho, etc.)
+* Padrão *padrão* conteúdo que faz parte do projeto do cliente (por exemplo, pastas, modelos, fluxos de trabalho e assim por diante)
 
 * Definições de índice de pesquisa
 

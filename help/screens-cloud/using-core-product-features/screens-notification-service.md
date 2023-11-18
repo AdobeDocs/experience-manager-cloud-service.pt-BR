@@ -2,9 +2,9 @@
 title: Serviço de notificação do Screens no Screens as a Cloud Service
 description: Esta página descreve como configurar o Serviço de notificação no Screens as a Cloud Service.
 index: true
-source-git-commit: 81ce7954479366e40b47325577e1450f3d7a4c29
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '124'
+source-wordcount: '125'
 ht-degree: 4%
 
 ---

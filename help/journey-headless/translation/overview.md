@@ -2,10 +2,10 @@
 title: Jornada de tradução headless do AEM
 description: Comece aqui uma jornada guiada pela tradução de seu conteúdo headless usando as eficientes ferramentas de tradução do AEM.
 exl-id: b677f691-5257-43c3-a4b9-c34932577b31
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1040'
-ht-degree: 88%
+source-wordcount: '1037'
+ht-degree: 87%
 
 ---
 
@@ -24,7 +24,7 @@ Este guia conduz você através dos tópicos mais importantes sobre tradução h
 * Tenha uma visão geral do que é a entrega de conteúdo headless.
 * Tenha uma compreensão básica dos recursos headless do AEM.
 * Entenda os recursos de tradução do AEM e como eles estão relacionados ao conteúdo headless.
-* Tenha a capacidade de começar a traduzir seu próprio conteúdo headless.
+* Pode começar a traduzir seu próprio conteúdo headless.
 
 A meta é fornecer uma ampla compreensão da tecnologia headless, como o AEM fornece conteúdo headless e como você pode traduzi-lo. Se você não está familiarizado com nenhum desses tópicos, este é o lugar ideal para começar.
 

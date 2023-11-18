@@ -2,9 +2,9 @@
 title: Sua caixa de entrada
 description: Saiba como usar as notificações que chegam em sua Caixa de entrada para gerenciar suas tarefas.
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '911'
 ht-degree: 94%
 
 ---
@@ -148,7 +148,7 @@ Para ambas as visualizações (Lista e Calendário), é possível definir certas
 
    Se uma caixa de diálogo, um assistente ou uma página de documentação tiver sido aberta, é possível:
 
-   * Confirmar a ação apropriada, por exemplo, atribuir novamente.
+   * Confirme a ação apropriada, por exemplo, atribuir novamente.
    * Cancelar a ação
    * Selecione a seta para trás para retornar à caixa de entrada, por exemplo, se um assistente de ação ou uma página de documentação tiver sido aberta, você poderá retornar à Caixa de entrada.
 

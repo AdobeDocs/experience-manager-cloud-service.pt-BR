@@ -2,9 +2,9 @@
 title: Criação de conteúdo direcionado usando o modo Direcionar
 description: O modo de direcionamento e o componente do Target fornecem ferramentas para a criação de conteúdo para experiências
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '5306'
+source-wordcount: '5304'
 ht-degree: 87%
 
 ---
@@ -585,7 +585,7 @@ Para simular a experiência do visitante, use as seguintes ferramentas:
 
    A página é alterada para mostrar o conteúdo que é direcionado para o contexto atual.
 
-1. Para fazer alterações nas ofertas exibidas, alterne para o modo Direcionamento. Com a atividade de simulação selecionada, edite as ofertas para o contexto que você configurou no modo Visualização.
+1. Para alterar as ofertas exibidas, alterne para o modo Direcionamento. Com a atividade de simulação selecionada, edite as ofertas para o contexto que você configurou no modo Visualização.
 
 ## Configuração das opções do componente do Target {#configuring-target-component-options}
 

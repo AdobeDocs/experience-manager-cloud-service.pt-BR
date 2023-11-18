@@ -6,7 +6,7 @@ mini-toc-levels: 1
 feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '3489'
 ht-degree: 15%
@@ -82,7 +82,7 @@ Para suportar casos de uso de distribuição de ativos, considere as seguintes o
 * [Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) para obter um complemento configurável do Assets para publicar ativos.
 
 * As soluções personalizadas são criadas com base em [Asset Share Commons](https://opensource.adobe.com/asset-share-commons/) base de código.
-* Experience Manager [compartilhamento de link](/help/assets/share-assets.md) para compartilhar ativos ad hoc usando links.
+* Experience Manager [compartilhamento de link](/help/assets/share-assets.md) para compartilhar ativos sob demanda usando links.
 * [Interface da Web do Assets](/help/assets/manage-digital-assets.md) com áreas para terceiros protegidas pela configuração do Controle de acesso de Experience Manager e com os ajustes necessários de configuração de TI/rede, dando a esses usuários externos acesso ao Experience Manager.
 
 ## Principais conceitos e casos de uso {#key-concepts-and-use-cases}

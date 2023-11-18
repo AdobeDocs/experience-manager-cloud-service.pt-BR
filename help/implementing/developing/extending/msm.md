@@ -2,9 +2,9 @@
 title: Extensão do gerenciador de vários sites
 description: Saiba como estender a funcionalidade do Gerenciador de vários sites.
 exl-id: 4b7a23c3-65d1-4784-9dea-32fcceca37d1
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '2425'
+source-wordcount: '2429'
 ht-degree: 1%
 
 ---
@@ -606,11 +606,11 @@ Por exemplo, se duas novas propriedades de página estiverem sendo adicionadas:
 
 * Email de contato:
 
-   * Não é necessário implantar esta propriedade, pois ela será diferente em cada país (ou marca etc.).
+   * Não é necessário implantar esta propriedade, pois ela será diferente em cada país (ou marca e assim por diante).
 
 * Estilo visual da chave:
 
-   * O requisito do projeto é que essa propriedade seja implementada, pois é (geralmente) comum a todos os países (ou marcas, etc.).
+   * O requisito do projeto é que essa propriedade seja implementada, pois é (geralmente) comum a todos os países (ou marcas e assim por diante).
 
 Em seguida, é necessário garantir que:
 

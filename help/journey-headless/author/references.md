@@ -2,10 +2,10 @@
 title: Saiba mais sobre como usar referências em Fragmentos de conteúdo
 description: Saiba mais sobre como usar referências em Fragmentos de conteúdo para conteúdo, outros fragmentos e outros ativos (mídia). Apresente a necessidade e a mecânica de fragmentos aninhados para a criação de CMS headless.
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '708'
-ht-degree: 91%
+source-wordcount: '705'
+ht-degree: 84%
 
 ---
 
@@ -27,13 +27,13 @@ Este artigo se baseia nesses itens para que você entenda como usar referências
    * Referências do conteúdo
    * Referências de ativo/mídia
    * Referências de fragmento
-   * Referências ad hoc de dentro de um bloco de texto
+   * Referências improvisadas em um bloco de texto
 
 ## O que são referências {#what-are-references}
 
 As referências são simplesmente um mecanismo para conectar seus recursos, seja outro conteúdo, ativos (como em imagens) ou outros fragmentos. Embora muito parecidas, há algumas diferenças.
 
-Algumas referências têm tipos de dados dedicados (por exemplo, Referências de conteúdo e Referências de fragmento), enquanto outras são simplesmente adicionadas como referência em um bloco de texto (referências de ativos e referências ad hoc).
+Algumas referências têm tipos de dados dedicados (por exemplo, Referências de conteúdo e Referências de fragmento), enquanto outras são simplesmente adicionadas como uma referência em um bloco de texto (referências de ativos e referências improvisadas).
 
 ![Fragmentos de conteúdo: referências](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
@@ -96,7 +96,7 @@ Com a utilização da guia **Árvore da estrutura** do Editor de fragmento de co
 
 ## Referências ad hoc {#adhoc-references}
 
-Referências ad hoc podem ser adicionadas como um link simples dentro de um bloco de texto:
+Referências improvisadas podem ser adicionadas como um link simples em um bloco de texto:
 
 ![Fragmentos de conteúdo: referências ad hoc](/help/journey-headless/author/assets/headless-journey-author-references-04.png)
 

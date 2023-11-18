@@ -4,10 +4,10 @@ description: Saiba como criar e sincronizar Live Copies para reutilizar seu cont
 feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '4270'
-ht-degree: 95%
+ht-degree: 94%
 
 ---
 
@@ -417,7 +417,7 @@ Uma vez [suspensa](#suspending-inheritance-from-page-properties), a ação **Ret
 
 ![Botão Retomar](../assets/resume.png)
 
-Quando selecionada, a caixa de diálogo é exibida. É possível selecionar uma sincronização, se necessário, e confirmar a ação.
+Quando selecionada, a caixa de diálogo é exibida. Você pode selecionar uma sincronização, se necessário, e confirmar a ação.
 
 #### Retomar uma página de Live Copy na visão geral da Live Copy {#resume-a-live-copy-page-from-the-live-copy-overview}
 

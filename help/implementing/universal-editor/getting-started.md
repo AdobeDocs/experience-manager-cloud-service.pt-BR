@@ -2,7 +2,7 @@
 title: Introdução ao Editor universal no AEM
 description: Saiba como obter acesso ao Editor universal e começar a instrumentar seu primeiro aplicativo do AEM para utilizá-lo.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '920'
 ht-degree: 78%
@@ -169,7 +169,7 @@ itemid="urn:<referenceName>:<resource>"
 
 ### Definições de configuração {#configuration-settings}
 
-Você pode usar o `config` prefixo na URN da conexão para definir pontos de extremidade de serviço e extensão, se necessário.
+Você pode usar o `config` prefixo na URN da conexão para definir os pontos de extremidade de serviço e extensão, se necessário.
 
 Se você não quiser usar o Universal Editor Service, que é hospedado pelo Adobe, mas sua própria versão hospedada, poderá defini-lo em uma meta tag. Para substituir o ponto de extremidade de serviço padrão fornecido pelo Editor Universal, defina seu próprio ponto de extremidade de serviço:
 

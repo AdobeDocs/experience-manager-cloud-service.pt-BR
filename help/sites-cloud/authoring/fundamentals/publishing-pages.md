@@ -2,10 +2,10 @@
 title: Publicar páginas
 description: Saiba como publicar e desfazer a publicação de suas páginas usando vários mecanismos no AEM.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1801'
-ht-degree: 92%
+source-wordcount: '1805'
+ht-degree: 91%
 
 ---
 
@@ -66,7 +66,7 @@ Se você estiver editando uma página, ela poderá ser publicada diretamente do 
 
    * A página é publicada diretamente se não houver referências a serem publicadas.
    * Se a página tiver referências que precisem ser publicadas, elas serão listadas no assistente de **Publicação**, onde você poderá:
-      * Especificar qual dos ativos/tags/etc. você deseja publicar junto com a página. Em seguida, use **Publicar** para concluir o processo.
+      * Especifique quais dos ativos, ou tags etc., você deseja publicar junto com a página. Em seguida, use **Publish** para concluir o processo.
       * Usar a opção **Cancelar** para suspender a ação.
 
    ![Publicação de referências com a página](/help/sites-cloud/authoring/assets/publishing-references.png)

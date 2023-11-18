@@ -1,11 +1,11 @@
 ---
-title: Notas de versão do [!DNL Adobe Experience Manager]  as a Cloud Service 2021.3.0.
+title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2021.3.0.
 description: "[!DNL Adobe Experience Manager] Notas de versão as a Cloud Service para 2021.3.0."
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1290'
-ht-degree: 37%
+ht-degree: 38%
 
 ---
 
@@ -74,7 +74,7 @@ Entre em contato com o representante da Adobe para obter uma demonstração ou p
 
 * O componente de detalhes do produto agora pode ser usado e configurado em qualquer página de conteúdo
 
-* Lançamento do site de referência CIF Venia em 25/03/2021 que inclui a versão mais recente dos componentes principais CIF v1.9.0. Consulte [Site de referência CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25) para obter mais detalhes.
+* Lançamento do site de referência CIF Venia - 25/03/2021 que inclui a versão mais recente dos componentes principais CIF v1.9.0. Consulte [Site de referência CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25) para obter mais detalhes.
 
 * Lançamento de componentes principais CIF v1.9.0. Consulte [Componentes principais da CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0) para obter mais detalhes.
 
@@ -128,7 +128,7 @@ A próxima versão está planejada para 08 de abril de 2021.
 
 * Ocasionalmente, o usuário podia ver um status verde “ativo” ao lado de uma de lista de permissões de IP, mesmo quando essa configuração não era implantada.
 
-* Todos os pipelines de produção existentes são habilitados automaticamente na etapa Auditoria de experiência.
+* Todos os pipelines de produção já existentes serão habilitados automaticamente na etapa Auditoria de experiência.
 
 ## Ferramenta Transferência de conteúdo {#content-transfer-tool}
 
