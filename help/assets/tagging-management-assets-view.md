@@ -2,10 +2,10 @@
 title: Como gerenciar tags na visualização do Assets?
 description: Saiba como gerenciar tags na visualização do Assets. As tags ajudam a categorizar ativos que podem ser procurados e pesquisados com mais eficiência.
 exl-id: 7c5e1212-054f-46ca-9982-30e40b0482e1
-source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1422'
-ht-degree: 100%
+source-wordcount: '1416'
+ht-degree: 96%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="assets_taxonomy_management"
 >title="Gerenciar tags"
->abstract="As tags ajudam a categorizar ativos que podem ser procurados e pesquisados com mais eficiência. Admins têm a capacidade de usar a estrutura hierárquica de marcação, que facilita a aplicação de metadados relevantes, a categorização de ativos, o suporte a pesquisas, a reutilização de tags, a melhoria da capacidade de descoberta e assim por diante."
+>abstract="As tags ajudam a categorizar ativos que podem ser procurados e pesquisados com mais eficiência. Os administradores podem usar a estrutura hierárquica de marcação, que facilita a aplicação de metadados relevantes, a categorização de ativos, o suporte a pesquisas, a reutilização de tags, a melhoria da descoberta e assim por diante."
 
 As tags ajudam a categorizar ativos que podem ser procurados e pesquisados com mais eficiência. A marcação ajuda a propagar a taxonomia apropriada para outros usuários e fluxos de trabalho.
 
-Listas planas de vocabulários controlados podem se tornar incontroláveis com o tempo. Admins têm a capacidade de usar a estrutura hierárquica de marcação, que facilita a aplicação de metadados relevantes, a categorização de ativos, o suporte a pesquisas, a reutilização de tags, a melhoria da capacidade de descoberta e assim por diante.
+Listas planas de vocabulários controlados podem se tornar incontroláveis com o tempo. Os administradores podem usar a estrutura hierárquica de marcação, que facilita a aplicação de metadados relevantes, a categorização de ativos, o suporte a pesquisas, a reutilização de tags, a melhoria da descoberta e assim por diante.
 
 Você pode criar um namespace no nível raiz e criar uma estrutura hierárquica de subtags no namespace. Por exemplo, você pode criar um namespace `Activities` no nível raiz e ter as tags `Cycling`, `Hiking` e `Running` no namespace. É possível incluir as subtags `Clothing` e `Shoes` em `Running`.
 
