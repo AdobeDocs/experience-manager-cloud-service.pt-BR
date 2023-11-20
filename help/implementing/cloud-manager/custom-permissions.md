@@ -2,9 +2,9 @@
 title: Permissões personalizadas
 description: Saiba como você pode usar permissões personalizadas para criar novos perfis de permissão personalizados com permissões configuráveis para restringir o acesso a programas, pipelines e ambientes para usuários do Cloud Managers.
 exl-id: 167da985-7f19-45b3-90a3-884817907da2
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 33d14ac66fa46c25f1e027aa86848768fd0271ff
 workflow-type: tm+mt
-source-wordcount: '1474'
+source-wordcount: '1559'
 ht-degree: 2%
 
 ---
@@ -96,11 +96,6 @@ Agora que você tem um novo perfil de produto, pode atribuir permissões persona
 
 1. Selecione o **Adicionar tudo** na parte superior do **Permissões disponíveis** para adicionar todas as permissões.
 
-1. Se o perfil tiver sempre todos os itens de permissões, considere usar o **Incluir automaticamente** opção.
-
-   * **Ligado** - Todos os itens de permissões atuais e futuros itens de permissão serão movidos para Itens de permissão incluídos e, ao salvar, serão aplicáveis adequadamente.
-   * **Desligado** - Todos os itens de permissão serão movidos de volta para os itens de permissão disponíveis e, ao salvar, serão aplicáveis adequadamente.
-
 1. Selecionar **Salvar** quando terminar de definir os itens de permissão para o novo perfil de produto.
 
 O novo perfil de produto foi salvo com as permissões personalizadas.
@@ -129,6 +124,10 @@ As seguintes permissões estão disponíveis para criar perfis personalizados.
 | Criação de ambiente | Permitir que os usuários criem um ambiente |
 | Edição de ambiente | Permitir que os usuários atualizem e editem ambientes |
 | Leitura de logs de ambiente | Permitir que os usuários leiam os logs de ambiente |
+| Gerenciamento de variáveis de ambiente | Permitir que os usuários criem/editem/excluam configurações de ambiente |
+| Criação de restauração de ambiente | Permitir que os usuários criem restauração de ambiente |
+| Redefinição do ambiente de desenvolvimento rápido | Permitir que os usuários redefinam o ambiente de desenvolvimento rápido |
+| Gerenciamento de cópia de conteúdo | Permitir que os usuários gerenciem operações de cópia de conteúdo |
 | Criação de pipeline | Permitir que os usuários criem novos pipelines |
 | Exclusão de pipeline | Permitir que os usuários excluam pipelines |
 | Edição de pipeline | Permitir que os usuários editem pipelines |
@@ -138,6 +137,15 @@ As seguintes permissões estão disponíveis para criar perfis personalizados.
 | Substituir/Rejeitar Falhas de Métricas Importantes | Permitir que os usuários substituam/rejeitem falhas de métricas importantes |
 | Programação de implantações de produção | Permitir que os usuários agendem uma etapa de implantação de produção |
 | Acesso às informações do repositório | Permitir que os usuários acessem as informações do repositório e gerem a senha de acesso |
+| Criação de repositório | Permitir que os usuários criem novos repositórios Git |
+| Exclusão de repositório | Permitir que os usuários excluam repositórios Git |
+| Edição de repositório | Permitir que os usuários editem repositórios Git |
+| Gerar código do repositório | Permitir que os usuários gerem projetos a partir do arquétipo |
+| Gerenciar nome de domínio | Permitir que os usuários criem/editem/excluam nomes de domínio |
+| Gerenciar Inclui na lista de permissões IP | Permitir que os usuários criem/editem/excluam a vinculação de incluir na lista de permissões inclui na lista de permissões de IP e de IP |
+| Gerenciamento de infraestrutura de rede | Permitir que os usuários criem/editem/excluam a infraestrutura de rede |
+| Gerenciamento de certificados SSL | Permitir que os usuários criem/editem/excluam certificados SSL |
+| Gerenciamento de usuários da subconta do New Relic | Permitir que os usuários leiam/editem usuários de subcontas da new relic |
 
 ### Permissões no nível da organização {#organization-level}
 
