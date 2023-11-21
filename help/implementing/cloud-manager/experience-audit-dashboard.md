@@ -2,10 +2,10 @@
 title: Painel de auditoria de experiência
 description: Saiba como a Auditoria de experiência valida seu processo de implantação e ajuda a garantir que as alterações implantadas atendam aos padrões básicos de desempenho, acessibilidade, práticas recomendadas e SEO, por meio de uma interface de painel clara e informativa.
 exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '831'
-ht-degree: 23%
+source-wordcount: '830'
+ht-degree: 22%
 
 ---
 
@@ -16,7 +16,7 @@ Saiba como a Auditoria de experiência valida seu processo de implantação e aj
 
 >[!NOTE]
 >
->Este recurso só está disponível para [programa de adoção antecipada.](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)
+>Este recurso só está disponível por meio do [programa de adoção antecipada.](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)
 >
 >Para obter detalhes sobre o recurso Auditoria de experiência existente para o AEM as a Cloud Service, consulte [Teste de auditoria de experiência](/help/implementing/cloud-manager/experience-audit-testing.md).
 
@@ -28,7 +28,7 @@ A Auditoria de experiência é um recurso disponível nos pipelines de produçã
 
 1. Não introduza regressões.
 
-A Auditoria de experiência no Cloud Manager garante que a experiência do usuário final no site seja do mais alto padrão.
+A Auditoria de experiência no Cloud Manager garante que a experiência do usuário no site seja do mais alto padrão.
 
 Os resultados da auditoria são informativos e permitem que o gerente de implantação veja as pontuações e as alterações entre as pontuações atual e anterior. Essa informação é valiosa para determinar se foi introduzida uma regressão com a implantação atual.
 

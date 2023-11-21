@@ -2,7 +2,7 @@
 title: Replicação
 description: Saiba mais sobre distribuição e solução de problemas de replicação no AEM as a Cloud Service.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1341'
 ht-degree: 43%
@@ -64,7 +64,7 @@ Como alternativa, você pode criar um Modelo de fluxo de trabalho que use a vari
 1. Na página inicial do AEM as a Cloud Service, acesse **Ferramentas - Fluxo de trabalho - Modelos**.
 1. Na página Modelos de fluxo de trabalho, clique em **Criar** no canto superior direito da tela.
 1. Adicione um título e um nome ao modelo. Para obter mais informações, consulte [Criação de modelos de fluxo de trabalho](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=pt-BR).
-1. Selecione o modelo recém-criado na lista e pressione **Editar**
+1. Selecione o modelo criado na lista e pressione **Editar**
 1. Na janela a seguir, arraste e solte a etapa do processo no fluxo do modelo atual:
 
    ![Etapa do processo](/help/operations/assets/processstep.png)

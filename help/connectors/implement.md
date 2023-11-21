@@ -2,10 +2,10 @@
 title: Implementação de um conector do AEM
 description: Saiba como criar, testar e implementar um conector AEM. Além disso, conheça os padrões comuns de integração.
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '979'
-ht-degree: 98%
+source-wordcount: '980'
+ht-degree: 95%
 
 ---
 

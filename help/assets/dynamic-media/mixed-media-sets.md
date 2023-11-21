@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Mixed Media Sets
 role: User
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1500'
 ht-degree: 14%
@@ -118,7 +118,7 @@ Ao adicionar ativos ao conjunto, eles são automaticamente adicionados em ordem 
 
 1. Para excluir um ativo, marque a caixa de seleção correspondente e selecione **[!UICONTROL Excluir ativo]**.
 1. Para aplicar uma predefinição, selecione **[!UICONTROL Predefinição]** no canto superior direito e selecione uma predefinição para aplicar aos ativos.
-1. Selecione **[!UICONTROL Salvar]**. O Conjunto de mídias mistas recém-criado aparece na pasta em que você o criou.
+1. Selecione **[!UICONTROL Salvar]**. O Conjunto de mídias mistas criado aparece na pasta em que você o criou.
 
 ## Editar conjuntos de mídia mista {#editing-mixed-media-sets}
 

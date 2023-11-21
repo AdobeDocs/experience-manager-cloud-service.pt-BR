@@ -2,7 +2,7 @@
 title: Gerenciamento de públicos
 description: O console de Públicos permite criar, organizar e gerenciar públicos da sua conta do Adobe Target ou gerenciar segmentos do ContextHub
 exl-id: dff72c15-afcd-4b16-a711-e9ca3010e3ec
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 87%
@@ -42,7 +42,7 @@ Para criar um segmento do ContextHub no console Públicos-alvo:
 
    >[!NOTE]
    >
-   >Classifique a lista modificada tocando ou clicando em **Modificado** para classificar por ordem decrescente para ver qualquer público recém-criado.
+   >Classifique a lista modificada tocando ou clicando em **Modificado** para classificar por ordem decrescente para ver qualquer público-alvo criado.
 
 Para obter mais detalhes sobre a criação de segmentos usando o ContextHub, consulte a documentação da Configuração da segmentação com o ContextHub. <!--For further detail about creating segments using ContextHub, see [Configuring Segmentation with ContextHub](/help/sites-administering/segmentation.md).-->
 

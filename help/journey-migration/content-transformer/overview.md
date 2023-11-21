@@ -2,7 +2,7 @@
 title: Visão geral do transformador de conteúdo
 description: Saiba como detectar e corrigir problemas relacionados ao conteúdo relatados pelo BPA usando o Transformador de conteúdo.
 exl-id: aa3397ff-3dd6-4c67-9064-cb9b19bf1c73
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 2%
@@ -24,7 +24,7 @@ O transformador de conteúdo pode ajudar a resolver problemas que se enquadram n
 | DOPI | deprecated.ordered.index | Remova os índices obsoletos. |
 | OAUI | non.migrated.oauth.users | Remova esses usuários para garantir que eles não sejam migrados para o AEM as a Cloud Service. |
 | PCX | page.complex.medium <br> page.complex.high | Exclua as páginas/filhos ou mova-os para um local diferente para garantir que eles não sejam migrados para o AEM as a Cloud Service. |
-| REP | forward.replication <br> replicação.reversa <br> standard.replication.agent.modify <br> custom.replication.agent.detection | Remova os agentes de replicação recém-criados. <br> OU <br> Remova as propriedades modificadas/adicionadas. |
+| REP | forward.replication <br> replicação.reversa <br> standard.replication.agent.modify <br> custom.replication.agent.detection | Remova os agentes de replicação criados. <br> OU <br> Remova as propriedades modificadas/adicionadas. |
 | URS | clientlibs.location <br> arquivo.local <br> node.location <br> workflow.location | Mova para o local correto para evitar problemas durante a migração. |
 | URS | node.size | Mova os nós temporariamente para`/etc/packages/content-transformation/paths` para garantir que eles não sejam migrados para o AEM as a Cloud Service. |
 

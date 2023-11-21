@@ -2,9 +2,9 @@
 title: Quais são os recursos de layout do Adaptive Forms?
 description: O layout e as aparências do Adaptive Forms em vários dispositivos são regidos pelas configurações de layout. Entenda os vários layouts e como aplicá-los.
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '860'
 ht-degree: 3%
 
 ---
@@ -71,7 +71,7 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 Usando esse layout, você pode colocar o **[!UICONTROL Formulário adaptável do painel]** em um painel com navegação de estilo Accordion. Usando esse layout, você também pode criar painéis repetíveis. Os painéis repetíveis permitem adicionar ou remover painéis dinamicamente, conforme necessário. Você pode definir o número mínimo e máximo de vezes que um painel é repetido. Além disso, o título do painel pode ser determinado dinamicamente, com base nas informações fornecidas nos itens do painel.
 
-A expressão de resumo pode ser usada para mostrar os valores fornecidos pelo usuário final no título do painel minimizado.
+A expressão de resumo pode ser usada para mostrar os valores fornecidos pelo usuário no título do painel minimizado.
 
 ![Painéis repetíveis usando o layout Acordeão no Adaptive Forms](assets/accordion-layout.png)
 

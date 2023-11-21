@@ -2,10 +2,10 @@
 title: Introdução e passo a passo do SPA
 description: Este artigo apresenta os conceitos de um SPA e aborda o uso de um SPA básico para criação, mostrando como ele está relacionado ao editor de SPA integrado do AEM.
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '2066'
-ht-degree: 94%
+source-wordcount: '2065'
+ht-degree: 93%
 
 ---
 
@@ -130,7 +130,7 @@ Outras operações de criação são permitidas, como arrastar e soltar componen
 
 ## SPAs e o editor de SPA do AEM {#spa-apps-and-the-aem-spa-editor}
 
-Observar como um SPA se comporta para o usuário final e inspecionar a página do SPA ajuda a entender melhor como um SPA funciona com o editor de SPA do AEM.
+Experimentar como um SPA se comporta para o usuário e, em seguida, inspecionar a página SPA ajuda a entender melhor como um aplicativo SAP funciona com o Editor de SPA no AEM.
 
 ### Usando um SPA {#using-an-spa-application}
 

@@ -2,10 +2,10 @@
 title: New Relic One
 description: Saiba mais sobre o serviço de monitoramento de desempenho de aplicativo (APM) da New Relic One para o AEM as a Cloud Service e como você pode acessá-lo.
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1728'
-ht-degree: 88%
+source-wordcount: '1726'
+ht-degree: 86%
 
 ---
 
@@ -120,7 +120,7 @@ Para obter mais ajuda, abra um tíquete de suporte por meio do [Portal de suport
 
 ## Solução de problemas de acesso à New Relic One {#troubleshooting}
 
-Se você foi adicionado como um usuário da New Relic One, conforme descrito na seção [Gerenciar usuários da New Relic One](#manage-users) e não puder localizar o email de confirmação da conta original, siga essas etapas.
+Se você foi adicionado como um usuário do New Relic One, conforme descrito na seção [Gerenciar usuários do New Relic One](#manage-users) e não puderem localizar o email de confirmação da conta original, siga essas etapas.
 
 1. Acesse a página de logon do New Relic em [`login.newrelic.com/login`](https://login.newrelic.com/login).
 

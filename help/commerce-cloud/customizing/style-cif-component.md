@@ -1,6 +1,6 @@
 ---
-title: Estilizar os Componentes principais da CIF do Adobe Experience Manager
-description: Saiba como estilizar os Componentes principais da CIF do Adobe Experience Manager (AEM). O tutorial aborda como as bibliotecas do lado do cliente ou clientlibs são usadas para implantar e gerenciar o CSS e o JavaScript para uma implementação do AEM Commerce. Este tutorial também aborda como o módulo ui.frontend e um projeto de webpack são integrados no processo de build completo.
+title: Estilos dos componentes principais do Adobe Experience Manager CIF
+description: Saiba como estilizar os Componentes principais do CIF (AEM) do Adobe Experience Manager. O tutorial aborda como as bibliotecas do lado do cliente ou clientlibs são usadas para implantar e gerenciar o CSS e o JavaScript para uma implementação do AEM Commerce. Este tutorial também aborda como o módulo ui.frontend e um projeto de webpack são integrados no processo de build completo.
 sub-product: Commerce
 topics: Development
 version: Cloud Service
@@ -11,7 +11,7 @@ feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2535'
 ht-degree: 17%
@@ -20,7 +20,7 @@ ht-degree: 17%
 
 # Alterar estilo dos Componentes principais da CIF do AEM {#style-aem-cif-core-components}
 
-A variável [Projeto CIF Venia](https://github.com/adobe/aem-cif-guides-venia) é uma base de código de referência para o uso de [Componentes principais da CIF](https://github.com/adobe/aem-core-cif-components). Neste tutorial, você inspeciona o projeto de referência Venia e entende como o CSS e o JavaScript usados pelos componentes principais CIF do AEM são organizados. Você também pode criar um estilo usando CSS para atualizar o estilo padrão do **Teaser do produto** componente.
+A variável [Projeto CIF Venia](https://github.com/adobe/aem-cif-guides-venia) é uma base de código de referência para o uso de [Componentes principais da CIF](https://github.com/adobe/aem-core-cif-components). AEM Neste tutorial, você inspeciona o projeto de referência Venia e entende como o CSS e o JavaScript usados pelos componentes principais CIF são organizados. Você também pode criar um estilo usando CSS para atualizar o estilo padrão do **Teaser do produto** componente.
 
 >[!TIP]
 >
@@ -28,7 +28,7 @@ A variável [Projeto CIF Venia](https://github.com/adobe/aem-cif-guides-venia) �
 
 ## O que você vai criar
 
-Neste tutorial, um novo estilo é implementado para o Teaser do produto que se assemelha a um cartão. As lições aprendidas no tutorial podem ser aplicadas a outros Componentes principais da CIF.
+Neste tutorial, um novo estilo é implementado para o Teaser do produto que se assemelha a um cartão. As lições aprendidas no tutorial podem ser aplicadas a outros Componentes principais do CIF.
 
 ![O que você vai criar](../assets/style-cif-component/what-you-will-build.png)
 
@@ -42,7 +42,7 @@ Você vai clonar o [Projeto Venia](https://github.com/adobe/aem-cif-guides-venia
 
 >[!NOTE]
 >
-> **Você pode usar um projeto existente** (com base no Arquétipo de projeto AEM incluído na CIF) e ignore esta seção.
+> **Você pode usar um projeto existente** (baseado no Arquétipo de projeto AEM com CIF incluído) e pule esta seção.
 
 1. Execute o seguinte comando do Git para clonar o projeto:
 
@@ -57,7 +57,7 @@ Você vai clonar o [Projeto Venia](https://github.com/adobe/aem-cif-guides-venia
    $ mvn clean install -PautoInstallPackage,cloud
    ```
 
-1. Adicione as configurações OSGi necessárias para conectar a instância do AEM a uma instância do Adobe Commerce ou adicionar as configurações ao projeto recém-criado.
+1. Adicione as configurações OSGi necessárias para conectar a instância do AEM a uma instância do Adobe Commerce ou adicionar as configurações ao projeto criado.
 
 1. Nesse ponto, você deve ter uma versão funcional de uma loja conectada a uma instância do Adobe Commerce. Navegue até a `US` > `Home` página em: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
@@ -69,7 +69,7 @@ Você vai clonar o [Projeto Venia](https://github.com/adobe/aem-cif-guides-venia
 
 O CSS e o JavaScript responsáveis pela renderização de temas/estilos da loja são gerenciados no AEM por um [biblioteca do cliente](/help/implementing/developing/introduction/clientlibs.md) ou &quot;clientlibs&quot; para abreviar. As bibliotecas de clientes fornecem um mecanismo para organizar o CSS e o JavaScript no código de um projeto e, em seguida, na página.
 
-Estilos específicos da marca podem ser aplicados aos Componentes principais da CIF do AEM adicionando e substituindo o CSS gerenciado por essas bibliotecas de clientes. Entender como as bibliotecas de clientes são estruturadas e incluídas na página é essencial.
+AEM Estilos específicos da marca podem ser aplicados aos Componentes principais do CIF adicionando e substituindo o CSS gerenciado por essas bibliotecas de clientes. Entender como as bibliotecas de clientes são estruturadas e incluídas na página é essencial.
 
 A variável [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) é uma dedicada [webpack](https://webpack.js.org/) projeto para gerenciar todos os ativos de front-end de um projeto. Este webpack permite que desenvolvedores de front-end usem qualquer número de idiomas e tecnologias, como [TypeScript](https://www.typescriptlang.org/), [Sass](https://sass-lang.com/)e muito mais.
 
@@ -469,7 +469,7 @@ O AEM também tenta armazenar as bibliotecas de clientes em cache para melhorar 
 
 ## Parabéns {#congratulations}
 
-Você terminou de criar o estilo do seu primeiro Componente principal CIF para AEM e usou um servidor de desenvolvimento de webpack!
+AEM Você terminou de criar o estilo do seu primeiro Componente principal CIF e usou um servidor de desenvolvimento de webpack!
 
 ## Desafio extra {#bonus-challenge}
 

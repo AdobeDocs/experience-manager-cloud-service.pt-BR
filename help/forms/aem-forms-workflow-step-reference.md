@@ -4,9 +4,9 @@ description: Fluxos de trabalho centrados no Forms permitem criar rapidamente fl
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: Usar fluxos de trabalho de AEM, usando etapas atribuir tarefa, converter em PDF/A etapa, Gerar documento da etapa gravada, usar fluxos de trabalho, etapa Assinar documento, etapa Gerar saída impressa, Gerar saída de PDF não interativa
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '7444'
+source-wordcount: '7448'
 ht-degree: 1%
 
 ---
@@ -55,8 +55,8 @@ Você também pode usar o componente para controlar o comportamento da tarefa. P
 * **[!UICONTROL Prioridade]**: A prioridade selecionada é exibida na Caixa de entrada do AEM. As opções disponíveis são Alta, Média e Baixa. O valor padrão é Médio.
 * **[!UICONTROL Prazo]**: especifique o número de dias ou horas após o qual a tarefa será marcada como vencida. Se você selecionar **[!UICONTROL Desligado]**, a tarefa nunca será marcada como vencida. Você também pode especificar um manipulador de tempo limite para executar tarefas específicas depois que a tarefa estiver vencida.
 
-* **[!UICONTROL Dias]**: O número de dias antes dos quais a tarefa deve ser concluída. O número de dias é contado depois que a tarefa é atribuída a um usuário. Se uma tarefa não estiver concluída e ultrapassar o número de dias especificado no campo Dias, então, se selecionado, um manipulador de tempo limite será acionado após a data de vencimento.
-* **[!UICONTROL Horas]**: O número de horas antes das quais a tarefa deve ser concluída. O número de horas é contado depois que a tarefa é atribuída a um usuário. Se uma tarefa não estiver concluída e ultrapassar o número de horas especificado no campo Horas, então, se selecionado, um manipulador de tempo limite será acionado após as horas de vencimento.
+* **[!UICONTROL Dias]**: O número de dias antes dos quais a tarefa deve ser concluída. O número de dias é contado depois que a tarefa é atribuída a um usuário. Se uma tarefa não estiver concluída e ultrapassar o número de dias especificado no campo Dias, em seguida, se for selecionada, um manipulador de tempo limite será acionado após a data de vencimento.
+* **[!UICONTROL Horas]**: O número de horas antes das quais a tarefa deve ser concluída. O número de horas é contado depois que a tarefa é atribuída a um usuário. Se uma tarefa não estiver concluída e ultrapassar o número de horas especificado no campo Horas, e se for selecionada, um manipulador de tempo limite será acionado após as horas de vencimento.
 * **[!UICONTROL Tempo limite após a data de vencimento]**: selecione esta opção para ativar o campo de seleção Manipulador de tempo limite.
 * **[!UICONTROL Manipulador de tempo limite]**: selecione o script a ser executado quando a etapa atribuir tarefa ultrapassar a data de vencimento. Scripts colocados no repositório CRX em [aplicativos]/fd/dashboard/scripts/timeoutHandler estão disponíveis para seleção. O caminho especificado não existe no repositório crx. Um administrador cria o caminho antes de usá-lo.
 * **[!UICONTROL Realçar a ação e o comentário da última tarefa em Detalhes da tarefa]**: selecione essa opção para exibir a última ação executada e o comentário recebido na seção de detalhes da tarefa de uma tarefa.

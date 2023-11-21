@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1926'
 ht-degree: 9%
@@ -168,7 +168,7 @@ Consulte também [Limitações do Dynamic Media](/help/assets/dynamic-media/limi
 
    * Para aplicar uma predefinição, próximo ao canto superior direito da página, selecione **[!UICONTROL Predefinição]**, em seguida, selecione uma predefinição para aplicar a todos os ativos de uma só vez.
 
-1. Selecione **[!UICONTROL Salvar]**. O conjunto de rotação recém-criado aparece na pasta em que você o criou.
+1. Selecione **[!UICONTROL Salvar]**. O conjunto de rotação criado aparece na pasta em que você o criou.
 
 ## Visualizar conjuntos de rotação {#viewing-spin-sets}
 

@@ -2,9 +2,9 @@
 title: Como gerar um documento de registro (DoR) para o AEM Forms?
 description: Saiba como gerar um modelo para um Documento de registro (DoR) do Adaptive Forms.
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '4140'
+source-wordcount: '4139'
 ht-degree: 3%
 
 ---
@@ -53,7 +53,7 @@ Faça upload do modelo XFA (arquivo XDP) na instância do AEM Forms. Execute as 
 1. Na seção Document of Record Template Configuration da guia Form Model, selecione **Associar o modelo de formulário como o documento de modelo de registro**. Ao selecionar essa opção, todos os modelos XFA (arquivos XDP) disponíveis em sua máquina são exibidos. Selecione o arquivo apropriado. Além disso, verifique se o mesmo esquema (esquema de dados) é usado para o Formulário adaptável e o modelo XFA selecionado (arquivo XDP).
 1. Clique em **[!UICONTROL Concluído.]**
 
-O formulário adaptável agora está configurado para usar um arquivo XDP como modelo para o documento de registro. As próximas etapas são [vincular componentes do Formulário adaptável com campos de modelo correspondentes](#bind-adaptive-form-components-with-template-fields).
+O formulário adaptável agora está configurado para usar um arquivo XDP como modelo para o documento de registro. O próximo passo é [vincular componentes do Formulário adaptável com campos de modelo correspondentes](#bind-adaptive-form-components-with-template-fields).
 
 ## Gerar um documento de registro baseado em acroforma {#generate-an-Acroform-based-document-of-record}
 
@@ -66,7 +66,7 @@ Carregue seu PDF Adobe Acrobat (Acroform) na instância do AEM Forms. Execute as
 1. Na seção Document of Record Template Configuration da guia Form Model, selecione **Associar o modelo de formulário como o documento de modelo de registro**. Ao selecionar essa opção, todos os PDF Acrobat (Acroform) disponíveis em sua máquina são exibidos. Selecione o arquivo apropriado.
 1. Clique em **[!UICONTROL Concluído.]**
 
-O formulário adaptável agora está configurado para usar um acroforma como modelo para o documento de registro. As próximas etapas são [vincular componentes do Formulário adaptável com campos de modelo correspondentes](#bind-adaptive-form-components-with-template-fields).
+O formulário adaptável agora está configurado para usar um acroforma como modelo para o documento de registro. O próximo passo é [vincular componentes do Formulário adaptável com campos de modelo correspondentes](#bind-adaptive-form-components-with-template-fields).
 
 ## Gerar automaticamente um documento de registro {#auto-generate-a-document-of-record}
 
@@ -137,7 +137,7 @@ Agora, quando o formulário adaptável for enviado, um documento de registro atu
 
 Lembre-se das seguintes considerações e limitações ao trabalhar no Documento de registro do Adaptive Forms.
 
-* Os modelos de documento de registro não são compatíveis com rich text. Portanto, qualquer rich text no Formulário adaptável estático ou nas informações preenchidas pelo usuário final aparece como texto simples no Documento de registro.
+* Os modelos de documento de registro não são compatíveis com rich text. Portanto, qualquer rich text no Formulário adaptável estático ou nas informações preenchidas pelo usuário aparece como texto simples no Documento de registro.
 * Os fragmentos de documento em um Formulário adaptável não aparecem no Documento de registro. No entanto, os fragmentos de formulário adaptável são compatíveis.
 * Não há suporte para vinculação de conteúdo no Documento de registro gerado para o Formulário adaptável baseado em Esquema XML.
 * A versão localizada do documento de registro é criada sob demanda para um local quando o usuário solicita a renderização do documento de registro. A localização do documento de registro ocorre juntamente com a localização do formulário adaptável. <!-- For more information on localization of Document of Record and Adaptive Forms see Using AEM translation workflow to localize Adaptive Forms and Document of Record.-->

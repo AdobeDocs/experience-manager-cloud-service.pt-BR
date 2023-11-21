@@ -2,10 +2,10 @@
 title: Fragmentos de experiência
 description: Use os Fragmentos de experiência do Adobe Experience Manager as a Cloud Service para tornar suas experiências reutilizáveis e flexíveis.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '2043'
-ht-degree: 99%
+source-wordcount: '2042'
+ht-degree: 98%
 
 ---
 
@@ -37,7 +37,7 @@ Use os Fragmentos de experiência:
 Sem Fragmentos de experiência, o autor precisaria copiar e colar esse fragmento. Criar e manter essa experiências de copiar/colar é um processo demorado e pode causar erros feitos pelo usuário.
 Os fragmentos de experiência eliminam a necessidade de copiar/colar.
 * Para dar suporte ao caso de uso de CMS sem periféricos.
-Os autores desejam usar o AEM somente para criação, não para entrega ao cliente. Um ponto de contato ou sistema de terceiros consumiria essa experiência e a entregaria para o usuário final.
+Os autores desejam usar o AEM somente para criação, não para entrega ao cliente. Um sistema/ponto de contato de terceiros consumiria essa experiência e depois a entregaria ao usuário.
 
 >[!NOTE]
 >

@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Interactive Images
 role: User
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '4176'
+source-wordcount: '4175'
 ht-degree: 2%
 
 ---
@@ -378,7 +378,7 @@ A implementação existente do Quickview normalmente representa uma cadeia de a�
 1. A lógica de back-end retorna os dados ou o conteúdo correspondentes do Quickview ao código de front-end.
 1. O código de front-end carrega os dados ou o conteúdo da visualização rápida.
 1. Como opção, o código de front-end converte os dados do Quickview carregados em uma representação HTML.
-1. O código de front-end exibe uma caixa de diálogo ou painel modal e renderiza o conteúdo de HTML na tela para o usuário final.
+1. O código de front-end exibe uma caixa de diálogo ou painel modal e renderiza o conteúdo do HTML na tela para o usuário.
 
 Essas chamadas não representam necessariamente chamadas de API públicas independentes chamadas pela lógica da página da Web de uma etapa arbitrária. Em vez disso, é uma chamada encadeada em que cada próxima etapa é ocultada na última fase (retorno de chamada) da etapa anterior.
 

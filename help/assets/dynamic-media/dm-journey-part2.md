@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '2870'
+source-wordcount: '2872'
 ht-degree: 0%
 
 ---
@@ -121,7 +121,7 @@ _Criação de uma predefinição de imagem selecionando opções na guia Avança
 
 Você se lembra em [Anatomia de um URL do Dynamic Media](#dm-journey-d) anteriormente, que você leu sobre o URL do Dynamic Media e como ele é criado. A variável **[!UICONTROL Modificador de imagem]** A caixa de texto é onde você pode digitar os parâmetros de processamento de imagem adicionais desejados. Os parâmetros são incluídos no nome predefinido do URL quando as imagens são entregues, usando a predefinição. Na captura de tela acima, o parâmetro `bgc=451B15` foi adicionado. Ou seja, uma cor de fundo marrom-escuro foi adicionada.
 
-Pense em uma predefinição de imagem como uma fórmula para suas imagens. Ele vai mostrar todas as imagens que usam a predefinição, de forma consistente, sempre; vai ser o mesmo. O parâmetro `&op_brightness=+10` também foi adicionado para aumentar ligeiramente o brilho.
+Pense em uma predefinição de imagem como uma fórmula para suas imagens. Ele vai mostrar todas as imagens que usam a predefinição, de forma consistente, sempre; e vai ser o mesmo. O parâmetro `&op_brightness=+10` também foi adicionado para aumentar ligeiramente o brilho.
 
 Quando terminar, salve a predefinição e ela agora estará disponível para todas as imagens que você tiver. Nesse caso, queremos aplicar o _Medium_ predefinição de imagem para uma imagem de uma tigela de chocolate líquido.
 
@@ -154,7 +154,7 @@ Alguns dos usos mais populares do Dynamic Media são a capacidade de criar conju
 
 Os conjuntos de imagens normalmente são compostos de uma série de ativos de imagem que são apresentados como uma única entidade. Esses tipos de conjuntos oferecem aos usuários uma experiência de visualização integrada, em que os usuários podem ver diferentes visualizações de um item clicando em uma imagem em miniatura. Os conjuntos de imagens permitem apresentar visualizações alternativas de algo e o visualizador oferece ferramentas de zoom para examinar as imagens de perto. [Exibir um conjunto de imagens chamado &quot;Em execução&quot; que usa o visualizador de imagem suspensa](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running).
 
-Aqui dentro da Dynamic Media você pode ver várias imagens de tênis de corrida. É uma série de linhas de produtos que as equipes de vendas e marketing desejam que os clientes vejam como uma única apresentação; um conjunto de imagens.
+Aqui dentro da Dynamic Media você pode ver várias imagens de tênis de corrida. É uma série de linhas de produtos que as equipes de vendas e marketing desejam que os clientes visualizem como uma única apresentação; um conjunto de imagens.
 
 ![Criação de um conjunto de imagens](/help/assets/dynamic-media/assets/dm-create-image-set.png)
 _O início da criação de um conjunto de imagens._

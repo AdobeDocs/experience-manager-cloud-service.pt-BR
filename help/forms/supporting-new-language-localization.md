@@ -2,7 +2,7 @@
 title: Como adicionar suporte para novos locais a um formulário adaptável baseado em componentes de base?
 description: Para o Adaptive Forms, você pode adicionar localidades para mais idiomas, além do fornecido imediatamente.
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1266'
 ht-degree: 1%
@@ -102,7 +102,7 @@ Execute esta etapa somente se a variável `<locale>` você está adicionando nã
 1. Adicione o `<locale-name>` valores de localidade padrão `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`, se ainda não estiver presente.
 
 1. Adicione o `<locale>` aos valores de `languages` propriedade de `/etc/languages`.
-1. Adicione as pastas recém-criadas na `filter.xml` em etc/META-INF/[hierarquia de pastas] como:
+1. Adicione as pastas criadas na `filter.xml` em etc/META-INF/[hierarquia de pastas] como:
 
    ```
    <filter root="/etc/clientlibs/[locale-name]"/>

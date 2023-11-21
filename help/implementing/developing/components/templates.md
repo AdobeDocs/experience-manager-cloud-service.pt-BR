@@ -2,7 +2,7 @@
 title: Modelos de páginas
 description: Os modelos de página são usados ao criar uma página que é usada como base para a nova página
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '3278'
 ht-degree: 8%
@@ -356,7 +356,7 @@ When creating an editable template, the value is copied from the template type t
 Se você tiver criado um modelo que possa servir como base de outros modelos, poderá copiá-lo como um tipo de modelo.
 
 1. Crie um modelo como faria com qualquer modelo de página [conforme documentado aqui](/help/sites-cloud/authoring/features/templates.md#creating-a-new-template-template-author), que servirá como base para o tipo de template.
-1. Usando o CRXDE Lite, copie o modelo recém-criado do `templates` para o nó `template-types` sob o nó [pasta modelo](#template-folders).
+1. Usando o CRXDE Lite, copie o modelo criado do `templates` para o nó `template-types` sob o nó [pasta modelo](#template-folders).
 1. Exclua o modelo da variável `templates` sob o nó [pasta modelo](#template-folders).
 1. Na cópia do modelo que está sob o `template-types` nó, excluir tudo `cq:template` e `cq:templateType` propriedades de todos `jcr:content` nós.
 
@@ -595,6 +595,6 @@ O diagrama a seguir descreve o processo de avaliação do modelo:
 
 Para limitar quais modelos podem ser usados para criar páginas secundárias em uma determinada página, use o `cq:allowedTemplates` propriedade de `jcr:content` nó da página para especificar a lista de modelos que podem ser páginas secundárias. Cada valor na lista deve ser um caminho absoluto para um modelo de uma página secundária permitida, por exemplo `/apps/wknd/templates/page-content`.
 
-Você pode usar o `cq:allowedTemplates` propriedade no modelo  `jcr:content` para que esta configuração seja aplicada a todas as páginas recém-criadas que usam este modelo.
+Você pode usar o `cq:allowedTemplates` propriedade no modelo  `jcr:content` para que esta configuração seja aplicada a todas as páginas criadas que usam este modelo.
 
 Se quiser adicionar mais restrições, por exemplo, em relação à hierarquia do template, você poderá usar o `allowedParents/allowedChildren` propriedades no modelo. Em seguida, é possível especificar explicitamente que as páginas criadas a partir de um modelo T devem ser páginas principais/secundárias das páginas criadas a partir de um modelo T.

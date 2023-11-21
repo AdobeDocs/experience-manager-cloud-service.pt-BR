@@ -2,9 +2,9 @@
 title: Criação de conteúdo direcionado usando o modo Direcionar
 description: O modo de direcionamento e o componente do Target fornecem ferramentas para a criação de conteúdo para experiências
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '5304'
+source-wordcount: '5302'
 ht-degree: 87%
 
 ---
@@ -51,7 +51,7 @@ As atividades e experiências que você vê no modo de Direcionamento refletem o
 
 >[!NOTE]
 >
->Quando você cria uma campanha no Adobe Target, ele atribui uma propriedade chamada `thirdPartyId` a cada campanha. Quando você exclui a campanha no Adobe Target, o thirdPartyId não é excluído. Não é possível reutilizar o `thirdPartyId` para campanhas de tipos diferentes (AB, XT) e ele não pode ser removido manualmente. Para evitar esse problema, dê a cada campanha um nome exclusivo. Por isso, nomes de campanhas não podem ser reutilizados em diferentes tipos de campanha.
+>Quando você cria uma campanha no Adobe Target, ele atribui uma propriedade chamada `thirdPartyId` a cada campanha. Quando você exclui a campanha no Adobe Target, o thirdPartyId não é excluído. Não é possível reutilizar o `thirdPartyId` para campanhas de tipos diferentes (AB, XT) e ele não pode ser removido manualmente. Para evitar esse problema, dê a cada campanha um nome exclusivo. Nomes de campanha não podem ser reutilizados em diferentes tipos de campanha.
 >
 >Se você usar o mesmo nome no mesmo tipo de campanha, a campanha existente será substituída.
 >

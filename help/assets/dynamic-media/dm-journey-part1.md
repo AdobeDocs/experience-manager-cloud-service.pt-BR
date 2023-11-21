@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '3708'
+source-wordcount: '3706'
 ht-degree: 1%
 
 ---
@@ -65,7 +65,7 @@ Os públicos-alvo que melhor se adaptam aos leitores dessa jornada são os segui
 
 O Dynamic Media ajuda você a fornecer ativos avançados de merchandising e marketing visuais sob demanda. Ele também ajuda a criar e fornecer experiências de visualização interativa, incluindo zoom, rotação de 360 graus e vídeo. Seus ativos são dimensionados dinamicamente para consumo em sites da Web, móveis e sociais. Usando um conjunto de ativos de origem primária, como imagens, vídeo e 3D, o Dynamic Media gera e fornece várias variações desse conteúdo avançado, em tempo real, por meio de sua CDN (Content Delivery Network, rede de entrega de conteúdo) global, escalável e otimizada para o desempenho.
 
-A Dynamic Media incorpora os fluxos de trabalho da solução de gerenciamento de ativos digitais Adobe Experience Manager Assets para simplificar e simplificar o processo de gerenciamento de campanhas digitais.
+A Dynamic Media incorpora os fluxos de trabalho da solução de gerenciamento de ativos digitais da Adobe Experience Manager Assets para simplificar e simplificar o processo de gerenciamento de campanhas digitais.
 
 ### Um arquivo com infinitas possibilidades
 
@@ -86,9 +86,9 @@ _O Adobe Dynamic Media garante experiências consistentes e de qualidade em qual
 
 ### A rede de entrega de conteúdo
 
-Quando você está pronto para entrar em funcionamento com um ativo de imagem ou de vídeo, ele é compatível com o backbone do Dynamic Media, que consiste em uma rede de entrega avançada e de nível superior. A rede atende centenas de clientes em todo o mundo todos os dias. Os ativos são distribuídos na Rede de entrega de conteúdo - ou CDN - hospedada pela Akamai. A CDN é um sistema de serviços de computação em rede que cooperam de forma transparente para fornecer conteúdo, especialmente grandes conteúdos de mídia avançada, aos usuários finais.
+Quando estiver pronto para entrar em funcionamento com um ativo de imagem ou de vídeo, ele será suportado pelo backbone da Dynamic Media, que consiste em uma rede de entrega avançada e de nível superior. A rede atende centenas de clientes em todo o mundo todos os dias. Os ativos são distribuídos na Rede de entrega de conteúdo - ou CDN - hospedada pela Akamai. A CDN é um sistema de serviços de computação em rede que cooperam de forma transparente para fornecer conteúdo, especialmente grandes conteúdos de mídia avançada, aos usuários finais.
 
-No sistema CDN, o conteúdo da Web é armazenado em caches da Web na Internet. Em seguida, ele é entregue do cache da Web aos usuários finais para agilizar a entrega. Assim, na primeira vez que alguém baixa uma página da Web, os ativos que ele vê são entregues a um cache CDN. Eles são armazenados no servidor para que na próxima vez que alguém na mesma área acessar a página da Web, o mesmo conteúdo de cache seja entregue mais rapidamente. O conteúdo é entregue mais rápido porque está localizado mais próximo do usuário final. Um CDN possibilita exibições mais rápidas da página da Web, além de diminuir as demandas de largura de banda do servidor central, pois o conteúdo é entregue a partir de uma rede de cache, não de um servidor central em cada instância. Esse fluxo otimizado significa uma melhor experiência do usuário, resultando em aumento das vendas.
+No sistema CDN, o conteúdo da Web é armazenado em caches da Web na Internet. Em seguida, ele é entregue do cache da Web aos usuários finais para agilizar a entrega. Assim, na primeira vez que alguém baixa uma página da Web, os ativos que ele vê são entregues a um cache CDN. Eles são armazenados no servidor para que na próxima vez que alguém na mesma área acessar a página da Web, o mesmo conteúdo de cache seja entregue mais rapidamente. O conteúdo é entregue mais rápido porque está localizado mais próximo do usuário. Um CDN possibilita exibições mais rápidas da página da Web, além de diminuir as demandas de largura de banda do servidor central, pois o conteúdo é entregue a partir de uma rede de cache, não de um servidor central em cada instância. Esse fluxo otimizado significa uma melhor experiência do usuário, resultando em aumento das vendas.
 
 <!-- USE AN IMAGE HERE? ![Content delivery network](/help/assets/assets-dm/cdn.png) -->
 
@@ -100,7 +100,7 @@ A Dynamic Media já faz um excelente trabalho de otimização de ativos e garant
 
 Mas, para adicionar valor ao Dynamic Media além das predefinições de imagem, há _Imagem inteligente_.
 
-A Imagem inteligente oferece um desempenho ainda melhor do delivery de ativos de imagem, otimizando automaticamente o formato de imagem e o tamanho do arquivo com base na capacidade do navegador do cliente. Ela funciona com suas predefinições de imagem existentes (as predefinições de imagem são discutidas na Parte II desta jornada) e usa inteligência no delivery.
+A Imagem inteligente oferece um desempenho ainda melhor do delivery de ativos de imagem, otimizando automaticamente o formato e o tamanho do arquivo de uma imagem com base no recurso de navegador do cliente. Ela funciona com suas predefinições de imagem existentes (as predefinições de imagem são discutidas na Parte II desta jornada) e usa inteligência no delivery.
 
 Essa inteligência reduz ainda mais o tamanho do arquivo de imagem com base na velocidade do navegador e da conexão de rede. Como os ativos de imagem compõem a maior parte do tempo de carregamento de uma página, a melhoria no desempenho pode ter um impacto completo nos principais indicadores de negócios, como:
 
@@ -167,7 +167,7 @@ Em seguida, verifique se a imagem correta está sendo usada e se isso pode afeta
 
 O Dynamic Media permite criar variações de imagens, de forma instantânea, a partir dessa imagem inicial. Ele permite que você seja criativo com esse ativo principal e não precise ir e voltar com seu artista de design gráfico ou estúdio de fotos para criar conteúdo adicional. E isso é dinheiro e tempo economizado.
 
-Com a abordagem de um arquivo, você usa um único arquivo principal. Em seguida, crie as versões ou representações necessárias nos sites, propriedades e experiências, somente no momento em que forem entregues ou visualizadas por um cliente. Essa eficiência pode diminuir bastante a quantidade de armazenamento necessário para seus ativos e reduzir a complexidade geral do fluxo de trabalho. E com o sistema de entrega do Dynamic Media, ele garante que todas as imagens e vídeos sejam otimizados, carregados rapidamente e tenham uma ótima aparência em todas as telas e dispositivos.
+Com a abordagem de um arquivo, você usa um único arquivo principal. Em seguida, crie as versões ou representações necessárias nos sites, propriedades e experiências, somente no momento em que forem entregues ou visualizadas por um cliente. Essa eficiência pode diminuir bastante a quantidade de armazenamento necessário para seus ativos e reduzir a complexidade geral do fluxo de trabalho. E com o sistema de entrega da Dynamic Media, ele garante que todas as imagens e vídeos sejam otimizados, carregados rapidamente e tenham uma ótima aparência em todas as telas e dispositivos.
 
 ### Caso de uso: Vídeo
 
@@ -176,7 +176,7 @@ Outro caso de uso para o qual o Dynamic Media resolve é o vídeo. O vídeo é c
 | **Problema** | **Solução da Dynamic Media** |
 |---|---|
 | Difícil de gerenciar e fornecer vídeo otimizado para vários dispositivos. | Use um único vídeo que seja dimensionado automaticamente para todos os dispositivos. |
-| Os vídeos são interrompidos ou reproduzidos em baixa qualidade devido à largura de banda disponível do usuário final. | Envie vídeos por meio de um reprodutor de HTML que detecta automaticamente a largura de banda disponível e adapta a qualidade para garantir alta fidelidade e reprodução sem problemas. |
+| Os vídeos são interrompidos ou reproduzidos em baixa qualidade devido à largura de banda disponível do usuário. | Envie vídeos por meio de um reprodutor de HTML que detecta automaticamente a largura de banda disponível e adapta a qualidade para garantir alta fidelidade e reprodução sem problemas. |
 | Inviável e demorado criar manualmente todas as versões de um vídeo, apenas para garantir uma boa exibição e reprodução entre dispositivos. | Elimine horas de trabalho entediante de transcodificação com um fluxo de trabalho simplificado. |
 | | Libere tempo para um trabalho de maior valor. |
 
@@ -184,7 +184,7 @@ Os clientes chegam à Dynamic Media com o seguinte problema que esperam resolver
 
 &quot;_Nós temos o vídeo, e gastamos uma grande quantia de dinheiro criando-o. Mas evitamos colocá-lo nas páginas, ou distribuí-lo, porque com nossos testes, não podemos garantir a qualidade do vídeo, ou se ele vai realmente ser reproduzido. E, em última análise, isso afeta nossas marcas e, potencialmente, nossa função até mesmo na conversão._&quot;
 
-A solução da Dynamic Media é pegar esse arquivo de vídeo principal e permitir que a Dynamic Media faça todos os tamanhos através de seu processo de transcodificação. Em seguida, combine-o com o player de vídeo inteligente do Dynamic Media. Esse fluxo de trabalho garante que você esteja usando esse vídeo na sua página de aterrissagem principal ou em uma categoria ou página de detalhes do produto, ele seja consistente e entregue com alta qualidade.
+A solução da Dynamic Media é pegar esse arquivo de vídeo principal e permitir que a Dynamic Media faça todos os tamanhos através de seu processo de transcodificação. Em seguida, combine-o com o player de vídeo inteligente da Dynamic Media. Esse fluxo de trabalho garante que você esteja usando esse vídeo na sua página de aterrissagem principal ou em uma categoria ou página de detalhes do produto, ele seja consistente e entregue com alta qualidade.
 
 Estes são vários outros casos de uso a serem considerados.
 
@@ -233,7 +233,7 @@ Por exemplo, a imagem do relógio abaixo tem 4560 x 3020 pixels. E mesmo que voc
 ![Formatos recomendados para upload no Dynamic Media](/help/assets/dynamic-media/assets/dm-upload-formats.png)
 _Considerações para uploads de ativos._
 
-A Adobe recomenda que você faça upload de ativos em um formato sem perdas. Geralmente, é melhor evitar o JPEG, pois quando você fornece o JPEG ou quando continua a salvar o JPEG, começa a perder a qualidade da imagem com o passar do tempo. Você deseja começar com as imagens de maior resolução em um formato sem perdas com o qual possa viver. Normalmente, esse formato é um arquivo TIFF ou PNG.
+A Adobe recomenda que você faça upload de ativos em um formato sem perdas. Geralmente, é melhor evitar o JPEG, pois quando você fornece o JPEG ou quando continua a salvar o JPEG, começa a perder a qualidade da imagem com o tempo. Você deseja começar com as imagens de maior resolução em um formato sem perdas com o qual possa viver. Normalmente, esse formato é um arquivo TIFF ou PNG.
 
 Em relação ao espaço de cores, ao pensar em um canal digital ou visualização da Web, você normalmente pensa em RGB (vermelho, verde, azul).
 

@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Interactive Videos
 role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '5966'
+source-wordcount: '5964'
 ht-degree: 3%
 
 ---
@@ -586,7 +586,7 @@ A implementação existente do Quickview normalmente representa uma cadeia de a�
 1. A lógica de back-end retorna os dados ou o conteúdo correspondentes do Quickview ao código de front-end.
 1. O código de front-end carrega os dados ou o conteúdo da visualização rápida.
 1. Como opção, o código de front-end converte os dados do Quickview carregados em uma representação HTML.
-1. O código de front-end exibe uma caixa de diálogo ou painel modal e renderiza o conteúdo de HTML na tela para o usuário final.
+1. O código de front-end exibe uma caixa de diálogo ou painel modal e renderiza o conteúdo do HTML na tela para o usuário.
 
 Essas chamadas não representam chamadas de API públicas independentes que podem ser chamadas pela lógica da página da Web de uma etapa arbitrária. Em vez disso, é uma chamada encadeada em que cada próxima etapa é ocultada na última fase (retorno de chamada) da etapa anterior.
 
@@ -598,7 +598,7 @@ Nesse manipulador de eventos, o código de front-end faz o seguinte:
 * Constrói um URL do Quickview com base nos dados de miniatura.
 * Aciona o processo de carregar o Quickview do back-end e renderizá-lo na tela para exibição.
 
-Além disso, o visualizador de Vídeo interativo suporta o modo de operação de tela cheia. O usuário final aciona Visualizações rápidas selecionando uma miniatura sem sair da tela cheia. Para obter essa funcionalidade, altere o código de front-end para que a caixa de diálogo modal do Quickview seja anexada ao contêiner do visualizador. Não adicione o CORPO do documento ou algum outro elemento de página da Web que não esteja disponível quando o visualizador estiver no modo de tela cheia. O código que executa esse trabalho escuta uma ou mais chamadas de retorno do visualizador enviadas após o carregamento do visualizador na página.
+Além disso, o visualizador de Vídeo interativo suporta o modo de operação de tela cheia. O usuário aciona Visualizações rápidas selecionando uma miniatura sem sair da tela cheia. Para obter essa funcionalidade, altere o código de front-end para que a caixa de diálogo modal do Quickview seja anexada ao contêiner do visualizador. Não adicione o CORPO do documento ou algum outro elemento de página da Web que não esteja disponível quando o visualizador estiver no modo de tela cheia. O código que executa esse trabalho escuta uma ou mais chamadas de retorno do visualizador enviadas após o carregamento do visualizador na página.
 
 O código incorporado retornado pelo Experience Manager já tem um manipulador de eventos pronto para uso em vigor. Ele é comentado como visto no seguinte trecho de código destacado:
 

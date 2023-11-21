@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: 360 VR Video
 role: User
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '988'
 ht-degree: 0%
 
 ---
@@ -59,14 +59,16 @@ Consulte [Editar vídeo 360/VR](https://helpx.adobe.com/premiere-pro/how-to/edit
 
       * 1080p - 1920 x 1080, conhecido como resolução Full HD ou FHD ou
       * 2160p - 3840 x 2160, conhecido como 4k, UHD ou resolução de alta definição Ultra. Essa grande resolução de tela é mais frequentemente encontrada em televisores premium e monitores de computador. A resolução de 2160p é frequentemente chamada de &quot;4k&quot; porque a largura é próxima a 4000 pixels. Em outras palavras, oferece quatro vezes mais pixels do que 1080p.
+
    * [Criar um perfil de vídeo adaptável personalizado](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) com representações de maior qualidade. Por exemplo, você pode criar um Perfil de vídeo adaptável que contenha as três configurações a seguir:
 
       * Largura=automática; Altura=720; Taxa de bits=2500 kbps
       * Largura=automática; Altura=1080; Taxa de bits=5000 kbps
       * Largura=auto; Altura=1440; Taxa de bits=6600 kbps
+
    * Processe conteúdo de 360 vídeos em uma pasta dedicada exclusivamente a 360 ativos de vídeo.
 
-   Essa abordagem exige mais da rede e da CPU do usuário final.
+   Essa abordagem exige mais da rede e da CPU do usuário.
 
 1. [Carregue seu vídeo na pasta](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
 
@@ -124,7 +126,8 @@ Consulte [Adição de ativos Dynamic Media a páginas](/help/assets/dynamic-medi
 
    * Na lista Visualizadores, selecione **[!UICONTROL Video360VR]**.
 
-      O vídeo de realidade virtual (VR) é um conteúdo de vídeo imersivo que é acessado usando fones de ouvido de realidade virtual. Assim como em vídeos comuns, você cria vídeos de RV no início, quando um vídeo está sendo gravado ou capturado usando câmeras de vídeo de 360°.
+     O vídeo de realidade virtual (VR) é um conteúdo de vídeo imersivo que é acessado usando fones de ouvido de realidade virtual. Assim como em vídeos comuns, você cria vídeos de RV no início, quando um vídeo está sendo gravado ou capturado usando câmeras de vídeo de 360°.
+
    ![Captura de tela de um usuário que passa o ponteiro do mouse sobre a opção Visualizador de Video360VR.](assets/6_5_360video-preview-video360vr.png)
    *Captura de tela do vídeo 360 VR.*
 

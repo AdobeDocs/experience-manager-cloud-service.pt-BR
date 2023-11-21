@@ -2,7 +2,7 @@
 title: Edição de um SPA externo no AEM
 description: Este documento descreve as etapas recomendadas para fazer upload de um SPA independente em uma instância AEM, adicionar seções editáveis de conteúdo e ativar a criação.
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2418'
 ht-degree: 2%
@@ -343,7 +343,7 @@ Para habilitar a edição no AEM para este exemplo SPA, as seguintes etapas são
 
 1. Adicione auxiliares no roteamento SPA.
 
-   * A página recém-criada ainda não pode renderizar o conteúdo esperado no AEM. O motivo é porque o roteador espera um caminho de `/test` Considerando que o caminho ativo do AEM é `/wknd-spa-react/us/en/test`. Para acomodar a parte específica do AEM do URL, você deve adicionar alguns auxiliares no lado do SPA.
+   * A página criada ainda não pode renderizar o conteúdo esperado no AEM. O motivo é porque o roteador espera um caminho de `/test` Considerando que o caminho ativo do AEM é `/wknd-spa-react/us/en/test`. Para acomodar a parte específica do AEM do URL, você deve adicionar alguns auxiliares no lado do SPA.
 
    ![Auxiliar de roteamento](assets/external-spa-router-helper.png)
 
@@ -356,7 +356,7 @@ Para habilitar a edição no AEM para este exemplo SPA, as seguintes etapas são
 
 1. Verifique a edição da página no AEM.
 
-   * Implante o projeto no AEM e navegue até o recém-criado `test` página. O conteúdo da página agora é renderizado e os componentes de AEM são editáveis.
+   * Implante o projeto no AEM e navegue até o criado `test` página. O conteúdo da página agora é renderizado e os componentes de AEM são editáveis.
 
 ## Limitações da estrutura {#framework-limitations}
 

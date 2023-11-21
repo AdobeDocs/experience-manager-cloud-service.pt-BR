@@ -2,10 +2,10 @@
 title: Verificação de status do nome de domínio
 description: Saiba como determinar se o nome de domínio personalizado foi verificado com sucesso pelo Cloud Manager.
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '647'
-ht-degree: 92%
+source-wordcount: '646'
+ht-degree: 85%
 
 ---
 
@@ -82,7 +82,7 @@ O erro é corrigido da seguinte maneira:
 
 ## Configurações de CDNs pré-existentes para nomes de domínio personalizados {#pre-existing-cdn}
 
-Se você tiver uma configuração de CDN pré-existente para seus nomes de domínio personalizados, haverá uma mensagem informativa nas páginas **Nomes de domínio personalizados** e **Ambiente** recomendando a adição dessas configurações por meio da interface para que se tornem visíveis e configuráveis no Cloud Manager.
+Se você tiver uma configuração de CDN pré-existente para seus nomes de domínio personalizados, há uma mensagem informativa no **Nomes de domínio personalizados** e **Ambiente** , incentivando você a adicionar essas configurações por meio da interface do usuário, para que fiquem visíveis e possam ser definidas no Cloud Manager.
 
 A mensagem desaparece assim que todas as configurações de ambiente pré-existentes são migradas usando a interface do usuário. Pode levar de 1 a 2 dias úteis para a mensagem desaparecer.
 

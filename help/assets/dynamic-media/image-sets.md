@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Image Sets
 role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2134'
 ht-degree: 5%
@@ -190,7 +190,7 @@ Consulte também [Limitações do Dynamic Media](/help/assets/dynamic-media/limi
    >
    >Ao criar o conjunto de imagens, você pode alterar a miniatura do conjunto de imagens. Ou você pode permitir que o Experience Manager selecione a miniatura automaticamente com base nos ativos no conjunto de imagens. Para selecionar uma miniatura, selecione **[!UICONTROL Alterar miniatura]** acima do campo Título na página Editor do conjunto de imagens. Em seguida, selecione qualquer imagem (você também pode navegar para outras pastas para localizar imagens). Experience Manager Se você selecionou uma miniatura e decidiu que deseja gerar uma do conjunto de imagens, selecione **[!UICONTROL Alternar para]** **[!UICONTROL Miniatura automática]**.
 
-1. Clique em **[!UICONTROL Salvar]**. O conjunto de imagens recém-criado aparece na pasta em que você o criou.
+1. Clique em **[!UICONTROL Salvar]**. O conjunto de imagens criado aparece na pasta em que você o criou.
 
 ## Exibir conjuntos de imagens {#viewing-image-sets}
 

@@ -2,9 +2,9 @@
 title: Configurar o mapeamento de metadados de ativos entre o Workfront e o Experience Manager Assets
 description: Mapeie os campos de metadados de ativos entre os aplicativos Adobe Workfront e Experience Manager as a Cloud Service. Como resultado do mapeamento de campos de metadados, ao enviar um ativo do Workfront para o Experience Manager Assets, você pode visualizar os metadados do ativo mapeados no Experience Manager Assets.
 exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1024'
 ht-degree: 4%
 
 ---
@@ -41,7 +41,7 @@ Para definir o mapeamento de metadados para os campos Nome do projeto, Nome do d
 
 1. Selecione a integração do Experience Manager Assets e clique em **[!UICONTROL Editar]**.
 
-1. Clique em **[!UICONTROL Metadados]**. No **[!UICONTROL Assets]** , mapeie o [!UICONTROL Projeto] > [!UICONTROL Nome] Campo do Workfront para o `wm:projectName` Campo do Experience Manager Assets. Se você não encontrar a correspondência exata, o Adobe recomenda procurar a melhor correspondência para mapear o campo do Workfront e do Experience Manager Assets. Você pode evitar o mapeamento de campos de diferentes tipos de dados. Por exemplo, mapear um campo de data do Workfront para um campo de descrição do Assets.
+1. Clique em **[!UICONTROL Metadados]**. No **[!UICONTROL Assets]** , mapeie o [!UICONTROL Projeto] > [!UICONTROL Nome] Campo do Workfront para o `wm:projectName` Campo do Experience Manager Assets. Se você não encontrar a correspondência exata, o Adobe recomenda que você procure a melhor correspondência para mapear o campo do Workfront e do Experience Manager Assets. Você pode evitar o mapeamento de campos de diferentes tipos de dados. Por exemplo, mapear um campo de data do Workfront para um campo de descrição do Assets.
 1. Mapeie o [!UICONTROL Documento] > [!UICONTROL Nome] Campo do Workfront para o `wm:documentName` Campo do Experience Manager Assets.
 
    ![Mapeamento no Workfront](assets/workfront-metadata-mapping.png)

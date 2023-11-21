@@ -6,7 +6,7 @@ content-type: reference
 topic-tags: develop
 discoiquuid: f5642571-9657-4ca1-93c5-4ae2eb91e967
 noindex: true
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '535'
 ht-degree: 1%
@@ -28,7 +28,7 @@ O serviço de tradução automática traduz imediatamente seu conteúdo no formu
 1. Entrada **Adicionar dicionário ao projeto de tradução** , selecione a **Criar um novo projeto de tradução** ou **Adicionar a um projeto de tradução existente** opção.
 1. No **Título do projeto** especifique o título. Por exemplo, `Government Reference Site - German locale.`
 1. No **Idiomas de destino** especifique um local (Por exemplo, `German(de)`) e clique em **Concluído**. Você pode especificar várias localidades. O formulário é traduzido para todas as localidades especificadas no **Idiomas de destino** campo.
-1. Na caixa de diálogo Dicionário adicionado, clique em **Abrir Projetos**. Na tela Projetos, abra o projeto recém-criado.
+1. Na caixa de diálogo Dicionário adicionado, clique em **Abrir Projetos**. Na tela Projetos, abra o projeto criado.
 1. Clique em **reticências** na parte inferior do **Resumo da tradução** bloco. A tela Resumo da tradução é aberta.
 1. Clique em **Editar** ícone na parte superior do **Resumo da tradução** tela. Abra o **Tradução** e selecione Tradução automática na guia **Método de tradução** tela. Selecione o apropriado **Provedor de tradução** e **Configuração na nuvem**. Clique em **Concluído** no topo da tela.
 1. No **Tarefa de tradução** lado a lado, clique no link ![aem62forms_downarrow](assets/aem62forms_downarrow.png) e clique em **Início**. O status do bloco muda para Rascunho. Na conclusão da tradução, o status muda para **Pronto para revisão**. Atualize a página após alguns minutos e verifique o status.

@@ -4,9 +4,9 @@ description: Saiba como adicionar informações aos metadados de um formulário 
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '686'
+source-wordcount: '685'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Você pode usar os valores inseridos em um elemento do formulário para calcular
 
 Para calcular campos de metadados com valores inseridos pelo usuário, adicione elementos do formulário nos metadados. Quando um usuário insere um valor nesse elemento, um script usa o valor para calcular as informações. Essas informações são adicionadas nos metadados. Ao adicionar um elemento como um campo de metadados, você fornece uma chave para ele. A chave é adicionada como um campo nos metadados e as informações computadas são registradas em relação a ela.
 
-Por exemplo, uma empresa de seguros de saúde publica um formulário. Nesse formulário, um campo captura a idade dos usuários finais. O cliente deseja verificar todos os envios em uma faixa etária específica depois que vários usuários enviarem o formulário. Em vez de analisar todos os dados que se complicam com o aumento do número de formulários, os metadados adicionais ajudam o cliente. O autor do formulário pode configurar quais propriedades/dados preenchidos pelo usuário final são armazenados no nível superior para que a pesquisa seja mais fácil. Os metadados adicionais são informações preenchidas pelo usuário armazenadas no nível superior do nó de metadados, conforme configurado pelo autor.
+Por exemplo, uma empresa de seguros de saúde publica um formulário. Nesse formulário, um campo captura a idade dos usuários finais. O cliente deseja verificar todos os envios em uma faixa etária específica depois que vários usuários enviarem o formulário. Em vez de analisar todos os dados que se complicam com o aumento do número de formulários, os metadados adicionais ajudam o cliente. O autor do formulário pode configurar quais propriedades/dados preenchidos pelo usuário serão armazenados no nível superior para facilitar a pesquisa. Os metadados adicionais são informações preenchidas pelo usuário armazenadas no nível superior do nó de metadados, conforme configurado pelo autor.
 
 Considere outro exemplo de um formulário que captura a ID de email e o número de telefone. Quando um usuário visita esse formulário anonimamente e abandona o formulário, o autor pode configurá-lo para salvar automaticamente a ID de email e o número de telefone. Esse formulário é salvo automaticamente e o número de telefone e a ID de email são armazenados no nó de metadados do rascunho. Um caso de uso dessa configuração é o painel de gerenciamento de clientes potenciais.
 

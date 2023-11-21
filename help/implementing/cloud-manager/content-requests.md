@@ -2,9 +2,9 @@
 title: Noções básicas sobre solicitações de conteúdo Cloud Service
 description: Se você adquiriu licenças de solicitação de conteúdo do Adobe, saiba mais sobre os tipos de solicitações de conteúdo que o Adobe Experience Cloud as a Service mede e as variações com as ferramentas de relatório de análise de uma organização.
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1162'
+source-wordcount: '1160'
 ht-degree: 9%
 
 ---
@@ -13,11 +13,11 @@ ht-degree: 9%
 
 ## Variações de solicitações de conteúdo Cloud Service{#content-requests-variances}
 
-As solicitações de conteúdo podem ter variações entre as ferramentas de relatório de Analytics de uma organização, conforme resumido na tabela a seguir. Em geral, as ferramentas do Analytics que reúnem dados por meio de instrumentação do lado do cliente <b>não deve ser usado</b> relatar o número de solicitações de conteúdo para um determinado site, simplesmente porque elas geralmente dependem do consentimento do usuário final para serem acionadas, perdendo uma fração significativa do tráfego. As ferramentas do Analytics que reúnem dados do lado do servidor em arquivos de log ou relatórios CDN para clientes que adicionam seu próprio CDN além do AEM as a Cloud Service fornecerão contagens melhores. Para relatórios sobre Exibições de página, bem como seu desempenho associado, o Serviço de dados de Adobe RUM é a opção recomendada de Adobe.
+As solicitações de conteúdo podem ter variações entre as ferramentas de relatório de Analytics de uma organização, conforme resumido na tabela a seguir. Em geral, as ferramentas do Analytics que reúnem dados por meio de instrumentação do lado do cliente <b>não deve ser usado</b> relatar o número de solicitações de conteúdo para um determinado site, simplesmente porque elas geralmente dependem do consentimento do usuário para serem acionadas, perdendo uma fração significativa do tráfego. As ferramentas do Analytics que reúnem dados do lado do servidor em arquivos de log ou relatórios CDN para clientes que adicionam seu próprio CDN além do AEM as a Cloud Service fornecerão contagens melhores. Para relatórios sobre Exibições de página, bem como seu desempenho associado, o Serviço de dados de Adobe RUM é a opção recomendada de Adobe.
 
 | Motivo da variação | Explicação |
 |---|---|
-| Consentimento do usuário final | As ferramentas do Analytics que dependem da instrumentação do lado do cliente geralmente dependem do consentimento do usuário final para serem acionadas. Isso pode representar a maioria do tráfego que não está sendo rastreado. Para clientes que desejam medir solicitações de conteúdo por conta própria, é recomendável confiar nas ferramentas de análise que coletam relatórios do lado do servidor de dados ou CDN. |
+| Consentimento do usuário final | As ferramentas do Analytics que dependem da instrumentação do lado do cliente geralmente dependem do consentimento do usuário para serem acionadas. Isso pode representar a maioria do tráfego que não está sendo rastreado. Para clientes que desejam medir solicitações de conteúdo por conta própria, é recomendável confiar nas ferramentas de análise que coletam relatórios do lado do servidor de dados ou CDN. |
 | Marcação com tags | Todas as páginas ou chamadas de API que são rastreadas como solicitações de conteúdo do Adobe Experience Manager (AEM) podem não ser marcadas com o rastreamento do Analytics. |
 | Regras de gerenciamento de tags | As configurações das regras de gerenciamento de tags podem resultar em várias configurações de coleta de dados em uma página, resultando em alguma combinação de discrepâncias com o rastreamento de solicitação de conteúdo. |
 | Bots | Os bots desconhecidos que não foram pré-identificados e removidos pelo AEM podem causar discrepâncias no rastreamento. |

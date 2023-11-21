@@ -1,10 +1,10 @@
 ---
-title: Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0.
+title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2020.10.0.
 description: "[!DNL Adobe Experience Manager] Notas de versão as a Cloud Service para 2020.10.0."
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1193'
+source-wordcount: '1194'
 ht-degree: 28%
 
 ---
@@ -47,7 +47,7 @@ A versão seguinte (2020.11.0) será lançada em 1 de dezembro de 2020.
 
 ### Novidades do [!DNL Forms] {#what-is-new-forms-oct-2021}
 
-* **Analytics para Forms adaptável**: agora você pode capturar e rastrear o comportamento de conectado e não conectado (anônimo) por meio do Adobe Analytics for Adaptive Forms para coletar insights do usuário final. Ele ajuda os usuários empresariais a tomar decisões informadas sobre o conteúdo, o layout e o estilo do formulário adaptável com base nos insights coletados.
+* **Analytics para Forms adaptável**: agora é possível capturar e rastrear o comportamento de logado e não conectado (anônimo) por meio do Adobe Analytics for Adaptive Forms para coletar insights do usuário. Ele ajuda os usuários empresariais a tomar decisões informadas sobre o conteúdo, o layout e o estilo do formulário adaptável com base nos insights coletados.
 
 ### Novos recursos disponíveis no canal de pré-lançamento do [!DNL Forms] {#prerelease-features-forms-oct-2021}
 
@@ -65,13 +65,13 @@ Você pode escrever para [!DNL formscsbeta@adobe.com] para se inscrever no progr
 
 * Lançamento do site de referência CIF Venia - 2020.10.2 que inclui a versão mais recente dos componentes principais CIF v1.4.0. Consulte [Site de referência CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2) para obter mais detalhes.
 
-* Lançamento de componentes principais CIF v1.4.0. Consulte [Componentes principais da CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) para obter mais detalhes.
+* Lançamento de componentes principais de CIF v1.4.0. Consulte [Componentes principais da CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) para obter mais detalhes.
 
 ### Correções de erros {#bug-fixes-commerce}
 
 * As solicitações do GraphQL que estavam no Console do produto e os seletores foram feitas por meio do POST HTTP. Esse problema foi corrigido para garantir que o cliente Apollo GraphQL respeite a configuração na configuração OSGi do cliente GraphQL para suportar solicitações GET, se estiver configurada.
 
-* A interface de configuração do CIF Cloud exibia os botões &quot;Salvar e fechar&quot; para as configurações em /lib e /apps/. Mas essas interfaces são somente leitura, portanto, a interface foi corrigida para exibir apenas o botão &quot;Fechar&quot;.
+* A interface de configuração do CIF Cloud exibia botões &quot;Salvar e fechar&quot; para configurações em /lib e /apps/. Mas essas interfaces são somente leitura, portanto, a interface foi corrigida para exibir apenas o botão &quot;Fechar&quot;.
 
 ## Cloud Manager {#cloud-manager}
 

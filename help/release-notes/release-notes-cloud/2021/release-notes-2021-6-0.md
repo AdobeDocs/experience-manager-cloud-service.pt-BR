@@ -1,11 +1,11 @@
 ---
-title: Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2021.6.0.
-description: Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2021.6.0.
+title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2021.6.0.
+description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2021.6.0.
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1436'
-ht-degree: 29%
+source-wordcount: '1435'
+ht-degree: 34%
 
 ---
 
@@ -48,7 +48,7 @@ A próxima versão está planejada para 15 de julho de 2021.
 
 ### Novidades {#what-is-new-junecm}
 
-* O Serviço de visualização será implantado continuamente em todos os programas. Os clientes são notificados no produto quando o Programa está habilitado para o Serviço de visualização. Consulte [Acesso ao serviço de visualização](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) para obter mais detalhes.
+* O Serviço de visualização será implantado continuamente em todos os programas. Os clientes são notificados no produto quando seu programa é habilitado para o serviço de visualização. Consulte [Acesso ao serviço de visualização](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) para obter mais detalhes.
 
 * As Dependências do Maven baixadas durante a etapa de compilação agora serão armazenadas em cache entre as execuções de pipeline. Esse recurso será ativado para os clientes nas próximas semanas.
 
@@ -66,7 +66,7 @@ A próxima versão está planejada para 15 de julho de 2021.
 
   ![Ambientes do Dispatcher](/help/implementing/cloud-manager/release-notes/assets/aem-dispatcher.png)
 
-* Uma nova regra de qualidade do código foi adicionada para validar a estrutura dos índices `damAssetLucene`. Consulte [Índices DAM Asset Lucene Oak personalizados](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check) para obter mais detalhes.
+* Uma nova regra de qualidade de código foi adicionada para validar a estrutura dos índices `damAssetLucene`. Consulte [Índices Oak Lucene de ativos DAM personalizados](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check) para obter mais detalhes.
 
 * A página Detalhes do ambiente agora exibe vários nomes de domínio para os serviços de publicação e visualização (conforme aplicável). Consulte [Detalhes do ambiente](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) para obter mais detalhes.
 
@@ -167,7 +167,7 @@ A data de lançamento do AEM Screens as a Cloud Service é 24 de junho de 2021.
 
 ### Novidades {#what-is-new-cif}
 
-* Novos tipos de dados de referência de produto e categoria da CIF para fragmentos de conteúdo (inclui suporte à interface do seletor de produto/categoria)
+* Novos tipos de dados de referência de produto e categoria de CIF para Fragmentos de conteúdo (Incl. suporte à interface do seletor de produto/categoria)
 * Novo componente principal do fragmento de conteúdo de comércio
 * Pesquisa de comércio de texto completo compatível com o back-end AEM
 * Os Componentes principais do Commerce são compatíveis com a coleta de dados do Adobe Commerce Sensei Recs

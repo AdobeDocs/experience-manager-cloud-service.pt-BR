@@ -2,9 +2,9 @@
 title: O que são considerações, problemas conhecidos e práticas recomendadas no AEM Forms?
 description: Considerações sobre problemas conhecidos e práticas recomendadas para APIs de comunicação do AEM Forms.
 exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1748'
+source-wordcount: '1749'
 ht-degree: 0%
 
 ---
@@ -171,7 +171,7 @@ A tabela a seguir especifica as opções de XCI.
 
 ## Práticas recomendadas
 
-* A Adobe recomenda hospedar arquivos de dados no armazenamento de contêiner de blob na região da nuvem usada pelo AEM Cloud Service.
+* a Adobe recomenda que você hospede arquivos de dados no armazenamento de contêiner de blob na região da nuvem usada pelo AEM Cloud Service.
 
 ## Perguntas frequentes {#faq}
 

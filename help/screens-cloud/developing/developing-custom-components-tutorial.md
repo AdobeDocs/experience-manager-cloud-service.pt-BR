@@ -2,7 +2,7 @@
 title: Desenvolvimento de um componente personalizado para o Screens as a Cloud Service
 description: O tutorial a seguir percorre as etapas para criar um componente personalizado para o AEM Screens. A AEM Screens reutiliza muitos padrões e tecnologias de design existentes de outros produtos AEM. O tutorial destaca as diferenças e considerações especiais ao desenvolver para o AEM Screens.
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2107'
 ht-degree: 3%
@@ -423,7 +423,7 @@ O componente Hello World deve ser usado em um canal de sequência. Para testar o
 
    Configuração de design apontando para /apps/settings/wcm/designs/we-retail-run
 
-1. Edite o canal ocioso recém-criado para que você possa abri-lo.
+1. Edite o canal ocioso criado para que você possa abri-lo.
 
 1. Alternar o modo de página para **Design** Modo.
 

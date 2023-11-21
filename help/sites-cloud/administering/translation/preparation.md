@@ -4,10 +4,10 @@ description: Saiba como preparar conteúdo para tradução ao desenvolver sites 
 feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '751'
-ht-degree: 86%
+source-wordcount: '752'
+ht-degree: 83%
 
 ---
 
@@ -52,7 +52,7 @@ O [site do tutorial do WKND](/help/implementing/developing/introduction/develop-
 
 A cópia de idioma para a qual você criou originalmente o conteúdo do site é o idioma principal. O idioma principal é a fonte, que é traduzida para outros idiomas.
 
-Cada ramificação de idioma de um site é chamada de cópia de idioma. A página raiz de uma cópia de idioma, conhecida como raiz de idioma, identifica o idioma do conteúdo na cópia de idioma. Por exemplo, `/content/wknd/fr` é a raiz de idioma para a cópia em francês. As cópias de idioma devem usar uma [raiz de idioma configurada corretamente](preparation.md#creating-a-language-root) para que o idioma correto seja escolhido quando as traduções de um site de origem forem executadas.
+Cada ramificação de idioma de um site é chamada de cópia de idioma. A página raiz de uma cópia de idioma, conhecida como raiz de idioma, identifica o idioma do conteúdo na cópia de idioma. Por exemplo, `/content/wknd/fr` é a raiz de idioma para a cópia em francês. As cópias de idioma devem usar um [raiz de idioma configurada corretamente](preparation.md#creating-a-language-root) para que o idioma correto seja escolhido quando as traduções de um site de origem forem executadas.
 
 Use as seguintes etapas para preparar seu site para tradução:
 

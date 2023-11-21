@@ -3,10 +3,10 @@ title: Uso do GraphiQL IDE no AEM
 description: Saiba como usar o GraphiQL IDE no Adobe Experience Manager.
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1137'
-ht-degree: 94%
+source-wordcount: '1138'
+ht-degree: 90%
 
 ---
 
@@ -105,7 +105,7 @@ Por exemplo:
 >
 >As regras de regravação personalizadas no Dispatcher podem substituir as configurações de publicação padrão do AEM.
 >
->Caso esteja enviando cabeçalhos de controle de cache baseados em TTL do Dispatcher com base em um padrão de correspondência de local, se necessário, você pode excluir `/graphql/execute.json/*` das correspondências.
+>Caso esteja enviando cabeçalhos de controle de cache com base em TTL do dispatcher, com base em um padrão de correspondência de local, se necessário, você poderá excluir `/graphql/execute.json/*` dos jogos.
 
 Ao usar o GraphQL, é possível configurar os cabeçalhos de cache HTTP para controlar esses parâmetros para sua consulta persistente individual.
 

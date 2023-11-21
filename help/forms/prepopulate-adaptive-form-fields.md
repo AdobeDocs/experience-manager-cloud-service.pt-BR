@@ -3,9 +3,9 @@ title: Como preencher previamente os campos do formulário adaptável?
 description: Com os dados existentes para preencher previamente os campos de um formulário adaptável, os usuários podem preencher previamente as informações básicas em um formulário fazendo logon com seus perfis sociais.
 topic-tags: develop
 exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
-source-git-commit: ebb77adfc97c805383de660d238e04a2173122b7
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '2042'
+source-wordcount: '2041'
 ht-degree: 1%
 
 ---
@@ -261,7 +261,7 @@ Geralmente, os campos vinculados (esquema de formulário) e não vinculados são
 
 >[!NOTE]
 >
-> Como regra geral, não misture campos vinculados e não vinculados se eles forem cruzados em dados preenchidos pelo usuário final em campos desvinculados. Se possível, você deve modificar o esquema ou o modelo de formulário XFA e adicionar uma entrada para campos não vinculados, para que também se torne vinculado e seus dados estejam disponíveis como outros campos nos dados enviados.
+> Como regra geral, não misture campos vinculados e não vinculados se eles forem cruzados em dados preenchidos pelo usuário em campos desvinculados. Se possível, você deve modificar o esquema ou o modelo de formulário XFA e adicionar uma entrada para campos não vinculados, para que também se torne vinculado e seus dados estejam disponíveis como outros campos nos dados enviados.
 
 ## Protocolos compatíveis com o preenchimento prévio de dados do usuário {#supported-protocols-for-prefilling-user-data}
 

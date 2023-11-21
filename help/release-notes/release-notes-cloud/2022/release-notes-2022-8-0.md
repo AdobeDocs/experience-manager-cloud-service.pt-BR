@@ -2,10 +2,10 @@
 title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2022.8.0.
 description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2022.8.0.
 exl-id: 0eff8100-5990-4553-8373-445fb7e6fb27
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '624'
-ht-degree: 59%
+source-wordcount: '623'
+ht-degree: 55%
 
 ---
 
@@ -67,7 +67,7 @@ Assista ao vídeo Visão geral da versão de agosto de 2022 que exibe um resumo 
 
    * Usar modelos estáticos: os clientes com investimentos existentes em modelos estáticos herdados podem continuar sua jornada de adoção da nuvem usando modelos estáticos no assistente para criar formulários adaptáveis. Isso oferece mais tempo para os clientes migrarem modelos estáticos antigos para modelos editáveis modernos.
 
-* [Remover campos ocultos de um Documento de registro (DoR) durante o processamento no lado do servidor](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md): você pode gerar o documento de PDF de registro para usuários finais contendo apenas os campos que estavam visíveis para eles durante a experiência de captura de dados. Após o envio do formulário, o servidor valida quais campos estavam ocultos para o usuário final com base nos dados enviados e exclui do documento de registro para fins de consistência.
+* [Remover campos ocultos de um Documento de registro (DoR) durante o processamento no lado do servidor](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md): você pode gerar o documento de PDF de registro para usuários finais contendo apenas os campos que estavam visíveis para eles durante a experiência de captura de dados. Após o envio do formulário, o servidor valida quais campos estavam ocultos para o usuário com base nos dados enviados e os exclui do documento de registro para fins de consistência.
 
 ## Complemento CIF {#cloud-services-cif}
 

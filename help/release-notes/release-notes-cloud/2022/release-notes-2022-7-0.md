@@ -2,7 +2,7 @@
 title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2022.7.0.
 description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2022.7.0.
 exl-id: b339ab48-e836-4589-a573-9c50917b9280
-source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '949'
 ht-degree: 82%
@@ -39,7 +39,7 @@ Assista ao vídeo Visão geral da versão de julho de 2022 para ver um resumo do
 
 * O [Console de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) agora é compatível com [atalhos de teclado](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md).
 
-* AEM como Cloud Service [entrega de imagens otimizadas para a Web](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=pt-BR) O permite melhorar significativamente a velocidade da página, fornecendo formatos como o WebP. Esse novo serviço também oferece opções mais flexíveis de redimensionamento e transformação de imagem. Todas as versões do [Componente de imagem principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=pt-BR) permite usar este serviço e fornecer imagens em formato WebP clicando em uma opção na política do componente de imagem.
+* AEM como Cloud Service [entrega de imagens otimizadas para a Web](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=pt-BR) O permite melhorar significativamente a velocidade da página, fornecendo formatos como o WebP. Esse novo serviço também oferece opções mais flexíveis de redimensionamento e transformação de imagem. Todas as versões do [Componente de imagem principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=pt-BR) Permitem usar este serviço e fornecer imagens em formato WebP clicando em uma opção na política do componente de imagem.
 
 * As atividades de personalização do AEM agora podem usar fragmentos de experiência no lugar de nossas ofertas herdadas. Este recurso:
    * permite um caminho de migração, onde o conteúdo do AEM promoveria ofertas de fragmentos de experiência, em vez de ofertas de bibliotecas herdadas, para fornecer conteúdo com estilo adequado e alinhado com a personalização em escala a partir de agora.

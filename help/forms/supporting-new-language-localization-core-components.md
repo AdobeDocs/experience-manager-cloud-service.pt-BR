@@ -2,7 +2,7 @@
 title: Como adicionar suporte para novas localidades a um formulário adaptável baseado em componentes principais?
 description: Saiba como adicionar novas localidades para um Formulário adaptável.
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1328'
 ht-degree: 2%
@@ -145,7 +145,7 @@ Execute esta etapa somente se a variável `<locale>` você está adicionando nã
    <filter root="/etc/languages"/>
    ```
 
-   ![Adicione as pastas recém-criadas na `filter.xml` em `/ui.content/src/main/content/meta-inf/vault/filter.xml`](langauge-filter.png)
+   ![Adicione as pastas criadas na `filter.xml` em `/ui.content/src/main/content/meta-inf/vault/filter.xml`](langauge-filter.png)
 
 ### 6. Confirme as alterações e implante o pipeline {#commit-changes-in-repo-deploy-pipeline}
 

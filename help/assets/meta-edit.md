@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 464a97ce-da3e-47b5-9879-fafaf2f2378c
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 7%
@@ -36,7 +36,7 @@ Para editar metadados:
    >
    >Se um campo de texto estiver vazio, não há conjunto de metadados existente. Você pode inserir um valor no campo e salvá-lo para adicionar essa propriedade de metadados.
 
-Quaisquer alterações nos metadados de um ativo são gravadas no binário original como parte de seus dados de XMP. Isso é feito por meio do fluxo de trabalho de gravação de metadados de Experience Manager. Alterações feitas nas propriedades existentes (como `dc:title`) são substituídas e as propriedades recém-criadas (incluindo propriedades personalizadas, como `cq:tags`) são adicionados junto com o schema.
+Quaisquer alterações nos metadados de um ativo são gravadas no binário original como parte de seus dados de XMP. Isso é feito por meio do fluxo de trabalho de gravação de metadados de Experience Manager. Alterações feitas nas propriedades existentes (como `dc:title`) são propriedades substituídas e criadas (incluindo propriedades personalizadas como `cq:tags`) são adicionados junto com o schema.
 
 <!-- XMP write-back is supported and enabled for the platforms and file formats described in technical requirements. -->
 

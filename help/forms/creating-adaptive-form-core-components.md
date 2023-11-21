@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2301'
 ht-degree: 56%
@@ -85,7 +85,7 @@ Você precisará do seguinte para criar um formulário adaptável:
 
    * **Modelo de dados do formulário**: um [Modelo de dados do formulário](data-integration.md) permite integrar entidades e serviços de diferentes fontes de dados a um formulário adaptável. Escolha a opção Modelo de dados de formulário se o formulário adaptável que você está criando envolve a obtenção e gravação de dados de e para várias fontes de dados.
 
-   * **Esquema JSON**: [Esquema JSON](adaptive-form-json-schema-form-model.md) nosso formulário adaptável baseado em componentes principais permite a integração perfeita com o sistema back-end da sua organização, fornecendo a capacidade de associar um esquema JSON, que representa a estrutura dos dados que estão sendo produzidos ou consumidos. Essa associação permite que os autores adicionem conteúdo dinamicamente ao Formulário adaptável usando os elementos do esquema. Os elementos do esquema são facilmente acessíveis na guia Objetos do modelo de dados do navegador de conteúdo durante o processo de criação e todos os campos são adicionados automaticamente a qualquer formulário adaptável recém-criado.
+   * **Esquema JSON**: [Esquema JSON](adaptive-form-json-schema-form-model.md) nosso formulário adaptável baseado em componentes principais permite a integração perfeita com o sistema back-end da sua organização, fornecendo a capacidade de associar um esquema JSON, que representa a estrutura dos dados que estão sendo produzidos ou consumidos. Essa associação permite que os autores adicionem conteúdo dinamicamente ao Formulário adaptável usando os elementos do esquema. Os elementos do esquema são facilmente acessíveis na guia Objetos do modelo de dados do navegador de conteúdo durante o processo de criação e todos os campos são adicionados automaticamente a qualquer formulário adaptável criado.
 
    Por padrão, todos os campos do esquema JSON associado são selecionados e convertidos automaticamente nos componentes de Formulários adaptáveis correspondentes, simplificando o processo de criação. O assistente oferece a conveniência adicional de permitir a escolha seletiva de quais campos devem ser incluídos no Formulário adaptável usando caixas de seleção.
 

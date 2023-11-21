@@ -4,7 +4,7 @@ description: Saiba como criar e gerenciar projetos de tradução automática e h
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '3971'
 ht-degree: 86%
@@ -455,7 +455,7 @@ A prática recomendada neste cenário é seguir este procedimento:
 1. Cancele a publicação das cópias de idioma associadas à página de origem que você deseja mover.
 1. Exclua essas cópias.
 1. Crie novas cópias de idioma a partir da página de origem recém-movida.
-1. Publique as cópias de idioma recém-criadas.
+1. Publicar as cópias de idioma criadas.
 
 ## Importar e exportar trabalhos de tradução {#import-export}
 

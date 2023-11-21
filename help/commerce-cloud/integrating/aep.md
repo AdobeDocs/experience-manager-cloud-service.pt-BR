@@ -11,7 +11,7 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: 43220614f567bdfad17c6ac9c8b3adcc856ff044
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2068'
 ht-degree: 1%
@@ -57,7 +57,7 @@ Siga as [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/expe
 ![Projeto de comércio AEM](../assets/aep-integration/aem-project-with-commerce.png)
 
 
-Crie e implante o projeto recém-criado do Comércio de AEM no SDK AEM local executando o seguinte comando no diretório raiz do projeto.
+Crie e implante o projeto de comércio do AEM criado no SDK AEM local executando o seguinte comando no diretório raiz do projeto.
 
 ```bash
 $ mvn clean install -PautoInstallSinglePackage
@@ -403,11 +403,11 @@ Conclua as etapas a seguir para criar uma sequência de dados no Experience Plat
 
    ![Criar fluxos de dados da AEP](../assets/aep-integration/AEP-Datastream-Create.png)
 
-1. Nomeie sua sequência de dados usando o __Nome__ campo obrigatório. No __Esquema de evento__ selecione o esquema recém-criado e clique em __Salvar__.
+1. Nomeie sua sequência de dados usando o __Nome__ campo obrigatório. No __Esquema de evento__ selecione o esquema criado e clique em __Salvar__.
 
    ![Definir fluxos de dados AEP](../assets/aep-integration/AEP-Datastream-Define.png)
 
-1. Abra o fluxo de dados recém-criado e clique em __Adicionar serviço__.
+1. Abra o Datastream criado e clique em __Adicionar serviço__.
 
    ![Adicionar serviço de fluxos de dados da AEP](../assets/aep-integration/AEP-Datastream-Add-Service.png)
 

@@ -2,9 +2,9 @@
 title: Como configurar uma ação enviar para um formulário adaptável?
 description: Um Formulário adaptável fornece várias Ações de envio. Uma Ação de envio define como um Formulário adaptável é processado após o envio. Você pode usar as Ações de envio integradas ou criar as suas próprias ações.
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: f79ed400ac2c1956dd7946cec2881f4e77d4bd41
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '3429'
+source-wordcount: '3428'
 ht-degree: 3%
 
 ---
@@ -446,7 +446,7 @@ Use o **[!UICONTROL Revalidar no servidor]** em Contêiner de formulário adapt�
 
 Ativar a validação do lado do servidor
 
-Se o usuário final ignorar essas validações e enviar os formulários, o servidor executará novamente a validação. Se a validação falhar no final do servidor, a transação de envio será interrompida. O usuário final é apresentado ao formulário original novamente. Os dados capturados e os dados enviados são apresentados ao usuário como um erro.
+Se o usuário final ignorar essas validações e enviar os formulários, o servidor executará novamente a validação. Se a validação falhar no final do servidor, a transação de envio será interrompida. O formulário original é apresentado ao usuário novamente. Os dados capturados e os dados enviados são apresentados ao usuário como um erro.
 
 >[!NOTE]
 >

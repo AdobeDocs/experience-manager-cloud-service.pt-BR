@@ -2,10 +2,10 @@
 title: Personalização e direcionamento de conteúdo
 description: Saiba como criar conteúdo personalizado e direcionado com o AEM
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1053'
-ht-degree: 93%
+source-wordcount: '1054'
+ht-degree: 91%
 
 ---
 
@@ -24,7 +24,7 @@ O AEM fornece uma estrutura de ferramentas para:
 * Definir as regras usadas para resolver as informações do usuário conhecidas em relação a uma definição de público-alvo.
 * Configurar suas páginas para apresentar experiências personalizadas direcionadas; para renderizar o conteúdo específico aplicável ao usuário final atual.
 
-A visão geral a seguir apresenta alguns termos usados para personalização no AEM as a Cloud Service, seguidos por uma ordem de ação recomendada.
+A visão geral a seguir apresenta alguns dos termos usados para personalização no AEM as a Cloud Service, seguidos por uma ordem de ação recomendada.
 
 ## Experiência {#experience}
 

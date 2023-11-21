@@ -4,10 +4,10 @@ description: Siga esta página para saber como atribuir membros da equipe a perf
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 555688e5-f937-462c-9fcc-b90685f1882b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1527'
-ht-degree: 93%
+ht-degree: 92%
 
 ---
 
@@ -181,7 +181,7 @@ Agora você está pronto para continuar sua jornada de integração revisando em
 
 ## Recursos adicionais {#additional-resources}
 
-É recomendável continuar na jornada de integração conforme descrito anteriormente. Estes são alguns recursos adicionais se você quiser se aprofundar em um tópico específico desta jornada.
+É recomendável continuar a jornada de integração conforme descrito anteriormente. Estes são alguns recursos adicionais se você quiser se aprofundar em um tópico específico desta jornada.
 
 * [Introdução ao Cloud Manager](/help/onboarding/cloud-manager-introduction.md) - Saiba mais sobre o Cloud Manager e seus programas e ambientes.
 * [Perfis de produto do Cloud Manager](/help/onboarding/aem-cs-team-product-profiles.md) - Saiba mais sobre os perfis de produto e equipe do AEM as a Cloud Service.

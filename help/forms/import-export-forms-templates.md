@@ -3,7 +3,7 @@ title: Como importar, exportar e organizar o Adaptive Forms ou PDF forms em uma 
 description: Saiba como migrar Forms adaptável, PDF forms, temas e outros ativos de suporte para e de instâncias AEM.
 topic-tags: forms-manager
 exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1206'
 ht-degree: 1%
@@ -185,7 +185,7 @@ Você pode usar pastas para organizar e organizar ativos. Organizar documentos e
 
    Se existir uma pasta com o nome especificado, o envio falha com um erro. Você pode exibir a mensagem de erro passando o cursor do mouse sobre ele ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) ícone que aparece ao lado do campo de nome.
 
-   Toque na pasta recém-criada para entrar na pasta e criar ativos ou pastas dentro dela. Além disso, você pode selecionar uma pasta e optar por colocá-la na fila para download, excluí-la ou editar seu nome.
+   Toque na pasta criada para entrar na pasta e criar ativos ou pastas dentro dela. Além disso, você pode selecionar uma pasta e optar por colocá-la na fila para download, excluí-la ou editar seu nome.
 
 
 <!-- ### Create copies of one or more assets or letters {#create-copies-of-one-or-more-assets-or-letters}

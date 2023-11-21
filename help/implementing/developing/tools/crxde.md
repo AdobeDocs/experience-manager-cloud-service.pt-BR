@@ -2,9 +2,9 @@
 title: Uso do CRXDE Lite
 description: o CRXDE Lite faz parte do AEM quickstart e está disponível para você acessar e modificar o repositório em seus ambientes de desenvolvimento locais no navegador.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1685'
+source-wordcount: '1683'
 ht-degree: 1%
 
 ---
@@ -192,7 +192,7 @@ Agora você pode adaptar o nó às suas necessidades modificando propriedades ou
 >
 A maioria das operações de edição, incluindo **Criar nó** O, mantém todas as alterações na memória e só as armazena no repositório após salvar (usando o [**Botão Salvar tudo**](#save-all-button)). No entanto, algumas operações, como mover, são automaticamente mantidas.
 >
-A validação relacionada à permissão do nó recém-criado pelo tipo de nó principal também é realizada pelo repositório ao salvar as alterações. Se você receber uma mensagem de erro ao salvar um nó, verifique se a estrutura do conteúdo é válida (por exemplo, não é possível criar um `nt:unstructured` nó como filho de `nt:folder` nó).
+A validação relacionada à permissão do nó criado pelo tipo de nó do nó principal também é realizada pelo repositório ao salvar as alterações. Se você receber uma mensagem de erro ao salvar um nó, verifique se a estrutura do conteúdo é válida (por exemplo, não é possível criar um `nt:unstructured` nó como filho de `nt:folder` nó).
 
 ## Criação de uma propriedade {#creating-a-property}
 

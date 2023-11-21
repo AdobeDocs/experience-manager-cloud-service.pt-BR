@@ -2,10 +2,10 @@
 title: Teste de auditoria de experiência
 description: Saiba como a Auditoria de experiência valida seu processo de implantação e ajuda a garantir que as alterações implantadas atendam aos padrões básicos de desempenho, acessibilidade, práticas recomendadas e SEO.
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 93%
+source-wordcount: '588'
+ht-degree: 90%
 
 ---
 
@@ -27,7 +27,7 @@ A Auditoria de experiência é um recurso disponível nos pipelines de produçã
 
 1. Não introduza regressões.
 
-A Auditoria de experiência no Cloud Manager garante que a experiência do usuário final no site seja do mais alto padrão.
+A Auditoria de experiência no Cloud Manager garante que a experiência do usuário no site seja do mais alto padrão.
 
 Os resultados da auditoria são informativos e permitem que o gerente de implantação veja as pontuações e as alterações entre as pontuações atual e anterior. Essa informação é valiosa para determinar se foi introduzida uma regressão com a implantação atual.
 

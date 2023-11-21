@@ -2,10 +2,10 @@
 title: Gerenciar certificados SSL
 description: Saiba como usar o Cloud Manager para verificar o status dos certificados SSL e como editá-los, substituí-los, atualizá-los e excluí-los.
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 82%
+source-wordcount: '636'
+ht-degree: 76%
 
 ---
 
@@ -66,7 +66,7 @@ Siga estas etapas para excluir um certificado SSL.
 
 ## Configurações pré-existentes de CDN {#pre-existing-cdn}
 
-Se você tiver uma configuração de CDN pré-existente para o seu certificado SSL, haverá uma mensagem informativa na página **Certificados SSL**, incentivando-o a adicionar essas configurações por meio da interface para que fiquem visíveis e configuráveis no Cloud Manager.
+Se você tiver uma configuração de CDN pré-existente para seu certificado SSL, haverá uma mensagem informativa no **Certificados SSL** incentivando você a adicionar essas configurações por meio da interface do usuário, para que fiquem visíveis e possam ser definidas no Cloud Manager.
 
 A mensagem desaparece assim que todas as configurações de ambiente pré-existentes são migradas usando a interface do usuário. Pode levar de 1 a 2 dias úteis para a mensagem desaparecer.
 

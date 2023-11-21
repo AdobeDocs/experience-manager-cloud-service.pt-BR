@@ -8,7 +8,7 @@ level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: 6f1c3fe7-b61e-47ce-b565-15b4904db092
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2737'
 ht-degree: 94%
@@ -80,7 +80,7 @@ Você precisará do seguinte para criar um formulário adaptável:
 
    * **Modelo de dados do formulário**: um [Modelo de dados do formulário](data-integration.md) permite integrar entidades e serviços de diferentes fontes de dados a um formulário adaptável. Escolha a opção Modelo de dados de formulário se o formulário adaptável que você está criando envolve a obtenção e gravação de dados de e para várias fontes de dados.
 
-   * **Esquema JSON**: [Esquema JSON](adaptive-form-json-schema-form-model.md) nosso formulário adaptável baseado em componentes principais permite a integração perfeita com o sistema back-end da sua organização, fornecendo a capacidade de associar um esquema JSON, que representa a estrutura dos dados que estão sendo produzidos ou consumidos. Essa associação permite que os autores adicionem conteúdo dinamicamente ao Formulário adaptável usando os elementos do esquema. Os elementos do esquema são facilmente acessíveis na guia Objetos do modelo de dados do navegador de conteúdo durante o processo de criação e todos os campos são adicionados automaticamente a qualquer formulário adaptável recém-criado.
+   * **Esquema JSON**: [Esquema JSON](adaptive-form-json-schema-form-model.md) nosso formulário adaptável baseado em componentes principais permite a integração perfeita com o sistema back-end da sua organização, fornecendo a capacidade de associar um esquema JSON, que representa a estrutura dos dados que estão sendo produzidos ou consumidos. Essa associação permite que os autores adicionem conteúdo dinamicamente ao Formulário adaptável usando os elementos do esquema. Os elementos do esquema são facilmente acessíveis na guia Objetos do modelo de dados do navegador de conteúdo durante o processo de criação e todos os campos são adicionados automaticamente a qualquer formulário adaptável criado.
 
    Por padrão, todos os campos do esquema JSON associado são selecionados e convertidos automaticamente nos componentes de Formulários adaptáveis correspondentes, simplificando o processo de criação. O assistente oferece a conveniência adicional de permitir a escolha seletiva de quais campos devem ser incluídos no Formulário adaptável usando caixas de seleção.
 
@@ -154,7 +154,7 @@ Você precisará do seguinte para criar um formulário adaptável:
 
    * **Modelo de dados do formulário**: um [Modelo de dados do formulário](data-integration.md) permite integrar entidades e serviços de diferentes fontes de dados a um formulário adaptável. Escolha a opção Modelo de dados de formulário se o formulário adaptável que você está criando envolve a obtenção e gravação de dados de e para várias fontes de dados.
 
-   * **Esquema JSON**: o [Esquema JSON](adaptive-form-json-schema-form-model.md) representa a estrutura na qual os dados são produzidos ou consumidos pelo sistema back-end em sua organização. É possível associar o esquema a um formulário adaptável e usar seus elementos para adicionar conteúdo dinâmico ao formulário adaptável. Os elementos do esquema estão disponíveis para uso na guia Objetos do modelo de dados do navegador de conteúdo ao criar o Adaptive Forms, e todos os campos também são adicionados ao Formulário adaptável recém-criado.
+   * **Esquema JSON**: o [Esquema JSON](adaptive-form-json-schema-form-model.md) representa a estrutura na qual os dados são produzidos ou consumidos pelo sistema back-end em sua organização. É possível associar o esquema a um formulário adaptável e usar seus elementos para adicionar conteúdo dinâmico ao formulário adaptável. Os elementos do esquema estão disponíveis para uso na guia Objetos do modelo de dados do navegador de conteúdo ao criar o Adaptive Forms e todos os campos também são adicionados ao Formulário adaptável criado.
 
    Por padrão, todos os campos do modelo de dados são selecionados. Ao criar o formulário adaptável, todos os campos de modelo de dados selecionados são convertidos nos componentes de formulários adaptáveis correspondentes. O assistente fornecerá caixas de seleção para selecionar apenas os campos que devem ser incluídos no formulário adaptável.
 
@@ -178,7 +178,7 @@ Você precisará do seguinte para criar um formulário adaptável:
    * **[!UICONTROL Nome:]** especifica o nome do formulário. Um nó com o nome especificado será criado no repositório. Ao começar a digitar um título, o valor do campo de nome é gerado automaticamente. É possível alterar o valor sugerido. O campo de nome pode incluir apenas caracteres alfanuméricos, hifens e sublinhados. Todas as entradas inválidas são substituídas por um hífen.
    * **[!UICONTROL Caminho:]** especifica o local no qual o Formulário adaptável deverá ser salvo. É possível salvar o formulário adaptável diretamente em `/content/dam/formsanddocuments` ou criar uma pasta como `/content/dam/formsanddocuments/adaptiveforms` para salvar um Formulário adaptável. Certifique-se de criar a pasta antes de usá-la no caminho. O campo **[!UICONTROL Caminho:]** não cria uma pasta automaticamente.
 
-1. Toque em **[!UICONTROL Criar]**. Um Formulário adaptável será criado e aberto no editor de Formulários adaptáveis. O editor exibirá o conteúdo disponível no modelo. Ele também exibe a barra lateral para personalizar o formulário recém-criado de acordo com as necessidades.
+1. Toque em **[!UICONTROL Criar]**. Um Formulário adaptável será criado e aberto no editor de Formulários adaptáveis. O editor exibirá o conteúdo disponível no modelo. Ele também exibe a barra lateral para personalizar o formulário criado de acordo com as necessidades.
 
    Com base no tipo de formulário adaptável, os elementos de formulário presentes no esquema JSON <!--XFA form template, XML schema or --> associado ou no modelo de dados de formulário são exibidos na guia **[!UICONTROL Objetos do modelo de dados]** do **[!UICONTROL Navegador de conteúdo]** na barra lateral. Também é possível arrastar e soltar esses elementos para criar seu formulário adaptável.
 

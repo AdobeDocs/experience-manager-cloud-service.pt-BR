@@ -3,10 +3,10 @@ title: Saiba como pesquisar e descobrir ativos no [!DNL Assets view]?
 description: Saiba como pesquisar e descobrir ativos na visualização do AEM Assets. Essa eficiente funcionalidade de pesquisa permite descobrir rapidamente o ativo apropriado e ajuda a melhorar a velocidade do conteúdo.
 role: User
 exl-id: be9597a3-056c-436c-a09e-15a03567c85a
-source-git-commit: d663c258a83473ec8d3c68bc5683955003d889c7
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '924'
-ht-degree: 93%
+source-wordcount: '922'
+ht-degree: 90%
 
 ---
 
@@ -123,7 +123,7 @@ Para remover filtros personalizados:
 
 ## Pesquisas salvas {#saved-search}
 
-A funcionalidade de pesquisa é bastante fácil de usar no [!DNL Assets view]. Na caixa de pesquisa, você pode simplesmente digitar uma palavra-chave e pressionar Return para ver os resultados. Além disso, é possível pesquisar novamente por palavras-chave recentes de maneira rápida e com um único clique.
+A funcionalidade de pesquisa é bastante fácil de usar no [!DNL Assets view]. Na caixa de pesquisa, basta digitar uma palavra-chave e pressionar Return para ver os resultados, ou você pode pesquisar novamente as palavras-chave pesquisadas recentemente de maneira rápida e com um único clique.
 
 Também é possível filtrar os resultados da pesquisa com base em critérios específicos relacionados aos metadados e tipos de ativos. O [!DNL Assets view] também permite salvar os parâmetros de uma pesquisa para melhorar a experiência de busca de filtros usados com frequência. Em seguida, você pode selecionar a pesquisa salva para pesquisar e aplicar o filtro com apenas um clique.
 

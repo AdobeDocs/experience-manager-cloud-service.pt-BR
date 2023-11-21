@@ -2,9 +2,9 @@
 title: Referência da API JavaScript do ContextHub
 description: A API JavaScript do ContextHub estará disponível para seus scripts quando o componente ContextHub for adicionado à página
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '4612'
+source-wordcount: '4613'
 ht-degree: 2%
 
 ---
@@ -242,7 +242,7 @@ Recupera a árvore de dados do armazenamento. Como opção, inclua os pares chav
 
 ##### Parâmetros {#parameters-gettree}
 
-* `includeInternals:` Um valor de `true` O inclui pares de chave/valor usados internamente nos resultados. As chaves desses dados começam com um sublinhado (`_`). O valor padrão é `false`.
+* `includeInternals:` Um valor de `true` inclui pares de chave/valor usados internamente nos resultados. As chaves desses dados começam com um sublinhado (`_`). O valor padrão é `false`.
 
 ##### Devoluções {#returns-gettree}
 
@@ -856,7 +856,7 @@ Uma cópia da árvore que é limpa.
 
 #### getItem() {#getitem}
 
-Recupera o valor de um objeto para a chave a.
+Recupera o valor de um objeto para a chave.
 
 ##### Parâmetros {#parameters-getitem-2}
 

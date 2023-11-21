@@ -4,7 +4,7 @@ description: Conheça as práticas recomendadas compiladas pelas equipes de enge
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1418'
 ht-degree: 92%
@@ -113,9 +113,9 @@ Ao considerar mover páginas em uma Live Copy, considere a seguinte prática rec
    * Não adicione outras ações a essa configuração.
 1. Posicione a nova configuração.
    * Para implantar totalmente a movimentação de página, ao excluir as respectivas páginas em seu local antigo na Live Copy:
-      * Posicione a configuração recém-criada antes da configuração de implantação padrão. A configuração de implantação padrão cuidará da exclusão das páginas em seus locais antigos.
+      * Posicione a configuração criada antes da configuração de implantação padrão. A configuração de implantação padrão cuidará da exclusão das páginas em seus locais antigos.
       * Para implantar a movimentação da página, mantendo as respectivas páginas em seus locais antigos nas Live Copies (essencialmente duplicando o conteúdo):
-         * Posicione a configuração recém-criada após a configuração padrão de implantação. Isso garantirá que nenhum conteúdo seja excluído na Live Copy ou desativado na publicação.
+         * Posicione a configuração criada após a configuração padrão de implantação. Isso garantirá que nenhum conteúdo seja excluído na Live Copy ou desativado na publicação.
 
 ## Personalização de implantações {#customizing-rollouts}
 

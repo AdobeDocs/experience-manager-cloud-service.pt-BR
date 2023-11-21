@@ -2,10 +2,10 @@
 title: Ambiente de compilação
 description: Saiba mais sobre o ambiente de compilação do Cloud Manager e como ele cria e testa seu código.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1004'
-ht-degree: 94%
+ht-degree: 93%
 
 ---
 
@@ -157,9 +157,9 @@ Os nomes das variáveis devem observar as convenções a seguir.
 * As variáveis podem conter somente caracteres alfanuméricos e sublinhado (`_`).
 * Os nomes devem estar em maiúsculas.
 * Há um limite de 200 variáveis por pipeline.
-* Cada nome deve ter menos de 100 caracteres.
+* Cada nome deve ter 100 caracteres ou menos.
 * Cada valor de variável `string` deve ter menos de 2048 caracteres.
-* Cada valor de tipo de variável `secretString` deve ter menos de 500 caracteres.
+* Each `secretString` o valor da variável de tipo deve ter 500 caracteres ou menos.
 
 Quando usado em um arquivo `pom.xml` do Maven, normalmente é útil mapear essas variáveis às propriedades do Maven usando uma sintaxe semelhante a esta.
 

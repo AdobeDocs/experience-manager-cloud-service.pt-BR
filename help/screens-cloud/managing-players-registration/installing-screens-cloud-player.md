@@ -2,9 +2,9 @@
 title: Instalação e configuração de players no Screens as a Cloud Service
 description: Esta página descreve como instalar e configurar players no Screens as a Cloud Service.
 exl-id: a022738a-c543-4629-a244-f70fa294fe7f
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '581'
 ht-degree: 1%
 
 ---
@@ -53,7 +53,7 @@ O monitoramento básico da reprodução em um reprodutor AEM Screens permite:
 
 * Melhore a reatividade para telas em branco ou experiências com falha no campo.
 
-* Diminui o risco de mostrar uma experiência quebrada ao usuário final.
+* Diminui o risco de mostrar uma experiência quebrada ao usuário.
 
 ### Noções básicas sobre propriedades {#understand-properties}
 

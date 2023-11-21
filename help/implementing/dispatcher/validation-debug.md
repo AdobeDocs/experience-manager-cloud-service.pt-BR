@@ -3,7 +3,7 @@ title: Validação e depuração usando ferramentas do Dispatcher
 description: Saiba mais sobre validação local, depuração, estrutura de arquivos do modo flexível e como migrar do modo herdado para o modo flexível.
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 4a79284d879af1920c839a68be14619d1e35f7e9
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2990'
 ht-degree: 1%
@@ -397,7 +397,7 @@ No modo flexível, outros arquivos também podem ser incluídos, desde que estej
 | `conf.d/modsec` |
 | `conf.d/rewrites` |
 
-Por exemplo, você pode incluir um arquivo em algum diretório recém-criado em `conf.d/includes` diretório como a seguir:
+Por exemplo, você pode incluir um arquivo em algum diretório criado em `conf.d/includes` diretório como a seguir:
 
 ```
 Include conf.d/includes/mynewdirectory/myincludefile.conf

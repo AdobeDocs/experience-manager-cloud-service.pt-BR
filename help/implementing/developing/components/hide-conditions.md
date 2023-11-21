@@ -2,7 +2,7 @@
 title: Uso de condições de ocultação
 description: As condições de ocultação podem ser usadas para determinar se um recurso de componente é renderizado ou não.
 exl-id: 2a96f246-fb0f-4298-899e-ebbf9fc1c96f
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '617'
 ht-degree: 2%
@@ -11,7 +11,7 @@ ht-degree: 2%
 
 # Uso de condições de ocultação {#using-hide-conditions}
 
-As condições de ocultação podem ser usadas para determinar se um recurso de componente é renderizado ou não. Um exemplo disso seria quando um autor de modelo configura o Componente principal [componente de lista](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html) no [editor de modelo](/help/sites-cloud/authoring/features/templates.md) e decide desativar as opções para criar a lista com base em páginas secundárias. Desativar essa opção na caixa de diálogo de design define uma propriedade para que, quando o componente de lista for renderizado, a condição de ocultação seja avaliada e a opção para mostrar páginas secundárias não seja exibida.
+As condições de ocultação podem ser usadas para determinar se um recurso de componente é renderizado ou não. Um exemplo disso seria quando um autor de modelo configurasse o Componente principal [componente de lista](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html) no [editor de modelo](/help/sites-cloud/authoring/features/templates.md) e decide desativar as opções para criar a lista com base em páginas secundárias. Desativar essa opção na caixa de diálogo de design define uma propriedade para que, quando o componente de lista for renderizado, a condição de ocultação seja avaliada e a opção para mostrar páginas secundárias não seja exibida.
 
 ## Visão geral {#overview}
 

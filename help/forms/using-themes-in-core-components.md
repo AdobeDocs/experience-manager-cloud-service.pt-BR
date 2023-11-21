@@ -2,7 +2,7 @@
 title: Como podemos criar e usar temas no Adaptive Forms?
 description: Você pode usar temas para estilizar e fornecer uma identidade visual a um Formulário adaptável usando componentes principais. Você pode compartilhar um tema em qualquer número do Adaptive Forms.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2676'
 ht-degree: 3%
@@ -319,7 +319,7 @@ Você precisa de um repositório para implantar o tema. Faça logon no [Reposit�
 
 ##### 5.2. Enviar as alterações para o repositório {#committing-the-changes}
 
-Agora, envie as alterações para o repositório de temas do seu Cloud Service AEM Forms. .
+Agora, envie as alterações para o repositório de temas do seu Cloud Service AEM Forms.
 
 1. Navegue até a raiz da pasta de temas.  Nesse caso, o nome da pasta do tema é `aem-forms-theme-canvas`.
 1. Abra o prompt de comando ou o terminal.

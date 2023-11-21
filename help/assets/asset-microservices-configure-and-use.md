@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2928'
 ht-degree: 3%
@@ -246,7 +246,7 @@ Quando o pós-processamento não for necessário, crie e use um Modelo de fluxo 
    * Título: desativar o fluxo de trabalho de início automático
    * Nome: disable-auto-start-workflow
 1. Selecionar __Concluído__ para criar o modelo de fluxo de trabalho
-1. __Selecionar__ e __Editar__ o modelo de fluxo de trabalho recém-criado
+1. __Selecionar__ e __Editar__ o modelo de fluxo de trabalho criado
 1. No editor de Modelo de fluxo de trabalho, selecione __Etapa 1__ da definição do modelo e exclua-o
 1. Abra o __Painel lateral__ e selecione __Etapas__
 1. Arraste o __Fluxo de trabalho do Ativo de atualização DAM concluído__ entrar na definição do modelo

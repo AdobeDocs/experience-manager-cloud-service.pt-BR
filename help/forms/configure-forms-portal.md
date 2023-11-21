@@ -2,9 +2,9 @@
 title: Como criar um Portal do Forms em uma página do Experience Manager Sites?
 description: Saiba como criar um Portal do Forms e usar componentes principais prontos para uso em uma página do AEM Sites.
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: e48272f4d36c608d516c7a947fc16cff3a3b408e
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1841'
+source-wordcount: '1840'
 ht-degree: 2%
 
 ---
@@ -33,7 +33,7 @@ Os componentes do Portal de formulários permitem adicionar a seguinte funcional
 * Habilitar a pesquisa de formulários com base no título e na descrição.
 * Use o CSS personalizado para personalizar a aparência do portal.
 * Criar links para formulários.
-* Lista rascunhos e envios relacionados ao Adaptive Forms criados pelo usuário final.
+* Lista rascunhos e envios relacionados ao Adaptive Forms criados pelo usuário.
 
 ## Componentes de uma página do Forms Portal {#forms-portal-components}
 

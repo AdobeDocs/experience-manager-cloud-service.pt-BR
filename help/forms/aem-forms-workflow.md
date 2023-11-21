@@ -4,7 +4,7 @@ seo-title: Rapidly build Adaptive Forms-based processes, automate document servi
 description: Use o AEM Forms Workflow para automatizar e criar rapidamente workflows de processos de negócios. Por exemplo, análise e aprovação, geração de PDF, fluxos de trabalho de Adobe Sign.
 uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
 topic-tags: publish, document_services
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2392'
 ht-degree: 2%
@@ -66,7 +66,7 @@ O exemplo cria um modelo de fluxo de trabalho para uma solicitação de hipoteca
 1. Abra o console Modelos de fluxo de trabalho. O URL padrão é `https://[server]:[port]/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models`
 1. Selecionar **Criar**, depois **Criar modelo**. A caixa de diálogo Adicionar modelo de fluxo de trabalho é exibida.
 1. Insira o **Título** e **Nome** (opcional). Por exemplo, uma solicitação de hipoteca. Toque **Concluído**.
-1. Selecione o modelo de fluxo de trabalho recém-criado e toque em **Editar**. Agora é possível adicionar etapas do fluxo de trabalho para criar uma lógica de negócios. Ao criar um modelo de fluxo de trabalho pela primeira vez, ele contém:
+1. Selecione o modelo de workflow criado e toque em **Editar**. Agora é possível adicionar etapas do fluxo de trabalho para criar uma lógica de negócios. Ao criar um modelo de fluxo de trabalho pela primeira vez, ele contém:
 
    * As etapas: Início do fluxo e Fim do fluxo. Essas etapas representam o início e o fim do workflow. Essas etapas são obrigatórias e não podem ser editadas ou removidas.
    * Um exemplo de etapa do participante chamada Etapa 1. Esta etapa é configurada para atribuir um item de trabalho ao usuário administrador. Remova esta etapa.

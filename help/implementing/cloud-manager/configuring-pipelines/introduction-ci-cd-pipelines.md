@@ -3,10 +3,10 @@ title: Pipelines de CI/CD
 description: Saiba mais sobre os pipelines de CI/CD do Cloud Manager e como eles podem ser usados para implantar seu código com eficiência.
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1418'
-ht-degree: 90%
+source-wordcount: '1417'
+ht-degree: 89%
 
 ---
 
@@ -169,7 +169,7 @@ As restrições a seguir se aplicam.
 * Você deve [aceitar o modo flexível das ferramentas do dispatcher](/help/implementing/dispatcher/disp-overview.md#validation-debug) para aproveitar os pipelines de configuração no nível da Web.
 * É necessário estar conectado na função **Gerente de implantação** para configurar ou executar pipelines.
 * Em um dado momento, somente pode haver um pipeline de configuração no nível da Web por ambiente.
-* O usuário não pode definir um pipeline de configuração no nível da Web quando um pipeline de pilha completa correspondente está em execução.
+* O usuário não pode configurar um pipeline de configuração no nível da Web quando seu pipeline de pilha completa correspondente está em execução.
 * A estrutura de nível da Web deve seguir a estrutura do modo flexível, conforme definido no documento [Dispatcher na nuvem](/help/implementing/dispatcher/disp-overview.md#validation-debug).
 
 Além disso, esteja ciente de como o [pipeline de pilha completa](#full-stack-pipeline) se comporta ao introduzir um pipeline no nível da Web.

@@ -2,10 +2,10 @@
 title: Layout responsivo
 description: O AEM permite que você tenha um layout responsivo para suas páginas
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1731'
-ht-degree: 83%
+source-wordcount: '1732'
+ht-degree: 82%
 
 ---
 

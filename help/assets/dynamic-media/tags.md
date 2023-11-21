@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '6663'
+source-wordcount: '6661'
 ht-degree: 7%
 
 ---
@@ -52,7 +52,7 @@ A integração aproveita dois tipos separados e independentes de rastreamento do
 
 ### Sobre o rastreamento usando o Adobe Analytics  {#about-tracking-using-adobe-analytics}
 
-O Adobe Analytics permite rastrear ações que são executadas pelo usuário final quando ele interage com os Visualizadores do Dynamic Media no seu site. O Adobe Analytics também permite rastrear dados específicos do visualizador. Por exemplo, é possível rastrear e registrar eventos de carregamento de exibição junto com o nome do ativo, ações de zoom ocorridas e ações de reprodução de vídeo.
+O Adobe Analytics permite rastrear as ações executadas pelo usuário quando ele interage com os Visualizadores do Dynamic Media no seu site. O Adobe Analytics também permite rastrear dados específicos do visualizador. Por exemplo, é possível rastrear e registrar eventos de carregamento de exibição junto com o nome do ativo, ações de zoom ocorridas e ações de reprodução de vídeo.
 
 Nas Tags do Experience Platform, os conceitos de *Elementos de dados* e *Regras* trabalhe em conjunto para ativar o rastreamento do Adobe Analytics.
 
@@ -221,9 +221,9 @@ O valor exato retornado pelo Elemento de dados depende do contexto. Se o element
    * Usa o evento de pressionamento de tecla da extensão Tags do Experience Platform principal como um acionador.
    * Envia o valor de **[!UICONTROL ZoomScale]** Elemento de dados para o Adobe Analytics.
 
-Agora, suponha que o usuário final carregue a página da Web com os dois visualizadores. Entrada *visualizador1*, elas dão zoom para a escala de 50%; em seguida, na *visualizador2*, elas atingem o zoom de 25%. Entrada *visualizador1*, eles deslocam a imagem e, por fim, pressionam uma tecla no teclado.
+Agora, suponha que o usuário carregue a página da Web com os dois visualizadores. Entrada *visualizador1*, elas dão zoom para a escala de 50%; em seguida, na *visualizador2*, elas atingem o zoom de 25%. Entrada *visualizador1*, eles deslocam a imagem e, por fim, pressionam uma tecla no teclado.
 
-A atividade do usuário final resulta nas duas chamadas de rastreamento a seguir feitas ao Adobe Analytics:
+A atividade do usuário resulta nas duas chamadas de rastreamento a seguir feitas ao Adobe Analytics:
 
 * A primeira chamada ocorre porque **[!UICONTROL TrackPan]** A regra é acionada quando o usuário se conecta *visualizador1*. Essa chamada envia 50% como um valor de **[!UICONTROL ZoomScale]** Elemento de dados porque o elemento de dados sabe que a regra é acionada por *visualizador1* e obtém o valor de escala correspondente;
 * A segunda chamada ocorre porque **[!UICONTROL TrackKey]** A regra é acionada quando o usuário pressiona uma tecla no teclado. Essa chamada envia 25% como um valor de **[!UICONTROL ZoomScale]** Elemento de dados porque a Regra não foi acionada pelo visualizador. Dessa forma, o Elemento de dados retorna o valor mais atualizado.
@@ -257,7 +257,7 @@ O método mais simples para fazer isso é concluir o seguinte processo de duas e
 
 ![image2019-7-10_20-41-52](assets/image2019-7-10_20-41-52.png)
 
-No entanto, é possível usar uma abordagem alternativa e ignorar a criação do Elemento de dados. Você pode fazer referência diretamente a um argumento de um evento do Visualizador do Dynamic Media. Insira o nome totalmente qualificado do argumento de evento na variável **[!UICONTROL value]** campo de entrada da atribuição de variável do Analytics. Certifique-se de cercar por sinais de porcentagem (%). Por exemplo,
+No entanto, é possível usar uma abordagem alternativa e ignorar a criação do Elemento de dados. Você pode fazer referência diretamente a um argumento de um evento do Visualizador do Dynamic Media. Insira o nome totalmente qualificado do argumento de evento na **[!UICONTROL value]** campo de entrada da atribuição de variável do Analytics. Certifique-se de cercar por sinais de porcentagem (%). Por exemplo,
 
 `%event.detail.dm.LOAD.asset%`
 
@@ -519,7 +519,7 @@ Consulte também [Configurar uma propriedade de toque](https://experienceleague.
 
 1. Selecione **[!UICONTROL Salvar]**.
 
-   Selecione a propriedade recém-criada e prossiga para *Instalação e configuração de extensões*.
+   Selecione a propriedade criada e prossiga para *Instalação e configuração de extensões*.
 
 ### Instalação e configuração de extensões {#installing-and-setup-of-extensions}
 

@@ -2,7 +2,7 @@
 title: Uso de tags
 description: As tags são um método rápido e fácil de classificar conteúdo em um site
 exl-id: d2a9f578-fe0a-48ea-851c-2c84463661e0
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '560'
 ht-degree: 93%
@@ -47,7 +47,7 @@ Semelhante à forma como você pode publicar e desfazer a publicação de págin
 
 * Ativar tags individuais.
 
-  Assim como com as páginas, tags recém-criadas devem ser ativadas antes de serem disponibilizadas no ambiente de publicação.
+  Assim como com as páginas, as tags criadas devem ser ativadas antes de serem disponibilizadas no ambiente de publicação.
 
 >[!NOTE]
 >

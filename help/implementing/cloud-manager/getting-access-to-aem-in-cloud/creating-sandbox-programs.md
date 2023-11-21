@@ -2,10 +2,10 @@
 title: Criação de programas do sandbox
 description: Saiba como usar o Cloud Manager para criar seu próprio programa de sandbox para treinamentos, demonstrações, POCs ou outros fins de não produção.
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '442'
-ht-degree: 93%
+ht-degree: 90%
 
 ---
 
@@ -49,7 +49,7 @@ Você verá um cartão de novo programa de sandbox na página de destino com um 
 
 Você pode visualizar os detalhes da configuração da sandbox, bem como acessar o ambiente (quando disponível), visualizando a página de visão geral do programa.
 
-1. Na página de aterrissagem do Cloud Manager, clique no botão de reticências no programa recém-criado.
+1. Na página de aterrissagem do Cloud Manager, clique no botão de reticências no programa criado.
 
    ![Acesso à visão geral do programa](assets/program-overview-sandbox.png)
 

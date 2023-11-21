@@ -4,10 +4,10 @@ description: Use um aplicativo de exemplo do React para saber como personalizar 
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1018'
-ht-degree: 88%
+source-wordcount: '1019'
+ht-degree: 87%
 
 ---
 
@@ -89,7 +89,7 @@ Agora que você modificou um título no aplicativo, tente alterar uma imagem.
 
 1. Selecionar **Visualizar** no canto superior direito da janela para ver as alterações. A visualização do aplicativo de demonstração é aberta em uma nova guia. Clique em atualizar no navegador e você deverá ver uma nova imagem de um ciclista com shorts amarelos no aplicativo.
 
-Atualizar imagens e ativos em seus aplicativos com o CMS do AEM Headless é simples assim.
+É fácil atualizar imagens e ativos em seus aplicativos com o CMS sem periféricos AEM.
 
 ## Adicionar uma referência a um novo fragmento de conteúdo no aplicativo {#create-moment}
 

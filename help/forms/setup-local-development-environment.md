@@ -2,7 +2,7 @@
 title: Como configurar um ambiente de desenvolvimento local para o AEM Forms?
 description: Configurar um ambiente de desenvolvimento local para o Adobe Experience Manager Forms as a Cloud Service
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2846'
 ht-degree: 3%
@@ -286,7 +286,7 @@ Execute as seguintes etapas para configurar o Dispatcher local e, em seguida, ad
 
 ### Configurar o Dispatcher local {#setup-local-dispatcher}
 
-A variável [!DNL Experience Manager] O SDK as a Cloud Service inclui a versão recomendada das Ferramentas do Dispatcher, que facilita a configuração, validação e simulação do Dispatcher localmente. As Ferramentas do Dispatcher são baseadas em Docker e fornecem ferramentas de linha de comando para transcompilar arquivos de configuração do Apache HTTP Web Server e do Dispatcher em um formato compatível e implantá-los no Dispatcher em execução no contêiner Docker.
+A variável [!DNL Experience Manager] O SDK as a Cloud Service inclui a versão recomendada das Ferramentas do Dispatcher que facilita a configuração, validação e simulação do Dispatcher localmente. As Ferramentas do Dispatcher são baseadas em Docker e fornecem ferramentas de linha de comando para transcompilar arquivos de configuração do Apache HTTP Web Server e do Dispatcher em um formato compatível e implantá-los no Dispatcher em execução no contêiner Docker.
 
 O armazenamento em cache no Dispatcher permite [!DNL AEM Forms] para preencher previamente o Adaptive Forms em um cliente. Ele melhora a velocidade de renderização de formulários pré-preenchidos.
 
@@ -298,7 +298,7 @@ Execute as seguintes etapas para configurar o cache do Dispatcher para o Experie
 
 1. Abra o projeto AEM e acesse `\src\conf.dispatcher.d\available_farms`
 1. Crie uma cópia do `default.farm` arquivo. Por exemplo, `forms.farm`.
-1. Abra o recém-criado `forms.farm` para editar e substituir o seguinte código:
+1. Abra o criado `forms.farm` para editar e substituir o seguinte código:
 
    ```json
    #/ignoreUrlParams {

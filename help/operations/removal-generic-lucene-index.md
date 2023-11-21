@@ -2,7 +2,7 @@
 title: Remoção do índice Lucene genérico
 description: Saiba mais sobre a remoção planejada de índices Lucene genéricos e como você pode ser afetado.
 exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1335'
 ht-degree: 0%
@@ -154,6 +154,7 @@ Antes da remoção do índice Lucene genérico, a variável `pathfield` o compon
 >[!NOTE]
 >
 >O Editor de modelos do fragmento de conteúdo usa campos de caminho especializados com o tipo de recurso Sling `dam/cfm/models/editor/components/contentreference`.
+>
 > * No momento, esses executam consultas sem tipos de nó especificados, resultando no registro de um AVISO devido ao uso do índice Lucene genérico.
 > * Em breve, as instâncias desses componentes assumirão automaticamente o uso de `cq:Page` e `dam:Asset` tipos de nó sem nenhuma outra ação do cliente.
 > * A variável `nodeTypes` pode ser adicionada para substituir esses tipos de nó padrão.
@@ -167,6 +168,6 @@ O Adobe terá uma abordagem de duas fases para remover o índice Lucene genéric
 
 O Adobe monitorará as mensagens de log anotadas acima e tentará entrar em contato com clientes que permanecem dependentes do índice Lucene genérico.
 
-Como uma mitigação de curto prazo, o Adobe adicionará definições de índice personalizadas diretamente aos sistemas do cliente para evitar problemas funcionais ou de desempenho como resultado da remoção do índice Lucene genérico, conforme necessário.
+Como uma mitigação de curto prazo, o Adobe adiciona definições de índice personalizadas diretamente aos sistemas do cliente para evitar problemas funcionais ou de desempenho como resultado da remoção do índice Lucene genérico, conforme necessário.
 
-Nesses casos, o cliente receberá a definição de índice atualizada e será aconselhado a incluí-la em versões futuras de seu aplicativo por meio do Cloud Manager.
+Nesses casos, o cliente recebe a definição de índice atualizada e é aconselhado que a inclua em versões futuras de seu aplicativo por meio do Cloud Manager.

@@ -2,10 +2,10 @@
 title: Manuseio básico
 description: Acostume-se com a navegação pelo AEM e seu uso básico
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '2943'
-ht-degree: 91%
+source-wordcount: '2945'
+ht-degree: 90%
 
 ---
 
@@ -231,7 +231,7 @@ Devido às restrições de espaço em algumas janelas, a barra de ferramentas po
 
 Na [Exibição de cartão](#card-view) determinadas ações estão disponíveis como ícones de ação rápida e na barra de ferramentas. Os ícones de ação rápida estão disponíveis para um único item de cada vez e eliminam a necessidade de pré-seleção.
 
-As ações rápidas ficam visíveis quando você passa o mouse (desktop) sobre um cartão de recursos. As ações rápidas disponíveis podem depender do console e do contexto. Por exemplo, estas são as ações rápidas para uma página no console **Sites**:
+As ações rápidas são visíveis quando você passa o mouse sobre (dispositivo de desktop) um cartão de recursos. As ações rápidas disponíveis podem depender do console e do contexto. Por exemplo, estas são as ações rápidas para uma página no console **Sites**:
 
 ![Opções adicionais](/help/sites-cloud/authoring/assets/quick-actions.png)
 

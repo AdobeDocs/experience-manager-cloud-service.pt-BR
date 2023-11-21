@@ -2,10 +2,10 @@
 title: Gerenciamento de atividades
 description: O console Atividades permite criar, organizar e gerenciar as atividades de marketing de suas marcas
 exl-id: e7cab16d-7678-472d-b75f-7f67b303ba8d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1960'
-ht-degree: 86%
+source-wordcount: '1958'
+ht-degree: 85%
 
 ---
 
@@ -213,7 +213,7 @@ Para evitar problemas de sincronização, use sempre nomes exclusivos para ativi
 
 >[!NOTE]
 >
->Quando você cria uma campanha no Adobe Target, ele atribui uma propriedade chamada `thirdPartyId` a cada campanha. Quando você exclui a campanha no Adobe Target, a propriedade `thirdPartyId` não é excluída. Não é possível reutilizar o `thirdPartyId` para campanhas de tipos diferentes (AB, XT) e ele não pode ser removido manualmente. Para evitar esse problema, dê a cada campanha um nome exclusivo. Por isso, nomes de campanhas não podem ser reutilizados em diferentes tipos de campanha.
+>Quando você cria uma campanha no Adobe Target, ele atribui uma propriedade chamada `thirdPartyId` a cada campanha. Quando você exclui a campanha no Adobe Target, a propriedade `thirdPartyId` não é excluída. Não é possível reutilizar o `thirdPartyId` para campanhas de tipos diferentes (AB, XT) e ele não pode ser removido manualmente. Para evitar esse problema, dê a cada campanha um nome exclusivo. Nomes de campanha não podem ser reutilizados em diferentes tipos de campanha.
 >
 >Se você usar o mesmo nome no mesmo tipo de campanha, a campanha existente será substituída.
 >

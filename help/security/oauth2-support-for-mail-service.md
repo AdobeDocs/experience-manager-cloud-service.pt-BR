@@ -2,7 +2,7 @@
 title: Suporte OAuth2 para o serviço de email
 description: Suporte do Oauth2 para o serviço de email no Adobe Experience Manager as a Cloud Service
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: ede877212de3394cbdc81e1097d3d6eaf9f390cc
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '679'
 ht-degree: 98%
@@ -26,7 +26,7 @@ Para obter mais informações sobre o Serviço de email do AEM as a Cloud Servic
    ![Iniciar processo de registro do aplicativo](assets/oauth-outlook1.png)
 
 1. Preencha as informações de acordo com suas necessidades e clique em **Registrar**.
-1. Acesse o aplicativo recém-criado e selecione **Permissões de API**.
+1. Acesse o aplicativo criado e selecione **Permissões de API**.
 1. Clique em **Adicionar permissão** > **Permissão de gráfico** > **Permissões delegadas**.
 1. Selecione as permissões abaixo para seu aplicativo e clique em **Adicionar permissão**:
    * `https://outlook.office.com/SMTP.Send`

@@ -2,10 +2,10 @@
 title: Registro, logon e perfil do usuário
 description: Saiba mais sobre registro, logon, dados do usuário e sincronização de grupos no AEM as a Cloud Service
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1167'
-ht-degree: 100%
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+workflow-type: tm+mt
+source-wordcount: '1165'
+ht-degree: 93%
 
 ---
 
@@ -33,7 +33,7 @@ Há duas abordagens para a implementação do registro, conforme descrito abaixo
 
 ### AEM Managed {#aem-managed-registration}
 
-Pode-se escrever um código de registro personalizado que contenha, no mínimo, o nome de usuário e senha do usuário final. Isso criará um registro de usuário no AEM, que pode ser usado para autenticação durante o logon. As etapas a seguir são normalmente usadas para criar esse mecanismo de registro:
+Pode-se escrever um código de registro personalizado que contenha, no mínimo, o nome de usuário e a senha do usuário, e que crie um registro de usuário no AEM, que pode ser usado para autenticação durante o logon. As etapas a seguir são normalmente usadas para criar esse mecanismo de registro:
 
 1. Exibir um componente personalizado do AEM que coleta informações de registro
 1. Após o envio, um usuário de serviço devidamente provisionado é usado para:
@@ -67,7 +67,7 @@ Os clientes podem se integrar a um IdP (provedor de identidade), que autentica o
 
 **BASEADA EM SAML**
 
-Os clientes podem usar a autenticação baseada em SAML por meio de seu IdP de SAML preferencial. Ao usar um IdP com o AEM, ele é responsável por autenticar as credenciais do usuário final e intermediar a autenticação do usuário com o AEM, criar o registro do usuário no AEM conforme necessário e gerenciar a associação de grupo do usuário no AEM, conforme descrito pela asserção do SAML.
+Os clientes podem usar a autenticação baseada em SAML por meio de seu IdP de SAML preferencial. Ao usar um IdP com AEM, o IdP é responsável por autenticar as credenciais do usuário e intermediar a autenticação do usuário com AEM, criar o registro do usuário no AEM conforme necessário e gerenciar a associação de grupo do usuário no AEM, conforme descrito pela asserção do SAML.
 
 >[!NOTE]
 >
