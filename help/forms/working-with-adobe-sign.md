@@ -62,7 +62,7 @@ Para configurar [!DNL Adobe Sign] para um Formulário adaptável:
 1. [Adicionar [!DNL Adobe Sign] recipient para um Formulário adaptável](#addsignerstoanadaptiveform)
 1. [Selecione a ação enviar para um formulário adaptável](#selectsubmitactionforanadaptiveform)
 
-![Detalhes do destinatário](assets/signer_details_new.png)
+![Detalhes do recipient](assets/signer_details_new.png)
 
 ### Ativar [!DNL Adobe Sign] para um Formulário adaptável  {#enableadobesign}
 

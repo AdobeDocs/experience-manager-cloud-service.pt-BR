@@ -151,7 +151,7 @@ Nessas circunstâncias, quando uma reexecução for possível, a página de stat
 
 ### API de reexecução {#reexecute-API}
 
-Além de estar disponível na interface, você pode usar [a API do Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-managerreference/api/#tag/pipeline-Execution) para acionar reexecuções, bem como identificar execuções que foram acionadas como reexecuções.
+Além de estar disponível na interface, você pode usar [a API do Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) para acionar reexecuções, bem como identificar execuções que foram acionadas como reexecuções.
 
 #### Acionar uma reexecução {#reexecute-deployment-api}
 
