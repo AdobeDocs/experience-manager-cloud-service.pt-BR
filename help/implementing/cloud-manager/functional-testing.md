@@ -2,7 +2,7 @@
 title: Teste funcional
 description: Saiba mais sobre os três diferentes tipos de testes funcionais integrados ao processo de implantação do AEM as a Cloud Service para garantir a qualidade e a confiabilidade do seu código.
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: 181a0fd3097e1af2c432afbd8d2a170d792918be
+source-git-commit: ad3a82919b2c0561742527b83af20cc89d8a243a
 workflow-type: tm+mt
 source-wordcount: '1416'
 ht-degree: 10%
@@ -55,23 +55,19 @@ O diagrama a seguir fornece uma exibição detalhada das portas de qualidade dis
 
 É recomendável fornecer os testes de unidade para a sua aplicação de AEM, que são a base de cada estratégia de teste. Eles são destinados a funcionar rápido e frequentemente e dar feedback precoce e rápido. Eles são totalmente integrados aos workflows do desenvolvedor, ao seu próprio CI/CD e aos pipelines de implantação do serviço de nuvem AEM.
 
-Eles são implementados usando JUnit e executados com Maven. Consulte a
-[Módulo principal do Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/core.html#unit-tests)
-para ver um exemplo de teste unitário para AEM e introdução.
+Eles são implementados usando JUnit e executados com Maven. Consulte a [Módulo principal do Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/core.html#unit-tests) para ver um exemplo de teste unitário para AEM e introdução.
 
 ### Qualidade do código
 
 Esse quality gate (portal de qualidade) é configurado imediatamente e executa a análise de código estático no código do aplicativo AEM.
 
-Consulte [Teste de qualidade do código](/help/implementing/cloud-manager/code-quality-testing.md) e
-[Regras de qualidade do código personalizado](/help/implementing/cloud-manager/custom-code-quality-rules.md) para obter mais informações.
+Consulte [Teste de qualidade do código](/help/implementing/cloud-manager/code-quality-testing.md) e [Regras de qualidade do código personalizado](/help/implementing/cloud-manager/custom-code-quality-rules.md) para obter mais informações.
 
 ### Testes do produto
 
 Os testes funcionais do produto são um conjunto de testes estáveis de integração HTTP (ITs) com funcionalidade principal no AEM, como tarefas de autoria e replicação. O Adobe fornece e os mantém prontos para uso. Eles têm como objetivo impedir a implantação de alterações no código de aplicativo personalizado se isso quebrar as funcionalidades principais no produto AEM.
 
-Eles são implementados usando o Junit, são executados usando Maven e usam o formulário oficial [Clientes de teste de AEM](https://github.com/adobe/aem-testing-clients).
-O conjunto de testes do produto é mantido como um [projeto de código aberto](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke)O segue as práticas recomendadas do e pode ser considerado um bom ponto de partida para a implementação dos testes.
+Eles são implementados usando o Junit, são executados usando Maven e usam o formulário oficial [Clientes de teste de AEM](https://github.com/adobe/aem-testing-clients). O conjunto de testes do produto é mantido como um [projeto de código aberto](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke)O segue as práticas recomendadas do e pode ser considerado um bom ponto de partida para a implementação dos testes.
 
 ### Testes funcionais personalizados
 
@@ -79,15 +75,11 @@ Assim como os testes de produtos, os testes funcionais de clientes são testes d
 
 >[!NOTE]
 >
->Os testes funcionais personalizados são executados nos pipelines de produção e não produção (aceitação) usados pelo aplicativo AEM altera as implantações e atualiza por push de produto AEM e, portanto, são uma contribuição essencial para ajudar a garantir o funcionamento adequado do aplicativo e aumentar a segurança da versão.
->Os testes funcionais do cliente também são executados em pipelines internos de validação de pré-lançamento para cada cliente, o que ajuda a fornecer feedback antecipado.
+>Os testes funcionais personalizados são executados nos pipelines de produção e não produção (aceitação) usados pelo aplicativo AEM altera as implantações e atualiza por push de produto AEM e, portanto, são uma contribuição essencial para ajudar a garantir o funcionamento adequado do aplicativo e aumentar a segurança da versão. Os testes funcionais do cliente também são executados em pipelines internos de validação de pré-lançamento para cada cliente, o que ajuda a fornecer feedback antecipado.
 
-Para manter as execuções de pipeline eficientes, recomendamos nos concentrar nos principais recursos e fluxos de interação do usuário.
-Recomenda-se um tempo de execução de ~15 minutos ou menos para testes funcionais. Recomenda-se que conjuntos de testes funcionais completos que não se encaixem nessa porta de qualidade sejam executados como parte dos pipelines gerais de validação do cliente durante o fluxo de desenvolvimento do cliente.
+Para manter as execuções de pipeline eficientes, recomendamos nos concentrar nos principais recursos e fluxos de interação do usuário. Recomenda-se um tempo de execução de ~15 minutos ou menos para testes funcionais. Recomenda-se que conjuntos de testes funcionais completos que não se encaixem nessa porta de qualidade sejam executados como parte dos pipelines gerais de validação do cliente durante o fluxo de desenvolvimento do cliente.
 
-Consulte a [testes de produtos de código aberto](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) ou o
-[Módulo it.tests do Arquétipo de projetos AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/ittests.html)
-para obter exemplos.
+Consulte a [testes de produtos de código aberto](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) ou o [Módulo it.tests do Arquétipo de projetos AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/ittests.html) para obter exemplos.
 
 Consulte [Testes funcionais Java](/help/implementing/cloud-manager/java-functional-testing.md) para obter mais informações.
 
@@ -99,27 +91,21 @@ Os testes são empacotados em uma imagem Docker - projetada para ser o mais vol�
 
 >[!NOTE]
 >
->Os testes de interface do usuário personalizados são executados nos pipelines de produção e não produção (aceitação) usados pelas implantações de alterações do aplicativo AEM e atualizações de push de produto AEM e, portanto, são uma contribuição essencial para ajudar a garantir o funcionamento adequado do aplicativo e aumentar a segurança da versão.
->Os testes de interface do usuário do cliente também são executados em pipelines internos de validação de pré-lançamento para cada cliente, o que ajuda a fornecer feedback antecipado.
+>Os testes de interface do usuário personalizados são executados nos pipelines de produção e não produção (aceitação) usados pelas implantações de alterações do aplicativo AEM e atualizações de push de produto AEM e, portanto, são uma contribuição essencial para ajudar a garantir o funcionamento adequado do aplicativo e aumentar a segurança da versão. Os testes de interface do usuário do cliente também são executados em pipelines internos de validação de pré-lançamento para cada cliente, o que ajuda a fornecer feedback antecipado.
 
-Para manter as execuções de pipeline eficientes, recomendamos nos concentrar nos principais recursos e fluxos de interação do usuário.
-Recomenda-se que os conjuntos de testes de interface do usuário completa que não se encaixam nessa porta de qualidade sejam executados como parte dos pipelines gerais de validação do cliente durante o fluxo de desenvolvimento do cliente.
+Para manter as execuções de pipeline eficientes, recomendamos nos concentrar nos principais recursos e fluxos de interação do usuário. Recomenda-se que os conjuntos de testes de interface do usuário completa que não se encaixam nessa porta de qualidade sejam executados como parte dos pipelines gerais de validação do cliente durante o fluxo de desenvolvimento do cliente.
 
-Consulte a [testes de exemplo de código aberto](https://github.com/adobe/aem-test-samples/tree/aem-cloud/) ou o
-[Módulo ui.tests do Arquétipo de projetos do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uitests.html)
-para obter exemplos.
+Consulte a [testes de exemplo de código aberto](https://github.com/adobe/aem-test-samples/tree/aem-cloud/) ou o [Módulo ui.tests do Arquétipo de projetos do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uitests.html) para obter exemplos.
 
 Consulte [Testes de interface personalizados](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing) para obter mais informações.
 
 ### Auditoria de experiência
 
-A porta de qualidade da auditoria de experiência está funcionando [Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/)
-realiza auditorias na página do cliente na web.
+A porta de qualidade da auditoria de experiência está funcionando [Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) realiza auditorias na página do cliente na web.
 
 Essa porta de qualidade é fornecida pelo AEM pronto para uso, mas não bloqueia os pipelines de implantação. Por padrão, uma auditoria na página raiz (`/`) da instância de publicação for executada. Você pode contribuir configurando até 25 caminhos personalizados que são considerados para auditorias.
 
-Consulte [Teste de auditoria de experiência](/help/implementing/cloud-manager/experience-audit-testing.md)
-para obter mais informações.
+Consulte [Teste de auditoria de experiência](/help/implementing/cloud-manager/experience-audit-testing.md) para obter mais informações.
 
 ### Validações de clientes
 
@@ -127,10 +113,7 @@ A porta de qualidade das validações de clientes é um espaço reservado para a
 
 Aqui você pode, é claro, escolher as ferramentas e estruturas que preferir. Ao contrário dos testes de função do cliente e testes de interface do usuário personalizados, não há limites as a Cloud Service para o AEM e, portanto, recomendamos executar testes funcionais e de interface do usuário de longa duração aqui.
 
-Embora você possa escolher qualquer ferramenta e estrutura, recomendamos alinhar testes de integração baseados em HTTP e testes de interface do usuário com as ferramentas e estruturas disponíveis nos testes funcionais personalizados e nos quality gates (portais de qualidade) de testes de interface do usuário personalizados.
-Recomendamos a integração
-[Ambientes de desenvolvimento rápido (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md)
-em sua estratégia de teste local para testar o mais próximo possível dos ambientes de nuvem do AEM.
+Embora você possa escolher qualquer ferramenta e estrutura, recomendamos alinhar testes de integração baseados em HTTP e testes de interface do usuário com as ferramentas e estruturas disponíveis nos testes funcionais personalizados e nos quality gates (portais de qualidade) de testes de interface do usuário personalizados. Recomendamos a integração [Ambientes de desenvolvimento rápido (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) em sua estratégia de teste local para testar o mais próximo possível dos ambientes de nuvem do AEM.
 
 ### Teste manual
 
