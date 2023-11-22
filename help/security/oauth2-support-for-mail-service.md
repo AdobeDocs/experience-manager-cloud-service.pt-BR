@@ -2,10 +2,10 @@
 title: Suporte OAuth2 para o serviço de email
 description: Suporte do Oauth2 para o serviço de email no Adobe Experience Manager as a Cloud Service
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: c8e8a1c862784976094391d567fac0f9122af8b4
 workflow-type: tm+mt
-source-wordcount: '679'
-ht-degree: 98%
+source-wordcount: '712'
+ht-degree: 92%
 
 ---
 
@@ -29,10 +29,12 @@ Para obter mais informações sobre o Serviço de email do AEM as a Cloud Servic
 1. Acesse o aplicativo criado e selecione **Permissões de API**.
 1. Clique em **Adicionar permissão** > **Permissão de gráfico** > **Permissões delegadas**.
 1. Selecione as permissões abaixo para seu aplicativo e clique em **Adicionar permissão**:
+
+   >[!NOTE]
+   >
+   >A configuração de permissões pode evoluir com o tempo. Trabalhe com a Microsoft se eles não funcionarem como esperado.
+
    * `https://outlook.office.com/SMTP.Send`
-   * `https://graph.microsoft.com/Mail.Read`
-   * `https://graph.microsoft.com/Mail.Send`
-   * `https://graph.microsoft.com/User.Read`
    * `openid`
    * `offline_access`
    * `email`
@@ -134,15 +136,17 @@ Antes de continuar a configurar o OAuth no lado do AEM, valide o accessToken e o
 
 1. Preencha o `authUrl`, `tokenUrl` e `refreshURL`, gerando-os conforme descrito na seção anterior.
 1. Adicione os seguintes escopos à configuração:
+
+   >[!NOTE]
+   >
+   >Os escopos podem evoluir com o tempo. Trabalhe com a Microsoft se eles não funcionarem como esperado.
+
    * `https://outlook.office.com/SMTP.Send`
-   * `https://graph.microsoft.com/Mail.Read`
-   * `https://graph.microsoft.com/Mail.Send`
-   * `https://graph.microsoft.com/User.Read`
    * `openid`
    * `offline_access`
    * `email`
    * `profile`
-1. Crie um arquivo de propriedade OSGI chamado `called com.day.cq.mailer.DefaultMailService.cfg.json`
+1. Criar um arquivo de propriedade OSGI `called com.day.cq.mailer.DefaultMailService.cfg.json`
 em `/apps/<my-project>/osgiconfig/config` com a sintaxe abaixo. Os valores `smtp.host` e `smtp.port` refletem a configuração avançada de rede, conforme descrito na seção [Tutorial do serviço de email](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=pt-br).
 
    ```
