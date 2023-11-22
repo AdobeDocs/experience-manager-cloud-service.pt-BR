@@ -2,7 +2,7 @@
 title: Como gerar um documento de registro (DoR) para o AEM Forms?
 description: Saiba como gerar um modelo para um Documento de registro (DoR) do Adaptive Forms.
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 00a905a08de1c14ef0ded7475d2f95abacc50af1
 workflow-type: tm+mt
 source-wordcount: '4139'
 ht-degree: 3%
