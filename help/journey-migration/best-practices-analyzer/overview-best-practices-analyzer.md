@@ -5,7 +5,7 @@ exl-id: 46c567f8-91e2-4d85-98bd-61d183b887d5
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '366'
-ht-degree: 51%
+ht-degree: 65%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 51%
 >[!CONTEXTUALHELP]
 >id="aemcloud_bpa_overview"
 >title="Visão geral do Analisador de Práticas Recomendadas"
->abstract="O Analisador de Práticas Recomendadas fornece uma avaliação da implementação atual do AEM, indicando áreas que não estão seguindo as práticas recomendadas do AEM. Também fornece orientação sobre as próximas etapas para adotar práticas recomendadas do AEM. Além disso, ajuda a acelerar os processos de avaliação da prontidão para mudar de uma implantação existente do Adobe Experience Manager (AEM) para o AEM as a Cloud Service."
+>abstract="O Analisador de Práticas Recomendadas fornece uma avaliação da implementação atual do AEM, indicando áreas que não estão seguindo as práticas recomendadas do AEM. Também fornece orientação sobre as próximas etapas para adotar práticas recomendadas do AEM. Além disso, ele ajuda a acelerar os processos de avaliação do preparo para migrar de uma implantação do Adobe Experience Manager (AEM) para o AEM as a Cloud Service."
 
-O Analisador de Práticas Recomendadas fornece uma avaliação da implementação atual do AEM, indicando áreas que não estão seguindo as práticas recomendadas do AEM. Também fornece orientação sobre as próximas etapas para adotar práticas recomendadas do AEM. Além disso, ajuda a acelerar os processos de avaliação da prontidão para mudar de uma implantação existente do Adobe Experience Manager (AEM) para o AEM as a Cloud Service.
+O Analisador de Práticas Recomendadas fornece uma avaliação da implementação atual do AEM, indicando áreas que não estão seguindo as práticas recomendadas do AEM. Também fornece orientação sobre as próximas etapas para adotar práticas recomendadas do AEM. Além disso, ele ajuda a acelerar os processos de avaliação do preparo para migrar de uma implantação do Adobe Experience Manager (AEM) para o AEM as a Cloud Service.
 
 Essa ferramenta gera um relatório que identifica áreas de refatoração potencial, que é o primeiro passo na jornada da transição para o AEM as a Cloud Service.
 
