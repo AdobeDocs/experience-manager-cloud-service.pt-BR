@@ -3,10 +3,10 @@ title: Como o Assets visualiza o AEM beneficia você?
 description: Saiba mais sobre os principais benefícios da visualização de Ativos no AEM. O Adobe, usando sua experiência em capacitar profissionais de marketing e criativos, apresenta uma nova experiência de usuário que muda o jogo.
 mini-toc-levels: 3
 exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 408a691de8a6fe2801a9907308db43f2050528c3
 workflow-type: tm+mt
 source-wordcount: '1079'
-ht-degree: 76%
+ht-degree: 74%
 
 ---
 
@@ -95,7 +95,7 @@ Configure rapidamente uma estrutura de pastas para sua organização por meio da
 
 ### Abordagem com foco na pesquisa para aumentar a eficiência {#search-first}
 
-Explore o potencial da biblioteca de ativos digitais da sua organização com uma funcionalidade de pesquisa de última geração. Não é mais necessário vasculhar inúmeros arquivos e pastas manualmente. Qualquer usuário pode localizar instantaneamente a imagem, vídeo ou documento perfeito para criar campanhas de marketing impressionantes, apresentações cativantes e conteúdo envolvente. Nosso primeiro mecanismo de pesquisa permite navegar facilmente por tipos de ativos, metadados, tags inteligentes e até mesmo pelo conteúdo em si, sem saber a palavra-chave exata. Aproveite o futuro do DAM com nosso recurso de pesquisa e explore todo o potencial da sua biblioteca de ativos digitais.
+Explore o potencial da biblioteca de ativos digitais da sua organização com uma funcionalidade de pesquisa de última geração. Você pode se despedir do incômodo de navegar manualmente por inúmeros arquivos e pastas. Qualquer usuário pode localizar instantaneamente a imagem, vídeo ou documento perfeito para criar campanhas de marketing impressionantes, apresentações cativantes e conteúdo envolvente. Nosso primeiro mecanismo de pesquisa permite navegar facilmente por tipos de ativos, metadados, tags inteligentes e até mesmo pelo conteúdo em si, sem saber a palavra-chave exata. Aproveite o futuro do DAM com nosso recurso de pesquisa e explore todo o potencial da sua biblioteca de ativos digitais.
 
 ![Pesquise primeiro](assets/search-first.gif)
 
