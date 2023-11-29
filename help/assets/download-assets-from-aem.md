@@ -5,7 +5,7 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f2f81e2e3e7ff0b5bad4a5490f5cbec752c92578
 workflow-type: tm+mt
 source-wordcount: '1385'
 ht-degree: 6%
@@ -40,7 +40,7 @@ Você pode baixar ativos do Experience Manager usando os seguintes métodos:
 
 ## Baixar ativos usando [!DNL Experience Manager] interface {#download-assets}
 
-O Experience Manager otimiza a experiência de download com base na quantidade e no tamanho do ativo. Arquivos menores são baixados da interface do usuário em tempo real. [!DNL Experience Manager] O baixa diretamente solicitações de um único ativo para o arquivo original, em vez de incluir ativos únicos em um arquivo ZIP para permitir downloads mais rápidos. O Experience Manager suporta downloads grandes com solicitações assíncronas. As solicitações de download maiores que 100 GB são divididas em vários arquivos ZIP com um tamanho máximo de 100 GB cada.
+O Experience Manager otimiza a experiência de download com base na quantidade e no tamanho do ativo. Arquivos menores são baixados da interface do usuário em tempo real. [!DNL Experience Manager] O baixa diretamente solicitações de um único ativo para o arquivo original, em vez de incluir ativos únicos em um arquivo ZIP para permitir downloads mais rápidos. O Experience Manager suporta downloads grandes com solicitações assíncronas. As solicitações de download maiores que 100 GB são divididas em vários arquivos ZIP com um tamanho máximo de 100 MB cada.
 
 Por padrão, [!DNL Experience Manager] aciona uma notificação na variável [[!DNL Experience Manager] Caixa de entrada](/help/sites-cloud/authoring/getting-started/inbox.md) após a geração de um arquivo de download.
 
