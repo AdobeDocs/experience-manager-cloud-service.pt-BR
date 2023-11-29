@@ -2,9 +2,9 @@
 title: Diretrizes de desenvolvimento do AEM as a Cloud Service
 description: Conheça as diretrizes para desenvolvimento no AEM as a Cloud Service e as principais diferenças em relação ao AEM local e ao AEM no AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: c706757857a528a0475f659c6b38110db6f6572a
 workflow-type: tm+mt
-source-wordcount: '2733'
+source-wordcount: '2791'
 ht-degree: 4%
 
 ---
@@ -166,7 +166,7 @@ Os níveis de log são os seguintes:
 
 Os despejos de thread em ambientes na nuvem são coletados de forma contínua, mas não podem ser baixados de forma automatizada no momento. Enquanto isso, entre em contato com o suporte do AEM se os despejos de thread forem necessários para depurar um problema, especificando a janela de tempo exata.
 
-## CRX/DE Lite e Console do desenvolvedor {#crxde-lite-and-developer-console}
+## Console do desenvolvedor as a Cloud Service do CRX/DE Lite e AEM {#crxde-lite-and-developer-console}
 
 ### Desenvolvimento local {#local-development}
 
@@ -176,15 +176,19 @@ Observe que no desenvolvimento local (usando o SDK), `/apps` e `/libs` O pode se
 
 ### Ferramentas de desenvolvimento do AEM as a Cloud Service {#aem-as-a-cloud-service-development-tools}
 
+>[!NOTE]
+>O Console do desenvolvedor as a Cloud Service do AEM não deve ser confundido com o de nome semelhante [*Console do Adobe Developer*](https://developer.adobe.com/developer-console/).
+>
+
 Os clientes podem acessar o CRXDE lite no ambiente de desenvolvimento do nível do autor, mas não no ambiente de preparo ou produção. O repositório imutável (`/libs`, `/apps`) não pode ser gravado no tempo de execução, portanto, tentar fazer isso resultará em erros.
 
-Em vez disso, o Navegador do repositório pode ser iniciado no Console do desenvolvedor, fornecendo uma visualização somente leitura no repositório para todos os ambientes nos níveis de criação, publicação e visualização. Leia mais sobre o Navegador de repositório [aqui](/help/implementing/developing/tools/repository-browser.md).
+Em vez disso, o Navegador do repositório pode ser iniciado a partir do Console do desenvolvedor as a Cloud Service AEM, fornecendo uma visualização somente leitura no repositório para todos os ambientes nos níveis de criação, publicação e visualização. Leia mais sobre o Navegador de repositório [aqui](/help/implementing/developing/tools/repository-browser.md).
 
-Um conjunto de ferramentas para depurar ambientes de desenvolvedor as a Cloud Service para AEM está disponível no Console do desenvolvedor para ambientes de RDE, desenvolvimento, preparo e produção. O url pode ser determinado ajustando os urls do serviço de Autor ou Publicação da seguinte maneira:
+Um conjunto de ferramentas para depurar ambientes de desenvolvedor as a Cloud Service para AEM está disponível no Console do desenvolvedor do AEM as a Cloud Service para ambientes de RDE, desenvolvimento, preparo e produção. O url pode ser determinado ajustando os urls do serviço de Autor ou Publicação da seguinte maneira:
 
 `https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
-Como atalho, o seguinte comando da CLI do Cloud Manager pode ser usado para iniciar o console do desenvolvedor com base em um parâmetro de ambiente descrito abaixo:
+Como atalho, o seguinte comando da CLI do Cloud Manager pode ser usado para iniciar o Console do desenvolvedor do AEM as a Cloud Service com base em um parâmetro de ambiente descrito abaixo:
 
 `aio cloudmanager:open-developer-console <ENVIRONMENTID> --programId <PROGRAMID>`
 
@@ -202,11 +206,11 @@ Como ilustrado abaixo, os desenvolvedores podem resolver as dependências de pac
 
 ![Console de Desenvolvimento 3](/help/implementing/developing/introduction/assets/devconsole3.png)
 
-Também útil para depuração, o console Desenvolvedor tem um link para a ferramenta Explicar consulta:
+Também útil para depuração, o Console do desenvolvedor as a Cloud Service AEM tem um link para a ferramenta Explicar consulta:
 
 ![Console de Desenvolvimento 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-Para programas de produção, o acesso ao Console do desenvolvedor é definido pela &quot;Função do desenvolvedor do Cloud Manager&quot; no Admin Console, enquanto para programas de sandbox, o Console do desenvolvedor está disponível para qualquer usuário com um perfil de produto que dê a ele acesso ao AEM as a Cloud Service. Para todos os programas, &quot;Cloud Manager - Função do desenvolvedor&quot; é necessário para despejos de status, e o navegador do repositório e os usuários também devem ser definidos no Perfil de produto Usuários do AEM ou Administradores do AEM nos serviços de criação e publicação para exibir dados de ambos os serviços. Para obter mais informações sobre a configuração de permissões de usuário, consulte [Documentação do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
+Para programas de produção, o acesso ao Console do desenvolvedor as a Cloud Service do AEM é definido pela &quot;Função do desenvolvedor do Cloud Manager&quot; no Adobe Admin Console AEM, enquanto para programas de sandbox, o Console do desenvolvedor as a Cloud Service AEM as a Cloud Service do está disponível para qualquer usuário com um perfil de produto que dá acesso ao. Para todos os programas, &quot;Cloud Manager - Função do desenvolvedor&quot; é necessário para despejos de status, e o navegador do repositório e os usuários também devem ser definidos no Perfil de produto Usuários do AEM ou Administradores do AEM nos serviços de criação e publicação para exibir dados de ambos os serviços. Para obter mais informações sobre a configuração de permissões de usuário, consulte [Documentação do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
 
 ### Monitoramento de desempenho {#performance-monitoring}
 

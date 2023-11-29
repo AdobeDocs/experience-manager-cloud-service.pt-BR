@@ -4,9 +4,9 @@ seo-title: Repository Browser
 description: O navegador do repositório fornece uma visualização somente leitura no repositório para todos os ambientes nos níveis de criação, publicação e visualização.
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: a7fa9ecc54bdee394852d765011df2ddd0a4950c
 workflow-type: tm+mt
-source-wordcount: '844'
+source-wordcount: '866'
 ht-degree: 2%
 
 ---
@@ -25,20 +25,20 @@ ht-degree: 2%
 
 O navegador do repositório é uma ferramenta de desenvolvedor que fornece uma visualização somente leitura no repositório para todos os ambientes nos níveis de criação, publicação e visualização. Ele foi projetado para facilitar a exibição da estrutura de conteúdo e facilitar a visualização ou depuração do conteúdo.
 
-Acessível no Console do desenvolvedor, ele pode ser usado para navegar pelo repositório de um autor ou instância de publicação para um ambiente selecionado.
+Acessível a partir do [Console do desenvolvedor AEM as a Cloud Service](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console), ele pode ser usado para navegar pelo repositório de uma instância de autor ou publicação para um ambiente selecionado.
 
 ### Pré-requisitos de acesso {#access-prerequisites}
 
-As seguintes condições devem ser atendidas para acessar o Developer Console ou o navegador do Repositório
+Estas condições devem ser atendidas para acessar o Console do desenvolvedor as a Cloud Service AEM ou o navegador do Repositório
 
-Para acessar o Console do desenvolvedor:
+Para acessar o Console do desenvolvedor do AEM as a Cloud Service:
 
-* Para programas de Produção, os usuários devem ter o **Cloud Manager - Função do desenvolvedor** no Admin Console
+* Para programas de Produção, os usuários devem ter o **Cloud Manager - Função do desenvolvedor** no Adobe Admin Console
 * Para programas de sandbox, está disponível para qualquer usuário com um perfil de produto que dê acesso ao AEM as a Cloud Service.
 
 Para acessar o Navegador do repositório:
 
-* Os usuários devem ter o **Cloud Manager - Desenvolvedor** Função na Admin Console para exibir instâncias de Autor e Publicação.
+* Os usuários devem ter o **Cloud Manager - Desenvolvedor** Função no Console do desenvolvedor as a Cloud Service AEM para exibir instâncias de Autor e Publicação.
 * Além disso, para o autor, os usuários com o Perfil de produto de usuários AEM podem visualizar o navegador do repositório com acesso mínimo de leitura; as permissões do usuário são respeitadas ao navegar pelo repositório. Os usuários com o Perfil de produto de administradores do AEM podem visualizar o navegador do repositório com acesso de leitura completo.
 
 Para obter mais informações sobre a configuração de permissões de usuário, consulte [Documentação do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html).
