@@ -2,10 +2,10 @@
 title: Modelos de fragmentos do conteúdo (Ativos - Fragmentos de conteúdo)
 description: Saiba como os modelos de fragmento de conteúdo servem como base para o conteúdo headless no AEM e como criar fragmentos de conteúdo com conteúdo estruturado.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
 workflow-type: tm+mt
-source-wordcount: '2931'
-ht-degree: 90%
+source-wordcount: '3005'
+ht-degree: 88%
 
 ---
 
@@ -150,7 +150,7 @@ Muitas propriedades são autoexplicativas. Para certas propriedades, os detalhes
   >Se os modelos criados em versões anteriores do AEM contiverem caracteres ilegais, remova ou atualize esses caracteres.
 
 * **Renderizar como**
-As várias opções para realizar/renderizar o campo em um fragmento. Geralmente, essa propriedade permite definir se o autor vê uma única instância do campo ou se tem permissão para criar várias instâncias.
+As várias opções para realizar/renderizar o campo em um fragmento. Geralmente, essa propriedade permite definir se o autor vê uma única instância do campo ou se tem permissão para criar várias instâncias. Quando **Múltiplo campo** é usado você pode definir o número mínimo e máximo de itens - consulte [Validação](#validation) para obter mais detalhes.
 
 * **Rótulo do campo**
 Inserir um **Rótulo do campo** gerará automaticamente um **Nome da propriedade**, que pode ser atualizado manualmente se necessário.
@@ -212,6 +212,17 @@ Vários tipos de dados agora incluem a possibilidade de definir requisitos de va
    * Somente imagens dentro de um intervalo predefinido de largura e/ou altura (em pixels) podem ser referenciadas.
 * **Referência do fragmento**
    * Testar um modelo de fragmento de conteúdo específico.
+* **Número mínimo de itens** / **Número máximo de itens**
+
+  Campos que foram definidos como **Múltiplo campo** (definido com **Renderizar como**) têm as seguintes opções:
+
+   * **Número mínimo de itens**
+   * **Número máx. de itens**
+
+  Eles são validados:
+
+   * O valor máximo é validado na variável [Editor de fragmento do conteúdo original](/help/assets/content-fragments/content-fragments-variations.md).
+   * Ambos são validados no [Editor de fragmento de conteúdo](/help/sites-cloud/administering/content-fragments/authoring.md).
 
 ## Usar referências para formar conteúdo aninhado {#using-references-to-form-nested-content}
 

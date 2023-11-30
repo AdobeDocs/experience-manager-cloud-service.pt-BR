@@ -2,9 +2,9 @@
 title: Variações - Criação dos fragmentos de conteúdo (Ativos - Fragmentos de conteúdo)
 description: Entenda como as variações podem tornar o conteúdo headless no AEM ainda mais flexível, permitindo criar conteúdo para o fragmento e, em seguida, criar variações desse conteúdo de acordo com a finalidade.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
 workflow-type: tm+mt
-source-wordcount: '2530'
+source-wordcount: '2546'
 ht-degree: 54%
 
 ---
@@ -76,6 +76,10 @@ Por exemplo:
   >**Tags** também podem ser adicionadas (à variação **principal**) como parte dos [metadados](/help/assets/content-fragments/content-fragments-metadata.md)
 
 * [Criar e gerenciar variações](#managing-variations) do conteúdo **principal.**
+
+>[!NOTE]
+>
+>Dependendo das definições no modelo subjacente, os campos podem estar sujeitos a determinados tipos de [Validação](/help/assets/content-fragments/content-fragments-models.md#validation).
 
 ### Editor de tela cheia {#full-screen-editor}
 

@@ -4,10 +4,10 @@ description: Saiba como gerenciar os fragmentos de conteúdo do AEM no console e
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
 workflow-type: tm+mt
-source-wordcount: '2531'
-ht-degree: 53%
+source-wordcount: '2622'
+ht-degree: 51%
 
 ---
 
@@ -143,10 +143,7 @@ Selecionar um fragmento específico abre uma barra de ferramentas focada nas aç
 * **[Mover](/help/assets/manage-digital-assets.md)**
 * **[Renomeie](/help/assets/manage-digital-assets.md)**
 * **[Excluir](#deleting-a-fragment)**
-
-<!--
-* **[Replace](#find-and-replace)**
--->
+* **[Substituir](#find-and-replace)**
 
 >[!NOTE]
 >
@@ -369,13 +366,22 @@ Quando a caixa de diálogo relevante for aberta, você poderá selecionar o serv
 >
 >Se o fragmento já tiver sido referenciado a partir de outro fragmento, ou de uma página, você verá uma mensagem de aviso e terá que confirmar que deseja continuar.
 
-<!--
-## Find and Replace {#find-and-replace}
+## Localizar e substituir {#find-and-replace}
 
-The **Replace** option is available to find, and replace, specified text in your selected Content Fragment:
+A variável **Substituir** A ação está disponível (na barra de ferramentas superior) para localizar e substituir o texto especificado nos Fragmentos de conteúdo selecionados.
 
-![Unpublish dialog](assets/cf-managing-find-replace.png)
--->
+![Localizar e substituir](assets/cf-managing-find-replace.png)
+
+Antes da substituição, os critérios de validação são verificados e você é informado sobre conflitos, permitindo alterar a string de substituição ou substituir apenas as instâncias validadas.
+
+>[!NOTE]
+>
+>A ação de localizar e substituir só pode ser executada em no máximo 20 fragmentos de conteúdo selecionados (de cada vez).
+>
+>Se selecionar mais de 20 fragmentos de conteúdo, você verá a mensagem **Não é possível localizar e substituir**.
+
+![Confirmar substituição](assets/cf-managing-confirm-replace.png)
+
 
 ## Excluir um fragmento {#deleting-a-fragment}
 

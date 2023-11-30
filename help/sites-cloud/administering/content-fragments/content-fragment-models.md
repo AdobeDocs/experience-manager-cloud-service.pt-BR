@@ -4,9 +4,9 @@ description: Saiba como os modelos de fragmento de conteúdo servem como base pa
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
 workflow-type: tm+mt
-source-wordcount: '3058'
+source-wordcount: '3121'
 ht-degree: 59%
 
 ---
@@ -199,7 +199,8 @@ Muitas propriedades são autoexplicativas. Para certas propriedades, os detalhes
   >Se os modelos criados em versões anteriores do AEM contiverem caracteres ilegais, remova ou atualize esses caracteres.
 
 * **Renderizar como**
-As várias opções para realizar/renderizar o campo em um fragmento. Geralmente, isso permite definir se o autor vê uma única instância do campo ou se tem permissão para criar várias instâncias.
+
+  As várias opções para realizar/renderizar o campo em um fragmento. Geralmente, isso permite definir se o autor verá uma única instância do campo ou se poderá criar várias instâncias. Quando **Múltiplo campo** é usado você pode definir o número mínimo e máximo de itens - consulte [Validação](#validation) para obter mais detalhes.
 
 * **Rótulo do campo**
 Inserir um **Rótulo do campo** gera automaticamente um **Nome da propriedade**, que pode ser atualizado manualmente se necessário.
@@ -257,6 +258,14 @@ Vários tipos de dados agora incluem a possibilidade de definir requisitos de va
    * Somente imagens dentro de um intervalo predefinido de largura e/ou altura (em pixels) podem ser referenciadas.
 * **Referência do fragmento**
    * Testar um modelo de Fragmento de conteúdo específico.
+* **Número mínimo de itens** / **Número máximo de itens**
+
+  Campos que foram definidos como **Múltiplo campo** (definido com **Renderizar como**) têm as seguintes opções:
+
+   * **Número mínimo de itens**
+   * **Número máx. de itens**
+
+  Elas são validadas no [Editor de fragmento de conteúdo](/help/sites-cloud/administering/content-fragments/authoring.md).
 
 ## Usar referências para formar conteúdo aninhado {#using-references-to-form-nested-content}
 
