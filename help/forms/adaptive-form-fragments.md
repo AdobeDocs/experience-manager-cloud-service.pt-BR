@@ -7,9 +7,9 @@ topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
 exl-id: e4d8bcb9-ce1f-425e-b35c-d0a79fa771f3
-source-git-commit: 237b4a8e01af74dbaac0ba1715b5fa95c931be7c
+source-git-commit: 1d0f8bfd955c9315b01e49d8b1924add996b1599
 workflow-type: tm+mt
-source-wordcount: '2148'
+source-wordcount: '2146'
 ht-degree: 1%
 
 ---
@@ -173,7 +173,7 @@ Você pode usar um fragmento de formulário baseado em esquema várias vezes em 
 
 >[!NOTE]
 >
-> Se você usar fragmentos de formulário sem base várias vezes em um formulário adaptável, o problema de sincronização de dados entre os campos dos fragmentos ocorrerá. Você pode usar um único [fragmento de formulário (baseado em componentes principais)](/help/forms/adaptive-form-fragments-core-components.md) que não esteja vinculado a nenhum modelo de dados de formulário, várias vezes em um formulário sem experimentar problemas de sincronização de dados.
+> Se você usar fragmentos de formulário sem base várias vezes em um formulário adaptável, o problema de sincronização de dados entre os campos dos fragmentos ocorrerá. É possível usar um [fragmento](/help/forms/adaptive-form-fragments-core-components.md) de formulário baseado em componente principal que não esteja vinculado a nenhum modelo de dados de formulário, várias vezes em um formulário sem experimentar problemas de sincronização de dados.
 
 ## mapeamento Automático de fragmentos para vínculo de dados {#auto-mapping-of-fragments-for-data-binding}
 
