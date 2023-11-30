@@ -3,10 +3,10 @@ title: Saiba como pesquisar e descobrir ativos no [!DNL Assets view]?
 description: Saiba como pesquisar e descobrir ativos na visualização do AEM Assets. Essa eficiente funcionalidade de pesquisa permite descobrir rapidamente o ativo apropriado e ajuda a melhorar a velocidade do conteúdo.
 role: User
 exl-id: be9597a3-056c-436c-a09e-15a03567c85a
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 224529293f87b772c150dd26ce5260a9172c8b68
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 90%
+source-wordcount: '1321'
+ht-degree: 73%
 
 ---
 
@@ -141,6 +141,67 @@ What about temporarily hiding an asset (suspending search on it) from the search
 
 When userA is searching and userB add an asset that matches search results, will the asset display in search as soon as userA refreshes the page? Assuming indexing is near real-time. May not be so for bulk uploads.
 -->
+
+## Trabalhar com os resultados da pesquisa {#work-with-search-results}
+
+Você pode selecionar os ativos exibidos nos resultados da pesquisa e realizar as seguintes ações:
+
+* **Detalhes**: visualizar e editar as propriedades do ativo.
+
+* **Adicionar à coleção**: adicionar o ativo selecionado a uma coleção.
+
+* **Baixar**: baixar um ativo.
+
+* **Excluir**: excluir um ativo.
+
+* **Copiar**: copiar um ativo para um local de pasta diferente.
+
+* **Mover**: mover um ativo para um local de pasta diferente.
+
+* **Renomear**: renomear um ativo.
+
+* **Atribuir tarefas**: atribuir tarefas de um ativo a usuários.
+
+* **Compartilhar link**: [compartilhar links](share-links-for-assets-view.md) para um ativo com outros usuários, para que possam acessá-lo e baixá-lo.
+
+* **Observar**: [monitorar as operações](manage-notifications-assets-view.md) executadas em um ativo.
+
+* **Mostrar local do arquivo**: navegar até o local da pasta de ativos.
+
+* **Fixar no Acesso rápido**: [fixar um ativo](my-workspace-assets-view.md) para agilizar o acesso quando precisar. Todos os itens fixados são exibidos na seção **Acesso rápido** do Meu espaço de trabalho.
+
+## Configuração da primeira página inicial de pesquisa {#configuring-search-first-homepage}
+
+A primeira página inicial de pesquisa permite navegar por vários arquivos e pastas instantaneamente. Ele permite navegar facilmente por tipos de ativos, metadados, tags inteligentes e até mesmo pelo conteúdo em si, sem saber a palavra-chave exata. [!DNL Assets view] permite configurar sua página inicial controlando o que deve aparecer ao fazer logon no [!DNL Assets view].
+
+Para configurar a primeira home page de pesquisa, execute as etapas abaixo:
+
+1. Navegue até **[!UICONTROL Configurações]** > **[!UICONTROL Configurações gerais]**.
+1. Selecionar **[!UICONTROL Pesquisar primeiro]**. Ele abre ainda mais a primeira configuração relacionada à pesquisa. Você pode definir [alinhamento](#setting-alignment-search-bar) ou [definir imagem de plano de fundo e logotipo](#setting-background-image-and-logo) da sua página inicial.
+
+### Definindo alinhamento da barra de pesquisa {#setting-alignment-search-bar}
+
+[!DNL Assets view] permite alterar o alinhamento da barra de pesquisa. Você pode fazer a barra de pesquisa aparecer no centro ou na parte superior. Selecione o alinhamento apropriado e clique em **[!UICONTROL Salvar]**.
+
+![Pesquisar alinhamento da primeira página inicial](assets/search-first-alignment.png)
+
+### Configuração da imagem de fundo e logotipo da página inicial {#setting-background-image-and-logo}
+
+Você pode adicionar o logotipo da marca e a imagem de fundo à sua primeira página inicial de pesquisa. Execute as seguintes etapas:
+
+1. Navegue até **[!UICONTROL Imagem de plano de fundo e logotipo]** seção em **[!UICONTROL Página inicial]**.
+1. Clique em **[!UICONTROL Substituir]** para navegar por imagens do repositório de ativos existente.
+1. Clique em **[!UICONTROL Salvar]**. [Visualizar](#preview-configured-homepage) as alterações para analisar as modificações.
+
+### Visualizar página inicial configurada {#preview-configured-homepage}
+
+Você pode visualizar para verificar o layout e a formatação da primeira página inicial de pesquisa. Usar **[!UICONTROL Visualizar]**, você pode corrigir o layout ou fazer modificações de acordo com o requisito. Para visualizar a home page configurada, execute as etapas abaixo:
+
+1. Clique em **[!UICONTROL Configurações gerais]** e selecione **[!UICONTROL Pesquisar primeiro]**.
+1. Navegue até **[!UICONTROL Personalizar a primeira página inicial de pesquisa]** e clique em **[!UICONTROL Visualizar]**. Alternar através **[!UICONTROL Tema escuro]** botão para visualizar a página inicial em um tema escuro ou claro.
+1. Clique em **[!UICONTROL Fechar]** para fechar a tela de visualização.
+
+   ![Pesquisar primeira visualização de página inicial](assets/search-first-preview.gif)
 
 ## Próximas etapas {#next-steps}
 
