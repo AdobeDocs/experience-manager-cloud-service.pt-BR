@@ -3,9 +3,9 @@ title: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud S
 description: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 0290e40094147a1c85eacf157904c7ef7388c5e7
+source-git-commit: a801e6c605fff46ca07699727f3078c9a285a943
 workflow-type: tm+mt
-source-wordcount: '1299'
+source-wordcount: '1297'
 ht-degree: 13%
 
 ---
@@ -146,6 +146,6 @@ Você pode encontrar uma lista completa de versões das ferramentas de migraçã
 
 ## Problemas conhecidos {#known-issues}
 
-* Os usuários não podem enviar o Forms adaptável com base nos Componentes principais. O problema ocorre para o Forms adaptável criado usando os Componentes principais versões 2.0.38 - 2.0.60.
+* Não é possível enviar o Forms adaptável com base nos Componentes principais. O problema ocorre para o Forms adaptável criado usando os Componentes principais versões 2.0.38 - 2.0.60.
 
   Para resolver o problema. você pode migrar para os Componentes principais do formulário adaptável versão 2.0.62 ou posterior. Para definir uma versão dos Componentes principais adaptáveis do Forms para o seu ambiente, [definir versões do componente core.forms.components.version, core.forms.components.af.version e core.wcm.components.version](/help/forms/enable-adaptive-forms-core-components.md#2-add-adaptive-forms-core-components-dependencies-to-your-git-repository) dependências no repositório as a Cloud Service do Forms ou projeto baseado no Arquétipo do AEM e [implantar as alterações no ambiente as a Cloud Service do Forms](/help/forms/enable-adaptive-forms-core-components.md#build-and-deploy-updated-code-on-an-aem-forms-as-a-cloud-service-environment). Você pode encontrar a versão mais recente das dependências dos Componentes principais do Forms adaptável em [Repositório Git dos Componentes principais adaptáveis do Forms](https://github.com/adobe/aem-core-forms-components#system-requirements).
