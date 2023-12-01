@@ -3,7 +3,7 @@ title: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud S
 description: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: a801e6c605fff46ca07699727f3078c9a285a943
+source-git-commit: 8eb087bdda335b0a33e616eb534615396b220369
 workflow-type: tm+mt
 source-wordcount: '1297'
 ht-degree: 13%
@@ -105,7 +105,7 @@ Interessado em experimentar o recurso e compartilhar feedback? Enviar um email p
 
 * **Enviar um formulário adaptável para o cenário do Adobe Workfront Fusion**: o Forms as a Cloud Service oferece opções prontas para uso para conectar facilmente um Formulário adaptável ao Adobe Workfront. Isso simplifica o processo de envio de um Formulário adaptável para um cenário do Adobe Workfront, permitindo acionar um cenário do Workfront Fusion no envio de um Formulário adaptável.
 
-* **Suporte de idiomas da direita para a esquerda**: o Forms adaptável incorporado aos Componentes principais agora pode ser apresentado em um idioma da direita para a esquerda (RTL), como árabe, persa e urdu. As línguas RTL são faladas por mais de 2 bilhões de pessoas em todo o mundo. Usar um formulário em linguagem RTL permite estender o alcance dos formulários adaptáveis para atender a esses públicos diversos e aproveitar os mercados de RTL. Em algumas regiões, também é um mandato legal fornecer formulários no idioma local. Ao acomodar idiomas locais, você não só abre portas para um público mais amplo, como também garante a conformidade com as leis e regulamentos relevantes.
+* **[Suporte de idiomas da direita para a esquerda](/help/forms/supporting-new-language-localization-core-components.md)**: o Forms adaptável incorporado aos Componentes principais agora pode ser apresentado em um idioma da direita para a esquerda (RTL), como árabe, persa e urdu. As línguas RTL são faladas por mais de 2 bilhões de pessoas em todo o mundo. Usar um formulário em linguagem RTL permite estender o alcance dos formulários adaptáveis para atender a esses públicos diversos e aproveitar os mercados de RTL. Em algumas regiões, também é um mandato legal fornecer formulários no idioma local. Ao acomodar idiomas locais, você não só abre portas para um público mais amplo, como também garante a conformidade com as leis e regulamentos relevantes.
 
   ![Suporte de idioma da direita para a esquerda](/help/forms/assets/right-to-left-language-support.png)
 
