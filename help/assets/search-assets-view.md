@@ -3,10 +3,10 @@ title: Saiba como pesquisar e descobrir ativos no [!DNL Assets view]?
 description: Saiba como pesquisar e descobrir ativos na visualização do AEM Assets. Essa eficiente funcionalidade de pesquisa permite descobrir rapidamente o ativo apropriado e ajuda a melhorar a velocidade do conteúdo.
 role: User
 exl-id: be9597a3-056c-436c-a09e-15a03567c85a
-source-git-commit: 224529293f87b772c150dd26ce5260a9172c8b68
+source-git-commit: da54e996bad3e6dc8558cecd5bfd7eb99670b142
 workflow-type: tm+mt
-source-wordcount: '1321'
-ht-degree: 73%
+source-wordcount: '1314'
+ht-degree: 74%
 
 ---
 
@@ -172,7 +172,7 @@ Você pode selecionar os ativos exibidos nos resultados da pesquisa e realizar a
 
 ## Configuração da primeira página inicial de pesquisa {#configuring-search-first-homepage}
 
-A primeira página inicial de pesquisa permite navegar por vários arquivos e pastas instantaneamente. Ele permite navegar facilmente por tipos de ativos, metadados, tags inteligentes e até mesmo pelo conteúdo em si, sem saber a palavra-chave exata. [!DNL Assets view] permite configurar sua página inicial controlando o que deve aparecer ao fazer logon no [!DNL Assets view].
+O Experience Manager Assets permite selecionar a landing page padrão da sua organização. Ao usar a Pesquisa primeiro como página inicial, você também tem opções para personalizar a identidade visual da página, configurando as imagens de plano de fundo e logotipo que correspondem à sua marca.
 
 Para configurar a primeira home page de pesquisa, execute as etapas abaixo:
 
@@ -191,7 +191,7 @@ Você pode adicionar o logotipo da marca e a imagem de fundo à sua primeira pá
 
 1. Navegue até **[!UICONTROL Imagem de plano de fundo e logotipo]** seção em **[!UICONTROL Página inicial]**.
 1. Clique em **[!UICONTROL Substituir]** para navegar por imagens do repositório de ativos existente.
-1. Clique em **[!UICONTROL Salvar]**. [Visualizar](#preview-configured-homepage) as alterações para analisar as modificações.
+1. Clique em **[!UICONTROL Salvar]**. [Visualizar](#preview-configured-homepage) as alterações para revisar as modificações.
 
 ### Visualizar página inicial configurada {#preview-configured-homepage}
 
