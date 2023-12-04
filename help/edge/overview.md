@@ -1,16 +1,16 @@
 ---
-title: Introdução aos serviços de entrega de borda
+title: Introdução ao Edge Delivery Services
 description: Introdução aos serviços de entrega de borda.
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
-source-git-commit: 185a192b0d40e25cdb09fd8a1f222d9d9b1bd631
+source-git-commit: c3c1a2c89031b6a7a44ac8d16ecb2e64f37490a8
 workflow-type: tm+mt
-source-wordcount: '862'
-ht-degree: 2%
+source-wordcount: '823'
+ht-degree: 0%
 
 ---
 
-# Introdução aos serviços de entrega de borda {#getstart-edge}
+# Introdução ao Edge Delivery Services {#getstart-edge}
 
 Com o Edge Delivery Services, o AEM oferece experiências excepcionais que impulsionam o engajamento e as conversões. O AEM faz isso fornecendo experiências de alto impacto que são rápidas de serem criadas e desenvolvidas. É um conjunto combinável de serviços que permite um ambiente de desenvolvimento rápido, em que os autores podem atualizar e publicar rapidamente e novos sites são lançados rapidamente. Dessa forma, com os Edge Delivery Services você pode melhorar a conversão, reduzir custos e fornecer velocidade de conteúdo extrema.
 
@@ -50,7 +50,7 @@ Você também pode usar Edge Delivery Services com o Adobe Target, o Analytics e
 
 ## Obtendo ajuda do Adobe {#adobe-gethelp}
 
-É possível entrar em contato com as equipes de produtos Adobe por meio do canal de colaboração provisionado com produtos (veja abaixo os detalhes de acesso) para responder às perguntas sobre o uso de produtos ou práticas recomendadas. Não há Termos de Nível de Serviço (SLT) associados às conversas pelo canal de colaboração do produto. Se um problema do produto exigir investigação e solução de problemas adicionais e precisar atender aos SLTs de resposta, você poderá enviar um tíquete de suporte seguindo o [processo de suporte](https://experienceleague.adobe.com/?lang=en&amp;support-tab=home#support).
+É possível entrar em contato com as equipes de produtos Adobe por meio do canal de colaboração provisionado com produtos (veja abaixo os detalhes de acesso) para responder às perguntas sobre o uso de produtos ou práticas recomendadas. Não há SLT (Service Level Targets, metas de nível de serviço) associados às conversas por meio do canal de colaboração do produto. Se um problema do produto exigir investigação e solução de problemas adicionais e precisar atender aos SLTs de resposta, você poderá enviar um tíquete de suporte seguindo o [processo de suporte](https://experienceleague.adobe.com/?lang=en&amp;support-tab=home#support).
 
 O Adobe fornece três canais para ajudá-lo com Edge Delivery Services:
 
