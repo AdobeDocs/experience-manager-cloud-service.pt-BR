@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
+source-git-commit: ba7976c192e3696b1367a4f9a5bf0c320a5f258e
 workflow-type: tm+mt
-source-wordcount: '4393'
-ht-degree: 92%
+source-wordcount: '4420'
+ht-degree: 93%
 
 ---
 
@@ -178,7 +178,7 @@ ht-degree: 92%
 + Integração {#onboarding}
    + [Comece aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=pt-BR)
    + Jornada de integração {#journey}
-      + [Jornada de integração Visão geral](/help/journey-onboarding/overview.md)
+      + [Visão geral da jornada de integração](/help/journey-onboarding/overview.md)
       + [Preparação de integração](/help/journey-onboarding/preparation.md)
       + [Terminologia do AEM as a Cloud Service](/help/journey-onboarding/terminology.md)
       + [O Admin Console](/help/journey-onboarding/admin-console.md)
@@ -322,7 +322,7 @@ ht-degree: 92%
          + [Como o gerenciamento multisite para conteúdo direcionado está estruturado](/help/sites-cloud/authoring/personalization/multisite-structure.md)
          + [Gerenciamento de atividades](/help/sites-cloud/authoring/personalization/activities.md)
          + [Gerenciamento de públicos](/help/sites-cloud/authoring/personalization/audiences.md)
-         + [Criação e gerenciamento de ofertas (Console de Ofertas)](/help/sites-cloud/authoring/personalization/offers.md)
+         + [Criação e gerenciamento de ofertas (console Ofertas)](/help/sites-cloud/authoring/personalization/offers.md)
          + [Noções sobre segmentação](/help/sites-cloud/authoring/personalization/segmentation.md)
          + [Configuração da segmentação com o ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
          + [Registro, logon e perfil do usuário](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
@@ -585,6 +585,7 @@ ht-degree: 92%
          + [Incorporar formulário adaptável baseado nos Componentes principais a uma página da Web externa](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
          + [Incorporar formulário adaptável baseado em Componentes de base a uma página da Web externa](/help/forms/embed-adaptive-form-external-web-page.md)
       + Modelo de dados do formulário {#use-form-data-model}
+         + [Enviar um formulário adaptável ao Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
          + [Conectar o AEM Forms ao banco de dados ou à fonte de dados](/help/forms/data-integration.md)
          + [Configurar fontes de dados](/help/forms/configure-data-sources.md)
          + [Configurar OData do [!DNL Microsoft Dynamics] ](/help/forms/ms-dynamics-odata-configuration.md)
@@ -788,7 +789,7 @@ ht-degree: 92%
       + [Autenticação](/help/headless/security/authentication.md)
    + Implantação {#deployment}
       + [Arquitetura](/help/headless/deployment/architecture.md)
-      + [Dispatcher - Endpoints](/help/headless/deployment/dispatcher.md)
+      + [Dispatcher - Pontos de extremidade](/help/headless/deployment/dispatcher.md)
       + [Dispatcher - Habilitar armazenamento em cache para consultas persistentes](/help/headless/deployment/dispatcher-caching.md)
       + [Configuração do CORS](/help/headless/deployment/cross-origin-resource-sharing.md)
       + [Filtro de referenciador](/help/headless/deployment/referrer-filter.md)
