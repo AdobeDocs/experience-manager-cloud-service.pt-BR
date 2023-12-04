@@ -3,9 +3,9 @@ title: Como configurar uma ação enviar para um formulário adaptável?
 description: Um Formulário adaptável fornece várias Ações de envio. Uma Ação de envio define como um Formulário adaptável é processado após o envio. Você pode usar as Ações de envio integradas ou criar as suas próprias
 keywords: como selecionar a ação enviar para um formulário adaptável, conectar um formulário adaptável à lista do sharepoint, conectar um formulário adaptável à biblioteca de documentos do sharepoint, conectar um formulário adaptável ao modelo de dados de formulário
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
-source-git-commit: 6ebc40b501472025cafffa258e253a53139a0301
+source-git-commit: 5be0c5e347d2ec7ef660a701c8c6faf6a2d6d17a
 workflow-type: tm+mt
-source-wordcount: '4063'
+source-wordcount: '4006'
 ht-degree: 2%
 
 ---
@@ -205,7 +205,7 @@ Para conectar o AEM Forms à sua lista do Microsoft® Sharepoint:
 
 Você pode usar a configuração da Lista do SharePoint criada em um Formulário adaptável para salvar dados ou o Documento de registro gerado em uma Lista do SharePoint. Execute as seguintes etapas para usar uma Lista SharePoint em um Formulário adaptável como:
 
-1. [Criar um modelo de dados de formulário usando a configuração da lista do Microsoft® SharePoint](/help/forms/create-form-data-models.md)
+1. [Criar um modelo de dados de formulário usando o Microsoft](/help/forms/create-form-data-models.md)
 1. [Configurar o modelo de dados do formulário para recuperar e enviar dados](/help/forms/work-with-form-data-model.md#configure-services)
 1. [Criação de um Formulário adaptável](/help/forms/creating-adaptive-form-core-components.md)
 1. [Configurar a ação Enviar usando um Modelo de dados de formulário](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
@@ -215,10 +215,10 @@ Ao enviar o formulário, os dados são salvos no Armazenamento de Lista do Micro
 >[!NOTE]
 >
 > Na Lista do Microsoft® SharePoint, os seguintes tipos de coluna não são suportados:
-> * coluna de imagem
-> * coluna de metadados
-> * coluna de pessoa
-> * coluna de dados externos
+* coluna de imagem
+* coluna de metadados
+* coluna de pessoa
+* coluna de dados externos
 
 ## Enviar usando modelo de dados do formulário {#submit-using-form-data-model}
 
@@ -263,7 +263,7 @@ Também é possível **[!UICONTROL Habilitar solicitação POST]** e forneça um
 
 >[!NOTE]
 >
->Para passar os campos como parâmetros em um URL REST, todos os campos devem ter nomes de elemento diferentes, mesmo se os campos forem colocados em painéis diferentes.
+Para passar os campos como parâmetros em um URL REST, todos os campos devem ter nomes de elemento diferentes, mesmo se os campos forem colocados em painéis diferentes.
 
 <!-- ## Send PDF via Email {#send-pdf-via-email}
 
@@ -340,7 +340,7 @@ Para conectar o AEM Forms ao seu Microsoft® OneDrive Storage:
 
    >[!NOTE]
    >
-   > A variável **segredo do cliente** é obrigatório ou opcional depende da configuração do aplicativo do Azure Ative Diretory. Se o aplicativo estiver configurado para usar um segredo do cliente, é obrigatório fornecer o segredo do cliente.
+   A variável **segredo do cliente** é obrigatório ou opcional depende da configuração do aplicativo do Azure Ative Diretory. Se o aplicativo estiver configurado para usar um segredo do cliente, é obrigatório fornecer o segredo do cliente.
 
 1. Clique em **[!UICONTROL Conectar]**. Em uma conexão bem-sucedida, a variável `Connection Successful` é exibida.
 
@@ -348,8 +348,8 @@ Para conectar o AEM Forms ao seu Microsoft® OneDrive Storage:
 
    >[!NOTE]
    >
-   >* Por padrão, `forms-ootb-storage-adaptive-forms-submission` está presente no OneDrive Container.
-   > * Criar uma pasta como `forms-ootb-storage-adaptive-forms-submission`, se ainda não estiver presente clicando em **Criar pasta**.
+   * Por padrão, `forms-ootb-storage-adaptive-forms-submission` está presente no OneDrive Container.
+   * Criar uma pasta como `forms-ootb-storage-adaptive-forms-submission`, se ainda não estiver presente clicando em **Criar pasta**.
 
 Agora, você pode usar esta configuração de armazenamento do OneDrive para a ação de envio em um Formulário adaptável.
 
@@ -360,8 +360,8 @@ Você pode usar a configuração de armazenamento do OneDrive criada em um Formu
 
    >[!NOTE]
    >
-   > * Selecionar o mesmo [!UICONTROL Contêiner de configuração] para um Formulário adaptável, em que você criou seu armazenamento do OneDrive.
-   > * Se não [!UICONTROL Contêiner de configuração] for selecionada, a variável global [!UICONTROL Configuração de armazenamento] pastas são exibidas na janela de propriedades Submeter Ação.
+   * Selecionar o mesmo [!UICONTROL Contêiner de configuração] para um Formulário adaptável, em que você criou seu armazenamento do OneDrive.
+   * Se não [!UICONTROL Contêiner de configuração] for selecionada, a variável global [!UICONTROL Configuração de armazenamento] pastas são exibidas na janela de propriedades Submeter Ação.
 
 1. Selecionar **Ação de envio** as **[!UICONTROL Enviar para o OneDrive]**.
    ![GIF do OneDrive](/help/forms/assets/onedrive-video.gif)
@@ -403,8 +403,8 @@ Você pode usar a configuração do contêiner de Armazenamento do Azure criada 
 
    >[!NOTE]
    >
-   > * Selecionar o mesmo [!UICONTROL Contêiner de configuração] para um Formulário adaptável, em que você criou seu armazenamento do OneDrive.
-   > * Se não [!UICONTROL Contêiner de configuração] for selecionada, a variável global [!UICONTROL Configuração de armazenamento] pastas são exibidas na janela de propriedades Submeter Ação.
+   * Selecionar o mesmo [!UICONTROL Contêiner de configuração] para um Formulário adaptável, em que você criou seu armazenamento do OneDrive.
+   * Se não [!UICONTROL Contêiner de configuração] for selecionada, a variável global [!UICONTROL Configuração de armazenamento] pastas são exibidas na janela de propriedades Submeter Ação.
 
 1. Selecionar **Ação de envio** as **[!UICONTROL Enviar para o Armazenamento Azure Blob]**.
    ![GIF de armazenamento do Azure Blob](/help/forms/assets/azure-submit-video.gif)
@@ -422,7 +422,7 @@ Para definir valores de uma configuração, [Gerar configurações de OSGi usand
 
 ## Enviar para o Power Automate {#microsoft-power-automate}
 
-Você pode configurar um Formulário adaptável para executar um fluxo da nuvem do Microsoft® Power Automate no envio. O formulário adaptável configurado envia dados capturados, anexos e documentos de registro para processamento no fluxo da nuvem do Power Automate. Ele ajuda você a criar uma experiência personalizada de captura de dados, aproveitando o poder do Microsoft® Power Automate para criar lógicas de negócios sobre dados capturados e automatizar os fluxos de trabalho do cliente. Estes são alguns exemplos do que você pode fazer após integrar um formulário adaptável ao Microsoft® Power Automate:
+Você pode configurar um Formulário adaptável para executar um fluxo da nuvem do Microsoft® Power Automate no envio. O formulário adaptável configurado envia dados capturados, anexos e documentos de registro para processamento no fluxo da nuvem do Power Automate. Ele ajuda você a criar uma experiência personalizada de captura de dados, aproveitando o poder do Microsoft® Power Automate para criar lógicas comerciais sobre dados capturados e automatizar os fluxos de trabalho do cliente. Estes são alguns exemplos do que você pode fazer após integrar um formulário adaptável ao Microsoft® Power Automate:
 
 * Usar dados adaptáveis do Forms em processos de negócios do Power Automate
 * Use o Power Automate para enviar dados capturados para mais de 500 fontes de dados ou qualquer API disponível publicamente
@@ -469,7 +469,7 @@ Se o usuário final ignorar essas validações e enviar os formulários, o servi
 
 >[!NOTE]
 >
->A validação do lado do servidor valida o modelo de formulário. É recomendável criar uma biblioteca do cliente separada para validações e não misturá-la com outras coisas, como estilo de HTML e manipulação de DOM na mesma biblioteca do cliente.
+A validação do lado do servidor valida o modelo de formulário. É recomendável criar uma biblioteca do cliente separada para validações e não misturá-la com outras coisas, como estilo de HTML e manipulação de DOM na mesma biblioteca do cliente.
 
 ### Suporte a funções personalizadas em expressões de validação {#supporting-custom-functions-in-validation-expressions-br}
 
