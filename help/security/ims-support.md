@@ -2,7 +2,7 @@
 title: Suporte IMS do Adobe Experience Manager as a Cloud Service
 description: Suporte do sistema de gestão de imagens para o Adobe Experience Manager as a Cloud Service
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 0074f483bffa1cd7c2cc468a74730672511f0956
 workflow-type: tm+mt
 source-wordcount: '1917'
 ht-degree: 99%
@@ -20,8 +20,6 @@ ht-degree: 99%
 >[!TIP]
 >
 >Consulte [Configuração do acesso ao AEM para administradores](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem&amp;lang=pt-BR) para obter uma introdução sobre como os usuários se autenticam usando o Adobe IMS para o AEM as a Cloud Service. Saiba também como usuários do Adobe IMS, grupos de usuários e perfis de produtos são usados para controlar o acesso ao AEM e seus recursos e funcionalidades. Adobe ID necessário.
-
-{{ims-group-profiles}}
 
 ## Destaques principais {#key-highlights}
 
