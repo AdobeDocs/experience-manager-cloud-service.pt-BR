@@ -3,7 +3,7 @@ title: Integração do Adobe Workfront Fusion com o envio do AEM Forms
 description: O Adobe Workfront Fusion permite que você se concentre em novas tarefas, em vez de tarefas repetitivas. Você pode conectar o Adobe Workfront Fusion a um Formulário adaptável usando o Envio de formulário.
 keywords: Enviar um formulário adaptável para o Adobe Workfront Fusion, Integração do Adobe Workfront Fusion com o AEM Forms Submission, Adobe Workfront Fusion com o AEM Forms, Workfront Fusion com o AEM Forms, Conectar o Workfront Fusion ao AEM Forms, AEM Forms e Workfront Fusion, Como conectar o Workfront Fusion com o AEM Forms?, Conectar o Workfront Fusion a um formulário
 topic-tags: author, developer
-source-git-commit: cebdd5c4b1ad9531f2cc2893c2e7900658e451ed
+source-git-commit: 68314ca09594d3c4c5639363326117b89b733a4d
 workflow-type: tm+mt
 source-wordcount: '1240'
 ht-degree: 0%
@@ -128,6 +128,7 @@ Para adicionar uma conexão:
 #### 1.3 Ativar o cenário do Workfront {#activate-scenario}
 
 Para ativar o cenário:
+
 1. Clique em **[!UICONTROL Cenários]** ![Ícone Compartilhar](/help/forms/assets/Smock_ShareAndroid_18_N.svg) no painel esquerdo.
 1. Clique em **[!UICONTROL Cenário inativo]** guia.
 1. Clique em **LIGADO/DESLIGADO** botão de alternância para o seu cenário do AEM Forms.
