@@ -3,7 +3,7 @@ title: Como configurar uma ação enviar para um formulário adaptável?
 description: Um Formulário adaptável fornece várias Ações de envio. Uma Ação de envio define como um Formulário adaptável é processado após o envio. Você pode usar as Ações de envio integradas ou criar as suas próprias
 keywords: como selecionar a ação enviar para um formulário adaptável, conectar um formulário adaptável à lista do sharepoint, conectar um formulário adaptável à biblioteca de documentos do sharepoint, conectar um formulário adaptável ao modelo de dados de formulário
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
-source-git-commit: 4e5a730f59a7594085319435bfe1ea3a7368bfc2
+source-git-commit: e9110b5f5b46d38712b7462490afc1052fb8d00c
 workflow-type: tm+mt
 source-wordcount: '4114'
 ht-degree: 2%
@@ -439,6 +439,7 @@ Após uma configuração bem-sucedida, use o [Chamar um fluxo do Microsoft® Pow
 Você pode configurar um Formulário adaptável para enviar dados ao Workfront Fusion no envio. O Workfront Fusion permite a automação de processos para que o usuário possa se concentrar em novas tarefas, em vez de repetir as mesmas tarefas repetidamente. Ele automatiza tarefas simples e complexas, economizando tempo e garantindo uma execução consistente do processo.
 
 O editor Forms adaptável fornece a **Chamar um cenário do Workfront Fusion** enviar ação para enviar dados ou anexos do Adaptive Forms para um cenário do Workfront Fusion. Para usar a ação enviar para enviar dados capturados para um cenário do Workfront Fusion, consulte [Enviar um formulário adaptável ao Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md).
+
 
 ## Usar envio síncrono ou assíncrono {#use-synchronous-or-asynchronous-submission}
 
