@@ -3,9 +3,9 @@ title: Integração do Adobe Workfront Fusion com o envio do AEM Forms
 description: O Adobe Workfront Fusion permite que você se concentre em novas tarefas, em vez de tarefas repetitivas. Você pode conectar o Adobe Workfront Fusion a um Formulário adaptável usando o Envio de formulário.
 keywords: Enviar um formulário adaptável para o Adobe Workfront Fusion, Integração do Adobe Workfront Fusion com o AEM Forms Submission, Adobe Workfront Fusion com o AEM Forms, Workfront Fusion com o AEM Forms, Conectar o Workfront Fusion ao AEM Forms, AEM Forms e Workfront Fusion, Como conectar o Workfront Fusion com o AEM Forms?, Conectar o Workfront Fusion a um formulário
 topic-tags: author, developer
-source-git-commit: 5be0c5e347d2ec7ef660a701c8c6faf6a2d6d17a
+source-git-commit: cebdd5c4b1ad9531f2cc2893c2e7900658e451ed
 workflow-type: tm+mt
-source-wordcount: '1242'
+source-wordcount: '1240'
 ht-degree: 0%
 
 ---
@@ -144,7 +144,7 @@ Depois de clicar no botão de alternância, o cenário do Workfront começa a ap
 - [Novo Forms adaptável](#new-af-submit-action)
 - [Formulários adaptáveis existentes](#existing-af-submit-action)
 
-#### 2.1 Configurar a ação de envio do novo Formulário adaptável do Workfront Fusion {#new-af-submit-action}
+#### Configurar a ação de envio do novo Formulário adaptável para o Workfront Fusion {#new-af-submit-action}
 
 Para configurar a ação de envio do novo Formulário adaptável para o Workfront Fusion:
 
@@ -165,7 +165,7 @@ Para configurar a ação de envio do novo Formulário adaptável para o Workfron
 1. Clique em **[!UICONTROL Criar]**.
 1. Especifique o nome do novo Formulário adaptável e clique em **[!UICONTROL Criar]**.
 
-#### 2.2 Configurar a ação de envio do Formulário adaptável existente para o Workfront Fusion {#existing-af-submit-action}
+#### Configurar a ação de envio do Formulário adaptável existente para o Workfront Fusion {#existing-af-submit-action}
 
 Para configurar a ação de envio do Formulário adaptável existente para o Workfront Fusion:
 
@@ -178,7 +178,7 @@ Para configurar a ação de envio do Formulário adaptável existente para o Wor
    ![Enviar ação para o Workfront Fusion](/help/forms/assets/workfront-scenario-existing-af.png)
 
 1. Abra o **[!UICONTROL Envio]** guia.
-1. Selecione o **[Enviar ação]** as **[!UICONTROL Chamar um cenário do Workfront Fusion]**
+1. Selecione o **[!UICONTROL Enviar ação]** as **[!UICONTROL Chamar um cenário do Workfront Fusion]**
 1. Selecionar **[!UICONTROL Cenário do Workfront Fusion]** na lista suspensa.
 1. Clique em **[!UICONTROL Concluído]**.
 
