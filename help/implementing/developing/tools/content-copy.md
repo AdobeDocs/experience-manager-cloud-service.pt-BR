@@ -2,7 +2,7 @@
 title: A ferramenta de cópia de conteúdo
 description: A ferramenta de cópia de conteúdo permite que os usuários copiem conteúdo mutável sob demanda de seus ambientes de produção no AEM as a Cloud Service para ambientes inferiores para fins de teste.
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: 8bc20c66aad7bf4befdd28db2c628a1535ae375b
 workflow-type: tm+mt
 source-wordcount: '1290'
 ht-degree: 34%
@@ -200,5 +200,3 @@ A ferramenta de cópia de conteúdo tem as seguintes limitações.
 * A ferramenta de cópia de conteúdo não tem recurso de controle de versão e não pode detectar automaticamente o conteúdo modificado ou criado no ambiente de origem em um conjunto de conteúdo desde a última operação de cópia de conteúdo.
    * Se quiser atualizar o ambiente de destino somente com alterações de conteúdo, você deverá criar um conjunto de conteúdo desde a última operação de cópia de conteúdo. Em seguida, especifique os caminhos na instância de origem em que as alterações foram feitas desde a última operação de cópia de conteúdo.
 * As informações da versão não são incluídas em uma cópia de conteúdo.
-
-{{ims-group-profiles}}
