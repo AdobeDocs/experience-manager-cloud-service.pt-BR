@@ -2,10 +2,10 @@
 title: Como podemos criar e usar temas para estilizar um formulário adaptável?
 description: Use temas de formulário adaptável para estilizar e fornecer uma identidade visual a um formulário adaptável. Você pode compartilhar um tema em qualquer número do Adaptive Forms.
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
-source-git-commit: f70e18b1c21fd530587694f91c3969e831cfc640
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '5578'
-ht-degree: 2%
+source-wordcount: '5558'
+ht-degree: 1%
 
 ---
 
@@ -363,7 +363,7 @@ Quando você seleciona um componente na Tela, vê a barra de ferramentas do comp
 * **[!UICONTROL Widget de caixa numérica]**: permite que você selecione o componente para personalizar sua aparência na barra lateral.
 * **[!UICONTROL Widget de campo]**: permite selecionar o componente genérico para o estilo. Neste exemplo, todos os componentes de entrada de texto (caixa de texto/caixa numérica/depurador numérico/entrada de data) são selecionados para estilo.
 
-* ![nível de campo](assets/select_parent_icon.svg): permite selecionar o componente principal para o estilo. Se você selecionar caixa numérica e tocar nesse ícone, o componente de campo será selecionado. Se você selecionar componente de campo e tocar neste ícone, o painel será selecionado. Se você continuar tocando nesse ícone para seleção, acabará selecionando o layout para estilo.
+* ![nível de campo](assets/select_parent_icon.svg): permite selecionar o componente principal para o estilo. Se você selecionar caixa numérica e selecionar este ícone, o componente de campo será selecionado. Se você selecionar componente de campo e selecionar este ícone, painel será selecionado. Se você continuar tocando nesse ícone para seleção, acabará selecionando o layout para estilo.
 
 >[!NOTE]
 >
@@ -587,7 +587,7 @@ Para copiar um tema, execute as seguintes etapas:
 
 1. Na instância de criação, navegue até **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Temas]**.
 1. Abra a pasta Biblioteca de temas.
-1. Na pasta Biblioteca de temas, passe o mouse sobre o tema predefinido correspondente e toque em **[!UICONTROL Copiar]**.
+1. Na pasta Biblioteca de temas, passe o mouse sobre o tema predefinido correspondente e selecione **[!UICONTROL Copiar]**.
 1. Cole o tema copiado fora da pasta Biblioteca de Temas.
 1. Personalizar o tema copiado.
 

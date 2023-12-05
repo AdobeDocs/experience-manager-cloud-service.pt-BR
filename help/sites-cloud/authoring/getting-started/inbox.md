@@ -2,10 +2,10 @@
 title: Sua caixa de entrada
 description: Saiba como usar as notificações que chegam em sua Caixa de entrada para gerenciar suas tarefas.
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '911'
-ht-degree: 94%
+source-wordcount: '910'
+ht-degree: 88%
 
 ---
 
@@ -33,7 +33,7 @@ Você recebe essas notificações em sua própria Caixa de entrada, onde pode vi
 
 ## Caixa de entrada no cabeçalho {#inbox-in-the-header}
 
-Em qualquer um dos consoles, o número atual de itens na sua caixa de entrada é mostrado no cabeçalho. O indicador também pode ser aberto para fornecer acesso rápido às páginas que necessitam de ações ou acesso à caixa de entrada:
+Em qualquer um dos consoles, o número atual de itens na sua caixa de entrada é mostrado no cabeçalho. O indicador também pode ser aberto para fornecer acesso rápido às páginas que exigem ação(ões) ou acesso à caixa de entrada:
 
 ![Visão geral da caixa de entrada no cabeçalho](/help/sites-cloud/authoring/assets/inbox-header.png)
 
@@ -150,7 +150,7 @@ Para ambas as visualizações (Lista e Calendário), é possível definir certas
 
    * Confirme a ação apropriada, por exemplo, atribuir novamente.
    * Cancelar a ação
-   * Selecione a seta para trás para retornar à caixa de entrada, por exemplo, se um assistente de ação ou uma página de documentação tiver sido aberta, você poderá retornar à Caixa de entrada.
+   * Selecione a seta para trás para retornar à caixa de entrada. Por exemplo, se um assistente de ação ou uma página de documentação tiver sido aberta, você poderá retornar à Caixa de entrada.
 
 ## Criação de uma tarefa {#creating-a-task}
 

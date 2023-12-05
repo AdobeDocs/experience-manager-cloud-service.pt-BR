@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Assets HTTP API,APIs
 role: Developer,Architect,Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1562'
+source-wordcount: '1587'
 ht-degree: 3%
 
 ---
@@ -125,7 +125,7 @@ Recupera uma representação Sirene de uma pasta existente e de suas entidades f
 
 **Resposta**: a classe da entidade retornada é um ativo ou uma pasta. As propriedades das entidades contidas são um subconjunto do conjunto completo de propriedades de cada entidade. Para obter uma representação completa da entidade, os clientes devem recuperar o conteúdo do URL apontado pelo link com um `rel` de `self`.
 
-## Crie uma pasta  {#create-a-folder}
+## Criar uma pasta {#create-a-folder}
 
 Cria um `sling`: `OrderedFolder` no caminho fornecido. Se `*` é fornecido em vez de um nome de nó, o servlet usa o nome do parâmetro como nome do nó. A solicitação aceita uma das seguintes opções:
 
@@ -138,7 +138,7 @@ Uma chamada de API falha com um `500` código de resposta se o nó principal do 
 
 **Parâmetros**: `name` é o nome da pasta.
 
-**Solicitar**
+**Solicitação**
 
 * `POST /api/assets/myFolder -H"Content-Type: application/json" -d '{"class":"assetFolder","properties":{"title":"My Folder"}}'`
 * `POST /api/assets/* -F"name=myfolder" -F"title=My Folder"`
@@ -177,7 +177,7 @@ Criar uma representação para um ativo. Se o nome do parâmetro de solicitaçã
 
 **Parâmetros**: Os parâmetros são `name` para o nome da representação e `file` como uma referência de arquivo.
 
-**Solicitar**
+**Solicitação**
 
 * `POST /api/assets/myfolder/myasset.png/renditions/web-rendition -H"Content-Type: image/png" --data-binary "@myRendition.png"`
 * `POST /api/assets/myfolder/myasset.png/renditions/* -F"name=web-rendition" -F"file=@myRendition.png"`
@@ -257,7 +257,7 @@ Move uma pasta ou ativo no caminho determinado para um novo destino.
 
 Exclui um recurso (-tree) no caminho fornecido.
 
-**Solicitar**
+**Solicitação**
 
 * `DELETE /api/assets/myFolder`
 * `DELETE /api/assets/myFolder/myAsset.png`

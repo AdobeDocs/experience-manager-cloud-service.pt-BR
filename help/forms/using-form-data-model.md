@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1231'
+source-wordcount: '1213'
 ht-degree: 2%
 
 ---
@@ -46,7 +46,7 @@ Você pode criar [Forms adaptável](creating-adaptive-form.md) e fragmentos de f
 
    ![create-af-1-1](assets/create-af-1-1.png)
 
-1. Toque para expandir **[!UICONTROL Selecionar modelo de dados do formulário]**. Todos os modelos de dados de formulário disponíveis estão listados.
+1. Selecionar para expandir **[!UICONTROL Selecionar modelo de dados do formulário]**. Todos os modelos de dados de formulário disponíveis estão listados.
 
    Selecione um do modelo de dados.
 
@@ -93,14 +93,14 @@ O editor de modelo de dados de formulário permite gerar e editar dados de amost
 <!--To preview an interactive communication with sample Form Data Model data:
 
 1. On [!DNL  Experience Manager] author instance, navigate to **[!UICONTROL Forms > Forms & Documents]**.
-1. Select an interactive communication and tap **[!UICONTROL Preview]** in the toolbar to select **[!UICONTROL Web Channel]**, **[!UICONTROL Print Channel]**, or **[!UICONTROL Both Channels]** to preview the interactive communication.
-1. In the Preview [*channel*] dialog, ensure that **[!UICONTROL Test Data of Form Data Model]** is selected and tap **[!UICONTROL Preview]**.
+1. Select an interactive communication and select **[!UICONTROL Preview]** in the toolbar to select **[!UICONTROL Web Channel]**, **[!UICONTROL Print Channel]**, or **[!UICONTROL Both Channels]** to preview the interactive communication.
+1. In the Preview [*channel*] dialog, ensure that **[!UICONTROL Test Data of Form Data Model]** is selected and select **[!UICONTROL Preview]**.
 
 The interactive communication opens with prefilled sample data.
 
 ![web-preview](assets/web-preview.png)-->
 
-Para visualizar um formulário adaptável com dados de amostra, abra o formulário adaptável no modo de autor e toque em **[!UICONTROL Visualizar]**.
+Para visualizar um formulário adaptável com dados de amostra, abra o formulário adaptável no modo de autor e selecione **[!UICONTROL Visualizar]**.
 
 ## Preencher previamente usando o serviço de modelo de dados de formulário {#prefill}
 
@@ -130,10 +130,10 @@ Você também pode enviar anexos de formulário para uma fonte de dados usando a
 
 1. Adicione um objeto de modelo de dados que inclua uma propriedade binária ao modelo de dados de formulário.
 1. No Formulário adaptável, arraste e solte a **[!UICONTROL Anexo de arquivo]** componente do navegador Componentes no Formulário adaptável.
-1. Toque para selecionar o componente adicionado e toque em ![settings_icon](assets/configure-icon.svg) para abrir o navegador Propriedades do componente.
-1. No campo Referência de vinculação, toque em ![foldersearch_18](assets/folder-search-icon.svg) e navegue para selecionar a propriedade binária adicionada no modelo de dados de formulário. Configure outras propriedades, conforme apropriado.
+1. Selecione para selecionar o componente adicionado e ![settings_icon](assets/configure-icon.svg) para abrir o navegador Propriedades do componente.
+1. No campo Referência de vinculação, selecione ![foldersearch_18](assets/folder-search-icon.svg) e navegue para selecionar a propriedade binária adicionada no modelo de dados de formulário. Configure outras propriedades, conforme apropriado.
 
-   Toque ![botão de seleção](assets/save_icon.svg) para salvar as propriedades. O campo de anexo agora está associado à propriedade binária do modelo de dados de formulário.
+   Selecionar ![botão de seleção](assets/save_icon.svg) para salvar as propriedades. O campo de anexo agora está associado à propriedade binária do modelo de dados de formulário.
 
 1. Na seção Envio das propriedades do Contêiner de formulário adaptável, ative **[!UICONTROL Enviar anexos do formulário]**. Ele envia o anexo no campo de propriedade binária para a fonte de dados no envio do formulário.
 

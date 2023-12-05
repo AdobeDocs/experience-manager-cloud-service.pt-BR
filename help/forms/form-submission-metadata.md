@@ -4,9 +4,9 @@ description: Saiba como adicionar informações aos metadados de um formulário 
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '693'
 ht-degree: 0%
 
 ---
@@ -27,8 +27,8 @@ Considere outro exemplo de um formulário que captura a ID de email e o número 
 Execute as seguintes etapas para adicionar um elemento aos metadados:
 
 1. Abra o formulário adaptável no modo de edição.\
-   Para abrir o formulário no modo de edição, no gerenciador de formulários, selecione o formulário e toque em **[!UICONTROL Abertura]**.
-1. No modo de edição, selecione um componente, toque em ![nível de campo](assets/select_parent_icon.svg) > **[!DNL Adaptive Form Container]** e toque em ![cmppr](assets/configure-icon.svg).
+   Para abrir o formulário no modo de edição, no gerenciador de formulários, selecione o formulário e **[!UICONTROL Abertura]**.
+1. No modo de edição, selecione um componente, selecione ![nível de campo](assets/select_parent_icon.svg) > **[!DNL Adaptive Form Container]** e selecione ![cmppr](assets/configure-icon.svg).
 1. Na barra lateral, clique em **[!DNL Metadata]**.
 1. Na seção Metadados, clique em **[!DNL Add]**.
 1. Use o campo Value da guia Metadata para adicionar scripts. Os scripts que você adiciona coletam dados de elementos no formulário e calculam valores que são alimentados para os metadados.

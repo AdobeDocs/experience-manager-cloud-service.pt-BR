@@ -2,10 +2,10 @@
 title: Assimilar conteúdo no Cloud Service
 description: Saiba como usar o Cloud Acceleration Manager para assimilar conteúdo do seu conjunto de migração em uma instância do Cloud Service de destino.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2326'
-ht-degree: 7%
+source-wordcount: '2275'
+ht-degree: 5%
 
 ---
 
@@ -49,7 +49,7 @@ Siga as etapas abaixo para assimilar seu conjunto de migração usando o Cloud A
 
    * **Apagar:** Escolha o `Wipe` value
       * A variável **Limpar** define o ponto inicial do destino da assimilação. Se **Limpar** estiver ativado, o destino, incluindo todo o conteúdo, será redefinido para a versão do AEM especificada no Cloud Manager. Se não estiver ativado, o destino mantém o conteúdo atual como ponto de partida.
-      * Observe que essa opção não **NOT** afetam como a assimilação do conteúdo será realizada. A assimilação sempre usa uma estratégia de substituição de conteúdo e _não_ uma estratégia de mesclagem de conteúdo para que, em ambos **Limpar** e **Não-apagamento** nos casos, a assimilação de um conjunto de migração substituirá o conteúdo no mesmo caminho no destino. Por exemplo, se o conjunto de migração contiver `/content/page1` e o destino já contém `/content/page1/product1`, a assimilação removerá toda a `page1` caminho e suas subpáginas, incluindo `product1`e substitua-o pelo conteúdo no conjunto de migração. Isso significa que é necessário fazer um planejamento cuidadoso ao executar um **Não-apagamento** assimilação para um destino que contém qualquer conteúdo que deve ser mantido.
+      * Essa opção não **NOT** afetam como a assimilação do conteúdo será realizada. A assimilação sempre usa uma estratégia de substituição de conteúdo e _não_ uma estratégia de mesclagem de conteúdo para que, em ambos **Limpar** e **Não-apagamento** nos casos, a assimilação de um conjunto de migração substituirá o conteúdo no mesmo caminho no destino. Por exemplo, se o conjunto de migração contiver `/content/page1` e o destino já contém `/content/page1/product1`, a assimilação removerá toda a `page1` caminho e suas subpáginas, incluindo `product1`e substitua-o pelo conteúdo no conjunto de migração. Isso significa que é necessário fazer um planejamento cuidadoso ao executar um **Não-apagamento** assimilação para um destino que contém qualquer conteúdo que deve ser mantido.
 
    >[!IMPORTANT]
    > Se a configuração **Limpar** estiver ativado para a assimilação, ele redefinirá todo o repositório existente, incluindo as permissões do usuário na instância do Cloud Service de destino. Essa redefinição também é verdadeira para um usuário administrador adicionado à variável **administradores** e esse usuário deverá ser adicionado ao grupo de administradores novamente para iniciar uma assimilação.

@@ -4,10 +4,10 @@ description: Saiba como configurar o [!DNL Adobe Experience Manager] Plug-ins do
 contentOwner: AG
 mini-toc-levels: 1
 exl-id: 91619662-e865-47d1-8bec-0739f402353a
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '4298'
-ht-degree: 4%
+source-wordcount: '4303'
+ht-degree: 2%
 
 ---
 
@@ -95,7 +95,7 @@ Você pode fornecer alguns, todos ou nenhum desses três ícones aos autores na 
 
 Para configurar o RTE para exibir os ícones necessários, siga estas etapas.
 
-1. Navegue até o componente, por exemplo `/apps/<myProject>/components/text`.
+1. Navegue até o componente, por exemplo, `/apps/<myProject>/components/text`.
 1. Navegue até o nó `rtePlugins/edit`. Consulte [ativar um plug-in](#activateplugin) se o nó não existir.
 1. Crie o `features` propriedade no `edit` e adicione um ou mais recursos. Salve todas as alterações.
 
@@ -228,7 +228,7 @@ Isso é feito ativando o plug-in de estilos.
 
 Em seguida, especifique o(s) local(is) da(s) folha(s) de estilos que deseja referenciar:
 
-1. Navegue até o nó raiz do componente de texto, por exemplo `/apps/<myProject>/components/text`.
+1. Navegue até o nó raiz do componente de texto, por exemplo, `/apps/<myProject>/components/text`.
 1. Adicionar a propriedade `externalStyleSheets` ao nó principal de `<rtePlugins-node>`:
 
    * **Nome** `externalStyleSheets`

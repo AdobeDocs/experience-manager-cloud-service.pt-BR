@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: f2f81e2e3e7ff0b5bad4a5490f5cbec752c92578
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1385'
-ht-degree: 6%
+source-wordcount: '1329'
+ht-degree: 4%
 
 ---
 
@@ -82,7 +82,7 @@ Para baixar ativos, siga estas etapas:
    | **[!UICONTROL Criar uma pasta separada para cada ativo]** | Selecione essa opção para criar uma pasta para cada ativo que contenha todas as representações baixadas do ativo. Se não estiver selecionada, cada ativo (e suas representações, se selecionado para download) estará contido na pasta principal do arquivo gerado. |
    | **[!UICONTROL Email]** | Selecione essa opção para enviar uma notificação por email (contendo um link para o download) para outro usuário. O usuário destinatário deve ser membro do `dam-users` grupo. Os modelos padrão de email estão disponíveis nos seguintes locais:<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> Os modelos que você personaliza durante a implantação estão disponíveis nos seguintes locais: <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul>Você pode armazenar modelos personalizados específicos do locatário nos seguintes locais:<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> |
    | **[!UICONTROL Ativo(s)]** | Selecione essa opção para baixar o ativo em sua forma original.<br>A opção subativos estará disponível se o ativo original tiver subativos. |
-   | **[!UICONTROL Representações]** | Uma representação é a representação binária de um ativo. Os ativos têm uma representação principal - a do arquivo carregado. Eles podem ter qualquer número de representações. <br> Com essa opção, é possível selecionar as representações que deseja baixar. As representações disponíveis dependem do ativo selecionado. |
+   | **[!UICONTROL Representação(ões)]** | Uma representação é a representação binária de um ativo. Os ativos têm uma representação principal - a do arquivo carregado. Eles podem ter qualquer número de representações. <br> Com essa opção, é possível selecionar as representações que deseja baixar. As representações disponíveis dependem do ativo selecionado. |
    | **[!UICONTROL Cortes inteligentes]** | Selecione esta opção para baixar todas as representações de corte inteligente do ativo selecionado no [!DNL Experience Manager]. Um arquivo zip com as representações de Recorte inteligente é criado e baixado no computador local. |
    | **[!UICONTROL Representação(ões) dinâmica(s)]** | Selecione essa opção para gerar uma série de representações alternativas em tempo real. Ao selecionar essa opção, você também seleciona as representações que deseja criar dinamicamente, selecionando entre as [Predefinição de imagem](/help/assets/dynamic-media/image-presets.md) lista. <br>Além disso, você pode selecionar o tamanho e a unidade de medida, o formato, o espaço de cor, a resolução e qualquer modificador de imagem opcional, como inverter a imagem. A opção só estará disponível se você [!DNL Dynamic Media] ativado. |
 
@@ -143,7 +143,7 @@ Para obter mais detalhes sobre como adicionar uma configuração OSGi vazia, con
 
 ## Dicas e limitações {#tips-limitations}
 
-* ao baixar uma pasta vazia, o [!DNL Experience Manager] transmite uma mensagem de sucesso sobre a criação de um arquivo ZIP, mas o arquivo não é criado.
+* Se você baixar uma pasta vazia, [!DNL Experience Manager] O transmite uma mensagem de sucesso sobre a criação de um arquivo ZIP, mas o arquivo não é criado.
 
 **Consulte também**
 

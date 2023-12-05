@@ -4,10 +4,10 @@ description: Saiba como preparar conteúdo para tradução ao desenvolver sites 
 feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '752'
-ht-degree: 83%
+source-wordcount: '756'
+ht-degree: 73%
 
 ---
 
@@ -68,8 +68,8 @@ Crie uma raiz de idioma como a página raiz de uma cópia de idioma que identifi
 
 Para criar a raiz do idioma, crie uma página e use um código de idioma ISO como o valor da propriedade **Nome**. O código de idioma deve estar em um dos seguintes formatos:
 
-* `<language-code>` - O código de idioma compatível é um código de duas letras, conforme definido pela ISO-639-1, como por exemplo `en`.
-* `<language-code>_<country-code>` ou `<language-code>-<country-code>` - O código do país compatível é um código de duas letras em minúsculas ou maiúsculas, conforme definido pela norma ISO 3166, como por exemplo `en_US`, `en_us`, `en_GB`, `en-gb`.
+* `<language-code>` - O código de idioma compatível é um código de duas letras, conforme definido pela ISO-639-1, por exemplo, `en`.
+* `<language-code>_<country-code>` ou `<language-code>-<country-code>` - O código do país compatível é um código de duas letras em minúsculas ou maiúsculas, conforme definido pela norma ISO 3166, por exemplo, `en_US`, `en_us`, `en_GB`, `en-gb`.
 
 É possível usar qualquer um dos formatos, de acordo com a estrutura escolhida para o site global. Por exemplo, a página raiz da cópia em francês do site do WKND tem `fr` como a propriedade **Nome**. A variável **Nome** é usada como o nome do nó da página no repositório e, portanto, determina o caminho da página (`http://<host>:<4502>/content/wknd/language-masters/fr.html`).
 
@@ -80,7 +80,7 @@ Para criar a raiz do idioma, crie uma página e use um código de idioma ISO com
    ![Criar página](../assets/create-page.png)
 
 1. Selecione o modelo de página e, em seguida, **Próxima**.
-1. No campo **Nome**, digite o código do país no formato de `<language-code>` ou `<language-code>_<country-code>`, como por exemplo `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Digite um título para a página.
+1. No **Nome** digite o código do país no formato de `<language-code>` ou `<language-code>_<country-code>`, por exemplo, `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Digite um título para a página.
 
    ![Criar página da raiz de idioma](../assets/create-language-root.png)
 
@@ -102,7 +102,7 @@ Use o procedimento a seguir para exibir as cópias de idioma de uma página usan
 
 ## Cópias de idioma em vários níveis {#multiple-levels}
 
-As raízes de idioma também podem ser agrupadas em nós, como por exemplo, por região, enquanto ainda são reconhecidas como raízes de cópias de idioma.
+As raízes de idioma também podem ser agrupadas em nós, por exemplo, por região, enquanto ainda são reconhecidas como raízes de cópias de idioma.
 
 ```text
 /content

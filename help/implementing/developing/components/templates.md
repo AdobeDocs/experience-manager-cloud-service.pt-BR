@@ -2,10 +2,10 @@
 title: Modelos de páginas
 description: Os modelos de página são usados ao criar uma página que é usada como base para a nova página
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3278'
-ht-degree: 8%
+source-wordcount: '3267'
+ht-degree: 4%
 
 ---
 
@@ -85,8 +85,8 @@ Ao criar um modelo editável, você:
 
    **Layout**
 
-   * É possível definir o layout do modelo para um intervalo de dispositivos.
-   * O Layout responsivo para modelos funciona como na criação de página.
+   * Você pode definir o layout do modelo para um intervalo de dispositivos.
+   * O Layout responsivo para modelos funciona como na criação de página.
 
    Para obter detalhes sobre como um autor de modelo define o layout do modelo, consulte [Criação de modelos de página](/help/sites-cloud/authoring/features/templates.md#editing-a-template-layout-template-author).
 
@@ -141,7 +141,7 @@ Para organizar seus templates, você pode usar as seguintes pastas:
 >
 >Mesmo que você possa aninhar suas pastas, quando o usuário as visualizar no **Modelos** console, eles são apresentados como uma estrutura plana.
 
-Em uma instância padrão do AEM, a pasta `global` já existe no console modelo. Isso mantém modelos padrão e atua como um fallback se nenhuma política e/ou tipo de modelo for localizado na pasta atual. Você pode adicionar seus modelos padrão a esta pasta ou criar uma pasta (recomendado).
+Em uma instância padrão do AEM, o `global` a pasta já existe no console modelo. Isso mantém modelos padrão e atua como um fallback se nenhuma política e/ou tipo de modelo for encontrado na pasta atual. Você pode adicionar seus modelos padrão a esta pasta ou criar uma pasta (recomendado).
 
 >[!NOTE]
 >
@@ -425,7 +425,7 @@ Este nó retém propriedades para o modelo:
 
 * **Nome**: `jcr:title`
 * **Nome**: `status`
-   * ``**Tipo**: `String`
+   * &quot;**Tipo**: `String`
    * **Valor**: `draft`, `enabled` ou `disabled`
 
 ### Estrutura {#structure}
@@ -459,7 +459,7 @@ Quando [editando um modelo, é possível definir o layout](/help/sites-cloud/aut
 
 ### Políticas de conteúdo {#content-policies}
 
-As políticas de conteúdo definem as propriedades de design de um componente. Por exemplo, os componentes disponíveis ou as dimensões mínima/máxima. Elas são aplicáveis ao modelo (e às páginas criadas com ele). As políticas de conteúdo podem ser criadas e selecionadas no editor de modelo.
+As políticas de conteúdo definem as propriedades de design de um componente. Por exemplo, os componentes disponíveis ou as dimensões mínima/máxima. Elas são aplicáveis ao modelo (e às páginas criadas com o modelo). As políticas de conteúdo podem ser criadas e selecionadas no editor de modelo.
 
 * A propriedade `cq:policy`, no `root` nó
   `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
@@ -593,7 +593,7 @@ O diagrama a seguir descreve o processo de avaliação do modelo:
 
 #### Limite de modelos usados em páginas secundárias {#limiting-templates-used-in-child-pages}
 
-Para limitar quais modelos podem ser usados para criar páginas secundárias em uma determinada página, use o `cq:allowedTemplates` propriedade de `jcr:content` nó da página para especificar a lista de modelos que podem ser páginas secundárias. Cada valor na lista deve ser um caminho absoluto para um modelo de uma página secundária permitida, por exemplo `/apps/wknd/templates/page-content`.
+Para limitar quais modelos podem ser usados para criar páginas secundárias em uma determinada página, use o `cq:allowedTemplates` propriedade de `jcr:content` nó da página para especificar a lista de modelos que podem ser páginas secundárias. Cada valor na lista deve ser um caminho absoluto para um modelo de uma página secundária permitida, por exemplo, `/apps/wknd/templates/page-content`.
 
 Você pode usar o `cq:allowedTemplates` propriedade no modelo  `jcr:content` para que esta configuração seja aplicada a todas as páginas criadas que usam este modelo.
 

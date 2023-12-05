@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '5562'
-ht-degree: 6%
+source-wordcount: '5496'
+ht-degree: 5%
 
 ---
 
@@ -183,7 +183,7 @@ Para configurar o tamanho do lote de ativos:
 
 ### Localizar imagens semelhantes {#visualsearch}
 
-Para localizar imagens visualmente semelhantes a uma imagem selecionada pelo usuário, clique na opção **[!UICONTROL Localizar semelhante]** na exibição de cartão de uma imagem ou na barra de ferramentas. [!DNL Experience Manager]O exibe as imagens com tags inteligentes do repositório DAM que são semelhantes a uma imagem selecionada pelo usuário. 
+Para localizar imagens visualmente semelhantes a uma imagem selecionada pelo usuário, clique na opção **[!UICONTROL Localizar semelhante]** na exibição de cartão de uma imagem ou na barra de ferramentas. [!DNL Experience Manager] O exibe as imagens com tags inteligentes do repositório DAM que são semelhantes a uma imagem selecionada pelo usuário.
 
 ![Localizar imagens semelhantes usando a opção na exibição de cartão](assets/search_find_similar.png)
 
@@ -195,7 +195,7 @@ De dentro do [!DNL Experience Manager] usuário, os usuários podem pesquisar [A
 
 ### Ativos do Dynamic Media {#dmassets}
 
-Você pode filtrar por imagens do Dynamic Media selecionando **[!UICONTROL Dynamic Media]** > **[!UICONTROL Conjuntos]** no painel **[!UICONTROL Filtros]**. Isso filtra e exibe ativos como conjuntos de imagens, carrosséis, conjuntos de mídia mista e conjuntos de rotação.
+Você pode filtrar por imagens do Dynamic Media selecionando **[!UICONTROL Dynamic Media]** > **[!UICONTROL Conjuntos]** no painel **[!UICONTROL Filtros]**. Ele filtra e exibe ativos como conjuntos de imagens, carrosséis, conjuntos de mídia mista e conjuntos de rotação.
 
 ### Pesquisa GQL usando valores específicos em campos de metadados {#gql-search}
 
@@ -329,7 +329,7 @@ A funcionalidade de pesquisa pode ter limitações de desempenho nos seguintes c
 * A pesquisa de texto completo é compatível com operadores como `-` e `^`. Para pesquisar essas letras como literais de cadeia de caracteres, coloque a expressão de pesquisa entre aspas duplas. Por exemplo, use `"Notebook - Beauty"` em vez de `Notebook - Beauty`.
 * Se os resultados da pesquisa forem muitos, limite o [escopo da pesquisa](#scope) para zerar os ativos desejados. Funciona melhor quando você tem alguma ideia de como procurar melhor os ativos desejados, por exemplo, tipo de arquivo específico, local específico, metadados específicos e assim por diante.
 
-* **Marcação**: as tags ajudam a categorizar ativos que podem ser navegados e pesquisados com mais eficiência. A marcação ajuda a propagar a taxonomia apropriada para outros usuários e fluxos de trabalho. [!DNL Experience Manager] O oferece métodos para marcar ativos automaticamente usando os serviços artificialmente inteligentes da Adobe Sensei, que melhoram ainda mais a marcação de ativos com uso e treinamento. Ao pesquisar ativos, as tags inteligentes são fatoradas em. Funciona junto com a funcionalidade de pesquisa integrada. Consulte [comportamento de pesquisa](#searchbehavior). Para otimizar a ordem em que os resultados da pesquisa são exibidos, você pode [aumentar a classificação de pesquisa](#searchrank) de alguns ativos selecionados.
+* **Marcação**: as tags ajudam a categorizar ativos que podem ser navegados e pesquisados com mais eficiência. A marcação ajuda a propagar a taxonomia apropriada para outros usuários e workflows. [!DNL Experience Manager] O oferece métodos para marcar ativos automaticamente usando os serviços artificialmente inteligentes da Adobe Sensei, que melhoram ainda mais a marcação de ativos com uso e treinamento. Ao pesquisar ativos, as tags inteligentes são fatoradas em. Funciona junto com a funcionalidade de pesquisa integrada. Consulte [comportamento de pesquisa](#searchbehavior). Para otimizar a ordem em que os resultados da pesquisa são exibidos, você pode [aumentar a classificação de pesquisa](#searchrank) de alguns ativos selecionados.
 
 * **Indexação**: somente metadados e ativos indexados são retornados nos resultados da pesquisa. Para obter melhor cobertura e desempenho, garanta a indexação adequada e siga as práticas recomendadas. Consulte [indexação](#searchindex).
 
@@ -433,7 +433,7 @@ Os predicados são usados para criar facetas. Os administradores podem personali
 
 Você pode pesquisar ativos digitais com base em uma ou mais das seguintes propriedades. Os filtros que se aplicam a algumas dessas propriedades estão disponíveis por padrão e alguns outros filtros podem ser criados de forma personalizada para serem aplicados a outras propriedades.
 
-| Campo Pesquisa | Pesquisar valores de propriedade |
+| Campo de pesquisa | Pesquisar valores de propriedade |
 |-----------------|----------------------------------------------------------------------------------------------------------------------------------------|
 | Tipos MIME | Imagens, Documentos, Multimídia, Arquivos ou Outros. |
 | Última modificação | Hora, dia, semana, mês ou ano. |
@@ -466,7 +466,7 @@ Você pode fazer o seguinte com os ativos pesquisados em [!DNL Experience Manage
 
 ### Classificar resultados da pesquisa {#sort}
 
-Classifique os resultados da pesquisa para descobrir os ativos necessários com mais rapidez. Você pode classificar os resultados da pesquisa na exibição em lista e somente ao selecionar **[[!UICONTROL Arquivos]](#searchui)** do **[!UICONTROL Filtros]** painel. [!DNL Assets]O usa a classificação do lado do servidor para classificar rapidamente todos os ativos (independente da quantidade) em uma pasta ou nos resultados de uma consulta de pesquisa. A classificação do lado do servidor fornece resultados mais rápidos e precisos do que a classificação do lado do cliente.
+Classifique os resultados da pesquisa para descobrir os ativos necessários com mais rapidez. Você pode classificar os resultados da pesquisa na exibição em lista e somente ao selecionar **[[!UICONTROL Arquivos]](#searchui)** do **[!UICONTROL Filtros]** painel. [!DNL Assets] O usa a classificação do lado do servidor para classificar rapidamente todos os ativos (independentemente da quantidade) em uma pasta ou nos resultados de uma consulta de pesquisa. A classificação do lado do servidor fornece resultados mais rápidos e precisos do que a classificação do lado do cliente.
 
 Na exibição em lista, você pode classificar os resultados da pesquisa da mesma maneira que classifica os ativos em qualquer pasta. A classificação funciona nessas colunas — Nome, Título, Status, Dimension, Tamanho, Classificação, Uso, (Data) Criada, (Data) Modificada, (Data) Publicada, Fluxo de trabalho e Com Check-out.
 

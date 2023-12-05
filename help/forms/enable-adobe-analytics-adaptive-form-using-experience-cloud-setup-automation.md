@@ -3,9 +3,9 @@ title: Como habilitar o Adobe Analytics para um Formulário adaptável?
 description: A Automação de configuração do Experience Cloud ajuda a conectar o Adobe Analytics a um Formulário adaptável para rastrear insights sobre as interações e o envolvimento do visitante.
 keywords: Ativar o Adobe Analytics para um formulário adaptável usando a Automação de configuração do Experience Cloud, Ativar o Adobe Analytics no Forms, Adobe Analytics no Adaptive Forms, integração do Forms Analytics, Forms e Adobe Analytics
 exl-id: 0e1aa040-08b4-4c1a-b247-ad6fff410187
-source-git-commit: fa107ee89deb217ada2cfbcccb4602a7a6aff125
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1576'
+source-wordcount: '1555'
 ht-degree: 2%
 
 ---
@@ -93,7 +93,7 @@ Execute as etapas listadas abaixo para ativar e configurar o Adobe Analytics par
 1. Criar um contêiner de configuração para os serviços em nuvem:
    1. Ir para **[!UICONTROL Ferramentas > Geral > Navegador de configuração]**.
    1. Selecione ou crie um Contêiner de configuração e ative a pasta para **[!UICONTROL Configurações da nuvem]**.
-   1. Toque **[!UICONTROL Salvar e fechar]** para salvar a configuração e sair do diálogo.
+   1. Selecionar **[!UICONTROL Salvar e fechar]** para salvar a configuração e sair do diálogo.
 1. Na instância do AEM, acesse **[Forms]** >> **[Forms e Documento]**.
 1. Selecione o **[!UICONTROL Formulário]** >> **[!UICONTROL Propriedades]**, No **[!UICONTROL Contêiner de configuração]**, selecione o container de configuração que você criou ou selecionou na **[!UICONTROL Navegador de configuração]** na Etapa 1.
 1. Selecione o Painel de tarefas no painel esquerdo e clique em **Configurar o Analytics** e **Ativar Adobe Analytics**.

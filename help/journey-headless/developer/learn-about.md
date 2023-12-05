@@ -2,10 +2,10 @@
 title: Saiba mais sobre o desenvolvimento headless do CMS
 description: Nesta parte da Jornada de desenvolvedores headless do AEM, saiba mais sobre a tecnologia headless e por que usá-la.
 exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1636'
-ht-degree: 89%
+source-wordcount: '1626'
+ht-degree: 86%
 
 ---
 
@@ -56,7 +56,7 @@ Os usuários esperam engajamento independentemente da plataforma ou do ponto de 
 
 A interface de qualquer sistema é geralmente o renderizador de saída, normalmente na forma de uma GUI ou outra saída gráfica.
 
-Um servidor headless, por exemplo, provavelmente está em um rack em uma sala de servidor em algum lugar e não tem monitor conectado. Para acessá-lo, você precisa se conectar remotamente a ele. Nesse caso, o monitor é a interface, à medida que resolve a renderização da saída do servidor. Como consumidor do serviço, forneça sua própria interface (o monitor) ao se conectar remotamente a ele.
+Um servidor headless, por exemplo, provavelmente está em um rack em uma sala de servidores em algum lugar e não tem nenhum monitor conectado. Para acessá-lo, você precisa se conectar remotamente a ele. Nesse caso, o monitor é a interface, à medida que resolve a renderização da saída do servidor. Como consumidor do serviço, forneça sua própria interface (o monitor) ao se conectar remotamente a ele.
 
 Quando falamos de um CMS headless, o CMS gerencia o conteúdo e continua a entregá-lo aos consumidores. No entanto, apenas entregando o **conteúdo** de forma padronizada, um CMS headless omite a renderização final de saída, deixando a **apresentação** do conteúdo para o serviço de consumo.
 
@@ -68,7 +68,7 @@ Omitir a interface simplifica o CMS ao remover a complexidade. Isso também alte
 
 ## Dissociação {#decoupling}
 
-A entrega headless é possível ao expor um conjunto de APIs (Application Programming Interfaces, interfaces de programação de aplicativos) robustas e flexíveis que todas as suas experiências podem aproveitar. A API atua como um idioma comum entre os serviços, vinculando-os no nível de conteúdo por meio de uma entrega de conteúdo padronizada, mas proporcionando flexibilidade para implementar suas próprias soluções.
+A entrega headless é possível expondo um conjunto de interfaces de programação de aplicativo (APIs) robustas e flexíveis que todas as suas experiências podem selecionar. A API atua como um idioma comum entre os serviços, vinculando-os no nível de conteúdo por meio de uma entrega de conteúdo padronizada, mas proporcionando flexibilidade para implementar suas próprias soluções.
 
 Headless é um exemplo de dissociação do conteúdo de sua apresentação. Ou, em um sentido mais genérico, significa dissociar o front-end do back-end na sua pilha de serviço. Em uma configuração headless, o sistema de apresentação (a interface) é dissociado do gerenciamento de conteúdo (o tail). Os dois só interagem por meio de chamadas de API.
 

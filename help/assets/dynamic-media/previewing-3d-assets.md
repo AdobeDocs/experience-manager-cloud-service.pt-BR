@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: 3D Assets
 role: User
 exl-id: e873bd25-f841-4063-824f-7e48f40bb678
-source-git-commit: d00e1f49438ad36339a09f8914496faeda3d4de6
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '631'
-ht-degree: 6%
+source-wordcount: '621'
+ht-degree: 5%
 
 ---
 
@@ -90,7 +90,7 @@ Consulte [Formatos compatíveis com a visualização 3D](#supported-3d-previewin
    | **Girar a câmera** | Gire a visualização em torno da cena 3D e dos objetos. | Clique com o botão esquerdo + arraste. | Pressione com um dedo + arraste. |
    | **Deslocar a câmera** | Desloque sua exibição para a esquerda, direita, para cima ou para baixo. | Clique com o botão direito + arraste. | Pressione com dois dedos + arraste. |
    | **Aplicar zoom à sua câmera** | Mova para dentro e para fora das áreas da cena 3D. | Roda de rolagem. | Pinça de dois dedos. |
-   | **Recentralize sua câmera** | Recentralize sua câmera em um ponto sobre um objeto na cena 3D. | Clique duas vezes em. | Toque duas vezes. |
+   | **Recentralize sua câmera** | Recentralize sua câmera em um ponto sobre um objeto na cena 3D. | Clique duas vezes em. | Selecione duas vezes. |
    | **Redefinir** | Próximo ao canto inferior direito da página, selecione o ícone Redefinir para restaurar o ponto de destino de exibição para o centro do ativo 3D. A redefinição também move a câmera para mais perto ou mais longe, para mostrar o ativo em sua totalidade e em um tamanho de visualização razoável. |   |   |
    | **Modo de tela cheia** | Para entrar no modo de tela cheia, no canto inferior direito da página, selecione o ícone Tela cheia. |   |   |
 

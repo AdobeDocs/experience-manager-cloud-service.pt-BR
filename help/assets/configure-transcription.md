@@ -9,10 +9,10 @@ topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1689'
-ht-degree: 87%
+source-wordcount: '1663'
+ht-degree: 86%
 
 ---
 
@@ -83,7 +83,7 @@ Vamos configurar a transcrição neste perfil de vídeo. Navegue até a **[!UICO
 
 Depois que o perfil de processamento for configurado para transcrição de arquivos de áudio e vídeo, você poderá aplicar esse perfil de processamento às pastas usando um dos seguintes métodos:
 
-* Selecione uma definição de perfil de processamento em **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Perfis de processamento]** e use a ação **[!UICONTROL Aplicar perfil à(s) pasta(s)]**. O navegador de conteúdo permite navegar até uma pasta específica, selecionar uma pasta e confirmar a aplicação do perfil.
+* Selecione uma definição de perfil de processamento no **[!UICONTROL Ferramentas]** > **[!UICONTROL Assets]** > **[!UICONTROL Processamento de perfis]** e use **[!UICONTROL Aplicar perfil às pastas]** ação. O navegador de conteúdo permite navegar até uma pasta específica, selecionar uma pasta e confirmar a aplicação do perfil.
 * Selecione uma pasta na interface do Assets e clique na ação **[!UICONTROL Propriedades]** para abrir as propriedades da pasta. Clique na guia **[!UICONTROL Processamento de ativos]** e selecione o perfil de processamento apropriado para a pasta na lista **[!UICONTROL Perfil de processamento]**. Para salvar as alterações, clique em **[!UICONTROL Salvar e fechar]**.
 
   ![configure-transcription-service](assets/video-processing-profile3.png)

@@ -3,10 +3,10 @@ title: Consultas persistentes de GraphQL
 description: Saiba como criar consultas persistentes de GraphQL no Adobe Experience Manager as a Cloud Service para otimizar o desempenho. As consultas persistentes podem ser solicitadas por aplicativos clientes usando o método GET do HTTP e a resposta pode ser armazenada em cache nas camadas do Dispatcher e do CDN, melhorando, em última análise, o desempenho dos aplicativos clientes.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1676'
-ht-degree: 98%
+source-wordcount: '1656'
+ht-degree: 97%
 
 ---
 
@@ -257,7 +257,7 @@ Esta consulta pode ser persistida em um caminho `wknd/adventures-by-activity`. P
 <AEM_HOST>/graphql/execute.json/wknd/adventures-by-activity%3Bactivity%3DCamping
 ```
 
-Observe que `%3B` é a codificação UTF-8 para `;` e `%3D` é a codificação para `=`. As variáveis de consulta e quaisquer caracteres especiais devem ser [corretamente codificados](#encoding-query-url) para que a consulta persistente seja executada.
+A codificação UTF-8 `%3B` é para `;` e `%3D` é a codificação de `=`. As variáveis de consulta e quaisquer caracteres especiais devem ser [corretamente codificados](#encoding-query-url) para que a consulta persistente seja executada.
 
 ## Armazenamento em cache de consultas persistentes {#caching-persisted-queries}
 
@@ -443,8 +443,8 @@ Para criar um pacote:
 1. Em **Geral** na caixa de diálogo Definição do pacote, insira um **Nome** como “wknd-persistent-queries”.
 1. Insira um número de versão como “1.0”.
 1. Em **Filtros**, adicione um novo **Filtro**. Use o Localizador de caminhos para selecionar a pasta `persistentQueries`, abaixo da configuração. Por exemplo, para a configuração `wknd`, o caminho completo será `/conf/wknd/settings/graphql/persistentQueries`.
-1. Toque em **Salvar** para salvar a nova definição de pacote e fechar a caixa de diálogo.
-1. Toque no **Build** na definição de pacote criada.
+1. Selecionar **Salvar** para salvar a nova definição de pacote e fechar a caixa de diálogo.
+1. Selecione o **Build** na definição de pacote criada.
 
 Depois que o pacote tiver sido criado, você poderá:
 

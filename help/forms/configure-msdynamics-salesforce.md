@@ -2,9 +2,9 @@
 title: Como configurar modelos de dados de formulário prontos para uso do Microsoft Dynamics 365 e Salesforce para o Adaptive Forms?
 description: Saiba como integrar o Microsoft Dynamics 365 e o Salesforce ao Adaptive Forms.
 exl-id: 2a43b2db-2dfb-4c79-88be-ea770b44dac1
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '952'
 ht-degree: 2%
 
 ---
@@ -48,20 +48,20 @@ Antes de configurar o [!DNL Salesforce] serviços em nuvem, execute as seguintes
 Execute as seguintes etapas para configurar o [!DNL Salesforce] serviços na nuvem:
 
 1. Ligado [!DNL AEM Forms] instância do autor, navegue até **[!UICONTROL Ferramentas]** ![martelo](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL Fontes de dados]**. A lista de pastas de wrapper disponíveis inclui uma pasta com o título especificado para `DappTitle`  enquanto [geração do projeto do arquétipo AEM](setup-local-development-environment.md#forms-cloud-service-local-development-environment).
-1. Toque no nome da pasta e selecione **[!UICONTROL Configuração de nuvem do Salesforce]** e toque em **[!UICONTROL Propriedades]**.
+1. Selecione o nome da pasta e **[!UICONTROL Configuração de nuvem do Salesforce]** e selecione **[!UICONTROL Propriedades]**.
 1. No **[!UICONTROL Configurações de autenticação]** guia:
    1. Especifique a [!DNL Salesforce] URL do domínio no **[!UICONTROL Host]** campo. Por exemplo, [Nome do domínio].my.salesforce.com.
    1. Especifique a ID do cliente (chamada de Chave do consumidor) e o segredo do cliente (chamada de Segredo do consumidor) para o aplicativo conectado.
    1. Especificar **full offline_access** (`full` e `offine_access` valores separados por um espaço) na variável **[!UICONTROL Escopo da autorização]** campo.
-   1. Toque **[!UICONTROL Conectar-se ao OAuth]**. Você será redirecionado para [!DNL Microsoft® Dynamics] página de logon.
+   1. Selecionar **[!UICONTROL Conectar-se ao OAuth]**. Você será redirecionado para [!DNL Microsoft® Dynamics] página de logon.
    1. Faça logon com o [!DNL Salesforce] e aceite para permitir que a configuração do serviço de nuvem se conecte a [!DNL Salesforce] serviço. Se a conexão for bem-sucedida, você será redirecionado para a [!DNL Salesforce] página de configuração do cloud service, que exibe uma mensagem de sucesso.
-1. Toque **[!UICONTROL Salvar e fechar]** para concluir a configuração.
+1. Selecionar **[!UICONTROL Salvar e fechar]** para concluir a configuração.
 
 ### Acesso pronto para uso [!DNL Salesforce] Modelo de dados do formulário
 
 A [!DNL Salesforce] O modelo de dados de formulário está disponível imediatamente na [!DNL AEM Forms] Servidor depois que você [configurar um projeto de desenvolvimento para o Forms com base no arquétipo Experience Manager](setup-local-development-environment.md#forms-cloud-service-local-development-environment).
 
-Para acessar o modelo de dados do formulário, navegue até **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Integrações de dados]**. A lista de pastas disponíveis inclui uma pasta com o título especificado para `DappTitle`  enquanto [geração do projeto do arquétipo AEM](setup-local-development-environment.md#forms-cloud-service-local-development-environment). Toque no nome da pasta e selecione o **[!UICONTROL Modelo de dados do Salesforce]** e toque no botão Editar ![Editar](assets/edit.png) ícone para exibir o modelo de dados do formulário.
+Para acessar o modelo de dados do formulário, navegue até **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Integrações de dados]**. A lista de pastas disponíveis inclui uma pasta com o título especificado para `DappTitle`  enquanto [geração do projeto do arquétipo AEM](setup-local-development-environment.md#forms-cloud-service-local-development-environment). Selecione o nome da pasta e selecione o **[!UICONTROL Modelo de dados do Salesforce]** e selecione a caixa de diálogo Editar ![Editar](assets/edit.png) ícone para exibir o modelo de dados do formulário.
 
 Após configurar o [[!DNL Salesforce] Serviço de configuração na nuvem](#configure-salesforce-cloud-service), é possível integrar formulários adaptáveis com o pronto para uso [!DNL Salesforce] Modelo de dados.
 
@@ -82,7 +82,7 @@ Antes de configurar o [!DNL Microsoft® Dynamics 365] serviços em nuvem, certif
 Execute as seguintes etapas para configurar o [!DNL Microsoft® Dynamics 365] serviços na nuvem:
 
 1. Ligado [!DNL AEM Forms] instância do autor, navegue até **[!UICONTROL Ferramentas]** ![martelo](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL Fontes de dados]**. A lista de pastas de wrapper disponíveis inclui uma pasta com o título especificado para `DappTitle`  enquanto [geração do projeto do arquétipo AEM](setup-local-development-environment.md#forms-cloud-service-local-development-environment).
-1. Toque no nome da pasta e selecione **[!UICONTROL Configuração de nuvem do Microsoft® Dynamics 365]** e toque em **[!UICONTROL Propriedades]**.
+1. Selecione o nome da pasta e **[!UICONTROL Configuração de nuvem do Microsoft® Dynamics 365]** e selecione **[!UICONTROL Propriedades]**.
 1. No **[!UICONTROL Configurações de autenticação]** guia:
    1. Insira o valor para o **[!UICONTROL Raiz do serviço]** campo. Acesse a instância do Dynamics e navegue até [Recursos do desenvolvedor](https://docs.microsoft.com/en-us/powerapps/developer/data-platform/view-download-developer-resources) para exibir o valor do campo Raiz do Serviço. Por exemplo, `https://<tenant-name>.dynamics.com/api/data/v9.1/`
    1. Especifique a ID do cliente (referida como ID do aplicativo) e o segredo do cliente para o aplicativo conectado.
@@ -91,13 +91,13 @@ Execute as seguintes etapas para configurar o [!DNL Microsoft® Dynamics 365] se
 
    1. Especificar `openid` no **[!UICONTROL Escopo da autorização]** campo para processo de autorização em [!DNL Microsoft® Dynamics 365].
    1. Faça logon com o [!DNL Microsoft® Dynamics 365] e aceite para permitir que a configuração do serviço de nuvem se conecte a [!DNL Microsoft® Dynamics 365] serviço. Se a conexão for bem-sucedida, você será redirecionado para a [!DNL Microsoft® Dynamics 365] página de configuração do cloud service, que exibe uma mensagem de sucesso.
-1. Toque **[!UICONTROL Salvar e fechar]** para concluir a configuração.
+1. Selecionar **[!UICONTROL Salvar e fechar]** para concluir a configuração.
 
 ### Acesso pronto para uso [!DNL Microsoft® Dynamics 365] Modelo de dados do formulário
 
 A [!DNL Microsoft® Dynamics 365] O modelo de dados de formulário está disponível imediatamente na [!DNL AEM Forms] Servidor depois que você [configurar um projeto de desenvolvimento para o Forms com base no arquétipo Experience Manager](setup-local-development-environment.md##forms-cloud-service-local-development-environment).
 
-Para acessar o modelo de dados do formulário, navegue até **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Integrações de dados]**. A lista de pastas disponíveis inclui uma pasta com o título especificado para `DappTitle`  enquanto [geração do projeto do arquétipo AEM](setup-local-development-environment.md#forms-cloud-service-local-development-environment). Toque no nome da pasta e selecione o **[!UICONTROL Modelo de dados do Microsoft® Dynamics 365]** e toque no botão Editar ![Editar](assets/edit.png) ícone para exibir o modelo de dados do formulário.
+Para acessar o modelo de dados do formulário, navegue até **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Integrações de dados]**. A lista de pastas disponíveis inclui uma pasta com o título especificado para `DappTitle`  enquanto [geração do projeto do arquétipo AEM](setup-local-development-environment.md#forms-cloud-service-local-development-environment). Selecione o nome da pasta e selecione o **[!UICONTROL Modelo de dados do Microsoft® Dynamics 365]** e selecione a caixa de diálogo Editar ![Editar](assets/edit.png) ícone para exibir o modelo de dados do formulário.
 
 Após configurar o [[!DNL Microsoft® Dynamics 365] Serviço de configuração na nuvem](#configure-dynamics-cloud-service), é possível integrar formulários adaptáveis com o pronto para uso [!DNL Microsoft® Dynamics 365] Modelo de dados.
 

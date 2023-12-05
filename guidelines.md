@@ -1,8 +1,8 @@
 ---
-source-git-commit: 8d8e5ba548c13d3d908a549f52a8b91946b35361
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 56%
+source-wordcount: '739'
+ht-degree: 51%
 
 ---
 # Diretrizes para colaboração na documentação do Adobe Experience Manager
@@ -79,7 +79,7 @@ Lembre-se de que os leitores da documentação do AEM estão espalhados ao redor
 
 As capturas de tela devem ser usadas com critério e somente quando uma descrição textual for insuficiente.
 
-Marcadores ou outras anotações em capturas de tela (como quadros vermelhos, setas ou texto) não devem ser usados. Dessa forma, as capturas de tela são mais fáceis de reutilizar ou replicar em versões localizadas da documentação.
+Não use marcadores ou outras anotações em capturas de tela (como quadros vermelhos, setas ou texto). Dessa forma, as capturas de tela são mais fáceis de reutilizar ou replicar em versões localizadas da documentação.
 
 ### Referências específicas à versão
 
@@ -89,4 +89,4 @@ Evite referências diretas a uma versão específica em todo o conteúdo da docu
 
 O produto sempre deve ser chamado pelo nome completo **Adobe Experience Manager** pela primeira vez num artigo e pode, em seguida, ser referido como **AEM**.
 
-Não se deve usar Day, Day Software, CQ e CRX, exceto quando for inevitável, como em nomes de classe ou em referência ao histórico do AEM.
+Não use Day, Day Software, CQ e CRX, exceto quando inevitável, como em nomes de classe ou em referência ao histórico do AEM.

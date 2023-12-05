@@ -1,15 +1,15 @@
 ---
-title: Introdução a SPAs no AEM usando o Angular
+title: Introdução ao SPA no AEM usando o Angular
 description: Este artigo apresenta uma amostra de aplicativo SPA, explica como ele é montado e permite que você comece a usar seu próprio SPA rapidamente usando a estrutura do Angular.
 exl-id: 8013ac2c-d1a7-4940-bb65-15e3ed7652d6
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 12%
+source-wordcount: '981'
+ht-degree: 6%
 
 ---
 
-# Introdução a SPAs no AEM usando o Angular {#getting-started-with-spas-in-aem-using-angular}
+# Introdução ao SPA no AEM usando o Angular {#getting-started-with-spas-in-aem-using-angular}
 
 Aplicativos de página única (SPAs) podem oferecer experiências interessantes para usuários de sites. Os desenvolvedores desejam criar sites usando estruturas SPA, e os autores desejam editar o conteúdo no AEM para um site criado usando estruturas SPA.
 
@@ -88,7 +88,7 @@ module.exports = {
 };
 ```
 
-### Criando {#building}
+### Criação {#building}
 
 Criar realmente os usos do aplicativo [Webpack](https://webpack.js.org/) para tradução, além do aem-clientlib-generator para criação automática da biblioteca do cliente. Portanto, o comando build será semelhante a:
 
@@ -272,7 +272,7 @@ Finalmente, a imagem pode ser renderizada em `image.component.html`.
 
 ## Próximas etapas {#next-steps}
 
-* O artigo [Introdução aos SPAs no AEM usando o React](getting-started-react.md) mostra como um SPA básico é desenvolvido para funcionar com o editor de SPA no AEM usando o React.
+* [Introdução ao SPA no AEM usando o React](getting-started-react.md) mostra como um SPA básico é construído para funcionar com o editor SPA no AEM usando o React.
 * A [Visão geral do editor de SPA](editor-overview.md) aborda em detalhes o modelo de comunicação do AEM e do SPA.
 * [Projeto SPA WKND](wknd-tutorial.md) O é um tutorial passo a passo para a implementação de um projeto simples de SPA no AEM.
 * [Modelo dinâmico para mapeamento de componentes para SPA](model-to-component-mapping.md) SPA explica o modelo dinâmico para o mapeamento de componentes e como ele funciona dentro do AEM.

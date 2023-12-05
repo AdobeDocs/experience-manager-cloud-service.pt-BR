@@ -2,7 +2,7 @@
 title: Gerenciar páginas e modelos do catálogo de produtos
 description: Saiba como gerenciar páginas e modelos do catálogo de produtos
 exl-id: 0d795d85-c865-40d5-941e-e02ee96fdd11
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 2%
@@ -89,7 +89,7 @@ O modelo pode ser visualizado com qualquer categoria/produto. Abertura **Informa
 
 ![criar modelo ](assets/create-template-picker.png)
 
-Agora temos que atribuir esse template à categoria específica. Abra as propriedades na **Informações da página** e alterne para a guia commerce. Clique no ícone de pasta para selecionar a **Comprar A Aparência** categoria do seletor de categorias. É possível atribuir várias categorias a um modelo e também incluir subcategorias ativando a caixa de seleção.
+Agora é necessário atribuir esse template à categoria específica. Abra as propriedades na **Informações da página** e alterne para a guia commerce. Clique no ícone de pasta para selecionar a **Comprar A Aparência** categoria do seletor de categorias. É possível atribuir várias categorias a um modelo e também incluir subcategorias ativando a caixa de seleção.
 
 ![criar associação de modelo](assets/create-template-associate.png)
 

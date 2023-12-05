@@ -2,9 +2,9 @@
 title: Permissões personalizadas
 description: Saiba como você pode usar permissões personalizadas para criar perfis de permissão personalizados com permissões configuráveis para restringir o acesso a programas, pipelines e ambientes para usuários do Cloud Managers.
 exl-id: 167da985-7f19-45b3-90a3-884817907da2
-source-git-commit: be38ca5bf79d401fc12c1422c270a2ee84bbbad2
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1532'
+source-wordcount: '1525'
 ht-degree: 38%
 
 ---
@@ -40,7 +40,7 @@ Para criar e usar suas próprias permissões personalizadas, são necessárias t
 1. [Atribua permissões personalizadas ao perfil do produto.](#assign-permissions)
 1. [Atribuir usuários ao perfil de produto.](#assign-users)
 
-Esta seção detalha essas etapas. Talvez seja útil consultar as sessões [Termos](#terms) e [Permissões configuráveis](#configurable-permissions) ao criar permissões personalizadas.
+Esta seção detalha essas etapas. Talvez seja útil ver [Termos](#terms) e [Permissões configuráveis](#configurable-permissions) ao criar suas próprias permissões personalizadas.
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ Esta seção detalha essas etapas. Talvez seja útil consultar as sessões [Term
 
 Primeiro, crie um perfil de produto, antes de atribuir permissões personalizadas.
 
-1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
+1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 
 1. Na página de aterrissagem do Cloud Manager, selecione a **Gerenciar acesso** botão.
 
@@ -127,7 +127,7 @@ As seguintes permissões estão disponíveis para criar perfis personalizados.
 | Gerenciamento de variáveis de ambiente | Permitir que os usuários criem/editem/excluam configurações de ambiente |
 | Criação de restauração de ambiente | Permitir que os usuários criem restauração de ambiente |
 | Redefinição do ambiente de desenvolvimento rápido | Permitir que os usuários redefinam o ambiente de desenvolvimento rápido |
-| Gerenciamento de cópia de conteúdo | Permitir que os usuários gerenciem operações de cópia de conteúdo |
+| Gerenciamento de cópias de conteúdo | Permitir que usuários gerenciem operações de cópia do conteúdo |
 | Criação de pipeline | Permitir que os usuários criem pipelines |
 | Exclusão de pipeline | Permitir que usuários excluam pipelines |
 | Edição de pipeline | Permitir que usuários editem pipelines |
@@ -137,10 +137,10 @@ As seguintes permissões estão disponíveis para criar perfis personalizados.
 | Ignorar e rejeitar falhas de métrica importantes | Permitir que usuários ignorem ou rejeitem falhas de métrica importantes |
 | Programação de implantações de produção | Permitir que usuários programem uma etapa de implantação de produção |
 | Acesso às informações do repositório | Permitir que usuários acessem as informações do repositório e gerem a senha de acesso |
-| Criação de repositório | Permitir que os usuários criem repositórios Git |
-| Exclusão de repositório | Permitir que os usuários excluam repositórios Git |
-| Edição de repositório | Permitir que os usuários editem repositórios Git |
-| Gerar código do repositório | Permitir que os usuários gerem projetos a partir do arquétipo |
+| Criar repositório | Permitir que os usuários criem repositórios Git |
+| Exclusão de repositório | Permitir que usuários excluam repositórios Git |
+| Edição de repositório | Permitir que usuários editem repositórios Git |
+| Geração de códigos do repositório | Permitir que os usuários gerem projetos a partir do arquétipo |
 | Gerenciar nome de domínio | Permitir que os usuários criem/editem/excluam nomes de domínio |
 | Gerenciar Inclui na lista de permissões IP | Permitir que os usuários criem/editem/excluam a vinculação de incluir na lista de permissões inclui na lista de permissões de IP e de IP |
 | Gerenciamento de infraestrutura de rede | Permitir que os usuários criem/editem/excluam a infraestrutura de rede |
@@ -166,7 +166,7 @@ Os termos a seguir são usados na criação e no gerenciamento de permissões pe
 |---|---|
 | Permissões predefinidas | Funções predefinidas como **Proprietário da empresa** e **Gerente de implantação** para controlar vários recursos do Cloud Manager. Para obter detalhes sobre funções predefinidas, consulte [Equipe as a Cloud Service e perfis de produto do AEM.](/help/onboarding/aem-cs-team-product-profiles.md) |
 | Permissões personalizadas | Os recursos do Cloud Manager permitem que os usuários criem perfis de permissão para definir funções que controlem os recursos compatíveis do Cloud Manager |
-| Perfil de produto | Criado no Admin Console para gerenciar permissões configuráveis aplicáveis a usuários que fazem parte do perfil de permissão |
+| Perfil do produto | Criado no Admin Console para gerenciar permissões configuráveis aplicáveis a usuários que fazem parte do perfil de permissão |
 | Permissão configurável | Permissões do Cloud Manager que podem ser configuradas no perfil de permissão |
 | Item de permissão | Um programa, ambiente ou recurso de pipeline no qual uma permissão pode ser aplicada |
 

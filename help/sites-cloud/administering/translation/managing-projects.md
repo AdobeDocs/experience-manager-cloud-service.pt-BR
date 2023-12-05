@@ -4,10 +4,10 @@ description: Saiba como criar e gerenciar projetos de tradução automática e h
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3971'
-ht-degree: 86%
+source-wordcount: '3960'
+ht-degree: 85%
 
 ---
 
@@ -471,7 +471,7 @@ Embora o AEM ofereça várias soluções e interfaces de tradução, também é 
 
 ### Importar um trabalho de tradução {#importing-a-translation-job}
 
-Você pode importar conteúdo traduzido para o AEM, por exemplo, quando seu provedor de tradução o envia para você porque não está integrado ao AEM por meio de um conector.
+Você pode importar conteúdo traduzido para AEM, por exemplo, quando seu provedor de tradução o envia para você porque não está integrado ao AEM por meio de um conector.
 
 1. No menu suspenso do bloco do trabalho de tradução, selecione **Importar**.
 1. Use a caixa de diálogo do navegador da web para selecionar o arquivo a ser importado.

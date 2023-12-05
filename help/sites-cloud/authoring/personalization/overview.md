@@ -2,10 +2,10 @@
 title: Personalização e direcionamento de conteúdo
 description: Saiba como criar conteúdo personalizado e direcionado com o AEM
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '1054'
-ht-degree: 91%
+ht-degree: 89%
 
 ---
 
@@ -88,7 +88,7 @@ Você pode [Criar conteúdo direcionado](/help/sites-cloud/authoring/personaliza
 
 Um conjunto agrupado de componentes que compõem uma experiência.
 
-[Fragmentos de experiência](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) são feitos de conteúdo e informações (estilo etc.) para criar uma experiência; eles podem ser usados diretamente durante a criação da página. Eles podem ser considerados um subconjunto de uma página do AEM. Eles permitem que autores de conteúdo reutilizem conteúdo entre vários canais, incluindo páginas do Sites e sistemas de terceiros.
+[Fragmentos de experiência](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) são feitos de conteúdo e informações (estilo e assim por diante) para criar uma experiência; eles podem ser usados diretamente durante a criação da página. Eles podem ser considerados um subconjunto de uma página do AEM. Eles permitem que autores de conteúdo reutilizem conteúdo entre vários canais, incluindo páginas do Sites e sistemas de terceiros.
 
 Para um exemplo de personalização, um Título, Imagem, Descrição e Botão de frases de chamariz podem ser combinados para formar uma experiência de teaser. O uso de Fragmentos de experiência é uma parte essencial do uso da personalização do Adobe Target.
 

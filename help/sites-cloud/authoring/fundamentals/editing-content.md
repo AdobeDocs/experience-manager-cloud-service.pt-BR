@@ -2,10 +2,10 @@
 title: Editar conteúdo da página
 description: Depois que a página é criada, é possível editar o conteúdo para fazer as atualizações necessárias
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2973'
-ht-degree: 93%
+source-wordcount: '2974'
+ht-degree: 92%
 
 ---
 
@@ -322,7 +322,7 @@ Por exemplo, o componente de **Texto:**
 
 Para mover um componente de parágrafo:
 
-1. Selecione o parágrafo a ser movido com o toque e segure ou com o clique e segure.
+1. Selecione o parágrafo a ser movido com select-and-hold ou click-and-hold.
 1. Arraste o parágrafo para o novo local. AEM indicará onde o parágrafo pode ser colocado. Solte-o no local desejado.
 
    ![Mover um componente](/help/sites-cloud/authoring/assets/editing-moving-component.png)
@@ -541,5 +541,5 @@ Por exemplo, você pode:
 >
 >* Permissões especiais são necessárias para desfazer e refazer as alterações nos arquivos e imagens.
 >* O histórico de alterações em arquivos e imagens dura no mínimo dez horas. Além desse período, no entanto, a ação de desfazer as alterações não é garantida. Seu administrador pode alterar o tempo padrão de dez horas.
->* O administrador do sistema pode configurar vários aspectos dos recursos desfazer/refazer de acordo com os requisitos de sua ocorrência.
+>* O administrador do sistema pode configurar vários aspectos dos recursos Desfazer/Refazer de acordo com os requisitos da sua instância.
 <!--* Your system administrator can [configure various aspects of the Undo/Redo features](/help/sites-administering/config-undo.md) according to the requirements for your instance.-->

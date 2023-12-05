@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Reports,Asset Management
 role: Admin,User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '940'
-ht-degree: 9%
+source-wordcount: '935'
+ht-degree: 8%
 
 ---
 
@@ -33,12 +33,12 @@ Quando um relatório é gerado, você é notificado por meio de <!-- through an 
 
 [!DNL Experience Manager Assets] O gera os seguintes relatórios padrão para você:
 
-* Upload
+* Carregar
 * Download
 * Expiração
 * Modificação
 * Publicação
-* [!DNL Brand Portal] publicação
+* [!DNL Brand Portal] publicar
 * Uso do disco
 * Arquivos
 * Compartilhamento de link
@@ -88,7 +88,7 @@ Quando um relatório é gerado, você é notificado por meio de <!-- through an 
 
    ![Página de detalhes do relatório Arquivos](assets/files_report.png)
 
-   O relatório **[!UICONTROL Compartilhamento de links]** exibe URLs de ativos que são compartilhados com usuários externos a partir do [!DNL Assets]. <!-- It includes email ids of the user who shared the assets, emails ids of users with which the assets are shared, share date, and expiration date for the link. --> As colunas não são personalizáveis.
+   A variável **[!UICONTROL Compartilhamento de link]** O relatório de exibe URLs de ativos que são compartilhados com usuários externos a partir do [!DNL Assets]. <!-- It includes email ids of the user who shared the assets, emails ids of users with which the assets are shared, share date, and expiration date for the link. --> As colunas não são personalizáveis.
 
    A variável **[!UICONTROL Compartilhamento de link]** relatório, não inclui opções para subpastas e representações porque apenas publica os URLs compartilhados que aparecem em `/var/dam/share`.
 
@@ -105,7 +105,7 @@ Quando um relatório é gerado, você é notificado por meio de <!-- through an 
    ![Selecionar ou cancelar a seleção de colunas do relatório](assets/custom_columns.png)
 
 1. Clique em **[!UICONTROL Criar]** na barra de ferramentas. Uma mensagem notifica que a geração de relatório foi iniciada.
-1. No [!UICONTROL Relatórios de ativos] página, o status de geração de relatório é baseado no estado atual do trabalho de relatório, por exemplo [!UICONTROL Sucesso], [!UICONTROL Failed], [!UICONTROL Em fila]ou [!UICONTROL Agendado]. O mesmo status aparece na caixa de entrada de notificações.Para exibir a página do relatório, clique no link do relatório. Como alternativa, selecione o relatório e clique em **[!UICONTROL Exibir]** na barra de ferramentas.
+1. No [!UICONTROL Relatórios de ativos] página, o status de geração de relatório é baseado no estado atual do trabalho de relatório, por exemplo, [!UICONTROL Sucesso], [!UICONTROL Failed], [!UICONTROL Em fila]ou [!UICONTROL Agendado]. O mesmo status aparece na caixa de entrada de notificações.Para exibir a página do relatório, clique no link do relatório. Como alternativa, selecione o relatório e clique em **[!UICONTROL Exibir]** na barra de ferramentas.
 
    ![Um relatório gerado](assets/report_page.png)
 
@@ -129,11 +129,11 @@ Você pode adicionar colunas personalizadas aos seguintes relatórios para exibi
 * Files
 -->
 
-* Upload
+* Carregar
 * Expiração
 * Modificação
 * Publicação
-* [!DNL Brand Portal] publicação
+* [!DNL Brand Portal] publicar
 * Arquivos
 
 Para adicionar colunas personalizadas a esses relatórios, siga estas etapas:

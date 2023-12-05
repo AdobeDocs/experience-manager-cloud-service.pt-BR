@@ -4,10 +4,10 @@ description: Saiba mais sobre as considerações importantes de segurança ao us
 hidefromtoc: true
 hide: true
 exl-id: d2dfde05-ce02-478e-8697-b939fb8740c3
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '229'
-ht-degree: 100%
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+workflow-type: tm+mt
+source-wordcount: '217'
+ht-degree: 88%
 
 ---
 
@@ -19,7 +19,7 @@ Para permitir operações assimétricas e criptográficas, o AEM armazena certif
 
 ### Características do armazenamento confiável {#truststore-characteristics}
 
-* O armazenamento confiável está localizado abaixo de `/etc/truststore` e consiste em um arquivo de armazenamento de chave Java, a senha do armazenamento de chaves e os metadados do repositório. Observe que a senha e o próprio armazenamento de chaves são criptografados por motivos técnicos, mesmo que os certificados contidos sejam acessíveis a todos por padrão por meio da API
+* O armazenamento confiável está localizado abaixo de `/etc/truststore` e consiste em um arquivo de armazenamento de chave Java, a senha do armazenamento de chaves e os metadados do repositório. Tanto a senha quanto o próprio keystore são criptografados por motivos técnicos, mesmo que os certificados contidos sejam acessíveis a todos por padrão por meio da API
 * Prontos para uso, os certificados são usados somente para suporte HTTPS e SAML e o armazenamento deve ser criado manualmente primeiro
 * Os clientes podem usá-lo em seu próprio código por meio da [API de armazenamento de chaves](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/keystore/KeyStoreService.html#getTrustStore-org.apache.sling.api.resource.ResourceResolver-)
 * O armazenamento confiável pode ser gerenciado por meio da interface em **Ferramentas** - **Segurança** - **Armazenamento confiável** ou acessando *`https://serveraddress:serverport/libs/granite/security/content/truststore.html`*, conforme mostrado abaixo:

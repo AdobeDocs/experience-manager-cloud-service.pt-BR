@@ -7,9 +7,9 @@ topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
 exl-id: e4d8bcb9-ce1f-425e-b35c-d0a79fa771f3
-source-git-commit: 1d0f8bfd955c9315b01e49d8b1924add996b1599
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '2146'
+source-wordcount: '2137'
 ht-degree: 1%
 
 ---
@@ -98,7 +98,7 @@ Além disso, se você selecionou um esquema XML ou modelo de formulário XDP com
 
    * **Modelo de formulário**: Dependendo do modelo de formulário para o Formulário adaptável, esse campo exibe a variável **Esquema XML**, **Modelo de formulário** ou **Nenhum**. É um campo não editável.
 
-   * **Raiz** do modelo de fragmento: aparece somente em Forms adaptativas baseadas em XSD. Ele especifica a raiz do modelo de fragmento. Você pode escolher **/** ou o tipo complexo XSD no menu suspenso. Observe que você só poderá reutilizar o fragmento em outro Formulário adaptável se selecionar o tipo complexo como a raiz do modelo de fragmento.
+   * **Raiz** do modelo de fragmento: aparece somente em Forms adaptativas baseadas em XSD. Ele especifica a raiz do modelo de fragmento. Você pode escolher **/** ou o tipo complexo XSD no menu suspenso. Você só poderá reutilizar o fragmento em outro Formulário adaptável se selecionar o tipo complexo como a raiz do modelo de fragmento.
 Se você escolher **/** como a raiz do modelo de fragmento, a árvore XSD completa da raiz fica visível na guia Modelo de dados do formulário adaptável. Para uma raiz de modelo de fragmento de tipo complexo, somente os descendentes do tipo complexo selecionado são visíveis na guia Modelo de dados do formulário adaptável.
 
    * **XSD Ref**: aparece somente no Adaptive Forms baseado em XSD. Ela exibe a localização do esquema XML.
@@ -228,7 +228,7 @@ Ao criar um Fragmento de formulário adaptável usando um modelo de formulário 
    <td><p>Gera um dicionário para localizar o fragmento selecionado. <!-- For more information, see <a href="lazy-loading-adaptive-forms.md" target="_blank">Localizing Adaptive Forms</a>.<br /> <br /> --> </p> </td>
   </tr>
   <tr>
-   <td><p>Publicar/Desfazer a publicação</p> </td>
+   <td><p>Publicar/Desfazer publicação</p> </td>
    <td><p>Publica/cancela a publicação do fragmento selecionado.<br /> <br /> </p> </td>
   </tr>
   <tr>

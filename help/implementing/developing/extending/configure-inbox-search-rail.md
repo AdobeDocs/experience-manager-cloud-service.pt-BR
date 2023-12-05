@@ -2,9 +2,9 @@
 title: Como configurar filtros de pesquisa para a Caixa de entrada?
 description: Saiba como configurar filtros de pesquisa para itens da Caixa de entrada.
 exl-id: 0e82d7ad-7a82-4d67-8eb8-9af6936652d8
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1000'
+source-wordcount: '1010'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ A seguir estão os tipos de predicado disponíveis para a Caixa de entrada:
 
 1. Navegue até **[!UICONTROL Ferramentas]**, **[!UICONTROL Geral]**, **[!UICONTROL Pesquisar no Forms]**.
 
-1. Selecione o **[!UICONTROL Trilho de pesquisa da caixa de entrada]** configuração e toque em **[!UICONTROL Editar]**.
+1. Selecione o **[!UICONTROL Trilho de pesquisa da caixa de entrada]** e selecione **[!UICONTROL Editar]**.
 1. Incorpore as alterações de configuração do predicado usando **[!UICONTROL Editar Forms de pesquisa]**.
 1. Selecionar **[!UICONTROL Concluído]** para salvar a configuração.
 
@@ -43,7 +43,7 @@ Para excluir uma configuração personalizada:
 
 1. Navegue até **[!UICONTROL Ferramentas]**, **[!UICONTROL Geral]**, **[!UICONTROL Pesquisar no Forms]**.
 
-1. Selecione o **[!UICONTROL Trilho de pesquisa da caixa de entrada]** configuração e toque em **[!UICONTROL Excluir]**.
+1. Selecione o **[!UICONTROL Trilho de pesquisa da caixa de entrada]** e selecione **[!UICONTROL Excluir]**.
 
 ## Configurar predicado de intervalo {#range-predicate}
 
@@ -52,10 +52,10 @@ Você pode filtrar itens da Caixa de entrada para procurar um intervalo numéric
 Para configurar um predicado de intervalo:
 
 1. Abra o [formulário para configuração](#creating-opening-customized-configuration).
-1. Toque no **[!UICONTROL Selecionar predicado]** e arrastar **[!UICONTROL Predicado do intervalo]** ao formulário.
+1. Selecione o **[!UICONTROL Selecionar predicado]** e arrastar **[!UICONTROL Predicado do intervalo]** ao formulário.
 1. No **[!UICONTROL Configurações]** selecione o nome da coluna Caixa de entrada na qual a pesquisa será baseada, **[!UICONTROL Nome da coluna]** campo.
 1. Especifique o rótulo para o filtro na variável **[!UICONTROL Rótulo do filtro]** campo. Selecione o **[!UICONTROL Ativar valores decimais]** caixa de seleção para aceitar valores decimais para números ao definir o intervalo.
-1. Especifique uma descrição opcional para a configuração e toque em **[!UICONTROL Concluído]** para salvá-lo.
+1. Especifique uma descrição opcional para a configuração e selecione **[!UICONTROL Concluído]** para salvá-lo.
 
 As alterações de configuração são refletidas ao abrir a página Filtros. O rótulo do filtro especificado na etapa 4 é exibido como o rótulo com uma opção para definir os valores máximo e mínimo. Ao pressionar a tecla Enter, [!DNL Experience Manager] O aplica os critérios de pesquisa no nome da coluna especificado na etapa 3 e retorna os itens da Caixa de entrada.
 
@@ -70,10 +70,10 @@ Filtre itens da Caixa de entrada para procurar uma sequência de texto em uma co
 Para configurar um predicado de texto:
 
 1. Abra o [formulário para configuração](#creating-opening-customized-configuration).
-1. Toque no **[!UICONTROL Selecionar predicado]** e arrastar **[!UICONTROL Predicado de texto]** ao formulário.
+1. Selecione o **[!UICONTROL Selecionar predicado]** e arrastar **[!UICONTROL Predicado de texto]** ao formulário.
 1. No **[!UICONTROL Configurações]** selecione o nome da coluna Caixa de entrada na qual a pesquisa será baseada, **[!UICONTROL Nome da coluna]** campo.
 1. Especifique o texto que é exibido na caixa de texto Pesquisar como um texto de espaço reservado na **[!UICONTROL Espaço reservado para caixa de texto de pesquisa]** campo.
-1. Especifique uma descrição opcional para a configuração e toque em **[!UICONTROL Concluído]** para salvá-lo.
+1. Especifique uma descrição opcional para a configuração e selecione **[!UICONTROL Concluído]** para salvá-lo.
 
 As alterações de configuração são refletidas ao abrir a página Filtros. Ao pressionar a tecla Enter, [!DNL Experience Manager] aplica o texto de pesquisa especificado na etapa 4 no nome da coluna especificado na etapa 3 e retorna os itens da Caixa de entrada.
 
@@ -84,11 +84,11 @@ Você pode filtrar itens da Caixa de entrada para procurar um intervalo de datas
 Para configurar um Predicado de intervalo de datas:
 
 1. Abra o [formulário para configuração](#creating-opening-customized-configuration).
-1. Toque no **[!UICONTROL Selecionar predicado]** e arrastar **[!UICONTROL Predicado do intervalo de datas]** ao formulário.
+1. Selecione o **[!UICONTROL Selecionar predicado]** e arrastar **[!UICONTROL Predicado do intervalo de datas]** ao formulário.
 1. No **[!UICONTROL Configurações]** selecione o nome da coluna Caixa de entrada na qual a pesquisa será baseada, **[!UICONTROL Nome da coluna]** campo.
 1. Especifique o rótulo para o filtro de intervalo de datas no **[!UICONTROL Rótulo do filtro]** campo.
 1. Especifique os rótulos da data inicial e da data final para o filtro.
-1. Especifique uma descrição opcional para a configuração e toque em **[!UICONTROL Concluído]** para salvá-lo.
+1. Especifique uma descrição opcional para a configuração e selecione **[!UICONTROL Concluído]** para salvá-lo.
 
 As alterações de configuração são refletidas ao abrir a página Filtros. O rótulo do filtro especificado na etapa 4 é exibido como o rótulo do filtro de intervalo de datas, juntamente com os rótulos de data inicial e data final especificados na etapa 5. [!DNL Experience Manager] O aplica os critérios de pesquisa no nome da coluna especificado na etapa 3 e retorna os itens da Caixa de entrada.
 
@@ -99,12 +99,12 @@ Você pode filtrar itens da Caixa de entrada para procurar uma opção personali
 Para configurar um Predicado de opções de coluna personalizada:
 
 1. Abra o [formulário para configuração](#creating-opening-customized-configuration).
-1. Toque no **[!UICONTROL Selecionar predicado]** e arrastar **[!UICONTROL Predicado de opções de coluna personalizada]** ao formulário.
+1. Selecione o **[!UICONTROL Selecionar predicado]** e arrastar **[!UICONTROL Predicado de opções de coluna personalizada]** ao formulário.
 1. No **[!UICONTROL Configurações]** selecione o nome da coluna Caixa de entrada na qual a pesquisa será baseada, **[!UICONTROL Nome da coluna]** campo.
 1. Especifique o rótulo para o filtro de opções de coluna personalizada no **[!UICONTROL Rótulo do filtro]** campo.
 1. Selecione o **[!UICONTROL Seleção única]** para ativar a seleção de apenas uma opção ao aplicar o filtro em uma coluna Caixa de entrada.
 1. No **[!UICONTROL Adicionar opções]** seção:
-   1. Selecionar **[!UICONTROL Manual]** para definir as opções de pesquisa de filtro manualmente. Toque **[!UICONTROL Adicionar opções de filtro]** para definir a primeira opção. Especifique o rótulo para a opção de coluna e o texto do valor da opção a ser pesquisado. Por exemplo, se você deseja pesquisar por **Feminino** como um valor em uma coluna Caixa de entrada, você pode especificar **F** como rótulo para a opção de coluna e adicionar **Feminino** como o texto do valor da opção. Da mesma forma, é possível adicionar mais opções de filtro.
+   1. Selecionar **[!UICONTROL Manual]** para definir as opções de pesquisa de filtro manualmente. Selecionar **[!UICONTROL Adicionar opções de filtro]** para definir a primeira opção. Especifique o rótulo para a opção de coluna e o texto do valor da opção a ser pesquisado. Por exemplo, se você deseja pesquisar por **Feminino** como um valor em uma coluna Caixa de entrada, você pode especificar **F** como rótulo para a opção de coluna e adicionar **Feminino** como o texto do valor da opção. Da mesma forma, é possível adicionar mais opções de filtro.
    1. Selecionar **[!UICONTROL Caminho JSON]** para definir opções usando um caminho de arquivo JSON. Este é um exemplo de arquivo JSON para definir opções de filtro:
 
       ```JSON
@@ -122,7 +122,7 @@ Para configurar um Predicado de opções de coluna personalizada:
         }
       ```
 
-   1. Selecionar **[!UICONTROL Caminho das opções do CRX]** para definir opções usando os caminhos do repositório CRX. Toque **[!UICONTROL Adicionar caminhos de opção]** para adicionar vários caminhos. Veja a seguir um exemplo para definir `Male` e `Female` opções de filtro:
+   1. Selecionar **[!UICONTROL Caminho das opções do CRX]** para definir opções usando os caminhos do repositório CRX. Selecionar **[!UICONTROL Adicionar caminhos de opção]** para adicionar vários caminhos. Veja a seguir um exemplo para definir `Male` e `Female` opções de filtro:
 
       ```JSON
          <gender jcr:primaryType="sling:OrderedFolder">
@@ -137,7 +137,7 @@ Para configurar um Predicado de opções de coluna personalizada:
                     </gender>
       ```
 
-1. Especifique uma descrição opcional para a configuração e toque em **[!UICONTROL Concluído]** para salvá-lo.
+1. Especifique uma descrição opcional para a configuração e selecione **[!UICONTROL Concluído]** para salvá-lo.
 
 As alterações de configuração são refletidas ao abrir a página Filtros. O rótulo do filtro especificado na etapa 4 é exibido como o rótulo do Predicado de opção de coluna personalizada. [!DNL Experience Manager] O aplica os critérios de pesquisa definidos na etapa 6 no nome da coluna especificado na etapa 3 e retorna os itens da Caixa de entrada.
 

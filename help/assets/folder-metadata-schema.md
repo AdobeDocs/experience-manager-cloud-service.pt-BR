@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: c86760ed-169d-40f7-91a4-8aee449b286c
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1069'
-ht-degree: 10%
+source-wordcount: '1059'
+ht-degree: 9%
 
 ---
 
@@ -70,11 +70,11 @@ A variável **[!UICONTROL Formulário de criação]** A guia lista os itens de f
   </tr>
   <tr>
    <td><p>Texto em linha única</p> </td>
-   <td><p> Adiciona uma propriedade de texto em linha única. Ele é armazenado como uma string.</p> </td>
+   <td><p> Adicione uma propriedade de texto de linha única. Ele é armazenado como uma string.</p> </td>
   </tr>
   <tr>
    <td><p>Texto multivalor</p> </td>
-   <td><p> Adiciona uma propriedade de texto multivalor. Ele é armazenado como uma matriz de sequência.</p> </td>
+   <td><p> Adicione uma propriedade de texto de vários valores. Ele é armazenado como uma matriz de sequência.</p> </td>
   </tr>
   <tr>
    <td><p>Número</p> </td>
@@ -90,7 +90,7 @@ A variável **[!UICONTROL Formulário de criação]** A guia lista os itens de f
   </tr>
   <tr>
    <td><p>Tags padrão</p> </td>
-   <td><p> Adicionar uma tag. </p> </td>
+   <td><p> Adicione uma tag. </p> </td>
   </tr>
   <tr>
    <td><p>Campo oculto</p> </td>
@@ -141,7 +141,7 @@ Se você configurar um esquema de metadados para uma pasta, o caminho para o for
 
 1. Selecione o [!DNL Experience Manager] e vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Assets]**> **[!UICONTROL Esquemas de metadados de pasta]**.
 1. Na página Forms do Esquema de Metadados da Pasta, selecione o formulário de esquema que deseja aplicar a uma pasta.
-1. Na barra de ferramentas, selecione **[!UICONTROL Aplicar às pastas]**.
+1. Na barra de ferramentas, selecione **[!UICONTROL Aplicar a pastas]**.
 
 1. Selecione a pasta na qual aplicar o esquema e selecione **[!UICONTROL Aplicar]**. Se um esquema de metadados já estiver aplicado à pasta, uma mensagem de aviso informará que você está prestes a substituir o esquema de metadados existente. Selecionar **[!UICONTROL Substituir]**.
 1. Abra as propriedades de metadados da pasta à qual você aplicou o esquema de metadados.

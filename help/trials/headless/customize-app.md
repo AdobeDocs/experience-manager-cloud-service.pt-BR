@@ -4,10 +4,10 @@ description: Use um aplicativo de exemplo do React para saber como personalizar 
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1019'
-ht-degree: 87%
+source-wordcount: '1017'
+ht-degree: 85%
 
 ---
 
@@ -69,7 +69,7 @@ Agora que você modificou um título no aplicativo, tente alterar uma imagem.
 
 1. A partir da visualização, retorne à guia do navegador do editor de fragmento de conteúdo.
 
-1. Você precisa retornar ao local correto no editor de fragmento de conteúdo. A barra de navegação estrutural no canto superior esquerdo do editor mostra onde você está na hierarquia de conteúdo. Toque ou clique em **Ciclista de montanha no cânion** na navegação estrutural para retornar à essa página.
+1. Você precisa retornar ao local correto no editor de fragmento de conteúdo. A barra de navegação estrutural no canto superior esquerdo do editor mostra onde você está na hierarquia de conteúdo. Selecionar **Mtn Biker no Canyon** na navegação estrutural para retornar a essa página.
 
    ![Navegações estruturais](assets/do-not-localize/swap-image-2.png)
 

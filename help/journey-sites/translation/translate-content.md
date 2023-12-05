@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: b8ab2525-3f15-4844-866c-da47bfc7518c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2529'
-ht-degree: 75%
+source-wordcount: '2526'
+ht-degree: 73%
 
 ---
 
@@ -57,7 +57,7 @@ Para proprietários de conteúdo que também são responsáveis pela tradução,
 
 1. Navegue até **Navegação** > **Sites** e selecione seu projeto.
 1. Localize a raiz do idioma do projeto. Por exemplo, se a raiz do idioma for inglês, `/content/<your-project>/en`.
-   * Observe que antes da primeira tradução, as outras pastas de idioma são espaços reservados vazios. Normalmente, estes são criados pelo arquiteto de conteúdo.
+   * Antes da primeira tradução, verifique se as outras pastas de idioma são espaços reservados vazios. Normalmente, estes são criados pelo arquiteto de conteúdo.
 1. Localize a raiz do idioma do projeto.
 1. Selecione o seletor de painéis e exiba as **Referências** painel.
 1. Selecionar **Cópias de idioma**.
@@ -123,7 +123,7 @@ O projeto é dividido em vários cartões.
 
 * **Resumo** — este cartão mostra as informações básicas do cabeçalho do projeto, incluindo o proprietário, o idioma e o provedor de tradução.
 * **Tarefa de tradução** : esse cartão ou esses cartões apresentam uma visão geral do trabalho de tradução real, incluindo o status, o número de ativos e assim por diante. Geralmente, há uma tarefa por idioma com o código de idioma ISO-2 anexado ao nome da tarefa.
-   * Observe que ao [cria trabalhos de tradução automaticamente,](#automatically-creating) o AEM cria os trabalhos de forma assíncrona e eles podem não aparecer imediatamente no projeto.
+   * Quando [criação automática de trabalhos de tradução,](#automatically-creating) O AEM cria os trabalhos de forma assíncrona e eles podem não aparecer imediatamente no projeto.
 * **Equipe** — este cartão mostra os usuários que estão colaborando neste projeto de tradução. Essa jornada não aborda esse tópico.
 * **Tarefas** — tarefas adicionais associadas à tradução do conteúdo, como itens por fazer ou itens de fluxo de trabalho. Essa jornada não aborda esse tópico.
 

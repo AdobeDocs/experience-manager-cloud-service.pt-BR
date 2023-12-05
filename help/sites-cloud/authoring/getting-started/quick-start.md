@@ -2,10 +2,10 @@
 title: Guia de início rápido para a criação de páginas
 description: Um guia rápido de alto nível para começar a criar conteúdo de página
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1541'
-ht-degree: 84%
+ht-degree: 79%
 
 ---
 
@@ -47,7 +47,7 @@ Antes de começar o guia de início rápido, veja uma pequena coleção de dicas
       * [Modo de visualização](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode)
       * [Exibir como publicado](/help/sites-cloud/authoring/fundamentals/editing-content.md#view-as-published)
 
-* As versões não são iniciadas/criadas pelo editor de página. Agora isso é feito no console **Sites** (por meio da opção **Criar** ou da [Linha do Tempo](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) de um recurso selecionado).
+* As versões não são iniciadas/criadas pelo editor de páginas. Isso agora é feito a partir do **Sites** console (por meio de **Criar** ou [Linha do tempo](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) para um recurso selecionado).
 
 >[!NOTE]
 >
@@ -62,7 +62,7 @@ Há vários aspectos para localizar uma página. Você pode navegar e/ou pesquis
 
 1. Abra o console do **Sites** (usando a opção **Sites** no painel de [Navegação global](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation)) - isso é acionado (menu suspenso) ao selecionar o link do Adobe Experience Manager (parte superior esquerda).
 
-1. Navegue para baixo na árvore, tocando/clicando na página apropriada. A forma como os recursos da página são apresentados depende da exibição usada ([Cartão, Lista ou Coluna](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)):
+1. Navegue para baixo na árvore, tocando/clicando na página apropriada. A forma como os recursos da página são representados depende da exibição usada - [Cartão, Lista ou Coluna](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources):
 
    ![Exibir lista suspensa de seleção](/help/sites-cloud/authoring/assets/views.png)
 
@@ -103,7 +103,7 @@ Como selecionar uma página depende da exibição usada no console:
 
    * Entre no modo de seleção, [selecionando o recurso desejado](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources). A forma como você faz isso depende do dispositivo:
 
-      * Em um dispositivo móvel: toque e segure o cartão
+      * Em um dispositivo móvel: selecione e mantenha o cartão pressionado
       * Em um dispositivo de desktop: use a [ação rápida](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) representada pelo ícone de marca de verificação:
 
    * O cartão será sobreposto com uma marca de verificação para mostrar que a página foi selecionada.
@@ -148,7 +148,7 @@ Para editar sua página:
    * [Editar o conteúdo de um componente existente](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) na página:
 
       * Abra a barra de ferramentas do componente com os botões Selecionar. Use o ícone de **Editar** (lápis) para abrir a caixa de diálogo.
-      * Abra o editor local do componente clicando e segurando ou com um clique duplo e lento. As ações disponíveis serão exibidas (para alguns componentes, será uma seleção limitada).
+      * Abra o editor no local do componente com select-and-hold ou com um clique duplo lento. As ações disponíveis serão exibidas (para alguns componentes, será uma seleção limitada).
       * Para ver todas as ações disponíveis, entre no modo de tela cheia utilizando:
 
         ![Botão de tela cheia](/help/sites-cloud/authoring/assets/full-screen.png)

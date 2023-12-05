@@ -1,18 +1,18 @@
 ---
-title: Perfis de imagem do Dynamic Media
+title: Perfis de imagem Dynamic Media
 description: Saiba como criar Perfis de imagem do Dynamic Media que contêm configurações para Tirar nitidez da máscara e Recorte inteligente, Amostra inteligente ou ambos. Em seguida, aplique o perfil a uma pasta de ativos de imagem.
 contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3528'
-ht-degree: 7%
+source-wordcount: '3555'
+ht-degree: 5%
 
 ---
 
-# Perfis de imagem do Dynamic Media {#image-profiles}
+# Perfis de imagem Dynamic Media {#image-profiles}
 
 Ao fazer upload de imagens, você pode cortar automaticamente a imagem após o upload aplicando um Perfil de imagem à pasta.
 
@@ -42,7 +42,7 @@ Entrada **[!UICONTROL Tirar nitidez da máscara]**, você tem as seguintes opç�
   </tr>
   <tr>
    <td>Raio</td>
-   <td>Determina o número de pixels em torno dos pixels de borda que afetam a nitidez. Para imagens de alta resolução, insira de 1 a 2. Um valor baixo aplica nitidez apenas aos pixels de borda; um valor alto aplica nitidez a uma faixa mais ampla de pixels. O valor correto depende da imagem. O valor padrão é 0,2. O intervalo é de 0 a 250.</td>
+   <td>Determina o número de pixels em torno dos pixels da borda que afetam a nitidez. Para imagens de alta resolução, insira de 1 a 2. Um valor baixo aplica nitidez apenas aos pixels da borda; um valor alto aplica nitidez a uma faixa mais ampla de pixels. O valor correto depende do tamanho da imagem. O valor padrão é 0,2. O intervalo é de 0 a 250.</td>
   </tr>
   <tr>
    <td>Limite</td>
@@ -134,7 +134,7 @@ Consulte também [Práticas recomendadas para organizar ativos digitais para usa
 
    ![cortar](assets/crop.png)
 
-1. Selecione **[!UICONTROL Salvar]**. O perfil criado aparece na lista de perfis disponíveis.
+1. Selecionar **[!UICONTROL Salvar]**. O perfil criado aparece na lista de perfis disponíveis.
 
 ## Editar ou excluir perfis de imagem do Dynamic Media {#editing-or-deleting-image-profiles}
 
@@ -178,7 +178,7 @@ Você pode reprocessar ativos em uma pasta que já tenha um perfil de vídeo exi
 
 #### Aplicar perfis de imagem do Dynamic Media a pastas de propriedades {#applying-image-profiles-to-folders-from-properties}
 
-1. Toque no logotipo do Experience Manager e acesse **[!UICONTROL Assets]**.
+1. Selecione o logotipo do Experience Manager e acesse **[!UICONTROL Assets]**.
 1. Navegue até um *pasta* (não um ativo) ao qual você deseja aplicar um perfil de imagem.
 1. Dependendo da exibição em que você estiver, execute um dos procedimentos a seguir:
    * Na Exibição de cartão, passe o mouse sobre o ponteiro na pasta e selecione a marca de seleção para selecioná-lo.

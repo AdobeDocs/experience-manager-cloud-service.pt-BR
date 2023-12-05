@@ -2,10 +2,10 @@
 title: Pesquisar
 description: Encontre seu conteúdo mais rapidamente com a pesquisa abrangente
 exl-id: 8a799e9a-1461-4e79-ae90-1978af6cf0ed
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '492'
-ht-degree: 90%
+ht-degree: 83%
 
 ---
 
@@ -44,7 +44,7 @@ Para pesquisar e filtrar os recursos:
 1. Se necessário, é possível remover o filtro de localização (selecione **X** no filtro que deseja remover) para pesquisar em todos os consoles/tipos de recursos.
 1. Os resultados são mostrados, agrupados de acordo com o console e o tipo de recurso relacionado.
 
-   Você pode selecionar um recurso específico (para a ação adicional) ou detalhar selecionando o tipo de recurso desejado; por exemplo, **Exibir todos os sites**: 
+   Você pode selecionar um recurso específico (para a ação adicional) ou detalhar selecionando o tipo de recurso desejado; por exemplo, **Exibir todos os sites**:
 
    ![Resultados da pesquisa](/help/sites-cloud/authoring/assets/search-results.png)
 
@@ -59,7 +59,7 @@ Para pesquisar e filtrar os recursos:
    * Pesquisas salvas
    * Diretório de pesquisa
    * Tags
-   * Critérios de pesquisa, por exemplo, datas modificadas, status de publicação, status da Live Copy.
+   * Critérios de pesquisa, por exemplo, datas modificadas, status de publicação, status da Live Copy
 
    >[!NOTE]
    >

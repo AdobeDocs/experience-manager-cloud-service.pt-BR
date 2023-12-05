@@ -2,10 +2,10 @@
 title: Layout responsivo
 description: O AEM permite que você tenha um layout responsivo para suas páginas
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1732'
-ht-degree: 82%
+source-wordcount: '1737'
+ht-degree: 80%
 
 ---
 
@@ -49,7 +49,7 @@ Dependendo do projeto, o Contêiner de layout pode ser usado como o sistema de p
 
 >[!TIP]
 >
->A Adobe fornece uma [documentação de GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) do layout responsivo como uma referência que pode ser fornecida para desenvolvedores front-end permitindo que usem a grade do AEM fora do AEM, por exemplo, ao criar modelos HTML estáticos para um site futuro do AEM.
+>Adobe fornece [Documentação do GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) do layout responsivo como uma referência que pode ser fornecida para desenvolvedores de front-end permitindo que usem a grade AEM fora do AEM, por exemplo, ao criar modelos de HTML estáticos para um futuro site de AEM.
 
 >[!NOTE]
 >
@@ -149,7 +149,7 @@ Assim como em outros componentes, você pode selecionar e atuar em (recortar, co
 >
 >Visto que um container de layout é um sistema de parágrafo, a exclusão do componente excluirá a grade de layout e todos os componentes (e seu conteúdo) inclusos no container.
 
-1. Se você passar o mouse sobre ou tocar no espaço reservado da grade, o menu de ação será exibido.
+1. Se você passar o mouse sobre ou selecionar o espaço reservado da grade, o menu de ação será exibido.
 
    ![Adicionar ao contêiner de layout](/help/sites-cloud/authoring/assets/responsive-layout-container.png)
 

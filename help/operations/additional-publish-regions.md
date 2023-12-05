@@ -2,10 +2,10 @@
 title: Regiões de publicação adicionais
 description: Saiba como o AEM as a Cloud Service permite regiões de publicação adicionais para aumentar a disponibilidade e reduzir a latência.
 exl-id: b9ac3c6a-eb8b-461d-8f1d-a0356046a3f9
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '640'
-ht-degree: 80%
+source-wordcount: '638'
+ht-degree: 78%
 
 ---
 
@@ -20,7 +20,7 @@ As organizações podem licenciar até três regiões de publicação adicionais
 
 >[!NOTE]
 >
->No momento, esse recurso está disponível apenas para o AEM Sites. Ele também não pode ser aplicado a programas de sandbox. Além disso, observe que o recurso de regiões de publicação adicionais exige que seu programa esteja atualizado com a versão 12142 (ou superior) do AEM.
+>No momento, esse recurso está disponível apenas para o AEM Sites. Ele também não pode ser aplicado a programas de sandbox. Além disso, o recurso de regiões de publicação adicionais requer que seu programa seja atualizado para a versão do AEM 12142 ou superior.
 
 ## Casos de uso {#use-cases}
 

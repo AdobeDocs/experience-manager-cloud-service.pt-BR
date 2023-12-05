@@ -2,10 +2,10 @@
 title: Extensão do gerenciador de vários sites
 description: Saiba como estender a funcionalidade do Gerenciador de vários sites.
 exl-id: 4b7a23c3-65d1-4784-9dea-32fcceca37d1
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2429'
-ht-degree: 1%
+source-wordcount: '2337'
+ht-degree: 0%
 
 ---
 
@@ -175,7 +175,7 @@ Para criar uma configuração de implantação:
 
 1. Nesse local, crie um nó com as seguintes propriedades:
 
-   * **Nome**: o nome do nó da configuração de implantação, por exemplo `contentCopy` ou `workflow`
+   * **Nome**: o nome do nó da configuração de implantação, por exemplo, `contentCopy` ou `workflow`
    * **Tipo**: `cq:RolloutConfig`
 
 1. Adicione as seguintes propriedades a este nó:
@@ -204,7 +204,7 @@ As configurações de implantação são armazenadas abaixo do [nó de configura
 
 Adicionar nós filhos do tipo `cq:LiveSyncAction` para adicionar ações de sincronização à configuração de implantação. A ordem dos nós de ação de sincronização determina a ordem em que as ações ocorrem.
 
-1. No CRXDE Lite, selecione o [Configuração de implantação](#create-the-rollout-configuration) nó, por exemplo `/apps/msm/myproject/rolloutconfigs/myrolloutconfig`.
+1. No CRXDE Lite, selecione o [Configuração de implantação](#create-the-rollout-configuration) nó, por exemplo, `/apps/msm/myproject/rolloutconfigs/myrolloutconfig`.
 
 1. Crie um nó com as seguintes propriedades de nó:
 
@@ -604,7 +604,7 @@ Ao criar uma propriedade de página personalizada, talvez seja necessário consi
 
 Por exemplo, se duas novas propriedades de página estiverem sendo adicionadas:
 
-* Email de contato:
+* E-mail de contato:
 
    * Não é necessário implantar esta propriedade, pois ela será diferente em cada país (ou marca e assim por diante).
 
@@ -614,7 +614,7 @@ Por exemplo, se duas novas propriedades de página estiverem sendo adicionadas:
 
 Em seguida, é necessário garantir que:
 
-* Email de contato:
+* E-mail de contato:
 
    * É excluído das propriedades implantadas.
    * Consulte [Configurar a sincronização da Live Copy](/help/sites-cloud/administering/msm/live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) para obter mais informações.

@@ -2,9 +2,9 @@
 title: Administração de tags
 description: Saiba como administrar tags no AEM para organizar seu conteúdo.
 exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2210'
+source-wordcount: '2200'
 ht-degree: 1%
 
 ---
@@ -62,7 +62,7 @@ O console de marcação é usado para criar e gerenciar tags e suas taxonomias. 
 Para acessar o console de marcação:
 
 1. Faça logon em um ambiente de criação com privilégios administrativos.
-1. No menu de navegação global, selecione **`Tools`** > **`General`** ->
+1. No menu de navegação global, selecione **`Tools`** > **`General`** >
    **`Tagging`**.
 
 ![O console de marcação no AEM](/help/sites-cloud/administering/assets/tagging-console.png)
@@ -91,7 +91,7 @@ Um namespace é usado para organizar outras tags. Ela pode ser considerada a tag
 
 1. Depois que as informações necessárias forem inseridas, selecione **Criar**.
 
-O namespace é criado. Observe que no console de marcação os namespaces estão no nível mais baixo (na extremidade esquerda do console) e são representados por ícones de pasta, refletindo sua natureza como um &quot;contêiner&quot; ou agrupamento de outras tags.
+O namespace é criado. No console de marcação, os namespaces estão no nível mais baixo (na extremidade esquerda do console) e são representados por ícones de pasta, refletindo sua natureza como um &quot;contêiner&quot; ou agrupamento de outras tags.
 
 Agora você pode [criar novas tags](#creating-tags) neste namespace ou [gerenciar tags existentes.](#managing-tags)
 
@@ -163,7 +163,7 @@ Há várias ações que você pode realizar nas tags e nos namespaces existentes
 * [Mesclar](#merging-tags)
 * [Excluir](#deleting-tags)
 
-Observe que quando não há espaço suficiente disponível na barra de ferramentas, opções adicionais ficam disponíveis atrás do ícone de reticências.
+Quando não há espaço suficiente disponível na barra de ferramentas, opções adicionais ficam disponíveis atrás do ícone de reticências.
 
 ### Exibição das propriedades da tag {#viewing-tag-properties}
 
@@ -243,7 +243,7 @@ Pode ser útil ver a qual conteúdo uma tag específica é aplicada. Você pode 
 
    ![Exibição detalhada das referências da tag](assets/tag-references-detail.png)
 
-Passe o mouse ou toque em um conteúdo de referência na lista para revelar o caminho completo do conteúdo.
+Passe o mouse ou selecione um conteúdo de referência na lista para revelar o caminho completo do conteúdo.
 
 Para obter mais detalhes sobre a seleção dos modos de exibição e do painel, consulte [Manuseio básico](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
 
@@ -304,7 +304,7 @@ Se a taxonomia de marcação for alterada e uma tag ou um namespace for desneces
 
 1. O AEM verifica se a tag não está sendo referenciada.
 
-   1. Se nenhuma referência for encontrada, o AEM solicitará a confirmação final para excluir. Selecione **Excluir**
+   1. Se nenhuma referência for encontrada, o AEM solicitará a confirmação final para excluir. Selecionar **Excluir**
 
       ![Nenhuma referência encontrada](assets/no-references-found.png)
 

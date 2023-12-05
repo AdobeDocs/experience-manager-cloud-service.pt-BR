@@ -4,10 +4,10 @@ description: Fluxos de trabalho centrados no Forms permitem criar rapidamente fl
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: Usar fluxos de trabalho de AEM, usando etapas atribuir tarefa, converter em PDF/A etapa, Gerar documento da etapa gravada, usar fluxos de trabalho, etapa Assinar documento, etapa Gerar saída impressa, Gerar saída de PDF não interativa
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '7448'
-ht-degree: 1%
+source-wordcount: '7367'
+ht-degree: 0%
 
 ---
 
@@ -298,7 +298,7 @@ Para explicar entradas para campos da etapa, a seguinte tabela de banco de dados
    <td>1</td> 
   </tr> 
   <tr> 
-   <td>Endereço de email<br /> </td> 
+   <td>Endereço de e-mail<br /> </td> 
    <td>srose@we.info</td> 
   </tr> 
  </tbody> 

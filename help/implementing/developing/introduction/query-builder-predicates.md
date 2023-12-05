@@ -2,10 +2,10 @@
 title: Referência de predicado do construtor de consultas
 description: Referência de predicado para a API do Construtor de consultas no AEM as a Cloud Service.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: e10c39c1d7fa05b738dd8f25662617a3a9568f83
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2295'
-ht-degree: 2%
+source-wordcount: '2270'
+ht-degree: 1%
 
 ---
 
@@ -76,7 +76,7 @@ Este predicado permite classificar os resultados. Se a ordenação por várias p
 
 #### Propriedades {#properties-13}
 
-* **`orderby`** - o nome da propriedade JCR indicado por um @ à esquerda, por exemplo `@jcr:lastModified` ou `@jcr:content/jcr:title`, ou outro predicado na consulta, por exemplo `2_property`, no qual classificar
+* **`orderby`** - o nome da propriedade JCR indicado por um @ à esquerda, por exemplo, `@jcr:lastModified` ou `@jcr:content/jcr:title`, ou outro predicado na consulta, por exemplo, `2_property`, no qual classificar
 * **`sort`** - direção da classificação, ou `desc` para decrescente ou `asc` para crescente (padrão)
 * **`case`** - se definido como `ignore`, faz com que a classificação não diferencie maiúsculas de minúsculas, ou seja, `a` vem antes `B`; se estiver vazia ou for omitida, a classificação diferencia maiúsculas de minúsculas, o que significa `B` vem antes `a`
 
@@ -92,7 +92,7 @@ Este predicado suporta a extração de facetas e fornece intervalos para cada `t
 
 #### Propriedades {#properties}
 
-* **`boolproperty`** - caminho relativo para a propriedade, por exemplo `myFeatureEnabled` ou `jcr:content/myFeatureEnabled`
+* **`boolproperty`** - caminho relativo para a propriedade, por exemplo, `myFeatureEnabled` ou `jcr:content/myFeatureEnabled`
 * **`value`** - valor para verificar a propriedade, `true` ou `false`
 
 ### contentfragment {#contentfragment}
@@ -134,10 +134,10 @@ Ela não oferece suporte à filtragem.
 
 #### Propriedades {#properties-3}
 
-* **`property`** - caminho relativo para um `DATE` propriedade, por exemplo `jcr:lastModified`
-* **`lowerBound`** - data inferior vinculada para verificar a propriedade, por exemplo `2014-10-01`
+* **`property`** - caminho relativo para um `DATE` propriedade, por exemplo, `jcr:lastModified`
+* **`lowerBound`** - data inferior vinculada para verificar a propriedade, por exemplo, `2014-10-01`
 * **`lowerOperation`** - `>` (mais recente) ou `>=` (em ou mais recente), aplica-se à `lowerBound`. O padrão é `>`
-* **`upperBound`** - limite superior para verificar a propriedade, por exemplo `2014-10-01T12:15:00`
+* **`upperBound`** - limite superior para verificar a propriedade, por exemplo, `2014-10-01T12:15:00`
 * **`upperOperation`** - `<` (mais antigo) ou `<=` (em ou mais antigo), aplica-se à `upperBound`. O padrão é `<`
 * **`timeZone`** - ID do fuso horário a ser usada quando não for fornecida como uma string de data ISO-8601. O padrão é o fuso horário padrão do sistema.
 
@@ -186,7 +186,7 @@ Ela oferece suporte à extração de facetas e a intervalos para cada código de
 
 #### Propriedades {#properties-8}
 
-* **`language`** - Código de idioma ISO, por exemplo `de`
+* **`language`** - código ISO de idioma, por exemplo, `de`
 
 ### principal ativo {#mainasset}
 
@@ -260,7 +260,7 @@ Ela oferece suporte à extração de facetas e fornece compartimentos para cada 
 
 #### Propriedades {#properties-15}
 
-* **`property`** - caminho relativo para a propriedade, por exemplo `jcr:title`.
+* **`property`** - caminho relativo para a propriedade, por exemplo, `jcr:title`.
 * **`value`** - valor para verificar a propriedade; segue o tipo de propriedade JCR para conversões de sequência.
 * **`N_value`** - utilizar `1_value`, `2_value`, ... para verificar se há vários valores (combinados com `OR` por padrão, com `AND` se `and=true`).
 * **`and`** - defina como `true` para combinar vários valores (`N_value`) com `AND`
@@ -347,7 +347,7 @@ Ele oferece suporte à extração de facetas e fornece compartimentos para cada 
 
 #### Propriedades {#properties-21}
 
-* **`tag`** - caminho do título da tag a ser procurado, por exemplo `properties:orientation/landscape`
+* **`tag`** - caminho do título da tag a ser procurado, por exemplo, `properties:orientation/landscape`
 * **`N_value`** - utilizar `1_value`, `2_value`, ... para verificar se há várias tags (combinadas com `OR` por padrão, com `AND` se `and=true`)
 * **`property`** - propriedade (ou caminho relativo para a propriedade) a ser observada (padrão `cq:tags`)
 
@@ -359,7 +359,7 @@ Ela é compatível com a extração de facetas e fornece compartimentos para cad
 
 #### Propriedades {#properties-22}
 
-* **`tagid`** - ID da tag a ser procurada, por exemplo `properties:orientation/landscape`
+* **`tagid`** - ID da tag a ser procurada, por exemplo, `properties:orientation/landscape`
 * **`N_value`** - utilizar `1_value`, `2_value`, ... para verificar se há várias IDs de tag (combinadas com `OR` por padrão, com `AND` se `and=true`)
 * **`property`** - propriedade (ou caminho relativo para a propriedade) a ser observada (padrão `cq:tags`)
 
@@ -384,4 +384,4 @@ Ela suporta a extração de facetas e fornece intervalos para cada tipo único n
 
 #### Propriedades {#Properties-2}
 
-* **`type`** - tipo de nó ou `mixin` nome a ser pesquisado, por exemplo `cq:Page`
+* **`type`** - tipo de nó ou `mixin` nome a ser pesquisado, por exemplo, `cq:Page`

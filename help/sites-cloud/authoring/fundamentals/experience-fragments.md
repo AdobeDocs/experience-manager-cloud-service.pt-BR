@@ -2,10 +2,10 @@
 title: Fragmentos de experiência
 description: Use os Fragmentos de experiência do Adobe Experience Manager as a Cloud Service para tornar suas experiências reutilizáveis e flexíveis.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2042'
-ht-degree: 98%
+source-wordcount: '2035'
+ht-degree: 97%
 
 ---
 
@@ -361,7 +361,7 @@ Para personalizar o fragmento:
    >
    >* um caminho que contenha um subconjunto dos armazenamentos definidos no ContextHub configurado para a página
    >
-   >O **Caminho dos segmentos** selecionado na guia **Personalização** deve ser:
+   >A variável **Caminho de segmentos** selecionado na **Personalização** deve ser:
    >
    >* o mesmo caminho que o configurado para a página em que o fragmento é renderizado
    >

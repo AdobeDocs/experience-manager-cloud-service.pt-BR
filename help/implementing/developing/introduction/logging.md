@@ -2,9 +2,9 @@
 title: Registro para AEM as a Cloud Service
 description: Saiba como usar o Logging para AEM as a Cloud Service para configurar parâmetros globais para o serviço de log central, configurações específicas para os serviços individuais ou como solicitar o registro de dados.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '2753'
+source-wordcount: '2720'
 ht-degree: 3%
 
 ---
@@ -190,14 +190,14 @@ A seguir estão exemplos das configurações de registro recomendadas (usando o 
 
 O registro de solicitações HTTP do AEM as a Cloud Service fornece informações sobre as solicitações HTTP feitas ao AEM e suas respostas HTTP em ordem de tempo. Esse log é útil para entender as solicitações HTTP feitas ao AEM e a ordem em que são processadas e respondidas.
 
-A chave para entender esse log é mapear a solicitação HTTP e os pares de resposta por suas IDs, indicadas pelo valor numérico entre parênteses. Observe que muitas vezes as solicitações do e suas respostas correspondentes têm outras solicitações HTTP e respostas interjetadas entre elas no log.
+A chave para entender esse log é mapear a solicitação HTTP e os pares de resposta por suas IDs, indicadas pelo valor numérico entre parênteses. Muitas vezes, as solicitações e suas respostas correspondentes têm outras solicitações HTTP e respostas interjetadas entre elas no log.
 
 **Exemplo de log**
 
 ```
-29/Apr/2020:19:14:21 +0000 [137] -> POST /conf/global/settings/dam/adminui-extension/metadataprofile/ HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
+29/Apr/2020:19:14:21 +0000 [137] > POST /conf/global/settings/dam/adminui-extension/metadataprofile/ HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
 ...
-29/Apr/2020:19:14:22 +0000 [139] -> GET /mnt/overlay/dam/gui/content/processingprofilepage/metadataprofiles/editor.html/conf/global/settings/dam/adminui-extension/metadataprofile/main HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
+29/Apr/2020:19:14:22 +0000 [139] > GET /mnt/overlay/dam/gui/content/processingprofilepage/metadataprofiles/editor.html/conf/global/settings/dam/adminui-extension/metadataprofile/main HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
 ...
 29/Apr/2020:19:14:21 +0000 [137] <- 201 text/html 111ms [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
 ...
@@ -285,7 +285,7 @@ Esse conjunto de logs fornece insights sobre solicitações HTTP para o nível d
 
 ### Log de acesso do servidor Web Apache HTTPD {#apache-httpd-web-server-access-log}
 
-O log de acesso do Apache HTTP Web Server fornece instruções para cada solicitação HTTP que atinge o servidor Web/Dispatcher da camada de publicação. Observe que as solicitações atendidas em um CDN upstream não são refletidas nesses logs.
+O log de acesso do Apache HTTP Web Server fornece instruções para cada solicitação HTTP que atinge o servidor Web/Dispatcher da camada de publicação. As solicitações atendidas de um CDN upstream não são refletidas nesses logs.
 
 Consulte informações sobre o formato do log de erros no [documentação oficial do apache](https://httpd.apache.org/docs/2.4/logs.html#accesslog).
 
@@ -454,7 +454,7 @@ Define REWRITE_LOG_LEVEL debug
 </tr>
 <tr>
 <td>Duração</td>
-<td>1949ms</td>
+<td>1949 ms</td>
 </tr>
 <tr>
 <td>Farm</td>
@@ -611,7 +611,7 @@ Os clientes que têm contas do Splunk podem solicitar por meio do tíquete de su
 
 A largura de banda da rede associada aos logs enviados ao Splunk é considerada parte do uso de E/S da rede pelo cliente.
 
-Observe que o encaminhamento do Splunk ainda não oferece suporte a logs CDN.
+O encaminhamento do Splunk ainda não oferece suporte a logs CDN.
 
 ### Ativando o encaminhamento do Splunk {#enabling-splunk-forwarding}
 

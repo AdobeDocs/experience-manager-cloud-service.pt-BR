@@ -2,10 +2,10 @@
 title: Como podemos criar um modelo de formulário adaptável?
 description: Crie modelos de Formulário adaptável para definir a estrutura básica e o conteúdo inicial usando o Editor de modelos.
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2098'
-ht-degree: 2%
+source-wordcount: '2059'
+ht-degree: 1%
 
 ---
 
@@ -38,13 +38,13 @@ O Experience Manager fornece uma pasta global para organizar modelos. No entanto
 
 Após criar uma pasta, abra-a e execute as seguintes etapas para criar um template:
 
-1. Toque **[!UICONTROL Criar]** dentro da pasta que você criou.
-1. Na seção Escolher um tipo de modelo, selecione **[!UICONTROL Modelo de formulário adaptável]** e toque em **[!UICONTROL Próxima]**.
+1. Selecionar **[!UICONTROL Criar]** dentro da pasta que você criou.
+1. Na seção Escolher um tipo de modelo, selecione **[!UICONTROL Modelo de formulário adaptável]** e selecione **[!UICONTROL Próxima]**.
 
-1. Na seção Detalhes do modelo, forneça um Título do modelo e toque em **[!UICONTROL Criar]**.
+1. Na seção Detalhes do Modelo, forneça um Título de Modelo e selecione **[!UICONTROL Criar]**.
 Você também pode fornecer uma descrição.
 
-1. Toque **[!UICONTROL Concluído]** para retornar ao console ou toque em **[!UICONTROL Abertura]** para abrir o modelo no editor.
+1. Selecionar **[!UICONTROL Concluído]** para retornar ao console ou selecione **[!UICONTROL Abertura]** para abrir o modelo no editor.
 
 ### Interface do editor de modelos {#template-editor-ui}
 
@@ -105,7 +105,7 @@ Por exemplo, você adiciona o componente de cabeçalho no modelo. Ao selecionar 
 
 Quando a opção Conteúdo inicial estiver selecionada, o Contêiner de formulário adaptável do modelo será aberto como um Formulário adaptável para edição. Assim como a criação de um Formulário adaptável, você pode especificar configurações iniciais, como selecionar um tema e Enviar ações.
 
-Os autores de formulários o usam como base para criar um formulário. A estrutura do fluxo de conteúdo é especificada na camada Conteúdo inicial do modelo. Para alternar para a edição do conteúdo inicial do modelo de formulário, antes de Visualizar na barra de ferramentas da página, toque em ![tela suspensa](assets/canvas-drop-down.png) **>** **[!UICONTROL Conteúdo inicial]**.
+Os autores de formulários o usam como base para criar um formulário. A estrutura do fluxo de conteúdo é especificada na camada Conteúdo inicial do modelo. Para alternar para a edição do conteúdo inicial do modelo de formulário, antes de Visualizar na barra de ferramentas da página, selecione ![tela suspensa](assets/canvas-drop-down.png) **>** **[!UICONTROL Conteúdo inicial]**.
 
 
 Na camada Conteúdo inicial, crie o modelo de Formulário adaptável que seus autores usam como base. A criação de um modelo é semelhante à criação de um formulário. As opções disponíveis na Barra lateral são usadas. A barra lateral fornece conteúdo, propriedades, ativos e componentes nos navegadores.
@@ -132,7 +132,7 @@ Altere a camada de Estrutura para Conteúdo inicial e comece a adicionar conteú
 * Você pode arrastar e soltar o componente Painel do navegador de componentes na barra lateral.
 * É possível adicionar um painel filho de `guideRootPanel` na barra de ferramentas do componente.
 
-Para criar as guias Informações gerais e Informações profissionais, adicione dois painéis no painel secundário do `guideRootPanel`. Selecione os painéis e toque em ![cmppr](assets/configure-icon.svg) para abrir as propriedades na barra lateral. Alterar os nomes dos elementos como `general-info` e `professional-info`e títulos como Informações gerais e Informações profissionais, respectivamente. Na barra lateral, toque em conteúdo para abrir o navegador de conteúdo. Na guia Objetos de formulário, selecione `guideRootPanel`. No editor, o guideRootPanel é selecionado. Toque ![cmppr](assets/configure-icon.svg) na barra de ferramentas do componente para abrir suas propriedades. No campo Layout do painel, selecione **[!UICONTROL Guias na parte superior]** e toque em **[!UICONTROL Concluído]**. A estrutura do modelo com guias é aplicada.
+Para criar as guias Informações gerais e Informações profissionais, adicione dois painéis no painel secundário do `guideRootPanel`. Selecione os painéis e selecione ![cmppr](assets/configure-icon.svg) para abrir as propriedades na barra lateral. Alterar os nomes dos elementos como `general-info` e `professional-info`e títulos como Informações gerais e Informações profissionais, respectivamente. Na barra lateral, selecione conteúdo para abrir o navegador de conteúdo. Na guia Objetos de formulário, selecione `guideRootPanel`. No editor, o guideRootPanel é selecionado. Selecionar ![cmppr](assets/configure-icon.svg) na barra de ferramentas do componente para abrir suas propriedades. No campo Layout do painel, selecione **[!UICONTROL Guias na parte superior]** e selecione **[!UICONTROL Concluído]**. A estrutura do modelo com guias é aplicada.
 
 #### Adição de conteúdo em guias {#adding-content-in-tabs}
 
@@ -151,7 +151,7 @@ Ao criar um modelo, ele é adicionado como um rascunho. Ative o modelo para usá
 1. Navegue até **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Ferramentas]** > **[!UICONTROL Modelos]** e abra a pasta na qual você criou o template.
 
 1. O modelo criado está marcado como Rascunho.
-1. Selecione o modelo e toque em **[!UICONTROL Ativar]** na barra de ferramentas.
+1. Selecione o modelo e selecione **[!UICONTROL Ativar]** na barra de ferramentas.
 Ao criar um Formulário adaptável, você pode ver o modelo listado quando é solicitado a escolher um modelo.
 
 ## Importação ou exportação de um template {#importing-or-exporting-a-template}
@@ -167,7 +167,7 @@ Um formulário funciona com seu modelo. Ao baixar um Formulário adaptável cria
 
 Os autores podem associar um [!UICONTROL Esquema do modelo de dados de formulário] para um modelo de Formulário adaptável no editor de modelos. Ele permite que os autores selecionem um esquema no editor de modelos. Quando você associa um esquema a um modelo e um autor de formulário cria um formulário com base no modelo, o esquema é pré-selecionado para o formulário. Ele ajuda os autores de formulários a regular o uso do esquema e também economiza tempo para o autor de formulários. Para selecionar um esquema de modelo de dados de formulário no editor de modelo:
 
-1. Toque **[!UICONTROL Navegador de conteúdo]** localizado no lado esquerdo.
+1. Selecionar **[!UICONTROL Navegador de conteúdo]** localizado no lado esquerdo.
 1. Ir para o contêiner de formulário **[!UICONTROL Configuração]**.
 1. Selecionar **[!UICONTROL Modelo de dados]**.
 1. Escolher o modelo de dados do formulário por meio de **[!UICONTROL Selecionar modelo de dados do formulário]** e salve a configuração.

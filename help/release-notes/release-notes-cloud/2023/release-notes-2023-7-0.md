@@ -2,9 +2,9 @@
 title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2023.7.0.
 description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2023.7.0.
 exl-id: 7866d94c-e54c-4bb2-aaa6-66c019e46336
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '938'
+source-wordcount: '896'
 ht-degree: 49%
 
 ---
@@ -25,7 +25,7 @@ A seção a seguir descreve as notas da versão de recursos do [!DNL Experience 
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] A versão atual do recurso (2023.7.0) é 27 de julho de 2023. A próxima versão do recurso (2023.8.0) está planejada para 31 de agosto de 2023.
+A data de lançamento da versão atual (2023.7.0) do [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] é sexta-feira, 27 de julho de 2023. O próximo lançamento de recursos (2023.8.0) está planejado para sexta-feira, 31 de agosto de 2023.
 
 ## Vídeo da versão {#release-video}
 
@@ -80,7 +80,7 @@ Por padrão, o Assets Essentials agora classifica os resultados de pesquisa com 
 
 * [**Temas prontos para uso**](/help/forms/using-themes-in-core-components.md) **e modelos**: Inicie seu processo de criação de formulários com nossos temas e modelos OOTB prontos para uso, personalizados para capacitar profissionais experientes e novos autores de formulários. Construídos de maneira contínua usando os Componentes principais do Adaptive Forms, esses temas e modelos meticulosamente preparados permitem que você comece a criar formulários rapidamente para casos de uso comuns.
 
-* **[Componentes do React para o Forms headless](https://github.com/adobe/aem-forms-headless-components/tree/main/packages/react-vanilla-components)**: agora você pode visualizar e personalizar representações do Formulário adaptável headless com os componentes do React fornecidos imediatamente. Esses componentes aproveitam as classes BEM dos Componentes principais do Adaptive Forms para estilizar, facilitando a personalização da aparência de acordo com suas necessidades específicas.
+* **[Componentes do React para o Forms headless](https://github.com/adobe/aem-forms-headless-components/tree/main/packages/react-vanilla-components)**: agora você pode visualizar e personalizar representações do Formulário adaptável headless com os componentes do React fornecidos imediatamente. Esses componentes usam classes BEM dos Componentes principais do Forms adaptável para estilo, facilitando a personalização da aparência de acordo com suas necessidades específicas.
 
 * [**Criar Forms adaptável com seções que podem ser repetidas**](/help/forms/create-forms-repeatable-sections.md): Agora você pode fazer [Acordeão](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=pt-BR), [Assistente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=pt-br), [Painel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html?lang=pt-br), e [Guias Horizontais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=pt-br) formulários adaptáveis com base em componentes repetíveis para captura de vários registros de dados.  Essas seções repetíveis permitem fornecer várias entradas de dados facilmente. É útil quando as instâncias de dados necessárias são desconhecidas. Um preenchimento de formulário pode adicionar ou remover seções facilmente, tornando os formulários adaptáveis a diferentes cenários de entrada de dados e simplificando a coleta de várias ocorrências do mesmo registro de dados.
 

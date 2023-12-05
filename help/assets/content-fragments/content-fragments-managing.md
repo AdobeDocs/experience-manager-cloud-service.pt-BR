@@ -2,10 +2,10 @@
 title: Gerenciamento de fragmentos de conteúdo (Ativos - Fragmentos de conteúdo)
 description: Saiba como usar o console de Ativos para gerenciar os fragmentos de conteúdo de AEM, a base do conteúdo headless.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1876'
-ht-degree: 67%
+source-wordcount: '1873'
+ht-degree: 66%
 
 ---
 
@@ -100,7 +100,7 @@ No **Assets** console de uma variedade de ações estão disponíveis para seus 
 
 Selecione o fragmento para revelar a barra de ferramentas com ações aplicáveis:
 
-* **Processar ativos novamente**
+* **Reprocessar ativos**
 * **Criar**
 * **Download**
 
@@ -366,7 +366,7 @@ Os fragmentos de conteúdo devem ser publicados para uso no ambiente de publica�
 * [Publicação rápida](/help/assets/manage-publication.md#quick-publish)
 * [Gerenciar publicação](/help/assets/manage-publication.md#manage-publication)
 
-Esse pode ser acessado:
+Isso pode ser acessado:
 
 * Após a criação; uso de [ações disponíveis no console de Ativos](#actions-for-a-content-fragment-assets-console).
 * No [Editor de fragmento de conteúdo](#toolbar-actions-in-the-content-fragment-editor).

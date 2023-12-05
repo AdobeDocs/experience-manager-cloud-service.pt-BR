@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 role: User
 feature: Collaboration
 exl-id: d48f6daf-af81-4024-bff2-e8bf6d683b0c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '620'
+source-wordcount: '614'
 ht-degree: 7%
 
 ---

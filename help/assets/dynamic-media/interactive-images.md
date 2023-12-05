@@ -5,16 +5,16 @@ contentOwner: Rick Brough
 feature: Interactive Images
 role: User
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '4175'
-ht-degree: 2%
+source-wordcount: '4072'
+ht-degree: 1%
 
 ---
 
 # Imagens interativas{#interactive-images}
 
-Você pode tornar as imagens estáticas ricas em experiências envolventes para os clientes, arrastando e soltando pontos de acesso que podem ser comprados em uma imagem. Os hotspots para consumidores combinam informações adicionais sobre um produto ou serviço com um recurso &quot;Adicionar ao carrinho&quot; ou &quot;Comprar&quot; direto no ponto de venda. Os clientes podem acessar esses pontos de acesso que se vinculam diretamente ao produto ou serviço, adicioná-los a um carrinho de compras ou estar vinculados a uma página da Web. Experiências diretas como essas aumentam o envolvimento e as conversões do cliente no seu site.
+Você pode tornar as imagens estáticas ricas em experiências envolventes para os clientes, arrastando e soltando pontos de acesso que podem ser comprados em uma imagem. Os hotspots para consumidores combinam informações adicionais sobre um produto ou serviço com um recurso &quot;Adicionar ao carrinho&quot; ou &quot;Comprar&quot; direto no ponto de venda. Os clientes podem selecionar esses pontos de acesso que se vinculam diretamente ao produto ou serviço, adicioná-los a um carrinho de compras ou estar vinculados a uma página da Web. Experiências diretas como essas aumentam o envolvimento e as conversões do cliente no seu site.
 
 Veja a seguir um banner que pode ser comprado com uma janela pop-up do Quickview. Um usuário ativa o Quickview tocando no círculo ou &quot;ponto de acesso&quot; no modelo.
 
@@ -179,20 +179,20 @@ Depois de salvar a predefinição do visualizador, ela é ativada automaticament
 **Para criar uma predefinição do visualizador de imagem interativa:**
 
 1. No painel esquerdo, vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Assets]** > **[!UICONTROL Predefinições do visualizador]**.
-1. Próximo ao canto superior direito da página, toque em **[!UICONTROL Criar]**.
+1. Próximo ao canto superior direito da página, selecione **[!UICONTROL Criar]**.
 1. Na caixa de diálogo Nova predefinição do visualizador, digite um nome para descrever a predefinição interativa do visualizador de banner.
 
    Esse título é exibido na página da lista Predefinição do visualizador depois de salvar.
 
 1. No menu suspenso Rich Media Type (Tipo de mídia avançada), selecione **[!UICONTROL Imagem interativa]**.
 1. Selecione **[!UICONTROL Criar]**.
-1. Na página Editar predefinição do visualizador, toque no **[!UICONTROL Aparência]** guia.
+1. Na página Editar predefinição do visualizador, selecione a **[!UICONTROL Aparência]** guia.
 1. Siga uma das seguintes opções:
 
-   * Para carregar sua própria imagem de ponto de acesso que você deseja usar nas imagens, toque no ícone Seletor de ativos. Na página Selecionar conteúdo, navegue até a imagem do ponto de acesso que deseja usar e selecione-a. Selecione o ícone de Marca de seleção no canto superior direito.
-   * Para selecionar uma imagem de ponto de acesso predefinida, toque no ícone Galeria de pontos de acesso. Na paleta da galeria de pontos de acesso, toque na imagem do ponto de acesso que deseja usar.
+   * Para carregar sua própria imagem de ponto de acesso que você deseja usar em imagens, selecione o ícone Seletor de ativos. Na página Selecionar conteúdo, navegue até a imagem do ponto de acesso que deseja usar e selecione-a. Selecione o ícone de Marca de seleção no canto superior direito.
+   * Para selecionar uma imagem de ponto de acesso predefinida, selecione o ícone Galeria de pontos de acesso. Na paleta da galeria de pontos de acesso, selecione a imagem do ponto de acesso que deseja usar.
 
-1. Próximo ao canto superior direito da página, toque em **[!UICONTROL Salvar]**.
+1. Próximo ao canto superior direito da página, selecione **[!UICONTROL Salvar]**.
 
    Publique a nova predefinição do visualizador.
 
@@ -247,35 +247,35 @@ Se você estiver editando imagens interativas com pontos de acesso e recortar a 
 1. Na visualização de Ativos, navegue até o banner de imagem que você deseja tornar interativo.
 1. Siga uma das seguintes opções:
 
-   * Passe o mouse sobre a imagem e toque em **[!UICONTROL Selecionar]** (ícone de marca de seleção). Na barra de ferramentas, toque em **[!UICONTROL Editar]**.
+   * Passe o mouse sobre a imagem e selecione **[!UICONTROL Selecionar]** (ícone de marca de seleção). Na barra de ferramentas, selecione **[!UICONTROL Editar]**.
 
-   * Passe o mouse sobre a imagem e toque em **[!UICONTROL Mais ações]** (ícone de três pontos) **[!UICONTROL > Editar]**.
+   * Passe o mouse sobre a imagem e selecione **[!UICONTROL Mais ações]** (ícone de três pontos) **[!UICONTROL > Editar]**.
 
-   * Para abri-lo na página Exibição de detalhes, toque na imagem. Na barra de ferramentas, toque em **[!UICONTROL Editar]**.
+   * Para abri-la na página Exibição de detalhes, selecione a imagem. Na barra de ferramentas, selecione **[!UICONTROL Editar]**.
 
-1. Próximo ao canto superior esquerdo da página, toque em **[!UICONTROL Adicionar ponto de acesso]** (ícone de toque com o dedo) para abrir a página Gerenciamento de ponto de acesso.
-1. Próximo ao canto superior esquerdo da página, toque em **[!UICONTROL Ponto de acesso]**.
+1. Próximo ao canto superior esquerdo da página, selecione **[!UICONTROL Adicionar ponto de acesso]** (ícone de seleção com o dedo) para abrir a página Gerenciamento de pontos de acesso.
+1. Próximo ao canto superior esquerdo da página, selecione **[!UICONTROL Ponto de acesso]**.
 
-   1. Próximo ao canto superior esquerdo da página Gerenciamento de pontos de acesso, toque em **[!UICONTROL Ponto de acesso]**.
-   1.  Na imagem, toque em um local onde deseja que o ponto de acesso apareça. Se necessário, arraste o ponto de conexão para ajustar sua localização. Ou use as teclas de seta do teclado para controlar a posição de um ponto de acesso selecionado.
+   1. Próximo ao canto superior esquerdo da página Gerenciamento de pontos de acesso, selecione **[!UICONTROL Ponto de acesso]**.
+   1. Na imagem, selecione um local onde deseja que o ponto de acesso apareça. Se necessário, arraste o ponto de conexão para ajustar sua localização. Ou use as teclas de seta do teclado para controlar a posição de um ponto de acesso selecionado.
    1. Adicione mais pontos de acesso, conforme necessário, repetindo as etapas a e b.
-   1. (Opcional) Para excluir um ponto de acesso, selecione-o na imagem e toque em **[!UICONTROL Excluir]** (ícone de lixeira) sob o **[!UICONTROL Pontos de acesso]** cabeçalho.
+   1. (Opcional) Para excluir um ponto de acesso, selecione-o na imagem e **[!UICONTROL Excluir]** (ícone de lixeira) sob o **[!UICONTROL Pontos de acesso]** cabeçalho.
 
 1. No campo de texto Nome, digite o nome do ponto de acesso. Esse nome também aparece na lista suspensa Ponto de acesso selecionado.
 1. Siga uma das seguintes opções:
 
    * Selecionar **[!UICONTROL Quickview]**.
 
-      * Se você for um cliente do Experience Manager Sites ou de comércio eletrônico, selecione o ícone Seletor de produtos (lupa) para abrir a página Selecionar produto. Selecione o produto que deseja usar e toque em **Selecionar** no canto superior direito da página. Você retornará à página Gerenciamento de ponto de acesso.
+      * Se você for um cliente do Experience Manager Sites ou de comércio eletrônico, selecione o ícone Seletor de produtos (lupa) para abrir a página Selecionar produto. Selecione o produto que deseja usar e selecione **Selecionar** no canto superior direito da página. Você retornará à página Gerenciamento de ponto de acesso.
       * Se você estiver *não* um cliente do Experience Manager Sites ou de comércio eletrônico
 
          * Consulte [Identificação de variáveis de ponto de acesso](#optional-identifying-hotspot-variables); você deve definir essas variáveis.
          * Em seguida, insira manualmente o valor do SKU. No campo de texto Valor do SKU, digite o SKU do produto. O valor SKU inserido preenche automaticamente a parte variável do modelo de visualização rápida. Ele garante que o sistema saiba como associar o ponto de acesso tocado a uma exibição rápida específica do SKU.
-         * (Opcional) Se houver outras variáveis na exibição rápida usadas para identificar melhor um produto, toque em **[!UICONTROL Adicionar variável genérica]**. No campo de texto, especifique uma variável extra. Por exemplo, `category=Mens` é uma variável adicionada.
+         * (Opcional) Se houver outras variáveis na exibição rápida usadas para identificar um produto, selecione **[!UICONTROL Adicionar variável genérica]**. No campo de texto, especifique uma variável extra. Por exemplo, `category=Mens` é uma variável adicionada.
 
    * Selecionar **[!UICONTROL Hiperlink]**.
 
-      * Se você for um cliente do Experience Manager Sites, toque no ícone Seletor de sites (pasta). Navegue até um URL. O método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, principalmente links para páginas do Experience Manager Sites.
+      * Se você for um cliente do Experience Manager Sites, selecione o ícone Seletor de sites (pasta). Navegue até um URL. O método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, principalmente links para páginas do Experience Manager Sites.
       * Se você for um cliente independente, no campo de texto HREF, especifique o caminho completo do URL para uma página da Web vinculada.
 
    Certifique-se de especificar se o link deve ser aberto em uma nova guia do navegador (padrão recomendado) ou na mesma guia.
@@ -284,7 +284,7 @@ Se você estiver editando imagens interativas com pontos de acesso e recortar a 
 
    * Selecionar **[!UICONTROL Fragmento de experiência]**.
 
-      * Se você for um cliente do Experience Manager Sites, selecione o ícone Pesquisar (lupa) para abrir a página Fragmento de experiência. Selecione o Fragmento de experiência que deseja usar. Em seguida, toque em **[!UICONTROL Selecionar]** no canto superior direito da página. Você retornará à página Gerenciamento de ponto de acesso.
+      * Se você for um cliente do Experience Manager Sites, selecione o ícone Pesquisar (lupa) para abrir a página Fragmento de experiência. Selecione o Fragmento de experiência que deseja usar. Em seguida, selecione **[!UICONTROL Selecionar]** no canto superior direito da página. Você retornará à página Gerenciamento de ponto de acesso.
 Consulte [Fragmentos de experiência](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
 
       * Especifique a largura e a altura do Fragmento de experiência como deseja que ele apareça no banner.
@@ -317,10 +317,10 @@ Consulte [Adicionar ativos do Dynamic Media às páginas](/help/assets/dynamic-m
 
 **Para visualizar imagens interativas:**
 
-1. Na exibição Ativos, navegue até uma imagem interativa existente que você criou e toque para abri-la na Visualização.
-1. Próximo ao canto superior esquerdo da página Visualização, na lista suspensa Conteúdo, toque em **[!UICONTROL Visualizadores]**.
-1. Na lista Visualizadores, toque em **[!UICONTROL Shoppable_Banner]** ou o nome da predefinição interativa do visualizador de imagens que você criou.
-1. Para testar as ações associadas de pontos de acesso, toque em pontos de acesso na imagem.
+1. Na visualização de Ativos, navegue até uma imagem interativa existente que você criou e selecione para abri-la na Visualização.
+1. Próximo ao canto superior esquerdo da página Visualização, na lista suspensa Conteúdo, selecione **[!UICONTROL Visualizadores]**.
+1. Na lista Visualizadores, selecione **[!UICONTROL Shoppable_Banner]** ou o nome da predefinição interativa do visualizador de imagens que você criou.
+1. Para testar as ações associadas de pontos de acesso, selecione pontos de acesso na imagem.
 
 ## Publicar ativos de imagem interativos {#publishing-interactive-image-assets}
 

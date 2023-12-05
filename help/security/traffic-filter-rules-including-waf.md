@@ -2,9 +2,9 @@
 title: Regras de filtro de tráfego incluindo regras WAF
 description: Configuração das regras de filtro de tráfego incluindo as regras do WAF (Web Application Firewall)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 8407f3142de78ee792bdece327734dd02a4f234b
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '3357'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Este artigo está organizado nas seguintes seções:
 * **Visão geral da proteção de tráfego:** Saiba como você está protegido contra tráfego mal-intencionado.
 * **Processo sugerido para configurar as regras:** Leia sobre uma metodologia de alto nível para proteger seu site.
 * **Configuração:** Descubra como configurar e implantar regras de filtro de tráfego, incluindo as regras avançadas do WAF.
-* **Sintaxe de regras:** Leia sobre como declarar regras de filtro de tráfego no `cdn.yaml` arquivo de configuração. Isso inclui as regras de filtro de tráfego disponíveis para todos os clientes do Sites e do Forms, bem como a subcategoria de regras do WAF para aqueles que licenciam esse recurso.
+* **Sintaxe de regras:** Leia sobre como declarar regras de filtro de tráfego no `cdn.yaml` arquivo de configuração. Isso inclui as regras de filtro de tráfego disponíveis para todos os clientes do Sites e do Forms, e a subcategoria de regras do WAF para aqueles que licenciam esse recurso.
 * **Exemplos de regras:** Veja exemplos de regras declaradas para começar.
 * **Regras de limite de taxa:** Saiba como usar regras de limitação de taxa para proteger seu site contra ataques de alto volume.
 * **Logs da CDN:** Veja quais regras e sinalizadores do WAF declarados correspondem ao seu tráfego.
@@ -78,7 +78,7 @@ Veja a seguir um processo completo recomendado de alto nível para criar as regr
         cdn.yaml
    ```
 
-1. `cdn.yaml` deve conter metadados, bem como uma lista de regras de filtros de tráfego e regras do WAF.
+1. `cdn.yaml` deve conter metadados e uma lista de regras de filtros de tráfego e regras WAF.
 
    ```
    kind: "CDN"
@@ -148,7 +148,7 @@ data:
           wafFlags: [ SQLI, XSS]
 ```
 
-O formato das regras de filtro de tráfego na variável `cdn.yaml` arquivo está descrito abaixo. Ver alguns [outros exemplos](#examples) em uma seção posterior, bem como em uma seção separada sobre [Regras de limite de taxa](#rate-limit-rules).
+O formato das regras de filtro de tráfego na variável `cdn.yaml` arquivo está descrito abaixo. Ver alguns [outros exemplos](#examples) em uma seção posterior, e em uma seção separada sobre [Regras de limite de taxa](#rate-limit-rules).
 
 
 | **Propriedade** | **Maioria das regras de filtro de tráfego** | **Regras de filtro de tráfego do WAF** | **Tipo** | **Valor padrão** | **Descrição** |
@@ -201,13 +201,13 @@ Um Grupo de condições é composto por várias Condições simples e/ou de grup
 
 | **Propriedade** | **Tipo** | **Significado** |
 |---|---|---|
-| **igual** | `string` | true se o resultado de getter for igual ao valor fornecido |
+| **igual a** | `string` | true se o resultado de getter for igual ao valor fornecido |
 | **doesNotEqual** | `string` | true se o resultado de getter não for igual ao valor fornecido |
-| **gostar** | `string` | true se o resultado de getter corresponder ao padrão fornecido |
+| **curtir** | `string` | true se o resultado de getter corresponder ao padrão fornecido |
 | **notLike** | `string` | true se o resultado de getter não corresponder ao padrão fornecido |
-| **matches** | `string` | true se o resultado de getter corresponder ao regex fornecido |
+| **corresponde a** | `string` | true se o resultado de getter corresponder ao regex fornecido |
 | **doesNotMatch** | `string` | true se o resultado de getter não corresponder ao regex fornecido |
-| **em** | `array[string]` | true se a lista fornecida contiver o resultado getter |
+| **in** | `array[string]` | true se a lista fornecida contiver o resultado getter |
 | **notIn** | `array[string]` | true se a lista fornecida não contiver o resultado getter |
 | **existe** | `boolean` | verdadeiro quando definido como verdadeiro e a propriedade existe ou quando definido como falso e a propriedade não existe |
 
@@ -415,7 +415,7 @@ Os limites de taxa são calculados por CDN POP. Como exemplo, suponha que os POP
 | **Propriedade** | **Tipo** | **Padrão** | **SIGNIFICADO** |
 |---|---|---|---|
 | limite | número inteiro de 10 a 10000 | obrigatório | Taxa de solicitações (por CDN POP) em solicitações por segundo para as quais a regra é acionada. |
-| janela | enumeração de inteiros: 1, 10 ou 60 | 10 | Janela de amostragem em segundos para a qual a taxa de solicitação é calculada. A precisão dos contadores dependerá do tamanho da janela (maior precisão da janela). Por exemplo, é possível esperar uma precisão de 50% para a janela de 1 segundo e uma precisão de 90% para a janela de 60 segundos. |
+| janela | enumeração de inteiros: 1, 10 ou 60 | 10 | Janela de amostragem em segundos para a qual a taxa de solicitação é calculada. A precisão dos contadores dependerá do tamanho da janela (maior precisão da janela). Por exemplo, pode-se esperar 50% de precisão para a janela de 1 segundo e 90% de precisão para a janela de 60 segundos. |
 | penalidade | número inteiro de 60 a 3600 | 300 (5 minutos) | Um período em segundos para o qual as solicitações correspondentes são bloqueadas (arredondado para o minuto mais próximo). |
 | groupBy | matriz[Getter] | nenhuma | o contador do limitador de taxa será agregado por um conjunto de propriedades de solicitação (por exemplo, clientIp). |
 
@@ -470,7 +470,7 @@ data:
 
 O AEM as a Cloud Service fornece acesso aos logs de CDN, que são úteis para casos de uso, incluindo otimização da taxa de ocorrência do cache e configuração das regras de filtro de tráfego. Os logs do CDN aparecem no Cloud Manager **Baixar logs** , ao selecionar o serviço Autor ou Publicar.
 
-Observe que os logs CDN podem atrasar até 5 minutos.
+Os logs do CDN podem ser atrasados em até cinco minutos.
 
 A variável `rules` A propriedade descreve quais regras de filtro de tráfego são correspondidas e tem o seguinte padrão:
 

@@ -3,9 +3,9 @@ title: Configuração do OSGi para o Adobe Experience Manager as a Cloud Service
 description: Configuração OSGi com valores secretos e valores específicos do ambiente
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3317'
+source-wordcount: '3265'
 ht-degree: 1%
 
 ---
@@ -78,7 +78,7 @@ Os modos de execução as a Cloud Service do AEM são bem definidos com base no 
 
 Os valores de configuração OSGi especificados pelo modo de execução podem ser verificados por:
 
-1. Abrir o AEM como um ambiente Cloud Service [Console do desenvolvedor](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=pt-BR)
+1. Abrir o AEM como um ambiente Cloud Service [Console do desenvolvedor](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html)
 1. Selecionar a(s) camada(s) de serviço a serem inspecionadas, usando o __Pod__ lista suspensa
 1. Selecionar o __Status__ guia
 1. Selecionar __Configurações__ do __Status do despejo__ lista suspensa
@@ -176,7 +176,7 @@ Os arquivos de configuração OSGi formatados em JSON podem ser gravados manualm
 1. No IDE, abra o `ui.apps` projetar, localizar ou criar a pasta de configuração (`/apps/.../config.<runmode>`) que direciona os modos de execução que a nova configuração do OSGi precisa ter em vigor
 1. Nesta pasta de configuração, crie um `<PID>.cfg.json` arquivo. O PID é a identidade persistente do componente OSGi. Normalmente, é o nome de classe completo da implementação do componente OSGi. Por exemplo:
    `/apps/.../config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
-Observe que os nomes de arquivo do fatory de configuração do OSGi usam o `<factoryPID>-<name>.cfg.json` convenção de nomenclatura
+Os nomes de arquivo de fábrica de configuração do OSGi usam o `<factoryPID>-<name>.cfg.json` convenção de nomenclatura
 1. Abra o novo `.cfg.json` e defina as combinações chave/valor para a propriedade OSGi e os pares de valores, seguindo o [Formato de configuração OSGi JSON](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1).
 1. Salve as alterações no novo `.cfg.json` arquivo
 1. Adicione e confirme o novo arquivo de configuração OSGi no Git
@@ -191,14 +191,14 @@ O console da Web AEM do AEM SDK Quickstart Jar pode ser usado para configurar co
 
 1. Faça logon no console da Web AEM do AEM do SDK do em `https://<host>:<port>/system/console` como usuário administrador
 1. Navegue até **OSGi** > **Configuração**
-1. Para configurar, localize o componente OSGi e toque no título para editá-lo
+1. Para configurar, localize o componente OSGi e selecione o título para editar
    ![Configuração OSGi](./assets/configuring-osgi/configuration.png)
 1. Edite os valores da propriedade de configuração OSGi por meio da interface do usuário da Web, conforme necessário
 1. Registre a Identidade persistente (PID) no local seguro. Isso é usado posteriormente para gerar o JSON de configuração do OSGi
-1. Toque em Salvar
+1. Selecione Salvar
 1. Navegue até OSGi > Impressora de configuração do instalador OSGi
 1. Cole no PID copiado na Etapa 5, verifique se o Formato de serialização está definido como &quot;OSGi Configurator JSON&quot;
-1. Toque em Imprimir
+1. Selecionar impressão
 1. A configuração do OSGi no formato JSON será exibida na seção Propriedades da configuração serializada
    ![Impressora de configuração do instalador OSGi](./assets/configuring-osgi/osgi-installer-configurator-printer.png)
 1. No IDE, abra o `ui.apps` projetar, localizar ou criar a pasta de configuração (`/apps/.../config.<runmode>`) que direciona os modos de execução que a nova configuração do OSGi precisa ter em vigor.

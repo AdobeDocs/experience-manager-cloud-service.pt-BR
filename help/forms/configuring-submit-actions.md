@@ -2,9 +2,9 @@
 title: Como configurar uma ação enviar para um formulário adaptável?
 description: Um Formulário adaptável fornece várias Ações de envio. Uma Ação de envio define como um Formulário adaptável é processado após o envio. Você pode usar as Ações de envio integradas ou criar as suas próprias ações.
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 0e6c4e6745a03e0d48c535e2e113d2a7e5ff4e78
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3859'
+source-wordcount: '3805'
 ht-degree: 2%
 
 ---
@@ -264,7 +264,7 @@ Para conectar o AEM Forms à sua lista do Microsoft® Sharepoint:
 
 1. Clique em **[!UICONTROL Conectar]**. Em uma conexão bem-sucedida, a variável `Connection Successful` é exibida.
 1. Selecionar **[!UICONTROL Site do SharePoint]** e **[!UICONTROL Lista do SharePoint]** na lista suspensa.
-1. Toque **[!UICONTROL Criar]** para criar a configuração de nuvem do Microsoft® SharePointList.
+1. Selecionar **[!UICONTROL Criar]** para criar a configuração de nuvem do Microsoft® SharePointList.
 
 
 #### Usar o Enviar usando o Modelo de dados de formulário em um Formulário adaptável {#use-submit-using-fdm}
@@ -393,7 +393,7 @@ Para definir valores de uma configuração, [Gerar configurações de OSGi usand
 
 ## Enviar para o Power Automate {#microsoft-power-automate}
 
-Você pode configurar um Formulário adaptável para executar um fluxo da nuvem do Microsoft® Power Automate no envio. O formulário adaptável configurado envia dados capturados, anexos e documentos de registro para processamento no fluxo da nuvem do Power Automate. Ele ajuda você a criar uma experiência personalizada de captura de dados, aproveitando o poder do Microsoft® Power Automate para criar lógicas de negócios sobre dados capturados e automatizar os fluxos de trabalho do cliente. Estes são alguns exemplos do que você pode fazer após integrar um formulário adaptável ao Microsoft® Power Automate:
+Você pode configurar um Formulário adaptável para executar um fluxo da nuvem do Microsoft® Power Automate no envio. O formulário adaptável configurado envia dados capturados, anexos e documentos de registro para processamento no fluxo da nuvem do Power Automate. Ele ajuda você a criar uma experiência personalizada de captura de dados, aproveitando o poder do Microsoft® Power Automate para criar lógicas comerciais sobre dados capturados e automatizar os fluxos de trabalho do cliente. Estes são alguns exemplos do que você pode fazer após integrar um formulário adaptável ao Microsoft® Power Automate:
 
 * Usar dados adaptáveis do Forms em processos de negócios do Power Automate
 * Use o Power Automate para enviar dados capturados para mais de 500 fontes de dados ou qualquer API disponível publicamente

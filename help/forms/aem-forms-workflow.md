@@ -4,10 +4,10 @@ seo-title: Rapidly build Adaptive Forms-based processes, automate document servi
 description: Use o AEM Forms Workflow para automatizar e criar rapidamente workflows de processos de negócios. Por exemplo, análise e aprovação, geração de PDF, fluxos de trabalho de Adobe Sign.
 uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
 topic-tags: publish, document_services
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2392'
-ht-degree: 2%
+source-wordcount: '2373'
+ht-degree: 1%
 
 ---
 
@@ -36,7 +36,7 @@ O diagrama a seguir representa um procedimento completo para criar, executar e m
 
 ![introduction-to-aem-forms-workflow](assets/introduction-to-aem-forms-workflow.jpg)
 
-## Antes de você iniciar {#before-you-start}
+## Antes de começar {#before-you-start}
 
 * Um fluxo de trabalho é uma representação de um processo de negócios real. Mantenha o processo de negócios real e a lista dos participantes do processo de negócios prontos. Além disso, mantenha o material de apoio (Adaptive Forms, PDF Documents e muito mais) pronto antes de começar a criar um workflow.
 * Um fluxo de trabalho pode ter vários estágios. Esses estágios são exibidos na Caixa de entrada do AEM e ajudam a relatar o progresso do fluxo de trabalho. Divida o processo de negócios em estágios lógicos.
@@ -65,8 +65,8 @@ O exemplo cria um modelo de fluxo de trabalho para uma solicitação de hipoteca
 
 1. Abra o console Modelos de fluxo de trabalho. O URL padrão é `https://[server]:[port]/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models`
 1. Selecionar **Criar**, depois **Criar modelo**. A caixa de diálogo Adicionar modelo de fluxo de trabalho é exibida.
-1. Insira o **Título** e **Nome** (opcional). Por exemplo, uma solicitação de hipoteca. Toque **Concluído**.
-1. Selecione o modelo de workflow criado e toque em **Editar**. Agora é possível adicionar etapas do fluxo de trabalho para criar uma lógica de negócios. Ao criar um modelo de fluxo de trabalho pela primeira vez, ele contém:
+1. Insira o **Título** e **Nome** (opcional). Por exemplo, uma solicitação de hipoteca. Selecionar **Concluído**.
+1. Selecione o modelo de workflow criado e **Editar**. Agora é possível adicionar etapas do fluxo de trabalho para criar uma lógica de negócios. Ao criar um modelo de fluxo de trabalho pela primeira vez, ele contém:
 
    * As etapas: Início do fluxo e Fim do fluxo. Essas etapas representam o início e o fim do workflow. Essas etapas são obrigatórias e não podem ser editadas ou removidas.
    * Um exemplo de etapa do participante chamada Etapa 1. Esta etapa é configurada para atribuir um item de trabalho ao usuário administrador. Remova esta etapa.
@@ -79,7 +79,7 @@ O exemplo cria um modelo de fluxo de trabalho para uma solicitação de hipoteca
 
 1. Criar estágios de fluxo de trabalho. Um fluxo de trabalho pode ter vários estágios. Esses estágios são exibidos na Caixa de entrada do AEM e relatam o progresso do fluxo de trabalho.
 
-   Para definir um estágio, toque no ![info-circle](assets/info-circle.png) ícone para abrir as propriedades do modelo de fluxo de trabalho, abra o **Estágios** , adicione estágios para o modelo de fluxo de trabalho e toque em **Salvar e fechar**. Para o exemplo de aplicativo de hipoteca, crie estágios: solicitação de empréstimo, status da solicitação de empréstimo, documentos a serem assinados e documento de empréstimo assinado.
+   Para definir um estágio, selecione a variável ![info-circle](assets/info-circle.png) ícone para abrir as propriedades do modelo de fluxo de trabalho, abra o **Estágios** , adicione estágios para o modelo de fluxo de trabalho e selecione **Salvar e fechar**. Para o exemplo de aplicativo de hipoteca, crie estágios: solicitação de empréstimo, status da solicitação de empréstimo, documentos a serem assinados e documento de empréstimo assinado.
 
 1. Arraste e solte a variável **Atribuir tarefa** avança o navegador para o modelo de fluxo de trabalho. Faça dela a primeira etapa do modelo.
 
@@ -117,7 +117,7 @@ O exemplo cria um modelo de fluxo de trabalho para uma solicitação de hipoteca
 
    Para o exemplo de hipoteca, adicione um gerar Documento de registro, duas etapas de atribuição de tarefa e uma etapa de documento de sinal à Ramificação 1 do modelo, conforme exibido na imagem abaixo. Uma etapa de atribuição de tarefa é exibir e enviar **Documentos de empréstimo a assinar ao requerente** e outro componente da tarefa atribuída é **para exibir documentos assinados**. Além disso, adicione um componente Atribuir tarefa à ramificação 2. Ela é ativada quando um usuário toca em Rejeitar na Caixa de entrada do AEM.
 
-   Para o conjunto completo de valores de todos os campos das etapas de atribuição de tarefa, etapa Documento de registro e etapa de documento de assinatura configurada por exemplo, aplicação de hipoteca, importe o pacote de exemplo, disponível para download no início desta seção.
+   Para o conjunto completo de valores de todos os campos das etapas Atribuir tarefa, etapa Documento de registro e etapa assinar documento configurada por exemplo, aplicação de hipoteca, importar o pacote de exemplo, disponível para download no início desta seção.
 
    O modelo de fluxo de trabalho está pronto. É possível iniciar o workflow por meio de vários métodos. Para obter detalhes, consulte [Inicie um fluxo de trabalho centrado no Forms no OSGi](#launch).
 
@@ -214,7 +214,7 @@ Você pode configurar as Ações enviar de um formulário adaptável para inicia
 An administrator (a member of fd-administrators group) can configure a network folder to run a pre-configured workflow when a user places a file (such as a PDF file) in the folder. After the workflow completes, it can save the result file to a specified output folder. Such a folder is known as [Watched Folder](watched-folder-in-aem-forms.md). Perform the following procedure to configure a watched folder to launch a workflow:
 
 1. On your AEM author instance, go to ![tools-1](assets/tools-1.png) > **[!UICONTROL Forms]** > **[!UICONTROL Configure Watched Folder]**. A list of already configured watched folders is displayed.
-1. Tap **[!UICONTROL New]**. A list of fields is displayed. Specify a value for the following fields to configure a Watched Folder for a workflow:
+1. Select **[!UICONTROL New]**. A list of fields is displayed. Specify a value for the following fields to configure a Watched Folder for a workflow:
 
 <table>
  <tbody>
@@ -245,7 +245,7 @@ An administrator (a member of fd-administrators group) can configure a network f
  </tbody>
 </table>
 
-1. Tap **Advanced**. Specify a value for the following field and taps **Create**. The Watched Folder is configured to launch a workflow. Now, whenever a file is placed in the input directory of the Watched Folder, the specified workflow is triggered.
+1. Select **Advanced**. Specify a value for the following field and taps **Create**. The Watched Folder is configured to launch a workflow. Now, whenever a file is placed in the input directory of the Watched Folder, the specified workflow is triggered.
 
    | Field |Description |
    |---|---|
@@ -269,7 +269,7 @@ You can use the Assign Task and Send Email steps of AEM Workflows to send an ema
 
 ### Limpar instâncias de fluxo de trabalho {#purge-workflow-instances}
 
-Minimizar o número de instâncias de fluxo de trabalho aumenta o desempenho do motor de workflow. Portanto, você pode remover regularmente do repositório as instâncias de fluxo de trabalho concluídas ou em execução. Para obter informações detalhadas, consulte [Limpeza regular de instâncias de fluxo de trabalho](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/maintenance.html?lang=pt-BR) limpeza de instâncias de fluxo de trabalho
+Minimizar o número de instâncias de fluxo de trabalho aumenta o desempenho do mecanismo de fluxo de trabalho, para que você possa remover regularmente do repositório as instâncias de fluxo de trabalho concluídas ou em execução. Para obter informações detalhadas, consulte [Limpeza regular de instâncias de fluxo de trabalho](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/maintenance.html?lang=pt-BR) limpeza de instâncias de fluxo de trabalho
 
 
 >[!MORELIKETHIS]

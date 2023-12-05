@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Collections,Asset Management
 role: User
 exl-id: b0798adc-56a4-4577-b4ee-8d1fca3bff09
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2400'
-ht-degree: 19%
+source-wordcount: '2391'
+ht-degree: 18%
 
 ---
 
@@ -88,7 +88,7 @@ Uma coleção inteligente usa critérios de pesquisa para preencher ativos dinam
    >
    >Se você selecionar **[!UICONTROL Público]**, a coleção inteligente ficará disponível para todos com a função Proprietário depois de criá-la. Se você cancelar a variável **[!UICONTROL Público]** , o grupo de usuários do DAM não está mais associado à coleção inteligente.
 
-1. Selecionar **[!UICONTROL Salvar]** para criar a coleção inteligente e feche a caixa de mensagem para concluir o processo. A nova coleção inteligente também é adicionada à lista **[!UICONTROL Pesquisas salvas.]**
+1. Selecionar **[!UICONTROL Salvar]** para criar a coleção inteligente e feche a caixa de mensagem para concluir o processo. A nova coleção inteligente também é adicionada à **[!UICONTROL Pesquisas salvas]** lista.
 O rótulo do botão **[!UICONTROL Criar seleção inteligente]** muda para **[!UICONTROL Editar seleção inteligente]**. Para editar as configurações da coleção inteligente, selecione **[!UICONTROL Arquivos]** na lista **[!UICONTROL Arquivos e pastas]**. Em seguida, selecione o **[!UICONTROL Editar seleção inteligente]** botão.
 
 ## Adicionar ativos a uma coleção {#add-assets-to-a-collection}
@@ -114,7 +114,7 @@ As coleções inteligentes são criadas salvando uma pesquisa para que você pos
 1. Na lista **[!UICONTROL Pesquisas salvas]**, selecione a coleção inteligente que deseja modificar. O painel Pesquisar exibe os filtros configurados para a pesquisa salva.
 1. No **[!UICONTROL Arquivos e pastas]** selecione **[!UICONTROL Arquivos]**.
 1. Modifique um ou mais filtros, conforme necessário. Selecionar **[!UICONTROL Editar coleção inteligente]**. Também é possível editar o nome da coleção inteligente.
-1. Selecione **[!UICONTROL Salvar]**. A variável **[!UICONTROL Editar coleção inteligente]** será exibida.
+1. Selecionar **[!UICONTROL Salvar]**. A variável **[!UICONTROL Editar coleção inteligente]** será exibida.
 1. Selecionar **[!UICONTROL Substituir]** para substituir a coleção inteligente original pela coleção editada. Como alternativa, selecione **[!UICONTROL Salvar como]** para salvar a coleção editada separadamente.
 1. Na caixa de diálogo de confirmação, selecione **[!UICONTROL Salvar]** para concluir o processo.
 
@@ -231,7 +231,7 @@ Você pode adicionar uma coleção a outra coleção, criando assim uma coleçã
 
 Na interface do usuário do Assets, pesquise ou filtre ativos com base em determinadas regras, critérios de pesquisa ou aspectos de pesquisa personalizados. Se salvá-los como **[!UICONTROL Pesquisas salvas]**, você poderá acessá-los posteriormente na lista **[!UICONTROL Pesquisas salvas]** do painel Filtro. Criar uma pesquisa salva também cria uma coleção inteligente.
 
-Pesquisas salvas são criadas quando você cria uma coleção inteligente. As coleções inteligentes são adicionadas automaticamente à lista **[!UICONTROL Pesquisas salvas]**. A consulta Pesquisas salvas da coleção é salva na propriedade `dam:query`, no CRXDE no local relativo `/content/dam/collections/`. Não há limites para as pesquisas que você pode salvar e nas pesquisas salvas exibidas na lista.
+Pesquisas salvas são criadas quando você cria uma coleção inteligente. As coleções inteligentes são adicionadas automaticamente à lista **[!UICONTROL Pesquisas salvas]**. A consulta Pesquisas salvas da coleção é salva na variável `dam:query` propriedade no CRXDE no local relativo `/content/dam/collections/`. Não há limites para as pesquisas que você pode salvar e nas pesquisas salvas exibidas na lista.
 
 >[!NOTE]
 >
@@ -254,7 +254,7 @@ Você pode executar um fluxo de trabalho para os ativos em uma coleção. Se a c
 
 1. No console Coleções, selecione uma coleção na qual deseja executar um fluxo de trabalho.
 1. Selecione o ícone GlobalNav e escolha **[!UICONTROL Linha do tempo]** da lista.
-1. Na linha do tempo, selecione ou toque no ícone Cursor na parte inferior e selecione **[!UICONTROL Iniciar fluxo de trabalho]**.
+1. Na linha do tempo, selecione o ícone Cursor na parte inferior e selecione **[!UICONTROL Iniciar fluxo de trabalho]**.
 1. Na seção **[!UICONTROL Iniciar fluxo de trabalho]**, selecione um modelo de fluxo de trabalho da lista. Por exemplo, selecione o modelo **[!UICONTROL Atualizar ativo DAM]**.
 1. Insira um título para o fluxo de trabalho e selecione **[!UICONTROL Início]**.
 1. Na caixa de diálogo, selecione **[!UICONTROL Continuar]**. O fluxo de trabalho é executado em todos os ativos na coleção.

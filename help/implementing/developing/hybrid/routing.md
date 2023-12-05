@@ -2,9 +2,9 @@
 title: Roteamento de modelo SPA
 description: Para aplicativos de página única no AEM, o aplicativo é responsável pelo roteamento. Este documento descreve o mecanismo de encaminhamento, o contrato e as opções disponíveis.
 exl-id: 1186b64e-11f8-43a6-bc75-450c4d7587ec
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '438'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Por padrão, esse comportamento é ativado automaticamente. Para desativá-lo, o
 <meta property="cq:pagemodel_router" content="disabled"\>
 ```
 
-Observe que cada rota do SPA deve corresponder a um recurso acessível no AEM (por exemplo, &quot; `/content/mysite/mypage"`), uma vez que `PageModelManager` O tentará carregar automaticamente o modelo de página correspondente quando a rota for selecionada. Embora, se necessário, o SPA também possa definir uma &quot;lista de bloqueios&quot; de rotas que devem ser ignoradas pelo `PageModelManager`:
+Cada rota do SPA deve corresponder a um recurso acessível no AEM (por exemplo, &quot; `/content/mysite/mypage"`), uma vez que `PageModelManager` O tentará carregar automaticamente o modelo de página correspondente quando a rota for selecionada. Embora, se necessário, o SPA também possa definir uma &quot;lista de bloqueios&quot; de rotas que devem ser ignoradas pelo `PageModelManager`:
 
 ```
 <meta property="cq:pagemodel_route_filters" content="route/not/found,^(.*)(?:exclude/path)(.*)"/>

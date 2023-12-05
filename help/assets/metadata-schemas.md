@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 9e94afeb-1c54-4653-bf52-b0910c0cb6c1
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '2638'
-ht-degree: 11%
+source-wordcount: '2627'
+ht-degree: 9%
 
 ---
 
@@ -43,7 +43,7 @@ Para exibir uma lista de formulários ou modelos, em [!DNL Experience Manager] i
 
 | Modelos | | Descrição |
 |---|---|---|
-| [!UICONTROL default] | | O formulário básico de esquema de metadados para ativos. |
+| [!UICONTROL padrão] | | O formulário básico de esquema de metadados para ativos. |
 | | Os seguintes formulários secundários herdam as propriedades da [!UICONTROL padrão] formulário: | |
 | | <ul><li>[!UICONTROL dm_video]</li></ul> | Formulário de esquema para vídeos do Dynamic Media. |
 | | <ul><li>[!UICONTROL imagem]</li></ul> | Formulário de esquema para imagens com o tipo MIME, como `image/jpeg` e `image/png`. <br> A variável [!UICONTROL imagem] O formulário tem os seguintes modelos de formulário filho: <ul><li> [!UICONTROL jpeg]: formulário de esquema para ativos com subtipo [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff]: formulário do esquema para os ativos com TIFF de subtipo.</li></ul> |
@@ -92,17 +92,17 @@ A variável **[!UICONTROL Formulário de criação]** A guia lista itens de form
 | -------------------------------- | ----------------------------------------------------------------------------------- |
 | [!UICONTROL Cabeçalho da seção] | Adicione um cabeçalho de seção para obter uma lista de componentes comuns. |
 | [!UICONTROL Texto em linha única] | Adicione uma propriedade de texto de linha única. Ele é armazenado como uma string. |
-| [!UICONTROL Texto multivalor] | Adiciona uma propriedade de texto multivalor. Ele é armazenado como uma matriz de sequência. |
+| [!UICONTROL Texto multivalor] | Adicione uma propriedade de texto de vários valores. Ele é armazenado como uma matriz de sequência. |
 | [!UICONTROL Número] | Adiciona um componente de número. |
 | [!UICONTROL Data] | Adiciona um componente de data. |
 | [!UICONTROL Lista suspensa] | Adiciona uma lista suspensa. |
-| [!UICONTROL Tags padrão] | Adicionar uma tag. |
+| [!UICONTROL Tags padrão] | Adicione uma tag. |
 | [!UICONTROL Tags inteligentes] | Adicione para aumentar os recursos de pesquisa inserindo tags de metadados automaticamente. |
 | [!UICONTROL Campo oculto] | Adicione um campo oculto. Ele é enviado como um parâmetro POST quando o ativo é salvo. |
 | [!UICONTROL Ativo referenciado por] | Adicione este componente para visualizar a lista de ativos referenciados pelo ativo. |
-| [!UICONTROL Fazer referência ao ativo] | Adicionar para exibir uma lista de ativos que fazem referência ao ativo. |
+| [!UICONTROL Referência de ativo] | Adicionar para exibir uma lista de ativos que fazem referência ao ativo. |
 | [!UICONTROL Referências de produtos] | Adicionar para mostrar a lista de produtos vinculados ao ativo. |
-| [!UICONTROL Metadados do contexto] | Adicione para controlar a exibição de outras guias de metadados na página de propriedades dos ativos. |
+| [!UICONTROL Metadados contextuais] | Adicione para controlar a exibição de outras guias de metadados na página de propriedades dos ativos. |
 
 <!-- TBD: Ratings are not available in Experience Manager as a Cloud Service. Removed via cqdoc-18089 ticket. 
 | [!UICONTROL Asset Rating]        | Add to display options for rating the asset.                                       |
@@ -223,12 +223,12 @@ Somente os ativos carregados na pasta à qual esse esquema é aplicado estão em
 A herança de metadados por ativos tem como base o esquema aplicado à pasta de nível superior na hierarquia. O mesmo esquema é aplicado ou herdado pelas subpastas. Se um esquema diferente for aplicado no nível da subpasta, a herança será interrompida.
 
 1. Entrada [!DNL Experience Manager] , navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Assets]** > **[!UICONTROL Esquemas de metadados]**. A página **[!UICONTROL Formulários de esquema de metadados]** é exibida.
-1. Marque a caixa de seleção ao lado de um formulário, por exemplo, o formulário de metadados padrão, e clique no **[!UICONTROL Copiar]** e salve-o como um formulário personalizado. Especifique um nome personalizado para o formulário, por exemplo `my_default`. Como alternativa, você pode criar um formulário personalizado.
+1. Marque a caixa de seleção ao lado de um formulário, por exemplo, o formulário de metadados padrão, e clique no **[!UICONTROL Copiar]** e salve-o como um formulário personalizado. Especifique um nome personalizado para o formulário, por exemplo, `my_default`. Como alternativa, você pode criar um formulário personalizado.
 
 1. No **[!UICONTROL Forms do esquema de metadados]** selecione a `my_default` e clique em **[!UICONTROL Editar]**.
 1. No **[!UICONTROL Editor de esquema de metadados]** adicione um campo de texto ao formulário de esquema. Por exemplo, adicionar um campo com o rótulo **[!UICONTROL Categoria]**.
 1. Clique em **[!UICONTROL Salvar]**. O formulário modificado está listado no **[!UICONTROL Forms do esquema de metadados]** página.
-1. Selecionar **[!UICONTROL Aplicar às pastas]** na barra de ferramentas para aplicar os metadados personalizados a uma pasta.
+1. Selecionar **[!UICONTROL Aplicar a pastas]** na barra de ferramentas para aplicar os metadados personalizados a uma pasta.
 1. Selecione a pasta na qual aplicar o esquema modificado e selecione **[!UICONTROL Aplicar]**.
 1. Se a pasta tiver o outro esquema de metadados aplicado, uma mensagem será exibida avisando que você está prestes a substituir o esquema de metadados existente. Clique em **Substituir**.
 1. Clique em **OK** para fechar a mensagem de sucesso.
@@ -245,7 +245,7 @@ Você pode definir campos obrigatórios no nível da pasta, que é aplicado aos 
 1. Clique no logotipo do Experience Manager e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Assets]** > **[!UICONTROL Esquemas de metadados]**. A página **[!UICONTROL Formulários de esquema de metadados]** é exibida.
 1. Salve o formulário de metadados padrão como um formulário personalizado. Por exemplo, salve como `my_default`.
 1. Edite o formulário personalizado. Adicione um campo obrigatório. Por exemplo, adicione um **[!UICONTROL Categoria]** e torne o campo obrigatório.
-1. Clique em **[!UICONTROL Salvar]**. O formulário modificado está listado no **[!UICONTROL Forms do esquema de metadados]** página. Selecione o formulário e **[!UICONTROL Aplicar às pastas]** na barra de ferramentas para aplicar os metadados personalizados a uma pasta.
+1. Clique em **[!UICONTROL Salvar]**. O formulário modificado está listado no **[!UICONTROL Forms do esquema de metadados]** página. Selecione o formulário e **[!UICONTROL Aplicar a pastas]** na barra de ferramentas para aplicar os metadados personalizados a uma pasta.
 1. Navegue até a pasta e faça upload de alguns ativos com metadados ausentes para o campo obrigatório adicionado ao formulário personalizado. Uma mensagem para os metadados ausentes do campo obrigatório é exibida na exibição Cartão do ativo.
 1. (Opcional) Acesso `https://[server]:[port]/system/console/components/`. Configurar e habilitar `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` componente desativado por padrão. Defina uma frequência na qual o Experience Manager verifica a validade dos metadados nos ativos.
 

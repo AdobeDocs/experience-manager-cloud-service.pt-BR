@@ -2,9 +2,9 @@
 title: Adicionar o ContextHub a páginas e acessar lojas
 description: Adicione o ContextHub às suas páginas para ativar os recursos do ContextHub e para vincular às bibliotecas de JavaScript do ContextHub
 exl-id: 8bfe2cff-3944-4e86-a95c-ebf1cb13913c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '897'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Para ativar os recursos do ContextHub e vincular às bibliotecas JavaScript do C
 <sly data-sly-resource="${'contexthub' @ resourceType='granite/contexthub/components/contexthub'}"/>
 ```
 
-Observe que você também precisa configurar se a barra de ferramentas do ContextHub aparece no modo de Visualização. Consulte [Exibição e ocultação da interface do usuário do ContextHub](configuring-contexthub.md#showing-and-hiding-the-contexthub-ui).
+Você também precisa configurar se a barra de ferramentas do ContextHub aparece no modo de Visualização. Consulte [Exibição e ocultação da interface do usuário do ContextHub](configuring-contexthub.md#showing-and-hiding-the-contexthub-ui).
 
 ## Sobre as lojas ContextHub {#about-contexthub-stores}
 
@@ -103,7 +103,7 @@ Os itens de dados individuais são armazenados como um conjunto de pares de chav
 * [getItem](contexthub-api.md#getitem-key)
 * [setItem](contexthub-api.md#setitem-key-value-options)
 
-Observe que os candidatos de armazenamento personalizado podem definir funções adicionais que forneçam acesso aos dados de armazenamento.
+Os candidatos de armazenamento personalizado podem definir funções adicionais que forneçam acesso aos dados armazenados.
 
 >[!NOTE]
 >
@@ -139,7 +139,7 @@ As regras usadas para resolver esses segmentos são resumidas da seguinte maneir
 
 >[!WARNING]
 >
->Os segmentos instalados são fornecidos como configurações de referência para ajudar você a criar sua própria configuração dedicada para o projeto e, como tal, não devem ser usados diretamente.
+>Os segmentos instalados são fornecidos como configurações de referência para ajudar você a criar sua própria configuração dedicada para o projeto. Não os utilize diretamente.
 
 ## Depuração do ContextHub {#debugging-contexthub}
 

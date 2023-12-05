@@ -2,10 +2,10 @@
 title: Práticas recomendadas de gerenciamento de SEO e URL do Adobe Experience Manager as a Cloud Service
 description: Práticas recomendadas de gerenciamento de SEO e URL do Adobe Experience Manager as a Cloud Service
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3705'
-ht-degree: 99%
+source-wordcount: '3539'
+ht-degree: 98%
 
 ---
 

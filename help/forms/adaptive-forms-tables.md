@@ -4,9 +4,9 @@ description: Use o componente Tabela para adicionar tabelas a um Formulário ada
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms
 exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2494'
+source-wordcount: '2476'
 ht-degree: 0%
 
 ---
@@ -89,7 +89,7 @@ Para adicionar ou excluir uma coluna, clique na célula de texto na seção de c
 
 É possível adicionar uma descrição da tabela para explicar como as informações são organizadas que os leitores de tela podem interpretar e ler. Para adicionar a descrição:
 
-1. Selecione a tabela e toque em ![cmppr](assets/cmppr.png) para ver suas propriedades na barra lateral.
+1. Selecione a tabela e selecione ![cmppr](assets/cmppr.png) para ver suas propriedades na barra lateral.
 1. Especifique o resumo na guia Acessibilidade.
 1. Clique em **Concluído**.
 
@@ -107,9 +107,9 @@ Para aplicar a classificação nas colunas da tabela, as células da coluna da t
 
 Para ativar a classificação:
 
-1. Selecione a tabela e toque em ![configure_icon](assets/configure_icon.png) (Configurar). Também é possível selecionar a tabela usando o **Conteúdo** no sidekick da Comunicação interativa.
+1. Selecione a tabela e selecione ![configure_icon](assets/configure_icon.png) (Configurar). Também é possível selecionar a tabela usando o **Conteúdo** no sidekick da Comunicação interativa.
 1. Selecionar **Ativar classificação**.
-1. Toque ![done_icon](assets/done_icon.png) para salvar as propriedades da tabela. Os ícones de classificação, setas para cima e para baixo, nos cabeçalhos das colunas, representam que a classificação foi ativada.
+1. Selecionar ![done_icon](assets/done_icon.png) para salvar as propriedades da tabela. Os ícones de classificação, setas para cima e para baixo, nos cabeçalhos das colunas, representam que a classificação foi ativada.
 
    ![Ativar classificação](assets/enable_sorting_new.png)
 
@@ -128,7 +128,7 @@ Para ativar a classificação:
 
 Execute as seguintes etapas para definir a largura da coluna para uma tabela:
 
-1. No **[!UICONTROL Conteúdo]** toque na guia **[!UICONTROL Tabela]** e toque no botão Configurar (![Configurar](assets/configure-icon.svg))ícone.
+1. No **[!UICONTROL Conteúdo]** , selecione a **[!UICONTROL Tabela]** e selecione o botão Configurar (![Configurar](assets/configure-icon.svg))ícone.
 
 1. Insira a lista separada por vírgulas de valores na **[!UICONTROL Largura da coluna]** para especificar a largura proporcional de cada coluna na tabela. Por exemplo, para uma tabela que inclui 3 colunas, especificando 2,4,6 como o valor na variável **[!UICONTROL Largura da coluna]** o campo resulta na definição da largura das colunas como 2/12 para a primeira coluna, 4/12 para a segunda coluna e 6/12 para a terceira coluna. 2/12 como a largura da primeira coluna refere-se a um sexto da largura do quadro. Da mesma forma, 4/12 define a largura da segunda coluna como um terço da largura da tabela, e 6/12 define a largura da terceira coluna como metade da largura da tabela.
 
@@ -136,9 +136,9 @@ Execute as seguintes etapas para definir a largura da coluna para uma tabela:
 
 Você pode definir o estilo de uma tabela usando o modo Estilo na barra de ferramentas da página. Execute as seguintes etapas para alternar para o modo de estilo e editar o estilo da tabela
 
-1. Na barra de ferramentas da página, antes de Visualizar, toque em ![tela suspensa](assets/canvas-drop-down.png) > **Estilo**.
+1. Na barra de ferramentas da página, antes de Visualizar, selecione ![tela suspensa](assets/canvas-drop-down.png) > **Estilo**.
 
-1. Na barra lateral, selecione a tabela e toque no botão editar ![botão editar](assets/edit-button.png).
+1. Na barra lateral, selecione tabela e clique no botão Editar ![botão editar](assets/edit-button.png).
 Você pode ver as propriedades de estilo na barra lateral.
 
 ![Propriedades de estilo de uma tabela](assets/style-table.png)
@@ -151,7 +151,7 @@ Você pode ver as propriedades de estilo na barra lateral.
 
 As tabelas fornecem suporte pronto para adicionar ou excluir dinamicamente linhas no tempo de execução.
 
-1. Selecione uma linha de tabela e toque em ![cmppr](assets/cmppr.png).
+1. Selecione uma linha de tabela e selecione ![cmppr](assets/cmppr.png).
 1. Na guia Configurações de repetição, especifique as contagens mínima e máxima para limitar o número de linhas na tabela.
 1. Clique em **Concluído**.
 
@@ -328,7 +328,7 @@ Além disso, você pode arrastar e soltar um grupo de elementos de tipo complexo
 * Se você mover linhas para cima e para baixo durante a criação de uma tabela baseada em XSD, alguma perda de dados das linhas da tabela será vista no XML de dados gerado no envio do formulário.
 * Cada célula do corpo em uma tabela padrão tem um nome de elemento predefinido associado a ela. Se adicionar outra tabela no formulário adaptável, as células de corpo padrão na nova tabela terão o mesmo nome de elemento da primeira tabela. Nesse cenário, os dados gerados no envio do formulário incluirão dados nas células do corpo padrão de apenas uma das tabelas. Portanto, renomeie os nomes dos elementos para as células do corpo padrão para mantê-los exclusivos nas tabelas e evitar perda de dados.
 
-  Observe que isso é aplicável somente às células do corpo padrão. Se você adicionar mais linhas ou colunas a uma tabela, gerará automaticamente nomes de elementos exclusivos para células de corpo fora do padrão.
+  Aplicável apenas às células padrão do corpo. Se você adicionar mais linhas ou colunas a uma tabela, gerará automaticamente nomes de elementos exclusivos para células de corpo fora do padrão.
 
 ## Consulte também {#see-also}
 

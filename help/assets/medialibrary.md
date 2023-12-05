@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Publishing
 role: User,Architect,Leader
 exl-id: 4737d5ee-9a93-49f3-9f20-d4368e60e9fb
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 9%
+source-wordcount: '578'
+ht-degree: 7%
 
 ---
 
@@ -94,7 +94,7 @@ As per PM, we must avoid stating such a list, as we do not have a list that make
 >
 >Muitos casos de uso de DAM avançados são atendidos pelo [!DNL Experience Manager Assets]. A licença da Media Library permite que você preencha apenas os casos de uso listados usando o Media Library. Se um caso de uso não estiver listado, não o use com a licença da Media Library. Em caso de dúvidas, entre em contato com o Suporte ao cliente.
 
-Observe que não é possível usar tags inteligentes, [!DNL Asset] link, [!DNL Asset] seletor, marcação em massa, modificar fluxos de trabalho de ativos ou padrão [!DNL Adobe Experience Manager] para acessar o Media Library sem [!DNL Assets] licença.
+Não é possível usar tags inteligentes, [!DNL Asset] link, [!DNL Asset] seletor, marcação em massa, modificar fluxos de trabalho de ativos ou padrão [!DNL Adobe Experience Manager] para acessar o Media Library sem [!DNL Assets] licença.
 
 <!-- TBD: Add a CTA - how to contact Adobe for queries. -->
 

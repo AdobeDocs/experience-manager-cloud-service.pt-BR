@@ -2,10 +2,10 @@
 title: Participar de fluxos de trabalho
 description: Os fluxos de trabalho normalmente incluem etapas que exigem que uma pessoa execute uma atividade em uma página ou ativo.
 exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1507'
-ht-degree: 78%
+ht-degree: 77%
 
 ---
 
@@ -33,7 +33,7 @@ Quando um item de trabalho é atribuído a você (por exemplo, **Aprovar conteú
   ![Notificações na caixa de entrada](/help/sites-cloud/authoring/assets/workflows-inbox.png)
 
 * Ao usar o editor de páginas, a barra de status será exibida:
-   * Os nomes dos fluxos de trabalho que estão sendo aplicados à página, por exemplo, Solicitação de ativação.
+   * O nome do(s) fluxo(s) de trabalho que está sendo aplicado(s) à página; por exemplo, Solicitação de ativação.
    * Quaisquer ações disponíveis para o usuário atual para a etapa atual do fluxo de trabalho, por exemplo, Concluir, Delegar, Exibir detalhes.
    * O número de fluxos de trabalho aos quais a página está sujeita. É possível:
       * use as setas para a esquerda/direita para navegar pelas informações de status dos vários workflows.

@@ -2,9 +2,9 @@
 title: Configurar regras de tradução para conteúdo headless
 description: Saiba como definir regras de tradução para identificar o conteúdo a ser traduzido.
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '912'
 ht-degree: 73%
 
 ---
@@ -73,7 +73,7 @@ No **Configuração de tradução** Há várias opções disponíveis para suas 
    ![Adicionar contexto](assets/add-translation-context.png)
 1. Use o navegador de caminho para selecionar o caminho necessário e selecione **Confirmar o** para salvar. Lembre-se, os fragmentos de conteúdo, que possuem conteúdo headless, geralmente estão localizados em `/content/dam/<your-project>`.
    ![Selecione o caminho](assets/select-context.png)
-1. Selecione o contexto que acabou de criar e selecione **Editar**. Isso abre o **editor de regras de tradução** para configurar as propriedades.
+1. Selecione o contexto que você criou e selecione **Editar**. Isso abre o **editor de regras de tradução** para configurar as propriedades.
    ![Editor de regras de tradução](assets/translation-rules-editor.png)
 1. Por padrão, todas as configurações são herdadas do caminho principal, neste caso: `/content/dam`. Desmarque a opção **Herdar de`/content/dam`** para adicionar novos campos à configuração.
 1. Quando desmarcada, em **Geral** adicionar os nomes das propriedades dos Modelos de fragmento de conteúdo que você [anteriormente identificados como campos para tradução.](getting-started.md#content-models)

@@ -1,18 +1,18 @@
 ---
-title: Integrar visualizadores do Dynamic Media com tags do Analytics e da Adobe Experience Platform
+title: Integrar visualizadores do Dynamic Media com tags Adobe Analytics e Experience Platform
 description: Saiba mais sobre a extensão Dynamic Media Viewers para Tags Experience Platform e Dynamic Media Viewers 5.13. Ele permite que os clientes de Tags do Adobe Analytics e da Platform usem eventos e dados específicos para os Visualizadores do Dynamic Media em sua configuração de Tags Experience Platform.
 contentOwner: Rick Brough
 feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '6661'
-ht-degree: 7%
+source-wordcount: '6701'
+ht-degree: 6%
 
 ---
 
-# Integrar visualizadores do Dynamic Media com tags do Analytics e da Adobe Experience Platform {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
+# Integrar visualizadores do Dynamic Media com tags Adobe Analytics e Experience Platform {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
 
 ## O que é a integração do Dynamic Media Viewers com as tags Adobe Analytics e Experience Platform? {#what-is-dynamic-media-viewers-integration-with-adobe-analytics-and-adobe-launch}
 
@@ -432,7 +432,7 @@ Consulte também [Guia de implementação do Analytics](https://experienceleague
 
 1. Comece acessando o Adobe Analytics pelo Experience Cloud [home page](https://experience.adobe.com/#/home). Na barra de menus, selecione o ícone Soluções (uma tabela de três por três pontos) próximo ao canto superior direito da página e, em seguida, selecione **[!UICONTROL Analytics]**.
 
-   ![2019-07-22_18-08-47](assets/2019-07-22_18-08-47.png)
+   ![07-22_18-08-47-2019](assets/2019-07-22_18-08-47.png)
 
    Agora selecione um conjunto de relatórios.
 
@@ -448,7 +448,7 @@ Consulte também [Guia de implementação do Analytics](https://experienceleague
 
    No Adobe Analytics, os conjuntos de relatórios são gerenciados em **[!UICONTROL Admin]** > **[!UICONTROL Conjuntos de relatórios]**.
 
-   ![2019-07-22_18-09-49](assets/2019-07-22_18-09-49.png)
+   ![07-22_18-09-49-2019](assets/2019-07-22_18-09-49.png)
 
    Agora, configure as variáveis do Adobe Analytics.
 
@@ -506,7 +506,7 @@ Após configurar as Tags do Experience Platform, o seguinte é configurado para 
 
 Uma propriedade nas Tags de Experience Platform é uma configuração nomeada que mantém todas as suas configurações unidas. Uma biblioteca de definições de configuração é gerada e publicada em diferentes níveis de ambiente (desenvolvimento, armazenamento temporário e produção).
 
-Consulte também [Configurar uma propriedade de toque](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html).
+Consulte também [Configurar uma propriedade select](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html).
 
 **Para criar uma propriedade nas Tags Experience Platform:**
 
@@ -670,7 +670,7 @@ A configuração de Experience Manager consiste nas duas etapas principais a seg
 
 1. No autor do Experience Manager, selecione o ícone Ferramentas (martelo) e vá para **[!UICONTROL Segurança]** > **[!UICONTROL Configurações do Adobe IMS]**.
 
-   ![2019-07-25_11-52-58](assets/2019-07-25_11-52-58.png)
+   ![07-25_11-52-58-2019](assets/2019-07-25_11-52-58.png)
 
 1. Na página Configuração IMC de Adobe, próximo ao canto superior esquerdo, selecione **[!UICONTROL Criar]**.
 1. No **[!UICONTROL Configurações da conta técnica do Adobe IMS]** página, no campo **[!UICONTROL Solução em nuvem]** selecione **[!UICONTROL Coleta de dados Experience Platform]**.
@@ -682,7 +682,7 @@ A configuração de Experience Manager consiste nas duas etapas principais a seg
 
    Para descartar a caixa de diálogo Informações, selecione **[!UICONTROL OK]**.
 
-   ![2019-07-25_12-09-24](assets/2019-07-25_12-09-24.png)
+   ![24/07/2019](assets/2019-07-25_12-09-24.png)
 
 1. Selecionar **[!UICONTROL Baixar chave pública]** para baixar um arquivo de chave pública (`*.crt`) ao seu sistema local.
 
@@ -690,7 +690,7 @@ A configuração de Experience Manager consiste nas duas etapas principais a seg
    >
    >Neste ponto, ***deixar aberto*** o **[!UICONTROL Configurações da conta técnica do Adobe IMS]** página; ***não*** fechar a página e ***não*** selecionar **[!UICONTROL Próxima]**. Você retornará posteriormente a esta página nas etapas.
 
-   ![2019-07-25_12-52-24](assets/2019-07-25_12-52-24.png)
+   ![25_12-52-2019-07-24](assets/2019-07-25_12-52-24.png)
 
 1. Em uma nova guia do navegador, navegue até o [Console do Adobe Developer](https://developer.adobe.com/console/integrations).
 
@@ -701,7 +701,7 @@ A configuração de Experience Manager consiste nas duas etapas principais a seg
 
 1. No segundo **[!UICONTROL Criar uma nova integração]** página, habilitar (ativar) a **[!UICONTROL API de tags do Experience Platform]** botão de opção. No canto inferior direito da página, selecione **[!UICONTROL Continuar]**.
 
-   ![2019-07-25_13-13-54](assets/2019-07-25_13-13-54.png)
+   ![07-25_13-13-54-2019](assets/2019-07-25_13-13-54.png)
 
 1. No terceiro **[!UICONTROL Criar uma nova integração]** faça o seguinte:
 
@@ -715,12 +715,12 @@ A configuração de Experience Manager consiste nas duas etapas principais a seg
 
    * No **[!UICONTROL Selecione um ou mais perfis de produto para a API de tags do Experience Platform]** selecione o perfil de produto chamado **[!UICONTROL Tags - &lt;your_company_name>]**.
 
-   ![2019-07-25_13-49-18](assets/2019-07-25_13-49-18.png)
+   ![25_13-49-18-2019](assets/2019-07-25_13-49-18.png)
 
 1. Selecionar **[!UICONTROL Criar integração]**.
 1. No **[!UICONTROL Integração criada]** selecione **[!UICONTROL Prossiga para os detalhes da integração]**.
 
-   ![2019-07-25_14-16-33](assets/2019-07-25_14-16-33.png)
+   ![07-25_14-16-33-2019](assets/2019-07-25_14-16-33.png)
 
 1. Uma página de detalhes das Integrações é exibida, semelhante ao seguinte:
 
@@ -728,19 +728,19 @@ A configuração de Experience Manager consiste nas duas etapas principais a seg
    >
    >***Deixe aberta esta página de Detalhes da integração***. Você precisará de várias informações do **[!UICONTROL Visão geral]** e **[!UICONTROL JWT]** guias em instantes.
 
-   ![2019-07-25_14-35-30](assets/2019-07-25_14-35-30.png)
+   ![25_14-35-30-2019](assets/2019-07-25_14-35-30.png)
    *Página de detalhes da integração*
 
 1. Retorne à página **[!UICONTROL Configuração de conta técnica do Adobe IMS]** que você deixou aberta anteriormente. No canto superior direito da página, selecione **[!UICONTROL Próxima]** para abrir o **[!UICONTROL Conta]** página no **[!UICONTROL Configurações da conta técnica do Adobe IMS]** janela.
 
    (Se você tiver fechado a página anteriormente, volte para o autor do Experience Manager e vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Segurança]** > **[!UICONTROL Configurações do Adobe IMS]**. Selecione **[!UICONTROL Criar]**. No **[!UICONTROL Solução em nuvem]** selecione **[!UICONTROL Tags do Experience Platform]**. Na lista suspensa **[!UICONTROL Certificado]**, selecione o nome do certificado criado anteriormente.
 
-   ![2019-07-25_20-57-50](assets/2019-07-25_20-57-50.png)
+   ![25_20-57-50-2019](assets/2019-07-25_20-57-50.png)
    *Configuração de conta técnica do Adobe IMS - Página Certificado*
 
 1. A variável **[!UICONTROL Conta]** A página tem cinco campos que precisam ser preenchidos usando as informações da página Detalhes da integração da etapa anterior.
 
-   ![2019-07-25_20-42-45](assets/2019-07-25_20-42-45.png)
+   ![25_20-42-45-2019](assets/2019-07-25_20-42-45.png)
    *Configuração de conta técnica do Adobe IMS - Página Conta*
 
 1. No **[!UICONTROL Conta]** preencha os seguintes campos:
@@ -748,18 +748,18 @@ A configuração de Experience Manager consiste nas duas etapas principais a seg
    * **[!UICONTROL Título]** - Insira um título de conta descritivo.
    * **[!UICONTROL Servidor de autorização]** - Retorne à página de detalhes da integração aberta anteriormente. Selecione o **[!UICONTROL JWT]** guia. Copie o nome do servidor - sem o caminho - como destacado abaixo.
 
-   Retorne à página **[!UICONTROL Conta]** e cole o nome no respectivo campo.
+   Retorne para a **[!UICONTROL Conta]** e cole o nome no respectivo campo.
 Por exemplo, `https://ims-na1.adobelogin.com/`
 (o nome do servidor de exemplo é somente para fins explicativos)
 
-   ![2019-07-25_15-01-53](assets/2019-07-25_15-01-53.png)
+   ![25_15-01-53-2019](assets/2019-07-25_15-01-53.png)
    *Página de detalhes da integração - guia JWT*
 
 1. **[!UICONTROL Chave da API]** - Retorne à página de detalhes da integração. Selecione o **[!UICONTROL Visão geral]** e, à direita do **[!UICONTROL Chave da API (ID do cliente)]** selecione **[!UICONTROL Copiar]**.
 
    Retorne à página **[!UICONTROL Conta]** e cole a chave no respectivo campo.
 
-   ![2019-07-25_14-35-333](assets/2019-07-25_14-35-333.png)
+   ![25_14-35-333-2019](assets/2019-07-25_14-35-333.png)
    *Página de detalhes da integração*
 
 1. **[!UICONTROL Segredo do cliente]** - Retorne à página Detalhes da integração. No **[!UICONTROL Visão geral]** selecione **[!UICONTROL Recuperar segredo do cliente]**. À direita do **[!UICONTROL Client secret]** selecione **[!UICONTROL Copiar]**.
@@ -770,12 +770,12 @@ Por exemplo, `https://ims-na1.adobelogin.com/`
 
    Retorne à página **[!UICONTROL Conta]** e cole o código no respectivo campo.
 
-   ![2019-07-25_21-59-12](assets/2019-07-25_21-59-12.png)
+   ![25_21-59-12-2019](assets/2019-07-25_21-59-12.png)
    *Página de detalhes da integração - guia JWT*
 
    A página Conta, com todos os campos preenchidos, é exibida semelhante ao seguinte:
 
-   ![2019-07-25_22-08-30](assets/2019-07-25_22-08-30.png)
+   ![25_22-08-30-2019](assets/2019-07-25_22-08-30.png)
 
 1. Próximo ao canto superior direito do **[!UICONTROL Conta]** selecione **[!UICONTROL Criar]**.
 
@@ -787,7 +787,7 @@ Por exemplo, `https://ims-na1.adobelogin.com/`
 
 1. No autor do Experience Manager, próximo ao canto superior esquerdo, selecione o ícone Ferramentas (martelo) e vá para **[!UICONTROL Cloud Service]** > **[!UICONTROL Configurações de tags Experience Platform]**.
 
-   ![2019-07-26_12-10-38](assets/2019-07-26_12-10-38.png)
+   ![07-26_12-10-38-2019](assets/2019-07-26_12-10-38.png)
 
 1. No **[!UICONTROL Configurações de tags Experience Platform]** , no painel esquerdo, selecione um site de Experience Manager para o qual deseja aplicar a configuração de tags de Experience Platform.
 

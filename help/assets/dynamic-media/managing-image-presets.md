@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Image Presets,Viewers,Renditions
 role: User
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3629'
+source-wordcount: '3587'
 ht-degree: 8%
 
 ---
@@ -88,7 +88,7 @@ Para usar o Dynamic Media para visualizar e gerar representações dinâmicas pa
 
 Você acessa `Rasterize PDF/AI Image Preview Rendition` processar opções de componente por meio da `DAM Update Asset` fluxo de trabalho.
 
-Selecione Adobe Experience Manager no canto superior esquerdo e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Modelos]**. Na página Modelos de fluxo de trabalho, selecione **[!UICONTROL Ativo de atualização DAM]**, em seguida, selecione na barra de ferramentas **[!UICONTROL Editar]**. Na página de fluxo de trabalho Atualizar ativo do DAM, toque duas vezes no `Rasterize PDF/AI Image Preview Rendition` processar componente para abrir sua caixa de diálogo Propriedades da etapa.
+Selecione Adobe Experience Manager no canto superior esquerdo e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Modelos]**. Na página Modelos de fluxo de trabalho, selecione **[!UICONTROL Ativo de atualização DAM]**, em seguida, selecione na barra de ferramentas **[!UICONTROL Editar]**. Na página de fluxo de trabalho Atualizar ativo do DAM, selecione as `Rasterize PDF/AI Image Preview Rendition` processar componente para abrir sua caixa de diálogo Propriedades da etapa.
 
 #### Opções de Rasterizar representação da exibição de imagens do PDF/AI {#rasterize-pdf-ai-image-preview-rendition-options}
 
@@ -138,7 +138,7 @@ Você pode definir o tamanho das miniaturas definindo essas configurações na *
 
 Com a etapa **[!UICONTROL Ativos de imagem de processo do Dynamic Media]**, as miniaturas são geradas pelo servidor de imagem e essa configuração é independente da configuração aplicada à etapa **[!UICONTROL Processar miniaturas]**. Gerar miniaturas por meio da etapa **[!UICONTROL Processar miniaturas]** é a maneira mais lenta e intensiva de memória para criar miniaturas.
 
-O dimensionamento de miniatura é definido no seguinte formato: **[!UICONTROL largura:height:centro]**, por exemplo `80:80:false`. A largura e a altura determinam o tamanho da miniatura em pixels. O valor central é falso ou verdadeiro. Se definido como true, indica que a imagem em miniatura tem exatamente o tamanho fornecido na configuração. Se a imagem redimensionada for menor, ela será centralizada na miniatura.
+O dimensionamento de miniatura é definido no seguinte formato: **[!UICONTROL largura:height:centro]**, por exemplo, `80:80:false`. A largura e a altura determinam o tamanho da miniatura em pixels. O valor central é falso ou verdadeiro. Se definido como true, indica que a imagem em miniatura tem exatamente o tamanho fornecido na configuração. Se a imagem redimensionada for menor, ela será centralizada na miniatura.
 
 >[!NOTE]
 >
@@ -146,7 +146,6 @@ O dimensionamento de miniatura é definido no seguinte formato: **[!UICONTROL la
 >
 >* Os tamanhos de miniatura de vídeos são configurados no **[!UICONTROL Miniaturas de FFmpeg]** etapa, na guia **[!UICONTROL Processo]** em **[!UICONTROL Argumentos]**.
 >
-
 
 **Para configurar o tamanho da miniatura da imagem:**
 
@@ -179,7 +178,7 @@ As predefinições de imagem criadas estão disponíveis como representações d
 
    ![chlimage_1-495](assets/chlimage_1-495.png)
 
-1. Na propriedade limit, altere o número para o número desejado, por exemplo `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
+1. Na propriedade limit, altere o número para o número desejado, por exemplo, `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
 1. Selecionar **[!UICONTROL Salvar tudo]**.
 
 ### Criar predefinições de imagem {#creating-image-presets}
@@ -233,7 +232,7 @@ Deixá-los em branco informa ao Experience Manager que essa predefinição de im
 
 Ao criar ou editar predefinições de imagens, você tem as opções descritas nesta seção. Além disso, a Adobe recomenda que estas opções de &quot;práticas recomendadas&quot; comecem:
 
-* **[!UICONTROL Formatar]** (guia **[!UICONTROL Básico]**) - Selecione **[!UICONTROL JPEG]** ou outro formato que atenda aos requisitos. Todos os navegadores da Web são compatíveis com o formato de imagem JPEG; ele oferece um bom equilíbrio entre arquivos pequenos e qualidade de imagem. No entanto, as imagens no formato JPEG usam um esquema de compactação com perdas que pode apresentar artefatos de imagem indesejados se a configuração de compactação for muito baixa. Por esse motivo, a Adobe recomenda definir a qualidade de compactação como 75. Essa configuração oferece um bom equilíbrio entre a qualidade da imagem e o tamanho pequeno de arquivo.
+* **[!UICONTROL Formato]** (**[!UICONTROL Básico]** ) - Selecionar **[!UICONTROL JPEG]** ou outro formato que atenda aos seus requisitos. Todos os navegadores da Web são compatíveis com o formato de imagem JPEG; ele oferece um bom equilíbrio entre arquivos pequenos e qualidade de imagem. No entanto, as imagens no formato JPEG usam um esquema de compactação com perdas que pode apresentar artefatos de imagem indesejados se a configuração de compactação for muito baixa. Por esse motivo, a Adobe recomenda definir a qualidade de compactação como 75. Essa configuração oferece um bom equilíbrio entre a qualidade da imagem e o tamanho pequeno de arquivo.
 
 * **[!UICONTROL Ativar nitidez simples]** - Não selecione **[!UICONTROL Ativar nitidez simples]** (este filtro de nitidez oferece menos controle do que as configurações Tirar nitidez da máscara).
 
@@ -245,7 +244,7 @@ Ao criar ou editar predefinições de imagens, você tem as opções descritas n
 | --- | --- |
 | **Nome** | Insira um nome descritivo sem espaços em branco. Para ajudar os usuários a identificarem essa predefinição de imagem, inclua a especificação do tamanho da imagem no nome. |
 | **Largura e altura** | Insira, em pixels, o tamanho da imagem. A largura e a altura devem ser maiores que 0 pixels. Se um dos valores for 0, nenhuma predefinição será criada. Se ambos os valores estiverem em branco, uma predefinição de imagem responsiva será criada. |
-| **Formato** | Escolha um formato no menu.<br>Escolhendo **JPEG** O oferece as seguintes outras opções:<br>· **Qualidade** - A escala de qualidade do JPEG é de 1-100. A escala fica visível quando você arrasta o controle deslizante.<br>· **Ativar redução de resolução de crominância de JPG** - Como o olho é menos sensível a informações de cores de alta frequência do que a luminosidade de alta frequência, as imagens de JPEG dividem as informações da imagem em componentes de luminosidade e cor. Quando uma imagem de JPEG é compactada, o componente de luminosidade fica com a resolução total, enquanto os componentes de cor ficam com uma resolução mais baixa para calcular a média de grupos de pixels. A redução da resolução reduz o volume de dados pela metade ou em um terço com quase nenhum impacto na qualidade aparente. A redução da resolução não é aplicável a imagens em tons de cinza. Essa técnica reduz a quantidade de compactação útil para imagens com alto contraste (por exemplo, imagens com texto sobreposto).<br><br>Escolhendo **GIF** ou **GIF com alfa** fornece esses recursos adicionais **Quantização de cor do GIF** opções:<br>· **Tipo** - Selecionar **Adaptável** (padrão), **Web** ou **Macintosh**. Se você selecionar **GIF com alfa**, a opção Macintosh não está disponível.<br>· **Pontilhamento** - Selecionar **Difuso** ou **Desligado**.<br>· **Número de cores** - Insira um número de 2 a 256.<br>· **Lista de cores** - Insira uma lista separada por vírgulas. Por exemplo, para branco, cinza e preto, insira `000000,888888,ffffff`.<br><br>Escolhendo **PDF**, **TIFF** ou **TIFF com alfa** O fornece esta opção adicional:<br>· **Compactação** - Selecione um algoritmo de compactação. As opções de algoritmo para PDF são **Nenhum**, **Zip**, e **Jpeg**; para o TIFF, são **Nenhum**, **LZW**, **Jpeg**, e **Zip**; e para TIFF com Alpha são **Nenhum**, **LZW**, e **Zip**.<br><br>Escolhendo **PNG**, **PNG com alfa** ou **EPS** O não fornece opções adicionais. |
+| **Formato** | Escolha um formato no menu.<br>Escolhendo **JPEG** O oferece as seguintes outras opções:<br>· **Qualidade** - A escala de qualidade do JPEG é de 1-100. A escala fica visível quando você arrasta o controle deslizante.<br>· **Ativar redução de resolução de crominância de JPG** - Como o olho é menos sensível a informações de cores de alta frequência do que a luminosidade de alta frequência, as imagens de JPEG dividem as informações da imagem em componentes de luminosidade e cor. Quando uma imagem de JPEG é compactada, o componente de luminosidade fica com a resolução total, enquanto os componentes de cor ficam com uma resolução mais baixa para calcular a média de grupos de pixels. A redução da resolução reduz o volume de dados pela metade ou em um terço com quase nenhum impacto na qualidade aparente. A redução da resolução não é aplicável a imagens em tons de cinza. Essa técnica reduz a quantidade de compactação útil para imagens com alto contraste (por exemplo, imagens com texto sobreposto).<br><br>Escolhendo **GIF** ou **GIF com alfa** fornece esses recursos adicionais **Quantização de cor do GIF** opções:<br>· **Tipo** - Selecionar **Adaptável** (padrão), **Web** ou **Macintosh**. Se você selecionar **GIF com Alpha**, a opção Macintosh não está disponível.<br>· **Pontilhamento** - Selecionar **Difuso** ou **Desligado**.<br>· **Número de cores** - Insira um número de 2 a 256.<br>· **Lista de cores** - Insira uma lista separada por vírgulas. Por exemplo, para branco, cinza e preto, insira `000000,888888,ffffff`.<br><br>Escolhendo **PDF**, **TIFF** ou **TIFF com alfa** O fornece esta opção adicional:<br>· **Compactação** - Selecione um algoritmo de compactação. As opções de algoritmo para PDF são **Nenhum**, **Zip**, e **Jpeg**; para o TIFF, são **Nenhum**, **LZW**, **Jpeg**, e **Zip**; e para TIFF com Alpha são **Nenhum**, **LZW**, e **Zip**.<br><br>Escolhendo **PNG**, **PNG com Alpha** ou **EPS** O não fornece opções adicionais. |
 | **Nitidez** | Selecionar **Ativar nitidez simples** para aplicar um filtro de nitidez básico à imagem depois de todo o dimensionamento. A nitidez pode ajudar a compensar o desfoque que pode ocorrer ao exibir uma imagem de tamanho diferente. |
 
 #### Opções da guia Avançadas {#advanced-tab-options}
@@ -345,43 +344,43 @@ A seguir estão alguns exemplos básicos do que você pode fazer com modificador
 
 * [op_invert](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html) - Inverte cada componente de cor para obter um efeito de imagem negativo.
 
-   ```xml {.line-numbers}
-   &op_invert=1
-   ```
+  ```xml {.line-numbers}
+  &op_invert=1
+  ```
 
-   ![6_5_imagepreset-edit-invert](assets/6_5_imagepreset-edit-invert.png)
+  ![6_5_imagepreset-edit-invert](assets/6_5_imagepreset-edit-invert.png)
 
 * [op_blur](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur.html) - Aplica um filtro de desfoque à imagem.
 
-   ```xml {.line-numbers}
-   &op_blur=7
-   ```
+  ```xml {.line-numbers}
+  &op_blur=7
+  ```
 
-   ![6_5_imagepreset-edit-blur](assets/6_5_imagepreset-edit-blur.png)
+  ![6_5_imagepreset-edit-blur](assets/6_5_imagepreset-edit-blur.png)
 
 * Comandos combinados - op_blur e op-invert
 
-   ```xml {.line-numbers}
-   &op_invert=1&op_blur=7
-   ```
+  ```xml {.line-numbers}
+  &op_invert=1&op_blur=7
+  ```
 
-   ![chlimage_1-80](assets/chlimage_1-501.png)
+  ![chlimage_1-80](assets/chlimage_1-501.png)
 
 * [op_brightness](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness.html) - Diminui ou aumenta o brilho.
 
-   ```xml {.line-numbers}
-   &op_brightness=58
-   ```
+  ```xml {.line-numbers}
+  &op_brightness=58
+  ```
 
-   ![6_5_imagepreset-edit-brightness](assets/6_5_imagepreset-edit-brightness.png)
+  ![6_5_imagepreset-edit-brightness](assets/6_5_imagepreset-edit-brightness.png)
 
 * [opac](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac.html) - Ajusta a opacidade da imagem. Permite diminuir a opacidade do primeiro plano.
 
-   ```xml {.line-numbers}
-   opac=29
-   ```
+  ```xml {.line-numbers}
+  opac=29
+  ```
 
-   ![6_5_imagepreset-edit-opacity](assets/6_5_imagepreset-edit-opacity.png)
+  ![6_5_imagepreset-edit-opacity](assets/6_5_imagepreset-edit-opacity.png)
 
 ### Editar predefinições de imagem {#modifying-image-presets}
 

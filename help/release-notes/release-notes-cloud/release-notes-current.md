@@ -3,9 +3,9 @@ title: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud S
 description: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 5be0c5e347d2ec7ef660a701c8c6faf6a2d6d17a
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1278'
 ht-degree: 14%
 
 ---
@@ -93,7 +93,7 @@ Interessado em experimentar o recurso e compartilhar feedback? Enviar um email p
 
 ### Novos recursos no pré-lançamento do [!DNL Forms] {#prerelease-features-forms}
 
-* **[Conectar um Forms adaptável com a lista Microsoft® SharePoint](/help/forms/configure-submit-actions-core-components.md#submit-to-sharepoint)**: o AEM Forms fornece uma integração OOTB para enviar dados de formulários diretamente para a Lista do SharePoint, permitindo que você aproveite os recursos de Listas do SharePoint. Você pode configurar a Lista de SharePoint do Microsoft como uma fonte de dados para um Modelo de dados de formulário e usar o **Enviar usando modelo de dados do formulário** enviar ação para conectar um Formulário adaptável à Lista do SharePoint.
+* **[Conectar um Forms adaptável com a lista Microsoft® SharePoint](/help/forms/configure-submit-actions-core-components.md#submit-to-sharepoint)**: o AEM Forms fornece uma integração OOTB para enviar dados de formulários diretamente para a Lista do SharePoint, permitindo que você use os recursos de Listas do SharePoint. Você pode configurar a Lista de SharePoint do Microsoft como uma fonte de dados para um Modelo de dados de formulário e usar o **Enviar usando modelo de dados do formulário** enviar ação para conectar um Formulário adaptável à Lista do SharePoint.
 
 <!-- 
 
@@ -105,7 +105,7 @@ Interessado em experimentar o recurso e compartilhar feedback? Enviar um email p
 
 * **[Enviar um formulário adaptável para o cenário do Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)**: o Forms as a Cloud Service oferece opções prontas para uso para conectar facilmente um Formulário adaptável ao Adobe Workfront. Isso simplifica o processo de envio de um Formulário adaptável para um cenário do Adobe Workfront, permitindo acionar um cenário do Workfront Fusion no envio de um Formulário adaptável.
 
-* **[Suporte de idiomas da direita para a esquerda](/help/forms/supporting-new-language-localization-core-components.md)**: o Forms adaptável incorporado aos Componentes principais agora pode ser apresentado em um idioma da direita para a esquerda (RTL), como árabe, persa e urdu. As línguas RTL são faladas por mais de 2 bilhões de pessoas em todo o mundo. Usar um formulário em linguagem RTL permite estender o alcance dos formulários adaptáveis para atender a esses públicos diversos e aproveitar os mercados de RTL. Em algumas regiões, também é um mandato legal fornecer formulários no idioma local. Ao acomodar idiomas locais, você não só abre portas para um público mais amplo, como também garante a conformidade com as leis e regulamentos relevantes.
+* **[Suporte de idiomas da direita para a esquerda](/help/forms/supporting-new-language-localization-core-components.md)**: o Forms adaptável incorporado aos Componentes principais agora pode ser apresentado em um idioma da direita para a esquerda (RTL), como árabe, persa e urdu. As línguas RTL são faladas por mais de 2 bilhões de pessoas em todo o mundo. Usar um formulário em linguagem RTL permite estender o alcance dos formulários adaptáveis para atender a esses públicos diferentes e selecionar mercados de RTL. Em algumas regiões, também é um mandato legal fornecer formulários no idioma local. Ao acomodar idiomas locais, você não só abre portas para um público mais amplo, como também garante a conformidade com as leis e regulamentos relevantes.
 
   ![Suporte de idioma da direita para a esquerda](/help/forms/assets/right-to-left-language-support.png)
 

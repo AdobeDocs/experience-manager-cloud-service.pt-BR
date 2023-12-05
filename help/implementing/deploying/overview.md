@@ -3,10 +3,10 @@ title: Implantação do AEM as a Cloud Service
 description: Saiba mais sobre os fundamentos e as práticas recomendadas da implantação no AEM as a Cloud Service
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3470'
-ht-degree: 99%
+source-wordcount: '3429'
+ht-degree: 98%
 
 ---
 
@@ -71,7 +71,7 @@ Visto que o aplicativo muda devido ao padrão de implantação que é habilitado
 
 Para clientes com bases de código já existentes, é muito importante realizar o exercício de reestruturação de repositório descrito na documentação do AEM para garantir que o conteúdo anteriormente contido em /etc seja movido para o local correto.
 
-Algumas restrições adicionais se aplicam a esses pacotes de código, por exemplo, [instalar ganchos](https://jackrabbit.apache.org/filevault/installhooks.html) não é permitido.
+Algumas restrições adicionais se aplicam a esses pacotes de código, por exemplo, [instalar ganchos](https://jackrabbit.apache.org/filevault/installhooks.html) não são compatíveis.
 
 ## Configuração OSGI {#osgi-configuration}
 
@@ -134,7 +134,7 @@ Nos casos a seguir, é preferível adotar a abordagem de codificação manual pa
   >
   >A definição de ACLs requer que as estruturas de nó já estejam presentes. Portanto, talvez sejam necessárias instruções de criação de caminho anteriores.
 
-* Adicionar caminho (por exemplo, para estruturas de pasta raiz)
+* Adicionar caminho (por exemplo, para estruturas de pastas raiz)
 * Adicionar CNDs (definições de tipo de nó)
 
 O repoinit é recomendado nesses casos de uso de modificação de conteúdo compatíveis devido aos seguintes benefícios:
@@ -295,7 +295,7 @@ Nas soluções do AEM existentes, os clientes têm a opção de executar instân
 
 O AEM as a Cloud Service, por outro lado, é mais opinativo sobre quais modos de execução estão disponíveis e como os pacotes OSGI e a configuração OSGI podem ser mapeados para eles:
 
-* Os modos de execução da configuração OSGI devem fazer referência ao RDE, desenvolvimento, preparo e produção, no caso do ambiente ou do autor, e à publicação, no caso do serviço. Uma combinação de `<service>.<environment_type>` está tendo suporte, mas ela deve ser usada nessa ordem específica (por exemplo, `author.dev` ou `publish.prod`). Os tokens OSGI devem ser referenciados diretamente do código, em vez de usar o método `getRunModes`, que não incluirá mais o `environment_type` no tempo de execução. Para obter mais informações, consulte [Configuração do OSGi para o AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md).
+* Os modos de execução da configuração OSGI devem fazer referência ao RDE, desenvolvimento, preparo e produção, no caso do ambiente ou do autor, e à publicação, no caso do serviço. Uma combinação de `<service>.<environment_type>` O é compatível, enquanto esses ambientes precisam ser usados nessa ordem específica (por exemplo, `author.dev` ou `publish.prod`). Os tokens OSGI devem ser referenciados diretamente do código, em vez de usar o método `getRunModes`, que não incluirá mais o `environment_type` no tempo de execução. Para obter mais informações, consulte [Configuração do OSGi para o AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md).
 * Os modos de execução de pacotes OSGI são limitados ao serviço (autor, publicação). Os pacotes OSGI do modo por execução devem ser instalados no pacote de conteúdo em `install.author` ou `install.publish`.
 
 O AEM as a Cloud Service não permite o uso de modos de execução para instalar conteúdo em ambientes ou serviços específicos. Se um ambiente de desenvolvimento precisar ser semeado com dados ou HTML que não estejam nos ambientes de preparo ou produção, o Gerenciador de pacotes poderá ser usado.

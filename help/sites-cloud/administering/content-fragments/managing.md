@@ -4,10 +4,10 @@ description: Saiba como gerenciar os fragmentos de conteúdo do AEM no console e
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2622'
-ht-degree: 51%
+source-wordcount: '2617'
+ht-degree: 46%
 
 ---
 
@@ -31,7 +31,7 @@ Depois de definir o [Modelos de fragmentos do conteúdo](#creating-a-content-mod
 >
 >Os fragmentos de conteúdo podem ser usados:
 >
->* para [entrega de conteúdo headless usando fragmentos de conteúdo com GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md),
+>* para [Entrega de conteúdo headless usando fragmentos de conteúdo com o GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md),
 >* ao criar páginas; consulte [Criação de páginas com fragmentos de conteúdo](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 
 >[!NOTE]
@@ -58,7 +58,7 @@ Para mais informações, consulte:
 
 * [Pesquisar e filtrar no Console de fragmentos de conteúdo](#filtering-fragments)
 
-* Uma seleção de [](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)atalhos de teclado estão disponíveis para uso neste console
+* Uma seleção de [atalhos de teclado](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md) estão disponíveis para uso neste console
 
 >[!NOTE]
 >
@@ -85,9 +85,9 @@ Aqui você pode ver três áreas principais:
    * É possível selecionar uma ramificação específica da árvore
    * Ela pode ser redimensionada para mostrar pastas aninhadas
 * O painel principal/direito; aqui, você pode:
-   * Consultar a lista de todos os fragmentos de conteúdo na ramificação selecionada da árvore:
+   * Consulte a lista de todos os fragmentos de conteúdo na ramificação selecionada da árvore:
       * Os fragmentos de conteúdo da pasta selecionada e de todas as pastas derivadas serão mostrados:
-         * A localização é indicada pela navegação estrutura, que também pode ser usada para alterar a localização:
+         * A localização é indicada pela navegação estrutural; elas também podem ser usadas para alterar a localização:
       * [As informações são mostradas sobre cada fragmento](#information-content-fragments)
          * [Você pode selecionar quais colunas mostrar](#select-columns-console)
       * [Vários campos de informação](#information-content-fragments) sobre um Fragmento do conteúdo fornecem links. Dependendo do campo, eles podem:
@@ -223,10 +223,10 @@ Para criar um fragmento de conteúdo:
 
 1. A variável **Novo fragmento de conteúdo** será aberta, aqui será possível especificar:
 
-   * **Localização** - será preenchido automaticamente com o local atual, mas você pode selecionar um local diferente, se necessário
-   * **Modelo de fragmento de conteúdo** — selecione o modelo a ser usado como base do fragmento na lista suspensa
+   * **Localização** - Preenchido automaticamente com o local atual, mas você pode selecionar um local diferente, se necessário.
+   * **Modelo de fragmento de conteúdo** - Selecione o modelo a ser usado como base do fragmento na lista suspensa.
    * **Título**
-   * **Nome** - será preenchido automaticamente com base no **Título**, mas você pode editá-lo se necessário
+   * **Nome** - Preenchido automaticamente com base na variável **Título**, mas você pode editá-lo, se necessário.
    * **Descrição**
 
    ![Caixa de diálogo Novo fragmento de conteúdo](assets/cf-managing-new-cf-dialog.png)
@@ -293,7 +293,7 @@ Você pode publicar os fragmentos de conteúdo nos seguintes serviços:
 
   >[!CAUTION]
   >
-  >A publicação de fragmentos de conteúdo no **serviço de Visualização** só está disponível no Console de fragmentos de conteúdo, por meio da ação **Publicar**.
+  >Publicar fragmentos de conteúdo na **Serviço de visualização** O só está disponível no console de Fragmentos de conteúdo; usando o **Publish** ação.
 
   >[!NOTE]
   >
@@ -332,7 +332,7 @@ Depois de selecionar o **Publish** ação:
 
    >[!NOTE]
    >
-   >Se necessário, você deve especificar as referências a serem publicadas. Por padrão, as referências também são publicadas no serviço de visualização para garantir que não haja interrupção no conteúdo.
+   >Se necessário, você deve especificar as referências a serem publicadas. Por padrão, as referências também são publicadas no serviço de Visualização para garantir que não haja interrupção no conteúdo.
 
 1. Confirme a ação de publicação.
 

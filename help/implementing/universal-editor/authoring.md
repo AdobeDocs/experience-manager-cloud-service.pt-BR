@@ -2,10 +2,10 @@
 title: Criação de conteúdo com o Editor universal
 description: Saiba como é fácil e intuitivo para os autores criarem conteúdo utilizando o Editor universal.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2398'
-ht-degree: 39%
+source-wordcount: '2387'
+ht-degree: 37%
 
 ---
 
@@ -172,7 +172,7 @@ Selecione o botão publicar para poder publicar as alterações no conteúdo em 
 
 >[!TIP]
 >
->Consulte o documento [Publicação de conteúdo com o Editor universal](publishing.md) para obter mais informações sobre a publicação com o Editor universal.
+>Consulte o documento [Publicar conteúdo com o editor universal](publishing.md) para obter mais informações sobre como publicar com o Universal Editor.
 
 ### O painel de modo {#rail}
 
@@ -232,7 +232,7 @@ Dependendo do tipo de componente selecionado, os detalhes podem ser exibidos e m
 
 ![Detalhes do componente](assets/component-details.png)
 
-Observe que nem todos os componentes têm detalhes que podem ser mostrados e/ou editados.
+Nem todos os componentes têm detalhes que podem ser mostrados e/ou editados.
 
 >[!TIP]
 >
@@ -300,7 +300,7 @@ A edição de conteúdo é simples e intuitiva. Entrada [modo componentes](#comp
 
 >[!TIP]
 >
->Observe que no modo de componentes, tocar ou clicar em um conteúdo o seleciona para edição. Se você quiser navegar pelo seu conteúdo seguindo os links, alterne para [modo de visualização.](#preview-mode)
+>No modo de componentes, tocar ou clicar em um conteúdo o seleciona para edição. Se você quiser navegar pelo seu conteúdo seguindo os links, alterne para [modo de visualização.](#preview-mode)
 
 Dependendo do conteúdo selecionado, você pode ter diferentes opções de edição no local e outras informações e opções para o conteúdo na [painel de propriedades.](#properties-rail)
 
@@ -407,14 +407,14 @@ Os componentes são reordenados na árvore de conteúdo e no editor
 
 Ao terminar de editar o conteúdo, você geralmente deseja navegar por ele e observar como ele é exibido em outras páginas. No [modo de visualização](#preview-mode), é possível clicar em links e navegar pelo conteúdo, como um leitor faria. O conteúdo é renderizado no editor como seria publicado.
 
-Note que, no modo de visualização, a ação de tocar ou clicar no conteúdo funciona da mesma forma que para um leitor do conteúdo. Se quiser selecionar o conteúdo para edição, alterne para [modo de componentes.](#component-mode)
+No modo de visualização, tocar ou clicar em um conteúdo reage como faria com um leitor do conteúdo. Se quiser selecionar o conteúdo para edição, alterne para [modo de componentes.](#component-mode)
 
 ## Recursos adicionais {#additional-resources}
 
 Para saber mais sobre o Editor universal, consulte estes documentos.
 
 * [Introdução ao Editor universal](introduction.md): saiba como o Editor universal permite editar qualquer aspecto do conteúdo das implementações, a fim de entregar experiências excepcionais, aumentar a velocidade do conteúdo e fornecer uma experiência de desenvolvimento de última geração.
-* [Publicação de conteúdo com o Editor universal](publishing.md): saiba como o Editor universal publica o conteúdo e como seus aplicativos podem lidar com esse conteúdo.
+* [Publicar conteúdo com o editor universal](publishing.md) - Saiba como o Editor Universal publica conteúdo e como seus aplicativos podem lidar com o conteúdo publicado.
 * [Introdução ao Editor universal no AEM](getting-started.md): saiba como obter acesso ao Editor universal e começar a instrumentar seu primeiro aplicativo do AEM para utilizá-lo.
 * [Arquitetura do Editor universal](architecture.md): saiba mais sobre a arquitetura do Editor universal e como os dados fluem entre seus serviços e camadas.
 * [Atributos e tipos](attributes-types.md): saiba mais sobre os atributos e tipos de dados exigidos pelo Editor universal.

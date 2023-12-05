@@ -2,10 +2,10 @@
 title: Configurar o mapeamento de metadados de ativos entre o Workfront e o Experience Manager Assets
 description: Mapeie os campos de metadados de ativos entre os aplicativos Adobe Workfront e Experience Manager as a Cloud Service. Como resultado do mapeamento de campos de metadados, ao enviar um ativo do Workfront para o Experience Manager Assets, você pode visualizar os metadados do ativo mapeados no Experience Manager Assets.
 exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1024'
-ht-degree: 4%
+source-wordcount: '1005'
+ht-degree: 3%
 
 ---
 
@@ -62,7 +62,7 @@ Para enviar a imagem do Workfront para o Experience Manager Assets:
 
 1. Clique em **[!UICONTROL Enviar para]** e escolha o nome da integração do Experience Manager Assets Essentials.
 
-   ![Enviar para o AEM](assets/send-to-aem.png)
+   ![Enviar para AEM](assets/send-to-aem.png)
 
 1. Escolha a pasta de destino para o ativo e clique em **[!UICONTROL Selecionar pasta]**.
 
@@ -95,7 +95,7 @@ Para configurar o mapeamento de metadados usando um novo formulário de metadado
 
       `wm` refere-se ao nome do namespace e `projectName` refere-se ao título da propriedade. Use o `namespace:propertyTitle` formato para definir mapeamentos de campos de metadados.
 
-      ![Enviar para o AEM](assets/metadata-schema-mapping.png)
+      ![Enviar para AEM](assets/metadata-schema-mapping.png)
 
 1. Clique em **[!UICONTROL Formulário de criação]** e arraste a **[!UICONTROL Texto em linha única]** componente ao formulário. Clique no componente no formulário. No **[!UICONTROL Formulário de criação]** guia:
 
@@ -123,7 +123,7 @@ Para aplicar configurações de metadados à pasta de imagens:
 
 1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Assets]** > **[!UICONTROL Esquemas de metadados]**.
 
-1. Selecione o esquema de metadados na lista disponível e clique em **[!UICONTROL Aplicar às pastas]**.
+1. Selecione o esquema de metadados na lista disponível e clique em **[!UICONTROL Aplicar a pastas]**.
 
 1. Selecione a pasta de destino para a qual [a imagem é enviada do aplicativo Adobe Workfront](#send-image-workfront-assets) e clique em **[!UICONTROL Aplicar]**.
 

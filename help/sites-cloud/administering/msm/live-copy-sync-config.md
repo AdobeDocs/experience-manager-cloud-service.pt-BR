@@ -4,10 +4,10 @@ description: Saiba mais sobre as poderosas opções de sincronização da Live C
 feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '2414'
-ht-degree: 92%
+ht-degree: 90%
 
 ---
 
@@ -95,7 +95,7 @@ A nova configuração de implantação está então disponível ao definir confi
 
 Você pode configurar vários serviços OSGi que suportam ações de sincronização correspondentes para que eles não afetem tipos de nó e propriedades específicos. Por exemplo, muitas propriedades e nós secundários relacionados ao funcionamento interno do AEM não devem ser incluídos em uma Live Copy. Somente o conteúdo relevante para o usuário da página deve ser copiado.
 
-Ao trabalhar com o AEM há vários métodos de gerenciamento das definições de configuração desses serviços; consulte [Configurar OSGi](/help/implementing/deploying/configuring-osgi.md) para obter mais detalhes e as práticas recomendadas
+Ao trabalhar com o AEM, há vários métodos de gerenciamento das definições de configuração desses serviços. Consulte [Configuração do OSGi](/help/implementing/deploying/configuring-osgi.md) para obter mais detalhes e as práticas recomendadas.
 
 A tabela a seguir lista as ações de sincronização para as quais você pode especificar os nós a serem excluídos. A tabela fornece os nomes dos serviços a serem configurados usando o console da Web e o PID para configurar usando um nó de repositório.
 
@@ -134,7 +134,7 @@ Por exemplo, se você quiser que o **Título** da página seja incluído nas alt
 
 Você pode configurar vários serviços OSGi que oferecem suporte às ações de sincronização correspondentes relacionadas à atualização de referências.
 
-Ao trabalhar com o AEM, há vários métodos de gerenciamento das definições de configuração desses serviços; consulte [Configurar OSGi](/help/implementing/deploying/configuring-osgi.md) para obter mais detalhes e as práticas recomendadas
+Ao trabalhar com o AEM, há vários métodos de gerenciamento das definições de configuração desses serviços. Consulte [Configuração do OSGi](/help/implementing/deploying/configuring-osgi.md) para obter mais detalhes e as práticas recomendadas.
 
 A tabela a seguir lista as ações de sincronização para as quais você pode especificar a atualização de referência. A tabela fornece os nomes dos serviços a serem configurados usando o console da Web e o PID para configurar usando um nó de repositório.
 

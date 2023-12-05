@@ -2,9 +2,9 @@
 title: Introdução e passo a passo do SPA
 description: Este artigo apresenta os conceitos de um SPA e aborda o uso de um SPA básico para criação, mostrando como ele está relacionado ao editor de SPA integrado do AEM.
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '2065'
+source-wordcount: '2045'
 ht-degree: 93%
 
 ---
@@ -38,7 +38,7 @@ O passo a passo é baseado na funcionalidade padrão do AEM e no aplicativo de e
 
 >[!CAUTION]
 >
->Este documento usa o [aplicativo Projeto SPA WKND](https://github.com/adobe/aem-guides-wknd-spa) apenas para fins de demonstração. Ele não deve ser utilizado ao trabalhar em projetos.
+>Este documento usa o [aplicativo Projeto SPA WKND](https://github.com/adobe/aem-guides-wknd-spa) apenas para fins de demonstração. Não o use para nenhum trabalho de projeto.
 
 >[!TIP]
 >

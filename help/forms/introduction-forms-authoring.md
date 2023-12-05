@@ -6,10 +6,10 @@ topic-tags: author, introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2482'
-ht-degree: 96%
+source-wordcount: '2465'
+ht-degree: 94%
 
 ---
 
@@ -96,7 +96,7 @@ Ela permite arrastar e soltar elementos do modelo de formulário no Formulário 
 
   Permite editar as propriedades de um componente. As propriedades mudam de acordo com um componente. Para ver as propriedades do container do Formulário adaptável:
 
-  Selecione um componente e toque em ![nível de campo](assets/Smock_SelectContainer_18_N.svg) > **[!UICONTROL Container de formulário adaptável]**, e toque em ![propriedades](assets/Smock_Wrench_18_N.svg).
+  Selecione um componente e ![nível de campo](assets/Smock_SelectContainer_18_N.svg) > **[!UICONTROL Contêiner de formulário adaptável]** e selecione ![propriedades](assets/Smock_Wrench_18_N.svg).
 
 * **Navegador de ativos**
 
@@ -307,7 +307,7 @@ A barra de ferramentas da página na parte superior fornece opções que permite
 
 Ao selecionar um componente, você visualiza uma barra de ferramentas que permite trabalhar nele. Há opções para recortar, colar, mover e especificar as propriedades dos componentes. As opções são:
 
-A.**Configurar**: ao tocar em **[!UICONTROL Configurar]**, as propriedades do componente ficam visíveis na barra lateral. A configuração dessas propriedades permite personalizar a experiência de captura de dados. Você pode alterar o nome do elemento do componente, especificar o texto do rótulo no campo Título do componente. O nome do elemento permite capturar valores inseridos pelos usuários usando o componente. Nas propriedades do componente, especifique o comportamento do componente e gerencie a entrada do usuário. Configure as propriedades na barra lateral para capturar os dados do usuário e usá-los para processamento adicional. As propriedades do container de Formulário adaptável permitem especificar as bibliotecas do cliente, os Layouts, os Temas, as configurações de Documento de registro, salvar configurações, as configurações de envio e as configurações de metadados.
+A.**Configurar**: Ao selecionar **[!UICONTROL Configurar]**, as propriedades do componente ficam visíveis na barra lateral. A configuração dessas propriedades permite personalizar a experiência de captura de dados. Você pode alterar o nome do elemento do componente, especificar o texto do rótulo no campo Título do componente. O nome do elemento permite capturar valores inseridos pelos usuários usando o componente. Nas propriedades do componente, especifique o comportamento do componente e gerencie a entrada do usuário. Configure as propriedades na barra lateral para capturar os dados do usuário e usá-los para processamento adicional. As propriedades do container de Formulário adaptável permitem especificar as bibliotecas do cliente, os Layouts, os Temas, as configurações de Documento de registro, salvar configurações, as configurações de envio e as configurações de metadados.
 
 B.**Copiar**: você pode usar a opção de copiar para copiar um componente e colá-lo em outros lugares do formulário. Quando você cola um componente, o componente colado obtém um novo nome de elemento, mas retém as propriedades do componente copiado.
 
@@ -325,7 +325,7 @@ H. **Grupo**: permite selecionar vários componentes se você deseja cortar, cop
 
 I. **Página principal**: permite selecionar a página principal de um componente. Por exemplo, um campo de texto está em uma subseção, que fica em uma seção. A seção encontra-se no guide root panel e o container de formulário adaptável é o principal de um guide root panel. Para um componente, você pode observar todas as opções com a hierarquia classificada de baixo para cima.
 
-Por exemplo, se você tocar em **[!UICONTROL Página principal]** numa caixa de texto, é possível ver:
+Por exemplo, se você selecionar **[!UICONTROL Pai]** para uma caixa de texto, você pode ver:
 
 * Subseção
 * Seção

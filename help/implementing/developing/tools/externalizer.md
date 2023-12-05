@@ -2,9 +2,9 @@
 title: Externalizar URLs
 description: O Externalizador é um serviço OSGi que permite transformar programaticamente um caminho de recurso em um URL externo e absoluto.
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '630'
 ht-degree: 0%
 
 ---
@@ -99,7 +99,7 @@ Esta seção mostra alguns exemplos de como o serviço Externalizador pode ser u
 
 >[!NOTE]
 >
->Nenhum link absoluto deve ser criado no contexto de HTML. Por conseguinte, esta utilidade não deve ser utilizada em tais casos.
+>Nenhum link absoluto deve ser criado no contexto de HTML. Portanto, não use este utilitário nesses casos.
 
 * **Para externalizar um caminho com o domínio &quot;publicar&quot;:**
 

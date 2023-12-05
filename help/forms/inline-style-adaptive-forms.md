@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 25adabfb-ff19-4cb2-aef5-0a8086d2e552
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 4%
+source-wordcount: '761'
+ht-degree: 3%
 
 ---
 
@@ -27,8 +27,8 @@ Você pode definir a aparência geral e o estilo de um Formulário adaptável es
 
 Para adicionar estilos em linha a um componente:
 
-1. Abra o formulário no editor de formulários e altere o modo para o modo de estilo. Para alterar o modo para o modo de estilo, na barra de ferramentas da página, toque em ![tela suspensa](assets/Smock_ChevronDown.svg) > **[!UICONTROL Estilo]**.
-1. Selecione um componente na página e toque no botão editar ![botão editar](assets/edit.svg). As propriedades de estilo são abertas na barra lateral.
+1. Abra o formulário no editor de formulários e altere o modo para o modo de estilo. Para alterar o modo para o modo de estilo, na barra de ferramentas da página, selecione ![tela suspensa](assets/Smock_ChevronDown.svg) > **[!UICONTROL Estilo]**.
+1. Selecione um componente na página e clique no botão editar ![botão editar](assets/edit.svg). As propriedades de estilo são abertas na barra lateral.
 
    Você também pode selecionar componentes da árvore de hierarquia de formulários na barra lateral. A árvore de hierarquia de formulários está disponível como Objetos de formulário na barra lateral.
 
@@ -46,7 +46,7 @@ Para adicionar estilos em linha a um componente:
    * [!UICONTROL Avançado] (Permite escrever CSS personalizado para o componente)
 
 1. Da mesma forma, é possível aplicar estilos a outras partes de um componente, como [!UICONTROL Widget], [!UICONTROL Legenda], e [!UICONTROL Ajuda].
-1. Toque **[!UICONTROL Concluído]** para confirmar as alterações ou **[!UICONTROL Cancelar]** para descartar as alterações.
+1. Selecionar **[!UICONTROL Concluído]** para confirmar as alterações ou **[!UICONTROL Cancelar]** para descartar as alterações.
 
 ## Exemplo: estilos em linha para um componente de campo {#example-inline-styles-for-a-field-component}
 
@@ -111,9 +111,9 @@ Seguindo as etapas acima, você pode selecionar e estilizar outros componentes, 
 
 ## Copiar e colar estilos {#copy-paste-styles}
 
-Também é possível copiar e colar um estilo de um componente para outro em um Formulário adaptável. No **[!UICONTROL Estilo]** toque no componente e no ícone Copiar ![Copiar](assets/property-copy-icon.svg).
+Também é possível copiar e colar um estilo de um componente para outro em um Formulário adaptável. No **[!UICONTROL Estilo]** , selecione o componente e selecione o ícone Copiar ![Copiar](assets/property-copy-icon.svg).
 
-Toque no outro componente do mesmo tipo e toque no ícone Colar ![Copiar](assets/Smock_Paste_18_N.svg) para colar o estilo copiado. Também é possível tocar no ícone Limpar estilo ![Copiar](assets/clear-style-icon.svg) para limpar o estilo aplicado.
+Selecione o outro componente do mesmo tipo e selecione o ícone Colar ![Copiar](assets/Smock_Paste_18_N.svg) para colar o estilo copiado. Também é possível selecionar o ícone Limpar estilo ![Copiar](assets/clear-style-icon.svg) para limpar o estilo aplicado.
 
 ## Definir estilos para diferentes estados de um componente {#set-styles-for-states}
 
@@ -121,15 +121,15 @@ Toque no outro componente do mesmo tipo e toque no ícone Colar ![Copiar](assets
 
 Para definir o estilo para o estado de um componente:
 
-1. No **[!UICONTROL Estilo]** toque no componente e no ícone Editar ![Editar](assets/Smock_Edit_18_N.svg).
+1. No **[!UICONTROL Estilo]** , selecione o componente e selecione o ícone Editar ![Editar](assets/Smock_Edit_18_N.svg).
 
 1. Selecione o estado do componente usando a variável **[!UICONTROL Estado]** lista suspensa.
 
    ![Selecionar estado](assets/select-state.png)
 
-1. Defina o estilo para o estado selecionado do componente e toque em ![Salvar](assets/save_icon.svg) para salvar as propriedades.
+1. Defina o estilo para o estado selecionado do componente e selecione ![Salvar](assets/save_icon.svg) para salvar as propriedades.
 
-Também é possível simular os estados de sucesso e erro. Toque no ícone Expandir para exibir a **[!UICONTROL Simular o sucesso]** e **[!UICONTROL Simular Erro]** opções.
+Também é possível simular os estados de sucesso e erro. Selecione o ícone Expandir para exibir a **[!UICONTROL Simular o sucesso]** e **[!UICONTROL Simular Erro]** opções.
 
 ![Simular estados](assets/simulate-states.png)
 

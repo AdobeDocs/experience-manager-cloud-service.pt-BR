@@ -3,10 +3,10 @@ title: Como criar um modelo de formulário adaptável com base no componente pri
 description: Crie modelos de Formulário adaptável com base no componente principal para definir a estrutura básica e o conteúdo inicial usando o Editor de modelos.
 Keywords: create adaptive form template, create adaptive form template based on core components, Use template to create adpative form.
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1991'
-ht-degree: 1%
+source-wordcount: '1961'
+ht-degree: 0%
 
 ---
 
@@ -46,13 +46,13 @@ O Experience Manager fornece uma pasta global para organizar modelos. No entanto
 
 Após criar uma pasta, abra-a e execute as seguintes etapas para criar um template:
 
-1. Toque **[!UICONTROL Criar]** dentro da pasta que você criou.
-1. No **[!UICONTROL Escolher um tipo de modelo]** , selecione **[!UICONTROL Modelo de formulário adaptável (componente principal)]** e toque em **[!UICONTROL Próxima]**.
+1. Selecionar **[!UICONTROL Criar]** dentro da pasta que você criou.
+1. No **[!UICONTROL Escolher um tipo de modelo]** , selecione **[!UICONTROL Modelo de formulário adaptável (componente principal)]** e selecione **[!UICONTROL Próxima]**.
 
-1. No **[!UICONTROL Detalhes do modelo]** seção, forneça uma **Título do modelo** e toque em **[!UICONTROL Criar]**.
+1. No **[!UICONTROL Detalhes do modelo]** seção, forneça uma **Título do modelo** e selecione **[!UICONTROL Criar]**.
 Você também pode fornecer uma descrição.
 
-1. Toque **[!UICONTROL Concluído]** para retornar ao console ou toque em **[!UICONTROL Abertura]** para abrir o modelo no editor.
+1. Selecionar **[!UICONTROL Concluído]** para retornar ao console ou selecione **[!UICONTROL Abertura]** para abrir o modelo no editor.
 
 ## Interface do editor de modelos {#template-editor-ui}
 
@@ -119,7 +119,7 @@ Por exemplo, você adiciona o componente de cabeçalho no modelo. Ao selecionar 
 
 Quando a opção Conteúdo inicial estiver selecionada, o Contêiner de formulário adaptável do modelo será aberto como um Formulário adaptável para edição. Ele permite criar um conteúdo predefinido que pode ser alterado ao criar o Forms adaptável associado ao modelo. Assim como a criação de um Formulário adaptável, você pode especificar configurações iniciais, como selecionar um tema e Enviar ações.
 
-Os autores de formulários o usam como base para criar um formulário. A estrutura do fluxo de conteúdo é especificada na camada Conteúdo inicial do modelo. Para alternar para a edição do conteúdo inicial do modelo de formulário, antes de Visualizar na barra de ferramentas da página, toque em ![tela suspensa](assets/canvas-drop-down.png) **>** **[!UICONTROL Conteúdo inicial]**.
+Os autores de formulários o usam como base para criar um formulário. A estrutura do fluxo de conteúdo é especificada na camada Conteúdo inicial do modelo. Para alternar para a edição do conteúdo inicial do modelo de formulário, antes de Visualizar na barra de ferramentas da página, selecione ![tela suspensa](assets/canvas-drop-down.png) **>** **[!UICONTROL Conteúdo inicial]**.
 
 ![Cabeçalho e rodapé adicionados na camada Conteúdo inicial](assets/header-and-footer.png)
 
@@ -145,7 +145,7 @@ Ao criar um modelo, ele é adicionado como um rascunho. Ative o modelo para usá
 
 1. Navegue até **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Ferramentas]** > **[!UICONTROL Modelos]**e abra a pasta na qual você criou o template.
 O modelo criado está marcado como Rascunho.
-1. Selecione o modelo e toque em **[!UICONTROL Ativar]** na barra de ferramentas.
+1. Selecione o modelo e selecione **[!UICONTROL Ativar]** na barra de ferramentas.
 Ao criar um Formulário adaptável, você pode ver o modelo listado quando é solicitado a escolher um modelo.
 
 ## Importação ou exportação de um template {#importing-or-exporting-a-template}
@@ -160,7 +160,7 @@ Um formulário funciona com seu modelo. Ao baixar um Formulário adaptável cria
 
 Os autores podem associar um [!UICONTROL Esquema do modelo de dados de formulário] para um modelo de Formulário adaptável no editor de modelos. Ele permite que os autores selecionem um esquema no editor de modelos. Quando você associa um esquema a um modelo e um autor de formulário cria um formulário com base no modelo, o esquema é pré-selecionado para o formulário. Ele ajuda os autores de formulários a regular o uso do esquema e também economiza tempo para os autores de formulários. Para selecionar um esquema de modelo de dados de formulário no editor de modelo:
 
-1. Toque **[!UICONTROL Navegador de conteúdo]** localizado no lado esquerdo.
+1. Selecionar **[!UICONTROL Navegador de conteúdo]** localizado no lado esquerdo.
 1. Ir para o contêiner de formulário **[!UICONTROL Configuração]**.
 1. Selecionar **[!UICONTROL Modelo de dados]**.
 1. Escolher o modelo de dados do formulário por meio de **[!UICONTROL Selecionar modelo de dados do formulário]** e salve a configuração.
@@ -185,7 +185,7 @@ Change the layer from **Structure** to **Initial Content**, and start adding con
 * You can drag-drop the panel component from the components browser in the sidebar.
 * You can add child panel of the `guideRootPanel` from the component toolbar.
 
-To create the General Information and Professional Information tabs, add two panels in the child panel of the `guideRootPanel`. Select the panels and tap ![cmppr](assets/configure-icon.svg) to open the properties in the sidebar. Change the element names as `general-info` and `professional-info`, and titles as General Information and Professional Information respectively. In the sidebar, tap content to open the content browser. In the Form Objects tab, select `guideRootPanel`. In the editor, the guideRootPanel is selected. Tap ![cmppr](assets/configure-icon.svg) in the component toolbar to open its properties. In the Panel Layout field, select **[!UICONTROL Tabs on Top]** and tap **[!UICONTROL Done]**. The tabbed template structure is applied.
+To create the General Information and Professional Information tabs, add two panels in the child panel of the `guideRootPanel`. Select the panels and select ![cmppr](assets/configure-icon.svg) to open the properties in the sidebar. Change the element names as `general-info` and `professional-info`, and titles as General Information and Professional Information respectively. In the sidebar, select content to open the content browser. In the Form Objects tab, select `guideRootPanel`. In the editor, the guideRootPanel is selected. Select ![cmppr](assets/configure-icon.svg) in the component toolbar to open its properties. In the Panel Layout field, select **[!UICONTROL Tabs on Top]** and select **[!UICONTROL Done]**. The tabbed template structure is applied.
 
 ### Adding content in tabs {#adding-content-in-tabs}
 
@@ -224,10 +224,10 @@ Quando você adicionar pelo menos um grupo de propriedades personalizadas usando
 #### Selecione um nome de grupo personalizado na caixa de diálogo de edição de um componente principal {#select-a-custom-group-name}
 
 1. Abra um Formulário adaptável em um modo de edição.
-1. Toque no componente para o qual as propriedades personalizadas foram definidas no editor de modelo e toque em ![settings_icon](assets/configure-icon.svg) para abrir a caixa de diálogo de edição do componente.
+1. Selecione o componente para o qual as propriedades personalizadas foram definidas no editor de modelo e selecione ![settings_icon](assets/configure-icon.svg) para abrir a caixa de diálogo de edição do componente.
 1. Selecione o **[!UICONTROL Avançado]** guia.
 1. Selecione o nome do grupo de propriedades personalizadas em **[!UICONTROL Selecionar propriedade personalizada]** menu suspenso. Todos os nomes de grupos personalizados definidos são preenchidos automaticamente na lista suspensa.
-1. Toque **[!UICONTROL Concluído]** para salvar as propriedades.
+1. Selecionar **[!UICONTROL Concluído]** para salvar as propriedades.
 
 ![selecionar nome do grupo de propriedades personalizadas](/help/forms/assets/select-custom-properties-group-name.png)
 
@@ -278,7 +278,7 @@ You can also save an Adaptive Form as a template for future use. To save a Adapt
 
 ## Práticas recomendadas {#best-practices}
 
-* Crie modelos usando os componentes baseados nos Componentes principais, por exemplo Texto de formulário adaptável, Contêiner de formulário adaptável e muito mais. Para obter informações sobre os Componentes principais adaptáveis do Forms, [clique aqui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR).
+* Crie modelos usando os componentes baseados nos Componentes principais, por exemplo, Texto de formulário adaptável, Contêiner de formulário adaptável e muito mais. Para obter informações sobre os Componentes principais adaptáveis do Forms, [clique aqui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR).
 * Limitar o número de modelos para corresponder aos tipos de formulário fundamentalmente diferentes disponíveis nos sites
 * Forneça a flexibilidade e os recursos de configuração necessários para seus componentes personalizados usados em um modelo.
 

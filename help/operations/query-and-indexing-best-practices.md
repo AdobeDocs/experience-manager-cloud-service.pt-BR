@@ -3,10 +3,10 @@ title: Práticas recomendadas de consulta e indexação
 description: Saiba como otimizar seus índices e consultas com base nas diretrizes de práticas recomendadas da Adobe.
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3127'
-ht-degree: 44%
+source-wordcount: '3088'
+ht-degree: 43%
 
 ---
 
@@ -268,7 +268,7 @@ Abaixo estão algumas práticas recomendadas a serem consideradas ao definir ou 
    * Usar uma tag de índice na definição do índice (e na consulta associada) e `selectionPolicy = tag` para garantir que o índice seja usado apenas para as consultas desejadas.
    * Assegurar `queryPaths` e `includedPaths` ambos são fornecidos (normalmente com os mesmos valores).
    * Uso `excludedPaths` para excluir caminhos que não conterão resultados úteis.
-   * Uso `analyzed` propriedades somente quando necessário, por exemplo, quando é necessário usar uma restrição de consulta de texto completo somente nessa propriedade.
+   * Uso `analyzed` propriedades somente quando necessário, por exemplo, quando é necessário usar uma restrição de consulta de texto completo somente para essa propriedade.
    * Sempre especificar `async = [ async, nrt ] `, `compatVersion = 2` e `evaluatePathRestrictions = true`.
    * Somente especificar `nodeScopeIndex = true` se você precisar de um índice de texto completo do nodescope.
 

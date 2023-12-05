@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '985'
-ht-degree: 3%
+source-wordcount: '957'
+ht-degree: 2%
 
 ---
 
@@ -122,11 +122,11 @@ Um serviço OData é identificado por sua URL raiz de serviço. Para configurar 
 >
 >Para obter um guia passo a passo para configurar o [!DNL Microsoft Dynamics 365]on-line ou no local, consulte [[!DNL Microsoft Dynamics] Configuração OData](ms-dynamics-odata-configuration.md).
 
-1. Ir para **[!UICONTROL Ferramentas > Cloud Service > Fontes de dados]**. Toque para selecionar a pasta na qual deseja criar uma configuração de nuvem.
+1. Ir para **[!UICONTROL Ferramentas > Cloud Service > Fontes de dados]**. Selecione para selecionar a pasta na qual deseja criar uma configuração de nuvem.
 
    Consulte [Configurar pasta para configurações do serviço em nuvem](#cloud-folder) para obter informações sobre como criar e configurar uma pasta para configurações do cloud service.
 
-1. Toque **[!UICONTROL Criar]** para abrir o **[!UICONTROL Assistente para Criar Configuração da Fonte de Dados]**. Especifique um nome e, opcionalmente, um título para a configuração, selecione **[!UICONTROL Serviço OData]** do **[!UICONTROL Tipo de serviço]** selecione uma imagem em miniatura para a configuração e toque em **[!UICONTROL Próxima]**.
+1. Selecionar **[!UICONTROL Criar]** para abrir o **[!UICONTROL Assistente para Criar Configuração da Fonte de Dados]**. Especifique um nome e, opcionalmente, um título para a configuração, selecione **[!UICONTROL Serviço OData]** do **[!UICONTROL Tipo de serviço]** opção, procure e selecione uma imagem em miniatura para a configuração e **[!UICONTROL Próxima]**.
 No **[!UICONTROL Configurações de autenticação]** guia:
 
    1. Insira o valor para o **[!UICONTROL Raiz do serviço]** campo. Acesse a instância do Dynamics e navegue até **[!UICONTROL Recursos do desenvolvedor]** para exibir o valor do campo Raiz do Serviço. Por exemplo, https://&lt;tenant-name>/api/data/v9.1/

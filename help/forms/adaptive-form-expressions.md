@@ -1,9 +1,9 @@
 ---
 title: O que são expressões de formulário adaptável?
 description: Use expressões adaptáveis do Forms para adicionar validação automática, cálculo e ativar ou desativar a visibilidade de uma seção.
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2698'
+source-wordcount: '2683'
 ht-degree: 0%
 
 ---

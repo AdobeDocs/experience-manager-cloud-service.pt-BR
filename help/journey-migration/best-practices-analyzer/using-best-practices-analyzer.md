@@ -2,10 +2,10 @@
 title: Utilização do Analisador de práticas recomendadas
 description: Saiba como usar o Analisador de práticas recomendadas para entender a disponibilidade da atualização.
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '2476'
-ht-degree: 44%
+source-wordcount: '2418'
+ht-degree: 42%
 
 ---
 
@@ -53,11 +53,11 @@ Siga a seção abaixo para entender considerações importantes na execução do
 
 ## Exibição do relatório do Analisador de práticas recomendadas {#viewing-report}
 
-### Adobe Experience Manager 6.3.0 e versão posterior {#aem-later-versions}
+### Adobe Experience Manager 6.3.0 e posterior {#aem-later-versions}
 
 Siga esta seção para saber como exibir o relatório do Analisador de práticas recomendadas:
 
-1. Selecione Adobe Experience Manager e navegue até ferramentas -> **Operações** -> **Analisador de práticas recomendadas**.
+1. Selecione Adobe Experience Manager e navegue até ferramentas > **Operações** > **Analisador de práticas recomendadas**.
 
    ![imagem](/help/journey-migration/best-practices-analyzer/assets/BPA_pic1.png)
 
@@ -125,7 +125,7 @@ For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP i
 >[!CONTEXTUALHELP]
 >id="aemcloud_bpa_interpreting"
 >title="Interpretação do relatório do Analisador de práticas recomendadas"
->abstract="Há duas opções para visualizar relatórios do Analisador de Práticas Recomendadas: na interface e CSV. Quando o Analisador de Práticas Recomendadas é executado na instância do AEM, o relatório é exibido como resultado na janela da ferramenta. O formato CSV do relatório inclui informações geradas a partir da saída do Detector de padrões, classificadas e organizadas por tipo de categoria, subtipo e nível de importância."
+>abstract="Há duas opções para visualizar relatórios do Analisador de Práticas Recomendadas: na interface e CSV. Quando o Analisador de Práticas Recomendadas é executado na instância do AEM, o relatório é exibido como resultado na janela da ferramenta. O formato CSV do relatório inclui informações geradas a partir do output do Detector de padrões, classificadas e organizadas por tipo de categoria, subtipo e nível de importância."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#analysis-report" text="Revisão do relatório do Analisador de Práticas Recomendadas"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=en" text="Noções básicas sobre as categorias do relatório do Analisador de Práticas Recomendadas"
 
@@ -233,7 +233,7 @@ Os seguintes valores de resposta são possíveis:
 
 ## Informações do administrador
 
-### Ajuste do tempo de vida do cache {#cache-adjustment}
+### Ajuste da Duração do Cache {#cache-adjustment}
 
 O tempo de vida padrão do cache do BPA é de 24 horas. Com a opção de atualizar um relatório e regenerar o cache, tanto na instância AEM quanto na interface HTTP, esse valor padrão provavelmente será apropriado para a maioria dos usos do BPA. Se o tempo de geração do relatório for particularmente longo para a instância AEM, talvez você queira ajustar o tempo de vida do cache para minimizar a regeneração do relatório.
 

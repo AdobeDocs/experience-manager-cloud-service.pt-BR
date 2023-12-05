@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Viewer Presets,Viewers
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: 2009e549eadd97d4d2bfcccd728ece17ecfeede5
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '4384'
+source-wordcount: '4326'
 ht-degree: 8%
 
 ---
@@ -69,7 +69,6 @@ Todas as predefinições do visualizador prontas para uso que acompanham o Dynam
 * Apple iPad
 * Smartphone Android™
 * Android™ Tablet
-
 <!-- OUTDATED 2/25/22 * For video, extra support for MP4 playback is provided for [BlackBerry&reg;](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) and [Windows&reg; Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs). -->
 
 ### Tipos de mídia avançada para Predefinições do visualizador {#rich-media-types-for-viewer-presets}
@@ -331,13 +330,13 @@ A tabela a seguir identifica os gestos do visualizador móvel compatíveis com d
    <td><p>Panelas</p> </td>
   </tr>
   <tr>
-   <td><p><strong>Toque</strong></p> </td>
+   <td><p><strong>Selecionar</strong></p> </td>
    <td><p>Mostra a janela de imagem suspensa</p> </td>
    <td><p>Mostra ou oculta a interface do usuário</p> </td>
    <td><p>Mostra ou oculta a interface do usuário</p> </td>
   </tr>
   <tr>
-   <td><p><strong>Toque duas vezes</strong></p> </td>
+   <td><p><strong>Seleção dupla</strong></p> </td>
    <td><p>Não se aplica</p> </td>
    <td><p>Aumenta ou redefine</p> </td>
    <td><p>Aumenta ou redefine</p> </td>
@@ -385,7 +384,7 @@ O Experience Manager mostra uma grande variedade de predefinições do visualiza
 
    ![chlimage_1-222](/help/assets/dynamic-media/assets/chlimage_1-222.png)
 
-1. Na propriedade limit, altere o número para o número desejado, por exemplo `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
+1. Na propriedade limit, altere o número para o número desejado, por exemplo, `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
 1. Selecionar **[!UICONTROL Salvar tudo]**.
 
 ## Criar predefinições do visualizador {#creating-a-new-viewer-preset}
@@ -420,15 +419,16 @@ Consulte [Considerações especiais para a criação de uma predefinição do vi
 
    * No **[!UICONTROL Tipo selecionado]** selecione um componente cujo design visual você deseja personalizar. Como alternativa, você pode selecionar qualquer elemento visual no visualizador para selecioná-lo para configuração.
 
-      O editor visual permite ver o efeito que uma determinada propriedade tem em um estilo. Defina ou ajuste qualquer propriedade para ver instantaneamente o efeito sobre o visualizador usando a amostra à esquerda do editor.
+     O editor visual permite ver o efeito que uma determinada propriedade tem em um estilo. Defina ou ajuste qualquer propriedade para ver instantaneamente o efeito sobre o visualizador usando a amostra à esquerda do editor.
 
-      As propriedades de estilo CSS para cada tipo de predefinição do visualizador são descritas em &quot;Personalização *`<viewer name>`* Visualizador&quot; Tópico da Ajuda na seção [Guia de referência de visualizadores](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html). Por exemplo, se você estiver criando uma predefinição do visualizador do tipo `Mixed_Media`, consulte [Personalizar visualizador de mix de mídia](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) para obter uma lista e uma descrição de cada propriedade.
+     As propriedades de estilo CSS para cada tipo de predefinição do visualizador são descritas em &quot;Personalização *`<viewer name>`* Visualizador&quot; Tópico da Ajuda na seção [Guia de referência de visualizadores](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html). Por exemplo, se você estiver criando uma predefinição do visualizador do tipo `Mixed_Media`, consulte [Personalizar visualizador de mix de mídia](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) para obter uma lista e uma descrição de cada propriedade.
 
    * Se você tiver definido as configurações de estilo em um arquivo CSS separado, é possível fazer upload do arquivo CSS para o Experience Manager Assets. Para localizar o arquivo CSS carregado e associá-lo à predefinição do visualizador, selecione **[!UICONTROL Importar CSS]** abaixo do **[!UICONTROL Tipo selecionado]** menu suspenso (se necessário, role o editor visual até vê-lo).
 
-      Ao importar um arquivo CSS, o editor visual verifica se o CSS usa os marcadores de visualização corretos. Por exemplo, se você estiver criando um visualizador de Zoom, todas as regras de CSS importadas deverão ser definidas usando o nome de classe do visualizador `.s7mixedmediaviewer` definido em um elemento visualizador pai.
+     Ao importar um arquivo CSS, o editor visual verifica se o CSS usa os marcadores de visualização corretos. Por exemplo, se você estiver criando um visualizador de Zoom, todas as regras de CSS importadas deverão ser definidas usando o nome de classe do visualizador `.s7mixedmediaviewer` definido em um elemento visualizador pai.
 
-      Você pode importar CSS arbitrário e artesanal, desde que ele defina corretamente os marcadores CSS de um determinado visualizador. (Os marcadores CSS são descritos em qualquer seção *&lt;viewer name=&quot;&quot;>* Visualizador&quot; Tópico da Ajuda na seção [Guia de referência de visualizadores](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html). Por exemplo, se você deseja ler sobre marcadores CSS para o Visualizador de zoom, consulte [Personalizar o visualizador de zoom](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html).) No entanto, é possível que o editor visual não entenda alguns valores CSS. Nesses casos, o editor visual tenta substituir os erros para que o CSS ainda possa funcionar.
+     Você pode importar CSS arbitrário e artesanal, desde que ele defina corretamente os marcadores CSS de um determinado visualizador. (Os marcadores CSS são descritos em qualquer seção *&lt;viewer name=&quot;&quot;>* Visualizador&quot; Tópico da Ajuda na seção [Guia de referência de visualizadores](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html). Por exemplo, se você deseja ler sobre marcadores CSS para o Visualizador de zoom, consulte [Personalizar o visualizador de zoom](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html).) No entanto, é possível que o editor visual não entenda alguns valores CSS. Nesses casos, o editor visual tenta substituir os erros para que o CSS ainda possa funcionar.
+
    >[!NOTE]
    >
    >Se preferir editar o CSS diretamente em sua forma bruta, selecione **[!UICONTROL Mostrar/Ocultar CSS]** abaixo do menu suspenso Tipo selecionado (se necessário, role o editor visual para cima para vê-lo).
@@ -533,9 +533,9 @@ Usando o exemplo na tabela acima, 30 segundos / 3 subsegmentos de vídeo = exibi
 
 Ao criar predefinições do visualizador de banner do Carousel, a alteração do estilo de pontos de acesso pode ser acessada da seguinte maneira:
 
-|  | **Descrição** | **Ações** |
+| | **Descrição** | **Ações** |
 |---|---|---|
-| **[!UICONTROL Ícone de ponto de acesso]** | Alterar o ícone usado para ponto de acesso | Para alterar a imagem do ícone do ponto de acesso, na **[!UICONTROL Aparência]** guia, em **[!UICONTROL Componente selecionado]**, selecione **[!UICONTROL ImageMapEffect]**. Em **[!UICONTROL Ícone]**, selecione **[!UICONTROL Plano de fundo]** e, no campo **[!UICONTROL Imagem]**, navegue até a imagem de plano de fundo desejada. |
+| **[!UICONTROL Ícone de ponto de acesso]** | Alterar o ícone usado para ponto de acesso | Para alterar a imagem do ícone do ponto de acesso, na **[!UICONTROL Aparência]** guia, em **[!UICONTROL Componente selecionado]**, selecione **[!UICONTROL ImageMapEffect]**. Em **[!UICONTROL Ícone]**, selecione **[!UICONTROL Histórico]** e no **[!UICONTROL Imagem]** campo navegue até a imagem de fundo desejada. |
 
 ## Ativar ou desativar predefinições do visualizador {#activating-or-deactivating-viewer-presets}
 

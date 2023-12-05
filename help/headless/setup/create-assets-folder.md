@@ -2,10 +2,10 @@
 title: Criação de uma pasta de ativos - Configuração do headless
 description: Use os modelos de fragmento de conteúdo do AEM para definir a estrutura dos fragmentos de conteúdo, a base do seu conteúdo headless.
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '377'
-ht-degree: 88%
+source-wordcount: '375'
+ht-degree: 82%
 
 ---
 
@@ -34,7 +34,7 @@ Um administrador só precisaria criar pastas ocasionalmente para organizar o con
       * Ele pode ser ajustado, se necessário.
 
    ![Criar pasta](../assets/assets-folder-create.png)
-1. Selecione a pasta que acabou de criar passando o mouse sobre ela e tocando na marca de seleção. Em seguida, selecione **Propriedades** na barra de ferramentas (ou use o [atalho de teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `p`).
+1. Selecione a pasta criada passando o mouse sobre ela e tocando na marca de seleção. Em seguida, selecione **Propriedades** na barra de ferramentas (ou use o [atalho de teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `p`).
 1. Na janela **Propriedades**, selecione a guia **Serviços em nuvem**.
 1. Para a **Configuração na nuvem**, selecione a [configuração criada anteriormente.](create-configuration.md)
    ![Configurar pasta de ativos](../assets/assets-folder-configure.png)
@@ -43,7 +43,7 @@ Um administrador só precisaria criar pastas ocasionalmente para organizar o con
 
    ![Janela de confirmação](../assets/assets-folder-confirmation.png)
 
-É possível criar subpastas adicionais dentro da pasta que acabou de criar. As subpastas herdarão a **Configuração na nuvem** da pasta principal. Isso pode ser alterado, no entanto, se você quiser usar modelos de outra configuração.
+É possível criar subpastas adicionais dentro da pasta criada. As subpastas herdarão a **Configuração na nuvem** da pasta principal. Isso pode ser alterado, no entanto, se você quiser usar modelos de outra configuração.
 
 Se estiver usando uma estrutura de site localizada, é possível [criar uma raiz de idioma](/help/assets/translate-assets.md) abaixo da nova pasta.
 

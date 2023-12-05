@@ -10,10 +10,10 @@ feature: Commerce Integration Framework
 kt: 3046
 thumbnail: 28952.jpg
 exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94
-source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 18%
+source-wordcount: '364'
+ht-degree: 15%
 
 ---
 
@@ -25,7 +25,7 @@ Uma apresentação em vídeo detalhando as opções para integrar várias visual
 
 >[!VIDEO](https://video.tv.adobe.com/v/28952/?quality=12)
 
-Os recursos de gerenciamento de vários sites do AEM para Live Copy e Language Copy são usados com a Commerce Integration Framework para gerenciar sites em várias regiões e localidades.
+Os recursos de Gerenciamento de vários sites do AEM para Live Copy e Language Copy são usados com o Commerce integration framework para gerenciar sites globalmente em regiões e localidades.
 
 A configuração recomendada é usar uma relação 1:1 entre o site do AEM e a exibição da loja da Adobe Commerce.
 
@@ -39,11 +39,11 @@ Para conectar um site de AEM AEM e os Componentes principais do CIF a uma exibi�
 
 3. Crie uma configuração secundária da configuração do CIF Cloud Service seguindo estas etapas:
 
-   * No AEM, acesse Ferramentas -> Geral -> [Navegador de configuração](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
+   * No AEM, acesse Ferramentas > Geral > [Navegador de configuração](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
    * Selecione a configuração básica que você criou
    * Crie uma configuração usando as etapas descritas no ponto 2 acima
 
-   Essa nova configuração é criada como uma configuração secundária da base. Agora você pode acessar Ferramentas -> Geral -> Navegador de configuração e criar as configurações.
+   Essa nova configuração é criada como uma configuração secundária da base. Agora você pode acessar Ferramentas > Geral > Navegador de configuração e criar as configurações.
 
    >[!TIP]
    >

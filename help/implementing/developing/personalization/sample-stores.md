@@ -2,9 +2,9 @@
 title: Amostra de candidatos da loja do ContextHub
 description: O ContextHub fornece vários exemplos de candidatos de armazenamento que você pode usar em suas soluções
 exl-id: 9493d91e-0b23-4dc4-a014-d8d13687efad
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '457'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ O ContextHub fornece vários exemplos de candidatos a armazenamento que você po
 
 >[!WARNING]
 >
->Os exemplos de candidatos a armazenamento são fornecidos como configurações de referência para ajudar você a criar sua própria configuração dedicada para o projeto e, como tal, não devem ser usados diretamente.
+>Os exemplos de candidatos a armazenamento são fornecidos como configurações de referência para ajudar você a criar sua própria configuração dedicada para o projeto. Não os utilize diretamente.
 
 ## Amostra de candidato da loja do aem.segmentation {#aem-segmentation-sample-store-candidate}
 

@@ -4,9 +4,9 @@ description: Descubra como criar ou adicionar um Formulário adaptável à sua p
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3208'
+source-wordcount: '3177'
 ht-degree: 1%
 
 ---
@@ -53,7 +53,7 @@ Você pode aproveitar ao máximo esse recurso utilizando as seguintes opções:
 
 * **[Converter um formulário adaptável em fragmento de experiência](#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment):** Converta um formulário adaptável adicionado a uma página do AEM Sites em um Fragmento de experiência para reutilizar o formulário em várias páginas do AEM Sites.
 
-* **[Criar e adicionar formulários com base em modelos aprovados a uma página do AEM Sites:](/help/forms/embed-adaptive-form-aem-sites.md#embed-form-using-adaptive-form-wizzard-aem-sites)** Você pode aproveitar os modelos pré-aprovados para criar rapidamente o Forms adaptável que se alinha às diretrizes de marca e aos padrões de design de sua organização. A opção está disponível somente para o Forms adaptável criado com o Editor Forms adaptável ou o componente Forms adaptável - Incorporar.
+* **[Criar e adicionar formulários com base em modelos aprovados a uma página do AEM Sites:](/help/forms/embed-adaptive-form-aem-sites.md#embed-form-using-adaptive-form-wizzard-aem-sites)** Você pode usar modelos pré-aprovados para criar rapidamente o Adaptive Forms que se alinham às diretrizes de marca e padrões de design de sua organização. A opção está disponível somente para o Forms adaptável criado com o Editor Forms adaptável ou o componente Forms adaptável - Incorporar.
 
 * **[Adicionar formulários existentes a uma página do AEM Sites:](/help/forms/embed-adaptive-form-aem-sites.md#embed-an-adaptive-form-in-sites-editor)** É possível integrar facilmente formulários já criados em seus sites, permitindo que os visitantes interajam diretamente com eles. A opção está disponível somente para o Forms adaptável criado com o Editor Forms adaptável ou o componente Forms adaptável - Incorporar.
 
@@ -239,7 +239,7 @@ Você pode usar o serviço de Preenchimento do modelo de dados de formulário pa
 1. Abra a Árvore de conteúdo e selecione a **[!UICONTROL Contêiner adaptável do Forms]** que hospeda o formulário adaptável. Uma página do AEM Sites pode hospedar vários Forms adaptáveis. Portanto, selecione cuidadosamente o Contêiner adaptável correto do Forms.
 1. Clique nas propriedades do Contêiner de formulário adaptável ![Propriedades do contêiner de formulário adaptável](/help/forms/assets/configure-icon.svg) ícone. A caixa de diálogo Contêiner de formulário adaptável para configurar os Modelos de dados é aberta.
    ![Clique no ícone de chave inglesa para abrir a caixa de diálogo Contêiner de formulário adaptável para configurar o serviço de preenchimento prévio para o formulário adaptável](/help/forms/assets/adaptive-forms-container.png)
-1. Selecionar um modelo de dados do formulário. Abra o **[!UICONTROL Básico]** guia. No serviço de preenchimento, selecione **[!UICONTROL Serviço de preenchimento do modelo de dados de formulário]**.
+1. Selecione um modelo de dados de formulário. Abra o **[!UICONTROL Básico]** guia. No serviço de preenchimento, selecione **[!UICONTROL Serviço de preenchimento do modelo de dados de formulário]**.
 1. Clique em **[!UICONTROL Concluído]**. O formulário adaptável agora está configurado para usar o Preenchimento prévio do modelo de dados de formulário. Agora você pode, use o [editor de regras](rule-editor.md) para criar regras para preencher previamente os campos do formulário.
 
 

@@ -4,9 +4,9 @@ description: Incorpore facilmente o Adaptive Forms em uma página do AEM Sites o
 feature: Adaptive Forms
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3164'
+source-wordcount: '3145'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 
 Você pode aproveitar esse recurso usando as seguintes opções:
 
-* **[Criar um formulário adaptável usando modelos aprovados e incorporá-lo a uma página do AEM Sites](#embed-form-using-adaptive-form-wizzard-aem-sites):** Você pode aproveitar os modelos pré-aprovados para criar e incorporar rapidamente o Adaptive Forms, que se alinha às diretrizes de marca e aos padrões de design de sua organização.
+* **[Criar um formulário adaptável usando modelos aprovados e incorporá-lo a uma página do AEM Sites](#embed-form-using-adaptive-form-wizzard-aem-sites):** Você pode usar modelos pré-aprovados para criar e incorporar rapidamente o Adaptive Forms que se alinham às diretrizes de marca e padrões de design de sua organização.
 
 * **[Incorporar formulários existentes a uma página do AEM Sites](#embed-an-adaptive-form-in-sites-editor):** É possível integrar facilmente formulários já criados em seus sites, permitindo que os visitantes interajam diretamente com eles.
 
@@ -201,7 +201,7 @@ Para incorporar um formulário adaptável existente em uma página do Sites:
 
 1. Abra a página do AEM Sites no modo de edição.
 1. Arraste e solte a variável **[!UICONTROL Forms adaptável - incorporado(v2)]** componente do Navegador de componentes para a página Sites.
-1. Toque no **[!UICONTROL Forms adaptável - Incorporado]** componente na página Sites e toque em ![Propriedades do contêiner de formulário adaptável](/help/forms/assets/configure-icon.svg) na barra de ações. A variável **[!UICONTROL Editar Forms adaptável - incorporado(v2)]** será aberta.
+1. Selecione o **[!UICONTROL Forms adaptável - Incorporado]** componente na página Sites e selecione ![Propriedades do contêiner de formulário adaptável](/help/forms/assets/configure-icon.svg) na barra de ações. A variável **[!UICONTROL Editar Forms adaptável - incorporado(v2)]** será aberta.
 1. Procure e selecione o Formulário adaptável a ser incorporado no **[!UICONTROL Caminho do ativo]**.
 1. Salve as configurações. O Formulário adaptável agora está incorporado na página.
 
@@ -215,7 +215,7 @@ Você também pode estender a acessibilidade de seus formulários incorporando-o
 
 1. Abra um Fragmento de experiência no modo de edição.
 1. Arraste e solte a variável **[!UICONTROL Forms adaptável - incorporado(v2)]** componente do Navegador de componentes para o Fragmento de experiência.
-1. Toque no **[!UICONTROL Forms adaptável - Incorporado]** no Fragmento de experiência e toque em ![Propriedades do contêiner de formulário adaptável](/help/forms/assets/configure-icon.svg) na barra de ações. A variável **[!UICONTROL Editar Forms adaptável - incorporado(v2)]** será aberta.
+1. Selecione o **[!UICONTROL Forms adaptável - Incorporado]** no Fragmento de experiência e selecione ![Propriedades do contêiner de formulário adaptável](/help/forms/assets/configure-icon.svg) na barra de ações. A variável **[!UICONTROL Editar Forms adaptável - incorporado(v2)]** será aberta.
 1. Procure e selecione o Formulário adaptável a ser incorporado no **[!UICONTROL Caminho do ativo]**.
 1. Salve as configurações. O Formulário adaptável agora está incorporado ao Fragmento de experiência.
 
@@ -310,9 +310,9 @@ To embed an Adaptive Form using the **[!UICONTROL Adaptive Forms - Embed]** comp
    >
    >Multiple Adaptive Forms - Embed components on a page are not supported.
 
-1. To create and embed a new form, on the component toolbar, tap the **Create Form** icon. A window to create the form opens. 
+1. To create and embed a new form, on the component toolbar, select the **Create Form** icon. A window to create the form opens. 
 
-1. Tap the embedded Adaptive Forms - Embed component in the sites page, and then tap ![settings_icon](assets/settings_icon.png) on the action bar. The **[!UICONTROL Edit Adaptive Forms - Embed]** dialog opens.
+1. Select the embedded Adaptive Forms - Embed component in the sites page, and then select ![settings_icon](assets/settings_icon.png) on the action bar. The **[!UICONTROL Edit Adaptive Forms - Embed]** dialog opens.
 1. In the Edit Adaptive Forms - Embed dialog, specify the following.
 
     **Asset Type:** Select the type of asset to embed. 
@@ -356,7 +356,7 @@ Considere os seguintes cenários para a publicação de um Formulário adaptáve
 Para modificar qualquer configuração ou propriedade do Formulário adaptável incorporado, execute um dos procedimentos a seguir.
 
 * Abra o formulário original em um Formulário adaptável no respectivo editor e modifique-o.
-* Toque no Formulário adaptável na página do site no modo de edição e toque em **[!UICONTROL Editar em uma nova janela]**. O formulário original é aberto no modo de edição que você pode modificar.
+* Selecione o formulário adaptável na página do site no modo de edição e selecione **[!UICONTROL Editar em uma nova janela]**. O formulário original é aberto no modo de edição que você pode modificar.
 
 >[!NOTE]
 >

@@ -2,9 +2,9 @@
 title: Diretrizes de desenvolvimento do AEM as a Cloud Service
 description: Conheça as diretrizes para desenvolvimento no AEM as a Cloud Service e as principais diferenças em relação ao AEM local e ao AEM no AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: c706757857a528a0475f659c6b38110db6f6572a
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '2791'
+source-wordcount: '2745'
 ht-degree: 4%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 4%
 >id="development_guidelines"
 >title="Diretrizes de desenvolvimento do AEM as a Cloud Service"
 >abstract="Conheça as diretrizes para desenvolvimento no AEM as a Cloud Service e as principais diferenças em relação ao AEM local e ao AEM no AMS."
->additional-url="https://video.tv.adobe.com/v/330555?captions=por_br/" text="Demonstração da estrutura do pacote"
+>additional-url="https://video.tv.adobe.com/v/330555/" text="Demonstração da estrutura do pacote"
 
 Este documento apresenta diretrizes para o desenvolvimento do AEM as a Cloud Service e sobre importantes maneiras em que ele difere do AEM em instalações e do AEM na AMS.
 
@@ -33,7 +33,7 @@ O estado não deve ser mantido na memória, mas mantido no repositório. Caso co
 
 ## Estado no sistema de arquivos {#state-on-the-filesystem}
 
-O sistema de arquivos da instância não deve ser usado no AEM as a Cloud Service. O disco é efêmero e é descartado quando as instâncias são recicladas. O uso limitado do sistema de arquivos para armazenamento temporário relacionado ao processamento de solicitações únicas é possível, mas não deve ser usado para arquivos enormes. Isso ocorre porque pode ter um impacto negativo na cota de uso do recurso e gerar limitações de disco.
+Não use o sistema de arquivos da instância no AEM as a Cloud Service. O disco é efêmero e é descartado quando as instâncias são recicladas. O uso limitado do sistema de arquivos para armazenamento temporário relacionado ao processamento de solicitações únicas é possível, mas não deve ser usado para arquivos enormes. Isso ocorre porque pode ter um impacto negativo na cota de uso do recurso e gerar limitações de disco.
 
 Como exemplo em que o uso do sistema de arquivos não é compatível, a camada de Publicação deve garantir que todos os dados que devem ser mantidos sejam enviados para um serviço externo para armazenamento de longo prazo.
 
@@ -47,7 +47,7 @@ O código executado como tarefas em segundo plano deve supor que a instância em
 
 Para minimizar o problema, se possível, a execução de trabalhos de longa duração deve ser evitada, e eles devem ser retomáveis no mínimo. Para executar esses trabalhos, use o Sling Jobs, que têm uma garantia de pelo menos uma vez e, portanto, se forem interrompidos, serão reexecutados o mais rápido possível. Mas elas provavelmente não devem recomeçar do início. Para agendar esses trabalhos, é melhor usar a variável [Sling Jobs](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) scheduler, pois isso garante novamente a execução de pelo menos uma vez.
 
-O Sling Commons Scheduler não deve ser usado para agendamento, pois a execução não pode ser garantida. É mais provável que ela esteja programada.
+Não use o Sling Commons Scheduler para agendamento, pois a execução não pode ser garantida. É mais provável que ela esteja programada.
 
 Da mesma forma, com tudo o que está acontecendo de forma assíncrona, como a atuação em eventos de observação (ou seja, eventos JCR ou eventos de recursos Sling), não é garantido que seja executado e, portanto, deve ser usado com cuidado. Isso já é verdadeiro para implantações de AEM no presente.
 
@@ -109,7 +109,7 @@ Por exemplo, alterar uma definição de índice em um grande repositório de con
 
 Para desenvolvimento local, as entradas de log são gravadas em arquivos locais na `/crx-quickstart/logs` pasta.
 
-Em ambientes da nuvem, os desenvolvedores podem baixar logs por meio do Cloud Manager ou usar uma ferramenta de linha de comando para rastrear os logs. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
+Em ambientes da nuvem, os desenvolvedores podem baixar logs por meio do Cloud Manager ou usar uma ferramenta de linha de comando para rastrear os logs. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
 
 **Definir o nível de log**
 
@@ -172,7 +172,7 @@ Os despejos de thread em ambientes na nuvem são coletados de forma contínua, m
 
 Para o desenvolvimento local, os desenvolvedores têm acesso total ao CRXDE Lite (`/crx/de`) e o console da Web do AEM (`/system/console`).
 
-Observe que no desenvolvimento local (usando o SDK), `/apps` e `/libs` O pode ser gravado diretamente no, que é diferente de ambientes na nuvem, onde essas pastas de nível superior são imutáveis.
+No desenvolvimento local (usando o SDK), `/apps` e `/libs` O pode ser gravado diretamente no, que é diferente de ambientes na nuvem, onde essas pastas de nível superior são imutáveis.
 
 ### Ferramentas de desenvolvimento do AEM as a Cloud Service {#aem-as-a-cloud-service-development-tools}
 

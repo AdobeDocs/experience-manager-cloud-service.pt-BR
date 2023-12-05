@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 026f4920-f8f9-4b08-b1b0-af50229633d7
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '746'
 ht-degree: 1%
 
 ---
@@ -31,14 +31,14 @@ Leia para obter detalhes sobre o envio assíncrono no Adaptive Forms.
 
 Para configurar o envio assíncrono para um Formulário adaptável:
 
-1. No modo de criação do Formulário adaptável, selecione o objeto Contêiner de formulário e toque em ![cmppr1](assets/configure-icon.svg) para abrir suas propriedades.
+1. No modo de criação do Formulário adaptável, selecione o objeto Contêiner de formulário e selecione ![cmppr1](assets/configure-icon.svg) para abrir suas propriedades.
 1. No **[!UICONTROL Envio]** seção de propriedades, ativar **[!UICONTROL Usar envio assíncrono]**.
 1. No **[!UICONTROL Ao enviar]** selecione uma das seguintes opções a serem executadas no envio bem-sucedido do formulário.
 
    * **[!UICONTROL Redirecionar para URL]**: redireciona para a URL ou página especificada no envio do formulário. Você pode especificar um URL ou procurar para escolher o caminho para uma página no **[!UICONTROL URL/caminho de redirecionamento]** campo.
    * **[!UICONTROL Mostrar mensagem]**: exibe uma mensagem no envio do formulário. Você pode escrever uma mensagem no campo de texto abaixo de **[!UICONTROL Mostrar mensagem]** opção. O campo de texto é compatível com a formatação de rich text.
 
-1. Toque ![botão de seleção1](assets/save_icon.svg) para salvar as propriedades.
+1. Selecionar ![botão de seleção1](assets/save_icon.svg) para salvar as propriedades.
 
 ## Como o envio assíncrono funciona {#how-asynchronous-submission-works}
 
@@ -108,11 +108,11 @@ Desenvolvedores de formulários e autores podem escrever regras, no nível do fo
 
 Execute as seguintes etapas para escrever regras para lidar com eventos bem-sucedidos e errados.
 
-1. Abra o Formulário adaptável no modo de criação, selecione qualquer objeto de formulário e toque em ![edit-rules1](assets/edit-rules-icon.svg) para abrir o editor de regras.
-1. Selecionar **[!UICONTROL Formulário]** na árvore Objetos de formulário e toque em **[!UICONTROL Criar]**.
+1. Abra o Formulário adaptável no modo de criação, selecione qualquer objeto de formulário e ![edit-rules1](assets/edit-rules-icon.svg) para abrir o editor de regras.
+1. Selecionar **[!UICONTROL Formulário]** na árvore Objetos de formulário e selecione **[!UICONTROL Criar]**.
 1. Escolher **[!UICONTROL foi enviado com sucesso]** ou **[!UICONTROL falha no envio]** do **[!UICONTROL Selecionar estado]** lista suspensa.
 1. Definir um **[!UICONTROL Depois]** ação para o estado selecionado. Por exemplo, selecione **[!UICONTROL Navegar para]** e, em seguida, digite ou cole um URL. Você também pode arrastar qualquer função usando o **[!UICONTROL Funções]** para a regra.
 
    ![manipulador de envio bem-sucedido](assets/form-submission-handler.png)
 
-1. Toque **[!UICONTROL Concluído]** para salvar a regra.
+1. Selecionar **[!UICONTROL Concluído]** para salvar a regra.

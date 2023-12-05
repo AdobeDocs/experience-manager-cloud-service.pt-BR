@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1409'
+source-wordcount: '1396'
 ht-degree: 20%
 
 ---
@@ -27,7 +27,7 @@ Ao usar estratégias consistentes e apropriadas de nomenclatura de arquivos e pa
 ## Adicionar um perfil de metadados {#adding-a-metadata-profile}
 
 1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Assets]** > **[!UICONTROL Perfis de metadados]** e clique em **[!UICONTROL Criar]**.
-1. Insira um título para o Perfil de metadados, por exemplo, Metadados de amostra, e toque em **[!UICONTROL Enviar]**. O formulário de edição do perfil de metadados é exibido.
+1. Insira um título para o Perfil de metadados, por exemplo, Metadados de amostra, e selecione **[!UICONTROL Enviar]**. O formulário de edição do perfil de metadados é exibido.
 1. Clique em um componente e configure suas propriedades na **[!UICONTROL Configurações]** guia. Por exemplo, clique no link **[!UICONTROL Descrição]** componente e editar suas propriedades.
 Edite as seguintes propriedades para o **[!UICONTROL Descrição]** componente:
 
@@ -90,12 +90,12 @@ Você pode reprocessar ativos em uma pasta que já tenha um perfil de vídeo exi
 
 1. Navegue até **[!UICONTROL Ferramentas > Ativos > Perfis de metadados]**.
 1. Selecione o perfil de metadados que deseja aplicar a uma ou várias pastas.
-1. Clique em **[!UICONTROL Aplicar perfil de metadados às pastas]** e selecione a pasta ou as várias pastas que deseja usar para receber os ativos carregados recentemente e clique em **[!UICONTROL Concluído]**. As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do nome do perfil logo abaixo do nome da pasta.
+1. Clique em **[!UICONTROL Aplicar perfil de metadados a pastas]** e selecione a pasta ou as várias pastas que deseja usar para receber os ativos carregados recentemente e clique em **[!UICONTROL Concluído]**. As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do nome do perfil logo abaixo do nome da pasta.
 
 #### Aplicar perfis de metadados a pastas de Propriedades {#applying-metadata-profiles-to-folders-from-properties}
 
 1. No painel à esquerda, clique em **[!UICONTROL Assets]** em seguida, navegue até a pasta à qual deseja aplicar um perfil de metadados.
-1. Na pasta, clique ou clique na marca de seleção para selecioná-la e clique ou clique em **Propriedades**.
+1. Na pasta, marque a marca de seleção para selecioná-la e, em seguida, selecione **Propriedades**.
 1. Selecione o **[!UICONTROL Perfis de metadados]** e selecione o perfil no menu suspenso e clique em **[!UICONTROL Salvar]**. As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do nome do perfil logo abaixo do nome da pasta.
 
 ### Aplicar um perfil de metadados globalmente {#applying-a-metadata-profile-globally}

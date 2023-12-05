@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3489'
-ht-degree: 15%
+source-wordcount: '3431'
+ht-degree: 14%
 
 ---
 
@@ -37,7 +37,7 @@ Leia para saber quais integrações escolher entre o desktop e o DAM de nível e
 | Simplifique a experiência para profissionais criativos no desktop | Simplificar o acesso ao ativo a partir de um DAM ([!DNL Assets]) para profissionais criativos ou, de modo mais amplo, usuários em desktops que trabalham em aplicativos nativos de criação de ativos. Eles precisam de uma maneira fácil e direta de descobrir, usar (abrir), editar e salvar alterações no Experience Manager e fazer upload de novos arquivos. | Desktop Win ou Mac; aplicativos Creative Cloud |
 | Fornecer ativos de alta qualidade e prontos para uso do [!DNL Adobe Stock] | Os profissionais de marketing ajudam a acelerar o processo de criação de conteúdo, auxiliando na origem e descoberta de ativos. Os profissionais criativos usam os ativos aprovados diretamente de suas ferramentas criativas. | [!DNL Assets]; [!DNL Adobe Stock] marketplace, campos de metadados |
 | Distribuir e compartilhar ativos por organizações | Departamentos internos/filiais locais e parceiros externos, distribuidores e agências usam os ativos aprovados compartilhados pela organização principal. A organização deseja compartilhar com segurança e perfeição os ativos criados para reutilização mais ampla. | [!DNL Brand Portal], [!DNL Asset Share Commons] |
-| Gerar automaticamente variações predefinidas de ativos carregados | Processar ativos automaticamente usando a tecnologia exclusiva de manipulação e transformação de mídia do Adobe para ações predefinidas. Crie uma lógica personalizada para definir suas próprias ações usando APIs e microsserviços de ativos. | [!DNL Assets]Interface |
+| Gerar automaticamente variações predefinidas de ativos carregados | Processar ativos automaticamente usando a tecnologia exclusiva de manipulação e transformação de mídia do Adobe para ações predefinidas. Crie uma lógica personalizada para definir suas próprias ações usando APIs e microsserviços de ativos. | [!DNL Assets] interface do usuário |
 
 ## ofertas de Adobe para dar suporte à necessidade de colaboração {#adobe-offerings-to-support-the-collaboration-need}
 
@@ -46,7 +46,7 @@ Leia para saber quais integrações escolher entre o desktop e o DAM de nível e
 | Os usuários de criação descobrem ativos do [!DNL Experience Manager], abra e use-os, edite e faça upload de alterações no [!DNL Experience Manager]e carregar novos arquivos no [!DNL Experience Manager], sem sair do seu [!DNL Creative Cloud] aplicativo. | [Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html) | Photoshop, Illustrator e InDesign. |
 | Usuários empresariais simplificam a abertura e o uso de ativos, a edição e o upload de alterações no [!DNL Experience Manager]e carregando novos arquivos no [!DNL Experience Manager] do ambiente de desktop. Eles usam uma integração genérica para abrir qualquer tipo de ativo no aplicativo de desktop nativo, incluindo aqueles não-Adobe. | Aplicativo de desktop do [[!DNL Experience Manager]  ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | aplicativo de desktop Experience Manager no desktop Win e Mac |
 | Profissionais de marketing e usuários empresariais descobrem, visualizam, licenciam e salvam e gerenciam os ativos da Adobe Stock no Experience Manager. Os ativos licenciados e salvos fornecem metadados selecionados do Adobe Stock para melhorar o controle. | [Integração de Experience Manager e Adobe Stock](aem-assets-adobe-stock.md) | [!DNL Experience Manager] interface da web |
-| Melhore a colaboração entre designers de produtos digitais e profissionais de marketing. Permita que os designers usem os ativos digitais nos modelos de design e wireframe na tela do Adobe XD. | [[!DNL Adobe Asset Link]  para  [!DNL Adobe XD]](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link-for-xd.html) | [!DNL Adobe XD] |
+| Melhore a colaboração entre designers de produtos digitais e profissionais de marketing. Permita que os designers usem os ativos digitais nos modelos de design e wireframe na tela do Adobe XD. | [[!DNL Adobe Asset Link] para [!DNL Adobe XD]](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link-for-xd.html) | [!DNL Adobe XD] |
 | Os profissionais de marketing podem criar variações e derivações automaticamente com base nos ativos carregados e nas ações predefinidas criadas usando a personalização. Use essa automação para melhorar a velocidade do conteúdo e reduzir o esforço manual. | [Automação de conteúdo](/help/assets/cc-api-integration.md) | [!DNL Experience Manager Assets] interface da web |
 
 Este artigo foca principalmente nos dois primeiros aspectos das necessidades de colaboração. A distribuição e o fornecimento de ativos em escala são brevemente mencionadas como um caso de uso. Para essas necessidades, considere o Adobe Brand Portal ou o Asset Share Commons. Soluções alternativas, como [Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html), soluções que podem ser criadas com base em [Asset Share Commons](https://opensource.adobe.com/asset-share-commons/) componentes, [Compartilhamento de link](share-assets.md), utilizando [Interface do usuário da Web do Experience Manager Assets](/help/assets/manage-digital-assets.md) deve ser revista com base em requisitos específicos.
@@ -57,7 +57,7 @@ Decisão sobre qual recurso usar
 
 ### Mapeamento de casos de uso e soluções Adobe {#mapping-of-use-cases-and-adobe-solutions}
 
-| Caso de uso | Adobe Asset Link | Aplicativo de desktop do Experience Manager | Observações ou métodos alternativos |
+| Caso de uso | Adobe Asset Link | aplicativo de desktop do Experience Manager | Observações ou métodos alternativos |
 |----------------------------------------------------------|-----------------------------------------------------------------------------------|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
 | Descobrir - procurar pastas | Sim | UI da Web do Experience Manager + ações do desktop | Ao navegar pelo compartilhamento de rede, desative as miniaturas para evitar o download de arquivos binários de ativos. |
 | Descobrir - acessar coleções | Sim | UI da Web do Experience Manager + ações do desktop |  |
@@ -97,7 +97,7 @@ Para suportar casos de uso de distribuição de ativos, considere as seguintes o
 
 * **Atualização/alteração de ativos secundários:** uma pequena e rápida mudança em um ativo digital. Geralmente é feito em resposta a uma solicitação de retoque ou edição secundária, revisão de ativos ou aprovação (por exemplo, reposição, alteração do tamanho do texto, ajuste da saturação/brilho, cor e assim em diante).
 * **Atualizações/alterações de ativos principais:** uma mudança em um ativo digital que requer trabalho considerável, e às vezes deve ser feita por um período mais longo. Normalmente, inclui várias alterações. O ativo deve ser salvo várias vezes durante a atualização. As atualizações de ativos principais normalmente fazem com que o ativo entre em um estágio WIP.
-* **DAM:** Gerenciamento de ativos digitais. Neste documento, ele é sinônimo do Experience Manager Assets, a menos que especificamente mencionado o contrário.
+* **DAM:** Gerenciamento de ativos digitais. Neste documento, ele é sinônimo de Experience Manager Assets, a menos que especificamente mencionado o contrário.
 * **Usuário criativo**: um profissional criativo, que cria ativos digitais usando aplicativos e serviços da Creative Cloud. Em alguns casos, um usuário criativo pode ser membro de uma equipe criativa que pode usar a Creative Cloud, mas não cria ativos digitais (como um diretor criativo ou gerente de equipe criativa).
 * **Usuário do DAM:** um usuário típico de um sistema DAM. Dependendo da organização, um usuário do DAM pode ser um usuário de marketing ou não, por exemplo, um usuário de Linha de Negócios (LOB), um bibliotecário, um vendedor e assim por diante.
 
@@ -220,7 +220,7 @@ Você pode ter um requisito para carregar simultaneamente um número maior de ar
 * Upload de ativos fornecidos por agências de criação
 * Fazer upload de ativos selecionados de um conjunto maior se a seleção for feita fora do DAM
 
-Observe que essa descrição se refere ao upload de arquivos operacionalmente (por exemplo, toda semana ou com cada sessão de fotos ), como uma parte normal do fluxo de trabalho do usuário do desktop. As migrações de ativos grandes não são contempladas aqui.
+Essa descrição se refere ao upload de arquivos operacionalmente (por exemplo, toda semana ou com cada sessão de fotos ), como uma parte normal do fluxo de trabalho do usuário do desktop. As migrações de ativos grandes não são contempladas aqui.
 
 Você pode usar os seguintes recursos de upload:
 

@@ -2,9 +2,9 @@
 title: Configuração do ContextHub
 description: Saiba como configurar o Context Hub, uma estrutura para armazenar, manipular e apresentar dados de contexto.
 exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1629'
+source-wordcount: '1609'
 ht-degree: 1%
 
 ---
@@ -53,7 +53,7 @@ Adicione um modo de interface do usuário para agrupar módulos do ContextHub re
 1. Forneça valores para as seguintes propriedades:
 
    * Título do modo da interface: o título que identifica o modo da interface
-   * Ícone Mode: o seletor para o [Ícone da Coral UI](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) para usar, por exemplo `coral-Icon--user`
+   * Ícone Mode: o seletor para o [Ícone da Coral UI](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) para usar, por exemplo, `coral-Icon--user`
    * Ativado: selecione para mostrar o modo de interface na barra de ferramentas do ContextHub
 
 1. Selecione Salvar.
@@ -78,7 +78,7 @@ As propriedades do módulo de interface do usuário incluem uma configuração d
 
 1. No painel Experience Manager, selecione Ferramentas > Sites > ContextHub.
 1. Selecione o Contêiner de configuração ao qual você deseja adicionar um módulo de interface.
-1. Clique ou digite a Configuração do ContextHub à qual você deseja adicionar o módulo de interface do usuário.
+1. Selecione ou digite a Configuração do ContextHub à qual você deseja adicionar o módulo de interface do usuário.
 1. Selecione o modo da interface ao qual você está adicionando o módulo da interface.
 1. Selecione o botão Criar e selecione Módulo de interface do usuário do ContextHub (genérico).
 

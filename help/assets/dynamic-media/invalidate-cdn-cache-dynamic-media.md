@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Asset Management
 role: Admin,User
 exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1384'
-ht-degree: 2%
+source-wordcount: '1397'
+ht-degree: 1%
 
 ---
 
@@ -55,7 +55,6 @@ No entanto, esse não é o caso para domínios genéricos que não oferecem supo
    >O Modelo de invalidação da CDN pode salvar texto de até 2500 caracteres.
 
 1. No canto superior direito da **[!UICONTROL Modelo de invalidação da CDN]** selecione **[!UICONTROL Salvar]** e selecione **[!UICONTROL OK]**.<br>
-
    *Parte 2 de 2: Definição de opções de invalidação de CDN*
    <br>
 
@@ -102,4 +101,4 @@ Em todos os casos, o lote inteiro é processado para invalidação ou o lote int
 | *Nenhum URL inserido para ser invalidado.* | Ocorre se não houver URLs na variável **[!UICONTROL Invalidação da CDN]** - **[!UICONTROL Confirmar o]** e selecione **[!UICONTROL Enviar]**. |
 
 
-<!--  | I do not want to create a template. | Near the upper-right corner of the page, select **[!UICONTROL Cancel]**, then continue with ***Part 2: Working with CDN Invalidation***. Note that while you are not required to create a template to use CDN Invalidation, Adobe recommends that you create one, especially if you have numerous assets that you need to update immediately, on a regular basis. The template is used at the time you set CDN invalidation options. | -->
+<!--  | I do not want to create a template. | Near the upper-right corner of the page, select **[!UICONTROL Cancel]**, then continue with ***Part 2: Working with CDN Invalidation***. While you are not required to create a template to use CDN Invalidation, Adobe recommends that you create one, especially if you have numerous assets that you need to update immediately, on a regular basis. The template is used at the time you set CDN invalidation options. | -->

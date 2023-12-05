@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '9461'
-ht-degree: 2%
+source-wordcount: '9454'
+ht-degree: 1%
 
 ---
 
@@ -91,7 +91,7 @@ A descrição do fluxo de trabalho passo a passo a seguir foi projetada para aju
    * Se você estiver usando um sistema de gerenciamento de conteúdo da Web de terceiros, é possível vincular ou incorporar vídeos às suas páginas da Web.
 
       * Integrar vídeo usando o URL:
-        [Vincular URLs ao seu aplicativo web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md).
+        [Vincular URLs ao aplicativo da Web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md).
 
       * Integrar vídeo usando o código incorporado na página da Web:
         [Incorporar o visualizador de vídeo em uma página da Web](/help/assets/dynamic-media/embed-code.md).
@@ -212,7 +212,7 @@ A tabela a seguir descreve o dispositivo, o navegador e o método de reproduçã
   </tr>
   <tr>
    <td>Desktop</td>
-   <td>Chrome</td>
+   <td>Cromo</td>
    <td>Transmissão da taxa de bits adaptável HLS ou DASH*</td>
   </tr>
   <tr>
@@ -221,27 +221,27 @@ A tabela a seguir descreve o dispositivo, o navegador e o método de reproduçã
    <td>Transmissão da taxa de bits adaptável HLS</td>
   </tr>
   <tr>
-   <td>Móvel</td>
+   <td>Mobile</td>
    <td>Chrome (Android™ 6 ou anterior)</td>
    <td>Download progressivo.</td>
   </tr>
   <tr>
-   <td>Móvel</td>
+   <td>Mobile</td>
    <td>Chrome (Android™ 7 ou posterior)</td>
    <td>Transmissão adaptável da taxa de bits HLS ou DASH*/td&gt;
   </tr>
   <tr>
-   <td>Móvel</td>
+   <td>Mobile</td>
    <td>Android™ (navegador padrão)</td>
    <td>Download progressivo.</td>
   </tr>
   <tr>
-   <td>Móvel</td>
+   <td>Mobile</td>
    <td>Safari (iOS)</td>
    <td>Transmissão da taxa de bits adaptável HLS</td>
   </tr>
   <tr>
-   <td>Móvel</td>
+   <td>Mobile</td>
    <td>Chrome (iOS)</td>
    <td>Transmissão da taxa de bits adaptável HLS</td>
   </tr>
@@ -315,10 +315,10 @@ A tabela a seguir descreve como os resultados da fórmula são convertidos em op
 
 | Resultado da fórmula | Taxa de proporção |
 |--- |--- |
-| 1.33 | 4:3 |
-| 0.75 | 3:4 |
-| 1.78 | 16:9 |
-| 0.56 | 9:16 |
+| 1,33 | 4:3 |
+| 0,75 | 3:4 |
+| 1,78 | 16:9 |
+| 0,56 | 9:16 |
 
 Por exemplo, um vídeo com largura de 1440 x altura de 1080 tem uma taxa de proporção de 1440/1080 ou 1,33. Nesse caso, você escolhe uma predefinição de codificação de vídeo com uma proporção 4:3 para codificar o arquivo de vídeo.
 
@@ -360,8 +360,8 @@ Resolução e taxa de dados são dois fatores vinculados integralmente que deter
 
 | Resolução | Pixels por quadro |
 |--- |--- |
-| 320 x 240 | 76,800 |
-| 640 x 480 | 307,200 |
+| 320 x 240 | 76.800 |
+| 640 x 480 | 307.200 |
 
 O arquivo de 640 x 480 tem quatro vezes mais pixels por quadro. Para obter a mesma taxa de dados para essas duas resoluções de exemplo, aplique quatro vezes a compactação ao arquivo 640 x 480, o que pode reduzir a qualidade do vídeo. Portanto, uma taxa de dados de vídeo de 250 Kbps produz uma visualização de alta qualidade com resolução de 320 x 240, mas não com resolução de 640 x 480.
 
@@ -401,7 +401,7 @@ Por exemplo, suponha que a origem de vídeo seja 1920 x 1080. Na tabela a seguir
 
 | Tipo de vídeo | Largura x altura | Proporção de largura | Taxa de altura |
 |--- |--- |--- |--- |
-| Origem | 1920x1080 | 1 | 1 |
+| Origem | 1920 x 1080 | 1 | 1 |
 | Codificado | 960 x 540 | 2 | 2 |
 | Codificado | 640 x 360 | 3 | 3 |
 | Codificado | 480 x 270 | 4 | 4 |
@@ -1063,7 +1063,7 @@ See [Adding a video thumbnail](#adding-a-video-thumbnail).
 
    if the directory panel is not visible, you may need to select the >> icon to the left of the Home tab.
 
-1. On the lower-right panel, in the Properties tab, double-tap `thumbnailtime`.
+1. On the lower-right panel, in the Properties tab, double-select `thumbnailtime`.
 1. In the Edit thumbnailtime dialog box, use the text fields to enter interval values as percentages.
 
     * Select the plus sign (+) icon to add one or more interval value fields. You may need to scroll to the bottom of the dialog box to see the icon.

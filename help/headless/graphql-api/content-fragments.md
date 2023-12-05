@@ -3,10 +3,10 @@ title: API GraphQL do AEM para uso com Fragmentos de conteúdo
 description: Saiba como usar os Fragmentos de conteúdo no Adobe Experience Manager (AEM) as a Cloud Service com a API GraphQL do AEM, para entrega de conteúdo headless.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '4923'
-ht-degree: 93%
+source-wordcount: '4863'
+ht-degree: 91%
 
 ---
 
@@ -115,7 +115,7 @@ As [consultas persistentes](/help/headless/graphql-api/persisted-queries.md) sã
 
 As consultas GraphQL que utilizam solicitações POST não são recomendadas, pois não são armazenadas em cache. Portanto, em uma instância padrão, o Dispatcher é configurado para bloquear essas consultas.
 
-Embora o GraphQL também seja compatível com solicitações GET, elas podem atingir limites (por exemplo, o comprimento do URL) que poderiam ser evitados usando consultas persistentes.
+Embora o GraphQL também seja compatível com solicitações GET, elas podem atingir limites (por exemplo, o comprimento do URL) que podem ser evitados usando Consultas persistentes.
 
 Consulte [Habilitar armazenamento em cache de consultas persistentes](/help/headless/deployment/dispatcher-caching.md) para obter mais detalhes.
 
@@ -253,7 +253,7 @@ O GraphQL do AEM oferece suporte a uma lista de tipos. Todos os tipos de dados d
 | Enumeração | `String` | Usado para exibir uma opção de uma lista de opções definidas na criação do modelo |
 | Tags | `[String]` | Usado para exibir uma lista de strings que representam tags usadas no AEM |
 | Referência de conteúdo | `String`, `[String]` | Usado para exibir o caminho para outro ativo no AEM |
-| Referência de fragmento |  *Um tipo de modelo* <br><br>Campo único: `Model` - Tipo de modelo, referenciado diretamente <br><br>Vários campos, com um tipo referenciado: `[Model]` - Matriz de tipo `Model`, referenciada diretamente da matriz <br><br>Vários campos, com vários tipos referenciados: `[AllFragmentModels]` - Matriz de todos os tipos de modelo, referenciada a partir de matriz com tipo de união |  Usado para fazer referência a um ou mais Fragmentos de conteúdo de determinados Tipos de modelo, definidos quando o modelo foi criado |
+| Referência de fragmento |  *Um tipo de modelo* <br><br>Campo único: `Model` - Tipo de modelo, referenciado diretamente <br><br>Vários campos, com um tipo referenciado: `[Model]` - Matriz de tipo `Model`, referenciado diretamente do array <br><br>Vários campos, com vários tipos referenciados: `[AllFragmentModels]` - Matriz de todos os tipos de modelo, referenciada da matriz com tipo de união |  Usado para fazer referência a um ou mais Fragmentos de conteúdo de determinados Tipos de modelo, definidos quando o modelo foi criado |
 
 {style="table-layout:auto"}
 
@@ -519,7 +519,7 @@ Uma definição de filtro (transmitida como o argumento `filter` para uma consul
 * Cada subdefinição contém a matriz `_expressions`, fornecendo o conjunto de expressões e o campo `_logOp` que define o operador lógico com o qual as expressões devem ser combinadas
 * Cada expressão é definida pelo valor (campo `value`) e o operador (campo `_operator`) com o qual o conteúdo de um campo deve ser comparado
 
-Observe que você pode omitir o `_logOp` se quiser combinar itens com `AND` e o `_operator` se quiser verificar a igualdade, pois esses são os valores padrão.
+Você pode omitir `_logOp` se quiser combinar itens com `AND` e `_operator` se quiser verificar a igualdade, pois esses são os valores padrão.
 
 O exemplo a seguir demonstra uma consulta completa que filtra todas as pessoas que têm um `lastName` igual a `Provo` ou que contêm `sjö`, independentemente do caso:
 

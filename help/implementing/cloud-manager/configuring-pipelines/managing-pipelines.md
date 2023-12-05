@@ -3,10 +3,10 @@ title: Gerenciar pipelines
 description: Saiba como gerenciar os pipelines existentes, incluindo edição, execução e exclusão.
 index: true
 exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '938'
-ht-degree: 68%
+source-wordcount: '928'
+ht-degree: 64%
 
 ---
 
@@ -43,7 +43,7 @@ A janela **Pipelines** mostra uma lista completa de todos os pipelines do progra
 
 1. No **Visão geral do programa** selecione a **Pipelines** para alternar para a guia **Pipelines** janela.
 
-1. Aqui você pode ver uma lista de todos os pipelines do programa, bem como iniciar e parar a execução do pipeline, assim como no **cartão do pipeline**.
+1. Aqui você pode ver uma lista de todos os pipelines para o programa e iniciar e parar a execução do pipeline como faria na variável **Cartão Pipelines**.
 
 Se um pipeline estiver em execução, passar o mouse sobre a coluna **Status** revelará detalhes da execução.
 

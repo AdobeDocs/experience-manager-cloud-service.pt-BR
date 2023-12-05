@@ -1,13 +1,12 @@
 ---
 title: Como visualizar um formulário adaptável?
 description: Os usuários podem visualizar formulários antes de publicá-los ou ativá-los, para garantir que atendam às expectativas. As opções de visualização podem variar entre os tipos de formulário compatíveis.
-uuid: 9ec359ea-f518-441c-9c3d-e3c1ea07a532
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 377d804d-4a75-4c93-8125-d2660cf56418
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '359'
 ht-degree: 3%
 
 ---
@@ -19,7 +18,7 @@ ht-degree: 3%
 
 Entrada [!DNL AEM Forms], é possível visualizar os formulários e documentos presentes no repositório. A Pré-visualização ajuda a saber exatamente como os formulários são exibidos e se comportam quando são lançados para os usuários finais.
 
-Ao visualizar formulários, eles são renderizados na interface interativa e o usuário pode preencher os formulários com dados. Ao visualizar documentos, eles são renderizados no modo não interativo e o usuário só pode visualizar o documento. Para formulários, uma opção adicional de Visualização personalizada está disponível. Com essa opção, é possível visualizar o formulário usando dados de um arquivo XML. Os dados preenchem alguns ou todos os campos do formulário que está sendo visualizado.
+Ao visualizar formulários, eles são renderizados na interface interativa e o usuário pode preencher os formulários com dados. Ao visualizar documentos, eles são renderizados no modo não interativo e o usuário só pode visualizar o documento. Para formulários, uma opção adicional de Visualização personalizada está disponível. Com essa opção, é possível visualizar o formulário usando dados de um arquivo XML. Os dados preenchem alguns dos campos, ou todos os campos, do formulário que está sendo visualizado.
 
 A tabela a seguir lista as opções de visualização disponíveis para diferentes tipos de formulários compatíveis:
 

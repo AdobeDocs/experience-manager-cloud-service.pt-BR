@@ -6,9 +6,9 @@ content-type: reference
 topic-tags: develop
 discoiquuid: f5642571-9657-4ca1-93c5-4ae2eb91e967
 noindex: true
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '535'
+source-wordcount: '533'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ Este artigo explica o processo de uso do fluxo de trabalho de tradução do AEM 
 
 O serviço de tradução automática traduz imediatamente seu conteúdo no formulário adaptável e no documento de registro. [!DNL AEM Forms] O é pré-configurado para usar uma versão de avaliação do [!DNL Microsoft Translator] para tradução automática. Execute as seguintes etapas para habilitar a tradução automática para o Forms adaptável e o Documento de registro:
 
-1. No [!DNL AEM Forms] Selecione um formulário e toque na guia **Adicionar dicionário** opção.
+1. No [!DNL AEM Forms] Selecione um formulário e selecione a variável **Adicionar dicionário** opção.
 1. Entrada **Adicionar dicionário ao projeto de tradução** , selecione a **Criar um novo projeto de tradução** ou **Adicionar a um projeto de tradução existente** opção.
 1. No **Título do projeto** especifique o título. Por exemplo, `Government Reference Site - German locale.`
 1. No **Idiomas de destino** especifique um local (Por exemplo, `German(de)`) e clique em **Concluído**. Você pode especificar várias localidades. O formulário é traduzido para todas as localidades especificadas no **Idiomas de destino** campo.
@@ -48,7 +48,7 @@ O serviço de tradução automática traduz imediatamente seu conteúdo no formu
 [Configurações do documento de registro](generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-settings-p)
 
 1. [Personalizar as informações de marca do documento de registro](generate-document-of-record-for-non-xfa-based-adaptive-forms.md) e certifique-se de que a localidade do navegador esteja definida com o mesmo idioma para o qual você localizou o Formulário adaptável usando o idioma do computador. O local do navegador ajuda a localizar as informações de marca no Documento de registro.
-1. Para exibir o documento de registro localizado, toque em Gerar visualização. O PDF de documento de registro é gerado e aberto em uma nova guia no navegador.
+1. Para exibir o documento de registro localizado, selecione Gerar visualização. O PDF de documento de registro é gerado e aberto em uma nova guia no navegador.
 
 <!-- ## Localizing an Adaptive Form and its Document of Record using Human Translation {#localizing-an-adaptive-form-and-its-document-of-record-using-human-translation}
 

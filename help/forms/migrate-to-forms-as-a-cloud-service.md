@@ -9,10 +9,10 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1583'
-ht-degree: 4%
+source-wordcount: '1430'
+ht-degree: 1%
 
 ---
 
@@ -97,28 +97,28 @@ Execute as seguintes etapas para tornar seus [!DNL AEM Forms] ativos compatívei
 1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Migração de conteúdo]**.
 
 1. Abra o **[!UICONTROL Preparar o Forms para migração]** cartão. O navegador exibe cinco opções:
-   * **[!UICONTROL Migração de ativos de AEM Forms]**
+   * **[!UICONTROL Migração de ativos do AEM Forms]**
    * **[!UICONTROL Migração adaptável de componentes personalizados do Forms]**
    * **[!UICONTROL Migração adaptável de modelos do Forms]**
-   * **[!UICONTROL Migração das configurações de nuvem de AEM Forms]**
+   * **[!UICONTROL Migração de configurações da AEM Forms Cloud]**
    * **[!UICONTROL Migração de script do editor de código]**
 
 1. Use a opção um após o outro para tornar seus [!DNL AEM Forms] ativos compatíveis com [!DNL AEM] as a Cloud Service:
 
-   1. Toque **[!UICONTROL Migração de ativos do AEM Forms]** e, na próxima tela, toque em **[!UICONTROL Iniciar migração]**. Ele coloca o Forms adaptável e temas em seu [!DNL AEM Forms] ambiente compatível com [!DNL AEM] as a Cloud Service.
+   1. Selecionar **[!UICONTROL Migração de ativos do AEM Forms]** e, na próxima tela, selecione **[!UICONTROL Iniciar migração]**. Ele coloca o Forms adaptável e temas em seu [!DNL AEM Forms] ambiente compatível com [!DNL AEM] as a Cloud Service.
 
-   1. Toque **[!UICONTROL Migração adaptável de componentes personalizados do Forms]** e na página Migração de componentes personalizados, toque em **[!UICONTROL Iniciar migração]**. Ele faz com que qualquer componente personalizado desenvolvido para Forms adaptável e sobreposições de componentes no seu [!DNL AEM Forms] ambiente compatível com [!DNL AEM] as a Cloud Service.
+   1. Selecionar **[!UICONTROL Migração adaptável de componentes personalizados do Forms]** e na página Migração de componentes personalizados, selecione **[!UICONTROL Iniciar migração]**. Ele faz com que qualquer componente personalizado desenvolvido para Forms adaptável e sobreposições de componentes no seu [!DNL AEM Forms] ambiente compatível com [!DNL AEM] as a Cloud Service.
 
-   1. Toque **[!UICONTROL Migração de modelo adaptável do Forms]** e na página Migração de componentes personalizados, toque em **[!UICONTROL Iniciar migração]**. Ele coloca os modelos de Formulário adaptável em `/apps` ou `/conf` e criado usando o Editor de modelo AEM compatível com [!DNL AEM] as a Cloud Service.
+   1. Selecionar **[!UICONTROL Migração de modelo adaptável do Forms]** e na página Migração de componentes personalizados, selecione **[!UICONTROL Iniciar migração]**. Ele coloca os modelos de Formulário adaptável em `/apps` ou `/conf` e criado usando o Editor de modelo AEM compatível com [!DNL AEM] as a Cloud Service.
 
-   1. Toque **[!UICONTROL Migração de configurações da AEM Forms Cloud]** e, na página Migração de configuração, toque em **[!UICONTROL Iniciar migração]**. Ele atualiza e move os seguintes Cloud Service para um novo local:
+   1. Selecionar **[!UICONTROL Migração de configurações da AEM Forms Cloud]** e, em seguida, na página Migração de configuração, selecione **[!UICONTROL Iniciar migração]**. Ele atualiza e move os seguintes Cloud Service para um novo local:
 
       * Cloud Service do modelo de dados de formulário
       * Cloud Service Google reCAPTCHA
-      * [!DNL Adobe Sign] Serviço em nuvem
+      * [!DNL Adobe Sign] Cloud Service
       * Cloud Service Adobe Fonts
 
-   1. Toque **[!UICONTROL Migração de script do editor de código]**, especifique um local para salvar funções reutilizáveis e toque em **[!UICONTROL Iniciar migração].
+   1. Selecionar **[!UICONTROL Migração de script do editor de código]**, especifique um local para salvar funções reutilizáveis e selecione **[!UICONTROL Iniciar migração].
 
    O Cloud Service não é compatível com scripts do editor de regras. A variável **[!UICONTROL Migração de script do editor de código]** a ferramenta converte todos os scripts de regras em seu ambiente em funções reutilizáveis e aplica as funções reutilizáveis ao editor visual no local apropriado. Essas funções reutilizáveis são salvas na forma de bibliotecas de clientes e ajudam a manter a funcionalidade existente intacta. A ferramenta aplica automaticamente as funções reutilizáveis geradas ao Forms adaptável correspondente.
 

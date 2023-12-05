@@ -2,10 +2,10 @@
 title: Como adicionar uma nota de rodapé a um formulário adaptável?
 description: Use o editor de rich text (RTE) para notas de rodapé em um formulário adaptável.
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '443'
-ht-degree: 2%
+source-wordcount: '429'
+ht-degree: 0%
 
 ---
 
@@ -33,7 +33,7 @@ No Forms Adaptável, [!UICONTROL nota de rodapé] é usado para exibir as inform
 Para adicionar uma nota de rodapé no Adaptive Forms, execute as seguintes etapas:
 1. Abra um formulário adaptável no **Editar** modo.
 1. No navegador de componentes, arraste e solte a **[!UICONTROL Texto]** no Formulário adaptável.
-1. Selecione o **[!UICONTROL Texto]** componente adicionado e toque em ![cmppr](assets/configure-icon.svg) para editar suas propriedades.
+1. Selecione o **[!UICONTROL Texto]** componente que você adicionou e selecionou ![cmppr](assets/configure-icon.svg) para editar suas propriedades.
 
    ![Nota de rodapé no Adaptive Forms](/help/forms/assets/footnote_rte.png)
 

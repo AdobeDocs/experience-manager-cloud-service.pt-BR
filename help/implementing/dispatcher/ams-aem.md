@@ -3,10 +3,10 @@ title: Migração da configuração do Dispatcher do AMS para o AEM as a Cloud S
 description: Migração da configuração do Dispatcher do AMS para o AEM as a Cloud Service
 feature: Dispatcher
 exl-id: ff7397dd-b6e1-4d08-8e2d-d613af6b81b3
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1455'
-ht-degree: 17%
+source-wordcount: '1459'
+ht-degree: 7%
 
 ---
 
@@ -102,7 +102,7 @@ Incluir na lista de permissões Se você vir diretivas do Apache que não são, 
 Remover qualquer arquivo farm em `conf.dispatcher.d/enabled_farms` que tenha `author`, `unhealthy`, `health`,
 `lc` ou `flush` em seu nome. Todos os arquivos do farm em `conf.dispatcher.d/available_farms` que não estão vinculados também podem ser removidos.
 
-### Renomear arquivos de farm
+### Renomear arquivos do farm
 
 Todos os farms em `conf.dispatcher.d/enabled_farms` deve ser renomeado para corresponder ao padrão `*.farm`, por exemplo, um arquivo de farm chamado `customerX_farm.any` deve ser renomeado `customerX.farm`.
 
@@ -194,7 +194,7 @@ Em cada arquivo do farm, remova qualquer conteúdo do `renders` seção e substi
 $include "../renders/default_renders.any"
 ```
 
-### Verifique virtualhosts
+### Verificar virtualhosts
 
 Renomeie o diretório `conf.dispatcher.d/vhosts` para `conf.dispatcher.d/virtualhosts` e insira-o.
 
@@ -231,7 +231,7 @@ Se você encontrar erros sobre a falta de arquivos de inclusão, verifique se os
 
 Se você vir erros relacionados à variável indefinida `PUBLISH_DOCROOT`, renomeie-a para `DOCROOT`.
 
-Para todos os outros erros, consulte a seção de solução de problemas da documentação da ferramenta de validação.
+Para todos os outros erros, consulte a seção Solução de problemas da documentação da ferramenta de validação.
 
 ### Testar sua configuração com uma implantação local (requer instalação do Docker)
 
@@ -243,7 +243,7 @@ Uso do script `docker_run.sh` nas Ferramentas do Dispatcher as a Cloud Service p
 validator full -d out .
 ```
 
-Isso valida a configuração completa e gera informações de implantação em `out`
+Isso valida a configuração completa e gera informações de implantação no `out`
 
 ### Etapa 2: inicie o Dispatcher em uma imagem do docker com essas informações de implantação
 
@@ -257,6 +257,6 @@ Isso iniciará o contêiner e exporá o Apache na porta local 8080.
 
 ### Usar sua nova configuração do Dispatcher
 
-Parabéns! Se o validador não relatar mais nenhum problema, e o contêiner do docker for inicializado sem falhas ou avisos, você estará pronto para mover sua configuração para o anúncio `dispatcher/src` subdiretório do seu repositório Git.
+Parabéns! Se o validador não relatar mais nenhum problema, e o contêiner do docker for inicializado sem falhas ou avisos, você estará pronto para mover sua configuração para um `dispatcher/src` subdiretório do seu repositório Git.
 
 **Os clientes que usam a configuração 1 do AMS Dispatcher devem entrar em contato com o suporte ao cliente para ajudá-los a migrar da versão 1 para a versão 2, para que as instruções acima possam ser seguidas.**

@@ -2,10 +2,10 @@
 title: Como gerar um documento de registro (DoR) para o AEM Forms?
 description: Saiba como gerar um modelo para um Documento de registro (DoR) do Adaptive Forms.
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: 00a905a08de1c14ef0ded7475d2f95abacc50af1
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '4139'
-ht-degree: 3%
+source-wordcount: '4124'
+ht-degree: 2%
 
 ---
 
@@ -34,7 +34,7 @@ A opção sob demanda permite especificar um modelo XFA ou baseado em acroforma 
 * [Gerar um documento de registro baseado em acroforma (PDF do Acrobat Form)](#generate-an-Acroform-based-document-of-record)
 * [Gerar automaticamente um documento de registro](#auto-generate-a-document-of-record)
 
-## Antes de você iniciar {#components-to-automatically-generate-a-document-of-record}
+## Antes de começar {#components-to-automatically-generate-a-document-of-record}
 
 Antes de começar a aprender e preparar os ativos necessários para um Documento de registro:
 
@@ -48,7 +48,7 @@ Faça upload do modelo XFA (arquivo XDP) na instância do AEM Forms. Execute as 
 
 1. Na instância do autor do Experience Manager, clique em **[!UICONTROL Forms]** > **[!UICONTROL Forms e documentos].**
 1. Selecione um formulário e clique em **[!UICONTROL Propriedades]**.
-1. Na janela Propriedades, toque em **[!UICONTROL Modelo de formulário]**.
+1. Na janela Propriedades, selecione **[!UICONTROL Modelo de formulário]**.
 1. No  **[!UICONTROL Modelo de formulário]** , na guia **[!UICONTROL Selecionar de]** selecione **[!UICONTROL Esquema]** ou **[!UICONTROL Nenhum]**. Você também pode selecionar um modelo de formulário ao criar um formulário.
 1. Na seção Document of Record Template Configuration da guia Form Model, selecione **Associar o modelo de formulário como o documento de modelo de registro**. Ao selecionar essa opção, todos os modelos XFA (arquivos XDP) disponíveis em sua máquina são exibidos. Selecione o arquivo apropriado. Além disso, verifique se o mesmo esquema (esquema de dados) é usado para o Formulário adaptável e o modelo XFA selecionado (arquivo XDP).
 1. Clique em **[!UICONTROL Concluído.]**
@@ -61,7 +61,7 @@ Carregue seu PDF Adobe Acrobat (Acroform) na instância do AEM Forms. Execute as
 
 1. Na instância do autor do Experience Manager, clique em **[!UICONTROL Forms]** > **[!UICONTROL Forms e documentos].**
 1. Selecione um formulário e clique em **[!UICONTROL Propriedades]**.
-1. Na janela Propriedades, toque em **[!UICONTROL Modelo de formulário]**.
+1. Na janela Propriedades, selecione **[!UICONTROL Modelo de formulário]**.
 1. No  **[!UICONTROL Modelo de formulário]** , na guia **[!UICONTROL Selecionar de]** selecione **[!UICONTROL Esquema]** ou **[!UICONTROL Nenhum]**. Você também pode selecionar um modelo de formulário ao criar um formulário.
 1. Na seção Document of Record Template Configuration da guia Form Model, selecione **Associar o modelo de formulário como o documento de modelo de registro**. Ao selecionar essa opção, todos os PDF Acrobat (Acroform) disponíveis em sua máquina são exibidos. Selecione o arquivo apropriado.
 1. Clique em **[!UICONTROL Concluído.]**
@@ -82,7 +82,7 @@ Execute as seguintes etapas para configurar um Formulário adaptável para gerar
 
 1. Na instância do autor do Experience Manager, clique em **[!UICONTROL Forms]** > **[!UICONTROL Forms e documentos].**
 1. Selecione um formulário e clique em **[!UICONTROL Propriedades]**.
-1. Na janela Propriedades, toque em **[!UICONTROL Modelo de formulário]**.
+1. Na janela Propriedades, selecione **[!UICONTROL Modelo de formulário]**.
 1. No  **[!UICONTROL Modelo de formulário]** , na guia **[!UICONTROL Selecionar de]** selecione **[!UICONTROL Esquema]** ou **[!UICONTROL Nenhum]**. Você também pode selecionar um modelo de formulário ao criar um formulário.
 1. Na seção Document of Record Template Configuration da guia Form Model, selecione **Gerar documento de registro**.
 1. Clique em **[!UICONTROL Concluído.]**
@@ -335,10 +335,10 @@ Ao gerar um Documento de registro, você pode alterar as informações de marca 
 
 Para localizar as informações de marca inseridas na guia Documento de registro, certifique-se de que o local do navegador esteja definido adequadamente. Para personalizar as informações de marca do Documento de registro, execute as seguintes etapas:
 
-1. Selecione um painel (painel raiz) no Documento de registro e toque em ![configurar](assets/configure.png).
-1. Toque ![dortab](assets/dortab.png). A guia Documento de registro é exibida.
+1. Selecione um painel (painel raiz) no documento de registro e selecione ![configurar](assets/configure.png).
+1. Selecionar ![dortab](assets/dortab.png). A guia Documento de registro é exibida.
 1. Selecione o modelo padrão ou um modelo personalizado para renderizar o documento de registro. Se você selecionar o modelo padrão, uma visualização em miniatura do Documento de registro será exibida abaixo do menu suspenso Modelo.
-1. Se você selecionar um modelo padrão ou personalizado, algumas ou todas as propriedades a seguir serão exibidas na guia Documento de registro. Especifique as propriedades mencionadas abaixo para definir a aparência do documento de registro:
+1. Se você selecionar um modelo padrão ou personalizado, algumas das propriedades a seguir, ou todas as propriedades, serão exibidas na guia Documento de registro. Especifique as propriedades mencionadas abaixo para definir a aparência do documento de registro:
 
    1. **Propriedades básicas**:
       * **Modelo**: se você optar por selecionar um modelo personalizado, procure um XDP selecionado em seu [!DNL AEM Forms] servidor. Se quiser usar um modelo que ainda não esteja na sua [!DNL AEM Forms] servidor, primeiro carregue o XDP no seu [!DNL AEM Forms] servidor.
@@ -358,7 +358,7 @@ Para localizar as informações de marca inseridas na guia Documento de registro
 
       ![Propriedades do campo de formulário](/help/forms/assets/formfieldpropertiesdor.png)
 
-   1. **Página principal  Propriedades**:
+   1. **Propriedades da página principal**:
       * **Imagem de logotipo**: Você pode optar por usar a imagem de logotipo do Formulário adaptável, escolher um do DAM ou fazer upload de um do seu computador.
       * **Título do formulário**: Título do DoR.
       * **Texto do cabeçalho**: texto que aparece na seção de cabeçalho do Documento de registro.
@@ -366,7 +366,7 @@ Para localizar as informações de marca inseridas na guia Documento de registro
       * **Isenção de responsabilidade**: texto que especifica o escopo dos direitos e obrigações no documento de registro.
       * **Texto do aviso**: Texto do aviso de isenção de responsabilidade.
 
-      ![Página principal  Propriedades](/help/forms/assets/masterpagepropertiesdor.png)
+      ![Propriedades da página principal](/help/forms/assets/masterpagepropertiesdor.png)
 
    >[!NOTE]
    >
@@ -384,7 +384,7 @@ Para localizar as informações de marca inseridas na guia Documento de registro
    </proto>
    ```
 
-1. Para salvar as alterações de marca, toque em **[!UICONTROL Concluído]**.
+1. Para salvar as alterações de marca, selecione **[!UICONTROL Concluído]**.
 
 ## Suporte a documento de registro no editor de formulário adaptável {#dor-support-in-adaptiveform}
 
@@ -401,7 +401,7 @@ Execute as seguintes etapas a partir da instância de autor do editor de Formul�
 
    * **[!UICONTROL Gerar documento de registro]**: Quando essa opção é selecionada, a variável [!UICONTROL Documento do registro] O modelo é gerado automaticamente para o Formulário adaptável.
 
-1. Toque em ![Salvar](/help/forms/assets/check-button.png) para salvar as propriedades.
+1. Selecionar ![Salvar](/help/forms/assets/check-button.png) para salvar as propriedades.
 
 ![Documento de suporte ao modelo de registro](/help/forms/assets/dor-templatesupport.png)
 

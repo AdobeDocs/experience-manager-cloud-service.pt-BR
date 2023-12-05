@@ -2,10 +2,10 @@
 title: Fundamentos técnicos do AEM
 description: Uma visão geral dos fundamentos técnicos do AEM, incluindo como o AEM é estruturado e as tecnologias fundamentais, como JCR, Sling e OSGi.
 exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2144'
-ht-degree: 1%
+source-wordcount: '2130'
+ht-degree: 0%
 
 ---
 

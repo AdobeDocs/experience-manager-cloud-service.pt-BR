@@ -2,9 +2,9 @@
 title: Publicação
 description: Saiba como executar a migração depois que o código e o conteúdo estiverem prontos para nuvem
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1704'
+source-wordcount: '1697'
 ht-degree: 4%
 
 ---
@@ -86,7 +86,7 @@ Ao executar a migração de produção, você deve evitar a execução da ferram
 
 **Otimização da carga na origem do AEM ao executar a migração de conteúdo**
 
-Lembre-se, a carga na fonte AEM é maior durante a fase de extração. Você deve estar ciente de que:
+Lembre-se, a carga na fonte AEM é maior durante a fase de extração. Esteja ciente do seguinte:
 
 * A Ferramenta de transferência de conteúdo é um processo Java externo que usa um Heap JVM de 4 GB
 * A versão que não é do AzCopy baixa binários, armazena em um espaço temporário no autor AEM de origem, consumindo E/S de disco e faz upload no contêiner do Azure que consome largura de banda de rede
@@ -115,7 +115,7 @@ Ambos os itens acima são identificados e relatados na variável [Analisador de 
 
 Revise esta lista de atividades para garantir que você execute uma migração tranquila e bem-sucedida.
 
-* Execute um pipeline de produção completo com testes funcionais e de interface do usuário para garantir uma **sempre atual** Experiência do produto AEM. Consulte os seguintes recursos.
+* Execute um pipeline de produção completo com testes funcionais e de interface do usuário para garantir uma **sempre atual** Experiência do produto AEM. Consulte os recursos a seguir.
    * [Atualizações de versão do AEM](/help/implementing/deploying/aem-version-updates.md)
    * [Teste funcional personalizado](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)
    * [Teste de interface](/help/implementing/cloud-manager/ui-testing.md)

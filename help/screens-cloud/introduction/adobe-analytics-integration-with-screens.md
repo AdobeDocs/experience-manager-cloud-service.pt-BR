@@ -1,21 +1,17 @@
 ---
 title: Integração do Adobe Analytics com a AEM Screens Cloud
-seo-title: Adobe Analytics Integration with AEM Screens
 description: Siga esta página para saber mais sobre a integração imediata do AEM Screens com o Adobe Analytics e fornecer uma prova de reprodução.
-seo-description: Follow this page to learn about out of the box integration of AEM Screens with Adobe Analytics and provides you with a proof of play.
-uuid: 80d61af7-bf4d-46ca-a026-99a666c2e1a0
 contentOwner: trushton
 content-type: reference
 products: SG_EXPERIENCEMANAGER/Cloud/SCREENS
 topic-tags: administering
-discoiquuid: b1a0e00e-0368-42c9-8bcd-5f00b4d0990c
 docset: aem65
 role: Admin, Developer
 level: Intermediate
 exl-id: e22242ce-e5ce-4486-bba4-e6a89ac4fb5e
-source-git-commit: 75d147886c8151f8b8ac41af907e17b5deff5a9c
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '408'
 ht-degree: 0%
 
 ---
@@ -49,7 +45,7 @@ A integração do Adobe Analytics com o AEM Screens impõe o seguinte *metas*:
 
 ## Detalhes da arquitetura {#architectural-details}
 
-Um cliente do AEM Screens deseja entender qual conteúdo foi mostrado, em que momento e por quanto tempo (agregado). Esse é um recurso comum da solução de sinalização. Em vez de criar nossa própria análise, o AEM Screens aproveitará o Adobe Analytics e, com isso, poderemos alcançar algo exclusivo no mercado: a análise entre canais, que ajuda a correlacionar o conteúdo mostrado no local com outras fontes de dados.
+Um cliente do AEM Screens deseja entender qual conteúdo foi mostrado, em que momento e por quanto tempo (agregado). Esse é um recurso comum da solução de sinalização. Em vez de criar nossa própria análise, o AEM Screens usa o Adobe Analytics e, com isso, você pode obter algo exclusivo no mercado: a análise entre canais, que ajuda a correlacionar o conteúdo mostrado no local com outras fontes de dados.
 
 O diagrama de arquitetura a seguir explica a integração do Adobe Analytics com o AEM Screens:
 
@@ -57,7 +53,7 @@ O diagrama de arquitetura a seguir explica a integração do Adobe Analytics com
 
 ## Habilitar o Adobe Analytics na AEM Screens Cloud {#enabling-adobe-analytics-in-aem-screens-cloud}
 
-Entre em contato com o Gerente de relacionamento de Adobe para ativar a análise de Adobe no Screens Cloud.
+Entre em contato com o Gerente de relacionamento de Adobe para ativar a análise de Adobe na Screens Cloud.
 
 ## Utilização do serviço Adobe Analytics na AEM Screens Cloud {#using-adobe-analytics-service-in-aem-screens}
 

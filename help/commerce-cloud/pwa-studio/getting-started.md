@@ -5,10 +5,10 @@ topics: Commerce
 feature: Commerce Integration Framework
 thumbnail: 37843.jpg
 exl-id: a7c187ba-885e-45bf-a538-3c235b09a0f1
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 1%
+source-wordcount: '719'
+ht-degree: 0%
 
 ---
 
@@ -105,7 +105,7 @@ Siga a documentação dos Fragmentos de conteúdo do AEM para configurar um endp
 
 Você pode encontrar exemplos completos de ambas as configurações aqui: <https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cfm-blog-extension/aem/config/src/main/content/jcr_root/apps/blog-demo/config>.
 
-Para mostrar o endpoint do GraphQL, preparamos alguns modelos de amostra de modelos e dados de fragmento de conteúdo por meio de um pacote de conteúdo. Eles funcionam bem em conjunto com os componentes do React fornecidos com a extensão PWA Studio.
+Para mostrar o endpoint do GraphQL, há alguns modelos de fragmento de conteúdo de amostra preparados e dados por meio de um pacote de conteúdo. Eles funcionam bem em conjunto com os componentes do React fornecidos com a extensão PWA Studio.
 
 ## Como usar {#how-to-use}
 

@@ -5,10 +5,10 @@ uuid: ffeba886-9b24-4ed1-95c0-e19356ff2f23
 products: SG_EXPERIENCEMANAGER/FORMS
 topic-tags: author
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '726'
-ht-degree: 3%
+source-wordcount: '709'
+ht-degree: 2%
 
 ---
 
@@ -33,9 +33,9 @@ Você pode usar o **Rabiscar a assinatura** componente e **Etapa de assinatura**
 * **C:** Clique em **Localização geográfica** ícone para adicionar a localização geográfica junto com a assinatura.
 * **D:** Clique em **Teclado** ícone para digitar seu nome na tela.
 
-Depois de tocar em Concluído ![aem_forms_save](assets/aem_forms_save.png) ícone na janela Assinatura, não é possível editar a assinatura. No caso, se você quiser editar a assinatura, desconsidere a assinatura atual e assine novamente usando a opção Pincel/Teclado acima.
+Depois de selecionar Concluído ![aem_forms_save](assets/aem_forms_save.png) ícone na janela Assinatura, não é possível editar a assinatura. No caso, se você quiser editar a assinatura, desconsidere a assinatura atual e assine novamente usando a opção Pincel/Teclado acima.
 
-Você pode tocar no **Configurar** ![ícone de configuração](assets/configure.png) ícone para definir a proporção da tela Assinatura Escrita.
+É possível selecionar a variável **Configurar** ![ícone de configuração](assets/configure.png) ícone para definir a proporção da tela Assinatura Escrita.
 * Quando a proporção da tela Assinatura Escrita for menor que 1, as informações de localização geográfica serão adicionadas na parte inferior da tela Assinatura Escrita.
 
 
@@ -55,20 +55,20 @@ Você pode tocar no **Configurar** ![ícone de configuração](assets/configure.
 
 1. Crie uma opção Documento de registro ativada ou Formulário adaptável baseado em modelo de formulário. Para obter informações passo a passo, consulte [Criação de um formulário adaptável](creating-adaptive-form.md).
 1. Arraste e solte a variável **Rabiscar a assinatura** componente do navegador de componentes para o Formulário adaptável.
-1. Toque no **Configurar** ![configurar](assets/configure.png) ícone. Ele abre as propriedades do navegador e exibe as propriedades do componente Assinatura Escrita. Configure as propriedades do componente Assinatura Escrita.
+1. Selecione o **Configurar** ![configurar](assets/configure.png) ícone. Ele abre as propriedades do navegador e exibe as propriedades do componente Assinatura Escrita. Configure as propriedades do componente Assinatura Escrita.
 1. Arraste e solte o componente Etapa de assinatura do navegador de componentes para o Formulário adaptável.
 
    >[!NOTE]
    >
    >O componente Etapa de assinatura ocupa toda a largura disponível para o formulário. É recomendável não ter nenhum outro componente na seção que contém o componente Etapa de assinatura.
 
-1. No Navegador de conteúdo, toque em **Contêiner de formulário** e toque no **Configurar** ![ícone de configuração](assets/configure.png) ícone. Ela abre as propriedades do navegador e exibe as propriedades do contêiner do Formulário adaptável. Navegue até **Contêiner de formulário adaptável** > **Assinatura eletrônica** e desmarque a opção **Ativar o Adobe Sign** opção. Toque no botão Concluído ![aem_forms_save](assets/aem_forms_save.png) ícone para salvar as alterações.
+1. No Navegador de conteúdo, selecione **Contêiner de formulário** e selecione a variável **Configurar** ![ícone de configuração](assets/configure.png) ícone. Ela abre as propriedades do navegador e exibe as propriedades do contêiner do Formulário adaptável. Navegue até **Contêiner de formulário adaptável** > **Assinatura eletrônica** e desmarque a opção **Ativar o Adobe Sign** opção. Selecione o Concluído ![aem_forms_save](assets/aem_forms_save.png) ícone para salvar as alterações.
 
    >[!NOTE]
    >
    >Quando você adiciona um componente Etapa de assinatura a um formulário adaptável, a opção Habilitar Adobe Sign é selecionada automaticamente.
 
-1. Toque no **Configurar** ![configurar](assets/configure.png) ícone. Ele abre o navegador de propriedades e exibe as propriedades da etapa Assinatura. Configure as seguintes propriedades:
+1. Selecione o **Configurar** ![configurar](assets/configure.png) ícone. Ele abre o navegador de propriedades e exibe as propriedades da etapa Assinatura. Configure as seguintes propriedades:
 
    * **Nome do elemento**: especifique o nome do componente.
 
@@ -78,7 +78,7 @@ Você pode tocar no **Configurar** ![ícone de configuração](assets/configure.
 
    * **Classe CSS**: especifique a classe CSS da biblioteca do cliente, se houver. O Adobe recomenda usar [temas](themes.md) e [estilos em linha](inline-style-adaptive-forms.md) em vez da classe CSS.
 
-   Toque no botão Concluído ![aem_forms_save](assets/aem_forms_save.png) ícone para salvar as alterações. A Assinatura foi configurada com sucesso.
+   Selecione o Concluído ![aem_forms_save](assets/aem_forms_save.png) ícone para salvar as alterações. A Assinatura foi configurada com sucesso.
 
    Agora, quando você preenche um formulário, uma versão de PDF do formulário adaptável é exibida e as opções para assinar o documento de PDF são fornecidas. Para obter informações detalhadas, consulte [Assinar um formulário adaptável usando a assinatura escritas](signing-forms-using-scribble.md#sign-an-adaptive-form-using-scribble-signature).
 

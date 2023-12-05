@@ -2,9 +2,9 @@
 title: Extensão do ContextHub
 description: Definir novos tipos de armazenamentos e módulos do ContextHub quando os fornecidos não atenderem aos requisitos da solução
 exl-id: ba817c18-f8bd-485d-b043-87593a6a93b5
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '627'
+source-wordcount: '625'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Para criar um candidato de armazenamento, use o [`ContextHub.Utils.inheritance.i
 * [&quot;ContextHub.Store.JSONPStore&quot;](contexthub-api.md#contexthub-store-jsonpstore)
 * [&quot;ContextHub.Store.PersistedJSONPStore&quot;](contexthub-api.md#contexthub-store-persistedjsonpstore)
 
-Observe que cada armazenamento básico estende o [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core) armazenamento.
+Cada armazenamento básico estende o [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core) armazenamento.
 
 O exemplo a seguir cria a extensão mais simples do `ContextHub.Store.PersistedStore` candidato a armazenamento:
 

@@ -2,9 +2,9 @@
 title: Estrutura de marcação do AEM
 description: Marque o conteúdo e use a infraestrutura de Marcação AEM para categorizá-lo e organizá-lo.
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1569'
+source-wordcount: '1562'
 ht-degree: 0%
 
 ---
@@ -90,8 +90,8 @@ A tabela a seguir mostra algumas amostras `TagID`s, seus elementos e como o `Tag
 |---|---|---|---|---|---|
 | `dam:fruit/apple/braeburn` | `dam` | `fruit/apple/braeburn` | `fruit`,`apple` | `braeburn` | `content/cq:tags/dam/fruit/apple/braeburn` |
 | `color/red` | `default` | `color/red` | `color` | `red` | `/content/cq:tags/default/color/red` |
-| `sky` | `default` | `sky` | (nenhuma) | `sky` | `/content/cq:tags/default/sky` |
-| `dam:` | `dam` | (nenhuma) | (nenhuma) | (nenhuma) | `/content/cq:tags/dam` |
+| `sky` | `default` | `sky` | (nenhum) | `sky` | `/content/cq:tags/default/sky` |
+| `dam:` | `dam` | (nenhum) | (nenhum) | (nenhum) | `/content/cq:tags/dam` |
 | `content/cq:tags/category/car` | `category` | `car` | `car` | `car` | `content/cq:tags/category/car` |
 
 ### Localização do título da tag {#localization-of-tag-title}

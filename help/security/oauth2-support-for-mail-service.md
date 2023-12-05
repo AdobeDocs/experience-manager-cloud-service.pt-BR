@@ -2,10 +2,10 @@
 title: Suporte OAuth2 para o serviço de email
 description: Suporte do Oauth2 para o serviço de email no Adobe Experience Manager as a Cloud Service
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: c8e8a1c862784976094391d567fac0f9122af8b4
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '712'
-ht-degree: 92%
+source-wordcount: '672'
+ht-degree: 88%
 
 ---
 
@@ -32,7 +32,7 @@ Para obter mais informações sobre o Serviço de email do AEM as a Cloud Servic
 
    >[!NOTE]
    >
-   >A configuração de permissões pode evoluir com o tempo. Trabalhe com a Microsoft se eles não funcionarem como esperado.
+   >A configuração de permissões pode evoluir com o tempo. Trabalhe com o Microsoft se eles não funcionarem como esperado.
 
    * `https://outlook.office.com/SMTP.Send`
    * `openid`
@@ -58,14 +58,14 @@ Resumindo, você precisará das seguintes informações para configurar o OAuth2
 
 Em seguida, gere o token de atualização, que faz parte da configuração OSGi em uma etapa subsequente, seguindo este método:
 
-1. Abra o seguinte URL no navegador após substituir `clientID` e `tenantID` pelos valores específicos da sua conta:
+1. Abra o seguinte URL no navegador após substituir `clientID` e `tenantID` com os valores específicos da sua conta:
 
    ```
    https://login.microsoftonline.com/%3ctenantID%3e/oauth2/v2.0/authorize?client_id=%3cclientId%3e&response_type=code&redirect_uri=http://localhost&response_mode=query&scope=https://outlook.office.com/SMTP.Send%20email%20openid%20profile%20offline_access&state=12345`
    ```
 
 1. Quando solicitado, conceda a permissão.
-1. O URL será redirecionado para um novo local, gerado neste formato:
+1. O URL redireciona para um novo local, construído neste formato:
 
    ```
    http://localhost/?code=<code>&state=12345&session_state=4f984c6b-cc1f-47b9-81b2-66522ea83f81#`
@@ -139,7 +139,7 @@ Antes de continuar a configurar o OAuth no lado do AEM, valide o accessToken e o
 
    >[!NOTE]
    >
-   >Os escopos podem evoluir com o tempo. Trabalhe com a Microsoft se eles não funcionarem como esperado.
+   >Os escopos podem evoluir com o tempo. Trabalhe com o Microsoft se eles não funcionarem como esperado.
 
    * `https://outlook.office.com/SMTP.Send`
    * `openid`

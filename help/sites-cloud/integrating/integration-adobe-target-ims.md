@@ -2,9 +2,9 @@
 title: Configuração do IMS para uso na integração com o Adobe Target
 description: Saiba mais sobre a configuração do IMS para uso na integração com o Adobe Target
 exl-id: b5474b70-bedc-4cc9-ad47-89dcb2415e3a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '854'
 ht-degree: 93%
 
 ---
@@ -283,7 +283,7 @@ When configuring the Tenant ID and Client Code fields, be aware of that for most
 >
 >For legacy purposes, you can also enter different values in the Tenant ID and the Client Code fields.
 
-In both cases, be aware that:
+In both cases, note the following:
 
 * By default, the Client Code (if added first) will also be automatically copied into the Tenant ID field.
 * You have the option to change the default Tenant ID set.

@@ -2,10 +2,10 @@
 title: Como acessar seu conteúdo por meio das APIs de entrega do AEM
 description: Nesta parte da Jornada do desenvolvedor headless do AEM, saiba como usar consultas GraphQL para acessar o conteúdo dos Fragmentos de conteúdo.
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1366'
-ht-degree: 98%
+source-wordcount: '1335'
+ht-degree: 97%
 
 ---
 
@@ -242,7 +242,7 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 Antes de começar com as consultas de conteúdo, você precisa:
 
 * Habilitar o seu ponto de acesso
-   * Acesse Ferramentas -> Geral -> GraphQL
+   * Use Ferramentas > Geral > GraphQL
    * [Habilitar seu ponto de acesso de GraphQL](/help/headless/graphql-api/graphql-endpoint.md)
       * Isso também habilitará o GraphiQL IDE.
 
@@ -269,7 +269,7 @@ Os modelos de fragmento são usados:
 
 As consultas podem ser inseridas na interface do GraphiQL. É possível acessar o editor de consultas por meio de:
 
-* **Ferramentas** -> **Geral** -> **Editor de consultas GraphQL**
+* **Ferramentas** > **Geral** > **Editor de consultas GraphQL**
 * diretamente; por exemplo, `http://localhost:4502/aem/graphiql.html`
 
 ![Interface GraphiQL](assets/graphiql-interface.png "Interface GraphiQL")

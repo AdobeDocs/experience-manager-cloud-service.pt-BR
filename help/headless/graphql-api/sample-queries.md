@@ -3,10 +3,10 @@ title: Saiba como usar o GraphQL com o AEM - Exemplos de conteúdo e consultas
 description: Saiba como usar o GraphQL com o AEM para fornecer conteúdo de forma headless, explorando exemplos de conteúdo e consultas.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
+source-git-commit: 667cac9153947d1c236ff1117fc7200883416d8d
 workflow-type: tm+mt
-source-wordcount: '1752'
-ht-degree: 100%
+source-wordcount: '1754'
+ht-degree: 99%
 
 ---
 
@@ -45,7 +45,7 @@ Veja esses exemplos de consultas para obter ilustrações de como criar consulta
 >
 >É possível acessar o editor de consultas por meio de:
 >
->* **Ferramentas** -> **Geral** -> **Editor de consultas GraphQL**
+>* **Ferramentas** > **Geral** > **Editor de consultas GraphQL**
 >* diretamente; por exemplo, `http://localhost:4502/aem/graphiql.html`
 
 >[!NOTE]
@@ -362,7 +362,7 @@ Se você criar uma nova variação chamada “Centro de Berlim” (`berlin_centr
 }
 ```
 
-### Exemplo de consulta - Nomes de todas as cidades marcadas como Cidades para passeio {#sample-names-all-cities-tagged-city-breaks}
+### Exemplo de consulta - Nomes de todas as cidades marcadas como Quebras de cidade {#sample-names-all-cities-tagged-city-breaks}
 
 Se você:
 

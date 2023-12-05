@@ -4,10 +4,10 @@ description: Use os Componentes principais do formulário adaptável em uma pág
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 2d4a81aa0d6755270d4d6efb8649782f4bde4537
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2150'
-ht-degree: 2%
+source-wordcount: '2067'
+ht-degree: 1%
 
 ---
 
@@ -117,9 +117,9 @@ No [!UICONTROL Editar contêiner adaptável do Forms] você pode especificar o s
      >
      > Após configurar o modelo de dados de formulário, não é possível alterar o Modelo de formulário associado. No entanto, é possível modificar o schema associado ao modelo de dados de formulário.
 
-* **Guia Enviar**
+* **Guia Envio**
 
-   * **Redirecionar para o URL**
+   * **Redirecionar para URL**
       * **URL/caminho de redirecionamento**: especifica o URL ou o caminho para o qual um Formulário adaptável é redirecionado após o envio.
 
       * **Ação de envio**: uma ação de envio é acionada quando um usuário clica no botão Enviar em um Formulário adaptável. Você pode [configurar a ação enviar no Formulário adaptável](/help/forms/configuring-submit-actions.md). Os formulários adaptáveis fornecem as seguintes ações de envio prontas para uso:
@@ -203,7 +203,7 @@ Para usar componentes do Adaptive Forms em uma página do AEM Sites, inclua a `C
 
 1. Abra a página do AEM Sites no modo de edição.
 1. No painel Navegador de componentes, arraste e solte a [!UICONTROL Forms adaptável - Incorporado] componente na página.
-1. Toque no [!UICONTROL Forms adaptável - Incorporado] componente na página sites e toque em ![settings_icon](/help/forms/assets/Smock_Wrench_18_N.svg) na barra de ações. A variável **[!UICONTROL Editar Forms adaptável - Incorporado]** será aberta.
+1. Selecione o [!UICONTROL Forms adaptável - Incorporado] componente na página sites e selecione ![settings_icon](/help/forms/assets/Smock_Wrench_18_N.svg) na barra de ações. A variável **[!UICONTROL Editar Forms adaptável - Incorporado]** será aberta.
 1. Procure e selecione o Formulário adaptável a ser incorporado no [!UICONTROL Caminho do ativo].
 1. Salve as configurações. O Formulário adaptável agora está incorporado na página.
 
@@ -253,7 +253,7 @@ Considere os seguintes cenários para a publicação de Forms adaptável adicion
 Para modificar qualquer configuração ou propriedade de um Formulário adaptável, siga um destes procedimentos:
 
 * Abra o formulário original em um Formulário adaptável no respectivo editor e modifique-o.
-* Toque no Formulário adaptável na página do site no modo de edição e toque em **[!UICONTROL Editar em uma nova janela]**. O formulário original é aberto no modo de edição que você pode modificar.
+* Selecione o formulário adaptável na página do site no modo de edição e selecione **[!UICONTROL Editar em uma nova janela]**. O formulário original é aberto no modo de edição que você pode modificar.
 
 ## Alterar layout de um formulário adaptável adicionado a uma página do AEM Sites {#change-layout-af-aem-sites-page}
 

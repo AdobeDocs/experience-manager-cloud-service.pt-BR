@@ -2,10 +2,10 @@
 title: Quais são os recursos de layout do Adaptive Forms?
 description: O layout e as aparências do Adaptive Forms em vários dispositivos são regidos pelas configurações de layout. Entenda os vários layouts e como aplicá-los.
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 3%
+source-wordcount: '847'
+ht-degree: 2%
 
 ---
 
@@ -43,7 +43,7 @@ Para alterar o layout de um formulário adaptável, use o Modo de criação no [
 
 Um autor de formulário pode associar um layout a cada painel de um formulário adaptável, incluindo o painel raiz.
 
-Os layouts do painel estão disponíveis em `/libs/fd/af/layouts/panel` localização. Toque no painel e selecione ![cmppr1](assets/configure-icon.svg) para exibir as propriedades do painel.
+Os layouts do painel estão disponíveis em `/libs/fd/af/layouts/panel` localização. Selecione o painel e selecione ![cmppr1](assets/configure-icon.svg) para exibir as propriedades do painel.
 
 ![Lista de layouts de painel para o painel raiz de um formulário adaptável](assets/layouts.png)
 

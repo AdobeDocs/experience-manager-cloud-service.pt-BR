@@ -2,10 +2,10 @@
 title: Como executar o aplicativo headless
 description: Nesta parte da Jornada do desenvolvedor headless do AEM, saiba como implantar um aplicativo headless, colocando seu código local no Git e movendo-o para o Git do Cloud Manager para o pipeline de CI/CD.
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1093'
-ht-degree: 96%
+source-wordcount: '1060'
+ht-degree: 91%
 
 ---
 
@@ -83,7 +83,7 @@ Para que os usuários tenham a melhor experiência possível ao usar o aplicativ
       * Verificar o número de usuários, solicitações e carga
 * Acessar relatórios de desempenho específicos do aplicativo e do espaço
    * Quando o servidor estiver ativo, verifique se as métricas gerais estão verdes/laranjas/vermelhas, então identifique problemas específicos do aplicativo
-   * Abra os mesmos relatórios acima filtrados para o aplicativo ou espaço (por exemplo, desktop do Photoshop, paywall)
+   * Abra os mesmos relatórios acima filtrados para o aplicativo ou espaço (por exemplo, desktop Photoshop, paywall)
    * Use APIs de log do Splunk para acessar o desempenho do serviço e do aplicativo
    * Entre em contato com o Suporte ao cliente em caso de outros problemas.
 
@@ -124,7 +124,7 @@ Ou você já lançou seu primeiro projeto Headless do AEM ou agora tem todo o co
 
 ### Explore os Aplicativos de página única {#explore-spa}
 
-No entanto, isso não é tudo que o armazenamento headless do AEM oferece. Você deve se lembrar que na [Parte de Introdução da jornada](getting-started.md#integration-levels) discutimos brevemente como o AEM não só é compatível com as entregas headless e os modelos de pilha completa tradicionais, como também é compatível com modelos híbridos que combinam as vantagens de ambos.
+No entanto, isso não é tudo que o armazenamento headless do AEM oferece. Talvez você se lembre no [Introdução como parte da jornada](getting-started.md#integration-levels) discutimos brevemente como o AEM não só suporta a entrega headless e os modelos de pilha completa tradicionais, como também pode suportar modelos híbridos que combinam as vantagens de ambos.
 
 Se esse tipo de flexibilidade é algo que você precisa para o seu projeto, continue para a parte adicional opcional da jornada, [Como criar Aplicativos de página única (SPAs) com o AEM.](create-spa.md)
 

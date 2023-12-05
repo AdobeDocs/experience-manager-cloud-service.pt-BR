@@ -2,10 +2,10 @@
 title: Editar as propriedades da página
 description: Saiba como definir as propriedades necessárias para gerenciar uma página no AEM.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2270'
-ht-degree: 93%
+source-wordcount: '2268'
+ht-degree: 89%
 
 ---
 
@@ -21,7 +21,7 @@ As propriedades são distribuídas por várias guias.
 
 * **Título e tags**
 
-   * **Título** - o título da página é exibido em vários locais. Por exemplo, a lista da guia **Sites** e as exibições de cartão/lista dos **Sites**.
+   * **Título** - O título da página é exibido em vários locais. Por exemplo, a variável **Sites** lista de guias e o **Sites** exibições de cartão/lista.
       * Este campo é obrigatório.
    * **Tags**: aqui você pode adicionar ou remover as tags da página, atualizando a lista na caixa de seleção.
       * Após selecionar uma tag, ela é listada abaixo da caixa de seleção. Você pode remover uma tag dessa lista usando o ícone “x”.
@@ -98,7 +98,7 @@ As propriedades são distribuídas por várias guias.
 
    * **Idioma** - o idioma da página
    * **Raiz de idioma** - deve ser marcado se a página for a raiz de uma cópia de idioma
-   * **Redirecionar** - indica a página de redirecionamento automático para a página atual.  com um status HTML `302 Found`.
+   * **Redirecionar** - Indica a página de redirecionamento automático com um HTML `302 Found` status.
       * **Redirecionamento permanente** — quando marcado, a página redireciona para o caminho de destino fornecido junto com um status HTML `301 Moved Permanently`.
    * **Design** - indica se a página está visível ou oculta na navegação de página do site resultante
    * **Pseudônimo** - especifica um pseudônimo para ser usado com esta página
@@ -323,12 +323,12 @@ Depois de entrar na edição de itens em massa é possível:
       * Se você reduzir a seleção de página para uma página, em seguida, todas as propriedades ficarão visíveis.
    * Propriedades comuns com um valor comum
       * Apenas as propriedades com um valor comum são mostradas no modo de Exibição.
-      * Quando o campo tem vários valores (por exemplo, Tags), eles só serão exibidos quando *todos* forem comuns. Se apenas alguns forem comuns, eles só serão exibidos durante a edição.
+      * Quando o campo tem vários valores (por exemplo, Tags), eles só serão exibidos quando *all* são comuns. Se apenas algumas forem comuns, elas só serão exibidas durante a edição.
       * Quando não existirem propriedades com um valor comum, uma mensagem será exibida.
 
 * **Editar**
 
    * Você pode atualizar os valores nos campos disponíveis.
       * Os novos valores são aplicados a todas as páginas selecionadas ao clicar em **Concluído**.
-      * Quando o campo tem vários valores (por exemplo, tags), é possível anexar um novo valor ou remover um valor comum.
+      * Quando o campo tem vários valores (por exemplo, Tags), você pode anexar um novo valor ou remover um valor comum.
    * Os campos que são comuns, mas têm valores diferentes em várias páginas, são indicados com um valor especial, como o texto `<Mixed Entries>`.

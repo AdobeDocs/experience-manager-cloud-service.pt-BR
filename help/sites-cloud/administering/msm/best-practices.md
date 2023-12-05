@@ -4,9 +4,9 @@ description: Conheça as práticas recomendadas compiladas pelas equipes de enge
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1413'
 ht-degree: 92%
 
 ---
@@ -119,7 +119,7 @@ Ao considerar mover páginas em uma Live Copy, considere a seguinte prática rec
 
 ## Personalização de implantações {#customizing-rollouts}
 
-As configurações de implantação do MSM são altamente personalizáveis. Você deve estar ciente de que a automatização de implantações pode ter consequências abrangentes. Como prática recomendada, você deve planejar com muito cuidado antes de realizar as seguintes atividades:
+As configurações de implantação do MSM são altamente personalizáveis. A automatização de implantações pode ter consequências abrangentes. Como prática recomendada, você deve planejar com muito cuidado antes de realizar as seguintes atividades:
 
 * A automatização de implantações, como com [Acionadores onModify](#onmodify)
 * A personalização de [tipos/propriedades de nós](#node-types-properties)

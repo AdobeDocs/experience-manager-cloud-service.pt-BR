@@ -3,10 +3,10 @@ title: Editar imagens
 description: Editar imagens usando opções viabilizadas pelo [!DNL Adobe Photoshop Express] e salvar imagens atualizadas como versões.
 role: User
 exl-id: fc21a6ee-bf23-4dbf-86b0-74695a315b2a
-source-git-commit: da54e996bad3e6dc8558cecd5bfd7eb99670b142
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1171'
-ht-degree: 71%
+source-wordcount: '1136'
+ht-degree: 72%
 
 ---
 
@@ -91,7 +91,7 @@ Para editar imagens usando [!DNL Adobe Express] editor incorporado, siga as etap
 
    ![editor incorporado do Adobe Express](assets/embedded-editor.png)
 
-   Você pode aproveitar a funcionalidade do [!DNL Adobe Express] para executar todas as ações relacionadas à edição de imagens, como [redimensionar imagem](https://helpx.adobe.com/in/express/using/resize-image.html), [remover ou alterar a cor do plano de fundo](https://helpx.adobe.com/in/express/using/remove-background.html), [cortar imagem](https://helpx.adobe.com/in/express/using/crop-image.html)e muito mais.
+   Você pode usar a funcionalidade de [!DNL Adobe Express] para executar todas as ações relacionadas à edição de imagens, como [redimensionar imagem](https://helpx.adobe.com/in/express/using/resize-image.html), [remover ou alterar a cor do plano de fundo](https://helpx.adobe.com/in/express/using/remove-background.html), [cortar imagem](https://helpx.adobe.com/in/express/using/crop-image.html)e muito mais.
 
 1. Após concluir a edição de imagens, você pode baixar um ativo como um novo ativo ou salvá-lo como uma nova versão.
 

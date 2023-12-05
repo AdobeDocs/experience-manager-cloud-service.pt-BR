@@ -2,10 +2,10 @@
 title: Como modelar seu conteúdo
 description: Nesta parte da Jornada de desenvolvedores do Adobe Experience Manager (AEM) Headless, saiba como modelar seu conteúdo para entrega do AEM Headless usando a modelagem de conteúdo com modelos de fragmento de conteúdo e fragmentos de conteúdo.
 exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
-source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1827'
-ht-degree: 69%
+source-wordcount: '1814'
+ht-degree: 67%
 
 ---
 
@@ -210,7 +210,7 @@ No início, você deve ativar os Modelos de fragmentos de conteúdo no site. Iss
 >
 >Consulte Recursos adicionais - Fragmentos de conteúdo no navegador de configuração
 
-Em seguida, os Modelos de fragmentos de conteúdo podem ser criados e a estrutura definida. Isso pode ser feito em **Ferramentas** -> **Geral** -> **Modelos de fragmentos do conteúdo**. Por exemplo:
+Em seguida, os Modelos de fragmentos de conteúdo podem ser criados e a estrutura definida. Isso pode ser feito em **Ferramentas** > **Geral** > **Modelos de fragmentos do conteúdo**. Por exemplo:
 
 ![Modelo de fragmentos do conteúdo](assets/cfm-model.png)
 
@@ -224,7 +224,7 @@ Fragmentos de conteúdo são sempre baseados em um Modelo de fragmento de conte�
 
 ### Seleção do modelo apropriado {#select-model}
 
-A primeira etapa para realmente criar o conteúdo é criar um Fragmento de conteúdo. Isso é feito usando Criar -> Fragmento de conteúdo, na pasta requerida em Ativos -> Arquivos. O assistente orienta você pelas etapas.
+A primeira etapa para realmente criar o conteúdo é criar um Fragmento de conteúdo. Isso é feito usando Criar > Fragmento de conteúdo na pasta necessária em Ativos > Arquivos. O assistente orienta você pelas etapas.
 
 Um Fragmento de conteúdo é baseado em um Modelo de fragmento de conteúdo específico, que pode ser selecionado como a primeira etapa do processo de criação.
 

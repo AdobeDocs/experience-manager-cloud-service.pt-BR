@@ -2,9 +2,9 @@
 title: Como podemos criar e usar temas no Adaptive Forms?
 description: Você pode usar temas para estilizar e fornecer uma identidade visual a um Formulário adaptável usando componentes principais. Você pode compartilhar um tema em qualquer número do Adaptive Forms.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2676'
+source-wordcount: '2610'
 ht-degree: 3%
 
 ---
@@ -377,7 +377,7 @@ As etapas para aplicar um tema a um Formulário adaptável são:
 
 1. Faça logon na instância de autor do AEM Forms.
 
-1. Toque **Adobe Experience Manager** > **Forms** > **Forms e documentos**.
+1. Selecionar **Adobe Experience Manager** > **Forms** > **Forms e documentos**.
 
 1. Clique em **Criar** > **Forms adaptável**. O assistente para criação do Formulário adaptável é aberto.
 

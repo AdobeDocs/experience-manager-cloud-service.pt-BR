@@ -2,10 +2,10 @@
 title: Sistema de estilos
 description: O sistema de estilos permite ao autor do modelo definir classes de estilo na política de conteúdo de um componente para que autores de conteúdo possam selecioná-las ao editarem o componente em uma página. Esses estilos podem ser variações visuais alternativas de um componente, tornando-o mais flexível.
 exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1317'
-ht-degree: 88%
+source-wordcount: '1305'
+ht-degree: 87%
 
 ---
 
@@ -46,7 +46,7 @@ O uso do Sistema de estilos geralmente funciona da seguinte maneira.
 
 1. O autor da página do AEM pode escolher os estilos criados no editor de páginas no menu de estilo da barra de ferramentas do componente.
 
-Observe que apenas as três últimas etapas são realizadas no AEM. Isso significa que todo o desenvolvimento de CSS e JavaScript necessários pode ser feito sem o AEM.
+Somente as três últimas etapas são realmente realizadas no AEM. Isso significa que todo o desenvolvimento de CSS e JavaScript necessários pode ser feito sem o AEM.
 
 Na verdade, a implementação de estilos requer apenas a implantação no AEM e a seleção dos componentes dos modelos desejados.
 

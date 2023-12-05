@@ -2,10 +2,10 @@
 title: Ambiente e ferramentas de criação
 description: O ambiente de criação do AEM fornece vários mecanismos para organização e edição de conteúdo
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '2161'
-ht-degree: 87%
+ht-degree: 84%
 
 ---
 
@@ -108,7 +108,7 @@ O navegador de ativos é um guia no painel lateral juntamente com o [navegador d
 
 ![Ativar/desativar painel lateral](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
 
-Ao abrir o painel lateral, ele deslizará do lado esquerdo. Selecione a guia **Ativos** se necessário.
+Ao abrir o painel lateral, ele deslizará do lado esquerdo. Selecione o **Assets** se necessário.
 
 ![Botão Navegador de ativos](/help/sites-cloud/authoring/assets/assets-browser-button.png)
 
@@ -224,7 +224,7 @@ Abra o console e navegue até o recurso desejado, e abra **Referências** usando
 
 Selecione o tipo de referência apropriado para obter mais informações. Em determinadas situações, outras ações estarão disponíveis ao selecionar uma referência específica, incluindo:
 
-* **Links de entrada**, fornecem uma lista de páginas que fazem referência à página, junto com acesso direto a **Editar** uma dessas páginas ao selecionar um link específico.
+* **Links de entrada**, fornece uma lista de páginas que fazem referência à página, juntamente com acesso direto a **Editar** uma dessas páginas ao selecionar um link específico.
 
    * Isso só pode mostrar links estáticos, não links gerados dinamicamente; por exemplo, do componente List.
 

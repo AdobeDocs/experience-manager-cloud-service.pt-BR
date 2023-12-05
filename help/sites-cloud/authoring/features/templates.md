@@ -2,10 +2,10 @@
 title: Criação de modelos de páginas
 description: O modelo define a estrutura da página resultante e, com o editor de modelos, criar e manter modelos não é mais uma tarefa somente para desenvolvedores
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '4535'
-ht-degree: 86%
+source-wordcount: '4523'
+ht-degree: 84%
 
 ---
 
@@ -95,11 +95,11 @@ Ao criar um modelo editável, você:
 
 ### Criação de uma pasta de modelo - Administrador {#creating-a-template-folder-admin}
 
-Uma pasta de modelo deve ser criada para que o projeto mantenha seus modelos específicos de projetos. Trata-se de uma tarefa de administrador e está descrita no documento [Modelos de página](/help/implementing/developing/components/templates.md#template-folders).-->
+Uma pasta de modelo deve ser criada para que o projeto mantenha seus modelos específicos de projetos. Esta é uma tarefa de administrador e está descrita no documento [Modelos de página](/help/implementing/developing/components/templates.md#template-folders).
 
 ### Criação de um novo modelo - Autor do modelo {#creating-a-new-template-template-author}
 
-1. Abra o **console Modelos** (em **Ferramentas ->** **Geral**) para navegar até a pasta necessária.
+1. Abra o **Console de modelos** (a título de **Ferramentas >** **Geral**) e navegue até a pasta desejada.
 
    >[!NOTE]
    >
@@ -143,7 +143,7 @@ Um modelo pode ter as seguintes propriedades:
 * Título
    * Um título usado para identificar o modelo, como no assistente de **Criar página**.
 * Descrição
-   * Uma descrição opcional para fornecer mais informações sobre o modelo e seu uso, que pode ser visualizada, por exemplo, no assistente **Criar página**.
+   * Uma descrição opcional para fornecer mais informações sobre o modelo e seu uso, que pode ser visualizada, por exemplo, no **Criar página** assistente.
 
 Para exibir e/ou editar as propriedades:
 
@@ -415,7 +415,7 @@ Por exemplo, para um componente de imagem, é possível definir as proporções 
 
 >[!CAUTION]
 >
->Observe que no AEM, as proporções de corte estão definidas como **altura/largura**. Isso difere da definição convencional de largura/altura e é feita por motivos de compatibilidade legal. Os usuários da criação de página não estarão cientes de qualquer diferença desde que você defina o **Nome** claramente, uma vez que este é exibido na interface do usuário.
+>No AEM, os rácios de colheita são definidos como **altura/largura**. Isso difere da definição convencional de largura/altura e é feita por motivos de compatibilidade legal. Os usuários da criação de página não estarão cientes de qualquer diferença desde que você defina o **Nome** claramente, uma vez que este é exibido na interface do usuário.
 
 >[!NOTE]
 >
@@ -459,7 +459,7 @@ Na guia **Componentes permitidos**, você define quais componentes estão dispon
 
 ###### Componentes padrão {#default-components}
 
-Na guia **Componentes padrão**, você define quais componentes são associados automaticamente a determinados tipos de mídia para que, quando um autor arrastar um ativo do navegador de ativos, o AEM saiba com qual componente associá-lo. Observe que somente os componentes com zonas para soltar estão disponíveis para essa configuração.
+Na guia **Componentes padrão**, você define quais componentes são associados automaticamente a determinados tipos de mídia para que, quando um autor arrastar um ativo do navegador de ativos, o AEM saiba com qual componente associá-lo. Somente os componentes com zonas de lançamento estão disponíveis para essa configuração.
 
 Selecionar **Adicionar mapeamento** para adicionar um componente totalmente novo e mapeamento de tipo MIME.
 

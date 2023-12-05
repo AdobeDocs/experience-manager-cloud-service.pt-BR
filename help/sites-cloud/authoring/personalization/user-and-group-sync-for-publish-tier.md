@@ -2,10 +2,10 @@
 title: Registro, logon e perfil do usuário
 description: Saiba mais sobre registro, logon, dados do usuário e sincronização de grupos no AEM as a Cloud Service
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1165'
-ht-degree: 93%
+source-wordcount: '1132'
+ht-degree: 90%
 
 ---
 
@@ -113,7 +113,7 @@ Independentemente do logon, um código personalizado também pode manter e geren
 
 ## Sincronização de dados {#data-synchronization}
 
-Os usuários finais do site têm uma expectativa de experiência consistente em cada solicitação de página da Web ou mesmo ao fazerem logon usando um navegador diferente; mesmo sem o conhecimento deles, eles são trazidos para diferentes nós de servidor da infraestrutura do nível de publicação. O AEM as a Cloud Service realiza isso sincronizando rapidamente a hierarquia de pastas `/home` (informações de perfil do usuário, associação de grupo etc.) em todos os nós do nível de publicação.
+Os usuários finais do site têm uma expectativa de experiência consistente em cada solicitação de página da Web ou mesmo ao fazerem logon usando um navegador diferente; mesmo sem o conhecimento deles, eles são trazidos para diferentes nós de servidor da infraestrutura do nível de publicação. O AEM as a Cloud Service consegue isso sincronizando rapidamente o `/home` hierarquia de pastas (informações de perfil do usuário, associação de grupo e assim por diante) em todos os nós do nível de publicação.
 
 Ao contrário de outras soluções do AEM, a sincronização de usuários e associações de grupos no AEM as a Cloud Service não usa uma abordagem de mensagens ponto a ponto. Em vez disso, ela implementa uma abordagem de assinatura de publicação que não requer configuração de clientes.
 

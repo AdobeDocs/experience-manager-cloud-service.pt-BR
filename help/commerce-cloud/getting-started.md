@@ -8,10 +8,10 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1104'
-ht-degree: 15%
+source-wordcount: '1066'
+ht-degree: 10%
 
 ---
 
@@ -41,7 +41,7 @@ Essa variável de ambiente é usada em dois lugares:
 - O GraphQL chama o AEM para o back-end comercial, por meio de algum cliente GraphQl compartilhável comum, usado pelos componentes principais do AEM CIF e componentes do projeto do cliente.
 - Configurar um URL de proxy do GraphQL em cada ambiente AEM em que a variável está definida e disponível em `/api/graphql`. Esse URL é usado pelas ferramentas de criação para comércio do AEM (complemento CIF) e componentes do lado do cliente do CIF.
 
-Pode ser usado um URL de ponto de extremidade GraphQL da diferente para cada ambiente do AEM as a Cloud Service. Dessa forma, os projetos podem conectar ambientes de preparo de AEM com sistemas de preparo de comércio e ambiente de produção de AEM a um sistema de produção de comércio. Esse ponto de extremidade GraphQL da deve estar disponível publicamente. Não há suporte para VPN privada ou conexões locais. Opcionalmente, um cabeçalho de autenticação pode ser fornecido para usar recursos de CIF adicionais que exigem autenticação.
+Um URL de endpoint do GraphQL diferente pode ser usado para cada ambiente as a Cloud Service do AEM. Dessa forma, os projetos podem conectar ambientes de preparo de AEM com sistemas de preparo de comércio e ambiente de produção de AEM a um sistema de produção de comércio. Esse endpoint do GraphQL deve estar disponível publicamente. Não há suporte para VPN privada ou conexões locais. Opcionalmente, um cabeçalho de autenticação pode ser fornecido para usar recursos de CIF adicionais que exigem autenticação.
 
 Opcionalmente e somente para Adobe Commerce Enterprise/Cloud, o complemento CIF é compatível com o uso de dados de catálogo preparados para autores do AEM. Esses dados exigem a configuração de um cabeçalho de autorização. Esse cabeçalho só está disponível e é usado em instâncias de Autores do AEM por motivos de segurança. Instâncias de Publicação do AEM não podem mostrar dados preparados.
 
@@ -107,7 +107,7 @@ O complemento CIF e o [Componentes principais da CIF](https://github.com/adobe/a
 
 Essa configuração pode ser ajustada para o projeto por meio da configuração de Cloud Service CIF seguindo estas etapas:
 
-1. No AEM, acesse Ferramentas -> Cloud Service -> Configuração do CIF.
+1. No AEM, acesse Ferramentas > Cloud Service > Configuração do CIF.
 
 2. Selecione a configuração de comércio que deseja alterar.
 

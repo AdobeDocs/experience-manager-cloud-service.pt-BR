@@ -4,9 +4,9 @@ description: A revisão é um mecanismo que permite ao revisor executar tarefas 
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '338'
 ht-degree: 4%
 
 ---
@@ -25,7 +25,7 @@ Usar o [Atribuir etapa](https://experienceleague.adobe.com/docs/experience-manag
 1. Abra a instância do autor no modo de edição.
 1. Ir para **[!UICONTROL Ferramentas]** >  **[!UICONTROL Fluxo de trabalho]** >  **[!UICONTROL Modelos]** > **[!UICONTROL Criar]** > **[!UICONTROL Criar modelo]**
 1. Especifique o Título do workflow e adicione o **[Atribuir tarefa]** etapa
-1. Toque ![settings_icon](assets/settings_icon.png) na barra de ações. A variável **[!UICONTROL Atribuir tarefa]** será aberta.
+1. Selecionar ![settings_icon](assets/settings_icon.png) na barra de ações. A variável **[!UICONTROL Atribuir tarefa]** será aberta.
 1. Abertura [!UICONTROL Formulário e documento] e abrir [!UICONTROL Preenchido] e especifique:
 
    * Selecione o arquivo de dados de entrada usando
@@ -44,7 +44,7 @@ Usar o [Atribuir etapa](https://experienceleague.adobe.com/docs/experience-manag
 Agora, configure a ação Enviar de um componente de Contêiner de formulário adaptável na página do site:
 
 1. Vá para a página do site.
-1. Toque ![settings_icon](assets/settings_icon.png) de um contêiner de Formulário adaptável. A variável **[!UICONTROL Contêiner de formulário adaptável]** será aberta.
+1. Selecionar ![settings_icon](assets/settings_icon.png) de um contêiner de Formulário adaptável. A variável **[!UICONTROL Contêiner de formulário adaptável]** será aberta.
 1. Abra o **[!UICONTROL Envio]** e especificar **[!UICONTROL Ação de envio]** para [Chamar um fluxo de trabalho de AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=en#invoke-an-aem-workflow)
 
 1. Clique em [Concluído] para salvar as configurações.

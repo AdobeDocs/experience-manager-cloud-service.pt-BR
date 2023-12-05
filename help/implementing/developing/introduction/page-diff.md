@@ -2,10 +2,10 @@
 title: Desenvolvimento e diff de página
 description: Entenda como o recurso Diferença de página funciona e como ele pode afetar um desenvolvedor
 exl-id: 03c08616-2203-4b90-bed6-4836266e2507
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '333'
-ht-degree: 1%
+ht-degree: 12%
 
 ---
 

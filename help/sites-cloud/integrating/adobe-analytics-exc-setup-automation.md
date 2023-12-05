@@ -4,10 +4,10 @@ description: A Automação de configuração da Experience Cloud oferece uma man
 feature: Administering
 role: Admin
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '750'
-ht-degree: 92%
+source-wordcount: '719'
+ht-degree: 87%
 
 ---
 
@@ -44,15 +44,15 @@ O ambiente agora deve estar pronto para a automação de configuração da Exper
 ## Como configurar
 
 1. Navegue até **Sites** e selecione a raiz do site a ser integrado ao Adobe Analytics.
-1. Expanda o menu do painel lateral e toque em **Configurar o Analytics**.
+1. Expanda o menu do painel lateral e selecione **Configurar o Analytics**.
 
    Esta é uma nova opção no painel lateral que abre um painel e fornece controles e status para a Automação de configuração do Experience Cloud.
-1. Toque no botão **Integrar o Analytics**.
+1. Selecione o **Integrar o Analytics** botão.
 1. Na caixa de diálogo resultante, forneça um nome para a **ID do conjunto de relatórios**.
 
    Esta cadeia de caracteres é usada para criar um [ID do conjunto de relatórios](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=pt-BR) no Adobe Analytics como o armazenamento de dados dos dados do analytics para o site AEM selecionado. A string fornecida tem anexada os identificadores de ambiente e de nível para garantir a exclusividade.
 
-1. Atualize a página e o painel e toque em **Verificar status da integração** para verificar o status da automação.
+1. Atualize a página e o painel e selecione **Verificar status da integração** para verificar o status da automação.
 
    A configuração da automação ocorre de maneira assíncrona. O **Verificar status da integração** mostrará o status atual da integração.
 
@@ -75,7 +75,7 @@ Em seguida, navegue até o Adobe Analytics para visualizar os dados que fluem do
 
 1. Navegue até o Adobe Analytics na mesma organização IMS do site do AEM.
 1. Crie um novo relatório de visão geral do AEM Sites navegando até **Relatórios** > **Envolvimento** > **Adobe Experience Manager** > **Visão geral do desempenho do site**.
-1. Toque em **Abrir relatório**.
+1. Selecionar **Abrir relatório**.
 1. Selecione a **ID do conjunto de relatórios** que corresponde ao nome do Conjunto de relatórios usado no exercício anterior.
 1. Visualize o fluxo de dados de análise no novo modelo ao longo do tempo.
 

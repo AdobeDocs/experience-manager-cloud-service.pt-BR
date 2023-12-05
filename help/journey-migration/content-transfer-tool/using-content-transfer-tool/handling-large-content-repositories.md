@@ -2,9 +2,9 @@
 title: Lidar com grandes repositórios de conteúdo
 description: Esta seção descreve a manipulação de grandes repositórios de conteúdo
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: 858e10f99e2015a1488bb9e1d0990a553c5f6d04
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1835'
+source-wordcount: '1800'
 ht-degree: 8%
 
 ---
@@ -179,7 +179,7 @@ As entradas de log do AzCopy aparecem no log de extração e recebem o prefixo c
 > Durante os primeiros minutos de uma extração, observe os logs de extração atentamente para verificar se há algum sinal de um problema. Como exemplo, veja o que seria registrado se o contêiner do Azure de origem não fosse encontrado:
 
 ```
-[AzCopy pre-copy] failed to perform copy command due to error: cannot start job due to error: cannot list files due to reason -> github.com/Azure/azure-storage-blob-go/azblob.newStorageError, github.com/Azure/azure-storage-blob-go@v0.10.1-0.20210407023846-16cf969ec1c3/azblob/zc_storage_error.go:42
+[AzCopy pre-copy] failed to perform copy command due to error: cannot start job due to error: cannot list files due to reason > github.com/Azure/azure-storage-blob-go/azblob.newStorageError, github.com/Azure/azure-storage-blob-go@v0.10.1-0.20210407023846-16cf969ec1c3/azblob/zc_storage_error.go:42
 [AzCopy pre-copy] ===== RESPONSE ERROR (ServiceCode=ContainerNotFound) =====
 [AzCopy pre-copy] Description=The specified container does not exist.
 [AzCopy pre-copy] RequestId:5fb674b9-201e-001b-2a5b-527400000000

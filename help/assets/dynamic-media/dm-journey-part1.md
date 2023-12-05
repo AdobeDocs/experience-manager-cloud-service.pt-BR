@@ -11,10 +11,10 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '3706'
-ht-degree: 1%
+source-wordcount: '3685'
+ht-degree: 0%
 
 ---
 
@@ -182,7 +182,7 @@ Outro caso de uso para o qual o Dynamic Media resolve é o vídeo. O vídeo é c
 
 Os clientes chegam à Dynamic Media com o seguinte problema que esperam resolver:
 
-&quot;_Nós temos o vídeo, e gastamos uma grande quantia de dinheiro criando-o. Mas evitamos colocá-lo nas páginas, ou distribuí-lo, porque com nossos testes, não podemos garantir a qualidade do vídeo, ou se ele vai realmente ser reproduzido. E, em última análise, isso afeta nossas marcas e, potencialmente, nossa função até mesmo na conversão._&quot;
+&quot;_Minha empresa tem o vídeo, e nosso departamento gastou uma grande quantia de dinheiro criando-o, mas evitou colocá-lo em páginas, ou entregá-lo. A razão era porque, com nossos testes, a qualidade do vídeo não podia ser garantida, ou mesmo se ele fosse realmente tocar. E, em última análise, isso afeta nossas marcas e, potencialmente, nossa função até mesmo na conversão._&quot;
 
 A solução da Dynamic Media é pegar esse arquivo de vídeo principal e permitir que a Dynamic Media faça todos os tamanhos através de seu processo de transcodificação. Em seguida, combine-o com o player de vídeo inteligente da Dynamic Media. Esse fluxo de trabalho garante que você esteja usando esse vídeo na sua página de aterrissagem principal ou em uma categoria ou página de detalhes do produto, ele seja consistente e entregue com alta qualidade.
 
@@ -282,7 +282,7 @@ _Tópicos da Ajuda do Dynamic Media_
 
 _Tutoriais do Dynamic Media_
 
-* [Usar o Dynamic Media com o Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=pt-BR)
+* [Usar o Dynamic Media com o Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
 * [Biblioteca de conteúdo do Adobe Experience Manager](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) (pesquisar em _Dynamic Media_)
 
 _Visualizadores do Dynamic Media_

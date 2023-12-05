@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Image Sets
 role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2134'
-ht-degree: 5%
+source-wordcount: '2145'
+ht-degree: 3%
 
 ---
 
@@ -128,7 +128,7 @@ Como os usuários podem ampliar imagens em Conjuntos de imagens, verifique se as
 >[!NOTE]
 >
 >Também é possível criar conjuntos de imagens automaticamente por meio do [predefinições de conjunto de lotes](/help/assets/dynamic-media/batch-set-presets-dm.md).
->**Importante:** os conjuntos em lotes são criados pelo IPS (Sistema de produção de imagem) como parte da ingestão de ativos.
+>**Importante:** Os conjuntos em lotes são criados pelo IPS (Sistema de produção de imagem) como parte da assimilação de ativos.
 
 Ao adicionar ativos ao conjunto, eles são automaticamente adicionados em ordem alfanumérica. É possível reordenar ou classificar manualmente os ativos depois de adicionados.
 
@@ -148,9 +148,9 @@ Consulte também [Limitações do Dynamic Media](/help/assets/dynamic-media/limi
 **Para criar Conjuntos de imagens:**
 
 1. No Adobe Experience Manager, selecione o logotipo Experience Manager para acessar o console de navegação global.
-1. Toque **[!UICONTROL Navegação]** > **[!UICONTROL Assets]**. Navegue até o local em que deseja criar um conjunto de imagens, em seguida, vá para **[!UICONTROL Criar]** > **[!UICONTROL Conjunto de imagens]** para abrir a página Editor do conjunto de imagens.
+1. Selecionar **[!UICONTROL Navegação]** > **[!UICONTROL Assets]**. Navegue até o local em que deseja criar um conjunto de imagens, em seguida, vá para **[!UICONTROL Criar]** > **[!UICONTROL Conjunto de imagens]** para abrir a página Editor do conjunto de imagens.
 
-   Além disso, crie o conjunto de dentro de uma pasta que contenha seus ativos.
+   Você também pode criar o conjunto de dentro de uma pasta que contenha seus ativos.
 
    ![6_5_imagesets-createpulldown](assets/6_5_imagesets-createpulldown.png)
 
@@ -164,7 +164,7 @@ Consulte também [Limitações do Dynamic Media](/help/assets/dynamic-media/limi
 
    * Próximo ao meio da página Editor do conjunto de imagens, selecione **[!UICONTROL Toque para abrir o Seletor de ativos]**.
 
-   Toque para selecionar os ativos que deseja incluir no conjunto de imagens. Os ativos selecionados têm um ícone de marca de seleção sobre eles. Quando terminar, próximo ao canto superior direito da página, selecione **[!UICONTROL Selecionar]**.
+   Selecione para selecionar os ativos que deseja incluir no Conjunto de imagens. Os ativos selecionados têm um ícone de marca de seleção sobre eles. Quando terminar, próximo ao canto superior direito da página, selecione **[!UICONTROL Selecionar]**.
 
    Com o Seletor de ativos, procure por ativos ao digitar uma palavra-chave e selecionar **[!UICONTROL Retornar]**. Aplique filtros para refinar os resultados da pesquisa. Filtre por caminho, coleção, tipo de arquivo e tag. Selecione o filtro e, em seguida, selecione a variável **[!UICONTROL Filtro]** na barra de ferramentas. Alterar a exibição ao clicar no ícone Exibir e selecionar **[!UICONTROL Exibição de coluna]**, **[!UICONTROL Exibição de cartão]** ou **[!UICONTROL Exibição de lista]**.
 
@@ -236,7 +236,7 @@ No entanto, os conjuntos criados usando predefinições de conjunto de lotes, *n
 
    * Passe o mouse sobre um ativo Conjunto de imagens e selecione **[!UICONTROL Editar]** (lápis).
    * Passe o mouse sobre um ativo Conjunto de imagens, selecione **[!UICONTROL Selecionar]** (ícone de marca de seleção), selecione **[!UICONTROL Editar]** na barra de ferramentas.
-   * Toque em um ativo Conjunto de imagens e selecione **[!UICONTROL Editar]** (lápis) na barra de ferramentas.
+   * Selecione em um ativo Conjunto de imagens e selecione **[!UICONTROL Editar]** (lápis) na barra de ferramentas.
 
 1. Para editar as imagens no Conjunto de imagens, siga um destes procedimentos:
 
@@ -255,7 +255,7 @@ No entanto, os conjuntos criados usando predefinições de conjunto de lotes, *n
    >
    >É possível editar as imagens em um Conjunto de imagens. Navegue até o conjunto e selecione **[!UICONTROL Definir membros]** no painel esquerdo. Para abrir a janela de edição, selecione o ícone Lápis em um ativo.
 
-1. Toque **[!UICONTROL Salvar]** quando terminar de editar.
+1. Selecionar **[!UICONTROL Salvar]** quando terminar de editar.
 
 ## Visualizar conjuntos de imagens {#previewing-image-sets}
 

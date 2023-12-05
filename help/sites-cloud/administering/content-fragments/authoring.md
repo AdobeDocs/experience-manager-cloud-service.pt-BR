@@ -4,9 +4,9 @@ description: Entenda como criar conteúdo para os fragmentos de conteúdo e, em 
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2267'
+source-wordcount: '2266'
 ht-degree: 4%
 
 ---
@@ -190,7 +190,7 @@ Os campos definidos como Texto sem formatação ou Markdown têm uma caixa de te
 Para **[Texto multilinha](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)** campos definidos como **Rich Text**, vários recursos estão disponíveis:
 
 * Edite o conteúdo:
-   * Desfazer / Refazer
+   * Desfazer/Refazer
    * Colar/Colar como texto
    * Copiar
    * Selecionar formato de parágrafo
@@ -412,7 +412,7 @@ Quando o URL tiver sido definido, a variável **Visualizar** O botão está ativ
 Você pode **Publish** o fragmento é anexado ao:
 
 * Visualizar instância
-* Instância de publicação
+* Publicar instância
 
 Você pode publicar o fragmento no editor ou no console. Consulte [Publicar e visualizar um fragmento](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment) para obter detalhes completos.
 
@@ -421,7 +421,7 @@ Você pode publicar o fragmento no editor ou no console. Consulte [Publicar e vi
 Também é possível **Cancelar publicação** o fragmento é proveniente de:
 
 * Visualizar instância
-* Instância de publicação
+* Publicar instância
 
 Você pode desfazer a publicação do fragmento no editor ou no console. Consulte [Desfazer a publicação de um fragmento](/help/sites-cloud/administering/content-fragments/managing.md#unpublishing-a-fragment) para obter detalhes completos.
 

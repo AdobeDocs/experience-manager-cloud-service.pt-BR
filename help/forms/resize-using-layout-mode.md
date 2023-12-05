@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1137'
-ht-degree: 2%
+source-wordcount: '1138'
+ht-degree: 1%
 
 ---
 
@@ -37,7 +37,7 @@ Selecionar **[!UICONTROL Layout]** na lista suspensa que aparece na parte superi
 
 ## Redimensionar componentes {#resize-components}
 
-1. No modo Layout, toque no componente para redimensionar. Os pontos azuis são exibidos no início e no fim da grade responsiva.
+1. No modo Layout, selecione o componente a ser redimensionado. Os pontos azuis são exibidos no início e no fim da grade responsiva.
 1. Arraste e solte os pontos azuis para definir a posição do componente na grade responsiva.
 
    ![Redimensionar usando o modo Layout](assets/layout_mode_resize_new_updated1.png)
@@ -59,7 +59,7 @@ Selecionar **[!UICONTROL Layout]** na lista suspensa que aparece na parte superi
 **Objetivo:** Você deseja inserir um componente Tabela e um componente Imagem e posicioná-los paralelamente um ao outro em um Formulário adaptável.
 
 1. Insira os componentes de tabela e imagem usando [!UICONTROL Editar] no Formulário adaptável. O componente de imagem é exibido após o componente de tabela.
-1. Alternar para [!UICONTROL Layout] e toque no botão [!UICONTROL Tabela] componente. Os pontos azuis para redimensionar a exibição do componente nas colunas 1 e 12.
+1. Alternar para [!UICONTROL Layout] e selecione a variável [!UICONTROL Tabela] componente. Os pontos azuis para redimensionar a exibição do componente nas colunas 1 e 12.
 1. Arraste o ponto azul na coluna 12 para a coluna 6 da grade responsiva.
 
    ![Definir o ponto final da tabela](assets/layout_mode_end_point_table_new.png)
@@ -68,13 +68,13 @@ Selecionar **[!UICONTROL Layout]** na lista suspensa que aparece na parte superi
 
    ![Tabela e imagem em paralelo no modo Layout](assets/table_image_parallel_new.png)
 
-   Selecione o componente de Imagem e toque no botão **[!UICONTROL Flutuar para a nova linha]** opção disponível na barra de ferramentas para deslocar o componente Imagem para a próxima linha.
+   É possível selecionar o componente de Imagem e selecionar a variável **[!UICONTROL Flutuar para a nova linha]** opção disponível na barra de ferramentas para deslocar o componente Imagem para a próxima linha.
 
 ## Redimensionar painéis {#resize-panels-layout-mode}
 
 Execute as seguintes etapas se desejar redimensionar o painel inteiro em vez de componentes individuais:
 
-1. Toque em qualquer um dos componentes no painel que deseja redimensionar e selecione ![Selecionar pai](assets/select_parent_icon.svg)e selecione a primeira opção na lista suspensa, se o painel for o principal imediato do componente.
+1. Selecione qualquer um dos componentes no painel que deseja redimensionar, selecione ![Selecionar pai](assets/select_parent_icon.svg)e selecione a primeira opção na lista suspensa, se o painel for o principal imediato do componente.
 
    Os pontos azuis são exibidos no início e no fim da grade responsiva.
 
@@ -85,13 +85,13 @@ Você pode repetir as etapas 1 e 2 e selecionar ![Selecionar pai](assets/float_t
 
 Execute as seguintes etapas para definir o número de colunas para um painel:
 
-1. Entrada **[!UICONTROL Editar]** , toque no painel e selecione ![Configurar](assets/configure-icon.svg)e selecione **[!UICONTROL Responsivo - tudo na página sem navegação]** opção no **[!UICONTROL Layout do painel]** lista suspensa.
+1. Entrada **[!UICONTROL Editar]** , selecione o painel, selecione ![Configurar](assets/configure-icon.svg)e selecione **[!UICONTROL Responsivo - tudo na página sem navegação]** opção no **[!UICONTROL Layout do painel]** lista suspensa.
 
-1. Toque em ![Salvar](assets/save_icon.svg) para salvar as propriedades.
+1. Selecionar ![Salvar](assets/save_icon.svg) para salvar as propriedades.
 
-1. No **[!UICONTROL Layout]** , toque em qualquer um dos componentes no painel, selecione ![Selecionar pai](assets/select_parent_icon.svg)e selecione o painel.
+1. No **[!UICONTROL Layout]** , selecione qualquer um dos componentes no painel, selecione ![Selecionar pai](assets/select_parent_icon.svg)e selecione o painel.
 
-1. Toque ![várias colunas](assets/multi-column.svg) e selecione o número de colunas na lista suspensa. O número de colunas pode variar de 1 a 12. O painel é dividido em um layout de várias colunas.
+1. Selecionar ![várias colunas](assets/multi-column.svg) e selecione o número de colunas na lista suspensa. O número de colunas pode variar de 1 a 12. O painel é dividido em um layout de várias colunas.
 
 ![várias colunas no modo de layout](assets/multi-column-layout.png)
 
@@ -106,7 +106,7 @@ Habilite a nova grade responsiva para formulários criados com o [!DNL Adobe Exp
 Execute as seguintes etapas para ativar a nova grade responsiva:
 
 1. Selecionar **[!UICONTROL Layout]** na lista suspensa que aparece na parte superior ao lado da guia **[!UICONTROL Visualizar]** opção. Uma confirmação para ativar o modo Layout é exibida.
-1. Toque **[!UICONTROL Sim]** para habilitar o **[!UICONTROL Layout]** para o formulário.
+1. Selecionar **[!UICONTROL Sim]** para habilitar o **[!UICONTROL Layout]** para o formulário.
 
 ### Incorporar um fragmento antigo em um Formulário adaptável com um novo layout responsivo {#embed-an-old-fragment-in-an-adaptive-form-with-new-responsive-layout}
 
@@ -116,7 +116,7 @@ O novo layout responsivo para Formulário adaptável permite adicionar um Fragme
 
 Se você incorporar um fragmento com o novo layout responsivo em um Formulário adaptável com um layout responsivo antigo, o sistema solicitará que você ative o modo Layout para o formulário e incorpore novamente o fragmento.
 
-Para ativar o modo Layout, selecione **[!UICONTROL Layout]** na lista suspensa que aparece na parte superior ao lado da guia **[!UICONTROL Visualizar]** e toque em **[!UICONTROL Sim]** para confirmar. Selecionar **[!UICONTROL Editar]** para incorporar novamente o fragmento.
+Para ativar o modo Layout, selecione **[!UICONTROL Layout]** na lista suspensa que aparece na parte superior ao lado da guia **[!UICONTROL Visualizar]** e selecione **[!UICONTROL Sim]** para confirmar. Selecionar **[!UICONTROL Editar]** para incorporar novamente o fragmento.
 
 ## Desativar o modo Layout para formulários com layout responsivo antigo {#disable-layout-mode-for-forms-with-old-responsive-layout}
 
@@ -125,12 +125,12 @@ Você pode desativar o modo Layout para formulários com layout responsivo antig
 Execute as seguintes etapas para desativar o modo Layout:
 
 1. Selecionar **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > **[!UICONTROL Modelos]** e abra o modelo usado no formulário no **[!UICONTROL Editar]** modo.
-1. Selecione o Contêiner de formulário no painel esquerdo e toque em **[!UICONTROL Política.]**
+1. Selecione o Contêiner de formulário no painel esquerdo e selecione **[!UICONTROL Política.]**
 
    ![Desativar modo de layout](assets/policy_disable_layout_mode.png)
 
-1. Toque no **[!UICONTROL Configurações de layout]** e selecione **[!UICONTROL Desativar modo de layout]**.
-1. Toque ![Salvar alterações](assets/save_icon.svg) para salvar as propriedades do template.
+1. Selecione o **[!UICONTROL Configurações de layout]** e selecione **[!UICONTROL Desativar modo de layout]**.
+1. Selecionar ![Salvar alterações](assets/save_icon.svg) para salvar as propriedades do template.
 
 ## Consulte também {#see-also}
 

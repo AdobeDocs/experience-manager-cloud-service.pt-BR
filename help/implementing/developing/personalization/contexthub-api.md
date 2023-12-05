@@ -2,9 +2,9 @@
 title: Referência da API JavaScript do ContextHub
 description: A API JavaScript do ContextHub estará disponível para seus scripts quando o componente ContextHub for adicionado à página
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '4613'
+source-wordcount: '4602'
 ht-degree: 2%
 
 ---
@@ -162,7 +162,7 @@ Mescla um objeto de dados ou uma matriz com os dados armazenados. Cada par de ch
 * **Objeto:** Chaves são os nomes das propriedades.
 * **Matriz:** As chaves são os índices da matriz.
 
-Observe que os valores podem ser objetos.
+Os valores podem ser objetos.
 
 ##### Parâmetros {#parameters-addallitems}
 

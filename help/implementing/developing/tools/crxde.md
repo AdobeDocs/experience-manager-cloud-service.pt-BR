@@ -2,9 +2,9 @@
 title: Uso do CRXDE Lite
 description: o CRXDE Lite faz parte do AEM quickstart e está disponível para você acessar e modificar o repositório em seus ambientes de desenvolvimento locais no navegador.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1683'
+source-wordcount: '1678'
 ht-degree: 1%
 
 ---
@@ -48,7 +48,7 @@ O Widget de caminho do nó exibe o caminho para o nó atualmente selecionado.
 
 Você também pode usá-lo para saltar para um nó, inserindo o caminho manualmente ou colando-o de outro lugar e pressionando Enter.
 
-Também oferece suporte para procurar nós com nomes de nó específicos. Insira o nome do nó que deseja localizar e aguarde (ou selecione o ícone de pesquisa no lado direito). Se um determinado nó ou nós forem carregados no painel do explorador, a lista será exibida, e você poderá selecionar o caminho e pressionar Enter para navegar até ele. Observe que isso só funciona para os nós atualmente carregados no aplicativo cliente CRXDE no navegador. Se quiser pesquisar todo o repositório, use **Ferramentas** ->: **Query**.
+Também oferece suporte para procurar nós com nomes de nó específicos. Insira o nome do nó que deseja localizar e aguarde (ou selecione o ícone de pesquisa no lado direito). Se um determinado nó ou nós forem carregados no painel do explorador, a lista será exibida, e você poderá selecionar o caminho e pressionar Enter para navegar até ele. Ele só funciona para os nós atualmente carregados no aplicativo cliente CRXDE no navegador. Se quiser pesquisar todo o repositório, use **Ferramentas** ->: **Query**.
 
 ### Painel do Explorer {#explorer-pane}
 
@@ -142,7 +142,7 @@ A variável **Botão Mover** move o nó selecionado para o nó definido pela cai
 
 A variável **Botão Renomear** renomeia o nó selecionado.
 
-### Misturas {#mixins-button}
+### Mixins {#mixins-button}
 
 A variável **Botão Misturas** permite adicionar tipos de mixin ao tipo de nó. Os tipos de mixin são usados principalmente para adicionar recursos avançados.
 

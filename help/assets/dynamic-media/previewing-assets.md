@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 3928798d-352a-42a8-a544-7104fc9b3cf1
-source-git-commit: 0e452bd94d75609ecc3c20ab6b56ded968ed0a70
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1228'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -59,7 +59,7 @@ Para ativar ou desativar as predefinições do visualizador na interface do usu�
       <li><p><strong>Girar sua câmera 3D</strong> - Gire a visualização em torno da cena 3D e dos objetos.</p> Mouse: clique com o botão esquerdo + arraste.</p> Tela sensível ao toque: pressione + arraste.</p></li>
       <li><p><strong>Deslocar a câmera</strong> - Desloque sua visualização para a esquerda, direita, para cima e para baixo.</p> Mouse: clique com o botão direito do mouse + arraste.</p> Tela sensível ao toque: pressione dois dedos + arraste.</p></li>
       <li><p><strong>Aplicar zoom à sua câmera</strong> - Use o zoom da câmera se quiser mover para dentro e para fora das áreas na cena 3D.</p> Mouse: roda de rolagem.</p> Tela sensível ao toque: pinça no dedo.</p></li>
-      <li><p><strong>Recentralize sua câmera</strong> - Gire a visualização em torno da cena 3D e dos objetos.</p> Mouse: clique duas vezes.</p> Tela sensível ao toque: toque duas vezes.</li></ul></td>
+      <li><p><strong>Recentralize sua câmera</strong> - Gire a visualização em torno da cena 3D e dos objetos.</p> Mouse: clique duas vezes.</p> Tela sensível ao toque: selecione duas vezes.</li></ul></td>
       </tr>
       <tr>
       <td><p>Imagem</p> </td>
@@ -71,7 +71,7 @@ Para ativar ou desativar as predefinições do visualizador na interface do usu�
         </ul> <p><strong>Para visualizar um ativo em um visualizador específico</strong></p>
         <ul>
         <li>Próximo ao canto superior esquerdo da página, selecione o ícone para que a lista suspensa seja exibida. Selecionar <strong>Visualizadores</strong> na lista e selecione um visualizador que deseja aplicar ao ativo.</li>
-        </ul><p>Use o <strong>+</strong> e <strong>-</strong>para aumentar ou diminuir o zoom da imagem selecionada, respectivamente. Para retornar a imagem ao zoom original, selecione <strong>Redefinir</strong>.<br>Se você estiver em uma tela de toque, toque duas vezes na imagem para aproximar o zoom por etapas. Ao atingir o zoom máximo, toque duas vezes na imagem novamente para redefinir o estado de zoom. Arraste pela imagem para deslocar-se.</p> </td>
+        </ul><p>Use o <strong>+</strong> e <strong>-</strong>para aumentar ou diminuir o zoom da imagem selecionada, respectivamente. Para retornar a imagem ao zoom original, selecione <strong>Redefinir</strong>.<br>Se você estiver em uma tela sensível ao toque, selecione duas vezes a imagem para ampliar por etapas. Ao atingir o zoom máximo, selecione novamente a imagem para redefinir o estado de zoom. Arraste pela imagem para deslocar-se.</p> </td>
       </tr>
       <tr>
       <td>Multimídia</td>
@@ -92,7 +92,7 @@ Para ativar ou desativar as predefinições do visualizador na interface do usu�
       <td><p><strong>Para visualizar um ativo em um visualizador específico</strong></p>
         <ul>
         <li>Próximo ao canto superior esquerdo da página, selecione o ícone para que a lista suspensa seja exibida. Selecionar <strong>Visualizadores</strong> na lista e selecione um visualizador que deseja aplicar ao ativo.</li>
-        </ul> <p>Use o <strong>+</strong> e <strong>- </strong>para aumentar ou diminuir o zoom da imagem selecionada, respectivamente. Para retornar a imagem ao zoom original, selecione <strong>Redefinir</strong>.<br /> Se você estiver em uma tela de toque, toque duas vezes na imagem para aproximar o zoom por etapas. Ao atingir o zoom máximo, toque duas vezes na imagem novamente para redefinir o estado de zoom. Arraste pela imagem para deslocar-se.</p></td>
+        </ul> <p>Use o <strong>+</strong> e <strong>- </strong>para aumentar ou diminuir o zoom da imagem selecionada, respectivamente. Para retornar a imagem ao zoom original, selecione <strong>Redefinir</strong>.<br /> Se você estiver em uma tela sensível ao toque, selecione duas vezes a imagem para ampliar por etapas. Ao atingir o zoom máximo, selecione novamente a imagem para redefinir o estado de zoom. Arraste pela imagem para deslocar-se.</p></td>
       </tr>
       <tr>
       <td>Grupo de rotação</td>
@@ -101,7 +101,7 @@ Para ativar ou desativar as predefinições do visualizador na interface do usu�
       <td><p><strong>Para visualizar um ativo em um visualizador específico</strong></p>
         <ul>
         <li>Próximo ao canto superior esquerdo da página, selecione o ícone para que a lista suspensa seja exibida. Selecionar <strong>Visualizadores</strong> na lista e selecione um visualizador que deseja aplicar ao ativo.</li>
-        </ul><p>Use o <strong>+</strong> e <strong>- </strong>para aumentar ou diminuir o zoom da imagem selecionada, respectivamente. Para retornar a imagem ao zoom original, selecione <strong>Redefinir</strong>.<br /> Se você estiver em uma tela de toque, toque duas vezes na imagem para aproximar o zoom por etapas. Ao atingir o zoom máximo, toque duas vezes na imagem novamente para redefinir o estado de zoom. Arraste pela imagem para deslocar-se.</p> </td>
+        </ul><p>Use o <strong>+</strong> e <strong>- </strong>para aumentar ou diminuir o zoom da imagem selecionada, respectivamente. Para retornar a imagem ao zoom original, selecione <strong>Redefinir</strong>.<br /> Se você estiver em uma tela sensível ao toque, selecione duas vezes a imagem para ampliar por etapas. Ao atingir o zoom máximo, selecione novamente a imagem para redefinir o estado de zoom. Arraste pela imagem para deslocar-se.</p> </td>
       </tr>
       <tr>
       <td>Conjunto de mix de mídia</td>
@@ -110,7 +110,7 @@ Para ativar ou desativar as predefinições do visualizador na interface do usu�
       <td><p><strong>Para visualizar um ativo em um visualizador específico</strong></p>
         <ul>
         <li>Próximo ao canto superior esquerdo da página, selecione o ícone para que a lista suspensa seja exibida. Selecionar <strong>Visualizadores</strong> na lista e selecione um visualizador que deseja aplicar ao ativo.</li>
-        </ul> <p>Use o <strong>+</strong> e <strong>- </strong>para aumentar ou diminuir o zoom da imagem selecionada, respectivamente. Para retornar a imagem ao zoom original, selecione <strong>Redefinir</strong>.<br /> Se você estiver em uma tela de toque, toque duas vezes na imagem para aproximar o zoom por etapas. Ao atingir o zoom máximo, toque duas vezes na imagem novamente para redefinir o estado de zoom. Arraste pela imagem para deslocar-se.</p> </td>
+        </ul> <p>Use o <strong>+</strong> e <strong>- </strong>para aumentar ou diminuir o zoom da imagem selecionada, respectivamente. Para retornar a imagem ao zoom original, selecione <strong>Redefinir</strong>.<br /> Se você estiver em uma tela sensível ao toque, selecione duas vezes a imagem para ampliar por etapas. Ao atingir o zoom máximo, selecione novamente a imagem para redefinir o estado de zoom. Arraste pela imagem para deslocar-se.</p> </td>
       </tr>
       <tr>
       <td>Conjunto do Carousel</td>
@@ -131,7 +131,7 @@ Para ativar ou desativar as predefinições do visualizador na interface do usu�
         </ul> <p><strong>Para visualizar um ativo em um visualizador específico</strong></p>
         <ul>
         <li>Próximo ao canto superior esquerdo da página, selecione o ícone para que a lista suspensa seja exibida. Selecionar <strong>Visualizadores</strong>, em seguida, selecione um visualizador que deseja aplicar ao ativo.</li>
-        </ul> <p>Use o <strong>+</strong> e <strong>- </strong>para aumentar ou diminuir o zoom da imagem selecionada, respectivamente. Para retornar a imagem ao zoom original, selecione <strong>Redefinir</strong>.<br /> Se você estiver em uma tela de toque, toque duas vezes na imagem para aproximar o zoom por etapas. Ao atingir o zoom máximo, toque duas vezes na imagem novamente para redefinir o estado de zoom. Arraste pela imagem para deslocar-se.</p> </td>
+        </ul> <p>Use o <strong>+</strong> e <strong>- </strong>para aumentar ou diminuir o zoom da imagem selecionada, respectivamente. Para retornar a imagem ao zoom original, selecione <strong>Redefinir</strong>.<br /> Se você estiver em uma tela sensível ao toque, selecione duas vezes a imagem para ampliar por etapas. Ao atingir o zoom máximo, selecione novamente a imagem para redefinir o estado de zoom. Arraste pela imagem para deslocar-se.</p> </td>
       </tr>
     </tbody>
     </table>

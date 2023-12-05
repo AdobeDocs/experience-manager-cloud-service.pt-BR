@@ -2,9 +2,9 @@
 title: Pesquisa e indexação de conteúdo
 description: Saiba mais sobre Pesquisa e indexação de conteúdo no AEM as a Cloud Service.
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2427'
+source-wordcount: '2442'
 ht-degree: 29%
 
 ---
@@ -188,7 +188,7 @@ Para ilustrar a implantação de uma versão personalizada do índice pronto par
 
    Esta é uma amostra do nível superior do projeto `pom.xml` arquivo com as configurações acima incluídas:
 
-   Nome de arquivo: `pom.xml`
+   Nome do arquivo: `pom.xml`
 
    ```xml
    <plugin>
@@ -274,7 +274,7 @@ Durante o desenvolvimento ou ao usar instalações locais, os índices podem ser
 
 ### Gerenciamento de índice com implantações graduais {#index-management-with-rolling-deployments}
 
-Com implantações contínuas, não há tempo de inatividade. Por algum tempo durante uma atualização, a versão antiga (por exemplo, a versão 1) do aplicativo e a nova versão (versão 2) são executadas simultaneamente no mesmo repositório. Se a versão 1 exigir que um determinado índice esteja disponível, esse índice não deverá ser removido na versão 2. O índice deve ser removido posteriormente, por exemplo, na versão 3, quando é garantido que a versão 1 do aplicativo não estará mais em execução. Além disso, os aplicativos devem ser programados de modo que a versão 1 funcione bem, mesmo se a versão 2 estiver em execução e se os índices da versão 2 estiverem disponíveis.
+Com implantações contínuas, não há tempo de inatividade. Por algum tempo durante uma atualização, a versão antiga (por exemplo, a versão 1) do aplicativo e a nova versão (versão 2) são executadas simultaneamente no mesmo repositório. Se a versão 1 exigir que um determinado índice esteja disponível, esse índice não deverá ser removido na versão 2. O índice deve ser removido posteriormente, por exemplo, na versão 3, momento em que se garante que a versão 1 do aplicativo não estará mais em execução. Além disso, os aplicativos devem ser programados de modo que a versão 1 funcione bem, mesmo se a versão 2 estiver em execução e se os índices da versão 2 estiverem disponíveis.
 
 Após a conclusão da atualização para a nova versão, os índices antigos podem ser coletados pela lixeira do sistema. Os índices antigos ainda podem permanecer por algum tempo, para acelerar as reversões (caso elas sejam necessárias).
 

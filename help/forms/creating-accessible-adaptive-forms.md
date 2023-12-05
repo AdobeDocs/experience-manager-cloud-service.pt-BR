@@ -5,9 +5,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
 exl-id: 3b5247fa-decb-40eb-a629-6d834976d33c
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2022'
+source-wordcount: '2018'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ O tema acessível a ultramarinos é um tema de referência. Ele ajuda a demonstr
 
 1. Baixe o pacote de tema.
 1. Navegue até **[!UICONTROL Experience Manager]** > **[!UICONTROL Navegação]** ![Navegação](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Forms]** na sua instância do AEM.
-1. Toque **[!UICONTROL Criar]** > **[!UICONTROL Upload de arquivo]**. Selecione e faça upload do arquivo x Ultramarine-Accessible-Theme.zip. Ele carrega o tema para sua instância AEM.
+1. Selecionar **[!UICONTROL Criar]** > **[!UICONTROL Upload de arquivo]**. Selecione e faça upload do arquivo x Ultramarine-Accessible-Theme.zip. Ele carrega o tema para sua instância AEM.
 
 ## Tornar um formulário adaptável acessível
 
@@ -58,8 +58,8 @@ Você deve se concentrar em quatro aspectos principais: navegação pelo teclado
 Aplique o tema acessível pelo Ultramarine ao seu formulário adaptável existente. Para aplicar o tema:
 
 1. Abra o Formulário adaptável para edição.
-1. Selecione um componente e toque no ícone pai. No menu de contexto, toque em **[!UICONTROL Contêiner de formulário adaptável]** e toque no ícone configurar.
-1. Selecione o tema acessível por ultramarinos no navegador de propriedades e toque em **[!UICONTROL Salvar]** ícone.
+1. Selecione um componente e selecione o ícone pai. No menu de contexto, selecione **[!UICONTROL Contêiner de formulário adaptável]** e, em seguida, selecione o ícone configurar.
+1. Selecione o tema acessível por ultramarinos no navegador de propriedades e selecione **[!UICONTROL Salvar]** ícone.
 1. Atualize a janela do navegador. O tema é aplicado ao Formulário adaptável.
 
 Depois de aplicar um tema acessível, execute as correções adicionais listadas abaixo. As correções estão além das correções de acessibilidade abordadas no tema acessível:
@@ -100,7 +100,7 @@ O rótulo percebido pelos leitores de tela não precisa necessariamente ser o me
 
 Para usar a opção Acessibilidade, siga estas etapas:
 
-1. Selecione um componente e toque em ![cmppr](assets/cmppr.png).
+1. Selecione um componente e selecione ![cmppr](assets/cmppr.png).
 1. Clique em **[!UICONTROL Acessibilidade]** na barra lateral para escolher a opção de acessibilidade desejada.
 
 ### Opções de acessibilidade em componentes de formulário {#accessibility-options-in-form-components}
@@ -128,7 +128,7 @@ As imagens podem ajudar a melhorar a compreensão de alguns usuários. No entant
 
 Certifique-se de que o texto descreve o objeto e sua finalidade no formulário. Um leitor de tela lê esse texto alternativo quando encontra uma imagem. Uma imagem deve sempre ter um texto alternativo especificado.
 
-Selecione um componente de imagem e toque em ![cmppr](assets/cmppr.png). Na barra lateral, em Propriedades, especifique o texto alternativo para uma imagem.
+Selecione um componente de imagem e selecione ![cmppr](assets/cmppr.png). Na barra lateral, em Propriedades, especifique o texto alternativo para uma imagem.
 
 ![Texto alternativo para uma imagem](assets/image-properties.png)
 
@@ -157,7 +157,7 @@ Os seguintes atalhos de teclado estão disponíveis em [!DNL AEM Forms].
 | Redefinir os dados preenchidos em um formulário | Alt+R |
 | Enviar um formulário | Alt+S |
 
-Além disso, há várias teclas de atalho de teclado disponíveis para o **[!UICONTROL Seletor de data]** no Forms adaptável. Para ativar as teclas de atalho, toque no **[!UICONTROL Seletor de data]** componente e toque em ![Configurar](assets/configure-icon.svg) para abrir as propriedades. No **[!UICONTROL Padrões]** selecione um padrão de exibição usando a variável **[!UICONTROL Tipo]** e **[!UICONTROL Padrão]** listas suspensas. Salve as propriedades para permitir o uso de teclas de atalho para o **[!UICONTROL Seletor de data]** componente.
+Além disso, há várias teclas de atalho de teclado disponíveis para o **[!UICONTROL Seletor de data]** no Forms adaptável. Para ativar as teclas de atalho, selecione a **[!UICONTROL Seletor de data]** e selecione ![Configurar](assets/configure-icon.svg) para abrir as propriedades. No **[!UICONTROL Padrões]** selecione um padrão de exibição usando a variável **[!UICONTROL Tipo]** e **[!UICONTROL Padrão]** listas suspensas. Salve as propriedades para permitir o uso de teclas de atalho para o **[!UICONTROL Seletor de data]** componente.
 
 As seguintes teclas de atalho de teclado estão disponíveis para o componente Seletor de datas no Adaptive Forms:
 

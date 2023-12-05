@@ -6,9 +6,9 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '4301'
+source-wordcount: '4270'
 ht-degree: 10%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 10%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=en) |
 | AEM as a Cloud Service | Este artigo |
 
 Este artigo descreve como gerenciar e editar ativos no [!DNL Adobe Experience Manager Assets]. Para gerenciar [!DNL Content Fragments], consulte [[!DNL Content Fragments]](content-fragments/content-fragments.md) ativos.
@@ -69,13 +69,13 @@ Para extrair os arquivos ZIP, execute as seguintes etapas:
 Para visualizar um ativo, siga estas etapas.
 
 1. Na interface do usuário do Assets, navegue até o local do ativo que deseja visualizar.
-1. Toque no ativo desejado para abri-lo.
+1. Selecione o ativo desejado para abri-lo.
 
 1. No modo de visualização, as opções de zoom estão disponíveis para [tipos de imagem compatíveis](/help/assets/file-format-support.md) (com edição interativa).
 
    Para ampliar um ativo, selecione `+` (ou selecione a lupa no ativo). Para reduzir, selecione `-`. Ao ampliar, você pode observar de perto qualquer área da imagem com um movimento panorâmico. A seta para redefinir zoom leva você de volta à exibição original.
 
-   Toque **[!UICONTROL Redefinir]** para redefinir a exibição para o tamanho original.
+   Selecionar **[!UICONTROL Redefinir]** para redefinir a exibição para o tamanho original.
 
 ## Editar propriedades {#editing-properties}
 
@@ -340,7 +340,7 @@ Para pesquisas simples, avançadas e personalizadas para descobrir e usar os ati
 
 Os ícones de ação rápida estão disponíveis para um único ativo de cada vez. Dependendo do dispositivo, execute as seguintes ações para exibir os ícones de ação rápida:
 
-* Dispositivos de toque: toque e segure. Por exemplo, em uma iPad, é possível tocar e segurar um ativo para que as ações rápidas sejam exibidas.
+* Dispositivos de toque: toque e segure. Por exemplo, em uma iPad, é possível selecionar e manter um ativo para que as ações rápidas sejam exibidas.
 * Dispositivos sem toque: passe o ponteiro do mouse. Por exemplo, em um dispositivo de desktop, a barra de ação rápida é exibida se você passar o ponteiro do mouse sobre a miniatura do ativo.
 
 <!-- Hiding this topic via cqdoc-18707

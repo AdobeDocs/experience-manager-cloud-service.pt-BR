@@ -4,10 +4,10 @@ description: Saiba como configurar o Dynamic Media no Adobe Experience Manager a
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3794'
-ht-degree: 3%
+source-wordcount: '3811'
+ht-degree: 2%
 
 ---
 
@@ -107,7 +107,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    ![dynamicmediaconfiguration2updated](/help/assets/assets-dm/dynamicmediaconfigurationupdated.png)
 
-1. Selecione **[!UICONTROL Salvar]**. A nova senha e configuração do Dynamic Media são salvas. Se você selecionou **[!UICONTROL Cancelar]** em vez disso, não ocorre atualização de senha.
+1. Selecionar **[!UICONTROL Salvar]**. A nova senha e configuração do Dynamic Media são salvas. Se você selecionou **[!UICONTROL Cancelar]** em vez disso, não ocorre atualização de senha.
 1. No **[!UICONTROL Configuração do Dynamic Media]** caixa de diálogo, selecione **[!UICONTROL OK]** para iniciar a configuração.
 
    >[!IMPORTANT]
@@ -205,11 +205,11 @@ Quando você executa o Dynamic Media no AEM, ele é encaminhado no momento `/is/
 
 1. No Experience Manager, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Console da Web]**.
 
-   ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
+   ![08/02/2019: 16/13/14](assets/2019-08-02_16-13-14.png)
 
 1. Uma nova guia do navegador é aberta na guia **[!UICONTROL Configuração do console da Web do Adobe Experience Manager]** página.
 
-   ![2019-08-02_16-17-29](assets/2019-08-02_16-17-29.png)
+   ![08/02/2019: 16/17/29](assets/2019-08-02_16-17-29.png)
 
 1. Na página, role até o nome _Adobe CQ Scene7 PlatformServer_.
 
@@ -311,9 +311,9 @@ Consulte [Fazer upload de ativos](/help/assets/add-assets.md).
 1. Na pasta mimeTypes, selecione um tipo MIME.
 1. No lado direito da página de CRXDE Lite, na parte inferior:
 
-   * Toque duas vezes no **[!UICONTROL habilitado]** campo. Por padrão, todos os tipos MIME do ativo são ativados (definidos como **[!UICONTROL true]**), o que significa que os ativos são sincronizados com o Dynamic Media para processamento. Se quiser excluir esse tipo de ativo MIME de ser processado, altere essa configuração para **[!UICONTROL false]**.
+   * Selecione duas vezes a variável **[!UICONTROL habilitado]** campo. Por padrão, todos os tipos MIME do ativo são ativados (definidos como **[!UICONTROL true]**), o que significa que os ativos são sincronizados com o Dynamic Media para processamento. Se quiser excluir esse tipo de ativo MIME de ser processado, altere essa configuração para **[!UICONTROL false]**.
 
-   * Toque duas vezes **[!UICONTROL jobParam]** para abrir o campo de texto associado. Consulte [Tipos MIME suportados](/help/assets/file-format-support.md) para obter uma lista de valores de parâmetro de processamento permitidos que você pode usar para determinado tipo MIME.
+   * Seleção dupla **[!UICONTROL jobParam]** para abrir o campo de texto associado. Consulte [Tipos MIME suportados](/help/assets/file-format-support.md) para obter uma lista de valores de parâmetro de processamento permitidos que você pode usar para determinado tipo MIME.
 
 1. Siga uma das seguintes opções:
    * Repita as etapas 3 a 4 para editar mais tipos MIME.
@@ -330,13 +330,13 @@ Você pode adicionar tipos MIME personalizados para formatos não compatíveis c
 1. Faça logon no Experience Manager as a Cloud Service como administrador de produto.
 1. No Experience Manager as a Cloud Service, acesse **[!UICONTROL Ferramentas > Operações > Console da Web]**.
 
-   ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
+   ![08/02/2019: 16/13/14](assets/2019-08-02_16-13-14.png)
 
 1. Uma nova guia do navegador é aberta na guia **[!UICONTROL Configuração do console da Web do Adobe Experience Manager]** página.
 
-   ![2019-08-02_16-17-29](assets/2019-08-02_16-17-29.png)
+   ![08/02/2019: 16/17/29](assets/2019-08-02_16-17-29.png)
 
-1. Na página, role para baixo até o nome *Adobe CQ Scene7 Asset MIME type Service*, como visto na seguinte captura de tela. À direita do nome, toque em **[!UICONTROL Editar os valores]** de configuração (ícone de lápis).
+1. Na página, role para baixo até o nome *Adobe CQ Scene7 Asset MIME type Service*, como visto na seguinte captura de tela. À direita do nome, selecione a variável **[!UICONTROL Editar os valores de configuração]** (lápis).
 
    ![Editar os valores de configuração](assets/2019-08-02_16-44-56.png)
 
@@ -369,7 +369,7 @@ Você pode adicionar tipos MIME personalizados para formatos não compatíveis c
 
    ![Edição de um arquivo DWG no CRXDE Lite](assets/crxdelite_cqdoc-14627.png)
 
-1. Com o tipo MIME `image_vnd.dwg` ainda selecionado, no **[!UICONTROL Propriedades]** , na guia **[!UICONTROL habilitado]** linha, abaixo de **[!UICONTROL Valor]** cabeçalho da coluna, toque duas vezes no valor. A variável **[!UICONTROL Valor]** é aberta.
+1. Com o tipo MIME `image_vnd.dwg` ainda selecionado, no **[!UICONTROL Propriedades]** , na guia **[!UICONTROL habilitado]** linha, abaixo de **[!UICONTROL Valor]** cabeçalho da coluna, selecione o valor duas vezes. A variável **[!UICONTROL Valor]** é aberta.
 1. Tipo `false` no campo (ou selecione **[!UICONTROL false]** na lista suspensa).
 
    ![Edição de tipos MIME no CRXDE Lite](assets/2019-08-02_16-60-30.png)
@@ -474,7 +474,7 @@ A configuração Fazer upload de conexão do Dynamic Media Classic (Scene7) sinc
 
 **Para atualizar o máximo de conexões de upload para o servidor do Dynamic Media Classic (Scene7):**
 
-1. Vá até `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
+1. Navegue até `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
 1. No **[!UICONTROL Número de conexões]** ou o campo **[!UICONTROL Tempo limite do trabalho ativo]** ou ambos, altere o número conforme desejado.
 
    A variável **[!UICONTROL Número de conexões]** a configuração controla o número máximo de conexões HTTP permitidas para o upload de Experience Manager para Dynamic Media. Normalmente, o valor predefinido de dez conexões é suficiente.

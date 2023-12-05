@@ -2,10 +2,10 @@
 title: Manuseio básico
 description: Acostume-se com a navegação pelo AEM e seu uso básico
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2945'
-ht-degree: 90%
+source-wordcount: '2943'
+ht-degree: 88%
 
 ---
 
@@ -17,13 +17,13 @@ Este documento foi criado para apresentar uma visão geral do manuseio básico a
 >[!NOTE]
 >
 >* Algumas funcionalidades podem ou não estar disponíveis dependendo do console. Informações específicas sobre os consoles individuais e suas funcionalidades relacionadas são abordadas com mais detalhes em outras páginas.
->* Os atalhos de teclado estão disponíveis em todo o AEM, principalmente ao [usar páginas de console](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) e [de edição](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
+>* Atalhos de teclado estão disponíveis em todo o AEM. Em especial, quando [uso de consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) e [editar páginas](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
 
 {{edge-delivery-authoring}}
 
 ## Uma interface de usuário habilitada para toque {#a-touch-enabled-ui}
 
-A interface do usuário do AEM é habilitada para toque. Uma interface habilitada para toque permite que você use toques para interagir com o software por meio de gestos, como tocar, tocar e segurar e deslizar o dedo. Como a interface do usuário do AEM é habilitada para toque, você pode usar os gestos de toque nos dispositivos de toque, como celular ou tablet. No entanto, as ações do mouse em um dispositivo de desktop tradicional também estão disponíveis, o que proporciona flexibilidade na maneira como você escolhe criar conteúdo.
+A interface do usuário do AEM é habilitada para toque. Uma interface habilitada para toque permite que você use toques para interagir com o software por meio de gestos como selecionar, tocar e segurar e deslizar o dedo. Como a interface do usuário do AEM é habilitada para toque, você pode usar os gestos de toque nos dispositivos de toque, como celular ou tablet. No entanto, as ações do mouse em um dispositivo de desktop tradicional também estão disponíveis, o que proporciona flexibilidade na maneira como você escolhe criar conteúdo.
 
 ## Primeiras etapas {#first-steps}
 
@@ -53,7 +53,7 @@ Você pode fechar o painel de navegação global clicando ou tocando em **Fechar
 
 A navegação global possui dois painéis, representados por ícones na margem esquerda da tela:
 
-* **[Navegação](#navigation-panel)** - Representado por uma bússola   e o painel padrão ao fazer logon no AEM
+* **[Navegação](#navigation-panel)** - Representado por uma bússola e o painel padrão ao fazer logon no AEM
 * **[Ferramentas](#tools-panel)**: representadas por um martelo
 
 As opções disponíveis nesses painéis estão descritas abaixo.
@@ -255,9 +255,9 @@ Selecionar um recurso específico depende de uma combinação da exibição e do
 
 | Exibir | Selecionar toque | Selecionar desktop | Desmarcar toque | Desmarcar desktop |
 |---|---|---|---|---|
-| Coluna | Toque na miniatura | Clique na miniatura | Toque na miniatura | Clique na miniatura |
-| Cartão | Toque e segure o cartão | Passe o mouse sobre ele e use a ação rápida da marca de seleção | Toque no cartão | Clique no cartão |
-| Lista | Toque na miniatura | Clique na miniatura | Toque na miniatura | Clique na miniatura |
+| Coluna | Selecione a miniatura | Clique na miniatura | Selecione a miniatura | Clique na miniatura |
+| Cartão | Selecione e segure o cartão | Passe o mouse sobre ele e use a ação rápida da marca de seleção | Selecione o cartão | Clique no cartão |
+| Lista | Selecione a miniatura | Clique na miniatura | Selecione a miniatura | Clique na miniatura |
 
 #### Selecionar tudo {#select-all}
 
@@ -436,7 +436,7 @@ A coluna de linha do tempo permite:
          * Com exceção de fluxos de trabalho transitórios pois nenhuma informação de histórico é salva para eles <!--With the exception of [transient workflows](/help/sites-developing/workflows.md#transient-workflows) as no history information is saved for these-->
       * Exibir todos
 
-* Adicionar/exibir comentários sobre o item selecionado. A caixa **Comentário** é exibida na parte inferior da lista de eventos. Inserir um comentário seguido por Retornar registrará esse comentário. Ele será mostrado quando a opção **Comentários** ou **Exibir todos** estiver selecionada.
+* Adicionar/exibir comentários sobre o item selecionado. A caixa **Comentário** é exibida na parte inferior da lista de eventos. Digitar um comentário e Retornar registrará o comentário. É exibido quando **Comentários** ou **Mostrar tudo** é selecionado.
 
 * Os consoles específicos têm funcionalidade adicional. Por exemplo, no console Sites é possível:
 

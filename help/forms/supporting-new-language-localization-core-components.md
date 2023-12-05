@@ -2,9 +2,9 @@
 title: Como adicionar suporte para novas localidades a um formulário adaptável baseado em componentes principais?
 description: Saiba como adicionar novas localidades para um Formulário adaptável.
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 5be0c5e347d2ec7ef660a701c8c6faf6a2d6d17a
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1335'
+source-wordcount: '1333'
 ht-degree: 2%
 
 ---
@@ -74,7 +74,7 @@ Para adicionar suporte para um novo local, siga estas etapas:
    git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/
    ```
 
-   Substituir `<my-org>` e `<my-program>` no URL acima, com o nome da organização e o nome do programa. Para obter instruções detalhadas sobre como obter o nome da organização, o nome do programa ou o caminho completo do repositório Git e as credenciais necessárias para cloná-lo, consulte a [Acesso ao Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) artigo.
+   Substituir `<my-org>` e `<my-program>` no URL acima, com o nome da organização e o nome do programa. Para obter instruções detalhadas sobre como obter o nome da organização, o nome do programa ou o caminho completo do repositório Git, bem como as credenciais necessárias para cloná-lo, consulte [Acesso ao Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) artigo.
 
    Após a conclusão bem-sucedida do comando, uma pasta `<my-program>` é criado. Ele contém o conteúdo clonado do repositório Git. No restante do artigo, a pasta é chamada de, `[AEM Forms as a Cloud Service Git repository]`.
 

@@ -2,10 +2,10 @@
 title: Como configurar um ambiente de desenvolvimento local para o AEM Forms?
 description: Configurar um ambiente de desenvolvimento local para o Adobe Experience Manager Forms as a Cloud Service
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2846'
-ht-degree: 3%
+source-wordcount: '2682'
+ht-degree: 1%
 
 ---
 
@@ -16,7 +16,7 @@ Ao instalar e configurar um [!DNL  Adobe Experience Manager Forms] as a [!DNL  C
 Você pode usar o ambiente de desenvolvimento local para executar as seguintes ações sem fazer logon no ambiente de desenvolvimento da nuvem:
 
 * [Criar formulários](creating-adaptive-form.md) e ativos relacionados (temas, modelos, ações enviar personalizadas e muito mais)
-* [Converter formulários PDF em formulários adaptáveis](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=pt-BR)
+* [Converter PDF forms em Forms adaptável](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=pt-BR)
 * Criar aplicativos para gerar [Comunicações do cliente](aem-forms-cloud-service-communications-introduction.md) por demanda ou em modos de lote.
 
 Depois que um Formulário adaptável ou ativos relacionados estiverem prontos na instância de desenvolvimento local ou em um aplicativo para gerar [Comunicações do cliente] estiver pronto, você poderá exportar o formulário adaptável ou o aplicativo de comunicações do cliente do ambiente de desenvolvimento local para um ambiente Cloud Service para testes adicionais ou migração para ambientes de produção.
@@ -89,7 +89,7 @@ Para baixar a versão mais recente do SDK do Adobe Experience Manager as a Cloud
 1. Navegue até a **[!UICONTROL AEM as a Cloud Service]** guia.
 1. Classifique por data de publicação em ordem decrescente.
 1. Clique no Adobe Experience Manager as a Cloud Service SDK mais recente, no arquivo de recursos do Experience Manager Forms (complemento do AEM Forms), nos ativos de referência de formulários ou no Forms Designer.
-1. Revise e aceite o EULA. Toque no **[!UICONTROL Baixar]** botão.
+1. Revise e aceite o EULA. Clique no botão **[!UICONTROL Baixar]**.
 
 ## Configurar ferramentas de desenvolvimento para Projetos AEM {#setup-development-tools-for-AEM-projects}
 
@@ -387,7 +387,7 @@ Faça backup de seu Forms adaptável, modelos, modelo de dados de formulário, t
 
 1. Baixar modelos de dados do formulário
 
-1. Exportar modelos editáveis, configurações de nuvem e modelo de fluxo de trabalho. Para exportar todos os itens mencionados anteriormente do SDK existente, crie um [Pacote CRX](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=pt-BR) com os seguintes filtros:
+1. Exportar modelos editáveis, configurações de nuvem e modelo de fluxo de trabalho. Para exportar todos os itens mencionados anteriormente do SDK existente, crie um [Pacote CRX](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html) com os seguintes filtros:
 
    * /conf/ReferenceEditableTemplates
    * /conf/global/settings/cloudconfigs

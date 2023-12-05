@@ -2,10 +2,10 @@
 title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2021.3.0.
 description: "[!DNL Adobe Experience Manager] Notas de versão as a Cloud Service para 2021.3.0."
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1290'
-ht-degree: 38%
+source-wordcount: '1271'
+ht-degree: 33%
 
 ---
 
@@ -86,7 +86,7 @@ Esta seção descreve as Notas de versão do Cloud Manager no AEM as a Cloud Ser
 ## Data de lançamento {#release-date-cm-march}
 
 A data de lançamento do Cloud Manager no AEM as a Cloud Service 2021.3.0 é 11 de março de 2021.
-A próxima versão está planejada para 08 de abril de 2021.
+A próxima versão está planejada para sexta-feira, 8 de abril de 2021.
 
 ### Novidades {#what-is-new-march}
 
@@ -94,7 +94,7 @@ A próxima versão está planejada para 08 de abril de 2021.
 
 * Os usuários com as permissões necessárias agora podem editar um programa, permitindo fazer o seguinte de maneira automatizada:
 
-   * Adicionar a solução do Sites a um programa existente com o Assets, e vice-versa.
+   * Adicionar a solução Sites a um programa existente com Assets ou vice-versa.
    * Remover sites ou ativos de um programa existente usando o Sites e o Assets.
    * Adicionar o segundo direito de solução não utilizado a um programa existente ou como um novo programa.
 

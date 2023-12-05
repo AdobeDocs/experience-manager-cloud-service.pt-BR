@@ -3,7 +3,7 @@ title: Como configurar uma ação enviar para um formulário adaptável?
 description: Um Formulário adaptável fornece várias Ações de envio. Uma Ação de envio define como um Formulário adaptável é processado após o envio. Você pode usar as Ações de envio integradas ou criar as suas próprias
 keywords: como selecionar a ação enviar para um formulário adaptável, conectar um formulário adaptável à lista do sharepoint, conectar um formulário adaptável à biblioteca de documentos do sharepoint, conectar um formulário adaptável ao modelo de dados de formulário
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
-source-git-commit: 5be0c5e347d2ec7ef660a701c8c6faf6a2d6d17a
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '4006'
 ht-degree: 2%
@@ -198,7 +198,7 @@ Para conectar o AEM Forms à sua lista do Microsoft® Sharepoint:
 
 1. Clique em **[!UICONTROL Conectar]**. Em uma conexão bem-sucedida, a variável `Connection Successful` é exibida.
 1. Selecionar **[!UICONTROL Site do SharePoint]** e **[!UICONTROL Lista do SharePoint]** na lista suspensa.
-1. Toque **[!UICONTROL Criar]** para criar a configuração de nuvem do Microsoft® SharePointList.
+1. Selecionar **[!UICONTROL Criar]** para criar a configuração de nuvem do Microsoft® SharePointList.
 
 
 #### Usar o Enviar usando o Modelo de dados de formulário em um Formulário adaptável {#use-submit-using-fdm}

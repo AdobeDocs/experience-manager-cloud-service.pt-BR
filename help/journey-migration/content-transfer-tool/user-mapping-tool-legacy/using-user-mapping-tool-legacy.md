@@ -4,10 +4,10 @@ description: Utilização da Ferramenta de mapeamento de usuário (herdada)
 exl-id: dcb750c4-0f81-4d11-ac6c-0592162b683d
 hide: true
 hidefromtoc: true
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '829'
-ht-degree: 2%
+source-wordcount: '806'
+ht-degree: 1%
 
 ---
 
@@ -39,7 +39,7 @@ Siga as etapas abaixo para configurar isso:
 
 A Ferramenta de mapeamento de usuários é integrada à Ferramenta de transferência de conteúdo. É possível baixar a ferramenta Transferência de conteúdo em [Portal de distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). Para obter mais detalhes sobre a versão mais recente, consulte [Notas de versão atuais](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
-1. Selecione o Adobe Experience Manager e navegue até ferramentas -> **Operações** -> **Migração de conteúdo**.
+1. Selecione o Adobe Experience Manager e navegue até ferramentas > **Operações** > **Migração de conteúdo**.
 
    ![imagem](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-access1.png)
 

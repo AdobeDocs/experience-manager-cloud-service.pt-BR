@@ -1,15 +1,13 @@
 ---
 title: Como alterar o conteúdo da Página zero no Designer?
 description: Altere a mensagem exibida na Página Zero de um PDF XFA para visualizadores que não sejam do Adobe PDF.
-uuid: ac23fb21-3f15-48ea-aeeb-4ecc12b771ac
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: 56b6a573-8aba-43e7-acb7-c2da45869d95
 docset: aem65
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 1%
+source-wordcount: '246'
+ht-degree: 0%
 
 ---
 
@@ -44,7 +42,7 @@ O conteúdo da Página zero é exibido por padrão quando um visualizador que n�
 
 >[!NOTE]
 >
->A propriedade personalizada que você acabou de criar pode não aparecer corretamente na caixa de diálogo Propriedades do formulário quando você reabrir o formulário. No entanto, funciona bem e o formulário exibe a mensagem Página zero atualizada.
+>A propriedade personalizada criada pode não aparecer corretamente na caixa de diálogo Propriedades do formulário quando você reabrir o formulário. No entanto, funciona bem e o formulário exibe a mensagem Página zero atualizada.
 
 >[!MORELIKETHIS]
 >

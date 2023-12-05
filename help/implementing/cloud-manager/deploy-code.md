@@ -2,10 +2,10 @@
 title: Implantação de código
 description: Saiba como implantar seu código usando os pipelines do Cloud Manager no AEM as a Cloud Service.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1193'
-ht-degree: 91%
+source-wordcount: '1190'
+ht-degree: 80%
 
 ---
 
@@ -130,9 +130,9 @@ Todas as implantações do Cloud Service seguem um processo gradual para garanti
 
 Em casos raros, as etapas de implantação de produção podem falhar por motivos transitórios. Nesses casos, a reexecução da etapa de implantação de produção é suportada desde que a etapa de implantação de produção tenha sido concluída, independentemente do tipo de conclusão (por exemplo, cancelada ou malsucedida). A reexecução cria uma nova execução usando o mesmo pipeline e consiste em três etapas.
 
-1. A etapa de validação: é basicamente a mesma validação que ocorre durante uma execução normal do pipeline.
-1. A etapa de compilação: no contexto de uma reexecução, a etapa de compilação copia artefatos, sem executar um novo processo de compilação real.
-1. A etapa de implantação de produção: usa as mesmas configurações e opções que a etapa de implantação de produção em uma execução normal de pipeline.
+1. A etapa de validação - É basicamente a mesma validação que ocorre durante uma execução normal do pipeline.
+1. A etapa de criação - No contexto de uma reexecução, a etapa de criação copia artefatos e não executa realmente um novo processo de criação.
+1. A etapa de implantação de produção - Usa as mesmas configurações e opções que a etapa de implantação de produção em uma execução normal de pipeline.
 
 Nessas circunstâncias, quando uma reexecução for possível, a página de status do pipeline de produção fornecerá a opção **Reexecutar** ao lado da opção tradicional **Baixar log de compilação**.
 
@@ -145,13 +145,13 @@ Nessas circunstâncias, quando uma reexecução for possível, a página de stat
 ### Limitações {#limitations}
 
 * A reexecução da etapa de implantação de produção só estará disponível para a última execução.
-* A reexecução não estará disponível para execuções de atualização por push.
+* A reexecução não está disponível para execuções de atualização por push.
    * Se a última execução for uma execução de atualização por push, não será possível iniciar uma reexecução.
 * Se a última execução falhar em qualquer ponto antes da etapa de implantação em produção, não será possível iniciar uma reexecução.
 
 ### API de reexecução {#reexecute-API}
 
-Além de estar disponível na interface, você pode usar [a API do Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) para acionar reexecuções, bem como identificar execuções que foram acionadas como reexecuções.
+Além de estar disponível na interface do usuário do, você pode usar [a API do Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) para acionar reexecuções e identificar execuções que foram acionadas como reexecuções.
 
 #### Acionar uma reexecução {#reexecute-deployment-api}
 
@@ -199,7 +199,7 @@ Esse link só está disponível para a etapa de implantação em produção.
 
 A sintaxe do valor href do link HAL é apenas um exemplo. O valor real sempre deve ser lido do link HAL, e não gerado.
 
-O envio de uma solicitação PUT para esse ponto de acesso resulta em uma resposta 201 se bem-sucedida, e o corpo da resposta é a representação da nova execução. É semelhante a iniciar uma execução regular por meio da API.
+O envio de uma solicitação PUT para esse endpoint resulta em uma resposta 201, se bem-sucedido, e o corpo da resposta é a representação da nova execução. É semelhante a iniciar uma execução regular por meio da API.
 
 #### Identificação de uma execução reexecutada {#identify-reexecution}
 

@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Mixed Media Sets
 role: User
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1500'
-ht-degree: 14%
+source-wordcount: '1507'
+ht-degree: 11%
 
 ---
 
@@ -118,7 +118,7 @@ Ao adicionar ativos ao conjunto, eles são automaticamente adicionados em ordem 
 
 1. Para excluir um ativo, marque a caixa de seleção correspondente e selecione **[!UICONTROL Excluir ativo]**.
 1. Para aplicar uma predefinição, selecione **[!UICONTROL Predefinição]** no canto superior direito e selecione uma predefinição para aplicar aos ativos.
-1. Selecione **[!UICONTROL Salvar]**. O Conjunto de mídias mistas criado aparece na pasta em que você o criou.
+1. Selecionar **[!UICONTROL Salvar]**. O Conjunto de mídias mistas criado aparece na pasta em que você o criou.
 
 ## Editar conjuntos de mídia mista {#editing-mixed-media-sets}
 
@@ -158,9 +158,9 @@ Ao adicionar ativos ao conjunto, eles são automaticamente adicionados em ordem 
 
    >[!NOTE]
    >
-   >* Para editar os ativos em um Conjunto de mídias mistas - Navegue até o Conjunto de mídias mistas. Toque (não selecione) no conjunto para abri-lo na página Visualização do conjunto de Experience Manager. No painel à esquerda, selecione o sinal de seta para baixo para abrir a lista suspensa e selecione **[!UICONTROL Definir membros]**. Na página Definir membros, passe o mouse sobre um ativo e selecione **[!UICONTROL Editar]** (ícone de lápis) para abrir a página de edição.
+   >* Para editar os ativos em um Conjunto de mídias mistas - Navegue até o Conjunto de mídias mistas. Selecione (não selecione) o conjunto para que você possa abri-lo na página Visualização do conjunto de Experience Manager. No painel à esquerda, selecione o sinal de seta para baixo para abrir a lista suspensa e selecione **[!UICONTROL Definir membros]**. Na página Definir membros, passe o mouse sobre um ativo e selecione **[!UICONTROL Editar]** (ícone de lápis) para abrir a página de edição.
    >
-   >* Para excluir um conjunto de mídia mista inteiro - A partir de qualquer modo de exibição (como a Exibição de cartão ou em Coluna), navegue até o conjunto de mídias mistas. Passe o mouse sobre o conjunto e selecione **[!UICONTROL Selecionar]** (ícone de marca de seleção). Pressione **[!UICONTROL Backspace]** no teclado ou selecione **[!UICONTROL Mais]** (linha de três pontos), selecione **[!UICONTROL Excluir]**.
+   >* Para excluir um Conjunto de mídias mistas inteiro - A partir de qualquer modo de exibição (como a Exibição de cartão ou em Coluna), navegue até o Conjunto de mídias mistas. Passe o mouse sobre o conjunto e selecione **[!UICONTROL Selecionar]** (ícone de marca de seleção). Pressione **[!UICONTROL Backspace]** no teclado ou selecione **[!UICONTROL Mais]** (linha de três pontos), selecione **[!UICONTROL Excluir]**.
 
 ## Visualizar conjuntos de mídia mista {#previewing-mixed-media-sets}
 

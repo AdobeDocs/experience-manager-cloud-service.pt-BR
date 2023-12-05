@@ -4,10 +4,10 @@ description: Adicione seus ativos digitais ao [!DNL Adobe Experience Manager] as
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3179'
-ht-degree: 7%
+source-wordcount: '3137'
+ht-degree: 4%
 
 ---
 
@@ -37,7 +37,7 @@ Você também pode optar por concluir o processamento adicional nos ativos carre
 
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
 
-   You can pause the uploading of large assets (greater than 500 MB) and resume it later from the same page. Tap the **[!UICONTROL Pause]** icon beside progress bar that appears when an upload starts.
+   You can pause the uploading of large assets (greater than 500 MB) and resume it later from the same page. Select the **[!UICONTROL Pause]** icon beside progress bar that appears when an upload starts.
 
    The size above which an asset is considered a large asset is configurable. For example, you can configure the system to consider assets above 1000 MB (instead of 500 MB) as large assets. In this case, **[!UICONTROL Pause]** appears on the progress bar when assets of size greater than 1000 MB are uploaded.
 
@@ -193,7 +193,7 @@ Para configurar a ferramenta Importação em massa, siga estas etapas:
 
 1. Selecione o **[!UICONTROL Excluir arquivo de origem após a importação]** opção para excluir os arquivos originais do armazenamento de dados de origem após os arquivos serem importados para o [!DNL Experience Manager].
 
-1. Selecione o **[!UICONTROL Modo de importação]**. Selecione **Ignorar**, **Substituir** ou **Criar versão**. O modo Ignorar é o padrão e nesse modo, o assimilador ignora a importação de um ativo, caso já exista. Veja o significado de [substituir e criar opções de versão](#handling-upload-existing-file).
+1. Selecione o **[!UICONTROL Modo de importação]**. Selecione **Ignorar**, **Substituir** ou **Criar versão**. O modo Ignorar é o padrão e, nesse modo, o assimilador ignora para importar um ativo, se ele já existir. Veja o significado de [substituir e criar opções de versão](#handling-upload-existing-file).
 
 1. Defina um local no DAM onde os ativos devem ser importados usando o campo **[!UICONTROL Pasta de destino do Assets]**. Por exemplo, `/content/dam/imported_assets`.
 
@@ -207,7 +207,7 @@ Depois de criar a configuração da ferramenta Importação em massa, você pode
 
 ### Editar a configuração {#edit-configuration}
 
-Para editar os detalhes da configuração, selecione-a e clique em **[!UICONTROL Editar]**. Não é possível editar o título da configuração e a fonte de dados de importação.
+Para editar os detalhes da configuração, selecione-a e clique em **[!UICONTROL Editar]**. Não é possível editar o título da configuração e da fonte de dados de importação ao executar a operação de edição.
 
 ### Excluir a configuração {#delete-configuration}
 
@@ -221,7 +221,7 @@ Para validar a conexão com a fonte de dados, selecione a configuração e cliqu
 
 ### Chamar uma execução de teste para o trabalho de Importação em Massa {#invoke-test-run-bulk-import}
 
-Selecione a configuração e clique em **[!UICONTROL Dry Run]** para chamar uma execução de teste para o trabalho de Importação em massa. O Experience Manager exibe os seguintes detalhes sobre a tarefa de importação em massa:
+Selecione a configuração e clique em **[!UICONTROL Dry Run]** para chamar uma execução de teste para o trabalho de Importação em massa. O Experience Manager exibe os seguintes detalhes sobre o trabalho de Importação em massa:
 
 ![Resultado do teste](assets/dry-assets-result.png)
 

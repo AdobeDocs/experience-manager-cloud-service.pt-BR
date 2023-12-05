@@ -2,9 +2,9 @@
 title: Painel de auditoria de experiência
 description: Saiba como a Auditoria de experiência valida seu processo de implantação e ajuda a garantir que as alterações implantadas atendam aos padrões básicos de desempenho, acessibilidade, práticas recomendadas e SEO, por meio de uma interface de painel clara e informativa.
 exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '824'
 ht-degree: 22%
 
 ---
@@ -77,7 +77,7 @@ No **Pontuações do farol** você encontrará uma exibição de tendências das
 
 ![Gráfico de pontuações do farol](assets/lighthouse-scores.png)
 
-Observe que cada ponto no gráfico é a média em todas as implantações no mês de interesse.
+Cada ponto no gráfico é a média em todas as implantações no mês de interesse.
 
 Para voltar para a página de execução do pipeline de produção, basta selecionar a seta para trás no navegador.
 
@@ -115,7 +115,7 @@ Para voltar para a página de execução do pipeline de produção, basta seleci
 
 Se você selecionar o link de uma página em uma guia do **Auditoria de experiência** seção da guia da página de execução do pipeline ou na guia **Páginas** do painel Auditoria de experiência completa, é possível exibir os detalhes de uma página específica.
 
-![Dados da página ](assets/page-data.png)
+![Dados da página](assets/page-data.png)
 
 Você pode ver as pontuações de páginas individuais para um teste específico, juntamente com a alteração em relação à execução anterior do teste.
 

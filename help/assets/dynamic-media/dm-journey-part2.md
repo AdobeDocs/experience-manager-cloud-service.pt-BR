@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '2872'
+source-wordcount: '2677'
 ht-degree: 0%
 
 ---
@@ -123,7 +123,7 @@ Você se lembra em [Anatomia de um URL do Dynamic Media](#dm-journey-d) anterior
 
 Pense em uma predefinição de imagem como uma fórmula para suas imagens. Ele vai mostrar todas as imagens que usam a predefinição, de forma consistente, sempre; e vai ser o mesmo. O parâmetro `&op_brightness=+10` também foi adicionado para aumentar ligeiramente o brilho.
 
-Quando terminar, salve a predefinição e ela agora estará disponível para todas as imagens que você tiver. Nesse caso, queremos aplicar o _Medium_ predefinição de imagem para uma imagem de uma tigela de chocolate líquido.
+Quando terminar, salve a predefinição e ela agora estará disponível para todas as imagens que você tiver. Nesse caso, é necessário aplicar o _Medium_ predefinição de imagem para uma imagem de uma tigela de chocolate líquido.
 
 ![Aplicação da predefinição de imagem *Medium* para gerar uma representação de uma imagem](/help/assets/dynamic-media/assets/dm-medium-image-preset.png)
 _Aplicação da predefinição de imagem Média para gerar uma representação de uma imagem._
@@ -222,7 +222,7 @@ _Tópicos da Ajuda do Dynamic Media_
 
 _Tutoriais do Dynamic Media_
 
-* [Usar o Dynamic Media com o Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=pt-BR)
+* [Usar o Dynamic Media com o Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
 * [Biblioteca de conteúdo do Adobe Experience Manager](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) (pesquisar em _Dynamic Media_)
 
 _Visualizadores do Dynamic Media_

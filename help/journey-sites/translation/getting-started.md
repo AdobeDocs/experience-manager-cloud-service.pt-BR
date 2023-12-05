@@ -5,9 +5,9 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1390'
+source-wordcount: '1391'
 ht-degree: 89%
 
 ---
@@ -101,7 +101,7 @@ Para editar uma página:
 
    ![Selecionar uma página para editar](assets/sites-editor-select-page.png)
 
-1. Toque na opção **Editar** na barra de ferramentas.
+1. Selecione o **Editar** opção na barra de ferramentas.
 1. O editor de sites é aberto com a página selecionada carregada para edição em uma nova guia do navegador.
 1. Passar o mouse sobre o conteúdo ou tocar nele revela seletores de componentes individuais. Os componentes são os blocos de arrastar e soltar que formam a página.
 

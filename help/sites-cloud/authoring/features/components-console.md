@@ -2,10 +2,10 @@
 title: Console de componentes
 description: O console Componentes permite navegar por todos os componentes definidos para a instância
 exl-id: f4949331-5302-46d3-a004-b813bb95ec2f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '271'
-ht-degree: 69%
+ht-degree: 66%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 69%
 
 O console Componentes permite navegar em todos os componentes definidos para a instância e exibir as principais informações de cada componente.
 
-Ele pode ser acessado em **Ferramentas ->** **Geral ->** **Componentes**. Como não há uma estrutura de árvore para componentes, somente a visualização de lista está disponível.
+Ele pode ser acessado de **Ferramentas >** **Geral >** **Componentes**. Como não há uma estrutura de árvore para componentes, somente a visualização de lista está disponível.
 
 ![O console Componentes](/help/sites-cloud/authoring/assets/components-console.png)
 

@@ -2,10 +2,10 @@
 title: Como criar um Portal do Forms em uma página do Experience Manager Sites?
 description: Saiba como criar um Portal do Forms e usar componentes principais prontos para uso em uma página do AEM Sites.
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1840'
-ht-degree: 2%
+source-wordcount: '1785'
+ht-degree: 1%
 
 ---
 
@@ -89,7 +89,7 @@ Para importar componentes prontos para uso do Forms Portal no AEM Forms as a Clo
 Antes de executar essas etapas, verifique se você tem uma conta de armazenamento do Azure e uma chave de acesso para autorizar o acesso ao [!DNL Azure] conta de armazenamento.
 
 1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Armazenamento do Azure]**.
-1. Selecione uma pasta para criar a configuração e toque em **[!UICONTROL Criar]**.
+1. Selecione uma pasta para criar a configuração e selecione **[!UICONTROL Criar]**.
 1. Especifique um título para a configuração no campo **[!UICONTROL Título]** campo.
 1. Especifique o nome do [!DNL Azure] conta de armazenamento na **[!UICONTROL Conta de armazenamento do Azure]** campo.
 
@@ -100,7 +100,7 @@ Execute as seguintes etapas para configurar o Conector de armazenamento unificad
 1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Forms]** > **[!UICONTROL Conector de armazenamento unificado]**.
 1. No **[!UICONTROL Portal Forms]** , selecione **[!UICONTROL Azure]** do **[!UICONTROL Armazenamento]** lista suspensa.
 1. Especifique a [caminho de configuração para a configuração de armazenamento do Azure](#create-azure-storage-configuration) no **[!UICONTROL Caminho de configuração de armazenamento]** campo.
-1. Toque **[!UICONTROL Publish]** e toque em **[!UICONTROL Salvar]** para salvar a configuração.
+1. Selecionar **[!UICONTROL Publish]** e selecione **[!UICONTROL Salvar]** para salvar a configuração.
 
 ## Habilitar Componentes do Portal Forms {#enable-forms-portal-components}
 
@@ -112,11 +112,11 @@ Depois que um componente de portal é ativado, você pode usá-lo na instância 
 
 Você pode criar e personalizar o Forms Portal em sites criados usando AEM adicionando e configurando os componentes do portal. Certifique-se de que o [os componentes estão ativados](#enable-forms-portal-components) antes de usá-los no Forms Portal.
 
-Para adicionar um componente, arraste e solte o componente do painel Componentes no contêiner de layout na página ou toque no ícone adicionar no contêiner de layout e adicione o componente da [!UICONTROL Inserir novo componente] diálogo.
+Para adicionar um componente, arraste e solte o componente do painel Componentes no contêiner de layout da página ou selecione o ícone adicionar no contêiner de layout e adicione o componente da [!UICONTROL Inserir novo componente] diálogo.
 
 ### Configurar o componente de rascunhos e envios {#configure-drafts-submissions-component}
 
-O componente Rascunhos e envios exibe formulários que são salvos como rascunho para preencher formulários posteriormente e enviados. Para configurar, toque no componente e, em seguida, toque no ![Ícone Configurar](assets/configure_icon.png). No [!UICONTROL Rascunhos e envios] especifique o título para indicar a lista de formulários como rascunho ou formulários enviados. Selecione também se o componente deve listar formulários de rascunho ou formulários enviados no formato de cartão ou lista.
+O componente Rascunhos e envios exibe formulários que são salvos como rascunho para preencher formulários posteriormente e enviados. Para configurar, selecione o componente e selecione a variável ![Ícone Configurar](assets/configure_icon.png). No [!UICONTROL Rascunhos e envios] especifique o título para indicar a lista de formulários como rascunho ou formulários enviados. Selecione também se o componente deve listar formulários de rascunho ou formulários enviados no formato de cartão ou lista.
 
 ![Ícone Rascunhos](assets/drafts-component.png)
 
@@ -128,7 +128,7 @@ O componente de Pesquisa e listagem é usado para listar formulários adaptávei
 
 ![Ícone Pesquisar e Lister](assets/search-and-lister-component.png)
 
-Para configurar, toque no componente e, em seguida, toque no ![Ícone Configurar](assets/configure_icon.png). A variável [!UICONTROL Pesquisa e Lister] será aberta.
+Para configurar, selecione o componente e selecione a variável ![Ícone Configurar](assets/configure_icon.png). A variável [!UICONTROL Pesquisa e Lister] será aberta.
 
 1. No [!UICONTROL Exibir] , configure o seguinte:
    * Entrada **[!UICONTROL Título]**, especifique o título para o componente de Pesquisa e Lister. Um título indicativo permite que os usuários executem uma pesquisa rápida na lista de formulários.
@@ -140,7 +140,7 @@ Para configurar, toque no componente e, em seguida, toque no ![Ícone Configurar
 
 ### Configurar o componente de link {#configure-link-component}
 
-O componente Link permite fornecer links para um formulário adaptável na página. Para configurar, toque no componente e, em seguida, toque no ![Ícone Configurar](assets/configure_icon.png). A variável [!UICONTROL Editar componente do link] será aberta.
+O componente Link permite fornecer links para um formulário adaptável na página. Para configurar, selecione o componente e selecione a variável ![Ícone Configurar](assets/configure_icon.png). A variável [!UICONTROL Editar componente do link] será aberta.
 
 1. No [!UICONTROL Exibir] , forneça a legenda do link e a dica de ferramenta para facilitar a identificação dos formulários representados pelo link.
 1. No [!UICONTROL Informações do ativo] especifique o caminho do repositório onde o ativo está armazenado.
@@ -151,13 +151,14 @@ O componente Link permite fornecer links para um formulário adaptável na pági
 Você pode configurar o para enviar um formulário adaptável somente quando todos os recipients tiverem concluído a cerimônia de assinatura. Siga as etapas abaixo para definir a configuração usando o Adobe Sign.
 
 1. Na instância do autor, abra um Formulário adaptável no modo de edição.
-1. No painel esquerdo, toque no ícone Propriedades e expanda a guia **[!UICONTROL ASSINATURA ELETRÔNICA]** opção.
+1. No painel esquerdo, selecione o ícone Propriedades e expanda a janela **[!UICONTROL ASSINATURA ELETRÔNICA]** opção.
 1. Selecionar **[!UICONTROL Ativar o Adobe Sign]**. Várias opções de configuração são exibidas.
 1. No [!UICONTROL Enviar o formulário] , selecione a **[!UICONTROL depois que cada recipient concluir a cerimônia de assinatura]** opção para configurar a ação Enviar formulário, onde o formulário é enviado pela primeira vez a todos os recipients para assinatura. Depois que todos os recipients tiverem assinado o formulário, somente então o formulário será enviado.
 
 ## Salvar Forms Adaptável Como Rascunhos {#save-adaptive-forms-as-drafts}
 
 Você pode salvar formulários como rascunhos para preenchê-los posteriormente. Há duas maneiras pelas quais um formulário é salvo como rascunho:
+
 * Crie uma regra &quot;Salvar formulário&quot; em um componente de formulário, por exemplo, um botão. Ao clicar no botão, os acionadores da regra e o formulário são salvos como rascunho.
 * Habilite o recurso de Salvamento automático, que salva o formulário de acordo com o evento especificado ou após um intervalo configurado de tempo.
 
@@ -166,19 +167,19 @@ Você pode salvar formulários como rascunhos para preenchê-los posteriormente.
 Para criar uma regra &quot;Salvar formulário&quot; em um componente de formulário, por exemplo, um botão, siga as etapas abaixo:
 
 1. Na instância do autor, abra um Formulário adaptável no modo de edição.
-1. No painel esquerdo, toque em ![Ícone Componentes](assets/components_icon.png) e arraste o [!UICONTROL Botão] componente ao formulário.
-1. Toque no [!UICONTROL Botão] e toque no botão ![Ícone Configurar](assets/configure_icon.png).
-1. Toque no [!UICONTROL Editar regras] ícone para abrir o Editor de regras.
-1. Toque **[!UICONTROL Criar]** para configurar e criar a regra.
+1. No painel esquerdo, selecione ![Ícone Componentes](assets/components_icon.png) e arraste o [!UICONTROL Botão] componente ao formulário.
+1. Selecione o [!UICONTROL Botão] e selecione o ![Ícone Configurar](assets/configure_icon.png).
+1. Selecione o [!UICONTROL Editar regras] ícone para abrir o Editor de regras.
+1. Selecionar **[!UICONTROL Criar]** para configurar e criar a regra.
 1. No [!UICONTROL Quando] selecione &quot;está clicado&quot; e na caixa [!UICONTROL Depois] selecione as opções &quot;Salvar formulário&quot;.
-1. Toque **[!UICONTROL Concluído]** para salvar a regra.
+1. Selecionar **[!UICONTROL Concluído]** para salvar a regra.
 
 ### Ativar salvamento automático {#enable-auto-save}
 
 Você pode configurar o recurso de salvamento automático para um formulário adaptável da seguinte maneira:
 
 1. Na instância do autor, abra um Formulário adaptável no modo de edição.
-1. No painel esquerdo, toque no ![Ícone Propriedades](assets/configure_icon.png) e expanda a variável [!UICONTROL SALVAMENTO AUTOMÁTICO] opção.
+1. No painel esquerdo, selecione a ![Ícone Propriedades](assets/configure_icon.png) e expanda a variável [!UICONTROL SALVAMENTO AUTOMÁTICO] opção.
 1. Selecione o **[!UICONTROL Ativar]** para ativar o salvamento automático do formulário. Você pode configurar o seguinte:
 * Por padrão, a variável [!UICONTROL Evento de formulário adaptável] está definido como &quot;true&quot;, o que implica que o formulário é salvo automaticamente após cada evento.
 * Entrada [!UICONTROL Acionador], configure o para acionar o salvamento automático com base na ocorrência de um evento ou após um intervalo de tempo específico.

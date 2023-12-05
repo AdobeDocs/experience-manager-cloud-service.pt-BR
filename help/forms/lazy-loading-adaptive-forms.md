@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 0cd38edb-2201-4ca6-8b84-6b5b7f76bd90
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1074'
-ht-degree: 3%
+source-wordcount: '1063'
+ht-degree: 2%
 
 ---
 
@@ -52,8 +52,8 @@ O Forms inclui alguns campos e seções que não se aplicam a todos os usuários
 Execute as seguintes etapas para habilitar o carregamento lento em um Fragmento de formulário adaptável:
 
 1. Abra o Formulário adaptável no modo de criação que contém o fragmento que você deseja ativar para carregamento lento.
-1. Selecione o fragmento de formulário adaptável e toque em ![configurar](assets/configure-icon.svg).
-1. Na barra lateral, ative **[!UICONTROL Carregar fragmento preguiçosamente]** e toque em **Concluído**.
+1. Selecione o fragmento de formulário adaptável e selecione ![configurar](assets/configure-icon.svg).
+1. Na barra lateral, ative **[!UICONTROL Carregar fragmento preguiçosamente]** e selecione **Concluído**.
 
    ![Ativar carregamento lento para o fragmento de formulário adaptável](assets/lazy-loading-fragment.png)
 
@@ -62,7 +62,7 @@ Execute as seguintes etapas para habilitar o carregamento lento em um Fragmento 
 Você pode marcar os valores de objetos no fragmento carregado lentamente como globais para que eles fiquem disponíveis para uso em scripts quando o fragmento que o contém não for carregado. Faça o seguinte:
 
 1. Abra o fragmento de formulário adaptável no modo de criação.
-1. Toque no campo cujo valor deseja marcar como global e toque em ![configurar](assets/configure-icon.svg).
+1. Selecione o campo cujo valor você deseja marcar como global e selecione ![configurar](assets/configure-icon.svg).
 1. Na barra lateral, ative **[!UICONTROL Usar valor durante carregamento lento]**.
 
    ![Campo de carregamento lento na barra lateral](assets/enable-lazy-loading.png)
