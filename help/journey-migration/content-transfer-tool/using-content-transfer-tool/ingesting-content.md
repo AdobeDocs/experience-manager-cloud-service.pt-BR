@@ -2,10 +2,10 @@
 title: Assimilar conteúdo no Cloud Service
 description: Saiba como usar o Cloud Acceleration Manager para assimilar conteúdo do seu conjunto de migração em uma instância do Cloud Service de destino.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 250682b96e2eaa2ed872e6f626c0a13dc19720f2
 workflow-type: tm+mt
-source-wordcount: '2275'
-ht-degree: 5%
+source-wordcount: '2313'
+ht-degree: 4%
 
 ---
 
@@ -78,7 +78,7 @@ Siga as etapas abaixo para assimilar seu conjunto de migração usando o Cloud A
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_topup"
 >title="Ingestão complementar"
->abstract="Use o recurso completar para mover o conteúdo modificado desde a atividade de transferência de conteúdo anterior. Após a conclusão da ingestão, verifique os logs em busca de erros/avisos. Todos os erros devem ser resolvidos imediatamente, seja resolvendo os problemas relatados ou entrando em contato com o Atendimento ao cliente da Adobe."
+>abstract="Use o recurso complementar para mover o conteúdo modificado desde a atividade de transferência de conteúdo anterior. Após a conclusão da ingestão, verifique os logs em busca de erros/avisos. Todos os erros devem ser resolvidos imediatamente, seja resolvendo os problemas relatados ou entrando em contato com o Atendimento ao cliente da Adobe."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html" text="Exibir logs"
 
 A ferramenta Transferência de conteúdo tem um recurso que permite a extração de conteúdo diferencial executando uma *complementar* do conjunto de migração. Isso permite que o conjunto de migração seja modificado para incluir somente o conteúdo que foi alterado desde a extração anterior, sem precisar extrair todo o conteúdo novamente.
@@ -93,6 +93,12 @@ Comece criando uma tarefa de assimilação e verifique se **Limpar** está desat
 ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam24.png)
 
 ## Resolução de problemas {#troubleshooting}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_ingestion_troubleshooting"
+>title="Solução de problemas de assimilação de conteúdo"
+>abstract="Consulte os logs de assimilação e a documentação para encontrar soluções para motivos comuns pelos quais uma assimilação pode falhar, encontrar uma maneira de corrigir o problema e executar a assimilação novamente."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html" text="Validar transferências de conteúdo"
 
 ### O CAM não consegue recuperar o token de migração {#cam-unable-to-retrieve-the-migration-token}
 
