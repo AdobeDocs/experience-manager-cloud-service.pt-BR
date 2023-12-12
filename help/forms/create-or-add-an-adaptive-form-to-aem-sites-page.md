@@ -1,13 +1,13 @@
 ---
 title: Como adicionar um formulário adaptável à página do AEM Sites?
 description: Descubra como criar ou adicionar um Formulário adaptável à sua página do AEM Sites. Conheça também os benefícios e várias maneiras de integrar formulários ao seu site.
-feature: Adaptive Forms, Page Editor, Authoring
+feature: Adaptive Forms, Foundation Components, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '3177'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -206,10 +206,10 @@ Uma ação enviar permite escolher o destino dos dados capturados por meio de um
 
 ## Configurar um esquema ou modelo de dados de formulário para um formulário na página do AEM Sites ou Fragmento de experiência {#configure-schema-or-data-model-for-form}
 
-Você pode usar o Modelo de dados de formulário para conectar um formulário a uma Fonte de dados para enviar e receber dados com base nas ações do usuário. Você também pode conectar um formulário a um esquema JSON para receber os dados enviados em um formato predefinido. Com base no requisito, conecte seu formulário a um esquema JSON ou modelo de dados de formulário:
+Você pode usar o modelo de dados do formulário e conectar um formulário a uma fonte de dados para enviar e receber dados com base nas ações do usuário. Também é possível conectar um formulário a um esquema JSON para receber os dados enviados em um formato predefinido. De acordo com os requisitos, conecte o formulário a um esquema JSON ou modelo de dados do formulário:
 
 * [Crie um esquema JSON e faça upload para o seu ambiente](/help/forms/adaptive-form-json-schema-form-model.md)  ou,
-* [Criar um modelo de dados de formulário](/help/forms/create-form-data-models.md)
+* [Criar um modelo de dados do formulário](/help/forms/create-form-data-models.md)
 
 Para configurar um Esquema JSON ou um Modelo de dados de formulário para seu formulário:
 

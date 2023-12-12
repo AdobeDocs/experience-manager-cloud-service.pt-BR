@@ -1,16 +1,16 @@
 ---
 title: Como criar um formulário adaptável?
 description: Saiba como criar formulários adaptáveis compatíveis com dispositivos móveis com nosso tutorial passo a passo. Esses formulários se adaptam perfeitamente em todos os dispositivos, garantindo uma experiência perfeita.
-keywords: Formulários adaptáveis, Formulários móveis, Formulários responsivos, Formulários HTML5
+keywords: Forms adaptável, Forms responsivo, HTML5 Forms
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: 6f1c3fe7-b61e-47ce-b565-15b4904db092
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
-source-wordcount: '2675'
+source-wordcount: '2673'
 ht-degree: 90%
 
 ---

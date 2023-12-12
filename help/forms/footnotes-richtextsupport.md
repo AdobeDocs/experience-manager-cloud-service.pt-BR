@@ -1,8 +1,9 @@
 ---
 title: Como adicionar uma nota de rodapé a um formulário adaptável?
 description: Use o editor de rich text (RTE) para notas de rodapé em um formulário adaptável.
+feature: Adaptive Forms, Foundation Components
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 0%
