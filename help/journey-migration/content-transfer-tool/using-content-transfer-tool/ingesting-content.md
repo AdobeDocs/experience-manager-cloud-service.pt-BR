@@ -2,9 +2,9 @@
 title: Assimilar conteúdo no Cloud Service
 description: Saiba como usar o Cloud Acceleration Manager para assimilar conteúdo do seu conjunto de migração em uma instância do Cloud Service de destino.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: a66724cf76e4562710e458aeeea0d54ea9efb9aa
+source-git-commit: b674b3d8cd89675ed30c1611edec2281f0f1cb05
 workflow-type: tm+mt
-source-wordcount: '2315'
+source-wordcount: '2392'
 ht-degree: 4%
 
 ---
@@ -35,7 +35,7 @@ Siga as etapas abaixo para assimilar seu conjunto de migração usando o Cloud A
       * Os conjuntos de migração expirarão após um período prolongado de inatividade, de modo que é esperado que a assimilação ocorra relativamente logo após a extração ter sido realizada. Revisão [Expiração do conjunto de migração](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) para obter detalhes.
 
    >[!TIP]
-   > Se a extração estiver em execução no momento, a caixa de diálogo indicará. Depois que a extração for concluída com sucesso, a assimilação será iniciada automaticamente. Se a extração falhar ou for interrompida, o trabalho de assimilação será rescindido.
+   > Se a extração estiver em execução, a caixa de diálogo a indicará. Depois que a extração for concluída com sucesso, a assimilação será iniciada automaticamente. Se a extração falhar ou for interrompida, o trabalho de assimilação será rescindido.
 
    * **Destino:** Selecione o ambiente de destino. É nesse ambiente que o conteúdo do conjunto de migração é assimilado.
       * As assimilações não são compatíveis com um destino de RDE (Rapid Development Environment, ambiente de desenvolvimento rápido) e não aparecem como uma possível escolha de destino, mesmo que o usuário tenha acesso a ele.
@@ -49,7 +49,7 @@ Siga as etapas abaixo para assimilar seu conjunto de migração usando o Cloud A
 
    * **Apagar:** Escolha o `Wipe` value
       * A variável **Limpar** define o ponto inicial do destino da assimilação. Se **Limpar** estiver ativado, o destino, incluindo todo o conteúdo, será redefinido para a versão do AEM especificada no Cloud Manager. Se não estiver ativado, o destino mantém o conteúdo atual como ponto de partida.
-      * Essa opção não **NOT** afetam como a assimilação do conteúdo será realizada. A assimilação sempre usa uma estratégia de substituição de conteúdo e _não_ uma estratégia de mesclagem de conteúdo para que, em ambos **Limpar** e **Não-apagamento** nos casos, a assimilação de um conjunto de migração substituirá o conteúdo no mesmo caminho no destino. Por exemplo, se o conjunto de migração contiver `/content/page1` e o destino já contém `/content/page1/product1`, a assimilação removerá toda a `page1` caminho e suas subpáginas, incluindo `product1`e substitua-o pelo conteúdo no conjunto de migração. Isso significa que é necessário fazer um planejamento cuidadoso ao executar um **Não-apagamento** assimilação para um destino que contém qualquer conteúdo que deve ser mantido.
+      * Essa opção não **NOT** afetam como a assimilação do conteúdo será realizada. A assimilação sempre usa uma estratégia de substituição de conteúdo e _não_ uma estratégia de mesclagem de conteúdo para que, em ambos **Limpar** e **Não-apagamento** nos casos, a assimilação de um conjunto de migração substituirá o conteúdo no mesmo caminho no destino. Por exemplo, se o conjunto de migração contiver `/content/page1` e o destino já contém `/content/page1/product1`, a assimilação remove todo o `page1` caminho e suas subpáginas, incluindo `product1`e substitua-o pelo conteúdo no conjunto de migração. Isso significa que é necessário fazer um planejamento cuidadoso ao executar um **Não-apagamento** assimilação para um destino que contém qualquer conteúdo que deve ser mantido.
 
    >[!IMPORTANT]
    > Se a configuração **Limpar** estiver ativado para a assimilação, ele redefinirá todo o repositório existente, incluindo as permissões do usuário na instância do Cloud Service de destino. Essa redefinição também é verdadeira para um usuário administrador adicionado à variável **administradores** e esse usuário deverá ser adicionado ao grupo de administradores novamente para iniciar uma assimilação.
@@ -78,7 +78,7 @@ Siga as etapas abaixo para assimilar seu conjunto de migração usando o Cloud A
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_topup"
 >title="Ingestão complementar"
->abstract="Use o recurso complementar para mover o conteúdo modificado desde a atividade de transferência de conteúdo anterior. Após a conclusão da ingestão, verifique os logs em busca de erros/avisos. Todos os erros devem ser resolvidos imediatamente, seja resolvendo os problemas relatados ou entrando em contato com o Atendimento ao cliente da Adobe."
+>abstract="Use o recurso complementar para mover o conteúdo modificado desde a atividade de transferência de conteúdo anterior. Após a conclusão da assimilação, verifique se há erros ou avisos nos registros. Todos os erros devem ser resolvidos imediatamente, seja resolvendo os problemas relatados ou entrando em contato com o Atendimento ao cliente da Adobe."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html" text="Exibir logs"
 
 A ferramenta Transferência de conteúdo tem um recurso que permite a extração de conteúdo diferencial executando uma *complementar* do conjunto de migração. Isso permite que o conjunto de migração seja modificado para incluir somente o conteúdo que foi alterado desde a extração anterior, sem precisar extrair todo o conteúdo novamente.
@@ -97,7 +97,7 @@ Comece criando uma tarefa de assimilação e verifique se **Limpar** está desat
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_troubleshooting"
 >title="Solução de problemas de assimilação de conteúdo"
->abstract="Consulte os logs de assimilação e a documentação para encontrar soluções para motivos comuns pelos quais uma assimilação pode falhar, encontrar uma maneira de corrigir o problema e executar a assimilação novamente."
+>abstract="Consulte os logs de assimilação e a documentação para encontrar soluções para motivos comuns pelos quais uma assimilação pode falhar e encontrar a maneira de corrigir o problema. Depois de corrigida, a assimilação pode ser executada novamente."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html" text="Validar transferências de conteúdo"
 
 ### O CAM não consegue recuperar o token de migração {#cam-unable-to-retrieve-the-migration-token}
@@ -132,14 +132,14 @@ Esta mensagem indica que o Cloud Acceleration Manager não conseguiu acessar o s
 
 * O AEM as a Cloud Service mantém o estado do ambiente e, ocasionalmente, deve reiniciar o serviço de migração por vários motivos normais. Se esse serviço estiver sendo reiniciado, ele não poderá ser acessado, mas estará disponível no futuro.
 * É possível que outro processo esteja sendo executado na instância. Por exemplo, se [Atualizações de versão do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html) estiver aplicando uma atualização, o sistema poderá estar ocupado e o serviço de migração poderá ficar indisponível regularmente. Quando esse processo estiver concluído, o início da assimilação poderá ser tentado novamente.
-* Se um [A Inclui na lista de permissões IP foi aplicada](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) Por meio do Cloud Manager, ele impede que o Cloud Acceleration Manager chegue ao serviço de migração. Um endereço IP não pode ser adicionado para assimilações porque seu endereço é dinâmico. Atualmente, a única solução é desativar a lista de permissões de IP durante o processo de assimilação e indexação.
+* Se um [A Inclui na lista de permissões IP foi aplicada](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) Por meio do Cloud Manager, ele impede que o Cloud Acceleration Manager chegue ao serviço de migração. Um endereço IP não pode ser adicionado para assimilações porque seu endereço é dinâmico. Atualmente, a única solução é desativar a inclui na lista de permissões de IP durante o processo de assimilação e indexação.
 * Pode haver outros motivos que precisem de investigação. Se a assimilação ou indexação continuar a falhar, entre em contato com o Atendimento ao cliente da Adobe.
 
-### Atualizações e assimilações de versão do AEM
+### Atualizações e assimilações de versão do AEM {#aem-version-updates-and-ingestions}
 
 [Atualizações de versão do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html) são automaticamente aplicados a ambientes para mantê-los atualizados com a versão mais recente do AEM as a Cloud Service. Se a atualização for acionada quando uma assimilação for executada, poderá causar resultados imprevisíveis, incluindo a corrupção do ambiente.
 
-Se as &quot;Atualizações de versão do AEM&quot; estiverem integradas no programa de destino, o processo de assimilação tentará desativar sua fila antes de ser iniciado. Quando a assimilação for concluída, o estado do atualizador da versão retornará para como estava antes de as assimilações serem iniciadas.
+Se as &quot;Atualizações de versão do AEM&quot; estiverem integradas no programa de destino, o processo de assimilação tentará desativar sua fila antes de ser iniciado. Quando a assimilação é concluída, o estado do atualizador de versão retorna ao estado em que estava antes de as assimilações começarem.
 
 >[!NOTE]
 >
@@ -149,11 +149,11 @@ Se &quot;Atualizações de versão do AEM&quot; estiver ativo (ou seja, as atual
 
 >[!NOTE]
 >
-> &quot;Atualizações de versão do AEM&quot; é executado no pipeline do ambiente e aguardará até que o pipeline esteja limpo. Se as atualizações forem enfileiradas por mais tempo do que o esperado, verifique se um fluxo de trabalho personalizado não tem o pipeline bloqueado involuntariamente.
+> &quot;Atualizações de versão do AEM&quot; é executado no pipeline do ambiente e aguarda até que o pipeline esteja limpo. Se as atualizações forem enfileiradas por mais tempo do que o esperado, verifique se um fluxo de trabalho personalizado não tem o pipeline bloqueado involuntariamente.
 
 ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_active.png)
 
-### Falha na assimilação complementar devido à violação de restrição de exclusividade
+### Falha na assimilação complementar devido à violação de restrição de exclusividade {#top-up-ingestion-failure-due-to-uniqueness-constraint-violation}
 
 Uma causa comum de [Assimilação complementar](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) a falha é um conflito nas ids do nó. Para identificar esse erro, baixe o log de assimilação usando a interface do Cloud Acceleration Manager e procure uma entrada como a seguinte:
 
@@ -165,7 +165,7 @@ Também pode acontecer se um nó no destino for movido entre uma assimilação e
 
 Este conflito deve ser resolvido manualmente. Alguém familiarizado com o conteúdo deve decidir qual dos dois nós deve ser excluído, tendo em mente outro conteúdo que faça referência a ele. A solução pode exigir que a extração complementar seja feita novamente sem o nó ofensivo.
 
-### Falha na assimilação complementar devido à não exclusão do nó referenciado
+### Falha na assimilação complementar devido à não exclusão do nó referenciado {#top-up-ingestion-failure-due-to-unable-to-delete-referenced-node}
 
 Outra causa comum de uma [Assimilação complementar](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) falha é um conflito de versão para um determinado nó na instância de destino. Para identificar esse erro, baixe o log de assimilação usando a interface do Cloud Acceleration Manager e procure uma entrada como a seguinte:
 
@@ -175,11 +175,17 @@ Isso pode acontecer se um nó no destino for modificado entre uma assimilação 
 
 A solução pode exigir que a extração complementar seja feita novamente sem o nó ofensivo. Ou criar um pequeno conjunto de migração do nó incorreto, mas com a opção &quot;incluir versões&quot; desativada.
 
-As práticas recomendadas indicam que, se uma **Não-apagamento** a assimilação deve ser executada usando um conjunto de migração que inclua versões (ou seja, extraído com &quot;incluir versões&quot;=true). é fundamental que o conteúdo no destino seja modificado o mínimo possível, até que a jornada de migração seja concluída. Caso contrário, esses conflitos poderão ocorrer.
+As práticas recomendadas indicam que, se uma **Não-apagamento** a assimilação deve ser executada usando um conjunto de migração que inclua versões. é crucial que o conteúdo no destino seja modificado o mínimo possível até que a jornada de migração seja concluída. Caso contrário, esses conflitos poderão ocorrer.
 
-### Assimilação cancelada
+### Falha de assimilação devido a valores de propriedade de nós grandes {#ingestion-failure-due-to-large-node-property-values}
 
-Uma assimilação criada com uma extração em execução como seu conjunto de migração de origem aguardará pacientemente até que a extração seja bem-sucedida e, nesse momento, iniciará normalmente. Se a extração falhar ou for interrompida, a assimilação e seu trabalho de indexação não serão iniciados, mas serão rescindidos. Nesse caso, verifique a extração para determinar por que ela falhou, corrija o problema e comece a extrair novamente. Uma vez que a extração fixa estiver em execução, uma nova assimilação pode ser programada.
+Os valores de propriedade do nó armazenados no MongoDB não podem exceder 16 MB. Se um valor de nó exceder o tamanho permitido, a assimilação falhará e o log conterá um `BSONObjectTooLarge` e especificar qual nó excedeu o máximo. Observe que essa é uma restrição MongoDB.
+
+Consulte a `Node property value in MongoDB` observação em [Pré-requisitos para a ferramenta Transferência de conteúdo](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) para obter mais informações e um link para uma ferramenta Oak que pode ajudar a encontrar todos os nós grandes. Depois que todos os nós com tamanhos grandes forem corrigidos, execute a extração e a assimilação novamente.
+
+### Assimilação cancelada {#ingestion-rescinded}
+
+Uma assimilação criada com uma extração em execução, à medida que seu conjunto de migração de origem aguarda pacientemente até que a extração seja bem-sucedida, e nesse ponto começa normalmente. Se a extração falhar ou for interrompida, a assimilação e seu trabalho de indexação não serão iniciados, mas serão rescindidos. Nesse caso, verifique a extração para determinar por que ela falhou, corrija o problema e comece a extrair novamente. Uma vez que a extração fixa estiver em execução, uma nova assimilação pode ser programada.
 
 ## O que vem a seguir {#whats-next}
 
