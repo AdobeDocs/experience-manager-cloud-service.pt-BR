@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 821c243ab2d8ce1468c80c36d01b5c4c8f2bec76
 workflow-type: tm+mt
-source-wordcount: '2001'
+source-wordcount: '2033'
 ht-degree: 1%
 
 ---
@@ -231,9 +231,12 @@ O representante gera e compartilha credenciais com você. Na próxima seção, u
 
 Agora, você pode [usar a opção adicionar campos do Adobe Acrobat Sign em um Formulário adaptável](working-with-adobe-sign.md) ou [Fluxo de trabalho do AEM](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step). Adicione o contêiner de configuração usado para a configuração do Cloud Service a todo o Forms adaptável que está sendo habilitado para [!DNL Adobe Acrobat Sign]. Você pode especificar um contêiner de configuração nas propriedades de um Formulário adaptável.
 
-## (Somente para fluxos de trabalho do AEM) Configurar [!DNL Adobe Acrobat Sign] scheduler para sincronizar o status de assinatura {#configure-adobe-sign-scheduler-to-sync-the-signing-status}
+## Configurar [!DNL Adobe Acrobat Sign] scheduler para sincronizar o status de assinatura {#configure-adobe-sign-scheduler-to-sync-the-signing-status}
 
-Quando você usa [!DNL Adobe Acrobat Sign] Etapa do fluxo de trabalho para Assinar um Formulário adaptável, o formulário pode ser passado entre os signatários um após o outro ou pode ser enviado para todos os signatários simultaneamente, dependendo da configuração da etapa do fluxo de trabalho. [!DNL Adobe Acrobat Sign] Os Forms adaptáveis ativados são enviados ao Experience Manager Forms Server somente depois que todos os signatários concluírem o processo de assinatura.
+O AEM Forms as a Cloud Service fornece um serviço de scheduler que verifica o status dos signatários em intervalos definidos. Os cenários nos quais você configura o serviço scheduler:
+
+* Se você usar [Enviar o formulário (depois que cada recipient concluir a cerimônia de assinatura)](/help/forms/working-with-adobe-sign.md#select-adobe-sign-cloud-service-and-signing-order) para assinar um documento, o formulário é enviado somente após todos os signatários terem assinado o formulário.
+* Se você usar o [Etapa de assinatura em um fluxo de trabalho do AEM](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step) para assinar um documento, a etapa assinar aguarda todos os signatários assinarem o documento antes de prosseguir para a próxima etapa do fluxo de trabalho.
 
 Por padrão, a variável [!DNL Adobe Acrobat Sign] Os serviços do scheduler verificam (pesquisa) a resposta do assinante a cada 24 horas. Você pode alterar o intervalo padrão do seu ambiente.
 

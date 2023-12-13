@@ -6,9 +6,9 @@ feature: Adaptive Forms, Foundation Components
 role: User
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: e81da7414335e00411942adeb41978d39f172b52
 workflow-type: tm+mt
-source-wordcount: '3131'
+source-wordcount: '3242'
 ht-degree: 0%
 
 ---
@@ -160,7 +160,7 @@ Um documento também pode ter vários recipients. Por exemplo, uma solicitação
 
 Para selecionar um Cloud Service e a ordem da assinatura:
 
-![Cloud-service](assets/cloud-service.png)
+![Cloud-service](/help/forms/assets/adobe-sign-cloud-service.png)
 
 1. No Navegador de conteúdo, selecione **[!UICONTROL Contêiner de formulário]** e selecione a variável **[!UICONTROL Configurar]** ![configurar](assets/Smock_Wrench_18_N.svg) ícone. Ela abre as propriedades do navegador e exibe as propriedades do contêiner do Formulário adaptável.
 1. No navegador de propriedades, expanda a variável **[!UICONTROL Assinatura eletrônica]** e selecione a opção **[!UICONTROL Ativar o Adobe Sign]** opção. Ele permite [!DNL Adobe Sign] para um Formulário adaptável.
@@ -170,6 +170,10 @@ Para selecionar um Cloud Service e a ordem da assinatura:
 
    A lista suspensa lista os Cloud Service que existem na variável `global` pasta em Ferramentas > **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Sign]**. Além disso, a lista suspensa também lista os Cloud Service que existem na pasta selecionada no **[!UICONTROL Contêiner de configuração]** ao criar um Formulário adaptável.
 
+1. Selecione a opção para configurar a ação de envio usando **[!UICONTROL Enviar o formulário]**. Você pode selecionar uma das duas opções a seguir:
+   * **Enviar o formulário (e enviar o contrato para assinatura)**: essa opção envia o formulário imediatamente e, em seguida, envia o formulário para assinatura aos recipients.
+   * **Enviar o formulário (depois que cada recipient concluir a cerimônia de assinatura)**: essa opção envia o Adaptive Forms somente após todos os signatários concluírem o processo de assinatura. Você pode configurar o intervalo para verificar o status de assinatura de todos os signatários. Para obter detalhes, consulte  [Configurar [!DNL Adobe Acrobat Sign] scheduler](/help/forms/adobe-sign-integration-adaptive-forms.md#configure-dnl-adobe-acrobat-sign-scheduler-to-sync-the-signing-status).
+
 1. Selecione a ordem de assinatura na **[!UICONTROL Os recipients podem preencher]** caixa de diálogo. Os recipients podem assinar um Formulário adaptável **[!UICONTROL Sequencialmente]** - um após o outro destinatário, ou **[!UICONTROL Simultaneamente]** - em qualquer ordem.
 
    Em ordem sequencial, um recipient recebe o contrato do Adobe Sign de cada vez. Depois que o recipient concluir a ação atribuída, o contrato será enviado para o próximo recipient e assim por diante.
@@ -177,6 +181,10 @@ Para selecionar um Cloud Service e a ordem da assinatura:
    Em ordem simultânea, todos os recipients recebem o contrato do Adobe Sign e podem agir em paralelo entre si.
 
 1. Use o Campo ID do contrato para associar um vínculo à ID do contrato (agreementId). Ele adiciona a ID do contrato à seção afBoundData de envio de dados para formulários baseados em esquema. A ID do contrato também é adicionada à seção afSubmissionInfo nos dados enviados para todos os formulários habilitados para Adobe Sign. Você pode usar a ID do contrato para rastrear o status do contrato usando o código personalizado (requer implementação personalizada).
+
+   >[!NOTE]
+   >
+   > Se um formulário adaptável for criado usando um modelo de dados de formulário, o campo de ID do contrato ficará visível na caixa de diálogo.
 
 1. [Adicionar recipients a um formulário adaptável](working-with-adobe-sign.md#addsignerstoanadaptiveform) e selecione Concluído ![Salvar](assets/save_icon.svg) ícone para salvar as alterações.
 
