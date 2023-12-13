@@ -2,10 +2,10 @@
 title: Introdução à ferramenta Transferência de conteúdo
 description: Saiba como começar a usar a ferramenta Transferência de conteúdo
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 0161477e5248267224fe6d637a192f409161f6d3
 workflow-type: tm+mt
-source-wordcount: '1424'
-ht-degree: 21%
+source-wordcount: '1362'
+ht-degree: 16%
 
 ---
 
@@ -18,10 +18,10 @@ ht-degree: 21%
 >id="aemcloud_ctt_download"
 >title="Download"
 >abstract="O Content Transfer Tool pode ser baixado como arquivo zip no Portal de distribuição de software. Você pode instalar o pacote por meio do Gerenciador de pacotes na sua instância de origem do Adobe Experience Manager (AEM). Baixe a versão mais recente."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=pt-BR" text="Notas de versão"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=pt-BR" text="Notas de versão"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Portal de distribuição de software"
 
-O Content Transfer Tool pode ser baixado como arquivo zip no Portal de distribuição de software. É possível instalar o pacote via [Gerenciador de pacotes](/help/implementing/developing/tools/package-manager.md) na instância do Adobe Experience Manager (AEM) de origem. Baixe a versão mais recente. Para obter mais detalhes sobre a versão mais recente, consulte [Notas de versão](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=pt-BR).
+O Content Transfer Tool pode ser baixado como arquivo zip no Portal de distribuição de software. Você pode instalar o pacote por meio de [Gerenciador de pacotes](/help/implementing/developing/tools/package-manager.md) na instância do Adobe Experience Manager (AEM) de origem. Baixe a versão mais recente. Para obter mais detalhes sobre a versão mais recente, consulte [Notas de versão](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=pt-BR).
 
 Somente a versão 2.0.0 e superior é compatível, e é aconselhável usar a versão mais recente.
 
@@ -45,7 +45,7 @@ A instância do AEM de origem pode estar sendo executada por trás de um firewal
 
 Às vezes, pode ser difícil entender os problemas de conexão SSL/TLS. Para solucionar problemas de conexão durante um processo de extração, você pode ativar o registro SSL por meio do Console do sistema do ambiente AEM de origem seguindo estas etapas:
 
-1. Navegue até o Console da Web do Adobe Experience Manager na instância de origem, acessando **Ferramentas - Operações - Console da Web** ou diretamente para o URL em *https://serveraddress:serverport/system/console/configMgr*
+1. Navegue até o Console da Web do Adobe Experience Manager na instância de origem, acessando **Ferramentas > Operações > Console da Web** ou diretamente para o URL em *https://serveraddress:serverport/system/console/configMgr*
 1. Pesquisar por **Configuração do serviço de extração da ferramenta Transferência de conteúdo**
 1. Use o botão de ícone de lápis para editar seus valores de configuração
 1. Ativar o **Habilitar log ssl para extração** , depois pressione **Salvar**:
@@ -78,7 +78,7 @@ A seção a seguir se aplica à nova versão da ferramenta Transferência de con
 
 1. Faça logon no Cloud Acceleration Manager (CAM) e clique no projeto CAM criado anteriormente para avaliar sua prontidão para migrar para o AEM as a Cloud Service. Se você ainda não criou um projeto CAM, consulte Criação e gerenciamento de um projeto no CAM.
 
-1. Clique em **Transferência de conteúdo** cartão. Você será direcionado para a exibição da Lista de conjuntos de migração.
+1. Clique em **Transferência de conteúdo** para abrir a exibição da Lista do conjunto de migrações.
 
    ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam1.png)
 
@@ -86,11 +86,11 @@ A seção a seguir se aplica à nova versão da ferramenta Transferência de con
 
    >[!NOTE]
    >
-   >No máximo vinte conjuntos de migração, incluindo conjuntos expirados, podem ser criados por projeto no Cloud Acceleration Manager.
+   >No máximo 20 conjuntos de migração, incluindo conjuntos expirados, podem ser criados por projeto no Cloud Acceleration Manager.
 
    ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam2.png)
 
-   A caixa de diálogo a seguir é apresentada. Observe que um conjunto de migração expirará após um período prolongado de inatividade. Depois que avisos forem exibidos no cartão do projeto e as linhas da tabela de trabalhos de migração por um período de tempo, o conjunto de migração expirará e seus dados não estarão mais disponíveis. Revisão [Expiração do conjunto de migração](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) para obter detalhes.
+   A caixa de diálogo a seguir é apresentada. Observe que um conjunto de migração expirará após um período prolongado de inatividade. Depois que avisos forem exibidos no cartão do projeto e as linhas da tabela de trabalhos de migração por um período, o conjunto de migração expirará e seus dados não estarão mais disponíveis. Revisão [Expiração do conjunto de migração](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) para obter detalhes.
 
    ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
 
@@ -114,11 +114,11 @@ A seção a seguir se aplica à nova versão da ferramenta Transferência de con
 >abstract="Depois de criar um conjunto de migração, ele deve ser preenchido com o conteúdo da instância de origem que será movido para o ambiente do AEM as a Cloud Service. Para fazer isso, a Ferramenta de Transferência de Conteúdo precisa estar instalada na instância de origem."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html" text="Extrair conteúdo"
 
-Para preencher o conjunto de migração criado no Cloud Acceleration Manager, é necessário instalar a versão mais recente da ferramenta Transferência de conteúdo na sua instância de origem do Adobe Experience Manager (AEM). Siga esta seção para saber como preencher o conjunto de migração.
+Para preencher o conjunto de migração criado no Cloud Acceleration Manager, instale a versão mais recente da ferramenta Transferência de conteúdo na sua instância de origem do Adobe Experience Manager (AEM). Para saber como preencher o conjunto de migração, siga esta seção.
 
 1. Depois de instalar a versão mais recente da ferramenta Transferência de conteúdo na instância do Adobe Experience Manager de origem, acesse **Operações - Migração de conteúdo**
 
-1. Clique em **Criar conjunto de migração**
+1. Clique em **Criar conjunto de migração**.
 
    ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam5.png)
 
@@ -126,7 +126,7 @@ Para preencher o conjunto de migração criado no Cloud Acceleration Manager, é
 
    >[!NOTE]
    >
-   >Verifique se a chave de extração é válida e não está próxima de sua expiração. Você pode obter essas informações no **Criar conjunto de migração** após colar a chave de extração. Se você receber um erro de conexão, consulte [Conectividade do ambiente de origem](#source-environment-connectivity) para obter mais informações.
+   >Verifique se a chave de extração é válida e se não está próxima de sua expiração. Você pode obter essas informações no **Criar conjunto de migração** após colar a chave de extração. Se você receber um erro de conexão, consulte [Conectividade do ambiente de origem](#source-environment-connectivity) para obter mais informações.
 
    ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam6.png)
 
