@@ -2,9 +2,9 @@
 title: Como atualizar seu conteúdo por meio das APIs do AEM Assets
 description: Nesta parte da jornada do desenvolvedor headless do AEM, saiba como usar a API REST para acessar e atualizar o conteúdo dos seus fragmentos de conteúdo.
 exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 31b0eecd01ee319aaf700505293530fec129b00f
 workflow-type: tm+mt
-source-wordcount: '1052'
+source-wordcount: '1061'
 ht-degree: 89%
 
 ---
@@ -321,6 +321,7 @@ Você deve continuar a jornada headless do AEM revisando o documento [Como unir 
 
 ## Recursos adicionais {#additional-resources}
 
+* [APIs do Adobe Experience Manager as a Cloud Service](https://developer.adobe.com/experience-cloud/experience-manager-apis/)
 * [API HTTP de ativos](/help/assets/mac-api-assets.md)
 * [API REST de fragmentos de conteúdo](/help/assets/content-fragments/assets-api-content-fragments.md)
    * [Referência da API ](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)

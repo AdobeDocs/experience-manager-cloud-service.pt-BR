@@ -3,14 +3,14 @@ title: Suporte a fragmentos de conteúdo do Adobe Experience Manager as a Cloud 
 description: Saiba mais sobre o suporte a fragmentos de conteúdo na API HTTP de ativos, uma parte importante do recurso de entrega headless do Adobe Experience Manager.
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 38cb2605e2133e858c60644084cf515a03b54f60
 workflow-type: tm+mt
-source-wordcount: '1788'
-ht-degree: 13%
+source-wordcount: '1747'
+ht-degree: 11%
 
 ---
 
-# Compatibilidade com os Fragmentos de conteúdo na API HTTP do AEM Assets {#content-fragments-support-in-aem-assets-http-api}
+# Suporte a fragmentos de conteúdo na API HTTP do AEM Assets {#content-fragments-support-in-aem-assets-http-api}
 
 ## Visão geral {#overview}
 
@@ -29,6 +29,10 @@ Saiba mais sobre o suporte a Fragmentos de conteúdo na API HTTP do Assets, uma 
 >* incluindo suporte para fragmentos de conteúdo
 >
 >A implementação atual da API HTTP do Assets baseia-se na [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) estilo arquitetônico.
+
+>[!NOTE]
+>
+>Para obter as informações mais recentes sobre as APIs do Experience Manager, visite também [APIs do Adobe Experience Manager as a Cloud Service](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
 
 A variável [API REST de ativos](/help/assets/mac-api-assets.md) O permite que os desenvolvedores do Adobe Experience Manager as a Cloud Service acessem o conteúdo (armazenado em AEM) diretamente pela API HTTP, por meio de operações CRUD (Create, Read, Update, Delete, Criar, Ler, Atualizar, Excluir).
 
@@ -149,7 +153,7 @@ Se a API REST do Assets for usada em um ambiente sem requisitos de autenticaçã
 >
 >Para obter mais informações, consulte:
 >
->* [Explicação sobre o CORS/AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=pt-BR)
+>* [Explicação sobre o CORS/AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=en)
 >* [Vídeo - Desenvolvimento do CORS com AEM (04:06)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=en)
 >
 
