@@ -2,9 +2,9 @@
 title: Criação de conteúdo para Edge Delivery Services
 description: Saiba como a criação de conteúdo funciona com Edge Delivery Services e como criar conteúdo AEM com Edge Delivery Services.
 feature: Edge Delivery Services
-source-git-commit: f6e1c5de57ee0297abdf6b03faf550a266dfac32
+source-git-commit: 22a791311c618fcbd61f321b8efa79c3a52ec65d
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Com o Edge Delivery Services, a criação é fácil, rápida e flexível. Há du
 
 No caso da criação baseada em documentos, é possível trabalhar com várias fontes, como o Microsoft Word e o Google Docs. Os documentos dessas fontes se tornam páginas do site. Cabeçalhos, listas, imagens, elementos de fonte, vídeos podem ser transferidos da fonte inicial para o seu site. Você pode adicionar metadados para fins de SEO ou usar blocos para trabalhar com conteúdo estruturado e adicionar funcionalidades.
 
-Para obter mais detalhes sobre a criação baseada em documentos, consulte [este documento na documentação do Edge Delivery Services.](https://www.aem.live/docs/authoring)
+Para obter mais detalhes sobre a criação baseada em documentos, consulte [este documento na documentação do Edge Delivery Services.](/help/edge/docs/authoring.md)
 
 ## Criação no Editor universal {#universal-editor}
 
@@ -40,7 +40,7 @@ Ao usar Edge Delivery Services com AEM as a Cloud Service AEM, o fato mais funda
    * O conteúdo permanece armazenado no AEM.
    * O AEM renderiza o HTML semântico necessário para a assimilação.
    * O conteúdo é publicado no Edge Delivery Services.
-1. [Edge Delivery Services](https://www.aem.live/home) garanta uma pontuação de 100% no Lighthouse.
+1. [Edge Delivery Services](/help/edge/developer/keeping-it-100.md) garanta uma pontuação de 100% no Lighthouse.
 
 Os blocos são componentes fundamentais de uma página entregue pelo Edge Delivery Services. Os autores podem escolher entre blocos padrão fornecidos como padrão pelo Adobe ou entre blocos personalizados para seu projeto pelos desenvolvedores.
 
