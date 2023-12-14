@@ -1,15 +1,21 @@
 ---
 title: Seletor de ativos para [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
 description: Use o Seletor de ativos para pesquisar, localizar e recuperar metadados e representações de ativos no aplicativo.
-contentOwner: Adobe
+contentOwner: KK
 role: Admin,User
-exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
-source-git-commit: dd923ae9d63f1ca1379d8e177ff7b00648da052a
+exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
+source-git-commit: f18b8cf1922f05c0d7da2c58fb0a57bc5ff3d3b7
 workflow-type: tm+mt
-source-wordcount: '2373'
+source-wordcount: '2371'
 ht-degree: 91%
 
 ---
+
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | Este artigo |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/asset-selector.html?lang=en) |
 
 # Seletor de ativos de micro front-end {#Overview}
 
