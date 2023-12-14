@@ -6,7 +6,7 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 40f63933-4f4e-4318-8d42-4b5c9b01f7cd
-source-git-commit: f18b8cf1922f05c0d7da2c58fb0a57bc5ff3d3b7
+source-git-commit: e882e89afa213f3423efe497585994eb91186fd7
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 7%
@@ -14,12 +14,12 @@ ht-degree: 7%
 ---
 
 
+# Detectar ativos duplicados {#detect-duplicate-assets}
+
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | Este artigo |
 | AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html?lang=en) |
-
-# Detectar ativos duplicados {#detect-duplicate-assets}
+| AEM as a Cloud Service | Este artigo |
 
 Se um usuário do DAM carregar um ou mais ativos que já existem no repositório, [!DNL Experience Manager] O detecta a duplicação e notifica o usuário. A detecção de duplicatas está desativada por padrão, pois pode ter impacto no desempenho, dependendo do tamanho do repositório e do número de ativos carregados.
 
