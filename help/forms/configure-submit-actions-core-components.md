@@ -4,9 +4,9 @@ description: Um Formulário adaptável fornece várias Ações de envio. Uma Aç
 keywords: como selecionar a ação enviar para um formulário adaptável, conectar um formulário adaptável à lista do sharepoint, conectar um formulário adaptável à biblioteca de documentos do sharepoint, conectar um formulário adaptável ao modelo de dados de formulário
 feature: Adaptive Forms, Core Components
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: c2bf362a9949b3d6d427a28821056a0cc9edfa85
 workflow-type: tm+mt
-source-wordcount: '4114'
+source-wordcount: '4102'
 ht-degree: 2%
 
 ---
@@ -171,8 +171,6 @@ Ao enviar o formulário, os dados são salvos no Armazenamento da Biblioteca de 
 A estrutura de pastas para salvar os dados é `/folder_name/form_name/year/month/date/submission_id/data`.
 
 ### Conectar um formulário adaptável à lista Microsoft® SharePoint {#connect-af-sharepoint-list}
-
-<span class="preview"> Esse é um recurso de pré-lançamento acessível por meio de nossa [canal de pré-lançamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)
 

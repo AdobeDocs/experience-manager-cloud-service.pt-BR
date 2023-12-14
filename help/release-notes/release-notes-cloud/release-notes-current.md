@@ -3,10 +3,10 @@ title: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud S
 description: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: acaf2371886b161ce5e8b9f9a9771267703bb32d
+source-git-commit: a5121436b2e48302fcf14478764aede1495e089c
 workflow-type: tm+mt
-source-wordcount: '1278'
-ht-degree: 14%
+source-wordcount: '769'
+ht-degree: 21%
 
 ---
 
@@ -26,72 +26,53 @@ A seção a seguir descreve as notas da versão de recurso atual (mais recente) 
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento da versão atual (2023.11.0) do [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] é sexta-feira, 30 de novembro de 2023. O próximo lançamento de recursos (2023.12.0) está planejado para sexta-feira, 14 de dezembro de 2023.
+A data de lançamento da versão atual (2023.12.0) do [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] é sexta-feira, 14 de dezembro de 2023. O próximo lançamento de recursos (2024.1.0) está planejado para quinta-feira, 25 de janeiro de 2023.
 
 ## Notas da versão de manutenção {#maintenance}
 
 Encontre as notas de versão de manutenção mais recentes [aqui](/help/release-notes/maintenance/latest.md).
 
-## Vídeo da versão {#release-video}
+<!-- 
 
-Assista ao vídeo Visão geral da versão de novembro de 2023 que exibe um resumo dos recursos adicionados na versão 2023.11.0:
+## Release Video {#release-video}
+
+Have a look at the December 2023 Release Overview video for a summary of the features added in the 2023.12.0 release:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425864?quality=12)
+
+-->
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### Programa de adoção antecipada {#sites-early-adopter}
 
-**[Localizar e substituir strings em fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/managing.md#find-and-replace-find-and-replace)**: o Console do fragmento de conteúdo fornece aos usuários uma maneira fácil e intuitiva de substituir uma cadeia de caracteres que aparece em vários fragmentos de conteúdo de uma só vez para ajudar a acelerar a velocidade do conteúdo.
+**Você pode aproveitar o [Serviço de Dados de Monitoramento do Usuário Real (RUM)](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** para ativar a coleta no lado do cliente para o AEM as a Cloud Service.
 
-![Localizar e substituir](/help/sites-cloud/administering/content-fragments/assets/cf-managing-find-replace.png)
+O Serviço de dados de monitoramento de usuário real (RUM) oferece um reflexo mais preciso das interações do usuário, garantindo uma medida confiável do engajamento do site. É uma ótima oportunidade para obter insights avançados sobre o desempenho da página. Embora isso seja benéfico para clientes que usam CDN gerenciada por Adobe ou CDN não gerenciada por Adobe. Além disso, para clientes que usam um CDN não gerenciado por Adobe, o relatório de tráfego automatizado agora pode ser ativado para eles, eliminando a necessidade de compartilhar qualquer relatório de tráfego com o Adobe.
 
-Interessado em experimentar o recurso e compartilhar feedback? Enviar um email para **aemcs-headless-adopter@adobe.com** da sua ID de e-mail oficial para saber mais sobre o programa dos participantes antecipados.
+Se você estiver interessado em testar esse novo recurso e compartilhar seu feedback, envie um email para `aemcs-rum-adopter@adobe.com`, junto com o nome de domínio para o ambiente de produção, preparo e desenvolvimento a partir do endereço de email associado à Adobe ID. A equipe de produtos do Adobe habilitará o Serviço de dados de monitoramento de usuário real (RUM) para você.
+
+
+<!--
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Novos recursos na visualização de ativos {#assets-view-features}
+### New Features in Admin View {#admin-view-features}
 
-* **Editor de Adobe Express incorporado no AEM Assets**: os usuários com acesso ao Express agora têm ferramentas integradas de edição e criação de imagens do Adobe Express e do Adobe Firefly disponíveis diretamente no AEM Assets para melhorar a reutilização do conteúdo e acelerar a velocidade dele.
 
-  ![atribuir formulário de metadados a uma pasta](/help/assets/assets/adobe-express-aem-assets.png)
-
-<!--
 
 * **Smart tags blocklist**: Experience Manager Assets now enables you to define a list of blocked tags. These tags are automatically removed from the auto-generated smart tags when you upload assets to the repository. This capability performs tags governance and saves a lot of time as you can add a tag to the block list and AEM Assets automatically excludes it from the list of tags for any of the assets that are added to the repository.
 
   ![storage usage insights](/help/assets/assets/block-tags.png)
 
+
+**Video Preview**: AEM Assets now generates preview renditions of all supported video formats by default, without the need to configure a processing profile.
+
 -->
-
-
-* **Relatórios de uso de armazenamento em Insights**: os administradores agora podem exibir os relatórios de uso de armazenamento disponíveis como parte do Insights.
-
-  ![insights de uso do armazenamento](/help/assets/assets/storage-usage-insights.png)
-
-* **Pesquisar primeira configuração de página inicial**: o Experience Manager Assets agora permite configurar a experiência de página inicial para sua organização. Se você selecionar pesquisar primeiro como página inicial, poderá configurar o alinhamento da barra de pesquisa, a imagem do plano de fundo e o logotipo da sua organização.
-
-  ![pesquisar primeira configuração](/help/assets/assets/search-first-configuration.png)
-
-### Novos recursos no pré-lançamento do Admin View {#admin-view-features-prerelease}
-
-**Visualização de vídeo**: o AEM Assets agora gera representações de pré-visualização de todos os formatos de vídeo compatíveis por padrão, sem a necessidade de configurar um perfil de processamento.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### Novos recursos no [!DNL Experience Manager Forms] {#forms-features}
-
-* **[Componente da caixa de seleção](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html)**: o Forms adaptável baseado em Componentes principais agora pode incluir um componente de caixa de seleção. Permite que os usuários façam escolhas binárias, selecionando ou desmarcando uma opção específica. Normalmente, ela aparece como uma pequena caixa que pode ser clicada ou tocada para alternar entre dois estados: marcado e desmarcado. A caixa de seleção é um elemento de formulário comum usado para apresentar uma opção sim/não ou verdadeira/falsa.
-
-* **[Componente dos Termos e condições](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html)**: o Forms adaptável baseado em Componentes principais agora pode incluir um componente de Termos e condições. Ele permite que os autores de formulários introduzam uma seção específica no formulário em que os usuários recebem os termos, condições ou contratos legais associados ao uso de um serviço, produto ou plataforma. Esse componente foi projetado para informar os usuários sobre as regras, regulamentos e obrigações aos quais eles estão concordando ao enviar o formulário.
-
-  ![Caixa de seleção, Termos e condições e componentes da guia Vertical](/help/forms/assets/forms-components.png)
-
-* **[Componente de guias verticais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs.html)**: o Forms adaptável baseado em Componentes principais agora pode organizar o conteúdo do formulário em uma lista vertical de guias, fornecendo um layout estruturado e navegável. O uso de guias verticais em um formulário pode aprimorar a experiência geral do usuário simplificando a navegação e melhorando a organização do conteúdo do formulário, especialmente em situações em que um formulário contém várias seções ou informações complexas.
-
-
-
-### Novos recursos no pré-lançamento do [!DNL Forms] {#prerelease-features-forms}
+### Novos recursos em [!DNL Experience Manager Forms] {#forms-features}
 
 * **[Conectar um Forms adaptável com a lista Microsoft® SharePoint](/help/forms/configure-submit-actions-core-components.md#submit-to-sharepoint)**: o AEM Forms fornece uma integração OOTB para enviar dados de formulários diretamente para a Lista do SharePoint, permitindo que você use os recursos de Listas do SharePoint. Você pode configurar a Lista de SharePoint do Microsoft como uma fonte de dados para um Modelo de dados de formulário e usar o **Enviar usando modelo de dados do formulário** enviar ação para conectar um Formulário adaptável à Lista do SharePoint.
 
@@ -115,17 +96,9 @@ Interessado em experimentar o recurso e compartilhar feedback? Enviar um email p
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### Agora as Regras de filtro de tráfego do WAF podem ser licenciadas {#cdn-waf-license}
+### Programa de adoção antecipada da configuração da CDN {#cdn-config-early-adopter}
 
-As Regras de filtro de tráfego foram lançadas em outubro e incluíram uma observação de que a categoria especial de regras do Web Application Firewall (WAF) estaria disponível no final deste ano para complementar as regras já disponíveis para clientes do Sites e do Forms. Como atualização, a oferta de Proteção WAF-DDoS agora pode ser licenciada.
-
-Depois de licenciadas, essas regras avançadas do WAF podem ser implantadas na CDN usando o Cloud Manager Configuration Pipeline para adicionar uma camada extra de proteção contra ataques da Web.
-
-Ler sobre [Regras de filtro de tráfego](/help/security/traffic-filter-rules-including-waf.md), incluindo o WAF. Fale com a sua equipe de conta AEM sobre o licenciamento da Proteção WAF-DDoS ou Segurança aprimorada.
-
-### Programa adotante antecipado da configuração da CDN {#cdn-config-early-adopter}
-
-Além do recém-lançado [Regras de filtro de tráfego (incluindo WAF)](/help/security/traffic-filter-rules-including-waf.md), há uma oportunidade de usar o Pipeline de configuração para declarar e implantar outros tipos de configuração de CDN. Adoraríamos saber sobre seus casos de uso, incluindo:
+Além do recém-lançado [Regras de filtro de tráfego](/help/security/traffic-filter-rules-including-waf.md), que inclui as regras de Firewall de Aplicativo Web (WAF) opcionalmente licenciáveis, há uma oportunidade de usar o Pipeline de configuração para declarar e implantar outros tipos de configuração de CDN. Adoraríamos saber sobre seus casos de uso, incluindo:
 * Redirecionamentos do lado do cliente 301/302
 * solicitações de proxy na borda para origens arbitrárias
 * Transformações de URL
@@ -143,9 +116,3 @@ Você pode encontrar uma lista completa de versões mensais do Cloud Manager [aq
 ## Ferramentas de migração {#migration-tools}
 
 Você pode encontrar uma lista completa de versões das ferramentas de migração [aqui](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).
-
-## Problemas conhecidos {#known-issues}
-
-* Não é possível enviar o Forms adaptável com base nos Componentes principais. O problema ocorre para o Forms adaptável criado usando os Componentes principais versões 2.0.38 - 2.0.60.
-
-  Para resolver o problema. você pode migrar para os Componentes principais do formulário adaptável versão 2.0.62 ou posterior. Para definir uma versão dos Componentes principais adaptáveis do Forms para o seu ambiente, [definir versões do componente core.forms.components.version, core.forms.components.af.version e core.wcm.components.version](/help/forms/enable-adaptive-forms-core-components.md#2-add-adaptive-forms-core-components-dependencies-to-your-git-repository) dependências no repositório as a Cloud Service do Forms ou projeto baseado no Arquétipo do AEM e [implantar as alterações no ambiente as a Cloud Service do Forms](/help/forms/enable-adaptive-forms-core-components.md#build-and-deploy-updated-code-on-an-aem-forms-as-a-cloud-service-environment). Você pode encontrar a versão mais recente das dependências dos Componentes principais do Forms adaptável em [Repositório Git dos Componentes principais adaptáveis do Forms](https://github.com/adobe/aem-core-forms-components#system-requirements).

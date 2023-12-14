@@ -2,10 +2,10 @@
 title: Notas de versão do Adobe Experience Manager (AEM) as a Cloud Service.
 description: Notas de versão do Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
+source-git-commit: 626f38141bafba8f5463c8793d52ea15448ed433
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 92%
+source-wordcount: '599'
+ht-degree: 91%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 92%
 
 | Produto | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| Versão | 2023.11.0 |
+| Versão | 2023.12.0 |
 | Tipo | Atualizações contínuas |
 | Data de disponibilidade | Atualização contínua |
 
