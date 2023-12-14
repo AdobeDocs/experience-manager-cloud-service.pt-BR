@@ -2,10 +2,10 @@
 title: Ambiente de compilação
 description: Saiba mais sobre o ambiente de compilação do Cloud Manager e como ele cria e testa seu código.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 3e7d3113b25e9b4058130bf3352a612f36ef5c63
 workflow-type: tm+mt
-source-wordcount: '1004'
-ht-degree: 93%
+source-wordcount: '1029'
+ht-degree: 90%
 
 ---
 
@@ -18,10 +18,10 @@ Saiba mais sobre o ambiente de compilação do Cloud Manager e como ele cria e t
 
 O Cloud Manager compila e testa seu código usando um ambiente de compilação especializado.
 
-* O ambiente de compilação se baseia em Linux, derivado do Ubuntu 18.04.
+* O ambiente de compilação se baseia em Linux, derivado do Ubuntu 22.04.
 * O Apache Maven 3.8.8 está instalado.
 * As versões do Java instaladas são Oracle JDK 8u371 e Oracle JDK 11.0.20.
-* Por padrão, a variável de ambiente `JAVA_HOME` está definida como `/usr/lib/jvm/jdk1.8.0_371`, que contém o Oracle JDK 8u371. Consulte a [Versão alternativa do JDK de execução do Maven](#alternate-maven-jdk-version) para obter mais detalhes.
+* Por padrão, a variável `JAVA_HOME` a variável de ambiente está definida como `/usr/lib/jvm/jdk1.8.0_371` que contém o JDK 8u371 do Oracle. Consulte a [Versão alternativa do JDK de execução do Maven](#alternate-maven-jdk-version) para obter mais detalhes.
 * Há alguns pacotes de sistema adicionais instalados que são necessários.
    * `bzip2`
    * `unzip`
@@ -35,6 +35,7 @@ O Cloud Manager compila e testa seu código usando um ambiente de compilação e
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 * O Maven é configurado em nível de sistema com um arquivo `settings.xml`, que inclui automaticamente o repositório público de artefatos da Adobe usando um perfil chamado `adobe-public`. (Consulte [Repositório público Maven da Adobe](https://repo1.maven.org/) para obter mais detalhes).
+* A Node.js 18 está disponível para [pipelines de front-end e pilha completa.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
 
 >[!NOTE]
 >

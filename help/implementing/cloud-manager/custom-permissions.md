@@ -2,20 +2,17 @@
 title: Permissões personalizadas
 description: Saiba como você pode usar permissões personalizadas para criar perfis de permissão personalizados com permissões configuráveis para restringir o acesso a programas, pipelines e ambientes para usuários do Cloud Managers.
 exl-id: 167da985-7f19-45b3-90a3-884817907da2
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: 3891a55ff48f48de4e55e0229e9f76e5bf500cb3
 workflow-type: tm+mt
-source-wordcount: '1525'
+source-wordcount: '1515'
 ht-degree: 38%
 
 ---
 
+
 # Permissões personalizadas {#custom-permissions}
 
 Saiba como você pode usar permissões personalizadas para criar perfis de permissão personalizados com permissões configuráveis para restringir o acesso a programas, pipelines e ambientes para usuários do Cloud Managers.
-
->[!NOTE]
->
->Este recurso só está disponível por meio do [programa de adoção antecipada.](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)
 
 ## Introdução {#introduction}
 
