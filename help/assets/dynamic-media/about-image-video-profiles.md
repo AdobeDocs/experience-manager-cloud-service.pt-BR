@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Video Profiles
 role: Admin,User
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
-source-git-commit: f9f82c144e6f919ed9b82caf9e1bc0408a352fd6
+source-git-commit: 34038d954802b7f8e31441d5c5e4ea90380e7a20
 workflow-type: tm+mt
 source-wordcount: '1391'
 ht-degree: 0%
@@ -44,7 +44,7 @@ Por exemplo, suponha que você criou um Perfil de imagem do Dynamic Media e o at
 
 Você pode executar o fluxo de trabalho de reprocessamento em um ativo cujo processamento falhou pela primeira vez. Mesmo que você não tenha editado um Perfil de imagem ou Perfil de vídeo, ou já tenha aplicado um Perfil de imagem ou Perfil de vídeo, ainda será possível executar o fluxo de trabalho de reprocessamento em uma pasta de ativos a qualquer momento.
 
-Como opção, é possível ajustar o tamanho do lote do fluxo de trabalho de reprocessamento de um padrão de 50 ativos até 1000 ativos. Quando você executa o _Scene7: Reprocessar ativos_ em uma pasta, os ativos são agrupados em lotes e depois enviados ao servidor do Dynamic Media para processamento. Após o processamento, os metadados de cada ativo no conjunto de lotes inteiro são atualizados em [!DNL Adobe Experience Manager]. Se o tamanho do lote for grande, você pode enfrentar um atraso no processamento. Ou, se o tamanho do lote for muito pequeno, poderá causar muitas viagens de ida e volta para o servidor do Dynamic Media.
+Como opção, é possível ajustar o tamanho do lote do fluxo de trabalho de reprocessamento de um padrão de 50 ativos até 1000 ativos. Quando você executa o _Reprocessamento do Dynamic Media_ em uma pasta, os ativos são agrupados em lotes e depois enviados ao servidor do Dynamic Media para processamento. Após o processamento, os metadados de cada ativo no conjunto de lotes inteiro são atualizados em [!DNL Adobe Experience Manager]. Se o tamanho do lote for grande, você pode enfrentar um atraso no processamento. Ou, se o tamanho do lote for muito pequeno, poderá causar muitas viagens de ida e volta para o servidor do Dynamic Media.
 
 Consulte [Ajustar o tamanho do lote do fluxo de trabalho de reprocessamento](#adjusting-load).
 
