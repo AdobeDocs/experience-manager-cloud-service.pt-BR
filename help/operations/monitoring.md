@@ -2,9 +2,9 @@
 title: Monitoramento de infraestrutura e serviços no AEM as a Cloud Service
 description: Monitoramento de infraestrutura e serviços no AEM as a Cloud Service
 exl-id: 82432c11-37ec-48ac-a52b-487abdc859fa
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 484a9a133b2f3d873d725542fc66652134c5e4d5
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '562'
 ht-degree: 5%
 
 ---
@@ -35,7 +35,7 @@ Com o Monitoramento personalizado, os clientes podem, opcionalmente, fornecer at
 
 >[!NOTE]
 >
-> Essa funcionalidade só é oferecida para clientes com [Suporte na nuvem avançado.](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html#support-add-ons) Em caso de dúvidas, entre em contato com a equipe de conta do Adobe.
+> Essa funcionalidade só é oferecida para ambientes de produção e clientes com [Suporte na nuvem avançado.](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html#support-add-ons) Em caso de dúvidas, entre em contato com a equipe de conta do Adobe.
 
 ## Monitoramento do módulo interno {#module-monitoring}
 
@@ -47,7 +47,7 @@ Embora a disponibilidade externa se concentre no monitoramento do usuário final
 * O tamanho do repositório do autor está dentro de determinados limites.
 * As operações de backup foram concluídas com êxito.
 * A integridade e o desempenho do banco de dados são monitorados.
-* Os serviços da AEM Cloud estão se comportando conforme esperado, incluindo filas de replicação não bloqueadas, dados consistentes e consultas de alto desempenho.
+* Os serviços da nuvem do AEM estão se comportando conforme esperado, incluindo a ausência de filas de replicação bloqueadas, dados consistentes e consultas de alto desempenho.
 
 Verificações adicionais são adicionadas aos ambientes provisionados para o Forms. As definições de verificação não são estáticas e estão sujeitas a alterações e atualizações.
 
