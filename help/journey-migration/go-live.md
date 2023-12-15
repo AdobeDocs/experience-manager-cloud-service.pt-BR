@@ -2,9 +2,9 @@
 title: Publicação
 description: Saiba como executar a migração depois que o código e o conteúdo estiverem prontos para nuvem
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 75d702cf45e38da4b7259907e7f707b6f18bd428
 workflow-type: tm+mt
-source-wordcount: '1697'
+source-wordcount: '1721'
 ht-degree: 4%
 
 ---
@@ -152,6 +152,8 @@ Revise esta lista de atividades para garantir que você execute uma migração t
       * O TTL é o tempo que um registro DNS permanece em um cache antes de solicitar uma atualização ao servidor.
       * Se você tiver um TTL muito alto, as atualizações do seu registro DNS levarão mais tempo para se propagar.
 * Execute testes de desempenho e segurança que atendam aos requisitos e objetivos de sua empresa.
+   * Realizar testes no ambiente de preparo.  Ele tem o mesmo tamanho da produção.
+   * Ambientes de desenvolvimento não têm o mesmo tamanho que preparo e produção.
 * Transfira e verifique se a ativação real é realizada sem nenhuma nova implantação ou atualização de conteúdo.
 * Criar perfis de notificação de usuário Admin Console. Consulte [Perfis de notificação](/help/journey-onboarding/notification-profiles.md)
 
