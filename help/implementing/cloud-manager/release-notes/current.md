@@ -3,9 +3,9 @@ title: Notas de versão do Cloud Manager 2023.12.0 no Adobe Experience Manager a
 description: Estas são as notas de versão do Cloud Manager 2023.12.0 no AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 71ce915413cd968a78a33b7a52d02e09841e1707
+source-git-commit: c0fc4b2ced046a1e975aca99463cdfa03462f2f4
 workflow-type: tm+mt
-source-wordcount: '787'
+source-wordcount: '784'
 ht-degree: 17%
 
 ---
@@ -32,11 +32,11 @@ A data de lançamento do Cloud Manager versão 2023.12.0 no AEM as a Cloud Servi
 * Para programas recém-criados do Cloud Manager, [a subconta associada do New Relic](/help/implementing/cloud-manager/user-access-new-relic.md) não está ativada por padrão.
    * Para programas existentes nos quais a subconta do New Relic não for acessada por mais de 90 dias, ela será desativada.
    * Se quiser usar a subconta do New Relic, será necessário aceitar por meio do Cloud Manager.
-* As implantações de versões secundárias para java 8 e 11 e atualizações para maven [anunciado e iniciado com a versão de outubro do Cloud Manager](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) foram concluídas.
-   * O suporte para o Nó 18 foi adicionado para pipelines de front-end e pilha completa.
+* As implantações de atualizações no [ambiente de compilação](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) que foram [anunciado e iniciado com a versão de outubro do Cloud Manager](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) foram concluídas.
+   * O suporte para o Nó 18 foi adicionado para [pipelines de front-end e pilha completa.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
    * A versão secundária do Java 8 foi atualizada para `jdk1.8.0_371`.
    * A versão secundária do Java 11 foi atualizada para `jdk-11.0.20`.
-   * O Maven foi atualizado para a versão 3.8.8
+   * O Maven foi atualizado para a versão 3.8.8.
       * O Maven agora desativa todos os inseguros `http://*` espelhos por padrão.
       * [Adobe recomenda](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) Os usuários do atualizam os repositórios Maven para usar HTTPS em vez de HTTP.
    * A imagem base do container de build foi atualizada para Ubuntu 22.04.
