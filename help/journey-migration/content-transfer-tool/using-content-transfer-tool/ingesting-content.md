@@ -2,9 +2,9 @@
 title: Assimilar conteúdo no Cloud Service
 description: Saiba como usar o Cloud Acceleration Manager para assimilar conteúdo do seu conjunto de migração em uma instância do Cloud Service de destino.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: b674b3d8cd89675ed30c1611edec2281f0f1cb05
+source-git-commit: 4c8565d60ddcd9d0675822f37e77e70dd42c0c36
 workflow-type: tm+mt
-source-wordcount: '2392'
+source-wordcount: '2407'
 ht-degree: 4%
 
 ---
@@ -159,9 +159,11 @@ Uma causa comum de [Assimilação complementar](/help/journey-migration/content-
 
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakConstraint0030: propriedade violada de restrição de exclusividade [jcr:uuid] com valor a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5e5: /some/path/jcr:content, /some/other/path/jcr:content
 
-Cada nó no AEM deve ter um uuid exclusivo. Esse erro indica que um nó que está sendo assimilado tem a mesma uuid que existe em outro lugar em um caminho diferente na instância de destino.
-Essa situação pode ocorrer se um nó for movido na origem entre uma extração e uma extração subsequente [Extração complementar](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process).
-Também pode acontecer se um nó no destino for movido entre uma assimilação e uma assimilação complementar subsequente.
+Cada nó no AEM deve ter um uuid exclusivo. Esse erro indica que um nó que está sendo assimilado tem a mesma uuid que existe em um caminho diferente na instância de destino. Essa situação pode ocorrer por dois motivos:
+
+* Um nó é movido na origem entre uma extração e uma [Extração complementar](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process)
+   * _LEMBRAR_: para extrações complementares, o nó ainda existirá no conjunto de migração, mesmo que não exista mais na origem.
+* Um nó no destino é movido entre uma assimilação e uma assimilação complementar subsequente.
 
 Este conflito deve ser resolvido manualmente. Alguém familiarizado com o conteúdo deve decidir qual dos dois nós deve ser excluído, tendo em mente outro conteúdo que faça referência a ele. A solução pode exigir que a extração complementar seja feita novamente sem o nó ofensivo.
 
@@ -171,7 +173,7 @@ Outra causa comum de uma [Assimilação complementar](/help/journey-migration/co
 
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakIntegrity0001: não é possível excluir o nó referenciado: 8a2289f4-b904-4bd0-8410-15e41e0976a8
 
-Isso pode acontecer se um nó no destino for modificado entre uma assimilação e uma subsequente **Não-apagamento** assimilação, de modo que uma nova versão tenha sido criada. Se o conjunto de migração foi extraído com a opção &quot;incluir versões&quot; ativada, pode ocorrer um conflito, pois o destino agora tem uma versão mais recente que está sendo referenciada pelo histórico de versões e outro conteúdo. O processo de assimilação não poderá excluir o nó de versão incorreto porque ele está sendo referenciado.
+Isso pode acontecer se um nó no destino for modificado entre uma assimilação e uma subsequente **Não-apagamento** assimilação, de modo que uma nova versão tenha sido criada. Se o conjunto de migração foi extraído com a opção &quot;incluir versões&quot; ativada, pode ocorrer um conflito, pois o destino agora tem uma versão mais recente que está sendo referenciada pelo histórico de versões e outro conteúdo. O processo de assimilação não pode excluir o nó de versão incorreto porque ele está sendo referenciado.
 
 A solução pode exigir que a extração complementar seja feita novamente sem o nó ofensivo. Ou criar um pequeno conjunto de migração do nó incorreto, mas com a opção &quot;incluir versões&quot; desativada.
 
@@ -179,7 +181,7 @@ As práticas recomendadas indicam que, se uma **Não-apagamento** a assimilaçã
 
 ### Falha de assimilação devido a valores de propriedade de nós grandes {#ingestion-failure-due-to-large-node-property-values}
 
-Os valores de propriedade do nó armazenados no MongoDB não podem exceder 16 MB. Se um valor de nó exceder o tamanho permitido, a assimilação falhará e o log conterá um `BSONObjectTooLarge` e especificar qual nó excedeu o máximo. Observe que essa é uma restrição MongoDB.
+Os valores de propriedade do nó armazenados no MongoDB não podem exceder 16 MB. Se um valor de nó exceder o tamanho permitido, a assimilação falhará e o log conterá um `BSONObjectTooLarge` e especificar qual nó excedeu o máximo. Essa é uma restrição MongoDB.
 
 Consulte a `Node property value in MongoDB` observação em [Pré-requisitos para a ferramenta Transferência de conteúdo](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) para obter mais informações e um link para uma ferramenta Oak que pode ajudar a encontrar todos os nós grandes. Depois que todos os nós com tamanhos grandes forem corrigidos, execute a extração e a assimilação novamente.
 
