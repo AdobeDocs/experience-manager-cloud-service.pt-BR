@@ -3,10 +3,10 @@ title: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud S
 description: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: a5121436b2e48302fcf14478764aede1495e089c
+source-git-commit: 17903c6e44afd1742d21b7fc7dbe4d7c63fe8b6b
 workflow-type: tm+mt
-source-wordcount: '769'
-ht-degree: 21%
+source-wordcount: '828'
+ht-degree: 20%
 
 ---
 
@@ -53,13 +53,21 @@ O Serviço de dados de monitoramento de usuário real (RUM) oferece um reflexo m
 Se você estiver interessado em testar esse novo recurso e compartilhar seu feedback, envie um email para `aemcs-rum-adopter@adobe.com`, junto com o nome de domínio para o ambiente de produção, preparo e desenvolvimento a partir do endereço de email associado à Adobe ID. A equipe de produtos do Adobe habilitará o Serviço de dados de monitoramento de usuário real (RUM) para você.
 
 
-<!--
-
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### New Features in Admin View {#admin-view-features}
+### Novos recursos na exibição de Ativos {#assets-view-features}
 
+**Criar imagens GenAI com o Adobe Firefly**
 
+Crie novas imagens com base em consultas de pesquisa com uma integração do recurso texto para imagem do Adobe Firefly (requer uma licença do Adobe Firefly).
+
+![Integração do Firefly de ativos](/help/assets/assets/assets-firefly-integration.png)
+
+**Localizar Imagens Semelhantes**
+
+Agora é possível encontrar conteúdo facilmente selecionando uma imagem e visualizando imagens semelhantes no repositório do Experience Manager Assets.
+
+<!--
 
 * **Smart tags blocklist**: Experience Manager Assets now enables you to define a list of blocked tags. These tags are automatically removed from the auto-generated smart tags when you upload assets to the repository. This capability performs tags governance and saves a lot of time as you can add a tag to the block list and AEM Assets automatically excludes it from the list of tags for any of the assets that are added to the repository.
 
