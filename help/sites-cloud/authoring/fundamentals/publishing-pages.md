@@ -2,10 +2,10 @@
 title: Publicar páginas
 description: Saiba como publicar e desfazer a publicação de suas páginas usando vários mecanismos no AEM.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 410c585dbe9eddaab4e424eb70ce060447db1990
 workflow-type: tm+mt
-source-wordcount: '1805'
-ht-degree: 91%
+source-wordcount: '1847'
+ht-degree: 89%
 
 ---
 
@@ -49,6 +49,12 @@ Dependendo do seu local, é possível publicar:
 >* Um fluxo de trabalho é acionado para notificar a pessoa apropriada sobre sua solicitação de publicação.
 >* Esse fluxo de trabalho pode ter sido personalizado pela sua equipe de desenvolvimento.
 >* Uma mensagem é exibida brevemente para notificá-lo de que o fluxo de trabalho foi acionado.
+
+>[!NOTE]
+>
+>Se quiser preservar a ordem das páginas, publique a página principal ao publicar qualquer página secundária.
+>
+>A ordem das páginas não será garantida se somente as páginas secundárias forem selecionadas para publicação (já que as informações da ordem são mantidas na página principal).
 
 >[!NOTE]
 >
