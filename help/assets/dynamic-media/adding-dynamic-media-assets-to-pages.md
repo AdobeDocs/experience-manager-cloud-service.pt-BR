@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: e2d79742c2097748d736bc4d2d2046711d978fc5
 workflow-type: tm+mt
-source-wordcount: '3217'
+source-wordcount: '3166'
 ht-degree: 5%
 
 ---
@@ -221,7 +221,7 @@ Você pode editar as seguintes configurações do Dynamic Media selecionando **[
 
 Use o componente Dynamic Media para adicionar ativos de imagem do Corte inteligente às suas páginas da Web. Ao editar o componente, você pode optar por usar uma predefinição predefinida do visualizador de vídeo para reproduzir o vídeo na página.
 
-Consulte [Usar o corte inteligente com o Experience Manager Assets Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use.html)
+Consulte [Usar o corte inteligente com o Experience Manager Assets Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use.html?lang=pt-BR)
 
 Consulte também [Perfis de imagem](/help/assets/dynamic-media/image-profiles.md).
 
