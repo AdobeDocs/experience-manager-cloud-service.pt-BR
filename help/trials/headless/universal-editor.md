@@ -4,9 +4,9 @@ description: Explore como você pode usar o Editor universal para editar qualque
 hidefromtoc: true
 index: false
 exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 46456903ee947c61d63508dc86cc5f72dc50ed82
 workflow-type: tm+mt
-source-wordcount: '936'
+source-wordcount: '886'
 ht-degree: 6%
 
 ---
@@ -39,9 +39,7 @@ A edição no local e no contexto geralmente pode ser vantajosa em relação à 
 
 Com o Editor universal, você tem uma maneira ágil de editar seu texto no contexto e no local, permitindo a criação de conteúdo simples e intuitiva.
 
-1. O editor deve ser carregado por padrão no **Componentes** modo. Caso contrário, selecione o **Componentes** ícone no painel de modo no lado esquerdo do editor.
-
-1. Selecione duas vezes o título do artigo mais recente para editá-lo.
+1. Clique duas vezes para selecionar o título do artigo mais recente e editá-lo.
 
    ![O Editor universal](assets/do-not-localize/ue-component-mode.png)
 
@@ -49,7 +47,7 @@ Com o Editor universal, você tem uma maneira ágil de editar seu texto no conte
 
    ![Edição de texto no Editor universal](assets/do-not-localize/ue-edit-text-2.png)
 
-1. Pressione a tecla enter/return ou selecione fora do componente de texto e suas alterações são salvas automaticamente.
+1. Selecione fora do componente de texto e suas alterações serão salvas automaticamente.
 
 O Editor universal salva as alterações automaticamente no ambiente de criação. Você ainda precisa publicá-las para que seus leitores vejam, o que faremos em uma etapa posterior.
 
@@ -57,7 +55,7 @@ O Editor universal salva as alterações automaticamente no ambiente de criaçã
 
 Você também pode trocar imagens enquanto ainda permanece no contexto do conteúdo usando o Editor universal.
 
-1. Restante em **Componentes** selecione a imagem do surfer que será selecionada.
+1. Selecione a imagem do surfer para selecioná-la.
 
 1. No painel de componentes, é possível ver os detalhes do ativo. Selecione o **Imagem em destaque** miniatura.
 
@@ -75,7 +73,7 @@ A imagem é substituída pela que você selecionou.
 
 O Editor universal permite interagir com o conteúdo em seu contexto, vendo o conteúdo conforme é entregue aos dispositivos dos usuários.
 
-1. Por padrão, o editor renderiza a versão para desktop do seu conteúdo. Selecione o botão Emulador na parte superior direita do editor para alterar o dispositivo de destino.
+1. Por padrão, o editor renderiza a versão para desktop do seu conteúdo. Selecione o botão Emulador na parte superior direita da barra de ferramentas do Editor universal para alterar o dispositivo de destino.
 
    ![O item de menu do emulador](assets/do-not-localize/ue-emulator-1.png)
 
@@ -91,9 +89,9 @@ Você também pode especificar dimensões exatas para o emulador e girar o dispo
 
 ## Pré-visualização e publicação {#preview}
 
-Como é necessário selecionar o conteúdo para selecioná-lo no editor, o editor não permite que você siga links ou interaja com o conteúdo tocando ou clicando quando ele está em modo de edição. Usando o modo de visualização, você pode seguir os links no seu conteúdo e experimentá-lo como seus usuários fariam antes de publicar.
+Como é necessário selecionar o conteúdo para modificá-lo no editor, o editor não permite que você siga links ou interaja com o conteúdo tocando ou clicando. Usando o modo de visualização, você pode seguir os links no seu conteúdo e experimentá-lo como seus usuários fariam antes de publicar.
 
-1. No painel de modos no lado esquerdo do editor, selecione **Visualizar**.
+1. Na barra de ferramentas do Editor universal, selecione **Visualizar**.
 
 1. Agora selecione a variável **Leia mais** para o artigo principal.
 
@@ -113,9 +111,11 @@ Seu conteúdo foi publicado.
 
 Para acelerar sua experiência de criação de conteúdo quando a edição estruturada de conteúdo headless for mais vantajosa do que a edição no local, o Editor universal também oferece acesso rápido ao editor de fragmentos de conteúdo.
 
-1. Role mais para baixo na página até a **Aventuras** seção.
+1. Desative o modo de visualização tocando no **Visualizar** na barra de ferramentas do Editor universal.
 
-1. No painel de modos no lado esquerdo do editor, selecione **Componentes**. Isso permite selecionar componentes de página no editor.
+   ![Desativar modo de visualização](assets/do-not-localize/ue-toggle-off-preview.png)
+
+1. Role mais para baixo na página até a **Aventuras** seção.
 
 1. Selecione uma das aventuras, como **Campo de Surf de Bali** para selecioná-la.
 
