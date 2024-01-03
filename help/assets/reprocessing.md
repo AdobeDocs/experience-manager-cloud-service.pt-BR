@@ -2,10 +2,10 @@
 title: Reprocessamento de ativos digitais
 description: Saiba mais sobre os vários métodos de reprocessamento de ativos digitais
 contentOwner: KK
-source-git-commit: 3fb72e0768c44506b0f20f99a48cea837d722387
+source-git-commit: cb8eb56d07163f46aec252c70a3ec3b0273d97cf
 workflow-type: tm+mt
-source-wordcount: '748'
-ht-degree: 1%
+source-wordcount: '685'
+ht-degree: 0%
 
 ---
 
@@ -33,21 +33,21 @@ Caso selecione uma pasta:
 
    ![Opções de reprocessamento de ativos](assets/reprocessing-assets-options.png)
 
-* **[!UICONTROL Processo completo]:** Selecione essa opção quando quiser executar o processo geral, incluindo o perfil padrão, o perfil personalizado, o processamento dinâmico (se configurado) e os fluxos de trabalho de pós-processamento.
-* **[!UICONTROL Avançado]:** Selecione essa opção para escolher o reprocessamento avançado.
+   * **[!UICONTROL Processo completo]:** Selecione essa opção quando quiser executar o processo geral, incluindo o perfil padrão, o perfil personalizado, o processamento dinâmico (se configurado) e os fluxos de trabalho de pós-processamento.
+   * **[!UICONTROL Avançado]:** Selecione essa opção para escolher o reprocessamento avançado.
 
-  ![Opções Avançadas de Ativos de Reprocessamento](assets/reprocessing-assets-options-advanced.png)
+     ![Opções Avançadas de Ativos de Reprocessamento](assets/reprocessing-assets-options-advanced.png)
 
-Selecione entre as seguintes opções avançadas:
+     Selecione entre as seguintes opções avançadas:
 
-* **[!UICONTROL Representações de Visualização Padrão]:** Escolha essa opção quando quiser reprocessar as representações que são visualizadas por padrão.
+      * **[!UICONTROL Representações de Visualização Padrão]:** Escolha essa opção quando quiser reprocessar as representações que são visualizadas por padrão.
 
-* **[!UICONTROL Metadados]:** Escolha essa opção quando quiser extrair informações de metadados e tags inteligentes para os ativos selecionados.
+      * **[!UICONTROL Metadados]:** Escolha essa opção quando quiser extrair informações de metadados e tags inteligentes para os ativos selecionados.
 
-* **[!UICONTROL Processamento de perfis]:** Escolha esta opção quando quiser reprocessar um perfil selecionado. Você pode escolher **[!UICONTROL Processo completo]** opção para incluir o processamento padrão e o perfil personalizado atribuído no nível da pasta.
-  <!--When assets are uploaded to a folder, [!DNL Experience Manager] checks the containing folder's properties for a processing profile. If none is applied, a parent folder in the hierarchy is checked for a processing profile to apply.-->
+      * **[!UICONTROL Processamento de perfis]:** Escolha esta opção quando quiser reprocessar um perfil selecionado. Você pode escolher **[!UICONTROL Processo completo]** opção para incluir o processamento padrão e o perfil personalizado atribuído no nível da pasta.
+        <!--When assets are uploaded to a folder, [!DNL Experience Manager] checks the containing folder's properties for a processing profile. If none is applied, a parent folder in the hierarchy is checked for a processing profile to apply.-->
 
-* **[!UICONTROL Fluxo de trabalho de pós-processamento]:** Escolha essa opção quando for necessário processamento adicional de ativos que não podem ser obtidos usando os perfis de processamento. Workflows de pós-processamento adicionais podem ser adicionados à configuração. O pós-processamento permite adicionar processamento totalmente personalizado além do processamento configurável usando microsserviços de ativos.
+      * **[!UICONTROL Fluxo de trabalho de pós-processamento]:** Escolha essa opção quando for necessário processamento adicional de ativos que não podem ser obtidos usando os perfis de processamento. Workflows de pós-processamento adicionais podem ser adicionados à configuração. O pós-processamento permite adicionar processamento totalmente personalizado além do processamento configurável usando microsserviços de ativos.
 
 Consulte [usar microsserviços de ativos e perfis de processamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en) para saber mais sobre perfis de processamento e fluxo de trabalho de pós-processamento.
 
@@ -71,7 +71,7 @@ Leia mais sobre [Reprocessar tags de cores para imagens existentes no DAM](https
 
 ### Corte inteligente {#reprocessing-smart-crop}
 
-Leia mais sobre [Corte inteligente do Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=pt-BR) que permite aplicar cortes específicos (**[!UICONTROL Corte inteligente]** e recorte de pixels) e a configuração de nitidez nos ativos carregados.
+Leia mais sobre [Corte inteligente do Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=en) que permite aplicar cortes específicos (**[!UICONTROL Corte inteligente]** e recorte de pixels) e a configuração de nitidez nos ativos carregados.
 
 ### Metadados {#reprocessing-metadata}
 

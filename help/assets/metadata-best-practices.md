@@ -4,7 +4,7 @@ description: Saiba mais sobre as práticas recomendadas de metadados para gerenc
 role: User, Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 8434cb580ba8afc018a5a4357a4d249a06c566c2
+source-git-commit: cb8eb56d07163f46aec252c70a3ec3b0273d97cf
 workflow-type: tm+mt
 source-wordcount: '1287'
 ht-degree: 0%
@@ -97,25 +97,25 @@ A estratégia de governação pode incluir:
 
 Determine de onde vêm as informações e examine os detalhes da estratégia de metadados, incluindo as propriedades e suas fontes. Ele pode ser dimensionado dependendo da complexidade da estratégia. Em grandes empresas, há um sistema de gerenciamento de metadados mestre supervisionando vários sistemas na pilha mestre.
 
-<br>
-
 >[!NOTE]
 >
 >Saiba como [gerencie metadados de seus ativos digitais](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html).
 
 ### Ser consistente com a estratégia de metadados
 
-Uma estratégia de metadados consistente garante a organização e a recuperação eficazes de ativos digitais. Adotar uma abordagem estratégica para capturar e implementar valores de metadados, permitindo a flexibilidade para a evolução sem alterações desnecessárias. <br>
-No gerenciamento de metadados de toda a empresa, a consistência é importante ao nomear e fazer referência aos ativos. Por exemplo, ao gerenciar vários ativos simultaneamente, considere adicionar metadados em massa. <br>
+Uma estratégia de metadados consistente garante a organização e a recuperação eficazes de ativos digitais. Adotar uma abordagem estratégica para capturar e implementar valores de metadados, permitindo a flexibilidade para a evolução sem alterações desnecessárias.
+
+No gerenciamento de metadados de toda a empresa, a consistência é importante ao nomear e fazer referência aos ativos. Por exemplo, ao gerenciar vários ativos simultaneamente, considere adicionar metadados em massa.
+
 Estas são algumas das práticas recomendadas:
 
-* **Evite valores duplicados:** Se você tiver uma coleção de imagens de uma campanha de marketing, use nomes consistentes e evite duplicatas.<br>
+* **Evite valores duplicados:** Se você tiver uma coleção de imagens de uma campanha de marketing, use nomes consistentes e evite duplicatas.
 Por exemplo, em vez de usar nomes duplicados como *campaign_image_001* e *campaign_image_002*, implementar uma convenção de nomenclatura sistemática, como *product_launch_001* e *product_launch_002*, garantindo uma identificação clara e ordenada.
 
-* **Usar vocabulários controlados de forma eficaz:** Implemente vocabulários controlados empregando termos padronizados para tags. <br>
+* **Usar vocabulários controlados de forma eficaz:** Implemente vocabulários controlados empregando termos padronizados para tags.
 Por exemplo, use termos consistentes como *product_launch* ou *event_promotion* ao marcar imagens com temas para manter a sequência sistemática.
 
-* **Manter a precisão e a integridade:** Para manter a consistência dos metadados, a precisão, a integridade e o alinhamento em várias fontes são cruciais.<br>
+* **Manter a precisão e a integridade:** Para manter a consistência dos metadados, a precisão, a integridade e o alinhamento em várias fontes são cruciais.
 Por exemplo, ao adicionar metadados a um documento PDF, verifique se os detalhes como nomes de autores e palavras-chave são precisos e completos.
 
 #### Vídeo: adicionar metadados em massa aos ativos
@@ -124,7 +124,8 @@ Por exemplo, ao adicionar metadados a um documento PDF, verifique se os detalhes
 
 ### Avaliar e melhorar a capacidade de pesquisa de metadados
 
-Avalie sua estratégia de metadados para melhorar a capacidade de pesquisa de metadados. Simplifique os fluxos de trabalho e aprimore os recursos de pesquisa para obter uma reutilização eficiente. Evite lidar com metadados que não têm um propósito claro.<br>
+Avalie sua estratégia de metadados para melhorar a capacidade de pesquisa de metadados. Simplifique os fluxos de trabalho e aprimore os recursos de pesquisa para obter uma reutilização eficiente. Evite lidar com metadados que não têm um propósito claro.
+
 Você pode considerar as seguintes práticas recomendadas para otimizar a capacidade de pesquisa de metadados:
 
 * **Otimização de palavra-chave:** Melhore a capacidade de pesquisa de metadados otimizando palavras-chave associadas a ativos. Você pode melhorar a relevância de palavras-chave para ativos específicos no Gerenciador de ativos seguindo estas etapas:
@@ -132,9 +133,9 @@ Você pode considerar as seguintes práticas recomendadas para otimizar a capaci
    1. Ir para **[!UICONTROL Assets]** > **[!UICONTROL Arquivo]** > **[!UICONTROL [Pasta do ativo]]**.
    1. Selecione o ativo para o qual deseja atualizar os metadados e clique em **[!UICONTROL Propriedades]**.
    1. Navegue até a **[!UICONTROL Avançado]** e clique em **[!UICONTROL Adicionar]** no **[!UICONTROL Elevar para palavras-chave de pesquisa]**.
-   1. Insira a palavra-chave para a qual deseja impulsionar a pesquisa e clique em **[!UICONTROL Adicionar]**.<br>
+   1. Insira a palavra-chave para a qual deseja impulsionar a pesquisa e clique em **[!UICONTROL Adicionar]**.
 Você pode adicionar várias palavras-chave e organizá-las de acordo com sua prioridade.
-   1. Clique em **[!UICONTROL Salvar e fechar]**.<br>
+   1. Clique em **[!UICONTROL Salvar e fechar]**.
 Pesquise o ativo usando as palavras-chave adicionadas. O ativo aparece entre os principais resultados da pesquisa.
 
   Saiba como [impulsionar pesquisa no Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html).
@@ -151,7 +152,7 @@ Pesquise o ativo usando as palavras-chave adicionadas. O ativo aparece entre os 
 
 ### Mantenha os metadados simples e fáceis de entender
 
-Simplifique os metadados para melhorar a governança e a adoção pelos usuários. Mantenha-o simples e fácil de entender, incentivando os usuários a adicionar informações essenciais. <br>
+Simplifique os metadados para melhorar a governança e a adoção pelos usuários. Mantenha-o simples e fácil de entender, incentivando os usuários a adicionar informações essenciais.
 Experimente as seguintes práticas recomendadas para simplificar os metadados:
 
 * **Otimizar opções de propriedade:** Concentre-se em destacar propriedades essenciais sem sobrecarregar os usuários com muitos campos de metadados para preencher. Por exemplo, ao adicionar metadados para uma imagem, inclua apenas campos principais como título, descrição e tags para uma categorização eficaz.
