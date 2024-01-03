@@ -2,10 +2,10 @@
 title: Publicar páginas
 description: Saiba como publicar e desfazer a publicação de suas páginas usando vários mecanismos no AEM.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 410c585dbe9eddaab4e424eb70ce060447db1990
+source-git-commit: c05cf17749f63e713e4fb3fbf2a840a9f82877b3
 workflow-type: tm+mt
-source-wordcount: '1847'
-ht-degree: 89%
+source-wordcount: '1925'
+ht-degree: 85%
 
 ---
 
@@ -52,9 +52,11 @@ Dependendo do seu local, é possível publicar:
 
 >[!NOTE]
 >
->Se quiser preservar a ordem das páginas, publique a página principal ao publicar qualquer página secundária.
+>Se quiser preservar a ordem de páginas que você usou [Gerenciar publicação](#manage-publication) para publicar a página principal junto com qualquer página secundária - em uma única ação.
 >
->A ordem das páginas não será garantida se somente as páginas secundárias forem selecionadas para publicação (já que as informações da ordem são mantidas na página principal).
+>A ordem das páginas não é garantida:
+>* se apenas as páginas secundárias forem selecionadas para publicação (já que as informações da ordem são mantidas na página principal)
+>* se as páginas pai e filho forem publicadas em ações separadas
 
 >[!NOTE]
 >
@@ -123,6 +125,14 @@ Para publicar uma página com a Publicação rápida:
 #### Gerenciar publicação    {#manage-publication}
 
 **Gerenciar Publicação** oferece mais opções do que a **Publicação Rápida**, permitindo a inclusão de páginas secundárias, a personalização das referências e o início de quaisquer fluxos de trabalho aplicáveis, além de oferecer a opção de publicar em uma data posterior.
+
+>[!NOTE]
+>
+>Se quiser preservar a ordem de páginas que você usou **Gerenciar publicação** para publicar a página principal junto com qualquer página secundária em uma única ação.
+>
+>A ordem das páginas não é garantida:
+>* se apenas as páginas secundárias forem selecionadas para publicação (já que as informações da ordem são mantidas na página principal)
+>* se as páginas pai e filho forem publicadas em ações separadas
 
 Para publicar ou desfazer a publicação de uma página usando Gerenciar publicação:
 
