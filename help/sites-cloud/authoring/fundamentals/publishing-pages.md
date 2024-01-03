@@ -2,9 +2,9 @@
 title: Publicar páginas
 description: Saiba como publicar e desfazer a publicação de suas páginas usando vários mecanismos no AEM.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: c05cf17749f63e713e4fb3fbf2a840a9f82877b3
+source-git-commit: 00520bff0f3b0d36610d8601077198856c8b71dd
 workflow-type: tm+mt
-source-wordcount: '1925'
+source-wordcount: '1927'
 ht-degree: 85%
 
 ---
@@ -52,7 +52,7 @@ Dependendo do seu local, é possível publicar:
 
 >[!NOTE]
 >
->Se quiser preservar a ordem de páginas que você usou [Gerenciar publicação](#manage-publication) para publicar a página principal junto com qualquer página secundária - em uma única ação.
+>Se quiser preservar a ordem das páginas, é necessário usar [Gerenciar publicação](#manage-publication) para publicar a página principal junto com qualquer página secundária - em uma única ação.
 >
 >A ordem das páginas não é garantida:
 >* se apenas as páginas secundárias forem selecionadas para publicação (já que as informações da ordem são mantidas na página principal)
@@ -128,7 +128,7 @@ Para publicar uma página com a Publicação rápida:
 
 >[!NOTE]
 >
->Se quiser preservar a ordem de páginas que você usou **Gerenciar publicação** para publicar a página principal junto com qualquer página secundária em uma única ação.
+>Se quiser preservar a ordem das páginas, é necessário usar **Gerenciar publicação** para publicar a página principal junto com qualquer página secundária em uma única ação.
 >
 >A ordem das páginas não é garantida:
 >* se apenas as páginas secundárias forem selecionadas para publicação (já que as informações da ordem são mantidas na página principal)
