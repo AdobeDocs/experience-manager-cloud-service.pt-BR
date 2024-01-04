@@ -7,7 +7,7 @@ exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
 source-git-commit: 46456903ee947c61d63508dc86cc5f72dc50ed82
 workflow-type: tm+mt
 source-wordcount: '886'
-ht-degree: 6%
+ht-degree: 12%
 
 ---
 
@@ -17,12 +17,12 @@ ht-degree: 6%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor"
 >title="Edição com contexto no Editor universal"
->abstract="Veja como seus aplicativos headless podem usar o Editor universal para colocar na ponta dos dedos a edição de contexto com baixo atrito."
+>abstract="Veja como seus aplicativos headless podem usar o Universal Editor para trazer uma edição contextual e de baixo atrito ao alcance de seus autores."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide"
 >title="Iniciar o Editor universal"
->abstract="Neste guia, você explora o Editor universal e como ele permite que qualquer pessoa edite cada aspecto do seu conteúdo em qualquer implementação, resultando em uma velocidade de conteúdo aprimorada.<br><br>Inicie este módulo em uma nova guia clicando abaixo e, em seguida, siga este guia."
+>abstract="Neste manual, exploraremos o Universal Editor e como ele permite a qualquer pessoa editar cada aspecto de seu conteúdo em qualquer implementação, resultando em uma velocidade de conteúdo aprimorada.<br><br>Inicie este módulo em uma nova guia clicando abaixo e, em seguida, siga este guia."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide_footer"
