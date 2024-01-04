@@ -2,10 +2,10 @@
 title: Introdução ao Editor universal no AEM
 description: Saiba como obter acesso ao Editor universal e começar a instrumentar seu primeiro aplicativo do AEM para utilizá-lo.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
 workflow-type: tm+mt
-source-wordcount: '920'
-ht-degree: 78%
+source-wordcount: '900'
+ht-degree: 76%
 
 ---
 
@@ -17,6 +17,8 @@ Saiba como obter acesso ao Editor universal e começar a instrumentar seu primei
 >[!TIP]
 >
 >Se preferir ir direto para o exemplo, você pode consultar o [aplicativo de demonstração do Editor universal no GitHub.](https://github.com/adobe/universal-editor-sample-editable-app)
+
+{{universal-editor-status}}
 
 ## Etapas de integração {#onboarding}
 
@@ -201,7 +203,7 @@ Para saber mais sobre o Editor universal, consulte estes documentos.
 
 * [Introdução ao Editor universal](introduction.md): saiba como o Editor universal permite editar qualquer aspecto do conteúdo das implementações, a fim de entregar experiências excepcionais, aumentar a velocidade do conteúdo e fornecer uma experiência de desenvolvimento de última geração.
 * [Criação de conteúdo com o Editor universal](authoring.md): saiba como é fácil e intuitivo para os autores criarem conteúdo usando o Editor universal.
-* [Publicação de conteúdo com o Editor universal](publishing.md): saiba como o Editor universal publica o conteúdo e como seus aplicativos podem lidar com esse conteúdo.
+* [Publicar conteúdo com o editor universal](publishing.md) - Saiba como o Editor Universal publica conteúdo e como seus aplicativos podem lidar com o conteúdo publicado.
 * [Arquitetura do Editor universal](architecture.md): saiba mais sobre a arquitetura do Editor universal e como os dados fluem entre seus serviços e camadas.
 * [Atributos e tipos](attributes-types.md): saiba mais sobre os atributos e tipos de dados exigidos pelo Editor universal.
 * [Autenticação do Editor universal](authentication.md): saiba como funciona a autenticação do Editor universal.

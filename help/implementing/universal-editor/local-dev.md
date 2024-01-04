@@ -2,7 +2,7 @@
 title: Desenvolvimento local do AEM com o editor universal
 description: Saiba como o Editor universal oferece suporte à edição em instâncias locais do AEM para fins de desenvolvimento.
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
-source-git-commit: 0546f3cee8df3d7134021e32670b40030d56cd84
+source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
 workflow-type: tm+mt
 source-wordcount: '576'
 ht-degree: 0%
@@ -14,7 +14,11 @@ ht-degree: 0%
 
 Saiba como o Editor universal oferece suporte à edição em instâncias locais do AEM para fins de desenvolvimento.
 
-Este documento explicará como executar o AEM em HTTPS junto com uma cópia local do Universal Editor Service para que você possa desenvolver localmente no AEM usando o Universal Editor.
+{{universal-editor-status}}
+
+## Visão geral {#overview}
+
+Este documento explica como executar o AEM em HTTPS junto com uma cópia local do Universal Editor Service para que você possa desenvolver localmente no AEM usando o Universal Editor.
 
 ## Configurar AEM para execução em HTTPS {#aem-https}
 

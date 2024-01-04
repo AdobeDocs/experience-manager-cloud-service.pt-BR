@@ -1,26 +1,28 @@
 ---
 title: Publicação de conteúdo com o Editor universal
-description: Saiba como o Editor universal publica o conteúdo e como seus aplicativos podem lidar com esse conteúdo.
+description: Saiba como o Editor Universal publica conteúdo e como seus aplicativos podem lidar com o conteúdo publicado.
 exl-id: aee34469-37c2-4571-806b-06c439a7524a
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
 workflow-type: tm+mt
 source-wordcount: '360'
-ht-degree: 82%
+ht-degree: 55%
 
 ---
 
 
 # Publicação de conteúdo com o Editor universal {#publishing}
 
-Saiba como o Editor universal publica o conteúdo e como seus aplicativos podem lidar com esse conteúdo.
+Saiba como o Editor Universal publica conteúdo e como seus aplicativos podem lidar com o conteúdo publicado.
+
+{{universal-editor-status}}
 
 ## Semelhanças com o AEM {#similarities}
 
-Para usuários do AEM, o processo de publicação de conteúdo do Editor universal funciona como de costume: ao publicar no AEM, o conteúdo é replicado da camada do autor para a camada de publicação.
+Para usuários do AEM, o processo de publicar conteúdo com o Universal Editor funciona como você está acostumado: na publicação no AEM, o conteúdo é replicado do nível do autor para o nível de publicação.
 
 ## Diferenças {#differences}
 
-O que torna a publicação com o Editor universal um pouco diferente não é tanto o próprio editor, mas sim a hospedagem externa do aplicativo que o Editor universal possibilita.
+O que torna a publicação com o Editor Universal um pouco diferente não é tanto o próprio editor, mas sim a hospedagem externa do aplicativo que o Editor Universal possibilita.
 
 Quando hospedado externamente, o objetivo do aplicativo web é garantir que o conteúdo seja carregado da camada do autor quando o aplicativo for aberto por autores no editor e carregado da camada de publicação quando o aplicativo for acessado por visitantes.
 
