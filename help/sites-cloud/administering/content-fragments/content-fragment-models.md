@@ -1,13 +1,13 @@
 ---
 title: Modelos de fragmentos do conteúdo
-description: Saiba como os modelos de fragmento de conteúdo servem como base para os fragmentos de conteúdo no AEM. Esses fragmentos permitem criar conteúdo estruturado para uso em entrega headless ou criação de página.
+description: Saiba como os modelos de fragmento de conteúdo servem como base para os fragmentos de conteúdo no AEM, permitindo criar conteúdo estruturado para uso em entrega headless ou criação de página.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
-source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
+source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
 workflow-type: tm+mt
-source-wordcount: '3121'
-ht-degree: 59%
+source-wordcount: '3125'
+ht-degree: 56%
 
 ---
 
@@ -32,7 +32,7 @@ Para usar modelos de fragmento de conteúdo, você pode:
    >
    >Se a variável [o uso de modelos de Fragmento de conteúdo não foi habilitado](/help/sites-cloud/administering/content-fragments/setup.md), o **Criar** não estará disponível.
 
-1. Especifique o **título do modelo**.
+1. Especifique a **Título do modelo**.
 Também é possível definir várias propriedades; por exemplo, adicionar **Tags**, um **Descrição**, selecione **Ativar modelo** para [ativar o modelo](#enabling-disabling-a-content-fragment-model) se necessário, e defina as
    **Padrão de URL de Visualização Padrão**.
 
@@ -52,7 +52,7 @@ Essas propriedades são definidas ao criar um modelo e podem ser editadas poster
    * **Título do modelo**
    * **Tags**
    * **Descrição**
-   * **Habilitar modelo**
+   * **Ativar modelo**
    * **Padrão de URL de Visualização Padrão**
 O editor de fragmento de conteúdo permite que os autores **Visualizar** seu conteúdo em um aplicativo de front-end externo. Quando a variável **Serviço de visualização** estiver configurado, adicione o URL para o aplicativo de front-end.
 
@@ -263,7 +263,7 @@ Vários tipos de dados agora incluem a possibilidade de definir requisitos de va
   Campos que foram definidos como **Múltiplo campo** (definido com **Renderizar como**) têm as seguintes opções:
 
    * **Número mínimo de itens**
-   * **Número máx. de itens**
+   * **Número máximo de itens**
 
   Elas são validadas no [Editor de fragmento de conteúdo](/help/sites-cloud/administering/content-fragments/authoring.md).
 

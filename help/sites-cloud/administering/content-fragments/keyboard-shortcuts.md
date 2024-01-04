@@ -1,15 +1,15 @@
 ---
 title: Atalhos de teclado para o console de fragmentos de conteúdo
-description: Vários atalhos do teclado estão disponíveis por todo o AEM, inclusive alguns para gerenciar fragmentos de conteúdo
+description: Vários atalhos do teclado estão disponíveis em todo o AEM, incluindo uma seleção para gerenciar fragmentos de conteúdo.
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 676173813b6ea4defeafe25c95be9668d32aac38
+exl-id: 24eefa31-4081-4b4a-af98-c6299b213cea
+source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
 workflow-type: tm+mt
-source-wordcount: '222'
-ht-degree: 94%
+source-wordcount: '223'
+ht-degree: 88%
 
 ---
-
 
 # Atalhos de teclado para o console de fragmentos de conteúdo {#keyboard-shortcuts-content-fragments-console}
 

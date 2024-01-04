@@ -1,15 +1,15 @@
 ---
 title: Análise de fragmentos de conteúdo
-description: Entenda a estrutura e a entrega de conteúdo dos Fragmentos de conteúdo. Isso fornece informações sobre entrega headless e criação de página.
+description: Entenda a estrutura dos Fragmentos de conteúdo usados para a entrega de conteúdo. Isso fornece informações relevantes para entrega headless e criação de página.
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
+exl-id: d9268c1a-bfe6-4df7-bad9-6007dd79e0aa
+source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '132'
 ht-degree: 2%
 
 ---
-
 
 # Análise da estrutura do fragmento de conteúdo {#analyzing-content-fragments-structure}
 
@@ -19,7 +19,7 @@ O Experience Manager (AEM) fornece vários métodos de visualização e análise
 
 ## Referências {#references}
 
-A estrutura é criada usando Referências:
+A estrutura de várias camadas é criada usando Referências:
 
 * [Os tipos de dados para Referências são definidos no Modelo de fragmento de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#using-references-to-form-nested-content)
 * Ao criar, é possível:

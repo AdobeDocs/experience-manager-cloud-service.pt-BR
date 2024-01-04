@@ -1,10 +1,10 @@
 ---
 title: Criação de fragmentos de conteúdo
-description: Entenda como criar conteúdo para os fragmentos de conteúdo e, em seguida, crie variações desse conteúdo de acordo com a finalidade. Isso proporciona flexibilidade adicional para entregas headless e criação de páginas.
+description: Entenda como criar conteúdo para seus Fragmentos de conteúdo e crie variações desse conteúdo de acordo com a finalidade. Isso proporciona flexibilidade adicional para entregas headless e criação de páginas.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
 workflow-type: tm+mt
 source-wordcount: '2266'
 ht-degree: 4%
