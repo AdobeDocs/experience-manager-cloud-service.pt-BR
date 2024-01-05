@@ -2,7 +2,7 @@
 title: Geração de tokens de acesso para APIs do lado do servidor
 description: Saiba como facilitar a comunicação entre um servidor de terceiros e o AEM as a Cloud Service gerando um token JWT seguro
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
 source-wordcount: '2089'
 ht-degree: 0%
@@ -19,7 +19,7 @@ O fluxo de servidor para servidor é descrito abaixo, juntamente com um fluxo si
 
 >[!NOTE]
 >
->In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
+>In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
 
 ## O fluxo de servidor para servidor {#the-server-to-server-flow}
 
@@ -154,7 +154,7 @@ Como alternativa, você também pode verificar se a conta técnica aparece na li
 1. Verifique se sua conta técnica é a lista de usuários e selecione-a.
 1. Clique em **Grupos** para verificar se o usuário faz parte do grupo que corresponde ao perfil do produto. Esse usuário também é membro de alguns outros grupos, incluindo Contribuidores:
 
-   ![Associação de Grupo](/help/implementing/developing/introduction/assets/s2s-groupmembership.png)
+   ![Associação de grupo](/help/implementing/developing/introduction/assets/s2s-groupmembership.png)
 
 >[!NOTE]
 >

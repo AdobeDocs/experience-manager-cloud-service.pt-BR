@@ -2,9 +2,9 @@
 title: Introdução ao Cloud Acceleration Manager
 description: Esta página fornece uma visão geral sobre como usar e começar a usar o Cloud Acceleration Manager.
 exl-id: e2fad21c-3de6-4186-97c6-ebc84780b2e8
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '535'
+source-wordcount: '514'
 ht-degree: 22%
 
 ---
@@ -97,4 +97,4 @@ Siga as etapas abaixo para excluir seu projeto:
 
 ## O que vem a seguir {#whats-next}
 
-Depois de saber como fazer logon no Cloud Acceleration Manager e criar um projeto, você estará pronto para revisar a próxima etapa do [Fase de preparação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en).
+Depois de saber como fazer logon no Cloud Acceleration Manager e criar um projeto, você estará pronto para revisar a próxima etapa do [Fase de preparação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html).

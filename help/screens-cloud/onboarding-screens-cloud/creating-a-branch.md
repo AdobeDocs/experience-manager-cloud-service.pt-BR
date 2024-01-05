@@ -2,9 +2,9 @@
 title: Criação de uma ramificação
 description: Esta página descreve a criação de uma ramificação no Cloud Manager para Screens as a Cloud Service.
 exl-id: bcfdcb45-8547-4160-ba47-4f47916ca48a
-source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '220'
+source-wordcount: '210'
 ht-degree: 4%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 4%
 Esta seção descreve como criar uma ramificação para seu programa no Cloud Manager.
 
 >[!NOTE]
->Consulte [Utilização do assistente no Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/using-the-wizard.html?lang=en) para saber como criar um projeto de aplicativo AEM no Cloud Manager usando o assistente.
+>Consulte [Utilização do assistente no Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/using-the-wizard.html) para saber como criar um projeto de aplicativo AEM no Cloud Manager usando o assistente.
 
 ## Objetivo {#objective}
 

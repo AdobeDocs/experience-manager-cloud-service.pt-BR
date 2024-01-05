@@ -2,7 +2,7 @@
 title: Configuração de redes avançadas para o AEM as a Cloud Service
 description: Saiba como configurar recursos avançados de rede, como VPN ou um endereço IP de saída flexível ou dedicado para o AEM as a Cloud Service
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
 source-wordcount: '3526'
 ht-degree: 92%
@@ -15,7 +15,7 @@ Este artigo tem como objetivo apresentar a você os diferentes recursos avançad
 
 >[!INFO]
 >
->Você também pode encontrar uma série de artigos projetados para orientá-lo em cada uma das opções avançadas de rede neste [local](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=pt-BR).
+>Você também pode encontrar uma série de artigos projetados para orientá-lo em cada uma das opções avançadas de rede neste [local](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html).
 
 ## Visão geral {#overview}
 

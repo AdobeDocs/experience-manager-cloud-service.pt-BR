@@ -2,9 +2,9 @@
 title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2021.7.0.
 description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2021.7.0.
 exl-id: 848f6a29-2e0f-4976-8ed7-6b7f69408c1b
-source-git-commit: f956b8379b5b93bc00e25f0eec641430c5565e34
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '1319'
+source-wordcount: '1292'
 ht-degree: 22%
 
 ---
@@ -23,8 +23,8 @@ A seção a seguir descreve as Notas de versão gerais da versão atual (mais re
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] a versão atual (2021.7.0) é 29 de julho de 2021.
-A data de lançamento da versão seguinte (2021.8.0) é 26 de agosto de 2021.
+A data de lançamento da versão atual (2021.7.0) do [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] é sexta-feira, 29 de julho de 2021.
+A versão seguinte (2021.8.0) será lançada em sexta-feira, 26 de agosto de 2021.
 
 ## Vídeo da versão {#release-video}
 
@@ -189,7 +189,7 @@ A data de lançamento do Cloud Acceleration Manager é 15 de julho de 2021.
 
 ### Novidades {#what-is-new-cam}
 
-O Cloud Acceleration Manager é um aplicativo baseado em nuvem projetado para orientar suas equipes de TI durante toda a jornada de transição, começando pelo planejamento até a ativação do Cloud Service. Prepare sua equipe para a migração bem-sucedida com práticas recomendadas, dicas, documentação e ferramentas do Adobe para ajudar em cada fase da jornada a AEM como Cloud Service. Saiba mais [aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en).
+O Cloud Acceleration Manager é um aplicativo baseado em nuvem projetado para orientar suas equipes de TI durante toda a jornada de transição, começando pelo planejamento até a ativação do Cloud Service. Prepare sua equipe para a migração bem-sucedida com práticas recomendadas, dicas, documentação e ferramentas do Adobe para ajudar em cada fase da jornada a AEM como Cloud Service. Saiba mais [aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html).
 
 >[!NOTE]
 >

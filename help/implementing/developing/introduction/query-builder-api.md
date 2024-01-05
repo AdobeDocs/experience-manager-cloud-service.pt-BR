@@ -2,9 +2,9 @@
 title: API do Construtor de consulta
 description: A funcionalidade do Construtor de consultas de compartilhamento de ativos é exposta por meio de uma API Java&trade; e uma API REST.
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '2008'
+source-wordcount: '1830'
 ht-degree: 0%
 
 ---
@@ -27,9 +27,9 @@ A API REST fornece acesso aos mesmos recursos por meio do HTTP, com respostas se
 
 ## Sessão Gem {#gem-session}
 
-[Gems AEM](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html?lang=en) é uma série de aprofundamentos técnicos no Adobe Experience Manager oferecidos por especialistas do Adobe.
+[Gems AEM](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html) é uma série de aprofundamentos técnicos no Adobe Experience Manager oferecidos por especialistas do Adobe.
 
-Você pode [revisar a sessão dedicada ao construtor de consultas](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-search-forms-using-querybuilder.html?lang=en) para obter uma visão geral e usar a ferramenta.
+Você pode [revisar a sessão dedicada ao construtor de consultas](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-search-forms-using-querybuilder.html) para obter uma visão geral e usar a ferramenta.
 
 ## Exemplos de consulta {#sample-queries}
 
@@ -281,7 +281,7 @@ property.3_value=Whistler Mountain Biking
 
 Por padrão, o Servlet JSON do QueryBuilder retorna um conjunto padrão de propriedades para cada nó no resultado da pesquisa (por exemplo, caminho, nome e título). Para obter controle sobre quais propriedades são retornadas, você pode executar um dos seguintes procedimentos:
 
-Especifique
+Especificar
 
 ```xml
 p.hits=full
@@ -320,7 +320,7 @@ p.hits=selective
 p.properties=sling:resourceType jcr:primaryType
 ```
 
-Outra coisa que você pode fazer é incluir nós filhos na resposta do Construtor de consultas. Especifique
+Outra coisa que você pode fazer é incluir nós filhos na resposta do Construtor de consultas. Especificar
 
 ```xml
 p.nodedepth=n
@@ -458,7 +458,7 @@ A variável `path=/tmp` é apenas um exemplo.
 Explicar **all** consultas durante o ciclo de desenvolvimento em relação ao índice de destino definido.
 
 1. Habilitar logs DEBUG para o QueryBuilder a fim de obter consulta XPath subjacente e explicável
-   * Vá até `https://<host>:<port>/system/console/slinglog`. Criar um agente para `com.day.cq.search.impl.builder.QueryImpl` em **DEPURAR**.
+   * Navegue até `https://<host>:<port>/system/console/slinglog`. Criar um agente para `com.day.cq.search.impl.builder.QueryImpl` em **DEPURAR**.
 1. Depois que DEBUG é ativado para a classe acima, os logs exibem o XPath gerado pelo Construtor de consultas.
 1. Copie a consulta XPath da entrada de log da consulta associada do Construtor de Consultas. Por exemplo:
    * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "WKND") or jcr:contains(jcr:content/@cq:tags, "WKND"))]`

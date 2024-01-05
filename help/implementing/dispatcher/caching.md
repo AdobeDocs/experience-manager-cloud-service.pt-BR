@@ -3,10 +3,10 @@ title: Armazenamento em cache no AEM as a Cloud Service
 description: Saiba mais sobre as noções básicas de armazenamento em cache no AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '2873'
-ht-degree: 2%
+source-wordcount: '2775'
+ht-degree: 1%
 
 ---
 
@@ -42,7 +42,7 @@ Esse método é útil, por exemplo, quando a lógica de negócios exige o ajuste
   ```
 
   >[!NOTE]
-  >O cabeçalho Surrogate-Control se aplica ao CDN gerenciado por Adobe. Se estiver usando um [CDN gerenciada pelo cliente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=en#point-to-point-CDN), um cabeçalho diferente pode ser necessário, dependendo do provedor de CDN.
+  >O cabeçalho Surrogate-Control se aplica ao CDN gerenciado por Adobe. Se estiver usando um [CDN gerenciada pelo cliente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html#point-to-point-CDN), um cabeçalho diferente pode ser necessário, dependendo do provedor de CDN.
 
   Tenha cuidado ao definir cabeçalhos de controle de cache global ou cabeçalhos de cache semelhantes que correspondam a um regex amplo para que não sejam aplicados a conteúdo que você deve manter privado. Considere o uso de várias diretivas para garantir que as regras sejam aplicadas de maneira granular. Dito isso, o AEM as a Cloud Service remove o cabeçalho do cache se detectar que ele foi aplicado ao que ele detecta como não armazenável em cache pelo Dispatcher, conforme descrito na Documentação do Dispatcher. Para forçar o AEM a sempre aplicar os cabeçalhos de cache, é possível adicionar o **`always`** opção, como segue:
 
@@ -78,7 +78,7 @@ Esse método é útil, por exemplo, quando a lógica de negócios exige o ajuste
   >Os outros métodos, incluindo o [Projeto Dispatcher-ttl AEM ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), não substitui valores com êxito.
 
   >[!NOTE]
-  >O Dispatcher ainda pode armazenar conteúdo em cache de acordo com sua própria configuração [regras de armazenamento em cache](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html?lang=pt-BR). Para tornar o conteúdo realmente privado, verifique se ele não está armazenado em cache pelo Dispatcher.
+  >O Dispatcher ainda pode armazenar conteúdo em cache de acordo com sua própria configuração [regras de armazenamento em cache](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html). Para tornar o conteúdo realmente privado, verifique se ele não está armazenado em cache pelo Dispatcher.
 
 ### Bibliotecas do lado do cliente (js,css) {#client-side-libraries}
 
@@ -240,7 +240,7 @@ Para ambientes criados em outubro de 2023 ou posteriormente, para melhores solic
 
 Envie um tíquete de suporte se quiser que esse comportamento seja desativado.
 
-Para ambientes criados antes de outubro de 2023, é recomendável definir as configurações do Dispatcher `ignoreUrlParams` propriedade como [documentado aqui](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters).
+Para ambientes criados antes de outubro de 2023, é recomendável definir as configurações do Dispatcher `ignoreUrlParams` propriedade como [documentado aqui](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters).
 
 
 ## Invalidação de cache do Dispatcher {#disp}

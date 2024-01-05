@@ -2,16 +2,16 @@
 title: Proteção da camada do autor
 description: Saiba como configurar as políticas de rede para proteger o acesso à camada do autor.
 exl-id: f5be90a4-266a-4d23-8e8b-94156f0264d5
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '130'
-ht-degree: 29%
+source-wordcount: '119'
+ht-degree: 31%
 
 ---
 
 # Proteção da camada do autor {#securing-the-author-tier}
 
-Ao criar um ambiente com AEM as a Cloud Service, a camada do autor resultante é acessível na Internet por padrão. É possível configurar ainda mais as políticas de rede para proteger o acesso à camada do autor. Consulte [Aplicação de uma Lista de permissões de IP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list.html?lang=en) para obter mais detalhes. O procedimento se baseia na autorização dos intervalos IP que devem receber acesso de rede ao ambiente do autor.
+Ao criar um ambiente com AEM as a Cloud Service, a camada do autor resultante é acessível na Internet por padrão. É possível configurar ainda mais as políticas de rede para proteger o acesso à camada do autor. Consulte [Aplicação de uma Lista de permissões de IP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list.html) para obter mais detalhes. O procedimento se baseia na autorização dos intervalos IP que devem receber acesso de rede ao ambiente do autor.
 
 Para colocar essas regras em vigor, registre um tíquete de suporte, no [Adobe Admin Console](https://adminconsole.adobe.com/) informações solicitadas:
 

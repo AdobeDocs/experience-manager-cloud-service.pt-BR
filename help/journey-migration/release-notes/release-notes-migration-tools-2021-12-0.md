@@ -3,10 +3,10 @@ title: Notas de versão das Ferramentas de migração no AEM as a Cloud Service 
 description: Notas de versão das Ferramentas de migração no AEM as a Cloud Service versão 2021.12.0
 feature: Release Information
 exl-id: 4155e1c0-cd40-4cbc-9d6c-b106d68a2db5
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 46%
+source-wordcount: '251'
+ht-degree: 45%
 
 ---
 
@@ -43,5 +43,5 @@ A data de lançamento da ferramenta de Transferência de conteúdo v1.7.10 é 8 
 
 ### Novidades {#what-is-new-ctt}
 
-* Alternância adicionada à fase de assimilação na ferramenta Transferência de conteúdo para permitir que os usuários desativem [pré-cópia](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) durante a assimilação. Para velocidades de assimilação ideais, a pré-cópia durante a assimilação deve ser desativada para pequenos conjuntos de migração ou se apenas alguns blobs tiverem sido adicionados desde a última assimilação.
+* Alternância adicionada à fase de assimilação na ferramenta Transferência de conteúdo para permitir que os usuários desativem [pré-cópia](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) durante a assimilação. Para velocidades de assimilação ideais, a pré-cópia durante a assimilação deve ser desativada para pequenos conjuntos de migração ou se apenas alguns blobs tiverem sido adicionados desde a última assimilação.
 * Mapeamento de usuários atualizado para usar a API de gerenciamento de usuários aprimorada, que permite obter 2000 usuários de cada vez, melhorando significativamente o desempenho.

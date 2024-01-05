@@ -2,10 +2,10 @@
 title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2021.6.0.
 description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2021.6.0.
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '1435'
-ht-degree: 34%
+source-wordcount: '1432'
+ht-degree: 32%
 
 ---
 
@@ -153,7 +153,7 @@ A data de lançamento do AEM Screens as a Cloud Service é 24 de junho de 2021.
 ### Novidades {#what-is-new-screens-june}
 
 >[!NOTE]
->Consulte [AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html?lang=en) Guia do conhecimento fundamental necessário para instalar, configurar e executar com êxito o Screens as a Cloud Service e link para a documentação técnica de conceitos detalhados.
+>Consulte [AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html) Guia do conhecimento fundamental necessário para instalar, configurar e executar com êxito o Screens as a Cloud Service e link para a documentação técnica de conceitos detalhados.
 
 * O gerenciamento de registro de dispositivos em massa significa que o provisionamento de grandes quantidades de dispositivos de reprodução é mais rápido e eficiente.
 
@@ -182,7 +182,7 @@ A data de lançamento da ferramenta de Transferência de conteúdo v1.5.4 é 28 
 
 ### Novidades {#what-is-new-ctt-latest}
 
-* Suporte para um [pré-cópia](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) etapa adicionada para uso com CTT. A etapa de pré-cópia pode ser usada para acelerar significativamente as fases de extração e assimilação da atividade de transferência de conteúdo quando a instância do AEM de origem for configurada para usar um armazenamento de dados Amazon S3 ou Azure Blob.
+* Suporte para um [pré-cópia](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) etapa adicionada para uso com CTT. A etapa de pré-cópia pode ser usada para acelerar significativamente as fases de extração e assimilação da atividade de transferência de conteúdo quando a instância do AEM de origem for configurada para usar um armazenamento de dados Amazon S3 ou Azure Blob.
 
 * A grade de proteção foi adicionada à CTT para impedir que os usuários interrompam uma assimilação e corrompam os dados quando eles atingirem o ponto crítico durante a fase de assimilação.
 

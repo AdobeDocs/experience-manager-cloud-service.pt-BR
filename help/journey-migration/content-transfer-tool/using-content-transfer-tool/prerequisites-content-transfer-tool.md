@@ -2,10 +2,10 @@
 title: Pré-requisitos para a ferramenta Transferência de conteúdo
 description: Familiarize-se com os pré-requisitos da Ferramenta de transferência de conteúdo
 exl-id: 41a9cff1-4d89-480c-b9fc-5e8efc2a0705
-source-git-commit: 5964801192fc4a50b7f04852e3128f8218ca4cc5
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '553'
-ht-degree: 17%
+source-wordcount: '500'
+ht-degree: 11%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 17%
 >id="aemcloud_ctt_prereqs"
 >title="Considerações importantes sobre o uso da ferramenta de transferência de conteúdo"
 >abstract="Revise considerações importantes para usar a Ferramenta de Transferência de Conteúdo, incluindo versões do Java™ e AEM, tipos compatíveis de armazenamento de dados, considerações sobre grupos de usuários e mais."
-additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=pt-BR" text="Considerações importantes sobre o uso da ferramenta Transferência de conteúdo"
-additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=pt-BR#best-practices" text="Práticas recomendadas e diretrizes"
+additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=pt-BR" text="Considerações importantes sobre o uso da Ferramenta de Transferência de Conteúdo"
+additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#best-practices" text="Práticas recomendadas e diretrizes"
 
 A tabela a seguir resume os pré-requisitos para usar a Ferramenta de transferência de conteúdo.
 

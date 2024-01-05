@@ -2,7 +2,7 @@
 title: Regras de filtro de tráfego incluindo regras WAF
 description: Configuração das regras de filtro de tráfego incluindo as regras do WAF (Web Application Firewall)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
 source-wordcount: '3357'
 ht-degree: 0%
@@ -53,7 +53,7 @@ Por padrão, o Adobe adota medidas para evitar a degradação do desempenho devi
 
 Os clientes podem tomar medidas proativas para atenuar os ataques à camada do aplicativo (camada 7), configurando regras em várias camadas do fluxo de entrega de conteúdo.
 
-Por exemplo, na camada Apache, os clientes podem configurar a variável [módulo do dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-access-to-content-filter) ou [ModSecurity](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection.html?lang=en) para limitar o acesso a determinados conteúdos.
+Por exemplo, na camada Apache, os clientes podem configurar a variável [módulo do dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-access-to-content-filter) ou [ModSecurity](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection.html) para limitar o acesso a determinados conteúdos.
 
 E, como este artigo descreve, as regras de filtro de tráfego podem ser implantadas no CDN gerenciado pelo Adobe, usando o pipeline de configuração do Cloud Manager. Além das regras de filtro de tráfego baseadas em propriedades como endereço IP, caminho e cabeçalhos ou regras baseadas na definição de limites de taxa, os clientes também podem licenciar uma subcategoria avançada de regras de filtro de tráfego chamada regras WAF.
 

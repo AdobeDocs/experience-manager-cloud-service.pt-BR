@@ -2,9 +2,9 @@
 title: Exportar fragmentos de experiência para o Adobe Target
 description: Saiba como exportar fragmentos de experiência para o Adobe Target, testar e personalizar experiências.
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '2246'
+source-wordcount: '2184'
 ht-degree: 95%
 
 ---
@@ -52,7 +52,7 @@ Os fragmentos de experiência podem ser exportados para o espaço de trabalho pa
 >
 >* [Desenvolvimento do Adobe Target](https://developers.adobetarget.com/)
 >* [Componentes principais - Fragmentos de experiência](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)
->* [Adobe Target - como usar os fragmentos de experiência do Adobe Experience Manager (AEM)?](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html?lang=pt-BR)
+>* [Adobe Target - como usar os fragmentos de experiência do Adobe Experience Manager (AEM)?](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html)
 >* [AEM 6.5 - configuração manual da integração com o Adobe Target - criação de uma configuração da nuvem do Target](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-configuring.html?lang=pt-BR#creating-a-target-cloud-configuration)
 
 ## Pré-requisitos {#prerequisites}

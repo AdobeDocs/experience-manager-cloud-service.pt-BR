@@ -1,10 +1,10 @@
 ---
 title: Processo de provisionamento - Visão geral
 description: Processo de provisionamento - Visão geral
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '330'
-ht-degree: 100%
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+workflow-type: tm+mt
+source-wordcount: '291'
+ht-degree: 98%
 
 ---
 
@@ -34,13 +34,13 @@ Quando o provisionamento automático for concluído:
 ![processoverview.jpg](assets/processOverview.jpg)
 
 
-Para obter mais informações, consulte [Integração do Experience Manager as a Cloud Service na Experience League](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=pt-BR).
+Para obter mais informações, consulte [Integração do Experience Manager as a Cloud Service na Experience League](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html).
 
 ### Recursos e links
 
 * [Suporte IMS do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=pt-BR)
-* [Permissões com base em funções no Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html?lang=pt-BR#what-is-required)
-* [Acesso ao Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=pt-BR#getting-access)
+* [Permissões com base em funções no Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html#what-is-required)
+* [Acesso ao Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#getting-access)
 
 
 ## Processo de integração do Adobe Experience Manager as a Cloud Service
@@ -75,4 +75,4 @@ Diretory da empresa
 ## Ajuda e recursos
 
 * [Primeiro logon - Cloud Service](/help/journey-onboarding/sysadmin/learning-path-aem-users.md)
-* [Configuração do acesso ao AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=pt-BR#accessing)
+* [Configuração do acesso ao AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html#accessing)

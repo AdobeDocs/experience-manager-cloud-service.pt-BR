@@ -2,7 +2,7 @@
 title: Registro, logon e perfil do usuário
 description: Saiba mais sobre registro, logon, dados do usuário e sincronização de grupos no AEM as a Cloud Service
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
 source-wordcount: '1132'
 ht-degree: 90%
@@ -94,7 +94,7 @@ Existem várias abordagens para dados persistentes, dependendo da natureza desse
 As informações do perfil do usuário podem ser escritas e lidas de duas maneiras:
 
 * Pelo uso do servidor com a interface `com.adobe.granite.security.user` do UserPropertiesManager, que colocará os dados sob o nó do usuário em `/home/users`. Certifique-se de que as páginas exclusivas por usuário não sejam armazenadas em cache.
-* Pelo lado do cliente usando o ContextHub, conforme descrito na [documentação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/personalization/contexthub.html?lang=pt-BR#personalization).
+* Pelo lado do cliente usando o ContextHub, conforme descrito na [documentação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/personalization/contexthub.html#personalization).
 
 ### Armazenamento de dados de terceiros {#third-party-data-stores}
 
@@ -104,7 +104,7 @@ Os dados do usuário final podem ser enviados a fornecedores terceirizados, como
 
 ## Permissões (grupos de usuários fechados) {#permissions-closed-user-groups}
 
-As políticas de acesso do nível de publicação, também chamadas de Grupos de usuários fechados (CUGs), são definidas no autor do AEM, conforme [descrito aqui](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html?lang=pt-BR#applying-your-closed-user-group-to-content-pages). Para restringir determinadas seções ou páginas de um site para alguns usuários, aplique os CUGs conforme necessário usando o autor do AEM, conforme descrito aqui, e replique-os no nível de publicação.
+As políticas de acesso do nível de publicação, também chamadas de Grupos de usuários fechados (CUGs), são definidas no autor do AEM, conforme [descrito aqui](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html#applying-your-closed-user-group-to-content-pages). Para restringir determinadas seções ou páginas de um site para alguns usuários, aplique os CUGs conforme necessário usando o autor do AEM, conforme descrito aqui, e replique-os no nível de publicação.
 
 * Se os usuários fizerem logon com autenticação através de um provedor de identidade (IdP) usando SAML, o manipulador de autenticação identificará as associações de grupo do usuário (que devem corresponder aos CUGs no nível de publicação) e manterá a associação entre o usuário e o grupo por meio de um registro de repositório
 * Se o logon for realizado sem a integração de um IdP, um código personalizado poderá aplicar os mesmos relacionamentos de estrutura do repositório.

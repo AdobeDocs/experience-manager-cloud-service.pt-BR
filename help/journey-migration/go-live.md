@@ -2,7 +2,7 @@
 title: Publicação
 description: Saiba como executar a migração depois que o código e o conteúdo estiverem prontos para nuvem
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 75d702cf45e38da4b7259907e7f707b6f18bd428
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
 source-wordcount: '1721'
 ht-degree: 4%
@@ -126,7 +126,7 @@ Revise esta lista de atividades para garantir que você execute uma migração t
 * Faça a complementação do conteúdo final.
 * Validar configurações do dispatcher.
    * Usar um validador de dispatcher local que facilite a configuração, validação e simulação do dispatcher localmente
-      * [Configurar as ferramentas do dispatcher local.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=en#prerequisites)
+      * [Configurar as ferramentas do dispatcher local.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html#prerequisites)
    * Analise cuidadosamente a configuração do host virtual.
       * A solução mais fácil (e padrão) é incluir `ServerAlias *` em seu arquivo de host virtual no `/dispatcher/src/conf.d/available_vhostsfolder`.
          * Isso permitirá que os aliases de host usados pelos testes funcionais do produto, invalidação do cache do dispatcher e clones funcionem.

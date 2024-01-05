@@ -2,10 +2,10 @@
 title: Fase de preparação
 description: Saiba mais sobre as etapas necessárias para garantir que a instalação do AEM esteja pronta para ser movida para a nuvem.
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '2066'
-ht-degree: 7%
+source-wordcount: '1900'
+ht-degree: 6%
 
 ---
 
@@ -49,7 +49,7 @@ A lista de itens na tabela abaixo é o subconjunto das alterações mais relevan
 <tbody>
   <tr>
     <td>Separe filtros mutáveis e imutáveis em pacotes correspondentes</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes.html?lang=pt-BR">Mudanças notáveis as a Cloud Service do AEM</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html#mutable-vs-immutable">Estrutura de projeto do AEM para o AEM as a Cloud Service</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes.html?lang=en">Mudanças notáveis as a Cloud Service do AEM</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html#mutable-vs-immutable">Estrutura de projeto do AEM para o AEM as a Cloud Service</a></td>
     <td>Um único pacote que pode ser implantado no AEM as a Cloud Service pode ter pacotes secundários, principalmente para conter conteúdo mutável e imutável separado em seus próprios pacotes.</td>
   </tr>
   <tr>
@@ -89,12 +89,12 @@ A lista de itens na tabela abaixo é o subconjunto das alterações mais relevan
   </tr>
   <tr>
     <td>Alternar para operações assíncronas</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/asynchronous-jobs.html?lang=en#configuring-asynchronous-msm-operations">Configurar operações assíncronas</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/asynchronous-jobs.html#configuring-asynchronous-msm-operations">Configurar operações assíncronas</a></td>
     <td>Para melhorar o desempenho geral de seus ambientes, determinadas operações são executadas no modo assíncrono. Os trabalhos assíncronos são enfileirados e executados quando os recursos do sistema estão disponíveis.</td>
   </tr>
   <tr>
     <td>Estratégias de autenticação e integração baseadas em token</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#the-server-to-server-flow">Geração de tokens de acesso para APIs do lado do servidor</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication">Tutorial de autenticação baseada em token</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow">Geração de tokens de acesso para APIs do lado do servidor</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication">Tutorial de autenticação baseada em token</a></td>
     <td>É comum que sistemas externos ao AEM estejam tentando executar operações HTTP dentro do AEM.<br>A abordagem recomendada é implementar as estratégias descritas aqui, em vez de depender da criação de nomes de usuários locais com senhas no AEM.</td>
   </tr>
   <tr>
@@ -109,13 +109,13 @@ A lista de itens na tabela abaixo é o subconjunto das alterações mais relevan
   </tr>
   <tr>
     <td>Métodos de upload de ativos e etapas do processo de fluxo de trabalho compatíveis no AEM as a Cloud Service</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis.html?lang=en#post-processing-workflows-steps">Fazer upload de comparações de API e etapas do processo WF compatíveis</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis.html#post-processing-workflows-steps">Fazer upload de comparações de API e etapas do processo WF compatíveis</a></td>
     <td>No AEM as a Cloud Service, durante o upload ou o download de um ativo, o ativo flui diretamente para dentro ou para fora do armazenamento binário. <br>Nem todas as etapas do processo de fluxo de trabalho são compatíveis com o AEMaaCS.</td>
   </tr>
   <tr>
     <td>Inicializadores do fluxo de trabalho</td>
     <td></td>
-    <td>Remova todos os Iniciadores de fluxo de trabalho que estão acionando o fluxo de trabalho de ativos de atualização do DAM pronto para uso ou personalizado do seu código. <br>Todos os ativos carregados no AEM as a Cloud Service serão processados pelo Serviço de processamento de ativos. Para obter etapas personalizadas, consulte <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en#post-processing-workflows"> Fluxos de trabalho de pós processamento</a> sobre como configurar fluxos de trabalho de pós-processamento.</td>
+    <td>Remova todos os Iniciadores de fluxo de trabalho que estão acionando o fluxo de trabalho de ativos de atualização do DAM pronto para uso ou personalizado do seu código. <br>Todos os ativos carregados no AEM as a Cloud Service serão processados pelo Serviço de processamento de ativos. Para obter etapas personalizadas, consulte <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows"> Fluxos de trabalho de pós processamento</a> sobre como configurar fluxos de trabalho de pós-processamento.</td>
   </tr>
   <tr>
     <td>Etapas de representação personalizadas</td>
@@ -139,7 +139,7 @@ A lista de itens na tabela abaixo é o subconjunto das alterações mais relevan
   </tr>
   <tr>
     <td>Configurações e armazenamento em cache do Dispatcher</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html?lang=en">Dispatcher na nuvem</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=en#other-content">Gerenciamento de cache<br></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html?lang=en">Dispatcher na nuvem</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#other-content">Gerenciamento de cache<br></td>
     <td>As configurações do Dispatcher devem seguir uma estrutura específica.<br>As configurações devem ser gerenciadas como parte do código e implantadas por meio do pipeline do Cloud Manager.</td>
   </tr>
   <tr>
@@ -149,7 +149,7 @@ A lista de itens na tabela abaixo é o subconjunto das alterações mais relevan
   </tr>
   <tr>
     <td>Alterações na autenticação</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=pt-BR">Suporte IMS do AEM as a Cloud Service</td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=en">Suporte IMS do AEM as a Cloud Service</td>
     <td>Se você já estava usando a integração SAML 2.0 na criação e na publicação antes de migrar para o Cloud Service, a principal alteração é que o AEM as a Cloud Service Author só se integra ao Adobe IMS. No entanto, o nível de publicação as a Cloud Service do AEM ainda pode usar SAML ou outras integrações de autenticação. O AEM as a Cloud Service oferece suporte à autenticação IMS somente para os usuários Autor, Administrador e Desenvolvedor. A autenticação IMS não oferece suporte para usuários finais externos de sites do cliente, como visitantes do site.</td>
   </tr>
 </tbody>

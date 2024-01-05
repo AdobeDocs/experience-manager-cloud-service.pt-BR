@@ -1,16 +1,16 @@
 ---
-title: Notas de versão do [!DNL Adobe Experience Manager]  as a Cloud Service 2021.1.0.
+title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2021.1.0.
 description: "[!DNL Adobe Experience Manager] Notas de versão as a Cloud Service para 2021.1.0."
 exl-id: cd639736-6e3d-4b69-b8ae-11e4e6490535
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '854'
-ht-degree: 25%
+source-wordcount: '791'
+ht-degree: 21%
 
 ---
 
 
-# Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service  {#release-notes}
+# Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 A seção a seguir descreve as Notas de versão gerais do [!DNL Experience Manager] as a Cloud Service.
 
@@ -52,9 +52,9 @@ A versão seguinte (2021.2.0) será lançada em 25 de fevereiro de 2021.
 
 * Gerenciamento da experiência do produto: nova guia de propriedades &quot;Comércio&quot; para Ativos e Fragmentos de experiência. Essa guia permite vincular produtos/categorias a Ativos e Fragmentos de experiência. A guia também mostra dados em tempo real para produtos/categorias vinculados e um link para mostrar detalhes no console do produto.
 
-* Lançamento do site de referência CIF Venia em 2021.02.02 que inclui a versão mais recente dos componentes principais CIF v1.7.0. Consulte [Site de referência CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.02) para obter mais detalhes.
+* Lançamento do site de referência CIF Venia - 2021.02.02 que inclui a versão mais recente dos componentes principais CIF v1.7.0. Consulte [Site de referência CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.02) para obter mais detalhes.
 
-* Lançamento de componentes principais CIF v1.7.0. Consulte [Componentes principais da CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.7.0) para obter mais detalhes.
+* Lançamento de componentes principais de CIF v1.7.0. Consulte [Componentes principais do CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.7.0) para obter mais detalhes.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -74,7 +74,7 @@ A data de lançamento do Cloud Manager no AEM as a Cloud Service 2021.1.0 é 14 
 
 ### Novidades do [!DNL Code Refactoring Tools] {#what-is-new-crt}
 
-* Nova versão do plug-in AIO-CLI lançada. A versão mais recente deste plug-in inclui correções de erros para o AEM Dispatcher Converter e o Repository Modernizer, além de oferecer suporte a um novo utilitário: Conversor de índice. Consulte [Experiência unificada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits) para saber mais sobre este plug-in.
+* Nova versão do plug-in AIO-CLI lançada. A versão mais recente deste plug-in inclui correções de erros para o AEM Dispatcher Converter e o Repository Modernizer, além de oferecer suporte a um novo utilitário: Conversor de índice. Consulte [Experiência unificada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html#benefits) para saber mais sobre este plug-in.
 
 * O Conversor de índice é um utilitário que pode ser usado para transformar as Definições de índice OAK personalizado de um cliente em Definições de índice OAK compatíveis com AEM as a Cloud Service. Consulte [Conversor de índice](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) para obter mais detalhes.
 
@@ -88,7 +88,7 @@ A data de lançamento do Cloud Manager no AEM as a Cloud Service 2021.1.0 é 14 
 
 ### Novidades {#what-is-new-foundation}
 
-* Chamadas de API autenticadas de servidor para servidor - Gere os tokens de acesso apropriados para fazer chamadas autenticadas de API de servidor para servidor entre seus aplicativos externos e ambientes as a Cloud Service de AEM. Saiba mais lendo [a documentação](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) ou consultando o [tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication).
+* Chamadas de API autenticadas de servidor para servidor - Gere os tokens de acesso apropriados para fazer chamadas autenticadas de API de servidor para servidor entre seus aplicativos externos e ambientes as a Cloud Service de AEM. Saiba mais lendo [a documentação](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) ou consultando o [tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication).
 
 ### Analisadores de build do SDK {#sdk-build-analyzers}
 
@@ -105,10 +105,10 @@ Para obter mais informações, consulte a documentação [aqui](https://experien
 
 ### Data de lançamento {#release-date-ctt}
 
-A data de lançamento da Ferramenta de transferência de conteúdo v1.2.2 é 01 de fevereiro de 2021.
+A data de lançamento da ferramenta de transferência de conteúdo v1.2.2 é 1º de fevereiro de 2021.
 
 ### Novidades do [!DNL Content Transfer Tool] {#what-is-new-ctt}
 
-* Novo recurso e interface adicionados à Ferramenta de transferência de conteúdo - Ferramenta de mapeamento do usuário. Esse recurso mapeia automaticamente usuários e grupos existentes para suas IDs de sistema do Adobe Identity Management como parte da atividade de migração de conteúdo. Consulte [Usar a ferramenta de Mapeamento de usuários](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=pt-BR) para obter mais detalhes.
+* Novo recurso e interface adicionados à Ferramenta de transferência de conteúdo - Ferramenta de mapeamento do usuário. Esse recurso mapeia automaticamente usuários e grupos existentes para suas IDs de sistema do Adobe Identity Management como parte da atividade de migração de conteúdo. Consulte [Usar a ferramenta de Mapeamento de usuários](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) para obter mais detalhes.
 * A Ferramenta de transferência de conteúdo agora migra todos os grupos e usuários referenciados no conjunto de migração, incluindo filhos.
 * Os usuários podem selecionar determinados caminhos em `/etc` ao criar conjuntos de migração.

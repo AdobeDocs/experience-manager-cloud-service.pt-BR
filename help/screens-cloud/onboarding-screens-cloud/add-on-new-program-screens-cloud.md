@@ -2,10 +2,10 @@
 title: Adicionar o complemento Screens a um novo programa no Cloud Manager
 description: Saiba mais sobre como adicionar um complemento do Screens a um novo programa no Cloud Manager para Screens as a Cloud Service.
 exl-id: 36d1e1e9-5272-4138-9e0d-8476edc729f0
-source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 6%
+source-wordcount: '288'
+ht-degree: 3%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 6%
 Esta seção descreve como adicionar o Screens como um complemento a um novo programa no Cloud Manager.
 
 >[!NOTE]
->Consulte [Noções básicas sobre programas e tipos de programas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/program-types.html?lang=en) para saber mais sobre os programas do Cloud Manager.
+>Consulte [Noções básicas sobre programas e tipos de programas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/program-types.html?lang=pt-BR) para saber mais sobre os programas do Cloud Manager.
 
 ## Objetivo {#objective}
 

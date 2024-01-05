@@ -2,10 +2,10 @@
 title: Diretrizes e práticas recomendadas para usar a ferramenta Transferência de conteúdo
 description: Saiba mais sobre as diretrizes e práticas recomendadas para usar a ferramenta Transferência de conteúdo.
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: 5f805122fb52d7f5268075bd7a6a0232e7e8d2ff
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '1432'
-ht-degree: 16%
+source-wordcount: '1401'
+ht-degree: 15%
 
 ---
 
@@ -35,7 +35,7 @@ As versões anteriores à 2.0.0 não são compatíveis e recomenda-se usar a ver
 
 As diretrizes e práticas recomendadas a seguir se aplicam à nova versão da ferramenta Transferência de conteúdo:
 
-* Executar [Limpeza de revisão](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=pt-BR) e [verificações de consistência do armazenamento de dados](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16550.html?lang=pt-BR) no **origem** para que você possa identificar possíveis problemas e reduzir o tamanho do repositório.
+* Executar [Limpeza de revisão](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=pt-BR) e [verificações de consistência do armazenamento de dados](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16550.html) no **origem** para que você possa identificar possíveis problemas e reduzir o tamanho do repositório.
 
 * Na fase de assimilação, o Adobe recomenda executar a assimilação usando o *varrer* modo ativado onde o repositório existente (autor ou publicação) no ambiente de Cloud Service do Adobe Experience Manager (AEM) de destino é excluído. Em seguida, atualize com os dados do conjunto de migração. Esse modo é mais rápido que o modo sem limpeza, no qual o conjunto de migração é aplicado sobre o conteúdo atual.
 

@@ -3,9 +3,9 @@ title: Notas de versão das Ferramentas de migração no AEM as a Cloud Service 
 description: Notas de versão das Ferramentas de migração no AEM as a Cloud Service versão 2022.1.0
 feature: Release Information
 exl-id: cbd0c316-bda3-48fb-89d6-a8f97bad1970
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '133'
 ht-degree: 6%
 
 ---
@@ -22,7 +22,7 @@ A data de lançamento da ferramenta de Transferência de conteúdo v1.7.18 é 18
 
 ### Novidades {#what-is-new-ctt}
 
-* Alternância adicionada à fase de extração na ferramenta Transferência de conteúdo para permitir que os usuários desativem o [pré-cópia](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) durante a extração. Para obter as velocidades de extração ideais, a pré-cópia durante a extração deve ser desativada para pequenos conjuntos de migração ou se apenas alguns blobs tiverem sido adicionados desde a última extração.
+* Alternância adicionada à fase de extração na ferramenta Transferência de conteúdo para permitir que os usuários desativem o [pré-cópia](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) durante a extração. Para obter as velocidades de extração ideais, a pré-cópia durante a extração deve ser desativada para pequenos conjuntos de migração ou se apenas alguns blobs tiverem sido adicionados desde a última extração.
 
 ### Correções de erros {#bug-fixes-ctt}
 

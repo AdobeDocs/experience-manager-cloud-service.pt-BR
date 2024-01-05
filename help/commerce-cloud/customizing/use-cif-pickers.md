@@ -1,6 +1,6 @@
 ---
-title: Uso do seletor de produto e categoria da CIF
-description: Saiba como usar o seletor de produto e categoria da CIF nos componentes de comércio do cliente para oferecer suporte a autores e profissionais de marketing que trabalham com eficiência com dados de produtos e catálogos de comércio.
+title: Uso do seletor de categoria e produto para CIF
+description: Saiba como usar o seletor de produto e categoria de CIF nos componentes de comércio do cliente para apoiar autores e profissionais de marketing a trabalhar com eficiência com dados de produtos e catálogos de comércio.
 sub-product: Commerce
 topics: Development
 version: Cloud Service
@@ -8,16 +8,16 @@ activity: develop
 audience: developer
 feature: Commerce Integration Framework
 exl-id: 30f1f263-1b78-46ae-99ed-61861c488b2a
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '620'
+source-wordcount: '561'
 ht-degree: 0%
 
 ---
 
 # Seletores de criação de conteúdo e comércio de AEM {#cif-pickers}
 
-A criação de conteúdo e comércio do AEM fornece um conjunto de ferramentas de criação para ajudar os autores e profissionais de marketing do AEM a trabalhar com eficiência com dados e catálogos de produtos comerciais. O seletor de produtos e o seletor de categorias fazem parte do complemento CIF e são usados pelos Componentes principais da CIF. Os projetos podem usar esses seletores em qualquer caixa de diálogo de componente para selecionar produtos ou categorias.
+A criação de conteúdo e comércio do AEM fornece um conjunto de ferramentas de criação para ajudar os autores e profissionais de marketing do AEM a trabalhar com eficiência com dados e catálogos de produtos comerciais. O Seletor de produto e o Seletor de categoria fazem parte do complemento CIF e são usados pelos Componentes principais do CIF. Os projetos podem usar esses seletores em qualquer caixa de diálogo de componente para selecionar produtos ou categorias.
 
 ## Seletor de produtos {#product-picker}
 
@@ -49,9 +49,9 @@ Além disso, as propriedades padrão do campo de caixa de diálogo, como `name`,
 >A variável `cifproductfield` exige que o `cif.shell.picker` clientlib. Para adicionar uma clientlib a uma caixa de diálogo, é possível usar a propriedade extraClientlibs.
 >[!CAUTION]
 >
->A partir da versão 2.0.0 dos Componentes principais da CIF, o suporte para `id` foi removido e substituído por `uid`. O Adobe recomenda usar `sku` ou `slug` como um identificador de produto. O Adobe continua a oferecer suporte `id` somente para projetos que usam os Componentes principais da CIF versão 1.x.
+>A partir da versão 2.0.0 dos Componentes principais do CIF, o suporte para `id` foi removido e substituído por `uid`. O Adobe recomenda usar `sku` ou `slug` como um identificador de produto. O Adobe continua a oferecer suporte `id` somente para projetos que usam os Componentes principais do CIF versão 1.x.
 
-Um exemplo completo de funcionamento do `cifproductfield` pode ser encontrado no [Componentes principais da CIF](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/_cq_dialog/.content.xml) projeto. Consulte também [Personalização de caixas de diálogo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs) da documentação dos Componentes principais do AEM.
+Um exemplo completo de funcionamento do `cifproductfield` pode ser encontrado no [Componentes principais do CIF](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/_cq_dialog/.content.xml) projeto. Consulte também [Personalização de caixas de diálogo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-dialogs) da documentação dos Componentes principais do AEM.
 
 ## Seletor de Categoria {#category-picker}
 
@@ -76,9 +76,9 @@ Além disso, as propriedades padrão do campo de caixa de diálogo, como `name`,
 
 >[!CAUTION]
 >
->Igual ao `cifproductfield` componente o `cifcategoryfield` O componente também exige que o `cif.shell.picker` clientlib. Para adicionar uma clientlib a uma caixa de diálogo, você pode usar o `extraClientlibs` propriedade. Consulte [Personalização de caixas de diálogo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs) da documentação dos Componentes principais do AEM.
+>Igual ao `cifproductfield` componente o `cifcategoryfield` O componente também exige que o `cif.shell.picker` clientlib. Para adicionar uma clientlib a uma caixa de diálogo, você pode usar o `extraClientlibs` propriedade. Consulte [Personalização de caixas de diálogo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-dialogs) da documentação dos Componentes principais do AEM.
 >[!CAUTION]
 >
->A partir da versão 2.0.0 dos Componentes principais da CIF, o suporte para `id` foi removido e substituído por `uid`. O Adobe recomenda usar `uid` ou `urlPath` como identificador de categoria. continuar a oferecer suporte ao Adobe `id` &amp; `idAndUrlPath` somente para projetos que usam os Componentes principais da CIF versão 1.x.
+>A partir da versão 2.0.0 dos Componentes principais do CIF, o suporte para `id` foi removido e substituído por `uid`. O Adobe recomenda usar `uid` ou `urlPath` como identificador de categoria. continuar a oferecer suporte ao Adobe `id` &amp; `idAndUrlPath` somente para projetos que usam os Componentes principais do CIF versão 1.x.
 
-Um exemplo completo de funcionamento do `cifcategoryfield` pode ser encontrado no [Componentes principais da CIF](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/featuredcategorylist/v1/featuredcategorylist/_cq_dialog/.content.xml) projeto.
+Um exemplo completo de funcionamento do `cifcategoryfield` pode ser encontrado no [Componentes principais do CIF](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/featuredcategorylist/v1/featuredcategorylist/_cq_dialog/.content.xml) projeto.

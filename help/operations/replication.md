@@ -2,10 +2,10 @@
 title: Replicação
 description: Saiba mais sobre distribuição e solução de problemas de replicação no AEM as a Cloud Service.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '1341'
-ht-degree: 43%
+source-wordcount: '1312'
+ht-degree: 39%
 
 ---
 
@@ -57,12 +57,12 @@ Você pode acionar uma replicação em árvore ao escolher **Ferramentas - Fluxo
 
 Não chame o modelo original. Em vez disso, primeiro copie o modelo e chame essa cópia.
 
-Como todos os fluxos de trabalho, também é possível chamá-lo por meio da API. Para obter mais informações, consulte [Interação programática com fluxos de trabalho](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html?lang=pt-BR).
+Como todos os fluxos de trabalho, também é possível chamá-lo por meio da API. Para obter mais informações, consulte [Interação programática com fluxos de trabalho](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html#extending-aem).
 
 Como alternativa, você pode criar um Modelo de fluxo de trabalho que use a variável `Publish Content Tree` etapa do processo:
 
 1. Na página inicial do AEM as a Cloud Service, acesse **Ferramentas - Fluxo de trabalho - Modelos**.
-1. Na página Modelos de fluxo de trabalho, clique em **Criar** no canto superior direito da tela.
+1. Na página Modelos de fluxo de trabalho, pressione **Criar** no canto superior direito da tela.
 1. Adicione um título e um nome ao modelo. Para obter mais informações, consulte [Criação de modelos de fluxo de trabalho](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=pt-BR).
 1. Selecione o modelo criado na lista e pressione **Editar**
 1. Na janela a seguir, arraste e solte a etapa do processo no fluxo do modelo atual:

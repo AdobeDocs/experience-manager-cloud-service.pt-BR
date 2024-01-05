@@ -2,9 +2,9 @@
 title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2023.8.0.
 description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2023.8.0.
 exl-id: a0ffa6cf-64ae-468c-93f4-ac6805ef907e
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '1687'
+source-wordcount: '1691'
 ht-degree: 18%
 
 ---
@@ -15,7 +15,7 @@ A seção a seguir descreve as notas da versão de recursos do [!DNL Experience 
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] A versão atual do recurso (2023.8.0) é 31 de agosto de 2023. A próxima versão do recurso (2023.9.0) está planejada para 28 de setembro de 2023.
+A data de lançamento da versão atual (2023.8.0) do [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] é sexta-feira, 31 de agosto de 2023. O próximo lançamento de recursos (2023.9.0) está planejado para sexta-feira, 28 de setembro de 2023.
 
 ## Vídeo da versão {#release-video}
 
@@ -70,11 +70,11 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
   ![Importação em massa de ativos de uma fonte de dados](/help/release-notes/assets/bulk-import.png)
 
-* **Ferramentas de edição de imagem viabilizadas pelo Adobe Express**: fácil e intuitivo [ferramentas de edição de imagens viabilizadas pelo Adobe Express](/help/assets/edit-images-assets-view.md) disponível diretamente no AEM Assets para aumentar a reutilização de conteúdo e acelerar a velocidade do conteúdo.
+* **Ferramentas de edição de imagens possibilitadas pelo Adobe Express**: fácil e intuitivo [ferramentas de edição de imagens viabilizadas pelo Adobe Express](/help/assets/edit-images-assets-view.md) disponível diretamente no AEM Assets para aumentar a reutilização de conteúdo e acelerar a velocidade do conteúdo.
 
   ![Edição de imagens com o Adobe Express](/help/release-notes/assets/edit-adobe-express.png)
 
-* **Flexibilidade ao fixar itens no Acesso rápido do Meu espaço de trabalho**: capacidade de selecionar e fixar itens para você, para toda a organização ou para uma lista de grupos para que sejam exibidos no [Seção Acesso rápido do Meu Espaço de Trabalho](/help/assets/my-workspace-assets-view.md) com base na sua seleção.
+* **Flexibilidade ao fixar itens para o Acesso rápido ao My Workspace**: capacidade de selecionar e fixar itens para você, para toda a organização ou para uma lista de grupos para que sejam exibidos no [Seção Acesso rápido do Meu Espaço de Trabalho](/help/assets/my-workspace-assets-view.md) com base na sua seleção.
 
   ![Fixação de itens para grupos](/help/release-notes/assets/pin-items-for-groups.png)
 

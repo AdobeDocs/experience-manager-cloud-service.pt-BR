@@ -3,9 +3,9 @@ title: Suporte a miniaturas para vídeos no Screens as a Cloud Service
 description: Esta página descreve como adicionar suporte a miniaturas para vídeos no Screens as a Cloud Service.
 index: true
 exl-id: 7b15d7cc-f089-4008-9039-5f48343a0f20
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '548'
 ht-degree: 1%
 
 ---
@@ -38,7 +38,7 @@ Siga as etapas abaixo para usar a miniatura em vídeos:
 1. Navegue até um canal do Screens existente ou crie um canal.
 
    >[!NOTE]
-   >Para saber como criar um canal e adicionar conteúdo a um canal, consulte [Criação e gerenciamento de um canal no Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html?lang=en).
+   >Para saber como criar um canal e adicionar conteúdo a um canal, consulte [Criação e gerenciamento de um canal no Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html).
 
 1. Selecione o canal. Na barra de ações, clique em **Editar** para abrir o editor.
 

@@ -3,7 +3,7 @@ title: Geração de tokens de acesso para APIs do lado do servidor (herdado)
 description: Saiba como facilitar a comunicação entre um servidor de terceiros e o AEM as a Cloud Service gerando um token JWT seguro
 hidefromtoc: true
 exl-id: 6561870c-cbfe-40ef-9efc-ea75c88c4ed7
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
 source-wordcount: '1359'
 ht-degree: 0%
@@ -19,11 +19,11 @@ O fluxo de servidor para servidor é descrito abaixo, juntamente com um fluxo si
 <!-- ERROR: Not Found (HTTP error 404)
 >[!NOTE]
 >
->In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
+>In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
 
 ## O fluxo de servidor para servidor {#the-server-to-server-flow}
 
-Um usuário com uma função de administrador da organização IMS e que também é membro do Perfil de produto Usuários do AEM ou Administradores do AEM no AEM Author pode gerar uma credencial as a Cloud Service do AEM. Essa credencial pode ser recuperada posteriormente por um usuário com a função de administrador de Ambiente as a Cloud Service AEM e deve ser instalada no servidor e precisa ser tratada cuidadosamente como uma chave secreta. Esse arquivo de formato JSON contém todos os dados necessários para integrar com uma API AEM as a Cloud Service. Os dados são usados para criar um token JWT assinado, que é substituído pelo IMS por um token de acesso IMS. Esse token de acesso pode ser usado como um token de autenticação de portador para fazer solicitações ao AEM as a Cloud Service. As credenciais expiram após um ano por padrão, mas podem ser atualizadas quando necessário, conforme descrito [aqui](#refresh-credentials).
+Um usuário com uma função de administrador da organização IMS e que também é membro do Perfil de produto Usuários do AEM ou Administradores do AEM no Autor do AEM AEM pode gerar uma credencial do as a Cloud Service. Essa credencial pode ser recuperada posteriormente por um usuário com a função de administrador de Ambiente as a Cloud Service AEM e deve ser instalada no servidor e precisa ser tratada cuidadosamente como uma chave secreta. Esse arquivo de formato JSON contém todos os dados necessários para integrar com uma API AEM as a Cloud Service. Os dados são usados para criar um token JWT assinado, que é substituído pelo IMS por um token de acesso IMS. Esse token de acesso pode ser usado como um token de autenticação de portador para fazer solicitações ao AEM as a Cloud Service. As credenciais expiram após um ano por padrão, mas podem ser atualizadas quando necessário, conforme descrito [aqui](#refresh-credentials).
 
 O fluxo de servidor para servidor envolve as seguintes etapas:
 
@@ -111,7 +111,7 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
 Depois que o usuário da conta técnica é criado no AEM (ocorre após a primeira solicitação com o token de acesso correspondente), o usuário da conta técnica deve receber a permissão adequada **in** AEM.
 
-Por padrão, no serviço do AEM Author, o usuário da conta técnica é adicionado ao grupo de usuários Colaboradores, que fornece acesso de leitura ao AEM.
+Por padrão, no serviço do Autor AEM, o usuário da conta técnica é adicionado ao grupo de usuários Colaboradores, que fornece acesso de leitura ao AEM.
 
 Esse usuário técnico da conta no AEM pode ser provisionado ainda mais com permissões usando os métodos usuais.
 

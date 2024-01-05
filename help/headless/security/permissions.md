@@ -3,9 +3,9 @@ title: Considerações de permissão para conteúdo headless
 description: Saiba mais sobre as diferentes permissões e considerações de ACL para uma implementação headless com o Adobe Experience Manager. Entenda os diferentes perfis e os possíveis níveis de permissão necessários para os ambientes do Autor e de Publicação.
 feature: Content Fragments,GraphQL API
 exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '811'
 ht-degree: 96%
 
 ---
@@ -22,7 +22,7 @@ O serviço de Autor é onde os usuários internos criam, gerenciam e publicam co
 
 Como prática recomendada, as permissões devem ser definidas em Grupos no AEM. Também conhecidos como grupos locais, esses grupos podem ser gerenciados no ambiente de autor do AEM.
 
-A maneira mais fácil de gerenciar a associação de grupo é usar grupos do Identity Management System (IMS) da Adobe e atribuir [grupos IMS para grupos AEM locais](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=pt-BR#managing-permissions-in-aem).
+A maneira mais fácil de gerenciar a associação de grupo é usar grupos do Identity Management System (IMS) da Adobe e atribuir [grupos IMS para grupos AEM locais](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html#managing-permissions-in-aem).
 
 ![Fluxo de permissão do Admin console](assets/admin-console-aem-group-permissions.png)
 

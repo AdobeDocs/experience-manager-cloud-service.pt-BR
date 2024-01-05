@@ -2,10 +2,10 @@
 title: Utilização do provedor de conteúdo do Screens
 description: Esta página descreve como usar o Provedor de conteúdo do Screens para criar conteúdo.
 exl-id: ed7de2c0-13cf-4ce0-8794-aef918cf8e71
-source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '414'
-ht-degree: 14%
+source-wordcount: '377'
+ht-degree: 15%
 
 ---
 
@@ -17,13 +17,13 @@ ht-degree: 14%
 
 ## Objetivo {#objective}
 
-A seção a seguir descreve como usar o provedor de conteúdo do Screens após a configuração [Provedor de serviços do Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en).
+A seção a seguir descreve como usar o provedor de conteúdo do Screens após a configuração [Provedor de serviços do Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html).
 
 ## Utilização do provedor de conteúdo do Screens {#screens-content-provider}
 
 >[!NOTE]
 >**Pré-requisitos**
->Antes de começar a ler esta seção, consulte [Configuração do provedor de serviços do Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en) para saber como navegar até esta interface do usuário do provedor de serviços do Screens.
+>Antes de começar a ler esta seção, consulte [Configuração do provedor de serviços do Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html) para saber como navegar até esta interface do usuário do provedor de serviços do Screens.
 
 Siga as etapas abaixo para fazer logon no Provedor de conteúdo do Screens:
 
@@ -40,7 +40,7 @@ Siga as etapas abaixo para fazer logon no Provedor de conteúdo do Screens:
    ![O ícone da página Visão geral do Cloud Manager é exibido na extremidade esquerda de uma barra de ferramentas.](/help/screens-cloud/assets/configure/screens-cp-1.png)
 
    >[!NOTE]
-   >Se você não criou nenhum programa, consulte [Primeiro logon no Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/first-time-login-screens-cloud.html?lang=en). O tópico orienta você na adição de um programa para o Screens as a Cloud Service no Cloud Manager.
+   >Se você não criou nenhum programa, consulte [Primeiro logon no Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/first-time-login-screens-cloud.html). O tópico orienta você na adição de um programa para o Screens as a Cloud Service no Cloud Manager.
 
 1. Selecione o link na **Ambientes** para poder acessar o Provedor de conteúdo do Screens.
 
@@ -56,4 +56,4 @@ Siga as etapas abaixo para fazer logon no Provedor de conteúdo do Screens:
 
 ## O que vem a seguir {#whats-next}
 
-Agora que você aprendeu a navegar até o Provedor de conteúdo do Screens, continue sua jornada do Screens as a Cloud Service revisando o documento, [Criação e gerenciamento de um projeto no Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html?lang=en).
+Agora que você aprendeu a navegar até o Provedor de conteúdo do Screens, continue sua jornada do Screens as a Cloud Service revisando o documento, [Criação e gerenciamento de um projeto no Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html).

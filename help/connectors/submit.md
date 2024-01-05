@@ -2,10 +2,10 @@
 title: Envio de um conector do AEM
 description: Saiba como fazer referência e implantar conectores corretamente no Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: 9be1f00e-3666-411c-9001-c047e90b6ee5
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '310'
-ht-degree: 30%
+source-wordcount: '296'
+ht-degree: 32%
 
 ---
 
@@ -20,7 +20,7 @@ Em soluções anteriores do AEM, o [Gerenciador de pacotes](/help/implementing/d
 Há várias opções de como os pacotes podem ser incluídos em um projeto:
 
 1. Repositório público do parceiro — um parceiro hospedaria o pacote de conteúdo em um repositório do Maven acessível publicamente
-1. Repositório protegido por senha do parceiro — um parceiro hospedaria o pacote de conteúdo em um repositório do Maven protegido por senha. Consulte [repositórios do Maven protegidos por senha](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/setting-up-project.html?lang=en#password-protected-maven-repositories) para obter instruções.
+1. Repositório protegido por senha do parceiro — um parceiro hospedaria o pacote de conteúdo em um repositório do Maven protegido por senha. Consulte [repositórios do Maven protegidos por senha](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/setting-up-project.html#password-protected-maven-repositories) para obter instruções.
 1. Artefato embutido — nesse caso, o pacote do conector é incluído localmente no projeto do Maven do cliente.
 
 Independentemente de onde eles estejam hospedados, os pacotes devem ser referenciados como dependências no arquivo pom.xml, conforme fornecido pelo fornecedor.

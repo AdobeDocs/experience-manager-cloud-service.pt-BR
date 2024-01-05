@@ -2,9 +2,9 @@
 title: Criação e gerenciamento de exibições no Screens as a Cloud Service
 description: Esta página descreve como criar e gerenciar exibições no Screens as a Cloud Service.
 exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '649'
 ht-degree: 3%
 
 ---
@@ -133,4 +133,4 @@ Todas as operações de pastas podem ser acessadas pela barra de ação de sele�
 
 ## O que vem a seguir {#whats-next}
 
-Agora que você aprendeu a criar e gerenciar exibições para o seu projeto, deve continuar a jornada as a Cloud Service do Screens revisando o documento em seguida [Atribuição de canal a uma Exibição no Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html?lang=en).
+Agora que você aprendeu a criar e gerenciar exibições para o seu projeto, deve continuar a jornada as a Cloud Service do Screens revisando o documento em seguida [Atribuição de canal a uma Exibição no Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html).

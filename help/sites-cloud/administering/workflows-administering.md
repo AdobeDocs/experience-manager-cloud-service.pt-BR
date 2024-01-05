@@ -1,12 +1,13 @@
 ---
 title: Administração de instâncias do fluxo de trabalho
-description: Saiba como administrar instâncias de fluxo de trabalho uso do console de fluxo de trabalho
+description: Saiba como administrar instâncias de fluxo de trabalho usando o console de fluxo de trabalho
 feature: Administering
 role: Admin
-source-git-commit: d1da8559da856e028a5dcad1d0c0b2c00176af0c
+exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '1288'
-ht-degree: 99%
+source-wordcount: '1286'
+ht-degree: 98%
 
 ---
 
@@ -46,7 +47,7 @@ Há vários consoles disponíveis para administrar seus fluxos de trabalho. Use 
 
    >[!NOTE]
    >
-   > Para manter a integridade da instância de fluxo de trabalho, siga as práticas recomendadas de [limpeza regular de instâncias de fluxo de trabalho](#regular-purging-of-workflow-instances) ou as [práticas recomendadas de fluxo de trabalho](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html?lang=pt-br).
+   > Para manter a integridade da instância de fluxo de trabalho, siga as práticas recomendadas de [limpeza regular de instâncias de fluxo de trabalho](#regular-purging-of-workflow-instances) ou as [práticas recomendadas de fluxo de trabalho](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html).
 
 ## Pesquisar instâncias de fluxo de trabalho {#search-workflow-instances}
 
@@ -110,7 +111,7 @@ Há vários consoles disponíveis para administrar seus fluxos de trabalho. Use 
 Quando um fluxo de trabalho falha, o AEM fornece o console **Falhas**, que permite investigar e tomar as medidas apropriadas após tratar a causa original:
 
 * **Detalhes da falha**
-Abre uma janela para mostrar a **Mensagem de falha**, **etapa e **pilha de falhas**.
+Abre uma janela para mostrar a **Mensagem de falha**, **Etapa e **Pilha de falhas**.
 
 * **Abrir histórico**
 Mostra detalhes do histórico do fluxo de trabalho.
@@ -264,5 +265,3 @@ public interface UserMetaDataPersistenceProvider {
  
 } 
 ```
-
-

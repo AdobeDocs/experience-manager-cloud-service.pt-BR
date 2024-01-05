@@ -2,9 +2,9 @@
 title: Projeto SPA WKND
 description: Mergulhe no desenvolvimento do SPA com este tutorial de várias partes que o orienta pela configuração de projetos, mapeamento de componentes, ferramentas de desenvolvimento de front-end e roteamento de aplicativos para implementar seu próprio SPA usando o React e o Angular.
 exl-id: 3e4445b7-6215-4126-aefa-bdba1ee1398d
-source-git-commit: f9ebd60892ae2cdaf844b7978f53a76b6e5cb137
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '155'
+source-wordcount: '137'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Mergulhe no desenvolvimento do SPA com este tutorial dividido em várias partes 
 
 Semelhante ao Tutorial WKND para AEM, esse homólogo com foco no SPA oferece um exemplo completo de como criar seu próprio aplicativo de página única editável com AEM, começando com a configuração do projeto por meio do roteamento de aplicativos.
 
-* [Criar seu primeiro Angular SPA no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html?lang=en)
-* [Criar o seu primeiro SPA React no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=en)
+* [Criar seu primeiro Angular SPA no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html)
+* [Criar o seu primeiro SPA React no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
 
 No entanto, antes de começar seu próprio projeto de SPA para AEM, você também pode querer revisar a [Desenvolvimento de AEM para SPA](developing.md) documento.

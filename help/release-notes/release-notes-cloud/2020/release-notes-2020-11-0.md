@@ -2,14 +2,14 @@
 title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2020.11.0.
 description: "[!DNL Adobe Experience Manager] Notas de versão as a Cloud Service para 2020.11.0."
 exl-id: 8066c0fb-c2f5-4625-9448-b0c74ff4e192
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '1262'
-ht-degree: 19%
+source-wordcount: '1223'
+ht-degree: 15%
 
 ---
 
-# Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service  {#release-notes}
+# Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 A seção a seguir descreve as Notas de versão gerais do [!DNL Experience Manager] as a Cloud Service.
 
@@ -34,7 +34,7 @@ A versão seguinte (2020.12.0) será lançada em 17 de dezembro de 2020
 
 * **Assimilação de ativos em massa**: forneça aos clientes um serviço de assimilação escalável e nativo em nuvem que usa o [!DNL Experience Manager] Arquitetura as a Cloud Service, incluindo microsserviços de ativos. Os principais casos de uso incluem assimilação em escala com monitoramento, relatórios e agendamento, permitindo a transferência inicial de ativos para armazenamentos de dados em nuvem usando ferramentas comuns de upload em nuvem. Consulte [ferramenta de entrada de ativos em massa](/help/assets/add-assets.md#asset-bulk-ingestor).
 
-  Essa ferramenta é para personas de administrador do sistema, consultor ou parceiro de implementação. Esse recurso permite a assimilação em grande escala e é idealmente usado durante a assimilação inicial ou assimilação grande ocasional. Para tarefas de assimilação menores, use o [[!DNL Experience Manager] aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=en) ou [fazer upload usando a interface do Assets](/help/assets/add-assets.md#upload-assets).
+  Essa ferramenta é para personas de administrador do sistema, consultor ou parceiro de implementação. Esse recurso permite a assimilação em grande escala e é idealmente usado durante a assimilação inicial ou assimilação grande ocasional. Para tarefas de assimilação menores, use o [[!DNL Experience Manager] aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=pt-BR) ou [fazer upload usando a interface do Assets](/help/assets/add-assets.md#upload-assets).
 
   ![Configuração do importador em massa](/help/assets/assets/bulk-import-config-low-res.png)
 
@@ -75,7 +75,7 @@ A versão seguinte (2020.12.0) será lançada em 17 de dezembro de 2020
 
 * Lançamento do site de referência CIF Venia - 2020.11.05 que inclui a versão mais recente dos componentes principais CIF v1.5.0. Consulte [Site de referência CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.27) para obter mais detalhes.
 
-* Lançamento de componentes principais de CIF v1.5.0. Consulte [Componentes principais da CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0) para obter mais detalhes.
+* Lançamento de componentes principais de CIF v1.5.0. Consulte [Componentes principais do CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0) para obter mais detalhes.
 
 ### Correções de erros {#bug-fixes-commerce}
 
@@ -113,7 +113,7 @@ Consulte [Gerenciamento de ambientes](/help/implementing/cloud-manager/manage-en
 
 ### Analisadores de build do SDK {#analyzers}
 
-O plug-in para Maven do Analisador de build do SDK do AEM as a Cloud Service detecta problemas em um projeto Maven, incluindo dependências ausentes. Ele oferece aos desenvolvedores uma oportunidade de descobrir problemas durante o desenvolvimento local, bem antes da implantação em ambientes da nuvem com o Cloud Manager. Para obter mais informações, consulte a documentação [aqui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=pt-BR#developing) e [aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#building-for-the-sdk).
+O plug-in para Maven do Analisador de build do SDK do AEM as a Cloud Service detecta problemas em um projeto Maven, incluindo dependências ausentes. Ele oferece aos desenvolvedores uma oportunidade de descobrir problemas durante o desenvolvimento local, bem antes de implantar em ambientes da nuvem com o Cloud Manager. Para obter mais informações, consulte a documentação [aqui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=pt-BR#developing) e [aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html#building-for-the-sdk).
 
 ### Outros {#others-foundation}
 
