@@ -1,10 +1,10 @@
 ---
 title: Funções e responsabilidades
 description: Funções e responsabilidades
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
 workflow-type: tm+mt
-source-wordcount: '500'
-ht-degree: 91%
+source-wordcount: '484'
+ht-degree: 90%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 91%
 >id="aemcloud_raci"
 >title="Funções e responsabilidades"
 >abstract="A Adobe fornece um conjunto de serviços para o provisionamento, o desenvolvimento, o preparo e a produção do Experience Manager as a Cloud Service. Para que o desenvolvimento e a implantação da solução prossigam da maneira mais eficiente possível, é importante que o cliente e o personalizador entendam e cumpram suas funções, conforme descrito neste documento."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=pt-BR" text="Escolha as pessoas certas para as funções certas"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aligning-kpis.html?lang=pt-BR" text="Alinhamento de KPIs"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html" text="Escolha as pessoas certas para as funções certas"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html" text="Alinhamento de KPIs"
 
 <br></br>
 A Adobe fornece um conjunto de serviços para o provisionamento, o desenvolvimento, o preparo e a produção do Experience Manager as a Cloud Service. Para que o desenvolvimento e a implantação da solução prossigam da maneira mais eficiente possível, é importante que o cliente e o personalizador entendam e cumpram suas funções, conforme descrito abaixo.

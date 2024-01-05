@@ -2,7 +2,7 @@
 title: Guia de migração para o Experience Manager as a Cloud Service para parceiros
 description: Guia de migração para o Experience Manager as a Cloud Service para parceiros
 exl-id: 9d5a72b8-06af-4b82-ab20-e65aea7903b3
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
 workflow-type: tm+mt
 source-wordcount: '1464'
 ht-degree: 22%
@@ -127,7 +127,7 @@ Antes de iniciar sua jornada de transição para Cloud Service, você deve se fa
 <table>
 <tr>
 <td>Detecção e avaliação de projetos</td>
-<td><ul><li>Consulte <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes.html?lang=en">Alterações importantes no Experience Manager as a Cloud Service</a> para compreender as diferenças importantes entre o Adobe Experience Manager as a Cloud Service e o Experience Manager 6.x.</li><li>Consulte <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features.html?lang=en">Recursos obsoletos</a> para saber mais sobre os recursos e funcionalidades marcados como obsoletos.</li><li>[Somente para migrações de Cloud Service] Avaliando prontidão de Cloud Service : Executar o <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en">Analisador de práticas recomendadas (BPA)</a> no ambiente de origem </li><li>Concluir uma avaliação contra alterações notáveis e recursos obsoletos no Experience Manager CS</li></ul></td>
+<td><ul><li>Consulte <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes.html">Alterações importantes no Experience Manager as a Cloud Service</a> para compreender as diferenças importantes entre o Adobe Experience Manager as a Cloud Service e o Experience Manager 6.x.</li><li>Consulte <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features.html">Recursos obsoletos</a> para saber mais sobre os recursos e funcionalidades marcados como obsoletos.</li><li>[Somente para migrações de Cloud Service] Avaliando prontidão de Cloud Service : Executar o <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=pt-BR">Analisador de práticas recomendadas (BPA)</a> no ambiente de origem </li><li>Concluir uma avaliação contra alterações notáveis e recursos obsoletos no Experience Manager CS</li></ul></td>
 </tr>
 <tr>
 <td>Análise</td>

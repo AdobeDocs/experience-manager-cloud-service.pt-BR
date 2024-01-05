@@ -2,7 +2,7 @@
 title: Utilização do Analisador de práticas recomendadas
 description: Saiba como usar o Analisador de práticas recomendadas para entender a disponibilidade da atualização.
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
 workflow-type: tm+mt
 source-wordcount: '2418'
 ht-degree: 42%
@@ -127,7 +127,7 @@ For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP i
 >title="Interpretação do relatório do Analisador de práticas recomendadas"
 >abstract="Há duas opções para visualizar relatórios do Analisador de Práticas Recomendadas: na interface e CSV. Quando o Analisador de Práticas Recomendadas é executado na instância do AEM, o relatório é exibido como resultado na janela da ferramenta. O formato CSV do relatório inclui informações geradas a partir do output do Detector de padrões, classificadas e organizadas por tipo de categoria, subtipo e nível de importância."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html#analysis-report" text="Revisão do relatório do Analisador de Práticas Recomendadas"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=en" text="Noções básicas sobre as categorias do relatório do Analisador de Práticas Recomendadas"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html" text="Noções básicas sobre as categorias do relatório do Analisador de Práticas Recomendadas"
 
 Quando a ferramenta Analisador de práticas recomendadas é executada na instância do AEM, o relatório é exibido como resultado na janela da ferramenta.
 

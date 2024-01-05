@@ -2,9 +2,9 @@
 title: Acesso a KPIs
 description: Saiba como acessar seus KPIs e definir o processo de relatórios
 exl-id: 8556e0e3-a557-4fd6-9b82-09cb1decff0a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '532'
 ht-degree: 94%
 
 ---
@@ -15,8 +15,8 @@ ht-degree: 94%
 >id="aemcloud_assesskpis"
 >title="Avaliação de KPIs"
 >abstract="Antes de começar a inicialização do Adobe Experience Manager, todos que tiverem participação no projeto devem saber quais são seus três KPIs principais e por que eles são importantes."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aligning-kpis.html?lang=pt-BR" text="Alinhamento de KPIs"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=pt-BR" text="Escolhendo a equipe certa"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html" text="Alinhamento de KPIs"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html" text="Escolhendo a equipe certa"
 
 Antes de começar a inicialização do Adobe Experience Manager, todos que tiverem participação no projeto devem saber quais são seus três KPIs principais e por que eles são importantes.
 

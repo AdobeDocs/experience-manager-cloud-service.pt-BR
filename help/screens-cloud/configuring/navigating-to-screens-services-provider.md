@@ -2,9 +2,9 @@
 title: Navegar até o provedor de serviços do Screens
 description: Esta página descreve como navegar até o provedor de serviços do Screens.
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
-source-git-commit: ad5a8656b200ba35a0a6f58afd4be03202138f47
+source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '280'
 ht-degree: 6%
 
 ---
@@ -56,4 +56,4 @@ Siga as etapas abaixo para configurar o Provedor de serviços do Screens:
 
 ## O que vem a seguir {#whats-next}
 
-Depois de saber como configurar o provedor de serviços do Screens, navegue até [Utilização do provedor de conteúdo do Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=end#screens-content-provider) para obter mais detalhes.
+Depois de saber como configurar o provedor de serviços do Screens, navegue até [Utilização do provedor de conteúdo do Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html#screens-content-provider) para obter mais detalhes.
