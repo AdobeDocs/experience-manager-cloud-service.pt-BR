@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: cfae48067df75dae54822dc0c6f868cca75887d4
+source-git-commit: c04b9391059e66b343fe2ecab90e26179b2172ac
 workflow-type: tm+mt
-source-wordcount: '4565'
+source-wordcount: '4567'
 ht-degree: 91%
 
 ---
@@ -781,6 +781,7 @@ ht-degree: 91%
       + [Espaços reservados](/help/edge/docs/placeholders.md)
       + [Mapa do site](/help/edge/developer/sitemap.md)
       + [Configuração do SharePoint](/help/edge/docs/setup-customer-sharepoint.md)
+      + [Slack Bot](/help/edge/docs/slack.md)
    + Iniciar aplicativos de entrega de borda {#launch}
       + [Lista de verificação de ativação](/help/edge/docs/go-live-checklist.md)
       + [Invalidação por push](/help/edge/docs/setup-byo-cdn-push-invalidation.md)
