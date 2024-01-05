@@ -1,11 +1,11 @@
 ---
-title: Trabalho com fragmentos de conteúdo (Ativos - Fragmentos de conteúdo)
+title: Trabalhar com fragmentos de conteúdo (Ativos - Fragmentos de conteúdo)
 description: Saiba como os Fragmentos de conteúdo no Adobe Experience Manager (AEM) as a Cloud Service permitem projetar, criar, preparar e usar conteúdo independente de página, ideal para a criação de páginas e entrega headless. Além disso, explica como eles podem ser usados junto com o MSM.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: cc752e540fd08c2db5145316f57071c991d264b3
+source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
-source-wordcount: '2229'
-ht-degree: 58%
+source-wordcount: '2222'
+ht-degree: 57%
 
 ---
 
@@ -212,7 +212,7 @@ Os ativos do fragmento de conteúdo são compostos das seguintes partes (direta 
 
      >[!NOTE]
      >
-     >Os ativos também podem ser adicionados como [conteúdo adicional (intermediário)](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) ao usar um fragmento em uma página; usando o conteúdo associado ou ativos do navegador de ativos.
+     >Os ativos também podem ser adicionados como conteúdo adicional (intermediário) ao usar um fragmento em uma página; usando [Conteúdo associado](/help/assets/content-fragments/content-fragments-assoc-content.md) ou ativos no navegador de Ativos.
 
 * **Conteúdo associado**
 

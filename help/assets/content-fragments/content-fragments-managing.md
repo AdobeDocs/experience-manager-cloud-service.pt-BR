@@ -1,17 +1,17 @@
 ---
 title: Gerenciamento de fragmentos de conteúdo (Ativos - Fragmentos de conteúdo)
-description: Saiba como usar o console de Ativos para gerenciar os fragmentos de conteúdo de AEM, a base do conteúdo headless.
+description: Saiba como usar o console de Ativos para gerenciar os fragmentos de conteúdo de AEM, como a base do conteúdo headless ou para a criação de páginas.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
-source-wordcount: '1873'
-ht-degree: 66%
+source-wordcount: '1885'
+ht-degree: 65%
 
 ---
 
 # Gerenciamento dos Fragmentos de conteúdo {#managing-content-fragments}
 
-Saiba como usar o console de Ativos para gerenciar os fragmentos de conteúdo de AEM, a base do conteúdo headless.
+Saiba como usar o console de Ativos para gerenciar os fragmentos de conteúdo de AEM, como a base do conteúdo headless ou para a criação de páginas.
 
 Depois de definir os [Modelos de fragmentos de conteúdo](#creating-a-content-model), você pode usá-los para [criar fragmentos de conteúdo](#creating-a-content-fragment).
 

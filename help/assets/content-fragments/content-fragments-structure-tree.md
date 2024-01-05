@@ -2,16 +2,16 @@
 title: Árvore da estrutura do fragmento de conteúdo (ativos - Fragmentos de conteúdo)
 description: Use o recurso de árvore de estrutura do editor de fragmento de conteúdo no AEM para entender melhor seu conteúdo headless.
 exl-id: 4a134f04-e580-4f69-9d11-0a2fc83a4b3a
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
-source-wordcount: '169'
-ht-degree: 50%
+source-wordcount: '172'
+ht-degree: 38%
 
 ---
 
 # Árvore de estrutura do fragmento de conteúdo {#content-fragment-structure-tree}
 
-Use o recurso de árvore de estrutura do editor de fragmento de conteúdo no AEM para entender melhor seu conteúdo headless.
+Use o recurso de árvore de estrutura do editor de fragmento de conteúdo no AEM para entender melhor seu conteúdo, especialmente para entrega headless.
 
 >[!NOTE]
 >

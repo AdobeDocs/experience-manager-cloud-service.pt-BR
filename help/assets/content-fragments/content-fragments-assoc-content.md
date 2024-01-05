@@ -1,17 +1,23 @@
 ---
 title: Conteúdo associado (Ativos - Fragmentos de conteúdo)
-description: Entenda como o recurso de conteúdo associado ao AEM fornece a conexão para que os ativos possam ser usados opcionalmente com o fragmento.
+description: Entenda como o recurso de conteúdo associado para fragmentos de conteúdo AEM fornece a conexão para que os ativos possam ser usados opcionalmente com o fragmento.
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 51%
+source-wordcount: '281'
+ht-degree: 41%
 
 ---
 
 # Conteúdo associado{#associated-content}
 
-O recurso de conteúdo associado ao AEM fornece a conexão para que os ativos possam ser usados opcionalmente com o fragmento quando ele for adicionado a uma página de conteúdo. Isso proporciona flexibilidade para a entrega de conteúdo headless ao [fornecer uma variedade de ativos para acessar ao usar o fragmento de conteúdo em uma página,](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) ao mesmo tempo que ajuda a reduzir o tempo necessário para pesquisar o ativo apropriado.
+Para Fragmentos de conteúdo do Adobe Experience Manager (AEM) as a Cloud Service, o recurso de conteúdo associado (disponível no editor original) fornece a conexão para que os ativos possam ser usados opcionalmente com o fragmento. Isso proporciona flexibilidade ao [fornecer uma variedade de ativos para acessar ao usar o fragmento de conteúdo](/help/assets/content-fragments/content-fragments.md#using-associated-content), além de ajudar a reduzir o tempo necessário para pesquisar o ativo apropriado. Esse recurso pode ser usado para a entrega de conteúdo headless e para a criação de páginas.
+
+>[!NOTE]
+>
+>Os fragmentos de conteúdo são um recurso do Sites, mas são armazenados como **Assets**.
+>
+>Existem dois editores para a criação de fragmentos de conteúdo. Esta seção aborda o editor original, acessado principalmente pelo **Assets** console.
 
 ## Adicionar conteúdo associado {#adding-associated-content}
 

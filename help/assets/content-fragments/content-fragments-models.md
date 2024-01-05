@@ -1,11 +1,11 @@
 ---
 title: Modelos de fragmentos do conteúdo (Ativos - Fragmentos de conteúdo)
-description: Saiba como os modelos de fragmento de conteúdo servem como base para o conteúdo headless no AEM e como criar fragmentos de conteúdo com conteúdo estruturado.
+description: Saiba como os modelos de fragmento de conteúdo servem como base para o conteúdo headless no AEM, permitindo criar fragmentos de conteúdo com conteúdo estruturado.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
+source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
-source-wordcount: '3005'
-ht-degree: 88%
+source-wordcount: '3011'
+ht-degree: 87%
 
 ---
 
@@ -30,7 +30,7 @@ Para usar modelos de fragmento de conteúdo, você pode:
    >
    >Se o [uso de modelos de fragmento de conteúdo não foi habilitado](/help/assets/content-fragments/content-fragments-configuration-browser.md), a opção **Criar** não estará disponível.
 
-1. Especifique o **título do modelo**.
+1. Especifique a **Título do modelo**.
 Também é possível definir várias propriedades; por exemplo, adicionar **Tags**, um **Descrição** e selecione **Ativar modelo** para [ativar o modelo](#enabling-disabling-a-content-fragment-model) se necessário.
 
    >[!NOTE]
@@ -185,7 +185,7 @@ O conteúdo (para o campo específico) deve ser exclusivo em todos os fragmentos
 
   >[!CAUTION]
   >
-  >Se desejar usar o MSM (que cria cópias de fragmentos de conteúdo), todas as restrições **exclusivas** devem ser removidas de qualquer tipo de dados usado nos respectivos modelos de fragmento de conteúdo.
+  >Se você quiser usar o MSM (que cria cópias de Fragmentos de conteúdo), qualquer **Exclusivo** as restrições devem ser removidas de qualquer tipo de dados usado nos respectivos modelos de fragmento de conteúdo.
 
 * Consulte **[Referência de conteúdo](#content-reference)** para obter mais detalhes sobre esse tipo de dados específico e suas propriedades.
 
@@ -217,7 +217,7 @@ Vários tipos de dados agora incluem a possibilidade de definir requisitos de va
   Campos que foram definidos como **Múltiplo campo** (definido com **Renderizar como**) têm as seguintes opções:
 
    * **Número mínimo de itens**
-   * **Número máx. de itens**
+   * **Número máximo de itens**
 
   Eles são validados:
 

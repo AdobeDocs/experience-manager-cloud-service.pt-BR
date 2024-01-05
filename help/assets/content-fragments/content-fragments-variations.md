@@ -1,17 +1,17 @@
 ---
 title: Variações - Criação dos fragmentos de conteúdo (Ativos - Fragmentos de conteúdo)
-description: Entenda como as variações podem tornar o conteúdo headless no AEM ainda mais flexível, permitindo criar conteúdo para o fragmento e, em seguida, criar variações desse conteúdo de acordo com a finalidade.
+description: Entenda como as variações de Fragmento de conteúdo permitem criar conteúdo para o fragmento e, em seguida, criar variações desse conteúdo de acordo com a finalidade, aumentando assim a flexibilidade.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
+source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
-source-wordcount: '2546'
-ht-degree: 54%
+source-wordcount: '2474'
+ht-degree: 52%
 
 ---
 
 # Variações - Criação dos fragmentos de conteúdo{#variations-authoring-fragment-content}
 
-[Variações](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) são um recurso importante dos fragmentos de conteúdo do AEM. O motivo é que eles permitem criar e editar cópias do conteúdo principal para uso em canais e cenários específicos, tornando a entrega de conteúdo headless ainda mais flexível.
+[Variações](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) são um recurso importante dos Fragmentos de conteúdo no Adobe Experience Manager (AEM) as a Cloud Service. Isso ocorre porque elas permitem criar e editar cópias do **Principal** conteúdo para uso em canais e cenários específicos. Especificamente, isso torna a entrega de conteúdo headless ainda mais flexível.
 
 >[!NOTE]
 >
