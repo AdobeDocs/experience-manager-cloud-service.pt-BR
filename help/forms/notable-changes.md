@@ -3,9 +3,9 @@ title: Quais são as diferenças entre o AEM 6.5 Forms e o AEM Cloud Service?
 description: Compare o AEM 6.5 Forms e o AEM Cloud Services e saiba mais sobre as mudanças mais importantes antes de atualizar ou migrar para o Cloud Service.
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: 0acaea02ad4ba647373eedecb444e9a7911d108d
 workflow-type: tm+mt
-source-wordcount: '1348'
+source-wordcount: '1317'
 ht-degree: 1%
 
 ---
@@ -52,7 +52,9 @@ O Adobe Experience Manager Forms as a Cloud Service traz algumas alterações no
 
   A variável [utilitário de migração](/help/forms/migrate-to-forms-as-a-cloud-service.md) O ajuda a migrar os formulários que têm regras personalizadas (criadas no editor de código). O utilitário converte essas regras em funções personalizadas compatíveis com o Forms as a Cloud Service. Você pode usar as funções reutilizáveis com o Editor de regras para continuar obtendo resultados obtidos com scripts de regras. A variável `onSubmitError` ou `onSubmitSuccess` As funções do agora estão disponíveis como ações no Editor de regras.
 
-* **Preencher Serviço:** Por padrão, o serviço de preenchimento prévio mescla dados com um formulário adaptável no cliente em vez de mesclar dados no servidor no AEM 6.5 Forms. O recurso ajuda a melhorar o tempo necessário para preencher previamente um Formulário adaptável. Você sempre pode configurar o para executar a ação de mesclagem no servidor do Adobe Experience Manager Forms.
+<!--* **Prefill Service:** By default, the prefill service merges data with an Adaptive Form at client as opposed to merging data on Server in AEM 6.5 Forms. The feature helps improve the time required to prefill an Adaptive Form. You can always configure to run the merge action on the Adobe Experience Manager Forms Server.-->
+
+* **Preencher Serviço:** O serviço de Preenchimento prévio busca dados do servidor e se mescla para preencher previamente o Forms adaptável no lado do cliente. Este recurso ajuda a melhorar o tempo necessário para preencher um Formulário adaptável. Você sempre pode configurar o [serviço de preenchimento prévio](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/prefill-service-adaptive-forms-article-use.html) para executar a ação de mesclagem no servidor do Adobe Experience Manager Forms.
 
 * **Enviar ações:** A variável **E-mail** ação enviar fornecer opções para enviar anexos e anexar Documento de registro (DoR) com o email. Você pode usá-lo no lugar da variável **Enviar por e-mail como PDF** ação disponível no AEM 6.5 Forms.
 
@@ -64,7 +66,7 @@ O Adobe Experience Manager Forms as a Cloud Service traz algumas alterações no
 
 * **Interface do assistente:** Você pode usar o [Interface do assistente](/help/forms/creating-adaptive-form-core-components.md) para configurar rapidamente as opções comuns e criar facilmente um Formulário adaptável.
 
-## Portal do Forms
+## Portal Forms
 
 * O serviço não retém metadados para rascunhos e Forms adaptável enviado.
 
