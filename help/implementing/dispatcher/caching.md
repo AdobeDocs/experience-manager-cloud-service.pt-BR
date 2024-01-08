@@ -3,9 +3,9 @@ title: Armazenamento em cache no AEM as a Cloud Service
 description: Saiba mais sobre as noções básicas de armazenamento em cache no AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: 8351e5e60c7ec823a399cbbdc0f08d2704f12ccf
 workflow-type: tm+mt
-source-wordcount: '2775'
+source-wordcount: '2865'
 ht-degree: 1%
 
 ---
@@ -241,6 +241,28 @@ Para ambientes criados em outubro de 2023 ou posteriormente, para melhores solic
 Envie um tíquete de suporte se quiser que esse comportamento seja desativado.
 
 Para ambientes criados antes de outubro de 2023, é recomendável definir as configurações do Dispatcher `ignoreUrlParams` propriedade como [documentado aqui](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters).
+
+Há duas possibilidades para ignorar parâmetros de marketing. (Onde o primeiro é preferível para ignorar a interrupção de cache por meio de parâmetros de consulta):
+
+1. Ignore todos os parâmetros e permita seletivamente os parâmetros usados.
+No exemplo a seguir, apenas `page` e `product` os parâmetros não são ignorados e as solicitações serão encaminhadas ao editor.
+
+```
+/ignoreUrlParams {
+   /0001 { /glob "*" /type "allow" }
+   /0002 { /glob "page" /type "deny" }
+   /0003 { /glob "product" /type "deny" }
+}
+```
+
+1. Permitir todos os parâmetros, exceto os parâmetros de marketing. O arquivo [marketing_query_parameters.any](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.dispatcher.d/cache/marketing_query_parameters.any) define uma lista de parâmetros de marketing comumente usados que serão ignorados. O Adobe não atualizará este arquivo. Ele pode ser estendido pelos usuários dependendo de seus provedores de marketing.
+
+```
+/ignoreUrlParams {
+   /0001 { /glob "*" /type "deny" }
+   $include "../cache/marketing_query_parameters.any"
+}
+```
 
 
 ## Invalidação de cache do Dispatcher {#disp}
