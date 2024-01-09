@@ -4,9 +4,9 @@ description: Um Formulário adaptável fornece várias Ações de envio. Uma Aç
 keywords: como selecionar a ação enviar para um formulário adaptável, conectar um formulário adaptável à lista do sharepoint, conectar um formulário adaptável à biblioteca de documentos do sharepoint, conectar um formulário adaptável ao modelo de dados de formulário
 feature: Adaptive Forms, Core Components
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
-source-git-commit: c2bf362a9949b3d6d427a28821056a0cc9edfa85
+source-git-commit: 3cd10760fa48f4aa1810877f79476be744f048d1
 workflow-type: tm+mt
-source-wordcount: '4102'
+source-wordcount: '4090'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,8 @@ ht-degree: 2%
 | -------- | ---------------------------- |
 | AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service | Este artigo |
-| Aplica-se a | Componentes Principais Do Formulário Adaptável, ❎ [Componentes de base do formulário adaptável](/help/forms/configuring-submit-actions.md) |
+
+<!--| Applies to     | ✅ Adaptive Form Core Components, ❎ [Adaptive Form Foundation Components](/help/forms/configuring-submit-actions.md)          |-->
 
 
 Uma ação enviar permite escolher o destino dos dados capturados por meio de um formulário adaptável. É acionado quando um usuário clica na variável **[!UICONTROL Enviar]** em um Formulário adaptável. O Forms as a Cloud Service, para o Adaptive Forms com base em Componentes principais, oferece uma variedade de Ações de envio pré-criadas. Essas ações de envio prontas para uso permitem:
