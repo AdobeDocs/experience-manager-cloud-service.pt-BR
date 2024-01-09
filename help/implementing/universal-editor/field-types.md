@@ -1,10 +1,10 @@
 ---
 title: Tipos de campos
 description: Saiba mais sobre os diferentes tipos de campos que o Editor universal pode editar no painel Componentes com exemplos de como você pode instrumentar seu próprio aplicativo.
-source-git-commit: b1a188d01371665b4375087847625d89e47d8927
+source-git-commit: 44073e27ce7eb35bc0d71cb963c1bd0f14183f00
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 8%
+source-wordcount: '358'
+ht-degree: 7%
 
 ---
 
@@ -281,3 +281,58 @@ Uma entrada de texto permite uma única linha de entrada de texto.
 }
 ```
 
+## Guia {#tab}
+
+Uma guia permite agrupar outros campos de entrada em várias guias para melhorar a organização do layout dos autores.
+
+A `tab` definição pode ser considerada como um separador na matriz de `fields`. Tudo que vem depois de um `tab` será colocado nessa guia até que um novo `tab` for encontrada, em que os itens a seguir serão colocados na nova guia.
+
+Se desejar que itens sejam exibidos acima de todas as guias, eles deverão ser definidos antes de qualquer guia.
+
+### Amostra {#sample-tab}
+
+```json
+{
+  "id": "title",
+  "fields": [
+    {
+      "component": "tab",
+      "label": "Tab",
+      "name": "tab1"
+    },
+    {
+      "component": "text-input",
+      "name": "tab-response",
+      "value": "",
+      "placeholder": "Tab? I can't give you a tab unless you order something.",
+      "label": "Lou",
+      "valueType": "string"
+    },
+    {
+      "component": "tab",
+      "label": "Pepsi Free",
+      "name": "tab2"
+    },
+    {
+      "component": "text-input",
+      "name": "pepsi-free-response",
+      "value": "",
+      "placeholder": "You want a Pepsi, pal, you're gonna pay for it.",
+      "label": "Mr. Carruthers",
+      "valueType": "string"
+    },
+    {
+      "component": "select",
+      "name": "without-sugar",
+      "value": "coffee",
+      "label": "Something without sugar",
+      "valueType": "string",
+      "options": [
+        { "name": "Coffee", "value": "coffee" },
+        { "name": "Hot Coffee", "value": "hot-coffee" },
+        { "name": "Hotter Coffee", "value": "hotter-coffee" }
+      ]
+    }
+  ]
+}
+```
