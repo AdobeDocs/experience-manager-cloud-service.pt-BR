@@ -1,12 +1,12 @@
 ---
-title: Configurar o [!DNL Workfront for Experience Manager enhanced connector]
-description: Configurar o [!DNL Workfront for Experience Manager enhanced connector]
+title: Configurar [!DNL Workfront for Experience Manager enhanced connector]
+description: Configurar [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: e49d536dc918861604f3e5d19608eb69d038c49a
 workflow-type: tm+mt
-source-wordcount: '1770'
+source-wordcount: '1760'
 ht-degree: 1%
 
 ---
@@ -63,6 +63,7 @@ Para se inscrever nos eventos, siga estas etapas:
 1. Acesse a guia Pastas vinculadas do projeto nos serviços em nuvem.
 1. Caminho principal da pasta vinculada: selecione uma pasta no DAM onde deseja criar as pastas vinculadas. Se deixado em branco, o padrão será /content/dam. Verifique se o esquema de metadados das Ferramentas do Workfront e o esquema de metadados da pasta vinculada do Workfront foram aplicados à pasta selecionada.
 1. Estrutura de pasta vinculada: insira valores separados por vírgula. Cada valor deve ser `DE:<some-project-custom-form-field>`, Portfolio, Programa, Ano, Nome ou algum &quot;Valor de string literal&quot; (este último com aspas). No momento, está definido como Portfolio, Program, Year, DE:Project Type, Name.
+1. Configurar permissões: Adicionar `jcr:all permissions` permissões para `/conf/workfront-tools/settings/cloudconfigs` para `wf-workfront-users` grupo.
 1. Criar título de pasta vinculado no Workfront usando a caixa de seleção de nomes de estrutura de pastas deve ser marcada se o título da pasta no Workfront deve incluir todas as pastas na estrutura. Caso contrário, será o título da última pasta.
 1. Sub-folders multifield permite especificar uma lista de pastas que devem ser criadas como uma pasta filho da pasta vinculada.
 1. Status do projeto: selecione o status para o qual o projeto deve ser definido para criar a pasta vinculada.
