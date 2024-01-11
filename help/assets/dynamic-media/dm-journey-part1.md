@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: 20c12efb963bc1defd16f5b42b5efa5d4067e266
 workflow-type: tm+mt
-source-wordcount: '3685'
+source-wordcount: '3674'
 ht-degree: 0%
 
 ---
@@ -88,11 +88,11 @@ _O Adobe Dynamic Media garante experiências consistentes e de qualidade em qual
 
 Quando estiver pronto para entrar em funcionamento com um ativo de imagem ou de vídeo, ele será suportado pelo backbone da Dynamic Media, que consiste em uma rede de entrega avançada e de nível superior. A rede atende centenas de clientes em todo o mundo todos os dias. Os ativos são distribuídos na Rede de entrega de conteúdo - ou CDN - hospedada pela Akamai. A CDN é um sistema de serviços de computação em rede que cooperam de forma transparente para fornecer conteúdo, especialmente grandes conteúdos de mídia avançada, aos usuários finais.
 
-No sistema CDN, o conteúdo da Web é armazenado em caches da Web na Internet. Em seguida, ele é entregue do cache da Web aos usuários finais para agilizar a entrega. Assim, na primeira vez que alguém baixa uma página da Web, os ativos que ele vê são entregues a um cache CDN. Eles são armazenados no servidor para que na próxima vez que alguém na mesma área acessar a página da Web, o mesmo conteúdo de cache seja entregue mais rapidamente. O conteúdo é entregue mais rápido porque está localizado mais próximo do usuário. Um CDN possibilita exibições mais rápidas da página da Web, além de diminuir as demandas de largura de banda do servidor central, pois o conteúdo é entregue a partir de uma rede de cache, não de um servidor central em cada instância. Esse fluxo otimizado significa uma melhor experiência do usuário, resultando em aumento das vendas.
+No sistema CDN, o conteúdo da Web é armazenado em caches da Web na Internet. Em seguida, ele é entregue do cache da Web aos usuários finais para agilizar a entrega. Assim, na primeira vez que alguém baixa uma página da Web, os ativos que ele vê são entregues a um cache CDN. Eles são armazenados no servidor para que na próxima vez que alguém na mesma área acessar a página da Web, o mesmo conteúdo em cache seja entregue mais rapidamente. O conteúdo é entregue mais rápido porque está localizado mais próximo do usuário. Um CDN possibilita exibições mais rápidas da página da Web, além de diminuir as demandas de largura de banda do servidor central, pois o conteúdo é entregue a partir de uma rede de cache, não de um servidor central em cada instância. Esse fluxo otimizado significa uma melhor experiência do usuário, resultando em aumento das vendas.
 
 <!-- USE AN IMAGE HERE? ![Content delivery network](/help/assets/assets-dm/cdn.png) -->
 
-Historicamente, a CDN fornece 3,5 petabytes de tráfego para os clientes, todos os meses. O sistema pode entregar 52 bilhões de ativos em um único dia. Esse número equivale a 864.000 imagens e vídeos entregues com sucesso aos clientes, _a cada segundo_.
+Historicamente, a CDN fornece 3,5 petabytes de tráfego para os clientes todos os meses. O sistema pode entregar 52 bilhões de ativos em um único dia. Esse número equivale a 864.000 imagens e vídeos entregues com sucesso aos clientes, _a cada segundo_.
 
 ### Imagem inteligente
 
@@ -117,12 +117,11 @@ A geração inteligente de imagens não está ativada por padrão porque requer 
 
 ### Conjuntos de vídeos adaptados
 
-Quando há um vídeo em uma página ou na página principal, seus clientes tendem a se envolver com esse conteúdo por mais tempo e permanecer na página por mais tempo, o que geralmente é uma boa coisa. Esse comportamento foi exibido por meio de análises realizadas pelo Adobe. No entanto, o vídeo pode ser complexo. Por um lado, você geralmente tem um arquivo principal grande. É complicado determinar o tamanho e o delivery do vídeo, tudo para garantir que a experiência seja executada sem problemas, independentemente do dispositivo no qual está sendo visualizada e da largura de banda.
+Quando há um vídeo em uma página ou na página principal, seus clientes tendem a se envolver com esse conteúdo por mais tempo e permanecer na página por mais tempo, o que geralmente é uma boa coisa. Esse comportamento é exibido por meio da análise realizada pelo Adobe. No entanto, o vídeo pode ser complexo. Por um lado, você geralmente tem um arquivo principal grande. É complicado determinar o tamanho e o delivery do vídeo, tudo para garantir que a experiência seja executada sem problemas, independentemente do dispositivo em que está sendo visualizada e da largura de banda.
 
 Para resolver esse problema, o Dynamic Media oferece a capacidade de criar _Conjuntos de vídeos adaptados_.
 
-![Conjunto de vídeos adaptados](/help/assets/dynamic-media/assets/dm-smart-imaging.png)
-_Um Conjunto de vídeos adaptados agrupa versões do mesmo vídeo codificadas em taxas de bits e formatos diferentes._
+Um Conjunto de vídeos adaptados agrupa versões do mesmo vídeo codificadas em taxas de bits e formatos diferentes.
 
 Você começa com seu vídeo original, o qual você carrega no sistema. o Dynamic Media dimensiona automaticamente ou _transcodes_, esse vídeo em vários vídeos. Em seguida, no momento do delivery, ele determina de forma inteligente qual tela de vídeo, qual qualidade e qual formato usar, além de fornecê-la ao telefone, tablet ou computador desktop.
 
@@ -138,7 +137,7 @@ Veja a seguir problemas comuns de casos de uso e soluções com as quais a Dynam
 
 ### Caso de uso: abordagem de arquivo principal
 
-Um dos casos de uso mais importantes do Dynamic Media também é um dos mais óbvios. Ou seja, reduzindo o peso das páginas e experiências e o tamanho do conteúdo, seja uma imagem ou um vídeo, que está sendo entregue.
+Um dos casos de uso mais importantes do Dynamic Media também é um dos mais óbvios. Ou seja, reduzindo o peso das páginas e experiências e o tamanho do conteúdo, seja uma imagem ou um vídeo que está sendo entregue.
 
 Veja a seguir uma experiência típica ou uma página da Web. Cerca de 90% de uma página é composta de mídia avançada, como imagens e vídeos, que geralmente são arquivos muito mais pesados.
 
@@ -176,13 +175,13 @@ Outro caso de uso para o qual o Dynamic Media resolve é o vídeo. O vídeo é c
 | **Problema** | **Solução da Dynamic Media** |
 |---|---|
 | Difícil de gerenciar e fornecer vídeo otimizado para vários dispositivos. | Use um único vídeo que seja dimensionado automaticamente para todos os dispositivos. |
-| Os vídeos são interrompidos ou reproduzidos em baixa qualidade devido à largura de banda disponível do usuário. | Envie vídeos por meio de um reprodutor de HTML que detecta automaticamente a largura de banda disponível e adapta a qualidade para garantir alta fidelidade e reprodução sem problemas. |
+| Os vídeos param ou são reproduzidos em baixa qualidade devido à largura de banda disponível do usuário. | Envie vídeos por meio de um reprodutor de HTML que detecta automaticamente a largura de banda disponível e adapta a qualidade para garantir alta fidelidade e reprodução sem problemas. |
 | Inviável e demorado criar manualmente todas as versões de um vídeo, apenas para garantir uma boa exibição e reprodução entre dispositivos. | Elimine horas de trabalho entediante de transcodificação com um fluxo de trabalho simplificado. |
 | | Libere tempo para um trabalho de maior valor. |
 
-Os clientes chegam à Dynamic Media com o seguinte problema que esperam resolver:
+Os clientes chegam à Dynamic Media com os seguintes problemas que esperam resolver:
 
-&quot;_Minha empresa tem o vídeo, e nosso departamento gastou uma grande quantia de dinheiro criando-o, mas evitou colocá-lo em páginas, ou entregá-lo. A razão era porque, com nossos testes, a qualidade do vídeo não podia ser garantida, ou mesmo se ele fosse realmente tocar. E, em última análise, isso afeta nossas marcas e, potencialmente, nossa função até mesmo na conversão._&quot;
+&quot;_Minha empresa tem o vídeo, e o departamento gastou uma grande quantia de dinheiro criando-o, mas evitou colocá-lo em páginas, ou entregá-lo. A razão era que, a partir de testes, a qualidade do vídeo não poderia ser garantida, ou mesmo se ele fosse realmente ir para a reprodução. E, em última análise, isso afeta a marca da empresa e, possivelmente, sua função na conversão._&quot;
 
 A solução da Dynamic Media é pegar esse arquivo de vídeo principal e permitir que a Dynamic Media faça todos os tamanhos através de seu processo de transcodificação. Em seguida, combine-o com o player de vídeo inteligente da Dynamic Media. Esse fluxo de trabalho garante que você esteja usando esse vídeo na sua página de aterrissagem principal ou em uma categoria ou página de detalhes do produto, ele seja consistente e entregue com alta qualidade.
 
@@ -265,7 +264,7 @@ A representação acima está ativa. [Experimente](https://s7d1.scene7.com/s7vie
 
 ## Opcional - Saiba mais
 
-A parte I desta jornada abordou as noções básicas de uma variedade de tópicos do Dynamic Media. Se você quiser saber mais sobre o que acabou de ler, use os materiais abaixo para explorar os conceitos com mais detalhes. Caso contrário, você pode continuar com a Parte II da sua jornada. Consulte [O que vem a seguir nesta Jornada do Dynamic Media](#whats-next).
+A parte I desta jornada abordou as noções básicas de vários tópicos do Dynamic Media. Se você quiser saber mais sobre o que lê, utilize os materiais abaixo para explorar os conceitos com mais detalhes. Caso contrário, você pode continuar com a Parte II da sua jornada. Consulte [O que vem a seguir nesta Jornada do Dynamic Media](#whats-next).
 
 _Tópicos da Ajuda do Dynamic Media_
 
@@ -291,7 +290,7 @@ _Visualizadores do Dynamic Media_
 
 ## O que vem a seguir nesta Jornada do Dynamic Media {#whats-next}
 
-Na parte II desta jornada, você examina os URLs do Dynamic Media um pouco mais perto para entender melhor o que está acontecendo quando um ativo é entregue. Você também aprenderá mais sobre os fundamentos da criação de predefinições de imagens para renderizar ativos e sobre conjuntos de imagens, conjuntos de rotação e conjuntos de mídia mista, e como eles são criados.
+Na parte II desta jornada, você examina detalhadamente os URLs do Dynamic Media para entender melhor o que está acontecendo quando um ativo é entregue. Você também aprenderá mais sobre os fundamentos da criação de predefinições de imagens para renderizar ativos e sobre conjuntos de imagens, conjuntos de rotação e conjuntos de mídia mista, e como eles são criados.
 
 Leve-me para [Jornada do Dynamic Media: Noções básicas, Parte II](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-d).
 
