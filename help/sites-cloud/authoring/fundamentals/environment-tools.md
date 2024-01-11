@@ -2,7 +2,7 @@
 title: Ambiente e ferramentas de criação
 description: O ambiente de criação do AEM fornece vários mecanismos para organização e edição de conteúdo
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 1a49bcd5b76e6a3b0d5a3168cef445101dc8d149
 workflow-type: tm+mt
 source-wordcount: '2161'
 ht-degree: 84%
@@ -102,7 +102,7 @@ A aparência e o manuseio real dependem do tipo de dispositivo usado:
 
 ## Navegador de ativos {#assets-browser}
 
-O navegador de ativos mostra todos os [ativos](/help/assets/home.md) disponíveis para uso direto em sua página atual.
+O navegador de ativos mostra todos os [ativos](/help/assets/overview.md) disponíveis para uso direto em sua página atual.
 
 O navegador de ativos é um guia no painel lateral juntamente com o [navegador de componentes](#components-browser) e a [árvore de conteúdo](#content-tree). Para abrir ou fechar o painel lateral, use o ícone na parte superior esquerda da barra de ferramentas:
 
