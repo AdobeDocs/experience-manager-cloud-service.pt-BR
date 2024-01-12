@@ -3,10 +3,10 @@ title: Saiba como pesquisar e descobrir ativos no [!DNL Assets view]?
 description: Saiba como pesquisar e descobrir ativos na visualização do AEM Assets. A eficiente funcionalidade de pesquisa permite descobrir rapidamente o ativo apropriado e ajuda a melhorar a velocidade do conteúdo.
 role: User
 exl-id: be9597a3-056c-436c-a09e-15a03567c85a
-source-git-commit: 6fb2701fc2a4dc1cb9e8ea31134f0b3f2bb6bdf9
+source-git-commit: 7b815a83e4e93c024403fab02f9a9b4ba8685007
 workflow-type: tm+mt
-source-wordcount: '1470'
-ht-degree: 63%
+source-wordcount: '1543'
+ht-degree: 60%
 
 ---
 
@@ -29,20 +29,6 @@ Para pesquisar ativos,
    * Pesquisar usando uma palavra-chave e, opcionalmente, alterar a pasta. Pressione Return.
 
    * Comece a trabalhar com um ativo visualizado recentemente procurando diretamente por ele. Clique na caixa de pesquisa e selecione um ativo visualizado recentemente a partir das sugestões.
-
-## Pesquisar ativos usando o Adobe Firefly
-
-Se estiver procurando um ativo não disponível em nenhuma pasta de ativos, use o [!UICONTROL Adobe Firefly] recurso de pesquisa de ativo no [!UICONTROL Adobe Experience Manager Assets]. Ele permite pesquisar com eficiência ativos que podem não estar armazenados nas pastas designadas. No momento, esse recurso está acessível somente aos usuários com direito ao Express. <br> Por exemplo, você pode pesquisar um ativo usando a palavra-chave `Bugatti Type 57`. Ao pesquisar por `Bugatti Type 57`, nenhum resultado foi encontrado.
-
-![integração de Firefly](assets/firefly-integration.jpg)
-*Figura: Nenhum resultado encontrado para Bugatti Type 57 na pasta de ativos.*
-
-Na barra de pesquisa, digite o nome do ativo e clique em **[!UICONTROL Gerar]**.
-
-![integração de Firefly](assets/bugatti-type-57.jpg)
-*Figura: ativos de referência pesquisados usando o recurso de pesquisa de ativos do Adobe Firefly.*
-
-Os ativos de amostra são exibidos na tela. Você pode fazer upload desses ativos para sua pasta preferida para facilitar o acesso.
 
 ## Filtrar os resultados da pesquisa {#refine-search-results}
 
@@ -134,6 +120,38 @@ Para remover filtros personalizados:
 
 1. Clique em **[!UICONTROL Confirmar]** para remover os filtros da interface.
 
+## Pesquisar ativos usando [!DNL Adobe Firefly] {#search-firefly}
+
+Pesquise por um ativo que não está disponível em nenhuma das pastas de ativos usando o [!DNL Adobe Firefly] recurso de pesquisa de ativo no [!DNL Experience Manager Assets]. Isso permite gerar ativos em tempo real com eficiência que não estão armazenados nas pastas de ativos.
+
+### Antes de começar
+
+Você deve ter um ativo [!DNL Adobe Express] assinatura.
+
+### Gerar ativos
+
+Para gerar novos ativos usando o [!DNL Adobe Firefly]:
+
+1. Navegue até a [!DNL AEM Assets] espaço de trabalho.
+1. Insira o nome do ativo na barra de pesquisa na parte superior da página.<br>
+Por exemplo, você pode pesquisar um ativo usando a palavra-chave `Bugatti Type 57`. Ao pesquisar pelo ativo, nenhum resultado é encontrado porque o ativo não está presente em nenhuma das pastas de ativos.
+1. Digite o nome do ativo na barra de pesquisa no meio da página e clique em **[!UICONTROL Gerar]**.
+   ![integração de Firefly](assets/firefly-integration.jpg)
+   *Figura: Nenhum resultado encontrado para Bugatti Type 57 na pasta de ativos.* <br>
+Os novos ativos foram gerados com sucesso.
+   ![integração de Firefly](assets/bugatti-type-57.jpg)
+   *Figura: ativos de referência pesquisados usando [!DNL Adobe Firefly] recurso de pesquisa de ativos.* <br>
+Você pode fazer upload desses ativos para sua pasta preferida para facilitar o acesso.
+
+### Fazer upload de ativos
+
+Para fazer upload do ativo gerado para o repositório de ativos:
+
+1. Clique em **[!UICONTROL Carregar]**.
+1. Selecione a pasta de ativos na qual você precisa fazer upload do ativo e clique em **[!UICONTROL Selecionar pasta]**.
+   ![Fazer upload de ativo](assets/upload-asset-firefly.jpg)
+   *Figura: selecione a pasta na qual carregar o ativo.*
+
 ## Pesquisas salvas {#saved-search}
 
 A funcionalidade de pesquisa é bastante fácil de usar no [!DNL Assets view]. Na caixa de pesquisa, basta digitar uma palavra-chave e pressionar Return para ver os resultados, ou você pode pesquisar novamente as palavras-chave pesquisadas recentemente de maneira rápida e com um único clique.
@@ -169,7 +187,7 @@ Você pode selecionar os ativos exibidos nos resultados da pesquisa e realizar a
 
 * **Fixar no Acesso rápido**: [fixar um ativo](my-workspace-assets-view.md) para agilizar o acesso quando precisar. Todos os itens fixados são exibidos na seção **Acesso rápido** do Meu espaço de trabalho.
 
-* **Abrir no Adobe Express**: edite uma imagem no Adobe Express integrado na tela do Adobe Experience Manager Assets.
+* **Abrir no Adobe Express**: edite uma imagem no Adobe Express integrado na tela do Experience Manager Assets.
 
 * **Editar**: edite a imagem usando o Adobe Express.
 
