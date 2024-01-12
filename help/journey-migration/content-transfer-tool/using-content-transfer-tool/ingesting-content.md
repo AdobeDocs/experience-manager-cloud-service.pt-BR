@@ -5,7 +5,7 @@ exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 source-git-commit: 4c8565d60ddcd9d0675822f37e77e70dd42c0c36
 workflow-type: tm+mt
 source-wordcount: '2407'
-ht-degree: 4%
+ht-degree: 6%
 
 ---
 
@@ -78,7 +78,7 @@ Siga as etapas abaixo para assimilar seu conjunto de migração usando o Cloud A
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_topup"
 >title="Ingestão complementar"
->abstract="Use o recurso complementar para mover o conteúdo modificado desde a atividade de transferência de conteúdo anterior. Após a conclusão da assimilação, verifique se há erros ou avisos nos registros. Todos os erros devem ser resolvidos imediatamente, seja resolvendo os problemas relatados ou entrando em contato com o Atendimento ao cliente da Adobe."
+>abstract="Use o recurso complementar para mover o conteúdo modificado desde a atividade de transferência de conteúdo anterior. Após a conclusão da assimilação, verifique os logs em busca de erros ou avisos. Todos os erros devem ser resolvidos imediatamente, seja resolvendo os problemas relatados ou entrando em contato com o Atendimento ao cliente da Adobe."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html" text="Exibição de logs"
 
 A ferramenta Transferência de conteúdo tem um recurso que permite a extração de conteúdo diferencial executando uma *complementar* do conjunto de migração. Isso permite que o conjunto de migração seja modificado para incluir somente o conteúdo que foi alterado desde a extração anterior, sem precisar extrair todo o conteúdo novamente.
@@ -97,7 +97,7 @@ Comece criando uma tarefa de assimilação e verifique se **Limpar** está desat
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_troubleshooting"
 >title="Solução de problemas de assimilação de conteúdo"
->abstract="Consulte os logs de assimilação e a documentação para encontrar soluções para motivos comuns pelos quais uma assimilação pode falhar e encontrar a maneira de corrigir o problema. Depois de corrigida, a assimilação pode ser executada novamente."
+>abstract="Consulte os logs de assimilação e a documentação para descobrir os motivos comuns pelos quais uma assimilação pode falhar e uma maneira de corrigir o problema. Depois de corrigida, a assimilação pode ser executada novamente."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=pt-BR" text="Validar transferências de conteúdo"
 
 ### O CAM não consegue recuperar o token de migração {#cam-unable-to-retrieve-the-migration-token}
