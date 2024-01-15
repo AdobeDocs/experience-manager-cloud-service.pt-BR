@@ -1,8 +1,9 @@
 ---
 title: Como podemos usar o Forms Designer para criar modelos de Documento de registro (DoR) e fragmentos de formulário?
 description: Uso [!DNL AEM Forms] designer para criar modelos de documento de registro e fragmentos de formulário.
-feature: Forms Designer
-source-git-commit: b2769134c2e744f41cbb7e8a3cf08c622cdc07ca
+feature: Adaptive Forms, Forms Designer
+role: Admin, Developer, User
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
 source-wordcount: '123'
 ht-degree: 0%

@@ -1,11 +1,13 @@
 ---
 title: Como conectar um banco de dados ao [!DNL AEM Forms] as a Cloud Service?
 description: Recupere e salve dados em serviços Web RESTful, serviços Web baseados em SOAP e serviços OData de um formulário adaptável ou de um fluxo de trabalho AEM.
+feature: Adaptive Forms, Form Data Model
+role: Admin, User
 exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
-source-git-commit: 596cd08a98b1d9d47825438e1d64b6db3f847271
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 2%
+source-wordcount: '537'
+ht-degree: 3%
 
 ---
 

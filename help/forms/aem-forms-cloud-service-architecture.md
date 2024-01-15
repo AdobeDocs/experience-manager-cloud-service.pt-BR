@@ -1,11 +1,13 @@
 ---
 title: Arquitetura as a Cloud Service do AEM Forms para APIs de Forms adaptável e comunicação
 description: Entender a arquitetura do [!DNL AEM Forms] as a Cloud Service para conhecer os aspectos de escalabilidade, resiliência e desempenho da plataforma.
+role: Admin, Developer, User
+feature: Adaptive Forms
 exl-id: 9d677bee-50ca-460e-b503-6b7799900735
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
-source-wordcount: '1093'
-ht-degree: 5%
+source-wordcount: '1033'
+ht-degree: 2%
 
 ---
 
@@ -67,7 +69,7 @@ A Replicação reversa não está disponível no AEM as a Cloud Service para env
 
 ### Serviços da Adobe
 
-**Serviço de conversão automática de formulários**
+**Serviço Automated forms conversion**
 
 [serviço Automated forms conversion](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=pt-BR) O converte automaticamente seus formulários PDF e XFA em formulários adaptáveis compatíveis com dispositivos responsivos e baseados em HTML5.
 
@@ -105,7 +107,7 @@ O Cloud Manager é um componente essencial para [AEM as a Cloud Service](https:/
 
 ### Console do desenvolvedor
 
-Um Console do desenvolvedor fornece vários detalhes de cada ambiente do Forms as a Cloud Service em execução. Esses detalhes são úteis na depuração do ambiente. Para obter detalhes, consulte [Depuração do AEM as a Cloud Service com o Console do desenvolvedor](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=pt-BR).
+Um Console do desenvolvedor fornece vários detalhes de cada ambiente do Forms as a Cloud Service em execução. Esses detalhes são úteis na depuração do ambiente. Para obter detalhes, consulte [Depuração do AEM as a Cloud Service com o Console do desenvolvedor](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html).
 
 <!--
 

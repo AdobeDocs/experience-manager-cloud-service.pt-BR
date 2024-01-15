@@ -2,9 +2,11 @@
 title: O que são considerações, problemas conhecidos e práticas recomendadas no AEM Forms?
 description: Considerações sobre problemas conhecidos e práticas recomendadas para APIs de comunicação do AEM Forms.
 exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Adaptive Forms
+role: Admin, Developer, User
+source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
 workflow-type: tm+mt
-source-wordcount: '1749'
+source-wordcount: '1733'
 ht-degree: 0%
 
 ---

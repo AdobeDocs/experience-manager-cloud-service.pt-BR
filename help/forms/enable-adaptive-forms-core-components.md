@@ -3,12 +3,12 @@ title: Como ativar os Componentes principais do Adaptive Forms no ambiente de de
 description: Saiba como ativar os Componentes principais do Adaptive Forms no AEM Forms as a Cloud Service.
 contentOwner: Khushwant Singh
 docset: CloudService
-role: Admin
-exl-id: 32a574e2-faa9-4724-a833-1e4c584582cf
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+role: Admin, Developer, User
+feature: Adaptive Forms, Core Components
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
-source-wordcount: '1013'
-ht-degree: 6%
+source-wordcount: '985'
+ht-degree: 2%
 
 ---
 
@@ -299,7 +299,7 @@ Implante o código atualizado em seus ambientes de desenvolvimento e Cloud Servi
 
    Depois que o pacote for criado com êxito, você poderá encontrá-lo em [Pasta do repositório Git]\all\target\[appid].all-[version].zip
 
-1. Use o [Gerenciador de pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=pt-BR) para implantar o [Pasta de projeto do arquétipo AEM]\all\target\[appid].all-[version]pacote .zip no ambiente de desenvolvimento local.
+1. Use o [Gerenciador de pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en) para implantar o [Pasta de projeto do arquétipo AEM]\all\target\[appid].all-[version]pacote .zip no ambiente de desenvolvimento local.
 
 
 ### Criar e implantar código atualizado em um ambiente as a Cloud Service do AEM Forms {#core-components-on-aem-forms-cs}

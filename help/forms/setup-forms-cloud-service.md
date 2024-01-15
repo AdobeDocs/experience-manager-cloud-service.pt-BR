@@ -1,11 +1,12 @@
 ---
 title: Como configurar um [!DNL AEM Forms] ambiente do as a cloud service?
 description: Saiba como instalar e configurar um [!DNL AEM Forms] ambiente as a Cloud Service.
-exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+role: Admin, Developer, User
+feature: Adaptive Forms
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
-source-wordcount: '649'
-ht-degree: 17%
+source-wordcount: '602'
+ht-degree: 14%
 
 ---
 

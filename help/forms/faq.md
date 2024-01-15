@@ -2,12 +2,13 @@
 title: Perguntas frequentes sobre o AEM Forms as a Cloud Service
 description: Perguntas frequentes as a Cloud Service sobre o Forms
 contentOwner: khsingh
-exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
+role: User
+feature: Adaptive Forms, FAQ
 index: false
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
-source-wordcount: '995'
-ht-degree: 3%
+source-wordcount: '986'
+ht-degree: 2%
 
 ---
 
@@ -30,7 +31,7 @@ Sim, você pode migrar seu código personalizado, conteúdo e ativos do no local
 
 * **Onde posso obter AEM? [!DNL Forms] as a Cloud Service [!DNL Java™] Documentação de referência da API?**
 Você pode baixar a documentação de referência da API Java™ em [!DNL Maven Central Repository]. Para baixar:
-   1. Acesse [[!DNL Maven Central Repository]](https://mvnrepository.com/artifact/com.adobe.aem/aem-forms-sdk-api).
+   1. Ir para [[!DNL Maven Central Repository]](https://mvnrepository.com/artifact/com.adobe.aem/aem-forms-sdk-api).
    1. Localizar e abrir uma página contendo a versão mais recente do [!DNL Experience Manager Forms] SDK.
    1. Clique na opção Exibir tudo para exibir todos os arquivos.
    1. Baixe e extraia o `aem-forms-sdk-api-<version>-javadocs`.jar
@@ -38,7 +39,7 @@ Você pode baixar a documentação de referência da API Java™ em [!DNL Maven 
 
 * **Onde posso obter [!DNL JavaScript™] Referência de API do Adaptive Forms?**
 Você pode baixar [!DNL JavaScript™] Documentação de referência da API de[!DNL  Maven Central Repository]. Para baixar:
-   1. Abrir [[!DNL Maven Central Repository]](https://mvnrepository.com/artifact/com.adobe.aem/aem-forms-sdk-api).
+   1. Abertura [[!DNL Maven Central Repository]](https://mvnrepository.com/artifact/com.adobe.aem/aem-forms-sdk-api).
    1. Localizar e abrir uma página contendo a versão mais recente do [!DNL Experience Manager Forms] SDK.
    1. Clique na opção Exibir tudo para exibir todos os arquivos.
    1. Baixe e extraia o `aem-forms-sdk-api-<version>-jsdoc.jar`.

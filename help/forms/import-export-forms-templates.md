@@ -2,8 +2,9 @@
 title: Como importar, exportar e organizar o Adaptive Forms ou PDF forms em uma instância do AEM Forms?
 description: Saiba como migrar Forms adaptável, PDF forms, temas e outros ativos de suporte para e de instâncias AEM.
 topic-tags: forms-manager
-exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+role: Admin, User
+feature: Adaptive Forms
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
 source-wordcount: '1193'
 ht-degree: 0%

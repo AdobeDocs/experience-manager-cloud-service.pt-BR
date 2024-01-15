@@ -1,10 +1,12 @@
 ---
 title: Criação de PDF sem esforço - Domine a arte com processamento em lote - Seu guia de autoajuda para gerar milhões de documentos de PDF!
 description: Como criar comunicações personalizadas e orientadas à marca?
+feature: Adaptive Forms, APIs
+role: Admin, Developer, User
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
 workflow-type: tm+mt
-source-wordcount: '1735'
+source-wordcount: '1706'
 ht-degree: 2%
 
 ---

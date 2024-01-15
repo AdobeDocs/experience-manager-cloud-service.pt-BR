@@ -2,11 +2,13 @@
 title: Como integrar o Salesforce usando o fluxo de credenciais do cliente OAuth 2.0 com o AEM Forms?
 description: Saiba como integrar o Salesforce com o AEM Forms usando o fluxo de credenciais do cliente OAuth 2.0.
 Keywords: Integration of Salesforce using OAuth 2.0 client credential flow, salesforce integration with oauth2 using client credential flow, salesforce and client credential integration
+feature: Adaptive Forms, Form Data Model
+role: User, Developer
 exl-id: 2c2029ab-6fb4-41a6-846c-175c3a79d921
-source-git-commit: f70e18b1c21fd530587694f91c3969e831cfc640
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
-source-wordcount: '422'
-ht-degree: 5%
+source-wordcount: '410'
+ht-degree: 4%
 
 ---
 
@@ -41,7 +43,7 @@ Antes de definir a comunicação entre um aplicativo do Salesforce e um ambiente
 
 Para conectar o formulário adaptável ao aplicativo Salesforce usando as configurações de autenticação de credencial do cliente OAuth 2.0, execute as seguintes etapas:
 
-1. Faça logon na Instância do autor do . 
+1. Faça logon na instância do Author.
 1. Ir para **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Fontes de dados]**.
 1. Selecione a pasta de configuração.
 1. Clique em **[!UICONTROL Criar]** e a variável **[!UICONTROL Criar configuração da fonte de dados]** é exibida.
