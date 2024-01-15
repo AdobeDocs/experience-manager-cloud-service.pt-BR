@@ -1,13 +1,13 @@
 ---
 title: Como visualizar um formulário adaptável?
-description: Os usuários podem visualizar formulários antes de publicá-los ou ativá-los, para garantir que atendam às expectativas. As opções de visualização podem variar entre os tipos de formulário compatíveis.
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+description: Os usuários podem visualizar o formulário antes de publicá-lo ou ativá-lo, para garantir que ele atenda às expectativas. As opções de visualização podem variar entre os tipos de formulário compatíveis.
 topic-tags: author
-discoiquuid: 377d804d-4a75-4c93-8125-d2660cf56418
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+role: Admin, Developer, User
+feature: Adaptive Forms
+source-git-commit: 6511c4273ca3d394d98a61e8acb4d3cb03c243d5
 workflow-type: tm+mt
-source-wordcount: '359'
-ht-degree: 3%
+source-wordcount: '336'
+ht-degree: 2%
 
 ---
 
@@ -28,10 +28,10 @@ A tabela a seguir lista as opções de visualização disponíveis para diferent
    <td><strong>Tipo de ativo</strong><br /> </td>
    <td><strong>Opções de visualização disponíveis</strong><br /> </td>
   </tr>
-  <tr>
-   <td>Documento</td>
-   <td>Visualização do PDF</td>
-  </tr>
+  <!--<tr>
+   <td>Document</td>
+   <td>PDF preview</td>
+  </tr>-->
   <tr>
    <td>Formulário PDF</td>
    <td>Visualização e visualização do PDF com dados<br /> </td>
@@ -40,10 +40,10 @@ A tabela a seguir lista as opções de visualização disponíveis para diferent
    <td>Formulário adaptável</td>
    <td>Visualização de HTML e visualização de HTML com dados</td>
   </tr>
-  <tr>
-   <td>Modelo de formulário</td>
-   <td>Visualização de PDF, visualização de PDF com dados, visualização de HTML, visualização de HTML com dados<br /> </td>
-  </tr>
+  <!--<tr>
+   <td>Form Template</td>
+   <td>PDF preview, PDF preview with Data, HTML preview, HTML preview with Data<br /> </td>
+  </tr>-->
  </tbody>
 </table>
 
@@ -61,7 +61,7 @@ A tabela a seguir lista as opções de visualização disponíveis para diferent
 
    * Visualizar como HTML
    * Exibir com dados
-   * Visualizar como PDF (disponível para modelos de formulário)
+     <!--* Preview as PDF (available for form templates)-->
 
 ## Exibir com dados {#preview-with-data}
 
