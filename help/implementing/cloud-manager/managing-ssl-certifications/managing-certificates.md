@@ -2,10 +2,10 @@
 title: Gerenciar certificados SSL
 description: Saiba como usar o Cloud Manager para verificar o status dos certificados SSL e como editá-los, substituí-los, atualizá-los e excluí-los.
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 76%
+source-wordcount: '644'
+ht-degree: 73%
 
 ---
 
@@ -30,7 +30,8 @@ O status dos certificados SSL pode ser entendido rapidamente na página de certi
 
 Quando um certificado expira, todos os domínios que usem o certificado expirado deixam de funcionar. Atualizar os certificados de acordo com as etapas a seguir garante que o domínio continue a funcionar conforme desejado.
 
-1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização e o programa apropriado.
+1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização apropriada
+1. No **[Meus programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** selecione o programa.
 1. Acesse a tela **Ambientes** a partir da página **Visão geral**.
 1. Navegue até a tela **Certificados SSL** da tela **Ambientes**.
 1. Você pode ver uma tabela com uma linha para cada certificado SSL que foi instalado com êxito em seu programa. Clique no botão de reticências na extremidade direita da linha do certificado que deseja atualizar e selecione **Exibir e atualizar**.

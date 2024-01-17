@@ -2,10 +2,10 @@
 title: Acesso e gerenciamento de registros
 description: Saiba como acessar e gerenciar logs para auxiliar seu processo de desenvolvimento no AEM as a Cloud Service.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '345'
-ht-degree: 74%
+source-wordcount: '330'
+ht-degree: 71%
 
 ---
 
@@ -20,7 +20,9 @@ Você pode acessar uma lista de arquivos de log disponíveis para o ambiente sel
 
 Para baixar os logs, faça o seguinte:
 
-1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização e o programa apropriado.
+1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
+
+1. No **[Meus programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** selecione o programa.
 
 1. Navegue até o cartão **Ambientes** na página **Visão geral**.
 

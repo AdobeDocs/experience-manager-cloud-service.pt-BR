@@ -2,10 +2,10 @@
 title: Adicionar um certificado SSL
 description: Saiba como adicionar seu próprio certificado SSL usando as ferramentas de autoatendimento do Cloud Manager.
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 82%
+source-wordcount: '557'
+ht-degree: 78%
 
 ---
 
@@ -25,7 +25,9 @@ Revise a seção **Requisitos de certificado** do documento [Introdução ao ger
 
 Siga estas etapas para adicionar um certificado usando o Cloud Manager.
 
-1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização e o programa apropriado.
+1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização apropriada
+
+1. No **[Meus programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** selecione o programa.
 
 1. Acesse a tela **Ambientes** a partir da página **Visão geral**.
 

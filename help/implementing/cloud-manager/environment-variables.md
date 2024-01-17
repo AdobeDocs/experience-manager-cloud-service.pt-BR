@@ -2,10 +2,10 @@
 title: Variáveis de ambiente do Cloud Manager
 description: As variáveis de ambiente padrão podem ser configuradas e gerenciadas por meio do Cloud Manager e fornecidas para o ambiente de tempo de execução, a ser usado na configuração do OSGi.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '1010'
-ht-degree: 85%
+source-wordcount: '992'
+ht-degree: 84%
 
 ---
 
@@ -37,7 +37,7 @@ Casos de uso típicos para as variáveis de ambiente incluem:
 >Você deve ser membro com a função de [**Gerenciador de implantação** ](/help/onboarding/cloud-manager-introduction.md#role-based-premissions) para adicionar ou modificar variáveis de ambiente.
 
 1. Faça logon no Adobe Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
-1. O Cloud Manager lista os vários programas disponíveis. Selecione aquele que deseja gerenciar.
+1. No **[Meus programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** selecione aquele que deseja gerenciar.
 1. Selecione a guia **Ambientes** do programa escolhido e o ambiente para o qual deseja criar uma variável de ambiente no painel de navegação esquerdo.
 1. Nos detalhes do ambiente, selecione a guia **Configuração** e clique em **Adicionar** para abrir a caixa de diálogo **Configuração do ambiente**.
    * Se estiver adicionando uma variável de ambiente pela primeira vez, você poderá ver uma **Adicionar configuração** no centro da página. Você pode usar esse botão ou **Adicionar** para abrir a caixa de diálogo **Configuração do ambiente**.

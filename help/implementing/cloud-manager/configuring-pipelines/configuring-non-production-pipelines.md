@@ -3,10 +3,10 @@ title: Configurar pipelines de não produção
 description: Saiba como configurar pipelines de não produção para testar a qualidade do código antes de implantar em ambientes de produção.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '1285'
-ht-degree: 80%
+source-wordcount: '1290'
+ht-degree: 78%
 
 ---
 
@@ -34,7 +34,9 @@ Existem dois tipos de pipelines de não produção:
 
 Depois de configurar seu programa e ter pelo menos um ambiente usando a interface do usuário do Cloud Manager, você estará pronto para adicionar um pipeline de não produção seguindo essas etapas.
 
-1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização e o programa apropriado.
+1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
+
+No **[Meus programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** selecione o programa.
 
 1. Acesse o cartão **Pipelines** na tela inicial do Cloud Manager. Clique em **+Adicionar** e selecione **Adicionar pipeline de não produção**.
 
@@ -73,7 +75,7 @@ As etapas para concluir a criação do pipeline de não produção variam de aco
 
 ### Código de pilha completa {#full-stack-code}
 
-Um pipeline de código de pilha completa implanta simultaneamente compilações de código de back-end e front-end contendo um ou mais aplicativos de servidor do AEM, juntamente com a configuração HTTPD/Dispatcher.
+Um pipeline de código de pilha completa implanta simultaneamente compilações de código de back-end e front-end contendo um ou mais aplicativos de servidor AEM, juntamente com a configuração HTTPD/Dispatcher.
 
 >[!NOTE]
 >

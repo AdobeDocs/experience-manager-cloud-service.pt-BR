@@ -2,10 +2,10 @@
 title: Adicionar listas de permissões de IP
 description: Saiba como adicionar sua própria lista de permissões de IP usando o Cloud Manager.
 exl-id: 769be71f-5c11-4f98-8906-7a5667a25aee
-source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 73%
+source-wordcount: '198'
+ht-degree: 69%
 
 ---
 
@@ -16,7 +16,9 @@ Saiba como adicionar sua própria lista de permissões de IP usando o Cloud Mana
 
 Um usuário com função de **Proprietário da empresa** ou **Gerente de implantação** pode seguir essas etapas para adicionar uma lista de permissões de IP.
 
-1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização e o programa apropriado.
+1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
+
+1. No **[Meus programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** selecione o programa.
 
 1. No **Visão geral** , navegue até o **Ambientes** tela.
 

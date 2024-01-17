@@ -2,10 +2,10 @@
 title: Gerenciar nomes de domínio personalizados
 description: Saiba como usar o Cloud Manager para exibir, atualizar, substituir e excluir nomes de domínio personalizados.
 exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 83%
+source-wordcount: '339'
+ht-degree: 81%
 
 ---
 
@@ -17,7 +17,9 @@ O Cloud Manager permite exibir, atualizar, substituir e excluir nomes de domíni
 
 Use o menu **Exibir e atualizar** para exibir os detalhes de qualquer um dos nomes de domínio personalizados.
 
-1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização e o programa apropriado.
+1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
+
+1. No **[Meus programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** selecione o programa.
 
 1. Acesse a tela **Ambientes** a partir da página **Visão geral**.
 

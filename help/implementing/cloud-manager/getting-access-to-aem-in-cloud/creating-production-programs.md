@@ -2,10 +2,10 @@
 title: Criação de programas de produção
 description: Saiba como usar o Cloud Manager para criar seu próprio programa de produção para hospedar o tráfego direto.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 79d3ec7f5ede84fd989b7d5440739ec9560a547f
 workflow-type: tm+mt
-source-wordcount: '596'
-ht-degree: 73%
+source-wordcount: '599'
+ht-degree: 63%
 
 ---
 
@@ -22,7 +22,7 @@ Siga estas etapas para criar um programa de produção.
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
-1. Clique em **Adicionar programa** no canto superior direito da tela.
+1. No **[Meus programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** toque ou clique **Adicionar programa** no canto superior direito da tela.
 
    ![Página de aterrissagem do Cloud Manager](assets/log-in.png)
 
@@ -37,8 +37,6 @@ Siga estas etapas para criar um programa de produção.
    * O HIPAA não pode ser habilitado ou desabilitado após a criação do programa.
       * [Saiba mais](https://www.adobe.com/go/hipaa-ready) sobre a solução de implementação pronta para HIPAA da Adobe.
    * Uma vez ativada, a proteção WAF-DDOS pode ser configurada configurando um [pipeline de não produção.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
-
-   {{waf-limited-release}}
 
    ![Opções de segurança](assets/create-production-program-security.png)
 
@@ -60,7 +58,7 @@ Siga estas etapas para criar um programa de produção.
    ![Definir data de publicação planejada](assets/setup-go-live.png)
 
    * Essa data poderá ser editada a qualquer momento.
-   * Essa data é somente para fins informativos e aciona o widget de publicação na página de visão geral do programa para fornecer links no produto para a documentação de práticas recomendadas do AEM as a Cloud Service em tempo hábil, a fim de se alinhar com a sua jornada, resultando em uma experiência de publicação bem-sucedida e tranquila.
+   * Essa data é somente para fins informativos e aciona o widget de ativação na [**Visão geral do programa** página](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#program-overview) para fornecer links no produto para a documentação de práticas recomendadas as a Cloud Service do AEM em tempo hábil, a fim de se alinhar à sua jornada, resultando em uma experiência de ativação bem-sucedida e tranquila.
 
 1. Clique em **Criar**.
 

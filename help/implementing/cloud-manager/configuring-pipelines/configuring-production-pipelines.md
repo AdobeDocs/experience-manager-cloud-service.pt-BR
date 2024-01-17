@@ -3,10 +3,10 @@ title: Configuração de pipelines de produção
 description: Saiba como configurar pipelines de produção para compilar e implantar seu código em ambientes de produção.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '1412'
-ht-degree: 77%
+source-wordcount: '1418'
+ht-degree: 72%
 
 ---
 
@@ -35,7 +35,9 @@ Depois de configurar seu programa e ter pelo menos um ambiente usando a interfac
 >
 >Antes de configurar um pipeline de front-end, consulte a [jornada de Criação rápida de sites do AEM](/help/journey-sites/quick-site/overview.md) para obter um guia completo sobre a ferramenta simples de Criação rápida de sites do AEM. Essa jornada ajudará você a simplificar o desenvolvimento de front-end do seu site do AEM, permitindo personalizar rapidamente o site sem conhecimento de back-end no AEM.
 
-1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização e o programa apropriado.
+1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização apropriada
+
+1. No **[Meus programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** selecione o programa.
 
 1. Navegue até a **Pipelines** do **Visão geral do programa** e clique em **Adicionar** para selecionar **Adicionar pipeline de produção**.
 
@@ -67,7 +69,7 @@ As etapas para concluir a criação do pipeline de produção variam de acordo c
 
 ### Código de pilha completa {#full-stack-code}
 
-Um pipeline de código de pilha completa implanta simultaneamente compilações de código de back-end e front-end contendo um ou mais aplicativos de servidor do AEM, juntamente com a configuração HTTPD/Dispatcher.
+Um pipeline de código de pilha completa implanta simultaneamente compilações de código de back-end e front-end contendo um ou mais aplicativos de servidor AEM, juntamente com a configuração HTTPD/Dispatcher.
 
 >[!NOTE]
 >

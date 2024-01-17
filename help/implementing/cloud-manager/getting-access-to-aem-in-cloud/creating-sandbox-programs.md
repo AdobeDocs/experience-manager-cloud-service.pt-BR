@@ -2,10 +2,10 @@
 title: Criação de programas do sandbox
 description: Saiba como usar o Cloud Manager para criar seu próprio programa de sandbox para treinamentos, demonstrações, POCs ou outros fins de não produção.
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '442'
-ht-degree: 90%
+source-wordcount: '443'
+ht-degree: 86%
 
 ---
 
@@ -19,7 +19,7 @@ Saiba mais sobre os tipos de programas no documento [Noções sobre programas e 
 
 1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização apropriada.
 
-1. Na página de destino do Cloud Manager, próximo ao canto superior direito da tela, clique em **Adicionar programa**.
+1. No **[Meus programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** toque ou clique **Adicionar programa** próximo ao canto superior direito da tela.
 
    ![Página de destino do Cloud Manager](assets/cloud-manager-my-programs.png)
 

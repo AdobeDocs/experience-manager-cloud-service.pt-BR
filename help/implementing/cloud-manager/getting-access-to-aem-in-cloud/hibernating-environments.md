@@ -2,10 +2,10 @@
 title: Hibernação cancelamento da hibernação em ambientes de sandbox
 description: Saiba como os ambientes de um programa de sandbox entram automaticamente em um modo de hibernação e como você pode removê-los.
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 85%
+source-wordcount: '695'
+ht-degree: 84%
 
 ---
 
@@ -31,7 +31,7 @@ Siga estas etapas para hibernar manualmente os ambientes dos programas de sandbo
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
-1. Clique no programa que deseja hibernar para exibir seus detalhes.
+1. No **[Meus programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** toque ou clique no programa que deseja hibernar para exibir seus detalhes.
 
 1. No cartão **Ambientes**, clique no botão de reticências e selecione **Console do desenvolvedor**.
 
@@ -65,7 +65,7 @@ Você pode hibernar manualmente seu programa de sandbox no Console do desenvolve
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
-1. Clique no programa que deseja hibernar para exibir seus detalhes.
+1. No **[Meus programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** toque ou clique no programa que deseja cancelar hibernação para mostrar os detalhes.
 
 1. No cartão **Ambientes**, clique no botão de reticências e selecione **Console do desenvolvedor**.
 

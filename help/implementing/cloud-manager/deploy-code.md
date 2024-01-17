@@ -2,9 +2,9 @@
 title: Implantação de código
 description: Saiba como implantar seu código usando os pipelines do Cloud Manager no AEM as a Cloud Service.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '1190'
+source-wordcount: '1197'
 ht-degree: 80%
 
 ---
@@ -31,7 +31,7 @@ Depois de [configurar o Pipeline de produção](/help/implementing/cloud-manager
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
-1. Clique no programa no qual deseja implantar código.
+1. No **[Meus programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** toque ou clique no programa para o qual deseja implantar código.
 
 1. Clique em **Implantar** na chamada à ação na tela **Visão geral** para iniciar o processo de implantação.
 
