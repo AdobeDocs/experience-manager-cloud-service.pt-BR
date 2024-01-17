@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 8a74f027c7fe16c3bd23a8627bc9c82e8840cb77
+source-git-commit: e25f3e74fa7fa18b92ffe0c40a19f20442d4c7a0
 workflow-type: tm+mt
 source-wordcount: '4544'
 ht-degree: 90%
@@ -164,8 +164,7 @@ ht-degree: 90%
       + [Notas de versão atuais do conector aprimorado do Workfront para Experience Manager](/help/assets/release-notes-enhanced-connector-workfront.md)
    + [Novidades?](/help/release-notes/what-is-new.md)
    + [Alterações importantes no AEM Cloud Service](/help/release-notes/aem-cloud-changes.md)
-   + [Recursos obsoletos e removidos](/help/release-notes/deprecated-removed-features.md)
-   + [APIs obsoletas](/help/release-notes/deprecated-apis.md)
+   + [Recursos e APIs obsoletos e removidos](/help/release-notes/deprecated-removed-features.md)
    + [Canal de pré-lançamento](/help/release-notes/prerelease.md)
 + Segurança {#security}
    + [Visão geral de segurança para o AEM as a Cloud Service](/help/security/cloud-service-security-overview.md)
@@ -553,7 +552,7 @@ ht-degree: 90%
    + Integração com o Adobe Express {#integration-adobe-express}
       + [Complemento AEM Assets para Adobe Express](/help/assets/addon-adobe-express.md)
 
-   + Integração com o Creative Cloud {#integration-creative-cloud}
+   + Integração com a Creative Cloud {#integration-creative-cloud}
       + [Conectar o AEM Assets ao Creative Cloud](/help/assets/connect-assets-with-creative-cloud.md)
 
 + Forms {#forms}

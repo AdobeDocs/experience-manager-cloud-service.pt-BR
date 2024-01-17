@@ -1,10 +1,10 @@
 ---
-title: Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2021.5.0.
-description: Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2021.5.0.
+title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2021.5.0.
+description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2021.5.0.
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 720430af374636878b42ce346ca9c61ab089709b
 workflow-type: tm+mt
-source-wordcount: '1352'
+source-wordcount: '1355'
 ht-degree: 29%
 
 ---
@@ -31,7 +31,7 @@ A versão seguinte (2021.6.0) será lançada em 28 de junho de 2021.
 
 * [Canal de pré-lançamento](/help/release-notes/prerelease.md): visualize os recursos futuros por um mês inteiro antes de eles entrarem em produção.
 
-* [Descontinuação de API](/help/release-notes/deprecated-apis.md): uma lista das APIs obsoletas mais recentes para o AEM as a Cloud Service está disponível.
+* [Descontinuação de API](/help/release-notes/deprecated-removed-features.md): uma lista das APIs obsoletas mais recentes para o AEM as a Cloud Service está disponível.
 
 * [Plug-in Maven Analisador de build do SDK as a Cloud Service do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=pt-BR): atualize os projetos maven para a versão mais recente, o que inclui uma verificação de API Java descontinuada e outras melhorias.
 
@@ -102,13 +102,13 @@ Esta seção descreve as Notas de versão do Cloud Manager no AEM as a Cloud Ser
 ### Data de lançamento {#release-date-cm-may}
 
 A data de lançamento do Cloud Manager no AEM as a Cloud Service 2021.5.0 é 6 de maio de 2021.
-A próxima versão está planejada para 03 de junho de 2021.
+A próxima versão está planejada para sexta-feira, 3 de junho de 2021.
 
 ### Novidades {#what-is-new-may}
 
-* A regra de qualidade PackageOverlaps agora detecta casos em que o mesmo pacote foi implantado várias vezes, ou seja, em vários locais incorporados, no mesmo conjunto de pacotes implantado.
+* A regra de qualidade PackageOverlaps agora detecta casos em que o mesmo pacote foi implantado várias vezes, ou seja, em vários locais incorporados, no mesmo conjunto de pacotes implantados.
 
-* O endpoint do repositório na API pública agora inclui a URL do Git.
+* O ponto de acesso do repositório na API pública agora inclui a URL do Git.
 
 * O log de implantação baixado por um usuário do Cloud Manager é mais revelador e inclui detalhes sobre falhas e cenários de sucesso.
 
