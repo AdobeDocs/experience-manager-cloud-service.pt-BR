@@ -1,26 +1,33 @@
 ---
 title: Como integrar um formulário adaptável com o Microsoft® Power Automate?
 description: Integrar um formulário adaptável ao Microsoft® Power Automate.
-hide: true
-hidefromtoc: true
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+keywords: conecte formulários AEM para automatizar o poder, automatizar o poder AEM Forms, integrar automatizar o poder ao Adaptive Forms, enviar dados do Adaptive Forms para o Power Automate
+source-git-commit: fa9254a3290a7628c4d058a6e8cc010789bd30f9
 workflow-type: tm+mt
-source-wordcount: '1163'
-ht-degree: 2%
+source-wordcount: '1171'
+ht-degree: 4%
 
 ---
 
+
 # Conecte um formulário adaptável com o Microsoft® Power Automate {#connect-adaptive-form-with-power-automate}
 
-Você pode configurar um Formulário adaptável para executar um fluxo da nuvem do Microsoft® Power Automate no envio. O formulário adaptável configurado envia dados capturados, anexos e documentos de registro para processamento no fluxo da nuvem do Power Automate. Ele ajuda você a criar uma experiência personalizada de captura de dados, aproveitando o poder do Microsoft® Power Automate para criar lógicas comerciais sobre dados capturados e automatizar os fluxos de trabalho do cliente. Estes são alguns exemplos do que você pode fazer após integrar um formulário adaptável ao Microsoft® Power Automate:
+Você pode configurar um Formulário adaptável para executar um fluxo da nuvem do Microsoft® Power Automate no envio. O formulário adaptável configurado envia dados capturados, anexos e documentos de registro para processamento no fluxo da nuvem do Power Automate. Ele ajuda você a criar uma experiência personalizada de captura de dados, aproveitando o poder do Microsoft® Power Automate para criar lógicas de negócios sobre dados capturados e automatizar os fluxos de trabalho do cliente.
+
+O editor Forms adaptável fornece a **Chamar um fluxo do Microsoft® Power Automate** a ação de envio para enviar dados de formulários adaptáveis, anexos e Documento de registro são enviados para o Fluxo da nuvem do Power Automate.
+
+O AEM as a Cloud Service oferece várias ações de envio prontas para uso para manipular envios de formulários. Você pode saber mais sobre essas opções na [Ação de envio do formulário adaptável](/help/forms/configure-submit-actions-core-components.md)  artigo.
+
+
+## Vantagens
+
+Estes são alguns exemplos do que você pode fazer após integrar um formulário adaptável ao Microsoft® Power Automate:
 
 * Usar dados adaptáveis do Forms em processos de negócios do Power Automate
 * Use o Power Automate para enviar dados capturados para mais de 500 fontes de dados ou qualquer API disponível publicamente
 * Realizar cálculos complexos em dados capturados
 * Salve os dados do Forms adaptável em sistemas de armazenamento em uma programação predefinida
-
-O editor Forms adaptável fornece a **Chamar um fluxo do Microsoft® Power Automate** a ação de envio para enviar dados de formulários adaptáveis, anexos e Documento de registro são enviados para o Fluxo da nuvem do Power Automate. Para usar a ação Enviar para enviar dados capturados para o Microsoft® Power Automate, [Conecte sua instância do Forms as a Cloud Service com o Microsoft® Power Automate](forms-microsoft-power-automate-integration.md#connect-forms-server-with-power-automate)
 
 ## Pré-requisitos
 
@@ -30,7 +37,6 @@ Os seguintes itens são necessários para conectar um Formulário adaptável com
 * Microsoft® [Fluxo do Power Automate](https://docs.microsoft.com/en-us/power-automate/create-flow-solution) com o `When an HTTP request is received` acionador para aceitar os dados de envio do Formulário adaptável.
 * Um usuário Experience Manager com [Autor do Forms](/help/forms/forms-groups-privileges-tasks.md) e [Administrador do Forms](/help/forms/forms-groups-privileges-tasks.md) privilégios
 * A conta usada para conectar ao Microsoft® Power Automate é proprietária do fluxo do Power Automate configurado para receber dados do Formulário adaptável
-
 
 ## Conecte sua instância do Forms as a Cloud Service com o Microsoft® Power Automate {#connect-forms-server-with-power-automate}
 
@@ -87,7 +93,7 @@ Execute as seguintes ações para conectar sua instância do Forms as a Cloud Se
    >
    Ao criar um Formulário adaptável, especifique o nome do contêiner na **[!UICONTROL Contêiner de configuração]** campo.
 
-1. Na página de configuração, selecione **[!UICONTROL Criar]** para criar [!DNL Microsoft®® Power Automate Flow Service] configuração no AEM Forms.
+1. Na página de configuração, selecione **[!UICONTROL Criar]** para criar [!DNL Microsoft®®® Power Automate Flow Service] configuração no AEM Forms.
 1. No **[!UICONTROL Configurar o serviço Dataverse para o Microsoft® Power Automate]** página, especifique a **[!UICONTROL ID do cliente]** (também conhecido como ID do aplicativo), **[!UICONTROL Segredo do cliente]**, **[!UICONTROL URL do OAuth]** e **[!UICONTROL URL de ambiente dinâmico]**. Use a ID do cliente, o segredo do cliente, o URL do OAuth e o URL do ambiente dinâmico do [Aplicativo do Ative Diretory do Microsoft® Azure](#ms-power-automate-application) você criou na seção anterior. Use a opção Endpoints na interface do usuário do aplicativo do Microsoft® Azure Ative Diretory para encontrar o URL do OAuth
 
    ![Use a opção Endpoints na interface do usuário do aplicativo Microsoft Power Automate para localizar o URL do OAuth](assets/endpoints.png)
@@ -103,8 +109,8 @@ Execute as seguintes ações para conectar sua instância do Forms as a Cloud Se
    >
    Ao criar um Formulário adaptável, especifique o nome do contêiner na **[!UICONTROL Contêiner de configuração]** campo.
 
-1. Na página de configuração, selecione **[!UICONTROL Criar]** para criar [!DNL Microsoft®® Power Automate Flow Service] configuração no AEM Forms.
-1. No **[!UICONTROL Configurar Dataverse para o Microsoft® Power Automate]** página, especifique a **[!UICONTROL ID do cliente]** (também conhecido como ID do aplicativo), **[!UICONTROL Segredo do cliente]**, **[!UICONTROL URL do OAuth]** e **[!UICONTROL URL de ambiente dinâmico]**. Use a ID do cliente, o Segredo do cliente, o URL do OAuth e a ID de ambiente do Dynamics. Use a opção Endpoints na interface do usuário do aplicativo do Microsoft® Azure Ative Diretory para localizar o URL do OAuth. Abra o [Meus fluxos](https://us.flow.microsoft.com) e selecione Meus fluxos use a ID listada em URL como ID de ambiente do Dynamics.
+1. Na página de configuração, selecione **[!UICONTROL Criar]** para criar [!DNL Microsoft® Power Automate Flow Service] configuração no AEM Forms.
+1. No **[!UICONTROL Configurar o Dataverse para o Microsoft® Power Automate]** página, especifique a **[!UICONTROL ID do cliente]** (também conhecido como ID do aplicativo), **[!UICONTROL Segredo do cliente]**, **[!UICONTROL URL do OAuth]** e **[!UICONTROL URL de ambiente dinâmico]**. Use a ID do cliente, o Segredo do cliente, o URL do OAuth e a ID de ambiente do Dynamics. Use a opção Endpoints na interface do usuário do aplicativo do Microsoft® Azure Ative Diretory para localizar o URL do OAuth. Abra o [Meus fluxos](https://us.flow.microsoft.com) e selecione Meus fluxos use a ID listada em URL como ID de ambiente do Dynamics.
 1. Selecionar **[!UICONTROL Conectar]**. Se solicitado, faça logon em sua conta do Microsoft® Azure. Selecione **[!UICONTROL Salvar]**.
 
 ### Publicar as configurações de nuvem do Microsoft® Power Automate Dataverse e do Microsoft® Power Automate Flow Service {#publish-microsoft-power-automate-dataverse-cloud-configuration}
@@ -190,13 +196,19 @@ Antes de enviar o formulário adaptável, verifique se `When an HTTP Request is 
         }
 ```
 
-## Consulte também:
+<!--
+## See also
 
-* [Criação de um Formulário adaptável](creating-adaptive-form-core-components.md)
-* [Configurar uma ação de envio](configure-submit-actions-core-components.md)
-* [Conector Adobe Experience Manager para Microsoft® Power Automate](https://learn.microsoft.com/en-us/connectors/adobeexperiencemanag/)
-* [Conectar o formulário adaptável ao Microsoft Power Automate](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate)
+* [Create an Adaptive Form](creating-adaptive-form-core-components.md)
+* [Configure a Submit Action](configure-submit-actions-core-components.md)
+* [Adobe Experience Manager Connector for Microsoft&reg; Power Automate](https://learn.microsoft.com/en-us/connectors/adobeexperiencemanag/)
+* [Connect Adaptive Form to Microsoft® Power Automate](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate)
+-->
 
+
+## Artigos relacionados
+
+{{af-submit-action}}
 
 <!--
 

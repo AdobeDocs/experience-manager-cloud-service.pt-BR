@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 104dfd255185816983674026a84337624a851d9a
+source-git-commit: cb817f2ce94a1618fd8dd73834f663e8aaed2b7f
 workflow-type: tm+mt
-source-wordcount: '4551'
-ht-degree: 90%
+source-wordcount: '4600'
+ht-degree: 89%
 
 ---
 
@@ -609,6 +609,12 @@ ht-degree: 90%
             + [Configurar a página de redirecionamento ou mensagem de agradecimento](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [Criação de formulários com seções repetidas](/help/forms/create-forms-repeatable-sections.md)
             + [Configurar a ação enviar para um formulário adaptável](/help/forms/configure-submit-actions-core-components.md)
+            + [Enviar um formulário adaptável para o Armazenamento de blobs do Azure](/help/forms/configure-submit-action-azure-blob-storage.md)
+            + [Enviar um formulário adaptável ao Microsoft® OneDrive](/help/forms/configure-submit-action-onedrive.md)
+            + [Configurar o armazenamento do SharePoint para um formulário adaptável](/help/forms/configure-submit-action-sharepoint.md)
+            + [Integrar o formulário adaptável de AEM ao fluxo de trabalho de AEM](/help/forms/configure-submit-action-workflow.md)
+            + [Configurar a ação de envio Enviar para o Ponto de extremidade REST para o Adaptive Forms](/help/forms/configure-submit-action-restpoint.md)
+            + [Configurar a ação de envio Enviar email para um formulário adaptável](/help/forms/configure-submit-action-send-email.md)
             + [Usar o Google reCAPTCHA em um formulário adaptável](/help/forms/captcha-adaptive-forms-core-components.md)
             + [Adicionar manipulador de erros personalizado em um formulário adaptável](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [Adicione uma localidade para o Forms adaptável com base nos Componentes principais](/help/forms/supporting-new-language-localization-core-components.md)

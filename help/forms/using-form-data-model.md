@@ -5,9 +5,9 @@ feature: Adaptive Forms, Form Data Model
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 6e01a5bfc4e8bf7cc9537c9c03af08cd253a1ade
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1288'
 ht-degree: 2%
 
 ---
@@ -120,11 +120,25 @@ Edit Properties dialog for an interactive communication-->
 
 Quando um usuário envia um formulário com base em um modelo de dados de formulário, você pode configurar o formulário para gravar dados enviados de um objeto de modelo de dados em suas fontes de dados. Para obter esse caso de uso, [!DNL Experience Manager Forms] fornecer [Ação de envio do modelo de dados de formulário](configuring-submit-actions.md), disponível pronto para uso somente para o Adaptive Forms com base em um modelo de dados de formulário. Ele grava dados enviados para um objeto de modelo de dados em sua fonte de dados.
 
-Para configurar a Ação de envio do modelo de dados de formulário, abra as propriedades do Contêiner de formulário adaptável e selecione **[!UICONTROL Enviar usando modelo de dados do formulário]** no menu suspenso Enviar ação, na opção Envio. Em seguida, procure e selecione um objeto de modelo de dados na **[!UICONTROL Nome do objeto de modelo de dados a ser enviado]** menu suspenso. Salve as propriedades.
+Para configurar a Ação de envio do modelo de dados de formulário:
 
-No envio do formulário, os dados do objeto de modelo de dados configurado são gravados na respectiva fonte de dados.
+1. Abra o Navegador de conteúdo e selecione a variável **[!UICONTROL Contêiner do guia]** componente do seu Formulário adaptável.
+1. Clique nas propriedades do Container do guia ![Propriedades do guia](/help/forms/assets/configure-icon.svg) ícone. A caixa de diálogo Contêiner de formulário adaptável é aberta.
+1. Clique em  **[!UICONTROL Envio]** guia.
+1. No **[!UICONTROL Ação de envio]** selecione **[!UICONTROL Enviar usando modelo de dados do formulário]**.
+
+   ![Configuração de ação](/help/forms/assets/configure-submit-action-invoke-fdm.png)
+
+1. Especifique a **[!UICONTROL Modelo de dados para enviar]**.
+1. Clique em **[!UICONTROL Concluído]**
+
+No envio do formulário, os dados do objeto de modelo de dados configurado são gravados na respectiva fonte de dados. Além disso, você pode enviar um anexo de formulário usando um Modelo de dados de formulário e um Documento de registro (DoR) para a fonte de dados. Para obter informações sobre o modelo de dados de formulário, consulte [[!DNL AEM Forms] Integração de dados](data-integration.md).
 
 <!--![data-submission](assets/data-submission.png)-->
+
+>[!NOTE]
+>
+> O AEM as a Cloud Service oferece várias ações de envio prontas para uso para manipular envios de formulários. Você pode saber mais sobre essas opções na [Ação de envio do formulário adaptável](/help/forms/configure-submit-actions-core-components.md)  artigo.
 
 Você também pode enviar anexos de formulário para uma fonte de dados usando a propriedade de objeto de modelo de dados binários. Faça o seguinte para enviar anexos para uma origem de dados JDBC:
 

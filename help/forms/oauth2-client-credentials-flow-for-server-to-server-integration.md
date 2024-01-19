@@ -5,10 +5,10 @@ Keywords: Integration of Salesforce using OAuth 2.0 client credential flow, sale
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 2c2029ab-6fb4-41a6-846c-175c3a79d921
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 6e01a5bfc4e8bf7cc9537c9c03af08cd253a1ade
 workflow-type: tm+mt
-source-wordcount: '410'
-ht-degree: 4%
+source-wordcount: '482'
+ht-degree: 3%
 
 ---
 
@@ -24,6 +24,8 @@ Você pode usar as credenciais do cliente OAuth 2.0 para integrar o AEM Forms ao
 ![Fluxo de trabalho ao definir a comunicação entre o AEM Forms e o aplicativo Salesforce](/help/forms/assets/salesforce-workflow.png)
 
 O AEM Forms troca as credenciais do cliente (chave do consumidor e segredo do consumidor), definidas no aplicativo conectado do Salesforce, para obter um token de acesso.
+
+O AEM as a Cloud Service oferece várias ações de envio prontas para uso para manipular envios de formulários. Você pode saber mais sobre essas opções na [Ação de envio do formulário adaptável](/help/forms/configure-submit-actions-core-components.md) artigo.
 
 Há vários benefícios de usar credenciais de cliente OAuth 2.0 para autenticação em relação à autenticação de Fluxo de código de autorização:
 
@@ -69,6 +71,9 @@ Para conectar o formulário adaptável ao aplicativo Salesforce usando as config
 1. Clique em **[!UICONTROL Testar conexão]**.
 1. Se a conexão for bem-sucedida, clique no link **[!UICONTROL Criar]** botão.
 
-Agora, você pode [criar o modelo de dados do formulário](/help/forms/create-form-data-models.md) para enviar o formulário adaptável ao aplicativo Salesforce.
+
+Após configurar o aplicativo Salesforce, você pode usar a configuração enquanto cria modelos de dados de formulário. Para obter mais informações, consulte [Criar modelo de dados de formulário](create-form-data-models.md). [Configurar a ação enviar do modelo de dados de formulário](/help/forms/using-form-data-model.md) para um Formulário adaptável para enviar dados aos aplicativos do Salesforce.
+
+Para obter mais informações sobre como criar e usar o Modelo de dados de formulário em fluxos de trabalho de negócios, consulte [Integração de dados](data-integration.md).
 
 

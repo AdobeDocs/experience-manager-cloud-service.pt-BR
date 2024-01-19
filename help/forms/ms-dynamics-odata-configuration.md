@@ -5,9 +5,9 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 6e01a5bfc4e8bf7cc9537c9c03af08cd253a1ade
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '1000'
 ht-degree: 2%
 
 ---
@@ -35,6 +35,9 @@ ht-degree: 2%
 <!--* Form Data Model with preconfigured [!DNL Microsoft Dynamics] entities and services.-->
 
 <!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  O Cloud Service OData (serviço OData) do MS Dynamics está disponível com todos os modos de execução. Para obter mais informações sobre a configuração dos modos de execução para um [!DNL Experience Manager] instância, consulte [Modos de execução](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=pt-BR#runmodes).
+
+O AEM as a Cloud Service oferece várias ações de envio prontas para uso para manipular envios de formulários. Você pode saber mais sobre essas opções na [Ação de envio do formulário adaptável](/help/forms/configure-submit-actions-core-components.md)  artigo.
+
 
 ## Pré-requisitos {#prerequisites}
 
@@ -70,7 +73,7 @@ Faça o seguinte para definir o URL de resposta para registrado [!DNL Microsoft 
 
 >[!NOTE]
 >
->Use este procedimento somente durante a integração [!DNL Experience Manager Forms] com local [!DNL Microsoft Dynamics] servidor.
+> Use este procedimento somente durante a integração [!DNL Experience Manager Forms] com local [!DNL Microsoft Dynamics] servidor.
 
 1. Configurar [!DNL Microsoft Dynamics] local para o IFD, tal como descrito no anexo I, parte A, do Regulamento (CE) [Configurar IFD para [!DNL Microsoft Dynamics]](https://technet.microsoft.com/en-us/library/dn609803.aspx).
 1. Execute os seguintes comandos usando o Windows PowerShell para definir as configurações de declaração no IFD habilitado [!DNL Microsoft Dynamics]:
@@ -158,14 +161,16 @@ To review the form data model, go to **[!UICONTROL Form Data Model egrations]**.
  Form Data Model 
 ![default-fdm-1](assets/default-fdm-1.png)-->
 
-Depois de configurar o serviço de nuvem do MS Dynamics OData Cloud Ser Form Data Model (ce), você pode usar o serviço ao criar modelos de dados de formulário. Para obter mais informações, consulte [Criar modelo de dados de formulário](create-form-data-models.md).
+Após configurar o serviço de nuvem MS Dynamics OData, você pode usá-lo ao criar modelos de dados de formulário. Para obter mais informações, consulte [Criar modelo de dados de formulário](create-form-data-models.md).
 
-Em seguida, você pode criar um Formulário adaptável com base no modelo de Modelo de dados de formulário e usá-lo em vários casos de uso do Formulário adaptável, como:
+Em seguida, você pode criar um Modelo de dados de formulário baseado no Formulário adaptável e usá-lo em vários casos de uso do Formulário adaptável, como:
 
 * Preencha previamente o formulário adaptável consultando informações do [!DNL Microsoft Dynamics] entidades e serviços
 * Chamar [!DNL Microsoft Dynamics] operações do servidor definidas em um Modelo de dados de formulário usando regras de Formulário adaptável
 * Gravar dados do formulário enviado em [!DNL Microsoft Dynamics] entidades
 
 <!--It is recommended to create a copy of the Form Data Model provided with the [!DNL Experience Manager Forms] package and configure data models and services to suit your requirements. It will ensure that any future updates to the package do not override your form data model.-->
+
+Você pode [configurar a ação enviar do modelo de dados de formulário](/help/forms/using-form-data-model.md) para um Formulário adaptável para enviar dados ao Microsoft Dynamics OData.
 
 Para obter mais informações sobre como criar e usar o Modelo de dados de formulário em fluxos de trabalho de negócios, consulte [Integração de dados](data-integration.md).
