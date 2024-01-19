@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: cb817f2ce94a1618fd8dd73834f663e8aaed2b7f
+source-git-commit: 8d9cd4c580058299eea8a391b0b341751d3f2104
 workflow-type: tm+mt
-source-wordcount: '4600'
+source-wordcount: '4609'
 ht-degree: 89%
 
 ---
@@ -1012,6 +1012,7 @@ ht-degree: 89%
          + [Ativação de exportação em JSON para um componente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=pt-BR)
          + [Integração do Launch](/help/implementing/developing/hybrid/launch-integration.md)
          + [Documentos de referência SPA](/help/implementing/developing/hybrid/reference-materials.md)
+         + [Não permitir a serialização de ResourceResolvers por meio do Exportador de Modelo do Sling](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md)
    + Ferramentas do desenvolvedor {#developer-tools}
       + [Modo de desenvolvedor](/help/implementing/developing/tools/developer-mode.md)
       + [Ferramentas de desenvolvedor do AEM para Eclipse](/help/implementing/developing/tools/eclipse.md)
