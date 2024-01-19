@@ -3,10 +3,10 @@ title: Notas de versão do Cloud Manager 2024.1.0 no Adobe Experience Manager as
 description: Estas são as notas de versão do Cloud Manager 2024.1.0 no AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: a00eb97859f679ade3a4a6d89a427735451ebd70
+source-git-commit: 06f534e6541bd04e005f3acf1edbb3e372c1cd0d
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 23%
+source-wordcount: '673'
+ht-degree: 20%
 
 ---
 
@@ -21,7 +21,12 @@ Esta página documenta as notas de versão do Cloud Manager 2024.1.0 no AEM as a
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento do Cloud Manager versão 2024.1.0 no AEM as a Cloud Service é 18 de janeiro de 2024.
+A data de lançamento do Cloud Manager versão 2024.1.0 no AEM as a Cloud Service é 18 de janeiro de 2024. A próxima versão está planejada para 16 de fevereiro de 2024.
+
+## Novidades {#what-is-new}
+
+* O Cloud Manager agora valida as datas de expiração não apenas para o [certificado,](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) mas também para os certificados intermediários.
+* CDN [logs](/help/implementing/cloud-manager/manage-logs.md) agora são retornados em formato compactado.
 
 ## Programa de adoção antecipada {#early-adoption}
 
@@ -61,3 +66,8 @@ Se você estiver interessado em testar esse novo recurso e compartilhar seus com
 O painel usa o Google Lighthouse, uma ferramenta de código aberto e automatizada para melhorar a qualidade dos seus aplicativos web. Você pode executá-lo em qualquer página da Web, público ou que exija autenticação. Ele tem auditorias de desempenho, acessibilidade, aplicativos web progressivos, SEO e muito mais.
 
 Interessado em testar o novo painel? Para começar, envie um email para `aem-lighthouse-pilot@adobe.com` do email associado à Adobe ID.
+
+## Correções de erros {#bug-fixes}
+
+* Correção de um erro em que os pipelines de configuração falhavam na etapa de compilação com uma mensagem de erro não clara se o local dos arquivos de configuração não estivesse definido corretamente. A mensagem de erro agora é clara e indica que o usuário deve verificar se o local dos arquivos de configuração está correto.
+* Quando uma etapa de criação termina com o status `FAILED` devido a uma `BUILD_MAVEN_TRANSFER_ARTIFACT_ERROR`, agora ele é descrito corretamente como um erro devido a conflitos de mesclagem com a ramificação de destino.
