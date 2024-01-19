@@ -2,7 +2,7 @@
 title: Replicação
 description: Saiba mais sobre distribuição e solução de problemas de replicação no AEM as a Cloud Service.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: 3249f17e6ecb341880597577e1f2a48653a7a88a
 workflow-type: tm+mt
 source-wordcount: '1312'
 ht-degree: 39%
@@ -89,7 +89,7 @@ Como alternativa, você pode criar um Modelo de fluxo de trabalho que use a vari
 
 * `includeChildren` (valor booleano, padrão: `false`). O valor `false` significa que apenas o caminho é publicado; `true` significa que os filhos também são publicados.
 * `replicateAsParticipant` (valor booleano, padrão: `false`). Se configurado como `true`, a replicação está usando o `userid` do principal que executou a etapa do participante.
-* `enableVersion` (valor booleano, padrão: `true`). Esse parâmetro determina se uma nova versão será criada na replicação.
+* `enableVersion` (valor booleano, padrão: `false`). Esse parâmetro determina se uma nova versão será criada na replicação.
 * `agentId` (valor da string; o valor padrão significa que apenas os agentes para publicação são usados). É recomendado ser explícito sobre o agentId; por exemplo, definir o valor como: publicar. Configurando o agente para `preview` publica no serviço de visualização.
 * `filters` (valor da string; o valor padrão significa que todos os caminhos são ativados). Os valores disponíveis são:
    * `onlyActivated` - ativar somente as páginas que (já) foram ativadas. Atua como uma forma de reativação.
