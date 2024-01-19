@@ -1,9 +1,10 @@
 ---
 title: Visão geral do editor universal para desenvolvedores do AEM
 description: Se você for um desenvolvedor do AEM interessado em como o Editor universal funciona e como usá-lo no seu projeto, este documento fornecerá uma introdução completa, orientando você pela instrumentação do projeto WKND para trabalhar com o Editor universal.
-source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
+exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
+source-git-commit: d7154fcec9cf6e3cb00ce8e434e38544294df165
 workflow-type: tm+mt
-source-wordcount: '3082'
+source-wordcount: '3112'
 ht-degree: 0%
 
 ---
@@ -36,6 +37,7 @@ Para acompanhar essa visão geral, você precisa do seguinte disponível.
    * [O site de demonstração do WKND deve ser instalado.](https://github.com/adobe/aem-guides-wknd)
 * [Acesso ao Editor Universal](/help/implementing/universal-editor/getting-started.md#onboarding)
 * [Um serviço do Editor Universal local](/help/implementing/universal-editor/local-dev.md) execução para fins de desenvolvimento
+   * Não deixe de direcionar seu navegador para [aceite o certificado autoassinado dos serviços locais.](/help/implementing/universal-editor/local-dev.md#editing)
 
 Além da familiaridade geral com o desenvolvimento na web, este documento presume a familiaridade básica com o desenvolvimento do AEM. Se você não tiver experiência com desenvolvimento de AEM, considere revisar [Clique no tutorial do WKND antes de continuar.](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
 
@@ -164,7 +166,7 @@ A página agora é carregada com a biblioteca JavaScript adequada para permitir 
 
 A página WKND agora é carregada com sucesso no Editor universal e a biblioteca JavaScript é carregada para conectar o editor ao seu aplicativo.
 
-No entanto, você provavelmente notou rapidamente que não pode interagir com a página no Editor universal. O Editor universal não pode realmente editar sua página. Para que o Editor universal possa editar seu conteúdo, é necessário definir uma conexão para que ele saiba onde escrever o conteúdo. Para desenvolvimento local, você precisa gravar na sua instância de desenvolvimento local do AEM em `https://localhost:8443`.
+No entanto, você provavelmente notou que não é possível interagir com a página no Editor universal. O Editor universal não pode realmente editar sua página. Para que o Editor universal possa editar seu conteúdo, é necessário definir uma conexão para que ele saiba onde escrever o conteúdo. Para desenvolvimento local, você precisa gravar na sua instância de desenvolvimento local do AEM em `https://localhost:8443`.
 
 1. Abra o CRXDE Lite.
 
@@ -227,10 +229,9 @@ Seus componentes também devem ser instrumentados para serem editados com o Edit
 1. No final do primeiro `div` na linha 26, adicione os detalhes da instrumentação do componente.
 
    ```text
-   itemscope
-   itemid="urn:aem:${resource.path}"
-   itemtype="component"
-   data-editor-itemlabel="Teaser"
+   data-aue-resource="urn:aem:${resource.path}"
+   data-aue-type="component"
+   data-aue-label="Teaser"
    ```
 
 1. Clique em **Salvar tudo** na barra de ferramentas e recarregue o Editor universal.
@@ -262,9 +263,9 @@ Agora é possível selecionar o teaser, mas ainda não editá-lo. Isso ocorre po
 1. Insira as seguintes propriedades no final da `h2` (próximo à linha 17).
 
    ```text
-   itemprop="jcr:title"
-   itemtype="text"
-   data-editor-itemlabel="Title"
+   data-aue-prop="jcr:title"
+   data-aue-type="text"
+   data-aue-label="Title"
    ```
 
 1. Clique em **Salvar tudo** na barra de ferramentas e recarregue o Editor universal.
@@ -281,15 +282,14 @@ Agora que você pode editar o título do teaser, vamos analisar o que você real
 
 Você identificou o componente de teaser para o Editor universal ao instrumentá-lo.
 
-* `itemscope` O o identifica como um item para o Editor Universal.
-* `itemid` identifica o recurso no AEM que está sendo editado.
-* `itemtype` O define que os itens devem ser tratados como um componente de página (em vez de, um contêiner).
-* `data-editor-itemlabel` O exibe um rótulo amigável na interface do usuário para o teaser selecionado.
+* `data-aue-resource` identifica o recurso no AEM que está sendo editado.
+* `data-aue-type` O define que os itens devem ser tratados como um componente de página (em vez de, um contêiner).
+* `data-aue-label` O exibe um rótulo amigável na interface do usuário para o teaser selecionado.
 
 Você também instrumentou o componente de título dentro do componente de teaser.
 
-* `itemprop` é o atributo JCR que é gravado.
-* `itemtype` é como o atributo deve ser editado. Nesse caso, com o editor de texto, pois é um título (em vez de dizer, o editor de rich text).
+* `data-aue-prop` é o atributo JCR que é gravado.
+* `data-aue-type` é como o atributo deve ser editado. Nesse caso, com o editor de texto, pois é um título (em vez de dizer, o editor de rich text).
 
 ## Definindo Cabeçalhos de Autenticação {#auth-header}
 
@@ -299,13 +299,13 @@ Agora é possível editar o título do teaser em linha e as alterações são pe
 
 No entanto, se você recarregar o navegador, o título anterior será recarregado. Isso ocorre porque, embora o Editor universal saiba como se conectar à instância do AEM, ele ainda não pode se autenticar na instância do AEM para gravar as alterações no JCR.
 
-Se você exibir a guia de rede das ferramentas de desenvolvedor do navegador e pesquisar por `update`No entanto, você pode ver que há um erro 500 ao tentar editar o título.
+Se você exibir a guia de rede das ferramentas de desenvolvedor do navegador e pesquisar por `update`No entanto, você pode ver que há um erro 401 ao tentar editar o título.
 
 ![Erro ao tentar editar o título](assets/dev-edit-error.png)
 
 Ao usar o Editor universal para editar o conteúdo AEM de produção, o Editor universal usa o mesmo token IMS usado para fazer logon no editor e autenticar no AEM para facilitar a gravação no JCR.
 
-Quando você está desenvolvendo localmente, não pode usar o provedor de identidade AEM, portanto, é necessário fornecer manualmente uma maneira de autenticar, definindo explicitamente um cabeçalho de autenticação.
+Quando você está desenvolvendo localmente, não é possível usar o provedor de identidade AEM, pois os tokens IMS são passados apenas para domínios de propriedade de Adobe. Você precisa fornecer manualmente uma maneira de autenticar, definindo explicitamente um cabeçalho de autenticação.
 
 1. Na interface do Editor universal, clique na guia **Cabeçalhos de autenticação** na barra de ferramentas.
 
@@ -323,22 +323,24 @@ Se você investigar o tráfego nas ferramentas de desenvolvedor do navegador e p
 
 ```json
 {
-  "op": "patch",
-  "connections": {
-    "aem": "aem:https://localhost:8443"
-  },
-  "path": {
-    "itemid": "urn:aem:/content/wknd/language-masters/en/jcr:content/root/container/carousel/item_1571954853062",
-    "itemtype": "text",
-    "itemprop": "jcr:title"
+  "connections": [
+    {
+      "name": "aem",
+      "protocol": "aem",
+      "uri": "https://localhost:8443"
+    }
+  ],
+  "target": {
+    "resource": "urn:aem:/content/wknd/language-masters/en/jcr:content/root/container/carousel/item_1571954853062",
+    "type": "text",
+    "prop": "jcr:title"
   },
   "value": "Tiny Toon Adventures"
 }
 ```
 
-* `op` é a operação, que nesse caso é uma correção do conteúdo existente do campo editado.
 * `connections` é a conexão com sua instância de AEM local
-* `path` é o nó exato e as propriedades atualizadas no JCR
+* `target` é o nó exato e as propriedades atualizadas no JCR
 * `value` é a atualização que você fez.
 
 Você pode ver a alteração persistida no JCR.
@@ -357,7 +359,7 @@ Agora você tem um aplicativo que é instrumentado para ser editável usando o E
 
 Atualmente, a edição está limitada à edição em linha do título do teaser. No entanto, há casos em que a edição no local não é suficiente. Texto como o título do teaser pode ser editado onde estiver com a entrada do teclado. No entanto, itens mais complicados precisam ser capazes de exibir e permitir a edição de dados estruturados separados de como é renderizado no navegador. É para isso que serve o painel de propriedades.
 
-Agora atualize seu aplicativo para usar o painel de propriedades para edição. Para fazer isso, você retorna ao arquivo de cabeçalho do componente de página do seu aplicativo, onde já estabeleceu as conexões com sua instância de desenvolvimento local do AEM e seu serviço local do Universal Editor. Aqui, você deve definir os componentes editáveis no aplicativo e seus modelos de dados.
+Para atualizar seu aplicativo para usar o painel de propriedades para edição, retorne ao arquivo de cabeçalho do componente Página do seu aplicativo. É aqui que você já estabeleceu as conexões com a instância de desenvolvimento local do AEM e o serviço local do Editor universal. Aqui, você deve definir os componentes editáveis no aplicativo e seus modelos de dados.
 
 1. Abra o CRXDE Lite.
 
@@ -369,10 +371,10 @@ Agora atualize seu aplicativo para usar o painel de propriedades para edição. 
 
    ![Edição do arquivo customheaderlibs.html](assets/dev-instrument-properties-rail.png)
 
-1. Adicione o script necessário para mapear os campos até o final do arquivo.
+1. Ao final do arquivo, adicione o script necessário para definir os componentes.
 
    ```html
-   <script type="application/vnd.adobe.aem.editor.component-definition+json">
+   <script type="application/vnd.adobe.aue.component+json">
    {
      "groups": [
        {
@@ -388,29 +390,69 @@ Agora atualize seu aplicativo para usar o painel de propriedades para edição. 
                    "resourceType": "wknd/components/teaser"
                  }
                }
-             },
-             "model": {
-               "id": "teaser",
-               "fields": [
-                 {
-                   "component": "text-input",
-                   "name": "jcr:title",
-                   "label": "Title",
-                   "valueType": "string"
-                 },
-                 {
-                   "component": "text-area",
-                   "name": "jcr:description",
-                   "label": "Description",
-                   "valueType": "string"
+             }
+           },
+           {
+             "title": "Title",
+             "id": "title",
+             "plugins": {
+               "aem": {
+                 "page": {
+                   "resourceType": "wknd/components/title"
                  }
-               ]
+               }
              }
            }
          ]
        }
      ]
    }
+   </script>
+   ```
+
+1. Abaixo disso, ao final do arquivo adicione o script necessário para definir o modelo.
+
+   ```html
+   <script type="application/vnd.adobe.aue.model+json">
+   [
+     {
+       "id": "teaser",
+       "fields": [
+         {
+           "component": "text-input",
+           "name": "jcr:title",
+           "label": "Title",
+           "valueType": "string"
+         },
+         {
+           "component": "text-area",
+           "name": "jcr:description",
+           "label": "Description",
+           "valueType": "string"
+         }
+       ]
+     },
+     {
+       "id": "title",
+       "fields": [
+         {
+           "component": "select",
+           "name": "type",
+           "value": "h1",
+           "label": "Type",
+           "valueType": "string",
+           "options": [
+             { "name": "h1", "value": "h1" },
+             { "name": "h2", "value": "h2" },
+             { "name": "h3", "value": "h3" },
+             { "name": "h4", "value": "h4" },
+             { "name": "h5", "value": "h5" },
+             { "name": "h6", "value": "h6" }
+           ]
+         }
+       ]
+     }
+   ]
    </script>
    ```
 
@@ -457,15 +499,17 @@ Você também precisa definir no nível do componente, qual modelo o componente 
 
    ![Editar o arquivo teaser.html](assets/dev-edit-teaser.png)
 
-1. No final do primeiro `div` aproximadamente na linha 32, depois da `itemscope` propriedades adicionadas anteriormente, adicione os detalhes da instrumentação para o modelo que o componente de teaser usará.
+1. No final do primeiro `div` aproximadamente na linha 32, depois das propriedades adicionadas anteriormente, adicione os detalhes de instrumentação do modelo que o componente de teaser usará.
 
    ```text
-   data-editor-itemmodel="teaser"
+   data-aue-model="teaser"
    ```
 
 1. Clique em **Salvar tudo** na barra de ferramentas e recarregue o Editor universal.
 
-1. Clique no título do teaser para editá-lo mais uma vez.
+Agora você está pronto para testar o painel de propriedades instrumentado para o seu componente.
+
+1. No Editor universal, clique no título do teaser para editá-lo mais uma vez.
 
 1. Clique no painel de propriedades para mostrar a guia de propriedades e ver os campos que você acabou de instrumentar.
 
@@ -489,7 +533,7 @@ Por exemplo, é possível adicionar um campo para ajustar o estilo do componente
 
    ![Edição do arquivo customheaderlibs.html](assets/dev-instrument-styles.png)
 
-1. Adicione mais um item à `fields` matriz para o campo de estilo. Lembre-se de adicionar uma vírgula após o último campo antes de inserir o novo.
+1. No script de definição de modelo, adicione um item adicional à variável `fields` matriz para o campo de estilo. Lembre-se de adicionar uma vírgula após o último campo antes de inserir o novo.
 
    ```json
    {

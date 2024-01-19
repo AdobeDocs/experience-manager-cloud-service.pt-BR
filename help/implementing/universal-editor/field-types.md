@@ -1,7 +1,8 @@
 ---
 title: Tipos de campos
 description: Saiba mais sobre os diferentes tipos de campos que o Editor universal pode editar no painel Componentes com exemplos de como você pode instrumentar seu próprio aplicativo.
-source-git-commit: 44073e27ce7eb35bc0d71cb963c1bd0f14183f00
+exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
+source-git-commit: 7ef3efa6e074778b7b3e3a8159056200b2663b30
 workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 7%
