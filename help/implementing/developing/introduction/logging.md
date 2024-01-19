@@ -2,10 +2,10 @@
 title: Registro para AEM as a Cloud Service
 description: Saiba como usar o Logging para AEM as a Cloud Service para configurar parâmetros globais para o serviço de log central, configurações específicas para os serviços individuais ou como solicitar o registro de dados.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 3d53f81bfe9b180f19590a70d72b6bf62a7ab732
+source-git-commit: 35959a1cd47e9ea1b93aeddc3eb72cf03c44eda8
 workflow-type: tm+mt
-source-wordcount: '2755'
-ht-degree: 3%
+source-wordcount: '2776'
+ht-degree: 2%
 
 ---
 
@@ -611,7 +611,7 @@ Os clientes que têm contas do Splunk podem solicitar por meio do tíquete de su
 
 A largura de banda da rede associada aos logs enviados ao Splunk é considerada parte do uso de E/S da rede pelo cliente.
 
-O encaminhamento do Splunk ainda não oferece suporte a logs CDN.
+Os logs de CDN serão encaminhados ao Splunk para novas solicitações de tíquete de suporte; os clientes que já têm o encaminhamento do Splunk habilitado poderão adicionar logs de CDN no futuro.
 
 ### Ativando o encaminhamento do Splunk {#enabling-splunk-forwarding}
 
