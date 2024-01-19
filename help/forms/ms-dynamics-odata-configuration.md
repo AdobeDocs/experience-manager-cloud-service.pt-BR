@@ -5,9 +5,9 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
-source-git-commit: 6e01a5bfc4e8bf7cc9537c9c03af08cd253a1ade
+source-git-commit: 39d788854c086b7f4c45d77bfea42fa687e08769
 workflow-type: tm+mt
-source-wordcount: '1000'
+source-wordcount: '1002'
 ht-degree: 2%
 
 ---
@@ -174,3 +174,7 @@ Em seguida, você pode criar um Modelo de dados de formulário baseado no Formul
 Você pode [configurar a ação enviar do modelo de dados de formulário](/help/forms/using-form-data-model.md) para um Formulário adaptável para enviar dados ao Microsoft Dynamics OData.
 
 Para obter mais informações sobre como criar e usar o Modelo de dados de formulário em fluxos de trabalho de negócios, consulte [Integração de dados](data-integration.md).
+
+## Artigos relacionados
+
+{{af-submit-action}}
