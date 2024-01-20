@@ -1,28 +1,41 @@
 ---
-title: Notas da versão [!DNL Workfront for Experience Manager enhanced connector]
-description: Notas da versão [!DNL Workfront for Experience Manager enhanced connector]
+title: Notas de versão do [!DNL Workfront for Experience Manager enhanced connector]
+description: Notas de versão do [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 16aa0241dd954b7f66523d746827d81b956578bd
+source-git-commit: b1c5df329e45128704ae82f49673c6a755a61a73
 workflow-type: tm+mt
-source-wordcount: '1379'
+source-wordcount: '1573'
 ht-degree: 1%
 
 ---
 
-# Notas da versão [!DNL Workfront for Experience Manager enhanced connector] {#release-notes-enhanced-connector-workfront}
+# Notas de versão do [!DNL Workfront for Experience Manager enhanced connector] {#release-notes-enhanced-connector-workfront}
 
 A seção a seguir descreve as Notas de versão gerais do [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento da versão mais recente 1.9.15 do [!DNL Workfront for Experience Manager enhanced connector] O é em 17 de novembro de 2023.
+A data de lançamento da versão mais recente 1.9.16 do [!DNL Workfront for Experience Manager enhanced connector] O é em 19 de janeiro de 2024.
 
 ## Destaques da versão {#release-highlights}
 
 A versão mais recente do [!DNL Workfront for Experience Manager enhanced connector] O inclui as seguintes correções de erros:
 
-* Ao visualizar a lista de pastas AEM, a caixa de diálogo demora mais de um minuto para carregar.
-* Autorizado [!DNL Workfront] os usuários do recebem consistentemente logs de erro de falha de autenticação.
+* A variável [!DNL Workfront] configuração no [!DNL CRX DE] No momento, o não armazena o `project ID`, causando erros ao aplicar a permissão somente leitura. Saiba como [configurar permissões](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#linked-folders).
+
+* Nenhuma documentação pública sobre como adicionar uma propriedade personalizada à definição de índice pronta para uso. Saiba mais sobre [adicionar propriedade personalizada](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#metadata-schema-mapping).
+
+* A exclusão de configurações de conexão no conector aprimorado afeta significativamente as assinaturas de eventos e outras configurações salvas, fazendo com que elas apontem para um URL antigo.
+
+* A instalação do pacote complementar do Forms não instala o **[!UICONTROL Alternar roteador]**, conduzindo ao fracasso da [!DNL WFEC AMS environment Toggle] recurso.
+
+* A ativação de assinaturas de evento na configuração do EWC resulta em falhas repetidas de chamada de API com `HTTP 400` erro ao configurar [!DNL Workfront] conector aprimorado pela primeira vez.
+
+* A exclusão de comentários em ativos de pastas vinculadas no Workfront não consegue encontrar o caminho de pasta vinculada no AEM.
+
+* O suporte insuficiente para arquivos grandes no AEM resulta em um problema de tamanho de 4 bytes.
+
+* Sem processamento de tempo de solicitação para fluxos críticos em pastas vinculadas, atualizações de documentos e atualizações de notas.
 
 >[!NOTE]
 >
@@ -31,7 +44,7 @@ A versão mais recente do [!DNL Workfront for Experience Manager enhanced connec
 
 >[!IMPORTANT]
 >
->Adobe recomenda que você [atualização para a versão 1.9.15 mais recente](/help/assets/workfront-connector-install.md) do [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe recomenda que você [atualização para a versão 1.9.16 mais recente](/help/assets/workfront-connector-install.md) do [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Problemas conhecidos {#known-issues}
 
@@ -40,6 +53,11 @@ A versão mais recente do [!DNL Workfront for Experience Manager enhanced connec
 * Ao usar a experiência clássica do Workfront, a variável **[!UICONTROL Enviar para]** opção disponível no **[!UICONTROL Mais]** lista suspensa não permite selecionar o destino dentro do Experience Manager. A variável **[!UICONTROL Enviar para]** A opção funciona corretamente usando o **[!UICONTROL Ações do documento]** lista suspensa. A variável **[!UICONTROL Enviar para]** A opção funciona corretamente para **[!UICONTROL Mais]** lista suspensa e a variável **[!UICONTROL Ações do documento]** disponível na nova experiência do Workfront.
 
 ## Versões anteriores {#previous-releases}
+
+### Versão de novembro de 2023 {#november-2023-release}
+
+* Ao visualizar a lista de pastas AEM, a caixa de diálogo demora mais de um minuto para carregar.
+* Autorizado [!DNL Workfront] os usuários do recebem consistentemente logs de erro de falha de autenticação.
 
 ### Versão de outubro de 2023 {#october-2023-release}
 
