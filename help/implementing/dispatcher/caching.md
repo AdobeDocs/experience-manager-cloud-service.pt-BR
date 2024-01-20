@@ -3,9 +3,9 @@ title: Armazenamento em cache no AEM as a Cloud Service
 description: Saiba mais sobre as noções básicas de armazenamento em cache no AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 8351e5e60c7ec823a399cbbdc0f08d2704f12ccf
+source-git-commit: 28537409c5974ff8ade30207f16cc62b45c47616
 workflow-type: tm+mt
-source-wordcount: '2865'
+source-wordcount: '2894'
 ht-degree: 1%
 
 ---
@@ -223,6 +223,10 @@ Agora, as imagens no armazenamento de blob marcadas como privadas não podem ser
         Header set Age 0
      </LocationMatch>
      ```
+
+### Análise da taxa de acertos do cache do CDN {#analyze-chr}
+
+Consulte a [tutorial de análise da taxa de acertos do cache](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/cdn-cache-hit-ratio-analysis.html) para obter informações sobre como baixar logs CDN e analisar a taxa de acertos do cache do site, usando um painel.
 
 ### comportamento da solicitação HEAD {#request-behavior}
 
