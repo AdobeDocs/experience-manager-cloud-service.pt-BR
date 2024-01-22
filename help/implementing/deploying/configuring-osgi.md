@@ -3,24 +3,25 @@ title: Configuração do OSGi para o Adobe Experience Manager as a Cloud Service
 description: Configuração OSGi com valores secretos e valores específicos do ambiente
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: a230efaa58cb00e8a0c0e2b23f0cc07462cc658b
 workflow-type: tm+mt
-source-wordcount: '3265'
+source-wordcount: '3269'
 ht-degree: 1%
 
 ---
 
-# Configuração do OSGi para o Adobe Experience Manager as a Cloud Service {#configuring-osgi-for-aem-as-a-cloud-service}
 
->[!NOTE]
->
->O AEM introduziu a capacidade de usar a interface do Cloud Manager para configurar variáveis de ambiente padrão com a versão 2021.12.0. Para obter mais informações, consulte a documentação [aqui](/help/implementing/cloud-manager/environment-variables.md).
+# Configuração do OSGi para o Adobe Experience Manager as a Cloud Service {#configuring-osgi-for-aem-as-a-cloud-service}
 
 [OSGi](https://www.osgi.org/) é um elemento fundamental na pilha de tecnologia do Adobe Experience Manager (AEM). É usado para controlar os pacotes compostos de AEM e suas configurações.
 
 O OSGi fornece as primitivas padronizadas que permitem que os aplicativos sejam construídos a partir de componentes pequenos, reutilizáveis e colaborativos. Esses componentes podem ser compostos em um aplicativo e implantados. Isso permite o gerenciamento fácil de pacotes OSGi, pois eles podem ser interrompidos, instalados e iniciados individualmente. As interdependências são tratadas automaticamente. Cada componente OSGi está contido em um dos vários pacotes. Para obter mais informações, consulte [Especificação OSGi](https://help.eclipse.org/latest/index.jsp).
 
 Você pode gerenciar as definições de configuração dos componentes OSGi por meio de arquivos de configuração que fazem parte de um projeto de código AEM.
+
+>[!TIP]
+>
+>Você pode usar o Cloud Manager para configurar variáveis de ambiente. Para obter mais informações, consulte a documentação [aqui.](/help/implementing/cloud-manager/environment-variables.md)
 
 ## Arquivos de configuração do OSGi {#osgi-configuration-files}
 
@@ -478,6 +479,10 @@ Consulte [esta página](https://developer.adobe.com/experience-cloud/cloud-manag
 >
 >Verifique se a API usada do Cloud Manager atribuiu a função &quot;Gerenciador de implantação - Cloud Service&quot;. Outras funções não podem executar todos os comandos abaixo.
 
+>[!TIP]
+>
+>Você também pode usar o Cloud Manager para configurar variáveis de ambiente. Para obter mais informações, consulte a documentação [aqui.](/help/implementing/cloud-manager/environment-variables.md)
+
 ### Configuração de valores por meio da API {#setting-values-via-api}
 
 Chamar a API implanta as novas variáveis e valores em um ambiente na nuvem, de modo semelhante a um pipeline típico de implantação de código do cliente. Os serviços de criação e publicação são reiniciados e fazem referência aos novos valores, normalmente levando alguns minutos.
@@ -486,8 +491,8 @@ Chamar a API implanta as novas variáveis e valores em um ambiente na nuvem, de 
 PATCH /program/{programId}/environment/{environmentId}/variables
 ```
 
-```
-]
+```json
+[
         {
                 "name" : "MY_VAR1",
                 "value" : "plaintext value",

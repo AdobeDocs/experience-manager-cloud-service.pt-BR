@@ -2,12 +2,13 @@
 title: Adicionar um nome de domínio personalizado
 description: Saiba como adicionar um nome de domínio personalizado usando o Cloud Manager.
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: 52466e091cf6e0ab1ac620e15568c04881a3b63a
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 77%
+source-wordcount: '680'
+ht-degree: 71%
 
 ---
+
 
 # Adicionar um nome de domínio personalizado {#adding-cdn}
 
@@ -60,17 +61,21 @@ A implantação do CDN requer um certificado SSL válido e uma verificação TXT
 
 Consulte [Verificar o status do nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) para saber mais sobre diferentes status e como resolver possíveis problemas.
 
+>[!TIP]
+>
+>Leia o seguinte artigo sobre a necessidade de [Adicionar um CNAME ou um registro em seguida](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) para evitar o esforço duplo ao adicionar registros DNS ao domínio personalizado. A entrada TXT e o registro CNAME ou A podem ser definidos simultaneamente no servidor DNS regulador.
+
+>[!TIP]
+>
+>Consulte [Adicionar um registro TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) para saber mais sobre registros TXT.
+
 >[!NOTE]
 >
 >A verificação de DNS pode levar algumas horas para ser processada devido a atrasos de propagação de DNS.
 >
 >O Cloud Manager verificará a propriedade e atualizará o status que pode ser visto na Tabela de configurações do domínio. Consulte [Verificar o status do nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) para obter mais detalhes.
 
->[!TIP]
->
->Consulte [Adicionar um registro TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) para saber mais sobre registros TXT.
-
-## Adição de um nome de domínio personalizado na página Ambientes {#adding-cdn-environments}
+## Adicionar um nome de domínio personalizado na página Ambientes {#adding-cdn-environments}
 
 Siga estas etapas para adicionar um nome de domínio personalizado na página **Ambientes**.
 
