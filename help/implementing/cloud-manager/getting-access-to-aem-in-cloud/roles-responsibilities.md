@@ -15,8 +15,8 @@ ht-degree: 90%
 >id="aemcloud_raci"
 >title="Funções e responsabilidades"
 >abstract="A Adobe fornece um conjunto de serviços para o provisionamento, o desenvolvimento, o preparo e a produção do Experience Manager as a Cloud Service. Para que o desenvolvimento e a implantação da solução prossigam da maneira mais eficiente possível, é importante que o cliente e o personalizador entendam e cumpram suas funções, conforme descrito neste documento."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html" text="Escolha as pessoas certas para as funções certas"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html" text="Alinhamento de KPIs"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=pt-BR" text="Escolha as pessoas certas para as funções certas"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=pt-BR" text="Alinhamento de KPIs"
 
 <br></br>
 A Adobe fornece um conjunto de serviços para o provisionamento, o desenvolvimento, o preparo e a produção do Experience Manager as a Cloud Service. Para que o desenvolvimento e a implantação da solução prossigam da maneira mais eficiente possível, é importante que o cliente e o personalizador entendam e cumpram suas funções, conforme descrito abaixo.

@@ -126,8 +126,8 @@ For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP i
 >id="aemcloud_bpa_interpreting"
 >title="Interpretação do relatório do Analisador de práticas recomendadas"
 >abstract="Há duas opções para visualizar relatórios do Analisador de Práticas Recomendadas: na interface e CSV. Quando o Analisador de Práticas Recomendadas é executado na instância do AEM, o relatório é exibido como resultado na janela da ferramenta. O formato CSV do relatório inclui informações geradas a partir do output do Detector de padrões, classificadas e organizadas por tipo de categoria, subtipo e nível de importância."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html#analysis-report" text="Revisão do relatório do Analisador de Práticas Recomendadas"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html" text="Noções básicas sobre as categorias do relatório do Analisador de Práticas Recomendadas"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=pt-BR#analysis-report" text="Revisão do relatório do Analisador de práticas recomendadas"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=pt-BR" text="Noções básicas sobre as categorias do relatório do Analisador de Práticas Recomendadas"
 
 Quando a ferramenta Analisador de práticas recomendadas é executada na instância do AEM, o relatório é exibido como resultado na janela da ferramenta.
 
@@ -144,7 +144,7 @@ O formato do relatório é:
 Um nível de importância é atribuído a cada conclusão para indicar uma prioridade aproximada de ação.
 
 >[!NOTE]
->Para saber mais sobre cada Categoria de descoberta, consulte [Categorias do Detector de Padrões](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html).
+>Para saber mais sobre cada Categoria de descoberta, consulte [Categorias do Detector de Padrões](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=pt-BR).
 
 Siga a tabela abaixo para entender os níveis de importância:
 

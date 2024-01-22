@@ -15,8 +15,8 @@ ht-degree: 97%
 >id="aemcloud_chooseteam"
 >title="Escolha a equipe certa"
 >abstract="Colocar as pessoas certas nos trabalhos certos para impulsionar a implantação do Adobe Experience Manager para o sucesso."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html" text="Alinhamento de KPIs"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html" text="Avaliação de KPIs"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=pt-BR" text="Alinhamento de KPIs"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html?lang=pt-BR" text="Avaliação de KPIs"
 
 Há chances de que, em sua organização, vários departamentos sejam responsáveis por diferentes aspectos da experiência digital. Sem governança, o palco está armado para discussões, lutas internas e confusão intermináveis.
 
