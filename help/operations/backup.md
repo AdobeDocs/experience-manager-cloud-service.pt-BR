@@ -2,10 +2,10 @@
 title: Backup e restauração no AEM as a Cloud Service
 description: Saiba mais sobre backup e restauração no AEM as a Cloud Service
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: 83b5d9a3ff0e9a3c69e36a97a3f733b05f827d3b
+source-git-commit: b77ee0697e8f6f4aeaa6651336588f1c5321abd1
 workflow-type: tm+mt
-source-wordcount: '514'
-ht-degree: 27%
+source-wordcount: '539'
+ht-degree: 24%
 
 ---
 
@@ -22,7 +22,7 @@ Se a implantação de um cliente, o que significa que o código do aplicativo im
 
 >[!CAUTION]
 >
->Esse recurso deve ser usado somente quando houver problemas graves com código ou conteúdo. Os dados recentes entre o momento do backup restaurado e o presente foram perdidos. O preparo também é restaurado para a versão antiga.
+>Esse recurso deve ser usado somente quando houver problemas graves com código ou conteúdo. Os dados recentes entre o momento do backup restaurado e o presente foram perdidos. O armazenamento temporário também é restaurado para a versão antiga. Se os dados recentes forem mantidos, eles precisarão ser exportados por meio de um pacote de conteúdo antes da restauração e reinstalados no repositório restaurado.
 
 ## Como usar {#how-to-use}
 
