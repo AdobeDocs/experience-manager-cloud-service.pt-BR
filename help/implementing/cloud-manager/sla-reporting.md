@@ -2,10 +2,10 @@
 title: Relatórios de SLA
 description: Saiba como visualizar o desempenho do seu ambiente de produção do AEM em relação ao acordo de nível de serviço (SLA).
 exl-id: 03932415-a029-4703-b44a-f86a87edb328
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: f037f47f0b131c87301faf4458658224d1d62a43
 workflow-type: tm+mt
-source-wordcount: '250'
-ht-degree: 88%
+source-wordcount: '400'
+ht-degree: 55%
 
 ---
 
@@ -51,3 +51,14 @@ A seção **Análise de eventos** no gráfico mostra o conjunto de incidentes qu
 Cada um dos incidentes tem um intervalo de tempo, uma causa e um conjunto de comentários.
 
 ![Exemplo de análise de eventos](assets/sla-reporting-c.png)
+
+## Intervalo de atualização {#refresh}
+
+Os relatórios de SLA fornecem informações sobre o desempenho do ambiente de produção de AEM e estão atualizados, mas não são instantâneos. A geração de relatórios de SLA acontece mensalmente e é gerada para novos programas marcados como Produção no mês anterior. Não é instantâneo. Devido a esse atraso, lembre-se do seguinte ao revisar seu relatório de SLA:
+
+* O SLA relatado será aquele que existia no início do mês, mesmo se o SLA tiver mudado durante esse mês.
+* Se não houver SLA no início do mês porque o programa não existia, será aplicado o SLA existente na data em que o programa foi criado.
+
+## Visualizar ambientes {#preview}
+
+O ambiente de visualização é uma ferramenta para que os autores de conteúdo verifiquem a experiência final do conteúdo antes da publicação. Por causa disso, os ambientes de visualização não foram projetados com alta disponibilidade e não têm um SLA associado.

@@ -11,18 +11,19 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: d9d4ed55722920a8528056defbc0d8a411dd6807
+source-git-commit: f7967c5374dd34315b2577cc9fd7606db3ef4cc7
 workflow-type: tm+mt
 source-wordcount: '1866'
 ht-degree: 1%
 
 ---
 
+
 # Componentes principais do AEM-CIF e integração com o Adobe Experience Platform {#aem-cif-aep-integration}
 
 A variável [Commerce integration framework (CIF)](https://github.com/adobe/aem-core-cif-components) Os componentes principais fornecem integração perfeita com [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-overview.html?lang=en) para encaminhar eventos da loja e seus dados de interações do lado do cliente, como __adicionar ao carrinho__.
 
-A variável [Componentes principais da CIF do AEM](https://github.com/adobe/aem-core-cif-components) O projeto fornece uma biblioteca JavaScript chamada [Conector do Adobe Experience Platform para Adobe Commerce](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) para coletar dados do evento na sua loja do Commerce. Esses dados de evento são enviados para o Experience Platform onde são usados em outros produtos da Adobe Experience Cloud, como Adobe Analytics e Adobe Target, para criar um perfil de 360 graus que cobre uma jornada do cliente. Conectando os dados do Commerce a outros produtos na Adobe Experience Cloud, você pode executar tarefas como analisar o comportamento do usuário no seu site, executar testes AB e criar campanhas personalizadas.
+A variável [AEM Componentes principais do CIF](https://github.com/adobe/aem-core-cif-components) O projeto fornece uma biblioteca JavaScript chamada [Conector do Adobe Experience Platform para Adobe Commerce](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) para coletar dados do evento na sua loja do Commerce. Esses dados de evento são enviados para o Experience Platform onde são usados em outros produtos da Adobe Experience Cloud, como Adobe Analytics e Adobe Target, para criar um perfil de 360 graus que cobre uma jornada do cliente. Conectando os dados do Commerce a outros produtos na Adobe Experience Cloud, você pode executar tarefas como analisar o comportamento do usuário no seu site, executar testes AB e criar campanhas personalizadas.
 
 Saiba mais sobre o [Coleta de dados Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html) conjunto de tecnologias que permitem coletar dados de experiência do cliente de fontes do lado do cliente.
 
@@ -216,7 +217,7 @@ Para inicializar os componentes principais do Peregrine e do CIF baseados no Rea
        },
        eventsCollector: {
            eventForwarding: {
-               commerce: true,
+               acds: true,
                aep: false,
            }
        }
@@ -225,7 +226,7 @@ Para inicializar os componentes principais do Peregrine e do CIF baseados no Rea
 
    >[!IMPORTANT]
    >
-   >Embora você já esteja familiarizado com o [`config.js`](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.frontend/src/main/components/App/config.js) arquivo de __Guias do AEM - Projeto CIF Venia__, há algumas alterações que você precisa fazer nesse arquivo. Primeiro, analise qualquer __TODO__ comentários. Em seguida, dentro do `eventsCollector` propriedade, localize o `eventsCollector > aed` objeto e atualizar o `orgId` e `datastreamId` aos valores corretos. [Saiba mais](./aep.md#add-aep-values-to-aem).
+   >Embora você já esteja familiarizado com o [`config.js`](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.frontend/src/main/components/App/config.js) arquivo de __Guias do AEM - Projeto CIF Venia__, há algumas alterações que você precisa fazer nesse arquivo. Primeiro, analise qualquer __TODO__ comentários. Em seguida, dentro do `eventsCollector` propriedade, localize o `eventsCollector > aep` objeto e atualizar o `orgId` e `datastreamId` aos valores corretos. [Saiba mais](./aep.md#add-aep-values-to-aem).
 
 1. Criar um `App.js` com o seguinte conteúdo. Esse arquivo se assemelha a um arquivo de ponto de partida típico do aplicativo React e contém ganchos React e personalizados e uso de Contexto React para facilitar a integração de Experience Platform.
 
