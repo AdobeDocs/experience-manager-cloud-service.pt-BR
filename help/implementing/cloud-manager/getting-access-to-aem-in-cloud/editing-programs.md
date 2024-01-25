@@ -2,10 +2,10 @@
 title: Gerenciamento e edição de programas
 description: Saiba como editar os programas de sandbox e produção para ajustar as opções depois de criá-las.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: 0d60c19638707262dab7f290f84fa873b694bc22
+source-git-commit: 2dfae31e32d375c82c4f690624e48f7f09feb4df
 workflow-type: tm+mt
-source-wordcount: '900'
-ht-degree: 24%
+source-wordcount: '773'
+ht-degree: 19%
 
 ---
 
@@ -99,38 +99,21 @@ A variável **Desempenho** fornece uma visão geral do **[Painel CDN.](/help/imp
 
    ![Opção Editar programa](assets/edit-program-overview.png)
 
-1. A página **Editar programa** será aberta. Na guia **Geral**, edite o nome e a descrição do programa.
-
-   * Pelo menos uma solução deve ser selecionada para um programa.
+1. A variável **Editar programa** abre para a **Geral** guia.
 
    ![Guia Geral](assets/edit-program-prod1.png)
 
-1. Na guia **Soluções e complementos**, modifique as soluções do programa.
-
-   ![Selecionar soluções](assets/edit-prg.png)
-
-1. Clique na divisa antes do nome da solução para exibir os complementos opcionais, como selecionar o **Commerce** opção complementar em **Sites**.
-
-   ![Editar complementos](assets/edit-program-add-on.png)
-
-1. Na guia **Configurações de publicação**, modifique a data de publicação planejada para o programa.
-
-   ![Editar configurações de publicação](assets/edit-program-go-live.png)
-
-   * Esta data é apenas para fins informativos. Ele aciona o widget de publicação na página de visão geral do programa. Por sua vez, ele fornece links para a documentação de práticas as a Cloud Service do Adobe Experience Manager (AEM) para alinhar-se à sua jornada, resultando em uma experiência de ativação bem-sucedida.
-   * Esta guia não está disponível para programas de sandbox.
-
-1. Se os direitos necessários estiverem disponíveis para o programa, a **Segurança** mostrará onde você pode modificar as opções de segurança do programa.
-
-   ![Editar configurações de segurança](assets/edit-program-security.png)
-
-   * O HIPAA não pode ser habilitado ou desabilitado após [criação do programa.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
-      * [Saiba mais](https://www.adobe.com/go/hipaa-ready) sobre a solução de implementação pronta para HIPAA da Adobe.
-   * Uma vez ativada, a proteção WAF-DDOS pode ser configurada configurando um [pipeline de não produção.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+1. As opções disponíveis para editar o programa são as mesmas que estão na criação do programa.
+   * Consulte os documentos [Criação de programas de produção](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) e [Criação de programas do sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) para obter detalhes sobre as opções individuais.
+   * [Opções adicionais](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options) pode estar disponível para seu programa de produção, dependendo dos direitos da sua organização.
 
 1. Clique em **Atualizar** para salvar as alterações no programa.
 
-Sempre que um programa for editado, incluindo a adição ou remoção de uma solução ou complemento, essas alterações entrarão em vigor após a próxima implantação.
+As alterações no programa são salvas.
+
+>[!NOTE]
+>
+>Sempre que um programa for editado, incluindo a adição ou remoção de uma solução ou complemento, essas alterações entrarão em vigor após a próxima implantação.
 
 ## Exclusão de programas de sandbox {#delete-sandbox-program}
 
