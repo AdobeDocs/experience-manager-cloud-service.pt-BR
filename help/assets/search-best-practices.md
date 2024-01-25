@@ -3,10 +3,10 @@ title: Pesquisar práticas recomendadas para [!DNL Adobe Experience Manager] as 
 description: Práticas recomendadas para pesquisar, localizar e recuperar metadados de ativos no aplicativo.
 contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
-source-git-commit: 47003c9aa0faefc01a9935c53a5a78938c37cf66
+source-git-commit: 6397a300de13c5e4f6ee5828de1ba76a1677c227
 workflow-type: tm+mt
-source-wordcount: '2521'
-ht-degree: 3%
+source-wordcount: '2527'
+ht-degree: 2%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 3%
 
 [!DNL Adobe Experience Manager Assets] O fornece métodos de pesquisa de ativos robustos que ajudam a alcançar maior velocidade do conteúdo. Às vezes, encontrar o ativo certo pode ser árduo e demorado. Portanto, o recurso de pesquisa de ativos no [!DNL Adobe Experience Manager Assets] é fundamental para o uso de um sistema de gerenciamento de ativos digitais - seja para uso posterior por criadores, para o gerenciamento robusto de ativos pelos usuários empresariais e profissionais de marketing ou para administração por administradores de DAM.
 
-Este documento de ajuda contém as práticas recomendadas de pesquisa por AEM com a ajuda de vários cenários para ajudar os usuários de AEM a realizar pesquisa básica a avançada.
+Este documento de ajuda contém as práticas recomendadas de pesquisa do AEM com a ajuda de vários cenários para auxiliar os usuários do AEM a realizar pesquisas de nível básico a avançado.
 
 ## Pesquisa de Experience Manager de acesso {#access-experience-manager-search}
 
@@ -255,7 +255,11 @@ ou Selecione o ativo > navegue até as reticências na parte superior direita > 
 
 1. Observe a barra de pesquisa. A miniatura do ativo selecionado aparece na barra de pesquisa, indicando o requisito de pesquisa. Como resultado, ele retorna ativos com tags inteligentes semelhantes.
 
-**[!UICONTROL Exibição de ativos]** não suporta o [!UICONTROL Localizar semelhante] opção.
+Execute as seguintes etapas no **[!UICONTROL Exibição de ativos]**:
+
+1. Pesquise o ativo de acordo com sua necessidade.
+1. Selecione a imagem > navegar para [!UICONTROL Localizar Imagem Semelhante] opção na barra de navegação na parte superior.
+Isso leva você à coleção de ativos com cores e metadados semelhantes.
 
 ## Aspectos da pesquisa personalizada {#custom-search-facets}
 
@@ -415,11 +419,6 @@ The newly added assets are not indexed.
             <li> Modelo de fragmento de conteúdo
             </ul> 
         </td>
-        <td> Não suportado </td>
-    </tr>
-     <tr>
-        <td> Localizar semelhante </td>
-        <td> Compatível </td>
         <td> Não suportado </td>
     </tr>
 </table>
