@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Publishing,Collaboration,Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: 517412d3f9d79a35bd1c25bd0eb09c0dee63c9af
+source-git-commit: fd1c3d1e524e5882ae04ca784b618ddba123bdd6
 workflow-type: tm+mt
-source-wordcount: '4904'
+source-wordcount: '4975'
 ht-degree: 6%
 
 ---
@@ -25,12 +25,34 @@ Saiba como gerenciar e editar os ativos de vídeo no [!DNL Adobe Experience Mana
 
 ## Fazer upload e pré-visualizar ativos de vídeo {#upload-and-preview-video-assets}
 
-[!DNL Adobe Experience Manager Assets] O gera visualizações para ativos de vídeo com a extensão MP4. É possível visualizar as representações na variável [!DNL Assets] interface do usuário.
+É possível fazer upload e pré-visualizar ativos de vídeo no formato compatível para o [!DNL Experience Manager Assets].
+<!-- It generates previews for video assets with the extension MP4. -->
 
-1. Na pasta ou subpastas de ativos digitais, navegue até o local em que deseja adicionar ativos digitais.
-1. Para fazer upload do ativo, clique em **[!UICONTROL Criar]** na barra de ferramentas e escolha **[!UICONTROL Arquivos]**. Como alternativa, arraste um arquivo para a interface do usuário. Consulte [fazer upload de ativos](manage-digital-assets.md#uploading-assets) para obter detalhes.
-1. Para visualizar um vídeo na exibição de cartão, clique no link **[!UICONTROL Reproduzir]** ![opção reproduzir](assets/do-not-localize/play.png) no ativo de vídeo. Você pode pausar ou reproduzir vídeo somente na exibição de cartão. A variável [!UICONTROL Reproduzir] e [!UICONTROL Pausar] opções não estão disponíveis na exibição de lista.
-1. Para visualizar o vídeo na página de detalhes do ativo, selecione **[!UICONTROL Editar]** no cartão. O vídeo é reproduzido no reprodutor de vídeo nativo do navegador. Você pode reproduzir, pausar, controlar o volume e aplicar zoom ao vídeo em tela inteira.
+### Fazer upload de ativos de vídeo
+
+Para fazer upload de um ativo de vídeo, siga estas etapas:
+
+1. Na pasta ou subpastas de ativos digitais, navegue até o local em que você precisa adicionar o ativo.
+1. Clique em **[!UICONTROL Criar]** na barra de ferramentas e escolha **[!UICONTROL Arquivos]**. <br>Como alternativa, arraste um arquivo para a interface do usuário.
+Saiba mais sobre [fazer upload de ativos](manage-digital-assets.md#uploading-assets) in [!DNL Experience Manager Assets].
+
+<!-- 1. To preview a video in the card view, click the **[!UICONTROL Play]** ![play option](assets/do-not-localize/play.png) option on the video asset. You can pause or play video in the card view only. The [!UICONTROL Play] and [!UICONTROL Pause] options are not available in the list view.
+1. To preview the video in the asset details page, select **[!UICONTROL Edit]** on the card. The video plays in the native video player of the browser. You can play, pause, control the volume, and zoom the video to full screen. -->
+
+### Visualizar ativos de vídeo
+
+É possível pré-visualizar as representações de MP4 no [!DNL Assets] interface do usuário. Para visualizar um ativo de vídeo, siga estas etapas:
+
+1. Carregue um ativo de vídeo com um formato compatível no [!DNL Experience Manager Assets]. Saiba mais sobre o [formatos de vídeo compatíveis](file-format-support.md#video-formats). <br>Depois de carregado, o ativo de vídeo é processado e uma representação de pré-visualização é gerada.
+1. Clique no ativo e selecione ![opção de detalhes](assets/do-not-localize/details_icon.svg) **[!UICONTROL Detalhes]**  na barra de ferramentas superior. O ativo de vídeo é aberto no visualizador de vídeo.
+1. Clique em ![opção reproduzir](assets/do-not-localize/play.png) ícone na miniatura do vídeo. <br>Você pode reproduzir, pausar, controlar o volume e aplicar zoom ao vídeo em tela inteira.
+
+Para ativos de vídeo existentes no [!DNL Experience Manager Assets], é necessário **[!UICONTROL Reprocessar]** os ativos em [!DNL Experience Manager] para ativar o recurso de visualização de vídeo. Saiba como [reprocessar ativos digitais](reprocessing.md) in [!DNL Experience Manager].
+
+### Limitações da pré-visualização de vídeo
+
+* Os arquivos MXF não mostram visualizações de vídeo, mesmo que a representação seja gerada.
+* Os arquivos WebM não geram representações de pré-visualização, pois podem ser reproduzidos nativamente por navegadores da Web.
 
 ## Publicar ativos de vídeo {#publish-video-assets}
 

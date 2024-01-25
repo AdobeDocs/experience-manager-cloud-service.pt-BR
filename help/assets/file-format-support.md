@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: d00e1f49438ad36339a09f8914496faeda3d4de6
+source-git-commit: 4c1525fd51956d3d788a91f58978a9c885e6daa5
 workflow-type: tm+mt
-source-wordcount: '1030'
-ht-degree: 10%
+source-wordcount: '1409'
+ht-degree: 33%
 
 ---
 
@@ -24,7 +24,7 @@ Os destaques da conversão de ativos usando microsserviços de ativos incluem:
 * Chave [formatos de arquivo de imagem](#image-formats).
 * [Formatos de arquivo Camera Raw](#camera-raw-formats) para uma ampla variedade de câmeras, incluindo Canon, Nikon, Fujifilm, Olympus e outros fabricantes (equipados pela Adobe Camera Raw).
 * Comum [formatos de documento](#document-formats), incluindo os formatos Microsoft® Office e Open Document.
-* Grande variedade de formatos de [vídeo](#video-formats) e [áudio.](#audio-formats)
+* Ampla variedade de [vídeo](#video-formats) e [áudio](#audio-formats) formatos.
 
 A legenda a seguir descreve o nível de suporte para cada formato.
 
@@ -147,31 +147,31 @@ Os formatos de documento compatíveis com os recursos de gerenciamento de ativos
 
 ## Formatos de vídeo {#video-formats}
 
-| Formato de arquivo | Geração de miniaturas | Extração de metadados | Largura/altura |
-| ----------- | -------------------- | ------------------- | ------------ |
-| 3G2 | - | ✓ | - |
-| 3GP | - | ✓ | - |
-| AVI | ✓ | ✓ | ✓ |
-| DIVX | ✓ | - | ✓ |
-| F4V | ✓ | ✓ | ✓ |
-| FLV | ✓ | ✓ | ✓ |
-| M2T | ✓ | - | ✓ |
-| M2TS | ✓ | - | ✓ |
-| M2V | ✓ | - | ✓ |
-| M4V | ✓ | ✓ | ✓ |
-| MKV | ✓ | - | ✓ |
-| MOV | ✓ | ✓ | ✓ |
-| MP4 | ✓ | ✓ | ✓ |
-| MPEG | ✓ | ✓ | ✓ |
-| MPG | ✓ | ✓ | ✓ |
-| MTS | ✓ | - | ✓ |
-| MXF | ✓ | - | ✓ |
-| OGV | ✓ | - | ✓ |
-| QT | ✓ | - | ✓ |
-| R3D | - | ✓ | ✓ |
-| SWF | ✓ | - | ✓ |
-| WebM | ✓ | - | ✓ |
-| WMV | ✓ | ✓ | ✓ |
+| Formato de arquivo | Geração de miniaturas | Extração de metadados | Largura/altura | Visualização |
+| ----------- | -------------------- | ------------------- | ------------ | ------- |
+| 3G2 | - | ✓ | - | - |
+| 3GP | - | ✓ | - | - |
+| AVI | ✓ | ✓ | ✓ | ✓ |
+| DIVX | ✓ | - | ✓ | ✓ |
+| F4V | ✓ | ✓ | ✓ | ✓ |
+| FLV | ✓ | ✓ | ✓ | ✓ |
+| M2T | ✓ | - | ✓ | ✓ |
+| M2TS | ✓ | - | ✓ | ✓ |
+| M2V | ✓ | - | ✓ | ✓ |
+| M4V | ✓ | ✓ | ✓ | ✓ |
+| MKV | ✓ | - | ✓ | ✓ |
+| MOV | ✓ | ✓ | ✓ | ✓ |
+| MP4 | ✓ | ✓ | ✓ | ✓ |
+| MPEG | ✓ | ✓ | ✓ | ✓ |
+| MPG | ✓ | ✓ | ✓ | ✓ |
+| MTS | ✓ | - | ✓ | ✓ |
+| MXF | ✓ | - | ✓ | ✓ |
+| OGV | ✓ | - | ✓ | ✓ |
+| QT | ✓ | - | ✓ | ✓ |
+| R3D | - | ✓ | ✓ | ✓ |
+| SWF | ✓ | - | ✓ | ✓ |
+| WebM | ✓ | - | ✓ | ✓ |
+| WMV | ✓ | ✓ | ✓ | ✓ |
 
 ## Formatos de áudio {#audio-formats}
 
@@ -234,7 +234,7 @@ Os formatos de documento compatíveis com os recursos de gerenciamento de ativos
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [Imagem](/help/assets/dynamic-media/image-sets.md), [Mix de mídia](/help/assets/dynamic-media/mixed-media-sets.md), e [Rotação](/help/assets/dynamic-media/spin-sets.md) |
 | PICT | ✓ | - | - | - | - | - |
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [Imagem](/help/assets/dynamic-media/image-sets.md), [Mix de mídia](/help/assets/dynamic-media/mixed-media-sets.md), e [Rotação](/help/assets/dynamic-media/spin-sets.md) |
-| PSD   ‡ | ✓ | - | - | - | - | - |
+| PSD ‡ | ✓ | - | - | - | - | - |
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [Imagem](/help/assets/dynamic-media/image-sets.md), [Mix de mídia](/help/assets/dynamic-media/mixed-media-sets.md), e [Rotação](/help/assets/dynamic-media/spin-sets.md) |
 
 ‡ A imagem mesclada é extraída do arquivo PSD. É uma imagem gerada por [!DNL Adobe Photoshop] e está incluído no arquivo PSD. Dependendo das configurações, a imagem mesclada pode ou não ser a imagem real.
