@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Publishing,Collaboration,Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: fd1c3d1e524e5882ae04ca784b618ddba123bdd6
+source-git-commit: 4b05e8f8ae554e7c0881134ef24ca8ce35e3e2bf
 workflow-type: tm+mt
-source-wordcount: '4975'
+source-wordcount: '4976'
 ht-degree: 6%
 
 ---
@@ -41,7 +41,7 @@ Saiba mais sobre [fazer upload de ativos](manage-digital-assets.md#uploading-ass
 
 ### Visualizar ativos de vídeo
 
-É possível pré-visualizar as representações de MP4 no [!DNL Assets] interface do usuário. Para visualizar um ativo de vídeo, siga estas etapas:
+Você pode visualizar vídeos em representações compatíveis no [!DNL Assets] interface do usuário. Para visualizar um ativo de vídeo, siga estas etapas:
 
 1. Carregue um ativo de vídeo com um formato compatível no [!DNL Experience Manager Assets]. Saiba mais sobre o [formatos de vídeo compatíveis](file-format-support.md#video-formats). <br>Depois de carregado, o ativo de vídeo é processado e uma representação de pré-visualização é gerada.
 1. Clique no ativo e selecione ![opção de detalhes](assets/do-not-localize/details_icon.svg) **[!UICONTROL Detalhes]**  na barra de ferramentas superior. O ativo de vídeo é aberto no visualizador de vídeo.
