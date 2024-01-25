@@ -2,10 +2,10 @@
 title: Ambientes de desenvolvimento rápido
 description: Saiba como usar Ambientes de desenvolvimento rápido para iterações de desenvolvimento rápido em um ambiente de nuvem.
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 43f76a3f1e0bb52ca9d44982b2bb2b37064edf9f
 workflow-type: tm+mt
-source-wordcount: '3304'
-ht-degree: 5%
+source-wordcount: '3414'
+ht-degree: 4%
 
 ---
 
@@ -66,7 +66,7 @@ Siga estas etapas para poder usar o Cloud Manager para criar um RDE para o seu p
 
 1. Clique em **Salvar** para adicionar o ambiente especificado.
 
-A tela **Visão geral** agora exibe seu novo ambiente no cartão **Ambientes.**
+A variável **Visão geral** A tela agora exibe seu novo ambiente na tag **Ambientes** cartão.
 
 Após a criação, os RDEs são definidos para a versão mais recente do AEM disponível. Uma redefinição de RDE, que também pode ser executada usando o Cloud Manager, circula o RDE e o configura para a versão do AEM mais recente.
 
@@ -310,6 +310,56 @@ The analyser found the following errors for publish :
 
 A amostra de código acima ilustra o comportamento se um pacote não resolver. Nesse caso, ele é &quot;preparado&quot; e só será instalado se seus requisitos (nesse caso, importações ausentes) forem atendidos por meio da instalação de outro código.
 
+<u>Implantar código front-end com base em temas de site e modelos de site</u>
+
+>[!NOTE]
+>
+>Esse recurso ainda não é GA, mas pode ser usado por participantes antecipados. Entre em contato com **aemcs-rde-support@adobe.com** para experimentar e fornecer feedback.
+
+Os RDEs aceitam código de front-end com base em [temas de site](/help/sites-cloud/administering/site-creation/site-themes.md) e [modelos de site](/help/sites-cloud/administering/site-creation/site-templates.md). Com os RDEs, isso é feito usando uma diretiva de linha de comando para implantar pacotes de front-end, em vez do Cloud Manager [Pipeline de front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) usado para outros tipos de ambiente.
+
+Como de costume, crie seu pacote de front-end usando npm:
+
+`npm run build`
+
+Deve gerar uma `dist/` pasta, de modo que a pasta do pacote de front-end deve conter uma `package.json` arquivo e `dist` pasta:
+
+```
+ls ./path-to-frontend-pkg-folder/
+...
+dist
+package.json
+```
+Agora você está pronto para implantar o pacote de front-end no RDE apontando para a pasta de pacotes de front-end:
+
+```
+aio aem:rde:install -t frontend ./path-to-frontend-pkg-folder/
+...
+#1: deploy completed for frontend frontend-pipeline.zip on author,publish - done by ... at 2024-01-18T15:33:22.898Z
+Logs:
+> Deployed artifact wknd-1.0.0-1705592008-26e7ec1a
+> with workspace hash 692021864642a20d6d298044a927d66c0d9cf2adf42d4cca0c800a378ac3f8d3
+```
+
+Como alternativa, você pode compactar o `package.json` arquivo e `dist` e implante esse arquivo zip:
+
+`zip -r frontend-pkg.zip ./path-to-frontend-pkg-folder/dist ./path-to-frontend-pkg-folder/package.json`
+
+```
+aio aem:rde:install -t frontend frontend-pkg.zip
+...
+#1: deploy completed for frontend frontend-pipeline.zip on author,publish - done by ... at 2024-01-18T15:33:22.898Z
+Logs:
+> Deployed artifact wknd-1.0.0-1705592008-26e7ec1a
+> with workspace hash 692021864642a20d6d298044a927d66c0d9cf2adf42d4cca0c800a378ac3f8d3
+```
+
+>[!NOTE]
+>
+>A nomenclatura dos arquivos no pacote de front-end deve seguir as seguintes convenções de nomenclatura:
+> * pasta &quot;dist&quot;, para a pasta do pacote de saída npm build
+> * arquivo &quot;package.json&quot;, para o pacote de dependências npm
+
 ### Verificação do Status do RDE {#checking-rde-status}
 
 Você pode usar a CLI do RDE para verificar se o ambiente está pronto para ser implantado para, como quais implantações foram feitas por meio do plug-in RDE.
@@ -470,8 +520,9 @@ Por esses motivos, recomenda-se que, após validar o código em um ambiente de R
 Observe também as seguintes considerações:
 
 * Os RDEs não incluem um nível de visualização
-* Atualmente, os RDEs não são compatíveis com a visualização e a depuração do código de front-end implantado usando o pipeline de front-end do Cloud Manager.
 * Atualmente, os RDEs não oferecem suporte ao canal de pré-lançamento.
+* Embora o suporte a RDE para visualização e depuração do código front-end baseado em [temas de site](/help/sites-cloud/administering/site-creation/site-themes.md) e [modelos de site](/help/sites-cloud/administering/site-creation/site-templates.md) implantado ainda não está pronto para a disponibilidade geral, ele pode ser usado por participantes iniciais. Entre em contato com **aemcs-rde-support@adobe.com** para experimentar e fornecer feedback.
+
 
 
 ## De quantos RDEs preciso? {#how-many-rds-do-i-need}

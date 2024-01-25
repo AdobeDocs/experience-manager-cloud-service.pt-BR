@@ -3,10 +3,10 @@ title: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud S
 description: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 17903c6e44afd1742d21b7fc7dbe4d7c63fe8b6b
+source-git-commit: fa106c2e3fec70971e2c54572199e35c24db0aa7
 workflow-type: tm+mt
-source-wordcount: '828'
-ht-degree: 20%
+source-wordcount: '751'
+ht-degree: 28%
 
 ---
 
@@ -26,7 +26,7 @@ A seção a seguir descreve as notas da versão de recurso atual (mais recente) 
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento da versão atual (2023.12.0) do [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] é sexta-feira, 14 de dezembro de 2023. O próximo lançamento de recursos (2024.1.0) está planejado para quinta-feira, 25 de janeiro de 2023.
+A data de lançamento da versão atual (2024.1.0) do [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] é sexta-feira, 25 de janeiro de 2024. O próximo lançamento de recursos (2024.2.0) está planejado para sexta-feira, 29 de fevereiro de 2024.
 
 ## Notas da versão de manutenção {#maintenance}
 
@@ -44,45 +44,41 @@ Have a look at the December 2023 Release Overview video for a summary of the fea
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### Programa de adoção antecipada {#sites-early-adopter}
+### Extension Manager no AEM Sites {#sites-extension-manager}
 
-**Você pode aproveitar o [Serviço de Dados de Monitoramento do Usuário Real (RUM)](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** para ativar a coleta no lado do cliente para o AEM as a Cloud Service.
+**Explore o novo [Extension Manager no AEM Sites](https://developer.adobe.com/uix/docs/extension-manager/)** para personalizar a configuração do AEM definindo as extensões da interface do usuário.
 
-O Serviço de dados de monitoramento de usuário real (RUM) oferece um reflexo mais preciso das interações do usuário, garantindo uma medida confiável do engajamento do site. É uma ótima oportunidade para obter insights avançados sobre o desempenho da página. Embora isso seja benéfico para clientes que usam CDN gerenciada por Adobe ou CDN não gerenciada por Adobe. Além disso, para clientes que usam um CDN não gerenciado por Adobe, o relatório de tráfego automatizado agora pode ser ativado para eles, eliminando a necessidade de compartilhar qualquer relatório de tráfego com o Adobe.
+![Extension Manager no AEM Sites](/help/assets/sites/extension-manager/homepage.png)
 
-Se você estiver interessado em testar esse novo recurso e compartilhar seu feedback, envie um email para `aemcs-rum-adopter@adobe.com`, junto com o nome de domínio para o ambiente de produção, preparo e desenvolvimento a partir do endereço de email associado à Adobe ID. A equipe de produtos do Adobe habilitará o Serviço de dados de monitoramento de usuário real (RUM) para você.
+O Extension Manager no AEM Sites permite que desenvolvedores e profissionais acessem, gerenciem e personalizem extensões de interface do usuário criadas para aprimorar a funcionalidade do AEM Sites.
+Com o Extension Manager, é possível:
 
+* Ativar ou desativar extensões por instância;
+* Configurar parâmetros de extensão;
+* Visualizar extensões e gerar um link de visualização compartilhável;
+* Descubra recursos de extensibilidade da interface do usuário por meio de demonstrações interativas;
+* Acesse recursos experimentais do Adobe por meio de extensões primárias.
+
+Estamos buscando ativamente feedback e novos casos de uso para extensões da interface do usuário. Se quiser se conectar, envie um email para `uix@adobe.com`.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Novos recursos na exibição de Ativos {#assets-view-features}
+### Recursos de pré-lançamento da exibição do administrador {#admin-view-prerelease}
 
-**Criar imagens GenAI com o Adobe Firefly**
+**Visualizar representações para todos os tipos de vídeo compatíveis**
 
-Crie novas imagens com base em consultas de pesquisa com uma integração do recurso texto para imagem do Adobe Firefly (requer uma licença do Adobe Firefly).
+O Experience Manager Assets agora gera representações de pré-visualização de todos os tipos de vídeo compatíveis por padrão, sem exigir uma configuração de perfil de processamento
 
-![Integração do Firefly de ativos](/help/assets/assets/assets-firefly-integration.png)
+### Exibição de ativos {#assets-view-features}
 
-**Localizar Imagens Semelhantes**
+**Tags inteligentes na lista de bloqueios**
 
-Agora é possível encontrar conteúdo facilmente selecionando uma imagem e visualizando imagens semelhantes no repositório do Experience Manager Assets.
+O Assets Essentials agora permite definir uma lista de bloqueios que inclui palavras que não devem ser adicionadas como Tags inteligentes aos ativos quando eles são enviados ao repositório. Esse recurso ajuda a manter a conformidade da marca e reduz o esforço para moderar as Tags inteligentes.
 
-<!--
+![Tags inteligentes do incluo na lista de bloqueios](/help/assets/assets/block-tags.png)
 
-* **Smart tags blocklist**: Experience Manager Assets now enables you to define a list of blocked tags. These tags are automatically removed from the auto-generated smart tags when you upload assets to the repository. This capability performs tags governance and saves a lot of time as you can add a tag to the block list and AEM Assets automatically excludes it from the list of tags for any of the assets that are added to the repository.
-
-  ![storage usage insights](/help/assets/assets/block-tags.png)
-
-
-**Video Preview**: AEM Assets now generates preview renditions of all supported video formats by default, without the need to configure a processing profile.
-
--->
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
-
-### Novos recursos em [!DNL Experience Manager Forms] {#forms-features}
-
-* **[Conectar um Forms adaptável com a lista Microsoft® SharePoint](/help/forms/configure-submit-actions-core-components.md#submit-to-sharepoint)**: o AEM Forms fornece uma integração OOTB para enviar dados de formulários diretamente para a Lista do SharePoint, permitindo que você use os recursos de Listas do SharePoint. Você pode configurar a Lista de SharePoint do Microsoft como uma fonte de dados para um Modelo de dados de formulário e usar o **Enviar usando modelo de dados do formulário** enviar ação para conectar um Formulário adaptável à Lista do SharePoint.
 
 <!-- 
 
@@ -104,18 +100,13 @@ Agora é possível encontrar conteúdo facilmente selecionando uma imagem e visu
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### Programa de adoção antecipada da configuração da CDN {#cdn-config-early-adopter}
+### Suporte para o Dynatrace {#dynatrace}
 
-Além do recém-lançado [Regras de filtro de tráfego](/help/security/traffic-filter-rules-including-waf.md), que inclui as regras de Firewall de Aplicativo Web (WAF) opcionalmente licenciáveis, há uma oportunidade de usar o Pipeline de configuração para declarar e implantar outros tipos de configuração de CDN. Adoraríamos saber sobre seus casos de uso, incluindo:
-* Redirecionamentos do lado do cliente 301/302
-* solicitações de proxy na borda para origens arbitrárias
-* Transformações de URL
-* definindo ou modificando cabeçalhos de solicitação ou resposta
-* páginas de erro personalizadas quando o CDN não consegue acessar o AEM
-* autenticação por nome de usuário/senha
-* qualquer outra configuração útil do CDN
+Os clientes do Dynatrace podem monitorar o uso do AEM. [Saiba como](/help/implementing/cloud-manager/dynatrace.md) para solicitar conectividade com seu ambiente Dynatrace para monitoramento do desempenho do aplicativo. Observe que o APM do New Relic, que está disponível para todos os clientes, parará de coletar dados se o Dynatrace estiver ativado.
 
-Enviar um email para **aemcs-cdn-config-adopter@adobe.com** da sua ID de email oficial com o seu feedback.
+### Suporte RDE para código de front-end usando temas de site e modelos de site: programa Early Adoter {#rde-frontend-early-adopter}
+
+[RDEs (Rapid Development Environments, ambientes de desenvolvimento rápido)](/help/implementing/developing/introduction/rapid-development-environments.md) O agora oferece suporte ao código de front-end com base no [temas de site](/help/sites-cloud/administering/site-creation/site-themes.md) e [modelos de site](/help/sites-cloud/administering/site-creation/site-templates.md), para os participantes iniciais. Com RDEs, isso é feito usando uma diretiva de linha de comando, em vez de uma [pipeline de front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md). Entre em contato com **aemcs-rde-support@adobe.com** para experimentar e fornecer feedback.
 
 ## Cloud Manager {#cloud-manager}
 

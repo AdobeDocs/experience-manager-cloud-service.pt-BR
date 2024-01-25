@@ -2,17 +2,17 @@
 title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2023.9.0.
 description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2023.9.0.
 exl-id: d747f58b-8d6c-418d-9d2b-ec3ae4b6dc03
-source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
+source-git-commit: 3bec7e0387a5e04a7748a3b7341c17a993c6feb9
 workflow-type: tm+mt
-source-wordcount: '1441'
-ht-degree: 18%
+source-wordcount: '1440'
+ht-degree: 21%
 
 ---
 
 
 # Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2023.9.0 {#release-notes}
 
-A seção a seguir descreve as notas da versão de recurso atual (mais recente) do [!DNL Experience Manager] as a Cloud Service.
+A seção a seguir descreve as notas da versão de recursos do [!DNL Experience Manager] as a Cloud Service 2023.9.0.
 
 >[!NOTE]
 >
@@ -26,7 +26,7 @@ A seção a seguir descreve as notas da versão de recurso atual (mais recente) 
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] A versão atual do recurso (2023.9.0) é 28 de setembro de 2023. A próxima versão do recurso (2023.10.0) está planejada para 26 de outubro de 2023.
+A data de lançamento da versão atual (2023.9.0) do [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] é sexta-feira, 28 de setembro de 2023. O próximo lançamento de recursos (2023.10.0) está planejado para sexta-feira, 26 de outubro de 2023.
 
 ## Notas da versão de manutenção {#maintenance}
 
@@ -50,9 +50,9 @@ Saiba mais sobre os Edge Delivery Services no artigo [aqui](/help/edge/overview.
 
 **Atribuir formulário de metadados a uma pasta**
 
-Agora você pode atribuir o formulário de metadados a uma pasta específica na implantação. Todos os ativos na pasta, incluindo ativos nas subpastas, em seguida, exibem as propriedades definidas no formulário de metadados atribuído.
+Agora você pode atribuir o formulário de metadados a uma pasta específica na implantação. Com isso, todos os ativos contidos nas pastas e subpastas exibem as propriedades definidas no formulário de metadados atribuído.
 
-![atribuir formulário de metadados a uma pasta](/help/release-notes/assets/assign-to-folder.png)
+![Atribuir formulário de metadados a uma pasta](/help/release-notes/assets/assign-to-folder.png)
 
 ### Novos recursos na exibição do Administrador {#admin-view-features}
 

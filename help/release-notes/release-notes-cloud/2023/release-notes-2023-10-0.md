@@ -1,17 +1,17 @@
 ---
 title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2023.10.0.
 description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2023.10.0.
-source-git-commit: d79335bde72a2517939e9bfc07a75ab7a8b6b0b9
+exl-id: 81a6cbd2-7101-429b-8572-2650c5bea963
+source-git-commit: 811a8f4d83a1034737c23b1707a24b52742fef55
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 20%
+source-wordcount: '918'
+ht-degree: 25%
 
 ---
 
-
 # Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2023.10.0 {#release-notes}
 
-A seção a seguir descreve as notas da versão de recurso atual (mais recente) do [!DNL Experience Manager] as a Cloud Service.
+A seção a seguir descreve as notas da versão de recursos do [!DNL Experience Manager] as a Cloud Service 2023.10.0.
 
 >[!NOTE]
 >
@@ -25,7 +25,7 @@ A seção a seguir descreve as notas da versão de recurso atual (mais recente) 
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] A versão atual do recurso (2023.10.0) é 26 de outubro de 2023. A próxima versão (2023.11.0) está planejada para 30 de novembro de 2023.
+A data de lançamento da versão atual (2023.10.0) do [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] é sexta-feira, 26 de outubro de 2023. O próximo lançamento de recursos (2023.11.0) está planejado para sexta-feira, 30 de novembro de 2023.
 
 ## Notas da versão de manutenção {#maintenance}
 
@@ -53,9 +53,9 @@ Assista ao vídeo de Visão geral da versão de outubro de 2023 que exibe um res
 
 * **Importar ativos em massa da fonte de dados do OneDrive**: os administradores agora têm a capacidade de [importar um grande número de ativos do OneDrive para o AEM Assets](/help/assets/bulk-import-assets-view.md#onedrive-developer-application). A lista atualizada das fontes de dados com suporte para importação em massa inclui Azure, AWS, Google Cloud, Dropbox e OneDrive.
 
-  ![atribuir formulário de metadados a uma pasta](/help/assets/assets/bulk-import-source-details-onedrive.png)
+  ![Atribuir formulário de metadados a uma pasta](/help/assets/assets/bulk-import-source-details-onedrive.png)
 
-* **Suporte a direitos entre organizações para bibliotecas**: o Experience Manager Assets agora permite configurar o acesso às bibliotecas de Creative Cloud em uma Organização IMS diferente. Ele permite acesso mais fácil aos fluxos de trabalho entre produtos mais recentes entre Creative Cloud e Experience Manager e reduz o tempo e o esforço de criação.
+* **Suporte a direitos entre organizações para bibliotecas**: o Experience Manager Assets agora permite configurar o acesso às bibliotecas de Creative Cloud em uma Organização IMS diferente. Isso facilita o acesso aos fluxos de trabalho de produtos mais recentes entre a Creative Cloud e o Experience Manager e reduz o tempo e esforço de criação.
 
 ### Recursos de pré-lançamento disponíveis em [!DNL Experience Manager Assets] {#prerelease-features-assets}
 

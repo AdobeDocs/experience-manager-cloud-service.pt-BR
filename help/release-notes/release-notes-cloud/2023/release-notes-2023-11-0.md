@@ -1,17 +1,17 @@
 ---
 title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2023.11.0.
 description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2023.11.0.
-source-git-commit: c33874869bccae1e9837b30827a655e70636dd56
+exl-id: 19cff082-80aa-445c-9462-5e319b7fe0e9
+source-git-commit: 07a799cf374bbd1ce0fe5d85433bf12d1d5ee648
 workflow-type: tm+mt
 source-wordcount: '1286'
-ht-degree: 13%
+ht-degree: 16%
 
 ---
 
-
 # Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2023.11.0 {#release-notes}
 
-A seção a seguir descreve as notas da versão de recurso atual (mais recente) do [!DNL Experience Manager] as a Cloud Service.
+A seção a seguir descreve as notas da versão de recursos do [!DNL Experience Manager] as a Cloud Service 2023.11.0.
 
 >[!NOTE]
 >
@@ -53,7 +53,7 @@ Interessado em experimentar o recurso e compartilhar feedback? Enviar um email p
 
 * **Editor de Adobe Express incorporado no AEM Assets**: os usuários com acesso ao Express agora têm ferramentas integradas de edição e criação de imagens do Adobe Express e do Adobe Firefly disponíveis diretamente no AEM Assets para melhorar a reutilização do conteúdo e acelerar a velocidade dele.
 
-  ![atribuir formulário de metadados a uma pasta](/help/assets/assets/adobe-express-aem-assets.png)
+  ![Atribuir formulário de metadados a uma pasta](/help/assets/assets/adobe-express-aem-assets.png)
 
 <!--
 
@@ -66,11 +66,11 @@ Interessado em experimentar o recurso e compartilhar feedback? Enviar um email p
 
 * **Relatórios de uso de armazenamento em Insights**: os administradores agora podem exibir os relatórios de uso de armazenamento disponíveis como parte do Insights.
 
-  ![insights de uso do armazenamento](/help/assets/assets/storage-usage-insights.png)
+  ![Insights do uso do armazenamento](/help/assets/assets/storage-usage-insights.png)
 
-* **Pesquisar primeira configuração de página inicial**: o Experience Manager Assets agora permite configurar a experiência de página inicial para sua organização. Se você selecionar pesquisar primeiro como página inicial, poderá configurar o alinhamento da barra de pesquisa, a imagem do plano de fundo e o logotipo da sua organização.
+* **Pesquisar primeira configuração de página inicial**: o Experience Manager Assets agora permite configurar a experiência de página inicial para sua organização. Se você selecionar a opção “Pesquisar primeiro” como a página inicial, poderá configurar o alinhamento da barra de pesquisa, a imagem do fundo e o logotipo da sua organização.
 
-  ![pesquisar primeira configuração](/help/assets/assets/search-first-configuration.png)
+  ![Configuração “Pesquisar primeiro”](/help/assets/assets/search-first-configuration.png)
 
 ### Novos recursos no pré-lançamento do Admin View {#admin-view-features-prerelease}
 

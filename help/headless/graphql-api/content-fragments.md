@@ -3,10 +3,10 @@ title: API GraphQL do AEM para uso com Fragmentos de conteúdo
 description: Saiba como usar os Fragmentos de conteúdo no Adobe Experience Manager (AEM) as a Cloud Service com a API GraphQL do AEM, para entrega de conteúdo headless.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 055d510f8bd3a227c2c51d7f0dea561f06f9b4fd
+source-git-commit: fd0f0fdfc0aaf02d631b9bf909fcb1e1431f5401
 workflow-type: tm+mt
-source-wordcount: '4924'
-ht-degree: 90%
+source-wordcount: '4994'
+ht-degree: 87%
 
 ---
 
@@ -715,7 +715,7 @@ query {
 
 A entrega de imagens otimizadas para a Web permite usar uma consulta Graphql para:
 
-* Solicitar um URL de uma imagem do AEM Assets
+* Solicitar um URL para uma imagem de ativo do DAM (referenciado por um **Referência de conteúdo**)
 
 * Transmitir parâmetros com a consulta, de modo que uma representação específica da imagem seja gerada e retornada automaticamente
 
@@ -735,9 +735,19 @@ Isso permite criar representações de imagem dinamicamente para entrega JSON, o
 
 A solução no GraphQL significa que você pode:
 
-* usar `_dynamicUrl` na referência `ImageRef`
+* Solicitar um URL: use `_dynamicUrl` no `ImageRef` referência
 
-* adicionar `_assetTransform` ao cabeçalho de lista no qual seus filtros são definidos
+* Passar parâmetros: add `_assetTransform` ao cabeçalho da lista onde seus filtros são definidos
+
+<!-- 
+>[!NOTE]
+>
+>A **Content Reference** can be used for both DAM assets and Dynamic Media assets. Retrieving the appropriate URL uses different parameters:
+>* `_dynamicUrl` : a DAM asset
+>* `_dmS7Url` : a Dynamic Media asset
+> 
+>If the image referenced is a DAM asset then the value for `_dmS7Url` will be `null`. See [Dynamic Media asset delivery by URL in GraphQL queries](#dynamic-media-asset-delivery-by-url).
+-->
 
 ### Estrutura da solicitação de transformação {#structure-transformation-request}
 
@@ -902,7 +912,7 @@ Por exemplo, para executar diretamente os exemplos anteriores (salvas como consu
      >
      >O sufixo `;`é obrigatório para encerrar a lista de parâmetros de forma limpa.
 
-### Limitações da entrega de imagem {#image-delivery-limitations}
+### Limitações da entrega de imagens otimizadas para a Web {#web-optimized-image-delivery-limitations}
 
 As seguintes limitações existem:
 
@@ -912,6 +922,58 @@ As seguintes limitações existem:
 
    * Nenhum armazenamento em cache no autor
    * Armazenamento em cache na publicação: “max-age” de 10 minutos (não pode ser alterado pelo cliente)
+
+<!--
+## Dynamic Media asset delivery by URL in GraphQL queries{#dynamic-media-asset-delivery-by-url}
+
+GraphQL for AEM Content Fragments allows you to request a URL to an AEM Dynamic Media (Scene7) asset (referenced by a **Content Reference**).
+
+The solution in GraphQL means you can:
+
+* use `_dmS7Url` on the `ImageRef` reference
+
+>[!NOTE]
+>
+>For this you need to have a [Dynamic Media Cloud Configuration](/help/assets/dynamic-media/config-dm.md). 
+>
+>This adds the `dam:scene7File` and `dam:scene7Domain` attributes on the asset's metadata when it is created.
+
+>[!NOTE]
+>
+>A **Content Reference** can be used for both DAM assets and Dynamic Media assets. Retrieving the appropriate URL uses different parameters:
+>
+>* `_dmS7Url` : a Dynamic Media asset
+>* `_dynamicUrl` : a DAM asset
+> 
+>If the image referenced is a Dynamic Media asset then the value for `_dynamicURL` will be `null`. See [web-optimized image delivery in GraphQL queries](#web-optimized-image-delivery-in-graphql-queries).
+
+### Sample query for Dynamic Media asset delivery by URL {#sample-query-dynamic-media-asset-delivery-by-url}
+
+The following is a sample query:
+* for multiple Content Fragments of type `team` and `person`
+
+```graphql
+query allTeams {
+  teamList {
+    items {
+      _path
+      title
+      teamMembers {
+        fullName
+        profilePicture {
+          __typename
+          ... on ImageRef{
+            _dmS7Url
+            height
+            width
+          }
+        }
+      }
+    }
+  }
+} 
+```
+-->
 
 ## GraphQL para AEM - resumo das extensões {#graphql-extensions}
 
@@ -985,19 +1047,28 @@ A operação básica de consultas com o GraphQL para AEM adere à especificaçã
 
          * Consulte [Exemplo de consulta - Todas as cidades com uma variação nomeada](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
 
-   * Para [entrega de imagem](#image-delivery):
+   * Para entrega de imagens:
 
-      * `_dynamicUrl`: na referência `ImageRef`
+      * `_authorURL`: o URL completo para o ativo de imagem no AEM Author
+      * `_publishURL`: o URL completo para o ativo de imagem na publicação do AEM
 
-      * `_assetTransform`: no cabeçalho de lista no qual os filtros são definidos
+      * Para [entrega de imagens otimizadas para a Web](#web-optimized-image-delivery-in-graphql-queries) (de ativos DAM):
 
-      * Consulte:
+         * `_dynamicUrl`: o URL completo para o ativo DAM otimizado para a Web no `ImageRef` referência
 
-         * [Exemplo de consulta para entrega de imagem com parâmetros completos](#image-delivery-full-parameters)
+           >[!NOTE]
+           >
+           >`_dynamicUrl` é o URL preferencial para usar em ativos DAM otimizados para a Web e deve substituir o uso de `_path`, `_authorUrl`, e `_publishUrl` sempre que possível.
 
-         * [Exemplo de consulta para entrega de imagem com um único parâmetro especificado](#image-delivery-single-specified-parameter)
+         * `_assetTransform`: para transmitir parâmetros no cabeçalho da lista onde seus filtros estão definidos
 
-   * `_tags`: para revelar as IDs dos fragmentos de conteúdo ou variações que contêm tags; essa é uma matriz de identificadores `cq:tags`.
+         * Consulte:
+
+            * [Exemplo de consulta para entrega de imagens otimizadas para a Web com parâmetros completos](#web-optimized-image-delivery-full-parameters)
+
+            * [Exemplo de consulta para entrega de imagens otimizadas para a Web com um único parâmetro especificado](#web-optimized-image-delivery-single-query-variable)
+
+   * `_tags`: para revelar as IDs dos Fragmentos de conteúdo ou Variações que contêm tags; é uma matriz de `cq:tags` identificadores.
 
       * Consulte [Exemplo de consulta - Nomes de todas as cidades marcadas como Cidades para passeio](/help/headless/graphql-api/sample-queries.md#sample-names-all-cities-tagged-city-breaks)
       * Consulte [Exemplo de consulta para variações de fragmento de conteúdo de um determinado modelo que tem uma tag específica anexada](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-variations-given-model-specific-tag)
@@ -1028,6 +1099,13 @@ A operação básica de consultas com o GraphQL para AEM adere à especificaçã
 * Fazer o fallback ao consultar fragmentos aninhados:
 
    * Se uma determinada variação não existir em um fragmento aninhado, a variação **principal** é retornada.
+
+<!-- between dynamicURL and tags -->
+<!--
+    * `_dmS7Url`: on the `ImageRef` reference for the delivery of the URL to a [Dynamic Media asset](#dynamic-media-asset-delivery-by-url)
+
+      * See [Sample query for Dynamic Media asset delivery by URL](#sample-query-dynamic-media-asset-delivery-by-url)
+-->
 
 ## Consultar o endpoint do GraphQL a partir de um site externo {#query-graphql-endpoint-from-external-website}
 
