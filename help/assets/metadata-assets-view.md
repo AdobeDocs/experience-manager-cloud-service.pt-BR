@@ -4,9 +4,9 @@ description: Saiba como gerenciar metadados na visualização de Ativos. Um melh
 role: User,Leader,Admin,Architect,Developer
 contentOwner: AG
 exl-id: cfc105d1-41fc-4418-9905-b2a28a348682
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: ef2a883e99823b1109eba598e89ea25a661e389b
 workflow-type: tm+mt
-source-wordcount: '1556'
+source-wordcount: '1667'
 ht-degree: 87%
 
 ---
@@ -29,7 +29,7 @@ Por esses motivos, o Assets fornece o meio certo de criar, gerenciar e trocar me
 
 Para visualizar os metadados de um ativo, navegue até o ativo ou pesquise por ele, selecione-o e clique em **[!UICONTROL Detalhes]** na barra de ferramentas.
 
-![Visualizar metadados de um ativo](assets/metadata-view1.png)
+![Visualizar metadados de um ativo](assets/metadata-view.png)
 
 *Figura: para visualizar um ativo e seus metadados, clique em **[!UICONTROL Detalhes]** na barra de ferramentas ou clique duas vezes no ativo.*
 
@@ -71,14 +71,15 @@ As tags também podem ser aninhadas em uma hierarquia para permitir relacionamen
 A exibição Ativos fornece vários campos de metadados padrão por padrão. As organizações têm necessidades adicionais de metadados e precisam de mais campos para adicionar metadados específicos de negócios. Os formulários de metadados permitem que as empresas adicionem campos de metadados personalizados à página [!UICONTROL Detalhes] de um ativo. Os metadados específicos de negócios melhoram a governança e a descoberta de ativos. É possível criar formulários do zero ou redefinir a finalidade de um formulário existente.
 
 É possível configurar formulários de metadados para diferentes tipos de ativos (diferentes tipos de MIME). Use o mesmo nome de formulário como o tipo de MIME do arquivo. A visualização de ativos corresponde automaticamente os ativos carregados do tipo MIME ao nome do formulário e atualiza os metadados dos ativos carregados com base nos campos de formulário.
-
-Por exemplo, se um formulário de metadados chamado `PDF` ou `pdf` existir, os documentos PDF carregados conterão campos de metadados conforme definidos no formulário.
-
+<!--
+For example, if a metadata form by the name `PDF` or `pdf` exists, then the uploaded PDF documents contain metadata fields as defined in the form.
+-->
 A exibição de Ativos usa a seguinte sequência para pesquisar nomes de formulário de metadados existentes a fim de aplicar os campos de metadados aos ativos carregados de um tipo específico:
 
 Subtipo MIME > Tipo MIME > Formulário `default` > Formulário pronto para uso
 
 Por exemplo, se um formulário de metadados chamado `PDF` ou `pdf` existir, os documentos PDF carregados contêm campos de metadados conforme definidos no formulário. Se for um formulário de metadados chamado `PDF` ou `pdf` não existir, a exibição Ativos corresponderá se houver um formulário de metadados chamado `application`. Se houver um formulário de metadados chamado `application`, os documentos PDF carregados conterão campos de metadados conforme definido no formulário. Se a visualização de Ativos ainda não encontrar um formulário de metadados correspondente, ela pesquisará pelo `default` formulário de metadados para aplicar campos de metadados definidos no formulário aos documentos PDF carregados. Se nenhuma dessas etapas funcionar, a exibição Assets aplicará campos de metadados definidos no formulário pronto para uso a todos os documentos de PDF carregados.
+No entanto, se você quiser atribuir um formulário de metadados a uma pasta, [consulte](#assign-metadata-form-folder).
 
 >[!IMPORTANT]
 >
@@ -111,9 +112,9 @@ Assista a este vídeo para ver a sequência de etapas:
 
 Depois que um formulário é criado, ele é aplicado automaticamente quando os usuários carregam um ativo do tipo MIME correspondente.
 
-Para reutilizar um formulário existente para criar um formulário, selecione um formulário de metadados, clique em **[!UICONTROL Copiar]** na barra de ferramentas, forneça um nome e clique em **[!UICONTROL Confirmar o]**. É possível editar um formulário de metadados para alterá-lo. Quando você altera um formulário, ele é usado para ativos carregados após a alteração. Isso não altera os ativos existentes.
+Para reutilizar um formulário existente para criar um novo formulário, selecione um formulário de metadados, clique em **[!UICONTROL Copiar]** na barra de ferramentas, forneça um nome e clique em **[!UICONTROL Confirmar]**. É possível editar um formulário de metadados para alterá-lo. Quando você altera um formulário, ele é usado para ativos carregados após a alteração. Isso não altera os ativos existentes.
 
-## Componentes de propriedade {#property-components}
+### Componentes de propriedade {#property-components}
 
 Você pode personalizar o formulário de metadados usando qualquer um dos seguintes componentes de propriedade. Basta arrastar e soltar o tipo de componente no formulário no local desejado e modificar as configurações do componente.
 Veja abaixo uma visão geral de cada tipo de propriedade e como eles são armazenados.
@@ -133,6 +134,24 @@ Veja abaixo uma visão geral de cada tipo de propriedade e como eles são armaze
 | Tags | Adiciona uma tag a partir de valores armazenados no Gerenciamento de taxonomia (mapeado para xcm:tags). |
 | Palavras-chave | Adiciona palavras-chave de forma livre (mapeadas para dc:subject). |
 | Tags inteligentes | Adicione para aumentar os recursos de pesquisa inserindo tags de metadados automaticamente. |
+
+### Atribuir formulário de metadados a uma pasta {#assign-metadata-form-folder}
+
+Você também pode atribuir um formulário de metadados a uma pasta na implantação de visualização do Assets. O formulário de metadados atribuído a uma pasta de acordo com o tipo MIME é substituído quando você aplica manualmente um formulário de metadados a uma pasta. Em seguida, todos os ativos na pasta, incluindo os contidos nas subpastas, exibem as propriedades definidas no formulário de metadados.
+
+Para atribuir um formulário de metadados a uma pasta:
+
+1. Navegue até **[!UICONTROL Configurações]** > **[!UICONTROL Formulários de metadados]** e selecione um formulário de metadados.
+
+2. Clique em **[!UICONTROL Atribuir à pasta]**
+
+3. Selecione a pasta e clique em **[!UICONTROL Atribuir]**.
+
+   ![Atribuir formulário de metadados a uma pasta](assets/assign-to-folder.png)
+
+   Você também pode navegar até a página de detalhes da pasta e selecionar um formulário de metadados nas propriedades da pasta disponíveis no painel direito para atribuir o formulário à pasta.
+
+   ![Formulário de metadados das propriedades da pasta](assets/metadata-from-folder-props.png)
 
 ## Próximas etapas {#next-steps}
 

@@ -2,25 +2,34 @@
 title: Gerenciar relatórios na visualização do Assets
 description: Acesse os dados na seção de relatórios da visualização do Assets para avaliar o uso de produtos e recursos e obter insights sobre as principais métricas de sucesso.
 exl-id: c7155459-05d9-4a95-a91f-a1fa6ae9d9a4
-source-git-commit: e6ff21ee705a1164fdf163ce4f49064d83f149d8
+source-git-commit: c9ec348d7e65f4bb69b93a39b9ad7192485d8db4
 workflow-type: tm+mt
-source-wordcount: '825'
-ht-degree: 97%
+source-wordcount: '814'
+ht-degree: 92%
 
 ---
 
 # Gerenciamento de relatórios {#manage-reports}
 
->[!CONTEXTUALHELP]
->id="assets_reports"
->title="Relatórios"
->abstract="Os relatórios do Assets fornecem à administração a visibilidade das atividades do ambiente de visualização do Adobe Experience Manager Assets. Esses dados fornecem informações úteis sobre como os usuários interagem com o conteúdo e o produto. Todos os usuários atribuídos ao perfil de produto de administradores podem acessar o painel Insights ou criar relatórios definidos pelo usuário."
-
-Os relatórios do Assets fornecem à administração a visibilidade das atividades do ambiente de visualização do Adobe Experience Manager Assets. Esses dados fornecem informações úteis sobre como os usuários interagem com o conteúdo e o produto.
+Os relatórios do Assets fornecem à administração a visibilidade das atividades do ambiente de visualização do Adobe Experience Manager Assets. Esses dados fornecem informações úteis sobre como os usuários interagem com o conteúdo e o produto. Todos os(as) usuários(as) podem acessar o painel Insights e aqueles que estiverem atribuídos(as) ao perfil de produto Administrador podem criar relatórios definidos pelo(a) usuário(a).
 
 ## Acessar relatórios {#access-reports}
 
 Todos os usuários atribuídos ao perfil de produto de administradores da visualização do Assets podem acessar o painel Insights e criar relatórios definidos pelo usuário na visualização do Assets.
+
+Para acessar os relatórios, navegue até **[!UICONTROL Relatórios]** em **[!UICONTROL Configurações]**.
+
+![Relatórios](assets/reports.png)
+<!--
+In the **[!UICONTROL Reports]** screen, various components are shown in the tabular format which includes the following:
+
+* **Title**: Title of the report
+* **Type**: Determines whether the report is uploaded or downloaded to the repository
+* **Description**: Provide details of the report that was given during uploading/downloading the report
+* **Status**: Determines whether the report is completed, under progress, or deleted.
+* **Author**: Provides email of the author who has uploaded/downloaded the report.
+* **Created**: Gives information of the date when the report was generated.
+-->
 
 ## Exibir o Insights {#view-live-statistics}
 
@@ -32,9 +41,9 @@ Clique na opção **[!UICONTROL Insights]**, disponível no painel de navegaçã
 
 ![Insights](assets/insights.png)
 
-* **Downloads**: o número de arquivos baixados do ambiente de visualização do Assets nos últimos 30 dias ou 12 meses representados por meio de um gráfico de linhas.
+* **Downloads**: o número de ativos baixados do ambiente de exibição do Assets nos últimos 30 dias ou 12 meses representados usando um gráfico de linhas.
 
-* **Uploads**: o número de arquivos enviados para o ambiente de visualização do Assets nos últimos 30 dias ou 12 meses representados por meio de um gráfico de linhas.
+* **Uploads**: o número de ativos carregados para o ambiente de exibição do Assets nos últimos 30 dias ou 12 meses representados usando um gráfico de linhas.
 
 <!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.-->
 
@@ -46,11 +55,10 @@ Clique na opção **[!UICONTROL Insights]**, disponível no painel de navegaçã
 
 * **Principais Pesquisas**: visualize os principais termos pesquisados junto com o número de vezes que esses termos foram pesquisados no ambiente de visualização do Assets nos últimos 30 dias ou 12 meses representados em formato de tabela.
 
-<!--
-
-* **Storage usage**: The storage usage, in gigabytes (GB), for the Assets view environment, for the last 30 days or 12 months represented using a bar chart.
-
--->
+  <!--
+   ![Insights](assets/insights1.png)
+   ![Insights](assets/insights2.png)
+   -->
 
 ## Criar um relatório de downloads {#create-download-report}
 

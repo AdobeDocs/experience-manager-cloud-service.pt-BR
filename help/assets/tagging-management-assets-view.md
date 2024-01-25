@@ -2,10 +2,10 @@
 title: Como gerenciar tags na visualização do Assets?
 description: Saiba como gerenciar tags na visualização do Assets. As tags ajudam a categorizar ativos que podem ser procurados e pesquisados com mais eficiência.
 exl-id: 7c5e1212-054f-46ca-9982-30e40b0482e1
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: ea0978d09ce74d37487cd921496b03acbfd632d0
 workflow-type: tm+mt
-source-wordcount: '1416'
-ht-degree: 100%
+source-wordcount: '1256'
+ht-degree: 95%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 As tags ajudam a categorizar ativos que podem ser procurados e pesquisados com mais eficiência. A marcação ajuda a propagar a taxonomia apropriada para outros usuários e fluxos de trabalho.
 
-Listas planas de vocabulários controlados podem se tornar incontroláveis com o tempo. Administradores(as) podem usar a estrutura hierárquica de marcação, o que facilita a aplicação de metadados relevantes, a categorização de ativos, o suporte à pesquisa, a reutilização de tags, a melhora da capacidade de descoberta e assim por diante.
+Listas planas de vocabulários controlados podem se tornar incontroláveis com o tempo. Admins têm a capacidade de usar a estrutura hierárquica de marcação, que facilita a aplicação de metadados relevantes, a categorização de ativos, o suporte a pesquisas, a reutilização de tags, a melhoria da capacidade de descoberta e assim por diante.
 
 Você pode criar um namespace no nível raiz e criar uma estrutura hierárquica de subtags no namespace. Por exemplo, você pode criar um namespace `Activities` no nível raiz e ter as tags `Cycling`, `Hiking` e `Running` no namespace. É possível incluir as subtags `Clothing` e `Shoes` em `Running`.
 
@@ -33,7 +33,7 @@ A marcação oferece muitos benefícios, como:
 
 * As tags podem evoluir com o tempo, à medida que um vocabulário organizacional muda.
 
-* As tags gerenciadas na visualização de admin permanecem em sincronia com as tags gerenciadas na visualização do Assets, o que garante a governança e a integridade dos metadados.
+* As tags gerenciadas no Assets as a Cloud Service permanecem em sincronia com as tags gerenciadas na exibição do Assets, o que garante a governança e a integridade dos metadados.
 
 Para poder aplicar tags nos ativos, primeiro crie um namespace e depois insira tags adicionais nele. Também é possível criar tags e adicioná-las a um namespace existente. Todas as tags criadas no nível raiz são automaticamente adicionadas ao namespace Tags padrão. Em seguida, é possível adicionar o campo Tags ao formulário de metadados para que ele seja exibido na página de detalhes do ativo. Depois de definir essas configurações, você pode começar a aplicar tags nos ativos.
 
@@ -43,7 +43,7 @@ Para poder aplicar tags nos ativos, primeiro crie um namespace e depois insira t
 
 ![Gerenciamento de marcação](assets/tagging-taxonomy-management.png)
 
-Recursos adicionais além dos mencionados neste artigo, incluindo mesclagem, renomeação, localização e publicação de tags, estão disponíveis na visualização de Admin.
+Recursos adicionais além dos mencionados neste artigo, incluindo a mesclagem, renomeação, localização e publicação de tags, estão disponíveis no Assets as a Cloud Service.
 
 ## Criar um namespace {#creating-a-namespace}
 
@@ -59,7 +59,6 @@ Execute as seguintes etapas para criar um namespace:
 
    <!--
     >[!NOTE]
-    >
     >You can use `Name` as a primary key if you are using any other metadata management tool is the source of truth for taxonomy values, you can use the name as a primary key.
     >
     -->
@@ -77,13 +76,6 @@ Execute as seguintes etapas para adicionar tags a um namespace:
    Neste exemplo, a imagem à esquerda representa a tag diretamente abaixo do namespace `automobile-four-wheeler` exibido no campo `Path`. A imagem à direita é um exemplo de subtags adicionadas em uma tag, pois há outros nomes de tag (`jeep` e `jeep-meridian`) exibidos no campo `Path` além do namespace.
 1. Especifique o título, o nome e a descrição da tag e clique em `Save`.
 
-
-   >[!NOTE]
-   >
-   >* Os campos `Title` e `Name` são obrigatórios, enquanto o campo `Description` é opcional.
-   >* Por padrão, a ferramenta copia o texto digitado no campo Título, remove os espaços em branco ou caracteres especiais (. &amp; / \ : * ? [ ] | &quot; %), e o armazena como o nome.
-   >* Você pode atualizar o campo `Title` posteriormente, mas o campo `Name` é somente leitura.
-
 ## Adicionar tags às Tags padrão {#adding-tags-to-standard-tags}
 
 Tags não estruturadas ou que não possuem hierarquia são armazenadas no namespace `Standard Tags`. Além disso, quando quiser adicionar mais termos descritivos sem afetar a taxonomia controlada, você poderá armazenar esse valor em `Standard Tags`. Você pode mover esses valores em namespaces estruturados ao longo do tempo. Além disso, você pode usar o namespace `Standard Tags` como uma entrada de formato livre para palavras-chave.
@@ -91,10 +83,11 @@ Tags não estruturadas ou que não possuem hierarquia são armazenadas no namesp
 Para criar uma tag padrão, clique em `Create Tag` no nível raiz. Especifique o título, o nome e a descrição e clique em `Save`.
 
 ![Adicionar tags às tags padrão](assets/adding-tags-to-standard-tags.png)
-
+<!--
 >[!NOTE]
 >
->Se você excluir o namespace `Standard Tags` usando a visualização de Admin, as tags criadas no nível raiz não serão exibidas na lista de tags disponíveis.
+>If you delete `Standard Tags` namespace using Assets as a Cloud Service, the tags created at the root-level do not display in the list of available tags. 
+-->
 
 ## Mover tags {#moving-tags}
 
@@ -117,7 +110,7 @@ Para editar o título da tag, selecione-a e clique em `Edit`. Especifique o novo
 >[!NOTE]
 >
 >* O `Name` de uma tag não pode ser atualizado. O caminho raiz de uma tag também se baseia no nome da tag. O caminho permanece o mesmo se você atualizar o campo `Title`.
->* Operações adicionais como mesclar, localizar e publicar estão disponíveis na visualização de Admin.
+>* Operações adicionais como mesclar, localizar e publicar estão disponíveis no Assets as a Cloud Service.
 
 ## Exclusão de tags {#deleting-tags}
 
@@ -136,7 +129,7 @@ Execute as seguintes etapas para excluir tags:
 
 ## Adicionar o componente de tags ao formulário de metadados {#adding-tags-to-metadata-form}
 
-O componente de tags é adicionado ao formulário de metadados `default` automaticamente. Você pode criar um [formulário de metadados](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/metadata.html?lang=br#metadata-forms) do zero ou utilizar um modelo. Se você não estiver usando um modelo de formulário de metadados existente, poderá modificar o formulário de metadados e adicionar o componente de tags. O mapeamento da propriedade de metadados é preenchido automaticamente e não pode ser modificado neste momento. Usuários na visualização de Admin podem atualizar o mapeamento para armazenar valores de tag usando namespaces personalizados e expor apenas subconjuntos de hierarquias usando caminhos raiz.
+O componente de tags é adicionado ao formulário de metadados `default` automaticamente. Você pode criar um [formulário de metadados](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/metadata.html?lang=br#metadata-forms) do zero ou utilizar um modelo. Se você não estiver usando um modelo de formulário de metadados existente, poderá modificar o formulário de metadados e adicionar o componente de tags. O mapeamento da propriedade de metadados é preenchido automaticamente e não pode ser modificado neste momento. Usuários do Assets as a Cloud Service podem atualizar o mapeamento para armazenar valores de tag por meio de namespaces personalizados e expor apenas subconjuntos de hierarquias usando caminhos raiz.
 
 Assista a este vídeo rápido para ver como adicionar o componente de tags ao formulário de metadados:
 
@@ -151,32 +144,10 @@ Assista a este vídeo rápido para ver como adicionar o componente de tags ao fo
    ![Marcação de ativos](assets/adding-tags-to-assets.png)
 
 1. Selecione uma ou mais tags. A subtag é selecionada automaticamente junto com a tag principal ou o namespace.
-As tags modificadas na visualização do Assets também são aplicadas na visualização de Admin.
+As tags modificadas na exibição Ativos também são aplicadas aos Ativos as a Cloud Service.
 
-## Limitações {#limitations}
-
-No momento, os seguintes recursos avançados de taxonomia não estão disponíveis na visualização do Assets e só podem ser acessados por meio da visualização de Admin:
-
-* **Localização:** qualquer localização deve ocorrer na visualização de Admin.
-* **Caminho raiz:** os caminhos raiz não podem ser configurados. Todos os namespaces armazenados no gerenciamento de taxonomia são expostos na propriedade Tags da visualização do Assets.
-* **Tags padrão:** as tags padrão aplicadas na visualização de Admin estão visíveis na visualização do Assets. Não é possível adicionar novas tags padrão na visualização do Assets por meio da página Detalhes do ativo. Os valores existentes armazenados nas tags padrão são aplicados na página Detalhes do ativo.
-* **Namespaces personalizados:** as tags não podem ser mapeadas para namespaces personalizados.
-* **Exibição de referências:** admins podem ver o uso da tag na visualização do Assets. Todos os ativos que estão usando ativamente uma tag são informados. No entanto, admins não podem ver ativos individuais usando a tag das referências.
-
-<!--
-*   Overview
-*   Benefits
-*   Prerequisites and Permissions
-*   Configuration
-*   Managing Tags
-    *   Creating a Namespace
-    *   Adding Tags to a Namespace
-    *   Adding Tags to Standard Tags
-    *   Moving Tags
-    *   Editing Tags
-    *   Deleting Tags
-*   Applying Tags
-    *   Adding Tags to the Metadata form
-    *   Adding Tags to Assets
-*   Limitations
--->
+>[!NOTE]
+>
+>* Os campos `Title` e `Name` são obrigatórios, enquanto o campo `Description` é opcional.
+>* Por padrão, a ferramenta copia o texto digitado no campo Título, remove os espaços em branco ou caracteres especiais (. &amp; / \ : * ? [ ] | &quot; %), e o armazena como o nome.
+>* Você pode atualizar o campo `Title` posteriormente, mas o campo `Name` é somente leitura.

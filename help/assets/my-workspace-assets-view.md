@@ -2,10 +2,10 @@
 title: Visualização Meu espaço de trabalho para ativos
 description: Meu espaço de trabalho é uma página que fornece módulos visuais personalizáveis para um acesso conveniente às áreas-chave da interface do Assets e informações mais relevantes para o usuário.
 exl-id: 402dd3a6-44e5-4d13-97d8-1d7fa26a99e4
-source-git-commit: 701a7610780553731a6ac4c85fe3221ee3d98ae2
+source-git-commit: 2500322c5565314e84ee7989399b9130f5cd6f74
 workflow-type: tm+mt
-source-wordcount: '743'
-ht-degree: 93%
+source-wordcount: '745'
+ht-degree: 84%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 93%
 
 O Assets agora inclui um espaço de trabalho personalizável, que fornece widgets para acesso conveniente às áreas-chave da interface do Assets e informações mais relevantes para você. Esta página serve como uma solução única para fornecer uma visão geral dos itens de trabalho e fornecer acesso rápido aos principais fluxos de trabalho. Um acesso mais conveniente a essas opções aumenta a eficiência e a velocidade do conteúdo.
 
-Você pode acessar Meu espaço de trabalho clicando em **[!UICONTROL Meu espaço de trabalho]** nos itens disponíveis no painel de navegação esquerdo. A área Meu espaço de trabalho inclui uma variedade de widgets de acesso rápido, insights, tarefas e conteúdo. É possível configurar como esses widgets são exibidos em seu espaço de trabalho, com base em suas preferências.
+Você pode acessar Meu espaço de trabalho clicando em **[!UICONTROL Meu espaço de trabalho]** nos itens disponíveis no painel de navegação esquerdo. O Meu espaço de trabalho inclui uma variedade de dispositivos, incluindo de Acesso rápido, de Insights, de Tarefas e de Conteúdo. É possível configurar como esses widgets são exibidos em seu espaço de trabalho, com base em suas preferências.
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ Para fixar um ativo, uma pasta ou uma coleção:
 
 1. Selecione o item e clique em **[!UICONTROL Fixar no Acesso rápido]**.
 
-1. Selecione se precisa fixar o item apenas para você, para toda a organização ou para grupos selecionados. Se você selecionar **[!UICONTROL Para grupos]**, defina os nomes dos grupos no campo **[!UICONTROL Fixar para grupos]**.
+1. Selecione se precisa fixar o item apenas para você, para toda a organização ou para grupos selecionados. Se você selecionar **[!UICONTROL Para grupos]**, escolha nomes de grupos existentes na **[!UICONTROL Fixar para grupos]** campo.
 
    ![Fixação de itens para grupos](assets/pin-items-for-groups.png)
 1. Clique em **[!UICONTROL Fixar]**.
@@ -62,7 +62,7 @@ Você também pode visualizar os principais termos pesquisados junto com o núme
 
 **Tarefas**
 
-Exibe a lista de tarefas atribuídas a você na guia **[!UICONTROL Minhas Tarefas]**, criada por você na guia **[!UICONTROL Tarefas atribuídas]** e as tarefas já concluídas por você na guia **[!UICONTROL Concluído]**. Você pode selecionar uma tarefa e clicar em **[!UICONTROL Concluir tarefa]** para aprovar ou rejeitar uma tarefa. Você também pode selecionar uma tarefa e clicar em **[!UICONTROL Abrir detalhes da tarefa]** para exibir a tarefa e aprová-la, rejeitá-la, editá-la ou excluí-la.
+Exibe a lista de tarefas atualmente atribuídas a você na **[!UICONTROL Minhas Tarefas]** , criado por você na **[!UICONTROL Tarefas atribuídas]** e as tarefas já concluídas por você na **[!UICONTROL Tarefas concluídas]** guia. Selecione uma tarefa e clique em **[!UICONTROL Concluir tarefa]** para aprovar ou rejeitar uma tarefa. Você também pode selecionar uma tarefa e clicar em **[!UICONTROL Abrir detalhes da tarefa]** para exibir a tarefa e aprová-la, rejeitá-la, editá-la ou excluí-la.
 
 ![Tarefas no Espaço de trabalho](assets/tasks-workspace.png)
 
