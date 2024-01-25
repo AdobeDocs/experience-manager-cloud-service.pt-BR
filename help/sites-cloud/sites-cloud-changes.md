@@ -1,11 +1,11 @@
 ---
 title: Alterações importantes do AEM Sites no AEM Cloud Service
-description: Entenda como criar com o AEM Sites as a Cloud Service e como administrá-lo, bem como sobre alterações importantes no AEM Sites no AEM Cloud Service.
+description: Entenda como administrar e criar com o AEM Sites as a Cloud Service e conheça as principais alterações no AEM Sites no AEM Cloud Service.
 exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
 source-git-commit: 07db10c4ee9cced7b6a697fe4f41c99eaba6a39f
 workflow-type: tm+mt
 source-wordcount: '527'
-ht-degree: 85%
+ht-degree: 90%
 
 ---
 
