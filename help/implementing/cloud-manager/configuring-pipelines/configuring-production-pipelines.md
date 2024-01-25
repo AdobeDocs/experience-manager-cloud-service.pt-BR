@@ -3,9 +3,9 @@ title: Configuração de pipelines de produção
 description: Saiba como configurar pipelines de produção para compilar e implantar seu código em ambientes de produção.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: 04c65018734f95e8245a6922d5a05c5486a4ffa4
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1422'
 ht-degree: 72%
 
 ---
@@ -123,18 +123,17 @@ O pipeline é salvo e agora você pode [gerenciar seus pipelines](managing-pipel
 
 Uma implantação direcionada implanta o código somente em partes selecionadas do aplicativo AEM. Nessa implantação, você pode optar por **Incluir** Um dos seguintes tipos de código:
 
-* **[Configuração](#config)** - Defina as configurações no ambiente AEM, tarefas de manutenção, regras CDN e muito mais.
+* **Configuração** - Definir configurações para regras de filtro de tráfego no ambiente AEM.
    * Consulte o documento [Regras de filtro de tráfego incluindo regras WAF](/help/security/traffic-filter-rules-including-waf.md) para saber como gerenciar as configurações no repositório para que sejam implantadas corretamente.
-* **[Código de front-end](#front-end-code)** - Configurar JavaScript e CSS para o front-end do aplicativo AEM.
+   * Ao executar um pipeline de implantação direcionada, [Configurações do WAF](/help/security/traffic-filter-rules-including-waf.md) serão implantados, desde que sejam salvos no ambiente, repositório e ramificação definidos no pipeline.
+   * Em um dado momento, somente pode haver um pipeline de configuração por ambiente.
+* **Código de front-end** - Configurar JavaScript e CSS para o front-end do aplicativo AEM.
    * Com os pipelines de front-end, é dada mais independência aos desenvolvedores de front-end e o processo de desenvolvimento pode ser acelerado.
    * Consulte o documento [Desenvolvimento de sites com o pipeline de front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) para saber como esse processo funciona, além de algumas considerações a serem feitas para aproveitar ao máximo o potencial desse processo.
-* **[Configuração no nível da Web](#web-tier-config)** - Configurar propriedades do dispatcher para armazenar, processar e entregar páginas da Web ao cliente.
-
->[!NOTE]
->
->* Se existir um pipeline de código da Web para o ambiente selecionado, essa seleção será desabilitada.
->* Se você tiver um pipeline de pilha completa existente implantando em um ambiente, a criação de um pipeline de configuração no nível da Web para o mesmo ambiente fará com que a configuração existente no pipeline de pilha completa seja ignorada.
-> * Em um dado momento, somente pode haver um pipeline de configuração por ambiente.
+* **Configuração no nível da Web** - Configurar propriedades do dispatcher para armazenar, processar e entregar páginas da Web ao cliente.
+   * Consulte o documento [Pipelines de CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) para obter mais detalhes.
+   * Se existir um pipeline de código da Web para o ambiente selecionado, essa seleção será desabilitada.
+   * Se você tiver um pipeline de pilha completa existente implantando em um ambiente, a criação de um pipeline de configuração no nível da Web para o mesmo ambiente fará com que a configuração existente no pipeline de pilha completa seja ignorada.
 
 As etapas para concluir a criação do pipeline de implantação de produção direcionada são as mesmas depois de escolher um tipo de implantação.
 
@@ -165,8 +164,6 @@ As etapas para concluir a criação do pipeline de implantação de produção d
 1. Clique em **Salvar**.
 
 O pipeline é salvo e agora você pode [gerenciar seus pipelines](managing-pipelines.md) no cartão **Pipelines** na página **Visão geral do programa**.
-
-Ao executar um pipeline de implantação direcionado, as configurações [como as configurações WAF](/help/security/traffic-filter-rules-including-waf.md) serão implantados, desde que sejam salvos no ambiente, repositório e ramificação definidos no pipeline.
 
 ## Ignorar pacotes do Dispatcher {#skip-dispatcher-packages}
 
