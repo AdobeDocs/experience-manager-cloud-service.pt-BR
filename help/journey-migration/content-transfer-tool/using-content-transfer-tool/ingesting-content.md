@@ -2,9 +2,9 @@
 title: Assimilar conteúdo no Cloud Service
 description: Saiba como usar o Cloud Acceleration Manager para assimilar conteúdo do seu conjunto de migração em uma instância do Cloud Service de destino.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 4c8565d60ddcd9d0675822f37e77e70dd42c0c36
+source-git-commit: 281523183cecf1e74c33f58ca9ad038bba1a6363
 workflow-type: tm+mt
-source-wordcount: '2407'
+source-wordcount: '2410'
 ht-degree: 6%
 
 ---
@@ -38,7 +38,7 @@ Siga as etapas abaixo para assimilar seu conjunto de migração usando o Cloud A
    > Se a extração estiver em execução, a caixa de diálogo a indicará. Depois que a extração for concluída com sucesso, a assimilação será iniciada automaticamente. Se a extração falhar ou for interrompida, o trabalho de assimilação será rescindido.
 
    * **Destino:** Selecione o ambiente de destino. É nesse ambiente que o conteúdo do conjunto de migração é assimilado.
-      * As assimilações não são compatíveis com um destino de RDE (Rapid Development Environment, ambiente de desenvolvimento rápido) e não aparecem como uma possível escolha de destino, mesmo que o usuário tenha acesso a ele.
+      * As assimilações não são compatíveis com destinos do tipo RDE (Rapid Development Environment, ambiente de desenvolvimento rápido) ou pré-visualização e não aparecem como uma possível escolha de destino, mesmo que o usuário tenha acesso a elas.
       * Embora um conjunto de migração possa ser assimilado em vários destinos simultaneamente, um destino pode ser o destino de apenas um em execução ou aguardando assimilação por vez.
 
    * **Camada:** Selecione a camada. (Autor/Publicação).
