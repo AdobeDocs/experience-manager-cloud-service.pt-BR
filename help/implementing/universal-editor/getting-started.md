@@ -2,10 +2,10 @@
 title: Introdução ao Editor universal no AEM
 description: Saiba como obter acesso ao Editor universal e começar a instrumentar seu primeiro aplicativo do AEM para utilizá-lo.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: 453cbaeabd28223cac5e732a551aa71f5a425839
+source-git-commit: f9d584d7b117c24224079f581802f5f126890304
 workflow-type: tm+mt
-source-wordcount: '903'
-ht-degree: 71%
+source-wordcount: '871'
+ht-degree: 73%
 
 ---
 
@@ -104,8 +104,6 @@ Essa propriedade deve ser definida na configuração OSGi `org.apache.sling.engi
 ## Instrumentar a página {#instrument-page}
 
 O serviço do Editor universal exige um [nome uniforme de recurso (URN)](https://en.wikipedia.org/wiki/Uniform_Resource_Name) para identificar e utilizar o sistema de back-end correto para o conteúdo no aplicativo que está sendo editado. Portanto, um esquema URN é necessário para mapear o conteúdo de volta para os recursos de conteúdo.
-
-Os atributos de instrumentação adicionados à página consistem principalmente em [Microdados HTML,](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata) um padrão do setor que também pode ser usado para tornar o HTML mais semântico, tornar os documentos do HTML indexáveis e assim por diante.
 
 ### Criação de conexões {#connections}
 
