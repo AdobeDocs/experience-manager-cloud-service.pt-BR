@@ -2,7 +2,7 @@
 title: Atributos e Tipos de Item
 description: Saiba mais sobre os atributos de dados e os tipos de item exigidos pelo Universal Editor.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: febaec244b4400b8d7fc5a5d8a4f75b4f4505d6f
+source-git-commit: 453cbaeabd28223cac5e732a551aa71f5a425839
 workflow-type: tm+mt
 source-wordcount: '686'
 ht-degree: 76%
@@ -38,7 +38,7 @@ Para que um aplicativo possa ser editado pelo Editor universal, ele deve ser ins
 
 ## Tipos de item {#item-types}
 
-| `itemtype` | Descrição | `itemid` | `itemprop` | `data-editor-itemfilter` | `data-editor-itemlabel` | `data-editor-itemmodel` | `data-editor-behvior` |
+| `data-aue-type` | Descrição | `data-aue-resource` | `data-aue-prop` | `data-aue-filter` | `data-aue-label` | `data-aue-model` | `data-aue-behavior` |
 |---|---|---|---|---|---|---|---|
 | `text` | O texto é editável nas tags HTML, mas somente em um formato de texto simples; a formatação Rich Text não está disponível. Isso é bastante usado em componentes de título, por exemplo | Opcional | Obrigatório | n/a | Opcional | n/a | Opcional |
 | `richtext` | O texto é editável com recursos completos de Rich Text. O RTE será exibido no painel direito | Opcional | Obrigatório | n/a | Opcional | n/a | Opcional |
