@@ -3,9 +3,9 @@ title: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud S
 description: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 8c33426c38b087c83b945572374089ad9cb44daf
+source-git-commit: 77d38f03f18eb6b0fdc2f2eec5b2dc4b608b8057
 workflow-type: tm+mt
-source-wordcount: '775'
+source-wordcount: '781'
 ht-degree: 30%
 
 ---
@@ -46,7 +46,7 @@ Assista ao vídeo de Visão geral da versão de janeiro de 2024 que exibe um res
 
 ![Extension Manager no AEM Sites](/help/assets/sites/extension-manager/homepage.png)
 
-O Extension Manager no AEM Sites permite que desenvolvedores e profissionais acessem, gerenciem e personalizem extensões de interface do usuário criadas para aprimorar a funcionalidade do AEM Sites.
+O Extension Manager no AEM Sites permite que desenvolvedores e profissionais acessem, gerenciem e personalizem [Extensões da interface](https://developer.adobe.com/uix/docs/) criado com [Construtor de aplicativos Adobe](https://developer.adobe.com/app-builder/) para aprimorar a funcionalidade do AEM Sites.
 Com o Extension Manager, é possível:
 
 * Ativar ou desativar extensões por instância;
