@@ -2,9 +2,9 @@
 title: Configuração de redes avançadas para o AEM as a Cloud Service
 description: Saiba como configurar recursos avançados de rede, como VPN ou um endereço IP de saída flexível ou dedicado para o AEM as a Cloud Service
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+source-git-commit: dfeeaca8341abec5d4fd518957baf6936a21aea3
 workflow-type: tm+mt
-source-wordcount: '3526'
+source-wordcount: '3540'
 ht-degree: 92%
 
 ---
@@ -350,6 +350,7 @@ A maioria dos dispositivos VPN com tecnologia IPSec é compatível. Consulte a l
 
 * Suporte limitado a uma única conexão VPN
 * O recurso de encaminhamento do Splunk não é possível em uma conexão VPN.
+* Os Resolvedores de DNS devem ser listados no espaço de Endereço de Gateway para resolver nomes de host privados.
 
 ### Criação {#vpn-creation}
 
