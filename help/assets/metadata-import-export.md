@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 52a6cb359bfe0d76bdceb3f517e92d78994872c8
 workflow-type: tm+mt
-source-wordcount: '686'
-ht-degree: 12%
+source-wordcount: '732'
+ht-degree: 9%
 
 ---
 
@@ -30,7 +30,7 @@ A importação de metadados é assíncrona e não impede o desempenho do sistema
 
    | Parâmetro | Descrição |
    | ---------------------- | ------- |
-   | Tamanho do lote | Número de ativos em um lote para o qual os metadados devem ser importados. O valor padrão é 50. O valor máximo é 100. |
+   | Tamanho do Lote | Número de ativos em um lote para o qual os metadados devem ser importados. O valor padrão é 50. O valor máximo é 100. |
    | Separador de campos | O valor padrão é `,` (vírgula). Você pode especificar qualquer outro caractere. |
    | Delimitador de vários valores | Separador para valores de metadados. O valor padrão é `|`. |
    | Inicializar fluxos de trabalho | Falso por padrão. Quando definido como `true` As configurações padrão e estão em vigor para o fluxo de trabalho DAM Metadata WriteBack (que grava metadados nos dados binários do XMP). Habilitar os fluxos de trabalho torna o sistema lento. |
@@ -60,6 +60,10 @@ Alguns casos de uso para exportar metadados em massa são:
 * Compartilhar metadados de ativos com uma equipe de projeto maior.
 * Testar ou auditar os metadados quanto à conformidade.
 * Externalize os metadados para localização separada.
+
+>[!NOTE]
+>
+>As Exportações de metadados são limitadas a 1.048.575 ativos, o que corresponde ao tamanho máximo da planilha no Microsoft Excel. Se uma hierarquia exportada contiver mais que esse número de ativos, somente os metadados dos primeiros 1.048.575 ativos serão incluídos no arquivo CSV.
 
 1. Selecione a pasta de ativos que contém ativos para os quais deseja exportar metadados. Na barra de ferramentas, selecione **[!UICONTROL Exportar metadados]**.
 1. Na caixa de diálogo Exportação de metadados, especifique um nome para o arquivo CSV. Para exportar metadados de ativos em subpastas, selecione **[!UICONTROL Incluir ativos em subpastas]**.
