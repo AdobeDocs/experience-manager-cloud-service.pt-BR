@@ -2,9 +2,9 @@
 title: Desenvolvimento de Sites com o pipeline front-end
 description: Com o pipeline de front-end, é dada mais independência aos desenvolvedores de front-end e o processo de desenvolvimento pode ganhar velocidade substancial. Este documento descreve algumas considerações específicas do processo de build de front-end que devem ser fornecidas.
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
-source-git-commit: de2d4355894d166d47f49a22af773b9e2c19e67b
+source-git-commit: 74e4c4cc57dbdc78b6c93efe78c856bdafbae477
 workflow-type: tm+mt
-source-wordcount: '1156'
+source-wordcount: '1169'
 ht-degree: 1%
 
 ---
@@ -20,17 +20,22 @@ ht-degree: 1%
 
 ## Contrato de Build de Front-End {#front-end-build-contract}
 
-Semelhante ao [ambiente de build de pilha completa,](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) o pipeline de front-end tem seu próprio ambiente. Os desenvolvedores têm alguma flexibilidade nesse pipeline, desde que o seguinte contrato de build de front-end seja observado.
+Semelhante ao [ambiente de build de pilha completa,](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) o pipeline de front-end tem seu próprio ambiente. Os desenvolvedores têm alguma flexibilidade ao usar esse pipeline, desde que o seguinte contrato de build de front-end seja observado.
 
-O pipeline de front-end requer o projeto Node.js de front-end para usar o `build` diretiva de script para gerar a build implantada pelo pipeline de front-end. Ou seja, o Cloud Manager usa o comando `npm run build` para gerar o projeto implantável para o `dist` pasta.
+O pipeline de front-end requer o projeto Node.js de front-end para usar o `build` diretiva de script para gerar o build implantado. Isso ocorre porque o Cloud Manager usa o comando `npm run build` para gerar o projeto implantável para a build de front-end.
 
-O conteúdo do `dist` é a pasta que será implantada no AEM as a Cloud Service pelo pipeline do Cloud Manager.
+O conteúdo resultante da variável `dist` pasta é o que é implantado por fim pelo Cloud Manager, servindo-os como arquivos estáticos. Esses arquivos são hospedados externamente para AEM, mas são disponibilizados por meio de um `/content/...` URL no ambiente implantado.
 
-### Versões do nó {#node-versions}
+## Versões do nó {#node-versions}
 
-Por padrão, o pipeline de front-end usa o Nó 14, mas 12, 16 e 18 também estão disponíveis.
+O ambiente de build de front-end é compatível com as seguintes versões do Node.js.
 
-Você pode usar o `NODE_VERSION` para definir a versão desejada.
+* 12
+* 14 (padrão)
+* 16
+* 18
+
+Você pode usar o `NODE_VERSION` [variável de ambiente](/help/implementing/cloud-manager/environment-variables.md) para definir a versão desejada.
 
 ## Única fonte da verdade {#single-source-of-truth}
 
