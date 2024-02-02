@@ -6,10 +6,10 @@ mini-toc-levels: 1
 role: User, Admin, Architect
 feature: Asset Management,Multi Site Manager
 exl-id: a71aebdf-8e46-4c2d-8960-d188b14aaae9
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 9e0aefa096a493df22860d0194a0a76f3eaf2390
 workflow-type: tm+mt
-source-wordcount: '3403'
-ht-degree: 12%
+source-wordcount: '3400'
+ht-degree: 10%
 
 ---
 
@@ -248,8 +248,8 @@ Para ver os status e as informações relacionadas a uma ação de sincronizaç�
 Você pode cancelar a herança da Live Copy de:
 
 * campo de metadados
-* Variação do fragmento de conteúdo
-* Campo de dados do fragmento de conteúdo
+* [Variação do fragmento de conteúdo](/help/assets/content-fragments/content-fragments-variations.md#inheritance)
+* [Campo de dados do fragmento de conteúdo](/help/assets/content-fragments/content-fragments-variations.md#inheritance)
 
 Isso significa que o item não será mais sincronizado com o componente de origem. Você pode ativar a herança em um ponto posterior, se necessário.
 
@@ -263,7 +263,7 @@ Para cancelar a herança:
 
 1. Na caixa de diálogo Cancelar herança, confirme a ação com Sim.
 
-### Habilitar herança novamente {#reenable-inheritance}
+### Reativar herança {#reenable-inheritance}
 
 Para reativar a herança:
 
@@ -319,7 +319,7 @@ Se você tiver vários ativos em uma pasta de live copy, iniciar ações em cada
 
 1. Selecione uma pasta de origem. Clique em **[!UICONTROL Propriedades]** na barra de ferramentas. Como alternativa, use o atalho de teclado `p`.
 1. Clique em **[!UICONTROL Origem da Live Copy]**. Para abrir o console, clique em **[!UICONTROL Visão geral da Live Copy]**.
-1. Nesse painel, selecione um ativo de live copy de uma pasta live copy. Clique nas ações desejadas na barra de ferramentas. As ações disponíveis são **[!UICONTROL Sincronizar]**, **[!UICONTROL Redefinir]**, **[!UICONTROL Suspender]** e **[!UICONTROL Desanexar]**. É possível iniciar rapidamente essas ações em qualquer ativo em qualquer quantidade de pastas de live copy que estejam em um relacionamento dinâmico com a pasta de origem selecionada.
+1. Nesse painel, selecione um ativo de live copy de uma pasta live copy. Clique nas ações desejadas na barra de ferramentas. As ações disponíveis são **[!UICONTROL Sincronizar]**, **[!UICONTROL Redefinir]**, **[!UICONTROL Suspender]**, e **[!UICONTROL Desanexar]**. É possível iniciar rapidamente essas ações em qualquer ativo em qualquer quantidade de pastas de live copy que estejam em um relacionamento dinâmico com a pasta de origem selecionada.
 
    ![Atualize facilmente muitos ativos em pastas de live copy a partir do console Visão geral da Live Copy](assets/livecopyconsole_update_many_assets.png)
 
