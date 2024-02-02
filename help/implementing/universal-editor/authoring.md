@@ -2,10 +2,10 @@
 title: Criação de conteúdo com o Editor universal
 description: Saiba como é fácil e intuitivo para os autores criarem conteúdo utilizando o Editor universal.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
+source-git-commit: a616b27c5212b00d3b51778402ed52a68028fdaf
 workflow-type: tm+mt
-source-wordcount: '2165'
-ht-degree: 38%
+source-wordcount: '2189'
+ht-degree: 37%
 
 ---
 
@@ -295,11 +295,14 @@ Além disso, os detalhes do texto estão disponíveis no painel de propriedades.
 
 É possível editar o texto no local clicando duas vezes ou tocando duas vezes no componente.
 
-Pressione enter/return ou selecione fora da caixa de texto para salvar as alterações.
-
 ![Edição de um componente de rich text](assets/rich-text-editing.png)
 
-Além disso, as opções de formatação e os detalhes do texto estão disponíveis no painel de propriedades. As alterações são salvas automaticamente quando o foco sai do campo editado no painel de propriedades.
+Para sua conveniência, as opções de formatação e os detalhes do texto estão disponíveis em dois lugares.
+
+* A variável **menu de contexto** abre acima do bloco rich text e oferece opções básicas de formatação no contexto. Devido a limitações de espaço, algumas opções podem estar ocultas atrás do botão de reticências.
+* A variável **painel de propriedades** mostra todas as opções de formatação disponíveis junto com o texto.
+
+As alterações são salvas automaticamente quando o foco sai do campo editado.
 
 ### Editando mídia {#edit-media}
 
