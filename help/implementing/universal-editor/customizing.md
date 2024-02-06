@@ -1,18 +1,18 @@
 ---
-title: Personalização da interface
-description: Saiba mais sobre os diferentes pontos de extensão que permitem personalizar a interface do usuário do Editor universal para atender às necessidades dos autores de conteúdo.
+title: Personalização da experiência de criação no Universal Editor
+description: Saiba mais sobre os diferentes pontos de extensão e outros recursos que permitem personalizar a interface do usuário do Editor universal para atender às necessidades dos autores de conteúdo.
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
-source-git-commit: 1bc65e65e6ce074a050e21137ce538b5c086665f
+source-git-commit: f04ab32093371ff425c4e196872738867d9ed528
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '302'
 ht-degree: 0%
 
 ---
 
 
-# Personalização da interface {#customizing-ui}
+# Personalização da experiência de criação no Universal Editor {#customizing-ue}
 
-Saiba mais sobre os diferentes pontos de extensão que permitem personalizar a interface do usuário do Editor universal para atender às necessidades dos autores de conteúdo.
+Saiba mais sobre os diferentes pontos de extensão e outros recursos que permitem personalizar a experiência de criação do Editor universal para atender às necessidades dos autores de conteúdo.
 
 ## Desabilitar publicação {#disable-publish}
 
@@ -59,3 +59,40 @@ Definição de `components` atributo em uma definição de filtro para `null` pe
    }
 ]
 ```
+
+## Mostrar e ocultar componentes condicionalmente no painel Propriedades {#conditionally-hide}
+
+Embora um componente ou componentes possam estar disponíveis para os autores, pode haver certas situações em que isso não faça sentido. Nesses casos, você pode ocultar componentes no painel de propriedades adicionando um `condition` atributo para o [campos do modelo de componente.](/help/implementing/universal-editor/field-types.md#fields)
+
+As condições podem ser definidas usando [Esquema JsonLogic.](https://jsonlogic.com/) Se a condição for verdadeira, o campo será exibido. Se a condição for falsa, o campo ficará oculto.
+
+### Modelo de amostra {#sample-model}
+
+```json
+ {
+    "id": "conditionally-revealed-component",
+    "fields": [
+      {
+        "component": "boolean",
+        "label": "Shall the text field be revealed?",
+        "name": "reveal",
+        "valueType": "boolean"
+      },
+      {
+        "component": "text-input",
+        "label": "Hidden text field",
+        "name": "hidden-text",
+        "valueType": "string",
+        "condition": { "===": [{"var" : "reveal"}, true] }
+      }
+    ]
+ }
+```
+
+#### Condição falsa {#false}
+
+![Campo de texto oculto](assets/hidden.png)
+
+#### Condição Verdadeira {#true}
+
+![Campo de texto exibido](assets/shown.png)
