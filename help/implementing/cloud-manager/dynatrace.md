@@ -2,9 +2,9 @@
 title: Dynatrace
 description: Saiba como usar o Dynatrace com AEM as a Cloud Service
 exl-id: b58c8b82-a098-4d81-bc36-664e890c8f66
-source-git-commit: a234f2a00c51bcb23b0c52feac9971259d26b8c3
+source-git-commit: fec3aa6debec49014406ab241c3ce0338ec5a1d2
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '514'
 ht-degree: 0%
 
 ---
@@ -27,13 +27,13 @@ Os detalhes necessários para solicitações de conectividade são descritos aba
 
 | **Campo** | **Descrição** |
 |---|---|
-| URL de ambiente do Dynatrace | O URL do ambiente do Dynatrace.<br><br>Para clientes SaaS do Dynatrace, o formato é `https://<your-environment-id>.live.dynatrace.com`.<br><br>Para clientes do Dynatrace Managed, o formato é `https://<your-managed-url>/e/<environmentId>` |
-| ID de ambiente do Dynatrace | Sua ID de ambiente do Dynatrace. Consulte [Obter informações do ambiente do Dynatrace](#get-dynatrace-env-info) para saber como fazer isso. |
-| Token de ambiente do Dynatrace | Seu token de ambiente do Dynatrace. Consulte [Obter informações do ambiente do Dynatrace](#get-dynatrace-env-info) para saber como fazer isso.<br><br>Isso deve ser considerado um segredo, portanto, use as práticas de segurança apropriadas. Por exemplo, proteja-a com senha em um site como **zerobin.net**, que o tíquete de suporte ao cliente pode mencionar, junto com a senha. |
-| Token de acesso da API do Dynatrace | O token de acesso à API do seu ambiente Dynatrace.  Consulte [Criar um token de acesso da API do Dynatrace](#create-dynatrace-access-token) para saber como criar isso.<br><br>Isso deve ser considerado um segredo, portanto, use as práticas de segurança apropriadas. Por exemplo, proteja-a com senha em um site como **zerobin.net**, que o tíquete de suporte ao cliente pode mencionar, junto com a senha.<br><br>Observação: isso só é necessário para o Dynatrace Managed. |
-| Porta AtiveGate do Dynatrace | A porta AtiveGate do Dynatrace à qual a integração AEM deve se conectar.<br><br>Observação: isso só é necessário para o Dynatrace Managed. |
-| Zona de Rede do Dynatrace AtiveGate | Seu [Zona de rede do Dynatrace AtiveGate](https://docs.dynatrace.com/docs/manage/network-zones) rotear dados de monitoramento de AEM com eficiência em data centers e regiões de rede.<br><br>Observação: uma zona de rede Dynatrace AtiveGate é opcional. |
-| ID(s) de ambiente do AEM | As IDs de ambiente do AEM que o Dynatrace deve monitorar. |
+| [!DNL Dynatrace Environment URL] | O URL do ambiente do Dynatrace.<br><br>Para clientes SaaS do Dynatrace, o formato é `https://<your-environment-id>.live.dynatrace.com`.<br><br>Para clientes do Dynatrace Managed, o formato é `https://<your-managed-url>/e/<environmentId>` |
+| [!DNL Dynatrace Environment ID] | Sua ID de ambiente do Dynatrace. Consulte [Obter informações do ambiente do Dynatrace](#get-dynatrace-env-info) para saber como fazer isso. |
+| [!DNL Dynatrace Environment Token] | Seu token de ambiente do Dynatrace. Consulte [Obter informações do ambiente do Dynatrace](#get-dynatrace-env-info) para saber como fazer isso.<br><br>Isso deve ser considerado um segredo, portanto, use as práticas de segurança apropriadas. Por exemplo, proteja-a com senha em um site como **zerobin.net**, que o tíquete de suporte ao cliente pode mencionar, junto com a senha. |
+| [!DNL Dynatrace API access token] | O token de acesso à API do seu ambiente Dynatrace.  Consulte [Criar um token de acesso da API do Dynatrace](#create-dynatrace-access-token) para saber como criar isso.<br><br>Isso deve ser considerado um segredo, portanto, use as práticas de segurança apropriadas. Por exemplo, proteja-a com senha em um site como **zerobin.net**, que o tíquete de suporte ao cliente pode mencionar, junto com a senha.<br><br>Observação: isso só é necessário para o Dynatrace Managed. |
+| [!DNL Dynatrace ActiveGate Port] | A porta AtiveGate do Dynatrace à qual a integração AEM deve se conectar.<br><br>Observação: isso só é necessário para o Dynatrace Managed. |
+| [!DNL Dynatrace ActiveGate Network Zone] | Seu [Zona de rede do Dynatrace AtiveGate](https://docs.dynatrace.com/docs/manage/network-zones) rotear dados de monitoramento de AEM com eficiência em data centers e regiões de rede.<br><br>Observação: uma zona de rede Dynatrace AtiveGate é opcional. |
+| [!DNL AEM Environment ID(s)] | As IDs de ambiente do AEM que o Dynatrace deve monitorar. |
 
 >[!NOTE]
 >
@@ -43,13 +43,13 @@ Os detalhes necessários para solicitações de conectividade são descritos aba
 ## Criar um token de acesso da API do Dynatrace {#create-dynatrace-access-token}
 
 1. Faça logon no ambiente do Dynatrace.
-1. No menu Dynatrace, acesse Gerenciar > Tokens de acesso.
-1. Selecione Generate new token.
-1. Defina um nome de token.
+1. No [!DNL Dynatrace] , acesse [!DNL Manage] > [!DNL Access tokens].
+1. Selecionar [!DNL Generate new token].
+1. Definir um [!DNL token name].
 
-1. Opcional: Defina uma data de expiração. Gere um novo token antes que ele expire.
-1. Defina o escopo do token para integração PaaS - Download do instalador
-1. Selecione Gerar token.
+1. Opcional: Defina um [!DNL expiration date]. Gere um novo token antes que ele expire.
+1. Defina o [!DNL token scope] para [!DNL PaaS integration - Installer download]
+1. Selecionar [!DNL Generate token].
 1. Copie o token de acesso gerado e armazene-o em um local seguro.
 
 
