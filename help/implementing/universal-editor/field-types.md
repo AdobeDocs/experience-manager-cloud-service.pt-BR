@@ -2,9 +2,9 @@
 title: Definições de modelo, campos e tipos de componentes
 description: Saiba mais sobre campos e os tipos de componentes que o Editor universal pode editar no painel de propriedades com exemplos. Entenda como você pode instrumentar seu próprio aplicativo criando uma definição de modelo e vinculando ao componente.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
-source-git-commit: c721e2f5f14e9d1c069e1dd0a00609980db6bd9d
+source-git-commit: 550d26cde3d6b7be419bc9df70db8894851361c6
 workflow-type: tm+mt
-source-wordcount: '1000'
+source-wordcount: '1004'
 ht-degree: 11%
 
 ---
@@ -81,7 +81,7 @@ Um objeto de campo tem a seguinte definição de tipo.
 | `required` | `boolean` | O campo é obrigatório? | Não |
 | `readOnly` | `boolean` | O campo é somente leitura | Não |
 | `hidden` | `boolean` | O campo está oculto por padrão? | Não |
-| `condition` | `RulesLogic` | Regra para mostrar ou ocultar o campo | Não |
+| `condition` | `RulesLogic` | Regra para mostrar ou ocultar o campo com base em um [condição](/help/implementing/universal-editor/customizing.md#conditionally-hide) | Não |
 | `multi` | `boolean` | O campo é um campo múltiplo? | Não |
 | `validation` | `ValidationType` | Regra ou regras de validação para o campo | Não |
 | `raw` | `unknown` | Dados brutos que podem ser usados pelo componente | Não |

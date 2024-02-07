@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: f04ab32093371ff425c4e196872738867d9ed528
+source-git-commit: 3d5901e6543b0b5d3214e69c5119367eeb71bf07
 workflow-type: tm+mt
-source-wordcount: '4631'
+source-wordcount: '4633'
 ht-degree: 89%
 
 ---
@@ -766,11 +766,12 @@ ht-degree: 89%
 + Edge Delivery Services {#edge-delivery}
    + [AEM e EDGE DELIVERY SERVICES](/help/edge/overview.md)
    + [Uso da entrega de borda](/help/edge/using.md)
+   + [Guia de introdução do desenvolvedor](/help/edge/edge-dev-getting-started.md)
    + [Criação de conteúdo para entrega de borda](/help/edge/authoring.md)
    + [Conteúdo de publicação para entrega de borda](/help/edge/publishing.md)
    + [Desenvolvimento para entrega de borda](/help/edge/developing.md)
+   + [Modelagem de conteúdo](/help/edge/content-modeling.md)
    + [Projetos existentes e entrega do Edge](/help/edge/existing-projects.md)
-   + [Guia de introdução do desenvolvedor](/help/edge/edge-dev-getting-started.md)
    + Criação de aplicativos de entrega de borda {#build}
       + [Introdução - Tutorial do desenvolvedor](/help/edge/developer/tutorial.md)
       + [Anatomia de um projeto](/help/edge/developer/anatomy-of-a-franklin-project.md)
