@@ -4,8 +4,8 @@ description: Alterações importantes no Adobe Experience Manager (AEM) as a Clo
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '868'
-ht-degree: 49%
+source-wordcount: '862'
+ht-degree: 45%
 
 ---
 
