@@ -3,10 +3,10 @@ title: "Interface do [!DNL Assets view] "
 description: Entenda a interface e a navegação no [!DNL Assets view].
 role: User
 exl-id: 534a8084-88f7-410e-b872-719e47e62b10
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2f701c527b5aac9d604cbfe857df90c3e8bf6054
 workflow-type: tm+mt
-source-wordcount: '894'
-ht-degree: 89%
+source-wordcount: '922'
+ht-degree: 81%
 
 ---
 
@@ -47,7 +47,7 @@ Você pode navegar pelas pastas da interface do usuário principal ou da barra l
 * [Coleções](/help/assets/manage-collections-assets-view.md): uma coleção é um conjunto de ativos, pastas ou outras coleções na exibição do Adobe Experience Manager Assets. Use coleções para compartilhar ativos entre usuários. Diferente de pastas, uma coleção pode incluir ativos de locais diferentes. Você pode compartilhar várias coleções com um usuário. Cada coleção contém referências a ativos. A integridade referencial dos ativos é mantida entre as coleções.
 
 * [Insights](/help/assets/manage-reports-assets-view.md#view-live-statistics): no [!DNL Assets view], você pode visualizar insights em tempo real no seu painel. A visualização do Assets permite visualizar dados do seu ambiente da visualização do Assets em tempo real, por meio do painel Insights. Você pode visualizar métricas de evento em tempo real dos últimos 30 dias ou dos últimos 12 meses.
-* **Lixeira**: lista os ativos excluídos da pasta raiz **[!UICONTROL Ativos]**. Você pode selecionar um ativo na pasta Lixeira e restaurá-lo ao seu local de origem ou excluí-lo permanentemente. Você também pode especificar uma palavra-chave ou aplicar filtros padrão ou personalizados para pesquisar ativos apropriados na pasta Lixeira. Para obter mais informações sobre o uso de filtros padrão e personalizados, consulte [Pesquisar ativos na exibição de Ativos](/help/assets/search-assets-view.md).
+* **Lixeira**: lista os ativos excluídos da pasta raiz **[!UICONTROL Ativos]**. Você pode selecionar um ativo na pasta Lixeira para restaurá-lo ao seu local original ou excluí-lo permanentemente. Você pode especificar uma palavra-chave ou aplicar filtros, como status do ativo, tipo de arquivo, tipo MIME, tamanho da imagem, criação de ativos, modificação e datas de expiração, bem como filtrar por ativos descartados pelo usuário atual. Também é possível aplicar filtros personalizados para pesquisar ativos apropriados na pasta Lixeira. Para obter mais informações sobre o uso de filtros padrão e personalizados, consulte como [pesquisar ativos na exibição Ativos](/help/assets/search-assets-view.md).
 * **Configurações**: é possível configurar várias opções de exibição de Ativos usando **Configurações**, como Formulários de metadados, Relatórios e Gerenciamento de taxonomia.
 
 <!-- TBD: Not sure if we want to publish these right now. CC Libs are beta as per Greg.
