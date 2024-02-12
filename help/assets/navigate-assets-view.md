@@ -3,10 +3,10 @@ title: "Interface do [!DNL Assets view] "
 description: Entenda a interface e a navegação no [!DNL Assets view].
 role: User
 exl-id: 534a8084-88f7-410e-b872-719e47e62b10
-source-git-commit: 2f701c527b5aac9d604cbfe857df90c3e8bf6054
+source-git-commit: 39166f59eb773a149ba28be2b34d0c1aa6c831b4
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 81%
+source-wordcount: '912'
+ht-degree: 63%
 
 ---
 
@@ -24,15 +24,7 @@ Ao fazer logon no [!DNL Assets view], você verá a seguinte interface.
 
 ![[!DNL Assets view]Interface](assets/assets-view-interface.png)
 
-    *A: barra lateral esquerda para navegar pelo repositório e fornecer acesso a algumas outras opções*
-    *B: exibir ou recolher a barra lateral esquerda para aumentar a área de visualização de ativos*
-    *C: filtrar resultados de pesquisa*
-    *D: selecionar todo o conteúdo da pasta selecionada*
-    *E: opções para classificar ativos*
-    *F: caixa de pesquisa*
-    *G: fazer upload ou arrastar e soltar arquivos usando o botão `Add Assets`*
-    *H: criar uma nova pasta*
-    *I: alternar entre diferentes visualizações*
+**A**: barra lateral esquerda para navegar pelo repositório e fornecer acesso a algumas outras opções **B**: exibir ou recolher a barra lateral esquerda para aumentar a área de visualização de ativos **C**: filtrar resultados de pesquisa **D**: seleciona todo o conteúdo da pasta selecionada **E**: opções para classificar ativos **F**: Caixa de pesquisa **G**: carregue ou arraste e solte arquivos usando `Add Assets` botão **H**: criar uma nova pasta **I**: alternar entre exibições diferentes
 
 <!-- TBD: Need an embedded video here with narration. It has to be hosted on MPC to be embeddable. -->
 
@@ -82,23 +74,7 @@ Para visualizar um ativo, selecione-o e clique em [!UICONTROL Detalhes] ![ícone
 
 ![Visualizar um ativo](assets/preview-asset-2.png)
 
-*A: retornar à pasta atual ou ao resultado da pesquisa atual no repositório*
-*B: nome e formato do arquivo que você está visualizando*
-*C: atribuir tarefas*
-*D: baixar ativo*
-*E: visualizar ativo e ver informações de metadados*
-*D: metadados avançados*
-*E: palavras-chave e tags inteligentes*
-*F: comentar e anotar*
-*G: exibir tarefas relacionadas ao ativo selecionado*
-*H: exibir e gerenciar versões*
-*I: exibir representações da imagem*
-*J: editar imagem*
-*K: metadados básicos*
-*L: metadados avançados*
-*M: palavras-chave e tags inteligentes*
-*N: visualizar mais de perto. Zoom, tela cheia e outras opções*
-*O: prosseguir para o ativo anterior ou seguinte na pasta atual sem voltar para a pasta*
+**A**: retornar à pasta atual ou ao resultado da pesquisa atual no repositório **B**: nome e formato do arquivo que você está visualizando **C**: Atribuir tarefas **D**: Metadados avançados **E**: palavras-chave e tags inteligentes **F**: comentar e anotar **G**: exibir tarefas relacionadas ao ativo selecionado **H**: exibir e gerenciar versões **I**: exibir representações da imagem **J**: Editar imagem **K**: Metadados básicos **L**: Metadados avançados **M**: palavras-chave e tags inteligentes **N**: Visualize mais de perto. Zoom, tela cheia e outras opções **O**: Prosseguir para o ativo anterior ou seguinte na pasta atual sem voltar para a pasta
 
 Você também pode visualizar vídeos.
 
