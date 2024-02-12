@@ -3,10 +3,10 @@ title: Notas de versão do Cloud Manager 2024.1.0 no Adobe Experience Manager as
 description: Estas são as notas de versão do Cloud Manager 2024.1.0 no AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 06f534e6541bd04e005f3acf1edbb3e372c1cd0d
+source-git-commit: b81c2bd5c339bce97fe5774572bf1532fc8e04df
 workflow-type: tm+mt
-source-wordcount: '673'
-ht-degree: 20%
+source-wordcount: '687'
+ht-degree: 21%
 
 ---
 
@@ -42,7 +42,7 @@ Se você estiver interessado em testar esse novo recurso e compartilhar seu feed
 
 ### Traga seu próprio GitHub {#byo-github}
 
-Se você usa o GitHub para gerenciar repositórios, [agora é possível validar o código diretamente nos seus repositórios do GitHub por meio do Cloud Manager.](/help/implementing/cloud-manager/managing-code/byo-github.md) Essa integração elimina a necessidade de sincronizar consistentemente o código com o repositório da Adobe e permite verificar solicitações “pull” antes de mesclá-las às ramificações principais.
+Se você usa o GitHub para gerenciar repositórios, [agora é possível validar o código diretamente nos seus repositórios do GitHub por meio do Cloud Manager.](/help/implementing/cloud-manager/managing-code/byo-github.md) Essa integração elimina a necessidade de sincronizar consistentemente o código com o repositório Adobe e permite verificar solicitações de pull antes de mesclá-las às ramificações principais. Esse recurso é exclusivo do GitHub público. O suporte para GitHub auto-hospedado não está disponível.
 
 Se você estiver interessado em testar esse novo recurso e compartilhar seus comentários, envie um email para `Grp-CloudManager_BYOG@adobe.com` do endereço de email associado à Adobe ID.
 
@@ -70,4 +70,4 @@ Interessado em testar o novo painel? Para começar, envie um email para `aem-lig
 ## Correções de erros {#bug-fixes}
 
 * Correção de um erro em que os pipelines de configuração falhavam na etapa de compilação com uma mensagem de erro não clara se o local dos arquivos de configuração não estivesse definido corretamente. A mensagem de erro agora é clara e indica que o usuário deve verificar se o local dos arquivos de configuração está correto.
-* Quando uma etapa de criação termina com o status `FAILED` devido a uma `BUILD_MAVEN_TRANSFER_ARTIFACT_ERROR`, agora ele é descrito corretamente como um erro devido a conflitos de mesclagem com a ramificação de destino.
+* Quando uma etapa de criação termina com o status `FAILED` devido a um `BUILD_MAVEN_TRANSFER_ARTIFACT_ERROR`, ela agora será descrita corretamente como um erro devido a conflitos de mesclagem com a ramificação de destino.
