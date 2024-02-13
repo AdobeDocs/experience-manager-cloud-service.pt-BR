@@ -5,9 +5,9 @@ keywords: Adicionar uma função personalizada, usar uma função personalizada,
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
-source-git-commit: 94a290964a92f8c6ed353d9c77f3dd3b8a5598a4
+source-git-commit: 28020b05e4aaaa3f066943e0504f05e307c7020b
 workflow-type: tm+mt
-source-wordcount: '778'
+source-wordcount: '763'
 ht-degree: 0%
 
 ---
@@ -64,11 +64,11 @@ Você pode criar uma função personalizada com ou sem comentários jsdoc.
             // code to be executed
         }
 ```
+<!--
 
-* **Função de seta com comentário jsdoc obrigatório**
+* **Arrow function with mandatory jsdoc comment**
 
-Alguns exemplos para criar funções de Seta são:
-
+Some of the examples to create Arrow functions are:
 ```javascript
     /**
     * test function
@@ -82,7 +82,6 @@ Alguns exemplos para criar funções de Seta são:
     };
 ```
 
-<!-- 
     * @param {string=} b another parameter description
       /** */
     testFunction1=(a) => (return a)
