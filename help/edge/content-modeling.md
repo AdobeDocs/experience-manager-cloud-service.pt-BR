@@ -1,10 +1,10 @@
 ---
 title: Modelagem de conteúdo para criação no AEM com projetos Edge Delivery Services
 description: Saiba como a modelagem de conteúdo funciona para a criação de AEM com projetos Edge Delivery Services e como modelar seu próprio conteúdo.
-source-git-commit: 8f3c7524ae8ee642a9aee5989e03e6584a664eba
+source-git-commit: e9c882926baee001170bad2265a1085e03cdbedf
 workflow-type: tm+mt
-source-wordcount: '1940'
-ht-degree: 1%
+source-wordcount: '2097'
+ht-degree: 0%
 
 ---
 
@@ -109,16 +109,19 @@ Para cada bloco, o desenvolvedor:
 
 * Deve usar o `core/franklin/components/block/v1/block` tipo de recurso, a implementação genérica da lógica de bloco no AEM.
 * É necessário definir o nome do bloco, que será renderizado no cabeçalho da tabela do bloco.
+   * O nome do bloco é usado para buscar o estilo e o script corretos para decorar o bloco.
 * Pode definir um [ID do modelo.](/help/implementing/universal-editor/field-types.md#model-structure)
+   * A ID do modelo é uma referência ao modelo do componente, que define os campos disponíveis para o autor no painel de propriedades.
 * Pode definir um [ID do filtro.](/help/implementing/universal-editor/customizing.md#filtering-components)
+   * A ID do filtro é uma referência ao filtro do componente, que permite alterar o comportamento de criação, por exemplo, limitando quais filhos podem ser adicionados ao bloco ou seção, ou quais recursos de RTE estão habilitados.
 
-Todas essas informações são armazenadas no AEM quando um bloco é adicionado a uma página.
+Todas essas informações são armazenadas no AEM quando um bloco é adicionado a uma página. Se o tipo de recurso ou o nome do bloco estiver ausente, o bloco não será renderizado na página.
 
 >[!WARNING]
 >
->Embora possível, não é necessário implementar componentes personalizados de AEM. Os componentes para Edge Delivery Services fornecidos pelo AEM são suficientes e oferecem certos painéis de proteção para facilitar o desenvolvimento.
+>Embora possível, não é necessário ou recomendado implementar componentes personalizados do AEM. Os componentes para Edge Delivery Services fornecidos pelo AEM são suficientes e oferecem certos painéis de proteção para facilitar o desenvolvimento.
 >
->Por esse motivo, o Adobe não recomenda usar tipos de recursos AEM personalizados.
+>Os componentes fornecidos pelo AEM renderizam uma marcação que pode ser consumida pelo [helix-html2md](https://github.com/adobe/helix-html2md) ao publicar no Edge Delivery Services e por [aem.js](https://github.com/adobe/aem-boilerplate/blob/main/scripts/aem.js) ao carregar uma página no Editor universal. A marcação é o contrato estável entre o AEM e as outras partes do sistema e não permite personalizações. Por esse motivo, os projetos não devem alterar os componentes e não devem usar componentes personalizados.
 
 ### Estrutura de blocos {#block-structure}
 
@@ -130,7 +133,9 @@ Na forma mais simples, um bloco renderiza cada propriedade em uma única linha/c
 
 No exemplo a seguir, a imagem é definida primeiro no modelo e o texto em segundo lugar. Assim, eles são renderizados com a imagem em primeiro lugar e o texto em segundo lugar.
 
-##### Dados {#data-simple}
+>[!BEGINTABS]
+
+>[!TAB Dados]
 
 ```json
 {
@@ -142,7 +147,7 @@ No exemplo a seguir, a imagem é definida primeiro no modelo e o texto em segund
 }
 ```
 
-##### Marcação {#markup-simple}
+>[!TAB Marcação]
 
 ```html
 <div class="hero">
@@ -161,6 +166,20 @@ No exemplo a seguir, a imagem é definida primeiro no modelo e o texto em segund
 </div>
 ```
 
+>[!TAB Tabela]
+
+```text
++---------------------------------------------+
+| Hero                                        |
++=============================================+
+| ![Helix - a shape like a corkscrew][image0] |
++---------------------------------------------+
+| # Welcome to AEM                            |
++---------------------------------------------+
+```
+
+>[!ENDTABS]
+
 Observe que alguns tipos de valores permitem inferir a semântica na marcação e as propriedades são combinadas em em células únicas. Esse comportamento é descrito na seção [Digite Inferência.](#type-inference)
 
 #### Bloco de valor-chave {#key-value}
@@ -171,7 +190,9 @@ Em outros casos, no entanto, o bloco é lido como uma configuração de par de v
 
 Um exemplo disso é o [metadados da seção.](/help/edge/developer/markup-sections-blocks.md#sections) Nesse caso de uso, o bloco pode ser configurado para renderizar como uma tabela de pares de valores chave. Consulte a seção [Seções e metadados de seção](#sections-metadata) para obter mais informações.
 
-##### Dados {#data-key-value}
+>[!BEGINTABS]
+
+>[!TAB Dados]
 
 ```json
 {
@@ -184,7 +205,7 @@ Um exemplo disso é o [metadados da seção.](/help/edge/developer/markup-sectio
 }
 ```
 
-##### Marcação {#markup-key-value}
+>[!TAB Marcação]
 
 ```html
 <div class="featured-articles">
@@ -203,13 +224,31 @@ Um exemplo disso é o [metadados da seção.](/help/edge/developer/markup-sectio
 </div>
 ```
 
+>[!TAB Tabela]
+
+```text
++-----------------------------------------------------------------------+
+| Featured Articles                                                     |
++=======================================================================+
+| source   | [/content/site/articles.json](/content/site/articles.json) |
++-----------------------------------------------------------------------+
+| keywords | Developer,Courses                                          |
++-----------------------------------------------------------------------+
+| limit    | 4                                                          |
++-----------------------------------------------------------------------+
+```
+
+>[!ENDTABS]
+
 #### Blocos de contêiner {#container}
 
 Ambas as estruturas anteriores têm uma única dimensão: a lista de propriedades. Os blocos de contêiner permitem adicionar filhos (geralmente do mesmo tipo ou modelo) e, portanto, são bidimensionais. Esses blocos ainda suportam suas próprias propriedades renderizadas como linhas com uma única coluna primeiro. Mas também permitem adicionar filhos, para os quais cada item é renderizado como linha e cada propriedade como coluna dentro dessa linha.
 
 No exemplo a seguir, um bloco aceita uma lista de ícones vinculados como filhos, onde cada ícone vinculado tem uma imagem e um link. Observe a [ID do filtro](/help/implementing/universal-editor/customizing.md#filtering-components) definido nos dados do bloco para fazer referência à configuração de filtro.
 
-##### Dados {#data-container}
+>[!BEGINTABS]
+
+>[!TAB Dados]
 
 ```json
 {
@@ -232,7 +271,7 @@ No exemplo a seguir, um bloco aceita uma lista de ícones vinculados como filhos
 }
 ```
 
-##### Marcação {#markup-container}
+>[!TAB Marcação]
 
 ```html
 <div class="our-partners">
@@ -263,6 +302,22 @@ No exemplo a seguir, um bloco aceita uma lista de ícones vinculados como filhos
   </div>
 </div>
 ```
+
+>[!TAB Tabela]
+
+```text
++------------------------------------------------------------ +
+| Our Partners                                                |
++=============================================================+
+| Our community of partners is ...                            |
++-------------------------------------------------------------+
+| ![Icon of Foo][image0] | [https://foo.com](https://foo.com) |
++-------------------------------------------------------------+
+| ![Icon of Bar][image1] | [https://bar.com](https://bar.com) |
++-------------------------------------------------------------+
+```
+
+>[!ENDTABS]
 
 ### Criação de modelos de conteúdo semântico para blocos {#creating-content-models}
 
@@ -300,7 +355,9 @@ O recolhimento de campo é o mecanismo que combina vários valores de campo em u
 
 ##### Imagens {#image-collapse}
 
-###### Dados {#data-image}
+>[!BEGINTABS]
+
+>[!TAB Dados]
 
 ```json
 {
@@ -309,7 +366,7 @@ O recolhimento de campo é o mecanismo que combina vários valores de campo em u
 }
 ```
 
-###### Marcação {#markup-image}
+>[!TAB Marcação]
 
 ```html
 <picture>
@@ -317,9 +374,19 @@ O recolhimento de campo é o mecanismo que combina vários valores de campo em u
 </picture>
 ```
 
+>[!TAB Tabela]
+
+```text
+![A red car on a road][image0]
+```
+
+>[!ENDTABS]
+
 ##### Links e botões {#links-buttons-collapse}
 
-###### Dados {#data-links-buttons}
+>[!BEGINTABS]
+
+>[!TAB Dados]
 
 ```json
 {
@@ -330,7 +397,7 @@ O recolhimento de campo é o mecanismo que combina vários valores de campo em u
 }
 ```
 
-###### Marcação {#markup-links-buttons}
+>[!TAB Marcação]
 
 Não `linkType`ou `linkType=default`
 
@@ -354,9 +421,21 @@ Não `linkType`ou `linkType=default`
 </em>
 ```
 
+>[!TAB Tabela]
+
+```text
+[adobe.com](https://www.adobe.com "Navigate to adobe.com")
+**[adobe.com](https://www.adobe.com "Navigate to adobe.com")**
+_[adobe.com](https://www.adobe.com "Navigate to adobe.com")_
+```
+
+>[!ENDTABS]
+
 ##### Cabeçalhos {#headings-collapse}
 
-###### Dados {#data-headings}
+>[!BEGINTABS]
+
+>[!TAB Dados]
 
 ```json
 {
@@ -365,19 +444,31 @@ Não `linkType`ou `linkType=default`
 }
 ```
 
-###### Marcação {#markup-headings}
+>[!TAB Marcação]
 
 ```html
 <h2>Getting started</h2>
 ```
 
+>[!TAB Tabela]
+
+```text
+## Getting started
+```
+
+>[!ENDTABS]
+
 #### Agrupamento de elementos {#element-grouping}
 
 Enquanto [recolher campo](#field-collapse) é sobre combinar várias propriedades em um único elemento semântico, o agrupamento de elementos é sobre concatenar vários elementos semânticos em uma única célula. Isso é particularmente útil para casos de uso em que o autor deve ser restrito no tipo e no número de elementos que pode criar.
 
-Por exemplo, o autor deve criar apenas um subtítulo, título e uma única descrição de parágrafo combinada com no máximo dois botões de chamada para ação. O agrupamento desses elementos produz uma marcação semântica que pode ser estilizada sem mais ações.
+Por exemplo, um componente de teaser pode permitir que o autor crie apenas um subtítulo, título e uma única descrição de parágrafo combinada com no máximo dois botões de chamada para ação. O agrupamento desses elementos produz uma marcação semântica que pode ser estilizada sem mais ações.
 
-##### Dados {#data-grouping}
+O agrupamento de elementos usa uma convenção de nomenclatura, em que o nome do grupo é separado de cada propriedade no grupo por um sublinhado. O recolhimento de campo das propriedades em um grupo funciona conforme descrito anteriormente.
+
+>[!BEGINTABS]
+
+>[!TAB Dados]
 
 ```json
 {
@@ -397,7 +488,7 @@ Por exemplo, o autor deve criar apenas um subtítulo, título e uma única descr
 }
 ```
 
-##### Marcação {#markup-grouping}
+>[!TAB Marcação]
 
 ```html
 <div class="teaser">
@@ -419,6 +510,24 @@ Por exemplo, o autor deve criar apenas um subtítulo, título e uma única descr
   </div>
 </div>
 ```
+
+>[!TAB Tabela]
+
+```text
++-------------------------------------------------+
+| Teaser                                          |
++=================================================+
+| ![A group of people sitting on a stage][image0] |
++-------------------------------------------------+
+| Adobe Experience Cloud                          |
+| ## Welcome to AEM                               |
+| Join us in this ask me everything session ...   |
+| [More Details](https://link.to/more-details)    |
+| [RSVP](https://link.to/sign-up)                 |
++-------------------------------------------------+
+```
+
+>[!ENDTABS]
 
 ## Seções e metadados de seção {#sections-metadata}
 
@@ -500,18 +609,17 @@ Também é possível definir metadados de página adicionais de duas maneiras.
 
 Para criar essa tabela, crie uma página e use o modelo de Metadados no console Sites.
 
->[!NOTE]
->
->Ao editar a planilha de metadados, alterne para **Visualizar** já que a criação ocorre na própria página, não no editor.
-
-Nas propriedades de página da planilha, defina os campos de metadados necessários junto com o URL. Em seguida, adicione metadados por caminho de página ou padrão de caminho de página, em que o campo de URL está relacionado aos caminhos públicos mapeados, e não ao caminho de conteúdo no AEM.
+Nas propriedades de página da planilha, defina os campos de metadados necessários junto com o URL. Em seguida, adicione metadados por caminho ou padrão de caminho de página.
 
 Verifique se a planilha foi adicionada ao mapeamento de caminho antes de publicá-la.
 
-```text
-mappings:
-  - /content/site/:/
-  - /content/site/metadata:/metadata.json
+```json
+{
+  "mappings": [
+    "/content/site/:/",
+    "/content/site/metadata:/metadata.json"
+  ]
+}
 ```
 
 ### Propriedades da página {#page-properties}
