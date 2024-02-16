@@ -3,7 +3,7 @@ title: Notas de versão do Cloud Manager 2024.2.0 no Adobe Experience Manager as
 description: Estas são as notas de versão do Cloud Manager 2024.2.0 no AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 2c48bcae8aa783ae00fa8957bd93e71703bfc696
+source-git-commit: 4a41de9da557be562bb2ff5773c7954f76a9acc7
 workflow-type: tm+mt
 source-wordcount: '725'
 ht-degree: 20%
@@ -21,7 +21,7 @@ Esta página documenta as notas de versão do Cloud Manager 2024.2.0 no AEM as a
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento do Cloud Manager versão 2024.2.0 no AEM as a Cloud Service é 16 de fevereiro de 2024. A próxima versão está planejada para 16 de março de 2024.
+A data de lançamento do Cloud Manager versão 2024.2.0 no AEM as a Cloud Service é 15 de fevereiro de 2024. A próxima versão está planejada para 16 de março de 2024.
 
 ## Novidades {#what-is-new}
 
