@@ -6,9 +6,9 @@ topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 8546e6286bea5f603b1e011a76c206b178337ab7
+source-git-commit: 3e1e1eba822bf3156ef563b88269cdef2298e951
 workflow-type: tm+mt
-source-wordcount: '1238'
+source-wordcount: '1241'
 ht-degree: 0%
 
 ---
@@ -21,28 +21,24 @@ ht-degree: 0%
 
 Por exemplo, usando o Workfront Fusion, você pode criar um cenário para coletar dados com o Formulário adaptável, processar os dados e enviá-los a um armazenamento de dados para arquivamento. Depois que um cenário é configurado, o Workfront Fusion executa automaticamente as tarefas sempre que um usuário preenche um formulário, atualizando o armazenamento de dados perfeitamente.
 
-O AEM as a Cloud Service oferece várias ações de envio prontas para uso para manipular envios de formulários. Você pode saber mais sobre essas opções na [Ação de envio do formulário adaptável](/help/forms/configure-submit-actions-core-components.md)  artigo.
+O AEM Forms as a Cloud Service fornece um conector OOTB para conectar e enviar um Formulário adaptável ao Adobe Workfront Fusion. O envio de um formulário para o Adobe Workfront Fusion pode oferecer várias vantagens:
+* Ela permitia a transferência contínua de dados de envios de formulários para fluxos de trabalho do Workfront Fusion.
+* Ele ajuda a automatizar várias tarefas acionadas por envios de formulários. Isso pode incluir iniciar projetos, atribuir tarefas a membros específicos da equipe, enviar notificações e atualizar status do projeto — tudo sem intervenção manual.
+* Todos os envios de formulários capturados no Workfront Fusion fornecem uma única fonte da verdade sobre as informações relacionadas ao projeto
 
 
-## Vantagens de usar o Adobe Workfront Fusion{#advatages-of-workfront-fusion}
+<!--  AEM as a Cloud Service offers various out of the box submit actions for handling form submissions. You can learn more about these options in the [Adaptive Form Submit Action](/help/forms/configure-submit-actions-core-components.md)  article.-->
 
-Algumas das vantagens de usar o Adobe Workfront Fusion com o AEM Forms:
-
-* Envio de dados capturados com o Adaptive Forms para um cenário do Workfront Fusion
-* Automatização de tarefas menos propensas a erros.
-* Personalização de requisitos específicos para uma organização que não estão diretamente incluídos no Workfront.
-* Lógica simples de manipulação e decisões diretas, por exemplo, instruções if/then.
+>[!VIDEO](https://video.tv.adobe.com/v/3427145/adaptive-forms-adobe-workfront-af-workfront-workfront-aem-forms/?quality=12&learn=on)
 
 ## Pré-requisitos para integrar o AEM Forms com o Adobe Workfront Fusion {#prerequisites}
 
-Os pré-requisitos necessários para conectar o Workfront Fusion ao AEM Forms são:
+Para estabelecer uma conexão entre o Workfront Fusion e o AEM Forms, é necessário o seguinte:
 
-* Um válido [Licença do Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
+* Um válido [Licença do Workfront e do Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
 * Um usuário do AEM com direito de acesso [Console de Desenvolvimento](https://my.cloudmanager.adobe.com/) para [recuperar as credenciais de serviço](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
 
 ## Integrar o AEM Forms com o Adobe Workfront Fusion
-
->[!VIDEO](https://video.tv.adobe.com/v/3427145/adaptive-forms-adobe-workfront-af-workfront-workfront-aem-forms/?quality=12&learn=on)
 
 Para conectar [Workfront fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) para criar um formulário, execute as seguintes etapas:
 
