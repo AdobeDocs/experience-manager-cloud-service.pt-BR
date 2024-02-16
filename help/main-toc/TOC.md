@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 6966486b9bf919fecb8d625ddb92ce1bb1a98291
+source-git-commit: d76273ddcbcf5013713e515e39dde8f42bbbf425
 workflow-type: tm+mt
-source-wordcount: '4640'
+source-wordcount: '4648'
 ht-degree: 88%
 
 ---
@@ -89,6 +89,8 @@ ht-degree: 88%
          + [Notas da versão de manutenção 2023.1.0](/help/release-notes/maintenance/2023/2023-1-0.md)
    + Notas de versão do Cloud Manager {#cloud-manager}
       + [Notas de versão atuais](/help/implementing/cloud-manager/release-notes/current.md)
+      + 2024 {#2024}
+         + [Notas da versão 2024.1.0](/help/implementing/cloud-manager/release-notes/2024/2024-1-0.md)
       + 2023 {#2023}
          + [Notas da versão 2023.12.0](/help/implementing/cloud-manager/release-notes/2023/2023-12-0.md)
          + [Notas da versão 2023.11.0](/help/implementing/cloud-manager/release-notes/2023/2023-11-0.md)
@@ -915,6 +917,7 @@ ht-degree: 88%
          + [Configuração de um pipeline de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
          + [Configurar um pipeline de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
          + [Gerenciar pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
+         + [Variáveis de pipeline](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)
       + [Implantação de código](/help/implementing/cloud-manager/deploy-code.md)
       + Noções básicas dos resultados de teste {#test-results}
          + [Visão geral](/help/implementing/cloud-manager/overview-test-results.md)
