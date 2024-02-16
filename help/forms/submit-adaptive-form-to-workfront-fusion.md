@@ -6,9 +6,9 @@ topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 52e1f57b82aec25ad61024f357016dbb5498ca1b
+source-git-commit: 8546e6286bea5f603b1e011a76c206b178337ab7
 workflow-type: tm+mt
-source-wordcount: '1273'
+source-wordcount: '1238'
 ht-degree: 0%
 
 ---
@@ -41,6 +41,8 @@ Os pré-requisitos necessários para conectar o Workfront Fusion ao AEM Forms s�
 * Um usuário do AEM com direito de acesso [Console de Desenvolvimento](https://my.cloudmanager.adobe.com/) para [recuperar as credenciais de serviço](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
 
 ## Integrar o AEM Forms com o Adobe Workfront Fusion
+
+>[!VIDEO](https://video.tv.adobe.com/v/3427145/adaptive-forms-adobe-workfront-af-workfront-workfront-aem-forms/?quality=12&learn=on)
 
 Para conectar [Workfront fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) para criar um formulário, execute as seguintes etapas:
 
@@ -129,16 +131,7 @@ Para adicionar uma conexão:
 1. Selecione a conexão criada **[!UICONTROL Conexão]** na lista suspensa.
 1. Clique em **[!UICONTROL Salvar]**.
 1. Clique em **[!UICONTROL OK]** e salve as alterações do cenário.
-
-#### 1.3 Ativar o cenário do Workfront {#activate-scenario}
-
-Para ativar o cenário:
-
-1. Clique em **[!UICONTROL Cenários]** ![Ícone Compartilhar](/help/forms/assets/Smock_ShareAndroid_18_N.svg) no painel esquerdo.
-1. Clique em **[!UICONTROL Cenário inativo]** guia.
-1. Clique em **LIGADO/DESLIGADO** botão de alternância para o seu cenário do AEM Forms.
-
-Depois de clicar no botão de alternância, o cenário do Workfront começa a aparecer no **[!UICONTROL Cenário ativo]** guia.
+1. Para ativar o cenário, clique no botão de alternância LIGAR/DESLIGAR no editor de cenários.
 
 >[!NOTE]
 >
