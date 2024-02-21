@@ -3,9 +3,9 @@ title: Como configurar uma ação enviar para um formulário adaptável?
 description: Um Formulário adaptável fornece várias Ações de envio. Uma Ação de envio define como um Formulário adaptável é processado após o envio. Você pode usar as Ações de envio integradas ou criar as suas próprias ações.
 feature: Adaptive Forms, Foundation Components
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: 8923bfbb0e46961485ff360c0135ebdde6d8cab3
 workflow-type: tm+mt
-source-wordcount: '3913'
+source-wordcount: '3901'
 ht-degree: 2%
 
 ---
@@ -238,8 +238,6 @@ A estrutura de pastas para salvar os dados é `/folder_name/form_name/year/month
 
 ### Conectar um formulário adaptável à lista Microsoft® SharePoint {#connect-af-sharepoint-list}
 
-<span class="preview"> Esse é um recurso de pré-lançamento acessível por meio de nossa [canal de pré-lançamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
-
 >[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)
 
 Para usar o [!UICONTROL Enviar para a lista do SharePoint] Enviar ação em um formulário adaptável:
@@ -458,7 +456,7 @@ Se o usuário final ignorar essas validações e enviar os formulários, o servi
 
 Suporte a funções personalizadas em expressões de validação
 
-O autor pode configurar a biblioteca JavaScript personalizada por formulário adaptável. Na biblioteca, mantenha somente as funções reutilizáveis, que têm dependência em bibliotecas de terceiros jquery e underscore.js.
+O autor pode configurar a biblioteca JavaScript personalizada por formulário adaptável. Na biblioteca, mantenha somente as funções reutilizáveis, que dependem de bibliotecas de terceiros de jquery e underscore.js.
 
 ## Tratamento de erros na ação enviar {#error-handling-on-submit-action}
 

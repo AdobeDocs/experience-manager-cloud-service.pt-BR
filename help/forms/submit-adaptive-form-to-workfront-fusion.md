@@ -6,9 +6,9 @@ topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 94519d3c7d2f927f046628d9ce057209556e847d
+source-git-commit: 8923bfbb0e46961485ff360c0135ebdde6d8cab3
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1255'
 ht-degree: 0%
 
 ---
@@ -40,11 +40,17 @@ Para estabelecer uma conexão entre o Workfront Fusion e o AEM Forms, é necess�
 
 ## Integrar o AEM Forms com o Adobe Workfront Fusion
 
-Para conectar [Workfront fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) para criar um formulário, execute as seguintes etapas:
-
 ### 1. Criar um cenário do Workfront {#workflow-scenario}
 
-Para criar um cenário do Workfront:
+Para criar um cenário do Workfront, execute as seguintes etapas:
+
+1. [Criar um cenário](#create-scenario)
+1. [Adicionar um gancho da Web a um cenário](#add-webhook)
+1. [Adicionar uma conexão a um gancho da Web](#add-connection)
+
+#### Criar um cenário {#create-scenario}
+
+Para criar um cenário:
 1. Entre no seu [Conta do Workfront Fusion](https://app-qa.workfrontfusion.com/).
 1. Clique em **[!UICONTROL Cenários]** ![Ícone Compartilhar](/help/forms/assets/Smock_ShareAndroid_18_N.svg) no painel esquerdo.
 1. Clique em **[!UICONTROL Criar um novo cenário]** no canto superior direito da página. Uma página para criar um novo cenário é exibida na tela.
@@ -61,7 +67,7 @@ Para criar um cenário do Workfront:
 
 1. Selecione o **[!UICONTROL Aguardar eventos de formulário]** e uma janela para adicionar um webhook será exibida.
 
-#### 1.1 Adicionar um webhook {#add-webhook}
+#### Adicionar um webhook {#add-webhook}
 
 ![Adicionar um webhook](/help/forms/assets/workfront-add-webhook.png)
 
@@ -76,7 +82,7 @@ Para adicionar um webhook:
 
 1. Clique em **[!UICONTROL Adicionar]** para adicionar uma nova conexão. A variável **[!UICONTROL Criar uma conexão]** é exibida.
 
-#### 1.2 Adicionar uma conexão a um webhook {#add-connection}
+#### Adicionar uma conexão a um webhook {#add-connection}
 
 ![Adicionar uma conexão](/help/forms/assets/workfront-add-connection.png)
 

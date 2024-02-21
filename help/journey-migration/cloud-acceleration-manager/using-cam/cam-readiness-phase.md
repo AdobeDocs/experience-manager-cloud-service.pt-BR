@@ -2,10 +2,10 @@
 title: Fase de preparação no Cloud Acceleration Manager
 description: Esta página fornece uma visão geral sobre a fase de Preparação no Cloud Acceleration Manager.
 exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: f99395870d076d47ef53b01c9fc6579a9f8788a2
 workflow-type: tm+mt
-source-wordcount: '944'
-ht-degree: 4%
+source-wordcount: '984'
+ht-degree: 6%
 
 ---
 
@@ -60,10 +60,13 @@ Siga as etapas abaixo para acessar a Fase de preparação:
 
    ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
 
+   >[!NOTE]
+   >Se vários relatórios forem carregados, o relatório exibido em detalhes será sempre o que tiver a data de criação mais recente (não a data de upload).
+
 1. Revise e explore o painel Análise de práticas recomendadas no CAM. Consulte [Revisar o relatório de análise de práticas recomendadas](#analysis-report) para obter mais detalhes.
 
    >[!NOTE]
-   >Fazer upload de um novo relatório redefine todas as avaliações.
+   >Fazer upload de um novo relatório redefine todas as avaliações se ele for mais recente que o relatório carregado anteriormente.
 
 ### Usando a visualização de impressão {#print-preview-cam}
 
@@ -86,12 +89,12 @@ Siga as etapas abaixo:
 
 ### Usando Exibir Linha de Tendência {#trendline-view-cam}
 
-Ao fazer upload de mais de um relatório do Analisador de práticas recomendadas (BPA) em um projeto, você pode selecionar o **Exibir linha de tendência** opção para exibir e comparar resultados dos relatórios históricos do BPA.
+Ao fazer upload de mais de um relatório distinto do Analisador de práticas recomendadas (BPA) em um projeto, você pode selecionar o **Exibir linha de tendência** opção para exibir e comparar resultados dos relatórios históricos do BPA.
 
 Siga as etapas abaixo para exibir relatórios da opção de linha de tendência:
 
 >[!NOTE]
->Ao fazer upload de mais de um relatório BPA em um projeto, você verá a **..** ícone.
+>Ao fazer upload de mais de um relatório BPA distinto em um projeto, você verá a **..** ícone. Os relatórios são considerados iguais (não distintos) se o host e o tempo de criação forem iguais.
 
 1. Navegue até o projeto e clique em **Revisão** do **Análise de práticas recomendadas** no **Disponibilidade** fase.
 
@@ -100,9 +103,6 @@ Siga as etapas abaixo para exibir relatórios da opção de linha de tendência:
 1. Clique em **..**.
 
    ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
-
-   >[!IMPORTANT]
-   >O relatório exibido é sempre o relatório com a data mais recente.
 
 1. Na lista suspensa, clique em **Exibir linha de tendência**, conforme mostrado na figura abaixo.
 
@@ -125,7 +125,7 @@ Siga as etapas abaixo para exibir relatórios da opção de linha de tendência:
    >![imagem](/help/journey-migration/cloud-acceleration-manager/assets/reports-bpa1.png)
 
 
-### Revisão do relatório do Analisador de Práticas Recomendadas {#analysis-report}
+### Revisão do relatório do Analisador de práticas recomendadas {#analysis-report}
 
 Explore os seguintes cartões disponíveis na página Relatório de análise de práticas recomendadas:
 

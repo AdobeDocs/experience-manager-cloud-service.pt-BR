@@ -5,7 +5,7 @@ landing-page-description: Saiba como usar formulários no AEM as a Cloud Service
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: f2752673dcaa0762bb55719cee23765aa8ecde96
 workflow-type: tm+mt
 source-wordcount: '972'
 ht-degree: 92%
@@ -26,7 +26,6 @@ O Adobe [!DNL Experience Manager Forms as a Cloud Service] oferece uma solução
 O serviço é sempre atual, está sempre disponível e sempre aprendendo. As organizações podem usar o [!DNL AEM Forms] as a Cloud Service e obter todos esses recursos na nuvem sem a necessidade de nenhuma infraestrutura local. O serviço também livra as organizações de ciclos complexos de atualização, pois está sempre atualizado com os recursos mais recentes.
 
 O Adobe [!DNL Experience Manager Forms as a Cloud Service] é uma solução centrada no cliente que oferece suporte a cada etapa da jornada do cliente:
-
 
 ## Digitalize e simplifique a experiência de inscrição e integração
 
