@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 0604838311bb9ab195789fad755b0910e09519fd
+source-git-commit: 34ba430ae9b40fc3bc675af20bbee2534c44a0c3
 workflow-type: tm+mt
-source-wordcount: '4711'
-ht-degree: 87%
+source-wordcount: '4692'
+ht-degree: 88%
 
 ---
 
@@ -810,13 +810,13 @@ ht-degree: 87%
          + [Publicar um formulário na página de sites](/help/edge/docs/forms/publish-eds-forms.md)
          + [Adicionar validações a campos de formulário](/help/edge/docs/forms/validate-forms.md)
          + [Alterar temas e estilo de formulário](/help/edge/docs/forms/style-theme-forms.md)
-      + Recursos avançados {#advanced-features-eds-forms}
-         + [Criar e adicionar fragmentos de formulário a um formulário](/help/edge/docs/forms/form-fragments.md)
-         + [Traduzir um formulário](/help/edge/docs/forms/translate-forms.md)
-         + [Adicionar seções repetíveis a um formulário](/help/edge/docs/forms/repeatable-forms.md)
-         + [Aplicar reCAPTCHA a um formulário](/help/edge/docs/forms/recaptacha-forms.md)
-         + [Criar componentes personalizados](/help/edge/docs/forms/custom-components-forms.md)
-         + [Adicionar página de agradecimento](/help/edge/docs/forms/thank-you-page-form.md)
+      + Capacidades {#advanced-features-eds-forms}
+         + [Fragmentos de formulário](/help/edge/docs/forms/form-fragments.md)
+         + [Seções repetíveis](/help/edge/docs/forms/repeatable-forms.md)
+         + [Tradução](/help/edge/docs/forms/translate-forms.md)
+         + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
+         + [Página de agradecimento](/help/edge/docs/forms/thank-you-page-form.md)
+         + [Componentes personalizados](/help/edge/docs/forms/custom-components-forms.md)
    + Recursos para entrega de borda {#resources}
       + Sidekick {#sidekick}
          + [Utilização do Sidekick](/help/edge/docs/sidekick.md)

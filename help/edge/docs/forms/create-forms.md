@@ -4,9 +4,9 @@ description: Formas perfeitas de artesanato, rápido!  criação baseada em docu
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: b94bd6cd70af541444fda1d03f502b4588fd879b
+source-git-commit: 34ba430ae9b40fc3bc675af20bbee2534c44a0c3
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '932'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,8 @@ Esses formulários enviam dados diretamente para um arquivo do Microsoft Excel o
 
 ![Introdução ao Edge Delivery Forms](/help/edge/assets/getting-started-with-eds-forms.png)
 
-## Adicionar o bloco de formulário ao projeto do Edge Delivery Service (EDS) {#add-forms-block-to-an-eds-project}
+
+## Etapa 1: adicionar o bloco de formulário ao projeto do Serviço de entrega de borda (EDS) {#add-forms-block-to-an-eds-project}
 
 O AEM Forms Edge Delivery inclui um bloco de formulário para ajudá-lo a criar formulários facilmente para capturar e armazenar dados capturados. Para incluir o bloco de formulário ao projeto do Serviço de entrega de borda:
 
@@ -81,7 +82,7 @@ O AEM Forms Edge Delivery inclui um bloco de formulário para ajudá-lo a criar 
    > * Se você encontrar um erro &quot;Não foi possível resolver o caminho para o módulo &quot;&#39;../../scripts/lib-franklin.js&#39;&quot;, abra o `[EDS Project]/blocks/forms/form.js` arquivo. Na declaração de importação, substitua a variável `franklin-lib.js` arquivo com o `aem.js` arquivo.
    > * Se encontrar algum erro de impressão, sinta-se à vontade para ignorá-los. Para ignorar as verificações de listagem, abra o `[EDS Project]\package.json` arquivo e atualize o script &quot;lint&quot; de `"lint": "npm run lint:js && npm run lint:css"` para `"lint": "echo 'skipping linting for now'"`. Salve o arquivo e confirme-o no projeto GitHub.
 
-## Criar um formulário usando o Microsoft Excel ou o Google Sheet {#create-a-form-for-an-eds-project}
+## Etapa 2: Criar um formulário usando o Microsoft Excel ou a Planilha do Google
 
 Em vez de processos complexos, você pode criar facilmente um formulário usando uma planilha. Você pode começar adicionando as linhas e os cabeçalhos de coluna a uma planilha, onde cada linha define um campo de formulário e cada cabeçalho de coluna define as propriedades dos campos de formulário correspondentes.
 
@@ -123,7 +124,7 @@ Para criar um formulário:
 
 
 
-## Pré-visualize o formulário usando a página Serviço de entrega de borda (EDS) {#add-a-form-to-your-eds-page}
+## Etapa 3: visualizar o formulário usando a página Serviço de entrega de borda (EDS)
 
 Até agora, você ativou o bloco de formulários do projeto EDS e preparou a estrutura do formulário. Agora, para visualizar o formulário:
 
@@ -153,8 +154,9 @@ Até agora, você ativou o bloco de formulários do projeto EDS e preparou a est
 
    ![erro no envio do formulário](/help/edge/assets/form-error.png)
 
+## Próxima etapa
 
-   O próximo passo é [preparar sua planilha para aceitar dados](/help/edge/docs/forms/submit-forms.md).
+O próximo passo é [preparar sua planilha para aceitar dados](/help/edge/docs/forms/submit-forms.md).
 
 
 
