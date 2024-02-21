@@ -4,9 +4,9 @@ description: Formas perfeitas de artesanato, rápido!  criação baseada em docu
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: f37a99cd5cbfb745cb591e3be2a46a5f52139cb2
+source-git-commit: b94bd6cd70af541444fda1d03f502b4588fd879b
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '924'
 ht-degree: 0%
 
 ---
@@ -36,14 +36,14 @@ Esses formulários enviam dados diretamente para um arquivo do Microsoft Excel o
 
 O AEM Forms Edge Delivery inclui um bloco de formulário para ajudá-lo a criar formulários facilmente para capturar e armazenar dados capturados. Para incluir o bloco de formulário ao projeto do Serviço de entrega de borda:
 
-1. Navegue até a pasta do projeto do Serviço de entrega de borda (EDS) no ambiente de desenvolvimento local.
+1. Navegue até a `blocks` em sua pasta de projeto do Serviço de entrega de borda (EDS) em seu ambiente de desenvolvimento local.
 
 
    ```Shell
-   cd [EDS Project folder]
+   cd [EDS Project folder]/blocks
    ```
 
-1. Crie uma pasta chamada `form` no diretório de projeto EDS. Por exemplo, no diretório do projeto EDS chamado `Portal`, crie uma pasta chamada `form`.
+1. Crie uma pasta chamada `form` no `blocks` diretório. Por exemplo, no diretório do projeto EDS chamado `Portal`, crie uma pasta chamada `form`.
 
    ```Shell
    mkdir form
@@ -54,62 +54,82 @@ O AEM Forms Edge Delivery inclui um bloco de formulário para ajudá-lo a criar 
 
    ```shell
    cp -R <source:path of the form block> <destination: path of the form folder created in the previous step>
-   
-   For example
-   
-   cp -R Documents/afb/blocks/form Documents/portal/blocks/
    ```
 
-1. Faça check-in da pasta &quot;formulário&quot; e dos arquivos subjacentes no seu projeto do Serviço de entrega de borda no GitHub.
+   **Por exemplo,**
+
+
+   ```shell
+   cp -R ../../afb/blocks/form ../../fantastic-computing-machine/blocks 
+   ```
+
+
+
+1. Verifique a pasta &quot;formulário&quot; e os arquivos subjacentes do seu projeto do Serviço de entrega de borda no GitHub.
 
    ```Shell
+   cd ..
    git add .
    git commit -m "Added form block"
    git push origin
    ```
 
-   Agora você está pronto para renderizar um formulário EDS.
+   O bloco Formulário é adicionado ao projeto EDS. Agora você pode criar um formulário e adicioná-lo ao site.
 
    >[!NOTE]
    >
-   > * Se a criação do projeto de solicitação de pull/eds falhar e você encontrar um erro relacionado à importação do `franklin-lib.js` arquivo, atualize a declaração de importação para fazer referência à `aem.js` arquivo em vez de `franklin-lib.js` arquivo.
-   > * Se encontrar algum erro de impressão, sinta-se à vontade para ignorá-los. Para ignorar as verificações de lista, navegue até o arquivo package.json e atualize o script &quot;lint&quot; de `"lint": "npm run lint:js && npm run lint:css"` para `"lint": "echo 'skipping linting for now'"`. Em seguida, confirme as alterações no arquivo package.json.
+   > * Se você encontrar um erro &quot;Não foi possível resolver o caminho para o módulo &quot;&#39;../../scripts/lib-franklin.js&#39;&quot;, abra o `[EDS Project]/blocks/forms/form.js` arquivo. Na declaração de importação, substitua a variável `franklin-lib.js` arquivo com o `aem.js` arquivo.
+   > * Se encontrar algum erro de impressão, sinta-se à vontade para ignorá-los. Para ignorar as verificações de listagem, abra o `[EDS Project]\package.json` arquivo e atualize o script &quot;lint&quot; de `"lint": "npm run lint:js && npm run lint:css"` para `"lint": "echo 'skipping linting for now'"`. Salve o arquivo e confirme-o no projeto GitHub.
 
 ## Criar um formulário usando o Microsoft Excel ou o Google Sheet {#create-a-form-for-an-eds-project}
 
-Permitir que os desenvolvedores de site criem formulários e escolham quais informações coletar dos visitantes do site pode ser útil. Em vez de processos complexos, os autores podem configurar facilmente um formulário usando uma planilha. Eles precisam adicionar os cabeçalhos de coluna corretos e, em seguida, usar um bloco de formulário para exibi-lo no site sem qualquer problema. Para criar um formulário:
+Em vez de processos complexos, você pode criar facilmente um formulário usando uma planilha. Você pode começar adicionando as linhas e os cabeçalhos de coluna a uma planilha, onde cada linha define um campo de formulário e cada cabeçalho de coluna define as propriedades dos campos de formulário correspondentes.
 
-1. Crie uma Pasta de trabalho do Microsoft Excel ou uma Planilha do Google em qualquer lugar no diretório do projeto de Entrega da borda do AEM no Microsoft SharePoint ou no Google Drive.
+Por exemplo, na planilha a seguir, as linhas definem os campos para uma `contact us` o cabeçalho do formulário e da coluna define as propriedades dos campos correspondentes.
 
-1. Verifique se o usuário AEM (por exemplo, `helix@adobe.com`) configurado para seu projeto tem permissões de edição para a planilha.
+![entre em contato conosco](/help/edge/assets/contact-us-form-spreadsheet.png)
 
-1. Abra a pasta de trabalho que você criou e altere o nome da planilha padrão para &quot;shared-default&quot;.
+Para criar um formulário:
 
-   ![renomear planilha padrão para &quot;shared-default&quot;](/help/edge/assets/rename-sheet-to-helix-default.png)
+1. Abra a pasta do projeto AEM Edge Delivery no Microsoft SharePoint ou Google Drive.
 
-1. Copie o conteúdo de [entre em contato conosco](https://docs.google.com/spreadsheets/d/12jvYjo1a3GOV30IqPY6_7YaCQtUmzWpFhoiOHDcjB28/edit?usp=drive_link) para sua própria planilha.
+1. Crie uma Pasta de trabalho do Microsoft Excel ou uma Planilha do Google em qualquer lugar no diretório do projeto de Entrega da borda do AEM. Por exemplo, crie uma planilha chamada `contact-us` no diretório do projeto AEM Edge Delivery no Google Drive.
 
-   ![entre em contato conosco](/help/edge/assets/contact-us-form-spreadsheet.png)
+1. Verifique se a planilha está compartilhada com o usuário AEM (por exemplo, `helix@adobe.com`) [configurado para o seu projeto](https://www.aem.live/docs/setup-customer-sharepoint) e o usuário tem permissões de edição para a planilha.
+
+1. Abra a planilha criada e altere o nome da planilha padrão para &quot;shared-default&quot;.
+
+   ![renomear planilha padrão para &quot;shared-default&quot;](/help/edge/assets/rename-sheet-to-shared-default.png)
+
+1. Para adicionar os campos do formulário, adicione as linhas e os cabeçalhos das colunas à `shared-default` planilha, onde cada linha define um campo de formulário e cada cabeçalho de coluna define o [propriedades](/help/edge/docs/forms/eds-form-field-properties)) dos campos de formulário correspondentes.
+
+   Para iniciar rapidamente, é possível copiar o conteúdo do [entre em contato conosco](https://docs.google.com/spreadsheets/d/12jvYjo1a3GOV30IqPY6_7YaCQtUmzWpFhoiOHDcjB28/edit?usp=drive_link) à sua planilha.
+
+   >[!VIDEO](https://video.tv.adobe.com/v/3427468?quality=12&learn=on)
 
 1. Uso [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) para visualizar e publicar a planilha.
+
+   ![Use o AEM Sidekick para visualizar e publicar a planilha](/help/edge/assets/preview-form.png)
 
    Ao visualizar e publicar, o navegador abre novas guias que exibem o conteúdo da planilha no formato JSON. Anote a URL ativa, pois ela é necessária para renderizar o formulário posteriormente.
 
    O formato do URL é:
 
-   ```shell
+   ```JSON
    https://<branch>--<repository>--<owner>.hlx.live/<form>.json
    
    For example, https://main--portal--wkndforms.hlx.live/contact-us.json
    ```
 
+
+
 ## Pré-visualize o formulário usando a página Serviço de entrega de borda (EDS) {#add-a-form-to-your-eds-page}
 
-Até agora, você ativou o bloco de formulários do projeto EDS e preparou a estrutura do formulário. Agora, para incluir o formulário na sua página de EDS e renderizá-lo:
+Até agora, você ativou o bloco de formulários do projeto EDS e preparou a estrutura do formulário. Agora, para visualizar o formulário:
 
 1. Vá para o diretório do projeto AEM Edge Delivery no Microsoft SharePoint ou Google Drive.
 
-1. Para adicionar o formulário a uma página, abra o arquivo de documento correspondente. Por exemplo, abra o arquivo de índice.
+1. Crie ou abra um arquivo de documento para hospedar o formulário. Por exemplo, abra o arquivo de índice.
 
 1. Navegue até o local desejado no documento onde deseja adicionar o formulário.
 
@@ -117,24 +137,30 @@ Até agora, você ativou o bloco de formulários do projeto EDS e preparou a est
 
    ![](/help/edge/assets/form-block-in-sites-page-example.png)
 
-   Na segunda linha, inclua o URL anotado na seção anterior como um hiperlink.
+   Na segunda linha, inclua o URL anotado na seção anterior como um hiperlink. Você pode usar o URL de visualização (URL .page) ou o URL de publicação (.live). A URL de pré-visualização pode ser usada ao criar ou testar o formulário e publicar a URL para produção.
 
-1. Uso [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) para visualizar e publicar a página. O formulário é renderizado.
+   >[!IMPORTANT]
+   >
+   >
+   > Certifique-se de que o URL não seja mencionado como um texto simples. Ele deve ser adicionado como um hiperlink.
 
-   Por exemplo, este é o formulário baseado na variável [entre em contato conosco](https://docs.google.com/spreadsheets/d/12jvYjo1a3GOV30IqPY6_7YaCQtUmzWpFhoiOHDcjB28/edit?usp=drive_link):
+1. Uso [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) para visualizar a página. A página agora exibe o formulário. Por exemplo, este é o formulário baseado na variável [entre em contato conosco](https://docs.google.com/spreadsheets/d/12jvYjo1a3GOV30IqPY6_7YaCQtUmzWpFhoiOHDcjB28/edit?usp=drive_link):
 
 
-   ![fale conosco (formulário EDS)](/help/edge/assets/eds-form.png)
+   ![Um exemplo de formulário EDS](/help/edge/assets/eds-form.png)
 
-   O bloco de formulário renderiza o formulário, mas ainda não está pronto para aceitar os dados. Ao clicar no botão enviar, ocorre um erro semelhante ao seguinte:
+   Agora, preencha o formulário e clique no botão enviar, você enfrenta um erro, semelhante ao seguinte, porque a planilha ainda não está definida para aceitar os dados.
 
    ![erro no envio do formulário](/help/edge/assets/form-error.png)
 
-   [Preparar sua planilha para aceitar os dados](/help/edge/docs/forms/submit-forms.md). Você pode enviar os dados para a publicação da folha preparando-a para aceitar os dados.
+
+   O próximo passo é [preparar sua planilha para aceitar dados](/help/edge/docs/forms/submit-forms.md).
+
 
 
 ## Veja mais
 
+* [Propriedades do campo de formulário](/help/edge/docs/forms/eds-form-field-properties)
 * [Criar e visualizar um formulário](/help/edge/docs/forms/create-forms.md)
 * [Ativar formulário para enviar dados](/help/edge/docs/forms/submit-forms.md)
 * [Publicar um formulário na página de sites](/help/edge/docs/forms/publish-eds-forms.md)
