@@ -2,9 +2,9 @@
 title: Utilização do provedor de conteúdo do Screens
 description: Esta página descreve como usar o Provedor de conteúdo do Screens para criar conteúdo.
 exl-id: ed7de2c0-13cf-4ce0-8794-aef918cf8e71
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+source-git-commit: f7ed7c63fd141c6a9817e4718edb31425b14a761
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '383'
 ht-degree: 15%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 15%
 
 ## Objetivo {#objective}
 
-A seção a seguir descreve como usar o provedor de conteúdo do Screens após a configuração [Provedor de serviços do Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html).
+A seção a seguir descreve como criar canais no Provedor de conteúdo do Screens, após a configuração [Provedor de serviços do Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en).
 
 ## Utilização do provedor de conteúdo do Screens {#screens-content-provider}
 
@@ -46,7 +46,7 @@ Siga as etapas abaixo para fazer logon no Provedor de conteúdo do Screens:
 
    ![Link realçado no cartão Ambientes que permite acessar o Provedor de conteúdo do Screens.](/help/screens-cloud/assets/configure/screens-cp-2.png)
 
-   Depois de fazer logon no Provedor de conteúdo do Screens, agora você está pronto para criar seu conteúdo na reprodução de conteúdo.
+   Depois de fazer logon no Provedor de conteúdo do Screens, navegue até Screens> Provedor de conteúdo.Agora você está pronto para criar seu conteúdo para reprodução de conteúdo.
 
    Use o Provedor de conteúdo do Screens para criar e gerenciar o seguinte:
 

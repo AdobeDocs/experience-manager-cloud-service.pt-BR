@@ -2,10 +2,10 @@
 title: Criação e gerenciamento de canais no Screens as a Cloud Service
 description: Esta página descreve como criar e gerenciar canais no Screens as a Cloud Service.
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: f7ed7c63fd141c6a9817e4718edb31425b14a761
 workflow-type: tm+mt
-source-wordcount: '1086'
-ht-degree: 2%
+source-wordcount: '1103'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +20,7 @@ Este documento ajuda você a entender a criação e o gerenciamento de canais pa
 
 * entender como criar canais para o provedor de conteúdo do Screens
 * gerencie e edite o conteúdo em seus canais
-* programação de ativação para seus canais
+* gerencie a programação de atribuição e ativação para seus canais no [Provedor de serviços do Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en)
 
 ## Etapas para criar um novo canal de sequência no Screens as a Cloud Service {#create-new-channel}
 
@@ -93,6 +93,8 @@ Os seguintes modelos estão disponíveis ao usar o **Criar** assistente de canal
 
 Esse recurso permite definir um agendamento de ativação padrão para um canal e usá-lo por padrão para cada atribuição de uma exibição. Isso fornece um método para que a complicada definição de agendamento não precise ser repetida.
 
+1. Navegue até o provedor de serviços do Screens a partir de [aqui](https://experience.adobe.com/screens).
+
 ### Criar detalhes de atribuição padrão para um canal {#create-default}
 
 1. Navegue até a página de detalhes do canal que deseja configurar.
@@ -119,7 +121,7 @@ Esse bloco exibe as seguintes informações:
 Os canais com detalhes de atribuição padrão podem ser atribuídos a exibições da mesma forma que os canais normais, com a opção adicionada de usar os detalhes de atribuição padrão em vez de definir manualmente os personalizados a cada vez.
 
 1. Navegue até a página de detalhes de exibição à qual deseja atribuir o canal e clique no **Atribuir canal**.
-como alternativa, selecione a exibição desejada na exibição inventário e clique no **Atribuir canal**.
+como alternativa, selecione a exibição desejada no [inventário](https://experience.adobe.com/screens/displays) e clique no link **Atribuir canal**.
 1. A caixa de diálogo de atribuição de canal é aberta.
 
    ![imagem](/help/screens-cloud/assets/display/Assignments4.png)
