@@ -4,9 +4,9 @@ description: O serviço de entrega de borda da AEM Forms foi criado para oferece
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 34ba430ae9b40fc3bc675af20bbee2534c44a0c3
+source-git-commit: bd8c4fbfd7f740baa6abd7a91fb8d1dcdaff6c28
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
@@ -14,15 +14,25 @@ ht-degree: 0%
 
 # Serviço de entrega de borda do AEM Forms {#aem-forms-edge-delivery-service-overview}
 
-O Serviço de entrega de borda da AEM Forms é um serviço de composição oferecido pelo Adobe que permite criar e fornecer formulários web de alto impacto e desempenho rápido. Esse serviço combinável integra-se perfeitamente ao Adobe Experience Manager (AEM) para capacitá-lo a projetar, criar e implantar formulários web de alto impacto e velocidade surpreendente com um fluxo de trabalho intuitivo e eficiente.
-
-O Serviço de entrega de borda da AEM Forms ajuda você a:
+O Serviço de entrega de borda da AEM Forms é um serviço de composição oferecido pelo Adobe que permite criar e fornecer formulários web de alto impacto e desempenho rápido. Você pode usar o serviço para:
 
 * **Formas de artesanato visualmente deslumbrante**: corte os designs insípidos e cortadores de cookies e encante os usuários com formas dinâmicas e modernas que refletem a identidade da sua marca. Aproveite componentes pré-criados ou crie seus próprios componentes personalizados para dar vida à sua visão de forma rápida e fácil.
 
 * **Crie formulários com a pontuação perfeita do farol**: crie formulários que carregam e renderizam rapidamente, mesmo em conexões de Internet lentas. Carregamentos mais rápidos e experiência otimizada do usuário contribuem para taxas mais altas de preenchimento de formulários e taxas de conversão aprimoradas.
 
 * **Simplificar a criação e os envios**: crie formulários usando ferramentas familiares, como o Microsoft Excel ou o Google Sheets, em vez dos ambientes de criação tradicionais. Envie formulários diretamente para o Microsoft Excel ou o Google Sheets e use o ecossistema para processar facilmente os dados enviados.
+
+
+Esse serviço de composição é dissociado da fonte de conteúdo e oferece flexibilidade para a criação de conteúdo, permitindo que os usuários usem suas ferramentas de criação preferidas.
+
+![Ferramentas de criação de formulários de entrega de borda](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
+
+Os criadores de conteúdo podem aproveitar as ferramentas com as quais estão familiarizados, como o Microsoft Excel ou o Google Sheets (criação baseada em documentos), os Editores JSON ou o editor AEM Forms Adaptive Forms para edição WYSIWYG (projetos do AEM Forms), para projetar e criar seus formulários.
+
+>[!NOTE]
+>
+>
+> O recurso de edição WYSIWYG e as áreas de Cross Walk estão disponíveis no programa de adoção antecipada. Você pode escrever para aem-forms-early-adopter-program@adobe.com a partir de sua ID de e-mail oficial para participar do programa de adoção antecipada e solicitar acesso ao recurso.
 
 ## Comece com as noções básicas
 
@@ -47,7 +57,7 @@ O Serviço de entrega de borda da AEM Forms ajuda você a:
     <div class="card-container">
         <a href="/help/edge/docs/forms/create-forms.md">
             <img src="/help/edge/assets/smock_devices_18_n.svg" alt="Criar um formulário usando o eds forms" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Criar um formulário</b>
+            <br><b style="margin-top: 5px;">Criar um formulário usando o Google Sheets ou o Microsoft Excel</b>
         </a>
         <p>Crie formulários que são carregados e renderizados de forma rápida e automática em dispositivos móveis.</p>
     </div>

@@ -1,18 +1,18 @@
 ---
-title: De Planilhas para Forms - Dominando Validações de Campo de Bloco de Formulário
-description: Crie formulários poderosos mais rápido usando planilhas e campos de bloco de formulário! Este guia ajuda a criar validações personalizadas para campos de Bloqueio de EDS Forms.
+title: Preparar sua planilha para aceitar dados
+description: Crie formulários poderosos mais rápido usando planilhas e campos de bloco de formulário!
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: c1a01dd256d39531c6091410e38a744688e71aaa
+source-git-commit: bd8c4fbfd7f740baa6abd7a91fb8d1dcdaff6c28
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '994'
 ht-degree: 0%
 
 ---
 
 
-# Permitir que o formulário envie dados
+# Preparar sua planilha para aceitar dados
 
 Depois de ter [criou e visualizou o formulário](/help/edge/docs/forms/create-forms.md), é hora de permitir que a planilha correspondente comece a receber dados.
 
@@ -20,15 +20,15 @@ Depois de ter [criou e visualizou o formulário](/help/edge/docs/forms/create-fo
 
 Para ativar a planilha:
 
-1. Abra a planilha que tem seu formulário e adicione uma planilha a ela e altere o nome da planilha para `incoming`.
+1. Abra a planilha que tem seu formulário e anexe uma nova planilha, renomeando-a para `incoming`.
 
    >[!WARNING]
    >
-   > Se a variável `incoming` a planilha não existe, o AEM não envia dados para esta pasta de trabalho.
+   > Se a variável `incoming` não estiver presente, o AEM não enviará dados para a planilha.
 
-1. No `incoming` planilha, espelhar todos os cabeçalhos de coluna para `Name` (nomes de campos de formulário) na variável `shared-default` planilha.
+1. Espelhe os nomes de campos de formulário, os valores de `Name` na`shared-default` para os cabeçalhos no campo `incoming` planilha.
 
-   O exemplo a seguir exibe cabeçalhos para um formulário &quot;contact-us&quot;:
+   Cada valor no `Name` coluna da `shared-default` planilha, com exceção do botão enviar, serve como cabeçalho na `incoming` planilha. Por exemplo, considere a seguinte imagem que ilustra cabeçalhos para um formulário &quot;contact-us&quot;:
 
    ![Campos de um formulário de contato conosco](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
@@ -79,7 +79,7 @@ Para usar APIs de administrador para permitir que uma planilha aceite dados:
 
 1. Envie a solicitação de POST para gerar os cabeçalhos apropriados no `incoming` e adicione a `shared-default` planilhas à sua planilha, se ela ainda não existir.
 
-   Para entender como formatar a solicitação POST para configurar sua planilha, consulte o [Documentação da API de administração](https://www.hlx.live/docs/admin.html#tag/form). Você pode observar o exemplo fornecido abaixo:
+   Para entender como formatar a solicitação POST para configurar sua planilha, consulte o [Documentação da API de administração](https://www.aem.live/docs/admin.html#tag/authentication/operation/profile). Você pode observar o exemplo fornecido abaixo:
 
    **Solicitação**
 

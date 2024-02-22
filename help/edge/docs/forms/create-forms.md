@@ -4,9 +4,9 @@ description: Formas perfeitas de artesanato, rápido!  criação baseada em docu
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: c1a01dd256d39531c6091410e38a744688e71aaa
+source-git-commit: bd8c4fbfd7f740baa6abd7a91fb8d1dcdaff6c28
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '910'
 ht-degree: 0%
 
 ---
@@ -18,15 +18,13 @@ Na era digital de hoje, criar formulários amigáveis é essencial para qualquer
 
 Esses formulários enviam dados diretamente para um arquivo do Microsoft Excel ou do Google Sheets, permitindo que você use um ecossistema vibrante e APIs robustas do Google Sheets, do Microsoft Excel e do Microsoft Sharepoint para processar facilmente os dados enviados ou iniciar um fluxo de trabalho de negócios existente.
 
-![Introdução ao Edge Delivery Forms](/help/edge/assets/getting-started-with-eds-forms.png)
-
 
 ## Pré-requisitos
 
 Antes de começar, verifique se você concluiu as seguintes etapas:
 
-* Configure e clone seu projeto do Serviço de entrega de borda (EDS). Consulte [tutorial do desenvolvedor](https://www.aem.live/developer/tutorial) para obter detalhes.
-* Clonar o [Repositório de blocos do Forms](https://github.com/adobe/afb). Ele contém o código para renderizar o formulário em uma página de Sites EDS.
+* Configure e clone seu projeto do Serviço de entrega de borda (EDS). Consulte [tutorial do desenvolvedor](https://www.aem.live/developer/tutorial) para obter detalhes. A pasta local do seu projeto do Edge Delivery Service (EDS) é chamada de `[EDS Project repository]` neste documento.
+* Clonar o [Repositório de blocos do Forms](https://github.com/adobe/afb). Ele contém o código para renderizar o formulário em uma página da Web EDS. A pasta local do seu repositório de blocos do Forms é chamada de `[Forms Block repository]` neste documento.
 * Verifique se você tem acesso ao Google Sheets ou ao Microsoft SharePoint.
 
 
@@ -36,32 +34,25 @@ Antes de começar, verifique se você concluiu as seguintes etapas:
 
 O AEM Forms Edge Delivery inclui um bloco de formulário para ajudá-lo a criar formulários facilmente para capturar e armazenar dados capturados. Para incluir o bloco de formulário ao projeto do Serviço de entrega de borda:
 
-1. Vá até `[cloned Forms Block repository folder]/blocks/`.
+1. Navegue até `[Forms Block repository]/blocks` e copie o `forms` pasta.
 
-1. Copie o `forms` pasta para `[Cloned EDS Project repository folder]/blocks` pasta.
+1. Navegue até `[EDS Project repository]/blocks/` e cole a variável `forms` pasta.
 
    >[!VIDEO](https://video.tv.adobe.com/v/3427487?quality=12&learn=on)
 
 1. Verifique no `form` pasta e arquivos subjacentes ao seu projeto do Serviço de entrega de borda no GitHub.
 
-   ```Shell
-   cd ..
-   git add .
-   git commit -m "Added form block"
-   git push origin
-   ```
+   O bloco Formulário é adicionado ao repositório do projeto EDS no Github. Certifique-se de que a build do Github não falhe:
 
-   O bloco Formulário é adicionado ao projeto EDS. Agora você pode criar um formulário e adicioná-lo ao site.
+   * Se você encontrar um erro &quot;Não foi possível resolver o caminho para o módulo &quot;&#39;../../scripts/lib-franklin.js&#39;&quot;, abra o `[EDS Project]/blocks/forms/form.js` arquivo. Na declaração de importação, substitua a variável `lib-franklin.js` arquivo com o `aem.js` arquivo.
 
-   >[!NOTE]
-   >
-   > * Se você encontrar um erro &quot;Não foi possível resolver o caminho para o módulo &quot;&#39;../../scripts/lib-franklin.js&#39;&quot;, abra o `[EDS Project]/blocks/forms/form.js` arquivo. Na declaração de importação, substitua a variável `lib-franklin.js` arquivo com o `aem.js` arquivo.
-   > * Se encontrar algum erro de impressão, sinta-se à vontade para ignorá-los. Para ignorar as verificações de listagem, abra o `[EDS Project]\package.json` arquivo e atualize o script &quot;lint&quot; de `"lint": "npm run lint:js && npm run lint:css"` para `"lint": "echo 'skipping linting for now'"`. Salve o arquivo e confirme-o no projeto GitHub.
+   * Se encontrar algum erro de impressão, sinta-se à vontade para ignorá-los. Para ignorar as verificações de listagem, abra o `[EDS Project]\package.json` arquivo e atualize o script &quot;lint&quot; de `"lint": "npm run lint:js && npm run lint:css"` para `"lint": "echo 'skipping linting for now'"`. Salve o arquivo e confirme-o no projeto GitHub.
+
+Agora você pode criar um formulário e adicioná-lo ao site.
 
 +++
 
-+++ Etapa 2: Criar um formulário usando o Microsoft Excel ou a Planilha do Google
-
++++ Etapa 2: Crie um formulário usando o Microsoft Excel ou a Planilha do Google.
 
 Em vez de processos complexos, você pode criar facilmente um formulário usando uma planilha. Você pode começar adicionando as linhas e os cabeçalhos de coluna a uma planilha, onde cada linha define um campo de formulário e cada cabeçalho de coluna define as propriedades dos campos de formulário correspondentes.
 
@@ -103,10 +94,10 @@ Para criar um formulário:
 
 +++
 
-+++ Etapa 3: visualizar o formulário usando a página Serviço de entrega de borda (EDS)
++++ Etapa 3: visualize o formulário usando a página Serviço de entrega de borda (EDS).
 
 
-Até agora, você ativou o bloco de formulários do projeto EDS e preparou a estrutura do formulário. Agora, para visualizar o formulário:
+Até agora, você adicionou o bloco de formulário ao projeto EDS e preparou a estrutura do formulário. Agora, para visualizar o formulário:
 
 1. Vá para sua conta do Microsoft SharePoint ou Google Drive e abra o diretório do projeto Delivery do AEM Edge.
 
@@ -118,14 +109,17 @@ Até agora, você ativou o bloco de formulários do projeto EDS e preparou a est
 
    ![](/help/edge/assets/form-block-in-sites-page-example.png)
 
-   Na segunda linha, inclua o URL anotado na seção anterior como um hiperlink. Você pode usar o URL de visualização (URL .page) ou o URL de publicação (.live). A URL de pré-visualização pode ser usada ao criar ou testar o formulário e publicar a URL para produção.
+   Na segunda linha, inclua o URL registrado na seção anterior como um hiperlink. Use o URL de visualização (URL .page) para fins de desenvolvimento ou teste, ou o URL de publicação (.live) para produção.
 
    >[!IMPORTANT]
    >
    >
-   > Certifique-se de que o URL não seja mencionado como um texto simples. Ele deve ser adicionado como um hiperlink.
+   > Verifique se o URL está com hiperlink em vez de ser apresentado como texto simples.
 
-1. Uso [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) para visualizar a página. A página agora exibe o formulário. Por exemplo, este é o formulário baseado na variável [entre em contato conosco](https://docs.google.com/spreadsheets/d/12jvYjo1a3GOV30IqPY6_7YaCQtUmzWpFhoiOHDcjB28/edit?usp=drive_link):
+
+1. Uso [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) para visualizar a página. A página agora exibe o formulário.
+
+   Por exemplo, este é o formulário baseado na variável [entre em contato conosco](https://docs.google.com/spreadsheets/d/12jvYjo1a3GOV30IqPY6_7YaCQtUmzWpFhoiOHDcjB28/edit?usp=drive_link):
 
 
    ![Um exemplo de formulário EDS](/help/edge/assets/eds-form.png)
@@ -139,7 +133,7 @@ Até agora, você ativou o bloco de formulários do projeto EDS e preparou a est
 
 ## Próxima etapa
 
-O próximo passo é [preparar sua planilha para aceitar dados](/help/edge/docs/forms/submit-forms.md).
+[Preparar sua planilha](/help/edge/docs/forms/submit-forms.md) para começar a aceitar dados no envio do formulário.
 
 
 
