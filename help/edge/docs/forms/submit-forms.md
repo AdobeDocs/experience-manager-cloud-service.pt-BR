@@ -4,9 +4,9 @@ description: Crie formulários poderosos mais rápido usando planilhas e campos 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 0604838311bb9ab195789fad755b0910e09519fd
+source-git-commit: c1a01dd256d39531c6091410e38a744688e71aaa
 workflow-type: tm+mt
-source-wordcount: '964'
+source-wordcount: '989'
 ht-degree: 0%
 
 ---
@@ -14,65 +14,72 @@ ht-degree: 0%
 
 # Permitir que o formulário envie dados
 
-Depois de criar e visualizar o formulário, habilite a planilha correspondente para aceitar os dados. Para começar a aceitar dados, configure sua planilha para incluir os cabeçalhos que correspondem aos dados que você pretende coletar. Todos os cabeçalhos adicionados à planilha &quot;shared-default&quot; também devem estar presentes na planilha &quot;incoming&quot; sob uma tabela.
+Depois de ter [criou e visualizou o formulário](/help/edge/docs/forms/create-forms.md), é hora de permitir que a planilha correspondente comece a receber dados.
 
-O exemplo a seguir exibe campos para um formulário &quot;contact-us&quot;:
+>[!VIDEO](https://video.tv.adobe.com/v/3427489?quality=12&learn=on)
 
-![Campos de um formulário de contato conosco](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
+Para ativar a planilha:
 
-
-Após concluir a configuração, o formulário estará pronto para aceitar os envios. Você pode empregar um dos seguintes métodos para permitir que sua planilha aceite dados:
-
-* [Configurar manualmente uma planilha para aceitar dados](#manually-configure-a-spreadsheet-to-receive-data)
-
-* [Usar APIs de administrador para permitir que uma planilha aceite dados](#use-admin-apis-to-enable-a-spreadsheet-to-receive-data-use-admin-apis-to-enable-a-spreadsheet-to-recieve-data)
-
-## Configurar manualmente uma planilha para aceitar dados
-
-Para configurar manualmente uma planilha para aceitar dados:
-
-
-1. Abra a pasta de trabalho criada e altere o nome da planilha padrão para &quot;entrada&quot;.
+1. Abra a planilha que tem seu formulário e adicione uma planilha a ela e altere o nome da planilha para `incoming`.
 
    >[!WARNING]
    >
-   > Se a planilha &quot;de entrada&quot; não existir, o AEM não enviará dados para essa pasta de trabalho.
+   > Se a variável `incoming` a planilha não existe, o AEM não envia dados para esta pasta de trabalho.
 
-1. Prepare a planilha adicionando cabeçalhos que correspondam aos dados inseridos. O exemplo a seguir exibe campos para um formulário &quot;contact-us&quot;:
+1. No `incoming` planilha, espelhar todos os cabeçalhos de coluna para `Name` (nomes de campos de formulário) na variável `shared-default` planilha.
+
+   O exemplo a seguir exibe cabeçalhos para um formulário &quot;contact-us&quot;:
 
    ![Campos de um formulário de contato conosco](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
-1. Visualize a planilha no sidekick.
+1. Use o sidekick para visualizar a planilha.
 
    >[!NOTE]
    >
-   >Mesmo que você tenha visualizado a planilha antes, é necessário visualizá-la novamente depois de criar a planilha &quot;de entrada&quot; pela primeira vez.
+   >Mesmo que você tenha visualizado a planilha antes, é necessário visualizá-la novamente depois de criar a `incoming` pela primeira vez.
 
 
-## Usar APIs de administrador para permitir que uma planilha aceite dados
+Depois que os nomes dos campos forem adicionados à `incoming` formulário fica pronto para aceitar envios. Você pode visualizar o formulário e enviar dados para a planilha usando-o.
 
-Você pode iniciar uma solicitação POST para a rota do formulário no serviço de administração AEM. Ao receber os dados do corpo do POST, o serviço de administração os analisa e gera de forma autônoma os cabeçalhos, tabelas e folhas essenciais necessários para a assimilação de dados, otimizando a funcionalidade do serviço de forms.
+Você também observa as seguintes alterações na planilha:
+
+Uma planilha chamada &quot;Slack&quot; é adicionada à sua Pasta de trabalho do Excel ou Planilha do Google. Nesta planilha, você pode configurar notificações automáticas para um canal de Slack designado sempre que novos dados forem assimilados em sua planilha. Atualmente, o AEM suporta notificações exclusivamente para a organização AEM Engineering Slack e a organização Adobe Enterprise Support.
+
+1. Para configurar notificações de Slack, digite a &quot;teamId&quot; do espaço de trabalho do Slack e o &quot;channel name&quot; ou &quot;ID&quot;. Você também pode pedir ao slack-bot (com o comando debug) o &quot;teamId&quot; e a &quot;channel ID&quot;. É preferível usar a &quot;ID do canal&quot; em vez do &quot;nome do canal&quot;, pois ela sobrevive à renomeação de canais.
+
+   >[!NOTE]
+   >
+   > Formulários mais antigos não tinham a coluna &quot;teamId&quot;. A &quot;teamId&quot; foi incluída na coluna do canal, separada por um &quot;#&quot; ou &quot;/&quot;.
+
+1. Insira qualquer título que desejar e em campos insira os nomes dos campos que deseja ver na notificação Slack. Cada cabeçalho deve ser separado por vírgula (por exemplo, nome, email).
+
+   >[!WARNING]
+   >
+   >  Nunca as planilhas de &quot;padrão compartilhado&quot; devem conter informações pessoalmente identificáveis ou dados confidenciais que você não se sinta confortável em acessar publicamente.
+
+
+## (Opcional) Use APIs de administrador para permitir que uma planilha aceite dados
+
+Você também pode enviar uma solicitação POST para o formulário para permitir que ele aceite dados e configure cabeçalhos para o `incoming` planilha. Ao receber o pedido de POST, o serviço analisa o corpo do pedido e gera de forma autônoma os cabeçalhos e folhas essenciais necessários para a assimilação de dados.
 
 Para usar APIs de administrador para permitir que uma planilha aceite dados:
 
 
-1. Abra a pasta de trabalho criada e altere o nome da planilha padrão para &quot;entrada&quot;.
+1. Abra a pasta de trabalho criada e altere o nome da planilha padrão para `incoming`.
 
    >[!WARNING]
    >
-   > Se a planilha &quot;de entrada&quot; não existir, o AEM não enviará dados para essa pasta de trabalho.
+   > Se a variável `incoming` a planilha não existe, o AEM não enviará dados para esta pasta de trabalho.
 
 1. Visualize a planilha no sidekick.
 
    >[!NOTE]
    >
-   >Mesmo que você tenha visualizado a planilha antes, é necessário visualizá-la novamente depois de criar a planilha &quot;de entrada&quot; pela primeira vez.
+   >Mesmo que você tenha visualizado a planilha antes, é necessário visualizá-la novamente depois de criar a `incoming` pela primeira vez.
 
-1. Prepare a planilha adicionando cabeçalhos que correspondam aos dados inseridos.
+1. Envie a solicitação de POST para gerar os cabeçalhos apropriados no `incoming` e adicione a `shared-default` planilhas à sua planilha, se ela ainda não existir.
 
-   Você pode fazer isso enviando uma solicitação POST para a rota do formulário no serviço de administrador de AEM. O serviço de administração examina os dados no corpo da POST e gera os cabeçalhos, tabelas e folhas apropriados necessários para assimilar dados com eficiência e aproveitar ao máximo o serviço da Forms.
-
-   Para entender como formatar a solicitação POST para configurar sua planilha, consulte o [Documentação da API de administração](https://www.hlx.live/docs/admin.html#tag/form). Além disso, observe o exemplo fornecido abaixo:
+   Para entender como formatar a solicitação POST para configurar sua planilha, consulte o [Documentação da API de administração](https://www.hlx.live/docs/admin.html#tag/form). Você pode observar o exemplo fornecido abaixo:
 
    **Solicitação**
 
@@ -135,27 +142,26 @@ Para usar APIs de administrador para permitir que uma planilha aceite dados:
    }'
    ```
 
-   A solicitação POST mencionada anteriormente fornece dados de amostra, incluindo campos de formulário e seus respectivos valores de amostra. Esses dados são usados pelo serviço de Administração para configurar o formulário.
+   A solicitação POST mencionada acima fornece dados de amostra, incluindo campos de formulário e seus respectivos valores de amostra. Esses dados são usados pelo serviço de Administração para configurar o formulário.
 
-   Ao enviar a solicitação do POST para o serviço de administração, você observa as seguintes alterações em sua pasta de trabalho:
+   O formulário agora está habilitado para aceitar dados. Você também observa as seguintes alterações na planilha:
 
-* Uma nova planilha chamada &quot;padrão compartilhado&quot; é adicionada à Pasta de trabalho do Excel ou à Planilha do Google. Os dados presentes na planilha &quot;padrão compartilhado&quot; são recuperados ao fazer uma solicitação GET para a planilha. Essa planilha serve como um local ideal para usar fórmulas de planilha para resumir os dados recebidos, tornando-os propícios ao consumo em outros contextos.
+Uma planilha chamada &quot;Slack&quot; é adicionada à sua Pasta de trabalho do Excel ou Planilha do Google. Nesta planilha, você pode configurar notificações automáticas para um canal de Slack designado sempre que novos dados forem assimilados em sua planilha. Atualmente, o AEM suporta notificações exclusivamente para a organização AEM Engineering Slack e a organização Adobe Enterprise Support.
 
-  Nunca as planilhas de &quot;padrão compartilhado&quot; devem conter informações pessoalmente identificáveis ou dados confidenciais que você não se sinta confortável em acessar publicamente.
+1. Para configurar notificações de Slack, digite a &quot;teamId&quot; do espaço de trabalho do Slack e o &quot;channel name&quot; ou &quot;ID&quot;. Você também pode pedir ao slack-bot (com o comando debug) o &quot;teamId&quot; e a &quot;channel ID&quot;. É preferível usar a &quot;ID do canal&quot; em vez do &quot;nome do canal&quot;, pois ela sobrevive à renomeação de canais.
 
-* Uma planilha chamada &quot;Slack&quot; é adicionada à sua Pasta de trabalho do Excel ou Planilha do Google. Nesta planilha, você pode configurar notificações automáticas para um canal de Slack designado sempre que novos dados forem assimilados em sua planilha. Atualmente, o AEM suporta notificações exclusivamente para a organização AEM Engineering Slack e a organização Adobe Enterprise Support.
+   >[!NOTE]
+   >
+   > Formulários mais antigos não tinham a coluna &quot;teamId&quot;. A &quot;teamId&quot; foi incluída na coluna do canal, separada por um &quot;#&quot; ou &quot;/&quot;.
 
-   1. Para configurar notificações de Slack, digite a &quot;teamId&quot; do espaço de trabalho do Slack e o &quot;channel name&quot; ou &quot;ID&quot;. Você também pode pedir ao slack-bot (com o comando debug) o &quot;teamId&quot; e a &quot;channel ID&quot;. É preferível usar a &quot;ID do canal&quot; em vez do &quot;nome do canal&quot;, pois ela sobrevive à renomeação de canais.
+1. Insira qualquer título que desejar e em campos insira os nomes dos campos que deseja ver na notificação Slack. Cada cabeçalho deve ser separado por vírgula (por exemplo, nome, email).
 
-      >[!NOTE]
-      >
-      > Formulários mais antigos não tinham a coluna &quot;teamId&quot;. A &quot;teamId&quot; foi incluída na coluna do canal, separada por um &quot;#&quot; ou &quot;/&quot;.
-
-   1. Insira qualquer título que desejar e em campos insira os nomes dos campos que deseja ver na notificação Slack. Cada cabeçalho deve ser separado por vírgula (por exemplo, nome, email).
 
 A planilha agora está configurada para receber dados, você pode [visualizar o formulário usando o bloco formulários](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) ou [usar solicitações POST](#use-admin-apis-to-send-data-to-your-sheet) para começar a enviar dados para a planilha.
 
-
+>[!WARNING]
+>
+>  Nunca as planilhas de &quot;padrão compartilhado&quot; devem conter informações pessoalmente identificáveis ou dados confidenciais que você não se sinta confortável em acessar publicamente.
 
 ## Enviar dados para sua planilha {#send-data-to-your-sheet}
 
