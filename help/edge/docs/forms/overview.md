@@ -4,9 +4,9 @@ description: O serviço de entrega de borda da AEM Forms foi criado para oferece
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: bd8c4fbfd7f740baa6abd7a91fb8d1dcdaff6c28
+source-git-commit: 87ed5f0aed5554f56e28f317d1399429245a2d06
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '463'
 ht-degree: 0%
 
 ---
@@ -27,12 +27,12 @@ Esse serviço de composição é dissociado da fonte de conteúdo e oferece flex
 
 ![Ferramentas de criação de formulários de entrega de borda](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
 
-Os criadores de conteúdo podem aproveitar as ferramentas com as quais estão familiarizados, como o Microsoft Excel ou o Google Sheets (criação baseada em documentos), os Editores JSON ou o editor AEM Forms Adaptive Forms para edição WYSIWYG (projetos do AEM Forms), para projetar e criar seus formulários.
+Os criadores de conteúdo podem aproveitar as ferramentas com as quais estão familiarizados, como o Microsoft Excel ou o Google Sheets (criação baseada em documentos), arquivos JSON (criação headless) ou o editor do AEM Forms Adaptive Forms (criação WYSIWYG), para projetar e criar seus formulários.
 
 >[!NOTE]
 >
 >
-> O recurso de edição WYSIWYG e as áreas de Cross Walk estão disponíveis no programa de adoção antecipada. Você pode escrever para aem-forms-early-adopter-program@adobe.com a partir de sua ID de e-mail oficial para participar do programa de adoção antecipada e solicitar acesso ao recurso.
+> O recurso de criação WYSIWYG está disponível no programa dos primeiros usuários. Você pode escrever para aem-forms-early-adopter-program@adobe.com a partir de sua ID de e-mail oficial para participar do programa de adoção antecipada e solicitar acesso ao recurso.
 
 ## Comece com as noções básicas
 
@@ -67,13 +67,12 @@ Os criadores de conteúdo podem aproveitar as ferramentas com as quais estão fa
             <br><b style="margin-top: 5px;">Aplicar validações de campo</b>
         </a>
         <p>Reduza erros e frustrações verificando as entradas do formulário para obter a formatação adequada.</p>
-    </div>
-    <div class="card-container">
-        <a href="/help/edge/docs/forms/form-fragments.md">
-            <img src="/help/edge/assets/smock_documentfragment_18_n.svg" alt="Usar fragmentos de formulário em um formulário EDS" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Criar fragmentos de formulário</b>
+    </div>    <div class="card-container">
+        <a href="/help/edge/docs/forms/style-theme-forms.md">
+            <img src="/help/edge/assets/smock_imageautomode_18_N.svg" alt="Aplicar estilos ou temas a um formulário eds" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Personalizar um tema</b>
         </a>
-        <p>Reutilizar fragmentos pré-configurados em vários formulários.</p>
+        <p>Crie uma imagem de marca consistente aplicando o mesmo tema em vários formulários.</p>
     </div>
     <div class="card-container">
         <a href="/help/edge/docs/forms/translate-forms.md">  
@@ -83,11 +82,11 @@ Os criadores de conteúdo podem aproveitar as ferramentas com as quais estão fa
         <p>Estenda o alcance de seus formulários mantendo os custos sob controle.</p>
     </div>
     <div class="card-container">
-        <a href="/help/edge/docs/forms/style-theme-forms.md">
-            <img src="/help/edge/assets/smock_imageautomode_18_N.svg" alt="Aplicar estilos ou temas a um formulário eds" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Personalizar um tema</b>
+        <a href="/help/edge/docs/forms/form-fragments.md">
+            <img src="/help/edge/assets/smock_documentfragment_18_n.svg" alt="Usar fragmentos de formulário em um formulário EDS" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Criar fragmentos de formulário</b>
         </a>
-        <p>Crie uma imagem de marca consistente aplicando o mesmo tema em vários formulários.</p>
+        <p>Reutilizar fragmentos pré-configurados em vários formulários.</p>
     </div>
     <div class="card-container">
         <a href="/help/edge/docs/forms/repeatable-forms.md">  

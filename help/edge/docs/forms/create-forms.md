@@ -4,9 +4,9 @@ description: Formas perfeitas de artesanato, rápido!  criação baseada em docu
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: bd8c4fbfd7f740baa6abd7a91fb8d1dcdaff6c28
+source-git-commit: 87ed5f0aed5554f56e28f317d1399429245a2d06
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '913'
 ht-degree: 0%
 
 ---
@@ -23,8 +23,8 @@ Esses formulários enviam dados diretamente para um arquivo do Microsoft Excel o
 
 Antes de começar, verifique se você concluiu as seguintes etapas:
 
-* Configure e clone seu projeto do Serviço de entrega de borda (EDS). Consulte [tutorial do desenvolvedor](https://www.aem.live/developer/tutorial) para obter detalhes. A pasta local do seu projeto do Edge Delivery Service (EDS) é chamada de `[EDS Project repository]` neste documento.
-* Clonar o [Repositório de blocos do Forms](https://github.com/adobe/afb). Ele contém o código para renderizar o formulário em uma página da Web EDS. A pasta local do seu repositório de blocos do Forms é chamada de `[Forms Block repository]` neste documento.
+* Configure e clone seu projeto do Serviço de entrega de borda (EDS). Consulte [tutorial do desenvolvedor](https://www.aem.live/developer/tutorial) para obter detalhes. Neste documento, a pasta local do projeto do Serviço de entrega de borda (EDS) é chamada de `[EDS Project repository]` .
+* Clonar o [Repositório de blocos do Forms](https://github.com/adobe/afb). Ele contém o código para renderizar o formulário em uma página da Web EDS. Neste documento, a pasta local do seu repositório de blocos do Forms é chamada de `[Forms Block repository]` neste documento.
 * Verifique se você tem acesso ao Google Sheets ou ao Microsoft SharePoint.
 
 
@@ -42,7 +42,7 @@ O AEM Forms Edge Delivery inclui um bloco de formulário para ajudá-lo a criar 
 
 1. Verifique no `form` pasta e arquivos subjacentes ao seu projeto do Serviço de entrega de borda no GitHub.
 
-   O bloco Formulário é adicionado ao repositório do projeto EDS no Github. Certifique-se de que a build do Github não falhe:
+   O bloco Formulário é adicionado ao repositório do projeto EDS no GitHub. Certifique-se de que a compilação do GitHub não falhe:
 
    * Se você encontrar um erro &quot;Não foi possível resolver o caminho para o módulo &quot;&#39;../../scripts/lib-franklin.js&#39;&quot;, abra o `[EDS Project]/blocks/forms/form.js` arquivo. Na declaração de importação, substitua a variável `lib-franklin.js` arquivo com o `aem.js` arquivo.
 
