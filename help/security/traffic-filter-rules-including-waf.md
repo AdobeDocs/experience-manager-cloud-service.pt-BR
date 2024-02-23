@@ -2,9 +2,9 @@
 title: Regras de filtro de tráfego incluindo regras WAF
 description: Configuração das regras de filtro de tráfego incluindo as regras do WAF (Web Application Firewall)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 46e48b6bb8d2b926b55330024e145d608fcf3609
+source-git-commit: 86a7815a1055b8ffaf57b802f3232f2c03ec06dc
 workflow-type: tm+mt
-source-wordcount: '3350'
+source-wordcount: '3376'
 ht-degree: 0%
 
 ---
@@ -252,6 +252,7 @@ A variável `wafFlags` que pode ser usada nas regras de filtro de tráfego WAF l
 | USERAGENT | Ferramentas de ataque | Ferramentas de ataque é o uso de software automatizado para identificar vulnerabilidades de segurança ou para tentar explorar uma vulnerabilidade detectada. |
 | LOG4J-JNDI | Log4J JNDI | Os ataques ao Log4J JNDI tentam explorar a [Vulnerabilidade do Log4Shell](https://en.wikipedia.org/wiki/Log4Shell) presente nas versões do Log4J anteriores à 2.16.0 |
 | BHH | Cabeçalhos de salto inválidos | Os cabeçalhos de salto inválido indicam uma tentativa de contrabando de HTTP por meio de um cabeçalho TE (Transferir Codificação) ou CL (Conteúdo Comprimento) malformado, ou um cabeçalho TE e CL bem formado |
+| CODEINJECTION | Injeção de código | A injeção de código é a tentativa de obter controle ou danificar um sistema alvo através de comandos de código de aplicação arbitrária por meio da entrada do usuário. |
 | ANORMALPATH | Caminho anormal | Caminho anormal indica que o caminho original difere do caminho normalizado (por exemplo, `/foo/./bar` é normalizado para `/foo/bar`) |
 | CODIFICAÇÃODUPLA | Codificação dupla | A Codificação dupla verifica a técnica de evasão de caracteres html de codificação dupla |
 | NOTUTF8 | Codificação inválida | Codificação inválida pode fazer com que o servidor traduza caracteres mal-intencionados de uma solicitação em uma resposta, causando uma negação de serviço ou XSS |
@@ -417,7 +418,7 @@ Os limites de taxa são calculados por CDN POP. Como exemplo, suponha que os POP
 | limite | número inteiro de 10 a 10000 | obrigatório | Taxa de solicitações (por CDN POP) em solicitações por segundo para as quais a regra é acionada. |
 | janela | enumeração de inteiros: 1, 10 ou 60 | 10 | Janela de amostragem em segundos para a qual a taxa de solicitação é calculada. A precisão dos contadores dependerá do tamanho da janela (maior precisão da janela). Por exemplo, pode-se esperar 50% de precisão para a janela de 1 segundo e 90% de precisão para a janela de 60 segundos. |
 | penalidade | número inteiro de 60 a 3600 | 300 (5 minutos) | Um período em segundos para o qual as solicitações correspondentes são bloqueadas (arredondado para o minuto mais próximo). |
-| groupBy | matriz[Getter] | nenhuma | o contador do limitador de taxa será agregado por um conjunto de propriedades de solicitação (por exemplo, clientIp). |
+| groupBy | matriz[Getter] | nenhum | o contador do limitador de taxa será agregado por um conjunto de propriedades de solicitação (por exemplo, clientIp). |
 
 
 ### Exemplos {#ratelimiting-examples}
