@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Reports,Asset Management
 role: Admin,User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 22fc488cd507a3504c472eab3dea8daa7e63b81c
 workflow-type: tm+mt
 source-wordcount: '935'
 ht-degree: 8%
@@ -33,7 +33,7 @@ Quando um relatório é gerado, você é notificado por meio de <!-- through an 
 
 [!DNL Experience Manager Assets] O gera os seguintes relatórios padrão para você:
 
-* Carregar
+* Fazer upload
 * Download
 * Expiração
 * Modificação
@@ -107,7 +107,8 @@ Quando um relatório é gerado, você é notificado por meio de <!-- through an 
 1. Clique em **[!UICONTROL Criar]** na barra de ferramentas. Uma mensagem notifica que a geração de relatório foi iniciada.
 1. No [!UICONTROL Relatórios de ativos] página, o status de geração de relatório é baseado no estado atual do trabalho de relatório, por exemplo, [!UICONTROL Sucesso], [!UICONTROL Failed], [!UICONTROL Em fila]ou [!UICONTROL Agendado]. O mesmo status aparece na caixa de entrada de notificações.Para exibir a página do relatório, clique no link do relatório. Como alternativa, selecione o relatório e clique em **[!UICONTROL Exibir]** na barra de ferramentas.
 
-   ![Um relatório gerado](assets/report_page.png)
+   <!--![A generated report](assets/report_page.png)-->
+   ![status do relatório gerado](assets/report-status.JPG)
 
    Clique em **[!UICONTROL Baixar]** na barra de ferramentas para baixar o relatório no formato CSV.
 
@@ -129,7 +130,7 @@ Você pode adicionar colunas personalizadas aos seguintes relatórios para exibi
 * Files
 -->
 
-* Carregar
+* Fazer upload
 * Expiração
 * Modificação
 * Publicação
