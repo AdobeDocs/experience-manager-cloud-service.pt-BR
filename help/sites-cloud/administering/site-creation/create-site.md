@@ -4,9 +4,9 @@ description: Saiba como usar o AEM para criar um site usando modelos de site par
 feature: Administering
 role: Admin
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: '755'
 ht-degree: 77%
 
 ---
@@ -75,7 +75,7 @@ Os modelos de site geralmente contêm o conteúdo básico e a estrutura do site,
 
    * O título do site aparece na barra de título dos navegadores.
    * O nome do site se torna parte do URL.
-   * O nome do site deve estar em conformidade com as [convenções de nomenclatura de páginas do AEM](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices).
+   * O nome do site deve estar em conformidade com as [convenções de nomenclatura de páginas do AEM](/help/sites-cloud/authoring/sites-console/organizing-pages.md#page-name-restrictions-and-best-practices).
 
 1. Selecionar **Criar** e o site é criado a partir do modelo de site.
 

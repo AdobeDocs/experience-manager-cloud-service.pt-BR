@@ -4,7 +4,7 @@ description: Saiba como os fragmentos de conteúdo no AEM as a Cloud Service per
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
-source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
 source-wordcount: '1792'
 ht-degree: 39%
@@ -13,7 +13,7 @@ ht-degree: 39%
 
 # Uma visão geral do trabalho com fragmentos de conteúdo {#overview-working-with-content-fragments}
 
-Com o Adobe Experience Manager (AEM) as a Cloud Service, os fragmentos de conteúdo permitem projetar, criar, preparar e [publicar conteúdo independente de página](/help/sites-cloud/authoring/fundamentals/content-fragments.md). Eles permitem preparar conteúdo pronto para uso em vários locais e em vários canais, ideal para entrega headless e criação de página.
+Com o Adobe Experience Manager (AEM) as a Cloud Service, os fragmentos de conteúdo permitem projetar, criar, preparar e [publicar conteúdo independente de página](/help/sites-cloud/authoring/fragments/content-fragments.md). Eles permitem preparar conteúdo pronto para uso em vários locais e em vários canais, ideal para entrega headless e criação de página.
 
 >[!IMPORTANT]
 >
@@ -27,7 +27,7 @@ Com o Adobe Experience Manager (AEM) as a Cloud Service, os fragmentos de conte�
 >
 >* utilização do **Assets** console do para [gerenciar fragmentos de conteúdo](/help/assets/content-fragments/content-fragments-managing.md)
 >* utilização do [*original* Editor de fragmento de conteúdo](/help/assets/content-fragments/content-fragments-variations.md),
->* usar [Fragmentos de conteúdo para criação de páginas](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+>* usar [Fragmentos de conteúdo para criação de páginas](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 
 Os fragmentos de conteúdo contêm conteúdo estruturado:
@@ -74,7 +74,7 @@ Esses Fragmentos de conteúdo podem ser reunidos para fornecer experiências em 
 
 >[!NOTE]
 >
->**Fragmentos de conteúdo** e **[fragmentos de experiência](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** são recursos diferentes no AEM:
+>**Fragmentos de conteúdo** e **[fragmentos de experiência](/help/sites-cloud/authoring/fragments/content-fragments.md)** são recursos diferentes no AEM:
 >* Os **fragmentos de conteúdo** são conteúdos editoriais com definição e estrutura, mas sem design visual e/ou layout adicional. Eles podem ser usados para acessar dados estruturados, incluindo textos, números, datas, entre outros.
 >* **Fragmentos de experiência** são conteúdo totalmente apresentado; um fragmento de uma página da Web.
 >
@@ -94,7 +94,7 @@ Após a criação dos fragmentos, é possível:
 * [Usar o editor de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/authoring.md) - editar, publicar (para visualização ou produção) e fazer referência aos fragmentos
 * [Analisar](/help/sites-cloud/administering/content-fragments/analysis.md)  a estrutura do fragmento de conteúdo, usando o editor
 * [Acesse os fragmentos com o GraphQL, para entrega headless em seus aplicativos](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
-* [Ou use os fragmentos para a criação de página](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
+* [Ou use os fragmentos para a criação de página](/help/sites-cloud/authoring/fragments/content-fragments.md)
 
 >[!NOTE]
 >
@@ -104,7 +104,7 @@ Após a criação dos fragmentos, é possível:
 >* [Fragmentos de conteúdo configuram componentes para renderização](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
 >* [Compatibilidade com os Fragmentos de conteúdo na API HTTP do AEM Assets](/help/assets/content-fragments/assets-api-content-fragments.md)
 >* [API GraphQL do AEM para uso com Fragmentos de conteúdo](/help/headless/graphql-api/content-fragments.md)
->* [Criação de página com fragmentos de conteúdo](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+>* [Criação de página com fragmentos de conteúdo](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 ## Principais e variações {#main-and-variations}
 
@@ -172,7 +172,7 @@ Os fragmentos de conteúdo são:
 
 * Acessível para entrega de conteúdo usando o [API GraphQL do AEM](/help/headless/graphql-api/content-fragments.md).
 
-* Disponível na [editor de páginas usando o componente Fragmento de conteúdo](/help/sites-cloud/authoring/fundamentals/content-fragments.md) (componente de referência):
+* Disponível na [editor de páginas usando o componente Fragmento de conteúdo](/help/sites-cloud/authoring/fragments/content-fragments.md) (componente de referência):
 
    * A variável [Componente principal do fragmento de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=pt-BR) O está disponível para autores de página. Ele permite referenciar e entregar o fragmento de conteúdo necessário nos formatos HTML ou JSON.
 
@@ -257,7 +257,7 @@ Para usar os Fragmentos de conteúdo para a criação de páginas, também é ne
 * A **Componente Fragmento de Conteúdo**
 
    * Fundamental para entregar o fragmento no formato HTML e/ou JSON.
-   * Obrigatório para [fazer referência ao fragmento em uma página](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+   * Obrigatório para [fazer referência ao fragmento em uma página](/help/sites-cloud/authoring/fragments/content-fragments.md).
    * Responsável pela disposição e entrega de um fragmento; por exemplo, canais.
    * Os fragmentos precisam de um ou mais componentes dedicados para definir o layout e fornecer alguns ou todos os elementos/variações e conteúdo associado.
    * Arrastar um fragmento para uma página na criação associa automaticamente o componente necessário.

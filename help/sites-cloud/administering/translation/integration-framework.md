@@ -4,9 +4,9 @@ description: Saiba como configurar a estrutura de integração de tradução par
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '1499'
+source-wordcount: '1465'
 ht-degree: 90%
 
 ---
@@ -69,7 +69,7 @@ Após configurar uma estrutura de integração de tradução, é possível [asso
 
 Uma única configuração da estrutura controla como o conteúdo e os ativos da página são traduzidos. Para criar uma configuração de tradução:
 
-1. No [menu de navegação global,](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) selecionar **Ferramentas > Cloud Service e Cloud Service de tradução**.
+1. No [menu de navegação global,](/help/sites-cloud/authoring/basic-handling.md#global-navigation) selecionar **Ferramentas > Cloud Service e Cloud Service de tradução**.
 1. Navegue até o local em que deseja criar a configuração na estrutura de conteúdo. Isso é geralmente baseado em um site específico, mas pode ser global.
 1. Forneça as seguintes informações nos campos e selecione **Criar**.:
    1. Selecione o **Tipo de configuração** no menu suspenso.

@@ -2,7 +2,7 @@
 title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2021.3.0.
 description: "[!DNL Adobe Experience Manager] Notas de versão as a Cloud Service para 2021.3.0."
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '1271'
 ht-degree: 33%
@@ -27,7 +27,7 @@ A versão seguinte (2021.4.0) será lançada em 29 de abril de 2021.
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
-* [Uma versão de aplicativo Web progressivo (PWA) de um site](/help/sites-cloud/authoring/features/enable-pwa.md) O agora pode ser ativado no nível do projeto por meio de uma configuração simples.
+* [Uma versão de aplicativo Web progressivo (PWA) de um site](/help/sites-cloud/authoring/sites-console/enable-pwa.md) O agora pode ser ativado no nível do projeto por meio de uma configuração simples.
 * Extensões do modelo de fragmento de conteúdo: agora é possível definir tipos de dados de texto de várias linhas como listas de vários campos.
 * Aprimoramentos de UX do editor de fragmento de conteúdo: fragmentos secundários aninhados agora são exibidos na navegação estrutural e na visualização aprimorada das ações publicar, salvar e salvar e sair
 
@@ -76,7 +76,7 @@ Entre em contato com o representante da Adobe para obter uma demonstração ou p
 
 * Lançamento do site de referência CIF Venia - 25/03/2021 que inclui a versão mais recente dos componentes principais CIF v1.9.0. Consulte [Site de referência CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25) para obter mais detalhes.
 
-* Lançamento de componentes principais CIF v1.9.0. Consulte [Componentes principais da CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0) para obter mais detalhes.
+* Lançamento de componentes principais CIF v1.9.0. Consulte [Componentes principais do CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0) para obter mais detalhes.
 
 
 ## Cloud Manager {#cloud-manager}

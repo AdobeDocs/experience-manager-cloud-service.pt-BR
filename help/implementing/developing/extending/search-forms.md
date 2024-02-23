@@ -2,16 +2,16 @@
 title: Configuração de formulários de pesquisa
 description: Configuração do Search Forms para Adobe Experience Manager as a Cloud Service.
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
-source-wordcount: '2033'
-ht-degree: 17%
+source-wordcount: '2036'
+ht-degree: 10%
 
 ---
 
 # Configuração de formulários de pesquisa {#configuring-search-forms}
 
-O Adobe Experience Manager as a Cloud Service vem com uma [Pesquisar](/help/sites-cloud/authoring/getting-started/search.md) mecanismo.
+O Adobe Experience Manager as a Cloud Service vem com uma [Pesquisar](/help/sites-cloud/authoring/search.md) mecanismo.
 
 Em combinação com isso, também há um conjunto de opções predefinidas para ajudar você a filtrar seu conteúdo. Esses mantêm facetas predefinidas, como **Data de modificação**, **Publicar status** ou **Status da Live Copy** para ajudá-lo a detalhar rapidamente os recursos necessários.
 
@@ -19,9 +19,9 @@ Em combinação com isso, também há um conjunto de opções predefinidas para 
 
 Juntos, eles têm como objetivo ajudá-lo a localizar seu conteúdo de forma rápida e fácil a partir de:
 
-* [Pesquisar e filtrar](/help/sites-cloud/authoring/getting-started/search.md#search-and-filter)
-* [Seletor de painéis](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
-* o [Navegador de ativos](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser) (ao editar páginas)
+* [Pesquisar e filtrar](/help/sites-cloud/authoring/search.md#search-and-filter)
+* [Seletor de painéis](/help/sites-cloud/authoring/basic-handling.md#rail-selector)
+* o [Navegador de ativos](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser) (ao editar páginas)
 
 >[!NOTE]
 >
@@ -33,7 +33,7 @@ A variável **Pesquisar no Forms** fornecer uma seleção pronta para uso de [pr
 
 * **Ferramentas**
    * **Geral**
-      * **Formulários de pesquisa**
+      * **Pesquisar no Forms**
 
 ## Forms padrão {#default-forms}
 
@@ -45,22 +45,22 @@ As configurações padrão (listadas alfabeticamente) disponíveis são:
 
 * **Trilho de pesquisa do administrador de ativos**
 * **Editor de páginas (Pesquisa de documentos)**
-* **Editor de páginas (Pesquisa de Fragmentos de experiência)**
+* **Editor de páginas (Pesquisa de fragmentos de experiência)**
 * **Editor de páginas (Pesquisa de imagens)**
 * **Editor de páginas (Pesquisa de manuscrito)**
 * **Editor de páginas (Pesquisa de páginas)**
 * **Editor de páginas (Pesquisa de parágrafos)**
-* **Editor de páginas (Pesquisa de produto)**
-* **Editor de páginas (pesquisa do Scene7)**
-* **Editor de página (Pesquisa de vídeos)**
+* **Editor de páginas (Pesquisa de produtos)**
+* **Editor de páginas (pesquisa no Scene7)**
+* **Editor de páginas (Pesquisa de vídeos)**
 * **Trilho de pesquisa do administrador de projetos**
-* **Painel de pesquisa de tradução de projetos**
+* **Trilho de pesquisa da tradução do projeto**
 * **Trilho de pesquisa do administrador de sites**
-* **Painel de pesquisa do administrador de trechos**
-* **Painel de pesquisa do Admin do Stock**
+* **Trilho de pesquisa do administrador de trechos**
+* **Painel de pesquisa do administrador do Stock**
 * **Painel de pesquisa de modelos de fragmento de conteúdo**
 * **Trilho de pesquisa do administrador de projetos**
-* **Painel de pesquisa de tradução de projetos**
+* **Trilho de pesquisa da tradução do projeto**
 
 >[!NOTE]
 >
@@ -95,7 +95,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
    <td>
     <ul>
      <li>Rótulo do campo</li>
-     <li>Nome da Propriedade*</li>
+     <li>Nome da propriedade*</li>
      <li>Descrição</li>
     </ul> 
    </td>
@@ -106,7 +106,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
    <td>
     <ul>
      <li>Espaço reservado</li>
-     <li>Nome da Propriedade*</li>
+     <li>Nome da propriedade*</li>
      <li>Descrição</li>
     </ul> 
    </td>
@@ -128,7 +128,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
    <td>
     <ul>
      <li>Rótulo do campo</li>
-     <li>Nome da Propriedade*</li>
+     <li>Nome da propriedade*</li>
      <li>Descrição</li>
     </ul> 
    </td>
@@ -139,7 +139,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
    <td>
     <ul>
      <li>Espaço reservado</li>
-     <li>Nome da Propriedade*</li>
+     <li>Nome da propriedade*</li>
      <li>Profundidade da propriedade</li>
      <li>Descrição</li>
     </ul> </td>
@@ -151,7 +151,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
     <ul>
      <li>Rótulo do campo</li>
      <li>Espaço reservado</li>
-     <li>Nome da Propriedade*</li>
+     <li>Nome da propriedade*</li>
      <li>Texto do intervalo (de)*</li>
      <li>Texto do intervalo (até)*</li>
      <li>Descrição</li>
@@ -163,7 +163,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
    <td>
     <ul>
      <li>Rótulo do campo</li>
-     <li>Nome da Propriedade*</li>
+     <li>Nome da propriedade*</li>
      <li>Descrição</li>
     </ul> </td>
   </tr>
@@ -173,7 +173,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
    <td>
     <ul>
      <li>Rótulo do campo</li>
-     <li>Nome da Propriedade*</li>
+     <li>Nome da propriedade*</li>
      <li>Caminho de opção</li>
      <li>Descrição</li>
     </ul> </td>
@@ -184,7 +184,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
    <td>
     <ul>
      <li>Rótulo do campo</li> 
-     <li>Nome da Propriedade*</li>
+     <li>Nome da propriedade*</li>
      <li>Caminho Mimetype</li>
      <li>Descrição</li>
     </ul> 
@@ -196,7 +196,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
    <td>
     <ul>
      <li>Espaço reservado</li>
-     <li>Nome da Propriedade</li>
+     <li>Nome de propriedade</li>
      <li>Descrição</li>
     </ul> </td>
   </tr>
@@ -214,7 +214,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
    <td>Um filtro na propriedade e no valor, não visível para o usuário.</td>
    <td>
     <ul>
-     <li>Nome da Propriedade*</li>
+     <li>Nome da propriedade*</li>
      <li>Valor da propriedade*</li>
      <li>Descrição</li>
     </ul> </td>
@@ -246,7 +246,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
     <ul>
      <li>Rótulo do campo</li>
      <li>Espaço reservado</li>
-     <li>Nome da Propriedade*</li>
+     <li>Nome da propriedade*</li>
      <li>Suporte do delimitador</li>
      <li>Delimitadores de entrada</li>
      <li>Ignorar diferença entre maiúsculas e minúsculas</li>
@@ -260,23 +260,23 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
    <td>
     <ul>
      <li>Rótulo do campo</li>
-     <li>Nome da Propriedade*</li>
-     <li>Única seleção</li>
+     <li>Nome da propriedade*</li>
+     <li>Seleção única</li>
      <li>Adicionar opções</li>
      <li>Manual</li>
      <li>Descrição</li>
     </ul> </td>
   </tr>
   <tr>
-   <td>Opções Propriedade</td>
+   <td>Propriedade de opções</td>
    <td>Pesquise em uma ou mais propriedades da opção.</td>
    <td>
     <ul>
      <li>Rótulo do campo</li>
-     <li>Nome da Propriedade*</li>
+     <li>Nome da propriedade*</li>
      <li>Caminho do nó de opções</li>
      <li>Profundidade da propriedade</li>
-     <li>Única seleção</li>
+     <li>Seleção única</li>
      <li>Descrição</li>
     </ul> </td>
   </tr>
@@ -329,7 +329,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
     <ul>
      <li>Rótulo do campo</li>
      <li>Espaço reservado</li>
-     <li>Nome da Propriedade</li>
+     <li>Nome de propriedade</li>
      <li>Pesquisa parcial</li>
      <li>Ignorar diferença entre maiúsculas e minúsculas</li>
      <li>Descrição</li>
@@ -342,7 +342,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
    <td>
     <ul>
      <li>Rótulo do campo</li>
-     <li>Nome da Propriedade*</li>
+     <li>Nome da propriedade*</li>
      <li>Descrição</li>
     </ul> </td>
   </tr>
@@ -352,7 +352,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
    <td>
     <ul>
      <li>Rótulo do campo</li>
-     <li>Nome da Propriedade*</li>
+     <li>Nome da propriedade*</li>
      <li>Descrição</li>
     </ul> </td>
   </tr>
@@ -362,7 +362,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
    <td>
     <ul>
      <li>Rótulo do campo</li>
-     <li>Nome da Propriedade*</li>
+     <li>Nome da propriedade*</li>
      <li>Caminho de opção</li>
      <li>Descrição</li>
     </ul> </td>
@@ -373,7 +373,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
    <td>
     <ul>
      <li>Rótulo do campo</li>
-     <li>Nome da Propriedade*</li>
+     <li>Nome da propriedade*</li>
      <li>Data relativa</li>
      <li>Descrição</li>
     </ul> </td>
@@ -384,7 +384,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
    <td>
     <ul>
      <li>Rótulo do campo</li>
-     <li>Nome da Propriedade*</li>
+     <li>Nome da propriedade*</li>
      <li>Caminho do nó de opções</li>
      <li>Descrição</li>
     </ul> </td>
@@ -406,7 +406,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
     <ul>
      <li>Nível do campo</li>
      <li>Espaço reservado</li>
-     <li>Nome da Propriedade*</li>
+     <li>Nome da propriedade*</li>
      <li>Exibir a opção Corresponder todas as tags</li>
      <li>Caminho de tags raiz</li>
      <li>Descrição</li>
@@ -418,7 +418,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
    <td>
     <ul>
      <li>Espaço reservado</li>
-     <li>Nome da Propriedade*</li>
+     <li>Nome da propriedade*</li>
      <li>Descrição</li>
     </ul> 
    </td>

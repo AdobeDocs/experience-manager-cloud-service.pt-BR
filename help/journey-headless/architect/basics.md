@@ -2,7 +2,7 @@
 title: Conheça as noções básicas da modelagem de conteúdo
 description: Conheça as noções básicas da modelagem de conteúdo do seu CMS headless usando fragmentos de conteúdo.
 exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '900'
 ht-degree: 93%
@@ -153,8 +153,8 @@ Agora que você aprendeu o básico, o próximo passo é [Saber mais sobre como c
 
    * [Modelos de fragmento de conteúdo - Tipos de dados](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
 
-* [Conceitos de criação](/help/sites-cloud/authoring/getting-started/concepts.md)
+* [Conceitos de criação](/help/sites-cloud/authoring/author-publish.md)
 
-* [Manuseio básico](/help/sites-cloud/authoring/getting-started/basic-handling.md) - esta página se baseia principalmente no console **Sites**, mas muitos/a maioria dos recursos também são relevantes para a criação de **Fragmentos de conteúdo** no console **Ativos**.
+* [Manuseio básico](/help/sites-cloud/authoring/basic-handling.md) - esta página se baseia principalmente no console **Sites**, mas muitos/a maioria dos recursos também são relevantes para a criação de **Fragmentos de conteúdo** no console **Ativos**.
 
 * [Trabalho com Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/overview.md)

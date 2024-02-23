@@ -11,16 +11,16 @@ feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
 workflow-type: tm+mt
-source-wordcount: '2535'
-ht-degree: 17%
+source-wordcount: '2342'
+ht-degree: 14%
 
 ---
 
 # Alterar estilo dos Componentes principais da CIF do AEM {#style-aem-cif-core-components}
 
-A variável [Projeto CIF Venia](https://github.com/adobe/aem-cif-guides-venia) é uma base de código de referência para o uso de [Componentes principais da CIF](https://github.com/adobe/aem-core-cif-components). AEM Neste tutorial, você inspeciona o projeto de referência Venia e entende como o CSS e o JavaScript usados pelos componentes principais CIF são organizados. Você também pode criar um estilo usando CSS para atualizar o estilo padrão do **Teaser do produto** componente.
+A variável [Projeto CIF Venia](https://github.com/adobe/aem-cif-guides-venia) é uma base de código de referência para o uso de [Componentes principais do CIF](https://github.com/adobe/aem-core-cif-components). AEM Neste tutorial, você inspeciona o projeto de referência Venia e entende como o CSS e o JavaScript usados pelos componentes principais CIF são organizados. Você também pode criar um estilo usando CSS para atualizar o estilo padrão do **Teaser do produto** componente.
 
 >[!TIP]
 >
@@ -180,9 +180,9 @@ Em seguida, faça uma pequena alteração no estilo de Teaser para ver como `ui.
 
    **clientlib-base** - Uma biblioteca do cliente vazia que simplesmente incorpora as dependências necessárias do [Componentes principais do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR). A categoria é `venia.base`.
 
-   **clientlib-cif** - Uma biblioteca do cliente vazia que simplesmente incorpora as dependências necessárias do [Componentes principais da CIF do AEM](https://github.com/adobe/aem-core-cif-components). A categoria é `venia.cif`.
+   **clientlib-cif** - Uma biblioteca do cliente vazia que simplesmente incorpora as dependências necessárias do [AEM Componentes principais do CIF](https://github.com/adobe/aem-core-cif-components). A categoria é `venia.cif`.
 
-   **clientlib-grid** - Inclui o CSS para ativar o recurso de Grade responsiva AEM. O uso da grade AEM habilita [Modo de layout](/help/sites-cloud/authoring/features/responsive-layout.md) no Editor de AEM e dá aos autores de conteúdo a capacidade de redimensionar componentes. A categoria é `venia.grid` e está incorporado na `venia.base` biblioteca.
+   **clientlib-grid** - Inclui o CSS para ativar o recurso de Grade responsiva AEM. O uso da grade AEM habilita [Modo de layout](/help/sites-cloud/authoring/page-editor/responsive-layout.md) no Editor de AEM e dá aos autores de conteúdo a capacidade de redimensionar componentes. A categoria é `venia.grid` e está incorporado na `venia.base` biblioteca.
 
 1. Inspect os arquivos `customheaderlibs.html` e `customfooterlibs.html` debaixo `ui.apps/src/main/content/jcr_root/apps/venia/components/page`:
 
@@ -284,7 +284,7 @@ Há várias opções para incluir uma biblioteca do lado do cliente. Em seguida,
 
    Observe que outros modelos usam a mesma política, **Página de conteúdo**, **Landing Page** e assim por diante. Ao reutilizar a mesma política, ela garante que as mesmas bibliotecas de clientes sejam incluídas em todas as páginas.
 
-   A vantagem de utilizar modelos e políticas de página para gerenciar a inclusão das bibliotecas de clientes é que você pode alterar a política de acordo com o modelo. Por exemplo, talvez você esteja gerenciando duas marcas diferentes na mesma instância do AEM. Cada marca tem seu próprio estilo ou *tema* mas as bibliotecas base e o código são os mesmos. Outro exemplo: se você quisesse que uma bibliotecas do cliente maior fosse exibida apenas em determinadas páginas, seria possível fazer uma política de página exclusiva para esse modelo.
+   A vantagem de utilizar modelos e políticas de página para gerenciar a inclusão das bibliotecas de clientes é que você pode alterar a política de acordo com o modelo. Por exemplo, talvez você esteja gerenciando duas marcas diferentes na mesma instância do AEM. Cada marca tem seu próprio estilo ou *tema* mas as bibliotecas base e o código são os mesmos. Outro exemplo: se você quisesse que uma biblioteca do cliente maior fosse exibida apenas em determinadas páginas, seria possível criar uma política de página exclusiva para esse modelo.
 
 ## Desenvolvimento de Webpack local {#local-webpack-development}
 
@@ -473,7 +473,7 @@ AEM Você terminou de criar o estilo do seu primeiro Componente principal CIF e 
 
 ## Desafio extra {#bonus-challenge}
 
-Use o [Sistema de estilo AEM](/help/sites-cloud/authoring/features/style-system.md) para criar dois estilos que podem ser ativados ou desativados por um autor de conteúdo. [Desenvolvimento com o sistema de estilo](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/style-system.html?lang=pt-BR) A seção inclui etapas detalhadas e informações sobre como realizar essa tarefa.
+Use o [Sistema de estilo AEM](/help/sites-cloud/authoring/page-editor/style-system.md) para criar dois estilos que podem ser ativados ou desativados por um autor de conteúdo. [Desenvolvimento com o sistema de estilo](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/style-system.html?lang=pt-BR) A seção inclui etapas detalhadas e informações sobre como realizar essa tarefa.
 
 ![Desafio extra — Sistema de estilo](../assets/style-cif-component/bonus-challenge.png)
 

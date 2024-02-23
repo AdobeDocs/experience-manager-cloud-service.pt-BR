@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management,Publishing,Collaboration,Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: 4b05e8f8ae554e7c0881134ef24ca8ce35e3e2bf
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '4976'
 ht-degree: 6%
@@ -197,7 +197,7 @@ Para publicar vídeos no YouTube, você precisa ter um ou mais canais. Se você 
 
 ### Adicionar tags para publicação {#adding-tags-for-publishing}
 
-Para publicar seus vídeos no YouTube, o Experience Manager associa tags a um ou mais canais da YouTube. Para adicionar tags para publicação, consulte [Administrar tags](/help/sites-cloud/authoring/features/tags.md).
+Para publicar seus vídeos no YouTube, o Experience Manager associa tags a um ou mais canais da YouTube. Para adicionar tags para publicação, consulte [Administrar tags](/help/sites-cloud/authoring/sites-console/tags.md).
 
 Ou, se você pretende usar as tags padrão no Experience Manager, ignore esta tarefa e vá para [Configurar o YouTube no Experience Manager](#setting-up-youtube-in-aem).
 
@@ -390,11 +390,11 @@ Agora você associa as tags adicionadas anteriormente aos ativos de vídeo. Esse
 
 >[!NOTE]
 >
-Para publicar conteúdo do YouTube, o Experience Manager usa o **[!UICONTROL Publicar no YouTube]** fluxo de trabalho, que permite monitorar o progresso e visualizar as informações de falha.
+>Para publicar conteúdo do YouTube, o Experience Manager usa o **[!UICONTROL Publicar no YouTube]** fluxo de trabalho, que permite monitorar o progresso e visualizar as informações de falha.
 >
-Consulte [Monitorar o progresso da codificação de vídeo e da publicação no YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
+>Consulte [Monitorar o progresso da codificação de vídeo e da publicação no YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
 >
-Para obter informações mais detalhadas sobre o progresso, é possível monitorar o log do YouTube em replicação. No entanto, esteja ciente de que esse monitoramento requer acesso de administrador.
+>Para obter informações mais detalhadas sobre o progresso, é possível monitorar o log do YouTube em replicação. No entanto, esteja ciente de que esse monitoramento requer acesso de administrador.
 
 **Para publicar vídeos no seu canal do YouTube:**
 
@@ -430,7 +430,7 @@ Você pode obter uma cadeia de caracteres de URL do YouTube gerada pelo Dynamic 
 
 >[!NOTE]
 >
-O URL do YouTube não estará disponível para cópia até que você tenha publicado o ativo de vídeo no YouTube.
+>O URL do YouTube não estará disponível para cópia até que você tenha publicado o ativo de vídeo no YouTube.
 
 Para vincular URLs do YouTube ao seu aplicativo web:
 
@@ -448,13 +448,13 @@ Ao cancelar a publicação de um ativo de vídeo no Experience Manager, o vídeo
 
 >[!CAUTION]
 >
-Se você remover um vídeo diretamente do YouTube, o Experience Manager não estará ciente e continuará a se comportar como se o vídeo ainda estivesse publicado no YouTube. Sempre cancele a publicação de um ativo de vídeo do YouTube por meio do Experience Manager.
+>Se você remover um vídeo diretamente do YouTube, o Experience Manager não estará ciente e continuará a se comportar como se o vídeo ainda estivesse publicado no YouTube. Sempre cancele a publicação de um ativo de vídeo do YouTube por meio do Experience Manager.
 
 >[!NOTE]
 >
-Para remover conteúdo do YouTube, o Experience Manager usa o **[!UICONTROL Cancelar publicação no YouTube]** fluxo de trabalho, que permite monitorar o progresso e visualizar as informações de falha.
+>Para remover conteúdo do YouTube, o Experience Manager usa o **[!UICONTROL Cancelar publicação no YouTube]** fluxo de trabalho, que permite monitorar o progresso e visualizar as informações de falha.
 >
-Consulte [Monitorar o progresso da codificação de vídeo e da publicação no YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
+>Consulte [Monitorar o progresso da codificação de vídeo e da publicação no YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
 
 **Para desfazer a publicação de vídeos e removê-los do YouTube:**
 
@@ -495,19 +495,19 @@ Você pode monitorar o progresso, incluindo falha de codificação/publicação 
 
    >[!NOTE]
    >
-   Pode levar muito tempo para que as mensagens de erro/falha sejam gravadas devido a várias configurações de fluxo de trabalho no **[!UICONTROL tentativas]**, **[!UICONTROL atraso de repetição]**, e **[!UICONTROL timeout]** de [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), por exemplo:
+   >Pode levar muito tempo para que as mensagens de erro/falha sejam gravadas devido a várias configurações de fluxo de trabalho no **[!UICONTROL tentativas]**, **[!UICONTROL atraso de repetição]**, e **[!UICONTROL timeout]** de [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), por exemplo:
    >
-   * Configuração da fila de trabalhos do Apache Sling
-   * Manipulador de trabalho do processo externo do fluxo de trabalho do Adobe Granite
-   * Fila de tempo limite de fluxo de trabalho do Granite
+   >* Configuração da fila de trabalhos do Apache Sling
+   >* Manipulador de trabalho do processo externo do fluxo de trabalho do Adobe Granite
+   >* Fila de tempo limite de fluxo de trabalho do Granite
    >
-   Você pode ajustar a variável **[!UICONTROL tentativas]**, **[!UICONTROL atraso de repetição]**, e **[!UICONTROL timeout]** nessas configurações.
+   >Você pode ajustar a variável **[!UICONTROL tentativas]**, **[!UICONTROL atraso de repetição]**, e **[!UICONTROL timeout]** nessas configurações.
 
 1. Nos fluxos de trabalho em andamento, consulte Instâncias de fluxo de trabalho disponíveis em **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Instâncias]**.
 
    >[!NOTE]
    >
-   Você precisa de direitos administrativos para acessar o **[!UICONTROL Ferramentas]** menu.
+   >Você precisa de direitos administrativos para acessar o **[!UICONTROL Ferramentas]** menu.
 
    ![chlimage_1-433](/help/assets/dynamic-media/assets/chlimage_1-433.png)
 
@@ -521,25 +521,25 @@ Você pode monitorar o progresso, incluindo falha de codificação/publicação 
 
    >[!NOTE]
    >
-   Você precisa de direitos administrativos para acessar o **[!UICONTROL Ferramentas]** menu.
+   >Você precisa de direitos administrativos para acessar o **[!UICONTROL Ferramentas]** menu.
 
    ![chlimage_1-435](/help/assets/dynamic-media/assets/chlimage_1-435.png)
 
    >[!NOTE]
    >
-   Pode levar muito tempo para que a mensagem de erro seja gravada devido a várias configurações de fluxo de trabalho **[!UICONTROL tentativas]**, **[!UICONTROL atraso de repetição]**, e **[!UICONTROL timeout]** de [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), por exemplo:
+   >Pode levar muito tempo para que a mensagem de erro seja gravada devido a várias configurações de fluxo de trabalho **[!UICONTROL tentativas]**, **[!UICONTROL atraso de repetição]**, e **[!UICONTROL timeout]** de [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), por exemplo:
    >
-   * Configuração da fila de trabalhos do Apache Sling
-   * Manipulador de trabalho do processo externo do fluxo de trabalho do Adobe Granite
-   * Fila de tempo limite de fluxo de trabalho do Granite
+   >* Configuração da fila de trabalhos do Apache Sling
+   >* Manipulador de trabalho do processo externo do fluxo de trabalho do Adobe Granite
+   >* Fila de tempo limite de fluxo de trabalho do Granite
    >
-   Você pode ajustar a variável **[!UICONTROL tentativas]**, **[!UICONTROL atraso de repetição]**, e **[!UICONTROL timeout]** nessas configurações.
+   >Você pode ajustar a variável **[!UICONTROL tentativas]**, **[!UICONTROL atraso de repetição]**, e **[!UICONTROL timeout]** nessas configurações.
 
 1. Em fluxos de trabalho concluídos, consulte Arquivo de fluxo de trabalho disponível em **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Arquivar]**. O **[!UICONTROL Arquivo de fluxo de trabalho]** lista todas as atividades de fluxo de trabalho concluídas.
 
    >[!NOTE]
    >
-   Você precisa de direitos administrativos para acessar o **[!UICONTROL Ferramentas]** menu.
+   >Você precisa de direitos administrativos para acessar o **[!UICONTROL Ferramentas]** menu.
 
    ![chlimage_1-436](/help/assets/dynamic-media/assets/chlimage_1-436.png)
 
@@ -609,7 +609,7 @@ Para processar ativos usando um perfil de processamento, adicione um perfil a um
 
 >[!NOTE]
 >
-O formato de vídeo MXF ainda não é compatível com anotações de ativos de vídeo.
+>O formato de vídeo MXF ainda não é compatível com anotações de ativos de vídeo.
 
 1. No [!DNL Assets] console, selecione **[!UICONTROL Editar]** no cartão de ativos para exibir a página de detalhes do ativo.
 1. Para reproduzir o vídeo, clique em **[!UICONTROL Visualizar]**.
@@ -649,5 +649,5 @@ O formato de vídeo MXF ainda não é compatível com anotações de ativos de v
 
 >[!MORELIKETHIS]
 >
-* [Documentação de vídeo do Dynamic Media](/help/assets/dynamic-media/video.md).
-* [Saiba mais sobre o uso, os tipos e a configuração de perfis de processamento](/help/assets/asset-microservices-configure-and-use.md).
+>* [Documentação de vídeo do Dynamic Media](/help/assets/dynamic-media/video.md).
+>* [Saiba mais sobre o uso, os tipos e a configuração de perfis de processamento](/help/assets/asset-microservices-configure-and-use.md).

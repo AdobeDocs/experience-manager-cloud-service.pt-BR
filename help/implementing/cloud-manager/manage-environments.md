@@ -2,7 +2,7 @@
 title: Gerenciamento de ambientes
 description: Saiba mais sobre os tipos de ambientes que você pode criar e como criá-los para o seu projeto do Cloud Manager.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '2614'
 ht-degree: 80%
@@ -169,7 +169,7 @@ Um usuário com as permissões necessárias deve concluir as etapas a seguir ant
 
 Quando o acesso ao serviço de visualização estiver desbloqueado, o ícone de cadeado na frente do nome do serviço de visualização não será mais exibido .
 
-Uma vez ativado, será possível publicar conteúdo para o serviço de visualização usando a interface Gerenciar publicação no AEM. Consulte [Visualização de Conteúdo](/help/sites-cloud/authoring/fundamentals/previewing-content.md) para obter mais detalhes.
+Uma vez ativado, será possível publicar conteúdo para o serviço de visualização usando a interface Gerenciar publicação no AEM. Consulte [Visualização de Conteúdo](/help/sites-cloud/authoring/sites-console/previewing-content.md) para obter mais detalhes.
 
 >[!NOTE]
 >

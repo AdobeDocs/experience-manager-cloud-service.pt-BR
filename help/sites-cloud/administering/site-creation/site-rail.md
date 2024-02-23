@@ -4,20 +4,21 @@ description: Conheça os recursos avançados do painel Site para ajudá-lo a per
 feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '583'
-ht-degree: 81%
+ht-degree: 38%
 
 ---
 
-# Usar o painel Site para gerenciar o tema do site {#site-rail}
+
+# Usar o painel Site para gerenciar o tema do site {#site-panel}
 
 Conheça os recursos avançados do painel Site para ajudá-lo a personalizar e gerenciar facilmente o tema do site.
 
 ## Visão geral {#overview}
 
-O painel Site permite gerenciar os recursos de tema e modelo do site. [Assim como os painéis](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector) Árvore de conteúdo, Referências ou Linha do tempo, o painel Site é exibido mais à esquerda do console de sites, exibindo informações sobre o item selecionado. Ao contrário de outros painéis, o painel Site se aplica somente às raízes do Site.
+O painel Site permite gerenciar os recursos de tema e modelo do site. [Como outros painéis](/help/sites-cloud/authoring/sites-console/console-side-panel.md) como os painéis Árvore de conteúdo, Referências ou Linha do tempo, o painel Site é exibido mais à esquerda do console de sites, exibindo informações sobre o item selecionado. Ao contrário de outros painéis, o painel Site se aplica somente às raízes do Site.
 
 O painel Site é usado para gerenciar informações relacionadas ao tema e ao modelo do site, incluindo:
 
@@ -32,7 +33,7 @@ O painel Site é usado para gerenciar informações relacionadas ao tema e ao mo
 
 ## Baixar fontes de tema {#downloading-theme-sources}
 
-Ao criar um site no AEM com base em um [modelo de site,](site-templates.md) você pode baixar o [tema do site](site-themes.md) usando o painel Site.
+Ao criar um site no AEM com base em uma [modelo de site,](site-templates.md) você pode baixar o [tema do site](site-themes.md) usando o painel Site.
 
 Com o painel Site sendo exibido no console de sites, selecione a raiz do site para revelar informações de tema sobre ele.
 

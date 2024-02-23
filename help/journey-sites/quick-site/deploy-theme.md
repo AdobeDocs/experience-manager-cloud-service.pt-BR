@@ -2,10 +2,10 @@
 title: Implantar um tema personalizado
 description: Saiba como implantar o tema do site usando o pipeline.
 exl-id: fe065972-39db-4074-a802-85895c701efd
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: d2352e66b380f5a3654e2fc99ce4204b32066683
 workflow-type: tm+mt
-source-wordcount: '1014'
-ht-degree: 88%
+source-wordcount: '1002'
+ht-degree: 87%
 
 ---
 
@@ -112,7 +112,9 @@ Veja a seguir alguns recursos adicionais que explicam melhor alguns conceitos me
 * [Tema de site do AEM](https://github.com/adobe/aem-site-template-standard-theme-e2e) - este é o repositório GitHub do tema de site do AEM.
 * [npm](https://www.npmjs.com) - temas do AEM usados para criar sites rapidamente se baseiam em npm.
 * [webpack](https://webpack.js.org) - temas do AEM usados para criar sites rapidamente dependem do webpack.
-* [Criar e organizar páginas](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) - Este guia detalha como gerenciar páginas do seu site AEM, se você quiser personalizá-lo ainda mais após criá-lo a partir do modelo.
+* [Organizar páginas](/help/sites-cloud/authoring/sites-console/organizing-pages.md) - Este guia detalha como organizar páginas do seu site AEM.
+* [Criação de páginas](/help/sites-cloud/authoring/sites-console/creating-pages.md) - Este guia detalha como adicionar novas páginas ao site.
+* [Gerenciamento de páginas](/help/sites-cloud/authoring/sites-console/managing-pages.md) - Este guia detalha como gerenciar as páginas do site, incluindo movimentação, cópia e exclusão.
 * [Como trabalhar com pacotes](/help/implementing/developing/tools/package-manager.md) - Os pacotes permitem a importação e exportação de conteúdo do repositório. Este documento explica como trabalhar com pacotes no AEM 6.5, o que também se aplica ao AEMaaCS.
 * [Jornada de integração](/help/journey-onboarding/overview.md) - este guia serve como ponto de partida para garantir que suas equipes estejam preparadas e tenham acesso ao AEM as a Cloud Service.
 * [Documentação do Adobe Experience Manager Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=pt-BR) - explore a documentação do Cloud Manager para obter detalhes completos sobre seus recursos.

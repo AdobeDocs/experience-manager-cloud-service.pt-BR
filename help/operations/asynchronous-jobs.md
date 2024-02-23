@@ -2,9 +2,9 @@
 title: Trabalhos assíncronos
 description: O Adobe Experience Manager otimiza o desempenho ao concluir de forma assíncrona algumas tarefas que consomem muitos recursos como operações em segundo plano.
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '854'
 ht-degree: 64%
 
 ---
@@ -31,7 +31,7 @@ Você pode visualizar o status de trabalhos assíncronos na **[!UICONTROL Opera�
 
 ## Monitorar o status de operações assíncronas {#monitor-the-status-of-asynchronous-operations}
 
-Sempre que o AEM processar uma operação de modo assíncrono, você receberá uma notificação na sua [caixa de entrada](/help/sites-cloud/authoring/getting-started/inbox.md) e por email (se ativada essa opção).
+Sempre que o AEM processar uma operação de modo assíncrono, você receberá uma notificação na sua [caixa de entrada](/help/sites-cloud/authoring/inbox.md) e por email (se ativada essa opção).
 
 Para visualizar o status das operações assíncronas em detalhes, navegue até o **[!UICONTROL Operações em segundo plano]** página.
 
@@ -136,6 +136,6 @@ Se o número de ativos/pastas ou referências que serão movidos exceder o limit
 
 >[!MORELIKETHIS]
 >
->* [Criar e organizar páginas](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)
+>* [Gerenciamento de páginas](/help/sites-cloud/authoring/sites-console/managing-pages.md)
 >* [Importar e exportar metadados de ativos em massa](/help/assets/metadata-import-export.md).
 >* [Usar ativos conectados para compartilhar ativos DAM de implantações remotas](/help/assets/use-assets-across-connected-assets-instances.md).

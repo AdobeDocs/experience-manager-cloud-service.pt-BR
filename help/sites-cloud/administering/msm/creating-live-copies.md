@@ -4,7 +4,7 @@ description: Saiba como criar e sincronizar Live Copies para reutilizar seu cont
 feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '4270'
 ht-degree: 94%
@@ -53,7 +53,7 @@ As etapas a seguir estão disponíveis para um administrador em uma instância d
 
 Para criar uma configuração de blueprint:
 
-1. [Navegue](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) até o menu **Ferramentas** e, em seguida, selecione o menu **Sites**.
+1. [Navegue](/help/sites-cloud/authoring/basic-handling.md#global-navigation) até o menu **Ferramentas** e, em seguida, selecione o menu **Sites**.
 1. Selecione **Blueprints** para abrir o console de **Configurações de blueprint**:
 
    ![Configurações de blueprint](../assets/blueprint-configurations.png)
@@ -72,7 +72,7 @@ Para criar uma configuração de blueprint:
 
 É possível editar ou excluir uma configuração de blueprint existente:
 
-1. [Navegue](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) até o menu **Ferramentas** e, em seguida, selecione o menu **Sites**.
+1. [Navegue](/help/sites-cloud/authoring/basic-handling.md#global-navigation) até o menu **Ferramentas** e, em seguida, selecione o menu **Sites**.
 1. Selecione **Blueprints** para abrir o console de **Configurações de blueprint**:
 
    ![Configurações de blueprint](../assets/blueprint-configurations.png)
@@ -211,7 +211,7 @@ Para exibir as propriedades:
 
 ### Visualizar as Live Copies de uma página de blueprint {#seeing-the-live-copies-of-a-blueprint-page}
 
-As páginas de blueprint (referenciadas em uma configuração de blueprint) fornecem uma lista das páginas Live Copy que usam a página atual (blueprint) como origem. Use esta lista para monitorar as Live Copies. A lista é exibida na guia **Blueprint** das [propriedades da página](/help/sites-cloud/authoring/fundamentals/page-properties.md).
+As páginas de blueprint (referenciadas em uma configuração de blueprint) fornecem uma lista das páginas Live Copy que usam a página atual (blueprint) como origem. Use esta lista para monitorar as Live Copies. A lista é exibida na guia **Blueprint** das [propriedades da página](/help/sites-cloud/authoring/sites-console/page-properties.md).
 
 ![Guia Blueprint das propriedades da página](../assets/live-copy-blueprint-tab.png)
 
@@ -249,7 +249,7 @@ As implantações são processadas como processos assíncronos e podem ser verif
 
 #### Implantar um blueprint a partir do painel de referência {#roll-out-a-blueprint-from-the-reference-rail}
 
-1. No console do **Sites**, selecione a página na Live Copy e abra o painel **[Referências](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** (na barra de ferramentas).
+1. No console do **Sites**, selecione a página na Live Copy e abra o painel **[Referências](/help/sites-cloud/authoring/basic-handling.md#references)** (na barra de ferramentas).
 1. Selecione a opção **Blueprint** na lista para mostrar os blueprints associados a esta página.
 1. Selecione o blueprint desejado na lista.
 1. Selecione **Implantação**.
@@ -575,8 +575,8 @@ A ação [**Redefinir** também está disponível na Visão geral da Live Copy](
 
 Para acompanhar as alterações feitas, é possível exibir a página do blueprint em **Referências** e compará-la com a página Live Copy:
 
-1. No console do **Sites**, [navegue até uma página de blueprint ou do Live Copy e selecione-a](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. Abra o painel **[Referências](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** e, dependendo do contexto, selecione:
+1. No console do **Sites**, [navegue até uma página de blueprint ou do Live Copy e selecione-a](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
+1. Abra o painel **[Referências](/help/sites-cloud/authoring/basic-handling.md#references)** e, dependendo do contexto, selecione:
 
    * **Blueprint**
    * **Live Copies**
@@ -592,7 +592,7 @@ Para acompanhar as alterações feitas, é possível exibir a página do bluepri
 
 1. As páginas do Live Copy e de blueprint serão abertas lado a lado.
 
-   Para obter informações completas sobre como usar o recurso de comparação, consulte [Diferencial de página](/help/sites-cloud/authoring/features/page-diff.md).
+   Para obter informações completas sobre como usar o recurso de comparação, consulte [Diferencial de página](/help/sites-cloud/authoring/sites-console/page-diff.md).
 
 ## Desconectar uma Live Copy {#detaching-a-live-copy}
 

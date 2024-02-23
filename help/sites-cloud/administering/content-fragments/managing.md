@@ -4,7 +4,7 @@ description: Saiba como gerenciar os fragmentos de conteúdo do AEM no console e
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
 source-wordcount: '2620'
 ht-degree: 46%
@@ -32,7 +32,7 @@ Depois de definir o [Modelos de fragmentos do conteúdo](#creating-a-content-mod
 >Os fragmentos de conteúdo podem ser usados:
 >
 >* para [Entrega de conteúdo headless usando fragmentos de conteúdo com o GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md),
->* ao criar páginas; consulte [Criação de páginas com fragmentos de conteúdo](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+>* ao criar páginas; consulte [Criação de páginas com fragmentos de conteúdo](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 >[!NOTE]
 >
@@ -340,7 +340,7 @@ Após a publicação, o status do fragmento será atualizado e ficará visível 
 
 >[!NOTE]
 >
->Além disso, ao [publicar uma página que use o fragmento](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); o fragmento será listado nas referências da página.
+>Além disso, ao [publicar uma página que use o fragmento](/help/sites-cloud/authoring/fragments/content-fragments.md#publishing); o fragmento será listado nas referências da página.
 
 ## Desfazer a publicação de um fragmento {#unpublishing-a-fragment}
 

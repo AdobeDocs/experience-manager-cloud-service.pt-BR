@@ -2,10 +2,10 @@
 title: Guia de referência de componentes
 description: Um guia de referência do desenvolvedor para os detalhes dos componentes e sua estrutura
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
-source-wordcount: '3642'
-ht-degree: 2%
+source-wordcount: '3481'
+ht-degree: 1%
 
 ---
 
@@ -103,7 +103,7 @@ A definição de um componente pode ser dividida da seguinte forma:
 * **Nó raiz**:
    * `<mycomponent> (cq:Component)` - Nó hierárquico do componente.
 * **Propriedades vitais**:
-   * `jcr:title` - Título do componente; por exemplo, usado como um rótulo quando o componente é listado no [Navegador de componentes](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) e [Console de componentes](/help/sites-cloud/authoring/features/components-console.md)
+   * `jcr:title` - Título do componente; por exemplo, usado como um rótulo quando o componente é listado no [Navegador de componentes](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser) e [Console de componentes](/help/sites-cloud/authoring/components-console.md)
    * `jcr:description` - Descrição do componente; usado como dica de passar o mouse sobre o navegador de componentes e console Componentes
    * Consulte a seção [Ícone do componente](#component-icon) para obter detalhes
 * **Nós-filhos vitais**:
@@ -141,7 +141,7 @@ Se nenhuma das propriedades acima (`cq:icon`, `abbreviation`, `cq:icon.png` ou `
 
 Para cancelar a herança de ícones de supercomponentes, defina um valor vazio `abbreviation` no componente reverterá para o comportamento padrão.
 
-A variável [Console de componentes](/help/sites-cloud/authoring/features/components-console.md#component-details) mostra como o ícone de um componente específico é definido.
+A variável [Console de componentes](/help/sites-cloud/authoring/components-console.md#component-details) mostra como o ícone de um componente específico é definido.
 
 #### Exemplo de ícone do SVG {#svg-icon-example}
 
@@ -166,7 +166,7 @@ Um componente é um nó do tipo `cq:Component` e tem as seguintes propriedades e
 | Nome | Tipo | Descrição |
 |---|---|---|
 | `.` | `cq:Component` | Representa o componente atual. Um componente é do tipo de nó `cq:Component`. |
-| `componentGroup` | `String` | Representa o grupo sob o qual o componente pode ser selecionado na [Navegador de componentes](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). Um valor que começa com `.` é usado para componentes que não estão disponíveis para seleção na interface do usuário, como componentes básicos dos quais outros componentes herdam. |
+| `componentGroup` | `String` | Representa o grupo sob o qual o componente pode ser selecionado na [Navegador de componentes](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser). Um valor que começa com `.` é usado para componentes que não estão disponíveis para seleção na interface do usuário, como componentes básicos dos quais outros componentes herdam. |
 | `cq:isContainer` | `Boolean` | Isso indica se o componente é um componente de contêiner e, portanto, pode conter outros componentes, como um sistema de parágrafo. |
 | `cq:dialog` | `nt:unstructured` | Essa é a definição da caixa de diálogo de edição do componente. |
 | `cq:design_dialog` | `nt:unstructured` | Esta é a definição da caixa de diálogo de design do componente. |
@@ -199,7 +199,7 @@ Os nós filhos de interesse específico incluem:
 
 ### Caixas de diálogo {#dialogs}
 
-As caixas de diálogo são um elemento essencial do componente, pois fornecem uma interface para os autores configurarem o componente em uma página de conteúdo e fornecem entrada para esse componente. Consulte a [documentação de criação](/help/sites-cloud/authoring/fundamentals/editing-content.md) para obter detalhes sobre como os autores de conteúdo interagem com os componentes.
+As caixas de diálogo são um elemento essencial do componente, pois fornecem uma interface para os autores configurarem o componente em uma página de conteúdo e fornecem entrada para esse componente. Consulte a [documentação de criação](/help/sites-cloud/authoring/page-editor/edit-content.md) para obter detalhes sobre como os autores de conteúdo interagem com os componentes.
 
 Dependendo da complexidade do componente, sua caixa de diálogo pode precisar de uma ou mais guias.
 
@@ -221,9 +221,9 @@ Na caixa de diálogo, os campos individuais são definidos:
 
 ### Caixas de diálogo de design {#design-dialogs}
 
-As caixas de diálogo de design são semelhantes às caixas de diálogo usadas para editar e configurar conteúdo, mas fornecem a interface para que os autores de modelo pré-configurem e forneçam detalhes de design para esse componente em um modelo de página. Os modelos de página são usados pelos autores de conteúdo para criar páginas de conteúdo. Consulte a [documentação do modelo](/help/sites-cloud/authoring/features/templates.md) para obter detalhes sobre como os modelos são criados.
+As caixas de diálogo de design são semelhantes às caixas de diálogo usadas para editar e configurar conteúdo, mas fornecem a interface para que os autores de modelo pré-configurem e forneçam detalhes de design para esse componente em um modelo de página. Os modelos de página são usados pelos autores de conteúdo para criar páginas de conteúdo. Consulte a [documentação do modelo](/help/sites-cloud/authoring/sites-console/templates.md) para obter detalhes sobre como os modelos são criados.
 
-[As caixas de diálogo de design são usadas ao editar um modelo de página](/help/sites-cloud/authoring/features/templates.md), embora eles não sejam necessários para todos os componentes. Por exemplo, a variável **Título** e **Componentes da imagem** ambos têm diálogos de design, enquanto o **Mídias sociais que compartilham o componente** não.
+[As caixas de diálogo de design são usadas ao editar um modelo de página](/help/sites-cloud/authoring/sites-console/templates.md), embora eles não sejam necessários para todos os componentes. Por exemplo, a variável **Título** e **Componentes da imagem** ambos têm diálogos de design, enquanto o **Mídias sociais que compartilham o componente** não.
 
 ### Interface do usuário do Coral e do Granite {#coral-and-granite}
 
@@ -278,7 +278,7 @@ Depois de criar um componente, você deve ativá-lo para usá-lo. Seu uso mostra
 
 Depois que um componente é definido, ele deve ser disponibilizado para uso. Para disponibilizar um componente para uso em um modelo, você deve ativar o componente na política do contêiner de layout do modelo.
 
-Consulte a [documentação do modelo](/help/sites-cloud/authoring/features/templates.md) para obter detalhes sobre como os modelos são criados.
+Consulte a [documentação do modelo](/help/sites-cloud/authoring/sites-console/templates.md) para obter detalhes sobre como os modelos são criados.
 
 ### Componentes e o conteúdo que eles criam {#components-and-the-content-they-create}
 
@@ -366,7 +366,7 @@ Um editor local não é necessário/significativo para cada tipo de componente.
 
 A variável `cq:inplaceEditing` nó (tipo de nó `cq:InplaceEditingConfig`) define uma configuração de edição no local para o componente. Ele pode ter as seguintes propriedades:
 
-| Nome da Propriedade | Tipo de propriedade | Valor da propriedade |
+| Nome de propriedade | Tipo de propriedade | Valor de propriedade |
 |---|---|---|
 | `active` | `Boolean` | `true` para ativar a edição no local do componente. |
 | `configPath` | `String` | Caminho da configuração do editor, que pode ser especificado por um nó de configuração |
@@ -394,7 +394,7 @@ Para fazer isso, você precisa saber sobre a biblioteca de widgets subjacente co
 
 A variável `cq:listeners` nó (tipo de nó `cq:EditListenersConfig`) define o que acontece antes ou depois de uma ação no componente. A tabela a seguir define suas possíveis propriedades.
 
-| Nome da Propriedade | Valor da propriedade |
+| Nome de propriedade | Valor de propriedade |
 |---|---|
 | `beforedelete` | O manipulador é acionado antes da remoção do componente. |
 | `beforeedit` | O manipulador é acionado antes que o componente seja editado. |
@@ -469,7 +469,7 @@ Tudo o que você precisa fazer é colocar um `README.md` na estrutura do compone
 
 ![README.md na estrutura do componente](assets/components-documentation.png)
 
-Essa marcação será exibida no campo [Console de componentes](/help/sites-cloud/authoring/features/components-console.md).
+Essa marcação será exibida no campo [Console de componentes](/help/sites-cloud/authoring/components-console.md).
 
 ![README.md visível no console Componentes](assets/components-documentation-console.png)
 

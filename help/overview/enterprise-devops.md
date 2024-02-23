@@ -2,8 +2,8 @@
 title: DevOps empresarial
 description: Saiba mais sobre os processos, os métodos e a comunicação necessários para facilitar a implantação e simplificar a colaboração.
 exl-id: c8da1fd7-fe3e-4c7b-8fe7-1f7faf02769c
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
-workflow-type: ht
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+workflow-type: tm+mt
 source-wordcount: '1009'
 ht-degree: 100%
 
@@ -66,7 +66,7 @@ O ambiente de preparo deve ser um espelho do ambiente de produção, incluindo a
 
 ### Produção - Autor e publicação {#production-author-and-publish}
 
-O ambiente de produção consiste em ambientes que [criam e publicam](/help/sites-cloud/authoring/getting-started/concepts.md) sua implementação.
+O ambiente de produção consiste em ambientes que [criam e publicam](/help/sites-cloud/authoring/author-publish.md) sua implementação.
 
 Um ambiente de produção consiste em pelo menos uma instância de autor e uma instância de publicação:
 

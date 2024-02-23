@@ -2,7 +2,7 @@
 title: Gerenciamento de fragmentos de conteúdo (Ativos - Fragmentos de conteúdo)
 description: Saiba como usar o console de Ativos para gerenciar os fragmentos de conteúdo de AEM, como a base do conteúdo headless ou para a criação de páginas.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '1885'
 ht-degree: 65%
@@ -29,7 +29,7 @@ O [Editor de fragmentos de conteúdo](#opening-the-fragment-editor) fornece vár
 >
 >Os fragmentos de conteúdo podem ser usados:
 >
->* ao criar páginas; consulte [Criação de páginas com fragmentos de conteúdo](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+>* ao criar páginas; consulte [Criação de páginas com fragmentos de conteúdo](/help/sites-cloud/authoring/fragments/content-fragments.md).
 >* para [entrega de conteúdo headless usando fragmentos de conteúdo com GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
 
 >[!NOTE]
@@ -94,7 +94,7 @@ O método para criar um fragmento de conteúdo é:
 No **Assets** console de uma variedade de ações estão disponíveis para seus fragmentos de conteúdo:
 
 * Na barra de ferramentas; após a seleção do fragmento, todas as ações apropriadas ficam disponíveis.
-* Como [ações rápidas](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions); um subconjunto de ações disponíveis para os cartões de fragmento individuais.
+* Como [ações rápidas](/help/sites-cloud/authoring/basic-handling.md#quick-actions); um subconjunto de ações disponíveis para os cartões de fragmento individuais.
 
 ![Ações na barra de ferramentas](assets/cfm-managing-02.png)
 
@@ -299,16 +299,16 @@ Além das opções padrão, a [Linha de tempo](/help/assets/manage-digital-asset
 
 >[!NOTE]
 >
-Os comentários são:
+>Os comentários são:
 >
-* Uma funcionalidade padrão para todos os ativos
-* Feitos na Linha de tempo
-* Relacionados ao ativo de fragmento
+>* Uma funcionalidade padrão para todos os ativos
+>* Feitos na Linha de tempo
+>* Relacionados ao ativo de fragmento
 >
-As anotações (para fragmentos de conteúdo) são:
+>As anotações (para fragmentos de conteúdo) são:
 >
-* Inseridas no editor de fragmentos
-* Específicas de um segmento de texto selecionado no fragmento
+>* Inseridas no editor de fragmentos
+>* Específicas de um segmento de texto selecionado no fragmento
 >
 
 Por exemplo:
@@ -339,7 +339,7 @@ Eles são mostrados lado a lado, onde:
 
 >[!NOTE]
 >
-Não é possível editar o conteúdo do fragmento ao comparar fragmentos.
+>Não é possível editar o conteúdo do fragmento ao comparar fragmentos.
 
 ![Comparação de variações](assets/cfm-managing-06.png)
 
@@ -357,9 +357,9 @@ Você pode reverter para uma versão específica do fragmento:
 
 >[!CAUTION]
 >
-Se o fragmento for baseado em um modelo, é preciso certificar-se de que o [modelo foi publicado](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
+>Se o fragmento for baseado em um modelo, é preciso certificar-se de que o [modelo foi publicado](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
 >
-Se você publicar um fragmento de conteúdo cujo modelo ainda não foi publicado, uma lista de seleção indicará isso e o modelo será publicado junto com o fragmento.
+>Se você publicar um fragmento de conteúdo cujo modelo ainda não foi publicado, uma lista de seleção indicará isso e o modelo será publicado junto com o fragmento.
 
 Os fragmentos de conteúdo devem ser publicados para uso no ambiente de publicação. Isso é feito usando a funcionalidade padrão do Assets:
 
@@ -371,11 +371,11 @@ Isso pode ser acessado:
 * Após a criação; uso de [ações disponíveis no console de Ativos](#actions-for-a-content-fragment-assets-console).
 * No [Editor de fragmento de conteúdo](#toolbar-actions-in-the-content-fragment-editor).
 
-Além disso, quando você [publicar uma página que use o fragmento](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); o fragmento é listado nas referências da página.
+Além disso, quando você [publicar uma página que use o fragmento](/help/sites-cloud/authoring/fragments/content-fragments.md#publishing); o fragmento é listado nas referências da página.
 
 >[!CAUTION]
 >
-Depois que um fragmento tiver sido publicado e/ou referenciado, o AEM exibirá um aviso quando um autor abrir o fragmento para edição novamente. Isso serve para avisar que as alterações no fragmento também afetarão as páginas referenciadas.
+>Depois que um fragmento tiver sido publicado e/ou referenciado, o AEM exibirá um aviso quando um autor abrir o fragmento para edição novamente. Isso serve para avisar que as alterações no fragmento também afetarão as páginas referenciadas.
 
 ## Excluir um fragmento {#deleting-a-fragment}
 
@@ -386,11 +386,11 @@ Para excluir um fragmento:
 
    >[!NOTE]
    >
-   A opção **Excluir** não está disponível como uma ação rápida.
+   >A opção **Excluir** não está disponível como uma ação rápida.
 
 3. Selecione **Excluir** na barra de ferramentas.
 4. Confirme a ação **Excluir**.
 
    >[!CAUTION]
    >
-   Se o fragmento já estiver referenciado em uma página, você verá uma mensagem de aviso e será solicitado a confirmar se deseja continuar com uma **Exclusão forçada**. O fragmento, junto com seu componente de fragmento de conteúdo, é excluído de qualquer página de conteúdo.
+   >Se o fragmento já estiver referenciado em uma página, você verá uma mensagem de aviso e será solicitado a confirmar se deseja continuar com uma **Exclusão forçada**. O fragmento, junto com seu componente de fragmento de conteúdo, é excluído de qualquer página de conteúdo.

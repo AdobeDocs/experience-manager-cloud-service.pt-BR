@@ -2,10 +2,10 @@
 title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2022.10.0.
 description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2022.10.0.
 exl-id: 8fce7c50-f322-4bcf-bd76-390faedfd5b7
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
-source-wordcount: '835'
-ht-degree: 77%
+source-wordcount: '833'
+ht-degree: 78%
 
 ---
 
@@ -23,7 +23,7 @@ A seção a seguir descreve as notas de versão de recurso da versão 2022.10.0 
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento da versão atual (2022.10.0) do [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] é 10 de novembro de 2022. A próxima versão (2023.1.0) mensal está planejada para 9 de fevereiro de 2023.
+A data de lançamento da versão atual (2022.10.0) do [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] é 10 de novembro de 2022. A próxima versão (2023.1.0) mensal está planejada para sexta-feira, 9 de fevereiro de 2023.
 
 ## Vídeo da versão {#release-video}
 
@@ -36,7 +36,7 @@ Assista ao vídeo de Visão geral da versão de outubro de 2022 que exibe um res
 
 ### Novos recursos no [!DNL Sites] {#sites-features}
 
-* A variável [Guia Personalização para Fragmentos de experiência](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) O permite recursos de especificação de segmentação para o Editor de fragmento de experiência e a flexibilidade para criar Fragmentos de experiência aninhados, nos quais as variações de cabeçalhos e rodapés podem ser criadas para vários segmentos. Antes do lançamento desse recurso, a personalização oferecida pelo AEM só está disponível para páginas do site, mas não para Fragmentos de experiência
+* A variável [Guia Personalização para Fragmentos de experiência](/help/sites-cloud/authoring/fragments/content-fragments.md#personalization-experience-fragment) O permite recursos de especificação de segmentação para o Editor de fragmento de experiência e a flexibilidade para criar Fragmentos de experiência aninhados, nos quais as variações de cabeçalhos e rodapés podem ser criadas para vários segmentos. Antes do lançamento desse recurso, a personalização oferecida pelo AEM só está disponível para páginas do site, mas não para Fragmentos de experiência
 
 * O [Console do Fragmento do conteúdo](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) agora permite que os usuários gerenciem com eficiência fragmentos de conteúdo traduzidos. Um acesso de 1 clique também foi fornecido para exibir todas as cópias de idioma. Os usuários também podem filtrar a exibição de tabela pela localidade de seu interesse.
 

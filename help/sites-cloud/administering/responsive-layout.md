@@ -1,7 +1,7 @@
 ---
 title: Configurar o contêiner de layout e o modo de layout
 description: Saiba como configurar o contêiner de layout e o modo de layout para ativar layouts responsivos para seus autores de conteúdo.
-source-git-commit: 4ae0ae4fbf8f6a97434628f5f6049720c6c43118
+source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
 workflow-type: tm+mt
 source-wordcount: '1250'
 ht-degree: 3%
@@ -11,11 +11,11 @@ ht-degree: 3%
 
 # Configurar o contêiner de layout e o modo de layout {#configuring-layout-container-and-layout-mode}
 
-[Layout responsivo](/help/sites-cloud/authoring/features/responsive-layout.md) é um mecanismo para realizar [web design responsivo.](https://en.wikipedia.org/wiki/Responsive_web_design) Isso permite que o autor de conteúdo crie páginas da Web com um layout e dimensões dependentes dos dispositivos que seus usuários usam.
+[Layout responsivo](/help/sites-cloud/authoring/page-editor/responsive-layout.md) é um mecanismo para realizar [web design responsivo.](https://en.wikipedia.org/wiki/Responsive_web_design) Isso permite que o autor de conteúdo crie páginas da Web com um layout e dimensões dependentes dos dispositivos que seus usuários usam.
 
 O AEM permite um layout responsivo para suas páginas usando uma combinação de mecanismos:
 
-* **[Contêiner de layout](/help/sites-cloud/authoring/features/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)** - Esse componente fornece um sistema de parágrafo de grade que permite adicionar e posicionar componentes em uma grade responsiva.
+* **[Contêiner de layout](/help/sites-cloud/authoring/page-editor/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)** - Esse componente fornece um sistema de parágrafo de grade que permite adicionar e posicionar componentes em uma grade responsiva.
    * Ela pode ser usada como o parsys padrão da página e/ou disponibilizada aos autores no navegador de componentes.
    * O padrão **Contêiner de layout** o componente é definido em `/libs/wcm/foundation/components/responsivegrid`.
    * É possível definir contêineres de layout:
@@ -23,8 +23,8 @@ O AEM permite um layout responsivo para suas páginas usando uma combinação de
       * Como o parsys padrão da página.
       * Como componente e parsys padrão.
          * Você pode ter o contêiner de layout como padrão para a página, permitindo que o usuário adicione mais contêineres de layout aqui; por exemplo, para obter o controle da coluna.
-* **[Modo de layout](/help/sites-cloud/authoring/fundamentals/environment-tools.md)** - Depois que o container de layout é posicionado na página, você pode usar o **Layout** para posicionar o conteúdo na grade responsiva.
-* **[Emulador](/help/sites-cloud/authoring/features/responsive-layout.md#selecting-a-device-to-emulate)** - Isso permite criar e editar sites responsivos que reorganizam o layout de acordo com o tamanho do dispositivo ou da janela, redimensionando componentes interativamente. Usuários podem ver como o conteúdo é renderizado usando o emulador.
+* **[Modo de layout](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)** - Depois que o container de layout é posicionado na página, você pode usar o **Layout** para posicionar o conteúdo na grade responsiva.
+* **[Emulador](/help/sites-cloud/authoring/page-editor/responsive-layout.md#selecting-a-device-to-emulate)** - Isso permite criar e editar sites responsivos que reorganizam o layout de acordo com o tamanho do dispositivo ou da janela, redimensionando componentes interativamente. Usuários podem ver como o conteúdo é renderizado usando o emulador.
 
 Com esses mecanismos de grade responsivos, você pode:
 
@@ -220,9 +220,9 @@ Para um layout responsivo eficaz, o autor de conteúdo deve ser capaz de arrasta
 
 Para permitir que os autores adicionem outras grades responsivas às páginas de conteúdo, é necessário ativar o componente Contêiner de layout para a página. Você pode fazer isso usando:
 
-* **Por meio do ambiente do autor** - [Editar seus modelos de página](/help/sites-cloud/authoring/features/templates.md) para ativar o Contêiner de layout de uma página.
+* **Por meio do ambiente do autor** - [Editar seus modelos de página](/help/sites-cloud/authoring/sites-console/templates.md) para ativar o Contêiner de layout de uma página.
 * **Definição de componente** - Utilização `allowedComponent` ou uma inclusão estática ao definir o componente.
 
 ### Configurar a grade do contêiner de layout {#configure-the-grid-of-the-layout-container}
 
-Você pode configurar o número de colunas disponíveis para cada instância específica do container de layout [editando seus modelos de página.](/help/sites-cloud/authoring/features/templates.md)
+Você pode configurar o número de colunas disponíveis para cada instância específica do container de layout [editando seus modelos de página.](/help/sites-cloud/authoring/sites-console/templates.md)

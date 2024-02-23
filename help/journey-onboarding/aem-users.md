@@ -4,9 +4,9 @@ description: Depois que o administrador do sistema configurar os recursos de nuv
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 86700cce-139f-451e-9c21-b38b6332f773
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '577'
+source-wordcount: '576'
 ht-degree: 93%
 
 ---
@@ -83,5 +83,5 @@ Se você estiver interessado em como desenvolvedores e gerentes de implantação
 
 A seguir estão recursos adicionais e opcionais se quiser ir além do conteúdo da jornada de integração.
 
-[Guia de início rápido sobre páginas de autoria](/help/sites-cloud/authoring/getting-started/quick-start.md) - Comece aqui para obter uma rápida visão geral dos fundamentos de autoria no AEM.
+[Guia de início rápido sobre páginas de autoria](/help/sites-cloud/authoring/quick-start.md) - Comece aqui para obter uma rápida visão geral dos fundamentos de autoria no AEM.
 [Jornada de autoria sem comando](/help/journey-headless/author/overview.md) - Se quiser criar conteúdo sem comando, siga esta introdução guiada.

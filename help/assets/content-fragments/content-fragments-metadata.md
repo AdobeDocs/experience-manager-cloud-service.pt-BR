@@ -1,11 +1,11 @@
 ---
 title: Metadados - Propriedades do fragmento (Ativos - Fragmentos de conteúdo)
-description: Veja como visualizar e editar as propriedades de metadados dos fragmentos de conteúdo do
+description: Veja como visualizar e editar as propriedades de metadados dos fragmentos de conteúdo.
 exl-id: bc67480d-a1e4-4ef9-b811-8bd110f70369
-source-git-commit: ceab75d3592a461478da3250a41ce00b6d4f31ef
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '274'
-ht-degree: 69%
+ht-degree: 64%
 
 ---
 
@@ -38,7 +38,7 @@ Você pode visualizar e editar os metadados (propriedades) dos fragmentos de con
    * **Título**
    * **Descrição**
    * **Tags**
-      * As [Tags](/help/sites-cloud/authoring/features/tags.md) são particularmente eficientes ao organizar os fragmentos, pois podem ser usadas para a classificação de conteúdo e taxonomia. As tags podem ser usadas para encontrar conteúdo (por tags) e aplicar operações em massa.
+      * As [Tags](/help/sites-cloud/authoring/sites-console/tags.md) são particularmente eficientes ao organizar os fragmentos, pois podem ser usadas para a classificação de conteúdo e taxonomia. As tags podem ser usadas para encontrar conteúdo (por tags) e aplicar operações em massa.
 Por exemplo, você pode marcar fragmentos relevantes como “lançamento de Natal” para permitir a navegação somente entre eles como um subconjunto ou copiá-los para uso com outro lançamento futuro em uma nova pasta.
 
         >[!NOTE]

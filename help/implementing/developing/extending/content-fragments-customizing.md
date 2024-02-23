@@ -2,10 +2,10 @@
 title: Personalização e extensão de fragmentos de conteúdo
 description: Um fragmento de conteúdo estende um ativo padrão. Saiba como personalizá-los.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
-source-wordcount: '1782'
-ht-degree: 4%
+source-wordcount: '1689'
+ht-degree: 1%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 4%
 
 No Adobe Experience Manager as a Cloud Service, um fragmento de conteúdo estende um ativo padrão; consulte:
 
-* [Criação e gerenciamento de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/overview.md) e [Criação de página com fragmentos de conteúdo](/help/sites-cloud/authoring/fundamentals/content-fragments.md) para obter mais informações sobre fragmentos de conteúdo.
+* [Criação e gerenciamento de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/overview.md) e [Criação de página com fragmentos de conteúdo](/help/sites-cloud/authoring/fragments/content-fragments.md) para obter mais informações sobre fragmentos de conteúdo.
 
 * [Gerenciamento de ativos](/help/assets/manage-digital-assets.md) para obter mais informações sobre ativos padrão.
 
@@ -94,9 +94,9 @@ Para integrar ao Assets principal:
 
 >[!CAUTION]
 >
->A variável [O componente Fragmento de conteúdo faz parte dos Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=pt-BR). Consulte [Desenvolvimento dos Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=pt-BR) para obter mais detalhes.
+>A variável [O componente Fragmento de conteúdo faz parte dos Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=pt-BR). Consulte [Desenvolvimento dos Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html) para obter mais detalhes.
 
-Os fragmentos de conteúdo podem ser referenciados a partir de páginas AEM, como qualquer outro tipo de ativo. O AEM fornece a **[Componente principal do Fragmento de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=pt-BR)** - a [componente que permite incluir fragmentos de conteúdo nas páginas](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page). Também é possível estender isso **[Fragmento do conteúdo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=pt-BR)** componente principal.
+Os fragmentos de conteúdo podem ser referenciados a partir de páginas AEM, como qualquer outro tipo de ativo. O AEM fornece a **[Componente principal do Fragmento de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=pt-BR)** - a [componente que permite incluir fragmentos de conteúdo nas páginas](/help/sites-cloud/authoring/fragments/content-fragments.md#adding-a-content-fragment-to-your-page). Também é possível estender isso **[Fragmento do conteúdo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html)** componente principal.
 
 * O componente usa o `fragmentPath` para fazer referência ao fragmento de conteúdo real. A variável `fragmentPath` A propriedade é tratada da mesma forma que as propriedades semelhantes de outros tipos de ativos; por exemplo, quando o fragmento de conteúdo é movido para outro local.
 
@@ -116,7 +116,7 @@ Os fragmentos de conteúdo podem ser referenciados a partir de páginas AEM, com
 
 >[!NOTE]
 >
->**Modelo de fragmentos do conteúdo:**
+>**Modelo de fragmento de conteúdo:**
 >
 >Quando um fragmento de conteúdo é usado em uma página, o modelo de fragmento de conteúdo no qual ele se baseia é referenciado.
 >
@@ -326,7 +326,7 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 A variável [intervalo de salvamento automático](/help/sites-cloud/administering/content-fragments/managing.md#save-close-and-versions) (medido em segundos) pode ser definido usando o gerenciador de configurações (ConfMgr):
 
 * Nó: `<conf-root>/settings/dam/cfm/jcr:content`
-* Nome da Propriedade: `autoSaveInterval`
+* Nome da propriedade: `autoSaveInterval`
 * Tipo: `Long`
 
 * Padrão: `600` (10 minutos); está definido em `/libs/settings/dam/cfm/jcr:content`
@@ -336,7 +336,7 @@ Se você quiser definir um intervalo de salvamento automático de 5 minutos, def
 Por exemplo:
 
 * Nó: `/conf/global/settings/dam/cfm/jcr:content`
-* Nome da Propriedade: `autoSaveInterval`
+* Nome da propriedade: `autoSaveInterval`
 
 * Tipo: `Long`
 

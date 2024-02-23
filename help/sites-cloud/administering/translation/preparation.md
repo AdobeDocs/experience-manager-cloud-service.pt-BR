@@ -4,7 +4,7 @@ description: Saiba como preparar conteúdo para tradução ao desenvolver sites 
 feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '756'
 ht-degree: 73%
@@ -92,7 +92,7 @@ O AEM fornece um painel de **Referências** que mostra uma lista de raízes de i
 
 ![Raízes de idioma](../assets/language-roots.png)
 
-Use o procedimento a seguir para exibir as cópias de idioma de uma página usando o [seletor do painel](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
+Use o procedimento a seguir para exibir as cópias de idioma de uma página usando o [seletor do painel](/help/sites-cloud/authoring/basic-handling.md#rail-selector).
 
 1. No console Sites, selecione uma página do site e selecione **Referências**.
 

@@ -2,9 +2,9 @@
 title: Criação de tags em aplicativos do AEM
 description: Trabalhar programaticamente com tags ou estender tags em um aplicativo AEM personalizado
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '717'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ que interage com o
 
 Para obter informações relacionadas à marcação:
 
-* Consulte [Uso de tags](/help/sites-cloud/authoring/features/tags.md) para obter informações sobre como marcar conteúdo como autor de conteúdo.
+* Consulte [Uso de tags](/help/sites-cloud/authoring/sites-console/tags.md) para obter informações sobre como marcar conteúdo como autor de conteúdo.
 * Consulte Administração de tags para obter a perspectiva de um administrador sobre a criação e o gerenciamento de tags e a quais tags de conteúdo foram aplicadas.
 
 ## Visão geral da API de marcação {#overview-of-the-tagging-api}

@@ -2,16 +2,16 @@
 title: Personalização de exibições das propriedades da página
 description: Saiba como as propriedades de página são visualizadas e editadas pelos autores.
 exl-id: 363b3c2d-f965-485f-bdae-2ea5b4cecb83
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: d2352e66b380f5a3654e2fc99ce4204b32066683
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 2%
+source-wordcount: '352'
+ht-degree: 0%
 
 ---
 
 # Personalização de exibições das propriedades da página{#customizing-views-of-page-properties}
 
-Cada página tem um conjunto de [propriedades](/help/sites-cloud/authoring/fundamentals/page-properties.md) que podem ser visualizadas e editadas pelos usuários. Algumas são necessárias ao criar a página (criar exibição), outras podem ser visualizadas e editadas (editar exibição) em um estágio posterior. Essas propriedades da página são definidas e disponibilizadas pela caixa de diálogo (`cq:dialog`) do componente de página apropriado.
+Cada página tem um conjunto de [propriedades](/help/sites-cloud/authoring/sites-console/page-properties.md) que podem ser visualizadas e editadas pelos usuários. Algumas são necessárias ao criar a página (criar exibição), outras podem ser visualizadas e editadas (editar exibição) em um estágio posterior. Essas propriedades da página são definidas e disponibilizadas pela caixa de diálogo (`cq:dialog`) do componente de página apropriado.
 
 O estado padrão de cada propriedade de página é:
 
@@ -39,7 +39,7 @@ Os campos devem ser configurados especificamente se qualquer alteração for nec
 
 Você também pode configurar os campos disponíveis configurando a caixa de diálogo do componente de página e aplicando as propriedades de nó apropriadas.
 
-Por exemplo, por padrão, a variável [**Criar página** assistente](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page) mostra os campos agrupados em **Mais títulos e descrições**. Para ocultá-los, você configura:
+Por exemplo, por padrão, a variável [**Criar página** assistente](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page) mostra os campos agrupados em **Mais títulos e descrições**. Para ocultá-los, você configura:
 
 1. Crie seu componente de página em `/apps`.
 1. Criar uma substituição (usando *diff da caixa de diálogo* fornecido pelo [Fusão de recursos do Sling](/help/implementing/developing/introduction/sling-resource-merger.md)) para o `basic` do seu componente de página; por exemplo:

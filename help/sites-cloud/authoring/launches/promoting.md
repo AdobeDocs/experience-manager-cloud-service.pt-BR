@@ -2,9 +2,9 @@
 title: Promoção de inicializações
 description: É necessário promover as páginas de lançamento para mover o conteúdo de volta para a origem (produção) antes de publicar.
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '811'
+source-wordcount: '812'
 ht-degree: 98%
 
 ---
@@ -44,12 +44,12 @@ ht-degree: 98%
 
 1. Abrir:
    * O console do **Sites** ao navegar pelas páginas de origem:
-      1. Abra o [painel de referências](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) e selecione a página de origem desejada usando o [modo de seleção](/help/sites-cloud/authoring/getting-started/basic-handling.md) (ou selecione e abra o painel de referências; a ordem não é importante). Todas as referências são mostradas.
+      1. Abra o [painel de referências](/help/sites-cloud/authoring/sites-console/console-side-panel.md#references) e selecione a página de origem desejada usando o [modo de seleção](/help/sites-cloud/authoring/basic-handling.md) (ou selecione e abra o painel de referências; a ordem não é importante). Todas as referências são mostradas.
       1. Selecione **Lançamentos** (por exemplo, Lançamentos [1]) para exibir uma lista de lançamentos específica.
       1. Selecione um lançamento específico para mostrar as ações disponíveis.
       1. Selecione **Promover lançamento** para abrir o assistente.
    * O console do **Sites** ao navegar pelas páginas de inicialização:
-      1. Selecione a página de inicialização necessária usando o [modo de seleção](/help/sites-cloud/authoring/getting-started/basic-handling.md).
+      1. Selecione a página de inicialização necessária usando o [modo de seleção](/help/sites-cloud/authoring/basic-handling.md).
       1. A ação **Promover** estará disponível na barra de ferramentas.
    * O console de **Inicializações**:
       1. Selecione o seu lançamento (selecione a miniatura).

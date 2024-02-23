@@ -2,7 +2,7 @@
 title: Estrutura de marcação do AEM
 description: Marque o conteúdo e use a infraestrutura de Marcação AEM para categorizá-lo e organizá-lo.
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '1562'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 A marcação permite que o conteúdo seja categorizado e organizado. As tags podem ser classificadas por um namespace e uma taxonomia. Para obter informações detalhadas sobre o uso de tags:
 
-* Consulte [Uso de tags](/help/sites-cloud/authoring/features/tags.md) para obter informações sobre como marcar conteúdo como autor de conteúdo.
+* Consulte [Uso de tags](/help/sites-cloud/authoring/sites-console/tags.md) para obter informações sobre como marcar conteúdo como autor de conteúdo.
 * Consulte Administração de tags para obter a perspectiva de um administrador sobre a criação e o gerenciamento de tags e a quais tags de conteúdo foram aplicadas.
 
 Este artigo se concentra na estrutura subjacente que oferece suporte à marcação no AEM e em como usá-lo como desenvolvedor.

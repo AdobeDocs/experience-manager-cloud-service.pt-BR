@@ -2,7 +2,7 @@
 title: Participar de fluxos de trabalho
 description: Os fluxos de trabalho normalmente incluem etapas que exigem que uma pessoa execute uma atividade em uma página ou ativo.
 exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '1507'
 ht-degree: 77%
@@ -24,11 +24,11 @@ Os fluxos de trabalho normalmente incluem etapas que exigem que uma pessoa execu
 
 Quando um item de trabalho é atribuído a você (por exemplo, **Aprovar conteúdo**), vários alertas e/ou notificações são exibidos:
 
-* Seu indicador de [notificação](/help/sites-cloud/authoring/getting-started/inbox.md) (barra de ferramentas) sobe a contagem:
+* Seu indicador de [notificação](/help/sites-cloud/authoring/inbox.md) (barra de ferramentas) sobe a contagem:
 
   ![Barra de ferramentas Notificação](/help/sites-cloud/authoring/assets/workflows-notifications.png)
 
-* O item é listado em sua [Caixa de entrada](/help/sites-cloud/authoring/getting-started/inbox.md) de notificações:
+* O item é listado em sua [Caixa de entrada](/help/sites-cloud/authoring/inbox.md) de notificações:
 
   ![Notificações na caixa de entrada](/help/sites-cloud/authoring/assets/workflows-inbox.png)
 
@@ -72,7 +72,7 @@ Nesta ação, você pode indicar:
 
 Use o procedimento a seguir para concluir o item de trabalho:
 
-1. Abra a **[Caixa de entrada do AEM](/help/sites-cloud/authoring/getting-started/inbox.md)**.
+1. Abra a **[Caixa de entrada do AEM](/help/sites-cloud/authoring/inbox.md)**.
 1. Selecione o item do fluxo de trabalho no qual você deseja agir (selecione a miniatura).
 1. Selecione **Concluído** na barra de ferramentas.
 1. A variável **Item de trabalho concluído** será aberta. Selecione o **Próxima etapa** no seletor suspenso e adicione um **Comentário** se necessário.
@@ -82,7 +82,7 @@ Use o procedimento a seguir para concluir o item de trabalho:
 
 Use o procedimento a seguir para concluir o item de trabalho:
 
-1. Abra a [página para edição](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
+1. Abra a [página para edição](/help/sites-cloud/authoring/sites-console/managing-pages.md#opening-a-page-for-editing).
 1. Selecione **Concluído** na barra de status na parte superior.
 1. A variável **Item de trabalho concluído** será aberta. Selecione o **Próxima etapa** no seletor suspenso e adicione um **Comentário** se necessário.
 1. Use **OK** para concluir a etapa (ou o botão **Cancelar** para cancelar a ação).
@@ -131,7 +131,7 @@ Nesta ação, você pode indicar:
 
 Use o procedimento a seguir para delegar um item de trabalho:
 
-1. Abra a **[Caixa de entrada do AEM](/help/sites-cloud/authoring/getting-started/inbox.md)**.
+1. Abra a **[Caixa de entrada do AEM](/help/sites-cloud/authoring/inbox.md)**.
 1. Selecione o item do fluxo de trabalho no qual você deseja agir (selecione a miniatura).
 1. Selecione **Delegar** na barra de ferramentas.
 1. A caixa de diálogo se abre. Especifique a **Usuário** no seletor suspenso (também pode ser um grupo) e adicione um **Comentário** se necessário.
@@ -141,7 +141,7 @@ Use o procedimento a seguir para delegar um item de trabalho:
 
 Use o procedimento a seguir para delegar um item de trabalho:
 
-1. Abra a [página para edição](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
+1. Abra a [página para edição](/help/sites-cloud/authoring/sites-console/managing-pages.md#opening-a-page-for-editing).
 1. Selecione **Delegar** na barra de status na parte superior.
 1. A caixa de diálogo se abre. Especifique a **Usuário** no seletor suspenso (também pode ser um grupo) e adicione um **Comentário** se necessário.
 1. Use **OK** para concluir a etapa (ou o botão **Cancelar** para cancelar a ação).
@@ -181,7 +181,7 @@ Nesta ação, você pode indicar:
 
 Use o procedimento a seguir para retroceder:
 
-1. Abra a **[Caixa de entrada do AEM](/help/sites-cloud/authoring/getting-started/inbox.md)**.
+1. Abra a **[Caixa de entrada do AEM](/help/sites-cloud/authoring/inbox.md)**.
 1. Selecione o item do fluxo de trabalho no qual você deseja agir (selecione a miniatura).
 1. Selecione **Retroceder** para abrir a caixa de diálogo.
 1. Especifique a **Etapa anterior** e adicionar um **Comentário** se necessário.
@@ -191,7 +191,7 @@ Use o procedimento a seguir para retroceder:
 
 Use o procedimento a seguir para retroceder:
 
-1. Abra a [página para edição](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
+1. Abra a [página para edição](/help/sites-cloud/authoring/sites-console/managing-pages.md#opening-a-page-for-editing).
 1. Selecione **Retroceder** na barra de status na parte superior.
 1. Especifique a **Etapa anterior** e adicionar um **Comentário** se necessário.
 1. Use **OK** para concluir a etapa (ou o botão **Cancelar** para cancelar a ação).
@@ -242,7 +242,7 @@ Você pode abrir os detalhes do item de trabalho nos seguintes locais:
 
 Para abrir um item do fluxo de trabalho e exibir os detalhes:
 
-1. Abra a **[Caixa de entrada do AEM](/help/sites-cloud/authoring/getting-started/inbox.md)**.
+1. Abra a **[Caixa de entrada do AEM](/help/sites-cloud/authoring/inbox.md)**.
 1. Selecione o item do fluxo de trabalho no qual você deseja agir (selecione a miniatura).
 1. Selecione **Abrir** para abrir as guias de informações.
 1. Se necessário, selecione a ação apropriada, forneça os detalhes e confirme com **OK** (ou **Cancelar**).
@@ -252,7 +252,7 @@ Para abrir um item do fluxo de trabalho e exibir os detalhes:
 
 Para abrir um item do fluxo de trabalho e exibir os detalhes:
 
-1. Abra a [página para edição](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
+1. Abra a [página para edição](/help/sites-cloud/authoring/sites-console/managing-pages.md#opening-a-page-for-editing).
 1. Selecione **Exibir detalhes** na barra de status para abrir as guias de informações.
 1. Se necessário, selecione a ação apropriada, forneça os detalhes e confirme com **OK** (ou **Cancelar**).
 1. Use **Salvar** ou **Cancelar** para sair.
@@ -263,7 +263,7 @@ Para abrir um item do fluxo de trabalho e exibir os detalhes:
 
 Para exibir o conteúdo e os recursos da instância de fluxo de trabalho:
 
-1. Abra a **[Caixa de entrada do AEM](/help/sites-cloud/authoring/getting-started/inbox.md)**.
+1. Abra a **[Caixa de entrada do AEM](/help/sites-cloud/authoring/inbox.md)**.
 1. Selecione o item do fluxo de trabalho no qual você deseja agir (selecione a miniatura).
 1. Selecione **Exibir carga** na barra de ferramentas para abrir a caixa de diálogo.
    * Como um pacote de fluxo de trabalho é simplesmente uma coleção de setas para os caminhos no repositório, é possível adicionar/remover/modificar as entradas aqui para ajustar o que é referenciado pelo pacote de fluxo de trabalho. Use o componente **Definição de recurso** para adicionar novas entradas.

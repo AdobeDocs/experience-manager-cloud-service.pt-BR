@@ -2,7 +2,7 @@
 title: Saiba mais sobre as noções básicas de criação
 description: Saiba mais sobre os conceitos e os mecanismos de criação de conteúdo para seu CMS headless usando Fragmentos de conteúdo.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '1727'
 ht-degree: 83%
@@ -267,21 +267,21 @@ Agora que você aprendeu o básico, o próximo passo é [Saiba mais sobre refer�
 
 ## Recursos adicionais {#additional-resources}
 
-* [Conceitos de criação](/help/sites-cloud/authoring/getting-started/concepts.md)
+* [Conceitos de criação](/help/sites-cloud/authoring/author-publish.md)
 
-* [Manuseio básico](/help/sites-cloud/authoring/getting-started/basic-handling.md) - esta página se baseia principalmente no console **Sites**, mas muitos/a maioria dos recursos também são relevantes para a criação **Fragmentos de conteúdo** no console **Ativos**.
+* [Manuseio básico](/help/sites-cloud/authoring/basic-handling.md) - esta página se baseia principalmente no console **Sites**, mas muitos/a maioria dos recursos também são relevantes para a criação **Fragmentos de conteúdo** no console **Ativos**.
 
-   * [Painel Navegação](/help/sites-cloud/authoring/getting-started/basic-handling.md#navigation-panel)
+   * [Painel Navegação](/help/sites-cloud/authoring/basic-handling.md#navigation-panel)
 
-   * [O Cabeçalho](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header)
+   * [O Cabeçalho](/help/sites-cloud/authoring/basic-handling.md#the-header)
 
-   * [Barra de ferramentas de ação](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar)
+   * [Barra de ferramentas de ação](/help/sites-cloud/authoring/basic-handling.md#actions-toolbar)
 
-   * [Ações rápidas](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
+   * [Ações rápidas](/help/sites-cloud/authoring/basic-handling.md#quick-actions)
 
-   * [Visualização e seleção de recursos](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
+   * [Visualização e seleção de recursos](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources)
 
-   * [Seletor de painéis](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
+   * [Seletor de painéis](/help/sites-cloud/authoring/basic-handling.md#rail-selector)
 
 * [Trabalho com Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/overview.md)
 

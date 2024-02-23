@@ -2,10 +2,10 @@
 title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2020.8.0.
 description: "[!DNL Adobe Experience Manager] Notas de versão as a Cloud Service para 2020.8.0."
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
-source-wordcount: '1036'
-ht-degree: 35%
+source-wordcount: '1031'
+ht-degree: 34%
 
 ---
 
@@ -18,7 +18,7 @@ A seção a seguir descreve as Notas de versão gerais do Experience Manager as 
 
 ### Novidades do [!DNL Sites] {#what-is-new-sites}
 
-* Capacidade para [restaurar páginas e subpáginas (árvores de página) para uma versão anterior](/help/sites-cloud/authoring/features/page-versions.md#reinstating-versions).
+* Capacidade para [restaurar páginas e subpáginas (árvores de página) para uma versão anterior](/help/sites-cloud/authoring/sites-console/page-versions.md#reinstating-versions).
 
 * Capacidade para [criar lançamentos](/help/sites-cloud/authoring/launches/overview.md) no AEM [Editor de SPA](/help/implementing/developing/hybrid/introduction.md).
 
@@ -44,7 +44,7 @@ A seção a seguir descreve as Notas de versão gerais do Experience Manager as 
 
 * Visualizações de documentos nativos e de alta fidelidade do PDF agora estão disponíveis no Brand Portal. Consulte [visão geral do visualizador de documentos](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer).
 
-* Agora você pode invalidar o cache CDN (Content Delivery Network) diretamente do [!DNL Dynamic Media] no AEM as a Cloud Service (em vez de usar [!DNL Dynamic Media Classic]). Ele garante que os ativos mais recentes sejam disponibilizados em minutos em vez de horas. Consulte [Invalidar o cache do CDN por meio do Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
+* Agora você pode invalidar o cache CDN (Content Delivery Network) diretamente do [!DNL Dynamic Media] no AEM as a Cloud Service (em vez de usar [!DNL Dynamic Media Classic]). Ele garante que os ativos mais recentes sejam disponibilizados em minutos em vez de horas. Consulte [Invalidar o cache da CDN por meio do Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
 
 * O suporte de acessibilidade aprimorado é adicionado aos controles da interface do usuário, navegação, navegação e experiência de pesquisa no [!DNL Assets].
 
@@ -72,7 +72,7 @@ A seção a seguir descreve as Notas de versão gerais do Experience Manager as 
 
 ### Data de lançamento {#release-date-cm}
 
-A data de lançamento do [!UICONTROL Cloud Manager] A versão 2020.8.0 é 6 de agosto de 2020.
+A data de lançamento da versão 2020.8.0 do [!UICONTROL Cloud Manager] é sexta-feira, 6 de agosto de 2020.
 
 ### Novidades {#what-is-new-cloud-manager}
 

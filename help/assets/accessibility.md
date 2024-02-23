@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Accessibility,Asset Management
 role: User,Architect,Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '1943'
-ht-degree: 3%
+source-wordcount: '1916'
+ht-degree: 2%
 
 ---
 
@@ -36,7 +36,7 @@ Possible topics to cover in this article are below.
 
 [!DNL Experience Manager] O fornece níveis variáveis de suporte para os seguintes padrões:
 
-* [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG/).
+* [Diretrizes de acessibilidade de conteúdo da Web (WCAG) 2.1](https://www.w3.org/TR/WCAG/).
 * [Seção 508 revista da Lei de Reabilitação](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines).
 * [Iniciativa de acessibilidade - Aplicativos de Internet avançada acessíveis (WAI-ARIA) pela W3C](https://www.w3.org/WAI/standards-guidelines/aria/).
 * [EN 3 01 549](https://en.wikipedia.org/wiki/EN_301_549).
@@ -80,7 +80,7 @@ Muitos elementos da interface do usuário que são clicáveis ou acionáveis com
 
 ### Atalhos de teclado no [!DNL Assets] {#keyboard-shortcuts}
 
-As seguintes ações no [!DNL Assets] trabalhar com os atalhos de teclado listados. A maioria dos atalhos de teclado que se aplicam a [!DNL Experience Manager] Os consoles também se aplicam a [!DNL Assets]. Consulte [atalhos de teclado para Consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md). Veja como [ativar ou desativar os atalhos de teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+As seguintes ações no [!DNL Assets] trabalhar com os atalhos de teclado listados. A maioria dos atalhos de teclado que se aplicam a [!DNL Experience Manager] Os consoles também se aplicam a [!DNL Assets]. Consulte [atalhos de teclado para Consoles](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md). Veja como [ativar ou desativar os atalhos de teclado](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md).
 
 | Interface do usuário ou cenário | Atalho de teclado | Ação |
 |---|---|---|

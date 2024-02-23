@@ -2,7 +2,7 @@
 title: Criação de uma pasta de ativos - Configuração do headless
 description: Use os modelos de fragmento de conteúdo do AEM para definir a estrutura dos fragmentos de conteúdo, a base do seu conteúdo headless.
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 82%
@@ -34,7 +34,7 @@ Um administrador só precisaria criar pastas ocasionalmente para organizar o con
       * Ele pode ser ajustado, se necessário.
 
    ![Criar pasta](../assets/assets-folder-create.png)
-1. Selecione a pasta criada passando o mouse sobre ela e tocando na marca de seleção. Em seguida, selecione **Propriedades** na barra de ferramentas (ou use o [atalho de teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `p`).
+1. Selecione a pasta criada passando o mouse sobre ela e tocando na marca de seleção. Em seguida, selecione **Propriedades** na barra de ferramentas (ou use o [atalho de teclado](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) `p`).
 1. Na janela **Propriedades**, selecione a guia **Serviços em nuvem**.
 1. Para a **Configuração na nuvem**, selecione a [configuração criada anteriormente.](create-configuration.md)
    ![Configurar pasta de ativos](../assets/assets-folder-configure.png)

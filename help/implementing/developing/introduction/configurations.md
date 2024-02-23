@@ -2,10 +2,10 @@
 title: Configurações e o navegador de configuração
 description: Entenda as configurações do Adobe Experience Manager (AEM) e como elas gerenciam as configurações do espaço de trabalho no AEM.
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
-source-wordcount: '1487'
-ht-degree: 6%
+source-wordcount: '1482'
+ht-degree: 4%
 
 ---
 
@@ -35,7 +35,7 @@ Configurações podem ser criadas para vários recursos diferentes dentro do AEM
 
 * [Segmentos do Context Hub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
 * [Modelos de fragmentos do conteúdo](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
-* [Modelos editáveis](/help/sites-cloud/authoring/features/templates.md)
+* [Modelos editáveis](/help/sites-cloud/authoring/sites-console/templates.md)
 * várias configurações de nuvem
 
 ### Exemplo {#administrator-example}
@@ -76,12 +76,12 @@ O Navegador de configuração permite que um administrador crie, gerencie e conf
 
    * O **Título** deve ser descritivo.
    * O **Nome** se tornará o nome do nó no repositório.
-      * Ele será gerado automaticamente com base no título e ajustado conforme as [convenções de nomenclatura do AEM.](naming-conventions.md)
+      * Ele é gerado automaticamente com base no título e ajustado de acordo com [Convenções de nomenclatura do AEM.](naming-conventions.md)
       * Ele pode ser ajustado, se necessário.
 1. Verifique o tipo de configurações que deseja permitir.
    * [Segmentos do Context Hub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
    * [Modelos de fragmentos do conteúdo](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
-   * [Modelos editáveis](/help/sites-cloud/authoring/features/templates.md)
+   * [Modelos editáveis](/help/sites-cloud/authoring/sites-console/templates.md)
    * várias configurações de nuvem
 1. Selecione **Criar**.
 

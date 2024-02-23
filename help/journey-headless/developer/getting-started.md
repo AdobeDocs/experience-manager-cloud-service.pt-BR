@@ -2,7 +2,7 @@
 title: Introdução ao AEM Headless as a Cloud Service
 description: Nesta parte da Jornada do desenvolvedor headless do AEM, saiba mais sobre pré-requisitos do AEM headless.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '3057'
 ht-degree: 93%
@@ -286,8 +286,8 @@ Mesmo sendo recomendado que você siga para a próxima parte da jornada de desen
 * [Tutoriais AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR) - Use esses tutoriais práticos para explorar como utilizar as várias opções para fornecer conteúdo a endpoints headless com o AEM e escolha o que é certo para você.
 * [Gerenciamento de Conteúdo Headless Usando APIs GraphQL](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless&amp;lang=pt-BR#courses) - Siga este curso para obter uma visão geral da API GraphQL implementada no AEM. Autenticação via AdobeID é necessária.
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) - Este projeto do GitHub inclui aplicativos exemplificativos que destacam APIs GraphQL do AEM.
-* [Conceitos de Criação](/help/sites-cloud/authoring/getting-started/concepts.md) - Documentação técnica do ambiente de criação do AEM, incluindo detalhes sobre a configuração de publicação do autor
-* [Publicar Páginas](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) - Documentação técnica para publicação de conteúdo no AEM
+* [Conceitos de Criação](/help/sites-cloud/authoring/author-publish.md) - Documentação técnica do ambiente de criação do AEM, incluindo detalhes sobre a configuração de publicação do autor
+* [Publicar Páginas](/help/sites-cloud/authoring/sites-console/publishing-pages.md) - Documentação técnica para publicação de conteúdo no AEM
 * [Convenções de Nomenclatura](/help/implementing/developing/introduction/naming-conventions.md) - Documentação técnica das restrições de nomenclatura de página no AEM
 * [Gerenciador de Vários Sites e Tradução](/help/sites-cloud/administering/msm-and-translation.md) - Documentação técnica sobre os recursos avançados de tradução do AEM
 * [Fluxos de trabalho AEM](/help/sites-cloud/authoring/workflows/overview.md) - Documentação técnica sobre como automatizar fluxos de trabalho no AEM

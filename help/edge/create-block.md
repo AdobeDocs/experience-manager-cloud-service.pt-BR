@@ -1,7 +1,7 @@
 ---
 title: Criação de blocos instrumentados para uso com o editor universal
 description: Saiba como criar blocos instrumentados para uso com o Editor universal em criação de AEM com projetos Edge Delivery Services.
-source-git-commit: 40e404c743102f1de8b3d959597836f04f0c0fef
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '1205'
 ht-degree: 0%
@@ -130,7 +130,7 @@ O exemplo de bloco de citação a seguir segue essa abordagem.
 
 Agora que o bloco de cotação básico está definido e comprometido com o projeto de amostra, é possível adicionar um bloco de cotação a uma página existente.
 
-1. Em um navegador, entre no AEM as a Cloud Service. [Usando o console Sites,](/help/sites-cloud/authoring/getting-started/basic-handling.md) navegue até o site que você criou na [Guia de introdução do desenvolvedor para criação de AEM com o Edge Delivery Services](/help/edge/edge-dev-getting-started.md) e selecione uma página.
+1. Em um navegador, entre no AEM as a Cloud Service. [Usando o console Sites,](/help/sites-cloud/authoring/basic-handling.md) navegue até o site que você criou na [Guia de introdução do desenvolvedor para criação de AEM com o Edge Delivery Services](/help/edge/edge-dev-getting-started.md) e selecione uma página.
 
    * Nesse caso, `index` é utilizada para fins ilustrativos.
 

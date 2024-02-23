@@ -2,9 +2,9 @@
 title: Gerenciar seus sites de demonstração
 description: Saiba mais sobre as ferramentas disponíveis para ajudá-lo a gerenciar seus sites de demonstração e como removê-los.
 exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '936'
+source-wordcount: '927'
 ht-degree: 89%
 
 ---
@@ -105,7 +105,7 @@ Agora você está pronto para explorar os recursos do AEM usando seus próprios 
 
 * [Documentação do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=pt-BR) - se quiser obter mais detalhes sobre os recursos do Cloud Manager, consulte diretamente os documentos técnicos detalhados.
 * [Criar Site](/help/sites-cloud/administering/site-creation/create-site.md) - saiba como usar o AEM para criar um site usando modelos de site para definir o estilo e a estrutura do site.
-* [Convenções de nomenclatura de página do AEM](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices). - Consulte esta página para entender as convenções de organização das páginas do AEM.
-* [Manuseio básico do AEM](/help/sites-cloud/authoring/getting-started/basic-handling.md): consulte este documento se você for novo no AEM para entender os conceitos básicos, como navegação e organização do console.
+* [Convenções de nomenclatura de página do AEM](/help/sites-cloud/authoring/sites-console/organizing-pages.md#page-name-restrictions-and-best-practices). - Consulte esta página para entender as convenções de organização das páginas do AEM.
+* [Manuseio básico do AEM](/help/sites-cloud/authoring/basic-handling.md): consulte este documento se você for novo no AEM para entender os conceitos básicos, como navegação e organização do console.
 * [Documentação técnica do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=pt-BR) - Se já tiver conhecimento profundo do AEM, você poderá consultar diretamente os documentos técnicos aprofundados.
 * [Modelos de site](/help/sites-cloud/administering/site-creation/site-templates.md) - Se você quiser saber mais sobre a estrutura dos modelos de site e como eles são usados para criar sites, consulte este documento.

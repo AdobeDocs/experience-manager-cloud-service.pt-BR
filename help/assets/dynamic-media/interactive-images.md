@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Interactive Images
 role: User
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
 source-wordcount: '4072'
 ht-degree: 1%
@@ -65,7 +65,7 @@ Se você usa um WCM (Web Content Manager, gerenciador de conteúdo da Web) de te
 >* Você deseja adicionar interatividade à imagem acionando as Exibições rápidas.
 >* Sua implementação do Experience Manager faz *não* use uma estrutura de integração de comércio eletrônico para transferir dados de produtos para o Experience Manager de qualquer solução de comércio eletrônico. Essas soluções incluem o IBM® WebSphere® Commerce, Elastic Path, SAP Hybris ou Intershop.
 >
-Se sua implementação do Experience Manager usar eCommerce, você poderá ignorar essa tarefa e prosseguir para a próxima tarefa.
+>Se sua implementação do Experience Manager usar eCommerce, você poderá ignorar essa tarefa e prosseguir para a próxima tarefa.
 
 Comece identificando as variáveis dinâmicas usadas pela sua implementação existente do Quickview, para que você possa inserir dados de ponto de acesso para criar a imagem interativa.
 
@@ -218,11 +218,11 @@ Você pode adicionar pontos de acesso a um banner de imagem usando o editor na p
 
 Ao adicionar pontos de acesso, você pode defini-los como uma exibição pop-up do Quickview, como um hiperlink ou um Fragmento de experiência.
 
-Consulte [Fragmentos de experiência](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
+Consulte [Fragmentos de experiência](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 >[!NOTE]
 >
-As ferramentas de compartilhamento de redes sociais na Imagem interativa não são compatíveis quando você incorpora o visualizador em um Fragmento de experiência. Em vez disso, use ou crie predefinições do visualizador que não tenham ferramentas de compartilhamento de redes sociais. Essas predefinições do visualizador permitem incorporá-lo com sucesso aos Fragmentos de experiência.
+>As ferramentas de compartilhamento de redes sociais na Imagem interativa não são compatíveis quando você incorpora o visualizador em um Fragmento de experiência. Em vez disso, use ou crie predefinições do visualizador que não tenham ferramentas de compartilhamento de redes sociais. Essas predefinições do visualizador permitem incorporá-lo com sucesso aos Fragmentos de experiência.
 
 As opções Desfazer e Refazer, próximas ao canto superior direito da página, são compatíveis durante a sessão de criação/edição atual.
 
@@ -232,15 +232,15 @@ Consulte [(Opcional) Visualizar imagens interativas](#optional-previewing-intera
 
 >[!NOTE]
 >
-Ao adicionar pontos de acesso a uma imagem em uma Imagem interativa ou em um Banner do carrossel, as informações do ponto de acesso são armazenadas no mesmo local de metadados. Esse local é relativo ao local da imagem, independentemente de ser uma Imagem interativa ou um Banner de carrossel. Essa funcionalidade significa que você pode reutilizar facilmente a mesma imagem, juntamente com seus dados de ponto de acesso definidos, em qualquer visualizador.
+>Ao adicionar pontos de acesso a uma imagem em uma Imagem interativa ou em um Banner do carrossel, as informações do ponto de acesso são armazenadas no mesmo local de metadados. Esse local é relativo ao local da imagem, independentemente de ser uma Imagem interativa ou um Banner de carrossel. Essa funcionalidade significa que você pode reutilizar facilmente a mesma imagem, juntamente com seus dados de ponto de acesso definidos, em qualquer visualizador.
 >
-No entanto, esteja ciente de que os banners do carrossel são compatíveis com mapas de imagem em imagens que também podem conter pontos de acesso; uma imagem interativa não é compatível. Lembre-se desse pensamento se você pretende criar uma Imagem interativa ou um Banner de carrossel que use a mesma imagem. Em vez disso, você pode criar Imagens interativas e Banners do carrossel usando cópias separadas da mesma imagem.
+>No entanto, esteja ciente de que os banners do carrossel são compatíveis com mapas de imagem em imagens que também podem conter pontos de acesso; uma imagem interativa não é compatível. Lembre-se desse pensamento se você pretende criar uma Imagem interativa ou um Banner de carrossel que use a mesma imagem. Em vez disso, você pode criar Imagens interativas e Banners do carrossel usando cópias separadas da mesma imagem.
 >
-Consulte também [Banners em carrossel](/help/assets/dynamic-media/carousel-banners.md).
+>Consulte também [Banners em carrossel](/help/assets/dynamic-media/carousel-banners.md).
 
 >[!NOTE]
 >
-Se você estiver editando imagens interativas com pontos de acesso e recortar a imagem, os pontos de acesso serão removidos.
+>Se você estiver editando imagens interativas com pontos de acesso e recortar a imagem, os pontos de acesso serão removidos.
 
 **Para adicionar pontos de acesso a um banner de imagem:**
 
@@ -285,13 +285,13 @@ Se você estiver editando imagens interativas com pontos de acesso e recortar a 
    * Selecionar **[!UICONTROL Fragmento de experiência]**.
 
       * Se você for um cliente do Experience Manager Sites, selecione o ícone Pesquisar (lupa) para abrir a página Fragmento de experiência. Selecione o Fragmento de experiência que deseja usar. Em seguida, selecione **[!UICONTROL Selecionar]** no canto superior direito da página. Você retornará à página Gerenciamento de ponto de acesso.
-Consulte [Fragmentos de experiência](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
+Consulte [Fragmentos de experiência](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
       * Especifique a largura e a altura do Fragmento de experiência como deseja que ele apareça no banner.
 
         >[!NOTE]
         >
-        As ferramentas de compartilhamento de redes sociais na Imagem interativa não são compatíveis quando você incorpora o visualizador em um Fragmento de experiência. Em vez disso, use ou crie predefinições do visualizador que não tenham ferramentas de compartilhamento de redes sociais. Essas predefinições do visualizador permitem incorporá-lo com sucesso aos Fragmentos de experiência.
+        >As ferramentas de compartilhamento de redes sociais na Imagem interativa não são compatíveis quando você incorpora o visualizador em um Fragmento de experiência. Em vez disso, use ou crie predefinições do visualizador que não tenham ferramentas de compartilhamento de redes sociais. Essas predefinições do visualizador permitem incorporá-lo com sucesso aos Fragmentos de experiência.
 
 1. Selecionar **[!UICONTROL Salvar]** para salvar seu trabalho e retornar à página Procurar.
 1. Publique a imagem interativa. A publicação entrega o banner por meio da nuvem e também gera o código incorporado que permite a integração com um site de terceiros.
@@ -304,7 +304,7 @@ Consulte [Fragmentos de experiência](/help/sites-cloud/authoring/fundamentals/e
 
    >[!NOTE]
    >
-   Se você estiver editando imagens interativas com pontos de acesso e recortar a imagem, os pontos de acesso serão excluídos.
+   >Se você estiver editando imagens interativas com pontos de acesso e recortar a imagem, os pontos de acesso serão excluídos.
 
 ### (Opcional) Visualizar imagens interativas {#optional-previewing-interactive-images}
 
@@ -352,7 +352,7 @@ A integração é tão simples quanto remover o `IMG` e substituindo-a pelo cód
 
 >[!NOTE]
 >
-Neste ponto, os pontos de acesso na imagem interativa que pode ser comprada do site de demonstração são somente para fins de exibição. Elas ainda não estão integradas às Exibições rápidas existentes.
+>Neste ponto, os pontos de acesso na imagem interativa que pode ser comprada do site de demonstração são somente para fins de exibição. Elas ainda não estão integradas às Exibições rápidas existentes.
 
 Para aplicar um &quot;recorte&quot; a uma imagem interativa que pode ser comprada para um ambiente responsivo, inclua o atributo de configuração Imagem interativa `ZoomView.iscommand` ao caminho. Neste caso, o `ZoomView` o componente é chamado e `iscommand` é o comando de veiculação de imagens de &quot;recorte&quot; que você aplica.
 
@@ -366,7 +366,7 @@ Agora você está pronto para integrar a imagem interativa a uma visualização 
 
 >[!NOTE]
 >
-Essa tarefa só se aplica se você for um cliente independente do Experience Manager Assets.
+>Essa tarefa só se aplica se você for um cliente independente do Experience Manager Assets.
 
 A última etapa deste processo é integrar a imagem interativa a uma implementação existente do Quickview em seu site. Não há solução para a integração que funcione para todos os casos. Cada implementação do Quickview é única e é necessária uma abordagem específica. Dessa forma, envolver a assistência de um profissional de TI de front-end é útil.
 

@@ -2,7 +2,7 @@
 title: Aplicação de fluxos de trabalho a páginas
 description: Ao criar, é possível invocar fluxos de trabalho para atuar em suas páginas. Também é possível aplicar mais de um fluxo de trabalho.
 exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '654'
 ht-degree: 83%
@@ -70,7 +70,7 @@ Em ambos os casos, você deve [Especificar os Detalhes do Fluxo de Trabalho no A
 
 Na **linha do tempo** é possível iniciar um fluxo de trabalho a ser aplicado ao recurso selecionado.
 
-1. [Selecione o recurso](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) e abra a [Linha do tempo](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) (ou abra a Linha do tempo e depois selecione o recurso).
+1. [Selecione o recurso](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources) e abra a [Linha do tempo](/help/sites-cloud/authoring/basic-handling.md#timeline) (ou abra a Linha do tempo e depois selecione o recurso).
 1. A ponta da seta no campo de comentário pode ser usada para revelar a opção **Iniciar fluxo de trabalho**:
 
    ![Criar fluxo de trabalho a partir da linha do tempo](/help/sites-cloud/authoring/assets/workflows-create-from-timeline.png)
@@ -116,7 +116,7 @@ Você pode especificar detalhes:
 
 1. Na etapa **Escopo**, você pode selecionar:
 
-   * **Adicionar conteúdo** para abrir o [navegador de caminho](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) e selecione recursos adicionais; quando estiver no navegador, selecione **Selecionar** para adicionar o conteúdo à instância do workflow.
+   * **Adicionar conteúdo** para abrir o [navegador de caminho](/help/sites-cloud/authoring/path-selection.md) e selecione recursos adicionais; quando estiver no navegador, selecione **Selecionar** para adicionar o conteúdo à instância do workflow.
 
    * Um recurso existente para ver ações adicionais:
 

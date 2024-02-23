@@ -2,7 +2,7 @@
 title: Personalização da criação de página
 description: Saiba mais sobre os mecanismos que o AEM as a Cloud Service oferece para personalizar a funcionalidade de criação de página.
 exl-id: 98d3c7ab-46d2-4e8d-b0da-5c8a7b398135
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '937'
 ht-degree: 2%
@@ -36,7 +36,7 @@ Para obter mais informações sobre sobreposições, consulte [Sobreposições p
 
 ## Adicionar nova camada (modo) {#add-new-layer-mode}
 
-Quando você está editando uma página, há vários [modos](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) disponíveis. Esses modos são implementados usando [camadas](/help/implementing/developing/introduction/ui-structure.md#layer). Eles permitem acesso a diferentes tipos de funcionalidade para o mesmo conteúdo de página. Os modos AEM padrão incluem Editar, Layout, Desenvolvedor, Timewarp, Status da Live Copy e Direcionamento.
+Quando você está editando uma página, há vários [modos](/help/sites-cloud/authoring/page-editor/introduction.md#page-modes) disponíveis. Esses modos são implementados usando [camadas](/help/implementing/developing/introduction/ui-structure.md#layer). Eles permitem acesso a diferentes tipos de funcionalidade para o mesmo conteúdo de página. Os modos AEM padrão incluem Editar, Layout, Desenvolvedor, Timewarp, Status da Live Copy e Direcionamento.
 
 ### Exemplo de camada: status da Live Copy {#layer-example-live-copy-status}
 

@@ -4,16 +4,16 @@ seo-title: Developer Mode
 description: O Modo de desenvolvedor abre um painel lateral com várias guias que fornecem ao desenvolvedor informações sobre a página atual
 seo-description: Developer mode opens a side panel with several tabs that provide a developer with information about the current page
 exl-id: fbf11c0f-dc6e-43f3-bcf2-080eacc6ba99
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '527'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
 # Modo de desenvolvedor {#developer-mode}
 
-Ao editar páginas no AEM, várias [modos](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) estão disponíveis, incluindo o Modo de desenvolvedor. O Modo de desenvolvedor abre um painel lateral com várias guias que fornecem ao desenvolvedor informações técnicas sobre a página atual.
+Ao editar páginas no AEM, várias [modos](/help/sites-cloud/authoring/sites-console/introduction.md#page-modes) estão disponíveis, incluindo o Modo de desenvolvedor. O Modo de desenvolvedor abre um painel lateral com várias guias que fornecem ao desenvolvedor informações técnicas sobre a página atual.
 
 Há duas guias:
 
@@ -41,7 +41,7 @@ O modo de desenvolvedor é implementado como um painel lateral para o editor de 
 
 O painel é dividido em duas guias:
 
-* **[Componentes](#components)** - Isso mostra uma árvore de componentes, semelhante à [árvore de conteúdo](/help/sites-cloud/authoring/fundamentals/environment-tools.md#content-tree) para autores
+* **[Componentes](#components)** - Isso mostra uma árvore de componentes, semelhante à [árvore de conteúdo](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#content-tree) para autores
 * **[Erros](#errors)** - Quando ocorrem problemas, os detalhes são mostrados para cada componente.
 
 ### Guia Componentes {#components}
@@ -55,7 +55,7 @@ Isso mostra uma árvore de componentes que:
 * Permite expandir a árvore e selecionar componentes específicos dentro dela. A seleção fornece acesso aos detalhes do componente; como:
    * Caminho do repositório
    * Links para scripts (acessados em CRXDE Lite)
-   * Detalhes do componente, conforme visto na [Console de componentes](/help/sites-cloud/authoring/features/components-console.md)
+   * Detalhes do componente, conforme visto na [Console de componentes](/help/sites-cloud/authoring/components-console.md)
 * Os componentes selecionados na árvore são indicados por uma borda azul no editor.
 
 Esta guia de componentes ajuda a:
@@ -72,11 +72,11 @@ Cada entrada de componente pode ter as seguintes opções:
    * Todos os scripts de componentes usados para renderizar o componente.
    * O caminho do conteúdo do repositório para este componente específico.
 
-     ![Exibir Detalhes](assets/developer-mode-view-details.png)
+     ![Exibir detalhes](assets/developer-mode-view-details.png)
 
 * **Editar script:** Um link que abre o script de componente no CRXDE Lite.
 
-* **Exibir detalhes do componente:** Abre os detalhes do componente na [Console de componentes](/help/sites-cloud/authoring/features/components-console.md).
+* **Exibir detalhes do componente:** Abre os detalhes do componente na [Console de componentes](/help/sites-cloud/authoring/components-console.md).
 
 Expandir uma entrada de componente tocando ou clicando na divisa também pode mostrar:
 

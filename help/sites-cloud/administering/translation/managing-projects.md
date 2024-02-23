@@ -4,7 +4,7 @@ description: Saiba como criar e gerenciar projetos de tradução automática e h
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '3960'
 ht-degree: 85%
@@ -196,7 +196,7 @@ As atualizações da memória de tradução podem ser interceptadas e enviadas a
 
 Uma propriedade pode ser selecionada na exibição de lista do console de sites que mostra se uma página foi traduzida, está em tradução ou ainda não foi traduzida.
 
-1. No console do site, alterne para [exibição em lista](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
+1. No console do site, alterne para [exibição em lista](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Selecionar, **Configurações de exibição** no menu suspenso exibição.
 1. Na caixa de diálogo, marque a opção **Traduzido** e selecione **Atualizar**.
 
@@ -437,18 +437,18 @@ Quando o conteúdo for traduzido para uma cópia de idioma existente, revise as 
 Para comparar cópias de idioma ao idioma principal:
 
 1. No console de sites, navegue até a cópia de idioma que deseja comparar.
-1. Abra o [painel de Referências](/help/sites-cloud/authoring/getting-started/basic-handling.md#references).
+1. Abra o [painel de Referências](/help/sites-cloud/authoring/basic-handling.md#references).
 1. No cabeçalho de **Cópias**, selecione **Cópias de idioma.**
 1. Selecione a cópia de idioma específica e, em seguida, clique em **Comparar ao principal** ou **Comparar com anterior**, se aplicável.
 
    ![Comparar cópias de idioma](../assets/language-copy-compare.png)
 
 1. As duas páginas (lançamento e origem) são abertas lado a lado.
-   * Para obter informações completas sobre como usar este recurso, consulte [Diferencial de página](/help/sites-cloud/authoring/features/page-diff.md).
+   * Para obter informações completas sobre como usar este recurso, consulte [Diferencial de página](/help/sites-cloud/authoring/sites-console/page-diff.md).
 
 ## Mover ou renomear uma página de origem {#move-source}
 
-Se uma página de origem já traduzida precisar ser [renomeado ou movido](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page), traduzindo a página novamente após a movimentação, crie uma cópia de idioma com base no novo nome/local da página. A cópia de idioma antiga baseada no nome/local anterior ainda estará lá.
+Se uma página de origem já traduzida precisar ser [renomeado ou movido](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page), traduzindo a página novamente após a movimentação, crie uma cópia de idioma com base no novo nome/local da página. A cópia de idioma antiga baseada no nome/local anterior ainda estará lá.
 
 A prática recomendada neste cenário é seguir este procedimento:
 

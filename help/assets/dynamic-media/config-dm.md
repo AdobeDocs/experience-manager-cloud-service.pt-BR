@@ -4,7 +4,7 @@ description: Saiba como configurar o Dynamic Media no Adobe Experience Manager a
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '3811'
 ht-degree: 2%
@@ -115,7 +115,7 @@ To migrate any custom viewer presets and configurations that you have created fr
    >Quando a nova configuração do Dynamic Media é concluída, você recebe uma notificação de status na Caixa de entrada do Experience Manager as a Cloud Service.
    >
    >Essa notificação da Caixa de entrada informa se a configuração foi bem-sucedida ou não.
-   > Consulte [Solução de problemas de uma nova configuração do Dynamic Media](#troubleshoot-dm-config) e [Sua Caixa de entrada](/help/sites-cloud/authoring/getting-started/inbox.md) para obter mais informações.
+   > Consulte [Solução de problemas de uma nova configuração do Dynamic Media](#troubleshoot-dm-config) e [Sua Caixa de entrada](/help/sites-cloud/authoring/inbox.md) para obter mais informações.
 
 1. Para visualizar com segurança o conteúdo do Dynamic Media antes de ele ser publicado, o Experience Manager as a Cloud Service usa a validação baseada em token e, portanto, o Experience Manager Author visualiza o conteúdo do Dynamic Media por padrão. No entanto, é possível *➡ incluir na lista de permissões* Mais IPs para fornecer aos usuários acesso a visualizações seguras de conteúdo. Para configurar esta ação no Experience Manager as a Cloud Service, consulte [Configurar o Dynamic Media Publish Setup para o Servidor de imagens - Guia Segurança](/help/assets/dynamic-media/dm-publish-settings.md#security-tab). <!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
 
@@ -139,7 +139,7 @@ Quando uma nova configuração do Dynamic Media é concluída, você recebe uma 
 
 ![Falha na Caixa de entrada do Experience Manager](/help/assets/dynamic-media/assets/dmconfig-inbox-failure.png)
 
-Consulte também [Sua Caixa de entrada](/help/sites-cloud/authoring/getting-started/inbox.md).
+Consulte também [Sua Caixa de entrada](/help/sites-cloud/authoring/inbox.md).
 
 **Para solucionar problemas de uma nova configuração do Dynamic Media:**
 

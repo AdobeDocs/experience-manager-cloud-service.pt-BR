@@ -5,7 +5,7 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 1e5e739a-1fbd-49cf-b529-335696d7e2f4
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '491'
 ht-degree: 97%
@@ -62,5 +62,5 @@ Desenvolver esse conhecimento e continuar sua jornada de tradução do AEM Sites
 
 Embora seja recomendável seguir para a próxima parte da jornada de tradução de sites revisando o documento [Introdução à tradução no AEM Sites,](getting-started.md) a seguir estão alguns recursos adicionais e opcionais que aprofundam alguns conceitos mencionados neste documento, mas não são necessários para continuar na jornada.
 
-* [Guia de início rápido para a criação de páginas](/help/sites-cloud/authoring/getting-started/quick-start.md) - Uma visão geral rápida dos conceitos mais importantes para a criação de conteúdo usando o AEM Sites
+* [Guia de início rápido para a criação de páginas](/help/sites-cloud/authoring/quick-start.md) - Uma visão geral rápida dos conceitos mais importantes para a criação de conteúdo usando o AEM Sites
 * [MSM e tradução](/help/sites-cloud/administering/msm-and-translation.md) - Os detalhes do Gerenciamento de vários sites do AEM e como ele trabalha com ferramentas de tradução

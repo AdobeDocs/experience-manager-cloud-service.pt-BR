@@ -2,7 +2,7 @@
 title: Gerenciar páginas no seu lançamento
 description: Você pode criar novas páginas no lançamento. Também é possível excluir páginas indesejadas.
 exl-id: 214c8c2f-d09a-4ce9-b474-9505b76084f7
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: d2352e66b380f5a3654e2fc99ce4204b32066683
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 89%
@@ -58,7 +58,7 @@ Para adicionar novas páginas ao lançamento:
 
 1. [Navegue até o local desejado no seu lançamento](#navigate-structure-of-launch).
 
-1. Selecione **Criar** para [criar uma página](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page) como de costume.
+1. Selecione **Criar** para [criar uma página](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page) como de costume.
 
 ## Remover páginas do lançamento {#remove-pages-from-launch}
 
@@ -66,4 +66,4 @@ Para remover páginas de lançamento:
 
 1. [Navegue até o local necessário no seu lançamento](#navigate-structure-of-launch).
 
-1. Selecione **Excluir** para [excluir uma página](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page) como de costume.
+1. Selecione **Excluir** para [excluir uma página](/help/sites-cloud/authoring/sites-console/managing-pages.md#deleting-a-page) como de costume.

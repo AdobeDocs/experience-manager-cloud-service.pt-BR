@@ -2,9 +2,9 @@
 title: Criar site de demonstração
 description: Crie um site de demonstração no AEM com base em uma biblioteca de modelos pré-configurados.
 exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '809'
 ht-degree: 72%
 
 ---
@@ -110,5 +110,5 @@ Agora, é possível testar os recursos do AEM usando conteúdo complementar. Voc
 
 * [Documentação do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=pt_BR) - se quiser obter mais detalhes sobre os recursos do Cloud Manager, consulte diretamente os documentos técnicos detalhados.
 * [Criar Site](/help/sites-cloud/administering/site-creation/create-site.md) - saiba como usar o AEM para criar um site usando modelos de site para definir o estilo e a estrutura do site.
-* [Convenções de nomenclatura de página do AEM](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices). - Consulte esta página para entender as convenções de organização das páginas do AEM.
-* [Manuseio básico do AEM](/help/sites-cloud/authoring/getting-started/basic-handling.md): consulte este documento se você for novo no AEM para entender os conceitos básicos, como navegação e organização do console.
+* [Convenções de nomenclatura de página do AEM](/help/sites-cloud/authoring/sites-console/organizing-pages.md#page-name-restrictions-and-best-practices). - Consulte esta página para entender as convenções de organização das páginas do AEM.
+* [Manuseio básico do AEM](/help/sites-cloud/authoring/basic-handling.md): consulte este documento se você for novo no AEM para entender os conceitos básicos, como navegação e organização do console.

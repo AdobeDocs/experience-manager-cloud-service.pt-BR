@@ -2,10 +2,10 @@
 title: Criação de inicializações
 description: É possível criar um lançamento para permitir a atualização de uma nova versão de páginas da Web para ativação futura.
 exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '1042'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 99%
 
 Crie um lançamento para permitir a atualização de uma nova versão de páginas da Web para ativação futura. Ao criar a inicialização, especifique um título e a página de origem:
 
-* O título é exibido no painel [Referências](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references), onde os autores podem acessá-lo para trabalhar nele.
+* O título é exibido no painel [Referências](/help/sites-cloud/authoring/sites-console/console-side-panel.md#references), onde os autores podem acessá-lo para trabalhar nele.
 * As páginas secundárias da página de origem são incluídas no lançamento por padrão. Você pode usar somente a página de origem, se desejar.
 * Por padrão, [Live Copy](/help/sites-cloud/administering/msm/overview.md) atualiza automaticamente as páginas de lançamento à medida que as páginas de origem são alteradas. É possível especificar que uma cópia estática seja criada para impedir alterações automáticas.
 
@@ -27,7 +27,7 @@ Como opção, especifique a **Data de inicialização** (e a hora) para definir 
 >
 >Essas páginas não podem ser editadas. Você verá a mensagem:
 >
->* **Esta página não faz parte da inicialização. Acesse a página de produção**
+>* **Esta página não faz parte do lançamento. Ir para a página de produção**
 
 ## Criação de um lançamento {#creating-a-launch}
 
@@ -48,7 +48,7 @@ Como opção, especifique a **Data de inicialização** (e a hora) para definir 
 
    >[!NOTE]
    >
-   >No console **Sites**, também é possível usar o [modo de seleção](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) para selecionar uma página antes de selecionar **Criar**.
+   >No console **Sites**, também é possível usar o [modo de seleção](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources) para selecionar uma página antes de selecionar **Criar**.
    >
    >Esta ação utilizará a página selecionada como a página de origem inicial.
 
@@ -114,7 +114,7 @@ Selecionar isso irá:
 >
 >Como um modelo diferente foi usado, a nova página fica vazia. Devido à estrutura de página diferente, nenhum conteúdo é copiado.
 >
->Esse mecanismo pode ser usado para alterar o modelo de uma [página já existente](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page), embora a perda de conteúdo deva ser considerada.
+>Esse mecanismo pode ser usado para alterar o modelo de uma [página já existente](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page), embora a perda de conteúdo deva ser considerada.
 
 ### Criação de um lançamento aninhado {#creating-a-nested-launch}
 

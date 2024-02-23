@@ -2,9 +2,9 @@
 title: Traduzir conteúdo headless
 description: Use o conector de tradução para traduzir conteúdo headless.
 exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '2119'
+source-wordcount: '2120'
 ht-degree: 73%
 
 ---
@@ -249,4 +249,4 @@ Desenvolva esse conhecimento e continue sua jornada de tradução AEM headless r
 Embora seja recomendável seguir para a próxima parte da jornada de tradução headless revisando o documento [Publicar conteúdo traduzido](publish-content.md), os recursos opcionais a seguir fornecerão uma explicação aprofundada dos conceitos mencionados neste documento. Porém, eles não são obrigatórios para continuar na jornada headless.
 
 * [Gerenciamento de projetos de tradução](/help/sites-cloud/administering/translation/managing-projects.md) - Saiba mais sobre os detalhes de projetos de tradução e recursos adicionais, como fluxos de trabalho de tradução humana e projetos multilíngues.
-* [Ambiente e ferramentas de criação](/help/sites-cloud/authoring/fundamentals/environment-tools.md##path-selection) - O AEM fornece vários mecanismos para organização e edição de conteúdo, incluindo um navegador de caminhos robusto.
+* [Ambiente e ferramentas de criação](/help/sites-cloud/authoring/path-selection.md#path-selection) - O AEM fornece vários mecanismos para organização e edição de conteúdo, incluindo um navegador de caminhos robusto.

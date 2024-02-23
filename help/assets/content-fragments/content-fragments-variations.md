@@ -2,7 +2,7 @@
 title: Variações - Criação dos fragmentos de conteúdo (Ativos - Fragmentos de conteúdo)
 description: Entenda como as variações de Fragmento de conteúdo permitem criar conteúdo para o fragmento e, em seguida, criar variações desse conteúdo de acordo com a finalidade, aumentando assim a flexibilidade.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '2474'
 ht-degree: 52%
@@ -64,7 +64,7 @@ Por exemplo:
 
 * Atribuir **Tags** à variação atual; as tags podem ser adicionadas, atualizadas e removidas.
 
-   * [Tags](/help/sites-cloud/authoring/features/tags.md) são eficientes ao organizar os fragmentos, pois podem ser usados para classificação de conteúdo e taxonomia. As tags podem ser usadas para localizar conteúdo (por tags) e aplicar operações em massa.
+   * [Tags](/help/sites-cloud/authoring/sites-console/tags.md) são eficientes ao organizar os fragmentos, pois podem ser usados para classificação de conteúdo e taxonomia. As tags podem ser usadas para localizar conteúdo (por tags) e aplicar operações em massa.
 
       * As pesquisas por uma tag retornam o fragmento, com a variação da tag destacada.
       * As tags de variação também podem ser usadas para agrupar variações de um perfil específico da rede de entrega de conteúdo (CDN) (para armazenamento em cache da CDN), em vez de usar o nome da variação.
@@ -242,14 +242,14 @@ O resumo de texto foi criado para ajudar os usuários a reduzir o comprimento do
 
 >[!CAUTION]
 >
-O inglês está disponível pronto para uso.
+>O inglês está disponível pronto para uso.
 >
-Outros idiomas estão disponíveis como Pacotes de modelo de idioma na Distribuição de software:
+>Outros idiomas estão disponíveis como Pacotes de modelo de idioma na Distribuição de software:
 >
-* [Francês (fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
-* [Alemão (de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
-* [Italiano (it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
-* [Espanhol (es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
+>* [Francês (fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
+>* [Alemão (de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
+>* [Italiano (it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
+>* [Espanhol (es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
 >
 
 1. Selecione o **Principal** ou a variação exigida.
@@ -318,7 +318,7 @@ Anotações:
 
   >[!NOTE]
   >
-  Um seletor suspenso é fornecido se várias anotações tiverem sido aplicadas a um texto.
+  >Um seletor suspenso é fornecido se várias anotações tiverem sido aplicadas a um texto.
 
 * Quando você exclui o texto inteiro ao qual a anotação foi aplicada, a anotação também é excluída.
 
@@ -332,17 +332,17 @@ Anotações:
 
 Para facilitar o processo de criação de fragmentos de conteúdo, você pode adicionar [Assets](/help/assets/manage-digital-assets.md) (imagens) diretamente no fragmento.
 
-Eles serão adicionados à sequência de parágrafo do fragmento sem qualquer formatação; a formatação pode ser feita quando o [fragmento for usado/referenciado em uma página](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+Eles serão adicionados à sequência de parágrafo do fragmento sem qualquer formatação; a formatação pode ser feita quando o [fragmento for usado/referenciado em uma página](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 >[!CAUTION]
 >
-Esses ativos não podem ser movidos ou excluídos em uma página de referência. Isso deve ser feito no editor do fragmento.
+>Esses ativos não podem ser movidos ou excluídos em uma página de referência. Isso deve ser feito no editor do fragmento.
 >
-No entanto, a formatação do ativo (por exemplo, seu tamanho) deve ser feita no [editor de páginas](/help/sites-cloud/authoring/fundamentals/content-fragments.md). A representação do ativo no editor de fragmento serve meramente para a criação do fluxo de conteúdo.
+>No entanto, a formatação do ativo (por exemplo, seu tamanho) deve ser feita no [editor de páginas](/help/sites-cloud/authoring/fragments/content-fragments.md). A representação do ativo no editor de fragmento serve meramente para a criação do fluxo de conteúdo.
 
 >[!NOTE]
 >
-Existem vários métodos de adicionar [imagens](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) ao fragmento e/ou página.
+>Existem vários métodos de adicionar [imagens](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) ao fragmento e/ou página.
 
 1. Posicione o cursor onde deseja adicionar a imagem.
 1. Use o ícone **Inserir ativo** para abrir a caixa de diálogo de pesquisa.
@@ -357,10 +357,10 @@ Existem vários métodos de adicionar [imagens](/help/assets/content-fragments/c
 
    >[!CAUTION]
    >
-   Depois de adicionar um ativo, se você alterar o formato para:
+   >Depois de adicionar um ativo, se você alterar o formato para:
    >
-   * **Texto sem formatação**: o ativo é perdido do fragmento.
-   * **Marcação**: o ativo não estará visível, mas ainda estará presente ao retornar para **Rich Text**.
+   >* **Texto sem formatação**: o ativo é perdido do fragmento.
+   >* **Marcação**: o ativo não estará visível, mas ainda estará presente ao retornar para **Rich Text**.
 
 ### Inserir um fragmento de conteúdo no fragmento {#inserting-content-fragment-into-your-fragment}
 
@@ -370,17 +370,17 @@ Eles são adicionados como referência no local atual no fragmento.
 
 >[!NOTE]
 >
-Essa opção está disponível quando seu **Texto multilinha** está configurado com **Permitir referência de fragmento**.
+>Essa opção está disponível quando seu **Texto multilinha** está configurado com **Permitir referência de fragmento**.
 
 >[!CAUTION]
 >
-Esses ativos não podem ser movidos ou excluídos em uma página de referência. Isso deve ser feito no editor do fragmento.
+>Esses ativos não podem ser movidos ou excluídos em uma página de referência. Isso deve ser feito no editor do fragmento.
 >
-No entanto, a formatação do ativo (por exemplo, seu tamanho) deve ser feita no [editor de páginas](/help/sites-cloud/authoring/fundamentals/content-fragments.md). A representação do ativo no editor de fragmento serve meramente para a criação do fluxo de conteúdo.
+>No entanto, a formatação do ativo (por exemplo, seu tamanho) deve ser feita no [editor de páginas](/help/sites-cloud/authoring/fragments/content-fragments.md). A representação do ativo no editor de fragmento serve meramente para a criação do fluxo de conteúdo.
 
 >[!NOTE]
 >
-Existem vários métodos de adicionar [imagens](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) ao fragmento e/ou página.
+>Existem vários métodos de adicionar [imagens](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) ao fragmento e/ou página.
 
 1. Posicione o cursor onde deseja adicionar o fragmento.
 1. Use o ícone **Inserir fragmento de conteúdo** para abrir a caixa de diálogo de pesquisa.
@@ -395,10 +395,10 @@ Existem vários métodos de adicionar [imagens](/help/assets/content-fragments/c
 
    >[!CAUTION]
    >
-   Depois de adicionar uma referência a outro fragmento, se você alterar o formato para:
+   >Depois de adicionar uma referência a outro fragmento, se você alterar o formato para:
    >
-   * **Texto sem formatação**: a referência é perdida do fragmento.
-   * **Markdown**: a referência permanece.
+   >* **Texto sem formatação**: a referência é perdida do fragmento.
+   >* **Markdown**: a referência permanece.
 
 ## Herança {#inheritance}
 
@@ -440,11 +440,11 @@ As variações permitem pegar o **Principal** conteúdo e alterá-lo de acordo c
 
    >[!NOTE]
    >
-   Ao criar uma variação, é sempre a variável **Principal** que é copiado, não a variação que está aberta.
+   >Ao criar uma variação, é sempre a variável **Principal** que é copiado, não a variação que está aberta.
 
    >[!NOTE]
    >
-   Ao criar uma variação, todas as **Tags** atualmente atribuído à **Principal** são copiadas para a nova variação.
+   >Ao criar uma variação, todas as **Tags** atualmente atribuído à **Principal** são copiadas para a nova variação.
 
 ### Editar uma variação {#editing-a-variation}
 
@@ -467,7 +467,7 @@ Você pode alterar o conteúdo de variação após:
 
 >[!NOTE]
 >
-Isso só afeta o **Título** da variação.
+>Isso só afeta o **Título** da variação.
 
 ### Excluir uma Variação {#deleting-a-variation}
 
@@ -479,7 +479,7 @@ Isso só afeta o **Título** da variação.
 
 >[!NOTE]
 >
-Não é possível excluir o **Principal**.
+>Não é possível excluir o **Principal**.
 
 ### Sincronização com o Principal {#synchronizing-with-master}
 
@@ -489,13 +489,13 @@ Ao editar uma variação, você tem acesso à ação para sincronizar o elemento
 
 >[!CAUTION]
 >
-A sincronização só está disponível para copiar alterações *do **Principal**para a variação*.
+>A sincronização só está disponível para copiar alterações *do **Principal**para a variação*.
 >
-Somente o elemento atual da variação será sincronizado.
+>Somente o elemento atual da variação será sincronizado.
 >
-A sincronização só funciona no **Texto multilinha** tipo de dados.
+>A sincronização só funciona no **Texto multilinha** tipo de dados.
 >
-A transferência de alterações *de uma variação para o **Principal*** não está disponível como uma opção.
+>A transferência de alterações *de uma variação para o **Principal*** não está disponível como uma opção.
 
 1. Abra o fragmento de conteúdo no editor de fragmentos. Certifique-se de que o **Principal** foi editado.
 

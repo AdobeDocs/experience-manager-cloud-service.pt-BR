@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: e2d79742c2097748d736bc4d2d2046711d978fc5
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '3166'
 ht-degree: 5%
@@ -309,7 +309,7 @@ Você pode editar o seguinte **[!UICONTROL Geral]** configurações selecionando
 O componente de Mídia panorâmica é para os ativos que são imagens panorâmicas esféricas. Essas imagens proporcionam uma experiência de visualização de 360° em uma sala, propriedade, local ou paisagem. Para que uma imagem seja qualificada como panorama esférico, ela deve ter uma ou ambas as opções a seguir:
 
 * Uma proporção de 2:1.
-* Marcado com as palavras-chave `equirectangular` ou (`spherical` + `panorama`) ou (`spherical` + `panoramic`). Consulte [Uso de tags](/help/sites-cloud/authoring/features/tags.md).
+* Marcado com as palavras-chave `equirectangular` ou (`spherical` + `panorama`) ou (`spherical` + `panoramic`). Consulte [Uso de tags](/help/sites-cloud/authoring/sites-console/tags.md).
 
 Tanto a proporção quanto os critérios de palavra-chave se aplicam aos ativos panorâmicos da página de detalhes do ativo e o componente **[!UICONTROL Panorâmica Media]** WCM.
 

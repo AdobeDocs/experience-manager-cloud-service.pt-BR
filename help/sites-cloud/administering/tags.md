@@ -2,7 +2,7 @@
 title: Administração de tags
 description: Saiba como administrar tags no AEM para organizar seu conteúdo.
 exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '2200'
 ht-degree: 1%
@@ -16,7 +16,7 @@ As tags são um método intuitivo de classificar o conteúdo. Elas podem ser con
 No Adobe Experience Manager (AEM), uma tag pode ser uma propriedade de:
 
 * Um nó de conteúdo para uma página
-   * Consulte o documento [Uso de tags](/help/sites-cloud/authoring/features/tags.md) para obter mais informações.
+   * Consulte o documento [Uso de tags](/help/sites-cloud/authoring/sites-console/tags.md) para obter mais informações.
 * Um nó de metadados de um ativo
    * Consulte o documento [Gerenciamento de metadados para ativos digitais](/help/assets/manage-metadata.md) para obter mais informações.
 
@@ -183,7 +183,7 @@ Você pode ver mais detalhes sobre a tag, incluindo quem a publicou pela última
 
    ![Exibição das propriedades da tag](assets/tag-properties.png)
 
-Para obter mais detalhes sobre a seleção dos modos de exibição e do painel, consulte [Manuseio básico](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
+Para obter mais detalhes sobre a seleção dos modos de exibição e do painel, consulte [Manuseio básico](/help/sites-cloud/authoring/basic-handling.md#rail-selector).
 
 ### Edição de tags {#editing-tags}
 
@@ -245,7 +245,7 @@ Pode ser útil ver a qual conteúdo uma tag específica é aplicada. Você pode 
 
 Passe o mouse ou selecione um conteúdo de referência na lista para revelar o caminho completo do conteúdo.
 
-Para obter mais detalhes sobre a seleção dos modos de exibição e do painel, consulte [Manuseio básico](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
+Para obter mais detalhes sobre a seleção dos modos de exibição e do painel, consulte [Manuseio básico](/help/sites-cloud/authoring/basic-handling.md#rail-selector).
 
 ### Mover tags {#moving-tags}
 

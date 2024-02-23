@@ -4,7 +4,7 @@ seo-title: Rapidly build Adaptive Forms-based processes, automate document servi
 description: Use o AEM Forms Workflow para automatizar e criar rapidamente workflows de processos de negócios. Por exemplo, análise e aprovação, geração de PDF, fluxos de trabalho de Adobe Sign.
 uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
 topic-tags: publish, document_services
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '2373'
 ht-degree: 1%
@@ -197,7 +197,7 @@ O aplicativo é o Formulário adaptável associado ao fluxo de trabalho. Quando 
 
 ### Envio de um aplicativo da Caixa de entrada AEM {#inbox}
 
-O aplicativo de workflow que você criou está disponível como um aplicativo na Caixa de entrada. Usuários que são membros de [!DNL workflow-users] grupo pode preencher e enviar o aplicativo que aciona o fluxo de trabalho associado. Para obter informações sobre como usar a Caixa de entrada AEM para enviar aplicativos e gerenciar tarefas, consulte [Gerenciar aplicativos e tarefas do Forms na Caixa de entrada AEM](manage-applications-inbox.md).
+O aplicativo de workflow que você criou está disponível como um aplicativo na Caixa de entrada. Usuários que são membros de [!DNL workflow-users] grupo pode preencher e enviar o aplicativo que aciona o fluxo de trabalho associado. Para obter informações sobre como usar a Caixa de entrada AEM para enviar aplicativos e gerenciar tarefas, consulte [Gerenciar aplicativos e tarefas do Forms na Caixa de entrada AEM](manage-applications-/help/sites-cloud/authoring/inbox.md).
 
 <!-- ### Submitting an application from [!DNL AEM Forms] App {#afa}
 

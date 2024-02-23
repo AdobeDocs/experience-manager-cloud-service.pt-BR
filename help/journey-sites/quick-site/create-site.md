@@ -2,10 +2,10 @@
 title: Criar site a partir de modelo
 description: Saiba como criar rapidamente um site de AEM usando um modelo de site.
 exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: d2352e66b380f5a3654e2fc99ce4204b32066683
 workflow-type: tm+mt
-source-wordcount: '1474'
-ht-degree: 78%
+source-wordcount: '1485'
+ht-degree: 77%
 
 ---
 
@@ -181,7 +181,9 @@ Aplique esse conhecimento e prossiga com sua jornada de criação rápida de sit
 Embora seja recomendável seguir para a próxima parte da jornada de Criação rápida de sites revisando o documento [Configurar o pipeline,](pipeline-setup.md) os recursos opcionais a seguir fornecerão uma melhor explicação dos conceitos mencionados neste documento. Porém, eles não são obrigatórios para continuar na jornada.
 
 * [Modelo de site padrão do AEM](https://github.com/adobe/aem-site-template-standard) - Este é o repositório GitHub do modelo de site padrão do AEM.
-* [Criar e organizar páginas](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) - Este guia detalha como gerenciar páginas do seu site AEM, se você quiser personalizá-lo ainda mais após criá-lo a partir do modelo.
+* [Organizar páginas](/help/sites-cloud/authoring/sites-console/organizing-pages.md) - Este guia detalha como organizar as páginas do seu site AEM.
+* [Criação de páginas](/help/sites-cloud/authoring/sites-console/creating-pages.md) - Este guia detalha como adicionar novas páginas ao site.
+* [Gerenciamento de páginas](/help/sites-cloud/authoring/sites-console/managing-pages.md) - Este guia detalha como gerenciar as páginas do site, incluindo movimentação, cópia e exclusão.
 * [Como trabalhar com pacotes](/help/implementing/developing/tools/package-manager.md) - Os pacotes permitem a importação e exportação de conteúdo do repositório. Este documento explica como trabalhar com pacotes no AEM 6.5, o que também se aplica ao AEMaaCS.
 * [Documentação de administração do site](/help/sites-cloud/administering/site-creation/create-site.md) - Consulte os documentos técnicos sobre criação de sites para obter mais detalhes sobre os recursos da ferramenta de Criação rápida de sites.
 * [Criar ou adicionar formulários a uma página do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) - Conheça as técnicas passo a passo e as práticas recomendadas para integrar formulários no seu site, otimizando suas experiências digitais para obter o máximo impacto.

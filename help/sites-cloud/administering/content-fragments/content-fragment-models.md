@@ -4,7 +4,7 @@ description: Saiba como os modelos de fragmento de conteúdo servem como base pa
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
-source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '3125'
 ht-degree: 56%
@@ -119,9 +119,9 @@ O modelo de fragmento de conteúdo define efetivamente a estrutura dos fragmento
 
         >[!CAUTION]
         >
-        >Ao atualizar manualmente a propriedade **Nome da propriedade** para um tipo de dados, os nomes devem conter *somente* A-Z, a-z, 0-9 e sublinhado &quot;_&quot; como caractere especial.
+        Ao atualizar manualmente a propriedade **Nome da propriedade** para um tipo de dados, os nomes devem conter *somente* A-Z, a-z, 0-9 e sublinhado &quot;_&quot; como caractere especial.
         >
-        >Se os modelos criados em versões anteriores do AEM contiverem caracteres ilegais, remova ou atualize esses caracteres.
+        Se os modelos criados em versões anteriores do AEM contiverem caracteres ilegais, remova ou atualize esses caracteres.
 
      Por exemplo:
 
@@ -150,9 +150,9 @@ Uma variedade de tipos de dados está disponível para a definição do seu mode
 
   >[!NOTE]
   >
-  >Se a área de texto é Rich Text, Texto sem formatação ou Markdown, é definida no modelo pela propriedade **Tipo padrão**.
+  Se a área de texto é Rich Text, Texto sem formatação ou Markdown, é definida no modelo pela propriedade **Tipo padrão**.
   >
-  >Este formato não pode ser alterado de [Editor de fragmento de conteúdo](/help/sites-cloud/administering/content-fragments/authoring.md), mas somente do Modelo.
+  Este formato não pode ser alterado de [Editor de fragmento de conteúdo](/help/sites-cloud/administering/content-fragments/authoring.md), mas somente do Modelo.
 
 * **Número**
    * Adicionar um ou mais campos numéricos
@@ -184,7 +184,7 @@ Uma variedade de tipos de dados está disponível para a definição do seu mode
 
      >[!NOTE]
      >
-     >Esse tipo de dados é usado apenas para formatação e é ignorado pelo esquema GraphQL do AEM.
+     Esse tipo de dados é usado apenas para formatação e é ignorado pelo esquema GraphQL do AEM.
 
 ## Propriedades {#properties}
 
@@ -196,7 +196,7 @@ Muitas propriedades são autoexplicativas. Para certas propriedades, os detalhes
 
   >[!CAUTION]
   >
-  >Se os modelos criados em versões anteriores do AEM contiverem caracteres ilegais, remova ou atualize esses caracteres.
+  Se os modelos criados em versões anteriores do AEM contiverem caracteres ilegais, remova ou atualize esses caracteres.
 
 * **Renderizar como**
 
@@ -227,11 +227,11 @@ O conteúdo (para o campo específico) deve ser exclusivo em todos os fragmentos
 
   >[!NOTE]
   >
-  >A exclusividade é assegurada por raiz de idioma.
+  A exclusividade é assegurada por raiz de idioma.
 
   >[!NOTE]
   >
-  >As variações podem ter o mesmo valor *exclusivo* como variações do mesmo fragmento, mas não o mesmo valor usado em qualquer variação de outros fragmentos.
+  As variações podem ter o mesmo valor *exclusivo* como variações do mesmo fragmento, mas não o mesmo valor usado em qualquer variação de outros fragmentos.
 
 * Consulte **[Referência de conteúdo](#content-reference)** para obter mais detalhes sobre esse tipo de dados específico e suas propriedades.
 
@@ -280,18 +280,16 @@ Os fragmentos de conteúdo podem formar conteúdo aninhado, usando um dos seguin
    * Permite incluir/recuperar dados estruturados.
      >[!NOTE]
      >
-     >Esse método é especialmente interessante quando você está usando [Entrega de conteúdo headless usando fragmentos de conteúdo com o GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
+     Esse método é especialmente interessante quando você está usando [Entrega de conteúdo headless usando fragmentos de conteúdo com o GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
    * Pode ser configurado para uma ou várias referências (no fragmento resultante).
 
 >[!NOTE]
 >
->O AEM tem proteção de recorrência para:
+O AEM tem proteção de recorrência para:
 >
->* Referências do conteúdo
->  Isso impede que o usuário adicione uma referência ao fragmento atual e pode levar a uma caixa de diálogo vazia do seletor de Referência de fragmento.
+* Referências de conteúdo Isso impede que o usuário adicione uma referência ao fragmento atual e pode levar a uma caixa de diálogo vazia do seletor de referência de fragmento.
 >
->* Referências de fragmento no GraphQL
->  Se você criar uma consulta profunda que retorna vários Fragmentos de conteúdo referenciados entre si, ela retornará um valor nulo na primeira ocorrência.
+* Referências de fragmento no GraphQL Se você criar uma consulta profunda que retorna vários Fragmentos de conteúdo referenciados entre si, ela retornará um valor nulo na primeira ocorrência.
 
 ### Referência de conteúdo {#content-reference}
 
@@ -302,16 +300,16 @@ Além das propriedades padrão, é possível especificar:
 * A variável **Caminho raiz**, que especifica onde armazenar qualquer conteúdo referenciado
   >[!NOTE]
   >
-  >Isso é obrigatório se você quiser fazer upload diretamente e fazer referência a imagens nesse campo ao usar o editor de fragmentos de conteúdo.
+  Isso é obrigatório se você quiser fazer upload diretamente e fazer referência a imagens nesse campo ao usar o editor de fragmentos de conteúdo.
   >
-  >Consulte [Imagens de referência](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images) para obter mais detalhes.
+  Consulte [Imagens de referência](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images) para obter mais detalhes.
 
 * Os tipos de conteúdo que podem ser referenciados
   >[!NOTE]
   >
-  >Estes devem incluir **Imagem** se você quiser fazer upload diretamente e fazer referência a imagens nesse campo ao usar o editor de fragmento de conteúdo.
+  Estes devem incluir **Imagem** se você quiser fazer upload diretamente e fazer referência a imagens nesse campo ao usar o editor de fragmento de conteúdo.
   >
-  >Consulte [Imagens de referência](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images) para obter mais detalhes.
+  Consulte [Imagens de referência](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images) para obter mais detalhes.
 
 * Limitações para tamanhos de arquivo
 * Se uma imagem for referenciada:
@@ -345,7 +343,7 @@ type CompanyModel {
 
 >[!NOTE]
 >
->As Referências de fragmento são de especial interesse para [Entrega de conteúdo headless usando fragmentos de conteúdo com o GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
+As Referências de fragmento são de especial interesse para [Entrega de conteúdo headless usando fragmentos de conteúdo com o GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
 
 Além das propriedades padrão, você pode definir:
 
@@ -371,9 +369,9 @@ Especifica um caminho raiz para qualquer fragmento referenciado.
 
 >[!NOTE]
 >
->Um mecanismo de proteção contra recorrências está em vigor. Ele proíbe que o usuário selecione o fragmento de conteúdo atual na referência do fragmento e pode levar a uma caixa de diálogo vazia do seletor de referência de fragmento.
+Um mecanismo de proteção contra recorrências está em vigor. Ele proíbe que o usuário selecione o fragmento de conteúdo atual na referência do fragmento e pode levar a uma caixa de diálogo vazia do seletor de referência de fragmento.
 >
->Também há proteção de recorrência para referências de fragmento no GraphQL. Se você criar uma consulta profunda em dois Fragmentos de conteúdo que fazem referência um ao outro, ela retornará um valor nulo.
+Também há proteção de recorrência para referências de fragmento no GraphQL. Se você criar uma consulta profunda em dois Fragmentos de conteúdo que fazem referência um ao outro, ela retornará um valor nulo.
 
 ## Ativar ou desativar um Modelo de fragmento de conteúdo {#enabling-disabling-a-content-fragment-model}
 
@@ -422,7 +420,7 @@ Para implementar a governança de conteúdo, você pode configurar **Políticas*
 
 >[!NOTE]
 >
->O mecanismo é semelhante ao de [permitir modelos de página](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) para uma página e suas derivadas nas suas propriedades avançadas.
+O mecanismo é semelhante ao de [permitir modelos de página](/help/sites-cloud/authoring/sites-console/templates.md#allowing-a-template-author) para uma página e suas derivadas nas suas propriedades avançadas.
 
 Para configurar as **políticas** para **modelos de fragmento de conteúdo permitidos**:
 
@@ -456,7 +454,7 @@ Os modelos de fragmento de conteúdo permitidos para uma pasta são resolvidos d
 
 >[!CAUTION]
 >
->A exclusão de um modelo de Fragmento de conteúdo pode afetar fragmentos dependentes.
+A exclusão de um modelo de Fragmento de conteúdo pode afetar fragmentos dependentes.
 
 Para excluir um modelo de fragmento de conteúdo:
 
@@ -467,7 +465,7 @@ Para excluir um modelo de fragmento de conteúdo:
 
    >[!NOTE]
    >
-   >Se o modelo for referenciado, um aviso será exibido para que você possa tomar as medidas apropriadas.
+   Se o modelo for referenciado, um aviso será exibido para que você possa tomar as medidas apropriadas.
 
 ## Publicação de um Modelo de fragmento de conteúdo {#publishing-a-content-fragment-model}
 
@@ -483,7 +481,7 @@ O status publicado é exibido no console.
 
    >[!NOTE]
    >
-   >Se você publicar um fragmento de conteúdo cujo modelo ainda não foi publicado, uma lista de seleção indicará isso e o modelo será publicado junto com o fragmento.
+   Se você publicar um fragmento de conteúdo cujo modelo ainda não foi publicado, uma lista de seleção indicará isso e o modelo será publicado junto com o fragmento.
 
 ## Desfazer a publicação de um Modelo de fragmento de conteúdo {#unpublishing-a-content-fragment-model}
 
@@ -501,7 +499,7 @@ Se você tentar desfazer a publicação de um modelo que é usado atualmente por
 
 ![Mensagem de erro do modelo de fragmento de conteúdo ao desfazer a publicação de um modelo em uso](assets/cf-cfmodels-unpublish-error.png)
 
-A mensagem sugere que você marque a opção [Referências](/help/sites-cloud/authoring/getting-started/basic-handling.md#references) painel para investigar mais detalhadamente:
+A mensagem sugere que você marque a opção [Referências](/help/sites-cloud/authoring/basic-handling.md#references) painel para investigar mais detalhadamente:
 
 ![Modelo de fragmento de conteúdo nas referências](assets/cf-cfmodels-references.png)
 
@@ -571,6 +569,6 @@ Quando o modelo está **bloqueado** (no modo SOMENTE LEITURA ), é possível vis
 
      >[!NOTE]
      >
-     >Ainda pode haver um aviso na parte superior, mas isso acontece quando o modelo já está em uso pelos fragmentos de conteúdo existentes.
+     Ainda pode haver um aviso na parte superior, mas isso acontece quando o modelo já está em uso pelos fragmentos de conteúdo existentes.
 
    * **Cancelar** retorna ao console.

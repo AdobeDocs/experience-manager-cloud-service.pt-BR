@@ -3,16 +3,16 @@ title: Configurar o editor de rich text para criar conteúdo [!DNL Adobe Experie
 description: Configurar o editor de rich text para criar conteúdo no [!DNL Adobe Experience Manager] as a Cloud Service.
 contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
 workflow-type: tm+mt
-source-wordcount: '1876'
+source-wordcount: '1858'
 ht-degree: 0%
 
 ---
 
 # Configurar o editor de rich text {#configure-the-rich-text-editor}
 
-O Editor de Rich Text (RTE) fornece aos autores uma grande variedade de funcionalidades para editar conteúdo de texto. Ícones, caixas de seleção, barra de ferramentas e menus são fornecidos para uma experiência de edição de texto WYSIWYG. Os administradores configuram o RTE para ativar, desativar e estender os recursos disponíveis nos componentes de criação. Veja como os autores [usar o RTE para criação](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md) conteúdo da Web.
+O Editor de Rich Text (RTE) fornece aos autores uma grande variedade de funcionalidades para editar conteúdo de texto. Ícones, caixas de seleção, barra de ferramentas e menus são fornecidos para uma experiência de edição de texto WYSIWYG. Os administradores configuram o RTE para ativar, desativar e estender os recursos disponíveis nos componentes de criação. Veja como os autores [usar o RTE para criação](/help/sites-cloud/authoring/page-editor/rich-text-editor.md) conteúdo da Web.
 
 Os conceitos e as etapas do RTE necessários para configurá-lo estão listados abaixo.
 
@@ -24,7 +24,7 @@ Os conceitos e as etapas do RTE necessários para configurá-lo estão listados 
 
 ## Compreender a interface do usuário disponível para autores {#understand-rte-ui}
 
-A interface do RTE oferece uma [design responsivo](/help/sites-cloud/authoring/features/responsive-layout.md) para ambiente de criação. A interface foi projetada para ser usada em dispositivos de toque e desktop.
+A interface do RTE oferece uma [design responsivo](/help/sites-cloud/authoring/page-editor/responsive-layout.md) para ambiente de criação. A interface foi projetada para ser usada em dispositivos de toque e desktop.
 
 ![Barra de ferramentas do Editor de Rich Text](assets/rte-toolbar-full-screen-mode.png)
 
@@ -38,7 +38,7 @@ Os autores podem criar e editar conteúdo textual no [!DNL Experience Manager] u
 
 | Modo de edição | Área de edição | Recursos recomendados para serem habilitados |
 |--- |--- |--- |
-| Inline | Edição no local para edições pequenas e rápidas; Formatar sem abrir uma caixa de diálogo. | Recursos mínimos de RTE. |
+| Em linha | Edição no local para edições pequenas e rápidas; Formatar sem abrir uma caixa de diálogo. | Recursos mínimos de RTE. |
 | Tela cheia do RTE | Abrange a página inteira. | Todos os recursos de RTE necessários. |
 | Caixa de diálogo | Caixa de diálogo na parte superior do conteúdo da página, mas não cobre a página inteira. | Ative os recursos criteriosamente. |
 | Tela cheia do diálogo | Igual ao modo de tela cheia; contém campos da caixa de diálogo junto com o RTE. | Todos os recursos de RTE necessários. |
@@ -152,7 +152,7 @@ Para obter configurações detalhadas dos plug-ins do RTE, consulte [como ativar
 <!-- TBD ENGREVIEW: To confirm if the sample works in CS or not?
 **Sample**: Download [this sample configuration](/help/sites-administering/assets/rte-sample-all-features-enabled-10.zip) that illustrates how to configure RTE. In this package all the features are enabled. -->
 
-A variável [Componente de texto dos Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) O permite que os editores de modelo configurem muitos plug-ins RTE usando a interface do usuário como políticas de conteúdo, eliminando a necessidade de configuração técnica. As políticas de conteúdo podem funcionar com as configurações da interface do usuário de RTE conforme descrito neste documento. Para obter mais informações, consulte [criar modelos de página](/help/sites-cloud/authoring/features/templates.md) e a variável [Documentação do desenvolvedor dos Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html).
+A variável [Componente de texto dos Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) O permite que os editores de modelo configurem muitos plug-ins RTE usando a interface do usuário como políticas de conteúdo, eliminando a necessidade de configuração técnica. As políticas de conteúdo podem funcionar com as configurações da interface do usuário de RTE conforme descrito neste documento. Para obter mais informações, consulte [criar modelos de página](/help/sites-cloud/authoring/sites-console/templates.md) e a variável [Documentação do desenvolvedor dos Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html).
 
 >Para fins de referência, os componentes de Texto padrão (fornecidos como parte de uma instalação padrão) podem ser encontrados em:
 >
@@ -218,7 +218,7 @@ O nó pop-up no modo em linha ou tela cheia contém uma lista das janelas pop-up
 
 ## Configurações da interface do usuário e políticas de conteúdo do RTE {#rtecontentpolicies}
 
-Os administradores podem controlar as opções de RTE usando políticas de conteúdo, digamos, em vez de fazer a configuração conforme descrito acima. As políticas de conteúdo definem as propriedades de design de um componente quando usado como parte de um [modelo editável](/help/sites-cloud/authoring/features/templates.md). Por exemplo, se um componente de texto que usa o RTE for usado com um modelo editável, a política de conteúdo poderá definir que a opção de negrito esteja disponível e que algumas opções de formatação de parágrafo estejam disponíveis. As políticas de conteúdo são reutilizáveis e podem ser aplicadas a vários modelos.
+Os administradores podem controlar as opções de RTE usando políticas de conteúdo, digamos, em vez de fazer a configuração conforme descrito acima. As políticas de conteúdo definem as propriedades de design de um componente quando usado como parte de um [modelo editável](/help/sites-cloud/authoring/sites-console/templates.md). Por exemplo, se um componente de texto que usa o RTE for usado com um modelo editável, a política de conteúdo poderá definir que a opção de negrito esteja disponível e que algumas opções de formatação de parágrafo estejam disponíveis. As políticas de conteúdo são reutilizáveis e podem ser aplicadas a vários modelos.
 
 As opções disponíveis no fluxo de RTE downstream das configurações da interface do usuário para as políticas de conteúdo.
 
@@ -280,5 +280,5 @@ Abaixo está um trecho de amostra para mapear o comando `Bold` ao ícone Coral c
 >[!MORELIKETHIS]
 >
 >* [Configurar plug-ins do RTE](configure-rich-text-editor-plug-ins.md)
->* [Usar editor de rich text para criação](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md)
+>* [Usar editor de rich text para criação](/help/sites-cloud/authoring/page-editor/rich-text-editor.md)
 >* [Configurar o RTE para sites acessíveis](rte-accessible-content.md)

@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Viewer Presets,Viewers
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '4326'
 ht-degree: 8%
@@ -114,7 +114,7 @@ Os administradores podem adicionar e personalizar os seguintes tipos de mídia a
    <td><p>Os visualizadores Panoramic Image e PanoramicVR renderizam imagens panorâmicas esféricas para imergir os usuários em uma experiência de visualização de 360° de uma sala, propriedade, localização ou paisagem.</p> <p>Para que uma imagem carregada seja qualificada como um panorama esférico, ela deve ter uma ou ambas as opções a seguir:</p>
     <ul>
      <li>Uma proporção de 2:1.</li>
-     <li>Marcado com as palavras-chave <code>equirectangular</code>ou <code>spherical</code> e <code>panorama</code>ou <code>spherical </code>e <code>panoramic</code>. Consulte <a href="/help/sites-cloud/authoring/features/tags.md">Uso de tags</a>.</li>
+     <li>Marcado com as palavras-chave <code>equirectangular</code>ou <code>spherical</code> e <code>panorama</code>ou <code>spherical </code>e <code>panoramic</code>. Consulte <a href="/help/sites-cloud/authoring/sites-console/tags.md">Uso de tags</a>.</li>
     </ul> <p>Tanto a proporção quanto os critérios de palavra-chave se aplicam aos ativos panorâmicos da página de detalhes do ativo e o componente WCM "Mídia panorâmica".</p></td>
   </tr>
     <tr>

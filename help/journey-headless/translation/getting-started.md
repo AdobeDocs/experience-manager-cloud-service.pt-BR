@@ -2,9 +2,9 @@
 title: Introdução à Tradução do AEM Headless
 description: Saiba como organizar seu conteúdo headless e como funcionam as ferramentas de tradução do AEM.
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '1413'
+source-wordcount: '1409'
 ht-degree: 92%
 
 ---
@@ -44,7 +44,7 @@ Há vários requisitos antes de começar a traduzir o conteúdo do AEM headless.
 
 >[!TIP]
 >
->Se você não estiver familiarizado com o uso de um CMS em larga escala como o AEM, considere revisar a documentação de [Manuseio básico](/help/sites-cloud/authoring/getting-started/basic-handling.md) antes de continuar. A documentação de Manuseio básico não faz parte da jornada. Assim, retorne a esta página quando terminar.
+>Se você não estiver familiarizado com o uso de um CMS em larga escala como o AEM, considere revisar a documentação de [Manuseio básico](/help/sites-cloud/authoring/basic-handling.md) antes de continuar. A documentação de Manuseio básico não faz parte da jornada. Assim, retorne a esta página quando terminar.
 
 ### Ferramentas {#tools}
 
@@ -184,7 +184,7 @@ Desenvolva esse conhecimento e continue sua jornada de tradução AEM headless r
 
 Embora seja recomendável que você passe para a próxima parte da jornada de tradução headless revisando o documento [Configurar o conector de tradução](configure-connector.md), veja a seguir alguns recursos opcionais adicionais que fazem uma análise mais profunda de alguns conceitos mencionados neste documento, mas não são necessários para continuar na jornada headless.
 
-* [Manuseio básico do AEM](/help/sites-cloud/authoring/getting-started/basic-handling.md) - Conheça as noções básicas da interface de usuário do AEM para navegar e executar tarefas essenciais confortavelmente, como encontrar seu conteúdo.
+* [Manuseio básico do AEM](/help/sites-cloud/authoring/basic-handling.md) - Conheça as noções básicas da interface de usuário do AEM para navegar e executar tarefas essenciais confortavelmente, como encontrar seu conteúdo.
 * [Identificação do conteúdo a ser traduzido](/help/sites-cloud/administering/translation/rules.md) - Saiba como as regras de tradução identificam o conteúdo que precisa ser traduzido.
 * [Configuração da estrutura de integração de tradução](/help/sites-cloud/administering/translation/integration-framework.md) - Saiba como configurar a Estrutura de integração de tradução para integrar-se a serviços de tradução de terceiros.
 * [Gerenciamento de projetos de tradução](/help/sites-cloud/administering/translation/managing-projects.md) - Saiba como criar e gerenciar projetos de tradução automática e humana no AEM.

@@ -2,10 +2,10 @@
 title: Limitações do editor
 description: O editor na interface habilitada para toque usa sobreposições para interagir com o conteúdo confinado em um iframe. Essa interação cria algumas limitações no uso do editor e também para desenvolvedores.
 exl-id: 6a4f0e43-1076-4da9-95dc-9c5bf83e30d0
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 10%
+source-wordcount: '315'
+ht-degree: 6%
 
 ---
 
@@ -19,9 +19,9 @@ Um autor pode encontrar as seguintes limitações funcionais ao usar o editor pa
 
 ### Links não ativos {#links-not-active}
 
-Quando [editar uma página](/help/sites-cloud/authoring/fundamentals/editing-content.md), os links não estão ativos.
+Quando [editar uma página](/help/sites-cloud/authoring/page-editor/edit-content.md), os links não estão ativos.
 
-* [Alternar para **Visualizar** modo](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode) para navegar usando os links no seu conteúdo.
+* [Alternar para **Visualizar** modo](/help/sites-cloud/authoring/page-editor/introduction.md#preview-mode) para navegar usando os links no seu conteúdo.
 
 ### Páginas de estrutura {#structure-pages}
 

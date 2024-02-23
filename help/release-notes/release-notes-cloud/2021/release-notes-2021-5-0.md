@@ -2,7 +2,7 @@
 title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2021.5.0.
 description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2021.5.0.
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
-source-git-commit: 720430af374636878b42ce346ca9c61ab089709b
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '1355'
 ht-degree: 29%
@@ -39,7 +39,7 @@ A versão seguinte (2021.6.0) será lançada em 28 de junho de 2021.
 
 ### Novidades do [!DNL Sites] {#what-is-new-sites}
 
-* Em breve, você poderá verificar o conteúdo em um novo [Camada de visualização](/help/sites-cloud/authoring/fundamentals/previewing-content.md) para simular a aparência e a experiência finais como você faria na camada de Publicação. Isso é ativado pelo assistente de Publicação gerenciada do AEM Sites, que agora permite escolher um destino de publicação entre Publicar ou Pré-visualizar. As experiências na Pré-visualização podem ser acessadas por meio de um URL dedicado. Após a validação em Pré-visualizar, o conteúdo pode ser publicado de Autor para Publicar como de costume. A habilitação do serviço de Pré-visualização em ambientes as a Cloud Service AEM será liberada gradualmente nas próximas semanas.
+* Em breve, você poderá verificar o conteúdo em um novo [Camada de visualização](/help/sites-cloud/authoring/sites-console/previewing-content.md) para simular a aparência e a experiência finais como você faria na camada de Publicação. Isso é ativado pelo assistente de Publicação gerenciada do AEM Sites, que agora permite escolher um destino de publicação entre Publicar ou Pré-visualizar. As experiências na Pré-visualização podem ser acessadas por meio de um URL dedicado. Após a validação em Pré-visualizar, o conteúdo pode ser publicado de Autor para Publicar como de costume. A habilitação do serviço de Pré-visualização em ambientes as a Cloud Service AEM será liberada gradualmente nas próximas semanas.
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 

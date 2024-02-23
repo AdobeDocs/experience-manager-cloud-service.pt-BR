@@ -2,7 +2,7 @@
 title: O que é diferente e quais são as novidades - Adobe Experience Manager as a Cloud Service
 description: O que é diferente e quais são as novidades - Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: d4502c7558fca7ecee89b2ce9429fd1c749d8e92
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '1883'
 ht-degree: 93%
@@ -240,7 +240,7 @@ Isso combina os benefícios de:
 
 >[!NOTE]
 >
->Para obter mais detalhes, a [Manuseio básico](/help/sites-cloud/authoring/getting-started/basic-handling.md) é um bom ponto de partida.
+>Para obter mais detalhes, a [Manuseio básico](/help/sites-cloud/authoring/basic-handling.md) é um bom ponto de partida.
 
 Os princípios básicos da interface do usuário (UI) de criação, tanto para o Sites quanto para o Assets, serão reconhecíveis a qualquer pessoa que tenha usado o AEM no passado.
 

@@ -4,7 +4,7 @@ description: Vários atalhos do teclado estão disponíveis em todo o AEM, inclu
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 24eefa31-4081-4b4a-af98-c6299b213cea
-source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 88%
@@ -15,7 +15,7 @@ ht-degree: 88%
 
 Uma seleção de atalhos do teclado está disponível para uso no console de fragmentos de conteúdo.
 
-Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns se aplicam quando [editar páginas](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md), outros para o [uso geral de consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns se aplicam quando [editar páginas](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md), outros para o [uso geral de consoles](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md).
 
 >[!NOTE]
 >
@@ -38,11 +38,11 @@ Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns se aplicam 
 | Selecione um ou mais fragmentos de conteúdo | `u` | Abrir a caixa de diálogo Desfazer a publicação agora |
 | Qualquer caixa de diálogo aberta | `esc` | A caixa de diálogo é dispensada |
 
-Vários atalhos de teclado também estão disponíveis para usuários de desktop. Alguns se aplicam durante a [edição de páginas](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md), outros para o [uso dos consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) em geral.
+Vários atalhos de teclado também estão disponíveis para usuários de desktop. Alguns se aplicam durante a [edição de páginas](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md), outros para o [uso dos consoles](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) em geral.
 
 >[!NOTE]
 >
->Os atalhos de teclado do editor ficam sempre ativos, independentemente se os [atalhos do console tenham sido desativados](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md#deactivating-keyboard-shortcuts).
+>Os atalhos de teclado do editor ficam sempre ativos, independentemente se os [atalhos do console tenham sido desativados](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md#deactivating-keyboard-shortcuts).
 
 ## Teclas modificadoras específicas do sistema operacional {#os-specific-modifier-keys}
 

@@ -2,7 +2,7 @@
 title: Trabalhar com tarefas
 description: As tarefas representam itens de trabalho a serem realizados no conteúdo e são usadas nos projetos para determinar a percentagem de conclusão das tarefas atuais
 exl-id: 66f95a1f-34d0-4e2e-aa8c-addc2029a1d9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 95%
@@ -76,6 +76,6 @@ Outra maneira de acessar tarefas é na Caixa de entrada. A partir da caixa de en
 
 ![Tarefas na caixa de entrada](/help/sites-cloud/authoring/assets/projects-task-inbox.png)
 
-Para concluir uma tarefa, selecione-a e clique em **Concluir**. Adicione informações à tarefa e clique em **Concluído**. Consulte [Sua Caixa de entrada](/help/sites-cloud/authoring/getting-started/inbox.md) para obter mais informações.
+Para concluir uma tarefa, selecione-a e clique em **Concluir**. Adicione informações à tarefa e clique em **Concluído**. Consulte [Sua Caixa de entrada](/help/sites-cloud/authoring/inbox.md) para obter mais informações.
 
 ![Notificações de tarefa](/help/sites-cloud/authoring/assets/projects-task-notifications.png)

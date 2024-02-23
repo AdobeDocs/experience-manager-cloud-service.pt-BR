@@ -2,10 +2,10 @@
 title: Visão geral dos fragmentos de experiência
 description: Estender fragmentos de experiência do Adobe Experience Manager as a Cloud Service.
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
-source-git-commit: 29d8d08899bb60b2bf3027ed32dbcdca3a73e671
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
-source-wordcount: '1646'
-ht-degree: 1%
+source-wordcount: '1642'
+ht-degree: 0%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 ## Noções básicas {#the-basics}
 
-Um [Fragmento de experiência](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) é um grupo de um ou mais componentes, incluindo conteúdo e layout que podem ser referenciados nas páginas.
+Um [Fragmento de experiência](/help/sites-cloud/authoring/fragments/content-fragments.md) é um grupo de um ou mais componentes, incluindo conteúdo e layout que podem ser referenciados nas páginas.
 
 Um Fragmento de experiência principal, ou uma variante, ou ambos, usa:
 
@@ -89,7 +89,7 @@ Para criar um modelo de Fragmento de experiência detectado pelo **Criar fragmen
       `experience-fragments`
 Esse padrão permite que os usuários criem fragmentos de experiência em /content/experience-fragments como o `cq:allowedTemplates` A propriedade desta pasta inclui todos os modelos com nomes que começam com `experience-fragment`. Os clientes podem atualizar essa propriedade para incluir seu próprio esquema de nomenclatura ou locais do modelo.
 
-1. [Modelos permitidos](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#configure-allowed-templates-folder) O pode ser configurado no console Fragmentos de experiência.
+1. [Modelos permitidos](/help/sites-cloud/authoring/fragments/content-fragments.md#configure-allowed-templates-folder) O pode ser configurado no console Fragmentos de experiência.
 
 <!--
 1. Add the template details manually in `cq:allowedTemplates` on the `/content/experience-fragment` node.
@@ -112,7 +112,7 @@ A única configuração adicional é garantir que os componentes sejam permitido
 The only additional configuration is to ensure that the components are [allowed on the template, this is achieved with the Content Policy](/help/sites-developing/page-templates-editable.md#content-policies).
 -->
 
-## O provedor de regravação do link do fragmento de experiência - HTML {#the-experience-fragment-link-rewriter-provider-html}
+## O provedor de reescrita de link do fragmento de experiência - HTML {#the-experience-fragment-link-rewriter-provider-html}
 
 No AEM, é possível criar Fragmentos de experiência. Um fragmento de experiência:
 

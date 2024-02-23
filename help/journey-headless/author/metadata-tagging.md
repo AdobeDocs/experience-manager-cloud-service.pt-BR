@@ -2,7 +2,7 @@
 title: Saiba mais sobre como definir metadados e marcação para fragmentos de conteúdo
 description: Saiba mais sobre como definir metadados e marcação para fragmentos de conteúdo
 exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
-source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 92%
@@ -38,6 +38,6 @@ Agora é possível colocar todo esse conhecimento em prática e começar a criar
 
 * [Metadados - propriedades dos fragmentos](/help/sites-cloud/administering/content-fragments/authoring.md#view-properties-tags)
 
-* [Uso de tags](/help/sites-cloud/authoring/features/tags.md)
+* [Uso de tags](/help/sites-cloud/authoring/sites-console/tags.md)
 
 * [Modelos de fragmentos de conteúdo: permitir modelos de fragmento de conteúdo na pasta Ativos](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#allowing-content-fragment-models-assets-folder)
