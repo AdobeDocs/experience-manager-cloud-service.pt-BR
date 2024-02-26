@@ -4,9 +4,9 @@ description: Formas perfeitas de artesanato, rápido!  criação baseada em docu
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 87ed5f0aed5554f56e28f317d1399429245a2d06
+source-git-commit: 4a3ebcf7985253ebca24e90ab57ae7eaf3e924e9
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '980'
 ht-degree: 0%
 
 ---
@@ -18,13 +18,15 @@ Na era digital de hoje, criar formulários amigáveis é essencial para qualquer
 
 Esses formulários enviam dados diretamente para um arquivo do Microsoft Excel ou do Google Sheets, permitindo que você use um ecossistema vibrante e APIs robustas do Google Sheets, do Microsoft Excel e do Microsoft Sharepoint para processar facilmente os dados enviados ou iniciar um fluxo de trabalho de negócios existente.
 
+O AEM Forms Edge Delivery fornece um bloco de formulário para ajudá-lo a criar formulários facilmente para capturar e armazenar dados capturados. Você pode incluir o bloco Formulário no projeto AEM EDS para começar a criar um formulário. Vamos começar:
+
 
 ## Pré-requisitos
 
 Antes de começar, verifique se você concluiu as seguintes etapas:
 
-* Configure e clone seu projeto do Serviço de entrega de borda (EDS). Consulte [tutorial do desenvolvedor](https://www.aem.live/developer/tutorial) para obter detalhes. Neste documento, a pasta local do projeto do Serviço de entrega de borda (EDS) é chamada de `[EDS Project repository]` .
-* Clonar o [Repositório de blocos do Forms](https://github.com/adobe/afb). Ele contém o código para renderizar o formulário em uma página da Web EDS. Neste documento, a pasta local do seu repositório de blocos do Forms é chamada de `[Forms Block repository]` neste documento.
+* Configure o projeto Github do Serviço de entrega de borda (EDS) usando a placa intermediária AEM e clone o repositório Github correspondente no computador local. Consulte [tutorial do desenvolvedor](https://www.aem.live/developer/tutorial) para obter detalhes. Neste documento, a pasta local do projeto do Serviço de entrega de borda (EDS) é chamada de `[EDS Project repository]` .
+* Clonar o [Repositório de blocos do Forms](https://github.com/adobe/afb) no computador local. Ele contém o código para renderizar o formulário em uma página da Web EDS. Neste documento, a pasta local do seu repositório de blocos do Forms é chamada de `[Forms Block repository]`.
 * Verifique se você tem acesso ao Google Sheets ou ao Microsoft SharePoint.
 
 
@@ -32,13 +34,11 @@ Antes de começar, verifique se você concluiu as seguintes etapas:
 
 +++ Etapa 1: adicione o bloco de formulário ao projeto do Serviço de entrega de borda (EDS).
 
-O AEM Forms Edge Delivery inclui um bloco de formulário para ajudá-lo a criar formulários facilmente para capturar e armazenar dados capturados. Para incluir o bloco de formulário ao projeto do Serviço de entrega de borda:
+A variável `Form block` inclui a capacidade de adicionar um formulário a um Site EDS. O bloco não está incluído em um projeto criado usando a placa perfurada do AEM. Para incluir o bloco de formulário ao projeto do Serviço de entrega de borda:
 
-1. Navegue até `[Forms Block repository]/blocks` e copie o `forms` pasta.
+1. Navegue até a `[Forms Block repository]/blocks` na sua máquina local e copie a `form` pasta.
 
-1. Navegue até `[EDS Project repository]/blocks/` e cole a variável `forms` pasta.
-
-   >[!VIDEO](https://video.tv.adobe.com/v/3427487?quality=12&learn=on)
+1. Navegue até a `[EDS Project repository]/blocks/` na máquina local e cole a variável `form` pasta.
 
 1. Verifique no `form` pasta e arquivos subjacentes ao seu projeto do Serviço de entrega de borda no GitHub.
 

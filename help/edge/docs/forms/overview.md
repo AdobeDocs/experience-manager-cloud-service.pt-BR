@@ -4,9 +4,9 @@ description: O serviço de entrega de borda da AEM Forms foi criado para oferece
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 87ed5f0aed5554f56e28f317d1399429245a2d06
+source-git-commit: 4a3ebcf7985253ebca24e90ab57ae7eaf3e924e9
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '422'
 ht-degree: 0%
 
 ---
@@ -20,19 +20,14 @@ O Serviço de entrega de borda da AEM Forms é um serviço de composição ofere
 
 * **Crie formulários com a pontuação perfeita do farol**: crie formulários que carregam e renderizam rapidamente, mesmo em conexões de Internet lentas. Carregamentos mais rápidos e experiência otimizada do usuário contribuem para taxas mais altas de preenchimento de formulários e taxas de conversão aprimoradas.
 
-* **Simplificar a criação e os envios**: crie formulários usando ferramentas familiares, como o Microsoft Excel ou o Google Sheets, em vez dos ambientes de criação tradicionais. Envie formulários diretamente para o Microsoft Excel ou o Google Sheets e use o ecossistema para processar facilmente os dados enviados.
+* **Simplificar a criação e os envios**: Aproveite as ferramentas de criação com as quais você está familiarizado, como o Microsoft Excel ou o Google Sheets (criação baseada em documentos), arquivos JSON (criação headless) ou o editor adaptável do Forms (criação WYSIWYG), para projetar e criar seus formulários. O serviço é dissociado da fonte de conteúdo e oferece flexibilidade na criação de conteúdo, permitindo que você use suas ferramentas de criação preferidas.
 
+  ![Ferramentas de criação de formulários de entrega de borda](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
 
-Esse serviço de composição é dissociado da fonte de conteúdo e oferece flexibilidade para a criação de conteúdo, permitindo que os usuários usem suas ferramentas de criação preferidas.
-
-![Ferramentas de criação de formulários de entrega de borda](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
-
-Os criadores de conteúdo podem aproveitar as ferramentas com as quais estão familiarizados, como o Microsoft Excel ou o Google Sheets (criação baseada em documentos), arquivos JSON (criação headless) ou o editor do AEM Forms Adaptive Forms (criação WYSIWYG), para projetar e criar seus formulários.
-
->[!NOTE]
->
->
-> O recurso de criação WYSIWYG está disponível no programa dos primeiros usuários. Você pode escrever para aem-forms-early-adopter-program@adobe.com a partir de sua ID de e-mail oficial para participar do programa de adoção antecipada e solicitar acesso ao recurso.
+  >[!NOTE]
+  >
+  >
+  > O recurso de criação WYSIWYG está disponível no programa dos primeiros usuários. Você pode escrever para aem-forms-early-adopter-program@adobe.com a partir de sua ID de e-mail oficial para participar do programa de adoção antecipada e solicitar acesso ao recurso.
 
 ## Comece com as noções básicas
 
