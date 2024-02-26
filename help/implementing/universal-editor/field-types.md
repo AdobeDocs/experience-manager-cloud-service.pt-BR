@@ -2,10 +2,10 @@
 title: Definições de modelo, campos e tipos de componentes
 description: Saiba mais sobre campos e os tipos de componentes que o Editor universal pode editar no painel de propriedades com exemplos. Entenda como você pode instrumentar seu próprio aplicativo criando uma definição de modelo e vinculando ao componente.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
-source-git-commit: 550d26cde3d6b7be419bc9df70db8894851361c6
+source-git-commit: bbe02f66b5bce3b919be4abd3b2de482a235b6ee
 workflow-type: tm+mt
-source-wordcount: '1004'
-ht-degree: 11%
+source-wordcount: '1126'
+ht-degree: 9%
 
 ---
 
@@ -94,7 +94,9 @@ A seguir estão os tipos de componentes possíveis para usar em campos de render
 
 Um tipo de componente de tag AEM habilita um seletor de tags AEM, que pode ser usado para anexar tags ao componente.
 
-##### Amostra {#sample-aem-tag}
+>[!BEGINTABS]
+
+>[!TAB Amostra]
 
 ```json
 {
@@ -110,15 +112,19 @@ Um tipo de componente de tag AEM habilita um seletor de tags AEM, que pode ser u
 }
 ```
 
-##### Captura de tela {#screenshot-aem-tag}
+>[!TAB Captura de tela]
 
 ![Captura de tela do tipo de componente da tag AEM](assets/component-types/aem-tag-picker.png)
+
+>[!ENDTABS]
 
 #### Conteúdo AEM {#aem-content}
 
 Um tipo de componente de conteúdo do AEM permite um seletor de conteúdo do AEM, que pode ser usado para definir referências de conteúdo.
 
-##### Amostra {#sample-aem-content}
+>[!BEGINTABS]
+
+>[!TAB Amostra]
 
 ```json
 {
@@ -135,9 +141,11 @@ Um tipo de componente de conteúdo do AEM permite um seletor de conteúdo do AEM
 }
 ```
 
-##### Captura de tela {#screenshot-aem-content}
+>[!TAB Captura de tela]
 
 ![Captura de tela do tipo de componente de conteúdo do AEM](assets/component-types/aem-content-picker.png)
+
+>[!ENDTABS]
 
 #### Booleano {#boolean}
 
@@ -147,7 +155,9 @@ Um tipo de componente booleano armazena um valor simples true/false renderizado 
 |---|---|---|---|
 | `customErrorMsg` | `string` | Mensagem que será exibida se o valor inserido não for um valor booleano | Não |
 
-##### Amostra {#sample-boolean}
+>[!BEGINTABS]
+
+>[!TAB Amostra 1]
 
 ```json
 {
@@ -162,6 +172,8 @@ Um tipo de componente booleano armazena um valor simples true/false renderizado 
   ]
 }
 ```
+
+>[!TAB Amostra 2]
 
 ```json
 {
@@ -180,15 +192,19 @@ Um tipo de componente booleano armazena um valor simples true/false renderizado 
 }
 ```
 
-##### Captura de tela {#screenshot-boolean}
+>[!TAB Captura de tela]
 
 ![Captura de tela do tipo de componente booleano](assets/component-types/boolean.png)
+
+>[!ENDTABS]
 
 #### Grupos de caixa de seleção {#checkbox-group}
 
 Semelhante a um booleano, um tipo de componente Grupo de caixas de seleção permite a seleção de vários itens true/false, renderizados como várias caixas de seleção.
 
-##### Amostra {#sample-checkbox-group}
+>[!BEGINTABS]
+
+>[!TAB Amostra]
 
 ```json
 {
@@ -208,9 +224,11 @@ Semelhante a um booleano, um tipo de componente Grupo de caixas de seleção per
 }
 ```
 
-#### Captura de tela {#screenshot-checkbox-group}
+>[!TAB Captura de tela]
 
 ![Captura de tela do tipo de componente do grupo de caixas de seleção](assets/component-types/checkbox-group.png)
+
+>[!ENDTABS]
 
 #### Contêiner {#container}
 
@@ -220,7 +238,9 @@ Um tipo de componente de contêiner permite o agrupamento de componentes. Ela of
 |---|---|---|---|
 | `collapsible` | `boolean` | O contêiner é recolhível | Não |
 
-##### Amostra {#sample-container}
+>[!BEGINTABS]
+
+>[!TAB Amostra]
 
 ```json
  {
@@ -251,9 +271,44 @@ Um tipo de componente de contêiner permite o agrupamento de componentes. Ela of
 }
 ```
 
-##### Captura de tela {#screenshot-container}
+>[!TAB Captura de tela]
 
 ![Captura de tela do tipo de componente do contêiner](assets/component-types/container.png)
+
+#### Fragmento de conteúdo {#content-fragment}
+
+O seletor de Fragmento de conteúdo pode ser usado para selecionar um [Fragmento do conteúdo](/help/sites-cloud/authoring/fragments/content-fragments.md) e suas variações (se necessário). Ela oferece uma configuração adicional.
+
+| Configuração | Tipo de valor | Descrição | Obrigatório |
+|---|---|---|---|
+| `variationName` | `string` | Nome da variável para armazenar a variação selecionada. Se não estiver definido, nenhum seletor de variação será exibido | Não |
+
+>[!BEGINTABS]
+
+>[!TAB Amostra 1]
+
+```json
+[
+  {
+    "id": "aem-content-fragment",
+    "fields": [
+      {
+        "component": "aem-content-fragment",
+        "name": "picker",
+        "label": "Content Fragment Picker",
+        "valueType": "string",
+        "variationName": "contentFragmentVariation"
+      }
+    ]
+  }
+]
+```
+
+>[!TAB Captura de tela]
+
+![Captura de tela do seletor de Fragmento de conteúdo](assets/component-types/aem-content-fragment.png)
+
+>[!ENDTABS]
 
 #### Data e hora {#date-time}
 
@@ -270,7 +325,9 @@ Também oferece um tipo de validação adicional.
 |---|---|---|---|
 | `customErrorMsg` | `string` | Mensagem que será exibida se `valueFormat` não foi atendido | Não |
 
-##### Amostra {#sample-date-time}
+>[!BEGINTABS]
+
+>[!TAB Amostra 1]
 
 ```json
 {
@@ -285,6 +342,8 @@ Também oferece um tipo de validação adicional.
   ]
 }
 ```
+
+>[!TAB Amostra 2]
 
 ```json
 {
@@ -336,15 +395,55 @@ Também oferece um tipo de validação adicional.
 }
 ```
 
-##### Captura de tela {#screenshot-date-time}
+>[!TAB Captura de tela]
 
 ![Captura de tela do tipo de componente de data e hora](assets/component-types/date-time.png)
+
+>[!ENDTABS]
+
+#### Fragmento de experiência {#experience-fragment}
+
+O seletor de Fragmento de experiência pode ser usado para selecionar um [Fragmento de experiência](/help/sites-cloud/authoring/fragments/experience-fragments.md) e suas variações (se necessário). Ela oferece uma configuração adicional.
+
+| Configuração | Tipo de valor | Descrição | Obrigatório |
+|---|---|---|---|
+| `variationName` | `string` | Nome da variável para armazenar a variação selecionada. Se não estiver definido, nenhum seletor de variação será exibido | Não |
+
+>[!BEGINTABS]
+
+>[!TAB Amostra 1]
+
+```json
+[
+  {
+    "id": "aem-experience-fragment",
+    "fields": [
+      {
+        "component": "aem-experience-fragment",
+        "name": "picker",
+        "label": "Experience Fragment Picker",
+        "valueType": "string",
+        "variationName": "experienceFragmentVariation"
+      }
+    ]
+  }
+]
+```
+
+>[!TAB Captura de tela]
+
+![Captura de tela do seletor de Fragmento de experiência](assets/component-types/aem-experience-fragment.png)
+
+>[!ENDTABS]
+
 
 #### Multisseleção {#multiselect}
 
 Um tipo de componente de seleção múltipla apresenta vários itens para seleção em uma lista suspensa, incluindo a capacidade de agrupar os elementos selecionáveis.
 
-##### Amostras {#sample-multiselect}
+>[!BEGINTABS]
+
+>[!TAB Amostra 1]
 
 ```json
 {
@@ -363,6 +462,8 @@ Um tipo de componente de seleção múltipla apresenta vários itens para seleç
   ]
 }
 ```
+
+>[!TAB Amostra 2]
 
 ```json
 {
@@ -397,10 +498,12 @@ Um tipo de componente de seleção múltipla apresenta vários itens para seleç
 }
 ```
 
-##### Capturas de tela {#screenshot-multiselect}
+>[!TAB Capturas de tela]
 
 ![Captura de tela do tipo de componente de seleção múltipla](assets/component-types/multiselect.png)
 ![Captura de tela do tipo de componente de seleção múltipla com agrupamento](assets/component-types/multiselect-group.png)
+
+>[!ENDTABS]
 
 #### Número {#number}
 
@@ -412,7 +515,9 @@ Um tipo de componente numérico permite a entrada de um número. Ela oferece tip
 | `numberMax` | `number` | Número máximo permitido | Não |
 | `customErrorMsg` | `string` | Mensagem que será exibida se `numberMin` ou `numberMax` não foi atendido | Não |
 
-##### Amostra {#sample-number}
+>[!BEGINTABS]
+
+>[!TAB Amostra 1]
 
 ```json
 {
@@ -428,6 +533,8 @@ Um tipo de componente numérico permite a entrada de um número. Ela oferece tip
   ]
 }
 ```
+
+>[!TAB Amostra 2]
 
 ```json
 {
@@ -451,15 +558,19 @@ Um tipo de componente numérico permite a entrada de um número. Ela oferece tip
 }
 ```
 
-##### Captura de tela {#screenshot-number}
+>[!TAB Captura de tela]
 
 ![Captura de tela do tipo de componente número](assets/component-types/number.png)
+
+>[!ENDTABS]
 
 #### Grupo radial {#radio-group}
 
 Um tipo de componente Grupo de opções permite uma seleção mutuamente exclusiva de várias opções renderizadas como um grupo semelhante a um grupo de caixas de seleção.
 
-##### Amostra {#sample-radio-group}
+>[!BEGINTABS]
+
+>[!TAB Amostra]
 
 ```json
 {
@@ -479,15 +590,19 @@ Um tipo de componente Grupo de opções permite uma seleção mutuamente exclusi
 }
 ```
 
-##### Captura de tela {#screenshot-radio-group}
+>[!TAB Captura de tela]
 
 ![Captura de tela do tipo de componente Grupo de opções](assets/component-types/radio.png)
+
+>[!ENDTABS]
 
 #### Referência {#reference}
 
 Um tipo de componente de referência permite uma referência a outro objeto de dados do objeto atual.
 
-##### Amostra {#sample-reference}
+>[!BEGINTABS]
+
+>[!TAB Amostra]
 
 ```json
 {
@@ -503,15 +618,19 @@ Um tipo de componente de referência permite uma referência a outro objeto de d
 }
 ```
 
-##### Captura de tela {#screenshot-reference}
+>[!TAB Captura de tela]
 
 ![Captura de tela do tipo de componente de referência](assets/component-types/reference.png)
+
+>[!ENDTABS]
 
 #### Selecionar {#select}
 
 Um tipo de componente de seleção permite selecionar uma única opção em uma lista de opções predefinidas em um menu suspenso.
 
-##### Amostra {#sample-select}
+>[!BEGINTABS]
+
+>[!TAB Amostra]
 
 ```json
 {
@@ -531,9 +650,11 @@ Um tipo de componente de seleção permite selecionar uma única opção em uma 
 }
 ```
 
-##### Captura de tela {#screenshot-select}
+>[!TAB Captura de tela]
 
 ![Captura de tela do tipo de componente selecionado](assets/component-types/select.png)
+
+>[!ENDTABS]
 
 #### Guia {#tab}
 
@@ -543,7 +664,9 @@ A `tab` definição pode ser considerada como um separador na matriz de `fields`
 
 Se desejar que itens sejam exibidos acima de todas as guias, eles deverão ser definidos antes de qualquer guia.
 
-##### Amostra {#sample-tab}
+>[!BEGINTABS]
+
+>[!TAB Amostra]
 
 ```json
 {
@@ -575,9 +698,11 @@ Se desejar que itens sejam exibidos acima de todas as guias, eles deverão ser d
 }
 ```
 
-##### Captura de tela {#screenshot-tab}
+>[!TAB Captura de tela]
 
 ![Captura de tela do tipo de componente guia](assets/component-types/tab.png)
+
+>[!ENDTABS]
 
 #### Área de texto {#text-area}
 
@@ -588,7 +713,9 @@ Uma área de texto permite entrada de rich text em várias linhas. Ela oferece t
 | `maxSize` | `number` | Número máximo de caracteres permitido | Não |
 | `customErrorMsg` | `string` | Mensagem que será exibida se `maxSize` é excedido | Não |
 
-##### Amostra {#sample-text-area}
+>[!BEGINTABS]
+
+>[!TAB Amostra 1]
 
 ```json
 {
@@ -603,6 +730,8 @@ Uma área de texto permite entrada de rich text em várias linhas. Ela oferece t
   ]
 }
 ```
+
+>[!TAB Amostra 2]
 
 ```json
 {
@@ -622,9 +751,11 @@ Uma área de texto permite entrada de rich text em várias linhas. Ela oferece t
 }
 ```
 
-##### Captura de tela {#screenshot-text-area}
+>[!TAB Captura de tela]
 
 ![Captura de tela do tipo de componente da área de texto](assets/component-types/richtext.png)
+
+>[!ENDTABS]
 
 #### Entrada de texto {#text-input}
 
@@ -637,7 +768,9 @@ Uma entrada de texto permite uma única linha de entrada de texto.  Inclui tipos
 | `regExp` | `string` | Expressão regular à qual o texto de entrada deve corresponder | Não |
 | `customErrorMsg` | `string` | Mensagem que será exibida se `minLength`, `maxLength`, e/ou `regExp` é/são violado(s) | Não |
 
-##### Amostra {#sample-text-input}
+>[!BEGINTABS]
+
+>[!TAB Amostra 1]
 
 ```json
 {
@@ -652,6 +785,8 @@ Uma entrada de texto permite uma única linha de entrada de texto.  Inclui tipos
   ]
 }
 ```
+
+>[!TAB Amostra 2]
 
 ```json
 {
@@ -675,6 +810,8 @@ Uma entrada de texto permite uma única linha de entrada de texto.  Inclui tipos
 }
 ```
 
-##### Captura de tela {#screenshot-text-input}
+>[!TAB Captura de tela]
 
 ![Captura de tela do tipo de componente de entrada de texto](assets/component-types/simpletext.png)
+
+>[!ENDTABS]
