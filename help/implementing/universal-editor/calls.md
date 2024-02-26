@@ -2,9 +2,9 @@
 title: Chamadas do editor universal
 description: Saiba mais sobre os diferentes tipos de chamadas feitas ao seu aplicativo pelo Editor universal para ajudá-lo a depurar.
 exl-id: 00d66e59-e445-4b5c-a5b1-c0a9f032ebd9
-source-git-commit: 7ef3efa6e074778b7b3e3a8159056200b2663b30
+source-git-commit: 1fc53e726f3a15c9ac7d772b4c181a7877e417af
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: '615'
 ht-degree: 1%
 
 ---
@@ -27,6 +27,8 @@ No entanto, para o desenvolvedor, entender essas chamadas e o que elas fazem pod
 * A variável **Carga** da chamada contém detalhes do que está sendo atualizado pelo editor, incluindo a identificação do que deve ser atualizado e como atualizá-lo.
 * A variável **Resposta** inclui detalhes do que exatamente foi atualizado pelo serviço do editor. Isso facilita a atualização do conteúdo no editor. Em certos casos, como `move` chamada, a página inteira deve ser atualizada.
 
+Depois que uma chamada é concluída com sucesso, são acionados eventos que incluem a carga da solicitação e da resposta, que pode ser personalizada para seu próprio aplicativo. Consulte o documento [Eventos Universais do Editor](/help/implementing/universal-editor/events.md) para obter mais detalhes.
+
 Veja a seguir uma lista dos tipos de chamadas que o Editor universal faz para o seu aplicativo, juntamente com amostras de cargas e respostas.
 
 ## Atualizar o {#update}
@@ -40,7 +42,9 @@ Sua carga útil inclui detalhes sobre o que gravar no JCR.
 * `type`: o tipo de valor JCR da propriedade que está sendo atualizada
 * `value`: Os dados atualizados
 
-### Carga de exemplo {#update-payload}
+>[!BEGINTABS]
+
+>[!TAB Carga de exemplo]
 
 ```json
 {
@@ -60,7 +64,7 @@ Sua carga útil inclui detalhes sobre o que gravar no JCR.
 }
 ```
 
-### Exemplo de resposta {#update-response}
+>[!TAB Exemplo de resposta]
 
 ```json
 {
@@ -74,6 +78,8 @@ Sua carga útil inclui detalhes sobre o que gravar no JCR.
 }
 ```
 
+>[!ENDTABS]
+
 ## Detalhes {#details}
 
 A `details` A chamada ocorre ao carregar o aplicativo no Editor universal para recuperar o conteúdo do aplicativo.
@@ -83,7 +89,9 @@ Sua carga inclui os dados a serem renderizados, bem como detalhes do que os dado
 * Para um componente, o Editor universal recupera apenas um `data` objeto, já que o schema dos dados é definido no aplicativo.
 * Para Fragmentos de conteúdo, o Editor universal também recupera uma `schema` desde que o Modelo de fragmento de conteúdo seja definido no JCR.
 
-### Carga de exemplo {#details-payload}
+>[!BEGINTABS]
+
+>[!TAB Carga de exemplo]
 
 ```json
 {
@@ -102,7 +110,7 @@ Sua carga inclui os dados a serem renderizados, bem como detalhes do que os dado
 }
 ```
 
-### Exemplo de resposta {#details-response}
+>[!TAB Exemplo de resposta]
 
 ```json
 {
@@ -134,6 +142,8 @@ Sua carga inclui os dados a serem renderizados, bem como detalhes do que os dado
 }
 ```
 
+>[!ENDTABS]
+
 ## Adicionar {#add}
 
 Um `add` A chamada de ocorre quando você coloca um novo componente no aplicativo usando o Editor universal.
@@ -142,7 +152,9 @@ Sua carga inclui uma `path` objeto que contém onde o conteúdo deve ser adicion
 
 Inclui igualmente uma `content` objeto com objetos adicionais para detalhes específicos do endpoint do conteúdo a ser armazenado [para cada plug-in.](/help/implementing/universal-editor/architecture.md) Por exemplo, se seu aplicativo tem como base o conteúdo do AEM e do Magento, a carga útil conteria um objeto de dados para cada sistema.
 
-### Carga de exemplo {#add-payload}
+>[!BEGINTABS]
+
+>[!TAB Carga de exemplo]
 
 ```json
 {
@@ -174,7 +186,7 @@ Inclui igualmente uma `content` objeto com objetos adicionais para detalhes espe
 }
 ```
 
-### Exemplo de resposta {#add-response}
+>[!TAB Exemplo de resposta]
 
 ```json
 {
@@ -188,13 +200,17 @@ Inclui igualmente uma `content` objeto com objetos adicionais para detalhes espe
 }
 ```
 
+>[!ENDTABS]
+
 ## Mover {#move}
 
 A `move` A chamada de ocorre quando você move um componente no aplicativo usando o Editor universal.
 
 Sua carga inclui uma `from` objeto que define onde o componente estava e um `to` objeto que define para onde foi movido.
 
-### Carga de exemplo {#move-payload}
+>[!BEGINTABS]
+
+>[!TAB Carga de exemplo]
 
 ```json
 {
@@ -227,7 +243,7 @@ Sua carga inclui uma `from` objeto que define onde o componente estava e um `to`
 }
 ```
 
-### Exemplo de resposta {#move-response}
+>[!TAB Exemplo de resposta]
 
 ```json
 {
@@ -240,13 +256,17 @@ Sua carga inclui uma `from` objeto que define onde o componente estava e um `to`
 }
 ```
 
+>[!ENDTABS]
+
 ## Remover {#remove}
 
 A `remove` A chamada de ocorre quando você exclui um componente no aplicativo usando o Editor universal.
 
 Sua carga inclui o caminho do objeto que é removido.
 
-### Carga de exemplo {#remove-payload}
+>[!BEGINTABS]
+
+>[!TAB Carga de exemplo]
 
 ```json
 {
@@ -272,7 +292,7 @@ Sua carga inclui o caminho do objeto que é removido.
 }
 ```
 
-### Exemplo de resposta {#remove-response}
+>[!TAB Exemplo de resposta]
 
 ```json
 {
@@ -286,13 +306,17 @@ Sua carga inclui o caminho do objeto que é removido.
 }
 ```
 
+>[!ENDTABS]
+
 ## Publicação {#publish}
 
 A `publish` a chamada ocorre ao clicar no botão **Publish** no Editor Universal para publicar o conteúdo editado.
 
 O Universal Editor repete o conteúdo e gera uma lista de referências que também devem ser publicadas.
 
-### Carga de exemplo {#publish-payload}
+>[!BEGINTABS]
+
+>[!TAB Carga de exemplo]
 
 ```json
 {
@@ -332,7 +356,7 @@ O Universal Editor repete o conteúdo e gera uma lista de referências que tamb�
 }
 ```
 
-### Exemplo de resposta {#publish-response}
+>[!TAB Exemplo de resposta]
 
 ```json
 {
@@ -355,3 +379,9 @@ O Universal Editor repete o conteúdo e gera uma lista de referências que tamb�
   ]
 }
 ```
+
+>[!ENDTABS]
+
+## Recursos adicionais {#additional-resources}
+
+* [Eventos Universais do Editor](/help/implementing/universal-editor/events.md)
