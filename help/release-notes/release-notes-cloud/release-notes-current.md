@@ -3,7 +3,7 @@ title: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud S
 description: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: e2c1d30c035fc1f664efbd15fee977f5488dc5f8
+source-git-commit: 3a86639d9203fff3c72e63baa8d1499b18a4539f
 workflow-type: tm+mt
 source-wordcount: '937'
 ht-degree: 25%
@@ -26,7 +26,7 @@ A seção a seguir descreve as notas da versão de recurso atual (mais recente) 
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento da versão atual (2024.1.0) do [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] é sexta-feira, 25 de janeiro de 2024. O próximo lançamento de recursos (2024.3.0) está planejado para sexta-feira, 28 de março de 2024.
+A data de lançamento da versão atual (2024.1.0) do [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] é sexta-feira, 25 de janeiro de 2024. O próximo lançamento de recursos (2024.3.0) está planejado para sexta-feira, 4 de abril de 2024.
 
 ## Notas da versão de manutenção {#maintenance}
 
@@ -101,9 +101,9 @@ O Serviço de dados de monitoramento de usuário real (RUM) oferece um reflexo m
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### Suporte para o Dynatrace {#dynatrace}
+### Suporte para Dynatrace {#dynatrace}
 
-Os clientes do Dynatrace podem monitorar o uso do AEM. [Saiba como](/help/implementing/cloud-manager/dynatrace.md) para solicitar conectividade com seu ambiente Dynatrace para monitoramento do desempenho do aplicativo. Observe que o APM do New Relic, que está disponível para todos os clientes, parará de coletar dados se o Dynatrace estiver ativado.
+Os clientes do Dynatrace podem monitorar o uso do AEM. [Saiba como](/help/implementing/cloud-manager/dynatrace.md) para solicitar conectividade com seu ambiente Dynatrace para monitoramento do desempenho do aplicativo. Observe que o APM do New Relic, que está disponível para todos os clientes, deixará de coletar dados se o Dynatrace estiver ativado.
 
 ### Suporte RDE para código de front-end usando temas de site e modelos de site: programa Early Adoter {#rde-frontend-early-adopter}
 
