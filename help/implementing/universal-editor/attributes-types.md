@@ -2,7 +2,7 @@
 title: Atributos e Tipos de Item
 description: Saiba mais sobre os atributos de dados e os tipos de item exigidos pelo Universal Editor.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: ff8a832d61e42ac17ca37e5a3c41e39119879af6
+source-git-commit: 9d88d9b6d3315f34ca6819820b4b4306ba901390
 workflow-type: tm+mt
 source-wordcount: '686'
 ht-degree: 74%
@@ -64,8 +64,8 @@ Dependendo do caso de uso, `data-aue-prop` ou `data-aue-resource` podem ou não 
 Para saber mais sobre o Editor universal, consulte estes documentos.
 
 * [Introdução ao Editor universal](introduction.md): saiba como o Editor universal permite editar qualquer aspecto do conteúdo das implementações, a fim de entregar experiências excepcionais, aumentar a velocidade do conteúdo e fornecer uma experiência de desenvolvimento de última geração.
-* [Criação de conteúdo com o Editor universal](authoring.md): saiba como é fácil e intuitivo para os autores criarem conteúdo usando o Editor universal.
-* [Publicar conteúdo com o editor universal](publishing.md) - Saiba como o Editor Universal publica conteúdo e como seus aplicativos podem lidar com o conteúdo publicado.
+* [Criação de conteúdo com o Editor universal](/help/sites-cloud/authoring/universal-editor/authoring.md): saiba como é fácil e intuitivo para os autores criarem conteúdo usando o Editor universal.
+* [Publicar conteúdo com o editor universal](/help/sites-cloud/authoring/universal-editor/publishing.md) - Saiba como o Editor Universal publica conteúdo e como seus aplicativos podem lidar com o conteúdo publicado.
 * [Introdução ao Editor universal no AEM](getting-started.md): saiba como obter acesso ao Editor universal e começar a instrumentar seu primeiro aplicativo do AEM para utilizá-lo.
 * [Arquitetura do Editor universal](architecture.md): saiba mais sobre a arquitetura do Editor universal e como os dados fluem entre seus serviços e camadas.
 * [Autenticação do Editor universal](authentication.md): saiba como funciona a autenticação do Editor universal.

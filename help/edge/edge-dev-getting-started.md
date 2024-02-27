@@ -2,7 +2,7 @@
 title: Guia de introdução do desenvolvedor para criação de AEM com o Edge Delivery Services
 description: Este guia colocará você em funcionamento com um novo site do Adobe Experience Manager usando o Edge Delivery Services e o Editor universal para criação de conteúdo
 feature: Edge Delivery Services
-source-git-commit: 224cfe9853e8974c33b0e53e961a02d54f875a35
+source-git-commit: 58d85886ef04b548c09e3ef9308fe596dd3eda38
 workflow-type: tm+mt
 source-wordcount: '989'
 ht-degree: 0%
@@ -141,7 +141,7 @@ Agora que você tem um projeto GitHub, deve criar um novo site AEM que o projeto
 
    ![Editor universal](assets/edge-dev-getting-started/universal-editor.png)
 
-Agora você pode editar seu site usando o Editor universal. Consulte a [Documentação do Universal Editor](/help/implementing/universal-editor/authoring.md) para obter mais informações.
+Agora você pode editar seu site usando o Editor universal. Consulte a [Documentação do Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) para obter mais informações.
 
 ### Publicar seu novo site {#publishing}
 

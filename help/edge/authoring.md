@@ -3,7 +3,7 @@ title: Criação de conteúdo para Edge Delivery Services
 description: Saiba como a criação de conteúdo funciona com Edge Delivery Services e como criar conteúdo AEM com Edge Delivery Services.
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: 58d85886ef04b548c09e3ef9308fe596dd3eda38
 workflow-type: tm+mt
 source-wordcount: '491'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Ao usar Edge Delivery Services com AEM as a Cloud Service AEM, o fato mais funda
 
 1. [O ambiente de criação do AEM](/help/sites-cloud/authoring/quick-start.md) O é usado para gerenciamento de conteúdo, como criar novas páginas, Fragmentos de experiência, Fragmentos de conteúdo etc.
    * Todos os recursos do AEM estão disponíveis, como fluxos de trabalho, MSM, tradução, inicializações etc.
-1. [O Editor universal](/help/implementing/universal-editor/authoring.md) é usado para criar o conteúdo gerenciado no AEM.
+1. [O Editor universal](/help/sites-cloud/authoring/universal-editor/authoring.md) é usado para criar o conteúdo gerenciado no AEM.
    * O Editor universal oferece uma interface de usuário nova e moderna para a criação de conteúdo.
    * Para criação, o AEM renderiza o HTML, mas inclui os scripts, estilos, ícones e outros recursos de Edge Delivery Services.
    * Embora o Editor universal seja usado, todas as alterações são persistentes no AEM.
@@ -52,7 +52,7 @@ Os detalhes dos blocos podem ser configurados no painel Propriedades.
 
 ![Configuração de propriedades de bloco](assets/block-properties.png)
 
-Para obter detalhes sobre como criar usando o Editor universal, consulte o documento [Criação de conteúdo com o Universal Editor.](/help/implementing/universal-editor/authoring.md)
+Para obter detalhes sobre como criar usando o Editor universal, consulte o documento [Criação de conteúdo com o Universal Editor.](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
 Consulte a [Guia de introdução do desenvolvedor para criação de AEM com o Edge Delivery Services](/help/edge/edge-dev-getting-started.md) para saber como iniciar seu próprio projeto para criar com AEM e Edge Delivery Services.
 

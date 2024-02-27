@@ -2,7 +2,7 @@
 title: Métodos para criar conteúdo no AEM
 description: Saiba mais sobre as diferentes maneiras de criar conteúdo no AEM e como elas são diferentes.
 feature: Authoring
-source-git-commit: 85b99fc0b0eb20b24f27d06159a52d4339a3c962
+source-git-commit: faac7c803a5145f4207154bfb3c9aa06274bbb86
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 0%
@@ -49,7 +49,7 @@ Para saber mais sobre o editor de fragmento de conteúdo do AEM, consulte os doc
 
 >[!NOTE]
 >
->A variável *novo* O editor destacado nesta seção só está disponível no Adobe Experience Manager online (AEM) as a Cloud Service.
+>A variável *novo* O editor destacado nesta seção não está disponível ao desenvolver localmente para o AEM as a Cloud Service.
 >
 >A variável [*original* Editor de fragmento de conteúdo](/help/assets/content-fragments/content-fragments-variations.md) O também está disponível.
 
@@ -61,11 +61,11 @@ O Editor universal é uma interface do usuário moderna que permite criar conte�
 
 O Editor universal é acessado por meio do console Sites no AEM, mas oferece a potência e a flexibilidade independente de conteúdo para criar não apenas seu conteúdo AEM, mas também conteúdo externo adequadamente instrumentado.
 
-Para saber mais sobre o Universal Editor, consulte o documento [Criação de conteúdo com o Universal Editor.](/help/implementing/universal-editor/authoring.md)
+Para saber mais sobre o Universal Editor, consulte o documento [Criação de conteúdo com o Universal Editor.](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
 ## Criação baseada em documento {#document-based}
 
-Se você usar os serviços de Entrega de borda, poderá optar por criar seu conteúdo como documentos convencionais, como o Microsoft Word ou Google Docs, totalmente fora do console do AEM.
+Se você usa os serviços de Entrega de borda, pode optar por criar seu conteúdo como documentos convencionais, como documentos do Microsoft Word ou do Google, totalmente fora do [AEM **Sites** console.](/help/sites-cloud/authoring/sites-console/introduction.md)
 
 ![Edição de conteúdo baseado em documento](assets/authoring-methods-document.jpg)
 

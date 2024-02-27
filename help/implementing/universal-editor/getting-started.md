@@ -2,7 +2,7 @@
 title: Introdução ao Editor universal no AEM
 description: Saiba como obter acesso ao Editor universal e começar a instrumentar seu primeiro aplicativo do AEM para utilizá-lo.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: 3dff6fa71c29da70daba80176d2fe51ef1e05200
+source-git-commit: 799ca20f8787afffd783c93a2480e096fffb1566
 workflow-type: tm+mt
 source-wordcount: '921'
 ht-degree: 69%
@@ -200,15 +200,15 @@ Se você quiser que apenas determinadas extensões sejam ativadas para uma pági
 
 Seu aplicativo agora está pronto para utilizar o Editor universal.
 
-Consulte [Criação de conteúdo com o Editor universal](authoring.md) para ver como é fácil e intuitivo criar conteúdo utilizando o Editor universal.
+Consulte [Criação de conteúdo com o Editor universal](/help/sites-cloud/authoring/universal-editor/authoring.md) para ver como é fácil e intuitivo criar conteúdo utilizando o Editor universal.
 
 ## Recursos adicionais {#additional-resources}
 
 Para saber mais sobre o Editor universal, consulte estes documentos.
 
 * [Introdução ao Editor universal](introduction.md): saiba como o Editor universal permite editar qualquer aspecto do conteúdo das implementações, a fim de entregar experiências excepcionais, aumentar a velocidade do conteúdo e fornecer uma experiência de desenvolvimento de última geração.
-* [Criação de conteúdo com o Editor universal](authoring.md): saiba como é fácil e intuitivo para os autores criarem conteúdo usando o Editor universal.
-* [Publicar conteúdo com o editor universal](publishing.md) - Saiba como o Editor Universal publica conteúdo e como seus aplicativos podem lidar com o conteúdo publicado.
+* [Criação de conteúdo com o Editor universal](/help/sites-cloud/authoring/universal-editor/authoring.md): saiba como é fácil e intuitivo para os autores criarem conteúdo usando o Editor universal.
+* [Publicar conteúdo com o editor universal](/help/sites-cloud/authoring/universal-editor/publishing.md) - Saiba como o Editor Universal publica conteúdo e como seus aplicativos podem lidar com o conteúdo publicado.
 * [Arquitetura do Editor universal](architecture.md): saiba mais sobre a arquitetura do Editor universal e como os dados fluem entre seus serviços e camadas.
 * [Atributos e tipos](attributes-types.md): saiba mais sobre os atributos e tipos de dados exigidos pelo Editor universal.
 * [Autenticação do Editor universal](authentication.md): saiba como funciona a autenticação do Editor universal.

@@ -1,17 +1,21 @@
 ---
 title: O editor de páginas AEM
 description: O editor de página AEM é uma ferramenta poderosa para criar conteúdo.
-source-git-commit: f11635b799a9154ff3fcaac5faca429a12f7a62b
+source-git-commit: 91ce6a0c880436327f4dd333a2eb3d36a4e89a4d
 workflow-type: tm+mt
-source-wordcount: '1400'
-ht-degree: 40%
+source-wordcount: '1431'
+ht-degree: 39%
 
 ---
 
 
 # O editor de páginas AEM {#editing-page-content}
 
-Assim que a página for criada no **Sites** console, é possível editar o conteúdo da página usando o editor de páginas AEM, uma ferramenta poderosa para a criação de conteúdo.
+Assim que a página for criada no [**Sites** console,](/help/sites-cloud/authoring/sites-console/introduction.md) é possível editar o conteúdo da página usando o editor de página AEM, uma ferramenta poderosa para a criação de conteúdo.
+
+>[!NOTE]
+>
+>Ao editar uma página no [**Sites** console,](/help/sites-cloud/authoring/sites-console/introduction.md) o console abrirá o editor apropriado para a página [modelo:](/help/sites-cloud/authoring/sites-console/templates.md) o editor de página descrito neste documento ou a variável [Editor universal.](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
 >[!NOTE]
 >
