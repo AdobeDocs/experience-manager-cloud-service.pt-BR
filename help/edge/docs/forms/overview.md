@@ -4,9 +4,9 @@ description: O serviço de entrega de borda da AEM Forms foi criado para oferece
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 4a3ebcf7985253ebca24e90ab57ae7eaf3e924e9
+source-git-commit: 78d40574e6fea8dde22414e43fd77215b9e7d2a1
 workflow-type: tm+mt
-source-wordcount: '422'
+source-wordcount: '413'
 ht-degree: 0%
 
 ---
@@ -16,18 +16,30 @@ ht-degree: 0%
 
 O Serviço de entrega de borda da AEM Forms é um serviço de composição oferecido pelo Adobe que permite criar e fornecer formulários web de alto impacto e desempenho rápido. Você pode usar o serviço para:
 
-* **Formas de artesanato visualmente deslumbrante**: corte os designs insípidos e cortadores de cookies e encante os usuários com formas dinâmicas e modernas que refletem a identidade da sua marca. Aproveite componentes pré-criados ou crie seus próprios componentes personalizados para dar vida à sua visão de forma rápida e fácil.
+* **Usuários do Captivate com formulários impressionantes**: crie formulários complexos e envolventes com facilidade usando uma biblioteca de componentes pré-construídos. Integre facilmente o reCAPTCHA, envie formulários diretamente por email e permita uploads de arquivos ininterruptos para soluções de armazenamento seguras, como Sharepoint, Armazenamento do Azure e Amazon S3. Crie até mesmo seus próprios componentes de formulários personalizados para dar vida à sua visão exclusiva.
+
+  ![Formulários de inscrição](/help/edge/assets/enrollment-form.png)
 
 * **Crie formulários com a pontuação perfeita do farol**: crie formulários que carregam e renderizam rapidamente, mesmo em conexões de Internet lentas. Carregamentos mais rápidos e experiência otimizada do usuário contribuem para taxas mais altas de preenchimento de formulários e taxas de conversão aprimoradas.
 
-* **Simplificar a criação e os envios**: Aproveite as ferramentas de criação com as quais você está familiarizado, como o Microsoft Excel ou o Google Sheets (criação baseada em documentos), arquivos JSON (criação headless) ou o editor adaptável do Forms (criação WYSIWYG), para projetar e criar seus formulários. O serviço é dissociado da fonte de conteúdo e oferece flexibilidade na criação de conteúdo, permitindo que você use suas ferramentas de criação preferidas.
+  ![pontuação de farol perfeito para seus formulários](/help/edge/assets/lighthouse-forms.png)
+
+* **Crie experiências de inscrição digital com as ferramentas de sua escolha**: aumente a eficiência da criação ao dissociar as fontes de conteúdo. Pronto para uso, você pode usar a criação de AEM e a criação baseada em documentos. Dessa forma, você pode trabalhar com várias fontes de conteúdo no mesmo site e usar suas ferramentas de criação preferidas, como o Microsoft Excel, o Google Sheets ou o AEM Editors.
 
   ![Ferramentas de criação de formulários de entrega de borda](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
 
-  >[!NOTE]
-  >
-  >
-  > O recurso de criação WYSIWYG está disponível no programa dos primeiros usuários. Você pode escrever para aem-forms-early-adopter-program@adobe.com a partir de sua ID de e-mail oficial para participar do programa de adoção antecipada e solicitar acesso ao recurso.
+<!--
+* **Measure customer impact and deliver effective forms**: Use our RUM dashboards to visualize form performance and identify areas for improvement. Experiment with different versions and continuously optimize your forms for maximum effectiveness, ensuring you capture the data you need and drive better business outcomes.
+
+* **Use Integrated services:** Use integrated services to streamline and empowers your users with a one-stop shop for managing their digital enrollment journeys. Use e-signatures, automated workflows, document of record (DoR), and seamless data integration, simplify the entire digital enrollment process, accelerate approvals, and optimizes your business workflows. 
+
+    
+>[!NOTE]
+    >
+    >
+    > WYSIWYG authoring capability, integrated services, and customer impact measuring features are available under early adopter program. You can write to aem-forms-early-adopter-program@adobe.com from your official email id to join the early adopter program and request access to the capability.
+
+    -->
 
 ## Comece com as noções básicas
 
@@ -57,18 +69,26 @@ O Serviço de entrega de borda da AEM Forms é um serviço de composição ofere
         <p>Crie formulários que são carregados e renderizados de forma rápida e automática em dispositivos móveis.</p>
     </div>
     <div class="card-container">
-        <a href="/help/edge/docs/forms/validate-forms.md">
-            <img src="/help/edge/assets/smock_condition_18_n.svg" alt="Adicionar validações a campos de formulário" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Aplicar validações de campo</b>
+        <a href="/help/edge/docs/forms/create-forms.md#manually-configure-a-spreadsheet-to-accept-data">   
+            <img src="/help/edge/assets/smock_platformdatamapping_18_n.svg" alt="Enviar formulário" alt="Usar fragmentos de formulário em um formulário EDS" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Enviar formulário para planilha</b>
         </a>
-        <p>Reduza erros e frustrações verificando as entradas do formulário para obter a formatação adequada.</p>
-    </div>    <div class="card-container">
+        <p>Envie formulários diretamente para o Microsoft Excel ou o Google Sheets.</p>
+    </div>
+     <div class="card-container">
         <a href="/help/edge/docs/forms/style-theme-forms.md">
             <img src="/help/edge/assets/smock_imageautomode_18_N.svg" alt="Aplicar estilos ou temas a um formulário eds" style="border-radius: 5px;"> </b>
             <br><b style="margin-top: 5px;">Personalizar um tema</b>
         </a>
         <p>Crie uma imagem de marca consistente aplicando o mesmo tema em vários formulários.</p>
     </div>
+      <div class="card-container">
+        <a href="/help/edge/docs/forms/validate-forms.md">
+            <img src="/help/edge/assets/smock_condition_18_n.svg" alt="Adicionar validações a campos de formulário" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Aplicar validações de campo</b>
+        </a>
+        <p>Reduza erros e frustrações verificando as entradas do formulário para obter a formatação adequada.</p>
+    </div> 
     <div class="card-container">
         <a href="/help/edge/docs/forms/translate-forms.md">  
             <img src="/help/edge/assets/smock_abc_18_n.svg" alt="Traduzir um formulário EDS" style="border-radius: 5px;"> </b>
@@ -104,13 +124,7 @@ O Serviço de entrega de borda da AEM Forms é um serviço de composição ofere
         </a>
         <p>Use a integração OTB reCAPTCHA para uma proteção robusta contra spam e bot.</p>
     </div>
-    <div class="card-container">
-        <a href="/help/edge/docs/forms/create-forms.md#manually-configure-a-spreadsheet-to-accept-data">   
-            <img src="/help/edge/assets/smock_platformdatamapping_18_n.svg" alt="Enviar formulário" alt="Usar fragmentos de formulário em um formulário EDS" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Enviar formulário para planilha</b>
-        </a>
-        <p>Envie formulários diretamente para o Microsoft Excel ou o Google Sheets.</p>
-    </div>
+
 </div>
 
 

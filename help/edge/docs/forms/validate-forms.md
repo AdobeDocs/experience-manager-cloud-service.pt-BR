@@ -4,15 +4,29 @@ description: Crie formulários poderosos mais rápido usando planilhas e campos 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 0604838311bb9ab195789fad755b0910e09519fd
+source-git-commit: 78d40574e6fea8dde22414e43fd77215b9e7d2a1
 workflow-type: tm+mt
-source-wordcount: '70'
+source-wordcount: '262'
 ht-degree: 0%
 
 ---
 
 
-# Dominar validações de campo de bloco de formulário para o serviço de entrega do AEM Forms Edge
+# Adicionar validações a campos de formulário
+
+O bloco de formulário tem recursos de validação integrados. Essas validações são aplicadas automaticamente em navegadores modernos com base no tipo de campo escolhido e nas propriedades adicionais fornecidas.
+
+## Noções básicas sobre tipos de campo e validação
+
+O bloco Formulário suporta uma variedade de [tipos de entrada HTML-5](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types), incluindo texto, email, número, data e muito mais. Também acomoda [textarea](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea), select e fieldset, juntamente com recursos abrangentes de validação de entrada inerentes ao HTML-5.
+
+O usa tipos de campo HTML para definir o tipo de dados que um usuário pode inserir. Tipos de campos diferentes têm regras de validação integradas diferentes:
+
+Email: esse tipo de campo valida automaticamente a entrada do usuário em relação a um formato de endereço de email comum. Os usuários que inserirem um email inválido verão uma mensagem de erro.
+Número: esse tipo de campo permite apenas entrada numérica. Os usuários que inserirem caracteres não numéricos receberão um erro.
+Data: esse tipo de campo valida a entrada do usuário em relação a um formato de data padrão. Datas fora de um intervalo razoável também podem ser sinalizadas como inválidas.
+URL: esse tipo de campo valida a entrada do usuário em relação a um formato de URL válido. Os usuários que inserirem um URL inválido verão uma mensagem de erro.
+Telefone: esse tipo de campo foi projetado especificamente para números de telefone e pode acionar a validação com base em formatos específicos de país (não suportado universalmente).
 
 
 ## Veja mais

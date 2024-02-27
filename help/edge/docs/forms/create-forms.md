@@ -4,9 +4,9 @@ description: Formas perfeitas de artesanato, rápido!  criação baseada em docu
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 4a3ebcf7985253ebca24e90ab57ae7eaf3e924e9
+source-git-commit: 78d40574e6fea8dde22414e43fd77215b9e7d2a1
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '994'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,8 @@ Antes de começar, verifique se você concluiu as seguintes etapas:
 
 * Configure o projeto Github do Serviço de entrega de borda (EDS) usando a placa intermediária AEM e clone o repositório Github correspondente no computador local. Consulte [tutorial do desenvolvedor](https://www.aem.live/developer/tutorial) para obter detalhes. Neste documento, a pasta local do projeto do Serviço de entrega de borda (EDS) é chamada de `[EDS Project repository]` .
 * Clonar o [Repositório de blocos do Forms](https://github.com/adobe/afb) no computador local. Ele contém o código para renderizar o formulário em uma página da Web EDS. Neste documento, a pasta local do seu repositório de blocos do Forms é chamada de `[Forms Block repository]`.
-* Verifique se você tem acesso ao Google Sheets ou ao Microsoft SharePoint.
+* Verifique se você tem acesso ao Google Sheets ou ao Microsoft SharePoint. Para configurar o Microsoft SharePoint como sua fonte de conteúdo, consulte [Como usar o Sharepoint](https://www.aem.live/docs/setup-customer-sharepoint)
+
 
 
 ## Criar um formulário

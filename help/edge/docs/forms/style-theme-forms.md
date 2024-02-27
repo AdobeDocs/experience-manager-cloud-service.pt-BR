@@ -4,7 +4,7 @@ description: Personalizar tema e estilo para um formulário do Serviço de entre
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 59ed012f10a20939c846c8fff088534c5638f3db
+source-git-commit: 78d40574e6fea8dde22414e43fd77215b9e7d2a1
 workflow-type: tm+mt
 source-wordcount: '1268'
 ht-degree: 0%
@@ -248,7 +248,7 @@ Semelhante aos componentes suspensos, os grupos de rádio e de caixa de seleçã
 ```
 
 
-#### Estrutura de HTML do grupo de rádio
+#### Estrutura de HTML do grupo de caixas de seleção
 
 ```HTML
 <div class="form-checkbox-group-wrapper form-{Name} field-wrapper" data-required={required}>
