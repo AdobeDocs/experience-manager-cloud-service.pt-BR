@@ -2,9 +2,9 @@
 title: Métodos para criar conteúdo no AEM
 description: Saiba mais sobre as diferentes maneiras de criar conteúdo no AEM e como elas são diferentes.
 feature: Authoring
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+source-git-commit: 85b99fc0b0eb20b24f27d06159a52d4339a3c962
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '554'
 ht-degree: 0%
 
 ---
@@ -43,9 +43,15 @@ O editor de fragmento de conteúdo do AEM é o editor preferido para a criação
 
 ![O editor de fragmento de conteúdo do AEM](assets/authoring-methods-cf-editor.png)
 
-O editor de fragmento de conteúdo do AEM apresenta uma interface clara para a criação e o gerenciamento de conteúdo estruturado, ideal para entrega headless.
+O editor de fragmento de conteúdo AEM apresenta uma interface clara para a criação e o gerenciamento de conteúdo estruturado, ideal para entrega headless.
 
-Para saber mais sobre o editor de fragmento de conteúdo do AEM, consulte o documento [Gerenciamento de fragmentos de conteúdo.](/help/assets/content-fragments/content-fragments-managing.md)
+Para saber mais sobre o editor de fragmento de conteúdo do AEM, consulte os documentos [Gerenciamento de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/managing.md) e [Criação de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/managing.md).
+
+>[!NOTE]
+>
+>A variável *novo* O editor destacado nesta seção só está disponível no Adobe Experience Manager online (AEM) as a Cloud Service.
+>
+>A variável [*original* Editor de fragmento de conteúdo](/help/assets/content-fragments/content-fragments-variations.md) O também está disponível.
 
 ## Editor universal {#universal-editor}
 
