@@ -1,13 +1,17 @@
 ---
-description: Este tutorial inclui todas as informações relacionadas aos componentes do EDS.
-title: Componentes de formulário compatíveis no bloco de formulário - Tutorial do desenvolvedor
+title: Componentes do formulário do serviço de entrega de borda do AEM Forms
+description: O serviço de entrega de borda da AEM Forms foi criado para oferecer desempenho máximo, permitindo que você visualize o futuro da coleta de dados simplificada e do envolvimento do usuário. O artigo lista todos os componentes de formulários disponíveis imediatamente para formulários EDD.
 feature: Edge Delivery Services
-source-git-commit: 78d40574e6fea8dde22414e43fd77215b9e7d2a1
+hide: true
+hidefromtoc: true
+source-git-commit: 1dc4915f0b149ef67dfa22c8d4c6be7538170d38
 workflow-type: tm+mt
-source-wordcount: '845'
+source-wordcount: '871'
 ht-degree: 5%
 
 ---
+
+
 
 
 # Componentes de HTML compatíveis com a Entrega de borda de bloco de formulário

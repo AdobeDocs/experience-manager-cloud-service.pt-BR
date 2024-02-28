@@ -4,9 +4,9 @@ description: O serviço de entrega de borda da AEM Forms foi criado para oferece
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 78d40574e6fea8dde22414e43fd77215b9e7d2a1
+source-git-commit: 1dc4915f0b149ef67dfa22c8d4c6be7538170d38
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '418'
 ht-degree: 0%
 
 ---
@@ -14,20 +14,43 @@ ht-degree: 0%
 
 # Serviço de entrega de borda do AEM Forms {#aem-forms-edge-delivery-service-overview}
 
-O Serviço de entrega de borda da AEM Forms é um serviço de composição oferecido pelo Adobe que permite criar e fornecer formulários web de alto impacto e desempenho rápido. Você pode usar o serviço para:
 
-* **Usuários do Captivate com formulários impressionantes**: crie formulários complexos e envolventes com facilidade usando uma biblioteca de componentes pré-construídos. Integre facilmente o reCAPTCHA, envie formulários diretamente por email e permita uploads de arquivos ininterruptos para soluções de armazenamento seguras, como Sharepoint, Armazenamento do Azure e Amazon S3. Crie até mesmo seus próprios componentes de formulários personalizados para dar vida à sua visão exclusiva.
+<div>
+&lt;style="font-family: Arial, sans-serif; margin: 0; padding: 0;"&gt;
+    <main class="content">
+      <section class="content-section">
+        <p style="line-height: 1.5;">O Serviço de entrega de borda da AEM Forms é um serviço de composição oferecido pelo Adobe que permite criar e fornecer formulários web de alto impacto e desempenho rápido. Você pode usar o serviço para:</p>
+        </section> <section class="content-section">
+        <h2 style="font-size: 20px; margin-bottom: 10px;">Usuários do Captivate com formulários impressionantes</h2>
+        <img src="/help/edge/assets/enrollment-form.png" alt="Formulário de inscrição" style="float: left; margin: 0 20px 20px 0; width: 150px;">
+        <p style="line-height: 1.5;">Crie formulários complexos e envolventes com facilidade usando uma biblioteca de componentes pré-construídos. Integre facilmente o reCAPTCHA, envie formulários diretamente por email e permita uploads de arquivos ininterruptos para soluções de armazenamento seguras, como Sharepoint, Armazenamento do Azure e Amazon S3. Crie até mesmo seus próprios componentes de formulários personalizados para dar vida à sua visão exclusiva.</p>
+        </section> <section class="content-section">
+        <h2 style="font-size: 20px; margin-bottom: 10px;">Crie formulários com a pontuação perfeita do farol</h2>
+        <img src="/help/edge/assets/lighthouse-forms.png" alt="pontuação de farol perfeito para seus formulários" style="float: right; margin: 20px 0 0 20px; width: 150px;">
+        <p style="line-height: 1.5;"> Crie formulários que carregam e renderizam rapidamente, mesmo em conexões lentas com a Internet. Carregamentos mais rápidos e experiência otimizada do usuário contribuem para taxas mais altas de preenchimento de formulários e taxas de conversão aprimoradas.</p>
+        </section>
+        <section class="content-section">
+        <h2 style="font-size: 20px; margin-bottom: 10px;">Crie experiências de inscrição digital com as ferramentas de sua escolha</h2>
+        <img src="/help/edge/assets/edge-delivery-forms-authoring-tools.png" alt="Formulário de inscrição" style="float: left; margin: 0 20px 20px 0; width: 150px;">
+        <p style="line-height: 1.5;">Aumente a eficiência da criação desvinculando as fontes de conteúdo. Pronto para uso, você pode usar a criação de AEM e a criação baseada em documentos. Dessa forma, você pode trabalhar com várias fontes de conteúdo no mesmo site e usar suas ferramentas de criação preferidas, como o Microsoft Excel, o Google Sheets ou o AEM Editors.</p>
+        </section>
+</div>
 
-  ![Formulários de inscrição](/help/edge/assets/enrollment-form.png)
 
-* **Crie formulários com a pontuação perfeita do farol**: crie formulários que carregam e renderizam rapidamente, mesmo em conexões de Internet lentas. Carregamentos mais rápidos e experiência otimizada do usuário contribuem para taxas mais altas de preenchimento de formulários e taxas de conversão aprimoradas.
+<!-- >
+* **Captivate users with stunning forms**: 
+Build complex and engaging forms with ease using a library of pre-built components. Easily integrate reCAPTCHA, submit forms directly to email, and allow seamless file uploads to secure storage solutions like Sharepoint, Azure Storage, and Amazon S3. Even create your own custom forms components to bring your unique vision to life. 
 
-  ![pontuação de farol perfeito para seus formulários](/help/edge/assets/lighthouse-forms.png)
+    ![Enrollment forms](/help/edge/assets/enrollment-form.png)
 
-* **Crie experiências de inscrição digital com as ferramentas de sua escolha**: aumente a eficiência da criação ao dissociar as fontes de conteúdo. Pronto para uso, você pode usar a criação de AEM e a criação baseada em documentos. Dessa forma, você pode trabalhar com várias fontes de conteúdo no mesmo site e usar suas ferramentas de criação preferidas, como o Microsoft Excel, o Google Sheets ou o AEM Editors.
+* **Build forms with perfect lighthouse score**: Build forms that load and render quickly, even on slow internet connections. Faster loading times and optimized user experience contribute to higher form completion rates and improved conversion rates.
 
-  ![Ferramentas de criação de formulários de entrega de borda](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
+    ![perfect lighthouse score for your forms](/help/edge/assets/lighthouse-forms.png)
 
+* **Create digital enrollment experiences with tools of your choice**: Increase authoring efficiency by decoupling content sources. Out of the box you can use both AEM authoring and document-based authoring. As such, you can work with multiple content sources on the same website and use your preferred authoring tools, such as Microsoft Excel, Google Sheets, or AEM Editors.
+
+    ![Edge Delivery forms authoring tools](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
+    
 <!--
 * **Measure customer impact and deliver effective forms**: Use our RUM dashboards to visualize form performance and identify areas for improvement. Experiment with different versions and continuously optimize your forms for maximum effectiveness, ensuring you capture the data you need and drive better business outcomes.
 

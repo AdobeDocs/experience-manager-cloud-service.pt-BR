@@ -4,7 +4,7 @@ description: Crie formulários poderosos mais rápido usando planilhas e campos 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: bd8c4fbfd7f740baa6abd7a91fb8d1dcdaff6c28
+source-git-commit: 1dc4915f0b149ef67dfa22c8d4c6be7538170d38
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 0%
@@ -16,7 +16,10 @@ ht-degree: 0%
 
 Depois de ter [criou e visualizou o formulário](/help/edge/docs/forms/create-forms.md), é hora de permitir que a planilha correspondente comece a receber dados.
 
+<!-- 
 >[!VIDEO](https://video.tv.adobe.com/v/3427489?quality=12&learn=on)
+
+-->
 
 Para ativar a planilha:
 
