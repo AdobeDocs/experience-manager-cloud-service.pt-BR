@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 78d40574e6fea8dde22414e43fd77215b9e7d2a1
+source-git-commit: 41976a70f5566c79a0e14d5d4e1396dbdee12046
 workflow-type: tm+mt
-source-wordcount: '4730'
+source-wordcount: '4733'
 ht-degree: 87%
 
 ---
@@ -705,6 +705,7 @@ ht-degree: 87%
    + Resolução de problemas {#troubleshooting-aem-forms-cloud-service}
       + [Instalação e configuração](/help/forms/troubleshooting-installation-and-configuration.md)
       + [Armazenamento em cache do Dispatcher e CDN](/help/forms/troubleshooting-caching-performance.md)
+      + [Reiniciar o SDK do AEM](/help/forms/restart-aem-sdk.md)
 + Screens {#screens-as-cloud-service}
    + Visão geral do Screens as a Cloud Service {#overview}
       + [Introdução](/help/screens-cloud/introduction/introduction.md)

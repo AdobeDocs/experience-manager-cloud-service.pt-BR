@@ -3,9 +3,10 @@ title: Como configurar um ambiente de desenvolvimento local para o AEM Forms?
 description: Configurar um ambiente de desenvolvimento local para o Adobe Experience Manager Forms as a Cloud Service
 role: Admin, Developer, User
 feature: Adaptive Forms
-source-git-commit: 58325cccf218eb2176868879842a795d1c91d8a6
+exl-id: 12877a77-094f-492a-af58-cffafecf79ae
+source-git-commit: 1ec17aebe4eb003b24f5036288a8836aabddb77a
 workflow-type: tm+mt
-source-wordcount: '2682'
+source-wordcount: '2724'
 ht-degree: 1%
 
 ---
@@ -129,7 +130,12 @@ O arquivo de recursos as a Cloud Service do Adobe Experience Manager Forms forne
 
 1. Navegue até o diretório crx-quickstart/install. Caso a pasta não exista, crie-a.
 
-1. Interrompa a instância do AEM, coloque o [!DNL AEM Forms] arquivo de recursos complementar, `aem-forms-addon-<version>.far`, na pasta de instalação e reinicie a instância.
+1. Interrompa a instância do AEM, coloque o [!DNL AEM Forms] arquivo de recursos complementar, `aem-forms-addon-<version>.far`, na pasta de instalação.
+1. Vá para a janela de comando ativa e pressione `Ctrl + C` para reiniciar o SDK.
+
+   >[!NOTE]
+   >
+   > É recomendável usar o comando &quot;Ctrl + C&quot; para reiniciar o SDK. Reiniciar o SDK do AEM usando métodos alternativos, por exemplo, parar processos Java, pode levar a inconsistências no ambiente de desenvolvimento do AEM.
 
 ### Configurar usuários e permissões {#configure-users-and-permissions}
 
@@ -242,7 +248,7 @@ Use este projeto para criar o Adaptive Forms, implantar atualizações de config
 >[!NOTE]
 >
 > Configure o projeto baseado no Arquétipo AEM versão 30 ou posterior para obter e usar os modelos de dados de formulário do Microsoft® Dynamics 365 e Salesforce com o AEM Forms as a Cloud Service.
-Configure o Arquétipo AEM versão 32 ou posterior do projeto para obter e usar temas Tranquil, Urbane e Ultramarine com o AEM Forms as a Cloud Service.
+> Configure o Arquétipo AEM versão 32 ou posterior do projeto para obter e usar temas Tranquil, Urbane e Ultramarine com o AEM Forms as a Cloud Service.
 
 Para configurar o projeto:
 
@@ -269,7 +275,7 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
 
      >[!WARNING]
      >
-     * Ao criar um projeto do Arquétipo com a versão 45, a variável [Pasta de projeto do arquétipo AEM]/pom.xml define inicialmente a versão dos componentes principais de formulários como 2.0.64. Antes de criar ou implantar o projeto Arquétipo, atualize a versão dos componentes principais de formulários para 2.0.62.
+     >* Ao criar um projeto do Arquétipo com a versão 45, a variável [Pasta de projeto do arquétipo AEM]/pom.xml define inicialmente a versão dos componentes principais de formulários como 2.0.64. Antes de criar ou implantar o projeto Arquétipo, atualize a versão dos componentes principais de formulários para 2.0.62.
 
 1. Implante o projeto no ambiente de desenvolvimento local. Você pode usar o comando a seguir para implantar no ambiente de desenvolvimento local
 
