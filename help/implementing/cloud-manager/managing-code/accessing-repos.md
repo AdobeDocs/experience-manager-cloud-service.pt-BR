@@ -2,12 +2,13 @@
 title: Acesso a repositórios
 description: Saiba como acessar e gerenciar o repositório Git usando o gerenciamento de conta Git por autoatendimento do Cloud Manager.
 exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 1b24fa084577f2ba0dc718ee35d12e42ac9d609c
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 94%
+source-wordcount: '270'
+ht-degree: 80%
 
 ---
+
 
 # Acesso a repositórios {#accessing-repos}
 
@@ -40,3 +41,9 @@ A opção **Acessar informações do repositório** também está disponível na
 >[!NOTE]
 >
 >A opção **Acessar informações do repositório** está visível para usuários com funções de **Desenvolvedor** ou **Gerente de implantação**.
+
+## Revogação de uma senha de acesso {#revoke-password}
+
+Você pode revogar uma senha de acesso a qualquer momento. Para isso, [crie um tíquete de suporte para esta solicitação.](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;support-tab=home#support)
+
+O ticket será tratado com alta prioridade e deverá ser revogado dentro de um dia.
