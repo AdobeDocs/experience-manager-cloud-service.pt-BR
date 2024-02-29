@@ -4,9 +4,9 @@ description: O serviço de entrega de borda da AEM Forms foi criado para oferece
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 6fbeb94d3547d50e93ab80aee5d6458e51edb1da
+source-git-commit: e21b681b12e90110436c7319797809c8d6b75eea
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '445'
 ht-degree: 0%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 0%
 
 # Serviço de entrega de borda do AEM Forms
 
-O Serviço de entrega de borda da AEM Forms é um serviço de composição oferecido pelo Adobe que permite criar e fornecer formulários web de alto impacto e desempenho rápido.
+Simplifique a criação de formulários e impulsione taxas de conclusão mais altas com o Serviço de entrega de borda do Adobe AEM Forms. Esse serviço eficiente e combinável permite que você crie formulários de nível empresarial com desempenho e apelo visual excepcionais. O AEM prioriza a experiência do usuário e seus objetivos comerciais, garantindo tempos de carregamento extremamente rápidos e maior conclusão de formulários.
 
-![Principais recursos do EDS Forms](/help/edge/assets/eds-forms-key-features.png)
+![Principais recursos do EDS Forms](/help/edge/assets/eds-forms-key-features.png){width="70%"}
 
 Você pode usar o serviço para:
 
