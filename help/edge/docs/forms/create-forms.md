@@ -4,15 +4,15 @@ description: Formas perfeitas de artesanato, rápido!  criação baseada em docu
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
+source-git-commit: 39bb45b285fcd938d44b9748aa8559b89a3636b2
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: '1120'
 ht-degree: 0%
 
 ---
 
 
-# Criar um formulário para um Site do Serviço de Entrega de Borda (EDS)
+# Criar um formulário para um site do Serviço de Entrega de Borda (EDS)
 
 Na era digital de hoje, criar formulários amigáveis é essencial para qualquer organização. O AEM Forms Edge Delivery permite criar formulários usando ferramentas familiares como o Word ou o Google Docs.
 
@@ -79,7 +79,7 @@ Para continuar com a criação do formulário:
 
    ![renomear planilha padrão para &quot;shared-default&quot;](/help/edge/assets/rename-sheet-to-shared-default.png)
 
-1. Para adicionar os campos de formulário, insira linhas e cabeçalhos de colunas na planilha &quot;shared-default&quot;. Cada linha deve representar um campo de formulário, com cabeçalhos de coluna definindo o campo correspondente [propriedades](/help/edge/docs/forms/eds-form-field-properties).
+1. Para adicionar os campos de formulário, insira linhas e cabeçalhos de colunas na planilha &quot;shared-default&quot;. Cada linha deve representar um [campo de formulário](/help/edge/docs/forms/form-components.md), com cabeçalhos de coluna definindo o campo correspondente [propriedades](/help/edge/docs/forms/eds-form-field-properties).
 
    Para um início rápido, considere copiar o conteúdo do [Planilha de consulta](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0) na planilha. Depois de copiar o conteúdo, salve sua planilha.
 
@@ -153,6 +153,7 @@ Até agora, você adicionou o bloco de formulário ao projeto EDS e preparou a e
 
 ## Veja mais
 
+* [Componentes de formulários](/help/edge/docs/forms/form-components.md)
 * [Propriedades do campo de formulário](/help/edge/docs/forms/eds-form-field-properties)
 * [Criar e visualizar um formulário](/help/edge/docs/forms/create-forms.md)
 * [Ativar formulário para enviar dados](/help/edge/docs/forms/submit-forms.md)

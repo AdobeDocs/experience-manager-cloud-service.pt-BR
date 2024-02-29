@@ -4,7 +4,7 @@ description: O serviço de entrega de borda da AEM Forms foi criado para oferece
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e21b681b12e90110436c7319797809c8d6b75eea
+source-git-commit: 39bb45b285fcd938d44b9748aa8559b89a3636b2
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 0%
@@ -16,8 +16,6 @@ ht-degree: 0%
 
 Simplifique a criação de formulários e impulsione taxas de conclusão mais altas com o Serviço de entrega de borda do Adobe AEM Forms. Esse serviço eficiente e combinável permite que você crie formulários de nível empresarial com desempenho e apelo visual excepcionais. O AEM prioriza a experiência do usuário e seus objetivos comerciais, garantindo tempos de carregamento extremamente rápidos e maior conclusão de formulários.
 
-![Principais recursos do EDS Forms](/help/edge/assets/eds-forms-key-features.png){width="70%"}
-
 Você pode usar o serviço para:
 
 * **Usuários do Captivate com formulários impressionantes**: crie formulários complexos e envolventes com facilidade usando uma biblioteca de componentes pré-construídos. Integre facilmente o reCAPTCHA, envie formulários diretamente por email e permita uploads de arquivos ininterruptos para soluções de armazenamento seguras, como Sharepoint, Armazenamento do Azure e Amazon S3. Crie até mesmo seus próprios componentes de formulários personalizados para dar vida à sua visão exclusiva.
@@ -26,6 +24,7 @@ Você pode usar o serviço para:
 
 * **Crie formulários com a pontuação perfeita do Lighthouse**: crie formulários que carregam e renderizam rapidamente, mesmo em conexões de Internet lentas. Carregamentos mais rápidos e experiência otimizada do usuário contribuem para taxas mais altas de preenchimento de formulários e taxas de conversão aprimoradas.
 
+  <img src="/help/edge/assets/eds-forms-key-features.png" alt="Principais recursos do EDS Forms" style = "width=`80%`; align=`center`; border: 1px solid;padding: 15px;">
 
 <!-- >
 * **Captivate users with stunning forms**: 
