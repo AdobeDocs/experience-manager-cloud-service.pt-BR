@@ -2,9 +2,9 @@
 title: Desenvolvimento local do AEM com o editor universal
 description: Saiba como o Editor universal oferece suporte à edição em instâncias locais do AEM para fins de desenvolvimento.
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
-source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
+source-git-commit: bbb7e7d9023f8326980196923bfab77c3968ead4
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: '699'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,13 @@ Saiba como o Editor universal oferece suporte à edição em instâncias locais 
 
 ## Visão geral {#overview}
 
-Este documento explica como executar o AEM em HTTPS junto com uma cópia local do Universal Editor Service para que você possa desenvolver localmente no AEM usando o Universal Editor.
+O Universal Editor Service é o que vincula o Universal Editor e o sistema de back-end. Para desenvolver localmente para o Universal Editor, você deve executar uma cópia local do Universal Editor Service. Isso ocorre porque:
+
+* O Serviço Editor Universal oficial do Adobe é hospedado globalmente, e sua instância AEM local precisaria ser exposta à internet.
+* Ao desenvolver com um SDK AEM local, o Adobe Universal Editor Service não pode ser acessado na Internet.
+* Se a instância do AEM tiver restrições de IP e o Adobe Universal Editor Service não estiver em um intervalo de IP definido, você mesmo poderá hospedá-lo.
+
+Este documento explica como executar o AEM em HTTPS junto com uma cópia local do Universal Editor Service para que você possa desenvolver localmente no AEM para uso com o Universal Editor.
 
 ## Configurar AEM para execução em HTTPS {#aem-https}
 
@@ -26,13 +32,13 @@ Em um quadro externo protegido com HTTPS, um quadro HTTP não seguro não pode s
 
 Para fazer isso, é necessário configurar o AEM para ser executado em HTTPS. Para fins de desenvolvimento, é possível usar o certificado autoassinado.
 
-Consulte este documento sobre como configurar o AEM em execução em HTTPS, incluindo um certificado autoassinado que você pode usar.
+[Consulte este documento](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html?lang=pt-BR) sobre como configurar o AEM em HTTPS, incluindo um certificado autoassinado que você pode usar.
 
 ## Instalar o Universal Editor Service {#install-ue-service}
 
-O Universal Editor Service é o que vincula o Universal Editor e o sistema de back-end. Como o Universal Editor Service oficial está hospedado globalmente, sua instância de AEM local precisará ser exposta à Internet. Para evitar isso, execute uma cópia local do Universal Editor Service.
+O Universal Editor Service não é uma cópia inteira do Universal Editor, mas apenas um subconjunto de seus recursos para garantir que as chamadas do seu ambiente local do AEM não sejam roteadas pela Internet, mas de um terminal definido sob seu controle.
 
-[NodeJS versão 16](https://nodejs.org/en/download/releases) é necessário para executar uma cópia local do Universal Editor Service
+[NodeJS versão 16](https://nodejs.org/en/download/releases) é necessário para executar uma cópia local do Universal Editor Service.
 
 O Universal Editor Service é distribuído diretamente pela Engenharia de AEM. Entre em contato com seu engenheiro no programa VIP para obter uma cópia local.
 
@@ -98,6 +104,12 @@ Para que uma página seja editada usando seu Universal Editor Service local, a s
 
 Depois de definido, você deve ver cada chamada de atualização de conteúdo ir para `https://localhost:8000` em vez do Universal Editor Service padrão.
 
+>[!NOTE]
+>
+>Tentando acessar diretamente `https://localhost:8000` resulta em uma `404` erro. Esse é o comportamento esperado.
+>
+>Para testar o acesso ao Universal Editor Service local, use `https://localhost:8000/corslib/LATEST`. Consulte a [próxima seção](#editing) para obter detalhes.
+
 >[!TIP]
 >
 >Para obter mais detalhes sobre como as páginas são instrumentadas para usar o Global Universal Editor Service, consulte o documento [Introdução ao editor universal no AEM](/help/implementing/universal-editor/getting-started.md#instrument-page)
@@ -106,6 +118,6 @@ Depois de definido, você deve ver cada chamada de atualização de conteúdo ir
 
 Com o [Serviço do Editor Universal em execução localmente](#running-ue) e seu [página de conteúdo instrumentada para usar o serviço local,](#using-loca-ue) agora você pode iniciar o editor.
 
-1. Abra o navegador para `https://localhost:8000/`.
+1. Abra o navegador para `https://localhost:8000/corslib/LATEST`.
 1. Direcione o navegador para aceitar [seu certificado autoassinado.](#ue-https)
 1. Quando o certificado autoassinado for confiável, você poderá editar a página usando o Serviço do Editor Universal local.
