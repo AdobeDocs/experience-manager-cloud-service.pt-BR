@@ -4,9 +4,9 @@ description: O serviço de entrega de borda da AEM Forms foi criado para oferece
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 1dc4915f0b149ef67dfa22c8d4c6be7538170d38
+source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '275'
 ht-degree: 2%
 
 ---
@@ -57,8 +57,8 @@ As seguintes propriedades são compatíveis com componentes de formulário do Bl
    </td>
   </tr>
       <tr>
-   <td>Espaço reservado</td>
-   <td>Texto, Pesquisa, URL, Telefone, Email, Senha e Número</td>
+   <td>Descrição</td>
+   <td>Aplicável a todos os campos</td>
    <td> O atributo de espaço reservado fornece uma breve dica ao usuário sobre o tipo de informação esperada no campo.
    </td>
   </tr>
