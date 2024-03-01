@@ -4,10 +4,10 @@ description: Saiba mais sobre as noções básicas do gerenciamento de pacotes d
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 422b4d98e2665e332ff65a3638a02282064b2bea
 workflow-type: tm+mt
-source-wordcount: '3774'
-ht-degree: 4%
+source-wordcount: '3769'
+ht-degree: 3%
 
 ---
 
@@ -109,7 +109,7 @@ O Gerenciador de pacotes está dividido em quatro áreas funcionais principais:
 * **Lista de pacotes** - Esta é a lista de pacotes na sua instância filtrada e classificada de acordo com as seleções no Painel de navegação esquerdo.
 * **Log de atividades** - Esse painel é minimizado no início e expande-se para detalhar a atividade do Gerenciador de pacotes, como quando um pacote é criado ou instalado. Há botões adicionais na guia Registro de atividades para:
    * **Limpar registro**
-   * **Exibir / Ocultar**
+   * **Mostrar/Ocultar**
 * **Barra de ferramentas** - A barra de ferramentas contém botões de atualização para o Painel de navegação esquerdo e a lista Pacote e botões para pesquisar, criar e fazer upload de pacotes.
 
 ![Interface do usuário do Gerenciador de pacotes](assets/package-manager-ui.png)
@@ -123,7 +123,7 @@ Clicar em um nome de pacote expande a entrada na Lista de pacotes para mostrar m
 Há várias ações que podem ser executadas em um pacote por meio dos botões da barra de ferramentas disponíveis quando os detalhes do pacote são expandidos.
 
 * [Editar](#edit-package)
-* [Criar](#building-a-package)
+* [Build](#building-a-package)
 * [Reinstalar](#reinstalling-packages)
 * [Download](#downloading-packages-to-your-file-system)
 
@@ -612,4 +612,4 @@ Os pacotes AEM podem ser usados para criar e compartilhar conteúdo em ambientes
 
 [Distribuição de software](https://downloads.experiencecloud.adobe.com) O fornece pacotes de AEM para uso no SDK AEM de desenvolvimento local. Os pacotes de AEM fornecidos na Distribuição de software não devem ser instalados em ambientes de nuvem do AEMaaCS, a menos que expressamente aprovado pelo Suporte do Adobe.
 
-Para obter mais informações, consulte o [Documentação de Distribuição de software](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=pt-br).
+Para obter mais informações, consulte [Documentação de Distribuição de software.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=pt-br)
