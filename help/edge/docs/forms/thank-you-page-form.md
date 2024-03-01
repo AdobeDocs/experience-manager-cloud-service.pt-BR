@@ -4,35 +4,46 @@ description: Saiba como configurar páginas de agradecimento e redirecionamento 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e2970c7a141025222c6b119787142e7c39d453af
+source-git-commit: cadeccd916884ca2437e2b2684771c181cc8281e
 workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 0%
+source-wordcount: '545'
+ht-degree: 1%
 
 ---
 
 
-# Configuração de páginas de agradecimento e redirecionamento em blocos do Adaptive Forms
+# Mostrar a página de agradecimento ou o formulário de redirecionamento após o envio
 
-As páginas de agradecimento e o redirecionamento são aspectos vitais do aprimoramento da experiência do usuário, fornecendo aos usuários confirmação, comunicação clara e navegação sem problemas após o envio do formulário.
+Depois que um usuário envia um formulário, é crucial fornecer uma experiência contínua por meio de uma página de agradecimento ou de um redirecionamento. Esses elementos não apenas confirmam o envio bem-sucedido, mas também melhoram a satisfação do usuário e os orientam ainda mais em sua jornada.
 
-## Configurando páginas de agradecimento
+* **Página de agradecimento**: uma página de agradecimento é uma pedra angular da experiência do usuário, oferecendo garantia e transmitindo informações importantes, além de reforçar a identidade da marca. Ele serve como um reconhecimento direto da ação do usuário, fomentando uma sensação de conclusão e satisfação.
 
-As páginas de agradecimento servem como um reconhecimento tranquilizador para os usuários e permitem que as organizações comuniquem informações essenciais e, ao mesmo tempo, reforcem a identidade da marca. Siga estas etapas para configurar uma página de agradecimento do EDS Forms:
+* **Redirecionar**: um redirecionamento desempenha um papel fundamental ao direcionar os usuários para destinos relevantes, otimizando o engajamento e, em última análise, aumentando as taxas de conversão. Ao orientar os usuários para a próxima etapa da jornada de maneira contínua, o redirecionamento garante uma experiência de navegação tranquila. Por exemplo, redirecionando o usuário para a página de pagamentos após coletar os detalhes iniciais.
+
+No bloco Adaptive Forms, o comportamento padrão é exibir uma página de agradecimento. No entanto, você tem a flexibilidade de personalizar essa experiência para atender às suas necessidades específicas. As opções incluem:
+
+* [Configuração da página de agradecimento e da mensagem para alinhar-se às suas metas de marca e comunicação](#configuring-the-thank-you-page-and-message)
+* [Redirecionar usuários para outra página após o envio](#redirect-users-to-another-page-post-submission), reforçando ainda mais a sua jornada
+
+## Configurando a página de agradecimento e a mensagem
+
+O comportamento padrão do bloco Adaptive Forms é exibir a página &quot;obrigado&quot; no envio. Siga estas etapas para configurar a página &quot;obrigado&quot; do bloco Adaptive Forms:
 
 1. Acesse sua pasta do projeto AEM Edge Delivery no Microsoft SharePoint ou no Google Workspace.
 1. Crie um arquivo do Microsoft Word ou Google Docs chamado &quot;obrigado&quot; no diretório do projeto.
-1. Adicione sua mensagem de agradecimento ao arquivo &quot;thankyou&quot;.
+1. Adicione sua mensagem de agradecimento ao arquivo &quot;thankyou&quot;. </br>
+
    ![Exemplo de página de agradecimento](/help/edge/assets/sample-thankyou-page.png)
-1. Utilize o AEM Sidekick para visualizar e publicar o arquivo &quot;obrigado&quot;.
 
-## Redirecionar usuários após o envio
+1. Use o AEM Sidekick para visualizar e publicar o arquivo &quot;obrigado&quot;.
 
-O redirecionamento facilita jornadas ininterruptas de usuários, orientando-os para destinos relevantes, otimizando o engajamento e aumentando as taxas de conversão.
+O bloco Adaptive Forms exibe a página &quot;obrigado&quot; no envio do formulário.
+
+## Redirecionar usuários para outra página após o envio
 
 Por padrão, o bloco Adaptive Forms redireciona os usuários para a página &quot;obrigado&quot;. Para redirecionar usuários para uma página diferente da página padrão &quot;obrigado&quot;, você tem duas opções:
 
-* substitua a página de agradecimento existente por outra página, ou
+* substitua a página &quot;obrigado&quot; existente por uma página diferente ou
 * redirecione a página &quot;obrigado&quot; para outra página de sua escolha.
 
 ### Substituir a página de agradecimento existente
@@ -63,4 +74,12 @@ Por padrão, o bloco Adaptive Forms redireciona os usuários para a página &quo
 
 Configure um redirecionamento de site para direcionar a página &quot;obrigado&quot; para uma página diferente. Consulte a [Redireciona a documentação](https://www.aem.live/docs/redirects) para obter instruções detalhadas.
 
+## Veja mais
 
+* [Componentes de formulários](/help/edge/docs/forms/form-components.md)
+* [Propriedades do campo de formulário](/help/edge/docs/forms/eds-form-field-properties)
+* [Criar e visualizar um formulário](/help/edge/docs/forms/create-forms.md)
+* [Ativar formulário para enviar dados](/help/edge/docs/forms/submit-forms.md)
+* [Publicar um formulário na página de sites](/help/edge/docs/forms/publish-eds-forms.md)
+* [Adicionar validações a campos de formulário](/help/edge/docs/forms/validate-forms.md)
+* [Alterar temas e estilo de formulário](/help/edge/docs/forms/style-theme-forms.md)
