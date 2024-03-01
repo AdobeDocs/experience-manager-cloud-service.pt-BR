@@ -3,10 +3,10 @@ title: API GraphQL do AEM para uso com Fragmentos de conteúdo
 description: Saiba como usar os Fragmentos de conteúdo no Adobe Experience Manager (AEM) as a Cloud Service com a API GraphQL do AEM, para entrega de conteúdo headless.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: fd0f0fdfc0aaf02d631b9bf909fcb1e1431f5401
+source-git-commit: a8fbf0a9a1f7e12b6a668544b1a67d8551abf1b7
 workflow-type: tm+mt
-source-wordcount: '4994'
-ht-degree: 87%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -1125,6 +1125,31 @@ Para se proteger contra possíveis problemas, há limitações padrão impostas 
 * A consulta não pode conter mais de 1 milhão (1024 * 1024) de caracteres
 * A consulta não pode conter mais de 15.000 tokens
 * A consulta não pode conter mais de 200.000 tokens de espaço em branco
+
+Você também precisa estar ciente de:
+
+* Um erro de conflito de campo será retornado quando sua consulta do GraphQL contiver campos com o mesmo nome em dois (ou mais) modelos:
+
+   * Assim, onde:
+
+      * Dois (ou mais modelos) são usados como referências possíveis; quando são definidos como uma referência permitida **Tipo de modelo** na referência do fragmento de conteúdo.
+
+     e:
+
+      * Esses dois modelos têm campos com um nome comum; ou seja, o mesmo nome ocorre em ambos os modelos.
+
+     e
+
+      * Esses campos são de tipos de dados diferentes.
+
+   * Por exemplo:
+
+      * Quando dois (ou mais) fragmentos com modelos diferentes (por exemplo, `M1`, `M2`) são usadas como referências possíveis (Referência de conteúdo ou Referência de fragmento) de outro fragmento; por exemplo, `Fragment1` `MultiField/List`
+      * E esses dois fragmentos com modelos diferentes (`M1`, `M2`) têm campos com o mesmo nome, mas tipos diferentes.
+Para ilustrar:
+         * `M1.Title` as `Text`
+         * `M2.Title` as `Text/MultiField`
+      * Ocorrerá um erro de conflito de campo se a consulta do GraphQL contiver o parâmetro `Title` campo.
 
 ## Perguntas frequentes {#faqs}
 

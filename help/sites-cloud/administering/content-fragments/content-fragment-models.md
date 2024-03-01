@@ -4,10 +4,10 @@ description: Saiba como os modelos de fragmento de conteúdo servem como base pa
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: e5a48cfd042c0e8d7448007854e1f73bded8cf7f
 workflow-type: tm+mt
-source-wordcount: '3125'
-ht-degree: 56%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -43,6 +43,12 @@ Também é possível definir várias propriedades; por exemplo, adicionar **Tags
    ![Título e descrição](assets/cf-cfmodels-create.png)
 
 1. Use **Criar** para salvar o modelo vazio. Uma mensagem indica o sucesso da ação. Você pode selecionar **Abertura** para editar imediatamente o modelo, ou **Concluído** para retornar ao console.
+
+>[!CAUTION]
+>
+>Se você estiver consultando vários fragmentos referenciados, não é recomendável que os vários modelos de fragmento tenham nomes de campo com o mesmo nome, mas tipos diferentes.
+>
+>Para obter mais detalhes, consulte [API do GraphQL AEM para uso com Fragmentos de conteúdo - Limitações](/help/headless/graphql-api/content-fragments.md#limitations)
 
 ### Modelo do fragmento de conteúdo — Propriedades {#content-fragment-model-properties}
 
@@ -290,6 +296,12 @@ O AEM tem proteção de recorrência para:
 * Referências de conteúdo Isso impede que o usuário adicione uma referência ao fragmento atual e pode levar a uma caixa de diálogo vazia do seletor de referência de fragmento.
 >
 * Referências de fragmento no GraphQL Se você criar uma consulta profunda que retorna vários Fragmentos de conteúdo referenciados entre si, ela retornará um valor nulo na primeira ocorrência.
+
+>[!CAUTION]
+>
+Se você estiver consultando vários fragmentos referenciados, não é recomendável que os vários modelos de fragmento tenham nomes de campo com o mesmo nome, mas tipos diferentes.
+>
+Para obter mais detalhes, consulte [API do GraphQL AEM para uso com Fragmentos de conteúdo - Limitações](/help/headless/graphql-api/content-fragments.md#limitations)
 
 ### Referência de conteúdo {#content-reference}
 
