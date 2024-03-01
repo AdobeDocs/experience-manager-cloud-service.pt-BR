@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 974650c0f268de8ecff7fdb693cdd1e32efb2e1c
+source-git-commit: b7b9dbfa7f939828d66a785daecf84c917923c37
 workflow-type: tm+mt
-source-wordcount: '4748'
+source-wordcount: '4751'
 ht-degree: 87%
 
 ---
@@ -176,7 +176,7 @@ ht-degree: 87%
    + [Suporte IMS do AEM as a Cloud Service](/help/security/ims-support.md)
    + [Suporte a cookies Same Site para o AEM as a Cloud Service](/help/security/same-site-cookie-support.md)
    + [Suporte OAuth2 para o serviço de email](/help/security/oauth2-support-for-mail-service.md)
-   + [Regras de Filtrar de tráfego, incluindo regras de WAF](/help/security/traffic-filter-rules-including-waf.md)
+   + [Regras de filtro de tráfego incluindo regras WAF](/help/security/traffic-filter-rules-including-waf.md)
    + [Considerações de segurança do AEM as a Cloud Service](/help/security/security-considerations.md)
    + [Descontinuação de credenciais JWT no console do Adobe Developer](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
 + Integração {#onboarding}
@@ -450,7 +450,7 @@ ht-degree: 87%
       + [Tags de cores para imagens](/help/assets/color-tag-images.md)
       + [Gerenciar documentos PDF](/help/assets/manage-pdf-documents.md)
    + Configurar, administrar e estender [!DNL Assets] {#admin}
-      + [Detectar duplicado ativos](/help/assets/detect-duplicate-assets.md)
+      + [Detectar ativos duplicados](/help/assets/detect-duplicate-assets.md)
       + [Documentos do desenvolvedor e referências de APIs](/help/assets/developer-reference-material-apis.md)
       + [Esquema de metadados de pastas](/help/assets/folder-metadata-schema.md)
       + [Trabalhar com perfis de imagem e vídeo](/help/assets/dynamic-media/about-image-video-profiles.md)
@@ -596,16 +596,16 @@ ht-degree: 87%
          + [Integrar o AEM Forms as a Cloud Service com o Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
          + [Integrar o Adaptive Forms ao Adobe Analytics](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
          + [Exibição e noções básicas do relatório do Adaptive Forms Analytics](/help/forms/view-understand-aem-forms-analytics-reports.md)
-         + [Enviar um formulário adaptável para Adobe Systems Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
+         + [Enviar um formulário adaptável ao Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
          + [Integrar um Formulário adaptável ao Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
          + [Incorporar um Formulário adaptável em uma página do AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)
-         + [Incorpore o formulário adaptável com base nos Componentes principais de uma página da Web externa](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
-         + [Incorpore o formulário adaptável com base nos componentes de base de uma página web externa](/help/forms/embed-adaptive-form-external-web-page.md)
+         + [Incorporar formulário adaptável baseado nos Componentes principais a uma página da Web externa](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
+         + [Incorporar formulário adaptável baseado em Componentes de base a uma página da Web externa](/help/forms/embed-adaptive-form-external-web-page.md)
       + Modelo de dados do formulário {#use-form-data-model}
          + [Conectar o AEM Forms ao banco de dados ou à fonte de dados](/help/forms/data-integration.md)
          + [Configurar fontes de dados](/help/forms/configure-data-sources.md)
          + [Configurar OData do [!DNL Microsoft Dynamics] ](/help/forms/ms-dynamics-odata-configuration.md)
-         + [Conecte o formulário adaptável ao Salesforce aplicativo usando o fluxo de credencial do cliente do OAuth 2.0](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+         + [Conectar o formulário adaptável ao aplicativo Salesforce usando o fluxo de credenciais do cliente OAuth 2.0](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
          + [Configurar armazenamento do [!DNL Azure] ](/help/forms/configure-azure-storage.md)
          + [Configurar os serviços em nuvem do [!DNL Microsoft Dynamics 365] e do [!DNL Salesforce] ](/help/forms/configure-msdynamics-salesforce.md)
          + [Criar modelo de dados do formulário](/help/forms/create-form-data-models.md)
@@ -681,7 +681,7 @@ ht-degree: 87%
          + [Configurar o Forms Portal](/help/forms/configure-forms-portal.md)
          + [Criação e gerenciamento de revisões](/help/forms/create-reviews-forms.md)
       + [Palavras-chave de formulários adaptáveis](/help/forms/adaptive-forms-keywords.md)
-      + [Visualização de um formulário](/help/forms/previewing-forms.md)
+      + [Pré-visualização de um formulário](/help/forms/previewing-forms.md)
    + Fluxos de trabalho centrados no Forms {#create-form-centric-workflows}
       + [Usar etapas centradas no Forms em um fluxo de trabalho + referência de etapa](/help/forms/aem-forms-workflow-step-reference.md)
       + [Usar variáveis em um fluxo de trabalho centrado no Forms](/help/forms/variable-in-aem-workflows.md)
@@ -724,7 +724,7 @@ ht-degree: 87%
       + [Utilização do provedor de conteúdo do Screens](/help/screens-cloud/configuring/using-screens-content-provider.md)
       + [Criação das representações de vídeo do Screens](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md)
       + [Configuração do Dispatcher para o Screens as a Cloud Service](/help/screens-cloud/configuring/dispatcher-configurations-screens-cloud.md)
-      + [Configuração das Exibições da linha do tempo para Screens como uma Cloud Service](/help/screens-cloud/configuring/configuring-timeline-view-screens.md)
+      + [Configuração das exibições de linha do tempo para o Screens as a Cloud Service](/help/screens-cloud/configuring/configuring-timeline-view-screens.md)
    + Criação de conteúdo {#create-content}
       + [Criação e gerenciamento de um projeto no provedor de conteúdo do Screens](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md)
       + [Criação e gerenciamento de um canal no provedor de conteúdo do Screens](/help/screens-cloud/creating-content/creating-channels-screens-cloud.md)
@@ -737,7 +737,7 @@ ht-degree: 87%
       + [Atribuição do reprodutor a uma exibição](/help/screens-cloud/managing-players-registration/assigning-player-display.md)
    + Uso dos recursos principais do produto {#core-product-features}
       + [Suporte a miniaturas para vídeos](/help/screens-cloud/using-core-product-features/thumbnail-support-videos.md)
-      + [Serviço de notificação Screens](/help/screens-cloud/using-core-product-features/screens-notification-service.md)
+      + [Serviço de notificação do Screens](/help/screens-cloud/using-core-product-features/screens-notification-service.md)
    + Desenvolvimento no Screens as a Cloud Service {#developing-screens-cloud}
       + [APIs REST](/help/screens-cloud/developing/rest-apis-screens-cloud.md)
       + [Criar componentes](/help/screens-cloud/developing/creating-components.md)
@@ -781,8 +781,8 @@ ht-degree: 87%
    + [PWA Studio do Adobe Commerce](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [Migração](/help/commerce-cloud/migration.md)
    + [Perguntas frequentes](/help/commerce-cloud/faq.md)
-+ Edge Delivery Services {#edge-delivery}
-   + [AEM e EDGE DELIVERY SERVICES](/help/edge/overview.md)
++ AEM com Edge Delivery Services {#edge-delivery}
+   + [Introdução ao Edge Delivery Services](/help/edge/overview.md)
    + [Uso da entrega de borda](/help/edge/using.md)
    + [Guia de introdução do desenvolvedor](/help/edge/edge-dev-getting-started.md)
    + [Criação de conteúdo para entrega de borda](/help/edge/authoring.md)
@@ -798,12 +798,12 @@ ht-degree: 87%
       + [Planilhas](/help/edge/developer/spreadsheets.md)
       + [Forms](/help/edge/developer/forms.md)
       + [Indexação](/help/edge/developer/indexing.md)
-      + [Manter 100](/help/edge/developer/keeping-it-100.md)
+      + [Mantendo 100](/help/edge/developer/keeping-it-100.md)
       + [Marcação - Seções](/help/edge/developer/markup-sections-blocks.md)
       + [Favicon](/help/edge/developer/favicon.md)
       + [Cabeçalhos personalizados](/help/edge/docs/custom-headers.md)
       + [Práticas recomendadas para desenvolvedores](/help/edge/docs/dev-collab-and-good-practices.md)
-   + Aplicativos de entrega do publicação Edge {#publish}
+   + Publicação de aplicativos de entrega de borda {#publish}
       + [Criação  ](/help/edge/docs/authoring.md)
       + [Metadados em massa](/help/edge/docs/bulk-metadata.md)
       + [Espaços reservados](/help/edge/docs/placeholders.md)
@@ -884,7 +884,7 @@ ht-degree: 87%
       + [Autenticação](/help/headless/security/authentication.md)
    + Implantação {#deployment}
       + [Arquitetura](/help/headless/deployment/architecture.md)
-      + [Dispatcher - Endpoints](/help/headless/deployment/dispatcher.md)
+      + [Dispatcher - Pontos de extremidade](/help/headless/deployment/dispatcher.md)
       + [Dispatcher - Habilitar armazenamento em cache para consultas persistentes](/help/headless/deployment/dispatcher-caching.md)
       + [Configuração do CORS](/help/headless/deployment/cross-origin-resource-sharing.md)
       + [Filtro de referenciador](/help/headless/deployment/referrer-filter.md)
@@ -1070,7 +1070,7 @@ ht-degree: 87%
          + [Ativação de exportação em JSON para um componente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=pt-BR)
          + [Integração do Launch](/help/implementing/developing/hybrid/launch-integration.md)
          + [Documentos de referência SPA](/help/implementing/developing/hybrid/reference-materials.md)
-         + [Não permitir a serialização dos ResourceResolvers via Exportador de modelos do Sling](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md)
+         + [Não permitir a serialização de ResourceResolvers por meio do Exportador de Modelo do Sling](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md)
    + Ferramentas do desenvolvedor {#developer-tools}
       + [Modo de desenvolvedor](/help/implementing/developing/tools/developer-mode.md)
       + [Ferramentas de desenvolvedor do AEM para Eclipse](/help/implementing/developing/tools/eclipse.md)
@@ -1151,7 +1151,7 @@ ht-degree: 87%
    + [Monitoramento de infraestrutura e serviços no AEM as a Cloud Service](/help/operations/monitoring.md)
    + [Tarefas de manutenção](/help/operations/maintenance.md)
    + [Backup e restauração](/help/operations/backup.md)
-   + [Restauração do autoatendimento](/help/operations/restore.md)
+   + [Restauração de autoatendimento](/help/operations/restore.md)
    + [Trabalhos assíncronos](/help/operations/asynchronous-jobs.md)
    + [Remoção do índice de Lucene genérico](/help/operations/removal-generic-lucene-index.md)
    + [Práticas recomendadas de consulta e indexação](/help/operations/query-and-indexing-best-practices.md)
