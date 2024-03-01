@@ -2,10 +2,10 @@
 title: Tarefas de manutenção no AEM as a Cloud Service
 description: Saiba mais sobre as tarefas de manutenção no AEM as a Cloud Service e como configurá-las.
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 4b6f1233b8b21c511b9495151d812e4ededfce11
+source-git-commit: af690ee4c1c0c13bffa179c68423993361385a45
 workflow-type: tm+mt
-source-wordcount: '1128'
-ht-degree: 62%
+source-wordcount: '1123'
+ht-degree: 60%
 
 ---
 
@@ -20,7 +20,7 @@ Tarefas de manutenção são processos executados de acordo com um cronograma pa
 
 ## Configurar tarefas de manutenção {#maintenance-tasks-configuring}
 
-Em versões anteriores do AEM, você podia configurar as tarefas de manutenção usando o Cartão de manutenção (Ferramentas > Operações > Manutenção). Para o AEM as a Cloud Service, o Cartão de manutenção não está mais disponível, portanto, as configurações devem ser enviadas ao controle de origem e implantadas usando o Cloud Manager. A Adobe gerencia as tarefas de manutenção que têm configurações não configuráveis pelos clientes (por exemplo, coleta de lixo do armazenamento de dados, limpeza de log de auditoria, limpeza de versão). Outras tarefas de manutenção podem ser configuradas pelos clientes, conforme descrito na tabela abaixo.
+Em versões anteriores do AEM, você podia configurar as tarefas de manutenção usando o Cartão de manutenção (Ferramentas > Operações > Manutenção). Para o AEM as a Cloud Service, o Cartão de manutenção não está mais disponível, portanto, as configurações devem ser enviadas ao controle de origem e implantadas usando o Cloud Manager. O Adobe gerencia as tarefas de manutenção que têm configurações não configuráveis pelos clientes (por exemplo, coleta de lixo do armazenamento de dados). Outras tarefas de manutenção podem ser configuradas pelos clientes, conforme descrito na tabela abaixo.
 
 >[!CAUTION]
 >
