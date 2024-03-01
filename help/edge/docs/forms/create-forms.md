@@ -4,21 +4,21 @@ description: Formas perfeitas de artesanato, rápido!  criação baseada em docu
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 39bb45b285fcd938d44b9748aa8559b89a3636b2
+source-git-commit: e2970c7a141025222c6b119787142e7c39d453af
 workflow-type: tm+mt
-source-wordcount: '1120'
+source-wordcount: '1147'
 ht-degree: 0%
 
 ---
 
 
-# Criar um formulário para um site do Serviço de Entrega de Borda (EDS)
+# Criar um formulário usando o bloco de formulário adaptável
 
 Na era digital de hoje, criar formulários amigáveis é essencial para qualquer organização. O AEM Forms Edge Delivery permite criar formulários usando ferramentas familiares como o Word ou o Google Docs.
 
 Esses formulários enviam dados diretamente para um arquivo do Microsoft Excel ou do Google Sheets, permitindo que você use um ecossistema vibrante e APIs robustas do Google Sheets, do Microsoft Excel e do Microsoft Sharepoint para processar facilmente os dados enviados ou iniciar um fluxo de trabalho de negócios existente.
 
-O AEM Forms Edge Delivery fornece um bloco de formulário para ajudá-lo a criar formulários facilmente para capturar e armazenar dados capturados. Você pode incluir o bloco Formulário no projeto AEM EDS para começar a criar um formulário. Vamos começar:
+O AEM Forms Edge Delivery fornece um bloco, conhecido como Bloco de formulário adaptável, para ajudar você a criar formulários facilmente para capturar e armazenar dados capturados. Você pode incluir o Bloco de formulário adaptável no projeto AEM EDS para começar a criar um formulário. Vamos começar:
 
 
 ## Pré-requisitos
@@ -26,23 +26,23 @@ O AEM Forms Edge Delivery fornece um bloco de formulário para ajudá-lo a criar
 Antes de começar, verifique se você concluiu as seguintes etapas:
 
 * Configure o projeto GitHub do Serviço de entrega de borda (EDS) usando a placa intermediária AEM e clone o repositório GitHub correspondente no computador local. Consulte [tutorial do desenvolvedor](https://www.aem.live/developer/tutorial) para obter detalhes. Neste documento, a pasta local do projeto do Serviço de entrega de borda (EDS) é chamada de `[EDS Project repository]` .
-* Clonar o [Repositório de blocos do Forms](https://github.com/adobe/afb) no computador local. Ele contém o código para renderizar o formulário em uma página da Web EDS. Neste documento, a pasta local do seu repositório de blocos do Forms é chamada de `[Forms Block repository]`.
 * Verifique se você tem acesso ao Google Sheets ou ao Microsoft SharePoint. Para configurar o Microsoft SharePoint como sua fonte de conteúdo, consulte [Como usar o Sharepoint](https://www.aem.live/docs/setup-customer-sharepoint)
 
 
 
 ## Criar um formulário
 
-+++ Etapa 1: adicione o bloco de formulário ao projeto do Serviço de entrega de borda (EDS).
++++ Etapa 1: adicione o bloco de formulário adaptável ao projeto do Serviço de entrega de borda (EDS).
 
-O bloco de formulário permite que os usuários criem formulários para um site do Serviço de entrega de borda. No entanto, esse bloco não está incluído na placa-padrão do AEM (usada para criar um projeto do Serviço de entrega de borda). Para integrar facilmente o bloco de formulário ao seu projeto do Serviço de entrega de borda:
+O adaptável permite que os usuários criem formulários para um site do Serviço de entrega de borda. No entanto, esse bloco não está incluído na placa-padrão do AEM (usada para criar um projeto do Serviço de entrega de borda). Para integrar facilmente o bloco de formulário adaptável ao seu projeto do Serviço de entrega de borda:
 
-1. **Localize o Repositório de blocos de formulário:** Acesse o [Repositório de blocos do Forms]pasta /blocks no computador local e copiar a pasta `form` pasta.
-1. **Cole o bloco de formulário no projeto EDS:**
+1. **Clonar o repositório de blocos do formulário adaptável**: Clone o [Repositório de blocos do formulário adaptável](https://github.com/adobe/afb) no computador local. Ele contém o código para renderizar o formulário em uma página da Web EDS. Neste documento, a pasta local do seu repositório de blocos do Forms é chamada de `[Adaptive Form block repository]`.
+1. **Localize o Repositório de blocos do formulário adaptável:** Acesse o [Repositório de blocos do formulário adaptável]pasta /blocks no computador local e copiar a pasta `form` pasta.
+1. **Cole o bloco do formulário adaptável no projeto EDS:**
 Navegue até a [Repositório de projetos do EDS]pasta /blocks/ no computador local e cole a pasta de formulários.
 1. **Confirmar alterações no GitHub:** Verifique a pasta de formulário e seus arquivos subjacentes no projeto do Serviço de entrega de borda no GitHub.
 
-Após concluir essas etapas, o bloco de formulário é integrado com êxito ao repositório de projetos do Edge Delivery Service(EDS) no GitHub.
+Após concluir essas etapas, o bloco de formulário adaptável foi adicionado com êxito ao repositório do projeto do Edge Delivery Service(EDS) no GitHub. Agora é possível criar e adicionar formulários a uma página de Sites de EDS.
 
 
 **Solução de problemas de build do GitHub**
@@ -90,7 +90,7 @@ Para continuar com a criação do formulário:
 
    ![Usar AEM Sidekick para visualizar a planilha](/help/edge/assets/preview-form.png)
 
-   Ao visualizar e publicar, novas guias do navegador exibem o conteúdo da planilha no formato JSON. Certifique-se de capturar a URL de visualização, pois ela é necessária para renderizar o formulário na próxima seção. O formato do URL é o seguinte:
+   Ao visualizar, novas guias do navegador exibem o conteúdo da planilha no formato JSON. Certifique-se de capturar a URL de visualização, pois ela é necessária para renderizar o formulário no próximo da seção. O formato do URL é o seguinte:
 
 
    ```JSON
@@ -111,15 +111,15 @@ Para continuar com a criação do formulário:
 +++ Etapa 3: visualize o formulário usando a página Serviço de entrega de borda (EDS).
 
 
-Até agora, você adicionou o bloco de formulário ao projeto EDS e preparou a estrutura do formulário. Agora, para visualizar o formulário:
+Até agora, você adicionou o bloco de formulário adaptável ao projeto EDS e preparou a estrutura do formulário. Agora, para visualizar o formulário:
 
-1. **Acessar o Diretório do Projeto:** Abra sua conta do Microsoft SharePoint ou Google Drive e navegue até o diretório do projeto Delivery do AEM Edge.
+1. **Acessar o Diretório do Projeto:** Abra sua conta do Microsoft SharePoint ou Google Drive e navegue até o diretório do projeto do Delivery de borda do AEM.
 
 1. **Incorporar o formulário em um documento:** Abra um arquivo de documento (por exemplo, arquivo de índice) para incorporar o formulário. Como alternativa, crie um novo documento.
 
 1. **Navegue até o local desejado:** Mova para o local desejado no documento onde você pretende adicionar o formulário.
 
-1. **Adicionar o bloco de formulário:** Insira um bloco chamado &quot;Formulário&quot; no arquivo, conforme ilustrado abaixo:
+1. **Adicionar o bloco de formulário adaptável:** Insira um bloco chamado &quot;Formulário&quot; no arquivo, conforme ilustrado abaixo:
 
    | Formulário |
    |---|

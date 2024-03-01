@@ -4,9 +4,9 @@ description: Publicar um formulário do AEM Forms Edge Delivery Services
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 39bb45b285fcd938d44b9748aa8559b89a3636b2
+source-git-commit: e2970c7a141025222c6b119787142e7c39d453af
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '554'
 ht-degree: 0%
 
 ---
@@ -18,17 +18,53 @@ Quando estiver pronto para compartilhar o formulário com os clientes para colet
 
 ## Pré-requisitos
 
-* A variável [O bloco de formulário está habilitado para o projeto EDS no Github](/help/edge/docs/forms/create-forms.md).
+* A variável [O bloco de formulário adaptável está habilitado para seu projeto EDS no GitHub](/help/edge/docs/forms/create-forms.md).
 * O formulário foi totalmente testado e está pronto para uso.
 * Seu [a planilha está configurada](/help/edge/docs/forms/submit-forms.md) para aceitar dados.
 
 ## Publicar seu formulário
 
-Para publicar o formulário:
++++ 1. Publique sua planilha
+
+1. Abra sua conta do Microsoft SharePoint ou Google Drive e navegue até o diretório do projeto do Delivery de borda do AEM.
+
+1. Abra a planilha que tem seu formulário. Por exemplo, a variável `enquiry` formulário da pasta de trabalho do Microsoft Excel.
+
+1. Uso [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) para visualizar a planilha.
+
+   ![Usar AEM Sidekick para visualizar a planilha](/help/edge/assets/preview-form.png)
+
+   Após a conclusão bem-sucedida da operação de visualização, o conteúdo da planilha é convertido para o formato JSON. A página de pré-visualização apresenta esse conteúdo em um formato de tabela estruturada. Por exemplo, a imagem que acompanha ilustra o conteúdo de um formulário de &quot;consulta&quot;.
+
+   ![Visualização do formato JSON do Forms](/help/edge/assets/forms-preview-json-format.png)
+
+1. Use AEM Sidekick para publicar a planilha. capture a URL de publicação, pois ela é necessária para renderizar o formulário na próxima seção. O formato do URL é o seguinte:
+
+
+   ```JSON
+       https://<branch>--<repository>--<owner>.hlx.live/<form>.json
+   ```
+
+   * `<branch>` refere-se à ramificação do seu repositório GitHub.
+   * `<repository>` indica seu repositório GitHub.
+   * `<owner>` refere-se ao nome de usuário da sua conta GitHub que hospeda o repositório GitHub.
+
+   Por exemplo, se o repositório do seu projeto for chamado de &quot;portal&quot;, estiver localizado na conta &quot;wkndforms&quot; e você estiver usando a ramificação &quot;main&quot;, o URL será semelhante ao seguinte:
+
+   `https://main--portal--wkndforms.hlx.page/enquiry.json`
+
++++
+
++++ 2. Adicionar o formulário à sua página da Web
+
+Adicione o `<form>.json` para uma página da Web para facilitar a interação com o cliente, permitindo que os preenchimentos de formulário preencham e enviem o formulário sem esforço.
+
+
+Para adicionar o formulário à sua página da Web:
 
 1. Acesse sua conta do Microsoft SharePoint ou Google Drive e navegue até o `[AEM Edge Delivery project directory]`.
 
-1. Abra um arquivo de documento no qual você pretende incorporar o formulário. Por exemplo, você pode abrir o arquivo de índice ou criar um novo documento.
+1. Abra um arquivo de documento no qual você pretende incorporar o formulário. Por exemplo, você pode abrir a variável `index.docx` arquivo ou, como alternativa, crie um novo documento.
 
 1. Identifique a seção desejada no documento onde deseja inserir o formulário e navegue até ele de acordo.
 
@@ -54,18 +90,20 @@ Para publicar o formulário:
    **URL de publicação**
 | Formulário | |—| | [https://main--portal--wkndforms.hlx.live/enquiry.json](https://main--portal--wkndforms.hlx.live/enquiry.json)  |
 
-1. Uso [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) para visualizar a página. A página agora exibe o formulário. Por exemplo, este é o formulário baseado na variável [planilha de consulta](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0):
+1. Uso [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) para visualizar a página da web. A página agora exibe o formulário. Por exemplo, este é o formulário baseado na variável [planilha de consulta](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0):
 
 
    [![Um exemplo de formulário EDS](/help/edge/assets/eds-form.png)](https://main--portal--wkndforms.hlx.live/)
 
-   Agora, seus clientes podem preencher o formulário e enviá-lo.
+1. Use AEM Sidekick para publicar o formulário. Agora, seus clientes podem preencher o formulário e enviá-lo.
+
++++
 
 ## Resolução de problemas
 
 +++ Não é possível enviar dados para o formulário
 
-Se você encontrar um erro semelhante à mensagem a seguir, isso indica que a planilha ainda não está configurada para aceitar os dados enviados.
+Se você encontrar um erro semelhante à mensagem a seguir, isso indica que a planilha não está configurada para [aceitar o enviado](/help/edge/docs/forms/submit-forms.md) dados ainda.
 
 ![erro no envio do formulário](/help/edge/assets/form-error.png)
 

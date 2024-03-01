@@ -4,9 +4,9 @@ description: Personalizar tema e estilo para um formulário do Serviço de entre
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 78d40574e6fea8dde22414e43fd77215b9e7d2a1
+source-git-commit: e2970c7a141025222c6b119787142e7c39d453af
 workflow-type: tm+mt
-source-wordcount: '1268'
+source-wordcount: '1271'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # Campos do formulário de estilo
 
-O Forms é fundamental para a interação do usuário em sites, permitindo que ele insira dados. Este guia aborda os fundamentos do estilo de vários campos de formulário dentro do [Bloco de formulário](/help/edge/docs/forms/create-forms.md), ajudando você a criar formulários visualmente atraentes e fáceis de usar.
+O Forms é fundamental para a interação do usuário em sites, permitindo que ele insira dados. Este guia aborda os fundamentos do estilo de vários campos de formulário dentro do [Bloco de formulário adaptável](/help/edge/docs/forms/create-forms.md), ajudando você a criar formulários visualmente atraentes e fáceis de usar.
 
 ## Noções básicas sobre tipos de campos de formulário
 
-Antes de mergulhar no estilo, vamos rever os tipos de campos de formulário comuns compatíveis com o Bloco de formulários:
+Antes de mergulhar no estilo, vamos rever os tipos de campos de formulário comuns compatíveis com o bloco Formulário adaptável:
 
 * Campos de entrada: incluem entradas de texto, entradas de email, entradas de senha e muito mais.
 * Grupos de caixas de seleção: usado para selecionar várias opções.
@@ -35,7 +35,7 @@ A compreensão de conceitos CSS fundamentais é crucial antes de estilizar campo
 * Modelo de caixa: o modelo de caixa CSS descreve a estrutura dos elementos HTML como uma área de conteúdo cercada por preenchimento, bordas e margens.
 * Flexbox/Grade: os layouts Flexbox e Grade CSS são ferramentas eficientes para criar designs responsivos e flexíveis.
 
-## Criar um estilo de formulário para bloco de formulário
+## Criar um estilo de formulário para o bloco de formulário adaptável
 
 O Bloco de formulário oferece uma estrutura de HTML padronizada, simplificando o processo de seleção e estilo de componentes de formulário:
 
