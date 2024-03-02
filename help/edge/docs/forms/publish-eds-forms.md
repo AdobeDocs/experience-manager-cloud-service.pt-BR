@@ -4,7 +4,7 @@ description: Publicar um formulário do AEM Forms Edge Delivery Services
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e2970c7a141025222c6b119787142e7c39d453af
+source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Quando estiver pronto para compartilhar o formulário com os clientes para colet
 
 ## Pré-requisitos
 
-* A variável [O bloco de formulário adaptável está habilitado para seu projeto EDS no GitHub](/help/edge/docs/forms/create-forms.md).
+* A variável [O bloco de formulário adaptável está ativado para seu projeto EDS no GitHub](/help/edge/docs/forms/create-forms.md).
 * O formulário foi totalmente testado e está pronto para uso.
 * Seu [a planilha está configurada](/help/edge/docs/forms/submit-forms.md) para aceitar dados.
 

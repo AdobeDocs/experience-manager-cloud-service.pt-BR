@@ -1,12 +1,12 @@
 ---
-title: De Planilhas para Forms - Dominando Validações de Campo de Bloco de Formulário
-description: Crie formulários poderosos mais rápido usando planilhas e campos de bloco de formulário! Este guia ajuda a criar validações personalizadas para campos de Bloqueio de EDS Forms.
+title: De planilhas para Forms - Dominando validações de campo de bloco do formulário adaptável
+description: Crie formulários poderosos mais rápido usando planilhas e campos de bloco de formulário adaptável! Este guia ajuda a criar validações personalizadas para campos de Bloqueio de EDS Forms.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 78d40574e6fea8dde22414e43fd77215b9e7d2a1
+source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '266'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # Adicionar validações a campos de formulário
 
-O bloco de formulário tem recursos de validação integrados. Essas validações são aplicadas automaticamente em navegadores modernos com base no tipo de campo escolhido e nas propriedades adicionais fornecidas.
+O bloco de formulário adaptável tem recursos de validação integrados. Essas validações são aplicadas automaticamente em navegadores modernos com base no tipo de campo escolhido e nas propriedades adicionais fornecidas.
 
 ## Noções básicas sobre tipos de campo e validação
 
-O bloco Formulário suporta uma variedade de [tipos de entrada HTML-5](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types), incluindo texto, email, número, data e muito mais. Também acomoda [textarea](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea), select e fieldset, juntamente com recursos abrangentes de validação de entrada inerentes ao HTML-5.
+O bloco de formulário adaptável oferece suporte a uma variedade de [tipos de entrada HTML-5](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types), incluindo texto, email, número, data e muito mais. Também acomoda [textarea](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea), select e fieldset, juntamente com recursos abrangentes de validação de entrada inerentes ao HTML-5.
 
 O usa tipos de campo HTML para definir o tipo de dados que um usuário pode inserir. Tipos de campos diferentes têm regras de validação integradas diferentes:
 
