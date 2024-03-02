@@ -4,9 +4,9 @@ description: O serviço de entrega de borda da AEM Forms foi criado para oferece
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
+source-git-commit: d0c4f2f880ef7c11b11144502d30430336ac682e
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '705'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Você pode usar o serviço para:
     text-align: center; 
     }
     .image-container img {
-        width: 70%; /* Set image width to 70% of the container */
+        width: 100%; /* Set image width to 100% of the container */
         border: .5px solid; /* Maintain the border style */
         padding: 15px; /* Maintain the padding */
     }
@@ -42,25 +42,26 @@ Você pode usar o serviço para:
 
 
 </div>
-&lt;!— &gt; * * **Captivate usuários com formulários impressionantes**: crie formulários complexos e envolventes com facilidade usando uma biblioteca de componentes pré-construídos. Integre facilmente o reCAPTCHA, envie formulários diretamente por email e permita uploads de arquivos ininterruptos para soluções de armazenamento seguras, como Sharepoint, Armazenamento do Azure e Amazon S3. Crie até mesmo seus próprios componentes de formulários personalizados para dar vida à sua visão exclusiva.
 
-    ![Formulários de inscrição](/help/edge/assets/enrollment-form.png)
+<!--
 
-* **Crie formulários com a pontuação perfeita do farol**: crie formulários que carregam e renderizam rapidamente, mesmo em conexões de Internet lentas. Carregamentos mais rápidos e experiência otimizada do usuário contribuem para taxas mais altas de preenchimento de formulários e taxas de conversão aprimoradas.
+    ![Enrollment forms](/help/edge/assets/enrollment-form.png)
 
-  ![pontuação de farol perfeito para seus formulários](/help/edge/assets/lighthouse-forms.png)
+* **Build forms with perfect lighthouse score**: Build forms that load and render quickly, even on slow internet connections. Faster loading times and optimized user experience contribute to higher form completion rates and improved conversion rates.
 
-* **Crie experiências de inscrição digital com as ferramentas de sua escolha**: aumente a eficiência da criação ao dissociar as fontes de conteúdo. Pronto para uso, você pode usar a criação de AEM e a criação baseada em documentos. Dessa forma, você pode trabalhar com várias fontes de conteúdo no mesmo site e usar suas ferramentas de criação preferidas, como o Microsoft Excel, o Google Sheets ou o AEM Editors.
+    ![perfect lighthouse score for your forms](/help/edge/assets/lighthouse-forms.png)
 
-  ![Ferramentas de criação de formulários de entrega de borda](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
+* **Create digital enrollment experiences with tools of your choice**: Increase authoring efficiency by decoupling content sources. Out of the box you can use both AEM authoring and document-based authoring. As such, you can work with multiple content sources on the same website and use your preferred authoring tools, such as Microsoft Excel, Google Sheets, or AEM Editors.
 
+    ![Edge Delivery forms authoring tools](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
+    
 <!--
 * **Measure customer impact and deliver effective forms**: Use our RUM dashboards to visualize form performance and identify areas for improvement. Experiment with different versions and continuously optimize your forms for maximum effectiveness, ensuring you capture the data you need and drive better business outcomes.
 
 * **Use Integrated services:** Use integrated services to streamline and empowers your users with a one-stop shop for managing their digital enrollment journeys. Use e-signatures, automated workflows, document of record (DoR), and seamless data integration, simplify the entire digital enrollment process, accelerate approvals, and optimizes your business workflows. 
 
     
->[!NOTE]
+    >[!NOTE]
     >
     >
     > WYSIWYG authoring capability, integrated services, and customer impact measuring features are available under early adopter program. You can write to aem-forms-early-adopter-program@adobe.com from your official email id to join the early adopter program and request access to the capability.
@@ -81,6 +82,9 @@ Você pode usar o serviço para:
 
 * **Estilo Forms**: cada campo de formulário tem uma estrutura de HTML fixa que pode ser decorada ainda mais usando arquivos CSS ou JavaScript personalizados. Os seletores para campos de direcionamento em CSS/JS são fornecidos com base no tipo e no nome.
 
+## Fluxo de trabalho
+
+![Ecossistema de criação baseado em documentos](/help/edge/assets/document-based-authoring-workflow.png)
 
 ## Começar a criar formulários
 

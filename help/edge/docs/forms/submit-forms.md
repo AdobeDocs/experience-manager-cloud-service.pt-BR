@@ -4,9 +4,9 @@ description: Crie formulários poderosos mais rápido usando planilhas e campos 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
+source-git-commit: d0c4f2f880ef7c11b11144502d30430336ac682e
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '1000'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,10 @@ ht-degree: 0%
 
 # Preparar sua planilha para aceitar dados
 
+![Ecossistema de criação baseado em documentos](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
+
 Depois de ter [criou e visualizou o formulário](/help/edge/docs/forms/create-forms.md), é hora de permitir que a planilha correspondente comece a receber dados.
+
 
 <!-- 
 >[!VIDEO](https://video.tv.adobe.com/v/3427489?quality=12&learn=on)
@@ -43,6 +46,7 @@ Para ativar a planilha:
 
 
 Depois que os nomes dos campos forem adicionados à `incoming` formulário fica pronto para aceitar envios. Você pode visualizar o formulário e enviar dados para a planilha usando-o.
+
 
 Você também observa as seguintes alterações na planilha:
 
