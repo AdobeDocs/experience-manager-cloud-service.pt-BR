@@ -4,9 +4,9 @@ description: Formas perfeitas de artesanato, rápido!  criação baseada em docu
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e2970c7a141025222c6b119787142e7c39d453af
+source-git-commit: 68b60d33e6ccfe27452cfea76603e4d7d29f0c6e
 workflow-type: tm+mt
-source-wordcount: '1147'
+source-wordcount: '1150'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 0%
 Na era digital de hoje, criar formulários amigáveis é essencial para qualquer organização. O AEM Forms Edge Delivery permite criar formulários usando ferramentas familiares como o Word ou o Google Docs.
 
 Esses formulários enviam dados diretamente para um arquivo do Microsoft Excel ou do Google Sheets, permitindo que você use um ecossistema vibrante e APIs robustas do Google Sheets, do Microsoft Excel e do Microsoft Sharepoint para processar facilmente os dados enviados ou iniciar um fluxo de trabalho de negócios existente.
+
+![Ecossistema de criação baseado em documentos](/help/edge/assets/document-based-authoring.png)
 
 O AEM Forms Edge Delivery fornece um bloco, conhecido como Bloco de formulário adaptável, para ajudar você a criar formulários facilmente para capturar e armazenar dados capturados. Você pode incluir o Bloco de formulário adaptável no projeto AEM EDS para começar a criar um formulário. Vamos começar:
 
