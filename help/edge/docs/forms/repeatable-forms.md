@@ -1,15 +1,131 @@
 ---
-title: Adicionar seções repetíveis a um formulário EDS
+title: Adicionar seções repetíveis a um formulário
 description: Adicionar seções repetíveis a um formulário EDS
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: f2752673dcaa0762bb55719cee23765aa8ecde96
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
-source-wordcount: '25'
+source-wordcount: '554'
 ht-degree: 0%
 
 ---
 
 
-# Adicionar seções repetíveis a um formulário de serviço de entrega do AEM Forms Edge
+# Adicionar seções repetíveis a um Formulário
+
+O bloco de formulário adaptável fornece a capacidade de adicionar ou tornar uma seção ou um componente de um formulário repetível.
+
+Uma seção repetível é um componente de um formulário que é duplicado ou replicado várias vezes para coletar informações de várias ocorrências dos dados semelhantes.
+
+Por exemplo, considere um formulário usado para coletar informações sobre a experiência profissional de uma pessoa. Você pode ter uma seção repetível para capturar detalhes de cada tarefa anterior. A seção repetível normalmente contém campos como nome da empresa, título do cargo, datas de emprego e responsabilidades do cargo. O usuário pode adicionar várias instâncias da seção repetível para inserir informações sobre cada cargo que manteve.
+
+
+
+No final deste artigo, você aprenderá a:
+
+* [Criar uma seção repetível em um formulário](#add-repeatable-sections-to-a-form)
+* [Definir o número mínimo ou máximo de repetições em um formulário](#set-minimum-or-maximum-number-of-repetitions-for-a-repeatable-section)
+
+## Criar uma seção repetível em um formulário
+
+A criação de uma seção repetível em um formulário oferece aos usuários a capacidade de inserir várias instâncias do mesmo conjunto de dados, permitindo a coleta eficiente de informações repetitivas. Para criar uma seção repetível em um formulário:
+
+1. Acesse a pasta do projeto Edge Deliver no Microsoft SharePoint ou no Google Workspace e abra a planilha. Por exemplo, abra uma planilha chamada `job-application.xlsx`.
+
+1. Adicionar um campo de formulário com o `type` propriedade definida como `fieldset` e ativar a repetibilidade configurando `repeatable` para `true`. Além disso, especifique uma descrição `label` para o campo, pois serve como o cabeçalho da seção repetível.
+
+   Consulte a imagem abaixo para obter uma ilustração de uma seção de histórico de emprego em um formulário de requisição de cargo.
+
+   ![](/help/edge/assets/repeatable-section-example-job-application-form.png)
+
+1. No `Fieldset` propriedade de todos os campos destinados a inclusão em uma seção repetível, especifique a `Name` do conjunto de campos correspondente.
+
+   Por exemplo, designe `experience` na propriedade Fieldset de todos os campos relevantes a serem incluídos na variável `employment history` seção.
+
+   ![](/help/edge/assets/repeatable-section--mention-fieldset-name-example-job-application-form.png)
+
+1. Uso [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) para visualizar e publicar a planilha. A seção repetível é adicionada ao formulário.
+
+   Abaixo da seção repetível, os usuários encontram uma **Adicionar** botão, facilitando a adição de várias seções com facilidade.
+
+   ![seção repetível, encontre uma intuitiva **Adicionar** botão, para adicionar várias seções ](/help/edge/assets/repeatable-section-example.png)
+
+
+## Definir o número mínimo ou máximo de repetições para uma seção repetível
+
+No design do formulário, é benéfico definir repetições mínimas e máximas para seções repetíveis. Ao fazer isso, você estabelece controle e consistência e, ao mesmo tempo, orienta os usuários com eficiência. Para definir o número mínimo ou máximo de repetições:
+
+1. Acesse a pasta do projeto Edge Deliver no Microsoft SharePoint ou no Google Workspace e abra a planilha.
+
+1. Defina o `min` para especificar o número mínimo de vezes que a seção pode ser repetida.
+
+   ![Defina as propriedades min e max para especificar o número de vezes que a seção pode ser repetida](/help/edge/assets/repeatable-section-set-min-max.png)
+
+1. Defina o `max` para especificar o número máximo de vezes que a seção pode ser repetida.
+
+1. Uso [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) para visualizar e publicar a planilha.
+
+   Agora, ao adicionar seções que podem ser repetidas, os usuários acham uma **Excluir** ícone, simplificando o processo de remoção de seções repetíveis. Depois de adicionadas, essas seções não podem ser reduzidas a menos instâncias do que o especificado pelo `min` propriedade. Isso garante a adesão ao requisito mínimo definido para o preenchimento do formulário.
+
+<!--
+
+For example, consider a form used to collect information from users applying for a loan. . You may have a repeatable section for capturing details of each co-applicant. The repeatable section would typically contain fields such as co-co-applicant
+
+The form allows users to provide personal information, including details of the co-applicants. Users can enter details for co-applicants, with this section being repeatable.
+
+![Repeatable sections in forms](/help/forms/assets/eds-repeatable.png)
+
+## Prerequisites
+
+The [Adaptive Form block is enabled](/help/edge/docs/forms/create-forms.md) for your Edge Delivery Service project. 
+
+## Add a repeatable section to a form 
+
+Let's take an example of a loan application form. The form enables users to submit personal information. You can include co-applicant details using repeatable sections, with the option to add a minimum and maximum of three co-applicant sections.
+
+"_You can use a Microsoft Excel file on your SharePoint Site or Google Sheet file on Google Drive to develop a form. Examples in this document are based on a [Microsoft Excel file on your SharePoint Site](https://www.aem.live/docs/setup-customer-sharepoint)._" 
+
+
+To add repeatable sections in Edge Delivery:
+
+1. [Author a form using Microsoft Excel](#author-form)
+2. [Preview and publish the form](#preview-form)
+
+### Author a form using Microsoft Excel {#author-form}
+
+1. Go to your Edge Deliver project folder on Microsoft SharePoint or Google Workspace and open your spreadsheet. For example, open an a spreadsheet named `loan-application.xlsx`.
+
+1. Add a new columns labeled `Repeatable` to the sheet contaning your form fields. By default, the `shared-default` sheet contains the form fields.  
+
+1. Add new columns labeled as `Repeatable`, `Min`, and `Max` in your Microsoft Excel file.
+1. Specify the value for the `Repeatable` column as `True` for the fieldset that you want to make repeatable.
+1. Specify the values for the `Min` and `Max` columns. The `Min` value represents the minimum number of occurrences for which the panel repeats, while the `Max` value represents the maximum number of occurrences for which the panel repeats.
+1. Save your Microsoft Excel file.
+     
+>[!NOTE]
+>
+> Here is the [Loan application](/help/forms/assets/loan-application.xlsx) excel sheet for your reference. 
+
+### Preview/Publish the form using your Edge Delivery Service
+
+1. Open or create new document file in a Microsft SharePoint Site to embed the Excel sheet  in it using a `Form Block`. For example, open the `index` file and add a `Form Block`.
+2. Open the command prompt, navigate to your AEM Edge Delivery project directory on your local machine, and execute the command as `aem up`.
+
+The form is accessible at `https://localhost:3000`, where clicking the `Add` button adds new repeatable section for entering co-applicant details. You can also delete the the repeatable section by clicking the `Delete` button. 
+
+>[!NOTE]
+>
+> If you encounter a "Page Not Found" error while accessing your form at localhost, add the directory name of the Microsoft SharePoint Site in front of the URL where your form is located. For example, `http://localhost:3000/<dir-name>/`
+
+-->
+
+
+## Veja mais
+
+* [Criar e visualizar um formulário](/help/edge/docs/forms/create-forms.md)
+* [Ativar formulário para enviar dados](/help/edge/docs/forms/submit-forms.md)
+* [Publicar um formulário na página de sites](/help/edge/docs/forms/publish-forms.md)
+* [Adicionar validações a campos de formulário](/help/edge/docs/forms/validate-forms.md)
+* [Alterar temas e estilo de formulário](/help/edge/docs/forms/style-theme-forms.md)
+* [Componentes de formulário e suas propriedades](/help/edge/docs/forms/form-components.md)

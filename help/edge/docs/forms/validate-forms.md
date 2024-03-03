@@ -4,7 +4,7 @@ description: Crie formulários poderosos mais rápido usando planilhas e campos 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 0%
@@ -33,6 +33,6 @@ Telefone: esse tipo de campo foi projetado especificamente para números de tele
 
 * [Criar e visualizar um formulário](/help/edge/docs/forms/create-forms.md)
 * [Ativar formulário para enviar dados](/help/edge/docs/forms/submit-forms.md)
-* [Publicar um formulário na página de sites](/help/edge/docs/forms/publish-eds-forms.md)
+* [Publicar um formulário na página de sites](/help/edge/docs/forms/publish-forms.md)
 * [Adicionar validações a campos de formulário](/help/edge/docs/forms/validate-forms.md)
 * [Alterar temas e estilo de formulário](/help/edge/docs/forms/style-theme-forms.md)

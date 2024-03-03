@@ -2,9 +2,9 @@
 description: Este tutorial inclui instruções para tornar uma seção de um formulário repetível
 title: Seções repetíveis no Edge Delivery Services
 feature: Edge Delivery Services
-source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '475'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Por exemplo, considere um formulário usado para coletar informações de usuár
 
 ## Pré-requisitos
 
-Configure o projeto Github do Serviço de entrega de borda (EDS) usando a placa intermediária AEM e clone o repositório Github correspondente no computador local. Consulte [tutorial do desenvolvedor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial.html) para obter detalhes.
+Configure o projeto GitHub do Serviço de entrega de borda (EDS) usando a placa intermediária AEM e clone o repositório GitHub correspondente no computador local. Consulte [tutorial do desenvolvedor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial.html) para obter detalhes.
 
 ## Seções repetíveis na entrega de borda
 
@@ -56,7 +56,7 @@ Neste exemplo, estamos usando uma planilha do Excel chamada `loan-application.xl
 1. Abra ou crie um novo arquivo de documento em um site do Microsoft SharePoint para incorporar a planilha do Excel usando um `Form Block`. Por exemplo, abra `index` arquivo e adicionar um `Form Block`.
 2. Abra o prompt de comando, navegue até o diretório do projeto AEM Edge Delivery no computador local e execute o comando como `aem up`.
 
-O formulário pode ser acessado em `https://localhost:3000`, onde se clica em `Add` O botão adiciona nova seção repetível para inserir detalhes do cocandidato. Você também pode excluir a seção que pode ser repetida clicando no `Delete` botão.
+O formulário pode ser acessado em `https://localhost:3000`, onde se clica em `Add` O botão adiciona nova seção repetível para inserir detalhes do cocandidato. Você também pode excluir a seção repetível clicando no link `Delete` botão.
 
 >[!NOTE]
 >

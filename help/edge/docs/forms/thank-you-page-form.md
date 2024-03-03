@@ -4,7 +4,7 @@ description: Saiba como configurar páginas de agradecimento e redirecionamento 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: d6b1048c44022da47a9d7443f564a2ff9d1802cf
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
 source-wordcount: '608'
 ht-degree: 1%
@@ -86,6 +86,6 @@ Para redirecionar a página &quot;obrigado&quot; para uma página diferente, use
 * [Propriedades do campo de formulário](/help/edge/docs/forms/eds-form-field-properties)
 * [Criar e visualizar um formulário](/help/edge/docs/forms/create-forms.md)
 * [Ativar formulário para enviar dados](/help/edge/docs/forms/submit-forms.md)
-* [Publicar um formulário na página de sites](/help/edge/docs/forms/publish-eds-forms.md)
+* [Publicar um formulário na página de sites](/help/edge/docs/forms/publish-forms.md)
 * [Adicionar validações a campos de formulário](/help/edge/docs/forms/validate-forms.md)
 * [Alterar temas e estilo de formulário](/help/edge/docs/forms/style-theme-forms.md)

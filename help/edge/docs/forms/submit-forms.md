@@ -4,9 +4,9 @@ description: Crie formulários poderosos mais rápido usando planilhas e campos 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: d0c4f2f880ef7c11b11144502d30430336ac682e
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
-source-wordcount: '1000'
+source-wordcount: '1003'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,7 @@ ht-degree: 0%
 
 Depois de ter [criou e visualizou o formulário](/help/edge/docs/forms/create-forms.md), é hora de permitir que a planilha correspondente comece a receber dados.
 
+![Ecossistema de criação baseado em documentos](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
 <!-- 
 >[!VIDEO](https://video.tv.adobe.com/v/3427489?quality=12&learn=on)
@@ -46,6 +47,7 @@ Para ativar a planilha:
 
 
 Depois que os nomes dos campos forem adicionados à `incoming` formulário fica pronto para aceitar envios. Você pode visualizar o formulário e enviar dados para a planilha usando-o.
+
 
 
 Você também observa as seguintes alterações na planilha:
@@ -290,6 +292,6 @@ Em seguida, você pode personalizar a mensagem de agradecimento, [configurar uma
 
 * [Criar e visualizar um formulário](/help/edge/docs/forms/create-forms.md)
 * [Ativar formulário para enviar dados](/help/edge/docs/forms/submit-forms.md)
-* [Publicar um formulário na página de sites](/help/edge/docs/forms/publish-eds-forms.md)
+* [Publicar um formulário na página de sites](/help/edge/docs/forms/publish-forms.md)
 * [Adicionar validações a campos de formulário](/help/edge/docs/forms/validate-forms.md)
 * [Alterar temas e estilo de formulário](/help/edge/docs/forms/style-theme-forms.md)

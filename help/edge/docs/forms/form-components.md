@@ -4,17 +4,18 @@ description: Este documento fornece uma visão geral dos componentes de formulá
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: d0c4f2f880ef7c11b11144502d30430336ac682e
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '965'
 ht-degree: 2%
 
 ---
 
 
-# Um Guia do desenvolvedor para componentes de formulário e propriedades: serviço de entrega do AEM Forms Edge
+# Componentes e propriedades de formulários: serviço de entrega de borda do AEM Forms
 
 O Serviço de entrega de borda da AEM Forms permite criar formulários amigáveis e interativos usando vários componentes. Esses componentes atendem a diferentes tipos de coleção de dados e podem ser facilmente personalizados para atender às suas necessidades específicas.
+
 
 ![Uma amostra de planilha com alguns componentes e propriedades](/help/edge/assets/sample-form-in-spreadsheet.png)
 
@@ -41,6 +42,8 @@ Esta é uma visão geral dos componentes disponíveis:
 
 
 
+
+
 ## Propriedades dos componentes
 
 Cada componente de formulário vem com várias propriedades que permitem controlar seu comportamento e aparência. Estas são as propriedades compatíveis com os componentes do Bloco de formulário adaptável:
@@ -48,6 +51,7 @@ Cada componente de formulário vem com várias propriedades que permitem control
 
 | Propriedade | Componentes aplicáveis | Detalhes |
 |--------------|------------------------------|----------------------------------------------------------------------|
+| Tipo | Todos | Especifica o tipo do componente. Essa propriedade determina o comportamento e a aparência do campo de entrada. Por exemplo, para entradas de texto, o tipo pode ser &quot;texto&quot;, &quot;email&quot; para entradas de email, &quot;senha&quot; para entradas de senha. Suporte a bloco de formulário adaptável  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">todos os tipos de entrada de HTML5 válidos</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">selecionar</a>, e <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a> como tipo. |
 | Tipo | Todos | Especifica o tipo do componente. Essa propriedade determina o comportamento e a aparência do campo de entrada. Por exemplo, para entradas de texto, o tipo pode ser &quot;texto&quot;, &quot;email&quot; para entradas de email, &quot;senha&quot; para entradas de senha. Suporte a bloco de formulário adaptável  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">todos os tipos de entrada de HTML5 válidos</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">selecionar</a>, e <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a> como tipo. |
 | Nome | Todos | Identifica o componente para envio de formulário. O atributo name é usado quando os dados de formulário são enviados ao servidor, associando a entrada do usuário a um campo específico. |
 | Rótulo | Todos | Fornece informações contextuais aos usuários. O rótulo é o texto exibido ao lado do componente, fornecendo aos usuários orientação sobre quais informações inserir. |
@@ -201,6 +205,6 @@ Here is the table which outlines how core components correspond to their HTML-5 
 
 - [Criar e visualizar um formulário](/help/edge/docs/forms/create-forms.md)
 - [Ativar formulário para enviar dados](/help/edge/docs/forms/submit-forms.md)
-- [Publicar um formulário na página de sites](/help/edge/docs/forms/publish-eds-forms.md)
+- [Publicar um formulário na página de sites](/help/edge/docs/forms/publish-forms.md)
 - [Adicionar validações a campos de formulário](/help/edge/docs/forms/validate-forms.md)
 - [Alterar temas e estilo de formulário](/help/edge/docs/forms/style-theme-forms.md)

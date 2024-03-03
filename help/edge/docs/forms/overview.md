@@ -4,9 +4,9 @@ description: O serviço de entrega de borda da AEM Forms foi criado para oferece
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: d0c4f2f880ef7c11b11144502d30430336ac682e
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '814'
 ht-degree: 0%
 
 ---
@@ -27,13 +27,10 @@ Você pode usar o serviço para:
   <div>
     <style>
     .image-container {
-    width: 80%;
     text-align: center; 
     }
     .image-container img {
-        width: 100%; /* Set image width to 100% of the container */
-        border: .5px solid; /* Maintain the border style */
-        padding: 15px; /* Maintain the padding */
+        width: 100%; /* Set image width to 100% of the container 
     }
 </style>
     <div class="image-container">
@@ -42,6 +39,8 @@ Você pode usar o serviço para:
 
 
 </div>
+
+<!--
 
 <!--
 
@@ -62,6 +61,7 @@ Você pode usar o serviço para:
 
     
     >[!NOTE]
+    >[!NOTE]
     >
     >
     > WYSIWYG authoring capability, integrated services, and customer impact measuring features are available under early adopter program. You can write to aem-forms-early-adopter-program@adobe.com from your official email id to join the early adopter program and request access to the capability.
@@ -70,17 +70,24 @@ Você pode usar o serviço para:
 
 ## Principais recursos
 
-* **Componentes de campo de formulário baseados em HTML**: o Serviço de entrega de borda da AEM Forms permite criar formulários amigáveis e interativos usando campos de formulário baseados em HTML válido [tipos de entrada](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types), <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">selecionar</a>, e <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a>  componentes. Esses componentes atendem a diferentes tipos de coleção de dados e podem ser facilmente personalizados para atender às suas necessidades específicas.
+* **Componentes de campo de formulário baseados em HTML**: o Serviço de entrega de borda da AEM Forms permite criar formulários amigáveis e interativos usando componentes de formulário baseados no HTML 5 [tipos de entrada](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types), <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">selecionar</a>, e <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a>  elementos. Esses componentes atendem a diferentes tipos de coleção de dados e podem ser facilmente personalizados para atender às suas necessidades específicas.
 
 * **Acessibilidade**: os campos no bloco de formulário são acessíveis. Cada rótulo é vinculado ao respectivo elemento de entrada, e as IDs são geradas automaticamente para vinculação. As descrições associadas a campos são vinculadas por meio do atributo aria-descripbedby. A navegação pelo teclado usando as teclas Tab/Shift + Tab padrão é suportada.
 
-* **Regras de formulário**: crie uma lógica que ajusta a visibilidade, a validação e o comportamento do campo com base na entrada do usuário ou em condições predefinidas. As regras oferecem uma maneira flexível e intuitiva de adicionar inteligência aos seus formulários, garantindo que eles se adaptem perfeitamente com base nas entradas do usuário.
+* **Estilo**: cada campo de formulário tem uma estrutura de HTML fixa que pode ser facilmente decorada usando arquivos CSS ou JavaScript personalizados. Os seletores para campos de direcionamento em CSS e JS são fornecidos com base no tipo e no nome. Você pode criar facilmente novos seletores devido à estrutura padronizada.
 
-* **Uploads de arquivo**: melhore seus formulários com recursos de anexo de arquivo ininterruptos. Não importa se você precisa coletar documentos, imagens ou outros arquivos de seus usuários, o Bloco de formulário adaptável permite integrar a funcionalidade de upload de arquivos sem esforço. Com as opções de manuseio personalizado disponíveis, você pode adaptar o processo de upload de arquivo para atender aos seus requisitos específicos.
+* **Regras**: crie facilmente uma lógica que ajuste a visibilidade, a validação e o comportamento do campo com base na entrada do usuário ou em condições predefinidas. As regras oferecem uma maneira flexível e intuitiva de adicionar inteligência aos seus formulários, garantindo que eles se adaptem perfeitamente com base nas entradas do usuário.
 
-* **Validação de formulário**: Antes do envio, o formulário é validado e os campos inválidos são marcados apropriadamente com mensagens de erro exibidas para o usuário. Vários padrões estão disponíveis para exibir esses erros.
+* **Validações**: Antes do envio, o formulário é validado e os campos inválidos são marcados apropriadamente com mensagens de erro exibidas para o usuário. Vários padrões estão disponíveis para exibir esses erros.
 
-* **Estilo Forms**: cada campo de formulário tem uma estrutura de HTML fixa que pode ser decorada ainda mais usando arquivos CSS ou JavaScript personalizados. Os seletores para campos de direcionamento em CSS/JS são fornecidos com base no tipo e no nome.
+Alguns recursos avançados estão disponíveis mediante solicitação:
+
+* **Uploads de arquivo**: Você pode adicionar recursos de anexo de arquivo aos formulários. Não importa se você precisa coletar documentos, imagens ou outros arquivos de seus usuários, a funcionalidade de upload de arquivos atende você sem esforço. Com as opções de manuseio personalizado disponíveis, você pode adaptar o processo de upload de arquivo para atender aos seus requisitos específicos.
+
+* **reCAPTCHA**: aproveite a integração perfeita do Google reCAPTCHA em seus formulários com nosso suporte pronto para uso (OOTB). Proteja seus formulários contra atividades fraudulentas, spam e abuso, mantendo ao mesmo tempo uma experiência perfeita e ininterrupta do usuário.
+
+* **Enviar notificação por e-mail no envio do formulário**: elimine o incômodo causado pelos acompanhamentos manuais e garanta a comunicação oportuna com nossa automação de email integrada para envios de formulários. Essa solução integrada permite que você notifique facilmente as partes relevantes, incluindo o envio de dados de formulário, sempre que alguém preencher um formulário em seu site. Sem necessidade de configurações complexas ou ferramentas adicionais, ele está pronto para uso imediato.
+
 
 ## Fluxo de trabalho
 

@@ -4,7 +4,7 @@ description: Formas perfeitas de artesanato, rápido!  criação baseada em docu
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: d0c4f2f880ef7c11b11144502d30430336ac682e
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
 source-wordcount: '1150'
 ht-degree: 0%
@@ -81,7 +81,7 @@ Para continuar com a criação do formulário:
 
    ![renomear planilha padrão para &quot;shared-default&quot;](/help/edge/assets/rename-sheet-to-shared-default.png)
 
-1. Para adicionar os campos de formulário, insira linhas e cabeçalhos de colunas na planilha &quot;shared-default&quot;. Cada linha deve representar um [campo de formulário](/help/edge/docs/forms/form-components.md), com cabeçalhos de coluna definindo o campo correspondente [propriedades](/help/edge/docs/forms/eds-form-field-properties).
+1. Para adicionar os campos de formulário, insira linhas e cabeçalhos de colunas na planilha &quot;shared-default&quot;. Cada linha deve representar um [campo de formulário](/help/edge/docs/forms/form-components.md#available-components), com cabeçalhos de coluna definindo o campo correspondente [propriedades](/help/edge/docs/forms/form-components.md#components-properties).
 
    Para um início rápido, considere copiar o conteúdo do [Planilha de consulta](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0) na planilha. Depois de copiar o conteúdo, salve sua planilha.
 
@@ -159,6 +159,6 @@ Até agora, você adicionou o Bloco de formulário adaptável ao projeto EDS e p
 * [Propriedades do campo de formulário](/help/edge/docs/forms/eds-form-field-properties)
 * [Criar e visualizar um formulário](/help/edge/docs/forms/create-forms.md)
 * [Ativar formulário para enviar dados](/help/edge/docs/forms/submit-forms.md)
-* [Publicar um formulário na página de sites](/help/edge/docs/forms/publish-eds-forms.md)
+* [Publicar um formulário na página de sites](/help/edge/docs/forms/publish-forms.md)
 * [Adicionar validações a campos de formulário](/help/edge/docs/forms/validate-forms.md)
 * [Alterar temas e estilo de formulário](/help/edge/docs/forms/style-theme-forms.md)
